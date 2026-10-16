@@ -17183,3 +17183,65 @@ asserted as a figure is not — and the row says so rather than resting on the c
 
 ⌗ *`check_quote_pins` is green here; it simply needs more than four minutes, so a local run must give it
 more than the per-gate timeout a batch would.*
+
+## ⚖⛭⛭ `r7414` — **① THE BOUNDARY IS WRITTEN, AND THE RE-READ FOUND `27` ROWS OF EXACTLY THE SHAPE YOU RULED ON, NOT `0`–`3`. ② AND THE HOLD HELD NOTHING: DELETING IT MINTS NO KEY, SO THE BLOCK CLOSES BY SUBTRACTION**
+
+*Registered before the re-read at `c0ea6833`; computation at
+`computations/beyond_the_wall/r7414_60_the_label_boundary_and_the_hold_that_holds_nothing/`.*
+
+### ⚖ ① THE BOUNDARY, AND THE DIRECTION IS LOAD-BEARING
+
+**I accept the ruling and the reason.** *My own row said "a FLOOR, not a figure" while choosing the label
+whose definition is that the figure is looked at, and that is the inconsistency you name.*
+
+⛔ **But the test as you phrased it cannot separate the two without a direction.** *"Does the assertion
+FAIL when the count moves?" — **every floor passes an upward move.** So the direction-free reading
+reclassifies every bare floor in the file.* ⇒ **The sentence I wrote asks whether it fails when the count
+moves DOWN BY ONE**: if it does, the number is part of the claim (`DELIBERATE`); if the threshold is the
+**smallest value the claim admits** (`> 0`, `>= 1`), nothing the author could care about fails it
+(`PRESENCE-CONTROL`). ⌗ *Both readings are recorded in the file with their counts, so the next reader sees
+why the direction is there.*
+
+### ⛔ AND THE COUNT IS NOT `0`–`3`
+
+| | |
+|---|---|
+| the confusable population — a `DELIBERATE` row whose expression is a bare `>= n` / `> n`, small `n`, no second conjunct | **`32`** |
+| of those, reclassified by the direction-free reading | `32` |
+| of those, reclassified by the reading I wrote | **`27`** |
+| left `DELIBERATE`, threshold above the minimum (`>= 2` ×2, `> 1` ×2, `>= 4` ×1) | `5` |
+| rows already labelled `PRESENCE-CONTROL` | `53` — **every one of them this same shape** |
+
+⇒ ***So the disagreement you ruled on is not an isolated boundary case.*** *`27` rows of exactly the shape
+of all `53` `PRESENCE-CONTROL` rows sit under the other label. Your prior was `0`–`3`; mine was `0`–`8`
+over a population I guessed at `6`. **Both refuted, and in the same direction** — the population alone is
+`32` against my band's ceiling of `30`.*
+
+⌗ ⛔ **The `27` are REPORTED AND NOT RECLASSIFIED**, because `r7413` ① bounded this to *"a definition and a
+filter, not a campaign"* and `27` rows is a campaign. ⇒ **My recommendation: do it as its own pass, and
+not by me unprompted** — it is your gate's vocabulary and the rows are other seats'. *Say the word and I
+will take it; the filter is already written and the split is deterministic.* ⌗ *And it bears on `PO-78`'s
+`62.1` per cent agreement in the direction you said: this is a boundary problem, not a reader problem —
+but it is a bigger one than one site in one window.*
+
+### ⛭⛭ ② THE HOLD IS DELETED, AND IT HELD NOTHING — MEASURED, NOT ASSUMED
+
+*`r7413` ② : "Delete that row and the `34`th key mints with no code change. That is the whole of the
+block."* ⇒ **I ran the targeted mint over that receipt with the hold in place and again with nothing
+held:**
+
+| | mint scope | keys emitted for that literal |
+|---|---|---|
+| as it stood (held) | `33` | **`0`** |
+| with nothing held | **`34`** | **`0`** |
+
+⇒ ***Deleting the hold mints no key.*** *The scope grows to `34` entries and the extractor finds no site
+for that entry, because the arm carrying it was **deleted at `r7372`** — three revisions before the hold
+was written.* ⇒ **So the hold described a key that cannot be minted, and no baseline row goes with it**:
+a row for a key the instrument does not mint is the stale entry the ledger forbids, which is your own
+`r7399` sentence. ⌗ ***The landing was never `33` of `34`: it is `33` keys that mint plus one that
+cannot.*** **The file now holds nothing, which its own header calls the state the register is aiming at**,
+and `cc66` is unblocked without a row, a verdict or a code change.
+
+⌗ *Verified: the prose-pin gate is green with the boundary in (`0` unadjudicated against a ceiling of `0`,
+`161` sites), and the quote-pin gate is re-run against the unheld scope rather than assumed.*
