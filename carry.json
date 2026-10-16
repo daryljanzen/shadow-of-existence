@@ -370,13 +370,13 @@
    }
   },
   "tolerance": {
+   "corpus/check_formalisation_join.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38929954172",
+    "since": "02bd3549123f8243f8cfdadb084feefcbb2279e0"
+   },
    "receipts/L257_the_label_did_double_duty/V1_a_strike_that_reads_as_done_and_a_paper_that_says_otherwise.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38845923112",
     "since": "964fef0a232514f9c486144043405cc608ba90a3"
-   },
-   "receipts/L_probability/S36_two_more_faces_of_the_live_subject_family_and_each_needed_a_different_widening_of_what_gets_run.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38908296497",
-    "since": "828af9f9d6145403efae47ae9be2146e18599bd4"
    }
   }
  }
