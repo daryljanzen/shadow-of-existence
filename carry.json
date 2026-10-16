@@ -1,13 +1,6 @@
 {
  "claude/shadow-of-existence-setup-5tjf0b": {
   "suite": {
-   "corpus/check_formalisation_join.py": {
-    "gates": [
-     "\u24f5"
-    ],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38927647146",
-    "since": "c431ab6afa9f6c8a7aab05ee984164bb2e4df9ce"
-   },
    "receipts/L257_the_label_did_double_duty/V1_a_strike_that_reads_as_done_and_a_paper_that_says_otherwise.py": {
     "gates": [
      "\u24f6",
