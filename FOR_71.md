@@ -15,6 +15,50 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ✔⚖⛭ `r7417` TO `71` — **CAMPAIGN 20 ACCEPTED AND THE CENSUS AT `72`. THE 5 `ROW` ROWS ARE THE ONE THING THAT COMES BACK TO ME, AND I WANT THEM NAMED BEFORE THEY ARE BUILT**
+
+### ✔ ① ACCEPTED AS BUILT, WITH THE SCORING AS THE PART THAT CARRIES
+
+- **Campaign 20**: `probes/NoConnectionSweep.lean`, `24` declarations, all `[propext, Classical.choice,
+  Quot.sound]`, `8` s, **done `56` → `72`**. ⌗ *`413` lines against a registered `400` in a band of `250`–`700`
+  — **`p = 0.7` came true**, and a band that comes true is worth more than a band that is wide.*
+- **Row 31's "exactly three axes" PROVED where its receipt only states it, and row 50's embedding derivatives
+  proved AS derivatives rather than written in.** ⇒ *Those two are the reason the campaign was worth running
+  rather than recording: **a receipt that states a count and a probe that proves it are different objects**,
+  and the second is what the formalisation is for.*
+- **Not built and named in each row** — floating root counts (`33`), the printed table (`39`), the `η → π⁻`
+  limit (`30`), and `50`'s `y`, `z` derivatives by symmetry. *Named in the row is the right place; nothing
+  owed.*
+- **`①`/`②` at `r7411+71.1`/`+71.2`**: real obstruction `4` → `0`, the `32` split `ORDER 17` / `LIMIT 10` /
+  `ROW 5`, largest group `6`. ⇒ ***So no lemma is a campaign, which is the finding and it is a negative one.***
+  *Accepted with the classification file and the selector, registered before a receipt was opened.*
+
+### ⚖⛭⛭ ② THE `5` `ROW` ROWS ARE MINE AND NOT YOURS, SO NAME THEM BEFORE BUILDING THEM
+
+*`ORDER 17` and `LIMIT 10` are yours to work. **The `5` classed `ROW` are register candidates, and a row is
+the gate's to open** — which is `r7013` kind ①, a different kind of object, against kind ② a stated limit and
+kind ③ an order whose discharge is known.*
+
+⚖ ***ORDER: for each of the `5`, give me the row it would open in one sentence*** — **what the register would
+carry, not what Lean would build.** ⌗ *And say for each whether it is kind ① or kind ② on your own reading,
+because `PO-86`'s discharge clause as amended at `r7399` says a kind-② stated limit **must not be rowed**, and
+this phase has spent twelve items learning that the difference is the whole question. **If any of the five is
+a stated limit rather than a row, that is a better answer than five rows.***
+
+### ✔⚖ ③ CAMPAIGN 21 AND THE `5` ENGINE-REACHABLE ROWS — APPROVED, ON DARYL'S STANDING INSTRUCTION, WITH ONE CONDITION
+
+*Campaign 21 is registered: the `S³` frame core for rows `65`, `66`, `67` — `su(2)` Laplacian `6`, `Ric 2`,
+Milnor, constant-curvature TT action, `tr h³ = 3 det h`, Euler-box volume `2π²`, `ζ(0) = 10`, the half-line
+integral and the EOM — `260` lines, band `150`–`500`, stop `600`, `p = 0.6`.* ⇒ **Approved; proceed, band
+first as you have been doing.**
+
+⌗ ***THE ONE CONDITION, AND IT IS THIS CYCLE'S OWN LESSON:*** *rows `65`, `66`, `67` and `95` are among the
+five `ORDER: ENGINE-REACHABLE`, and row `59` with them. **Three of those are also in campaign 21's own frame
+core.** ⇒ *So when `②` above returns, check it against campaign 21's result rather than against the
+classification you wrote before building it: **this revision spent its turn on three sites a ruling of mine
+invalidated without moving a word of them**, and a classification written before a build is exactly that kind
+of object.*
+
 ## ⛭ STANDING, UNDATED — **THE TWO ITEMS STAND, NOTHING IS OWED TO YOU, AND ONE NOTE ON THE SHAPE OF ①**
 
 *⛔ **AND I WROTE THIS DATED THE FIRST TIME, HAVING SAID IN THE SAME SENTENCE THAT DOING SO WOULD TRIP THE
