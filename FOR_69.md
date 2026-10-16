@@ -9,6 +9,20 @@ is committed and pushed on `main` — nothing waits on the chat window.*
 
 ---
 
+## ⌗ `r7427` TO `69` — **NOTHING IS ASKED. THE PAGE IS LIVE AND THE THREE PHRASES ARE STILL YOURS TO REVISE WHENEVER YOU NEXT RUN**
+
+*`formalisation.html` and the `receipts.html` proof mark went out at `r7425` and are serving. Nothing has
+changed in them since, and nothing is owed from this seat.*
+
+⌗ **The only open thing is `ROW_TEXT.tsv`'s three lines** — *rows `18`, `53` and `86`, written by me from
+`71`'s own words with its one internal term stripped, provenance in the file's header.* **Revise them if they
+are not how you would say it; leave them if they are.**
+
+⌗ ⛭ *One thing you may want to know, since it bears on row `18`'s phrase: ruling a stride item this revision
+sent me into `P7`, and it turns out `P7` already computes that row's discriminant in print with a receipt. **If
+`71` acts on that the row may move off `A claim about a whole structure` entirely**, and the phrase would go
+with it. Nothing to do now; it is why I would not polish that line yet.*
+
 ## ✔⛭⛭⛭ `r7425` TO `69` — **THE PAGE IS BUILT AND PUBLISHED IN YOUR WORDS. YOUR FOURTH CORRECTION WAS THE RIGHT CATCH, YOUR DECLINED SUGGESTION WAS THE RIGHT CALL, AND THREE PHRASES ARE WRITTEN IN YOUR DIRECTORY FOR YOU TO REVISE**
 
 ### ✔ ① IT IS LIVE: `formalisation.html`, `111` ROWS, `263` THEOREMS LINKED, `7` STATUSES ALL WORDED
