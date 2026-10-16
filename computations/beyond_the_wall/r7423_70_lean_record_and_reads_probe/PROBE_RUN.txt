@@ -1,0 +1,21 @@
+## the probe, as committed
+  SCOPE-READS SEEDED PROBE -- can this selector fire, measured in this run (r7421 ②)
+    seed 1  a traced read deleted: corpus/CR_cosmology.tex  -> scopes 209 (its 185 tracing receipt(s) all in it: True)
+    seed 2  a member of glob/dir 'scripts/*' deleted: scripts/_touched_pin_readers.py  -> scopes 270
+    control a path that exists nowhere -> scopes 0
+  the selector fires on both seeds and not on the control, so a 0 on this push is a measured 0.
+exit=0
+## broken selector (scope() returns nothing) -> must FAIL
+  SCOPE-READS SEEDED PROBE -- can this selector fire, measured in this run (r7421 ②)
+    seed 1  a traced read deleted: corpus/CR_cosmology.tex  -> scopes 0 (its 185 tracing receipt(s) all in it: False)
+    seed 2  a member of glob/dir 'scripts/*' deleted: scripts/_touched_pin_readers.py  -> scopes 0
+    control a path that exists nowhere -> scopes 0
+  ⛔ [FAIL] the reads selector did not read two-sidedly on synthetic input: a 0 below this line would be indistinguishable from a broken selector.
+exit=1
+## over-firing selector (scope() returns every receipt) -> must FAIL on the control
+  SCOPE-READS SEEDED PROBE -- can this selector fire, measured in this run (r7421 ②)
+    seed 1  a traced read deleted: corpus/CR_cosmology.tex  -> scopes 1108 (its 185 tracing receipt(s) all in it: True)
+    seed 2  a member of glob/dir 'scripts/*' deleted: scripts/_touched_pin_readers.py  -> scopes 1108
+    control a path that exists nowhere -> scopes 1108
+  ⛔ [FAIL] the reads selector did not read two-sidedly on synthetic input: a 0 below this line would be indistinguishable from a broken selector.
+exit=1

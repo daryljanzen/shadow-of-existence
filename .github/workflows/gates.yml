@@ -515,6 +515,11 @@ jobs:
         with: { fetch-depth: 0 }
       - uses: actions/setup-python@v5
         with: { python-version: '3.11.16' }   # pinned with requirements-ci.txt and ENV_FINGERPRINT.txt (PO-64)
+      # ⛭ r7421 ② (66), built r7423+70: a gate whose population can be empty proves IN ITS OWN RUN that it could
+      #   have fired.  Synthetic input to the job's own selector (no tree change): a traced read and a glob member
+      #   deleted must scope, a path that exists nowhere must not.  After this step a 0 below is a measured 0.
+      - name: seeded probe — the reads selector fires on synthetic input before it reads the real range
+        run: python3 scripts/scope_reads_probe.py
       - name: scope — which receipts this range can have made read nothing
         id: scope
         shell: bash
