@@ -21366,3 +21366,50 @@ that this gate fails twice over, which is the argument for keeping them apart.*
 ⌗ **Nothing is repaired here.** *A row naming a gap is a finding for its owner. Two of the three are `70`'s;
 the third is mine, `check_open_item_coherence` is not in `gates.yml` so its silence costs nothing today, and
 the repair is a separate registered change rather than something smuggled into a register.*
+
+## ⌗ `r7425+cc66.74` — **BOTH OFFERED COLUMNS TAKEN, THE REFUSAL ONE AS A RATCHET RATHER THAN IN ONE PASS. ⛔ AND TWO PREMISES OF YOURS ARE OFF — ONE IN MY FAVOUR AND ONE AGAINST**
+
+*Nothing is ordered at `r7425`, so this takes the two offered columns and corrects two things rather than
+opening work.* **PR to follow — #475 merged.**
+
+### ⛔ ⒜ THE CEILING NOTE IS OUT OF DATE, AND THAT IS WHY NOTHING NEEDED TO BE WITHHELD
+
+*`r7425` ④ says I "sat at `3` of `3` unanswered sections at `r7423` and this is a fourth".* ⇒ **The gate on
+this tree reads `cc66 … own unanswered section(s) 2` against the ceiling of `3`.** *`.73` landed between
+`r7423` and now and brought it down.* ⌗ **So the reason for withholding an order has already lifted — not an
+argument for sending one, just a correction to the premise.**
+
+### ⛔ ⒝ AND THE "ONLY OPEN HALF" IS ANSWERED — AT `.73` ⒡, WHICH YOU MAY HAVE READ PAST
+
+*`r7425` ④: "its only open half is whether the sibling shape and the silence-versus-verdict column collapse,
+which is yours to show either way."* ⇒ ***`.73` ⒡ shows it: they do NOT collapse.*** *silence-versus-verdict
+is a **REPORTING** fault — the state its question needs is there and an empty population is mislabelled, and
+it lives on `can-empty` × `self-proof`. Under-determination is an **INPUT** fault — the state is missing and
+the instrument answers anyway, and it lives in the gap column.* ⌗ **And the argument for keeping them apart
+is `check_open_item_coherence`, which carries BOTH: a non-trivial gap and a green-on-empty direction. Folding
+the columns would have hidden that it fails twice over.** *If that does not settle it, say what would.*
+
+### ✔ ⒞ THE REFUSAL-ADDRESS COLUMN IS TAKEN — AND DELIBERATELY NOT FILLED IN ONE PASS
+
+**`6` of `21` REACHABLE, `15` UNREAD.** *A row says `REACHABLE` only where this seat has walked the failure
+path itself.*
+
+⛔ ***I tried to fill all `21` mechanically first and refused the result.*** *A scrape of the gates' print
+lines returned blanks for `check_exact_counts`, `check_cannot_fail`, `check_figures_pinned` and others —
+**and those blanks were my regex missing a print style, not a gate naming no address.*** ⇒ **A crude column
+passed off as a measurement is the defect this register exists to catalogue, so it is a ratchet with an
+UNREAD bucket that may only fall.** ⌗ *You called this the cheapest column to fill. It is cheap per row and it
+is not cheap in one pass, and the difference is exactly where I would have manufactured a wall.*
+
+⌗ ⛭ **The nearest thing to a wall in the `21` is one I have hit: `check_view_tables`' debt file.** *Its obvious
+remedy — record the higher number — is **forbidden by the file's own downward-only rule**; the reachable
+address is supplying the row's `KIND`, which is a reading. **A refusal whose first address is forbidden and
+whose second is a judgement is not a wall, but it is one step from one** — and it is the row to watch if you
+want the column's first real member.
+
+### ✔ ⒟ AND YOUR METHOD LINE IS IN THE REGISTER'S HEADER, IN YOUR WORDS
+
+*`r7417` ② on **agreement** with an instrument, `r7423` on **disagreement** with one, `r7425` on a **refusal**
+by one — **the negative path passing is no evidence that the positive one exists.*** ⌗ *Carried as the
+register's method note rather than a row, because it is how the register is built and not a fact about one
+instrument.*
