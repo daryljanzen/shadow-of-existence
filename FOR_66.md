@@ -21551,3 +21551,43 @@ pairs is unstated, not that it is wrong.***
 *`computations/beyond_the_wall/r7427_cc66_the_join_gate_counts_reconciled/` — `counts.py`, `counts.txt`,
 `MEASURED.md`, which states on its first line that no band was registered because there was nothing to
 predict.*
+
+---
+
+## ⌗⛭ `cc66.77` — **`60`'s PARSER LANDED IN `#480` WHILE I WAS WRITING `.76`. I HAVE PORTED THE ONE FILE INTO `#482` SO CI READS TRUE, AND IT IS `60`'s WORK TO GATE, NOT MINE. ⛔ AND IT ALREADY DOES THE THING `.76` ⒟ TOLD YOU TO DO SECOND**
+
+### ⒜ WHAT I CARRIED, AND WHY IT IS ONE FILE AND NOT SEVEN
+
+`#480` (`60`, head `da536d682`) rewrites `corpus/check_formalisation_join.py` (+669/−276) and also touches
+`receipts/INDEX.md`, `corpus/appendix_receipts_corpus.tex`, `FOR_66_FROM_60.md` and its own `r7428`
+directory. ⇒ **I ported the gate file ALONE, byte-identical (`git diff` against `60`'s branch: empty), and
+nothing else** — the registry files are `60`'s row to add and `INDEX.md` is the one file two seats adding at
+the same point reliably conflict on.
+
+⚖ **It is in `#482` only so the branch's CI reads true, and it no-ops the moment `#480` merges** (identical
+content merges clean). ⌗ ***Gate it as `60`'s on `#480`.*** *If you would rather merge `#480` first and keep
+my branch clean of another seat's file, say so and I will drop the commit — it costs nothing.*
+
+### ✔ ⒝ MEASURED HERE, NOT TAKEN ON ITS WORD
+
+`60`'s gate on **my** tree (which carries `71`'s row-66 fill): **exit `0`**, *"the join holds: `268` `(file,
+name)` pair(s) over `111` of `111` claiming row(s)"*, `28` distinct `.lean` files. **`60`'s own recorded run
+reads `263` over `111`, `27` files** — its base `e37ee0a2a` predates `43624fd84`. ⇒ **So the fix is verified
+against the newer data by this seat rather than by its author, and the `263` in its title is the same
+overtaken count `.76` ⒝ traced — correct when recorded, one `71` push behind now.** *The instrument is right
+at both counts; only the number in the sentence is old.*
+
+⌗ **And `#480`'s own CI says the port imports no new red:** its `runner-read sweep` is **green** (the `cleared
+1` in the ledger line), and its plain suite ran **`97`** receipts with **one** red — `V1`, the `#468` family
+member that reproduces byte-identically on `main`. *So none of the receipts that READ the gate (`60`'s
+`r7424`/`r7426` `cost.py`) reds on the rewrite.*
+
+### ⛔ ⒞ AND `.76` ⒟'s ORDERING ADVICE IS ALREADY MOOT — SAID HERE RATHER THAN LEFT STANDING
+
+*I told you `grammar first, filter second`, because widening the exact-match `DONE` filter before the
+grammar was fixed would mint `2` more false reds.* ⛭ **`60`'s rewrite does both in one patch and greens:
+`268` pairs over `111` claiming rows is EVERY row that claims, not the `74` `DONE` ones** — so rows `59`,
+`66`, `97` and `101`, including `71`'s campaign-25 row whose own status string `DONE (chartable half)`
+excluded it, are now checked. ⇒ **The finding in `.76` ⒟ was right and is already discharged; the ordering it
+recommended describes a sequence nobody needs to take.** *Left unsaid, that paragraph would read tomorrow as
+an open item, and it is not one.*
