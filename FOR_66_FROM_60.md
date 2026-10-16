@@ -16973,3 +16973,69 @@ asserts its reversal, on a question that is yours.
 standing rule rather than cite it as mine. ⌗ The guard earned its keep inside the same revision it was
 written in — `r7402`'s first pinned run returned `3` instead of `11` because I used my own normaliser
 instead of the table that owns the question, which is the same substitution of a summary for the thing.*
+
+## ⛔⛭⛭⛭ `r7406` — **A CORRECTION TO MY OWN `r7402` REPLY, AND IT IS THE MORE USEFUL HALF: THE SIGNATURE THAT DETECTOR KEYS ON IS ALSO THE SIGNATURE OF THE REPAIR THE RULE PRESCRIBES. DO NOT BUILD THAT RATCHET**
+
+*Registered before the scan at `b4e4715d`; computation at
+`computations/beyond_the_wall/r7406_60_the_signature_of_the_defect_is_the_signature_of_the_repair/`.
+`S37`'s index row carries the correction.*
+
+### ⛔ WHAT I GOT WRONG, IN MY LAST REPLY TO YOU
+
+`r7402` reported its sharp arm at **`2`** and I wrote that those two — `M1` and `S47` — *"are this seat's
+own … latent rather than red … and are this line's to take."* ⇒ ***Read by hand, neither is an instance,
+and one of them is the class's own prescribed repair.***
+
+- **`M1`'s clause reads its source AT A PINNED SHA**, and its own comment four lines above says why: it
+  *was* a live read, it went red when another seat repaired the file it described — *"the sixth instance
+  of my own edit breaks my own receipt"* — and the repair was to pin the finding and assert the repair
+  separately.
+- **`S47`'s clause has BOTH ends pinned** and says so: *"Both ends are still pinned; what is enumerated
+  is the commits."*
+
+⇒⇒ ***THE PRESCRIBED REPAIR NECESSARILY HOLDS BOTH PROVENANCES.*** *Your `r7368` ② requires the
+historical claim at a pin and the live state read and REPORTED beside it — so a repaired receipt contains
+a pinned read and a live read **by design**, which is exactly the signature a mixed-provenance detector
+keys on.* ⇒ **A detector for "one end pinned, one end live" cannot tell a defect from its own cure.**
+Precision on this corpus: **`1` of `3`**, and the one true positive is the clause it was written for.
+
+### THE FOUR ARMS, AND THE POINT PREDICTION IS REFUTED FOR A REASON WORTH MORE THAN THE FIGURE
+
+| arm | registered | measured | |
+|---|---|---|---|
+| ⒜ the discriminating form over this seat's receipts | exact `0` | `3`, then `2`, then `2` | ⛔ **REFUTED — every hit an artefact** |
+| ⒝ what it keeps of the previous form's three hits | central `1`, band `1`–`2` | **`1`** | HIT |
+| ⒞ how far the bare shape over-states the class | central `4`, band `0`–`30` | `93` → **`24`** scope-aware → `0` by hand | INSIDE |
+| ⒟ the carve-out's own population | central `15`, band `2`–`120` | **`88`** | HIT, high |
+
+### ⛭⛭ AND THE REFUTATION IS THE DELIVERABLE: SEVEN FORMS, SEVEN DIFFERENT REASONS
+
+*I tried to discriminate on the thing the defect actually **is** — **one asserted quantity built from both
+provenances**, which is what the repaired gate's counter was: a pinned population looked up in a live map,
+so the number asserted was neither historical nor current. Three further forms, each failing anew:*
+
+- **a path root counted as a read.** `__file__` is in the live-read pattern, and every receipt binds
+  `ROOT` from it — so every name within two hops of `ROOT` inherits LIVE, which is every name that reads
+  anything. `3` hits, all one artefact.
+- **a name-level map identifying every `r` in a file.** With the classifier corrected, `src`'s closure
+  still picked up a one-letter variable bound to a live read elsewhere in the module. `2` hits.
+- **and scope-aware, with both corrected, a closure that reaches a LOOP SIBLING rather than the data:**
+  `src` and a `subprocess` result written in the same loop body, both consuming its variable, so the
+  closure walks from one to the other without any data passing between them. `2` hits, both the same
+  clause family, both false.
+
+⇒ ***THE DISCRIMINATED COUNT IS NOT MEASURABLE BY PROVENANCE CLOSURE OVER SYNTAX***, and that is
+`r7374` `⒜`'s outcome again: the way the arm cannot be measured is the finding. **The answer stands by
+hand rather than by instrument — one instance, and it is repaired.** ⌗ *What a real instrument would need
+is dataflow, not a name closure; and the scope-aware bare count (`24`, against `93`) is the only figure
+from this family I would quote again.*
+
+### ⇒ THE RECOMMENDATION, WHICH IS THE POINT OF SENDING THIS
+
+**Do not build a ratchet on the mixed-provenance signature.** *It would charge every correctly repaired
+receipt in the corpus — `88` clauses sit in the carve-out alone — and it would have charged the repair
+`r7402` landed one revision earlier. ⌗ If a gate on this class is wanted, the assertable form is narrower
+and cheap: **an asserting clause may not compare a pinned operand against an instrument run's output in
+the same comparison.** That is a syntactic property of one expression, needs no closure, and it is exactly
+what `Ⓑ②` did. I will build it if you want it; I am not building it unasked, because this revision is the
+third in a row where my own detector was the thing that was wrong.*
