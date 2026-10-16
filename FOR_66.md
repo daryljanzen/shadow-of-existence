@@ -20664,3 +20664,91 @@ exactly long enough to keep publishing the defect the correction was for.** ⌗ 
 until the next seat pushes, which is why this seat keeps finding it rather than the seat that edited
 the paper. **Whether `gen_paper_html.py` joins the generator step is yours** — I have only cleared the
 instance, four times.*
+
+## ⛔ `r7403+cc66.61` — **THE `fast` RED ON THE LIVE HEAD IS FIVE GATES AGAIN, AND THE TWO NEW ONES ARE BOTH INHERITED AND BOTH CLEARABLE WITHOUT A READING. ⇒ CLEARED. ⛭ THE OTHER THREE ARE STILL YOURS AND UNCHANGED**
+
+*Its own section because `.59`/`.60` are order answers and this is the trunk. **PR #464, draft, subscribed.**
+⌗ Read from CI's own `FAILED` line on `a31f8df65`, which is `.60` — **the live head, not a superseded one.***
+
+> `⛔ FAILED: check_depmatrix check_open_ledger check_open_ledger check_view_tables check_prose_pins`
+
+**Against `.57`'s five, two are gone and two are new.** Separated mine from inherited the same way as `.57`:
+each gate run on a pristine `origin/main` worktree beside this branch.
+
+| gate | at `.55` | now | on `main` | whose | disposition |
+|---|---|---|---|---|---|
+| `check_absence_claims` | FAILED | **gone** | passes | was ⛔ mine | fixed at `.57`, held |
+| `check_pages_current` | FAILED | **gone** | passes | inherited | ported at `.57`, held |
+| `check_depmatrix` | — | **new** | **FAILS** | inherited | ⇒ ✔ **cleared here** |
+| `check_prose_pins` | — | **new** | **FAILS** | inherited | ⇒ ✔ **cleared here** |
+| `check_open_ledger` ×2 | FAILED | FAILED | FAILS | inherited, a reading | ⛔ **yours** |
+| `check_view_tables` | FAILED | FAILED | FAILS | inherited, a reading | ⛔ **yours** |
+
+⌗ ⛭ *Both new ones are red on `main` too, so neither is this branch's defect — **and neither is a reading**,
+which is the whole reason I did not stand them down. A remedy the repo's own tooling produces is mine to port
+whether or not the drift was mine.*
+
+### ✔ ⒜ `check_depmatrix` — P7's ROW MOVED ONE CELL, AND THE CAUSE IS `r7401`'s OWN P7 EDIT
+
+**`P7`→`P10`: `22` → `24`.** Named exactly rather than guessed: `557b94da3` (`r7401`, your P7 pass) adds
+`3` and removes `1` `\cite{JanzenCanonicalTime}` in `CR_framework.tex` — **net `+2`, which is the whole drift.**
+Nothing else in the 18×18 moved.
+
+Cleared with the repo's own tooling, all three places in one commit, which is the `.52` lesson applied rather
+than relearned:
+
+- `scripts/depmatrix.py` → `corpus/CR_framework.tex:1540`;
+- `scripts/gen_matrix_html_tbody.py` → the `<tbody>` of `BOOK_INTRO_cosmiCave/assets/dependency_matrix.html`;
+- `scripts/gen_paper_html.py P7` → the served page, **whose entire diff is one cell**: `<strong>22</strong>`
+  → `<strong>24</strong>`.
+
+⌗ ⛔ ***And the pairing is the part worth your attention.*** `check_pages_current` was **GREEN in CI on this
+head** and went red *the instant I corrected the `.tex`* — because the served page was faithfully publishing
+the stale number the source carried. **So the paper edit at `r7401` left the matrix row and the page BOTH
+wrong, and only one of the two has a gate that fires on the paper edit itself.** This is the fifth derived-view
+staleness this cycle (`P7` ×3, `P16` ×1, the matrix ×1) and the third traceable to the same shape: *a `P7` edit
+lands and its derived views do not move in the same commit.*
+
+### ✔ ⒝ `check_prose_pins` — ONE NEW SITE, AND IT IS A BOUNDARY CASE MY OWN BASELINE ALREADY SETTLED
+
+`len(_agreed_exposed) >= 1`, tier `PRESENCE`, in `receipts/L_probability/S60_…cannot_see_a_dead_pin_in_its_own_container.py`.
+**Adjudicated `PRESENCE-CONTROL`**, with the reading in the row: it sits in a three-part conjunction whose
+load-bearing half is the **strict inequality** `len(_agreed_exposed) < len(_agreed)` — *"some but not all"*,
+which is exactly what the label claims — and `>= 1` only stops that inequality passing **vacuously** on an
+empty set, where `0 < len(_agreed)` holds and the manufactured-absence finding would be unsupported. No count
+is pinned: both counts are printed in the label and neither is compared against a literal.
+
+⌗ **Not a judgement I invented for the occasion** — it is the same boundary case as `len(occ) >= 1`, which this
+seat adjudicated `PRESENCE-CONTROL` at `r7143+cc66.109` on identical reasoning. Backlog `160` → `161` keys;
+`UNADJUDICATED` stays `0`; `PRESENCE-CONTROL` `52` → `53`.
+
+⛭ ***And the hypothesis I tested before adjudicating, because it would have been worse than the red:*** that
+line carries **two** `>= 1` presence pins and the instrument reported **one**, which would have been a
+**per-line blind spot of exactly the class this gate exists for**. ⇒ **REFUTED.** `scripts/mutate_assertions.py
+--prose` reports `185` sites over `157` distinct `file:line`, up to **3** on a single line. So the instrument
+is not line-limited, and why `len(_exposed) >= 1` is not among its sites is a fact about `70`'s operator and
+not mine to rule.
+
+### ⛔ ⒞ THE THREE THAT ARE STILL YOURS, RE-VERIFIED ON THIS TREE AND UNCHANGED
+
+- **`check_open_ledger`** ×2 — four `CR_framework` qualifications with no verdict (`0d20370974`, `9177c52baf`,
+  `cf8bd7a858`, `db7d54f2d8`) and a `--rebuild` for `fb2d798ceb`.
+- **`check_view_tables`** — `regen_frontier.py:KIND`, `8` live rows absent against a baseline of `7`, debt file
+  *"rewritten DOWNWARD only"*. `PO-24` `PO-50` `PO-86` `PO-87` `PO-88` `PO-89` `PO-90` `PO-91` need a
+  `READ`/`BUILD` each.
+
+⌗ *Unchanged from `.52`/`.57`: every permitted value is a judgement about whether a row's work is a reading or a
+build, and guessing publishes a false claim in the one view that says so.*
+
+### ⛭ ⒟ ONE OBSERVATION I AM NOT ACTING ON: TWO GENERATORS FOR ONE VIEW, DISAGREEING
+
+`scripts/depmatrix.py`'s `_color` bands `v <= 25` as `#2f6fb3`; `scripts/gen_matrix_html_tbody.py`'s `shade`
+bands `v <= 20` as `#2f6fb3` and everything above as `#14416f`. **They disagree on `10` of the matrix's cells**
+— every count in `21`–`25`, which now includes `P7`→`P10` at `24` and already included `P7`→`P5` at `23`.
+
+The HTML on disk carries the **tbody** generator's banding, which is the one `check_depmatrix`'s own fix
+instruction names, so the served view is right and the gate is satisfied. ⌗ ⛔ *But the file whose docstring
+says it* "Maintains P7 tab:dependency-matrix + BOOK_INTRO_cosmiCave/assets/dependency_matrix.html" *is the one
+that would get those ten cells wrong, and it prints a full* `HTML STYLED TABLE` *block inviting exactly that
+paste.* **Cosmetic in effect — a shade band, not a count — which is why I am reporting it rather than editing
+a generator nobody asked me to touch.** *Your call whether the two bandings should be one.*
