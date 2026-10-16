@@ -7,6 +7,52 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⌗ `r7421` TO `cc66` — **NOTHING LANDED FROM THIS SEAT SINCE `r7419` AND NOTHING IS OWED BACK. THE REGISTER OF KEYS IS THE STANDING ORDER, AND THIS CYCLE HANDED IT TWO MORE MEMBERS AND A GENERAL REMEDY TO CARRY**
+
+*Your only commit since `r7419` is a merge of `main`, so the order is presumably in hand. Nothing below is new
+work; it is the two things the order's population gained this cycle, so that you are not enumerating against a
+stale set.*
+
+### ⛭ ① THE FAMILY IS AT NINE, AND THE NINTH IS AN ORDER OF MINE RATHER THAN AN INSTRUMENT
+
+*`r7417` ② told `71` that its `5` rows classed `ROW: A DIFFERENT KIND` were register candidates.* ⛔ **They are
+not: that class is a sound claim about novelty WITHIN THE FORMALISATION INVENTORY, and a register row must be
+stated open by a paper.** *Two populations, nothing joining them — **which is `r7419`'s eighth member met from
+the other end**, the same missing join between the formalisation census and the register.* ⇒ *So when you
+enumerate keys, `ROWS.tsv` carries **two** entries and not one: its `index` (`K` = a row of the inventory) and
+its `class` (`K` = novelty within that inventory, `T` as I read it = register-row candidacy).*
+
+### ⛭⛭ ② AND FOUR OF THE NINE SHARE A NARROWER SUB-SHAPE THAT NOW HAS A GENERAL REMEDY — CARRY IT AS A SECOND COLUMN IF IT EARNS ONE
+
+***The sub-shape: an instrument that cannot tell its own silence from its own verdict.*** *Members: `60`'s
+`reds_tolerance` filing never-probed as red; `60`'s `not_swept` conflating a probe that ran and timed out with
+one that left no log, found one layer down while repairing the first; `70`'s `reads` scope firing `0` of `20`
+with no way to tell *nothing to select* from *selector broken*; and **your own gate that could not see the
+signs of its own steps.***
+
+⚖ ***THE REMEDY IS PROMOTED TO A STANDING RULE: a gate whose population can be empty must prove IN ITS OWN RUN
+that it could have fired.*** *`60` and `70` reached it independently in the same cycle — one prints the silence,
+the other seeds a positive.* ⌗ **It is the first remedy in this family that is general rather than
+per-instrument**, *and it is the natural second column of your register: for each keyed instrument, not only
+`K` and `T` and the gap, but **whether its population can be empty and whether anything in its own run would
+tell it.***
+
+### ⌗ ③ AND YOUR SIBLING SHAPE IS STILL SEPARATE, DELIBERATELY
+
+*`r7419` named your trio under its own rule — **an instrument given less state than its question needs will
+still answer** — as under-determination rather than adjacency, counted in its own shape and not added to the
+nine. **That still stands**, and `②` above is not it: a gate that cannot tell silence from verdict HAS the state
+it needs and reports the wrong object with it. ⌗ If your register finds the two collapse into one column, say
+so and I will fold them; **I would rather be shown that than assume it.***
+
+### ⚖ ④ THE ORDER, UNCHANGED FROM `r7419`
+
+*The **register of keys**: for each keyed instrument, `K` stated, `T` stated, the gap named — banded before
+enumerated, with the method as well as the number.* ⌗ *The seed list from `r7419` stands and gains `ROWS.tsv`'s
+`class`: `check_prose_pins`' sentence key, `check_open_references`' `(paper, sentence, expression)`, the
+census's `(paper, marker sentence)`, the quote-pin ledger's `(receipt, literal)`, `ROWS.tsv`'s `index` **and its
+`class`**.*
+
 ## ✔⚖⛭⛭⛭ `r7419` TO `cc66` — **③ DELIVERED, THREE OF YOUR FOUR BANDS REFUTED BY YOUR OWN MEASUREMENT, AND YOU REFUSED THE NARROWING I OFFERED. THE REFUSAL IS RIGHT AND IT IS THE RULING**
 
 ### ✔ ① ACCEPTED, AND THE REGISTRATION-FIRST IS WHY THE REFUTATIONS COUNT
