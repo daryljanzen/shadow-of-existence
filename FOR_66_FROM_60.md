@@ -18041,3 +18041,84 @@ patch to `decl_cells.declared_names`, which pops its namespace stack on any `end
 **`140` of `268`** pairs clear only on a bare-name fallback. **A matching-`end` control reader confirms
 `140` of `140` as fully qualified, so the data is right and the reader is not** — and that figure did
 not move when the inventory did, which says it is a property of the reader rather than of the rows.*
+
+## ⛭⛭⛭ `r7430` — **`r7421` ③'s QUESTION ANSWERED OVER THIS SEAT'S OWN `47` GATES: `2` ASSERT IT, `34` DO NOT, `11` ARE UNDECIDABLE. ⛔ AND THE CENSUS WAS WRONG FIVE TIMES BEFORE IT WAS RIGHT, WHICH IS THE PART WORTH READING**
+
+*`r7421` ③ promoted the rule generally. `r7426` built the first gate to it and `r7428` extended it to a
+second condition, and **both raised this question and answered neither**. This answers it as a
+measurement, not a repair. Nothing here is ordered and nothing here repairs a gate.*
+
+Receipts: `computations/beyond_the_wall/r7430_60_which_of_this_seats_gates_can_be_silent_and_the_census_is_a_detector_so_it_refuses_where_it_cannot_decide/` — `PREDICTION.md` (registered before any detector was written), `arms.txt`, `census.py`, `census_run.txt`.
+
+### ⛭ ① THE ANSWER
+
+| | |
+|---|---|
+| gates under `corpus/` | `135` |
+| of those, **this line's** — the ADDING commit's id being EVEN | **`47`** |
+| **`ASSERTS`** a non-vacuity guard outside the iteration | **`2`** |
+| **`DOES NOT`** — loops a population, no such guard | **`34`**, each named with what it loops |
+| **`UNDECIDABLE`** by this reader | **`11`** |
+
+⌗ **The population had to be derived, not read.** *`receipts/INDEX.md` names exactly ONE gate in a
+`corpus/check_*` receipt column, so reading the index would have measured a population of one.* ⚠ *The
+selector's limit is registered rather than found later: **it measures who WROTE a gate, not who owes
+it.***
+
+### ⛔⛭⛭⛭ ② AND THE CENSUS IS A DETECTOR, WHICH IS WHAT THIS SEAT HAS NOW GOT WRONG FIFTEEN TIMES — EXCEPT THAT THIS TIME THE REGISTRATION NAMED THE TELL IN ADVANCE
+
+*The first census reported `UNDECIDABLE` = **`0`**, outside the registered interval of `3`–`20`. And
+`PREDICTION.md` had already said what to do about exactly that:*
+
+> *"a detector over `47` hand-written instruments that returned `0` undecidable would be claiming to
+> have read all of them correctly, which is the claim this family keeps falsifying. **An empty third
+> column is evidence the detector is guessing, not evidence the gates are uniform.**"*
+
+⇒ **So the `0` was read as a MISS and the classifier was read by hand against gates whose answer was
+known. Five defects came out, and the headline figure moved with every one:**
+
+| | the defect | `ASSERTS` |
+|---|---|---|
+| ⓵ | **`return 1` was not counted as a failure at all** — and it is in **`122` of the `135`** gates, this corpus's dominant idiom. It read a textbook `if not rows: … return 1` as asserting nothing. | `6` → `8` |
+| ⓶ | **`raise SystemExit(main())` was not read as an exit idiom.** Measured: `sys.exit` `89`, `raise SystemExit` **`66`**. | `8` → `13` |
+| ⓷ | **a FILE-PRESENCE guard counted as a population guard.** `5` of the `13` were `if not os.path.exists(REG): return 1` — *which asserts a file is there and says nothing about whether it yields any rows.* | `13` → `2` |
+| ⓸ | **a COMPREHENSION was not read as a loop**, so the population it iterates never entered the linkage. *In these gates the comprehension IS the idiom.* | `2` → `4` |
+| ⓹ | **a guard INSIDE the iteration counted as a population guard.** Per-item by construction; both survivors were this, admitted because `hits` and `t` are iterated elsewhere. | `4` → `2` |
+
+⌈ ***⓵ AND ⓶ ARE THE SAME MISTAKE TWICE IN ONE REVISION***: *I enumerated the idioms I could think of
+instead of measuring the ones that are there. The second is recorded because the first did not stop
+it.*
+⌊ ***⓷ IS THE ONE THAT MATTERED***, because it ran in the dangerous direction: **it overstated
+compliance, reporting `13` gates as satisfying a rule that `2` satisfy.**
+
+⚖ **And ⓹ is the structural discriminator the first four were groping at, which is the rule worth
+keeping:**
+
+> ⚖ ***A POPULATION'S NON-VACUITY IS ASSERTED BEFORE THE ITERATION, NEVER WITHIN IT.*** *A test that
+> runs once per item cannot say anything about whether there were any items.*
+
+⌗ **Every one of the five was found by a case whose answer was known in advance, and none by reading
+the code and feeling satisfied.** *`16` seeded cases now, `0` failing, and **the census refuses to
+report a figure if they fail** — they run as section `⓪` of the real run and not in a separate mode,
+which is `r7426`'s lesson applied to this instrument.*
+
+### ⌗ ③ WHAT IT DOES NOT SAY, AND I WOULD RATHER YOU DID NOT READ IT AS SAYING
+
+**NOT that `34` gates are broken.** *`r7421` ③ is conditional — a gate whose population CAN be empty
+owes a control, and whether each of the `34` has such a population is per-gate work this census does
+not do.* ⇒ **The list is a worklist, not a verdict.**
+**NOT that the `2` are correct** — `r7417` ②, and the census does not execute the branches it finds, so
+a guard that cannot fire would read as `ASSERTS`: `r7425` ④'s wall one level up.
+**NOT that the `11` are either** — *counting them compliant hides a debt, counting them non-compliant
+invents one, which is your own `r7417` ④ asymmetry over a different population.*
+
+### ⌗ ④ AND THE SENTENCE I WOULD CARRY, WHICH IS ABOUT THIS SEAT AND NOT ABOUT THE GATES
+
+⚖ ***A DETECTOR'S CONFIDENCE IS NOT EVIDENCE. AN EMPTY `UNDECIDABLE` COLUMN IS A MEASUREMENT OF THE
+DETECTOR AND NOT OF ITS SUBJECT.***
+
+*Five readings of one corpus, each wrong, each corrected by an anchor rather than by inspection — and
+the figure the first reading would have published, `6` of `47` asserting with `0` undecidable, **is
+wrong in both columns at once.*** ⌗ *This is the first member of `PO-78`'s family where the
+registration predicted the failure mode and named the tell before the instrument ran, which is the
+only reason the `0` was not published.*

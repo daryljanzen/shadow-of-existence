@@ -1,0 +1,146 @@
+====================================================================================================
+  r7430 -- WHICH OF THIS SEAT'S GATES HAVE A POPULATION THAT CAN BE EMPTY
+====================================================================================================
+
+  ⓪ THE CLASSIFIER'S OWN CASES, run before any real figure is read
+    [ok]  a gate that loops a population and never tests it for emptiness
+              want 'DOES NOT', got 'DOES NOT' -- 1 loop(s) over e.g. 'rows'
+    [ok]  ...and one that FAILS when the population is empty
+              want 'ASSERTS', got 'ASSERTS' -- line 7: a failing path is reachable from `not rows`
+    [ok]  ...the same assertion written as a length comparison
+              want 'ASSERTS', got 'ASSERTS' -- line 5: a failing path is reachable from `len(rows) == 0`
+    [ok]  ...and written as the `else` of a truthiness test
+              want 'ASSERTS', got 'ASSERTS' -- line 6: a failing path is reachable from `else of found`
+    [ok]  a gate whose emptiness test only PRINTS is NOT asserting
+              want 'DOES NOT', got 'DOES NOT' -- 1 loop(s) over e.g. 'rows'
+    [ok]  ⛔ `if not rows: ... return 1` from the module's exit function IS asserting
+              want 'ASSERTS', got 'ASSERTS' -- line 5: a failing path is reachable from `not rows`
+    [ok]  ...but `return 1` from a helper the module does not exit with does NOT count
+              want 'DOES NOT', got 'DOES NOT' -- 1 loop(s) over e.g. 'rows'
+    [ok]  ...and `raise SystemExit(main())` is an exit idiom too, measured at 66 uses
+              want 'ASSERTS', got 'ASSERTS' -- line 4: a failing path is reachable from `not rows`
+    [ok]  ⛔ `if not os.path.exists(F): return 1` is NOT a population assertion
+              want 'UNDECIDABLE', got 'UNDECIDABLE' -- 1 file-presence guard(s) e.g. `not os.path.exists(REG)`
+    [ok]  ⛔ a per-item regex test inside the loop is NOT a population assertion
+              want 'UNDECIDABLE', got 'UNDECIDABLE' -- 1 guard(s) not linked to a looped population e.g. `not MARKED.search(window) [inside the l
+    [ok]  ⛔ `if not hits:` INSIDE the loop is per-item, not a population assertion
+              want 'UNDECIDABLE', got 'UNDECIDABLE' -- 1 guard(s) not linked to a looped population e.g. `not hits [inside the loop]`
+    [ok]  ...and the same guard hoisted OUT of the iteration IS the assertion
+              want 'ASSERTS', got 'ASSERTS' -- line 5: a failing path is reachable from `not rows`
+    [ok]  a gate whose only population is a COMPREHENSION still has a population
+              want 'DOES NOT', got 'DOES NOT' -- 1 loop(s) over e.g. 'rows'
+    [ok]  a gate with NO population at all reads UNDECIDABLE
+              want 'UNDECIDABLE', got 'UNDECIDABLE' -- no `for` loop over a population, so this reader has no population to judge
+    [ok]  a gate that does not parse reads UNDECIDABLE
+              want 'UNDECIDABLE', got 'UNDECIDABLE' -- does not parse (invalid syntax), so nothing can be read from it
+    [ok]  the one gate KNOWN to satisfy the rule reads ASSERTS
+              got 'ASSERTS' -- line 491: a failing path is reachable from `files and total == 0`
+
+  16 case(s), 0 failing
+
+  ⓵ THE POPULATION, DERIVED FROM AUTHORSHIP AND NOT READ FROM A LIST
+      gates under corpus/                        : 135
+      of those, ADDED by an EVEN revision id     : 47   <- this line's band
+      ⌗ `receipts/INDEX.md` names 9 gate row(s), which is why the
+        population is derived: reading the index would have measured a population of one.
+
+  ⓶ THE CENSUS, THREE WAYS (`r7417` ④: a verdict the instrument cannot reach is its own answer)
+      ASSERTS     :   2 of 47
+      DOES NOT    :  34 of 47
+      UNDECIDABLE :  11 of 47
+
+  ⓷ THE GATES THAT OWE A CONTROL, NAMED WITH THE POPULATION THEY LOOP
+      (`r7425` ④ applied to a measurement: it must name an address the remedy can be written to)
+      ⛔ corpus/check_citation_chain.py
+           loops: 13 loop(s) over e.g. 'L.items()', "[l for l in tbl.split('\\n') if l.startsw", 'addressless'
+      ⛔ corpus/check_citations_resolve.py
+           loops: 6 loop(s) over e.g. 'bad[:12]', "glob.glob(os.path.join(ROOT, 'receipts',", "raw.split('\\n')"
+      ⛔ corpus/check_close_names_work.py
+           loops: 3 loop(s) over e.g. 'flagged', "re.finditer(r'\\|\\s*~~\\s*\\*\\*(PO-\\d+)\\*\\*", "sorted(glob.glob(os.path.j
+      ⛔ corpus/check_cross_row_dupes.py
+           loops: 7 loop(s) over e.g. 'itertools.combinations(rows, 2)', "raw.split('\\n')", 're.split(SPLIT, cells[4])'
+      ⛔ corpus/check_declared_parts.py
+           loops: 2 loop(s) over e.g. 'bad', "raw.split('\\n')"
+      ⛔ corpus/check_depth.py
+           loops: 8 loop(s) over e.g. 'rows', 'shallow', 'sorted(best.items())'
+      ⛔ corpus/check_dupes.py
+           loops: 10 loop(s) over e.g. 'buckets.items()', 'enumerate(group)', 'group[i+1:]'
+      ⛔ corpus/check_family_pointers.py
+           loops: 5 loop(s) over e.g. 'bad', "led.split('\\n')", "po.split('\\n')"
+      ⛔ corpus/check_foreign_ontology.py
+           loops: 3 loop(s) over e.g. 'FOREIGN.items()', 'flagged', "sorted(glob.glob(os.path.join(ROOT, 'rec"
+      ⛔ corpus/check_gate_currency.py
+           loops: 6 loop(s) over e.g. 'VER.findall(l)', "VER.findall(open(path, encoding='utf-8',", 'docs.items()'
+      ⛔ corpus/check_glyph_coverage.py
+           loops: 10 loop(s) over e.g. "('key', 'file', 'kind', 'what')", 'RAILS', 'SURVEYED'
+      ⛔ corpus/check_heads_anchored.py
+           loops: 3 loop(s) over e.g. 'bad', "raw.split('\\n')", "re.split(r'(?<!\\\\)\\|', line)[1:-1]"
+      ⛔ corpus/check_landing_rows_trace.py
+           loops: 6 loop(s) over e.g. 'CODE.findall(first)', 'TURNSTILE.findall(first)', 'orphans'
+      ⛔ corpus/check_leads_follow_rows.py
+           loops: 6 loop(s) over e.g. "arc.split('\\n')", 'bad', "raw.split('\\n')"
+      ⛔ corpus/check_loci.py
+           loops: 19 loop(s) over e.g. 'EXCEPTIONS', 'LOCI', 'LOCI.items()'
+      ⛔ corpus/check_marker_buried.py
+           loops: 6 loop(s) over e.g. 'MARKER.finditer(line)', 'buried[:20]', 'enumerate(lines, 1)'
+      ⛔ corpus/check_owed_are_tasks.py
+           loops: 6 loop(s) over e.g. 'VER.findall(l)', 'items', 'notask'
+      ⛔ corpus/check_owed_rows_live.py
+           loops: 11 loop(s) over e.g. 'bad[:12]', "glob.glob(os.path.join(ROOT, 'corpus', '", "glob.glob(os.path.join(ROOT, 're
+      ⛔ corpus/check_paper_tense.py
+           loops: 12 loop(s) over e.g. 'HISTORY.finditer(b)', 'declared', 'found'
+      ⛔ corpus/check_register_ids.py
+           loops: 15 loop(s) over e.g. '_wrap(REVIEWED[key], 84)', 'both', 'co_known'
+      ⛔ corpus/check_rerunnable_honest.py
+           loops: 5 loop(s) over e.g. 'bad', 'files', 'marked_files'
+      ⛔ corpus/check_revisions_logged.py
+           loops: 5 loop(s) over e.g. 'missing', "re.findall(r'^### Revision r(\\d{3,4})', ", "re.findall(r'^r(\\d{3,4})\\b', hi
+      ⛔ corpus/check_revleak.py
+           loops: 7 loop(s) over e.g. 'REV.finditer(body)', 'cur', "glob.glob(os.path.join(ROOT, 'corpus', '"
+      ⛔ corpus/check_routed.py
+           loops: 18 loop(s) over e.g. "('2.51\\\\times10^{-5}', '5.1\\\\times10^{-1", "('2.5671', '4.4611', '2.567', '4.461')",
+      ⛔ corpus/check_routing_current.py
+           loops: 5 loop(s) over e.g. 'DOCS', 'bad[:10]', 'enumerate(lines)'
+      ⛔ corpus/check_row_matchers.py
+           loops: 7 loop(s) over e.g. 'bad', 'hits', 'out'
+      ⛔ corpus/check_rows_cite_receipts.py
+           loops: 3 loop(s) over e.g. 'CITE.findall(line)', 'bad', "raw.split('\\n')"
+      ⛔ corpus/check_self_certification.py
+           loops: 3 loop(s) over e.g. 'SELF_CERT.findall(d)', 'flagged[:12]', 'targets'
+      ⛔ corpus/check_settings.py
+           loops: 6 loop(s) over e.g. 'PRODUCTION.items()', 'flagged if verbose else flagged[:10]', 're.finditer(rf"\\b{knob}\\b
+      ⛔ corpus/check_strikes_reported.py
+           loops: 6 loop(s) over e.g. 'DOCS', 'bad[:10]', 'enumerate(_ls)'
+      ⛔ corpus/check_tex_tail.py
+           loops: 5 loop(s) over e.g. 'after[:4]', 'bad.items()', 'enumerate(lines)'
+      ⛔ corpus/check_veins.py
+           loops: 6 loop(s) over e.g. 'MARKERS', 'RETRACTED.items()', 'bad'
+      ⛔ corpus/check_withdrawals.py
+           loops: 5 loop(s) over e.g. 'W.finditer(t)', 'found', "open(BASELINE, encoding='utf-8')"
+      ⛔ corpus/check_withdrawals_propagate.py
+           loops: 6 loop(s) over e.g. 'OVERTURN.finditer(s)', 'bad[:10]', "raw.split('\\n')"
+
+  ⓸ THE GATES THAT ASSERT IT, AND WHERE
+      ✔ corpus/check_formalisation_join.py  --  line 491: a failing path is reachable from `files and total == 0`
+      ✔ corpus/check_register_columns.py  --  line 51: a failing path is reachable from `not rows`
+
+  ⓹ AND THE ONES THIS READER REFUSES, WHICH IS AN ANSWER AND NOT A GAP
+      ⌗ Each needs reading by hand; counting them as compliant would hide a debt and counting
+        them as non-compliant would invent one.
+      ? corpus/check_absence_pinned.py  --  1 guard(s) not linked to a looped population e.g. `not PINNED.search(d) [inside the loop]`
+      ? corpus/check_ingestion_current.py  --  1 guard(s) not linked to a looped population e.g. `not os.path.exists(f) [inside the loop]`
+      ? corpus/check_killrefs.py  --  1 guard(s) not linked to a looped population e.g. `m and not SUPERSEDED.search(flat[max(0, m.st
+      ? corpus/check_kind.py  --  2 guard(s) not linked to a looped population e.g. `not hits [inside the loop]`
+      ? corpus/check_map_dupes.py  --  1 file-presence guard(s) e.g. `not os.path.exists(MAP)`
+      ? corpus/check_map_overturns.py  --  1 guard(s) not linked to a looped population e.g. `not SELFMARK.search(t[i:i+700]) [inside the 
+      ? corpus/check_received_at_weight.py  --  1 file-presence guard(s) e.g. `not os.path.exists(REG)`
+      ? corpus/check_revision_collisions.py  --  1 guard(s) not linked to a looped population e.g. `not disambiguates`
+      ? corpus/check_rows_outward.py  --  1 file-presence guard(s) e.g. `not os.path.exists(INDEX)`
+      ? corpus/check_rule_current.py  --  1 guard(s) not linked to a looped population e.g. `not MARKED.search(window) [inside the loop]`
+      ? corpus/check_theatre_currency.py  --  1 guard(s) not linked to a looped population e.g. `not control_fires()`
+
+====================================================================================================
+  2 assert it, 34 do not, 11 are undecidable by this reader, of 47.
+  ⌗ A gate reading `DOES NOT` is not thereby WRONG: the rule is conditional on the population
+    being able to be empty, and whether each one can is per-gate work this census does not do.
+====================================================================================================

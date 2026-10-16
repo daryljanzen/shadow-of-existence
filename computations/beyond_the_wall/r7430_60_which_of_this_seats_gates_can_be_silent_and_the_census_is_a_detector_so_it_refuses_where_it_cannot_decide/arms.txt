@@ -1,0 +1,106 @@
+r7430 (60) -- THE ARMS, SCORED AGAINST PREDICTION.md
+=====================================================================================================
+Registered at bee15636, before any detector was written.  Receipts: census.py (the classifier and its
+16 seeded cases), census_run.txt (the census, which runs the cases first and reports nothing if they
+fail).
+
+  ARM                                               PREDICTED        MEASURED          VERDICT
+  ---------------------------------------------------------------------------------------------------
+  (a) UNDECIDABLE is not empty                      3 to 20 of 47    11 of 47          HIT, and see below
+  (b) a positive and a negative control             2 of 2           2 of 2            HIT
+  (c) the classifier runs its own cases first       0 failing        0 of 16           HIT
+  (d) gates that owe one are NAMED, not counted     every one        34 named           HIT
+  ---------------------------------------------------------------------------------------------------
+
+THE CENSUS, as it stands after the repairs below:
+      ASSERTS      2 of 47        DOES NOT    34 of 47        UNDECIDABLE   11 of 47
+
+(a) IS A HIT ONLY AFTER FIVE REPAIRS, AND THE FIRST READING WAS A MISS.  THAT IS THE FINDING.
+    The first census reported UNDECIDABLE = 0, OUTSIDE the registered interval.  PREDICTION.md had
+    said, in advance, what to do about exactly that:
+
+        "a detector over 47 hand-written instruments that returned 0 undecidable would be claiming to
+        have read all of them correctly, which is the claim this family keeps falsifying.  AN EMPTY
+        THIRD COLUMN IS EVIDENCE THE DETECTOR IS GUESSING, NOT EVIDENCE THE GATES ARE UNIFORM."
+
+    So the 0 was read as a miss and the classifier was read by hand against gates whose answer was
+    known.  Five defects came out, in this order, and the headline figure moved with each:
+
+      #   the defect                                                      ASSERTS went
+      --  --------------------------------------------------------------  ------------
+      1   `return 1` was not counted as a failure at all -- and it is                6 -> 8
+          present in 122 of the 135 gates, the corpus's DOMINANT idiom.
+          It read `check_register_columns`, whose `if not rows: ... return
+          1` is a textbook non-vacuity assertion, as asserting nothing.
+      2   `raise SystemExit(main())` was not read as an exit idiom.                  8 -> 13
+          Measured: sys.exit 89 occurrences, raise SystemExit 66.
+      3   a FILE-PRESENCE guard counted as a population guard.  5 of the            13 -> 2
+          13 were `if not os.path.exists(REG): return 1`, which asserts a
+          file is there and says nothing about whether it yields any rows.
+      4   a COMPREHENSION was not read as a loop, so the population it                2 -> 4
+          iterates never entered the linkage set.  In these gates the
+          comprehension IS the idiom.
+      5   a guard INSIDE the iteration counted as a population guard.                4 -> 2
+          Per-item by construction; 2 survivors were this, admitted by the
+          name-based linkage because `hits` and `t` are iterated elsewhere.
+
+    ** EACH ONE WAS FOUND BY A CASE WHOSE ANSWER WAS KNOWN IN ADVANCE, AND NONE BY READING THE CODE
+    AND FEELING SATISFIED. **  Defects 1 and 2 are the same mistake twice in one revision: I
+    enumerated the idioms I could think of instead of measuring the ones that are there.  Defect 5 is
+    the structural discriminator the first four were groping at:
+
+      => A POPULATION'S NON-VACUITY IS ASSERTED BEFORE THE ITERATION, NEVER WITHIN IT.  A test that
+         runs once per item cannot say anything about whether there were any items.
+
+    And defect 3 is the one that mattered most, because it ran in the dangerous direction: it
+    OVERSTATED compliance, reporting 13 gates as satisfying a rule that 2 satisfy.
+
+(b) THE CONTROLS -- 2 of 2.  check_formalisation_join, the one gate in the corpus built to this rule
+    (r7426, r7428), reads ASSERTS; a constructed gate that loops a population and reports success on
+    zero reads DOES NOT.  Both ASSERTS survivors were then hand-read: check_formalisation_join's is
+    its own positive control, and check_register_columns' is `if not rows: ... return 1` hoisted out
+    of the loop.  Neither is a reading I am taking on trust from the classifier.
+
+(c) 16 SEEDED CASES, 0 FAILING, and the census REFUSES TO REPORT A FIGURE if they fail -- the cases
+    run as section (0) of the real run, not in a separate mode.  That is r7426's lesson applied to
+    this instrument: a control living only in a --seed flag proves the reader and not the run.
+    One case MOVED during the work and is recorded as having moved: "a gate with no `for` loop reads
+    UNDECIDABLE" became "a gate whose only population is a comprehension still has a population",
+    because defect 4's fix made the old premise false.  A new case covers genuine no-population.
+
+(d) THE 34 ARE NAMED with the population each loops, per r7425 (4) -- a measurement must name an
+    address the remedy can be written to.  census_run.txt carries the list.
+
+=====================================================================================================
+WHAT THE CENSUS DOES AND DOES NOT SAY
+=====================================================================================================
+IT DOES NOT SAY 34 GATES ARE BROKEN.  r7421 (3) is conditional: a gate whose population CAN be empty
+owes a control.  Whether each of the 34 has such a population is per-gate work this census does not
+do, and the list is a worklist rather than a verdict.
+
+IT DOES NOT SAY THE 2 ARE CORRECT.  r7417 (2): agreement with an instrument is not correctness.  The
+census does not execute the branches it finds, so a non-vacuity guard that cannot fire would read as
+ASSERTS -- r7425 (4)'s wall, one level up.
+
+IT DOES NOT SAY THE 11 ARE COMPLIANT OR NON-COMPLIANT.  Each needs reading by hand.  Counting them as
+compliant would hide a debt and counting them as non-compliant would invent one, which is r7417 (4)'s
+asymmetry argument applied to a different population.
+
+AND THE POPULATION ITSELF IS A CLAIM.  47 of the 135 gates under corpus/, selected by the ADDING
+commit's revision id being EVEN -- this line's band since r3563 -- because receipts/INDEX.md names
+exactly one gate in a corpus/check_* receipt column and reading the index would have measured a
+population of one.  Its stated limit, registered before the measurement: it measures who WROTE a gate,
+not who owes it.
+
+=====================================================================================================
+AND THE SENTENCE WORTH KEEPING, WHICH IS ABOUT THIS SEAT AND NOT ABOUT THE GATES
+=====================================================================================================
+PO-78's family stood at fourteen.  This revision is the fifteenth, and it is the first where the
+registration PREDICTED the failure mode and named the tell in advance:
+
+    ** A DETECTOR'S CONFIDENCE IS NOT EVIDENCE.  AN EMPTY `UNDECIDABLE` COLUMN IS A MEASUREMENT OF THE
+    DETECTOR AND NOT OF ITS SUBJECT. **
+
+Five readings of one corpus, each wrong, each corrected by an anchor rather than by inspection -- and
+the figure the first one would have published, 6 of 47 asserting with 0 undecidable, is wrong in both
+columns at once.
