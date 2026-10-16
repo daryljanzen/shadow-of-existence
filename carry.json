@@ -1,11 +1,5 @@
 {
  "claude/shadow-of-existence-setup-5tjf0b": {
-  "reads": {
-   "corpus/check_formalisation_join.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38925184706",
-    "since": "4c1ee2f457a8d915b2193aca956cba0d3ed547a1"
-   }
-  },
   "suite": {
    "corpus/check_formalisation_join.py": {
     "gates": [
