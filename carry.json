@@ -110,25 +110,9 @@
    }
   },
   "tolerance": {
-   "receipts/L_probability/S37_the_ground_disqualified_seventeen_of_its_authors_own_calls_and_sixteen_of_them_are_repairs.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38783669117",
-    "since": "6dfe19a702ed22af2f9ec6ce6ccf7868d70e23d1"
-   },
-   "receipts/L_probability/S54_a_ledger_change_scopes_five_receipts_and_none_of_the_forty_four_that_read_the_ledger_because_the_read_index_is_a_list_of_spellings_without_tsv_on_it.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38833517265",
-    "since": "622b01b1b8e7a4c380dc5a527b61522e7acfd9b6"
-   },
-   "receipts/L_probability/S55_the_previous_repairs_own_written_safety_argument_was_the_defect_because_a_shrinking_population_is_safe_for_a_restraint_and_fatal_for_the_non_vacuity_read_off_the_same_range.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38833517265",
-    "since": "622b01b1b8e7a4c380dc5a527b61522e7acfd9b6"
-   },
-   "receipts/L_probability/S59_the_census_of_a_shape_inside_one_file_missed_the_clause_four_lines_from_the_pin_that_fixes_it.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38833517265",
-    "since": "622b01b1b8e7a4c380dc5a527b61522e7acfd9b6"
-   },
-   "receipts/L_probability/S60_the_test_that_asks_whether_a_literal_is_anywhere_in_the_repo_cannot_see_a_dead_pin_in_its_own_container.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38833517265",
-    "since": "622b01b1b8e7a4c380dc5a527b61522e7acfd9b6"
+   "receipts/L_probability/S58_the_repair_was_right_and_the_reason_written_beside_it_was_false_because_a_pin_keyed_by_an_abbreviation_is_keyed_by_a_length_the_environment_picks.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38840892165",
+    "since": "bc8966c48e02586bc4e225dfad2e89a04ed99513"
    }
   }
  },
