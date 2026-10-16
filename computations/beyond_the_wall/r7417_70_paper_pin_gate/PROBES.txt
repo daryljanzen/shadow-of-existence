@@ -1,0 +1,23 @@
+## probe 1: one listed key removed -> must FAIL NEW
+  PAPER PINS PRESENT -- at 7334696a: 1510 PAPER row(s), 125 absent from every corpus/*.tex
+    NEW   (absent, not listed):            1
+    STALE (listed, now present or gone):   0  (0 no longer a live row)
+    SEED  present read present, one-character mutant read absent: True
+  ⛔ [FAIL] NEW absent PAPER pin: receipts/L147_two_arm/B2_the_prose_duplicate_did_not_reach_main.py	"is now decomposed rather than"
+     A NEW key is a PAPER pin whose literal is in no paper: restore the sentence, repair the pin, or -- if the absence is deliberate -- list it with `--update` in the sam
+exit=1
+## probe 2: a bogus key added -> must FAIL STALE
+  PAPER PINS PRESENT -- at 7334696a: 1510 PAPER row(s), 125 absent from every corpus/*.tex
+    NEW   (absent, not listed):            0
+    STALE (listed, now present or gone):   1  (1 no longer a live row)
+    SEED  present read present, one-character mutant read absent: True
+  ⛔ [FAIL] STALE listed key: receipts/X/none.py	"no such sentence"
+     A NEW key is a PAPER pin whose literal is in no paper: restore the sentence, repair the pin, or -- if the absence is deliberate -- list it with `--update` in the sam
+exit=1
+## control: restored -> must PASS
+  PAPER PINS PRESENT -- at 7334696a: 1510 PAPER row(s), 125 absent from every corpus/*.tex
+    NEW   (absent, not listed):            0
+    STALE (listed, now present or gone):   0  (0 no longer a live row)
+    SEED  present read present, one-character mutant read absent: True
+  no new absent PAPER pin; the list is current; the seed reads both ways.
+exit=0
