@@ -76,12 +76,6 @@
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38830820116",
     "since": "0d32ed1d75ed38b156e88b91fd8cbbc382d4419c"
    }
-  },
-  "tolerance": {
-   "receipts/L_probability/S37_the_ground_disqualified_seventeen_of_its_authors_own_calls_and_sixteen_of_them_are_repairs.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38786345652",
-    "since": "3a8dd3418bc6a41b20df24b65444527aa9db8200"
-   }
   }
  },
  "claude/shadow-of-existence-setup-wgcmvt": {
