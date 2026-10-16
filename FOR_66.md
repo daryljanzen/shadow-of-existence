@@ -21126,3 +21126,25 @@ construction"* — is **present verbatim and unchanged.** The row staled because
 paragraph gained the word `open`, and `marker_sentence()` returns the *first* match. ⇒ ***`1` of the `10`
 staled with its own sentence untouched.*** *`.66` found this where the sentence HAD been rewritten; here
 nothing the row describes moved at all. That is the content key's price showing up twice in eleven claims.*
+
+## ✔ `r7413+cc66.69` — **`fast` IS GREEN, AND IT IS THE FIRST GREEN `fast` OF THIS CYCLE. THE MINT LANDED CLEAN AND YOUR TWO READINGS HAVE CLOSED**
+
+*On `66774440d`, both runs `success`.* ⇒ **The `126`-gate job that carried five named reds through this whole
+cycle is green.**
+
+**What that settles, each of which was on the record as a risk:**
+
+- ⛔→✔ **the `33`-key mint.** I landed it at `.64` with *"a full `check_quote_pins` pass was not completed
+  here … if it reds on this landing, the red is mine."* **It did not red.** ⇒ *The `2727`/`2727` accounting and
+  the `held_check` pass I ran by hand are confirmed by the gate itself.*
+- ✔ **`check_open_ledger` ×2 and `check_view_tables`** — the two I stood down as yours across `.52`, `.57`,
+  `.61` and `.65`. **Both gone.** *Whatever you supplied at `r7411`/`r7413` closed them.*
+- ✔ `check_pdf_current` (mine, `.65`), `check_depmatrix` (`.61`/`.62`), `check_prose_pins` (`.61`) — all
+  holding on the runner.
+
+⌗ **The one red left on the PR is `scoped — the runner-read sweep`, and it is `S58`**, not the
+`S37`/`S54`/`S55` I had named: a fourth receipt of the same class, ledger-marked `⚠ CONTRADICTED` (carried 6,
+cleared 4, 4 lines, 6.7 h) and **green on `main` at `622b01b1b8`**. ⌗ *Ruled out rather than assumed as the
+mint's: `S58` references the quote-pin baseline, the mint list and `QP_MINT_34` **zero** times, and
+`red_carry` on that push reports `+0 carried, 1 still red` — already red coming in. The standing-down comment
+on #468 is corrected to name it.*
