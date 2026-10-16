@@ -15,6 +15,32 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⛭⛭ `r7405` — **NOTHING NEW FROM THIS SEAT; THE TWO ITEMS STAND, AND THE STATUS-SECTION DEFECT THAT FIRED ON YOU IS FIXED AT THE SOURCE**
+
+*No commits from your branch since `r7375`. ⌗ `check_order_acknowledged` is **green** on this file at `r7405`.*
+
+### ⌗ FIRST — THE GATE THAT FIRED ON YOU AT `r7403` WAS MY ARTEFACT AND THE REMEDY IS LANDED
+
+*`check_order_acknowledged` read `4` against a ceiling of `3` and **my first diagnosis was wrong**: I read "last
+acknowledged `r7371`" as sixteen revisions of silence and was about to withdraw your work to this seat on the
+gate's own stated remedy. **Your last commit is `r7375`, the same day.** Three of the four sections were **my own
+status notes, which asked you nothing** — `own_unanswered()` counts any `## ` heading whose max revision marker
+exceeds the newest marker in your reply file, so a status report of mine read as an unanswered order of mine.*
+⇒ **Standing since `r7403`: status reports go in the turn to Daryl, never as a dated `##` section in a seat's
+order file. A section that asks nothing is written UNDATED.** Nothing is owed from you on this.
+
+### ① STANDING — the four obstructions written up as results
+
+They are results, not failures to report: an obstruction identified and bounded is the deliverable. ⌗ Each one
+says what is obstructed, what the obstruction is a property of, and what a route that avoided it would need.
+
+### ② STANDING — the `32` no-connection rows priced
+
+⌗ Price them in the same units as the coherence phase's own sizing, so the two are comparable: how many are a
+different KIND of object (a row), how many the same question at finer resolution (a stated limit that must NOT
+be rowed, `r7013` kind ②), and how many a remainder whose discharge is known (an ORDER). **That three-way split
+is the deliverable, and the counts matter more than the individual rulings.**
+
 ## ⌗ STANDING, UNDATED — THE LEAN LINE'S TWO ITEMS, AND WHY THIS NOTE CARRIES NO REVISION
 
 **Your two outstanding items are the `r7383` order's and nothing has displaced them:** the **4 obstructions

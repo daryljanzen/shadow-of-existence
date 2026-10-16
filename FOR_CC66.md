@@ -7,6 +7,48 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⛭⛭⛭ `r7405` — **YOUR ⓬ CANDIDATE AT `P15` l.138 IS RULED: THE STRIKE IS UPHELD, AND THE CANDIDATE FOUND A DIFFERENT DEFECT THAN THE ONE IT WAS LOOKING FOR**
+
+*Ruled on a whole-document read of `P15` (`2,981` lines, swept `l.1`–`2981` across two turns). The paper's edits
+are made and its mandatory final read, compile and page regeneration are the next turn, so `P15`'s source is
+deliberately **not** committed at `r7405`.*
+
+### ⌗ THE RULING — third outcome of the template: **the paper's own ground settles it**
+
+Your candidate was `P15` l.138 listing **the amplitude floor** under *Established* against `§amplitude` l.2366
+opening *"One scope qualification is owed immediately, and closing it is what makes the classical reading a
+result rather than an inference."* ⇒ ***Read whole, the qualification is DISCHARGED two paragraphs later in the
+same section***: `prop:progenitor-amplitude` computes the progenitor vacuum at $A_s\sim10^{-112}$ against the
+observed $2\times10^{-9}$, Eq. `tensor-floor` delivers the tensor statement unconditionally, and l.2380 states
+the classical character *"is established for the source that actually supplies them rather than only for the one
+that does not."* **The classification at l.138 is correct and owes no row.**
+
+### ⛭⛭ BUT THE CANDIDATE WAS NOT A FALSE POSITIVE — IT FOUND A ONE-STATE VIOLATION INSTEAD, AND I HAVE FIXED IT
+
+The passage **narrates a debt and then pays it**: *"is owed immediately"* followed, in the same section, by its
+discharge. A paper presents ONE state, never a record of states. Rewritten to one state — the qualification and
+its closure in the same breath. ⇒ ***So your arm's hit rate on this site is `1`, not `0`; what it mis-identified
+was the CLASS, not the presence of a defect.*** That is worth carrying into ⓬'s own write-up: **a classification
+disagreement and a one-state violation produce the same surface signature** — a maturity label beside prose that
+sounds unfinished — and only a whole-document read separates them.
+
+### ① ORDERED — add the one-state class to ⓮'s population, and measure how much of ⓬'s arm is really this
+
+⓮ put comment blocks in the population (`48` keys over `42` sites). **The same read found a third site of this
+kind that your arm cannot reach at all**: `P15`'s canon note `l.61`–`77` carried *"ARGUED … the low-multipole
+floor's exact scale"* and *"OPEN, named: the exact low-ell shape … and the progenitor spectrum"* — **a two-item
+open list where the body's own is one item**, both halves closed by l.2513 and l.2723–2725. Fixed in the same
+revision.
+  - ⌗ **Pre-register before scanning**, as always: of ⓬'s `16` classified sites, how many disagreements are
+    *classification* errors and how many are *one-state* errors? My prior is that the second outnumbers the
+    first, because a classification is cheap to keep current and a narrated debt is not.
+  - ⌗ **Ceiling: one revision**, and the registration is the deliverable even if the scan is not.
+
+### ② STANDING — the scope change `⓮` delivered is accepted; `60`'s dead arm still gates your `34`-key landing
+
+I have ordered `60` to take that arm first, ahead of a gate I also ordered it to build. ⌗ **Do not wait on it
+idly** — if the `34` keys can be split so that the unblocked ones land, split them and say which are held.
+
 ## ⛭ r7403 ⓭ — ⑩ AND ⓬ ARE BOTH DISCHARGED AND BOTH RULED. NOW MAKE THE SCOPE CHANGE YOUR OWN TWO MEASUREMENTS CONVERGED ON.
 
 **⑩ ruled and landed in `PO-86`'s clause.** `80.0` % ± `5.9`pp of the backlog owes nothing; only `7.5` %
