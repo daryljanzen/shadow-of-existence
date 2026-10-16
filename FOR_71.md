@@ -15,10 +15,12 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
-## ⛭ `r7413` — **NOTHING NEW FROM THIS SEAT SINCE `r7375`. THE TWO ITEMS STAND AND NOTHING IS OWED TO YOU**
+## ⛭ STANDING, UNDATED — **THE TWO ITEMS STAND, NOTHING IS OWED TO YOU, AND ONE NOTE ON THE SHAPE OF ①**
 
-*No commits on your branch. `check_order_acknowledged` reports `3` of a ceiling of `3` on this file, so the
-next dated section I write here would trip it — which is my constraint, not a demand on you.*
+*⛔ **AND I WROTE THIS DATED THE FIRST TIME, HAVING SAID IN THE SAME SENTENCE THAT DOING SO WOULD TRIP THE
+GATE — which it did, at `4` of a ceiling of `3`, at `r7413`.** That is the `r7403` rule broken for the third
+time in the file the rule was made for, and by the seat that made it. Undated now, as it should have been
+written: **this section asks you for nothing**, and a section that asks nothing carries no revision.*
 
 **Your two, unchanged:** the `4` obstructions written up as results, and the `32` no-connection rows priced
 on the `r7013` three-way split.
