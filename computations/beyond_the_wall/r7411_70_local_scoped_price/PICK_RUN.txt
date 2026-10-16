@@ -1,0 +1,22 @@
+964fef0a2 {'suite': 15, 'reads': 0, 'tolerance': 0}
+03e8985f0 {'suite': 327, 'reads': 0, 'tolerance': 219}
+eab95d8a6 {'suite': 83, 'reads': 0, 'tolerance': 5}
+6bfd11a92 {'suite': 1, 'reads': 0, 'tolerance': 0}
+6ff59eb02 {'suite': 211, 'reads': 0, 'tolerance': 5}
+c5d016807 {'suite': 15, 'reads': 0, 'tolerance': 0}
+ab6c1ba19 {'suite': 18, 'reads': 0, 'tolerance': 6}
+a31f8df65 {'suite': 11, 'reads': 0, 'tolerance': 0}
+df380e089 {'suite': 19, 'reads': 0, 'tolerance': 8}
+373e077ee {'suite': 3, 'reads': 0, 'tolerance': 3}
+622b01b1b {'suite': 15, 'reads': 0, 'tolerance': 0}
+3dbc60a7a {'suite': 11, 'reads': 0, 'tolerance': 2}
+6186be892 {'suite': 18, 'reads': 0, 'tolerance': 6}
+6703dc7ce {'suite': 15, 'reads': 0, 'tolerance': 0}
+557b94da3 {'suite': 121, 'reads': 0, 'tolerance': 6}
+15c6a1d9b {'suite': 15, 'reads': 0, 'tolerance': 0}
+fb39cd9cb {'suite': 108, 'reads': 0, 'tolerance': 6}
+b490503e5 {'suite': 14, 'reads': 0, 'tolerance': 2}
+7edc29fec {'suite': 14, 'reads': 0, 'tolerance': 2}
+43c33644c {'suite': 14, 'reads': 0, 'tolerance': 5}
+median suite scope 15.0 -> typical revision 964fef0a2 {'suite': 15, 'reads': 0, 'tolerance': 0}
+wall 4.2 s
