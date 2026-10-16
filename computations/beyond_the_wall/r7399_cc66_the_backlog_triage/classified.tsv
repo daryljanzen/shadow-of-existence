@@ -1,0 +1,55 @@
+# ⑩ THE READ -- the registered sample of 40 sites, classified by r7013 KIND from the paragraph.
+# ** THE RULE APPLIED, stated so it can be checked against the rows: ** a site states an OPEN CLAIM
+#   iff its marker sentence, read in its paragraph, asserts that something in THIS corpus is
+#   unfinished.  A marker in an ordinary sense, in a closure statement, in a description of another
+#   theory's conjecture, or in a rhetorical "it remains to say" that the same paragraph then says, is
+#   NOT-AN-OPEN-CLAIM.
+# ** THE KINDS ARE READ FROM THE CLAIM'S SHAPE IN ITS PARAGRAPH, which is what ⑩ asks for. **
+#   ① a distinct unfinished object named as work -> owes a row
+#   ② a stated limit on what is claimed here -> owes nothing, and the register must not row it
+#   ③ a remainder whose discharge is NAMED in the paragraph -> owes an ORDER
+#   ⌗ A definitive ①-against-② ruling AGAINST THE REGISTER'S EXISTING ITEMS is the register-holder's,
+#     not this seat's; what is measured here is the shape of the claim each paragraph makes.
+# ⛔ NOTHING HERE IS WRITTEN INTO corpus/open_reference_baseline.tsv.  r7399 ⑩: the verdict column is
+#   a person's and will not be grown by a side effect.
+n	paper	section	expression	kind	why
+01	P1	The information paradox	\bremains\b	NOT-AN-OPEN-CLAIM	"remains globally connected" -- ordinary sense, inside a closure
+02	P2	Why the chart draws a place as a line	\bremains\b	NOT-AN-OPEN-CLAIM	"remains well defined" -- ordinary sense
+03	P2	The single horizon and the root triple	not claimed	②	"Whether the two triples are one structure is not claimed here" -- a stated limit; P7 states the same claim in its own voice
+04	P3	The projection is the observer's celestial sphere	\bremains\b	NOT-AN-OPEN-CLAIM	"It remains to say where r_0 comes from" -- and the same paragraph says it
+05	P3	The hinge geometry	\bremains\b	NOT-AN-OPEN-CLAIM	"no orbit remains to distinguish" -- a completeness claim
+06	P5	The diagnostic	\bopen\b	NOT-AN-OPEN-CLAIM	"none of them an open case"; the paragraph opens "settled, not open"
+07	P5	Morphisms: vantage-changes	\bremains\b	NOT-AN-OPEN-CLAIM	"no further discrete morphism remains to classify" -- closure
+08	P6	Place in the programme	conjectur	NOT-AN-OPEN-CLAIM	other theories' conjectures, which the paragraph says CR dissolves
+09	P6	The boundary, and the discipline's first programme	\bnot yet\b	NOT-AN-OPEN-CLAIM	"not yet a refutation" -- the epistemic status of a 1950s episode, not of this corpus
+10	P8	The vacuum kernel: straight cuts are vacuum	\bremains\b	NOT-AN-OPEN-CLAIM	"It remains to check..." and the same sentence confirms it ⌗ host paragraph not resolved; read from the sentence
+11	P9	The range and the wall	\bfrontier\b	②	"a question of ordinary interior analysis rather than a frontier of this construction" -- a stated limit that declines frontier status
+12	P9	Scope and open problems	\bopen\b	NOT-AN-OPEN-CLAIM	"not a defect and not the construction's open edge"
+13	P10	Deparametrization and the true Hamiltonian	not settled	②	"genuine technical questions not settled by the reduction" -- scoped to the toy; the full object is carried in §lock
+14	P10	Relation to existing approaches	we do not claim	NOT-AN-OPEN-CLAIM	a scope statement about OTHER programmes
+15	P10	(no section)	\bopen\b \bremains\b	①	"what remains open is ... the definition of the interacting tower" -- a distinct object named as work ⌗ coincides with P7 frontier:quantum
+16	P10	The closed-$S^3$ lift: the graviton sector on the layer	\bremains\b	②	"what that argument does not reach ... is the whole of what remains" -- a stated limit, then shown to hold on the right background
+17	P10	Deparametrization and the true Hamiltonian	not claimed	②	"What the deparametrization does not supply is a quantization of the Euclidean segment" -- "the silence is structural"
+18	P11	Scope, and where what is not claimed here is settled	\bopen\b	②	three limits stated, each with where it stands -- including "registered as an open problem of the programme"
+19	P11	(no section)	not claimed	②	"We close with what is not claimed: no closed-form nonlinear solution..." -- stated limits in the abstract
+20	P13	The question	not claimed	②	"not claimed anywhere below ... that no construction whatever could yield the Standard Model" -- bounding a negative result
+21	P13	What stays open	\bremains\b	NOT-AN-OPEN-CLAIM	"remains exactly as stated" -- ordinary sense, and "sharpens rather than disturbs"
+22	P15	Predictions, and the progenitor boundary	\bremains\b	NOT-AN-OPEN-CLAIM	"the spectrum's content remains inherited" -- ordinary sense inside a results summary
+23	P15	What the substrate determines: coherence from the null boundary	what would	③	"what would make it a tension is a constraint on n_s that does not run through the damping tail" -- the discharge is named
+24	P15	What the substrate determines: the amplitude floor	\bowed\b	③	"One check is owed here and is not optional" -- and "both can be computed", with the closed form supplied
+25	P15	What the progenitor supplies: the transmission proof	\bfrontier\b	①	"a modelling task awaiting a progenitor interior" -- a distinct object named as work
+26	P15	What the substrate determines: the throat and isotropization	\bremains\b	②	"The guard that remains is narrower and is worth stating as such" -- a stated limit with the correct statement given
+27	P15	What the progenitor supplies: the transmission proof	not computed	②	"What is not computed here is the flux the seam radiates" -- a limit that reassigns the question to the quantum state
+28	P15	The acoustic comparison	\bremains\b	①	"What remains to be explained is what distinguishes the first acoustic cycle from the rest" -- named, discharge not
+29	P16	The cooling leg is a standard BBN: the abundances	\bopen\b	②	"its exact regulated value is open and downstream-irrelevant" -- open and declared to owe nothing (a figure caption)
+30	P16	The synthesis spine: the deductive chain	conjectur	NOT-AN-OPEN-CLAIM	"the conjecture is discharged as Theorem B" -- a closure
+31	P18	What licenses the word ``forced'', and the limit on it	have not been	③	"have not been sampled and no base rate has been computed ... establishing the base rate is set as the discipline's own first programme"
+32	P18	Tier one: what carries the layered reading's full weight	\bremains\b	NOT-AN-OPEN-CLAIM	"remains globally connected" -- the P1 closure restated
+33	P18	What would displace it	what would	NOT-AN-OPEN-CLAIM	"what would disqualify the framework" -- a question posed and answered in the same section
+34	P18	Matter is the bend of the cut	\bfrontier\b	②	"that is the matter sector's declared boundary -- carried on the frontier below rather than here" -- a limit that points at the frontier
+35	P18	What is genuinely unpaid, at its actual size	\bowed\b	NOT-AN-OPEN-CLAIM	"answered rather than owed ... answered at §dissolved"
+36	P18	What is held open, and on what footing	conjectur	③	"their unification is the thesis, decidable by a named test" -- the discharge is a named test ⌗ host paragraph not resolved; read from the sentence
+37	P18	What each side had to assume to be scored at all	\bremains\b	NOT-AN-OPEN-CLAIM	"One thing remains to be said" -- and the paragraph says it
+38	P18	What is genuinely unpaid, at its actual size	unresolved	③	"One unresolved observational question ... a tension only if a constraint on n_s off the damping tail says so" -- the discharge is named
+39	P18	What is not on this list, and why that matters	\bopen\b	NOT-AN-OPEN-CLAIM	"Items closed by impossibility are not carried as open ... In neither case is a derivation owed"
+40	P18	One reflection worn five ways	\bopen\b	②	"is left open, and it is the same question §declined leaves open ONE LEVEL UP" -- r7013 kind ② in the paper's own words
