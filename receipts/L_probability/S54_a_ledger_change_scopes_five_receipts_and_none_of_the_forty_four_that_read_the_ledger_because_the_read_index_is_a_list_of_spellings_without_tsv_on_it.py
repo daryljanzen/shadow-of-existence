@@ -186,7 +186,14 @@ def main():
     _rs_path = os.path.join(_rs_tmp, 'receipt_scope.py')
     io.open(_rs_path, 'w', encoding='utf-8').write(_rs_src)
     rs = _load(_rs_path, 's54_receipt_scope')
-    idx, traced, stale, new = rs.load(ROOT)
+    # ⛭ r7415+70.3 (70, ported, routed to 60 to confirm or replace): the INDEX is now pinned at the same
+    #   commit, for the same reason.  `r7415+70.1` committed a nightly index whose trace records `.tsv`
+    #   reads, which is the repair Ⓐ③/Ⓐ④ describe arriving through the index rather than through
+    #   `NAME_RE` -- read live, Ⓐ②-Ⓐ④ went red on success.  The claims are about the index as it stood.
+    _idx_path = os.path.join(_rs_tmp, os.path.basename(rs.INDEX))
+    io.open(_idx_path, 'w', encoding='utf-8').write(subprocess.run(
+        ['git', 'show', _RS_AT + ':' + rs.INDEX], cwd=ROOT, capture_output=True, text=True, check=True).stdout)
+    idx, traced, stale, new = rs.load(ROOT, _idx_path)
 
     # ══════════════════════════════════════════════════════════════════════════════════════════════
     head('A -- THE HOLE, IN BOTH LAYERS: ONE RUNS NO RECEIPT AND THE OTHER RUNS THE WRONG FIVE')
@@ -225,7 +232,7 @@ def main():
 
     # ── the cause, named and measured ─────────────────────────────────────────────────────────────
     import json as _json
-    raw = _json.load(io.open(os.path.join(ROOT, rs.INDEX), encoding='utf-8'))
+    raw = _json.load(io.open(_idx_path, encoding='utf-8'))
     traced_tsv = [r for r, e in raw['receipts'].items()
                   if any(str(x).endswith('.tsv') for x in (e.get('r') or []))]
     static_blind = [r for r in readers
@@ -254,7 +261,7 @@ def main():
         pp = os.path.join(tmp, 'rs_patched.py')
         io.open(pp, 'w', encoding='utf-8').write(patched)
         rsp = _load(pp, 's54_rs_patched')
-        idx_p = rsp.load(ROOT)[0]
+        idx_p = rsp.load(ROOT, _idx_path)[0]
         sc_p = _scoped(rsp, idx_p, LEDGER)
     print(f'      with `tsv` in the list: the ledger scopes {len(sc_p)} receipt(s), and '
           f'{len(sc_p & set(readers))} of the {len(readers)} readers are in it')

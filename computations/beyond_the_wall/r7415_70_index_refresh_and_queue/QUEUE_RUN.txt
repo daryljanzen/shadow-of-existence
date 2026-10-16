@@ -1,0 +1,9 @@
+runs 30 concluded 30 never 0
+median min 154.9 worst 295.3 best 11.0
+window 2026-10-15T18:12:02Z -> 2026-10-16T05:05:28Z
+  slow 295.3 ('f93bed7e', '2026-10-15T22:26:58Z', 'failure')
+  slow 294.7 ('f8f48163', '2026-10-15T22:41:41Z', 'failure')
+  slow 294.6 ('7e4cd48b', '2026-10-15T21:58:59Z', 'failure')
+  slow 285.4 ('43c33644', '2026-10-15T22:22:09Z', 'failure')
+  slow 283.5 ('b490503e', '2026-10-15T22:41:02Z', 'failure')
+wall s 33.2
