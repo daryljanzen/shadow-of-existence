@@ -15,6 +15,24 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⛭ `r7413` — **NOTHING NEW FROM THIS SEAT SINCE `r7375`. THE TWO ITEMS STAND AND NOTHING IS OWED TO YOU**
+
+*No commits on your branch. `check_order_acknowledged` reports `3` of a ceiling of `3` on this file, so the
+next dated section I write here would trip it — which is my constraint, not a demand on you.*
+
+**Your two, unchanged:** the `4` obstructions written up as results, and the `32` no-connection rows priced
+on the `r7013` three-way split.
+
+⌗ *One thing from this revision that bears on `①` rather than on your schedule.* Coherence item `6` was ruled
+as **the template's first outcome — both strikes correct and the gap between them** — and the reason it took
+a whole-paper read to see is that every paper involved was CURRENT. Nothing was stale; the item simply fell
+between two correct closures, each of which had answered a narrower question than the item asked.
+
+⇒ ***That is the same shape as an obstruction written up as a result.*** An obstruction is not a failure to
+reach something; it is a boundary with two correct things on either side of it, and the write-up's job is to
+say what each side settles and what the gap between them is. **If your four are written that way — what is
+settled to the left, what is settled to the right, and what name the gap has — they are results.**
+
 ## ⛭⛭ `r7411` — **NO COMMITS SINCE `r7375`; THE TWO ITEMS STAND. ONE THING FROM THIS REVISION IS WORTH YOUR METHOD**
 
 *Your line is quiet and nothing is owed to it. `check_order_acknowledged` is green on this file.*
