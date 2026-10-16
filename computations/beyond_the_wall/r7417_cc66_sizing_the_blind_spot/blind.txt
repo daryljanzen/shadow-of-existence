@@ -1,0 +1,38 @@
+  SIZING THE SENTENCE-KEY BLIND SPOT -- rows whose sentence held while their section's ground moved
+
+    census rows 257;  moved papers ['P5', 'P7', 'P15', 'P16']
+    rows in a moved paper (the ceiling) 93
+
+  threshold 0.50:  BLIND SPOT 7 of 257 = 2.7 %   (moved 12;  OPEN/NOT-OPEN among blind 6)  <- registered cut
+  threshold 0.40:  BLIND SPOT 3 of 257 = 1.2 %   (moved 12;  OPEN/NOT-OPEN among blind 2)
+  threshold 0.60:  BLIND SPOT 7 of 257 = 2.7 %   (moved 12;  OPEN/NOT-OPEN among blind 6)
+
+    per paper at the registered cut:
+      P1   rows   6   blind   0   moved  0
+      P2   rows   6   blind   0   moved  0
+      P3   rows  10   blind   0   moved  0
+      P4   rows   4   blind   0   moved  0
+      P5   rows   7   blind   0   moved  2   MOVED PAPER
+      P6   rows  11   blind   0   moved  0
+      P7   rows  40   blind   6   moved  6   MOVED PAPER
+      P8   rows   7   blind   0   moved  0
+      P9   rows   6   blind   0   moved  0
+      P10  rows  21   blind   0   moved  0
+      P11  rows   6   blind   0   moved  0
+      P12  rows   3   blind   0   moved  0
+      P13  rows  10   blind   0   moved  0
+      P14  rows  19   blind   0   moved  0
+      P15  rows  35   blind   1   moved  4   MOVED PAPER
+      P16  rows  11   blind   0   moved  0   MOVED PAPER
+      P17  rows  12   blind   0   moved  0
+      P18  rows  43   blind   0   moved  0
+
+    by verdict among the blind-spot rows:
+      NOT-OPEN   5
+      CHECK      1
+      OPEN       1
+
+    the sections that moved ground, with how many blind rows each carries:
+      P7   +1 -1  blind   3   Null-Boundary Correspondence
+      P7   +2 -1  blind   3   Frontiers, boundaries, and what would re-open them
+      P15  +1 -1  blind   1   What the progenitor supplies: the transmission proof
