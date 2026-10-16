@@ -1,0 +1,22 @@
+# HELD KEYS OF THE TARGETED MINT -- r7405+cc66 on r7405 ②.  Data, not code.
+#
+# ** WHY THIS FILE EXISTS AT ALL. **  r7367 ③ minted 34 keys and 33 of them were adjudicated in the
+#   same revision; the 34th could not be, because its pin is DEAD and the receipt carrying it belongs
+#   to another seat.  The mint and its adjudications are ONE landing by construction -- a minted key
+#   with no row is a `[FAIL]` and a row with an UNADJUDICATED verdict RAISES a count the ratchet lets
+#   only fall -- so one undisposable key held all 34 off the trunk.  r7405 ② asked whether they split.
+#   ** They do, and this file is the split: the mint emits every key on its derived list EXCEPT the
+#   ones named here. **
+#
+# ** WHY IT IS A FILE OF ITS OWN AND NOT A COLUMN ON THE LIST. **  thirty_four.tsv is DERIVED by
+#   make_selector.py.  A hold recorded there would be a hand-maintained field inside a generated view,
+#   which is the exact defect r7399 ⑪ ruled on and ordered made unrottable.  A re-run of the generator
+#   would drop it silently.  ⇒ The hold is its own record, it is not generated, and it is readable
+#   beside the baselines it is about.
+#
+# ** A HOLD IS NOT AN EXEMPTION, THE SAME RULE AS EVERY BASELINE HERE. **  A row names the key, the
+#   SEAT the disposition belongs to, and what has to happen for it to go.  It is a debt standing in
+#   the open with an owner, not a key quietly left out of a list.
+#
+#   receipt <TAB> literal (JSON) <TAB> owner <TAB> what has to happen
+receipts/L_probability/S17_the_cross_read_leaves_six_of_twenty_seven_open_and_all_six_are_identity_pins_so_the_residual_is_one_missing_clause_and_not_two_instruments.py	"already the product of a repair"	60	the pin is DEAD -- the literal is absent from the container the receipt tests it against -- and both the receipt and its container (r7254_60_...) are 60's, so the disposition is 60's to make: remove the arm, or keep it with a reason.  Found by MEANING-HELD's own H3 at r7367 and routed, not repaired.  When it is disposed of, delete this row and the key mints with no code change.

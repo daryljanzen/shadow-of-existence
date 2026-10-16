@@ -1,0 +1,33 @@
+n	paper	section	debt-sentences
+12	P9	Scope and open problems	lines=142 debt=0
+18	P11	Scope, and where what is not claimed here is s	lines=62 debt=0
+21	P13	What stays open	lines=62 debt=1
+      · : this paper says the differential assignment is not geometric, and the wall says the geometry nonetheless constrains it---which narrows what remains outstanding to the colour and isospin structure both take as given.
+23	P15	What the substrate determines: coherence from 	lines=110 debt=1
+      · The collapse-side driving that argument relied on carries a qualification of its own receipt: completeness holds for the modes whose entry precedes the horizon maximum at $r_{*}=1.53\,r_{ }$, entry on the rising branch being earlier the higher the wavenumber, so the acoustic band is on the safe side
+24	P15	What the substrate determines: the amplitude f	lines=35 debt=2
+      · $  $   and is closed in this section, which is what makes the classical reading a result rather than an inference.} Proposition~  rules out the   vacuum.
+      · : $z_S  a^{3/2}$ in the matter era, so the exponents there are $(-2,3)$ against $a$'s $(-1,2)$; the crunch residue doubles; and the final division is by $z_S$ rather than by $a$.
+25	P15	What the progenitor supplies: the transmission	lines=98 debt=1
+      · , and it places the origin of the anisotropic spectrum on the expansion leg, where it requires a source the single Nariai worldline of this construction does not carry---named here as owed and developed in neither this paper nor the bead .
+26	P15	What the substrate determines: the throat and 	lines=53 debt=0
+27	P15	What the progenitor supplies: the transmission	lines=98 debt=1
+      · , and it places the origin of the anisotropic spectrum on the expansion leg, where it requires a source the single Nariai worldline of this construction does not carry---named here as owed and developed in neither this paper nor the bead .
+29	P16	The cooling leg is a standard BBN: the abundan	lines=94 debt=0
+30	P16	The synthesis spine: the deductive chain	lines=89 debt=0
+31	P18	What licenses the word ``forced'', and the lim	lines=43 debt=1
+      · The cases where the same criteria misled --- the luminiferous ether, caloric, Kepler's nested solids --- have not been sampled and no base rate has been computed.
+35	P18	What is genuinely unpaid, at its actual size	lines=26 debt=3
+      · , and the likelihood counts against the construction on that data: the two-arm line-of-sight machinery is built, controlled against a known answer and converged, with the perturbations on the leaf congruence the framework assigns them~ .
+      · : the lithium over-prediction, which is standard nucleosynthesis's and is recorded because it sits in the sector rather than because it is owed.
+      · The horizon-entropy convention is adopted rather than derived throughout black-hole thermodynamics ---  , and here no finite layer carries a completed one (  ).
+36	P18	What is held open, and on what footing	lines=16 debt=1
+      · : what separates an identification from a structural rhyme is dynamics, and the flatness obstruction above is precisely what denies the compact face a field strength.
+38	P18	What is genuinely unpaid, at its actual size	lines=26 debt=3
+      · , and the likelihood counts against the construction on that data: the two-arm line-of-sight machinery is built, controlled against a known answer and converged, with the perturbations on the leaf congruence the framework assigns them~ .
+      · : the lithium over-prediction, which is standard nucleosynthesis's and is recorded because it sits in the sector rather than because it is owed.
+      · The horizon-entropy convention is adopted rather than derived throughout black-hole thermodynamics ---  , and here no finite layer carries a completed one (  ).
+39	P18	What is not on this list, and why that matters	lines=22 debt=2
+      · In neither case is a derivation owed.
+      · , not here.}   are not frontier items.} The colour obstruction is complete rather than a stage not yet reached; the mass hierarchy is a boundary the construction draws rather than a gap it has failed to close.
+40	P18	One reflection worn five ways	lines=50 debt=0

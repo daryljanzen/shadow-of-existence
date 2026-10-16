@@ -1,0 +1,24 @@
+=== BINDING TEST on the ruled instance (P15 amplitude floor)
+  PRE-FIX  (must flag)   -> 1 flag(s)
+        …$\qquad\square$ \emph{One scope qualification is owed immediately, and closing it is what makes the classical reading a result rather than an inference.} Proposition~\ref{p…
+  POST-FIX (must not)    -> 0 flag(s)
+
+=== THE 16, with the aspect net
+  12  P9   Scope and open problems                      flags=0
+  18  P11  Scope, and where what is not claimed here is flags=0
+  21  P13  What stays open                              flags=0
+  23  P15  What the substrate determines: coherence fro flags=0
+  24  P15  What the substrate determines: the amplitude flags=0
+  25  P15  What the progenitor supplies: the transmissi flags=0
+  26  P15  What the substrate determines: the throat an flags=0
+  27  P15  What the progenitor supplies: the transmissi flags=0 [same passage as 25]
+  29  P16  The cooling leg is a standard BBN: the abund flags=0
+  30  P16  The synthesis spine: the deductive chain     flags=0
+  31  P18  What licenses the word ``forced'', and the l flags=0
+  35  P18  What is genuinely unpaid, at its actual size flags=0
+  36  P18  What is held open, and on what footing       flags=0
+  38  P18  What is genuinely unpaid, at its actual size flags=0 [same passage as 35]
+  39  P18  What is not on this list, and why that matte flags=0
+  40  P18  One reflection worn five ways                flags=0
+TOTAL aspect-net flags across the 16: 0
+distinct passages among the 16: 14

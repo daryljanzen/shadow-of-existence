@@ -672,18 +672,51 @@ _MINT_34 = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__
                         'computations', 'beyond_the_wall', 'r7367_cc66_pricing_the_thirty_four',
                         'thirty_four.tsv')
 
+# ⛭⛭ r7405+cc66 on r7405 ② -- THE SPLIT.  The list above is the mint's SCOPE; this register is what
+#   is HELD OUT of it, one row per key, with the seat the disposition belongs to.  33 of the 34 were
+#   adjudicated at r7367 and only the 34th blocked the landing, so the split is the whole fix.
+#   ⌗ A file of its own and NOT a column on the derived list: a hold inside a generated view is the
+#     defect r7399 ⑪ ruled on, and make_selector.py would drop it on its next run.
+_MINT_HELD = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+                          'corpus', 'quote_pin_mint_held.tsv')
+
+
+def _mint_held():
+    """{(receipt, normalised literal)} -- keys held OUT of the mint, with an owner, or empty
+
+    Absent file means nothing is held, which is the state the register is aiming at.
+    """
+    out = set()
+    try:
+        with open(_MINT_HELD, encoding='utf-8') as _fh:
+            raw = _fh.read()
+    except OSError:
+        return frozenset()
+    for ln in raw.split('\n'):
+        if '\t' not in ln or ln.startswith('#'):
+            continue
+        c = ln.split('\t')
+        out.add((c[0], ' '.join(json.loads(c[1]).split())))
+    return frozenset(out)
+
 
 def _mint_list():
-    """{(receipt, normalised literal)} -- the committed 34, or empty unless the mint is asked for
+    """{(receipt, normalised literal)} -- the committed list MINUS whatever `_mint_held()` holds
 
-    ⛔⛭ INERT BY DEFAULT, AND THAT IS THE POINT, NOT A HEDGE.  Minting these `34` keys makes each a
-    NEW KEY, which `check_quote_pins` ⓵ counts as a `[FAIL]` until the key carries a row -- and a row
-    whose verdict is `UNADJUDICATED` RAISES a count the ratchet lets only FALL.  ⇒ *** So the mint
-    and its `34` adjudications are ONE landing and cannot be two: a commit carrying the mint alone
-    turns the gate red by construction. ***  Until the rows exist the extension ships committed,
-    auditable and OFF, and `QP_MINT_34=1` is what the measurement sets to turn it on.
+    ⛭⛭ LIVE SINCE r7405+cc66, AND THE REASON IT COULD NOT BE BEFORE IS WORTH KEEPING.  Minting a key
+    makes it a NEW KEY, which `check_quote_pins` ⓵ counts as a `[FAIL]` until the key carries a row --
+    and a row whose verdict is `UNADJUDICATED` RAISES a count the ratchet lets only FALL.  ⇒ *** The
+    mint and its adjudications are ONE landing and cannot be two. ***  At `r7367` 33 of the 34 keys
+    were adjudicated and the 34th could not be, because its pin is dead and its receipt is another
+    seat's, so the whole extension shipped committed, auditable and OFF behind `QP_MINT_34=1`.
+
+    ⇒ `r7405` ② asked whether the 34 split so the unblocked ones land.  **They do.**  The mint now
+    emits its list minus `corpus/quote_pin_mint_held.tsv`, the 33 adjudications land in the same
+    commit as this change, and the one held key is a named debt with `60` against it rather than a
+    silent absence.  ⌗ *Stated for reversal: `QP_MINT_34=0` forces the whole mint off, which is how
+    the before-state is reproduced for comparison.*
     """
-    if os.environ.get('QP_MINT_34') != '1':
+    if os.environ.get('QP_MINT_34') == '0':
         return frozenset()
     try:
         with open(_MINT_34, encoding='utf-8') as _fh:
@@ -696,7 +729,7 @@ def _mint_list():
             continue
         c = ln.split('\t')
         out.add((c[0], ' '.join(json.loads(c[1]).split())))
-    return frozenset(out)
+    return frozenset(out) - _mint_held()
 
 
 _MINTED = _mint_list()

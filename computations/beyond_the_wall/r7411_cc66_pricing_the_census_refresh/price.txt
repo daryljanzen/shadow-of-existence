@@ -1,0 +1,54 @@
+  PRICING THE CENSUS REFRESH -- how much of items_keyed.tsv do the revisions since r7371 invalidate?
+
+    census rows 257; classed OPEN 80
+    rows in a MOVED paper (the ceiling) 93; OPEN among them 36
+
+  (a) STALE ROWS            10 of 257
+  (b) STALE FRACTION        3.9 %
+  (c) STALE WEIGHT          3 of 80 OPEN  = 3.8 %
+  (f) NEW CANDIDATES        11 paragraph(s) matching now and in no census row
+
+    per paper (stale / rows, and stale-OPEN / OPEN):
+      P1   stale  0/ 6   stale-OPEN  0/ 0   new  0
+      P2   stale  0/ 6   stale-OPEN  0/ 1   new  0
+      P3   stale  0/10   stale-OPEN  0/ 2   new  0
+      P4   stale  0/ 4   stale-OPEN  0/ 0   new  0
+      P5   stale  2/ 7   stale-OPEN  0/ 0   new  2 MOVED
+      P6   stale  0/11   stale-OPEN  0/ 1   new  0
+      P7   stale  6/40   stale-OPEN  2/ 6   new  7 MOVED
+      P8   stale  0/ 7   stale-OPEN  0/ 1   new  0
+      P9   stale  0/ 6   stale-OPEN  0/ 2   new  0
+      P10  stale  0/21   stale-OPEN  0/ 9   new  0
+      P11  stale  0/ 6   stale-OPEN  0/ 1   new  0
+      P12  stale  0/ 3   stale-OPEN  0/ 0   new  0
+      P13  stale  0/10   stale-OPEN  0/ 1   new  0
+      P14  stale  0/19   stale-OPEN  0/ 8   new  0
+      P15  stale  2/35   stale-OPEN  1/25   new  2 MOVED
+      P16  stale  0/11   stale-OPEN  0/ 5   new  0 MOVED
+      P17  stale  0/12   stale-OPEN  0/ 1   new  0
+      P18  stale  0/43   stale-OPEN  0/17   new  0
+
+    the stale rows, with the sentence that no longer resolves:
+      [P5] CHECK    whether a concrete matter model's history reac  So a concrete matter model has no freedom in where the reassignment acts---the vantage is 
+      [P5] CHECK    irreducible interiors: whether a spacelike ori  Its reach to the non-vacuum solutions is not a fresh frontier of this paper: Kerr, Reissne
+      [P7] NOT-OPEN -                                               \begin{remark}[Perspectival Singularity and the Continuity of the Collapse--Cosmology Tran
+      [P7] POINTER  reckoning of relational R-reading with matter   What it does \emph{not} settle is the field-level charge structure, which rides on both br
+      [P7] NOT-OPEN matter of the collapse                          The claim is carried by the branch geometry alone, and does not rest on the branch-point c
+      [P7] OPEN     scalar sector, "the work": what displaces the   \emph{Of the three below, one is work and two are boundaries.} The scalar perturbation sec
+      [P7] NOT-OPEN quantum sector: ordering external; UV definiti  \item\label{frontier:quantum} \emph{The quantum sector: the deparametrized content in hand
+      [P7] OPEN     classification of causal reassignments: irredu  What is left of it is ordinary interior analysis rather than a frontier of this constructi
+      [P15] NOT-OPEN progenitor vacuum                               \emph{One scope qualification is owed immediately, and closing it is what makes the classi
+      [P15] OPEN     "what remains open is the detailed worldline a  What remains open is the \emph{detailed} worldline and field dynamics of the crossing for 
+
+    the NEW candidates (never read by 69):
+      [P15] What remains open is the \emph{detailed} field dynamics of the crossing for a concrete matter model~\cite{JanzenCRframew
+      [P15] \emph{One check is owed here and is not optional, because the hydrodynamical variable differs from $a$ in three places a
+      [P5] Its reach to the non-vacuum solutions is not a fresh frontier of this paper: Kerr, Reissner--Nordstr\"om, and their de~S
+      [P5] So a concrete matter model has no freedom in where the reassignment acts---the vantage is forced---and of the two requir
+      [P7] The claim is carried by the branch geometry alone, and does not rest on the branch-point crossing dynamics of a concrete
+      [P7] What it does \emph{not} settle is the field-level charge structure, which rides on both branches by the ordinary route; 
+      [P7] \begin{remark}[Perspectival Singularity and the Continuity of the Collapse--Cosmology Transition]\label{rem:twolevels} T
+      [P7] \emph{Of the four below, two are work, one is a boundary, and one carries both kinds at once.} The scalar perturbation s
+      [P7] \item\label{frontier:crossing} \emph{The matter branch-point crossing: the traversal settled, the dynamics open.} This i
+      [P7] \item\label{frontier:quantum} \emph{The quantum sector: the deparametrized content in hand, the interacting tower's defi
+      [P7] \paragraph{The classification of causal reassignments.} Its reducible sector is settled in the synthesis above, and its 
