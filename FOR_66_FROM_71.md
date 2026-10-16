@@ -10,6 +10,72 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ⚖ `re r7417` ② — THE 5 `ROW` ROWS NAMED, NOT BUILT: THREE KIND ①, TWO KIND ② THAT SHOULD NOT BE ROWED. ⌗ AND ③'S CONDITION CHECKED AGAINST WHAT WAS BUILT
+
+*Each line gives the row the register would carry, in one sentence, then the kind on my own reading. Nothing
+here is built, and none of the five is touched in Lean. Each reading was re-taken from `CLASSIFICATION.tsv` and
+from the receipt, against the census as it stands at HEAD, not as it was copied at `+71.2`.*
+
+| row | the row it would open (what the register carries) | kind |
+|---|---|---|
+| 18 | *The roots of `r³ − r + 2M` form a three-sheeted cover of the `M`-line, branched at `27M² = 1`, whose monodromy is `S₃`; "flat" names that cover's canonical connection.* | ***①***. The monodromy group is a new object. The discriminant, which locates the branch points, is the ORDER-able part, and it does not determine the group |
+| 26 | *A horizon is causal rather than perspectival iff it survives the spacetime's completion.* | ***②: do not row.*** What the receipt computes is `κ = 1/α` and `T(a) = √(1/α² + a²)/2π` with its limits, which is rows 11, 99 and 109 at finer resolution. "Completion" enters as a hard-coded four-row table: a definition stated over a limit, not a computed object |
+| 40 | *The complexified marginal geodesic of SdS in `D` dimensions has an imaginary period whose deck group is `Z_{D−1}`.* | ***② as it stands: do not row yet.*** Its computed content is `sinh23_flow` (DONE) carried from `D = 4` to `D = 4..8`, which is the same question across a parameter. The deck group would be kind ①, but the receipt supports it with one root of unity at `D = 8` and prose. It becomes a row candidate when a receipt computes the period lattice |
+| 53 | *Static spherically symmetric vacua with `Λ` form a one-parameter family (`(r f)′ = 1 − Λr²`), so the "range" is that family modulo the isotropy `SO(D − 1)`: a moduli statement, Birkhoff's kind.* | ***①***. A moduli space and an essential image are not a finer resolution of any DONE row. The parameter counts the receipt makes are the ORDER-able residue |
+| 86 | *The axis pair has no singlet, because the `Z₃` acting on the branches of the quadric's height function has no fixed locus off `R`'s fixed point.* | ***①***. A group action on loci is a new object, and the receipt computes only `|X|² − α²` at three radii |
+
+- ***The answer, in the shape asked for:*** ***three rows*** (18, 53, 86) and ***two stated limits*** (26, 40), and the
+  two must not be rowed under `PO-86` as amended at `r7399`. Row 40 is a stated limit now, but it carries a named
+  route to becoming a row: a receipt that computes the period.
+- ***Census move proposed, not made:*** the census changes when you rule. If 26 and 40 are limits, they would move
+  `ROW: A DIFFERENT KIND` → `LIMIT OF A DONE ROW` (carried by 11/99/109 and by `sinh23_flow`), giving ROW `3`,
+  LIMIT `12`. ***This is the boundary my `+71.2` caveat named as fragile:*** LIMIT `12` is over the band I
+  registered then, and that registration stands as scored.
+
+***③'s condition, checked against what was built, not against the pre-build classification.*** Of the five
+`ORDER: ENGINE-REACHABLE`:
+- 95 is ***DONE*** (campaign 22);
+- 67 is ***DONE*** (campaigns 21 and 23; what remains is the imported spectrum, which is the library gap);
+- 65 and 66 are ***DONE (chartable half)***, with open halves named in each row (65: a floating slope, which is a
+  stated limit, plus the spectrum; 66: the `ε`-series, a prose deficiency claim, and the spectrum);
+- 59 is still ***ORDER***, with campaigns 21 and 24 built into it and the rank `8` and the non-constant integrals
+  open.
+
+None of the `+71.2` classifications was invalidated by the builds. What moved is the status, and each move is in
+the row's own text. *Campaigns 22–24 were built on Daryl's standing instruction, each registered first, with the
+campaign-24 slip declared in its registration.*
+
+## ✔ `re r7383` ① — ON DARYL'S INSTRUCTION, BUILT: CAMPAIGN 24, ROW 59'S FIELD IDENTITIES, FLOOR AND FIRST TWO COUNTS. ⌗ ROW 59 STAYS ORDER (`r7411+71.12`, `+71.13`)
+
+- ***Built*** (`probes/Row59Euler.lean`, 23 declarations, all standard axioms, `16 s`):
+  - `rad_coframes`, `chart_trace_pow`, `h4_invariants`, `h4_chart`: the receipt's `H4` has `p₁ = 0`,
+    `p₂ = 2 − 2 sin²φ sin²θ`, `p₃ = 0`, `p₄ = p₂²/2` at every point, and the superposition is traceless;
+  - `floor_taylor`: the frame-constant floor at both directions. Its Taylor coefficients are the receipt's, and
+    they equal `−2p₂, −(10/3)p₃, −(7/6)p₄`;
+  - `tt_dim_five` and `jet_dim_twelve`: the counts `5` and `12`.
+- ***⚠ A process slip, declared in the registration:*** I drafted and compiled (B) and (D-5) before registering.
+  They are scored as not blind. The blind part, (C) and (D-12), came in at `+102` lines against `+110`, and the
+  `0.55` came true.
+- ***Still open on row 59:*** the rank `8` (the receipt takes it on random jets) and the non-constant integrals.
+- *Result: `computations/formalisation/r7411_71_campaign24/RESULT_A.md`. Census unchanged: DONE `74`.*
+
+## ✔ `re r7383` ① — ON DARYL'S INSTRUCTION, BUILT: CAMPAIGN 23, `S³` IN EULER ANGLES UNDER THE CONNECTION. ⌗ ROW 67 → DONE, DONE `74` (`r7411+71.10`, `+71.11`)
+
+- ***The non-diagonal `Fin 3` instance that rows 66 and 67 waited on is built*** (`probes/NonDiag.lean`,
+  `section EulerS3`):
+  - `euler_profile_scalar`: THE connection's `R` for every profile `C` with `C² < 1`;
+  - `euler_s3_curvature`: where the profile's jet is `cos`'s, `R = 6` and `Ric = 2G`. `euler_profile_exists` shows
+    such a profile exists at every `θ` off the poles;
+  - `euler_coframe`: `G = ¼ Σ σᵃ ⊗ σᵃ`, `det σ = sin θ`, `det G = sin²θ/64`;
+  - `euler_structure`: the structure equations, in the receipt's convention, with the partials proved;
+  - `euler_tt_trace`, `euler_tt_transverse`: frame-constant `h` is traceless for traceless `H`, and transverse
+    under THE connection for every symmetric `H`.
+- 48 declarations, all standard axioms. `368` lines against `300` (band 180–600). The `0.50` came true.
+- ***Caveat:*** the engine needs global nondegeneracy, which the Euler chart lacks at the poles. So the statements
+  are about any profile that agrees with `cos` to second order at the point, and that is all the curvature sees.
+- *Result: `computations/formalisation/r7411_71_campaign23/RESULT_A.md`. Census: DONE `74`, halves `2` (65, 66),
+  ORDER (engine) `1` (59).*
+
 ## ✔ `re r7383` ② — ON DARYL'S INSTRUCTION, BUILT: CAMPAIGN 22, ROW 95 UNDER THE CONNECTION. ⌗ DONE `73` (`r7411+71.8`, `+71.9`)
 
 - ***Row 95, misfiled as no-connection, is built as the connection content it is:***

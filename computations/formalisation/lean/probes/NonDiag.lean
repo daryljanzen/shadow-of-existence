@@ -1,4 +1,5 @@
 import ShadowEngine
+import Mathlib.Analysis.SpecialFunctions.Trigonometric.Bounds
 
 /-! # Campaign 6, stage B (`r7351+71`): the curvature of a NON-diagonal metric
 
@@ -836,6 +837,376 @@ theorem nariai_horizon_kretschmann (M α : ℝ) (hM : M ≠ 0) (hα2 : α ^ 2 = 
 
 end EFNariai
 
+
+/-! ## `S³` in Euler angles (rows 66, 67): a non-diagonal `Fin 3` instance
+
+Coordinates `(ψ, θ, φ)`. The round metric of radius `1` is `¼(dψ² + dθ² + dφ² + 2 cos θ dψ dφ)`, which degenerates
+at the poles; the engine wants a form nondegenerate on all of `ℝ³`, so `cos θ` is replaced by ANY smooth profile `C`
+with `C² < 1`. Curvature at a point sees only the profile's 2-jet there, so where that jet is `cos`'s the result is
+the Euler chart's. -/
+
+section EulerS3
+
+set_option synthInstance.maxHeartbeats 400000
+
+open Filter Topology
+
+noncomputable def eA : Fin 3 → Fin 3 → ℝ := ![![1/4, 0, 0], ![0, 1/4, 0], ![0, 0, 1/4]]
+noncomputable def eB : Fin 3 → Fin 3 → ℝ := ![![0, 0, 1/4], ![0, 0, 0], ![1/4, 0, 0]]
+
+/-- **The Euler-chart metric** with profile `C` in place of `cos θ`. -/
+noncomputable def GU (C : ℝ → ℝ) (i j : Fin 3) (y : Fin 3 → ℝ) : ℝ := eA i j + eB i j * C (y 1)
+
+lemma GU_symm (C : ℝ → ℝ) (i j : Fin 3) (y : Fin 3 → ℝ) : GU C i j y = GU C j i y := by
+  fin_cases i <;> fin_cases j <;> simp [GU, eA, eB]
+
+variable {C : ℝ → ℝ} (hC : ContDiff ℝ ∞ C)
+
+include hC in
+lemma GU_smooth (i j : Fin 3) : ContDiff ℝ ∞ (GU C i j) :=
+  contDiff_const.add (contDiff_const.mul (hC.comp (contDiff_apply ℝ ℝ 1)))
+
+include hC in
+lemma GU_fd1 (i j : Fin 3) (y v : Fin 3 → ℝ) : fderiv ℝ (GU C i j) y v = eB i j * (deriv C (y 1) * v 1) := by
+  have h := ((fd_coord_i (n := 3) 1 ((hC.differentiable (by simp)) (y 1))).const_mul (eB i j)).const_add (eA i j)
+  have h' : HasFDerivAt (GU C i j) _ y := h
+  rw [h'.fderiv]
+  simp
+
+include hC in
+lemma GU_fd2 (i j : Fin 3) (p u v : Fin 3 → ℝ) :
+    fderiv ℝ (fderiv ℝ (GU C i j)) p u v = eB i j * (deriv (deriv C) (p 1) * u 1 * v 1) := by
+  have dC := fun s => ((contDiff_infty_iff_deriv.1 hC).2.differentiable (by simp)) s
+  rw [d2_of (F := GU C i j) (GU_smooth hC i j) (fun y => GU_fd1 hC i j y v)
+    (((fd_coord_i (n := 3) 1 (dC _)).mul_const (v 1)).const_mul (eB i j))]
+  simp; left; ring
+
+/-- Nondegenerate everywhere: the `(ψ, φ)` block `¼[[1, C], [C, 1]]` has determinant `(1 − C²)/16`. -/
+lemma GU_nondeg (hC1 : ∀ s, C s ^ 2 < 1) (y u : Fin 3 → ℝ) (h : ∀ v, formG (GU C) y u v = 0) : u = 0 := by
+  have e : ∀ c : Fin 3, formG (GU C) y u (Pi.single c 1) = ∑ i, GU C i c y * u i := fun c => by
+    rw [formG_apply]; simp [Pi.single_apply, mul_comm]
+  have h0 := (e 0).symm.trans (h _); have h1 := (e 1).symm.trans (h _); have h2 := (e 2).symm.trans (h _)
+  simp [Fin.sum_univ_three, GU, eA, eB] at h0 h1 h2
+  have hc := hC1 (y 1)
+  have hu2 : u 2 = 0 := by
+    have : u 2 * (1 - C (y 1) ^ 2) = 0 := by linear_combination 4 * h2 - 4 * C (y 1) * h0
+    rcases mul_eq_zero.1 this with h | h
+    · exact h
+    · exact absurd h (by nlinarith)
+  have hu0 : u 0 = 0 := by rw [hu2] at h0; linarith
+  have hu1 : u 1 = 0 := by linarith
+  ext k; fin_cases k <;> simp [hu0, hu1, hu2]
+
+/-- The tables at a point, in the profile's 2-jet `C0, C1, C2`. -/
+noncomputable def GiU (C0 _C1 _C2 : ℝ) : Fin 3 → Fin 3 → ℝ := ![![(-4/((C0 - 1)*(C0 + 1))), (0), (4*C0/((C0 - 1)*(C0 + 1)))], ![(0), (4), (0)], ![(4*C0/((C0 - 1)*(C0 + 1))), (0), (-4/((C0 - 1)*(C0 + 1)))]]
+noncomputable def D1U (_C0 C1 _C2 : ℝ) : Fin 3 → Fin 3 → Fin 3 → ℝ := ![![![(0), (0), (0)], ![(0), (0), (0)], ![(0), (C1/4), (0)]], ![![(0), (0), (0)], ![(0), (0), (0)], ![(0), (0), (0)]], ![![(0), (C1/4), (0)], ![(0), (0), (0)], ![(0), (0), (0)]]]
+noncomputable def D2U (_C0 _C1 C2 : ℝ) : Fin 3 → Fin 3 → Fin 3 → Fin 3 → ℝ := ![![![![(0), (0), (0)], ![(0), (0), (0)], ![(0), (0), (0)]], ![![(0), (0), (0)], ![(0), (0), (0)], ![(0), (0), (0)]], ![![(0), (0), (0)], ![(0), (C2/4), (0)], ![(0), (0), (0)]]], ![![![(0), (0), (0)], ![(0), (0), (0)], ![(0), (0), (0)]], ![![(0), (0), (0)], ![(0), (0), (0)], ![(0), (0), (0)]], ![![(0), (0), (0)], ![(0), (0), (0)], ![(0), (0), (0)]]], ![![![(0), (0), (0)], ![(0), (C2/4), (0)], ![(0), (0), (0)]], ![![(0), (0), (0)], ![(0), (0), (0)], ![(0), (0), (0)]], ![![(0), (0), (0)], ![(0), (0), (0)], ![(0), (0), (0)]]]]
+noncomputable def GamU (C0 C1 _C2 : ℝ) : Fin 3 → Fin 3 → Fin 3 → ℝ := ![![![(0), (0), (0)], ![(C0*C1/2/((C0 - 1)*(C0 + 1))), (0), (-C1/2/((C0 - 1)*(C0 + 1)))], ![(0), (-C1/2), (0)]], ![![(C0*C1/2/((C0 - 1)*(C0 + 1))), (0), (-C1/2/((C0 - 1)*(C0 + 1)))], ![(0), (0), (0)], ![(-C1/2/((C0 - 1)*(C0 + 1))), (0), (C0*C1/2/((C0 - 1)*(C0 + 1)))]], ![![(0), (-C1/2), (0)], ![(-C1/2/((C0 - 1)*(C0 + 1))), (0), (C0*C1/2/((C0 - 1)*(C0 + 1)))], ![(0), (0), (0)]]]
+noncomputable def RicU (C0 C1 C2 : ℝ) : Fin 3 → Fin 3 → ℝ := ![![(-C1^2/2/((C0 - 1)*(C0 + 1))), (0), (-C2/2)], ![(0), (-(2*C0^3*C2 - C0^2*C1^2 - 2*C0*C2 - C1^2)/(2*(C0 - 1)^2*(C0 + 1)^2)), (0)], ![(-C2/2), (0), (-C1^2/2/((C0 - 1)*(C0 + 1)))]]
+
+noncomputable def GiQ (C : ℝ → ℝ) (p : Fin 3 → ℝ) := GiU (C (p 1)) (deriv C (p 1)) (deriv (deriv C) (p 1))
+noncomputable def D1Q (C : ℝ → ℝ) (p : Fin 3 → ℝ) := D1U (C (p 1)) (deriv C (p 1)) (deriv (deriv C) (p 1))
+noncomputable def D2Q (C : ℝ → ℝ) (p : Fin 3 → ℝ) := D2U (C (p 1)) (deriv C (p 1)) (deriv (deriv C) (p 1))
+noncomputable def GamQ (C : ℝ → ℝ) (p : Fin 3 → ℝ) := GamU (C (p 1)) (deriv C (p 1)) (deriv (deriv C) (p 1))
+noncomputable def RicQ (C : ℝ → ℝ) (p : Fin 3 → ℝ) := RicU (C (p 1)) (deriv C (p 1)) (deriv (deriv C) (p 1))
+
+section UTables
+
+variable {p : Fin 3 → ℝ} (hc : C (p 1) ^ 2 < 1)
+
+lemma one_sub_ne (hc : C (p 1) ^ 2 < 1) : (C (p 1) - 1) * (C (p 1) + 1) ≠ 0 := by
+  intro h; nlinarith
+
+include hc in
+lemma GiU_inv (m k : Fin 3) : ∑ l, GU C m l p * GiQ C p l k = if m = k then 1 else 0 := by
+  have h := one_sub_ne hc
+  have h1 : C (p 1) - 1 ≠ 0 := left_ne_zero_of_mul h
+  have h2 : C (p 1) + 1 ≠ 0 := right_ne_zero_of_mul h
+  fin_cases m <;> fin_cases k <;> simp [Fin.sum_univ_three, GU, eA, eB, GiQ, GiU] <;> field_simp <;> ring
+
+include hC in
+lemma D1U_tab (i j c : Fin 3) : dG1 (GU C) p i j (Pi.single c 1) = D1Q C p i j c := by
+  rw [dG1, GU_fd1 hC]
+  fin_cases i <;> fin_cases j <;> fin_cases c <;> simp [eB, D1Q, D1U] <;> ring
+
+include hC in
+lemma D2U_tab (i j a c : Fin 3) : dG2 (GU C) p i j (Pi.single a 1) (Pi.single c 1) = D2Q C p i j a c := by
+  rw [dG2, GU_fd2 hC]
+  fin_cases i <;> fin_cases j <;> fin_cases a <;> fin_cases c <;> simp [eB, D2Q, D2U] <;> ring
+
+include hC hc in
+lemma GamU_tab (i j k : Fin 3) : gamG (GU C) (GiQ C p) p (Pi.single i 1) (Pi.single j 1) k = GamQ C p i j k := by
+  have h := one_sub_ne hc
+  have h1 : C (p 1) - 1 ≠ 0 := left_ne_zero_of_mul h
+  have h2 : C (p 1) + 1 ≠ 0 := right_ne_zero_of_mul h
+  simp only [gamG, kosG_basis, D1U_tab hC, Fin.sum_univ_three]
+  fin_cases i <;> fin_cases j <;> fin_cases k <;> simp [D1Q, D1U, GiQ, GiU, GamQ, GamU] <;> field_simp
+
+include hC hc in
+lemma DGamU_basis (u i j k : Fin 3) :
+    DgamG (GU C) (GiQ C p) p (Pi.single u 1) (Pi.single i 1) (Pi.single j 1) k
+      = ∑ l, ((D2Q C p j l u i + D2Q C p l i u j - D2Q C p i j u l) / 2
+        - ∑ m, D1Q C p m l u * GamQ C p i j m) * GiQ C p l k := by
+  simp only [DgamG, DkosG_basis, D2U_tab hC, D1U_tab hC, GamU_tab hC hc]
+
+include hC hc in
+lemma GamGamU (hC1 : ∀ s, C s ^ 2 < 1) (i j k l : Fin 3) :
+    gamG (GU C) (GiQ C p) p (Pi.single i 1) (gamG (GU C) (GiQ C p) p (Pi.single j 1) (Pi.single k 1)) l
+      = ∑ c, GamQ C p j k c * GamQ C p i c l := by
+  rw [gamG_right (fun y u h => GU_nondeg hC1 y u h) (GU_smooth hC) (GiU_inv hc)]
+  simp only [GamU_tab hC hc]
+
+/-- THE connection's curvature array at `p` on coordinate fields. -/
+noncomputable def RfU (C : ℝ → ℝ) (p : Fin 3 → ℝ) (i j k l : Fin 3) : ℝ :=
+  curvG (GU C) (GiQ C p) p (Pi.single i 1) (Pi.single j 1) (Pi.single k 1) l
+
+set_option maxHeartbeats 0 in
+include hC hc in
+lemma RicU_tab (hC1 : ∀ s, C s ^ 2 < 1) (j k : Fin 3) : ricCN (RfU C p) j k = RicQ C p j k := by
+  have h := one_sub_ne hc
+  have h1 : C (p 1) - 1 ≠ 0 := left_ne_zero_of_mul h
+  have h2 : C (p 1) + 1 ≠ 0 := right_ne_zero_of_mul h
+  simp only [ricCN, RfU, curvG, Pi.sub_apply, Pi.add_apply, GamGamU hC hc hC1, DGamU_basis hC hc,
+    Fin.sum_univ_three]
+  fin_cases j <;> fin_cases k <;> simp [D1Q, D1U, D2Q, D2U, GiQ, GiU, GamQ, GamU, RicQ, RicU] <;>
+    field_simp <;> ring
+
+end UTables
+
+/-- THE connection's curvature of `GU C` on coordinate fields at `p`. -/
+noncomputable def RcU (hC : ContDiff ℝ ∞ C) (hC1 : ∀ s, C s ^ 2 < 1) (p : Fin 3 → ℝ) (i j k l : Fin 3) : ℝ :=
+  curv (lcConn (Fin 3 → ℝ) (ndOf (formG (GU C)) (formG_symm (GU_symm C)) (fun y u h => GU_nondeg hC1 y u h)
+    ((formG_smooth (GU_smooth hC)).differentiable (by simp))))
+    (fun _ => (Pi.single i 1 : Fin 3 → ℝ)) (fun _ => Pi.single j 1) (fun _ => Pi.single k 1) p l
+
+lemma RcU_eq (hC1 : ∀ s, C s ^ 2 < 1) (p : Fin 3 → ℝ) : RcU hC hC1 p = RfU C p := by
+  funext i j k l
+  exact congrFun (curvG_eq (GU_symm C) (fun y u h => GU_nondeg hC1 y u h) (GU_smooth hC) (GiU_inv (hC1 (p 1))) _ _ _) l
+
+/-- **THE connection of every profile.** For any smooth `C` with `C² < 1`, the scalar curvature of
+`¼(dψ² + dθ² + dφ² + 2C(θ) dψ dφ)` at any point is `−2(4C³C″ − C²C′² − 4CC″ − 3C′²)/(1 − C²)²`. -/
+theorem euler_profile_scalar (hC1 : ∀ s, C s ^ 2 < 1) (p : Fin 3 → ℝ) :
+    scalG (GiQ C p) (RcU hC hC1 p) = -2 * (4 * C (p 1) ^ 3 * deriv (deriv C) (p 1) - C (p 1) ^ 2 * deriv C (p 1) ^ 2
+      - 4 * C (p 1) * deriv (deriv C) (p 1) - 3 * deriv C (p 1) ^ 2) / (1 - C (p 1) ^ 2) ^ 2 := by
+  have hc := hC1 (p 1)
+  have h := one_sub_ne hc
+  have h1 : C (p 1) - 1 ≠ 0 := left_ne_zero_of_mul h
+  have h2 : C (p 1) + 1 ≠ 0 := right_ne_zero_of_mul h
+  have h3 : 1 - C (p 1) ^ 2 ≠ 0 := by intro h'; nlinarith
+  rw [RcU_eq hC, scalG]
+  simp only [RicU_tab hC hc hC1, Fin.sum_univ_three]
+  simp [GiQ, GiU, RicQ, RicU]
+  field_simp
+  ring
+
+/-- **Rows 66, 67: the Euler chart.** Where the profile's 2-jet is `cos`'s, THE connection has `R = 6` and
+`Ric = 2G`: the unit `S³`, in the receipt's coordinates. -/
+theorem euler_s3_curvature (hC1 : ∀ s, C s ^ 2 < 1) (p : Fin 3 → ℝ) (j0 : C (p 1) = Real.cos (p 1))
+    (j1 : deriv C (p 1) = -Real.sin (p 1)) (j2 : deriv (deriv C) (p 1) = -Real.cos (p 1)) :
+    scalG (GiQ C p) (RcU hC hC1 p) = 6 ∧ ∀ j k, ricCN (RcU hC hC1 p) j k = 2 * GU C j k p := by
+  have hc := hC1 (p 1)
+  have h := one_sub_ne hc
+  have h1 : C (p 1) - 1 ≠ 0 := left_ne_zero_of_mul h
+  have h2 : C (p 1) + 1 ≠ 0 := right_ne_zero_of_mul h
+  have hs : Real.sin (p 1) ^ 2 = 1 - Real.cos (p 1) ^ 2 := Real.sin_sq _
+  have h3 : 1 - Real.cos (p 1) ^ 2 ≠ 0 := by rw [← j0]; intro h'; nlinarith
+  refine ⟨?_, fun j k => ?_⟩
+  · rw [euler_profile_scalar hC hC1 p, j0, j1, j2, neg_sq, hs]
+    field_simp; ring
+  · rw [RcU_eq hC, RicU_tab hC hc hC1]
+    rw [j0] at h1 h2
+    fin_cases j <;> fin_cases k <;> simp [RicQ, RicU, GU, eA, eB, j0, j1, j2, hs] <;> field_simp <;> ring
+
+/-- `C = cos` near `θ` gives `cos`'s 2-jet at `θ`. -/
+lemma cos_jet {θ : ℝ} (e : C =ᶠ[𝓝 θ] Real.cos) :
+    C θ = Real.cos θ ∧ deriv C θ = -Real.sin θ ∧ deriv (deriv C) θ = -Real.cos θ := by
+  refine ⟨e.eq_of_nhds, by rw [e.deriv_eq, Real.deriv_cos], ?_⟩
+  rw [(e.deriv.trans (Eventually.of_forall fun s => by rw [Real.deriv_cos]) :
+    deriv C =ᶠ[𝓝 θ] fun s => -Real.sin s).deriv_eq]
+  simp
+
+/-- The bounded reparametrisation `θ + a·arctan((s − θ)/a)` and its derivative. -/
+noncomputable def phiW (θ a s : ℝ) : ℝ := θ + a * Real.arctan ((s - θ) / a)
+noncomputable def gW (θ a s : ℝ) : ℝ := (1 + ((s - θ) / a) ^ 2)⁻¹
+
+lemma phiW_d {θ a : ℝ} (ha : a ≠ 0) (s : ℝ) : HasDerivAt (phiW θ a) (gW θ a s) s := by
+  have := ((((hasDerivAt_id s).sub_const θ).div_const a).arctan.const_mul a).const_add θ
+  convert this using 1
+  · funext x; simp [phiW]
+  · simp only [gW, id]; field_simp
+
+lemma gW_d (θ a : ℝ) : HasDerivAt (gW θ a) 0 θ := by
+  have := ((((hasDerivAt_id θ).sub_const θ).div_const a).pow 2).const_add 1 |>.inv (by simp)
+  convert this using 1
+  · funext x; simp [gW]
+  · simp
+
+omit hC in
+/-- **The hypotheses are met.** At every `θ` off the poles, `C(s) = cos(θ + a·arctan((s − θ)/a))` with
+`a = |sin θ|/2` is smooth, has `C² < 1` everywhere, and has `cos`'s 2-jet at `θ`. -/
+theorem euler_profile_exists {θ : ℝ} (hθ : Real.sin θ ≠ 0) :
+    ∃ C : ℝ → ℝ, ContDiff ℝ ∞ C ∧ (∀ s, C s ^ 2 < 1) ∧
+      C θ = Real.cos θ ∧ deriv C θ = -Real.sin θ ∧ deriv (deriv C) θ = -Real.cos θ := by
+  have hsθ : 0 < |Real.sin θ| := abs_pos.2 hθ
+  have ha0 : 0 < |Real.sin θ| / 2 := by positivity
+  have hD : deriv (fun s => Real.cos (phiW θ (|Real.sin θ| / 2) s))
+      = fun s => -Real.sin (phiW θ (|Real.sin θ| / 2) s) * gW θ (|Real.sin θ| / 2) s :=
+    funext fun s => (((Real.hasDerivAt_cos _).comp s (phiW_d ha0.ne' s)).congr_deriv (by ring)).deriv
+  have hφθ : phiW θ (|Real.sin θ| / 2) θ = θ := by simp [phiW]
+  have hgθ : gW θ (|Real.sin θ| / 2) θ = 1 := by simp [gW]
+  refine ⟨fun s => Real.cos (phiW θ (|Real.sin θ| / 2) s), Real.contDiff_cos.comp (contDiff_const.add (contDiff_const.mul
+    (Real.contDiff_arctan.comp ((contDiff_id.sub contDiff_const).div_const _)))), fun s => ?_, by simp [hφθ],
+    ?_, ?_⟩
+  · have hb : |phiW θ (|Real.sin θ| / 2) s - θ| < |Real.sin θ| := by
+      have h1 := Real.neg_pi_div_two_lt_arctan ((s - θ) / (|Real.sin θ| / 2))
+      have h2 := Real.arctan_lt_pi_div_two ((s - θ) / (|Real.sin θ| / 2))
+      have h4 := Real.pi_le_four
+      have habs : |Real.arctan ((s - θ) / (|Real.sin θ| / 2))| < Real.pi / 2 := abs_lt.2 ⟨h1, h2⟩
+      simp only [phiW, add_sub_cancel_left, abs_mul, abs_of_pos ha0]
+      calc |Real.sin θ| / 2 * |Real.arctan ((s - θ) / (|Real.sin θ| / 2))|
+          < |Real.sin θ| / 2 * (Real.pi / 2) := by gcongr
+        _ ≤ |Real.sin θ| / 2 * 2 := by gcongr; linarith
+        _ = |Real.sin θ| := by ring
+    have hsin : Real.sin (phiW θ (|Real.sin θ| / 2) s) ≠ 0 := by
+      intro h0
+      have := Real.abs_sin_sub_sin_le (phiW θ (|Real.sin θ| / 2) s) θ
+      rw [h0, zero_sub, abs_neg] at this
+      linarith
+    have := Real.cos_sq_add_sin_sq (phiW θ (|Real.sin θ| / 2) s)
+    have : 0 < Real.sin (phiW θ (|Real.sin θ| / 2) s) ^ 2 := by positivity
+    linarith
+  · rw [hD]; simp [hφθ, hgθ]
+  · have h2 : HasDerivAt (fun s => -Real.sin (phiW θ (|Real.sin θ| / 2) s) * gW θ (|Real.sin θ| / 2) s)
+        (-(Real.cos (phiW θ (|Real.sin θ| / 2) θ) * gW θ (|Real.sin θ| / 2) θ) * gW θ (|Real.sin θ| / 2) θ
+          + -Real.sin (phiW θ (|Real.sin θ| / 2) θ) * 0) θ :=
+      (phiW_d ha0.ne' θ).sin.neg.mul (gW_d θ _)
+    rw [hD, h2.deriv]
+    simp [hφθ, hgθ]
+
+/-! ### The receipt's coframe, and the TT tensors it carries -/
+
+/-- `σᵃ = Σᵢ sigE y a i dyᵢ` in `(ψ, θ, φ)`: the receipt's left-invariant coframe. -/
+noncomputable def sigE (y : Fin 3 → ℝ) : Fin 3 → Fin 3 → ℝ :=
+  ![![0, Real.cos (y 0), Real.sin (y 0) * Real.sin (y 1)], ![0, -Real.sin (y 0), Real.cos (y 0) * Real.sin (y 1)],
+    ![1, 0, Real.cos (y 1)]]
+
+/-- `∂ₖ σᵃᵢ`, proved in `sig_hfd`. -/
+noncomputable def dSig (y : Fin 3 → ℝ) : Fin 3 → Fin 3 → Fin 3 → ℝ :=
+  ![![![0, 0, 0], ![-Real.sin (y 0), 0, 0], ![Real.cos (y 0) * Real.sin (y 1), Real.sin (y 0) * Real.cos (y 1), 0]],
+    ![![0, 0, 0], ![-Real.cos (y 0), 0, 0], ![-Real.sin (y 0) * Real.sin (y 1), Real.cos (y 0) * Real.cos (y 1), 0]],
+    ![![0, 0, 0], ![0, 0, 0], ![0, -Real.sin (y 1), 0]]]
+
+noncomputable def epsE : Fin 3 → Fin 3 → Fin 3 → ℝ :=
+  ![![![0, 0, 0], ![0, 0, 1], ![0, -1, 0]], ![![0, 0, -1], ![0, 0, 0], ![1, 0, 0]], ![![0, 1, 0], ![-1, 0, 0], ![0, 0, 0]]]
+
+lemma sig_hfd (y : Fin 3 → ℝ) (a i : Fin 3) :
+    ∃ L : (Fin 3 → ℝ) →L[ℝ] ℝ, HasFDerivAt (fun y => sigE y a i) L y ∧ ∀ k, L (Pi.single k 1) = dSig y a i k := by
+  have c0 := fd_coord_i (n := 3) (x := y) 0 Real.differentiableAt_cos
+  have s0 := fd_coord_i (n := 3) (x := y) 0 Real.differentiableAt_sin
+  have c1 := fd_coord_i (n := 3) (x := y) 1 Real.differentiableAt_cos
+  have s1 := fd_coord_i (n := 3) (x := y) 1 Real.differentiableAt_sin
+  fin_cases a <;> fin_cases i <;> simp only [sigE] <;> simp only [Fin.zero_eta, Fin.mk_one, Fin.reduceFinMk,
+    Matrix.cons_val, Matrix.cons_val_zero, Matrix.cons_val_one]
+  · exact ⟨0, hasFDerivAt_const _ _, fun k => by fin_cases k <;> simp [dSig]⟩
+  · exact ⟨_, c0, fun k => by fin_cases k <;> simp [dSig]⟩
+  · exact ⟨_, s0.mul s1, fun k => by fin_cases k <;> simp [dSig]; ring⟩
+  · exact ⟨0, hasFDerivAt_const _ _, fun k => by fin_cases k <;> simp [dSig]⟩
+  · exact ⟨_, s0.neg, fun k => by fin_cases k <;> simp [dSig]⟩
+  · exact ⟨_, c0.mul s1, fun k => by fin_cases k <;> simp [dSig]; ring⟩
+  · exact ⟨0, hasFDerivAt_const _ _, fun k => by fin_cases k <;> simp [dSig]⟩
+  · exact ⟨0, hasFDerivAt_const _ _, fun k => by fin_cases k <;> simp [dSig]⟩
+  · exact ⟨_, c1, fun k => by fin_cases k <;> simp [dSig]⟩
+
+lemma sig_fd (y : Fin 3 → ℝ) (a i k : Fin 3) : fderiv ℝ (fun y => sigE y a i) y (Pi.single k 1) = dSig y a i k := by
+  obtain ⟨L, hL, hLk⟩ := sig_hfd y a i
+  rw [hL.fderiv, hLk]
+
+/-- **Rows 66, 67: the coframe.** `G = ¼ Σₐ σᵃ ⊗ σᵃ` (with `C = cos`), `det σ = sin θ`, `det G = sin²θ/64`. -/
+theorem euler_coframe (y : Fin 3 → ℝ) :
+    (∀ i j, GU Real.cos i j y = (1 / 4) * ∑ a, sigE y a i * sigE y a j) ∧
+      (Matrix.of (sigE y)).det = Real.sin (y 1) ∧
+      (Matrix.of fun i j => GU Real.cos i j y).det = Real.sin (y 1) ^ 2 / 64 := by
+  have hψ := Real.sin_sq_add_cos_sq (y 0)
+  have hθ := Real.sin_sq_add_cos_sq (y 1)
+  refine ⟨fun i j => ?_, ?_, ?_⟩
+  · fin_cases i <;> fin_cases j <;> simp only [GU, eA, eB, sigE, Fin.sum_univ_three, Fin.isValue, Fin.zero_eta, Fin.mk_one, Fin.reduceFinMk, Matrix.cons_val, Matrix.cons_val_zero,
+      Matrix.cons_val_one] <;>
+      first | ring1 | linear_combination (-1 / 4 : ℝ) * hψ | linear_combination (1 / 4 : ℝ) * hψ |
+        linear_combination (-Real.sin (y 1) ^ 2 / 4) * hψ - (1 / 4 : ℝ) * hθ
+  · simp [Matrix.det_fin_three, sigE]
+    linear_combination Real.sin (y 1) * hψ
+  · simp [Matrix.det_fin_three, GU, eA, eB]
+    linear_combination (-1 / 64 : ℝ) * hθ
+
+/-- **The structure equations** `dσᵃ = −½ εₐbc σᵇ ∧ σᶜ`, componentwise, with the partials proved. -/
+theorem euler_structure (y : Fin 3 → ℝ) (a i j : Fin 3) :
+    fderiv ℝ (fun y => sigE y a j) y (Pi.single i 1) - fderiv ℝ (fun y => sigE y a i) y (Pi.single j 1)
+      = -∑ b, ∑ c, epsE a b c * (sigE y b i * sigE y c j) := by
+  have hψ := Real.sin_sq_add_cos_sq (y 0)
+  rw [sig_fd, sig_fd]
+  fin_cases a <;> fin_cases i <;> fin_cases j <;> simp only [dSig, sigE, epsE, Fin.sum_univ_three, Fin.isValue, Fin.zero_eta, Fin.mk_one, Fin.reduceFinMk, Matrix.cons_val, Matrix.cons_val_zero,
+      Matrix.cons_val_one] <;>
+    first | ring1 | linear_combination Real.sin (y 1) * hψ | linear_combination -Real.sin (y 1) * hψ
+
+/-- A frame-constant symmetric tensor `hᵢⱼ = Σ Hₐb σᵃᵢ σᵇⱼ`. -/
+noncomputable def hE (H : Fin 3 → Fin 3 → ℝ) (y : Fin 3 → ℝ) (i j : Fin 3) : ℝ :=
+  ∑ a, ∑ b, H a b * (sigE y a i * sigE y b j)
+
+lemma hE_fd (H : Fin 3 → Fin 3 → ℝ) (y : Fin 3 → ℝ) (i j k : Fin 3) :
+    fderiv ℝ (fun y => hE H y i j) y (Pi.single k 1)
+      = ∑ a, ∑ b, H a b * (dSig y a i k * sigE y b j + sigE y a i * dSig y b j k) := by
+  choose L hL hLk using sig_hfd y
+  have h := HasFDerivAt.fun_sum (u := Finset.univ) fun a _ => HasFDerivAt.fun_sum (u := Finset.univ) fun b _ =>
+    ((hL a i).mul (hL b j)).const_mul (H a b)
+  have h' : HasFDerivAt (fun y => hE H y i j) _ y := h
+  rw [h'.fderiv]
+  simp only [FunLike.coe_sum, Finset.sum_apply, FunLike.coe_smul, Pi.smul_apply, add_apply, smul_eq_mul,
+    hLk]
+  refine Finset.sum_congr rfl fun a _ => Finset.sum_congr rfl fun b _ => by ring
+
+/-- **Traceless.** `G⁻¹ · h = 0` at every point off the poles, for every traceless symmetric `H`. -/
+theorem euler_tt_trace {p : Fin 3 → ℝ} (j0 : C (p 1) = Real.cos (p 1)) (hc : C (p 1) ^ 2 < 1)
+    (H : Fin 3 → Fin 3 → ℝ) (hH : ∀ a b, H a b = H b a) (htr : H 0 0 + H 1 1 + H 2 2 = 0) :
+    ∑ i, ∑ j, GiQ C p i j * hE H p i j = 0 := by
+  have hψ := Real.sin_sq_add_cos_sq (p 0)
+  have hθ := Real.sin_sq_add_cos_sq (p 1)
+  have e10 := hH 1 0; have e20 := hH 2 0; have e21 := hH 2 1
+  have hd := one_sub_ne hc
+  rw [j0] at hd
+  have hu : ((Real.cos (p 1) - 1) * (Real.cos (p 1) + 1))⁻¹ * ((Real.cos (p 1) - 1) * (Real.cos (p 1) + 1)) = 1 :=
+    inv_mul_cancel₀ hd
+  simp only [GiQ, GiU, hE, sigE, j0, Fin.sum_univ_three, Fin.isValue, Matrix.cons_val, Matrix.cons_val_zero,
+    Matrix.cons_val_one]
+  set cψ := Real.cos (p 0); set sψ := Real.sin (p 0); set cθ := Real.cos (p 1); set sθ := Real.sin (p 1)
+  linear_combination (-4*cψ*sθ^2*sψ*((cθ - 1) * (cθ + 1))⁻¹ - 4*cψ*sψ) * e10 + (4*cθ^2*((cθ - 1) * (cθ + 1))⁻¹ - 4*((cθ - 1) * (cθ + 1))⁻¹) * htr + (-4*H 0 0*sθ^2*((cθ - 1) * (cθ + 1))⁻¹ + 4*H 1 1) * hψ + (4*H 0 0*cψ^2*((cθ - 1) * (cθ + 1))⁻¹ - 4*H 0 0*((cθ - 1) * (cθ + 1))⁻¹ - 8*H 0 1*cψ*sψ*((cθ - 1) * (cθ + 1))⁻¹ - 4*H 1 1*cψ^2*((cθ - 1) * (cθ + 1))⁻¹) * hθ + (-4*H 0 0*cψ^2 + 8*H 0 1*cψ*sψ + 4*H 1 1*cψ^2 - 4*H 1 1) * hu
+
+include hC in
+/-- **Transverse.** `∇ⁱhᵢⱼ = 0` under THE connection, at every point off the poles where the profile's 1-jet is
+`cos`'s, for every symmetric `H` (the trace is not needed): with `euler_tt_trace`, the frame-constant tensors are TT. -/
+theorem euler_tt_transverse (hC1 : ∀ s, C s ^ 2 < 1) (p : Fin 3 → ℝ) (j0 : C (p 1) = Real.cos (p 1))
+    (j1 : deriv C (p 1) = -Real.sin (p 1)) (H : Fin 3 → Fin 3 → ℝ) (hH : ∀ a b, H a b = H b a) (j : Fin 3) :
+    ∑ i, ∑ k, GiQ C p i k * (fderiv ℝ (fun y => hE H y i j) p (Pi.single k 1)
+      - ∑ l, lcGam (formG (GU C)) p (Pi.single k 1) (Pi.single i 1) l * hE H p l j
+      - ∑ l, lcGam (formG (GU C)) p (Pi.single k 1) (Pi.single j 1) l * hE H p i l) = 0 := by
+  have hc := hC1 (p 1)
+  have hψ := Real.sin_sq_add_cos_sq (p 0)
+  have hθ := Real.sin_sq_add_cos_sq (p 1)
+  have e10 := hH 1 0; have e20 := hH 2 0; have e21 := hH 2 1
+  have hd := one_sub_ne hc
+  rw [j0] at hd
+  have hu : ((Real.cos (p 1) - 1) * (Real.cos (p 1) + 1))⁻¹ * ((Real.cos (p 1) - 1) * (Real.cos (p 1) + 1)) = 1 :=
+    inv_mul_cancel₀ hd
+  simp only [lcGam_formG (fun y u h => GU_nondeg hC1 y u h) (GU_smooth hC) (GiU_inv hc), GamU_tab hC hc, hE_fd]
+  fin_cases j <;>
+  simp only [GiQ, GiU, GamQ, GamU, hE, sigE, dSig, j0, j1, Fin.sum_univ_three, Fin.isValue, Fin.zero_eta, Fin.mk_one,
+    Fin.reduceFinMk, Matrix.cons_val, Matrix.cons_val_zero, Matrix.cons_val_one] <;>
+  set cψ := Real.cos (p 0) <;> set sψ := Real.sin (p 0) <;> set cθ := Real.cos (p 1) <;> set sθ := Real.sin (p 1)
+  · linear_combination (2*cψ^2*sθ^2*((cθ - 1) * (cθ + 1))⁻¹ + 2*sθ^2*sψ^2*((cθ - 1) * (cθ + 1))⁻¹) * e10
+  · linear_combination (-4*cθ*cψ*sθ^3*sψ*((cθ - 1) * (cθ + 1))⁻¹^2 - 4*cθ*cψ*sθ*sψ*((cθ - 1) * (cθ + 1))⁻¹) * e10 + (-2*cθ^2*sθ^2*sψ*((cθ - 1) * (cθ + 1))⁻¹^2 - 4*cθ^2*sψ*((cθ - 1) * (cθ + 1))⁻¹ + 2*sθ^2*sψ*((cθ - 1) * (cθ + 1))⁻¹^2 + 4*sψ*((cθ - 1) * (cθ + 1))⁻¹) * e20 + (-2*cθ^2*cψ*sθ^2*((cθ - 1) * (cθ + 1))⁻¹^2 - 4*cθ^2*cψ*((cθ - 1) * (cθ + 1))⁻¹ + 2*cψ*sθ^2*((cθ - 1) * (cθ + 1))⁻¹^2 + 4*cψ*((cθ - 1) * (cθ + 1))⁻¹) * e21 + (-4*H 0 0*cθ*sθ^3*((cθ - 1) * (cθ + 1))⁻¹^2 - 4*H 0 0*cθ*sθ*((cθ - 1) * (cθ + 1))⁻¹) * hψ + (4*H 0 0*cθ*cψ^2*sθ*((cθ - 1) * (cθ + 1))⁻¹^2 - 4*H 0 0*cθ*sθ*((cθ - 1) * (cθ + 1))⁻¹^2 - 8*H 0 1*cθ*cψ*sθ*sψ*((cθ - 1) * (cθ + 1))⁻¹^2 - 4*H 0 2*cθ^2*sψ*((cθ - 1) * (cθ + 1))⁻¹^2 + 4*H 0 2*sψ*((cθ - 1) * (cθ + 1))⁻¹^2 - 4*H 1 1*cθ*cψ^2*sθ*((cθ - 1) * (cθ + 1))⁻¹^2 - 4*H 1 2*cθ^2*cψ*((cθ - 1) * (cθ + 1))⁻¹^2 + 4*H 1 2*cψ*((cθ - 1) * (cθ + 1))⁻¹^2) * hθ + (-4*H 0 0*cθ*cψ^2*sθ*((cθ - 1) * (cθ + 1))⁻¹ + 4*H 0 0*cθ*sθ*((cθ - 1) * (cθ + 1))⁻¹ + 8*H 0 1*cθ*cψ*sθ*sψ*((cθ - 1) * (cθ + 1))⁻¹ + 4*H 0 2*cθ^2*sψ*((cθ - 1) * (cθ + 1))⁻¹ - 4*H 0 2*sψ*((cθ - 1) * (cθ + 1))⁻¹ + 4*H 1 1*cθ*cψ^2*sθ*((cθ - 1) * (cθ + 1))⁻¹ + 4*H 1 2*cθ^2*cψ*((cθ - 1) * (cθ + 1))⁻¹ - 4*H 1 2*cψ*((cθ - 1) * (cθ + 1))⁻¹) * hu
+  · linear_combination (2*cθ*cψ^2*sθ^2*((cθ - 1) * (cθ + 1))⁻¹ - 2*cθ*sθ^2*sψ^2*((cθ - 1) * (cθ + 1))⁻¹ - 4*cθ*sψ^2) * e10 + (2*cθ^2*cψ*sθ*((cθ - 1) * (cθ + 1))⁻¹ - 2*cψ*sθ*((cθ - 1) * (cθ + 1))⁻¹) * e20 + (-2*cθ^2*sθ*sψ*((cθ - 1) * (cθ + 1))⁻¹ + 2*sθ*sψ*((cθ - 1) * (cθ + 1))⁻¹) * e21 + (-4*H 0 1*cθ*sθ^2*((cθ - 1) * (cθ + 1))⁻¹ - 4*H 0 1*cθ) * hψ + (4*H 0 0*cθ*cψ*sψ*((cθ - 1) * (cθ + 1))⁻¹ + 8*H 0 1*cθ*cψ^2*((cθ - 1) * (cθ + 1))⁻¹ - 4*H 0 1*cθ*((cθ - 1) * (cθ + 1))⁻¹ - 4*H 1 1*cθ*cψ*sψ*((cθ - 1) * (cθ + 1))⁻¹) * hθ + (-4*H 0 0*cθ*cψ*sψ - 8*H 0 1*cθ*cψ^2 + 4*H 0 1*cθ + 4*H 0 2*cψ*sθ + 4*H 1 1*cθ*cψ*sψ - 4*H 1 2*sθ*sψ) * hu
+
+end EulerS3
+
 end ShadowProbe
 
 #print axioms ShadowProbe.lcGam_formG
@@ -856,3 +1227,14 @@ end ShadowProbe
 #print axioms ShadowProbe.ef_kretschmann
 #print axioms ShadowProbe.sds_kretschmann_ef
 #print axioms ShadowProbe.nariai_horizon_kretschmann
+#print axioms ShadowProbe.GU_nondeg
+#print axioms ShadowProbe.RicU_tab
+#print axioms ShadowProbe.euler_profile_scalar
+#print axioms ShadowProbe.euler_s3_curvature
+#print axioms ShadowProbe.cos_jet
+#print axioms ShadowProbe.euler_profile_exists
+#print axioms ShadowProbe.euler_coframe
+#print axioms ShadowProbe.euler_structure
+#print axioms ShadowProbe.hE_fd
+#print axioms ShadowProbe.euler_tt_trace
+#print axioms ShadowProbe.euler_tt_transverse
