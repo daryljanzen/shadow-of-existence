@@ -20664,3 +20664,569 @@ exactly long enough to keep publishing the defect the correction was for.** ⌗ 
 until the next seat pushes, which is why this seat keeps finding it rather than the seat that edited
 the paper. **Whether `gen_paper_html.py` joins the generator step is yours** — I have only cleared the
 instance, four times.*
+
+## ⛔ `r7403+cc66.61` — **THE `fast` RED ON THE LIVE HEAD IS FIVE GATES AGAIN, AND THE TWO NEW ONES ARE BOTH INHERITED AND BOTH CLEARABLE WITHOUT A READING. ⇒ CLEARED. ⛭ THE OTHER THREE ARE STILL YOURS AND UNCHANGED**
+
+*Its own section because `.59`/`.60` are order answers and this is the trunk. **PR #464, draft, subscribed.**
+⌗ Read from CI's own `FAILED` line on `a31f8df65`, which is `.60` — **the live head, not a superseded one.***
+
+> `⛔ FAILED: check_depmatrix check_open_ledger check_open_ledger check_view_tables check_prose_pins`
+
+**Against `.57`'s five, two are gone and two are new.** Separated mine from inherited the same way as `.57`:
+each gate run on a pristine `origin/main` worktree beside this branch.
+
+| gate | at `.55` | now | on `main` | whose | disposition |
+|---|---|---|---|---|---|
+| `check_absence_claims` | FAILED | **gone** | passes | was ⛔ mine | fixed at `.57`, held |
+| `check_pages_current` | FAILED | **gone** | passes | inherited | ported at `.57`, held |
+| `check_depmatrix` | — | **new** | **FAILS** | inherited | ⇒ ✔ **cleared here** |
+| `check_prose_pins` | — | **new** | **FAILS** | inherited | ⇒ ✔ **cleared here** |
+| `check_open_ledger` ×2 | FAILED | FAILED | FAILS | inherited, a reading | ⛔ **yours** |
+| `check_view_tables` | FAILED | FAILED | FAILS | inherited, a reading | ⛔ **yours** |
+
+⌗ ⛭ *Both new ones are red on `main` too, so neither is this branch's defect — **and neither is a reading**,
+which is the whole reason I did not stand them down. A remedy the repo's own tooling produces is mine to port
+whether or not the drift was mine.*
+
+### ✔ ⒜ `check_depmatrix` — P7's ROW MOVED ONE CELL, AND THE CAUSE IS `r7401`'s OWN P7 EDIT
+
+**`P7`→`P10`: `22` → `24`.** Named exactly rather than guessed: `557b94da3` (`r7401`, your P7 pass) adds
+`3` and removes `1` `\cite{JanzenCanonicalTime}` in `CR_framework.tex` — **net `+2`, which is the whole drift.**
+Nothing else in the 18×18 moved.
+
+Cleared with the repo's own tooling, all three places in one commit, which is the `.52` lesson applied rather
+than relearned:
+
+- `scripts/depmatrix.py` → `corpus/CR_framework.tex:1540`;
+- `scripts/gen_matrix_html_tbody.py` → the `<tbody>` of `BOOK_INTRO_cosmiCave/assets/dependency_matrix.html`;
+- `scripts/gen_paper_html.py P7` → the served page, **whose entire diff is one cell**: `<strong>22</strong>`
+  → `<strong>24</strong>`.
+
+⌗ ⛔ ***And the pairing is the part worth your attention.*** `check_pages_current` was **GREEN in CI on this
+head** and went red *the instant I corrected the `.tex`* — because the served page was faithfully publishing
+the stale number the source carried. **So the paper edit at `r7401` left the matrix row and the page BOTH
+wrong, and only one of the two has a gate that fires on the paper edit itself.** This is the fifth derived-view
+staleness this cycle (`P7` ×3, `P16` ×1, the matrix ×1) and the third traceable to the same shape: *a `P7` edit
+lands and its derived views do not move in the same commit.*
+
+### ✔ ⒝ `check_prose_pins` — ONE NEW SITE, AND IT IS A BOUNDARY CASE MY OWN BASELINE ALREADY SETTLED
+
+`len(_agreed_exposed) >= 1`, tier `PRESENCE`, in `receipts/L_probability/S60_…cannot_see_a_dead_pin_in_its_own_container.py`.
+**Adjudicated `PRESENCE-CONTROL`**, with the reading in the row: it sits in a three-part conjunction whose
+load-bearing half is the **strict inequality** `len(_agreed_exposed) < len(_agreed)` — *"some but not all"*,
+which is exactly what the label claims — and `>= 1` only stops that inequality passing **vacuously** on an
+empty set, where `0 < len(_agreed)` holds and the manufactured-absence finding would be unsupported. No count
+is pinned: both counts are printed in the label and neither is compared against a literal.
+
+⌗ **Not a judgement I invented for the occasion** — it is the same boundary case as `len(occ) >= 1`, which this
+seat adjudicated `PRESENCE-CONTROL` at `r7143+cc66.109` on identical reasoning. Backlog `160` → `161` keys;
+`UNADJUDICATED` stays `0`; `PRESENCE-CONTROL` `52` → `53`.
+
+⛭ ***And the hypothesis I tested before adjudicating, because it would have been worse than the red:*** that
+line carries **two** `>= 1` presence pins and the instrument reported **one**, which would have been a
+**per-line blind spot of exactly the class this gate exists for**. ⇒ **REFUTED.** `scripts/mutate_assertions.py
+--prose` reports `185` sites over `157` distinct `file:line`, up to **3** on a single line. So the instrument
+is not line-limited, and why `len(_exposed) >= 1` is not among its sites is a fact about `70`'s operator and
+not mine to rule.
+
+### ⛔ ⒞ THE THREE THAT ARE STILL YOURS, RE-VERIFIED ON THIS TREE AND UNCHANGED
+
+- **`check_open_ledger`** ×2 — four `CR_framework` qualifications with no verdict (`0d20370974`, `9177c52baf`,
+  `cf8bd7a858`, `db7d54f2d8`) and a `--rebuild` for `fb2d798ceb`.
+- **`check_view_tables`** — `regen_frontier.py:KIND`, `8` live rows absent against a baseline of `7`, debt file
+  *"rewritten DOWNWARD only"*. `PO-24` `PO-50` `PO-86` `PO-87` `PO-88` `PO-89` `PO-90` `PO-91` need a
+  `READ`/`BUILD` each.
+
+⌗ *Unchanged from `.52`/`.57`: every permitted value is a judgement about whether a row's work is a reading or a
+build, and guessing publishes a false claim in the one view that says so.*
+
+### ⛭ ⒟ ONE OBSERVATION I AM NOT ACTING ON: TWO GENERATORS FOR ONE VIEW, DISAGREEING
+
+`scripts/depmatrix.py`'s `_color` bands `v <= 25` as `#2f6fb3`; `scripts/gen_matrix_html_tbody.py`'s `shade`
+bands `v <= 20` as `#2f6fb3` and everything above as `#14416f`. **They disagree on `10` of the matrix's cells**
+— every count in `21`–`25`, which now includes `P7`→`P10` at `24` and already included `P7`→`P5` at `23`.
+
+The HTML on disk carries the **tbody** generator's banding, which is the one `check_depmatrix`'s own fix
+instruction names, so the served view is right and the gate is satisfied. ⌗ ⛔ *But the file whose docstring
+says it* "Maintains P7 tab:dependency-matrix + BOOK_INTRO_cosmiCave/assets/dependency_matrix.html" *is the one
+that would get those ten cells wrong, and it prints a full* `HTML STYLED TABLE` *block inviting exactly that
+paste.* **Cosmetic in effect — a shade band, not a count — which is why I am reporting it rather than editing
+a generator nobody asked me to touch.** *Your call whether the two bandings should be one.*
+
+## ⛭⛭ `r7405+cc66.63` — **① MEASURED: `0` NEW ONE-STATE VIOLATIONS AT THE 16. ⛭ AND THE DELIVERABLE IS NOT THE COUNT — IT IS THAT THE DISCRIMINATOR FOR THIS CLASS IS *ASPECT*, NOT VOCABULARY, WHICH IS WHY NO WORD-NET COULD EVER HAVE FOUND IT**
+
+*Registered before any site was re-read (`r7405_cc66_the_one_state_split/REGISTRATION.md`, pushed first).
+**PR #468, draft, subscribed** — #464 merged while `.61` was in flight, so the branch was restarted from
+`eab95d8a6` with `.61` carried across, patch-id verified identical. Nothing discarded.*
+
+### ⛔ ⒜ THE NUMBERS, AND THREE OF FIVE PREDICTIONS ARE REFUTED
+
+| | | registered | **measured** | |
+|---|---|---|---|---|
+| ⒜ | one-state violations among the 16 (incl. ruled row `24`) | central **3**, band 1–6 | **`1`** | ⛔ central **REFUTED**, band held at its floor |
+| ⒝ | classification errors among the 16 | central **0**, band 0–2 | **`0`** | ✔ HELD |
+| ⒞ | your prior ⒜ > ⒝ | HOLDS | **HOLDS** (`1`>`0`) | ✔ held — *on no new evidence, as registered* |
+| ⒟ | of ⒜, those at sites ⓬ scored `AGREES` | central **1**, band 0–4 | **`0`** | ⛔ central **REFUTED** |
+| ⒠ | row `35` reclassifies to one-state | **YES** | **NO — neither class** | ⛔ **REFUTED** |
+
+⇒ ***The only one-state violation in the population is row `24`, which you had already ruled and fixed.
+`0` new candidates means there is nothing here for you to rule.*** ⌗ *And every refutation runs the same
+direction — fewer defects, and a better-behaved arm than I predicted.*
+
+⌗ One correction to ⓬'s own count, not to its result: **the 16 sites are `14` distinct passages.** Row `27`
+shares `25`'s and row `38` shares `35`'s.
+
+### ⛭⛭ ⒝ THE FINDING, AND IT IS THE MIRROR OF ⓬'s
+
+**The vocabulary net cannot score this class at all.** Run against the ruled instance before and after your
+fix it returns ***the same two fragments either way***:
+
+- **PRE-FIX** — *"One scope qualification **is owed immediately, and closing it is what makes** the classical
+  reading a result rather than an inference."*
+- **POST-FIX** — *"One scope qualification **belongs with** Prop. `prop:amplitude` **and is closed in this
+  section**, which is what makes…"*
+
+Both carry `qualification`. ⇒ ***The debt vocabulary is IDENTICAL on the defect and on its repair.*** ⌗ ⛭ *So
+`r7401` ⓬'s conclusion arrives from the opposite side: there, a classification defect no word-net could catch;
+here, a one-state defect no word-net can **distinguish from its own fix**. Two different classes, the same
+reason.*
+
+**What separates them is the ASPECT of the discharge clause.** The violation announces the debt and leaves the
+discharge **prospective** (*"closing it is what makes…"*); the repair states it **completed** (*"is closed in
+this section"*). `aspect.py` encodes that — a debt term, **plus** a prospective discharge, **minus** a
+completed one — and it **flags the pre-fix sentence and not the post-fix form**.
+
+⛔ ***Bound on ONE instance, so its false-negative rate is unmeasured and the `0` it returns over the 16 is
+exactly as strong as that single test and no stronger. I am not offering it as a gate.*** *What I am offering
+is the form, because it is checkable and the vocabulary route is provably not.*
+
+### ⒞ WHY THE `0` IS NOT THE NET AGREEING WITH ITSELF
+
+Two routes, neither the other's check, both reaching `0`. ⒤ The vocabulary net surfaced **12 debt sentences**
+over the 14 passages, `8` of 14 carrying at least one, and **I read every one**: each states a status once — a
+limit named as a limit (`31`), an item named as owed and left so (`25`/`27`: *"named here as owed and
+developed in neither this paper nor the bead"*), or a qualification raised and settled **in the same breath**
+(`23`). ⒥ The aspect net, built without reference to that reading, returns `0`.
+
+### ⛔ ⒟ ⒠ REFUTED, WITH THEIR REASONS — AND ⒟ IS THE ONE THAT MATTERS
+
+**⒠.** I predicted row `35` would reclassify. **It is neither class.** The section introduces that item as
+*"**one that is sharper here than in the field, and is answered rather than owed**"* — status given in the
+clause that introduces it, which is the one-state form — and closes *"this section is **the weighing rather
+than the list**."* ⇒ *The heading names the section's SUBJECT, not a status claim about each item under it.*
+⌗ ⛔ *My prediction mistook a declared mismatch for a defect — the error ⓬'s own `DISAGREES-DECLARED` label
+exists to prevent, and I made it anyway.*
+
+**⒟.** I registered that this, not ⒞, was the informative number: a one-state violation at a site ⓬ scored
+`AGREES` is a defect its arm is blind to by construction. **It measured `0`.** ⇒ ***At these sites the class
+is NOT invisible to ⓬'s arm.*** *Its single candidate was precisely the site carrying the defect. So your
+`r7405` ruling now has a denominator: `1` of `1` candidates was a real defect, and `0` of the `14` passages
+the arm cleared hid one.*
+
+### ⌗ AND ON ⒞, WHICH I FLAGGED IN THE REGISTRATION RATHER THAN AFTER SCORING IT
+
+⒞ was decided at `1`–`0` by the ruling that produced the class, before a single site was re-read; the scan
+could only refute it by finding **two or more** classification errors. ⌗ *It held, and it held on nothing the
+scan contributed. I would rather have said that in the registration than claim it as a result here — which is
+why it is in both.*
+
+## ⛭⛭ `r7405+cc66.64` — **② ANSWERED: THE `34` SPLIT, AND THE SPLIT WAS ALREADY IN THE DATA. `33` KEYS LAND, `1` IS HELD WITH `60` AGAINST IT**
+
+*`r7405` ②: "if the `34` keys can be split so that the unblocked ones land, split them and say which are held."
+**PR #468, draft, subscribed.***
+
+### ✔ ⒜ THE ANSWER IS YES, AND NOTHING HAD TO BE COMPUTED TO FIND IT
+
+`thirty_four.tsv` carries `34` keys. `held33.tsv` — written at `r7367`, sitting in the same directory ever
+since — carries adjudications for exactly `33` of them. ⇒ ***The one key with no row is precisely the dead
+pin*** (`S17`, `"already the product of a repair"`). *The split was computed `38` revisions ago and nobody,
+me included, noticed that it was: what was missing was never the 33 adjudications, it was a **mechanism for
+the mint to emit a subset**.*
+
+### ⒝ AND THE BLOCKER I REPORTED AT `.42` ⒠ⁱ IS GONE, SO THE `34`th WAS THE ONLY THING LEFT
+
+`check_quote_pins` was red on `main` at `r7367` with `2` unadjudicated keys of `S55`'s that were not mine.
+**Both now carry rows**, and with the mint off the gate balances at **`2694` live against `2694`**. ⇒ *So the
+one undisposable key was holding all 33 on its own.*
+
+### ⒞ THE MECHANISM — A HOLD REGISTER, AND **NOT** A COLUMN ON THE LIST
+
+`corpus/quote_pin_mint_held.tsv`: one row per held key, with **the seat the disposition belongs to** and what
+has to happen for it to go. `_mint_list()` emits its derived list **minus** that register. The mint is live;
+`QP_MINT_34=0` forces it off, which is how the before-state is reproduced.
+
+⌗ ⛭ ***Why a file of its own and not a sixth column on `thirty_four.tsv`:*** *that file is **DERIVED** by
+`make_selector.py`. A hold recorded inside it is a **hand-maintained field in a generated view** — `r7399`
+⑪'s defect exactly — and the next generator run would drop it **silently**. ⇒ `r7399` ⑪ applied rather than
+relearned.*
+
+⌗ ⛔ ***And the design I rejected, because it is the more elegant one and it is wrong.*** *The self-maintaining
+rule is "mint a key **iff** it already carries a row": the one-landing invariant becomes mechanical instead of
+disciplinary, and the hold lifts with no code change at all. **I did not build it** — it makes the instrument
+read the baseline it is compared against, which collapses `check_quote_pins` ⓵ over the whole mint subset. A
+minted key could then never be unadjudicated **because the mint asks the adjudications what to mint.** The
+measuring and the measured do not share a source.*
+
+### ⒟ MEASURED, WITH THE GATE'S OWN COMPARISONS RATHER THAN A RE-IMPLEMENTATION
+
+| | |
+|---|---|
+| distinct keys, mint **off** | `2694` |
+| distinct keys, mint **live** | **`2727`** |
+| delta | **`33`**, exactly the list minus the hold |
+| baseline rows | `2727` |
+| ⓵ live keys with no row | **`0`** |
+| ⓶ rows describing nothing live | **`0`** |
+| `check_pins_adjudicated_on_mint` | **green**, `0` unverdicted keys minted |
+
+⛭ ***And a counting trap worth naming, because it nearly had me:*** the instrument's **site** count rose by
+**`34`** while its **key** count rose by **`33`**. ⇒ *Exactly one minted key carries two sites. A check
+written against the site count would have read this landing as off by one — and `sites` is the number the
+instrument prints per line.*
+
+### ✔ ⒠ THE STALENESS RISK ON THE `33` IS MEASURED, NOT ASSUMED
+
+Those rows were written at `r7367` and each names a `held at <sha>`. **`38` revisions later the shas could
+have rotted** — `H2` wants an ancestor of `HEAD`, `H5` wants a commit that changed that receipt, `H3` wants
+the literal still present in what the key reads there. ⇒ *Ran **`check_quote_pins`' own `held_check`** over
+all 33 on this tree: **`33` held, `0` failing.*** ⌗ *Its own checker, imported, not a second copy of its
+rules.*
+
+### ⛔ ⒡ WHAT IS HELD, AND IT IS STILL YOURS TO ROUTE
+
+**`1` key.** `receipts/L_probability/S17_…`, literal `"already the product of a repair"`, **owner `60`**. The
+pin is dead — the literal is absent from the container the receipt tests it against — and both the receipt and
+its container (`r7254_60_…`) are `60`'s, so the disposition is `60`'s: *remove the arm, or keep it with a
+reason.* ⌗ **When it goes, delete that one row and the key mints with no code change.**
+
+### ⌗ ⒢ WHAT I DID NOT RUN, SAID PLAINLY
+
+**I did not complete a full `check_quote_pins` run here.** It spent over `15` minutes on this container without
+reaching its verdict, and `r7271` ⒜ says CI is the suite and is read, not duplicated. ⇒ *What I verified
+directly is the two comparisons that this change can break — ⓵ and ⓶, both `0` — plus all 33 rows through the
+gate's own `held_check`, plus the mint ratchet end to end. **The seed suite and the remaining 2,694 rows are
+CI's**, and if it reds on this landing the red is mine.*
+
+## ⛔ `r7405+cc66.65` — **THE FIFTH DERIVED VIEW, AND THIS TIME THE MISSING STEP WAS MINE: CORRECTING `P7`'s MATRIX ROW LEFT ITS **PDF** BEHIND**
+
+*CI on this branch's own head `d1f55bafe` names a gate I had not seen or reported.* **PR #468, draft, subscribed.**
+
+> `⛔ FAILED: check_open_ledger check_open_ledger check_view_tables check_pdf_current`
+
+### ⛔ ⒜ IT IS MINE, IT WAS OWED SINCE `.61`, AND IT IS THE SHAPE I HAVE BEEN REPORTING ALL CYCLE
+
+`check_pdf_current`: *"`CR_framework.tex`: its source last changed at `222152c3`, PDF last changed at
+`557b94da`, which is not after it."* ⇒ ***The source is my `.62`; the PDF is still `r7401`'s.*** *Owed from
+`.61`, when I first corrected that row.*
+
+⌗ ⛭ **I have reported this exact shape four times this cycle — a source edit lands and its derived views do
+not move in the same commit — and then committed it myself, twice over.** *The chain is longer than I was
+treating it:*
+
+`CR_framework.tex` → the matrix `<tbody>` → `paper_P7.html` → ⛔ **the PDF**
+
+*`.61` and `.62` moved the first three and stopped. `check_pages_current` went green and I read that as the
+view being current, when it is one view of four.* ⌗ **`check_depmatrix` checks the HTML companion, the figure
+and the ledger block in one gate, which is precisely why its green felt complete.**
+
+### ✔ ⒝ FIXED WITH THE GATE'S OWN PRESCRIBED REMEDY
+
+`pdflatex` twice from `corpus/`, exit `0` on both passes, `87` pages. `check_pdf_current`: **`18` papers, `0`
+stale.** ⌗ *The gate's own note that a missing `pdflatex` is not a missing capability did not arise — it is
+installed here.*
+
+⛔ ***What is NOT verified, said rather than implied:*** *there is no `pdftotext` or PDF text library on this
+container, so I confirmed the source carries the corrected cells and that the prescribed tool built this PDF
+from that source — **not** the rendered digits. CI's `compile` job renders all 18 papers and is the check on
+that.*
+
+### ✔ ⒞ AND THE SAME CI LINE CONFIRMS `.61` AND `.62`
+
+`check_depmatrix` and `check_prose_pins` are **both gone** from it. ⇒ *Both ports held on the runner, not just
+on my tree.* **What remains is `check_open_ledger` ×2 and `check_view_tables` — your two readings, unchanged.**
+
+⌗ *And `check_order_acknowledged` on that run reads `cc66  order r7405  acknowledged r7405  revision lag 0
+own unanswered section(s) 0`.*
+
+## ⛭⛭ `r7411+cc66.66` — **① PRICED: THE REFRESH IS `10` CLAIMS AND `69` ALREADY HAS A VERDICT FOR `9` OF THEM — NOT `21`, NOT `93`. ⛔ AND ⒟ IS REFUTED: YOUR TWO NUMBERS CAME OUT EQUAL TO WITHIN ONE ROW**
+
+*Registered before the scan (`r7411_cc66_pricing_the_census_refresh/REGISTRATION.md`, pushed first). Nothing
+re-read, no census row changed.* **PR #468, draft, subscribed.**
+
+### ⒜ FIVE OF SIX BANDS HELD
+
+| | | registered | **measured** |
+|---|---|---|---|
+| ⒜ | stale rows of the `257` | central **8**, band 3–25 | **`10`** ✔ |
+| ⒝ | stale fraction | **3.1 %**, band 1.2–9.7 | **`3.9` %** ✔ |
+| ⒞ | stale among the `80` `OPEN` | central **4**, band 1–14 | **`3`** (`3.8` %) ✔ |
+| ⒞′ | the same against your `75` | — | **`3`** (`4.0` %) |
+| ⒟ | the weight's share exceeds the row share | **YES** | ⛔ **gap `0.1`pp, sign depends on denominator** |
+| ⒠ | my own `.61`/`.62` edit invalidates a row | **NO** | **NO** ✔ |
+| ⒡ | new candidates absent from the census | central **10**, band 3–30 | **`11`** ✔ |
+
+**All of it sits in the four moved papers**: `P7` `6`/`40`, `P5` `2`/`7`, `P15` `2`/`35`, `P16` `0`/`11`. *The
+other fourteen contribute `0`* — so your premise about which papers moved was the whole of the ceiling.
+
+### ⛔ ⒝ ⒟ REFUTED, AND THE REASON IS ABOUT `P15` SPECIFICALLY
+
+Your prior was sound on its face: the **ceilings** do differ sharply — `45.0` % of opens at risk against
+`36.2` % of rows, because `P15` is both the most-edited paper and the one carrying `22` of the `75`. ⇒ ***But
+`P15`'s edits mostly landed off its own open items***: `2` stale rows of `35`, only `1` of them `OPEN`. **So
+the weight tracked the fraction instead of exceeding it.**
+
+⌗ ⛔ *And the sign turns on the denominator, so both are here rather than the one that reads better:* against
+the `80` opens the weight is **lower** (`3.8` vs `3.9` %); against your `75` it is **higher by `0.1`pp**
+(`4.0` %). ⇒ **Neither makes them "different numbers" in the sense the prior meant.** *A one-row gap whose
+sign flips with the denominator is not a finding in either direction — calling it one would be the
+`THE_FRONTIER` step-delta error again, where a denominator chosen for convenience inverted a published sign.*
+
+⌗ ✔ *The instrument reproduces your ⒜ figures exactly — `P15` `22`, `P18` `15`, `P10` `9`, `P14` `8`, `P7`
+`6` — using the gate's own `live_rows()` and `pointers()`, imported. That is the check that it prices the
+right population.*
+
+### ⛭⛭ ⒞ THE ANSWER YOU ASKED FOR: STALE + NEW IS THE WRONG SUM
+
+A stale row and a new candidate are usually **the same claim reworded** — one read, carrying your existing
+verdict — not two. Mechanically (`pairs.py`, same paper, token Jaccard ≥ `0.50`): **`7` paired · `4` unpaired
+new · `3` unpaired stale ⇒ `11` claims, `7` with a verdict.**
+
+⛔ ***And my own pass UNDER-PAIRS, which I would rather say than let the number stand.*** Read by hand, `3` of
+the `4` unpaired-new are the same claim as an unpaired-stale row: `P7`'s `remark[Perspectival Singularity …]`
+at `J=0.47`, just under my threshold; `P7`'s `\paragraph{The classification of causal reassignments.}` at
+`J=0.14`, because it was rewritten rather than edited; and `P15`'s *"One check is owed here"*, which is the
+same **paragraph** keyed on a different sentence.
+
+⇒ ***`10` claims to read, `9` of them already verdicted, and `1` genuinely new*** — `P7`'s
+`frontier:crossing`, the fourth frontier item `r7387` added. *Against the naive `21`, the mechanical `11`, and
+the ceiling of `93`.* ⌗ **The `7`/`4`/`3` is what the instrument returns and is reproducible; the `10`+`1` is
+my reading of the same eleven, and which is right is yours to rule. The `0.50` threshold is a judgement.**
+
+### ⛭⛭ ⒟ A PROPERTY OF THE KEY, FOUND BY PRICING IT — AND IT IS THE KEY'S OWN UNLISTED COST
+
+`P15`'s stale row is **your `r7405` one-state repair**: *"One scope qualification **is owed immediately**, and
+closing it…"* → *"…**belongs with** Prop. … and **is closed in this section**"*. That rewrite removed the
+openness marker from the paragraph's **first** matching sentence, and `marker_sentence()` returns the first
+match — so the paragraph re-keyed onto *"One check is owed here and is not optional"*, which was there all
+along.
+
+⇒ ***One edit invalidated a row and minted a new candidate while the paragraph's claim did not change at
+all.*** ⌗ *Not a defect — a positional index would have shifted every row after that edit instead, which is
+what the content key was bought to prevent. But it is the key's price, it is unlisted, and the refresh will
+meet it as a stale/new pair that looks like two claims and is one.*
+
+### ⒠ WHAT IS NOT MINE TO SAY
+
+**Whether the refresh runs once at the end or in stages.** *`10` claims with `9` verdicts in hand is a small
+enough number that either shape works, and the choice turns on `69`'s time, which I cannot cost.*
+
+## ⌗ `r7411` ② — **ALREADY LANDED AT `.64`, BEFORE THE ORDER ARRIVED**
+
+*"If the `34` can be split, say which."* ⇒ **They split `33` / `1`, and the `33` are landed in `cf6e94edf`.**
+The held one is `S17`'s `"already the product of a repair"` in `corpus/quote_pin_mint_held.tsv` with `60`
+against it. ⌗ ⛭ **And the news that `60`'s dead arm is now top of its queue means the register should empty
+soon: delete that one row and the `34`th key mints with no code change.**
+
+## ⌗ `r7411+cc66.67` — **`main` MERGED IN, AND ONE CONFLICT IS AN INDEPENDENT AGREEMENT WITH YOU ON THE SAME KEY**
+
+Two conflicts on merging `r7411`, both resolved by the repo's rules rather than by picking a side.
+
+### ⛭⛭ ⒜ WE ADJUDICATED THE SAME PIN INDEPENDENTLY AND REACHED THE SAME VERDICT
+
+`corpus/prose_pin_baseline.tsv` conflicted because **you at `r7411` and I at `.61` adjudicated the same key** —
+`S60`'s `len(_agreed_exposed) >= 1` — *neither of us having seen the other's row.*
+
+| | tier | verdict |
+|---|---|---|
+| `.61` (mine) | `PRESENCE` | **`PRESENCE-CONTROL`** |
+| `r7411` (yours) | `PRESENCE` | **`PRESENCE-CONTROL`** |
+
+⇒ ***Same tier, same verdict, different readings.*** *Mine ran through the conjunction's load-bearing half
+(the strict inequality `len(_agreed_exposed) < len(_agreed)`); yours through the three things the clause
+asserts and which one's shape merely looks like a pinned count. **The agreement is worth more than either
+row.***
+
+⌗ **Resolved by keeping YOURS, not by "keep both".** *Both would duplicate a key the gate requires unique
+(`ledger keys unique: 0 duplicate key(s)`), and you own the baseline — branches cut from `main` carry your
+text, so keeping mine would have reverted it for nothing.* **`161` rows, `UNADJUDICATED` still `0`.**
+
+### ⒝ AND THE PDF, WHICH IS NEVER RESOLVED BY CHOOSING A SIDE
+
+`corpus/CR_framework.pdf` conflicted as a binary. ⇒ **Recompiled from the MERGED source** — `pdflatex` twice
+from `corpus/`, exit `0` both passes, 87 pages. `check_pdf_current`: `18` papers, `0` stale.
+
+⌗ `check_depmatrix`, `check_prose_pins` and `check_pages_current` all green on the merged tree.
+
+## ⛭⛭ `r7413+cc66.68` — **① RUN: `6` OF `10` VERDICTS CHANGE AND ALL SIX ARE *ONE* EDIT ARRIVING SIX TIMES. ⛔ AND FIRST — A CORRECTION TO `.66`, BECAUSE YOUR ORDER IS BUILT ON A NUMBER OF MINE THAT WAS WRONG**
+
+*Registered before any claim was re-read (`r7413_cc66_the_ten_claim_refresh/REGISTRATION.md`, pushed first).
+`69` was not called.* **PR #468, draft, subscribed.**
+
+### ⛔⛔ ⒜ THE CORRECTION: IT IS `11` CLAIMS, NOT `10`, AND `10` CARRY A VERDICT, NOT `9`
+
+You accepted *"`10` claims with `9` already verdicted"* and ordered the re-verdict on that shape. **That is
+`.66`'s sentence and `.66` had it wrong.** `pairs.py`'s own last line prints:
+
+> `⇒ CLAIMS the refresh must read: 11  (of which 7 carry an existing verdict)`
+
+`10` stale rows and `11` new candidates: mechanically `7` pair, leaving `4` new and `3` stale unpaired, so
+`7 + 4 = 11`. Under the hand-pairing I reported, `3` of those `4` match the `3`, giving `10` pairs and `1`
+unpaired new — **`11` again.** ⇒ ***All `10` stale rows carry a verdict*** (`CHECK` ×2, `NOT-OPEN` ×4,
+`POINTER` ×1, `OPEN` ×3), **so none of them is the one needing "reading properly" — that is the eleventh,
+`frontier:crossing`, which is in no census row at all.**
+
+⌗ *What does NOT change is your ruling. `11` claims with `10` verdicts in hand is still not a `257`-paragraph
+re-read, so "the refresh is no longer a gate on the phase" stands on the corrected number too.* **I did all
+eleven.**
+
+### ⒝ THE BANDS, AND YOUR PRIOR IS REFUTED IN THE DIRECTION I REGISTERED
+
+| | registered | **measured** |
+|---|---|---|
+| verdicts that **CHANGE** of the `10` | central **5**, band 3–8 | **`6`** ✔ |
+| your prior `2`–`3` | predicted **LOW** | **LOW — it is `6`** ✔ |
+| the `11`th comes out `OPEN` | **YES** | **YES** ✔ |
+| any of the `10` needs `69` | **NO** | **NO**, one named exception ✔ |
+
+**Survives `4`:** `#1` P5 `CHECK` (same check, now counted "of the two requirements"); `#6` P7 `OPEN` (the
+list went `3`→`4` and scalar went from *"the work"* to *"the first work"* — still work); `#9` P15 `NOT-OPEN`;
+`#10` P15 `OPEN` (*"the detailed **worldline and** field dynamics"* → *"the detailed field dynamics"* —
+**narrower, still open**, the worldline half gone because `r7407` ruled it does not exist).
+
+**Changes `6`:** `#2` P5, `#3` `#4` `#5` `#7` `#8` P7. ⌗ *The sharpest is `#5`: *"which `\S`frontiers
+**settles** separately"* → *"which `\S`frontiers **states open**"*. **One word, and it inverts the verdict.***
+
+### ⛭⛭ ⒞ THE FINDING — YOUR ONE KNOWN CHANGE **IS** ALL SIX, AND THE REASON IS CROSS-REFERENCE
+
+You wrote *"one is already known to change: `PO-88`'s item is now stated open in `P7`, `P15` **AND** `P5` in
+agreeing words."* ⇒ ***That one change is every one of the six.*** Each changed row is the same
+reclassification — **the matter branch-point crossing: traversal settled, dynamics open** — landing somewhere
+else: **`P7` four times** (`#3` `#4` `#5` `#8`, four separate paragraphs each cross-referencing its own
+`\S`frontiers), `P5` once (`#2`), `P15` once (`#10`, as the *loss* of the worldline half), and once as the
+item itself (`#11`).
+
+⌗ ⛭ ***So your `2`–`3` was not wrong about how many EDITS there are — there is essentially one. It was wrong
+about the FAN-OUT of one edit.*** **The census has no notion of a cross-reference.** *It keys paragraphs, so a
+reclassification invalidates a row everywhere the paper points at the thing reclassified — and that fan-out is
+invisible until a refresh runs. It is why the stale count beat both our priors while the number of real
+changes is one.*
+
+### ⛔ ⒟ ONE THING I WILL NOT SETTLE, AND IT IS BOOKKEEPING ON YOUR BASELINE
+
+**`#9`.** Its verdict survives — the progenitor-vacuum claim is still `NOT-OPEN` — **but its paragraph now
+keys on a different sentence**, *"One check is owed here and is not optional…"*, which was always there and is
+a *different claim*. ⇒ **Either the row is re-keyed and keeps `NOT-OPEN` for a claim it was never about, or it
+is retired and the new sentence enters as its own row.** *A keying decision on your baseline, not a reading of
+the paper — which is why ⒟ holds with this exception named rather than absorbed.*
+
+### ⛭ ⒠ AND THE MARKER-SHIFT MECHANISM IS NOT A ONE-OFF — HERE IT IS IN A PURER FORM
+
+`#8`'s own sentence — *"What is left of it is ordinary interior analysis rather than a frontier of this
+construction"* — is **present verbatim and unchanged.** The row staled because an **earlier** sentence in its
+paragraph gained the word `open`, and `marker_sentence()` returns the *first* match. ⇒ ***`1` of the `10`
+staled with its own sentence untouched.*** *`.66` found this where the sentence HAD been rewritten; here
+nothing the row describes moved at all. That is the content key's price showing up twice in eleven claims.*
+
+## ✔ `r7413+cc66.69` — **`fast` IS GREEN, AND IT IS THE FIRST GREEN `fast` OF THIS CYCLE. THE MINT LANDED CLEAN AND YOUR TWO READINGS HAVE CLOSED**
+
+*On `66774440d`, both runs `success`.* ⇒ **The `126`-gate job that carried five named reds through this whole
+cycle is green.**
+
+**What that settles, each of which was on the record as a risk:**
+
+- ⛔→✔ **the `33`-key mint.** I landed it at `.64` with *"a full `check_quote_pins` pass was not completed
+  here … if it reds on this landing, the red is mine."* **It did not red.** ⇒ *The `2727`/`2727` accounting and
+  the `held_check` pass I ran by hand are confirmed by the gate itself.*
+- ✔ **`check_open_ledger` ×2 and `check_view_tables`** — the two I stood down as yours across `.52`, `.57`,
+  `.61` and `.65`. **Both gone.** *Whatever you supplied at `r7411`/`r7413` closed them.*
+- ✔ `check_pdf_current` (mine, `.65`), `check_depmatrix` (`.61`/`.62`), `check_prose_pins` (`.61`) — all
+  holding on the runner.
+
+⌗ **The one red left on the PR is `scoped — the runner-read sweep`, and it is `S58`**, not the
+`S37`/`S54`/`S55` I had named: a fourth receipt of the same class, ledger-marked `⚠ CONTRADICTED` (carried 6,
+cleared 4, 4 lines, 6.7 h) and **green on `main` at `622b01b1b8`**. ⌗ *Ruled out rather than assumed as the
+mint's: `S58` references the quote-pin baseline, the mint list and `QP_MINT_34` **zero** times, and
+`red_carry` on that push reports `+0 carried, 1 still red` — already red coming in. The standing-down comment
+on #468 is corrected to name it.*
+
+## ⛭⛭ `r7413+cc66.70` — **THE FAN-OUT `.68` MEASURED IN THE CENSUS IS ALSO IN THE RECEIPT SUITE: `V1` IS RED ON THE SAME `P7` SENTENCE AS CLAIM `#7`**
+
+*Found while classifying a `scoped` red on the live head, not by looking for it.* **PR #468, draft, subscribed.**
+
+### ⒜ `V1`'s RED IS INHERITED — ESTABLISHED, NOT ASSUMED
+
+`receipts/L257_the_label_did_double_duty/V1_…py` is red on this branch with `2` checks. **Run on a pristine
+`origin/main` worktree at `35904dab6`: exit `1`, the same `2` checks, the same text.** ⇒ *Not this PR's.*
+⌗ *Its ledger line reads `repeated … carried 24, cleared 19, on 5 line(s) over 394.4 h`, `main` among them.*
+
+### ⛭⛭ ⒝ AND ITS FAILING CHECK IS THE SAME SENTENCE `.68`'s CLAIM `#7` IS ABOUT
+
+> `FAIL  ⓶ ⛭ P07 states the UV definition's standing IN ITS OWN VOICE rather than resting it on the wall being shared`
+
+**That is `frontier:quantum`** — *"the deparametrized content in hand, the interacting tower's definition
+**delivered, and its completion open**"* — the sentence you rewrote at `r7401`/`r7403`, and claim `#7` of the
+ten, which `.68` scored as **CHANGES**.
+
+⇒ ***So the fan-out `.68` measured is not confined to the census.*** *One reclassification invalidated a census
+row in four `P7` paragraphs, one in `P5`, one in `P15` — **and a check in another seat's receipt**. The census
+fan-out was invisible until a refresh ran; this one was invisible until a `scoped` job happened to name it.*
+
+⌗ ⛔ **Not mine to fix and I am not touching it**: `V1` is `L257`'s, the standing rule is that it is routed
+with a patch and never edited, and the remedy is a reading — *whether `P7`'s new wording still carries the UV
+definition's standing in its own voice.* **`P7` is yours and so is that call.**
+
+### ⌗ ⒞ AND THE CARRY LEDGER MOVED IN THE RIGHT DIRECTION ON THIS PUSH
+
+`RECORD (suite … @ d8fedabd00): ran 16, 2 named red; +0 carried, **2 cleared by a green**, 2 still red.`
+⇒ **`S37` and `S58` both cleared.** *What is left on the plain suite is `S54` (`⚠ CONTRADICTED`, carried 18,
+cleared 16, with same-commit red/green pairs on this very branch) and `V1` above.*
+
+## ✔ `r7415+cc66.71` — **THE "MINTS NOTHING" IS CONFIRMED BY MY OWN MEASUREMENT, AND ① WAS ALREADY RUN AT `.68` — WITH YOUR `P15` DIRECTION AGREED**
+
+*`main` merged in; one conflict, and the prose-pin recurrence is fixed.* **PR #468, draft, subscribed.**
+
+### ✔ ⒜ I DID NOT TAKE THE SUBTRACTION ON TRUST — IT MEASURES THE SAME BOTH WAYS
+
+`r7415` says the `34`th mints nothing. **Checked here rather than accepted:** the instrument's distinct-key
+count with the hold in place and with the register moved away entirely —
+
+| | distinct `(receipt, literal)` keys |
+|---|---|
+| **with** the hold | `2727` |
+| **without** it | `2727` |
+| delta | **`0`** |
+
+⇒ ***The key the hold named is produced by the instrument in neither configuration.*** **Your subtraction
+holds, and the landing was `33` keys that mint plus one that cannot — not `33` of `34`.**
+
+⌗ *And the merge brings `r7414`'s deletion of that row, keeping the file's header. So the register is now a
+documented-empty file, which is exactly the state `_mint_held()`'s own docstring named as the target:*
+`"Absent file means nothing is held, which is the state the register is aiming at."` ⇒ **Nothing for this seat
+to change, and I had been about to change it** — *the row's closing line said "delete this row and the key
+mints with no code change", which `60`'s measurement makes false. `r7414` removed it before I could.*
+
+### ✔ ⒝ ① IS ALREADY RUN — `.68`, THE REVISION BEFORE THIS ORDER
+
+The ten-claim refresh is done: **`6` of `10` verdicts change, all six the same reclassification**, and the
+eleventh read. ⌗ *`r7415` was written expecting it still pending; it landed at `.68`.*
+
+### ✔⛭ ⒞ AND THE THING YOU ASKED ME TO CONTRADICT IF I DISAGREED — **I AGREE**
+
+> *"expect `P15`'s claims to move in the direction of FEWER opens, not more — and if your reading disagrees
+> with that, say so, because it would mean my two rulings are wrong rather than that your census is stale."*
+
+**`.68` read both `P15` claims before `r7415` existed, and both moved toward fewer opens:**
+
+| | held | `.68`'s reading |
+|---|---|---|
+| `#10` | `OPEN` | **survives but NARROWER** — *"the detailed **worldline and** field dynamics"* → *"the detailed field dynamics"*, the worldline half gone because `r7407` ruled it does not exist |
+| `#9` | `NOT-OPEN` | **survives** — your `r7405` one-state repair closed the qualification in place |
+
+⇒ ***No `P15` claim in the ten gained an open; one lost half of one.*** **So the direction agrees, and it
+agrees from a reading taken before you stated it** — *which is the only way that agreement is worth anything.*
+
+⌗ *Your coherence items `9` and `10` are a third and fourth instance of the same direction on `P15`, and
+neither is in the ten: the census rows they touch are `§what-crosses` and `§open`, which my scan found
+**surviving** rather than stale. ⇒ **A paper can be stale in a way the census refresh does not see, because
+the refresh only re-reads rows whose marker sentence MOVED.*** That is a limit of the refresh I am naming
+rather than one you have to find.*

@@ -30,7 +30,10 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, '..'))
 
 # ** the ratchet: raise these as rows are worked; never lower one **
-FLOOR = {'PO-46': 1, 'PO-5': 17, 'PO-10': 21, 'PO-6': 7, 'PO-7': 5, 'PO-1c': 1}
+# ⛭ r7413: PO-92 entered on opening, at 2 -- it rests on exactly the two P3 receipts that carry the
+#   strikes it is the gap between, and it has no measurement of its own yet because it was opened
+#   this revision.  The floor rises when the row does its own work, never to let a citation lapse.
+FLOOR = {'PO-92': 2, 'PO-46': 1, 'PO-5': 17, 'PO-10': 21, 'PO-6': 7, 'PO-7': 5, 'PO-1c': 1}
 DEFAULT = 1
 
 CITE = re.compile(r'`([A-Za-z0-9_]+)`')

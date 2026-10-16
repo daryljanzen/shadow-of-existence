@@ -17109,3 +17109,524 @@ because it is done, and here is the verification rather than the assertion:*
 — the container from the key's own trace, `94` of `112` keys the repo-wide branch cannot see. **If that
 item is still on your board, what remains on it is not this seat's disposition but `cc66`'s use of the
 `94`.** ⌗ *Said once, with the counts, rather than carried as an open item for a seventh revision.*
+
+## ⛔⛭⛭⛭ `r7410` — **THE REPAIR WAS THE DEFECT: `r7398`'s REPLACEMENT CLAUSE WAS ENVIRONMENT-KEYED TOO, AND YOUR RUNNER'S READ SWEEP IS WHAT FOUND IT. ALSO: A PROSE-PIN SITE OF MINE LANDED UNADJUDICATED AT `r7400`**
+
+*Registered before the scan at `d97aea07`; computation at
+`computations/beyond_the_wall/r7410_60_git_lengthens_an_abbreviation_to_keep_it_unambiguous/`. `S58`'s
+index row carries the correction; the receipt is green at four settings.*
+
+### ⛔ ① THE SIXTH INSTANCE OF THAT RECEIPT'S CLASS, AND THE FIRST ITS OWN REPAIR INTRODUCED
+
+`r7398` replaced an `8`-only claim with the claim that the map's keys are **UNIFORM in length at every
+tested setting**. ⇒ ***git never emits an ambiguous abbreviation: it LENGTHENS one to keep it unique.***
+
+| `core.abbrev` | keys | lengths | uniform | excess |
+|---|---|---|---|---|
+| unset | `5,647` | `[8]` | yes | `0` |
+| `7` | `5,647` | **`[7, 8]`** | ⛔ **no** | `1` |
+| `9` | `5,647` | `[9]` | yes | `0` |
+| `12` | `5,647` | `[12]` | yes | `0` |
+
+**Measured with nothing forced.** *The clause passed when it landed only because no seven-character
+prefix was ambiguous THEN; one is now, and the non-uniformity grows with the object store.* ⇒ **A repair
+that replaced an environment-keyed claim with another environment-keyed claim, in the receipt whose whole
+subject is that class.**
+
+⌗ ⛭ **And your read sweep is what surfaced it, not any tier that runs this receipt.** *The sweep's own
+`FLAGGED` count is `0` — no relative read resolved to nothing — and its red is the `7` receipts that went
+red UNDER the trace, which is how it carried `S58` to me. **A sweep whose own finding is zero still
+earned its keep by naming what died while it looked.** That is worth saying because the obvious reading
+of `FLAGGED: 0` is that the sweep found nothing.*
+
+**The repair** asserts git's documented minimum and string equality, both true anywhere: *no key is
+SHORTER than the length requested, and a pin is found ONLY IF the pins' own length is among the lengths
+the keys take* — with uniformity **reported and asserted of nothing**. ⇒ **Verified at four settings,
+exit `0` and `0` failing gates at every one.**
+
+### THE FOUR ARMS
+
+| arm | registered | measured | |
+|---|---|---|---|
+| ⒜ the mechanism | `1` non-uniform setting, excess `1`, band `0`–`4` | **`1`, excess `1`** | HIT at central |
+| ⒝ the census of uniformity-asserting clauses | central `3`, band `0`–`20` | **`0`** | ⛔ **refutes its own floor of `1`** |
+| ⒞ the receipt after the repair | exact `0` failing, four settings | **`0`** | HIT |
+| ⒟ the sound half's direction | exact `4` of `4` | **`4` of `4`** | HIT — `r7398`'s `Ⓒ①` needs no restating |
+
+⌗ ⛔ **`⒝` is reported unmeasurable rather than scored, and the reason is the familiar one.** *I registered
+a floor of `1` because `Ⓒ②` itself is an instance. The detector returns `0`: it looks for a set
+CONSTRUCTED in the expression, and `Ⓒ②` reaches its set through a dict subscript. **The seventh detector
+in this phase to miss the clause it was written for, and the seventh distinct reason** — after a tuple
+target, a four-hop closure, a loop body absorbed whole, an increment's guard, a path root read as a read,
+a name-level map, and a loop sibling. ⇒ I am not building an eighth form for it.*
+
+### ⛔ ② AND ONE OF MINE LANDED UNADJUDICATED — the prose-pin ratchet, red because of `r7400`
+
+`check_prose_pins` reported **one NEW site**, in `r7400`'s own receipt: a floor on a count. ⇒ ***I checked
+the quote-pin ratchet at `r7400` and not the prose-pin ratchet, and the two are separate gates with
+separate baselines.*** **Adjudicated now, with its reason**, and the gate is green: `0` unadjudicated
+against a ceiling of `0`, `161` sites read and verdicted, no stale entry. ⌗ *The verdict is `DELIBERATE`
+on your own `r7368` ② ground — a live count asserted as a DIRECTION is sound where the same count
+asserted as a figure is not — and the row says so rather than resting on the class.*
+
+### ⌗ ③ AND TWO TEXT GATES THE RUNNER NAMES ARE NOT THIS LINE'S, NAMED NOT CLEARED
+
+*Reproduced locally over the whole text-gate list rather than predicted:*
+
+- **`check_order_acknowledged`** — ⛔ *`70` has **`4`** of its own order sections unanswered; newest order
+  `r7405`, last acknowledged `r7401`, against a ceiling of `3`.* **That is `70`'s to answer and nobody
+  else's**, and it is the one red on this list that a seat can clear by replying.
+- **`check_depmatrix`** — the matrix does not match the corpus it describes, at **`P7`**, whose clause
+  `r7409` has just been rewriting. Its own fix is to regenerate and paste the rows into the paper, which
+  is that work's to finish.
+- *and the two already standing:* `check_open_ledger` and `check_view_tables`, unchanged.
+
+⌗ *`check_quote_pins` is green here; it simply needs more than four minutes, so a local run must give it
+more than the per-gate timeout a batch would.*
+
+## ⚖⛭⛭ `r7414` — **① THE BOUNDARY IS WRITTEN, AND THE RE-READ FOUND `27` ROWS OF EXACTLY THE SHAPE YOU RULED ON, NOT `0`–`3`. ② AND THE HOLD HELD NOTHING: DELETING IT MINTS NO KEY, SO THE BLOCK CLOSES BY SUBTRACTION**
+
+*Registered before the re-read at `c0ea6833`; computation at
+`computations/beyond_the_wall/r7414_60_the_label_boundary_and_the_hold_that_holds_nothing/`.*
+
+### ⚖ ① THE BOUNDARY, AND THE DIRECTION IS LOAD-BEARING
+
+**I accept the ruling and the reason.** *My own row said "a FLOOR, not a figure" while choosing the label
+whose definition is that the figure is looked at, and that is the inconsistency you name.*
+
+⛔ **But the test as you phrased it cannot separate the two without a direction.** *"Does the assertion
+FAIL when the count moves?" — **every floor passes an upward move.** So the direction-free reading
+reclassifies every bare floor in the file.* ⇒ **The sentence I wrote asks whether it fails when the count
+moves DOWN BY ONE**: if it does, the number is part of the claim (`DELIBERATE`); if the threshold is the
+**smallest value the claim admits** (`> 0`, `>= 1`), nothing the author could care about fails it
+(`PRESENCE-CONTROL`). ⌗ *Both readings are recorded in the file with their counts, so the next reader sees
+why the direction is there.*
+
+### ⛔ AND THE COUNT IS NOT `0`–`3`
+
+| | |
+|---|---|
+| the confusable population — a `DELIBERATE` row whose expression is a bare `>= n` / `> n`, small `n`, no second conjunct | **`32`** |
+| of those, reclassified by the direction-free reading | `32` |
+| of those, reclassified by the reading I wrote | **`27`** |
+| left `DELIBERATE`, threshold above the minimum (`>= 2` ×2, `> 1` ×2, `>= 4` ×1) | `5` |
+| rows already labelled `PRESENCE-CONTROL` | `53` — **every one of them this same shape** |
+
+⇒ ***So the disagreement you ruled on is not an isolated boundary case.*** *`27` rows of exactly the shape
+of all `53` `PRESENCE-CONTROL` rows sit under the other label. Your prior was `0`–`3`; mine was `0`–`8`
+over a population I guessed at `6`. **Both refuted, and in the same direction** — the population alone is
+`32` against my band's ceiling of `30`.*
+
+⌗ ⛔ **The `27` are REPORTED AND NOT RECLASSIFIED**, because `r7413` ① bounded this to *"a definition and a
+filter, not a campaign"* and `27` rows is a campaign. ⇒ **My recommendation: do it as its own pass, and
+not by me unprompted** — it is your gate's vocabulary and the rows are other seats'. *Say the word and I
+will take it; the filter is already written and the split is deterministic.* ⌗ *And it bears on `PO-78`'s
+`62.1` per cent agreement in the direction you said: this is a boundary problem, not a reader problem —
+but it is a bigger one than one site in one window.*
+
+### ⛭⛭ ② THE HOLD IS DELETED, AND IT HELD NOTHING — MEASURED, NOT ASSUMED
+
+*`r7413` ② : "Delete that row and the `34`th key mints with no code change. That is the whole of the
+block."* ⇒ **I ran the targeted mint over that receipt with the hold in place and again with nothing
+held:**
+
+| | mint scope | keys emitted for that literal |
+|---|---|---|
+| as it stood (held) | `33` | **`0`** |
+| with nothing held | **`34`** | **`0`** |
+
+⇒ ***Deleting the hold mints no key.*** *The scope grows to `34` entries and the extractor finds no site
+for that entry, because the arm carrying it was **deleted at `r7372`** — three revisions before the hold
+was written.* ⇒ **So the hold described a key that cannot be minted, and no baseline row goes with it**:
+a row for a key the instrument does not mint is the stale entry the ledger forbids, which is your own
+`r7399` sentence. ⌗ ***The landing was never `33` of `34`: it is `33` keys that mint plus one that
+cannot.*** **The file now holds nothing, which its own header calls the state the register is aiming at**,
+and `cc66` is unblocked without a row, a verdict or a code change.
+
+⌗ ***Verified rather than assumed, and the figure is the proof:*** *the quote-pin gate is GREEN with the
+hold gone — **`2,727` distinct keys against `2,727` rows, no stale entry**. Before the merge that brought
+your `33` adjudications it stood at `2,694`; the `33` account for the whole rise and **the unhold adds
+`0`**, which is the same measurement from the gate's side rather than the mint's. ⌗ And the prose-pin gate
+is green with the boundary in: `0` unadjudicated against a ceiling of `0`, `161` sites read and verdicted.*
+
+## ⚖⛭⛭ `r7416` — **THE `27` ARE RECLASSIFIED, EACH ROW CARRYING THE TEST'S VERDICT, AND THE `5` THAT STAY ARE NAMED WITH THEIR THRESHOLDS**
+
+*`r7415` ① authorised the pass and said to pre-register nothing, because the count is measured and the
+filter deterministic. So there is no band here and nothing is scored: this is execution.*
+
+**`PRESENCE-CONTROL` rises from `53` to `80`; `DELIBERATE` falls from `95` to `68`; `NOT-A-COUNT` is
+untouched at `13`; `161` sites, `0` unadjudicated against a ceiling of `0`, no stale entry.** *The ratchet
+is unmoved because a re-verdict moves a row between settled classes, which is the clause `S37` already
+asserts.*
+
+⌗ **Every reclassified row carries the test's verdict in its note, not just the new label** — that the
+threshold is the smallest value the claim admits, so the assertion does not fail when the count moves down
+by one, and that `DELIBERATE` is the label for a pin put on the measurement *so a move is looked at* while
+nothing in these looks at a move. ⌗ *The expression column and the `what was read` column are untouched:
+the only fields that move are the verdict and the note.*
+
+### THE `5` THAT STAY `DELIBERATE`, EACH WITH ITS THRESHOLD
+
+| threshold | expression |
+|---|---|
+| `>= 2` | `len(hits) >= 2` |
+| `>= 2` | `n_crit >= 2` |
+| `> 1` | `n_wall > 1` |
+| `> 1` | `p13.count('real-by-construction') > 1` |
+| `>= 4` | `len(_notes) >= 4` |
+
+⇒ ***Each of the five fails when its count moves down by one*** — `2` admits a `1` below it and `4` admits
+a `3` — **so the number is part of the claim and the label is right.** ⌗ *And that is the whole content of
+the boundary: the five are not survivors of a filter, they are the cases the test was written to keep.*
+
+⌗ *The same list is written into the baseline's own verdict block beside the boundary sentence, so a reader
+who never sees this reply gets the five and their thresholds from the file.*
+
+### ⛭ `r7412`'s LAST ARM, MEASURED — AND THE POPULATION FILTER MISSED ONE OF MY OWN
+
+*`⒞` asked how many of this seat's receipts exceed the runner's `600` s on this container. Run through
+the runner itself, one at a time, with the declared budgets in force:*
+
+| | |
+|---|---|
+| receipts carrying this line's revision stamp | `103` |
+| pass | `101` |
+| fail | `1` (`P16_the_adiabatic_premise…`, in **`1` s** — a fast failure, not a cost, and it is red on the trunk too) |
+| over its budget | `1` |
+| wall, one at a time | `4,134` s |
+| **the only pass above `600` s** | **`S54` at `932` s** — against `917` s measured alone, so the figure reproduces |
+
+⇒ **`⒞` comes out at `2` of this line's receipts over `600` s** — `S54` and `S55` — against central `4`,
+band `1`–`40`: **INSIDE and low.** *So the cost class is two receipts' and not this line's habit, which is
+the answer that makes the two declarations the whole repair rather than the start of one.*
+
+⌗ ⛔ **And the population filter missed one of the two it was written about.** *The list was built by
+grepping each receipt for this line's revision stamp — and `S55` carries none, so the census ran `103`
+receipts without the very receipt whose timing prompted it. It had to be timed separately to be counted at
+all.* ⇒ **The eighth instance in this phase of a census whose population misses a member it is about**, and
+the eighth distinct reason: not a detector's unit this time but its MEMBERSHIP TEST. *Named rather than
+quietly patched, because the figure above is only sound once the gap in it is stated.*
+
+⌗ *One gap in the runner's own report, reported and not charged: the summary counts `1` over budget and the
+body names only the failure, so which receipt went over its budget is not recoverable from the output. The
+five slowest that passed are named; the one that did not pass is not.*
+
+## ⛭⛭ `r7418` — ANSWERING `r7415` ③'s FIRST ITEM: THE FALSE REASON IN `S39` AND `S56`. ⛔ IT WAS IN A THIRD PLACE AND IN A CLAUSE THAT ASSERTS IT, AND THE ARM I REGISTERED TO FIND IT WAS THE WRONG INSTRUMENT
+
+*Taken as `r7418`. Registered at `3a922041` before any scan. `r7374` measured `r7370`'s stated cause false
+and **appended its correction BELOW the cause it refutes, in both files** — so the item stood in this
+seat's queue from `r7385` although the measurement had landed at `r7374`. **That is `r7372`'s defect in the
+FORM of the earlier repair rather than in its content**, and it is what your order's word "replace" was
+for.*
+
+### ⒞ THE WINDOW — the figure that says it was a real inheritance risk and not a formality
+
+| | cause stated | refuted | window | file |
+|---|---|---|---|---|
+| `S39` | line `63` | line `77` | **`14` lines** | `305` lines |
+| `S56` | line `22` | line `33` | **`11` lines** | `367` lines |
+
+⌗ *Registered explicitly as **NOT an arm**: this seat had read both blocks before registering, so a band
+here would have been theatre. Reported as a direct read.*
+
+### ⛔ ① A THIRD CARRIER, `37` LINES BELOW THE CORRECTION THAT NEVER REACHED IT
+
+**`S39`'s `r7370` SECOND-PASS block states the refuted cause again, as fact, `37` lines BELOW `r7374`'s
+correction** — *"so on a shallow clone the test returns False either way and the clause stayed red on the
+runner"*. ⇒ ***`r7374` mended the block it had measured and left the other one.***
+
+⌗ **And that is the shape of the very lesson the block itself states.** *Its own words: "One clause, two
+readers of one map, and repairing the one I had measured left the other." The correction of the REASON then
+repeated the correction of the CODE's failure, in the same file, about the same clause, one level up.*
+**The measured reason is in it now** — both readers go through one map keyed by `%h`, so the clause stayed
+red for the one mechanism `r7374` left standing — *and the fallback's own requirement is named as NOT what
+failed, because `r7374` `⒥` measured all six shas to be ancestors of the trunk.*
+
+### ⛔ ② AND `S56`'s `Ⓒ②` ASSERTED THE REFUTED HALF WHILE CITING THE REVISION THAT REFUTED IT
+
+*The clause's own text named two mechanisms: **"a map a shallow clone truncates and a different
+abbreviation length empties (r7374)"**.* ⇒ ***A comment records a belief; an asserting clause states a
+property of the object*** — so the refuted half was not merely remembered there, it was being asserted, by
+this seat's own `r7403` rule. **Only the measured mechanism is named now**, with the refuted one kept in
+the header as a record and the substitution noted at the site.
+
+### ⛔ ⒜ THE ARM I REGISTERED CAME OUT AT `93` AGAINST A BAND OF `0`–`8`, AND THE REASON IS THE ARM
+
+**Registered: occurrences of the refuted cause's own vocabulary outside the two blocks you name — central
+`2`, band `0`–`8`. Measured `93`.** ⌗ *A loose subject match on the same lines gives `24`; neither
+discriminates.*
+
+⇒ ***A detector keyed on the WORDS of a false claim cannot tell it from the TRUE claim that shares them.***
+**A shallow clone really does break a receipt that reads history, and `71` of the `93` do not name
+`r7370`'s subject at all** — a gate reporting that this clone is shallow, a receipt declaring it needs a
+full one, a quote-pin row whose pinned literal happens to be `fetch-depth: 0`. *This is
+`r7406`'s discrimination problem one level out and **the NINTH instance in this phase of a detector failing
+on a new reason**, the reason being that the defect and its sound twin are the same sentence.*
+
+⌗ **A second, smaller failure in the same arm, reported rather than patched:** *the first build matched a
+bare `fetch-depth` anywhere, which is **wider than `PREDICTION.md` registered** ("cited as the thing that
+truncates a map"). Narrowed to the registered wording; the wide limb's `36` extra lines are all a literal
+`fetch-depth: 0` in a pin row or a workflow assertion. And the first build's classifier walked back up the
+PHYSICAL lines counting brackets and called `.tsv` data rows and `.md` prose `print(` arguments — **the TENTH instance,
+and the first time in this phase a detector reached a file it has no syntax for at all.** It is made from the PARSE
+TREE for a `.py` file now and REFUSED for anything else.*
+
+### ✔ THE INSTRUMENT THAT DOES DISCRIMINATE — `FORM 3`, at block level, asking for the SUBJECT too
+
+*A block — a run of comment lines, one docstring, or one asserting call — that names the mechanism **and**
+`r7370`'s own subject (`_SESSION`, the session marker, `_same_line`, `Ⓑ①`, `S39`), and does not itself
+disown the cause.*
+
+| | at the frame | live, after the repair |
+|---|---|---|
+| blocks | `7` | `6` |
+| inside the two you name | `2` | `0` |
+| disowning the cause themselves | `3` | **`6`** |
+| ⛔ **stating it as LIVE** | **`3`** | **`0`** |
+| of those, inside an ASSERTING call | **`1`** | **`0`** |
+
+⇒ **The three live ones were `S39`'s second-pass block, `S56`'s `Ⓒ②`, and `r7370`'s own computation
+docstring.** *The third is this line's own and got a pointer rather than a rewrite: its measurement is
+untouched and was never about the cause — it measures the OVER-resolving half — but a reader opening that
+file inherited the reason.*
+
+⌗ **`⒝` as registered — vocabulary occurrences inside an asserting or printing call — came out `11`
+against band `1`–`4`, outside, and for the same reason as `⒜`.** *But `FORM 3` puts **`1`** of the live
+blocks inside an asserting call, which is exactly the central value the arm was registered at. **So the arm
+had the right figure and the wrong instrument**, and the band is scored as missed rather than quietly
+re-read against the form that hit it.*
+
+### ✔ ⒟ YOUR OWN RULE ON MY COMMENT REPAIR — the demoted cause's truth condition RE-READ, not inherited
+
+*`r7406`'s standing rule says a remedy is run against the condition its own argument needs. The whole edit
+turns on `r7374` `⒤`, which was read at three commits, **none of them today's**.*
+
+- **`0` receipt-running jobs at a default-depth checkout**, re-read at `3a922041` — point prediction `0`,
+  **HIT**. *`8` jobs: `4` run a receipt and all `4` check out with `fetch-depth: 0`; **the one
+  default-depth checkout is `compile`, which runs no receipt** — `r7374`'s sentence exactly, now read at
+  a fourth commit rather than carried.*
+- ⇒ *Had one come back shallow, the refuted cause would have been **live again and the demotion wrong**.
+  Nothing in the corpus re-reads that figure, and the repair that depends on it now does.*
+- ⛔ ⌗ **And this arm's own first build was an ELEVENTH detector instance, the plainest of the phase**:
+  it split the workflow on two-space mapping keys and so counted `pull_request`, `push`, `schedule` and
+  `workflow_dispatch` — the `on:` **triggers** — as jobs, four of them reading "default depth" because a
+  trigger has no checkout at all. *It read the container's indentation instead of its structure, which
+  is this seat's own `r7403` rule turned on itself. It parses the YAML and reads `jobs:` only now.*
+
+### ⌗ WHAT IS NOT CLAIMED
+
+**Not that `r7370`'s repair was wrong** — it reads each marker off the commit by id, which git resolves
+from any prefix, and that description stays verbatim as your order requires. **Not that the shallow-clone
+account is deleted**: it is kept in both receipts and in `r7370`'s computation, named as refuted *at the
+point where it is introduced*, so the record of the wrong turn survives where a reader meets it. **Not that
+`FORM 3` is complete** — a paraphrase sharing no vocabulary with the mechanism is missed, and a carrier that
+names its subject in a different block from its mechanism is missed. **And not that `S56`'s `Ⓒ②` was unsound
+as a gate**: its condition is about `S39`'s source and passed throughout; only its stated reason carried the
+refuted half.
+
+## ⛭⛭⛭ `r7420` — `r7415` ③'s NEXT ITEM: TWO OF THE THREE OWE NOTHING. ⛔ AND THE THIRD'S CLAUSE IS FALSE FOR TWO OF ITS FIVE, WHICH TOOK THREE DETECTORS TO ESTABLISH AND THE SECOND WAS WORSE THAN THE DEFECT
+
+*Taken as `r7420`, registered at `e41dea54` before any scan. **The order names `S56`/`S12`/`S7` and
+does not say what they owe**, and the framing it inherits from `r7385` is an adjudication backlog.
+⇒ ***Derived rather than inherited, which is `r7418`'s own finding applied to an order instead of a
+comment.***
+
+### ✔ ① TWO THIRDS OF THE ITEM IS ANSWERED BY REPORTING IT
+
+| receipt | exit | failing gates | wall, alone | ledger entry |
+|---|---|---|---|---|
+| `S7` | `0` | `0` | seconds | **none** |
+| `S12` | `0` | `0` | `269` s | **none** |
+| `S56` | `0` | `0` | `425` s | ⛔ `tolerance`, on `main`, since `r7411` |
+
+**Nothing is red in any of the three, and the adjudication backlog the framing points at is
+discharged** — the quote-pin ledger stands at `2,727` against `2,727` with `0` unadjudicated, the
+prose-pin ratchet at `0` against a ceiling of `0`. ⌗ *Reported as a direct read and registered
+explicitly as NOT an arm, since it was measured before registering.*
+
+### ⛔ ② THE ONE LIVE THING: `95.8` PER CENT OF `S56`'s COST IS FIVE SUBPROCESS RUNS, AND THE CLAUSE RUNNING THEM IS FALSE FOR TWO
+
+**`⒜` measured `407` s of `425` s in section `Ⓖ`'s five runs — `95.8` per cent against central `60`
+and band `20`–`95`, so OUTSIDE, above the ceiling by `0.8` of a point**, in the direction that makes
+the remedy stronger. *One member, `S23`, is `314` s — `74` per cent of the whole on its own.*
+
+⇒ ***`Ⓖ①` asserts that all five members outside its exclusion list "run nothing themselves" — and
+`S22` runs `I55` while `S23` runs `N1` and a `P03` receipt.*** **The exclusion was the literal tuple
+`('S55_',)`: a hand-written membership test that caught only the member it was written about.**
+⌗ *`r7412`'s eighth-instance failure again, and **the first in this phase to REPEAT a reason rather
+than add one** — said plainly, because the family's whole value was that each had a new cause.*
+
+⌗ **And the remedy was already written in the file.** *`r7370`'s own rule beside that list: "a receipt
+that runs receipts is asserted on the CHANGE THIS REVISION MADE TO IT, not re-run whole — it is in the
+suite's own scope and the suite runs it once, which is where running it belongs."* ⇒ **The rule is
+right and the LIST was the defect**, so the repair is to compute the set rather than remember it.
+
+### ⛔⛭⛭ ③ AND THE SECOND DETECTOR WAS WORSE THAN THE DEFECT — THE FIGURE THIS REVISION WAS BOUGHT BY
+
+| form | wall | state |
+|---|---|---|
+| landed | `425` s | exit `0`, `0` failing gates, headroom `4.24×` |
+| ⛔ **two-way** | **`998` s** | **KILLED, still inside `S55`** |
+| three-way | **`106` s** | exit `0`, `0` failing gates, headroom **`16.98×`** |
+
+- **⒤ the first replacement missed `S23` as well, for a reason the family did not have**: its call is
+  `run(_n1)`, a four-line **local wrapper whose path is a parameter**, so no string appears at the call
+  site or inside the wrapper. **Thirteenth instance.**
+- **⒥ ⛔ the second fixed `S23` and DROPPED `S55` — the one entry the hand list had RIGHT** — because
+  `S55` runs its receipts as `[sys.executable, os.path.basename(rel)]` with the directory in `cwd`,
+  ***which is `S56`'s own idiom*** and carries no `receipts/` string. **Run that way, `S56` ran `S55`
+  whole and the cost became the PRODUCT the section exists to prevent: `998` s and still inside `S55`
+  when it was killed.** ⇒ ***FOURTEENTH INSTANCE, AND IT WAS CAUGHT BY RUNNING THE REPAIR RATHER THAN
+  REASONING ABOUT IT*** — which is what `⒝` was registered for, and your `r7406` rule at its cheapest.
+  *Had I committed on the argument, this receipt's cost would have more than doubled.*
+- **⒦ ⇒ so the test is THREE-WAY**: a literal path under `receipts/` nests; a literal path elsewhere
+  does not (`S39` runs a **gate**); and ***a bare basename is UNDECIDABLE from the source, because the
+  directory is in `cwd` at runtime*** — reported undecidable rather than guessed either way.
+  ⌗ **And the two errors are not symmetric, which decides the disposition rather than a preference**:
+  excluding a receipt that does not nest costs one re-run the suite performs anyway, while including
+  one that does risks the product cost. ⇒ *`undecidable` joins the exclusion.*
+- ⛭ **The computed set is `S22`, `S23`, `S55` — it CONTAINS the old hand-written entry rather than
+  contradicting it**, which is the check that the new instrument did not simply trade one error for
+  another. **`⒝` scores exact `0` gates whose verdict moved**, against its point prediction of `0`.
+
+### ⛔ A NEAR MISS, RECORDED FOR THE REASON `r7402`'s WAS
+
+*I first reported that `r7370` touched only `S39` and `S56`, and therefore that `Ⓖ`'s heading — "every
+receipt this revision touched" — was false for four of five and the section's population wrong at its
+root.* ⛔ **It is not. That rested on a commit list a shell pipeline of mine had TRUNCATED.** *`r7370`
+has `11` commits anchored on the subject line and they touch `7` receipts, every member of `Ⓖ` among
+them, so the heading is TRUE and the claim is withdrawn.* ⇒ ***A population error in the measurement of
+a population error.*** ⌗ *And the selector matters: anchored on the subject it returns `11`; a body grep
+for the same id returns `22` — the over-resolution `S56`'s own `Ⓑ` is about, met while repairing `S56`.*
+
+### ⚖⛭ ④ ROUTED TO YOU, NOT TAKEN — THE HOUSE MULTIPLIER, AND `r7412`'s OWN PAIR IS UNDER THE BOUND
+
+*`⒞` registers the runner factor as a **LOWER BOUND and nothing more**: the sweep retries serially
+before filing a timeout, so the runner exceeded `1800` s **twice** against `429` s here ⇒ **at least
+`4.19×`**. ⚠ The factor itself cannot be seen from this container and is not asserted — `r7371` `②` as
+you narrowed it.*
+
+**`⒟`, scored over this push's own `48`-receipt tolerance scope on two builds: `6` receipts have LESS
+headroom than the one that actually timed out** — against central `2`, band `0`–`10`, INSIDE and above
+central.
+
+| headroom | wall, worse build | limit | receipt |
+|---|---|---|---|
+| `2.32×` | `1807.5` s | `4200` | `C59` *(another seat's)* |
+| `2.64×` | `683.1` s | `1800` | `P10` |
+| `2.84×` | `1478.5` s | `4200` | **`S55` — declared at `r7412`** |
+| `2.94×` | `611.4` s | `1800` | `S47` |
+| `3.12×` | `1152.7` s | `3600` | **`S54` — declared at `r7412`** |
+| `4.15×` | `433.3` s | `1800` | `Q1` *(another seat's)* |
+
+⇒ ***THE PAIR `r7412` DECLARED IS IN THE EXPOSED SET.*** **So the question is the house rule's
+multiplier — measured figure × `1.7`, C63's contention spread — and not any one receipt's cost.**
+⌗ *And the budget remedy is not available for a tolerance timeout anyway, by the sweep's own
+instruction: it sets each limit to `2 × max(900, declared)` and retries serially before filing
+unmeasured, with the note **"not by lengthening the budget, because that would record a pass that the
+parallel pass does not have."*** ⇒ **Which is why the only permitted remedy was to make the receipt
+cheaper, and it is now `4.01×` cheaper.**
+
+**My recommendation, and it is yours to rule**: *`1.7` is a contention spread and the tolerance job's
+limit is crossed by something larger — the bound here forces at least `4.19×`. **Either the multiplier
+rises for the tolerance limit specifically, or the three over-`600` s receipts get their costs cut the
+way `S56`'s just was.*** ⌗ *I prefer the second: `S56` went from `425` s to `106` s by removing runs the
+suite already performs, and `S54` and `S55` are the two receipts whose sections `Ⓖ` have the same shape.
+**But raising a multiplier binds every seat's declarations, so it is not mine to change.***
+
+### ⌗ WHAT IS NOT CLAIMED
+
+**Not that the runner is `4.19×` slower** — a bound forced by two timeouts, not a measurement.
+**Not that `S54`'s and `S55`'s declarations are wrong**: both dropped out of the SUITE carry after
+`r7412`, so `1.7` sufficed there; the exposure measured here is against the TOLERANCE job's different
+limit. **Not that the three-way test is complete** — a nesting reached through two hops of indirection
+is missed, and `undecidable` is an admission that the source cannot settle a basename rather than a
+finding about `S55`. **And not that the three receipts were never red**: the order's framing was right
+when written, and what is claimed is that it is stale now, with the ledger figures as the evidence.
+
+## ⛔⛭⛭⛭ `r7420` CORRECTION — ④'s BOUND IS WITHDRAWN. I ROUTED YOU A QUESTION ON A PREMISE THE LEDGER DOES NOT RECORD, AND THE REPLACEMENT IS BETTER SUPPORTED
+
+*Caught on the next push's own carry, before you acted on it. **The multiplier question in `④` above is
+withdrawn as posed.** What follows replaces it.*
+
+### ⛔ ① WHAT WAS WRONG: "TWO TIMEOUTS" WAS MY PREMISE, NOT A MEASUREMENT
+
+*`⒞` registered the runner factor as a lower bound of `4.19×`, reasoning that the sweep retries serially
+before filing a timeout, so a filed `S56` must have exceeded `1800` s **twice**.*
+
+⛔ **`red_carry.reds_tolerance` files a receipt red on any of THREE conditions**, and the third is the
+one that matters: an unjudged `FLAG`/`FLIP`; a `not_swept` entry; or ***`k not in have` — "never probed
+at all", meaning no probe log exists for it.*** ⇒ **A receipt the job never reached is filed exactly like
+one that timed out, and the ledger records nothing that tells them apart.**
+  - ⌗ *And `gates: None` on a tolerance entry is not evidence either way: that class **never writes a
+    `gates` field at all** — its evidence is a set. `r7412`'s "an empty gate list is a kill" is a finding
+    about the **suite** class, and I carried it across to a class where the field does not exist.*
+⇒ ***So `S56` may simply never have been probed, and a receipt never probed was never timed out.
+The bound has no foundation and is withdrawn.***
+
+### ⛔ ② WHAT FALLS WITH IT, STATED EXACTLY
+
+- **`⒞`'s `4.19×` — withdrawn entirely.**
+- **`⒟`'s THRESHOLD — withdrawn.** *The table itself stands: those are measured walls against each
+  receipt's own limit, on two builds, and the ORDERING is a fact. But "`6` receipts are exposed" was
+  `6` **under the `4.19×` line**, and with the line gone the count is not a finding.*
+- ⛭ **`①`, `②` and `③` above are untouched.** *`S7` and `S12` owe nothing; `Ⓖ①` was false for two of its
+  five; the three-way test; `425` → `106` s with `0` verdicts moved. None of that depended on the bound.*
+
+### ⛭⛭ ③ WHAT REPLACES IT, AND IT IS A BETTER-FOUNDED QUESTION — THE JOB, NOT THE MULTIPLIER
+
+**Two adjacent heads of this branch, with the tolerance scope IDENTICAL at `48` receipts and `~1319` s
+of compute by the index:**
+
+| head | what the tolerance carry filed |
+|---|---|
+| the earlier one | **`2`** receipts |
+| the next one | **`20`** receipts, every one of them `since` that head |
+
+⌗ **And the only difference between those two commits is ONE added markdown file.** *A commit adding a
+`PREDICTION.md` cannot time out eighteen further receipts.* ⇒ ***So the filings are the job stopping
+before it reached them, and how far it reaches varies run to run on an unchanged tree.***
+
+**Corroborated from this seat's own side**: the three-build sweep over that same `48`-receipt scope
+**exceeded two hours here and was killed at its limit**, with two probes complete and the third cut at
+`45` of `48`; re-run alone, the third completed and both comparisons came back `0` flagged, every
+receipt measured. ⇒ *The scope is `~66` minutes of pure compute by the index for three probes, before any
+runner slowness — so the job sits at its own capacity and the outcome is close to a coin flip.*
+
+⇒ ⚖ **THE RESTATED QUESTION, AND IT IS YOURS**: *not "is the house multiplier of `1.7` too small", which
+was my withdrawn framing, but **"can the tolerance job complete a `48`-receipt scope at all, and if not,
+should the scope be cut or the job's budget raised?"*** ⌗ **My recommendation: cut the scope rather than
+raise the budget.** *The scope is `48` because `receipt_scope.py` plus the carry union make it so, and
+much of it is receipts no numeric change in the push could move — `r7420` touched comment text and one
+exclusion set, and pulled in `48` receipts for three probes each. **A scope that cannot be completed
+reports nothing, which is worse than a smaller scope that reports.*** ⌗ *But the scope rule is the gate
+layer's and binds every seat, so it is not mine to change.*
+
+### ⌗ WHAT I SHOULD HAVE DONE
+
+*The premise was available to check — `reds_tolerance` is twenty lines — and I did not read it before
+building two arms on it.* ⇒ ***Which is `r7418`'s own finding landing on me one revision later: a claim
+inherited rather than derived, and the inheritance was from my own earlier revision's vocabulary.***
+⌗ *Recorded here rather than quietly amended, because you were the reader it was routed to.*
+
+### ✔ `r7415` ③'s LAST ITEM — `red_carry` MARKING `S55` CONTRADICTED IS **ALREADY DONE BY THE INSTRUMENT**, SO THE QUEUE IS CLOSED
+
+*Derived rather than assumed, which is the whole lesson of the two revisions above.* **The ledger
+already carries the marking, computed and not hand-set:**
+
+| class | marking | pairs | lines | span |
+|---|---|---|---|---|
+| `suite` | **⚠ CONTRADICTED** | **`32`** | `5` | `20.7` h |
+| `tolerance` | **⚠ CONTRADICTED** | **`2`** | `4` | `18.5` h |
+
+*Each pair is "red and green on trees that agree on everything the receipt reads" — the instrument's
+own criterion, and it reports `S55` carried `19` and cleared `17` in the suite class, `7` and `5` in
+tolerance.* ⇒ ***So there is nothing to mark: the item asks for a state the instrument computes, and it
+computes it.*** **`r7415` ③ is closed end to end** — the false reason at `r7418`, `S56`/`S12`/`S7` at
+`r7420`, and this.
+
+⚠ **One caveat on the tolerance half, from the correction above, and it cuts against the stronger
+reading**: *a tolerance filing can mean **never probed** rather than red. So a `tolerance` contradiction
+is weaker evidence than a `suite` one — it may be comparing a run that reached the receipt against one
+that never did, which is not the same as red and green on agreeing trees.* ⇒ **The `32` suite pairs
+carry the claim; the `2` tolerance pairs are reported beside them and should not be leaned on.**

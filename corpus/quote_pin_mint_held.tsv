@@ -1,0 +1,31 @@
+# HELD KEYS OF THE TARGETED MINT -- r7405+cc66 on r7405 ②.  Data, not code.
+#
+# ** WHY THIS FILE EXISTS AT ALL. **  r7367 ③ minted 34 keys and 33 of them were adjudicated in the
+#   same revision; the 34th could not be, because its pin is DEAD and the receipt carrying it belongs
+#   to another seat.  The mint and its adjudications are ONE landing by construction -- a minted key
+#   with no row is a `[FAIL]` and a row with an UNADJUDICATED verdict RAISES a count the ratchet lets
+#   only fall -- so one undisposable key held all 34 off the trunk.  r7405 ② asked whether they split.
+#   ** They do, and this file is the split: the mint emits every key on its derived list EXCEPT the
+#   ones named here. **
+#
+# ** WHY IT IS A FILE OF ITS OWN AND NOT A COLUMN ON THE LIST. **  thirty_four.tsv is DERIVED by
+#   make_selector.py.  A hold recorded there would be a hand-maintained field inside a generated view,
+#   which is the exact defect r7399 ⑪ ruled on and ordered made unrottable.  A re-run of the generator
+#   would drop it silently.  ⇒ The hold is its own record, it is not generated, and it is readable
+#   beside the baselines it is about.
+#
+# ** A HOLD IS NOT AN EXEMPTION, THE SAME RULE AS EVERY BASELINE HERE. **  A row names the key, the
+#   SEAT the disposition belongs to, and what has to happen for it to go.  It is a debt standing in
+#   the open with an owner, not a key quietly left out of a list.
+#
+#   receipt <TAB> literal (JSON) <TAB> owner <TAB> what has to happen
+#
+# ⛔⛭⛭ r7414+60 -- THE ONE HOLD IS DELETED, AND IT HELD NOTHING.  `r7413` ② said deleting it mints
+#   the thirty-fourth key with no code change.  Measured by running the targeted mint over that
+#   receipt with the hold in place and again with nothing held: the SCOPE grows from 33 entries to
+#   34 and the keys emitted for that literal stay at ZERO, because the arm carrying it was DELETED
+#   at `r7372` -- three revisions before this hold was written.  ⇒ So the hold described a key that
+#   cannot be minted, and no baseline row is added with it: a row for a key the instrument does not
+#   mint is the stale entry the ledger forbids, which is `r7399`'s own sentence.  ** The landing was
+#   never 33 of 34: it is 33 keys that mint plus one that cannot. **  This file now holds nothing,
+#   which its own header calls the state the register is aiming at.

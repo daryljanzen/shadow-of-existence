@@ -1,0 +1,56 @@
+====================================================================================================
+r7420 (60) -- TWO OF THE THREE OWE NOTHING, AND THE THIRD OWES A COST
+  frame e41dea54;  bands registered in PREDICTION.md at that commit, before this ran
+====================================================================================================
+
+⒜ WHERE THE COST GOES -- the five `Ⓖ` subprocess runs account for 407 s of `S56`'s 424.9 s = ** 95.8 per cent **, against central 60 and band 20-95
+      S23:  314 s  (73.9 per cent of `S56`)
+      S53:   48 s  (11.3 per cent of `S56`)
+      S39:   43 s  (10.1 per cent of `S56`)
+      S29:    1 s  ( 0.2 per cent of `S56`)
+      S22:    1 s  ( 0.2 per cent of `S56`)
+    ⇒ ** OUTSIDE, ABOVE THE CEILING ** the band -- 95.8 against a ceiling of 95, by 0.8 of a point, and the direction is the one that makes the remedy STRONGER rather than weaker
+    ⌗ and ONE member is 74 per cent of the whole on its own: S23
+
+⛔ AND THE CLAUSE THAT RUNS THEM IS FALSE AS WRITTEN -- `Ⓖ①` asserts all five "run nothing themselves"
+      S29: runs nothing under receipts/
+      S39: runs nothing under receipts/
+      S22: ⛔ RUNS A RECEIPT
+            -> receipts/P12_algebroid_paper/I55_the_atiyah_sequence_is_exact_and_a_characteristic_class
+      S23: ⛔ RUNS A RECEIPT
+            -> receipts/L251_the_numbering_collides/N1_two_lines_numbering_from_one_counter_and_a_paper
+            -> receipts/P03_SdS_slicing/P03_the_enclosed_mass_is_monotone_so_the_turnaround_ratio_canno
+      S53: runs nothing under receipts/
+
+    ⌗ AND THE HEADING ABOVE THEM IS TRUE, re-derived rather than trusted: `r7370` has 11 commits anchored on the subject line and they touch 7 receipt(s), every member of `Ⓖ` among them.
+      ⛔ *This seat first reported the opposite, off a commit list a shell pipeline had TRUNCATED -- a population error in the measurement of a population error.  The body-grep form of the same selector returns 22 commits against 11, which is the over-resolution `S56`'s own `Ⓑ` reports.*
+    ⌗ `S56`'s own exclusion list, read from its source: _NESTS = ('S55_',)
+
+⒞ THE RUNNER FACTOR -- ⛔ ** WITHDRAWN. ** *This arm reasoned that a filed `S56` must have exceeded 1800 s twice, giving at least 4.19x.*
+    ⛔ `reds_tolerance` files a receipt red when it has NO PROBE LOG AT ALL -- "never probed" -- indistinguishably from a timeout, and the tolerance class writes no `gates` field to tell them apart. ⇒ ** A receipt never probed was never timed out. **
+    ⛭ What replaces it: the same scope of 48 receipts filed 2 receipts on one head and 20 on the next, with ONE added markdown file as the only difference between the commits ⇒ the JOB stops before it reaches them, and how far it reaches varies on an unchanged tree.
+
+⒟ THE HEADROOM TABLE -- ⛔ ITS THRESHOLD IS WITHDRAWN WITH `⒞`. *The walls and limits below are measured on two builds and the ORDERING is a fact; the count of 6 "exposed" was 6 BELOW A LINE THAT NO LONGER STANDS, so it is not a finding and is not scored against central 2 or band 0-10.*
+      ⛔ headroom  2.32x    1807.5 s against a limit of  4200   C59_the_control_reproduces_camb_and_the_height
+      ⛔ headroom  2.64x     683.1 s against a limit of  1800   P10_the_algebraic_quartic_is_settled_by_the_fr
+      ⛔ headroom  2.84x    1478.5 s against a limit of  4200   S55_the_previous_repairs_own_written_safety_ar
+      ⛔ headroom  2.94x     611.4 s against a limit of  1800   S47_the_cheap_tail_closes_whole_and_nine_of_it
+      ⛔ headroom  3.12x    1152.7 s against a limit of  3600   S54_a_ledger_change_scopes_five_receipts_and_n
+      ⛔ headroom  4.15x     433.3 s against a limit of  1800   Q1_a_stated_tolerance_is_a_request_and_the_cor
+         headroom  4.19x     429.4 s against a limit of  1800   S56_a_pin_is_only_as_good_as_what_resolves_it_
+         headroom  4.50x     400.1 s against a limit of  1800   S13_the_thirty_are_read_and_the_fifth_bucket_i
+         headroom  5.48x     328.7 s against a limit of  1800   S59_the_census_of_a_shape_inside_one_file_miss
+         headroom  5.86x     307.1 s against a limit of  1800   E1_an_exemption_is_a_claim_and_all_three_were_
+         headroom  6.07x     296.5 s against a limit of  1800   S51_the_queue_closes_whole_and_both_arms_fail_
+         headroom  9.47x     190.0 s against a limit of  1800   S1_a_seed_that_stops_constructing_its_defect_a
+    ⇒ INSIDE the band, above central
+    ⌗ the pair `r7412` declared sits low in the ordering (['S55_', 'S54_']) -- ⛔ but the inference drawn from that, that the house multiplier of 1.7 is the defect, IS WITHDRAWN with the bound. The restated question is whether the job can complete a 48-receipt scope at all, and it is routed on that footing instead.
+
+⒝ THE REPAIR, MEASURED ON THREE FORMS -- and gates whose verdict moved: ** 0 **, against point prediction 0
+      landed form        424.9 s   exit 0, 0 failing gates   headroom  4.24x
+      ⛔ two-way form    998.0 s   KILLED, still inside `S55`  -- the repair that dropped the one entry the hand list had RIGHT
+      three-way form     106.0 s   exit 0, 0 failing gates   headroom 16.98x
+    ⇒ ** 4.01x cheaper than the landed form and 9.4x cheaper than the broken repair **, with the nesting set ['S22_', 'S23_', 'S55_'] COMPUTED and CONTAINING the old hand-written ('S55_',) rather than contradicting it
+    ⇒ and `S56` now clears the bound that filed it unmeasured: headroom 16.98x against a forced lower bound of 4.19x
+
+  price: 0.5 s

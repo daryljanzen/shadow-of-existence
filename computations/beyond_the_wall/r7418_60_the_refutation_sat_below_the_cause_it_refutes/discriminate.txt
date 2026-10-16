@@ -1,0 +1,103 @@
+====================================================================================================
+r7418 (60) -- THE REFUTATION SAT BELOW THE CAUSE IT REFUTES
+  frame 3a922041;  bands registered in PREDICTION.md at that commit, before this ran
+====================================================================================================
+
+----------------------------------------------------------------------------------------------------
+READING: AT THE FRAME 3a922041 -- the scored reading
+----------------------------------------------------------------------------------------------------
+
+⒜ THE REACH, AS REGISTERED -- vocabulary occurrences OUTSIDE the two named blocks: 93, against central 2 and band 0-8
+    (total anywhere, named blocks included: 97;  the wide `fetch-depth` limb the registration does NOT license adds 36 more)
+    ⇒ ** FAR OUTSIDE THE BAND, and the reason is the arm and not the corpus: ** the registered detector is keyed on the VOCABULARY of `r7370`'s false cause, and that vocabulary is the vocabulary of a TRUE claim everywhere else -- a shallow clone really does break a receipt that reads history, and 71 of the 93 say exactly that, soundly.
+    ⌗ loose subject match on the same lines: 22 -- still not a discriminator, which is why FORM 3 exists.
+    ⚠ *the LIVE figure RISES above the frame's, and that is the repair working rather than failing: the refuted account is KEPT as a record, so its words are still there -- which is itself why a vocabulary count cannot be the instrument here.*
+
+⒜ FORM 3 -- BLOCKS naming the MECHANISM *and* `r7370`'s own SUBJECT: 7; 2 inside the two blocks the order names, 4 disowning the cause in their own text, ⇒ ** 3 stating it as LIVE outside what the order names **
+      [⛔ LIVE ] computations/beyond_the_wall/r7370_60_the_reference_that_does_not_resolve/cost.py:2-23 [docstring]
+                """r7370 (60) -- THE REFERENCE THAT DOES NOT RESOLVE.
+      [disowns] computations/beyond_the_wall/r7374_60_the_key_the_environment_chooses/cost.py:2-29 [docstring]
+                """r7374 (60) -- THE KEY THE ENVIRONMENT CHOOSES.
+      [NAMED  ] receipts/L_probability/S39_the_routed_collision_item_is_an_answer_read_as_a_claim_and_the_prevention_was_already_in_use.py:63-99 [comment]
+                # ⛔⛭⛭⛭ r7370: ** THE SHAS WERE PINNED AND THE FACT READ OFF THEM WAS NOT. **  *`Ⓑ①` below took each
+      [⛔ LIVE ] receipts/L_probability/S39_the_routed_collision_item_is_an_answer_read_as_a_claim_and_the_prevention_was_already_in_use.py:114-125 [comment]
+                # ⛔⛭⛭⛭ r7370, SECOND PASS -- ** AND THE FIRST REPAIR MISSED HALF THE CLAUSE. **  *`session_of`
+      [NAMED  ] receipts/L_probability/S56_a_pin_is_only_as_good_as_what_resolves_it_and_one_reference_over_resolved_while_the_other_under_resolved_so_both_wanted_the_fact_committed_beside_the_measurement.py:2-107 [docstring]
+                """S56 -- THE REFERENCE THAT DOES NOT RESOLVE.  ⛭⛭⛭ *** TWO GATES WENT RED ON THE PREVIOUS REVISION'S
+      [⛔ LIVE ] receipts/L_probability/S56_a_pin_is_only_as_good_as_what_resolves_it_and_one_reference_over_resolved_while_the_other_under_resolved_so_both_wanted_the_fact_committed_beside_the_measurement.py:232-247 [check]
+                check(f'Ⓒ① the fact is COMMITTED BESIDE THE MEASUREMENT and checked against the commit wherever '
+      [disowns] receipts/L_probability/S58_the_repair_was_right_and_the_reason_written_beside_it_was_false_because_a_pin_keyed_by_an_abbreviation_is_keyed_by_a_length_the_environment_picks.py:2-62 [docstring]
+                """S58 -- THE KEY THE ENVIRONMENT CHOOSES.  ⛭⛭⛭ *** `r7370` REPAIRED `S39`'s `Ⓑ①` AND WROTE THE CAUSE
+
+⒝ THE ASSERTION -- vocabulary occurrences in text the instrument ASSERTS or PRINTS: 11, against central 1, floor 1 (KNOWN) and band 1-4
+      corpus/check_pdf_current.py:107  [print(]
+      corpus/check_pins_adjudicated_on_mint.py:105  [print(]
+      corpus/check_register_monotone.py:140  [print(]
+      corpus/check_revision_collisions.py:1063  [print(]
+      corpus/check_revision_collisions.py:1076  [print(]
+      receipts/L_probability/S22_the_sentence_over_reached_and_the_receipt_cited_on_it_under_reached_so_the_rcpt_convention_was_violated_at_a_site_where_nothing_could_fail.py:152  [gate(]
+      receipts/L_probability/S56_a_pin_is_only_as_good_as_what_resolves_it_and_one_reference_over_resolved_while_the_other_under_resolved_so_both_wanted_the_fact_committed_beside_the_measurement.py:241  [check(]
+      receipts/P15_CR_cosmology/C60_the_hier_composition_defect_names_two_flags_its_own_tree_never_had.py:142  [print(]
+      receipts/P15_CR_cosmology/P15_the_symmetric_comparison_was_never_runnable_and_the_quarter_was_two_fifths.py:131  [check(]
+      scripts/sweep_history_assertions.py:177  [print(]
+      scripts/sweep_history_assertions.py:180  [print(]
+    ⇒ ** and FORM 3 puts 1 of the LIVE blocks inside an ASSERTING call **, which is the figure the arm was for: a comment records a belief, a clause states a property of the object.
+
+⒞ THE WINDOW -- a DIRECT READ and not an arm (both blocks were read before registering)
+      S39: cause stated at line 63, refuted at line 77  ⇒  window 14 line(s) of a 305-line file
+            ⛔ and a SECOND carrier at line 114 -- 37 line(s) BELOW the refutation, which the refutation therefore never reaches
+      S56: cause stated at line 22, refuted at line 33  ⇒  window 11 line(s) of a 367-line file
+
+----------------------------------------------------------------------------------------------------
+READING: LIVE -- the same reading on this worktree, after the repair
+----------------------------------------------------------------------------------------------------
+
+⒜ THE REACH, AS REGISTERED -- vocabulary occurrences OUTSIDE the two named blocks: 103, against central 2 and band 0-8
+    (total anywhere, named blocks included: 103;  the wide `fetch-depth` limb the registration does NOT license adds 38 more)
+    ⇒ ** FAR OUTSIDE THE BAND, and the reason is the arm and not the corpus: ** the registered detector is keyed on the VOCABULARY of `r7370`'s false cause, and that vocabulary is the vocabulary of a TRUE claim everywhere else -- a shallow clone really does break a receipt that reads history, and 76 of the 103 say exactly that, soundly.
+    ⌗ loose subject match on the same lines: 27 -- still not a discriminator, which is why FORM 3 exists.
+    ⚠ *the LIVE figure RISES above the frame's, and that is the repair working rather than failing: the refuted account is KEPT as a record, so its words are still there -- which is itself why a vocabulary count cannot be the instrument here.*
+
+⒜ FORM 3 -- BLOCKS naming the MECHANISM *and* `r7370`'s own SUBJECT: 6; 0 inside the two blocks the order names, 6 disowning the cause in their own text, ⇒ ** 0 stating it as LIVE outside what the order names **
+      [disowns] computations/beyond_the_wall/r7370_60_the_reference_that_does_not_resolve/cost.py:2-31 [docstring]
+                """r7370 (60) -- THE REFERENCE THAT DOES NOT RESOLVE.
+      [disowns] computations/beyond_the_wall/r7374_60_the_key_the_environment_chooses/cost.py:2-29 [docstring]
+                """r7374 (60) -- THE KEY THE ENVIRONMENT CHOOSES.
+      [disowns] receipts/L_probability/S39_the_routed_collision_item_is_an_answer_read_as_a_claim_and_the_prevention_was_already_in_use.py:63-104 [comment]
+                # ⛔⛭⛭⛭ r7370, AS MEASURED AT r7374 AND REWRITTEN HERE AT r7418: ** THE SHAS WERE PINNED AND THE FACT
+      [disowns] receipts/L_probability/S39_the_routed_collision_item_is_an_answer_read_as_a_claim_and_the_prevention_was_already_in_use.py:119-139 [comment]
+                # ⛔⛭⛭⛭ r7370, SECOND PASS, REWRITTEN AT r7418 -- ** AND THE FIRST REPAIR MISSED HALF THE CLAUSE. **
+      [disowns] receipts/L_probability/S56_a_pin_is_only_as_good_as_what_resolves_it_and_one_reference_over_resolved_while_the_other_under_resolved_so_both_wanted_the_fact_committed_beside_the_measurement.py:2-114 [docstring]
+                """S56 -- THE REFERENCE THAT DOES NOT RESOLVE.  ⛭⛭⛭ *** TWO GATES WENT RED ON THE PREVIOUS REVISION'S
+      [disowns] receipts/L_probability/S58_the_repair_was_right_and_the_reason_written_beside_it_was_false_because_a_pin_keyed_by_an_abbreviation_is_keyed_by_a_length_the_environment_picks.py:2-62 [docstring]
+                """S58 -- THE KEY THE ENVIRONMENT CHOOSES.  ⛭⛭⛭ *** `r7370` REPAIRED `S39`'s `Ⓑ①` AND WROTE THE CAUSE
+
+⒝ THE ASSERTION -- vocabulary occurrences in text the instrument ASSERTS or PRINTS: 10, against central 1, floor 1 (KNOWN) and band 1-4
+      corpus/check_pdf_current.py:107  [print(]
+      corpus/check_pins_adjudicated_on_mint.py:105  [print(]
+      corpus/check_register_monotone.py:140  [print(]
+      corpus/check_revision_collisions.py:1063  [print(]
+      corpus/check_revision_collisions.py:1076  [print(]
+      receipts/L_probability/S22_the_sentence_over_reached_and_the_receipt_cited_on_it_under_reached_so_the_rcpt_convention_was_violated_at_a_site_where_nothing_could_fail.py:152  [gate(]
+      receipts/P15_CR_cosmology/C60_the_hier_composition_defect_names_two_flags_its_own_tree_never_had.py:142  [print(]
+      receipts/P15_CR_cosmology/P15_the_symmetric_comparison_was_never_runnable_and_the_quarter_was_two_fifths.py:131  [check(]
+      scripts/sweep_history_assertions.py:177  [print(]
+      scripts/sweep_history_assertions.py:180  [print(]
+    ⇒ ** and FORM 3 puts 0 of the LIVE blocks inside an ASSERTING call **, which is the figure the arm was for: a comment records a belief, a clause states a property of the object.
+
+⒞ THE WINDOW -- a DIRECT READ and not an arm (both blocks were read before registering)
+      S39: the TWO-BLOCK SHAPE IS GONE -- neither anchor is present, so there is no window: the measurement and the cause are one block (319 lines in the file)
+      S56: the TWO-BLOCK SHAPE IS GONE -- neither anchor is present, so there is no window: the measurement and the cause are one block (379 lines in the file)
+
+⒟ THE REMEDY AGAINST ITS OWN RULE -- receipt-running jobs at a default-depth checkout, read at TODAY's trunk: 0, against point prediction 0
+      backstop: fetch-depth 0, runs a receipt: True
+      compile: fetch-depth DEFAULT, runs a receipt: False
+      fast: fetch-depth 0, runs a receipt: False
+      index: fetch-depth 0, runs a receipt: True
+      receipts: fetch-depth 0, runs a receipt: True
+      scope-reads: fetch-depth 0, runs a receipt: False
+      scope-suite: fetch-depth 0, runs a receipt: True
+      scope-tolerance: fetch-depth 0, runs a receipt: False
+    ⇒ the refuted cause has no job it could act on, at today's trunk as at `r7374`'s three commits.  ** The demotion is licensed by a figure re-read rather than inherited, which is `r7406`'s rule on a comment repair. **
+
+  price: 30.5 s

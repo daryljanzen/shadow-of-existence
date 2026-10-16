@@ -1,0 +1,38 @@
+  PAIRING THE STALE ROWS AGAINST THE NEW CANDIDATES -- same claim reworded, or new prose?
+    10 stale row(s), 11 new candidate(s); pair test = same paper, token Jaccard >= 0.50
+
+  PAIRED (a reworded claim -- one read, 69 already has a verdict)   7
+  NEW and UNPAIRED (never read by 69 -- a fresh verdict)           4
+  STALE and UNPAIRED (the claim is GONE -- a row to retire)        3
+  ⇒ CLAIMS the refresh must read: 11  (of which 7 carry an existing verdict)
+
+    [P15] paired J=0.96  OPEN     "what remains open is the detailed world
+         was: What remains open is the \emph{detailed} worldline and field dynamics of the crossing for a concrete matter model~\cit
+         now: What remains open is the \emph{detailed} field dynamics of the crossing for a concrete matter model~\cite{JanzenCRfram
+    [P5] paired J=0.79  CHECK    irreducible interiors: whether a spaceli
+         was: Its reach to the non-vacuum solutions is not a fresh frontier of this paper: Kerr, Reissner--Nordstr\"om, and their de
+         now: Its reach to the non-vacuum solutions is not a fresh frontier of this paper: Kerr, Reissner--Nordstr\"om, and their de
+    [P5] paired J=0.85  CHECK    whether a concrete matter model's histor
+         was: So a concrete matter model has no freedom in where the reassignment acts---the vantage is forced---and what remains to
+         now: So a concrete matter model has no freedom in where the reassignment acts---the vantage is forced---and of the two requ
+    [P7] paired J=0.81  NOT-OPEN matter of the collapse
+         was: The claim is carried by the branch geometry alone, and does not rest on the branch-point crossing dynamics of a concre
+         now: The claim is carried by the branch geometry alone, and does not rest on the branch-point crossing dynamics of a concre
+    [P7] paired J=0.72  POINTER  reckoning of relational R-reading with m
+         was: What it does \emph{not} settle is the field-level charge structure, which rides on both branches by the ordinary route
+         now: What it does \emph{not} settle is the field-level charge structure, which rides on both branches by the ordinary route
+    [P7] paired J=0.86  OPEN     scalar sector, "the work": what displace
+         was: \emph{Of the three below, one is work and two are boundaries.} The scalar perturbation sector (item~\ref{frontier:scal
+         now: \emph{Of the four below, two are work, one is a boundary, and one carries both kinds at once.} The scalar perturbation
+    [P7] paired J=1.00  NOT-OPEN quantum sector: ordering external; UV de
+         was: \item\label{frontier:quantum} \emph{The quantum sector: the deparametrized content in hand, and the interacting tower'
+         now: \item\label{frontier:quantum} \emph{The quantum sector: the deparametrized content in hand, the interacting tower's de
+
+    [P15] UNPAIRED NEW (best J=0.05): \emph{One check is owed here and is not optional, because the hydrodynamical variable differs from $a$ in three places
+    [P7] UNPAIRED NEW (best J=0.47): \begin{remark}[Perspectival Singularity and the Continuity of the Collapse--Cosmology Transition]\label{rem:twolevels}
+    [P7] UNPAIRED NEW (best J=0.14): \item\label{frontier:crossing} \emph{The matter branch-point crossing: the traversal settled, the dynamics open.} This
+    [P7] UNPAIRED NEW (best J=0.14): \paragraph{The classification of causal reassignments.} Its reducible sector is settled in the synthesis above, and it
+
+    [P7] UNPAIRED STALE NOT-OPEN -: \begin{remark}[Perspectival Singularity and the Continuity of the Collapse--Cosmology Tran
+    [P7] UNPAIRED STALE OPEN     classification of causal reassignments: : What is left of it is ordinary interior analysis rather than a frontier of this constructi
+    [P15] UNPAIRED STALE NOT-OPEN progenitor vacuum: \emph{One scope qualification is owed immediately, and closing it is what makes the classi
