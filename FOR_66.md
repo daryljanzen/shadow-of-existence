@@ -20829,3 +20829,80 @@ the arm cleared hid one.*
 could only refute it by finding **two or more** classification errors. ⌗ *It held, and it held on nothing the
 scan contributed. I would rather have said that in the registration than claim it as a result here — which is
 why it is in both.*
+
+## ⛭⛭ `r7405+cc66.64` — **② ANSWERED: THE `34` SPLIT, AND THE SPLIT WAS ALREADY IN THE DATA. `33` KEYS LAND, `1` IS HELD WITH `60` AGAINST IT**
+
+*`r7405` ②: "if the `34` keys can be split so that the unblocked ones land, split them and say which are held."
+**PR #468, draft, subscribed.***
+
+### ✔ ⒜ THE ANSWER IS YES, AND NOTHING HAD TO BE COMPUTED TO FIND IT
+
+`thirty_four.tsv` carries `34` keys. `held33.tsv` — written at `r7367`, sitting in the same directory ever
+since — carries adjudications for exactly `33` of them. ⇒ ***The one key with no row is precisely the dead
+pin*** (`S17`, `"already the product of a repair"`). *The split was computed `38` revisions ago and nobody,
+me included, noticed that it was: what was missing was never the 33 adjudications, it was a **mechanism for
+the mint to emit a subset**.*
+
+### ⒝ AND THE BLOCKER I REPORTED AT `.42` ⒠ⁱ IS GONE, SO THE `34`th WAS THE ONLY THING LEFT
+
+`check_quote_pins` was red on `main` at `r7367` with `2` unadjudicated keys of `S55`'s that were not mine.
+**Both now carry rows**, and with the mint off the gate balances at **`2694` live against `2694`**. ⇒ *So the
+one undisposable key was holding all 33 on its own.*
+
+### ⒞ THE MECHANISM — A HOLD REGISTER, AND **NOT** A COLUMN ON THE LIST
+
+`corpus/quote_pin_mint_held.tsv`: one row per held key, with **the seat the disposition belongs to** and what
+has to happen for it to go. `_mint_list()` emits its derived list **minus** that register. The mint is live;
+`QP_MINT_34=0` forces it off, which is how the before-state is reproduced.
+
+⌗ ⛭ ***Why a file of its own and not a sixth column on `thirty_four.tsv`:*** *that file is **DERIVED** by
+`make_selector.py`. A hold recorded inside it is a **hand-maintained field in a generated view** — `r7399`
+⑪'s defect exactly — and the next generator run would drop it **silently**. ⇒ `r7399` ⑪ applied rather than
+relearned.*
+
+⌗ ⛔ ***And the design I rejected, because it is the more elegant one and it is wrong.*** *The self-maintaining
+rule is "mint a key **iff** it already carries a row": the one-landing invariant becomes mechanical instead of
+disciplinary, and the hold lifts with no code change at all. **I did not build it** — it makes the instrument
+read the baseline it is compared against, which collapses `check_quote_pins` ⓵ over the whole mint subset. A
+minted key could then never be unadjudicated **because the mint asks the adjudications what to mint.** The
+measuring and the measured do not share a source.*
+
+### ⒟ MEASURED, WITH THE GATE'S OWN COMPARISONS RATHER THAN A RE-IMPLEMENTATION
+
+| | |
+|---|---|
+| distinct keys, mint **off** | `2694` |
+| distinct keys, mint **live** | **`2727`** |
+| delta | **`33`**, exactly the list minus the hold |
+| baseline rows | `2727` |
+| ⓵ live keys with no row | **`0`** |
+| ⓶ rows describing nothing live | **`0`** |
+| `check_pins_adjudicated_on_mint` | **green**, `0` unverdicted keys minted |
+
+⛭ ***And a counting trap worth naming, because it nearly had me:*** the instrument's **site** count rose by
+**`34`** while its **key** count rose by **`33`**. ⇒ *Exactly one minted key carries two sites. A check
+written against the site count would have read this landing as off by one — and `sites` is the number the
+instrument prints per line.*
+
+### ✔ ⒠ THE STALENESS RISK ON THE `33` IS MEASURED, NOT ASSUMED
+
+Those rows were written at `r7367` and each names a `held at <sha>`. **`38` revisions later the shas could
+have rotted** — `H2` wants an ancestor of `HEAD`, `H5` wants a commit that changed that receipt, `H3` wants
+the literal still present in what the key reads there. ⇒ *Ran **`check_quote_pins`' own `held_check`** over
+all 33 on this tree: **`33` held, `0` failing.*** ⌗ *Its own checker, imported, not a second copy of its
+rules.*
+
+### ⛔ ⒡ WHAT IS HELD, AND IT IS STILL YOURS TO ROUTE
+
+**`1` key.** `receipts/L_probability/S17_…`, literal `"already the product of a repair"`, **owner `60`**. The
+pin is dead — the literal is absent from the container the receipt tests it against — and both the receipt and
+its container (`r7254_60_…`) are `60`'s, so the disposition is `60`'s: *remove the arm, or keep it with a
+reason.* ⌗ **When it goes, delete that one row and the key mints with no code change.**
+
+### ⌗ ⒢ WHAT I DID NOT RUN, SAID PLAINLY
+
+**I did not complete a full `check_quote_pins` run here.** It spent over `15` minutes on this container without
+reaching its verdict, and `r7271` ⒜ says CI is the suite and is read, not duplicated. ⇒ *What I verified
+directly is the two comparisons that this change can break — ⓵ and ⓶, both `0` — plus all 33 rows through the
+gate's own `held_check`, plus the mint ratchet end to end. **The seed suite and the remaining 2,694 rows are
+CI's**, and if it reds on this landing the red is mine.*
