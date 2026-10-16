@@ -5,9 +5,9 @@
 ====================================================================================================
 
   ⓪ THE POSITIVE CONTROL -- can this gate see declarations at all?
-      `.lean` files found: 46
-      distinct identifiers the control reader extracts: 1977
-    ✔ the control sees 1977 identifier(s), so a verdict about a `decl` cell is a reading and not a silence
+      `.lean` files found: 47
+      distinct identifiers the control reader extracts: 1993
+    ✔ the control sees 1993 identifier(s), so a verdict about a `decl` cell is a reading and not a silence
 
   ⓪ᵇ THE IN-RUN SEEDS -- this run proving, on the real row path, that it could have fired
     ✔ ⑴ a well-formed pair pointing at the WRONG FILE fires as a dangling reference
@@ -25,13 +25,13 @@
   ⓶ᵃ THE WORKFLOW SCOPES -- read from each workflow's own `paths:`, never from a filename
       formalisation-mathlib.yml: ['computations/formalisation/lean/**']
       formalisation-physlib.yml: ['computations/formalisation/lean-physlib/**']
-      `.lean` files inside at least one scope: 46 of 46
+      `.lean` files inside at least one scope: 47 of 47
 
   ⓶ᵇ THE RECORD -- did each workflow pass on THIS tree?  three-way, and `UNANSWERABLE` is not a pass
       formalisation-mathlib: GREEN
-        record 82f9f2c93: run 38925184926 at 4c1ee2f45 -- success on an identical tree under ['computations/formalisation/lean', '.github/workflows/formalisation-mathlib.yml']
+        record 3744dc2c6: run 38930741556 at 949a4603a -- success on an identical tree under ['computations/formalisation/lean', '.github/workflows/formalisation-mathlib.yml']
       formalisation-physlib: GREEN
-        record 1a84d8c71: run 38925185065 at 4c1ee2f45 -- success on an identical tree under ['computations/formalisation/lean-physlib', 'computations/formalisation/lean/check_no
+        record 2aa36331a: run 38929979275 at 02bd35491 -- success on an identical tree under ['computations/formalisation/lean-physlib', 'computations/formalisation/lean/check_no
 
   THE INVENTORY
       columns: ['index', 'class', 'status', 'what it needs next', 'stand-in', 'receipt', 'decl']
@@ -39,12 +39,12 @@
       their statuses: {'DONE': 74, 'DONE (CHARTABLE HALF)': 2, 'GENERIC-METRIC IDENTITY': 2, 'LIBRARY GAP': 17, 'LIMIT OF A DONE ROW': 12, 'ORDER: ENGINE-REACHABLE': 1, 'ROW: A DIFFERENT KIND': 3}
       rows carrying a `receipt` and NO `decl`: 22, in 3 status class(es) ['GENERIC-METRIC IDENTITY', 'LIBRARY GAP', 'ROW: A DIFFERENT KIND']
         of which 0 ASSERT the claim is formalised and are charged; the rest are the empty-cell state `71`'s grammar prescribes and are not
-      ⇒ `(file, name)` pairs checked: 263 over 111 row(s), naming 27 distinct `.lean` file(s)
-    ⌗ Ⓠ of the cleared pairs, 123 clear on the fully qualified name and 140 clear ONLY on the name's last component -- so for those 140, the namespace half of the claim is not what was checked
+      ⇒ `(file, name)` pairs checked: 268 over 111 row(s), naming 28 distinct `.lean` file(s)
+    ⌗ Ⓠ of the cleared pairs, 128 clear on the fully qualified name and 140 clear ONLY on the name's last component -- so for those 140, the namespace half of the claim is not what was checked
     ⌗ Ⓠ the cause is in the shared reader and not in the data: it pops its namespace stack on any `end <ident>`, so a named `section` inside a `namespace` closes the namespace.  An independent control reader that pops only on a MATCHING `end` confirms 140 of those 140 as fully qualified after all
     ⌗ Ⓠ ⇒ so the inventory is correct entire on the strict reading too, and the fallback is masking the reader's own `end` handling rather than a fault in the data.  Routed to `66` with the patch; NOT applied here, because a private reader is what this revision removed
 
 ====================================================================================================
-  ✔ the join holds: 263 `(file, name)` pair(s) over 111 of 111 claiming row(s) -- every pair declared in ITS OWN file, every file under a workflow whose record says GREEN on this tree, every `receipt` present.
+  ✔ the join holds: 268 `(file, name)` pair(s) over 111 of 111 claiming row(s) -- every pair declared in ITS OWN file, every file under a workflow whose record says GREEN on this tree, every `receipt` present.
   ⌗ 3 note(s) above are reported and not charged.
 ====================================================================================================

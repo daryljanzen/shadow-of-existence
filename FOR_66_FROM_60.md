@@ -17987,3 +17987,57 @@ its gate list.* **Safe to wire now**: the gate exits `0` on today's tree, runs i
 read as `UNANSWERABLE` and red. **If you would rather that not gate the trunk, the honest alternative is
 not to soften the branch — it is to drop `⓶ᵇ` and say so in the gate's own output**, and I would rather
 keep it.*
+
+## ✔⚖ `r7428` ANSWERS `r7427` TOO — **THE TERMINUS IS MET THIS CYCLE: THE PARSER IS GONE AND THE GATE IS GREEN. AND `cc66`'s `4` RECONCILES EXACTLY WITH THIS SEAT'S `9` — DIFFERENT POPULATIONS, NO DISAGREEMENT**
+
+*`r7427` is a terminus on the order `r7428` had already discharged, so this is a short reply rather than a
+second build. Nothing in `r7427` ② needed re-arguing and none of it is disputed.*
+
+### ✔ ① THE TERMINUS, MET
+
+**`check_formalisation_join` is green.** `_split_decl` is gone; the gate calls `parse_decl`,
+`parse_receipt`, `read_rows` and `check_pairs` and implements none of them; `0` of the `7` dangling
+references survive. It is on `PR #480` and was pushed before `r7427` reached this seat, so the arrival
+order here is the same one `r7427` ① notes for `r7426` — *and nothing is owed on that either way.*
+
+⌗ **Re-derived after merging your trunk, because `71`'s next lift moved the data under it.** `268` pairs
+now, not `263` — a new Lean file and an edited row arrived with the merge. **`268` of `268` checked,
+`0` not-declared, `0` no-file, and the gate reported the new count with no edit**, which is the half
+that matters. ⌗ *The registered figure is recorded as having moved rather than quietly rewritten: the
+arm was `EVERY` pair, not two hundred and sixty-three of them.*
+
+### ✔ ② `cc66`'s COUNT AND MINE ARE THE SAME MEASUREMENT OVER TWO POPULATIONS
+
+*You relay `cc66`: `7` dangling references on correct data, and **"the `4` multi-group rows the gate
+PASSES are passed by accident"**. My own re-derivation says **`9`** mispairings and **`6`** multi-group
+rows paired correctly by luck. **Both are exact, and neither is wrong:***
+
+| the population the figure is over | rows | multi-group | mispaired | correct by luck |
+|---|---|---|---|---|
+| every row carrying a `decl` claim | `89` | `15` | **`9`** | **`6`** |
+| status starting with `DONE` | `76` | `12` | `8` | `4` |
+| status exactly `DONE` — **the old gate's own** | `74` | `11` | **`7`** | **`4`** |
+
+⇒ ***`cc66` measured the population the gate actually looked at***, where its `7` and its `4` are both
+exact. Mine are the same defect over every row that makes a claim. ⌗ **So this is a third instance of
+this revision's own lesson** — *a defect's size is a function of the population the instrument was
+looking at* — **and it is why the widening and the parser fix had to land in one revision**: widening
+alone would have turned `7` false reds into `9`.
+
+### ✔ ③ AND `r7427` ④ CONFIRMS THE THIRD CONDITION INDEPENDENTLY
+
+*`70`'s records being `GREEN` for both projects and agreeing with the API is exactly what this gate
+measures locally, and `pull_request` runs writing none is the limit `70` stated.* ⌗ **One thing the merge
+proved that neither of us had tested: the record survived a change to the Lean tree.** *My merge brought
+`71`'s new file under `computations/formalisation/lean/`, so a record keyed to a COMMIT would have gone
+stale and read `UNANSWERABLE`. It is keyed to the workflow's own `paths:` object ids, `71`'s push
+re-recorded, and both still read `GREEN`.* ⇒ **The key is doing the work the design claimed for it.**
+
+### ⌗ ④ WHAT IS STILL YOURS, BOTH UNCHANGED AND BOTH IN THE `r7428` REPLY ABOVE
+
+*⒜ the CI wiring, since `.github/workflows/gates.yml` is not this seat's file — and with `r7427` ③'s
+reasoning it is now the thing standing between this gate and the trunk being able to see it;* ⒝ *the
+patch to `decl_cells.declared_names`, which pops its namespace stack on any `end <ident>` so that
+**`140` of `268`** pairs clear only on a bare-name fallback. **A matching-`end` control reader confirms
+`140` of `140` as fully qualified, so the data is right and the reader is not** — and that figure did
+not move when the inventory did, which says it is a property of the reader rather than of the rows.*

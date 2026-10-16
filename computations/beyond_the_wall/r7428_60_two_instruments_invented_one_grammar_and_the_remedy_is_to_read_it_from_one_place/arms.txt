@@ -158,3 +158,53 @@ THE 16 SEEDS THAT STOOD AT r7426, MAPPED ONE TO ONE ONTO THE 37 -- so arm (g) is
 16 of 16 accounted for, 21 new.  S4 is new and is the one that matters next to the Q finding: a named
 `section`'s `end` must NOT close the namespace, which the control reader satisfies and the shared
 reader does not.
+
+=====================================================================================================
+RE-DERIVED AFTER MERGING r7427's TRUNK, AND THE COUNT MOVED -- which is the point of re-deriving
+=====================================================================================================
+r7427 landed while this revision was on a draft PR, and it is a TERMINUS on the same order rather than
+a new one: "you have this cycle; if check_formalisation_join is still red at the next turn I take the
+parser myself."  r7428 discharges it.  Merging that trunk in brought 71's own next lift -- a new Lean
+file and an edited ROWS.tsv -- so every figure was measured again rather than carried:
+
+                                    at registration (e7882c40)   after the merge
+  (file, name) pairs claimed                 263                      268
+  rows carrying a decl claim                  89                       89
+  file groups                                108                      109
+  rows with more than one group               15                       15
+  pairs the gate checks                  263 of 263               268 of 268
+  not-declared / no-file                     0 / 0                    0 / 0
+  distinct .lean files the cells name          -                       28
+  cleared on the fully qualified name        123                      128
+  cleared only on the last component         140                      140
+
+** ARM (b) IS SCORED ON THE PROPERTY AND NOT ON THE NUMBER, AND THE NUMBER IS WHY. **  PREDICTION.md
+registered "263 of 263"; the measurement is 268 of 268 because five pairs arrived between the two.  The
+arm's claim was EVERY pair rather than two hundred and sixty-three of them, so it holds -- but the
+registered figure is stated here as having moved rather than silently rewritten, because a figure that
+moves under a live inventory is exactly what coverage.py exists to re-derive.  ⇒ The gate reported the
+new count correctly with no edit, which is the half that matters.
+
+AND THE RECORD SURVIVED THE MOVE FOR THE RIGHT REASON.  The merge changed
+computations/formalisation/lean/, so a record keyed to a COMMIT would have gone stale.  70's record is
+keyed to the workflow's own `push: paths:` object ids, so 71's push re-recorded and both projects still
+read GREEN on this tree.  r7427 (4) confirms it independently: the first real records are GREEN for both
+projects and agree with the Actions API, and pull_request runs wrote none.
+
+=====================================================================================================
+AND cc66's "4 MULTI-GROUP ROWS PASSED BY ACCIDENT" RECONCILES WITH THIS SEAT'S "9 MISPAIRINGS"
+=====================================================================================================
+r7427 (1) relays cc66's classification of main's red: 7 dangling references on correct data, and "the 4
+multi-group rows the gate PASSES are passed by accident".  coverage.py reports 9 mispairings and 6
+multi-group rows paired correctly by luck.  ** BOTH ARE RIGHT, OVER DIFFERENT POPULATIONS: **
+
+  population the figure is over        rows   multi-group   mispaired   correct by luck
+  all rows carrying a decl claim        89        15            9             6
+  status starting with DONE             76        12            8             4
+  status exactly DONE                   74        11            7             4   <- the old gate's own
+
+cc66 measured the population the old gate actually looked at, where 7 mispairings surface as the 7 reds
+and 4 of the 11 multi-group rows pass by accident -- its 7 and its 4 are both exact there.  This seat's
+9 and 6 are the same defect over every row that makes a claim.  ⇒ No disagreement to resolve, and the
+third instance this revision of its own lesson: ** A DEFECT'S SIZE IS A FUNCTION OF THE POPULATION THE
+INSTRUMENT WAS LOOKING AT ** -- which is why the widening and the parser fix had to land together.
