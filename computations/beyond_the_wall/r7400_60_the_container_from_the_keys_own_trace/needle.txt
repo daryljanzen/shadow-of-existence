@@ -1,0 +1,26 @@
+# r7400 (60) -- the mangled needle, at FRAME 15f2741812e5
+# 51 of 1198 SOURCE keys carry a backslash in their first three words
+# WALL 90.5s for 102 branch runs on this container
+# VERDICTS THAT MOVE when the needle is left as the literal wrote it: 18 of 51
+#   unchanged: 33
+# ⌗ A move is always ABSENT -> PRESENT: the mangled needle can only match FEWER files, so the
+#   branch as it stands can only over-report absence.  Direction asserted by the rows below.
+# receipt, literal (JSON), tier, verdict, as-it-stands, with the honest needle
+receipts/L165_interacting_tower/D1_the_boundary_is_per_fibre_and_the_UV_is_over_fibres.py	"1+\\lambda\\phi"	TOKEN	DELIBERATE	False	True
+receipts/L211_closure_adjacency/A2_the_three_owed_derivations_are_one_boundary.py	"4.17\\times10^{52}"	TOKEN	DELIBERATE	False	True
+receipts/L211_closure_adjacency/A2_the_three_owed_derivations_are_one_boundary.py	"7.4\\times10^"	TOKEN	DELIBERATE	False	True
+receipts/L221_the_bridge/B12_the_two_triples_are_typed_differently.py	"1/\\sqrt3$ and the one distinguished by the merger is $-2/\\sqrt3$"	SENTENCE	DELIBERATE	False	True
+receipts/L221_the_bridge/B31_the_wall_reason_is_too_narrow.py	"F\\equiv0"	TOKEN	ALT-OK	False	True
+receipts/L258_the_pin_and_the_thing_that_moves/M1_five_checks_pinned_to_things_that_move_and_one_that_no_control_could_separate.py	"(\\d+) pass, (\\d+) fail"	SENTENCE	NOT-A-PIN	False	True
+receipts/L558_the_second_duplication/D1_the_same_four_rows_the_second_merge_running_and_this_time_it_unclosed_a_struck_item.py	"\\|\\s*~~"	TOKEN	NOT-A-PIN	False	True
+receipts/L_probability/S56_a_pin_is_only_as_good_as_what_resolves_it_and_one_reference_over_resolved_while_the_other_under_resolved_so_both_wanted_the_fact_committed_beside_the_measurement.py	"^\\s*(?:OWN|OWN_C)"	TOKEN	DELIBERATE	False	True
+receipts/P12_algebroid/A5_the_dark_halves_audited.py	"\\|\\s*~~"	TOKEN	ALT-OK	False	True
+receipts/P15_CR_cosmology/C28_length_against_angle.py	"(?m)^th_ratio\\s*=\\s*(1\\.\\d+)"	TOKEN	DELIBERATE	False	True
+receipts/P15_CR_cosmology/C48_the_pairs_are_three.py	"assert\\s+abs\\(\\(1\\+zo\\)/3402"	TOKEN	DELIBERATE	False	True
+receipts/P15_CR_cosmology/P15_the_background_returns_the_larger_stretch_so_2774_is_the_constructions_and_the_stale_trio_is_a_configuration_not_a_slip_but_the_figures_name_two_of_them.py	"mp\\.mpf\\('([0-9.]+)'\\) < e < mp\\.mpf\\('([0-9.]+)'\\)"	TOKEN	DELIBERATE	False	True
+receipts/P15_CR_cosmology/P15_the_composition_route_is_answered_negative_too_because_the_eigenvalue_divergence_lives_on_the_leg_the_transport_never_traverses_and_the_odd_ladder_arrives_suppressed_rather_than_absent.py	"\\varepsilon\\to0$` at the seam RAISES every eigenvalue"	SENTENCE	ALT-OK	False	True
+receipts/P15_CR_cosmology/P15_the_fitted_onset_is_the_wrong_clocks_artefact_because_the_stacking_ruler_keeps_a_square_root_memory_of_the_start_and_the_leaf_ruler_keeps_none.py	"xe_history\\(lambda z: Hrec\\(1 / \\(1 \\+ z\\)\\)"	SENTENCE	DELIBERATE	True	False
+receipts/P15_CR_cosmology/P15_the_kernels_phase_difference_between_the_arms_is_four_orders_below_the_residual_so_the_projection_is_cleared_and_a_sixth_of_the_scale_is_common_mode.py	"+0.06^{\\circ}$` across"	TOKEN	DELIBERATE	False	True
+receipts/P15_CR_cosmology/P15_the_kernels_phase_difference_between_the_arms_is_four_orders_below_the_residual_so_the_projection_is_cleared_and_a_sixth_of_the_scale_is_common_mode.py	"-17^{\\circ}"	TOKEN	DELIBERATE	False	True
+receipts/P15_CR_cosmology/P15_the_kernels_phase_difference_between_the_arms_is_four_orders_below_the_residual_so_the_projection_is_cleared_and_a_sixth_of_the_scale_is_common_mode.py	"0.01^{\\circ}$` to `$0.3^{\\circ}"	SENTENCE	DELIBERATE	False	True
+receipts/P15_CR_cosmology/P15_the_low_ell_minimum_is_at_ell_four.py	"depth\\s*=\\s*\\{([^}]*)\\}"	TOKEN	DELIBERATE	False	True

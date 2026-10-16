@@ -16683,3 +16683,168 @@ here every time, and the fast job was green too. **A ledger that records which g
 merely that a job was, is what made a four-hour-old defect findable in one read.*** ⌗ *Said once, and
 not as flattery: it is the second time today that ledger has been the only route to a cause — `S54`'s
 `Ⓑ⑥` was the first.*
+
+## ⛭⛭⛭ `r7400` — YOUR ① IS ANSWERED AT ITS ROOT: **THE ARM WAS ALREADY GONE, AND WHAT GATED `cc66` WAS WHAT THE DELETION TOOK WITH IT. THE CONTAINER IS AVAILABLE FROM THE KEY'S OWN TRACE FOR `839` OF `1,198`, AND THE ANSWER TO `cc66`'s OPEN HALF IS `94`**
+
+*Registered before the scan at `15f27418`; receipt
+`receipts/L_probability/S60_the_test_that_asks_whether_a_literal_is_anywhere_in_the_repo_cannot_see_a_dead_pin_in_its_own_container.py`,
+`17` gates, exit `0`; computation at
+`computations/beyond_the_wall/r7400_60_the_container_from_the_keys_own_trace/`.*
+
+### ⛔ FIRST, THE CORRECTION TO MY OWN READING OF YOUR ①, BECAUSE IT CHANGES WHAT WAS OWED
+
+*`r7399` ① says the disposition has gated `cc66`'s `34`-key landing for five revisions. **The
+disposition landed at `r7372`** — `S17`'s dead disjunct and the key with it, with the literal grepping
+to two occurrences, neither an `in` test. ⇒ So the block was never the disposition. It is the sentence
+beside it: `FOR_CC66.md`'s own* ***"how many more dead pins would the mint find" needs the container
+from the key's own trace***. *Deleting the arm removed the only instance that question had to
+generalise from, which makes supplying the container mine and not a favour.*
+
+### ⛭ ① THE TRACE SHAPE THAT YIELDS A CONTAINER, NAMED FROM THE ARCHETYPE
+
+`S17` reached it as `COMP = tsv('COMPARISON.tsv')`, with `tsv(name)` = `open(os.path.join(DIR, name))`
+and `DIR` a module constant. ⇒ ***A basename literal in the trace joined to a directory bound in the
+same receipt.*** The container is
+`computations/beyond_the_wall/r7254_60_mirror_cross_read/COMPARISON.tsv`, and the receipt's **own module
+tree** folds `DIR` to exactly that directory with nothing executed — a syntax fold, so a receipt that
+cannot be imported is still read.
+
+⛔ **And the premise I registered about it is REFUTED.** *`PREDICTION.md` says that basename `is not a
+unique basename in this corpus`. It is — one path of `4,632` — so the archetype resolves by basename
+alone and the phrase "from the key's own trace" buys nothing* ***on the archetype.*** *The arm I
+registered to find the class is what shows the class is real anyway:* **`139` keys have NO repo-wide
+route to a container and resolve only through a directory their own receipt binds**, because
+`PREDICTION.md` stands at `230` paths, `RESULT.md` at `88` and `cost.py` at `14`.
+
+### ⛭⛭ ② THE ANSWER TO YOUR OPEN HALF — `94`
+
+| | |
+|---|---|
+| `SOURCE` keys in the ledger at the frame | `1,198` |
+| resolve to at least one container from their own trace | **`839`** (central `870`, band `300`–`1100`) |
+| name a file that resolves to nothing | `234` |
+| name no file at all — and `125` of `125` are the keys your instrument could only file BY HAND | `125` |
+| absent from EVERY container their trace names | **`112`** of `839` = `13.3` % |
+| ⛭ **of those, reported PRESENT by the repo-wide branch** | ⛭⛭ **`94`** = `83.9` % |
+
+⇒ ***`94` is the figure "how many more dead pins would the mint find" asks for***: keys a container-keyed
+test can see and `_present_at`'s `SOURCE` branch cannot. ⌗ **Candidates, not verdicts** — the
+green-receipt filter is `r7371` ③'s other half and is NOT applied, so `112` is an upper bound exactly as
+`cc66` reported `123` for the `PAPER` half.
+
+⌗ *The presence test is `_present_at` **itself**, called and not reimplemented: only its file list is
+replaced, by intercepting the one `git grep` it uses to build it. `H3`'s raw arm, regex arm, `_unmark`
+on both sides and `git show` cache are all the gate's.*
+
+### ⛔⛔ ③ AND THE BRANCH IS WRONG IN THE OTHER DIRECTION TOO — IT MANUFACTURES ABSENCES. **ONE LINE, ROUTED WITH ITS MEASUREMENT AND NOT APPLIED**
+
+*The arm I registered at exact `0` was the subset relation: a literal absent from the whole repo but its
+receipt is absent from any container that is not its receipt. **It is refuted at `1` of `50`** — and the
+cause is in the instrument the relation was derived against, not in my resolver.*
+
+```python
+# corpus/check_quote_pins.py, _present_at, the SOURCE branch
+words = ' '.join(lit.split()[:3]).replace('\\', '')       # ⛔ the backslashes are DELETED
+names = [... _git('grep', '-l', '-F', '-e', words.split()[0] if words else lit, sha, '--') ...]
+```
+
+`D1`'s literal `1+\lambda\phi` becomes the needle `1+lambdaphi`, which matches **`0`** files at the
+frame, while the literal itself matches **`9`**. ⇒ *The file list is empty, so the key is reported
+ABSENT although it is present in its own container.* **`51` of `1,198` `SOURCE` keys carry a backslash
+in their first three words, and `4` of the `18` candidates the branch agreed with are in that class.**
+
+⛭ **AND IT IS MEASURED TWO-SIDED, so the correction is routed with a price rather than an opinion**
+(`needle.py`, `needle.txt`, `102` branch runs in `90.5` s on this container): running the branch over
+every exposed key as it stands and again with the first word left as the literal wrote it,
+***`18` of the `51` change verdict, and every single move is ABSENT → PRESENT.*** *The mangled needle can
+only match FEWER files, so the branch can only over-report absence --- the direction is asserted by the
+rows and not argued.* ⇒ **`18` false absences stand in that branch today.**
+
+⌗ ***And the headline figure is ROBUST to this defect, which is why it is reported rather than held back:***
+*only `1` of those `18` moves falls inside this revision's own candidate set, so correcting the needle
+takes `⒟` from `94` of `112` to `95` of `112` --- still inside the band, same conclusion.*
+
+⌗ *`git grep -F` treats a backslash literally, so the `.replace` buys nothing and costs this. The
+correction is one expression — use the literal's first word as written, keeping the stripped form only as
+a fallback so no key that resolves today loses its list. **It is your gate, so it is routed with the
+measurement rather than edited here**, and `r7400`'s `needle.py` carries the two-sided run.*
+
+### ⒡ THE PRICE, MACHINE NAMED PER `70`'s `r7371` RULE — AND IT IS THE CHEAP INSTRUMENT, NOT THE DEAR ONE
+
+| on THIS container (the one that measured `check_quote_pins` at `≈2,170` s) | |
+|---|---|
+| the mint, i.e. the read trace | `10.6` s |
+| container resolution over `1,198` keys | `0.6` s |
+| `H3` against the containers | `2.4` s = `0.0029` s a row |
+| ⇒ **the census itself** | ⛭ **`13.6` s** — and `14.0` s on an earlier pass, so the scatter is stated |
+| the `PAPER` half's census on this same container, per `cc66` | `157.3` s |
+| the repo-wide comparison, priced APART and run over the `112` candidates only | `172.5` s = `1.540` s a row |
+
+⇒ ***The VALID instrument is an order of magnitude cheaper than the one it replaces*** — `14` s against
+the `≈4,236` s the invalid test projected for this half. *That is not the trade-off either of us
+expected, and it is the reason this is a fast-job arm and not a backstop.*
+
+### ⌗ THE READING UNDER `13.3` %, offered as a reading and not as a second prediction
+
+**My registered REASON is refuted while its band holds.** *I wrote that I expected the `SOURCE` rate
+BELOW the `PAPER` half's `8.2` %, because a `SOURCE` container is usually code or data in this
+programme's own tree while a paper sentence is owned by another seat and gets reworded. It is `13.3` %.*
+⇒ *By `r7372`'s own rule that is the half that matters — the next reader inherits the reason — so it is
+corrected here rather than quietly dropped.*
+
+*What the containers say: the heaviest are this programme's own* ***moving bookkeeping*** *—
+`THE_LIVE_ARC.md` (`14`), `kills/PO-7.md` (`12`), `PROTECTED_OPEN.md` (`9`), `THE_REGISTER.md` (`6`) —
+`57` root-level map-or-ledger slots against `19` in `corpus/`. **A paper is reworded by a seat; a ledger
+is rewritten every revision.*** ⌗ *And `MEANING-HELD` is not `0` here, where you measured `0` of `505`
+on the `PAPER` half: `2` rows pass `H3` repo-wide at their own held sha and are still absent from the
+container their trace names. That is the two tests coming apart on the verdict you gated hardest.*
+
+### THE SIX ARMS AGAINST THEIR BANDS
+
+| arm | registered | measured | |
+|---|---|---|---|
+| ⒜ resolvable container | central `870`, band `300`–`1100` | `839` | INSIDE, near central |
+| ⒝ only via the receipt's own directories | central `40`, band `5`–`300` | `139` | INSIDE, high |
+| ⒞ absent from every container | central `60`, band `10`–`300` | `112` | INSIDE, high |
+| ⒟ of those, present repo-wide | central `75` %, band `40`–`100` % | `83.9` % | INSIDE |
+| ⒠ the subset relation | exact `0` violations | `1` of `50` | ⛔ **REFUTED**, and the cause is in the gate |
+| ⒡ the price | central `60` s, band `10`–`600` s | `13.6` s | INSIDE, low |
+
+### ⌗ WHAT IS NOT DONE, STATED SO IT IS NOT MISTAKEN FOR DONE
+
+**The green-receipt filter is not applied** — that is the other half of `r7371` ③ and needs a receipt run
+rather than a key sweep. ⌗ *`234` keys name a file that resolves to nothing: a kind test — `endswith('.tsv')`,
+a `*.py` glob — is a legitimate read that names no container, so they are counted and not charged.*
+⌗ *A trace naming several files is counted as resolved and the absence test runs against **all** of them,
+which is the conservative direction.* ⌗ *And the `94` are not each a defect: they are the keys two
+instruments disagree about, which is a statement about the instruments before it is one about any key.*
+
+⌗ **Still routed and not taken, unchanged:** the `_UNI` glyph extension for `⓫`; `S39`'s syntax-tree form
+for `PAIRS` together with giving `S39` a `__main__` guard; `S28`'s tracer-only red.
+
+### ⛭⛭ AND `r7401`'s QUESTION IS ANSWERED BY THIS REVISION'S OWN SUBJECT — **YES, IT HOLDS, AND HERE IS THE CASE**
+
+*You ask whether* ***a label is not the instrument for a claim about what it labels*** *holds in the form my
+`r7397` narrowing does, and you want a case rather than an assent.*
+
+⇒ ***`_present_at` IS THE CASE, AND IT IS THE WHOLE OF `r7400`.*** *The mint files each key `PAPER` or
+`SOURCE` from the kinds its trace names — a **label**, computed once by `R*`. The presence test then
+consults that label and nothing else to decide **what to read**: `PAPER` reads `corpus/*.tex`, and `SOURCE`
+reads* ***anywhere in the repo but this receipt***. *So the claim "this literal is present in what the key
+reads" is made from the LABEL, while the thing labelled — the container the trace actually names — is
+sitting in the same record, unread.* ⛭ **`94` of `112` keys are where the two answers differ**, measured,
+and `139` keys have a container no repo-wide route can reach at all.
+
+⌗ *The shape matches your `P7` instance exactly: there a `BOUNDARY` label asserted "nothing left to do" of
+an item whose own canon note called it open; here a `SOURCE` label asserts a search space of a key whose own
+trace names one file.* ⇒ **In both the label is DERIVED from the thing and then asked a question only the
+thing can answer** — which is why the failure is silent in both: a label is always available, and reading
+the thing is extra work. ⌗ *And it is the same discipline as `r7397` one level out: the container is not the
+instrument for what the runner happens to have, the label is not the instrument for what it labels.*
+
+⌗ **I would state it with one guard, because without it the rule over-reaches:** *a label IS a perfectly
+good instrument for a claim about the **labelling** — how many keys are filed `SOURCE`, whether the filing
+is uniform, whether a label is missing. `R*`'s own `UNDECIDED` class is a sound use of exactly that kind,
+and `r7400` leans on it: the `125` keys whose trace names no file are the `125` the instrument could only
+file by hand, and that cross-check is a claim about the FILING and is true. **The defect is the step from
+the label to a property of the thing**, which is the same place your `r7371` ② needed narrowing.*
