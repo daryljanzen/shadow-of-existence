@@ -20752,3 +20752,80 @@ says it* "Maintains P7 tab:dependency-matrix + BOOK_INTRO_cosmiCave/assets/depen
 that would get those ten cells wrong, and it prints a full* `HTML STYLED TABLE` *block inviting exactly that
 paste.* **Cosmetic in effect — a shade band, not a count — which is why I am reporting it rather than editing
 a generator nobody asked me to touch.** *Your call whether the two bandings should be one.*
+
+## ⛭⛭ `r7405+cc66.63` — **① MEASURED: `0` NEW ONE-STATE VIOLATIONS AT THE 16. ⛭ AND THE DELIVERABLE IS NOT THE COUNT — IT IS THAT THE DISCRIMINATOR FOR THIS CLASS IS *ASPECT*, NOT VOCABULARY, WHICH IS WHY NO WORD-NET COULD EVER HAVE FOUND IT**
+
+*Registered before any site was re-read (`r7405_cc66_the_one_state_split/REGISTRATION.md`, pushed first).
+**PR #468, draft, subscribed** — #464 merged while `.61` was in flight, so the branch was restarted from
+`eab95d8a6` with `.61` carried across, patch-id verified identical. Nothing discarded.*
+
+### ⛔ ⒜ THE NUMBERS, AND THREE OF FIVE PREDICTIONS ARE REFUTED
+
+| | | registered | **measured** | |
+|---|---|---|---|---|
+| ⒜ | one-state violations among the 16 (incl. ruled row `24`) | central **3**, band 1–6 | **`1`** | ⛔ central **REFUTED**, band held at its floor |
+| ⒝ | classification errors among the 16 | central **0**, band 0–2 | **`0`** | ✔ HELD |
+| ⒞ | your prior ⒜ > ⒝ | HOLDS | **HOLDS** (`1`>`0`) | ✔ held — *on no new evidence, as registered* |
+| ⒟ | of ⒜, those at sites ⓬ scored `AGREES` | central **1**, band 0–4 | **`0`** | ⛔ central **REFUTED** |
+| ⒠ | row `35` reclassifies to one-state | **YES** | **NO — neither class** | ⛔ **REFUTED** |
+
+⇒ ***The only one-state violation in the population is row `24`, which you had already ruled and fixed.
+`0` new candidates means there is nothing here for you to rule.*** ⌗ *And every refutation runs the same
+direction — fewer defects, and a better-behaved arm than I predicted.*
+
+⌗ One correction to ⓬'s own count, not to its result: **the 16 sites are `14` distinct passages.** Row `27`
+shares `25`'s and row `38` shares `35`'s.
+
+### ⛭⛭ ⒝ THE FINDING, AND IT IS THE MIRROR OF ⓬'s
+
+**The vocabulary net cannot score this class at all.** Run against the ruled instance before and after your
+fix it returns ***the same two fragments either way***:
+
+- **PRE-FIX** — *"One scope qualification **is owed immediately, and closing it is what makes** the classical
+  reading a result rather than an inference."*
+- **POST-FIX** — *"One scope qualification **belongs with** Prop. `prop:amplitude` **and is closed in this
+  section**, which is what makes…"*
+
+Both carry `qualification`. ⇒ ***The debt vocabulary is IDENTICAL on the defect and on its repair.*** ⌗ ⛭ *So
+`r7401` ⓬'s conclusion arrives from the opposite side: there, a classification defect no word-net could catch;
+here, a one-state defect no word-net can **distinguish from its own fix**. Two different classes, the same
+reason.*
+
+**What separates them is the ASPECT of the discharge clause.** The violation announces the debt and leaves the
+discharge **prospective** (*"closing it is what makes…"*); the repair states it **completed** (*"is closed in
+this section"*). `aspect.py` encodes that — a debt term, **plus** a prospective discharge, **minus** a
+completed one — and it **flags the pre-fix sentence and not the post-fix form**.
+
+⛔ ***Bound on ONE instance, so its false-negative rate is unmeasured and the `0` it returns over the 16 is
+exactly as strong as that single test and no stronger. I am not offering it as a gate.*** *What I am offering
+is the form, because it is checkable and the vocabulary route is provably not.*
+
+### ⒞ WHY THE `0` IS NOT THE NET AGREEING WITH ITSELF
+
+Two routes, neither the other's check, both reaching `0`. ⒤ The vocabulary net surfaced **12 debt sentences**
+over the 14 passages, `8` of 14 carrying at least one, and **I read every one**: each states a status once — a
+limit named as a limit (`31`), an item named as owed and left so (`25`/`27`: *"named here as owed and
+developed in neither this paper nor the bead"*), or a qualification raised and settled **in the same breath**
+(`23`). ⒥ The aspect net, built without reference to that reading, returns `0`.
+
+### ⛔ ⒟ ⒠ REFUTED, WITH THEIR REASONS — AND ⒟ IS THE ONE THAT MATTERS
+
+**⒠.** I predicted row `35` would reclassify. **It is neither class.** The section introduces that item as
+*"**one that is sharper here than in the field, and is answered rather than owed**"* — status given in the
+clause that introduces it, which is the one-state form — and closes *"this section is **the weighing rather
+than the list**."* ⇒ *The heading names the section's SUBJECT, not a status claim about each item under it.*
+⌗ ⛔ *My prediction mistook a declared mismatch for a defect — the error ⓬'s own `DISAGREES-DECLARED` label
+exists to prevent, and I made it anyway.*
+
+**⒟.** I registered that this, not ⒞, was the informative number: a one-state violation at a site ⓬ scored
+`AGREES` is a defect its arm is blind to by construction. **It measured `0`.** ⇒ ***At these sites the class
+is NOT invisible to ⓬'s arm.*** *Its single candidate was precisely the site carrying the defect. So your
+`r7405` ruling now has a denominator: `1` of `1` candidates was a real defect, and `0` of the `14` passages
+the arm cleared hid one.*
+
+### ⌗ AND ON ⒞, WHICH I FLAGGED IN THE REGISTRATION RATHER THAN AFTER SCORING IT
+
+⒞ was decided at `1`–`0` by the ruling that produced the class, before a single site was re-read; the scan
+could only refute it by finding **two or more** classification errors. ⌗ *It held, and it held on nothing the
+scan contributed. I would rather have said that in the registration than claim it as a result here — which is
+why it is in both.*
