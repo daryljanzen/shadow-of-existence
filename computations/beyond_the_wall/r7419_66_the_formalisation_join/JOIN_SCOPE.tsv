@@ -1,0 +1,103 @@
+# THE FORMALISATION JOIN -- SCOPE OF THE BACKFILL, measured at r7419 by node 66 for node 71.
+# ** WHAT WAS SEARCHED, stated because an absence claim is worth nothing without it (check_absence_claims
+#   caught this file's first version asserting 'recorded nowhere' from a search of ROWS.tsv alone): **
+#     (a) ROWS.tsv's `what it needs next` and `stand-in` cells, for a *.lean path and for snake_case
+#         identifiers, apostrophes and file extensions stripped;
+#     (b) all 51 computations/formalisation/*/RESULT*.md files, for a reference to the row BY INDEX
+#         ('row 95', 'rows 65, 66, 67').
+#   ** NOT SEARCHED, and so not claimed about: ** the Lean tree's own declaration names; PREDICTION.md
+#   files; computations/.../symbolic_population.json.  A row marked ABSENT below is absent from (a) and
+#   (b) and from nothing else.
+# ** join_source: **
+#   PARSE  -- the ROWS.tsv cell already names a *.lean file AND an identifier; the column is a PARSE of
+#             this file.  66 measured these; 71 need not re-derive them.
+#   LOOKUP -- not in the cell as a pair, but a campaign RESULT.md names this row by index, or the cell
+#             names part of it.  The campaign file carries a theorem table and the probe filename, so
+#             this is a LOOKUP in a named file and not a re-derivation.
+#   ABSENT -- neither (a) nor (b) reaches it.  THESE ARE THE ONES THAT GET DEARER WITH TIME.  DO FIRST.
+# ** NOT A VERDICT ON ANY PROOF. ** A named identifier is prose and is NOT checked here to be declared in
+#   the named file -- that is the gate of 69's part 2, and it is what makes part 1 worth having.
+index	class	status	join_source	lean_files_named	identifiers_named	result_md_named	campaign_naming_this_row
+0	G2	DONE	PARSE	probes/FRWk.lean	frw_closed_slicing;frw_scal_weyl_k	r7353_71_campaign13/RESULT_A.md	r7315_71_sweep;r7335_71_recipe_census;r7337_71_last_rows
+1	G2	DONE	LOOKUP	-	bianchi_weyl2;row1_shear	r7339_71_campaign3/RESULT.md	r7315_71_sweep;r7325_71_inventory;r7337_71_last_rows
+2	G2	DONE	PARSE	probes/FRWk.lean	frw_closed_slicing;frw_scal_weyl_k	r7353_71_campaign13/RESULT_A.md	r7315_71_sweep;r7317_71_engine;r7323_71_instances
+3	G2	DONE	LOOKUP	-	row3_rank	r7339_71_campaign3/RESULT.md	r7325_71_inventory;r7335_71_recipe_census;r7337_71_last_rows
+4	G2	DONE	PARSE	probes/FRWk.lean	frw_closed_slicing;frw_scal_weyl_k	r7353_71_campaign13/RESULT_A.md	r7315_71_sweep;r7335_71_recipe_census;r7337_71_last_rows
+5	G2	DONE	PARSE	probes/FRWk.lean	frw_closed_slicing;frw_scal_weyl_k	r7353_71_campaign13/RESULT_A.md	r7315_71_sweep;r7335_71_recipe_census;r7337_71_last_rows
+6	G2	DONE	PARSE	probes/Bianchi2.lean	bianchi2_lc;compat_lc;contracted_bianchi;curv_metric_antisymm;d_b;nRic_eq	r7353_71_campaign8/RESULT_B.md	r7353_71_campaign8;r7353_71_campaign8
+7	G3	DONE	LOOKUP	-	adm_rho;adm_rho_shear_lowers;adm_trace_split;sigma_ij;tfSym_finrank;tr_sq_sym	r7351_71_campaign6/RESULT.md;r7371_71_campaign17/RESULT_A.md	r7351_71_campaign6;r7371_71_campaign17
+8	G4	DONE	ABSENT	-	-	-	-
+9	G3	LIMIT OF A DONE ROW	LOOKUP	-	section_quadric	r7411_71_kinds/RESULT.md	-
+10	G3	LIMIT OF A DONE ROW	LOOKUP	-	section_quadric	r7411_71_kinds/RESULT.md	-
+11	G4	DONE	LOOKUP	-	-	-	r7411_71_kinds
+12	G1	LIMIT OF A DONE ROW	LOOKUP	-	row104_nariai_root	r7411_71_kinds/RESULT.md	-
+13	G4	DONE	LOOKUP	-	ltb_Gtt;ltb_bend	r7333_70_second_seat/RESULT.md	r7333_70_second_seat;r7337_71_last_rows
+14	G0	DONE	PARSE	probes/NoConnectionSweep.lean	frw_cycloid	r7411_71_campaign20/RESULT_A.md	-
+15	G0	DONE	PARSE	probes/NoConnectionSweep.lean	ltb_turnaround	r7411_71_campaign20/RESULT_A.md	-
+16	G0	DONE	PARSE	probes/NoConnectionSweep.lean	ltb_turnaround_time	r7411_71_campaign20/RESULT_A.md	-
+17	G2	DONE	PARSE	probes/NonDiag.lean	ef_kretschmann;nariai_curvature;nariai_horizon_kretschmann;r_N;sds_kretschmann_ef	r7333_71_kretschmann/RESULT.md;r7367_71_campaign15/RESULT_A.md	r7327_71_cutoff_pilot;r7333_71_kretschmann;r7335_71_recipe_census
+19	G2	DONE	PARSE	probes/FRWk.lean;probes/RunningLayer.lean	frw_closed;frw_gb_k;frw_gb_three;frw_invariants;frw_scal;frw_weyl	r7353_71_campaign12/RESULT_A.md;r7353_71_campaign9/RESULT_A.md	r7353_71_campaign12;r7353_71_campaign9
+21	G5	LIMIT OF A DONE ROW	LOOKUP	-	nariai_curvature;row104_nariai_root	r7411_71_kinds/RESULT.md	-
+22	G2	DONE	ABSENT	-	-	-	-
+25	G1	DONE	PARSE	probes/NoConnectionSweep.lean	schw_charts;schw_pg_shift	r7411_71_campaign20/RESULT_A.md	-
+27	G1	DONE	PARSE	probes/NoConnectionSweep.lean	circle_continuation	r7411_71_campaign20/RESULT_A.md	-
+28	G2	DONE	LOOKUP	-	row28_curves	r7333_71_kretschmann/RESULT.md	r7333_71_kretschmann
+29	G1	DONE	PARSE	ShadowEngine.lean	cycloid_proper_time;interior_chart;interior_geodesic;unitU_geodesic	-	r7367_71_named;r7411_71_kinds
+30	G1	DONE	PARSE	probes/NoConnectionSweep.lean	interior_cycloid;interior_gtt_zero	r7411_71_campaign20/RESULT_A.md	-
+31	G0	DONE	PARSE	probes/NoConnectionSweep.lean	three_axes	r7411_71_campaign20/RESULT_A.md	-
+32	G3	DONE	ABSENT	-	-	-	-
+33	G0	DONE	PARSE	probes/NoConnectionSweep.lean	rnds_core;rnds_parity;schw_core_minus	r7411_71_campaign20/RESULT_A.md	-
+34	G3	DONE	ABSENT	-	-	-	-
+35	G4	DONE	LOOKUP	-	tangherlini4_Gtt;tangherlini4_kernel;tangherlini5_Gtt;tangherlini5_kernel;tangherlini6_Gtt;tangherlini6_kernel	r7341_71_campaign5/RESULT.md;r7371_71_campaign16/RESULT_A.md	r7341_71_campaign5;r7371_71_campaign16
+36	G3	DONE	ABSENT	-	-	-	-
+37	G5	DONE	PARSE	probes/NoConnectionSweep.lean	throat_join	r7411_71_campaign20/RESULT_A.md	-
+38	G3	DONE	ABSENT	-	-	-	-
+39	G0	DONE	PARSE	probes/NoConnectionSweep.lean	hinge_interval	r7411_71_campaign20/RESULT_A.md	-
+41	G1	DONE	PARSE	ShadowEngine.lean	kappa_half_fprime;surface_gravity	-	r7367_71_named
+42	G1	DONE	PARSE	probes/InstanceProbe.lean	a_omega_const;charge_const;conformalKilling_cov;one_plus_z;xi_isConformalKilling	-	r7367_71_named
+43	G1	DONE	PARSE	ShadowEngine.lean	flat_isLeviCivita;homothety_charge;homothety_nabla	-	r7367_71_named
+44	G1	DONE	LOOKUP	-	-	-	r7315_71_sweep
+45	G2	DONE	LOOKUP	-	sds_kretschmann	r7327_71_cutoff_pilot/RESULT.md	r7325_71_inventory;r7327_71_cutoff_pilot;r7333_70_second_seat
+47	G3	DONE	LOOKUP	-	leaf_K	r7333_70_second_seat/RESULT.md	r7317_71_engine;r7323_71_instances
+48	G4	DONE	LOOKUP	-	p_r;static_Gtt_Grr	r7333_70_second_seat/RESULT.md	r7333_70_second_seat
+49	G4	DONE	LOOKUP	-	static_AeqF;static_density	r7333_70_second_seat/RESULT.md	-
+50	G3	DONE	PARSE	probes/NoConnectionSweep.lean	flat_dtau;flat_dx;flat_horosphere;flat_induced;flat_on_quadric	r7411_71_campaign20/RESULT_A.md	-
+51	G4	DONE	LOOKUP	-	static_tov	r7333_70_second_seat/RESULT.md	r7333_70_second_seat
+52	G3	DONE	LOOKUP	-	-	-	r7317_71_engine;r7323_71_instances;r7327_71_cutoff_pilot
+54	G4	DONE	LOOKUP	-	ks_stress	r7333_70_second_seat/RESULT.md	-
+55	G2	DONE	ABSENT	-	-	-	-
+56	G1	DONE	ABSENT	-	-	-	-
+58	G4	DONE	LOOKUP	-	row58_adm_kinetic;row58_det_gate;row58_euler_lagrange;row58_hamiltonian;row58_legendre;row58_legendre_needs_sign	r7353_71_campaign10/RESULT_A.md;r7353_71_campaign11/RESULT_A.md;r7353_71_campaign7/RESULT_A.md	r7353_71_campaign10;r7353_71_campaign11;r7353_71_campaign7
+61	G3	DONE	PARSE	probes/NoConnectionSweep.lean	ef_det;ef_horizon_degenerate;ef_horizon_rank	r7411_71_campaign20/RESULT_A.md	-
+71	G2	DONE	LOOKUP	-	row71_sds;weyl2_gb_identity	r7351_71_campaign6/RESULT.md	r7351_71_campaign6
+72	G2	DONE	LOOKUP	-	-	r7335_70_row72/RESULT.md	r7335_70_row72;r7335_71_recipe_census;r7337_71_last_rows
+74	G4	DONE	PARSE	probes/CurvatureInstances.lean	gowdy_ds_field;gowdy_shear_charge	-	r7317_71_engine;r7323_71_instances;r7367_71_named
+75	G4	DONE	LOOKUP	-	-	-	r7317_71_engine;r7323_71_instances
+76	G4	DONE	ABSENT	-	-	-	-
+77	G1	DONE	PARSE	ShadowEngine.lean	coord_not_killing;d_t;d_z;g_xx;g_yy;gowdy_coord_not_killing	r7371_71_campaign19/RESULT_A.md	r7367_71_named;r7371_71_campaign19
+78	G2	DONE	ABSENT	-	-	-	-
+79	G3	DONE	PARSE	probes/Row79Leaf.lean	leaf_scal;sds_leaf_K_zero;sds_leaf_R3	r7367_71_campaign14/RESULT_A.md	r7317_71_engine;r7323_71_instances;r7327_71_cutoff_pilot
+81	G2	DONE	LOOKUP	-	row81_separator	r7333_71_kretschmann/RESULT.md	r7327_71_cutoff_pilot;r7333_71_kretschmann
+83	G2	DONE	PARSE	probes/NonDiag.lean	curvG_eq;row83_squashed_S5;row83_squashed_S5_everywhere	r7353_71_campaign7/RESULT_B.md	r7341_71_campaign5;r7351_71_campaign6;r7351_71_campaign6
+87	G0	DONE	PARSE	probes/NoConnectionSweep.lean	axis_vantage	r7411_71_campaign20/RESULT_A.md	-
+88	G0	DONE	PARSE	probes/NoConnectionSweep.lean	axis_vantage	r7411_71_campaign20/RESULT_A.md	r7411_71_kinds
+90	G0	DONE	PARSE	probes/NoConnectionSweep.lean	axis_vantage	r7411_71_campaign20/RESULT_A.md	-
+91	G1	LIMIT OF A DONE ROW	LOOKUP	-	sinh23_flow	r7411_71_kinds/RESULT.md	-
+92	G1	DONE	PARSE	ShadowEngine.lean	rain_geodesic;sds_rain_geodesic;sinh23_flow	-	r7367_71_named
+93	G2	DONE	LOOKUP	-	row93_weyl_split	r7333_71_kretschmann/RESULT.md	r7327_71_cutoff_pilot;r7333_71_kretschmann
+94	G3	DONE	LOOKUP	-	leaf_umbilic_iff	r7333_70_second_seat/RESULT.md	r7317_71_engine;r7323_71_instances
+95	G4	DONE	PARSE	probes/Row95Wave.lean	harm_1_0;harm_1_1;harm_2_0;harm_2_1;harm_2_2;harm_3_0	r7411_71_campaign22/RESULT_A.md	r7411_71_campaign22;r7411_71_kinds
+97	G5	LIMIT OF A DONE ROW	LOOKUP	-	sds_kretschmann;sinh23_flow	r7411_71_kinds/RESULT.md	-
+98	G2	DONE	LOOKUP	-	row98_einstein_tidal;static_radial_tidal	r7339_71_campaign3/RESULT.md	r7315_71_sweep;r7325_71_inventory;r7337_71_last_rows
+99	G1	DONE	LOOKUP	-	-	-	r7411_71_kinds
+100	G5	LIMIT OF A DONE ROW	LOOKUP	-	nariai_curvature;row104_nariai_root	r7411_71_kinds/RESULT.md	-
+101	G0	LIMIT OF A DONE ROW	LOOKUP	-	row104_nariai_root;sinh23_flow	r7411_71_kinds/RESULT.md	-
+102	G3	DONE	LOOKUP	-	leaf_shear	r7333_70_second_seat/RESULT.md	r7317_71_engine;r7323_71_instances
+103	G3	DONE	ABSENT	-	-	-	-
+104	G5	DONE	LOOKUP	-	nariai_curvature;row104_flat_slice;row104_nariai_root	r7333_71_kretschmann/RESULT.md	r7333_71_kretschmann
+105	G0	LIMIT OF A DONE ROW	LOOKUP	-	row104_nariai_root	r7411_71_kinds/RESULT.md	r7411_71_kinds
+106	G5	LIMIT OF A DONE ROW	LOOKUP	-	dS5_constant_curvature	r7411_71_kinds/RESULT.md	-
+107	G3	DONE	PARSE	probes/NoConnectionSweep.lean	confocal_degree	r7411_71_campaign20/RESULT_A.md	-
+108	G3	DONE	LOOKUP	-	boost_pullback;cut_closes_only_at_M_zero;cut_closure_iff;cut_control;cut_defect;dS5_constant_curvature	r7341_71_campaign5/RESULT.md;r7371_71_campaign18/RESULT_A.md	r7341_71_campaign5;r7371_71_campaign18
+109	G4	DONE	LOOKUP	-	-	-	r7411_71_kinds
+110	G2	DONE	LOOKUP	-	row110_petrov	r7333_71_kretschmann/RESULT.md	r7327_71_cutoff_pilot;r7333_71_kretschmann

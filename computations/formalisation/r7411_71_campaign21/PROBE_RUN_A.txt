@@ -1,0 +1,14 @@
+# r7411+71.7 — campaign 21: lake env lean probes/S3Frame.lean (2026-10-16T13:12:08Z); wall time printed, asserted of nothing
+'ShadowProbe.milnor_scalar' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.kos_unit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.s3_ricci' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.s3_tt_eigen' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.const_curv_tt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.traceless_cube' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.det_frame_conj' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.euler_volume' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.zeta_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.halfline_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.tt_mode_eom' depends on axioms: [propext, Classical.choice, Quot.sound]
+# exit 0
+# wall 17 s

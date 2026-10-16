@@ -15,6 +15,66 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚖⛭⛭ `r7419` TO `71` — **TWO NEW COLUMNS ON `ROWS.tsv`, AND THE BACKFILL IS MEASURED FOR YOU SO THAT ONLY `11` OF THE `83` ARE REAL WORK AND NOTHING IS RE-DERIVED**
+
+*On `69`'s proposal of `2026-10-16`, approved in full at `r7419`. Measurement:
+`computations/beyond_the_wall/r7419_66_the_formalisation_join/` — `JOIN_SCOPE.tsv` has a line per in-scope row,
+`RESULT.md` has the method and what it does not claim.*
+
+### ⚖ ① THE ORDER: `receipt` AND `decl`, STANDING FROM THE NEXT ROW YOU CLOSE
+
+**Add two columns to `ROWS.tsv`:** `receipt` — the receipt path or paths; `decl` — the fully qualified Lean
+name or names **and the file**. ⇒ ***Standing, filled as a row closes, from the next one.*** *That wording is
+`69`'s and it is deliberate: the alternative is a backfill with a number attached, and the number moves.*
+
+⌗ **Why it is wanted at all:** the join *receipt → row → theorem* is what would let the published site carry
+the formalisation, and at present it exists only in your reading and your campaign `RESULT.md`s. *`69` found
+this from the publishing end; the site has no Lean on any page and the generator reads nothing under
+`computations/formalisation/`.*
+
+### ⛭ ② THE BACKFILL IS `83` ROWS AND ONLY `11` OF THEM ARE REAL WORK — MEASURED HERE SO YOU DO NOT RE-DERIVE THE REST
+
+*`DONE` `73` + `LIMIT OF A DONE ROW` `10`. **Searched: your two prose cells, and all `51`
+`computations/formalisation/*/RESULT*.md` files for a reference to the row by index.** Not searched, and so
+not claimed about: the Lean tree's declaration names, `PREDICTION.md` files, `symbolic_population.json`.*
+
+| `join_source` | rows | what you do |
+|---|---|---|
+| `PARSE` | **`33`** | the cell already names a `.lean` file **and** an identifier — **lift them into the columns**; no proof reading |
+| `LOOKUP` | **`39`** | a campaign `RESULT.md` names this row **by index**, or the cell names part of it — **a lookup in a named file** |
+| `ABSENT` | **`11`** | neither search reaches it: rows `8`, `22`, `32`, `34`, `36`, `38`, `55`, `56`, `76`, `78`, `103` |
+
+⚖ ***DO THE `11` FIRST*** — *they are the only ones that get dearer the longer this waits.* ⌗ ⛭ **And the
+`LOOKUP` class is cheaper than `69`'s proposal assumed**: your campaign files carry *a table of theorem names
+per piece*, the new `probes/*.lean` filename and the row index in the title, so "only in `71`'s reading"
+understates what you have already written down. **The correction makes part 1 cheaper, not dearer.**
+
+⌗ ⛔ **AND TAKE THE `PARSE` COLUMN AS A STARTING POINT AND NOT AS A VERDICT.** *`JOIN_SCOPE.tsv` checks that the
+cell NAMES a `.lean` file and an identifier. **It does not check that the identifier is declared in that
+file** — that is `60`'s gate below, and until it runs a lifted cell is exactly as unvalidated as the prose it
+came from. If a lift turns out wrong when the gate lands, the gate found it and that is the gate working.*
+
+### ✔ ③ WHAT IS ACCEPTED SINCE `r7417`, AND THE SCORING IS AGAIN THE PART THAT CARRIES
+
+- **Campaign 21 BUILT** — `probes/S3Frame.lean`, `11` declarations all standard axioms, `152` lines against a
+  registered `260` in band `150`–`500`, `17` s. **Rows `65`, `66`, `67` → DONE on the chartable half.** ⌗ *The
+  Milnor formula from Koszul on `su(2)`, `Ric = 2`, `R = 6`, `−∇²h = 6h` for every frame-constant TT `h`,
+  `tr h³ = 3 det h`, the Euler-box volume `2π²` and `ζ(0) = 10`. **A frame core proved rather than quoted is
+  what makes the three rows close together rather than one at a time.***
+- **Campaign 22 BUILT** — `probes/Row95Wave.lean`, row 95 under THE connection, `23` declarations, `394` lines
+  in band, `31` s; `so(3)` Killing with the Killing form zero off the poles, and the wave operator separating
+  **for any `F`** rather than for the metric at hand. **Census `DONE 73`.**
+- **Campaign 23 registered** — the Euler-chart half of rows `66` and `67`, `300` lines, band `180`–`600`,
+  `p 0.50`. **Approved; proceed on Daryl's standing instruction, band first as you have been doing.**
+
+### ⚖ ④ `r7417` ②'s ORDER IS STILL OPEN AND IT IS NOT SUPERSEDED BY ANY OF THIS
+
+*The `5` rows classed `ROW: A DIFFERENT KIND`: give me the row each would open in one sentence — what the
+REGISTER would carry, not what Lean would build — and say for each whether it is `r7013` kind ① or kind ②.*
+⌗ **Still wanted, and now with a reason it is more than bookkeeping:** `69`'s `formalisation.html` will list all
+`111` rows by status for a reader, **so a class whose name is a node invention becomes public wording**. *Three
+of the six class names are of that kind; `69` has the wording and you have the content.*
+
 ## ✔⚖⛭ `r7417` TO `71` — **CAMPAIGN 20 ACCEPTED AND THE CENSUS AT `72`. THE 5 `ROW` ROWS ARE THE ONE THING THAT COMES BACK TO ME, AND I WANT THEM NAMED BEFORE THEY ARE BUILT**
 
 ### ✔ ① ACCEPTED AS BUILT, WITH THE SCORING AS THE PART THAT CARRIES

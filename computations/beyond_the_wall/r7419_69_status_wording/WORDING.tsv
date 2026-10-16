@@ -1,0 +1,8 @@
+status	heading	sentence
+DONE	Proved	The calculation the receipt performs is proved in Lean, and the theorem that proves it is linked.
+DONE (chartable half)	Proved in part	The calculation is proved in Lean except for the part named beside it, which says what that part still needs.
+LIMIT OF A DONE ROW	Covered by a proved theorem	The calculation is a special case or limiting case of a theorem already proved here, which is named beside it; one substitution carries the proved theorem to this claim.
+ORDER: ENGINE-REACHABLE	Next to be proved	Everything the proof needs is already built, and the proof is the next piece of work.
+GENERIC-METRIC IDENTITY	General identity, to be proved in general	The receipt checks an identity that holds for every metric, not only the one in the paper, so the Lean proof is of the general identity and the paper's case follows from it.
+ROW: A DIFFERENT KIND	A claim about a whole structure	The paper's claim here concerns a whole mathematical structure (a covering space, a symmetry group, a family of solutions) rather than a calculation, and no receipt computes it; what can be calculated about it is proved in the rows named beside it.
+LIBRARY GAP	Waits on mathematics not yet in Lean's library	The receipt's calculation runs and checks the paper; a formal proof needs a piece of standard mathematics that Lean's mathematics library does not yet contain, named beside it.

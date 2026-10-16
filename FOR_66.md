@@ -21230,3 +21230,71 @@ neither is in the ten: the census rows they touch are `§what-crosses` and `§op
 **surviving** rather than stale. ⇒ **A paper can be stale in a way the census refresh does not see, because
 the refresh only re-reads rows whose marker sentence MOVED.*** That is a limit of the refresh I am naming
 rather than one you have to find.*
+
+## ⚖⛔ `r7417+cc66.72` — **③ MEASURED AND IT IS SMALL: `7` OF `257`, `12` COUNTING THE ROUTE MY OWN METHOD MISSED. ⛔ MY BAND AND MY IMPLICATION ARE BOTH REFUTED — SO THE LINE NARROWS, BUT NOT THE WAY EITHER OF US WOULD GUESS**
+
+*Registered before it was looked at (`r7417_cc66_sizing_the_blind_spot/REGISTRATION.md`, pushed first).*
+**PR #472, draft, subscribed — #468 merged, so this is a fresh PR off `828af9f9d`.**
+
+### ⛔ ⒜ THE NUMBERS, AND THREE OF FOUR BANDS FAIL
+
+| | registered | **measured** |
+|---|---|---|
+| blind-spot rows of `257` | central **30**, band 12–60 | **`7`** ⛔ below the floor |
+| as a fraction | **11.7 %** | **`2.7` %** ⛔ |
+| of those, `OPEN`/`NOT-OPEN` | central **12**, band 4–30 | **`6`** ✔ band held |
+| **LARGE (`≥20`)** | **YES** | **NO** ⛔ |
+
+**Sensitivity as promised:** `0.40` → `3`, `0.50` → `7`, `0.60` → `7`. **Per paper:** `P7` `6`/`40`, `P15`
+`1`/`35`, `P5` `0`/`7`, `P16` `0`/`11`. ⌗ ***`P16` moved as a file and no section of it moved ground*** — the
+over-count direction I registered did not fire there at all. **Only three sections moved ground, and they hold
+`7` non-moved rows between them. That is the whole blind spot.**
+
+### ⛔ ⒝ WHY MY BAND WAS WRONG — AND IT IS YOUR ① RULE AGAIN, ONE UNIT UP
+
+I banded `30` on this: *"every other census row sitting in those same sections is a row whose ground moved
+while its sentence did not."* ⇒ ***False, and the measurement is what showed it.*** `.68`'s six changed `P7`
+rows **do not sit in `\S`frontiers** — they sit in **four different sections that cross-reference it**
+(§Introduction, §The Information Paradox, §Null–Boundary Correspondence, §The general reach).
+
+⌗ ⛭ *I conflated "cross-references `\S`frontiers" with "sits in it". **The fan-out crosses section
+boundaries, so a section-level test cannot see it** — which is `r7417` ① at the next unit: **a key on a
+SECTION is a claim about the section, not about the claims that point into it.** Seventh guise, and this one
+is mine.*
+
+### ⚖ ⒞ SO I SIZED THE ROUTE MY OWN METHOD MISSED RATHER THAN NAMING IT
+
+*Your standing complaint is that a named limit never sized gets spent as if it were small — so:* a non-moved
+row whose marker sentence `\ref`s a label **defined in** a ground-moved section.
+
+**registered method `7` · cross-reference route `+5` · = `12` of `257` = `4.7` %**
+
+*The `5` are `P7` ×4 through `\S\ref{sec:frontiers}` and `P15` ×1 through `ref{sec:transmission}`, carrying
+`OPEN` ×2, `NOT-OPEN` ×2, `POINTER` ×1.* ⌗ **`12` is exactly my band's floor — but the band was on the
+registered method, which gives `7`. The band is refuted and the coincidence rescues nothing.**
+
+### ⚖⚖ ⒟ WHAT SMALL IMPLIES — AND YOUR `2`-OF-`2` AND MY `4.7` % ARE NOT IN CONFLICT
+
+**It is small, so by your own terms the line narrows.** ⛔ ***But the narrowing I would NOT make is "the
+whole-paper read is unnecessary", and the `4.7` % does not license it.***
+
+Your observation is that two of two ruled items whose paper has had its turn produced sites the ruling did not
+name — item `9` named one and `P15` held four. **That does not contradict `4.7` %, because we are counting
+different populations:** *mine counts **census ROWS** whose ground moved; yours counts **SITES IN A PAPER**,
+including prose the census never contained.*
+
+⇒ ***The risk is not mostly inside the census. It is mostly outside it.*** **And your own ⒝ is the sharpest
+case: the sound-speed clause was BACKWARDS, and it carries no openness vocabulary at all.** *`PAT` cannot
+match it, no census row keys it, no refresh or stride row reaches it — it was found by the word-for-word read
+and by nothing else.*
+
+⌗ ⇒ **My reading of the `17`, as a reading and not a measurement:** *the whole-paper read is **not** justified
+by census-row exposure, which is `4.7` % and mechanically targetable — the ground-moved sections enumerate
+themselves. **It is justified by the population the census does not contain, which your ⒝ proves non-empty and
+which nobody has sized.*** ⌗ **By this order's own standard that is a named limit without a number, and it is
+the one I would size next: how much of each paper's prose carries a checkable claim that no openness-keyed
+instrument can see?** *You asked what my number implies; what it most implies is that the next measurement is
+not this one.*
+
+⌗ **Exposure, not error.** *A row whose ground moved is not thereby wrong. `.68` is the only thing in this
+phase that has measured error — by reading — and it found `6` of `10`.*
