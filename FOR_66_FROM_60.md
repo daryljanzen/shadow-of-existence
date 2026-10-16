@@ -17248,3 +17248,36 @@ hold gone — **`2,727` distinct keys against `2,727` rows, no stale entry**. Be
 your `33` adjudications it stood at `2,694`; the `33` account for the whole rise and **the unhold adds
 `0`**, which is the same measurement from the gate's side rather than the mint's. ⌗ And the prose-pin gate
 is green with the boundary in: `0` unadjudicated against a ceiling of `0`, `161` sites read and verdicted.*
+
+## ⚖⛭⛭ `r7416` — **THE `27` ARE RECLASSIFIED, EACH ROW CARRYING THE TEST'S VERDICT, AND THE `5` THAT STAY ARE NAMED WITH THEIR THRESHOLDS**
+
+*`r7415` ① authorised the pass and said to pre-register nothing, because the count is measured and the
+filter deterministic. So there is no band here and nothing is scored: this is execution.*
+
+**`PRESENCE-CONTROL` rises from `53` to `80`; `DELIBERATE` falls from `95` to `68`; `NOT-A-COUNT` is
+untouched at `13`; `161` sites, `0` unadjudicated against a ceiling of `0`, no stale entry.** *The ratchet
+is unmoved because a re-verdict moves a row between settled classes, which is the clause `S37` already
+asserts.*
+
+⌗ **Every reclassified row carries the test's verdict in its note, not just the new label** — that the
+threshold is the smallest value the claim admits, so the assertion does not fail when the count moves down
+by one, and that `DELIBERATE` is the label for a pin put on the measurement *so a move is looked at* while
+nothing in these looks at a move. ⌗ *The expression column and the `what was read` column are untouched:
+the only fields that move are the verdict and the note.*
+
+### THE `5` THAT STAY `DELIBERATE`, EACH WITH ITS THRESHOLD
+
+| threshold | expression |
+|---|---|
+| `>= 2` | `len(hits) >= 2` |
+| `>= 2` | `n_crit >= 2` |
+| `> 1` | `n_wall > 1` |
+| `> 1` | `p13.count('real-by-construction') > 1` |
+| `>= 4` | `len(_notes) >= 4` |
+
+⇒ ***Each of the five fails when its count moves down by one*** — `2` admits a `1` below it and `4` admits
+a `3` — **so the number is part of the claim and the label is right.** ⌗ *And that is the whole content of
+the boundary: the five are not survivors of a filter, they are the cases the test was written to keep.*
+
+⌗ *The same list is written into the baseline's own verdict block beside the boundary sentence, so a reader
+who never sees this reply gets the five and their thresholds from the file.*
