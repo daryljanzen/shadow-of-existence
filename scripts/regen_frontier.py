@@ -33,6 +33,88 @@ import re
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..'))
 OUT = os.path.join(ROOT, 'THE_FRONTIER.md')
+# ** r7399 ⑪: `was` IS NO LONGER A SUM OF A HAND-WRITTEN FIELD. **  It was
+#   `sum(EST[p][2] for p in ORDER if p in live)` -- index 2 being `steps-last-revision`, written by
+#   hand and backfilled by nobody.  Measured against the history by
+#   computations/beyond_the_wall/r7399_cc66_the_unrottable_delta/history.py: of the 15 revisions
+#   r7371..r7399 the published delta was FALSE at 14, and at r7389 it was false IN THE OTHER
+#   DIRECTION -- the real step count FELL 19 -> 16 while the headline announced a rise from 2 to 16.
+#   *** A generated line whose sign can invert is worse than a missing line. ***
+#   The previous total is now PERSISTED BY THIS GENERATOR, keyed by revision.
+# ** THE RE-STALE TRAP, named because regen_grain_currency hit it four times: ** a second run in ONE
+#   revision must not shift the baseline, so a repeat run REPLACES its own row instead of appending.
+STEPS_HISTORY = os.path.join(ROOT, 'corpus', 'frontier_steps_history.tsv')
+
+
+def _register_rev():
+    """The revision to key the step history by -- DERIVED from the register's content, not its stamp.
+
+    ** WHY NOT `current:`. **  Found while building this, and it is the same failure shape one level
+    down: THE_REGISTER.md's own `current:` read `r6933` at r7399 while its body carried rows up to
+    `r7399` -- a hand-written stamp 466 revisions stale, which `regen_frontier.py` was also copying
+    into THE_FRONTIER's `current:`.  Keying a fix for a rotted field BY a rotted field would have
+    recorded every revision under one key and published a permanent zero delta.
+    The maximum revision marker in the register's body is a measurement of its content and cannot
+    rot while its rows carry markers.  Reported to the register's holder; not repaired here.
+    """
+    try:
+        raw = open(os.path.join(ROOT, 'THE_REGISTER.md'), encoding='utf-8',
+                   errors='replace').read()
+    except OSError:
+        return 'unversioned'
+    marks = re.findall(r'\br(\d{3,5})\b', raw)
+    return f'r{max(int(x) for x in marks)}' if marks else 'unversioned'
+
+
+def _steps_history():
+    rows = []
+    try:
+        for line in open(STEPS_HISTORY, encoding='utf-8').read().split('\n'):
+            if not line or line.startswith('#') or '\t' not in line:
+                continue
+            rev, steps = line.split('\t')[:2]
+            if rev == 'revision':
+                continue
+            rows.append((rev, int(steps)))
+    except (OSError, ValueError):
+        pass
+    return rows
+
+
+def _steps_was(rev, steps):
+    """The PREVIOUS revision's own recorded total, and this revision's total recorded for next time.
+
+    Returns the `was` to publish.  With no prior revision on record it returns `steps`, so the
+    headline reads a zero delta -- which is the true statement when nothing is known to have moved,
+    and not the false one a missing hand-written field produced.
+    """
+    rows = _steps_history()
+    if rows and rows[-1][0] == rev:
+        was = rows[-2][1] if len(rows) > 1 else steps
+        rows[-1] = (rev, steps)
+    else:
+        was = rows[-1][1] if rows else steps
+        rows.append((rev, steps))
+    with open(STEPS_HISTORY, 'w', encoding='utf-8') as fh:
+        fh.write('# THE FRONTIER STEP TOTALS, one row per revision, WRITTEN BY '
+                 'scripts/regen_frontier.py.\n')
+        fh.write('# ** This file exists so THE_FRONTIER\'s "(was N last revision)" is not a sum of a '
+                 'hand-written\n')
+        fh.write('#   field. **  r7399 ⑪: that field was 0 on seven of nine live rows and the '
+                 'published delta was\n')
+        fh.write('#   false at 14 of the 15 revisions r7371..r7399, with the SIGN INVERTED at r7389.'
+                 '\n')
+        fh.write('# ** Keyed by revision so a second run in one revision replaces its own row '
+                 'rather than\n')
+        fh.write('#   shifting the baseline ** -- the re-stale trap regen_grain_currency hit four '
+                 'times.\n')
+        fh.write('# Rows up to r7399 were derived from the repository\'s own history by\n')
+        fh.write('#   computations/beyond_the_wall/r7399_cc66_the_unrottable_delta/history.py, not '
+                 'written by hand.\n')
+        fh.write('revision\tsteps\n')
+        for r, n in rows:
+            fh.write(f'{r}\t{n}\n')
+    return was
 
 # ** id: (short name, steps-left, steps-last-revision, turns-per-step, gate, runway note) **
 EST = {
@@ -544,7 +626,22 @@ EST = {
         'than the worklists denominator says. Item 14 opened nothing: the exact regulated peak lies beyond a CORRECT '
         'strike (PO-42, r4523) for the fifth time in this phase, but the beyond-part was already carried by PO-88, so '
         'it folded as a named step instead of opening PO-92 -- the first evidence this phase converges rather than only '
-        'grows. '),
+        'grows. '
+        'r7403: the phases size is measured for the first time and it is a fifth of what the backlogs count suggested. '
+        'cc66 triaged a pre-registered sample of 40 of the 329 sites by r7013 kind, the draw fixed and pushed before a '
+        'site was read: 80.0 per cent plus or minus 5.9pp of the backlog owes NOTHING -- 47.5 per cent are not open '
+        'claims at all and 32.5 per cent are kind TWO, stated limits the register must not row -- only 20.0 per cent '
+        'owes anything and only 7.5 per cent plus or minus 3.9pp owes a ROW, about 25 sites, the rest being ORDERS. So '
+        'this rows discharge is a reading of about 66 sites of which about 25 could end in a row, not 390 and not 329. '
+        'Three of four pre-registered bands were refuted and every one toward a smaller worklist. The classification '
+        'gate this seat hypothesised at r7401 is RULED NOT BUILT by measurement: 16 of the 40 carry a classification '
+        'and one disagrees, but the two constructs carrying this phases two known classification failures scored ZERO '
+        'BY CONSTRUCTION -- the comment status block because the population strips comment lines, and P7s frontiers '
+        'kind because the arm excludes P7 -- while the construct the net does reach gave 9 sites and 0 disagreements, '
+        'so a gate over this population would measure where the defect is not. The remedy is a SCOPE change and two '
+        'independent measurements reached it this revision: 97 vocabulary matches sit stranded inside comment lines '
+        'across P1 to P18, 55 in papers the arm covers, every one outside the population because body() drops comment '
+        'lines before any test runs. The nets blindness is scope, not vocabulary. '),
     'PO-10': ('the likelihood comparison, and which run it rests on', 1, 0, 3, None,
         'r6780: REOPENED. P15 sec:refit-bound reports both arms fitted over 215 bins with the same '
         'five parameters free in each, returning chi^2 = 397.13 against 206.44, 1.891 and 0.983 per '
@@ -4343,6 +4440,26 @@ EST = {
         'local green means: with feedback above two turns, CI is not the gate for a seats own revision -- the local '
         'batch is, and the trunks refs/ci/carry ledger is what catches what the local batch cannot. That is already '
         'how this fleet works; what 70 measured is that it is not belt-and-braces but the only arrangement operating. '
+        'r7403: a standing rule, earned with two instances in unlike parts of the corpus and a guard 60 supplied -- a '
+        'label is a sound instrument for a claim about the labelling and never for a claim about a property of the '
+        'thing labelled. P7 frontiers carried a BOUNDARY label asserting nothing left to do of an item its own canon '
+        'note called a genuine open; and the mints presence test consults a keys PAPER or SOURCE label to decide what '
+        'to read while the container the keys own trace names sits unread in the same record, 94 of 112 keys being '
+        'where the two answers differ. In both the label is derived from the thing and then asked a question only the '
+        'thing can answer, which is why the failure is silent in both. 60s guard is part of the rule: a label IS a good '
+        'instrument for a claim about the labelling -- how many keys are filed one way, whether the filing is uniform, '
+        'whether a label is missing -- and the defect is the step from the label to a property of the thing. '
+        'r7403: a procedure of mine changes because it was corrupting an instruments reading. The standing rule that '
+        'every coordinating turn reports status on all worker seats was being satisfied by writing a dated section into '
+        'each seats order file, and check_order_acknowledged counts any dated section newer than a seats last reply as '
+        'an unread order -- so notes that asked nothing were counted against the seat. It fired on 71 at 4 of a ceiling '
+        'of 3, and the diagnosis I first reached from the gates line was wrong: I read last acknowledged r7371 as '
+        'sixteen revisions of silence and was about to withdraw that lines work to this seat on the gates own stated '
+        'remedy, when 71s last commit is r7375, the same day, and it moved two of the eleven contradictions out of P7 '
+        'altogether. The remedy was to stop manufacturing the signal: status goes in the turn to Daryl, a seats order '
+        'file carries orders and answers only, and anything asking nothing is written undated. This is the label rule '
+        'turned on my own reporting -- I read a seats state off the gates count, a label, instead of off the seats '
+        'commits, which is what the count is about. '
         ),
     'PO-79': ('the crossings kernel is one operator with one frequency slot and the two exponents the corpus computes are it acting on two species: which species perturbation does the crossing transport', 1, 0, 3, None,
         'OPENED r7137 (66) as PO-77s remainder under standing order r6861, and it is the one thing 60s r7136 stated rather than answered, which is the correct boundary. PO-77 closed on its own termination condition: the kernel carries no sound speed, so which mode equation is the kernels had no subject, and -255 and -147.224 are one kernel at two values of omega = k c_s, agreeing as 255/sqrt3 to every digit. What that leaves is not a fork but a determination, and it is a different kind of question -- not which calculation is right, both are, but which one the observable rides. WHAT IS SETTLED AND IS NOT TO BE REDONE: the kernel is K = exp(-H |Delta eta|) with one omega slot, P10 saying in terms that omega = k c_s makes its law and the frameworks classical reading the same expression term for term; r7108s equation is the c_s = 1 member of u** + (c_s^2 k^2 - z**/z)u = 0, obtained by h = u/a from the tensor equation IDENTICALLY for a(eta) a free function, with the fluid member leaving k^2(c_s^2 - 1)u whose only root is c_s = 1; and the segments own curve is VACUUM -- r = A sinh^(2/3) solves (dr/dtildetau)^2 = 2M/r + r^2/alpha^2 identically and a radiation term leaves a residual -A_r/r^2 that no positive A_r annihilates -- so it has no fluid and no scalar sound speed of its own. AND THE INSTRUMENT IS AN OBSERVATION 60 MADE IN PASSING, which is why this is a row and not a frontier: the c_s = 1 member is EXACTLY THE TENSOR EQUATION. And the corpus places the tensor sector elsewhere: P15s own intro says the companion dynamics paper develops the propagating graviton as the leafs shear, a massless de Sitter mode on the cosmic foliation. SO THE EQUATION THE SEGMENTS CURVE SUPPORTS IS THE ONE THE CORPUS ASSIGNS TO THE LEAFS SHEAR, and that is either a second instance of the two-congruence split or an identification nobody has stated; both readings are live and the row does not choose. One more piece is already in place from the same pass: P10s shear tower, whose propagating content is the transverse-traceless shear, whose second-order R^2 is a multiple of the Einstein-Hilbert term rather than a new structure, and whose calculation L553/S1 ran -- so the tensor side has a computed counterterm statement to be read against whatever this row concludes. DISCHARGE: a statement of which species perturbation the crossing transports, grounded in the load-bearing pieces, with the first step a read of whether the corpuss tensor assignment and the segments own c_s = 1 support are about one object or two. The consequence is observable: the acoustic sectors inherited amplitude and tilt ride whichever species this settles on, and the two exponents differ by sqrt3 in the damping they would apply. TERMINATES IF the crossing is shown to transport BOTH species, each at its own omega, with nothing in the observables distinguishing them -- in which case the sqrt3 is a statement about two different measurements rather than an ambiguity in one. AND WHY IT IS WORTH A ROW RATHER THAN A LINE: sec:what-crosses currently states the sqrt3 as open and names which reading its own consequences rest on, which is honest and is not a resolution -- the paper is carrying a factor of sqrt3 in a damping exponent as undetermined, and a factor of sqrt3 in an exponent is not a detail. AMENDED r7139: THE FIRST STEP IS ANSWERED on 60s r7138 and it is the first branch -- TWO OBJECTS, with the decider one term carrying the radiation constant. The read established that the question was genuinely live before deciding it: P15s introduction assigns the tensor half to the propagating graviton as the leafs shear, and P10 carries the same object as the layers own propagating degree of freedom, so the c_s = 1 equation r7136 identified is on its face the one the corpus already hands to the leaf; and P10 has a clause that looks like it settles it the other way, the congruence carrying the flat-LambdaCDM and the closed-S^3 slicings as two synchronizations of itself, not two frames. THE DECIDER: written on the areal radius, which P07 licenses by identifying it with the flat-LambdaCDM scale factor at the Nariai member, the propagation equation on the radiation-carrying congruence and on the vacuum curve differ by A_r times the radial Laplacian of the perturbation and by nothing else. Verified here: k-derivative exactly 0, second A_r-derivative exactly 0, vanishing at A_r = 0 and nowhere else. AND THE CONTROL is what makes it a finding rather than an artefact of a chart: the same field equation pushed to r by two different clocks, conformal and proper, agrees up to the measure factor r^2 on BOTH congruences, so the r-form depends on (rH)^2 and on nothing else and any monotone re-timing leaves it alone. A difference that survives every re-timing is a difference in CONTENT, so P10s two synchronizations of itself, not two frames is about a different distinction and does not close this one. AND ONE DATUM CAME WITH ITS TRAP NAMED AND AVOIDED: in its own conformal time the leaf reports a-double-prime over a equal to 0 identically and the bead 2/eta^2, and a freezing conclusion from that would have been wrong -- the frozen quantity is h = u/a, not u, and with the potential gone the regular branch still freezes, h = sin(k eta)/eta tending to k, a non-zero constant, while the other branch diverges. sec:what-crosses now states that what separates the two is the radiation content itself and that no monotone re-timing reaches the difference, so the papers open sqrt3 has a determinate subject rather than an ambiguity of presentation. STILL OWED, NARROWED r7139: which of the two the crossing transports, the choice now being between a congruence that carries radiation and one that does not, at a branch point the construction places on the vacuum curve -- narrower than the row as opened and the same question, so a stated limit and not a new row. AMENDED r7141 on 60s r7140: the gates own reading was put through the must-come-back-wrong treatment it asked for, and its STRONG form survives while its WEAK form is dead. On the corpuss own inherited datum, rho_r/rho_m = 2 at the seam so A_r = 4 M r_N, the radiation term over the matter term is 2 r_N / r EXACTLY: 2 at the seam, 2^(2/3) = 1.587401 at the turnaround, and 1 at the laps back chart value, all three reproduced symbolically by the gate. So the term the leaf adds is the LARGER of the two inherited terms at every interior point of the lap, and the weak reading -- vacuum to good approximation, radiation a correction -- is dead, because a correction worth twice the term it corrects is not a correction. AND THE EQUALITY LOCUS IS FORCED RATHER THAN COINCIDENTAL: equality sits at r = A_r/2M, the datum makes that 2 r_N, and P07s own clause that the seams radii stand in the exact ratio 2:1 about the branch point makes 2 r_N the seams other chart value. A datum that is exactly 2 meets a ratio that is exactly 2:1; nothing was tuned to put radiation-matter equality on the laps own boundary value and nothing is free to move it. BOTH HORNS ARE NOW PRICED RATHER THAN CHOSEN: (1) if the segment is the vacuum curve the inherited radiation is ABSENT on it outright rather than small, and then sec:what-crosses amplitude and tilt cross unaltered has to be about something other than the radiation perturbation because the thing that would carry it is not there -- that clause is owed a restatement on this horn, and 60 gated it as a DISJUNCTION against this row landing there rather than pinning the clause, which is the eleventh-state trap avoided deliberately two revisions after 70 named it; (2) if the radiation IS present there the segment is not the vacuum curve and its turnaround moves, since A = (2 M alpha^2)^(1/3) is derived FROM the vacuum law and carries no A_r at all, confirmed by differentiation. sec:what-crosses now states the domination and the forced equality locus, both being results about the constructions own datum rather than about either horn, and the paper says nothing about which horn holds. Routed to 60, which derived both members of the family and is the seat that can say what field each is an equation for; the sec:what-crosses restatement is the gates if the row lands on horn (1). AMENDED r7143 on 60s r7142: THE PRICING INVERTS. Horn (1)s carrier is already in the paper twice and it is not any species perturbation but a POTENTIAL AMPLITUDE -- the species paragraphs contains no k at all once w=0, re-derived as d/dk identically zero against 2 k Phi/3 for the w=1/3 member, and sec:coherences wavenumber-independent 0.4835 Psi_i. So horn (1) costs NO restatement of the frozen-mode argument: the clause r7140 priced at a restatement has a subject already in print. And the segment is exactly where that carrier dominates, forced: on the vacuum curve the pressureless term over the substrate term is A^3/r^3 exactly, so at least 1 on the whole lift and exactly 1 AT the turnaround, with A derived from the vacuum law. AND IT FILLS THE GAP r7131 LEFT STATED -- that nothing in the corpus computes the census on the contracting side: aH rises monotonically from 0 at the turnaround to infinity at the branch point, so every mode BEGINS the segment inside the horizon and exits at its far end, with sub-horizon shares of the conformal length 0.9384, 0.9922 and 0.9993 across the papers own band and 0.9997 to 1.0 on the proper clock. So the un-traversed shortfall is 2/k, which differentiates away, leaving dlnT/dlnk = -c_s k L, the FULL exponent (-18.74, -147.22, -1656.3) against exactly 0 at c_s = 0 -- the species criterion selecting exactly the clause P15 says selects nothing. THEREFORE HORN (2) IS THE EXPENSIVE ONE, costing 0.4835 Psi_i its wavenumber-independence by putting the potential on the w=1/3 member. The weak form was priced first and is not supported: a k-free potential amplitude crossing intact does not by itself hand the acoustic sector its amplitude and tilt, so horn (1)s price is one named subject plus one stated route -- less than r7140 priced it at and not zero. TWO BY-PRODUCTS, both obtained from the rate rather than quoted: the conformal length is the papers own c0 B(1/6,1/2)/2 to 25 digits with 1/3A = c0/2 alpha symbolically exact, and THE PROPER LENGTH OF THE SEGMENT IS pi alpha/3 EXACTLY, FREE OF THE MASS, which the gate confirmed by reducing the integral to (alpha/3) B(1/2,1/2). WHAT IS LEFT is one route: horn (1) needs a route from a k-free potential amplitude to the acoustic sectors amplitude and tilt, and that is the only thing unpriced on either side. PO-79 stays open and 60 says so in terms: this prices, it does not decide. AMENDED r7145: STRUCK on 60s r7144 -- the route exists on horn (1) and cannot exist on horn (2), so the crossing transports the species the vacuum curve supports. THE ROUTE WAS ALREADY IN PRINT and not where either seat looked: sec:transmission already ASSERTS the join, routes A_s and n_s through the same handover, there is one boundary-condition supplier not two, without giving the mechanism -- and the joining principle is a sentence written about hbar, an overall multiplicative factor which survives in the amplitude and cancels in every logarithmic derivative, with An amplitude is the spectrum at one wavenumber a tilt is its ratio to itself at two beside it. A sentence about one multiplicative constant is about the CLASS, and the handover factor is in the class. What 60 added is what makes it a route rather than a resemblance: the k-independence is TWO claims, the legs resting on At the branch point it vanishes quadratically which is approximate and the carriers on the exact d/dk of the w=0 potential equation, and the route needs the exact one; and the tilt half is convention-free, dln(T^p P)/dln k = n_s - 1 identically with the power p a free symbol, so only the number A_s picks up depends on it. AND HORN (2) CANNOT CARRY THE ROUTE AT ALL by the papers own tilt budget: sec:refit-bound prefers 0.995 against 0.956 so the budget is 0.039, while a transfer carrying the plasmas sound speed shifts the spectrum by 2 c_s k |Delta eta| = 294.45 at the first acoustic peak -- 7550 times the entire budget, so the only transfer horn (2) permits destroys the tilt it is invoked to deliver. THE GROUND OF THE EXCLUSION IS NAMED because it matters what kind it is: horn (2) is excluded EMPIRICALLY, by the papers own refit bound, and not geometrically; and the rows termination clause, that both species cross with nothing in the observables distinguishing them, is refuted by 7550. THE PRICE: the factor is 0.4835^2 = 0.23377 on the spectrum, 6.49 per cent against the handovers own 3.30, with the doubling checked as 1+x rather than asserted since a naive doubling gives 6.60. sec:transmission now carries the mechanism where it had an assertion. AND ONE STALE FIGURE WAS FOUND AND FIXED IN THE SAME PASS, which is this seats: sec:transmission carried |Delta eta| = 3.32 alpha, the QUADRATURE value, while sec:what-crosses had carried the closed form 3.33874 since r7141 -- one quantity with two values in one paper -- corrected with the M^(-1/3) figures rescaled to 4.21 and 15.50 and the exact-transmission receipts labels brought with it. THE WHOLE PO-77 TO PO-79 ARC CLOSES HAVING RETIRED NOTHING: C21, r7108, the papers kernel and sec:what-crosses frozen-mode argument all stand, which is what the first of those rows named as its best available outcome.'),
@@ -10139,7 +10256,6 @@ def main():
             live.add(m.group(2))
 
     steps = sum(EST[p][1] for p in ORDER if p in live)
-    was = sum(EST[p][2] for p in ORDER if p in live)
     turns = sum(EST[p][1] * EST[p][3] for p in ORDER if p in live)
 
     L = []
@@ -10147,14 +10263,14 @@ def main():
     # scrape and reported it UNDECLARED -- the live view, unmeasurable.  The marker is written
     # HERE because this generator is the only thing that brings the file current, which is the
     # gate's own rule: a declaration written only by the pass that actually does the work.
-    # The declared value is THE_REGISTER's own `current:`, because that is what was read. **
-    _regcur = ''
-    try:
-        _rt = open(os.path.join(ROOT, 'THE_REGISTER.md'), encoding='utf-8', errors='replace').read()
-        _rm = re.search(r'(?m)^current:\s*(\S+)', _rt)
-        _regcur = _rm.group(1) if _rm else ''
-    except OSError:
-        pass
+    # ⛔ r7403: the declared value WAS a copy of THE_REGISTER's own `current:` stamp, and that stamp
+    #   had rotted to `r6933` while the register's rows reached `r7401` -- so this generated view was
+    #   publishing a hand-written field 468 revisions stale.  cc66 found it at r7399+⑪ and keyed its
+    #   own history off `_register_rev()` for exactly that reason; the view now does the same.
+    #   ⇒ *The register's stamp is repaired at its source (regen_grain_currency stamps it from the
+    #     same derivation), and this line no longer INHERITS it: a view that derives cannot publish
+    #     a rotted stamp even if the stamp rots again.  Two readers, one derivation.*
+    _regcur = _register_rev()
     L.append('---')
     L.append('name: the-frontier')
     L.append('kind: VIEW')
@@ -10166,6 +10282,8 @@ def main():
     L.append('# ▣ THE FRONTIER\n')
     L.append('*Generated by `scripts/regen_frontier.py`. **The open problems, in dependency order.** '
              'A STEP is one worked result; turns-per-step is a separate estimate.*\n')
+    # r7399 ⑪: `was` comes from the persisted per-revision total, never from a hand-written field.
+    was = _steps_was(_register_rev(), steps)
     L.append(f'## ⇒ **{len(live)} OPEN · {steps} STEPS LEFT** *(was {was} last revision)* '
              f'**· ~{turns} turns at current estimates**\n')
     blocked = [p for p in ORDER if p in live and EST[p][4]]

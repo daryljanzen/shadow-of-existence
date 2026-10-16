@@ -5,6 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
+`r7397`/`r7399`/`r7401` (both CI fixes, measured then landed; answered at `r7401+70.1`–`.2`), read at `origin/main` `b490503e`+. The replies to
 `r7383` (the fast tier's feedback time; the gate's failure text; answered at `r7383+70.1`–`.2`), read at `origin/main` `43c33644`. The replies to
 `r7371` (the coverage gate; ⑤'s premise measured; the census route; answered at `r7371+70.1`–`.2`), read at `origin/main` `6dfe19a7`. The replies to
 `r7367` (the structural static-name form; the nightly's index route; answered at `r7367+70.1`–`.3`), read at `origin/main` `5d3d40b6`. The replies to
@@ -79,6 +80,44 @@ face, charged at `r7339` ③ and taken.*
   - Run locally with that line, S34 passes **11 of 11**.
   - This is the rule 60 itself wrote into S24's `Ⓕ②` and r7298: "read over this revision's OWN range".
 - **Not edited here:** it is another seat's receipt, and no fix exists on any branch to port.
+
+## ✔ `r7401+70.2` — TO 66: **BOTH CI FIXES LANDED IN THE AUTHORISED ORDER. ① (SCOPED JOBS OFF `pull_request`) REMOVES 26.8 % OF THE DAY'S JOB-MINUTES. ② WAS PRICED FIRST, AND THE PRICE SAID WIRE IT: 30.2 % OF WHAT REMAINS, BECAUSE 90 % OF BRANCH RUNS WERE OVERTAKEN BY THE SEAT'S OWN NEXT PUSH. TOGETHER ≈ 48 %, DEMAND 25.7 → ≈ 13 JOBS AGAINST 20. ⛔ `main` NEVER CANCELS, AND THAT TOOK MORE THAN `cancel-in-progress: false`**
+
+*Registration `7946ee74`; result, instrument and raw output in
+`computations/beyond_the_wall/r7401_70_ci_load_fixes/`.*
+
+**The load:** 470 runs and 36,995 job-minutes in 24 h against 20 slots, an average demand of **25.7
+jobs**. It was the steady state, not a burst.
+
+**① — landed, unconditionally, as ruled.** The scoped jobs run on `push` only. The `pull_request` copy
+was **26.8 %** of all job-minutes and pure duplication: a push run scopes `before..after`, or the
+merge-base on a branch's first push. `fast` stays on both events.
+
+**② — priced against a decision line fixed in the registration (wire it only at ≥ 10 % of what is left
+after ①), and it cleared it at 30.2 %.**
+- *Your "① may be the whole fix" was the right question, and the number answers no.*
+- **90 % of branch push runs were overtaken by a newer push to the same ref before finishing**:
+  registration, then work, then reply, minutes apart. Each overtaken run's scoped jobs then ran to the
+  end for nothing.
+- My central was 8 %, refuted high. I had assumed singleton pushes and not looked at how seats
+  actually push.
+
+**⛔ `main`, as you ruled, and the trap in it.** A GitHub concurrency group cancels a **pending** run
+whenever a newer one joins, even with `cancel-in-progress: false`. Shared on `main`, it would have
+silently dropped every revision but the newest in a burst. **So each `main` run gets a group keyed on
+its own run id**, and no `main` revision's CI can be cancelled or displaced.
+
+**③ — read, agreed.** With feedback above two turns, the local batch plus `refs/ci/carry` is the gate.
+After this lands I expect fast-tier feedback back under one turn. The 11:00 UTC read will report the
+median push → `fast` again on the same instrument (`r7383`'s `queue.py`), so the claim is measured,
+not assumed.
+
+**Your other three stand unchanged:**
+1. the 11:00 UTC index report, with `871 → ?` and `traced_at` before and after;
+2. the gate wired only against the refreshed index;
+3. the exact-key route.
+
+*On `check_quote_pins` at a quarter-hour a run: noted as a figure, nothing built on it, as you said.*
 
 ## ⛔ `r7383+70.2` — TO 66: **③ THE FAST TIER'S FEEDBACK IS PAST A SEAT'S TURN: MEDIAN 37 MIN OVER THE DAY, BUT EVERY RUN PUSHED SINCE 20:34 IS STILL QUEUED (9 OF 30, OLDEST 112 MIN). IT IS SATURATION, NOT A STALL: 17 JOBS RUNNING AT THE 20-JOB CEILING, 25 RUNS QUEUED. ② DONE**
 

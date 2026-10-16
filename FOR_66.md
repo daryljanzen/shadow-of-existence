@@ -20356,3 +20356,200 @@ patterns rather than one.*
    `9177c52baf`, `cf8bd7a858`, `db7d54f2d8` and a `--rebuild` for `fb2d798ceb`.
 3. **The `scoped` reds are not any seat's diff** — `.53`: red on `main` and four other lines, with
    `red_carry` marking `S55` ⚠ `CONTRADICTED`.
+
+## ⛭⛭ `r7399+cc66.56` — **⑩ ANSWERED AND THE NUMBER CUTS THE WORK: `80` PER CENT OF THE BACKLOG OWES NOTHING, AND ONLY `7.5` PER CENT OWES A ROW. ⛔ THREE BANDS OF FOUR REFUTED AND EVERY REFUTATION RAN TOWARD A SMALLER WORKLIST**
+
+*Read at `origin/main` `15c6a1d9b`, merged in first. Sample and bands registered in
+`computations/beyond_the_wall/r7399_cc66_the_backlog_triage/REGISTRATION.md` and **pushed before a
+single site was read**. ⛔ Nothing is written into `open_reference_baseline.tsv`.*
+
+### THE SAMPLE AND THE COUNTS
+
+`n = 40` of the `329` sites, `random.Random(7399).sample(sorted(sites), 40)`, fixed before the read.
+Finite-population correction `0.9387`.
+
+| bucket | n | of `40` | over the `329` |
+|---|---:|---|---|
+| `NOT-AN-OPEN-CLAIM` | `19` | `47.5` % ± `7.4`pp | `156` ± `24` |
+| **`②` a stated limit — owes nothing** | **`13`** | **`32.5` % ± `7.0`pp** | **`107` ± `23`** |
+| `③` discharge named — owes an ORDER | `5` | `12.5` % ± `4.9`pp | `41` ± `16` |
+| `①` a distinct object — owes a ROW | `3` | `7.5` % ± `3.9`pp | `25` ± `13` |
+
+**The number you asked for, both ways:** kind `②` is **`32.5` % ± `7.0`pp of the backlog**, and
+**`61.9` % ± `10.6`pp of the OPEN-CLAIM subset** — six open claims in ten are limits the register must
+not row.
+
+### ⇒ ⛭ BUT THE NUMBER THAT ACTUALLY MAKES THE WORK SMALLER IS BIGGER THAN EITHER, AND IT IS YOURS
+
+**`PO-86` owes no row for a `NOT-AN-OPEN-CLAIM` site either.** So the fraction that owes nothing is
+not `32.5` per cent but:
+
+> ⛭ ***`80.0` % ± `5.9`pp of the `329` owes NOTHING*** — `263` ± `20` sites.
+> ⛔ ***`20.0` % ± `5.9`pp owes anything at all*** — `66` ± `20`.
+> ⛔ ***And only `7.5` % ± `3.9`pp owes a ROW*** — `25` ± `13`. The rest of what is owed is **ORDERS**.
+
+⇒ ***`PO-86`'s discharge is a reading of about `66` sites, of which about `25` can end in a register
+row. Not `390`, and not `329`.***
+
+### THE BANDS — ⒟ HELD, ⒜ ⒝ ⒞ REFUTED, AND ALL THREE TOWARD LESS WORK
+
+- ⒜ `NOT-AN-OPEN-CLAIM` `55`–`85` % → **`47.5` %. REFUTED LOW.** *I took the band from `.47`'s `70`
+  per cent. **This net is less noisy than that one** — consistent with `.54`, where the harvested
+  expressions that fire most turned out to be the programme's own vocabulary and not ordinary
+  English.*
+- ⒝ kind `②` of the open-claim subset `20`–`55` % → **`61.9` %. REFUTED HIGH.**
+- ⒞ kind `③` `0`–`15` % → **`23.8` %. REFUTED HIGH.** *My reason was that a remainder whose discharge
+  is KNOWN would usually already carry a row. **It does not: the corpus names its own discharge
+  routes in prose far more often than it rows them.***
+- ⒟ comment-line markers `60`–`400` → **`97`. HELD.**
+
+### ⛔ YOUR CAUTION IS CONFIRMED EXACTLY, AND ONE HALF OF IT IS NOT MINE TO FIX
+
+**`97` vocabulary matches sit inside `%` comment lines, every one outside the population BY
+CONSTRUCTION** — `body()` drops comment lines before any test runs, at any vocabulary. `42` are in
+`P7` (excluded by design), so **`55` are in papers the arm covers.**
+
+⛭ **And `P16`'s case is verified, not inferred.** Its `STATUS` block, lines `79`–`87`, literally reads
+*"Remaining open edge = the last-percent rate"* and *"open edge: the abstract and Sec verdict class it
+closed rather than open"*. ⇒ ***That is the defect you charged against the net, and the fix for it is
+a SCOPE change — read comment blocks — not a vocabulary change.*** *Your words: "Both were in a
+comment block or a parenthetical, and the whole-document read found them." The comment block is
+mechanically reachable if you want it; say so and I will build it.*
+
+⛔ **The second one I will not claim the net could have caught.** *"`η` standing as an analogue of
+itself" carries no openness marker of any kind — it is a self-reference defect in an explanatory
+sentence. **No vocabulary and no scope change to this harvester reaches it, because it is not in this
+instrument's class at all.** A parenthetical is NOT stripped, so reach was never the problem there.*
+
+### ⛭ AND YOU ASKED WHETHER KIND ② WANTS ITS OWN VERDICT. IT DOES — AND SO DOES ③
+
+*Said with the measurement and ⛔ **not added**, per your line that the verdict column is yours:*
+
+- **`STATED-LIMIT`** for `②` — `107` ± `23` sites. *Without it these rows can only be marked
+  `NOT-AN-OPEN-CLAIM`, which is FALSE (they are open claims), or sit `UNREAD` for ever. **It is the
+  largest class in the backlog after the false positives.***
+- **`OWES-AN-ORDER`** for `③` — `41` ± `16`. *`OWED` is the nearest existing value and it is wrong:
+  `OWED` reads as a row owed, and `③` owes an order instead.*
+- ⌗ *`①` needs nothing new — `OWED` fits it.* ⛭ **The gap in the current vocabulary is precisely the
+  rows the register MUST NOT row, which it cannot express at all.**
+
+⌗ *`classified.tsv` carries all `40` rows with the reason for each, so any one can be overturned on
+its own evidence. **A definitive `①`-against-`②` ruling against the register's existing items is
+yours** — what I measured is the shape of each paragraph's claim. ⌗ Two instrument notes reported
+rather than smoothed: the host-paragraph lookup failed on `2` of `40` (sites `10`, `36`) on
+whitespace normalisation; both were read from the sentence alone and are marked.*
+
+## ⛔ `r7399+cc66.57` — **THE `fast` RED HAS FIVE CAUSES, NOT ONE. ⛔ ONE WAS MINE AND IS FIXED; ONE IS MECHANICAL AND PORTED; TWO ARE READINGS AND ARE YOURS**
+
+*Its own section because `.55` and `.56` are order answers and this is the trunk. **PR #461, draft,
+subscribed.** ⌗ Read from CI's own `FAILED` line on `ff5cd40fe`, which is `.55`.*
+
+> `⛔ FAILED: check_open_ledger check_open_ledger check_view_tables check_absence_claims check_pages_current`
+
+**I had been reporting one cause and there were five.** Separated by running each on a pristine
+`origin/main` worktree beside this branch, which is the only way to tell mine from inherited:
+
+| gate | on `main` | on this branch | whose |
+|---|---|---|---|
+| `check_absence_claims` | **PASSES** | FAILED | ⛔ **MINE** |
+| `check_view_tables` | FAILS | FAILS | inherited |
+| `check_pages_current` | FAILS | FAILS | inherited, mechanical |
+| `check_open_ledger` | FAILS | FAILS | inherited, a reading |
+
+### ⛔ ⒜ THE ONE THAT WAS MINE, AND IT IS THE GATE CATCHING ME DOING THE THING IT EXISTS FOR
+
+`corpus/check_frontier_delta.py`'s own docstring said `regen_frontier.py` *"appears nowhere in
+`.github/workflows/gates.yml`"* — ⛔ **a bare absence claim**, which is exactly what
+`check_absence_claims` is built to stop: *"**'My grep missed it' is not 'it is not there', and that
+collapse is what this gate exists for.**"*
+
+**Fixed by stating the search beside the claim rather than deleting the claim**, which the gate names
+as the wrong remedy: `grep -c 'regen_frontier' .github/workflows/gates.yml` → `0`;
+`grep -c 'argv\|--check' scripts/regen_frontier.py` → `3`, all three inside a runway STRING rather
+than code, so the generator parses no arguments and has no `--check` mode to call. ⌗ ⛭ *The claim was
+TRUE and was still a defect — and I wrote it in the docstring of a gate whose whole subject is a
+field nobody checks. `check_absence_claims` passes now.*
+
+### ✔ ⒝ PORTED, WITH THE REPO'S OWN TOOLING
+
+`check_pages_current` — **`paper_P16.html` was `440` bytes behind its `.tex`**, from your own `r7399`
+`P16` abstract edit. `scripts/gen_paper_html.py P16`. ⌗ *I read the diff as the gate instructs: it is
+your "`Open`—of the three below, two are frontiers this paper sets up to close and one a precision
+frontier the title does not stake itself on" catching up. The served book was still publishing the
+old two-item sentence.* **Green.** ⌗ ⛔ *This is the third P-page staleness this cycle (`P7` twice,
+`P16` once). A paper edit and `gen_paper_html.py` are not committed together, and nothing in `CI`
+fails until the next seat pushes.*
+
+### ⛔ ⒞ TWO ARE YOURS, AND NEITHER IS A NUMBER A PUSH CAN SUPPLY
+
+- **`check_open_ledger`** — three `CR_framework` qualifications with no verdict (`9177c52baf`,
+  `cf8bd7a858`, `db7d54f2d8`) and a `--rebuild` for `fb2d798ceb`. *Reported at `.52` and re-verified
+  on this tree.*
+- **`check_view_tables`** — ⛭ **new, and I am not guessing it.** `regen_frontier.py:KIND` carries
+  `8` live rows absent against a baseline of `7`, and the debt file is *"rewritten DOWNWARD only"*,
+  so recording the higher number is forbidden by design. The remedy is to **add the missing row's
+  `KIND`** — and `KIND` is `READ` or `BUILD`, *which is a judgement about whether a row's work is a
+  reading or a build.* The eight live rows without one are `PO-24` `PO-50` `PO-86` `PO-87` `PO-88`
+  `PO-89` `PO-90` `PO-91`; only `PO-78` has one. ⇒ ***Guessing `READ` or `BUILD` would publish a
+  false claim about whether that row's estimate is measured, in the one view that says so. Yours.***
+
+⌗ ⛭ **And a correction to what I told you twice:** I said `fast`'s remaining blocker was
+`check_open_ledger` alone. **It was one of four, and one of the four was mine.** *I had read the step
+record and stopped at the first cause rather than reading the whole `FAILED` line — the same shape as
+the `r7383` red, where I reported a fix and the layer behind it was still there.*
+
+## ⛭⛭ `r7401+cc66.58` — **⓬ MEASURED: `16` of `40` CARRY A CLASSIFICATION, `1` DISAGREES — AND THE ONE THAT DOES SITS IN THE CONSTRUCT THIS ARM CANNOT READ, WHICH IS THE ANSWER TO YOUR GATE QUESTION**
+
+*Read at `origin/main`. Constructs, the agreement rule and four bands registered in
+`computations/beyond_the_wall/r7401_cc66_the_classification_column/REGISTRATION.md` and **pushed
+before anything was scored**. The column went on ⑩'s already-fixed `40`, not a new draw. ⛔ Not built,
+as ⓬ instructs.*
+
+| | | |
+|---|---|---|
+| **carry a classification** | **`16` of `40`** | `40.0` % ± `7.3`pp → `132` ± `24` of `329` |
+| of those, **disagree** | **`1`** | `6.2` % ± `6.1`pp |
+| incl. one the prose itself declares | `2` | `12.5` % ± `8.3`pp |
+
+By construct: **`C1`** a heading naming openness/closure/scope/debt — **`9`**; **`C2`** the maturity
+paragraph — **`7`**; **`C3`** a `%` status block — **`0`**; **`C4`** a `P7` frontiers kind — **`0`**.
+
+### ⛔ THE CANDIDATE, WITH BOTH READINGS, BECAUSE YOU RULE AND I DO NOT
+
+`P15` l.`138` lists **`the amplitude floor`** under `\emph{Established}`. `P15` §`2356` is
+`What the substrate determines: the amplitude floor and the classical character`, and l.`2366` inside
+it says ***"One scope qualification is owed immediately, and closing it is what makes the classical
+reading a result rather than an inference"*** — with the sampled sentence itself reading *"One check
+is owed here and is not optional"*.
+
+⇒ **The construct says `Established`; the prose inside it says a qualification is owed and that
+closing it is what would make the reading a result.** ⌗ ⛭ **The other reading, stated rather than
+suppressed:** *the maturity entry may name the floor PROPOSITION — which rules out the substrate's
+vacuum and is established — while the qualification concerns the PROGENITOR's vacuum, a different
+quantity the section itself distinguishes. On that reading there is no defect.* **Yours.**
+
+⌗ *And one that disagrees but **declares** it, which is the opposite of your shape rather than an
+instance of it: `P18` §`What is genuinely unpaid` contains "and one that is sharper here than in the
+field, and is **answered rather than owed**". The heading says unpaid, the prose says answered — and
+says so in terms. Your `r7401` defect was two sentences neither of which flagged the other.*
+
+### ⛭⛭ AND THE CAVEAT I REGISTERED BEFORE THE NUMBER IS BORNE OUT, WHICH ANSWERS YOUR GATE QUESTION
+
+I registered that **your two instances both sit in constructs this arm's population largely or wholly
+excludes** — `P16`'s in an abstract/maturity paragraph, `P7`'s item `3` in the frontiers section the
+arm skips by design — **so the sample would UNDER-see the shape ⓬ names.**
+
+⇒ ⛔ ***It does, and the measurement says so from the inside: the only candidate came from `C2`, the
+maturity paragraph — a construct this harvester has NO access to, because a maturity column is PROSE
+and not a marker. `C1`, the construct the net does reach, gave `9` sites and `0` disagreements.***
+
+⇒ **So "every classified item agrees with its own classification" is cheap only if something parses
+the classifying constructs — and the two that carry your three known defects (`C2` the maturity
+paragraph, `C4` the frontiers kind) are exactly the two this population does not read.** ⌗ *That is a
+POPULATION change, not a column. ⛔ Priced and reported, not built.*
+
+⌗ **Bands: ⒜ `8`–`22` → `16` HELD. ⒝ `0`–`3` → `1` HELD. ⒞ `C2` `0`–`6` → `7` REFUTED HIGH, just —
+the maturity subjects turned out to be named closely enough to the section headings that seven of the
+nine `P15`/`P16` sites matched, and every match carries its reasoning in `column.tsv` so any one can
+be overturned. ⒟ `C3` = `0` BY CONSTRUCTION and worth nothing, as registered: `97` vocabulary matches
+are stranded in comment blocks this population strips.**

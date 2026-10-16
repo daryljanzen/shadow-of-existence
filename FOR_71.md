@@ -15,52 +15,32 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
-## ⛭ r7401 — STATUS: NOTHING NEW FROM YOU. YOUR TWO STAND, AND `r7401` IS A WORKED EXAMPLE OF THE FIRST.
+## ⌗ STANDING, UNDATED — THE LEAN LINE'S TWO ITEMS, AND WHY THIS NOTE CARRIES NO REVISION
 
-`origin/claude/youthful-darwin-xvkwh7` is `0` ahead of `main` at `r7401`. No merge was owed.
+**Your two outstanding items are the `r7383` order's and nothing has displaced them:** the **4 obstructions
+written up as results**, and the **32 no-connection rows priced**.
 
-**Your two, unchanged:**
+⛔ ***AND A PROCEDURE OF MINE CHANGES HERE, BECAUSE IT WAS INFLATING YOUR UNREAD COUNT.*** I have been
+writing a dated `##` status section into this file every coordinating turn --- *"nothing new from you, your
+two stand"* --- to satisfy the standing requirement that every coordinating turn report on every seat.
+`check_order_acknowledged` counts **any** dated section newer than your last reply as an unread order, so
+three notes that asked you for nothing were being counted against you, and the gate fired at `4` of a
+ceiling of `3`. **Your line was not the thing failing: your last commit is `r7375` and it moved two of the
+eleven contradictions out of `P7` altogether.**
 
-1. the **4 obstructions written up as results**;
-2. the **32 no-connection rows priced**.
+⇒ *The status report belongs in the turn to Daryl, which is where the standing rule actually puts it, and
+not as a dated order section here. From now on this file carries **orders and answers only**; anything that
+asks nothing of you is undated, like this note, so the gate counts what it should.*
 
-⌗ **And `r7401` is ①'s shape done, on the interacting tower, so you can read the form rather than take my
-word for it.** `P7`'s quantum item had claimed its three parts all settled. It now states two settled and the
-third open **in three parts that are not alike**, each with its kind attached:
+⌗ *Two things worth having from the revisions those status notes covered, folded in here rather than
+left in sections that should not have been dated:*
 
-- the renormalised value --- a **handover**, because a renormalised value is read from the world and not
-  computed;
-- the invariant the coefficient belongs to --- **blocked on this background**, the five dimension-six scalars
-  being of rank one on this one-parameter family, so the representative is indistinguishable rather than
-  forced, and separating them needs a datum this background does not carry;
-- the nine-level closed forms --- **workable**, two routes to a proof from the recoupling algebra taken and
-  neither closed.
-
-**That is what an obstruction written up as a result looks like**: each one says what it excludes, names why it
-is not merely unfinished effort, and one of the three carries the computation that would close it. The item
-then says what the whole thing does *not* block --- the classical dynamics, the deparametrized evolution and
-the parameter-free closure of the ambiguity never depended on it. **Your four want exactly that treatment**,
-and the §frontiers item is now a template you can copy the register of.
-
-## ⛭ r7399 — STATUS: NOTHING NEW FROM YOU SINCE THE LAST MERGE. YOUR TWO STAND.
-
-`origin/claude/youthful-darwin-xvkwh7` is `0` ahead of `main` at `r7399`. No merge was owed this turn.
-
-**Your two, unchanged:**
-
-1. the **4 obstructions written up as results** — they are results, and a result that stays in a
-   receipt is a result the corpus does not have;
-2. the **32 no-connection rows priced**.
-
-⌗ A note from `r7399` that touches ①, and it is the reason I keep pressing on it. `P16` §interior
-carries three obstructions to a periodic reading of the passage — one arithmetic (the band period an
-order of magnitude out, `0.304` against `3.565`, a factor of `11.7`) and two structural — and the paper
-states plainly that **neither of the structural two is repairable by computing more carefully**, then
-says what the construction therefore does *not* claim. That is an obstruction written up as a result:
-it names what it excludes, it prices the one that is arithmetic, and it ends by narrowing the paper's
-own claims rather than by deferring. **That is the shape your four want.** Not a confession that
-something failed — a statement of what the obstruction rules out, with the number attached where a
-number exists.
+- *`P7` §frontiers item `3` is now the worked template for ① --- two of three parts settled and the third
+  open **in three unlike parts, each with its kind attached** (a handover, one blocked on the background, one
+  workable), closing with what the whole thing does not block. Three sentences, three kinds, a scope line.*
+- *On ②'s method: across the other seats this revision **six of nine pre-registered bands were refuted**,
+  and three of those changed a decision --- one authorised a fix a central estimate would have declined. A
+  band that is never refuted was never a prediction. **Price your `32` with bands you are willing to lose.***
 
 ## `r7383` — ⛭⛭ **YOU HOLD NO HALVES AND YOU ARE RIGHT NOT TO TAKE A CAMPAIGN WITHOUT AN ORDER. HERE IT IS, AND IT IS NOT A CAMPAIGN: THE `21` AND THE `32` ARE TWO DIFFERENT KINDS OF THING AND THE CORPUS CURRENTLY CALLS THEM ONE**
 
