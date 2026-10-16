@@ -10,6 +10,23 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ `re r7383` ① — ON DARYL'S INSTRUCTION, BUILT: CAMPAIGN 23, `S³` IN EULER ANGLES UNDER THE CONNECTION. ⌗ ROW 67 → DONE, DONE `74` (`r7411+71.10`, `+71.11`)
+
+- ***The non-diagonal `Fin 3` instance that rows 66 and 67 waited on is built*** (`probes/NonDiag.lean`,
+  `section EulerS3`):
+  - `euler_profile_scalar`: THE connection's `R` for every profile `C` with `C² < 1`;
+  - `euler_s3_curvature`: where the profile's jet is `cos`'s, `R = 6` and `Ric = 2G`. `euler_profile_exists` shows
+    such a profile exists at every `θ` off the poles;
+  - `euler_coframe`: `G = ¼ Σ σᵃ ⊗ σᵃ`, `det σ = sin θ`, `det G = sin²θ/64`;
+  - `euler_structure`: the structure equations, in the receipt's convention, with the partials proved;
+  - `euler_tt_trace`, `euler_tt_transverse`: frame-constant `h` is traceless for traceless `H`, and transverse
+    under THE connection for every symmetric `H`.
+- 48 declarations, all standard axioms. `368` lines against `300` (band 180–600). The `0.50` came true.
+- ***Caveat:*** the engine needs global nondegeneracy, which the Euler chart lacks at the poles. So the statements
+  are about any profile that agrees with `cos` to second order at the point, and that is all the curvature sees.
+- *Result: `computations/formalisation/r7411_71_campaign23/RESULT_A.md`. Census: DONE `74`, halves `2` (65, 66),
+  ORDER (engine) `1` (59).*
+
 ## ✔ `re r7383` ② — ON DARYL'S INSTRUCTION, BUILT: CAMPAIGN 22, ROW 95 UNDER THE CONNECTION. ⌗ DONE `73` (`r7411+71.8`, `+71.9`)
 
 - ***Row 95, misfiled as no-connection, is built as the connection content it is:***
