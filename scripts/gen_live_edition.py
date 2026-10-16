@@ -40,6 +40,7 @@ OUT_EXPL = os.path.join(ROOT, 'BOOK_INTRO_cosmiCave', 'explainer.html')
 OUT_FRONT = os.path.join(ROOT, 'BOOK_INTRO_cosmiCave', 'frontier.html')
 OUT_LEDG = os.path.join(ROOT, 'BOOK_INTRO_cosmiCave', 'ledgers.html')
 OUT_RCPT = os.path.join(ROOT, 'BOOK_INTRO_cosmiCave', 'receipts.html')
+OUT_FORM = os.path.join(ROOT, 'BOOK_INTRO_cosmiCave', 'formalisation.html')
 OUT_MAP = os.path.join(ROOT, 'BOOK_INTRO_cosmiCave', 'sitemap.xml')
 OUT_ROB = os.path.join(ROOT, 'BOOK_INTRO_cosmiCave', 'robots.txt')
 
@@ -398,6 +399,138 @@ def ledger_rows():
     return out
 
 
+# ──────────────────────────────────────────────────────────────────────────────
+# ** THE FORMALISATION PAGE (r7425, on 69's proposal of 2026-10-16). **  The join
+#   `receipt → row → theorem` became a FIELD at r7419+71.2 (`receipt` on every row,
+#   `decl` on every row with something built).  This reads it and publishes it.
+#
+# ** THREE REFUSALS, AND EACH ONE IS A RULING AND NOT A PRECAUTION. **
+#   ⒜ A STATUS WITH NO WORDING raises.  69's own rule: "a class the inventory adds
+#      later gets a line here before it is published.  The generator should refuse a
+#      status that has no line, rather than print the bare label."  The ground is
+#      measured: the inventory GAINED a class inside one cycle (`DONE (chartable
+#      half)`, from 71's campaigns 21 and 23), so a generator that printed the bare
+#      label would have published a heading with no sentence under it.
+#   ⒝ A `decl` CELL THAT DOES NOT PARSE raises, via `decl_cells.parse_decl`, which
+#      raises rather than returning a short list.
+#   ⒞ A PAIR THAT IS NOT DECLARED WHERE THE CELL SAYS raises.  The page does not
+#      publish a join it has not checked, whatever a gate elsewhere says: at r7423
+#      the join gate was RED on correct data because it had its own parser, so a
+#      page that trusted the gate's verdict would have been wrong in the other
+#      direction.  The grammar AND the check both come from `scripts/decl_cells.py`,
+#      so this page, that gate and any audit read one implementation.
+#
+# ** AND THE PAGE INVENTS NO MARK. **  69 declined "proved where marked" for the
+#   structure class, on the ground that it "asks the page for a mark the generator
+#   would have to invent -- a link is already the thing a proved row carries."  So a
+#   name with a link is proved and a name without one is not, and there is no third
+#   signal anywhere on the page.
+def formalisation_rows():
+    """(rows, wording, counts) -- the inventory joined to its wording and checked."""
+    import sys as _sys
+    _sys.path.insert(0, os.path.join(ROOT, 'scripts'))
+    import decl_cells as dc
+
+    wording = {}
+    wpath = os.path.join(ROOT, 'computations', 'beyond_the_wall',
+                         'r7419_69_status_wording', 'WORDING.tsv')
+    for line in open(wpath, encoding='utf-8').read().split('\n'):
+        if not line.strip() or line.startswith('#'):
+            continue
+        f = line.split('\t')
+        if len(f) >= 3 and f[0] != 'status':
+            wording[f[0]] = (f[1], f[2])
+
+    gaps = {}
+    gpath = os.path.join(ROOT, 'computations', 'beyond_the_wall',
+                         'r7419_69_status_wording', 'GAPS.tsv')
+    for line in open(gpath, encoding='utf-8').read().split('\n'):
+        f = line.split('\t')
+        if len(f) >= 2 and f[0] not in ('gap', ''):
+            gaps[f[0]] = f[1]
+
+    # ** PER-ROW PUBLIC TEXT LIVES IN 69'S OWN DIRECTORY, keyed by row index. **  r7425 built
+    #   this with a gap lookup only, and the probe that proved the positive path found there was
+    #   nowhere for a per-row phrase to COME FROM -- so a class whose sentence promises text
+    #   beside it could never be satisfied for any row outside `LIBRARY GAP`.  A refusal with no
+    #   reachable remedy is not a refusal, it is a wall.  This file is the remedy's address.
+    beside_by_row = {}
+    bpath = os.path.join(ROOT, 'computations', 'beyond_the_wall',
+                         'r7419_69_status_wording', 'ROW_TEXT.tsv')
+    if os.path.exists(bpath):
+        for line in open(bpath, encoding='utf-8').read().split('\n'):
+            f = line.split('\t')
+            if len(f) >= 2 and f[0] not in ('index', '') and not f[0].startswith('#'):
+                beside_by_row[f[0].strip()] = f[1].strip()
+
+    # ** WHICH CLASSES PROMISE TEXT "BESIDE IT", read off 69's OWN SENTENCES and not
+    #   from a list of mine -- so a reworded sentence changes this requirement with it. **
+    promises = {st for st, (_h, sent) in wording.items() if 'beside it' in sent}
+
+    _head, rows = dc.read_rows()
+    out = []
+    for r in rows:
+        st = (r.get('status') or '').strip()
+        if st not in wording:                                       # ⒜
+            raise SystemExit(
+                f"  ⛔ formalisation.html REFUSED: row {r.get('index')} carries the status "
+                f"{st!r}, which has no line in WORDING.tsv.\n"
+                f"     69 owns that file and the wording is its call.  The page is not written "
+                f"rather than printing the bare label.")
+        pairs = dc.parse_decl(r.get('decl'))                        # ⒝
+        for path, name in pairs:
+            ds = dc.declared_names(path)
+            if ds is None:                                          # ⒞
+                raise SystemExit(f"  ⛔ formalisation.html REFUSED: row {r.get('index')} names "
+                                 f"{path}, which is not a file.")
+            if name not in ds and name.split('.')[-1] not in ds:
+                raise SystemExit(f"  ⛔ formalisation.html REFUSED: row {r.get('index')} names "
+                                 f"{name}, which {path} does not declare.")
+        # ** THE `what it needs next` CELL IS INTERNAL WORKING TEXT AND IS NOT PUBLISHED. **
+        #   r7425 built this page once with that cell in it, looked at the result, and found
+        #   `r7013 split ROW`, `REOPENABLE`, `r7411+71.2` and `CLASSIFICATION.tsv` on a public
+        #   page -- node shorthand of exactly the kind the corpus bans from the papers.  The
+        #   cell is used here only to LOOK UP a gap's plain name, never rendered.
+        internal = (r.get('what it needs next') or '').strip()
+        beside = beside_by_row.get((r.get('index') or '').strip(), '')
+        if not beside and st == 'LIBRARY GAP':
+            for g, plain in gaps.items():
+                if g.lower() in internal.lower():
+                    beside = plain
+                    break
+        if st in promises and not beside and not pairs:
+            raise SystemExit(
+                f"  \u26d4 formalisation.html REFUSED: row {r.get('index')} is {st!r}, whose "
+                f"sentence promises a text 'beside it', and nothing plain is beside it.\n"
+                f"     The `what it needs next` cell is internal working text and is not "
+                f"published.\n     69 owns the public wording: add one line to "
+                f"computations/beyond_the_wall/r7419_69_status_wording/ROW_TEXT.tsv\n"
+                f"     as `<index>\\t<one plain phrase>`.")
+        out.append(dict(index=r.get('index', ''), cls=r.get('class', ''), status=st,
+                        beside=beside, standin=(r.get('stand-in') or '').strip(),
+                        receipts=dc.parse_receipt(r.get('receipt')), pairs=pairs))
+    counts = {}
+    for r in out:
+        counts[r['status']] = counts.get(r['status'], 0) + 1
+    return out, wording, counts
+
+
+def receipts_with_a_proof():
+    """{receipt stem: n_theorems} -- the mark receipts.html carries, from the same join."""
+    try:
+        rows, _w, _c = formalisation_rows()
+    except SystemExit:
+        raise
+    mark = {}
+    for r in rows:
+        if not r['pairs']:
+            continue
+        for rc in r['receipts']:
+            stem = os.path.splitext(os.path.basename(rc.rstrip('/')))[0]
+            mark[stem] = mark.get(stem, 0) + len(r['pairs'])
+    return mark
+
+
 def receipt_rows():
     """INDEX.md's rows grouped by the paper directory that owns them, which is
     the same home the appendix numbering uses -- so PxRn here is PxRn there."""
@@ -544,6 +677,23 @@ def md_to_html(md, matrix_slot=True, stop_at_h2=None):
 
 
 def main():
+    # ** VALIDATE THE FORMALISATION JOIN BEFORE ANY PAGE IS WRITTEN. **  r7425 built this
+    #   generator with the check beside the page it feeds, and the first refusal fired AFTER
+    #   receipts.html had been written with a link to a formalisation.html that did not exist.
+    #   A partial write is worse than a refusal, so the join is checked first and the whole
+    #   run refuses together.
+    #   ** AND THE REFUSAL IS SCOPED TO THIS ONE UNIT, NOT TO THE RUN. **  `pages.yml` runs
+    #   this script to deploy the site, so refusing the whole run would take the published
+    #   book down over the wording of three rows.  `formalisation.html` and the `receipts.html`
+    #   proof mark are ONE unit -- the mark links to the page -- so they are skipped together
+    #   and there is never a dead link.  The refusal prints, loudly, every run until it clears.
+    try:
+        _fcheck = formalisation_rows()
+        _pmark = receipts_with_a_proof()
+        _frefusal = None
+    except SystemExit as e:
+        _fcheck, _pmark, _frefusal = None, {}, str(e)
+
     papers = []
     for num, stem in ORDER:
         t = title_of(stem)
@@ -625,6 +775,14 @@ def main():
             '<span class="two"><a href="' + PAGES.rstrip('/') +
             '/explainer.html">READ</a><a href="' + PDF_BASE +
             '/explainer.pdf">PDF</a></span></li>')
+
+    # ** the nav entry exists only if the page does -- a dead link on the index is the one
+    #   defect a reader meets first. **
+    formalisation_nav = ('' if not _fcheck else
+        '    <li><span class="pn">F</span><span class="ti"><b>The formalisation</b>'
+        '<span class="sub">\n      every calculation the papers rest on, and whether it is '
+        'also proved in\n      Lean</span></span><a href="' + PAGES +
+        '/formalisation.html">INDEX</a></li>')
 
     html = rf"""<!DOCTYPE html>
 <html lang="en">
@@ -732,6 +890,7 @@ this page.</p>
     <li><span class="pn">R</span><span class="ti"><b>The receipts</b><span class="sub">
       every runnable computation the papers cite, by the paper that owns
       it</span></span><a href="{PAGES}/receipts.html">INDEX</a></li>
+{formalisation_nav}
 </ul>
 
 <h2>The open edge</h2>
@@ -930,6 +1089,10 @@ const PAGES_URL = '{PAGES}';
     # ── the receipts, by the paper that owns them ──
     by, _ = receipt_rows()
     total = sum(len(v) for v in by.values())
+    # ** r7425: the proof mark comes from the SAME join the formalisation page reads,
+    #   so a receipt cannot be marked PROVED here and unproved there. **
+    proof_mark = _pmark
+    rcpt_marked = 0
     titles = {num: t for num, t, _u, _s in
               [(n, tt.partition(':')[0], 0, 0) for n, tt, _x, _y in
                [(a, b, c, d) for a, b, c, d in papers]]}
@@ -949,17 +1112,89 @@ const PAGES_URL = '{PAGES}';
             wd = withdrawn_note(r['stem'])
             if wd:
                 sub = (sub + ' \u2014 ' if sub else '') + wd
+            nth = proof_mark.get(r['stem'])
+            if nth:
+                rcpt_marked += 1
+                sub = ((sub + ' \u2014 ' if sub else '')
+                       + ('proved in Lean: %d theorem%s'
+                          % (nth, '' if nth == 1 else 's')))
             body += ('<li><span class="pn">' + r['num'] + '</span>'
                      '<span class="ti"><b>' + r['stem'].replace('_', ' ') + '</b>'
                      + ('<span class="sub">' + sub + '</span>' if sub else '') + '</span>'
-                     '<a href="' + GH + '/receipts/' + r['path'] + '">PY</a></li>\n')
+                     + ('<a href="' + PAGES + '/formalisation.html">PROVED</a>'
+                        if nth else '')
+                     + '<a href="' + GH + '/receipts/' + r['path'] + '">PY</a></li>\n')
         body += '</ul>\n'
     with open(OUT_RCPT, 'w', encoding='utf-8') as fh:
         fh.write(page('The receipts',
                       f'{total} runnable receipts, numbered by the paper that owns '
-                      'them \u2014 so <b>P3R7</b> here is <b>P3R7</b> in the paper.',
+                      'them \u2014 so <b>P3R7</b> here is <b>P3R7</b> in the paper. '
+                      + ('A receipt whose calculation is also proved in Lean carries '
+                         f'<b>PROVED</b>, linked to the theorem; <a href="{PAGES}/'
+                         'formalisation.html">the formalisation index</a> lists every row.'
+                         if _fcheck else ''),
                       body))
-    print(f'  receipts.html written: {total} receipts across {len(by)} papers.')
+    print(f'  receipts.html written: {total} receipts across {len(by)} papers, '
+          f'{rcpt_marked} of them carrying a proof mark.')
+
+    # ** AND THE REFUSAL IS SCOPED TO THIS ONE UNIT, NOT TO THE RUN. **  `pages.yml` runs this
+    #   script to deploy the site, so refusing the whole run would take the published book down
+    #   over the wording of three rows.  `formalisation.html` and the `receipts.html` proof mark
+    #   are ONE unit -- the mark links to the page -- so they are skipped TOGETHER and there is
+    #   never a dead link.  The refusal prints every run until it clears.
+    if _frefusal:
+        print()
+        print(_frefusal)
+        print('  \u21d2 formalisation.html and the receipts.html proof mark are NOT written:'
+              ' the two are one unit and are skipped together.  The rest of the site is built.')
+        print()
+    else:
+        # \u2500\u2500 the formalisation, by status, in 69's own words \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
+        frows, fwording, fcounts = _fcheck
+        STATUS_ORDER = ['DONE', 'DONE (chartable half)', 'LIMIT OF A DONE ROW',
+                        'ORDER: ENGINE-REACHABLE', 'GENERIC-METRIC IDENTITY',
+                        'ROW: A DIFFERENT KIND', 'LIBRARY GAP']
+        # ** THE ORDER IS DECLARED AND ASSERTED, for turn_gates.sh's own reason: a status
+        #   the inventory adds later must not fall off the bottom of a hand-written list.
+        missing = [s for s in fcounts if s not in STATUS_ORDER]
+        if missing:
+            raise SystemExit(f'  \u26d4 formalisation.html REFUSED: status(es) {missing} are worded '
+                             f'but absent from this page\u2019s display order.')
+        fbody = ''
+        npairs = sum(len(r['pairs']) for r in frows)
+        for st in STATUS_ORDER:
+            rows_s = [r for r in frows if r['status'] == st]
+            if not rows_s:
+                continue
+            heading, sentence = fwording[st]
+            fbody += (f'<h2>{heading}</h2>\n<p class="note">{sentence}</p>\n'
+                      f'<p class="note">{len(rows_s)} of {len(frows)} rows.</p>\n'
+                      '<ul class="papers">\n')
+            for r in rows_s:
+                links = ''
+                for path, name in r['pairs']:
+                    short = name.rpartition('.')[2] or name
+                    links += (f' <a href="{GH}/computations/formalisation/lean/{path}">'
+                              f'{short}</a>')
+                what = r['beside']
+                sub = (what + (' \u2014 ' if what and links else '')) if what else ''
+                fbody += ('<li><span class="pn">' + r['index'] + '</span>'
+                          '<span class="ti"><b>' + (r['standin'][:110] or r['cls']) + '</b>'
+                          + ('<span class="sub">' + sub + links + '</span>'
+                             if (sub or links) else '') + '</span>'
+                          + ('<a href="' + GH + '/' + r['receipts'][0] + '">RECEIPT</a>'
+                             if r['receipts'] else '<span class="pn">\u2014</span>') + '</li>\n')
+            fbody += '</ul>\n'
+        with open(OUT_FORM, 'w', encoding='utf-8') as fh:
+            fh.write(page('The formalisation',
+                          f'Each of these {len(frows)} rows is one calculation a receipt '
+                          'performs and a paper relies on. This says, for each, whether that '
+                          'calculation is also proved in Lean \u2014 and where a proof exists, '
+                          'the theorem is linked. '
+                          f'{npairs} theorems are linked across '
+                          f'{sum(1 for r in frows if r["pairs"])} rows.', fbody))
+        print(f'  formalisation.html written: {len(frows)} rows, {npairs} theorems linked, '
+              f'{len(fcounts)} statuses, all worded.')
 
     # ── sitemap and robots ────────────────────────────────────────────────
     # Without these, a search engine has to FIND twenty-three pages by
@@ -970,6 +1205,8 @@ const PAGES_URL = '{PAGES}';
     today = datetime.date.today().isoformat()
     pages = ['', 'introduction.html', 'explainer.html', 'frontier.html',
              'ledgers.html', 'receipts.html']
+    if _fcheck:
+        pages.append('formalisation.html')
     pages += ['paper_%s.html' % num for num, _t, _u, _s in papers]
     urls = []
     for rel in pages:

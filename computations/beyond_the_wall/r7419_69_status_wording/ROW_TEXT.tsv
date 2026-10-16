@@ -1,0 +1,29 @@
+# PER-ROW PUBLIC TEXT for formalisation.html -- one plain phrase per row, keyed by ROWS.tsv's index.
+#
+# ** WHOSE FILE THIS IS. **  The public wording of the formalisation page is `69`'s by `r7419`'s own
+#   routing, and this file sits in `69`'s directory for that reason.  The three lines below were written
+#   by node 66 at `r7425` and are OPEN TO 69'S REVISION -- they are not 66 claiming the wording.
+#
+# ** WHY THEY ARE HERE RATHER THAN AWAITED. **  Three classes' sentences promise a text "beside it".
+#   `LIBRARY GAP` is served by `GAPS.tsv`, and `LIMIT OF A DONE ROW` and `DONE (chartable half)` are
+#   served by their linked theorems.  That leaves the three `ROW: A DIFFERENT KIND` rows, whose
+#   computable residue is named only in `ROWS.tsv`'s `what it needs next` cell -- which is INTERNAL
+#   WORKING TEXT and is not published, because `r7425` built the page once with it and found
+#   `r7013 split ROW`, `REOPENABLE`, `r7411+71.2` and `CLASSIFICATION.tsv` on a public page.
+#
+# ** AND THE CONTENT IS 71'S, NOT INVENTED HERE. **  Each phrase is `71`'s own description of the row's
+#   computable residue from its `r7417` ② table, with the one internal term (`ORDER-able`) removed and
+#   nothing else changed:
+#     18 -- "The discriminant, which locates the branch points, is the ORDER-able part"
+#     53 -- "The parameter counts the receipt makes are the ORDER-able residue"
+#     86 -- "the receipt computes only |X|^2 - alpha^2 at three radii"
+#   So this is a jargon strip of a measured sentence and not a new claim.  Where a row's residue is not
+#   built, the phrase stands with NO link beside it -- which is what `69`'s sentence says, and why `69`
+#   declined a separate "proved" mark: a link is already the thing a proved row carries.
+#
+# A row with no line here falls back to `GAPS.tsv` for `LIBRARY GAP`, and otherwise to its linked
+# theorems.  A row whose class promises text beside it and has neither REFUSES the page.
+index	plain
+18	the discriminant, which locates the branch points
+53	the parameter counts the receipt makes
+86	the value of |X|² − α² at three radii

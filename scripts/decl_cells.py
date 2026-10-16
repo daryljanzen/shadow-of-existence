@@ -119,6 +119,83 @@ def read_rows(path=ROWS):
 
 
 # --------------------------------------------------------------------------------------------------
+# ** THE CHECK LIVES HERE TOO, AND FOR THE SAME REASON THE GRAMMAR DOES. **  `r7423` put the grammar
+#   in one place after two instruments invented it differently.  The CHECK -- is this name declared in
+#   this file -- is the same hazard one step on: a declaration reader that misses `namespace` or the
+#   `@[simp]` prefix reports a dangling reference on sound data, which is exactly the red `r7423`
+#   measured.  So the gate, the page generator and any audit read ONE reader.
+LEAN_ROOT = os.path.join(ROOT, 'computations', 'formalisation', 'lean')
+
+_DECL = re.compile(
+    r'^\s*(?:@\[[^\]]*\]\s*)?'
+    r'(?:private\s+|protected\s+|noncomputable\s+|partial\s+|unsafe\s+|scoped\s+)*'
+    r'(?:theorem|lemma|def|abbrev|instance|structure|inductive|example|opaque)\s+'
+    r"([A-Za-z_][\w.']*)")
+_NS = re.compile(r"^\s*namespace\s+([A-Za-z_][\w.']*)")
+_END = re.compile(r"^\s*end\s+[A-Za-z_]")
+
+_cache = {}
+
+
+def lean_path(rel):
+    """Resolve a cell's `.lean` path to a file on disk, or None."""
+    for cand in (os.path.join(LEAN_ROOT, rel), os.path.join(ROOT, rel)):
+        if os.path.isfile(cand):
+            return cand
+    return None
+
+
+def declared_names(rel):
+    """Every name declared in the file, bare and under each enclosing `namespace` suffix.
+
+    Returns None when the file is absent -- which the caller must distinguish from the empty
+    set, because `no file` and `no declarations` are different findings."""
+    if rel in _cache:
+        return _cache[rel]
+    p = lean_path(rel)
+    if p is None:
+        _cache[rel] = None
+        return None
+    names, stack = set(), []
+    for line in open(p, encoding='utf-8', errors='replace').read().split('\n'):
+        m = _NS.match(line)
+        if m:
+            stack.append(m.group(1))
+            continue
+        if _END.match(line) and stack:
+            stack.pop()
+            continue
+        d = _DECL.match(line)
+        if d:
+            n = d.group(1)
+            names.add(n)
+            for i in range(len(stack)):
+                names.add('.'.join(stack[i:] + [n]))
+    _cache[rel] = names
+    return names
+
+
+def check_pairs(rows):
+    """[(index, path, name, verdict), ...] over every pair every row claims.
+
+    verdict is 'ok', 'no-file', or 'not-declared'.  One entry per PAIR and never one per row:
+    a row carrying ten pairs is ten claims, and checking one of them was the `r7423` defect."""
+    out = []
+    for r in rows:
+        idx = r.get('index', '?')
+        for path, name in parse_decl(r.get('decl')):
+            ds = declared_names(path)
+            if ds is None:
+                v = 'no-file'
+            elif name in ds or name.split('.')[-1] in ds:
+                v = 'ok'
+            else:
+                v = 'not-declared'
+            out.append((idx, path, name, v))
+    return out
+
+
+# --------------------------------------------------------------------------------------------------
 # The grammar's own cases.  Each is a statement about the grammar and not about the inventory.
 _CASES = [
     ('a/B.lean: N.x', [('a/B.lean', 'N.x')]),
@@ -193,7 +270,15 @@ def audit():
           f'({100 * withdecl // max(pairs, 1)} %)')
     for idx, e in errs:
         print(f'  [FAIL] row {idx}: {e}')
-    return 1 if errs else 0
+    checked = check_pairs(rows)
+    from collections import Counter
+    c = Counter(v for _, _, _, v in checked)
+    print(f'  pairs checked against the tree : {len(checked)}  '
+          f'ok {c["ok"]}  not-declared {c["not-declared"]}  no-file {c["no-file"]}')
+    for idx, p, n, v in checked:
+        if v != 'ok':
+            print(f'  [FAIL] row {idx}: {n} {v} in {p}')
+    return 1 if (errs or c['not-declared'] or c['no-file']) else 0
 
 
 if __name__ == '__main__':
