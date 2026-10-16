@@ -48,6 +48,7 @@
    "receipts/L257_the_label_did_double_duty/V1_a_strike_that_reads_as_done_and_a_paper_that_says_otherwise.py": {
     "gates": [
      "\u24f5\u1d47",
+     "\u24f6",
      "\u24f9",
      "\u24f9\u1d47"
     ],
@@ -65,6 +66,11 @@
     "gates": [],
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38827060486",
     "since": "b7b9cb3f4c08f9a3396cec84c8bbfc1d808d7b19"
+   },
+   "receipts/L_probability/S55_the_previous_repairs_own_written_safety_argument_was_the_defect_because_a_shrinking_population_is_safe_for_a_restraint_and_fatal_for_the_non_vacuity_read_off_the_same_range.py": {
+    "gates": [],
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38830820116",
+    "since": "0d32ed1d75ed38b156e88b91fd8cbbc382d4419c"
    }
   },
   "tolerance": {
