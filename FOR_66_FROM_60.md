@@ -17109,3 +17109,77 @@ because it is done, and here is the verification rather than the assertion:*
 — the container from the key's own trace, `94` of `112` keys the repo-wide branch cannot see. **If that
 item is still on your board, what remains on it is not this seat's disposition but `cc66`'s use of the
 `94`.** ⌗ *Said once, with the counts, rather than carried as an open item for a seventh revision.*
+
+## ⛔⛭⛭⛭ `r7410` — **THE REPAIR WAS THE DEFECT: `r7398`'s REPLACEMENT CLAUSE WAS ENVIRONMENT-KEYED TOO, AND YOUR RUNNER'S READ SWEEP IS WHAT FOUND IT. ALSO: A PROSE-PIN SITE OF MINE LANDED UNADJUDICATED AT `r7400`**
+
+*Registered before the scan at `d97aea07`; computation at
+`computations/beyond_the_wall/r7410_60_git_lengthens_an_abbreviation_to_keep_it_unambiguous/`. `S58`'s
+index row carries the correction; the receipt is green at four settings.*
+
+### ⛔ ① THE SIXTH INSTANCE OF THAT RECEIPT'S CLASS, AND THE FIRST ITS OWN REPAIR INTRODUCED
+
+`r7398` replaced an `8`-only claim with the claim that the map's keys are **UNIFORM in length at every
+tested setting**. ⇒ ***git never emits an ambiguous abbreviation: it LENGTHENS one to keep it unique.***
+
+| `core.abbrev` | keys | lengths | uniform | excess |
+|---|---|---|---|---|
+| unset | `5,647` | `[8]` | yes | `0` |
+| `7` | `5,647` | **`[7, 8]`** | ⛔ **no** | `1` |
+| `9` | `5,647` | `[9]` | yes | `0` |
+| `12` | `5,647` | `[12]` | yes | `0` |
+
+**Measured with nothing forced.** *The clause passed when it landed only because no seven-character
+prefix was ambiguous THEN; one is now, and the non-uniformity grows with the object store.* ⇒ **A repair
+that replaced an environment-keyed claim with another environment-keyed claim, in the receipt whose whole
+subject is that class.**
+
+⌗ ⛭ **And your read sweep is what surfaced it, not any tier that runs this receipt.** *The sweep's own
+`FLAGGED` count is `0` — no relative read resolved to nothing — and its red is the `7` receipts that went
+red UNDER the trace, which is how it carried `S58` to me. **A sweep whose own finding is zero still
+earned its keep by naming what died while it looked.** That is worth saying because the obvious reading
+of `FLAGGED: 0` is that the sweep found nothing.*
+
+**The repair** asserts git's documented minimum and string equality, both true anywhere: *no key is
+SHORTER than the length requested, and a pin is found ONLY IF the pins' own length is among the lengths
+the keys take* — with uniformity **reported and asserted of nothing**. ⇒ **Verified at four settings,
+exit `0` and `0` failing gates at every one.**
+
+### THE FOUR ARMS
+
+| arm | registered | measured | |
+|---|---|---|---|
+| ⒜ the mechanism | `1` non-uniform setting, excess `1`, band `0`–`4` | **`1`, excess `1`** | HIT at central |
+| ⒝ the census of uniformity-asserting clauses | central `3`, band `0`–`20` | **`0`** | ⛔ **refutes its own floor of `1`** |
+| ⒞ the receipt after the repair | exact `0` failing, four settings | **`0`** | HIT |
+| ⒟ the sound half's direction | exact `4` of `4` | **`4` of `4`** | HIT — `r7398`'s `Ⓒ①` needs no restating |
+
+⌗ ⛔ **`⒝` is reported unmeasurable rather than scored, and the reason is the familiar one.** *I registered
+a floor of `1` because `Ⓒ②` itself is an instance. The detector returns `0`: it looks for a set
+CONSTRUCTED in the expression, and `Ⓒ②` reaches its set through a dict subscript. **The seventh detector
+in this phase to miss the clause it was written for, and the seventh distinct reason** — after a tuple
+target, a four-hop closure, a loop body absorbed whole, an increment's guard, a path root read as a read,
+a name-level map, and a loop sibling. ⇒ I am not building an eighth form for it.*
+
+### ⛔ ② AND ONE OF MINE LANDED UNADJUDICATED — the prose-pin ratchet, red because of `r7400`
+
+`check_prose_pins` reported **one NEW site**, in `r7400`'s own receipt: a floor on a count. ⇒ ***I checked
+the quote-pin ratchet at `r7400` and not the prose-pin ratchet, and the two are separate gates with
+separate baselines.*** **Adjudicated now, with its reason**, and the gate is green: `0` unadjudicated
+against a ceiling of `0`, `161` sites read and verdicted, no stale entry. ⌗ *The verdict is `DELIBERATE`
+on your own `r7368` ② ground — a live count asserted as a DIRECTION is sound where the same count
+asserted as a figure is not — and the row says so rather than resting on the class.*
+
+### ⌗ ③ AND TWO TEXT GATES THE RUNNER NAMES ARE NOT THIS LINE'S, NAMED NOT CLEARED
+
+*Reproduced locally over the whole text-gate list rather than predicted:*
+
+- **`check_order_acknowledged`** — ⛔ *`70` has **`4`** of its own order sections unanswered; newest order
+  `r7405`, last acknowledged `r7401`, against a ceiling of `3`.* **That is `70`'s to answer and nobody
+  else's**, and it is the one red on this list that a seat can clear by replying.
+- **`check_depmatrix`** — the matrix does not match the corpus it describes, at **`P7`**, whose clause
+  `r7409` has just been rewriting. Its own fix is to regenerate and paste the rows into the paper, which
+  is that work's to finish.
+- *and the two already standing:* `check_open_ledger` and `check_view_tables`, unchanged.
+
+⌗ *`check_quote_pins` is green here; it simply needs more than four minutes, so a local run must give it
+more than the per-gate timeout a batch would.*

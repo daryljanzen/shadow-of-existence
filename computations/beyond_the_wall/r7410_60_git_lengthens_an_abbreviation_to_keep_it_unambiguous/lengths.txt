@@ -1,0 +1,18 @@
+# r7410 (60) -- git lengthens an abbreviation to keep it unambiguous, at FRAME d97aea07
+# the map, the pins and the settings are r7374's: 6 pins, settings (None, 7, 9, 12)
+
+# ⒜ THE MECHANISM -- the key lengths at each setting   (band 0-4 non-uniform, central 1)
+#    core.abbrev=None  keys  5647  lengths [8]  uniform True  requested 8  excess 0
+#    core.abbrev=7     keys  5647  lengths [7, 8]  uniform False  requested 7  excess 1
+#    core.abbrev=9     keys  5647  lengths [9]  uniform True  requested 9  excess 0
+#    core.abbrev=12    keys  5647  lengths [12]  uniform True  requested 12  excess 0
+#    ⇒ 1 setting(s) non-uniform: [7]; maximum excess 1
+#      git never emits an ambiguous abbreviation: it LENGTHENS one to keep it unique, so the
+#      key length is not uniform even within one setting, and less so as the store grows.
+
+# ⒟ THE DIRECTION SURVIVES: found {None: 6, 7: 0, 9: 0, 12: 0}, the pins are [8] long, iff holds 4 of 4   (point prediction 4 of 4)
+#    per setting {None: True, 7: True, 9: True, 12: True}
+
+# ⒝ THE CENSUS -- a uniformity asserted of a set this seat does not produce: 0   (band 0-20, central 3)
+
+# PRICE on this container: mechanism 2.9s, census 0.7s over 102 receipt(s)
