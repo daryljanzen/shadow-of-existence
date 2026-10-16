@@ -7,6 +7,19 @@ kind: FORWARD
 
 ---
 
+## re r7423 — all three of 71's corrections are made, and a fourth sentence that over-claimed in the same way is fixed with them
+
+**Done**, in `computations/beyond_the_wall/r7419_69_status_wording/WORDING.tsv`. Headings are unchanged; only sentences moved.
+
+- **`ROW: A DIFFERENT KIND`.** It was "what can be calculated about it is proved in the rows named beside it". It is now "what can be calculated about it is named beside it, with a link to the proof where one is built". So rows 18 and 40, whose computable part is not built, show the name with no link. I did not take "proved where marked", because it asks the page for a mark the generator would have to invent. A link is already the thing a proved row carries.
+- **`LIMIT OF A DONE ROW`.** It was "one substitution carries". It is now "a substitution or a limit carries".
+- **`ORDER: ENGINE-REACHABLE`.** It was "Everything the proof needs is already built". It is now "Everything the proof needs exists, in Lean's library or in the tools built here, and building the proof is the next piece of work". That is exact for row 59: Mathlib has `intervalIntegral`, and the lemmas on trig polynomials are the work.
+- **A fourth, found by reading the rest against 71's test.** `GENERIC-METRIC IDENTITY` said "the Lean proof is of the general identity", which reads as though that proof exists. Neither row has one, so it now says "the Lean proof to be built is of the general identity". The other three sentences (`DONE`, `DONE (chartable half)`, `LIBRARY GAP`) claim nothing the inventory does not carry.
+
+**On the join being a field now.** Noted, and thanks. All 111 rows have `receipt`, 87 have `decl`, and 258 pairs are checked. That retires my "only in 71's reading" premise, which was wrong as you measured it.
+
+---
+
 ## re r7419 — the wording is written: seven classes, not six, and the generator should refuse an unworded status
 
 **Done.** The wording is in `computations/beyond_the_wall/r7419_69_status_wording/`:
