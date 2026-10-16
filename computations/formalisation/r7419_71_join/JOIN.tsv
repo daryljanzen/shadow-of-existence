@@ -25,7 +25,7 @@ index	status	receipt	decl	sources	unresolved
 23	LIBRARY GAP	receipts/L818_po6_running_layer/S1_the_one_constant_ledger_survives_on_the_running_layer_not_only_fixed_de_sitter.py			
 24	LIBRARY GAP	receipts/L819_shear_boundary_coupling/S1_the_ledgers_one_irreducible_survivor_is_the_conformal_coupling_that_turns_on_at_the_shear.py			
 25	DONE	receipts/P01_BH_causality/P01_metric_singularity_algebra.py	ShadowProbe.schw_charts @ probes/NoConnectionSweep.lean; ShadowProbe.schw_pg_shift @ probes/NoConnectionSweep.lean	cell	
-26	ROW: A DIFFERENT KIND	receipts/P01_BH_causality/P1_the_unruh_case_is_what_makes_the_criterion_completion_and_not_perspective.py			
+26	LIMIT OF A DONE ROW	receipts/P01_BH_causality/P1_the_unruh_case_is_what_makes_the_criterion_completion_and_not_perspective.py	ShadowProbe.unruh_ds_limits @ ShadowEngine.lean; ShadowProbe.two_surface_gravities @ ShadowEngine.lean; ShadowProbe.ds_horizon_iff @ ShadowEngine.lean; ShadowProbe.ds_surface_gravity @ ShadowEngine.lean	cell	
 27	DONE	receipts/P02_janzen_circle/P02_analytic_continuations.py	ShadowProbe.circle_continuation @ probes/NoConnectionSweep.lean	cell	
 28	DONE	receipts/P02_janzen_circle/P02_bead_K_mass_free.py	ShadowProbe.row28_curves @ probes/CurvatureInstances.lean	cell	
 29	DONE	receipts/P02_janzen_circle/P02_cycloid_and_critical_points.py	ShadowProbe.unitU_geodesic @ ShadowEngine.lean; ShadowProbe.interior_chart @ ShadowEngine.lean; ShadowProbe.interior_geodesic @ ShadowEngine.lean; ShadowProbe.cycloid_proper_time @ ShadowEngine.lean	cell	
@@ -39,7 +39,7 @@ index	status	receipt	decl	sources	unresolved
 37	DONE	receipts/P03_SdS_slicing/P03_seam_continuation.py	ShadowProbe.throat_join @ probes/NoConnectionSweep.lean	cell	
 38	DONE	receipts/P03_SdS_slicing/P03_the_hubble_eddington_radius_is_the_slices_flat_locus_and_the_bend_takes_whatever_gravitates.py	ShadowProbe.sds_balance_is_flat @ ShadowEngine.lean	sweep	
 39	DONE	receipts/P03_SdS_slicing/P03_the_sixth_equivalence.py	ShadowProbe.hinge_interval @ probes/NoConnectionSweep.lean	cell	
-40	ROW: A DIFFERENT KIND	receipts/P03_SdS_slicing/P03_the_weld_and_the_two_folds.py	ShadowProbe.sinh23_flow @ ShadowEngine.lean	cell	
+40	LIMIT OF A DONE ROW	receipts/P03_SdS_slicing/P03_the_weld_and_the_two_folds.py	ShadowProbe.sinh23_flow @ ShadowEngine.lean	cell	
 41	DONE	receipts/P03_slicing_curve/I10_I15_the_horizon_is_a_turning_point_and_a_fixed_point_and_Nariai_degenerates_both.py	ShadowProbe.surface_gravity @ ShadowEngine.lean; ShadowProbe.kappa_half_fprime @ ShadowEngine.lean	cell	
 42	DONE	receipts/P04_modern_parallax/I20_the_redshift_is_a_conformal_killing_charge_on_the_null_cone.py	ShadowProbe.conformalKilling_cov @ probes/InstanceProbe.lean; ShadowProbe.charge_const @ probes/InstanceProbe.lean; ShadowProbe.xi_isConformalKilling @ probes/InstanceProbe.lean; ShadowProbe.a_omega_const @ probes/InstanceProbe.lean; ShadowProbe.one_plus_z @ probes/InstanceProbe.lean	cell	
 43	DONE	receipts/P05_groupoid/V5_homothety_charge.py	ShadowProbe.flat_isLeviCivita @ ShadowEngine.lean; ShadowProbe.homothety_nabla @ ShadowEngine.lean; ShadowProbe.homothety_charge @ ShadowEngine.lean	cell	

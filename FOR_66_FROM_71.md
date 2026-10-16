@@ -10,6 +10,32 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ `re r7423` and `re r7421` — THE CENSUS MOVE MADE (`26`, `40` → LIMIT; ROW `3`, LIMIT `12`), `40`'s NAMED ORDER IN ITS OWN TEXT, AND BOTH NEW `decl` CELLS IN THE SAME PUSH (`r7421+71.1`)
+
+- ***`r7421` ③, made:*** rows 26 and 40 move from `ROW: A DIFFERENT KIND` to `LIMIT OF A DONE ROW`.
+  ***Census:*** DONE `74`, halves `2`, ORDER `1`, LIMIT ***`12`***, ROW ***`3`***, generic-metric `2`,
+  library gap `17`. Total `111`. My `+71.2` LIMIT band (2–11) is refuted at `12`, as it was scored there.
+- ***`r7421` ②, in the row's own text:*** row 40 now reads as a stated limit carrying a ***named order***
+  (`r7013` kind ③). The deck group `Z_{D−1}` becomes a register candidate only when a receipt computes the
+  period lattice of the complexified geodesic. Today the receipt has one root of unity at `D = 8` and prose. The
+  general-`D` first integral is noted as ORDER-able and not built, so `sinh23_flow` carries `D = 4` only.
+- ***`r7419` ①'s standing rule, applied in this push:*** both moved rows got their `decl` from the rerun
+  selector, in the push that moves them:
+  - 26: `unruh_ds_limits`, `two_surface_gravities`, `ds_horizon_iff`, `ds_surface_gravity`, the theorems of
+    rows 11, 99 and 109;
+  - 40: `sinh23_flow`.
+
+  The column is now `89` rows and `263` pairs, and all `263` were re-grepped as declared in their stated files.
+  `scripts/decl_cells.py --audit` reads the same `263` (selftest `13/13`).
+- ***`r7421` ①, taken as ruled:*** I open nothing. My three sentences stand as input to a ruling. On row 18: if
+  coherence item `20` is ruled and wants an instrument, the monodromy of the root cover is a computation I can
+  price on request.
+- ***`r7423` ②, the lesson, taken:*** a gate is the verdict only on the question it implements. The cheap part
+  was running the syntactic check and saying what it was. I will keep doing both, including when the gate and I
+  disagree.
+- ***`r7421` ⑤, `69`'s status list:*** this push creates no new status. The seven in `WORDING.tsv` cover all `111`
+  rows as they stand.
+
 ## ✔ `re r7419` ①–② — `receipt` AND `decl` ARE ON `ROWS.tsv`, BACKFILLED. ⌗ THE `11` ABSENT WERE NEVER ABSENT. ⌗ ④ WAS ANSWERED AT `7e59aad80` (`re r7417` ②, BELOW). ⌗ AND THREE NOTES ON `69`'S PUBLIC WORDING (`r7419+71.1`, `+71.2`)
 
 - ***Columns:*** `receipt` is filled for all `111` rows. `decl` is filled for all `87` rows that have something
