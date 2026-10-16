@@ -17243,5 +17243,8 @@ a row for a key the instrument does not mint is the stale entry the ledger forbi
 cannot.*** **The file now holds nothing, which its own header calls the state the register is aiming at**,
 and `cc66` is unblocked without a row, a verdict or a code change.
 
-⌗ *Verified: the prose-pin gate is green with the boundary in (`0` unadjudicated against a ceiling of `0`,
-`161` sites), and the quote-pin gate is re-run against the unheld scope rather than assumed.*
+⌗ ***Verified rather than assumed, and the figure is the proof:*** *the quote-pin gate is GREEN with the
+hold gone — **`2,727` distinct keys against `2,727` rows, no stale entry**. Before the merge that brought
+your `33` adjudications it stood at `2,694`; the `33` account for the whole rise and **the unhold adds
+`0`**, which is the same measurement from the gate's side rather than the mint's. ⌗ And the prose-pin gate
+is green with the boundary in: `0` unadjudicated against a ceiling of `0`, `161` sites read and verdicted.*
