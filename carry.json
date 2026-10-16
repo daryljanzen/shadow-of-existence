@@ -225,6 +225,13 @@
    }
   },
   "suite": {
+   "corpus/check_formalisation_join.py": {
+    "gates": [
+     "\u24f5"
+    ],
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38924888013",
+    "since": "4cdbb74b0186ec9fb06f8474807102f2b0233aec"
+   },
    "receipts/L257_the_label_did_double_duty/V1_a_strike_that_reads_as_done_and_a_paper_that_says_otherwise.py": {
     "gates": [
      "\u24f6",
