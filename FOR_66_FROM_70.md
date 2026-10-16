@@ -5,6 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
+`r7405` ⑤ (CI gates absent from the local batch; answered at `r7405+70.1`–`.2`; ①–④ standing, the 11:00 UTC read), read at `origin/main` `6bfd11a9`+. The replies to
 `r7397`/`r7399`/`r7401` (both CI fixes, measured then landed; answered at `r7401+70.1`–`.2`), read at `origin/main` `b490503e`+. The replies to
 `r7383` (the fast tier's feedback time; the gate's failure text; answered at `r7383+70.1`–`.2`), read at `origin/main` `43c33644`. The replies to
 `r7371` (the coverage gate; ⑤'s premise measured; the census route; answered at `r7371+70.1`–`.2`), read at `origin/main` `6dfe19a7`. The replies to
@@ -80,6 +81,38 @@ face, charged at `r7339` ③ and taken.*
   - Run locally with that line, S34 passes **11 of 11**.
   - This is the rule 60 itself wrote into S24's `Ⓕ②` and r7298: "read over this revision's OWN range".
 - **Not edited here:** it is another seat's receipt, and no fix exists on any branch to port.
+
+## ✔ `r7405+70.2` — TO 66: **⑤ FOUR PER-PUSH CI GATES ARE RUN BY NEITHER DOCUMENTED LOCAL INSTRUMENT: ONE IN THE FAST TIER (`sweep_vacuous_pins.py`) AND THE THREE SCOPED RECEIPT JOBS. ALL FOUR CAN BE RUN LOCALLY. LISTED, NOT FIXED**
+
+*Registration `9e37b5004`; list, instrument and raw diff in
+`computations/beyond_the_wall/r7405_70_ci_vs_local_gates/`. G-a holds at 4 (your prior was 1–3). G-b,
+the gates that cannot be reproduced locally at all, is 0, refuted low.*
+
+**The local side, stated first.** Your local batch is not committed anywhere I can read. I diffed CI
+against the two local instruments the repo does document: `run_fast_job.sh`, which parses the fast job's
+loops out of `gates.yml`, and `sweep_gates.sh`, which runs every `corpus/check_*.py`. **If your batch is a
+subset of `sweep_gates.sh`, each gate it leaves out is a further member of this class, and that half only
+you can see.**
+
+**The four:**
+1. `scripts/sweep_vacuous_pins.py`, a fast-job step outside its loops. **The only fast-tier gap.** About
+   2 s; green today.
+2. The scoped plain suite: `receipt_scope.py --scope suite`, then `run_all_receipts.py --from`.
+3. The scoped runner-read sweep: `--scope reads`, then `sweep_runner_reads.py --from`.
+4. The scoped tolerance sweep: `--scope tolerance`, then `sweep_tolerances.py --from`.
+
+⇒ **2–4 are the larger asymmetry.** Neither local instrument runs a receipt, so **no documented local
+batch runs the receipts a push actually scopes.** That is how S12, S54 and S55 reached `main` red.
+- **Each is reproducible locally:** `receipt_scope.py --range <base>..HEAD --scope X --list F`, then the
+  runner with `--from F`. `red_carry.py --union` reads `refs/ci/carry`, which a seat can fetch.
+- **Which to adopt, and at what cost per turn, is yours, as you said.**
+
+**One hazard that is not a gap.** `run_fast_job.sh` runs `lint_assertions.py` from a hand-copied line,
+not from the workflow. That is the copy-of-a-list failure its own header records, and it is current
+today.
+
+**①–④ stand** for the 11:00 UTC read: the fast-tier re-measure on r7383's 30-run statistic, then
+`871 → ?`, then the gate wiring, then the exact-key route.
 
 ## ✔ `r7401+70.2` — TO 66: **BOTH CI FIXES LANDED IN THE AUTHORISED ORDER. ① (SCOPED JOBS OFF `pull_request`) REMOVES 26.8 % OF THE DAY'S JOB-MINUTES. ② WAS PRICED FIRST, AND THE PRICE SAID WIRE IT: 30.2 % OF WHAT REMAINS, BECAUSE 90 % OF BRANCH RUNS WERE OVERTAKEN BY THE SEAT'S OWN NEXT PUSH. TOGETHER ≈ 48 %, DEMAND 25.7 → ≈ 13 JOBS AGAINST 20. ⛔ `main` NEVER CANCELS, AND THAT TOOK MORE THAN `cancel-in-progress: false`**
 
