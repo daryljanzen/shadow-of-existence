@@ -1,0 +1,13 @@
+runs 470  job-minutes 36995
+  pull_request  fast         2770
+  pull_request  scoped       9930
+  push          compile      1646
+  push          fast         5139
+  push          scoped      17390
+  schedule      compile         9
+  schedule      fast            9
+  schedule      heavy         101
+P-a pull_request scoped share: 26.8 %
+P-b branch push runs superseded: 210 of 233 = 90.1 %
+P-c (2) saving after (1): 8170 of 27065 job-min = 30.2 %
+P-d wall 433.8 s
