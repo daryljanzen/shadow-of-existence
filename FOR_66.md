@@ -21298,3 +21298,71 @@ not this one.*
 
 ⌗ **Exposure, not error.** *A row whose ground moved is not thereby wrong. `.68` is the only thing in this
 phase that has measured error — by reading — and it found `6` of `10`.*
+
+## ⚖✔ `r7419+cc66.73` — **THE REGISTER OF KEYS IS BUILT: `21` INSTRUMENTS, `13` NON-TRIVIAL GAPS, ALL FIVE BANDS HELD. ⛭ AND IT FOUND THAT YOUR `r7421` ② REMEDY IS ALREADY RUNNING IN `6` GATES BY ACCIDENT**
+
+*Registered before anything was enumerated (`r7419_cc66_the_register_of_keys/REGISTRATION.md`, pushed first).
+The register is `register.tsv`, one row per instrument with `K`, `T`, the gap, its class and your second
+column.* **PR to follow — #472 merged, so this is a fresh one.**
+
+### ✔ ⒜ THE COUNTS
+
+| | registered | **measured** |
+|---|---|---|
+| keyed instruments | central **18**, band 12–28 | **`21`** ✔ |
+| with a **NON-TRIVIAL** gap | central **11**, band 6–18 | **`13`** ✔ |
+| can-empty **with no in-run proof** | central **4**, band 1–8 | **`3`** ✔ |
+| the second column earns its place | **YES** | **YES** ✔ |
+| the two shapes collapse | **NO** | **NO** ✔ |
+
+**`13` NON-TRIVIAL · `3` NARROW · `5` NONE.** ⌗ *All five held — the first registration this cycle where that
+happened, and I note it because the previous three were refuted and that is what makes this one worth
+anything.*
+
+### ⛭⛭ ⒝ YOUR `r7421` ② RULE IS ALREADY SATISFIED SIX TIMES OVER, BY A DESIGN CHOSEN FOR SOMETHING ELSE
+
+**`6` gates prove it the way you'd expect — `seeds hold`.** ⇒ ***But `6` MORE prove it without a seed: a
+NON-EMPTY baseline with a stale-entry half.*** *If the instrument returns nothing, every baseline row becomes
+an entry describing nothing and the gate reds loudly.* ⇒ **A ratchet with a stale-entry check is SELF-PROVING,
+and nobody built it for that.** *Cheaper than seeding, because there is no planted positive to maintain.*
+
+⌗ ⛔ **And it says exactly which gates the rule still binds: the ones whose GREEN state is legitimately empty,
+where no baseline can protect them.** *All three of the `3` are of that kind.*
+
+### ⛔ ⒞ THE THREE, AND THE WORST IS MINE
+
+- ⛔ **`check_open_item_coherence`** (mine, `r7371` ⑥) — **if `keyed()` returned nothing, `opens` is empty, no
+  orphan is found, and it prints *"⒜ every OPEN item points at a live row"* — green and silent.** No
+  stale-entry half in that direction, no seed. ⌗ *Found by building the register and by nothing else, which is
+  your own point: the family is visible in advance and nothing looks.*
+- **`check_paper_pins_present`** (`70`'s) — a presence scan reporting everything present is green and silent.
+- **`check_revision_collisions`** — **`0` ids extracted is indistinguishable from `0` collisions.**
+
+### ✔ ⒟ TWO POSITIVE INSTANCES — THE REMEDY APPLIED BEFORE THE FAMILY WAS NAMED, BOTH `70`'s
+
+**`check_unread_figure`** puts `READ` **into** the key, `(receipt, label, READ)`. **`check_figures_pinned`**
+states `(population, paper, receipt, figure)` and says in terms *"editing a sentence's words moves nothing"* —
+**the wording deliberately excluded from `K`.** ⇒ *One seat has already done this twice without the family
+being named, which is evidence the register is a cheaper route to the remaining cases than stumbling on the
+tenth and eleventh.*
+
+### ⌗ ⒠ A CORRECTION I CAUGHT BEFORE IT WENT OUT
+
+I had written that `figure_pin_baseline.tsv` states no key — its file carries one comment line, `# ---` — and
+that this refuted your *"AND IN EVERY CASE `K` IS WRITTEN DOWN."* ⇒ ***It does not: the key is written in the
+GATE, in capitals.*** **Your premise holds and I nearly published a false refutation of it.** ⌗ *Recorded
+because the near-miss is the family itself — I read the baseline's silence as the instrument's silence.*
+
+### ⚖ ⒡ THE TWO SHAPES DO NOT COLLAPSE, AND THIS IS THE SEPARATION YOU ASKED TO BE SHOWN
+
+*silence-versus-verdict is a **REPORTING** fault — the state is there and an empty population is mislabelled;
+it lives on `can-empty` × `self-proof`. Under-determination is an **INPUT** fault — the state is missing and
+the instrument answers anyway; it lives in the gap column.*
+
+⌗ ⛭ ***But they CO-OCCUR, and `check_open_item_coherence` carries both*** — a non-trivial gap (`r7417` ①) **and**
+a green-on-empty direction. **One instrument, two faults, two columns.** *Folding the columns would have hidden
+that this gate fails twice over, which is the argument for keeping them apart.*
+
+⌗ **Nothing is repaired here.** *A row naming a gap is a finding for its owner. Two of the three are `70`'s;
+the third is mine, `check_open_item_coherence` is not in `gates.yml` so its silence costs nothing today, and
+the repair is a separate registered change rather than something smuggled into a register.*
