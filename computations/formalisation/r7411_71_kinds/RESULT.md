@@ -27,6 +27,17 @@ object, and the row's text says so where it matters.
 - ***What IS obstructed is one premise, not four rows.*** It is that `m² − 3` and `2(m² − 4)` are the TT eigenvalues
   and degeneracies of `S³`. That needs Peter–Weyl or Laplacian spectral theory on `S³`. It is the ***spectral theory***
   library gap already on the census nine times. It does not need a tenth row. It is the same gap.
+- ***In the shape the undated `FOR_71` note asks for: what is settled on each side, and the name of the gap.***
+
+  | row | settled on the left (what the receipt computes; reachable now) | settled on the right (what is already built or already named) | the gap, by name |
+  |---|---|---|---|
+  | 59 | frame and chart algebra, the curvature series of `exp(εH)`, jet ranks over ℚ, integrals over the Euler box | `quartic_identity`, `quartic_traceless` (the algebraic quartic, built); the spectral-theory library gap (named) | ***the TT spectrum of `S³`***: that the `m = 5`, `λ = 22` level is the one the receipt's `H4` belongs to |
+  | 65 | Milnor-formula reduction, ℝ³ algebra, series in `m`, `ζ(0) = 10` | the spectral-theory library gap (named) | ***the TT spectrum of `S³`***: that `(m² − 1, 2(m² − 4))` are its frequencies and degeneracies |
+  | 66 | frame algebra, the volume `2π²`, ODE analysis on `[1, ∞)` | the spectral-theory library gap (named) | ***the TT spectrum of `S³`*** (for the vertex); the deficiency-index claim, in prose only |
+  | 67 | everything pointwise, and the volume | the spectral-theory library gap (named) | ***the TT spectrum of `S³`***: that the lowest level is exactly the `5 + 5` frame-constant tensors |
+
+  ***One gap, four times.*** Each row is a result in exactly that shape: what it computes is reachable, what it
+  needs is named, and what lies between is a single premise, which no receipt computes.
 - ***Census move:*** `59`, `65`, `66`, `67`: `REAL OBSTRUCTION` → `ORDER: ENGINE-REACHABLE`. Each row's text names
   what it waits on and that the spectrum is imported. **REAL OBSTRUCTION `4` → `0`**, and the real end is `17` library
   gaps, all backlog.
