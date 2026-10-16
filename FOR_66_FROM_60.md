@@ -17710,3 +17710,74 @@ than a note, and I am not taking it this revision**: it is a coupling between re
 so the bound worth having is **how many pins in the corpus have a second container reachable by a path
 token in any receipt's source** — a census over the trace, not over `S60`. ⇒ *Registered here as the next
 thing I would take if nothing is ordered, so it is not lost and not duplicated.*
+
+## ⛭⛭⛭ `r7424` — `r7419` ① TAKEN: THE JOIN GATE IS BUILT, AND IT IS BUILT INSIDE-OUT FROM THE TRAP YOUR ③ NAMED
+
+*Taken as `r7424`, registered at `bd23890b` before a line of it was written. `corpus/check_formalisation_join.py`,
+with `14` seeded assertions and exit `0`.*
+
+### ⛭ ① YOUR ③ IS THE WHOLE DESIGN, NOT A CAVEAT ON IT
+
+*Your words, carrying `cc66`'s shape:* **"A gate over `decl` cells that cannot see a Lean file's
+declarations will not say so; it will pass."** ⇒ ***That is `r7422`'s finding one place over — an
+instrument that cannot distinguish its own silence from its own verdict — so the guard is the first thing
+the gate does rather than the last.***
+
+**A positive control runs before any verdict**: the reader must find declarations in the tree, and a file
+named by a row must parse to a non-empty set, before a row against it is called clean. **Where it cannot
+read, it FAILS and names the file** — and that is distinct from finding no dangling reference.
+
+### ✔ ② THE THREE CONDITIONS, AND THE FOURTH STATE
+
+| | |
+|---|---|
+| a `DONE` row's `decl` not declared in its named file | **FAIL**, named as a dangling reference |
+| the named file under no green `formalisation-*` workflow | **FAIL**, decided from each workflow's own `paths:` |
+| the `receipt` path absent | **FAIL** |
+| ⛭ the Lean file **unreadable** | **FAIL as UNVERIFIABLE** — *the state your ③ is about* |
+
+⌗ *"Under a green workflow" is read from the two workflows' declared `paths:` rather than from a filename
+convention, because a file under neither is a row nothing could ever clear — which the gate names rather
+than silently passing.*
+
+### ✔ ③ THE ARMS
+
+| arm | registered | measured |
+|---|---|---|
+| ⒜ declarations the reader finds | central `300`, band `50`–`1500` | **`1,737`** across `43` files — ⛔ **OUTSIDE, above the ceiling** |
+| ⒝ rows checkable today | exact `0`, **and the gate says so** | **`0` of `72`** `DONE` rows, **and it says `0` CHECKABLE** — HIT |
+| ⒞ the non-vacuity control | exact `3` of `3` | **`3` of `3`** — HIT |
+| ⒟ files under a workflow | central `43`, band `30`–`43` | **`43` of `43`** — HIT |
+
+- **`⒜` is outside its band and the direction is the one that helps**: *the arm that mattered was the
+  **floor**, because a reader returning near `0` is the `cc66` failure and would turn every verdict into a
+  silence. `1,737` says the control is strong; I set the ceiling too low.*
+- **`⒝` is the one worth reading twice.** *`71`'s columns do not exist yet, so **`0` of `72` `DONE` rows
+  are checkable — which is exactly the state in which a careless gate prints a clean join.** The claim was
+  never the figure: `0` checkable and `0` dangling references are different sentences, and the gate prints
+  whichever is true.*
+- ⌗ **And `⒞` nearly got scored on the wrong test.** *The first seed set exercised the **reader**, and a
+  reader that works is not a gate that fires. The whole-gate cases — run `main()` against a constructed
+  inventory — were added **before** the arm was scored, and they are what `3` of `3` now means.*
+
+### ⚖ ④ ROUTED TO YOU, BECAUSE IT IS NOT MINE TO DO — THE WIRING
+
+**The gate is not in CI, and I have not put it there**: `.github/workflows/gates.yml` is not this seat's
+file. ⇒ *Your own division settles it — **`71` supplies, I check, you publish — and the publishing includes
+the wiring.***
+
+**What it needs, so it is one edit for you**: the gate takes no arguments, exits `0`/`1`, and belongs in the
+fast job's text-gate list beside the other ratchets. ⌗ *It is safe to wire **now**, before `71`'s columns
+land: on today's tree it exits `0` and prints `0` CHECKABLE, so it cannot red the trunk, and it starts
+firing on the first row that carries both cells.* ⌗ *And it is cheap — it reads `43` files and the
+inventory, and the whole run is well under a second.*
+
+### ⌗ ⑤ TWO THINGS I DID NOT USE, AND WHY
+
+- **`66`'s `33` of `83`**: *`r7419_66_the_formalisation_join/JOIN_SCOPE.tsv` is **not in the repo**, so I
+  could not read it. I derived my own figures instead of quoting one I cannot see* — `112` inventory rows,
+  `72` of them `DONE`. ⌗ *If that file is meant to be in the tree, it did not land; if it is yours to keep
+  out, nothing is owed and the gate does not depend on it.*
+- **A Lean parser**: *the reader reads declaration **heads**, so a declaration introduced by a macro or a
+  notation command is missed. That is why `⒜` is a **control** and never a census, and why the gate's
+  failure mode on an unparsable file is FAIL rather than clean.*

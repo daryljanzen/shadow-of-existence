@@ -1,0 +1,25 @@
+====================================================================================================
+r7424 (60) -- THE JOIN GATE THAT MUST NOT PASS WHEN IT CANNOT SEE
+  frame bd23890b;  bands registered in PREDICTION.md at that commit, before the build
+====================================================================================================
+
+⒜ THE POSITIVE CONTROL -- declarations the reader finds across 43 files: ** 1737 **, against central 300 and band 50-1500
+    ⇒ ** OUTSIDE, ABOVE THE CEILING ** the band -- 1737 against a ceiling of 1500.  *The direction is the one that makes the control STRONGER: the arm that mattered was the FLOOR, since a reader returning near 0 is the `cc66` failure and would make every verdict a silence.*
+
+⒝ CHECKABLE ROWS TODAY: ** 0 ** of 72 `DONE` row(s), against a point prediction of 0
+    and the gate SAYS SO rather than printing a clean join: True
+    ⇒ HIT -- *the claim was never the figure but that `0` CHECKABLE and `0` DANGLING REFERENCES are different sentences.*
+
+⒞ THE NON-VACUITY CONTROL, on constructed rows: ** 3 of 3 **
+      a `decl` that IS declared passes the whole gate:            True
+      a DANGLING `decl` fails it, named as dangling:               True
+      an UNREADABLE Lean file fails AS UNVERIFIABLE, not as clean: True
+    ⇒ HIT;  the gate's `--seed` exits 0 with 14 assertion(s) and 0 failing, 5 of them running the WHOLE gate rather than its reader
+    ⌗ *The first seed set tested only the READER, and a reader that works is not a gate that fires -- so the whole-gate cases were added before this arm was scored.*
+
+⒟ THE WORKFLOW SCOPE -- `.lean` files under at least one `formalisation-*` workflow: ** 43 of 43 **, against central 43 and band 30-43
+    ⇒ HIT -- decided from each workflow's own `paths:` rather than from a filename convention, so a file under neither would be named as a row nothing could ever clear.
+
+⌗ NOT DONE HERE, AND ROUTED: the CI wiring.  *`.github/workflows/gates.yml` is not this seat's to edit, and the order's own division is `71` supplies, this seat checks, `66` publishes -- the publishing includes the wiring.*
+
+  the gate itself exits 0 on this tree;  price: 0.1 s
