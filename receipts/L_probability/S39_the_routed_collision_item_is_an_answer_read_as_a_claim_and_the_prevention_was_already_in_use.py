@@ -60,43 +60,48 @@ def gate(label, ok):
 PAIRS = {'r7285': ('8afa9ed3', ('fadf708d', '311e7ac6')),
          'r7287': ('e7b7c7ab', ('a2555f4f', '566a97fc'))}
 
-# ⛔⛭⛭⛭ r7370: ** THE SHAS WERE PINNED AND THE FACT READ OFF THEM WAS NOT. **  *`Ⓑ①` below took each
-#   commit's session marker out of `G._SESSION`, which the collision gate fills by WALKING THE WHOLE
-#   HISTORY REACHABLE FROM `HEAD`.  On a shallow clone that walk stops at the horizon -- the gate's
-#   own comment says it was once "reporting green over 8 per cent of the corpus's revision history"
-#   -- and these six commits sit some eighty revisions back.*
-#   ⌈ *So the map has no entry for them, `_sa` reads empty, `bool(_sa)` is False and the gate fails
-#     -- on the runner and not here, where the clone is full.  Red on five lines for five pushes,
-#     green on this tree every time, with nothing in the tree to explain it.*
-#   ⇒ *** A PIN IS ONLY AS GOOD AS WHAT RESOLVES IT.  `S29`'s reference OVER-resolved -- a string
-#       match that later commits citing the revision join -- and this one UNDER-resolves: a sha the
-#       environment may not reach.  Both wanted the fact committed beside the measurement. ***
-#   ⌊ *The markers are stored here, which is `r7365` ②'s rule.  Where the object IS present they are
-#     CHECKED against what the commit says, so the stored data cannot drift unchallenged; where it is
-#     absent the stored value carries the claim and the absence is REPORTED.*
-# ⛔⛭⛭⛭ r7374: ** AND THE CAUSE WRITTEN ABOVE IS FALSE.  THE REPAIR IS RIGHT; THE REASON BESIDE IT IS
-#   NOT. **  *Three measurements, none of which needed the runner:*
-#     ⒤ ** No job that runs a receipt is shallow. **  Read out of `.github/workflows/gates.yml` at the
-#       commit this red was recorded against (`cdc16410`), at the commit that carried the second repair
-#       (`4cb449fe`), and on the trunk now: every receipt-running job checks out with `fetch-depth: 0`.
-#       The one default-depth checkout is `compile`, which runs LaTeX and no receipts.
-#     ⒥ ** All six shas below are ancestors of the trunk, ** so `git log` from `HEAD` reaches them at
-#       any depth on any branch based on it.
-#     ⒦ ** The signature reproduces here, from a different variable. **  The gate builds its map with
-#       `git log --format=%h…` and looks a sha up in it by EXACT STRING.  `%h` is git's abbreviation and
-#       git picks its length from the object count.  Running the gate's own command at four lengths:
-#       at this clone's `8`, **`6` of `6`** of the shas below are found; at `7`, at `9` and at `12`,
-#       **`0` of `6`** -- same tree, same commits, nothing edited.
-#   ⇒ *** A PIN KEYED BY AN ABBREVIATION IS KEYED BY SOMETHING THE ENVIRONMENT CHOOSES. ***  *That is
-#       exactly "the map has no entry for them", produced by a variable with nothing to do with depth.*
+# ⛔⛭⛭⛭ r7370, AS MEASURED AT r7374 AND REWRITTEN HERE AT r7418: ** THE SHAS WERE PINNED AND THE FACT
+#   READ OFF THEM WAS NOT -- AND THE THING THAT DID NOT RESOLVE IS AN ABBREVIATION. **  *`Ⓑ①` below
+#   took each commit's session marker out of `G._SESSION`, a map the collision gate builds with
+#   `git log --format=%h…` and then looks a sha up in BY EXACT STRING.*
+#   ⌈ *** `%h` IS GIT'S ABBREVIATION AND GIT PICKS ITS LENGTH FROM THE OBJECT COUNT. ***  *Running the
+#     gate's own command at four lengths: at this clone's `8`, **`6` of `6`** of the shas below are
+#     found; at `7`, at `9` and at `12`, **`0` of `6`** -- same tree, same commits, nothing edited.*
+#   ⇒ *** A PIN KEYED BY AN ABBREVIATION IS KEYED BY SOMETHING THE ENVIRONMENT CHOOSES. ***  *So the
+#       map has no entry for them, `_sa` reads empty, `bool(_sa)` is False and the gate fails -- on
+#       the runner and not here.  Red on five lines for five pushes, green on this tree every time,
+#       with nothing in the tree to explain it.*
 #   ⌈ ⚠ *NOT claimed: that the runner's abbreviation length is `7`, or any value.  It cannot be seen
 #     from here, and asserting it would be the same move being corrected.  What is claimed is that the
 #     lookup matches an exact string against a length the environment picks -- wrong whatever that
-#     length is, and the only mechanism ⒤ and ⒥ leave standing.*
-#   ⌊ *The repair stands unchanged and is immune to both: it reads each marker off the commit BY ID,
-#     which git resolves from any prefix, and never consults the abbreviated map.  `r7372`'s rule, one
-#     turn further: a fix whose stated cause is wrong is still a defect, because the next reader
-#     inherits the reason and not the measurement.*
+#     length is.*
+#   ⌊ *** A PIN IS ONLY AS GOOD AS WHAT RESOLVES IT.  `S29`'s reference OVER-resolved -- a string
+#       match that later commits citing the revision join -- and this one UNDER-resolves: a key the
+#       environment may not spell the same way.  Both wanted the fact committed beside the
+#       measurement. ***  *The markers are stored here, which is `r7365` ②'s rule.  Where the object
+#       IS present they are CHECKED against what the commit says, so the stored data cannot drift
+#       unchallenged; where it is absent the stored value carries the claim and the absence is
+#       REPORTED.*
+#
+# ⛔ r7374, KEPT AS THE RECORD OF A WRONG TURN AND NOT AS A CAUSE: ** THE REASON FIRST WRITTEN HERE
+#   WAS THAT THE WALK STOPS AT A SHALLOW CLONE'S HORIZON, AND THREE MEASUREMENTS SAY IT CANNOT BE
+#   THAT. **
+#     ⒤ ** No job that runs a receipt is shallow. **  Read out of `.github/workflows/gates.yml` at the
+#       commit this red was recorded against (`cdc16410`), at the commit that carried the second repair
+#       (`4cb449fe`), and on the trunk at `r7418` (`3a922041`): every receipt-running job checks out
+#       with `fetch-depth: 0`.  The one default-depth checkout is `compile`, which runs LaTeX and no
+#       receipts.
+#     ⒥ ** All six shas below are ancestors of the trunk, ** so `git log` from `HEAD` reaches them at
+#       any depth on any branch based on it.
+#     ⒦ ** The signature reproduces here, from a different variable ** -- the abbreviation above, which
+#       has nothing to do with depth and produces the identical symptom.
+#   ⇒ *** The repair `r7370` made stands unchanged and is immune to both: it reads each marker off the
+#       commit BY ID, which git resolves from any prefix, and never consults the abbreviated map. ***
+#   ⌊ *`r7372`'s rule, one turn further: a fix whose stated cause is wrong is still a defect, because
+#     the next reader inherits the reason and not the measurement.  ⌗ **And `r7374` appended its
+#     correction BELOW the cause it refutes, so from `r7374` until here this file stated the false
+#     cause first and the measurement `14` lines later.  `r7418` put the measurement where the cause
+#     is read.**
 
 SESSIONS = {
     '8afa9ed3': 'https://claude.ai/code/session_01YGJEEs8cWKLi4PTi1bxhuK',
@@ -111,15 +116,24 @@ _UNREACHED = []
 _SAME_LINE_DISAGREED = []
 
 
-# ⛔⛭⛭⛭ r7370, SECOND PASS -- ** AND THE FIRST REPAIR MISSED HALF THE CLAUSE. **  *`session_of`
-#   below took the marker off the commit instead of out of the walked map, and `Ⓑ①` ALSO calls
-#   `G._same_line` twice -- which reads that same map, and whose fallback when the map is empty is
-#   `merge-base --is-ancestor` plus a first-parent walk.  **Both branches need the objects present,
-#   so on a shallow clone the test returns False either way and the clause stayed red on the runner
-#   while passing here.**  Caught by reading CI's record on the head that carried the first repair.*
+# ⛔⛭⛭⛭ r7370, SECOND PASS, REWRITTEN AT r7418 -- ** AND THE FIRST REPAIR MISSED HALF THE CLAUSE. **
+#   *`session_of` below took the marker off the commit instead of out of the abbreviation-keyed map,
+#   and `Ⓑ①` ALSO calls `G._same_line` twice -- which reads THAT SAME MAP, and whose fallback when the
+#   map answers empty is `merge-base --is-ancestor` plus a first-parent walk.*
+#   ⌈ ** So both readers go through one map keyed by `%h`, and the clause stayed red on the runner for
+#     the one mechanism r7374 left standing: at any abbreviation length but this clone's, the lookup
+#     misses and the test returns False either way. **  *Caught by reading CI's record on the head
+#     that carried the first repair.*
+#   ⌊ ⚠ *The fallback's own requirement -- that the objects be present -- is NOT what failed: `r7374`
+#     ⒥ measured all six shas to be ancestors of the trunk, reachable at any depth.  **The first
+#     writing of this block said "on a shallow clone the test returns False either way", which is the
+#     cause `r7374` refuted and `r7418` found still standing HERE, below that correction rather than
+#     above it.***
 #   ⇒ *** One clause, two readers of one map, and repairing the one I had measured left the other.
 #       The lesson is `r7368`'s with the sign flipped: a fix verified where the defect does not
-#       reproduce verifies nothing about where it does. ***
+#       reproduce verifies nothing about where it does. ***  ⌗ **And the correction of the REASON
+#       repeated the shape of the correction of the CODE: `r7374` mended the block it had measured and
+#       left this one, `37` lines further down, stating the refuted cause as fact.**
 #   ⌊ *`same_line` is computed from the markers this file COMMITS -- the instrument's own rule, that
 #     one session is one line whatever the merge shape -- and where the objects ARE reachable the
 #     local verdict is CHECKED against the instrument's, so the two cannot drift apart unnoticed.*

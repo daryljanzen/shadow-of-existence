@@ -17310,3 +17310,116 @@ quietly patched, because the figure above is only sound once the gap in it is st
 ⌗ *One gap in the runner's own report, reported and not charged: the summary counts `1` over budget and the
 body names only the failure, so which receipt went over its budget is not recoverable from the output. The
 five slowest that passed are named; the one that did not pass is not.*
+
+## ⛭⛭ `r7418` — ANSWERING `r7415` ③'s FIRST ITEM: THE FALSE REASON IN `S39` AND `S56`. ⛔ IT WAS IN A THIRD PLACE AND IN A CLAUSE THAT ASSERTS IT, AND THE ARM I REGISTERED TO FIND IT WAS THE WRONG INSTRUMENT
+
+*Taken as `r7418`. Registered at `3a922041` before any scan. `r7374` measured `r7370`'s stated cause false
+and **appended its correction BELOW the cause it refutes, in both files** — so the item stood in this
+seat's queue from `r7385` although the measurement had landed at `r7374`. **That is `r7372`'s defect in the
+FORM of the earlier repair rather than in its content**, and it is what your order's word "replace" was
+for.*
+
+### ⒞ THE WINDOW — the figure that says it was a real inheritance risk and not a formality
+
+| | cause stated | refuted | window | file |
+|---|---|---|---|---|
+| `S39` | line `63` | line `77` | **`14` lines** | `305` lines |
+| `S56` | line `22` | line `33` | **`11` lines** | `367` lines |
+
+⌗ *Registered explicitly as **NOT an arm**: this seat had read both blocks before registering, so a band
+here would have been theatre. Reported as a direct read.*
+
+### ⛔ ① A THIRD CARRIER, `37` LINES BELOW THE CORRECTION THAT NEVER REACHED IT
+
+**`S39`'s `r7370` SECOND-PASS block states the refuted cause again, as fact, `37` lines BELOW `r7374`'s
+correction** — *"so on a shallow clone the test returns False either way and the clause stayed red on the
+runner"*. ⇒ ***`r7374` mended the block it had measured and left the other one.***
+
+⌗ **And that is the shape of the very lesson the block itself states.** *Its own words: "One clause, two
+readers of one map, and repairing the one I had measured left the other." The correction of the REASON then
+repeated the correction of the CODE's failure, in the same file, about the same clause, one level up.*
+**The measured reason is in it now** — both readers go through one map keyed by `%h`, so the clause stayed
+red for the one mechanism `r7374` left standing — *and the fallback's own requirement is named as NOT what
+failed, because `r7374` `⒥` measured all six shas to be ancestors of the trunk.*
+
+### ⛔ ② AND `S56`'s `Ⓒ②` ASSERTED THE REFUTED HALF WHILE CITING THE REVISION THAT REFUTED IT
+
+*The clause's own text named two mechanisms: **"a map a shallow clone truncates and a different
+abbreviation length empties (r7374)"**.* ⇒ ***A comment records a belief; an asserting clause states a
+property of the object*** — so the refuted half was not merely remembered there, it was being asserted, by
+this seat's own `r7403` rule. **Only the measured mechanism is named now**, with the refuted one kept in
+the header as a record and the substitution noted at the site.
+
+### ⛔ ⒜ THE ARM I REGISTERED CAME OUT AT `93` AGAINST A BAND OF `0`–`8`, AND THE REASON IS THE ARM
+
+**Registered: occurrences of the refuted cause's own vocabulary outside the two blocks you name — central
+`2`, band `0`–`8`. Measured `93`.** ⌗ *A loose subject match on the same lines gives `24`; neither
+discriminates.*
+
+⇒ ***A detector keyed on the WORDS of a false claim cannot tell it from the TRUE claim that shares them.***
+**A shallow clone really does break a receipt that reads history, and `71` of the `93` do not name
+`r7370`'s subject at all** — a gate reporting that this clone is shallow, a receipt declaring it needs a
+full one, a quote-pin row whose pinned literal happens to be `fetch-depth: 0`. *This is
+`r7406`'s discrimination problem one level out and **the NINTH instance in this phase of a detector failing
+on a new reason**, the reason being that the defect and its sound twin are the same sentence.*
+
+⌗ **A second, smaller failure in the same arm, reported rather than patched:** *the first build matched a
+bare `fetch-depth` anywhere, which is **wider than `PREDICTION.md` registered** ("cited as the thing that
+truncates a map"). Narrowed to the registered wording; the wide limb's `36` extra lines are all a literal
+`fetch-depth: 0` in a pin row or a workflow assertion. And the first build's classifier walked back up the
+PHYSICAL lines counting brackets and called `.tsv` data rows and `.md` prose `print(` arguments — **the TENTH instance,
+and the first time in this phase a detector reached a file it has no syntax for at all.** It is made from the PARSE
+TREE for a `.py` file now and REFUSED for anything else.*
+
+### ✔ THE INSTRUMENT THAT DOES DISCRIMINATE — `FORM 3`, at block level, asking for the SUBJECT too
+
+*A block — a run of comment lines, one docstring, or one asserting call — that names the mechanism **and**
+`r7370`'s own subject (`_SESSION`, the session marker, `_same_line`, `Ⓑ①`, `S39`), and does not itself
+disown the cause.*
+
+| | at the frame | live, after the repair |
+|---|---|---|
+| blocks | `7` | `6` |
+| inside the two you name | `2` | `0` |
+| disowning the cause themselves | `3` | **`6`** |
+| ⛔ **stating it as LIVE** | **`3`** | **`0`** |
+| of those, inside an ASSERTING call | **`1`** | **`0`** |
+
+⇒ **The three live ones were `S39`'s second-pass block, `S56`'s `Ⓒ②`, and `r7370`'s own computation
+docstring.** *The third is this line's own and got a pointer rather than a rewrite: its measurement is
+untouched and was never about the cause — it measures the OVER-resolving half — but a reader opening that
+file inherited the reason.*
+
+⌗ **`⒝` as registered — vocabulary occurrences inside an asserting or printing call — came out `11`
+against band `1`–`4`, outside, and for the same reason as `⒜`.** *But `FORM 3` puts **`1`** of the live
+blocks inside an asserting call, which is exactly the central value the arm was registered at. **So the arm
+had the right figure and the wrong instrument**, and the band is scored as missed rather than quietly
+re-read against the form that hit it.*
+
+### ✔ ⒟ YOUR OWN RULE ON MY COMMENT REPAIR — the demoted cause's truth condition RE-READ, not inherited
+
+*`r7406`'s standing rule says a remedy is run against the condition its own argument needs. The whole edit
+turns on `r7374` `⒤`, which was read at three commits, **none of them today's**.*
+
+- **`0` receipt-running jobs at a default-depth checkout**, re-read at `3a922041` — point prediction `0`,
+  **HIT**. *`8` jobs: `4` run a receipt and all `4` check out with `fetch-depth: 0`; **the one
+  default-depth checkout is `compile`, which runs no receipt** — `r7374`'s sentence exactly, now read at
+  a fourth commit rather than carried.*
+- ⇒ *Had one come back shallow, the refuted cause would have been **live again and the demotion wrong**.
+  Nothing in the corpus re-reads that figure, and the repair that depends on it now does.*
+- ⛔ ⌗ **And this arm's own first build was an ELEVENTH detector instance, the plainest of the phase**:
+  it split the workflow on two-space mapping keys and so counted `pull_request`, `push`, `schedule` and
+  `workflow_dispatch` — the `on:` **triggers** — as jobs, four of them reading "default depth" because a
+  trigger has no checkout at all. *It read the container's indentation instead of its structure, which
+  is this seat's own `r7403` rule turned on itself. It parses the YAML and reads `jobs:` only now.*
+
+### ⌗ WHAT IS NOT CLAIMED
+
+**Not that `r7370`'s repair was wrong** — it reads each marker off the commit by id, which git resolves
+from any prefix, and that description stays verbatim as your order requires. **Not that the shallow-clone
+account is deleted**: it is kept in both receipts and in `r7370`'s computation, named as refuted *at the
+point where it is introduced*, so the record of the wrong turn survives where a reader meets it. **Not that
+`FORM 3` is complete** — a paraphrase sharing no vocabulary with the mechanism is missed, and a carrier that
+names its subject in a different block from its mechanism is missed. **And not that `S56`'s `Ⓒ②` was unsound
+as a gate**: its condition is about `S39`'s source and passed throughout; only its stated reason carried the
+refuted half.
