@@ -18187,3 +18187,88 @@ the probe's own cost is measured, which is a separate question and not one I hav
 
 ⚠ **And the one re-run this PR has is NOT spent on it.** *A `125`-minute job re-run against a
 `120`-minute limit comes back cancelled, so the re-run would buy nothing and the budget is kept.*
+
+## ⛔⚖⛭⛭⛭ `r7432` — **I WITHDRAW BRANCH ⒝ OF THE FORK I ROUTED AN HOUR AGO. IT IS REFUTED BY WHAT HAPPENED NEXT: A CANCELLED PROBE'S RECORD STEP DID RUN, AND MY OWN RECORDER FILED `119` VERDICTS IT NEVER REACHED — ONE OF THEM AGAINST MY OWN GREEN GATE**
+
+*Registered before the fix, scored after. Receipts:
+`computations/beyond_the_wall/r7432_60_a_cancelled_probe_is_not_a_failing_one_and_my_own_recorder_filed_119_verdicts_it_never_reached/`.*
+
+### ⛔ ① WHAT HAPPENED, MEASURED ON THIS BRANCH'S CI AND NOT IN A SEED
+
+| | |
+|---|---|
+| head | `bd0f2e24` — **entire diff: one forwarding file** |
+| the tolerance job | **`cancelled`** after `12m24s`, superseded by my next push — not a timeout this time |
+| its probe step | **`cancelled`** |
+| its `record` step | ⛔ **`success` — it ran anyway** |
+| what it filed | ⛔ **`119` receipts in the `tolerance` class, every one MEASURED RED, `0` marked never-probed** |
+| among them | ⛔ **`corpus/check_formalisation_join.py`** — which exits `0` and whose `--seed` passes `37` of `37` |
+
+⇒ ***A probe cut off twelve minutes in filed one hundred and nineteen verdicts it never reached, and
+one of them was against the gate this PR exists to fix.***
+
+### ⛔⛭⛭ ② SO BRANCH ⒝ OF MY OWN FORK IS WITHDRAWN, AND THIS IS WHY IT MATTERS THAT IT WAS MEASURED
+
+*An hour ago I routed three remedies for the sibling case — a `120`-minute timeout whose `record` step
+did **not** run — and recommended **⒜ head-stamping plus ⒝ making the record unorphanable from inside
+the probe step**.*
+
+⛔ ***⒝ IS REFUTED BY THE STRONGEST KIND OF EVIDENCE: IT IS WHAT HAPPENED.*** *On `bd0f2e24` the record
+step DID run after a cancelled probe — **exactly what ⒝ asks for** — and the result was `119` false
+verdicts rather than a preserved partial result.*
+
+⇒ ⚖ ***AN UNORPHANABLE RECORD THAT CANNOT TELL A FINISHED PROBE FROM AN INTERRUPTED ONE IS WORSE THAN
+AN ORPHANED ONE*** — *because an absent delta is a gap a reader can see, and a wrong delta is not.*
+
+⌗ **The remedy is ⒜ *and* this revision, not ⒝.** *⒜ still stands and is still mine to build on your
+word; ⒞ (raising the timeout) I still would not take alone. **Do not wire ⒝.***
+
+### ⛭⛭⛭ ③ AND THE CAUSE IS FOUR LINES OF MINE — `r7422`'s DEFECT IN `r7422`'s FILE
+
+*`do_record` branches on the probe step's `outcome`, which `gates.yml` already hands it, and
+**`cancelled` took the same path as `failure`** — then the fallback "the job ended X with no receipt it
+can name" filed the whole carried scope red.*
+
+⌈ **The whole-scope carry is RIGHT for `failure`** — `r7281`'s ruling: a job that genuinely failed and
+cannot say which receipt did it should carry its scope forward, conservatively. ***Untouched here, and
+deliberately so: whether a failing job should name its whole scope is your call and not what a defect
+in my own four lines licenses re-opening.***
+⌊ ⛔ **It is WRONG for `cancelled`**: *a cancelled probe did not measure anything, so `red` is a verdict
+it never reached* — and `r7422`'s own promoted distinction says where those belong: **`unmeasured`,
+CARRIED so the next union re-probes them and MARKED so no reader takes non-coverage for a verdict.**
+
+⇒ ***`r7422` split on the INSTRUMENT'S RECORDED REASON — `rc=missing` against a timeout or a non-zero
+rc — which is the right split for a probe that RAN. It had no case for a probe INTERRUPTED PARTWAY,
+whose reasons are not uniformly `rc=missing`, so they fell to the red side.*** ⌗ **So the state `r7422`
+was built to make visible is the exact state this path hid, and I wrote both.**
+
+⚖ *And it is the label rule once more. Your `r7421` ② carried my own sentence onto `PO-78`'s fifteenth
+face —* **"I had classified a state by the label on its container instead of by what the container
+recorded"** *— and here the container's label said `cancelled` all along and I never read it.*
+
+### ✔ ④ THE FIX, AND THE ARM THAT ACTUALLY MEASURES IT
+
+*`scope_disposition(outcome, ran, which)`, extracted as a PURE function so the branch is seeded without
+a git environment. **`45` assertions, `0` failing**, up from `38`.*
+
+| outcome | red | unmeasured |
+|---|---|---|
+| `failure` — `r7281`, **unchanged** | `119` | `0` |
+| **`cancelled`** | **`0`** | **`119`** |
+| `skipped` | `0` | `119` |
+
+⌗ ***The arm that measures is `U11`: `failure` with no nameable receipt STILL carries its whole scope as
+red.*** *A fix that made `cancelled` quiet by making everything quiet would have passed a one-sided
+seed — and `r7430` had just finished showing that five readings in a row can be wrong with every one
+caught by a case whose answer was known in advance.*
+
+⚠ **And the `119` are CARRIED, not dropped.** *`r7417` ① is explicit that an unmeasured receipt is
+carried so the next union re-probes it; dropping them would turn a false verdict into a silent gap,
+which is the same defect wearing the other sign.*
+
+### ⌗ ⑤ WHAT IS STILL YOURS AND NOT TOUCHED
+
+⚠ ***Two cancellations in two hours — one a `120`-minute timeout, one a supersede — say the three-build
+probe's cost has outgrown its budget.*** *That is a measurement I have not made and it stays yours, with
+the timeout branch routed and not taken.* ⌗ *The `119` are not green and not red: they are unmeasured,
+and the next complete run decides them — which is this revision's whole content.*

@@ -1,0 +1,50 @@
+
+  red_carry --seed: is a red carried until a run covers it and passes, and only then cleared?
+
+    [ok]  1. a push that breaks R1 and covers it is red
+    [ok]     ... and R1 is carried
+    [ok]  2. WITHOUT the carry, a push that misses R1 reads GREEN (the defect)
+    [ok]     ... and even then it cannot CLEAR R1, which it never ran
+    [ok]  3. WITH the carry, a push that misses R1 is RED at the end of that push
+    [ok]     ... and R1 is still carried
+    [ok]  4. a branch runs main's carry (R1 fixed there: green)
+    [ok]     ... and a branch green does not clear MAIN's entry
+    [ok]  5. a later green on a DIFFERENT scope does not clear R1
+    [ok]  6. a pull_request event does not write, even green
+    [ok]  7. the push that covers R1 and PASSES clears it
+    [ok]  8. a stale writer is refused (fast-forward only)
+    [ok]     ... and the ledger still holds the first writer's red
+    [ok]  9. an unattributable failure carries its whole scope
+    [ok]  10. a receipt no longer registered leaves the ledger by name
+    [ok]  11. the ledger is a history in the repository, one commit per write
+    [ok]  L1. a receipt red on two gates carries both labels
+    [ok]  L2. a bare assert is labelled by its exception and its own line
+    [ok]  L3. a runner banner (RESULT: FAILED) is not a gate: the run named none
+    [ok]  L4. a timeout names no gate
+    [ok]  L4b. a COLUMN gate line (`FAIL  ⓷`) is a gate
+    [ok]  L4c. a text label masks its counts, so a moved count is the same gate
+    [ok]  L5. one of two repaired: STILL RED, not cleared, and the other label kept
+    [ok]  L6. a gate newly red in an already-carried receipt is told apart (≠)
+    [ok]  L7. red again on the same gates changes nothing and writes nothing
+    [ok]  L8. an entry without the field reads UNRECORDED, then is filled, not flagged new
+    [ok]  L9. a class whose evidence is a set writes no field
+    [ok]  U0. the evidence is a PAIR and not one set
+    [ok]  U1. a receipt that TIMED OUT reads red
+    [ok]  U2. ...and is NOT reported unmeasured
+    [ok]  U3. a receipt NEVER PROBED reads unmeasured
+    [ok]  U4. ...and is NOT reported red -- the defect r7417 ① ordered removed
+    [ok]  U5. a receipt probed everywhere with no finding is in neither
+    [ok]  U6. an unmeasured receipt is CARRIED, so the next union re-probes it
+    [ok]  U7. ...marked `unmeasured`, so a reader cannot take it for a verdict
+    [ok]  U8. a red receipt carries NO unmeasured mark
+    [ok]  U9. the mark is CLEARED when the receipt is probed, so it never goes stale
+    [ok]  U10. and the class still writes no `gates` field (L9 unbroken)
+    [ok]  U11. `failure` with no nameable receipt still carries the WHOLE scope as RED (r7281, unchanged)
+    [ok]  U12. ⛔ `cancelled` carries the same scope as NEVER PROBED and names `0` red
+    [ok]  U13. ...and it CARRIES them rather than dropping them, so the next union re-probes
+    [ok]  U14. ...and says WHY in its own line, naming what a verdict it never reached is not its to file (r7425 ④)
+    [ok]  U15. `skipped` is the same state as `cancelled`: nothing ran, so nothing is red
+    [ok]  U16. and the `suite` class keeps its MAPPING shape on this path (empty, not a set)
+    [ok]  U17. ...while `success` reaches this path only as a caller error and is not silently turned into a verdict either
+
+  carried exactly when it should be, cleared exactly when it should be: True

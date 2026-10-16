@@ -398,6 +398,37 @@ def _relabel_tag(old, new):
     return '= still red' + (', labels first recorded' if old is None else ', on fewer gates')
 
 
+def scope_disposition(outcome, ran, which):
+    """(red, unmeasured, how) for a run whose evidence could name NO receipt -- the one place the
+    probe's own `outcome` decides what the scope becomes.  Pure, so it can be seeded directly.
+
+    ⛔⛭⛭⛭ `r7432`, and it is `r7422`'s defect in `r7422`'s file by a path `r7422` did not model.
+    *Measured on this line's CI: a tolerance job cancelled `12m24s` in -- superseded by the next push,
+    on a head whose entire diff was ONE forwarding file -- had its probe step cancelled and its
+    `record` step run anyway, and the fallback filed **`119` receipts as MEASURED RED with none marked
+    never-probed**, among them this seat's own gate, which exits `0`.*
+      ⌈ The whole-scope carry is RIGHT for `failure` (`r7281`): a job that genuinely failed and cannot
+        say which receipt did it should carry its scope forward, conservatively.  **Unchanged here.**
+      ⌊ ⇒ *** IT IS WRONG FOR `cancelled`: a cancelled probe did not measure anything, so `red` is a
+        verdict it never reached. ***  `r7422`'s promoted distinction says where those belong --
+        `unmeasured`, CARRIED so the next union re-probes them and MARKED so no reader takes
+        non-coverage for a verdict (`r7417` ①).
+    ⚠ Carried and NOT dropped: dropping them would turn a false verdict into a silent gap, the same
+    defect wearing the other sign.
+    ⌗ `r7422` split on the INSTRUMENT's recorded reason (`rc=missing` against a timeout or a non-zero
+    rc), which is the right split for a probe that RAN.  An interrupted probe's reasons are not
+    uniformly `rc=missing`, so they fell to the red side -- the label rule once more, on a container
+    whose label said `cancelled` all along."""
+    if outcome in ('cancelled', 'skipped'):
+        return ({} if which == 'suite' else set()), set(ran), (
+            f'the job ended "{outcome}" with no receipt it can name -- so the WHOLE scope of '
+            f'{len(ran)} is carried as NEVER PROBED and NOT as red: a probe that was interrupted '
+            f'measured nothing, and a verdict it never reached is not its to file')
+    return ({r: [] for r in ran} if which == 'suite' else set(ran)), set(), (
+        f'the job ended "{outcome}" with no receipt it can name -- '
+        f'the WHOLE scope of {len(ran)} is carried')
+
+
 def do_record(root, which, path, outcome, evidence, remote):
     branch, _, writes = branches()
     if not writes:
@@ -422,9 +453,7 @@ def do_record(root, which, path, outcome, evidence, remote):
         if which == 'tolerance' and red is not None:
             red, unmeasured = red
         if not red and not unmeasured:
-            red = {r: [] for r in ran} if which == 'suite' else set(ran)
-            how = (f'the job ended "{outcome}" with no receipt it can name -- '
-                   f'the WHOLE scope of {len(ran)} is carried')
+            red, unmeasured, how = scope_disposition(outcome, ran, which)
         else:
             how = (f'{len(red)} named red'
                    + (f', {len(unmeasured)} NEVER PROBED' if unmeasured else ''))
@@ -926,6 +955,29 @@ def seed_unmeasured():
             never not in (L.get('main', {}).get('tolerance') or {})
         res['U10. and the class still writes no `gates` field (L9 unbroken)'] = \
             'gates' not in (L.get('main', {}).get('tolerance') or {}).get(timed, {})
+        # ── ⛔⛭⛭⛭ r7432: A CANCELLED PROBE IS NOT A FAILING ONE, seeded in BOTH directions ──────
+        #   A fix that made `cancelled` quiet by making everything quiet would pass a one-sided seed,
+        #   so `failure`'s whole-scope carry (r7281's ruling, untouched) is asserted beside it.
+        _scope = ['receipts/a.py', 'receipts/b.py', 'receipts/c.py']
+        _fr, _fu, _fh = scope_disposition('failure', _scope, 'tolerance')
+        res['U11. `failure` with no nameable receipt still carries the WHOLE scope as RED '
+            '(r7281, unchanged)'] = _fr == set(_scope) and not _fu
+        _cr, _cu, _ch = scope_disposition('cancelled', _scope, 'tolerance')
+        res['U12. ⛔ `cancelled` carries the same scope as NEVER PROBED and names `0` red'] = \
+            _cu == set(_scope) and not _cr
+        res['U13. ...and it CARRIES them rather than dropping them, so the next union re-probes'] = \
+            len(_cu) == len(_scope)
+        res['U14. ...and says WHY in its own line, naming what a verdict it never reached is not '
+            'its to file (r7425 ④)'] = 'NEVER PROBED and NOT as red' in _ch and 'interrupted' in _ch
+        _sr, _su, _ = scope_disposition('skipped', _scope, 'tolerance')
+        res['U15. `skipped` is the same state as `cancelled`: nothing ran, so nothing is red'] = \
+            _su == set(_scope) and not _sr
+        _qr, _qu, _ = scope_disposition('cancelled', _scope, 'suite')
+        res['U16. and the `suite` class keeps its MAPPING shape on this path (empty, not a set)'] = \
+            _qr == {} and _qu == set(_scope)
+        _xr, _xu, _ = scope_disposition('success', _scope, 'tolerance')
+        res['U17. ...while `success` reaches this path only as a caller error and is not silently '
+            'turned into a verdict either'] = _xr == set(_scope) and not _xu
     finally:
         shutil.rmtree(tmp, ignore_errors=True)
     return {k: bool(v) for k, v in res.items()}

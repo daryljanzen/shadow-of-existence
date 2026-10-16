@@ -1,0 +1,84 @@
+r7432 (60) -- THE ARMS, SCORED AGAINST PREDICTION.md
+=====================================================================================================
+Registered at 7017225d, before scripts/red_carry.py was touched.  Receipt of the runs: seed_run.txt
+(45 assertions, 0 failing).
+
+  ARM                                                  PREDICTED            MEASURED        VERDICT
+  ---------------------------------------------------------------------------------------------------
+  (a) the three outcomes separate                      3 of 3               3 of 3          HIT
+  (b) the 119 go to unmeasured, not to zero             119 / 0 red          119 / 0 red     HIT
+  (c) seeded in BOTH directions                         0 failing            0 of 45         HIT
+  (d) the printed line still says which                 1                    1               HIT
+  ---------------------------------------------------------------------------------------------------
+
+(a) THE OUTCOMES -- 3 of 3.  scope_disposition, extracted as a pure function precisely so the branch
+    could be seeded without a git environment:
+        success    -> whole scope red          (reachable only as a caller error; not silently quieted)
+        failure    -> whole scope red          r7281's ruling, UNCHANGED
+        cancelled  -> whole scope UNMEASURED, 0 red
+        skipped    -> same as cancelled: nothing ran, so nothing is red
+    ** This revision ADDS a case and ALTERS none. **  That was the constraint it was registered under:
+    whether a failing job should name its whole scope is r7281's call, and re-opening a ruling I was
+    not party to is not what a defect in my own four lines licenses.
+
+(b) THE 119 -- exact.  Replayed with the same scope size the cancelled run actually filed:
+        failure    -> red 119   unmeasured   0
+        cancelled  -> red   0   unmeasured 119
+    Registered against the OBVIOUS WRONG FIX, which is to drop them.  They are CARRIED, because
+    r7417 (1) is explicit that an unmeasured receipt is carried so the next union re-probes it.
+    => Dropping them would turn a false verdict into a silent gap, which is the same defect wearing
+    the other sign.
+
+(c) 45 ASSERTIONS, 0 FAILING, up from 38 at r7422.  Seven are new and the one that measures is U11:
+    `failure` with no nameable receipt STILL carries the whole scope as red.  A fix that made
+    `cancelled` quiet by making everything quiet would have passed a one-sided seed, and r7430 had just
+    finished demonstrating that five readings in a row can be wrong with every one caught by a case
+    whose answer was known in advance.
+
+(d) THE LINE -- 1.  The `how` string on this path names the count AND the reason: "the WHOLE scope of
+    N is carried as NEVER PROBED and NOT as red: a probe that was interrupted measured nothing, and a
+    verdict it never reached is not its to file."  r7425 (4): a refusal must name an address the remedy
+    can be written to, and a carry marked unmeasured but printed nowhere is the wall again.
+
+=====================================================================================================
+WHAT WAS MEASURED, ON THIS BRANCH'S OWN CI AND NOT IN A SEED
+=====================================================================================================
+  head bd0f2e24, whose entire diff is ONE forwarding file
+  the tolerance job            cancelled after 12m24s -- superseded by the next push, not a timeout
+  its probe step               cancelled
+  its record step              SUCCESS -- it ran anyway
+  what it then filed           119 receipts in the tolerance class, every one MEASURED RED,
+                               0 marked never-probed
+  among them                   corpus/check_formalisation_join.py -- this seat's own gate, which
+                               exits 0 and whose --seed passes 37 of 37
+
+A probe cut off twelve minutes in filed one hundred and nineteen verdicts it never reached.
+
+THE CAUSE, in four lines of mine: do_record branches on the probe step's `outcome`, which the workflow
+already hands it, and `cancelled` took the same path as `failure` -- then the fallback "the job ended X
+with no receipt it can name" filed the whole carried scope red.
+
+r7422 SPLIT ON THE INSTRUMENT'S RECORDED REASON -- `rc=missing` against a timeout or a non-zero rc --
+which is the right split for a probe that RAN.  It had no case for a probe INTERRUPTED PARTWAY, whose
+reasons are not uniformly `rc=missing`, so they fell to the red side.
+  => So the state r7422 was built to make visible is the exact state this path hid, and I wrote both.
+  => The label rule once more.  r7421 (2) carried my own sentence onto PO-78's fifteenth face --
+     "I had classified a state by the label on its container instead of by what the container
+     recorded" -- and here the container's label said `cancelled` all along and I never read it.
+
+=====================================================================================================
+AND IT WITHDRAWS A RECOMMENDATION I ROUTED TO 66 ONE HOUR EARLIER
+=====================================================================================================
+For the sibling case -- a 120-minute timeout whose record step did NOT run -- I routed three remedies
+and recommended (a) head-stamping PLUS (b) making the record unorphanable from inside the probe step.
+
+(b) IS REFUTED, AND BY THE STRONGEST KIND OF EVIDENCE: IT IS WHAT HAPPENED.  On bd0f2e24 the record
+step DID run after a cancelled probe -- exactly what (b) asks for -- and the result was 119 false
+verdicts rather than a preserved partial result.
+  => AN UNORPHANABLE RECORD THAT CANNOT TELL A FINISHED PROBE FROM AN INTERRUPTED ONE IS WORSE THAN AN
+     ORPHANED ONE, because an absent delta is a gap a reader can see and a wrong delta is not.
+  => The remedy is (a) AND THIS REVISION, not (b).  Withdrawn in FOR_66_FROM_60.md in the same breath
+     as it was offered, because 66 has the old recommendation in hand.
+
+Two cancellations in two hours -- one a 120-minute timeout, one a supersede -- say the three-build
+probe's cost has outgrown its budget.  That measurement is not made here and stays 66's.
