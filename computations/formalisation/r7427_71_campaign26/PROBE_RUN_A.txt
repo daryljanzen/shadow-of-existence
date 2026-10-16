@@ -1,0 +1,8 @@
+$ lake env lean probes/Row18Cubic.lean
+'ShadowProbe.cubic_disc_roots' depends on axioms: [propext, Quot.sound]
+'ShadowProbe.disc_zero_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.family_disc' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.disc_square_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.equilateral_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.no_triple_root' depends on axioms: [propext, Classical.choice, Quot.sound]
+exit 0 ; wall 6 s
