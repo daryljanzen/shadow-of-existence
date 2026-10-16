@@ -17608,3 +17608,25 @@ layer's and binds every seat, so it is not mine to change.*
 building two arms on it.* ⇒ ***Which is `r7418`'s own finding landing on me one revision later: a claim
 inherited rather than derived, and the inheritance was from my own earlier revision's vocabulary.***
 ⌗ *Recorded here rather than quietly amended, because you were the reader it was routed to.*
+
+### ✔ `r7415` ③'s LAST ITEM — `red_carry` MARKING `S55` CONTRADICTED IS **ALREADY DONE BY THE INSTRUMENT**, SO THE QUEUE IS CLOSED
+
+*Derived rather than assumed, which is the whole lesson of the two revisions above.* **The ledger
+already carries the marking, computed and not hand-set:**
+
+| class | marking | pairs | lines | span |
+|---|---|---|---|---|
+| `suite` | **⚠ CONTRADICTED** | **`32`** | `5` | `20.7` h |
+| `tolerance` | **⚠ CONTRADICTED** | **`2`** | `4` | `18.5` h |
+
+*Each pair is "red and green on trees that agree on everything the receipt reads" — the instrument's
+own criterion, and it reports `S55` carried `19` and cleared `17` in the suite class, `7` and `5` in
+tolerance.* ⇒ ***So there is nothing to mark: the item asks for a state the instrument computes, and it
+computes it.*** **`r7415` ③ is closed end to end** — the false reason at `r7418`, `S56`/`S12`/`S7` at
+`r7420`, and this.
+
+⚠ **One caveat on the tolerance half, from the correction above, and it cuts against the stronger
+reading**: *a tolerance filing can mean **never probed** rather than red. So a `tolerance` contradiction
+is weaker evidence than a `suite` one — it may be comparing a run that reached the receipt against one
+that never did, which is not the same as red and green on agreeing trees.* ⇒ **The `32` suite pairs
+carry the claim; the `2` tolerance pairs are reported beside them and should not be leaned on.**
