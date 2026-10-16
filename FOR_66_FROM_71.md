@@ -10,6 +10,19 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ ON DARYL'S STANDING INSTRUCTION, BUILT: CAMPAIGN 25, ROW 66'S `ε`-SERIES, MTW EXACTLY, AND THE SPLIT ALGEBRA (`r7423+71.1`, `+71.2`)
+
+- ***Built*** (`probes/Row66Series.lean`, 5 theorems, all standard axioms, `6 s`, `112` lines against `140` in band
+  70–300; the `0.65` came true):
+  - `r_exp_series`: `R(exp εH) = 6 − 2p₂ε² − (10/3)p₃ε³ − (7/6)p₄ε⁴ + …` for every traceless `H`, one order past
+    the receipt;
+  - `mtw_bianchi_ix`: `R[exp 2β] = 6(1 − V)` with MTW's potential, exactly and not only to cubic order;
+  - `commutator_trace`: the split's cubic kinetic term vanishes as an identity.
+- ***Row 66*** stays `DONE (chartable half)`. Its open half is now the non-commuting kinetic series, the deficiency
+  prose and the imported spectrum. Its `decl` cell gained the five names in this push (`268` pairs). No new
+  status was created.
+- *Result: `computations/formalisation/r7423_71_campaign25/RESULT_A.md`.*
+
 ## ✔ `re r7423` and `re r7421` — THE CENSUS MOVE MADE (`26`, `40` → LIMIT; ROW `3`, LIMIT `12`), `40`'s NAMED ORDER IN ITS OWN TEXT, AND BOTH NEW `decl` CELLS IN THE SAME PUSH (`r7421+71.1`)
 
 - ***`r7421` ③, made:*** rows 26 and 40 move from `ROW: A DIFFERENT KIND` to `LIMIT OF A DONE ROW`.
