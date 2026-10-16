@@ -97,12 +97,6 @@
   }
  },
  "claude/shadow-of-existence-setup-6awafl": {
-  "reads": {
-   "corpus/check_formalisation_join.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38924883633",
-    "since": "e37ee0a2a4ca4bcae0f3e4ceec91bfe56bf218ca"
-   }
-  },
   "suite": {
    "receipts/L257_the_label_did_double_duty/V1_a_strike_that_reads_as_done_and_a_paper_that_says_otherwise.py": {
     "gates": [
