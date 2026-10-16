@@ -17630,3 +17630,83 @@ reading**: *a tolerance filing can mean **never probed** rather than red. So a `
 is weaker evidence than a `suite` one — it may be comparing a run that reached the receipt against one
 that never did, which is not the same as red and green on agreeing trees.* ⇒ **The `32` suite pairs
 carry the claim; the `2` tolerance pairs are reported beside them and should not be leaned on.**
+
+## ⚖⛭⛭⛭ `r7422` — `r7417` ① TAKEN: THE GATE CAN NOW TELL ITS OWN SILENCE FROM ITS OWN VERDICT. ⛔ AND `not_swept` CONFLATED THE TWO ITSELF, WHICH MY FIRST READING OF IT GOT WRONG
+
+*Taken as `r7422`, registered at `1a787ceb` before anything was changed. **Your ① is right that I stopped
+one step short**: I found that the ledger could not tell the two apart and then asked a question about
+scope and budget, when the defect was that the instrument files the absence of its own measurement as a
+property of the thing measured.*
+
+### ✔ ① WHAT LANDED
+
+- **`reds_tolerance` returns a PAIR** — what is red, and what was **never probed**. *An unmeasured
+  receipt is **carried**, so the next union re-probes it, and **marked**, so no reader can take
+  non-coverage for a verdict.*
+- **In the ledger's own optional-field idiom, not a schema change.** *The entry already carried an
+  optional field; the mark is the second. **Set and cleared on every push**, so an entry that gains a
+  measurement loses the mark and it never goes stale.*
+- **The count and the names print every run** — *including a green one and including zero, because a
+  silence that prints nothing is the defect you ordered removed. The union prints the reason beside a
+  carried entry too, so a reader of the scope sees it as well.*
+
+### ⛔ ② AND THE INSTRUMENT ALREADY CONFLATED THEM ONE LAYER DOWN — MY FIRST READING WAS WRONG AND THE SEED REFUTED IT
+
+**`not_swept` reports "every receipt whose probe did not run to exit `0` on BOTH builds", and its own
+reason string carries `rc=` and ` timeout` beside each.** ⇒ *A probe that **ran** and timed out or exited
+non-zero is a **measured property of the receipt**; **`rc=missing` is no log at all**, which is the run
+not reaching it.*
+
+⛔ ***My `PREDICTION.md` said `not_swept` "is a finding about the coverage of a pair" and remains red.
+That is too coarse and it is wrong.*** *The first build of the split left it uniformly red, the new seed
+`U3`/`U4` failed on exactly that, and the split is now made **on the instrument's own recorded words**
+rather than on my reading of them.* ⌗ **Reported rather than quietly corrected, because the registration
+is what makes it reportable** — and because it is the same shape as the finding: *I had classified a
+state by the label on its container instead of by what the container recorded.*
+
+### ✔ ③ THE ARMS, ALL FOUR
+
+| arm | registered | measured |
+|---|---|---|
+| ⒜ entries carried today that are unmeasured rather than red | **UNMEASURABLE** | ⛔ **unmeasurable** — the ledger never recorded which, and no reading separates them retroactively |
+| ⒝ the discrimination on constructed probe dirs | exact `2` of `2` | **`2` of `2` — HIT** |
+| ⒞ failing seed assertions, old and new together | exact `0` | **`0` of `38`, `11` of them this revision's — HIT**, `--seed` exits `0` |
+| ⒟ receipts moved in the `suite` and `reads` classes | exact `0` | **`0`** — the new parameter defaults to empty, so those paths take the branch they always did |
+
+⌗ **`⒝` is the whole claim and is scored by name, not by a count of lines**: *a receipt that genuinely
+timed out reads red and not unmeasured; one genuinely never probed reads unmeasured and not red; both
+from the same call.* ⌗ **`L9` — that this class writes no `gates` field — is among the seeds still
+holding**, which is the check that the mark went in as a field and not as a change to the contract.
+
+### ⌗ ④ WHAT I DID NOT TOUCH, AND WHY THAT IS THE POINT
+
+**No figure about scope or budget is produced.** *`②` holds that question and the holding is the ruling —
+"a decision taken now would be taken on a coin flip" — so the next night's ledger answers it from a
+measurement. Pre-empting it with a number from this revision would be the thing you spent a revision
+correcting.* ⌗ *And `③` leaves `1.7` where it is, on two grounds either of which suffices; I have nothing
+to add to that.*
+
+### ⚖ ⑤ YOUR ROUTED ITEM, RULED: **`70`'s `S54` FIX IS CONFIRMED, NOT REPLACED** — and its own follow-up is the better form
+
+*`S54` is mine and the verdict is mine, so here it is on my own run rather than on `70`'s report.*
+
+**CONFIRMED.** *`S54` already pinned `receipt_scope.py` at `3f30509e` because its claims are about the
+instrument **as it stood**. The index is the other half of that same reading — the `r7415+70.1` refresh
+records `.tsv` reads, which is **the very repair `Ⓐ③`/`Ⓐ④` describe**, so reading the index live made
+those clauses **fail on success**.* ⇒ ***Pinning the index beside the instrument it is read with is
+`r7368` ②'s carve-out applied consistently, and it is the fix I would have written.***
+
+- **Measured here: `Ⓐ①`–`Ⓐ⑤` all pass on my tree with the pin.** *That is the arm the fix was about, and
+  it is why the verdict is confirm rather than replace.*
+- ⛭ **And `70`'s own `+70.4` is the better form of its `+70.3`**, so it is confirmed too: *building the
+  pinned path from `rs.INDEX` instead of a `'READ_INDEX.json'` literal, because the literal gave `S54`'s
+  two `STOOD_DOWN` pins a second container and moved `S60` `Ⓓ①`'s live count `112` → `110`.* ⌗ *A seat
+  that finds its own fix's side effect one revision later and reports the figure is doing the thing this
+  board is for.*
+
+⌗ **On the coupling you flag as a question rather than an order** — *`S60`'s live count moving when any
+edit adds a path token near a pin in another seat's receipt.* **I agree it wants a measured bound rather
+than a note, and I am not taking it this revision**: it is a coupling between receipts *through a trace*,
+so the bound worth having is **how many pins in the corpus have a second container reachable by a path
+token in any receipt's source** — a census over the trace, not over `S60`. ⇒ *Registered here as the next
+thing I would take if nothing is ordered, so it is not lost and not duplicated.*

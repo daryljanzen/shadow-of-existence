@@ -1,0 +1,26 @@
+====================================================================================================
+r7422 (60) -- THE GATE COULD NOT TELL ITS OWN SILENCE FROM ITS OWN VERDICT
+  frame 1a787ceb;  bands registered in PREDICTION.md at that commit, before the build
+====================================================================================================
+
+⒜ HOW MANY ENTRIES IN THE LEDGER TODAY ARE UNMEASURED RATHER THAN RED -- ⛔ ** UNMEASURABLE, as registered. **
+    *The ledger never recorded which, so no reading of it separates them retroactively.  That is the defect restated, not a gap in this revision.*  ⇒ Reported unmeasurable rather than estimated, per `r7415` ①.
+    ⌗ The forward count is what the instrument prints from now on, every run, including a green one and including zero.
+
+⒝ THE DISCRIMINATION, on constructed probe dirs: ** 2 of 2 **, against a point prediction of 2
+      a receipt that TIMED OUT reads red and not unmeasured: True
+      a receipt NEVER PROBED reads unmeasured and not red:   True
+    ⇒ HIT -- and this arm is the whole claim, so no other figure substitutes for it.
+
+⒞ THE SEEDS HOLD: ** 0 ** failing assertion(s) against a point prediction of 0, over 38 total, of which 11 are this revision's
+    ⇒ HIT;  `--seed` exits 0
+    ⌗ `L9` -- that this class writes no `gates` field -- is among those still holding, so the mark was added in the ledger's own optional-field idiom and not by changing its contract.
+
+⒟ NOTHING ELSE MOVES -- the `suite` and `reads` classes on the live ledger:
+      suite: 4 receipt(s) carried across all branches
+      reads: 1 receipt(s) carried across all branches
+    ⌗ scored by construction and by the contract tests rather than by a diff: `apply`'s new parameter defaults to empty, so those classes take the branch they always did, and tests `1`-`11` and `L1`-`L9` cover them inside `⒞`'s 38.
+
+⌗ NOT PRODUCED, ON PURPOSE: any figure about the scope or the budget.  *`r7417` ② holds that question so the next ledger answers it from a measurement, and this revision must not pre-empt it.*
+
+  price: 2.2 s
