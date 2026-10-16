@@ -112,6 +112,7 @@ unreachable here.
 
 Written r7370 on CI's own two reds.  Stated for reversal.
 """
+import ast
 import importlib.util
 import os
 import re
@@ -162,6 +163,85 @@ def one(prefix, where='receipts/L_probability'):
 
 def src(prefix):
     return open(os.path.join(ROOT, one(prefix)), encoding='utf-8').read()
+
+
+#: ⛔⛭⛭ r7420: ** THE EXCLUSION LIST BELOW WAS A HAND-WRITTEN MEMBERSHIP TEST WITH ONE ENTRY, AND IT
+#: MISSED TWO MEMBERS -- INCLUDING THE ONE CARRYING 74 PER CENT OF THIS FILE'S COST. **
+#:   *`r7370` wrote `_NESTS = ('S55_',)` and `Ⓖ①` asserted that all five remaining members "run
+#:   nothing themselves".  `S22` runs `I55` and `S23` runs `N1` and a `P03` receipt, so the clause was
+#:   FALSE for two of its five -- and the list caught only the member it was written about.*
+#:   ⇒ *** The rule `r7370` stated here is right and its LIST was the defect. ***  *That is `r7412`'s
+#:       eighth-instance failure again -- a census whose membership test missed a member it was about
+#:       -- and the first in this phase to REPEAT a reason rather than add one.*
+#:
+#: ⛔⛭⛭⛭ AND THE FIRST TWO REPLACEMENTS WERE BOTH WORSE, WHICH IS WHY THE TEST BELOW IS THREE-WAY.
+#:   ⒤ *A detector keyed on a `sys.executable` subprocess carrying a resolvable `receipts/` string
+#:     missed `S23`: its call is `run(_n1)`, a four-line LOCAL WRAPPER whose path is a PARAMETER, so no
+#:     string appears at the call site or inside the wrapper.*  **Thirteenth instance of this phase's
+#:     family, and a reason it did not have.**
+#:   ⒥ ⛔ *Following the wrapper fixed `S23` and then dropped `S55` -- the one entry the hand-written
+#:     list had RIGHT.  `S55` runs its receipts as `[sys.executable, os.path.basename(rel)]` with the
+#:     directory in `cwd`, **which is this very file's own idiom**, so there is no `receipts/` string to
+#:     match.  Run with that form, this file ran `S55` whole: `1,465` s plus `S55`'s own six, the cost
+#:     becoming the product this section's rule exists to prevent.*  **Fourteenth instance, caught by
+#:     RUNNING the repair rather than reasoning about it -- which is what the arm registered for it was
+#:     for, and `r7406`'s rule in its cheapest form.**
+#:   ⇒ *** A BASENAME CANNOT BE RESOLVED STATICALLY: the directory is in `cwd` at runtime, so the
+#:       question is not answerable from the source and must be REPORTED undecidable, not guessed. ***
+#:   ⌊ ⛭ **And the two errors are not symmetric, which decides the disposition**: excluding a receipt
+#:     that does not nest costs one re-run the suite performs anyway, while including one that does
+#:     risks the product cost.  *So `undecidable` joins the exclusion, and the asymmetry is the
+#:     argument rather than a preference.*
+def _nest_verdict(rel):
+    """'yes' | 'no' | 'undecidable' -- does this receipt hand a receipt to the interpreter?
+
+    Decided from the parse tree where the target is a literal path, and REPORTED UNDECIDABLE where it
+    is a bare basename taken from a variable, because the directory is supplied via `cwd` at runtime
+    and no reading of the source can settle it."""
+    try:
+        tree = ast.parse(open(os.path.join(ROOT, rel), encoding='utf-8', errors='replace').read())
+    except (SyntaxError, OSError):
+        return 'undecidable'
+    binds = {}
+    for n in ast.walk(tree):
+        if isinstance(n, ast.Assign) and isinstance(n.value, ast.Constant) \
+                and isinstance(n.value.value, str):
+            for t in n.targets:
+                if isinstance(t, ast.Name):
+                    binds[t.id] = n.value.value
+    wrappers = set()
+    for n in ast.walk(tree):
+        if not isinstance(n, ast.FunctionDef):
+            continue
+        params = {a.arg for a in n.args.args} | ({n.args.vararg.arg} if n.args.vararg else set())
+        for c in ast.walk(n):
+            if isinstance(c, ast.Call) and "attr='executable'" in ast.dump(c) \
+                    and any(isinstance(x, ast.Name) and x.id in params for x in ast.walk(c)):
+                wrappers.add(n.name)
+    verdict = 'no'
+    for n in ast.walk(tree):
+        if not isinstance(n, ast.Call):
+            continue
+        f = n.func
+        nm = f.attr if isinstance(f, ast.Attribute) else (f.id if isinstance(f, ast.Name) else '')
+        direct = (nm in ('run', 'check_output', 'Popen', 'check_call') and n.args
+                  and "attr='executable'" in ast.dump(n.args[0]))
+        if not (direct or nm in wrappers):
+            continue
+        strs, basename = [], False
+        for a in n.args:
+            for x in ast.walk(a):
+                if isinstance(x, ast.Constant) and isinstance(x.value, str):
+                    strs.append(x.value)
+                elif isinstance(x, ast.Name) and x.id in binds:
+                    strs.append(binds[x.id])
+                elif isinstance(x, ast.Attribute) and x.attr == 'basename':
+                    basename = True
+        if any(re.search(r'(^|/)receipts/', t) for t in strs):
+            return 'yes'
+        if basename and not any(re.search(r'(^|/)(corpus|scripts)/', t) for t in strs):
+            verdict = 'undecidable'
+    return verdict
 
 
 def main():
@@ -334,7 +414,8 @@ def main():
     #:       own scope and the suite runs it once, which is where running it belongs. ***
     #: ⌊ *So the five that run nothing are RUN, and `S55` is read for the one thing this revision
     #:   changed in it -- which is a stronger claim about this revision's work than its exit code.*
-    _NESTS = ('S55_',)
+    _VERDICTS = {p: _nest_verdict(one(p)) for p in REDS + MORE}
+    _NESTS = tuple(sorted(p for p, v in _VERDICTS.items() if v in ('yes', 'undecidable')))
     _rcs = {}
     for p in REDS + MORE:
         if p in _NESTS:
@@ -344,20 +425,45 @@ def main():
                                       cwd=os.path.join(ROOT, os.path.dirname(rel)),
                                       capture_output=True, text=True, errors='replace',
                                       timeout=2400).returncode
+    _INDEX = open(os.path.join(ROOT, 'receipts', 'INDEX.md'), encoding='utf-8').read()
     print(f'      run here, not cited: {_rcs}')
-    print(f'      not re-run, and why: {list(_NESTS)} runs six receipts of its own, so running it '
-          f'here makes this file\'s cost a product rather than a sum -- it is in the suite\'s scope '
-          f'and the suite runs it once')
-    check(f'Ⓖ① all {len(_rcs)} receipts that run nothing themselves are RUN from their own '
-          f'directories and every one exits zero: {_rcs}',
-          len(_rcs) == 5 and all(v == 0 for v in _rcs.values()))
-    check('Ⓖ①ᵃ ⛭ and `S55` is asserted on THE CHANGE THIS REVISION MADE TO IT rather than re-run '
-          'whole: its id filter is gone, its restraint reads the whole session-filtered range, and '
-          'it is registered in the index so the suite runs it -- which is a stronger claim about '
-          'this revision\'s work than its exit code would be',
+    print(f'      not re-run, COMPUTED from their own source rather than remembered: {list(_NESTS)} '
+          f'-- each runs a receipt of its own, so running it here makes this file\'s cost a product '
+          f'rather than a sum; each is registered in the index and the suite runs it once')
+    check(f'Ⓖ① every member that runs nothing itself is RUN from its own directory and exits zero, '
+          f'and the population is DERIVED from each file\'s parse tree rather than pinned: '
+          f'{_rcs} against a nesting set of {list(_NESTS)}, {len(_rcs)} + {len(_NESTS)} = '
+          f'{len(REDS + MORE)}',
+          _rcs and all(v == 0 for v in _rcs.values())
+          and len(_rcs) + len(_NESTS) == len(REDS + MORE)
+          and all(_VERDICTS[p] == 'no' for p in REDS + MORE if p not in _NESTS))
+    check(f'Ⓖ①ᵃ ⛭ and every member that DOES run a receipt is asserted on its registration rather '
+          f'than re-run whole -- `r7370`\'s own rule, which it applied to one member and this file '
+          f'now applies to all {len(_NESTS)} the parse tree finds: each is in the index, so the '
+          f'suite runs it once, which is where running it belongs',
+          len(_NESTS) >= 1
+          and all(os.path.basename(one(p)) in _INDEX for p in _NESTS))
+    check('Ⓖ①ᵇ ⛭ and `S55` keeps the specific form too: it is asserted on THE CHANGE THIS REVISION '
+          'MADE TO IT -- its id filter is gone and its restraint reads the whole session-filtered '
+          'range -- which is a stronger claim about this revision\'s work than its exit code',
           "_r68 = _own" in _s55 and "'r7368' in git(" not in _s55
-          and os.path.basename(one('S55_')) in open(
-              os.path.join(ROOT, 'receipts', 'INDEX.md'), encoding='utf-8').read())
+          and os.path.basename(one('S55_')) in _INDEX)
+    check(f'Ⓖ①ᶜ ⛔⛭ and the PREVIOUS form\'s hand-written list missed two of them: it carried '
+          f'`S55` alone while the three-way test finds {len(_NESTS)}, so the clause asserting that '
+          f'all five others "run nothing themselves" was FALSE for two -- `r7412`\'s membership-test '
+          f'failure again, and the first in this phase to repeat a reason rather than add one.  '
+          f'⛭ AND THE COMPUTED SET CONTAINS THE OLD ONE rather than contradicting it: {list(_NESTS)}',
+          len(_NESTS) > 1 and 'S55_' in _NESTS)
+    _undec = sorted(p for p, v in _VERDICTS.items() if v == 'undecidable')
+    check(f'Ⓖ①ᵈ ⛔⛭⛭ and the test is THREE-WAY because a basename cannot be resolved from the '
+          f'source: the directory is in `cwd` at runtime.  Undecidable: {_undec}; nesting: '
+          f'{sorted(p for p, v in _VERDICTS.items() if v == "yes")}; clear: '
+          f'{sorted(p for p, v in _VERDICTS.items() if v == "no")}.  ** Undecidable joins the '
+          f'exclusion, and the ASYMMETRY is the argument: excluding a receipt that does not nest '
+          f'costs one re-run the suite performs anyway, while including one that does risks the '
+          f'product cost this section exists to prevent **',
+          set(_VERDICTS.values()) <= {'yes', 'no', 'undecidable'}
+          and all(p in _NESTS for p in _undec))
 
     print(f'\n{BAR}')
     if FAILED:

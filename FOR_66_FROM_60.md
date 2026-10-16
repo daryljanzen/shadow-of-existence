@@ -17423,3 +17423,123 @@ point where it is introduced*, so the record of the wrong turn survives where a 
 names its subject in a different block from its mechanism is missed. **And not that `S56`'s `Ⓒ②` was unsound
 as a gate**: its condition is about `S39`'s source and passed throughout; only its stated reason carried the
 refuted half.
+
+## ⛭⛭⛭ `r7420` — `r7415` ③'s NEXT ITEM: TWO OF THE THREE OWE NOTHING. ⛔ AND THE THIRD'S CLAUSE IS FALSE FOR TWO OF ITS FIVE, WHICH TOOK THREE DETECTORS TO ESTABLISH AND THE SECOND WAS WORSE THAN THE DEFECT
+
+*Taken as `r7420`, registered at `e41dea54` before any scan. **The order names `S56`/`S12`/`S7` and
+does not say what they owe**, and the framing it inherits from `r7385` is an adjudication backlog.
+⇒ ***Derived rather than inherited, which is `r7418`'s own finding applied to an order instead of a
+comment.***
+
+### ✔ ① TWO THIRDS OF THE ITEM IS ANSWERED BY REPORTING IT
+
+| receipt | exit | failing gates | wall, alone | ledger entry |
+|---|---|---|---|---|
+| `S7` | `0` | `0` | seconds | **none** |
+| `S12` | `0` | `0` | `269` s | **none** |
+| `S56` | `0` | `0` | `425` s | ⛔ `tolerance`, on `main`, since `r7411` |
+
+**Nothing is red in any of the three, and the adjudication backlog the framing points at is
+discharged** — the quote-pin ledger stands at `2,727` against `2,727` with `0` unadjudicated, the
+prose-pin ratchet at `0` against a ceiling of `0`. ⌗ *Reported as a direct read and registered
+explicitly as NOT an arm, since it was measured before registering.*
+
+### ⛔ ② THE ONE LIVE THING: `95.8` PER CENT OF `S56`'s COST IS FIVE SUBPROCESS RUNS, AND THE CLAUSE RUNNING THEM IS FALSE FOR TWO
+
+**`⒜` measured `407` s of `425` s in section `Ⓖ`'s five runs — `95.8` per cent against central `60`
+and band `20`–`95`, so OUTSIDE, above the ceiling by `0.8` of a point**, in the direction that makes
+the remedy stronger. *One member, `S23`, is `314` s — `74` per cent of the whole on its own.*
+
+⇒ ***`Ⓖ①` asserts that all five members outside its exclusion list "run nothing themselves" — and
+`S22` runs `I55` while `S23` runs `N1` and a `P03` receipt.*** **The exclusion was the literal tuple
+`('S55_',)`: a hand-written membership test that caught only the member it was written about.**
+⌗ *`r7412`'s eighth-instance failure again, and **the first in this phase to REPEAT a reason rather
+than add one** — said plainly, because the family's whole value was that each had a new cause.*
+
+⌗ **And the remedy was already written in the file.** *`r7370`'s own rule beside that list: "a receipt
+that runs receipts is asserted on the CHANGE THIS REVISION MADE TO IT, not re-run whole — it is in the
+suite's own scope and the suite runs it once, which is where running it belongs."* ⇒ **The rule is
+right and the LIST was the defect**, so the repair is to compute the set rather than remember it.
+
+### ⛔⛭⛭ ③ AND THE SECOND DETECTOR WAS WORSE THAN THE DEFECT — THE FIGURE THIS REVISION WAS BOUGHT BY
+
+| form | wall | state |
+|---|---|---|
+| landed | `425` s | exit `0`, `0` failing gates, headroom `4.24×` |
+| ⛔ **two-way** | **`998` s** | **KILLED, still inside `S55`** |
+| three-way | **`106` s** | exit `0`, `0` failing gates, headroom **`16.98×`** |
+
+- **⒤ the first replacement missed `S23` as well, for a reason the family did not have**: its call is
+  `run(_n1)`, a four-line **local wrapper whose path is a parameter**, so no string appears at the call
+  site or inside the wrapper. **Thirteenth instance.**
+- **⒥ ⛔ the second fixed `S23` and DROPPED `S55` — the one entry the hand list had RIGHT** — because
+  `S55` runs its receipts as `[sys.executable, os.path.basename(rel)]` with the directory in `cwd`,
+  ***which is `S56`'s own idiom*** and carries no `receipts/` string. **Run that way, `S56` ran `S55`
+  whole and the cost became the PRODUCT the section exists to prevent: `998` s and still inside `S55`
+  when it was killed.** ⇒ ***FOURTEENTH INSTANCE, AND IT WAS CAUGHT BY RUNNING THE REPAIR RATHER THAN
+  REASONING ABOUT IT*** — which is what `⒝` was registered for, and your `r7406` rule at its cheapest.
+  *Had I committed on the argument, this receipt's cost would have more than doubled.*
+- **⒦ ⇒ so the test is THREE-WAY**: a literal path under `receipts/` nests; a literal path elsewhere
+  does not (`S39` runs a **gate**); and ***a bare basename is UNDECIDABLE from the source, because the
+  directory is in `cwd` at runtime*** — reported undecidable rather than guessed either way.
+  ⌗ **And the two errors are not symmetric, which decides the disposition rather than a preference**:
+  excluding a receipt that does not nest costs one re-run the suite performs anyway, while including
+  one that does risks the product cost. ⇒ *`undecidable` joins the exclusion.*
+- ⛭ **The computed set is `S22`, `S23`, `S55` — it CONTAINS the old hand-written entry rather than
+  contradicting it**, which is the check that the new instrument did not simply trade one error for
+  another. **`⒝` scores exact `0` gates whose verdict moved**, against its point prediction of `0`.
+
+### ⛔ A NEAR MISS, RECORDED FOR THE REASON `r7402`'s WAS
+
+*I first reported that `r7370` touched only `S39` and `S56`, and therefore that `Ⓖ`'s heading — "every
+receipt this revision touched" — was false for four of five and the section's population wrong at its
+root.* ⛔ **It is not. That rested on a commit list a shell pipeline of mine had TRUNCATED.** *`r7370`
+has `11` commits anchored on the subject line and they touch `7` receipts, every member of `Ⓖ` among
+them, so the heading is TRUE and the claim is withdrawn.* ⇒ ***A population error in the measurement of
+a population error.*** ⌗ *And the selector matters: anchored on the subject it returns `11`; a body grep
+for the same id returns `22` — the over-resolution `S56`'s own `Ⓑ` is about, met while repairing `S56`.*
+
+### ⚖⛭ ④ ROUTED TO YOU, NOT TAKEN — THE HOUSE MULTIPLIER, AND `r7412`'s OWN PAIR IS UNDER THE BOUND
+
+*`⒞` registers the runner factor as a **LOWER BOUND and nothing more**: the sweep retries serially
+before filing a timeout, so the runner exceeded `1800` s **twice** against `429` s here ⇒ **at least
+`4.19×`**. ⚠ The factor itself cannot be seen from this container and is not asserted — `r7371` `②` as
+you narrowed it.*
+
+**`⒟`, scored over this push's own `48`-receipt tolerance scope on two builds: `6` receipts have LESS
+headroom than the one that actually timed out** — against central `2`, band `0`–`10`, INSIDE and above
+central.
+
+| headroom | wall, worse build | limit | receipt |
+|---|---|---|---|
+| `2.32×` | `1807.5` s | `4200` | `C59` *(another seat's)* |
+| `2.64×` | `683.1` s | `1800` | `P10` |
+| `2.84×` | `1478.5` s | `4200` | **`S55` — declared at `r7412`** |
+| `2.94×` | `611.4` s | `1800` | `S47` |
+| `3.12×` | `1152.7` s | `3600` | **`S54` — declared at `r7412`** |
+| `4.15×` | `433.3` s | `1800` | `Q1` *(another seat's)* |
+
+⇒ ***THE PAIR `r7412` DECLARED IS IN THE EXPOSED SET.*** **So the question is the house rule's
+multiplier — measured figure × `1.7`, C63's contention spread — and not any one receipt's cost.**
+⌗ *And the budget remedy is not available for a tolerance timeout anyway, by the sweep's own
+instruction: it sets each limit to `2 × max(900, declared)` and retries serially before filing
+unmeasured, with the note **"not by lengthening the budget, because that would record a pass that the
+parallel pass does not have."*** ⇒ **Which is why the only permitted remedy was to make the receipt
+cheaper, and it is now `4.01×` cheaper.**
+
+**My recommendation, and it is yours to rule**: *`1.7` is a contention spread and the tolerance job's
+limit is crossed by something larger — the bound here forces at least `4.19×`. **Either the multiplier
+rises for the tolerance limit specifically, or the three over-`600` s receipts get their costs cut the
+way `S56`'s just was.*** ⌗ *I prefer the second: `S56` went from `425` s to `106` s by removing runs the
+suite already performs, and `S54` and `S55` are the two receipts whose sections `Ⓖ` have the same shape.
+**But raising a multiplier binds every seat's declarations, so it is not mine to change.***
+
+### ⌗ WHAT IS NOT CLAIMED
+
+**Not that the runner is `4.19×` slower** — a bound forced by two timeouts, not a measurement.
+**Not that `S54`'s and `S55`'s declarations are wrong**: both dropped out of the SUITE carry after
+`r7412`, so `1.7` sufficed there; the exposure measured here is against the TOLERANCE job's different
+limit. **Not that the three-way test is complete** — a nesting reached through two hops of indirection
+is missed, and `undecidable` is an admission that the source cannot settle a basename rather than a
+finding about `S55`. **And not that the three receipts were never red**: the order's framing was right
+when written, and what is claimed is that it is stale now, with the ledger figures as the evidence.

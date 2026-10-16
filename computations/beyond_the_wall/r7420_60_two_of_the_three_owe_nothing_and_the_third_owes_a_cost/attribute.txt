@@ -45,4 +45,11 @@ r7420 (60) -- TWO OF THE THREE OWE NOTHING, AND THE THIRD OWES A COST
     ⇒ INSIDE the band, above central
     ⛔⛭ ** AND THE PAIR `r7412` DECLARED IS IN THE EXPOSED SET **: ['S55_', 'S54_'] -- so the house rule's multiplier of 1.7 is the thing to question rather than any one receipt's cost, and that is a gate-layer decision rather than this seat's.
 
-  price: 0.5 s
+⒝ THE REPAIR, MEASURED ON THREE FORMS -- and gates whose verdict moved: ** 0 **, against point prediction 0
+      landed form        424.9 s   exit 0, 0 failing gates   headroom  4.24x
+      ⛔ two-way form    998.0 s   KILLED, still inside `S55`  -- the repair that dropped the one entry the hand list had RIGHT
+      three-way form     106.0 s   exit 0, 0 failing gates   headroom 16.98x
+    ⇒ ** 4.01x cheaper than the landed form and 9.4x cheaper than the broken repair **, with the nesting set ['S22_', 'S23_', 'S55_'] COMPUTED and CONTAINING the old hand-written ('S55_',) rather than contradicting it
+    ⇒ and `S56` now clears the bound that filed it unmeasured: headroom 16.98x against a forced lower bound of 4.19x
+
+  price: 0.6 s

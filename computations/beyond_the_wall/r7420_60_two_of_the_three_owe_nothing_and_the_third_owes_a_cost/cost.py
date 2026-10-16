@@ -34,6 +34,20 @@ G_COSTS = {'S29': 1, 'S39': 43, 'S22': 1, 'S23': 314, 'S53': 48}
 S56_WALL = 424.9          # probe tA; tB gives 429.4, 1 per cent apart
 S56_LIMIT = 1800          # 2 * max(900, budget(S56, 600)); S56 is NOT declared in LONG
 
+# ── the repair, measured on three forms rather than argued ─────────────────────────────────────────
+#   ⛔ The middle figure is the one this revision was bought by: a two-way test that followed `S23`'s
+#   local wrapper ALSO DROPPED `S55` -- the one entry the hand-written list had right -- because `S55`
+#   runs its receipts as `[sys.executable, os.path.basename(rel)]` with the directory in `cwd`, which
+#   is `S56`'s OWN idiom and carries no `receipts/` string.  Run with that form, `S56` ran `S55`
+#   whole (`1,465` s, plus `S55`'s own six) and the cost became the PRODUCT this section's rule exists
+#   to prevent.  ⇒ *** FOURTEENTH INSTANCE, and it was caught by RUNNING the repair rather than
+#   reasoning about it -- which is exactly what arm ⒝ was registered for, and `r7406`'s rule at its
+#   cheapest. ***
+S56_BEFORE = 424.9        # the landed form: five subprocess runs, 407 s of them
+S56_TWO_WAY = 998         # the BROKEN repair, killed at 998 s and still inside S55
+S56_AFTER = 106           # the three-way form: S29 + S39 + S53 only, exit 0, 0 failing gates
+NEST_AFTER = ('S22_', 'S23_', 'S55_')      # computed; CONTAINS the old hand-written ('S55_',)
+
 A_CENTRAL, A_BAND = 60, (20, 95)
 B_POINT = 0
 C_BOUND = S56_LIMIT / 429.4        # the worse build: two timeouts force at least this factor
@@ -257,7 +271,26 @@ def main():
               f'1.7 is the thing to question rather than any one receipt\'s cost, and that is a '
               f'gate-layer decision rather than this seat\'s.')
 
-    RESULT.update({'A_PCT': pct, 'A_TOTAL': tot, 'A_WORST': worst, 'A_IN_BAND': inband,
+    # ── ⒝ and the repair's three measured forms ─────────────────────────────────────────────────
+    print(f'\n⒝ THE REPAIR, MEASURED ON THREE FORMS -- and gates whose verdict moved: ** 0 **, '
+          f'against point prediction {B_POINT}')
+    print(f'      landed form      {S56_BEFORE:7.1f} s   exit 0, 0 failing gates   headroom '
+          f'{S56_LIMIT / S56_BEFORE:5.2f}x')
+    print(f'      ⛔ two-way form  {S56_TWO_WAY:7.1f} s   KILLED, still inside `S55`  -- the repair '
+          f'that dropped the one entry the hand list had RIGHT')
+    print(f'      three-way form   {S56_AFTER:7.1f} s   exit 0, 0 failing gates   headroom '
+          f'{S56_LIMIT / S56_AFTER:5.2f}x')
+    print(f'    ⇒ ** {S56_BEFORE / S56_AFTER:.2f}x cheaper than the landed form and '
+          f'{S56_TWO_WAY / S56_AFTER:.1f}x cheaper than the broken repair **, with the nesting set '
+          f'{list(NEST_AFTER)} COMPUTED and CONTAINING the old hand-written ('
+          f"'S55_',) rather than contradicting it")
+    print(f'    ⇒ and `S56` now clears the bound that filed it unmeasured: headroom '
+          f'{S56_LIMIT / S56_AFTER:.2f}x against a forced lower bound of {C_BOUND:.2f}x')
+
+    RESULT.update({'B_MOVED': 0, 'B_BEFORE': S56_BEFORE, 'B_TWO_WAY': S56_TWO_WAY,
+                   'B_AFTER': S56_AFTER,
+                   'B_HEADROOM_AFTER': round(S56_LIMIT / S56_AFTER, 2),
+                   'A_PCT': pct, 'A_TOTAL': tot, 'A_WORST': worst, 'A_IN_BAND': inband,
                    'C_BOUND': round(C_BOUND, 2),
                    'D_BELOW': len(below), 'D_IN_BAND': inb,
                    'D_SITES': [(round(h, 2), os.path.basename(r)) for h, r, _w, _l in below],
