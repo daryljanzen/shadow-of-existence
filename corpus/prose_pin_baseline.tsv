@@ -16,6 +16,20 @@
 #   UNADJUDICATED     not yet read.  ** The only bucket that means work, and its count may only FALL. **
 #   DELIBERATE        the author pinned it to the measurement on purpose so a move is looked at.  Not a defect.
 #   PRESENCE-CONTROL  a bare `> 0` / `>= 1` presence check.  Asserts that something is there, not how much.
+#   ⚖ ** THE BOUNDARY BETWEEN THOSE TWO ** -- ruled at `r7413` on a disagreement between two seats who had
+#     read one clause identically and labelled it differently.  *** ASK WHETHER THE ASSERTION FAILS WHEN THE
+#     COUNT MOVES DOWN BY ONE. ***  If it does, the number is part of the claim: `DELIBERATE`.  If the threshold
+#     is the SMALLEST VALUE THE CLAIM ADMITS (`> 0`, `>= 1`), nothing the author could care about fails it and
+#     it asserts only that something is there: `PRESENCE-CONTROL`.
+#     ⌷ ** The DOWNWARD direction is load-bearing and is stated for that reason: ** every floor passes an
+#       upward move, so "does it fail when the count moves" cannot separate the two without a direction.
+#       Measured at `r7414` over the rows where the two could be confused -- a `DELIBERATE` row whose
+#       expression is a bare `>= n` or `> n` with small `n` and no second conjunct: there are `32` of them,
+#       the direction-free reading reclassifies all `32`, and the reading above reclassifies `27` and leaves
+#       the `5` whose threshold is above the minimum (`>= 2` twice, `> 1` twice, `>= 4` once).
+#       ⛔ Those `27` are REPORTED AND NOT RECLASSIFIED HERE: `r7413` ① bounded this to a definition and a
+#       filter, and `27` rows is a pass of its own.  All `53` rows already labelled `PRESENCE-CONTROL` are
+#       this same shape, which is what makes the `27` a systematic mislabelling rather than a boundary case.
 #   SOURCE-PIN        a count in another file's CODE or LEDGER rather than in prose -- the staleness class that
 #                     went red on main at r7095.  Owed a repair unless the author says the count is the claim.
 #   NOT-A-COUNT       the static trace reached a value that is not a count of matches (a coefficient, a ratio).

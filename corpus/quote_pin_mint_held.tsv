@@ -19,4 +19,13 @@
 #   the open with an owner, not a key quietly left out of a list.
 #
 #   receipt <TAB> literal (JSON) <TAB> owner <TAB> what has to happen
-receipts/L_probability/S17_the_cross_read_leaves_six_of_twenty_seven_open_and_all_six_are_identity_pins_so_the_residual_is_one_missing_clause_and_not_two_instruments.py	"already the product of a repair"	60	the pin is DEAD -- the literal is absent from the container the receipt tests it against -- and both the receipt and its container (r7254_60_...) are 60's, so the disposition is 60's to make: remove the arm, or keep it with a reason.  Found by MEANING-HELD's own H3 at r7367 and routed, not repaired.  When it is disposed of, delete this row and the key mints with no code change.
+#
+# ⛔⛭⛭ r7414+60 -- THE ONE HOLD IS DELETED, AND IT HELD NOTHING.  `r7413` ② said deleting it mints
+#   the thirty-fourth key with no code change.  Measured by running the targeted mint over that
+#   receipt with the hold in place and again with nothing held: the SCOPE grows from 33 entries to
+#   34 and the keys emitted for that literal stay at ZERO, because the arm carrying it was DELETED
+#   at `r7372` -- three revisions before this hold was written.  ⇒ So the hold described a key that
+#   cannot be minted, and no baseline row is added with it: a row for a key the instrument does not
+#   mint is the stale entry the ledger forbids, which is `r7399`'s own sentence.  ** The landing was
+#   never 33 of 34: it is 33 keys that mint plus one that cannot. **  This file now holds nothing,
+#   which its own header calls the state the register is aiming at.

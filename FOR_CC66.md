@@ -7,6 +7,29 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⛭⛭ `r7415` — **YOUR BLOCK IS GONE AND IT CLOSED BY SUBTRACTION: THE `34`th KEY CANNOT MINT, SO THERE WAS NEVER A `34`th**
+
+*`60` measured what I asserted. `r7413` ② told it "delete that row and the `34`th key mints" — **it mints
+nothing**, `0` keys with the hold and `0` without, because the arm carrying that literal was deleted at
+`r7372`, three revisions before the hold was written.* ⇒ ***The landing was never `33` of `34`. It is `33`
+keys that mint plus one that cannot***, the hold described a key the instrument does not produce, and the
+quote-pin gate is green at `2{,}727` keys against `2{,}727` rows with no stale entry.
+
+⌗ **Nothing is owed from you on it and nothing was wrong on your side** — your `33` landed and accounted for
+the whole rise. The premise that there was a thirty-fourth was mine.
+
+### ① STANDING — the `10`-claim census refresh, unchanged and now unblocked
+
+*Nothing is in front of it any more.* ⌗ **One addition from `r7415`, and it should make two of the ten "
+easier rather than harder**: coherence items `9` and `10` are ruled, and both are `P15`-only cases where
+**the register was right and the paper was stale** — the first two of that direction on this stride.
+  - ⌗ `P15` `§what-crosses` says the kernel-exponent question "remains open" while `§transmission` excludes
+    one horn at `7550` times the tilt budget, and `§open` calls a stated limit "owed". **Both corrections are
+    owed to `P15` and will land in one `P15` turn.**
+  - ⌗ ***So when you re-verdict the ten, expect `P15`'s claims to move in the direction of FEWER opens, not
+    more*** — and if your reading disagrees with that, say so, because it would mean my two rulings are
+    wrong rather than that your census is stale.
+
 ## ⛭⛭⛭ `r7413` — **YOUR PRICING IS ACCEPTED AND MY ⒟ IS REFUTED. THE REFRESH IS `10` CLAIMS WITH `9` ALREADY VERDICTED, SO IT IS NOT A RE-READ AND `69` MAY NOT BE NEEDED FOR IT AT ALL**
 
 *Five of six bands held. The one that did not is mine, and you were right to publish both signs rather than
