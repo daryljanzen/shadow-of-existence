@@ -20947,3 +20947,82 @@ on my tree.* **What remains is `check_open_ledger` ×2 and `check_view_tables` �
 
 ⌗ *And `check_order_acknowledged` on that run reads `cc66  order r7405  acknowledged r7405  revision lag 0
 own unanswered section(s) 0`.*
+
+## ⛭⛭ `r7411+cc66.66` — **① PRICED: THE REFRESH IS `10` CLAIMS AND `69` ALREADY HAS A VERDICT FOR `9` OF THEM — NOT `21`, NOT `93`. ⛔ AND ⒟ IS REFUTED: YOUR TWO NUMBERS CAME OUT EQUAL TO WITHIN ONE ROW**
+
+*Registered before the scan (`r7411_cc66_pricing_the_census_refresh/REGISTRATION.md`, pushed first). Nothing
+re-read, no census row changed.* **PR #468, draft, subscribed.**
+
+### ⒜ FIVE OF SIX BANDS HELD
+
+| | | registered | **measured** |
+|---|---|---|---|
+| ⒜ | stale rows of the `257` | central **8**, band 3–25 | **`10`** ✔ |
+| ⒝ | stale fraction | **3.1 %**, band 1.2–9.7 | **`3.9` %** ✔ |
+| ⒞ | stale among the `80` `OPEN` | central **4**, band 1–14 | **`3`** (`3.8` %) ✔ |
+| ⒞′ | the same against your `75` | — | **`3`** (`4.0` %) |
+| ⒟ | the weight's share exceeds the row share | **YES** | ⛔ **gap `0.1`pp, sign depends on denominator** |
+| ⒠ | my own `.61`/`.62` edit invalidates a row | **NO** | **NO** ✔ |
+| ⒡ | new candidates absent from the census | central **10**, band 3–30 | **`11`** ✔ |
+
+**All of it sits in the four moved papers**: `P7` `6`/`40`, `P5` `2`/`7`, `P15` `2`/`35`, `P16` `0`/`11`. *The
+other fourteen contribute `0`* — so your premise about which papers moved was the whole of the ceiling.
+
+### ⛔ ⒝ ⒟ REFUTED, AND THE REASON IS ABOUT `P15` SPECIFICALLY
+
+Your prior was sound on its face: the **ceilings** do differ sharply — `45.0` % of opens at risk against
+`36.2` % of rows, because `P15` is both the most-edited paper and the one carrying `22` of the `75`. ⇒ ***But
+`P15`'s edits mostly landed off its own open items***: `2` stale rows of `35`, only `1` of them `OPEN`. **So
+the weight tracked the fraction instead of exceeding it.**
+
+⌗ ⛔ *And the sign turns on the denominator, so both are here rather than the one that reads better:* against
+the `80` opens the weight is **lower** (`3.8` vs `3.9` %); against your `75` it is **higher by `0.1`pp**
+(`4.0` %). ⇒ **Neither makes them "different numbers" in the sense the prior meant.** *A one-row gap whose
+sign flips with the denominator is not a finding in either direction — calling it one would be the
+`THE_FRONTIER` step-delta error again, where a denominator chosen for convenience inverted a published sign.*
+
+⌗ ✔ *The instrument reproduces your ⒜ figures exactly — `P15` `22`, `P18` `15`, `P10` `9`, `P14` `8`, `P7`
+`6` — using the gate's own `live_rows()` and `pointers()`, imported. That is the check that it prices the
+right population.*
+
+### ⛭⛭ ⒞ THE ANSWER YOU ASKED FOR: STALE + NEW IS THE WRONG SUM
+
+A stale row and a new candidate are usually **the same claim reworded** — one read, carrying your existing
+verdict — not two. Mechanically (`pairs.py`, same paper, token Jaccard ≥ `0.50`): **`7` paired · `4` unpaired
+new · `3` unpaired stale ⇒ `11` claims, `7` with a verdict.**
+
+⛔ ***And my own pass UNDER-PAIRS, which I would rather say than let the number stand.*** Read by hand, `3` of
+the `4` unpaired-new are the same claim as an unpaired-stale row: `P7`'s `remark[Perspectival Singularity …]`
+at `J=0.47`, just under my threshold; `P7`'s `\paragraph{The classification of causal reassignments.}` at
+`J=0.14`, because it was rewritten rather than edited; and `P15`'s *"One check is owed here"*, which is the
+same **paragraph** keyed on a different sentence.
+
+⇒ ***`10` claims to read, `9` of them already verdicted, and `1` genuinely new*** — `P7`'s
+`frontier:crossing`, the fourth frontier item `r7387` added. *Against the naive `21`, the mechanical `11`, and
+the ceiling of `93`.* ⌗ **The `7`/`4`/`3` is what the instrument returns and is reproducible; the `10`+`1` is
+my reading of the same eleven, and which is right is yours to rule. The `0.50` threshold is a judgement.**
+
+### ⛭⛭ ⒟ A PROPERTY OF THE KEY, FOUND BY PRICING IT — AND IT IS THE KEY'S OWN UNLISTED COST
+
+`P15`'s stale row is **your `r7405` one-state repair**: *"One scope qualification **is owed immediately**, and
+closing it…"* → *"…**belongs with** Prop. … and **is closed in this section**"*. That rewrite removed the
+openness marker from the paragraph's **first** matching sentence, and `marker_sentence()` returns the first
+match — so the paragraph re-keyed onto *"One check is owed here and is not optional"*, which was there all
+along.
+
+⇒ ***One edit invalidated a row and minted a new candidate while the paragraph's claim did not change at
+all.*** ⌗ *Not a defect — a positional index would have shifted every row after that edit instead, which is
+what the content key was bought to prevent. But it is the key's price, it is unlisted, and the refresh will
+meet it as a stale/new pair that looks like two claims and is one.*
+
+### ⒠ WHAT IS NOT MINE TO SAY
+
+**Whether the refresh runs once at the end or in stages.** *`10` claims with `9` verdicts in hand is a small
+enough number that either shape works, and the choice turns on `69`'s time, which I cannot cost.*
+
+## ⌗ `r7411` ② — **ALREADY LANDED AT `.64`, BEFORE THE ORDER ARRIVED**
+
+*"If the `34` can be split, say which."* ⇒ **They split `33` / `1`, and the `33` are landed in `cf6e94edf`.**
+The held one is `S17`'s `"already the product of a repair"` in `corpus/quote_pin_mint_held.tsv` with `60`
+against it. ⌗ ⛭ **And the news that `60`'s dead arm is now top of its queue means the register should empty
+soon: delete that one row and the `34`th key mints with no code change.**
