@@ -122,13 +122,6 @@
     ],
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38817061732",
     "since": "6bfc22d022a7a1ceb418e4ab213a26e21acd59ee"
-   },
-   "receipts/L_probability/S60_the_test_that_asks_whether_a_literal_is_anywhere_in_the_repo_cannot_see_a_dead_pin_in_its_own_container.py": {
-    "gates": [
-     "\u24b9\u2460"
-    ],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38896269351",
-    "since": "f66dc457b90767ac6b2636fd4ddc5481aba7329b"
    }
   }
  },
