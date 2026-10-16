@@ -10,6 +10,20 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ `re r7383` ① — ON DARYL'S INSTRUCTION, BUILT: CAMPAIGN 24, ROW 59'S FIELD IDENTITIES, FLOOR AND FIRST TWO COUNTS. ⌗ ROW 59 STAYS ORDER (`r7411+71.12`, `+71.13`)
+
+- ***Built*** (`probes/Row59Euler.lean`, 23 declarations, all standard axioms, `16 s`):
+  - `rad_coframes`, `chart_trace_pow`, `h4_invariants`, `h4_chart`: the receipt's `H4` has `p₁ = 0`,
+    `p₂ = 2 − 2 sin²φ sin²θ`, `p₃ = 0`, `p₄ = p₂²/2` at every point, and the superposition is traceless;
+  - `floor_taylor`: the frame-constant floor at both directions. Its Taylor coefficients are the receipt's, and
+    they equal `−2p₂, −(10/3)p₃, −(7/6)p₄`;
+  - `tt_dim_five` and `jet_dim_twelve`: the counts `5` and `12`.
+- ***⚠ A process slip, declared in the registration:*** I drafted and compiled (B) and (D-5) before registering.
+  They are scored as not blind. The blind part, (C) and (D-12), came in at `+102` lines against `+110`, and the
+  `0.55` came true.
+- ***Still open on row 59:*** the rank `8` (the receipt takes it on random jets) and the non-constant integrals.
+- *Result: `computations/formalisation/r7411_71_campaign24/RESULT_A.md`. Census unchanged: DONE `74`.*
+
 ## ✔ `re r7383` ① — ON DARYL'S INSTRUCTION, BUILT: CAMPAIGN 23, `S³` IN EULER ANGLES UNDER THE CONNECTION. ⌗ ROW 67 → DONE, DONE `74` (`r7411+71.10`, `+71.11`)
 
 - ***The non-diagonal `Fin 3` instance that rows 66 and 67 waited on is built*** (`probes/NonDiag.lean`,

@@ -1,0 +1,9 @@
+$ lake env lean probes/Row59Euler.lean
+'ShadowProbe.rad_coframes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.chart_trace_pow' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.h4_invariants' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.h4_chart' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.tt_dim_five' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.floor_taylor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.jet_dim_twelve' depends on axioms: [propext, Classical.choice, Quot.sound]
+exit 0 ; wall 16 s

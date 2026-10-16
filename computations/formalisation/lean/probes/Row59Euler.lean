@@ -147,6 +147,106 @@ theorem tt_dim_five :
     ext i j
     fin_cases i <;> fin_cases j <;> simp [ttB] <;> linarith [s 0 1, s 0 2, s 1 2]
 
+/-! ### (C) The frame-constant floor -/
+
+/-- Milnor's scalar curvature of the left-invariant metric with frame eigenvalues `λ` on the unit-`S³` frame
+(`milnor_scalar`, campaign 21; probes do not import each other, so here it is the definition). -/
+noncomputable def milR (l1 l2 l3 : ℝ) : ℝ := 2 * (4 * (l1 * l2 + l1 * l3 + l2 * l3) - (l1 + l2 + l3) ^ 2) / (l1 * l2 * l3)
+
+/-- An exponential sum and its derivatives: `dⁿ/dεⁿ Σ aₖ e^{cₖε} = Σ aₖ cₖⁿ e^{cₖε}`. -/
+lemma iter_expsum {m : ℕ} (a c : Fin m → ℝ) (n : ℕ) :
+    iteratedDeriv n (fun x => ∑ k, a k * Real.exp (c k * x)) = fun x => ∑ k, a k * c k ^ n * Real.exp (c k * x) := by
+  induction n with
+  | zero => simp
+  | succ n ih =>
+    rw [iteratedDeriv_succ, ih]
+    funext x
+    refine (HasDerivAt.fun_sum (u := Finset.univ) fun k _ =>
+      (((hasDerivAt_id x).const_mul (c k)).exp.const_mul (a k * c k ^ n))).deriv.trans ?_
+    refine Finset.sum_congr rfl fun k _ => ?_
+    simp only [id]; ring
+
+lemma expsum_at_zero {m : ℕ} (a c : Fin m → ℝ) (n : ℕ) :
+    iteratedDeriv n (fun x => ∑ k, a k * Real.exp (c k * x)) 0 = ∑ k, a k * c k ^ n := by
+  rw [iter_expsum]; simp
+
+/-- **`H = diag(1, −1, 0)`:** `R(ε) = 2(1 + 2e^ε + 2e^{−ε} − e^{2ε} − e^{−2ε})`. -/
+theorem floorA_closed (ε : ℝ) : milR (Real.exp ε) (Real.exp (-ε)) (Real.exp 0)
+    = 2 + 4 * Real.exp ε + 4 * Real.exp (-ε) - 2 * Real.exp (2 * ε) - 2 * Real.exp (-2 * ε) := by
+  have h1 : Real.exp (-ε) = (Real.exp ε)⁻¹ := Real.exp_neg ε
+  have h2 : Real.exp (2 * ε) = Real.exp ε ^ 2 := by rw [← Real.exp_nat_mul]; norm_num
+  have h3 : Real.exp (-2 * ε) = (Real.exp ε ^ 2)⁻¹ := by
+    rw [show -2 * ε = -(2 * ε) by ring, Real.exp_neg, h2]
+  have hx := Real.exp_pos ε
+  rw [milR, Real.exp_zero, h1, h2, h3]
+  field_simp
+  ring
+
+/-- **`H = diag(1, 1, −2)`:** `R(ε) = 2(4e^{−ε} − e^{−4ε})`. -/
+theorem floorB_closed (ε : ℝ) : milR (Real.exp ε) (Real.exp ε) (Real.exp (-2 * ε))
+    = 8 * Real.exp (-ε) - 2 * Real.exp (-4 * ε) := by
+  have h1 : Real.exp (-ε) = (Real.exp ε)⁻¹ := Real.exp_neg ε
+  have h2 : Real.exp (-2 * ε) = (Real.exp ε ^ 2)⁻¹ := by
+    rw [show -2 * ε = -(2 * ε) by ring, Real.exp_neg, ← Real.exp_nat_mul]; norm_num
+  have h4 : Real.exp (-4 * ε) = (Real.exp ε ^ 4)⁻¹ := by
+    rw [show -4 * ε = -(4 * ε) by ring, Real.exp_neg, ← Real.exp_nat_mul]; norm_num
+  have hx := Real.exp_pos ε
+  rw [milR, h1, h2, h4]
+  field_simp
+  ring
+
+lemma floorA_sum : (fun ε => milR (Real.exp ε) (Real.exp (-ε)) (Real.exp 0))
+    = fun x => ∑ k : Fin 5, ![2, 4, 4, -2, -2] k * Real.exp (![0, 1, -1, 2, -2] k * x) := by
+  funext x; rw [floorA_closed]; simp [Fin.sum_univ_five]; ring_nf
+
+lemma floorB_sum : (fun ε => milR (Real.exp ε) (Real.exp ε) (Real.exp (-2 * ε)))
+    = fun x => ∑ k : Fin 2, ![8, -2] k * Real.exp (![-1, -4] k * x) := by
+  funext x; rw [floorB_closed]; simp [Fin.sum_univ_two]; ring_nf
+
+/-- **Row 59 (C), the floor.** The Taylor coefficients `R⁽ⁿ⁾(0)/n!` at `n = 0..4` are `6, 0, −4, 0, −7/3` and
+`6, 0, −12, 20, −21`; times the volume `2π²` they are the receipt's `[12, 0, −8, 0, −14/3]π²` and
+`[12, 0, −24, 40, −42]π²`. They are `6 − 2p₂ε² − (10/3)p₃ε³ − (7/6)p₄ε⁴` at `(p₂, p₃, p₄) = (2, 0, 2)` and
+`(6, −6, 18)`, and on both `(7/6)p₄ = (7/12)p₂²`. -/
+theorem floor_taylor :
+    (∀ n : Fin 5, iteratedDeriv n (fun ε => milR (Real.exp ε) (Real.exp (-ε)) (Real.exp 0)) 0 / (n : ℕ).factorial
+        = ![6, 0, -4, 0, -7 / 3] n) ∧
+      (∀ n : Fin 5, iteratedDeriv n (fun ε => milR (Real.exp ε) (Real.exp ε) (Real.exp (-2 * ε))) 0 / (n : ℕ).factorial
+        = ![6, 0, -12, 20, -21] n) ∧
+      (![6, 0, -4, 0, -7 / 3] : Fin 5 → ℝ) = ![6, 0, -2 * 2, -(10 / 3) * 0, -(7 / 6) * 2] ∧
+      (![6, 0, -12, 20, -21] : Fin 5 → ℝ) = ![6, 0, -2 * 6, -(10 / 3) * (-6), -(7 / 6) * 18] ∧
+      (7 / 6 : ℝ) * 2 = 7 / 12 * 2 ^ 2 ∧ (7 / 6 : ℝ) * 18 = 7 / 12 * 6 ^ 2 := by
+  refine ⟨fun n => ?_, fun n => ?_, by norm_num, by norm_num, by norm_num, by norm_num⟩
+  · rw [floorA_sum, expsum_at_zero]
+    fin_cases n <;> simp [Fin.sum_univ_five, Nat.factorial] <;> norm_num
+  · rw [floorB_sum, expsum_at_zero]
+    fin_cases n <;> simp [Fin.sum_univ_two, Nat.factorial] <;> norm_num
+
+/-! ### (D-12) The admissible one-jet -/
+
+/-- The symmetric index pairs `(r ≤ s)`: `00, 01, 02, 11, 12, 22`. -/
+def pr6 : Fin 3 → Fin 3 → Fin 6 := ![![0, 1, 2], ![1, 3, 4], ![2, 4, 5]]
+
+/-- The constraints on a one-jet `v p (r s)`: traceless in `(r, s)` for each `p`, and divergence-free. -/
+noncomputable def jetCons : (Fin 3 → Fin 6 → ℝ) →ₗ[ℝ] (Fin 6 → ℝ) where
+  toFun v := ![v 0 0 + v 0 3 + v 0 5, v 1 0 + v 1 3 + v 1 5, v 2 0 + v 2 3 + v 2 5,
+    ∑ p, v p (pr6 p 0), ∑ p, v p (pr6 p 1), ∑ p, v p (pr6 p 2)]
+  map_add' v w := by ext i; fin_cases i <;> simp [Fin.sum_univ_three] <;> ring
+  map_smul' c v := by ext i; fin_cases i <;> simp [Fin.sum_univ_three] <;> ring
+
+lemma jetCons_surj : Function.Surjective jetCons := by
+  intro w
+  refine ⟨![![0, w 4, w 5, w 0, 0, 0], ![w 1, w 3, 0, 0, 0, 0], ![w 2, 0, 0, 0, 0, 0]], ?_⟩
+  ext i; fin_cases i <;> simp [jetCons, pr6, Fin.sum_univ_three]
+
+/-- **Row 59 (D), the second count.** The admissible one-jets (`18` coordinates, `6` independent constraints)
+form a space of dimension `12`. -/
+theorem jet_dim_twelve : Module.finrank ℝ (LinearMap.ker jetCons) = 12 := by
+  have h := LinearMap.finrank_range_add_finrank_ker jetCons
+  have h18 : Module.finrank ℝ (Fin 3 → Fin 6 → ℝ) = 18 := by rw [Module.finrank_pi_fintype]; simp
+  rw [LinearMap.range_eq_top.2 jetCons_surj, finrank_top, h18] at h
+  simp at h
+  omega
+
 end Row59Euler
 
 end ShadowProbe
@@ -156,3 +256,5 @@ end ShadowProbe
 #print axioms ShadowProbe.h4_invariants
 #print axioms ShadowProbe.h4_chart
 #print axioms ShadowProbe.tt_dim_five
+#print axioms ShadowProbe.floor_taylor
+#print axioms ShadowProbe.jet_dim_twelve
