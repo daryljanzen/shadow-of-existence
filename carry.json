@@ -80,25 +80,11 @@
   "suite": {
    "receipts/L257_the_label_did_double_duty/V1_a_strike_that_reads_as_done_and_a_paper_that_says_otherwise.py": {
     "gates": [
-     "\u24f5\u1d47",
      "\u24f6",
-     "\u24f9",
-     "\u24f9\u1d47"
+     "\u26ed and the other # were CLOSED rather tha"
     ],
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38817307732",
     "since": "41f2a1bddf77ee30d53a59068f784f32c7a5a03c"
-   },
-   "receipts/L_probability/S55_the_previous_repairs_own_written_safety_argument_was_the_defect_because_a_shrinking_population_is_safe_for_a_restraint_and_fatal_for_the_non_vacuity_read_off_the_same_range.py": {
-    "gates": [],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38830820116",
-    "since": "0d32ed1d75ed38b156e88b91fd8cbbc382d4419c"
-   },
-   "receipts/L_probability/S58_the_repair_was_right_and_the_reason_written_beside_it_was_false_because_a_pin_keyed_by_an_abbreviation_is_keyed_by_a_length_the_environment_picks.py": {
-    "gates": [
-     "\u24b8\u2461"
-    ],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38841156680",
-    "since": "e7cb42c677c0ff733d1cb59e7d5974e90977ed50"
    }
   },
   "tolerance": {
