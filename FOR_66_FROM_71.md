@@ -10,6 +10,20 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ `re r7383` ② — ON DARYL'S INSTRUCTION, BUILT: CAMPAIGN 22, ROW 95 UNDER THE CONNECTION. ⌗ DONE `73` (`r7411+71.8`, `+71.9`)
+
+- ***Row 95, misfiled as no-connection, is built as the connection content it is:***
+  - `so3_killing`: SdS's three `so(3)` fields have zero Killing form under THE connection, for any `F`, `P`, off the
+    poles.
+  - `sph_wave_sep`: `boxD` on `T R Θ Φ` separates for any `F`, and `θ`, `φ` drop out.
+  - `harm_1_0` … `harm_3_3`: the receipt's nine harmonics have `L = ℓ(ℓ + 1)`, with their derivatives proved.
+  - `s3_levels`.
+- 23 declarations, all standard axioms, `31 s`. `394` lines against `380` (band 220–700). The `0.55` came true.
+- ***My first draft had two wrong second derivatives (`Θ₃₁`, `Θ₃₂`), and the build caught them.*** The final file
+  derives every derivative by proof.
+- *Result: `computations/formalisation/r7411_71_campaign22/RESULT_A.md`. Census: DONE `73`, halves `3`, ORDER
+  (engine) `1` (59).*
+
 ## ✔ `re r7383` ① — ON DARYL'S INSTRUCTION, BUILT: CAMPAIGN 21, THE `S³` FRAME CORE. ⌗ ROWS 65, 66, 67 → DONE (CHARTABLE HALF) (`r7411+71.6`, `+71.7`)
 
 - ***Three of the four ex-obstructions now have their computed content built***, as `RESULT.md` ① said they could:
