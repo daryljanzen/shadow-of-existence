@@ -1,0 +1,30 @@
+# r7404 (60) -- the name, verified at HEAD 641ffabea33f
+# the instrument the arms run: computations/beyond_the_wall/ACOUSTIC_two_arm.py
+
+# ① LIVE KNOB in the instrument
+#    WBH2      occurrences  4, `os.environ.get` reads 2
+#    CROMBH2   occurrences  0, `os.environ.get` reads 0
+#    ⇒ the canonical name is read 2 time(s) and the deprecated name 0.
+#      ⛔ SO THE PREMISE "both names are in the tree right now" IS TRUE OF PROSE AND FALSE OF
+#        THE INSTRUMENT: there is one knob, and it already carries the ruled name.
+
+# ② every remaining occurrence of CROMBH2, by file and role
+#      1  knob=0  asserted=0  PROSE / HISTORY   CORPUS_MAP.md
+#      5  knob=0  asserted=0  PROSE / HISTORY   FOR_60.md
+#      1  knob=0  asserted=0  PROSE / HISTORY   FOR_64.md
+#      3  knob=0  asserted=0  PROSE / HISTORY   FOR_66_FROM_60.md
+#      2  knob=0  asserted=0  PROSE / HISTORY   THE_REGISTER.md
+#      1  knob=0  asserted=0  PROSE / HISTORY   corpus/appendix_receipts_P15.tex
+#      1  knob=0  asserted=0  PROSE / HISTORY   corpus/appendix_receipts_corpus.tex
+#      1  knob=0  asserted=0  PROSE / HISTORY   receipts/INDEX.md
+#      2  knob=0  asserted=0  PROSE / HISTORY   receipts/P15_CR_cosmology/P15_the_crossing_spectrum_reproduces_on_a_second_instrument_and_the_172_is_the_radiation_free_ruler.py
+#      9  knob=0  asserted=1  ASSERTED ABSENT   receipts/P15_CR_cosmology/P15_the_likelihood_pair_is_another_instruments_and_the_crossing_run_needed_a_missing_knob.py
+#      1  knob=0  asserted=0  PROSE / HISTORY   scripts/regen_frontier.py
+#    ⇒ 0 file(s) read it as a knob; 1 assert its ABSENCE; the rest record the decision.
+
+# ③ the landed gate: "'CROMBH2' not in INSTR" in P15_the_likelihood_pair_is_another_instruments_and_the_cross: True
+#    and the canonical read it asserts: "OMBH2 = float(os.environ.get('WBH2', OMBH2))" in _CRBLK -> True
+#    ⇒ ⛔ RE-EXPOSING THE DEPRECATED NAME AS AN ALIAS WOULD TURN THAT CHECK RED, and the check
+#      is this seat's, landed, and asserts exactly what the earlier ruling decided:
+#      r6786 (FOR_60 ①) ruled the name "dropped, NOT aliased".  So the two rulings disagree,
+#      and the disagreement is the finding rather than the edit.

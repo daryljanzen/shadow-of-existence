@@ -16924,3 +16924,52 @@ the same notation.* ⇒ **A guessed normaliser moved a verdict from SATISFIED to
 have manufactured a finding about another revision.** *That is `r7367` ④'s remedy — every field from the
 instrument that owns it — paying for itself inside a single revision, and it is the same shape as the
 label question you asked at `r7401`: I substituted my own summary of a thing for the thing.*
+
+## ⛭⛭ `r7404` — **YOUR `r7403` ② IS ANSWERED BY AGREEING WITH ITS CONCLUSION AND CORRECTING ITS PREMISE: `WBH2` IS ALREADY THE ONLY KNOB, AND THE ALIAS YOU ASK FOR WOULD RED A LANDED GATE AND REVERSE YOUR OWN `r6786`**
+
+*Verified at `HEAD` `641ffabe`;
+`computations/beyond_the_wall/r7404_60_the_name_was_already_ruled_and_an_alias_would_red_a_landed_gate/`
+carries the pass and its output. ⛔ Stated as a VERIFICATION and not a scored revision: nothing here was
+unknown enough to band, and dressing a grep as a prediction would be the theatre this line keeps
+charging other people for.*
+
+### ⒜ THE RULED NAME IS THE ONE THE INSTRUMENT ALREADY USES — SO THE RULING IS RIGHT AND COSTS NOTHING
+
+In `computations/beyond_the_wall/ACOUSTIC_two_arm.py`, the instrument both arms actually run:
+
+| | occurrences | `os.environ.get` reads |
+|---|---|---|
+| `WBH2` | `4` | **`2`** — one per arm |
+| `CROMBH2` | **`0`** | **`0`** |
+
+⇒ ***There is one knob and it already carries the name you rule for.*** **So your premise — *both names
+are in the tree right now* — is true of the PROSE and false of the INSTRUMENT.** *That matters because
+the ruling's whole justification is a count of readers, and the counts it rests on are counts of
+mentions: of the eleven remaining occurrences of `CROMBH2` in two `P15` receipts, `0` read it as a knob.*
+
+### ⛔ ⒝ AND THE FORM YOU SPECIFY CANNOT BE IMPLEMENTED AS IT STANDS, BECAUSE A LANDED GATE ASSERTS THE DEPRECATED NAME'S ABSENCE
+
+`P15_the_likelihood_pair_…`'s check asserts, in as many words, `'CROMBH2' not in INSTR` beside
+`"OMBH2 = float(os.environ.get('WBH2', OMBH2))" in _CRBLK`. ⇒ **Re-exposing `CROMBH2` as a deprecated
+alias would turn that check red.** ⌗ *And the check is not arbitrary: it encodes the earlier ruling in
+this same channel —* **`r6786` (`FOR_60` ①) decided the name "dropped, NOT aliased"** *— so `r7403` ②
+reverses `r6786` on the same question.* ⇒ ***The two rulings disagree, and the disagreement is the
+finding rather than the edit.***
+
+### ⒞ SO HERE IS THE DISPOSITION, AND IT IS THIS SEAT'S TO MAKE BECAUSE IT IS A NO-OP PLUS A CORRECTION
+
+**Nothing is renamed and no alias is added.** *Your conclusion is already the state of the tree, your
+stated goal is already met — **no banked run can stop reproducing on a knob that was never in `main`'s
+instrument** — and the only edit the ruling's letter would require is one that reds a gate of this
+seat's and overturns a ruling of yours.*
+
+⌗ **If you want the alias anyway, say so and it is mine to do, in this order:** re-aim the landed check
+first — from *the deprecated name is absent* to *the canonical name is the one the arms read, and any
+alias defaults to it* — and only then expose the alias, so no revision passes through a red. **I will not
+do that on my own initiative**, because it would trade a gate that asserts a decision for one that
+asserts its reversal, on a question that is yours.
+
+⌗ *And on `r7403` ①: the rule is recorded as you state it, guard included, and I will apply it as a
+standing rule rather than cite it as mine. ⌗ The guard earned its keep inside the same revision it was
+written in — `r7402`'s first pinned run returned `3` instead of `11` because I used my own normaliser
+instead of the table that owns the question, which is the same substitution of a summary for the thing.*
