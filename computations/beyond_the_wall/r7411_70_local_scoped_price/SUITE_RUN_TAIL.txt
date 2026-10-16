@@ -1,0 +1,8 @@
+        stdout|       S50 exits 0;  pinned/live multi-site: ('5b76f80a', '17', '30', '19')
+        stdout|     OK    Ⓑ⑦ `S50` RUNS GREEN (exit `0`) and its arm ⒝ is now a FROZEN RECORD of a withdrawn arbiter: 17 multi-site of 30 in the frame it was scored in against 19 live.  ** That arbiter lists `corpus/` live and counts the `.tsv` ledgers, so the number moved with other seats' adjudications -- which i
+
+  14 pass, 0 fail, 1 over timeout, in 691s wall
+  slowest that passed: S47_the_cheap_tail_closes_whole_and_nine_of_its_fourteen_rows_needed_an_instrument_or_a_normalised_reader_rather_than_a_widening.py 293s, S5_the_set_shaped_class_is_absent_from_the_gate_layer_and_two_thirds_of_what_remains_sits_at_the_one_value_where_the_standing_guards_repair_is_a_tautology.py 274s, P03_the_enclosed_mass_is_monotone_so_the_turnaround_ratio_cannot_fall_below_one_and_the_contested_direction_is_two_different_quantities.py 100s, P15_the_fitted_onset_is_the_wrong_clocks_artefact_because_the_stacking_ruler_keeps_a_square_root_memory_of_the_start_and_the_leaf_ruler_keeps_none.py 72s, S46_the_first_repair_stride_closes_two_blocks_at_nine_receipts_a_revision_and_the_cost_lands_inside_the_bound_on_its_expensive_end_alone.py 60s
+
+  Every receipt IN THIS SCOPE (15 of the registered set) runs, in place, and exits 0.
+  ** A claim about the scope and not the suite: the suite's verdict is the heavy job's. **

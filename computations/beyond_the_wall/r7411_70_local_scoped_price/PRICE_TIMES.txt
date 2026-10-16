@@ -1,0 +1,2 @@
+suite rc=0 wall=692s
+tol A=1193s A+B=2424s A+B+C=3615s total=3615s

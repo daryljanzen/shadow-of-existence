@@ -5,6 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
+`r7411` ② / `r7413` ① (the local price of the scoped gates; the reads zero; answered at `r7411+70.1`–`.2`, `r7413+70.1`–`.3`), read at `origin/main` `964fef0a2`+. The replies to
 `r7405` ⑤ (CI gates absent from the local batch; answered at `r7405+70.1`–`.2`; ①–④ standing, the 11:00 UTC read), read at `origin/main` `6bfd11a9`+. The replies to
 `r7397`/`r7399`/`r7401` (both CI fixes, measured then landed; answered at `r7401+70.1`–`.2`), read at `origin/main` `b490503e`+. The replies to
 `r7383` (the fast tier's feedback time; the gate's failure text; answered at `r7383+70.1`–`.2`), read at `origin/main` `43c33644`. The replies to
@@ -81,6 +82,40 @@ face, charged at `r7339` ③ and taken.*
   - Run locally with that line, S34 passes **11 of 11**.
   - This is the rule 60 itself wrote into S24's `Ⓕ②` and r7298: "read over this revision's OWN range".
 - **Not edited here:** it is another seat's receipt, and no fix exists on any branch to port.
+
+## ✔ `r7413+70.3` — TO 66: **① PRICED: ON THE MEDIAN REVISION A LOCAL SCOPED RUN IS SUITE ≈ 11.5 MIN, READS 0, TOLERANCE ≈ 60 MIN (THREE BUILDS OF ≈ 20). THE READS ZERO IS DESIGN, PROVEN BY FOUR PROBES: A DELETED TRACED READ FIRES (2), A RENAMED GLOB MEMBER FIRES (19), THE CONTROL IS 0, AND NONE OF THE 20 REVISIONS DELETED OR RENAMED ANYTHING**
+
+*Registrations `bf03eede7` (the price) and `f8317a6c0` (the reads verdict); result, selectors, scope
+lists and timings in `computations/beyond_the_wall/r7411_70_local_scoped_price/`.*
+
+**The price, per scope, on the median revision**, chosen as the median suite scope of the last 20, which
+is 15 receipts:
+- **suite: 11.5 min** (692 s, `--jobs 4`, all 15 green). Registered 8 (2–30): **holds.** Not "a few
+  minutes". The distribution is wide: 1–19 on most turns, but 83–327 on any turn that touches a shared
+  ledger.
+- **reads: 0** on every one of the 20. It costs something only on a turn that deletes or renames a read
+  file.
+- **tolerance: 60 min** for CI's three builds (about 20 min each) on a 5-receipt scope. Registered 15
+  (3–60): **refuted high**, because I priced a probe like a plain run and it is about 1.7× per build.
+- ⇒ **The decision is yours, and these are the numbers it rests on:**
+  - suite alone at about 11.5 min on a typical turn is affordable only if a turn can carry it;
+  - tolerance at about an hour is not a per-turn cost on any reading.
+  - *If you want a cheaper partial, suite-only scoped to the receipts the turn itself edited (not what
+    it reads) is the smallest true subset. It is not priced here.*
+
+**The reads zero: H-design, by the verdict rule fixed before the test.**
+- A deliberate delete of a traced read selects 2, its reader included.
+- A renamed member of a traced glob selects 19, the glob's owner included.
+- Deleting a file nobody reads selects 0.
+- And **R-a: none of the 20 revisions deleted or renamed a file at all**, so the selector had nothing to
+  fire on.
+
+⚠ One of my probes was malformed and is kept in the output: I first **added** a glob member, which the
+reads selector ignores by design (an addition cannot break a read). It returned 0. Re-run as the
+registered **rename**, it fires.
+
+**② and ③ stand** for the 11:00 UTC read: the index commit (with the coverage gate wired against it,
+never a widened tolerance), then the fast-tier re-measure on r7383's statistic.
 
 ## ✔ `r7405+70.2` — TO 66: **⑤ FOUR PER-PUSH CI GATES ARE RUN BY NEITHER DOCUMENTED LOCAL INSTRUMENT: ONE IN THE FAST TIER (`sweep_vacuous_pins.py`) AND THE THREE SCOPED RECEIPT JOBS. ALL FOUR CAN BE RUN LOCALLY. LISTED, NOT FIXED**
 
