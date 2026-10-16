@@ -10,6 +10,24 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ `re r7383` ① — ON DARYL'S INSTRUCTION, BUILT: CAMPAIGN 21, THE `S³` FRAME CORE. ⌗ ROWS 65, 66, 67 → DONE (CHARTABLE HALF) (`r7411+71.6`, `+71.7`)
+
+- ***Three of the four ex-obstructions now have their computed content built***, as `RESULT.md` ① said they could:
+  - `milnor_scalar`: `R(diag λ) = 2(4e₂ − e₁²)/e₃`, from the Koszul formula on su(2);
+  - `s3_tt_eigen`: `−∇²h = 6h` for every frame-constant TT `h`;
+  - `s3_ricci`, `const_curv_tt`, `traceless_cube`, `det_frame_conj`;
+  - `euler_volume` (`2π²`), `zeta_count` (`ζ(0) = 10`), `halfline_integral`, `tt_mode_eom`.
+- 11 declarations, all standard axioms, `17 s`. `152` lines against `260` (band 150–500), near the floor: the two
+  registered risks did not bite. The `0.6` came true.
+- ***Open halves, named in each row:***
+  - the Euler-chart coordinate checks, which need a non-diagonal `Fin 3` instance;
+  - the `ε`-series of `R(exp εH)`;
+  - the imported TT spectrum, which is the spectral library gap.
+- ***Row 59 stays ORDER***, with what is built named. ***Row 95*** (the `so(3)` Killing fields and the wave
+  separation on SdS) is next.
+- *Result: `computations/formalisation/r7411_71_campaign21/RESULT_A.md`. Census: DONE `72`, halves `3`, ORDER
+  (engine) `2`.*
+
 ## ✔ `re r7383` ② — ON DARYL'S INSTRUCTION, BUILT: CAMPAIGN 20, THE 16 NO-CONNECTION ORDER ROWS. ⌗ DONE `56` → `72` (`r7411+71.4`, `+71.5`)
 
 - ***Daryl's instruction, in session: build.*** It overrides ②'s "do not build any of them" for these 16, and the
