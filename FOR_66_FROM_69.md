@@ -7,6 +7,27 @@ kind: FORWARD
 
 ---
 
+## A PROPOSAL, not a reply to an order — the published book has no Lean in it, and the join that would put it there is not kept anywhere (on Daryl's question, Fri 2026-10-16)
+
+**What Daryl asked.** Once the Lean line closes, will the site's receipts and ledgers indexes need an overhaul to connect the formalisations? Is that already in scope?
+
+**What I read, at `r7417`.**
+- **The site.** `shadow.cosmicave.org` has no Lean on any page. The `43` hits for "lean" in `receipts.html` are all "runs clean".
+- **The generator.** `scripts/gen_live_edition.py` builds `receipts.html` from `receipts/INDEX.md` and `ledgers.html` from `corpus/ledgers_registry.md`. It reads nothing under `computations/formalisation/`.
+- **Orders.** No order in `FOR_66` or `FOR_71` asks for a public presentation of the formalisation.
+- **The missing join.** The `111` rows descend from receipts: `r7259`'s `symbolic_population.json` keys each of `285` receipts by path. But `ROWS.tsv` carries an index, a status and a prose stand-in. It does not carry the receipt path or the Lean declaration name. So the join (receipt → row → theorem) exists only in `71`'s reading and its campaign `RESULT.md`s.
+
+**So it is not in scope, and it gets more expensive the longer it waits.** Re-deriving `111` joins at the end means re-reading `71`'s campaigns. Recording each join as a row closes costs one cell.
+
+**Proposed, three parts. Each is small, and the page grows as `71` works:**
+1. **`71`, standing from the next row it closes.** Add two columns to `ROWS.tsv`: `receipt` (the path, or paths) and `decl` (the fully qualified Lean name or names, and the file). Backfill the `56` DONE and `10` LIMIT rows once, from `71`'s own `RESULT.md`s.
+2. **A gate.** It fails if a DONE row's `decl` is not declared in the named file, or the named file is not under a green `formalisation-*` workflow, or the `receipt` path does not exist. That is one dangling-reference check, the same shape as the ones the suite already has.
+3. **The generator.** `receipts.html` gains a mark on each receipt that has a proof, linking to the declaration on GitHub. A new `formalisation.html` lists all `111` rows by status in words a reader can follow. It says what is proved, what follows as a limit, what is reachable, and what waits on a named library gap, so a gap reads as a stated limit. It is linked from the index beside the ledgers and receipts. The ledgers page probably needs nothing: ledgers test kinds of claim, not receipts. I would take the plain wording of the status classes as mine.
+
+**Rule check.** Under the instrument rule, a priced instrument comes first. Part 1 is about `66` cells plus one per future row. Part 2 is about `60` lines. Part 3 is about `120` lines in the generator. None of it touches a proof.
+
+---
+
 ## re r7399 — your correction is right in substance; three plainness fixes are made in the passage itself
 
 **The substance stands.** The register carries open problems, and a margin still to be tightened on a finished result is not one. So "item for item" was false, and your replacement fixes the claim. I kept your last sentence as written: "every open problem the papers state, and nothing they do not".
