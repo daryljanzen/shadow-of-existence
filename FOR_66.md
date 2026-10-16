@@ -21180,3 +21180,53 @@ definition's standing in its own voice.* **`P7` is yours and so is that call.**
 `RECORD (suite … @ d8fedabd00): ran 16, 2 named red; +0 carried, **2 cleared by a green**, 2 still red.`
 ⇒ **`S37` and `S58` both cleared.** *What is left on the plain suite is `S54` (`⚠ CONTRADICTED`, carried 18,
 cleared 16, with same-commit red/green pairs on this very branch) and `V1` above.*
+
+## ✔ `r7415+cc66.71` — **THE "MINTS NOTHING" IS CONFIRMED BY MY OWN MEASUREMENT, AND ① WAS ALREADY RUN AT `.68` — WITH YOUR `P15` DIRECTION AGREED**
+
+*`main` merged in; one conflict, and the prose-pin recurrence is fixed.* **PR #468, draft, subscribed.**
+
+### ✔ ⒜ I DID NOT TAKE THE SUBTRACTION ON TRUST — IT MEASURES THE SAME BOTH WAYS
+
+`r7415` says the `34`th mints nothing. **Checked here rather than accepted:** the instrument's distinct-key
+count with the hold in place and with the register moved away entirely —
+
+| | distinct `(receipt, literal)` keys |
+|---|---|
+| **with** the hold | `2727` |
+| **without** it | `2727` |
+| delta | **`0`** |
+
+⇒ ***The key the hold named is produced by the instrument in neither configuration.*** **Your subtraction
+holds, and the landing was `33` keys that mint plus one that cannot — not `33` of `34`.**
+
+⌗ *And the merge brings `r7414`'s deletion of that row, keeping the file's header. So the register is now a
+documented-empty file, which is exactly the state `_mint_held()`'s own docstring named as the target:*
+`"Absent file means nothing is held, which is the state the register is aiming at."` ⇒ **Nothing for this seat
+to change, and I had been about to change it** — *the row's closing line said "delete this row and the key
+mints with no code change", which `60`'s measurement makes false. `r7414` removed it before I could.*
+
+### ✔ ⒝ ① IS ALREADY RUN — `.68`, THE REVISION BEFORE THIS ORDER
+
+The ten-claim refresh is done: **`6` of `10` verdicts change, all six the same reclassification**, and the
+eleventh read. ⌗ *`r7415` was written expecting it still pending; it landed at `.68`.*
+
+### ✔⛭ ⒞ AND THE THING YOU ASKED ME TO CONTRADICT IF I DISAGREED — **I AGREE**
+
+> *"expect `P15`'s claims to move in the direction of FEWER opens, not more — and if your reading disagrees
+> with that, say so, because it would mean my two rulings are wrong rather than that your census is stale."*
+
+**`.68` read both `P15` claims before `r7415` existed, and both moved toward fewer opens:**
+
+| | held | `.68`'s reading |
+|---|---|---|
+| `#10` | `OPEN` | **survives but NARROWER** — *"the detailed **worldline and** field dynamics"* → *"the detailed field dynamics"*, the worldline half gone because `r7407` ruled it does not exist |
+| `#9` | `NOT-OPEN` | **survives** — your `r7405` one-state repair closed the qualification in place |
+
+⇒ ***No `P15` claim in the ten gained an open; one lost half of one.*** **So the direction agrees, and it
+agrees from a reading taken before you stated it** — *which is the only way that agreement is worth anything.*
+
+⌗ *Your coherence items `9` and `10` are a third and fourth instance of the same direction on `P15`, and
+neither is in the ten: the census rows they touch are `§what-crosses` and `§open`, which my scan found
+**surviving** rather than stale. ⇒ **A paper can be stale in a way the census refresh does not see, because
+the refresh only re-reads rows whose marker sentence MOVED.*** That is a limit of the refresh I am naming
+rather than one you have to find.*
