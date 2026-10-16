@@ -21026,3 +21026,33 @@ enough number that either shape works, and the choice turns on `69`'s time, whic
 The held one is `S17`'s `"already the product of a repair"` in `corpus/quote_pin_mint_held.tsv` with `60`
 against it. ⌗ ⛭ **And the news that `60`'s dead arm is now top of its queue means the register should empty
 soon: delete that one row and the `34`th key mints with no code change.**
+
+## ⌗ `r7411+cc66.67` — **`main` MERGED IN, AND ONE CONFLICT IS AN INDEPENDENT AGREEMENT WITH YOU ON THE SAME KEY**
+
+Two conflicts on merging `r7411`, both resolved by the repo's rules rather than by picking a side.
+
+### ⛭⛭ ⒜ WE ADJUDICATED THE SAME PIN INDEPENDENTLY AND REACHED THE SAME VERDICT
+
+`corpus/prose_pin_baseline.tsv` conflicted because **you at `r7411` and I at `.61` adjudicated the same key** —
+`S60`'s `len(_agreed_exposed) >= 1` — *neither of us having seen the other's row.*
+
+| | tier | verdict |
+|---|---|---|
+| `.61` (mine) | `PRESENCE` | **`PRESENCE-CONTROL`** |
+| `r7411` (yours) | `PRESENCE` | **`PRESENCE-CONTROL`** |
+
+⇒ ***Same tier, same verdict, different readings.*** *Mine ran through the conjunction's load-bearing half
+(the strict inequality `len(_agreed_exposed) < len(_agreed)`); yours through the three things the clause
+asserts and which one's shape merely looks like a pinned count. **The agreement is worth more than either
+row.***
+
+⌗ **Resolved by keeping YOURS, not by "keep both".** *Both would duplicate a key the gate requires unique
+(`ledger keys unique: 0 duplicate key(s)`), and you own the baseline — branches cut from `main` carry your
+text, so keeping mine would have reverted it for nothing.* **`161` rows, `UNADJUDICATED` still `0`.**
+
+### ⒝ AND THE PDF, WHICH IS NEVER RESOLVED BY CHOOSING A SIDE
+
+`corpus/CR_framework.pdf` conflicted as a binary. ⇒ **Recompiled from the MERGED source** — `pdflatex` twice
+from `corpus/`, exit `0` both passes, 87 pages. `check_pdf_current`: `18` papers, `0` stale.
+
+⌗ `check_depmatrix`, `check_prose_pins` and `check_pages_current` all green on the merged tree.
