@@ -174,6 +174,18 @@ def main():
         print(f'    ✔ the reader sees {total} identifier(s), so a verdict about a `decl` cell is a '
               f'reading and not a silence')
 
+    # ── ⓪ᵇ THE IN-RUN SEED.  `r7421` ③: a gate whose population can be empty must prove IN ITS
+    #    OWN RUN that it could have fired.  This runs on every ordinary invocation, with no flag.
+    fired, detail = in_run_seed()
+    print(f'\n  ⓪ᵇ THE IN-RUN SEED -- one `decl` that is NOT declared, put through the same row path')
+    if fired:
+        print(f'    ✔ it FIRED: {detail[:120]}')
+        print(f'    ⇒ ** so a zero from this run is a MEASURED zero ** (`r7421` ③, `70`\'s words), and '
+              f'the seed is synthetic -- counted in nothing below.')
+    else:
+        fail(f'⓪ᵇ ⛔ THE IN-RUN SEED DID NOT FIRE, so this run cannot show that it could have '
+             f'detected anything, and it must not report on the real rows: {detail[:160]}')
+
     # ── ⓶ the workflow scopes ────────────────────────────────────────────────────────────────────
     scopes = workflow_scopes()
     print(f'\n  ⓶ THE WORKFLOW SCOPES -- read from each workflow\'s own `paths:`')
@@ -211,44 +223,87 @@ def main():
 
     checked = 0
     for r in done:
-        idx = (r.get('index') or '?').strip()
-        decl = (r.get('decl') or '').strip()
-        rcpt = (r.get('receipt') or '').strip()
-        if not decl and not rcpt:
-            note(f'a `DONE` row carries neither cell yet, so it is not checkable: row {idx}')
-            continue
-        checked += 1
-        # ⓷ the receipt path
-        if not rcpt:
-            fail(f'⓷ `DONE` row {idx} names a `decl` but no `receipt`')
-        elif not os.path.exists(os.path.join(ROOT, rcpt)):
-            fail(f'⓷ `DONE` row {idx}\'s `receipt` path does not exist: {rcpt}')
-        # ⓵ the declaration, and ⓶ its file's gating
-        if not decl:
-            fail(f'⓵ `DONE` row {idx} names a `receipt` but no `decl`')
-            continue
-        f_rel, name = _split_decl(decl)
-        if f_rel is None:
-            fail(f'⓵ `DONE` row {idx}\'s `decl` names no `.lean` file, so the declaration has nowhere '
-                 f'to be looked for: {decl!r}')
-            continue
-        f_abs = os.path.join(ROOT, f_rel)
-        decls = declarations(f_abs) if os.path.exists(f_abs) else None
-        if decls is None:
-            fail(f'⓵ `DONE` row {idx}\'s file CANNOT BE READ, so its `decl` is UNVERIFIABLE rather '
-                 f'than present: {f_rel}')
-            continue
-        if not decls:
-            fail(f'⓵ `DONE` row {idx}\'s file parses to NO declarations, so a clean verdict on it '
-                 f'would be a silence: {f_rel}')
-            continue
-        if name not in decls:
-            fail(f'⓵ DANGLING REFERENCE -- `DONE` row {idx} names `{name}`, and {f_rel} declares '
-                 f'{len(decls)} identifier(s), none of them that one')
-        wf = covered_by(f_rel, scopes)
-        if not wf:
-            fail(f'⓶ `DONE` row {idx}\'s file is under NO `formalisation-*` workflow: {f_rel}')
+        got, counted = check_row(r, scopes)
+        checked += 1 if counted else 0
+        for m in got:
+            fail(m)
     return _verdict(checked, len(done))
+
+
+def check_row(r, scopes, root=None):
+    """(failures, counted) for one row -- the ONE path both the real rows and the in-run seed take.
+
+    ⛭ r7426, on `r7421` ③: factored out precisely so the seeded row cannot travel a different route
+    from the real ones.  *A control that exercises a COPY of the logic proves the copy.*"""
+    root = root or ROOT
+    out = []
+    idx = (r.get('index') or '?').strip()
+    decl = (r.get('decl') or '').strip()
+    rcpt = (r.get('receipt') or '').strip()
+    if not decl and not rcpt:
+        return [], False
+    if not rcpt:
+        out.append(f'⓷ `DONE` row {idx} names a `decl` but no `receipt`')
+    elif not os.path.exists(os.path.join(root, rcpt)):
+        out.append(f'⓷ `DONE` row {idx}\'s `receipt` path does not exist: {rcpt}')
+    if not decl:
+        out.append(f'⓵ `DONE` row {idx} names a `receipt` but no `decl`')
+        return out, True
+    f_rel, name = _split_decl(decl)
+    if f_rel is None:
+        out.append(f'⓵ `DONE` row {idx}\'s `decl` names no `.lean` file, so the declaration has '
+                   f'nowhere to be looked for: {decl!r}')
+        return out, True
+    f_abs = os.path.join(root, f_rel)
+    decls = declarations(f_abs) if os.path.exists(f_abs) else None
+    if decls is None:
+        out.append(f'⓵ `DONE` row {idx}\'s file CANNOT BE READ, so its `decl` is UNVERIFIABLE rather '
+                   f'than present: {f_rel}')
+        return out, True
+    if not decls:
+        out.append(f'⓵ `DONE` row {idx}\'s file parses to NO declarations, so a clean verdict on it '
+                   f'would be a silence: {f_rel}')
+        return out, True
+    if name not in decls:
+        out.append(f'⓵ DANGLING REFERENCE -- `DONE` row {idx} names `{name}`, and {f_rel} declares '
+                   f'{len(decls)} identifier(s), none of them that one')
+    if not covered_by(f_rel, scopes):
+        out.append(f'⓶ `DONE` row {idx}\'s file is under NO `formalisation-*` workflow: {f_rel}')
+    return out, True
+
+
+# ── ⛭⛭⛭ THE IN-RUN SEED, ordered at `r7421` ③ as a STANDING RULE ──────────────────────────────────
+#   ⚖ ** A gate whose population can be empty must prove IN ITS OWN RUN that it could have fired. **
+#   *`r7424` built this control and put it in a `--seed` mode, which is NOT what the rule asks: a
+#   separate mode can be skipped, left unwired, or pass on a tree where the real run does nothing --
+#   so a control living only in `--seed` proves the READER works and not that THIS RUN could have
+#   fired.*
+#   ⇒ *** So on EVERY ordinary run, with no flag, the gate seeds one `decl` that is NOT declared in a
+#       file it can read, puts it through `check_row` -- the same path the real rows take -- and FAILS
+#       ITS OWN RUN if no dangling reference comes back. ***
+#   ⌈ `70`'s formulation, which is the test: ** after it, a zero is a measured zero. **
+#   ⌊ *And the seed is SYNTHETIC: it lives in a temporary tree, is counted in nothing and is reported
+#     on its own line, because a control that changes the verdict it controls is not a control.*
+def in_run_seed():
+    """(fired, detail).  Seeds one bad `decl` through the real row path and reports whether it fired."""
+    import shutil
+    import tempfile
+    tmp = tempfile.mkdtemp(prefix='fj_inrun_')
+    try:
+        rel = os.path.join(LEAN_ROOT, 'lean', '_InRunSeed.lean')
+        os.makedirs(os.path.join(tmp, os.path.dirname(rel)), exist_ok=True)
+        with open(os.path.join(tmp, rel), 'w', encoding='utf-8') as fh:
+            fh.write('theorem in_run_seed_present : True := trivial\n')
+        rcpt = os.path.join('receipts', '_in_run_seed.py')
+        os.makedirs(os.path.join(tmp, 'receipts'), exist_ok=True)
+        open(os.path.join(tmp, rcpt), 'w').write('# in-run seed\n')
+        row = {'index': 'SEED', 'status': 'DONE', 'receipt': rcpt,
+               'decl': f'{rel} in_run_seed_absent'}
+        got, _counted = check_row(row, {'in-run-seed': [LEAN_ROOT + '/**']}, root=tmp)
+        dangling = [m for m in got if 'DANGLING' in m]
+        return bool(dangling), (dangling[0] if dangling else f'nothing fired; got {got}')
+    finally:
+        shutil.rmtree(tmp, ignore_errors=True)
 
 
 def _split_decl(cell):
@@ -388,6 +443,24 @@ def seed():
         rc_r, f_r, _ = run_on(f'5\tG\tDONE\treceipts/gone.py\t{good} Seeded.present_one\n')
         res['S14. a `receipt` path that does not exist fails'] = \
             rc_r == 1 and any('receipt' in x and 'does not exist' in x for x in f_r)
+        # ── ⛭ r7426: the IN-RUN seed must itself be shown to discriminate, not to answer `True`.
+        fired, _d = in_run_seed()
+        res['S15. the IN-RUN seed fires on its own synthetic bad `decl`'] = fired is True
+        _tmp2 = tempfile.mkdtemp(prefix='fj_inrun_ctl_')
+        try:
+            _rel = os.path.join(LEAN_ROOT, 'lean', '_Ctl.lean')
+            os.makedirs(os.path.join(_tmp2, os.path.dirname(_rel)), exist_ok=True)
+            open(os.path.join(_tmp2, _rel), 'w').write('theorem ctl_present : True := trivial\n')
+            _rc = os.path.join('receipts', '_ctl.py')
+            os.makedirs(os.path.join(_tmp2, 'receipts'), exist_ok=True)
+            open(os.path.join(_tmp2, _rc), 'w').write('# ctl\n')
+            _got, _ = check_row({'index': 'CTL', 'status': 'DONE', 'receipt': _rc,
+                                 'decl': f'{_rel} ctl_present'},
+                                {'ctl': [LEAN_ROOT + '/**']}, root=_tmp2)
+            res['S16. ...and the same machinery stays SILENT on a `decl` that IS declared, '
+                'so the seed is not rigged to fire'] = not any('DANGLING' in m for m in _got)
+        finally:
+            shutil.rmtree(_tmp2, ignore_errors=True)
     finally:
         shutil.rmtree(tmp, ignore_errors=True)
     for k, v in res.items():
