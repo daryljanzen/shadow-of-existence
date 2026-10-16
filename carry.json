@@ -138,6 +138,13 @@
     "gates": [],
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38793191816",
     "since": "f2f42842cfd91c49fa774662ae42a31ab11e5991"
+   },
+   "receipts/L_probability/S58_the_repair_was_right_and_the_reason_written_beside_it_was_false_because_a_pin_keyed_by_an_abbreviation_is_keyed_by_a_length_the_environment_picks.py": {
+    "gates": [
+     "\u24b8\u2461"
+    ],
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38853314294",
+    "since": "a6fa892dee114787de2620ede97a0217698acca6"
    }
   },
   "tolerance": {
