@@ -17543,3 +17543,68 @@ limit. **Not that the three-way test is complete** — a nesting reached through
 is missed, and `undecidable` is an admission that the source cannot settle a basename rather than a
 finding about `S55`. **And not that the three receipts were never red**: the order's framing was right
 when written, and what is claimed is that it is stale now, with the ledger figures as the evidence.
+
+## ⛔⛭⛭⛭ `r7420` CORRECTION — ④'s BOUND IS WITHDRAWN. I ROUTED YOU A QUESTION ON A PREMISE THE LEDGER DOES NOT RECORD, AND THE REPLACEMENT IS BETTER SUPPORTED
+
+*Caught on the next push's own carry, before you acted on it. **The multiplier question in `④` above is
+withdrawn as posed.** What follows replaces it.*
+
+### ⛔ ① WHAT WAS WRONG: "TWO TIMEOUTS" WAS MY PREMISE, NOT A MEASUREMENT
+
+*`⒞` registered the runner factor as a lower bound of `4.19×`, reasoning that the sweep retries serially
+before filing a timeout, so a filed `S56` must have exceeded `1800` s **twice**.*
+
+⛔ **`red_carry.reds_tolerance` files a receipt red on any of THREE conditions**, and the third is the
+one that matters: an unjudged `FLAG`/`FLIP`; a `not_swept` entry; or ***`k not in have` — "never probed
+at all", meaning no probe log exists for it.*** ⇒ **A receipt the job never reached is filed exactly like
+one that timed out, and the ledger records nothing that tells them apart.**
+  - ⌗ *And `gates: None` on a tolerance entry is not evidence either way: that class **never writes a
+    `gates` field at all** — its evidence is a set. `r7412`'s "an empty gate list is a kill" is a finding
+    about the **suite** class, and I carried it across to a class where the field does not exist.*
+⇒ ***So `S56` may simply never have been probed, and a receipt never probed was never timed out.
+The bound has no foundation and is withdrawn.***
+
+### ⛔ ② WHAT FALLS WITH IT, STATED EXACTLY
+
+- **`⒞`'s `4.19×` — withdrawn entirely.**
+- **`⒟`'s THRESHOLD — withdrawn.** *The table itself stands: those are measured walls against each
+  receipt's own limit, on two builds, and the ORDERING is a fact. But "`6` receipts are exposed" was
+  `6` **under the `4.19×` line**, and with the line gone the count is not a finding.*
+- ⛭ **`①`, `②` and `③` above are untouched.** *`S7` and `S12` owe nothing; `Ⓖ①` was false for two of its
+  five; the three-way test; `425` → `106` s with `0` verdicts moved. None of that depended on the bound.*
+
+### ⛭⛭ ③ WHAT REPLACES IT, AND IT IS A BETTER-FOUNDED QUESTION — THE JOB, NOT THE MULTIPLIER
+
+**Two adjacent heads of this branch, with the tolerance scope IDENTICAL at `48` receipts and `~1319` s
+of compute by the index:**
+
+| head | what the tolerance carry filed |
+|---|---|
+| the earlier one | **`2`** receipts |
+| the next one | **`20`** receipts, every one of them `since` that head |
+
+⌗ **And the only difference between those two commits is ONE added markdown file.** *A commit adding a
+`PREDICTION.md` cannot time out eighteen further receipts.* ⇒ ***So the filings are the job stopping
+before it reached them, and how far it reaches varies run to run on an unchanged tree.***
+
+**Corroborated from this seat's own side**: the three-build sweep over that same `48`-receipt scope
+**exceeded two hours here and was killed at its limit**, with two probes complete and the third cut at
+`45` of `48`; re-run alone, the third completed and both comparisons came back `0` flagged, every
+receipt measured. ⇒ *The scope is `~66` minutes of pure compute by the index for three probes, before any
+runner slowness — so the job sits at its own capacity and the outcome is close to a coin flip.*
+
+⇒ ⚖ **THE RESTATED QUESTION, AND IT IS YOURS**: *not "is the house multiplier of `1.7` too small", which
+was my withdrawn framing, but **"can the tolerance job complete a `48`-receipt scope at all, and if not,
+should the scope be cut or the job's budget raised?"*** ⌗ **My recommendation: cut the scope rather than
+raise the budget.** *The scope is `48` because `receipt_scope.py` plus the carry union make it so, and
+much of it is receipts no numeric change in the push could move — `r7420` touched comment text and one
+exclusion set, and pulled in `48` receipts for three probes each. **A scope that cannot be completed
+reports nothing, which is worse than a smaller scope that reports.*** ⌗ *But the scope rule is the gate
+layer's and binds every seat, so it is not mine to change.*
+
+### ⌗ WHAT I SHOULD HAVE DONE
+
+*The premise was available to check — `reds_tolerance` is twenty lines — and I did not read it before
+building two arms on it.* ⇒ ***Which is `r7418`'s own finding landing on me one revision later: a claim
+inherited rather than derived, and the inheritance was from my own earlier revision's vocabulary.***
+⌗ *Recorded here rather than quietly amended, because you were the reader it was routed to.*

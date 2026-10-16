@@ -50,7 +50,26 @@ NEST_AFTER = ('S22_', 'S23_', 'S55_')      # computed; CONTAINS the old hand-wri
 
 A_CENTRAL, A_BAND = 60, (20, 95)
 B_POINT = 0
-C_BOUND = S56_LIMIT / 429.4        # the worse build: two timeouts force at least this factor
+# ⛔⛭⛭⛭ WITHDRAWN AT THE NEXT PUSH, BEFORE THE SEAT IT WAS ROUTED TO ACTED ON IT.
+#   *`⒞` reasoned that the sweep retries serially before filing a timeout, so a filed `S56` must have
+#   exceeded `1800` s TWICE, forcing a factor of at least `4.19`.*
+#   ⛔ **`red_carry.reds_tolerance` files a receipt red on any of three conditions, and the third is
+#   `k not in have` -- "never probed at all", no log for it.**  *A receipt the job never reached is
+#   filed exactly like one that timed out, and the ledger records nothing that distinguishes them.*
+#   ⌗ *Nor does `gates: None` help: the tolerance class NEVER writes a `gates` field -- its evidence is
+#   a set.  `r7412`'s "an empty gate list is a kill" is a finding about the SUITE class, and this
+#   revision carried it across to a class where the field does not exist.*
+#   ⇒ *** SO THE BOUND HAS NO FOUNDATION AND IS WITHDRAWN, AND `⒟`'s THRESHOLD GOES WITH IT. ***  *The
+#       headroom TABLE stands -- measured walls against each receipt's own limit, on two builds, and the
+#       ordering is a fact -- but "6 receipts are exposed" was 6 BELOW THIS LINE, and the line is gone.*
+#   ⌊ ⛭ *What replaces it is better founded: two adjacent heads, the scope IDENTICAL at `48` receipts,
+#     filed `2` receipts and then `20` -- with one added markdown file as the only difference between
+#     the commits.  ⇒ The job stops before it reaches them, and how far it reaches varies run to run on
+#     an unchanged tree.  Three probes over this scope is ~66 min of compute by the index before any
+#     runner slowness, and this seat's own sweep over it exceeded two hours and was killed.*
+C_BOUND_WITHDRAWN = True
+C_BOUND = S56_LIMIT / 429.4        # kept for the record; NOT a bound -- see above
+FILED_EARLIER_HEAD, FILED_NEXT_HEAD, SCOPE_BOTH = 2, 20, 48
 D_CENTRAL, D_BAND, D_FLOOR = 2, (0, 10), 1
 
 RESULT = {}
@@ -245,17 +264,22 @@ def main():
           f'({(_literal.group(1) if _literal else "?")})')
 
     # ── ⒞ ──────────────────────────────────────────────────────────────────────────────────────────
-    print(f'\n⒞ THE RUNNER FACTOR -- a LOWER BOUND and nothing more: the sweep retries serially '
-          f'before filing a timeout, so the runner exceeded {S56_LIMIT} s TWICE against 429.4 s '
-          f'here ⇒ ** at least {C_BOUND:.2f}x **')
-    print('    ⚠ *the factor itself cannot be measured from this container, and asserting one would '
-          'be the move `r7374` corrected and `r7418` finished correcting.  Reported as a bound.*')
+    print(f'\n⒞ THE RUNNER FACTOR -- ⛔ ** WITHDRAWN. ** *This arm reasoned that a filed `S56` must '
+          f'have exceeded {S56_LIMIT} s twice, giving at least {C_BOUND:.2f}x.*')
+    print('    ⛔ `reds_tolerance` files a receipt red when it has NO PROBE LOG AT ALL -- "never '
+          'probed" -- indistinguishably from a timeout, and the tolerance class writes no `gates` '
+          'field to tell them apart. ⇒ ** A receipt never probed was never timed out. **')
+    print(f'    ⛭ What replaces it: the same scope of {SCOPE_BOTH} receipts filed '
+          f'{FILED_EARLIER_HEAD} receipts on one head and {FILED_NEXT_HEAD} on the next, with ONE '
+          f'added markdown file as the only difference between the commits ⇒ the JOB stops before it '
+          f'reaches them, and how far it reaches varies on an unchanged tree.')
 
     # ── ⒟ ──────────────────────────────────────────────────────────────────────────────────────────
     rows, below = exposure(w)
-    print(f'\n⒟ WHO ELSE IS EXPOSED UNDER THAT BOUND -- receipts whose headroom (own limit over '
-          f'measured wall, worse build) is BELOW {C_BOUND:.2f}x: ** {len(below)} **, against central '
-          f'{D_CENTRAL}, floor {D_FLOOR} and band {D_BAND[0]}-{D_BAND[1]}')
+    print(f'\n⒟ THE HEADROOM TABLE -- ⛔ ITS THRESHOLD IS WITHDRAWN WITH `⒞`. *The walls and limits '
+          f'below are measured on two builds and the ORDERING is a fact; the count of {len(below)} '
+          f'"exposed" was {len(below)} BELOW A LINE THAT NO LONGER STANDS, so it is not a finding '
+          f'and is not scored against central {D_CENTRAL} or band {D_BAND[0]}-{D_BAND[1]}.*')
     for hr, rel, worse, lim in rows[:12]:
         mark = '⛔' if hr < C_BOUND else '  '
         print(f'      {mark} headroom {hr:5.2f}x   {worse:7.1f} s against a limit of {lim:5d}   '
@@ -266,10 +290,11 @@ def main():
     _declared = [r for _h, r, _w, _l in below
                  if os.path.basename(r).startswith(('S54_', 'S55_'))]
     if _declared:
-        print(f'    ⛔⛭ ** AND THE PAIR `r7412` DECLARED IS IN THE EXPOSED SET **: '
-              f'{[os.path.basename(r)[:4] for r in _declared]} -- so the house rule\'s multiplier of '
-              f'1.7 is the thing to question rather than any one receipt\'s cost, and that is a '
-              f'gate-layer decision rather than this seat\'s.')
+        print(f'    ⌗ the pair `r7412` declared sits low in the ordering '
+              f'({[os.path.basename(r)[:4] for r in _declared]}) -- ⛔ but the inference drawn from '
+              f'that, that the house multiplier of 1.7 is the defect, IS WITHDRAWN with the bound. '
+              f'The restated question is whether the job can complete a {SCOPE_BOTH}-receipt scope at '
+              f'all, and it is routed on that footing instead.')
 
     # ── ⒝ and the repair's three measured forms ─────────────────────────────────────────────────
     print(f'\n⒝ THE REPAIR, MEASURED ON THREE FORMS -- and gates whose verdict moved: ** 0 **, '
