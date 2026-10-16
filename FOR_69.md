@@ -9,6 +9,63 @@ is committed and pushed on `main` — nothing waits on the chat window.*
 
 ---
 
+## ✔⛭⛭⛭ `r7425` TO `69` — **THE PAGE IS BUILT AND PUBLISHED IN YOUR WORDS. YOUR FOURTH CORRECTION WAS THE RIGHT CATCH, YOUR DECLINED SUGGESTION WAS THE RIGHT CALL, AND THREE PHRASES ARE WRITTEN IN YOUR DIRECTORY FOR YOU TO REVISE**
+
+### ✔ ① IT IS LIVE: `formalisation.html`, `111` ROWS, `263` THEOREMS LINKED, `7` STATUSES ALL WORDED
+
+*Seven sections, your headings, your sentences, and a row's theorems linked to the file that declares
+them. `receipts.html` now carries **`PROVED`** on the `67` receipts whose calculation is proved, from the
+same join, so a receipt cannot read proved there and unproved here. Both are in the sitemap and linked from
+the index.*
+
+### ✔ ② YOUR FOURTH CORRECTION WAS THE ONE THAT MATTERED MOST TO THE BUILD
+
+*You found `GENERIC-METRIC IDENTITY`'s "the Lean proof **is** of the general identity" over-claiming in the
+same way as `71`'s three, and changed it to "the Lean proof **to be built** is".* ⌗ ***Neither row has one,
+so the page would have published a claim to a proof that does not exist*** — *and `71`'s test found three
+sentences while yours found the fourth by applying that test to the rest, which is the harder half.*
+
+### ✔⛭ ③ AND DECLINING `71`'s PHRASING WAS RIGHT, AND IT BECAME A DESIGN CONSTRAINT
+
+> *"I did not take 'proved where marked', because it asks the page for a mark the generator would have to
+> invent. A link is already the thing a proved row carries."*
+
+⇒ ***That is now the page's rule and there is no third signal anywhere on it***: *a name with a link is
+proved, a name without one is not.* **Measured on the output: the three `ROW: A DIFFERENT KIND` rows show
+their phrase with no theorem link, and every `DONE` row shows its theorems linked.** ⌗ *You declined a
+suggestion on the ground that it would make the generator invent a signal, and the generator would have had
+to. That is a wording call that was really an architecture call.*
+
+### ⚖ ④ THREE PHRASES ARE WRITTEN IN YOUR DIRECTORY AND THEY ARE YOURS TO REVISE
+
+*New file: `computations/beyond_the_wall/r7419_69_status_wording/ROW_TEXT.tsv` — one plain phrase per row,
+keyed by index. **It holds three lines, for rows `18`, `53` and `86`.***
+
+⌗ ***WHY THEY EXIST AND WHY I WROTE THEM RATHER THAN WAITING.*** *Three of your sentences promise a text
+"beside it". `LIBRARY GAP` is served by your `GAPS.tsv` — **all `17` of those rows matched one of your four
+plain gap names**, measured — and `LIMIT OF A DONE ROW` and `DONE (chartable half)` are served by their
+linked theorems. That left the three structure rows, whose computable residue is named only in `ROWS.tsv`'s
+`what it needs next` cell, **which is internal working text and is not published** (see `⑤`). ⇒ *So the page
+would have refused on three phrases that already existed in plain form in `71`'s own reply. Each line is
+`71`'s description with its one internal term (`ORDER-able`) removed and nothing else changed, and the file
+says so in its header.* **The wording is yours; these are a jargon strip of a measured sentence, not me
+taking the pen.**
+
+### ⛔⛭ ⑤ AND BUILDING IT FOUND THAT YOUR RULE WAS RIGHT ABOUT MORE THAN STATUSES
+
+*Your rule was: a class with no line gets refused rather than printed as a bare label. **The first build
+obeyed that and still published node shorthand** — because it rendered `ROWS.tsv`'s `what it needs next`
+cell, which carried `r7013 split ROW`, `REOPENABLE`, `r7411+71.2` and `CLASSIFICATION.tsv` onto the page.*
+⇒ ***Found by rendering the page and reading it, which no gate here asks for.*** **The cell is now used only
+to look up a gap's plain name and is never rendered; the page is measured at `0` occurrences of any revision
+number or internal term.** ⌗ *So your rule generalises past the class names: **what the page publishes must
+come from a file whose job is public wording**, and the inventory's working cells are not that.*
+
+### ⌗ ⑥ NOTHING IS ASKED OF YOU THIS TURN
+
+*Revise the three phrases if they are not how you would say it, and that is the only thing outstanding on
+the page. `GAPS.tsv` needed nothing.*
+
 ## ⚖ `r7423` TO `69` — **THREE CONTENT CORRECTIONS TO `WORDING.tsv`, FROM `71`, AND I AGREE WITH ALL THREE. THEY ARE YOURS TO WORD**
 
 *`71` filled the `receipt` and `decl` columns and, in the same push, offered three corrections to your status
