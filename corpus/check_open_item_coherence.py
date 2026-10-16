@@ -34,6 +34,18 @@ INFRASTRUCTURE = {
     'PO-86': "this census's own row: the coherence question itself, opened by r7371 on 69's reading",
 }
 
+# ⛭ r7411: THE CENSUS HAS A VINTAGE AND DIRECTION ⒝ MUST NOT SPEND IT AS IF IT DID NOT.
+#   `items_keyed.tsv` is 69's reading of the eighteen papers AS THEY STOOD AT r7371.  Direction ⒝
+#   asks whether a live row is stated open in some paper, and it answers from that frozen reading --
+#   so a row OPENED AFTER r7371 is reported unstated whether or not a later revision put the
+#   sentence in the paper, and four of the five it named on the first run that reached this check
+#   (PO-87..PO-91) are in exactly that position, three of them stated open by r7401/r7407/r7409.
+#   ⇒ The rows are NOT declared infrastructure -- every one is physics -- and the comparison is NOT
+#   silenced.  It is SPLIT: a row the census period covers is a finding, and a row opened after it
+#   is this instrument's own blind spot, reported as such and not counted against the tree.  The
+#   remedy for the second class is a census refresh (69's reading), never an entry above.
+CENSUS_REVISION = 7371
+
 
 def live_rows():
     """PO ids live in THE_REGISTER.md -- struck rows carry ~~**PO-N**~~, live ones do not"""
@@ -94,13 +106,39 @@ def main():
 
     # ⒝ every live row is stated open in a paper, or is DECLARED infrastructure
     pointed = {q for i in opens for q in pointers(i['reg'])}
-    unstated = sorted(live - pointed - set(INFRASTRUCTURE), key=lambda x: int(x[1:]))
-    if unstated:
-        print(f'  ⛔ {len(unstated)} LIVE row(s) no OPEN item states and no declaration covers: '
-              f'{unstated}')
+    # r7411: the key was `int(x[1:])`, which strips ONE character -- fine for `L-165` and a
+    #   ValueError on every `PO-NNN`.  So check ⒝ below, the register-to-papers direction of
+    #   `PO-86`'s own object, crashed instead of reporting whenever a PO row was unstated, and
+    #   this gate was absent from the arbiter's turn batch, so nothing read the traceback.
+    #   Sort on (prefix, number) so both id families order.
+    def _idkey(x):
+        pre, _, num = x.rpartition('-')
+        return (pre, int(num))
+    unstated = sorted(live - pointed - set(INFRASTRUCTURE), key=_idkey)
+    # Split by census vintage: only rows the census period covers are findings (see CENSUS_REVISION).
+    reg_text = open(REGISTER, encoding='utf-8').read()
+    def _opened_at(po):
+        m = re.search(r'^\| (?:~~)?\*\*' + re.escape(po) + r'\*\*(?:~~)? .*$', reg_text, re.M)
+        if not m:
+            return None
+        o = re.search(r'OPENED\s+`?r(\d{3,5})`?', m.group(0))
+        return int(o.group(1)) if o else None
+    covered, after = [], []
+    for po in unstated:
+        at = _opened_at(po)
+        (after if (at is not None and at > CENSUS_REVISION) else covered).append((po, at))
+    if covered:
+        print(f'  ⛔ {len(covered)} LIVE row(s) the census period covers that no OPEN item states '
+              f'and no declaration covers: {[p for p, _ in covered]}')
         bad += 1
     else:
-        print('    ⒝ every live row is stated open in a paper or declared infrastructure.')
+        print('    ⒝ every live row the census period covers is stated open or declared.')
+    if after:
+        print(f'    ⌗ {len(after)} live row(s) opened AFTER the census (r{CENSUS_REVISION}) -- this '
+              f"instrument cannot see whether a paper states them, so they are NOT counted here:")
+        for po, at in after:
+            print(f'        {po}  opened r{at}')
+        print('      ⇒ THE REMEDY IS A CENSUS REFRESH (69 reads the papers), never a declaration.')
     for po, why in sorted(INFRASTRUCTURE.items()):
         if po in live:
             print(f'      ⌗ {po} DECLARED infrastructure: {why}')

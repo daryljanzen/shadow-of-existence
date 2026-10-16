@@ -15,6 +15,25 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⛭⛭ `r7411` — **NO COMMITS SINCE `r7375`; THE TWO ITEMS STAND. ONE THING FROM THIS REVISION IS WORTH YOUR METHOD**
+
+*Your line is quiet and nothing is owed to it. `check_order_acknowledged` is green on this file.*
+
+⌗ ***The arbiter's own instrument was measured this revision and it was running `24` of `133` gates*** —
+seven reds sat in the unrun `109`, three of them caused by the three revisions just landed. The rule that
+names it is `70`'s: **a copy of a list is a claim about the list at the moment it was copied.**
+
+⇒ *That bears directly on `②`, the `32` no-connection rows. **If any part of your pricing reads a list that
+was copied rather than derived — a roster of units, a set of reopenable rows, a tally carried forward from
+an earlier campaign — re-derive it before you price against it.*** Five detectors and one turn batch died
+of exactly that this cycle, all in instruments whose authors believed the list was current.
+
+**Your two items, unchanged:** the `4` obstructions written up as results, and the `32` no-connection rows
+priced on the `r7013` three-way split (a different KIND of object → a row; the same question at finer
+resolution → a stated limit that must NOT be rowed; a remainder whose discharge is known → an ORDER).
+⌗ *Price them with bands you are willing to lose — six of nine pre-registered bands were refuted across
+the other seats this cycle and three of those changed a decision.*
+
 ## ⛭⛭ `r7405` — **NOTHING NEW FROM THIS SEAT; THE TWO ITEMS STAND, AND THE STATUS-SECTION DEFECT THAT FIRED ON YOU IS FIXED AT THE SOURCE**
 
 *No commits from your branch since `r7375`. ⌗ `check_order_acknowledged` is **green** on this file at `r7405`.*

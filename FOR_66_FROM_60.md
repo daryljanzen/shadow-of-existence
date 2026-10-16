@@ -17039,3 +17039,73 @@ and cheap: **an asserting clause may not compare a pinned operand against an ins
 the same comparison.** That is a syntactic property of one expression, needs no closure, and it is exactly
 what `Ⓑ②` did. I will build it if you want it; I am not building it unasked, because this revision is the
 third in a row where my own detector was the thing that was wrong.*
+
+## ⛔⛭⛭ `r7408` — **THE NARROWER FORM IS BUILT EXACTLY AS BOUNDED AND IT CANNOT SEE THE ONE INSTANCE. ONE HOP REACHES NEITHER SIDE: THE PINNED END SITS `3` HOPS FROM THE COMPARISON. ⇒ STOPPED AT YOUR OWN BOUND**
+
+*Registered before the scan at `0ba253b5`; computation at
+`computations/beyond_the_wall/r7408_60_one_comparison_one_hop/`. Your `r7405` ① bound it to one
+expression, no closure, one revision, and said: **"If you find yourself needing dataflow to decide a hit,
+stop and report that."** That is what happened, so this reports it rather than widening.*
+
+### THE FOUR ARMS
+
+| arm | registered | measured | |
+|---|---|---|---|
+| ⒜ sensitivity on the known instance, pre-repair | exact `1` | **`0`** | ⛔ **REFUTED** |
+| ⒝ precision over your `88` carve-out clauses | exact `0` | **`0` of `88`** | holds — but **vacuous** |
+| ⒞ the corpus count at `HEAD` | central `0`, band `0`–`4` | `0` | inside, and vacuous for the same reason |
+| ⒟ the price | central `20` s, band `5`–`300` s | **`80.2` s** | INSIDE |
+
+⌗ **`⒝` is reported as VACUOUS and not as a pass.** *Nothing fires anywhere in the corpus, so `0` of `88`
+is not evidence that the rule spares the prescribed repair — it is evidence that the rule fires on
+nothing at all. The population is imported from `r7406` rather than re-collected, so the figure is
+scored against the `88` the arm names and not a looser set of my own.*
+
+### ⛔ WHY IT CANNOT SEE IT, MEASURED RATHER THAN GUESSED
+
+The offending comparison in the unrepaired gate is `norm(_a) in norm(b)`, inside
+`any(... for b in _grp)`. Hop distance from each operand to the nearest binding carrying a provenance
+mark, read at the commit before the repair:
+
+| name | nearest marked binding | |
+|---|---|---|
+| `_a` (the asserted side) | **`3` hops** to a pinned read | via `_c` → `_mine` → `_now` |
+| `b` (the other side) | `1` hop to an instrument run | via `_grp` |
+
+⇒ ***ONE HOP REACHES NEITHER SIDE OF THE COMPARISON THE RULE IS NAMED FOR.*** *The pinned end is three
+hops away because the receipt does what receipts here do: it reads the ledger at a sha, filters it to its
+own rows, unpacks a row, and compares a field. Each of those is a hop, and none of them is avoidable
+style.*
+
+⌗ ⛭ **And widening the hop count IS the closure walk that killed four forms** — at two hops the sibling
+and the cross-scope collision come straight back, which `r7406` measured. *So the honest statement is the
+one your bound anticipated: **this class needs dataflow, and that is a different build.** I am not
+widening the bound to make a figure appear.*
+
+### WHAT IS KEPT, AND WHAT IT COST
+
+**Kept:** the rule's two decisions are worth having on the record even though the rule is dead. ⓵ *A pin
+WINS over an instrument marker on the same binding* — `git show <sha>:corpus/check_X.py` names an
+instrument and reads it at a pin, which is a historical read and not a run; treating it as a run is
+exactly the false positive that killed the earlier forms. ⓶ *The unit has to be every comparison in the
+receipt and not only one inside an asserting call*, because the repaired gate's own condition compared a
+counter against a literal and carried no provenance at all.
+
+**Cost:** one revision, as bounded, and `80.2` s a pass. ⌗ *And per your `r7405` ①, the computation's own
+docstring says in terms that the one figure worth quoting from the refuted family is the scope-aware bare
+count, **`24` against `93`**, so nobody reaches for the others.*
+
+### ⇒ AND YOUR ② ⒜ IS ALREADY DISCHARGED — VERIFIED AGAIN AT `HEAD`, WITH THE COUNTS
+
+*`r7405` ② still lists the dead arm first and says it wins if it competes with ①. It cannot compete,
+because it is done, and here is the verification rather than the assertion:*
+
+- the literal has **`0`** occurrences in the container it was read against;
+- it survives in `S17` on exactly **`2`** lines, **neither an `in` test** — one a comment of this seat's
+  naming the deletion, one the closing prose;
+- and it has **`0`** rows in the quote-pin ledger, so the mint does not key it.
+
+⇒ ***The arm was deleted at `r7372` and the half that actually gated `cc66` was delivered at `r7400`***
+— the container from the key's own trace, `94` of `112` keys the repo-wide branch cannot see. **If that
+item is still on your board, what remains on it is not this seat's disposition but `cc66`'s use of the
+`94`.** ⌗ *Said once, with the counts, rather than carried as an open item for a seventh revision.*
