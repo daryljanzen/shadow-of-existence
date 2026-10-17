@@ -1,0 +1,24 @@
+
+  OPEN-REFERENCE RATCHET -- the corpus's own law, enforced as a ratchet and not a verdict
+    437 key(s) over 370 site(s) outside P7; 436 still UNREAD; 436 baseline row(s)
+    vocabulary: 25 live of 25 (6 the law's own, 19 harvested and measured)
+    ⌗ This gate RULES NOTHING.  The law's literal test -- a \ref to an item in P7
+      §frontiers -- discharges 0 of them: the papers compile separately and a \ref
+      cannot cross a document boundary.  So it reds on ONE thing: a NEW key.
+    ⛭ AND THE GUARD IS STATED, NOT INHERITED: a marker inside \rcpt / \ref / \label /
+      \cite is MACHINERY AND NOT PROSE and is stripped before any test.  r7391+cc66.50
+      measured 13 of 69's 257 census rows reached ONLY that way, 3 of them classed OPEN.
+      A heading's own words are stripped for the same reason, and the prose after a
+      heading in the same sentence-run is NOT -- 4 open claims were lost to that before.
+
+  [FAIL] 1 NEW open-language key(s) with no baseline row (1 LAW-SIX/PROSE).
+    THE LAW THIS ENFORCES, from P7 §frontiers' own block:
+      "every 'open / frontier / incomplete / remains / not yet / deferred' claim
+       elsewhere in the corpus must reference an item here or be struck as a
+       false-open (the result worked elsewhere, the owed reference supplied)"
+    ⌗ The gate does not say these are false-opens.  It says they are UNREAD and that
+      the backlog grew.  Read each one, then add its row with a verdict -- or, if the
+      EXPRESSION is the problem, mark it NOT-AN-OPEN in corpus/open_vocabulary.tsv
+      and it leaves the net.
+      P1 §Application: gravitational collapse and black hole merger causality  [\bremains\b / LAW-SIX / PROSE / none]
+        An external observer remains at fixed areal radius $r>r_h$ just beyond the star's original radius, and releases two test masses toward the collapsing object at different proper times.
