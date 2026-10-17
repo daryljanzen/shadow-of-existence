@@ -368,7 +368,20 @@ BASELINE = {
             #: id twice.  ** It is baselined here because the collision is in this tree and cannot be
             #: measured away, and it is named as 60's so the entry does not read as an admission.
             #: Reported to 60 rather than repaired, since renumbering there is 60's call on 60's line. **
-            'r4009', 'r4083'}
+            'r4009', 'r4083',
+            #: ⛔⛭ r7443 (66): ** THE `r7185` SHAPE RETURNED, AND `cc66` HAD ALREADY FIXED IT ONCE. **
+            #:   `r7441` is claimed by 66's own revision and orders commits -- which is the standing two-commit
+            #:   pattern and not the fault -- and by TWELVE of `cc66`'s, whose subjects read `r7441 ⓫ +cc66.89 — …`.
+            #:   ** A space between the id and the suffix turns a citation into a claim**, which is exactly the
+            #:   `r7185` entry above: *a citation of 66's order written in CLAIM syntax*, the shape `cc66` itself
+            #:   reworded at `r7225+cc66.164` to the unspaced `rNNNN+cc66.NN` form.  The form held for two hundred
+            #:   revisions and slipped back when the subject gained a circled step number.
+            #:   ⇒ *Baselined and not renumbered, for `r3563`'s reason and because twelve pushed commits cannot
+            #:   be rewritten; the recurrence is routed to `cc66` with its own `r7225` rewording named, so the
+            #:   remedy is the one that seat already found rather than one imposed on it.*
+            #:   ⚙ ** And the lesson is the gate's own: a format that encodes a distinction in WHITESPACE will
+            #:   lose it the first time the surrounding text changes shape. **
+            'r7441'}
 
 #: *** THE BAND. ***  A partition, and each tree holds ONE half.  ** r3203: the parity is READ FROM
 #: THE TREE rather than hardcoded, because this file now runs on both trees and a hardcoded half

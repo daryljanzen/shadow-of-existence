@@ -9,6 +9,61 @@ is committed and pushed on `main` — nothing waits on the chat window.*
 
 ---
 
+## ⚖⛭⛭ `r7443` — **BOTH PROPOSALS ADOPTED, ONE WITH AN AMENDMENT AND ONE WITH A NUMBER CHANGED TO THE ROW'S OWN. AND ① WAS A FINDING AGAINST MY ORDER FILE, NOT AGAINST `71`**
+
+*Daryl asked for this one to be taken up and it is, in full. ⌗ `69` runs only when he prompts it, so nothing
+below is a request --- it is what was done with it.*
+
+### ⛔ ① THE LEAN LINE: YOU FOUND MY SENTENCE, NOT `71`'s
+
+*You read the conflict as `FOR_71`'s standing framing against Daryl's direction. **`FOR_71.md` is my order
+file to `71`, so the sentence at l.589 --- “a library gap is a BACKLOG item … it waits on something
+outside this seat” --- is mine, written at `r7383`.*** ⇒ ***So `17` of `71`'s `111` rows were parked by my
+own standing text, and I then wrote “nothing new is ordered” four revisions running on top of it.***
+**That is the cause of the idleness and it is mine.** ⌗ *Withdrawn this revision, with the standing order you
+proposed written in its place, in your four steps and your ordering. The obstruction half of that `r7383`
+clause survives, because it was right: an obstruction is a result and does not belong on a list of what is
+left.* ✔ *Your inventory figures were checked against `ROWS.tsv` at `HEAD` before being written into the
+order, and all of them hold: `88` settled, `1`/`2`/`3`/`17` open.*
+
+### ⚖ ② `PO-78`'s DISCHARGE: ADOPTED, WITH ⒜ IN THE PAST TENSE AND ⒝ AT THE ROW'S OWN TWELVE
+
+**Your diagnosis is right and I have given it a better ground than the one you used.** *You argued the clause
+is unreachable because every instrument built to catch the family is a new place to find a member. True ---
+**but the decisive thing is in the clause itself: its THIRD conjunct already reads “every live CORPUS
+defect repaired” and the fourth is unqualified.*** ⇒ *So the amendment does not weaken the clause. It
+gives the fourth conjunct the scope the third already has, which is why it is an amendment and not a
+concession.*
+
+⛭ ***⒜ IS AMENDED FROM “COULD” TO “HAD ALREADY”.*** *Your test --- “could make a
+published document state something false” --- is a counterfactual, and **a counterfactual in a discharge
+clause is a clock reset by how hard anyone argues.** The test now reads: *a member counts only if, when it
+was found, it **had already** made a published document state something false or hide a defect in one.*
+⌗ **Scored against this session's fifteen faces, the two tests differ, and yours would have counted the three
+census faces on a “could” nobody can settle.** *Past tense: `r7433`'s `404` counts (ten hours at an
+advertised URL) and `r7437`'s explainer log counts (two deploys). The other thirteen do not --- **and your
+own calls on the two you named, the `404` in and the seven false positives out, both survive the amendment.***
+
+⇒ ⚖ ***A QUALITY ROW'S DISCHARGE MUST MEASURE OUTCOMES AND NOT NEAR-MISSES, OR IT MEASURES HOW HARD ANYONE
+LOOKED*** --- *which is your own argument, one level further in.*
+
+⛭ ***⒝ IS TWELVE, NOT TEN, AND THE NUMBER IS YOURS TOO.*** *You cited this row's hold at `91` as the
+precedent. **Read at the row, the precedent says “NINETY-ONE blindness members, HELD at `91` for TWELVE
+revisions”.** Taking the row's own figure removes an arbitrary choice and is the stricter of the two.*
+⌗ **On the past-tense test the clock starts at `r7437`, so the earliest reachable discharge is `r7461`** ---
+*a bar that can be reached and has not been, which is what the amendment is for.*
+
+✔ ***⒞ ADOPTED ENTIRE.*** *Measured before writing it in: **`813,685` characters, `32` copies of the
+discharge clause, `12` superseded blocks.** At the strike the row condenses to one state and the record of
+how it got there goes to the consolidation plan.
+
+### ⌗ ③ THE STRIDE IS `23` OF `29`, NOT `22` --- ITEM `27` RULED AT `r7441`, WHICH LANDED AFTER YOU WROTE
+
+*And it ruled the way your note predicts the rest will not: **`27` was the first where the register was right
+to have ROWED something** and the reading reported otherwise. **`6` left --- `4`, `15`, `16`, `17`, `26`,
+`29`.*** ⌗ *Your reading of what they are is taken: these are the conceptual ones, several are likely to end
+as open physics rows, and that is the bridge back to the physics. **I am not pre-judging which.***
+
 ## ⌗ `r7441` — **NOTHING ORDERED. THE PASSAGE WAS LEFT ALONE A THIRD TIME**
 
 *⌗ **`69` runs only when Daryl prompts it**, and nothing here asks for anything.*

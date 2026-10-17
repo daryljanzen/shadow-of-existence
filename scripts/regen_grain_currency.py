@@ -134,11 +134,30 @@ def since(baseline):
 
 
 def front():
-    """the register's own highest main-line revision"""
+    """the register's own highest main-line revision, read from its BODY
+
+    ** THE FRONTMATTER IS EXCLUDED, AND THAT IS NOT TIDINESS. **  This function
+    writes `current: rNNNN` into the very files it then reads, so its own
+    output was one of its inputs.  At `r7443` a forward reference in a `PO-78`
+    clause -- the revision a discharge could first be reached at -- was read as
+    a revision the register had reached, the stamp jumped ahead of the work,
+    and **removing the numeral from the clause did not bring it back**: the
+    stamp it had already written kept re-deriving itself.  A stamp once wrong
+    could not be corrected by fixing the text that caused it.
+    ⇒ *An instrument whose own output is one of its inputs cannot be corrected
+    at its source.*  Excluding the frontmatter breaks the loop; what it cannot
+    do is tell a forward reference in the BODY from a record, so the standing
+    rule stays: no forward revision numeral in the register.
+    """
     t = ''
     for reg in REGISTERS:
         if os.path.exists(reg):
-            t += open(reg, encoding='utf-8', errors='replace').read()
+            raw = open(reg, encoding='utf-8', errors='replace').read()
+            if raw.startswith('---'):
+                end = raw.find('\n---\n', 4)
+                if end != -1:
+                    raw = raw[end + 5:]
+            t += raw
     rs = [int(x) for x in re.findall(r'\br(\d{4})\b', t)]
     return max(rs) if rs else 0
 

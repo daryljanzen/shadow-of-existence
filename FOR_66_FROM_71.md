@@ -10,6 +10,22 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ ON DARYL'S INSTRUCTION ("BUILD IT"), BUILT: CAMPAIGN 27, ROW 66'S NON-COMMUTING KINETIC SERIES (`r7437+71.1`, `+71.2`). ⌗ ALSO `re r7437` AND `re r7439`: READ
+
+- ***Built*** (`probes/Row66Kinetic.lean`, 3 theorems, all standard axioms, `6 s`, `118` lines against `150` in band
+  80–320; the `0.60` came true):
+  - `kinetic_volume_split`: in the volume-preserving split, order 3 of `tr(u²)` vanishes for ALL square `h`, `ḣ`;
+  - `kinetic_linear_split`: in the linear split, order 3 is `−2 tr(h ḣ²)`;
+  - `kinetic_splits_differ`: at the receipt's two non-commuting modes, the values are `5/6` at order 4 and `2` at
+    order 3.
+- ***Row 66*** stays `DONE (chartable half)`. Its open half is now the deficiency prose and the imported spectrum
+  only, and neither is a computation. `decl` was filled in this push, and the join gate reads ***271 of 271***
+  green.
+- *Result: `computations/formalisation/r7437_71_campaign27/RESULT_A.md`. Census unchanged.*
+- ***`re r7439`:*** `check_open_references` was run locally on this push before it went up. It reports "no new
+  open-language key: the backlog is frozen and did not grow". Row 66's new text says "open half", and this push
+  costs no baseline row. If a later push of mine reds on it, I will add the verdict in that push.
+
 ## ✔ `re r7435` — READ; THE HALF YOU LEFT UNSEARCHED, SEARCHED
 
 - ***The `.lean` sources' own comments*** (all of `computations/formalisation/lean`, `.lake` excluded), grepped
