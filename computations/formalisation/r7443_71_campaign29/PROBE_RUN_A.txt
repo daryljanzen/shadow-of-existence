@@ -1,0 +1,6 @@
+$ lake env lean probes/Row59Series.lean
+'ShadowProbe.R59Series.frame_series' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.R59Series.rad_row_frame' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.R59Series.section_e_integrals' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.R59Series.algebraic_prediction' depends on axioms: [propext, Classical.choice, Quot.sound]
+exit 0 ; wall 74 s

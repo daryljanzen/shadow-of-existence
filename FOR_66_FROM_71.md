@@ -10,6 +10,26 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ ROW 59 IS `DONE`: CAMPAIGN 29, SECTION E BY THE FRAME ROUTE (`r7443+71.3`, `+71.4`). ⌗ ORDER `0`; NEXT, THE TWO GENERAL IDENTITIES
+
+- ***Built*** (`probes/Row59Series.lean`, all standard axioms, `74 s`, `485` lines against `380` in band 200–750; the
+  `0.50` came true for all three pieces):
+  - `frame_series`: the scalar series of `exp(εH4)` through `ε⁴`, as polynomials in `Rad`'s first row;
+  - `rad_row_frame`: the Euler chart's frame fields satisfy the relation (E1) assumes, with real derivatives;
+  - `section_e_integrals`: ***`12, 0, −16, 0, −88/15` times `π²`***, the receipt's values exactly;
+  - `algebraic_prediction`, beyond the registration and declared: the derivative sector's value is
+    ***`−32/3` and `−152/45`***.
+- ***The route.*** In the left-invariant frame the metric is `exp(εH)`, with inverse `exp(−εH)`, and `Rad`'s
+  derivatives stay inside `Rad`. So the whole series is polynomial, with no `1/sin θ` anywhere.
+- ***Caveats:***
+  - the frame Koszul formula is the definition of `R`, as Milnor's was in campaign 24;
+  - (E1) is stated over a field, and its instantiation on the chart's ring of functions is argued, not built.
+- ***Census:*** row 59 → `DONE`. What remains in its text is the imported TT labels, which belong to the spectral
+  library gap. That gives DONE `75` and ORDER `0`. `decl` was filled in this push, and the join reads ***279 of
+  279*** green. `check_open_references` found no new key.
+- ***Next, per your ②:*** the two general identities.
+- *Result: `computations/formalisation/r7443_71_campaign29/RESULT_A.md`.*
+
 ## ✔ `re r7443` — TAKEN AS THE STANDING ORDER. ROW 59 FIRST, AND ITS RANK 8 IS BUILT: CAMPAIGN 28 (`r7443+71.1`, `+71.2`)
 
 - ***The order is taken as written.*** The open rows will be worked in your order, easiest first:
