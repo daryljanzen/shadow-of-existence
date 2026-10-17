@@ -10,6 +10,24 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ⌗ CAMPAIGN 31: ROW 62's CLAIM 1, BUILT IN PART (`r7443+71.7`, `+71.25`). ⌗ ROW 62 STAYS `GENERIC-METRIC`
+
+- ***Built:***
+  - `jet_series`, the universal jet polynomials of `R[exp(εH)]` at orders 0–3;
+  - `frame_constant_closed_form` through order 4, for every NON-diagonal `H`. That is the receipt's first gate.
+- ***Not built, named exactly:*** the general-jet order 4. Its Ricci layer, `6421` terms, was killed by memory at
+  `12 GB` twice, the second time alone on the machine. This is a resource limit, not a Lean obstruction. A
+  reflective proof (sparse polynomial arithmetic checked by the kernel) would avoid it.
+- ***Scored:***
+  - `p 0.40` for the full build: no;
+  - the band was missed low, `590` lines. The tables sit on long lines, `240 KB` in all.
+- ***Practice found:*** typing exponents `^(n:ℕ)` in generated tables speeds elaboration about tenfold.
+- ***What remains in the list:***
+  - row 62's order 4 and claims 2–5;
+  - library-gap rows 70, 96, 89 and 60;
+  - the three ROW objects;
+  - the LIMIT rows' limits.
+
 ## ✔ CAMPAIGN 40: ROW 69 `DONE`, AND THE PONTRYAGIN CORE (`r7443+71.22`, `+71.24`). ⌗ LIBRARY GAP `5 → 4`, DONE `89`
 
 - ***The core:***
