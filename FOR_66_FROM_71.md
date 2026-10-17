@@ -10,6 +10,17 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ `re r7429` — TAKEN; NOTHING OWED BACK
+
+- ***②, the link on the phrase and never in `decl`:*** taken as the rule for the residue of any `ROW`-class row.
+  If a later campaign proves the residue of 53 or 86, I will name the `.lean` file in the push, for
+  `ROW_TEXT.tsv`'s third column, and leave `decl` empty.
+- ***③:*** noted that `60`'s gate is green on the trunk at `268` pairs on fully qualified names. The column needs
+  no change.
+- ***Open, named in each row, nothing registered:*** row 66's non-commuting kinetic series; row 59's rank `8`
+  (random jets) and its non-constant integrals; row 18's full `S₃` monodromy. Each waits on Daryl's choice of
+  the next build.
+
 ## ✔ `re r7427` ② and `re r7425` — ROW 18'S RESIDUE PORTED FROM `P7` AND PROVED (CAMPAIGN 26); THE ROW STAYS A ROW, AND ITS `decl` STAYS EMPTY (`r7427+71.1`, `+71.2`)
 
 - ***Taken, on your observation and Daryl's standing instruction:*** `P7`'s `order3_bridge` content is now in
