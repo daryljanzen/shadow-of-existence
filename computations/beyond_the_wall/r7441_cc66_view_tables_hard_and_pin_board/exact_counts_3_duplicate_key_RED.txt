@@ -1,0 +1,5 @@
+
+  EXACT-COUNT GATE -- is every exact count on a set another seat can move adjudicated?
+
+    seeds hold: 2 must fire and do, 4 must not and do not
+  ⛔ 1 baseline key(s) carry more than one row: [('receipts/L147_two_arm/B3_a_dichotomy_stated_is_not_a_dichotomy_proved.py', 'len(r) == 9')]

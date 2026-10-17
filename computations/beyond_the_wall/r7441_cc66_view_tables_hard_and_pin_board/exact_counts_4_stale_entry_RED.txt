@@ -1,0 +1,10 @@
+
+  EXACT-COUNT GATE -- is every exact count on a set another seat can move adjudicated?
+
+    seeds hold: 2 must fire and do, 4 must not and do not
+    1096 receipts in the working tree; claim-sites by partition: {'EXPOSED': 65, 'FROZEN': 129, 'ROW-SCOPED': 50, 'SELF': 12}
+    60 distinct EXPOSED (receipt, comparison) key(s); the baseline carries 61
+    by verdict: {'DELIBERATE': 33, 'FALSE-POSITIVE': 4, 'GENUINE-OWED': 1, 'SCOPED': 2, 'UNADJUDICATED': 21}
+  ⛔ 1 STALE baseline entr(y/ies) -- no longer an EXPOSED site, so remove the row:
+      [STALE] receipts/L999_not_a_receipt/Z9_a_row_for_a_site_that_is_not_exposed.py  assert len(x) == 3
+

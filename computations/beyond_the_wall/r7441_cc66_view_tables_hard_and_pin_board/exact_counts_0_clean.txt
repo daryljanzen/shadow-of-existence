@@ -1,0 +1,10 @@
+
+  EXACT-COUNT GATE -- is every exact count on a set another seat can move adjudicated?
+
+    seeds hold: 2 must fire and do, 4 must not and do not
+    1096 receipts in the working tree; claim-sites by partition: {'EXPOSED': 65, 'FROZEN': 129, 'ROW-SCOPED': 50, 'SELF': 12}
+    60 distinct EXPOSED (receipt, comparison) key(s); the baseline carries 60
+    by verdict: {'DELIBERATE': 32, 'FALSE-POSITIVE': 4, 'GENUINE-OWED': 1, 'SCOPED': 2, 'UNADJUDICATED': 21}
+    the ratchet holds: 21 unadjudicated against a ceiling of 21
+  every exposed exact count is accounted: no new site, no stale entry, and the backlog in the open.
+

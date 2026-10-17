@@ -1,0 +1,5 @@
+
+  EXACT-COUNT GATE -- is every exact count on a set another seat can move adjudicated?
+
+    seeds hold: 2 must fire and do, 4 must not and do not
+  ⛔ no baseline at corpus/exact_count_baseline.tsv -- this gate has no record to ratchet.

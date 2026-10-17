@@ -161,3 +161,90 @@ I report it because I found it, and because the register's whole worth is that i
 `check_quote_pins` 12.
 
 **The ceiling class stays a prediction**: 7 of its 9 branches are unwalked, and one printed address refutes it.
+
+---
+
+# r7441 ② ③ — THE REST OF THE CHEAPEST TIER: `check_exact_counts` AND `check_marker_transposition` CLOSED
+
+Both were at 3 pending.  Both are now **fully accounted**, and all six paths were **REACHABLE BY DATA**.
+
+## ② `check_exact_counts` — the three baseline-shape refusals.  `5 walked + 1 self-ref = 6 of 6` ✔
+
+The gate is green at exactly its ceiling (`21 unadjudicated against a ceiling of 21`, 60 EXPOSED keys, 60
+baseline rows), which is why the ceiling branch is the one that is `ONE STEP FROM A WALL`.
+
+**(i) NO BASELINE** — the file moved away:
+
+```
+  ⛔ no baseline at corpus/exact_count_baseline.tsv -- this gate has no record to ratchet.
+```
+
+**And the address here is the file's EXISTENCE, not its content** — which is worth separating, so I measured
+where taking it lands.  Put back a baseline carrying **one** real row and the gate does not go green; it moves
+straight onto a different site:
+
+```
+    60 distinct EXPOSED (receipt, comparison) key(s); the baseline carries 1
+  ⛔ 59 NEW EXPOSED exact count(s) -- an equality on a set another seat can move:
+```
+
+So the chain is `181 → 200`, measured rather than assumed, and `⓵`'s three addresses (monotone, read at a PIN,
+or adjudicate) are where the *content* is adjudicated.  A refusal whose address is another refusal is still
+reachable; it is just not one step.
+
+**(ii) A DUPLICATED KEY** names the offending key exactly:
+
+```
+  ⛔ 1 baseline key(s) carry more than one row: [('receipts/L147_two_arm/B3_...', 'len(r) == 9')]
+```
+
+**(iii) A STALE ENTRY** names the row and its remedy in the same line, and I took it to exit 0:
+
+```
+  ⛔ 1 STALE baseline entr(y/ies) -- no longer an EXPOSED site, so remove the row:
+      [STALE] receipts/L999_not_a_receipt/Z9_a_row_for_a_site_that_is_not_exposed.py  assert len(x) == 3
+```
+
+Transcripts `exact_counts_0_clean.txt` … `exact_counts_5_address_taken_GREEN.txt`.
+`corpus/exact_count_baseline.tsv` restored byte-exact after each of four inductions.
+
+## ③ `check_marker_transposition` — the three that remained.  `4 walked + 1 self-ref = 5 of 5` ✔
+
+**(i) BASELINE ABSENT** — `corpus/marker_transposition_baseline.tsv is absent; the baseline is data and must
+exist`.  It names the file and what kind of thing it is.
+
+**(ii) A NEW FLAG names TWO addresses**, and that is the point of the walk.  Induced the honest way — by
+**un-adjudicating a committed key** rather than planting a fake one, so the flag the gate raises is a real
+detection:
+
+```
+  ⛔ 1 NEW TRANSPOSITION FLAG(S):
+    [FAIL] CR_cosmology.tex:597  301.76 -- none of the group closing it carries it; H0_acoustic_angle_and_seam (cited at line 768) does
+     ⌗ Put the marker beside the number it computes, or -- if this is not a
+       transposition -- adjudicate it in the baseline with what was read and why.
+```
+
+The first address is editing the paper (another seat's); **the second is adjudicating in the baseline, and I
+took that one to exit 0.**
+
+**(iii) A STALE ENTRY** names the row, the remedy and the reason together: *"the flag no longer fires, so REMOVE
+the entry … A fixed site left in the baseline is a silent permission to regress there (r7069)."*
+
+Transcripts `marker_0_clean.txt` … `marker_4_address_taken_GREEN.txt`.
+`corpus/marker_transposition_baseline.tsv` restored byte-exact after each of three inductions.
+
+## THE COUNT AFTER ② AND ③
+
+| | `.84` | after ① | after ② ③ |
+|---|---|---|---|
+| **walked** | 22 | 24 | **30** |
+| self-referential | 10 | 11 | 11 |
+| pending | 49 | 46 | **40** |
+| walked | 27.2 % | 29.6 % | **37.0 %** |
+| fully accounted | 7 | 9 | **11** |
+
+`30 + 11 + 40 = 81`, by `tally.py`'s running total.
+
+**Cheapest still pending:** `red_carry` 3 (three operational aborts, not verdict refusals) ·
+`check_prose_pins` 4 · `check_unread_figure` 4 · `check_tilt_pins` 5 · `check_revision_collisions` 5 ·
+`ROWS.tsv : index` 7 · `check_quote_pins` 12 (last, as ordered).

@@ -1,0 +1,11 @@
+
+  MARKER TRANSPOSITION -- is each number cited where it is computed?
+    window: +-200 lines
+
+    rarity: a number carried by more than 12 receipt sources is not distinctive; the calibration numbers are carried by [3, 8, 8]
+    [ok]   calibration a3705946 canonical_time.tex: 200/63 re-found -- own group lacks it, P10_the_vertex_numbers_are_exact... carries it 93 lines away
+    [ok]   calibration a3705946 canonical_time.tex: 19/27 re-found -- own group lacks it, P10_the_vertex_numbers_are_exact... carries it 93 lines away
+    [ok]   calibration 3f8fc14a canonical_time.tex: -4/3 re-found -- own group lacks it, P10_the_construction_own_regulator... carries it 158 lines away
+    calibration distances [93, 93, 158]; window 200 (the largest plus a margin)
+
+  [FAIL] corpus/marker_transposition_baseline.tsv is absent; the baseline is data and must exist
