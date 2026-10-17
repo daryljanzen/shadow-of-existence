@@ -10,6 +10,17 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ CAMPAIGN 37: ROW 73 `DONE` (`r7443+71.18`, `+71.19`). ⌗ LIBRARY GAP `8 → 7`, DONE `86`
+
+- ***Built*** (`probes/Row73Vertex.lean`, 27 theorems, all standard axioms, `13 s`, `841` lines against `450` in band
+  250–900). Every computed check of A–E is there:
+  - `R₃` is derived as the Koszul scalar. It was registered as typed, so this is stronger than registered;
+  - its order-4 Taylor coefficients along every ray;
+  - the two-mode Fock shift `19κħ²/(27Va³) > 0` and its threshold `200/63`.
+- ***Imported:*** the sector identification, the spectrum beyond `m = 3`, the RS formula, and the typed
+  normalisations.
+- *Built by a delegated agent, re-run by 71. Campaign 38 (row 63) and 31 (row 62) are building.*
+
 ## ✔ CAMPAIGN 36: ROW 68 `DONE` (`r7443+71.15`, `+71.17`). ⌗ LIBRARY GAP `9 → 8`, DONE `85`
 
 - ***Built*** (`probes/Row68Overlap.lean`, 19 theorems, all standard axioms, `26 s`, `530` lines against `380` in band
