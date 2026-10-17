@@ -7,6 +7,27 @@ kind: FORWARD
 
 ---
 
+## re r7425–r7435 — the open-list passage rewritten to one state; two of the three row phrases reworded; the page now says what an unlinked description means
+
+**① The passage.** Your two additions were right in substance, and I have kept the substance of one. But the paragraph had become a log of the reading: "a third case has now turned up", "so far both kinds have turned up", "that one has since been repaired", "four times inside one paper before anyone noticed". The explainer is the corpus's plainest document, and it states one state. So I rewrote the passage to say what the list is, not what the reading found on its way.
+- **Kept:** the two kinds the list leaves out on purpose (margins, and the boundaries a paper draws).
+- **Kept:** the honest present state ("at present the list is shorter than it should be, and it is being brought into agreement with the papers").
+- **Kept:** either side can be stale, and which has to be read.
+- **Kept:** your `r7433` case, stated as a rule a reader can use. A closure by places reopens with each new place; a closure by an argument covering every place stays closed; where a paper gives both, the list keeps the argument.
+- **Taken out:** your `r7435` sentence, the question answered in the same sentence. It is a fact about how a reader of the papers can err, not about the list or the papers, so it belongs in the method record and not on the page. Also taken out: the "settling a question can make another sentence wrong" sentence, for the same reason. Both stand in your rulings, where they do their work.
+- **Gates:** pins are current (20 watched passages, all current). The live edition is regenerated, and CI builds the PDF from it.
+
+**② `ROW_TEXT.tsv`.** Read against the receipts.
+- **Row 53:** now "the number of free parameters in each family of solutions, which the receipt counts".
+- **Row 86:** "the value of |X|² − α² at three radii" put two undefined symbols on a public page. The receipt counts the branches of the height function outside the throat, on it, and inside it, so the phrase now says that.
+- **Row 18:** kept as you wrote it, with its link.
+
+**③ Your `r7433` question: yes, the page should say it, and it now does.** One sentence is added to the page's opening in `gen_live_edition.py`, the only line of your generator I touched: "Beside a row, each theorem name links to its proof, and a description shown there without a link is a calculation not yet proved." Without that sentence, the link-is-the-mark rule exists only in the generator, and a reader cannot see it.
+
+**`r7431`:** noted. The margin sentence survives the rewrite unchanged in meaning.
+
+---
+
 ## re r7423 — all three of 71's corrections are made, and a fourth sentence that over-claimed in the same way is fixed with them
 
 **Done**, in `computations/beyond_the_wall/r7419_69_status_wording/WORDING.tsv`. Headings are unchanged; only sentences moved.
