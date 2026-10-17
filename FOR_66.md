@@ -22695,3 +22695,62 @@ CI does the same work in ~14 minutes and `check_quote_pins` alone is 21–23 min
 for this push: **run the gates the diff touches and name them in the reply.** Here that is `check_quote_pins`
 (the gate being fixed) and the receipt. **It rests on my reading of what the diff touches, so it is your call
 whether that is enough** — and `.91` is the standing proof that my reading can be wrong.
+
+## ⛔⌗ `r7447+cc66.94` — **A THIRD FAULT IN THE SAME FAMILY, AND THIS TIME IT ANSWERS MY OWN QUESTION TO YOU: THE READER SET IS A GREP, NOT A RECALL**
+
+`fast` went red on #504 at `check_paper_pins_present`. **Mine, reproduced in 6 s, fixed by the address I had
+already walked.** But the interesting part is that it is the **third** fault of one family in three pushes, and
+the family is *my validation scope* — which is exactly what I asked you to rule on at `.92` ④ / `.93` ⑤.
+**I can answer most of it myself now, so here is the answer instead of the question.**
+
+### ⛔ ① WHAT BROKE, AND IT IS A CONSEQUENCE OF `.92`'s OWN FIX
+
+`.92` removed two **`PAPER`** rows from `quote_pin_baseline.tsv` — correctly, their spans are pinned at a fixed
+commit now and are no longer live pins. **But `_P5`'s absence was separately LISTED in
+`corpus/paper_pins_absent.tsv`**, the deliberate-absence list that `check_paper_pins_present` keeps. Removing
+the baseline row left the listed entry naming a row that no longer exists:
+
+> `STALE (listed, now present or gone): 1 (1 no longer a live row)`
+
+⌗ **The address was one I had already walked** — `r7435` ⑤ graded this gate `REACHABLE in the new-or-stale
+branch … the named address (`--update` in the same commit) taken to exit 0`. **I walked that path in this very
+campaign and then failed to apply it to my own change.** `--update` rewrote the list to 124 keys; the gate now
+reports `NEW 0, STALE 0`, seed reading both ways.
+
+### ⌗ ② AND CI CONFIRMED THE TWO FIXES THAT WORKED
+
+`fast`'s FAILED line named **only** `check_paper_pins_present`. So on this tree
+**`check_quote_pins` passed** — `.92`'s six-pins-to-one repair holds in CI, not just locally — and
+**`check_revision_collisions` passed**, so your `BASELINE` entry for `r7441` did its work.
+
+### ⌗ ③ THE METHOD ANSWER, WHICH IS MINE AND NOT YOURS TO SUPPLY
+
+My `.93` ⑤ proposal was *"run the gates the diff touches and name them"*, with the caveat that it rests on my
+reading of what the diff touches. **That caveat has now cashed twice.** The fix is not a ruling from you — it
+is to stop reading from memory:
+
+```
+grep -ln 'quote_pin_baseline' corpus/check_*.py scripts/*.py
+```
+
+**Eight gates read that file. I had validated three.** The five I missed included the one that broke. ⇒ **So the
+rule for this seat, adopted now: the reader set of an edited data file is produced by `grep`, named in the
+reply, and run — never recalled.** All eight are green on this tree, plus the receipt at `24 OK`:
+`check_conflict_markers` 2 s · `check_paper_pins_present` 4 s · `check_paper_pins_not_comment_only` 2 s ·
+`check_pin_board` 43 s · `check_pins_adjudicated_on_mint` 1 s · `check_exact_counts` 61 s ·
+`check_prose_pins` 37 s · `check_quote_pins` ~21 min. **Under four minutes for seven of the eight.**
+
+⌗ **And the corpus already had the tool I should have looked for.** `scripts/run_touched_readers.sh` exists for
+precisely the neighbouring gap, and says so in its own header: *"`run_fast_job.sh` answers 'will the FAST job
+be green?' … ** It runs NO RECEIPTS. **"* ⇒ I was asking you for a policy the tree had already partly written.
+**What is still genuinely yours** is only the first half of `.92` ④: `run_fast_job.sh` cannot finish in this
+container (45-minute timeout against CI's ~14), so if you want the whole fast job as the gate before a push,
+it has to run somewhere other than here.
+
+### ⌗ ④ ONE INHERITED RED ON #504 THAT IS NOT MINE AND I HAVE NOT TOUCHED
+`scoped — tolerance probe, build B` fails because `origin/main` still carries node 70's **deliberate**
+`budget: 0.2` (`349fde195`, *"TEMPORARY, T-e … to induce a timeout … reverted by the next commit"*). The
+revert exists on 70's branch — **but the commit that carries it also sets build C's job limit to 3 min, 70's
+next induction**, so porting it would import a different red by design. Commented once on #504 and left to 70
+to land. ⚠ *A merge of `main` can import another seat's deliberate red; that is worth knowing before anyone
+reads #504's checks as a verdict on its diff.*
