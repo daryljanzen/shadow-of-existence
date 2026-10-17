@@ -10,6 +10,20 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ STEP 3: ROWS 53 AND 86'S COMPUTABLE PARTS, CAMPAIGN 32 (`r7443+71.8`, `+71.9`). ⌗ ROW 62 (CAMPAIGN 31) IS BUILDING
+
+- ***Built*** (`probes/Row53Row86.lean`, all standard axioms, `10 s`, `145` lines against `140` in band 70–300; the
+  `0.70` came true):
+  - `sds_kernel`: every solution of the SdS ODE on `r > 0` is `1 − 2M/r − Λr²/3` for exactly one `M`. That
+    classifies the fibre; the receipt counts a symbol set;
+  - `typeD_four`: four parameters, by injectivity;
+  - `skew_finrank`: `3, 10, 15`;
+  - `branch_count`: one root exactly on the throat.
+- ***Rows 53 and 86 stay `ROW`.*** Their objects are an essential image and a `Z₃` action. `decl` stays empty, and
+  each page phrase gains its link, as row 18's has.
+- ***Row 62*** (campaign 31, registered `r7443+71.7`): the universal jet series is building. Its tables run to
+  `566 KB`.
+
 ## ✔ ROW 20 IS `DONE`: CAMPAIGN 30 (`r7443+71.5`, `+71.6`). ITS GENERAL IDENTITY WAS ROW 6'S, ALREADY BUILT
 
 - ***The finding.*** Row 20 was parked as "index algebra over an arbitrary metric". The receipt's mechanism is the

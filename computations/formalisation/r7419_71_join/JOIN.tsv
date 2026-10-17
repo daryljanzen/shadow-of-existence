@@ -52,7 +52,7 @@ index	status	receipt	decl	sources	unresolved
 50	DONE	receipts/P08_slicing_operator/P08_synchronous_horosphere.py	ShadowProbe.flat_on_quadric @ probes/NoConnectionSweep.lean; ShadowProbe.flat_dtau @ probes/NoConnectionSweep.lean; ShadowProbe.flat_dx @ probes/NoConnectionSweep.lean; ShadowProbe.flat_induced @ probes/NoConnectionSweep.lean; ShadowProbe.flat_horosphere @ probes/NoConnectionSweep.lean	cell	
 51	DONE	receipts/P08_slicing_operator/P08_the_closure_is_the_constitutive_relation.py	ShadowProbe.static_tov @ probes/SecondSeatStatic.lean	cell	
 52	DONE	receipts/P08_slicing_operator/P08_trichotomy.py	ShadowProbe.open_leaf_curv @ probes/CurvatureInstances.lean; ShadowProbe.horo_on_hyperboloid @ probes/CurvatureInstances.lean	manual	
-53	ROW: A DIFFERENT KIND	receipts/P09_range_paper/K7_range_is_essential_image.py			
+53	ROW: A DIFFERENT KIND	receipts/P09_range_paper/K7_range_is_essential_image.py	ShadowProbe.R53R86.sds_kernel @ probes/Row53Row86.lean; ShadowProbe.R53R86.typeD_four @ probes/Row53Row86.lean; ShadowProbe.R53R86.skew_finrank @ probes/Row53Row86.lean	cell	
 54	DONE	receipts/P09_range_paper/P09_ks_vacuum.py	ShadowProbe.ks_stress @ probes/SecondSeatKS.lean	cell	
 55	DONE	receipts/P09_range_paper/P09_ppwave_typeN.py	ShadowProbe.pp_Ruxux @ ShadowEngine.lean; ShadowProbe.pp_kretschmann @ ShadowEngine.lean; ShadowProbe.pp_riemann @ ShadowEngine.lean; ShadowProbe.pp_vacuum_iff @ ShadowEngine.lean	sweep	
 56	DONE	receipts/P09_range_paper/P09_the_wall_is_not_the_loss_of_symmetry.py	ShadowProbe.killing_lie @ ShadowEngine.lean; ShadowProbe.pw_bracket @ ShadowEngine.lean; ShadowProbe.pw_dv_null @ ShadowEngine.lean; ShadowProbe.pw_killing @ ShadowEngine.lean; ShadowProbe.pw_wronskian_const @ ShadowEngine.lean; ShadowProbe.xiPW_deriv @ ShadowEngine.lean	sweep	
@@ -85,7 +85,7 @@ index	status	receipt	decl	sources	unresolved
 83	DONE	receipts/P13_boundary_paper/P13_the_last_evasion_inside_the_premise_is_the_squash_and_it_is_excluded_twice.py	ShadowProbe.row83_squashed_S5_everywhere @ probes/NonDiag.lean; ShadowProbe.curvG_eq @ probes/NonDiag.lean; ShadowProbe.row83_squashed_S5 @ probes/NonDiag.lean	cell	
 84	LIBRARY GAP	receipts/P13_boundary_paper/P13_the_one_scale_forbids_the_isometry_route.py			
 85	LIBRARY GAP	receipts/P14_matter_sector_paper/P14_B3_spinor_vielbein.py			
-86	ROW: A DIFFERENT KIND	receipts/P14_matter_sector_paper/P14_is_there_a_singlet_for_the_axis_pair.py			
+86	ROW: A DIFFERENT KIND	receipts/P14_matter_sector_paper/P14_is_there_a_singlet_for_the_axis_pair.py	ShadowProbe.R53R86.branch_count @ probes/Row53Row86.lean	cell	
 87	DONE	receipts/P14_matter_sector_paper/P14_the_axis_vantage_is_a_pair.py	ShadowProbe.axis_vantage @ probes/NoConnectionSweep.lean	cell	
 88	DONE	receipts/P14_matter_sector_paper/P14_the_axis_vantage_is_imaginary_not_absent.py	ShadowProbe.axis_vantage @ probes/NoConnectionSweep.lean	cell	
 89	LIBRARY GAP	receipts/P14_matter_sector_paper/P14_the_constituent_count_is_conserved_on_every_static_member_and_the_twist_alone_violates_it.py			
