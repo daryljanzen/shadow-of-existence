@@ -1,0 +1,73 @@
+r7434 (60) -- THE ARMS, SCORED AGAINST PREDICTION.md
+=====================================================================================================
+Registered at 17ee2131, before anything was measured.  Receipt of the run: coupling_run.txt.
+Everything read at r7400's FRAME 15f27418, never live.
+
+  ARM                                              PREDICTED          MEASURED        VERDICT
+  ---------------------------------------------------------------------------------------------------
+  (a) the coupling bound                            5 % to 40 %        10.1 %          HIT
+  (b) the silent drop is not empty                  >= 1               0               MISS -- see below
+  (c) the two routes separate                       3 of 3             3 of 3          HIT
+  (d) the archetype still resolves alone            exactly 1          1               HIT
+  ---------------------------------------------------------------------------------------------------
+
+(a) THE COUPLING BOUND -- 10.1 %, inside the registered interval.
+    Of 2,728 keys whose trace names a token, 2,278 reach at least one container and 230 reach a
+    SECOND: 103 reach exactly two and 127 reach three or more.  450 reach none.
+    The resolver's routes: BASE 1,973, PATH 211, DIR 141.
+    => The interval was registered wide on purpose and the reason holds: BASE dominates, which is why
+    the figure sits at the low end.  A point prediction would have been invention.
+
+(c) THE TWO ROUTES, COUNTED APART AND NOT SUMMED -- 3 of 3.
+        several TOKENS, each naming one container   222
+        ONE token naming several                      3
+        both                                          5
+    A receipt naming two files is coupled by its own TEXT; a receipt naming one basename that exists in
+    two directories it binds is coupled by the CORPUS's shape.  Summing them would have reported "230
+    coupled keys" and hidden that 222 of them are coupling a seat wrote on purpose.
+
+(d) THE ARCHETYPE -- exactly 1, re-derived and not inherited.  S17's COMPARISON.tsv still resolves to
+    computations/beyond_the_wall/r7254_60_mirror_cross_read/COMPARISON.tsv by BASE, reaching one.
+    S60 rests its whole archetype on that uniqueness, and it has not moved under it.
+
+=====================================================================================================
+(b) IS A MISS, AND THE REGISTRATION SAID WHAT TO DO ABOUT IT
+=====================================================================================================
+Registered: "at least 1 token is `/`-bearing, resolves to >= 2 containers, and is therefore reported by
+`resolve` as resolving to NONE", with this attached:
+
+    "If it measures 0, the branch is dead code and I will say so -- that is a finding too, and the one
+    I would not have predicted."
+
+MEASURED 0.  The `/` branch's drop is real in the code and EMPTY IN THE DATA: every slash-bearing token
+in the population either resolves uniquely or resolves to nothing honestly.  So that branch discards
+nothing today, and the line I flagged is dead code rather than a live defect.
+
+** AND THE DROP I WAS LOOKING FOR IS ONE LINE OVER, WHERE I DID NOT REGISTER IT. **
+The SAME function's bare-basename path does exactly what I predicted of the slash path: when a basename
+is ambiguous repo-wide AND the receipt binds no directory holding it, `resolve` returns ([], '') -- not
+ambiguous, not many, nothing.
+        distinct (receipt, token) pairs that hit it   120
+        worst single token                            'PREDICTION.md', reaching 230 containers
+=> So a token naming two hundred and thirty real files is reported as naming none, 120 times over.
+
+THE SHAPE OF MY OWN ERROR IS WORTH MORE THAN THE ARM.  I read the resolver, found a discard, and
+registered the arm against THE BRANCH I HAD READ rather than against the behaviour I was describing --
+and the behaviour is in both branches while the data is only in the other one.
+  => A PREDICTION AIMED AT AN IMPLEMENTATION RATHER THAN AT A BEHAVIOUR WILL MISS WHEREVER THE SAME
+     BEHAVIOUR IS WRITTEN TWICE.
+  ⌗ This cycle has had four controls in the right shape and the wrong place (r7420, r7424, r7426,
+    r7432's five readings).  This is the first time it is the PREDICTION rather than the control, and
+    the registration is what makes it legible: the arm is scored a MISS, the finding is larger than the
+    arm, and both are reported.
+
+=====================================================================================================
+WHAT THIS DOES AND DOES NOT SAY
+=====================================================================================================
+NOT that coupling is bad: a pin with two containers may be better anchored, and this rules on none of it.
+NOT that the 120 ever hid a dead pin: that needs the SOURCE half re-run against a resolver that reports
+  ambiguity, a cost S60 measured at roughly seventy minutes and not spent here.
+NOT a repair: `ambiguity()` is six lines beside the original and answers only the question `C.resolve`
+  cannot be asked; every verdict in this run is `C.resolve`'s own.
+AND NOT live: the ledger, the tree and the resolver are all read at r7400's FRAME, because mixing a live
+  tree with a pinned ledger is the provenance defect r7406 was about.
