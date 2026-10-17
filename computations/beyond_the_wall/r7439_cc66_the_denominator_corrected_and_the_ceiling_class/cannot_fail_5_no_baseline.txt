@@ -1,0 +1,4 @@
+
+  CANNOT-FAIL RATCHET -- is every assertion that cannot fail counted, and is the owed count falling?
+
+  ⛔ no baseline at corpus/cannot_fail_baseline.tsv -- this gate has no record to ratchet.

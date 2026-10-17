@@ -1,0 +1,6 @@
+
+  PAPER PINS NOT COMMENT-ONLY -- is every PAPER pin satisfied by text the paper renders?
+
+    seeds hold: a body-and-comment pin passes, a comment-only pin fails, a pin found nowhere is not this gate's, an escaped % is body
+    1510 live PAPER key(s); 1 comment-only, 1 of them named as known
+  no PAPER pin is satisfied only by a comment, beyond the named sites.

@@ -1,0 +1,10 @@
+
+  PAPER PINS NOT COMMENT-ONLY -- is every PAPER pin satisfied by text the paper renders?
+
+    seeds hold: a body-and-comment pin passes, a comment-only pin fails, a pin found nowhere is not this gate's, an escaped % is body
+    1510 live PAPER key(s); 1 comment-only, 0 of them named as known
+
+    [COMMENT-ONLY] receipts/L263_the_station_audit/S1_three_of_eight_stations_are_already_held_and_one_was_noticed_and_not_propagated.py  "THE RECEIPT WAS MORE HONEST THAN THE PAPER"
+
+  ⛔ A PAPER PIN SATISFIED ONLY BY A COMMENT IS GREEN ON TEXT THE PAPER DOES NOT PRINT.
+     Its sentence left the body: read whether the claim still stands, and re-pin it on the body or retire it.

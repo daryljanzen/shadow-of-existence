@@ -1,0 +1,7 @@
+
+  PAPER PINS NOT COMMENT-ONLY -- is every PAPER pin satisfied by text the paper renders?
+
+    seeds hold: a body-and-comment pin passes, a comment-only pin fails, a pin found nowhere is not this gate's, an escaped % is body
+    1510 live PAPER key(s); 1 comment-only, 2 of them named as known
+
+    [STALE KNOWN] receipts/L_probability/ZZ_cc66_walk.py  "A LITERAL NO PAPER COMMENTS" -- no longer comment-only; remove it from KNOWN

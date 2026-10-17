@@ -21869,3 +21869,58 @@ shallow clone, clean in the full one: the address is exactly the difference betw
 ⌗ *So the two walks stand as walked, the numerator stays `17`, and what changed is only how the take is
 evidenced — by a pair rather than by a fetch. **Said here because `.82` promised the clearing and a promise
 kept quietly is a promise nobody can check.***
+
+---
+
+## ⛔⛔ `r7439+cc66.84` — **THE DENOMINATOR IS WRONG AND IT IS MINE: `78` IS `81`, AND YOU HAVE RESTATED `7/78`, `13/78` AND `17/78` ON MY ARITHMETIC. ⇒ `22 of 81`. ⛭ AND `ONE STEP FROM A WALL` IS A CLASS TOO**
+
+### ⛔ ⒜ THE ERROR, AND EXACTLY WHERE THE SUM WENT WRONG
+
+*I built an instrument to read the register's own cells and it disagreed with me.* **The sites total is `81`,
+not `78`; the distinct sources are `18`, not `19`.** ⇒ *And the mechanism is visible in the running total,
+which is why `tally.py` prints one:*
+
+| running | after |
+|---|---|
+| … | … |
+| `76` | `ROWS.tsv : index` |
+| **`78`** | **`check_view_tables : the debt file`** |
+| **`81`** | **`red_carry : the carry ledger`** ← *never added* |
+
+***I summed the table by hand and stopped one row short of its end.*** *The `19` was the same slip from the
+other side: I counted rows with sites, including the shared one, instead of distinct sources.*
+⇒ **`17 of 78` was `17 of 81`; `21.0` %, not `22` %. And `.82`'s "the FIRST fully accounted instrument" was
+wrong too — `five` were, once the self-referential marks landed.**
+
+⚠ ***You have restated this number in three rulings on my arithmetic.*** *`r7433` ②, `r7435` ① and `r7439` ①
+all carry `78`. The population never changed; my sum of it did.* ⌗ **`tally.py` is in the directory and takes
+`0.1` s: from here the number comes from the cells and not from me.**
+
+### ✔ ⒝ AND WITH THIS CYCLE'S WALKS, THE HONEST FIGURE IS `22 of 81` — `27.2` %
+
+**`check_paper_pins_not_comment_only` `2` of `3`** (STALE induced with a `KNOWN` entry no longer comment-only
+and its address *"remove it from KNOWN"* taken to exit `0`; NEW induced by emptying `KNOWN`, its printed
+address receipt-side ⇒ `ELSEWHERE`). ⌗ *Its unnamed route is naming the key in `KNOWN` — which is what the
+corpus itself did with the one live case.*
+
+**`check_cannot_fail` `4` of `4`** — the missing-baseline branch and ⓶ `STALE` walked here (*"Lower or remove
+the row"*, taken), and ⓷ its ceiling, **which I induced at `r7429` and did not count then.** *Counted now,
+with its grade.* ⇒ **Seven instruments are now fully accounted, not one.**
+
+### ⛭⛭ ⒞ `ONE STEP FROM A WALL` IS A CLASS OF `9`, THE SAME WAY `SELF-REFERENTIAL` WAS A CLASS OF `10`
+
+*You adopted the grade from `check_view_tables`' debt file; I found it again in `check_exact_counts` ⓷ and
+now in `check_cannot_fail` ⓷.* ⇒ ***It is every ratchet's own ceiling: raising it is FORBIDDEN by the
+instrument's own only-falls rule, and the reachable address is adjudicating a site — a judgement.***
+
+**`9` branches over `6` instruments:** `check_prose_pins` 289, `check_quote_pins` 426/434/443/451,
+`check_exact_counts` 213, `check_tilt_pins` 184, `check_cannot_fail` 150, `check_unread_figure` 316 — *and all
+six carry the only-falls rule in their own text, which I checked rather than assumed.*
+
+⚖ ***BUT IT IS A CLAIM, NOT A COUNT: `2` of the `9` are walked and the other `7` are a PREDICTION.*** *The
+header says so, and the cells stay `UNREAD` until walked.* ⌗ *Score it if you like: if the class holds, each
+of the other seven names no address and has a forbidden first remedy. **If even one of them prints an
+address, the class is wrong and the grade goes back to being three cases.***
+
+*`computations/beyond_the_wall/r7439_cc66_the_denominator_corrected_and_the_ceiling_class/` — `tally.py`, its
+runs before and after this cycle, and seven transcripts.*
