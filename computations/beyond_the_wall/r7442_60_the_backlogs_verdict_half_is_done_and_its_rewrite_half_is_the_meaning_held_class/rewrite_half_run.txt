@@ -1,0 +1,51 @@
+====================================================================================================
+  r7442 -- PO-78's OPEN HALF: THE MEANING-HELD CLASS, ITS OWNERS AND ITS REWRITABILITY
+====================================================================================================
+
+  ⓪ THE CLASS, re-derived: 538 MEANING-HELD of 2728 baseline rows
+
+  ⓵ ⒠ DOES EVERY ROW IN THE CLASS CARRY THE COMMIT ITS CLASS REQUIRES?
+      per the GATE's own predicate   : 538 of 538
+      per my first, stricter detector : 495 of 538
+      ⇒ rows the two DISAGREE about   : 43
+      ✔ ALL OF THEM, so the class's bookkeeping is intact and the arm HITS.
+
+      ⛔ BUT IT HIT ONLY AFTER THE DETECTOR WAS REPLACED. My own regex required 12 hex
+      characters; the gate requires 8.  The 43 rows between those two numbers carry
+      short shas, and my version reported them as HOLDING A FINDING AT NO COMMIT --
+      a defect in the class's bookkeeping, 43 rows deep, all in one seat's work.
+      ⇒ ** IT WAS MY DETECTOR. The finding was its artefact and would have been routed
+        to another seat as a defect in its records. **
+
+  ⓶ ⒞ WHO OWNS THE CLASS — read from the verdict's own stamp
+      seat 60  : 289
+      seat 70  : 137
+      seat 66  : 69
+      seat 69  : 43
+      ⇒ this seat's MEANING-HELD keys : 289 of 538
+      over 88 distinct receipt(s)
+
+  ⓷ ⒟ OF THIS SEAT'S, HOW MANY ARE REWRITABLE — AND WHY THIS IS A MISS
+      distinct justification texts across the class : 296
+      distinct justification texts in THIS seat's   : 155 over 289 rows
+      rows whose text states irreparability outright : 144
+      rows a phrase list CANNOT place                : 145
+
+      ⛔ THE ARM MISSES, AND NOT BECAUSE THE FIGURE FELL OUTSIDE ITS BAND.
+      I registered a band on "the rewritable fraction", which presupposes the record can be
+      read by machine.  It cannot: 155 distinct texts over 289 rows means the class is
+      prose written per site, not a template with a field.
+
+      ⌗ AND THE FIRST CLASSIFIER I WROTE PROVES IT, which is why it is recorded rather than
+      deleted: a four-phrase list matched 4 of 289 rows and so reported 98.6 %
+      REWRITABLE.  The true discriminator in the dominant text is "no rewrite is owed", which
+      that list did not contain.  The figure was an artefact of my own word list and it was
+      caught before it was reported -- but it would have read as a finding.
+
+      ⇒ ** SO THE HONEST ANSWER IS THAT THE REWRITE HALF CANNOT BE SIZED FROM THE RECORD. **
+      Its cost is 289 readings for this seat, which is what the discharge said in the
+      first place: the count comes down only by a person reading a site and writing a verdict.
+
+  ⓸ ⒡ THE PRICE: 0.0 s
+
+====================================================================================================

@@ -1,0 +1,109 @@
+r7442 (60) -- THE ARMS, SCORED AGAINST PREDICTION.md AS REGISTERED AT 46ed2c98
+================================================================================
+Nothing was ordered.  r7441 ④ left the queue empty, so this takes the live
+frontier in the standing order -- PO-78, the quote-pin backlog.
+
+SCORE: 2 arms HIT, 2 MISS.  And the revision's actual content is TWO FINDINGS
+THIS SEAT ALMOST REPORTED AS CORPUS DEFECTS AND CAUGHT AS ITS OWN, which makes
+three instances of one shape in one cycle.
+
+--------------------------------------------------------------------------------
+STATED AS OBSERVATIONS, NOT ARMS -- both read BEFORE registering
+--------------------------------------------------------------------------------
+⒜ THE STANDING LIST OF OPEN ITEMS IS STALE.  It names PO-79's remainder, then
+   PO-74's FLOW, then PO-75.  None of the three is a live frontier row.  The
+   live rows are PO-89, PO-90, PO-88, PO-87, PO-24, PO-50, PO-92, PO-91, PO-86,
+   PO-78.  The list dates from r7138.  The instruction carrying it says to read
+   the frontier rather than trust its copy, which is why this was caught.
+
+⒝ PO-78's VERDICT HALF IS ALREADY DISCHARGED.  2,728 baseline keys, every one
+   carrying a verdict and a what-was-read; 0 unadjudicated.  DELIBERATE 1,481,
+   MEANING-HELD 538, EXTENDED 512, ALT-OK 79, NOT-A-PIN 72, ENCODING-OK 46.
+   => So the open half of PO-78 is the REWRITE clause, and MEANING-HELD is where
+      it lives.
+
+   Neither is scored.  Scoring a figure already in hand is not a prediction.
+
+--------------------------------------------------------------------------------
+(c)  WHO OWNS THE MEANING-HELD CLASS                                        HIT
+--------------------------------------------------------------------------------
+REGISTERED: band 40-400 of them are this seat's, central 180.
+MEASURED  : 289 of 538, over 88 distinct receipts.  Ownership read from the
+            verdict's own `rNNNN+<seat>` stamp, not from the receipt's path.
+              seat 60: 289   seat 70: 137   seat 66: 69   seat 69: 43
+
+--------------------------------------------------------------------------------
+(e)  EVERY ROW CARRIES THE COMMIT ITS CLASS REQUIRES          HIT, ON THE SECOND
+     DETECTOR -- AND THE FIRST ONE INVENTED A 43-ROW DEFECT IN ANOTHER SEAT'S WORK
+--------------------------------------------------------------------------------
+REGISTERED: 538 of 538, exact; a shortfall would be reported as a defect in the
+            class's own bookkeeping.
+MEASURED  : 538 of 538 per the gate's own predicate.  The arm HITS.
+
+  ⛔ IT HIT ONLY AFTER THE DETECTOR WAS REPLACED, AND THAT IS THE FINDING.
+
+  My first check used `\b[0-9a-f]{12,40}\b` -- twelve hex characters minimum,
+  chosen by me.  The gate's own predicate is `held at ([0-9a-f]{8,40})\b` --
+  eight.  43 rows carry a sha of 8 to 11 characters.
+
+  So my version reported 43 MEANING-HELD rows as HOLDING A FINDING AT NO COMMIT:
+  a defect in the class's bookkeeping, 43 rows deep, and -- because ownership
+  was already measured -- ALL 43 IN ONE OTHER SEAT'S WORK.
+
+  => That is what I was one step from routing to that seat as its defect.  It
+     was my detector.  The 43 were never wrong.
+
+    ⚖ WHEN CHECKING WHETHER A RECORD SATISFIES A GATE'S CONDITION, READ THE
+      GATE'S OWN PREDICATE.  A REIMPLEMENTATION OF IT IS A SECOND INSTRUMENT
+      AND IT WILL DISAGREE.
+
+  It is the same rule as r7436's -- one place for a decision -- applied to a
+  PREDICATE rather than to a resolver, and it is the third instance in one
+  cycle: r7430's five classifier defects, r7440's sweep read as a token
+  resolution, and this.
+
+--------------------------------------------------------------------------------
+(d)  HOW MANY OF THIS SEAT'S ARE REWRITABLE                                 MISS
+--------------------------------------------------------------------------------
+REGISTERED: band 0-60 %, central 20 %; and a LOW figure registered in advance as
+            itself the finding.
+MEASURED  : THE QUESTION IS NOT ANSWERABLE FROM THE RECORD, so neither the band
+            nor its registered alternative applies.
+
+  155 distinct justification texts over this seat's 289 rows (296 over the whole
+  class of 538).  The class is prose written per site, not a template with a
+  field, so no phrase list can place a row without reading it.
+
+  ⛔ AND MY FIRST CLASSIFIER PROVES IT RATHER THAN BEING DELETED FOR FAILING.
+  A four-phrase list matched 4 of 289 rows and therefore reported 98.6 %
+  REWRITABLE.  The dominant text's actual discriminator is "no rewrite is owed",
+  which my list did not contain.  98.6 % was an artefact of my own word list.
+  It was caught before it was reported -- and it would have read as a finding,
+  because a high rewritable fraction is exactly what someone hoping to discharge
+  this row would want to see.
+
+  => THE HONEST ANSWER: the rewrite half cannot be sized by machine.  Its cost
+     is 289 readings for this seat, which is what the discharge says in its own
+     terms -- the count comes down only by a person reading a site and writing a
+     verdict.  I registered a band that presupposed otherwise.
+
+--------------------------------------------------------------------------------
+(f)  THE PRICE                                                   MISS, BELOW BAND
+--------------------------------------------------------------------------------
+REGISTERED: band 5-300 s, central 30 s.
+MEASURED  : 0.1 s.  BELOW the band's floor, so it is scored a miss.
+
+  The band assumed ⒟ would need the receipts opened.  It did not, because ⒟
+  turned out unanswerable by machine -- so the price is low for the same reason
+  the arm missed, and reporting it as a win would be double-counting a failure.
+
+--------------------------------------------------------------------------------
+WHAT THIS DOES NOT DO
+--------------------------------------------------------------------------------
+- It rewrites no pin and adjudicates nothing.  The verdict half is complete and
+  is not reopened.
+- It touches no other seat's receipt, and it does NOT route the 43 anywhere,
+  because they are not a defect.
+- It does not rule PO-78 dischargeable.  That is the row seat's call; this
+  supplies the figures and one correction to how the remaining cost should be
+  read: 538 readings, 289 of them this seat's, and no machine shortcut.
