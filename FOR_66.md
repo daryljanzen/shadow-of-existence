@@ -22407,3 +22407,56 @@ settled — and the self-referential class is **12**.
 Nothing in this cycle is waiting on me.  Every induced file was restored byte-exact; `corpus/`, `scripts/`,
 `.github/` and `computations/formalisation/` are all clean, and the one gate cheap enough to re-run clean
 (60's join gate) came back **identical line for line** to its pre-walk output.
+
+## ⌗ `cc66.90` — **THE SECOND RED ON #496 CLASSIFIED: IT IS NOT A SECOND PROBLEM. ONE RECEIPT, TWO CHECKS. AND `FOR_CC66.md` ON `line/66` IS THREE WEEKS STALE**
+
+Status, not a result. Nothing here is waiting on me.
+
+### ① `scoped — the tolerance perturbation` was ALSO red, on five consecutive heads, and I had not commented on it
+
+My `#496` comment named only the plain suite.  The tolerance check was owed one of its own and now has it.
+Reading run `39023220364`, job `117369112627`:
+
+> `VERDICT: NOT A SWEEP -- no site flagged, but a receipt was not measured on both builds` — exit code 2
+
+**The sweep found nothing.**  `no site flagged`.  It exits 2 only because one receipt in scope could not be
+measured on both builds — which is the right behaviour, and the same principle your `r7422` put into
+`red_carry`'s `unmeasured` mark: *a silence is not a verdict.*  Its own record on that push:
+
+> `ran 15, 1 named red; +0 carried, 14 cleared by a green, 1 still red` · `NEVER PROBED: 0 of the 15`
+
+**14 of 15 cleared by a green on that very push, 0 never probed**, and the one still red is `V1` — which in
+**tolerance** mode is a `⚠ CONTRADICTED` member in its own right: *carried 14, cleared 9, on 5 line(s) over
+375.3 h*, `main` among them, with pairs red and green on commits between which nothing it reads differs.
+
+⇒ **The two reds are not two problems.**  The plain suite is red *because* `V1` fails; the tolerance
+perturbation is red *because a receipt that fails cannot be compared across builds*.  **One receipt, two
+checks.  Clearing `V1` clears both** — and `V1`'s `⓶` is P07's own wording, which is that paper owner's call.
+
+Established, not cited: `V1` is byte-identically red on this branch and in a pristine worktree at `main`'s
+current head `0e78a2ef0`, which has not moved; both transcripts are in the PR.  No re-run spent — the same
+verdict on five consecutive heads with the same receipt named is deterministic, not a flake.
+
+⌗ On the current head `840e09549` **both** scoped checks are `skipped` (this push touches only
+`computations/`); `fast` is still running and the PR stays watched.
+
+### ② ⚠ OPERATIONAL: `FOR_CC66.md` ON `origin/line/66` IS THREE WEEKS STALE, SO `main` IS THE LIVE CHANNEL
+
+My standing cycle tells me to read `FOR_CC66.md` from **both** `origin/main` and `origin/line/66` and take the
+newer as live.  Measured today:
+
+| ref | `FOR_CC66.md` last touched | top section |
+|---|---|---|
+| `origin/main` | **2026-10-17** (`0e78a2ef0`) | `r7439` — the live order |
+| `origin/line/66` | **2026-09-23** (`8897f7d5b`) | the P15 equality-scan routing, no `r74xx` anywhere in the file |
+
+`origin/line/66`'s tip is `c54e4f03c`, 24 September.  **So the two-ref rule is costing a fetch and a read
+every firing for a branch that has not carried an order to this seat in three weeks**, and if you ever route
+one there I would now be reading it *after* `main` rather than before.  Say whether `line/66` is retired for
+this purpose and I will stop reading it; until you do, I keep reading both, because a rule you set is not mine
+to drop on an inference.
+
+### ③ THE CYCLE'S OTHER STEPS, FOR THE RECORD
+No new order on either ref (`r7439` is answered through `.89`).  **No solver running** — checked by reading
+`/proc/*/environ` for `ACOUSTIC_two_arm`, not by a name test: **0**.  Nothing in flight, nothing unpushed,
+`corpus/`, `scripts/`, `.github/` and `computations/formalisation/` clean.
