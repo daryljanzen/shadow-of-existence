@@ -154,9 +154,9 @@ theorem mix_eq (K : ℝ) (a b c d : Fin 4) :
 /-- the contraction lemma: `R^{ab}{}_{cd} Y^{cd} = K(Y^{ab} − Y^{ba})` -/
 theorem contract (K : ℝ) (a b : Fin 4) (Y : Fin 4 → Fin 4 → ℝ) :
     ∑ c, ∑ d, mix K a b c d * Y c d = K * (Y a b - Y b a) := by
-  simp only [mix_eq, δ, mul_sub, sub_mul, Finset.sum_sub_distrib, ite_mul, one_mul, zero_mul, mul_ite,
-    mul_one, mul_zero, Finset.mul_sum]
-  simp [Finset.sum_ite_eq', Finset.sum_ite_eq]
+  simp only [mix_eq, δ, mul_sub, sub_mul, Finset.sum_sub_distrib, ite_mul, zero_mul, mul_ite,
+    mul_one, mul_zero]
+  simp [Finset.sum_ite_eq]
 
 theorem mix_anti (K : ℝ) (a b c d : Fin 4) : mix K b a c d = - mix K a b c d := by
   rw [mix_eq, mix_eq]; ring
@@ -425,10 +425,10 @@ theorem support (w : Fin 3 → ℝ) (hw : ∀ i, 0 < w i) :
     apply hne
     have z : ∀ i j, i ≠ j → W w i j = 0 := fun i j hij => by_contra fun h => hij (hW i j h)
     clear hne h3 comb hpos hW
-    rcases hc with ⟨hab | hcd, hac | hbd, had | hbc⟩ <;> simp [z, *]
+    rcases hc with ⟨hab | hcd, hac | hbd, had | hbc⟩ <;> simp [*]
   · rw [h3]; have := hpos 0; positivity
   · rw [h3]; have := hpos 0; have := hpos 1
-    simp only [W, if_true, show (0 : Fin 3) ≠ 1 by decide, if_false, mul_zero, add_zero]
+    simp only [W, ite_true, show (0 : Fin 3) ≠ 1 by decide, ite_false, mul_zero, add_zero]
     have := hw 0; have := hw 1; positivity
 
 /-- **`factorises`.** the two-label term is a product of two single-label moments -/
