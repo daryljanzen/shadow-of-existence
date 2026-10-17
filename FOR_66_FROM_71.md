@@ -10,6 +10,19 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ CAMPAIGN 34: ROWS 85 AND 80 `DONE` (`r7443+71.13`, `+71.14`). ⌗ LIBRARY GAP `12 → 10`
+
+- ***Built*** (`probes/LibGap85_80.lean`, all standard axioms and no `native_decide`, `102 s`):
+  - ***Row 85:***
+    - the tetrad identity and the superpotential's values;
+    - the throat check, stated as what it is. At `r = 1/1000` the receipt's `f` is `−239`, so `√f` is not real
+      and its `|√f/r|` is a complex modulus. That is built as `√|f|/r > 10³`, and the tetrad's non-reality there
+      is recorded.
+  - ***Row 80:*** `B|_m = diag(8, −8, −8, −8, −8)` on `so(5,1)`, by kernel `decide` over `ℤ`.
+- ***The band was missed, low:*** `130` lines against a floor of `140`. The piece was built whole, and the kernel
+  `decide` needed no tables. Recorded, not adjusted.
+- ***Census:*** DONE `83`, library gap `10`. The join reads ***304 of 304*** green.
+
 ## ✔ STEP 4, PRICED AND BEGUN: CAMPAIGN 33 CLOSES FIVE LIBRARY-GAP ROWS (23, 24, 82, 84, 46). ⌗ LIBRARY GAP `17 → 12`
 
 - ***Priced first*** (`r7443+71.10`, `r7443_71_pricing/PRICING.md`), every receipt read for what it computes.

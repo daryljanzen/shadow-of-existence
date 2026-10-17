@@ -79,12 +79,12 @@ index	status	receipt	decl	sources	unresolved
 77	DONE	receipts/P11_dynamics_paper/P11_twoKV.py	ShadowProbe.killing_of_invariant @ ShadowEngine.lean; ShadowProbe.gowdy_killing @ ShadowEngine.lean; ShadowProbe.killF_model @ probes/Row77Killing.lean; ShadowProbe.killF_coord @ probes/Row77Killing.lean; ShadowProbe.coord_not_killing @ probes/Row77Killing.lean; ShadowProbe.gowdy_coord_not_killing @ probes/Row77Killing.lean; ShadowProbe.rot_killF @ probes/Row77Killing.lean; ShadowProbe.gowdy_rot_not_killing @ probes/Row77Killing.lean	cell,join_scope	d_t(not declared); d_z(not declared); g_xx(not declared); g_yy(not declared)
 78	DONE	receipts/P11_dynamics_paper/P11_wall_ppwave.py	ShadowProbe.lcGam_pp @ ShadowEngine.lean; ShadowProbe.pp_ricci @ ShadowEngine.lean; ShadowProbe.pw_ricci_flat @ ShadowEngine.lean	sweep	
 79	DONE	receipts/P12_algebroid_paper/E1_static_gauge.py	ShadowProbe.sds_leaf_K_zero @ probes/Row79Leaf.lean; ShadowProbe.leaf_scal @ probes/Row79Leaf.lean; ShadowProbe.sds_leaf_R3 @ probes/Row79Leaf.lean	cell	
-80	LIBRARY GAP	receipts/P12_algebroid_paper/P12_coset_metric.py			
+80	DONE	receipts/P12_algebroid_paper/P12_coset_metric.py	ShadowProbe.LibGap85_80.killing_on_coset @ probes/LibGap85_80.lean	cell	
 81	DONE	receipts/P12_algebroid_paper/P12_the_separator_must_carry_the_mass.py	ShadowProbe.row81_separator @ probes/CurvatureInstances.lean	cell	
 82	DONE	receipts/P13_boundary_paper/P13_the_compact_face_is_odd_dimensional.py	ShadowProbe.LibGap5.friedrich_saturation @ probes/LibGap5.lean	cell	
 83	DONE	receipts/P13_boundary_paper/P13_the_last_evasion_inside_the_premise_is_the_squash_and_it_is_excluded_twice.py	ShadowProbe.row83_squashed_S5_everywhere @ probes/NonDiag.lean; ShadowProbe.curvG_eq @ probes/NonDiag.lean; ShadowProbe.row83_squashed_S5 @ probes/NonDiag.lean	cell	
 84	DONE	receipts/P13_boundary_paper/P13_the_one_scale_forbids_the_isometry_route.py	ShadowProbe.LibGap5.one_scale @ probes/LibGap5.lean; ShadowProbe.LibGap5.mass_bounds @ probes/LibGap5.lean	cell	
-85	LIBRARY GAP	receipts/P14_matter_sector_paper/P14_B3_spinor_vielbein.py			
+85	DONE	receipts/P14_matter_sector_paper/P14_B3_spinor_vielbein.py	ShadowProbe.LibGap85_80.tetrad_metric @ probes/LibGap85_80.lean; ShadowProbe.LibGap85_80.superpotential_values @ probes/LibGap85_80.lean; ShadowProbe.LibGap85_80.horizon_W @ probes/LibGap85_80.lean; ShadowProbe.LibGap85_80.throat_check @ probes/LibGap85_80.lean	cell	
 86	ROW: A DIFFERENT KIND	receipts/P14_matter_sector_paper/P14_is_there_a_singlet_for_the_axis_pair.py	ShadowProbe.R53R86.branch_count @ probes/Row53Row86.lean	cell	
 87	DONE	receipts/P14_matter_sector_paper/P14_the_axis_vantage_is_a_pair.py	ShadowProbe.axis_vantage @ probes/NoConnectionSweep.lean	cell	
 88	DONE	receipts/P14_matter_sector_paper/P14_the_axis_vantage_is_imaginary_not_absent.py	ShadowProbe.axis_vantage @ probes/NoConnectionSweep.lean	cell	
