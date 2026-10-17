@@ -658,38 +658,20 @@
  },
  "claude/youthful-darwin-xvkwh7": {
   "suite": {
-   "corpus/check_formalisation_join.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39070214529",
-    "since": "2f66d1bc7ef53731d4b39e4a07ee57c18b533926",
-    "unmeasured": true
-   },
-   "receipts/L_probability/S36_two_more_faces_of_the_live_subject_family_and_each_needed_a_different_widening_of_what_gets_run.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39070214529",
-    "since": "2f66d1bc7ef53731d4b39e4a07ee57c18b533926",
-    "unmeasured": true
-   },
-   "receipts/L_probability/S47_the_cheap_tail_closes_whole_and_nine_of_its_fourteen_rows_needed_an_instrument_or_a_normalised_reader_rather_than_a_widening.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39070214529",
-    "since": "2f66d1bc7ef53731d4b39e4a07ee57c18b533926",
-    "unmeasured": true
-   },
    "receipts/P15_CR_cosmology/P15_a_drive_clock_error_cannot_move_the_spacing_so_it_is_a_running_phase_but_its_direction_on_the_peak_plane_depends_on_which_pair_of_stretches_is_read_and_the_two_clocks_disagree_about_which_is_longer.py": {
     "gates": [],
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39052478575",
-    "since": "cadf9cc167cfa9f695baf3b1d23dc1137ebc3950",
-    "unmeasured": true
+    "since": "cadf9cc167cfa9f695baf3b1d23dc1137ebc3950"
    },
    "receipts/P15_CR_cosmology/P15_the_carrier_separation_on_L_p_is_the_combs_peak_count_not_the_carrier_and_the_closure_has_no_number_because_the_degeneracy_is_sampling_invariant.py": {
     "gates": [],
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39052478575",
-    "since": "cadf9cc167cfa9f695baf3b1d23dc1137ebc3950",
-    "unmeasured": true
+    "since": "cadf9cc167cfa9f695baf3b1d23dc1137ebc3950"
    },
    "receipts/P15_CR_cosmology/P15_the_fourth_parameter_recovers_the_drift_the_gaps_show_but_the_spacing_and_the_drift_are_not_separable_so_the_data_half_still_does_not_happen.py": {
     "gates": [],
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39052478575",
-    "since": "cadf9cc167cfa9f695baf3b1d23dc1137ebc3950",
-    "unmeasured": true
+    "since": "cadf9cc167cfa9f695baf3b1d23dc1137ebc3950"
    }
   },
   "tolerance": {
