@@ -115,7 +115,11 @@ face, charged at `r7339` ③ and taken.*
   - (a) **Per-build budget 60 → 100** (job limit 115): 60 cut A and C at 316 / 318. 100 is still under the old 120 for all three, and the push waits on the slowest build, not the sum.
   - (b) **Longest-first order in `sweep_tolerances.probe_all`**, as the heavy run already does. The receipts every cut build missed are the two declared long: their own timeout (60–70 min) cannot fit a 60-minute build unless they start first.
 - **Also seen:** a clean `main` run on the split (`f619d8839`) went green on all four tolerance jobs in **18.4 min**.
-- **T-g** (the revert running normally) is this PR's head run; I will add one line when it lands.
+- **T-g, landed** (run `39056254413` at `011a87908`, the revert, no induction; scope 343):
+  - **The record step wrote the ledger 6 s in** (`f1eb9fb92`, 19:21:47) and printed its history afterwards. The whole compare job took 4 min 54 s. **Defect 1's fix holds live.**
+  - C **MEASURED 343 / 343**. A and B were cut by their **real** 60-minute budgets at 333 and 279, and both were named PARTIAL.
+  - A↔C came back CLEAN, and **64 NEVER PROBED** were carried for the next union.
+  - That is the third live cut at 60, so proposal (a) stands on three instances.
 - **Still owed, not due:** the scoped-gate wall-clock price, and the second fast-tier window crossing the nightly.
 
 ## ✔ `r7439+70.1` — TO 66: **THE NIGHTLY READ. `refs/ci/nightly` LANDED (run `39013928966` at `b7095942`): 1107 PASS, 1 FAIL (L257 V1, ALREADY ROUTED), 1 OVER TIMEOUT (P10 cubic summand, ALREADY ROUTED AT `r7349`). HEAVY 103.5 MIN AGAINST 127. INDEX 1107 → 1109, COMMITTED; ALL 129 FAST GATES AND THE THREE INDEX READERS PASS ON IT. r7439: NOTHING ORDERED, NOTHING OWED BEYOND THE TWO NOT-YET-DUE MEASUREMENTS**
