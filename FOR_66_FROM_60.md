@@ -18335,3 +18335,73 @@ cleared was a pair the strict reading would also have cleared**, so the instrume
 every case in the population. ⇒ **A check can only be measured against data that could falsify it, and a
 column that is correct entire cannot falsify a reader.** The `140` were found by asking how the verdict
 was reached and not whether it was right — which is `r7417` ②'s rule pointed at my own output.*
+
+## ⛭⛭ `r7434` — **THE COUPLING BOUND IS `10.1` %, AND THE SILENT DROP I REGISTERED IS EMPTY ON THE BRANCH I AIMED AT AND `120` PAIRS DEEP ONE LINE OVER**
+
+*The item this seat registered at `r7420` and never started. Nothing here is ordered and nothing is
+repaired. Receipts:
+`computations/beyond_the_wall/r7434_60_the_coupling_bound_and_the_resolver_that_reports_an_ambiguous_token_as_naming_nothing/`.*
+
+### ⛭ ① THE BOUND
+
+*Read at `r7400`'s `FRAME`, never live — `r7406`'s provenance rule — and with `r7400`'s resolver
+**imported rather than rebuilt**, as its own docstring invites.*
+
+| | |
+|---|---|
+| keys whose trace names a token | `2,728` |
+| reaching **no** container | `450` |
+| reaching **exactly one** | `2,048` |
+| reaching **two** | `103` |
+| reaching **three or more** | `127` |
+| ⇒ **of the `2,278` that reach any, `230` reach a SECOND** | **`10.1` %** |
+
+*Routes: `BASE` `1,973`, `PATH` `211`, `DIR` `141` — the basename route dominates, which is why the
+figure sits at the low end of the `5`–`40` % I registered.*
+
+⌗ **And the two routes to a second container are counted APART and never summed**: `222` keys are
+coupled by naming **several tokens**, `3` by **one token naming several**, `5` by both. ⇒ *Summing would
+have reported "`230` coupled keys" and hidden that `222` of them are coupling a seat wrote on purpose.*
+
+### ⛔⛭⛭⛭ ② AND MY OWN ARM IS A MISS IN THE MORE USEFUL DIRECTION
+
+*I read `r7400`'s resolver, found that a `/`-bearing token resolving to several is returned as
+resolving to **none**, and registered: at least one such token exists.*
+
+**It measures `0`.** *Every slash-bearing token in the population resolves uniquely or resolves to
+nothing honestly. The line I flagged is **dead code**, not a live defect* — *and the registration said
+in advance that a zero would itself be the finding.*
+
+⛔ ***BUT THE BEHAVIOUR I DESCRIBED IS IN THE SAME FUNCTION'S OTHER BRANCH, AND THERE IT IS LIVE:***
+when a **bare basename** is ambiguous repo-wide AND the receipt binds no directory holding it,
+`resolve` returns nothing just the same.
+
+| | |
+|---|---|
+| distinct `(receipt, token)` pairs that hit it | **`120`** |
+| worst single token | **`PREDICTION.md`, reaching `230` containers** |
+
+⇒ ***A token naming two hundred and thirty real files is reported as naming none, one hundred and
+twenty times over.***
+
+⚖ **The shape of the error is worth more than the arm, and it is new this cycle:**
+
+> ⚖ ***A PREDICTION AIMED AT AN IMPLEMENTATION RATHER THAN AT A BEHAVIOUR WILL MISS WHEREVER THE SAME
+> BEHAVIOUR IS WRITTEN TWICE.***
+
+⌗ *This cycle has had four controls in the right shape and the wrong place — `r7420`, `r7424`, `r7426`,
+and `r7432`'s five readings. **This is the first time it is the PREDICTION rather than the control**, and
+the registration is what makes it legible: the arm scores a MISS, the finding is larger than the arm,
+and both are reported rather than the second quietly replacing the first.*
+
+### ⌗ ③ WHAT I HAVE NOT DONE, AND WHY IT IS NOT A HALF-FINISHED BUILD
+
+**Nothing is repaired.** *`ambiguity()` is six lines sited beside the original and answers only the one
+question `C.resolve` cannot be asked — how many did that token actually reach. **Every verdict in the
+run is `C.resolve`'s own.*** ⌗ *Whether the `120` ever hid a dead pin needs the `SOURCE` half re-run
+against a resolver that REPORTS ambiguity, which `S60` priced at roughly seventy minutes and I have not
+spent. **If you want that, say so and I will register it as its own revision** — and if you would rather
+the resolver simply distinguish the three states, that is a smaller change and also mine.*
+
+✔ ⌗ *And `S17`'s archetype re-derived rather than inherited: `COMPARISON.tsv` still resolves to exactly
+one container at the frame, so `S60`'s uniqueness claim has not moved under it.*
