@@ -22,8 +22,8 @@ index	status	receipt	decl	sources	unresolved
 20	DONE	receipts/L801_nonlinear_shear_freedom/N1_the_nonlinear_freedom_is_the_general_first_class_structure.py	ShadowProbe.contracted_bianchi @ probes/Bianchi2.lean; ShadowProbe.R20Freedom.tt_waves @ probes/Row20Freedom.lean; ShadowProbe.R20Freedom.superposition_transverse @ probes/Row20Freedom.lean; ShadowProbe.R20Freedom.mode_equation @ probes/Row20Freedom.lean; ShadowProbe.R20Freedom.shear_square @ probes/Row20Freedom.lean	cell	
 21	LIMIT OF A DONE ROW	receipts/L808_nariai_extension/S1_the_nariai_closed_form_extends_as_a_series_in_the_horizon_separation.py	ShadowProbe.row104_nariai_root @ probes/CurvatureInstances.lean; ShadowProbe.nariai_curvature @ probes/CurvatureInstances.lean	cell	
 22	DONE	receipts/L816_po6_subleading_survives/S1_the_subleading_log_divergence_is_gauss_bonnet_and_the_ledger_survives.py	ShadowProbe.curv_T @ ShadowEngine.lean; ShadowProbe.ds_invariants @ ShadowEngine.lean	sweep	
-23	LIBRARY GAP	receipts/L818_po6_running_layer/S1_the_one_constant_ledger_survives_on_the_running_layer_not_only_fixed_de_sitter.py			
-24	LIBRARY GAP	receipts/L819_shear_boundary_coupling/S1_the_ledgers_one_irreducible_survivor_is_the_conformal_coupling_that_turns_on_at_the_shear.py			
+23	DONE	receipts/L818_po6_running_layer/S1_the_one_constant_ledger_survives_on_the_running_layer_not_only_fixed_de_sitter.py	ShadowProbe.frw_invariants @ probes/RunningLayer.lean; ShadowProbe.tv_identity @ probes/RunningLayer.lean; ShadowProbe.ledger_general @ probes/RunningLayer.lean; ShadowProbe.ledger_layer @ probes/RunningLayer.lean; ShadowProbe.ledger_ds_point @ probes/RunningLayer.lean	cell	
+24	DONE	receipts/L819_shear_boundary_coupling/S1_the_ledgers_one_irreducible_survivor_is_the_conformal_coupling_that_turns_on_at_the_shear.py	ShadowProbe.LibGap5.b4_rewrite @ probes/LibGap5.lean; ShadowProbe.LibGap5.trace_relation @ probes/LibGap5.lean; ShadowProbe.LibGap5.shear_onset @ probes/LibGap5.lean; ShadowProbe.row1_shear @ probes/BianchiI.lean	cell	
 25	DONE	receipts/P01_BH_causality/P01_metric_singularity_algebra.py	ShadowProbe.schw_charts @ probes/NoConnectionSweep.lean; ShadowProbe.schw_pg_shift @ probes/NoConnectionSweep.lean	cell	
 26	LIMIT OF A DONE ROW	receipts/P01_BH_causality/P1_the_unruh_case_is_what_makes_the_criterion_completion_and_not_perspective.py	ShadowProbe.unruh_ds_limits @ ShadowEngine.lean; ShadowProbe.two_surface_gravities @ ShadowEngine.lean; ShadowProbe.ds_horizon_iff @ ShadowEngine.lean; ShadowProbe.ds_surface_gravity @ ShadowEngine.lean	cell	
 27	DONE	receipts/P02_janzen_circle/P02_analytic_continuations.py	ShadowProbe.circle_continuation @ probes/NoConnectionSweep.lean	cell	
@@ -45,7 +45,7 @@ index	status	receipt	decl	sources	unresolved
 43	DONE	receipts/P05_groupoid/V5_homothety_charge.py	ShadowProbe.flat_isLeviCivita @ ShadowEngine.lean; ShadowProbe.homothety_nabla @ ShadowEngine.lean; ShadowProbe.homothety_charge @ ShadowEngine.lean	cell	
 44	DONE	receipts/P07_CR_framework/P07_eikonal_ratio_is_D_minus_three.py	ShadowProbe.lcGam_diag3 @ ShadowEngine.lean; ShadowProbe.null_radial @ ShadowEngine.lean; ShadowProbe.sds_photon_lyapunov @ ShadowEngine.lean	sweep	
 45	DONE	receipts/P07_CR_framework/P07_sds_kretschmann.py	ShadowProbe.sds_kretschmann @ probes/CurvatureInstances.lean	cell	
-46	LIBRARY GAP	receipts/P07_CR_framework/P07_the_double_root_removes_the_first_law_and_the_area_mismatch_together_and_the_debt_is_at_the_horizon_that_carries.py			
+46	DONE	receipts/P07_CR_framework/P07_the_double_root_removes_the_first_law_and_the_area_mismatch_together_and_the_debt_is_at_the_horizon_that_carries.py	ShadowProbe.LibGap5.photon_sphere @ probes/LibGap5.lean; ShadowProbe.LibGap5.nariai_seam @ probes/LibGap5.lean; ShadowProbe.LibGap5.areas_entropies @ probes/LibGap5.lean	cell	
 47	DONE	receipts/P07_CR_framework/P07_the_trio_is_a_pair_because_the_foliations_umbilicity_and_the_photon_sphere_are_one_equation_on_any_static_sphere_and_what_merges_at_the_forced_member_is_kappa_with_lambda.py	ShadowProbe.leaf_K @ probes/SecondSeatFoliation.lean	cell	
 48	DONE	receipts/P08_slicing_operator/P08_lapse_split.py	ShadowProbe.static_Gtt_Grr @ probes/SecondSeatStatic.lean	cell,join_scope	p_r(not declared)
 49	DONE	receipts/P08_slicing_operator/P08_matter_functional.py	ShadowProbe.static_AeqF @ probes/SecondSeatStatic.lean; ShadowProbe.static_density @ probes/SecondSeatStatic.lean	cell	
@@ -81,9 +81,9 @@ index	status	receipt	decl	sources	unresolved
 79	DONE	receipts/P12_algebroid_paper/E1_static_gauge.py	ShadowProbe.sds_leaf_K_zero @ probes/Row79Leaf.lean; ShadowProbe.leaf_scal @ probes/Row79Leaf.lean; ShadowProbe.sds_leaf_R3 @ probes/Row79Leaf.lean	cell	
 80	LIBRARY GAP	receipts/P12_algebroid_paper/P12_coset_metric.py			
 81	DONE	receipts/P12_algebroid_paper/P12_the_separator_must_carry_the_mass.py	ShadowProbe.row81_separator @ probes/CurvatureInstances.lean	cell	
-82	LIBRARY GAP	receipts/P13_boundary_paper/P13_the_compact_face_is_odd_dimensional.py			
+82	DONE	receipts/P13_boundary_paper/P13_the_compact_face_is_odd_dimensional.py	ShadowProbe.LibGap5.friedrich_saturation @ probes/LibGap5.lean	cell	
 83	DONE	receipts/P13_boundary_paper/P13_the_last_evasion_inside_the_premise_is_the_squash_and_it_is_excluded_twice.py	ShadowProbe.row83_squashed_S5_everywhere @ probes/NonDiag.lean; ShadowProbe.curvG_eq @ probes/NonDiag.lean; ShadowProbe.row83_squashed_S5 @ probes/NonDiag.lean	cell	
-84	LIBRARY GAP	receipts/P13_boundary_paper/P13_the_one_scale_forbids_the_isometry_route.py			
+84	DONE	receipts/P13_boundary_paper/P13_the_one_scale_forbids_the_isometry_route.py	ShadowProbe.LibGap5.one_scale @ probes/LibGap5.lean; ShadowProbe.LibGap5.mass_bounds @ probes/LibGap5.lean	cell	
 85	LIBRARY GAP	receipts/P14_matter_sector_paper/P14_B3_spinor_vielbein.py			
 86	ROW: A DIFFERENT KIND	receipts/P14_matter_sector_paper/P14_is_there_a_singlet_for_the_axis_pair.py	ShadowProbe.R53R86.branch_count @ probes/Row53Row86.lean	cell	
 87	DONE	receipts/P14_matter_sector_paper/P14_the_axis_vantage_is_a_pair.py	ShadowProbe.axis_vantage @ probes/NoConnectionSweep.lean	cell	

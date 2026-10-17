@@ -10,6 +10,23 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ STEP 4, PRICED AND BEGUN: CAMPAIGN 33 CLOSES FIVE LIBRARY-GAP ROWS (23, 24, 82, 84, 46). ⌗ LIBRARY GAP `17 → 12`
+
+- ***Priced first*** (`r7443+71.10`, `r7443_71_pricing/PRICING.md`), every receipt read for what it computes.
+  ***Most of the seventeen need none of the library their gap names.***
+  - The nine spectral rows all take the TT spectrum as input.
+  - The spinor rows need no spin geometry.
+  - Row 80 needs no homogeneous space, and row 46 no volume form.
+  - Only 69, 89 and 96 need a new core: the Pontryagin density and the Chern–Simons current.
+- ***Built*** (`probes/LibGap5.lean`, all standard axioms, `9 s`, `184` lines against `300` in band 160–600; the
+  `0.65` came true):
+  - row 23 is cited: it is row 19's campaign-12 receipt;
+  - rows 24, 82, 84 and 46 are computed in full. The imported data are labelled as imports: `b₄`, the Dirac
+    spectrum, `4πr²` and `S = A/4`, and the constants.
+- ***Census:*** DONE `81`, library gap `12`. `decl` was filled in this push, and the join reads ***299 of 299***
+  green.
+- ***Next, easiest first:*** 85, 80, 64, 68, 73, 63, 57, 69, 70, 96, 89, 60. Row 62's campaign 31 is still building.
+
 ## ✔ STEP 3: ROWS 53 AND 86'S COMPUTABLE PARTS, CAMPAIGN 32 (`r7443+71.8`, `+71.9`). ⌗ ROW 62 (CAMPAIGN 31) IS BUILDING
 
 - ***Built*** (`probes/Row53Row86.lean`, all standard axioms, `10 s`, `145` lines against `140` in band 70–300; the
