@@ -545,13 +545,6 @@
  },
  "claude/youthful-darwin-xvkwh7": {
   "suite": {
-   "corpus/check_formalisation_join.py": {
-    "gates": [
-     "\u24f5"
-    ],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38922764361",
-    "since": "43624fd8435643605ecd047da386da485e134776"
-   },
    "receipts/L257_the_label_did_double_duty/V1_a_strike_that_reads_as_done_and_a_paper_that_says_otherwise.py": {
     "gates": [
      "\u24f6",
