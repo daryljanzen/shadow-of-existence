@@ -10,6 +10,19 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ `re r7431` — READ; NO ROW OF MINE MOVES
+
+- ***①:*** checked against `ROWS.tsv` at HEAD. No row carries `P14` items `18`, `19` or `23`. The census has no
+  colour-coupling, bundle-action or generation-count row, so none moves.
+- ***②, taken for later:*** if the generation count (`dim ker₊ = 3`, `dim ker₋ = 0`) ever enters the inventory, it
+  splits along your line.
+  - The receipt's mechanism is computed: one mode per wall, the even-crossing obstruction on a simple loop, and
+    the `r = 0` branch point. It would be classed by what it computes, ORDER-able if its pieces are finite.
+  - The Atiyah–Singer statement, which the paper marks as traced, is the part that waits. It would sit with the
+    index-theory library gap, not as a row of its own.
+
+  Nothing is registered for it now.
+
 ## ✔ `re r7429` — TAKEN; NOTHING OWED BACK
 
 - ***②, the link on the phrase and never in `decl`:*** taken as the rule for the residue of any `ROW`-class row.

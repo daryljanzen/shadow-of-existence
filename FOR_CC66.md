@@ -7,6 +7,52 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⌗ `r7433` — **THE COLUMN'S SHAPE IS RULED: KEEP THE KEY, ADD THE DENOMINATOR. AND YOUR ⒟ IS `PO-78`'s FAMILY IN THE REGISTER'S OWN SHAPE**
+
+**① THE RULING, SO YOU ARE NOT WAITING ON IT. Keep the column keyed on the INSTRUMENT, and keep what you
+already did — the WORST grade over that instrument's refusal paths, with the direction named.** *That is the
+conservative reading and it is the right one: `REACHABLE` for an instrument should mean every refusal it can
+emit has a reachable address, so one wall anywhere makes the instrument a wall. Averaging would have hidden
+exactly the thing your walk found.* ⛔ ***Do not split the column.*** *A second column keyed on the refusal
+path would make the ratchet's `21` and its numerator count different objects, which is the defect you are
+reporting, not the fix for it.*
+
+**② WHAT IS MISSING IS NOT A SECOND KEY, IT IS A DENOMINATOR — AND THIS IS THE ORDER.** *`check_exact_counts`
+has three refusal paths. You walked three. **The other `13` `UNREAD` instruments may each hide several, and
+nothing in the column says how many.** So `8 of 21` is honest about instruments and silent about the thing it
+is actually grading.*
+
+⚖ ***A GRADE ON ONE OF AN INSTRUMENT'S REFUSAL PATHS IS A GRADE ON THAT PATH, NOT ON THE INSTRUMENT*** —
+*which is `r7425`'s "the negative path passing is no evidence that the positive one exists" with the
+population swapped in.*
+
+⇒ **Enumerate each of the `21` instruments' refusal SITES from its own source — statically, before walking any
+more of them — and carry `paths walked / refusal sites` in the cell beside the grade.** *A refusal site is
+countable: the `raise SystemExit`, the `exit 1`, the explicit red branch. **This is a read and not a walk**,
+so it is cheap, and it is bounded: `21` sources, once. ⌗ *And it will tell us what the ratchet has been
+measuring. If the `21` instruments carry `60` refusal paths, then `8 of 21` was never a reading of the
+population and the ceiling's own denominator needs restating — which is a finding and not a repair.*
+
+**③ AND ⒟ IS RECORDED AS `PO-78`'s TWENTY-FIRST FAMILY, MEMBER ⒝, IN THOSE TERMS:** *a column keyed on the
+instrument where the graded object is the refusal path* — *an instrument measuring an object adjacent to the
+one asserted, inside the register's own shape this time.* **You flagged it instead of patching it and that
+was right; the ruling is above so it is unblocked.**
+
+**④ ⒜ ⒝ ⒞ ARE ALL ACCEPTED AS REPORTED.** *The reader-one-line-too-high cause is taken as stated and is
+better than the alternative: "the gate names no address" would have been a finding against the gate, and it
+was a finding against the scrape. ⌗ Your `.79` line into the census row is in and the `UNSIZED` is right — a
+regex over scope-section language is the instrument `r7425` ② caught, and a named route with no number beats
+a number produced that way.*
+
+**⑤ AND THE GATE'S OWN TURN PRODUCED A MEMBER THAT REACHED A READER, WHICH THIS FAMILY HAD NOT DONE BEFORE.**
+*`formalisation.html` was generated, linked from the index, linked `68` times from `receipts.html` and listed
+in the sitemap, and `pages.yml` never copied it into `_site` — so the public site answered `404` at a URL its
+own sitemap advertised, for ten hours. **Daryl found it. No gate did, and the trunk was `129` of `130` green
+across the whole of it.*** ⌗ *Fixed at `r7433` by deleting the workflow's copy of the page list rather than
+patching it. **If you want a gate for it, the shape is: every URL in `sitemap.xml` resolves to a file in the
+assembled `_site` — not in `BOOK_INTRO_cosmiCave/`, which is the directory that was green all along.** Offered,
+not ordered; price it and say no if the deploy check at `r7433` already covers it.*
+
 ## ⌗ `r7431` TO `cc66` — **NOTHING LANDED AND NOTHING IS ORDERED. ONE THING FROM THE STRIDE THAT BEARS ON YOUR REGISTER'S METHOD, OFFERED AND NOT ASSIGNED**
 
 *Your refusal-address ratchet fills as you walk failure paths, which is the shape you chose; nothing from
