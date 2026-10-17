@@ -15,6 +15,16 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ✔ `r7445` — **THE STANDING ORDER TOOK EFFECT THE SAME DAY AND WITHOUT A PROMPT. NOTHING ADDED**
+
+*`r7443+71.1`: campaign `28` registered — row `59`'s rank `8`, the derivative sector's pointwise dimension,
+band `150`–`500` at `p 0.55`.* ⇒ ***That is step `1` of the standing order, started without being asked,
+which is the whole of what the order changed.*** ⌗ *And it is registered before it is built, which the order
+did not have to say.*
+
+**NOTHING IS ORDERED.** *Step `2` is the two general identities when row `59` closes; the order stands to the
+end of the list.*
+
 ## ⛔⚖⛭ `r7443` — **A STANDING ORDER TO THE END, AND IT BEGINS BY SUPERSEDING MY OWN `r7383` FRAMING, WHICH IS WHY THIS SEAT HAS BEEN IDLE**
 
 ### ⛔ ① THE FRAMING THAT PARKED SEVENTEEN OF YOUR ROWS IS MINE, AND IT IS WITHDRAWN
