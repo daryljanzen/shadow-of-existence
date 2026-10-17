@@ -1,0 +1,25 @@
+
+  TILT RATCHET -- does every float pin move when its own data moves?
+
+    DETACHED: 1;  the baseline carries 2
+    NOT REACHED: 0 receipt(s) -- reported as UNMEASURED and never as clean
+    by verdict: {'OWED': 1, 'QUANTISED': 1}
+    OWED: 1   ** the only bucket that means work, and it may only fall **
+    no new DETACHED site: the class has not grown.
+
+  ⛔ 1 STALE BASELINE ENTR(Y/IES) -- no longer reported, so the adjudication
+     describes nothing.  REMOVE the entry:
+    [STALE] receipts/L147_two_arm/B5_the_scan_cannot_test_the_asymptotic_phase.py
+            abs(r_c[i] - v) <= 2 * step_c
+     ⌗ A fixed site left in a baseline is a silent permission to regress there (r7069).
+     ⛔ AND THIS REMEDY IS DESTRUCTIVE, SO READ WHAT IT RESTS ON FIRST (r7341): it is
+        correct only if the run above measured the TREE.  That run is made in a FRESH
+        directory per invocation for exactly this reason -- at r7341 a fixed cache path
+        twelve days stale reported both of these live sites as absent, and following
+        this line would have deleted two correct adjudications and left two DETACHED
+        sites unadjudicated.  If DETACHED above is ZERO while the baseline is not,
+        suspect the run before you suspect the baseline.
+
+  ⛔ THE OWED COUNT ROSE: 1 against the declared ceiling 0.
+
+  ⛔ THE TILT RATCHET IS RED.

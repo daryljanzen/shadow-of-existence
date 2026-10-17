@@ -1,0 +1,5 @@
+
+  TILT RATCHET -- does every float pin move when its own data moves?
+
+  ⛔ the instrument's scoped list is missing at computations/beyond_the_wall/r7119_70_tilt_coverage/tilt_list.txt.
+     ⌗ This gate runs 70's operator over ITS OWN list and does not invent a scope.

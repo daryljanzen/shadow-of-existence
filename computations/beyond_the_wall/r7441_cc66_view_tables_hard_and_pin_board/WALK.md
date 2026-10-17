@@ -341,3 +341,70 @@ walked**, by the rule `.83` set when the `--unshallow` take failed.
 Every baseline induced in this cycle — `exact_count`, `marker_transposition`, `prose_pin`, `unread_figure`,
 `pin_claims`, and `regen_frontier.py`'s `GROUP` — was restored **byte-exact**; `git status` on `corpus/` and
 `scripts/` is clean.
+
+---
+
+# r7441 ⑦ — `check_tilt_pins` CLOSED WITHOUT DUPLICATING ITS SWEEP, AND A REFUSAL THAT WARNS AGAINST ITS OWN REMEDY
+
+`5 of 5` ✔.  This one needed care, because **the instrument declares its own cost in its own source**:
+
+> *Its cost is one receipt run per site — node 70's own figure … So it belongs in the monthly backstop beside
+> that sweep and not in the fast list, whose budget is 420s per gate.*  ⛔ *A gate placed where it cannot finish
+> is a gate that reports the clock instead of the tree.*
+
+69 sites at ~11 s each is ~13 minutes.  By `r7271` ⒜ and ⒝ — **CI is the suite and is read, not duplicated;
+nothing long runs in the chat container** — I did not run the full sweep here.
+
+**Two of the five refuse BEFORE the expensive run**, which is why they were free:
+
+- **NO BASELINE** — the shared ratchet sentence again.
+- **THE SCOPED LIST MISSING** — `the instrument's scoped list is missing at …/r7119_70_tilt_coverage/tilt_list.txt`,
+  with the rule in the next line: *"This gate runs 70's operator over ITS OWN list and does not invent a scope."*
+  **That file is 70's**, so this one grades `REACHABLE BUT ELSEWHERE` — an address that exists and is another
+  seat's to supply, never this one's.
+
+**The other three were induced on a ONE-SITE scope**, by reducing the gate's own list file — which is *data*,
+not the instrument.  One site, one run, 1 s per invocation:
+
+- **A NEW DETACHED SITE** names its remedy: *"READ IT AND RECORD A VERDICT."*  Induced by un-adjudicating `B4`.
+- **⛭ THE STALE BRANCH IS THE ONLY REFUSAL IN THIS REGISTER THAT WARNS AGAINST ITS OWN REMEDY**, and this is
+  the find of the section:
+
+```
+  ⛔ 1 STALE BASELINE ENTR(Y/IES) -- no longer reported, so the adjudication
+     describes nothing.  REMOVE the entry:
+     ⛔ AND THIS REMEDY IS DESTRUCTIVE, SO READ WHAT IT RESTS ON FIRST (r7341): it is
+        correct only if the run above measured the TREE. ... If DETACHED above is ZERO
+        while the baseline is not, suspect the run before you suspect the baseline.
+```
+
+**And my own induction is exactly the case it warns about.**  I reduced the scope, so `DETACHED: 1` fell below
+`the baseline carries 2` *because the RUN changed, not the tree* — and following the printed remedy would have
+deleted a correct adjudication, which is what happened at `r7341` with a stale cache path.  The warning is
+confirmed by an induction it did not anticipate.  **A refusal that tells you to distrust it is the opposite of
+a wall and the ladder has no rung for it.**
+
+- **THE CEILING** — the **fifth** member of the `r7439` class walked.  One line, **no address**, exactly like
+  `check_unread_figure`'s and unlike `check_prose_pins`':
+
+```
+  ⛔ THE OWED COUNT ROSE: 1 against the declared ceiling 0.
+```
+
+Not a wall: the only-falls rule prints in the same run — `OWED: 0 ** the only bucket that means work, and it
+may only fall **` — and one verdict took `OWED` from 1 to 0 and that line to green.  (The run stayed red for
+the *stale* reason the reduced scope had induced, which is correct; the ceiling line cleared, which is what was
+being measured.  Reported as what it is.)
+
+⇒ **5 of the 9 ceiling branches walked, 4 still a prediction, and the sub-distinction now has 2 members
+against 1**: two ceiling refusals print nothing, one prints both prongs.
+
+The baseline and 70's list file were both restored **byte-exact** (`git status` clean).
+
+## THE COUNT AFTER ⑦
+
+**45 walked, 11 self-referential, 25 pending of 81 — 55.6 %.  14 instruments fully accounted.  6 cells at
+`ONE STEP FROM A WALL`.**  `45 + 11 + 25 = 81`.
+
+**Still pending:** `check_revision_collisions` 5 · `ROWS.tsv : index` 7 · `check_quote_pins` 12 (last, as
+ordered) · `red_carry` 1 (in flight).

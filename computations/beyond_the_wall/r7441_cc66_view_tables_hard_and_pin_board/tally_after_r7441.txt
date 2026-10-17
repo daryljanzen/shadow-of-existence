@@ -5,7 +5,7 @@
   check_open_item_coherence                 2         0         0    2       24
   check_exact_counts                        5         1         1    6       30
   check_marker_transposition                4         1         0    5       35
-  check_tilt_pins                           0         0         0    5       40
+  check_tilt_pins                           5         0         1    5       40
   check_paper_pins_present                  1         1         0    2       42
   check_revision_collisions                 0         1         0    6       48
   check_cannot_fail                         4         0         1    4       52
@@ -22,6 +22,6 @@
   corpus/frontier_steps_history.tsv         --  nothing refuses on this key
 
   18 distinct sources, 81 refusal sites
-  40 walked, 11 self-referential, 30 pending   (49.4% walked)
-  5 cell(s) carry the ONE STEP FROM A WALL grade
-  fully accounted: 13 -> check_prose_pins, check_open_references, check_open_item_coherence, check_exact_counts, check_marker_transposition, check_paper_pins_present, check_cannot_fail, check_unread_figure, check_paper_pins_not_comment_only, check_figures_pinned, check_pin_board, check_pins_adjudicated_on_mint, check_view_tables : the debt file
+  45 walked, 11 self-referential, 25 pending   (55.6% walked)
+  6 cell(s) carry the ONE STEP FROM A WALL grade
+  fully accounted: 14 -> check_prose_pins, check_open_references, check_open_item_coherence, check_exact_counts, check_marker_transposition, check_tilt_pins, check_paper_pins_present, check_cannot_fail, check_unread_figure, check_paper_pins_not_comment_only, check_figures_pinned, check_pin_board, check_pins_adjudicated_on_mint, check_view_tables : the debt file

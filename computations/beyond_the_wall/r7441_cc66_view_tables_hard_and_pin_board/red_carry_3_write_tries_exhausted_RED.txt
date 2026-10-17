@@ -19,3 +19,15 @@
   RECORD (suite, r7441-walk-throwaway @ deadbeefde): ran 1, the job ended "failure" with no receipt it can name -- the WHOLE scope of 1 is carried; +1 carried, 0 cleared by a green, 0 still red, 0 no longer registered; 1 carried after this push
     + carried: receipts/L257_the_label_did_double_duty/V1_a_strike_that_reads_as_done_and_a_paper_that_says_otherwise.py
   ⌗ PO-68: the ledger's history for what is red here, read at the run:
+    repeated        suite     V1_a_strike_that_reads_as_done_and_a_paper_that_says_otherwise.py
+                    carried 18, cleared 18, on 4 line(s) over 187.5 h: …5tjf0b, …6awafl, …wgcmvt, main
+  red_carry: another job moved the ledger first -- re-reading and re-applying
+  RECORD (suite, r7441-walk-throwaway @ deadbeefde): ran 1, the job ended "failure" with no receipt it can name -- the WHOLE scope of 1 is carried; +1 carried, 0 cleared by a green, 0 still red, 0 no longer registered; 1 carried after this push
+    + carried: receipts/L257_the_label_did_double_duty/V1_a_strike_that_reads_as_done_and_a_paper_that_says_otherwise.py
+  ⌗ PO-68: the ledger's history for what is red here, read at the run:
+    repeated        suite     V1_a_strike_that_reads_as_done_and_a_paper_that_says_otherwise.py
+                    carried 18, cleared 18, on 4 line(s) over 187.5 h: …5tjf0b, …6awafl, …wgcmvt, main
+  red_carry: another job moved the ledger first -- re-reading and re-applying
+  RECORD (suite, r7441-walk-throwaway @ deadbeefde): ran 1, the job ended "failure" with no receipt it can name -- the WHOLE scope of 1 is carried; +1 carried, 0 cleared by a green, 0 still red, 0 no longer registered; 1 carried after this push
+    + carried: receipts/L257_the_label_did_double_duty/V1_a_strike_that_reads_as_done_and_a_paper_that_says_otherwise.py
+  ⌗ PO-68: the ledger's history for what is red here, read at the run:

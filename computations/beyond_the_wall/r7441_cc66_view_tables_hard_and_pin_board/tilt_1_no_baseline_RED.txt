@@ -1,0 +1,4 @@
+
+  TILT RATCHET -- does every float pin move when its own data moves?
+
+  ⛔ no baseline at corpus/tilt_pin_baseline.tsv -- this gate has no record to ratchet.
