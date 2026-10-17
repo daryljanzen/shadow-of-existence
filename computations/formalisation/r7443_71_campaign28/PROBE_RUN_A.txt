@@ -1,0 +1,6 @@
+$ lake env lean probes/Row59Rank.lean
+'ShadowProbe.R59Rank.gp_onto' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.R59Rank.hp_onto' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.R59Rank.basis_independent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.R59Rank.sector_rank_eight' depends on axioms: [propext, Classical.choice, Quot.sound]
+exit 0 ; wall 251 s
