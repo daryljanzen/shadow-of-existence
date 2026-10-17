@@ -1,0 +1,29 @@
+# TEMPORARY -- r7429+70 / r7431 ② experiment (node 70); deleted before the PR merges.  See
+# computations/beyond_the_wall/r7429_70_rerun_guard/PREDICTION_ADDENDUM_r7431.md.
+name: rerun-probe-seam (r7431 temporary)
+on:
+  push:
+    branches: ['claude/shadow-of-existence-setup-wgcmvt']
+    paths: ['computations/beyond_the_wall/r7429_70_rerun_guard/trigger.txt']
+concurrency:
+  group: ${{ github.run_attempt > 1 && format('probe-seam-rerun-{0}', github.run_id) || format('probe-seam-{0}', github.ref) }}
+  cancel-in-progress: true
+permissions: { contents: read }
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: measure (stands in for the scoped suite)
+        run: sleep 240
+      - name: record (stands in for red_carry --record; if always(), as the real one is)
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          tip=$(gh api repos/${{ github.repository }}/git/ref/heads/${{ github.ref_name }} --jq .object.sha)
+          echo "RECORD-STEP-REACHED job.status=${{ job.status }} sha=${{ github.sha }} attempt=${{ github.run_attempt }} tip=$tip"
+          if [ "$tip" = "${{ github.sha }}" ]; then orig=WRITE; else orig=SUPPRESS; fi
+          if [ "${{ github.run_attempt }}" -gt 1 ] && [ "$tip" != "${{ github.sha }}" ]; then recut=SKIP; else recut=WRITE; fi
+          [ "${{ job.status }}" = "success" ] && what=measured || what=unmeasured
+          echo "ORIGINAL-GUARD: $orig   RE-CUT-GUARD: $recut   (would file: $what)"
