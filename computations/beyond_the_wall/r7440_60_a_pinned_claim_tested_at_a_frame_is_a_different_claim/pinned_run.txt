@@ -1,0 +1,57 @@
+====================================================================================================
+  r7440 -- A PINNED CLAIM TESTED AT A FRAME IS A DIFFERENT CLAIM
+  the frame is still r7400's 15f27418 (15f274181); a PINNED receipt is read at ITS pin
+====================================================================================================
+
+  ⓪ THE r7438 POPULATION, RE-DERIVED: 107 keys, halves {'SOURCE': 107}
+
+  ⓵ ⒜ THE TEMPLATES LEAVE THE LITERAL POPULATION
+      keys in the r7438 population whose literal IS an f-string skeleton : 1
+        "FRAME = '{}'"
+          in S50_the_eleven_close_whole_and_all_three_arms_fail_high_becaus
+      and corpus-wide over all 2728 traced keys                       : 9
+
+  ⓶ ⒝ PIN-BEARING RECEIPTS, DETECTED BY SHAPE
+      receipts in the population                 : 29
+      of them resolving their containers AT A PIN : 2
+        CLAIM_SHA = d929d6bf183de511f39f3ba534b374add98ac5c4   in W1_the_two_plus_one_plus_one_is_excluded_by_a_symmetry_the
+          sweeps (no tree_of prefix — tokens only)
+        PIN = 9c06b92f   in S10_the_sweep_for_exact_counts_could_not_contain_its_own_g
+          sweeps ['receipts/', 'receipts/L_probability/']
+      of those, naming containers by a SWEEP rather than by tokens : 1
+      and corpus-wide over 416 traced receipts     : 4
+
+  ⓷ ⒠ THE CONTROL — r7439's OWN TABLE, REPRODUCED OR NOT
+      OK    'STAMP'
+             expected ['S2', 'S3', 'S4'], found ['S2', 'S3', 'S4']
+      OK    'TARGETS = sorted({r[0] for r in MINE})'
+             expected ['S2'], found ['S2']
+      OK    '_all_bodies.count(RETIRED) == 0'
+             expected ['S6'], found ['S6']
+      OK    'def shadow_run('
+             expected ['S5', 'S6'], found ['S5', 'S6']
+      OK    'for f in PROBE'
+             expected ['S5'], found ['S5']
+      OK    'len(_removed) == 1 and len(_added) == 8'
+             expected ['S6'], found ['S6']
+      ⇒ 6 of 6 reproduced
+
+  ⓸ ⒞⒟ THE RE-RUN, WITH BOTH REPAIRS IN
+      excluded as TEMPLATE                : 1
+      present in at least one candidate   : 106
+      ABSENT from every candidate         : 0
+      ⇒ r7438 said 7 absent; this says 0
+      verdicts moved PRESENT -> ABSENT    : 0
+      verdicts moved ABSENT  -> PRESENT   : 6
+      ⌗ the second column is the direction r7439 predicted; the FIRST is the one the order
+        did not claim and PREDICTION.md registered as possible, because a literal present at
+        the frame may postdate the pin.
+
+      ⒟ r7438's 100 present, re-measured through both repairs: 106 + 1 excluded = 107 of 107
+
+  ⓹ ⒡ THE PRICE
+      the presence test over 107 keys : 5.1 s
+      the whole run                              : 25.9 s
+      r7438's whole run, for comparison          : 43.6 s
+
+====================================================================================================

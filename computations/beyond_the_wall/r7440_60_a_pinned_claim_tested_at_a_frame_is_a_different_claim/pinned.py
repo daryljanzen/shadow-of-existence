@@ -75,7 +75,12 @@ def templates(receipt):
 
 # ───────────────────────────────────────────────────────────────── ⒝ the commit a receipt reads its tree at
 def pin_of(receipt, sha=None):
-    """(commit, name) when the receipt resolves its containers AT A COMMIT, else (None, None).
+    """(commit, name, prefixes) when the receipt resolves its containers AT A COMMIT, else (None, None, ()).
+
+    `prefixes` is what it SWEEPS -- the literal second argument of every `tree_of(PIN, '<prefix>')` call.
+    ⛔ r7440's own correction, caught by r7439's table used as a control: a receipt that names its
+    containers by a SWEEP has not named them by a TOKEN, and resolving tokens for it answers a question it
+    did not ask.  That is the same class of error as reading a pin as a frame, one level down.
 
     BY SHAPE, NOT BY A HAND LIST: a module-level assignment of a commit-like string, which is then passed
     as the FIRST POSITIONAL ARGUMENT of a call to `at` / `at_many` / `tree_of` / `_at`.  A hand list would
@@ -94,23 +99,35 @@ def pin_of(receipt, sha=None):
                     if isinstance(t, ast.Name):
                         consts[t.id] = v
     if not consts:
-        return None, None
-    used = []
+        return None, None, ()
+    used, prefixes = [], set()
     for n in ast.walk(tree):
         if isinstance(n, ast.Call) and n.args:
             fn = n.func.attr if isinstance(n.func, ast.Attribute) else getattr(n.func, 'id', None)
             a0 = n.args[0]
             if fn in AT_CALLS and isinstance(a0, ast.Name) and a0.id in consts:
                 used.append(a0.id)
+                if fn == 'tree_of' and len(n.args) > 1 and isinstance(n.args[1], ast.Constant) \
+                        and isinstance(n.args[1].value, str):
+                    prefixes.add(n.args[1].value)
     if not used:
-        return None, None
+        return None, None, ()
     name = Counter(used).most_common(1)[0][0]
-    return consts[name], name
+    return consts[name], name, tuple(sorted(prefixes))
 
 
 # ─────────────────────────────────────────── resolving and testing AT a commit, through cost's own resolver
 def _tree_at(sha):
     return [p for p in git('ls-tree', '-r', '--name-only', sha).split('\n') if p]
+
+
+def sweep_at(sha, receipt, prefixes):
+    """the containers a receipt's OWN rule names: every tracked `.py` under a swept prefix at `sha`, minus
+    the receipt itself.  This is the container set, not a guess at one -- `tree_of` is what the receipt
+    calls, and this reads the same tree with the same prefix."""
+    return sorted(p for p in _tree_at(sha)
+                  if p != receipt and p.endswith('.py')
+                  and any(p.startswith(pre) for pre in prefixes))
 
 
 def resolve_at(sha, receipt, toks):
@@ -183,16 +200,19 @@ def main():
     receipts = sorted({k[0] for k in hidden})
     pins = {}
     for rc in receipts:
-        p, nm = pin_of(rc)
+        p, nm, pre = pin_of(rc)
         if p:
-            pins[rc] = (p, nm)
+            pins[rc] = (p, nm, pre)
     print(f'      receipts in the population                 : {len(receipts)}')
     print(f'      of them resolving their containers AT A PIN : {len(pins)}')
-    for rc, (p, nm) in sorted(pins.items()):
+    for rc, (p, nm, pre) in sorted(pins.items()):
         print(f'        {nm} = {p}   in {rc.split("/")[-1][:58]}')
+        print(f'          sweeps {list(pre) if pre else "(no tree_of prefix — tokens only)"}')
     all_rc = sorted({k[0] for k in allkeys})
     pins_all = {rc: pin_of(rc) for rc in all_rc}
     pins_all = {rc: v for rc, v in pins_all.items() if v[0]}
+    swept = [rc for rc, v in pins_all.items() if v[2]]
+    print(f'      of those, naming containers by a SWEEP rather than by tokens : {len(swept)}')
     print(f'      and corpus-wide over {len(all_rc)} traced receipts     : {len(pins_all)}')
 
     # ── ⒠ the control FIRST: r7439's own table ───────────────────────────────────────────────────────
@@ -229,9 +249,10 @@ def main():
         if key in tmpl_keys:
             skipped.append(key)
             continue
-        pin = pins.get(rc, (None, None))[0]
+        pin, _nm, pre = pins.get(rc, (None, None, ()))
         if pin:
-            cands = resolve_at(pin, rc, named[key])
+            # THE RECEIPT'S OWN CONTAINER RULE FIRST: a swept prefix IS the container set
+            cands = sweep_at(pin, rc, pre) if pre else resolve_at(pin, rc, named[key])
             ok = bool(cands) and C.present_in(lit, rc, cands, sha=pin)
         else:
             cands = hidden[key]
@@ -266,7 +287,7 @@ def main():
         for k in sorted(hidden):
             st = ('TEMPLATE' if k in skipped else ('PRESENT' if k in present else 'ABSENT'))
             fh.write('\t'.join((k[0], json.dumps(k[1]), verdict.get(k, '?'),
-                               pins.get(k[0], ('', ''))[0] or '-', st)) + '\n')
+                               pins.get(k[0], ('', '', ()))[0] or '-', st)) + '\n')
 
     print('\n  ⓹ ⒡ THE PRICE')
     print(f'      the presence test over {len(hidden)} keys : {t_test:.1f} s')
