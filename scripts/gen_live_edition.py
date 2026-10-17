@@ -43,6 +43,7 @@ OUT_RCPT = os.path.join(ROOT, 'BOOK_INTRO_cosmiCave', 'receipts.html')
 OUT_FORM = os.path.join(ROOT, 'BOOK_INTRO_cosmiCave', 'formalisation.html')
 OUT_MAP = os.path.join(ROOT, 'BOOK_INTRO_cosmiCave', 'sitemap.xml')
 OUT_ROB = os.path.join(ROOT, 'BOOK_INTRO_cosmiCave', 'robots.txt')
+OUT_PAGES = os.path.join(ROOT, 'BOOK_INTRO_cosmiCave', 'PAGES.txt')
 
 # The public hostname, used only for the sitemap, which must carry absolute URLs
 # by the standard.  Everything else on the site stays relative.
@@ -1209,11 +1210,33 @@ const PAGES_URL = '{PAGES}';
         print(f'  formalisation.html written: {len(frows)} rows, {npairs} theorems linked, '
               f'{len(fcounts)} statuses, all worded.')
 
-    # ── sitemap and robots ────────────────────────────────────────────────
-    # Without these, a search engine has to FIND twenty-three pages by
-    # crawling, and with no inbound links it may not find them at all.  Both
-    # are generated from what was actually written, so a page cannot be in the
-    # book and missing from the sitemap.
+    # ── the one page list, and the manifest the deploy copies from ────────
+    # Without a sitemap a search engine has to FIND twenty-odd pages by
+    # crawling, and with no inbound links it may not find them at all.
+    #
+    # ** THIS LIST HAS THREE CONSUMERS AND USED TO HAVE A FOURTH THAT WAS A
+    #    COPY. **  The index's nav, the sitemap below and `PAGES.txt` are all
+    #    built from `pages` here.  `pages.yml`'s assemble step carried its own
+    #    hand-written list of the files to copy into `_site`, and `r7425` could
+    #    add `formalisation.html` to this list and to the nav but not to a list
+    #    it does not contain.  The page was generated, linked from the index,
+    #    linked 68 times from `receipts.html` and listed in the sitemap -- and
+    #    never copied.  The site served a 404 at a URL it was itself
+    #    advertising to search engines, for ten hours and every deploy since.
+    #    ⇒ *A copy of a list is a claim about the list at the moment it was
+    #    copied* (`r7411`), and the workflow's copy was a claim from before the
+    #    page existed.  The remedy is not to repair the copy but to delete it:
+    #    the deploy now reads `PAGES.txt`.
+    #
+    # ** AND IT IS CHECKED AGAINST THE DISK, NOT AGAINST THE INTENTION. **  Two
+    #    of the writes above are conditional -- `explainer.html` on there being
+    #    an explainer, `formalisation.html` on the join clearing -- so a list of
+    #    what this script MEANT to write is a third thing that can drift from
+    #    what is there.  The old comment here claimed the sitemap was
+    #    "generated from what was actually written": it was generated from what
+    #    was INTENDED, which is the weaker claim and is the one that failed.
+    #    Every entry is now stat'd before it is named.  Refusing is safe at
+    #    this point because nothing has been deployed yet.
     import datetime
     today = datetime.date.today().isoformat()
     pages = ['', 'introduction.html', 'explainer.html', 'frontier.html',
@@ -1221,6 +1244,28 @@ const PAGES_URL = '{PAGES}';
     if _fcheck:
         pages.append('formalisation.html')
     pages += ['paper_%s.html' % num for num, _t, _u, _s in papers]
+
+    manifest, bad = [], []
+    for rel in pages:
+        fn = 'live_edition.html' if rel == '' else rel
+        fp = os.path.join(ROOT, 'BOOK_INTRO_cosmiCave', fn)
+        if not os.path.exists(fp):
+            bad.append(fn + ' (never written)')
+        elif os.path.getsize(fp) == 0:
+            bad.append(fn + ' (empty)')
+        if fn not in manifest:
+            manifest.append(fn)
+    if bad:
+        raise SystemExit(
+            '  ⛔ PAGES.txt REFUSED: the page list names ' + ', '.join(bad)
+            + '.\n  The sitemap and the deploy both read this list, so a name in '
+              'it that is not\n  on disk is a 404 with a sitemap entry pointing '
+              'straight at it.')
+    with open(OUT_PAGES, 'w', encoding='utf-8') as fh:
+        fh.write('\n'.join(manifest) + '\n')
+    print(f'  PAGES.txt: {len(manifest)} pages, each verified non-empty on disk; '
+          'the deploy copies these and keeps no list of its own.')
+
     urls = []
     for rel in pages:
         # The index is listed once, at the root, rather than twice.
