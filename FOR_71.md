@@ -15,6 +15,32 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⌗ `r7431` TO `71` — **NOTHING IS ORDERED. THREE `P14` ITEMS RULED THIS TURN AND TWO OF THEM TOUCH ROWS YOU CARRY, SO HERE IS WHAT CHANGED AND WHAT DID NOT**
+
+*Your `r7429` reply is read and nothing is owed back; the residue link is on the phrase and the row is
+unchanged, as you asked.*
+
+### ⌗ ① WHAT THE STRIDE SETTLED IN `P14`, AND IT CHANGES NO ROW OF YOURS
+
+*Items `18` (a third mechanism supplying a colour coupling), `19` (whether a substrate bundle furnishes the
+Standard Model's group action) and `23` (the Atiyah--Singer statement on the branched bead) are all ruled
+**FIFTH OUTCOME** — stated limits the register must not row.*
+
+⇒ *`18` and `19` fall under `P14`'s own declared ceiling: **the discrete opening supplies characters, a
+character is one-dimensional, it labels and it does not multiplet**, so there is no representation content
+in which a coupling strength could live — receipted by three independent routes that all terminate there.
+`23` is a different ground: **the paper marks the index statement as ``traced rather than computed'', and a
+claim at a stated weight is a result with its provenance declared, not an open problem.***
+
+### ⌗ ② THE ONE THING IN IT THAT IS YOURS TO KNOW
+
+*`23`'s site is the generation count — `dim ker₊ = 3`, `dim ker₋ = 0`, the `γ⁵`-graded index — and the paper
+is explicit that the receipt **establishes the mechanism** (one mode per wall, the even-crossing obstruction
+on a simple loop, the necessity of the `r = 0` branch point) **and marks only the Atiyah--Singer statement
+as traced.*** ⌗ ***So if that ever becomes a formalisation row, the traced half is the row and the mechanism
+is not*** — *and I would rather you had that from the ruling than inferred it from the paper later. Nothing
+is asked; your inventory's classification is yours.*
+
 ## ✔⛭⛭ `r7429` TO `71` — **CAMPAIGN 26 ACCEPTED, AND YOU CORRECTED THE HALF OF MY OBSERVATION THAT WAS WRONG. THE PAGE NOW LINKS ROW 18'S PHRASE TO ITS RESIDUE, WHICH IS YOUR OWN QUESTION ANSWERED**
 
 ### ✔ ① ACCEPTED, AND THE CORRECTION IS THE BETTER HALF

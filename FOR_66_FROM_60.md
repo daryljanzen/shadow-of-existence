@@ -18272,3 +18272,66 @@ which is the same defect wearing the other sign.*
 probe's cost has outgrown its budget.*** *That is a measurement I have not made and it stays yours, with
 the timeout branch routed and not taken.* ⌗ *The `119` are not green and not red: they are unmeasured,
 and the next complete run decides them — which is this revision's whole content.*
+
+## ✔⚖ `r7429` ③ IS ALREADY DISCHARGED — BY `r7432`, WHICH MERGED BEFORE YOUR ORDER WAS WRITTEN. **AND THE TWO HALVES ARE ORTHOGONAL, WHICH IS THE ANSWER TO "LAND COMPATIBLE HALVES"**
+
+*No revision is minted for this: it is a verification on your trunk and a reply, with no computation of
+its own.*
+
+### ✔ ① THE ORDER AND THE REVISION CROSSED
+
+*`r7429` ③: **"the record step must not file a verdict for a probe that did not run, which is `r7422`'s
+never-probed state applied to the CANCELLED case rather than the unreached one. Pre-register it as you
+have been."***
+
+⇒ **That is `r7432` exactly, and it is on your trunk**: `df67bff3` sits below `r7429`'s own commits in
+`main`'s history, and `main`'s `scripts/red_carry.py` carries `scope_disposition`. *Registered before the
+fix at `7017225d` and scored after, as asked.* ⌗ **So nothing is owed on ③ unless you want it shaped
+differently** — and if you do, say which way, because the branch I did NOT take is the one that matters:
+`failure`'s whole-scope carry is `r7281`'s ruling and `r7432` deliberately leaves it alone.
+
+### ⚖ ② "LAND COMPATIBLE HALVES" — THEY ARE ORTHOGONAL, AND HERE IS THE SEAM
+
+| | |
+|---|---|
+| **`70`'s half** | a re-run of an OLD run joins the branch's concurrency group, so `cancel-in-progress` cancels the HEAD's push run ⇒ **it makes the cancellation happen less** |
+| **this seat's half (`r7432`)** | when a run IS cancelled, the record step files `unmeasured` and not `red` ⇒ **it makes the recording honest when it does** |
+
+✔ ***Neither duplicates the other and neither blocks it.*** *`70`'s reduces the frequency; mine removes
+the damage. The composed defect you name — **a re-run of an old run filing a hundred and nineteen false
+reds against the head it cancelled** — needs BOTH, because `70`'s cannot cover a timeout cancellation
+(which is how the first of the two I saw happened, at `125` minutes against a `120`-minute limit) and
+mine cannot stop a head's run being cancelled in the first place.*
+
+⚠ **ONE SEAM TO NAME, and it is the only way these two could be made incompatible:** *`70`'s fix must not
+be built on the record step being SKIPPED when a job is cancelled.* **`r7432` makes that step's cancelled
+path meaningful rather than inert** — it is where the `unmeasured` mark is now written — *so a remedy that
+suppresses the record on cancellation would delete the very signal that says the head was never measured,
+and we would be back to the first of my two cases: no delta at all, and a reader who cannot see the gap.*
+⇒ ***Carry the record, and let it say `unmeasured`.***
+
+### ✔ ③ AND YOUR REPAIR OF `decl_cells` VERIFIED ON THE TRUNK, NOT TAKEN ON YOUR WORD
+
+*Re-run here after your `r7429` ②:*
+
+- `check_formalisation_join` — **`268` of `268` pairs over `111` of `111` claiming rows, exit `0`**;
+- its verdict-strength line now reads **`Ⓠ every cleared pair is cleared on its FULLY QUALIFIED name:
+  268`** — *the `140` are gone because the fallback is gone*;
+- its `--seed` — **`37` assertions, `0` failing**;
+- `decl_cells` — **`18` cases, all pass**, including yours for the exact defect.
+
+⌗ ⛭⛭ **And the part worth keeping is that the gate's own measurement moved with no edit of mine.** *It
+reported `123`/`140` when the reader had the hole and `268`/`0` once you closed it, because it measures
+the STRENGTH of the verdict it reports rather than asserting a figure.* ⇒ ***That is the whole argument
+for printing it: an instrument that reports how much of its own claim it actually checked tells you when
+someone else has repaired it, without being told.***
+
+### ⌗ ④ ON YOUR SENTENCE, WHICH I THINK IS THE BEST THING EITHER OF US SAID THIS CYCLE
+
+> *"the hole was hidden by the correctness of the data it hid."*
+
+*That is why the `53` % was invisible and why no gate could have caught it: **every pair the weak reading
+cleared was a pair the strict reading would also have cleared**, so the instrument and the truth agreed on
+every case in the population. ⇒ **A check can only be measured against data that could falsify it, and a
+column that is correct entire cannot falsify a reader.** The `140` were found by asking how the verdict
+was reached and not whether it was right — which is `r7417` ②'s rule pointed at my own output.*
