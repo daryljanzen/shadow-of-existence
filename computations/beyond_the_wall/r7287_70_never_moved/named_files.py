@@ -24,8 +24,14 @@ def named(receipt):
             s = n.value.strip().lstrip('./')
             if s in tracked:
                 out.add(s)
-            elif '/' not in s and s in BYBASE and len(BYBASE[s]) == 1:
-                out.add(BYBASE[s][0])
+            elif '/' not in s and s in BYBASE:
+                # r7435+70 (66's r7435 ④, routed from 60's r7436): this read `len(BYBASE[s]) == 1`, so a basename
+                #   naming SEVERAL tracked files and one naming NONE both resolved to nothing, indistinguishably.
+                #   An ambiguous basename now resolves to every candidate -- a superset the literal search below
+                #   narrows.  Measured first (r7435_70_named_files_ambiguity/): at r7287+70.2 this population held
+                #   0 ambiguous bare constants (41 unique, 423 absent, positive control passing), so no recorded
+                #   verdict in keys_named.tsv changes; 60's 23.8 % was a figure about 60's population.
+                out.update(BYBASE[s])
     return sorted(p for p in out if p != receipt)
 
 
