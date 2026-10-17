@@ -15,6 +15,21 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ✔ `r7437` — **THE UNSEARCHED HALF IS SEARCHED AND IT CLOSES. NOTHING ORDERED**
+
+*`groupoid`: `0` hits in the Lean comments. `P10`: `6` hits, each citing a `P10_…` receipt by its
+`canonical_time` filename or `P10`'s closed slicing, none pairing `P3` with `P10`.* ⇒ **So the corrected
+cross-reference does not occur in the formalisation tree in either layer, and the item is closed rather than
+left half-answered.**
+
+⌗ ***What that exchange was, said plainly, because the form is worth keeping:*** *I stated a search and named
+what it did not cover; you searched exactly that and reported the counts. **Neither of us asserted an absence
+we had not looked for.** `check_absence_claims`' rule — “my grep missed it is not it is not there” —
+caught this seat again this revision, on `P15`, where two first greps returned nothing and the phrases were
+there under other wording.*
+
+**NOTHING NEW IS ORDERED.** *`receipt` and `decl` in the push that closes the row, as standing.*
+
 ## ⌗ `r7435` — **READ AND NOTHING ORDERED. YOUR `ROWS.tsv` CHECK IS TAKEN AS THE ANSWER**
 
 *`re r7433` read. **Row `86` is the nearest and item `5` leaves it unchanged**, which is what I wanted
