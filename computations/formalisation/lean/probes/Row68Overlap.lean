@@ -314,43 +314,48 @@ theorem trivia : Real.log 2 ≠ 0 ∧ deriv (fun _ : ℝ => Real.log 2) 1 = 0 �
 
 /-- occupation numbers of the three modes -/
 abbrev Occ := Fin 3 → ℕ
-/-- a state: its coefficient on each number basis vector `|n₀ n₁ n₂⟩` -/
+/-- a state: its coefficient on each number basis vector `|n₀ n₁ n₂⟩` (zero off the box) -/
 abbrev St := Occ → ℝ
-
-/-- the receipt's truncation: five levels per mode -/
-def NL : ℕ := 5
-
-/-- the box `nⱼ < 5` (the receipt's `125`-dimensional space) -/
-def inBox (n : Occ) : Prop := n 0 < NL ∧ n 1 < NL ∧ n 2 < NL
-
-instance (n : Occ) : Decidable (inBox n) := by unfold inBox; infer_instance
 
 /-- the unit occupation vector of mode `i` -/
 def e (i : Fin 3) : Occ := fun j => if j = i then 1 else 0
 
-/-- the truncated lowering operator `aᵢ`: `(aψ)(n) = √(nᵢ+1) ψ(n+eᵢ)` for `nᵢ + 1 < 5` -/
-noncomputable def lower (i : Fin 3) (ψ : St) : St :=
-  fun n => if inBox n ∧ n i + 1 < NL then Real.sqrt (n i + 1) * ψ (n + e i) else 0
+section ladder
 
-/-- the truncated raising operator `aᵢ†`: `(a†ψ)(n) = √nᵢ ψ(n−eᵢ)` for `nᵢ ≥ 1` -/
+-- which levels a mode keeps: `ok k ↔ k < 5` is the receipt's truncation, `ok = True` the full ladder
+variable (ok : ℕ → Prop) [DecidablePred ok]
+
+/-- the box of kept occupations (for `ok k ↔ k < 5`, the receipt's `125`-dimensional space) -/
+def inBox (n : Occ) : Prop := ok (n 0) ∧ ok (n 1) ∧ ok (n 2)
+
+instance (n : Occ) : Decidable (inBox ok n) := by unfold inBox; infer_instance
+
+/-- the lowering operator `aᵢ`: `(aψ)(n) = √(nᵢ+1) ψ(n+eᵢ)`, when `n` and `n + eᵢ` are kept -/
+noncomputable def lower (i : Fin 3) (ψ : St) : St :=
+  fun n => if inBox ok n ∧ ok (n i + 1) then Real.sqrt (n i + 1) * ψ (n + e i) else 0
+
+/-- the raising operator `aᵢ†`: `(a†ψ)(n) = √nᵢ ψ(n−eᵢ)` for `nᵢ ≥ 1`, when `n` is kept -/
 noncomputable def raise (i : Fin 3) (ψ : St) : St :=
-  fun n => if inBox n ∧ 0 < n i then Real.sqrt (n i) * ψ (n - e i) else 0
+  fun n => if inBox ok n ∧ 0 < n i then Real.sqrt (n i) * ψ (n - e i) else 0
 
 /-- `1/√(2wᵢ)` -/
 noncomputable def cc (w : Fin 3 → ℝ) (i : Fin 3) : ℝ := (Real.sqrt (2 * w i))⁻¹
 
 /-- `qᵢ = (aᵢ + aᵢ†)/√(2wᵢ)` -/
 noncomputable def q (w : Fin 3 → ℝ) (i : Fin 3) (ψ : St) : St :=
-  fun n => cc w i * (lower i ψ n + raise i ψ n)
+  fun n => cc w i * (lower ok i ψ n + raise ok i ψ n)
 
 /-- the vacuum `|000⟩` -/
 def vac : St := fun n => if n 0 = 0 ∧ n 1 = 0 ∧ n 2 = 0 then 1 else 0
 
-/-- `⟨0|qᵢ qⱼ|0⟩` -/
-noncomputable def vev2 (w : Fin 3 → ℝ) (i j : Fin 3) : ℝ := q w i (q w j vac) 0
+/-- `⟨0|qᵢ qⱼ|0⟩` (pairing with `⟨0|` is reading the coefficient at `n = 0`) -/
+noncomputable def vev2 (w : Fin 3 → ℝ) (i j : Fin 3) : ℝ := q ok w i (q ok w j vac) 0
 
 /-- `⟨0|q_A q_B q_C q_D|0⟩` -/
-noncomputable def vev4 (w : Fin 3 → ℝ) (A B C D : Fin 3) : ℝ := q w A (q w B (q w C (q w D vac))) 0
+noncomputable def vev4 (w : Fin 3 → ℝ) (A B C D : Fin 3) : ℝ :=
+  q ok w A (q ok w B (q ok w C (q ok w D vac))) 0
+
+end ladder
 
 /-- the free two-point function the Wick sum is built from -/
 noncomputable def W (w : Fin 3 → ℝ) (i j : Fin 3) : ℝ := if i = j then 1 / (2 * w i) else 0
@@ -363,20 +368,75 @@ theorem W_cc (w : Fin 3 → ℝ) (hw : ∀ i, 0 < w i) (i j : Fin 3) :
     W w i j = if i = j then cc w i ^ 2 else 0 := by
   rw [W, cc_sq w hw]
 
-/-- ⛭ **`two_point`.** `⟨0|qᵢqⱼ|0⟩ = δᵢⱼ/(2wᵢ)`: diagonal, computed from the mode operators -/
-theorem two_point (w : Fin 3 → ℝ) (hw : ∀ i, 0 < w i) (i j : Fin 3) : vev2 w i j = W w i j := by
-  rw [W_cc w hw]
-  fin_cases i <;> fin_cases j <;> simp [vev2, q, lower, raise, vac, inBox, e, NL] <;> ring
+section ladder
 
-/-- ⛭ **`wick`.** all `81` quartic vacuum expectations equal the Wick sum exactly -/
-theorem wick (w : Fin 3 → ℝ) (hw : ∀ i, 0 < w i) (A B C D : Fin 3) :
-    vev4 w A B C D = W w A B * W w C D + W w A C * W w B D + W w A D * W w B C := by
+variable (ok : ℕ → Prop) [DecidablePred ok]
+
+/-- ⛭ **`two_point`.** `⟨0|qᵢqⱼ|0⟩ = δᵢⱼ/(2wᵢ)`: diagonal, computed from the mode operators.
+Any truncation keeping levels `0, 1` will do. -/
+theorem two_point (h0 : ok 0) (h1 : ok 1) (w : Fin 3 → ℝ) (hw : ∀ i, 0 < w i) (i j : Fin 3) :
+    vev2 ok w i j = W w i j := by
+  rw [W_cc w hw]
+  fin_cases i <;> fin_cases j <;> simp [vev2, q, lower, raise, vac, inBox, e, h0, h1] <;> ring
+
+/-- ⛭ **`wick`.** all `81` quartic vacuum expectations equal the Wick sum exactly.
+Any truncation keeping levels `0, 1, 2` will do: the receipt's five levels, and the full ladder. -/
+theorem wick (h0 : ok 0) (h1 : ok 1) (h2 : ok 2) (w : Fin 3 → ℝ) (hw : ∀ i, 0 < w i) (A B C D : Fin 3) :
+    vev4 ok w A B C D = W w A B * W w C D + W w A C * W w B D + W w A D * W w B C := by
   have s2 : Real.sqrt 2 ^ 2 = 2 := Real.sq_sqrt (by norm_num)
-  have s4 : Real.sqrt 2 ^ 4 = 4 := by rw [show (4 : ℕ) = 2 * 2 from rfl, pow_mul, s2]; norm_num
   simp only [W_cc w hw]
   fin_cases A <;> fin_cases B <;> fin_cases C <;> fin_cases D <;>
-    simp [vev4, q, lower, raise, vac, inBox, e, NL] <;>
-    (ring_nf; try simp only [s2, s4]; try ring_nf)
+    simp [vev4, q, lower, raise, vac, inBox, e, h0, h1, h2] <;>
+    (ring_nf; try simp only [s2]; try ring_nf)
+
+end ladder
+
+/-- the receipt's truncation: five levels per mode -/
+def trunc5 (k : ℕ) : Prop := k < 5
+
+instance : DecidablePred trunc5 := fun k => by unfold trunc5; infer_instance
+
+/-- ⛭ **`wick_receipt`.** the receipt's computation itself (five levels per mode, `125` states), and the same on
+the untruncated ladder: two-point functions diagonal and `1/(2w)`, every quartic equal to its Wick sum -/
+theorem wick_receipt (w : Fin 3 → ℝ) (hw : ∀ i, 0 < w i) :
+    (∀ i j, vev2 trunc5 w i j = W w i j) ∧
+    (∀ A B C D, vev4 trunc5 w A B C D = W w A B * W w C D + W w A C * W w B D + W w A D * W w B C) ∧
+    (∀ i j, vev2 (fun _ => True) w i j = W w i j) ∧
+    (∀ A B C D, vev4 (fun _ => True) w A B C D =
+      W w A B * W w C D + W w A C * W w B D + W w A D * W w B C) := by
+  refine ⟨two_point _ ?_ ?_ w hw, wick _ ?_ ?_ ?_ w hw, two_point _ trivial trivial w hw,
+    wick _ trivial trivial trivial w hw⟩ <;> norm_num [trunc5]
+
+/-- ⛭ **`support`.** a non-zero quartic is supported on one or two distinct labels, never three or four;
+both one and two occur -/
+theorem support (w : Fin 3 → ℝ) (hw : ∀ i, 0 < w i) :
+    (∀ A B C D, vev4 trunc5 w A B C D ≠ 0 → ({A, B, C, D} : Finset (Fin 3)).card ∈ ({1, 2} : Finset ℕ)) ∧
+    vev4 trunc5 w 0 0 0 0 ≠ 0 ∧ ({0, 0, 0, 0} : Finset (Fin 3)).card = 1 ∧
+    vev4 trunc5 w 0 0 1 1 ≠ 0 ∧ ({0, 0, 1, 1} : Finset (Fin 3)).card = 2 := by
+  have h3 := (wick_receipt w hw).2.1
+  have hpos : ∀ i, 0 < W w i i := fun i => by have := hw i; simp [W]; positivity
+  have hW : ∀ i j, W w i j ≠ 0 → i = j := fun i j h => by by_contra hij; simp [W, hij] at h
+  have comb : ∀ A B C D : Fin 3, (A = B ∧ C = D) ∨ (A = C ∧ B = D) ∨ (A = D ∧ B = C) →
+      ({A, B, C, D} : Finset (Fin 3)).card ∈ ({1, 2} : Finset ℕ) := by decide
+  refine ⟨fun A B C D hne => comb A B C D ?_, ?_, by decide, ?_, by decide⟩
+  · rw [h3] at hne
+    by_contra hc
+    simp only [not_or, not_and_or] at hc
+    apply hne
+    have z : ∀ i j, i ≠ j → W w i j = 0 := fun i j hij => by_contra fun h => hij (hW i j h)
+    clear hne h3 comb hpos hW
+    rcases hc with ⟨hab | hcd, hac | hbd, had | hbc⟩ <;> simp [z, *]
+  · rw [h3]; have := hpos 0; positivity
+  · rw [h3]; have := hpos 0; have := hpos 1
+    simp only [W, if_true, show (0 : Fin 3) ≠ 1 by decide, if_false, mul_zero, add_zero]
+    have := hw 0; have := hw 1; positivity
+
+/-- **`factorises`.** the two-label term is a product of two single-label moments -/
+theorem factorises (w : Fin 3 → ℝ) (hw : ∀ i, 0 < w i) :
+    vev2 trunc5 w 0 0 * vev2 trunc5 w 1 1 = 1 / (4 * w 0 * w 1) := by
+  rw [(wick_receipt w hw).1, (wick_receipt w hw).1]
+  have := hw 0; have := hw 1
+  simp [W]; field_simp; ring
 
 end R68Overlap
 

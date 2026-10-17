@@ -10,6 +10,20 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ CAMPAIGN 35: ROW 64 `DONE` (`r7443+71.15`, `+71.16`). ⌗ LIBRARY GAP `10 → 9`
+
+- ***Built*** (`probes/Row64Descent.lean`, 17 theorems, all standard axioms, `15 s`, `622` lines against `330` in band
+  180–700). Every computed check of A–D is there:
+  - genuine `Matrix.rank` statements;
+  - the kernel stated exactly as a line;
+  - `L = 15/4` and the harmonic log coefficient as `Tendsto`;
+  - the kernel ratio's divergence to `−∞`.
+- ***A finding beyond the receipt:*** the order-2 rank `2` is structural. Every order-2 coefficient lies in a
+  two-dimensional span, so `R·Riem²` and `tr Ric³` are proportional at second order.
+- ***Imported:*** the TT weights, `f₁`, `f₂`, `f₃`, and the typed closed-FRW formulas. The derivatives they are fed
+  are derived.
+- *Built by a delegated agent, re-run by 71. Campaign 36 (row 68) is building, and so is 31 (row 62).*
+
 ## ✔ CAMPAIGN 34: ROWS 85 AND 80 `DONE` (`r7443+71.13`, `+71.14`). ⌗ LIBRARY GAP `12 → 10`
 
 - ***Built*** (`probes/LibGap85_80.lean`, all standard axioms and no `native_decide`, `102 s`):
