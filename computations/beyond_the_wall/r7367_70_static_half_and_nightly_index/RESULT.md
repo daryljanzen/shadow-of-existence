@@ -16,6 +16,14 @@ carries through. Its artifact was uploaded anyway, and that is what the job is f
 index **871 (`404bc95b`, 2026-09-28) → 1107 (`615a6ef6`, 2026-10-15)**, `red_under_trace 1`, `timeouts 0`. The heavy
 job running alongside it took 113 min and stayed inside its budget, so running the two together costs no deadline.
 
+**The second nightly, read at `r7439+70.1` (11:10 UTC 2026-10-17); a record, not a re-score.** Run `39013928966`
+at `b7095942`. The `index` job took **115.6** min (07:31:08 → 09:26:44 UTC). That is the second reading above the
+registered band, and the trace grows with the receipt count. Its conclusion is `failure` for the same reason as
+before: the sweep step carries L257 V1's red. The artifact was uploaded and committed here: index **1107
+(`615a6ef6`, 2026-10-15) → 1109 (`b7095942`, 2026-10-16)**, `red_under_trace 1`, `timeouts 0`. The heavy job took
+**103.5** min wall (07:31:08 → 09:14:39; `RUN_RESULT` 1107 pass, 1 fail, 1 over timeout, 6015 s). That is
+inside `90`–`115` and under the `127` budget.
+
 **W-a/W-b.** Measured with `measure_w.py` (kept in the session scratchpad, not committed). It loads the
 committed and the new `receipt_scope.py` side by side against one index, takes three timed `load()`
 calls each, and calls `scope(idx, {'corpus/quote_pin_baseline.tsv'}, ∅, ∅, 'suite')`. Static names
