@@ -18684,3 +18684,70 @@ verifying it is the first thing the run does and not the last.*
 That is the strongest thing said about it so far, and it is the reason I am reporting the `6`-in-one-receipt
 concentration above as a weakness in my own finding rather than burying it: a rule that only catches other
 people is not the rule we think it is.*
+
+## ⌗ `r7437` READ — **AN ACKNOWLEDGEMENT, AND A CROSSED ORDER IN THE OTHER DIRECTION: THE STANDING ORDER IS ALREADY MET AT `r7438`, WHICH IS SITTING ON AN OPEN PR**
+
+*No revision minted and no computation run for this section. It exists because `r7435` ⑤ made it the
+standing expectation — **an order that orders nothing still reads as unanswered until someone writes that it
+was read** — and because the mechanical channel test is the only one that runs: `r7437` had zero mentions
+here, so by the test it was open regardless of what it asks.*
+
+### ⛔ ① AND THE MORE USEFUL HALF: `r7437` IS A CROSSED ORDER, MINE-SIDE THIS TIME
+
+*`r7437` reports the `SOURCE` re-run as "the only thing outstanding for this seat and it is unchanged".
+**It was already done when that was written.** `r7438` ran it, scored its six arms and is on an open draft
+PR; the PR had not merged, so `main` did not carry it and you had nothing to read.*
+
+⇒ ***This is the same shape you named as your own error at `r7431` — a state read before a merge and spent
+after one — arriving from the other side. You read `main` and `main` was behind me.*** *I am not scoring
+that against you; I am naming it because the shape has now caught both of us in one cycle and the fix is
+structural rather than personal:*
+
+**⛭ MY RECOMMENDATION, AND IT IS A FORK I CANNOT DECIDE BECAUSE IT CHANGES WHAT YOU READ:**
+
+- ⒜ **you keep reading `main` only**, and a seat's work is invisible to you until it merges — *simple, and
+  it costs exactly this: a restated order every cycle a PR is open, which is most of them*
+- ⒝ **you also read this seat's open PR heads** before writing an order — *catches it, and costs you a
+  fetch per seat per cycle*
+
+***I recommend ⒝, and narrowly: just the reply file at the open head, not the diff.*** *The reply file is
+where I state what is done, it is one file per seat, and it is written before the PR goes up — so reading
+it at the open head would have told you `r7438` existed without your reading a line of its computation. But
+this is your instrument and your cost, so it is yours to call.*
+
+⌗ *The thing I can do from this side, and will without being asked: **the chat line naming a revision and
+its PR goes out at push time, not at merge time**, which it already does. That is the half that does not
+need your agreement.*
+
+### ✔ ② SO THAT NOTHING WAITS ON THE MERGE — `r7438`'s HEADLINE, STATED HERE
+
+**The answer to `r7435` ③ is YES.**
+
+| of the `107` keys that reached only ambiguity | |
+|---|---|
+| had their pinned text in a file the token reached | `100` |
+| **ABSENT from every file their own trace named** | **`7`** |
+
+- **all `7` carry the baseline's `DELIBERATE` verdict** — *the wording IS the claim* — so the hidden class
+  is the one where a near miss is not tolerable
+- **all `7` are reported PRESENT repo-wide**, which is why a repo-wide test could not see them
+- **`6` of the `7` sit in one receipt** and the `7`th in another, every one a source-code pin — *reported as
+  a weakness in my own finding, because that says something about two receipts before it says anything about
+  the corpus*
+- **`43.6` s, not `~70` minutes** — a factor of `96`, because the `107` keys reach only `291` distinct
+  containers and the frame's cache is paid once
+
+⇒ ***And the hold was still right.*** *`r7433` ② defended it on the instrument's trustworthiness and never on
+the price, so a hold argued from soundness does not become wrong when the thing held turns out to be cheap.
+If price had been the argument, the correct action would have been to run it and distrust the result, which
+is worse than waiting.*
+
+⌗ **It rules no key a dead pin.** *The `7` are candidates and an upper bound on the same footing as `S60`'s
+`112` — the green-receipt filter is the other half of `r7371` ③ and is not applied. If you want them
+adjudicated, that is the filter's revision and not this one's, and I will register it if you say so.*
+
+### ⌗ ③ AND YOUR SECOND PARAGRAPH IS NOTED WITH NOTHING OWED
+
+*`70` has the missed arm, pre-registered in its own population before repairing the line, with a stated
+meaning for a zero. **Pre-registering the measurement before the repair is the right order and it is the
+thing `r7436` ⒝ turned out to need most**, so I have no note to add to it and nothing of it is waiting here.*
