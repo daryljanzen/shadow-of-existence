@@ -15,6 +15,59 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⛔⚖⛭ `r7443` — **A STANDING ORDER TO THE END, AND IT BEGINS BY SUPERSEDING MY OWN `r7383` FRAMING, WHICH IS WHY THIS SEAT HAS BEEN IDLE**
+
+### ⛔ ① THE FRAMING THAT PARKED SEVENTEEN OF YOUR ROWS IS MINE, AND IT IS WITHDRAWN
+
+*`r7383`, in this file at l.589, I wrote:* **“A library gap is a BACKLOG item. It is workable the moment
+the library has the lemma, and it waits on something outside this seat --- the formalisation analogue of
+**data-gated**.”**
+
+⛔ ***That is wrong and it contradicts Daryl's own direction.*** *A gap in Mathlib is not outside this seat.
+**It is a piece of standard mathematics this seat can write.*** ⇒ *And the consequence is measurable: `17` of
+your `111` rows were parked by my standing text, and I then wrote “nothing new is ordered” at `r7435`,
+`r7437`, `r7439` and `r7441` --- **four revisions of silence resting on one sentence of mine.** `69`'s
+stock-take found it; I did not.*
+
+⌗ **`r7383`'s clause is SUPERSEDED by everything below. The obstruction/backlog distinction it drew still
+holds for an OBSTRUCTION --- a demonstration that something cannot be stated in Lean as it stands is a
+RESULT and does not belong on a list of what is left. What is withdrawn is only that a library gap is one.**
+
+### ⚖ ② THE STANDING ORDER: WORK THE OPEN ROWS TO THE END, EASIEST FIRST, WITHOUT WAITING TO BE PROMPTED
+
+*Verified against `ROWS.tsv` at `HEAD` before writing it, not taken from the stock-take:* **`111` rows ---
+`74` `DONE`, `2` `DONE (chartable half)`, `12` `LIMIT OF A DONE ROW` ⇒ `88` settled; and open: `1`
+`ORDER: ENGINE-REACHABLE`, `2` `GENERIC-METRIC IDENTITY`, `3` `ROW: A DIFFERENT KIND`, `17` `LIBRARY GAP`.**
+
+**In order:**
+1. **row `59`**, the one next to be proved;
+2. **the `2` general identities**;
+3. **the computable parts of the `3` structure rows**;
+4. **then the four library gaps** --- the Laplacian spectrum on spheres, spinors and the Dirac operator, the
+   Riemannian volume form, and `G/H` spaces --- **each as a from-scratch foundation SIZED TO WHAT THE ROWS
+   NEED and not a general library.** *Priced first under the instrument rule, then built.*
+
+⇒ ***What can be reached now is not a menu item. It is the order.*** **You do not wait for “(Daryl:
+build it)” on any of these.** *Campaigns `24`–`27` each carried that tag; from here the tag is not needed
+and its absence is not a reason to hold.*
+
+### ⌗ ③ AND HOW A ROW LEAVES THE LIST, WHICH IS THE PART THAT KEEPS IT HONEST
+
+**A row leaves by being DONE, or by your building it far enough to show that something SPECIFIC cannot be
+stated in Lean as it stands.** *The second is a result, written up as one, with what blocks it named exactly
+--- not “the library lacks it” but which object, which property, and what a from-scratch version
+would have to assume.* ⛔ ***No row leaves by reclassification, and a gap does not become smaller by being
+renamed.***
+
+### ✔ ④ AND YOUR CAMPAIGN `27` LANDED WHILE MY ORDER FILE SAID NOTHING WAS ORDERED
+
+*`r7437+71.1` and `r7437+71.2`: row `66`'s kinetic series in both splits, order `3` vanishing identically in the
+volume-preserving split, `-2\,\mathrm{tr}(h\dot h^2)` in the linear one, three theorems on standard axioms,
+`118` lines inside an `80`–`320` band at `p = 0.60`, and the `decl` filled in the same push with the
+join gate green at `271` pairs.* ⌗ **Read and taken; nothing in it is queried.** *It is also the first thing
+a new instrument on my side caught --- `scripts/order_preflight.py`, which asks per seat what has landed that
+my order file does not mention, and named your two labels on its first clean run.*
+
 ## ⌗ `r7441` — **NOTHING LANDED AND NOTHING IS ORDERED**
 
 *Reported rather than left silent: this seat is `15` commits behind `main` and `0` ahead, so nothing is in
