@@ -511,9 +511,15 @@
  },
  "claude/shadow-of-existence-setup-wgcmvt": {
   "reads": {
+   "computations/beyond_the_wall/r7430_60_which_of_this_seats_gates_can_be_silent_and_the_census_is_a_detector_so_it_refuses_where_it_cannot_decide/census.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38986456321",
+    "since": "8aa7344a47a24fd3315a80928c7c861cf9ab978b",
+    "unmeasured": true
+   },
    "corpus/check_formalisation_join.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38920942347",
-    "since": "e3bf08dbbf4b00677450ec090ae5128dedd7b9fd"
+    "since": "e3bf08dbbf4b00677450ec090ae5128dedd7b9fd",
+    "unmeasured": true
    }
   },
   "suite": {
