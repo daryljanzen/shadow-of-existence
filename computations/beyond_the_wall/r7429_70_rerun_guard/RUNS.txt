@@ -6,3 +6,11 @@ run          workflow           attempt  sha  conclusion   guard line (job log)
 38986476227  rerun-probe-plain  2        A    success
 38986824187  rerun-probe-split  1        B    success      GUARD: HEAD   (tip=3c453123, 00:32:19 -> 00:36:19)
 38986476285  rerun-probe-split  2        A    success      GUARD: STALE  (sha=3007a149, tip=3c453123, 00:32:24 -> 00:36:24)
+
+## r7431 seam experiment -- commit C = ee0a5983df01cc25965931d4f77e33a2094ac893, commit D = 301c65465064f06b915ace7021b986252b7f7030
+## probe rerun-probe-seam: split group + an `if: always()` record step printing the original guard and the re-cut guard
+run / job                         attempt sha job.status  record step line
+38991258074 / 117273932578        1       C   cancelled   RECORD-STEP-REACHED (01:33:20, after "The operation was canceled.")  ORIGINAL-GUARD: SUPPRESS  RE-CUT-GUARD: WRITE  (would file: unmeasured)
+38991298461 / 117274261341        1       D   success     ORIGINAL-GUARD: WRITE   RE-CUT-GUARD: WRITE  (would file: measured)
+38991258074 / 117274300890        2       C   success     ORIGINAL-GUARD: SUPPRESS  RE-CUT-GUARD: SKIP   (would file: measured)
+D's run (attempt 1) completed success while C's attempt 2 ran (re-run at 01:33:33) -- not cancelled.

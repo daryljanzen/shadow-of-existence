@@ -1,0 +1,12 @@
+  OK   B-a attempt 1 (tip moved)      -> record: RERUN-GUARD: attempt 1 of aaaaaaaaa -- RECORDING (a first attempt always files, measured or unmeasured)
+  OK   B-a attempt 2 at the tip       -> record: RERUN-GUARD: attempt 2 of aaaaaaaaa, which is still the tip of br -- RECORDING
+  OK   B-a attempt 2 off the tip      -> decline: RERUN-GUARD: attempt 2 of aaaaaaaaa; the tip of br is bbbbbbbbb -- STALE RE-RUN, DECLINED (attempt 1 already filed for this commit; nothing filed here)
+  OK   B-a attempt 2, tip unreadable  -> decline: RERUN-GUARD: attempt 2 of aaaaaaaaa; the tip of br could not be read -- DECLINED (attempt 1 already filed for this commit; nothing filed here)
+  OK   B-a wrapper: guard exits  0 -> RECORDED (step exit 0)
+  OK   B-a wrapper: guard exits 10 -> nothing (step exit 0)
+  OK   B-a wrapper: guard exits  1 -> RECORDED (step exit 0)   <- a crashed guard still records
+  OK   B-b attempt 1 on refs/heads/main  -> gates-main-7   (unchanged from today)
+  OK   B-b attempt 1 on refs/heads/x     -> gates-refs/heads/x   (unchanged from today)
+  OK   B-b attempt 2 on refs/heads/main  -> gates-rerun-7
+  OK   B-b attempt 2 on refs/heads/x     -> gates-rerun-7
+  all as predicted

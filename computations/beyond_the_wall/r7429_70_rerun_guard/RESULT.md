@@ -24,7 +24,7 @@ were removed in this commit, so the PR's net diff carries no workflow. Raw runs 
 - A re-run, of any run, gets a group of its own, so it neither cancels nor is cancelled.
 - **Main is unaffected**, because it already never cancels.
 
-**2. A stale run cannot vote (E-c/E-d).** Every `record` step (the three `red_carry.py --record` steps, the nightly
+**2. A stale RE-RUN cannot vote (E-c/E-d, re-cut at r7431, E-f..E-i).** ⛔ *Superseded as first written: the original guard below would have suppressed 60's `unmeasured` record for a superseded attempt-1 run. See the r7431 section. The guard as adopted checks `github.run_attempt > 1` as well.* Every `record` step (the three `red_carry.py --record` steps, the nightly
 ref, and `refs/ci/lean`) first reads the branch tip and files nothing when `github.sha` is not the tip:
 
     tip=$(gh api repos/${{ github.repository }}/git/ref/heads/${{ github.ref_name }} --jq .object.sha)
@@ -49,3 +49,39 @@ does not file, and a stale run does not file.
 - A re-run of the HEAD's own run, with attempt 2 and sha = tip, also gets its own group. A new push no longer
   cancels it, and its guard turns STALE once that push lands, so it files nothing. That is the right outcome,
   at the cost of one runner slot while it finishes.
+
+## r7431 ②: 60's seam, and the guard re-cut. Pre-registered at `c0d49053b` (`PREDICTION_ADDENDUM_r7431.md`); experiment commits C `ee0a5983d`, D `301c65465`
+
+| | prediction | measured | verdict |
+|---|---|---|---|
+| **E-f** ⛔ 66's arm: a cancelled, superseded attempt-1 run still REACHES its `if: always()` record step | reaches it | **reached**: job `117273932578`, `job.status=cancelled`, record step at 01:33:20 immediately after "The operation was canceled." | **HOLDS** |
+| **E-g** on that run, the original guard SUPPRESSes and the re-cut WRITEs `unmeasured` | SUPPRESS / WRITE | **`ORIGINAL-GUARD: SUPPRESS  RE-CUT-GUARD: WRITE (would file: unmeasured)`** | **HOLDS**: the original guard would have deleted 60's signal |
+| **E-h** C's attempt-2 re-run does not cancel D, and the re-cut says SKIP | D completes; SKIP | D's run **success**; C attempt 2 **`RE-CUT-GUARD: SKIP`** | **HOLDS** |
+| **E-i** D's own run: WRITE | WRITE | **`WRITE (would file: measured)`** | **HOLDS** |
+| EFFORT | `30` min | **≈ 15 min** (01:31 → ~01:46 UTC) | holds |
+
+**Finding: half of my r7429+70.4 proposal was incompatible with 60's fix, exactly where 66 said to look.** It
+did not break the step from running; GitHub runs `if: always()` steps of a cancelled job regardless of
+concurrency (E-f). It broke the WRITE. A run superseded by a newer push has a sha that is no longer the tip, and
+"file nothing when sha ≠ tip" would have dropped its `unmeasured` record. The scoped jobs scope only the
+commits each push carried, so that range is measured by no later run. The original guard would have hidden
+exactly that gap.
+
+**The re-cut, measured.** The guard keys on the RE-RUN, not on staleness:
+
+    tip=$(gh api repos/${{ github.repository }}/git/ref/heads/${{ github.ref_name }} --jq .object.sha)
+    if [ "${{ github.run_attempt }}" -gt 1 ] && [ "$tip" != "${{ github.sha }}" ]; then
+      echo "STALE RE-RUN (attempt ${{ github.run_attempt }} of $GITHUB_SHA; tip is $tip): its attempt 1 already filed for this commit -- nothing filed"; exit 0
+    fi
+    # attempt 1 always falls through to the record, measured or unmeasured (60's r7432)
+
+With this the three halves are orthogonal and none suppresses another's signal:
+- **Mechanism 1, the split group, decides what gets CANCELLED.** It never decides whether a cancelled run's
+  steps run.
+- **60's r7432 makes a cancelled run's record say `unmeasured`.**
+- **The re-cut guard silences only a re-run of a commit that is no longer the tip.** That commit's attempt 1
+  has already filed, measured or `unmeasured`.
+
+⌗ **Stated limit, carried from 66's r7431 ①.** None of this covers a TIMEOUT cancellation. That is
+attempt 1, sha = tip, and the re-cut guard WRITEs, so 60's `unmeasured` is what records it. That is correct,
+and it is 60's half.

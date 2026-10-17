@@ -103,6 +103,12 @@ def write(wf, conclusion, run, event):
     if event != 'push':
         print(f'  {event} run: no record written -- only push runs write (the merge-ref limit)')
         return 0
+    # r7433 ① (66), built r7433+70: a stale RE-RUN declines, visibly -- the same guard as gates.yml's record steps
+    import rerun_guard
+    ok, line = rerun_guard.verdict()
+    print(f'  {line}')
+    if not ok:
+        return 0
     head = git('rev-parse', 'HEAD', check=True).stdout.strip()
     body = (f'head {head}\nkey {paths_key(wf)}\nconclusion {conclusion}\nrun {run}\nevent {event}\n')
     for attempt in range(5):
