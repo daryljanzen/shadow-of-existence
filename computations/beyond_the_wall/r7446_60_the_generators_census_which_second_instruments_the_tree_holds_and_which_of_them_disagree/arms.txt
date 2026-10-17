@@ -1,0 +1,242 @@
+r7446 (60) -- THE ARMS, SCORED AGAINST PREDICTION.md AS REGISTERED AT 7c042517
+================================================================================
+Nothing was ordered.  r7445 ① files this seat's repeated error as PO-78's first
+GENERATOR rather than another member, on the ground that a generator is one a
+RULE prevents where a member is only worth fixing.  r7445 ② is declined and is
+with the human.  So this takes the live frontier in the standing order, and the
+generator is where PO-78 now lives.
+
+SCORE: 3 arms HIT, 3 MISS.  And TWO OF THE SIX THINGS I REGISTERED WERE REFUTED
+BEFORE THE RUN STARTED, BY READING MY OWN CODE RATHER THAN BY FAILING.
+
+--------------------------------------------------------------------------------
+STATED AS AN OBSERVATION, NOT AN ARM -- measured while sizing the method
+--------------------------------------------------------------------------------
+⒞ 53 FOREIGN PATTERNS ARE BYTE-IDENTICAL TO A GATE'S OWN PATTERN.  Read before
+   registering, because it is what decided the method was affordable.  Scoring a
+   figure already in hand is not a prediction.
+
+   Its full shape WAS measured here, and it is larger than the pattern count:
+     53 patterns, held at 690 SITES, across 374 FOREIGN FILES, against 56 GATES
+     313 of those files under receipts/, 61 under computations/
+
+--------------------------------------------------------------------------------
+⛔ THE CANDIDACY RULE I REGISTERED IS DEGENERATE, ON THE FULL POPULATION AND NOT
+   ONLY THE SMOKE ONE                                        NOT AN ARM, A DEFECT
+--------------------------------------------------------------------------------
+PREDICTION.md defines a pair as `f != g AND both match at least one line of one
+population`.  On the whole 321,261-line population that rule yields:
+
+     114,837 pairs, over 758 of 758 NON-SILENT FOREIGN PATTERNS -- 100.0 %
+
+A criterion that cannot come out any other way is not a measurement.  Generic
+patterns overlap everything, so "they both match something" is evidence of
+nothing.  I registered it as the rule that carried NO similarity judgement, and
+it carries no discrimination either, which is worse.
+
+=> The figure is still computed and reported, labelled as what it is.  The
+   discriminating figure is swept across an agreement floor, and THE FLOOR IS NOT
+   A NUMBER I PICKED: it is the agreement of the one pair in this corpus whose
+   membership is already adjudicated.
+
+--------------------------------------------------------------------------------
+⛔ ⒟ THE SELF-TEST I REGISTERED TO PROTECT THIS INSTRUMENT IS A TAUTOLOGY   MISS
+--------------------------------------------------------------------------------
+REGISTERED: the 53 byte-identical pairs are the self-test; each must come out
+            with symmetric difference exactly 0, and a non-zero VOIDS the run.
+            "The one thing this revision must not get wrong, having been built
+            out of three instruments that were."
+MEASURED  : IT CANNOT COME OUT OTHERWISE.  The masks are keyed by PATTERN
+            SOURCE, so a pattern appearing in a gate and in a receipt is ONE
+            entry, and `m ^ m` is 0 for every integer there has ever been.
+
+  ⛔ An arm that cannot fail is the exact class check_cannot_fail.py exists to
+     catch, and I wrote one into the registration of a revision about instruments
+     that cannot see what they are pointed at.
+
+  => REPLACED, in the instrument itself, by two tests that CAN fail:
+       Ⓓⅰ DETERMINISM     each of the 53 recompiled and rematched from scratch
+                           -- a second compile, a second full pass: 0 disagreed
+       Ⓓⅱ HARVEST INTEGRITY each of the 53 really sited on BOTH sides it is
+                           claimed to be on: 0 missing
+     Both zero.  The run stands on these two and not on the one registered.
+
+--------------------------------------------------------------------------------
+⒢ THE CONTROL -- AND IT REPRODUCES, SO THE RUN STANDS                       HIT
+--------------------------------------------------------------------------------
+REGISTERED: YES, exact -- the census finds r7442's deliberately-kept refuted
+            detector overlapping and disagreeing with the gate it disagreed
+            with.  A MISS VOIDS THE RUN rather than being scored.
+MEASURED  : FOUND.  `\b[0-9a-f]{12,40}\b` against `held at ([0-9a-f]{8,40})\b`:
+            overlap 500 lines, symmetric difference 675, agreement 0.4255.
+
+  r7440's first run was wrong and LOOKED right because its figure was lower than
+  the one it replaced, and a control whose answer was already known is the only
+  thing that caught it.  This is that control, and it did a second job it was not
+  registered for -- see ⒝ below.
+
+--------------------------------------------------------------------------------
+⒠ FOREIGN PATTERNS THAT AGREE AT LEAST AS CLOSELY AS THE ADJUDICATED ONE AND
+  STILL DISAGREE                                                            HIT
+--------------------------------------------------------------------------------
+REGISTERED: band 80-600, central 250.
+MEASURED  : 171, of 758 non-silent foreign patterns -- 22.6 %.  INSIDE, low.
+            1,333 pairs.  The sweep is reported as a curve and not a point:
+              floor 0.00 -> 114,837 pairs / 758 patterns   (degenerate)
+              floor 0.25 ->   2,021 / 196
+              floor 0.4255 -> 1,333 / 171   <- THE CONTROL
+              floor 0.50 ->   1,141 / 168
+              floor 0.75 ->     595 / 119
+              floor 0.90 ->     414 /  92
+              floor 0.95 ->     323 /  71
+              floor 0.99 ->     113 /  35
+              floor 0.999 ->     10 /   9
+
+--------------------------------------------------------------------------------
+⒡ OVER HOW MANY DISTINCT FILES                              MISS, ABOVE THE BAND
+--------------------------------------------------------------------------------
+REGISTERED: band 40-400 distinct foreign files, central 150.
+MEASURED  : 430 of 1,662 foreign files, against 86 of 136 gates.
+
+  ⛔ AND THE REGISTRATION ERROR IS THE SAME ONE r7436 ⒞ WAS SCORED FOR: I PRICED
+     FILES AGAINST PATTERNS.  A pattern is not sited once -- the 53 identical
+     ones alone sit at 690 sites across 374 files -- so a band built as though
+     files track patterns has to miss, and it missed in the only direction it
+     could.  Reported as one registration error and not as a surprise about the
+     corpus.
+
+--------------------------------------------------------------------------------
+⒣ THE OTHER DIRECTION -- FILES THAT CALL A GATE INSTEAD OF REBUILDING IT    HIT
+--------------------------------------------------------------------------------
+REGISTERED: band 1-60 files, central 12; and a figure at or near 0 registered in
+            advance as itself the finding, making the rule's cost a BUILD.
+MEASURED  : 31 import a corpus/check_* module; 30 use a name from it.
+            INSIDE the band.  The registered alternative DOES NOT APPLY: the
+            practice exists, so the rule names something already done here and
+            its cost is a habit rather than a seam.
+
+  ⌗ AND THE ATTRIBUTION IS STATED THE ONLY WAY THE DATA SUPPORTS IT.  By the
+    seat token in each path -- which is what a path says and not who wrote the
+    file -- 20 of the 30 carry `70`, 2 carry `60`, and 8 are receipts whose
+    paths carry no seat token at all, so for those the path cannot say.  I am
+    not turning 20 of 30 into "one seat's practice", because reading a
+    population wider or narrower than its subject is the error this whole
+    revision is about.
+
+  ⛔⛔ AND THE TWO THAT ARE THIS SEAT'S ARE THE FINDING.
+      r7372's cost.py and r7428's coverage.py both import a gate and call it.
+      r7428 IS the revision where this seat wrote the rule down -- "two
+      instruments invented one grammar and the remedy is to read it from one
+      place."
+      => So r7430, r7440 and r7442 are not a seat that had never learned the
+         rule.  They are a seat LAPSING FROM A RULE IT ALREADY HELD AND HAD
+         RECEIPTED, twice, in its own tree.  That is a worse finding than
+         ignorance and it is the one the evidence supports.
+
+--------------------------------------------------------------------------------
+⒤ THE PRICE                                                 MISS, ABOVE THE BAND
+--------------------------------------------------------------------------------
+REGISTERED: band 60-900 s, central 300.
+MEASURED  : 1,091.9 s -- 1,030 s of it matching 1,199 patterns against 321,261
+            distinct lines, 11 s pairing.  ABOVE the ceiling by 1.2x.
+
+  The band assumed a uniform per-pattern cost over 385 million matches.  It is
+  not uniform: 2 of the 1,199 each exceeded the 20 s per-pattern budget, which the
+  run COUNTS and does not name -- a gap in the instrument's own reporting, stated
+  here rather than inferred over.  0 of the 1,199 failed to compile or run.
+
+--------------------------------------------------------------------------------
+THE TWO HALVES OF THE CLASS -- WHAT THIS REVISION ACTUALLY ANSWERS
+--------------------------------------------------------------------------------
+⒜ THE COPY HALF IS DECIDABLE, AND IT IS 53 PATTERNS AT 690 SITES IN 374 FILES
+   AGAINST 56 GATES.  No threshold, no population, no judgement: the same regular
+   expression written twice, once in a gate and once in a file that is not that
+   gate.  It agrees today BECAUSE it is the same text, and it diverges the
+   revision either copy is edited.  A rule prevents exactly this, and the size is
+   the price of not having one.
+
+⒝ THE DIVERGENT HALF IS NOT SIZEABLE THIS WAY, AND THE CONTROL IS WHAT SAYS SO.
+   The one pair whose membership is adjudicated agrees with its gate at 0.4255,
+   and 1,333 pairs over 171 foreign patterns sit at or above that floor.  So
+   extensional agreement DOES NOT SEPARATE the known member from the field:
+   whatever made r7442's detector a second instrument is not visible in how often
+   the two patterns coincide on the corpus's own text.
+
+   => A figure read off that floor would be reporting the floor, and the honest
+      answer is that the half of this class which produced all three instances
+      cannot be counted by machine on this evidence.  Same shape as r7442 ⒟, and
+      registered-in-advance caution is what kept it from being reported as 171
+      defects.
+
+--------------------------------------------------------------------------------
+⛭ AND THE CURVE'S TOP END IS A MIXTURE, WHICH IS WHERE THE THREE READABLE
+  CANDIDATES COME FROM -- NAMED FOR A READER, WITH NO VERDICT ATTACHED
+--------------------------------------------------------------------------------
+Of the 10 pairs above agreement 0.999, I READ 3 as credible second instruments
+and 7 as generic patterns coinciding -- whitespace, word-boundary and
+non-alphanumeric classes that agree on 320,000 of 321,261 lines because almost
+every line contains a space.
+
+⛔ THAT READING IS MINE AND IT IS NOT A MEASUREMENT.  It is stated as a reading
+   precisely because the measured quantity cannot make the distinction: the
+   adjudicated member sits at 0.4255, FAR BELOW all ten, so the measure ranks
+   coincidence above a known member of the class.  That is a stronger statement
+   than "the floor does not discriminate" and it is what ⒝ rests on.
+
+The three, each with the gate it shadows and the disagreement actually measured:
+
+  1 lines  computations/frontier_audit/THE_DANGLE_CENSUS.py:173
+             `^#+ .*Revision r\d+`
+           against corpus/check_changelog.py:85
+             `^### Revision r(\d{3,4})\b`
+           The copy accepts any heading depth and any digit count.
+
+109 lines  computations/beyond_the_wall/r7179_70_tolerance_vs_precision/tol_vs_print.py:17
+           (and two siblings under r7181_70_operator_reach)
+             `(?<![\d.])(\d+(?:\.\d+)?)(?:\s*\\times\s*10\^\{?(-?\d+)\}?)?(?![\d.])`
+           against corpus/check_one_value.py:60
+             `(?<![\d.])(\d+\.\d+|\d{1,4})(?![\d.])`
+
+  5 lines  computations/beyond_the_wall/r7043_70_citation_sweep/trace_citations.py:34
+             `\\(?:ref|eqref|label|cite[a-z]*|rcpt|ldg)\{[^}]*\}`
+           against corpus/check_marker_transposition.py:94
+             `\\(?:ref|eqref|label|cite[a-z]*|rcpt|ldg|url|href)\{[^}]*\}`
+           ⌗ The same macro list MINUS `url` and `href`.  The gate strips those
+             as MACHINERY AND NOT PROSE; a copy without them reads as prose
+             exactly what the gate refuses to.
+
+⇒ NONE OF THE THREE IS CALLED A DEFECT HERE, and none is routed to the seat that
+  holds it.  What is measured is that two patterns disagree on N lines of one
+  stated population.  Whether any receipt's CLAIM depends on that difference is a
+  reading of the receipt, and the reading belongs to whoever owns it.
+
+⌗ AND THE PROPORTION IS THE POINT: 3 names a person can read beats 171 they
+  cannot, and 171 was never a defect list.
+
+--------------------------------------------------------------------------------
+WHAT THIS DOES NOT DO
+--------------------------------------------------------------------------------
+- A DISAGREEING PAIR IS NOT A DEFECT, and none is reported as one.  Overlap and
+  disagreement prove a second instrument EXISTS; they do not prove the receipt
+  holding it ever asserted anything false.  A pattern may be kept to MEASURE a
+  disagreement, as the control is, or scoped to a population where the two agree.
+- NOTHING IS ROUTED TO ANY SEAT.  The failure this family is named for is not a
+  wrong number but a wrong accusation, and three of this cycle's four instances
+  would have been filed against another seat's work.
+- NO GATE AND NO RECEIPT IS EDITED, and no pattern anywhere is rewritten.
+- THE FULL 114,837-ROW PAIR LIST IS NOT KEPT.  The rule that produces it is
+  degenerate and the file is 32 MB.  What is committed is pairs_surviving.tsv --
+  the 1,333 at or above the control's floor -- and identical.tsv, the 53 of the
+  copy half with every site on both sides.  The instrument regenerates the whole
+  list in 1,092 s on demand.
+- THE RATCHET FOR THE COPY HALF IS NAMED AND NOT BUILT.  Freezing 53 / 690 so the
+  class cannot grow is the corpus's own idiom and it is affordable -- the harvest
+  costs under a second.  Building it in the same pass as the measurement that
+  justifies it is how a measurement becomes unfalsifiable, which is r7442's rule
+  and it applies to this seat first.
+- IT DOES NOT RULE ON PO-78.  That is the row seat's call; this supplies the one
+  figure the generator's rule needed in order to be priced, and the fact that
+  half of it cannot be priced at all.
+- ITS POPULATION IS STATED WITH ITS LIMIT: one uniform line population for every
+  pair, agreement on it is agreement ON IT and never equivalence, and 130 of the
+  888 foreign patterns match no line of it -- SILENT, not absent.

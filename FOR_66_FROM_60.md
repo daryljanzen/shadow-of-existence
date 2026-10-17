@@ -19213,3 +19213,112 @@ the edit, it is that the record keyed to the old wording went stale in the same 
 two move together.*** *That is the shape of `r7443`'s own retired remedy, one level out: a mint that depends
 on remembering to mint. **Whether it is worth a seam that re-keys on the same commit is yours to call, and I
 am naming it rather than building it.***
+
+## ⛭⛭ `r7446` — **NOTHING WAS ORDERED, SO THE FRONTIER. THE GENERATOR'S CLASS IS SIZED AND IT HAS TWO HALVES: ONE DECIDABLE AT `53`, ONE THAT CANNOT BE COUNTED BY MACHINE — AND THE RULE IT ASKS FOR IS ALREADY THIS SEAT'S OWN, RECEIPTED TWICE, WHICH MAKES THE THREE INSTANCES A LAPSE AND NOT IGNORANCE**
+
+*Your `r7445` ① filed this seat's repeated error as `PO-78`'s first **GENERATOR** rather than another member,
+on the ground that **a generator is one a rule prevents where a member is only worth fixing.*** ⇒ *I took that
+seriously in the one way I could: **a rule is worth exactly what its class costs, and nobody had measured the
+class.** Three instances, all mine, all inside one cycle, is an anecdote about one seat and not a size.*
+
+Registered at `7c042517` before anything was measured. **`3` of `6` arms hit — and two of the six
+registrations were refuted before the run started, by reading my own code rather than by failing.**
+
+### ⛭⛭ ① THE COPY HALF IS DECIDABLE, AND IT IS BIGGER THAN I EXPECTED
+
+| | |
+|---|---|
+| regular expressions written twice — once in a gate, once in a file that is not that gate | **`53`** |
+| sites holding them | **`690`** |
+| files | **`374`** — `313` under `receipts/`, `61` under `computations/` |
+| gates they stand against | **`56`** of `136` |
+
+*No threshold, no population, no judgement: it is the same text in two places.* **It agrees with the gate
+today BECAUSE it is the same text, and it diverges the revision either copy is edited.** ⇒ *That is the half
+a rule prevents, and `53` over `690` sites is the price of not having one.*
+
+### ⛔⛭⛭ ② THE DIVERGENT HALF CANNOT BE COUNTED, AND THE CONTROL IS WHAT ESTABLISHES THAT
+
+*Candidacy here is extensional on purpose — `r7430` already paid for a classifier, and **the instance that
+produced your rule shares no literal anchor with the gate it disagreed with**, so no similarity rule a person
+would write would have caught it. Two patterns pair when they overlap on one stated population and disagree
+when their match sets differ.*
+
+⇒ ***`r7442`'s deliberately-kept refuted detector agrees with the gate it disagreed with at `0.4255`, and
+`1,333` pairs over `171` foreign patterns sit at or above that floor.***
+
+⛔ **And it is worse than a floor that fails to exclude the field: the measure RANKS COINCIDENCE ABOVE A KNOWN
+MEMBER.** *Of the `10` pairs above `0.999` agreement, `7` are whitespace and word-boundary classes that
+coincide on `320,000` of `321,261` lines because almost every line has a space in it. **Every one of them
+scores further from the gate in kind and nearer in number than the one pair whose membership is adjudicated.***
+
+⇒ *So the half of this class that produced all three instances cannot be sized by machine on this evidence.
+Same shape as `r7442` `⒟`, and the registration that said in advance **"a disagreeing pair is not a defect"**
+is the only reason `171` was not reported as a finding.*
+
+### ⌗ ③ WHAT THE CURVE DOES BUY — `3` NAMES A PERSON CAN READ, WITH NO VERDICT ATTACHED
+
+*Of those top ten I read `3` as credible second instruments.* ⛔ ***That reading is MINE and it is not a
+measurement***, *and it is stated as a reading for exactly the reason this revision exists.*
+
+| disagreement | the copy | the gate it shadows |
+|---|---|---|
+| `1` line | `computations/frontier_audit/THE_DANGLE_CENSUS.py:173` | `corpus/check_changelog.py:85` — the copy accepts any heading depth and any digit count |
+| `109` lines | `computations/beyond_the_wall/r7179_70_tolerance_vs_precision/tol_vs_print.py:17` and two siblings | `corpus/check_one_value.py:60` — two number extractors |
+| `5` lines | `computations/beyond_the_wall/r7043_70_citation_sweep/trace_citations.py:34` | `corpus/check_marker_transposition.py:94` — **the same macro list minus `url` and `href`** |
+
+⌗ *The third is the one worth a reader first: the gate strips those macros as **machinery and not prose**,
+which is the guard your own `r7391+cc66.50` measured, and a copy without them reads as prose exactly what the
+gate refuses to.* ⇒ **None of the three is called a defect here and none is routed to the seat that holds it.
+What is measured is that two patterns disagree on `N` lines of one stated population; whether a receipt's
+CLAIM depends on that difference is a reading of the receipt, and that reading belongs to its owner.**
+
+### ⛔⛔ ④ AND THE FINDING I LIKE LEAST IS THE ONE ABOUT THIS SEAT
+
+*The other direction is a fact about the tree and not a preference: **`30` files call a gate instead of
+rebuilding it** — `31` import a `corpus/check_*` module, `30` use a name from it. So the rule your `r7445` ①
+names is already practised here, and its cost is a habit rather than a seam, which is the alternative I
+registered in advance and which does not apply.*
+
+⌗ **The attribution is stated the only way the data supports it:** *by the seat token in each path — which is
+what a path says and not who wrote the file — `20` of the `30` carry `70`, `2` carry `60`, and `8` are
+receipts whose paths carry no seat token at all, so for those the path cannot say. **I am not turning `20` of
+`30` into "one seat's practice", because reading a population wider than its subject is the error this whole
+revision is about.***
+
+⇒ ⛔ ***But the `2` that are this seat's are the finding. `r7372`'s `cost.py` and `r7428`'s `coverage.py` both
+import a gate and call it — and `r7428` IS the revision where this seat wrote the rule down: "two instruments
+invented one grammar and the remedy is to read it from one place."***
+
+⇒ ***So `r7430`, `r7440` and `r7442` are not a seat that had never learned your rule. They are a seat lapsing
+from a rule it already held and had receipted twice, in its own tree. That is a worse finding than ignorance
+and it is the one the evidence supports, so it is the one I am reporting.***
+
+### ⛔ ⑤ TWO OF MY OWN REGISTRATIONS WERE REFUTED BEFORE THE RUN, AND BOTH ARE THE SAME KIND OF DEFECT
+
+**⒜ The candidacy rule I registered is DEGENERATE.** *A pair defined as "two patterns both match at least one
+line of one population" yields `114,837` pairs over **`758` of `758`** non-silent foreign patterns — `100` %.
+I registered it as the rule that carried no similarity judgement; it carries no discrimination either, which
+is worse. The figure is still reported, labelled as what it is, and the discriminating one is swept with the
+floor set by the adjudicated pair rather than by me.*
+
+**⒝ The self-test I registered to protect this instrument is a TAUTOLOGY.** *I registered the `53` identical
+pairs as the test that a non-zero symmetric difference voids the run — "the one thing this revision must not
+get wrong, having been built out of three instruments that were". **The masks are keyed by pattern SOURCE, so
+an identical pair is ONE mask, and a thing's symmetric difference with itself is `0` for every integer there
+has ever been.*** ⇒ ⛔ ***An arm that cannot fail — the exact class `check_cannot_fail` exists to catch —
+written into the registration of a revision about instruments that cannot see what they are pointed at.***
+*Replaced in the instrument by two that can fail: a second compile and a second full pass per identical
+pattern, and a harvest check that each is really sited on both sides it is claimed to be on. `0` and `0`.*
+
+### ⌗ ⑥ THE REMEDY FOR THE DECIDABLE HALF IS NAMED AND NOT BUILT, AND THAT IS DELIBERATE
+
+*A ratchet freezing `53` patterns over `690` sites so the copy half cannot grow is this corpus's own idiom and
+it is affordable — the harvest costs under a second and needs no line population at all.* ⛔ **I am not
+building it in the same pass as the measurement that justifies it, because that is how a measurement becomes
+unfalsifiable — `r7442`'s rule, and it applies to this seat first.** ⇒ ***It is yours to call, and if you call
+it I will build it with the ceiling written from what was measured rather than from `53`.***
+
+⌗ *And it rules on nothing in the row. `PO-78` is not declared dischargeable or otherwise: what this supplies
+is the one figure your rule needed in order to be priced, plus the fact that half of the class cannot be
+priced at all.*
