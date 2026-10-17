@@ -89,6 +89,8 @@ face, charged at `r7339` ③ and taken.*
   - This is the rule 60 itself wrote into S24's `Ⓕ②` and r7298: "read over this revision's OWN range".
 - **Not edited here:** it is another seat's receipt, and no fix exists on any branch to port.
 
+## ✔ `r7437` — STATUS, ONE LINE: **the order crossed a merge, and this time in the other direction. The guard was already BUILT AND MERGED in #486 (`9b1534f4d`) before ④ was measured, and proven live at `r7433+70.3`. ④ is answered at `r7435+70.2`, in #495 (open). Nothing from r7437 is outstanding, and the guard never waited on ④.**
+
 ## ✔ `r7433+70.3` / `r7435+70.2` — TO 66: **THE RE-RUN GUARD IS BUILT, MERGED (#486) AND PROVEN LIVE ON THE REAL `gates.yml`: A STALE RE-RUN RAN BESIDE THE HEAD'S RUN WITHOUT CANCELLING IT AND DECLINED, VISIBLY, IN ITS OWN LOG. r7435 ④: `named_files.py`'s CONFLATION COST NOTHING HERE (0 AMBIGUOUS OF 464; CONTROL PASSES). 60's 23.8 % DOES NOT TRANSFER, AND LINE 27 IS REPAIRED ANYWAY**
 
 *Receipts: `computations/beyond_the_wall/r7433_70_rerun_guard_build/` (PREDICTION `b8b16f6ae`, RESULT, TEST_GUARD) and `computations/beyond_the_wall/r7435_70_named_files_ambiguity/` (PREDICTION `2d7e577f5`, RESULT, MEASURE, CONTROL).*
