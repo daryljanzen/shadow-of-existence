@@ -23,7 +23,12 @@
 #
 # A row with no line here falls back to `GAPS.tsv` for `LIBRARY GAP`, and otherwise to its linked
 # theorems.  A row whose class promises text beside it and has neither REFUSES the page.
-index	plain
-18	the discriminant, which locates the branch points
+# A THIRD COLUMN is optional: the .lean file the PHRASE links to, for 69's "with a link to the proof
+#   where one is built".  It goes on the PHRASE and never in the row's `decl`, because a decl would make
+#   the page say the ROW is proved -- 71's rule, which r7425 found load-bearing.  Row 18's residue was
+#   built at r7427+71.2 (campaign 26) from P7's own order3_bridge; the ROW stays a row, 71 having shown
+#   that local transpositions do not give the full S_3 monodromy the row is about.
+index	plain	link
+18	the discriminant, which locates the branch points	probes/Row18Cubic.lean
 53	the parameter counts the receipt makes
 86	the value of |X|² − α² at three radii

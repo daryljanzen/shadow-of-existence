@@ -454,7 +454,14 @@ def formalisation_rows():
     #   nowhere for a per-row phrase to COME FROM -- so a class whose sentence promises text
     #   beside it could never be satisfied for any row outside `LIBRARY GAP`.  A refusal with no
     #   reachable remedy is not a refusal, it is a wall.  This file is the remedy's address.
-    beside_by_row = {}
+    # ** AN OPTIONAL THIRD COLUMN: the .lean file the PHRASE links to (r7429, on 71's question). **
+    #   69's sentence for the structure class promises "what can be calculated about it is named
+    #   beside it, WITH A LINK TO THE PROOF WHERE ONE IS BUILT".  71 built row 18's residue at
+    #   campaign 26, from P7's own order3_bridge, and correctly kept the row's `decl` EMPTY -- a
+    #   decl would make the page say the ROW is proved, and the row's object is the full S_3
+    #   monodromy, which 71 showed local transpositions do not give.  So the link belongs on the
+    #   PHRASE and not on the row, which is exactly the distinction 69's sentence already draws.
+    beside_by_row, beside_link = {}, {}
     bpath = os.path.join(ROOT, 'computations', 'beyond_the_wall',
                          'r7419_69_status_wording', 'ROW_TEXT.tsv')
     if os.path.exists(bpath):
@@ -462,6 +469,8 @@ def formalisation_rows():
             f = line.split('\t')
             if len(f) >= 2 and f[0] not in ('index', '') and not f[0].startswith('#'):
                 beside_by_row[f[0].strip()] = f[1].strip()
+                if len(f) >= 3 and f[2].strip():
+                    beside_link[f[0].strip()] = f[2].strip()
 
     # ** WHICH CLASSES PROMISE TEXT "BESIDE IT", read off 69's OWN SENTENCES and not
     #   from a list of mine -- so a reworded sentence changes this requirement with it. **
@@ -507,7 +516,8 @@ def formalisation_rows():
                 f"computations/beyond_the_wall/r7419_69_status_wording/ROW_TEXT.tsv\n"
                 f"     as `<index>\\t<one plain phrase>`.")
         out.append(dict(index=r.get('index', ''), cls=r.get('class', ''), status=st,
-                        beside=beside, standin=(r.get('stand-in') or '').strip(),
+                        beside=beside,
+                        beside_link=beside_link.get((r.get('index') or '').strip(), ''), standin=(r.get('stand-in') or '').strip(),
                         receipts=dc.parse_receipt(r.get('receipt')), pairs=pairs))
     counts = {}
     for r in out:
@@ -1177,6 +1187,9 @@ const PAGES_URL = '{PAGES}';
                     links += (f' <a href="{GH}/computations/formalisation/lean/{path}">'
                               f'{short}</a>')
                 what = r['beside']
+                if what and r['beside_link']:
+                    what = (f'<a href="{GH}/computations/formalisation/lean/'
+                            f'{r["beside_link"]}">{what}</a>')
                 sub = (what + (' \u2014 ' if what and links else '')) if what else ''
                 fbody += ('<li><span class="pn">' + r['index'] + '</span>'
                           '<span class="ti"><b>' + (r['standin'][:110] or r['cls']) + '</b>'

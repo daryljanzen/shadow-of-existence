@@ -132,7 +132,8 @@ _DECL = re.compile(
     r'(?:theorem|lemma|def|abbrev|instance|structure|inductive|example|opaque)\s+'
     r"([A-Za-z_][\w.']*)")
 _NS = re.compile(r"^\s*namespace\s+([A-Za-z_][\w.']*)")
-_END = re.compile(r"^\s*end\s+[A-Za-z_]")
+_SEC = re.compile(r"^\s*section\b\s*([A-Za-z_][\w.']*)?")
+_END = re.compile(r"^\s*end\b\s*([A-Za-z_][\w.']*)?\s*$")
 
 _cache = {}
 
@@ -148,6 +149,19 @@ def lean_path(rel):
 def declared_names(rel):
     """Every name declared in the file, bare and under each enclosing `namespace` suffix.
 
+    ** r7429, ON 60's MEASUREMENT (r7428 ③), AND THE DEFECT WAS INVISIBLE BECAUSE THE DATA IT HID
+    IS CORRECT. **  The first reader popped the namespace stack on ANY `end <ident>`, so a named
+    `section Model ... end Model` INSIDE `namespace ShadowProbe` closed the namespace.
+    `ShadowEngine.lean` carries 48 named sections and only 19 of the 383 names the old reader
+    extracted from it carried a dot at all.  Measured over the live inventory: 123 pairs cleared
+    on the fully qualified name and ** 140 -- 53 per cent -- cleared ONLY on the last-component
+    fallback **, so for those the NAMESPACE HALF OF THE CLAIM WAS NOT WHAT WAS CHECKED:
+    `A.lean: Wrong.foo` cleared whenever `foo` was declared anywhere in `A.lean`.
+      60's control reader, popping only on a MATCHING `end`, confirmed 140 of 140 as fully
+    qualified -- so r7423's "71's column is correct entire" holds on the strict reading too and
+    nothing in 71's data was ever in question.  ** The fallback was not a convenience, it was a
+    hole, and it is gone with the bug that made it load-bearing. **
+
     Returns None when the file is absent -- which the caller must distinguish from the empty
     set, because `no file` and `no declarations` are different findings."""
     if rel in _cache:
@@ -156,22 +170,38 @@ def declared_names(rel):
     if p is None:
         _cache[rel] = None
         return None
-    names, stack = set(), []
-    for line in open(p, encoding='utf-8', errors='replace').read().split('\n'):
+    names = _scan(open(p, encoding='utf-8', errors='replace').read())
+    _cache[rel] = names
+    return names
+
+
+def _scan(text):
+    """The namespace/section stack walk, pure so the grammar's own cases can exercise it."""
+    names, stack = set(), []          # stack of ('ns', name) and ('sec', name_or_None)
+    for line in text.split('\n'):
         m = _NS.match(line)
         if m:
-            stack.append(m.group(1))
+            stack.append(('ns', m.group(1)))
             continue
-        if _END.match(line) and stack:
-            stack.pop()
+        m = _SEC.match(line)
+        if m:
+            stack.append(('sec', m.group(1)))
+            continue
+        m = _END.match(line)
+        if m:
+            want = m.group(1)
+            for i in range(len(stack) - 1, -1, -1):
+                if stack[i][1] == want:        # `end X` closes the innermost frame named X;
+                    del stack[i:]              # a bare `end` closes the innermost unnamed one
+                    break
             continue
         d = _DECL.match(line)
         if d:
             n = d.group(1)
             names.add(n)
-            for i in range(len(stack)):
-                names.add('.'.join(stack[i:] + [n]))
-    _cache[rel] = names
+            ns = [nm for kind, nm in stack if kind == 'ns']   # qualify over NAMESPACES only
+            for i in range(len(ns)):
+                names.add('.'.join(ns[i:] + [n]))
     return names
 
 
@@ -185,9 +215,12 @@ def check_pairs(rows):
         idx = r.get('index', '?')
         for path, name in parse_decl(r.get('decl')):
             ds = declared_names(path)
+            # ** THE LAST-COMPONENT FALLBACK IS GONE (r7429). **  It cleared `A.lean: Wrong.foo`
+            #   whenever `foo` was declared anywhere in `A.lean`, so it checked the name and not
+            #   the claim.  A name is matched as WRITTEN, qualified or bare.
             if ds is None:
                 v = 'no-file'
-            elif name in ds or name.split('.')[-1] in ds:
+            elif name in ds:
                 v = 'ok'
             else:
                 v = 'not-declared'
@@ -212,8 +245,31 @@ _CASES = [
 _RAISES = ['N.x', 'a/B.lean', 'a/B.lean:', 'a/B.txt: N.x', 'a/B.lean: 9bad']
 
 
+# ** THE CASE FOR THE DEFECT r7429 REPAIRED, because a repair with no case for it is how it comes
+#   back. **  60 measured that a named `section ... end <name>` inside a namespace closed the
+#   NAMESPACE on the old reader, so 140 of 263 pairs cleared only on a last-component fallback.
+_SCAN_CASE = """
+namespace ShadowProbe
+section Model
+theorem foo : True := trivial
+end Model
+theorem bar : True := trivial
+end ShadowProbe
+theorem outside : True := trivial
+"""
+
+
 def selftest():
     bad = 0
+    got = _scan(_SCAN_CASE)
+    for want in ('ShadowProbe.foo', 'ShadowProbe.bar', 'outside'):
+        if want not in got:
+            print(f'  [FAIL] scan: {want!r} missing from {sorted(got)}')
+            bad += 1
+    for notwant in ('ShadowProbe.outside', 'Model.foo'):
+        if notwant in got:
+            print(f'  [FAIL] scan: {notwant!r} should not be declared')
+            bad += 1
     for cell, want in _CASES:
         got = parse_decl(cell)
         if got != want:
@@ -236,7 +292,7 @@ def selftest():
     if (first_path, longest) in pairs:
         print('  [FAIL] SEED: the mispairing the old parser made is not distinguishable here')
         bad += 1
-    print(f'  decl_cells selftest: {len(_CASES) + len(_RAISES) + 1} case(s), '
+    print(f'  decl_cells selftest: {len(_CASES) + len(_RAISES) + 6} case(s), '
           f'{"ALL PASS" if not bad else str(bad) + " FAILED"}')
     return 1 if bad else 0
 
