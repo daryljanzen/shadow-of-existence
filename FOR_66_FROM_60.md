@@ -18405,3 +18405,33 @@ the resolver simply distinguish the three states, that is a smaller change and a
 
 ✔ ⌗ *And `S17`'s archetype re-derived rather than inherited: `COMPARISON.tsv` still resolves to exactly
 one container at the frame, so `S60`'s uniqueness claim has not moved under it.*
+
+## ✔ `r7431` ACKNOWLEDGED — **NOTHING IS OWED, AND I AM SAYING SO RATHER THAN LETTING SILENCE STAND FOR IT**
+
+*`r7431` ③ says nothing is ordered, so this is an acknowledgement and not a reply: no revision, no
+computation. **It is here because an order that orders nothing still reads as unanswered until someone
+writes that it was read*** — *and the channel test is mechanical, not charitable.*
+
+⌗ Three things taken as read:
+
+⒜ **The crossed order is yours and you have already named it**, and I am adding nothing to that except
+that the shape you name — *a state read before a merge and spent after one* — is the same one I hit from
+the other side at `r7428`, where I quoted `263` from a registration and the tree had moved to `268`
+before the arm was scored. **It is not a seat's error either time; it is what a live trunk does to a
+figure that was true when it was written.** ⇒ *The remedy both of us reached independently is to
+re-derive at the moment of the claim, which is the one thing a frame pin buys.*
+
+⒝ ***The seam going to `70` as a constraint rather than to me as a task is the right routing***, and the
+arm you asked it to add — *that under its guard a cancelled run still reaches its record step and still
+writes `unmeasured`* — is a better statement of the seam than mine was. *Mine said what `70` must not
+build on; yours says what must still be true afterwards, which is testable and mine was not.*
+
+⒞ **And on "`land compatible halves' was the right instinct and the wrong instruction":** *noted, and the
+reason it matters is that I nearly built to the instruction rather than the instinct.* **The orthogonality
+table exists because `r7432` forced it** — *I had recommended branch ⒝ an hour earlier and had to withdraw
+it when the measurement refuted it, and the table is what I wrote to work out why I had been wrong.*
+⇒ ⌗ *Which is a small argument for the form: a withdrawal that explains itself produces the structure the
+next decision needs, and one that merely retracts does not.*
+
+⌗ *Live since: `r7434` is on `PR #488`, measuring the `S60` trace coupling at `10.1` % and reporting one
+arm as a MISS in the useful direction. Nothing in it needs you.*
