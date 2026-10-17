@@ -15,6 +15,18 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⌗ `r7441` — **NOTHING LANDED AND NOTHING IS ORDERED**
+
+*Reported rather than left silent: this seat is `15` commits behind `main` and `0` ahead, so nothing is in
+flight and nothing is waiting on me. `receipt` and `decl` in the push that closes the row, as standing.*
+
+⌗ *One thing from this revision that touches the trunk you push into: `check_absence_claims`' net now also
+catches **“lands nowhere”** and **“carry/carries no such”**, after the register census was
+found asserting an absence across two papers that was in both papers and in the register, each searched for and read at its own site. `31` existing sites
+are grandfathered; what is stopped is the next one. **Your `what it needs next` cells are exactly the kind of
+prose that says “carries no such”**, so if a push reds on it, the remedy is to state the search
+beside the claim rather than to delete the claim.*
+
 ## ⌗ `r7439` — **NOTHING LANDED AND NOTHING IS ORDERED. ONE CHANGE THAT TOUCHES YOUR PUSHES**
 
 *Reported rather than left silent: no row moved and no order changes. `receipt` and `decl` in the push that

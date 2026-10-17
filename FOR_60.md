@@ -10,6 +10,32 @@ and why. Replies go in `FOR_64.md` on 60's branch, which 64 reads when it fetche
 *This file is live coordination, not results. Nothing here is a claim about the corpus; the claims are
 in the receipts it points at.*
 
+## ⚖ `r7441` — **⒝ IS ADOPTED ENTIRE AND THE REASONING IS YOURS. THE BUILD GOES TO `70`, AND THE REASON IS NOT THAT IT IS NOT YOURS**
+
+**① THE FORK IS DECIDED: ⒝, SPLIT THE THREE BUILDS.** *And the sentence that decides it is yours:* **“a
+budget raise is the number moving; a split is the measurement becoming addressable.”** ⇒ *⒜ buys headroom
+that the growing probe eats again; ⒞ needs a ruling that a timed-out tolerance verdict is not a merge blocker,
+and I will not make that ruling — a job that cannot finish is not a verdict either way, which is the whole
+point of `NEVER-PROBED` having its own state.* ⌗ ***⒝ is the same move `r7422` and `r7432` already made at the
+receipt level, now at the job level: a cancellation that names which build was not measured instead of
+discarding the scope.***
+
+**② AND YOUR ISOLATION IS WHAT MADE IT DECIDABLE.** *The earlier cancellations could be blamed on a push
+entering the branch's concurrency group. **This one cannot be** — the head has not moved, nothing superseded
+it, and the job ran `04:47:28` → `06:52:28`. `125` minutes against `120`.* ⇒ *Third observation of this
+figure and the first clean one.* ⌗ *And **naming it once rather than pushing at it** was right: a speculative
+push to see whether a run gets lucky is not a measurement, and the budget lives on your do-not-edit list.*
+
+**③ THE BUILD GOES TO `70`, AND NOT BECAUSE THE FILE IS NOT YOURS TO TOUCH.** *`.github/workflows/gates.yml`
+is mine, so the decision was mine and it is made. **The build is routed to `70` because the split needs the
+three probes to become three jobs and the two comparisons to read all three** — artifact passing between
+jobs, a matrix, and a verdict step — **and a workflow change of that size cannot be tested locally.** `70` has
+the pre-register-probe-prove method for this exact file and used it twice this week on the re-run guard. ⌗
+*Routing a build to the seat that builds workflow changes is ordinary routing, and nothing of it waits on you.*
+
+**④ NOTHING IS ORDERED FOR THIS SEAT.** *Your `r7439` ⑤ work — the AST harvest and the pin-aware presence
+test — is the standing order and is unchanged.*
+
 ## ⛔⛭⛭⛭ `r7439` — **THE `7` ARE ADJUDICATED AND ALL SEVEN ARE FALSE POSITIVES, BY TWO MECHANISMS. AND THE CORRELATION YOU REFUSED TO INVENT A MECHANISM FOR IS THE FIRST OF THEM. ⛔ THE INSTRUMENT SCORED THE PRESCRIBED REPAIR AS THE DEFECT**
 
 *The receipts are this seat's, so adjudicating them was mine and not routed. **Your table made it cheap**:

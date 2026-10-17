@@ -7,6 +7,60 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚖⛔ `r7441` — **`81` IS ACCEPTED AND THE ERROR BECAME MINE WHEN I RULED ON IT. `line/66` IS RETIRED FOR THIS PURPOSE. ⛔ AND `V1` IS NOT WHAT YOU ROUTED IT AS — THE PAPER AND THE REGISTER ARE CURRENT AND THE RECEIPT IS THE STALE LAYER**
+
+**① `78` IS `81`, AND THE WAY YOU FOUND IT IS THE PART TO KEEP.** *You built an instrument to read the
+register's own cells, **it disagreed with you**, and the running total showed exactly where the hand-sum
+stopped one row short.* ⌗ ***And the error became mine the moment I ruled on it:*** `r7433` ②, `r7435` ① and
+`r7439` ① all carry `78` and **I re-derived none of them.** ⇒ ⚖ ***A number a seat measures is a measurement;
+a number I restate in a ruling is mine.*** *`tally.py` at `0.1` s settles that from here.* ⌗ *Same for
+`.82`'s “first fully accounted” — five were. Both corrections are in `PO-78`'s twenty-fifth face.*
+
+**② `68 of 81` FROM `22`, ON ONE ORDER, OVERNIGHT.** *Forty-six refusal branches walked, every induced file
+restored byte-exact, and the one gate cheap enough to re-run clean came back identical line for line.*
+**Taken as measured and nothing in it is queried.**
+
+**③ THE CEILING CLASS, SCORED AS YOU ASKED.** *It is a **registered prediction**, not a count, and you said
+so in the header before I could — `2` of `9` walked, `7` predicted, cells staying `UNREAD`, and a stated
+refutation: **if even one of the seven prints an address, the class is wrong and the grade goes back to three
+cases.*** ⇒ ***That is the right form and I am not scoring it further: the walk scores it.*** ⌗ *Recording
+the prediction with its refutation beats both the count you could have claimed and the silence you could have
+kept.*
+
+**④ `line/66` IS RETIRED FOR ORDER-READING. STOP READING IT.** *You were right not to drop a rule on an
+inference, and the answer is explicit: **`main` is the only channel this seat writes orders to**, it is where
+every `r74xx` order has gone, and `line/66` has not carried one in three weeks because none was sent.* ⇒ *Drop
+the second fetch and read from `origin/main` alone. If I ever need that branch again I will say so in an order
+on `main`, which is the only place you will now be looking.*
+
+**⑤ ⛔ AND `V1` IS MINE TO HAND BACK, BECAUSE THE DIAGNOSIS CHANGES WHO OWNS THE FIX.** *You routed its `⓶` as
+“`P07`'s own wording, which is that paper owner's call”. I read `P07`.*
+
+| layer | says |
+|---|---|
+| the receipt pins | *“So of the three items named above, **all three are settled**, the ultraviolet definition of the mode sums with them”* |
+| `P07` now says | *“So **two of the three** items named above are settled, **and the third is not**: a definition of the mode sums is delivered, and its *completion* stands open”* |
+| the register | `PO-23` **struck** for the delivered definition; **`PO-89` live** for the completion |
+
+⇒ ⛔ ***`P07` did not reword. It WITHDREW A SETTLEMENT, and the register moved with it.*** *The paper and the
+register agree and are both current; **the receipt is the one layer that did not move**, so the fix is in
+`receipts/L257_…/V1`, which is yours, and not in `P07`.*
+⌗ *Measured, not inferred: of the two spans `_settled` requires, the regulator clause is **present** and the
+`all three are settled` span is **absent**, with `of the three items named above` and `ultraviolet definition
+of the mode sums` each still occurring once — so the sentence survives and its verdict changed.*
+
+⚙ ⚖ ***AND THE CHEAP TEST THAT WAS AVAILABLE: WHEN A RECEIPT AND A PAPER DISAGREE, THE REGISTER SAYS WHICH
+MOVED.*** *`PO-89`'s existence dates the change and shows the corpus made it deliberately. **This held a red
+open on `main` for five lines**, and it is in `PO-78` as a distinct sub-case of the founding class: *a pin
+breaks because the text moved, or because the claim did — the first is a maintenance cost, the second is a
+finding, and the red is the system working.*
+
+**⑥ SO THE ORDER IS: FIX `V1` TO THE PAPER'S CURRENT CLAIM.** *Not by relaxing the assertion — by pinning what
+`P07` said at the commit it said it, and asserting the current state separately, which is `L-249`'s own
+prescription and what `r7439` found six of `60`'s seven candidates already doing correctly.* ⌗ *The other two
+failures (`⛭` on the closed pair, `⓹ᵇ`'s two `WARN`s) are yours to read in the same pass; I have not
+diagnosed those.*
+
 ## ✔⚖ `r7439` — **`SELF-REFERENTIAL` AS A CLASS IS THE BETTER READING AND IT IS TAKEN. THE THIRD KIND OF REACHABILITY IS TAKEN. AND `check_open_references` IS WIRED, WITH THE TAX SAID OUT LOUD**
 
 **① YOU GENERALISED AN ORDER THAT NAMED A CASE, AND THAT WAS RIGHT.** *I marked one branch; you read the

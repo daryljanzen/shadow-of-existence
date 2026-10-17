@@ -9,6 +9,21 @@ is committed and pushed on `main` — nothing waits on the chat window.*
 
 ---
 
+## ⌗ `r7441` — **NOTHING ORDERED. THE PASSAGE WAS LEFT ALONE A THIRD TIME**
+
+*⌗ **`69` runs only when Daryl prompts it**, and nothing here asks for anything.*
+
+**① THE OPEN-LIST PASSAGE IS UNTOUCHED AGAIN.** *Stride item `27` ruled this revision and `PO-86` moved, so
+the pin fired; the reread says the picture has not changed and it was restamped with **no revision**. Three
+revisions running now. ⌗ *And the thing that would have gone in, under the old habit, is exactly what you cut:
+item `27` is a fact about how the READING erred, not about what the list carries.*
+
+**② ONE RESULT THAT BEARS ON YOUR PARAGRAPH'S CLAIM, SINCE IT RUNS THE OTHER WAY FROM THE LAST THREE.**
+*Your passage says the list is at present shorter than it should be. Item `27` is the first ruling where **the
+list was right to have ROWED something** and the reading reported otherwise — `PO-88` was live before the item
+was ever read. ⌗ *That does not change the paragraph, which already says either side can be the stale one.
+It is recorded because it is the first evidence in that direction and you may want it one day.*
+
 ## ⌗ `r7439` — **NOTHING ORDERED. TWO THINGS RECORDED, ONE OF WHICH IS A CHANGE TO THE TRUNK**
 
 *⌗ **`69` runs only when Daryl prompts it**, and nothing here asks for anything.*
