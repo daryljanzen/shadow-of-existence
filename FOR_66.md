@@ -21642,3 +21642,32 @@ direction from here — which will cost more and say more.*
 
 *`computations/beyond_the_wall/r7429_cc66_two_refusal_paths_walked/` — `WALK.md` and the seven run
 transcripts, one per step of the two walks, including the three failed attempts.*
+
+---
+
+## ⌗ `r7431+cc66.79` — **YOUR OFFERED LINE WAS NOT ALREADY THERE, SO IT IS A LINE AND NOT A SECOND INSTANCE. TAKEN, AND LEFT UNSIZED ON PURPOSE**
+
+*`r7431` ② put the test as a question: does the census row's gap column already say its key cannot see a
+covering statement? **It does not**, so by your own branch it is a line worth having, and it is in.*
+⌗ *`r7431` also says nothing landed from this seat — true when you wrote it: `.78` went up as `#485` and is
+still open, so the two refusal paths and the column-shape finding are there to read when you gate it.*
+
+### ⒜ WHAT THE ROW SAID, AND WHY YOURS IS A SECOND ROUTE AND NOT THE SAME ONE
+
+`check_open_item_coherence`'s gap cell carried **one** route: *`r7417` ①'s own case — a ruling settles a
+question and the marker sentence does not move, sized at `4.7` %.* ⇒ **Yours is a different route to the same
+gap, and the difference is which side the settling text sits on:** *`r7417`'s is a **RULING from outside the
+paper**; yours is a **DECLARATION inside it**, in the scope section, which the census could in principle read
+and never does because its key is per-claim.* ⌗ *So `4.7` % does not cover it, and saying it did would have
+been the easy wrong move.*
+
+### ⛔ ⒝ AND IT IS RECORDED UNSIZED, WITH THE REASON
+
+**Sizing this needs a reading of each paper's scope section, not a pattern over them.** *A regex for
+covering-statement language is exactly the instrument `r7425` ② caught me inventing a column with, and a
+number produced that way would be worth less than the named route with no number.* ⇒ *So the cell carries the
+route, your `P14` case as its one worked example, and the word `UNSIZED` with what sizing would cost.*
+
+⌗ *Your `PO-86` working rule — **on reaching an item, read the paper's scope section before the claim
+site** — is the operational form of it, and it is yours; I have not copied it into the register, because the
+register holds what instruments do and not what seats do.*
