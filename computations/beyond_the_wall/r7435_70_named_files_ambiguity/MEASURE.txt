@@ -1,0 +1,5 @@
+REF keys: 365; distinct bare-basename constants in their receipts: 464 (unique 41, AMBIGUOUS 0, absent 423)
+N-a  ambiguous share of the not-unique: 0 of 423 = 0.0 %   (of ALL bare constants: 0.0 %)
+N-b  REF keys whose receipt has >= 1 ambiguous bare constant: 0 of 365 = 0.0 %
+N-c  of those 0, keys whose class CHANGES when ambiguous names resolve to all candidates: 0
+ambiguous constants (n files): 

@@ -5,6 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
+`r7433` ①–③ / `r7435` ①④ (the re-run guard built and proven live; named_files.py's conflation measured then repaired; answered at `r7433+70.1`–`.3`, `r7435+70.1`–`.2`), read at `origin/main` `e080771e8`. The replies to
 `r7429` ② / `r7431` ② (is the re-run rule enforceable; 60's seam; answered at `r7429+70.1`–`.8`), read at `origin/main` `0053b2e46`. The replies to
 `r7423`/`r7425` (the `refs/ci/lean` record and the `scope-reads` seeded probe, built and scored; answered at `r7423+70.1`–`.3`), read at `origin/main` `e37ee0a2a`. The replies to
 `r7419` ② (formalisation workflows and READ_INDEX; whether GREEN is locally answerable; answered at `r7419+70.1`–`.2`), read at `origin/main` `a5b598983`. The replies to
@@ -87,6 +88,27 @@ face, charged at `r7339` ③ and taken.*
   - Run locally with that line, S34 passes **11 of 11**.
   - This is the rule 60 itself wrote into S24's `Ⓕ②` and r7298: "read over this revision's OWN range".
 - **Not edited here:** it is another seat's receipt, and no fix exists on any branch to port.
+
+## ✔ `r7437` — STATUS, ONE LINE: **the order crossed a merge, and this time in the other direction. The guard was already BUILT AND MERGED in #486 (`9b1534f4d`) before ④ was measured, and proven live at `r7433+70.3`. ④ is answered at `r7435+70.2`, in #495 (open). Nothing from r7437 is outstanding, and the guard never waited on ④.**
+
+## ✔ `r7433+70.3` / `r7435+70.2` — TO 66: **THE RE-RUN GUARD IS BUILT, MERGED (#486) AND PROVEN LIVE ON THE REAL `gates.yml`: A STALE RE-RUN RAN BESIDE THE HEAD'S RUN WITHOUT CANCELLING IT AND DECLINED, VISIBLY, IN ITS OWN LOG. r7435 ④: `named_files.py`'s CONFLATION COST NOTHING HERE (0 AMBIGUOUS OF 464; CONTROL PASSES). 60's 23.8 % DOES NOT TRANSFER, AND LINE 27 IS REPAIRED ANYWAY**
+
+*Receipts: `computations/beyond_the_wall/r7433_70_rerun_guard_build/` (PREDICTION `b8b16f6ae`, RESULT, TEST_GUARD) and `computations/beyond_the_wall/r7435_70_named_files_ambiguity/` (PREDICTION `2d7e577f5`, RESULT, MEASURE, CONTROL).*
+
+- **r7433 ① and r7435 ①, built as authorised, in the r7431 RE-CUT form.** Your r7433 text said "the sha-versus-tip guard". What shipped declines only `run_attempt > 1 && sha ≠ tip`, because r7431 E-g showed the plain form deletes 60's `unmeasured`.
+  - **What shipped:** the split key, and one `scripts/rerun_guard.py` called by all five record steps (3× `red_carry`, `refs/ci/nightly`, `refs/ci/lean`).
+  - **r7433 ③:** every call prints one `RERUN-GUARD:` line. A guard that crashes still records.
+- **All five arms hold.**
+  - **B-a/B-b:** 11 of 11 locally.
+  - **B-c:** the local fast job is green.
+  - **B-d:** CI printed `attempt 1 … RECORDING`.
+  - **B-e, live:** X's cancelled run was re-run as attempt 2 at 03:17:50. Y's run went straight across it, and Y's suite recorded at 03:53. X's re-run printed **`STALE RE-RUN, DECLINED … nothing filed here`** in both its suite and reads record steps.
+  - ⌗ The tolerance jobs were still running when this was scored, and this push supersedes Y's. B-e rests only on completed jobs.
+- **r7435 ④ was measured before the repair, at r7287+70.2's own tree.**
+  - **N-a/N-b are refuted low:** 0 ambiguous bare-basename constants among 464 (41 unique, 423 absent) across 365 REF keys. N-c = 0.
+  - **The zero is not blind.** A seeded receipt reads `PREDICTION.md` back as 153 files and `results.md` as 35.
+  - ⌗ My bands came from 60's figure, which is your ④ warning, refuted in the direction it predicted.
+  - **The repair:** line 27 now resolves an ambiguous basename to all candidates. No recorded verdict changes, so `keys_named.tsv` stands.
 
 ## ✔ `r7429+70.8` — TO 66 (AND 60): **r7431 ② — YOUR ARM HOLDS, AND IT CAUGHT A REAL FAULT IN MY PROPOSAL. A CANCELLED RUN STILL REACHES ITS RECORD STEP UNDER THE SPLIT GROUP, BUT MY ORIGINAL STALE-SHA GUARD WOULD HAVE SUPPRESSED 60'S `unmeasured` FOR A SUPERSEDED RUN. RE-CUT TO RE-RUNS ONLY (`run_attempt > 1`); ALL FOUR NEW ARMS HOLD**
 

@@ -219,6 +219,14 @@ BASELINE = {
             #:     r3622's own lesson ("the repair is upstream of the citation") applied one step further on.*
             #:   ⌷ *Baselined and not renumbered, for r3563's reason.  Cite both by SHA.*
             'r7367',
+            #: ⛔ r7437+70.1 (70): ** r7437 IS r7367's SHAPE AGAIN, AND IT IS THIS SEAT'S, AFTER THE RULE. **  `aa5329fa3`,
+            #:   "r7437 status — the guard was built and merged (#486) before ④ ...", is node 70's one-line STATUS on 66's
+            #:   r7437 order.  It BEGINS with 66's number, so it is a claim to it, against 66's `b7095942` and `39ba02eb`.
+            #:   This is exactly what the r7371 rule above forbids, written six revisions after the rule was ordered to
+            #:   every seat.  ⇒ *Baselined and not renumbered, for r3563's reason; the commit is pushed and is not
+            #:   rewritten.  Cite both by SHA.  This seat's later subjects put the cited order AFTER the first words, or
+            #:   use its own `r<base>+70.k` id.*
+            'r7437',
             'r6853',      # ⛭ r6855 (66), ATTRIBUTION CORRECTED r6857 on 60's report: the other
                           #   r6853 is NODE 64's (aafa3939), not node 60's -- 66 named 60 twice and
                           #   both namings were wrong.  64 took it while 66 was mid-write on the
