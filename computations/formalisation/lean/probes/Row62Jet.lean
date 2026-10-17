@@ -29,6 +29,7 @@ set_option linter.style.longLine false
 -- the sympy tables are long literals over a generic field; their elaboration alone exceeds the default budget
 set_option maxHeartbeats 1000000000
 set_option maxRecDepth 200000
+set_option linter.constructorNameAsVariable false
 
 namespace ShadowProbe
 

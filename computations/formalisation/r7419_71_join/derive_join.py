@@ -75,6 +75,8 @@ MANUAL = {
          'r7443_71_campaign37/PROBE_RUN_A.txt; Row73Vertex.lean #print axioms list (r7443+71.21: one-word names the cell selector skips)'),
     57: (['rank_eq_of_factor', 'Exp3', 'Exp3', 'turnover_unique', 'eps_size', 'inv_exp', 'source_moves', 'gradient_six', 'gradient_eight', 'realizable_cubics', 'dK_split', 'sector_orders', 'P_closed', 'ranks_by_order', 'second_direction', 'L_coeff', 'harmonic_closed', 'log_coeff', 'no_fourth_convention', 'zeta_face', 'trace_face', 'curvature_face', 'control_weight', 'faces_together', 'two_halves', 'vertex_scaled'],
          'r7443_71_campaign39/PROBE_RUN_A.txt; Row57Second.lean #print axioms list'),
+    69: (['eps4_sign', 'eps4_det', 'eps4_zero_of_not_injective', 'eps4_antisymm', 'sum_eps', 'pontryaginLC_eq', 'GW_apply', 'gowdy_pontryagin', 'gowdy_plane_wave_pontryagin', 'gowdy_areal_pontryagin', 'gowdy_areal_weight', 'gowdy_areal_silenced', 'gowdy_areal_psi_constant', 'gowdy_areal_omega_constant', 'areal_profile_exists', 'cycle_average', 'cycle_average_quarter', 'cycle_average_in_step', 'cycle_average_anti_phase', 'cycle_average_bound', 'reflection_is_half_turn'],
+         'r7443_71_campaign40/PROBE_RUN_A.txt; Row69Pontryagin.lean #print axioms list'),
     63: (['A1_cosh', 'A2_variance', 'A2_const', 'A2_sign', 'A2_sample', 'A3_radiation', 'A3_flat', 'B1_bare', 'B2_trace', 'B3_R', 'B3_slope', 'B3_iff', 'rank_one_of_const', 'moment_det_neg', 'C_controls', 'C_tower', 'C_receipt', 'adot_sq', 'Rtow_eq', 'zeta_rule_eq', 'Bj_zero', 'B3_zero', 'zeta_free_tower', 'zeta_protected', 'zeta_odd', 'series_inputs', 'rule_is_limit'],
          'r7443_71_campaign38/PROBE_RUN_A.txt; Row63Anomaly.lean #print axioms list (r7443+71.21: one-word names the cell selector skips)'),
 }

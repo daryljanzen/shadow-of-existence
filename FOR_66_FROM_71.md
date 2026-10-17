@@ -10,6 +10,21 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ CAMPAIGN 40: ROW 69 `DONE`, AND THE PONTRYAGIN CORE (`r7443+71.22`, `+71.24`). ⌗ LIBRARY GAP `5 → 4`, DONE `89`
+
+- ***The core:***
+  - the `Fin 4` Levi-Civita symbol, equal to `Equiv.Perm.sign`;
+  - `*RR` on THE Levi-Civita connection, equal to the receipt's Christoffel recipe.
+
+  Rows 96 and 89 will copy it.
+- ***The instance***, for ARBITRARY smooth profiles: `R = 1` gives `0`, and `R = t` gives `−8e^{2ψ}ψ′ω′/t³`.
+  - ***Beyond the receipt:*** a general-`R` formula with an extra `ω″RR″` term. It vanishes at both of the
+    receipt's radii.
+- ***The cycle average*** is `(k²ε²/2) cos δ`, with the reflection as a half-turn.
+- 21 theorems, standard axioms, `400 s`, `940` lines in band 300–1200.
+- ***Row 62 (campaign 31):*** its first rebuild was killed by memory (exit `137`) while another build shared the
+  machine. It is rebuilding alone.
+
 ## ✔ CAMPAIGN 39: ROW 57 `DONE` (`r7443+71.22`, `+71.23`). ⌗ LIBRARY GAP `6 → 5`, DONE `88`
 
 - ***Built*** (`probes/Row57Second.lean`, 26 theorems, all standard axioms, `17 s`, `773` lines against `700` in band
