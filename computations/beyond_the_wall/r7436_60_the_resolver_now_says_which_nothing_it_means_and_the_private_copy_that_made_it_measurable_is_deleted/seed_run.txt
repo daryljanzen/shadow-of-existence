@@ -1,0 +1,60 @@
+====================================================================================================
+  r7400 cost.py -- THE THREE STATES OF `resolution`, BY CONSTRUCTION  (r7436, r7433 (1))
+  the real-tree cases are read at FRAME 15f274181, never live
+====================================================================================================
+
+  ⓵  NOT-A-TOKEN -- not a claim about the tree at all, and so not a NONE
+    OK    ⓵ '' -> NOT-A-TOKEN, no paths, no candidates
+    OK    ⓵ '.' -> NOT-A-TOKEN, no paths, no candidates
+    OK    ⓵ './' -> NOT-A-TOKEN, no paths, no candidates
+    OK    ⓵ '/' -> NOT-A-TOKEN, no paths, no candidates
+    OK    ⓵ '...' -> NOT-A-TOKEN, no paths, no candidates
+    OK    ⓵ './/.' -> NOT-A-TOKEN, no paths, no candidates
+    OK    ⓵ᵉ and `resolve` says NOT-A-TOKEN rather than an empty label
+    OK    ⓵ᶠ ⛔ the `tok.startswith(".")` disjunct this guard used to carry is UNREACHABLE: over every token shape that could reach it, `strip("./")` never leaves a leading dot -- so it was dead code, and deleting it is what the seed found
+    OK    ⓵ᵍ ⛔ AND A SECOND DEAD-BUT-WRONG BEHAVIOUR, which this seed found and this revision does NOT repair: `strip("./")` also strips the dot a DOTFILE owns, so `.hidden.py` is looked up as `hidden.py` and reads NONE though the file is right there in the tree
+    OK    ⓵ᵍⁱ ⌗ and my expectation moved again: the mangling bites ONLY the bare-basename route.  The same dotfile named as a PATH resolves, because there the leading character is not a dot and `strip` takes nothing -- so the defect is `strip("./")` on a basename and not the dotfile
+    OK    ⓵ʰ ⌗ and a whitespace-only token reads NONE and not NOT-A-TOKEN -- I expected the latter.  `strip("./")` leaves the spaces, so it IS a claim the tree does not answer; and the mint's own `PATHTOK` cannot emit one, so widening the guard for it would be behaviour for an input the population cannot produce
+
+  ⓶  THE PATH ROUTE -- RESOLVED, AMBIGUOUS, NONE
+    OK    ⓶ᵃ an exact path -> RESOLVED by PATH to itself
+    OK    ⓶ᵇ a unique suffix -> RESOLVED by PATH
+    OK    ⓶ᶜ a suffix of nothing -> NONE, with PATH named as the route that came up empty
+    OK    ⓶ᵈ ⛔ a suffix of TWO paths -> AMBIGUOUS, not NONE -- the state r7434 measured at 0 real occurrences and which only a constructed tree can reach
+    OK    ⓶ᵉ and the candidates are REPORTED, so a caller can say how many answered: 2
+    OK    ⓶ᶠ and `resolve` says AMBIGUOUS where it used to say nothing
+
+  ⓷  THE BASENAME ROUTES -- BASE, DIR, and the ambiguity that is LIVE at 120 pairs
+    OK    ⓷ᵃ a basename unique repo-wide -> RESOLVED by BASE
+    OK    ⓷ᵇ a basename carried by no path -> NONE
+    OK    ⓷ᶜ ambiguous repo-wide BUT one sits in a directory the receipt itself binds -> RESOLVED by DIR
+    OK    ⓷ᵈ ⛔ ambiguous repo-wide and the receipt binds no directory holding it -> AMBIGUOUS, not NONE -- the live case, 120 distinct pairs at r7434
+    OK    ⓷ᵉ and `resolve` says AMBIGUOUS
+
+  ⓸  A RECEIPT IS NEVER ITS OWN CONTAINER, and that exclusion yields NONE and not RESOLVED
+    OK    ⓸ᵃ the basename of the receipt itself -> NONE
+    OK    ⓸ᵇ the receipt's own full path -> NONE
+
+  ⓹  ⚖ THE BEHAVIOUR, NOT THE BRANCH: one more file must make a token AMBIGUOUS, never NONE
+    OK    ⓹ PATH: RESOLVED on a tree of 2 and AMBIGUOUS on the same tree plus one file -- the token did not stop naming things, so it must not read as naming none
+    OK    ⓹ BASE: RESOLVED on a tree of 2 and AMBIGUOUS on the same tree plus one file -- the token did not stop naming things, so it must not read as naming none
+
+  ⓺  AND THE SAME STATES ON THE REAL TREE AT THE FRAME, as known answers
+    OK    ⓺ᵃ the archetype resolves by BASE to exactly computations/beyond_the_wall/r7254_60_mirror_cross_read/COMPARISON.tsv
+    OK    ⓺ᵇ the same token from a receipt that DOES bind a directory holding it -> RESOLVED by DIR, one container out of 230
+    OK    ⓺ᶜ ⛔ and from a receipt that binds no directory holding it -> AMBIGUOUS over 230 real containers -- r7434's worst single token, which the old resolver reported as naming NONE
+    OK    ⓺ᶜⁱ and the two answers come from ONE function on ONE tree, so the difference is the receipt and not the instrument
+    OK    ⓺ᵈ a real full path -> RESOLVED by PATH
+    OK    ⓺ᵉ candidates are non-empty for exactly the two states that reached something
+
+  ⓻  AND THE TWO DEAD-BUT-WRONG BEHAVIOURS ARE MEASURED ZEROS, not assumed ones
+      dot-leading basenames in the tree      : 6
+      dot-leading tokens in the trace        : 5  ['.json', '.log', '.py', '.tex', '.tsv']
+      of those, naming a REAL dotfile        : 0
+      `/`-shaped tokens reaching two or more : 0
+    OK    ⓻ᵃ the dotfile mangling COULD have fired -- 6 path(s) in the tree carry a dot-leading basename -- so the zero below is a measurement and not an empty population
+    OK    ⓻ᵇ and it fires on NOTHING: all 5 dot-leading tokens the trace names are bare KINDS (.json, .log, .py, .tex, .tsv), which name no file with or without the dot
+    OK    ⓻ᶜ and r7434's `/`-ambiguity is still zero on this tree, re-measured here rather than inherited
+    OK    ⓻ᵈ ⚖ so the resolver carries TWO behaviours that are wrong if reached and unreachable from the data, and a seed by construction is the only instrument that can see either
+
+  36 assertion(s), 0 failing

@@ -21,6 +21,7 @@ it for the resolver and the frame without running the sweep.  The sweep is in `m
 """
 import argparse
 import ast
+import contextlib
 import importlib.util
 import json
 import os
@@ -28,7 +29,7 @@ import re
 import subprocess
 import sys
 import time
-from collections import Counter
+from collections import Counter, namedtuple
 
 # the commit that registered PREDICTION.md, BEFORE this ran.  Every container is read AT this commit
 # (r7368 ②: a claim about a historical state is read at a pin, never live), and `main` asserts it is an
@@ -43,6 +44,10 @@ ARCHETYPE_DIR = 'computations/beyond_the_wall/r7254_60_mirror_cross_read'
 ARCHETYPE = ARCHETYPE_DIR + '/COMPARISON.tsv'
 ARCHETYPE_RECEIPT = ('receipts/L_probability/S17_the_cross_read_leaves_six_of_twenty_seven_open_and_all_six'
                      '_are_identity_pins_so_the_residual_is_one_missing_clause_and_not_two_instruments.py')
+# the contrast case r7436 names: a receipt whose trace names `PREDICTION.md` and which binds NO directory
+# holding one, so the token reaches all 230 and the old resolver reported it as reaching none.
+AMBIGUOUS_RECEIPT = ('receipts/L_probability/S1_the_corpus_sweep_finds_no_headline_resting_on_an_'
+                     'overclaimed_sigma_and_three_in_one_paper_below_it.py')
 _KINDS = r'tex|py|md|json|tsv|txt|csv|ya?ml|log'
 # the substitute for the instrument's own `_EXT`: the same kinds, with the whole path-shaped token captured
 PATHTOK = re.compile(r'([\w./\-]*\.(?:' + _KINDS + r'))\b')
@@ -169,23 +174,79 @@ def receipt_dirs(receipt):
 
 
 # ===================================================================================== container resolution
-def resolve(receipt, token):
-    """(paths, how) for one named token.  `how` is PATH (the token is a path in the tree, or a unique suffix
-    of one), BASE (a bare basename, unique repo-wide), DIR (a bare basename resolved against a directory the
-    RECEIPT ITSELF binds -- the arm ⒝ is about), or '' when nothing resolves.  A receipt is never its own
-    container, which is `_present_at`'s own rule (text `from a file it does not own`)."""
+# ⛔ r7433 ①: `resolve` returning nothing used to mean TWO different facts -- *this token reaches no
+# container* and *this token reaches several and I will not say which*.  r7434 measured the second at 120
+# distinct (receipt, token) pairs, worst case a token reaching 230 real files reported as reaching none.
+# The two are now separate states, and they are decided in ONE function.
+RESOLVED, NONE, AMBIGUOUS, NOT_A_TOKEN = 'RESOLVED', 'NONE', 'AMBIGUOUS', 'NOT-A-TOKEN'
+
+Resolution = namedtuple('Resolution', 'state paths how candidates why')
+
+
+def resolution(receipt, token):
+    """THE one place a named token is turned into containers.  Four states, and the two that carry no path
+    are told apart rather than collapsed:
+
+      RESOLVED     -- `paths` is what the token reaches; `how` is the route (PATH, BASE, DIR)
+      AMBIGUOUS    -- `paths` is EMPTY and `candidates` is what it reached: the token names several and
+                      nothing in the receipt chooses between them.  ⛔ This is the state r7434 found being
+                      reported as NONE, and reporting it as NONE is what made a token reaching 230 files
+                      indistinguishable from a token reaching no file.
+      NONE          -- `paths` and `candidates` are both empty: nothing in the tree answers to the token
+      NOT-A-TOKEN   -- the token is empty or dot-leading, so it is not a claim about the tree at all
+
+    `how` carries the ROUTE THAT WAS TRIED even when the state is AMBIGUOUS or NONE, because *which* rule
+    came up empty is part of the answer -- it is how the `/`-shaped drop is told from its bare-basename
+    sibling, and r7434 measured those at 0 and 120.  `why` is a sentence, so a caller can report the state
+    without re-deriving the reason.  A receipt is never its own container, which is `_present_at`'s own
+    rule (text `from a file it does not own`)."""
     tok = token.strip('./')
-    if not tok or tok.startswith('.'):
-        return [], ''
+    # ⌗ r7436: this guard used to read `not tok or tok.startswith('.')`.  The second disjunct is
+    # UNREACHABLE -- `strip('./')` removes every leading `.` and `/`, so its result can never begin with
+    # one -- and it would have been WRONG if it had fired, refusing to resolve a real dotfile.  Deleted,
+    # with a seed that proves the unreachability by construction rather than asserting the branch.
+    if not tok:
+        return Resolution(NOT_A_TOKEN, [], '', [],
+                          'the token is empty once its leading dots and slashes are stripped, so it names '
+                          'nothing and claims nothing about the tree')
     if '/' in tok:
-        hits = [tok] if tok in TREESET else [p for p in TREE if p.endswith('/' + tok)]
-        hits = [p for p in hits if p != receipt]
-        return (hits, 'PATH') if len(hits) == 1 else ([], '')
+        hits = [p for p in ([tok] if tok in TREESET else [q for q in TREE if q.endswith('/' + tok)])
+                if p != receipt]
+        if len(hits) == 1:
+            return Resolution(RESOLVED, hits, 'PATH', list(hits),
+                              'the path-shaped token is exactly one path in the tree')
+        if hits:
+            return Resolution(AMBIGUOUS, [], 'PATH', hits,
+                              f'the path-shaped token is a suffix of {len(hits)} paths in the tree and '
+                              f'nothing in the receipt chooses between them')
+        return Resolution(NONE, [], 'PATH', [],
+                          'the path-shaped token is a suffix of no path in the tree')
     wide = [p for p in BYBASE.get(tok, []) if p != receipt]
     if len(wide) == 1:
-        return wide, 'BASE'
+        return Resolution(RESOLVED, wide, 'BASE', list(wide),
+                          'the bare basename is carried by exactly one path repo-wide')
     here = sorted({os.path.join(d, tok) for d in receipt_dirs(receipt)} & TREESET - {receipt})
-    return (here, 'DIR') if here else ([], '')
+    if here:
+        return Resolution(RESOLVED, here, 'DIR', list(here),
+                          f'the bare basename is carried by {len(wide)} paths repo-wide, and '
+                          f'{len(here)} of them sit in a directory the RECEIPT ITSELF binds')
+    if wide:
+        return Resolution(AMBIGUOUS, [], 'BASE', wide,
+                          f'the bare basename is carried by {len(wide)} paths repo-wide and the receipt '
+                          f'binds no directory holding it, so several answer and none is chosen')
+    return Resolution(NONE, [], 'BASE', [],
+                      'no path in the tree carries the bare basename')
+
+
+def resolve(receipt, token):
+    """(paths, how) for one named token, DELEGATED to `resolution` so the rules live in one place.
+
+    `how` is the route (PATH, BASE, DIR) when something resolved and THE STATE NAME when nothing did, so a
+    caller that reads only this pair can still tell AMBIGUOUS from NONE.  ⛭ `containers` appends a route
+    only for a token that resolved, so it never carried the old empty label and its contract is unchanged.
+    ⌗ A caller that wants the candidates behind an AMBIGUOUS answer calls `resolution` directly."""
+    r = resolution(receipt, token)
+    return (list(r.paths), r.how) if r.state == RESOLVED else ([], r.state)
 
 
 def containers(receipt, toks):
@@ -228,12 +289,207 @@ def present_repo_wide(lit, receipt, sha=None):
     return Q._present_at(sha or FULL, lit, 'SOURCE', receipt)
 
 
+# ========================================================== the three states, proved by construction (r7436)
+@contextlib.contextmanager
+def _tree(paths, binds=None):
+    """point the resolver at a SYNTHETIC tree, so a state is reached by construction and not by whatever
+    the corpus happens to contain.  `binds` is what `receipt_dirs` should answer, injected through the cache
+    the real reader consults first -- the one seam, named rather than hidden."""
+    global TREE, TREESET, BYBASE, DIRS
+    keep = (TREE, TREESET, BYBASE, DIRS, dict(_DIR_CACHE))
+    TREE = list(paths)
+    TREESET = set(TREE)
+    BYBASE = {}
+    for q in TREE:
+        BYBASE.setdefault(os.path.basename(q), []).append(q)
+    DIRS = {os.path.dirname(q) for q in TREE}
+    _DIR_CACHE.clear()
+    _DIR_CACHE.update(binds or {})
+    try:
+        yield
+    finally:
+        TREE, TREESET, BYBASE, DIRS = keep[0], keep[1], keep[2], keep[3]
+        _DIR_CACHE.clear()
+        _DIR_CACHE.update(keep[4])
+
+
+def seed():
+    """known-answer cases for every state `resolution` can return.
+
+    ⛔ r7436 ⒠: the `/`-AMBIGUOUS state measures ZERO real occurrences in the corpus (r7434 arm ⒝), so it
+    is dead code on this population and the only way to test it is to construct it.  And the two arms that
+    matter are stated on the BEHAVIOUR rather than on the branch: *adding one file to the tree must turn a
+    RESOLVED token into AMBIGUOUS and never into NONE* -- once for each route, because that is a behaviour
+    this resolver writes twice."""
+    fails = []
+    n = [0]
+
+    def ck(label, cond):
+        n[0] += 1
+        print(f'    {"OK   " if cond else "FAIL "} {label}')
+        if not cond:
+            fails.append(label)
+
+    R = 'receipts/L_x/R_the_receipt.py'
+
+    print('\n  ⓵  NOT-A-TOKEN -- not a claim about the tree at all, and so not a NONE')
+    with _tree([R, 'a/b/c.py', 'a/b/.hidden.py']):
+        for tok in ('', '.', './', '/', '...', './/.'):
+            r = resolution(R, tok)
+            ck(f'⓵ {tok!r} -> NOT-A-TOKEN, no paths, no candidates', r.state == NOT_A_TOKEN
+               and not r.paths and not r.candidates)
+        ck('⓵ᵉ and `resolve` says NOT-A-TOKEN rather than an empty label',
+           resolve(R, '.') == ([], NOT_A_TOKEN))
+        # ⛔ TWO EXPECTATIONS OF MINE MOVED HERE, and both moves are recorded rather than rewritten.
+        ck('⓵ᶠ ⛔ the `tok.startswith(".")` disjunct this guard used to carry is UNREACHABLE: over every '
+           'token shape that could reach it, `strip("./")` never leaves a leading dot -- so it was dead '
+           'code, and deleting it is what the seed found',
+           not any(t.strip('./').startswith('.')
+                   for t in ('.hidden', '..x', './a', '...', './.y', '/.z', '.', '', 'a.py', './/..')))
+        r = resolution(R, '.hidden.py')
+        ck('⓵ᵍ ⛔ AND A SECOND DEAD-BUT-WRONG BEHAVIOUR, which this seed found and this revision does NOT '
+           'repair: `strip("./")` also strips the dot a DOTFILE owns, so `.hidden.py` is looked up as '
+           '`hidden.py` and reads NONE though the file is right there in the tree',
+           r.state == NONE and 'a/b/.hidden.py' in TREESET)
+        ck('⓵ᵍⁱ ⌗ and my expectation moved again: the mangling bites ONLY the bare-basename route.  The '
+           'same dotfile named as a PATH resolves, because there the leading character is not a dot and '
+           '`strip` takes nothing -- so the defect is `strip("./")` on a basename and not the dotfile',
+           resolution(R, 'a/b/.hidden.py').state == RESOLVED
+           and resolution(R, '.hidden.py').state == NONE)
+        r = resolution(R, '  ')
+        ck('⓵ʰ ⌗ and a whitespace-only token reads NONE and not NOT-A-TOKEN -- I expected the latter.  '
+           '`strip("./")` leaves the spaces, so it IS a claim the tree does not answer; and the mint\'s '
+           'own `PATHTOK` cannot emit one, so widening the guard for it would be behaviour for an input '
+           'the population cannot produce',
+           r.state == NONE)
+
+    print('\n  ⓶  THE PATH ROUTE -- RESOLVED, AMBIGUOUS, NONE')
+    with _tree([R, 'a/b/c.py', 'z/q.py']):
+        r = resolution(R, 'a/b/c.py')
+        ck('⓶ᵃ an exact path -> RESOLVED by PATH to itself',
+           (r.state, r.paths, r.how) == (RESOLVED, ['a/b/c.py'], 'PATH'))
+        r = resolution(R, 'b/c.py')
+        ck('⓶ᵇ a unique suffix -> RESOLVED by PATH', (r.state, r.paths) == (RESOLVED, ['a/b/c.py']))
+        r = resolution(R, 'no/such.py')
+        ck('⓶ᶜ a suffix of nothing -> NONE, with PATH named as the route that came up empty',
+           (r.state, r.how, r.candidates) == (NONE, 'PATH', []))
+    with _tree([R, 'a/b/c.py', 'd/b/c.py']):
+        r = resolution(R, 'b/c.py')
+        ck('⓶ᵈ ⛔ a suffix of TWO paths -> AMBIGUOUS, not NONE -- the state r7434 measured at 0 real '
+           'occurrences and which only a constructed tree can reach',
+           r.state == AMBIGUOUS and r.paths == [] and sorted(r.candidates) == ['a/b/c.py', 'd/b/c.py'])
+        ck('⓶ᵉ and the candidates are REPORTED, so a caller can say how many answered: 2',
+           len(r.candidates) == 2 and '2 paths' in r.why)
+        ck('⓶ᶠ and `resolve` says AMBIGUOUS where it used to say nothing',
+           resolve(R, 'b/c.py') == ([], AMBIGUOUS))
+
+    print('\n  ⓷  THE BASENAME ROUTES -- BASE, DIR, and the ambiguity that is LIVE at 120 pairs')
+    with _tree([R, 'a/b/c.py']):
+        r = resolution(R, 'c.py')
+        ck('⓷ᵃ a basename unique repo-wide -> RESOLVED by BASE',
+           (r.state, r.paths, r.how) == (RESOLVED, ['a/b/c.py'], 'BASE'))
+        r = resolution(R, 'nowhere.py')
+        ck('⓷ᵇ a basename carried by no path -> NONE', (r.state, r.candidates) == (NONE, []))
+    with _tree([R, 'a/b/c.py', 'd/e/c.py'], binds={R: ['d/e']}):
+        r = resolution(R, 'c.py')
+        ck('⓷ᶜ ambiguous repo-wide BUT one sits in a directory the receipt itself binds -> RESOLVED by DIR',
+           (r.state, r.paths, r.how) == (RESOLVED, ['d/e/c.py'], 'DIR'))
+    with _tree([R, 'a/b/c.py', 'd/e/c.py'], binds={R: ['nowhere']}):
+        r = resolution(R, 'c.py')
+        ck('⓷ᵈ ⛔ ambiguous repo-wide and the receipt binds no directory holding it -> AMBIGUOUS, not NONE '
+           '-- the live case, 120 distinct pairs at r7434',
+           r.state == AMBIGUOUS and r.paths == [] and len(r.candidates) == 2)
+        ck('⓷ᵉ and `resolve` says AMBIGUOUS', resolve(R, 'c.py') == ([], AMBIGUOUS))
+
+    print('\n  ⓸  A RECEIPT IS NEVER ITS OWN CONTAINER, and that exclusion yields NONE and not RESOLVED')
+    with _tree([R]):
+        ck('⓸ᵃ the basename of the receipt itself -> NONE',
+           resolution(R, os.path.basename(R)).state == NONE)
+        ck('⓸ᵇ the receipt\'s own full path -> NONE', resolution(R, R).state == NONE)
+
+    print('\n  ⓹  ⚖ THE BEHAVIOUR, NOT THE BRANCH: one more file must make a token AMBIGUOUS, never NONE')
+    for route, before, after, tok in (
+            ('PATH', [R, 'a/b/c.py'], [R, 'a/b/c.py', 'd/b/c.py'], 'b/c.py'),
+            ('BASE', [R, 'a/b/c.py'], [R, 'a/b/c.py', 'd/e/c.py'], 'c.py')):
+        with _tree(before):
+            s0 = resolution(R, tok).state
+        with _tree(after):
+            s1 = resolution(R, tok).state
+        ck(f'⓹ {route}: RESOLVED on a tree of {len(before)} and AMBIGUOUS on the same tree plus one file '
+           f'-- the token did not stop naming things, so it must not read as naming none',
+           (s0, s1) == (RESOLVED, AMBIGUOUS))
+
+    print('\n  ⓺  AND THE SAME STATES ON THE REAL TREE AT THE FRAME, as known answers')
+    r = resolution(ARCHETYPE_RECEIPT, 'COMPARISON.tsv')
+    ck(f'⓺ᵃ the archetype resolves by BASE to exactly {ARCHETYPE}',
+       (r.state, r.paths, r.how) == (RESOLVED, [ARCHETYPE], 'BASE'))
+    # ⌗ A THIRD EXPECTATION MOVED: I first wrote these against ARCHETYPE_RECEIPT, and it RESOLVES -- `S17`
+    # binds its own computation directory, which holds a `PREDICTION.md`.  The ambiguity needs a receipt
+    # that binds no such directory, and the same token in the two receipts is the sharper case anyway.
+    r = resolution(ARCHETYPE_RECEIPT, 'PREDICTION.md')
+    ck('⓺ᵇ the same token from a receipt that DOES bind a directory holding it -> RESOLVED by DIR, one '
+       'container out of 230',
+       (r.state, r.how) == (RESOLVED, 'DIR') and r.paths == [ARCHETYPE_DIR + '/PREDICTION.md'])
+    r = resolution(AMBIGUOUS_RECEIPT, 'PREDICTION.md')
+    ck(f'⓺ᶜ ⛔ and from a receipt that binds no directory holding it -> AMBIGUOUS over '
+       f'{len(r.candidates)} real containers -- r7434\'s worst single token, which the old resolver '
+       f'reported as naming NONE',
+       r.state == AMBIGUOUS and len(r.candidates) == 230 and not r.paths)
+    ck('⓺ᶜⁱ and the two answers come from ONE function on ONE tree, so the difference is the receipt and '
+       'not the instrument',
+       resolution(ARCHETYPE_RECEIPT, 'PREDICTION.md').state == RESOLVED
+       and resolution(AMBIGUOUS_RECEIPT, 'PREDICTION.md').state == AMBIGUOUS
+       and len(BYBASE.get('PREDICTION.md', [])) == 230)
+    r = resolution(ARCHETYPE_RECEIPT, ARCHETYPE)
+    ck('⓺ᵈ a real full path -> RESOLVED by PATH', (r.state, r.paths) == (RESOLVED, [ARCHETYPE]))
+    ck('⓺ᵉ candidates are non-empty for exactly the two states that reached something',
+       all((len(resolution(ARCHETYPE_RECEIPT, t).candidates) > 0)
+           == (resolution(ARCHETYPE_RECEIPT, t).state in (RESOLVED, AMBIGUOUS))
+           for t in ('COMPARISON.tsv', 'PREDICTION.md', 'nowhere-at-all.tsv', '.', ARCHETYPE)))
+
+    print('\n  ⓻  AND THE TWO DEAD-BUT-WRONG BEHAVIOURS ARE MEASURED ZEROS, not assumed ones')
+    _dotpaths = [q for q in TREE if os.path.basename(q).startswith('.')]
+    _toks = {t for v in trace_names()[0].values() for t in v}
+    _dottoks = [t for t in _toks if t.strip('/').startswith('.') and t.strip('./')]
+    _realdot = [t for t in _dottoks if t.strip('/') in BYBASE or t.strip('/') in TREESET]
+    _slashamb = [t for t in _toks if '/' in t.strip('./')
+                 and len([q for q in TREE if q.endswith('/' + t.strip('./'))]) >= 2]
+    print(f'      dot-leading basenames in the tree      : {len(_dotpaths)}')
+    print(f'      dot-leading tokens in the trace        : {len(_dottoks)}  {sorted(_dottoks)}')
+    print(f'      of those, naming a REAL dotfile        : {len(_realdot)}')
+    print(f'      `/`-shaped tokens reaching two or more : {len(_slashamb)}')
+    ck(f'⓻ᵃ the dotfile mangling COULD have fired -- {len(_dotpaths)} path(s) in the tree carry a '
+       f'dot-leading basename -- so the zero below is a measurement and not an empty population',
+       len(_dotpaths) > 0)
+    ck(f'⓻ᵇ and it fires on NOTHING: all {len(_dottoks)} dot-leading tokens the trace names are bare '
+       f'KINDS ({", ".join(sorted(_dottoks))}), which name no file with or without the dot',
+       len(_realdot) == 0 and len(_dottoks) > 0)
+    ck('⓻ᶜ and r7434\'s `/`-ambiguity is still zero on this tree, re-measured here rather than inherited',
+       len(_slashamb) == 0)
+    ck('⓻ᵈ ⚖ so the resolver carries TWO behaviours that are wrong if reached and unreachable from the '
+       'data, and a seed by construction is the only instrument that can see either',
+       len(_realdot) == 0 and len(_slashamb) == 0 and len(_dotpaths) > 0)
+
+    print(f'\n  {n[0]} assertion(s), {len(fails)} failing')
+    for f in fails:
+        print(f'    - {f}')
+    return 1 if fails else 0
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--limit', type=int, default=0)
+    ap.add_argument('--seed', action='store_true',
+                    help='the three-state resolver\'s known-answer cases, and nothing else')
     ap.add_argument('--sample', type=int, default=50,
                     help='⒠ii: present-in-container keys confirmed present repo-wide')
     a = ap.parse_args()
+    if a.seed:
+        print('=' * 100)
+        print('  r7400 cost.py -- THE THREE STATES OF `resolution`, BY CONSTRUCTION  (r7436, r7433 (1))')
+        print(f'  the real-tree cases are read at FRAME {FULL[:9]}, never live')
+        print('=' * 100)
+        return seed()
 
     head = git('rev-parse', 'HEAD').strip()
     moved = [f for f in git('diff', '--name-only', f'{FULL}..HEAD').split() if f.startswith('receipts/')]
@@ -331,4 +587,4 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    sys.exit(main() or 0)

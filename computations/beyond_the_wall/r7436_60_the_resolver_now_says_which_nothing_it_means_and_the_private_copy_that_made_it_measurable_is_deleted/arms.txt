@@ -1,0 +1,170 @@
+r7436 (60) -- THE ARMS, SCORED AGAINST PREDICTION.md AS REGISTERED AT ef175b61
+================================================================================
+Order: r7433 (1).  Instrument: computations/.../r7400_.../cost.py, read at FRAME
+15f27418.  Every verdict is cost.resolution's own; census.py counts and classifies.
+
+SCORE: 3 arms HIT, 3 arms MISS.  Two of the three misses are bands I priced against
+the wrong population; the third is the arm whose miss is the finding, for the second
+cycle running.
+
+--------------------------------------------------------------------------------
+(a)  ONE PLACE, NOT TWO                                                     MISS
+--------------------------------------------------------------------------------
+REGISTERED: the two discriminating lines occur in exactly 1 function across the
+            whole corpus (down from 2); exact, a 2 falsifies it.
+MEASURED  : 3 on the trunk, 2 on this tree.
+              trunk : cost.resolve, coupling.ambiguity, r7287_70/named_files.named
+              after : cost.resolution, r7287_70/named_files.named
+                      (+ cost.seed, which READS the basename table in assertions and
+                       resolves no token -- named, not hidden)
+
+  HALF OF IT HOLDS: in this seat's own read path the behaviour went from TWO
+  functions to ONE, which is what the order asked for.  S60 and r7434 both reach a
+  token through this instrument and nothing else.
+
+  AND THE MISS IS THE FINDING, AGAIN.  The rule is written a THIRD time, by ANOTHER
+  SEAT, and it carries the SAME conflation.  r7287+70.2, named_files.py:27 --
+
+      elif '/' not in s and s in BYBASE and len(BYBASE[s]) == 1: out.add(BYBASE[s][0])
+
+  -- a basename carried by two paths contributes NO container, and the caller cannot
+  tell that from a basename carried by none.  That file is 70's: it is NOT edited
+  here, it is routed with a patch.
+
+  SO THE ARM WAS AIMED AT A FILE COUNT RATHER THAN AT THE BEHAVIOUR OF THE READ
+  PATH -- the same mistake in miniature that r7434 earned the rule for, which is
+  why it is scored as a clean miss and not reinterpreted.
+
+  THE SIGNATURE WAS ALSO WRONG TWICE BEFORE IT WAS RIGHT.  A loose line pattern
+  (BYBASE|TREESET|endswith('/' +)) reported 8 functions, including r7209_70's
+  suffix match and r7386_60's prefix test, neither of which resolves a token.  The
+  measurement is the CONJUNCTION -- a path test AND a basename-table lookup -- with
+  three known answers it must catch and two it must not.  All five correct in the
+  run.  A classifier's confidence is not evidence; a known answer is.
+
+--------------------------------------------------------------------------------
+(b)  EVERY r7434 FIGURE RE-DERIVES IDENTICAL                                 HIT
+--------------------------------------------------------------------------------
+REGISTERED: all nine identical; any difference is a defect in THIS revision.
+MEASURED  : coupling.py's whole run, before and after, is IDENTICAL BYTE FOR BYTE.
+            10.1 %; 222/3/5; 0 slash-drops; 120; 230; BASE 1973 / PATH 211 / DIR 141.
+
+  The private ambiguity() is deleted and the figures come through C.resolution.
+  The translation is behaviour-preserving as registered: AMBIGUOUS carries the
+  candidates the copy counted, RESOLVED the paths, NONE and NOT-A-TOKEN the zero.
+
+--------------------------------------------------------------------------------
+(c)  THE TOKEN-LEVEL CENSUS                            3 BANDS MISS, 2 CLAIMS HIT
+--------------------------------------------------------------------------------
+REGISTERED: RESOLVED 2,000-4,000 (central 2,600); NONE 200-3,000 (900);
+            AMBIGUOUS 50-400 (130); the partition exact; neither NONE nor
+            AMBIGUOUS empty.
+MEASURED  : RESOLVED 748   -- BELOW BAND
+            NONE     106   -- BELOW BAND
+            AMBIGUOUS  34  -- BELOW BAND
+            NOT-A-TOKEN 0
+            TOTAL     888, and the partition is EXACT: 748+106+34+0 = 888.  HIT
+            neither NONE nor AMBIGUOUS is empty.                            HIT
+
+  ALL THREE BANDS MISS LOW, AND THERE IS ONE CAUSE: I priced them against the
+  KEY-level population (2,728 keys) and stated them over DISTINCT (receipt, token)
+  PAIRS, of which there are 888.  One registration error, three misses; reported
+  as one and not as three.
+
+  NOT-A-TOKEN measures 0 because the mint's own PATHTOK cannot emit an empty token.
+  The state is vacuous on this population and reachable only by construction, which
+  `cost.py --seed` (1) does -- so the zero is a measured zero.
+
+--------------------------------------------------------------------------------
+(d)  S60 IS NOT TOUCHED AND ITS FIGURES DO NOT MOVE                          HIT
+--------------------------------------------------------------------------------
+REGISTERED: exact; green, and resolved / named-unresolved / named-nothing identical.
+MEASURED  : exit 0, and the whole output IDENTICAL -- resolved 839,
+            named-unresolved 234, named-nothing 125; 112 of 839 absent; 2966 sites.
+            The file is unmodified by this revision.
+
+--------------------------------------------------------------------------------
+(e)  THE STATE THE POPULATION CANNOT EXHIBIT IS STILL TESTED        MISS ON BAND
+--------------------------------------------------------------------------------
+REGISTERED: 12-30 assertions, 0 failing; the /-AMBIGUOUS case covered by
+            construction and asserted on the BEHAVIOUR rather than on the branch.
+MEASURED  : 36 assertions, 0 failing.  ABOVE BAND -- scored a miss on the band.
+            The substance holds: (2)d constructs a token that is a suffix of two
+            paths and asserts AMBIGUOUS, and (5) states it as behaviour -- adding
+            ONE file to the tree must turn a RESOLVED token into AMBIGUOUS and
+            never into NONE, once per route, because that is a behaviour this
+            resolver writes twice.
+
+  THE BAND MISSED BECAUSE THREE OF MY OWN EXPECTATIONS MOVED AND A WHOLE SECTION
+  WAS ADDED.  Each move is recorded in the seed rather than rewritten:
+
+   (1)f  the guard's `tok.startswith('.')` disjunct is UNREACHABLE -- strip('./')
+         never leaves a leading dot -- so it was dead code, and it would have been
+         WRONG if it had fired, refusing to resolve a real dotfile.  DELETED, with
+         a seed that proves the unreachability by construction.
+   (1)h  a whitespace-only token reads NONE and not NOT-A-TOKEN.  I expected the
+         latter; strip('./') leaves the spaces, so it IS a claim the tree does not
+         answer -- and PATHTOK cannot emit one, so widening the guard would be
+         behaviour for an input the population cannot produce.
+   (6)b  I first wrote the 230-container case against ARCHETYPE_RECEIPT, which
+         RESOLVES: S17 binds its own computation directory and that directory holds
+         a PREDICTION.md.  The contrast -- the SAME token, RESOLVED by DIR from one
+         receipt and AMBIGUOUS over 230 from another, from ONE function on ONE tree
+         -- is the sharper case, so the move improved the seed.
+
+  AND A SECOND DEAD-BUT-WRONG BEHAVIOUR, FOUND BY (1)g AND NOT REPAIRED HERE:
+  strip('./') also strips the dot a DOTFILE owns, so `.hidden.py` is looked up as
+  `hidden.py` and reads NONE though the file is in the tree.  It bites only the
+  BARE-BASENAME route; the same dotfile named as a path resolves.
+    MEASURED ZERO, PROVED NON-VACUOUS IN THE RUN:  6 paths in the tree carry a
+    dot-leading basename, so it COULD have fired; 5 dot-leading tokens appear in
+    the trace and all 5 are bare KINDS (.json .log .py .tex .tsv), which name no
+    file with or without the dot; 0 name a real dotfile.
+    NOT REPAIRED, DELIBERATELY: the fix would move resolve()'s behaviour on real
+    data and arm (b) is what says this revision is a repair and not a change of
+    subject.  Routed instead.
+
+  SO THE RESOLVER CARRIED TWO BEHAVIOURS THAT ARE WRONG IF REACHED AND UNREACHABLE
+  FROM THE DATA, and a seed by construction is the only instrument that can see
+  either -- which is the same shape as r7434's arm (b) and now has two instances.
+
+--------------------------------------------------------------------------------
+(f)  AMBIGUITY HIDDEN INSIDE KEYS THAT LOOKED FINE                           HIT
+--------------------------------------------------------------------------------
+REGISTERED: at least one, band 1-120, central 80.
+MEASURED  : 11 keys RESOLVE and also carry an AMBIGUOUS token; 5 of them in the
+            SOURCE half.  IN BAND, and the central value was badly off.
+
+  AND THE LARGER FIGURE IS THE ONE I DID NOT REGISTER -- the split of r7434's 450:
+      of the 450 keys that read as reaching NO container,
+        107  were reaching SEVERAL and were refused a verdict
+        343  truly reached nothing
+    => 23.8 % of the "reaches nothing" class was never a measurement of the corpus
+       at all.  It was the instrument declining to choose.
+  And they are not spread across the baseline: ALL 107 sit in the SOURCE half, 0
+  elsewhere -- so the question r7433 (2) holds the re-run for and the defect this
+  revision repaired have the same population.
+
+--------------------------------------------------------------------------------
+AND A DEFECT IN r7434's OWN LABEL, WHICH r7433 (1) HAS ALREADY RESTATED
+--------------------------------------------------------------------------------
+r7434 printed "distinct (receipt, token) pairs : 120" and did not dedupe.
+      (receipt, LITERAL, token) incidences : 120
+      distinct (receipt, token) pairs      :  34, over 32 receipts and 15 tokens
+The figure is right as an INCIDENCE count -- it iterates keys, and one receipt names
+the same token under several literals -- and the word "distinct" is wrong.  r7433 (1)
+restates the 120 as distinct pairs, so the mislabel has already travelled; it is
+corrected in FOR_66_FROM_60 rather than left for 66 to find.
+
+THE CONFLATION IS UNTOUCHED BY IT: the worst single token still reaches 230 real
+files and still read as reaching none, which is what the order was about.
+
+--------------------------------------------------------------------------------
+WHAT THIS DOES NOT DO
+--------------------------------------------------------------------------------
+- The 70-minute SOURCE re-run is NOT spent.  r7433 (2) holds it with its reason.
+- S60 is NOT re-censused and NOT edited.  The split its key-level class was holding
+  is REPORTED here -- 234 named-unresolved = 107 with an AMBIGUOUS token + 127 that
+  truly named nothing -- so the figure exists when the re-run is called.
+- r7287_70/named_files.py is NOT edited.  It is 70's; it is routed with a patch.
+- strip('./')'s dotfile mangling is NOT repaired.  Measured zero, routed.

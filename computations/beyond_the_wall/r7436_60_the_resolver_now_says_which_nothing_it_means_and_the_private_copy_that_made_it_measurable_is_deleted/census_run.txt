@@ -1,0 +1,90 @@
+====================================================================================================
+  r7436 -- WHICH NOTHING THE RESOLVER MEANS, COUNTED
+  read at r7400's FRAME 15f27418 (15f274181), never live
+====================================================================================================
+
+  ⓵ ⒜ ONE PLACE, NOT TWO -- AND THE CORPUS SAYS OTHERWISE
+      the signature's known answers, on the trunk  : 3 must match, 2 must not -- ALL CORRECT
+      functions that apply BOTH rules, on the trunk before this revision : 3
+        named()  in  computations/beyond_the_wall/r7287_70_never_moved/named_files.py
+        resolve()  in  computations/beyond_the_wall/r7400_60_the_container_from_the_keys_own_trace/cost.py
+        ambiguity()  in  computations/beyond_the_wall/r7434_60_the_coupling_bound_and_the_resolver_that_reports_an_ambiguous_token_as_naming_nothing/coupling.py
+      and on this WORKING TREE (not HEAD -- the repair is not a commit yet)  : 3
+        named()  in  computations/beyond_the_wall/r7287_70_never_moved/named_files.py
+        resolution()  in  computations/beyond_the_wall/r7400_60_the_container_from_the_keys_own_trace/cost.py
+        seed()  in  computations/beyond_the_wall/r7400_60_the_container_from_the_keys_own_trace/cost.py
+      ⇒ in THIS seat's own read path : ['resolve', 'ambiguity'] -> ['resolution', 'seed']
+        ⌗ `seed` matches because its ASSERTIONS read the basename table; it resolves no token.
+        The behaviour itself went from TWO functions to ONE, which is the half of the arm
+        that holds.
+      ⛔ BUT the arm said 1 ACROSS THE CORPUS and the corpus carries 1 more:
+        named()  in  computations/beyond_the_wall/r7287_70_never_moved/named_files.py
+      ⇒ ** THE ARM MISSES, AND THE MISS IS THE FINDING AGAIN. ** The rule is written a THIRD
+        time, by ANOTHER SEAT, and it carries the SAME conflation: at `r7287+70.2`,
+          elif '/' not in s and s in BYBASE and len(BYBASE[s]) == 1: out.add(BYBASE[s][0])
+        -- a basename carried by two paths contributes NO container and the caller cannot
+        tell that from a basename carried by none.  ⌗ That file is 70's and is NOT edited
+        here; it is routed with the patch.
+
+  ⓶ ⒞ EVERY DISTINCT (receipt, token) PAIR, BY STATE
+      RESOLVED     : 748
+      NONE         : 106
+      AMBIGUOUS    : 34
+      NOT-A-TOKEN  : 0
+      TOTAL        : 888   over 2728 key(s) and 2966 wide-trace row(s)
+      ⇒ the partition is EXACT: 748+106+34+0 = 888 = 888: True
+      ⛔ and BEFORE the repair, 140 of these read as one single answer -- "nothing"
+      ⌗ NOT-A-TOKEN measures 0 here: the mint's `PATHTOK` cannot emit an empty token, so the state is
+        vacuous on this population and reachable only by construction -- which `cost.py --seed` ⓵ does, and
+        which is why the zero is a measurement and not an absence of one.
+      the heaviest ambiguities, by how many real files answered:
+         230 answered  token 'PREDICTION.md'
+                    in S1_the_corpus_sweep_finds_no_headline_resting_on_an_overclaime
+         230 answered  token 'PREDICTION.md'
+                    in S54_a_ledger_change_scopes_five_receipts_and_none_of_the_forty
+         230 answered  token 'PREDICTION.md'
+                    in P15_order_one_answered_negative_the_crossing_cannot_share_a_me
+         230 answered  token 'PREDICTION.md'
+                    in P15_the_composition_route_is_answered_negative_too_because_the
+         230 answered  token 'PREDICTION.md'
+                    in P15_the_dipole_parenthesis_is_right_on_its_own_tower_and_does_
+      ⇒ the worst single token reached 230 real files and read as reaching NONE
+
+  ⓸ ⛔ THE `120` IS AN INCIDENCE COUNT AND `r7434` CALLED IT DISTINCT
+      (receipt, LITERAL, token) incidences    : 120
+      distinct (receipt, token) pairs         : 34
+      over distinct receipts / distinct tokens: 32 / 15
+      ⇒ ** r7434 printed "distinct (receipt, token) pairs : 120" and did not dedupe. The
+        figure is right as an INCIDENCE count -- it iterates keys, and one receipt names the
+        same token under several literals -- and the word "distinct" is wrong. The distinct
+        count is 34. **
+      ⌗ r7433 ① restates the 120 as distinct pairs, so the mislabel has already travelled;
+        it is corrected in FOR_66_FROM_60 rather than left for 66 to find.
+      ⇒ AND THE CONFLATION IS UNTOUCHED BY IT: the worst single token still reaches 230 real
+        files and still read as reaching none, which is what the order was about.
+
+  ⓹ ⒡ WAS THE CONFLATION HIDING AMBIGUITY INSIDE KEYS THAT RESOLVED?
+      keys whose trace resolves something     : 2278
+      keys that ONLY reach ambiguity          : 107
+      keys that reach nothing at all          : 343
+      ⇒ keys that RESOLVE and ALSO carry an AMBIGUOUS token : 11
+        of those, in the SOURCE half S60 censuses          : 5
+      ⇒ ** 11 key(s) looked answered and were carrying a token that reached several files and reported none. **
+
+      ⛭ AND THIS IS THE SPLIT OF `r7434`'s 450, which is the figure the repair earns:
+        of the 450 keys that read as reaching NO container,
+          107 were reaching SEVERAL and were refused a verdict
+          343 truly reached nothing
+        ⇒ ** 23.8 % of the "reaches nothing" class was never a measurement of the
+          corpus at all -- it was the instrument declining to choose. **
+        and they are not spread across the baseline: by half {'SOURCE': 107}
+        ⇒ every one of the 107 sits in the SOURCE half -- which is the half S60 censuses and
+          the half r7433 ② holds the re-run for, so the held question and the defect have the same population.
+
+  ⓺ AND WHAT `S60`'s KEY-LEVEL CLASS WAS HOLDING, reported and NOT written into S60
+      S60 `named-unresolved` keys             : 234
+        of which at least one token was AMBIGUOUS : 107
+        of which every token truly named nothing  : 127
+      ⌗ r7433 ② holds the SOURCE re-run and this revision does not spend it; S60 is not edited.  This line is the split REPORTED, so the figure exists when the re-run is called.
+
+====================================================================================================

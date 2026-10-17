@@ -37,24 +37,24 @@ sys.path.insert(0, R7400)
 import cost as C                                                     # noqa: E402  -- r7400's resolver
 
 
-def ambiguity(receipt, token):
-    """(n_containers, how) WITHOUT the resolver's drop -- the same rules, reporting what it discards.
+# ⛔ r7436 (r7433 ①): the private `ambiguity()` THIS FILE CARRIED IS DELETED.  It was six lines that
+# re-applied the resolver's own rules in order to report what the resolver discarded -- the right probe
+# when nothing else could ask the question, and **the same behaviour written twice**, which is the rule
+# this revision's own finding earned:
+#
+#   ⚖ A PREDICTION AIMED AT AN IMPLEMENTATION RATHER THAN AT A BEHAVIOUR WILL MISS WHEREVER THE SAME
+#     BEHAVIOUR IS WRITTEN TWICE.                            -- PO-78's twenty-first family, member ⒜
+#
+# `C.resolution` now answers it from the one place, and every figure below is read through that.  The
+# translation is behaviour-preserving by construction: AMBIGUOUS carries the candidates the old copy
+# counted, RESOLVED carries the paths it counted, and NONE / NOT-A-TOKEN carry the zero it returned.
 
-    ⛔ This is NOT a second resolver and it does not replace `C.resolve`: every verdict below is
-    `C.resolve`'s.  It answers only the one question `C.resolve` cannot be asked -- *how many did that
-    token actually reach* -- by applying the resolver's OWN two lines to the resolver's OWN tree.
-    ⌗ Kept to six lines and sited beside its original for exactly that reason."""
-    tok = token.strip('./')
-    if not tok or tok.startswith('.'):
-        return 0, ''
-    if '/' in tok:
-        hits = [tok] if tok in C.TREESET else [p for p in C.TREE if p.endswith('/' + tok)]
-        return len([p for p in hits if p != receipt]), 'PATH'
-    wide = [p for p in C.BYBASE.get(tok, []) if p != receipt]
-    if len(wide) == 1:
-        return 1, 'BASE'
-    here = sorted({os.path.join(d, tok) for d in C.receipt_dirs(receipt)} & C.TREESET - {receipt})
-    return (len(here), 'DIR') if here else (len(wide), 'WIDE-AMBIGUOUS')
+
+def reached(receipt, token):
+    """(n_containers, route, ambiguous) -- ONE CALL into the repaired resolver, replacing the private copy.
+    `n` is how many the token actually reached, which is the question the old resolver could not be asked."""
+    r = C.resolution(receipt, token)
+    return len(r.candidates), r.how, r.state == C.AMBIGUOUS
 
 
 def main():
@@ -85,10 +85,10 @@ def main():
         # the two routes to a second container, counted APART and never summed
         per = {}
         for tk in sorted(toks):
-            n, how = ambiguity(receipt, tk)
-            if how == 'PATH' and n >= 2:
+            n, how, amb = reached(receipt, tk)
+            if amb and how == 'PATH':
                 dropped.append((receipt, tk, n))
-            if how == 'WIDE-AMBIGUOUS' and n >= 2:
+            if amb and how == 'BASE':
                 wide_amb.append((receipt, tk, n))
             if n:
                 per[tk] = n
@@ -142,7 +142,7 @@ def main():
 
     print(f'\n  ⓹ ⒟ THE ARCHETYPE, RE-DERIVED AND NOT INHERITED')
     ps, how = C.resolve(C.ARCHETYPE_RECEIPT, 'COMPARISON.tsv')
-    n, _ = ambiguity(C.ARCHETYPE_RECEIPT, 'COMPARISON.tsv')
+    n, _, _ = reached(C.ARCHETYPE_RECEIPT, 'COMPARISON.tsv')
     print(f'      `S17`\'s COMPARISON.tsv resolves to {len(ps)} container(s) by {how!r}, reaching {n}')
     ok = len(ps) == 1 and ps[0] == C.ARCHETYPE
     print(f'      {"✔" if ok else "⛔"} S60\'s archetype {"still resolves alone" if ok else "HAS MOVED"}'
