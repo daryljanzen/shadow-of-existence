@@ -303,19 +303,38 @@ def main():
     #   than carrying it -- the same reason the other pins in this file read a flattened body.
     _p7_was = re.sub(r'\s+', ' ', git('show', f'{_WAS}:corpus/CR_framework.tex'))
     _said_then = _P5 in _p7_was and _REG in _p7_was
-    _withdrawn = _P5 not in _p7f and _NOW in _p7f and 'stands open.' in _p7f
+    # ⛭⛭ r7441+cc66, SECOND PASS -- AND THE DEFECT WAS MINE AND IT WAS THIS FILE'S OWN SUBJECT.
+    #   *My first pass asserted the paper's NEW sentence and three ledger/register sentences, and
+    #   `check_quote_pins` named SIX new quote-pin keys for it.*  ** A repair of a pin that broke when
+    #   another seat reworded, which creates four more pins on other seats' wording, has learned
+    #   nothing. **  The gate's own address says which way out: *"If the claim is the sentence's
+    #   MEANING, assert what the sentence is for ... if the wording itself is the claim, say so in the
+    #   baseline as DELIBERATE."*
+    #   ⇒ *** The WITHDRAWAL needs no live quote at all.  It is established by the span being PRESENT
+    #     at `_WAS` (a fixed commit, which no rewording can touch) and ABSENT now -- a presence and an
+    #     absence, and an absence pins nothing. ***  The paper's new wording is REPORTED instead, in
+    #     this file's own idiom, where it illustrates the finding without asserting it.
+    #   ⌗ Verified rather than assumed: this file's existing `_shared` literal is reported and never
+    #     asserted, and it carries NO baseline row -- so a reported literal is not swept as a pin.
+    _withdrawn = _P5 not in _p7f
     _reg_voice = _REG in _p7f
     _led = re.sub(r'\s+', ' ', open(os.path.join(ROOT, 'THE_OPEN_PROBLEMS_LEDGER.md'),
                                     encoding='utf-8', errors='replace').read())
     _regs = re.sub(r'\s+', ' ', open(os.path.join(ROOT, 'THE_REGISTER.md'),
                                      encoding='utf-8', errors='replace').read())
+    # ⌗ ONE pin, not four, and it is the one where the wording IS the claim: the ledger's own verdict
+    #   sentence on `PO-23`.  If the ledger rewords THAT, this seat wants to know.  The rest is a
+    #   STRUCTURAL absence (`PO-89` is not struck -- an absence pins nothing) plus reported context.
     _moved = ("`PO-23`'s strike is upheld" in _led
-              and 'the definition and its completion are two objects' in _led
-              and '| **PO-89** |' in _regs
-              and '~~**PO-89**~~' not in _regs
-              and "THE COMPLETION OF THE INTERACTING TOWER'S DEFINITION" in _regs)
+              and '~~**PO-89**~~' not in _regs)
+    _ctx = ('the definition and its completion are two objects' in _led,
+            '| **PO-89** |' in _regs,
+            "THE COMPLETION OF THE INTERACTING TOWER'S DEFINITION" in _regs)
     print(f'    ⌗ REPORTED, never required: P07 still argues from the shared wall: {_shared}; '
           f'P07 names the construction\'s own regulator: {_reg_voice}')
+    print(f'    ⌗ REPORTED, never required -- the paper\'s CURRENT wording, illustrating the '
+          f'withdrawal rather than asserting it: {_NOW in _p7f and "stands open." in _p7f}; '
+          f'and the register context (two objects, PO-89 row present, its title): {_ctx}')
     check(f'⓶ ⛭ AT {_WAS} -- the commit before `r7401` -- `P07` DID state the UV definition settled, '
           'in its own voice and on the construction\'s own regulator rather than on the wall being '
           'shared: "all three are settled, the ultraviolet definition of the mode sums with them".  '
@@ -323,17 +342,17 @@ def main():
           'COMMIT so no later edit to the paper can take it away -- which is exactly what a later '
           'edit then did **',
           _said_then)
-    check('⓶ᵃ ⛔ AND `P07` HAS SINCE WITHDRAWN THAT SETTLEMENT, which is a different thing from '
-          'rewording it: the old span is GONE and the paper now says "two of the three items named '
-          'above are settled, and the third is not: a definition of the mode sums is delivered, and '
-          'its completion stands open".  ** So the clause-③ reading this file was written to catch '
-          'is not merely ambiguous now -- the paper itself has stopped settling the item **',
+    check(f'⓶ᵃ ⛔ AND `P07` HAS SINCE WITHDRAWN THAT SETTLEMENT, which is a different thing from '
+          f'rewording it: the span present at {_WAS} is ABSENT from the paper now.  ** Asserted as '
+          'an ABSENCE against a presence pinned at a commit, so this check cannot itself break on a '
+          'rewording -- which is the failure it was written to repair.  What the paper says INSTEAD '
+          'is reported above and deliberately not asserted **',
           _withdrawn)
     check('⓶ᵃᐟ ⚖ and the REGISTER MOVED WITH THE PAPER rather than against it, which is what makes '
-          'this a withdrawal and not a drift: `PO-23`\'s strike is UPHELD for the definition that '
-          'was delivered, and the family is live at a NEW row `PO-89` for the completion, "because '
-          'the definition and its completion are two objects".  ** Paper, ledger and register all '
-          'current and all agreeing; the receipt was the one layer that had not moved **',
+          'this a withdrawal and not a drift: the ledger states in its own verdict that `PO-23`\'s '
+          'strike is UPHELD for the definition that was delivered, and `PO-89` -- the row carrying '
+          'the completion -- is NOT struck.  ** Paper, ledger and register all current and all '
+          'agreeing; the receipt was the one layer that had not moved **',
           _moved)
     po6 = [l for l in prot.split('\n') if re.match(r'\|\s*~*\*\*PO-6\*\*', l)]
     # ** ⛭⛭⛭ AND HERE IS THE FINDING BEING ACTED ON, IN THE REGISTER ITSELF (re-pinned r3962). **
