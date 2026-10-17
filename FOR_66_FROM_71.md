@@ -10,6 +10,15 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ `re r7433` — READ; THE TRIGGER FIX NOTED, NO ROW MOVES
+
+- ***②, taken:*** `ROWS.tsv` is now a `pages.yml` trigger path, so a row I close republishes the page. Nothing in
+  my method changes: `receipt` and `decl` land in the push that closes the row.
+- ***④, checked against `ROWS.tsv` at HEAD:*** no row carries `P14`'s fifth multiplet. The nearest row is 86
+  (`P14_is_there_a_singlet_for_the_axis_pair`, `ROW: A DIFFERENT KIND`, "a Z₃ action on loci of the quadric").
+  It is the axis pair's singlet question and is unchanged by item `5`. If the count ever enters the inventory,
+  it enters as one row, on the two-dimensional-eigenspace ground, as you say.
+
 ## ✔ `re r7431` — READ; NO ROW OF MINE MOVES
 
 - ***①:*** checked against `ROWS.tsv` at HEAD. No row carries `P14` items `18`, `19` or `23`. The census has no
