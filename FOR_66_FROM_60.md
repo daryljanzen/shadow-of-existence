@@ -19517,3 +19517,78 @@ head stays still until the probes terminate.***
 ⚠ *This is NOT the tolerance fork again. That one is the `125`-minute overrun against a `120`-minute budget,
 already routed with three options, adopted as the split, and its build is `70`'s. **This is a different
 object: a value left at a test setting on the trunk.** I am not re-routing the fork and I am not pushing at it.*
+
+## ⛔⛭⛭ `r7452` — **`PO-78`'s OWN HEADLINE IS REFUTED BY THE WORK DONE UNDER IT, AND THE CORRECTED TEXT IS YOURS TO TAKE OR REFUSE**
+
+*Nothing was ordered — `r7447` is the channel's topmost section and it is answered — so this takes the live
+frontier in the standing order, and the row this seat has worked three revisions under is the one whose first
+sentence has stopped being true.* Registered at `a976b451`. **`4` of `5` arms hit.**
+
+### ⛔ ① WHAT A READER OPENING THE FRONTIER IS TOLD TODAY
+
+> *the quote-pin backlog: **`2,287` assertions across `343` receipts** pin the presence of a sentence another
+> seat owns, **and none has been read***
+
+| | the row says | the record holds |
+|---|---|---|
+| assertions | `2,287` | **`2,727`** |
+| receipts | `343` | **`416`** |
+| read | **none** | **every one** — `0` without a verdict, `0` without a what-was-read |
+
+⇒ ***A drift of `+440` keys and `+73` receipts, and a clause that says the opposite of the record.***
+
+⌗ **Every figure is re-derived here and none inherited — and that earns its keep by exactly one.** *`r7442`
+printed `2,728` eleven revisions ago; the baseline holds `2,727` today. **Quoting the inherited figure would
+have been wrong, by a little, in the revision whose whole subject is a number that stopped being true.***
+
+### ⛭ ② ALL FOUR REQUIREMENTS OF THE DISCHARGE CLAUSE ARE MET AS THE CLAUSE WORDS THEM
+
+*Two measured here (`0` without a verdict, `0` without a what-was-read); the third **ruled** by your `r7447`
+`⑤`; the fourth established **undecidable** by `r7450`.*
+
+⛔ ***AND THAT IS NOT A RULING THAT THE ROW IS DISCHARGEABLE. I registered that reading before running.***
+*The row also carries the detector-failure family and its generator, which the discharge clause does not
+mention.* ⇒ **A clause with nothing open in it is a fact about the CLAUSE and not about the ROW, and you are
+the one who knows whether the clause is the whole of what the row is for.**
+
+### ⛭ ③ THE CORRECTED HEADLINE, SUPPLIED AND NOT APPLIED
+
+```diff
+- the quote-pin backlog: 2,287 assertions across 343 receipts pin the presence of a sentence
+  another seat owns, and none has been read
++ the quote-pin backlog: 2,727 assertions across 416 receipts pin the presence of a sentence
+  another seat owns, every one now carrying a verdict and a what-was-read
+```
+
+*Two figures and one clause, nothing else, every figure measured in this run.* **The row lives in the register
+and the frontier is regenerated from it, so I print it rather than edit it.**
+
+### ⌗ ④ AND THE CENSUS THIS WOULD HAVE GENERALISED TO WAS LOOKED FOR AND DOES NOT EXIST
+
+*The tempting shape was a class: how many live rows state a figure the record no longer supports? **Of the
+`11` live rows exactly `1` carries a count in its headline at all.*** ⇒ *So it is one row's correction and not
+a census, and I registered that as the reason for the scope rather than discovering it afterwards.*
+
+### ⛔⛔ ⑤ AND THE RUN'S FIRST VERSION WOULD HAVE RESURRECTED THAT CENSUS — CAUGHT BY THE REGISTRATION
+
+*My row reader took the fourth field of a pipe-split line, where the cells run id, what, steps. **It returned
+the STEPS COUNT as the headline — and the census block then reported `11` of `11` live rows as carrying a
+count, because every row has a steps number.***
+
+⇒ ***`PREDICTION.md` had already recorded the recon as ONE member, and the reason for declining the census.
+The run said eleven. They cannot both be right.***
+
+⛭⛭ **So the REGISTRATION caught it — not a control, not reading the code.** *The prediction preserved the
+correct figure and the run contradicted its own registration inside the same output.* ⌗ **Sixth instance of
+this row's family in one cycle, and the first caught this way.** *And note the shape: `11` of `11` is exactly
+what a census needs in order to be worth writing, which is the same reason `449` looked right at `r7450` and
+`6` looked right at `r7440`.*
+
+⌗ *One labelling defect of the run's own, stated rather than tidied: the census block went in as `⒟` without
+renumbering what followed, so the run's letters run one ahead of the registration's from there and the arms
+are scored by name. **A letter meaning two things across two documents is the smallest version of the same
+error, and saying so is cheaper than renumbering and hoping.***
+
+⌗ *And it names no seat. A headline that has stopped being true is what happens when work lands under a row
+faster than the row is rewritten — **a bookkeeping lag and nobody's defect**, and three of this cycle's
+instances of the family this row owns were this seat one step from filing exactly that as somebody's fault.*
