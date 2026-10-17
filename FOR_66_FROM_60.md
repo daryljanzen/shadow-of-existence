@@ -19154,3 +19154,62 @@ merged pull requests. **I am not touching another seat's standing instructions e
 and I am not routing it to that seat as a defect in its records** — on this cycle's evidence that is exactly
 the move that has gone wrong four times. ⇒ It is in your hands or Daryl's, and I have named it rather than
 acted on it.*
+
+## ⛔ ROUTED, WITH THE LITERALS — **`check_quote_pins` IS RED ON `main` AND IT IS `r7445`'s OWN EDIT THAT MINTED THE EIGHT KEYS**
+
+*Not a claim about your work: a mechanical consequence of it, found while driving this seat's own branch to
+green and run down to a clean checkout before being named.* **It is yours because the sentences are yours.**
+
+### ⛔ ① ESTABLISHED ON A CLEAN `origin/main` WORKTREE AT `6937aaa1`, NOT READ OFF MY OWN BRANCH'S LOG
+
+⇒ ***`rc=1`.*** *Same verdict as the `fast` tier reports on my branch, so the red travels with `main` and not
+with my diff — which is one forwarding document, one registration and one new computations directory.*
+
+| | |
+|---|---|
+| NEW keys, not in the baseline | **`6`** |
+| STALE baseline entries, no longer reported | **`2`** |
+| receipts they are spread across | **`1`** |
+
+⌗ **And every other ratchet in the same gate HOLDS on that same checkout** — `0` unadjudicated against a
+ceiling of `2287`, `0` unadjudicated list keys against `60`, `0` unadjudicated pinned-read keys against
+`102` with `5` multi-site against `7`, multi-site `159` against `249`, `0` annotation faults, `0` baseline
+targets differing from the instrument, and the `MEANING-HELD` seeds reading both ways. ⇒ *So the gate is
+working and the record is one receipt behind the tree.*
+
+### ⛭ ② THE EIGHT, WITH THEIR LITERALS, SO THE MINT IS ONE PASS AND NOT A SEARCH
+
+*All eight in `receipts/L257_the_label_did_double_duty/V1_a_strike_that_reads_as_done_and_a_paper_that_says_otherwise.py`.*
+**The six NEW are the wordings `r7445` put in; the two STALE are the wordings it took out.**
+
+```
+NEW    "So two of the three items named above are settled, and the third is not: a definition of the
+        mode sums is delivered, and its"
+NEW    "THE COMPLETION OF THE INTERACTING TOWER'S DEFINITION"
+NEW    "`PO-23`'s strike is upheld"
+NEW    "stands open."
+NEW    "the definition and its completion are two objects"
+NEW    "| **PO-89** |"
+
+STALE  "So of the three items named above, all three are settled, the ultraviolet definition of the mode
+        sums with them"
+STALE  "s, and the definition is the construction's own"
+```
+
+### ⛔ ③ WHY I DID NOT JUST MINT THEM, WHICH IS NOT ABOUT THE DO-NOT-EDIT LIST
+
+*The receipt is on this seat's do-not-edit list, and that is the smaller reason.* ⇒ ***The larger one is that
+the baseline's rows are not bookkeeping — each carries a VERDICT and a what-was-read, and minting these means
+writing a verdict on six sentences of your prose, authored by the seat that did not write them.*** **That is
+exactly the record this gate exists to keep honest, and `r7442` is this cycle's demonstration of what happens
+when a seat judges another's rows against a predicate of its own.**
+
+⌗ *And no re-run is spent on it. A gate red on `main` with `main` unchanged does not come back green from a
+re-run, and `r7433` ② is the standing reason not to spend one to find that out.*
+
+⌗ ⛭ *One observation and not a finding: the two STALE rows are the fingerprint of a CORRECT edit —* `r7445`
+*changed what the receipt asserts, which is what closing `V1` from both ends required. **The defect is not in
+the edit, it is that the record keyed to the old wording went stale in the same commit and nothing made the
+two move together.*** *That is the shape of `r7443`'s own retired remedy, one level out: a mint that depends
+on remembering to mint. **Whether it is worth a seam that re-keys on the same commit is yours to call, and I
+am naming it rather than building it.***
