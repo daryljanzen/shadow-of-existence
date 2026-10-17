@@ -1,0 +1,180 @@
+========================================================================================================
+  REFUSAL SITES, LOCATED FOR ADJUDICATION -- r7433 (2).  The count is NOT taken here.
+========================================================================================================
+
+  check_prose_pins
+      source: corpus/check_prose_pins.py
+      candidate refusal sites: 6
+          101  return 1         return 1
+          109  return 1         return 1
+          149  bad += 1         bad += 1
+          164  bad += 1         bad += 1
+          289  bad += 1         bad += 1
+          298  return 1         return 1
+
+  check_quote_pins
+      source: corpus/check_quote_pins.py
+      candidate refusal sites: 15
+          277  return 1         return 1
+          285  return 1         return 1
+          302  return 1         return 1
+          309  return 1         return 1
+          318  return 1         return 1
+          346  bad += 1         bad += 1
+          359  bad += 1         bad += 1
+          379  bad += 1         bad += 1
+          386  bad += 1         bad += 1
+          395  bad += 1         bad += 1
+          426  bad += 1         bad += 1
+          434  bad += 1         bad += 1
+          443  bad += 1         bad += 1
+          451  bad += 1         bad += 1
+          458  return 1         return 1
+
+  check_open_references
+      source: corpus/check_open_references.py
+      candidate refusal sites: 3
+          261  return 1         return 1
+          312  return 1         return 1
+          332  return 1         return 1
+
+  check_open_item_coherence
+      source: corpus/check_open_item_coherence.py
+      candidate refusal sites: 3
+          103  bad += 1         bad += 1
+          133  bad += 1         bad += 1
+          151  return 1         return 1 if bad else 0
+
+  check_exact_counts
+      source: corpus/check_exact_counts.py  (three walked at r7429)
+      candidate refusal sites: 6
+          176  return 1         return 1
+          181  return 1         return 1
+          184  return 1         return 1
+          200  rc = 1           rc = 1
+          207  rc = 1           rc = 1
+          213  rc = 1           rc = 1
+
+  check_marker_transposition
+      source: corpus/check_marker_transposition.py
+      candidate refusal sites: 6
+          238  return 1         return 1
+          253  ok = False       ok = False
+          275  return 1         return 1
+          287  ok = False       ok = False
+          297  ok = False       ok = False
+          308  return 1         return 1
+
+  check_tilt_pins
+      source: corpus/check_tilt_pins.py
+      candidate refusal sites: 6
+           79  return 1         return 1
+           83  return 1         return 1
+          157  bad += 1         bad += 1
+          177  bad += 1         bad += 1
+          184  bad += 1         bad += 1
+          191  return 1         return 1
+
+  check_paper_pins_present
+      source: corpus/check_paper_pins_present.py
+      candidate refusal sites: 3
+          148  flag = True      bad = True
+          153  flag = True      bad = True
+          156  return 1         return 1
+
+  check_revision_collisions
+      source: corpus/check_revision_collisions.py
+      candidate refusal sites: 6
+          426  raise SystemExit raise SystemExit(
+          434  raise SystemExit raise SystemExit(
+          979  return 1         return 1
+         1021  return 1         return 1
+         1047  return 1         return 1
+         1087  return 1         return 1
+
+  check_cannot_fail
+      source: corpus/check_cannot_fail.py  (one walked at r7429)
+      candidate refusal sites: 5
+           97  return 1         return 1
+          128  bad += 1         bad += 1
+          143  bad += 1         bad += 1
+          150  bad += 1         bad += 1
+          157  return 1         return 1
+
+  check_unread_figure
+      source: corpus/check_unread_figure.py
+      candidate refusal sites: 5
+          247  return 1         return 1
+          294  bad += 1         bad += 1
+          309  bad += 1         bad += 1
+          316  bad += 1         bad += 1
+          323  return 1         return 1
+
+  check_paper_pins_not_comment_only
+      source: corpus/check_paper_pins_not_comment_only.py
+      candidate refusal sites: 3
+           94  return 1         return 1
+          111  rc = 1           rc = 1
+          119  rc = 1           rc = 1
+
+  check_figures_pinned
+      source: corpus/check_figures_pinned.py
+      candidate refusal sites: 3
+          256  return 1         return 1
+          274  rc = 1           rc = 1
+          283  rc = 1           rc = 1
+
+  check_pin_board
+      source: corpus/check_pin_board.py
+      candidate refusal sites: 3
+          215  return 1         return 1
+          228  rc = 1           rc = 1
+          232  rc = 1           rc = 1
+
+  check_pins_adjudicated_on_mint
+      source: corpus/check_pins_adjudicated_on_mint.py
+      candidate refusal sites: 3
+          106  return 1         return 1
+          112  return 1         return 1
+          134  return 1         return 1
+
+  ROWS.tsv : index
+      source: corpus/check_formalisation_join.py  (60's join gate is the only instrument that refuses on a ROWS.tsv row)
+      candidate refusal sites: 11
+           93  fail() call      def fail(msg):
+           94  FAILED.append    FAILED.append(msg)
+          490  fail() call      fail(f'⓪ a `.lean` file in the tree CANNOT BE READ, so nothing about it can be cleared: {f}')
+          492  fail() call      fail(f'⓪ ⛔ THE CONTROL READER FOUND NO DECLARATIONS IN ANY OF THE {len(files)} FILES -- so this '
+          497  fail() call      fail('⓪ ⛔ NO `.lean` FILE EXISTS UNDER THE FORMALISATION TREE -- a gate over `decl` cells with '
+          516  fail() call      fail(f'⓪ᵇ ⛔ AN IN-RUN SEED DID NOT BEHAVE, so this run cannot show what it could have '
+          525  fail() call      fail('⓶ᵃ no `formalisation-*` workflow declares any path, so "under a green workflow" cannot be '
+          547  fail() call      fail(f'the inventory is not readable at {ROWS_REL}, so the join cannot be checked')
+          595  fail() call      fail(m)
+          600  fail() call      fail(m)
+          669  return 1         return 1
+
+  ROWS.tsv : class
+      ** NO REFUSING INSTRUMENT ** -- no instrument refuses on register-row candidacy: r7421 (1) ruled the two populations unjoined
+
+  corpus/quote_pin_mint_held.tsv
+      source: corpus/check_pins_adjudicated_on_mint.py  (the hold register is read by the mint gate; same source as its own row)
+      candidate refusal sites: 3
+          106  return 1         return 1
+          112  return 1         return 1
+          134  return 1         return 1
+
+  check_view_tables : the debt file
+      source: corpus/check_view_tables.py  (hit at .57)
+      candidate refusal sites: 1
+          138  return 1         return 1
+
+  red_carry : the carry ledger
+      source: scripts/red_carry.py
+      candidate refusal sites: 4
+          127  raise SystemExit raise SystemExit(f'git {" ".join(a)}: {r.stderr.strip()}')
+          138  raise SystemExit raise SystemExit(f'red_carry: cannot read {REF} from {remote}: {r.stderr.strip()}')
+          506  raise SystemExit raise SystemExit(f'red_carry: could not write {REF} in {TRIES} tries')
+         1104  raise SystemExit raise SystemExit(main())
+
+  corpus/frontier_steps_history.tsv
+      ** NO REFUSING INSTRUMENT ** -- a generator input, not a gate: regen_frontier.py consumes it and emits no refusal keyed on it

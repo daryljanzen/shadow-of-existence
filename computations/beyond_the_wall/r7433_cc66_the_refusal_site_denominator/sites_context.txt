@@ -1,0 +1,503 @@
+
+===== check_prose_pins  [corpus/check_prose_pins.py] =====
+  -- line 101 (return 1):
+       base = read_baseline()
+       if not base:
+       print(f'  ⛔ no baseline at {os.path.relpath(BASELINE, ROOT)} -- this gate has no record to ratchet.')
+       return 1
+  -- line 109 (return 1):
+       for (rc, lit), lines in sorted(_dups.items()):
+       print(f'      {rc}  {str(lit)[:60]!r}  -- rows at lines {lines} and an earlier one')
+       print('    ⇒ merge the rows into one that records both, or name the key in KNOWN_DUPLICATE_KEYS with why.')
+       return 1
+  -- line 149 (bad += 1):
+       print(f'    ... and {len(new)-40} more')
+       print('     ⌗ READ IT AND RECORD A VERDICT.  A new pin on a count is the class this gate')
+       print('       exists for, and the four it was built from were all found by hand.')
+       bad += 1
+  -- line 164 (bad += 1):
+       if len(gone) > 40:
+       print(f'    ... and {len(gone)-40} more')
+       print('     ⌗ A fixed site left in the baseline is a silent permission to regress there (r7069).')
+       bad += 1
+  -- line 289 (bad += 1):
+       print(f'  ⛔ THE UNADJUDICATED COUNT ROSE: {unread} against the declared ceiling {CEILING}.')
+       print('     ⌗ The bucket means work and the ratchet is that it only shrinks.  Lowering the')
+       print('       ceiling is the point; raising it is an edit to this gate and must be argued.')
+       bad += 1
+  -- line 298 (return 1):
+       print()
+       if bad:
+       print('  ⛔ THE PROSE-PIN RATCHET IS RED.')
+       return 1
+
+===== check_quote_pins  [corpus/check_quote_pins.py] =====
+  -- line 277 (return 1):
+       base = read_baseline()
+       if not base:
+       print(f'  ⛔ no baseline at {os.path.relpath(BASELINE, ROOT)} -- this gate has no record to ratchet.')
+       return 1
+  -- line 285 (return 1):
+       for (rc, lit), lines in sorted(_dups.items()):
+       print(f'      {rc}  {str(lit)[:60]!r}  -- rows at lines {lines} and an earlier one')
+       print('    ⇒ merge the rows into one that records both, or name the key in KNOWN_DUPLICATE_KEYS with why.')
+       return 1
+  -- line 302 (return 1):
+       print('  ⛔ a MEANING-HELD seed lost its direction:')
+       for b in _seed_bad:
+       print(f'      {b}')
+       return 1
+  -- line 309 (return 1):
+       if _unknown:
+       print(f'  ⛔ VERDICT(S) OUTSIDE THE VOCABULARY: {_unknown} -- an unknown verdict counts as adjudicated and is
+       f'exemption by typo.  Use one of {sorted(VOCABULARY)}.')
+       return 1
+  -- line 318 (return 1):
+       for (p, lit), r in _held_bad[:20]:
+       print(f'      [NOT HELD] {p}  {json.dumps(lit, ensure_ascii=False)[:60]}  -- {r}')
+       print('  ⛔ A MEANING-HELD ROW THAT CANNOT SHOW IT WAS READ IS AN EXEMPTION WITH A NICER NAME.')
+       return 1
+  -- line 346 (bad += 1):
+       print('       If the claim is the sentence\'s MEANING, assert what the sentence is for; if both paper')
+       print('       states are legitimate, test the disjunction (ALT); if the wording itself is the claim, say so'
+       print('       in the baseline as DELIBERATE.')
+       bad += 1
+  -- line 359 (bad += 1):
+       print(f'            {json.dumps(lit, ensure_ascii=False)}')
+       if len(gone) > 40:
+       print(f'    ... and {len(gone) - 40} more')
+       bad += 1
+  -- line 379 (bad += 1):
+       print('     ⌗ MISSING: R* cannot decide this key from its trace (it names `.tex` beside another kind, or no'
+       print('       file kind at all) -- read what the site tests and add a row.  UNUSED: R* decides the key, so')
+       print('       the row is a second, silent override -- remove it.')
+       bad += 1
+  -- line 386 (bad += 1):
+       print(f'  ⛔ {len(_disp_stale)} TARGET_DISPUTED entr(y/ies) no longer disputed -- remove them:')
+       for p, lit in _disp_stale:
+       print(f'    [STALE] {p}  {json.dumps(lit, ensure_ascii=False)[:60]}')
+       bad += 1
+  -- line 395 (bad += 1):
+       f'instrument {live[(p, lit)][0]}')
+       print('     ⌗ the baseline copies the instrument; if the instrument is wrong on an UNDECIDED key, correct')
+       print('       its annotation; if R* decided it wrongly, that is a finding about R*, routed to 66.')
+       bad += 1
+  -- line 426 (bad += 1):
+       print(f'  ⛔ THE MULTI-SITE COUNT ROSE: {len(multi)} against the declared ceiling {MULTI_CEILING}.')
+       print('     ⌗ A pinned literal now occurs more than once in its file: name the section it is about, or')
+       print('       lengthen it until it names one site (`python3 check_quote_pins.py --multi` lists them).')
+       bad += 1
+  -- line 434 (bad += 1):
+       if unread_list > LIST_CEILING:
+       print()
+       print(f'  ⛔ THE UNADJUDICATED LIST-PIN COUNT ROSE: {unread_list} against the declared ceiling {LIST_CEILING}
+       bad += 1
+  -- line 443 (bad += 1):
+       print()
+       print(f'  ⛔ THE PINNED-READ BUCKET ROSE: {unread_pinned} unadjudicated against {PINNED_CEILING}, '
+       f'{len(pinned_multi)} multi-site against {PINNED_MULTI_CEILING}.')
+       bad += 1
+  -- line 451 (bad += 1):
+       if unread > CEILING:
+       print()
+       print(f'  ⛔ THE UNADJUDICATED COUNT ROSE: {unread} against the declared ceiling {CEILING}.')
+       bad += 1
+  -- line 458 (return 1):
+       print()
+       if bad:
+       print('  ⛔ THE QUOTE-PIN RATCHET IS RED.')
+       return 1
+
+===== check_open_references  [corpus/check_open_references.py] =====
+  -- line 261 (return 1):
+       if bad_st:
+       print(f'  [FAIL] open_vocabulary.tsv carries a status that is not one of '
+       f'{" ".join(sorted(VSTATUS))}: {" ".join(bad_st)}')
+       return 1
+  -- line 312 (return 1):
+       if bad:
+       print(f'  [FAIL] {len(bad)} baseline row(s) carry a verdict that is not one of '
+       f'{" ".join(sorted(VERDICTS))}: {" ".join(sorted(set(bad)))}')
+       return 1
+  -- line 332 (return 1):
+       print(f'        {k[:200]}')
+       if len(new) > 12:
+       print(f'      ... and {len(new) - 12} more')
+       return 1
+
+===== check_open_item_coherence  [corpus/check_open_item_coherence.py] =====
+  -- line 103 (bad += 1):
+       pts = {q for i in byp[p] for q in pointers(i['reg'])}
+       print(f'    {p:4} {len(byp[p]):3d}  '
+       + (f'pointers all struck: {sorted(pts)[:4]}' if pts else 'no pointer at all'))
+       bad += 1
+  -- line 133 (bad += 1):
+       if covered:
+       print(f'  ⛔ {len(covered)} LIVE row(s) the census period covers that no OPEN item states '
+       f'and no declaration covers: {[p for p, _ in covered]}')
+       bad += 1
+  -- line 151 (return 1):
+       ' live row\n    is EITHER a stale paper OR a row struck too early, and which one it is is a'
+       ' reading that\n    belongs to the seat that owns the paper -- never to this file.')
+       print()
+       return 1 if bad else 0
+
+===== check_exact_counts  [corpus/check_exact_counts.py] =====
+  -- line 176 (return 1):
+       print('  ⛔ the detector lost a seeded direction:')
+       for k in bad:
+       print(f'      {k}')
+       return 1
+  -- line 181 (return 1):
+       base, dups = read_baseline()
+       if not base:
+       print(f'  ⛔ no baseline at {os.path.relpath(BASELINE, ROOT)} -- this gate has no record to ratchet.')
+       return 1
+  -- line 184 (return 1):
+       return 1
+       if dups:
+       print(f'  ⛔ {len(dups)} baseline key(s) carry more than one row: {dups[:3]}')
+       return 1
+  -- line 200 (rc = 1):
+       new = sorted(k for k in exposed if k not in base)
+       stale = sorted(k for k in base if k not in exposed)
+       if new:
+       rc = 1
+  -- line 207 (rc = 1):
+       print('    ⇒ make the claim monotone (`<=`/`>=`) where the set only moves one way, read the set at a PIN,')
+       print('      or adjudicate it in exact_count_baseline.tsv with what was read.')
+       if stale:
+       rc = 1
+  -- line 213 (rc = 1):
+       print(f'      [STALE] {rel}  {seg[:100]}')
+       unread = verdicts.get(UNREAD, 0)
+       if UNREAD_CEILING is not None and unread > UNREAD_CEILING:
+       rc = 1
+
+===== check_marker_transposition  [corpus/check_marker_transposition.py] =====
+  -- line 238 (return 1):
+       if not have_history:
+       print('  [FAIL] the calibration commits are not in this clone -- a gate that cannot re-find the')
+       print('         two errors that made it does not pass.  (CI checks out with fetch-depth 0.)')
+       return 1
+  -- line 253 (ok = False):
+       print(f'    [ok]   calibration {commit} {paper}: {tok} re-found -- own group lacks it, '
+       f'{carrier[:34]}... carries it {abs(hit[0][3]-hit[0][4])} lines away')
+       else:
+       ok = False
+  -- line 275 (return 1):
+       base = baseline()
+       if base is None:
+       print(f'  [FAIL] {os.path.relpath(BASE, ROOT)} is absent; the baseline is data and must exist')
+       return 1
+  -- line 287 (ok = False):
+       for v, c in sorted(held.items(), key=lambda x: -x[1]):
+       print(f'    [held] {c:3d}  {v}')
+       if new:
+       ok = False
+  -- line 297 (ok = False):
+       print('     ⌗ Put the marker beside the number it computes, or -- if this is not a')
+       print('       transposition -- adjudicate it in the baseline with what was read and why.')
+       if stale:
+       ok = False
+  -- line 308 (return 1):
+       print('  no new transposition, no stale adjudication, and both calibration cases re-found.')
+       print()
+       return 0
+       return 1
+
+===== check_tilt_pins  [corpus/check_tilt_pins.py] =====
+  -- line 79 (return 1):
+       base = read_baseline()
+       if not base:
+       print(f'  ⛔ no baseline at {os.path.relpath(BASELINE, ROOT)} -- this gate has no record to ratchet.')
+       return 1
+  -- line 83 (return 1):
+       if not os.path.exists(LIST):
+       print(f'  ⛔ the instrument\'s scoped list is missing at {os.path.relpath(LIST, ROOT)}.')
+       print('     ⌗ This gate runs 70\'s operator over ITS OWN list and does not invent a scope.')
+       return 1
+  -- line 157 (bad += 1):
+       print(f'           {e}')
+       print('     ⌗ A float pin that does not move when its own data moves is asserting something else.')
+       print('       READ IT AND RECORD A VERDICT; the four hand-caught instances were all this class.')
+       bad += 1
+  -- line 177 (bad += 1):
+       print('        this line would have deleted two correct adjudications and left two DETACHED')
+       print('        sites unadjudicated.  If DETACHED above is ZERO while the baseline is not,')
+       print('        suspect the run before you suspect the baseline.')
+       bad += 1
+  -- line 184 (bad += 1):
+       if owed > CEILING:
+       print()
+       print(f'  ⛔ THE OWED COUNT ROSE: {owed} against the declared ceiling {CEILING}.')
+       bad += 1
+  -- line 191 (return 1):
+       print()
+       if bad:
+       print('  ⛔ THE TILT RATCHET IS RED.')
+       return 1
+
+===== check_paper_pins_present  [corpus/check_paper_pins_present.py] =====
+  -- line 156 (return 1):
+       bad = True
+       print('  ⛔ [FAIL] SEED: the control did not read two-sidedly, so this gate cannot tell present from absent')
+       if bad:
+       return 1
+
+===== check_revision_collisions  [corpus/check_revision_collisions.py] =====
+  -- line 426 (raise SystemExit):
+       #:   ⇒ ** A band is a declaration. A gate that infers one from an unset variable
+       #:   silently checks the wrong half. ** *Same defect 59 repaired here at r3573 for the
+       #:   CI case, without noticing it applied to the unset case too.*
+       raise SystemExit(
+  -- line 434 (raise SystemExit):
+       elif _NODE in _PARITY_BY_NODE:
+       PARITY = _PARITY_BY_NODE[_NODE]
+       else:
+       raise SystemExit(
+  -- line 979 (return 1):
+       print('       changed -- before the merge, on this line\'s own tree. **  *A band checked after')
+       print('       the merge is a second detector.*')
+       print()
+       return 1
+  -- line 1021 (return 1):
+       for x in _seed_bad:
+       print(f'           {x!r}')
+       print()
+       return 1
+  -- line 1047 (return 1):
+       print('    [FAIL] `quotepin` names a revision without its SHA, and revision numbers are')
+       print('           not unique -- so its diagnosis points at two different commits.')
+       print()
+       return 1
+  -- line 1087 (return 1):
+       print('    ⇒ Cite a revision WITH its SHA wherever the identifier has to be unambiguous, AND')
+       print('       pick the next number of YOUR OWN parity above the front, never `front + 2`.')
+       print()
+       return 1
+
+===== check_cannot_fail  [corpus/check_cannot_fail.py] =====
+  -- line 97 (return 1):
+       base = read_baseline()
+       if not base:
+       print(f'  ⛔ no baseline at {os.path.relpath(BASELINE, ROOT)} -- this gate has no record to ratchet.')
+       return 1
+  -- line 128 (bad += 1):
+       print(f'    [FAIL] +{d} {c} {p}\n           {t}')
+       print('     ⌗ A check that cannot fail adds a PASS to the count and tests nothing.  If it is a scope')
+       print('       statement, PRINT it (SCOPE-AS-CHECK, r7141); if it is a real check, make it able to fail.')
+       bad += 1
+  -- line 143 (bad += 1):
+       print(f'  ⛔ {len(gone)} STALE BASELINE ENTR(Y/IES) -- fewer live sites than recorded.  Lower or remove the r
+       for (p, c, t), d in gone[:40]:
+       print(f'    [STALE] -{d} {c} {p}\n            {t}')
+       bad += 1
+  -- line 150 (bad += 1):
+       if owed > CEILING:
+       print()
+       print(f'  ⛔ THE OWED COUNT ROSE: {owed} against the declared ceiling {CEILING}.')
+       bad += 1
+  -- line 157 (return 1):
+       print()
+       if bad:
+       print('  ⛔ THE CANNOT-FAIL RATCHET IS RED.')
+       return 1
+
+===== check_unread_figure  [corpus/check_unread_figure.py] =====
+  -- line 247 (return 1):
+       base = read_baseline()
+       if not base:
+       print(f'  ⛔ no baseline at {os.path.relpath(BASELINE, ROOT)} -- this gate has no record to ratchet.')
+       return 1
+  -- line 294 (bad += 1):
+       print('       stays green when the paper moves.  Either READ the figure from the paper, or say in the label'
+       print('       what THIS receipt computed and drop the attribution.  If it is not a paper\'s figure at all,')
+       print('       record it in the baseline as NOT-A-PAPER-FIGURE with what was read.')
+       bad += 1
+  -- line 309 (bad += 1):
+       print(f'  ⛔ {len(gone)} STALE BASELINE ENTR(Y/IES) -- fewer live sites than recorded.  Lower or remove the r
+       for (p, l, rd), d in gone[:40]:
+       print(f'    [STALE] -{d} {rd} {p}\n            {json.dumps(l, ensure_ascii=False)}')
+       bad += 1
+  -- line 316 (bad += 1):
+       if owed > CEILING:
+       print()
+       print(f'  ⛔ THE OWED COUNT ROSE: {owed} against the declared ceiling {CEILING}.')
+       bad += 1
+  -- line 323 (return 1):
+       print()
+       if bad:
+       print('  ⛔ THE UNREAD-FIGURE RATCHET IS RED.')
+       return 1
+
+===== check_paper_pins_not_comment_only  [corpus/check_paper_pins_not_comment_only.py] =====
+  -- line 94 (return 1):
+       print('  ⛔ the seeds lost a direction:')
+       for b in bad:
+       print(f'      {b}')
+       return 1
+  -- line 111 (rc = 1):
+       print(f'    {len(keys)} live PAPER key(s); {len(found)} comment-only, {len(KNOWN)} of them named as known')
+       rc = 0
+       if new:
+       rc = 1
+  -- line 119 (rc = 1):
+       print('  ⛔ A PAPER PIN SATISFIED ONLY BY A COMMENT IS GREEN ON TEXT THE PAPER DOES NOT PRINT.')
+       print('     Its sentence left the body: read whether the claim still stands, and re-pin it on the body or re
+       if stale:
+       rc = 1
+
+===== check_figures_pinned  [corpus/check_figures_pinned.py] =====
+  -- line 256 (return 1):
+       print('  ⛔ the seeds lost a direction:')
+       for b in bad:
+       print(f'      {b}')
+       return 1
+  -- line 274 (rc = 1):
+       print(f'    {sum(now.values())} unpinned figure(s) live under {len(now)} key(s); baseline {sum(base.values()
+       rc = 0
+       if new:
+       rc = 1
+  -- line 283 (rc = 1):
+       print('     Pin it in the receipt within half a printed digit (or four significant figures), cite the receip
+       print('     that does pin it, or print fewer digits.  The rule is in this file\'s docstring.')
+       if stale:
+       rc = 1
+
+===== check_pin_board  [corpus/check_pin_board.py] =====
+  -- line 215 (return 1):
+       print('  ⛔ a seeded direction was lost:')
+       for b in bad:
+       print(f'      {b}')
+       return 1
+  -- line 228 (rc = 1):
+       print(f'    board (generated this run): {len(rows)} receipt(s) in {len({x.split(chr(9))[0] for x in rows})} 
+       f'prefix(es), {total_board} unverdicted; the baseline carries {total_base}')
+       if total_board != total_base:
+       rc = 1
+  -- line 232 (rc = 1):
+       print(f'  ⛔ (b) the board says {total_board} and the ratchet says {total_base}')
+       live, void = live_claims(read_claims(claims_text), history)
+       for c, why in void:
+       rc = 1
+
+===== check_pins_adjudicated_on_mint  [corpus/check_pins_adjudicated_on_mint.py] =====
+  -- line 106 (return 1):
+       print()
+       if _git('rev-parse', '--is-shallow-repository').stdout.strip() == 'true':
+       print('  ⛔ a SHALLOW clone has no base to compare against.  Fetch full history (`fetch-depth: 0`).')
+       return 1
+  -- line 112 (return 1):
+       print('  ⛔ the seeds lost a direction:')
+       for b in bad:
+       print(f'      {b}')
+       return 1
+  -- line 134 (return 1):
+       print()
+       print('  ⛔ A RANGE THAT MINTS A PIN LEAVES IT FOR SOMEONE ELSE TO CLEAR.')
+       print('     Read each key and give it a verdict in `corpus/quote_pin_baseline.tsv` in this same range.')
+       return 1
+
+===== ROWS.tsv : index  [corpus/check_formalisation_join.py] =====
+  -- line 93 (fail() call):
+       NOTES = []
+       
+       
+       def fail(msg):
+  -- line 94 (FAILED.append):
+       
+       
+       def fail(msg):
+       FAILED.append(msg)
+  -- line 490 (fail() call):
+       print(f'      `.lean` files found: {len(files)}')
+       print(f'      distinct identifiers the control reader extracts: {total}')
+       for f in unreadable:
+       fail(f'⓪ a `.lean` file in the tree CANNOT BE READ, so nothing about it can be cleared: {f}')
+  -- line 492 (fail() call):
+       for f in unreadable:
+       fail(f'⓪ a `.lean` file in the tree CANNOT BE READ, so nothing about it can be cleared: {f}')
+       if files and total == 0:
+       fail(f'⓪ ⛔ THE CONTROL READER FOUND NO DECLARATIONS IN ANY OF THE {len(files)} FILES -- so this '
+  -- line 497 (fail() call):
+       f'(`r7419` ③, `cc66`\'s shape: an instrument given less state than its question needs will '
+       f'still answer)')
+       elif not files:
+       fail('⓪ ⛔ NO `.lean` FILE EXISTS UNDER THE FORMALISATION TREE -- a gate over `decl` cells with '
+  -- line 516 (fail() call):
+       else:
+       for label, ok, detail in seeds:
+       if not ok:
+       fail(f'⓪ᵇ ⛔ AN IN-RUN SEED DID NOT BEHAVE, so this run cannot show what it could have '
+  -- line 525 (fail() call):
+       for wf, globs in scopes.items():
+       print(f'      {wf}: {globs}')
+       if not scopes:
+       fail('⓶ᵃ no `formalisation-*` workflow declares any path, so "under a green workflow" cannot be '
+  -- line 547 (fail() call):
+       head, rows = read_rows()
+       print('\n  THE INVENTORY')
+       if head is None:
+       fail(f'the inventory is not readable at {ROWS_REL}, so the join cannot be checked')
+  -- line 595 (fail() call):
+       except dc.DeclCellError:
+       pass
+       for m in got:
+       fail(m)
+  -- line 600 (fail() call):
+       f'{len(in_use)} distinct `.lean` file(s)')
+       # ⓶ᵇ -- charged ONCE per workflow, with the population it covers.  See `record_charges`.
+       for m in record_charges(records, scopes, in_use):
+       fail(m)
+  -- line 669 (return 1):
+       for x in FAILED:
+       print(f'      - {x[:140]}')
+       print('=' * 100)
+       return 1
+
+===== corpus/quote_pin_mint_held.tsv  [corpus/check_pins_adjudicated_on_mint.py] =====
+  -- line 106 (return 1):
+       print()
+       if _git('rev-parse', '--is-shallow-repository').stdout.strip() == 'true':
+       print('  ⛔ a SHALLOW clone has no base to compare against.  Fetch full history (`fetch-depth: 0`).')
+       return 1
+  -- line 112 (return 1):
+       print('  ⛔ the seeds lost a direction:')
+       for b in bad:
+       print(f'      {b}')
+       return 1
+  -- line 134 (return 1):
+       print()
+       print('  ⛔ A RANGE THAT MINTS A PIN LEAVES IT FOR SOMEONE ELSE TO CLEAR.')
+       print('     Read each key and give it a verdict in `corpus/quote_pin_baseline.tsv` in this same range.')
+       return 1
+
+===== check_view_tables : the debt file  [corpus/check_view_tables.py] =====
+  -- line 138 (return 1):
+       print('     the debt in corpus/view_table_debt.txt -- which is rewritten DOWNWARD only.')
+       if hard_fail or soft_rise:
+       print()
+       return 1
+
+===== red_carry : the carry ledger  [scripts/red_carry.py] =====
+  -- line 127 (raise SystemExit):
+       r = subprocess.run(['git', *a], cwd=root, capture_output=True, text=True,
+       env=None if env is None else {**os.environ, **env})
+       if check and r.returncode:
+       raise SystemExit(f'git {" ".join(a)}: {r.stderr.strip()}')
+  -- line 138 (raise SystemExit):
+       if r.returncode:
+       if "couldn't find remote ref" in r.stderr or 'not our ref' in r.stderr:
+       return {}, None
+       raise SystemExit(f'red_carry: cannot read {REF} from {remote}: {r.stderr.strip()}')
+  -- line 506 (raise SystemExit):
+       if write(root, ledger, tip, msg, remote):
+       return 0
+       print('  red_carry: another job moved the ledger first -- re-reading and re-applying', file=sys.stderr)
+       raise SystemExit(f'red_carry: could not write {REF} in {TRIES} tries')
+  -- line 1104 (raise SystemExit):
+       
+       
+       if __name__ == '__main__':
+       raise SystemExit(main())

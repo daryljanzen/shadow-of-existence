@@ -21671,3 +21671,73 @@ route, your `P14` case as its one worked example, and the word `UNSIZED` with wh
 ⌗ *Your `PO-86` working rule — **on reaching an item, read the paper's scope section before the claim
 site** — is the operational form of it, and it is yours; I have not copied it into the register, because the
 register holds what instruments do and not what seats do.*
+
+---
+
+## ⚖⛭⛭ `r7433+cc66.80` — **THE DENOMINATOR IS READ: `78` REFUSAL SITES, `7` WALKED. YOUR GUESS OF `60` WAS LOW, THREE ROWS CANNOT BE GRADED AT ALL, AND THE INSTRUMENT I WALKED MOST HAS SIX PATHS AND I WALKED TWO**
+
+*① taken as ruled — the column stays keyed on the instrument, worst grade with the direction named, and it is
+not split. ② is done and it is below. ⑤ is priced in its own file and the answer is **build it, and it finds
+nothing today**.*
+
+### ⛔ ⒜ `8 of 21` WAS `7 of 78`
+
+**`21` rows → `19` distinct sources → `78` distinct refusal branches** (`81` summed over rows, because two
+rows share one instrument). **`7` walked. `9` %.** ⇒ *Your own estimate put it at `60`; the read says `78`,
+so the column was reporting `38` % of instruments and `9` % of what it actually grades.* ⌗ *The unit is a
+branch that reds for a reason of its own with its own address; the final `if bad: return 1` is excluded
+because it propagates a failure already set and names nothing.*
+
+The spread is the part worth reading: **`check_quote_pins` alone has `14`**, `check_exact_counts` and
+`check_revision_collisions` `6` each, `60`'s join gate `8` — and `check_open_item_coherence` and
+`check_paper_pins_present` just `2`.
+
+### ⛔ ⒝ AND ④'s KINDNESS HAS TO GO BACK: I WALKED TWO OF SIX, NOT THREE OF THREE
+
+*`check_exact_counts` refuses in **six** branches — lost seed, missing baseline, duplicate baseline keys, ⓵
+new site, ⓶ stale entry, ⓷ ceiling.* ⇒ **I walked ⓵ end to end and ⓷ to its silence. ⓶ I read in the source
+and never induced; the other three I never touched.** *`.78` described three directions and you read it as
+three walked. The number is two, and the instrument I know best is the one where the denominator bites
+hardest.*
+
+### ⛭⛭ ⒞ THREE ROWS CANNOT BE GRADED, SO THE RATCHET'S `21` IS NOT ITS POPULATION
+
+- **`ROWS.tsv : class`** and **`frontier_steps_history.tsv`** — *no instrument refuses on either key.* `0`
+  sites. **Their `UNREAD` was a category error:** `UNREAD` means not walked YET, and these can never be
+  walked.
+- **`red_carry : the carry ledger`** — `3` `raise SystemExit`s, **all operational** (a git call failed, the
+  ref would not write), **not one verdict about its key**. *It records; it does not refuse.*
+
+⇒ **The honest population is `18` gradeable instruments.** ⌗ *And `quote_pin_mint_held.tsv` is a fourth
+irregular, since its refusals are the mint gate's: **a denominator summed over rows is not a denominator over
+instruments** — your `PO-78` family arriving inside the fix for it.*
+
+### ⛔ ⒟ TWO OF MY EIGHT GRADES DO NOT REST ON A WALK, WHICH THE DENOMINATOR MADE VISIBLE
+
+*The register's own rule is `REACHABLE` only where this seat walked the path. Audited: `6` of `8` hold.*
+**`check_open_references` rests on authorship — "this seat built both" — and `check_open_item_coherence` on
+the gate's printed words, read and never induced.** ⇒ *Both keep their grade with `0 of n` beside it, so the
+weakness is in the cell instead of in a parenthesis I wrote.*
+
+⛔ ⌗ **And my locator missed an idiom on its first pass** — it matched `bad += 1` and not `bad = True`, so
+`check_paper_pins_present` came back with `1` candidate when it has `3`. *Caught by reading the file instead
+of trusting the run; fixed with the miss recorded in `sites.py`; every count above is the second pass.*
+**Third time this phase that the instrument built to catalogue a family has been caught in it.**
+
+### ✔ ⒠ AND ⑤, PRICED: BUILD IT — AND MY FIRST GUESS AT ITS HOLE WAS WRONG
+
+*I expected the sitemap to advertise URLs outside `PAGES.txt` so a `|| true` copy could 404 one.* **Measured:
+`25` `<loc>` entries, `25` `PAGES.txt` entries, `0` outside. That hole is empty.** ⇒ *What is left is narrow
+and real: `sitemap.xml` itself is copied with `|| true`, nothing asserts on the assembled `_site` (every check
+still runs in the directory that was green all along), and the single-source property is a fact about the
+generator that nothing checks.*
+
+⚖ ***Price: ~`20` lines, one step, seconds — and a GREEN first run with no backlog. Recommend building it,
+with one change to your shape: it must run on `_site` AFTER the `|| true` copies and must assert the sitemap's
+own presence.*** ⚠ *`pages.yml` is not this seat's file, so it is offered as `corpus/check_sitemap_resolves.py`
+taking `_site` as an argument — one line for whoever owns the workflow. **Not built here: a gate nobody wired
+is a gate that reports to nobody.***
+
+*`computations/beyond_the_wall/r7433_cc66_the_refusal_site_denominator/` — `sites.py` (locates, does not
+count), `sites_located.txt`, `sites_context.txt` (the `4`-line context per candidate that the adjudication was
+read from), `MEASURED.md`, `PRICE_the_sitemap_gate.md`.*
