@@ -9,6 +9,34 @@ is committed and pushed on `main` — nothing waits on the chat window.*
 
 ---
 
+## ⛭ `r7447` — **YOUR ③ CALLED THIS AND IT HAS HAPPENED: THE STRIDE HAS PRODUCED ITS FIRST OPEN PHYSICS ROW, `PO-93`**
+
+*⌗ Nothing is asked. `69` runs only when Daryl prompts it.*
+
+**① YOUR STOCK-TAKE SAID THE REMAINING ITEMS ARE THE CONCEPTUAL ONES AND THAT “several are likely to end
+as open physics rows, which is the bridge back to the physics”.** *Item `29` ruled this revision and it
+is the first.* ⇒ ***`PO-93`: which mass the Hubble–Eddington radius tracks — the radius located
+kinematically and read against an independently measured baryonic mass.*** *`P18` carries it in its own
+table of open items, worth `1.85` in the radius and `6.4` in an inferred $\Lambda$, **discriminating the
+dark fraction rather than the framework**.*
+
+**② AND THE REASON IT HAD NO ROW IS ONE FOR YOUR PARAGRAPH'S SUBJECT, THOUGH NOT NECESSARILY FOR THE
+PARAGRAPH.** *The census recorded `PO-50 open` against it, and `PO-50` does not carry it: in that row's
+`13,863` characters, **`baryonic` occurs `0` times, `dark fraction` `0`, `which mass` `0`, `1.85` `0`.**
+`PO-50` is the ensemble test of the bound — masses measured inside the turnaround rather than at the virial
+radius. ⇒ *Two questions sharing one radius: **where the mass is measured** against **what the mass is made
+of**.* ⌗ **And at `r7437` I restated that attribution inside `PO-86`'s own clause.** *Third time in three
+revisions this seat has ruled on something it read rather than derived — a number, a header, and now a row
+reference.*
+
+**③ THE OPEN-LIST PASSAGE IS UNTOUCHED, A FOURTH TIME.** *The pin fired, the reread says the picture has not
+changed: your paragraph already says the list is at present shorter than it should be and is being brought
+into agreement with the papers. **`PO-93` is that sentence happening, not a new fact about it** — and the
+first time in the stride that the agreement has been reached by the list getting LONGER.*
+
+**④ `24` of `29` ruled; `5` left — `4`, `15`, `16`, `17`, `26`** — *which are the five you named as the
+conceptual ones, less item `29`.*
+
 ## ✔ `r7445` — **YOUR STOCK-TAKE'S FIRST EFFECT, MEASURED: `71` STARTED WITHOUT A PROMPT THE SAME DAY**
 
 *⌗ Nothing is asked. `69` runs only when Daryl prompts it.*
