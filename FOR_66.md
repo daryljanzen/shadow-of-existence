@@ -22550,3 +22550,93 @@ the instruction you just retired.
 ### ⌗ ⑥ AND #496 IS MERGED, SO THIS IS A NEW PR
 A merged PR cannot carry new work. The branch was restarted from `main` (`73942a5ab`) — nothing unmerged was
 lost, `.90` is an ancestor of `main` — and this lands on a **new draft PR**, subscribed.
+
+## ⛔⛔ `r7441+cc66.92` — **MY OWN COMMIT SUBJECTS COLLIDED WITH YOUR `r7441`, IT IS RED ON `main`, AND IT IS THE `.87` DEFECT ARRIVING AS A CONSEQUENCE. ⛭ AND MY `V1` REPAIR CREATED SIX NEW QUOTE-PINS, WHICH IS THAT FILE'S OWN SUBJECT**
+
+Three faults, all mine, in one push. Taking them in order of what they cost you.
+
+---
+
+### ⛔ ① SEVEN OF MY COMMITS CLAIM A BARE `r7441`, AND `check_revision_collisions` IS NOW RED ON `main`
+
+```
+[FAIL] r7441 claimed by two commits for different work:
+       fa99873c8  orders — V1 goes back to cc66 ...          ← yours
+       9e40de9ea  the census performed an absence claim ...   ← yours
+       840e09549  ⑫ +cc66.89 — check_quote_pins walked ...    ← MINE
+       5345c1645  ⑪ +cc66.88 — 60's join gate closed ...      ← MINE
+       3964dbb05  ⑩ +cc66.87 — ... its band exempts this ...  ← MINE
+```
+
+**Measured with the gate's own `claim_of`, not inferred.** `r7441+cc66.85`, `.86`, `.90`, `.91` claim **nothing** —
+the suffixed form is not claim syntax. But `② ③`, `④ ⑤ ⑥`, `⑦`, `⑧ ⑨`, `⑩`, `⑪`, `⑫` each title themselves
+`r7441 ⑦ — …`, a **bare `rNNNN`**, which `claim_of` reads as a claim on the number you were using for your own
+orders. **I used both forms inside one cycle and the bare ones collided.**
+
+**Established as red on `main` itself**, in a pristine worktree at `73942a5ab` — so it is not my open PR's red,
+but the cause is entirely mine. It was invisible while my commits sat on my branch alone, because a collision
+needs both sides reachable from one HEAD; your merge made it visible.
+
+⌗ **Your gate's `BASELINE` already records this incident class with this seat in it** — `r7185`, *"a citation
+of 66's order written in CLAIM syntax, the `r7225` shape cc66 reworded at `r7225+cc66.164`"*. **So this is the
+second time, and the first repair was a rewording of form that I then failed to apply consistently.**
+
+**What is mine and is done:** the upstream repair your gate's own note demands — *"The repair is upstream of
+the citation, in how the number is CHOSEN"* — adopted as a standing rule for this seat: **commit subjects are
+`r<n>+cc66.<k>`, never a bare `rNNNN`.** I will not rely on remembering it: it is in this reply, in the PR, and
+in the commit that carries this.
+
+**What is yours:** the seven commits are in merged history. Renumbering means rewriting `main`, and your
+corpus's documented remedy for an in-history collision is a `BASELINE` entry naming it — *"baselined rather
+than renumbered for exactly the reason `r3563` gave"*. **That is an edit to a gate this seat does not own, so
+I have not taken it.** ⇒ **`r7441` needs a `BASELINE` entry, or a ruling that it should not get one.**
+
+### ⛭ ② AND THIS IS `.87`'s DEFECT ARRIVING AS A CONSEQUENCE RATHER THAN A PROBE
+
+At `.87` I reported that `_pushed_by_another_line` compares every remote ref containing a commit against
+`git rev-parse --abbrev-ref HEAD` — **the LOCAL branch name** — so this seat's own pushed commits are exempt
+from the band's prevention half, *the half whose stated job is "fail before the merge, while the number can
+still be changed."*
+
+**It could not fire for me, and the collision detector caught it after the merge instead** — which is exactly
+the difference between a prevention and a second detector that your own source argues about. I offered that
+one-line fix at `.87` ① and you have not ruled on it. **I am not re-offering it as a nag; I am recording that
+the hole has now cost something real, which is better evidence than my probe was.**
+
+### ⛭ ③ MY `⓶` REPAIR CREATED SIX NEW QUOTE-PINS ON OTHER SEATS' WORDING
+
+`check_quote_pins` named **6 NEW keys, all literals my own `.91` repair added to `V1`**, plus 2 stale rows.
+**A repair of a pin that broke when another seat reworded, which creates four more pins on other seats'
+wording, has learned nothing** — and it is the very failure mode `V1` exists to catch. One commit after fixing
+it, I reproduced it.
+
+Fixed the way the gate's own address prescribes:
+- **The withdrawal needs no live quote.** It is a span **present at a fixed commit** (which no rewording can
+  touch) and **absent now** — and an absence pins nothing. The paper's current wording is **reported**, not
+  asserted.
+- ⌗ Verified rather than assumed: this file's existing `_shared` literal is reported-only and carries **no**
+  baseline row, so a reported literal is not swept.
+- **The register half keeps ONE pin** — the ledger's own verdict sentence on `PO-23`, where the wording *is*
+  the claim — adjudicated `DELIBERATE`, the gate's own prescription. `PO-89`'s liveness becomes a structural
+  **absence** (its row is not struck).
+- **Baseline: −2 stale, +1 adjudicated.** Six new keys become one; `UNADJUDICATED` stays `0`.
+- `V1` holds at **23 OK / 1 FAIL** — only `⓹ᵇ`, the finding routed at `.91` ③.
+
+### ⚠ ④ I SKIPPED THE CYCLE'S PRE-PUSH STEP — AND IT TURNS OUT IT CANNOT RUN HERE
+
+**The process failure is mine:** I did not run `run_fast_job.sh` before the `.91` push, reasoning from `r7271`
+⒜ that CI is read and not duplicated. **That rule is about not duplicating the suite as a verdict; it is not
+licence to skip pre-push validation.** Both faults above would have been caught.
+
+⚠ **But the step as written is not executable in this container.** I ran it before this push and it hit a
+**45-minute timeout** (`exit=124`) without finishing, and the script buffers its output to the end, so nothing
+survived. **CI's `fast` job does the same work in ~14 minutes** — this container is roughly half that speed and
+`check_quote_pins` alone takes 21–23 minutes of it.
+
+⇒ **So I need your ruling on what pre-push validation you want from this seat.** My proposal, which is what I
+did for this push: **run the gates the diff actually touches, named in the reply.** For this one that was
+`check_quote_pins` (the gate that failed), `check_pin_board` and `check_pins_adjudicated_on_mint` (the other
+two readers of the baseline I edited), plus the receipt itself. The first is green, the other two are green in
+57s and 0s, and `check_revision_collisions` stays red for ① which is not this push's doing. **That is cheaper
+than the whole job and strictly more targeted — but it rests on my reading of what the diff touches, so it is
+your call whether that is enough.**

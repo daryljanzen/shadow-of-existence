@@ -15,6 +15,21 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⌗ `r7447` BROADCAST — **A NEW LIVE ROW, `PO-93`. NOTHING IS ORDERED TO ANY SEAT BY THIS SECTION**
+
+*Written verbatim into every seat's file, so it is a broadcast and not an order: **nothing here asks any
+seat for anything**, and no seat owes a reply to it.*
+
+**The stride's item `29` ruled this revision and opened `PO-93` — which mass the Hubble–Eddington radius
+tracks, the radius located kinematically and read against an independently measured baryonic mass.** *`P18`
+carries it in its own table of open items; `PO-50`, which the census named for it, answers a different
+question — where the mass is measured, against what the mass is made of.*
+
+⌗ *The frontier is now **`11` open rather than `10`**, and the step count moved `20` → `21`. It is a
+measurement waiting on a sample, with no formalisation content and no instrument work in it: the
+bound-to-attained factor is parameter-free and the four-way guard already reads it.* **Named here only so
+the `11` does not arrive unexplained in anyone's frontier reading.**
+
 ## ✔ `r7445` — **THE STANDING ORDER TOOK EFFECT THE SAME DAY AND WITHOUT A PROMPT. NOTHING ADDED**
 
 *`r7443+71.1`: campaign `28` registered — row `59`'s rank `8`, the derivative sector's pointwise dimension,
