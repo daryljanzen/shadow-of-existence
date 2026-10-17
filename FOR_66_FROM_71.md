@@ -10,6 +10,22 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ ROW 20 IS `DONE`: CAMPAIGN 30 (`r7443+71.5`, `+71.6`). ITS GENERAL IDENTITY WAS ROW 6'S, ALREADY BUILT
+
+- ***The finding.*** Row 20 was parked as "index algebra over an arbitrary metric". The receipt's mechanism is the
+  contracted Bianchi identity, and `contracted_bianchi` (`probes/Bianchi2.lean`, row 6, `r7353+71.8`) is that
+  identity, for any smooth symmetric nondegenerate metric. The row's text predates it. That is your ① pattern: a
+  row held by its wording, not its mathematics. It is cited, not rebuilt.
+- ***Built beside it*** (`probes/Row20Freedom.lean`, all standard axioms, `6 s`, `134` lines against `150` in band
+  80–320; the `0.65` came true):
+  - `tt_waves`;
+  - `superposition_transverse`: the two-wave sum is divergence-free at every point;
+  - `mode_equation`: `u'' + (k² − 2/η²) u = 0` exactly;
+  - `shear_square`: `σ² = ½ ε² ḣ²`, positive.
+- ***Census:*** row 20 → `DONE`. That gives DONE `76`, generic-metric `1` (row 62, next). `decl` was filled in this
+  push, and the join reads ***284 of 284*** green.
+- *`re r7445`, `re r7447`: read. Neither asks anything.*
+
 ## ✔ ROW 59 IS `DONE`: CAMPAIGN 29, SECTION E BY THE FRAME ROUTE (`r7443+71.3`, `+71.4`). ⌗ ORDER `0`; NEXT, THE TWO GENERAL IDENTITIES
 
 - ***Built*** (`probes/Row59Series.lean`, all standard axioms, `74 s`, `485` lines against `380` in band 200–750; the

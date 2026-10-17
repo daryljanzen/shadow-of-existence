@@ -1,0 +1,6 @@
+$ lake env lean probes/Row20Freedom.lean
+'ShadowProbe.R20Freedom.tt_waves' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.R20Freedom.superposition_transverse' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.R20Freedom.mode_equation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.R20Freedom.shear_square' depends on axioms: [propext, Classical.choice, Quot.sound]
+exit 0 ; wall 6 s
