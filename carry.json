@@ -544,18 +544,6 @@
   }
  },
  "claude/youthful-darwin-xvkwh7": {
-  "reads": {
-   "computations/beyond_the_wall/r7430_60_which_of_this_seats_gates_can_be_silent_and_the_census_is_a_detector_so_it_refuses_where_it_cannot_decide/census.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38986211991",
-    "since": "0053b2e46d3099ae50a7d85656c8b6a158fecce0",
-    "unmeasured": true
-   },
-   "corpus/check_formalisation_join.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38920564486",
-    "since": "ffbd41adcf4874c2435f4d493f4a3708a6b6fec5",
-    "unmeasured": true
-   }
-  },
   "suite": {
    "corpus/check_formalisation_join.py": {
     "gates": [
