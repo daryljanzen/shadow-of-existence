@@ -1,0 +1,6 @@
+
+  PINS ADJUDICATED ON MINT -- does this range add an unadjudicated quote-pin key it may not?
+
+    seeds hold: a plain mint and an edited receipt's mint are refused; an instrument widening's reserved mint and an adjudicated mint are allowed
+    range b709594276..0885a7cde0: 0 unverdicted key(s) minted, 0 refused
+  no unadjudicated key is minted that this range could have adjudicated.

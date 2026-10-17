@@ -1,0 +1,25 @@
+
+  MARKER TRANSPOSITION -- is each number cited where it is computed?
+    window: +-200 lines
+
+    rarity: a number carried by more than 12 receipt sources is not distinctive; the calibration numbers are carried by [3, 8, 8]
+    [ok]   calibration a3705946 canonical_time.tex: 200/63 re-found -- own group lacks it, P10_the_vertex_numbers_are_exact... carries it 93 lines away
+    [ok]   calibration a3705946 canonical_time.tex: 19/27 re-found -- own group lacks it, P10_the_vertex_numbers_are_exact... carries it 93 lines away
+    [ok]   calibration 3f8fc14a canonical_time.tex: -4/3 re-found -- own group lacks it, P10_the_construction_own_regulator... carries it 158 lines away
+    calibration distances [93, 93, 158]; window 200 (the largest plus a margin)
+
+    57 flag(s) at current main; 57 adjudicated in the baseline
+    [held]  14  not a transposition -- external datum
+    [held]  13  not a transposition -- the carrier restates
+    [held]  13  not a transposition -- the own group prints it at run time
+    [held]   4  not a transposition -- the citation is for a different claim in the same paragraph
+    [held]   3  not a transposition -- coincidence
+    [held]   3  not a transposition -- configuration value
+    [held]   2  not a transposition -- the carrier holds it as an input
+    [held]   2  intentional -- the prose names the computing receipt inline
+    [held]   1  intentional -- the paper cites the deriving SECTION
+    [held]   1  intentional -- a proof's algebra belongs to its proposition
+    [held]   1  not a transposition -- the own group carries the UNROUNDED value and the paper rounds
+
+  no new transposition, no stale adjudication, and both calibration cases re-found.
+

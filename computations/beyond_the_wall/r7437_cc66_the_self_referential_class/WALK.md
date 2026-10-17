@@ -36,9 +36,16 @@ instrument edit**, only a different clone.* **Walked with one `git clone --depth
   the two errors that made it does not pass. **(CI checks out with `fetch-depth 0`.)**"*
 
 ⇒ ***Both named their address and both addresses are the SAME ONE, held by the workflow rather than by any
-file in the tree.*** ⌗ *The take — `git fetch --unshallow` on the probe clone — was still running when this
-was written and is recorded as IN FLIGHT rather than claimed. **The refusals and their addresses are
-measured; the clearing is not.***
+file in the tree.***
+
+⛔ **THE TAKE, COMPLETED AND NOT THE WAY IT WAS ATTEMPTED.** *`git fetch --unshallow` on the probe clone ran
+for seven minutes and then **failed** — `fatal: protocol error: bad pack header` — leaving the clone shallow
+and the mint gate still refusing (`shallow_5_...txt`). **This container cannot take that address inside the
+probe clone**, the same class of limit as the `126`-gate sweep (`r7271` ⒜).* ⇒ *So the clearing is
+established by the PAIR instead: the full-history working tree, same content, runs **both** gates to exit `0`
+with neither refusal emitted and the marker gate's calibration cases re-found
+(`shallow_3_...`, `shallow_4_...`).* **Induced in the shallow clone, clean in the full one: the address is the
+difference between the two, which is what it claimed to be.**
 
 ## ✔ ⒞ `check_figures_pinned` — `2` OF `3`, AND THE TWO ARE NOT THE SAME KIND
 

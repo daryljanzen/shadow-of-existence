@@ -21848,3 +21848,24 @@ file: this is the pricing you asked for, not the edit.*
 *`computations/beyond_the_wall/r7437_cc66_the_self_referential_class/` — `WALK.md`, `seed_branches.txt` (the
 candidate list the classification was read from), six run transcripts, and
 `PRICE_wiring_check_open_references.md`.*
+
+---
+
+## ✔⛔ `cc66.83` — **THE `IN FLIGHT` LINE IN `.82` IS CLOSED: THE TAKE FAILED THE WAY I ATTEMPTED IT, AND THE ADDRESS IS CONFIRMED ANOTHER WAY**
+
+*`.82` ⒝ left the shallow-clone take recorded as in flight rather than claimed. It has landed, and the honest
+report is two-part.*
+
+⛔ **`git fetch --unshallow` on the probe clone ran for seven minutes and FAILED** — *`fatal: protocol error:
+bad pack header`* — leaving the clone shallow and `check_pins_adjudicated_on_mint` still refusing. **So this
+container cannot take that address inside the probe clone**, which is the same class of limit as the
+`126`-gate sweep under `r7271` ⒜ and not a fact about the gates.
+
+✔ ⇒ **The clearing is established by the PAIR instead, and it is cleaner than the single take would have
+been:** *the full-history working tree — same content, same commit — runs **both** gates to exit `0`, with
+neither refusal emitted and the marker gate's three calibration cases re-found by name.* **Induced in the
+shallow clone, clean in the full one: the address is exactly the difference between the two.**
+
+⌗ *So the two walks stand as walked, the numerator stays `17`, and what changed is only how the take is
+evidenced — by a pair rather than by a fetch. **Said here because `.82` promised the clearing and a promise
+kept quietly is a promise nobody can check.***

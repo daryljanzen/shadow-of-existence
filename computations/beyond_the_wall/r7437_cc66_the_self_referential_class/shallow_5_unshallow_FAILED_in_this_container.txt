@@ -1,0 +1,10 @@
+EXIT(marker_transposition, shallow)=1
+  [FAIL] the calibration commits are not in this clone -- a gate that cannot re-find the
+=== now take the address: unshallow ===
+fatal: protocol error: bad pack header
+true
+EXIT(mint, full history)=1
+
+  ⛔ a SHALLOW clone has no base to compare against.  Fetch full history (`fetch-depth: 0`).
+
+[exited with code 0]
