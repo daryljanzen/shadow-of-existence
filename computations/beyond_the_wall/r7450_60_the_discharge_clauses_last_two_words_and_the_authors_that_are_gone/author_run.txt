@@ -1,0 +1,44 @@
+r7450 (60) -- `BY ITS AUTHOR`: THE DISCHARGE CLAUSE'S LAST TWO WORDS
+====================================================================================================
+r7447 ⑤ rules the gated MEANING-HELD verdict IS the rewrite.  That ruling is ACCEPTED and
+is not re-argued.  Three of the clause's four requirements are established by r7442 and
+r7447 and are not re-measured here.  This tests the fourth, which nothing ever has.
+
+THE POPULATION, from the baseline's own MEANING-HELD rows
+  538 keys over 175 distinct receipts
+  the ADJUDICATING seat, off each verdict's own stamp: {'60': 289, '70': 137, 'cc66': 67, '69': 43, '66': 1, '(no seat suffix)': 1}
+  ⌗ that stamp is WHO ADJUDICATED. The clause asks whose RECEIPT it is, which is the gap.
+
+EACH SEAT'S FIRST APPEARANCE, read from the log and not from a hand table
+    r6713   66
+    r6760   cc66
+    r6861   64
+    r6931   70
+    r7053   2
+    r7055   1
+    r7106   60
+    r7259   71
+    r7269   69
+
+EACH RECEIPT'S BIRTH, from the commit that ADDED it
+  161 of 175 receipts carry a revision stamp on their adding commit
+  156 distinct adding revisions
+  ⒠ born BEFORE r3563, the revision at which the parity band was taken: 136 of 175
+  the range: r2419 to r7332
+
+⒞ THE ANSWER, three states, partitioning the class exactly
+    CANNOT-BE-AUTHOR  449
+    COULD-BE-AUTHOR    59
+    UNATTRIBUTABLE     30
+    total             538  of 538
+
+⒡ THE CONTROL -- this seat's own self-adjudicated keys cannot be CANNOT-BE-AUTHOR
+   keys stamped by seat 60 : 289
+   of them CANNOT-BE-AUTHOR: 256
+   ⛔ NON-ZERO. A seat cannot predate itself, so the first-appearance table or the birth
+      read is wrong. THE RUN IS VOID.
+      receipts/L175_dimensional_descent/E1_a_descent_from_D_above_five_must_be_multistep.py  born r2466, seat 60 first appears r7106
+      receipts/L175_dimensional_descent/E1_a_descent_from_D_above_five_must_be_multistep.py  born r2466, seat 60 first appears r7106
+      receipts/L175_dimensional_descent/E2_one_step_ness_is_governed_by_rule_two.py  born r2474, seat 60 first appears r7106
+      receipts/L175_dimensional_descent/E2_one_step_ness_is_governed_by_rule_two.py  born r2474, seat 60 first appears r7106
+      receipts/L175_dimensional_descent/E51_the_scale_map_rank_reproduced.py  born r2640, seat 60 first appears r7106

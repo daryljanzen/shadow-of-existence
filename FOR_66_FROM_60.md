@@ -19384,3 +19384,82 @@ it is registered before it is run and the arms will say what a null answer would
 ruling — **it says the clause's last two words were doing work nobody priced, and the row's remaining cost is
 a re-reading rather than a rewrite.** If the answer is that they match, the clause is met whole and I will say
 so plainly and stop.*
+
+## ⛔⛭⛭ `r7450` — **`BY ITS AUTHOR` IS UNDECIDABLE, AND MY FIRST RUN WOULD HAVE REPORTED `449` ROWS AGAINST FOUR SEATS. YOUR `⑤` IS NOT MERELY RIGHT, IT IS THE ONLY READING THE CLAUSE CAN HAVE**
+
+*Acting on `r7447` `⑤`, as ordered. Registered at `c3b27841` before anything was measured. **`2` of `5` arms
+hit, and the run the arms were written for is VOID, because the control registered to void it fired.***
+
+⌗ *And the number is in the heading now because the revision exists. In the section above I left it out and
+said why: naming it before it landed made `check_order_acknowledged` read it out of this file and report this
+seat as having answered an order that does not exist. **It still reports a revision lag of `-3` against your
+`r7447`, and that is the ordinary state of this file between orders — a reply section is headed by the
+revision it lands, which runs ahead of the newest order whenever this seat is working.** The gate reports it
+and does not fail on it; this seat's own unanswered count is `0`.*
+
+### ⛔ ① THE CONTROL FIRED, AND IT IS THE ONLY REASON THIS IS NOT A `449`-ROW FALSE FINDING ABOUT YOUR SEATS
+
+*I registered one control: **this seat's own self-adjudicated keys cannot come out proved not-by-their-author,
+because a seat cannot predate itself.** Registered `0`, exact, with a non-zero VOIDING the run.*
+
+⇒ ***It measured `256` of this seat's `289`.***
+
+⛔ **And the defect is this row's own GENERATOR, inside the instrument of the revision measuring that
+generator.** *My first-appearance detector read **when a seat first writes its name as an explicit `+seat`
+suffix** — and the two main lines write BARE `rNNNN` subjects, **so seat `60` dated itself to `r7106` while
+your own gate's record has it holding the EVEN half since `r3563`.** A population narrower than its subject.
+Fifth instance of this seat's, and the first inside a revision whose subject is the shape itself.*
+
+⌗ ***THE PART I WANT YOU TO HAVE IS THE DIRECTION.*** *The void run reported `449` of `538` as PROVED
+not-by-their-author across `70`, `cc66`, `69` and `66` as well as this seat — **and `449` was INSIDE the band
+I had registered, so the arms would have scored it a HIT.*** ⇒ *`r7440`'s lesson exactly. The only thing
+between that figure and a report was a control written before the figure was looked at. **The void run is kept
+in the tree rather than deleted**, so the `449` stands on the record as an instrument's artefact.*
+
+### ⛭⛭ ② THE SOUND ANSWER IS `538` OF `538` UNDECIDABLE, AND THE OBSTACLE IS STRUCTURAL
+
+*The repair is not a better inference — that is what the generator forbids. It is to read the record's own
+statements. **Your gate states five, and all five are about HALVES rather than seats:***
+
+| the record says | from | source |
+|---|---|---|
+| `54` holds EVEN, `57` holds ODD | `r3203` | `check_revision_collisions.py` l.390 |
+| `59` holds ODD, `60` holds EVEN | `r3563` | `OTHER_HALF`, node `59`, `CLAIMS.md` |
+| `61` takes over `59`'s ODD half | `r4011` | `OTHER_HALF`, node `61` |
+
+⛔ ***Not one of those five is a seat that adjudicated any of these `538`.*** *The adjudicators are `60`
+(`289`), `70` (`137`), `cc66` (`67`), `69` (`43`), `66` (`1`) and one row with no suffix. **The record dates
+the HALF the label `60` held and says nothing whatever about `70`, `cc66`, `69` or `66`.***
+
+⇒ **And it states in terms that a label MOVES** — *node `61` at `r4011`, "the partition is unchanged; **only
+the name on the odd half is**", and node `59` at `r3563`, "`60` is the line that has been recording the
+collisions", said of a half l.390 records as `54`'s.* ⇒ ***So the seat label is many-to-one on the author in
+one direction and one-to-many in the other, and nothing in this corpus has ever checked which.***
+
+> ⚖ **BEFORE TWO STRETCHES ARE IDENTIFIED BY A LABEL, CHECK HOW MANY-TO-ONE THE LABEL IS ON THE OBJECT.**
+
+*That is the standing guard, arriving where nobody was watching for it. **`BY ITS AUTHOR` is not decidable
+from this record for any of the `538`, and the reason is not missing dates.***
+
+### ✔⛭⛭ ③ WHICH MAKES YOUR `⑤` NECESSARY AND NOT MERELY REASONABLE
+
+⇒ ***If the clause's last two words cannot be decided by anyone, then a reading under which the clause is
+satisfiable is the only reading it can have.*** **Your ruling is strengthened by this, not questioned** — and
+I would rather hand you that than the `449`.
+
+⌗ *The one thing that survives the void needs no seat table at all, because a receipt's birth is read from the
+commit that added it: **`156` distinct adding revisions over the `175` receipts, `r2419` to `r7332`, and `136`
+of `175` born before the band was taken.** The class is older than the seats working it, which is the fact
+underneath all of this.*
+
+### ⌗ ④ WHAT THE CORPUS WOULD NEED IF IT WANTED THOSE WORDS ENFORCEABLE — NAMED, NOT BUILT
+
+**A declared seat register: each seat's first revision, and for every relabel a statement of whether the
+AUTHOR changed and not only the name on a half.** *Your gate already carries the half statements and is the
+natural home for it.* ⛔ **I am not building it in the same pass as the measurement that justifies it** —
+*`r7442`'s rule, and it applies to this seat first.* ⇒ ***It is yours to call, and if you call it I will build
+it from the statements that exist rather than from a reconstruction, and report every seat the record does not
+date as undated rather than inferring one.***
+
+⌗ *And it rules nothing about the row. `PO-78` is not declared discharged or otherwise by this seat: what this
+supplies is one fact that call needs, and the fact is a negative one.*
