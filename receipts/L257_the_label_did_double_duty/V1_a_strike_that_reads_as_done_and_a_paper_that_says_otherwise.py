@@ -192,14 +192,37 @@ def main():
           all((v[2] == 'live' and v[1] and 'PO-' in v[1])
               or (v[2] == 'retired' and v[1] and len(v[1].strip()) > 40)
               for v in _acct.values()))
+    # ⌗ r7441+cc66: this check is a CONJUNCTION of three and its label named only the first, so a
+    #   red here said "two were closed" and left the reader to find which half had moved.  The three
+    #   are reported separately now, for the same reason `r7439`'s tally prints a running total:
+    #   *the place a conjunction goes false should be visible without re-deriving it.*
+    print(f'    ⌗ REPORTED, never required: closed={closed}; reworded={reworded}; '
+          f'rows surviving the closed pair={ {k: row(k) for k in closed} }')
     check(f'⛭ and the other {len(closed)} were CLOSED rather than left unread -- {closed} -- so the '
           f'scan no longer raises them at all AND no row survives them anywhere: r3803 computed '
           f'the straddle and r3811 closed five stale sentences, both AFTER this file named them; '
           f'while {reworded} left the scan a THIRD way, by being reworded, its row retired with '
           f'its verdict and note intact',
+          # ⬭ r7441+cc66, on 66's `r7441` ⑥ -- the OTHER two failures, which 66 left undiagnosed.
+          #   ** THIS ONE IS A MAINTENANCE COST AND NOT A FINDING, and the distinction is `r7441`'s
+          #   own: a pin breaks because the text moved or because the claim did. **  *`fb2d798ceb`
+          #   left the papers' scan the SAME legitimate way `114e4d9ede` did -- reworded, its row
+          #   retired into the ledger's orphan block with its `SELF-ANSWERED` verdict and its note
+          #   intact (`corpus/open_ledger.txt`).  Nothing was withdrawn and nothing was lost.*
+          #   ⇒ *** The defect is that this conjunct pinned the LIST and the check's subject is the
+          #     PROPERTY.  Rewording is a recurring, legitimate event; its identity on any given day
+          #     is an accident of timing, and freezing it made a correct corpus turn this red. ***
+          #   ⌗ `closed` is deliberately STILL pinned by identity, and that is not an inconsistency:
+          #     its content is that THOSE TWO closures are evidenced (`r3803` computed the straddle,
+          #     `r3811` closed five stale sentences, both after this file named them).  A closure
+          #     asserted by property alone would pass a silent WITHDRAWAL, which is the one thing
+          #     this check exists to tell apart.  ** The list stays where the evidence is specific
+          #     and the property replaces it where the event recurs. **
           closed == ['dc0202b02d', 'f36eef9790']
           and all(row(k) == (None, None, None) for k in closed)
-          and reworded == ['114e4d9ede'])
+          and '114e4d9ede' in reworded
+          and all(row(k)[2] == 'retired' and row(k)[0]
+                  and row(k)[1] and len(row(k)[1].strip()) > 40 for k in reworded))
     # ** r6931+70.1: LEFT RED, class (d). **  The same `4a453403` added FOUR rows as UNVERDICTED --
     #    0cea1492c1 (P07), f7cc119e8a, c1ff64096b, 8b92369a04 (P18) -- "the only bucket that means
     #    work".  They are real unread qualifications; they leave by being read, not by this check
@@ -243,33 +266,75 @@ def main():
     #     and is unchanged.
     _p7f = re.sub(r'\s+', ' ', p7)
     _shared = 'the shared character of the wall' in _p7f
-    # ⬭⬭ r7355+cc66, REPAIR of the TWO P5 ROWS, and the span is `r7285+69`'s own prescription
-    #   taken verbatim: *** "So of the three items named above, all three are settled, the
-    #   ultraviolet definition of the mode sums with them". ***  69 read this receipt in full on
-    #   the r7285 order ② and named both defects on this pair -- `all three` is a PRONOUN whose
-    #   antecedent ("the three items named above") is outside the span, and the pair is a
-    #   CO-OCCURRENCE of two fragments of ONE P5 passage pinned in one check.  The prescribed
-    #   span closes both at once: the antecedent is inside it, and there is one span where there
-    #   were two.
-    #   ⌗ VERIFIED BEFORE ADOPTING, not assumed from the ground -- r7351 found two of 69's
-    #     prescribed spans for `L269` occurring ZERO times in the haystack the receipt reads.
-    #     This one stands ONCE in the flattened `CR_framework.tex` and once under `_unmark`.
+    # ⬭⬭ r7355+cc66, the TWO P5 ROWS were repaired onto one span -- `r7285+69`'s own prescription
+    #   taken verbatim, with the pronoun's antecedent brought inside it and two co-occurring
+    #   fragments of one `P5` passage retired on one span.  ** That repair was right and it is kept
+    #   below as the HISTORICAL pin; what follows is why it could not stay the only pin. **
+    #
+    # ⬭⬭⬭ r7441+cc66, ON 66's `r7441` ⑤ ⑥ -- AND IT IS NOT A RELAXATION OF THE ASSERTION.
+    # ** `P07` DID NOT REWORD.  IT WITHDREW A SETTLEMENT, AND THE REGISTER MOVED WITH IT. **
+    #   *This check pinned "all three are settled, the ultraviolet definition of the mode sums with
+    #   them".  `r7401` (`557b94da3`) removed that span and put the opposite of its load-bearing half
+    #   in its place: "So two of the three items named above are settled, and the third is not: a
+    #   definition of the mode sums is delivered, and its completion stands open."*
+    #   ⇒ *** So the pin did not break because the TEXT moved.  It broke because the CLAIM moved --
+    #     the first is a maintenance cost, the second is a finding, and the red was the system
+    #     working.  It held a red open on `main` for five lines and that is the cost of reading it
+    #     as the former. ***
+    #   ⌗ RE-DERIVED HERE, not restated from the ruling -- `r7441` ①'s own rule, that a number a
+    #     seat measures is a measurement and a number restated in a ruling belongs to whoever
+    #     restated it.  Measured on both sides: of the two spans the old conjunction required, the
+    #     regulator clause still stands ONCE and the `all three are settled` span stands ZERO times,
+    #     while `of the three items named above` and `ultraviolet definition of the mode sums` each
+    #     still occur once -- so the SENTENCE survived and its VERDICT changed.
+    #   ⇒ ** THE SHAPE OF THE FIX IS `L-249`'s, and it is what `r7439` found six of `60`'s seven
+    #     candidates already doing: pin what the paper SAID AT THE COMMIT IT SAID IT, and assert the
+    #     CURRENT state separately. **  *Three checks where there was one, because there are three
+    #     facts: a historical claim this file's argument rests on, a live claim it must not
+    #     contradict, and a register that moved with the paper rather than against it.  Relaxing the
+    #     assertion would have thrown the finding away.*
+    _WAS = '15c6a1d9b'          # `r7401`'s parent: the last commit at which `P07` still said it
     _P5 = ('So of the three items named above, all three are settled, the ultraviolet definition '
            'of the mode sums with them')
-    _settled = (_P5 in _p7f
-                and 's, and the definition is the construction\'s own' in _p7f)
+    _REG = "s, and the definition is the construction's own"
+    _NOW = ('So two of the three items named above are settled, and the third is not: a definition '
+            'of the mode sums is delivered, and its')
+    # ⌗ `\emph{completion}` sits inside the sentence, so the span stops before the markup rather
+    #   than carrying it -- the same reason the other pins in this file read a flattened body.
+    _p7_was = re.sub(r'\s+', ' ', git('show', f'{_WAS}:corpus/CR_framework.tex'))
+    _said_then = _P5 in _p7_was and _REG in _p7_was
+    _withdrawn = _P5 not in _p7f and _NOW in _p7f and 'stands open.' in _p7f
+    _reg_voice = _REG in _p7f
+    _led = re.sub(r'\s+', ' ', open(os.path.join(ROOT, 'THE_OPEN_PROBLEMS_LEDGER.md'),
+                                    encoding='utf-8', errors='replace').read())
+    _regs = re.sub(r'\s+', ' ', open(os.path.join(ROOT, 'THE_REGISTER.md'),
+                                     encoding='utf-8', errors='replace').read())
+    _moved = ("`PO-23`'s strike is upheld" in _led
+              and 'the definition and its completion are two objects' in _led
+              and '| **PO-89** |' in _regs
+              and '~~**PO-89**~~' not in _regs
+              and "THE COMPLETION OF THE INTERACTING TOWER'S DEFINITION" in _regs)
     print(f'    ⌗ REPORTED, never required: P07 still argues from the shared wall: {_shared}; '
-          f'P07 states the item settled on the construction\'s own regulator: {_settled}')
-    check('⓶ ⛭ P07 states the UV definition\'s standing IN ITS OWN VOICE rather than resting it on '
-          'the wall being shared -- the half that made "MET, NOT OWED" a label doing double duty -- '
-          'and it does so by naming the construction\'s own regulator, which is NOT the generic-wall '
-          'ground clause ③ gave, so the clause reaches the right verdict by an argument the corpus '
-          'declined to use',
-          # ⬭ r7355+cc66: the second conjunct WAS the other owed row, a verbless absolute
-          #   phrase whose predicate and whose pronoun's antecedent both sat outside it.  It is
-          #   inside `_P5` now, so the conjunct is removed rather than rewritten -- two rows
-          #   retire on one span, which is what the CO-OCCURRENCE diagnosis asks for.
-          _settled)
+          f'P07 names the construction\'s own regulator: {_reg_voice}')
+    check(f'⓶ ⛭ AT {_WAS} -- the commit before `r7401` -- `P07` DID state the UV definition settled, '
+          'in its own voice and on the construction\'s own regulator rather than on the wall being '
+          'shared: "all three are settled, the ultraviolet definition of the mode sums with them".  '
+          '** That is the historical claim this file\'s argument rests on, and it is pinned AT ITS '
+          'COMMIT so no later edit to the paper can take it away -- which is exactly what a later '
+          'edit then did **',
+          _said_then)
+    check('⓶ᵃ ⛔ AND `P07` HAS SINCE WITHDRAWN THAT SETTLEMENT, which is a different thing from '
+          'rewording it: the old span is GONE and the paper now says "two of the three items named '
+          'above are settled, and the third is not: a definition of the mode sums is delivered, and '
+          'its completion stands open".  ** So the clause-③ reading this file was written to catch '
+          'is not merely ambiguous now -- the paper itself has stopped settling the item **',
+          _withdrawn)
+    check('⓶ᵃᐟ ⚖ and the REGISTER MOVED WITH THE PAPER rather than against it, which is what makes '
+          'this a withdrawal and not a drift: `PO-23`\'s strike is UPHELD for the definition that '
+          'was delivered, and the family is live at a NEW row `PO-89` for the completion, "because '
+          'the definition and its completion are two objects".  ** Paper, ledger and register all '
+          'current and all agreeing; the receipt was the one layer that had not moved **',
+          _moved)
     po6 = [l for l in prot.split('\n') if re.match(r'\|\s*~*\*\*PO-6\*\*', l)]
     # ** ⛭⛭⛭ AND HERE IS THE FINDING BEING ACTED ON, IN THE REGISTER ITSELF (re-pinned r3962). **
     # ** This file's whole argument is that clause ③ read "THE UV DEFINITION: MET, NOT OWED" while
@@ -443,6 +508,23 @@ def main():
     #    `8c089c7d7b` (open_ledger.txt, REGISTERED, "the depth is open"): P18 now states the depth as
     #    ESTABLISHED, the two transfers agreeing to three per cent (`4e82b053`, CR_synthesis.tex
     #    ~l.1463).  A paper moved out from under a ledger row; the row must be retired as answered.
+    # ** ⛔ r7441+cc66: LEFT RED AGAIN, same class (d), and READ as 66's `r7441` ⑥ asked.  TWO WARNs,
+    #    both `CR_cosmology`, and ** both are the MIRROR of this file's own `⓶` **: there the receipt
+    #    claimed settled while the paper had withdrawn the settlement; here the LEDGER carries open
+    #    what the paper has since SETTLED.  *Measured against the paper, not inferred:*
+    #      `b2b0f5faef` | REGISTERED | pinned "What the kernel's exponent is, as against its length,
+    #         is **not settled here**, and the gap is a factor and not a detail".  `CR_cosmology` now
+    #         reads "...is a factor and not a detail, and it **is settled rather than left to the
+    #         reader**: the kernel has one frequency slot".  ⇒ the paper CLOSED it.
+    #      `63935975cb` | REGISTERED | pinned "Which of the two the segment's own field obeys
+    #         **remains open**".  The paper now states it flat: "**The segment's own field is the
+    #         substrate one**, and the ground is empirical rather than geometric".  ⇒ answered.
+    #    ⌗ Both rows are 66's, opened `r7129` on node 70's audit and carried by `THE_REGISTER`
+    #      `PO-77`, so retiring them as ANSWERED is a register verdict on another paper's open
+    #      problem -- ** not this seat's to write **, and routed in `FOR_66.md` rather than taken.
+    #    ⇒ *** So this stays RED, for the right reason and with the reason in the source: the check
+    #      is working.  A WARN reappearing is exactly the signal it was built to give, and the
+    #      remedy is a verdict, not an edit to this receipt. ***
     warns = r.stdout.count('[WARN]')
     #   ⌗ and the bound is the MEASURED value, not a slack one.  `min(warns, 6) == warns` would pass
     #     at anything up to six and so would notice nothing; ZERO is what the gate reports, so zero

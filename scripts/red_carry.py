@@ -317,8 +317,15 @@ def reds_tolerance(dirs, root, scope):
     key = {r.replace('/', '_'): r for r in scope}
     red, unmeasured, a = set(), set(), dirs[0]
     for b in dirs[1:]:
+        # ⛭ r7441 ③ (66, on 60's ⒝), r7441+70: ** A BUILD THAT DELIVERED NOTHING IS ONE UNMEASURED BUILD, NOT A
+        #   VERDICT-LESS RUN. **  *This returned `None` when any directory was missing, which sent the WHOLE
+        #   scope through `scope_disposition` -- on `failure`, all red.  In one job that could only mean the
+        #   probe step itself died; once the three builds are three jobs, it means one of them was cancelled
+        #   or timed out, and filing all red would discard the comparison that DID run.*  ⇒ A missing
+        #   directory contributes no comparison here, and the loop below reads its scope `unmeasured`.
+        #   ** A split that fails closed is a budget raise with extra steps (r7441 ③). **
         if not (os.path.isdir(a) and os.path.isdir(b)):
-            return None
+            continue
         flags = [r for r in st.compare(a, b) if r['kind'] in ('FLAG', 'FLIP')]
         judged, _ = st.split_judged(flags, os.path.join(root, st.JUDGED), root)
         for r in flags:
@@ -978,6 +985,26 @@ def seed_unmeasured():
         _xr, _xu, _ = scope_disposition('success', _scope, 'tolerance')
         res['U17. ...while `success` reaches this path only as a caller error and is not silently '
             'turned into a verdict either'] = _xr == set(_scope) and not _xu
+        # ── ⛭ r7441 ③, r7441+70: ONE BUILD MISSING IS ONE BUILD UNMEASURED, seeded both ways ──────────
+        #   Three builds, B delivered nothing: A↔C still files its finding, and B's absence reads as
+        #   `unmeasured`, never as a whole-scope red and never as `None`.
+        c = os.path.join(tmp, 'tC')
+        os.makedirs(c, exist_ok=True)
+        for r in (timed, never, clean):
+            log(c, r)
+        log(c, timed, rc=None, timeout=True)
+        gone_b = os.path.join(tmp, 'tB_never_arrived')
+        out3 = reds_tolerance([a, gone_b, c], root, [timed, never, clean])
+        res['U18. ⛔ one build MISSING still returns the PAIR (not None, so no whole-scope carry)'] = \
+            isinstance(out3, tuple) and len(out3) == 2
+        r3, u3 = out3 if res['U18. ⛔ one build MISSING still returns the PAIR (not None, so no whole-scope carry)'] \
+            else (set(), set())
+        res['U19. ...the comparison that DID run (A↔C) still files its red'] = timed in r3
+        res['U20. ...and the missing build\'s receipts read UNMEASURED, not red'] = \
+            {never, clean} <= u3 and never not in r3 and clean not in r3
+        out4 = reds_tolerance([os.path.join(tmp, 'tA_never_arrived'), b, c], root, [timed, never, clean])
+        res['U21. with the REFERENCE build A missing nothing can be compared: all unmeasured, none red'] = \
+            out4 is not None and not out4[0] and out4[1] == {timed, never, clean}
     finally:
         shutil.rmtree(tmp, ignore_errors=True)
     return {k: bool(v) for k, v in res.items()}
