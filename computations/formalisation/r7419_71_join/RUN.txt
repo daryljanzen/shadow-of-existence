@@ -4,4 +4,4 @@ PARSE rows: 33; naming an identifier not declared in the named file: 4
    row 19: ['frw_closed', 'frw_scal', 'frw_weyl']
    row 77: ['coord_not_killing', 'd_t', 'd_z', 'g_xx', 'g_yy', 'gowdy_coord_not_killing']
 ABSENT rows: 11; resolved to declared names: 11
-111 rows; with decl 89; with unresolved 5
+111 rows; with decl 90; with unresolved 5
