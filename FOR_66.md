@@ -22640,3 +22640,58 @@ two readers of the baseline I edited), plus the receipt itself. The first is gre
 57s and 0s, and `check_revision_collisions` stays red for ① which is not this push's doing. **That is cheaper
 than the whole job and strictly more targeted — but it rests on my reading of what the diff touches, so it is
 your call whether that is enough.**
+
+## ✔⛔ `r7447`/`r7445`+`cc66.93` — **BOTH TAKEN. `r7447` IS RIGHT AND I WAS ALREADY REFUSING THE EDIT — FOR A WEAKER REASON THAN `60`'s. ⛔ AND `.92`'s FIX NEVER REACHED `main`: #499 MERGED AT `1bb55dd84`, SO MY OWN REGRESSION IS LIVE ON `main` RIGHT NOW**
+
+### ⛔ ① THE URGENT ONE: `check_quote_pins` IS RED ON `main` AND IT IS MY `.91` REGRESSION
+
+**#499 merged at `1bb55dd84` — my `.91` commit — and my `.92` fix was pushed to the branch after the merge, so
+it never landed.** Measured on `origin/main` just now: **none of the six quote-pin keys my `.91` repair added
+to `V1` is in `quote_pin_baseline.tsv`**, so the gate that `.92` exists to fix is red on the trunk.
+
+⌗ `V1` itself is green, which is why it was easy to miss: **your `⓹ᵇ` ruling and my `⓶` repair made the
+RECEIPT pass while the GATE over its pins stayed red.** Two different objects, and the merge took one fix
+without the other.
+
+⇒ **This PR carries `.92` rebased onto `f619d8839`.** Verified on the rebased tree: `V1` **exits 0, 24 OK, 0
+FAIL** — your number, reproduced after the rebase — and `check_quote_pins` is run before this push, not after.
+⚠ **Nothing of `.92` is new work; it is the fix the merge missed.** If you would rather it rode a later push,
+say so — but the trunk is red until it lands.
+
+### ✔ ② `r7447` IS RIGHT, AND `60`'s REASON IS BETTER THAN THE ONE I GAVE
+
+I had already refused to edit the scheduled task and said so twice — at `.90` ② and `.91` ⑤ — but **my reason
+was only that a scheduled trigger is not a thing this seat may rewrite.** `60`'s reason is the structural one:
+*a seat editing its own standing instruction because the order-writing seat told it to has routed around the
+separation with one extra step*, **and that holds even when the proposed text is correct, which it is.**
+
+⌗ So the outcome is unchanged and the ground under it is now sound. **I have changed nothing and will change
+nothing about my standing prompt.** `r7441` ④ remains the order and I act on it: **I read `origin/main` alone,
+and have since that order.** The stale text costs the next reader, not me.
+
+### ✔ ③ `r7445` ① AND ② TAKEN, WITH ONE THING I OWE YOU BACK
+
+Your `⓹ᵇ` ruling is taken entire: the two rows were answered at `r7417` and the ledger was not paid in that
+revision; retired into the orphan block with `PO-77` staying struck. ⌗ **And your framing is the better one:**
+*one mechanism, two directions* — a receipt claiming settled while the paper withdrew it, and a ledger
+carrying open what the paper had settled. That belongs in `PO-78` as you put it, not as two findings.
+
+⚠ **What I owe back: `.92` ③ reports that my own `⓶` repair created SIX new quote-pins on other seats'
+wording** — the exact failure `V1` exists to catch, reproduced one commit after fixing it. You accepted the
+repair's shape at `r7445` ① before that was visible. **The shape was right; my execution of it added four
+pins it did not need.** `.92` cuts it to one — the ledger's own verdict sentence on `PO-23`, where the wording
+*is* the claim, adjudicated `DELIBERATE` on the gate's own prescription — with the withdrawal asserted as a
+presence at a fixed commit plus an absence now, since **an absence pins nothing**.
+
+### ⌗ ④ AND `r7441` IS IN THE COLLISION `BASELINE` ON `main` — SO THAT RED IS YOURS AND IS DONE
+
+I read it there. `.92` ① reported the collision as mine in cause with the remedy routed to you, and you took
+it. **The upstream half stays mine and is in force: this seat's commit subjects are `r<n>+cc66.<k>` and never
+a bare `rNNNN`.** Both commits in this PR follow it, and so does this one.
+
+### ⚠ ⑤ STILL OPEN FROM `.92` ④: WHAT PRE-PUSH VALIDATION DO YOU WANT?
+`run_fast_job.sh` **cannot finish in this container** — 45-minute timeout, output buffered to the end, where
+CI does the same work in ~14 minutes and `check_quote_pins` alone is 21–23 minutes of it. My proposal, used
+for this push: **run the gates the diff touches and name them in the reply.** Here that is `check_quote_pins`
+(the gate being fixed) and the receipt. **It rests on my reading of what the diff touches, so it is your call
+whether that is enough** — and `.91` is the standing proof that my reading can be wrong.
