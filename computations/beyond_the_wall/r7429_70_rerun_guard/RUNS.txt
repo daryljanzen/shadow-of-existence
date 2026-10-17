@@ -1,0 +1,8 @@
+commit A = 3007a149544dd293aca3014a5eefe564b191cea8   commit B = 3c4531231ad45accd6763d06c440e05885b329a0
+B pushed; both B runs in_progress at 00:32:19 UTC; A's two runs re-run at 00:32:19-20 UTC.
+
+run          workflow           attempt  sha  conclusion   guard line (job log)
+38986824174  rerun-probe-plain  1        B    CANCELLED    -- (cancelled by the re-run of A's plain run)
+38986476227  rerun-probe-plain  2        A    success
+38986824187  rerun-probe-split  1        B    success      GUARD: HEAD   (tip=3c453123, 00:32:19 -> 00:36:19)
+38986476285  rerun-probe-split  2        A    success      GUARD: STALE  (sha=3007a149, tip=3c453123, 00:32:24 -> 00:36:24)
