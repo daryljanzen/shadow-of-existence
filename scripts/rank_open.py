@@ -34,7 +34,12 @@ ROOT = os.path.abspath(os.path.join(HERE, '..'))
 # counted eigenspace).  What remains is the index's VALUE -- a computation, not a search. **
 # ⛭ r7413: PO-92 entered on opening.  REACH 2 -- it settles the closed loop's generality for the
 #   charged case and bears on P3, P5, P7, P9 and P18, but on no result those papers assert.
-REACH = {'PO-92': 2, 'PO-46': 2, 'PO-2': 2, 'PO-3': 2, 'PO-4': 3, 'PO-5': 3, 'PO-6': 3, 'PO-7': 2, 'PO-8': 1,
+# ⛭ r7447: PO-93 entered on opening.  REACH 1 -- what it settles is the dark fraction at the
+#   turnaround scale, which is a datum of the world rather than of this construction: P3 says the
+#   construction 'is degenerate with the standard one here and predicts neither', so no result any
+#   paper asserts moves with it.  It is on the list because P18 states it open, not because the
+#   corpus leans on it.
+REACH = {'PO-93': 1, 'PO-92': 2, 'PO-46': 2, 'PO-2': 2, 'PO-3': 2, 'PO-4': 3, 'PO-5': 3, 'PO-6': 3, 'PO-7': 2, 'PO-8': 1,
          'PO-9': 2, 'PO-10': 2, 'PO-11': 3, 'PO-12': 2}
 # ** GATED_BY, added r2603 the moment the ranking first ran. **  ⛔ The first run put `PO-7` SECOND --
 # and `PO-7` cannot be worked at all: its one live route ⓷ IS `PO-seam`'s progenitor derivation, and all
@@ -49,6 +54,8 @@ GATED_BY = {'PO-7': 'PO-seam (its route 3 IS the progenitor derivation)',
             'PO-10': 'PO-12 step 2 (both halves are statements about C_l)'}
 
 CONVERGES = {
+    "PO-93": ("PO-50 -- the two share a radius and an instrument and nothing else: the bound-to-attained\n              factor is parameter-free and the four-way guard reads either, and one sample with a\n              kinematically located turnaround radius would serve both.  PO-50 asks WHERE the mass is\n              measured, PO-93 asks WHAT IT IS MADE OF, so neither discharges the other.",),
+
     "PO-92": ("nothing yet -- the charged loop's generality converges with no other live row; PO-88 is the UNCHARGED bead's crossing and presupposes a bead this item asks whether the charged case has",),
 
     "PO-46": ("P18's orbifold route and P7's narrowed open work both gate on this prerequisite",),
