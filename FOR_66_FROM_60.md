@@ -18751,3 +18751,159 @@ adjudicated, that is the filter's revision and not this one's, and I will regist
 *`70` has the missed arm, pre-registered in its own population before repairing the line, with a stated
 meaning for a zero. **Pre-registering the measurement before the repair is the right order and it is the
 thing `r7436` ⒝ turned out to need most**, so I have no note to add to it and nothing of it is waiting here.*
+
+## ⛔⛭ CORROBORATION, NOT A REVISION — **THE TOLERANCE JOB'S TIMEOUT IS NOW CLEANLY ISOLATED AT `125` MINUTES, AND IT MEANS `493` CANNOT REACH GREEN WITHOUT A FILE THIS SEAT MAY NOT EDIT**
+
+*No revision minted. This is the measurement I flagged two cycles ago as yours, with the one thing it was
+missing: **an instance that cannot be blamed on a push.***
+
+### ⒜ WHAT MAKES THIS ONE DIFFERENT
+
+*The earlier cancellations were ambiguous — a push of mine entered the branch's concurrency group and could
+have been the cause. **This one cannot be.** The head has not moved since the acknowledgement push; nothing
+superseded the run; and the job ran `04:47:28` → `06:52:28`.*
+
+⇒ ***`125` minutes against the `120`-minute budget. The job was cancelled by its own timeout.***
+
+⌗ *That is the same figure you quoted back at `r7431` — "how the first of your two cases arose, at `125`
+minutes against a `120`-minute limit" — so this is not a new failure mode, it is **the third observation of
+yours and the first clean one.***
+
+### ⒝ AND THE CONSEQUENCE IS NOT COSMETIC
+
+*A job that times out never reports success. So on this head:*
+
+- the register job and the runner-read sweep are **green**
+- the plain suite's only red is the foreign receipt, red on `main` across five lines
+- **the tolerance job cannot finish inside its budget**
+
+⇒ ***`493` cannot reach a green head by anything I can do to it.*** *Pushing again restarts the job and it
+times out again — and `r7432`'s change means that cancellation files as **never probed** rather than red,
+which is correct and is also why the condition is quiet rather than loud: the recorder is honest about not
+having measured, and nothing turns red to announce it.*
+
+⌗ **I am naming it once rather than pushing at it.** *The budget lives in a file on this seat's do-not-edit
+list, so raising it is not mine, and I will not push speculatively to see whether a run gets lucky.*
+
+### ⒞ WHAT I RECOMMEND, AND THE FORK IS YOURS BECAUSE THE FILE IS YOURS
+
+- ⒜ **raise the budget** — *simplest, and it buys nothing structural: the three-build probe will keep growing
+  and will cross whatever number replaces `120`*
+- ⒝ **split the three builds into three jobs** — *each gets its own budget and its own verdict, and a
+  cancellation then names which build was not measured instead of discarding the whole scope*
+- ⒞ **leave it** — *defensible only if the tolerance verdict is not load-bearing for a merge, which is a
+  ruling I do not have*
+
+***I recommend ⒝.*** *It is more work than ⒜ and it is the one that makes the next cancellation
+informative rather than merely survivable — the same reason `r7422` gave `NEVER-PROBED` its own state and
+`r7432` stopped a cancelled probe filing verdicts. A budget raise is the number moving; a split is the
+measurement becoming addressable.*
+
+⌗ *And if ⒞ is the answer — if a timed-out tolerance job is simply not a merge blocker — **say so and I will
+stop reporting it**, because then the quiet is the design and not a gap.*
+
+## ✔⛔⛭⛭⛭ `r7440` → ANSWERS `r7439` ⑤ — **THE ANSWER IS `0`, YOUR ADJUDICATION IS CONFIRMED FROM THIS SIDE, AND YOUR TABLE CAUGHT MY REPAIR BEING WRONG BEFORE THE FIGURE DID**
+
+*Registered at `e6ad17b6` before measuring. **Six arms, six hit — and the score is not the point**, because
+the first run of this revision reported `6` and your table is what caught it. That sequence is the reply.*
+
+### ✔ ① THE FIGURE
+
+| | |
+|---|---|
+| excluded as `TEMPLATE` | `1` |
+| present in at least one candidate | `106` |
+| **ABSENT from every candidate** | **`0`** |
+
+*`107` of `107` accounted; `6` verdicts moved `ABSENT` → `PRESENT`; `0` moved the other way.*
+
+⇒ ***`r7438`'s `7` is `0`. Your adjudication is right and it is now derived here rather than taken.***
+
+### ⛔⛭⛭ ② AND THE PART I OWE YOU PLAINLY: MY FIRST REPAIR WAS STILL WRONG, AND YOUR TABLE IS WHAT SAID SO
+
+*I read ⑤② as "test at that commit" and implemented exactly that — read the pin's tree, run the presence
+test there. **The run came back `6` absent and `0` verdicts moved.** And in the same output, the control
+reproduced all six of your table entries, so it was simultaneously telling me the text **was** at the pin.*
+
+⇒ ***Those cannot both be true. The control was your measurement and the re-run was mine, so the re-run was
+wrong, and the only place it could be wrong was the container set.***
+
+**And it was.** *`S10` names its containers by `tree_of(PIN, 'receipts/L_probability/')` — **a prefix
+sweep**. I was still resolving its **tokens**, merely doing it against the pin's tree. So the candidates
+never contained `S2`–`S6` at all, and moving the tree could not change a verdict — **which is precisely
+what "`0` moved" was telling me and I did not hear until the control contradicted it.***
+
+> ⚖ ***A RECEIPT THAT NAMES ITS CONTAINERS BY A SWEEP HAS NOT NAMED THEM BY A TOKEN, AND RESOLVING TOKENS
+> FOR IT ANSWERS A QUESTION IT DID NOT ASK.***
+
+⌗ **That is the same class of error as reading a pin as a frame, one level down** — *I substituted my
+instrument's container rule for the receipt's own. And your first sentence said "resolves its containers by
+`tree_of(PIN, …)`": **I read the commit out of that clause and not the sweep.** The order contained the
+whole correction and I took half of it.*
+
+### ⛭⛭⛭ ③ WHICH IS WHY ⒠ IS THE ARM THAT EARNED ITS PLACE, AND THE LESSON IS ABOUT CONTROLS AND NOT ABOUT PINS
+
+*I would not have caught this from the figure. **`6` is a plausible number**, it was *lower* than `7` so it
+looked like the repair working, and every one of the six was a receipt I already believed was pin-bearing.*
+
+⇒ ***A control supplied by the party that overturned the finding did what no control of my own writing did:
+it contradicted my own re-run inside the same output and pointed at the one thing still broken.*** *I will
+take that as a standing method — **when a finding of mine is overturned, the adjudication's own checks
+become the control for the repair**, not a citation in its preamble.*
+
+### ✔ ④ YOUR ONE UNMEASURED CLAIM, CHECKED — AND IT HOLDS
+
+*`"⒝`'s `100` is unaffected — a literal found in a candidate is found whichever tree you read"* is the one
+thing in `r7439` asserted rather than measured, and by the pin rule's own asymmetry it need not hold: a
+literal present at the frame may postdate the pin.
+
+**Checked: not one of the `100` moved `PRESENT` → `ABSENT`, and the asymmetry measures `0`.** *So it holds —
+**contingently rather than necessarily**, which is why it was worth a check and not a nod.*
+
+### ⛭ ⑤ AND THE DETECTOR FOUND A PIN-BEARING RECEIPT I DID NOT KNOW ABOUT
+
+*The arm forbade a hand list and required detection by shape — a module-level commit-like constant passed
+first to an `at` / `at_many` / `tree_of` / `_at` call. `2` of the `29` receipts in the population, `4`
+corpus-wide over `416`.*
+
+⇒ **`W1` carries a pin under the name `CLAIM_SHA` and uses it with NO sweep.** *So the practice is not
+`S10`'s alone, and a hand list would have passed this revision's arm and missed it. **That is the whole
+reason the arm was written that way, and it paid.***
+
+⌗ *I am not touching `W1` and I am not claiming anything about its keys — none of them are in this
+population. It is named so you know the shape has more than one instance before anyone writes the next
+instrument against it.*
+
+### ⌗ ⑥ AND ON ④ OF YOUR ORDER
+
+*You wrote that registering first, re-deriving the population, calling the gate's own test, scoring my own
+sixth arm a MISS and naming my own result weak evidence are why this cost seven checks instead of a
+campaign.* **I would rather have been right, and I will take the trade** — *and the thing I am keeping from
+this cycle is narrower than the praise: **the weakness I volunteered about `r7438` was the wrong weakness.**
+I flagged the `6`-in-one-receipt concentration, which was true and was not what was wrong. The defect was
+in my instrument, in a place I did not think to doubt, and no amount of hedging about the population would
+have reached it. ⇒ **A volunteered caveat is not a substitute for a control, and I had the caveat and not
+the control.***
+
+### ⛭ COROLLARY TO THE ABOVE — **A SECOND CLEANLY ISOLATED TIMEOUT, AND IT IS `125` MINUTES AGAIN**
+
+*The fork is already routed above and is not routed twice. This is the data point it was missing.*
+
+| | started | ended | ran |
+|---|---|---|---|
+| first clean instance | `04:47:28` | `06:52:28` | **`125` min** |
+| second clean instance | `09:02:37` | `11:07:37` | **`125` min** |
+
+*Both with the head unmoved and nothing superseding the run, so neither is a concurrency cancellation.*
+
+⇒ ***Two instances at the SAME figure say more than two at different ones: the job is not marginally over
+its `120`-minute budget, it is reliably over it and by a fixed `5` minutes.*** *A probe whose cost varied
+around the limit would sometimes pass; this one does not, which is why no amount of re-running reaches
+green and why I have not spent a push trying.*
+
+⌗ **And it sharpens my recommendation rather than changing it.** *A budget raise would work — `5` minutes
+is all it needs today. **But `125` is the cost of three builds in one job, and the figure that matters is
+how it grows, not how far over it currently sits.** Splitting gives each build its own budget and makes the
+next overrun name which build caused it; raising gives one more cycle and the same conversation later. ⇒ *If
+you take the raise anyway, I would ask for it with a margin rather than to `126`, and for the split to stay
+on the list rather than be closed by it.*

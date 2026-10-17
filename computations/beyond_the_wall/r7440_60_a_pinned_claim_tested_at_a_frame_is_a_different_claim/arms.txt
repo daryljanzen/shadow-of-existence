@@ -1,0 +1,139 @@
+r7440 (60) -- THE ARMS, SCORED AGAINST PREDICTION.md AS REGISTERED AT e6ad17b6
+================================================================================
+Order: r7439 ⑤, which follows an adjudication refuting r7438's ⒞ entirely.
+
+SCORE: 6 arms, 6 HIT.
+
+⛔ AND THE SCORE IS NOT THE POINT.  THE FIRST RUN OF THIS REVISION GOT ⒞ WRONG --
+   it reported 6 absent where the answer is 0 -- AND r7439's OWN TABLE, USED AS
+   THE CONTROL, IS WHAT CAUGHT IT.  That sequence is below under ⒞, before the
+   figure, because a six-of-six that needed a correction to get there is not the
+   same object as a six-of-six that did not.
+
+=> THE ANSWER: 0.  All seven of r7438's reported absences were artefacts of the
+   instrument, exactly as r7439 adjudicated, and the figure is now derived here
+   rather than taken.
+
+--------------------------------------------------------------------------------
+(a)  THE TEMPLATE LEAVES THE LITERAL POPULATION                              HIT
+--------------------------------------------------------------------------------
+REGISTERED: the S50 key is classified TEMPLATE and leaves the population; the
+            corpus-wide count banded 1-40, central 6.
+MEASURED  : 1 in the r7438 population -- "FRAME = '{}'", in S50 -- and 9
+            corpus-wide over all 2,728 traced keys.
+
+  Detected from the syntax tree: an f-string is an `ast.JoinedStr`, and the
+  skeleton an extractor reading the SOURCE harvests is its literal parts joined
+  by `{}`.  Nothing in any file is asserted to contain that skeleton.
+
+    ⚖ A TEMPLATE IS NOT THE TEXT IT PRODUCES.          -- r7439 ③
+
+--------------------------------------------------------------------------------
+(b)  PIN-BEARING RECEIPTS, BY SHAPE AND NOT BY A HAND LIST                   HIT
+--------------------------------------------------------------------------------
+REGISTERED: band 1-12 receipts, central 3; and a hand list fails the arm even if
+            the figure matches.
+MEASURED  : 2 of the 29 receipts in the population, and 4 corpus-wide over 416
+            traced receipts.
+
+      PIN       = 9c06b92f    in S10_the_sweep_for_exact_counts...
+                  sweeps ['receipts/', 'receipts/L_probability/']
+      CLAIM_SHA = d929d6bf…   in W1_the_two_plus_one_plus_one_is_excluded...
+                  no tree_of prefix -- tokens only
+
+  Detected by shape: a module-level commit-like constant passed as the FIRST
+  positional argument of an at / at_many / tree_of / _at call.  No hand list.
+
+  ⌗ AND IT FOUND ONE I DID NOT KNOW ABOUT.  W1 carries a pin under a different
+  name and uses it without a sweep, so the practice is not S10's alone -- which
+  is the whole reason the arm forbade a hand list.
+
+--------------------------------------------------------------------------------
+(c)  THE RE-RUN -- AND THE CORRECTION THE CONTROL FORCED                     HIT
+--------------------------------------------------------------------------------
+REGISTERED: band 0-20, central 0; and explicitly NOT bounded above by 7, because
+            testing a pinned claim at its pin can move a verdict either way.
+MEASURED  : 0 absent.  106 present, 1 excluded as TEMPLATE, 107 of 107 accounted.
+            Verdicts moved ABSENT -> PRESENT: 6.  PRESENT -> ABSENT: 0.
+
+  ⛔ THE FIRST RUN SAID 6, AND HERE IS HOW IT WAS CAUGHT.
+
+  I implemented r7439 ⑤② as "test at that commit": read the pin's tree, run the
+  presence test at the pin.  The run then reported 6 absent and 0 verdicts moved
+  -- while the control, in the same output, reproduced all six of r7439's table
+  entries and so said the text WAS at the pin in S2..S6.
+
+  Those two cannot both be right.  The control was the adjudicator's own
+  measurement; the re-run was mine; so the re-run was wrong, and the only place
+  it could be wrong was the CONTAINER SET.
+
+  And it was.  S10 names its containers by `tree_of(PIN, 'receipts/L_probability/')`
+  -- A PREFIX SWEEP.  I was still resolving its TOKENS, merely doing it against
+  the pin's tree.  The candidates therefore never contained S2..S6 at all, so
+  moving the tree could not change a verdict, which is exactly what "0 moved"
+  was telling me.
+
+    ⚖ A RECEIPT THAT NAMES ITS CONTAINERS BY A SWEEP HAS NOT NAMED THEM BY A
+      TOKEN, AND RESOLVING TOKENS FOR IT ANSWERS A QUESTION IT DID NOT ASK.
+
+  That is the same class of error as reading a pin as a frame, one level down: I
+  took the receipt's own rule and substituted my instrument's.  r7439 said
+  "resolves its containers by tree_of(PIN, …)" in its first sentence; I read the
+  commit out of that sentence and not the sweep.
+
+  With the receipt's own container rule in, the six move and the answer is 0.
+
+  ⌗ The asymmetry I registered -- that a literal present at the frame may
+  postdate the pin and become absent -- measures 0 on this population.  It was
+  worth registering and it did not fire.
+
+--------------------------------------------------------------------------------
+(d)  ⒝'s 100 -- CHECKED, NOT ACCEPTED                                        HIT
+--------------------------------------------------------------------------------
+REGISTERED: band 80-100, central 100; flagged as the one claim r7439 asserts
+            rather than measures, and checked for that reason.
+MEASURED  : 100 stands -- not one of them moved PRESENT -> ABSENT.  The total
+            went to 106 present because the six moved INTO it.
+
+  So r7439's "a literal found in a candidate is found whichever tree you read"
+  holds on this population.  It holds contingently rather than necessarily --
+  the pin repair could have moved a key the other way and measured 0 doing so --
+  and that is why it was worth a check rather than a nod.
+
+--------------------------------------------------------------------------------
+(e)  THE CONTROL -- r7439's OWN TABLE                                        HIT
+--------------------------------------------------------------------------------
+REGISTERED: the repaired test reproduces all six, naming those files.  Exact.
+MEASURED  : 6 of 6, every expected stem found and none missing:
+              STAMP                                    -> S2, S3, S4
+              TARGETS = sorted({r[0] for r in MINE})   -> S2
+              _all_bodies.count(RETIRED) == 0          -> S6
+              len(_removed) == 1 and len(_added) == 8   -> S6
+              def shadow_run(                          -> S5, S6
+              for f in PROBE                           -> S5
+
+  ⛭ AND THIS IS THE ARM THAT EARNED ITS PLACE.  A control supplied by the party
+  that overturned the finding did what no control of my own writing did: it
+  contradicted my own re-run in the same output and pointed at the one thing
+  still wrong.  I would not have caught the sweep from the figure alone -- 6 is
+  a plausible number and I had every reason to believe it.
+
+--------------------------------------------------------------------------------
+(f)  THE PRICE                                                               HIT
+--------------------------------------------------------------------------------
+REGISTERED: band 20-900 s, central 90 s.
+MEASURED  : the presence test 5.1 s, the whole run 25.9 s -- against r7438's
+            43.6 s.  CHEAPER than the thing it corrects, because a swept prefix
+            is one tree read and a token resolution is many.
+
+--------------------------------------------------------------------------------
+WHAT THIS DOES NOT DO
+--------------------------------------------------------------------------------
+- It does not re-litigate the adjudication.  r7439's six checks are the control
+  and are quoted, not re-argued.
+- It rules no key anything.  The surviving set is empty, so there is nothing to
+  bound; if it were not, it would still be an upper bound with the green-receipt
+  filter unapplied.
+- It does not touch S10, S50, W1 or any other receipt.  The defect was in the
+  instrument three times over and was repaired there each time.
+- It does not widen S60.
