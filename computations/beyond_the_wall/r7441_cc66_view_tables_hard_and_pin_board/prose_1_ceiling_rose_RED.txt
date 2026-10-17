@@ -1,0 +1,18 @@
+
+  PROSE-PIN RATCHET -- is every pin on a count of matches adjudicated, or at least counted?
+
+    ledger keys unique: 0 duplicate key(s), 0 named as known
+    the instrument reports 161 distinct (receipt, expression) key(s); the baseline carries 161
+    ⌗ the instrument prints one line per SITE; identical expressions in one receipt collapse to one
+      adjudication here, because reading it once settles it
+    by tier: {'PRESENCE': 83, 'PIN': 78}
+    by verdict: {'UNADJUDICATED': 1, 'PRESENCE-CONTROL': 79, 'DELIBERATE': 68, 'NOT-A-COUNT': 13}
+    UNADJUDICATED: 1   ** the only bucket that means work, and it may only fall **
+    no new site: the class has not grown.
+    no stale entry: every adjudication still describes a live site.
+
+  ⛔ THE UNADJUDICATED COUNT ROSE: 1 against the declared ceiling 0.
+     ⌗ The bucket means work and the ratchet is that it only shrinks.  Lowering the
+       ceiling is the point; raising it is an edit to this gate and must be argued.
+
+  ⛔ THE PROSE-PIN RATCHET IS RED.

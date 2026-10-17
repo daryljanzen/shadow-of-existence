@@ -248,3 +248,96 @@ Transcripts `marker_0_clean.txt` … `marker_4_address_taken_GREEN.txt`.
 **Cheapest still pending:** `red_carry` 3 (three operational aborts, not verdict refusals) ·
 `check_prose_pins` 4 · `check_unread_figure` 4 · `check_tilt_pins` 5 · `check_revision_collisions` 5 ·
 `ROWS.tsv : index` 7 · `check_quote_pins` 12 (last, as ordered).
+
+---
+
+# r7441 ④ ⑤ ⑥ — TWO MORE RATCHETS CLOSED, THE CEILING CLASS TESTED TWICE MORE, AND `red_carry`'s ABORTS
+
+## ④ `check_prose_pins` — `5 of 5` ✔, and the **ceiling class holds on its third member**
+
+`.61` had walked the new-site branch.  The four that remained are all **REACHABLE BY DATA**:
+
+- **NO BASELINE** — `no baseline at corpus/prose_pin_baseline.tsv -- this gate has no record to ratchet`:
+  word for word the sentence `check_exact_counts` prints, which is itself worth noticing — the ratchets share a
+  refusal *idiom*, not just a shape.
+- **A DUPLICATED KEY** names the key, the line, and **two** addresses: *"merge the rows into one that records
+  both, or name the key in `KNOWN_DUPLICATE_KEYS` with why."*
+- **A STALE ENTRY** names the row, the remedy and the reason together, and I took it to exit 0.
+- **⚖ THE CEILING** — the third member of the `r7439` ceiling class to be walked, and **the first walked since
+  the class was claimed.**  The ceiling here is **0** against 161 sites read, so flipping **one** committed row
+  to `UNADJUDICATED` fires it:
+
+```
+  ⛔ THE UNADJUDICATED COUNT ROSE: 1 against the declared ceiling 0.
+     ⌗ The bucket means work and the ratchet is that it only shrinks.  Lowering the
+       ceiling is the point; raising it is an edit to this gate and must be argued.
+```
+
+**The prediction holds exactly as written**: the first address (raise the ceiling) is forbidden by the
+instrument's own text, and the second (verdict the site) is a judgement.  `ONE STEP FROM A WALL`.
+
+## ⑥ `check_unread_figure` — `4 of 4` ✔, and **the ceiling class holds on a fourth, with a sub-distinction the claim did not predict**
+
+- **NO BASELINE**, the same shared sentence again.
+- **A NEW KEY names FOUR addresses in four lines** — read the figure from the paper, say what *this* receipt
+  computed and drop the attribution, or record it as `NOT-A-PAPER-FIGURE` with what was read.  Induced the
+  honest way, by **un-recording a live key** (`L165_interacting_tower/S7`), so the flag is a real detection.
+- **A STALE ENTRY** names the row and the direction: *"fewer live sites than recorded.  Lower or remove the
+  row."*  Induced by raising a recorded count above the live one.
+- **⚖ THE CEILING, and here is the finding.**  I raised `owed` from 16 to 23 against a ceiling of 22 by
+  flipping seven not-owed verdicts.  The refusal is **one line, with no address at all**:
+
+```
+  ⛔ THE OWED COUNT ROSE: 23 against the declared ceiling 22.
+```
+
+Compare `check_prose_pins`, four paragraphs up, which names **both** prongs inside the refusal.  **So the nine
+ceiling branches are not uniform in what they SAY, only in what they ARE.**
+
+**And it is still not a `WALL`**, which I established rather than argued: the only-falls rule is in this
+instrument's **title line**, in its `⓷`, and in every run's `OWED: n ** may only fall **` printed four lines
+above the refusal; and the remedy is reachable — **one** verdict took `OWED` from 23 to 22 and the gate to exit
+0.  A judgement, not a record.  Grade `ONE STEP FROM A WALL`; the class survives its fourth test.
+
+⇒ **4 of the 9 ceiling branches are now walked, 5 remain a prediction.**  Nothing yet refutes it.
+
+## ⑤ `red_carry` — 2 of its 3, and **the address belongs to another tool**
+
+`red_carry`'s three sites are **operational aborts, not verdict refusals**: they say the instrument could not
+run, never that the tree is bad.  All three are reachable only **BY ENVIRONMENT**, and I induced them in an
+**isolated temp remote** — the live `refs/ci/carry` was never written, and `--remote` never pointed at `origin`.
+
+- **`cannot read refs/ci/carry from <remote>`**, by pointing `--remote` at a path that is not a repository.  It
+  relays git's own words: *"does not appear to be a git repository."*
+- **the generic `git <args>: <stderr>` abort**, by building a bare remote that **has** the ref, on a commit with
+  **no `carry.json`**: `git show <sha>:carry.json: fatal: path 'carry.json' does not exist in '<sha>'`.
+
+**⚠ Both name the failed command and git's reason and no remedy of their own.**  The address is in another
+tool's voice, and in CI it is the runner's to supply, not this seat's — which is a different thing from either
+end of the existing ladder, and is recorded as such rather than forced into `REACHABLE`.
+
+The third (`could not write REF in TRIES tries`) needs **six** rejected pushes.  It is running against a bare
+remote whose `pre-receive` hook rejects every push; the first attempt confirmed the loop turns —
+`red_carry: another job moved the ledger first -- re-reading and re-applying` — but each iteration re-reads the
+`PO-68` history, so six of them outran a 420 s timeout.  Re-running with room.  **Reported as in flight, not as
+walked**, by the rule `.83` set when the `--unshallow` take failed.
+
+## THE COUNT AFTER ④ ⑤ ⑥
+
+| | `.84` | now |
+|---|---|---|
+| **walked** | 22 | **40** |
+| self-referential | 10 | 11 |
+| pending | 49 | **30** |
+| walked | 27.2 % | **49.4 %** |
+| fully accounted | 7 | **13** |
+| `ONE STEP FROM A WALL` cells | 3 | **5** |
+
+`40 + 11 + 30 = 81`.
+
+**Still pending:** `check_tilt_pins` 5 · `check_revision_collisions` 5 · `ROWS.tsv : index` 7 ·
+`check_quote_pins` 12 (last, as ordered) · `red_carry` 1 (in flight).
+
+Every baseline induced in this cycle — `exact_count`, `marker_transposition`, `prose_pin`, `unread_figure`,
+`pin_claims`, and `regen_frontier.py`'s `GROUP` — was restored **byte-exact**; `git status` on `corpus/` and
+`scripts/` is clean.

@@ -1,0 +1,20 @@
+
+  PROSE-PIN RATCHET -- is every pin on a count of matches adjudicated, or at least counted?
+
+    ledger keys unique: 0 duplicate key(s), 0 named as known
+    the instrument reports 161 distinct (receipt, expression) key(s); the baseline carries 162
+    ⌗ the instrument prints one line per SITE; identical expressions in one receipt collapse to one
+      adjudication here, because reading it once settles it
+    by tier: {'PRESENCE': 83, 'PIN': 78}
+    by verdict: {'PRESENCE-CONTROL': 80, 'DELIBERATE': 68, 'NOT-A-COUNT': 13, 'FALSE-POSITIVE': 1}
+    UNADJUDICATED: 0   ** the only bucket that means work, and it may only fall **
+    no new site: the class has not grown.
+
+  ⛔ 1 STALE BASELINE ENTR(Y/IES) -- the expression is no longer reported, so the
+     adjudication describes nothing.  REMOVE the entry:
+    [STALE] receipts/L999_not_a_receipt/Z9_no_such_site.py
+            zz_count == 999999
+     ⌗ A fixed site left in the baseline is a silent permission to regress there (r7069).
+    the ratchet holds: 0 unadjudicated against a ceiling of 0; 162 site(s) read and verdicted
+
+  ⛔ THE PROSE-PIN RATCHET IS RED.

@@ -1,0 +1,4 @@
+
+  PROSE-PIN RATCHET -- is every pin on a count of matches adjudicated, or at least counted?
+
+  ⛔ no baseline at corpus/prose_pin_baseline.tsv -- this gate has no record to ratchet.

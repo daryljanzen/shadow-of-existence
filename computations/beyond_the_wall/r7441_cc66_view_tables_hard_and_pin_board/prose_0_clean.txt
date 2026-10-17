@@ -1,0 +1,16 @@
+
+  PROSE-PIN RATCHET -- is every pin on a count of matches adjudicated, or at least counted?
+
+    ledger keys unique: 0 duplicate key(s), 0 named as known
+    the instrument reports 161 distinct (receipt, expression) key(s); the baseline carries 161
+    ⌗ the instrument prints one line per SITE; identical expressions in one receipt collapse to one
+      adjudication here, because reading it once settles it
+    by tier: {'PRESENCE': 83, 'PIN': 78}
+    by verdict: {'PRESENCE-CONTROL': 80, 'DELIBERATE': 68, 'NOT-A-COUNT': 13}
+    UNADJUDICATED: 0   ** the only bucket that means work, and it may only fall **
+    no new site: the class has not grown.
+    no stale entry: every adjudication still describes a live site.
+    the ratchet holds: 0 unadjudicated against a ceiling of 0; 161 site(s) read and verdicted
+
+  the prose-pin class is fully accounted: no new site, no stale entry, and the backlog
+  standing in the open with its register row rather than hidden as exemptions.

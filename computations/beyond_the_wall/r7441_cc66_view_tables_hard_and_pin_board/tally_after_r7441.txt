@@ -1,5 +1,5 @@
   instrument                            walked  self-ref  one-step   of  running
-  check_prose_pins                          1         0         0    5        5
+  check_prose_pins                          5         0         1    5        5
   check_quote_pins                          1         1         0   14       19
   check_open_references                     3         0         0    3       22
   check_open_item_coherence                 2         0         0    2       24
@@ -9,7 +9,7 @@
   check_paper_pins_present                  1         1         0    2       42
   check_revision_collisions                 0         1         0    6       48
   check_cannot_fail                         4         0         1    4       52
-  check_unread_figure                       0         0         0    4       56
+  check_unread_figure                       4         0         1    4       56
   check_paper_pins_not_comment_only         2         1         0    3       59
   check_figures_pinned                      2         1         0    3       62
   check_pin_board                           1         2         0    3       65
@@ -18,10 +18,10 @@
   ROWS.tsv : class                          --  nothing refuses on this key
   corpus/quote_pin_mint_held.tsv            2         0         0    3   (shared source -- not added)
   check_view_tables : the debt file         2         0         1    2       78
-  red_carry : the carry ledger              0         0         0    3       81
+  red_carry : the carry ledger              2         0         0    3       81
   corpus/frontier_steps_history.tsv         --  nothing refuses on this key
 
   18 distinct sources, 81 refusal sites
-  30 walked, 11 self-referential, 40 pending   (37.0% walked)
-  3 cell(s) carry the ONE STEP FROM A WALL grade
-  fully accounted: 11 -> check_open_references, check_open_item_coherence, check_exact_counts, check_marker_transposition, check_paper_pins_present, check_cannot_fail, check_paper_pins_not_comment_only, check_figures_pinned, check_pin_board, check_pins_adjudicated_on_mint, check_view_tables : the debt file
+  40 walked, 11 self-referential, 30 pending   (49.4% walked)
+  5 cell(s) carry the ONE STEP FROM A WALL grade
+  fully accounted: 13 -> check_prose_pins, check_open_references, check_open_item_coherence, check_exact_counts, check_marker_transposition, check_paper_pins_present, check_cannot_fail, check_unread_figure, check_paper_pins_not_comment_only, check_figures_pinned, check_pin_board, check_pins_adjudicated_on_mint, check_view_tables : the debt file

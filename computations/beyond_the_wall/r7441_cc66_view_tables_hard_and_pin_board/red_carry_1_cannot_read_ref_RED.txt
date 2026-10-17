@@ -1,0 +1,5 @@
+red_carry: cannot read refs/ci/carry from /tmp/claude-0/-home-user-shadow-of-existence/26826c5d-5f18-5adf-9ba6-b04043e78f9b/scratchpad/rc_walk/does-not-exist.git: fatal: '/tmp/claude-0/-home-user-shadow-of-existence/26826c5d-5f18-5adf-9ba6-b04043e78f9b/scratchpad/rc_walk/does-not-exist.git' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.

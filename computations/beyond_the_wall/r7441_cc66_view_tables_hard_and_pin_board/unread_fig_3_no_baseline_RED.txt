@@ -1,0 +1,4 @@
+
+  UNREAD-FIGURE RATCHET -- does any receipt gain a figure it attributes to a paper it never opens?
+
+  ⛔ no baseline at corpus/unread_figure_baseline.tsv -- this gate has no record to ratchet.

@@ -1,0 +1,7 @@
+
+  PROSE-PIN RATCHET -- is every pin on a count of matches adjudicated, or at least counted?
+
+    ledger keys unique: 1 duplicate key(s), 0 named as known
+  ⛔ 1 KEY(S) CARRY MORE THAN ONE ROW -- the ledger counts each once, so a verdict is lost:
+      receipts/L218_reader_package/C2_the_rule_is_enforceable_and_enforceable_means_severe.py  'dna > 0'  -- rows at lines [217] and an earlier one
+    ⇒ merge the rows into one that records both, or name the key in KNOWN_DUPLICATE_KEYS with why.
