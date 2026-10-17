@@ -751,12 +751,6 @@
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39039464015",
     "since": "2d98949aaa38b86bff21e807c6fbf60782860b16"
    }
-  },
-  "tolerance": {
-   "receipts/L257_the_label_did_double_duty/V1_a_strike_that_reads_as_done_and_a_paper_that_says_otherwise.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38845923112",
-    "since": "964fef0a232514f9c486144043405cc608ba90a3"
-   }
   }
  }
 }
