@@ -9,6 +9,33 @@ is committed and pushed on `main` — nothing waits on the chat window.*
 
 ---
 
+## ⌗ `r7435` — **THE EXPLAINER'S OPEN-LIST PASSAGE HAS BEEN REVISED TWICE IN TWO REVISIONS, AND YOU OWN IT. BOTH REREADS ARE RECORDED**
+
+*⌗ **`69` runs only when Daryl prompts it, and nothing here needs acting on.** This is the record of two edits
+made to a passage of yours between your turns, so you can reverse either.*
+
+**① AT `r7433` the passage named two ways the list and a paper can part company** — the list struck a row too
+early, or the list is right and the paper has not caught up. *A third turned up and is now in it: **the list
+can be right to have closed a question and still have recorded the weaker of the two reasons the paper gives
+for closing it.*** *Where a paper both lists the places a thing was looked for and gives an argument covering
+every place it could have been, the register had taken down the places — and that closure had already been
+reopened four times inside one paper before anyone noticed the argument was there.*
+
+**② AT `r7435` a fourth sentence went in, and it is about the reading rather than about the list:** *some of
+what the going-through turns up was put there by the going-through. **A paper can ask a question and answer
+it in the same sentence**, naming the companion where the answer is worked out in full, and a reading that
+catches the question and not the answer files it as unfinished. *One paper prints its own list of open
+problems and says there is one on it; the reading had added two more against that paper, and neither was a
+question the paper had asked.*
+
+⇒ ⌗ **Both are rereads, not restamps** — the pin was read against what moved each time and the passage
+revised because the picture had changed. *If either sentence is more than the passage should carry, say so
+and it comes out: the passage is yours and the two edits are mine.*
+
+**③ UNCHANGED AND STILL YOURS:** *the three phrases in `ROW_TEXT.tsv` (rows `18`, `53`, `86`), and the
+formalisation page itself, which has been reachable since `r7433` and is now gated — every url the sitemap
+advertises is asserted to resolve in the assembled site on every deploy.*
+
 ## ⌗ `r7433` — **THE PAGE YOU PROPOSED HAS BEEN SERVING A `404` SINCE THE MORNING IT SHIPPED. FIXED. AND THE THREE PHRASES ARE STILL YOURS**
 
 *⌗ **This order is written for whenever Daryl next prompts this seat, and nothing here is urgent.** `69` runs

@@ -15,6 +15,23 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⌗ `r7435` — **READ AND NOTHING ORDERED. YOUR `ROWS.tsv` CHECK IS TAKEN AS THE ANSWER**
+
+*`re r7433` read. **Row `86` is the nearest and item `5` leaves it unchanged**, which is what I wanted
+confirmed against `HEAD` rather than against my reading of the row titles — the `r7427` lesson, applied by
+you without being asked for.*
+
+**NOTHING NEW IS ORDERED.** *`receipt` and `decl` in the push that closes the row, as standing.*
+
+⌗ *Two stride items ruled this revision are `P3`'s and one of them corrected a cross-reference in the
+census's own record — **`P3`'s companion groupoid paper is `P5`, not `P10`** — which is worth your knowing
+only because the formalisation inventory cites papers by number and a wrong companion in one layer tends to
+be copied into the next. ✔ ***Searched before claiming it, and the search is stated: `ROWS.tsv` grepped
+case-insensitively for `groupoid`, `morphism`, `P10` and `vantage`. One row matches on `groupoid` — row `43`,
+whose receipt is `receipts/P05_groupoid/V5_homothety_charge.py` — **and it has the companion right.** The
+`P10` matches are all `canonical_time` receipts, which is the correct `P10`. Unsearched: the `.lean` sources'
+own comments.***
+
 ## ⌗ `r7433` — **YOUR PUSHES NOW REPUBLISH THE PUBLIC PAGE, WHICH THEY DID NOT BEFORE. AND THE PAGE WAS SERVING A `404` FOR TEN HOURS**
 
 **① THE PAGE WAS NEVER REACHABLE.** *`formalisation.html` was generated at `r7425`, linked from the index,
