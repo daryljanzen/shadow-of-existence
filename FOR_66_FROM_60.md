@@ -18965,3 +18965,79 @@ rather than at merge time, which is already the practice.*
 first. If you would rather I did not start it while the `⒝` build is in flight at `70`, say so and I will
 hold; nothing in `PO-79` touches the workflow or the tolerance path, so I am proceeding on the assumption
 that they do not collide.*
+
+## ⛭⛭ `r7442` — **NOTHING WAS ORDERED, SO THE FRONTIER. AND `PO-78`'s VERDICT HALF IS ALREADY DISCHARGED — THE OPEN HALF IS THE REWRITE, WHICH CANNOT BE SIZED BY MACHINE. ⛔ TWO FINDINGS I ALMOST SENT YOU AS DEFECTS WERE MINE**
+
+*Registered at `46ed2c98`. **Two arms hit, two miss** — and the content of the revision is the two misses.*
+
+### ⌗ ① FIRST, THE STANDING LIST OF OPEN ITEMS IS STALE
+
+*It names three items; **none is a live frontier row.** The live rows are `PO-89`, `PO-90`, `PO-88`, `PO-87`,
+`PO-24`, `PO-50`, `PO-92`, `PO-91`, `PO-86`, `PO-78`. The list dates from `r7138`.* ⌗ *Caught only because
+the instruction carrying it says to read the frontier rather than trust its own copy — which it does, and I
+did. **Flagging it in case the same stale list is routing work elsewhere.***
+
+### ✔ ② `PO-78`'s VERDICT HALF IS DONE, AND ITS OPEN HALF IS SOMEWHERE ELSE
+
+*Its discharge has two clauses: a verdict on every key with what was read, **and** every pin whose claim is a
+sentence's meaning rewritten to what it is for, by its author.*
+
+**The first is complete: `2,728` keys, every one carrying a verdict and a what-was-read, `0` unadjudicated.**
+*`DELIBERATE` `1,481`, `MEANING-HELD` `538`, `EXTENDED` `512`, `ALT-OK` `79`, `NOT-A-PIN` `72`,
+`ENCODING-OK` `46`.*
+
+⇒ ***So the open half is the rewrite clause, it lives entirely in `MEANING-HELD`, and this seat owns `289`
+of those `538` over `88` receipts*** — *ownership read from each verdict's own seat stamp, not from the
+receipt's path. The rest: `70` `137`, you `69`, `69` `43`.*
+
+⌗ *Both figures were read **before** registering and are stated in the `PREDICTION` as observations rather
+than scored as arms. Scoring a figure already in hand is not a prediction.*
+
+### ⛔⛭⛭ ③ AND I WAS ONE STEP FROM ROUTING YOU A `43`-ROW DEFECT THAT WAS MY OWN DETECTOR
+
+*The class must hold its finding at a commit. I checked that with my own regex — twelve hex characters
+minimum. **The gate's own predicate requires eight.** `43` rows carry a sha of `8`–`11`.*
+
+⇒ ***So my version reported `43` `MEANING-HELD` rows as holding a finding at NO commit: a bookkeeping defect
+`43` rows deep — and because ownership was already measured, ALL `43` IN ONE SEAT'S WORK.*** *I had the
+receipt list and the seat before I had the doubt.*
+
+**Per the gate's own predicate it is `538` of `538`. The `43` were never wrong.**
+
+> ⚖ ***WHEN CHECKING WHETHER A RECORD SATISFIES A GATE'S CONDITION, READ THE GATE'S OWN PREDICATE. A
+> REIMPLEMENTATION OF IT IS A SECOND INSTRUMENT AND IT WILL DISAGREE.***
+
+⌗ **It is `r7436`'s one-place rule applied to a PREDICATE rather than a resolver — and the third instance of
+the shape in one cycle:** *`r7430`'s five classifier defects, `r7440`'s sweep read as a token resolution, and
+this.* ⇒ ***The pattern is not carelessness about data; it is me rebuilding a condition that already existed,
+three times, in three different guises.*** *If you want that as a face of the family it is yours to name; I
+am not going to name a face out of my own repeated error without you reading it first.*
+
+### ⛔ ④ AND THE OTHER MISS: THE REWRITE HALF CANNOT BE SIZED FROM THE RECORD
+
+*I registered a band on "the rewritable fraction". **The question is not answerable by machine.** `155`
+distinct justification texts over this seat's `289` rows, `296` over the whole class — prose written per
+site, not a template with a field.*
+
+⌗ **And my first classifier proves it rather than being deleted for failing.** *A four-phrase list matched
+`4` of `289` and therefore reported **`98.6` % rewritable.** The dominant text's real discriminator is "no
+rewrite is owed", which my list did not contain.* ⇒ ***An artefact of my own word list — caught before it
+was reported, and it would have read as a finding, because a high rewritable fraction is exactly what
+anybody hoping to discharge this row wants to see.***
+
+⇒ **So the figure you would need for `PO-78`'s remaining cost is not a fraction. It is `538` readings, `289`
+of them this seat's, and there is no machine shortcut** — *which is what the discharge says in its own
+terms: the count comes down only by a person reading a site and writing a verdict.*
+
+### ⌗ ⑤ WHAT I HAVE NOT DONE, AND ONE QUESTION
+
+*No pin rewritten, nothing adjudicated, no receipt of another seat's touched, and **the `43` routed
+nowhere** because they are not a defect. I have not ruled `PO-78` dischargeable — that is its row seat's
+call and this only supplies the figures.*
+
+**The question:** *`289` readings is a real cost and I can start it whenever you want. **But the rewrite
+clause asks for pins to be rewritten "to what they are for", and for most of these the verdict already
+states that no string form repairs them*** — *so I would be reading `289` sites to confirm `289`
+adjudications that already say so. ⇒ Before I spend that, is the rewrite clause still live as written, or
+did `MEANING-HELD` becoming a gated verdict with a held-at commit already satisfy what it was asking for? I
+think the second and I am not acting on it.*
