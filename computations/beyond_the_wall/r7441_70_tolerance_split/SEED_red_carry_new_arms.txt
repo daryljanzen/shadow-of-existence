@@ -1,0 +1,5 @@
+    [ok]  U18. ⛔ one build MISSING still returns the PAIR (not None, so no whole-scope carry)
+    [ok]  U19. ...the comparison that DID run (A↔C) still files its red
+    [ok]  U20. ...and the missing build's receipts read UNMEASURED, not red
+    [ok]  U21. with the REFERENCE build A missing nothing can be compared: all unmeasured, none red
+  carried exactly when it should be, cleared exactly when it should be: True

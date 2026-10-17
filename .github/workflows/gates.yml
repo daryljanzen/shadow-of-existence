@@ -561,24 +561,32 @@ jobs:
           rc=0; python3 scripts/rerun_guard.py || rc=$?; [ "$rc" = 10 ] && exit 0   # r7433: a stale re-run declines, visibly
           python3 scripts/red_carry.py --record reads --list "$RUNNER_TEMP/scope.txt" --outcome "${{ steps.run.outcome }}" --trace "$RUNNER_TEMP/trace"
 
-  scope-tolerance:
-    name: scoped — the tolerance perturbation, on code and data this push changed
+  # ⛭ r7441 ②-③ (66, adopting 60's ⒝), built r7441+70: ** THE THREE PROBES ARE THREE JOBS. **  One 120-minute job
+  #   ran them in sequence; 60 isolated a clean 125-minute cancellation (r7441 ①) -- head unmoved, nothing
+  #   superseding -- and since r7432 a cancelled run files `never probed`, so running out of time was QUIET and
+  #   unmeasured the whole scope as one block.  "A budget raise is the number moving; a split is the
+  #   measurement becoming addressable."  Now: one job picks the scope (`tol-scope`), one job per build probes
+  #   it (`tol-probe`), and the compare job (`scope-tolerance`, the old id and the old check name) runs ALWAYS,
+  #   says by name which build was measured, runs each comparison whose two builds arrived, and records.
+  #   ** A split that fails closed is a budget raise with extra steps ** -- hence `always()` on the compare job
+  #   and on every probe job's upload, and `red_carry` reading a missing build as unmeasured, not as all red.
+  tol-scope:
+    name: scoped — the tolerance perturbation, the scope this push can have moved
     if: github.event_name == 'push'      # r7401+70.2 (r7397 ①): off `pull_request`; see the note at `concurrency:`
-    permissions: { contents: write }   # PO-65: the record step pushes refs/ci/carry, and nothing else
     runs-on: ubuntu-latest
-    # ⌗ COST, measured as above: 5 receipts at the median, 40 at p90, 232 at most; 674 s at the
-    #   mean, 1,539 s at p90; 87 of 400 pushes had nothing in scope.  Three probes of the same receipts
-    #   (the runner's one thread; four threads; the Prescott kernel at two), so a scope costs three
-    #   times its receipts' time.  Worst case measured: 5,937 s x 3, about 75 minutes at four jobs, hence 120.
-    #   Scope: a receipt that changed, or code or data it reads, imports or names -- never prose.
-    #   ⚠ The ENVIRONMENT is not in any diff: that half of the class is `check_env_fingerprint` in the
-    #   fast job and the whole sweep in `backstop`.
-    timeout-minutes: 120
+    timeout-minutes: 15
+    outputs:
+      n: ${{ steps.scope.outputs.n }}
     steps:
       - uses: actions/checkout@v4
         with: { fetch-depth: 0 }
       - uses: actions/setup-python@v5
         with: { python-version: '3.11.16' }   # pinned with requirements-ci.txt and ENV_FINGERPRINT.txt (PO-64)
+      # ⌗ COST, measured as above: 5 receipts at the median, 40 at p90, 232 at most; 674 s at the
+      #   mean, 1,539 s at p90; 87 of 400 pushes had nothing in scope.
+      #   Scope: a receipt that changed, or code or data it reads, imports or names -- never prose.
+      #   ⚠ The ENVIRONMENT is not in any diff: that half of the class is `check_env_fingerprint` in the
+      #   fast job and the whole sweep in `backstop`.
       - name: scope — which receipts this range's code and data can have moved
         id: scope
         shell: bash
@@ -590,39 +598,101 @@ jobs:
       - name: nothing in scope — nothing runs
         if: steps.scope.outputs.n == '0'
         run: echo "0 receipts in the tolerance scope of this range -- nothing to run, and nothing was."
+      - uses: actions/upload-artifact@v4
+        continue-on-error: true            # an empty scope may upload nothing; the record step reads a missing list as empty
+        with: { name: tol-scope, path: '${{ runner.temp }}/scope.txt', overwrite: true, retention-days: 3 }
+
+  tol-probe:
+    name: scoped — tolerance probe, build ${{ matrix.id }} (${{ matrix.label }})
+    needs: tol-scope
+    if: needs.tol-scope.outputs.n != '0'
+    runs-on: ubuntu-latest
+    # ⌗ BUDGET, per build (r7441+70, 66's to change): 60 min for the probe itself, 1.5x a build's third of the old
+    #   single job's 120 -- the three now run side by side, so the push waits on the slowest build, not on the sum.
+    #   `timeout` ends the probe at its budget and says so in STATUS (rc 124); the job limit above it leaves room
+    #   for checkout, install and the upload, so the upload still runs when the probe runs out of time.
+    timeout-minutes: ${{ matrix.job_minutes }}
+    strategy:
+      fail-fast: false        # a build that fails must not cancel its siblings: that is the whole point
+      matrix:
+        include:
+          - { id: A, label: "the runner's one thread", args: '', budget: 60, job_minutes: 75 }
+          - { id: B, label: 'four threads', args: '--threads 4', budget: 60, job_minutes: 75 }
+          - { id: C, label: 'Prescott at two threads', args: '--threads 2 --coretype Prescott', budget: 60, job_minutes: 75 }
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11.16' }   # pinned with requirements-ci.txt and ENV_FINGERPRINT.txt (PO-64)
+      - uses: actions/download-artifact@v4
+        with: { name: tol-scope, path: '${{ runner.temp }}' }
       # ⌗ three attempts: at r6977+70.1 one run's index answered "camb (from versions: none)" while the
       #   PR run of the same commit installed it in 19 s.  A package that is really gone fails all three.
-      - if: steps.scope.outputs.n != '0'
+      - id: install
         shell: bash
         run: for i in 1 2 3; do pip install -r requirements-ci.txt pynucastro && exit 0; sleep 30; done; exit 1
-      - name: probe on three builds, compare each with the runner's
+      - name: probe build ${{ matrix.id }} — every receipt in scope, as the runner runs it
+        id: probe
+        shell: bash
+        run: |
+          D="$RUNNER_TEMP/t${{ matrix.id }}"; mkdir -p "$D"
+          rc=0
+          timeout -k 60s ${{ matrix.budget }}m python3 scripts/sweep_tolerances.py --probe "$D" --from "$RUNNER_TEMP/scope.txt" ${{ matrix.args }} || rc=$?
+          echo "rc=$rc budget=${{ matrix.budget }}m" > "$D/STATUS"
+          if [ "$rc" = 124 ] || [ "$rc" = 137 ]; then
+            echo "  ⛔ build ${{ matrix.id }} ran out of its ${{ matrix.budget }}-minute budget: the receipts it did not reach are UNMEASURED, and the compare job will say so"
+          fi
+          exit $rc
+      - name: STATUS, whatever happened above
+        if: always()
+        shell: bash
+        run: |
+          D="$RUNNER_TEMP/t${{ matrix.id }}"; mkdir -p "$D"
+          [ -f "$D/STATUS" ] || echo "rc=none probe=${{ steps.probe.outcome }} install=${{ steps.install.outcome }}" > "$D/STATUS"
+          cat "$D/STATUS"; echo "  $(ls "$D" | grep -c '\.json$') probe log(s)"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with: { name: 'tol-probe-${{ matrix.id }}', path: '${{ runner.temp }}/t${{ matrix.id }}', overwrite: true, retention-days: 3 }
+
+  scope-tolerance:
+    name: scoped — the tolerance perturbation, on code and data this push changed
+    needs: [tol-scope, tol-probe]
+    # ⛔ `always()`: this job must run when a probe job was cancelled or timed out -- it is the job that says which.
+    if: always() && needs.tol-scope.result == 'success'
+    permissions: { contents: write }   # PO-65: the record step pushes refs/ci/carry, and nothing else
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11.16' }   # pinned with requirements-ci.txt and ENV_FINGERPRINT.txt (PO-64)
+      - uses: actions/download-artifact@v4
+        continue-on-error: true            # nothing in scope may mean nothing uploaded (see `tol-scope`)
+        with: { name: tol-scope, path: '${{ runner.temp }}' }
+      - name: what the three builds delivered
+        if: needs.tol-scope.outputs.n != '0'
+        uses: actions/download-artifact@v4
+        continue-on-error: true            # a build that delivered nothing is NAMED below, not a crash here
+        with: { pattern: 'tol-probe-*', path: '${{ runner.temp }}/probes' }
+      - name: compare each build with the runner's, and name every build that was not measured
         id: run
-        if: steps.scope.outputs.n != '0'
+        if: needs.tol-scope.outputs.n != '0'
         shell: bash
         # ⌗ A site judged FALSE is passed only while its receipt's blob is the one it was judged on
-        #   (receipts/TOLERANCE_JUDGED.json); a FLIP is never passed.  Both comparisons always run.
+        #   (receipts/TOLERANCE_JUDGED.json); a FLIP is never passed.  Each comparison runs when its two builds
+        #   arrived.  PO-67 ⓵: the findings are OR-ed bit by bit -- 1 = a site flagged, 2 = a receipt unmeasured,
+        #   3 = both -- and a build that is not MEASURED sets 2 and is named on the VERDICT line.
         run: |
-          L="$RUNNER_TEMP/scope.txt"; T="$RUNNER_TEMP"
-          python3 scripts/sweep_tolerances.py --probe "$T/tA" --from "$L"
-          python3 scripts/sweep_tolerances.py --probe "$T/tB" --from "$L" --threads 4
-          python3 scripts/sweep_tolerances.py --probe "$T/tC" --from "$L" --threads 2 --coretype Prescott
-          # ⌗ PO-67 ⓵: the two comparisons' findings are OR-ed bit by bit, not collapsed to 1 --
-          #   1 = a site flagged, 2 = a receipt unmeasured, 3 = both; the line below says which.
-          rc=0
-          python3 scripts/sweep_tolerances.py --compare "$T/tA" "$T/tB" || rc=$(( rc | $? ))
-          python3 scripts/sweep_tolerances.py --compare "$T/tA" "$T/tC" || rc=$(( rc | $? ))
-          case $rc in
-            0) echo "  VERDICT (both comparisons): CLEAN" ;;
-            1) echo "  VERDICT (both comparisons): FLAGGED -- every receipt was measured" ;;
-            2) echo "  VERDICT (both comparisons): NOT A SWEEP -- nothing flagged, a receipt unmeasured" ;;
-            *) echo "  VERDICT (both comparisons): FLAGGED AND NOT A SWEEP" ;;
-          esac
-          exit $rc
+          T="$RUNNER_TEMP"
+          for b in A B C; do [ -d "$T/probes/tol-probe-$b" ] && mv "$T/probes/tol-probe-$b" "$T/t$b"; done
+          echo "  probe jobs: ${{ needs.tol-probe.result }}"
+          python3 scripts/tolerance_builds.py --scope "$T/scope.txt" --dirs "$T/tA" "$T/tB" "$T/tC"
 
       # ⛭ PO-65: whatever happened above, write it down.  A receipt this run covered and passed leaves
       #   the carry; a red one joins it; a failure that names nothing carries the whole scope.
       - name: record — carry this push's reds forward, clear what it ran green
-        if: always() && steps.scope.outcome == 'success'
+        if: always()   # r7432: a cancelled probe still files -- as never probed, not as red
         shell: bash
         env:
           GH_TOKEN: ${{ github.token }}   # r7433: rerun_guard reads the branch tip on a re-run
