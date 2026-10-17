@@ -1,0 +1,4 @@
+  check_revision_collisions: NODE is unset, so which half to check is unknown.
+  Set NODE to a declared line (54, 56, 57, 59, 60, cc54) or to 'ci'.
+  Defaulting would certify the band this tree is NOT on -- which is how 21
+  collisions were passed between r3606 and r3678.

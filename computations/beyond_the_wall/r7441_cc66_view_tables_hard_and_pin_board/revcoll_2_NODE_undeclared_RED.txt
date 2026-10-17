@@ -1,0 +1,4 @@
+  check_revision_collisions: NODE='zz_not_a_line' is not a declared line.
+  Add it to _PARITY_BY_NODE with the half it takes.  A node whose band is unknown
+  must not be given one by default -- that is how the runner spent this session
+  checking the even half of whichever branch it happened to be on.

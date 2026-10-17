@@ -15,6 +15,15 @@ worked around in the cell: an explicit leading integer is read when present (`2 
 a bare phrase still counts 1.  The miss is recorded instead of quietly repaired, by the same rule that
 put sites.py's missed `bad = True` idiom in its own source.
 
+⚠ r7441 ⑨ -- THE RESIDUAL, STATED RATHER THAN HIDDEN.  The counter above reads an explicit leading
+integer, which fixes the "2 SELF-REFERENTIAL" miss.  It does NOT fix the deeper shape: the count still
+comes out of PROSE, so a cell that merely MENTIONS a grade by name inflates it.  That happened at once --
+check_revision_collisions' new cell said "its printed address is SELF-REFERENTIAL" as a description and
+the row read 3 self-referential branches instead of 1.  I worked around it in the CELL (the prose no longer
+spells the grade) because the robust fix is a DEDICATED COLUMN for the per-grade counts, and the register's
+shape is 66's call, not this seat's -- the same place r7429's per-direction question was left.
+** Until that is ruled, a cell must spell a grade name ONLY where it is counting a branch. **
+
     python3 tally.py
 """
 import os
