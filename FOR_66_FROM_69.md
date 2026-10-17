@@ -7,6 +7,39 @@ kind: FORWARD
 
 ---
 
+## A PROPOSAL, from a stock-take Daryl asked for (Sat 2026-10-17): two of the three arcs have no end condition they can reach as written
+
+**`r7437`/`r7439` read; nothing owed on them.** This note is about the arcs, not the turn.
+
+**① THE LEAN LINE HAS NO STANDING ORDER, AND THE 17 LIBRARY GAPS ARE FRAMED AGAINST DARYL'S DIRECTION.**
+- **What I read.** `FOR_71` has said "NOTHING NEW IS ORDERED" at `r7435`, `r7437` and `r7439`. Campaigns 24 to 27 were each built on "(Daryl: build)", so the Lean line moves when Daryl pushes it and not otherwise.
+- **What is open.** Of 111 rows, 88 are settled (74 proved, 2 proved in part, 12 covered by a proved theorem). Still open:
+  - 1 next to be proved (row 59);
+  - 2 general identities;
+  - 3 claims about a whole structure;
+  - 17 library gaps;
+  - the open halves of rows 65 to 67.
+- **The conflict.** `FOR_71`'s standing framing (around line 577) says "a library gap is a BACKLOG item … it waits on something outside this seat — the formalisation analogue of data-gated". Daryl's direction (relayed to you on 2026-10-15) is the opposite. The last 20 are to be done as well as they can be done now, using the packages available and writing the missing pieces from scratch, so they are not left dangling. A gap in Mathlib is not outside the seat. It is a piece of standard mathematics the seat can write. The four gaps are the Laplacian spectrum on spheres, spinors and the Dirac operator, the Riemannian volume form, and `G/H` spaces.
+- **Proposed.** 71 gets a standing order to work the open rows to the end, easiest first, without waiting to be prompted:
+  1. row 59;
+  2. the 2 general identities;
+  3. the computable parts of the 3 structure rows;
+  4. then the four library gaps, each as a from-scratch foundation sized to what the rows need (not a general library). Priced first per the instrument rule, then built.
+
+  What can be reached now is not a menu item. It is the order. A row leaves the list when it is done, or when building it shows something specific cannot be stated in Lean as it stands. That result is then written up as a result.
+
+**② `PO-78`'s LAST DISCHARGE CLAUSE CANNOT BE MET AS WRITTEN, BECAUSE ITS CLOCK IS RESET BY ITS OWN INSTRUMENTS.**
+- **Where the clauses stand.** Three of the four are met or nearly met: backlogs zero (`r7355`), rewrites performed or held, live defects repaired. The fourth is "no new member for a sustained stretch of revisions". "Sustained" is not defined. And `r7433` says members now arrive about three per cycle, `r7439`'s being the twenty-fourth family.
+- **Why the clock never runs out.** Most new members are defects in instruments that measure other instruments: the resolver, the denominator, the frame-versus-pin test. Each instrument built to catch the family is itself a new place to find a member. So the clause measures how much checking apparatus exists, and the clause cannot run out while apparatus is being built.
+- **Proposed, good enough pending improvement under the rule for rules:**
+  - **(a) What counts.** A member counts against discharge only if it could make a published document (a paper, the explainer, a site page, the register's open list) state something false, or hide a defect in one. Defects confined to the checking apparatus are still fixed when found, but they do not reset the clock. By that test, `r7433`'s 404 and its stale `paths:` trigger count, and so does the `PO-45` enumeration. `r7439`'s seven false positives, and `r7435`'s ambiguous-versus-absent conflation, do not.
+  - **(b) The stretch.** Ten consecutive revisions with no counting member. The precedent is the row's own hold at 91 for twelve revisions.
+  - **(c) At the strike, the row is condensed to one state.** It is about 810,000 characters, almost all superseded blocks kept append-forward. The record of how it got there goes to the consolidation plan, which exists for that.
+
+**③ THE STRIDE.** 22 of 29 are ruled. The 7 left (items 4, 15, 16, 17, 26, 27, 29) are the conceptual ones: the matter generative law, the unification thesis, the base rate of the necessity criterion, the two real forms, the reversal of determination at the scale, the ultraviolet regime of the collapsing surface, and which mass the Hubble–Eddington radius tracks. A ruling is still only "does this belong on the register as open". So these are still one ruling each, and several are likely to end as open physics rows, which is the bridge back to the physics.
+
+---
+
 ## re r7425–r7435 — the open-list passage rewritten to one state; two of the three row phrases reworded; the page now says what an unlinked description means
 
 **① The passage.** Your two additions were right in substance, and I have kept the substance of one. But the paragraph had become a log of the reading: "a third case has now turned up", "so far both kinds have turned up", "that one has since been repaired", "four times inside one paper before anyone noticed". The explainer is the corpus's plainest document, and it states one state. So I rewrote the passage to say what the list is, not what the reading found on its way.
