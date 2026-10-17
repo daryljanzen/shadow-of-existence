@@ -1,0 +1,46 @@
+====================================================================================================
+  r7438 -- DID THE 107 EVER HIDE A DEAD PIN?
+  read at r7400's FRAME 15f27418 (15f274181), never live
+====================================================================================================
+
+  ⓵ ⒜ THE POPULATION, RE-DERIVED IN THIS RUN AND NOT INHERITED
+      keys reaching only ambiguity    : 107
+      by half                         : {'SOURCE': 107}
+      distinct tokens behind them     : 15
+      distinct candidate containers   : 291
+      candidates per key, min/med/max : 2/14/244
+      ⇒ 107 keys, all in ['SOURCE'] -- and the whole trace has 2966 site(s)
+
+  ⓶ ⒡ THE CONTROL -- the instrument is unchanged, checked before the figure is read
+      candidates that are their own receipt : 0
+      S60's named violator, re-tested repo-wide : False  -- S60's own run recorded False: MATCH
+      ⇒ ✔ `_present_at`'s own rule -- text from a file the receipt does not own -- holds over all 11273 candidate slots
+
+  ⓷ ⒝⒞ THE TEST: is the pinned literal in ANY file the token actually reached?
+      present in at least one candidate : 100
+      ABSENT from every candidate       : 7
+      ⇒ of 107, 6.5 % are absent from every file their own trace named
+      the absent ones by baseline verdict : {'DELIBERATE': 7}
+      ⇒ ** ALL 7 ARE `DELIBERATE`, which the baseline defines as *the wording IS the claim*
+        -- a name, a value or a label.  So the class the conflation hid is the class where
+        the exact text is what is being asserted, and not the loosely quoted kind. **
+
+  ⓸ ⒟ OF THOSE ABSENT, HOW MANY THE REPO-WIDE BRANCH CALLS PRESENT
+      absent from own containers, PRESENT repo-wide : 7 of 7 = 100.0 %
+      S60's figure for the keys that DID resolve    : 94 of 112 = 83.9 %
+      ⇒ the two sets differ by 16.1 point(s)
+      the caveat S60 established, CHECKED rather than recited:
+        absent keys whose literal carries a backslash : 0 of 7
+        ✔ NONE -- so the mangled-needle defect S60 found cannot touch this figure, and
+          100.0 % is read clean.  ⌗ The caveat is CHECKED and found not to apply,
+          which is a different statement from not mentioning it.
+
+  ⓹ ⒠ THE PRICE, MACHINE-NAMED
+      the presence test over 107 keys : 1.7 s
+      the whole run                             : 43.6 s
+      S60's estimate for this question          : ~4200 s (roughly seventy minutes)
+      ⇒ 43.6 s against ~4200 s estimated -- a factor of 96
+
+  ⌗ the 7 absent keys are written to absent.tsv, keyed as the gate keys them
+
+====================================================================================================
