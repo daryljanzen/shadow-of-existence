@@ -14,7 +14,7 @@
   check_figures_pinned                      2         1         0    3       62
   check_pin_board                           1         2         0    3       65
   check_pins_adjudicated_on_mint            2         1         0    3       68
-  ROWS.tsv : index                          0         1         0    8       76
+  ROWS.tsv : index                          7         1         0    8       76
   ROWS.tsv : class                          --  nothing refuses on this key
   corpus/quote_pin_mint_held.tsv            2         0         0    3   (shared source -- not added)
   check_view_tables : the debt file         2         0         1    2       78
@@ -22,6 +22,6 @@
   corpus/frontier_steps_history.tsv         --  nothing refuses on this key
 
   18 distinct sources, 81 refusal sites
-  51 walked, 11 self-referential, 19 pending   (63.0% walked)
+  58 walked, 11 self-referential, 12 pending   (71.6% walked)
   6 cell(s) carry the ONE STEP FROM A WALL grade
-  fully accounted: 16 -> check_prose_pins, check_open_references, check_open_item_coherence, check_exact_counts, check_marker_transposition, check_tilt_pins, check_paper_pins_present, check_revision_collisions, check_cannot_fail, check_unread_figure, check_paper_pins_not_comment_only, check_figures_pinned, check_pin_board, check_pins_adjudicated_on_mint, check_view_tables : the debt file, red_carry : the carry ledger
+  fully accounted: 17 -> check_prose_pins, check_open_references, check_open_item_coherence, check_exact_counts, check_marker_transposition, check_tilt_pins, check_paper_pins_present, check_revision_collisions, check_cannot_fail, check_unread_figure, check_paper_pins_not_comment_only, check_figures_pinned, check_pin_board, check_pins_adjudicated_on_mint, ROWS.tsv : index, check_view_tables : the debt file, red_carry : the carry ledger

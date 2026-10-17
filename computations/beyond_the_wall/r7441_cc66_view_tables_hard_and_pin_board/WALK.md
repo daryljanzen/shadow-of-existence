@@ -491,3 +491,48 @@ either.**  The prevention is live only for a seat that both holds a declared hal
 `51 + 11 + 19 = 81`.
 
 **Left:** `ROWS.tsv : index` 7 (60's join gate) · `check_quote_pins` 12 — **last, as ordered**.
+
+---
+
+# r7441 ⑪ — `ROWS.tsv : index` (60's JOIN GATE) CLOSED: `7 of 8`, WITHOUT EDITING ONE LINE OF ANOTHER SEAT'S INSTRUMENT
+
+All seven were reachable **by data or environment**.  The gate runs in 4 s, so the whole section cost less than
+one tilt invocation.
+
+- **The inventory unreadable** — `ROWS.tsv` moved aside: *"the inventory is not readable at … so the join
+  cannot be checked."*  It names the path and what the loss costs.
+- **No `.lean` file at all** — and the first attempt taught me the gate's scope: its `TREE` is the **whole
+  formalisation root**, so moving `lean/` alone leaves 4 files under `lean-physlib/` and fires the *join*
+  instead.  With both trees aside: *"a gate over `decl` cells with no tree to read would pass vacuously, so it
+  fails instead."*
+- **No declarations in any file** — one `.lean` file carrying only a comment: *"so this gate cannot see its own
+  subject, and it says so rather than reporting a clean join (`r7419` ③, `cc66`'s shape: an instrument given
+  less state than its question needs will still answer)."*  **That is this seat's own finding, quoted back by
+  another seat's gate** — which is the first time this walk has read its own work inside the thing it was
+  measuring.
+- **⛭ A FILE THAT CANNOT BE READ — and the induction is itself a measurement.**  `chmod 000` **does not work
+  here, because the runner is root**: permissions cannot make a file unreadable to uid 0, and the gate stayed
+  green.  It took a **dangling symlink** to raise the `OSError` the reader catches
+  (`except OSError: return None`).  ⚠ Worth recording past this cell: the unreadable-file case is one the
+  gate's own notes say an in-run seed cannot cover, and **where the runner is root it is also the hardest to
+  induce from outside** — the obvious lever is simply inert.
+- **No workflow scope** — both `formalisation-*.yml` moved aside: *"no `formalisation-*` workflow declares any
+  path, so 'under a green workflow' cannot be decided and no row could be cleared on it."*
+- **The join family (`⓵`)** — one `decl` cell re-pointed at a name its own file does not declare:
+  `⓵ DANGLING REFERENCE -- row 0 claims 'ShadowProbe.r7441_walk_no_such_decl_frw_scal_weyl_k' in
+  …/FRWk.lean, which declares 32 …`
+- **The charge relay (`⓶ᵇ`)** — induced **additively**, so nothing tracked was touched: an **untracked third**
+  `formalisation-*` workflow declaring a scope, with no record for it →
+  `⓶ᵇ UNANSWERABLE, WHICH IS NOT A PASS -- whether 'formalisation-r7441walk' passed on this tree cannot be
+  evaluated here`.  **And this one's remedy IS named**: *"written to `refs/ci/lean/<stem>`."*
+
+**The proof the walk left nothing behind:** the gate's post-walk run is **identical, line for line**, to its
+pre-walk run (`join_0_clean.txt` vs `join_8_restored_GREEN.txt`, `diff` empty) — 268 pairs over 111 of 111
+claiming rows.
+
+## THE COUNT AFTER ⑪
+
+**58 walked, 11 self-referential, 12 pending of 81 — 71.6 %.  17 instruments fully accounted.**
+`58 + 11 + 12 = 81`.
+
+**`check_quote_pins` is the only instrument left**, with its 12 — which is where `r7439` ⑤ said to end.

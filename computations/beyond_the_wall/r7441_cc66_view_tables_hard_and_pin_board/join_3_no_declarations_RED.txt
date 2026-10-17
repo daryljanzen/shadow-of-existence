@@ -1,0 +1,584 @@
+====================================================================================================
+  FORMALISATION JOIN -- is every pair a `decl` cell claims still declared in the file that
+  pair names, is that file under a workflow whose record says GREEN, and is every `receipt`
+  path still there?
+====================================================================================================
+
+  ⓪ THE POSITIVE CONTROL -- can this gate see declarations at all?
+      `.lean` files found: 1
+      distinct identifiers the control reader extracts: 0
+    [FAIL] ⓪ ⛔ THE CONTROL READER FOUND NO DECLARATIONS IN ANY OF THE 1 FILES -- so this gate cannot see its own subject, and it says so rather than reporting a clean join (`r7419` ③, `cc66`'s shape: an instrument given less state than its question needs will still answer)
+
+  ⓪ᵇ THE IN-RUN SEEDS -- this run proving, on the real row path, that it could have fired
+    ✔ ⑴ a well-formed pair pointing at the WRONG FILE fires as a dangling reference
+        ⓵ DANGLING REFERENCE -- row SEED claims `Seeded.seeded_other` in computations/formalisation/lean/_InRunSeed/Right.lean, which declares 2 identifier(s)
+    ✔ ⑵ ...and a CORRECTLY PAIRED MULTI-GROUP cell is silent, so the seed is not rigged to fire
+        no failure, as required
+    ✔ ⑶ a GREEN record clears the workflow condition
+        no ⓶ᵇ charge, as required
+    ✔ ⑷ a NOT-GREEN record FAILS it
+        ⓶ᵇ NOT-GREEN -- `formalisation-inrunseed`'s record says it did NOT pass on this tree, and 2 claimed `.lean` file(s) sit under it: 
+    ✔ ⑸ an UNANSWERABLE record FAILS it, and does not pass
+        ⓶ᵇ UNANSWERABLE, WHICH IS NOT A PASS -- whether `formalisation-inrunseed` passed on this tree cannot be evaluated here, so this ga
+    ⇒ ** so a zero from this run is a MEASURED zero ** (`r7421` ③, `70`'s words), for the dangling-reference condition AND for the workflow condition, and the seeds are synthetic -- counted in nothing below.
+
+  ⓶ᵃ THE WORKFLOW SCOPES -- read from each workflow's own `paths:`, never from a filename
+      formalisation-mathlib.yml: ['computations/formalisation/lean/**']
+      formalisation-physlib.yml: ['computations/formalisation/lean-physlib/**']
+      `.lean` files inside at least one scope: 1 of 1
+
+  ⓶ᵇ THE RECORD -- did each workflow pass on THIS tree?  three-way, and `UNANSWERABLE` is not a pass
+      formalisation-mathlib: GREEN
+        record 1824fdab0: run 38998236359 at 2fabe10f9 -- success on an identical tree under ['computations/formalisation/lean', '.github/workflows/formalisation-mathlib.yml']
+      formalisation-physlib: GREEN
+        record e77ded1fb: run 38998236340 at 2fabe10f9 -- success on an identical tree under ['computations/formalisation/lean-physlib', 'computations/formalisation/lean/check_no
+
+  THE INVENTORY
+      columns: ['index', 'class', 'status', 'what it needs next', 'stand-in', 'receipt', 'decl']
+      rows: 111;  rows carrying a `decl` or a `receipt`: 111
+      their statuses: {'DONE': 74, 'DONE (CHARTABLE HALF)': 2, 'GENERIC-METRIC IDENTITY': 2, 'LIBRARY GAP': 17, 'LIMIT OF A DONE ROW': 12, 'ORDER: ENGINE-REACHABLE': 1, 'ROW: A DIFFERENT KIND': 3}
+      rows carrying a `receipt` and NO `decl`: 22, in 3 status class(es) ['GENERIC-METRIC IDENTITY', 'LIBRARY GAP', 'ROW: A DIFFERENT KIND']
+        of which 0 ASSERT the claim is formalised and are charged; the rest are the empty-cell state `71`'s grammar prescribes and are not
+    [FAIL] ⓵ row 0: `ShadowProbe.frw_scal_weyl_k` is claimed in computations/formalisation/lean/probes/FRWk.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 0: `ShadowProbe.frw_closed_slicing` is claimed in computations/formalisation/lean/probes/FRWk.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 1: `ShadowProbe.bianchi_weyl2` is claimed in computations/formalisation/lean/probes/BianchiI.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 1: `ShadowProbe.row1_shear` is claimed in computations/formalisation/lean/probes/BianchiI.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 2: `ShadowProbe.frw_scal_weyl_k` is claimed in computations/formalisation/lean/probes/FRWk.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 2: `ShadowProbe.frw_closed_slicing` is claimed in computations/formalisation/lean/probes/FRWk.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 3: `ShadowProbe.row3_rank` is claimed in computations/formalisation/lean/probes/BianchiI.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 4: `ShadowProbe.frw_scal_weyl_k` is claimed in computations/formalisation/lean/probes/FRWk.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 4: `ShadowProbe.frw_closed_slicing` is claimed in computations/formalisation/lean/probes/FRWk.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 4: `ShadowProbe.frw_scal` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 4: `ShadowProbe.layer_scal` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 5: `ShadowProbe.frw_scal_weyl_k` is claimed in computations/formalisation/lean/probes/FRWk.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 5: `ShadowProbe.frw_closed_slicing` is claimed in computations/formalisation/lean/probes/FRWk.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 5: `ShadowProbe.layer_late` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 6: `ShadowProbe.contracted_bianchi` is claimed in computations/formalisation/lean/probes/Bianchi2.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 6: `ShadowProbe.nRic_eq` is claimed in computations/formalisation/lean/probes/Bianchi2.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 6: `ShadowProbe.bianchi2_lc` is claimed in computations/formalisation/lean/probes/Bianchi2.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 6: `ShadowProbe.compat_lc` is claimed in computations/formalisation/lean/probes/Bianchi2.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 6: `ShadowProbe.curv_metric_antisymm` is claimed in computations/formalisation/lean/probes/Bianchi2.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 6: `ShadowProbe.nabla_metric_antisymm` is claimed in computations/formalisation/lean/probes/Bianchi2.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 7: `ShadowProbe.adm_trace_split` is claimed in computations/formalisation/lean/probes/Campaign6A.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 7: `ShadowProbe.tfSym_finrank` is claimed in computations/formalisation/lean/probes/Row7Count.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 7: `ShadowProbe.adm_rho` is claimed in computations/formalisation/lean/probes/Row7Count.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 7: `ShadowProbe.tr_sq_sym` is claimed in computations/formalisation/lean/probes/Row7Count.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 7: `ShadowProbe.adm_rho_shear_lowers` is claimed in computations/formalisation/lean/probes/Row7Count.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 8: `ShadowProbe.conf_box` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 8: `ShadowProbe.ds_tt_mode` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 8: `ShadowProbe.lcGam_diag4` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 9: `ShadowProbe.section_quadric` is claimed in computations/formalisation/lean/probes/HigherDim.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 10: `ShadowProbe.section_quadric` is claimed in computations/formalisation/lean/probes/HigherDim.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 11: `ShadowProbe.unruh_ds_limits` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 12: `ShadowProbe.row104_nariai_root` is claimed in computations/formalisation/lean/probes/CurvatureInstances.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 13: `ShadowProbe.ltb_Gtt` is claimed in computations/formalisation/lean/probes/SecondSeatLTB.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 13: `ShadowProbe.ltb_bend` is claimed in computations/formalisation/lean/probes/SecondSeatLTB.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 14: `ShadowProbe.frw_cycloid` is claimed in computations/formalisation/lean/probes/NoConnectionSweep.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 15: `ShadowProbe.ltb_turnaround` is claimed in computations/formalisation/lean/probes/NoConnectionSweep.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 16: `ShadowProbe.ltb_turnaround_time` is claimed in computations/formalisation/lean/probes/NoConnectionSweep.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 17: `ShadowProbe.nariai_curvature` is claimed in computations/formalisation/lean/probes/CurvatureInstances.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 17: `ShadowProbe.GE_nondeg` is claimed in computations/formalisation/lean/probes/NonDiag.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 17: `ShadowProbe.ef_kretschmann` is claimed in computations/formalisation/lean/probes/NonDiag.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 17: `ShadowProbe.RE_tab` is claimed in computations/formalisation/lean/probes/NonDiag.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 17: `ShadowProbe.RUE_tab` is claimed in computations/formalisation/lean/probes/NonDiag.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 17: `ShadowProbe.sds_kretschmann_ef` is claimed in computations/formalisation/lean/probes/NonDiag.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 17: `ShadowProbe.nariai_horizon_kretschmann` is claimed in computations/formalisation/lean/probes/NonDiag.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 19: `ShadowProbe.gb_total_derivative` is claimed in computations/formalisation/lean/probes/Campaign6A.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 19: `ShadowProbe.frw_closed` is claimed in computations/formalisation/lean/probes/SecondSeatFRW.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 19: `ShadowProbe.frw_gb_k` is claimed in computations/formalisation/lean/probes/FRWk.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 19: `ShadowProbe.frw_gb_three` is claimed in computations/formalisation/lean/probes/FRWk.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 19: `ShadowProbe.gb_total_derivative_k` is claimed in computations/formalisation/lean/probes/FRWk.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 19: `ShadowProbe.frw_weyl` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 19: `ShadowProbe.frw_scal` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 19: `ShadowProbe.layer_scal` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 19: `ShadowProbe.layer_late` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 19: `ShadowProbe.frw_invariants` is claimed in computations/formalisation/lean/probes/RunningLayer.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 19: `ShadowProbe.tv_identity` is claimed in computations/formalisation/lean/probes/RunningLayer.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 19: `ShadowProbe.ledger_general` is claimed in computations/formalisation/lean/probes/RunningLayer.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 19: `ShadowProbe.ledger_layer` is claimed in computations/formalisation/lean/probes/RunningLayer.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 19: `ShadowProbe.ledger_ds_point` is claimed in computations/formalisation/lean/probes/RunningLayer.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 21: `ShadowProbe.row104_nariai_root` is claimed in computations/formalisation/lean/probes/CurvatureInstances.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 21: `ShadowProbe.nariai_curvature` is claimed in computations/formalisation/lean/probes/CurvatureInstances.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 22: `ShadowProbe.curv_T` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 22: `ShadowProbe.ds_invariants` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 25: `ShadowProbe.schw_charts` is claimed in computations/formalisation/lean/probes/NoConnectionSweep.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 25: `ShadowProbe.schw_pg_shift` is claimed in computations/formalisation/lean/probes/NoConnectionSweep.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 26: `ShadowProbe.unruh_ds_limits` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 26: `ShadowProbe.two_surface_gravities` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 26: `ShadowProbe.ds_horizon_iff` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 26: `ShadowProbe.ds_surface_gravity` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 27: `ShadowProbe.circle_continuation` is claimed in computations/formalisation/lean/probes/NoConnectionSweep.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 28: `ShadowProbe.row28_curves` is claimed in computations/formalisation/lean/probes/CurvatureInstances.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 29: `ShadowProbe.unitU_geodesic` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 29: `ShadowProbe.interior_chart` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 29: `ShadowProbe.interior_geodesic` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 29: `ShadowProbe.cycloid_proper_time` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 30: `ShadowProbe.interior_cycloid` is claimed in computations/formalisation/lean/probes/NoConnectionSweep.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 30: `ShadowProbe.interior_gtt_zero` is claimed in computations/formalisation/lean/probes/NoConnectionSweep.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 31: `ShadowProbe.three_axes` is claimed in computations/formalisation/lean/probes/NoConnectionSweep.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 32: `ShadowProbe.accel_rKG` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 32: `ShadowProbe.sds_accel_is_rKG` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 33: `ShadowProbe.rnds_parity` is claimed in computations/formalisation/lean/probes/NoConnectionSweep.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 33: `ShadowProbe.rnds_core` is claimed in computations/formalisation/lean/probes/NoConnectionSweep.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 33: `ShadowProbe.schw_core_minus` is claimed in computations/formalisation/lean/probes/NoConnectionSweep.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 34: `ShadowProbe.diag_curv` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 34: `ShadowProbe.lcGam_diag` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 34: `ShadowProbe.slice_gauss` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 35: `ShadowProbe.tangherlini5_Gtt` is claimed in computations/formalisation/lean/probes/HigherDim.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 35: `ShadowProbe.tangherlini5_kernel` is claimed in computations/formalisation/lean/probes/HigherDim.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 35: `ShadowProbe.tangherlini4_Gtt` is claimed in computations/formalisation/lean/probes/TangherliniD.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 35: `ShadowProbe.tangherlini4_kernel` is claimed in computations/formalisation/lean/probes/TangherliniD.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 35: `ShadowProbe.tangherlini6_Gtt` is claimed in computations/formalisation/lean/probes/TangherliniD.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 35: `ShadowProbe.tangherlini6_kernel` is claimed in computations/formalisation/lean/probes/TangherliniD.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 35: `ShadowProbe.tangherlini7_Gtt` is claimed in computations/formalisation/lean/probes/TangherliniD.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 35: `ShadowProbe.tangherlini7_kernel` is claimed in computations/formalisation/lean/probes/TangherliniD.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 35: `ShadowProbe.tangherlini8_Gtt` is claimed in computations/formalisation/lean/probes/TangherliniD.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 35: `ShadowProbe.tangherlini8_kernel` is claimed in computations/formalisation/lean/probes/TangherliniD.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 36: `ShadowProbe.sds_flat_locus` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 36: `ShadowProbe.sds_nariai_iff` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 36: `ShadowProbe.sds_slice_gauss` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 37: `ShadowProbe.throat_join` is claimed in computations/formalisation/lean/probes/NoConnectionSweep.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 38: `ShadowProbe.sds_balance_is_flat` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 39: `ShadowProbe.hinge_interval` is claimed in computations/formalisation/lean/probes/NoConnectionSweep.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 40: `ShadowProbe.sinh23_flow` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 41: `ShadowProbe.surface_gravity` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 41: `ShadowProbe.kappa_half_fprime` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 42: `ShadowProbe.conformalKilling_cov` is claimed in computations/formalisation/lean/probes/InstanceProbe.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 42: `ShadowProbe.charge_const` is claimed in computations/formalisation/lean/probes/InstanceProbe.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 42: `ShadowProbe.xi_isConformalKilling` is claimed in computations/formalisation/lean/probes/InstanceProbe.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 42: `ShadowProbe.a_omega_const` is claimed in computations/formalisation/lean/probes/InstanceProbe.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 42: `ShadowProbe.one_plus_z` is claimed in computations/formalisation/lean/probes/InstanceProbe.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 43: `ShadowProbe.flat_isLeviCivita` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 43: `ShadowProbe.homothety_nabla` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 43: `ShadowProbe.homothety_charge` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 44: `ShadowProbe.lcGam_diag3` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 44: `ShadowProbe.null_radial` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 44: `ShadowProbe.sds_photon_lyapunov` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 45: `ShadowProbe.sds_kretschmann` is claimed in computations/formalisation/lean/probes/CurvatureInstances.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 47: `ShadowProbe.leaf_K` is claimed in computations/formalisation/lean/probes/SecondSeatFoliation.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 48: `ShadowProbe.static_Gtt_Grr` is claimed in computations/formalisation/lean/probes/SecondSeatStatic.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 49: `ShadowProbe.static_AeqF` is claimed in computations/formalisation/lean/probes/SecondSeatStatic.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 49: `ShadowProbe.static_density` is claimed in computations/formalisation/lean/probes/SecondSeatStatic.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 50: `ShadowProbe.flat_on_quadric` is claimed in computations/formalisation/lean/probes/NoConnectionSweep.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 50: `ShadowProbe.flat_dtau` is claimed in computations/formalisation/lean/probes/NoConnectionSweep.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 50: `ShadowProbe.flat_dx` is claimed in computations/formalisation/lean/probes/NoConnectionSweep.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 50: `ShadowProbe.flat_induced` is claimed in computations/formalisation/lean/probes/NoConnectionSweep.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 50: `ShadowProbe.flat_horosphere` is claimed in computations/formalisation/lean/probes/NoConnectionSweep.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 51: `ShadowProbe.static_tov` is claimed in computations/formalisation/lean/probes/SecondSeatStatic.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 52: `ShadowProbe.open_leaf_curv` is claimed in computations/formalisation/lean/probes/CurvatureInstances.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 52: `ShadowProbe.horo_on_hyperboloid` is claimed in computations/formalisation/lean/probes/CurvatureInstances.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 54: `ShadowProbe.ks_stress` is claimed in computations/formalisation/lean/probes/SecondSeatKS.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 55: `ShadowProbe.pp_Ruxux` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 55: `ShadowProbe.pp_kretschmann` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 55: `ShadowProbe.pp_riemann` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 55: `ShadowProbe.pp_vacuum_iff` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 56: `ShadowProbe.killing_lie` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 56: `ShadowProbe.pw_bracket` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 56: `ShadowProbe.pw_dv_null` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 56: `ShadowProbe.pw_killing` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 56: `ShadowProbe.pw_wronskian_const` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 56: `ShadowProbe.xiPW_deriv` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 58: `ShadowProbe.row58_adm_kinetic` is claimed in computations/formalisation/lean/probes/Campaign7.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 58: `ShadowProbe.row58_det_gate` is claimed in computations/formalisation/lean/probes/Campaign7.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 58: `ShadowProbe.row58_legendre` is claimed in computations/formalisation/lean/probes/Legendre58.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 58: `ShadowProbe.row58_hamiltonian` is claimed in computations/formalisation/lean/probes/Legendre58.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 58: `ShadowProbe.row58_legendre_needs_sign` is claimed in computations/formalisation/lean/probes/Legendre58.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 58: `ShadowProbe.row58_euler_lagrange` is claimed in computations/formalisation/lean/probes/Legendre58.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 58: `ShadowProbe.row58_sign` is claimed in computations/formalisation/lean/probes/Legendre58.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 58: `ShadowProbe.row58_measure_power` is claimed in computations/formalisation/lean/probes/Legendre58.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 59: `ShadowProbe.quartic_identity` is claimed in computations/formalisation/lean/probes/Row59Quartic.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 59: `ShadowProbe.quartic_traceless` is claimed in computations/formalisation/lean/probes/Row59Quartic.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 59: `ShadowProbe.euler_volume` is claimed in computations/formalisation/lean/probes/S3Frame.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 59: `ShadowProbe.milnor_scalar` is claimed in computations/formalisation/lean/probes/S3Frame.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 59: `ShadowProbe.rad_coframes` is claimed in computations/formalisation/lean/probes/Row59Euler.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 59: `ShadowProbe.chart_trace_pow` is claimed in computations/formalisation/lean/probes/Row59Euler.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 59: `ShadowProbe.h4_invariants` is claimed in computations/formalisation/lean/probes/Row59Euler.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 59: `ShadowProbe.h4_chart` is claimed in computations/formalisation/lean/probes/Row59Euler.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 59: `ShadowProbe.floor_taylor` is claimed in computations/formalisation/lean/probes/Row59Euler.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 59: `ShadowProbe.tt_dim_five` is claimed in computations/formalisation/lean/probes/Row59Euler.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 59: `ShadowProbe.jet_dim_twelve` is claimed in computations/formalisation/lean/probes/Row59Euler.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 61: `ShadowProbe.ef_det` is claimed in computations/formalisation/lean/probes/NoConnectionSweep.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 61: `ShadowProbe.ef_horizon_degenerate` is claimed in computations/formalisation/lean/probes/NoConnectionSweep.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 61: `ShadowProbe.ef_horizon_rank` is claimed in computations/formalisation/lean/probes/NoConnectionSweep.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 65: `ShadowProbe.milnor_scalar` is claimed in computations/formalisation/lean/probes/S3Frame.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 65: `ShadowProbe.const_curv_tt` is claimed in computations/formalisation/lean/probes/S3Frame.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 65: `ShadowProbe.zeta_count` is claimed in computations/formalisation/lean/probes/S3Frame.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 65: `ShadowProbe.tt_mode_eom` is claimed in computations/formalisation/lean/probes/S3Frame.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 65: `ShadowProbe.s3_ricci` is claimed in computations/formalisation/lean/probes/S3Frame.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 66: `ShadowProbe.milnor_scalar` is claimed in computations/formalisation/lean/probes/S3Frame.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 66: `ShadowProbe.s3_ricci` is claimed in computations/formalisation/lean/probes/S3Frame.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 66: `ShadowProbe.s3_tt_eigen` is claimed in computations/formalisation/lean/probes/S3Frame.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 66: `ShadowProbe.traceless_cube` is claimed in computations/formalisation/lean/probes/S3Frame.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 66: `ShadowProbe.euler_volume` is claimed in computations/formalisation/lean/probes/S3Frame.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 66: `ShadowProbe.halfline_integral` is claimed in computations/formalisation/lean/probes/S3Frame.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 66: `ShadowProbe.euler_coframe` is claimed in computations/formalisation/lean/probes/NonDiag.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 66: `ShadowProbe.euler_structure` is claimed in computations/formalisation/lean/probes/NonDiag.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 66: `ShadowProbe.euler_tt_trace` is claimed in computations/formalisation/lean/probes/NonDiag.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 66: `ShadowProbe.euler_tt_transverse` is claimed in computations/formalisation/lean/probes/NonDiag.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 66: `ShadowProbe.euler_s3_curvature` is claimed in computations/formalisation/lean/probes/NonDiag.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 66: `ShadowProbe.milR66_exp` is claimed in computations/formalisation/lean/probes/Row66Series.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 66: `ShadowProbe.r_exp_series` is claimed in computations/formalisation/lean/probes/Row66Series.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 66: `ShadowProbe.mtw_bianchi_ix` is claimed in computations/formalisation/lean/probes/Row66Series.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 66: `ShadowProbe.commutator_trace` is claimed in computations/formalisation/lean/probes/Row66Series.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 66: `ShadowProbe.milR66_perm` is claimed in computations/formalisation/lean/probes/Row66Series.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 67: `ShadowProbe.s3_tt_eigen` is claimed in computations/formalisation/lean/probes/S3Frame.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 67: `ShadowProbe.traceless_cube` is claimed in computations/formalisation/lean/probes/S3Frame.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 67: `ShadowProbe.det_frame_conj` is claimed in computations/formalisation/lean/probes/S3Frame.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 67: `ShadowProbe.euler_volume` is claimed in computations/formalisation/lean/probes/S3Frame.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 67: `ShadowProbe.kos_unit` is claimed in computations/formalisation/lean/probes/S3Frame.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 67: `ShadowProbe.euler_s3_curvature` is claimed in computations/formalisation/lean/probes/NonDiag.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 67: `ShadowProbe.euler_coframe` is claimed in computations/formalisation/lean/probes/NonDiag.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 67: `ShadowProbe.euler_structure` is claimed in computations/formalisation/lean/probes/NonDiag.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 67: `ShadowProbe.euler_tt_trace` is claimed in computations/formalisation/lean/probes/NonDiag.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 67: `ShadowProbe.euler_tt_transverse` is claimed in computations/formalisation/lean/probes/NonDiag.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 71: `ShadowProbe.weyl2_gb_identity` is claimed in computations/formalisation/lean/probes/Campaign6A.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 71: `ShadowProbe.row71_sds` is claimed in computations/formalisation/lean/probes/CurvatureInstances.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 72: `ShadowProbe.frw_closed` is claimed in computations/formalisation/lean/probes/SecondSeatFRW.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 74: `ShadowProbe.gowdy_ds_field` is claimed in computations/formalisation/lean/probes/CurvatureInstances.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 74: `ShadowProbe.gowdy_shear_charge` is claimed in computations/formalisation/lean/probes/CurvatureInstances.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 75: `ShadowProbe.gowdy_tz_field` is claimed in computations/formalisation/lean/probes/CurvatureInstances.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 76: `ShadowProbe.ds_app` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 76: `ShadowProbe.mukhanov` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 77: `ShadowProbe.killing_of_invariant` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 77: `ShadowProbe.gowdy_killing` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 77: `ShadowProbe.killF_model` is claimed in computations/formalisation/lean/probes/Row77Killing.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 77: `ShadowProbe.killF_coord` is claimed in computations/formalisation/lean/probes/Row77Killing.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 77: `ShadowProbe.coord_not_killing` is claimed in computations/formalisation/lean/probes/Row77Killing.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 77: `ShadowProbe.gowdy_coord_not_killing` is claimed in computations/formalisation/lean/probes/Row77Killing.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 77: `ShadowProbe.rot_killF` is claimed in computations/formalisation/lean/probes/Row77Killing.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 77: `ShadowProbe.gowdy_rot_not_killing` is claimed in computations/formalisation/lean/probes/Row77Killing.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 78: `ShadowProbe.lcGam_pp` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 78: `ShadowProbe.pp_ricci` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 78: `ShadowProbe.pw_ricci_flat` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 79: `ShadowProbe.sds_leaf_K_zero` is claimed in computations/formalisation/lean/probes/Row79Leaf.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 79: `ShadowProbe.leaf_scal` is claimed in computations/formalisation/lean/probes/Row79Leaf.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 79: `ShadowProbe.sds_leaf_R3` is claimed in computations/formalisation/lean/probes/Row79Leaf.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 81: `ShadowProbe.row81_separator` is claimed in computations/formalisation/lean/probes/CurvatureInstances.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 83: `ShadowProbe.row83_squashed_S5_everywhere` is claimed in computations/formalisation/lean/probes/NonDiag.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 83: `ShadowProbe.curvG_eq` is claimed in computations/formalisation/lean/probes/NonDiag.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 83: `ShadowProbe.row83_squashed_S5` is claimed in computations/formalisation/lean/probes/NonDiag.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 87: `ShadowProbe.axis_vantage` is claimed in computations/formalisation/lean/probes/NoConnectionSweep.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 88: `ShadowProbe.axis_vantage` is claimed in computations/formalisation/lean/probes/NoConnectionSweep.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 90: `ShadowProbe.axis_vantage` is claimed in computations/formalisation/lean/probes/NoConnectionSweep.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 91: `ShadowProbe.sinh23_flow` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 92: `ShadowProbe.rain_geodesic` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 92: `ShadowProbe.sds_rain_geodesic` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 92: `ShadowProbe.sinh23_flow` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 93: `ShadowProbe.row93_weyl_split` is claimed in computations/formalisation/lean/probes/CurvatureInstances.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 94: `ShadowProbe.leaf_umbilic_iff` is claimed in computations/formalisation/lean/probes/SecondSeatFoliation.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 95: `ShadowProbe.so3_killing` is claimed in computations/formalisation/lean/probes/Row95Wave.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 95: `ShadowProbe.killF95_model` is claimed in computations/formalisation/lean/probes/Row95Wave.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 95: `ShadowProbe.sph_wave_sep` is claimed in computations/formalisation/lean/probes/Row95Wave.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 95: `ShadowProbe.harm_1_0` is claimed in computations/formalisation/lean/probes/Row95Wave.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 95: `ShadowProbe.harm_1_1` is claimed in computations/formalisation/lean/probes/Row95Wave.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 95: `ShadowProbe.harm_2_0` is claimed in computations/formalisation/lean/probes/Row95Wave.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 95: `ShadowProbe.harm_2_1` is claimed in computations/formalisation/lean/probes/Row95Wave.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 95: `ShadowProbe.harm_2_2` is claimed in computations/formalisation/lean/probes/Row95Wave.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 95: `ShadowProbe.harm_3_0` is claimed in computations/formalisation/lean/probes/Row95Wave.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 95: `ShadowProbe.harm_3_1` is claimed in computations/formalisation/lean/probes/Row95Wave.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 95: `ShadowProbe.harm_3_2` is claimed in computations/formalisation/lean/probes/Row95Wave.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 95: `ShadowProbe.harm_3_3` is claimed in computations/formalisation/lean/probes/Row95Wave.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 95: `ShadowProbe.s3_levels` is claimed in computations/formalisation/lean/probes/Row95Wave.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 97: `ShadowProbe.sinh23_flow` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 97: `ShadowProbe.sds_kretschmann` is claimed in computations/formalisation/lean/probes/CurvatureInstances.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 98: `ShadowProbe.row98_einstein_tidal` is claimed in computations/formalisation/lean/probes/CurvatureInstances.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 98: `ShadowProbe.static_radial_tidal` is claimed in computations/formalisation/lean/probes/CurvatureInstances.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 99: `ShadowProbe.two_surface_gravities` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 100: `ShadowProbe.row104_nariai_root` is claimed in computations/formalisation/lean/probes/CurvatureInstances.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 100: `ShadowProbe.nariai_curvature` is claimed in computations/formalisation/lean/probes/CurvatureInstances.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 101: `ShadowProbe.row104_nariai_root` is claimed in computations/formalisation/lean/probes/CurvatureInstances.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 101: `ShadowProbe.sinh23_flow` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 102: `ShadowProbe.leaf_shear` is claimed in computations/formalisation/lean/probes/SecondSeatFoliation.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 103: `ShadowProbe.sds_two_ranges` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 104: `ShadowProbe.row104_flat_slice` is claimed in computations/formalisation/lean/probes/CurvatureInstances.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 104: `ShadowProbe.row104_nariai_root` is claimed in computations/formalisation/lean/probes/CurvatureInstances.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 104: `ShadowProbe.nariai_curvature` is claimed in computations/formalisation/lean/probes/CurvatureInstances.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 105: `ShadowProbe.row104_nariai_root` is claimed in computations/formalisation/lean/probes/CurvatureInstances.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 106: `ShadowProbe.dS5_constant_curvature` is claimed in computations/formalisation/lean/probes/HigherDim.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 107: `ShadowProbe.confocal_degree` is claimed in computations/formalisation/lean/probes/NoConnectionSweep.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 108: `ShadowProbe.section_quadric` is claimed in computations/formalisation/lean/probes/HigherDim.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 108: `ShadowProbe.dS5_constant_curvature` is claimed in computations/formalisation/lean/probes/HigherDim.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 108: `ShadowProbe.sds_K_radial` is claimed in computations/formalisation/lean/probes/HigherDim.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 108: `ShadowProbe.boost_pullback` is claimed in computations/formalisation/lean/probes/Row108Cut.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 108: `ShadowProbe.cut_defect` is claimed in computations/formalisation/lean/probes/Row108Cut.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 108: `ShadowProbe.cut_closure_iff` is claimed in computations/formalisation/lean/probes/Row108Cut.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 108: `ShadowProbe.cut_closes_only_at_M_zero` is claimed in computations/formalisation/lean/probes/Row108Cut.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 108: `ShadowProbe.cut_control` is claimed in computations/formalisation/lean/probes/Row108Cut.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 109: `ShadowProbe.ds_horizon_iff` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 109: `ShadowProbe.ds_surface_gravity` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path under the formalisation tree or the repository root
+    [FAIL] ⓵ row 110: `ShadowProbe.row110_petrov` is claimed in computations/formalisation/lean/probes/CurvatureInstances.lean, and no file is present at that path under the formalisation tree or the repository root
+      ⇒ `(file, name)` pairs checked: 268 over 111 row(s), naming 28 distinct `.lean` file(s)
+      Ⓠ every cleared pair is cleared on its FULLY QUALIFIED name: 0
+
+====================================================================================================
+  ⛔ THE FORMALISATION JOIN GATE IS RED: 269 failure(s)
+      - ⓪ ⛔ THE CONTROL READER FOUND NO DECLARATIONS IN ANY OF THE 1 FILES -- so this gate cannot see its own subject, and it says so rather than re
+      - ⓵ row 0: `ShadowProbe.frw_scal_weyl_k` is claimed in computations/formalisation/lean/probes/FRWk.lean, and no file is present at that path u
+      - ⓵ row 0: `ShadowProbe.frw_closed_slicing` is claimed in computations/formalisation/lean/probes/FRWk.lean, and no file is present at that pat
+      - ⓵ row 1: `ShadowProbe.bianchi_weyl2` is claimed in computations/formalisation/lean/probes/BianchiI.lean, and no file is present at that path
+      - ⓵ row 1: `ShadowProbe.row1_shear` is claimed in computations/formalisation/lean/probes/BianchiI.lean, and no file is present at that path un
+      - ⓵ row 2: `ShadowProbe.frw_scal_weyl_k` is claimed in computations/formalisation/lean/probes/FRWk.lean, and no file is present at that path u
+      - ⓵ row 2: `ShadowProbe.frw_closed_slicing` is claimed in computations/formalisation/lean/probes/FRWk.lean, and no file is present at that pat
+      - ⓵ row 3: `ShadowProbe.row3_rank` is claimed in computations/formalisation/lean/probes/BianchiI.lean, and no file is present at that path und
+      - ⓵ row 4: `ShadowProbe.frw_scal_weyl_k` is claimed in computations/formalisation/lean/probes/FRWk.lean, and no file is present at that path u
+      - ⓵ row 4: `ShadowProbe.frw_closed_slicing` is claimed in computations/formalisation/lean/probes/FRWk.lean, and no file is present at that pat
+      - ⓵ row 4: `ShadowProbe.frw_scal` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path under t
+      - ⓵ row 4: `ShadowProbe.layer_scal` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path under
+      - ⓵ row 5: `ShadowProbe.frw_scal_weyl_k` is claimed in computations/formalisation/lean/probes/FRWk.lean, and no file is present at that path u
+      - ⓵ row 5: `ShadowProbe.frw_closed_slicing` is claimed in computations/formalisation/lean/probes/FRWk.lean, and no file is present at that pat
+      - ⓵ row 5: `ShadowProbe.layer_late` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path under
+      - ⓵ row 6: `ShadowProbe.contracted_bianchi` is claimed in computations/formalisation/lean/probes/Bianchi2.lean, and no file is present at that
+      - ⓵ row 6: `ShadowProbe.nRic_eq` is claimed in computations/formalisation/lean/probes/Bianchi2.lean, and no file is present at that path under
+      - ⓵ row 6: `ShadowProbe.bianchi2_lc` is claimed in computations/formalisation/lean/probes/Bianchi2.lean, and no file is present at that path u
+      - ⓵ row 6: `ShadowProbe.compat_lc` is claimed in computations/formalisation/lean/probes/Bianchi2.lean, and no file is present at that path und
+      - ⓵ row 6: `ShadowProbe.curv_metric_antisymm` is claimed in computations/formalisation/lean/probes/Bianchi2.lean, and no file is present at th
+      - ⓵ row 6: `ShadowProbe.nabla_metric_antisymm` is claimed in computations/formalisation/lean/probes/Bianchi2.lean, and no file is present at t
+      - ⓵ row 7: `ShadowProbe.adm_trace_split` is claimed in computations/formalisation/lean/probes/Campaign6A.lean, and no file is present at that 
+      - ⓵ row 7: `ShadowProbe.tfSym_finrank` is claimed in computations/formalisation/lean/probes/Row7Count.lean, and no file is present at that pat
+      - ⓵ row 7: `ShadowProbe.adm_rho` is claimed in computations/formalisation/lean/probes/Row7Count.lean, and no file is present at that path unde
+      - ⓵ row 7: `ShadowProbe.tr_sq_sym` is claimed in computations/formalisation/lean/probes/Row7Count.lean, and no file is present at that path un
+      - ⓵ row 7: `ShadowProbe.adm_rho_shear_lowers` is claimed in computations/formalisation/lean/probes/Row7Count.lean, and no file is present at t
+      - ⓵ row 8: `ShadowProbe.conf_box` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path under t
+      - ⓵ row 8: `ShadowProbe.ds_tt_mode` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path under
+      - ⓵ row 8: `ShadowProbe.lcGam_diag4` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path unde
+      - ⓵ row 9: `ShadowProbe.section_quadric` is claimed in computations/formalisation/lean/probes/HigherDim.lean, and no file is present at that p
+      - ⓵ row 10: `ShadowProbe.section_quadric` is claimed in computations/formalisation/lean/probes/HigherDim.lean, and no file is present at that 
+      - ⓵ row 11: `ShadowProbe.unruh_ds_limits` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path
+      - ⓵ row 12: `ShadowProbe.row104_nariai_root` is claimed in computations/formalisation/lean/probes/CurvatureInstances.lean, and no file is pres
+      - ⓵ row 13: `ShadowProbe.ltb_Gtt` is claimed in computations/formalisation/lean/probes/SecondSeatLTB.lean, and no file is present at that path
+      - ⓵ row 13: `ShadowProbe.ltb_bend` is claimed in computations/formalisation/lean/probes/SecondSeatLTB.lean, and no file is present at that pat
+      - ⓵ row 14: `ShadowProbe.frw_cycloid` is claimed in computations/formalisation/lean/probes/NoConnectionSweep.lean, and no file is present at t
+      - ⓵ row 15: `ShadowProbe.ltb_turnaround` is claimed in computations/formalisation/lean/probes/NoConnectionSweep.lean, and no file is present a
+      - ⓵ row 16: `ShadowProbe.ltb_turnaround_time` is claimed in computations/formalisation/lean/probes/NoConnectionSweep.lean, and no file is pres
+      - ⓵ row 17: `ShadowProbe.nariai_curvature` is claimed in computations/formalisation/lean/probes/CurvatureInstances.lean, and no file is presen
+      - ⓵ row 17: `ShadowProbe.GE_nondeg` is claimed in computations/formalisation/lean/probes/NonDiag.lean, and no file is present at that path und
+      - ⓵ row 17: `ShadowProbe.ef_kretschmann` is claimed in computations/formalisation/lean/probes/NonDiag.lean, and no file is present at that pat
+      - ⓵ row 17: `ShadowProbe.RE_tab` is claimed in computations/formalisation/lean/probes/NonDiag.lean, and no file is present at that path under 
+      - ⓵ row 17: `ShadowProbe.RUE_tab` is claimed in computations/formalisation/lean/probes/NonDiag.lean, and no file is present at that path under
+      - ⓵ row 17: `ShadowProbe.sds_kretschmann_ef` is claimed in computations/formalisation/lean/probes/NonDiag.lean, and no file is present at that
+      - ⓵ row 17: `ShadowProbe.nariai_horizon_kretschmann` is claimed in computations/formalisation/lean/probes/NonDiag.lean, and no file is present
+      - ⓵ row 19: `ShadowProbe.gb_total_derivative` is claimed in computations/formalisation/lean/probes/Campaign6A.lean, and no file is present at 
+      - ⓵ row 19: `ShadowProbe.frw_closed` is claimed in computations/formalisation/lean/probes/SecondSeatFRW.lean, and no file is present at that p
+      - ⓵ row 19: `ShadowProbe.frw_gb_k` is claimed in computations/formalisation/lean/probes/FRWk.lean, and no file is present at that path under t
+      - ⓵ row 19: `ShadowProbe.frw_gb_three` is claimed in computations/formalisation/lean/probes/FRWk.lean, and no file is present at that path und
+      - ⓵ row 19: `ShadowProbe.gb_total_derivative_k` is claimed in computations/formalisation/lean/probes/FRWk.lean, and no file is present at that
+      - ⓵ row 19: `ShadowProbe.frw_weyl` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path under 
+      - ⓵ row 19: `ShadowProbe.frw_scal` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path under 
+      - ⓵ row 19: `ShadowProbe.layer_scal` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path unde
+      - ⓵ row 19: `ShadowProbe.layer_late` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path unde
+      - ⓵ row 19: `ShadowProbe.frw_invariants` is claimed in computations/formalisation/lean/probes/RunningLayer.lean, and no file is present at tha
+      - ⓵ row 19: `ShadowProbe.tv_identity` is claimed in computations/formalisation/lean/probes/RunningLayer.lean, and no file is present at that p
+      - ⓵ row 19: `ShadowProbe.ledger_general` is claimed in computations/formalisation/lean/probes/RunningLayer.lean, and no file is present at tha
+      - ⓵ row 19: `ShadowProbe.ledger_layer` is claimed in computations/formalisation/lean/probes/RunningLayer.lean, and no file is present at that 
+      - ⓵ row 19: `ShadowProbe.ledger_ds_point` is claimed in computations/formalisation/lean/probes/RunningLayer.lean, and no file is present at th
+      - ⓵ row 21: `ShadowProbe.row104_nariai_root` is claimed in computations/formalisation/lean/probes/CurvatureInstances.lean, and no file is pres
+      - ⓵ row 21: `ShadowProbe.nariai_curvature` is claimed in computations/formalisation/lean/probes/CurvatureInstances.lean, and no file is presen
+      - ⓵ row 22: `ShadowProbe.curv_T` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path under th
+      - ⓵ row 22: `ShadowProbe.ds_invariants` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path u
+      - ⓵ row 25: `ShadowProbe.schw_charts` is claimed in computations/formalisation/lean/probes/NoConnectionSweep.lean, and no file is present at t
+      - ⓵ row 25: `ShadowProbe.schw_pg_shift` is claimed in computations/formalisation/lean/probes/NoConnectionSweep.lean, and no file is present at
+      - ⓵ row 26: `ShadowProbe.unruh_ds_limits` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path
+      - ⓵ row 26: `ShadowProbe.two_surface_gravities` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at tha
+      - ⓵ row 26: `ShadowProbe.ds_horizon_iff` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path 
+      - ⓵ row 26: `ShadowProbe.ds_surface_gravity` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that p
+      - ⓵ row 27: `ShadowProbe.circle_continuation` is claimed in computations/formalisation/lean/probes/NoConnectionSweep.lean, and no file is pres
+      - ⓵ row 28: `ShadowProbe.row28_curves` is claimed in computations/formalisation/lean/probes/CurvatureInstances.lean, and no file is present at
+      - ⓵ row 29: `ShadowProbe.unitU_geodesic` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path 
+      - ⓵ row 29: `ShadowProbe.interior_chart` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path 
+      - ⓵ row 29: `ShadowProbe.interior_geodesic` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that pa
+      - ⓵ row 29: `ShadowProbe.cycloid_proper_time` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that 
+      - ⓵ row 30: `ShadowProbe.interior_cycloid` is claimed in computations/formalisation/lean/probes/NoConnectionSweep.lean, and no file is present
+      - ⓵ row 30: `ShadowProbe.interior_gtt_zero` is claimed in computations/formalisation/lean/probes/NoConnectionSweep.lean, and no file is presen
+      - ⓵ row 31: `ShadowProbe.three_axes` is claimed in computations/formalisation/lean/probes/NoConnectionSweep.lean, and no file is present at th
+      - ⓵ row 32: `ShadowProbe.accel_rKG` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path under
+      - ⓵ row 32: `ShadowProbe.sds_accel_is_rKG` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that pat
+      - ⓵ row 33: `ShadowProbe.rnds_parity` is claimed in computations/formalisation/lean/probes/NoConnectionSweep.lean, and no file is present at t
+      - ⓵ row 33: `ShadowProbe.rnds_core` is claimed in computations/formalisation/lean/probes/NoConnectionSweep.lean, and no file is present at tha
+      - ⓵ row 33: `ShadowProbe.schw_core_minus` is claimed in computations/formalisation/lean/probes/NoConnectionSweep.lean, and no file is present 
+      - ⓵ row 34: `ShadowProbe.diag_curv` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path under
+      - ⓵ row 34: `ShadowProbe.lcGam_diag` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path unde
+      - ⓵ row 34: `ShadowProbe.slice_gauss` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path und
+      - ⓵ row 35: `ShadowProbe.tangherlini5_Gtt` is claimed in computations/formalisation/lean/probes/HigherDim.lean, and no file is present at that
+      - ⓵ row 35: `ShadowProbe.tangherlini5_kernel` is claimed in computations/formalisation/lean/probes/HigherDim.lean, and no file is present at t
+      - ⓵ row 35: `ShadowProbe.tangherlini4_Gtt` is claimed in computations/formalisation/lean/probes/TangherliniD.lean, and no file is present at t
+      - ⓵ row 35: `ShadowProbe.tangherlini4_kernel` is claimed in computations/formalisation/lean/probes/TangherliniD.lean, and no file is present a
+      - ⓵ row 35: `ShadowProbe.tangherlini6_Gtt` is claimed in computations/formalisation/lean/probes/TangherliniD.lean, and no file is present at t
+      - ⓵ row 35: `ShadowProbe.tangherlini6_kernel` is claimed in computations/formalisation/lean/probes/TangherliniD.lean, and no file is present a
+      - ⓵ row 35: `ShadowProbe.tangherlini7_Gtt` is claimed in computations/formalisation/lean/probes/TangherliniD.lean, and no file is present at t
+      - ⓵ row 35: `ShadowProbe.tangherlini7_kernel` is claimed in computations/formalisation/lean/probes/TangherliniD.lean, and no file is present a
+      - ⓵ row 35: `ShadowProbe.tangherlini8_Gtt` is claimed in computations/formalisation/lean/probes/TangherliniD.lean, and no file is present at t
+      - ⓵ row 35: `ShadowProbe.tangherlini8_kernel` is claimed in computations/formalisation/lean/probes/TangherliniD.lean, and no file is present a
+      - ⓵ row 36: `ShadowProbe.sds_flat_locus` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path 
+      - ⓵ row 36: `ShadowProbe.sds_nariai_iff` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path 
+      - ⓵ row 36: `ShadowProbe.sds_slice_gauss` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path
+      - ⓵ row 37: `ShadowProbe.throat_join` is claimed in computations/formalisation/lean/probes/NoConnectionSweep.lean, and no file is present at t
+      - ⓵ row 38: `ShadowProbe.sds_balance_is_flat` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that 
+      - ⓵ row 39: `ShadowProbe.hinge_interval` is claimed in computations/formalisation/lean/probes/NoConnectionSweep.lean, and no file is present a
+      - ⓵ row 40: `ShadowProbe.sinh23_flow` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path und
+      - ⓵ row 41: `ShadowProbe.surface_gravity` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path
+      - ⓵ row 41: `ShadowProbe.kappa_half_fprime` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that pa
+      - ⓵ row 42: `ShadowProbe.conformalKilling_cov` is claimed in computations/formalisation/lean/probes/InstanceProbe.lean, and no file is present
+      - ⓵ row 42: `ShadowProbe.charge_const` is claimed in computations/formalisation/lean/probes/InstanceProbe.lean, and no file is present at that
+      - ⓵ row 42: `ShadowProbe.xi_isConformalKilling` is claimed in computations/formalisation/lean/probes/InstanceProbe.lean, and no file is presen
+      - ⓵ row 42: `ShadowProbe.a_omega_const` is claimed in computations/formalisation/lean/probes/InstanceProbe.lean, and no file is present at tha
+      - ⓵ row 42: `ShadowProbe.one_plus_z` is claimed in computations/formalisation/lean/probes/InstanceProbe.lean, and no file is present at that p
+      - ⓵ row 43: `ShadowProbe.flat_isLeviCivita` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that pa
+      - ⓵ row 43: `ShadowProbe.homothety_nabla` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path
+      - ⓵ row 43: `ShadowProbe.homothety_charge` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that pat
+      - ⓵ row 44: `ShadowProbe.lcGam_diag3` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path und
+      - ⓵ row 44: `ShadowProbe.null_radial` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path und
+      - ⓵ row 44: `ShadowProbe.sds_photon_lyapunov` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that 
+      - ⓵ row 45: `ShadowProbe.sds_kretschmann` is claimed in computations/formalisation/lean/probes/CurvatureInstances.lean, and no file is present
+      - ⓵ row 47: `ShadowProbe.leaf_K` is claimed in computations/formalisation/lean/probes/SecondSeatFoliation.lean, and no file is present at that
+      - ⓵ row 48: `ShadowProbe.static_Gtt_Grr` is claimed in computations/formalisation/lean/probes/SecondSeatStatic.lean, and no file is present at
+      - ⓵ row 49: `ShadowProbe.static_AeqF` is claimed in computations/formalisation/lean/probes/SecondSeatStatic.lean, and no file is present at th
+      - ⓵ row 49: `ShadowProbe.static_density` is claimed in computations/formalisation/lean/probes/SecondSeatStatic.lean, and no file is present at
+      - ⓵ row 50: `ShadowProbe.flat_on_quadric` is claimed in computations/formalisation/lean/probes/NoConnectionSweep.lean, and no file is present 
+      - ⓵ row 50: `ShadowProbe.flat_dtau` is claimed in computations/formalisation/lean/probes/NoConnectionSweep.lean, and no file is present at tha
+      - ⓵ row 50: `ShadowProbe.flat_dx` is claimed in computations/formalisation/lean/probes/NoConnectionSweep.lean, and no file is present at that 
+      - ⓵ row 50: `ShadowProbe.flat_induced` is claimed in computations/formalisation/lean/probes/NoConnectionSweep.lean, and no file is present at 
+      - ⓵ row 50: `ShadowProbe.flat_horosphere` is claimed in computations/formalisation/lean/probes/NoConnectionSweep.lean, and no file is present 
+      - ⓵ row 51: `ShadowProbe.static_tov` is claimed in computations/formalisation/lean/probes/SecondSeatStatic.lean, and no file is present at tha
+      - ⓵ row 52: `ShadowProbe.open_leaf_curv` is claimed in computations/formalisation/lean/probes/CurvatureInstances.lean, and no file is present 
+      - ⓵ row 52: `ShadowProbe.horo_on_hyperboloid` is claimed in computations/formalisation/lean/probes/CurvatureInstances.lean, and no file is pre
+      - ⓵ row 54: `ShadowProbe.ks_stress` is claimed in computations/formalisation/lean/probes/SecondSeatKS.lean, and no file is present at that pat
+      - ⓵ row 55: `ShadowProbe.pp_Ruxux` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path under 
+      - ⓵ row 55: `ShadowProbe.pp_kretschmann` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path 
+      - ⓵ row 55: `ShadowProbe.pp_riemann` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path unde
+      - ⓵ row 55: `ShadowProbe.pp_vacuum_iff` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path u
+      - ⓵ row 56: `ShadowProbe.killing_lie` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path und
+      - ⓵ row 56: `ShadowProbe.pw_bracket` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path unde
+      - ⓵ row 56: `ShadowProbe.pw_dv_null` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path unde
+      - ⓵ row 56: `ShadowProbe.pw_killing` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path unde
+      - ⓵ row 56: `ShadowProbe.pw_wronskian_const` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that p
+      - ⓵ row 56: `ShadowProbe.xiPW_deriv` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path unde
+      - ⓵ row 58: `ShadowProbe.row58_adm_kinetic` is claimed in computations/formalisation/lean/probes/Campaign7.lean, and no file is present at tha
+      - ⓵ row 58: `ShadowProbe.row58_det_gate` is claimed in computations/formalisation/lean/probes/Campaign7.lean, and no file is present at that p
+      - ⓵ row 58: `ShadowProbe.row58_legendre` is claimed in computations/formalisation/lean/probes/Legendre58.lean, and no file is present at that 
+      - ⓵ row 58: `ShadowProbe.row58_hamiltonian` is claimed in computations/formalisation/lean/probes/Legendre58.lean, and no file is present at th
+      - ⓵ row 58: `ShadowProbe.row58_legendre_needs_sign` is claimed in computations/formalisation/lean/probes/Legendre58.lean, and no file is prese
+      - ⓵ row 58: `ShadowProbe.row58_euler_lagrange` is claimed in computations/formalisation/lean/probes/Legendre58.lean, and no file is present at
+      - ⓵ row 58: `ShadowProbe.row58_sign` is claimed in computations/formalisation/lean/probes/Legendre58.lean, and no file is present at that path
+      - ⓵ row 58: `ShadowProbe.row58_measure_power` is claimed in computations/formalisation/lean/probes/Legendre58.lean, and no file is present at 
+      - ⓵ row 59: `ShadowProbe.quartic_identity` is claimed in computations/formalisation/lean/probes/Row59Quartic.lean, and no file is present at t
+      - ⓵ row 59: `ShadowProbe.quartic_traceless` is claimed in computations/formalisation/lean/probes/Row59Quartic.lean, and no file is present at 
+      - ⓵ row 59: `ShadowProbe.euler_volume` is claimed in computations/formalisation/lean/probes/S3Frame.lean, and no file is present at that path 
+      - ⓵ row 59: `ShadowProbe.milnor_scalar` is claimed in computations/formalisation/lean/probes/S3Frame.lean, and no file is present at that path
+      - ⓵ row 59: `ShadowProbe.rad_coframes` is claimed in computations/formalisation/lean/probes/Row59Euler.lean, and no file is present at that pa
+      - ⓵ row 59: `ShadowProbe.chart_trace_pow` is claimed in computations/formalisation/lean/probes/Row59Euler.lean, and no file is present at that
+      - ⓵ row 59: `ShadowProbe.h4_invariants` is claimed in computations/formalisation/lean/probes/Row59Euler.lean, and no file is present at that p
+      - ⓵ row 59: `ShadowProbe.h4_chart` is claimed in computations/formalisation/lean/probes/Row59Euler.lean, and no file is present at that path u
+      - ⓵ row 59: `ShadowProbe.floor_taylor` is claimed in computations/formalisation/lean/probes/Row59Euler.lean, and no file is present at that pa
+      - ⓵ row 59: `ShadowProbe.tt_dim_five` is claimed in computations/formalisation/lean/probes/Row59Euler.lean, and no file is present at that pat
+      - ⓵ row 59: `ShadowProbe.jet_dim_twelve` is claimed in computations/formalisation/lean/probes/Row59Euler.lean, and no file is present at that 
+      - ⓵ row 61: `ShadowProbe.ef_det` is claimed in computations/formalisation/lean/probes/NoConnectionSweep.lean, and no file is present at that p
+      - ⓵ row 61: `ShadowProbe.ef_horizon_degenerate` is claimed in computations/formalisation/lean/probes/NoConnectionSweep.lean, and no file is pr
+      - ⓵ row 61: `ShadowProbe.ef_horizon_rank` is claimed in computations/formalisation/lean/probes/NoConnectionSweep.lean, and no file is present 
+      - ⓵ row 65: `ShadowProbe.milnor_scalar` is claimed in computations/formalisation/lean/probes/S3Frame.lean, and no file is present at that path
+      - ⓵ row 65: `ShadowProbe.const_curv_tt` is claimed in computations/formalisation/lean/probes/S3Frame.lean, and no file is present at that path
+      - ⓵ row 65: `ShadowProbe.zeta_count` is claimed in computations/formalisation/lean/probes/S3Frame.lean, and no file is present at that path un
+      - ⓵ row 65: `ShadowProbe.tt_mode_eom` is claimed in computations/formalisation/lean/probes/S3Frame.lean, and no file is present at that path u
+      - ⓵ row 65: `ShadowProbe.s3_ricci` is claimed in computations/formalisation/lean/probes/S3Frame.lean, and no file is present at that path unde
+      - ⓵ row 66: `ShadowProbe.milnor_scalar` is claimed in computations/formalisation/lean/probes/S3Frame.lean, and no file is present at that path
+      - ⓵ row 66: `ShadowProbe.s3_ricci` is claimed in computations/formalisation/lean/probes/S3Frame.lean, and no file is present at that path unde
+      - ⓵ row 66: `ShadowProbe.s3_tt_eigen` is claimed in computations/formalisation/lean/probes/S3Frame.lean, and no file is present at that path u
+      - ⓵ row 66: `ShadowProbe.traceless_cube` is claimed in computations/formalisation/lean/probes/S3Frame.lean, and no file is present at that pat
+      - ⓵ row 66: `ShadowProbe.euler_volume` is claimed in computations/formalisation/lean/probes/S3Frame.lean, and no file is present at that path 
+      - ⓵ row 66: `ShadowProbe.halfline_integral` is claimed in computations/formalisation/lean/probes/S3Frame.lean, and no file is present at that 
+      - ⓵ row 66: `ShadowProbe.euler_coframe` is claimed in computations/formalisation/lean/probes/NonDiag.lean, and no file is present at that path
+      - ⓵ row 66: `ShadowProbe.euler_structure` is claimed in computations/formalisation/lean/probes/NonDiag.lean, and no file is present at that pa
+      - ⓵ row 66: `ShadowProbe.euler_tt_trace` is claimed in computations/formalisation/lean/probes/NonDiag.lean, and no file is present at that pat
+      - ⓵ row 66: `ShadowProbe.euler_tt_transverse` is claimed in computations/formalisation/lean/probes/NonDiag.lean, and no file is present at tha
+      - ⓵ row 66: `ShadowProbe.euler_s3_curvature` is claimed in computations/formalisation/lean/probes/NonDiag.lean, and no file is present at that
+      - ⓵ row 66: `ShadowProbe.milR66_exp` is claimed in computations/formalisation/lean/probes/Row66Series.lean, and no file is present at that pat
+      - ⓵ row 66: `ShadowProbe.r_exp_series` is claimed in computations/formalisation/lean/probes/Row66Series.lean, and no file is present at that p
+      - ⓵ row 66: `ShadowProbe.mtw_bianchi_ix` is claimed in computations/formalisation/lean/probes/Row66Series.lean, and no file is present at that
+      - ⓵ row 66: `ShadowProbe.commutator_trace` is claimed in computations/formalisation/lean/probes/Row66Series.lean, and no file is present at th
+      - ⓵ row 66: `ShadowProbe.milR66_perm` is claimed in computations/formalisation/lean/probes/Row66Series.lean, and no file is present at that pa
+      - ⓵ row 67: `ShadowProbe.s3_tt_eigen` is claimed in computations/formalisation/lean/probes/S3Frame.lean, and no file is present at that path u
+      - ⓵ row 67: `ShadowProbe.traceless_cube` is claimed in computations/formalisation/lean/probes/S3Frame.lean, and no file is present at that pat
+      - ⓵ row 67: `ShadowProbe.det_frame_conj` is claimed in computations/formalisation/lean/probes/S3Frame.lean, and no file is present at that pat
+      - ⓵ row 67: `ShadowProbe.euler_volume` is claimed in computations/formalisation/lean/probes/S3Frame.lean, and no file is present at that path 
+      - ⓵ row 67: `ShadowProbe.kos_unit` is claimed in computations/formalisation/lean/probes/S3Frame.lean, and no file is present at that path unde
+      - ⓵ row 67: `ShadowProbe.euler_s3_curvature` is claimed in computations/formalisation/lean/probes/NonDiag.lean, and no file is present at that
+      - ⓵ row 67: `ShadowProbe.euler_coframe` is claimed in computations/formalisation/lean/probes/NonDiag.lean, and no file is present at that path
+      - ⓵ row 67: `ShadowProbe.euler_structure` is claimed in computations/formalisation/lean/probes/NonDiag.lean, and no file is present at that pa
+      - ⓵ row 67: `ShadowProbe.euler_tt_trace` is claimed in computations/formalisation/lean/probes/NonDiag.lean, and no file is present at that pat
+      - ⓵ row 67: `ShadowProbe.euler_tt_transverse` is claimed in computations/formalisation/lean/probes/NonDiag.lean, and no file is present at tha
+      - ⓵ row 71: `ShadowProbe.weyl2_gb_identity` is claimed in computations/formalisation/lean/probes/Campaign6A.lean, and no file is present at th
+      - ⓵ row 71: `ShadowProbe.row71_sds` is claimed in computations/formalisation/lean/probes/CurvatureInstances.lean, and no file is present at th
+      - ⓵ row 72: `ShadowProbe.frw_closed` is claimed in computations/formalisation/lean/probes/SecondSeatFRW.lean, and no file is present at that p
+      - ⓵ row 74: `ShadowProbe.gowdy_ds_field` is claimed in computations/formalisation/lean/probes/CurvatureInstances.lean, and no file is present 
+      - ⓵ row 74: `ShadowProbe.gowdy_shear_charge` is claimed in computations/formalisation/lean/probes/CurvatureInstances.lean, and no file is pres
+      - ⓵ row 75: `ShadowProbe.gowdy_tz_field` is claimed in computations/formalisation/lean/probes/CurvatureInstances.lean, and no file is present 
+      - ⓵ row 76: `ShadowProbe.ds_app` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path under th
+      - ⓵ row 76: `ShadowProbe.mukhanov` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path under 
+      - ⓵ row 77: `ShadowProbe.killing_of_invariant` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that
+      - ⓵ row 77: `ShadowProbe.gowdy_killing` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path u
+      - ⓵ row 77: `ShadowProbe.killF_model` is claimed in computations/formalisation/lean/probes/Row77Killing.lean, and no file is present at that p
+      - ⓵ row 77: `ShadowProbe.killF_coord` is claimed in computations/formalisation/lean/probes/Row77Killing.lean, and no file is present at that p
+      - ⓵ row 77: `ShadowProbe.coord_not_killing` is claimed in computations/formalisation/lean/probes/Row77Killing.lean, and no file is present at 
+      - ⓵ row 77: `ShadowProbe.gowdy_coord_not_killing` is claimed in computations/formalisation/lean/probes/Row77Killing.lean, and no file is prese
+      - ⓵ row 77: `ShadowProbe.rot_killF` is claimed in computations/formalisation/lean/probes/Row77Killing.lean, and no file is present at that pat
+      - ⓵ row 77: `ShadowProbe.gowdy_rot_not_killing` is claimed in computations/formalisation/lean/probes/Row77Killing.lean, and no file is present
+      - ⓵ row 78: `ShadowProbe.lcGam_pp` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path under 
+      - ⓵ row 78: `ShadowProbe.pp_ricci` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path under 
+      - ⓵ row 78: `ShadowProbe.pw_ricci_flat` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path u
+      - ⓵ row 79: `ShadowProbe.sds_leaf_K_zero` is claimed in computations/formalisation/lean/probes/Row79Leaf.lean, and no file is present at that 
+      - ⓵ row 79: `ShadowProbe.leaf_scal` is claimed in computations/formalisation/lean/probes/Row79Leaf.lean, and no file is present at that path u
+      - ⓵ row 79: `ShadowProbe.sds_leaf_R3` is claimed in computations/formalisation/lean/probes/Row79Leaf.lean, and no file is present at that path
+      - ⓵ row 81: `ShadowProbe.row81_separator` is claimed in computations/formalisation/lean/probes/CurvatureInstances.lean, and no file is present
+      - ⓵ row 83: `ShadowProbe.row83_squashed_S5_everywhere` is claimed in computations/formalisation/lean/probes/NonDiag.lean, and no file is prese
+      - ⓵ row 83: `ShadowProbe.curvG_eq` is claimed in computations/formalisation/lean/probes/NonDiag.lean, and no file is present at that path unde
+      - ⓵ row 83: `ShadowProbe.row83_squashed_S5` is claimed in computations/formalisation/lean/probes/NonDiag.lean, and no file is present at that 
+      - ⓵ row 87: `ShadowProbe.axis_vantage` is claimed in computations/formalisation/lean/probes/NoConnectionSweep.lean, and no file is present at 
+      - ⓵ row 88: `ShadowProbe.axis_vantage` is claimed in computations/formalisation/lean/probes/NoConnectionSweep.lean, and no file is present at 
+      - ⓵ row 90: `ShadowProbe.axis_vantage` is claimed in computations/formalisation/lean/probes/NoConnectionSweep.lean, and no file is present at 
+      - ⓵ row 91: `ShadowProbe.sinh23_flow` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path und
+      - ⓵ row 92: `ShadowProbe.rain_geodesic` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path u
+      - ⓵ row 92: `ShadowProbe.sds_rain_geodesic` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that pa
+      - ⓵ row 92: `ShadowProbe.sinh23_flow` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path und
+      - ⓵ row 93: `ShadowProbe.row93_weyl_split` is claimed in computations/formalisation/lean/probes/CurvatureInstances.lean, and no file is presen
+      - ⓵ row 94: `ShadowProbe.leaf_umbilic_iff` is claimed in computations/formalisation/lean/probes/SecondSeatFoliation.lean, and no file is prese
+      - ⓵ row 95: `ShadowProbe.so3_killing` is claimed in computations/formalisation/lean/probes/Row95Wave.lean, and no file is present at that path
+      - ⓵ row 95: `ShadowProbe.killF95_model` is claimed in computations/formalisation/lean/probes/Row95Wave.lean, and no file is present at that pa
+      - ⓵ row 95: `ShadowProbe.sph_wave_sep` is claimed in computations/formalisation/lean/probes/Row95Wave.lean, and no file is present at that pat
+      - ⓵ row 95: `ShadowProbe.harm_1_0` is claimed in computations/formalisation/lean/probes/Row95Wave.lean, and no file is present at that path un
+      - ⓵ row 95: `ShadowProbe.harm_1_1` is claimed in computations/formalisation/lean/probes/Row95Wave.lean, and no file is present at that path un
+      - ⓵ row 95: `ShadowProbe.harm_2_0` is claimed in computations/formalisation/lean/probes/Row95Wave.lean, and no file is present at that path un
+      - ⓵ row 95: `ShadowProbe.harm_2_1` is claimed in computations/formalisation/lean/probes/Row95Wave.lean, and no file is present at that path un
+      - ⓵ row 95: `ShadowProbe.harm_2_2` is claimed in computations/formalisation/lean/probes/Row95Wave.lean, and no file is present at that path un
+      - ⓵ row 95: `ShadowProbe.harm_3_0` is claimed in computations/formalisation/lean/probes/Row95Wave.lean, and no file is present at that path un
+      - ⓵ row 95: `ShadowProbe.harm_3_1` is claimed in computations/formalisation/lean/probes/Row95Wave.lean, and no file is present at that path un
+      - ⓵ row 95: `ShadowProbe.harm_3_2` is claimed in computations/formalisation/lean/probes/Row95Wave.lean, and no file is present at that path un
+      - ⓵ row 95: `ShadowProbe.harm_3_3` is claimed in computations/formalisation/lean/probes/Row95Wave.lean, and no file is present at that path un
+      - ⓵ row 95: `ShadowProbe.s3_levels` is claimed in computations/formalisation/lean/probes/Row95Wave.lean, and no file is present at that path u
+      - ⓵ row 97: `ShadowProbe.sinh23_flow` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path und
+      - ⓵ row 97: `ShadowProbe.sds_kretschmann` is claimed in computations/formalisation/lean/probes/CurvatureInstances.lean, and no file is present
+      - ⓵ row 98: `ShadowProbe.row98_einstein_tidal` is claimed in computations/formalisation/lean/probes/CurvatureInstances.lean, and no file is pr
+      - ⓵ row 98: `ShadowProbe.static_radial_tidal` is claimed in computations/formalisation/lean/probes/CurvatureInstances.lean, and no file is pre
+      - ⓵ row 99: `ShadowProbe.two_surface_gravities` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at tha
+      - ⓵ row 100: `ShadowProbe.row104_nariai_root` is claimed in computations/formalisation/lean/probes/CurvatureInstances.lean, and no file is pre
+      - ⓵ row 100: `ShadowProbe.nariai_curvature` is claimed in computations/formalisation/lean/probes/CurvatureInstances.lean, and no file is prese
+      - ⓵ row 101: `ShadowProbe.row104_nariai_root` is claimed in computations/formalisation/lean/probes/CurvatureInstances.lean, and no file is pre
+      - ⓵ row 101: `ShadowProbe.sinh23_flow` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path un
+      - ⓵ row 102: `ShadowProbe.leaf_shear` is claimed in computations/formalisation/lean/probes/SecondSeatFoliation.lean, and no file is present at
+      - ⓵ row 103: `ShadowProbe.sds_two_ranges` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path
+      - ⓵ row 104: `ShadowProbe.row104_flat_slice` is claimed in computations/formalisation/lean/probes/CurvatureInstances.lean, and no file is pres
+      - ⓵ row 104: `ShadowProbe.row104_nariai_root` is claimed in computations/formalisation/lean/probes/CurvatureInstances.lean, and no file is pre
+      - ⓵ row 104: `ShadowProbe.nariai_curvature` is claimed in computations/formalisation/lean/probes/CurvatureInstances.lean, and no file is prese
+      - ⓵ row 105: `ShadowProbe.row104_nariai_root` is claimed in computations/formalisation/lean/probes/CurvatureInstances.lean, and no file is pre
+      - ⓵ row 106: `ShadowProbe.dS5_constant_curvature` is claimed in computations/formalisation/lean/probes/HigherDim.lean, and no file is present 
+      - ⓵ row 107: `ShadowProbe.confocal_degree` is claimed in computations/formalisation/lean/probes/NoConnectionSweep.lean, and no file is present
+      - ⓵ row 108: `ShadowProbe.section_quadric` is claimed in computations/formalisation/lean/probes/HigherDim.lean, and no file is present at that
+      - ⓵ row 108: `ShadowProbe.dS5_constant_curvature` is claimed in computations/formalisation/lean/probes/HigherDim.lean, and no file is present 
+      - ⓵ row 108: `ShadowProbe.sds_K_radial` is claimed in computations/formalisation/lean/probes/HigherDim.lean, and no file is present at that pa
+      - ⓵ row 108: `ShadowProbe.boost_pullback` is claimed in computations/formalisation/lean/probes/Row108Cut.lean, and no file is present at that 
+      - ⓵ row 108: `ShadowProbe.cut_defect` is claimed in computations/formalisation/lean/probes/Row108Cut.lean, and no file is present at that path
+      - ⓵ row 108: `ShadowProbe.cut_closure_iff` is claimed in computations/formalisation/lean/probes/Row108Cut.lean, and no file is present at that
+      - ⓵ row 108: `ShadowProbe.cut_closes_only_at_M_zero` is claimed in computations/formalisation/lean/probes/Row108Cut.lean, and no file is prese
+      - ⓵ row 108: `ShadowProbe.cut_control` is claimed in computations/formalisation/lean/probes/Row108Cut.lean, and no file is present at that pat
+      - ⓵ row 109: `ShadowProbe.ds_horizon_iff` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that path
+      - ⓵ row 109: `ShadowProbe.ds_surface_gravity` is claimed in computations/formalisation/lean/ShadowEngine.lean, and no file is present at that 
+      - ⓵ row 110: `ShadowProbe.row110_petrov` is claimed in computations/formalisation/lean/probes/CurvatureInstances.lean, and no file is present 
+====================================================================================================

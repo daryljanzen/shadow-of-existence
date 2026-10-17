@@ -22254,3 +22254,60 @@ dedicated column for the per-grade counts, and that is the register's shape — 
 
 `51 + 11 + 19 = 81`.  **Left: `ROWS.tsv : index` 7 (60's join gate) and `check_quote_pins` 12 — last, as you
 ordered.**  Nine of this cycle's induced files were restored byte-exact and `git status` is clean.
+
+## ✔ `r7441+cc66.88` — **60's JOIN GATE CLOSED TOO: `58 of 81` (`71.6 %`), `17` FULLY ACCOUNTED. ⛭ AND ONE INDUCTION FAILED IN A WAY THAT IS A MEASUREMENT: `chmod 000` CANNOT MAKE A FILE UNREADABLE TO A ROOT RUNNER**
+
+`ROWS.tsv : index` — `check_formalisation_join.py`, 60's gate — is `7 of 8` walked plus its one self-referential
+seed, so **fully accounted.  Not one line of another seat's instrument was edited**; all seven were reachable
+by data or environment, and the gate runs in 4 s, so the section cost less than a single tilt invocation.
+
+**The proof it left nothing behind:** the post-walk run is **identical line for line** to the pre-walk run —
+268 pairs over 111 of 111 claiming rows, `diff` empty.
+
+### ⛭ ① THE ONE THAT DID NOT WORK, WHICH IS THE PART WORTH YOUR TIME
+
+The *file-cannot-be-read* branch: I did the obvious thing, `chmod 000`, and **the gate stayed green** — because
+**this runner is root, and permissions do not bind uid 0.**  It took a **dangling symlink** to raise the
+`OSError` the reader catches.
+
+⚠ **Why that is more than a trick.**  The gate's own notes say the unreadable-file case is exactly what an
+in-run seed *cannot* cover — it is one of the two the external controls exist for.  And where the runner is
+root, **the obvious lever for inducing it from outside is inert too.**  So that branch is covered by neither
+the seeds nor the first thing anyone would reach for.  It IS reachable — I walked it — but the route is
+narrower than the gate's own reasoning assumes, and I would rather you heard that from me than discovered it
+the next time it matters.
+
+### ⌗ ② AND IT QUOTED THIS SEAT'S OWN FINDING BACK AT ME
+
+The no-declarations branch refuses with: *"so this gate cannot see its own subject, and it says so rather than
+reporting a clean join (`r7419` ③, `cc66`'s shape: an instrument given less state than its question needs will
+still answer)."*  **First time this walk has read its own work inside the thing it was measuring.**  Recorded
+because it is the strongest evidence yet that the register's output is being used, not just filed.
+
+### ⌗ ③ THE OTHER FIVE, AND ONE SCOPE CORRECTION I MADE TO MYSELF
+
+Inventory moved aside (names the path and the cost); **both** lean trees moved aside — my first attempt moved
+`lean/` only and the gate fired the JOIN instead, because its `TREE` is the **whole formalisation root** and 4
+more `.lean` files sit under `lean-physlib/`, so I corrected the induction rather than record the wrong
+branch; one comment-only `.lean` file for the no-declarations branch; both `formalisation-*.yml` moved aside
+for the no-scope branch; one `decl` cell re-pointed at a name its file does not declare for the `⓵` family;
+and the `⓶ᵇ` charge relay induced **additively** — an *untracked third* `formalisation-*` workflow with a
+scope and no record — so nothing tracked was touched at all.  That last one is the only refusal in the gate
+that names its own remedy: *"written to `refs/ci/lean/<stem>`."*
+
+### THE COUNT, AND WHAT IS LEFT
+
+| | `.84` | `.85` | `.86` | `.87` | now |
+|---|---|---|---|---|---|
+| **walked** | 22 | 24 | 45 | 51 | **58** |
+| self-referential | 10 | 11 | 11 | 11 | 11 |
+| pending | 49 | 46 | 25 | 19 | **12** |
+| walked | 27.2 % | 29.6 % | 55.6 % | 63.0 % | **71.6 %** |
+| fully accounted | 7 | 9 | 14 | 16 | **17** |
+
+`58 + 11 + 12 = 81`.
+
+**`check_quote_pins` is the only instrument left, with all 12 of the remaining sites — which is exactly where
+your `r7439` ⑤ said to end.**  I am going there now unless you say otherwise; the two open shape questions
+(`r7429`'s per-direction split, and the per-grade counts `tally.py` still reads out of prose) and the
+`_pushed_by_another_line` fix from `.87` are all waiting on you, not on me.

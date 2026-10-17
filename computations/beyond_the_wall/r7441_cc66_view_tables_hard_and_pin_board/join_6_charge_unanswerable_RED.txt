@@ -1,0 +1,52 @@
+====================================================================================================
+  FORMALISATION JOIN -- is every pair a `decl` cell claims still declared in the file that
+  pair names, is that file under a workflow whose record says GREEN, and is every `receipt`
+  path still there?
+====================================================================================================
+
+  ⓪ THE POSITIVE CONTROL -- can this gate see declarations at all?
+      `.lean` files found: 48
+      distinct identifiers the control reader extracts: 2005
+    ✔ the control sees 2005 identifier(s), so a verdict about a `decl` cell is a reading and not a silence
+
+  ⓪ᵇ THE IN-RUN SEEDS -- this run proving, on the real row path, that it could have fired
+    ✔ ⑴ a well-formed pair pointing at the WRONG FILE fires as a dangling reference
+        ⓵ DANGLING REFERENCE -- row SEED claims `Seeded.seeded_other` in computations/formalisation/lean/_InRunSeed/Right.lean, which declares 2 identifier(s)
+    ✔ ⑵ ...and a CORRECTLY PAIRED MULTI-GROUP cell is silent, so the seed is not rigged to fire
+        no failure, as required
+    ✔ ⑶ a GREEN record clears the workflow condition
+        no ⓶ᵇ charge, as required
+    ✔ ⑷ a NOT-GREEN record FAILS it
+        ⓶ᵇ NOT-GREEN -- `formalisation-inrunseed`'s record says it did NOT pass on this tree, and 2 claimed `.lean` file(s) sit under it: 
+    ✔ ⑸ an UNANSWERABLE record FAILS it, and does not pass
+        ⓶ᵇ UNANSWERABLE, WHICH IS NOT A PASS -- whether `formalisation-inrunseed` passed on this tree cannot be evaluated here, so this ga
+    ⇒ ** so a zero from this run is a MEASURED zero ** (`r7421` ③, `70`'s words), for the dangling-reference condition AND for the workflow condition, and the seeds are synthetic -- counted in nothing below.
+
+  ⓶ᵃ THE WORKFLOW SCOPES -- read from each workflow's own `paths:`, never from a filename
+      formalisation-mathlib.yml: ['computations/formalisation/lean/**']
+      formalisation-physlib.yml: ['computations/formalisation/lean-physlib/**']
+      formalisation-r7441walk.yml: ['computations/formalisation/lean/**']
+      `.lean` files inside at least one scope: 48 of 48
+
+  ⓶ᵇ THE RECORD -- did each workflow pass on THIS tree?  three-way, and `UNANSWERABLE` is not a pass
+      formalisation-mathlib: GREEN
+        record 1824fdab0: run 38998236359 at 2fabe10f9 -- success on an identical tree under ['computations/formalisation/lean', '.github/workflows/formalisation-mathlib.yml']
+      formalisation-physlib: GREEN
+        record e77ded1fb: run 38998236340 at 2fabe10f9 -- success on an identical tree under ['computations/formalisation/lean-physlib', 'computations/formalisation/lean/check_no
+      formalisation-r7441walk: UNANSWERABLE
+        `scripts/lean_record.py` keeps no record for this workflow, so whether it passed on this tree cannot be read here -- the remedy is written to refs/ci/lean/formalisation-r
+
+  THE INVENTORY
+      columns: ['index', 'class', 'status', 'what it needs next', 'stand-in', 'receipt', 'decl']
+      rows: 111;  rows carrying a `decl` or a `receipt`: 111
+      their statuses: {'DONE': 74, 'DONE (CHARTABLE HALF)': 2, 'GENERIC-METRIC IDENTITY': 2, 'LIBRARY GAP': 17, 'LIMIT OF A DONE ROW': 12, 'ORDER: ENGINE-REACHABLE': 1, 'ROW: A DIFFERENT KIND': 3}
+      rows carrying a `receipt` and NO `decl`: 22, in 3 status class(es) ['GENERIC-METRIC IDENTITY', 'LIBRARY GAP', 'ROW: A DIFFERENT KIND']
+        of which 0 ASSERT the claim is formalised and are charged; the rest are the empty-cell state `71`'s grammar prescribes and are not
+      ⇒ `(file, name)` pairs checked: 268 over 111 row(s), naming 28 distinct `.lean` file(s)
+    [FAIL] ⓶ᵇ UNANSWERABLE, WHICH IS NOT A PASS -- whether `formalisation-r7441walk` passed on this tree cannot be evaluated here, so this gate says so rather than succeeding (`r7423` ④, `70`'s ruling), and 28 claimed `.lean` file(s) sit under it: `scripts/lean_record.py` keeps no record for this workflow, so whether it passed on this tree cannot be read here -- the remedy is written to refs/ci/lean/formalisation-r7441walk by its own workflow's record step
+      Ⓠ every cleared pair is cleared on its FULLY QUALIFIED name: 268
+
+====================================================================================================
+  ⛔ THE FORMALISATION JOIN GATE IS RED: 1 failure(s)
+      - ⓶ᵇ UNANSWERABLE, WHICH IS NOT A PASS -- whether `formalisation-r7441walk` passed on this tree cannot be evaluated here, so this gate says so
+====================================================================================================

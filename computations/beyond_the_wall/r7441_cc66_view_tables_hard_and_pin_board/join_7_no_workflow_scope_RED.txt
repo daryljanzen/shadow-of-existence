@@ -1,0 +1,310 @@
+====================================================================================================
+  FORMALISATION JOIN -- is every pair a `decl` cell claims still declared in the file that
+  pair names, is that file under a workflow whose record says GREEN, and is every `receipt`
+  path still there?
+====================================================================================================
+
+  ⓪ THE POSITIVE CONTROL -- can this gate see declarations at all?
+      `.lean` files found: 48
+      distinct identifiers the control reader extracts: 2005
+    ✔ the control sees 2005 identifier(s), so a verdict about a `decl` cell is a reading and not a silence
+
+  ⓪ᵇ THE IN-RUN SEEDS -- this run proving, on the real row path, that it could have fired
+    ✔ ⑴ a well-formed pair pointing at the WRONG FILE fires as a dangling reference
+        ⓵ DANGLING REFERENCE -- row SEED claims `Seeded.seeded_other` in computations/formalisation/lean/_InRunSeed/Right.lean, which declares 2 identifier(s)
+    ✔ ⑵ ...and a CORRECTLY PAIRED MULTI-GROUP cell is silent, so the seed is not rigged to fire
+        no failure, as required
+    ✔ ⑶ a GREEN record clears the workflow condition
+        no ⓶ᵇ charge, as required
+    ✔ ⑷ a NOT-GREEN record FAILS it
+        ⓶ᵇ NOT-GREEN -- `formalisation-inrunseed`'s record says it did NOT pass on this tree, and 2 claimed `.lean` file(s) sit under it: 
+    ✔ ⑸ an UNANSWERABLE record FAILS it, and does not pass
+        ⓶ᵇ UNANSWERABLE, WHICH IS NOT A PASS -- whether `formalisation-inrunseed` passed on this tree cannot be evaluated here, so this ga
+    ⇒ ** so a zero from this run is a MEASURED zero ** (`r7421` ③, `70`'s words), for the dangling-reference condition AND for the workflow condition, and the seeds are synthetic -- counted in nothing below.
+
+  ⓶ᵃ THE WORKFLOW SCOPES -- read from each workflow's own `paths:`, never from a filename
+    [FAIL] ⓶ᵃ no `formalisation-*` workflow declares any path, so "under a green workflow" cannot be decided and no row could be cleared on it
+      `.lean` files inside at least one scope: 0 of 48
+    ⌗ ⓶ᵃ inside NO `formalisation-*` scope, so a row naming it could never be cleared: computations/formalisation/lean-physlib/Axioms.lean
+    ⌗ ⓶ᵃ inside NO `formalisation-*` scope, so a row naming it could never be cleared: computations/formalisation/lean-physlib/ShadowPhys.lean
+    ⌗ ⓶ᵃ inside NO `formalisation-*` scope, so a row naming it could never be cleared: computations/formalisation/lean-physlib/ShadowPhys/SinhLaw.lean
+    ⌗ ⓶ᵃ inside NO `formalisation-*` scope, so a row naming it could never be cleared: computations/formalisation/lean-physlib/controls/SorryControl.lean
+    ⌗ ⓶ᵃ inside NO `formalisation-*` scope, so a row naming it could never be cleared: computations/formalisation/lean/Axioms.lean
+    ⌗ ⓶ᵃ inside NO `formalisation-*` scope, so a row naming it could never be cleared: computations/formalisation/lean/ShadowEngine.lean
+    ⌗ ⓶ᵃ inside NO `formalisation-*` scope, so a row naming it could never be cleared: computations/formalisation/lean/ShadowFormal.lean
+    ⌗ ⓶ᵃ inside NO `formalisation-*` scope, so a row naming it could never be cleared: computations/formalisation/lean/ShadowFormal/I20.lean
+    ⌗ ⓶ᵃ inside NO `formalisation-*` scope, so a row naming it could never be cleared: computations/formalisation/lean/ShadowFormal/Nariai.lean
+    ⌗ ⓶ᵃ inside NO `formalisation-*` scope, so a row naming it could never be cleared: computations/formalisation/lean/controls/SorryControl.lean
+    ⌗ ⓶ᵃ inside NO `formalisation-*` scope, so a row naming it could never be cleared: computations/formalisation/lean/probes/AlongCurveProbe.lean
+    ⌗ ⓶ᵃ inside NO `formalisation-*` scope, so a row naming it could never be cleared: computations/formalisation/lean/probes/Bianchi2.lean
+    ⌗ ⓶ᵃ inside NO `formalisation-*` scope, so a row naming it could never be cleared: computations/formalisation/lean/probes/BianchiI.lean
+    ⌗ ⓶ᵃ inside NO `formalisation-*` scope, so a row naming it could never be cleared: computations/formalisation/lean/probes/Campaign6A.lean
+    ⌗ ⓶ᵃ inside NO `formalisation-*` scope, so a row naming it could never be cleared: computations/formalisation/lean/probes/Campaign7.lean
+    ⌗ ⓶ᵃ inside NO `formalisation-*` scope, so a row naming it could never be cleared: computations/formalisation/lean/probes/ConformalLCProbe.lean
+    ⌗ ⓶ᵃ inside NO `formalisation-*` scope, so a row naming it could never be cleared: computations/formalisation/lean/probes/ConnectionProbe.lean
+    ⌗ ⓶ᵃ inside NO `formalisation-*` scope, so a row naming it could never be cleared: computations/formalisation/lean/probes/CurvatureInstances.lean
+    ⌗ ⓶ᵃ inside NO `formalisation-*` scope, so a row naming it could never be cleared: computations/formalisation/lean/probes/FRWk.lean
+    ⌗ ⓶ᵃ inside NO `formalisation-*` scope, so a row naming it could never be cleared: computations/formalisation/lean/probes/FlowProbe.lean
+    ⌗ ⓶ᵃ inside NO `formalisation-*` scope, so a row naming it could never be cleared: computations/formalisation/lean/probes/GeodesicExistProbe.lean
+    ⌗ ⓶ᵃ inside NO `formalisation-*` scope, so a row naming it could never be cleared: computations/formalisation/lean/probes/GeodesicProbe.lean
+    ⌗ ⓶ᵃ inside NO `formalisation-*` scope, so a row naming it could never be cleared: computations/formalisation/lean/probes/HigherDim.lean
+    ⌗ ⓶ᵃ inside NO `formalisation-*` scope, so a row naming it could never be cleared: computations/formalisation/lean/probes/InstanceProbe.lean
+    ⌗ ⓶ᵃ inside NO `formalisation-*` scope, so a row naming it could never be cleared: computations/formalisation/lean/probes/Legendre58.lean
+    ⌗ ⓶ᵃ inside NO `formalisation-*` scope, so a row naming it could never be cleared: computations/formalisation/lean/probes/LieDerivProbe.lean
+    ⌗ ⓶ᵃ inside NO `formalisation-*` scope, so a row naming it could never be cleared: computations/formalisation/lean/probes/NoConnectionSweep.lean
+    ⌗ ⓶ᵃ inside NO `formalisation-*` scope, so a row naming it could never be cleared: computations/formalisation/lean/probes/NonDiag.lean
+    ⌗ ⓶ᵃ inside NO `formalisation-*` scope, so a row naming it could never be cleared: computations/formalisation/lean/probes/PseudoRiemannianProbe.lean
+    ⌗ ⓶ᵃ inside NO `formalisation-*` scope, so a row naming it could never be cleared: computations/formalisation/lean/probes/Row108Cut.lean
+    ⌗ ⓶ᵃ inside NO `formalisation-*` scope, so a row naming it could never be cleared: computations/formalisation/lean/probes/Row18Cubic.lean
+    ⌗ ⓶ᵃ inside NO `formalisation-*` scope, so a row naming it could never be cleared: computations/formalisation/lean/probes/Row59Euler.lean
+    ⌗ ⓶ᵃ inside NO `formalisation-*` scope, so a row naming it could never be cleared: computations/formalisation/lean/probes/Row59Quartic.lean
+    ⌗ ⓶ᵃ inside NO `formalisation-*` scope, so a row naming it could never be cleared: computations/formalisation/lean/probes/Row66Series.lean
+    ⌗ ⓶ᵃ inside NO `formalisation-*` scope, so a row naming it could never be cleared: computations/formalisation/lean/probes/Row77Killing.lean
+    ⌗ ⓶ᵃ inside NO `formalisation-*` scope, so a row naming it could never be cleared: computations/formalisation/lean/probes/Row79Leaf.lean
+    ⌗ ⓶ᵃ inside NO `formalisation-*` scope, so a row naming it could never be cleared: computations/formalisation/lean/probes/Row7Count.lean
+    ⌗ ⓶ᵃ inside NO `formalisation-*` scope, so a row naming it could never be cleared: computations/formalisation/lean/probes/Row95Wave.lean
+    ⌗ ⓶ᵃ inside NO `formalisation-*` scope, so a row naming it could never be cleared: computations/formalisation/lean/probes/RunningLayer.lean
+    ⌗ ⓶ᵃ inside NO `formalisation-*` scope, so a row naming it could never be cleared: computations/formalisation/lean/probes/S3Frame.lean
+    ⌗ ⓶ᵃ inside NO `formalisation-*` scope, so a row naming it could never be cleared: computations/formalisation/lean/probes/SecondSeatFRW.lean
+    ⌗ ⓶ᵃ inside NO `formalisation-*` scope, so a row naming it could never be cleared: computations/formalisation/lean/probes/SecondSeatFoliation.lean
+    ⌗ ⓶ᵃ inside NO `formalisation-*` scope, so a row naming it could never be cleared: computations/formalisation/lean/probes/SecondSeatKS.lean
+    ⌗ ⓶ᵃ inside NO `formalisation-*` scope, so a row naming it could never be cleared: computations/formalisation/lean/probes/SecondSeatLTB.lean
+    ⌗ ⓶ᵃ inside NO `formalisation-*` scope, so a row naming it could never be cleared: computations/formalisation/lean/probes/SecondSeatStatic.lean
+    ⌗ ⓶ᵃ inside NO `formalisation-*` scope, so a row naming it could never be cleared: computations/formalisation/lean/probes/SmoothFlowProbe.lean
+    ⌗ ⓶ᵃ inside NO `formalisation-*` scope, so a row naming it could never be cleared: computations/formalisation/lean/probes/TangherliniD.lean
+    ⌗ ⓶ᵃ inside NO `formalisation-*` scope, so a row naming it could never be cleared: computations/formalisation/lean/probes/TransportProbe.lean
+
+  ⓶ᵇ THE RECORD -- did each workflow pass on THIS tree?  three-way, and `UNANSWERABLE` is not a pass
+    ⌗ ⓶ᵇ no workflow stem to read a record for, which `⓶ᵃ` has already charged
+
+  THE INVENTORY
+      columns: ['index', 'class', 'status', 'what it needs next', 'stand-in', 'receipt', 'decl']
+      rows: 111;  rows carrying a `decl` or a `receipt`: 111
+      their statuses: {'DONE': 74, 'DONE (CHARTABLE HALF)': 2, 'GENERIC-METRIC IDENTITY': 2, 'LIBRARY GAP': 17, 'LIMIT OF A DONE ROW': 12, 'ORDER: ENGINE-REACHABLE': 1, 'ROW: A DIFFERENT KIND': 3}
+      rows carrying a `receipt` and NO `decl`: 22, in 3 status class(es) ['GENERIC-METRIC IDENTITY', 'LIBRARY GAP', 'ROW: A DIFFERENT KIND']
+        of which 0 ASSERT the claim is formalised and are charged; the rest are the empty-cell state `71`'s grammar prescribes and are not
+    [FAIL] ⓶ᵃ row 0's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/FRWk.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 1's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/BianchiI.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 2's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/FRWk.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 3's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/BianchiI.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 4's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/FRWk.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 4's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/ShadowEngine.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 5's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/FRWk.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 5's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/ShadowEngine.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 6's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/Bianchi2.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 7's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/Campaign6A.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 7's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/Row7Count.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 8's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/ShadowEngine.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 9's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/HigherDim.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 10's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/HigherDim.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 11's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/ShadowEngine.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 12's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/CurvatureInstances.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 13's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/SecondSeatLTB.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 14's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/NoConnectionSweep.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 15's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/NoConnectionSweep.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 16's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/NoConnectionSweep.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 17's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/CurvatureInstances.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 17's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/NonDiag.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 19's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/Campaign6A.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 19's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/SecondSeatFRW.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 19's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/FRWk.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 19's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/ShadowEngine.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 19's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/RunningLayer.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 21's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/CurvatureInstances.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 22's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/ShadowEngine.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 25's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/NoConnectionSweep.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 26's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/ShadowEngine.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 27's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/NoConnectionSweep.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 28's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/CurvatureInstances.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 29's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/ShadowEngine.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 30's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/NoConnectionSweep.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 31's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/NoConnectionSweep.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 32's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/ShadowEngine.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 33's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/NoConnectionSweep.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 34's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/ShadowEngine.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 35's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/HigherDim.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 35's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/TangherliniD.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 36's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/ShadowEngine.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 37's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/NoConnectionSweep.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 38's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/ShadowEngine.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 39's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/NoConnectionSweep.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 40's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/ShadowEngine.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 41's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/ShadowEngine.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 42's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/InstanceProbe.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 43's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/ShadowEngine.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 44's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/ShadowEngine.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 45's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/CurvatureInstances.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 47's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/SecondSeatFoliation.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 48's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/SecondSeatStatic.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 49's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/SecondSeatStatic.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 50's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/NoConnectionSweep.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 51's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/SecondSeatStatic.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 52's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/CurvatureInstances.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 54's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/SecondSeatKS.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 55's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/ShadowEngine.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 56's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/ShadowEngine.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 58's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/Campaign7.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 58's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/Legendre58.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 59's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/Row59Quartic.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 59's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/S3Frame.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 59's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/Row59Euler.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 61's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/NoConnectionSweep.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 65's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/S3Frame.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 66's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/S3Frame.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 66's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/NonDiag.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 66's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/Row66Series.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 67's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/S3Frame.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 67's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/NonDiag.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 71's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/Campaign6A.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 71's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/CurvatureInstances.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 72's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/SecondSeatFRW.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 74's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/CurvatureInstances.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 75's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/CurvatureInstances.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 76's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/ShadowEngine.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 77's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/ShadowEngine.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 77's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/Row77Killing.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 78's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/ShadowEngine.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 79's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/Row79Leaf.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 81's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/CurvatureInstances.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 83's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/NonDiag.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 87's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/NoConnectionSweep.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 88's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/NoConnectionSweep.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 90's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/NoConnectionSweep.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 91's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/ShadowEngine.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 92's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/ShadowEngine.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 93's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/CurvatureInstances.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 94's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/SecondSeatFoliation.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 95's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/Row95Wave.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 97's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/ShadowEngine.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 97's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/CurvatureInstances.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 98's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/CurvatureInstances.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 99's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/ShadowEngine.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 100's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/CurvatureInstances.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 101's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/CurvatureInstances.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 101's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/ShadowEngine.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 102's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/SecondSeatFoliation.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 103's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/ShadowEngine.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 104's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/CurvatureInstances.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 105's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/CurvatureInstances.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 106's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/HigherDim.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 107's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/NoConnectionSweep.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 108's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/HigherDim.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 108's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/Row108Cut.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 109's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/ShadowEngine.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+    [FAIL] ⓶ᵃ row 110's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/CurvatureInstances.lean  ⇒ the remedy is written to a `formalisation-*` workflow's own `paths:` in .github/workflows
+      ⇒ `(file, name)` pairs checked: 268 over 111 row(s), naming 28 distinct `.lean` file(s)
+      Ⓠ every cleared pair is cleared on its FULLY QUALIFIED name: 268
+
+====================================================================================================
+  ⛔ THE FORMALISATION JOIN GATE IS RED: 110 failure(s)
+      - ⓶ᵃ no `formalisation-*` workflow declares any path, so "under a green workflow" cannot be decided and no row could be cleared on it
+      - ⓶ᵃ row 0's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/FRWk.lean  ⇒ the
+      - ⓶ᵃ row 1's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/BianchiI.lean  ⇒
+      - ⓶ᵃ row 2's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/FRWk.lean  ⇒ the
+      - ⓶ᵃ row 3's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/BianchiI.lean  ⇒
+      - ⓶ᵃ row 4's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/FRWk.lean  ⇒ the
+      - ⓶ᵃ row 4's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/ShadowEngine.lean  ⇒ th
+      - ⓶ᵃ row 5's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/FRWk.lean  ⇒ the
+      - ⓶ᵃ row 5's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/ShadowEngine.lean  ⇒ th
+      - ⓶ᵃ row 6's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/Bianchi2.lean  ⇒
+      - ⓶ᵃ row 7's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/Campaign6A.lean 
+      - ⓶ᵃ row 7's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/Row7Count.lean  
+      - ⓶ᵃ row 8's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/ShadowEngine.lean  ⇒ th
+      - ⓶ᵃ row 9's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/HigherDim.lean  
+      - ⓶ᵃ row 10's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/HigherDim.lean 
+      - ⓶ᵃ row 11's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/ShadowEngine.lean  ⇒ t
+      - ⓶ᵃ row 12's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/CurvatureInstan
+      - ⓶ᵃ row 13's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/SecondSeatLTB.l
+      - ⓶ᵃ row 14's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/NoConnectionSwe
+      - ⓶ᵃ row 15's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/NoConnectionSwe
+      - ⓶ᵃ row 16's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/NoConnectionSwe
+      - ⓶ᵃ row 17's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/CurvatureInstan
+      - ⓶ᵃ row 17's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/NonDiag.lean  ⇒
+      - ⓶ᵃ row 19's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/Campaign6A.lean
+      - ⓶ᵃ row 19's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/SecondSeatFRW.l
+      - ⓶ᵃ row 19's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/FRWk.lean  ⇒ th
+      - ⓶ᵃ row 19's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/ShadowEngine.lean  ⇒ t
+      - ⓶ᵃ row 19's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/RunningLayer.le
+      - ⓶ᵃ row 21's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/CurvatureInstan
+      - ⓶ᵃ row 22's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/ShadowEngine.lean  ⇒ t
+      - ⓶ᵃ row 25's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/NoConnectionSwe
+      - ⓶ᵃ row 26's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/ShadowEngine.lean  ⇒ t
+      - ⓶ᵃ row 27's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/NoConnectionSwe
+      - ⓶ᵃ row 28's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/CurvatureInstan
+      - ⓶ᵃ row 29's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/ShadowEngine.lean  ⇒ t
+      - ⓶ᵃ row 30's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/NoConnectionSwe
+      - ⓶ᵃ row 31's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/NoConnectionSwe
+      - ⓶ᵃ row 32's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/ShadowEngine.lean  ⇒ t
+      - ⓶ᵃ row 33's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/NoConnectionSwe
+      - ⓶ᵃ row 34's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/ShadowEngine.lean  ⇒ t
+      - ⓶ᵃ row 35's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/HigherDim.lean 
+      - ⓶ᵃ row 35's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/TangherliniD.le
+      - ⓶ᵃ row 36's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/ShadowEngine.lean  ⇒ t
+      - ⓶ᵃ row 37's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/NoConnectionSwe
+      - ⓶ᵃ row 38's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/ShadowEngine.lean  ⇒ t
+      - ⓶ᵃ row 39's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/NoConnectionSwe
+      - ⓶ᵃ row 40's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/ShadowEngine.lean  ⇒ t
+      - ⓶ᵃ row 41's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/ShadowEngine.lean  ⇒ t
+      - ⓶ᵃ row 42's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/InstanceProbe.l
+      - ⓶ᵃ row 43's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/ShadowEngine.lean  ⇒ t
+      - ⓶ᵃ row 44's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/ShadowEngine.lean  ⇒ t
+      - ⓶ᵃ row 45's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/CurvatureInstan
+      - ⓶ᵃ row 47's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/SecondSeatFolia
+      - ⓶ᵃ row 48's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/SecondSeatStati
+      - ⓶ᵃ row 49's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/SecondSeatStati
+      - ⓶ᵃ row 50's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/NoConnectionSwe
+      - ⓶ᵃ row 51's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/SecondSeatStati
+      - ⓶ᵃ row 52's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/CurvatureInstan
+      - ⓶ᵃ row 54's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/SecondSeatKS.le
+      - ⓶ᵃ row 55's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/ShadowEngine.lean  ⇒ t
+      - ⓶ᵃ row 56's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/ShadowEngine.lean  ⇒ t
+      - ⓶ᵃ row 58's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/Campaign7.lean 
+      - ⓶ᵃ row 58's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/Legendre58.lean
+      - ⓶ᵃ row 59's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/Row59Quartic.le
+      - ⓶ᵃ row 59's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/S3Frame.lean  ⇒
+      - ⓶ᵃ row 59's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/Row59Euler.lean
+      - ⓶ᵃ row 61's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/NoConnectionSwe
+      - ⓶ᵃ row 65's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/S3Frame.lean  ⇒
+      - ⓶ᵃ row 66's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/S3Frame.lean  ⇒
+      - ⓶ᵃ row 66's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/NonDiag.lean  ⇒
+      - ⓶ᵃ row 66's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/Row66Series.lea
+      - ⓶ᵃ row 67's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/S3Frame.lean  ⇒
+      - ⓶ᵃ row 67's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/NonDiag.lean  ⇒
+      - ⓶ᵃ row 71's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/Campaign6A.lean
+      - ⓶ᵃ row 71's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/CurvatureInstan
+      - ⓶ᵃ row 72's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/SecondSeatFRW.l
+      - ⓶ᵃ row 74's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/CurvatureInstan
+      - ⓶ᵃ row 75's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/CurvatureInstan
+      - ⓶ᵃ row 76's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/ShadowEngine.lean  ⇒ t
+      - ⓶ᵃ row 77's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/ShadowEngine.lean  ⇒ t
+      - ⓶ᵃ row 77's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/Row77Killing.le
+      - ⓶ᵃ row 78's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/ShadowEngine.lean  ⇒ t
+      - ⓶ᵃ row 79's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/Row79Leaf.lean 
+      - ⓶ᵃ row 81's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/CurvatureInstan
+      - ⓶ᵃ row 83's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/NonDiag.lean  ⇒
+      - ⓶ᵃ row 87's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/NoConnectionSwe
+      - ⓶ᵃ row 88's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/NoConnectionSwe
+      - ⓶ᵃ row 90's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/NoConnectionSwe
+      - ⓶ᵃ row 91's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/ShadowEngine.lean  ⇒ t
+      - ⓶ᵃ row 92's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/ShadowEngine.lean  ⇒ t
+      - ⓶ᵃ row 93's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/CurvatureInstan
+      - ⓶ᵃ row 94's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/SecondSeatFolia
+      - ⓶ᵃ row 95's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/Row95Wave.lean 
+      - ⓶ᵃ row 97's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/ShadowEngine.lean  ⇒ t
+      - ⓶ᵃ row 97's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/CurvatureInstan
+      - ⓶ᵃ row 98's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/CurvatureInstan
+      - ⓶ᵃ row 99's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/ShadowEngine.lean  ⇒ t
+      - ⓶ᵃ row 100's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/CurvatureInsta
+      - ⓶ᵃ row 101's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/CurvatureInsta
+      - ⓶ᵃ row 101's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/ShadowEngine.lean  ⇒ 
+      - ⓶ᵃ row 102's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/SecondSeatFoli
+      - ⓶ᵃ row 103's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/ShadowEngine.lean  ⇒ 
+      - ⓶ᵃ row 104's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/CurvatureInsta
+      - ⓶ᵃ row 105's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/CurvatureInsta
+      - ⓶ᵃ row 106's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/HigherDim.lean
+      - ⓶ᵃ row 107's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/NoConnectionSw
+      - ⓶ᵃ row 108's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/HigherDim.lean
+      - ⓶ᵃ row 108's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/Row108Cut.lean
+      - ⓶ᵃ row 109's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/ShadowEngine.lean  ⇒ 
+      - ⓶ᵃ row 110's file is inside no `formalisation-*` scope, so no run could ever clear it: computations/formalisation/lean/probes/CurvatureInsta
+====================================================================================================
