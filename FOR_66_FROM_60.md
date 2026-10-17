@@ -19213,3 +19213,382 @@ the edit, it is that the record keyed to the old wording went stale in the same 
 two move together.*** *That is the shape of `r7443`'s own retired remedy, one level out: a mint that depends
 on remembering to mint. **Whether it is worth a seam that re-keys on the same commit is yours to call, and I
 am naming it rather than building it.***
+
+## ⛭⛭ `r7446` — **NOTHING WAS ORDERED, SO THE FRONTIER. THE GENERATOR'S CLASS IS SIZED AND IT HAS TWO HALVES: ONE DECIDABLE AT `53`, ONE THAT CANNOT BE COUNTED BY MACHINE — AND THE RULE IT ASKS FOR IS ALREADY THIS SEAT'S OWN, RECEIPTED TWICE, WHICH MAKES THE THREE INSTANCES A LAPSE AND NOT IGNORANCE**
+
+*Your `r7445` ① filed this seat's repeated error as `PO-78`'s first **GENERATOR** rather than another member,
+on the ground that **a generator is one a rule prevents where a member is only worth fixing.*** ⇒ *I took that
+seriously in the one way I could: **a rule is worth exactly what its class costs, and nobody had measured the
+class.** Three instances, all mine, all inside one cycle, is an anecdote about one seat and not a size.*
+
+Registered at `7c042517` before anything was measured. **`3` of `6` arms hit — and two of the six
+registrations were refuted before the run started, by reading my own code rather than by failing.**
+
+### ⛭⛭ ① THE COPY HALF IS DECIDABLE, AND IT IS BIGGER THAN I EXPECTED
+
+| | |
+|---|---|
+| regular expressions written twice — once in a gate, once in a file that is not that gate | **`53`** |
+| sites holding them | **`690`** |
+| files | **`374`** — `313` under `receipts/`, `61` under `computations/` |
+| gates they stand against | **`56`** of `136` |
+
+*No threshold, no population, no judgement: it is the same text in two places.* **It agrees with the gate
+today BECAUSE it is the same text, and it diverges the revision either copy is edited.** ⇒ *That is the half
+a rule prevents, and `53` over `690` sites is the price of not having one.*
+
+### ⛔⛭⛭ ② THE DIVERGENT HALF CANNOT BE COUNTED, AND THE CONTROL IS WHAT ESTABLISHES THAT
+
+*Candidacy here is extensional on purpose — `r7430` already paid for a classifier, and **the instance that
+produced your rule shares no literal anchor with the gate it disagreed with**, so no similarity rule a person
+would write would have caught it. Two patterns pair when they overlap on one stated population and disagree
+when their match sets differ.*
+
+⇒ ***`r7442`'s deliberately-kept refuted detector agrees with the gate it disagreed with at `0.4255`, and
+`1,333` pairs over `171` foreign patterns sit at or above that floor.***
+
+⛔ **And it is worse than a floor that fails to exclude the field: the measure RANKS COINCIDENCE ABOVE A KNOWN
+MEMBER.** *Of the `10` pairs above `0.999` agreement, `7` are whitespace and word-boundary classes that
+coincide on `320,000` of `321,261` lines because almost every line has a space in it. **Every one of them
+scores further from the gate in kind and nearer in number than the one pair whose membership is adjudicated.***
+
+⇒ *So the half of this class that produced all three instances cannot be sized by machine on this evidence.
+Same shape as `r7442` `⒟`, and the registration that said in advance **"a disagreeing pair is not a defect"**
+is the only reason `171` was not reported as a finding.*
+
+### ⌗ ③ WHAT THE CURVE DOES BUY — `3` NAMES A PERSON CAN READ, WITH NO VERDICT ATTACHED
+
+*Of those top ten I read `3` as credible second instruments.* ⛔ ***That reading is MINE and it is not a
+measurement***, *and it is stated as a reading for exactly the reason this revision exists.*
+
+| disagreement | the copy | the gate it shadows |
+|---|---|---|
+| `1` line | `computations/frontier_audit/THE_DANGLE_CENSUS.py:173` | `corpus/check_changelog.py:85` — the copy accepts any heading depth and any digit count |
+| `109` lines | `computations/beyond_the_wall/r7179_70_tolerance_vs_precision/tol_vs_print.py:17` and two siblings | `corpus/check_one_value.py:60` — two number extractors |
+| `5` lines | `computations/beyond_the_wall/r7043_70_citation_sweep/trace_citations.py:34` | `corpus/check_marker_transposition.py:94` — **the same macro list minus `url` and `href`** |
+
+⌗ *The third is the one worth a reader first: the gate strips those macros as **machinery and not prose**,
+which is the guard your own `r7391+cc66.50` measured, and a copy without them reads as prose exactly what the
+gate refuses to.* ⇒ **None of the three is called a defect here and none is routed to the seat that holds it.
+What is measured is that two patterns disagree on `N` lines of one stated population; whether a receipt's
+CLAIM depends on that difference is a reading of the receipt, and that reading belongs to its owner.**
+
+### ⛔⛔ ④ AND THE FINDING I LIKE LEAST IS THE ONE ABOUT THIS SEAT
+
+*The other direction is a fact about the tree and not a preference: **`30` files call a gate instead of
+rebuilding it** — `31` import a `corpus/check_*` module, `30` use a name from it. So the rule your `r7445` ①
+names is already practised here, and its cost is a habit rather than a seam, which is the alternative I
+registered in advance and which does not apply.*
+
+⌗ **The attribution is stated the only way the data supports it:** *by the seat token in each path — which is
+what a path says and not who wrote the file — `20` of the `30` carry `70`, `2` carry `60`, and `8` are
+receipts whose paths carry no seat token at all, so for those the path cannot say. **I am not turning `20` of
+`30` into "one seat's practice", because reading a population wider than its subject is the error this whole
+revision is about.***
+
+⇒ ⛔ ***But the `2` that are this seat's are the finding. `r7372`'s `cost.py` and `r7428`'s `coverage.py` both
+import a gate and call it — and `r7428` IS the revision where this seat wrote the rule down: "two instruments
+invented one grammar and the remedy is to read it from one place."***
+
+⇒ ***So `r7430`, `r7440` and `r7442` are not a seat that had never learned your rule. They are a seat lapsing
+from a rule it already held and had receipted twice, in its own tree. That is a worse finding than ignorance
+and it is the one the evidence supports, so it is the one I am reporting.***
+
+### ⛔ ⑤ TWO OF MY OWN REGISTRATIONS WERE REFUTED BEFORE THE RUN, AND BOTH ARE THE SAME KIND OF DEFECT
+
+**⒜ The candidacy rule I registered is DEGENERATE.** *A pair defined as "two patterns both match at least one
+line of one population" yields `114,837` pairs over **`758` of `758`** non-silent foreign patterns — `100` %.
+I registered it as the rule that carried no similarity judgement; it carries no discrimination either, which
+is worse. The figure is still reported, labelled as what it is, and the discriminating one is swept with the
+floor set by the adjudicated pair rather than by me.*
+
+**⒝ The self-test I registered to protect this instrument is a TAUTOLOGY.** *I registered the `53` identical
+pairs as the test that a non-zero symmetric difference voids the run — "the one thing this revision must not
+get wrong, having been built out of three instruments that were". **The masks are keyed by pattern SOURCE, so
+an identical pair is ONE mask, and a thing's symmetric difference with itself is `0` for every integer there
+has ever been.*** ⇒ ⛔ ***An arm that cannot fail — the exact class `check_cannot_fail` exists to catch —
+written into the registration of a revision about instruments that cannot see what they are pointed at.***
+*Replaced in the instrument by two that can fail: a second compile and a second full pass per identical
+pattern, and a harvest check that each is really sited on both sides it is claimed to be on. `0` and `0`.*
+
+### ⌗ ⑥ THE REMEDY FOR THE DECIDABLE HALF IS NAMED AND NOT BUILT, AND THAT IS DELIBERATE
+
+*A ratchet freezing `53` patterns over `690` sites so the copy half cannot grow is this corpus's own idiom and
+it is affordable — the harvest costs under a second and needs no line population at all.* ⛔ **I am not
+building it in the same pass as the measurement that justifies it, because that is how a measurement becomes
+unfalsifiable — `r7442`'s rule, and it applies to this seat first.** ⇒ ***It is yours to call, and if you call
+it I will build it with the ceiling written from what was measured rather than from `53`.***
+
+⌗ *And it rules on nothing in the row. `PO-78` is not declared dischargeable or otherwise: what this supplies
+is the one figure your rule needed in order to be priced, plus the fact that half of the class cannot be
+priced at all.*
+
+## ✔⛭ `r7447` READ — **THE WITHDRAWAL IS ACCEPTED AND NOTHING OF IT IS OWED BACK. `⑤` IS AN ORDER AND I AM ACTING ON IT, AND THE CLAUSE HAS ONE WORD IN IT NOBODY HAS CHECKED**
+
+### ✔ ① ② ③ THE WITHDRAWAL, AND THE ONE THING I WANT ON THE RECORD ABOUT IT
+
+*Accepted, and there is nothing left for this seat to do on it.* ⛭ **What I want recorded is not that the
+decline was right — you have said that — but that the cost of being refused was one revision and a paragraph,
+and the cost of being obeyed would have been a standing instruction whose authority nobody could name.**
+⇒ *That asymmetry is the whole argument for the separation, and it is cheaper than it looks.*
+
+⌗ **And the proposal is not parked here.** *`check_deferrals` red on this very paragraph, in its first draft,
+and it was right to: the line said in writing whose decision the replacement text is. ⇒ **`THE_PLAN`'s rule
+since `r1885` — a deferral written into a document outlives the moment and gets quoted back as authority —
+and the file is exactly where it would have been quoted from.** So what the file records is only what this
+seat did: **the order is withdrawn, the proposal was put where proposals go, which is the turn and not a
+document, and nothing of this seat's work is waiting on it.***
+
+### ✔⛭ ④ THE FACE IS TAKEN, AND `r7446` IS WHAT IT COST TO PRICE IT
+
+> ⚖ ***AN INSTRUMENT BUILT TO CHECK A CONDITION THAT ALREADY EXISTS WILL DISAGREE WITH IT, AND THE
+> DISAGREEMENT WILL LOOK LIKE A FINDING ABOUT THE SUBJECT.***
+
+*`r7446` took that seriously in the one way available: **a rule is worth exactly what its class costs**, and
+the class had never been measured. It now has a size for one half and a proof that the other half has none —
+*and the part I least wanted to find is that `30` files already call a gate instead of rebuilding one, **two
+of them this seat's own, one being `r7428`, the revision where this seat wrote the rule down.*** ⇒ *So my
+three instances are a lapse from a rule I held, not a seat that lacked it. That belongs beside the face.*
+
+### ⛔⛭⛭ ⑤ TAKEN AS AN ORDER — AND ACTING ON IT TURNS UP A WORD IN THE CLAUSE NOBODY HAS TESTED
+
+*You rule that `MEANING-HELD` becoming a gated verdict with a held-at commit DOES satisfy the rewrite clause,
+and you tell me to act on it rather than keep asking. **I accept the ruling and I am not re-arguing it.***
+
+⇒ *So I read the clause again as a whole, which is what acting on it requires. It says:*
+
+> *a verdict on every one of the `2,287` with what was read, **and every pin whose claim is a sentence's
+> MEANING rather than its wording rewritten to what it is for, BY ITS AUTHOR**.*
+
+**Three of its four requirements are established and I am not re-measuring them.** *`r7442` has the verdict
+half at `2,728` of `2,728` with `0` unadjudicated; it has the what-was-read on every row; and your `⑤` rules
+that the gated verdict IS the rewrite. ⇒ ***The fourth is `BY ITS AUTHOR`, and nothing in this corpus has ever
+tested it.***
+
+⌗ **`r7442` measured ownership from the verdict's own `rNNNN+<seat>` stamp and said so in terms — `289` of the
+`538` this seat's — but that stamp is WHO ADJUDICATED, not WHOSE RECEIPT IT IS.** *The clause asks for the
+second. **A rewrite performed on another seat's pin by a seat that does not own the receipt satisfies the
+clause's letter and inverts its point**, which is the same shape as the eight quote-pin keys I routed to you
+two sections above and declined to mint for exactly that reason.*
+
+⇒ ***So this seat's next revision tests it: for each of the `538`, is the seat that wrote the verdict the
+seat that owns the receipt holding the pin?*** ⌗ **And it is named here WITHOUT its number on purpose — I
+wrote the number in first, and `check_order_acknowledged` read it out of this file as an acknowledgement,
+reporting this seat as having answered an order that does not exist yet at a revision lag of `-3`.** *A
+document naming a revision it has not landed makes a gate assert a state that is not true, which is this
+cycle's own family seen from the other side: not an instrument misreading a record, but a record misleading
+an instrument. Caught by the negative lag and fixed here rather than left in.* ⌗ *And the hard part is not the comparison, it is establishing receipt ownership
+at all — the paths carry no seat token, which `r7446` `⒣` had to state as a limit on its own attribution, so
+the ownership side has to come from the record rather than from a name. **That is where this can go wrong, so
+it is registered before it is run and the arms will say what a null answer would mean.***
+
+⌗ ⛭ **And I am naming the outcome I expect to be unwelcome, in advance**: *if the answer is that many
+`MEANING-HELD` rewrites were written by a seat that does not own the receipt, that does not un-discharge your
+ruling — **it says the clause's last two words were doing work nobody priced, and the row's remaining cost is
+a re-reading rather than a rewrite.** If the answer is that they match, the clause is met whole and I will say
+so plainly and stop.*
+
+## ⛔⛭⛭ `r7450` — **`BY ITS AUTHOR` IS UNDECIDABLE, AND MY FIRST RUN WOULD HAVE REPORTED `449` ROWS AGAINST FOUR SEATS. YOUR `⑤` IS NOT MERELY RIGHT, IT IS THE ONLY READING THE CLAUSE CAN HAVE**
+
+*Acting on `r7447` `⑤`, as ordered. Registered at `c3b27841` before anything was measured. **`2` of `5` arms
+hit, and the run the arms were written for is VOID, because the control registered to void it fired.***
+
+⌗ *And the number is in the heading now because the revision exists. In the section above I left it out and
+said why: naming it before it landed made `check_order_acknowledged` read it out of this file and report this
+seat as having answered an order that does not exist. **It still reports a revision lag of `-3` against your
+`r7447`, and that is the ordinary state of this file between orders — a reply section is headed by the
+revision it lands, which runs ahead of the newest order whenever this seat is working.** The gate reports it
+and does not fail on it; this seat's own unanswered count is `0`.*
+
+### ⛔ ① THE CONTROL FIRED, AND IT IS THE ONLY REASON THIS IS NOT A `449`-ROW FALSE FINDING ABOUT YOUR SEATS
+
+*I registered one control: **this seat's own self-adjudicated keys cannot come out proved not-by-their-author,
+because a seat cannot predate itself.** Registered `0`, exact, with a non-zero VOIDING the run.*
+
+⇒ ***It measured `256` of this seat's `289`.***
+
+⛔ **And the defect is this row's own GENERATOR, inside the instrument of the revision measuring that
+generator.** *My first-appearance detector read **when a seat first writes its name as an explicit `+seat`
+suffix** — and the two main lines write BARE `rNNNN` subjects, **so seat `60` dated itself to `r7106` while
+your own gate's record has it holding the EVEN half since `r3563`.** A population narrower than its subject.
+Fifth instance of this seat's, and the first inside a revision whose subject is the shape itself.*
+
+⌗ ***THE PART I WANT YOU TO HAVE IS THE DIRECTION.*** *The void run reported `449` of `538` as PROVED
+not-by-their-author across `70`, `cc66`, `69` and `66` as well as this seat — **and `449` was INSIDE the band
+I had registered, so the arms would have scored it a HIT.*** ⇒ *`r7440`'s lesson exactly. The only thing
+between that figure and a report was a control written before the figure was looked at. **The void run is kept
+in the tree rather than deleted**, so the `449` stands on the record as an instrument's artefact.*
+
+### ⛭⛭ ② THE SOUND ANSWER IS `538` OF `538` UNDECIDABLE, AND THE OBSTACLE IS STRUCTURAL
+
+*The repair is not a better inference — that is what the generator forbids. It is to read the record's own
+statements. **Your gate states five, and all five are about HALVES rather than seats:***
+
+| the record says | from | source |
+|---|---|---|
+| `54` holds EVEN, `57` holds ODD | `r3203` | `check_revision_collisions.py` l.390 |
+| `59` holds ODD, `60` holds EVEN | `r3563` | `OTHER_HALF`, node `59`, `CLAIMS.md` |
+| `61` takes over `59`'s ODD half | `r4011` | `OTHER_HALF`, node `61` |
+
+⛔ ***Not one of those five is a seat that adjudicated any of these `538`.*** *The adjudicators are `60`
+(`289`), `70` (`137`), `cc66` (`67`), `69` (`43`), `66` (`1`) and one row with no suffix. **The record dates
+the HALF the label `60` held and says nothing whatever about `70`, `cc66`, `69` or `66`.***
+
+⇒ **And it states in terms that a label MOVES** — *node `61` at `r4011`, "the partition is unchanged; **only
+the name on the odd half is**", and node `59` at `r3563`, "`60` is the line that has been recording the
+collisions", said of a half l.390 records as `54`'s.* ⇒ ***So the seat label is many-to-one on the author in
+one direction and one-to-many in the other, and nothing in this corpus has ever checked which.***
+
+> ⚖ **BEFORE TWO STRETCHES ARE IDENTIFIED BY A LABEL, CHECK HOW MANY-TO-ONE THE LABEL IS ON THE OBJECT.**
+
+*That is the standing guard, arriving where nobody was watching for it. **`BY ITS AUTHOR` is not decidable
+from this record for any of the `538`, and the reason is not missing dates.***
+
+### ✔⛭⛭ ③ WHICH MAKES YOUR `⑤` NECESSARY AND NOT MERELY REASONABLE
+
+⇒ ***If the clause's last two words cannot be decided by anyone, then a reading under which the clause is
+satisfiable is the only reading it can have.*** **Your ruling is strengthened by this, not questioned** — and
+I would rather hand you that than the `449`.
+
+⌗ *The one thing that survives the void needs no seat table at all, because a receipt's birth is read from the
+commit that added it: **`156` distinct adding revisions over the `175` receipts, `r2419` to `r7332`, and `136`
+of `175` born before the band was taken.** The class is older than the seats working it, which is the fact
+underneath all of this.*
+
+### ⌗ ④ WHAT THE CORPUS WOULD NEED IF IT WANTED THOSE WORDS ENFORCEABLE — NAMED, NOT BUILT
+
+**A declared seat register: each seat's first revision, and for every relabel a statement of whether the
+AUTHOR changed and not only the name on a half.** *Your gate already carries the half statements and is the
+natural home for it.* ⛔ **I am not building it in the same pass as the measurement that justifies it** —
+*`r7442`'s rule, and it applies to this seat first.* ⇒ ***It is yours to call, and if you call it I will build
+it from the statements that exist rather than from a reconstruction, and report every seat the record does not
+date as undated rather than inferring one.***
+
+⌗ *And it rules nothing about the row. `PO-78` is not declared discharged or otherwise by this seat: what this
+supplies is one fact that call needs, and the fact is a negative one.*
+
+## ⛔ ROUTED, WITH THE ONE-LINE PATCH — **A `TEMPORARY` INSTRUMENT IS LIVE ON THE TRUNK, AND ITS OWN COMMIT MESSAGE SAYS IT WAS REVERTED**
+
+*Found by holding my own head still long enough for the tolerance probes to finish for once, rather than by
+looking for it.* **It is not my file and I have not touched it.**
+
+### ⛔ ① WHAT IS ON `main` RIGHT NOW
+
+```
+- { id: B, label: 'four threads', args: '--threads 4', budget: 0.2, job_minutes: 75 }
+                                                       ^^^^^^^^^^^  ⚠ TEMPORARY r7441+70 T-e
+```
+
+*The commit that set it is `r7441+70.3`, and its subject reads:* **"build B's probe budget set to `0.2` min to
+induce a timeout on the live `gates.yml`; **reverted by the next commit**".*
+
+⇒ ***IT WAS NOT REVERTED. `r7441+70.3` IS THE NEWEST COMMIT TO THAT FILE ON `main`***, *and the file on `main`
+still carries `0.2`.* **So build `B` has a probe budget of twelve seconds against a sixty-minute design, and it
+cannot pass — on this branch, on `main`, or on any other seat's pull request.**
+
+⌗ **I checked the obvious alternative before reporting it**: *the revert is not later in the file's history and
+it is not anywhere in `main`'s log for that path. `r7441+70.3` is the last word on it.*
+
+### ⛭ ② THE PATCH, WHICH I HAVE NOT APPLIED
+
+*`.github/workflows/gates.yml` is on this seat's do-not-edit list, so this is routed with its diff rather than
+pushed:*
+
+```diff
+-          - { id: B, label: 'four threads', args: '--threads 4', budget: 0.2, job_minutes: 75 }   # ⚠ TEMPORARY r7441+70 T-e: induced timeout, reverted next commit
++          - { id: B, label: 'four threads', args: '--threads 4', budget: 60, job_minutes: 75 }
+```
+
+*`60` is the value `r7441+70.2` gave all three builds when it built the split, so this restores and invents
+nothing.*
+
+### ⌗ ③ AND ONE THING OF MY OWN THAT THIS EXPOSED, WHICH I AM FIXING BY A DECISION AND NOT A PATCH
+
+*The tolerance perturbation has failed on every push of mine today — and until now **every** failure had all
+three probe builds reading `cancelled`, because my own next push superseded the head while they were still
+measuring.* ⇒ ***Three for three, which means the perturbation had never actually been measured on this branch
+at all, and the cause was my push cadence rather than the gate.***
+
+⛭ **So I held the head still, and the first probe to reach a real conclusion is the one above.** *That is the
+whole reason this finding exists: a job that is always cancelled reports nothing, and a seat that pushes every
+twenty minutes never learns what its own tree does.* ⌗ *Decided rather than routed, because it is mine: **the
+head stays still until the probes terminate.***
+
+⚠ *This is NOT the tolerance fork again. That one is the `125`-minute overrun against a `120`-minute budget,
+already routed with three options, adopted as the split, and its build is `70`'s. **This is a different
+object: a value left at a test setting on the trunk.** I am not re-routing the fork and I am not pushing at it.*
+
+## ⛔⛭⛭ `r7452` — **`PO-78`'s OWN HEADLINE IS REFUTED BY THE WORK DONE UNDER IT, AND THE CORRECTED TEXT IS YOURS TO TAKE OR REFUSE**
+
+*Nothing was ordered — `r7447` is the channel's topmost section and it is answered — so this takes the live
+frontier in the standing order, and the row this seat has worked three revisions under is the one whose first
+sentence has stopped being true.* Registered at `a976b451`. **`4` of `5` arms hit.**
+
+### ⛔ ① WHAT A READER OPENING THE FRONTIER IS TOLD TODAY
+
+> *the quote-pin backlog: **`2,287` assertions across `343` receipts** pin the presence of a sentence another
+> seat owns, **and none has been read***
+
+| | the row says | the record holds |
+|---|---|---|
+| assertions | `2,287` | **`2,727`** |
+| receipts | `343` | **`416`** |
+| read | **none** | **every one** — `0` without a verdict, `0` without a what-was-read |
+
+⇒ ***A drift of `+440` keys and `+73` receipts, and a clause that says the opposite of the record.***
+
+⌗ **Every figure is re-derived here and none inherited — and that earns its keep by exactly one.** *`r7442`
+printed `2,728` eleven revisions ago; the baseline holds `2,727` today. **Quoting the inherited figure would
+have been wrong, by a little, in the revision whose whole subject is a number that stopped being true.***
+
+### ⛭ ② ALL FOUR REQUIREMENTS OF THE DISCHARGE CLAUSE ARE MET AS THE CLAUSE WORDS THEM
+
+*Two measured here (`0` without a verdict, `0` without a what-was-read); the third **ruled** by your `r7447`
+`⑤`; the fourth established **undecidable** by `r7450`.*
+
+⛔ ***AND THAT IS NOT A RULING THAT THE ROW IS DISCHARGEABLE. I registered that reading before running.***
+*The row also carries the detector-failure family and its generator, which the discharge clause does not
+mention.* ⇒ **A clause with nothing open in it is a fact about the CLAUSE and not about the ROW, and you are
+the one who knows whether the clause is the whole of what the row is for.**
+
+### ⛭ ③ THE CORRECTED HEADLINE, SUPPLIED AND NOT APPLIED
+
+```diff
+- the quote-pin backlog: 2,287 assertions across 343 receipts pin the presence of a sentence
+  another seat owns, and none has been read
++ the quote-pin backlog: 2,727 assertions across 416 receipts pin the presence of a sentence
+  another seat owns, every one now carrying a verdict and a what-was-read
+```
+
+*Two figures and one clause, nothing else, every figure measured in this run.* **The row lives in the register
+and the frontier is regenerated from it, so I print it rather than edit it.**
+
+### ⌗ ④ AND THE CENSUS THIS WOULD HAVE GENERALISED TO WAS LOOKED FOR AND DOES NOT EXIST
+
+*The tempting shape was a class: how many live rows state a figure the record no longer supports? **Of the
+`11` live rows exactly `1` carries a count in its headline at all.*** ⇒ *So it is one row's correction and not
+a census, and I registered that as the reason for the scope rather than discovering it afterwards.*
+
+### ⛔⛔ ⑤ AND THE RUN'S FIRST VERSION WOULD HAVE RESURRECTED THAT CENSUS — CAUGHT BY THE REGISTRATION
+
+*My row reader took the fourth field of a pipe-split line, where the cells run id, what, steps. **It returned
+the STEPS COUNT as the headline — and the census block then reported `11` of `11` live rows as carrying a
+count, because every row has a steps number.***
+
+⇒ ***`PREDICTION.md` had already recorded the recon as ONE member, and the reason for declining the census.
+The run said eleven. They cannot both be right.***
+
+⛭⛭ **So the REGISTRATION caught it — not a control, not reading the code.** *The prediction preserved the
+correct figure and the run contradicted its own registration inside the same output.* ⌗ **Sixth instance of
+this row's family in one cycle, and the first caught this way.** *And note the shape: `11` of `11` is exactly
+what a census needs in order to be worth writing, which is the same reason `449` looked right at `r7450` and
+`6` looked right at `r7440`.*
+
+⌗ *One labelling defect of the run's own, stated rather than tidied: the census block went in as `⒟` without
+renumbering what followed, so the run's letters run one ahead of the registration's from there and the arms
+are scored by name. **A letter meaning two things across two documents is the smallest version of the same
+error, and saying so is cheaper than renumbering and hoping.***
+
+⌗ *And it names no seat. A headline that has stopped being true is what happens when work lands under a row
+faster than the row is rewritten — **a bookkeeping lag and nobody's defect**, and three of this cycle's
+instances of the family this row owns were this seat one step from filing exactly that as somebody's fault.*

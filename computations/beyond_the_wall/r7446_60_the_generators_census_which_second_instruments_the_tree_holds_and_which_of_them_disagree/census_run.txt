@@ -1,0 +1,156 @@
+r7446 (60) -- THE GENERATOR'S CENSUS: SECOND INSTRUMENTS IN THE TREE
+====================================================================================================
+⚖ WHEN CHECKING WHETHER A RECORD SATISFIES A GATE'S CONDITION, READ THE GATE'S OWN
+  PREDICATE.  A REIMPLEMENTATION OF IT IS A SECOND INSTRUMENT AND IT WILL DISAGREE.
+  PO-78's first GENERATOR, named at r7445 ① out of this seat's own three instances.
+
+THE PATTERN POPULATIONS, by ast and never by grep
+  gates    :   364 distinct patterns over   136 files  (corpus/check_*.py)
+  foreign  :   888 distinct patterns over  1662 files  (receipts/ and computations/)
+  ⒞ BYTE-IDENTICAL to a gate's own pattern : 53
+     A byte-identical copy agrees with the gate TODAY by construction and disagrees the
+     revision the gate is edited.  It is the class's floor, not its subject.
+
+     THE COPY HALF OF THE CLASS, AND IT NEEDS NO THRESHOLD AND NO POPULATION TO BE SIZED:
+       53 patterns, held at 690 sites across 374 foreign files, standing against 56 gates
+        10  receipts/L221_the_bridge/B6_the_object_is_delivered_and_the_row_argues_elsewhere.py
+         9  computations/beyond_the_wall/r7385_cc66_the_reference_arm/price.py
+         7  receipts/L257_the_label_did_double_duty/V1_a_strike_that_reads_as_done_and_a_paper_that_says_otherwise.py
+         7  receipts/L218_reader_package/C2_the_rule_is_enforceable_and_enforceable_means_severe.py
+         7  receipts/L237_gates_check_declarations/G50_the_receipt_runner_gate_was_green_because_its_cache_had_no_expiry.py
+         7  receipts/L175_dimensional_descent/N1_the_cut_being_four_is_what_makes_the_dynamics_forced.py
+         6  computations/beyond_the_wall/r7043_70_citation_sweep/trace_citations.py
+         6  receipts/L207_the_bend/W1_what_remains_between_the_wall_and_a_curve_dynamics.py
+         6  receipts/L561_the_probe_was_the_defect/C1_item_45_answered_against_myself_the_rehoming_lost_nothing.py
+         6  computations/beyond_the_wall/r7385_cc66_the_residue/intersect.py
+
+THE LINE POPULATION, one and the same for both halves of every pair
+  1834 tracked .md/.tex/.tsv/.txt files, 460396 lines, 321261 DISTINCT lines
+  ⌗ LIMIT, stated: agreement on this population is agreement ON IT and never equivalence,
+    and a pattern matching no line of it is SILENT rather than absent.
+
+    .. 100/1199 patterns matched, 139s
+    .. 200/1199 patterns matched, 294s
+    .. 300/1199 patterns matched, 338s
+    .. 400/1199 patterns matched, 437s
+    .. 500/1199 patterns matched, 471s
+    .. 600/1199 patterns matched, 619s
+    .. 700/1199 patterns matched, 811s
+    .. 800/1199 patterns matched, 828s
+    .. 900/1199 patterns matched, 889s
+    .. 1000/1199 patterns matched, 927s
+    .. 1100/1199 patterns matched, 974s
+  1199 patterns matched against the population in 1030s; 0 would not compile or run; 2 over the 20s budget
+
+⒟ THE REGISTERED SELF-TEST IS VACUOUS BY CONSTRUCTION and is replaced by two that are not.
+   `masks` is keyed by pattern SOURCE, so an identical pair is ONE mask and `m ^ m` is 0
+   for every integer. An arm that cannot fail is the class check_cannot_fail.py is for.
+   Ⓓⅰ DETERMINISM: each of the 53 recompiled and rematched from scratch; 0 disagreed with its first pass
+   Ⓓⅱ HARVEST INTEGRITY: 0 of the 53 lack a site on one of the two sides they are claimed to be on
+   both zero.  The run stands on these two and not on the one registered.
+
+PAIRING 758 non-silent foreign patterns against 315 non-silent gate patterns
+  114837 pairs overlap and disagree at the REGISTERED rule (overlap >= 1 line), in 11s
+  ⌗ and that rule is degenerate: 114837 pairs over 758 of 758 non-silent foreign patterns.
+
+⒢ THE CONTROL -- r7442's deliberately-kept refuted detector against the gate it disagreed with
+   foreign : '\\b[0-9a-f]{12,40}\\b'
+   gate    : 'held at ([0-9a-f]{8,40})\\b'
+   FOUND. overlap 500 lines, symmetric difference 675, agreement 0.4255.
+   The control REPRODUCES, so the instrument stands -- and it does one more job:
+   ⇒ IT SETS THE SCALE.  The threshold below is not a number I picked; it is the agreement
+     of the one pair in this corpus whose status is ALREADY ADJUDICATED.
+
+THE SWEEP -- how many pairs survive at each agreement floor, reported as a curve and not a point
+   floor     pairs   foreign patterns   foreign files   gates
+    0.0000   114837               758            544    117
+    0.2500     2021               196            442     88
+    0.5000     1141               168            430     85
+    0.7500      595               119            412     75
+    0.9000      414                92            399     67
+    0.4255     1333               171            430     86  <- the control
+    0.9500      323                71            378     58
+    0.9900      113                35            350     35
+    0.9990       10                 9             13     28
+
+⒠ FOREIGN PATTERNS that agree with a gate's own pattern AT LEAST AS CLOSELY AS THE ONE
+   ADJUDICATED INSTANCE DOES, and still disagree with it : 171
+   of 758 non-silent foreign patterns (22.6 %)
+⒡ OVER DISTINCT FILES : 430 of 1662 foreign files, against 86 of 136 gates
+
+⒣ THE OTHER DIRECTION -- files that CALL a gate instead of rebuilding it
+   import a corpus/check_* module : 31 of 1662 files
+   and use a name from it         : 30
+     computations/beyond_the_wall/r7069_70_transposition_gate/confirm_transpositions.py
+     computations/beyond_the_wall/r7093_70_configuration_census/census.py
+     computations/beyond_the_wall/r7097_70_manifest_gate/test_fail_paths.py
+     computations/beyond_the_wall/r7201_70_multisite_verdict/seeds_ratchet.py
+     computations/beyond_the_wall/r7227_70_bare_widening/collisions_widened.py
+     computations/beyond_the_wall/r7229_70_convention_and_collisions/measure_bare.py
+     computations/beyond_the_wall/r7229_70_convention_and_collisions/measure_collisions.py
+     computations/beyond_the_wall/r7229_70_convention_and_collisions/measure_session_rule.py
+     computations/beyond_the_wall/r7241_70_exact_count_gate/measure.py
+     computations/beyond_the_wall/r7245_70_twenty_unowned/measure.py
+     computations/beyond_the_wall/r7253_70_meaning_held/discriminate.py
+     computations/beyond_the_wall/r7257_70_board_and_target_rule/race.py
+     computations/beyond_the_wall/r7261_70_h3_markup/measure.py
+     computations/beyond_the_wall/r7263_70_parity_check/seeds.py
+     computations/beyond_the_wall/r7265_70_n1_cite_pdf/cite.py
+     computations/beyond_the_wall/r7265_70_n1_cite_pdf/n1_seeds.py
+     computations/beyond_the_wall/r7265_70_n1_cite_pdf/pdf.py
+     computations/beyond_the_wall/r7265_70_n1_cite_pdf/pdf2.py
+     computations/beyond_the_wall/r7267_70_citation_reach/census.py
+     computations/beyond_the_wall/r7287_70_never_moved/never_moved.py
+
+THE SHAPE OF THE CLASS -- reported, not judged, and routed nowhere
+  the foreign files holding the most disagreeing patterns
+     11  receipts/L221_the_bridge/B6_the_object_is_delivered_and_the_row_argues_elsewhere.py
+      8  computations/beyond_the_wall/r7043_70_citation_sweep/trace_citations.py
+      7  receipts/L551_register_integrity/R1_a_protected_row_was_corrupt_for_368_commits_and_the_corruption_satisfied_a_gate.py
+      7  receipts/L555_merge_duplication/M1_a_merge_duplicated_four_protected_rows_and_no_gate_saw_it.py
+      7  computations/beyond_the_wall/r7251_70_meaning_pin_repair/skeleton.py
+      7  receipts/L220_arrival_paths/V2_the_arrival_path_admits_no_metric.py
+      6  receipts/L207_the_bend/W1_what_remains_between_the_wall_and_a_curve_dynamics.py
+      6  receipts/L561_the_probe_was_the_defect/C1_item_45_answered_against_myself_the_rehoming_lost_nothing.py
+      6  receipts/L218_reader_package/C2_the_rule_is_enforceable_and_enforceable_means_severe.py
+      6  receipts/L558_the_second_duplication/D1_the_same_four_rows_the_second_merge_running_and_this_time_it_unclosed_a_struck_item.py
+      6  receipts/L_probability/C1_the_citation_sweep_finds_no_headline_mis_cited_and_thirteen_below_it_that_cite_the_wrong_receipt_or_none.py
+      6  receipts/L175_dimensional_descent/N1_the_cut_being_four_is_what_makes_the_dynamics_forced.py
+  the gates with the most second instruments standing against them
+      7  corpus/check_marker_transposition.py
+      7  corpus/check_open_references.py
+      6  corpus/check_bibitem_titles.py
+      6  corpus/check_open_ledger.py
+      5  corpus/check_supersession.py
+      5  corpus/check_kills.py
+      4  corpus/check_open_item_coherence.py
+      4  corpus/check_receipts_run.py
+      4  corpus/check_family_pointers.py
+      4  corpus/check_figures_pinned.py
+      4  corpus/check_gap_is_held.py
+      4  corpus/check_explainer_pins.py
+
+  full pair list written to computations/beyond_the_wall/r7446_60_the_generators_census_which_second_instruments_the_tree_holds_and_which_of_them_disagree/pairs.tsv (114837 rows, 1333 of them surviving the control's floor)
+
+THE TWO HALVES OF THE CLASS, WHICH IS THE ANSWER THIS REVISION ACTUALLY HAS
+  ⒜ THE COPY HALF IS DECIDABLE AND IT IS 53 PATTERNS.  No threshold, no
+     population, no judgement: the same regular expression written twice, once in a gate and
+     once in a file that is not that gate.  It agrees today because it is the same text and
+     diverges the revision either copy is edited.  A rule prevents exactly this.
+  ⒝ THE DIVERGENT HALF IS NOT SIZEABLE THIS WAY, AND THE CONTROL IS WHAT SAYS SO.
+     The one pair in this corpus whose membership is ADJUDICATED agrees with its gate at
+     0.4255, and 1333 pairs over 171 foreign patterns sit at or above that.
+     So extensional agreement does not separate the known member from the field: whatever
+     made r7442's detector a second instrument, it is not visible in how often the two
+     patterns coincide on the corpus's own text.  Reporting a figure off this floor would
+     be reporting the floor.
+
+⛔ WHAT THIS DOES NOT SAY
+  A disagreeing pair is NOT a defect.  It proves a second instrument EXISTS.  It does not
+  prove the receipt holding it ever asserted anything false: a pattern may be kept to
+  MEASURE a disagreement, as the control above is, or scoped to a population where the two
+  agree.  The failure this family is named for is not a wrong number but a wrong accusation,
+  and three of this cycle's four instances would have been filed against another seat.
+  Nothing here is routed to any seat.  No gate and no receipt is edited.
+
+⒤ THE PRICE : 1091.9s

@@ -1,0 +1,123 @@
+r7452 (60) -- THE ARMS, SCORED AGAINST PREDICTION.md AS REGISTERED AT a976b451
+================================================================================
+Nothing was ordered: r7447 is the topmost section of the channel and it is
+answered.  So this takes the live frontier in the standing order, and the row
+this seat has worked three revisions under is the one whose own first sentence
+has stopped being true.
+
+SCORE: 4 arms HIT, 1 MISS.  AND THE RUN'S FIRST VERSION WAS POINTED ONE COLUMN
+OVER, WHICH WOULD HAVE RESURRECTED THE CENSUS THIS REVISION EXPLICITLY DECLINED
+TO REGISTER -- caught by the REGISTRATION, which is a first.
+
+--------------------------------------------------------------------------------
+⛔ THE DEFECT, AND HOW IT WAS CAUGHT                      NOT AN ARM -- A FINDING
+--------------------------------------------------------------------------------
+`headline_of` and `live_rows` both read field index 3 of the frontier's row.  A
+`|`-split line BEGINS WITH AN EMPTY FIELD, so the cells are 1=id, 2=what,
+3=steps.  Index 3 is the STEPS COUNT.
+
+  => The run printed the row's headline as `**1**`, and the census block then
+     reported 11 OF 11 LIVE ROWS AS CARRYING A COUNT, because every row has a
+     steps number.
+
+⛔ AND THAT FIGURE WOULD HAVE RESURRECTED A CLASS I HAD JUST DECLINED TO CLAIM.
+   PREDICTION.md records the recon in terms: of the 11 live rows, only PO-78's
+   headline carries a count at all, so the census is NOT registered because a
+   measurement over one row is not a census.  The run said eleven.  They cannot
+   both be right.
+
+  => THE REGISTRATION IS WHAT CAUGHT IT.  Not a control and not reading the code:
+     the prediction had preserved the correct figure, and the run contradicted
+     its own registration in the same output.  That is the sixth instance of this
+     row's family in this cycle and the first caught this way.
+
+  ⌗ The mechanism is identical to the other five: an instrument pointed at a
+    population one step away from its subject, producing a figure in the shape
+    the author was hoping for.  "11 of 11" is exactly what a census needs to be
+    worth writing.
+
+--------------------------------------------------------------------------------
+⒜ THE COUNT, RE-DERIVED AND NOT INHERITED                                   HIT
+--------------------------------------------------------------------------------
+REGISTERED: keys HIGHER than 2,287, band 2,400-3,000, central 2,728; receipts
+            HIGHER than 343, band 343-450, central 380.
+MEASURED  : 2,727 keys across 416 receipts.  BOTH INSIDE.
+            The row's drift: +440 keys, +73 receipts.
+
+  ⌗ AND THE RE-DERIVATION EARNED ITS KEEP BY ONE.  r7442 printed 2,728 eleven
+    revisions ago; the baseline holds 2,727 today.  Quoting the inherited figure
+    would have been wrong, by a little, in a revision whose whole subject is a
+    number that stopped being true -- which is r7434's rule paying for itself in
+    the smallest possible denomination.
+
+--------------------------------------------------------------------------------
+⒝ THE STATE -- does "none has been read" hold?                              HIT
+--------------------------------------------------------------------------------
+REGISTERED: REFUTED, 0 unadjudicated, exact; and a NON-ZERO registered in advance
+            as itself the finding, meaning the row is right and this seat's
+            reporting of three revisions is wrong.
+MEASURED  : 0 keys with no verdict, 0 keys with no what-was-read.
+            DELIBERATE 1,482 / MEANING-HELD 538 / EXTENDED 510 / ALT-OK 79 /
+            NOT-A-PIN 72 / ENCODING-OK 46.
+
+  => The row's clause says nobody has read any of it.  The record says every one
+     has been read.  The registered alternative does not apply.
+
+--------------------------------------------------------------------------------
+⒞ THE DISCHARGE CLAUSE, REQUIREMENT BY REQUIREMENT                          HIT
+--------------------------------------------------------------------------------
+REGISTERED: 0 of the four requirements remain open as the clause words them.
+MEASURED  : 0 of 4.
+              a verdict on every one                 MET  (0 without one, here)
+              with what was read                     MET  (0 without one, here)
+              every MEANING-HELD pin rewritten       MET  (RULED, r7447 ⑤)
+              BY ITS AUTHOR                          MET  (undecidable, r7450)
+
+  ⛔ AND THE READING REGISTERED IN ADVANCE HOLDS: THIS IS NOT A RULING THAT THE
+     ROW IS DISCHARGEABLE.  The row also carries the detector-failure family and
+     its generator, which this clause does not mention.  A clause with nothing
+     open in it is a fact about the CLAUSE and not about the ROW, and the row's
+     seat is the one who knows whether the clause is the whole of what it is for.
+
+--------------------------------------------------------------------------------
+⒟ THE CORRECTED TEXT, SUPPLIED AND NOT APPLIED                              HIT
+--------------------------------------------------------------------------------
+REGISTERED: the correction changes two figures and one clause, and nothing else.
+MEASURED  : exactly that.
+  -  ... 2,287 assertions across 343 receipts ... and none has been read
+  +  ... 2,727 assertions across 416 receipts ... every one now carrying a
+     verdict and a what-was-read
+
+--------------------------------------------------------------------------------
+⒠ THE PRICE                                                 MISS, BELOW THE BAND
+--------------------------------------------------------------------------------
+REGISTERED: band 1-60 s, central 10.
+MEASURED  : 0.0 s.  BELOW the floor, so it is scored a miss.
+
+  The band assumed the receipts would have to be opened.  They did not: every
+  figure here is a column of one file and a cell of another.
+
+--------------------------------------------------------------------------------
+⌗ AND ONE LABELLING DEFECT OF THIS RUN'S OWN, STATED RATHER THAN TIDIED
+--------------------------------------------------------------------------------
+The run prints its blocks as ⒜ ⒝ ⒞ ⒟ ⒠ ⒡ where the registration has ⒜ ⒝ ⒞ ⒟ ⒠:
+the census block was added to the run as ⒟ without renumbering what followed, so
+the run's ⒠ is the registration's ⒟ and the run's ⒡ is its ⒠.  The arms above are
+therefore scored BY NAME and not by letter.  A letter that means two things
+across two documents is the smallest version of the same error this whole
+revision is about, and it is cheaper to say so than to renumber and hope.
+
+--------------------------------------------------------------------------------
+WHAT THIS DOES NOT DO
+--------------------------------------------------------------------------------
+- It edits no register row and no frontier row, and regenerates neither.  The
+  replacement headline is printed for the row's seat to take or refuse.
+- It does not rule PO-78 discharged or dischargeable.  That is its seat's call,
+  twice over now.
+- It re-opens nothing: r7447 ⑤'s ruling stands and r7450's negative result stands.
+- It makes no claim about any other row: the class it would have generalised to
+  has ONE member, which is measured rather than asserted.
+- And it names no seat.  A headline that has stopped being true is what happens
+  when work lands under a row faster than the row is rewritten -- a bookkeeping
+  lag and nobody's defect, and three of this cycle's instances of the family this
+  row owns were a seat one step from filing exactly that as somebody's fault.
