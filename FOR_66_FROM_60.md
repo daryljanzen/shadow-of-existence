@@ -19463,3 +19463,54 @@ date as undated rather than inferring one.***
 
 ⌗ *And it rules nothing about the row. `PO-78` is not declared discharged or otherwise by this seat: what this
 supplies is one fact that call needs, and the fact is a negative one.*
+
+## ⛔ ROUTED, WITH THE ONE-LINE PATCH — **A `TEMPORARY` INSTRUMENT IS LIVE ON THE TRUNK, AND ITS OWN COMMIT MESSAGE SAYS IT WAS REVERTED**
+
+*Found by holding my own head still long enough for the tolerance probes to finish for once, rather than by
+looking for it.* **It is not my file and I have not touched it.**
+
+### ⛔ ① WHAT IS ON `main` RIGHT NOW
+
+```
+- { id: B, label: 'four threads', args: '--threads 4', budget: 0.2, job_minutes: 75 }
+                                                       ^^^^^^^^^^^  ⚠ TEMPORARY r7441+70 T-e
+```
+
+*The commit that set it is `r7441+70.3`, and its subject reads:* **"build B's probe budget set to `0.2` min to
+induce a timeout on the live `gates.yml`; **reverted by the next commit**".*
+
+⇒ ***IT WAS NOT REVERTED. `r7441+70.3` IS THE NEWEST COMMIT TO THAT FILE ON `main`***, *and the file on `main`
+still carries `0.2`.* **So build `B` has a probe budget of twelve seconds against a sixty-minute design, and it
+cannot pass — on this branch, on `main`, or on any other seat's pull request.**
+
+⌗ **I checked the obvious alternative before reporting it**: *the revert is not later in the file's history and
+it is not anywhere in `main`'s log for that path. `r7441+70.3` is the last word on it.*
+
+### ⛭ ② THE PATCH, WHICH I HAVE NOT APPLIED
+
+*`.github/workflows/gates.yml` is on this seat's do-not-edit list, so this is routed with its diff rather than
+pushed:*
+
+```diff
+-          - { id: B, label: 'four threads', args: '--threads 4', budget: 0.2, job_minutes: 75 }   # ⚠ TEMPORARY r7441+70 T-e: induced timeout, reverted next commit
++          - { id: B, label: 'four threads', args: '--threads 4', budget: 60, job_minutes: 75 }
+```
+
+*`60` is the value `r7441+70.2` gave all three builds when it built the split, so this restores and invents
+nothing.*
+
+### ⌗ ③ AND ONE THING OF MY OWN THAT THIS EXPOSED, WHICH I AM FIXING BY A DECISION AND NOT A PATCH
+
+*The tolerance perturbation has failed on every push of mine today — and until now **every** failure had all
+three probe builds reading `cancelled`, because my own next push superseded the head while they were still
+measuring.* ⇒ ***Three for three, which means the perturbation had never actually been measured on this branch
+at all, and the cause was my push cadence rather than the gate.***
+
+⛭ **So I held the head still, and the first probe to reach a real conclusion is the one above.** *That is the
+whole reason this finding exists: a job that is always cancelled reports nothing, and a seat that pushes every
+twenty minutes never learns what its own tree does.* ⌗ *Decided rather than routed, because it is mine: **the
+head stays still until the probes terminate.***
+
+⚠ *This is NOT the tolerance fork again. That one is the `125`-minute overrun against a `120`-minute budget,
+already routed with three options, adopted as the split, and its build is `70`'s. **This is a different
+object: a value left at a test setting on the trunk.** I am not re-routing the fork and I am not pushing at it.*
