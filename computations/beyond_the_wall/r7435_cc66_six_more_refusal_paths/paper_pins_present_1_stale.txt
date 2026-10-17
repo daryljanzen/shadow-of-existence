@@ -1,0 +1,6 @@
+  PAPER PINS PRESENT -- at e080771e: 1510 PAPER row(s), 125 absent from every corpus/*.tex
+    NEW   (absent, not listed):            0
+    STALE (listed, now present or gone):   1  (1 no longer a live row)
+    SEED  present read present, one-character mutant read absent: True
+  ⛔ [FAIL] STALE listed key: receipts/L_probability/ZZ_cc66_walk.py	"a literal no paper carries, cc66 walk probe"
+     A NEW key is a PAPER pin whose literal is in no paper: restore the sentence, repair the pin, or -- if the absence is deliberate -- list it with `--update` in the same commit and say why.  A STALE key is the list lagging the tree: `python3 corpus/check_paper_pins_present.py --update`.

@@ -21741,3 +21741,50 @@ is a gate that reports to nobody.***
 *`computations/beyond_the_wall/r7433_cc66_the_refusal_site_denominator/` — `sites.py` (locates, does not
 count), `sites_located.txt`, `sites_context.txt` (the `4`-line context per candidate that the adjudication was
 read from), `MEASURED.md`, `PRICE_the_sitemap_gate.md`.*
+
+---
+
+## ⌗⛭ `r7435+cc66.81` — **SIX MORE PATHS WALKED: `7 of 78` → `13 of 78`. ⚠ AND ONE OF THE THREE IS RED ON THE TRUNK WITH NOTHING READING IT**
+
+*⑤ taken as ordered: cheapest first by site count, `walked / sites` in each cell, `check_quote_pins`'
+`14` untouched. Three instruments: `check_open_references` (`3` sites), `check_open_item_coherence` (`2`),
+`check_paper_pins_present` (`2`). **`13` of `78`, `17` %, `9` of the `18` gradeable instruments touched.***
+
+### ✔ ⒜ `check_open_references` IS `3` OF `3` — AND THE AUTHORSHIP BASIS YOU NAMED IS RETIRED
+
+*`r7433` ③ said weakness belongs in the column; this row carried `REACHABLE` on **"this seat built both"**.*
+⇒ **All three induced and all three addresses taken to exit `0`:** a status outside the four, a baseline
+verdict outside the five, and a NEW open-language key — the last naming **two** addresses (a row with a
+verdict, or `NOT-AN-OPEN` in the vocabulary). *The parenthesis is gone and the number is in its place.*
+
+⌗ *One near-miss, recorded: I first deleted what turned out to be the baseline's **header** row, the gate
+stayed green, and I had half a finding written before reading `read_baseline()` — which skips the header by
+`f[0] == 'paper'`. **Correct behaviour, no hole, and the check came before the claim this time.***
+
+### ⚠⛭ ⒝ `check_open_item_coherence` IS `2` OF `2`, AND THE PART THAT MATTERS IS NOT THE COUNT
+
+**⒜ needed no inducing — it fires on `main` as it stands: `75` OPEN item(s) with no LIVE register row, across
+`14` papers.** *So the `REACHABLE BUT ELSEWHERE` grade is now observed rather than read off the gate's words.*
+**⒝ walked end to end:** a live `PO-999` row with `OPENED r7000` → the refusal names it → address taken by
+declaring it `INFRASTRUCTURE` → that direction's line flips green while the gate still exits `1` on ⒜, which
+is not mine. *Verified by the direction's line and not by the exit code — which is what the per-direction
+denominator is for.*
+
+⇒ ⚠ ***THE FINDING: this gate is in NO CI list and it is RED.*** *Neither it nor `check_open_references`
+appears anywhere under `.github/workflows/`.* **A red on the trunk that nothing runs is the mirror image of
+`r7427` ⑤'s false red: there, a red nobody should trust; here, a true red nobody reads.** ⌗ *Routed and not
+acted on — `r7371` ⑥ left it unwired deliberately and wiring is the publisher's call, which is your line about
+the join gate pointed at my own file. **If you want it wired, say so; if you want it wired only once its ⒜ is
+discharged by the paper owners, that is the same answer with an order of work in it.***
+
+### ⌗ ⒞ `check_paper_pins_present` IS `1` OF `2`, AND I AM NOT CLAIMING THE SECOND
+
+*The new-or-stale branch: induced with a listed key that is no longer absent, address `--update` in the same
+commit, taken, exit `0`.* ⛔ **The SEED branch is not walked, and the reason is the unit itself: inducing
+"the control did not read two-sidedly" takes an edit to the instrument's OWN CONTROL, not to its data.**
+⇒ *A refusal reachable only by breaking the instrument is a different kind of path. Calling it walked would
+have been the cheapest wrong number in the file, and whether it counts in the `78` at all is a question for
+you — I have left it in the denominator and out of the numerator.*
+
+*`computations/beyond_the_wall/r7435_cc66_six_more_refusal_paths/` — `WALK.md` and `13` run transcripts, one
+per state, including the clean runs and the trunk's own red.*

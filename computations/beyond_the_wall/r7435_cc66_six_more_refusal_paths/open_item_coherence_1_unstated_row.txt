@@ -1,0 +1,36 @@
+
+  OPEN-ITEM COHERENCE -- two lists compared; no item is classified here
+    257 adjudicated candidate(s), 80 classed OPEN by 69
+    register: 11 live PO row(s), 71 struck
+
+  ⛔ 75 OPEN item(s) with no LIVE register row, in 14 paper(s):
+    P2     1  no pointer at all
+    P3     2  no pointer at all
+    P6     1  no pointer at all
+    P7     6  pointers all struck: ['PO-10', 'PO-25', 'PO-47', 'PO-49']
+    P8     1  pointers all struck: ['PO-30']
+    P9     2  pointers all struck: ['PO-25', 'PO-49']
+    P10    9  pointers all struck: ['PO-23', 'PO-51', 'PO-52', 'PO-71']
+    P11    1  pointers all struck: ['PO-23']
+    P13    1  no pointer at all
+    P14    8  pointers all struck: ['PO-14', 'PO-26', 'PO-37', 'PO-45']
+    P15   22  pointers all struck: ['PO-30', 'PO-31', 'PO-56', 'PO-70']
+    P16    5  pointers all struck: ['PO-31']
+    P17    1  no pointer at all
+    P18   15  pointers all struck: ['PO-10', 'PO-23', 'PO-25', 'PO-30']
+  ⛔ 1 LIVE row(s) the census period covers that no OPEN item states and no declaration covers: ['PO-999']
+    ⌗ 6 live row(s) opened AFTER the census (r7371) -- this instrument cannot see whether a paper states them, so they are NOT counted here:
+        PO-87  opened r7379
+        PO-88  opened r7387
+        PO-89  opened r7389
+        PO-90  opened r7393
+        PO-91  opened r7393
+        PO-92  opened r7413
+      ⇒ THE REMEDY IS A CENSUS REFRESH (69 reads the papers), never a declaration.
+      ⌗ PO-78 DECLARED infrastructure: the quote/prose-pin family -- an instrument debt, not a physics item any paper states
+      ⌗ PO-86 DECLARED infrastructure: this census's own row: the coherence question itself, opened by r7371 on 69's reading
+
+  ⌗ This gate asserts the CORRESPONDENCE and not the physics.  A stated-open item with no live row
+    is EITHER a stale paper OR a row struck too early, and which one it is is a reading that
+    belongs to the seat that owns the paper -- never to this file.
+
