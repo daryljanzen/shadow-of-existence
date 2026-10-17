@@ -21591,3 +21591,54 @@ grammar was fixed would mint `2` more false reds.* ⛭ **`60`'s rewrite does bot
 excluded it, are now checked. ⇒ **The finding in `.76` ⒟ was right and is already discharged; the ordering it
 recommended describes a sequence nobody needs to take.** *Left unsaid, that paragraph would read tomorrow as
 an open item, and it is not one.*
+
+---
+
+## ⌗⛭ `r7429+cc66.78` — **THE RATCHET MOVED BY TWO, AND I WALKED THE TWO WHOSE BLANKS YOUR `r7425` ② CAUGHT MY SCRAPE INVENTING. ⛭ ONE OF THEM BROKE THE COLUMN'S OWN SHAPE**
+
+*`r7429` ④ left the ratchet as the only open thing and nothing ordered. **`6` of `21` `REACHABLE` is now `8`
+of `21`, `UNREAD` `15` → `13`.*** ⌗ *I picked `check_exact_counts` and `check_cannot_fail` on purpose: they
+are two of the three whose blanks in the refused scrape were my regex and not their silence, so walking them
+is also the retraction being paid rather than restated.* ⚠ *Every probe and baseline edit lived in a detached
+scratch worktree; nothing was committed from it and no receipt or baseline in the repository was touched.*
+
+### ✔ ⒜ `check_exact_counts` ⓵ — `REACHABLE`, AND THE BLANK WAS MY READER BY ONE LINE
+
+A probe in the gate's own fire-seed shape refuses with **three** addresses: *make the claim monotone, read
+the set at a PIN, or adjudicate it in `exact_count_baseline.tsv` with what was read.* **I took the third and
+the gate went to exit `0`.** ⛔ ***And the reason my scrape read it as blank is that the address prints on two
+continuation lines BELOW the `[FAIL]` list.*** *The gate was never silent; my reader was one line too high —
+which is a smaller and more embarrassing cause than "the gate names no address", and it is the cause.*
+
+### ⛭⛭ ⒝ AND ITS ⓷ IS A SECOND `ONE STEP FROM A WALL`, FOUND BY THE LADDER AND NOT BY HUNTING
+
+*Write that row as `UNADJUDICATED` — **a verdict the baseline's own header offers** — and the backlog goes to
+`22` against a ceiling of `21`. The refusal is one line with **no address in it at all**: "the backlog only
+falls."* ⇒ **Raising the ceiling is FORBIDDEN by the constant's own only-falls rule; the reachable address is
+recording a real verdict on a site, which is a reading.** *That is `r7427` ③'s grade to the letter, and I did
+not go looking for it — it is where the walk landed.* ⌗ **So the grade you adopted has a second member within
+a day, and `check_view_tables` is no longer alone in it.**
+
+### ✔ ⒞ `check_cannot_fail` — `REACHABLE`, AND WHERE ITS RESTRAINT ACTUALLY LIVES
+
+*⓵ names two addresses, both repairs: **PRINT it if it is a scope statement, make it able to fail if it is a
+check.** Taking them clears the gate.* ⛭ **The route it does NOT name is gated only half the time:** a
+baseline row with an **owed** verdict takes `OWED` to `23 > 21` and reds; the same rows with **`NOT-A-DEFECT`**,
+one of three NOT-owed classes, go **green and the ceiling never sees them**.
+
+⇒ *Not a hole to patch — the baseline says in its own header it is a record of adjudications and not a list
+of exemptions, and `NOT-A-DEFECT` means read and found legitimate.* **The finding is where the restraint
+lives: for an owed class it is the ratchet; for a not-owed class it is the honesty of the verdict column and
+nothing else.** ⌗ *`70`'s draft, so routed to `70` rather than acted on.*
+
+### ⛔⛭ ⒟ AND THE WALK BROKE THE COLUMN'S SHAPE, WHICH IS YOURS TO RULE
+
+**The column has one cell per instrument. `check_exact_counts` does not have one refusal — it has three, and
+two of them earn different grades.** ⇒ *The first instrument walked after the ladder landed already breaks
+what the eighth column assumes.* **I recorded the worst grade with its direction named rather than averaging
+them, and flagged it instead of patching it: splitting the column by direction changes the register's shape,
+which is not this seat's call alone.** ⌗ *If you want it split, say so and the `13` `UNREAD` get walked per
+direction from here — which will cost more and say more.*
+
+*`computations/beyond_the_wall/r7429_cc66_two_refusal_paths_walked/` — `WALK.md` and the seven run
+transcripts, one per step of the two walks, including the three failed attempts.*
