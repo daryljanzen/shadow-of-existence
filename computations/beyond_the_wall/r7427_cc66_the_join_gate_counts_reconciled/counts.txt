@@ -1,0 +1,27 @@
+================================================================================================
+  THE JOIN GATE'S COUNTS, BY POPULATION
+================================================================================================
+
+  ALL rows (the inventory)
+      rows: 112;  carrying a `decl`: 89;  multi-group: 15
+      pairs asserted: 268;  DANGLING under per-group pairing: 0
+      pairs the gate reads (one per row it checks): 89/268 = 33.2%
+
+  DONE rows (what the gate checks)
+      rows: 74;  carrying a `decl`: 74;  multi-group: 11
+      pairs asserted: 217;  DANGLING under per-group pairing: 0
+      pairs the gate reads (one per row it checks): 74/217 = 34.1%
+
+  rows with a decl that are NOT `DONE`
+      rows: 38;  carrying a `decl`: 15;  multi-group: 4
+      pairs asserted: 51;  DANGLING under per-group pairing: 0
+      pairs the gate reads (NONE): 0 of 51 -- the status filter drops EVERY one of these rows
+
+================================================================================================
+  AND THE STATUS FILTER -- `status.upper() == 'DONE'` is EXACT MATCH
+================================================================================================
+  multi-group rows the filter DROPS, and what the gate's one-pair reader would have said:
+      row   59  status 'ORDER: ENGINE-REACHABLE'    one-pair reader: green  [ShadowProbe.quartic_traceless vs Row59Quartic.lean]
+      row   66  status 'DONE (chartable half)'      one-pair reader: RED    [ShadowProbe.euler_tt_transverse vs S3Frame.lean]
+      row   97  status 'LIMIT OF A DONE ROW'        one-pair reader: RED    [ShadowProbe.sds_kretschmann vs ShadowEngine.lean]
+      row  101  status 'LIMIT OF A DONE ROW'        one-pair reader: green  [ShadowProbe.row104_nariai_root vs CurvatureInstances.lean]

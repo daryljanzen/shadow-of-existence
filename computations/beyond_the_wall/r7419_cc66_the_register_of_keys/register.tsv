@@ -13,6 +13,16 @@
 #   the gates' print lines was tried first and REFUSED as a filler: several blanks were this seat's regex
 #   missing a print style, not a gate naming no address, and a crude column passed off as a measurement
 #   is the defect this register exists to catalogue.
+# ⚖ r7427 ③ -- THE COLUMN IS GRADED, NOT A FLAG.  Adopted as written: *a refusal whose first address is
+#   FORBIDDEN and whose second is a JUDGEMENT is not a wall, but it is one step from one.*  The ladder,
+#   worst last:
+#     REACHABLE              -- a remedy exists and this seat has walked the path.
+#     REACHABLE BUT ELSEWHERE -- an address exists and it is another seat's to supply, never this one's.
+#     ONE STEP FROM A WALL   -- the first address is FORBIDDEN by a rule of the thing refusing, and the
+#                               second is a judgement rather than a record.
+#     WALL                   -- no reachable remedy: the verdict can say no and nothing can make it say
+#                               yes (r7425 ②).  No instrument in this register is graded WALL today.
+#     UNREAD                 -- not walked.  The ratchet: this bucket may only fall.
 # ⌗ METHOD NOTE (r7425 ③), one asymmetry this corpus has now ruled three ways: r7417 ② on AGREEMENT with
 #   an instrument, r7423 on DISAGREEMENT with one, r7425 on a REFUSAL by one -- the negative path passing
 #   is no evidence that the positive one exists.
@@ -35,6 +45,6 @@ check_pins_adjudicated_on_mint	the minted (receipt, literal) keys in a range	a r
 ROWS.tsv : index	a row of the formalisation inventory	a row of the inventory	the key is the row identity	NONE	n/a (69's)	n/a	UNREAD
 ROWS.tsv : class	novelty WITHIN the formalisation inventory	register-row candidacy	r7421 ①'s own ruling: two populations with nothing joining them -- a register row must be stated open by a PAPER	NON-TRIVIAL	n/a (69's)	n/a	UNREAD
 corpus/quote_pin_mint_held.tsv	(receipt, literal) held out of the mint	this key is held pending a disposition	** DEMONSTRATED at r7415: the held key was produced by the instrument in NEITHER configuration, so K named something T never emits **	NON-TRIVIAL	yes -- and empty IS its target state	no	UNREAD
-check_view_tables : the debt file	view:field	that field's outstanding debt, rewritten DOWNWARD only	.57's case: 8 live rows absent against a baseline of 7, and the file cannot record the higher number, so K and T diverge by design	NON-TRIVIAL	no	no	** NEAREST THING TO A WALL ** -- the obvious path (record the higher number) is FORBIDDEN by the file's downward-only rule; the reachable address is supplying the row's KIND, which is a reading.  Hit at .57
+check_view_tables : the debt file	view:field	that field's outstanding debt, rewritten DOWNWARD only	.57's case: 8 live rows absent against a baseline of 7, and the file cannot record the higher number, so K and T diverge by design	NON-TRIVIAL	no	no	ONE STEP FROM A WALL (r7427 ③) -- the obvious path (record the higher number) is FORBIDDEN by the file's downward-only rule; the second address is supplying the row's KIND, which is a judgement.  Hit at .57, and the register's nearest member to a WALL
 red_carry : the carry ledger	the receipt path	this receipt is red / carried / cleared	** DEMONSTRATED: ⚠ CONTRADICTED -- red and green on commits where nothing it reads differs, so K does not determine T **	NON-TRIVIAL	no	no (it prints the history, which is a partial proof)	UNREAD
 corpus/frontier_steps_history.tsv	the revision	the step total AT that revision	the key is the revision and the claim is about that revision	NONE	no	n/a -- a generator input, not a gate	UNREAD
