@@ -1,0 +1,9 @@
+
+  QUOTE-PIN RATCHET -- is every pin on a sentence another seat owns adjudicated, or at least counted?
+
+    ledger keys unique: 0 duplicate key(s), 0 named as known
+    the instrument reports 2728 distinct (receipt, literal) key(s); the baseline carries 2728
+    by target/tier and flag: {'PAPER/ALT': 92, 'PAPER/LIST': 50, 'PAPER/MULTI': 164, 'PAPER/OPEN': 33, 'PAPER/SECSHARED': 77, 'PAPER/SENTENCE': 1261, 'PAPER/SURVEY': 12, 'PAPER/TOKEN': 249, 'PAPER/XOR': 2, 'SOURCE/ALT': 90, 'SOURCE/LIST': 22, 'SOURCE/OPEN': 33, 'SOURCE/SENTENCE': 815, 'SOURCE/TOKEN': 403, 'SOURCE/XOR': 8}
+    by verdict: {'R7441-WALK-NOT-A-VERDICT': 1, 'MEANING-HELD': 538, 'DELIBERATE': 1480, 'EXTENDED': 512, 'ENCODING-OK': 46, 'ALT-OK': 79, 'NOT-A-PIN': 72}
+    MEANING-HELD seeds hold: a valid row is held; no sha, a bad sha, an absent literal, a TOKEN, and a HEAD stamp each fail; math-mode markup is read through, a changed value is not
+  ⛔ VERDICT(S) OUTSIDE THE VOCABULARY: ['R7441-WALK-NOT-A-VERDICT'] -- an unknown verdict counts as adjudicated and is an exemption by typo.  Use one of ['ALT-OK', 'DELIBERATE', 'ENCODING-OK', 'EXTENDED', 'MEANING-HELD', 'NOT-A-PIN', 'REPAIR-OWED', 'UNADJUDICATED', 'UNADJUDICATED-LIST', 'UNADJUDICATED-PINNED'].

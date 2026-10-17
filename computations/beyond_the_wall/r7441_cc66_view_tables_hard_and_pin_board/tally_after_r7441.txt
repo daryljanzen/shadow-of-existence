@@ -1,6 +1,6 @@
   instrument                            walked  self-ref  one-step   of  running
   check_prose_pins                          5         0         1    5        5
-  check_quote_pins                          1         1         0   14       19
+  check_quote_pins                         11         2         1   14       19
   check_open_references                     3         0         0    3       22
   check_open_item_coherence                 2         0         0    2       24
   check_exact_counts                        5         1         1    6       30
@@ -22,6 +22,6 @@
   corpus/frontier_steps_history.tsv         --  nothing refuses on this key
 
   18 distinct sources, 81 refusal sites
-  58 walked, 11 self-referential, 12 pending   (71.6% walked)
-  6 cell(s) carry the ONE STEP FROM A WALL grade
+  68 walked, 12 self-referential, 1 pending   (84.0% walked)
+  7 cell(s) carry the ONE STEP FROM A WALL grade
   fully accounted: 17 -> check_prose_pins, check_open_references, check_open_item_coherence, check_exact_counts, check_marker_transposition, check_tilt_pins, check_paper_pins_present, check_revision_collisions, check_cannot_fail, check_unread_figure, check_paper_pins_not_comment_only, check_figures_pinned, check_pin_board, check_pins_adjudicated_on_mint, ROWS.tsv : index, check_view_tables : the debt file, red_carry : the carry ledger

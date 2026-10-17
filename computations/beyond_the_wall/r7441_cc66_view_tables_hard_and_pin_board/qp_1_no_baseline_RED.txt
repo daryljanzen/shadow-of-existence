@@ -1,0 +1,4 @@
+
+  QUOTE-PIN RATCHET -- is every pin on a sentence another seat owns adjudicated, or at least counted?
+
+  ⛔ no baseline at corpus/quote_pin_baseline.tsv -- this gate has no record to ratchet.

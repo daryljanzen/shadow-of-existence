@@ -1,0 +1,34 @@
+
+  QUOTE-PIN RATCHET -- is every pin on a sentence another seat owns adjudicated, or at least counted?
+
+    ledger keys unique: 0 duplicate key(s), 0 named as known
+    the instrument reports 2728 distinct (receipt, literal) key(s); the baseline carries 2729
+    by target/tier and flag: {'PAPER/ALT': 92, 'PAPER/LIST': 50, 'PAPER/MULTI': 164, 'PAPER/OPEN': 33, 'PAPER/SECSHARED': 77, 'PAPER/SENTENCE': 1261, 'PAPER/SURVEY': 12, 'PAPER/TOKEN': 249, 'PAPER/XOR': 2, 'SOURCE/ALT': 90, 'SOURCE/LIST': 22, 'SOURCE/OPEN': 33, 'SOURCE/SENTENCE': 815, 'SOURCE/TOKEN': 403, 'SOURCE/XOR': 8}
+    by verdict: {'DELIBERATE': 1482, 'MEANING-HELD': 538, 'EXTENDED': 512, 'ENCODING-OK': 46, 'ALT-OK': 79, 'NOT-A-PIN': 72}
+    MEANING-HELD seeds hold: a valid row is held; no sha, a bad sha, an absent literal, a TOKEN, and a HEAD stamp each fail; math-mode markup is read through, a changed value is not
+    MEANING-HELD: 538 key(s) HELD, not owed -- each at a commit that changed its receipt and carries its literal; 0 fail
+    UNADJUDICATED: 0   ** the only bucket that means work, and it may only fall **
+    no new key: the class has not grown.
+
+  ⛔ 1 STALE BASELINE ENTR(Y/IES) -- no longer reported, so the adjudication describes nothing:
+    [STALE] receipts/L999_not_a_receipt/Z9_no_such_key.py
+            "r7441 walk literal"
+    target: R* files 2728 live key(s) (annotations included); 1 annotation fault(s); 1 baseline target(s) differ from the instrument
+
+  ⛔ 1 TARGET ANNOTATION FAULT(S) in corpus/target_annotations.tsv:
+    [UNUSED] receipts/L147_two_arm/B10_the_thermal_mechanism_needs_an_exponential_approach.py  "$\\mathrm{dS}_{2}\\times S^{2}$"
+     ⌗ MISSING: R* cannot decide this key from its trace (it names `.tex` beside another kind, or no
+       file kind at all) -- read what the site tests and add a row.  UNUSED: R* decides the key, so
+       the row is a second, silent override -- remove it.
+
+  ⛔ 1 BASELINE TARGET(S) DIFFER FROM THE INSTRUMENT:
+    [TARGET] receipts/L147_two_arm/B10_the_thermal_mechanism_needs_an_exponential_approach.py  "$\\mathrm{dS}_{2}\\times S^{2}$"  baseline SOURCE, instrument PAPER
+     ⌗ the baseline copies the instrument; if the instrument is wrong on an UNDECIDED key, correct
+       its annotation; if R* decided it wrongly, that is a finding about R*, routed to 66.
+    MULTI-SITE: 159 pinned key(s) -- 83 a section scope would single-site, 76 that need a neighbourhood or a longer literal
+    the multi-site ratchet holds: 159 against a ceiling of 249
+    the list-pin ratchet holds: 0 unadjudicated list key(s) against a ceiling of 60
+    the pinned-read ratchet holds: 0 unadjudicated pinned-read key(s) against a ceiling of 102, 5 of them multi-site against 7
+    the ratchet holds: 0 unadjudicated against a ceiling of 2287
+
+  ⛔ THE QUOTE-PIN RATCHET IS RED.

@@ -536,3 +536,85 @@ claiming rows.
 `58 + 11 + 12 = 81`.
 
 **`check_quote_pins` is the only instrument left**, with its 12 — which is where `r7439` ⑤ said to end.
+
+---
+
+# r7441 ⑫ — `check_quote_pins`, THE LAST INSTRUMENT: `11 of 14`, AND THE ONE SITE I AM NOT WALKING
+
+`r7439` ⑤ said to leave this one until last.  Having now measured it, that was foresight: **this gate makes a
+`git show` per pin and its cache is in-process only, so every run takes ~21 minutes whatever is induced.**  A
+site-by-site walk would have been ten runs and three and a half hours of container time.
+
+**What made it affordable** was reading the control flow first:
+
+- **Two sites refuse before the sweep** — no baseline, and a duplicated key.  Both walked in **0 s**.
+- **The accumulating sites fire together.**  Everything from line 346 down is `bad += 1`, not `return 1`, so
+  one tree can carry several faults and one run reads several refusals.
+
+So the ten were taken in **four runs**, one of them in a **separate worktree so it ran concurrently** with
+another:
+
+| run | sites | what was induced |
+|---|---|---|
+| 0 s | no baseline, duplicated key | the file moved aside; one row doubled |
+| ~21 m | stale entry, UNUSED annotation, baseline target ≠ instrument | one dead-key row, one annotation for a key `R*` already decides, one target flipped `PAPER`→`SOURCE` |
+| ~21 m | verdict outside the vocabulary | one verdict replaced with a word not in `VOCABULARY` |
+| ~21 m (worktree, concurrent) | `MEANING-HELD` not held | one row's `held at <sha>` re-pointed at a sha that is not a commit |
+| ~21 m | **three ceilings at once** | wholesale un-adjudication: 2,288 / 61 / 103 rows |
+
+**Addresses worth keeping.**  The annotation fault names both of its kinds and both remedies (*"MISSING: … read
+what the site tests and add a row.  UNUSED: R* decides the key, so the row is a second, silent override --
+remove it"*).  The vocabulary refusal names the whole vocabulary and calls the failure what it is — *"an
+exemption by typo."*  And the target-differs refusal **routes elsewhere in its own words**: *"if R* decided it
+wrongly, that is a finding about R*, routed to 66."*
+
+## ⚖ THE THREE CEILINGS, AND THE CLASS AT `8 OF 9`
+
+```
+  ⛔ THE UNADJUDICATED LIST-PIN COUNT ROSE: 61 against the declared ceiling 60.
+  ⛔ THE PINNED-READ BUCKET ROSE: 103 unadjudicated against 102, 6 multi-site against 7.
+  ⛔ THE UNADJUDICATED COUNT ROSE: 2288 against the declared ceiling 2287.
+```
+
+Each by **exactly one over**, and **all three print one line and no address** — like `check_unread_figure`'s
+and `check_tilt_pins`', unlike `check_prose_pins`'.  ⇒ **the `r7439` ceiling class is 8 of 9 walked and still
+unrefuted**, with the silent-refusal subgroup now 5 against 1.
+
+⚠ **On the method, said plainly:** these three ceilings sit **2,288 / 61 / 103 above their current buckets**,
+because the campaign emptied the backlog to **0**.  They are the only ceiling branches in this register that
+**cannot be fired by a one-row edit**.  What I did was **un-adjudicate real keys wholesale** — the same
+operation as un-adjudicating one, applied to 2,452 rows.  **Nothing was fabricated**: no invented receipt, no
+invented literal, no key that does not exist.  If 66 reads a bulk transform as something other than a walk,
+these three come back out and I will say so.
+
+## ⛔ THE ONE SITE I AM NOT WALKING, AND WHY
+
+The **multi-site ceiling** (line 426) fires when pinned literals occurring more than once in their own file
+exceed 249.  The tree carries **159**.  Raising it needs **+91 duplicated pinned literals inside the papers** —
+**editing another seat's prose**, which is outside this seat's remit, and 91 edits of it at that.
+
+It is the **9th ceiling branch** and **the register's last pending site**.  **Routed to 66, not skipped**: its
+refusal does name an address in the source (*"name the section it is about, or …"*), so the class's prediction
+is likely to survive it, but *likely* is not *walked* and the cell stays `UNREAD` until someone induces it.
+
+## ⛭ AND A SECOND SELF-REFERENTIAL BRANCH, FOUND WITHOUT A RUN
+
+`_disp_stale` (line 386) is a comprehension **over `TARGET_DISPUTED`**, a module-level dict that is **empty** —
+emptied at `r7261` when 66 ruled `B57`.  An empty source makes the comprehension empty for **every**
+`(live, base)`: measured over 7 adversarial pairs, **0 fired**, while its sibling `_tgt_bad` (line 395, where
+the same dict is an **exemption** rather than a **source**) fired on 3 of them.  **The two lines differ only by
+which side of one dict they stand on.**  Not a fault: a guard with nothing to guard is the cheapest record that
+a dispute was settled.  (`probe_disp_stale.py`.)
+
+## THE REGISTER AFTER THIS CYCLE
+
+```
+  18 distinct sources, 81 refusal sites
+  68 walked, 12 self-referential, 1 pending   (84.0% walked)
+  7 cell(s) carry the ONE STEP FROM A WALL grade
+  fully accounted: 17
+```
+
+`68 + 12 + 1 = 81`.  **The cycle began at `22 of 81`.**
+
+**The one pending site is the multi-site ceiling above, and it is 66's to assign.**

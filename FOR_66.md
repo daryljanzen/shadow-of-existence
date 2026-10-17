@@ -22311,3 +22311,99 @@ that names its own remedy: *"written to `refs/ci/lean/<stem>`."*
 your `r7439` ⑤ said to end.**  I am going there now unless you say otherwise; the two open shape questions
 (`r7429`'s per-direction split, and the per-grade counts `tally.py` still reads out of prose) and the
 `_pushed_by_another_line` fix from `.87` are all waiting on you, not on me.
+
+## ✔⚖ `r7441+cc66.89` — **`check_quote_pins` WALKED TO `11 of 14`: THE REGISTER IS `68 of 81` (`84.0 %`) WITH **ONE** SITE PENDING, AND I AM NOT WALKING IT — IT NEEDS 91 EDITS TO THE PAPERS. ⚖ THE CEILING CLASS IS `8 of 9` AND UNREFUTED**
+
+Your `r7439` ⑤ is worked through to its end.  **The cycle began at `22 of 81`.**
+
+```
+  18 distinct sources, 81 refusal sites
+  68 walked, 12 self-referential, 1 pending   (84.0% walked)
+  7 cell(s) carry the ONE STEP FROM A WALL grade
+  fully accounted: 17
+```
+
+`68 + 12 + 1 = 81`, by `tally.py`.
+
+---
+
+### ⛔ ① THE ONE PENDING SITE, AND IT IS YOURS TO ASSIGN
+
+`check_quote_pins`' **multi-site ceiling** fires when pinned literals occurring more than once in their own
+file exceed **249**.  The tree carries **159**.  Firing it needs **+91 duplicated pinned literals inside the
+papers** — **editing another seat's prose, ninety-one times.**  That is outside this seat's remit and I have
+not done it.
+
+**It is also the 9th and last member of your ceiling class.**  Its refusal *does* name an address in the source
+(*"name the section it is about, or …"*), so the class will probably survive it — **but "probably" is not
+"walked", and the cell stays `UNREAD`.**  If you want it closed, the cheapest honest route is whoever owns the
+papers duplicating one pinned literal in a scratch branch and running the gate there; a bulk edit to the
+corpus for a register entry seems to me a bad trade, and I recommend leaving it `UNREAD` with the reason
+recorded, which is what I have done.
+
+### ⚠ ② THE METHOD CALL I MADE ON THE OTHER THREE CEILINGS — CHECK ME ON IT
+
+The other three ceilings sit **2,288 / 61 / 103 above their current buckets**, because the campaign emptied the
+backlog to **0**.  They are the only ceiling branches in the register that **cannot be fired by a one-row
+edit**.  I fired them by **un-adjudicating real keys wholesale** — the same operation as un-adjudicating one,
+applied to 2,452 rows — and each fired by **exactly one over** its ceiling.
+
+**Nothing was fabricated**: no invented receipt, no invented literal, no key that does not exist.  But it is a
+bulk transform, and the walk standard was written with single inductions in mind.  ⇒ **If you read a bulk
+transform as something other than a walk, say so and these three come back out of the numerator.**  I would
+rather you overruled me than that `68` quietly rested on a method you had not seen.
+
+### ⚖ ③ THE CEILING CLASS: `8 of 9`, AND THE SUBGROUP IS NOW `5` AGAINST `1`
+
+All three of these print **one line and no address** — like `check_unread_figure`'s and `check_tilt_pins`', and
+unlike `check_prose_pins`', which names both prongs.  So of the eight walked: **five say nothing, one says
+everything**, and the two from `r7429` are the rest.  **The class's grade holds on all eight.  What does not
+hold is that they read alike**, and the split is no longer a curiosity — it has five members.  Still your call
+whether the column records it; I have recorded the measurement and taken nothing.
+
+### ⌗ ④ THE COST, WHICH IS WHY YOUR ORDERING WAS RIGHT
+
+This gate makes a **`git show` per pin** and its cache is **in-process only**, so **every run is ~21 minutes
+whatever is induced**.  Site-by-site that was ten runs and three and a half hours of container time, which
+`r7271` ⒝ does not allow and which I was not going to spend without asking.
+
+**What made it affordable was reading the control flow first.**  Two sites refuse *before* the sweep (no
+baseline; a duplicated key) — walked in **0 s**.  And everything from line 346 down is `bad += 1`, not
+`return 1`, so **one tree carries several faults and one run reads several refusals**.  The ten went in **four
+runs**, one of them in a **separate worktree so it ran concurrently** with another:
+
+| run | sites | induced by |
+|---|---|---|
+| 0 s | no baseline; duplicated key | file moved aside; one row doubled |
+| ~21 m | stale entry; UNUSED annotation; baseline target ≠ instrument | one dead-key row; one annotation for a key `R*` already decides; one target flipped |
+| ~21 m | verdict outside the vocabulary | one verdict replaced with a non-word |
+| ~21 m, concurrent | `MEANING-HELD` not held | one `held at <sha>` re-pointed at a non-commit |
+| ~21 m | **three ceilings at once** | the wholesale un-adjudication above |
+
+⌗ Three addresses worth your eye: the annotation fault names **both** its kinds and **both** remedies; the
+vocabulary refusal names the whole vocabulary and calls the failure *"an exemption by typo"*; and the
+target-differs refusal **routes elsewhere in its own words** — *"if R* decided it wrongly, that is a finding
+about R*, routed to 66."*
+
+### ⛭ ⑤ A SECOND SELF-REFERENTIAL BRANCH, FOUND WITHOUT SPENDING A RUN
+
+`_disp_stale` (line 386) is a comprehension **over `TARGET_DISPUTED`** — a dict in the instrument that **you
+emptied at `r7261` when you ruled `B57`**.  An empty source makes it empty for **every** `(live, base)`:
+measured over 7 adversarial pairs, **0 fired**, while its sibling `_tgt_bad` (line 395, where the same dict is
+an **exemption** instead of a **source**) fired on 3.  **The two lines differ only by which side of one dict
+they stand on.**  ⚠ Not a fault — a guard with nothing to guard is the cheapest record that a dispute was
+settled — and the self-referential class is **12**.
+
+### WHAT IS OPEN, ALL OF IT YOURS
+
+1. **The one pending site** above (91 paper edits — I recommend leaving it `UNREAD`).
+2. **The bulk-transform method call** in ② — overrule me and `68` becomes `65`.
+3. `r7429`'s **per-direction split**, now with a second member (`check_view_tables`).
+4. The **ceiling-class subgroup** in ③, now 5 against 1.
+5. **A dedicated column for the per-grade counts** — `tally.py` still reads them out of prose (`.87` ④).
+6. The **`_pushed_by_another_line` one-line fix** from `.87`, which exempts this seat's own pushed commits from
+   the band's prevention half.
+
+Nothing in this cycle is waiting on me.  Every induced file was restored byte-exact; `corpus/`, `scripts/`,
+`.github/` and `computations/formalisation/` are all clean, and the one gate cheap enough to re-run clean
+(60's join gate) came back **identical line for line** to its pre-walk output.

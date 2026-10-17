@@ -1,0 +1,7 @@
+
+  QUOTE-PIN RATCHET -- is every pin on a sentence another seat owns adjudicated, or at least counted?
+
+    ledger keys unique: 1 duplicate key(s), 0 named as known
+  ⛔ 1 KEY(S) CARRY MORE THAN ONE ROW -- the ledger counts each once, so a verdict is lost:
+      receipts/L147_two_arm/B10_the_thermal_mechanism_needs_an_exponential_approach.py  '$\\mathrm{dS}_{2}\\times S^{2}$'  -- rows at lines [2840] and an earlier one
+    ⇒ merge the rows into one that records both, or name the key in KNOWN_DUPLICATE_KEYS with why.

@@ -1,0 +1,20 @@
+
+  QUOTE-PIN RATCHET -- is every pin on a sentence another seat owns adjudicated, or at least counted?
+
+    ledger keys unique: 0 duplicate key(s), 0 named as known
+    the instrument reports 2728 distinct (receipt, literal) key(s); the baseline carries 2728
+    by target/tier and flag: {'PAPER/ALT': 92, 'PAPER/LIST': 50, 'PAPER/MULTI': 164, 'PAPER/OPEN': 33, 'PAPER/SECSHARED': 77, 'PAPER/SENTENCE': 1261, 'PAPER/SURVEY': 12, 'PAPER/TOKEN': 249, 'PAPER/XOR': 2, 'SOURCE/ALT': 90, 'SOURCE/LIST': 22, 'SOURCE/OPEN': 33, 'SOURCE/SENTENCE': 815, 'SOURCE/TOKEN': 403, 'SOURCE/XOR': 8}
+    by verdict: {'DELIBERATE': 1481, 'MEANING-HELD': 538, 'EXTENDED': 512, 'ENCODING-OK': 46, 'ALT-OK': 79, 'NOT-A-PIN': 72}
+    MEANING-HELD seeds hold: a valid row is held; no sha, a bad sha, an absent literal, a TOKEN, and a HEAD stamp each fail; math-mode markup is read through, a changed value is not
+    MEANING-HELD: 538 key(s) HELD, not owed -- each at a commit that changed its receipt and carries its literal; 0 fail
+    UNADJUDICATED: 0   ** the only bucket that means work, and it may only fall **
+    no new key: the class has not grown.
+    no stale entry: every adjudication still describes a live key.
+    target: R* files 2728 live key(s) (annotations included); 0 annotation fault(s); 0 baseline target(s) differ from the instrument
+    MULTI-SITE: 159 pinned key(s) -- 83 a section scope would single-site, 76 that need a neighbourhood or a longer literal
+    the multi-site ratchet holds: 159 against a ceiling of 249
+    the list-pin ratchet holds: 0 unadjudicated list key(s) against a ceiling of 60
+    the pinned-read ratchet holds: 0 unadjudicated pinned-read key(s) against a ceiling of 102, 5 of them multi-site against 7
+    the ratchet holds: 0 unadjudicated against a ceiling of 2287
+
+  the quote-pin class is fully accounted: no new key, no stale entry, and the backlog in the open.

@@ -1,0 +1,17 @@
+  TARGET_DISPUTED as the instrument carries it: {}  (len 0)
+
+    _disp_stale = []      (_tgt_bad = 0)   -- both empty
+    _disp_stale = []      (_tgt_bad = 0)   -- live and base agree
+    _disp_stale = []      (_tgt_bad = 1)   -- live and base DISAGREE
+    _disp_stale = []      (_tgt_bad = 0)   -- key only in live
+    _disp_stale = []      (_tgt_bad = 0)   -- key only in base
+    _disp_stale = []      (_tgt_bad = 1)   -- two keys, one disagreeing
+    _disp_stale = []      (_tgt_bad = 1)   -- UNDECIDED against a verdict
+
+  7 (live, base) pair(s) tried, 0 made the branch fire.
+  ⌗ It cannot fire while TARGET_DISPUTED is empty, and filling it is an edit to the instrument's
+    own control -- SELF-REFERENTIAL by r7437 ④, in the denominator and out of the numerator.
+    ⛭ Its sibling `_tgt_bad` (line 395) is the live-vs-baseline branch and IS data-reachable:
+      the same comprehension with TARGET_DISPUTED as an EXEMPTION rather than a source.
+    ⚠ Not a fault: the entry was emptied at r7261 when 66 ruled B57, and a guard left in place
+      with nothing to guard is the cheapest possible record that the dispute was settled.
