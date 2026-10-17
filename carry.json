@@ -781,10 +781,6 @@
    "receipts/L257_the_label_did_double_duty/V1_a_strike_that_reads_as_done_and_a_paper_that_says_otherwise.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38845923112",
     "since": "964fef0a232514f9c486144043405cc608ba90a3"
-   },
-   "receipts/L_probability/S50_the_eleven_close_whole_and_all_three_arms_fail_high_because_two_of_them_were_measuring_one_quantity.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39036902589",
-    "since": "73942a5ab25b22f686b055e0a5c9fd41552307e2"
    }
   }
  }
