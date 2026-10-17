@@ -30,6 +30,17 @@ on:
       - 'corpus/**.tex'
       - 'corpus/**.pdf'
       - 'BOOK_INTRO_cosmiCave/assets/**'
+      # r7433: the formalisation page's four inputs.  They were missing, which
+      # is the SAME defect as the one below it in the file and found while
+      # repairing that one: `r7425` taught the generator to read these and did
+      # not teach the trigger, so 71 could close a row, push a new ROWS.tsv,
+      # and the published page would keep saying what it said before.  A
+      # generator's input list and a trigger's path list are two copies of one
+      # thing; these cannot be derived from the generator the way PAGES.txt is,
+      # so they are named here and this comment is why.
+      - 'computations/formalisation/r7325_71_inventory/ROWS.tsv'
+      - 'computations/beyond_the_wall/r7419_69_status_wording/**'
+      - 'scripts/decl_cells.py'
       - 'scripts/gen_live_edition.py'
       - 'scripts/gen_paper_html.py'
       - 'scripts/gen_explainer_pdf.sh'
@@ -96,13 +107,25 @@ jobs:
       - name: Check the build produced what it claims
         # A publish step that cannot fail is a publish step that will one day
         # ship an empty page.  These are the three assertions worth making.
+        #
+        # ** THE LIST IS READ FROM THE BUILD, NOT KEPT HERE. **  This step and
+        #    the assemble step below each carried their own copy of the page
+        #    list.  `r7425` added `formalisation.html` to the generator, the
+        #    index nav and the sitemap, and could not add it to two lists it
+        #    does not contain -- so the page was built, linked and sitemapped
+        #    while the deploy never copied it, and the site answered 404 at a
+        #    URL its own sitemap advertised.  `PAGES.txt` is written by the
+        #    generator from the single list the sitemap is built from, with
+        #    every entry stat'd, and both steps now read it.
         run: |
           set -e
           cd BOOK_INTRO_cosmiCave
-          for f in live_edition.html introduction.html explainer.html \
-                   frontier.html ledgers.html receipts.html; do
-            test -s "$f" || { echo "::error::$f missing or empty"; exit 1; }
-          done
+          test -s PAGES.txt || { echo "::error::PAGES.txt missing or empty"; exit 1; }
+          while read -r f; do
+            [ -n "$f" ] || continue
+            test -s "$f" || { echo "::error::$f is named in PAGES.txt and is missing or empty"; exit 1; }
+          done < PAGES.txt
+          echo "PAGES.txt names $(grep -c . PAGES.txt) pages, all present and non-empty."
           grep -q 'The Shadow of Existence' live_edition.html \
             || { echo "::error::index lost its title"; exit 1; }
           grep -qE 'class="pn">P18<' live_edition.html \
@@ -110,17 +133,22 @@ jobs:
           echo "index $(wc -c < live_edition.html)b, introduction $(wc -c < introduction.html)b, frontier $(wc -c < frontier.html)b"
 
       - name: Assemble the site
-        # index.html is the live edition, so the site root is the book.
         run: |
+          set -e
           mkdir -p _site
+          # Every page the generator wrote, read from its own manifest.  A `cp`
+          # list kept here is a copy of a list, and a copy is a claim about the
+          # list at the moment it was copied -- which is exactly how
+          # `formalisation.html` came to be built, linked and sitemapped while
+          # this step quietly shipped a site without it.  Nothing is globbed
+          # either: `paper_P*.html` would have shipped a stale chapter whose
+          # source had been deleted.
+          while read -r f; do
+            [ -n "$f" ] || continue
+            cp "BOOK_INTRO_cosmiCave/$f" _site/
+          done < BOOK_INTRO_cosmiCave/PAGES.txt
+          # index.html is the live edition, so the site root is the book.
           cp BOOK_INTRO_cosmiCave/live_edition.html _site/index.html
-          cp BOOK_INTRO_cosmiCave/live_edition.html _site/
-          cp BOOK_INTRO_cosmiCave/introduction.html _site/
-          cp BOOK_INTRO_cosmiCave/explainer.html _site/
-          cp BOOK_INTRO_cosmiCave/frontier.html _site/
-          cp BOOK_INTRO_cosmiCave/ledgers.html _site/
-          cp BOOK_INTRO_cosmiCave/receipts.html _site/
-          cp BOOK_INTRO_cosmiCave/paper_P*.html _site/
           cp BOOK_INTRO_cosmiCave/sitemap.xml _site/ 2>/dev/null || true
           cp BOOK_INTRO_cosmiCave/robots.txt _site/ 2>/dev/null || true
           # ** The custom domain must be IN THE ARTIFACT. **  We deploy from

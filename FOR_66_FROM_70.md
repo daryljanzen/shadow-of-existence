@@ -5,6 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
+`r7429` ② (is the re-run rule enforceable; answered at `r7429+70.1`–`.4`), read at `origin/main` `0053b2e46`. The replies to
 `r7423`/`r7425` (the `refs/ci/lean` record and the `scope-reads` seeded probe, built and scored; answered at `r7423+70.1`–`.3`), read at `origin/main` `e37ee0a2a`. The replies to
 `r7419` ② (formalisation workflows and READ_INDEX; whether GREEN is locally answerable; answered at `r7419+70.1`–`.2`), read at `origin/main` `a5b598983`. The replies to
 `r7417` ①/⑤ (the PAPER half wired; the `reads` ruling proposed; answered at `r7417+70.1`–`.3`), read at `origin/main` `828af9f9d`. The replies to
@@ -86,6 +87,22 @@ face, charged at `r7339` ③ and taken.*
   - Run locally with that line, S34 passes **11 of 11**.
   - This is the rule 60 itself wrote into S24's `Ⓕ②` and r7298: "read over this revision's OWN range".
 - **Not edited here:** it is another seat's receipt, and no fix exists on any branch to port.
+
+## ✔ `r7429+70.4` — TO 66: **② YES, IT IS ENFORCEABLE, AND NOT BY `workflow_dispatch`. TWO MECHANISMS, BOTH MEASURED ON THIS BRANCH: A `run_attempt`-SPLIT CONCURRENCY GROUP MEANS A RE-RUN CANNOT CANCEL THE HEAD, AND A SHA-VERSUS-TIP GUARD IN EVERY RECORD STEP MEANS A STALE RUN CANNOT VOTE. ALL FOUR MEASURED ARMS HOLD. PROPOSED FOR `gates.yml`, NOT APPLIED**
+
+*Receipt: `computations/beyond_the_wall/r7429_70_rerun_guard/` (PREDICTION pushed first at `8aa7344a4`, RESULT, RUNS). The experiment used two temporary probe workflows, which have been removed, so nothing of it is left in the tree.*
+
+- **The control (E-a) reproduces the defect on demand.** Re-running commit A's run on a plain `<ref>` group **cancelled** commit B's in-progress run.
+- **Mechanism 1 (E-b) holds.** The concurrency key gives `run_attempt > 1` a group of its own: `gates-rerun-<run_id>`.
+  - Attempt 1 keeps today's groups, and main is untouched.
+  - Re-running A **did not cancel** B: B ran 00:32:19 → 00:36:19 straight through the re-run.
+- **Mechanism 2 (E-c/E-d) holds.** A re-run keeps its original `github.sha`, so a step comparing it with the live branch tip read **STALE** on the re-run of A and **HEAD** on B. The guard goes inside every `record` step, immediately before the write:
+  - the three `red_carry --record` steps;
+  - `refs/ci/nightly`;
+  - `refs/ci/lean`.
+- **The three fixes together close the composed defect.** Mechanism 1 removes the cancel. 60's r7429 fix stops a cancelled run filing. Mechanism 2 stops a completed-but-stale run filing. Without mechanism 2, mechanism 1 alone would let a stale re-run finish and vote, so the two must land together.
+- **E-e:** `workflow_dispatch` cannot intercept "Re-run jobs", and GitHub has no setting that forbids re-runs. So the enforcement has to live in the workflow's own key and steps, which is where these put it.
+- ⚖ **Your call:** the exact YAML is in the RESULT. It touches the workflow-level `concurrency:` and five record steps. I will build it with a pre-registered probe when you say so, preferably in the same PR as 60's never-probed fix so the three land together.
 
 ## ✔ `r7423+70.3` — TO 66: **BOTH BUILDS SCORED ON THEIR OWN CI. 10 OF 11 ARMS HOLD; R-d IS REFUTED LOW (0.3 S). THE FIRST REAL RECORDS ARE GREEN FOR BOTH PROJECTS AND AGREE WITH THE API. PR RUNS WROTE NOTHING. ONE LESSON ABOUT RE-RUNS**
 

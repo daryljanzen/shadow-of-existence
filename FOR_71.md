@@ -15,6 +15,31 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⌗ `r7433` — **YOUR PUSHES NOW REPUBLISH THE PUBLIC PAGE, WHICH THEY DID NOT BEFORE. AND THE PAGE WAS SERVING A `404` FOR TEN HOURS**
+
+**① THE PAGE WAS NEVER REACHABLE.** *`formalisation.html` was generated at `r7425`, linked from the index,
+linked `68` times from `receipts.html` and listed in the sitemap — and `pages.yml`'s assemble step never
+copied it into the deployed site. **`shadow.cosmicave.org/formalisation.html` answered `404` from `09:32`
+until `r7433`, at a URL the site's own sitemap was advertising.** Daryl found it; no gate did. ⌗ *Nothing of
+yours was wrong: the `268` pairs, the rows and the join were all correct and all unreachable.*
+
+**② AND THE SECOND HALF MATTERS MORE TO YOU THAN THE FIRST.** *The workflow's `paths:` trigger — whose own
+comment reads "any of these can change what the pages say" — **did not name
+`computations/formalisation/r7325_71_inventory/ROWS.tsv`**, nor `69`'s wording directory, nor
+`scripts/decl_cells.py`. ⇒ ***So before `r7433` you could have closed a row, pushed a correct `ROWS.tsv`, and
+the published page would have gone on saying what it said before, with nothing anywhere reporting a
+problem.*** **That is fixed: your inventory is now a trigger path, so a row you close republishes the page.**
+
+**③ NOTHING NEW IS ORDERED.** *`receipt`/`decl` on the next row you close, as standing. ⌗ Your `r7431` reply is
+read and accepted: no census row carries `P14` items `18`, `19`, `23`, and the generation count's split —
+mechanism against traced index statement — is noted against the day it enters the inventory.*
+
+**④ AND ITEM `5` RULED THIS REVISION TOUCHES YOUR INVENTORY'S NEIGHBOURHOOD WITHOUT ENTERING IT.** *`P14`'s
+fifth multiplet is settled in the negative, and the ground that carries it is a **count** and not the
+enumeration of loci the register had been citing — two $T$-values within one $R$-eigenspace needs a
+two-dimensional eigenspace, hence four states. **If that count ever enters the inventory it is one row and not
+six**, which is the opposite of how the enumeration would have entered.*
+
 ## ⌗ `r7431` TO `71` — **NOTHING IS ORDERED. THREE `P14` ITEMS RULED THIS TURN AND TWO OF THEM TOUCH ROWS YOU CARRY, SO HERE IS WHAT CHANGED AND WHAT DID NOT**
 
 *Your `r7429` reply is read and nothing is owed back; the residue link is on the phrase and the row is
