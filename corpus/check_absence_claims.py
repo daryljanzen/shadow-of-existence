@@ -45,7 +45,16 @@ CLAIM = re.compile(
     r"|unremarked in the corpus"
     r"|none (?:remarks|notes)"
     r"|(?:the corpus|no paper) (?:does not|doesn't) (?:note|remark|record|draw|connect) (?:this|it|them)"
-    r"|is (?:stated|noted|drawn|recorded) nowhere)", re.I)
+    r"|is (?:stated|noted|drawn|recorded) nowhere"
+    # ⬭ r7441: two phrasings measured ESCAPING this net, found when the register
+    #   census asserted "P15 and P11 carry no such item, so the pointer lands
+    #   nowhere" -- and both papers carried it, with a live register row (`PO-88`)
+    #   besides.  The file was in scope all along; the WORDING was not.
+    #   ⚠ AND THE LIMIT IS RECORDED RATHER THAN PAPERED OVER: a net keyed on
+    #   phrasings cannot be completed by adding phrasings.  These two are added
+    #   because they were MEASURED escaping, which is the ratchet's own rule --
+    #   stop the one you found -- and not because the list is now closed.
+    r"|lands? nowhere|carr(?:y|ies) no such)", re.I)
 
 EVIDENCE = re.compile(
     r"(grep|searched|scanned|NOT FOUND|NOT YET CHECKED|zero (?:occurrences|hits|times)"

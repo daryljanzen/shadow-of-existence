@@ -47,3 +47,38 @@ receipts/INDEX.md	appears nowhere
 receipts/INDEX.md	unremarked in the corpus
 scripts/find_broken_pins.py	occurs nowhere
 scripts/reapply_annotations.py	appears nowhere
+#
+# r7441: the two phrasings the register census escaped on -- "lands nowhere"
+# and "carry/carries no such".  Grandfathered on the same terms as the rest:
+# nothing here must move, and what is stopped is the next one.
+CORPUS_MAP.md	carry no such
+FOR_60.md	carry no such
+FOR_66_FROM_60.md	carries no such
+FOR_66_FROM_60.md	carry no such
+PROTECTED_OPEN.md	carries no such
+SPINUP_FAILURE_FORENSIC.md	carries no such
+THE_LIVE_ARC.md	carries no such
+THE_OPEN_PROBLEMS_LEDGER.md	carries no such
+THE_REGISTER.md	carry no such
+computations/baryon_edge/L048w_the_r3_cluster.py	carries no such
+computations/beyond_the_wall/r7367_69_the_register_census/CENSUS.md	carry no such
+computations/beyond_the_wall/r7367_69_the_register_census/CENSUS.md	lands nowhere
+corpus/CR_framework.tex	carries no such
+corpus/CR_framework.tex	carry no such
+corpus/SdS-slicing-curve_v2.tex	carries no such
+corpus/algebroid_paper.tex	carries no such
+corpus/appendix_receipts_P07.tex	carry no such
+corpus/appendix_receipts_P10.tex	carry no such
+corpus/appendix_receipts_P15.tex	carries no such
+corpus/appendix_receipts_P15.tex	carry no such
+corpus/appendix_receipts_P17.tex	carries no such
+corpus/appendix_receipts_corpus.tex	carries no such
+corpus/appendix_receipts_corpus.tex	carry no such
+corpus/canonical_time.tex	carry no such
+corpus/check_absence_claims.py	carry no such
+corpus/shadow_of_existence.tex	carries no such
+kills/PO-8.md	lands nowhere
+receipts/INDEX.md	carries no such
+receipts/INDEX.md	carry no such
+retired/CMB_ACOUSTIC_FRONTIER_STATUS.md	land nowhere
+scripts/regen_frontier.py	carry no such
