@@ -1,0 +1,34 @@
+  UNVERDICTED verdicts that count: ['UNADJUDICATED', 'UNADJUDICATED-LIST', 'UNADJUDICATED-PINNED']
+
+    equal      board    0  ratchet    0  rows    0  -- empty baseline
+    equal      board    0  ratchet    0  rows    0  -- comments only
+    equal      board    1  ratchet    1  rows    1  -- one unverdicted key
+    equal      board    3  ratchet    3  rows    2  -- two receipts, three keys
+    equal      board    0  ratchet    0  rows    0  -- a receipt field that STARTS WITH #
+    equal      board    1  ratchet    1  rows    1  -- a receipt field that CONTAINS #
+    equal      board    1  ratchet    1  rows    1  -- an EMPTY receipt field
+    equal      board    1  ratchet    1  rows    1  -- a receipt field of only spaces
+    equal      board    0  ratchet    0  rows    0  -- trailing blank lines + CRLF
+    equal      board    1  ratchet    1  rows    1  -- a 6-field row exactly
+    equal      board    0  ratchet    0  rows    0  -- a 5-field row (too short to count)
+    equal      board    0  ratchet    0  rows    0  -- a verdicted row (must not count)
+    equal      board    3  ratchet    3  rows    3  -- every UNVERDICTED verdict at once
+    equal      board  250  ratchet  250  rows    1  -- one receipt, 250 keys
+    equal      board    2  ratchet    2  rows    1  -- mixed verdicted and not
+
+  15 baseline(s) tried, 0 made (b) fire.
+  ⌗ This is NOT a claim that the check is wrong -- it is a measurement of WHAT CAN REACH IT.
+    (b) compares a sum against itself: generate() emits one row per counts() key carrying
+    that key's own count, and counts() cannot produce a key starting with "#" because it
+    skips any baseline line that starts with one.  The branch is reachable only by editing
+    generate() or counts() -- the instrument's own control -- which is SELF-REFERENTIAL by
+    r7437 ④, not reachable by data.
+
+  ⛭ AND THE SOURCE SAYS SO ITSELF, in the docstring of check (b):
+      "the board's unverdicted total EQUALS the baseline's -- a seeded property of
+       `generate`, checked on the board this gate generates.  (Its staleness half went
+       with the committed copy at r7257+70.1.)"
+    The half that could differ was the COMMITTED board going stale.  r7257+70.1 deleted the
+    committed copy and made the gate generate the board every run -- which removed the only
+    way the two numbers could ever disagree.  The seeded property is checked at line 199,
+    inside _seeds(); line 228 re-checks it on data that cannot differ.

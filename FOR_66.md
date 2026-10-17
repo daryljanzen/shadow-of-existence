@@ -21924,3 +21924,125 @@ address, the class is wrong and the grade goes back to being three cases.***
 
 *`computations/beyond_the_wall/r7439_cc66_the_denominator_corrected_and_the_ceiling_class/` — `tally.py`, its
 runs before and after this cycle, and seven transcripts.*
+
+## ⛭✔ `r7441+cc66.85` — **THE TWO CHEAPEST ARE CLOSED (`22`→`24 of 81`, 7→9 FULLY ACCOUNTED). ⛭ AND `tally.py` MISCOUNTED MY OWN NEW MARK — THE SAME DEFECT AS `.84`'S, IN THE INSTRUMENT I BUILT TO PREVENT IT**
+
+Your `r7439` ⑤, worked as written: *"Keep walking, cheapest first, `check_quote_pins`' `14` last."*  Cheapest by
+pending count were `check_view_tables : the debt file` (1) and `check_pin_board` (2).  **Both are now fully
+accounted.**  Everything below is `tally.py`'s number, read off the register's cells — `.84` exists because I
+hand-summed this table once, and I will not do it again.
+
+`computations/beyond_the_wall/r7441_cc66_view_tables_hard_and_pin_board/WALK.md`, with 9 transcripts, a probe
+and a self-test.
+
+---
+
+### ① `check_view_tables` — **one `return 1`, two reasons, TWO DIFFERENT GRADES.** `2 of 2` ✔
+
+The locator found **one** statement and the denominator credited **two sites**, because `if hard_fail or
+soft_rise` reaches it two ways.  `.57` walked `soft_rise` (the one that is `ONE STEP FROM A WALL`: recording the
+higher number is forbidden by the file's downward-only rule).  This cycle walked `hard_fail`, by **DATA** —
+removing one **live** row, `'PO-50'`, from `regen_frontier.py`'s `GROUP` table:
+
+> `⛔ 1 HARD table(s) missing a live row -- the row RAISES or does NOT RENDER:`
+> `  [FAIL] regen_frontier.py:GROUP -- PO-50`
+> `   A row needs EVERY hard table to reach a reader.  Add it, in the same revision.`
+
+That address is **mine**, and I took it to exit 0; the file is back to its committed bytes.  **So one site now
+carries two grades** — `REACHABLE` in `hard_fail`, `ONE STEP FROM A WALL` in `soft_rise`.  That is the shape
+`r7429` found in `check_exact_counts`, and it now has a second member, which bears on the question you left
+open there: **whether the column splits by direction is still your call, but it is no longer a single case.**
+
+**⛭ And I did not take this gate's word for its own severity.**  Its whole design claim is that it *derives*
+`HARD` from how the source reads the table rather than declaring it — which is worth nothing if a missing row
+does not actually raise.  With `PO-50` gone, the generator itself dies: `KeyError: 'PO-50'` at `GROUP[p]`,
+`regen_frontier.py:10803`.  The derived severity is confirmed in the generator's own voice.
+
+### ② `check_pin_board` — **(a) walked on both reasons; (b) MEASURED unreachable by data.** `1 walked + 2 self-ref = 3 of 3` ✔
+
+**(a) the VOID claim is `REACHABLE`**, walked on both its reasons: a second `CLAIM` at `r7300` on a prefix an
+earlier claim holds until `r7304` (`"cc66 holds it until r7304"`), and a row with an unreadable revision field
+(`"no revision id or no prefix"`).  I took the second address to exit 0.
+
+⌗ **One distinction I am recording rather than smoothing over:** this refusal names **the holder and the
+deadline**, or **the field** — it prints no remedy.  The remedy is one hop away, in the claims file's **own
+header** (*"To give a prefix up early, append a RELEASE row"*).  Still `REACHABLE`, but the hop is in the cell.
+
+⌗ **And a sentence of the gate's own, checked instead of assumed.**  The run that voids the `r7300` claim
+prints, four lines later, `RELEASED  L280_the_decidable_claims … -- claimable again`.  Together those two lines
+*read* like a contradiction.  They are not — they are about different revisions — but the only way to know was
+to try it, so I did: a `CLAIM` on that same prefix **at the trunk revision `r7439`** is accepted, `1 live, 3
+RELEASED`, **exit 0**.  The gate honours its own sentence.  The green alone would not have established that; the
+**pair** does, which is the method `.83` had to fall back on.
+
+**(b) the board-vs-ratchet total is a SECOND `SELF-REFERENTIAL` branch.**  It compares a sum against itself:
+`generate()` calls `counts()` in the same run and emits exactly one row per key carrying that key's own count,
+and the only filter that could drop a row needs a receipt field starting with `#`, which `counts()` can never
+produce.  I did not stop at the argument — `probe_b.py` pushes **15 adversarial baselines** through the
+instrument's own two functions (`#`-leading, `#`-containing, empty and all-space receipt fields, CRLF, a
+6-field row, a 5-field row, a verdicted row, every UNVERDICTED verdict, 250 keys under one receipt, mixed).
+**0 of 15 fired.**
+
+**And the source says it first**, in `(b)`'s own docstring: *"a seeded property of `generate` … (Its staleness
+half went with the committed copy at `r7257+70.1`.)"*  The half that could ever differ was a **committed** board
+going stale; `r7257+70.1` deleted that copy and made the gate regenerate the board every run, which removed the
+only way the two numbers could disagree.  The seeded half is already checked at line 199, inside `_seeds()`.
+Line 228 re-checks it on data that cannot differ.
+
+⚠ Stated precisely, because it is a catalogue entry and not a fault: **this says what can reach the branch, not
+that the check is wrong.**  A branch that cannot fire today is still the cheapest possible guard against a
+future edit to `generate()`.
+
+⇒ the `SELF-REFERENTIAL` class is **11**, not 10.  Your `r7439` ① took it as a class of 10 on my count; this is
+the correction, and it moves in the direction the ratchet allows.
+
+`corpus/pin_claims.tsv` was appended to and restored **byte-exact four times**, `git status` clean after each,
+and **nothing was ever pushed** — so no other seat ever saw a claim this seat does not hold.
+
+---
+
+### ③ ⛭ **A SECOND DEFECT IN MY OWN TALLY, AND IT IS `.84`'S DEFECT WEARING A DIFFERENT COAT**
+
+`tally.py` exists because I hand-summed this register and got `78` for `81`.  Its grade counters were
+`len(re.findall('SELF-REFERENTIAL', cell))` — **occurrences of the phrase**, one per branch by convention.  I
+then wrote the cell above as `⌗ 2 SELF-REFERENTIAL, now a PAIR`: **two branches, one occurrence.**  It counted
+`1`.  `check_pin_board` read `2 of 3` instead of `3 of 3`, it was missing from the fully-accounted list, and the
+class still read `10`.
+
+**A counter that depends on how a sentence is spelled is the same defect as the hand sum it replaced** — both
+read a number off prose, both can be off by one in silence.  So I fixed the instrument instead of reshaping the
+cell to suit it (`graded()` reads an explicit leading integer, a bare phrase still counts 1), recorded the miss
+**in `tally.py`'s own docstring** by the rule that put `sites.py`'s missed `bad = True` idiom in its source, and
+gave the new counter a 7-case self-test.  Reporting it because I found it, and because this register's only
+worth is that its numbers are not prose.
+
+---
+
+### THE COUNT, PRINTED BY THE INSTRUMENT (`tally_after_r7441.txt`)
+
+| | `.84` | now |
+|---|---|---|
+| distinct sources | 18 | 18 |
+| refusal sites | 81 | 81 |
+| **walked** | **22** | **24** |
+| self-referential | 10 | **11** |
+| pending | 49 | **46** |
+| walked | 27.2 % | **29.6 %** |
+| fully accounted | 7 | **9** |
+| `ONE STEP FROM A WALL` cells | 3 | 3 |
+
+`24 + 11 + 46 = 81`, by `tally.py`'s running total and not by me.
+
+**Cheapest still pending, in order, `check_quote_pins` last as ordered:** `check_exact_counts` 3 ·
+`check_marker_transposition` 3 · `red_carry` 3 · `check_prose_pins` 4 · `check_unread_figure` 4 ·
+`check_tilt_pins` 5 · `check_revision_collisions` 5 · `ROWS.tsv : index` 7 · `check_quote_pins` 12.
+
+**The ceiling class is still a prediction**, unchanged: 7 of its 9 branches are unwalked and one printed address
+refutes it.
+
+### ⌗ PR #496, for the record
+`scoped — the plain suite` went red on `9807aad1b`: **130 pass, 1 fail**, and the one fail is `V1`, the standing
+`red_carry` member.  I re-ran `V1` on the branch **and** in a pristine worktree at `main`'s *current* head
+`0e78a2ef0` — both exit 1 on the same three gates, transcripts **byte-identical**, both filed in the PR.  Not
+this PR's, no fix to port (`V1`'s `⓶` is P07's own wording, another seat's call), no re-run spent because it is
+deterministic.  One comment on the PR says exactly that.  `main` is at `r7439` and nothing is unanswered.

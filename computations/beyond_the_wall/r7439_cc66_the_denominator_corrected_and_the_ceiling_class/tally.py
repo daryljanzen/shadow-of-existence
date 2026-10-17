@@ -6,6 +6,15 @@ hand sum stopped one row short of the table's end, dropping `red_carry`'s `3`, a
 the shared row.  **The running total below is printed precisely so that the place a sum goes wrong is
 visible** -- it reaches `78` after `check_view_tables` and `81` after `red_carry`, which is exactly the error.
 
+⛭ r7441 ① -- A SECOND MISS, IN THIS FILE, FOUND BY USING IT.  The grade counters were
+`len(re.findall('SELF-REFERENTIAL', cell))` -- occurrences of the PHRASE, one per branch by convention.
+A cell written "⌗ 2 SELF-REFERENTIAL, now a PAIR" names TWO branches and says the phrase ONCE, so it
+counted 1 and `check_pin_board` read 2 of 3 instead of 3 of 3.  **A counter that depends on how a
+sentence is spelled is the same defect as the hand sum it replaced**, so it is fixed here rather than
+worked around in the cell: an explicit leading integer is read when present (`2 SELF-REFERENTIAL`), and
+a bare phrase still counts 1.  The miss is recorded instead of quietly repaired, by the same rule that
+put sites.py's missed `bad = True` idiom in its own source.
+
     python3 tally.py
 """
 import os
@@ -14,6 +23,18 @@ import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 REG = os.path.abspath(os.path.join(HERE, '..', 'r7419_cc66_the_register_of_keys', 'register.tsv'))
+
+
+def graded(cell, phrase):
+    """how many branches a cell puts under `phrase` -- an explicit leading count wins over an occurrence count
+
+    r7441 ①: `2 SELF-REFERENTIAL` means two branches in one sentence; a bare `SELF-REFERENTIAL` means one.
+    Counting occurrences alone undercounts the first, which is how check_pin_board read 2 of 3.
+    """
+    numbered = [int(n) for n in re.findall(r'(\d+)\s+' + re.escape(phrase), cell)]
+    unnumbered = len([m for m in re.finditer(re.escape(phrase), cell)
+                      if not re.search(r'\d+\s+$', cell[:m.start()])])
+    return sum(numbered) + unnumbered
 
 
 def main():
@@ -25,7 +46,7 @@ def main():
         m = re.search(r'\((\d+) of (\d+) refusal sites walked', f[7])
         shared = 'SAME SOURCE' in f[7]
         rows.append((f[0], m and (int(m.group(1)), int(m.group(2))), shared,
-                     len(re.findall('SELF-REFERENTIAL', f[7])), len(re.findall('ONE STEP FROM A WALL', f[7]))))
+                     graded(f[7], 'SELF-REFERENTIAL'), graded(f[7], 'ONE STEP FROM A WALL')))
     print('  instrument                            walked  self-ref  one-step   of  running')
     w = s = sr = osw = 0
     for name, v, shared, n_sr, n_os in rows:

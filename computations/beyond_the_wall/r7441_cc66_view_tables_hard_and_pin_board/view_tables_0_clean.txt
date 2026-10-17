@@ -1,0 +1,17 @@
+
+  VIEW TABLES -- row-keyed tables held to the live set (10 live rows)
+
+    rank_open.py                 CONVERGES    SOFT  1/10  9 missing
+    rank_open.py                 REACH        SOFT  1/10  9 missing
+    regen_frontier.py            EST          HARD  10/10  -
+    regen_frontier.py            GROUP        HARD  10/10  -
+    regen_frontier.py            KIND         SOFT  10/10  -
+    regen_frontier.py            ORDER        HARD  10/10  -
+    stamp.py                     BOUNDED      SOFT  1/10  9 missing
+    stamp.py                     DEFINEDNESS  SOFT  1/10  9 missing
+    check_rows_cite_receipts.py  FLOOR        SOFT  1/10  9 missing
+
+  9 row-keyed table(s); every hard table covers the live set and no soft debt rose.
+  ⌗ Severity is READ FROM THE SOURCE -- subscript and membership are hard, `.get` is
+    soft -- so a table that changes how it is read changes class without being told.
+

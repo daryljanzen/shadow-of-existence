@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/home/user/shadow-of-existence/scripts/regen_frontier.py", line 10825, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/home/user/shadow-of-existence/scripts/regen_frontier.py", line 10803, in main
+    if GROUP[p] != g or p not in live:
+       ~~~~~^^^
+KeyError: 'PO-50'
