@@ -60,13 +60,6 @@
   }
  },
  "claude/shadow-of-existence-setup-6awafl": {
-  "suite": {
-   "receipts/P15_CR_cosmology/P15_the_fourth_parameter_recovers_the_drift_the_gaps_show_but_the_spacing_and_the_drift_are_not_separable_so_the_data_half_still_does_not_happen.py": {
-    "gates": [],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39044617170",
-    "since": "88f463fac2fd17cbd7023112561500a12651a3b0"
-   }
-  },
   "tolerance": {
    "corpus/check_formalisation_join.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38971188943",
