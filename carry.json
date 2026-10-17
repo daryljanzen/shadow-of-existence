@@ -586,12 +586,6 @@
   }
  },
  "main": {
-  "reads": {
-   "corpus/check_formalisation_join.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38920346737",
-    "since": "d9d52886fc0ca460acd285b769903616ef38c9d0"
-   }
-  },
   "suite": {
    "corpus/check_formalisation_join.py": {
     "gates": [
