@@ -178,6 +178,18 @@ jobs:
           # nothing on the page depends on a third party.
           cp THE_FRONTIER.md _site/ 2>/dev/null || true
 
+      - name: Every advertised url resolves in the assembled site
+        # ** THE ONE CHECK THAT RUNS ON `_site`. **  Everything above asks its
+        #   question of `BOOK_INTRO_cosmiCave/`, which is the directory that was
+        #   green through the ten hours `formalisation.html` answered 404.  This
+        #   runs AFTER the `|| true` copies, on the bytes that get uploaded, and
+        #   asserts the sitemap's own presence first so it cannot pass vacuously.
+        #   Built to `cc66`'s r7433 price, which measured the result before the
+        #   gate existed: it finds nothing today, and what it buys is that the
+        #   sitemap and the deploy are compared as ARTIFACTS rather than trusted
+        #   to share an origin in the generator's code.
+        run: python3 corpus/check_sitemap_resolves.py _site
+
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site

@@ -36,7 +36,7 @@ export NODE="${NODE:-66}"
 GATE_TIMEOUT="${GATE_TIMEOUT:-280}"
 
 # name:reason -- reason is printed, so an exclusion cannot be silent.
-EXCLUDE_NAMES="check_quote_pins check_cross_row_dupes check_tilt_pins check_receipts_run check_compile"
+EXCLUDE_NAMES="check_quote_pins check_cross_row_dupes check_tilt_pins check_receipts_run check_compile check_sitemap_resolves"
 reason_for() {
   case "$1" in
     check_quote_pins)      echo "947s measured (r7343); run when the LEDGER moves -- sweep_gates.sh asks it" ;;
@@ -44,6 +44,13 @@ reason_for() {
     check_tilt_pins)       echo "exceeded a 120s probe at r7411; the nightly backstop job asks it" ;;
     check_receipts_run)    echo "CACHED -- red whenever the tree digest moves; a 9-minute re-run, not a defect" ;;
     check_compile)         echo "needs pdflatex and is the compile job's question, not the turn's" ;;
+    # r7435: the one gate whose subject is the DEPLOYED site.  `_site/` is built
+    #   by `pages.yml` and exists nowhere in a working tree, so the turn batch
+    #   was asking it about a directory that is never here.  It is NOT taught to
+    #   exit 0 on a missing `_site`: a gate that passes when its subject is
+    #   absent is the vacuous pass its own sitemap-presence assertion exists to
+    #   prevent, and moving that hole up one level is not closing it.
+    check_sitemap_resolves) echo "needs the assembled _site and is the deploy job's question, not the turn's" ;;
     *)                     echo "no reason recorded -- THIS IS A DEFECT, add one" ;;
   esac
 }
