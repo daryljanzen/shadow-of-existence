@@ -1,0 +1,11 @@
+
+  FIGURES PINNED -- does a figure a citing sentence prints fail its receipt when it is wrong?
+
+    seeds hold: slack, one-sided and absent pins flag; tight, rounded, bracketed, isclose and percent pins pass; a revision tag is not a figure
+    1383 unpinned figure(s) live under 1291 key(s); baseline 1382
+
+    [UNPINNED] P03  1.20  cites P03_the_cluster_ensemble_exists_and_it_overshoots_the_bound_at_the_dyn
+
+  ⛔ A SENTENCE PRINTS A FIGURE BESIDE A RECEIPT THAT WOULD NOT FAIL IF IT WERE WRONG.
+     Pin it in the receipt within half a printed digit (or four significant figures), cite the receipt
+     that does pin it, or print fewer digits.  The rule is in this file's docstring.

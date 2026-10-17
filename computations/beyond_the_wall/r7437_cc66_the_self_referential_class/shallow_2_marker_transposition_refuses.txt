@@ -1,0 +1,6 @@
+
+  MARKER TRANSPOSITION -- is each number cited where it is computed?
+    window: +-200 lines
+
+  [FAIL] the calibration commits are not in this clone -- a gate that cannot re-find the
+         two errors that made it does not pass.  (CI checks out with fetch-depth 0.)

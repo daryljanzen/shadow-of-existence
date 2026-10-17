@@ -1,0 +1,44 @@
+====================================================================================================
+  CANDIDATE SEED / CONTROL REFUSAL BRANCHES, for classification by reading (r7437 ④)
+====================================================================================================
+
+  check_quote_pins  [corpus/check_quote_pins.py]
+      line   302 (return 1): print(f'      {b}')
+
+  check_exact_counts  [corpus/check_exact_counts.py]
+      line   176 (return 1): print(f'      {k}')
+      line   181 (return 1): print(f'  ⛔ no baseline at {os.path.relpath(BASELINE, ROOT)} -- this gate has no record to ratchet.')
+
+  check_marker_transposition  [corpus/check_marker_transposition.py]
+      line   238 (return 1): print('         two errors that made it does not pass.  (CI checks out with fetch-depth 0.)')
+      line   253 (ok = False): print(f'    [ok]   calibration {commit} {paper}: {tok} re-found -- own group lacks it, '
+      line   308 (return 1): print()
+
+  check_paper_pins_present  [corpus/check_paper_pins_present.py]
+      line   153 (flag = True): print('     A NEW key is a PAPER pin whose literal is in no paper: restore the sentence, repair the pin, or --'
+      line   156 (return 1): print('  ⛔ [FAIL] SEED: the control did not read two-sidedly, so this gate cannot tell present from absent')
+
+  check_revision_collisions  [corpus/check_revision_collisions.py]
+      line  1021 (return 1): print()
+
+  check_paper_pins_not_comment_only  [corpus/check_paper_pins_not_comment_only.py]
+      line    94 (return 1): print(f'      {b}')
+
+  check_figures_pinned  [corpus/check_figures_pinned.py]
+      line   256 (return 1): print(f'      {b}')
+
+  check_pin_board  [corpus/check_pin_board.py]
+      line   215 (return 1): print(f'      {b}')
+
+  check_pins_adjudicated_on_mint  [corpus/check_pins_adjudicated_on_mint.py]
+      line   106 (return 1): print('  ⛔ a SHALLOW clone has no base to compare against.  Fetch full history (`fetch-depth: 0`).')
+      line   112 (return 1): print(f'      {b}')
+
+  ROWS.tsv : index  [corpus/check_formalisation_join.py]
+      line   490 (fail() call): fail(f'⓪ a `.lean` file in the tree CANNOT BE READ, so nothing about it can be cleared: {f}')
+      line   492 (fail() call): fail(f'⓪ ⛔ THE CONTROL READER FOUND NO DECLARATIONS IN ANY OF THE {len(files)} FILES -- so this '
+      line   516 (fail() call): fail(f'⓪ᵇ ⛔ AN IN-RUN SEED DID NOT BEHAVE, so this run cannot show what it could have '
+
+  corpus/quote_pin_mint_held.tsv  [corpus/check_pins_adjudicated_on_mint.py]
+      line   106 (return 1): print('  ⛔ a SHALLOW clone has no base to compare against.  Fetch full history (`fetch-depth: 0`).')
+      line   112 (return 1): print(f'      {b}')

@@ -21788,3 +21788,63 @@ you — I have left it in the denominator and out of the numerator.*
 
 *`computations/beyond_the_wall/r7435_cc66_six_more_refusal_paths/` — `WALK.md` and `13` run transcripts, one
 per state, including the clean runs and the trunk's own red.*
+
+---
+
+## ⛭⚖ `r7437+cc66.82` — **THE `SELF-REFERENTIAL` MARK IS A CLASS, NOT A CASE: `10` OF THE `78`. FOUR MORE WALKED (`17`), A THIRD KIND OF REACHABILITY FOUND, AND `check_open_references`' WIRING PRICED**
+
+*④ taken and then generalised: I marked the branch you named, then read the other `20` sources for the same
+shape and found **nine more**. ⇒ **The `78` now splits three ways: `17` walked, `10` explained, `51`
+pending.*** *③'s correction accepted — the gate is read, it does not gate; my "nobody reads" was wrong and
+your distinction is the one that holds.*
+
+### ⛭ ⒜ EVERY RATCHET IN THE FAMILY CARRIES ONE, SO THE MARK IS A MEASURE OF `r7421` ③'s UPTAKE
+
+`check_quote_pins` 302, `check_exact_counts` 176, `check_marker_transposition` 253,
+`check_paper_pins_present` 156, `check_revision_collisions` 1021, `check_paper_pins_not_comment_only` 94,
+`check_figures_pinned` 256, `check_pin_board` 215, `check_pins_adjudicated_on_mint` 112, and `60`'s join gate
+516. ⇒ **`10` instruments carry an in-run seed control, and every one of those controls is a refusal branch
+reachable only by editing the instrument itself.**
+
+⌗ *So the `10` is not a backlog that shrinks — **it is the footprint of your own `r7421` ③ rule inside the
+denominator**, and the column can now say how far that rule reached without anyone counting it separately.*
+
+### ⛭⛭ ⒝ AND THE SAME READ FOUND A THIRD KIND OF REACHABILITY — WALKED WITH A CLONE
+
+*Two branches read as seed-shaped and are not self-referential: they need **neither data nor an instrument
+edit**, only a different clone. One `git clone --depth 1` fired both:*
+
+- `check_pins_adjudicated_on_mint`: *"a SHALLOW clone has no base to compare against. **Fetch full
+  history**"*
+- `check_marker_transposition`: *"the calibration commits are not in this clone... **(CI checks out with
+  `fetch-depth 0`.)**"*
+
+⇒ ***Both name the same address, and it is held by the workflow rather than by any file in the tree.*** ⌗ *So
+reachability has three kinds, not two: by DATA, by ENVIRONMENT, and not at all without editing the
+instrument.* ⚠ *The take — `--unshallow` on the probe clone — was still running when I wrote this and is
+recorded **IN FLIGHT**, not claimed: the refusals and their addresses are measured, the clearing is not.*
+
+### ✔ ⒞ `check_figures_pinned` IS `2` OF `3`, AND THE TWO WALKS ARE DIFFERENT KINDS
+
+*STALE end to end: a baseline count raised above live → "lower the row by `d`" → lowered → exit `0`.* ⛔ *NEW
+induced and its address READ but **not taken**: its three addresses — pin it in the receipt, cite the receipt
+that does, print fewer digits — are **receipt-side**.* ⇒ **Restoring the baseline undoes the induction; it
+does not take the address, and the cell says `ELSEWHERE` rather than counting a take I did not make.**
+
+### ⚖ ⒟ AND YOUR `check_open_references` WIRING, PRICED: **WIRE IT — THE PRICE IS NOT CPU**
+
+**Exit `0` on `main`, `1.16` s, `448`-line baseline of which `436` are `UNREAD` — and `436` `UNREAD` is not a
+red**, since `UNREAD` is a verdict in its own vocabulary and the gate reds only on a new key, a stale row, or
+a status/verdict outside the vocabularies. *The edit is one name in a list of `27`.* ⇒ ***Wiring it reds
+nothing today.***
+
+⚖ **The real price is a per-edit tax on paper prose:** *wired, every paper edit that gains one of the net's
+expressions — `open`, `frontier`, `incomplete`, `remains`, `not yet`, `deferred`, and the `19` harvested —
+costs a baseline row in the same push.* **That is not a side effect, it is what the net is for — but it lands
+on whoever edits the papers, not on this seat, and it should be said out loud before it surprises them.**
+⇒ *Recommend wiring, with that said to the paper owners when it goes in.* ⚠ *`gates.yml` is not this seat's
+file: this is the pricing you asked for, not the edit.*
+
+*`computations/beyond_the_wall/r7437_cc66_the_self_referential_class/` — `WALK.md`, `seed_branches.txt` (the
+candidate list the classification was read from), six run transcripts, and
+`PRICE_wiring_check_open_references.md`.*

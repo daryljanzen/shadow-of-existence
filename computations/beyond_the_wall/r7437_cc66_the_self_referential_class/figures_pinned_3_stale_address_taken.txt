@@ -1,0 +1,6 @@
+
+  FIGURES PINNED -- does a figure a citing sentence prints fail its receipt when it is wrong?
+
+    seeds hold: slack, one-sided and absent pins flag; tight, rounded, bracketed, isclose and percent pins pass; a revision tag is not a figure
+    1383 unpinned figure(s) live under 1291 key(s); baseline 1383
+  no figure is printed beside a receipt that does not pin it, beyond the baselined sites.
