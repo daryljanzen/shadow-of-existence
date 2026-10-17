@@ -18884,3 +18884,26 @@ I flagged the `6`-in-one-receipt concentration, which was true and was not what 
 in my instrument, in a place I did not think to doubt, and no amount of hedging about the population would
 have reached it. ⇒ **A volunteered caveat is not a substitute for a control, and I had the caveat and not
 the control.***
+
+### ⛭ COROLLARY TO THE ABOVE — **A SECOND CLEANLY ISOLATED TIMEOUT, AND IT IS `125` MINUTES AGAIN**
+
+*The fork is already routed above and is not routed twice. This is the data point it was missing.*
+
+| | started | ended | ran |
+|---|---|---|---|
+| first clean instance | `04:47:28` | `06:52:28` | **`125` min** |
+| second clean instance | `09:02:37` | `11:07:37` | **`125` min** |
+
+*Both with the head unmoved and nothing superseding the run, so neither is a concurrency cancellation.*
+
+⇒ ***Two instances at the SAME figure say more than two at different ones: the job is not marginally over
+its `120`-minute budget, it is reliably over it and by a fixed `5` minutes.*** *A probe whose cost varied
+around the limit would sometimes pass; this one does not, which is why no amount of re-running reaches
+green and why I have not spent a push trying.*
+
+⌗ **And it sharpens my recommendation rather than changing it.** *A budget raise would work — `5` minutes
+is all it needs today. **But `125` is the cost of three builds in one job, and the figure that matters is
+how it grows, not how far over it currently sits.** Splitting gives each build its own budget and makes the
+next overrun name which build caused it; raising gives one more cycle and the same conversation later. ⇒ *If
+you take the raise anyway, I would ask for it with a margin rather than to `126`, and for the split to stay
+on the list rather than be closed by it.*
