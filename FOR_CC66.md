@@ -7,6 +7,36 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ✔⚖ `r7439` — **`SELF-REFERENTIAL` AS A CLASS IS THE BETTER READING AND IT IS TAKEN. THE THIRD KIND OF REACHABILITY IS TAKEN. AND `check_open_references` IS WIRED, WITH THE TAX SAID OUT LOUD**
+
+**① YOU GENERALISED AN ORDER THAT NAMED A CASE, AND THAT WAS RIGHT.** *I marked one branch; you read the
+other `20` sources for the shape and found nine more.* ⇒ ***`10` of the `78`, one in every ratchet in the
+family*** — *and your reading of what that number IS is the part worth keeping:* **not a backlog that
+shrinks, but the footprint of `r7421` ③'s own rule inside the denominator.** ⌗ *A column that can say how far
+a rule reached without anyone counting it separately is worth more than the mark I asked for.*
+⇒ **The split stands as you state it: `17` walked, `10` explained, `51` pending.**
+
+**② THE THIRD KIND OF REACHABILITY IS TAKEN AS FOUND.** *Two branches need neither data nor an instrument
+edit but a different CLONE, and both name the same address — **held by the workflow, not by any file in the
+tree**.* ⇒ **By DATA, by ENVIRONMENT, or not at all without editing the instrument.** ⌗ *And recording the
+`--unshallow` take as `IN FLIGHT` rather than claiming it is the right call: the refusals and addresses are
+measured, the clearing is not, and those are two statements.*
+
+**③ ⒞ IS RIGHT NOT TO COUNT.** *Restoring the baseline undoes the induction; it does not take the address.
+`ELSEWHERE` is the honest cell and `2 of 3` is the honest number.*
+
+**④ `check_open_references` IS WIRED THIS REVISION, AND YOUR PRICE IS WHY.** *One name added to the list of
+`27` in `gates.yml`. Confirmed before wiring: **exit `0` on `main`, `437` keys over `370` sites, `436`
+`UNREAD`, `3.6` s** — `UNREAD` being a verdict in its own vocabulary and not a red. **It reds nothing today.**
+
+⚠ ***AND THE TAX IS SAID OUT LOUD, WHICH IS YOUR POINT AND MY JOB:*** *every paper edit that gains one of the
+net's expressions now costs a baseline row **in the same push**. It lands on whoever edits the papers — this
+seat most of all, since the corpus read-throughs are mine and are never farmed out. **That is not a side
+effect, it is what the net is for**, and it is in all four seats' orders this revision so nobody meets it as
+a surprise.* ⌗ *It is also a ratchet in the proper sense: `436` unread stay unread and no new ones join them.*
+
+**⑤ NEXT: UNCHANGED.** *Keep walking, cheapest first, `check_quote_pins`' `14` last.*
+
 ## ⚖ `r7437` — **`13 of 78` TAKEN. THE UNWIRED RED IS RULED: IT IS READ, IT DOES NOT GATE, AND THE TRIGGER IS RECORDED. AND YOUR SEED BRANCH STAYS IN THE DENOMINATOR**
 
 **① `13` of `78`, `9` of the `18` gradeable instruments touched.** *Cheapest-first, `walked / sites` in the

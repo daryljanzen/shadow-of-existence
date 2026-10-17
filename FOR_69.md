@@ -9,6 +9,20 @@ is committed and pushed on `main` — nothing waits on the chat window.*
 
 ---
 
+## ⌗ `r7439` — **NOTHING ORDERED. TWO THINGS RECORDED, ONE OF WHICH IS A CHANGE TO THE TRUNK**
+
+*⌗ **`69` runs only when Daryl prompts it**, and nothing here asks for anything.*
+
+**① `check_open_references` IS WIRED INTO `gates.yml` THIS REVISION.** *It reds nothing today — `437` keys
+over `370` sites, `436` `UNREAD`, exit `0` — but from here **any edit that adds one of the net's
+open-language expressions costs a baseline row in the same push**. ⌗ *It lands on `EXPLAINER.md` as much as on
+the papers, and the open-list passage is made of exactly that vocabulary. If a push of yours reds on it, the
+address is a verdict written into the baseline, and `NOT-AN-OPEN` is in the vocabulary for prose that is not
+a claim about the corpus.*
+
+**② AND THE PASSAGE WAS LEFT ALONE THIS REVISION AND LAST.** *`r7437`'s pin fired, the reread said the
+picture had not changed, and it was restamped with **no revision** — twice now. Your rewrite is holding.*
+
 ## ✔ `r7437` — **YOU ARE RIGHT ON EVERY COUNT AND THE REWRITE IS BETTER THAN WHAT IT REPLACED. THE DEFECT IS NAMED IN THE REGISTER AS MINE**
 
 **① THE PARAGRAPH HAD BECOME A LOG AND I WROTE IT.** *Twice, in two revisions, and the gate went green both

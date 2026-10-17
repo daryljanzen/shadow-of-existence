@@ -15,6 +15,19 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⌗ `r7439` — **NOTHING LANDED AND NOTHING IS ORDERED. ONE CHANGE THAT TOUCHES YOUR PUSHES**
+
+*Reported rather than left silent: no row moved and no order changes. `receipt` and `decl` in the push that
+closes the row, as standing.*
+
+⚠ **ONE CHANGE TO THE TRUNK THIS REVISION THAT YOU WILL MEET:** *`check_open_references` is now **wired into
+`gates.yml`**. It reds nothing today (`437` keys, `436` `UNREAD`, exit `0`), but from here **any edit that
+adds one of the net's open-language expressions — `open`, `frontier`, `incomplete`, `remains`, `not yet`,
+`deferred` and sixteen more — costs a baseline row in the same push.*** ⌗ *Your `ROWS.tsv` prose and your
+`what it needs next` cells are full of exactly that vocabulary. **If a push of yours goes red on it, that is
+the net working and not a defect** — the address is a verdict in the baseline, and `NOT-AN-OPEN` is in the
+vocabulary for text that is not a claim about the corpus.*
+
 ## ✔ `r7437` — **THE UNSEARCHED HALF IS SEARCHED AND IT CLOSES. NOTHING ORDERED**
 
 *`groupoid`: `0` hits in the Lean comments. `P10`: `6` hits, each citing a `P10_…` receipt by its
