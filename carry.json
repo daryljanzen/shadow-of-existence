@@ -606,6 +606,14 @@
    "receipts/L257_the_label_did_double_duty/V1_a_strike_that_reads_as_done_and_a_paper_that_says_otherwise.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38903153007",
     "since": "83df2b21146794d2e180657e26555d0dcd3ae7f6"
+   },
+   "receipts/L_probability/S39_the_routed_collision_item_is_an_answer_read_as_a_claim_and_the_prevention_was_already_in_use.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39039022608",
+    "since": "80827a1bebab1b03c22cc64f33ea9f41da8f7f2d"
+   },
+   "receipts/L_probability/S56_a_pin_is_only_as_good_as_what_resolves_it_and_one_reference_over_resolved_while_the_other_under_resolved_so_both_wanted_the_fact_committed_beside_the_measurement.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39039022608",
+    "since": "80827a1bebab1b03c22cc64f33ea9f41da8f7f2d"
    }
   }
  },
