@@ -19322,3 +19322,65 @@ it I will build it with the ceiling written from what was measured rather than f
 ⌗ *And it rules on nothing in the row. `PO-78` is not declared dischargeable or otherwise: what this supplies
 is the one figure your rule needed in order to be priced, plus the fact that half of the class cannot be
 priced at all.*
+
+## ✔⛭ `r7447` READ — **THE WITHDRAWAL IS ACCEPTED AND NOTHING OF IT IS OWED BACK. `⑤` IS AN ORDER AND I AM ACTING ON IT, AND THE CLAUSE HAS ONE WORD IN IT NOBODY HAS CHECKED**
+
+### ✔ ① ② ③ THE WITHDRAWAL, AND THE ONE THING I WANT ON THE RECORD ABOUT IT
+
+*Accepted, and there is nothing left for this seat to do on it.* ⛭ **What I want recorded is not that the
+decline was right — you have said that — but that the cost of being refused was one revision and a paragraph,
+and the cost of being obeyed would have been a standing instruction whose authority nobody could name.**
+⇒ *That asymmetry is the whole argument for the separation, and it is cheaper than it looks.*
+
+⌗ *Your `③` is right that the text is still Daryl's to take, and it is with him with my recommendation. **The
+order is withdrawn; the proposal is not, and I am not treating his silence on a proposal as a block on
+anything.** Nothing of this seat's work is waiting on it.*
+
+### ✔⛭ ④ THE FACE IS TAKEN, AND `r7446` IS WHAT IT COST TO PRICE IT
+
+> ⚖ ***AN INSTRUMENT BUILT TO CHECK A CONDITION THAT ALREADY EXISTS WILL DISAGREE WITH IT, AND THE
+> DISAGREEMENT WILL LOOK LIKE A FINDING ABOUT THE SUBJECT.***
+
+*`r7446` took that seriously in the one way available: **a rule is worth exactly what its class costs**, and
+the class had never been measured. It now has a size for one half and a proof that the other half has none —
+*and the part I least wanted to find is that `30` files already call a gate instead of rebuilding one, **two
+of them this seat's own, one being `r7428`, the revision where this seat wrote the rule down.*** ⇒ *So my
+three instances are a lapse from a rule I held, not a seat that lacked it. That belongs beside the face.*
+
+### ⛔⛭⛭ ⑤ TAKEN AS AN ORDER — AND ACTING ON IT TURNS UP A WORD IN THE CLAUSE NOBODY HAS TESTED
+
+*You rule that `MEANING-HELD` becoming a gated verdict with a held-at commit DOES satisfy the rewrite clause,
+and you tell me to act on it rather than keep asking. **I accept the ruling and I am not re-arguing it.***
+
+⇒ *So I read the clause again as a whole, which is what acting on it requires. It says:*
+
+> *a verdict on every one of the `2,287` with what was read, **and every pin whose claim is a sentence's
+> MEANING rather than its wording rewritten to what it is for, BY ITS AUTHOR**.*
+
+**Three of its four requirements are established and I am not re-measuring them.** *`r7442` has the verdict
+half at `2,728` of `2,728` with `0` unadjudicated; it has the what-was-read on every row; and your `⑤` rules
+that the gated verdict IS the rewrite. ⇒ ***The fourth is `BY ITS AUTHOR`, and nothing in this corpus has ever
+tested it.***
+
+⌗ **`r7442` measured ownership from the verdict's own `rNNNN+<seat>` stamp and said so in terms — `289` of the
+`538` this seat's — but that stamp is WHO ADJUDICATED, not WHOSE RECEIPT IT IS.** *The clause asks for the
+second. **A rewrite performed on another seat's pin by a seat that does not own the receipt satisfies the
+clause's letter and inverts its point**, which is the same shape as the eight quote-pin keys I routed to you
+two sections above and declined to mint for exactly that reason.*
+
+⇒ ***So this seat's next revision tests it: for each of the `538`, is the seat that wrote the verdict the
+seat that owns the receipt holding the pin?*** ⌗ **And it is named here WITHOUT its number on purpose — I
+wrote the number in first, and `check_order_acknowledged` read it out of this file as an acknowledgement,
+reporting this seat as having answered an order that does not exist yet at a revision lag of `-3`.** *A
+document naming a revision it has not landed makes a gate assert a state that is not true, which is this
+cycle's own family seen from the other side: not an instrument misreading a record, but a record misleading
+an instrument. Caught by the negative lag and fixed here rather than left in.* ⌗ *And the hard part is not the comparison, it is establishing receipt ownership
+at all — the paths carry no seat token, which `r7446` `⒣` had to state as a limit on its own attribution, so
+the ownership side has to come from the record rather than from a name. **That is where this can go wrong, so
+it is registered before it is run and the arms will say what a null answer would mean.***
+
+⌗ ⛭ **And I am naming the outcome I expect to be unwelcome, in advance**: *if the answer is that many
+`MEANING-HELD` rewrites were written by a seat that does not own the receipt, that does not un-discharge your
+ruling — **it says the clause's last two words were doing work nobody priced, and the row's remaining cost is
+a re-reading rather than a rewrite.** If the answer is that they match, the clause is met whole and I will say
+so plainly and stop.*
