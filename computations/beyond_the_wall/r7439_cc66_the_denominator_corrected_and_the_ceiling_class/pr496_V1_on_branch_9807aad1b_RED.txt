@@ -1,0 +1,52 @@
+
+  V1 -- five unverdicted qualifications, and a label doing double duty
+
+  ==========================================================================
+  PART 1 -- ⛭ FIVE QUALIFICATIONS WITH NO RECORDED READING
+  ==========================================================================
+    OK    ⓵ at 74555e6d none of the five was in the ledger: ['114e4d9ede', 'dc0202b02d', 'fb2d798ceb', 'f36eef9790', '988eda39e1']
+    OK    ⓵ᵇ each of the five is EITHER still a qualification the papers hold, by the gate's own scan, OR closed since -- and none is half in: {'114e4d9ede': False, 'dc0202b02d': False, 'fb2d798ceb': False, 'f36eef9790': False, '988eda39e1': True}
+    OK    ⓵ᶜ the three the papers still hold each carry a recorded verdict and none is blank: {'988eda39e1': 'SCOPE-BY-DESIGN'}
+    OK    ⓵ᶜᐟ ⛭ and the row this file is ABOUT -- P07's "only the ultraviolet definition of the mode sums remains open here" -- reads REGISTERED, reclassified from NAMED-UNBUILT at r3872 because it has a home, and the home is PO-23
+    ⌗ REPORTED, never required: the pair's states are {'114e4d9ede': ('REGISTERED', 'retired'), '38005b708a': ('REGISTERED', 'retired')} -- `PO-23` was struck at r7077 and `38005b708a` retired with `P07`'s qualification at the same revision
+    OK    ⓵ᶜᐢ ⛭ and no rewording LOST the object -- every member of ('114e4d9ede', '38005b708a') is accounted for, each either LIVE and naming a register row or RETIRED with a reason recorded beside it, so the r4525 move was a rewording and the r7077 move a discharge, and neither was a withdrawal
+    FAIL  ⛭ and the other 2 were CLOSED rather than left unread -- ['dc0202b02d', 'f36eef9790'] -- so the scan no longer raises them at all AND no row survives them anywhere: r3803 computed the straddle and r3811 closed five stale sentences, both AFTER this file named them; while ['114e4d9ede', 'fb2d798ceb'] left the scan a THIRD way, by being reworded, its row retired with its verdict and note intact
+    OK    ⓵ᵈ and nothing is left UNVERDICTED: 0
+
+  ==========================================================================
+  PART 2 -- ⛔ THE STRUCK CLAUSE AND THE PAPER, READ SIDE BY SIDE
+  ==========================================================================
+    ⌗ REPORTED, never required: P07 still argues from the shared wall: False; P07 states the item settled on the construction's own regulator: False
+    FAIL  ⓶ ⛭ P07 states the UV definition's standing IN ITS OWN VOICE rather than resting it on the wall being shared -- the half that made "MET, NOT OWED" a label doing double duty -- and it does so by naming the construction's own regulator, which is NOT the generic-wall ground clause ③ gave, so the clause reaches the right verdict by an argument the corpus declined to use
+    OK    ⓶ᵇ ⛔ PO-6 is STRUCK, and clause ③ is now marked SUPERSEDED with the item rehomed to PO-23 (r3809) -- the "MET, NOT OWED" reading this file flagged is stated in the PAST tense, as a reading the row once carried
+    OK    ⓶ᶜ and the STRIKE is the later statement (aeeba47f5 after c01f56c5b), so this is not old prose left behind a newer verdict -- the newer one is the ambiguous one
+
+  ==========================================================================
+  PART 3 -- ⌗ AND IT IS A LABEL DOING DOUBLE DUTY, NOT A DISAGREEMENT
+  ==========================================================================
+    OK    ⓷ the kill file's ARGUMENT is about CR's SPECIFIC part -- a counterterm basis "one-dimensional by conformal flatness" -- and calls the result "a generic problem on unusually good terms", which is "not ours", not "done"
+    OK    ⓷ᵇ and P10 draws the same distinction in its own voice -- what remains open is "the ultraviolet definition of the tower sums---a different thing from a residual freedom in the quantization at the boundary, and not settled by being shared with every interacting field theory" -- so the two papers agree and it is the ROW's one-word label that reads otherwise
+    ⌗ 114e4d9ede is RETIRED, not live -- read from the ledger's orphan block, where retirement preserves the row and its note rather than deleting them (1600 characters)
+    OK    ⓷ᶜ⁰ the 114e4d9ede entry is READABLE at all, live or retired -- so what follows is a statement about its text and not about an empty string
+    OK    ⓷ᶜ and the reconciliation is written into the ledger entry rather than left to be rediscovered -- now against the LIVE row PO-23, the entry recording that PO-6's clause ③ warrant was superseded at r3871 and naming what replaced it
+    OK    ⓷ᵈ ⌗ and nothing is unstruck: PO-6 stays struck, because the reconciliation is that the strike is RIGHT
+
+  ==========================================================================
+  PART 4 -- ⌗ AN OWED ITEM THAT IS NOT LOAD-BEARING IS A DIFFERENT DEBT
+  ==========================================================================
+    OK    ⓸ P10 has since SETTLED the straddle -- "The straddle itself is a computed fact", citing `P10_the_straddle_is_computed` (which exists), with spec Gamma-hat = [gamma, inf) and gamma <= 1/4 < 3/4 -- so the item PART 4 carried as owed-but-not-load-bearing is paid
+    OK    ⓸ᵃ ⌗ and the half this section turns on is untouched: the closure "is supplied fibre by fibre and so cannot be broken by the size of the sub-threshold set" -- which is why the reading held while the item was open and holds now that it is closed
+    OK    ⓸ᵇ and the ledger no longer carries a row for it AT ALL -- r3803 closed the item, so the entry that recorded "not load-bearing" and "fibre by fibre" was retired with the open it described, which is the ledger working rather than the record being lost
+    OK    ⓸ᶜ ⚠ and the P14 entry says in itself that it is a LEDGER verdict on another line's paper, resting on this line's own PO-14 work, so it can be overturned in one step
+
+  ==========================================================================
+  PART 5 -- THE GATE, AND WHAT IS STILL OWED IN IT
+  ==========================================================================
+    OK    ⓹ check_open_ledger exits 0
+    FAIL  ⓹ᵇ ⌗ 2 WARN(s) remain -- entries naming sentences no longer in any paper.  This file recorded SIX and routed them rather than rebuilding; the backlog is now PAID, and a WARN reappearing means a paper moved out from under a ledger row again
+    OK    ⓹ᶜ and no .tex file was touched by THIS revision (74555e6d..ae749cb6) -- the reading was written in the ledger, not in the papers
+
+  3 check(s) FAILED
+    - ⛭ and the other 2 were CLOSED rather than left unread -- ['dc0202b02d', 'f36eef9790'] -- so the scan no longer raises them at all AND no row survives 
+    - ⓶ ⛭ P07 states the UV definition's standing IN ITS OWN VOICE rather than resting it on the wall being shared -- the half that made "MET, NOT OWED" a l
+    - ⓹ᵇ ⌗ 2 WARN(s) remain -- entries naming sentences no longer in any paper.  This file recorded SIX and routed them rather than rebuilding; the backlog 
