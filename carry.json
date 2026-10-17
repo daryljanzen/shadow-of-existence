@@ -638,10 +638,6 @@
    }
   },
   "tolerance": {
-   "corpus/check_formalisation_join.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38930004357",
-    "since": "02bd3549123f8243f8cfdadb084feefcbb2279e0"
-   },
    "receipts/L257_the_label_did_double_duty/V1_a_strike_that_reads_as_done_and_a_paper_that_says_otherwise.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38903153007",
     "since": "83df2b21146794d2e180657e26555d0dcd3ae7f6"
