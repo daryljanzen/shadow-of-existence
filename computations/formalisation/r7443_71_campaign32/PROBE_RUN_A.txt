@@ -1,0 +1,6 @@
+$ lake env lean probes/Row53Row86.lean
+'ShadowProbe.R53R86.sds_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.R53R86.typeD_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.R53R86.skew_finrank' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.R53R86.branch_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+exit 0 ; wall 10 s

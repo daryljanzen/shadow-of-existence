@@ -10,6 +10,135 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ CAMPAIGN 39: ROW 57 `DONE` (`r7443+71.22`, `+71.23`). ⌗ LIBRARY GAP `6 → 5`, DONE `88`
+
+- ***Built*** (`probes/Row57Second.lean`, 26 theorems, all standard axioms, `17 s`, `773` lines against `700` in band
+  400–1300). Every computed check is there:
+  - the realisable-cubic rank 3 equals its gradient condition;
+  - the sample-point ranks are `1, 1, 2`;
+  - the harmonic sum has an exact closed form with no `M⁵`;
+  - ***the receipt's numeric `ζ` probe is replaced by genuine limits***: `c·h·ζ(1+h) → c`, and its linear error to
+    `cγ`.
+- ***Remaining library-gap rows:*** 69 (building), 70, 96, 89 and 60. Row 62 (campaign 31) is still building.
+
+## ✔ CAMPAIGN 38: ROW 63 `DONE`, SECTION C INCLUDED (`r7443+71.18`, `+71.20`). ⌗ LIBRARY GAP `7 → 6`, DONE `87`
+
+- ***The anomaly's rank 3 is proved with no numerical integration***, and for every `r > 0`:
+  - `R` is strictly decreasing;
+  - the determinant is expanded layer by layer;
+  - each layer is a Vandermonde factor on ordered values, so `det < 0`.
+
+  I registered C at `p 0.20` and said it would likely need verified numerics. That was wrong: the property is
+  structural.
+- `probes/Row63Anomaly.lean` has 27 theorems, all standard axioms, `14 s`.
+  - ***The band was missed, high:*** `915` lines against a ceiling of `800`, the C proof's cost. Recorded, not
+    adjusted.
+- ***Three text-against-code discrepancies inside the receipt, for its owner:***
+  - its docstring `s₃/s₁ = 9.06e-8` against a run that prints `1.394e-8`;
+  - its docstring `c − c³/3` against a check that gives `3c − c³/3`;
+  - its print label `m² − 3` against code using `m² − 1`.
+
+  Its checks all pass, and Lean follows them.
+- ***Also:*** rows 64, 68 and 73's `decl` cells are brought to their files' full theorem lists. They had been written
+  from incomplete shell captures.
+
+## ✔ CAMPAIGN 37: ROW 73 `DONE` (`r7443+71.18`, `+71.19`). ⌗ LIBRARY GAP `8 → 7`, DONE `86`
+
+- ***Built*** (`probes/Row73Vertex.lean`, 27 theorems, all standard axioms, `13 s`, `841` lines against `450` in band
+  250–900). Every computed check of A–E is there:
+  - `R₃` is derived as the Koszul scalar. It was registered as typed, so this is stronger than registered;
+  - its order-4 Taylor coefficients along every ray;
+  - the two-mode Fock shift `19κħ²/(27Va³) > 0` and its threshold `200/63`.
+- ***Imported:*** the sector identification, the spectrum beyond `m = 3`, the RS formula, and the typed
+  normalisations.
+- *Built by a delegated agent, re-run by 71. Campaign 38 (row 63) and 31 (row 62) are building.*
+
+## ✔ CAMPAIGN 36: ROW 68 `DONE` (`r7443+71.15`, `+71.17`). ⌗ LIBRARY GAP `9 → 8`, DONE `85`
+
+- ***Built*** (`probes/Row68Overlap.lean`, 19 theorems, all standard axioms, `26 s`, `530` lines against `380` in band
+  200–800):
+  - completeness in all 81 components;
+  - Wick on a ladder algebra, for every truncation keeping levels 0–2 and for the full ladder. So the receipt's
+    "the truncation does not matter" is now a theorem;
+  - the ten dimension-eight invariants, by a contraction lemma.
+- ***Imported:*** the level-summed density for general `m`, which is the genuine spectral foundation, `∇Riem = 0`,
+  and `d(m)`.
+- *Built by a delegated agent, re-run by 71.*
+
+## ✔ CAMPAIGN 35: ROW 64 `DONE` (`r7443+71.15`, `+71.16`). ⌗ LIBRARY GAP `10 → 9`
+
+- ***Built*** (`probes/Row64Descent.lean`, 17 theorems, all standard axioms, `15 s`, `622` lines against `330` in band
+  180–700). Every computed check of A–D is there:
+  - genuine `Matrix.rank` statements;
+  - the kernel stated exactly as a line;
+  - `L = 15/4` and the harmonic log coefficient as `Tendsto`;
+  - the kernel ratio's divergence to `−∞`.
+- ***A finding beyond the receipt:*** the order-2 rank `2` is structural. Every order-2 coefficient lies in a
+  two-dimensional span, so `R·Riem²` and `tr Ric³` are proportional at second order.
+- ***Imported:*** the TT weights, `f₁`, `f₂`, `f₃`, and the typed closed-FRW formulas. The derivatives they are fed
+  are derived.
+- *Built by a delegated agent, re-run by 71. Campaign 36 (row 68) is building, and so is 31 (row 62).*
+
+## ✔ CAMPAIGN 34: ROWS 85 AND 80 `DONE` (`r7443+71.13`, `+71.14`). ⌗ LIBRARY GAP `12 → 10`
+
+- ***Built*** (`probes/LibGap85_80.lean`, all standard axioms and no `native_decide`, `102 s`):
+  - ***Row 85:***
+    - the tetrad identity and the superpotential's values;
+    - the throat check, stated as what it is. At `r = 1/1000` the receipt's `f` is `−239`, so `√f` is not real
+      and its `|√f/r|` is a complex modulus. That is built as `√|f|/r > 10³`, and the tetrad's non-reality there
+      is recorded.
+  - ***Row 80:*** `B|_m = diag(8, −8, −8, −8, −8)` on `so(5,1)`, by kernel `decide` over `ℤ`.
+- ***The band was missed, low:*** `130` lines against a floor of `140`. The piece was built whole, and the kernel
+  `decide` needed no tables. Recorded, not adjusted.
+- ***Census:*** DONE `83`, library gap `10`. The join reads ***304 of 304*** green.
+
+## ✔ STEP 4, PRICED AND BEGUN: CAMPAIGN 33 CLOSES FIVE LIBRARY-GAP ROWS (23, 24, 82, 84, 46). ⌗ LIBRARY GAP `17 → 12`
+
+- ***Priced first*** (`r7443+71.10`, `r7443_71_pricing/PRICING.md`), every receipt read for what it computes.
+  ***Most of the seventeen need none of the library their gap names.***
+  - The nine spectral rows all take the TT spectrum as input.
+  - The spinor rows need no spin geometry.
+  - Row 80 needs no homogeneous space, and row 46 no volume form.
+  - Only 69, 89 and 96 need a new core: the Pontryagin density and the Chern–Simons current.
+- ***Built*** (`probes/LibGap5.lean`, all standard axioms, `9 s`, `184` lines against `300` in band 160–600; the
+  `0.65` came true):
+  - row 23 is cited: it is row 19's campaign-12 receipt;
+  - rows 24, 82, 84 and 46 are computed in full. The imported data are labelled as imports: `b₄`, the Dirac
+    spectrum, `4πr²` and `S = A/4`, and the constants.
+- ***Census:*** DONE `81`, library gap `12`. `decl` was filled in this push, and the join reads ***299 of 299***
+  green.
+- ***Next, easiest first:*** 85, 80, 64, 68, 73, 63, 57, 69, 70, 96, 89, 60. Row 62's campaign 31 is still building.
+
+## ✔ STEP 3: ROWS 53 AND 86'S COMPUTABLE PARTS, CAMPAIGN 32 (`r7443+71.8`, `+71.9`). ⌗ ROW 62 (CAMPAIGN 31) IS BUILDING
+
+- ***Built*** (`probes/Row53Row86.lean`, all standard axioms, `10 s`, `145` lines against `140` in band 70–300; the
+  `0.70` came true):
+  - `sds_kernel`: every solution of the SdS ODE on `r > 0` is `1 − 2M/r − Λr²/3` for exactly one `M`. That
+    classifies the fibre; the receipt counts a symbol set;
+  - `typeD_four`: four parameters, by injectivity;
+  - `skew_finrank`: `3, 10, 15`;
+  - `branch_count`: one root exactly on the throat.
+- ***Rows 53 and 86 stay `ROW`.*** Their objects are an essential image and a `Z₃` action. `decl` stays empty, and
+  each page phrase gains its link, as row 18's has.
+- ***Row 62*** (campaign 31, registered `r7443+71.7`): the universal jet series is building. Its tables run to
+  `566 KB`.
+
+## ✔ ROW 20 IS `DONE`: CAMPAIGN 30 (`r7443+71.5`, `+71.6`). ITS GENERAL IDENTITY WAS ROW 6'S, ALREADY BUILT
+
+- ***The finding.*** Row 20 was parked as "index algebra over an arbitrary metric". The receipt's mechanism is the
+  contracted Bianchi identity, and `contracted_bianchi` (`probes/Bianchi2.lean`, row 6, `r7353+71.8`) is that
+  identity, for any smooth symmetric nondegenerate metric. The row's text predates it. That is your ① pattern: a
+  row held by its wording, not its mathematics. It is cited, not rebuilt.
+- ***Built beside it*** (`probes/Row20Freedom.lean`, all standard axioms, `6 s`, `134` lines against `150` in band
+  80–320; the `0.65` came true):
+  - `tt_waves`;
+  - `superposition_transverse`: the two-wave sum is divergence-free at every point;
+  - `mode_equation`: `u'' + (k² − 2/η²) u = 0` exactly;
+  - `shear_square`: `σ² = ½ ε² ḣ²`, positive.
+- ***Census:*** row 20 → `DONE`. That gives DONE `76`, generic-metric `1` (row 62, next). `decl` was filled in this
+  push, and the join reads ***284 of 284*** green.
+- *`re r7445`, `re r7447`: read. Neither asks anything.*
+
 ## ✔ ROW 59 IS `DONE`: CAMPAIGN 29, SECTION E BY THE FRAME ROUTE (`r7443+71.3`, `+71.4`). ⌗ ORDER `0`; NEXT, THE TWO GENERAL IDENTITIES
 
 - ***Built*** (`probes/Row59Series.lean`, all standard axioms, `74 s`, `485` lines against `380` in band 200–750; the
