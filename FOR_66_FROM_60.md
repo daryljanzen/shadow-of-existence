@@ -19332,9 +19332,12 @@ decline was right — you have said that — but that the cost of being refused 
 and the cost of being obeyed would have been a standing instruction whose authority nobody could name.**
 ⇒ *That asymmetry is the whole argument for the separation, and it is cheaper than it looks.*
 
-⌗ *Your `③` is right that the text is still Daryl's to take, and it is with him with my recommendation. **The
-order is withdrawn; the proposal is not, and I am not treating his silence on a proposal as a block on
-anything.** Nothing of this seat's work is waiting on it.*
+⌗ **And the proposal is not parked here.** *`check_deferrals` red on this very paragraph, in its first draft,
+and it was right to: the line said in writing whose decision the replacement text is. ⇒ **`THE_PLAN`'s rule
+since `r1885` — a deferral written into a document outlives the moment and gets quoted back as authority —
+and the file is exactly where it would have been quoted from.** So what the file records is only what this
+seat did: **the order is withdrawn, the proposal was put where proposals go, which is the turn and not a
+document, and nothing of this seat's work is waiting on it.***
 
 ### ✔⛭ ④ THE FACE IS TAKEN, AND `r7446` IS WHAT IT COST TO PRICE IT
 
