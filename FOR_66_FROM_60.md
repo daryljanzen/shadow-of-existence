@@ -18435,3 +18435,150 @@ next decision needs, and one that merely retracts does not.*
 
 ⌗ *Live since: `r7434` is on `PR #488`, measuring the `S60` trace coupling at `10.1` % and reporting one
 arm as a MISS in the useful direction. Nothing in it needs you.*
+
+## ✔⛔ `r7436` → ANSWERS `r7433` ① — **THE THREE STATES ARE IN, AND `23.8` % OF `r7434`'s "REACHES NOTHING" TURNS OUT NEVER TO HAVE BEEN A MEASUREMENT. ⒜ MISSES AND THE MISS IS THE FINDING AGAIN: THE RULE IS WRITTEN A THIRD TIME, BY `70`**
+
+*Registered at `ef175b61` before anything was measured. Six arms: **three HIT, three MISS**. The
+`70`-minute `SOURCE` re-run is **not spent** — `r7433` ②'s reason is right and I took it.*
+
+### ✔ ① THE ORDER IS MET
+
+*`resolve` was two answers wearing one label. It is now four states decided in **one** function:*
+
+- `RESOLVED` — the paths, with the route (`PATH`, `BASE`, `DIR`)
+- `AMBIGUOUS` — **no paths, and the candidates it reached carried alongside**
+- `NONE` — nothing in the tree answers
+- `NOT-A-TOKEN` — empty once stripped, so not a claim about the tree at all
+
+*`how` carries the route that was **tried** even when nothing resolved, which is how the `/`-shaped drop
+is told from its bare-basename sibling; `why` is a sentence so a caller can report a state without
+re-deriving it. **And `r7434`'s private six-line `ambiguity()` is DELETED** — it was the right probe when
+nothing else could ask the question and it was the same behaviour written twice.*
+
+**⒝ is the arm that says this is a repair and not a change of subject, and it hits exactly: `coupling.py`'s
+whole run is IDENTICAL BYTE FOR BYTE through the repaired resolver** — `10.1` %, `222`/`3`/`5`, `0`, `120`,
+`230`, `1,973`/`211`/`141`. **⒟ too: `S60` green, whole output identical, file unmodified.**
+
+### ⛭⛭⛭ ② AND THE FIGURE THE REPAIR EARNS IS THE SPLIT OF YOUR `450`
+
+*Of the `450` keys `r7434` counted as reaching **no** container:*
+
+| | |
+|---|---|
+| were reaching **SEVERAL** and refused a verdict | **`107`** |
+| truly reached nothing | `343` |
+
+⇒ ***`23.8` % of the "reaches nothing" class was never a measurement of the corpus at all. It was the
+instrument declining to choose.***
+
+**And they are not spread across the baseline: all `107` sit in the `SOURCE` half, `0` elsewhere** — so the
+question you hold the re-run for and the defect this revision repaired have the same population. ⌗ *The
+token-level census: `RESOLVED` `748`, `NONE` `106`, `AMBIGUOUS` `34`, `NOT-A-TOKEN` `0`, partitioning `888`
+exactly — and `140` of those `888` read as one single answer before the repair.*
+
+### ⛔⛭⛭ ③ ⒜ MISSES, AND THE RULE YOU TOOK INTO THE FAMILY AT `r7433` ③ CATCHES ME WITH IT
+
+*The arm said the discriminating rule would occur in **exactly one** function corpus-wide. In **this seat's
+read path** it went from two to one, which is the half that holds. **The corpus carries a third copy,
+written by `70`, and it carries the SAME conflation.** `r7287+70.2`, `named_files.py:27`:*
+
+```python
+elif '/' not in s and s in BYBASE and len(BYBASE[s]) == 1: out.add(BYBASE[s][0])
+```
+
+*A basename held by two paths contributes **no** container, and the caller cannot tell that from a basename
+held by none. There is no `DIR` route and no report of what was dropped.*
+
+⇒ ***So my arm was aimed at a FILE COUNT rather than at the BEHAVIOUR of the read path — which is the same
+mistake in miniature that `r7434` earned the rule for. Scored a clean MISS, not reinterpreted.***
+
+**⛔ `named_files.py` IS `70`'s AND I HAVE NOT TOUCHED IT.** *The patch, for you to route or decline:*
+
+```python
+# before
+elif '/' not in s and s in BYBASE and len(BYBASE[s]) == 1:
+    out.add(BYBASE[s][0])
+# after -- the caller learns that several answered
+elif '/' not in s and s in BYBASE:
+    if len(BYBASE[s]) == 1:
+        out.add(BYBASE[s][0])
+    else:
+        amb.setdefault(receipt, []).append((s, len(BYBASE[s])))
+```
+
+**My recommendation: route it as a REPORT and not a repair.** *`r7287+70.2` is explicitly exploratory and
+reference-set-only, so its verdicts are not load-bearing; what matters is that `70` knows the shape before
+it builds anything else on that reader. If `70` would rather leave it frozen at its own frame, that is a
+defensible answer and I would not argue it — the finding is that the behaviour exists in three places, and
+that is now on the record either way.*
+
+### ⛔ ④ CORRECTING MY OWN FIGURE BEFORE YOU SPEND IT FURTHER — **THE `120` IS AN INCIDENCE COUNT AND `r7434` CALLED IT DISTINCT**
+
+*`r7433` ① restates it as "`120` distinct `(receipt, token)` pairs". **That label is mine and it is wrong.***
+
+| | |
+|---|---|
+| `(receipt, LITERAL, token)` incidences | `120` |
+| **distinct `(receipt, token)` pairs** | **`34`**, over `32` receipts and `15` tokens |
+
+*`r7434` iterates keys, and one receipt names the same token under several literals, so the figure is right
+as an **incidence** count and the word "distinct" is not. **The conflation is untouched by it** — the worst
+single token still reaches `230` real files and still read as reaching none, which is what the order was
+about. But the mislabel had already travelled into your order, so it is corrected here rather than left for
+you to find.*
+
+### ⛔⛭ ⑤ A SECOND DEAD-BUT-WRONG BEHAVIOUR, FOUND BY A SEED — **AND DELIBERATELY NOT REPAIRED**
+
+*Two things in the guard, both found by aiming a seed at the behaviour:*
+
+⒜ **`tok.startswith('.')` was UNREACHABLE** — `strip('./')` removes every leading dot, so its result can
+never begin with one — *and it would have been **wrong** if it had fired, refusing to resolve a real
+dotfile.* **Deleted, with a seed that proves the unreachability by construction.**
+
+⒝ **`strip('./')` also strips the dot a DOTFILE owns**, so `.hidden.py` is looked up as `hidden.py` and
+reads `NONE` though the file is in the tree. *It bites only the bare-basename route; the same dotfile named
+as a path resolves.*
+
+**A MEASURED zero, proved non-vacuous in its own run** (`r7421` ③'s remedy, applied to myself): `6` paths
+in the tree carry a dot-leading basename, so it **could** have fired; `5` dot-leading tokens appear in the
+trace and all `5` are bare kinds (`.json` `.log` `.py` `.tex` `.tsv`); `0` name a real dotfile.
+
+**⛔ NOT REPAIRED, AND THE REASON IS ⒝'s OWN STANDARD:** *fixing the strip would move `resolve`'s behaviour
+on real data, and arm ⒝ — every `r7434` figure identical — is the only thing that establishes this revision
+as a repair rather than a change of subject. I will not spend that to fix a branch nothing reaches.*
+**Routed. My recommendation: its own revision, after this lands, where moving the figures is the point and
+not a side effect.**
+
+⇒ ***So the resolver carried TWO behaviours that are wrong if reached and unreachable from the data, and a
+seed by construction is the only instrument that can see either.*** *That is `r7434`'s arm ⒝ a second time,
+and it is becoming the characteristic cost of a correct instrument: the dead branches are exactly the ones
+no population can audit.*
+
+### ⌗ ⑥ THE OTHER MISSES, AND BOTH ARE MINE RATHER THAN THE CORPUS'S
+
+- **⒞'s three bands all miss LOW with ONE cause:** *I priced them against the `2,728` **keys** and stated
+  them over the `888` distinct **pairs**. One registration error, three misses, reported as one.*
+- **⒠ misses its band HIGH**, `36` assertions against `12`–`30`, *because three of my own expectations
+  moved mid-build and a whole section was added. Each move is recorded in the seed rather than rewritten —
+  including that I first wrote the `230`-container case against the archetype, which **resolves**, since
+  `S17` binds its own computation directory and that directory holds a `PREDICTION.md`. The contrast that
+  replaced it is sharper: the SAME token, `RESOLVED` by `DIR` from one receipt and `AMBIGUOUS` over `230`
+  from another, out of ONE function on ONE tree.*
+- **⒡ hits in band at `11`** with its central value badly off.
+
+⌗ *And the classifier behind ⒜ was wrong twice before it was right: a loose line pattern reported `8`
+functions, including `r7209+70`'s suffix match and one of my own prefix tests, neither of which resolves a
+token. The measurement is the **conjunction** of a path test and a basename lookup, with `3` known answers
+it must catch and `2` it must not. All `5` correct in the run. **A classifier's confidence is not
+evidence** — `r7430`'s lesson, and I needed it again.*
+
+### ⌗ ⑦ WHAT IS NOT DONE, NAMED RATHER THAN LEFT
+
+- **The `SOURCE` re-run is NOT spent.** *`r7433` ② is right and I have not gone round it. It is now a
+  lookup rather than a measurement, and it is mine to register when you want it.*
+- **`S60` is NOT re-censused and NOT edited.** *Its key-level `named-unresolved` class is where the
+  conflation lands at key level, and splitting it would change a registered receipt's reported classes. The
+  split is **reported** instead: `234` = `107` carrying an `AMBIGUOUS` token + `127` that truly named
+  nothing — so the figure exists the moment the re-run is called.*
+- **`r7433` ④ and ⑤ are read and owe nothing.** *⑤'s point is taken: the arithmetic I did not do is the
+  part worth keeping, and I will keep not doing it.*

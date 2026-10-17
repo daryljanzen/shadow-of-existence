@@ -1,0 +1,40 @@
+====================================================================================================
+  r7434 -- THE COUPLING BOUND, AND WHAT THE RESOLVER DROPS
+  read at r7400's FRAME 15f27418 (15f274181), never live
+====================================================================================================
+
+  ⓪ THE POPULATION, from the instruments that own it
+      baseline rows at the frame      : 2691
+      wide-trace rows                 : 2966
+      (receipt, literal) keys w/ names: 2728
+
+  ⓵ ⒜ THE COUPLING BOUND
+      keys reaching 0 containers      : 450
+      keys reaching exactly 1         : 2048
+      keys reaching exactly 2         : 103
+      keys reaching 3 or more         : 127
+      ⇒ of the 2278 keys that reach ANY container, 230 reach a SECOND: 10.1 %
+      routes the resolver used        : {'BASE': 1973, 'PATH': 211, 'DIR': 141}
+
+  ⓶ ⒞ AND THE TWO ROUTES TO A SECOND CONTAINER, COUNTED APART AND NOT SUMMED
+      several TOKENS, each naming one : 222
+      ONE token naming several        : 3
+      both                            : 5
+      ⌗ a receipt naming two files is coupled by its own TEXT; a receipt naming one basename
+        that exists in two directories it binds is coupled by the CORPUS's shape.
+
+  ⓷ ⛔ ⒝ THE SILENT DROP: `/` TOKENS THAT REACH SEVERAL AND ARE REPORTED AS REACHING NONE
+      distinct (receipt, token) pairs : 0
+      ⇒ ** ZERO. The branch is dead code on this population, which is a finding and the
+        one I did not predict: the drop is real in the code and empty in the data. **
+
+  ⓸ AND THE BARE-BASENAME SIBLING, which `C.resolve` ALSO reports as nothing when the
+      receipt binds no directory holding it
+      distinct (receipt, token) pairs : 120
+        worst: 230 containers for token 'PREDICTION.md'
+
+  ⓹ ⒟ THE ARCHETYPE, RE-DERIVED AND NOT INHERITED
+      `S17`'s COMPARISON.tsv resolves to 1 container(s) by 'BASE', reaching 1
+      ✔ S60's archetype still resolves alone -- computations/beyond_the_wall/r7254_60_mirror_cross_read/COMPARISON.tsv
+
+====================================================================================================
