@@ -1,0 +1,8 @@
+# receipt	literal(json)	verdict	n_candidates	repo_wide
+receipts/L_probability/S10_the_sweep_for_exact_counts_could_not_contain_its_own_gate_and_the_class_doubled_in_the_receipts_written_after_its_pin.py	"STAMP"	DELIBERATE	18	PRESENT
+receipts/L_probability/S10_the_sweep_for_exact_counts_could_not_contain_its_own_gate_and_the_class_doubled_in_the_receipts_written_after_its_pin.py	"TARGETS = sorted({r[0] for r in MINE})"	DELIBERATE	18	PRESENT
+receipts/L_probability/S10_the_sweep_for_exact_counts_could_not_contain_its_own_gate_and_the_class_doubled_in_the_receipts_written_after_its_pin.py	"_all_bodies.count(RETIRED) == 0"	DELIBERATE	18	PRESENT
+receipts/L_probability/S10_the_sweep_for_exact_counts_could_not_contain_its_own_gate_and_the_class_doubled_in_the_receipts_written_after_its_pin.py	"def shadow_run("	DELIBERATE	18	PRESENT
+receipts/L_probability/S10_the_sweep_for_exact_counts_could_not_contain_its_own_gate_and_the_class_doubled_in_the_receipts_written_after_its_pin.py	"for f in PROBE"	DELIBERATE	18	PRESENT
+receipts/L_probability/S10_the_sweep_for_exact_counts_could_not_contain_its_own_gate_and_the_class_doubled_in_the_receipts_written_after_its_pin.py	"len(_removed) == 1 and len(_added) == 8"	DELIBERATE	18	PRESENT
+receipts/L_probability/S50_the_eleven_close_whole_and_all_three_arms_fail_high_because_two_of_them_were_measuring_one_quantity.py	"FRAME = '{}'"	DELIBERATE	14	PRESENT

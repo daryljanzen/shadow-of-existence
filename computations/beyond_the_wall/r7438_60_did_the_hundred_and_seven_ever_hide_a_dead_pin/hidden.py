@@ -25,6 +25,7 @@ import cost as C                                            # noqa: E402
 S60_ABSENT, S60_RESOLVED, S60_GAP, S60_RATE = 112, 839, 94, 83.9
 VIOLATOR = 'receipts/L165_interacting_tower/D1_the_boundary_is_per_fibre_and_the_UV_is_over_fibres.py'
 VIOL_LIT = '1+\\lambda\\phi'
+S60_VIOL_RW = False      # what S60's own run printed for this call -- a known answer, not a guess
 
 
 def main():
@@ -67,8 +68,9 @@ def main():
     selfcont = [(k[0], c) for k, v in hidden.items() for c in v if c == k[0]]
     print(f'      candidates that are their own receipt : {len(selfcont)}')
     rw = C.present_repo_wide(VIOL_LIT, VIOLATOR)
-    print(f'      S60\'s named violator, re-tested repo-wide : {rw}   (S60 recorded the same call)')
-    ok_ctl = not selfcont
+    print(f'      S60\'s named violator, re-tested repo-wide : {rw}  '
+          f'-- S60\'s own run recorded {S60_VIOL_RW}: {"MATCH" if rw == S60_VIOL_RW else "⛔ MOVED"}')
+    ok_ctl = not selfcont and rw == S60_VIOL_RW
     print(f'      ⇒ {"✔" if ok_ctl else "⛔"} `_present_at`\'s own rule -- text from a file the receipt '
           f'does not own -- holds over all {sum(len(v) for v in hidden.values())} candidate slots')
 
@@ -85,8 +87,14 @@ def main():
     print(f'      ⇒ of {len(hidden)}, {100.0 * len(absent) / max(len(hidden), 1):.1f} % are absent from '
           f'every file their own trace named')
     if absent:
-        print(f'      the absent ones by baseline verdict : '
-              f'{dict(Counter(verdict.get(k, "?") for k in absent))}')
+        vb = dict(Counter(verdict.get(k, '?') for k in absent))
+        print(f'      the absent ones by baseline verdict : {vb}')
+        if set(vb) == {'DELIBERATE'}:
+            print(f'      ⇒ ** ALL {len(absent)} ARE `DELIBERATE`, which the baseline defines as *the '
+                  f'wording IS the claim*')
+            print(f'        -- a name, a value or a label.  So the class the conflation hid is the class '
+                  f'where')
+            print(f'        the exact text is what is being asserted, and not the loosely quoted kind. **')
 
     # ── ⒟ of those absent, how many does the repo-wide branch call PRESENT ───────────────────────────
     print('\n  ⓸ ⒟ OF THOSE ABSENT, HOW MANY THE REPO-WIDE BRANCH CALLS PRESENT')
@@ -99,13 +107,17 @@ def main():
     print(f'      ⇒ the two sets differ by {abs(frac - S60_RATE):.1f} point(s)')
 
     # the caveat S60 established, carried rather than dropped
-    needle = ' '.join(VIOL_LIT.split()[:3]).replace('\\', '').split()[0]
     exposed = [k for k in absent if '\\' in k[1]]
-    print(f'      ⚠ CAVEAT CARRIED: {len(exposed)} of the {len(absent)} absent keys carry a backslash in '
-          f'the literal,')
-    print(f'        and S60 established the repo-wide branch builds its file list with the BACKSLASHES')
-    print(f'        DELETED -- so for those, {frac:.1f} % is read with the known defect in it and the')
-    print(f'        one-line correction stays ROUTED, not applied here.')
+    print(f'      the caveat S60 established, CHECKED rather than recited:')
+    print(f'        absent keys whose literal carries a backslash : {len(exposed)} of {len(absent)}')
+    if exposed:
+        print(f'        ⚠ S60 established the repo-wide branch builds its file list with the BACKSLASHES')
+        print(f'          DELETED, so for those {len(exposed)} the {frac:.1f} % is read with a known defect')
+        print(f'          in it; the one-line correction stays ROUTED and is not applied here.')
+    else:
+        print(f'        ✔ NONE -- so the mangled-needle defect S60 found cannot touch this figure, and')
+        print(f'          {frac:.1f} % is read clean.  ⌗ The caveat is CHECKED and found not to apply,')
+        print(f'          which is a different statement from not mentioning it.')
 
     # ── ⒠ the price ──────────────────────────────────────────────────────────────────────────────────
     total = time.time() - t0

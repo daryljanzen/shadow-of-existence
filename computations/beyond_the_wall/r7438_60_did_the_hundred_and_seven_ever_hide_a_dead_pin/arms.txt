@@ -1,0 +1,131 @@
+r7438 (60) -- THE ARMS, SCORED AGAINST PREDICTION.md AS REGISTERED AT 7b11b9df
+================================================================================
+Order: r7435 ③, which LIFTS r7433 ②'s hold rather than placing one.  The hold's
+stated reason -- a 70-minute measurement made with the instrument under suspicion
+-- was discharged by r7436, which repaired the resolver and verified byte for byte
+that the repair moved no verdict.
+
+SCORE: 5 arms HIT, 1 arm HITS ITS BAND AND MISSES ITS TIGHTER CLAUSE BY 1.1 POINTS.
+
+=> THE ANSWER TO THE ORDER IS YES.  7 of the 107 are absent from every file their
+   own trace named.  The conflation was load-bearing: it hid 7 dead-pin candidates,
+   all of them in the class where the wording IS the claim.
+
+--------------------------------------------------------------------------------
+(a)  THE POPULATION, RE-DERIVED                                              HIT
+--------------------------------------------------------------------------------
+REGISTERED: exactly 107, all in the SOURCE half, 0 elsewhere.  Exact.
+MEASURED  : 107, {'SOURCE': 107}.  Over 15 distinct tokens, 291 distinct candidate
+            containers, 11,273 candidate slots; candidates per key 2 / 14 / 244.
+
+--------------------------------------------------------------------------------
+(f)  THE CONTROL, RUN BEFORE THE FIGURE WAS READ                             HIT
+--------------------------------------------------------------------------------
+REGISTERED: the instrument is unchanged and a known answer says so.  Exact.
+MEASURED  : 0 candidates are their own receipt, over all 11,273 slots -- which is
+            `_present_at`'s own rule, text from a file the receipt does not own.
+            And S60's named violator re-tested repo-wide returns False, which is
+            what S60's own run printed for that call: MATCH.
+
+  The control is first in the run on purpose.  A measurement made with an
+  unverified instrument is worth nothing, and this revision exists only because
+  r7435 ③ judged the instrument now verifiable.
+
+--------------------------------------------------------------------------------
+(b)  PRESENT IN AT LEAST ONE CANDIDATE                                       HIT
+--------------------------------------------------------------------------------
+REGISTERED: band 60-107, central 90.
+MEASURED  : 100 of 107.  => For 100 keys the ambiguity was benign: the pinned text
+            was sitting in one of the files the token reached, and the only thing
+            lost was the resolver's willingness to name which.
+
+--------------------------------------------------------------------------------
+(c)  ABSENT FROM EVERY CANDIDATE -- THE ORDER'S OWN QUESTION                 HIT
+--------------------------------------------------------------------------------
+REGISTERED: band 0-45, central 17; and a ZERO registered IN ADVANCE as itself the
+            finding, not a disappointment.
+MEASURED  : 7 of 107 = 6.5 %.  IN BAND, low.
+
+  IT IS NOT A ZERO.  So the registered alternative does not apply and the answer
+  is the affirmative one: the conflation hid dead-pin CANDIDATES, and until r7436
+  no instrument in the corpus could have been asked about them.
+
+  AND TWO THINGS ABOUT THE 7 THAT I DID NOT REGISTER AND THAT MATTER MORE THAN
+  THE COUNT:
+
+  1. ALL 7 ARE `DELIBERATE`.  The baseline defines that verdict as *the wording IS
+     the claim* -- a name, a value, a label, a macro.  So the class the conflation
+     hid is precisely the class where the exact text is what is being asserted,
+     and not the loosely quoted kind where a near miss is tolerable.
+
+  2. THEY ARE CONCENTRATED IN ONE RECEIPT, NOT SPREAD.  6 of the 7 sit in
+     S10_the_sweep_for_exact_counts_could_not_contain_its_own_gate..., and the
+     7th in S50_the_eleven_close_whole....  Every one is a SOURCE-CODE pin:
+
+        'STAMP'                                     18 candidates
+        'TARGETS = sorted({r[0] for r in MINE})'    18
+        '_all_bodies.count(RETIRED) == 0'           18
+        'def shadow_run('                           18
+        'for f in PROBE'                            18
+        'len(_removed) == 1 and len(_added) == 8'    18
+        "FRAME = '{}'"                              14
+
+     A concentrated finding is cheaper to adjudicate than a scattered one, and it
+     is also the weaker kind of evidence about the corpus as a whole: this says
+     something about two receipts before it says anything about the class.
+
+--------------------------------------------------------------------------------
+(d)  OF THOSE ABSENT, PRESENT REPO-WIDE                   BAND HIT, CLAUSE MISS
+--------------------------------------------------------------------------------
+REGISTERED: band 40-100 %, central 80 % -- "within 15 points of S60's 83.9 %".
+MEASURED  : 7 of 7 = 100.0 %.  INSIDE the band at its very edge, and 16.1 points
+            from S60's figure -- so the tighter clause MISSES BY 1.1 POINTS.
+
+  Scored as a miss on the clause rather than quietly reported as a band hit.  The
+  clause was the content of the arm; the band was the hedge around it.
+
+  WHAT IT MEANS: every one of the 7 is text that EXISTS somewhere in the repository
+  and is NOT in any file the receipt's own trace names.  That is the same shape
+  S60 measured at 94 of 112 for the keys that did resolve -- a dead-pin candidate
+  that a repo-wide test cannot see, because the repo-wide test finds the text
+  somewhere and stops.
+
+  AND THE CAVEAT IS CHECKED RATHER THAN RECITED.  S60 established that the
+  repo-wide branch builds its file list from the literal with the BACKSLASHES
+  DELETED, exposing 51 of 1,198 keys.  0 of these 7 carry a backslash, so that
+  defect cannot touch this figure and the 100.0 % is read clean.  Checking a
+  caveat and finding it does not apply is a different statement from not
+  mentioning it.
+
+--------------------------------------------------------------------------------
+(e)  THE PRICE -- AND THE 70 MINUTES WAS AN OVERESTIMATE                     HIT
+--------------------------------------------------------------------------------
+REGISTERED: band 20-900 s, central 120 s, against the ~4,200 s estimated; and the
+            reason registered with it, that the cost is driven by the DISTINCT
+            CONTAINER count and not the key count, because `_present_at`'s
+            `git show` is cached at the frame.
+MEASURED  : the presence test over the 107 keys, 1.7 s.  The whole run, 43.6 s.
+            => a factor of 96 under the estimate.
+
+  The reasoning behind the band is what held: 107 keys over 15 distinct tokens
+  reach only 291 distinct containers, so the cache is paid once and the keys are
+  nearly free.  S60's ~70 minutes was priced for the whole 1,198-key half against
+  an uncached repo-wide comparison, and it was right about that question.
+
+  ⌗ So r7433 ② held a 70-minute measurement that costs 44 seconds.  The hold was
+  STILL correct -- its reason was the instrument's trustworthiness and never the
+  price -- and r7435 ③ lifted it on exactly that ground.  A hold justified by
+  soundness does not become wrong when the thing held turns out to be cheap.
+
+--------------------------------------------------------------------------------
+WHAT THIS DOES NOT DO
+--------------------------------------------------------------------------------
+- IT RULES NO KEY A DEAD PIN.  The 7 are CANDIDATES and an UPPER BOUND, on exactly
+  the footing S60's 112 are: the green-receipt filter is the other half of
+  r7371 ③ and is not applied here.
+- It does not repair the mangled needle.  Checked, found not to bear on this
+  figure, and the one-line correction stays ROUTED.
+- It does not touch S60.  Its registered classes stand; this is a new measurement
+  on a population its census could not reach.
+- It does not repair the dotfile mangling or 70's third copy of the rule.  Both
+  are routed at r7436, and r7435 ④ put the second with 70, whose file it is.
