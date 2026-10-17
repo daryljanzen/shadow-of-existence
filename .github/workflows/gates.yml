@@ -617,7 +617,7 @@ jobs:
       matrix:
         include:
           - { id: A, label: "the runner's one thread", args: '', budget: 60, job_minutes: 75 }
-          - { id: B, label: 'four threads', args: '--threads 4', budget: 60, job_minutes: 75 }
+          - { id: B, label: 'four threads', args: '--threads 4', budget: 0.2, job_minutes: 75 }   # ⚠ TEMPORARY r7441+70 T-e: induced timeout, reverted next commit
           - { id: C, label: 'Prescott at two threads', args: '--threads 2 --coretype Prescott', budget: 60, job_minutes: 75 }
     steps:
       - uses: actions/checkout@v4
