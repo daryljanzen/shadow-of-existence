@@ -310,6 +310,74 @@ theorem trivia : Real.log 2 ≠ 0 ∧ deriv (fun _ : ℝ => Real.log 2) 1 = 0 �
   refine ⟨?_, by simp, by norm_num, by norm_num⟩
   exact (Real.log_pos (by norm_num)).ne'
 
+/-! ### C -/
+
+/-- occupation numbers of the three modes -/
+abbrev Occ := Fin 3 → ℕ
+/-- a state: its coefficient on each number basis vector `|n₀ n₁ n₂⟩` -/
+abbrev St := Occ → ℝ
+
+/-- the receipt's truncation: five levels per mode -/
+def NL : ℕ := 5
+
+/-- the box `nⱼ < 5` (the receipt's `125`-dimensional space) -/
+def inBox (n : Occ) : Prop := n 0 < NL ∧ n 1 < NL ∧ n 2 < NL
+
+instance (n : Occ) : Decidable (inBox n) := by unfold inBox; infer_instance
+
+/-- the unit occupation vector of mode `i` -/
+def e (i : Fin 3) : Occ := fun j => if j = i then 1 else 0
+
+/-- the truncated lowering operator `aᵢ`: `(aψ)(n) = √(nᵢ+1) ψ(n+eᵢ)` for `nᵢ + 1 < 5` -/
+noncomputable def lower (i : Fin 3) (ψ : St) : St :=
+  fun n => if inBox n ∧ n i + 1 < NL then Real.sqrt (n i + 1) * ψ (n + e i) else 0
+
+/-- the truncated raising operator `aᵢ†`: `(a†ψ)(n) = √nᵢ ψ(n−eᵢ)` for `nᵢ ≥ 1` -/
+noncomputable def raise (i : Fin 3) (ψ : St) : St :=
+  fun n => if inBox n ∧ 0 < n i then Real.sqrt (n i) * ψ (n - e i) else 0
+
+/-- `1/√(2wᵢ)` -/
+noncomputable def cc (w : Fin 3 → ℝ) (i : Fin 3) : ℝ := (Real.sqrt (2 * w i))⁻¹
+
+/-- `qᵢ = (aᵢ + aᵢ†)/√(2wᵢ)` -/
+noncomputable def q (w : Fin 3 → ℝ) (i : Fin 3) (ψ : St) : St :=
+  fun n => cc w i * (lower i ψ n + raise i ψ n)
+
+/-- the vacuum `|000⟩` -/
+def vac : St := fun n => if n 0 = 0 ∧ n 1 = 0 ∧ n 2 = 0 then 1 else 0
+
+/-- `⟨0|qᵢ qⱼ|0⟩` -/
+noncomputable def vev2 (w : Fin 3 → ℝ) (i j : Fin 3) : ℝ := q w i (q w j vac) 0
+
+/-- `⟨0|q_A q_B q_C q_D|0⟩` -/
+noncomputable def vev4 (w : Fin 3 → ℝ) (A B C D : Fin 3) : ℝ := q w A (q w B (q w C (q w D vac))) 0
+
+/-- the free two-point function the Wick sum is built from -/
+noncomputable def W (w : Fin 3 → ℝ) (i j : Fin 3) : ℝ := if i = j then 1 / (2 * w i) else 0
+
+theorem cc_sq (w : Fin 3 → ℝ) (hw : ∀ i, 0 < w i) (i : Fin 3) : cc w i ^ 2 = 1 / (2 * w i) := by
+  have := hw i
+  rw [cc, inv_pow, Real.sq_sqrt (by positivity), one_div]
+
+theorem W_cc (w : Fin 3 → ℝ) (hw : ∀ i, 0 < w i) (i j : Fin 3) :
+    W w i j = if i = j then cc w i ^ 2 else 0 := by
+  rw [W, cc_sq w hw]
+
+/-- ⛭ **`two_point`.** `⟨0|qᵢqⱼ|0⟩ = δᵢⱼ/(2wᵢ)`: diagonal, computed from the mode operators -/
+theorem two_point (w : Fin 3 → ℝ) (hw : ∀ i, 0 < w i) (i j : Fin 3) : vev2 w i j = W w i j := by
+  rw [W_cc w hw]
+  fin_cases i <;> fin_cases j <;> simp [vev2, q, lower, raise, vac, inBox, e, NL] <;> ring
+
+/-- ⛭ **`wick`.** all `81` quartic vacuum expectations equal the Wick sum exactly -/
+theorem wick (w : Fin 3 → ℝ) (hw : ∀ i, 0 < w i) (A B C D : Fin 3) :
+    vev4 w A B C D = W w A B * W w C D + W w A C * W w B D + W w A D * W w B C := by
+  have s2 : Real.sqrt 2 ^ 2 = 2 := Real.sq_sqrt (by norm_num)
+  have s4 : Real.sqrt 2 ^ 4 = 4 := by rw [show (4 : ℕ) = 2 * 2 from rfl, pow_mul, s2]; norm_num
+  simp only [W_cc w hw]
+  fin_cases A <;> fin_cases B <;> fin_cases C <;> fin_cases D <;>
+    simp [vev4, q, lower, raise, vac, inBox, e, NL] <;>
+    (ring_nf; try simp only [s2, s4]; try ring_nf)
+
 end R68Overlap
 
 end ShadowProbe

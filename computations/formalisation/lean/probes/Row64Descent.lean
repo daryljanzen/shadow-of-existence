@@ -16,11 +16,23 @@ are `Filter.Tendsto`.
 - the closed-FRW (`k = 1`) curvature formulas in the receipt's typed form, in terms of `ä/a`, `H²` and `a`:
   `R = 6(ä/a + H² + 1/a²)`, `λ₀ = 3ä/a`, `λ₁ = ä/a + 2H² + 2/a²`, `Ric² = λ₀² + 3λ₁²`,
   `Riem² = 12((ä/a)² + (H² + 1/a²)²)`, `tr Ric³ = λ₀³ + 3λ₁³` (`frwR` … `frwRic3`). They are NOT tied to the engine's
-  connection here; the derivatives they are fed (of `α cosh(T/α)`, and the Friedmann `ä/a = aF′/2 + F` with `F′`)
-  ARE derived, by `HasDerivAt`.
+  connection here. The relation `ä/a = aF′/2 + F` for `H² = F(a)` is likewise the receipt's typed formula. The
+  derivatives fed into them (`ȧ`, `ä` of `α cosh(T/α)`, and `F′`) ARE derived, by `HasDerivAt`.
 - the deformation `F = H² = Λ/3 + εu/3 − 1/a²`, `u = (1 + ν log a)/a⁴` itself (the receipt's model of the anomaly).
 
-The receipt's paper-text check (`pf.inline R=(4\Lambda)`) is not formalised; the value `4Λ` it parses is proved here. -/
+The receipt's paper-text check (`pf.inline R=(4\Lambda)`) is not formalised; the value `4Λ` it parses is proved here.
+
+**The pieces, by receipt section:**
+- ***A.*** `rank_A` (rank `2` on four points, `1` on one); `kernel_A` (coefficient kernel = value kernel = the line
+  through `kv`, third entry `≠ 0`); `phase_A` (`⟨ψ|diag(1,4)|ψ⟩` phase-free, `⟨ψ|σₓ|ψ⟩` not).
+- ***B.*** `substrate` (`R = 4Λ`, `Ric² = 4Λ²`, `Riem² = 8Λ²/3`, `λ₀ = λ₁ = Λ` on `α cosh(T/α)`); `R_deformed`
+  (`R = 4Λ + εν/a⁴`); `inv_poly` (each invariant is an exact cubic in `ε`); `orders` (order `0` is `(64,16,32/3,4)Λ³`,
+  order `1` is the `ε`-derivative and is `(3/4)(ν/a⁴)·order 0/Λ`); `log_structure` (order `1` log-free, order `2`
+  not); `ranks_by_order` (`1, 1, 2`, and the `a⁻⁶` control `2`).
+- ***C.*** `L_coeff` (`L = 15/4`); `rate_factor`; `log_coeff` (coefficient of `log M` is `gL` for any moment `g`);
+  `control_weight`; `conventions_three`; `kernel_rotates` (rank `2`, kernel entry `0` without the anomaly, ratio
+  `−L/(48Λ²ενq₆)` and its divergence as `ε → 0⁺`).
+- ***D.*** `one_number`; `A6_factor`. -/
 
 namespace ShadowProbe
 
@@ -243,7 +255,7 @@ theorem Fd_deriv (Λ ε ν : ℝ) {a : ℝ} (ha : 0 < a) : HasDerivAt (Fd Λ ε 
   · funext x; simp only [Fd, Pi.sub_apply, Pi.div_apply, Pi.inv_apply]; ring
   · simp only [Fd']; norm_num; field_simp; ring
 
-/-- `ä/a = aF′/2 + F` (the receipt's `add`), with `F′` the derived derivative -/
+/-- **Imported (typed):** `ä/a = aF′/2 + F` (the receipt's `add`), with `F′` the derived derivative -/
 noncomputable def addD (Λ ε ν a : ℝ) : ℝ := a * Fd' ε ν a / 2 + Fd Λ ε ν a
 noncomputable def Sa (ν a : ℝ) : ℝ := ν / (6 * a ^ 4)
 noncomputable def Aa (ν a : ℝ) : ℝ := (ν - 2 - 2 * ν * Real.log a) / (6 * a ^ 4)
@@ -385,9 +397,11 @@ theorem L_coeff : Tendsto (fun m : ℝ => m * (wTT m - (2 * m ^ 3 - 9 * m))) atT
     have hs : Real.sqrt (m ^ 2 - 1) ^ 2 = m ^ 2 - 1 := Real.sq_sqrt (by nlinarith)
     have hs0 := Real.sqrt_nonneg (m ^ 2 - 1)
     have hp : 0 < m + Real.sqrt (m ^ 2 - 1) := by linarith
+    rw [show 8 * (m / (m + Real.sqrt (m ^ 2 - 1))) - (m / (m + Real.sqrt (m ^ 2 - 1))) ^ 2
+        = (8 * m * (m + Real.sqrt (m ^ 2 - 1)) - m ^ 2) / (m + Real.sqrt (m ^ 2 - 1)) ^ 2 by
+          field_simp, eq_div_iff (by positivity)]
     simp only [wTT]
-    field_simp
-    linear_combination (-(2 * m ^ 4 - 7 * m ^ 2 + Real.sqrt (m ^ 2 - 1) * (2 * m ^ 3 - 8 * m))) * hs
+    linear_combination (2 * m ^ 4 - 7 * m ^ 2 + Real.sqrt (m ^ 2 - 1) * (2 * m ^ 3 - 8 * m)) * hs
   have hr : Tendsto (fun m : ℝ => m / (m + Real.sqrt (m ^ 2 - 1))) atTop (𝓝 (1 / 2)) := by
     have h1 : Tendsto (fun m : ℝ => Real.sqrt (1 - (m⁻¹) ^ 2)) atTop (𝓝 1) := by
       simpa using ((tendsto_inv_atTop_zero.pow 2).const_sub (1 : ℝ)).sqrt
@@ -420,7 +434,7 @@ theorem rate_factor (W : ℝ) (hW : 0 < W) {a : ℝ} (ha : 0 < a) :
     exact (hasDerivAt_const a W).congr_of_eventuallyEq this
   · have := ((hasDerivAt_pow 4 a).inv (by positivity)).const_mul W
     convert this using 1
-    · funext x; ring
+    · funext x; simp only [Pi.inv_apply]; ring
     · norm_num; field_simp
 
 /-- the asymptotic weight `2m³ − 9m + L/m`, `L = 15/4`, and its partial sums from `m = 3` to `M + 2` -/
@@ -432,7 +446,7 @@ theorem Ssum_closed (M : ℕ) : Ssum M = Ppoly ((M : ℝ) + 2) + 15 / 4 * ((harm
   induction M with
   | zero => simp [Ssum, Ppoly, harmonic, Finset.sum_range_succ]; norm_num
   | succ M ih =>
-    rw [Ssum, Finset.sum_range_succ, ← Ssum, ih, show M + 1 + 2 = (M + 2) + 1 by ring, harmonic_succ]
+    rw [Ssum, Finset.sum_range_succ, ← Ssum, ih, show M + 1 + 2 = (M + 2) + 1 by ring, harmonic_succ (M + 2)]
     push_cast
     simp only [wSum, Ppoly]
     have : (0 : ℝ) < M + 3 := by positivity
@@ -443,7 +457,7 @@ theorem Ssum_closed (M : ℕ) : Ssum M = Ppoly ((M : ℝ) + 2) + 15 / 4 * ((harm
 tending to `gL(γ − 3/2)`: the logarithm's coefficient relative to the sum is exactly `L`. -/
 theorem log_coeff (g : ℝ) :
     Tendsto (fun M : ℕ => g * Ssum M - g * Ppoly ((M : ℝ) + 2) - g * (15 / 4) * Real.log ((M : ℝ) + 2)) atTop
-      (𝓝 (g * (15 / 4) * (eulerMascheroniConstant - 3 / 2))) := by
+      (𝓝 (g * (15 / 4) * (Real.eulerMascheroniConstant - 3 / 2))) := by
   have h := (Real.tendsto_harmonic_sub_log.comp (tendsto_add_atTop_nat 2)).sub_const (3 / 2 : ℝ)
   refine (h.const_mul (g * (15 / 4))).congr fun M => ?_
   simp only [Function.comp, Ssum_closed]
@@ -462,8 +476,8 @@ theorem control_weight (M : ℕ) (a : ℝ) (ha : 0 < a) :
     induction M with
     | zero => simp [SsumBad, Ssum]
     | succ M ih =>
-      rw [SsumBad, Finset.sum_range_succ, ← SsumBad, ih, Ssum, Finset.sum_range_succ, ← Ssum]
-      push_cast; field_simp; ring
+      simp only [SsumBad, Ssum, Finset.sum_range_succ] at ih ⊢
+      rw [ih]; push_cast; field_simp; ring
   refine ⟨hc M a ha, fun hM => ?_⟩
   rw [hc M 1 one_pos, hc M 2 two_pos]
   have : (1 : ℝ) ≤ M := by exact_mod_cast hM
@@ -537,7 +551,8 @@ theorem kernel_rotates :
     · exact tendsto_const_nhds
     · exact tendsto_const_nhds
     · exact (continuous_id.tendsto 0).mono_left nhdsWithin_le_nhds
-  · funext i; fin_cases i <;> simp [Mk, Matrix.mulVec, dotProduct, Fin.sum_univ_three] <;> field_simp <;> ring
+  · funext i; fin_cases i <;> simp [Mk, Matrix.mulVec, dotProduct, Fin.sum_univ_three]
+    field_simp; ring
 
 end C
 
@@ -567,7 +582,7 @@ theorem one_number (a : ℝ) (ha : 0 < a) :
     · funext ν; rw [R_deformed Λ ε ν ha]; simp; ring
     · simp
   · rw [R_deformed Λ ε 0 ha]; ring
-  · simp [c1]; field_simp
+  · simp [c1, hΛ.ne', hν.ne', ha.ne']
 
 include hq6 hq4 hΛ hε hν hL in
 /-- ⛭ **`A6_factor`.** Carry an unknown factor `A₆ > 0` on the dimension-six direction (`f₁ ↦ A₆f₁`): the rank on the
@@ -579,7 +594,7 @@ theorem A6_factor (A6 : ℝ) (hA6 : 0 < A6) :
     kv (A6 * q6) q4 Λ ε ν L 2 ≠ 0 := by
   have hq := mul_pos hA6 hq6
   obtain ⟨k1, k2, k3⟩ := kernel_A hq hq4 hΛ hε hν hL
-  refine ⟨fun a => by simp [fs]; ring, (rank_A hq hq4 hΛ hε hν hL).1,
+  refine ⟨fun a => by simp [fs]; ring, (rank_A hq4 hΛ hL).1,
     (kernel_rotates hq hq4 hΛ hν hL).1, fun x => (k2 x).trans (k1 x), k3⟩
 
 end D
