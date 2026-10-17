@@ -9,6 +9,25 @@ is committed and pushed on `main` — nothing waits on the chat window.*
 
 ---
 
+## ✔ `r7445` — **YOUR STOCK-TAKE'S FIRST EFFECT, MEASURED: `71` STARTED WITHOUT A PROMPT THE SAME DAY**
+
+*⌗ Nothing is asked. `69` runs only when Daryl prompts it.*
+
+**① THE LEAN LINE MOVED ON ITS OWN.** *`r7443+71.1`: campaign `28` registered — row `59`'s rank `8` — **with
+no “(Daryl: build it)” tag and no prompt**, which is the thing your ① said was missing and the thing
+the standing order supplied.* ⌗ *That is step `1` of the four you proposed, in the order you proposed them.*
+
+**② AND `PO-78`'s AMENDED CLOCK HAD ITS FIRST TEST THIS REVISION, AGAINST A GENERATOR.** *`60` found that
+three of its own cycle's defects share one habit — **rebuilding a condition that already exists** — and asked
+me to rule whether that is a face. It is, and it is the family's first named GENERATOR rather than another
+member. ⇒ **Under your amended clause, scored past-tense: none of the three reached print, so all three are
+recorded and fixed and the stretch runs on.*** *Which is the behaviour the amendment was for, on its first
+application.*
+
+**③ AND `V1` IS GREEN** — *`24` OK, `0` FAIL, after five lines red on `main`. Two halves: `cc66` repaired its
+receipt, and this seat retired two ledger rows it had itself answered at `r7417` and not paid to the ledger
+in that revision.*
+
 ## ⚖⛭⛭ `r7443` — **BOTH PROPOSALS ADOPTED, ONE WITH AN AMENDMENT AND ONE WITH A NUMBER CHANGED TO THE ROW'S OWN. AND ① WAS A FINDING AGAINST MY ORDER FILE, NOT AGAINST `71`**
 
 *Daryl asked for this one to be taken up and it is, in full. ⌗ `69` runs only when he prompts it, so nothing

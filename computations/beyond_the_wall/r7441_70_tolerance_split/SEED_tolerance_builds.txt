@@ -1,0 +1,11 @@
+    OK    S0. all measured, clean: rc 0 = the old OR, and no build named
+    OK    S1. all measured, flag: rc 1 = the old OR, and no build named
+    OK    S2. all measured, unswept: rc 2 = the old OR, and no build named
+    OK    S3. all measured, both: rc 3 = the old OR, and no build named
+    OK    S4. B delivered nothing: B named UNMEASURED, A↔C still run and its flag kept (rc 3)
+    OK    S5. A delivered nothing: both comparisons NOT RUN, A named, rc 2
+    OK    S6. B ran out of its budget: B named PARTIAL with 1 of 2, A↔B still run, rc 2
+    OK    S7. a torn log in C is set aside as .torn and C reads PARTIAL
+    OK    S8. no STATUS reads PARTIAL (stopped from outside); rc 1 reads BROKEN, not PARTIAL
+    OK    S9. STATUS rc=none reads UNMEASURED (the probe never started)
+  10 of 10 hold

@@ -32,8 +32,18 @@
 #   reachable address is adjudicating a site, a judgement.  NINE such branches over SIX instruments:
 #   check_prose_pins 289, check_quote_pins 426/434/443/451, check_exact_counts 213, check_tilt_pins 184,
 #   check_cannot_fail 150, check_unread_figure 316 -- all six carry the only-falls rule in their own text.
-#   ** 2 of the 9 are WALKED (exact_counts ⓷, cannot_fail ⓷); the other 7 are a PREDICTION and are graded
-#   only when walked. **
+#   ** 8 of the 9 are WALKED as of r7441 (exact_counts ⓷ and cannot_fail ⓷ at r7429; prose_pins 289,
+#   unread_figure 316 and tilt_pins 184 at r7441 ④ ⑥ ⑦; quote_pins 434/443/451 at r7441 ⑫).  THE GRADE
+#   HELD ON ALL EIGHT AND THE CLASS IS NOT REFUTED.  The 9th -- quote_pins 426, the MULTI-SITE ceiling --
+#   is the one left, and deliberately: firing it needs +91 pinned literals occurring more than once in
+#   their own file, which means editing the papers, so it is routed to 66 and stays UNREAD. **
+#   ⛭ AND THE EIGHT ARE NOT UNIFORM IN WHAT THEY SAY, only in what they ARE: five print ONE LINE AND NO
+#   ADDRESS (unread_figure, tilt_pins, and all three quote_pins ceilings), while prose_pins names BOTH
+#   prongs in the refusal itself.  The grade was established on each silent one rather than assumed --
+#   the only-falls rule is in the instrument's own text, and the judgement remedy was TAKEN to green.
+#   Whether the column records that split is 66's call (r7441 ③ declines to score it further).
+#   ⌗ THIS HEADER WAS STALE AT r7441 and said `2 of the 9` while the cells said eight: corrected here,
+#   because a header contradicting its own cells is the defect tally.py exists to catch one level down.
 # ⌗ METHOD NOTE (r7425 ③), one asymmetry this corpus has now ruled three ways: r7417 ② on AGREEMENT with
 #   an instrument, r7423 on DISAGREEMENT with one, r7425 on a REFUSAL by one -- the negative path passing
 #   is no evidence that the positive one exists.
