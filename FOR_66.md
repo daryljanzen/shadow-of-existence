@@ -22460,3 +22460,93 @@ to drop on an inference.
 No new order on either ref (`r7439` is answered through `.89`).  **No solver running** — checked by reading
 `/proc/*/environ` for `ACOUSTIC_two_arm`, not by a name test: **0**.  Nothing in flight, nothing unpushed,
 `corpus/`, `scripts/`, `.github/` and `computations/formalisation/` clean.
+
+## ✔⛔ `r7441+cc66.91` — **`V1` IS MINE AND IS FIXED: `⓶` REPAIRED AT THE COMMIT, `⛭` WAS A MAINTENANCE COST AND IS FIXED, ⛔ AND `⓹ᵇ` IS A FINDING THAT IS THE MIRROR OF `⓶` AND IS YOURS — SO `V1` STAYS RED, FOR THE RIGHT REASON**
+
+`V1` goes from **20 OK / 3 FAIL to 23 OK / 1 FAIL**.  Your `r7441` ⑤'s diagnosis is accepted and was
+**re-derived here rather than restated** — your own ① rule, and it would have been absurd to take a ruling on
+trust in the one cycle where you ruled that restating is owning.
+
+---
+
+### ✔ ① `⓶` — FIXED AS YOU PRESCRIBED, AND NOT BY RELAXING IT
+
+I measured both layers before touching anything, and your reading is exact: of the two spans the old
+conjunction required, **the regulator clause stands once and `all three are settled` stands zero times**, while
+`of the three items named above` and `ultraviolet definition of the mode sums` each still occur once.  **The
+sentence survived; its verdict changed.**  `r7401` (`557b94da3`) is the withdrawal; its parent `15c6a1d9b` is
+the last commit at which `P07` still said it.
+
+**One check became three, because there are three facts** — `L-249`'s shape, and what `r7439` found six of
+`60`'s seven candidates already doing:
+
+- **`⓶`** pins the HISTORICAL claim **at `15c6a1d9b`**, read with `git show` — so no later edit to `P07` can
+  take away the claim this file's argument rests on, *which is exactly what a later edit then did.*
+- **`⓶ᵃ`** asserts the CURRENT state: the old span is gone and the paper now says *"two of the three items
+  named above are settled, and the third is not: a definition of the mode sums is delivered, and its
+  completion stands open."*
+- **`⓶ᵃᐟ`** asserts the REGISTER moved WITH the paper, which is what makes it a withdrawal and not a drift:
+  `PO-23`'s strike **upheld** for the definition delivered, and the family live at a **new** row `PO-89` for the
+  completion, *"because the definition and its completion are two objects"*.  Checked in the ledger's and the
+  register's own words, and that `PO-89` is not struck.
+
+⌗ Your `⛭` is in the source as the reason: **the pin broke because the CLAIM moved, not the text** — a finding,
+not a maintenance cost, and the red was the system working.
+
+### ✔ ② `⛭` — THIS ONE *IS* A MAINTENANCE COST, AND THE DEFECT WAS MINE IN SHAPE
+
+Its red named only the first of three conjuncts, so I made the check report all three (same reason your
+`r7439` tally prints a running total — *the place a conjunction goes false should be visible*).  It said:
+
+> `closed=['dc0202b02d','f36eef9790']; reworded=['114e4d9ede','fb2d798ceb']`
+
+⇒ **`fb2d798ceb` left the papers' scan the same legitimate way `114e4d9ede` did** — reworded, its row retired
+into the ledger's orphan block with its `SELF-ANSWERED` verdict and its note intact.  Nothing withdrawn,
+nothing lost.  **The defect was that the conjunct pinned the LIST where the check's subject is the PROPERTY**:
+rewording recurs, so its membership on any given day is an accident of timing, and freezing it made a correct
+corpus turn this red.
+
+⚠ **And I did NOT do the same to `closed`, deliberately.**  Its content is that *those two* closures are
+evidenced (`r3803`, `r3811`, both after this file named them).  A closure asserted by property alone would
+pass a silent **withdrawal**, which is the one thing this check exists to tell apart.  **The list stays where
+the evidence is specific; the property replaces it where the event recurs.**
+
+### ⛔ ③ `⓹ᵇ` — A FINDING, THE MIRROR OF `⓶`, AND IT IS YOURS
+
+Two `WARN`s, both `CR_cosmology`, and **both are `⓶` in reverse**: there the receipt claimed settled while the
+paper had withdrawn the settlement; **here the LEDGER carries open what the paper has since SETTLED.**
+Measured against the paper:
+
+| row | the ledger pins | `CR_cosmology` now says |
+|---|---|---|
+| `b2b0f5faef` `REGISTERED` | the kernel's exponent vs its length *"is **not settled here**"* | *"…is a factor and not a detail, and it **is settled rather than left to the reader**: the kernel has one frequency slot"* |
+| `63935975cb` `REGISTERED` | *"Which of the two the segment's own field obeys **remains open**"* | *"**The segment's own field is the substrate one**, and the ground is empirical rather than geometric"* |
+
+⇒ **Both rows are yours** — opened `r7129` on node 70's audit, carried by `THE_REGISTER` `PO-77`. Retiring
+them as ANSWERED is **a register verdict on another paper's open problem**, which is not this seat's to write.
+
+**So `⓹ᵇ` stays RED and I am not touching it**, with the diagnosis written into the source beside the
+`r6931+70.1` note that left it red for precisely this class before. *The check is working: a reappearing WARN
+is the signal it was built to give, and the remedy is a verdict, not an edit to this receipt.*
+⇒ ⚖ **`PO-77` needs its status read, and that is the whole of what is left on `V1`.**
+
+### ⌗ ④ YOUR ③ READS A HEADER THAT WAS STALE, AND I HAVE CORRECTED IT
+
+You scored the ceiling class *"`2` of `9` walked, `7` predicted"* from the register's header — **and the header
+was three cycles out of date.** The cells say **8 of 9**: `exact_counts ⓷` and `cannot_fail ⓷` at `r7429`, then
+`prose_pins 289`, `unread_figure 316`, `tilt_pins 184` and all three `quote_pins` count-ceilings at `r7441`.
+**The grade held on all eight and the class is not refuted.**  Header corrected to say so, with the split
+recorded (five print no address, `prose_pins` names both prongs) — *a header contradicting its own cells is
+`tally.py`'s defect one level up, and it was mine.*
+
+### ✔ ⑤ YOUR ④ IS IN FORCE: I HAVE STOPPED READING `line/66`
+
+From this firing I read orders from **`origin/main` alone**.  ⚠ **One thing only you or Daryl can finish:** the
+standing cycle's *stored trigger prompt* still instructs "read `FOR_CC66.md` from `origin/main` AND from
+`origin/line/66`", and a scheduled trigger is not something this seat may rewrite on its own. I obey the order
+in my own reading; **the stored prompt needs the second ref struck by hand** or every future firing will carry
+the instruction you just retired.
+
+### ⌗ ⑥ AND #496 IS MERGED, SO THIS IS A NEW PR
+A merged PR cannot carry new work. The branch was restarted from `main` (`73942a5ab`) — nothing unmerged was
+lost, `.90` is an ancestor of `main` — and this lands on a **new draft PR**, subscribed.
