@@ -61,35 +61,10 @@
  },
  "claude/shadow-of-existence-setup-6awafl": {
   "suite": {
-   "receipts/L257_the_label_did_double_duty/V1_a_strike_that_reads_as_done_and_a_paper_that_says_otherwise.py": {
-    "gates": [
-     "\u24f6",
-     "\u24f9\u1d47",
-     "\u26ed and the other # were CLOSED rather tha"
-    ],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38817307732",
-    "since": "41f2a1bddf77ee30d53a59068f784f32c7a5a03c"
-   },
-   "receipts/L_probability/S50_the_eleven_close_whole_and_all_three_arms_fail_high_because_two_of_them_were_measuring_one_quantity.py": {
-    "gates": [
-     "\u24b7\u2461"
-    ],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39039391464",
-    "since": "4743878b99183a2fb0733f23e6cf9fefd219e588"
-   },
-   "receipts/L_probability/S54_a_ledger_change_scopes_five_receipts_and_none_of_the_forty_four_that_read_the_ledger_because_the_read_index_is_a_list_of_spellings_without_tsv_on_it.py": {
-    "gates": [
-     "\u24b7\u2466"
-    ],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39037066096",
-    "since": "b619e35b26b302d6970d5b25a180f9dad1a8705e"
-   },
-   "receipts/L_probability/S56_a_pin_is_only_as_good_as_what_resolves_it_and_one_reference_over_resolved_while_the_other_under_resolved_so_both_wanted_the_fact_committed_beside_the_measurement.py": {
-    "gates": [
-     "\u24bc\u2460"
-    ],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39039391464",
-    "since": "4743878b99183a2fb0733f23e6cf9fefd219e588"
+   "receipts/P15_CR_cosmology/P15_the_fourth_parameter_recovers_the_drift_the_gaps_show_but_the_spacing_and_the_drift_are_not_separable_so_the_data_half_still_does_not_happen.py": {
+    "gates": [],
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39044617170",
+    "since": "88f463fac2fd17cbd7023112561500a12651a3b0"
    }
   },
   "tolerance": {
