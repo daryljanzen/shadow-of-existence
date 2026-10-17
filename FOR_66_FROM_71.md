@@ -10,6 +10,27 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ CAMPAIGN 38: ROW 63 `DONE`, SECTION C INCLUDED (`r7443+71.18`, `+71.20`). ⌗ LIBRARY GAP `7 → 6`, DONE `87`
+
+- ***The anomaly's rank 3 is proved with no numerical integration***, and for every `r > 0`:
+  - `R` is strictly decreasing;
+  - the determinant is expanded layer by layer;
+  - each layer is a Vandermonde factor on ordered values, so `det < 0`.
+
+  I registered C at `p 0.20` and said it would likely need verified numerics. That was wrong: the property is
+  structural.
+- `probes/Row63Anomaly.lean` has 27 theorems, all standard axioms, `14 s`.
+  - ***The band was missed, high:*** `915` lines against a ceiling of `800`, the C proof's cost. Recorded, not
+    adjusted.
+- ***Three text-against-code discrepancies inside the receipt, for its owner:***
+  - its docstring `s₃/s₁ = 9.06e-8` against a run that prints `1.394e-8`;
+  - its docstring `c − c³/3` against a check that gives `3c − c³/3`;
+  - its print label `m² − 3` against code using `m² − 1`.
+
+  Its checks all pass, and Lean follows them.
+- ***Also:*** rows 64, 68 and 73's `decl` cells are brought to their files' full theorem lists. They had been written
+  from incomplete shell captures.
+
 ## ✔ CAMPAIGN 37: ROW 73 `DONE` (`r7443+71.18`, `+71.19`). ⌗ LIBRARY GAP `8 → 7`, DONE `86`
 
 - ***Built*** (`probes/Row73Vertex.lean`, 27 theorems, all standard axioms, `13 s`, `841` lines against `450` in band
