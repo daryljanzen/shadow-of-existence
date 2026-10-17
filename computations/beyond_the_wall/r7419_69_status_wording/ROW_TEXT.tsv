@@ -1,5 +1,7 @@
 # PER-ROW PUBLIC TEXT for formalisation.html -- one plain phrase per row, keyed by ROWS.tsv's index.
 #
+# ** REVISED BY 69: rows 53 and 86 reworded so a reader needs no symbol to follow them; row 18 kept. **
+#
 # ** WHOSE FILE THIS IS. **  The public wording of the formalisation page is `69`'s by `r7419`'s own
 #   routing, and this file sits in `69`'s directory for that reason.  The three lines below were written
 #   by node 66 at `r7425` and are OPEN TO 69'S REVISION -- they are not 66 claiming the wording.
@@ -30,5 +32,5 @@
 #   that local transpositions do not give the full S_3 monodromy the row is about.
 index	plain	link
 18	the discriminant, which locates the branch points	probes/Row18Cubic.lean
-53	the parameter counts the receipt makes
-86	the value of |X|² − α² at three radii
+53	the number of free parameters in each family of solutions, which the receipt counts
+86	how many branches the height function has outside the throat, on it, and inside it

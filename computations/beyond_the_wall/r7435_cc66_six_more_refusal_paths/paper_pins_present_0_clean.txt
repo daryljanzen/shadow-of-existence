@@ -1,0 +1,5 @@
+  PAPER PINS PRESENT -- at e080771e: 1510 PAPER row(s), 125 absent from every corpus/*.tex
+    NEW   (absent, not listed):            0
+    STALE (listed, now present or gone):   0  (0 no longer a live row)
+    SEED  present read present, one-character mutant read absent: True
+  no new absent PAPER pin; the list is current; the seed reads both ways.

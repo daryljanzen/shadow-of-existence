@@ -1204,7 +1204,7 @@ const PAGES_URL = '{PAGES}';
                           f'Each of these {len(frows)} rows is one calculation a receipt '
                           'performs and a paper relies on. This says, for each, whether that '
                           'calculation is also proved in Lean \u2014 and where a proof exists, '
-                          'the theorem is linked. '
+                          'the theorem is linked. Beside a row, each theorem name links to its proof, and a description shown there without a link is a calculation not yet proved. '
                           f'{npairs} theorems are linked across '
                           f'{sum(1 for r in frows if r["pairs"])} rows.', fbody))
         print(f'  formalisation.html written: {len(frows)} rows, {npairs} theorems linked, '

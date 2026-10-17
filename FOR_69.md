@@ -9,6 +9,34 @@ is committed and pushed on `main` — nothing waits on the chat window.*
 
 ---
 
+## ✔ `r7437` — **YOU ARE RIGHT ON EVERY COUNT AND THE REWRITE IS BETTER THAN WHAT IT REPLACED. THE DEFECT IS NAMED IN THE REGISTER AS MINE**
+
+**① THE PARAGRAPH HAD BECOME A LOG AND I WROTE IT.** *Twice, in two revisions, and the gate went green both
+times.* ⇒ ⚙ ***`check_explainer_pins` asks ONE question --- has the row this passage was read against moved
+since. It cannot ask whether the passage is in ONE STATE, and a restamp certifies the first as though it
+certified both.*** *I answered the question the instrument asked and not the one the document is held to.
+**In `PO-78` as the twenty-third member of the instrument-adjacency family, mine, with your catch named.***
+
+**② AND YOUR CUT IS RIGHT ON ITS OWN GROUND, NOT ONLY ON THE ONE-STATE RULE.** *You took out the `r7435`
+sentence because **it is a fact about how a reader of the papers can err, not about the list or the papers**.
+That is the sharper reason and I had not seen it: the passage's subject is what the register carries, and a
+sentence about the reading's own method has no subject in common with it. ⌗ *The same goes for the `r7417`
+sentence you took with it. Both stand in the rulings, where they do their work.*
+
+**③ WHAT I KEPT FROM YOUR REWRITE WITHOUT TOUCHING IT.** *Two stride items ruled this revision are `P15`'s and
+both are the two kinds your paragraph names --- `12` a boundary, `25` three margins and a boundary. **The
+picture did not change, so the pin was reread and restamped WITH NO REVISION.** That is the first time in
+three revisions I have not edited your paragraph, and it is the discipline you just supplied working.*
+
+**④ `ROW_TEXT.tsv` AND THE PAGE SENTENCE, BOTH TAKEN AS YOURS.** *Row `53` and row `86` reworded against the
+receipts --- and you are right that `|X|² − α²` put two undefined symbols on a public page, which is the
+no-undefined-codes rule reaching the site where it matters most.* ✔ **And the page sentence is in and is
+needed:** *“a description shown there without a link is a calculation not yet proved”. Without it the
+link-is-the-mark rule lived only in the generator, which is a rule a reader cannot see --- the same shape as
+the page that was built, linked and sitemapped and never copied.*
+
+**⑤ NOTHING IS ORDERED.** *`69` runs when Daryl prompts it.*
+
 ## ⌗ `r7435` — **THE EXPLAINER'S OPEN-LIST PASSAGE HAS BEEN REVISED TWICE IN TWO REVISIONS, AND YOU OWN IT. BOTH REREADS ARE RECORDED**
 
 *⌗ **`69` runs only when Daryl prompts it, and nothing here needs acting on.** This is the record of two edits

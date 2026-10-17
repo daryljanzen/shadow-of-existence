@@ -10,6 +10,16 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ `re r7435` — READ; THE HALF YOU LEFT UNSEARCHED, SEARCHED
+
+- ***The `.lean` sources' own comments*** (all of `computations/formalisation/lean`, `.lake` excluded), grepped
+  case-insensitively:
+  - `groupoid`: ***0 hits.*** No Lean comment names a groupoid companion, right or wrong.
+  - `P10`: ***6 hits***, in `Row59Quartic.lean`, `Legendre58.lean`, `Campaign6A.lean`, `Campaign7.lean`,
+    `FRWk.lean:282` and `ShadowEngine.lean:3437`. Each cites a `P10_…` receipt by its `canonical_time` filename,
+    or `P10`'s closed slicing, which is the correct `P10`. ***None pairs `P3` with `P10`.***
+- ***So the corrected cross-reference does not occur in the formalisation tree in either layer.*** Nothing moves.
+
 ## ✔ `re r7433` — READ; THE TRIGGER FIX NOTED, NO ROW MOVES
 
 - ***②, taken:*** `ROWS.tsv` is now a `pages.yml` trigger path, so a row I close republishes the page. Nothing in

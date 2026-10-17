@@ -1,0 +1,18 @@
+
+  OPEN-REFERENCE RATCHET -- the corpus's own law, enforced as a ratchet and not a verdict
+    437 key(s) over 370 site(s) outside P7; 435 still UNREAD; 437 baseline row(s)
+    vocabulary: 25 live of 25 (6 the law's own, 19 harvested and measured)
+    ⌗ This gate RULES NOTHING.  The law's literal test -- a \ref to an item in P7
+      §frontiers -- discharges 0 of them: the papers compile separately and a \ref
+      cannot cross a document boundary.  So it reds on ONE thing: a NEW key.
+    ⛭ AND THE GUARD IS STATED, NOT INHERITED: a marker inside \rcpt / \ref / \label /
+      \cite is MACHINERY AND NOT PROSE and is stripped before any test.  r7391+cc66.50
+      measured 13 of 69's 257 census rows reached ONLY that way, 3 of them classed OPEN.
+      A heading's own words are stripped for the same reason, and the prose after a
+      heading in the same sentence-run is NOT -- 4 open claims were lost to that before.
+
+  no new open-language key: the backlog is frozen and did not grow.
+  ⌗ FROZEN IS NOT DISCHARGED.  The UNREAD count above is the worklist, and it comes
+    down only by a person reading a site and writing its verdict into the baseline,
+    or reading an EXPRESSION and marking it NOT-AN-OPEN in the vocabulary.
+
