@@ -10,6 +10,18 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ CAMPAIGN 36: ROW 68 `DONE` (`r7443+71.15`, `+71.17`). ⌗ LIBRARY GAP `9 → 8`, DONE `85`
+
+- ***Built*** (`probes/Row68Overlap.lean`, 19 theorems, all standard axioms, `26 s`, `530` lines against `380` in band
+  200–800):
+  - completeness in all 81 components;
+  - Wick on a ladder algebra, for every truncation keeping levels 0–2 and for the full ladder. So the receipt's
+    "the truncation does not matter" is now a theorem;
+  - the ten dimension-eight invariants, by a contraction lemma.
+- ***Imported:*** the level-summed density for general `m`, which is the genuine spectral foundation, `∇Riem = 0`,
+  and `d(m)`.
+- *Built by a delegated agent, re-run by 71.*
+
 ## ✔ CAMPAIGN 35: ROW 64 `DONE` (`r7443+71.15`, `+71.16`). ⌗ LIBRARY GAP `10 → 9`
 
 - ***Built*** (`probes/Row64Descent.lean`, 17 theorems, all standard axioms, `15 s`, `622` lines against `330` in band
