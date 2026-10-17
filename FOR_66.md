@@ -22046,3 +22046,122 @@ refutes it.
 `0e78a2ef0` — both exit 1 on the same three gates, transcripts **byte-identical**, both filed in the PR.  Not
 this PR's, no fix to port (`V1`'s `⓶` is P07's own wording, another seat's call), no re-run spent because it is
 deterministic.  One comment on the PR says exactly that.  `main` is at `r7439` and nothing is unanswered.
+
+## ⚖⛭ `r7441+cc66.86` — **FOUR MORE INSTRUMENTS CLOSED: `24`→`45 of 81` (`55.6 %`), `14` FULLY ACCOUNTED. ⚖ THE CEILING CLASS SURVIVED THREE MORE TESTS AND GREW A SUB-DISTINCTION IT DID NOT PREDICT. ⛭ AND ONE REFUSAL WARNS AGAINST ITS OWN REMEDY**
+
+Still `r7439` ⑤, cheapest first.  `.85` closed the two cheapest; this closes `check_exact_counts`,
+`check_marker_transposition`, `check_prose_pins`, `check_unread_figure` and `check_tilt_pins`, and walks two of
+`red_carry`'s three.  Record: the same `WALK.md`, now with 30 transcripts.
+
+**Every number here is `tally.py`'s.**
+
+| | `.84` | `.85` | now |
+|---|---|---|---|
+| **walked** | 22 | 24 | **45** |
+| self-referential | 10 | 11 | 11 |
+| pending | 49 | 46 | **25** |
+| walked | 27.2 % | 29.6 % | **55.6 %** |
+| fully accounted | 7 | 9 | **14** |
+| `ONE STEP FROM A WALL` cells | 3 | 3 | **6** |
+
+`45 + 11 + 25 = 81`.
+
+---
+
+### ⚖ ① THE CEILING CLASS: **three more walked, `5 of 9`, and your claim holds — but not uniformly**
+
+Your `r7439` claim was that every ratchet's ceiling branch is `ONE STEP FROM A WALL` because raising the
+ceiling is forbidden by the instrument's own only-falls rule and the reachable address is a judgement.  **Three
+more are now walked and the grade holds on all three.  What does NOT hold is that they look alike.**
+
+- **`check_prose_pins` 289** — ceiling `0` against 161 sites read, so one flipped row fires it.  Its refusal
+  names **both prongs**: *"The bucket means work and the ratchet is that it only shrinks.  Lowering the ceiling
+  is the point; raising it is an edit to this gate and must be argued."*  Textbook.
+- **`check_unread_figure` 316** — raised `owed` 16 → 23 against a ceiling of 22.  Its refusal is **one line and
+  names nothing**: `THE OWED COUNT ROSE: 23 against the declared ceiling 22.`
+- **`check_tilt_pins` 184** — same shape, same silence: `THE OWED COUNT ROSE: 1 against the declared ceiling 0.`
+
+**So the nine are uniform in what they ARE and not in what they SAY** — and I establish the grade rather than
+assume it, because on the two silent ones a reader could reasonably call `WALL`.  For each I checked the
+only-falls rule is in the instrument's own text (`check_unread_figure` carries it in its **title line**, in its
+`⓷`, and in every run's `OWED: n ** may only fall **` four lines above the refusal) **and** that the judgement
+remedy actually clears it: **one** verdict took `check_unread_figure` from 23 to 22 and the gate to exit 0, and
+one took `check_tilt_pins` from 1 to 0 and that line to green.  A branch whose remedy I have taken is not a
+wall whatever its print says.
+
+⇒ **5 of 9 walked, 4 still a prediction.**  If the column should record "names both prongs" vs "names neither"
+as a split, that is your call and I have not taken it — the same way I left `r7429`'s per-direction question
+to you.  **I note only that the split now has 2 members against 1, so it is no longer a single case** — which
+is the same evidentiary threshold that made `SELF-REFERENTIAL` a class at `r7437`.
+
+### ⛭ ② A REFUSAL THAT WARNS AGAINST ITS OWN REMEDY, AND MY INDUCTION WALKED STRAIGHT INTO IT
+
+`check_tilt_pins`' stale branch prints the remedy and then argues against following it:
+
+> `⛔ AND THIS REMEDY IS DESTRUCTIVE, SO READ WHAT IT RESTS ON FIRST (r7341): it is correct only if the run
+> above measured the TREE … If DETACHED above is ZERO while the baseline is not, suspect the run before you
+> suspect the baseline.`
+
+**And my induction is exactly the case it warns about.**  I had to reduce the gate's scope to afford the walk
+(below), which made `DETACHED: 1` fall under `the baseline carries 2` *because the RUN changed, not the tree*.
+Following the printed remedy would have deleted a correct adjudication — which is what `r7341` caught a stale
+cache path doing.  **The warning is confirmed by an induction it did not anticipate**, and the ladder has no
+rung for a refusal that tells you to distrust it.  I am not proposing one; I am recording that the column's
+shape does not cover this.
+
+### ⌗ ③ `check_tilt_pins` WAS CLOSED WITHOUT DUPLICATING ITS SWEEP — `r7271` ⒜ ⒝ APPLIED
+
+Its own source declares its cost: *one receipt run per site*, 69 sites, *"in the monthly backstop … and not in
+the fast list, whose budget is 420s per gate."*  ~13 minutes.  **So I did not run it.**  Two of its five
+refuse *before* the expensive run (no baseline; the scoped list missing) and were free; the other three I
+induced on a **one-site scope** by reducing the gate's **own list file**, which is data and not the instrument
+— 1 s per invocation.  Both files restored byte-exact.
+
+⌗ That branch also gave the first `REACHABLE BUT ELSEWHERE` of this cycle: the missing scoped list names
+`r7119_70_tilt_coverage/tilt_list.txt`, **70's file**, with the rule in the next line — *"This gate runs 70's
+operator over ITS OWN list and does not invent a scope."*
+
+### ⌗ ④ THE OTHER THREE, AND ONE IDIOM WORTH YOUR NOTICE
+
+`check_exact_counts` (`6 of 6`), `check_marker_transposition` (`5 of 5`), `check_prose_pins` (`5 of 5`) and
+`check_unread_figure` (`4 of 4`) all closed on **data** inductions of the same three shapes — no baseline, a
+new site, a stale entry — plus a duplicated key where the gate checks for one.
+
+Two things fell out that are not in any single cell:
+
+1. **The ratchets share a refusal IDIOM, not just a shape.**  `check_exact_counts` and `check_prose_pins` print
+   the *same sentence* — `no baseline at <path> -- this gate has no record to ratchet` — and three of them
+   close their stale branch with the *same* `r7069` line about a fixed site being a silent permission to
+   regress.  That is a family resemblance the register records one cell at a time and never states.
+2. **A no-baseline address is the FILE'S EXISTENCE and not its content**, and I measured where taking it lands
+   rather than assuming: putting back a baseline with **one** real row does not go green, it moves straight
+   onto the NEW-site branch (`59 NEW`).  **The chain is `181 → 200`.**  A refusal whose address is another
+   refusal is still reachable; it is just not one step.
+
+I also induced the NEW branches the honest way wherever I could — by **un-adjudicating a committed key** rather
+than planting a fake one — so the flag the gate raises is a real detection and not a straw site.
+
+### ⚠ ⑤ `red_carry`: 2 of 3, AND ITS ADDRESS BELONGS TO ANOTHER TOOL
+
+Its three sites are **operational aborts, not verdict refusals**: they say the instrument could not run, never
+that the tree is bad.  All three are reachable only **BY ENVIRONMENT**.  I induced two in an **isolated temp
+remote** — the live `refs/ci/carry` was never written and `--remote` never pointed at `origin`:
+`cannot read refs/ci/carry from <remote>` (a remote that is not a repository), and the generic `git <args>:
+<stderr>` abort (a remote that HAS the ref, on a commit with no `carry.json`).
+
+**Both name the failed command and git's reason and no remedy of their own.**  The address is in another tool's
+voice, and in CI it is the runner's to supply, not this seat's — which is neither end of the current ladder.
+
+⚠ **The third is IN FLIGHT, not walked.**  `could not write REF in TRIES tries` needs **six** rejected pushes;
+it is running against a bare remote whose `pre-receive` rejects everything.  The first attempt proved the loop
+turns (`red_carry: another job moved the ledger first -- re-reading and re-applying`) but each iteration
+re-reads the `PO-68` history, so six outran a 420 s timeout.  Reported as in flight by the rule `.83` set when
+the `--unshallow` take failed — **and if it fails the way that one did, I will say so rather than quietly
+count it.**
+
+### WHAT IS LEFT
+`check_revision_collisions` 5 · `ROWS.tsv : index` 7 (60's join gate) · `check_quote_pins` 12 — **last, as you
+ordered** · `red_carry` 1 (in flight).  **25 of 81.**
+
+Every induced file in this cycle — six of them — was restored **byte-exact**, and `git status` on `corpus/` and
+`scripts/` is clean.
