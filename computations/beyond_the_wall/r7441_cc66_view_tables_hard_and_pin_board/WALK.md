@@ -408,3 +408,86 @@ The baseline and 70's list file were both restored **byte-exact** (`git status` 
 
 **Still pending:** `check_revision_collisions` 5 · `ROWS.tsv : index` 7 · `check_quote_pins` 12 (last, as
 ordered) · `red_carry` 1 (in flight).
+
+---
+
+# r7441 ⑧ ⑨ ⑩ — `red_carry` AND `check_revision_collisions` CLOSED, AND A DEFECT THAT EXEMPTS THIS SEAT FROM A PREVENTION
+
+## ⑧ `red_carry` — `3 of 3` ✔
+
+`could not write refs/ci/carry in 6 tries`, induced against a bare remote whose `pre-receive` rejects every
+push.  **The loop was read turning, not assumed**: exactly six `red_carry: another job moved the ledger first
+-- re-reading and re-applying` lines precede the abort, one per `TRIES`.
+
+It names **neither a remedy nor another tool's reason** — only the ref and the count.  That makes it the closest
+thing in this register to a `WALL`, and it is still not one, because **it is not a verdict**: it reports
+exhaustion of a retry, and in CI the remedy is re-running the job.
+
+## ⑩ `check_revision_collisions` — `5 walked + 1 self-ref = 6 of 6` ✔, by five different kinds of induction
+
+- **`NODE` unset** — *this container already sat on this refusal.*  A bare run here aborts: `NODE is unset, so
+  which half to check is unknown.  Set NODE to a declared line (54, 56, 57, 59, 60, cc54) or to 'ci'.`  I took
+  that address: `NODE=ci` runs the gate to exit 0 (272 lines, no NEW collision).
+- **`NODE` undeclared** — `NODE=zz_not_a_line` aborts with *"Add it to `_PARITY_BY_NODE` with the half it
+  takes."*  **That address is an edit to the instrument's own declaration table**, while the branch itself is
+  reachable by *environment*.  **So the two kinds `r7437` separated can come apart on one site** — reachable
+  one way, addressed another — which neither `r7437` nor this column anticipated.  I took the gate's own
+  alternative (*"A node whose band is unknown must not be given one by default"*) rather than declare a fake
+  line in a shared table.
+- **Out of band** — by declaring the opposite band (`NODE=60`) over an **unpushed** commit with a bare odd id:
+  `[FAIL] 02332e70f  r7443 is out of band (EVEN only)`, `check_band()` returns 1.  Address taken: the same
+  claim renumbered to `r7444` leaves `band_violations() == []`.
+- **`quotepin` without the SHA** — by removing the SHA format string from `corpus/quotepin.py`, *another file
+  this gate reads*, so reachable by DATA: `[FAIL] 'quotepin' names a revision without its SHA … so its
+  diagnosis points at two different commits.`  Restored in the same command.
+- **A real NEW collision** — the `BASELINE` is a dict **inside the instrument**, so editing it to produce one
+  would be self-referential.  I induced it **by the tree** instead: a commit claiming `r7439` built on that
+  revision's *parent*, divergent from `main`'s own `r7439` commit, and a merge making both reachable from one
+  HEAD, run in a detached worktree:
+
+```
+    [FAIL] r7439 claimed by two commits for different work:
+           225c89498  a divergent claim on the same revision number, made for the r7441 walk
+           0e78a2ef0  orders — 60 is told its seven are false positives and ordered to teach the
+```
+
+Nothing synthetic was pushed; the objects are unreferenced.
+
+### ⛔⛔ AND MEASURING THE BAND FOUND A DEFECT: **THIS SEAT'S OWN PUSHED COMMITS ARE EXEMPT FROM THE PREVENTION HALF**
+
+`band_violations()` exempts a commit when `_pushed_by_another_line()` says another line pushed it.  That
+function compares every remote ref containing the commit against
+
+```python
+own = subprocess.run(['git', 'rev-parse', '--abbrev-ref', 'HEAD'], …)   # the LOCAL branch name
+```
+
+**This seat's standing push rule is `git push -u origin HEAD:claude/shadow-of-existence-setup-5tjf0b` from a
+local branch named otherwise** (`cc66-r7439`).  So the names never match, and the instrument answers **True** —
+*another line pushed it* — for this seat's own work:
+
+```
+  4b14429ae: _pushed_by_another_line = True
+  150436563: _pushed_by_another_line = True
+  99ef79ec9: _pushed_by_another_line = True
+```
+
+All three are this seat's commits, on this seat's branch.  **It is the `r6937` shape exactly** — *"a guard
+whose escape hatch covers its whole domain is not a narrow guard"* — arriving this time through the gap between
+a local branch name and the remote branch it pushes to.
+
+**Proposed fix, one line, NOT taken here because this gate is not this seat's to edit:** compare against the
+branch's **upstream**, `git rev-parse --abbrev-ref --symbolic-full-name @{u}`, rather than its local name.  That
+is the fact the exemption wanted — *which remote branch is mine* — instead of a name that only coincides with
+it.
+
+⌗ **And for this seat the band cannot fire for a second, independent reason**: `'cc66': None` holds no half, so
+`check_band` reports rather than checks; `NODE=ci` is `None` too, **so CI never runs the prevention half
+either.**  The prevention is live only for a seat that both holds a declared half and runs the gate itself.
+
+## THE COUNT AFTER ⑧ ⑨ ⑩
+
+**51 walked, 11 self-referential, 19 pending of 81 — 63.0 %.  16 instruments fully accounted.**
+`51 + 11 + 19 = 81`.
+
+**Left:** `ROWS.tsv : index` 7 (60's join gate) · `check_quote_pins` 12 — **last, as ordered**.

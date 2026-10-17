@@ -1,0 +1,12 @@
+  band_violations(): []
+
+    the band: this line takes EVEN revision numbers; 0 of this line's unmerged commits are out of band
+      *and 3 id is grandfathered by NAME: ['r3125', 'r3535', 'r3537'] -- committed before the band was taken and already bundled out.*
+      ⌷ ** the other half is DECLARED held.  That is a claim by the other line,
+         not a measurement made here, and it has been wrong: **
+         node 57, r3138 reply: "The band is accepted.  This tree now runs PARITY = 1, so your gate is answered rather than presumed."  ** AND node 59, r3563, CLAIMS.md: **
+"59 takes ODD, 60 takes EVEN, from r3563 forward.  59 accepts the odd half because 60's band was declared first and because 60 is the line that has been recording the collisions."  ** AND node 61, r4011: ** "61 takes over 59's ODD half from r4011 forward, 60 continuing on EVEN and holding r4020 next.  The partition is unchanged; only the name on the odd half is."  Both halves are held by a named line, so the partition is whole.
+      ⛔ *r3622..r3638 are ten consecutive ids in THIS line's half, written by
+         the other, after it accepted the odd half.  ⇒ Read the run below.*
+
+  check_band() returned 0

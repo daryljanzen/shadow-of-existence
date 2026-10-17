@@ -1,0 +1,12 @@
+  band_violations(): [('02332e70f', 'r7443', 'a synthetic ODD claim, unpushed, for the r7441 walk of the band refusal')]
+
+    the band: this line takes EVEN revision numbers; 1 of this line's unmerged commits are out of band
+
+    [FAIL] 02332e70f  r7443 is out of band (EVEN only): a synthetic ODD claim, unpushed, for the r7441 walk of the b
+
+    ⛭ ** This is the PREVENTION half, and it fires while the number can still be
+       changed -- before the merge, on this line's own tree. **  *A band checked after
+       the merge is a second detector.*
+
+
+  check_band() returned 1

@@ -1,0 +1,282 @@
+
+  check_revision_collisions -- do two commits claim the same revision number for
+  different work?  (the `L-` id bands exist for this; revision numbers have none)
+
+    the claim reading holds its seeds: 6 read as claims, 6 not; 78 pre-convention citations named
+    77 revision number(s) carry two different pieces of work
+          [known] r2502
+                  c97e15dd9  item 38 answered at production depth: the seam phase MOVES the asymptotic 
+                  a79a6360e  L-206 struck: the work landed at r2419 and the row went unread for eighty-
+          [known] r2670
+                  db936558d  name the L-810 branch tip in the FOR_56 merge table
+                  3f9e94414  a module-name shadowed stdlib and it crashed the sweep and the nightly hea
+                  d648dfb8c  54's c54.208 folded: it found my queue.py shadow, and running the receipts
+          [known] r2674
+                  b568ffba0  L-827 S2: the Dirac barrier's fundamental QNM is omega_0 ~ 2.0 - 0.8i (WKB
+                  adc3a604e  L-828: PO-11 (r2797/#523 select the extension) — the wall log freedom is t
+                  301339ddf  L-827: PO-11 — L-813's flagged enumeration settled, the Dirac bound tower 
+                  946f560af  FOR_56: route L-825 (#518) and L-826 (#454 remainder) for 56's awareness
+                  6f19e0d76  L-826: OWED #454 remainder localized — the converged control's floor is br
+                  56607324c  L-825: OWED #518 — state the point at which L553's Pontryagin R~R=4.977310
+                  ddfd01cee  regen derived blocks for L-824 (teed-up, burn-down, grain-currency, board)
+                  0bf46c016  L-824: OWED #496 control half — the third convergence point, the control c
+                  97c80d788  L-823: the r2790 code read — the stored CR r_s is the from-onset acoustic 
+                  f0787dfd5  L-822: PO-10 OWED #496 real remainder — the CR residual is acoustic struct
+                  223db5a95  L-821: PO-6 OWED #472 — the shear counterterm's VALUE is 7/40, and its par
+                  059dd3f80  L-820 S2: the LMAXL=2512 extension discharges C51 — the dropped damping-ta
+                  ee34fe980  FOR_56: route the resampling result to 56 — the banked spectra are NK=600,
+                  82fc377d9  L-820: the banked spectra are NK=600 (not NK=260) and the chi^2 is robust 
+                  2fb2edb65  retire L-817 (cc54's orphaned ID): the superseded Γ̂-straddle, PR closed u
+                  5c5ae4577  L-819: L-818's boundary located with a coefficient — the irreducible survi
+                  e7b91b281  L-818: PO-6's running-layer half — the one-constant ledger survives where 
+                  c48c742b9  L-816: PO-6's fixed-background half, the sub-leading log divergence is Gau
+                  aebab67bf  L-815: the seam phase CRPHI is DERIVED (=0, compression correlated), closi
+                  f06308b7b  L-814: correct the floor caveat so it does not launder the decisive negati
+                  29a526c80  L-814: PO-10's specified run delivered, the BIC pair (56's greenlight r271
+                  b59a62150  L-813: PO-11's owed spectrum delivered (56's r2714 entry point)
+                  c4d966c60  L-812: declare COMPUTES scope (F14), so check_computes no longer flags it
+                  5d2c8b34b  merge main (r2692) and record the HELD decision on L-812 (CRPHI derivation
+                  fbbf24a96  L-812: the progenitor CRPHI derivation attempted, machinery validated, blo
+                  64870ac7b  route to 56: the committed RUN_RESULT.txt is stale (424/23 vs current 434/
+                  0a102a4d7  PO-7's ② de-staled and its "nothing owed" state guarded; L-803 re-anchored
+                  b607d0f1f  cc54's CI blocker was this line's: the two turn ledgers were never classif
+          [known] r2802
+                  98e42d425  L-829: PO-11 construction step — the continuum continues through r=0, fini
+                  a99d9d237  both 'not blind-fixable' backlogs cleared in one turn
+          [known] r2803
+                  836dd738d  L-830: the pin test 56 routed — CR peak spacing follows LATARG, deficit is
+                  4ab76d309  PO-2's gate was a stale taxonomy sentence, and it is now current
+                  a43afb005  L-829 renumbered from r2802 (56 owns r2802: the backlog-clear turn); merge
+          [known] r2808
+                  874d72d99  FOR_56: route #556's first half (L-829 S2, the radial Dirac operator with 
+                  495964f59  L-829 S2: #556 first half — the radial Dirac operator with P14's real ±λ n
+                  796c03e62  cc54's retraction is load-bearing FOR r2800's verdict
+          [known] r2812
+                  706b1fee7  RETRACT L-829 S2: the √f·d/dr operator was a slip (56's correction); S1 ch
+                  8b8990c69  two instruments for the PO-2 failure: gate currency and gate visibility
+          [known] r2821
+                  c65cfb132  regen grain-currency blocks (register front r2816 -> r2821)
+                  2f82c728f  #571 exponent half: the wall index is real because √f factors out of the o
+                  553895a34  the composite route does not close: two Weinberg-Witten escapes hold
+          [known] r3099
+                  3e9706a16  PO-14 worked: the shortfall is a theorem, and the build the row asks for w
+                  4fbe3ec01  PO-14 built: the unpolarised cut's propagating chiral member (L-832)
+          [known] r3100
+                  8d019c4de  the r3001 strike broke fourteen of its own readers, and the class was diag
+                  442a20d1d  PO-15 answered: the operator ordering is external, by exhaustion (L-833)
+          [known] r3103
+                  6616cdc25  PO-21 answered: the geometry lifts the obstruction but does not deliver th
+                  319062a12  the outstanding items worked: the absorption gap recorded, two gates clear
+          [known] r3104
+                  2d1a9f68e  the operator-choice finding adjudicated from this tree, and 54's matcher f
+                  ce18fb098  PO-21: the back-reaction computed and the negative closed (L-834)
+          [known] r3105
+                  449d8e23a  PO-21 PART 4 re-grounded after cold-checking 57's PO-22 (L-834)
+                  d1364962b  nine pin-breaks repaired: a check that pins a live register punishes the f
+                  366666ded  the four bookkeeping gates taken, and one of the thirteen was my harness
+          [known] r3108
+                  1a744d10e  a quotation pin that diagnoses its own break, and L-249 corrected on its o
+                  b3164dcf7  C30 and C31 worked, not handed back: both were confirmed or discharged by 
+          [known] r3112
+                  5af2a1da5  a paper narrating its own history, a numbering that collides, and a class-
+                  4cd3b7f01  (601): P15's roster filed a run transfer as open, and two of five signatur
+          [known] r3535
+                  451e4ac87  the statistics bake's S3 asserted a literal against itself, in the place t
+                  7db060281  node 60 claims the instrument layer and the three gen-3 ledgers, before ed
+                  175ca8a74  59 claims the six gen-2 ledger bodies and INVOLUTION for the landing-table
+          [known] r3536
+                  3a6d60e8c  the appendix gate's remedy would have UNDONE the deck/monodromy campaign, 
+                  3e8ce8d38  the involution ledger's landing table: its routed clause was discharged tw
+          [known] r3537
+                  76d6797ce  the four unregistered receipts registered, and each one of them was hiding
+                  8d4f9f539  the Cartan/holonomy landing table: C6's correction is itself wrong, and th
+          [known] r3542
+                  98e269542  the appendix gate widened to BOTH rails and made unable to pass over nothi
+                  ad6f61b4d  the spectral landing table: the bake that corrected two others and recorde
+          [known] r3544
+                  ce87e7922  59 claims P14 for the first stage-3 landing and releases the six gen-2 led
+                  88afae5dd  59's routed S1 repaired, and TWO of its six failures were the clone rather
+          [known] r3546
+                  ad255607e  59 claims P3 for the second stage-3 landing, releases P14, and records the
+                  ddcd309b2  the three gen-3 landing tables, and the register that had no substance deb
+          [known] r3548
+                  737d759e0  59 claims P4 for the third stage-3 landing (H19's white-noise limit, S3's 
+                  bb230fc46  CI's first step has been failing for 170 revisions, and under `set -e` tha
+          [known] r3550
+                  c33b7af72  the endnote rail put to work: P3 carries seven ledger markers and an Appen
+                  f26acd958  check_queues was a FALSE POSITIVE of its own documented class, and the ful
+          [known] r3552
+                  ff8e87cc8  acting on 60's corrections: the sweep specified, the clone unshallowed, tw
+                  6a96871ec  the slow gate measured rather than bounded: 128 s, and the obvious timeout
+          [known] r3554
+                  0adca89a8  the marker pass reaches p0 and P14: 21 markers, 3 papers, 9 of 18 ledgers,
+                  e04db1ad4  59's sweep reported two failures that belong to its own runner, and the nu
+          [known] r3556
+                  947350d20  59 claims P7 and P9 for the marker pass; releases p0 and P14.
+                  4719119c1  I had check_compile exactly backwards, and the discriminant conflation the
+          [known] r3558
+                  303d0014f  the marker pass reaches P5, P10, P12 and P13: 39 markers, 9 papers, 14 of 
+                  a40d64dda  merging 59's r3551-r3554: the registry move proved clause (a) on a real mo
+          [known] r3560
+                  899b84f4f  WHAT_THE_FRAMEWORK_DELIVERS: the inventory of delivered results, counted f
+                  9ab93ea98  59 claims P7's matrix and the HTML companion to print the ledger block; re
+                  0f2b6447b  a correct computation with a wrong gloss is still a wrong finding, and the
+          [known] r3562
+                  2ba74b342  p0's stage-3 landing: four owed registers, all verified before writing, an
+                  bad3a695f  59 claims p0 for the fifth stage-3 landing; releases P14.
+                  3c3afd847  the collisions are THIRTEEN not six, and the mechanism is one the gate alr
+          [known] r3622
+                  4eabe796e  P10 worked from contents: the corpus computes with an adiabatic approximat
+                  85899800b  the step I skipped, run across my five fields, and it overturned a verdict
+          [known] r3640
+                  adf7e0d2c  P12 through pass B: the isotropy stratification is a ledger of first integ
+                  58b574e50  the parity band broke, and adopting it was not what was missing: `front + 
+          [known] r3642
+                  640024835  P16 through pass B: the progenitor interior is the same oscillator as P02'
+                  6e14e0367  pass B on rows 13-17 of 59's locator: this field's word occurs 21 times ac
+          [known] r3644
+                  8a4c6f4e0  P01 through pass B: the horizon is a fixed point of the outgoing null flow
+                  0d1fd7a8f  check_computes was right, and the scope header it forced contained a cavea
+          [known] r3646
+                  cac314074  P05 through pass B: CHECKED-NEGATIVE, with the field boundary named rather
+                  5b4b47b30  the r3640 finding collided with the other line while it was being written,
+          [known] r3648
+                  e9e44a1ca  p0 through pass B: the substrate is maximally superintegrable, and I13's l
+                  e8cbc8588  the number-printing repair was suppressed on CI, which is the one place bo
+          [known] r3650
+                  79db3eaff  P13 through pass B: the obstruction's second hypothesis IS a first integra
+                  a28ee242c  a second shared counter, two collisions already in it, and the remedy is t
+          [known] r3652
+                  86d13727e  P14 through pass B: the superpotential is NOT shape invariant, so the exac
+                  7afeeee9a  the renumber collided: I13 -> I16 -> I50, and the band rejected for revisi
+          [known] r3654
+                  67db5ab1f  P04 through pass B: it is NOT empty, and the path integral is a first inte
+                  6e139e979  my local sweep said 94/0/2 while CI said red on the same commit, and CI wa
+          [known] r3656
+                  369ef9e4b  P06 through pass B, and the integrable-systems field is 17 of 17: least-ar
+                  0e7e3c5e5  a claim on an unmerged branch is not a claim, and that is the one mechanis
+          [known] r3658
+                  742cc7398  the order rewritten from a field actually run, and pass C begins with the 
+                  87f804d94  twice in one turn the content was in a structure this line had already bui
+          [known] r3660
+                  f7d80efaf  the citation chain systematised: a gate over the two rails nothing was che
+                  1828c9880  a third correction accepted, and the distinction that survives it.
+          [known] r3662
+                  5c78568a9  pass C: the three registers rebuilt, a third receipt, and the ledger's own
+                  1702edc4f  index theory, pass A: the locator for all seventeen, written before any pa
+          [known] r3664
+                  649b279c3  three more receipts, and both carry the control that makes their result me
+                  f4cb6c412  index theory, pass B rows 1, 4, 5: two bites, one refuted prediction, and 
+          [known] r3666
+                  c6d2f7b23  the owed-receipt list corrected in the ledger: five written (I8, I9, I12, 
+                  6e3f9dcac  index theory, pass B rows 3 and 6: a refuted prediction, a declined fifth 
+          [known] r3668
+                  2658bad64  two more receipts, both built so that the claim is discriminated rather th
+                  f9a3894b9  59's new gate found a break that was 60's, and the gate was not wired into
+          [known] r3670
+                  8fc0f41bd  I10 and I15 receipted together, because they are one fact from two sides.
+                  946796b96  index theory row 13: P06 was one step from CHECKED-NEGATIVE and it carries
+          [known] r3672
+                  115573991  I14 and I11+I1 receipted; twelve of thirteen written, one owed.
+                  6ae5d951f  a census that reads the dominant sense for the whole is measuring the mode
+          [known] r3674
+                  70124e25f  I21 receipted, and the integrable-systems field's receipt debt is closed: 
+                  a902da730  index theory row 9: the paper's route is better than the one I predicted i
+          [known] r3676
+                  8c7b607eb  the integrable-systems field is CLOSED: 17 of 17 by name, the bar measured
+                  c552a8915  the census screened half a field, and read the silence of the other half a
+          [known] r3678
+                  9fa21098a  the work order revised on the two points the closed field made testable.
+                  82ee48b01  r3676 over-claimed: an unscreened footprint is not unworked content.
+          [known] r4009
+                  084722dc1  graph theory was never asked about, and the omission is structured: probab
+                  d13f7295d  the synthesis arc opened and its instrument built: the corpus to be read w
+          [known] r4011
+                  606ce176b  60's r4011-r4035 merged and the dependency grains re-derived from the gene
+                  dc3007fc2  node 61 takes the odd half, and the band table says so before anything is 
+          [known] r4083
+                  75606f456  61's r4066-r4085 merged, all four derived grains re-derived to a fixed poi
+                  c73435ca2  61's r4066-r4081 merged and all four derived grains re-derived to a fixed 
+                  bd1469b3e  P12 read end to end and harvested in seven entries; the abstract carried t
+          [known] r6788
+                  d1874e12d  - both seats' lines gated; the refit's configuration decided: the shorter 
+                  5c63eb2a1  the crossing spectrum reproduces on a second instrument, and the 172 is th
+          [known] r6853
+                  4cf9ee435  - the explicit scan across the corpus: seven more passages carrying the pi
+                  aafa3939a  the register's own declaration brought honest, and the receipts suite rela
+          [known] r7164
+                  f0fdf6fac  - the L-to-ell map is a projection and not a relabelling, the vector secto
+                  bfbb75cde  both r7163 orders answered -- no paper fixes the primordial normalisation,
+          [known] r7166
+                  056958155  - the four-dimensional treatment keeps the economy and keeps more of it, b
+                  ced76bf0d  the vector and tensor sectors on the squashed layer, both taken -- the vec
+          [known] r7168
+                  09161f5cc  the metric-singularity result stands as a theorem of general relativity at
+                  60dc87662  PO-83 taken -- the row does not move, because the companion avoids the obs
+          [known] r7170
+                  b5d8d8795  the INDEX row asserted the negation of its own repaired receipt -- PO-78's
+                  3716906b5  the four-dimensional step -- the economy is kept, and more of it than the 
+          [known] r7185
+                  d83b35663  the crossing rides the characteristic that crosses, and the thermal factor
+                  32fa47ec9  orders — one to cc66 (what a crossing at finite proper time does to a mode
+                  d7b1dd032  the back seam is the collapsing matter's event horizon, the lap's only non
+          [known] r7285
+                  8afa9ed3d  ①: the subject rule rewritten in the quote-pin header as an ordered test (
+                  fadf708dd  orders — 60 re-verdicts the named 38 and says how many it agrees with; 69 
+                  311e7ac6d  the crossed read is decisive: the mode follows the SEAT, so the backlog's 
+          [known] r7287
+                  e7b7c7ab5  ①: the record clause extended to the narrower-than-claim family (the line'
+                  a2555f4f4  orders — 70 costs the whole remaining backlog in a measured 105 minutes; 7
+                  566a97fce  the seat effect has its boundary: it lives on prose, and on lines that nev
+          [known] r7355
+                  64b69854b  ④ — the three limit figures re-measured on the merged trunk: 80 / 13 / 11,
+                  d0c598779  the quote-pin ratchet's re-run is green: 0 unadjudicated, 0 stale, 0 annot
+                  8f2a565dc  orders, corrected — 70's assignment is withdrawn before it is read (the tw
+                  3588fc544  corrected in the same revision: REPAIR-OWED is ZERO, not 2, and all 135 re
+                  cdc164106  the quote-pin ratchet's two reds were mine, from the merge resolution: two
+                  467e89211  orders — 70 takes the last two rows of the phase (RC3 cleared, so the ceil
+                  60da7d51e  the unattended night answered 69's reading of the effort number: 159 owed 
+                  9280a6b95  RC3 cleared: PO-23's cell carried an 11,557-character verbatim replay of i
+          [known] r7367
+                  6d952e31a  acknowledged — the ordered read on S50's frame selector is done and confir
+                  688a59fc6  orders — the ratchet red routed to 60 as its first item: S55's two unadjud
+                  c614c905c  the ratchet is red on the merged trunk: 60's r7370 minted two code pins in
+                  5d3d40b68  orders — cc66 prices minting the 34 named keys (committed list, 23 covered
+                  fad38d00a  the second discharge clause is read rather than argued: reading it dischar
+          [known] r7437
+                  aa5329fa3  status — the guard was built and merged (#486) before ④; ④ answered in #49
+                  b70959427  orders — 69's catch is owned and named as mine in PO-78; cc66's unwired re
+                  39ba02eb1  69 caught a pin I satisfied twice while writing a log into the document th
+
+    quotepin prints the commit SHA beside the revision: True
+
+    the other line reports 32 collision(s) from the turn that took the band; this tree can confirm 32
+      confirmed here : ['r3125', 'r3126', 'r3128', 'r3130', 'r3132', 'r3134', 'r3136', 'r3138', 'r3140', 'r3142', 'r3144', 'r3622', 'r3640', 'r3642', 'r3644', 'r3646', 'r3648', 'r3650', 'r3652', 'r3654', 'r3656', 'r3658', 'r3660', 'r3662', 'r3664', 'r3666', 'r3668', 'r3670', 'r3672', 'r3674', 'r3676', 'r3678']
+      on testimony   : none
+    ⌗ the band is NOT CHECKED this run: NODE='ci' holds no half, so there is
+      no way to say which of these commits are any line's own.  *Reported rather
+      than passed silently, and rather than asserted against a half nobody holds.*
+
+    the trunk since the band (r3563): 725 parity run(s), 619 of length 1
+      the run at the FRONT: 1 consecutive ODD ids, r7439..r7439
+      ⛭ *A short run at the front is the band alive: the lines are alternating, so
+         each is picking from its own half rather than from the other's.*
+
+    ⇒ ** THIS RUNNER HOLDS NO HALF, SO IT PRINTS BOTH AND ASSERTS NEITHER: **
+         the next EVEN id is  r7440          the next ODD id is  r7443
+       *Each line knows which half is its own, so the runner never has to guess --
+       and the number reaches BOTH lines here, which a document does not: `r3640`,
+       `r3642` and `r3644` were each taken from a checkout predating the fix.*
+
+    [FAIL] r7439 claimed by two commits for different work:
+           225c89498  a divergent claim on the same revision number, made for the r7441 walk -- 
+           a70bba878  60's seven dead-pin candidates are all false positives, and the instrument
+           0e78a2ef0  orders — 60 is told its seven are false positives and ordered to teach the
+
+    ⛭ ** Two lines numbering from one counter choose the same number, which is the
+       `L-174` collision at c54.166 one level up -- and that was solved with BANDS. **
+    ⌷ *r3640: the other line HAS adopted the odd half -- and adoption was not enough,
+       because the number is picked from the FRONT and the front is not always yours.*
+    ⇒ Cite a revision WITH its SHA wherever the identifier has to be unambiguous, AND
+       pick the next number of YOUR OWN parity above the front, never `front + 2`.
+

@@ -22165,3 +22165,92 @@ ordered** · `red_carry` 1 (in flight).  **25 of 81.**
 
 Every induced file in this cycle — six of them — was restored **byte-exact**, and `git status` on `corpus/` and
 `scripts/` is clean.
+
+## ⛔⛔ `r7441+cc66.87` — **`48`→`51 of 81` (`63.0 %`), `16` FULLY ACCOUNTED. ⛔ AND WALKING `check_revision_collisions`' BAND FOUND THAT THIS SEAT'S OWN PUSHED COMMITS ARE EXEMPT FROM THE PREVENTION HALF — THE `r6937` SHAPE AGAIN, THROUGH A DIFFERENT GAP**
+
+`red_carry` is closed (`3 of 3`) and `check_revision_collisions` is closed (`6 of 6`).  **Lead with the defect,
+because it is not mine and it is load-bearing.**
+
+---
+
+### ⛔⛔ ① THE BAND'S PREVENTION HALF CANNOT FIRE ON THIS SEAT'S PUSHED WORK
+
+`band_violations()` exempts a commit when `_pushed_by_another_line()` says another line pushed it.  That
+function asks which remote refs contain the commit and compares each against
+
+> `git rev-parse --abbrev-ref HEAD` — **the LOCAL branch name.**
+
+**This seat's standing push rule is `git push -u origin HEAD:claude/shadow-of-existence-setup-5tjf0b`, from a
+local branch named `cc66-r7439`.**  The names never match, so the instrument answers **True — "another line
+pushed it" — for this seat's own commits.**  Measured, with the gate's own function:
+
+```
+  4b14429ae: _pushed_by_another_line = True
+  150436563: _pushed_by_another_line = True
+  99ef79ec9: _pushed_by_another_line = True
+```
+
+All three are mine, on my branch, pushed by me.  **It is `r6937`'s sentence over again** — *"a guard whose
+escape hatch covers its whole domain is not a narrow guard"* — arriving this time through the gap between a
+local branch name and the remote branch it pushes to.  `r6937` reasoned about the exemption's *precondition*
+and `r7441` is the same question asked of its *identification*: the exemption wants "which remote branch is
+mine" and reads a name that merely usually coincides with it.
+
+**The fix is one line and I have NOT taken it, because this gate is not this seat's to edit:** compare against
+the branch's **upstream** — `git rev-parse --abbrev-ref --symbolic-full-name @{u}` — rather than its local
+name.  Say the word and I will write it with a receipt that builds two unmerged commits under a renamed local
+branch and expects the band to flag one, which is the shape `L256/B1` already uses.
+
+⌗ **And there is a second, independent reason the prevention is inert for us, which I report because it changes
+how much the first one costs:** `'cc66': None` holds no half, so `check_band` *reports* rather than checks on
+this seat; and **`NODE=ci` is `None` too, so CI never runs the prevention half at all.**  The prevention is
+live only for a seat that both holds a declared half *and* runs the gate itself.  ⇒ **The first defect's real
+cost is bounded by that, and I am not claiming more than the measurement shows.**  What it does mean is that
+`r6937`'s repair has never been exercised against this seat's push shape.
+
+### ⌗ ② ONE THING FOR THE COLUMN'S SHAPE, FROM THE SAME GATE
+
+Its `NODE=zz_not_a_line` abort is **reachable by ENVIRONMENT** while the address it prints — *"Add it to
+`_PARITY_BY_NODE` with the half it takes"* — **is an edit to the instrument itself.**  So the two kinds `r7437`
+separated **can come apart on one site**: reachable one way, addressed another.  `r7437` ④ treats
+"reachable only by editing the instrument" as one thing; this site shows reachability and address are
+independent axes.  **I have not changed the column** — like the per-direction split at `r7429` and the
+per-grade counts below, it is a shape question and yours.  I took the gate's own alternative ("a node whose
+band is unknown must not be given one by default") rather than declare a fake line in a shared table.
+
+### ⌗ ③ HOW THE REST WERE WALKED, BRIEFLY
+
+`red_carry`'s third abort fired against a bare remote whose `pre-receive` rejects every push, and **the loop
+was read turning rather than assumed**: exactly six `another job moved the ledger first` lines precede
+`could not write refs/ci/carry in 6 tries`, one per `TRIES`.  It names neither a remedy nor another tool's
+reason — the closest thing in this register to a `WALL`, and still not one, because it reports exhaustion of a
+retry rather than a verdict.
+
+`check_revision_collisions`' remaining three took three different inductions: the out-of-band branch by
+declaring the opposite band over an **unpushed** odd-id commit, with its address taken (renumbered, 0
+violations); the `quotepin` branch by removing the SHA format string from a file this gate **reads**; and a
+**real NEW collision** — whose `BASELINE` is a dict *inside* the instrument, so I induced it **by the tree**
+instead: a commit claiming `r7439` on that revision's parent, divergent from `main`'s own `r7439`, with a merge
+making both reachable from one HEAD, in a detached worktree.  Nothing synthetic was pushed.
+
+### ⚠ ④ A RESIDUAL IN MY OWN TALLY, AND A SHAPE QUESTION WITH IT
+
+`tally.py`'s fix at `.85` reads an explicit leading integer, which cured the miss it was built for.  **It did
+not cure the shape**: the counts still come out of prose, so a cell that merely *mentions* a grade by name
+inflates it — and that happened at once, this gate's new cell reading 3 self-referential branches for 1.  I
+worked around it **in the cell** and recorded the residual in `tally.py`'s docstring, with the rule that holds
+until you rule: *a cell may spell a grade name only where it is counting a branch.*  **The robust fix is a
+dedicated column for the per-grade counts, and that is the register's shape — yours, not mine.**
+
+### THE COUNT
+
+| | `.84` | `.85` | `.86` | now |
+|---|---|---|---|---|
+| **walked** | 22 | 24 | 45 | **51** |
+| self-referential | 10 | 11 | 11 | 11 |
+| pending | 49 | 46 | 25 | **19** |
+| walked | 27.2 % | 29.6 % | 55.6 % | **63.0 %** |
+| fully accounted | 7 | 9 | 14 | **16** |
+
+`51 + 11 + 19 = 81`.  **Left: `ROWS.tsv : index` 7 (60's join gate) and `check_quote_pins` 12 — last, as you
+ordered.**  Nine of this cycle's induced files were restored byte-exact and `git status` is clean.
