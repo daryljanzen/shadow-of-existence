@@ -519,20 +519,6 @@
     ],
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/38817061732",
     "since": "6bfc22d022a7a1ceb418e4ab213a26e21acd59ee"
-   },
-   "receipts/L260_half_a_partition/H1_half_a_partition_removes_nothing_and_the_gate_said_otherwise_while_eight_landed.py": {
-    "gates": [
-     "\u24f8"
-    ],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39003745213",
-    "since": "d1ddf4e83e41ed9802ebd69a08590a0286c9cd78"
-   },
-   "receipts/L_probability/S39_the_routed_collision_item_is_an_answer_read_as_a_claim_and_the_prevention_was_already_in_use.py": {
-    "gates": [
-     "\u24b6\u2460"
-    ],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39003745213",
-    "since": "d1ddf4e83e41ed9802ebd69a08590a0286c9cd78"
    }
   },
   "tolerance": {
