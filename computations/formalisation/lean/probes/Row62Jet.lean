@@ -534,23 +534,23 @@ theorem cGl_4 (hd0 : ∀ a i, F.D a (h i) = 0) : ∀ a b c, Gl F h 4 a b c = cgl
 
 theorem cGam_0 (hd0 : ∀ a i, F.D a (h i) = 0) : ∀ e a b, Gam F h 0 e a b = cgamT0 h e a b := by
   intro e a b; fin_cases e <;> fin_cases a <;> fin_cases b <;>
-    simp [Gam, Finset.sum_range_succ, Gik_0, Gik_1, Gik_2, Gik_3, cGl_0 F h hd0, cGl_1 F h hd0, cGl_2 F h hd0, cGl_3 F h hd0, cGl_4 F h hd0, gikT0, cglT0, cgamT0, Fin.sum_univ_three] <;> ring
+    simp [Gam, Finset.sum_range_succ, Gik_0, Gik_1, Gik_2, Gik_3, Gik_4, cGl_0 F h hd0, cGl_1 F h hd0, cGl_2 F h hd0, cGl_3 F h hd0, cGl_4 F h hd0, gikT0, cglT0, cgamT0, Fin.sum_univ_three] <;> ring
 
 theorem cGam_1 (hd0 : ∀ a i, F.D a (h i) = 0) : ∀ e a b, Gam F h 1 e a b = cgamT1 h e a b := by
   intro e a b; fin_cases e <;> fin_cases a <;> fin_cases b <;>
-    simp [Gam, Finset.sum_range_succ, Gik_0, Gik_1, Gik_2, Gik_3, cGl_0 F h hd0, cGl_1 F h hd0, cGl_2 F h hd0, cGl_3 F h hd0, cGl_4 F h hd0, gikT0, gikT1, cglT0, cglT1, cgamT1, Fin.sum_univ_three] <;> ring
+    simp [Gam, Finset.sum_range_succ, Gik_0, Gik_1, Gik_2, Gik_3, Gik_4, cGl_0 F h hd0, cGl_1 F h hd0, cGl_2 F h hd0, cGl_3 F h hd0, cGl_4 F h hd0, gikT0, gikT1, cglT0, cglT1, cgamT1, Fin.sum_univ_three] <;> ring
 
 theorem cGam_2 (hd0 : ∀ a i, F.D a (h i) = 0) : ∀ e a b, Gam F h 2 e a b = cgamT2 h e a b := by
   intro e a b; fin_cases e <;> fin_cases a <;> fin_cases b <;>
-    simp [Gam, Finset.sum_range_succ, Gik_0, Gik_1, Gik_2, Gik_3, cGl_0 F h hd0, cGl_1 F h hd0, cGl_2 F h hd0, cGl_3 F h hd0, cGl_4 F h hd0, gikT0, gikT1, gikT2, cglT0, cglT1, cglT2, cgamT2, Fin.sum_univ_three] <;> ring
+    simp [Gam, Finset.sum_range_succ, Gik_0, Gik_1, Gik_2, Gik_3, Gik_4, cGl_0 F h hd0, cGl_1 F h hd0, cGl_2 F h hd0, cGl_3 F h hd0, cGl_4 F h hd0, gikT0, gikT1, gikT2, cglT0, cglT1, cglT2, cgamT2, Fin.sum_univ_three] <;> ring
 
 theorem cGam_3 (hd0 : ∀ a i, F.D a (h i) = 0) : ∀ e a b, Gam F h 3 e a b = cgamT3 h e a b := by
   intro e a b; fin_cases e <;> fin_cases a <;> fin_cases b <;>
-    simp [Gam, Finset.sum_range_succ, Gik_0, Gik_1, Gik_2, Gik_3, cGl_0 F h hd0, cGl_1 F h hd0, cGl_2 F h hd0, cGl_3 F h hd0, cGl_4 F h hd0, gikT0, gikT1, gikT2, gikT3, cglT0, cglT1, cglT2, cglT3, cgamT3, Fin.sum_univ_three] <;> ring
+    simp [Gam, Finset.sum_range_succ, Gik_0, Gik_1, Gik_2, Gik_3, Gik_4, cGl_0 F h hd0, cGl_1 F h hd0, cGl_2 F h hd0, cGl_3 F h hd0, cGl_4 F h hd0, gikT0, gikT1, gikT2, gikT3, cglT0, cglT1, cglT2, cglT3, cgamT3, Fin.sum_univ_three] <;> ring
 
 theorem cGam_4 (hd0 : ∀ a i, F.D a (h i) = 0) : ∀ e a b, Gam F h 4 e a b = cgamT4 h e a b := by
   intro e a b; fin_cases e <;> fin_cases a <;> fin_cases b <;>
-    simp [Gam, Finset.sum_range_succ, Gik_0, Gik_1, Gik_2, Gik_3, cGl_0 F h hd0, cGl_1 F h hd0, cGl_2 F h hd0, cGl_3 F h hd0, cGl_4 F h hd0, gikT0, gikT1, gikT2, gikT3, gikT4, cglT0, cglT1, cglT2, cglT3, cglT4, cgamT4, Fin.sum_univ_three] <;> ring
+    simp [Gam, Finset.sum_range_succ, Gik_0, Gik_1, Gik_2, Gik_3, Gik_4, cGl_0 F h hd0, cGl_1 F h hd0, cGl_2 F h hd0, cGl_3 F h hd0, cGl_4 F h hd0, gikT0, gikT1, gikT2, gikT3, gikT4, cglT0, cglT1, cglT2, cglT3, cglT4, cgamT4, Fin.sum_univ_three] <;> ring
 
 theorem cRic_0 (hd0 : ∀ a i, F.D a (h i) = 0) : ∀ b c, Ric F h 0 b c = cricT0 h b c := by
   intro b c; fin_cases b <;> fin_cases c <;>
@@ -579,7 +579,7 @@ theorem frame_constant_closed_form (hd0 : ∀ a i, F.D a (h i) = 0) :
     Scal F h 0 = 6 ∧ Scal F h 1 = 0 ∧ Scal F h 2 = -2 * (Hm h ^ 2).trace ∧
       Scal F h 3 = -(10 / 3) * (Hm h ^ 3).trace ∧ Scal F h 4 = -(7 / 12) * ((Hm h ^ 2).trace) ^ 2 := by
   refine ⟨?_, ?_, ?_, ?_, ?_⟩ <;>
-    simp [Scal, Finset.sum_range_succ, Gik_0, Gik_1, Gik_2, Gik_3, cRic_0 F h hd0, cRic_1 F h hd0, cRic_2 F h hd0, cRic_3 F h hd0, cRic_4 F h hd0, gikT0, cricT0, gikT1, cricT1, gikT2, cricT2, gikT3, cricT3, gikT4, cricT4, Hm, pow_succ, Matrix.trace, Fin.sum_univ_three, Matrix.mul_apply] <;> ring
+    simp [Scal, Finset.sum_range_succ, Gik_0, Gik_1, Gik_2, Gik_3, Gik_4, cRic_0 F h hd0, cRic_1 F h hd0, cRic_2 F h hd0, cRic_3 F h hd0, cRic_4 F h hd0, gikT0, cricT0, gikT1, cricT1, gikT2, cricT2, gikT3, cricT3, gikT4, cricT4, Hm, pow_succ, Matrix.trace, Fin.sum_univ_three, Matrix.mul_apply] <;> ring
 
 
 end R62Jet
