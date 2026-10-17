@@ -496,20 +496,29 @@ def do_record(root, which, path, outcome, evidence, remote):
         for r, o, n in relabelled:
             print(f'    {_relabel_tag(o, n)}: {r}  -- {o if o is not None else "unrecorded"} -> {n}',
                   file=sys.stderr)
+        # ⛭ r7441+70 (measured on the split's own live run): ** THE WRITE COMES BEFORE THE HISTORY READ. **
+        #   *The PO-68 read below costs ~10 s a receipt (40 receipts: 395 s here), and it used to run BEFORE the
+        #   ledger write -- so a record step killed by its job's limit while reading history wrote NOTHING, not
+        #   even `unmeasured`: the quiet failure r7432 and r7441 exist to remove, one step later.  Measured: the
+        #   split's compare job, 305 carried, killed at its limit with the write never reached.*  ⇒ Write first;
+        #   the history is a report about the write and is printed after it.  No verdict changes.
+        changed = bool(added or cleared or removed or relabelled)
+        ev = events(root) if (added or kept) else []   # read BEFORE the write (12 s), so the report is unchanged
+        if changed:
+            msg = (f'{which} @ {branch} {sha[:10]}: +{len(added)} -{len(cleared)} ={len(kept)}'
+                   + (f' unregistered {len(removed)}' if removed else '')
+                   + (f' relabelled {len(relabelled)}' if relabelled else '') + f'\n\n{run}\n'
+                   + ''.join(f'\n{t} {r}' for t, xs in (('+', added), ('-', cleared), ('x', removed)) for r in xs)
+                   + ''.join(f'\n~ {r} {o} -> {n}' for r, o, n in relabelled))
+            if not write(root, ledger, tip, msg, remote):
+                print('  red_carry: another job moved the ledger first -- re-reading and re-applying',
+                      file=sys.stderr)
+                continue
         if added or kept:
             print(f'  ⌗ PO-68: the ledger\'s history for what is red here, read at the run:', file=sys.stderr)
-            print_history([h for h in history_lines(root, events(root), set(added) | set(kept))
+            print_history([h for h in history_lines(root, ev, set(added) | set(kept))
                            if h['which'] == which], stream=sys.stderr, indent='    ')
-        if not (added or cleared or removed or relabelled):
-            return 0
-        msg = (f'{which} @ {branch} {sha[:10]}: +{len(added)} -{len(cleared)} ={len(kept)}'
-               + (f' unregistered {len(removed)}' if removed else '')
-               + (f' relabelled {len(relabelled)}' if relabelled else '') + f'\n\n{run}\n'
-               + ''.join(f'\n{t} {r}' for t, xs in (('+', added), ('-', cleared), ('x', removed)) for r in xs)
-               + ''.join(f'\n~ {r} {o} -> {n}' for r, o, n in relabelled))
-        if write(root, ledger, tip, msg, remote):
-            return 0
-        print('  red_carry: another job moved the ledger first -- re-reading and re-applying', file=sys.stderr)
+        return 0
     raise SystemExit(f'red_carry: could not write {REF} in {TRIES} tries')
 
 
