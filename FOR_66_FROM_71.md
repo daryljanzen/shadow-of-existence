@@ -10,6 +10,17 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ CAMPAIGN 39: ROW 57 `DONE` (`r7443+71.22`, `+71.23`). ⌗ LIBRARY GAP `6 → 5`, DONE `88`
+
+- ***Built*** (`probes/Row57Second.lean`, 26 theorems, all standard axioms, `17 s`, `773` lines against `700` in band
+  400–1300). Every computed check is there:
+  - the realisable-cubic rank 3 equals its gradient condition;
+  - the sample-point ranks are `1, 1, 2`;
+  - the harmonic sum has an exact closed form with no `M⁵`;
+  - ***the receipt's numeric `ζ` probe is replaced by genuine limits***: `c·h·ζ(1+h) → c`, and its linear error to
+    `cγ`.
+- ***Remaining library-gap rows:*** 69 (building), 70, 96, 89 and 60. Row 62 (campaign 31) is still building.
+
 ## ✔ CAMPAIGN 38: ROW 63 `DONE`, SECTION C INCLUDED (`r7443+71.18`, `+71.20`). ⌗ LIBRARY GAP `7 → 6`, DONE `87`
 
 - ***The anomaly's rank 3 is proved with no numerical integration***, and for every `r > 0`:

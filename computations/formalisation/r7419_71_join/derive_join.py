@@ -73,6 +73,8 @@ MANUAL = {
          'r7443_71_campaign36/PROBE_RUN_A.txt; Row68Overlap.lean #print axioms list (r7443+71.21: one-word names the cell selector skips)'),
     73: (['misner', 'unimodular', 'R3_round', 'R3_milnor', 'taylor', 'shapes', 'calibration', 'kinetic_linear', 'kinetic_exponential', 'unit_jacobian', 'quartic_vev', 'cubic_three_quanta', 'one_quantum_cancels', 'cubic_shift', 'fock_receipt', 'normalisation', 'total_shift', 'at_level_three', 'threshold', 'density_a6', 'linear_solves', 'rank_two', 'dmu_residues', 'dovmu_residues', 'faulhaber', 'log_coeff', 'residue_product'],
          'r7443_71_campaign37/PROBE_RUN_A.txt; Row73Vertex.lean #print axioms list (r7443+71.21: one-word names the cell selector skips)'),
+    57: (['rank_eq_of_factor', 'Exp3', 'Exp3', 'turnover_unique', 'eps_size', 'inv_exp', 'source_moves', 'gradient_six', 'gradient_eight', 'realizable_cubics', 'dK_split', 'sector_orders', 'P_closed', 'ranks_by_order', 'second_direction', 'L_coeff', 'harmonic_closed', 'log_coeff', 'no_fourth_convention', 'zeta_face', 'trace_face', 'curvature_face', 'control_weight', 'faces_together', 'two_halves', 'vertex_scaled'],
+         'r7443_71_campaign39/PROBE_RUN_A.txt; Row57Second.lean #print axioms list'),
     63: (['A1_cosh', 'A2_variance', 'A2_const', 'A2_sign', 'A2_sample', 'A3_radiation', 'A3_flat', 'B1_bare', 'B2_trace', 'B3_R', 'B3_slope', 'B3_iff', 'rank_one_of_const', 'moment_det_neg', 'C_controls', 'C_tower', 'C_receipt', 'adot_sq', 'Rtow_eq', 'zeta_rule_eq', 'Bj_zero', 'B3_zero', 'zeta_free_tower', 'zeta_protected', 'zeta_odd', 'series_inputs', 'rule_is_limit'],
          'r7443_71_campaign38/PROBE_RUN_A.txt; Row63Anomaly.lean #print axioms list (r7443+71.21: one-word names the cell selector skips)'),
 }
