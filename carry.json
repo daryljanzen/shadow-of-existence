@@ -3499,5 +3499,14 @@
     "unmeasured": true
    }
   }
+ },
+ "main": {
+  "suite": {
+   "receipts/L_probability/S47_the_cheap_tail_closes_whole_and_nine_of_its_fourteen_rows_needed_an_instrument_or_a_normalised_reader_rather_than_a_widening.py": {
+    "gates": [],
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39467895470",
+    "since": "1780ed9daa69e62a7d476e033144225367dcdcbe"
+   }
+  }
  }
 }
