@@ -1,0 +1,57 @@
+==============================================================================
+r7456 -- PO-78's COUNTS, DERIVED RATHER THAN READ   (answers r7453 (4))
+==============================================================================
+  THE_REGISTER.md row  790746 chars | THE_FRONTIER.md row  459980 chars
+
+-- EXCLUDED, printed so the exclusion is checkable (0)
+   none
+
+==============================================================================
+Ⓐ  THE SERIES, EACH WITH ITS OWN WORDING AND ITS LATEST-STAMPED STATEMENT
+==============================================================================
+
+  MEMBER (global running total)
+    47 site(s) | 29 distinct value(s): [17, 20, 21, 23, 24, 25, 26, 27, 29, 30, 31, 32, 33, 34, 35, 36, 38, 40, 42, 43, 44, 45, 46, 47, 48, 50, 52, 57, 91]
+    ** LATEST-STAMPED: 91 at r7425 ** ...'s hold at 91 as precedent; read at the row, the precedent says “NINETY-ONE blindness members, HELD at 91 for TWELVE rev...
+
+  FAMILY (global running total)
+    4 site(s) | 4 distinct value(s): [22, 23, 24, 25]
+    ** LATEST-STAMPED: 25 at r7439 ** ...th readings survive. ⛭ SUPERSEDED r7439 --- kept because this file is append-forward. ⇒ ⛭⛭ AND THE TWENTY-FIFTH FAMILY I...
+
+  FACE (ordinal WITHIN a member, no global total)
+    12 site(s) | 6 distinct value(s): [2, 3, 4, 5, 6, 7]
+    ** EVERY SITE IS INDEXED INSIDE A MEMBER.  parents: {83: 2, 86: 3, 88: 1, 90: 2, 91: 4} **
+    ⇒ so this series HAS NO GLOBAL TOTAL and cannot be the same count as
+      the member series, which is a global one.
+    ** LATEST-STAMPED: 3 at r7341 ** ...AND A SEAT WORKING LOCALLY IS INDISTINGUISHABLE ON THAT EVIDENCE FROM ONE THAT HAS STOPPED --- member 91's third face, t...
+
+==============================================================================
+Ⓑ  THE MEMBER SERIES IS A TIME SERIES WRITTEN INLINE, WHICH IS THE HAZARD
+==============================================================================
+  r7127=17  r7177=20  r7179=21  r7181=23  r7183=24  r7185=25  r7189=29  r7189=30  r7189=31  r7189=32  r7189=47  r7191=25  r7191=26  r7191=27  r7204=38  r7211=33  r7221=34  r7223=35  r7224=33  r7225=36  r7229=40  r7229=42  r7242=43  r7244=44  r7247=45  r7249=46  r7251=48  r7255=50  r7255=52  r7257=57  r7319=91  r7329=91  r7331=91  r7333=91  r7335=91  r7339=91  r7341=91  r7345=91  r7351=91  r7353=91  r7367=91  r7425=91
+
+  ** 29 distinct values of ONE field stand in the row as live text. **
+  Nothing in the text marks which is current except its POSITION.
+
+==============================================================================
+Ⓒ  THE HOLD'S OWN CLOCK, SELF-STATED (answers (4) iii)
+==============================================================================
+  r7339  n=3  ...cannot produce at all. cc66's registration could produce it and did. The family HOLDS at 91 for a third revision. ⌗ And ...
+  r7341  n=4  ...d of an intention. 86 remains the family's most recurrent member and the family HOLDS at 91 for a fourth revision. ⛔ AND...
+  r7341  -    ...and naming a member would add a label where the remedy is standard. The family stays at 91. ⛭⛭ RULING ⒜, THE ADJUDICATIO...
+  r7341  n=6  ...n the same words it was charged in at r7321 and against me at r7341. The family HOLDS at 91 for a sixth revision. ⌈ ⛔ AN...
+  r7345  n=7  ...CHECK FIRST, because a read that cannot fail returns precisely that. The family HOLDS at 91 for a seventh revision. ⛔ AN...
+  r7351  n=10 ...e names the pattern as a member of its own rather than a face of 91. The family holds at 91 for a tenth revision, and it...
+  r7351  n=11 ...ring cause on the third instance is the family being used rather than grown; it holds at 91 for an eleventh revision. ✔ ...
+  r7353  n=9  ...dy have; duplicating another seat's finished work costs the morning. The family holds at 91 for a ninth revision. ⛭⛭ AND...
+
+  the self-count sequence IN TEXT ORDER: [3, 4, 5, 6, 7, 9, 10, 11]
+  monotone in text order: YES
+  the same sequence keyed by NEAREST PRECEDING STAMP: [5, 3, 4, 6, 7, 10, 11, 9]
+  ⌘ the stamp-keyed order is NOT the row's order.  A block's prose cites other
+    revisions, so the nearest preceding stamp is as often a CITATION as a date --
+    which is this row's own newest member, in the stamper.  Text position is used.
+
+  ** THE ROW'S OWN LATEST SELF-COUNT, IN ITS OWN ORDER: held for 11 revision(s), in a block that cites r7351. **
+
+price 0.3s
