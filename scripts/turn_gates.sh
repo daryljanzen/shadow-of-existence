@@ -28,8 +28,20 @@
 # asked, never a question answered; the three below are excluded for MEASURED cost or for a trigger,
 # and each names the instrument that does ask it.
 #
-# Usage:  bash scripts/turn_gates.sh            # the turn batch
+# Usage:  bash scripts/turn_gates.sh            # LEAN: the turn batch, the push asks the heavy gates (default)
+#         bash scripts/turn_gates.sh --full     # the whole batch below, about twenty minutes here
 #         bash scripts/turn_gates.sh --all      # no exclusions; the full glob
+#
+# ** r69 (69, on Daryl's order of 2026-10-20: "trim the fat off the gates so they run more lean"). **
+#   The default is now LEAN.  A turn ran 134 gates serially, about 1,210 s on this container, and
+#   eleven of them were 1,085 s of it.  Every one of those eleven is ALSO run by CI's `fast` job on
+#   every push, which finishes in about ten minutes and goes red on `main` where every seat can see it.
+#   So a seat waiting twenty minutes for them locally was asking each question twice and waiting for
+#   the slower answer.  LEAN runs the other gates (about 125 s here) and leaves those eleven to the push.
+#   ⌗ The set is HEAVY_PUSHED below: named by hand with the time measured here and the date, because
+#   a cost is a measurement and not a derivation (70, r7453+70.2).  Each name must also appear in the
+#   `fast` job's list in gates.yml -- the script checks that, so a heavy gate dropped from CI comes
+#   back into the turn the same day.  `check_compile` returns to the turn whenever a paper is edited.
 set -uo pipefail
 cd "$(dirname "$0")/.."
 export NODE="${NODE:-66}"
@@ -82,11 +94,31 @@ reason_for() {
     #   absent is the vacuous pass its own sitemap-presence assertion exists to
     #   prevent, and moving that hole up one level is not closing it.
     check_sitemap_resolves) echo "needs the assembled _site and is the deploy job's question, not the turn's" ;;
-    *)                     echo "no reason recorded -- THIS IS A DEFECT, add one" ;;
+    *) case " $pushed " in *" $1 "*) echo "LEAN: heavy, and CI's fast job asks it on every push -- run --full to ask it here"; return;; esac
+       echo "no reason recorded -- THIS IS A DEFECT, add one" ;;
   esac
 }
 
 ALL=0; [ "${1:-}" = "--all" ] && ALL=1
+LEAN=1; case "${1:-}" in --full|--all) LEAN=0;; esac
+
+# HEAVY_PUSHED -- name:seconds measured here on 2026-10-20 (NODE=66, 2 cores).  Over 15 s each.
+HEAVY_PUSHED="check_quote_pins:366 check_cross_row_dupes:124 check_receipts:99 check_exact_counts:57
+  check_unread_figure:46 check_marker_transposition:45 check_withdrawn:37 check_compile:35
+  check_prose_pins:34 check_deferrals:27 check_pdf_current:22"
+pushed=""
+if [ "$LEAN" -eq 1 ]; then
+  ci_fast=$(sed -n '/name: the text gates/,/done$/p' .github/workflows/gates.yml)
+  touched_tex=$( { git diff --name-only HEAD -- 'corpus/*.tex'; git diff --name-only '@{u}' -- 'corpus/*.tex' 2>/dev/null; } | sort -u)
+  for e in $HEAVY_PUSHED; do
+    n=${e%%:*}
+    # A heavy gate is left to the push ONLY while the push asks it.
+    echo "$ci_fast" | grep -qw "$n" || continue
+    [ "$n" = check_compile ] && [ -n "$touched_tex" ] && continue
+    pushed="$pushed $n"
+  done
+  EXCLUDE_NAMES="$EXCLUDE_NAMES$pushed"
+fi
 pass=0; fail=0; unrun=0; failed=""; notrun=""; ran=0
 skipped_needs=""
 : > /tmp/_tg_roster.$$
@@ -123,7 +155,8 @@ missing=$(comm -23 <(echo "$expect") <(echo "$actual") | tr '\n' ' ')
 NGLOB=$(ls corpus/check_*.py | wc -l | tr -d ' ')
 NEXP=$(echo "$expect" | grep -c .)
 
-echo "  turn batch: ran $ran of $NEXP expected   (glob holds $NGLOB)   [NODE=$NODE, timeout=${GATE_TIMEOUT}s]"
+MODE=full; [ "$LEAN" -eq 1 ] && MODE=lean; [ "$ALL" -eq 1 ] && MODE=all
+echo "  turn batch ($MODE): ran $ran of $NEXP expected   (glob holds $NGLOB)   [NODE=$NODE, timeout=${GATE_TIMEOUT}s]"
 echo "  PASS=$pass  FAIL=$fail  UNRUN=$unrun"
 rcout=0
 if [ "$ran" -ne "$NEXP" ] || [ -n "${missing// /}" ]; then
