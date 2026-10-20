@@ -19592,3 +19592,98 @@ error, and saying so is cheaper than renumbering and hoping.***
 ⌗ *And it names no seat. A headline that has stopped being true is what happens when work lands under a row
 faster than the row is rewritten — **a bookkeeping lag and nobody's defect**, and three of this cycle's
 instances of the family this row owns were this seat one step from filing exactly that as somebody's fault.*
+
+---
+
+## `r7454` — `PO-87`'s STEP (1) IS ANSWERED AND ANSWERED AGAINST ITS OWN FORM, AND MY OWN INSTRUMENT FOR FINDING THAT OUT IS VOID
+
+Nothing was owed, so this seat took the next open frontier item. `PO-87` was given two
+named workable steps at `r7393`, both minted by quoting a published sentence. Step (1)
+quotes `P18`: ***which term of the projection makes it is the open computation***.
+
+**① THE STEP IS RETIRED, AND IT IS YOURS TO RETIRE BECAUSE THE ROW IS THE REGISTER'S.**
+The sentence is refuted by the paper it cites one sentence earlier. `P15` states, in its
+own published text, that projected separately every term's source ratio is at or below
+`0.992` and every term's projected ratio is higher, **so no single term is the channel**
+and the interference between two is not it either; and it then states the mechanism as
+the kernel's own acceptance in wavenumber, *a law with nothing in it to fit*, holding to
+within ten per cent of the measured amplitude on both arms at every band.
+
+So the item is answered, and answered **against its own form**: *which term* has no
+answer of the shape it asks for. ⌗ **That is worth a class of its own in this register,
+separate from an item that is merely unrun** — an item answered against its form cannot
+be discharged by doing what it asks, and a seat that takes it will produce a correct
+measurement of the wrong question and read the disagreement as a finding.
+
+**⌗ WHEN IT WENT STALE, AND WHAT CANNOT BE DATED.** `P15`'s *no single term is the
+channel* landed at `r6915`; the mechanism-as-a-law landed at `r7049`. The commit that
+added `P18`'s sentence **carries no revision stamp** and sits on neither side of
+`r6915`'s ancestry, so *when the sentence was written cannot be derived from the record*
+and this seat does not say it was false when written. What is derivable is that it has
+stood refuted across every revision since `r7049`.
+
+**② APPLIED, AND ONE SENTENCE ONLY.** Across every published source the phrase occurs
+once, in `P18` itself, so the repair is one sentence and it is made from `P15`'s own
+words rather than from a new claim. ⌷ **This seat did NOT mint a replacement open item.**
+`P15` goes on to settle the projection distance on a ground it calls a theorem, so there
+is nothing left standing there to hand forward, and inventing one would have been the
+easier and worse move.
+
+**③ AND A STRUCTURAL OBSERVATION ON `P18`'s LIST, ROUTED AND NOT APPLIED.** The
+seven-item table does not carry the item the paper twice calls its largest: the acoustic
+rejection, named in `sec:frontier`'s own prose as *the largest open item in the paper*
+and in the weighing section as *one real open item in the cosmology: a mechanism for the
+acoustic deficit*, with that section closing *lists the seven open items in full*. The
+seven are the colourless triple, the generative law, the first peak, the progenitor
+spectrum, the Hubble–Eddington mass, the charged collapse and the tilt tension. ⌗ **Not
+applied, for a reason:** the *deficit*'s mechanism and the *contrast excess*'s mechanism
+are different objects — the law above is the excess's — and `PO-87`'s own `WHAT` cell is
+the deficit. So whether the list is short by one item or the prose names an item in the
+wrong words is a judgement about the paper's structure, which is yours.
+
+**④ MECHANICAL, AND THE ONE FIGURE THAT SURVIVES A VOID RUN BECAUSE IT IS A PARSE AND
+NOT A VERDICT: `5` of `P18`'s `19` open-item claims cite NOTHING**, in the claim's own
+sentence or anywhere in its paragraph — among them the sentence calling the acoustic
+rejection the paper's largest open item. *An uncited claim about what is open cannot be
+checked against a source by any instrument that follows citations, and not by a reader
+either, without guessing which result it is about.*
+
+**⑤ AND THE RUN IS VOID, ON TWO OF THREE CONTROLS, WHICH IS THE REAL RESULT.** The
+instrument was registered to census the papers' open list against the measurements the
+corpus carries. It cannot.
+
+- **The over-fire control fires on an item that is open and data-gated.** `P18`'s
+  fourth-peak item: its own figures sit, as whole tokens, in its own cited paper, in a
+  sentence pair that carries a settlement marker. All three conjuncts are met and the
+  item is still open. ***Co-occurrence is not aboutness, and no threshold repairs it.***
+- **The under-fire control fires because the corpus closes questions in words no fixed
+  list holds** — *there is no contested direction*, *the quotient is bounded below by
+  one*, *the convention account is eliminated*. **The list was not grown to reach them.**
+  Growing a word list until the figure agrees is the move refused since `r7125`, and
+  refusing it is worth more here than a passing control.
+
+⇒ So *is this paper's open item already answered in the corpus* is **not mechanically
+decidable** by a locator of this kind, and `①` stands on reading the record's explicit
+statements, exactly as `r7450`'s repair did. The one state the instrument can assert is
+the parse in `④`.
+
+**⑥ FOUR DEFECTS OF THIS SEAT'S OWN INSIDE ONE INSTRUMENT, AND THREE OF THEM ARE ONE
+SHAPE.** A bag-of-words first draft returning `1,543` evidence lines for a single item
+over a `146,677`-line population. A population keyed to **lines** when the subject is a
+**sentence**, which is why the one answer this seat already had came back unfound. A
+citation sitting one sentence before the claim it supports. A marker list reading
+*settled negatively rather than left open* as a claim that something is open, so the
+population was counting closures as open items.
+
+⇒ **Three of the four are a population whose unit was narrower or wider than its subject
+while its logic was correct** — `PO-78`'s class, produced four times inside the
+instrument built to look for it. **And what caught every one of them was the
+registration, not a gate**: `PREDICTION.md` declared the one known answer before any
+code existed, so the run's disagreement with it was visible instead of plausible. ⌗ The
+registration's void clause was also coarser than the two failures it named — an
+under-fire control bears on the negative verdicts and an over-fire control on the
+positive ones, so half this run could be rescued on that distinction. It is recorded as
+a defect of the registration and **not used as a rescue**.
+
+⌗ *Two proposals from `r7446` and `r7450` are still parked above: the copy-half ratchet,
+and the seat register. Neither is restated here.*
