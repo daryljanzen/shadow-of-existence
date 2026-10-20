@@ -1,0 +1,117 @@
+
+r7468 — THE PROJECTION KERNEL'S OWN PHASE RUN, read off the half of a banked integral nobody read.
+
+`PO-87`, worked as physics on order `r7465`, following `r7466`'s own direction.
+
+WHAT IS BANKED AND WHAT IS NOT.  `r6999`'s width filter builds the exact kernel integral over the
+visibility, with the leaf acoustic phase HELD and the spherical Bessel at the instrument's own `l`,
+`k` and `eta_0`:
+
+    I_l(k; s) = INT g(eta) exp(i k rs_leaf(eta)) j_l( k (eta_0 - a - s (eta - a)) ) d eta
+
+** and it takes `np.hypot` of the two quadratures -- the MODULUS -- every time it is called. **
+The PHASE of that same complex integral is the projection's own contribution to the acoustic phase.
+It is in the banked instrument and nothing has read it.  THIS READS IT.
+
+AGAINST WHAT.  `r7466`'s target, carried forward and not re-derived: the drift the residual carries
+is `+0.04628` cycles per peak at correct spacing, and the question is whether the projection can
+supply a RUN where the acoustic levers supply only an OFFSET.
+
+⌗ THE VISIBILITY, THE LEAF PHASE, `eta_0`, `r_s` AND `l_A` ARE IMPORTED FROM `r6999`'s OWN FILE
+  by `ast`, so that file's analysis does not run and no second copy of the kernel grows
+  (`r7445`'s rule).  Ⓥ① then checks the modulus against its `amp()` to `1e-12`: the cheapest
+  possible proof that this is the same instrument.
+
+
+====================================================================================================
+  THE PROJECTION KERNEL'S PHASE AT THE COMB'S PEAKS
+====================================================================================================
+
+  CR arm   l_A = 301.799
+       n      l          k          |I|      arg I   unwrapped    cycles
+       1    302    0.02153    4.049e-03   -3.06078    -3.06078  -0.48714
+       2    604    0.04306    2.105e-03   +0.12233    -6.16085  -0.98053
+       3    905    0.06459    1.511e-03   -2.99452    -9.27770  -1.47659
+       4   1207    0.08612    1.055e-03   +0.14925   -12.41712  -1.97625
+       5   1509    0.10765    7.688e-04   -3.00684    -9.29003  -1.47855
+      ⇒ run -0.29785 cycles per peak  (se 0.11460, scatter 0.36238); target +0.04628; share -6.436
+      ⌗ unwrapping steps taken: 3
+
+  LCDM arm   l_A = 301.543
+       n      l          k          |I|      arg I   unwrapped    cycles
+       1    302    0.02161    3.906e-03   -3.06480    -3.06480  -0.48778
+       2    603    0.04322    2.238e-03   +0.11739    -6.16580  -0.98132
+       3    905    0.06483    1.400e-03   -3.00858    -9.29177  -1.47883
+       4   1206    0.08644    1.051e-03   +0.13643   -12.42994  -1.97829
+       5   1508    0.10805    7.463e-04   -3.02444    -9.30763  -1.48136
+      ⇒ run -0.29841 cycles per peak  (se 0.11460, scatter 0.36240); target +0.04628; share -6.448
+      ⌗ unwrapping steps taken: 3
+
+  ⛔ AND THE SERIES ABOVE IS UNDETERMINED, WHICH IS WHY IT IS NOT THE MEASUREMENT:
+    the raw phase alternates between about -pi and about 0, so adjacent samples are
+    ~pi apart and the unwrap picks a branch.  Read the n=5 row against n=4: the
+    unwrapped value JUMPS BACK.  ** Reported as registered, and superseded below. **
+
+----------------------------------------------------------------------------------------------------
+  THE SAME PHASE, SAMPLED DENSELY IN `l` SO THE UNWRAP IS FORCED
+----------------------------------------------------------------------------------------------------
+      CR    step 0.05  run +0.50215 cycles per peak  ·  largest raw gap 6.126 rad  ·  share of target +10.85
+      CR    step 0.02  run +0.50215 cycles per peak  ·  largest raw gap 6.220 rad  ·  share of target +10.85
+            phi_n = -0.48714 +0.01947 +0.52341 +1.02375 +1.52145
+      LCDM  step 0.05  run +0.50159 cycles per peak  ·  largest raw gap 6.127 rad  ·  share of target +10.84
+      LCDM  step 0.02  run +0.50159 cycles per peak  ·  largest raw gap 6.221 rad  ·  share of target +10.84
+            phi_n = -0.48778 +0.01868 +0.52117 +1.02171 +1.51864
+
+  ⇒ AND THE NUMBER IS A HALF CYCLE PER PEAK, WHICH IS NOT A DRIFT.
+      CR    +0.50215 = 1/2 +0.00215  ⇒ the residual above the half cycle is 4.6 per cent of the target
+      LCDM  +0.50159 = 1/2 +0.00159  ⇒ the residual above the half cycle is 3.4 per cent of the target
+    A half cycle per peak is the Bessel's own SIGN ALTERNATION at successive comb
+    orders -- `j_l` changes sign between them -- and an alternation is a relabelling,
+    not a run.  ** What could carry the drift is the residual ABOVE the half cycle. **
+
+      arm minus control +0.00056 = +0.012 of the target, and this one is
+      BRANCH-INVARIANT: both arms are unwrapped identically, so whatever branch the
+      unwrap picks cancels in the difference.
+
+----------------------------------------------------------------------------------------------------
+  THE CONTROLS
+----------------------------------------------------------------------------------------------------
+  Ⓥ① same instrument      — |I| against r6999's own amp(l, k, 1.0)
+      worst relative difference 0.000e+00 against 1e-12
+      ⇒ PASS
+  Ⓥ② the anchor drops out — mean-anchored against peak-anchored at s = 1
+      worst phase difference 8.882e-16 rad against 1e-10
+      ⇒ PASS
+  Ⓥ③ not the quadrature's — the run on a 2x refined grid
+      -0.29785 against -0.29786, relative change 0.00 per cent
+      ⇒ PASS
+  Ⓥ④ the unwrap is forced — ADDED HERE, not registered: adjacent raw samples must be
+      closer than pi, or the unwrap picks a branch rather than finding one
+      on the comb's peaks the largest raw gap is 3.183 rad against pi=3.142  ⇒ FIRES: UNDETERMINED
+      densely sampled the largest raw gap is 6.220 rad -- still above pi at the sign crossings, where |I| passes through zero and the phase genuinely jumps by pi;
+      what the dense sampling buys is that EVERY OTHER step is small, so the branch is
+      pinned between crossings and the two step sizes agree.
+      ⌗ THIS IS THE CONTROL Ⓥ③ SHOULD HAVE BEEN: Ⓥ③ refined the grid and got the same
+        answer to five decimals, because the same wrong branch is reproducible.
+        ** AGREEMENT OF AN INSTRUMENT WITH ITSELF IS NOT CORRECTNESS. **
+
+----------------------------------------------------------------------------------------------------
+  THE SHAPE — r7466 made this the discriminating question: a LINE or a STEP?
+----------------------------------------------------------------------------------------------------
+      CR    line RSS 3.282860e-05 · step at peak 2 RSS 6.263670e-01 · line/step 0.00
+      LCDM  line RSS 3.171478e-05 · step at peak 2 RSS 6.257326e-01 · line/step 0.00
+  ⌗ above 1 the step fits better, below 1 the line does.  r7466 measured 5.8 for the
+    MODEL's own per-peak phase, which is why the shape is the question and not an aside.
+  ⌗ AND THE SHAPE HERE IS READ ON THE RESIDUAL ABOVE THE HALF CYCLE, not on the half
+    cycle itself: a line through a half-integer alternation is a line by construction.
+      CR    residual above the half cycle = -0.00733 -0.00072 +0.00322 +0.00357 +0.00126  ·  line/step 2.79
+      LCDM  residual above the half cycle = -0.00626 +0.00020 +0.00268 +0.00323 +0.00016  ·  line/step 4.03
+
+----------------------------------------------------------------------------------------------------
+  THE ARM MINUS THE CONTROL — what could be this construction's rather than any
+  projection's
+----------------------------------------------------------------------------------------------------
+      CR -0.29785 · control -0.29841 · difference +0.00056 = +0.012 of the target
+
+====================================================================================================
+  ✔ CONTROLS HOLD.

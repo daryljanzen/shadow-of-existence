@@ -20365,3 +20365,86 @@ is not an ancestry**, and the waiver asked one to answer for the other. ⌗ *`20
 ⌗ **Both reds are in the ONE standing-down comment on the PR, edited rather than added
 to.** Neither is this branch's, no fix exists to port for either, and the single re-run
 stays unspent because neither job's red is `Q1` alone.
+
+---
+
+## ⛭⛭⛭ `r7468` — **THE PROJECTION KERNEL'S PHASE IS A HALF CYCLE PER PEAK, WHICH IS AN ALTERNATION AND NOT A RUN. IT IS NOT THE CARRIER EITHER, AND THAT SEPARATES TWO EFFECTS `PO-87` CARRIES AS ONE. ⛔ AND MY REGISTERED MEASUREMENT WAS UNDETERMINED WITH ALL THREE CONTROLS PASSING**
+
+`PO-87` again, continuing `r7466` to the place it pointed. Receipts in
+`computations/beyond_the_wall/r7468_60_the_projections_own_phase_run/`;
+`PREDICTION.md` registered `305ae568` at `f91e3fdc`. **No new spectrum.**
+
+⌗ **And it is not a new instrument, which is the part I want you to check first.**
+`r6999`'s width filter already builds the exact kernel integral over the visibility with
+the leaf acoustic phase **held** and the Bessel at the instrument's own `ℓ`, `k`, `η₀` —
+**and takes `np.hypot` of the two quadratures every time.** The **phase** of that same
+complex integral is the projection's own contribution to the acoustic phase. It was in
+your bank and nobody had read it. `Ⓥ①` reproduces the filter's own amplitude from my
+complex integral with a worst relative difference of **exactly zero**.
+
+### ⛔ ① MY REGISTERED MEASUREMENT WAS UNDETERMINED, AND ALL THREE CONTROLS PASSED THROUGH IT
+
+At the comb's peaks the raw phase reads `−3.061, +0.122, −2.995, +0.149, −3.007` —
+**alternating between about `−π` and `0`, because `j_ℓ` changes sign between comb
+orders.** Adjacent samples are `3.183` rad apart, **above the aliasing limit of an
+unwrap**, so any multiple of half a cycle per peak may be added. `np.unwrap` picked a
+branch and picked badly: the series **jumps back** at the fifth order.
+
+**And `Ⓥ③` — refine the quadrature grid, require the run to hold — PASSED: `−0.29785`
+against `−0.29786`, `0.00` per cent.** Because *the same wrong branch is perfectly
+reproducible.*
+
+⇒ ***AGREEMENT OF AN INSTRUMENT WITH ITSELF IS NOT CORRECTNESS.*** My generator in its
+mildest form, and the missing control is **added and said to be added** rather than folded
+in: `Ⓥ④`, adjacent raw samples closer than `π`. ⌗ *I would route it as a rule if you want
+one: a refinement control tests the DISCRETISATION; it cannot test a BRANCH, because a
+branch choice is deterministic and survives refinement exactly.*
+
+### ⛭⛭ ② RESOLVED, AND THE NUMBER IS A HALF CYCLE PER PEAK
+
+Sampled densely in `ℓ` between the peaks, where the unwrap is forced, and read at the
+integer comb orders: **`+0.50215`** cycles per peak on this arm and **`+0.50159`** on the
+control, **identical at steps of `0.05` and `0.02`**.
+
+**A half cycle per peak is the Bessel's own sign alternation, which relabels the comb
+rather than running in it.** So the quantity that could carry the drift is the residual
+**above** the half cycle:
+
+⇒ **`+0.00215` — `4.6` per cent of `r7466`'s target.** Control `+0.00159`, `3.4` per cent.
+⇒ **And the difference, which is the part that could be this construction's rather than any
+projection's: `+0.00056`, `1.2` per cent.** That one is **branch-invariant** — both arms
+are unwrapped identically, so the branch cancels. **It is the only number here that needed
+no choice at all.**
+
+### ⛭ ③ AND THE RESIDUAL IS A STEP — YOUR SHAPE QUESTION AGAIN, ONE LEVEL DOWN
+
+`CR`: `−0.00733, −0.00072, +0.00322, +0.00357, +0.00126`, **a step beating a line by
+`2.79`**; control, by `4.03`. ⇒ **So the projection's phase fails on both counts at once:
+twenty times too small as a run, and the wrong shape in what little it has.** ⌗ *The same
+step, at the same place, in the projection as in the acoustic dynamics. I notice it and I
+do not explain it.*
+
+### ⛭⛭⛭ ④ WHAT THIS LEAVES THE ROW, AND IT IS A SEPARATION
+
+⇒ **Neither of `PO-87`'s located halves carries the drift.** `r7466` priced out the
+acoustic levers; this prices out the projection kernel's phase at `4.6` per cent
+absolutely and `1.2` differentially.
+
+⇒ **AND THAT SEPARATES TWO OBJECTS THE ROW CARRIES AS ONE.** Step `①` locates the contrast
+excess *"in the projection from wavenumber to multipole and not in the acoustic
+dynamics"*, and `r6999` measured the projection WIDTH channel at *"at most a quarter"* of
+that excess. **The phase drift is not that effect**: the projection's phase is a half
+cycle and an alternation. ⇒ ***The row's workable half contains two effects and not one,
+and nothing had said so.*** **Supplied, NOT applied** — the row is yours.
+
+### ⌗ ⑤ THE SCORECARD
+
+**Three hits, two misses.** `Ⓑ` HIT (`+0.00056` against a predicted `0.005`), `Ⓒ` HIT (the
+sign), `Ⓔ` HIT (a line fits the full phase). `Ⓐ` MISS — **and the useful one: the
+prediction's BOUND was right and its STATISTIC was the wrong object**, because a
+half-integer alternation is not a run and I did not think to say so; decomposed, the
+residual is inside the bound I registered. `Ⓕ` MISS on the factor and held on the sign:
+the superseded plane-wave proxy is wrong by `2.93×` on the **phase** where you measured
+`15×` on the **modulus**, so the two are not the same failure and the proxy is less wrong
+here than there. ⌗ *Priced `3.89`/`3.85`/`4.07` s. `PO-87`'s fourth-peak half is data-gated
+and untouched.*
