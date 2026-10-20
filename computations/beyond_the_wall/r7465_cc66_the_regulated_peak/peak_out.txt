@@ -1,0 +1,197 @@
+
+==============================================================================
+  STEP 1 -- the concrete model, and whether it is even a progenitor
+==============================================================================
+  M              = 4.170e+52 kg   = 2.097e+22 M_sun
+  GM/c^2         = 3.0967e+25 m
+  R_s = 2GM/c^2  = 6.1934e+25 m   = 2007.135 Mpc
+  alpha=sqrt(3/L)= 1.6473e+26 m   = 5338.361 Mpc
+
+  P16 sec:peak: a turnaround exists exactly when A <= 2 alpha / (3 sqrt 3),
+  which is identically the Nariai mass parameter.  With A = R_s:
+    A        = 6.1934e+25 m
+    Nariai   = 6.3403e+25 m
+    A/Nariai = 0.9768   sub-Nariai: True
+  ⌗ The paper's own progenitor is sub-Nariai by a few per cent, not by
+    orders -- so the model it hands this row sits just inside the one
+    condition that makes it a progenitor at all.
+
+==============================================================================
+  STEP 2 -- the substrate law, its near-branch-point limit, and a CHECK
+==============================================================================
+  r^3 = 2 M alpha^2 sinh^2(3 tau / 2 alpha)
+  Near tau -> 0:  sinh^2 -> (3 tau / 2 alpha)^2, so
+      r^3 -> 2 M alpha^2 * 9 tau^2 / (4 alpha^2) = (9/2) M tau^2
+      => tau(r) = (sqrt2 / 3) r^(3/2) / sqrt(M)
+
+  ** CHECK, against a result with no step in common: the
+     Oppenheimer-Snyder marginally-bound dust free-fall time from r to 0
+     is tau = (2/3) r^(3/2) / sqrt(2M).  Same thing? **
+    r =  6.1934e+25 m :  substrate 4.128945e+25   OS 4.128945e+25   ratio 1.000000000000
+    r =  6.1934e+22 m :  substrate 1.305687e+21   OS 1.305687e+21   ratio 1.000000000000
+    r =  1.0000e+00 m :  substrate 8.471173e-14   OS 8.471173e-14   ratio 1.000000000000
+  ⇒ identical.  The substrate law's branch-point limit IS dust free-fall,
+    which is the consistency this computation needs before any number of
+    its own is worth printing.
+
+  And the exact law against its limit, to see where the limit stops holding:
+    r =  6.1934e+25 m :  exact tau 4.037378e+25 m   limit 4.128945e+25 m   ratio 0.977823
+    r =  6.1934e+24 m :  exact tau 1.305656e+24 m   limit 1.305687e+24 m   ratio 0.999976
+    r =  6.1934e+22 m :  exact tau 1.305687e+21 m   limit 1.305687e+21 m   ratio 1.000000
+
+==============================================================================
+  STEP 3 -- the dust carried through: density, infall energy, and the clock
+==============================================================================
+  rho_hor = 3 M /(4 pi R_s^3) = 4.1904e-26 kg/m^3
+  P16's closed form 3 c^6/(32 pi G^3 M^2) = 4.1904e-26 kg/m^3   (agrees)
+  present rho_crit (H0=67.4) = 8.5327e-27 kg/m^3
+  => rho_hor / rho_crit = 4.911
+  ⌗ This is P16's reductio made arithmetic: for a progenitor this massive
+    the horizon-crossing average is of order the PRESENT cosmic density,
+    so a peak pinned there would put the hot dense era in our future.
+  E_infall at R_s = 469.1 MeV = (1/2) m_N c^2, identically
+  proper time from R_s to the branch point = 1.3773e+17 s = 4.364 Gyr
+  ⛔ So the crossing's APPROACH is not short.  Whatever the branch point
+     does in zero duration, the leg into it lasts gigayears of proper time.
+
+==============================================================================
+  STEP 4 -- WHAT REGULATES IT: the three candidates, on numbers
+==============================================================================
+  R1  the substrate's throat scale alpha/sqrt3:
+        alpha/sqrt3 = 9.5104e+25 m  vs  R_s = 6.1934e+25 m
+        ratio = 1.5356  => throat is LARGER than the horizon
+        ⇒ a throat-regulated peak is LESS compressed than horizon crossing.
+          REJECTED, and on arithmetic rather than on wording.
+
+  R2  the collapse branch's extremum, |r^3| = 2 M alpha^2:
+        r_min = 1.1889e+26 m  vs  R_s = 6.1934e+25 m   ratio 1.920
+        reached at |tau| = pi alpha / 3 = 1.7250e+26 m = 18.232 Gyr
+        ⇒ a de Sitter-scale time and a radius above the horizon: this is
+          the LAP's turnaround, not the matter's.  REJECTED.
+
+  R3  nothing regulates it; the divergence is one instant of measure zero
+      and the crossing has no duration, so the peak is the last
+      compression of FINITE duration -- the infall-energy value.
+        but STEP 3 measured that leg at 4.36 Gyr of proper
+        time, during which the infall energy grows as 1/r without bound.
+        ⛔ REJECTED TOO: there is no shortage of time on the approach, so
+          'nothing can act' is false where R3 needs it to be true.
+
+==============================================================================
+  STEP 5 -- R4, WHICH THE PRICE DID NOT NAME: the proper-time budget
+==============================================================================
+  The compression is regulated where the time LEFT runs out, not where
+  the substrate bends.  Set tau(r) equal to a microphysical response time
+  and solve for r:   r = ( 3 tau sqrt(M) / sqrt2 )^(2/3)
+
+  response                     t (s)     r_min (m)     rho_pk (kg/m^3)   E/nucleon (MeV)
+  ------------------------------------------------------------------------------------
+  strong interaction       1.000e-23    1.0779e-01          7.9486e+54        2.6955e+29
+  weak, at 100 MeV         1.000e-10    5.0032e+07          7.9486e+28        5.8073e+20
+  Planck time              5.391e-44    3.3141e-15          2.7350e+95        8.7673e+42
+
+==============================================================================
+  STEP 6 -- AND THE PEAK DENSITY IS MASS-INDEPENDENT.  derived, then checked
+==============================================================================
+  r_min = (3 tau sqrt(M) / sqrt2)^(2/3)  so  r_min^3 = (9/2) tau^2 M,
+  and rho = 3 M_kg /(4 pi r_min^3) with M_kg = M c^2/G, so
+      rho_pk = 3 (M c^2/G) / (4 pi (9/2) tau^2 M) = c^2 / (6 pi G tau^2)
+  -- the mass cancels identically.  tau here is the geometrised response
+  time (t c), so in seconds:  rho_pk = 1/(6 pi G t^2).
+
+  CHECK the closed form against the numbers STEP 5 computed from M:
+    strong interaction     numeric 7.948646e+54   closed form 7.948646e+54   ratio 1.000000000000
+    weak, at 100 MeV       numeric 7.948646e+28   closed form 7.948646e+28   ratio 1.000000000000
+    Planck time            numeric 2.734982e+95   closed form 2.734982e+95   ratio 1.000000000000
+
+  CHECK the mass-independence directly, by varying M over 12 orders:
+    M = 4.170e+46 kg :  r_min = 1.077916e-03 m   rho_pk = 7.948646e+54 kg/m^3
+    M = 4.170e+49 kg :  r_min = 1.077916e-02 m   rho_pk = 7.948646e+54 kg/m^3
+    M = 4.170e+52 kg :  r_min = 1.077916e-01 m   rho_pk = 7.948646e+54 kg/m^3
+    M = 4.170e+55 kg :  r_min = 1.077916e+00 m   rho_pk = 7.948646e+54 kg/m^3
+    M = 4.170e+58 kg :  r_min = 1.077916e+01 m   rho_pk = 7.948646e+54 kg/m^3
+
+  ⛭ So the regulated peak density is set by the RESPONSE TIME alone and is
+     free of the progenitor mass.
+
+  ⛔ AND THE COUNT HAD TO BE READ RATHER THAN GUESSED, WHICH CHANGED IT.
+     A first draft of this file called it 'a third' on the strength of P16's
+     own sentence: 'What this does not show, and is asserted nowhere: that
+     either result implies the other, or that the pattern extends to a third
+     quantity.'  THE REGISTER SAYS OTHERWISE.  receipts/INDEX.md's
+     `sec:peak (mass-blindness)' row carries THREE -- two sharing the
+     amplitude-factorisation mechanism, one independent (the horizon
+     identity) -- and records that 'the r1619 third instance REVISED this
+     row's earlier no-extension-to-a-third-quantity claim'.
+     ⇒ This one is a FOURTH, and by a FOURTH mechanism: a proper-time
+       budget, which is neither an amplitude exponent nor a horizon
+       identity.  The grouping becomes 2-of-one-kind + 1 + 1.
+
+  ⚠ AND THE SAME READ FOUND P16's OWN PARAGRAPH INCONSISTENT WITH ITSELF,
+     which is routed and NOT fixed here -- P16 is not this seat's file.
+     The disclaimer sentence above sits AFTER the paragraph that supplies
+     the third instance ('A third instance sharpens the grouping rather than
+     merely lengthening the list'), yet it still reads 'either result' and
+     'a third quantity'.  The register's own note says that revision
+     happened; the paper's sentence did not follow it.
+
+  ⌗ And the temperature is NOT mass-blind, which separates the two:
+     E/nucleon at r_min = m_N c^2 (M/r_min) ∝ M / M^(1/3) = M^(2/3).
+     M = 4.170e+49 kg :  E/nucleon = 2.6955e+27 MeV
+     M = 4.170e+52 kg :  E/nucleon = 2.6955e+29 MeV
+     M = 4.170e+55 kg :  E/nucleon = 2.6955e+31 MeV
+
+==============================================================================
+  STEP 7 -- THE FIXED-tau READING IS NOT SELF-CONSISTENT, and one column above is wrong
+==============================================================================
+  ⛔ TWO DEFECTS IN STEP 5, BOTH MINE, BOTH FOUND BY READING ITS OWN NUMBERS:
+
+  ⛔ (i) The 'E/nucleon' column is NOT a temperature and must not be read as
+     one.  It is m_N c^2 (GM/rc^2), the marginally-bound NEWTONIAN infall
+     energy, and inside the horizon GM/rc^2 > 1/2 so the expression has left
+     the regime it was derived in.  At r_min it prints ~1e29 MeV, which is
+     the formula failing and not the matter getting hot.  It is kept in the
+     output rather than deleted because a deleted wrong column teaches
+     nothing; the temperature is NOT claimed here.
+
+  ⛔ (ii) tau_response was held FIXED while rho ran over forty orders.  A
+     response time is a property of the state, so the condition is a
+     FIXED POINT and not a lookup.  The assumption-light response time is
+     causal: nothing acts faster than light crossing the mean nucleon
+     spacing d = (m_N/rho)^(1/3).
+
+  d = r * k with k = (4 pi m_N / 3 M_kg)^(1/3) = 5.518022e-27
+  tau_avail(r) = (sqrt2/3) r^(3/2)/sqrt(M)  =  d = r k   gives
+      r_fp = (9/2) k^2 M
+      r_fp   = 4.2431e-27 m
+      rho_fp = 1.3032e+131 kg/m^3
+      Planck length  = 1.6163e-35 m      rho_Planck = 5.1548e+96 kg/m^3
+      r_fp / l_Planck = 2.6252e+08   rho_fp / rho_Planck = 2.5281e+34
+  ⇒ The causal fixed point sits ABOVE the Planck density by thirty-four
+     orders.  So the classical description fails before the causal response
+     bound bites: the time budget is not what stops the compression either.
+
+==============================================================================
+  STEP 8 -- THE ANSWER, AND IT IS EXACT AND MASS-FREE
+==============================================================================
+  What the budget DOES deliver is the peak at the last epoch the classical
+  description is entitled to -- one Planck time of proper time remaining:
+      t_Planck = 5.391246e-44 s
+      r_min    = 3.314191e-15 m
+      rho_pk   = 2.734732e+95 kg/m^3   (closed form 2.734732e+95, ratio 1.000000000000)
+
+  And the closed form collapses, because t_Planck^2 = hbar G / c^5:
+      rho_pk = 1/(6 pi G t_P^2) = c^5/(6 pi hbar G^2) = rho_Planck / (6 pi)
+      rho_Planck / (6 pi) = 2.734732e+95 kg/m^3
+      against rho_pk      = 2.734732e+95 kg/m^3   ratio 1.000000000000
+
+  ** THE REGULATED PEAK IS rho_Planck / 6 pi, EXACTLY, AND FREE OF THE
+     PROGENITOR MASS.  It is a number, which is what r7399 says this row's
+     discharge delivers. **
+
+  ⌗ And it is reached rather than approached: the proper time from the
+     horizon to that radius is 4.364 Gyr, so the
+     through-crossing evolution has gigayears of freedom and is NOT
+     constrained to nothing by the two structural results.
+  ⇒ So the row does NOT terminate as a boundary, which is what this
+     computation's own pre-registration predicted it would.
