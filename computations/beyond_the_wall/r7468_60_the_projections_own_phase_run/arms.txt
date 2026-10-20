@@ -1,0 +1,72 @@
+
+r7468 — THE PROJECTION KERNEL'S OWN PHASE RUN, read off the half of a banked integral nobody read.
+
+`PO-87`, worked as physics on order `r7465`, following `r7466`'s own direction.
+
+WHAT IS BANKED AND WHAT IS NOT.  `r6999`'s width filter builds the exact kernel integral over the
+visibility, with the leaf acoustic phase HELD and the spherical Bessel at the instrument's own `l`,
+`k` and `eta_0`:
+
+    I_l(k; s) = INT g(eta) exp(i k rs_leaf(eta)) j_l( k (eta_0 - a - s (eta - a)) ) d eta
+
+** and it takes `np.hypot` of the two quadratures -- the MODULUS -- every time it is called. **
+The PHASE of that same complex integral is the projection's own contribution to the acoustic phase.
+It is in the banked instrument and nothing has read it.  THIS READS IT.
+
+AGAINST WHAT.  `r7466`'s target, carried forward and not re-derived: the drift the residual carries
+is `+0.04628` cycles per peak at correct spacing, and the question is whether the projection can
+supply a RUN where the acoustic levers supply only an OFFSET.
+
+⌗ THE VISIBILITY, THE LEAF PHASE, `eta_0`, `r_s` AND `l_A` ARE IMPORTED FROM `r6999`'s OWN FILE
+  by `ast`, so that file's analysis does not run and no second copy of the kernel grows
+  (`r7445`'s rule).  Ⓥ① then checks the modulus against its `amp()` to `1e-12`: the cheapest
+  possible proof that this is the same instrument.
+
+
+====================================================================================================
+  THE PROJECTION KERNEL'S PHASE AT THE COMB'S PEAKS
+====================================================================================================
+
+  CR arm   l_A = 301.799
+       n      l          k          |I|      arg I   unwrapped    cycles
+       1    302    0.02153    4.049e-03   -3.06078    -3.06078  -0.48714
+       2    604    0.04306    2.105e-03   +0.12233    -6.16085  -0.98053
+       3    905    0.06459    1.511e-03   -2.99452    -9.27770  -1.47659
+       4   1207    0.08612    1.055e-03   +0.14925   -12.41712  -1.97625
+       5   1509    0.10765    7.688e-04   -3.00684    -9.29003  -1.47855
+      ⇒ run -0.29785 cycles per peak  (se 0.11460, scatter 0.36238); target +0.04628; share -6.436
+      ⌗ unwrapping steps taken: 3
+
+  LCDM arm   l_A = 301.543
+       n      l          k          |I|      arg I   unwrapped    cycles
+       1    302    0.02161    3.906e-03   -3.06480    -3.06480  -0.48778
+       2    603    0.04322    2.238e-03   +0.11739    -6.16580  -0.98132
+       3    905    0.06483    1.400e-03   -3.00858    -9.29177  -1.47883
+       4   1206    0.08644    1.051e-03   +0.13643   -12.42994  -1.97829
+       5   1508    0.10805    7.463e-04   -3.02444    -9.30763  -1.48136
+      ⇒ run -0.29841 cycles per peak  (se 0.11460, scatter 0.36240); target +0.04628; share -6.448
+      ⌗ unwrapping steps taken: 3
+
+====================================================================================================
+  THE ARMS, AGAINST PREDICTION.md — registered 305ae568 before this file existed
+====================================================================================================
+  Ⓐ the projection's run   predicted non-zero and |s| < 0.012 (under a quarter)
+                           measured  +0.50215 = +10.850 of the target   ⇒ MISS
+                           ⇒ MISS ON THE RAW STATISTIC, AND THE DECOMPOSITION IS THE
+                             FINDING: +0.50215 is a half cycle per peak -- the
+                             Bessel's own sign alternation, a relabelling and not a
+                             run -- plus +0.00215, which is 4.6 per cent of the
+                             target and IS inside the predicted bound.
+
+  Ⓑ arm minus control      predicted |ds| < 0.005
+                           measured  +0.00056 = +0.012 of the target   ⇒ HIT
+
+  Ⓒ the sign               predicted POSITIVE on the CR arm
+                           measured  POSITIVE   ⇒ HIT
+
+  Ⓔ the shape              predicted a LINE fits at least as well as a step
+                           measured  line/step RSS 0.00   ⇒ HIT
+
+  Ⓕ the plane-wave proxy   predicted >= 5x the Bessel run and of OPPOSITE sign
+                           measured  -1.47300 against +0.50215 · factor 2.93 · opposite sign: True
+                           ⇒ MISS

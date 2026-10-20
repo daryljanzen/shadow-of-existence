@@ -17,12 +17,12 @@ fix it.
 ## ⌈ ① THE CLAUSE'S TWO GROUNDS ARE THE PAPERS' OWN, AND BOTH HOLD.  WHAT FAILS IS THE QUANTIFIER
 
 `Ⓗ` predicted *zero cosmic duration* would not be a paper phrase.  **It is one.**  Verbatim in two papers
-— `CR_framework.tex:1983` and `canonical_time.tex:242` — with *zero duration* in two more
-(`matter_sector_paper.tex:824`, `boundary_paper.tex:311`), and the first carries it in the same
+— `CR_framework.tex:1991` and `canonical_time.tex:247` — with *zero duration* in two more
+(`matter_sector_paper.tex:827`, `boundary_paper.tex:311`), and the first carries it in the same
 clause as its complement: *"the segment has zero cosmic duration and
 **finite conformal length 3.32**."*  `Ⓒ` predicted the losslessness ground would be restricted to
 the observed modes; it is not — `c_s k/|aH| → c_s k x → 0` **for every `k`** is stated at
-`CR_framework.tex:1983`, `CR_cosmology.tex:384` and `cosmogenesis_paper.tex:660`.
+`CR_framework.tex:1991`, `CR_cosmology.tex:384` and `cosmogenesis_paper.tex:660`.
 
 ⇒ **So the clause does not fail on its grounds.**  It fails on *every admissible stress-energy*.
 
@@ -152,8 +152,12 @@ are the reference lists.  **Both counts are printed** so the size of the removal
 MOVED UNDER THEM.**  `r7463` landed on `main` while this revision was being written and inserted
 eight lines into `corpus/CR_cosmology.tex` at line `2089`, so every anchor in that paper above that
 point shifted: the isotropization paragraph this receipt quotes went from `2841` to `2849` and the
-transmission paragraph from `2701` to `2709`.  **The numbers here are corrected and they are read
-at this revision's own merge, not at the one the first draft was written against.**  The locator is
+transmission paragraph from `2701` to `2709`.  ⌗ **AND IT HAPPENED A SECOND TIME BEFORE THIS
+REVISION LANDED**: a later `main` edited `corpus/CR_framework.tex` and `corpus/CR_synthesis.tex`
+again, moving `CR_framework.tex:1983` to `1991`, `canonical_time.tex:242` to `247` and
+`matter_sector_paper.tex:824` to `827` — while **all five refuter anchors held**, because those
+paragraphs were not the ones edited. **The numbers here are corrected and they are read at this
+revision's own final merge, not at the one the first draft was written against.**  The locator is
 the live source — it prints the anchor it read on the tree it ran on — and the numbers in this prose
 are a convenience that goes stale, which is `L-249`'s subject one level down.  *A line number is a
 measurement with a date on it.*

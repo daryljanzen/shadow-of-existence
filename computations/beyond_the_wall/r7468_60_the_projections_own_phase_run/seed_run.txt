@@ -1,0 +1,33 @@
+
+r7468 — THE PROJECTION KERNEL'S OWN PHASE RUN, read off the half of a banked integral nobody read.
+
+`PO-87`, worked as physics on order `r7465`, following `r7466`'s own direction.
+
+WHAT IS BANKED AND WHAT IS NOT.  `r6999`'s width filter builds the exact kernel integral over the
+visibility, with the leaf acoustic phase HELD and the spherical Bessel at the instrument's own `l`,
+`k` and `eta_0`:
+
+    I_l(k; s) = INT g(eta) exp(i k rs_leaf(eta)) j_l( k (eta_0 - a - s (eta - a)) ) d eta
+
+** and it takes `np.hypot` of the two quadratures -- the MODULUS -- every time it is called. **
+The PHASE of that same complex integral is the projection's own contribution to the acoustic phase.
+It is in the banked instrument and nothing has read it.  THIS READS IT.
+
+AGAINST WHAT.  `r7466`'s target, carried forward and not re-derived: the drift the residual carries
+is `+0.04628` cycles per peak at correct spacing, and the question is whether the projection can
+supply a RUN where the acoustic levers supply only an OFFSET.
+
+⌗ THE VISIBILITY, THE LEAF PHASE, `eta_0`, `r_s` AND `l_A` ARE IMPORTED FROM `r6999`'s OWN FILE
+  by `ast`, so that file's analysis does not run and no second copy of the kernel grows
+  (`r7445`'s rule).  Ⓥ① then checks the modulus against its `amp()` to `1e-12`: the cheapest
+  possible proof that this is the same instrument.
+
+
+====================================================================================================
+  THE SEED — three assertions, none of them about the other two
+====================================================================================================
+  (1) HISTORICAL  at f91e3fdc, PREDICTION.md digests 305ae568; pinned 305ae568  ⇒ PASS
+  (2) CURRENT     the banked visibility and band grid load today, both arms  ⇒ PASS
+  (3) DIRECTIONAL the imported kernel's file is present, so no second copy can grow  ⇒ PASS
+
+  ⇒ SEED HOLDS

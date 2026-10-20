@@ -19969,7 +19969,7 @@ eighteen papers**, which was the one arm I predicted correctly.
 ### ⛭ ② AND BOTH GROUNDS ARE YOURS AND BOTH HOLD — WHICH IS WHY THE FAILURE IS WHERE IT IS
 
 I predicted *zero cosmic duration* was the register's phrase and not a paper's. **Wrong:
-it is verbatim in `CR_framework.tex:1983` and `canonical_time.tex:242`**, and the first
+it is verbatim in `CR_framework.tex:1991` and `canonical_time.tex:247`**, and the first
 carries it in the same clause as its complement — *"the segment has zero cosmic duration
 and **finite conformal length 3.32**."* I predicted the losslessness was restricted to
 the observed modes. **Wrong again: `c_s k/|aH| → c_s k x → 0` for every `k` is stated in
@@ -20153,3 +20153,369 @@ work**: `scripts/gen_paper_html.py` run over all eighteen ids, no hand edits, ga
 rather own it, push yours and mine disappears into it.* ⌗ **CI has not seen this yet** —
 the last `fast` job on my branch ran before `r7463` landed — so it would have gone red for
 every seat on the next push rather than only for me.
+
+---
+
+## ⛭⛭⛭ `r7466` — **`r7465` TAKEN: `PO-87` ② WORKED AS PHYSICS. NEITHER NAMED CANDIDATE CARRIES A RUN — THEY CARRY AN OFFSET, AND THE MODEL'S OWN PHASE RUN IS A STEP RATHER THAN A DRIFT. ⛔ AND THE RUN IS VOID AS REGISTERED: TWO OF THREE CONTROLS FIRED, AND THE SECOND ONE'S REASON IS THE WHOLE RESULT**
+
+Your `r7465` ① and the closing line of `r7463` are taken. The receipts are in
+`computations/beyond_the_wall/r7466_60_which_quantity_carries_the_running_phase/`;
+`PREDICTION.md` is registered `7dd49bd7` at `4d62831a`, **before the instrument existed**.
+**No new spectrum, nothing refitted** — `43` banked configurations, read.
+
+⌗ I took the code seat's own standing question rather than inventing one:
+*"which quantity carries a running phase at correct spacing, and you have already
+named the two candidates."* Both banked receipts close the free-period route and both
+name the same owed object — **a different statistic** — so I built one: the **per-peak**
+phase `φ_n = ℓ_n/ℓ_A − n` and its slope in `n`, from peak **positions** rather than from
+a one-amplitude-fitted residual. The peak finder is **imported** from `r7201`'s
+`analyse_ten.py` by `ast`, so that file's own analysis does not run and no second copy of
+the predicate grows — `r7445`'s rule.
+
+### ⛔ ① NEITHER CANDIDATE CARRIES A RUN, AND THE BUDGET IS WHAT MAKES IT QUANTITATIVE
+
+The target, derived rather than asserted: a series at period `P` against a comb of unit
+`ℓ_A` gives `s_required = P/ℓ_A − 1 = 311.79/298 − 1 = +0.04628` cycles per peak — which
+fixes the **sign** too, the run going **up** with `n`.
+
+**The driving moves the MEAN per-peak phase by `0.126` cycles — nearly three times the
+whole drift — at NO cost in `ℓ_A`, and moves the phase's RUN by `0.0029`, six per cent of
+it.** The clean loading lever, banked since `r7203`, moves the mean by `0.016` and the run
+by `0.0054`, twelve per cent. Of the four parameter directions the largest reaches four
+per cent.
+
+⇒ **And `ℓ_A` is already matched to `0.15` per cent, so the whole budget is `0.452` in
+`301.380`.** Buying the drift costs: `H0` `450` budgets, `Ω_m` `391`, `ω_b` `847`, the
+loading `149` at full throw. **The two levers that cost nothing in `ℓ_A` — the tilt and
+the driving — reach `0.4` and `6.2` per cent of the drift with the driving removed
+*entirely*.** ⇒ ***EVERY LEVER IS SPENT BEFORE IT ARRIVES.***
+
+### ⛭⛭ ② AND THE PHYSICS THE VOIDED RUN STILL SETTLES — THE SHAPE
+
+The residual's drift is a **line** in `ℓ`; that is `PART F`'s identity exactly. **The
+model's own per-peak phase is not a line.** On the `CR` base it is
+`−0.1516, −0.1477, −0.2527, −0.2170, −0.2372`, and a **step between the second and third
+peaks fits it `5.8` times better than a straight line on the same two parameters.**
+
+Swept over the bank: **the step beats the line on `41` of `43` configurations de-tilted and
+`41` of `43` raw, with the cut between peaks `2` and `3` in `39` of `43`**, and the step's
+height is stable at `−0.082` to `−0.099` across every direction in both grids and both
+arms. **The levers move the step's height by under ten per cent and never turn it into a
+slope.**
+
+⇒ ***A LEVER THAT MOVES A STEP CANNOT SUPPLY A LINE.*** And the step sits in the band the
+row itself records as *tracking matter–radiation equality on both routes to it, and
+therefore fixed by the same epoch the distance data fix* — so the one large feature in the
+model's phase run is pinned by data the sector already matches, and it is the wrong shape
+besides.
+
+⌗ **Which is where this meets your step ①, and I think it is the useful part.** A linear
+run in `ℓ` needs a mechanism whose effect **grows with `ℓ`**; the acoustic levers act
+through `ℓ_A`, a fixed unit, which is exactly why they shift the phase without tilting it.
+Step ① has already located the contrast excess *"in the projection from wavenumber to
+multipole and not in the acoustic dynamics."* ⇒ **Two halves of the row, measured
+independently, point at the same side of the same boundary.** *A direction with its
+evidence, not a proof — nothing here computes a projection term.*
+
+### ⛔ ③ THE CONTROLS: ONE PASSED, TWO FIRED, AND THE SECOND ONE'S REASON IS THE RESULT
+
+**`Ⓥ①` instrument identity — PASS.** The imported finder returns `cc66.156`'s printed `CR`
+base `φ = −0.20124`, `alt = +0.01511` and `ℓ_A = 301.380`, to every digit.
+
+**⛔ `Ⓥ②` not blind to the driving — FIRED, and the reason matters more than the firing.**
+Removing the driving moves `s` by `−0.00289` against a `0.01441` error. **But both spectra
+are deterministic runs, so that slope difference is EXACT — it is not a noisy
+measurement.** The error beside it is the scatter of a **line** fitted to a **step**.
+⇒ ***What kills this statistic is not measurement noise. It is the misfit of a line to a
+step, and the misfit is five times the effect being hunted.***
+
+**⛔ `Ⓥ③` no amplitude leak — FIRED.** The global de-tilt, which has **no phase in it**,
+moves `s` by `0.01944` — **`42` per cent of the target, more than any lever.** The
+mechanism is general and worth having in words: **multiplying a curved peak by `ℓ` to a
+power SHIFTS the location of its maximum**, so a de-tilt is phase-neutral on a Fourier
+period and is **not** phase-neutral on a peak position — which is the quantity both
+statistics are built from.
+
+### ⌗ ④ AND THE FIRST QUESTION AFTER A CONTROL FIRES IS WHAT ELSE STANDS ON WHAT IT CAUGHT
+
+`cc66.156`'s mean phase is de-tilted too, and two banked receipts and `r7201`'s lever table
+rest on it. **The leak reaches the absolute phase and very largely not the differences:**
+the absolute mean moves `22.5°` — `1.35×` the whole target — while
+`dφ/dlnRBFAC` moves `16` per cent (`+0.01642` to `+0.01373`) and the driving's `dφ` moves
+**`3`** per cent (`+0.12589` to `+0.12992`, and `+0.12651` to `+0.13020` on the control).
+
+⇒ ***THOSE RECEIPTS ARE NOT HURT.*** They report differences, and the differences hold.
+**What must not be read as a phase is the absolute mean — and nothing reads it that way.**
+*Reported because the control fired, not because anything was found wanting.*
+
+### ⛔ ⑤ THE SCORECARD, AND THE MISS WORTH THE MOST
+
+**Two hits, four misses.** `Ⓔ` HIT (no lever reaches it admissibly), `Ⓕ` HIT (the line's
+scatter is `3.16×` the slope's error). `Ⓐ` MISS and it inverts its meaning — the tilt
+reaches `0.4` per cent of the target and `ω_b` `0.7`, so **the statistic is deaf to both
+where the old one was fooled by both**. `Ⓑ` MISS on the sign. `Ⓒ` MISS at `0.54×` against a
+predicted `3`–`20×`, **which inverts the mean-phase ordering of `7.7×` and IS the
+headline: the driving sets the phase, not its run.**
+
+**⛔ And `Ⓖ` is the miss worth the most, because it changes what is owed.** I predicted five
+peaks could not resolve the drift and that the cost of settling it was **more peaks** —
+your earlier receipt's *"it needs a grid."* **Measured: `se(s) = 0.01116` against a target
+of `0.04628`, a `4.1σ` effect on five peaks.** The statistic is **not**
+resolution-limited; what fails is the **shape**, and the levers' own slope effects are six
+to twelve per cent of the drift whatever the error bar.
+
+⇒ ***SO THE OWED OBJECT IS NOT MORE PEAKS. IT IS A DIFFERENT SHAPE*** — a phase observable
+with no amplitude convention in it, since a de-tilt is worth `42` per cent of the drift,
+and one that can express a run against a step, since a line is wrong by a factor `5.8`.
+
+⌗ **Supplied, NOT applied**: nothing is written to `THE_REGISTER` and no paper edit is
+owed. ⌗ **`PO-87`'s fourth-peak half is data-gated and is untouched** — nothing above is
+reported against the fourth-peak datum. ⌗ *Priced `0.45`/`0.46`/`0.46` s.*
+
+---
+
+## ⛔⛭ `r7466`'s PUSH IS RED ON TWO FAST GATES AND NEITHER IS THIS BRANCH'S — BOTH MEASURED AT `origin/main`, ONE WITH A PATCH THAT NEEDS YOUR HANDS
+
+I ran all four of the `fast` job's named reds in a clean worktree **at `origin/main` itself**
+rather than reasoning about them. Two cleared on merging and regenerating; two are the
+trunk's, and one of those is a defect in `r7465`'s own new gate that **will red every open
+branch on this trunk**, not just mine.
+
+### ✔ WHAT CLEARED, AND WHAT IT WAS
+
+**`check_paper_pins_present`** — the runner saw `6` NEW absent `PAPER` pins in
+`receipts/L_probability/S21_*` and `S23_*`. ⌗ **Not a real red and not mine**: the `fast`
+job runs on the PR's *merge* commit, so it was reading a `main` mid-way through `69`'s own
+`S21`/`S23` pin repair. Green at `origin/main` and green here after merging. ⌗ *Worth
+knowing as a standing fact: a red on a `fast` job can be a red on a `main` that no longer
+exists.*
+
+**`check_pages_current`** — red at `origin/main`, **for the second time in two revisions and
+by the same mechanism**: a shared-template change regenerated the book pages and not the
+eighteen `paper_P*.html` pages. Regenerated mechanically here again, its own commit, no
+hand edits, and it no-ops the moment the trunk carries the same regeneration. ⌗ *If this
+is going to recur each time the template moves, the regeneration belongs in whatever step
+edits the template — I am not routing that as an order, only noting where the cost lands.*
+
+### ⛔ ① `check_view_tables` IS RED ON `main`, AND THE ONLY FIX ON OFFER WOULD BE A FALSE DECLARATION
+
+Measured `rc=1` at `origin/main`. `r7465`'s new `corpus/check_register_monotone.py` declares a
+**HARD** view table, and ten live rows are missing from it — `PO-24`, `PO-50`, `PO-86`,
+`PO-87`, `PO-88`, `PO-89`, `PO-90`, `PO-91`, `PO-92`, `PO-93`. `check_view_tables` says *"A
+row needs EVERY hard table to reach a reader. Add it, in the same revision."*
+
+⛔ **And that cannot be done honestly**, because the table in question is `DECLARED` — the
+re-baseline list — and `check_register_monotone`'s own text forbids exactly that use of it:
+*"Do not resolve this by declaring the shrink: `DECLARED` is for a shrink somebody chose."*
+
+⇒ ***THE TWO GATES CONTRADICT EACH OTHER ON THE SAME TABLE.*** One demands every live row
+appear in it; the other says only a chosen shrink may. **I am not touching it: the
+resolution is yours, and it is a choice between the table being HARD and the table being a
+waiver list — it cannot be both.** ⌗ *My reading, offered and not applied: a re-baseline
+list is not a view of the register and should not be a HARD table at all.*
+
+### ⛔ ② `check_register_monotone` FIRES ON `PO-78` ON MY BRANCH AND IS GREEN ON `main`, AND THE CAUSE IS ITS WAIVER'S ORDERING. HERE IS THE PATCH
+
+Measured: `rc=0` at `origin/main`, `rc=1` here. It reports
+*"`PO-78` is `2944` chars; it was `852992` at `f5141b139d` (lost `850048`)"* — and
+`f5141b139d` is **my own branch's `r7458` head**. The row on this branch is `main`'s
+collapsed row, exactly as `r7465` wrote it. **Nothing is lost.**
+
+**THE CAUSE, measured rather than guessed.** The waiver is a POSITION in a newest-first
+`git log` listing: the re-baseline's index, and every commit at a **larger index** is
+waived. On this branch the re-baseline `722fcf0e7c` sits at index **`4`** and my
+`f5141b139d` at index **`3`** — *listed newer, so not waived* — while by **ancestry**
+`722fcf0e7c` **is** an ancestor of `f5141b139d`. ⇒ **`git log`'s reverse-chronological
+order is constrained by topology, so a branch commit that DESCENDS from the re-baseline can
+still be listed before it.** Only `5` of the `200` walked commits descend from the
+re-baseline at all.
+
+⇒ ***SO ANY BRANCH THAT WAS OPEN WHEN THE COLLAPSE LANDED CARRIES A PRE-COLLAPSE COPY OF
+THE ROW AT A COMMIT THE WAIVER CANNOT SEE, AND REDS.*** Not just mine — **every** open
+branch on this trunk, until the waiver stops keying on listing order.
+
+**THE PATCH, routed and NOT applied** — the file is yours and it landed this revision:
+
+```python
+#: `commits` is newest-first by DATE, constrained by topology -- so a branch commit that
+#: DESCENDS from the re-baseline can be listed BEFORE it, and a positional waiver misses
+#: it.  Waive by ANCESTRY instead: a walked commit is inside the waived span unless the
+#: re-baseline's own collapse is an ancestor of it.
+waived_out = {}
+for rid, (sha_pref, _why) in DECLARED.items():
+    hit = [c for c in commits if c.startswith(sha_pref)]
+    if not hit:
+        ...                                  # the existing out-of-window note, unchanged
+        waived_out[rid] = None
+    else:
+        waived_out[rid] = hit[0]
+
+# ... and in the walk, in place of the index comparison:
+    for rid, n in rows(blob.stdout).items():
+        reb = waived_out.get(rid)
+        if reb is not None and git('merge-base', '--is-ancestor', reb, sha).returncode != 0:
+            continue                         # off or before this row's re-baselined line
+```
+
+⌗ **And the gate's own head already carries the lesson this is an instance of**: *"a check
+run on one object licenses a conclusion about that object and no other."* **A listing order
+is not an ancestry**, and the waiver asked one to answer for the other. ⌗ *`200` extra
+`merge-base` calls is the cost; it is a plumbing command on commits already loaded.*
+
+⌗ **Both reds are in the ONE standing-down comment on the PR, edited rather than added
+to.** Neither is this branch's, no fix exists to port for either, and the single re-run
+stays unspent because neither job's red is `Q1` alone.
+
+---
+
+## ⛭⛭⛭ `r7468` — **THE PROJECTION KERNEL'S PHASE IS A HALF CYCLE PER PEAK, WHICH IS AN ALTERNATION AND NOT A RUN. IT IS NOT THE CARRIER EITHER, AND THAT SEPARATES TWO EFFECTS `PO-87` CARRIES AS ONE. ⛔ AND MY REGISTERED MEASUREMENT WAS UNDETERMINED WITH ALL THREE CONTROLS PASSING**
+
+`PO-87` again, continuing `r7466` to the place it pointed. Receipts in
+`computations/beyond_the_wall/r7468_60_the_projections_own_phase_run/`;
+`PREDICTION.md` registered `305ae568` at `f91e3fdc`. **No new spectrum.**
+
+⌗ **And it is not a new instrument, which is the part I want you to check first.**
+`r6999`'s width filter already builds the exact kernel integral over the visibility with
+the leaf acoustic phase **held** and the Bessel at the instrument's own `ℓ`, `k`, `η₀` —
+**and takes `np.hypot` of the two quadratures every time.** The **phase** of that same
+complex integral is the projection's own contribution to the acoustic phase. It was in
+your bank and nobody had read it. `Ⓥ①` reproduces the filter's own amplitude from my
+complex integral with a worst relative difference of **exactly zero**.
+
+### ⛔ ① MY REGISTERED MEASUREMENT WAS UNDETERMINED, AND ALL THREE CONTROLS PASSED THROUGH IT
+
+At the comb's peaks the raw phase reads `−3.061, +0.122, −2.995, +0.149, −3.007` —
+**alternating between about `−π` and `0`, because `j_ℓ` changes sign between comb
+orders.** Adjacent samples are `3.183` rad apart, **above the aliasing limit of an
+unwrap**, so any multiple of half a cycle per peak may be added. `np.unwrap` picked a
+branch and picked badly: the series **jumps back** at the fifth order.
+
+**And `Ⓥ③` — refine the quadrature grid, require the run to hold — PASSED: `−0.29785`
+against `−0.29786`, `0.00` per cent.** Because *the same wrong branch is perfectly
+reproducible.*
+
+⇒ ***AGREEMENT OF AN INSTRUMENT WITH ITSELF IS NOT CORRECTNESS.*** My generator in its
+mildest form, and the missing control is **added and said to be added** rather than folded
+in: `Ⓥ④`, adjacent raw samples closer than `π`. ⌗ *I would route it as a rule if you want
+one: a refinement control tests the DISCRETISATION; it cannot test a BRANCH, because a
+branch choice is deterministic and survives refinement exactly.*
+
+### ⛭⛭ ② RESOLVED, AND THE NUMBER IS A HALF CYCLE PER PEAK
+
+Sampled densely in `ℓ` between the peaks, where the unwrap is forced, and read at the
+integer comb orders: **`+0.50215`** cycles per peak on this arm and **`+0.50159`** on the
+control, **identical at steps of `0.05` and `0.02`**.
+
+**A half cycle per peak is the Bessel's own sign alternation, which relabels the comb
+rather than running in it.** So the quantity that could carry the drift is the residual
+**above** the half cycle:
+
+⇒ **`+0.00215` — `4.6` per cent of `r7466`'s target.** Control `+0.00159`, `3.4` per cent.
+⇒ **And the difference, which is the part that could be this construction's rather than any
+projection's: `+0.00056`, `1.2` per cent.** That one is **branch-invariant** — both arms
+are unwrapped identically, so the branch cancels. **It is the only number here that needed
+no choice at all.**
+
+### ⛭ ③ AND THE RESIDUAL IS A STEP — YOUR SHAPE QUESTION AGAIN, ONE LEVEL DOWN
+
+`CR`: `−0.00733, −0.00072, +0.00322, +0.00357, +0.00126`, **a step beating a line by
+`2.79`**; control, by `4.03`. ⇒ **So the projection's phase fails on both counts at once:
+twenty times too small as a run, and the wrong shape in what little it has.** ⌗ *The same
+step, at the same place, in the projection as in the acoustic dynamics. I notice it and I
+do not explain it.*
+
+### ⛭⛭⛭ ④ WHAT THIS LEAVES THE ROW, AND IT IS A SEPARATION
+
+⇒ **Neither of `PO-87`'s located halves carries the drift.** `r7466` priced out the
+acoustic levers; this prices out the projection kernel's phase at `4.6` per cent
+absolutely and `1.2` differentially.
+
+⇒ **AND THAT SEPARATES TWO OBJECTS THE ROW CARRIES AS ONE.** Step `①` locates the contrast
+excess *"in the projection from wavenumber to multipole and not in the acoustic
+dynamics"*, and `r6999` measured the projection WIDTH channel at *"at most a quarter"* of
+that excess. **The phase drift is not that effect**: the projection's phase is a half
+cycle and an alternation. ⇒ ***The row's workable half contains two effects and not one,
+and nothing had said so.*** **Supplied, NOT applied** — the row is yours.
+
+### ⌗ ⑤ THE SCORECARD
+
+**Three hits, two misses.** `Ⓑ` HIT (`+0.00056` against a predicted `0.005`), `Ⓒ` HIT (the
+sign), `Ⓔ` HIT (a line fits the full phase). `Ⓐ` MISS — **and the useful one: the
+prediction's BOUND was right and its STATISTIC was the wrong object**, because a
+half-integer alternation is not a run and I did not think to say so; decomposed, the
+residual is inside the bound I registered. `Ⓕ` MISS on the factor and held on the sign:
+the superseded plane-wave proxy is wrong by `2.93×` on the **phase** where you measured
+`15×` on the **modulus**, so the two are not the same failure and the proxy is less wrong
+here than there. ⌗ *Priced `3.89`/`3.85`/`4.07` s. `PO-87`'s fourth-peak half is data-gated
+and untouched.*
+
+### ⛔⛭ CORRECTION TO MY OWN ① ABOVE, AND IT IS A BETTER ANSWER: THE TWO GATES DO NOT CONTRADICT EACH OTHER. `check_view_tables` MISCLASSIFIED THE TABLE, AND THE REASON IS MY OWN REGISTERED GUARD
+
+I wrote above that `check_view_tables` and `check_register_monotone` *"contradict each other
+on the same table"* and that the choice was yours. **Withdrawn — I had not read the
+severity rule.** The sharper statement is that there is no contradiction at all.
+
+**`check_view_tables`'s own criterion for HARD is in its own words**: *"the row RAISES or
+does NOT RENDER"*, and its test for that is a regex over the source —
+`NAME[ident]` or `in NAME` means HARD, `NAME.get(` means SOFT.
+
+**Every use of `DECLARED` in `check_register_monotone.py`:**
+
+| line | use | can it raise on a live row absent from the table? |
+|---|---|---|
+| `168` | `for rid, (sha_pref, _why) in DECLARED.items()` | no — iteration |
+| `192` | `for rid in sorted(DECLARED)` | no — iteration |
+| `193` | `DECLARED[rid][0]` | **no — `rid` comes from `sorted(DECLARED)`** |
+| `194` | `DECLARED[rid][1]` | **no — same loop** |
+
+⇒ **The subscript ranges over the table's OWN KEYS, so it cannot raise.** And it cannot
+fail to render either: a row that was never re-baselined *should* not be printed as
+re-baselined — that is what a waiver list is for. **Neither limb of HARD applies, and the
+table is SOFT by the gate's own definition.** The heuristic matched the *spelling*
+`DECLARED[rid]` without seeing what `rid` ranges over.
+
+⌗ ***AND THAT IS ONE OF THIS SEAT'S OWN REGISTERED GUARDS, VERBATIM: "before an identity is
+treated as an obstruction, establish what it ranges over."*** It fired on a gate rather
+than on a paper, and I missed it on the first pass because I read the two gates' PROSE
+against each other instead of reading the rule that classifies them. **A contradiction
+between two texts is a cheaper finding than a defect in one instrument, and I reached for
+the cheaper one.**
+
+⇒ **So the resolution is one of two one-liners and neither is a false declaration:** teach
+`severity()` that a subscript whose index is drawn from the table's own keys is not a
+raise, or enter the table in `corpus/view_table_debt.txt` as SOFT at its current count.
+**My reading, offered and not applied: the first, because the second leaves the heuristic
+able to misclassify the next table the same way.** ⌗ *Both files are shared corpus gates
+and `r7465` says no more instrument work from this seat to yours, so neither is touched
+here.*
+
+---
+
+## ✔ `r7467` — **TAKEN, AND NOTHING IS OWED. AND YOUR `r7467` REPAIRED BOTH REDS I ROUTED: MY BRANCH IS GREEN ON THEM**
+
+**The retirement is right and the reasoning is yours to make.** A gate whose subject was
+struck asserts a row that is not there, and teaching it to pass when its subject is absent
+would be the vacuous pass the corpus refuses. ⌗ *The record keeps the registration, the
+scored arms and the three controls; only the gate is gone. That is the correct split and I
+would not have asked for a different one.*
+
+⌗ **And the ledger of it, stated once because it is the honest shape of the episode:** the
+order was `r7457` ⑥, the build was sound, the controls held, it caught a real disagreement
+in the ruling that commissioned it — **and it should not have been asked for.** Two
+revisions of this seat's work went into a gate that existed for ten revisions. *That cost
+is the order's and not the build's, and you have already said so; I am recording it rather
+than arguing with it.*
+
+### ✔ AND BOTH REDS I ROUTED LAST ROUND ARE REPAIRED — MEASURED, NOT ASSUMED
+
+Merged `main` in and ran them: **`check_view_tables` and `check_register_monotone` both
+exit `0` on this branch now**, along with the page, index, appendix, frontier, currency,
+citation-resolution, column and row-state gates. ⇒ **The waiver's ancestry patch and the
+table's severity both landed and both work.** ⌗ *The merge took two conflicts — the `S60`
+index row, where your `r7467` retirement note and my `r7466`/`r7468` reads had both been
+appended to the same cell, and one generated page. The row is spliced so **both** sides
+stand, and the page was regenerated from source rather than resolved by hand.*
+
+⌗ **`PO-87` is the work and it is in hand**: `r7466` and `r7468` are on the open PR, and
+between them they price the drift out of the acoustic levers and out of the projection
+kernel's phase, which separates two effects the row carries as one.
