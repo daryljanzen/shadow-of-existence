@@ -1,0 +1,101 @@
+==============================================================================
+r7454 SOUND -- WHAT THE RECORD STATES, WITH NOTHING INFERRED FROM A COUNT
+==============================================================================
+
+⚑ Ⓐ  THE TABLE PARSES TO 7 ROWS.  P18 says seven, twice.  HIT.
+
+⚑ THE ONE THING THIS CENSUS CAN ASSERT MECHANICALLY, AND IT IS A PARSE AND NOT
+  A VERDICT: ** 5 of P18's 19 open-item claims cite NOTHING, in the claim's own
+  sentence or anywhere in its paragraph. **  An uncited claim about what is open
+  cannot be checked against a source by any instrument that follows citations --
+  not by a better locator, and not by a reader either, without guessing which
+  result the claim is about.  This stands whatever the void above does.
+    ⊢ corpus/CR_synthesis.tex:1721  A reader is owed all three rather than a statistic that appears to have weighed them, and the axes do not measure the 
+    ⊢ corpus/CR_synthesis.tex:2716  The relative size is a number rather than an adjective. Seven open items stand against roughly seventy-four results ca
+    ⊢ corpus/CR_synthesis.tex:2774  The acoustic rejection of is the largest open item in the paper , and it is open in the strongest sense.
+    ⊢ corpus/CR_synthesis.tex:2774  The instrument is built, controlled against a known answer and converged, with the perturbations on the leaf congruenc
+    ⊢ corpus/CR_synthesis.tex:2963  That is the unpaid column, and it is short because the register is long --- not because anything has been left out. li
+
+==============================================================================
+Ⓔ  THE SEVEN AGAINST THE REGISTER'S LIVE ROWS
+==============================================================================
+  1. where a generation's colourless triple sits          → no live row
+  2. the matter content's generative law                  → no live row
+  3. what sets this arm's first peak                      → no live row
+  4. the progenitor spectrum                              → no live row
+  5. which mass the Hubble--Eddington radius tracks       → PO-93  (2 words shared)
+     which mass the Hubble-Eddington radius tracks
+  6. the charged collapse and the Cauchy horizon          → PO-92  (2 words shared)
+     what stands in the non-forming inner horizons place in a charged collapse
+  7. whether the tilt displacement is a tension           → no live row
+
+  ** 2 of the seven carry a live frontier row. **
+
+==============================================================================
+Ⓖ  DOES ANY PAPER BUT P18 ASSERT THE TERM COMPUTATION IS OPEN?
+==============================================================================
+  ⊢ corpus/CR_synthesis.tex:2905  Which term of the projection makes it is the open computation.
+
+  ** 1 occurrence(s), in 1 paper(s). **
+
+==============================================================================
+THE ADJUDICATION.  THIS SEAT'S, NOT THE INSTRUMENT'S, AND LABELLED AS SUCH.
+==============================================================================
+
+ADJUDICATED ① -- P18's claim is refuted by the paper it cites one sentence earlier.
+
+  P18 (corpus/CR_synthesis.tex, in the sentence after it cites the cosmology paper for the
+  0.996/1.045 pair):
+
+      "Which term of the projection makes it is the open computation."
+
+  The cited paper, in its own published text, states the answer and states it as a
+  negation of the question's form:
+
+      ⊢ corpus/CR_cosmology.tex:1706
+        ...sation at 1.058, against the full spectrum's 1.045, while every term's source ratio is at or below 0.992---so the projection raises this arm's contrast on nearly everything it projects, and no single term is the channel. Of the difference, about two fifths is this arm weighting the terms differently and the rest is each term's own response, two reweightings run in opposite directions agreeing to 0...
+
+      ⊢ corpus/CR_cosmology.tex:2726
+        ...And the stage at which the excess is made is located, and so now is the mechanism, which is where this sector's open work now sits: the difference is not in the source---the same statistic reads 1.047 on the projected spectrum against 0.996 and 0.992 on the source...
+
+      ⊢ corpus/CR_cosmology.tex:2726
+        ...And the mechanism is the kernel's own acceptance in wavenumber, stated as a law rather than as an account: for a standing oscillation the line-of-sight integral factorises with no approximation, so the comb reaches...
+
+  ⇒ ** THE ITEM IS ANSWERED, AND ANSWERED AGAINST ITS OWN FORM. **  "Which term"
+    has no answer of the shape it asks for, because the cited paper's answer is that
+    there is no term: the projection raises this arm's contrast on nearly everything it
+    projects.  An item like that cannot be discharged by doing what it asks, which is
+    why it is worth separating from an item that is merely unrun.
+
+  ⇒ ** AND THE NEXT QUESTION IS ALREADY ANSWERED TOO, WHICH THE CLAIM DOES NOT KNOW. **
+    The cited paper states the mechanism as a law with nothing fitted in it, holding to
+    within ten per cent of the measured amplitude on both arms at every band.  So the
+    sentence does not merely lag one result; it names as open the last two steps of a
+    chain the cited paper closes.
+
+ADJUDICATED ② -- and PO-87 inherited it.
+
+  PO-87's step (1), minted at r7393 from this sentence, reads: *"WHICH TERM OF THE
+  PROJECTION MAKES THE CONTRAST EXCESS ... which term of the projection makes it is the
+  open computation."*  A seat taking that step works a measurement the corpus holds in
+  two receipts and in the cited paper's own prose.  ** The step is retired, and what is
+  open in its place is not a term. **
+
+  What IS open, stated from the cited paper's own words rather than invented here: the
+  retention is what the kernel's acceptance makes of a given projection distance, and so
+  it turns on WHICH RATE THAT DISTANCE IS BUILT ON -- the one assignment where what the
+  construction specifies and what the sky prefers come apart.  That is a question about
+  the line-of-sight integral on this background, it is named in the cited paper, and it
+  is not "which term".
+
+ADJUDICATED ③ -- the instrument's own verdict on the instrument.
+
+  The mechanical half cannot certify ①.  It displays the same two sentences, but its
+  conjunction -- the item's cited source, the item's figures, a settlement marker --
+  also fires on P18's fourth-peak item, which is open and data-gated.  ** So the output
+  that agrees with the reading is not evidence for it. **  What established ① is the
+  record's own explicit statement, read; and PREDICTION.md recorded it as DECLARED
+  before any code existed, which is the only reason the void run's disagreement with it
+  was visible at all.
+
+price 1.0s

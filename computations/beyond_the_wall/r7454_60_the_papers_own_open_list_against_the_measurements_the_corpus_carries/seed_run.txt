@@ -1,0 +1,14 @@
+SEED
+  ✓ the table parses to seven rows
+  ✓ a figure is a token, not a substring: 0.9 does not match 0.992
+  ✓ a figure still matches itself
+  ✓ the cite key resolves to the cited paper
+  ✓ the claim this revision is about is in the population
+  ✓ the claim is one sentence, not a line fragment
+  ✓ its source resolves through its paragraph, not its own sentence
+  ✓ and its own figures are reachable at paragraph scope
+  ✓ a closure is not counted as an open item
+  ✓ the tabular preamble is not counted as a claim
+  ✓ the cited paper carries the negation of the claim's own form
+
+  0 assertion(s) failing
