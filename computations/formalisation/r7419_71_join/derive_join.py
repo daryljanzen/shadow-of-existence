@@ -63,6 +63,8 @@ SWEEP_STEPS = {99: 1, 109: 2, 11: 3, 34: 4, 36: 5, 103: 6, 32: 7, 38: 8, 56: 9, 
 
 # Rows no automatic source reaches, each read by hand from the file cited.
 MANUAL = {
+    70: (['conj_zero', 'gen_solves', 'fake_vev', 'fake_zero', 'deviation', 'cubic_nonres', 'cubic_channel', 'dE2_closed', 'dE2_receipt_sizes', 'conj_q3', 'conj_q3qpq', 'fake_receipt', 'locus', 'no_cancellation', 'pure_cubic_even', 'g3_derivs', 'trace_cube', 'trace_cube_cases', 'bookkeeping', 'frw_tab_k', 'fRk_maxsym', 'closed_dS', 'ms_q', 'frame_values', 'frame_weyl', 'eight_homogeneous', 'RiemQ_eq', 'RlT_bi', 'bianchi_connection', 'bi_scal', 'bi_gradient', 'bi_q', 'control', 'ratios_distinct', 'derivative_test', 'gauge_ratio', 'combo_homogeneous', 'ranks', 'residue_scheme', 'cited_bound', 'any_target'],
+         'r7443_71_campaign41/PROBE_RUN_A.txt; Row70Quartic.lean #print axioms list (r7443+71.27: one-word names the cell selector skips)'),
     52: (['open_leaf_curv', 'horo_on_hyperboloid'], 'r7323_71_instances/PROBE_RUN_R52.txt; CurvatureInstances.lean "Row 52"'),
     75: (['gowdy_tz_field'], 'r7323_71_instances/PROBE_RUN_R75.txt; CurvatureInstances.lean "Row 75"'),
     72: (['frw_closed'], 'r7335_70_row72/PROBE_RUN_FRW.txt; SecondSeatFRW.lean "Row 72"'),

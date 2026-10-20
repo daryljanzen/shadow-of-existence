@@ -10,6 +10,22 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ CAMPAIGN 41: ROW 70 `DONE` (`r7443+71.26`, `+71.27`). ⌗ LIBRARY GAP `4 → 3`, DONE `90`
+
+- ***Built,*** `probes/Row70Quartic.lean`, 41 theorems, standard axioms, `233 s`:
+  - the formal `dE₂ = (6g₄w² − 11g₃²)/(8w⁴)` on every ladder truncation, with the docstring saying it is not an
+    eigenvalue (the cubic oscillator is unbounded below);
+  - `dE₂ = 0` for every Hermitian conjugation, and the cubic's own completion `g₄ = 11g₃²/(6w²)` as the unique
+    zero locus;
+  - closed de Sitter's eight dimension-six scalars and `Weyl ≡ 0` on THE Levi-Civita connection, and the Bianchi I
+    control (`C² = 28/3`, all eight ratios distinct).
+- ***Imported, as registered:*** the `r6990` bound, the `1/60`, and the TT spectrum (data in E only).
+- ***Scored:*** `p 0.40` came true; the band `450–1400` was missed high by `7` lines (`1407`), from a copied
+  curvature-table lemma.
+- ***For r7453 ③:*** row 70's label `spectral theory` overstated what it needed. Its checks used no spectral
+  library; the spectrum enters as cited data, as for row 73. This goes into the class finding, which follows when
+  row 96's build is in.
+
 ## ⌗ CAMPAIGN 31: ROW 62's CLAIM 1, BUILT IN PART (`r7443+71.7`, `+71.25`). ⌗ ROW 62 STAYS `GENERIC-METRIC`
 
 - ***Built:***
