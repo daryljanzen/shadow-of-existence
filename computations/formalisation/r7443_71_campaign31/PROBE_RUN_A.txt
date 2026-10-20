@@ -1,0 +1,4 @@
+$ lake env lean probes/Row62Jet.lean
+'ShadowProbe.R62Jet.jet_series' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.R62Jet.frame_constant_closed_form' depends on axioms: [propext, Classical.choice, Quot.sound]
+exit 0 ; wall 501s

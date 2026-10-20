@@ -32,5 +32,5 @@
 #   that local transpositions do not give the full S_3 monodromy the row is about.
 index	plain	link
 18	the discriminant, which locates the branch points	probes/Row18Cubic.lean
-53	the number of free parameters in each family of solutions, which the receipt counts
-86	how many branches the height function has outside the throat, on it, and inside it
+53	the number of free parameters in each family of solutions, which the receipt counts	probes/Row53Row86.lean
+86	how many branches the height function has outside the throat, on it, and inside it	probes/Row53Row86.lean

@@ -67,6 +67,18 @@ MANUAL = {
     75: (['gowdy_tz_field'], 'r7323_71_instances/PROBE_RUN_R75.txt; CurvatureInstances.lean "Row 75"'),
     72: (['frw_closed'], 'r7335_70_row72/PROBE_RUN_FRW.txt; SecondSeatFRW.lean "Row 72"'),
     99: (['two_surface_gravities'], 'r7315_71_sweep RESULT table step B1; ShadowEngine.lean section SweepB1'),
+    64: (['rank_A', 'kernel_A', 'phase_A', 'substrate', 'R_deformed', 'inv_poly', 'orders', 'log_structure', 'ranks_by_order', 'L_coeff', 'rate_factor', 'log_coeff', 'control_weight', 'conventions_three', 'kernel_rotates', 'one_number', 'A6_factor'],
+         'r7443_71_campaign35/PROBE_RUN_A.txt; Row64Descent.lean #print axioms list (r7443+71.21: one-word names the cell selector skips)'),
+    68: (['completeness', 'orthonormal', 'traceless', 'trace_P', 'level_three', 'drop_one', 'exponent_zero', 'two_point', 'wick', 'wick_receipt', 'support', 'factorises', 'contract', 'eight_values', 'eight_homogeneous', 'value_rank_one', 'pow_homogeneous_3_to_6', 'combo_homogeneous', 'trivia'],
+         'r7443_71_campaign36/PROBE_RUN_A.txt; Row68Overlap.lean #print axioms list (r7443+71.21: one-word names the cell selector skips)'),
+    73: (['misner', 'unimodular', 'R3_round', 'R3_milnor', 'taylor', 'shapes', 'calibration', 'kinetic_linear', 'kinetic_exponential', 'unit_jacobian', 'quartic_vev', 'cubic_three_quanta', 'one_quantum_cancels', 'cubic_shift', 'fock_receipt', 'normalisation', 'total_shift', 'at_level_three', 'threshold', 'density_a6', 'linear_solves', 'rank_two', 'dmu_residues', 'dovmu_residues', 'faulhaber', 'log_coeff', 'residue_product'],
+         'r7443_71_campaign37/PROBE_RUN_A.txt; Row73Vertex.lean #print axioms list (r7443+71.21: one-word names the cell selector skips)'),
+    57: (['rank_eq_of_factor', 'Exp3', 'Exp3', 'turnover_unique', 'eps_size', 'inv_exp', 'source_moves', 'gradient_six', 'gradient_eight', 'realizable_cubics', 'dK_split', 'sector_orders', 'P_closed', 'ranks_by_order', 'second_direction', 'L_coeff', 'harmonic_closed', 'log_coeff', 'no_fourth_convention', 'zeta_face', 'trace_face', 'curvature_face', 'control_weight', 'faces_together', 'two_halves', 'vertex_scaled'],
+         'r7443_71_campaign39/PROBE_RUN_A.txt; Row57Second.lean #print axioms list'),
+    69: (['eps4_sign', 'eps4_det', 'eps4_zero_of_not_injective', 'eps4_antisymm', 'sum_eps', 'pontryaginLC_eq', 'GW_apply', 'gowdy_pontryagin', 'gowdy_plane_wave_pontryagin', 'gowdy_areal_pontryagin', 'gowdy_areal_weight', 'gowdy_areal_silenced', 'gowdy_areal_psi_constant', 'gowdy_areal_omega_constant', 'areal_profile_exists', 'cycle_average', 'cycle_average_quarter', 'cycle_average_in_step', 'cycle_average_anti_phase', 'cycle_average_bound', 'reflection_is_half_turn'],
+         'r7443_71_campaign40/PROBE_RUN_A.txt; Row69Pontryagin.lean #print axioms list'),
+    63: (['A1_cosh', 'A2_variance', 'A2_const', 'A2_sign', 'A2_sample', 'A3_radiation', 'A3_flat', 'B1_bare', 'B2_trace', 'B3_R', 'B3_slope', 'B3_iff', 'rank_one_of_const', 'moment_det_neg', 'C_controls', 'C_tower', 'C_receipt', 'adot_sq', 'Rtow_eq', 'zeta_rule_eq', 'Bj_zero', 'B3_zero', 'zeta_free_tower', 'zeta_protected', 'zeta_odd', 'series_inputs', 'rule_is_limit'],
+         'r7443_71_campaign38/PROBE_RUN_A.txt; Row63Anomaly.lean #print axioms list (r7443+71.21: one-word names the cell selector skips)'),
 }
 
 

@@ -1,0 +1,23 @@
+$ lake env lean probes/Row69Pontryagin.lean
+'ShadowProbe.R69Pontryagin.eps4_sign' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.R69Pontryagin.eps4_det' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.R69Pontryagin.eps4_zero_of_not_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.R69Pontryagin.eps4_antisymm' does not depend on any axioms
+'ShadowProbe.R69Pontryagin.sum_eps' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.R69Pontryagin.pontryaginLC_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.R69Pontryagin.GW_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.R69Pontryagin.gowdy_pontryagin' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.R69Pontryagin.gowdy_plane_wave_pontryagin' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.R69Pontryagin.gowdy_areal_pontryagin' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.R69Pontryagin.gowdy_areal_weight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.R69Pontryagin.gowdy_areal_silenced' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.R69Pontryagin.gowdy_areal_psi_constant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.R69Pontryagin.gowdy_areal_omega_constant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.R69Pontryagin.areal_profile_exists' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.R69Pontryagin.cycle_average' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.R69Pontryagin.cycle_average_quarter' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.R69Pontryagin.cycle_average_in_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.R69Pontryagin.cycle_average_anti_phase' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.R69Pontryagin.cycle_average_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.R69Pontryagin.reflection_is_half_turn' depends on axioms: [propext, Classical.choice, Quot.sound]
+exit 0 ; wall 400 s

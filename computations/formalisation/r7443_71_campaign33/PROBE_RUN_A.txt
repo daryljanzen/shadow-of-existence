@@ -1,0 +1,10 @@
+$ lake env lean probes/LibGap5.lean
+'ShadowProbe.LibGap5.b4_rewrite' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.LibGap5.shear_onset' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.LibGap5.friedrich_saturation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.LibGap5.one_scale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.LibGap5.mass_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.LibGap5.photon_sphere' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.LibGap5.nariai_seam' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.LibGap5.areas_entropies' depends on axioms: [propext, Classical.choice, Quot.sound]
+exit 0 ; wall 9 s

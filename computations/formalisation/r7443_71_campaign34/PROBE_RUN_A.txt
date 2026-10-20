@@ -1,0 +1,7 @@
+$ lake env lean probes/LibGap85_80.lean
+'ShadowProbe.LibGap85_80.tetrad_metric' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.LibGap85_80.superpotential_values' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.LibGap85_80.horizon_W' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.LibGap85_80.throat_check' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.LibGap85_80.killing_on_coset' depends on axioms: [propext, Classical.choice, Quot.sound]
+exit 0 ; wall 102 s
