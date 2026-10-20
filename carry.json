@@ -2583,6 +2583,11 @@
     "since": "187c5e53e933ae0fac87c43756f77ad321f914fb",
     "unmeasured": true
    },
+   "corpus/check_formalisation_join.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39459720668",
+    "since": "bec5766751ac82cf80a255e26d05a85554a5fd26",
+    "unmeasured": true
+   },
    "receipts/L220_arrival_paths/V2_the_arrival_path_admits_no_metric.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39453027024",
     "since": "187c5e53e933ae0fac87c43756f77ad321f914fb",
