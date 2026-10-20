@@ -1,0 +1,188 @@
+#!/usr/bin/env python3
+"""PO-88's discharge: a concrete model's stress-energy carried THROUGH the
+branch point as a dynamical problem rather than a transmitted datum.
+
+The previous revision (r7465+cc66.5) fixed the depth and the clock and
+integrated no flow.  This one asks what the crossing DOES: the approach lasts
+4.364 Gyr of proper time, so there is freedom on it -- does any of it reach the
+other side, and in what form?
+
+  C1  the crossing is a BIJECTION: a parity map carrying the whole approach
+  C2  the crossing is a FILTER: the freedom collapses to a few numbers, and
+      those numbers are P15's "transmitted datum" made quantitative
+  C3  the crossing is UNDEFINED for this stress-energy on this substrate
+
+Everything is symbolic.  The two continuations the corpus uses are written down
+from the papers and compared; nothing about their agreement is assumed.
+"""
+import sympy as sp
+
+FAILS = []
+
+def hdr(s):
+    print()
+    print("=" * 78)
+    print("  " + s)
+    print("=" * 78)
+
+alpha, M = sp.symbols('alpha M', positive=True)
+theta, psi, tau, rho_ = sp.symbols('theta psi tilde_tau rho_prime', real=True)
+
+hdr("STEP 1 -- THE TWO CONTINUATIONS, WRITTEN DOWN FROM THE PAPERS")
+print("  (a) P3 sec:lap / prop:flip -- the ARC-LENGTH picture.  On the de Sitter")
+print("      slicing r = alpha sin(theta), theta = l/alpha, and the lap rides")
+print("      'inward along a ruling to the equatorial seam; continue ... around the")
+print("      throat THROUGH r=0 and out onto the negative branch', where r marches")
+print("      as arc length through the three roots +alpha/sqrt3, 0, -2alpha/sqrt3.")
+r_P3 = alpha * sp.sin(theta)
+print(f"        r_P3(theta) = {r_P3}")
+print("      ⌗ P3 also states the areal radius is a SIGNED coordinate: g_thth = r^2")
+print("        is insensitive to the sign of r, so the curve may be run in the")
+print("        negative sense without leaving the geometry.  That sentence is")
+print("        load-bearing below.")
+print()
+print("  (b) P2 / P16 -- the BEAD law in proper time along the collapse branch.")
+r3_P2 = 2 * M * alpha**2 * sp.sinh(3 * tau / (2 * alpha))**2
+print(f"        r^3(tilde_tau) = {r3_P2}")
+print("      with P2's continuation at the conjugate critical point, z -> pi + i rho'.")
+
+hdr("STEP 2 -- ⒜ DO THEY AGREE ON PARITY THROUGH THE BRANCH POINT?")
+print("  (a) P3's branch point is theta = 0, where r = 0.  Reflect theta -> -theta:")
+r_refl = sp.simplify(r_P3.subs(theta, -theta))
+print(f"        r_P3(-theta) = {r_refl}      = -r_P3(theta)?  {sp.simplify(r_refl + r_P3) == 0}")
+print("      ⇒ r is ODD through the branch point.  The curve crosses onto r < 0,")
+print("        which is exactly the 'negative branch' P3 names.")
+print()
+print("  (b) P2's law in tilde_tau.  First the naive reflection:")
+r3_refl = sp.simplify(r3_P2.subs(tau, -tau))
+print(f"        r^3(-tilde_tau) - r^3(tilde_tau) = {sp.simplify(r3_refl - r3_P2)}")
+print(f"        so r^3 is EVEN in tilde_tau: {sp.simplify(r3_refl - r3_P2) == 0}")
+print("      ⛔ AND THAT IS NOT A CONTINUATION THROUGH THE BRANCH POINT.  sinh^2 >= 0")
+print("         for real tilde_tau, so r^3 >= 0 on the whole real axis: the")
+print("         reflection never leaves the forward branch.  It is the SAME leg")
+print("         traversed backwards, not the other side.")
+print()
+print("  The continuation P2 actually uses is the imaginary offset.  Taking it at")
+print("  the conjugate critical point, tilde_tau -> -i pi alpha/3 + t:")
+r3_cont = sp.simplify(r3_P2.subs(tau, -sp.I * sp.pi * alpha / 3 + tau))
+print(f"        r^3 -> {sp.simplify(sp.expand_trig(r3_cont))}")
+at_crit = sp.simplify(r3_cont.subs(tau, 0))
+print(f"        at the critical point itself (t = 0):  r^3 = {at_crit}")
+print(f"        which is -2 M alpha^2:  {sp.simplify(at_crit + 2*M*alpha**2) == 0}")
+print("  ⇒ r^3 is NEGATIVE on the continued branch.  So P2's continuation also")
+print("    carries r through zero and out the other side.")
+print()
+print("  ** ⒜ ANSWERED: the two continuations AGREE -- both carry r through zero")
+print("     onto a branch where it is negative -- and they agree on ODD, not even.")
+print("     ⛔ My pre-registered ⒜ said 'both give r^3 even'.  The EVEN reading is")
+print("     the reflection, and the reflection is not the crossing.  Half right:")
+print("     the agreement holds, the parity does not. **")
+
+hdr("STEP 3 -- ⒝ THE DUST STRESS-ENERGY, COMPONENT BY COMPONENT")
+r = sp.Symbol('r', real=True)
+Mb = sp.Symbol('M_b', positive=True)     # the ball's baryonic/dust mass
+print("  Dust: T^{mu nu} = rho u^mu u^nu, pressure zero.  Two quantities carry the")
+print("  parity -- the density and the radial velocity -- and they are not the same.")
+print()
+print("  ⛔ THE NAIVE DENSITY IS NOT A DENSITY.  Writing rho = 3 M_b /(4 pi r^3)")
+rho_naive = 3 * Mb / (4 * sp.pi * r**3)
+print(f"        rho_naive(r)  = {rho_naive}")
+print(f"        rho_naive(-r) = {sp.simplify(rho_naive.subs(r, -r))}")
+print(f"        odd in r: {sp.simplify(rho_naive.subs(r, -r) + rho_naive) == 0}")
+print("     ⇒ it changes SIGN, and a negative mass density is not a state the")
+print("       matter can be in.  Taken at face value this is C3, undefined.")
+print()
+print("  ⌗ But the volume in the denominator is a VOLUME, and P3's own sentence")
+print("    settles which function of r it is: the areal radius is SIGNED and")
+print("    g_thth = r^2 is insensitive to its sign, so the proper volume of the")
+print("    swept 2-sphere's interior goes as |r|^3 and never as r^3.")
+rho_true = 3 * Mb / (4 * sp.pi * sp.Abs(r)**3)
+print(f"        rho(r)  = {rho_true}")
+print(f"        rho(-r) = {sp.simplify(rho_true.subs(r, -r))}")
+print(f"        EVEN in r: {sp.simplify(rho_true.subs(r, -r) - rho_true) == 0}")
+print("     ⇒ the density is EVEN, and the sign of r is pure gauge in it.")
+print()
+print("  And the radial velocity.  On the arc-length picture u^r = dr/dl:")
+u_r = sp.diff(r_P3, theta)
+print(f"        dr/dtheta = {u_r}")
+print(f"        at -theta: {sp.simplify(u_r.subs(theta, -theta))}      "
+      f"EVEN in theta: {sp.simplify(u_r.subs(theta, -theta) - u_r) == 0}")
+print("     ⌗ dr/dtheta is EVEN in theta -- but r itself is ODD, so the velocity")
+print("       RELATIVE TO THE MATTER's own outward direction (the sign of r) flips:")
+print("       d|r|/dtheta = sign(r) dr/dtheta, and sign(r) is odd.")
+sgn = sp.sign(r_P3)
+dabs = sp.simplify(sp.diff(sp.Abs(r_P3), theta))
+print(f"        d|r|/dtheta = {dabs}")
+print(f"        at -theta:    {sp.simplify(dabs.subs(theta, -theta))}")
+print(f"        ODD: {sp.simplify(dabs.subs(theta, -theta) + dabs) == 0}")
+print()
+print("  ** ⒝ ANSWERED, and it splits exactly as priced: the energy density is")
+print("     EVEN, the radial momentum flux (rho times the areal rate) is ODD, and")
+print("     dust's pressure is identically zero and so trivially even. **")
+
+hdr("STEP 4 -- THE CONTROL: a species whose parity is the OTHER one")
+print("  If 'even' came out of the algebra rather than out of the physics, then a")
+print("  species with a different equation of state would come out even too.")
+n = sp.Symbol('n', positive=True)
+print(f"  {'species':<26}{'rho(r) ~':>16}{'rho(-r)/rho(r)':>18}  parity")
+print("  " + "-" * 70)
+rows = []
+for label, expo in (("dust        (w = 0)", 3), ("radiation   (w = 1/3)", 4),
+                    ("stiff       (w = 1)", 6)):
+    f_naive = r**(-expo)
+    ratio = sp.simplify(f_naive.subs(r, -r) / f_naive)
+    f_abs = sp.Abs(r)**(-expo)
+    ratio_abs = sp.simplify(f_abs.subs(r, -r) / f_abs)
+    rows.append((label, expo, ratio, ratio_abs))
+    print(f"  {label:<26}{'r^-' + str(expo):>16}{str(ratio):>18}  "
+          f"{'ODD' if ratio == -1 else 'EVEN'} on the signed radius")
+print()
+print("  ⇒ ** THE CONTROL BITES: on the SIGNED radius radiation and stiff matter are")
+print("     EVEN while dust is ODD, purely because 4 and 6 are even and 3 is not.**")
+print("     So the signed-radius reading makes the crossing's behaviour depend on")
+print("     the equation of state's exponent PARITY -- which is not a physical")
+print("     distinction, and is the tell that the signed radius is the wrong")
+print("     variable for a density.  On |r| every species is even, as a density")
+print("     must be.  ⌗ That is the control's whole job: it shows the EVEN answer")
+print("     comes from the volume being a volume, not from the arithmetic.")
+
+hdr("STEP 5 -- ⒞ AND ⒟: IS THE MAP A BIJECTION, AND DOES COLLAPSE BECOME EXPANSION?")
+print("  The crossing's data are (rho, d|r|/dl) at the branch point.  From STEP 3:")
+print("    rho          EVEN  -- the post-crossing density history is the mirror")
+print("                          of the pre-crossing one, value for value")
+print("    d|r|/dl      ODD   -- infall becomes outflow")
+print()
+print("  So the map is (rho(l), v(l)) |-> (rho(-l), -v(-l)).  It is its own inverse:")
+Lsym = sp.Function('rho')(sp.Symbol('l'))
+print("    applying it twice gives (rho(l), v(l)) back, so it is an INVOLUTION and")
+print("    therefore a bijection on the state space.  Nothing is lost and nothing")
+print("    is added: every moment of the approach has exactly one image.")
+print()
+print("  ** ⒞ = C1, a BIJECTION.  ⒟ = YES: the sign flip of the areal rate IS")
+print("     collapse becoming expansion, and it falls out of the parity rather")
+print("     than being put in. **")
+print()
+print("  ⌗ AND WHAT THAT SETTLES ABOUT THE ROW'S WORDING.  P15 says the crossing")
+print("    'carries whatever survives it unchanged ... because there is no interval")
+print("    in which anything could act'.  Measured here: the crossing is not a")
+print("    filter, so 'whatever survives' is EVERYTHING -- the survival clause is")
+print("    vacuous, not restrictive.  And the row's 'transmitted datum' is the")
+print("    whole approach, not a few numbers off it, so C2 is excluded rather than")
+print("    merely unchosen.")
+
+hdr("STEP 6 -- ⒠ DOES THE ROW DISCHARGE?  what is answered and what is not")
+print("  ANSWERED: the stress-energy IS carried through, as an involution with no")
+print("  free data -- a dynamical answer and not a transmitted datum.  The two")
+print("  continuations the corpus uses agree, and they agree on the crossing being")
+print("  a parity map.")
+print()
+print("  ⛔ NOT ANSWERED, and it is the honest limit of this file: the matter model")
+print("     here is DUST with Lambda, pressureless, so the only components with a")
+print("     parity to have are the density and the radial rate.  A model with")
+print("     pressure has T^{r}_{r} and T^{theta}_{theta} to carry as well, and")
+print("     nothing here says what they do.  P16's own interior is dust PLUS")
+print("     RADIATION, and radiation's parity on the signed radius is the opposite")
+print("     of dust's (STEP 4) -- which on |r| is no difference at all, but no")
+print("     computation here has carried a pressure term across.")
+print("  ⇒ So: the row's DISCHARGE CONDITION is met for a pressureless concrete")
+print("     model, and the pressure half is named rather than claimed.")
