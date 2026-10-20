@@ -199,16 +199,14 @@ return 0
 export NODE="${NODE:-ci}"
 GATE_TIMEOUT="${GATE_TIMEOUT:-280}"
 
-# ⛭⛭ r7457 ④: THIS SCRIPT NO LONGER STATES THE EXCLUSIONS -- IT READS THEM, AND THAT IS THE ORDER'S
-#   WHOLE POINT.  Until r7457 this file carried its own copy of `check_quote_pins`'s reason; `70`
-#   re-measured the gate and `66` corrected `turn_gates.sh`, and THIS copy went on asserting a `947 s`
-#   that was one container on one date and a `sweep_gates.sh asks it` that was false (that script is in
-#   no workflow).  ⇒ One table, sourced by both: `EXCLUDE_NAMES` + `reason_for` (hand-written cost and
-#   trigger entries) and `needs_unmet` (a precondition TESTED, so a gate runs again the moment its
-#   environment provides what it needs).
-[ -r scripts/_gate_exclusions.sh ] || { echo "  ⛔ scripts/_gate_exclusions.sh is missing -- it is the exclusion table's single source"; exit 2; }
-. scripts/_gate_exclusions.sh
-
+# name:reason -- a cost exclusion is printed, so it cannot be silent.
+COST_EXCLUDE="check_quote_pins"
+cost_reason_for() {
+    case "$1" in
+        check_quote_pins) echo "595s here / 186-279s in CI (70, r7453+70.2); turn_gates.sh excludes it for the same reason and CI asks it on every push -- NOTE r7457: this reason is a COPY of turn_gates.sh's and went stale the moment that one was corrected; sweep_gates.sh is in no workflow, so the old 'sweep_gates.sh asks it' was false" ;;
+        *)                echo "no reason recorded -- THIS IS A DEFECT, add one" ;;
+    esac
+}
 notgate_reason_for() {
     case "$1" in
         scripts/gen_pin_board.py)          echo "generator: it WRITES this file rather than asserting about it" ;;
@@ -220,7 +218,7 @@ notgate_reason_for() {
 }
 
 class_two() {
-    local changed f base hits g gates notgates excl why rc t0 secs failed timedout passed
+    local changed f base hits g gates notgates excl rc t0 secs failed timedout passed
 
     # ⛭ `*.md` IS IN THIS GLOB AND IT IS NOT DECORATION.  The first push of this very instrument touched
     #   `FOR_66.md` and nothing else of substance -- and `FOR_*.md` is read by `check_order_acknowledged`,
@@ -265,14 +263,9 @@ class_two() {
     passed=0; failed=""; timedout=0; excl=""
     for g in $gates; do
         base=$(basename "$g" .py)
-        case " $EXCLUDE_NAMES " in
-            *" $base "*) excl="$excl $base"; echo "      [excluded, cost/trigger] $base -- $(reason_for "$base")"; continue ;;
+        case " $COST_EXCLUDE " in
+            *" $base "*) excl="$excl $base"; echo "      [excluded, measured cost] $base -- $(cost_reason_for "$base")"; continue ;;
         esac
-        # ⛭ r7457 ⓒ: the SECOND exclusion kind, carried rather than flattened -- a precondition tested
-        #   here and now, printed on every skip, so a met precondition turns the gate back on.
-        if why=$(needs_unmet "$base"); then
-            excl="$excl $base"; echo "      [skipped, precondition tested] $base ($why) -- $(reason_for "$base")"; continue
-        fi
         t0=$(date +%s)
         ( cd "$(dirname "$g")" && timeout "$GATE_TIMEOUT" python3 -W ignore "$(basename "$g")" >/dev/null 2>&1 )
         rc=$?
@@ -288,7 +281,7 @@ class_two() {
 
     echo
     echo "    ran: $passed   failed: $(printf '%s\n' $failed | grep -c . || true)   over budget: $timedout"
-    [ -n "$excl" ] && echo "    excluded or skipped by the shared table (named above):$excl"
+    [ -n "$excl" ] && echo "    excluded by measured cost (named above):$excl"
     if [ -n "$failed" ]; then
         echo
         echo "  ⛔ A GATE THAT READS A DATA FILE THIS TREE CHANGED IS RED.  Repair before pushing:"

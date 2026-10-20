@@ -57,32 +57,36 @@ GATE_TIMEOUT="${GATE_TIMEOUT:-280}"
 #     BOTH VALUES WITH THEIR DATE -- and the timeout already derives the cost exclusion live,
 #     printing any gate over it as [UNRUN] by name.
 #
-# ⛭⛭ r7457+cc66 ④: THE TABLE IS NO LONGER HERE -- IT IS THE SINGLE SOURCE BOTH GATE SCRIPTS READ.
-#   `scripts/run_touched_readers.sh` carried a SECOND statement of one of these reasons, so correcting
-#   this copy at r7457 left that one asserting two false things.  ⇒ `EXCLUDE_NAMES`, `reason_for` and
-#   `needs_unmet` now live once, in `scripts/_gate_exclusions.sh`, with the policy note that explains
-#   why the cost half is hand-written and the NEEDS half is tested.
-[ -r scripts/_gate_exclusions.sh ] || { echo "  ⛔ scripts/_gate_exclusions.sh is missing -- it is the exclusion table's single source"; exit 2; }
-. scripts/_gate_exclusions.sh
+# ** NEEDS: a precondition the script TESTS, replacing an exclusion that estimated it. **
+#   A gate listed here is skipped only while its test fails, and the skip prints the test.
+#   This set cannot grow silently: when the precondition is met the gate runs.  That is the
+#   difference between an environment fact and a cost guess.
+needs_unmet() {
+  case "$1" in
+    check_compile)          command -v pdflatex >/dev/null 2>&1 || { echo "no pdflatex here"; return 0; } ;;
+    check_sitemap_resolves) [ -d _site ] || { echo "no assembled _site here"; return 0; } ;;
+  esac
+  return 1
+}
+
+# name:reason -- reason is printed, so an exclusion cannot be silent.
+EXCLUDE_NAMES="check_quote_pins check_receipts_run"
+reason_for() {
+  case "$1" in
+    check_quote_pins)      echo "595s here, 186-279s in CI (70, r7453+70.2) -- over this 280s timeout locally; the fast job asks it every push" ;;
+    check_receipts_run)    echo "a TRIGGER, not a cost: red whenever the tree digest moves (139s; the 9-minute figure described the RE-RUN, not the gate)" ;;
+    # r7435: the one gate whose subject is the DEPLOYED site.  `_site/` is built
+    #   by `pages.yml` and exists nowhere in a working tree, so the turn batch
+    #   was asking it about a directory that is never here.  It is NOT taught to
+    #   exit 0 on a missing `_site`: a gate that passes when its subject is
+    #   absent is the vacuous pass its own sitemap-presence assertion exists to
+    #   prevent, and moving that hole up one level is not closing it.
+    check_sitemap_resolves) echo "needs the assembled _site and is the deploy job's question, not the turn's" ;;
+    *)                     echo "no reason recorded -- THIS IS A DEFECT, add one" ;;
+  esac
+}
 
 ALL=0; [ "${1:-}" = "--all" ] && ALL=1
-# ⛭ r7457+cc66 ④: `--print-exclusions` prints the table and the roster and RUNS NOTHING.  The r7457 ⓓ
-#   control -- corrupt one reason in the single source, confirm BOTH scripts print the corrupted text --
-#   otherwise costs a 133-gate batch, which makes a control nobody re-runs.
-if [ "${1:-}" = "--print-exclusions" ]; then
-  echo
-  echo "  TURN-GATES -- the exclusion table, from scripts/_gate_exclusions.sh, nothing run"
-  echo
-  for n in $EXCLUDE_NAMES; do echo "    [excluded, cost/trigger] $n -- $(reason_for "$n")"; done
-  for g in corpus/check_*.py; do
-    n=$(basename "$g" .py)
-    case " $EXCLUDE_NAMES " in *" $n "*) continue;; esac
-    if why=$(needs_unmet "$n"); then echo "    [skipped, precondition tested] $n ($why) -- $(reason_for "$n")"; fi
-  done
-  echo
-  echo "    roster: $(ls corpus/check_*.py | wc -l | tr -d ' ') gate(s) in the glob, minus the names above"
-  exit 0
-fi
 pass=0; fail=0; unrun=0; failed=""; notrun=""; ran=0
 skipped_needs=""
 : > /tmp/_tg_roster.$$
