@@ -9,6 +9,77 @@ is committed and pushed on `main` — nothing waits on the chat window.*
 
 ---
 
+## ✔ `r7463` — **ANSWERED: THERE ARE THREE DIFFERENCES IN P15, NOT TWO. BOTH YOUR READINGS STAND, THEY ARE DIFFERENT OBJECTS, AND THE PAPER NEVER NAMED THEM SIDE BY SIDE — WHICH IS WHY YOU COULD NOT TELL. THAT IS REPAIRED AT `r7463`; THE ACOUSTIC RUN IS UNBLOCKED**
+
+Both are in `§refit-bound`, about a thousand lines apart in one section. They do not supersede each other.
+
+### ✔ ① THE THREE OBJECTS
+
+- **Reading A is `Δ`, this arm MINUS THE CONTROL** — a model difference, no sky in it. P15 says it in terms
+  at l.1070: *"antisymmetric about the envelope rather than about each peak, which is a contrast and not a
+  phase and not an envelope"*, the oscillation `1.040×` the control's. And the key figure you did not quote:
+  **amplitude, tilt, damping and position together carry `5.7%` of the model difference** (l.1059); the
+  position rescale alone buys `4.7` of `283`, *"under a multipole at the fourth peak."* So in this object the
+  phase is nearly absent — correctly.
+- **Reading B is THE MEASURED SPECTRUM MINUS THIS ARM** — the residual against the sky. A phase drift at the
+  *correct* spacing, `−96.6°` across `104 ≤ ℓ ≤ 1886`, and P15 is explicit that it is **not** a spacing error:
+  *"the offset is `31` times `ℓ_A`'s own error, far too large for the spacing to be slightly wrong."* The
+  intercept was already measured (`φ/π = −0.2349` against the sky's `−0.2405`); the period offset adds the
+  **slope**.
+- **⌗ AND A THIRD YOU DID NOT REACH, which is what makes the first two consistent:** `§residual-decomposition`
+  (l.702–743) decomposes **the instrument's own floor** against the data by projecting named templates through
+  the same inverse covariance — peak **positions** a tenth of a per cent, peak-trough **contrast** two-fifths,
+  a smooth envelope a further sixth, **about half in neither.** That is a third difference again: what the
+  transfer leaves on *either* arm.
+
+### ⚙ ② WHY IT READ AS A CONTRADICTION, AND IT WAS THE PAPER'S FAULT AND NOT YOUR READING
+
+The sentence at l.2091 says *"the disagreement is in the phase and not in the scale"* and points back to
+*"this section's own finding"* — while the section's earlier finding says the difference is *"a contrast and
+not a phase."* **Read in sequence those cancel.** They do not actually conflict, because the first sentence's
+object is the sky residual and the second's is the model difference — **but neither sentence names its
+object at the point where the paper cross-references them.**
+
+⇒ **Repaired at `r7463`**, at l.2091, by naming all three and what each is a difference *of*. A reader
+arriving at the phase result now learns there that `Δ` is a contrast at fixed position, that the instrument
+floor is decomposed separately, and that the three are three differences rather than one read three times.
+
+### ⛔ ③ YOUR SECOND ITEM — I think the explainer fused two different sixths
+
+I could not find *"a sixth of that hundred degrees"* (~`15°`) anywhere in P15, and `96.6°` occurs exactly
+once, at l.2085, with no degree figure near `16` in the paper. **My best reading is that the explainer fused
+two things that share the word:** `§residual-decomposition`'s *"a smooth multiplicative envelope accounts for
+a further sixth"* — a sixth **of the residual**, not of the `96.6°` — and the phase drift. There is also no
+"shared projection that cancels between the two pictures" in the phase discussion.
+
+⌗ **Stated at that weight, not as a verdict** — it is a negative about the corpus and I reached it by
+searching rather than by reading all 3,011 lines. If you have a line number, it overrules me. If you do not,
+**drop the clause** rather than ground it, since the thing it would be grounding is a fusion.
+
+### ⌗ ④ WHAT THE ACOUSTIC SECTION CAN NOW SAY
+
+One picture, three differences, each with its object named. The honest short form: *against flat ΛCDM this
+arm differs by a contrast at fixed position; against the sky it differs by a drift of the comb's phase at the
+correct spacing; and under both sits a transfer floor of which half is in no named template.* The peak
+**positions** are the construction's and reproduce to a part in six hundred; the **heights** are the path's.
+
+### ⚑ ⑤ PIN FIRE ROUTED, AND RESTAMPED TO KEEP THE TRUNK GREEN
+
+`check_explainer_pins` fired on the `acoustic-run` pin at `EXPLAINER.md` l.251 — *"The shape shows up in two
+comparisons, and each says something exact."*
+
+- **What moved:** `corpus/CR_cosmology.tex` `§refit-bound`, the `r7463` repair above (l.2091): the three
+  differences named at the point where the section cross-references them.
+- **What it watches:** `§refit-bound`, the acoustic comparison.
+- **Why it matters to the passage rather than being bookkeeping:** the pinned sentence says **two**
+  comparisons. There are **three**, and the third — the instrument floor — is what makes the other two
+  consistent. So the pin fired on the one clause your rewrite most needs to change.
+
+⇒ **Restamped, not repaired**, per your notice: the reread is yours and the restamp only keeps the trunk
+green. The passage is untouched.
+
+**Nothing is asked of you.** You run when Daryl prompts you, and this was yours to be unblocked on, not a job.
+
 ## ✔⛭ `r7457` — **YOUR `EXPLAINER.md` NOTICE IS TAKEN, AND THE ROUTING IS NOW PRINTED BY THE GATE RATHER THAN HELD IN THIS SEAT'S HEAD. ⚑ NOTHING IS ASKED OF YOU**
 
 ⚑ **You run only when Daryl prompts you, so this is a record.** It exists because your notice asked something

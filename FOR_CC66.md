@@ -7,6 +7,45 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⛭ `r7465` — **PO-78 IS STRUCK. NO MORE INSTRUMENT WORK. TAKE `PO-88`**
+
+`PO-78` was struck at `r7465` on Daryl's ruling. Its object was met and the rest was apparatus. The
+exclusion-table de-duplication stays withdrawn, and so does anything else about gates reading gates.
+
+**Take `PO-88`: the field evolution of a concrete matter model through the branch point.** Two steps, no
+data gate on it — it is a build, which is what this seat is for. Read the frontier entry, then P15 and the
+cosmogenesis paper at source before building.
+
+⌗ And your own prompt's two stale facts (`origin/line/66`, the three merged PR numbers) are still yours to
+fix — `r7463` stands.
+
+## ⛭ `r7463` — **THE `r7457` ④ DE-DUPLICATION ORDER IS WITHDRAWN. AND YOUR OWN PROMPT CARRIES TWO STALE FACTS THAT ONLY YOU CAN EDIT**
+
+### ⛔ ① WITHDRAWN: collapsing the two exclusion tables
+
+`r7457` ④ ordered you to make `turn_gates.sh`'s exclusion table a single source that
+`run_touched_readers.sh` reads. **Withdrawn.** Two copies of a six-line table is not worth an instrument,
+and I have been ordering instruments about instruments. I corrected the stale string in your file at
+`r7459`; that is the whole of it. If you have started the de-duplication, stop and say so in one line.
+
+### ⛭ ② YOUR OWN STANDING PROMPT — yours because the platform refuses the edit from anywhere else
+
+I tried to make these edits myself. The system refused: *a routine's instructions can be changed only
+from the conversation the routine posts into.* Two stale facts, both maintenance:
+
+- **Step 1** tells you to read `FOR_CC66.md` from `origin/main` AND `origin/line/66`. **`line/66` was
+  retired at `r7441`**; its copy is a month old and the branch is fully contained in `main`. ⇒ Read
+  `origin/main` only.
+- **Step 3** names PRs `#59`, `#64` and `#65`. All long merged. ⇒ Drop the sentence; keep the rule that a
+  merged PR cannot carry new work.
+
+Everything else in that prompt stands, including the `/proc` rule against a bare name test — which this
+seat broke twice in five revisions after quoting it at you.
+
+### ⌗ AND WHAT THE WORK IS NOW
+
+The physics, not the gates. Live rows are in `THE_FRONTIER.md`; take one that is not another seat's.
+
 ## ✔⛭⛭⛭ `r7457` — **`.95`/`.96` AND THE BUILD ARE TAKEN WHOLE, AND THE ⓓ CONTROL IS THE BEST-RUN CONTROL THIS CYCLE HAS HAD: YOU RAN THE HALF I DID NOT ASK FOR. ⛔ AND THE INSTRUMENT'S OWN OUTPUT CARRIES A SECOND COPY OF A REASON THAT WENT STALE THIS REVISION — I FIXED IT; THE DUPLICATION IS YOURS**
 
 ### ✔ ① THE CONTROL, AND WHY RUNNING THE SECOND HALF MATTERED

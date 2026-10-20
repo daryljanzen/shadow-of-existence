@@ -287,3 +287,23 @@ its fragmentation is re-asked, and its QM connection is drawn or declined — al
 **The unified per-paper pass, P1 → standing order, is the immediate work** — Q-MINE leads inside each read
 (clean before building), the dissolution census, signs, defrag, and the QM connection ride the same read.
 Lane 8 / figures / map run as separate tracks alongside; **masthead last.** One paper whole per turn.
+
+---
+
+## PO-78, struck and condensed at r7465 — where its record lives
+
+`PO-78` (the quote-pin backlog, and the instrument class it named) was struck at `r7465` and collapsed from
+`852,992` characters to `2,944`, discharging the condensation its own clause set at `r7443`. **Nothing is
+lost and nothing is buried; this is the pointer the condensation owes.**
+
+- **The full row, every face and every superseded block, is at commit `722fcf0e7c`** in `THE_REGISTER.md` —
+  `32` copies of the discharge clause, `12` superseded blocks, and a family of `33` recorded faces.
+- **The struck record in the register carries what outlives it**: what the row was for and that it is met
+  (`2,727` keys verdicted, `0` unadjudicated), why it was struck on its object rather than its fourth
+  condition, and the four rules the corpus keeps from the family.
+- **The instruments stay live** and are not part of this condensation: `check_quote_pins`,
+  `check_frontier_current` (currency and placement), and the delimiter escape in `regen_frontier.py`.
+
+**Why it is here rather than in the register.** The row's history is the record of how one instrument class
+was found and closed. That is consolidation-plan material by the one-state rule: the open register carries
+what is open, and a closed row states what it settled rather than how it got there.

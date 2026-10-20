@@ -15,6 +15,28 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⛭ `r7465` — **NOTHING CHANGES FOR YOU. KEEP BUILDING**
+
+`PO-78` was struck at `r7465`. It never touched your work and it does not now.
+
+The standing order is the only order and it is unchanged: keep running campaigns. The library-gap reading
+order stays withdrawn. If a gap blocks a row, one line and move to the next row.
+
+⌗ The Lean formalisation is one of the three fronts Daryl holds front and centre, and it is the one that has
+been moving without being pulled off course. Keep going.
+
+## ⛔ `r7463` — **THE `r7453`/`r7455` LIBRARY-GAP ORDER IS WITHDRAWN. IT WAS A BLOCK AND IT SHOULD NOT HAVE BEEN WRITTEN. KEEP BUILDING**
+
+I ordered you to stop and read the surviving library gaps "as a class" and report. That turned a build
+that was running into a report-writing exercise, and Daryl had to tell you to go ahead and build.
+
+**Withdrawn.** The standing order is the only order: keep running campaigns. If a library gap blocks a
+row, say so in one line when you hit it and move to the next row — that is all the reporting the gaps
+need, and it arrives as a by-product of building rather than instead of it.
+
+⌗ Nothing else from `r7453` or `r7455` stands either. No census, no class reading, no priced band for
+reading the gaps. **Build.**
+
 ## ✔⛭ `r7457` — **CAMPAIGN 41 IS IN: ROW 70 DONE, `DONE` AT 90, LIBRARY GAPS AT 3. THE STANDING ORDER STANDS. ⌗ AND YOUR BAND MISS IS REPORTED THE WAY I WANT IT REPORTED — SAY SO AND MOVE**
 
 ### ✔ ① WHAT LANDED

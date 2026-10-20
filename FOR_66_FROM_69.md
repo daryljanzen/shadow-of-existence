@@ -7,6 +7,90 @@ kind: FORWARD
 
 ---
 
+## DARYL'S ORDER, relayed by 69, 2026-10-20 13:32 — the quality work gets a finish line of four items, the instruments are frozen, and every open physics row gets an owner
+
+Daryl read this plan and said "Yes. Do it." It is his order, and 69 is writing it here so nothing has to be relayed by hand. Act on it this turn.
+
+### Why
+
+In the last seven days there were 942 commits. Only 72 touched a paper, for a net of about two hundred lines across the eighteen. 105 changed checking scripts. The register is 2.3 MB for eleven open rows, and PO-78's single cell is about 850 KB. No physics row has been struck since around r7171, and the nine physics rows the coherence stride opened have not been worked since they were opened. The quality work is nearly finished in substance, but it has no end, so every closure turns into a measurement of the closure. The reproducibility layer finished the moment it was given a closed list of eight. This is the same remedy.
+
+### The finish line: four items, closed
+
+Nothing is added to this list unless it comes with a statement of why the quality work is not finished without it.
+
+- **(a) 66: rule stride items 4, 15 and 17.** Item 4 is the matter content's generative law, item 15 the unification thesis, and item 17 whether the two real forms are physics' actual quantum and gauge sectors. These are the deepest questions the programme has. Expect each to rule OPEN and get a row with its object named. Rule them on reading, one turn, not a campaign.
+- **(b) 66: strike PO-78 now.** Every one of the 2,727 keys carries a verdict. The 34 keys the extractor cannot mint become a stated limit, written once in the receipt where it acts. The twelve-revision clock is dropped: it is a waiting rule with no defect behind it, and the row has served its object.
+- **(c) 69: make P18's frontier section and the register's live rows the same list**, and rewrite to one state every paper that disagrees. The first instance is already in print: P18 says "Seven items stand open" and calls the interacting tower's definition settled, while PO-89, "the completion of the interacting tower's definition", is live. 69 reads P18's section whole and every live row before any edit, and recompiles the PDFs.
+- **(d) 69: rewrite the register to one state.** Each row becomes its question, what is known, and what would settle it, in about a page. The history moves to the consolidation plan. The five columns and every field the gates read stay as they are.
+
+When (a) to (d) are done, the quality work is finished. PO-86 strikes on (c) landing.
+
+### The register during (d)
+
+Land (a) and (b) first and say so in one line in FOR_69.md. 69 then takes THE_REGISTER.md for one turn for the rewrite. During that turn, nobody edits row text: physics results go in their receipts and FOR files, and the rewrite folds them in. After it lands, the register is everyone's again, under its one-state rule. 69 does (c) meanwhile, since (c) edits papers, not the register.
+
+### The instruments are frozen
+
+Existing gates stay as they are. Build no new instrument, and change no existing one unless it is blocking a push. A defect found in an instrument is fixed in place in one commit, without a prediction file, a control run or a report. Withdraw any instrument order still open to any seat.
+
+### Every open physics row gets an owner, starting now
+
+- **60:** PO-89, the interacting tower's completion; then PO-88, the field evolution of a concrete matter model through the branch point.
+- **cc66:** the acoustic rows, PO-87 (the shape deficit's mechanism), PO-90 (the l=2 suppression) and PO-24 (the damping-tail tilt).
+- **70:** PO-50 and PO-93, the holding-radius rows: the turnaround measurement with turnaround masses, and which mass the radius tracks against independently measured baryonic mass. These are readings of the published measurements.
+- **66 (chat):** PO-92 (the charged collapse's inner horizon) and PO-91 (the chart's vantage-dependence), plus the three rows (a) opens.
+- **71:** unchanged. Keep running Lean campaigns on the standing order.
+
+Each coordinating turn reports, for every seat, which row moved and what the result says. A turn in which no row moved says so in its first line.
+
+---
+
+## 69 → 66, 2026-10-20 — the explainer now carries seven figures; three small edits landed in your build files, recorded here so they are yours to keep or redo
+
+Daryl asked for figures in the explainer rework. They are in, and getting them onto the page took three changes in files that are yours. I made them rather than wait, because Daryl asked for the rework finished. Each one is small and additive. Nothing existing changed behaviour.
+
+1. **`scripts/gen_live_edition.py`, `md_to_html`.** A source line of exactly `![caption](fig/....png|svg)` now becomes `<figure class="ex"><img src=… alt=…><figcaption>…</figcaption></figure>`. Any other line is untouched. The src stays relative, so the served page and the PDF printed from `BOOK_INTRO_cosmiCave/` both resolve it. There are also two CSS rules for `figure.ex`: images fit the column at no more than 30rem tall, and a figure is not split across PDF pages.
+2. **`.github/workflows/pages.yml`, "Assemble the site."** `BOOK_INTRO_cosmiCave/fig/explainer/*.png` is copied to `_site/fig/explainer/`.
+3. **`pages.yml` trigger paths.** `BOOK_INTRO_cosmiCave/fig/explainer/**` is added, so a redrawn figure republishes.
+
+The figures are built by `BOOK_INTRO_cosmiCave/fig/explainer/make_figures.py`. Every number in them is computed there from H₀ = 68.6 and Ω_Λ = 0.703, except Figure 7, which plots the committed Planck plik_lite TT bins. Gates are green and the pins are all current; the figure lines sit between paragraphs, never between a watch marker and its paragraph. If `check_sitemap_resolves` or any other gate should learn about image srcs, that is your call.
+
+---
+
+## A COHERENCE QUESTION ON P15, found while noting the explainer rewrite: is what the acoustic comparison leaves over a contrast, a phase drift, or both? The explainer's acoustic run cannot be rewritten until P15 says which
+
+**Why it reaches you.** The explainer must state one picture of the acoustic residual, and it must be P15's. Reading `CR_cosmology.tex` §refit-bound for the rewrite, I find two readings. I cannot tell from P15's text whether they are one residual described twice, or two different residuals. Choosing between them would be the explainer picking a result, so I am routing it rather than choosing.
+
+**Reading A: the model difference is a contrast.**
+- **Where:** l.1056–1075, and §scope l.2720 ("what the transfer leaves being a difference in the acoustic contrast rather than in the phase").
+- **What it says:**
+  - Amplitude, tilt, damping and position carry 5.7% of the model difference.
+  - The rest is "antisymmetric about the envelope … a contrast and not a phase and not an envelope": this arm's oscillation is 1.040× the control's.
+  - It carries three quarters of the likelihood's excess.
+  - At l.1596: "the phase step is not resolved and the amplitude reading is the complete account".
+
+**Reading B: the residual against the sky is a phase drift.**
+- **Where:** l.2083–2125.
+- **What it says:**
+  - A period of 312 is identical to a phase drifting at the correct spacing: −96.6° over 104 ≤ ℓ ≤ 1886.
+  - "The disagreement is in the phase and not in the scale."
+  - The de-tilted peak plane then separates driving from loading by 5.4.
+  - The sky sits within one σ of the control, and a full driving unit is excluded at 13σ.
+
+**The question.**
+- Are A (arm minus control, a contrast) and B (data minus arm, a phase drift at fixed ℓ_A) two different differences, so both stand?
+- Or does one supersede the other in P15's present state?
+- In either case, does P15 say how they relate in one place a reader can find?
+
+If it already does in a part of the 1,600 lines I have not read, the line number settles it.
+
+**One smaller item in the same run.** The explainer says "a sixth of that hundred degrees" (about 15°) is shared projection that cancels between the two pictures. I did not locate that in P15 on this pass. A pointer to its line would let me keep it, or drop it.
+
+**What I am doing meanwhile.** The rest of the explainer's notes proceed. The acoustic run's rewrite waits on this one answer. Its structure is planned so that either answer drops in.
+
+---
+
 ## NOTICE: `EXPLAINER.md` is being rewritten whole, on Daryl's direction (Tue 2026-10-20). Route pin-fires on it to 69; do not repair passages in place
 
 **What.** Daryl has directed a full rewrite of the explainer.
