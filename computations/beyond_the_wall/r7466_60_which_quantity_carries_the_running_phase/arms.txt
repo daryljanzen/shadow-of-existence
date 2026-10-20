@@ -1,0 +1,166 @@
+
+r7466 — WHICH QUANTITY CARRIES A RUNNING PHASE AT CORRECT SPACING.
+
+`PO-87` ②, taken as physics on order `r7465`.
+
+WHAT IS SETTLED AND IS NOT RE-RUN.  The residual's preferred period `311.79 +/- 2.99` and the comb's
+`l_A = 298` are the SAME two-dimensional model -- identical residual sum of squares to `0` -- so the
+`+14.00` offset at `4.69` sigma IS a linear phase drift of `-96.6` degrees at correct spacing, an
+identity and not a fit preference.  And the FREE-PERIOD SLOPE cannot say which term carries it: `n_s`,
+a primordial tilt with no acoustic phase in it, moves that statistic as much as `omega_b` does.  Both
+banked receipts name the same owed object: ** a different statistic. **
+
+THIS IS THAT STATISTIC.  The PER-PEAK phase
+
+    phi_n = l_n / l_A - n          and its SLOPE  s = d phi / d n
+
+built from peak POSITIONS rather than from a one-amplitude-fitted residual, which is the property the
+free-period slope lacked.  Measured on the bank: the two nine-run direction grids, the driving-off
+pair, and the `RBFAC` loading lever -- the clean lever the earlier receipt recorded as NOT banked and
+which is banked now.  ** No new spectrum.  Nothing refitted. **
+
+THE TARGET, DERIVED RATHER THAN ASSERTED.  If a series sits at period `P` while the comb's unit is
+`l_A`, then `l_n = n P - c` gives
+
+    phi_n = n (P/l_A - 1) - c/l_A     =>     s_required = P/l_A - 1
+
+which is the sign convention as well as the size: the data's period is LONGER, so the phase the model
+would have to acquire runs UP with `n`.  ⌗ `PREDICTION.md` registered `0.0454` by converting `-96.6`
+degrees over `104 <= l <= 1886` at `l_A = 301.4`; the direct ratio at `l_A = 298` is `0.0463`.  Both
+are printed below, because WHICH `l_A` converts degrees into peaks is a choice and it moves the target
+by two per cent.
+
+⌗ THE PEAK FINDER IS IMPORTED FROM `r7201`'s `analyse_ten.py`, NOT REWRITTEN (`r7445`'s rule).  Its
+  function definitions are loaded by `ast` so the module's own analysis does not run -- one copy of
+  the predicate, taken from the authoritative file, with none of its side effects.
+
+⌗ `PO-87`'s FOURTH-PEAK HALF IS DATA-GATED AND IS NOT TOUCHED.  Nothing here is reported against the
+  fourth-peak datum.
+
+
+========================================================================================================
+  THE PER-PEAK PHASE AND ITS SLOPE, on every banked configuration
+========================================================================================================
+  configuration                      l_A  npk          s     se(s)   scatter   phi_n
+  oneclock:cr_base               301.380    5   -0.02405   0.01116   0.03529   -0.1516 -0.1477 -0.2527 -0.2170 -0.2372
+  oneclock:cr_H0p                297.132    5   -0.02512   0.01168   0.03692   -0.1488 -0.1432 -0.2534 -0.2160 -0.2380
+  oneclock:cr_H0m                305.910    5   -0.02313   0.01057   0.03343   -0.1536 -0.1520 -0.2513 -0.2180 -0.2363
+  oneclock:cr_OMp                299.163    5   -0.02475   0.01170   0.03701   -0.1503 -0.1439 -0.2541 -0.2165 -0.2377
+  oneclock:cr_OMm                303.782    5   -0.02354   0.01070   0.03383   -0.1524 -0.1505 -0.2513 -0.2175 -0.2365
+  oneclock:cr_NSp                301.380    5   -0.02413   0.01117   0.03532   -0.1514 -0.1477 -0.2528 -0.2172 -0.2374
+  oneclock:cr_NSm                301.380    5   -0.02396   0.01115   0.03525   -0.1518 -0.1477 -0.2526 -0.2169 -0.2370
+  oneclock:cr_WBp                302.414    5   -0.02415   0.01128   0.03568   -0.1529 -0.1475 -0.2539 -0.2182 -0.2383
+  oneclock:cr_WBm                300.338    5   -0.02390   0.01102   0.03485   -0.1502 -0.1479 -0.2513 -0.2157 -0.2358
+  oneclock:lcdm_base             301.375    5   -0.02418   0.01135   0.03589   -0.1517 -0.1467 -0.2534 -0.2169 -0.2375
+  oneclock:lcdm_H0p              297.088    5   -0.02528   0.01197   0.03786   -0.1489 -0.1420 -0.2547 -0.2158 -0.2383
+  oneclock:lcdm_H0m              305.952    5   -0.02324   0.01074   0.03397   -0.1538 -0.1512 -0.2521 -0.2179 -0.2366
+  oneclock:lcdm_OMp              299.290    5   -0.02486   0.01188   0.03757   -0.1504 -0.1430 -0.2547 -0.2164 -0.2380
+  oneclock:lcdm_OMm              303.625    5   -0.02370   0.01091   0.03450   -0.1524 -0.1494 -0.2520 -0.2174 -0.2369
+  oneclock:lcdm_NSp              301.375    5   -0.02427   0.01136   0.03593   -0.1515 -0.1467 -0.2535 -0.2170 -0.2377
+  oneclock:lcdm_NSm              301.375    5   -0.02409   0.01134   0.03585   -0.1519 -0.1467 -0.2533 -0.2167 -0.2373
+  oneclock:lcdm_WBp              302.408    5   -0.02429   0.01148   0.03631   -0.1529 -0.1465 -0.2546 -0.2180 -0.2386
+  oneclock:lcdm_WBm              300.334    5   -0.02403   0.01121   0.03544   -0.1503 -0.1469 -0.2520 -0.2156 -0.2361
+  licensed:cr_base               302.889    5   -0.02861   0.01096   0.03464   -0.1525 -0.1592 -0.2655 -0.2342 -0.2580
+  licensed:cr_H0p                298.542    5   -0.02920   0.01147   0.03628   -0.1503 -0.1542 -0.2656 -0.2324 -0.2572
+  licensed:cr_H0m                307.529    5   -0.02784   0.01038   0.03284   -0.1552 -0.1640 -0.2648 -0.2361 -0.2583
+  licensed:cr_OMp                300.588    5   -0.02898   0.01147   0.03626   -0.1517 -0.1551 -0.2663 -0.2330 -0.2577
+  licensed:cr_OMm                305.387    5   -0.02800   0.01046   0.03306   -0.1539 -0.1634 -0.2647 -0.2356 -0.2578
+  licensed:cr_NSp                302.889    5   -0.02869   0.01097   0.03468   -0.1524 -0.1592 -0.2656 -0.2344 -0.2582
+  licensed:cr_NSm                302.889    5   -0.02854   0.01094   0.03461   -0.1526 -0.1592 -0.2654 -0.2341 -0.2579
+  licensed:cr_WBp                303.929    5   -0.02866   0.01108   0.03505   -0.1536 -0.1589 -0.2666 -0.2346 -0.2591
+  licensed:cr_WBm                301.842    5   -0.02823   0.01085   0.03431   -0.1518 -0.1595 -0.2642 -0.2331 -0.2561
+  licensed:lcdm_base             301.375    5   -0.02418   0.01135   0.03589   -0.1517 -0.1467 -0.2534 -0.2169 -0.2375
+  licensed:lcdm_H0p              297.088    5   -0.02528   0.01197   0.03786   -0.1489 -0.1420 -0.2547 -0.2158 -0.2383
+  licensed:lcdm_H0m              305.952    5   -0.02324   0.01074   0.03397   -0.1538 -0.1512 -0.2521 -0.2179 -0.2366
+  licensed:lcdm_OMp              299.290    5   -0.02486   0.01188   0.03757   -0.1504 -0.1430 -0.2547 -0.2164 -0.2380
+  licensed:lcdm_OMm              303.625    5   -0.02370   0.01091   0.03450   -0.1524 -0.1494 -0.2520 -0.2174 -0.2369
+  licensed:lcdm_NSp              301.375    5   -0.02427   0.01136   0.03593   -0.1515 -0.1467 -0.2535 -0.2170 -0.2377
+  licensed:lcdm_NSm              301.375    5   -0.02409   0.01134   0.03585   -0.1519 -0.1467 -0.2533 -0.2167 -0.2373
+  licensed:lcdm_WBp              302.408    5   -0.02429   0.01148   0.03631   -0.1529 -0.1465 -0.2546 -0.2180 -0.2386
+  licensed:lcdm_WBm              300.334    5   -0.02403   0.01121   0.03544   -0.1503 -0.1469 -0.2520 -0.2156 -0.2361
+  lever:cr_rb0.1                 272.419    5   -0.04399   0.01086   0.03434   -0.0959 -0.1920 -0.2557 -0.2622 -0.2808
+  lever:cr_rb0.5                 286.060    5   -0.02966   0.00895   0.02829   -0.1353 -0.1721 -0.2521 -0.2356 -0.2518
+  lever:cr_rb1.5                 315.272    5   -0.02376   0.01426   0.04509   -0.1510 -0.1214 -0.2520 -0.2033 -0.2289
+  lever:cr_nodrive               301.380    5   -0.02694   0.00912   0.02885   +0.0078 -0.0674 -0.1035 -0.1063 -0.1074
+  lever:lcdm_rb0.1               272.453    5   -0.04405   0.01093   0.03456   -0.0957 -0.1921 -0.2560 -0.2623 -0.2808
+  lever:lcdm_rb0.5               286.077    5   -0.02971   0.00903   0.02855   -0.1353 -0.1717 -0.2526 -0.2356 -0.2520
+  lever:lcdm_rb1.5              ABSENT FROM THE BANK
+  lever:lcdm_nodrive             301.375    5   -0.02674   0.00911   0.02880   +0.0080 -0.0669 -0.1028 -0.1054 -0.1065
+
+--------------------------------------------------------------------------------------------------------
+  THE LEVERS — what moves s, and by how much
+--------------------------------------------------------------------------------------------------------
+  the target: s_required = P/l_A - 1 = 311.79/298.0 - 1 = +0.04628 cycles per peak
+              the same drift read in degrees over 104<=l<=1886 at l_A=301.38: +0.04538
+              ⌗ two per cent apart, and the difference is WHICH l_A turns degrees into peaks
+
+  lever                                      ds       err   ds/err   as a share of target
+  oneclock cr H0 (plus-minus)          -0.00200   0.01575     0.13                 -0.043
+  oneclock cr OM (plus-minus)          -0.00121   0.01586     0.08                 -0.026
+  oneclock cr NS (plus-minus)          -0.00017   0.01578     0.01                 -0.004
+  oneclock cr WB (plus-minus)          -0.00025   0.01577     0.02                 -0.005
+  oneclock lcdm H0 (plus-minus)        -0.00204   0.01609     0.13                 -0.044
+  oneclock lcdm OM (plus-minus)        -0.00116   0.01613     0.07                 -0.025
+  oneclock lcdm NS (plus-minus)        -0.00017   0.01605     0.01                 -0.004
+  oneclock lcdm WB (plus-minus)        -0.00026   0.01604     0.02                 -0.006
+  licensed cr H0 (plus-minus)          -0.00136   0.01547     0.09                 -0.029
+  licensed cr OM (plus-minus)          -0.00098   0.01552     0.06                 -0.021
+  licensed cr NS (plus-minus)          -0.00015   0.01549     0.01                 -0.003
+  licensed cr WB (plus-minus)          -0.00043   0.01551     0.03                 -0.009
+  licensed lcdm H0 (plus-minus)        -0.00204   0.01609     0.13                 -0.044
+  licensed lcdm OM (plus-minus)        -0.00116   0.01613     0.07                 -0.025
+  licensed lcdm NS (plus-minus)        -0.00017   0.01605     0.01                 -0.004
+  licensed lcdm WB (plus-minus)        -0.00026   0.01604     0.02                 -0.006
+
+  cr loading  ds/dlnRBFAC (0.5->1.5)   +0.00537   0.01532     0.35                 +0.116
+  cr loading  base minus RBFAC=0.1     +0.01995                                    +0.431
+  lcdm loading  base minus RBFAC=0.1   +0.01987                                    +0.429
+  cr driving  REMOVED minus base       -0.00289   0.01441     0.20                 -0.062
+  lcdm driving  REMOVED minus base     -0.00256   0.01455     0.18                 -0.055
+
+========================================================================================================
+  THE ARMS, AGAINST PREDICTION.md — registered 7dd49bd7 before this file existed
+========================================================================================================
+  Ⓐ the tilt control   predicted the tilt moves s by < 1/3 of what WB does
+                       measured  |ds| NS 0.00016 · WB 0.00034 · ratio 0.465
+                       ⇒ MISS
+
+  Ⓑ the clean loading  predicted non-zero, NEGATIVE, order 0.01 per lnRBFAC
+                       measured  +0.00537 +/- 0.01532
+                       ⇒ MISS ON THE SIGN, right on the order: more loading
+                         runs the phase UP with n, not down.
+
+  Ⓒ the driving        predicted 3x to 20x the loading, same sign both arms
+                       measured  driving -0.00289 · loading +0.00537 · factor 0.54
+                       control arm driving -0.00256 — same sign: True
+                       ⇒ MISS, AND IT INVERTS THE MEAN-PHASE ORDERING: on the
+                         MEAN the driving is 7.7x the loading; on the SLOPE it
+                         is 0.54x.  ** The driving is a large phase effect with
+                         almost no run in it. **  Same sign in both arms: HIT.
+
+  Ⓔ the reach          predicted NO single banked lever reaches the target inside an
+                       admissible shift; the loading alone needs more than 2x in RBFAC
+                       load:cr                       0.116 of the target per lever step
+                       drive:cr                      0.062 of the target per lever step
+                       drive:lcdm                    0.055 of the target per lever step
+                       oneclock:lcdm:H0              0.044 of the target per lever step
+                       licensed:lcdm:H0              0.044 of the target per lever step
+                       oneclock:cr:H0                0.043 of the target per lever step
+                       ⇒ HIT.  The best lever reaches 12 per cent
+                         of the drift, and THE BUDGET section prices what even that
+                         costs in the l_A the sector already matches.
+
+  Ⓕ the linearity      predicted POOR: scatter at least 2x the slope's own error
+                       measured  CR base scatter 0.03529 against se(s) 0.01116 · ratio 3.16
+                       phi_n = -0.1516 -0.1477 -0.2527 -0.2170 -0.2372
+
+  Ⓖ the resolution     predicted se(s) of the same ORDER as the target, so that
+                       five peaks could not settle it and the cost would be MORE PEAKS
+                       measured  se(s) 0.01116 against target 0.04628 · ratio 0.24
+                       ⇒ MISS, AND THE MISS CHANGES THE PRESCRIPTION.  The drift
+                         would be a 4.1 sigma effect on five
+                         peaks, so the statistic is NOT resolution-limited.  What
+                         fails is the SHAPE: a line is the wrong summary of a step,
+                         and the levers' own slope effects are 6 to 12 per cent of
+                         the drift whatever the error bar.  ** So the owed object is
+                         not more peaks.  It is a different shape. **
