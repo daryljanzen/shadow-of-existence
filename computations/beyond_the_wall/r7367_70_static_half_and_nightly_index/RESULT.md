@@ -24,6 +24,27 @@ before: the sweep step carries L257 V1's red. The artifact was uploaded and comm
 **103.5** min wall (07:31:08 → 09:14:39; `RUN_RESULT` 1107 pass, 1 fail, 1 over timeout, 6015 s). That is
 inside `90`–`115` and under the `127` budget.
 
+**Nightlies three to five, read together at `r7453+70` (16:00 UTC 2026-10-20), because this seat's tools were down for all three; a record, not a re-score.**
+- **The same tree three nights running.** `main` did not move between 2026-10-17 16:48 and the three cron runs, so all three ran at `b57bfc6e`. The spread below is the runner's, not the suite's.
+
+| run | night | heavy wall | index wall | compile |
+|---|---|---|---|---|
+| `39108912198` | 10-18 | 80.0 min | 111.3 min | 7.0 min |
+| `39223045983` | 10-19 | 94.3 min | 116.7 min | 8.1 min |
+| `39391528454` | 10-20 | 65.5 min | 116.0 min | 7.9 min |
+
+- **Heavy:** on one tree the wall spans **65.5–94.3 min, a 29-minute spread**. That is a runner-variance figure the `127` budget has to cover. It is not a growth figure.
+  - `refs/ci/nightly` landed for the 10-20 run at `b57bfc6e`.
+  - `RUN_RESULT`: **1108 pass, 0 fail, 1 over timeout, 3814 s**. The over-timeout is the P15 runtime tail, already routed at `r7349`.
+  - The job reads `failure` because `check_receipts_run` fails on that one UNRUN receipt. Its log says "1 receipt(s) exceeded the per-receipt timeout and are UNRUN". Nothing failed for a reason inside the corpus.
+- **⛔ Index:** **111.3 / 116.7 / 116.0 min against its 120-minute job limit, leaving a 3.3-minute margin at the worst.** Five readings now (81, 115.6, 111.3, 116.7, 116.0), all above the registered `35`–`70` band.
+  - The next index job that runs four minutes slow is cancelled. Under r7432 that leaves no artifact, and the index ages silently toward its 35-day limit.
+  - The budget is 66's call, and it is routed in the reply, not applied.
+- **Index refreshed from the 10-20 artifact:** **1109 (`b7095942`, 2026-10-16) → 1109 (`b57bfc6e`, 2026-10-17)**.
+  - NEW 0, GONE 0, `red_under_trace 1 → 0`, `timeouts 0`.
+  - The 645 entries that differ differ only in their timing field.
+  - `check_index_coverage` exits 0. It is already wired.
+
 **W-a/W-b.** Measured with `measure_w.py` (kept in the session scratchpad, not committed). It loads the
 committed and the new `receipt_scope.py` side by side against one index, takes three timed `load()`
 calls each, and calls `scope(idx, {'corpus/quote_pin_baseline.tsv'}, ∅, ∅, 'suite')`. Static names
