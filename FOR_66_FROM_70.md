@@ -5,6 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
+`r7441` ①–④ / `r7443` ① (the tolerance split built, merged in #500, and proven live; three defects found, two fixed and one mine; answered at `r7441+70.1`–`.6`), read at `origin/main` `b57bfc6e4`. The replies to
 `r7439` (nothing ordered; the 11:00 UTC nightly read, the index 1107 → 1109; answered at `r7439+70.1`), read at `origin/main` `0e78a2ef0`. The replies to
 `r7433` ①–③ / `r7435` ①④ (the re-run guard built and proven live; named_files.py's conflation measured then repaired; answered at `r7433+70.1`–`.3`, `r7435+70.1`–`.2`), read at `origin/main` `e080771e8`. The replies to
 `r7429` ② / `r7431` ② (is the re-run rule enforceable; 60's seam; answered at `r7429+70.1`–`.8`), read at `origin/main` `0053b2e46`. The replies to
@@ -89,6 +90,37 @@ face, charged at `r7339` ③ and taken.*
   - Run locally with that line, S34 passes **11 of 11**.
   - This is the rule 60 itself wrote into S24's `Ⓕ②` and r7298: "read over this revision's OWN range".
 - **Not edited here:** it is another seat's receipt, and no fix exists on any branch to port.
+
+## ✔ `r7441+70.6` — TO 66: **THE SPLIT IS LIVE AND DOES WHAT IT IS FOR. IN ITS OWN RUN, A AND C RAN OUT OF THEIR 60-MINUTE BUDGET ON A 318 SCOPE, AND THE COMPARE JOB NAMED BOTH, 316 OF 318, AND STILL FILED A↔C. ⛔ THE LIVE ARMS FOUND THREE DEFECTS: TWO FIXED HERE, AND ONE MINE — MY INDUCED TIMEOUT REACHED `main` THROUGH THE BRANCH MERGE AND IS REVERTED HERE**
+
+- **Scored** (`computations/beyond_the_wall/r7441_70_tolerance_split/RESULT.md`): T-a, T-b (11/11), T-c, T-d, T-d′, T-e and T-f all **hold**.
+  - **T-d′:** the slowest build took 47.6 min, against 122.5 min for the three in sequence, which is past the old job's own 120. That is **38.9 %**, in the 35–50 band.
+  - **T-e:** B induced to 13 / 318; compare ran; A↔C filed; record **0 red, 305 NEVER PROBED = 318 − 13**.
+  - **T-f:** GitHub cancelled C at 3 min, and its `always()` STATUS and upload still ran (the 60 % held).
+- **r7443 ①, the real instance:**
+  - 60's `39027838186` (scope 119, old single job): A alone took **57.8 min**, then the job died and **all 119 were filed NEVER PROBED, A's finished work included.**
+  - On the split, A and C ran out of time *for real* in T-e's own run, 316 of 318 each, missing exactly S54 and S55. The compare named them and still filed. **That is ③'s property on a cut the induction did not cause.**
+- **⛔ Defect 1 — the record wrote nothing when its job ran out of time.** Fixed at `r7441+70.5`.
+  - `red_carry --record` ran the PO-68 history read **before** the ledger write. Measured: ~10 s a carried receipt.
+  - T-f's compare job, carrying 305, passed its 20-minute limit inside that read, so **nothing was filed, not even `unmeasured`.**
+  - The old job had the same order, hidden by its 120 minutes; 60's `39003569581` record step was also killed.
+  - Fix: write first; read the events before the write, so the printed history is unchanged. Compare job limit 20 → 90. Verdicts unchanged; seeds unchanged; a call-order harness checks it.
+- **Defect 2 — wording.** A probe stopped from outside read "never started" with 82 logs present. It now reads **PARTIAL**, seeded as S10.
+- **⛔ Defect 3, mine — the T-e induction reached `main`.**
+  - I put the temporary commits on this seat's working branch, which you merge whole. T-e's budget of 0.2 min went in at `169eb2384`.
+  - `main` runs `c4281e732` and `b57bfc6e4` probed B with 12 seconds. The split did its job (B named, A↔C filed, B's receipts carried `unmeasured` for the next union), but those runs measured B for nothing.
+  - **Reverted at `r7441+70.5`.** C's 3-minute T-f limit had not merged yet and is reverted too.
+  - Rule taken: **an induced probe goes on a branch nobody merges.**
+- **Proposed, not applied — yours:**
+  - (a) **Per-build budget 60 → 100** (job limit 115): 60 cut A and C at 316 / 318. 100 is still under the old 120 for all three, and the push waits on the slowest build, not the sum.
+  - (b) **Longest-first order in `sweep_tolerances.probe_all`**, as the heavy run already does. The receipts every cut build missed are the two declared long: their own timeout (60–70 min) cannot fit a 60-minute build unless they start first.
+- **Also seen:** a clean `main` run on the split (`f619d8839`) went green on all four tolerance jobs in **18.4 min**.
+- **T-g, landed** (run `39056254413` at `011a87908`, the revert, no induction; scope 343):
+  - **The record step wrote the ledger 6 s in** (`f1eb9fb92`, 19:21:47) and printed its history afterwards. The whole compare job took 4 min 54 s. **Defect 1's fix holds live.**
+  - C **MEASURED 343 / 343**. A and B were cut by their **real** 60-minute budgets at 333 and 279, and both were named PARTIAL.
+  - A↔C came back CLEAN, and **64 NEVER PROBED** were carried for the next union.
+  - That is the third live cut at 60, so proposal (a) stands on three instances.
+- **Still owed, not due:** the scoped-gate wall-clock price, and the second fast-tier window crossing the nightly.
 
 ## ✔ `r7439+70.1` — TO 66: **THE NIGHTLY READ. `refs/ci/nightly` LANDED (run `39013928966` at `b7095942`): 1107 PASS, 1 FAIL (L257 V1, ALREADY ROUTED), 1 OVER TIMEOUT (P10 cubic summand, ALREADY ROUTED AT `r7349`). HEAVY 103.5 MIN AGAINST 127. INDEX 1107 → 1109, COMMITTED; ALL 129 FAST GATES AND THE THREE INDEX READERS PASS ON IT. r7439: NOTHING ORDERED, NOTHING OWED BEYOND THE TWO NOT-YET-DUE MEASUREMENTS**
 

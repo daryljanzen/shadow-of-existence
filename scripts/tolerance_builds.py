@@ -60,11 +60,16 @@ def read_build(d, scope):
     have = {f[:-5] for f in os.listdir(d) if f.endswith('.json')}
     k = sum(1 for r in scope if key(r) in have)
     st = os.path.join(d, 'STATUS')
-    rc = open(st).read().split('rc=', 1)[-1].split()[0] if os.path.exists(st) else None
+    raw = open(st).read() if os.path.exists(st) else ''
+    rc = raw.split('rc=', 1)[-1].split()[0] if raw else None
     tail = f'{k} of {n} probed' + (f', {torn} torn log(s) set aside' if torn else '')
     if rc is None:
         return 'PARTIAL', f'no STATUS: the job was stopped from outside before the probe finished -- {tail}', k
     if rc == 'none':
+        # ⛭ r7441+70 T-f, measured live: a job stopped by GitHub kills the probe's shell before it writes its rc,
+        #   so the always() step writes `rc=none probe=cancelled` -- and the probe HAD run, with logs to show.
+        if 'probe=cancelled' in raw or k:
+            return 'PARTIAL', f'the probe was stopped from outside (its step was cancelled) -- {tail}', k
         return 'UNMEASURED', f'the probe never started -- {tail}', k
     if rc in TIMEOUT_RCS:
         return 'PARTIAL', f'the probe ran out of its own budget (rc {rc}) -- {tail}', k
@@ -168,8 +173,12 @@ def seed():
         rc, st, txt = run({}, {'B': (None, scope[:1], False), 'C': ('1', scope, False)})
         res['S8. no STATUS reads PARTIAL (stopped from outside); rc 1 reads BROKEN, not PARTIAL'] = \
             st['B'][0] == 'PARTIAL' and 'from outside' in st['B'][1] and st['C'][0] == 'BROKEN' and rc & 2
+        # ⑩ T-f, live: the job was stopped by GitHub mid-probe -- `rc=none probe=cancelled`, with logs -- is PARTIAL
+        rc, st, txt = run({}, {'C': ('none probe=cancelled install=success', scope[:1], False)})
+        res['S10. a probe stopped from outside (STATUS rc=none probe=cancelled, 1 log) reads PARTIAL, not "never started"'] = \
+            st['C'][0] == 'PARTIAL' and 'stopped from outside' in st['C'][1] and '1 of 2' in st['C'][1] and rc == 2
         # ⑨ the probe never started
-        rc, st, txt = run({}, {'C': ('none', [], False)})
+        rc, st, txt = run({}, {'C': ('none probe=skipped install=failure', [], False)})
         res['S9. STATUS rc=none reads UNMEASURED (the probe never started)'] = st['C'][0] == 'UNMEASURED' and rc == 2
     finally:
         shutil.rmtree(tmp, ignore_errors=True)
