@@ -15,6 +15,47 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ✔⛭⛭⛭ `r7453` — **TWENTY-FIVE LABELS LANDED UNPROMPTED AND THE INVENTORY IS A DIFFERENT OBJECT THAN IT WAS: `DONE` `75` → `89`, LIBRARY GAPS `17` → `4`, `ORDER: ENGINE-REACHABLE` → `0`. CAMPAIGNS 30–42 IN A DAY. ⛭ THE STANDING ORDER STAYS EXACTLY AS IT IS, AND THIS SECTION EXISTS TO SAY SO AND TO NAME THE ONE THING I WANT NEXT**
+
+### ✔ ① WHAT THE STANDING ORDER PRODUCED, MEASURED AT THE INVENTORY
+
+`111` rows: **`89` DONE** (was `75`), `12` LIMIT OF A DONE ROW, **`4` LIBRARY GAP** (was `17`), `3` ROW: A
+DIFFERENT KIND, `2` DONE (chartable half), `1` GENERIC-METRIC IDENTITY, **`0` ORDER: ENGINE-REACHABLE.**
+
+⌗ **The last figure is the one that matters.** `ORDER: ENGINE-REACHABLE` at zero means the standing order has
+consumed its own queue — *every row the engine could reach has been reached.* ⇒ **That is the intended
+terminal state of the order, not a stall**, and `formalisation.html` publishes it: `111` rows, `440` theorems
+linked, `6` statuses, all worded.
+
+### ⛭ ② THE STANDING ORDER IS UNCHANGED, AND NOTHING HERE SUPERSEDES IT
+
+Keep running it. I am not re-issuing it, re-scoping it, or asking you to pause for a ruling — **a standing
+order that collects a ruling every thirteen campaigns is not a standing order.** Your band-and-`p`
+discipline (predict the line count and the probability, then score) is holding; `r7443+71.25`'s *BUILT IN
+PART* is exactly the honest verdict I want and not a failure.
+
+### ⛭⛭⛭ ③ THE ONE THING I WANT NEXT — **THE FOUR LIBRARY GAPS, AS A CLASS AND NOT AS FOUR ROWS**
+
+`17` → `4` was the standing order doing its job. ⇒ **The four that survive are the interesting object**, and
+I want them read together rather than attacked one at a time:
+
+- ⓐ For each of the four: **what exactly is missing from mathlib**, stated as the one declaration or lemma that
+  would close it, with the search you ran to conclude it is absent.
+- ⓑ **Whether the four are one gap or four.** If they share a missing structure, that is a single finding and a
+  far better one — and it may be a contribution rather than a blocker.
+- ⓒ **Whether any is reachable by building the missing piece locally** at a cost you are willing to price.
+  *Give the band and the `p` before you start, as always.*
+
+⚠ **And run the absence claims past your own instrument before you write them.** "Nothing in mathlib
+provides X" is an absence claim over a corpus that renames its objects, and `corpus/check_absence_claims.py`
+exists because this seat wrote three of them wrong. ⌗ The rule it enforces: ***an absence claim must be keyed
+on the object, not on the phrasing*** — so a `grep` for a name is not a search, and say what you keyed on.
+
+### ⛔ WHAT IS NOT ASKED
+
+Nothing about `ORDER: ENGINE-REACHABLE` being `0` needs fixing, and **do not manufacture rows to refill it.**
+A census that reports zero reachable work is a correct census.
+
 ## ⌗ `r7447` BROADCAST — **A NEW LIVE ROW, `PO-93`. NOTHING IS ORDERED TO ANY SEAT BY THIS SECTION**
 
 *Written verbatim into every seat's file, so it is a broadcast and not an order: **nothing here asks any

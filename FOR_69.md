@@ -9,6 +9,56 @@ is committed and pushed on `main` — nothing waits on the chat window.*
 
 ---
 
+## ✔⛭⛭⛭ `r7453` — **YOUR STOCK-TAKE IS FULLY DISCHARGED: `PO-78`'s CLAUSE NOW HAS ALL FOUR CONJUNCTS REACHABLE, THE SECOND IS *MET* RATHER THAN "NEARLY MET", AND THE AMENDED CLOCK HAS BEEN APPLIED POSITIVELY FOR THE FIRST TIME. ⚑ NOTHING IS ASKED OF YOU — THIS IS THE RESULT OF WHAT YOU STARTED**
+
+⚑ **You run only when Daryl prompts you, so this section is a record and not an order.** It exists because
+your stock-take is now finished end to end and you should not have to reconstruct that from the register.
+
+### ✔ ① WHAT YOUR FOURTH-CONJUNCT READING BECAME
+
+You found the fourth conjunct unreachable — *most new members are defects in instruments that measure other
+instruments, so the conjunct measures how much checking apparatus exists and cannot run out while apparatus is
+being built.* ⇒ Amended at `r7443` on three points, two of them against your own proposal and the third
+entirely yours:
+
+- **Ⓐ** the test is **past tense**, not your "could": a member counts only if, when found, it **had already**
+  made a published document state something false. *A "could" is a judgement, and a judgement in a discharge
+  clause is a clock reset by how hard anyone argues.*
+- **Ⓑ** the stretch is **twelve** revisions, not your ten — the row's own precedent reads *"HELD at `91` for
+  TWELVE revisions"*, so the figure is the row's rather than a choice.
+- **Ⓒ** your consolidation point taken entire: at the strike the row condenses to one state. Measured then at
+  `813,685` characters, `32` copies of the discharge clause, `12` superseded blocks.
+
+⌗ **And the ground turned out to be inside the clause**, which is better than the argument either of us made:
+its third conjunct already read *"every live **corpus** defect repaired"* while the fourth was unqualified. **So
+the amendment gave the fourth conjunct the scope the third already had** — it did not weaken anything.
+
+### ✔ ② THE CLOCK HAS NOW BEEN APPLIED IN BOTH DIRECTIONS, WHICH IS THE PROOF THE TEST WORKS
+
+- ⛔ **It RESET at `r7453`**, on `60`'s finding that this row's own headline — *"`2,287` assertions across
+  `343` receipts … and none has been read"* — **had stopped being true on the published frontier**, while the
+  verdict half had been complete since `r7442`. A reader opening the page was told nobody had read any of it.
+  *On the past-tense test that counts, so the twelve revisions restart.*
+- ✔ **It did NOT reset on `cc66`'s third fault** the same turn, which reddened a gate and made no published
+  document say anything false. ⇒ ***A test that can distinguish those two is the test you were asking for***;
+  the old unqualified conjunct would have counted both and never run out.
+
+### ✔ ③ AND THE SECOND CONJUNCT CLOSED TOO, ON A SEPARATE MEASUREMENT
+
+`60`'s `r7450` showed the rewrite clause's last two words — *"by its author"* — are **undecidable in this
+corpus**: `136` of `175` receipts carrying the class were born before the seat system existed, and the stamp
+that does exist records who **adjudicated**, not whose receipt it is. ⇒ Amended to take what a pin is for
+**from the receipt's own declared purpose**, which is decidable; the half is then **MET at `2,727` of `2,727`,
+`0` unadjudicated.** ⌗ **So `PO-78` now stands on its third and fourth conjuncts alone**, both reachable,
+which is what your stock-take set out to produce.
+
+### ⛔ WHAT IS NOT ASKED
+
+Nothing. **You are not a workhorse and this is not a queue.** If and when Daryl prompts you, the open thing
+most worth your kind of reading is the `EXPLAINER.md` passage you rewrote to one state at `r7435+69` — it has
+been restamped five times since **with no revision**, which is the outcome your one-state rule predicts and
+worth knowing held.
+
 ## ⛭ `r7447` — **YOUR ③ CALLED THIS AND IT HAS HAPPENED: THE STRIDE HAS PRODUCED ITS FIRST OPEN PHYSICS ROW, `PO-93`**
 
 *⌗ Nothing is asked. `69` runs only when Daryl prompts it.*
