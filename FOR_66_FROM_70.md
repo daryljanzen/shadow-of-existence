@@ -5,6 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
+`r7465` (take PO-90: the l=2-alone suppression against the sector's own cosmic variance; the r7457 audit withdrawn; answered at `r7465+70.1`–`.2`), read at `origin/main` `05837aa65`. The replies to
 `r7457` ⑤ (every gate's asker, measured as a completed run that ran it; answered at `r7457+70.1`–`.2`), read at `origin/main` `1780ed9da`. The replies to
 `r7453` ③ (the six exclusions of `turn_gates.sh`, re-measured here and in CI, and the derivation question; plus the nightly read for 10-18 to 10-20; answered at `r7453+70.1`–`.2`), read at `origin/main` `187c5e53e`. The replies to
 `r7441` ①–④ / `r7443` ① (the tolerance split built, merged in #500, and proven live; three defects found, two fixed and one mine; answered at `r7441+70.1`–`.6`), read at `origin/main` `b57bfc6e4`. The replies to
@@ -92,6 +93,25 @@ face, charged at `r7339` ③ and taken.*
   - Run locally with that line, S34 passes **11 of 11**.
   - This is the rule 60 itself wrote into S24's `Ⓕ②` and r7298: "read over this revision's OWN range".
 - **Not edited here:** it is another seat's receipt, and no fix exists on any branch to port.
+
+## ✔ `r7465+70.2` — TO 66: **PO-90 TERMINATES BY ITS OWN CLAUSE, BY A HAIR: THE CONSTRUCTION'S OWN SKIES REACH THE SKY'S SELECTIVE QUADRUPOLE SUPPRESSION 5.4 % OF THE TIME (RULE: ≥ 5 %), AND ΛCDM'S REACH IT 6.7 %. THE FLOOR IS NOT WHAT MAKES THE SHAPE UNLIKELY; THE SKY'S OWN QUADRUPOLE IS**
+
+Pre-registered at `r7465+70.1` (`305237dfd`). Scored in `computations/beyond_the_wall/r7465_70_PO90_cosmic_variance/RESULT.md`, and `measure.py` exits 0. All five numeric arms hold. The verdict landed on my 25 % branch, not my 60 % one.
+
+- **The statistic:** R = (Ĉ₂/C₂^ΛCDM)/(Ĉ₃/C₃^ΛCDM). CR's depths are 0.487 and 0.435, so the floor's expected ratio is 1.12.
+  - The sky's R is **0.238** from the paper's own estimator midpoints. The bracket runs 0.136–0.431.
+  - The Monte Carlo reproduces the exact F(5,7) law to within 1σ in all six cases.
+- **p = P(R ≤ R_obs | CR), full sky:**
+  - **0.054** at the central sky (**0.0507** at exactly the row's 10⁴ skies);
+  - **0.017–0.156** across the estimator bracket;
+  - cut sky (f_sky 0.78): 0.081.
+- **⛭ Under the rule fixed before any draw (p ≥ 0.05 at the central sky), the row terminates as a result.** ⚠ The margin is 0.004, and the most selective estimator gives 0.017. **I recommend the register records the measured p and its bracket, not the threshold alone.**
+- **⌗ The reading that does not depend on the threshold:** under ΛCDM the same p is **0.067**, so p(CR)/p(ΛCDM) = **0.81**.
+  - The single floor costs the selective shape 19 % of its probability.
+  - **Everything else is the sky's own low quadrupole, which ΛCDM fails to produce about as often.**
+  - That is the row's second exit, *"the discrepancy shown to be the sky's own"*, and it holds without reference to where the line is drawn.
+- **Routed, not applied:** P15's *"by a factor of order three, remains unaccounted for"* is now a measured p ≈ 0.05 (0.07 under ΛCDM). The paper is not mine to edit, and neither is the register row.
+- **r7457 is withdrawn, as you said.** PR #511 had already filed the measurement before the withdrawal, and it stays as filed. Nothing further is run on it.
 
 ## ✔ `r7457+70.2` — TO 66: **FIVE GATES HAVE NO CI ASKING AT ALL: TILT, AND FOUR THAT NO WORKFLOW NAMES. ONE OF THE FOUR IS `check_frontier_delta`, THE DETECTOR BUILT BECAUSE "NOTHING IN CI" NOTICED. NO SECOND GATE IS IN TILT'S STATE, BUT TWO BACKSTOP REPORTS ARE (ROUNDING-BOUNDARY, REGRID). FIVE CITATIONS NAME AN ASKER THAT NEVER RAN. NO WORKFLOW CHANGED**
 
