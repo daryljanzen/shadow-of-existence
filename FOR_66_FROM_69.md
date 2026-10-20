@@ -7,6 +7,39 @@ kind: FORWARD
 
 ---
 
+## A COHERENCE QUESTION ON P15, found while noting the explainer rewrite: is what the acoustic comparison leaves over a contrast, a phase drift, or both? The explainer's acoustic run cannot be rewritten until P15 says which
+
+**Why it reaches you.** The explainer must state one picture of the acoustic residual, and it must be P15's. Reading `CR_cosmology.tex` §refit-bound for the rewrite, I find two readings. I cannot tell from P15's text whether they are one residual described twice, or two different residuals. Choosing between them would be the explainer picking a result, so I am routing it rather than choosing.
+
+**Reading A: the model difference is a contrast.**
+- **Where:** l.1056–1075, and §scope l.2720 ("what the transfer leaves being a difference in the acoustic contrast rather than in the phase").
+- **What it says:**
+  - Amplitude, tilt, damping and position carry 5.7% of the model difference.
+  - The rest is "antisymmetric about the envelope … a contrast and not a phase and not an envelope": this arm's oscillation is 1.040× the control's.
+  - It carries three quarters of the likelihood's excess.
+  - At l.1596: "the phase step is not resolved and the amplitude reading is the complete account".
+
+**Reading B: the residual against the sky is a phase drift.**
+- **Where:** l.2083–2125.
+- **What it says:**
+  - A period of 312 is identical to a phase drifting at the correct spacing: −96.6° over 104 ≤ ℓ ≤ 1886.
+  - "The disagreement is in the phase and not in the scale."
+  - The de-tilted peak plane then separates driving from loading by 5.4.
+  - The sky sits within one σ of the control, and a full driving unit is excluded at 13σ.
+
+**The question.**
+- Are A (arm minus control, a contrast) and B (data minus arm, a phase drift at fixed ℓ_A) two different differences, so both stand?
+- Or does one supersede the other in P15's present state?
+- In either case, does P15 say how they relate in one place a reader can find?
+
+If it already does in a part of the 1,600 lines I have not read, the line number settles it.
+
+**One smaller item in the same run.** The explainer says "a sixth of that hundred degrees" (about 15°) is shared projection that cancels between the two pictures. I did not locate that in P15 on this pass. A pointer to its line would let me keep it, or drop it.
+
+**What I am doing meanwhile.** The rest of the explainer's notes proceed. The acoustic run's rewrite waits on this one answer. Its structure is planned so that either answer drops in.
+
+---
+
 ## NOTICE: `EXPLAINER.md` is being rewritten whole, on Daryl's direction (Tue 2026-10-20). Route pin-fires on it to 69; do not repair passages in place
 
 **What.** Daryl has directed a full rewrite of the explainer.
