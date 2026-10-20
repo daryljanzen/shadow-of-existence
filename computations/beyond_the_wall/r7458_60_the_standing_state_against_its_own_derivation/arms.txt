@@ -1,0 +1,104 @@
+r7458 -- THE ARMS AS REGISTERED, SCORED AGAINST WHAT CAME BACK
+==============================================================
+
+PREDICTION.md registered at dc121900, before `corpus/check_standing_state.py` existed.
+Answers `r7457` ⑥.
+
+✔ ALL THREE CONTROLS HELD, AND TWO OF THEM FIRED FIRST AND SAVED THE GATE.
+
+THE ARMS
+--------
+
+ Ⓐ  ** EXACTLY ONE LIVE-CLAUSE MARKER.  HIT. **  `⛭ THE LIVE CLAUSE (SET r7457)` at
+    offset `767,713` of `803,379`, so the live block is `35,666` characters -- `4.4` per
+    cent of the row.  The boundary is unambiguous and the gate can be keyed on it.
+
+ Ⓑ  ** THE MEMBER COPY IS CURRENT: derived `91`, stated `91`.  HIT. **
+
+ Ⓒ  ** THE FAMILY SERIES REACHES `31`.  MISS -- it reaches `30`, AND THE MISS IS A
+    FINDING ABOUT THE ORDER. **  `r7457` ① says *"this revision's two new ones are the
+    thirtieth and thirty-first"*; the ROW says *"this revision's new one below is the
+    THIRTIETH FAMILY"*, singular, and carries exactly one `THIRTIETH FAMILY` site.
+    `THIRTY-FIRST` appears in the row only as a MEMBER ordinal from `r7209` and in an
+    unrelated clause.  ⇒ ** The ruling and the row disagree by one on the family series,
+    and the gate commissioned to catch a count stated against a count derived caught it
+    on the ruling that commissioned it. **  ⌗ Not applied: the row is the register's.
+
+ Ⓓ  ** THE FACE SERIES IS ASSERTED OF NOTHING.  HIT, after a correction of this seat's
+    own. **  The first draft read ANY face value in the live block as a global total and
+    fired on *"member 91's third face"*, which is correct prose -- the gate asserting
+    about the one series its own registration said it must not.
+
+ Ⓔ  ** NO SUPERSEDED VALUE LEAKS: `0` of the `44` non-live member values is read as the
+    live one.  HIT. **  `45` distinct member values stand in the row as live text; the
+    gate reads the `4` SUMMARY sites inside the live block and nothing else, and control
+    Ⓥ① proves it by moving the boundary onto a stale copy.
+
+ Ⓕ  ** PRICE UNDER `3.0` s, band `0.2`-`3.0`.  HIT -- `0.37`, `0.45` and `0.50` s over
+    three runs on an `849,674`-character row. **  Against the fast list's own `420` s
+    per-gate budget that is three orders of magnitude of headroom, so ** by cost it
+    belongs in the fast tier **.  ⌗ PRICED AND OFFERED, NOT REGISTERED: `r7457` ⓒ asked
+    for the price first and the list is the gate seat's.
+
+ Ⓖ  ** THE WIDENED READER SEES `82` ROWS.  HIT -- `11` live and `71` struck, exactly as
+    `r7457` ④ states. **
+
+THE TWO CONTROLS THAT FIRED, AND WHY THEY ARE THE BEST THING HERE
+-----------------------------------------------------------------
+
+ ⛔ THE FIRST DRAFT'S COMPARISON WAS VACUOUS, AND BOTH ITS OWN CONTROLS SAID SO.
+
+ It derived each series as *"the last site anywhere in the row"* and compared that with
+ *"the last site in the LIVE BLOCK"*.  ** The live block is the END of the row, so both
+ read the SAME site: the gate compared a value with itself. **  It was green on a
+ correct tree, green on a one-off mutation of the stated value, and green with the live
+ boundary moved back onto the `r7257` copy.
+
+ ⇒ *** THAT IS THIS ROW'S GENERATOR INSIDE THE GATE BUILT TO CATCH IT: an instrument
+ built to check a condition that already exists will agree with it, and the agreement
+ will look like a finding about the subject. ***  The face of `PO-78`'s generator, quoted
+ from the row, in the gate ordered from that row's own measurement.
+
+ ⇒ ** THE REPAIR IS THE ROW'S TWO WORDINGS, which is what makes an independent
+ comparison possible at all. **  The row charges a member when it finds one -- *the
+ NINETY-FIRST MEMBER*, *member 88 stands*, *a seventh blindness member* -- and the
+ standing state separately restates the total -- *NINETY-ONE blindness members*, *HELD
+ at 91*.  The ANNOUNCEMENTS are the authority (`39` sites over the whole row); the
+ live block's SUMMARY is the copy (`4` sites).  Two roles, two wordings, one comparison
+ that can fail.
+
+ ⌗ AND A THIRD CORRECTION, SMALLER AND THE SAME SHAPE: control Ⓥ② first mutated the
+ FIRST summary site in the live block while the gate reads the LAST, so a correct gate
+ stayed green and the control read as the gate's failure.  ** A control pointed at the
+ wrong site of the right object. **  Retargeted to the site the gate reads, and recorded
+ rather than quietly fixed.
+
+WHAT THE GATE ASSERTS, AND WHAT IT DOES NOT
+-------------------------------------------
+
+ It asserts ONE thing: the value each series carries in the row's LIVE STANDING STATE is
+ the value derived from the row.  ⌗ It says nothing about whether the DERIVED value is
+ right -- that is the row's own adjudication and no gate reaches it.
+
+ THREE STATES AND NOT TWO: CURRENT / STALE / ABSENT.  The family series is ABSENT from
+ the live block and that is reported, not failed: requiring the row to carry a field it
+ has never carried would be the gate writing the row rather than reading it.  ⌗ That is
+ `r7422` and `r7436`, both this seat's own, applied here -- and the first draft folded
+ ABSENT into STALE and fired on a correct tree for it.  ** The guard that keeps ABSENT
+ from emptying the gate: if NO series is stated, the standing state carries no copy at
+ all and that IS a failure, because silence is not agreement. **
+
+ AND THE DERIVATION IS NOT REIMPLEMENTED.  The gate imports `r7456`'s `two_counts.py`
+ and calls it; the role split lives there too, so there is ONE copy of the predicate.
+ `r7445`'s rule, promoted at `r7447`: a reimplementation of a predicate is a second
+ instrument and it will disagree.
+
+REPRODUCING
+-----------
+
+  NODE=60 python3 corpus/check_standing_state.py          the gate, 0.37-0.50 s
+  NODE=60 python3 corpus/check_standing_state.py --seed   10 assertions, 3 controls
+
+  ⌗ The controls run the comparison on MUTATED copies of the row, in memory.  A gate
+    whose assertion cannot be made to fail on a counter-example asserts nothing, which
+    is this row's subject -- so each control hands the comparison a row it should reject.

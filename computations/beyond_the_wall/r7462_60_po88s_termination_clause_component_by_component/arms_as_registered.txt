@@ -1,0 +1,80 @@
+
+r7462 — PO-88's TERMINATION CLAUSE, COMPONENT BY COMPONENT.
+
+PO-88's second exit reads: "the two structural results are shown to leave the through-crossing
+evolution no freedom at all --- that every admissible stress-energy crosses identically because
+zero cosmic duration and zero oscillatory content exhaust the problem."  It quantifies over EVERY
+ADMISSIBLE STRESS-ENERGY and it is one sentence.  A concrete matter model's stress-energy is not
+one object: relative to the collapse worldline congruence it is rho, p, q_a, pi_ab, a composition
+vector, and perturbation content in three irreducible types.  SO THE CLAUSE IS ELEVEN CLAIMS AND
+IT IS WRITTEN AS ONE.
+
+This locator puts each sector to the corpus separately and asks what the eighteen papers say
+happens to IT at the branch point.  THREE STATES, NOT TWO (r7422, r7436):
+
+    COVERED      a sentence (or, with the scope printed, a paragraph) carrying both the sector's
+                 own anchor and a crossing marker
+    STATED-AWAY  the sector IS in the corpus, and never at the crossing
+    ABSENT       the anchor appears nowhere in the eighteen papers
+
+A sector's own absence is its own state.  Reporting it as coverage would be the gate writing the
+row rather than reading it (r7458's guard), and reporting it as a defect in the papers would be
+this seat's own generator: an instrument built to check a condition that already exists will
+disagree with it, and the disagreement will look like a finding about the subject.
+
+⌗ THE SENTENCE SPLITTER AND THE TEX STRIPPER ARE IMPORTED FROM r7454's `open_list.py`, NOT
+  REWRITTEN.  r7445's rule, promoted at r7447: a reimplementation of a predicate is a second
+  instrument and it will disagree.  If that file moves, this one fails loudly rather than
+  quietly growing a second copy.
+
+
+==============================================================================================
+  THE ARMS, AGAINST PREDICTION.md — registered 50a39f79 before this file existed
+==============================================================================================
+  Ⓐ coverage      predicted COVERED 4 / STATED-AWAY 4 / ABSENT 3
+                  measured  COVERED 9 / STATED-AWAY 1 / ABSENT 1
+                  covered:     rho p pi comp scalar tensor stack filter dur
+                  stated-away: vector
+                  absent:      q
+
+  Ⓑ degeneracy    predicted 0 paper sites stating the whole-tensor degeneracy
+                  measured  3
+                    groupoid_paper.tex:421  'no freedom'  So a concrete matter model has no freedom in where the reassignment acts---the vantage is forced---and of the two requirements only the second remains to be che
+                    CR_cosmology.tex:2841  'no freedom'  A model therefore has no freedom in where the reassignment acts, and misplacing it does not fail to give a cosmology by a little---it gives a black hole instead
+                    CR_synthesis.tex:343  'no freedom'  And what makes the first a category rather than a description is a theorem. Two events that are null-separated ( s^ 2 =0) and spatially coincident along the con
+
+  Ⓒ scope         predicted >=1 observed-range paper site, 0 every-k paper sites
+                  measured  lossless sites 10 · observed-scoped 0 · every-k-scoped 0
+                    CR_framework.tex:544  No information is destroyed on the realised spacetime; a basis is selected on it. The crossing itself is settled on both halves, and the two are one geometry read on two clocks ( ): the segm
+                    CR_framework.tex:959  The mechanism by which matter and observers transition through this shared ontological layer is advanced in the Frontiers section below ( ): the crossing is well posed at the branch point---
+                    CR_framework.tex:1983  So the exponent has nothing to act on, and the crossing is lossless for every species rather than for cold ones alone---which is the premise 's fixed-point statement requires, and it leaves 
+                    CR_framework.tex:1983  The two are one geometry read on two clocks---the segment has zero cosmic duration and finite conformal length 3.32 ---and the asymmetry is why the crossing is lossless for content and fatal
+                    CR_framework.tex:1983  A concrete matter model's own approach is moreover computed rather than assumed---the infalling matter's temperature and density along the collapse worldline with an ordinary nuclear network
+                    dynamics_paper.tex:340  There the crossing of matter through the branch point is shown well posed and structurally governed---the foliation-preserving reassignment fixing the -set rate while the density crosses as 
+
+  Ⓔ energy flux   predicted ABSENT        measured ABSENT
+  Ⓕ anis. stress  predicted STATED-AWAY   measured COVERED
+     isotropization sites 194 · MAP-SCOPE 7 · STATE-SCOPE 187
+                    BH_causality_v2.tex:585  [STATE-SCOPE]  JanzenModernParallax D. Janzen, The modern parallax: the redshift-isotropy floor, the empirical forcing of cosmic time and uniform expansion, and the measured resolution 
+                    janzen_circle_v3.tex:599  [STATE-SCOPE]  JanzenModernParallax D. Janzen, The modern parallax: the redshift-isotropy floor, the empirical forcing of cosmic time and uniform expansion, and the measured resolution 
+                    SdS-slicing-curve_v2.tex:1275  [STATE-SCOPE]  JanzenModernParallax D. Janzen, The modern parallax: the redshift-isotropy floor, the empirical forcing of cosmic time and uniform expansion, and the measured resolution 
+                    modern_parallax.tex:77  [STATE-SCOPE]  The modern parallax:\\ the redshift-isotropy floor, the empirical forcing of cosmic time and uniform expansion,\\ and the measured resolution of the relativity of simulta
+                    modern_parallax.tex:88  [STATE-SCOPE]  Granted even perfect homogeneity at last scattering, the observed isotropy of the monopole is then a direct measurement of uniform expansion---so the common supposition t
+                    modern_parallax.tex:88  [STATE-SCOPE]  The effect is distinct from the Sachs--Wolfe anisotropies and not a re-derivation of them: when lumpiness clusters upon a single background, a photon's gravitational reds
+                    modern_parallax.tex:88  [STATE-SCOPE]  The remaining, finely tuned, observer-centred escape is closed by the Copernican principle together with the independently measured isotropy of the expansion history.
+                    modern_parallax.tex:88  [STATE-SCOPE]  What the exclusion selects is a global, time-ordered expansion---the cosmic foliation made dynamical---which is logically prior to the notions of space, isotropy, and hom
+
+  Ⓖ tensor        predicted STATED-AWAY   measured COVERED
+
+  Ⓗ duration      predicted ABSENT as a phrase
+                  measured  duration-phrase sites 7 · tortoise sites 32
+                    CR_framework.tex:1369  'zero duration'  The lift is not a gap in the cosmic-time evolution but a single instant of it---a forced phase shift of finite path length and zero duration---which is why the 
+                    CR_framework.tex:1983  'zero cosmic duration'  The two are one geometry read on two clocks---the segment has zero cosmic duration and finite conformal length 3.32 ---and the asymmetry is why the crossing is 
+                    canonical_time.tex:229  'zero duration'  The beginning is therefore not a first instant of the evolution this section constructs; it is a boundary of zero duration within it, and that is why nothing ca
+                    canonical_time.tex:242  'zero cosmic duration'  The gap is named rather than managed, and its shape is definite. The silence is structural, not a matter of refinement---an evolution parametrized by cosmic tim
+
+  Ⓘ verdict       predicted NOT REACHABLE AS WRITTEN, sector-dependent
+                  the coverage map is the evidence: 9 of 11 sectors are
+                  spoken to at this locus (unkeyed, 10 of 11 are spoken to
+                  at all), so the clause's single verdict rests on grounds that reach
+                  part of what it quantifies over.

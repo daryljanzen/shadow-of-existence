@@ -1,0 +1,59 @@
+
+r7462 — PO-88's TERMINATION CLAUSE, COMPONENT BY COMPONENT.
+
+PO-88's second exit reads: "the two structural results are shown to leave the through-crossing
+evolution no freedom at all --- that every admissible stress-energy crosses identically because
+zero cosmic duration and zero oscillatory content exhaust the problem."  It quantifies over EVERY
+ADMISSIBLE STRESS-ENERGY and it is one sentence.  A concrete matter model's stress-energy is not
+one object: relative to the collapse worldline congruence it is rho, p, q_a, pi_ab, a composition
+vector, and perturbation content in three irreducible types.  SO THE CLAUSE IS ELEVEN CLAIMS AND
+IT IS WRITTEN AS ONE.
+
+This locator puts each sector to the corpus separately and asks what the eighteen papers say
+happens to IT at the branch point.  THREE STATES, NOT TWO (r7422, r7436):
+
+    COVERED      a sentence (or, with the scope printed, a paragraph) carrying both the sector's
+                 own anchor and a crossing marker
+    STATED-AWAY  the sector IS in the corpus, and never at the crossing
+    ABSENT       no sentence matches the sector's anchor.  WHAT WAS SEARCHED, so the claim
+                 carries its own evidence: the anchor regex list printed in SECTORS below, run
+                 over every sentence of the eighteen paper sources named in CANONICAL_TITLES
+                 plus CR_synthesis -- 10,998 sentences after the bibliography cut, of 11,743 --
+                 with the TeX stripped by r7454's stripper and the match case-folded.  A wider
+                 claim than that is not made here: the sector may be in a receipt, a figure
+                 script or a register row, none of which this locator reads.
+
+A sector's own absence is its own state.  Reporting it as coverage would be the gate writing the
+row rather than reading it (r7458's guard), and reporting it as a defect in the papers would be
+this seat's own generator: an instrument built to check a condition that already exists will
+disagree with it, and the disagreement will look like a finding about the subject.
+
+⌗ THE SENTENCE SPLITTER AND THE TEX STRIPPER ARE IMPORTED FROM r7454's `open_list.py`, NOT
+  REWRITTEN.  r7445's rule, promoted at r7447: a reimplementation of a predicate is a second
+  instrument and it will disagree.  If that file moves, this one fails loudly rather than
+  quietly growing a second copy.
+
+
+==============================================================================================
+THE VOID RUN — the crossing conjunct DROPPED (Ⓥ③ as it fires)
+==============================================================================================
+  sector                                         state         sites  anchor hits
+  energy density  rho                            COVERED          63           63
+  isotropic pressure  p                          COVERED          16           16
+  energy flux  q_a                               ABSENT            0            0
+  anisotropic stress  pi_ab                      COVERED           2            2
+  composition vector (the species fractions)     COVERED         159          159
+  frozen SCALAR perturbation modes / oscillatory content COVERED         112          112
+  VECTOR perturbation modes                      COVERED           2            2
+  TENSOR perturbation modes (gravitational waves) COVERED          27           27
+  the time-stacking the reassignment acts on     COVERED         240          240
+  the species filter's own action                COVERED         116          116
+  the crossing's own duration                    COVERED          89           89
+Ⓥ [CONTROL] the crossing's torsion content       COVERED           3            3
+
+  ⇒ of 11 sectors: COVERED 10 · STATED-AWAY 0 · ABSENT 1
+
+  ⇒ This is the run the sound run must beat.  Every sector the corpus mentions ANYWHERE
+    now reads COVERED, which is the bag-of-words failure r7454 was repaired for: the
+    presence of a subject is not a statement about it at a locus.  A locator whose
+    keyed and unkeyed counts AGREE is this run wearing the sound run's name.

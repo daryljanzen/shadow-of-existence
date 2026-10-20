@@ -860,7 +860,24 @@ EST = {
         'or not found, 2 contested -- and sorts CRs own Rule-2 arguments against it without softening, putting colour- '
         'as-the-centre on the unfavourable side because it currently ADDS structure to explain a number. So on the '
         'censuss reading the item would be DONE and on the papers it is a boundary with its programme named; either way '
-        'the register is right to be silent. 26 of 29 ruled; 3 left -- 4, 15, 17. '),
+        'the register is right to be silent. '
+        'r7467 RULES STRIDE ITEM 17, THE FIRST OUTCOME AND A NEW ROW: 27 of 29 are ruled and items 4 and 15 remain. Item 17 '
+        'asked whether the substrates two real forms are physics actual quantum and gauge sectors or a structural rhyme with '
+        'them. The register carried nothing, and both papers call it open in their own words: P13 sec:synthesis states that '
+        'the pieces are established while the identification is not discharged, and says that naming what would discharge it '
+        'is what makes this an open question rather than a caution; P18 carries the same under its subsection on what is held '
+        'open. AND THE RULING TURNS ON A DISTINCTION THE WORKING RULE ALMOST HID. r7431s rule says a paper that has declared '
+        'its ceiling has already ruled every item beneath it, and P18s declined section does declare one, opening with the '
+        'declines below are not gaps awaiting work. But this item is not in that section: what is in it is the wall, colour '
+        'as a continuous isometry, which is established and correctly carries no row, while the identification sits one '
+        'subsection later. So a scope section rules the items it contains, and reading its opening sentence as covering the '
+        'neighbouring subsection would have struck an item both papers call open. WHAT THE RULING ADDS is that the named '
+        'discriminator is gauge-side only: P18 gives two divides one test, and an actual gauge sector carries a field '
+        'strength and a coupling does not reach the quantum half, which P13 argues differently and more strongly, the '
+        'framework straddling with its structure Lorentzian and only its scale Euclidean. P18 is repaired at r7467 to say '
+        'which half its test reaches, and PO-94 carries the row with its two halves named and only one of them holding a '
+        'discriminator. '
+    ),
     'PO-10': ('the likelihood comparison, and which run it rests on', 1, 0, 3, None,
         'r6780: REOPENED. P15 sec:refit-bound reports both arms fitted over 215 bins with the same '
         'five parameters free in each, returning chi^2 = 397.13 against 206.44, 1.891 and 0.983 per '
@@ -6936,6 +6953,37 @@ EST = {
         'equally cannot be undercut by that absence. Nothing on the identification is live. The row is ready to close '
         'and is left open one revision so the print lands first. '
         ),
+    'PO-94': ('whether the substrates two real forms are physics actual quantum and gauge sectors, or a structural rhyme with them', 1, 1, 3, None,
+        'r7467: OPENED on PO-86s ruling of stride item 17 -- the first outcome, and the registers silence was wrong because '
+        'both papers call this open in their own words. P13 sec:synthesis says the PIECES are established, the '
+        'hypersurface-deformation constraint algebra as the Lorentzian coset SO(5,1)/SO(4,1), colour needing the full so(6) '
+        'since su(3) sits in so(6) but not in so(5), and hbar on the same global-Wick five-sphere the horizons Euclidean '
+        'closes on, while THE IDENTIFICATION is not discharged -- and the paper says in terms that naming what would '
+        'discharge it is what makes this an open question rather than a caution. P18 carries the same under its subsection on '
+        'what is held open. AND IT IS NOT A DECLINE, which is the distinction the ruling turns on: P18s declined section '
+        'opens with the declines below are not gaps awaiting work, and this item is not in it. What is in it is the wall, '
+        'colour as a continuous isometry, which is established and correctly carries no row; the identification sits one '
+        'subsection later. THE DISCRIMINATOR IS NAMED AND IT IS DYNAMICS: a rhyme predicts nothing further, an actual gauge '
+        'sector carries a field strength and a coupling. THE BLOCKER IS NAMED AND DERIVED: the branch-point bundle is flat, '
+        'since the three wall monodromies with the hinge three-cycle generate a finite group, a finite group is '
+        'zero-dimensional, and the holonomy theorem makes the holonomy algebra the span of the curvature, so the curvature '
+        'vanishes identically and the compact face delivers colours discrete content and no force. So the discriminator '
+        'cannot be supplied from isometry, which places the test outside the geometry rather than answering it. ONE HALF IS '
+        'ALREADY CLOSED and the census row did not carry it: the two co-equal real forms reading is closed ontologically '
+        'rather than structurally, the compact face being Riemannian and atemporal and so, by CRs criterion that existence '
+        'requires an enduring cosmic time, no second physical world; and colour-closure for the matter sector rests on the '
+        'causal structure rather than the wall alone, since the cosmogenesis is a signature-preserving reassignment on the '
+        'real Lorentzian substrate, so the matter rides that horn while su(3) lives across the signature seam and is not a '
+        'symmetry of the world the matter inhabits whatever the compact faces status. SO CONTRADICTION C7 IS NOT ONE: C7 and '
+        'the synthesis are consistent because the carrying is at the level of the structure and C7 is at the level of the '
+        'world, which is P13s own closing split. AND WHAT THE RULING ADDS THAT NEITHER PAPER STATES: the named discriminator '
+        'is gauge-side only. P18 names two divides in one sentence and supplies one test, an actual gauge sector carries a '
+        'field strength and a coupling, which does not reach the quantum half at all; P13 argues that half differently and '
+        'more strongly, the framework straddling with its structure Lorentzian and only its scale hbar Euclidean, so the '
+        'quantum is not a third thing. The two halves are open in different ways and to different depths, and the compressed '
+        'sentence reads as though one test governed both. P18 is repaired at r7467 to say which half its discriminator '
+        'reaches. '
+    ),
     'PO-93': ('which mass the Hubble-Eddington radius tracks', 1, 1, 3, None,
         'r7447: OPENED on PO-86s ruling of item 29 -- the first outcome, and the first row the stride has produced '
         'since PO-92. P18 carries it in its own table of open items: which mass the Hubble-Eddington radius tracks, '
@@ -11022,6 +11070,7 @@ KIND = {'PO-85': 'BUILD', 'PO-84': 'READ', 'PO-83': 'READ', 'PO-82': 'READ', 'PO
         #: KINDS, each from the row's own head rather than by analogy:
         'PO-24': 'WORK',   #: the diffusion signature's effect on observed high-ell power -- a
         #:                 computed effect whose consequence is to be worked out, not read or built
+        'PO-94': 'READ',  #: the identification, half of it answered and half without a test
         'PO-93': 'WORK',   #: which mass the radius tracks -- a measurement, waiting on a sample
         'PO-50': 'WORK',   #: the turnaround measurement with turnaround masses -- a measurement
         'PO-86': 'READ',   #: the census itself: two lists compared by reading the papers
@@ -11044,8 +11093,9 @@ KIND = {'PO-85': 'BUILD', 'PO-84': 'READ', 'PO-83': 'READ', 'PO-82': 'READ', 'PO
 #   and the generator reported "9 open" while the table showed EIGHT -- the count comes from
 #   the live set and the rows come from here.*  ** Adding a row needs three things: the
 #   register row, the runway, and this list. **  check_frontier_current now checks all three.
-ORDER = ['PO-86', 'PO-92', 'PO-91', 'PO-90', 'PO-89', 'PO-88', 'PO-87', 'PO-24', 'PO-85', 'PO-84', 'PO-83', 'PO-82', 'PO-78', 'PO-75', 'PO-71', 'PO-70', 'PO-63', 'PO-62', 'PO-61', 'PO-60', 'PO-59', 'PO-58', 'PO-57', 'PO-56', 'PO-55', 'PO-54', 'PO-53', 'PO-52', 'PO-47', 'PO-48', 'PO-49', 'PO-50', 'PO-93', 'PO-51', 'PO-45', 'PO-46', 'PO-10', 'PO-13', 'PO-43', 'PO-36', 'PO-30', 'PO-25', 'PO-26', 'PO-31', 'PO-23', 'PO-15', 'PO-14', 'PO-17', 'PO-18', 'PO-19', 'PO-20']
-GROUP = {'PO-92': 'E', 'PO-91': 'E', 'PO-90': 'D', 'PO-89': 'C', 'PO-88': 'D', 'PO-87': 'D',
+ORDER = ['PO-86', 'PO-94', 'PO-92', 'PO-91', 'PO-90', 'PO-89', 'PO-88', 'PO-87', 'PO-24', 'PO-85', 'PO-84', 'PO-83', 'PO-82', 'PO-78', 'PO-75', 'PO-71', 'PO-70', 'PO-63', 'PO-62', 'PO-61', 'PO-60', 'PO-59', 'PO-58', 'PO-57', 'PO-56', 'PO-55', 'PO-54', 'PO-53', 'PO-52', 'PO-47', 'PO-48', 'PO-49', 'PO-50', 'PO-93', 'PO-51', 'PO-45', 'PO-46', 'PO-10', 'PO-13', 'PO-43', 'PO-36', 'PO-30', 'PO-25', 'PO-26', 'PO-31', 'PO-23', 'PO-15', 'PO-14', 'PO-17', 'PO-18', 'PO-19', 'PO-20']
+GROUP = {'PO-94': 'C',  # r7467: the identification of the two real forms with physics' own sectors
+         'PO-92': 'E', 'PO-91': 'E', 'PO-90': 'D', 'PO-89': 'C', 'PO-88': 'D', 'PO-87': 'D',
          'PO-86': 'F',  # ⛭ r7371: the coherence phase -- the register against the papers.
          # ⛭ r7371: PO-78 moved out of C, the quantum sector, which it never was -- it is the
          #   quote-pin instrument.  F is the programme's own record, and PO-86 is there too.

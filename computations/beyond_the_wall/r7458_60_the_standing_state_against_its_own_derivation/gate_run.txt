@@ -1,0 +1,32 @@
+
+  STANDING STATE vs ITS OWN DERIVATION -- is the row's copy of a count current?
+    the register carries 82 row(s): 11 live, 71 struck
+    ⌘ both forms are read.  r7456's reader required the bold form and saw
+      11 of them, which is the blind spot r7457 ④ names and this fixes.
+
+    PO-78: 803379 flattened character(s); 1 live-clause marker(s)
+    the LIVE BLOCK is the last of them, SET r7457: 35666 character(s), 4.4 per cent
+    the member total is derived from 39 ANNOUNCEMENT site(s) over the whole row
+      and compared with the live block's SUMMARY -- two different wordings, so
+      the comparison is not a value against itself.
+
+    series                                         derived   stated   
+    ✓ MEMBER (global running total)                91        91         the copy is current
+    ⌗ FAMILY (global running total)                30        -          ABSENT -- the live block restates no value; reported, not failed
+    ⌗ FACE (ordinal WITHIN a member, no global tot -         (n/a)      ordinal within a member; no total, so nothing to compare
+
+    ⌗ 1 series ABSENT from the live block, reported and not failed: FAMILY
+      Requiring the row to carry a field it has never carried would be this
+      gate writing the row rather than reading it.
+
+    ⌘ 45 distinct member value(s) stand in the row as live text; the gate
+      reads only the 4 SUMMARY site(s) in the LIVE BLOCK, which is r7457 ⑥ⓑ,
+      and takes its authority from the 39 ANNOUNCEMENTS over the whole row --
+      which is how the comparison avoids being a value against itself.
+
+  every series' standing state is the value derived from the row.
+  ⌘ This gate says the COPY is current.  It says nothing about whether the
+    derived value is RIGHT -- that is the row's own adjudication, and no gate
+    reaches it.
+
+  price 0.57s

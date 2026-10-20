@@ -55,6 +55,17 @@ def main():
         # why the name is still there to match. *** **
         if 'NEVER EXISTED' in l:
             continue
+        # ** r7467: AND A THIRD CASE THE GATE DID NOT HAVE -- the file RAN, and was later
+        #    RETIRED because its subject went away. **  `check_standing_state.py` asserted
+        #    `PO-78`'s standing-state counts; `PO-78` was struck at `r7465`, so the gate
+        #    asserted a row that no longer exists and could only ever be red.  Deleting it
+        #    was right; teaching it to pass on a missing subject would be the vacuous pass
+        #    the corpus refuses elsewhere.
+        #    ⌗ The exemption is deliberately narrow: the row must say RETIRED **and** name
+        #      the revision that retired it, so the citation resolves to an account rather
+        #      than to a silence.  A bare "RETIRED" does not clear the gate.
+        if 'RETIRED at `r' in l:
+            continue
         for m in NAMED.finditer(l):
             path = m.group(1)
             checked += 1

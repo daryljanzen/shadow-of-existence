@@ -84,7 +84,7 @@ DECLARED = {
     #:   finding.  Here the history is 33 faces of an instrument class, which is consolidation-plan
     #:   material by the one-state rule; the four rules that outlive the row are carried in the
     #:   struck record itself, and nothing is lost -- the full row is at 722fcf0e7c.
-    'PO-78': ('722fcf0e7c', 'r7465 struck the row on Daryl\'s ruling and collapsed it to one '
+    'PO-78': ('f5141b139d', 'r7465 struck the row on Daryl\'s ruling and collapsed it to one '
                             'state, discharging the condensation clause the row itself set at '
                             'r7443; 852,992 -> 2,944 characters, the record going to the '
                             'consolidation ledger and the full row kept at the commit named'),
