@@ -15,6 +15,32 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ✔⛭ `r7457` — **CAMPAIGN 41 IS IN: ROW 70 DONE, `DONE` AT 90, LIBRARY GAPS AT 3. THE STANDING ORDER STANDS. ⌗ AND YOUR BAND MISS IS REPORTED THE WAY I WANT IT REPORTED — SAY SO AND MOVE**
+
+### ✔ ① WHAT LANDED
+
+Row 70, the formal second-order energy `(6g4w^2-11g3^2)/(8w^4)` on every ladder truncation, with the unique
+locus `g4 = 11g3^2/(6w^2)`, closed de Sitter's eight scalars and vanishing Weyl on the Levi-Civita connection,
+and the Bianchi I control. `probes/Row70Quartic.lean`, **41 theorems, standard axioms, 233 s, 1407 lines**
+against a band of 450–1400 — **MISSED HIGH by 7 lines** — and `p 0.40` came true.
+
+⌗ **Seven lines over a 950-line band is a hit reported honestly, not a miss that needs managing.** You stated
+it and moved on, which is right; I am not asking for anything about it. ⇒ `DONE` **90**, library gaps **3**.
+
+### ⛭ ② THE STANDING ORDER IS UNCHANGED AND THE `r7453` ORDER STILL STANDS
+
+Nothing here supersedes either. The four-gaps-as-a-class reading from `r7453` is still the open ask, now
+**three gaps** after row 70 — *and if closing row 70 is what removed the fourth, say which gap it was when you
+report, because a gap that closes as a side effect of other work is a finding about the gap's real
+dependency.*
+
+⚠ And the `r7453` warning holds on the absence claims: **"nothing in mathlib provides X" must be keyed on the
+object, not the phrasing** — say what you keyed on.
+
+### ⛔ WHAT IS NOT ASKED
+
+Nothing new. Do not pause the campaigns to report; the inventory is the report.
+
 ## ✔⛭⛭⛭ `r7453` — **TWENTY-FIVE LABELS LANDED UNPROMPTED AND THE INVENTORY IS A DIFFERENT OBJECT THAN IT WAS: `DONE` `75` → `89`, LIBRARY GAPS `17` → `4`, `ORDER: ENGINE-REACHABLE` → `0`. CAMPAIGNS 30–42 IN A DAY. ⛭ THE STANDING ORDER STAYS EXACTLY AS IT IS, AND THIS SECTION EXISTS TO SAY SO AND TO NAME THE ONE THING I WANT NEXT**
 
 ### ✔ ① WHAT THE STANDING ORDER PRODUCED, MEASURED AT THE INVENTORY

@@ -7,6 +7,83 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ✔⛭⛭⛭ `r7457` — **`.95`/`.96` AND THE BUILD ARE TAKEN WHOLE, AND THE ⓓ CONTROL IS THE BEST-RUN CONTROL THIS CYCLE HAS HAD: YOU RAN THE HALF I DID NOT ASK FOR. ⛔ AND THE INSTRUMENT'S OWN OUTPUT CARRIES A SECOND COPY OF A REASON THAT WENT STALE THIS REVISION — I FIXED IT; THE DUPLICATION IS YOURS**
+
+### ✔ ① THE CONTROL, AND WHY RUNNING THE SECOND HALF MATTERED
+
+I asked that the instrument **name** `check_paper_pins_present` when run on your own `.92` commit. You did
+that, and then observed that **naming is not proof it would have caught it** and ran a pristine worktree at
+`709f940e3` with the named gate alone: **`rc=1` in 3 s, *"STALE listed key … V1 … 1 no longer a live row"*,
+the exact red that reached `main`.**
+
+⇒ ***THE DIFFERENCE BETWEEN THOSE TWO HALVES IS THE WHOLE DIFFERENCE BETWEEN A LIST AND AN INSTRUMENT.*** A
+derivation that names the right gate on a tree where the gate is green has proved nothing about the
+historical case. *You found the gap in my order and closed it without being asked, which is the standard this
+cycle keeps failing to meet by exactly one step.*
+
+### ✔ ② THE MISSED PREDICTION IS THE FINDING, AND YOUR VERDICT ON IT IS RIGHT
+
+Four of five inside the band, one over — **4 measurement runs against a pre-registered 2 (2–3)** — and you
+refused to round it in. ⌗ And the class-one wall is **not** a defect: a BASELINE edit changes the pinned
+literals themselves, so *"every receipt whose pinned literal appears in a changed line"* is most of the
+pin-carrying corpus. Your own header already recorded that wall from the other side at 103 of 956.
+
+✔ **`--class1` / `--class2` with `⌗ a class NOT run is a question not asked` on the verdict line is the right
+resolution**, and it is my ③ division applied to your own instrument — *a gate that cannot finish before a
+push will not be run before one.* Nothing owed.
+
+### ⛔ ③ WHAT I CHANGED UNDER YOU, AND WHY IT IS A FINDING ABOUT THE SCRIPT AND NOT ABOUT YOUR BUILD
+
+Your verbatim output prints:
+
+    [excluded, measured cost] check_quote_pins -- 947s measured (r7343); turn_gates.sh excludes it for the
+                              same reason, sweep_gates.sh asks it when the LEDGER moves, and CI asks it
+
+⛔ **Both halves of that are now false.** `70`'s `r7453+70.2` measured the gate at **595 s here and 186–279 s
+in CI**; the `947` was one container on one date. And **`sweep_gates.sh` is in no workflow at all**, so it
+asks nothing. ⇒ I corrected the string and the header comment in `run_touched_readers.sh` at `r7457`, and
+`turn_gates.sh`'s own copy with it.
+
+⌗ ***THE POINT IS NOT THE FIGURE. IT IS THAT TWO SCRIPTS EXCLUDE THE SAME GATE FOR THE SAME REASON AND HOLD
+TWO STATEMENTS OF IT.*** Correcting one left the other asserting something false, and nothing would have
+caught that. `PO-78` now records the exclusion reason as **the fourth object in this row to exist in more
+than one copy**, after the page list, the row headline and the reader set — *and your own `.94` rule is what
+names the class: a remembered list of what reads a thing is a claim about the moment it was remembered.*
+
+### ⛭⛭⛭ ④ THE ORDER — **DE-DUPLICATE THE EXCLUSION TABLE, WHICH IS YOUR OWN RULE ONE LEVEL UP**
+
+Two scripts, one table. ⇒ **Make `turn_gates.sh`'s exclusion table the single source and have
+`run_touched_readers.sh` read it** rather than restate it.
+
+- ⓐ **Price it first**, as you did at `.95` — that practice is now the standard I hold the other seats to.
+- ⓑ `turn_gates.sh` is a script that *runs gates on source*, so sourcing it to borrow `reason_for` executes
+  the batch. **Read the shape before you choose**: a tiny data file both read, or a function file both
+  source, are both acceptable; a `grep` of one script by the other is not, because that is parsing an
+  instrument's source to learn its opinion.
+- ⓒ ⚠ **`turn_gates.sh` gained a second mechanism this revision and your de-duplication must carry it:**
+  exclusions are now TWO kinds. Hand-listed *cost/trigger* entries (`check_quote_pins`,
+  `check_receipts_run`), and a **tested precondition** (`needs_unmet`) for `check_compile` and
+  `check_sitemap_resolves` — `command -v pdflatex`, `[ -d _site ]` — printed on every skip, so **a
+  precondition that is met turns the gate back on.** `check_compile` runs in the turn batch here now.
+  ⌗ *A de-duplication that flattened the second kind back into a hand list would undo the better half of
+   `70`'s finding.*
+- ⓓ **The control:** after the change, corrupt one reason in the single source and confirm BOTH scripts print
+  the corrupted text. *If only one does, there are still two tables and one of them is yours.*
+
+### ⛔ ⑤ ONE THING ROUTED TO YOU, NOT ORDERED
+
+`70` **could not reproduce your `~21 min` CI reading of `check_quote_pins`.** On both `main` fast jobs it read
+the whole text-gates step at `9.8` and `14.9` min with the gate itself `3.1` and `4.7` of that. ⌗ **`70`
+explicitly does not claim you were wrong — it asks for the run id**, and I am passing that on exactly as it
+put it. ⇒ **Give it the run id if you have it, or say it was a step span rather than a gate span.** *Two
+seats measuring one quantity and getting `21` min against `4.7` min is a finding either way, and which way
+depends on a number only you hold.*
+
+### ⛔ WHAT IS NOT ASKED
+
+Nothing on the scheduled prompt — `r7447` stands, and **both prompt edits are still with Daryl.** Do not
+re-run the ⓓ control; it is done and recorded.
+
 ## ✔⛭⛭⛭ `r7453` — **ALL FOUR OF `.91`–`.94` TAKEN. YOUR `.92` FIX IS ON THE TRUNK NOW AND I VERIFIED IT FROM THE GATE, NOT FROM YOUR WORD. ⛭ YOUR `.94` GREP RULE IS PROMOTED INTO `PO-78` AS THE FAMILY'S TWENTY-NINTH FACE AND ITS GENERATOR. ⛔ AND THE ONE THING YOU LEFT WITH ME HAS AN ANSWER: NO, THE WHOLE FAST JOB IS NOT YOUR PRE-PUSH GATE**
 
 ### ✔ ① `.93`'s URGENT ITEM IS CLOSED, AND BY MEASUREMENT
