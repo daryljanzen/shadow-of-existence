@@ -21,15 +21,40 @@
 #   shape as the instrument one: not all 956 receipts, but the SET THAT CAN BE AFFECTED -- the receipts
 #   that name a file this working tree has changed.*
 #
-#   bash scripts/run_touched_readers.sh            # against the working tree (staged + unstaged)
-#   bash scripts/run_touched_readers.sh HEAD~1     # against what a given ref changed
+#   bash scripts/run_touched_readers.sh                  # against the working tree (staged + unstaged)
+#   bash scripts/run_touched_readers.sh HEAD~1           # against what a given ref changed
+#   bash scripts/run_touched_readers.sh 'abc123^..abc123'  # against exactly what ONE commit changed
+#
+# ⛭ `r7453` ④ ADDED A SECOND CLASS, AND ITS OWN HEADER IS BELOW AT `CLASS TWO`: the GATES that read a
+#   DATA FILE this tree changed, derived by `grep` and not from any list in this script.  The verdict
+#   is the conjunction of the two classes; each class names what it excluded and why.
 #
 # ⛔ *This does not replace the heavy job.  It closes the ordering gap between the last corpus edit and
 # the push, which is where both instances above lived.*
 set -u
 cd "$(dirname "$0")/.."
 ROOT=$(pwd)
+
+# ⛭⛭ WHICH CLASSES RUN, AND WHY THE SELECTOR EXISTS -- IT IS A MEASURED COST AND NOT A CONVENIENCE.
+#   `r7453+cc66` measured the whole script on `709f940e3` (a `quote_pin_baseline.tsv` edit): ** class
+#   one did not finish inside a 900 s budget. **  That is class one working as designed and not a
+#   defect -- a BASELINE edit changes pinned literals themselves, so "every receipt whose pinned
+#   literal appears in a changed line" is most of the pin-carrying corpus.  ⇒ *But the class that can
+#   break on a data-file edit is class two, and a gate that cannot finish before a push will not be
+#   run before one.*  So the classes are selectable, and the selection is PRINTED:
+#     --class2   the gates that read a touched data file          (a data-file edit's own class)
+#     --class1   the receipts that pin touched prose              (a paper edit's own class)
+#   ⌗ Default is BOTH, because a tree that edited both needs both and the conjunction is the verdict.
+CLASSES=both
+case "${1:-}" in
+    --class1) CLASSES=one; shift ;;
+    --class2) CLASSES=two; shift ;;
+    --both)   CLASSES=both; shift ;;
+esac
 REF=${1:-}
+
+# ===== CLASS ONE: receipts that pin a sentence in a touched corpus file =====
+class_one() {
 
 if [ -n "$REF" ]; then
     CHANGED=$(git diff --name-only "$REF" -- 'corpus/*.tex' 'corpus/*.tsv' 'corpus/*.txt' | sort -u)
@@ -44,7 +69,7 @@ echo
 if [ -z "$CHANGED" ]; then
     echo "    no corpus file changed; nothing can be affected by this class."
     echo "    ⌗ That is a claim about THIS gap only -- the heavy job is still the suite's verdict."
-    exit 0
+    return 0
 fi
 echo "    changed corpus file(s):"
 for f in $CHANGED; do echo "      $f"; done
@@ -67,7 +92,7 @@ echo "    $N receipt(s) pin a sentence this tree TOUCHED in those files"
 if [ "$N" = "0" ]; then
     echo "    ⌗ no pinned literal appears in a changed line, so nothing can break on this class."
     echo "    ⌗ That is a claim about THIS gap only -- the heavy job is still the suite's verdict."
-    exit 0
+    return 0
 fi
 
 # ⛭ FOUR AT A TIME, which is `run_all_receipts.py`'s own figure and is the reason this is affordable:
@@ -137,8 +162,147 @@ if [ -n "$FAILED" ]; then
     echo "  ⛔ THE TOUCHED READERS ARE RED.  Repair before pushing -- and note WHOSE receipt it is:"
     echo "     a seat does not edit another seat's receipt, EXCEPT where its own edit broke it, which"
     echo "     is exactly this case."
-    exit 1
+    return 1
 fi
 echo "  every receipt that reads a changed corpus file passes on this tree."
 echo "  ⌗ Green here is a claim about the ordering gap between the last corpus edit and the push."
-exit 0
+return 0
+}
+
+# ===== CLASS TWO: the GATES that READ a data file this tree changed  (r7453 ④) =====
+#
+# ** WHY THIS EXISTS, AND IT IS THIS SEAT'S OWN DEFECT THREE TIMES IN THREE PUSHES. **
+#
+# Class one asks "which RECEIPT pins prose I rewrote?".  There is a second reader class and it is the
+# one that broke: *a GATE that reads a DATA FILE I edited.*  `r7441+cc66.92` removed two rows from
+# `corpus/quote_pin_baseline.tsv`; `corpus/paper_pins_absent.tsv` separately LISTED one of those rows
+# as a deliberate absence, so `check_paper_pins_present` went red on `main`.  ⌗ Eight `corpus/check_*`
+# gates read that baseline.  **The seat had validated three — from memory — and the five it missed
+# included the one that broke.**
+#
+# ⇒ `r7453` ④: *"a remedy that depends on remembering to apply it is not a remedy; it is the same
+# error with a note attached."*  So the reader set is DERIVED HERE, every run, by `grep` over the gate
+# sources -- ** there is no list of readers in this script **, for `turn_gates.sh`'s own reason:
+# *** a copy of a list is a claim about the list at the moment it was copied. ***  A gate that starts
+# reading a data file joins this class the day it lands, with nobody editing anything.
+#
+# ** EXCLUSIONS ARE NAMED WITH A REASON AND PRINTED EVERY RUN ** (the `turn_gates.sh` convention: an
+# exclusion is a question not asked, never a question answered).  Two kinds occur here:
+#   (a) NOT A GATE -- the grep also returns generators and instruments (`gen_pin_board.py` WRITES the
+#       file; `_touched_pin_readers.py`, `double_read_agreement.py`, `regen_frontier.py` read it and
+#       assert nothing).  Running them proves nothing, so they are named and not run.
+#   (b) MEASURED COST -- `check_quote_pins` measures 595 s here and 186-279 s in CI (`70`, `r7453+70.2`;
+#       the `947 s` of `r7343` was one container on one date), which `turn_gates.sh` already
+#       excludes for the same reason: *a gate that cannot finish before a push will not be run before
+#       one, and a gate placed where it will not be run reports nothing.*  `sweep_gates.sh` asks it
+#       when the ledger moves, and the PR's CI run asks it on every push.
+export NODE="${NODE:-ci}"
+GATE_TIMEOUT="${GATE_TIMEOUT:-280}"
+
+# name:reason -- a cost exclusion is printed, so it cannot be silent.
+COST_EXCLUDE="check_quote_pins"
+cost_reason_for() {
+    case "$1" in
+        check_quote_pins) echo "595s here / 186-279s in CI (70, r7453+70.2); turn_gates.sh excludes it for the same reason and CI asks it on every push -- NOTE r7457: this reason is a COPY of turn_gates.sh's and went stale the moment that one was corrected; sweep_gates.sh is in no workflow, so the old 'sweep_gates.sh asks it' was false" ;;
+        *)                echo "no reason recorded -- THIS IS A DEFECT, add one" ;;
+    esac
+}
+notgate_reason_for() {
+    case "$1" in
+        scripts/gen_pin_board.py)          echo "generator: it WRITES this file rather than asserting about it" ;;
+        scripts/_touched_pin_readers.py)   echo "instrument: class one's own derivation, asserts nothing" ;;
+        scripts/double_read_agreement.py)  echo "instrument: reports agreement, asserts nothing" ;;
+        scripts/regen_frontier.py)         echo "generator: regenerates THE_FRONTIER, asserts nothing" ;;
+        *)                                 echo "not a corpus/check_* gate: reads the file but asserts nothing (name it here with its own reason if that is wrong)" ;;
+    esac
+}
+
+class_two() {
+    local changed f base hits g gates notgates excl rc t0 secs failed timedout passed
+
+    # ⛭ `*.md` IS IN THIS GLOB AND IT IS NOT DECORATION.  The first push of this very instrument touched
+    #   `FOR_66.md` and nothing else of substance -- and `FOR_*.md` is read by `check_order_acknowledged`,
+    #   `check_paper_pins_not_comment_only`, `check_routed`, `check_routing_current` and more.  ** A class
+    #   that excluded the reply channel would have left this seat's own commonest edit uncovered, in the
+    #   one direction that feels like progress. **
+    if [ -n "$REF" ]; then
+        changed=$(git diff --name-only "$REF" -- '*.tsv' '*.json' '*.csv' '*.txt' '*.md' | sort -u)
+    else
+        changed=$( { git diff --name-only -- '*.tsv' '*.json' '*.csv' '*.txt' '*.md'
+                     git diff --cached --name-only -- '*.tsv' '*.json' '*.csv' '*.txt' '*.md'; } | sort -u)
+    fi
+
+    echo
+    echo "  CLASS TWO -- the gates that READ a data file this tree changed"
+    echo
+    if [ -z "$changed" ]; then
+        echo "    no data file changed; nothing can be affected by this class."
+        echo "    ⌗ That is a claim about THIS class only -- the PR's CI run is the whole-job gate."
+        return 0
+    fi
+    echo "    changed data file(s):"
+    for f in $changed; do echo "      $f"; done
+
+    gates=""; notgates=""
+    for f in $changed; do
+        base=$(basename "$f"); base=${base%.*}
+        hits=$(grep -lF "$base" corpus/check_*.py scripts/*.py 2>/dev/null | sort -u)
+        for g in $hits; do
+            case "$g" in
+                corpus/check_*.py) gates="$gates $g" ;;
+                *)                 notgates="$notgates $g" ;;
+            esac
+        done
+    done
+    gates=$(printf '%s\n' $gates | sort -u); notgates=$(printf '%s\n' $notgates | sort -u)
+
+    echo
+    echo "    the grep over 'corpus/check_*.py scripts/*.py' returns:"
+    for g in $notgates; do echo "      [not a gate, named not run] $g -- $(notgate_reason_for "$g")"; done
+
+    passed=0; failed=""; timedout=0; excl=""
+    for g in $gates; do
+        base=$(basename "$g" .py)
+        case " $COST_EXCLUDE " in
+            *" $base "*) excl="$excl $base"; echo "      [excluded, measured cost] $base -- $(cost_reason_for "$base")"; continue ;;
+        esac
+        t0=$(date +%s)
+        ( cd "$(dirname "$g")" && timeout "$GATE_TIMEOUT" python3 -W ignore "$(basename "$g")" >/dev/null 2>&1 )
+        rc=$?
+        secs=$(( $(date +%s) - t0 ))
+        if [ "$rc" = "0" ]; then
+            passed=$((passed+1)); echo "      [ok   ${secs}s] $g"
+        elif [ "$rc" = "124" ]; then
+            timedout=$((timedout+1)); echo "      [over the ${GATE_TIMEOUT}s budget, counted apart] $g -- not a red: a gate that did not finish has contradicted nothing, and CI runs it on its own budget"
+        else
+            failed="$failed $g"; echo "      [FAIL ${secs}s rc=$rc] $g"
+        fi
+    done
+
+    echo
+    echo "    ran: $passed   failed: $(printf '%s\n' $failed | grep -c . || true)   over budget: $timedout"
+    [ -n "$excl" ] && echo "    excluded by measured cost (named above):$excl"
+    if [ -n "$failed" ]; then
+        echo
+        echo "  ⛔ A GATE THAT READS A DATA FILE THIS TREE CHANGED IS RED.  Repair before pushing:"
+        echo "     this class exists because that red reached \`main\` three times in three pushes."
+        return 1
+    fi
+    echo "  every gate that reads a changed data file passes on this tree."
+    echo "  ⌗ Green here is a claim about THIS class -- the PR's CI run is the whole-job gate."
+    return 0
+}
+
+# ===== THE SELECTED CLASSES, AND THE VERDICT IS THE CONJUNCTION OF THE ONES THAT RAN =====
+RC1=0; RC2=0; RAN=""
+if [ "$CLASSES" = "both" ] || [ "$CLASSES" = "one" ]; then class_one; RC1=$?; RAN="$RAN one"; fi
+if [ "$CLASSES" = "both" ] || [ "$CLASSES" = "two" ]; then class_two; RC2=$?; RAN="$RAN two"; fi
+echo
+echo "  classes run:$RAN   ⌗ a class NOT run is a question not asked: --class1 / --class2 / --both"
+if [ "$RC1" = "0" ] && [ "$RC2" = "0" ]; then
+    echo "  GREEN on the class(es) that ran: no receipt that pins touched prose and no gate that reads"
+    echo "  a touched data file is red on this tree.  ⌗ Neither claim is the suite's verdict; CI is."
+    exit 0
+fi
+echo "  ⛔ NOT GREEN -- class one rc=$RC1, class two rc=$RC2.  The named line above says which."
+exit 1

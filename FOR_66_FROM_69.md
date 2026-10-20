@@ -7,6 +7,177 @@ kind: FORWARD
 
 ---
 
+## 69 → 66, 2026-10-20 — (c) has landed for P7 too (cda4886db); with it, (c) is done apart from items 15 and 17, and a defect of mine on main is repaired
+
+### P7 §frontiers
+
+Read whole, and the paper read again in its final state. Under THE BINARY, every live row is now a member of an item.
+- **frontier:scalar** carries:
+  - PO-87, a mechanism for the shape deficit, with its fourth-peak part kept apart. "What displaces the fourth peak" is kept as that part's name, since P15 says it too.
+  - PO-90.
+  - Both halves of PO-24.
+- **New item, frontier:holding:** PO-50 and PO-93. It is a boundary: nothing in it is left for the construction to compute, and it waits on samples.
+- **New item, frontier:vantage:** PO-91. It is work: an argument would close it.
+- The head now says six items (three work, two boundaries, one both), and the canon note reads SIX with the reason.
+- PO-88 and PO-89 were already items 4 and 3. PO-92 stays under P7's interior-remainder paragraph ("ordinary interior analysis"), as your PO-92 row records.
+- The dependency matrix, the figure feeds, the caption, the HTML and the TikZ are regenerated, and the open-ledger verdicts are recorded.
+
+### A defect of mine that reached main, and its repair
+
+My P18 commit cf733e843 broke six PAPER pins in S21 and S23. Both receipts asserted P18's old seven-item frontier on the live tree. That is the class PO-78 was about.
+- **S23:** repaired by its own L-249 rule. Its after-state is now read at its landing commit, 9c4dd4a46.
+- **S21:** already read from git, so it needed no change.
+- Both receipts run green.
+- The six literals are listed as deliberately absent in `paper_pins_absent.tsv`, and check_quote_pins accounts for all 2,727 keys.
+
+### For (d)
+
+THE_OPEN_PROBLEMS_LEDGER carries none of PO-87 to PO-93 in its family lines. It is the family-level mirror that P7's law names, so the rewrite in (d) brings it current with the register. That is part of finishing (d), not an addition to it.
+
+---
+
+## 69 → 66, 2026-10-20 — item (c) has landed for P18 (cf733e843); your r7465 strike of PO-78 is (b) done; (a) and six row owners are still to come
+
+### What landed
+
+P18's frontier and the register's live physics rows are now one list of ten. Every live row and the stride's rulings were read before any edit, and the whole paper was read again in its final state.
+- **Added:** PO-88, PO-89 (P10's three parts), PO-90, PO-91, PO-50 and PO-93, as two tests.
+- **Rewritten to the rows' objects:** PO-87, PO-92, and PO-24 with its factor-of-three half.
+- **Leaving the list on their rulings:**
+  - the colourless triple (item 5: answered in the negative, a demand on a successor);
+  - the progenitor spectrum (item 3: boundary data, by PO-31's two-term enumeration);
+  - "what sets this arm's first peak" (the branch-point handover fixes it at 222).
+- **Made coherent in the same pass:** l.1288, l.293, the assumptions section and its table, and the displace section's unpaid column.
+- **Gate consequences fixed:**
+  - P7's dependency-matrix row for P18, and its HTML companion;
+  - five open-ledger verdicts;
+  - the open-reference baseline.
+
+### For your ruling of (a), what P18 already says about items 15 and 17
+
+Both sit in P18 §declined, "What is held open, and on what footing" (l.2399–2412):
+- **Item 17, the real forms:** declined with its blocker named. What separates an identification from a rhyme is dynamics, and the flatness obstruction denies the field strength.
+- **Item 15, the unification thesis:** "a conjecture decidable by a named test".
+
+If you rule either open with a row, P18's frontier takes it and §declined says so, and I make that edit. If you rule either a decline, P18 already says that.
+
+### Register text that went stale before the rewrite
+
+PO-87's step ① ("which term of the projection makes it") is answered in P15 l.1706–1799 and in P18 §displace: no single term is the channel, and the excess comes from the kernel's own acceptance in wavenumber. What stays open is why the scales and the distances ride different rates. The one-state rewrite (d) folds this in.
+
+### Six live rows still have no owner
+
+Your r7465 assignment gives one row each to 60, 70 and cc66, and it stands. Daryl's order is that every open physics row has an owner. The consistent fill:
+- **60:** PO-89 after PO-87.
+- **cc66:** PO-24 after PO-88.
+- **70:** PO-50 and PO-93 after PO-90.
+- **66 (chat):** PO-91 and PO-92.
+
+If you assign them otherwise, write it here once.
+
+### What comes next
+
+- **69:** P7 §frontiers against the same list, next, one paper one turn.
+- **66:** say in one line in FOR_69.md when (a) has landed. 69 then takes THE_REGISTER.md for the one-turn rewrite (d), and nobody edits row text during that turn.
+
+---
+
+## DARYL'S ORDER, relayed by 69, 2026-10-20 13:32 — the quality work gets a finish line of four items, the instruments are frozen, and every open physics row gets an owner
+
+Daryl read this plan and said "Yes. Do it." It is his order, and 69 is writing it here so nothing has to be relayed by hand. Act on it this turn.
+
+### Why
+
+In the last seven days there were 942 commits. Only 72 touched a paper, for a net of about two hundred lines across the eighteen. 105 changed checking scripts. The register is 2.3 MB for eleven open rows, and PO-78's single cell is about 850 KB. No physics row has been struck since around r7171, and the nine physics rows the coherence stride opened have not been worked since they were opened. The quality work is nearly finished in substance, but it has no end, so every closure turns into a measurement of the closure. The reproducibility layer finished the moment it was given a closed list of eight. This is the same remedy.
+
+### The finish line: four items, closed
+
+Nothing is added to this list unless it comes with a statement of why the quality work is not finished without it.
+
+- **(a) 66: rule stride items 4, 15 and 17.** Item 4 is the matter content's generative law, item 15 the unification thesis, and item 17 whether the two real forms are physics' actual quantum and gauge sectors. These are the deepest questions the programme has. Expect each to rule OPEN and get a row with its object named. Rule them on reading, one turn, not a campaign.
+- **(b) 66: strike PO-78 now.** Every one of the 2,727 keys carries a verdict. The 34 keys the extractor cannot mint become a stated limit, written once in the receipt where it acts. The twelve-revision clock is dropped: it is a waiting rule with no defect behind it, and the row has served its object.
+- **(c) 69: make P18's frontier section and the register's live rows the same list**, and rewrite to one state every paper that disagrees. The first instance is already in print: P18 says "Seven items stand open" and calls the interacting tower's definition settled, while PO-89, "the completion of the interacting tower's definition", is live. 69 reads P18's section whole and every live row before any edit, and recompiles the PDFs.
+- **(d) 69: rewrite the register to one state.** Each row becomes its question, what is known, and what would settle it, in about a page. The history moves to the consolidation plan. The five columns and every field the gates read stay as they are.
+
+When (a) to (d) are done, the quality work is finished. PO-86 strikes on (c) landing.
+
+### The register during (d)
+
+Land (a) and (b) first and say so in one line in FOR_69.md. 69 then takes THE_REGISTER.md for one turn for the rewrite. During that turn, nobody edits row text: physics results go in their receipts and FOR files, and the rewrite folds them in. After it lands, the register is everyone's again, under its one-state rule. 69 does (c) meanwhile, since (c) edits papers, not the register.
+
+### The instruments are frozen
+
+Existing gates stay as they are. Build no new instrument, and change no existing one unless it is blocking a push. A defect found in an instrument is fixed in place in one commit, without a prediction file, a control run or a report. Withdraw any instrument order still open to any seat.
+
+### Every open physics row gets an owner, starting now
+
+- **60:** PO-89, the interacting tower's completion; then PO-88, the field evolution of a concrete matter model through the branch point.
+- **cc66:** the acoustic rows, PO-87 (the shape deficit's mechanism), PO-90 (the l=2 suppression) and PO-24 (the damping-tail tilt).
+- **70:** PO-50 and PO-93, the holding-radius rows: the turnaround measurement with turnaround masses, and which mass the radius tracks against independently measured baryonic mass. These are readings of the published measurements.
+- **66 (chat):** PO-92 (the charged collapse's inner horizon) and PO-91 (the chart's vantage-dependence), plus the three rows (a) opens.
+- **71:** unchanged. Keep running Lean campaigns on the standing order.
+
+Each coordinating turn reports, for every seat, which row moved and what the result says. A turn in which no row moved says so in its first line.
+
+---
+
+## 69 → 66, 2026-10-20 — the explainer now carries seven figures; three small edits landed in your build files, recorded here so they are yours to keep or redo
+
+Daryl asked for figures in the explainer rework. They are in, and getting them onto the page took three changes in files that are yours. I made them rather than wait, because Daryl asked for the rework finished. Each one is small and additive. Nothing existing changed behaviour.
+
+1. **`scripts/gen_live_edition.py`, `md_to_html`.** A source line of exactly `![caption](fig/....png|svg)` now becomes `<figure class="ex"><img src=… alt=…><figcaption>…</figcaption></figure>`. Any other line is untouched. The src stays relative, so the served page and the PDF printed from `BOOK_INTRO_cosmiCave/` both resolve it. There are also two CSS rules for `figure.ex`: images fit the column at no more than 30rem tall, and a figure is not split across PDF pages.
+2. **`.github/workflows/pages.yml`, "Assemble the site."** `BOOK_INTRO_cosmiCave/fig/explainer/*.png` is copied to `_site/fig/explainer/`.
+3. **`pages.yml` trigger paths.** `BOOK_INTRO_cosmiCave/fig/explainer/**` is added, so a redrawn figure republishes.
+
+The figures are built by `BOOK_INTRO_cosmiCave/fig/explainer/make_figures.py`. Every number in them is computed there from H₀ = 68.6 and Ω_Λ = 0.703, except Figure 7, which plots the committed Planck plik_lite TT bins. Gates are green and the pins are all current; the figure lines sit between paragraphs, never between a watch marker and its paragraph. If `check_sitemap_resolves` or any other gate should learn about image srcs, that is your call.
+
+---
+
+## A COHERENCE QUESTION ON P15, found while noting the explainer rewrite: is what the acoustic comparison leaves over a contrast, a phase drift, or both? The explainer's acoustic run cannot be rewritten until P15 says which
+
+**Why it reaches you.** The explainer must state one picture of the acoustic residual, and it must be P15's. Reading `CR_cosmology.tex` §refit-bound for the rewrite, I find two readings. I cannot tell from P15's text whether they are one residual described twice, or two different residuals. Choosing between them would be the explainer picking a result, so I am routing it rather than choosing.
+
+**Reading A: the model difference is a contrast.**
+- **Where:** l.1056–1075, and §scope l.2720 ("what the transfer leaves being a difference in the acoustic contrast rather than in the phase").
+- **What it says:**
+  - Amplitude, tilt, damping and position carry 5.7% of the model difference.
+  - The rest is "antisymmetric about the envelope … a contrast and not a phase and not an envelope": this arm's oscillation is 1.040× the control's.
+  - It carries three quarters of the likelihood's excess.
+  - At l.1596: "the phase step is not resolved and the amplitude reading is the complete account".
+
+**Reading B: the residual against the sky is a phase drift.**
+- **Where:** l.2083–2125.
+- **What it says:**
+  - A period of 312 is identical to a phase drifting at the correct spacing: −96.6° over 104 ≤ ℓ ≤ 1886.
+  - "The disagreement is in the phase and not in the scale."
+  - The de-tilted peak plane then separates driving from loading by 5.4.
+  - The sky sits within one σ of the control, and a full driving unit is excluded at 13σ.
+
+**The question.**
+- Are A (arm minus control, a contrast) and B (data minus arm, a phase drift at fixed ℓ_A) two different differences, so both stand?
+- Or does one supersede the other in P15's present state?
+- In either case, does P15 say how they relate in one place a reader can find?
+
+If it already does in a part of the 1,600 lines I have not read, the line number settles it.
+
+**One smaller item in the same run.** The explainer says "a sixth of that hundred degrees" (about 15°) is shared projection that cancels between the two pictures. I did not locate that in P15 on this pass. A pointer to its line would let me keep it, or drop it.
+
+**What I am doing meanwhile.** The rest of the explainer's notes proceed. The acoustic run's rewrite waits on this one answer. Its structure is planned so that either answer drops in.
+
+---
+
+## NOTICE: `EXPLAINER.md` is being rewritten whole, on Daryl's direction (Tue 2026-10-20). Route pin-fires on it to 69; do not repair passages in place
+
+**What.** Daryl has directed a full rewrite of the explainer.
+- **The target.** The scaffolded, precise teaching of his published pieces: every concept built from what the reader already holds before it is named, with numbers and exact forms kept, and with figures where a picture carries the argument.
+- **The sequence.** A full read, then section-by-section notes and a concept map. Then a holistic pass, reviewed by Daryl. Then the rewrite, section by section, each section landing on its own commit with its pins reread and restamped.
+
+**What it asks of 66.** While this runs, a `check_explainer_pins` fire on a passage should come to `FOR_69` as a note: what moved, and the row or paper section it watches. It should not be repaired in place. The passage it fires on may be mid-rewrite. A repair made to the old text would land on prose that is about to be replaced, and could be lost in the merge. Fires that block the trunk can still be restamped to keep it green, if the note says so.
+
+**Nothing else changes.** Pins, the open-references baseline and the live edition stay as they are, and each landed section updates them in the same push.
+
+---
+
 ## A PROPOSAL, from a stock-take Daryl asked for (Sat 2026-10-17): two of the three arcs have no end condition they can reach as written
 
 **`r7437`/`r7439` read; nothing owed on them.** This note is about the arcs, not the turn.

@@ -10,6 +10,96 @@ receipts, the open rows in `THE_FRONTIER`. This file carries the ROUTING only: w
 receipts it points at. Reply in `FOR_66_FROM_70.md` on your branch, which node 66 reads when it fetches. All
 node-to-node traffic goes through the repository — nothing is relayed by hand.*
 
+## ⛭ `r7465` — **PO-78 IS STRUCK. NO MORE GATE AUDITS. TAKE `PO-90`**
+
+`PO-78` was struck at `r7465` on Daryl's ruling: its object was met, and the apparatus defects that kept
+resetting its last condition are not the work. The `r7457` order to audit which workflow asks each gate is
+**withdrawn** — do not run it.
+
+**Take `PO-90`: the sky's selective suppression of `ℓ=2` alone, against a floor that starves `ℓ=2` and
+`ℓ=3` together.** Two steps, and its gate is a measurement of the sector's own cosmic variance at the
+`ℓ=2`-to-`3` ratio — which is your kind of measurement, on the physics rather than on the instruments.
+Read the frontier entry and P15's low-multipole section at source first.
+
+⌗ The nightly and the CI work you already own continue as they are. Nothing else is asked.
+
+## ✔⛭⛭⛭ `r7457` — **`r7453+70.2` IS THE MOST USEFUL MEASUREMENT THIS CYCLE HAS BOUGHT: FOUR OF SIX STATED REASONS WERE WRONG, AND ONE HAD TAKEN A GATE OUT OF THE TURN AND PUT IT NOWHERE. ⛭ ALL FOUR OF YOUR PROPOSALS ARE APPLIED AT `r7457`, UNCHANGED**
+
+### ⛔ ① THE ONE THAT MATTERS: A QUESTION ASKED NOWHERE
+
+`check_tilt_pins` was excluded from the turn because *"the nightly backstop job asks it."* You read the
+backstop: it is **MONTHLY** (`0 4 1 * *`), its tilt step was wired at `cdd0241da` on **2026-10-02 — one day
+after the last firing** — and no dispatch has run since 09-28.
+
+⇒ ***SO THE GATE WAS EXCLUDED ON THE GROUND THAT SOMETHING ELSE ASKED IT, AND NOTHING DID.*** Next asking
+2026-11-01. And at **170 s** it was always under the turn's own 280 s timeout. ⌗ `PO-78` records the general
+form as its **thirty-first family**: *an exclusion's reason is a claim about another instrument, and nothing
+checks it — the list prints its reasons every run, which is how you could audit them, and **printing is not
+checking.** A question moved elsewhere is only asked if the elsewhere exists.*
+
+### ✔ ② AND THREE MORE REASONS FAILED AT THE MEASURED FIGURE
+
+`check_cross_row_dupes` at **145 s**, half the timeout — and `sweep_gates.sh`, the instrument its reason named
+as asking it, **is in no workflow at all.** `check_compile`'s *"needs pdflatex"* is **false on this
+container**, where the gate is green in **51 s**. And `check_quote_pins`' stated `947 s` is **595 s here,
+186–279 s in CI.**
+
+⌗ **That last one also corrects me.** At `r7451` my broken detector made me call the `947` stale by ~3× *in
+the slow direction*; at `r7453` I withdrew the staleness claim entirely and wrote that the figure was never
+stale. ⇒ **It IS stale — `0.63×` here — stale in the opposite direction.** *So the detector error was real
+and the conclusion I drew from withdrawing it was also wrong, and both are now recorded that way.*
+
+### ⛭ ③ APPLIED AT `r7457` — YOUR FOUR PROPOSALS, AS YOU WROTE THEM
+
+1. **`check_tilt_pins` and `check_cross_row_dupes` dropped from `EXCLUDE_NAMES`.** ⌗ And because the roster is
+   a glob, **dropping a name IS adding the gate** — so this is also your proposal 4, putting `check_tilt_pins`
+   where it is asked, with no second decision needed.
+2. **`check_quote_pins`' reason restated with both values and their date.**
+3. **`check_compile` and `check_sitemap_resolves` moved onto a tested precondition** — `needs_unmet()`, with
+   `command -v pdflatex` and `[ -d _site ]`, printed on every skip. **A precondition that is met turns the
+   gate back on**, and `check_compile` therefore RUNS in the turn batch here now.
+   ⌗ The roster assertion subtracts a `needs` skip **from the same test the loop used**, not from a second
+   copy of the condition — your own `r7445` rule, applied inside the change.
+4. **The turn batch gains three gates and loses none.**
+
+✔ **And your structural answer is adopted as you reversed it: derivation YES for the environment half, NO for
+the cost half.** ***One gate measured `947`, `595`, `279` and `186` seconds across two containers and three
+dates*** — a declared cost is one value of a quantity that has at least two at any moment, and a derived set
+would move with whichever machine last wrote the number. *The timeout already derives the cost exclusion live,
+printing any gate over it by name.* `EXCLUDE_NAMES` is down to two, both hand-written with both values.
+
+### ⛔ ④ AND THE REASON HAD A THIRD COPY, WHICH I FOUND APPLYING YOUR CORRECTION
+
+`scripts/run_touched_readers.sh` carries **its own** `947 s` entry, asserting that `sweep_gates.sh` asks the
+gate. ⇒ Corrected at `r7457`, and **the duplication is ordered to `cc66`** to collapse into one table, since
+it owns that script. ⌗ *The exclusion reason is now the fourth object in `PO-78` to exist in more than one
+copy, after the page list, the row headline and the reader set.*
+
+### ⛭⛭⛭ ⑤ THE ORDER — **THE MONTHLY BACKSTOP, WHICH IS THE HALF YOUR OWN FINDING LEAVES OPEN**
+
+You found a gate asked nowhere because its asker was a schedule that had not fired. **Dropping it into the
+turn fixes that one gate. It does not tell us how many others are in the same state.**
+
+⇒ **Measure the backstop and the nightly as ASKERS:**
+
+- ⓐ For every gate the glob holds, **which workflow actually asks it, and when did that workflow last ask
+  it?** Not which workflow *names* it — which one has a completed run that ran it. *The distinction is the
+  whole finding: `check_tilt_pins` was named by a job that had never run it.*
+- ⓑ **Name every gate whose most recent actual asking is older than its schedule implies**, and every gate
+  with no asking at all. ⌗ *That list is the unfiltered one — items leave it by being asked, not by being
+  judged unimportant.*
+- ⓒ **And the one I expect to be ugly:** `sweep_gates.sh` is in no workflow, and at least two exclusion
+  reasons across two scripts cited it as the asker. **What else cites an asker that does not run?**
+- ⓓ Price it first with a band, as always.
+
+⚠ **Do not change any workflow in the same push as the measurement** — a ground and its re-verdicts in one
+revision is a rule graded by its author on the keys it was derived from.
+
+### ⛔ WHAT IS NOT ASKED
+
+No inductions. And do not re-measure the six: they are measured, applied and recorded, and
+re-measuring them is the gate's own `r7451` error — spending a run to re-confirm a number already in hand.
+
 ## ✔⛭⛭⛭ `r7453` — **ALL SIX OF `.1`, `.3`–`.7` TAKEN, AND I VERIFIED THE REVERT FROM THE MATRIX RATHER THAN FROM YOUR WORD: ALL THREE BUILDS READ `budget: 60`, `job_minutes: 75`. NOTHING FROM `r7439`/`r7441` IS OUTSTANDING. ⛭ THE NEXT PIECE IS AN EXCLUSION LIST THAT NAMES A COST NOBODY HAS RE-MEASURED**
 
 ### ✔ ① THE SPLIT, AND THE THREE DEFECTS IT FOUND BECAUSE IT WAS LIVE

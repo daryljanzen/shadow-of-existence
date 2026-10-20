@@ -1,0 +1,164 @@
+==============================================================================
+r7454 -- THE PAPER'S OWN OPEN LIST AGAINST THE MEASUREMENTS THE CORPUS CARRIES
+==============================================================================
+cite keys resolved to corpus files: 23 | receipt names resolvable: 1096
+
+-- Ⓐ  THE TABLE PARSES TO 7 ROWS.  The paper says seven, twice.
+-- THE PROSE POPULATION: 18 sentences in P18 name something open or owed.
+
+==============================================================================
+PER ITEM.  Three conjuncts: the item's own cited source, the item's own
+figures or a four-word run of its own words, and a settlement in the line.
+==============================================================================
+
+  [T1] where a generation's colourless triple sits
+      state NO-MARKER-MATCHED | figures - | cited ['JanzenMatter']
+      searched: corpus/matter_sector_paper.tex   (resolved via sec:frontier paragraph, 3 words shared: Where a generation's colourless triple sits stands with it. ...)
+
+  [T2] the matter content's generative law
+      state NO-MARKER-MATCHED | figures - | cited ['JanzenMatter']
+      searched: corpus/matter_sector_paper.tex   (resolved via sec:frontier paragraph, 2 words shared: And one question this sector might be expected to settle is ...)
+
+⌗ [T3] what sets this arm's first peak
+      state UNREACHABLE | figures - | cited -
+      ⌗ no cited source resolves, so this item is NOT TESTED by this
+        instrument.  UNREACHABLE is its own state and is not NOT-REFUTED.
+
+⌗ [T4] the progenitor spectrum
+      state UNREACHABLE | figures - | cited -
+      ⌗ no cited source resolves, so this item is NOT TESTED by this
+        instrument.  UNREACHABLE is its own state and is not NOT-REFUTED.
+
+⌗ [T5] which mass the Hubble--Eddington radius tracks
+      state UNREACHABLE | figures ['1.85', '6.4'] | cited -
+      ⌗ no cited source resolves, so this item is NOT TESTED by this
+        instrument.  UNREACHABLE is its own state and is not NOT-REFUTED.
+
+  [T6] the charged collapse and the Cauchy horizon
+      state NO-MARKER-MATCHED | figures - | cited ['JanzenOperator', 'JanzenSlicing', 'JanzenGroupoid']
+      searched: corpus/SdS-slicing-curve_v2.tex, corpus/groupoid_paper.tex, corpus/slicing_operator.tex   (resolved via sec:frontier paragraph, 4 words shared: The identification of the flat synchronous space with the su...)
+
+⌗ [T7] whether the tilt displacement is a tension
+      state UNREACHABLE | figures - | cited -
+      ⌗ no cited source resolves, so this item is NOT TESTED by this
+        instrument.  UNREACHABLE is its own state and is not NOT-REFUTED.
+
+  [L160] Whether the same reversal extends from the rate to the scale is not sett
+      state NO-MARKER-MATCHED | figures - | cited ['JanzenModernParallax']
+      searched: corpus/modern_parallax.tex   (resolved via the claim's own sentence)
+
+⌗ [L806] And the question this answers is not a new one --- it is the question th
+      state UNREACHABLE | figures - | cited ['JanzenThesis']
+      ⌗ no cited source resolves, so this item is NOT TESTED by this
+        instrument.  UNREACHABLE is its own state and is not NOT-REFUTED.
+
+  [L1023] What is not settled is the field-level charge structure , which rides on
+      state NO-MARKER-MATCHED | figures - | cited ['JanzenCRframework']
+      searched: corpus/CR_framework.tex   (resolved via the claim's own sentence)
+
+  [L1163] Whether the two coincide for a structural reason or by accident of abstr
+      state NO-MARKER-MATCHED | figures - | cited ['JanzenGroupoid']
+      searched: corpus/groupoid_paper.tex   (resolved via the claim's own PARAGRAPH)
+
+⚑ [L1284] What is open is the definition of the interacting tower --- the spectrum
+      state REFUTATION-CANDIDATE | figures - | cited ['JanzenCanonicalTime']
+      searched: corpus/canonical_time.tex   (resolved via the claim's own sentence)
+      ⊢ corpus/canonical_time.tex:458  [run "and the ultraviolet definition"]
+        At leading order = +c _n _n^2; but the cubic and higher self-interactions enter at the same inverse-square order at the origin ( _n^2 _m/a^3 in kind)---the potential sector's own cubic being regular t
+      ⊢ corpus/canonical_time.tex:458  [run "the ultraviolet definition of"]
+        What remains genuinely open is accordingly the ultraviolet definition of the tower sums---a different thing from a residual freedom in the quantization at the boundary, and not settled by being shared
+
+  [L1343] Read as a Friedmann model the family gives -k=E^ 2 -1 exactly: bound is 
+      state NO-MARKER-MATCHED | figures - | cited ['JanzenOperator']
+      searched: corpus/slicing_operator.tex   (resolved via the claim's own sentence)
+
+  [L1643] So the inheritance is not an auxiliary posit with free content: the obje
+      state NO-MARKER-MATCHED | figures - | cited ['JanzenCRframework', 'JanzenBHcausality']
+      searched: corpus/BH_causality_v2.tex, corpus/CR_framework.tex   (resolved via the claim's own PARAGRAPH)
+
+⌗ [L1721] A reader is owed all three rather than a statistic that appears to have 
+      state UNREACHABLE | figures - | cited -
+      ⌗ no cited source resolves, so this item is NOT TESTED by this
+        instrument.  UNREACHABLE is its own state and is not NOT-REFUTED.
+
+  [L1732] What is open is a mechanism, and it is narrower for what is already rule
+      state NO-MARKER-MATCHED | figures - | cited ['JanzenCRcosmology']
+      searched: corpus/CR_cosmology.tex   (resolved via the claim's own PARAGRAPH)
+
+  [L1844] Where a solution supplies a mechanism that answers a question, a dissolu
+      state NO-MARKER-MATCHED | figures - | cited ['JanzenCRframework']
+      searched: corpus/CR_framework.tex   (resolved via the claim's own PARAGRAPH)
+
+  [L2505] So that route is open rather than closed, and its prerequisite is built:
+      state NO-MARKER-MATCHED | figures - | cited ['JanzenBoundary']
+      searched: corpus/boundary_paper.tex   (resolved via the claim's own sentence)
+
+⌗ [L2716] The relative size is a number rather than an adjective. Seven open items
+      state UNREACHABLE | figures - | cited -
+      ⌗ no cited source resolves, so this item is NOT TESTED by this
+        instrument.  UNREACHABLE is its own state and is not NOT-REFUTED.
+
+⌗ [L2774] The acoustic rejection of is the largest open item in the paper , and it
+      state UNREACHABLE | figures - | cited -
+      ⌗ no cited source resolves, so this item is NOT TESTED by this
+        instrument.  UNREACHABLE is its own state and is not NOT-REFUTED.
+
+⌗ [L2774] The instrument is built, controlled against a known answer and converged
+      state UNREACHABLE | figures - | cited -
+      ⌗ no cited source resolves, so this item is NOT TESTED by this
+        instrument.  UNREACHABLE is its own state and is not NOT-REFUTED.
+
+  [L2817] Whether a charged collapse forms the Cauchy horizon is open, and it is a
+      state NO-MARKER-MATCHED | figures - | cited ['JanzenOperator', 'JanzenSlicing', 'JanzenGroupoid']
+      searched: corpus/SdS-slicing-curve_v2.tex, corpus/groupoid_paper.tex, corpus/slicing_operator.tex   (resolved via the claim's own PARAGRAPH)
+
+  [L2946] One real open item in the cosmology: a mechanism for the acoustic defici
+      state NO-MARKER-MATCHED | figures - | cited ['JanzenCRcosmology', 'JanzenCRcosmology']
+      searched: corpus/CR_cosmology.tex   (resolved via the claim's own PARAGRAPH)
+
+  [L2946] One item that belongs to the field rather than to this framework: the li
+      state NO-MARKER-MATCHED | figures - | cited ['JanzenCRcosmology', 'JanzenCRcosmology']
+      searched: corpus/CR_cosmology.tex   (resolved via the claim's own PARAGRAPH)
+
+⌗ [L2967] That is the unpaid column, and it is short because the register is long 
+      state UNREACHABLE | figures - | cited -
+      ⌗ no cited source resolves, so this item is NOT TESTED by this
+        instrument.  UNREACHABLE is its own state and is not NOT-REFUTED.
+
+==============================================================================
+THE TALLY, MECHANICAL
+==============================================================================
+  REFUTATION-CANDIDATE   1
+  NO-MARKER-MATCHED      14
+  UNREACHABLE            10
+
+==============================================================================
+THE CONTROLS.  A control that fires VOIDS THE RUN -- PREDICTION.md says so and
+the void run is kept in the tree, as r7450's was.
+==============================================================================
+
+⛔  Ⓣ① OVER-FIRE, the data-gated step
+     quoted from: PO-87, and P15 sec:refit-bound
+     expected NO-MARKER-MATCHED | got REFUTATION-CANDIDATE | figures ['0.9', '1.3']
+     searched: corpus/CR_cosmology.tex
+       ⊢ corpus/CR_cosmology.tex:659  [figure 0.9]  The remaining choice is the epoch both integrals terminate at, and it is settled by the same consistency the rate assignment is. _D/ _* is a
+       ⊢ corpus/CR_cosmology.tex:2726  [figure 0.9, 1.3]  What the transfer leaves is about one multipole at each peak, and the sky cannot resolve it: the comb is right to a part in six hundred, the
+
+✓  Ⓣ② OVER-FIRE, a row no receipt measures
+     quoted from: PO-91, opened r7393 from the residue of 69’s census
+     expected NO-MARKER-MATCHED | got NO-MARKER-MATCHED | figures -
+     searched: corpus/dynamics_paper.tex
+
+⛔  Ⓣ③ UNDER-FIRE, an item the record states as answered
+     quoted from: PO-50’s live item, retired at r7222
+     expected REFUTATION-CANDIDATE | got NO-MARKER-MATCHED | figures ['1.165', '5.228']
+     searched: receipts/P03_SdS_slicing/P03_the_enclosed_mass_is_monotone_so_the_turnaround_ratio_cannot_fall_below_one_and_the_contested_direction_is_two_different_quantities.py
+
+------------------------------------------------------------------------------
+⛔ 2 CONTROL(S) FIRED.  THE RUN IS VOID:
+    Ⓣ① OVER-FIRE, the data-gated step
+    Ⓣ③ UNDER-FIRE, an item the record states as answered
+  The verdicts above are not to be read as findings.  The instrument is
+  the measurement, and this is what it measured about itself.
+
+price 1.0s

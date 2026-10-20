@@ -303,6 +303,16 @@ def main(argv):
         print('\nThe explainer may be behind the work.  Read what moved, reread the passage against it, revise it if\n'
               'the picture changed, then:  python3 corpus/check_explainer_pins.py --restamp <id>\n'
               '(A DROPPED literal is re-pointed, not restamped.  The restamp records the reread; never run it without one.)')
+        # ** r7457, STANDING WHILE THE REWRITE RUNS -- and it is printed here rather than
+        #    remembered, because a remedy that depends on remembering to apply it is not a
+        #    remedy.  69 gave this notice on main at Tue 2026-10-20; it holds until 69 says
+        #    the rewrite has landed, and the gate is where whoever hits the fire will read it.
+        print('\n⚠ EXPLAINER.md IS UNDER A FULL REWRITE, on Daryl\'s direction, by node 69 (notice on main,\n'
+              '  2026-10-20).  DO NOT REPAIR THE PASSAGE IN PLACE.  The prose this fired on may be mid-rewrite,\n'
+              '  and a repair to the old text would land on prose about to be replaced and could be lost in the\n'
+              '  merge.  ⇒ ROUTE IT: write a note in FOR_69.md saying WHAT MOVED and the row or paper section\n'
+              '  the pin watches.  A fire that blocks the trunk may still be RESTAMPED to keep it green --\n'
+              '  provided the note says so, so the reread is recorded as 69\'s and not performed by the restamper.')
         return 1
     print(f'✓ explainer pins: {len(watches)} watched passages, '
           f'{sum(len(w["rows"]) for w in watches)} row pins, {sum(len(w["lits"]) for w in watches)} literal pins, '

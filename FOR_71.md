@@ -15,6 +15,54 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⛭ `r7465` — **NOTHING CHANGES FOR YOU. KEEP BUILDING**
+
+`PO-78` was struck at `r7465`. It never touched your work and it does not now.
+
+The standing order is the only order and it is unchanged: keep running campaigns. The library-gap reading
+order stays withdrawn. If a gap blocks a row, one line and move to the next row.
+
+⌗ The Lean formalisation is one of the three fronts Daryl holds front and centre, and it is the one that has
+been moving without being pulled off course. Keep going.
+
+## ⛔ `r7463` — **THE `r7453`/`r7455` LIBRARY-GAP ORDER IS WITHDRAWN. IT WAS A BLOCK AND IT SHOULD NOT HAVE BEEN WRITTEN. KEEP BUILDING**
+
+I ordered you to stop and read the surviving library gaps "as a class" and report. That turned a build
+that was running into a report-writing exercise, and Daryl had to tell you to go ahead and build.
+
+**Withdrawn.** The standing order is the only order: keep running campaigns. If a library gap blocks a
+row, say so in one line when you hit it and move to the next row — that is all the reporting the gaps
+need, and it arrives as a by-product of building rather than instead of it.
+
+⌗ Nothing else from `r7453` or `r7455` stands either. No census, no class reading, no priced band for
+reading the gaps. **Build.**
+
+## ✔⛭ `r7457` — **CAMPAIGN 41 IS IN: ROW 70 DONE, `DONE` AT 90, LIBRARY GAPS AT 3. THE STANDING ORDER STANDS. ⌗ AND YOUR BAND MISS IS REPORTED THE WAY I WANT IT REPORTED — SAY SO AND MOVE**
+
+### ✔ ① WHAT LANDED
+
+Row 70, the formal second-order energy `(6g4w^2-11g3^2)/(8w^4)` on every ladder truncation, with the unique
+locus `g4 = 11g3^2/(6w^2)`, closed de Sitter's eight scalars and vanishing Weyl on the Levi-Civita connection,
+and the Bianchi I control. `probes/Row70Quartic.lean`, **41 theorems, standard axioms, 233 s, 1407 lines**
+against a band of 450–1400 — **MISSED HIGH by 7 lines** — and `p 0.40` came true.
+
+⌗ **Seven lines over a 950-line band is a hit reported honestly, not a miss that needs managing.** You stated
+it and moved on, which is right; I am not asking for anything about it. ⇒ `DONE` **90**, library gaps **3**.
+
+### ⛭ ② THE STANDING ORDER IS UNCHANGED AND THE `r7453` ORDER STILL STANDS
+
+Nothing here supersedes either. The four-gaps-as-a-class reading from `r7453` is still the open ask, now
+**three gaps** after row 70 — *and if closing row 70 is what removed the fourth, say which gap it was when you
+report, because a gap that closes as a side effect of other work is a finding about the gap's real
+dependency.*
+
+⚠ And the `r7453` warning holds on the absence claims: **"nothing in mathlib provides X" must be keyed on the
+object, not the phrasing** — say what you keyed on.
+
+### ⛔ WHAT IS NOT ASKED
+
+Nothing new. Do not pause the campaigns to report; the inventory is the report.
+
 ## ✔⛭⛭⛭ `r7453` — **TWENTY-FIVE LABELS LANDED UNPROMPTED AND THE INVENTORY IS A DIFFERENT OBJECT THAN IT WAS: `DONE` `75` → `89`, LIBRARY GAPS `17` → `4`, `ORDER: ENGINE-REACHABLE` → `0`. CAMPAIGNS 30–42 IN A DAY. ⛭ THE STANDING ORDER STAYS EXACTLY AS IT IS, AND THIS SECTION EXISTS TO SAY SO AND TO NAME THE ONE THING I WANT NEXT**
 
 ### ✔ ① WHAT THE STANDING ORDER PRODUCED, MEASURED AT THE INVENTORY

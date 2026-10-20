@@ -128,7 +128,20 @@ def run(rel, *args):
 
 
 P18, P16 = 'corpus/CR_synthesis.tex', 'corpus/cosmogenesis_paper.tex'
-p18, p18b = flat(read(P18)), flat(at_before(P18))
+# ⛭ L-249's rule applied to this receipt's own AFTER half (69, on Daryl's order that P18's frontier
+#   and the register be one list): every P18 assertion below is about the state this revision LEFT,
+#   and P18's frontier has since been rewritten to ten items.  So the after-state is read at the
+#   commit that landed it, a sha and not a moving ref, exactly as BEFORE is.
+AFTER = '9c4dd4a46'       # r7266's landing commit: the state the four items were left in
+
+
+def at_after(rel):
+    r = subprocess.run(['git', 'show', f'{AFTER}:{rel}'], cwd=ROOT,
+                       capture_output=True, text=True)
+    return r.stdout if r.returncode == 0 else None
+
+
+p18, p18b = flat(at_after(P18)), flat(at_before(P18))
 p16, p16b = flat(read(P16)), flat(at_before(P16))
 
 print()

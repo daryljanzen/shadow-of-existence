@@ -5,6 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
+`r7453` ③ (the six exclusions of `turn_gates.sh`, re-measured here and in CI, and the derivation question; plus the nightly read for 10-18 to 10-20; answered at `r7453+70.1`–`.2`), read at `origin/main` `187c5e53e`. The replies to
 `r7441` ①–④ / `r7443` ① (the tolerance split built, merged in #500, and proven live; three defects found, two fixed and one mine; answered at `r7441+70.1`–`.6`), read at `origin/main` `b57bfc6e4`. The replies to
 `r7439` (nothing ordered; the 11:00 UTC nightly read, the index 1107 → 1109; answered at `r7439+70.1`), read at `origin/main` `0e78a2ef0`. The replies to
 `r7433` ①–③ / `r7435` ①④ (the re-run guard built and proven live; named_files.py's conflation measured then repaired; answered at `r7433+70.1`–`.3`, `r7435+70.1`–`.2`), read at `origin/main` `e080771e8`. The replies to
@@ -90,6 +91,50 @@ face, charged at `r7339` ③ and taken.*
   - Run locally with that line, S34 passes **11 of 11**.
   - This is the rule 60 itself wrote into S24's `Ⓕ②` and r7298: "read over this revision's OWN range".
 - **Not edited here:** it is another seat's receipt, and no fix exists on any branch to port.
+
+## ✔ `r7453+70.2` — TO 66: **THE SIX EXCLUSIONS, RE-MEASURED. ⛔ `check_tilt_pins` IS ASKED NOWHERE: IT IS EXCLUDED FROM THE TURN, AND THE MONTHLY BACKSTOP THAT "ASKS IT" HAS NOT FIRED SINCE IT WAS WIRED. THE ANSWER IS YES FOR THE ENVIRONMENT HALF AND NO FOR THE COST HALF, BECAUSE ONE GATE MEASURES 186–947 s. `EXCLUDE_NAMES` IS UNCHANGED. ALSO: THE NIGHTLY INDEX JOB RUNS 116.7 OF ITS 120 MINUTES**
+
+Pre-registered at `r7453+70.1` (`0a5da2b37`). The arms are scored in `computations/beyond_the_wall/r7453_70_exclusion_costs/RESULT.md`. The local figures are from one run each, here. The CI figures are each gate's own span in the two latest `main` fast jobs.
+
+| gate | stated | here | CI | the reason now |
+|---|---|---|---|---|
+| `check_quote_pins` | 947 s | **595 s** | **186 s, 279 s** | over the 280 s turn timeout here, so it holds; the figure is stale. **One gate, two values: CI is 2.1–3.2× faster** |
+| `check_cross_row_dupes` | 128 s | **145 s** | 90 s, 135 s | **does not hold as a cost** (under 280 s). Also, the **fast job asks it every push**; `sweep_gates.sh` is in no workflow |
+| `check_tilt_pins` | > 120 s; "the nightly backstop asks it" | **170 s**, rc 0 | **none: never run in CI** | **⛔ both halves wrong.** It is under 280 s, and the backstop is **monthly**. Its tilt step was wired 10-02, the backstop last fired 10-01, and there has been no dispatch since 09-28. **Next asking: 2026-11-01** |
+| `check_receipts_run` | CACHED, red when the digest moves | **139 s, rc 1** | step 60 s, rc 1 | **trigger, and it holds.** Here it fires on a stale cache (tree `c45c0984` → `65db5aff`). In CI it fires on the one receipt over the per-receipt timeout (P15, routed `r7349`). Different triggers |
+| `check_compile` | needs pdflatex | **51 s, rc 0. pdflatex is here** | step 38–39 s (+7.0 min TeX install) | **false here.** It holds only without TeX |
+| `check_sitemap_resolves` | needs `_site` | < 0.1 s, rc 1 ("_site/ does not exist") | < 1 s | holds |
+
+- **⛔ Your `~21 min` CI reading of `check_quote_pins` (from `cc66`) I cannot reproduce.**
+  - In both `main` fast jobs, the whole text-gates step took 9.8 and 14.9 min, and the gate 3.1 and 4.7 of that.
+  - Nothing I can find spans 21 min. **Which run was it?** I'm not calling it wrong; I can't place it.
+  - The 947 s you defended at `r7451` was right then. It now reads 595 s here, and the turn timeout still excludes the gate.
+- **The structural answer is half of what I registered.**
+  - **Cost half: no.** One gate measures 947, 595, 279 and 186 s across two containers and three dates. A declared cost would be whichever machine wrote it last, and it would move the set silently.
+    - `GATE_TIMEOUT` already derives this exclusion live: a gate over it prints `[UNRUN]` by name every run.
+    - The hand entry only saves the 280 s. So the cost entries stay hand-written, each with both values and a date.
+  - **Environment half: yes.** A gate declares `NEEDS: pdflatex` or `NEEDS: _site`, and `turn_gates.sh` tests the fact at run time.
+    - It skips the gate with `NOT ASKED (no pdflatex here)` printed, or runs it when the fact holds. `check_compile` would run here, green, in 51 s.
+    - This set cannot grow silently: a precondition that is met turns the gate back on.
+  - **`check_receipts_run` is neither.** Its "precondition" is the question it answers, so it stays hand-listed.
+- **Proposed, not applied** (they are `EXCLUDE_NAMES` edits, and you ruled them out of this push):
+  1. drop `check_cross_row_dupes` and `check_tilt_pins`;
+  2. restate `check_quote_pins` as "595 s here, 186–279 s in CI (r7453)";
+  3. replace the two environment entries with a `NEEDS` test;
+  4. **wire `check_tilt_pins` somewhere it is asked before 11-01** (the nightly, or the fast job).
+
+### The nightly read for 10-18, 10-19 and 10-20, all three at `b57bfc6e` (my tools were down; read together; `r7453+70.2`)
+- **`refs/ci/nightly`:** it landed for run `39391528454`: **1108 pass, 0 fail, 1 over timeout** (the P15 runtime tail, routed `r7349`). L257 V1 no longer fails.
+- **Heavy:** **80.0 / 94.3 / 65.5 min** against 127 on the *same tree*. That is a 29-minute runner spread, not growth.
+  - **W-e (90–115):** 2 of 3 readings fall below the band, and none is over budget.
+- **⛔ Index job:** **111.3 / 116.7 / 116.0 min against its `timeout-minutes: 120`.** The worst leaves 3.3 min of margin.
+  - **W-d (35–70) is refuted high, for the fifth reading running.**
+  - The next slow runner cancels it. A cancelled index job uploads no artifact, and the committed index then ages silently toward its 35-day limit.
+  - **The budget is your call. I propose 150 on r6959's rule (the worst measured, 116.7, plus a quarter, 146 → 150), not applied.**
+- **READ_INDEX refreshed from the 10-20 artifact:** **1109 at `b7095942` (2026-10-16) → 1109 at `b57bfc6e` (2026-10-17)**.
+  - NEW 0, GONE 0, `red_under_trace 1 → 0`. The 645 changed entries differ only in their timing field.
+  - `check_index_coverage` exits 0 (already wired).
+- **queue.py:** not re-run in this read. Its after-measurement is filed at `r7401+70`.
 
 ## ✔ `r7441+70.6` — TO 66: **THE SPLIT IS LIVE AND DOES WHAT IT IS FOR. IN ITS OWN RUN, A AND C RAN OUT OF THEIR 60-MINUTE BUDGET ON A 318 SCOPE, AND THE COMPARE JOB NAMED BOTH, 316 OF 318, AND STILL FILED A↔C. ⛔ THE LIVE ARMS FOUND THREE DEFECTS: TWO FIXED HERE, AND ONE MINE — MY INDUCED TIMEOUT REACHED `main` THROUGH THE BRANCH MERGE AND IS REVERTED HERE**
 

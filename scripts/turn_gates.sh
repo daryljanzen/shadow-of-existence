@@ -35,15 +35,46 @@ cd "$(dirname "$0")/.."
 export NODE="${NODE:-66}"
 GATE_TIMEOUT="${GATE_TIMEOUT:-280}"
 
+# ** r7457, ON 70's r7453+70.2: THE EXCLUSION LIST WAS SIX STATED REASONS AND FOUR WERE WRONG. **
+#   70 re-measured all six here and in CI.  What it found, and every change below is its
+#   proposal applied rather than a fresh judgement:
+#     - `check_tilt_pins` was excluded because "the nightly backstop job asks it".  The
+#       backstop is MONTHLY (`0 4 1 * *`), its tilt step was wired on 2026-10-02 -- ONE DAY
+#       AFTER the last firing -- and no dispatch has run since 09-28.  *** SO THE GATE WAS
+#       EXCLUDED FROM THE TURN AND ASKED NOWHERE, and the next asking was 2026-11-01. ***
+#       At 170s it is under this timeout.  DROPPED FROM THE LIST, which is also what puts it
+#       back where it is asked: the roster is a glob, so dropping a name IS adding the gate.
+#     - `check_cross_row_dupes` measured 145s, half the timeout, and `sweep_gates.sh` -- the
+#       instrument its reason named as asking it -- is in NO workflow.  DROPPED.
+#     - `check_compile`'s reason is false on this container: `pdflatex` IS here and the gate
+#       is green in 51s.  `check_sitemap_resolves` holds, but as a TEST, not an estimate.
+#       Both are now DERIVED: see NEEDS below.
+#   ⌗ 70's structural answer, which reversed its own registration: derivation YES for the
+#     environment half, NO for the cost half.  *** ONE GATE MEASURED 947, 595, 279 AND 186
+#     SECONDS ACROSS TWO CONTAINERS AND THREE DATES. ***  A declared cost is one value of a
+#     quantity that has at least two at any moment, and a set derived from it would move with
+#     whichever machine last wrote the number.  So cost entries stay HAND-WRITTEN AND STATE
+#     BOTH VALUES WITH THEIR DATE -- and the timeout already derives the cost exclusion live,
+#     printing any gate over it as [UNRUN] by name.
+#
+# ** NEEDS: a precondition the script TESTS, replacing an exclusion that estimated it. **
+#   A gate listed here is skipped only while its test fails, and the skip prints the test.
+#   This set cannot grow silently: when the precondition is met the gate runs.  That is the
+#   difference between an environment fact and a cost guess.
+needs_unmet() {
+  case "$1" in
+    check_compile)          command -v pdflatex >/dev/null 2>&1 || { echo "no pdflatex here"; return 0; } ;;
+    check_sitemap_resolves) [ -d _site ] || { echo "no assembled _site here"; return 0; } ;;
+  esac
+  return 1
+}
+
 # name:reason -- reason is printed, so an exclusion cannot be silent.
-EXCLUDE_NAMES="check_quote_pins check_cross_row_dupes check_tilt_pins check_receipts_run check_compile check_sitemap_resolves"
+EXCLUDE_NAMES="check_quote_pins check_receipts_run"
 reason_for() {
   case "$1" in
-    check_quote_pins)      echo "947s measured (r7343); run when the LEDGER moves -- sweep_gates.sh asks it" ;;
-    check_cross_row_dupes) echo "128s measured; sweep_gates.sh asks it at its 1800s budget" ;;
-    check_tilt_pins)       echo "exceeded a 120s probe at r7411; the nightly backstop job asks it" ;;
-    check_receipts_run)    echo "CACHED -- red whenever the tree digest moves; a 9-minute re-run, not a defect" ;;
-    check_compile)         echo "needs pdflatex and is the compile job's question, not the turn's" ;;
+    check_quote_pins)      echo "595s here, 186-279s in CI (70, r7453+70.2) -- over this 280s timeout locally; the fast job asks it every push" ;;
+    check_receipts_run)    echo "a TRIGGER, not a cost: red whenever the tree digest moves (139s; the 9-minute figure described the RE-RUN, not the gate)" ;;
     # r7435: the one gate whose subject is the DEPLOYED site.  `_site/` is built
     #   by `pages.yml` and exists nowhere in a working tree, so the turn batch
     #   was asking it about a directory that is never here.  It is NOT taught to
@@ -57,11 +88,17 @@ reason_for() {
 
 ALL=0; [ "${1:-}" = "--all" ] && ALL=1
 pass=0; fail=0; unrun=0; failed=""; notrun=""; ran=0
+skipped_needs=""
 : > /tmp/_tg_roster.$$
 for g in corpus/check_*.py; do
   n=$(basename "$g" .py)
   if [ "$ALL" -eq 0 ]; then
     case " $EXCLUDE_NAMES " in *" $n "*) continue;; esac
+    # A precondition TESTED, not estimated.  Printed, so a skip is never silent.
+    if why=$(needs_unmet "$n"); then
+      skipped_needs="$skipped_needs $n($why)"
+      continue
+    fi
   fi
   timeout "$GATE_TIMEOUT" python3 -W ignore "$g" >/tmp/_tg.$$ 2>&1 </dev/null; rc=$?
   echo "$n" >> /tmp/_tg_roster.$$; ran=$((ran+1))
@@ -73,8 +110,13 @@ done
 
 # ** THE ROSTER ASSERTION. **  The set run must be exactly glob-minus-exclusions.  A count is not a
 #   roster (r7341): this batch states which names it ran and fails if that set is not the expected one.
+#   r7457: a NEEDS skip is subtracted here too, from the SAME test the loop used -- not from
+#   a second copy of the condition.  A gate whose precondition is met is expected and must run.
 expect=$(for g in corpus/check_*.py; do n=$(basename "$g" .py)
-           if [ "$ALL" -eq 0 ]; then case " $EXCLUDE_NAMES " in *" $n "*) continue;; esac; fi
+           if [ "$ALL" -eq 0 ]; then
+             case " $EXCLUDE_NAMES " in *" $n "*) continue;; esac
+             if needs_unmet "$n" >/dev/null; then continue; fi
+           fi
            echo "$n"; done | sort)
 actual=$(sort /tmp/_tg_roster.$$); rm -f /tmp/_tg_roster.$$
 missing=$(comm -23 <(echo "$expect") <(echo "$actual") | tr '\n' ' ')
@@ -90,8 +132,13 @@ fi
 for n in $failed; do echo "      [FAIL]  $n"; done
 for n in $notrun; do echo "      [UNRUN] $n"; done
 if [ "$ALL" -eq 0 ]; then
-  echo "  EXCLUDED, each a question NOT ASKED here and asked elsewhere:"
+  echo "  EXCLUDED BY HAND, each a question NOT ASKED here -- reason re-measured by 70 at r7453+70.2:"
   for n in $EXCLUDE_NAMES; do printf '      %-24s %s\n' "$n" "$(reason_for "$n")"; done
+  if [ -n "${skipped_needs// /}" ]; then
+    echo "  SKIPPED BY A TESTED PRECONDITION (not an estimate; met => it runs):$skipped_needs"
+  else
+    echo "  SKIPPED BY A TESTED PRECONDITION: none -- every precondition is met here, so those gates RAN."
+  fi
 fi
 [ "$fail" -gt 0 ] && rcout=1
 exit $rcout

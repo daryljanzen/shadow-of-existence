@@ -85,4 +85,3 @@ git remote add origin "$REMOTE"
 echo
 echo "── committed locally.  Nothing has been pushed yet."
 echo "   To push:   git push -u origin main"
-echo "   Then:      git branch line/56 && git push -u origin line/56"

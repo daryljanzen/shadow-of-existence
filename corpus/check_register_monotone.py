@@ -72,6 +72,22 @@ DECLARED = {
                             'condensation at r6476 (dd02b80649) is inside the same waived span'),
     'PO-45': ('204e849c5a', 'r6733 struck the row and rewrote it as a condensed struck record, '
                             'under the convention then in force'),
+    #: ⛭ r7465, and it IS a fourth entry the note above hoped not to need -- so the reason is
+    #:   given at length rather than in a clause.  This row did not lose text; it discharged a
+    #:   condensation its OWN clause set.  69's stock-take at r7443 added, as the third part of
+    #:   the amended discharge, that at the strike the row collapses to one state, measured then
+    #:   at 813,685 characters, 32 copies of the discharge clause and 12 superseded blocks.  By
+    #:   the strike it stood at 852,992.  Daryl's ruling at r7465 struck the row -- its object
+    #:   was met, and what kept its last condition open were defects in the apparatus rather
+    #:   than in the corpus -- and the condensation ran with it.
+    #:   ⌗ The convention above (a strike GROWS the row) is right for a row whose history is the
+    #:   finding.  Here the history is 33 faces of an instrument class, which is consolidation-plan
+    #:   material by the one-state rule; the four rules that outlive the row are carried in the
+    #:   struck record itself, and nothing is lost -- the full row is at 722fcf0e7c.
+    'PO-78': ('722fcf0e7c', 'r7465 struck the row on Daryl\'s ruling and collapsed it to one '
+                            'state, discharging the condensation clause the row itself set at '
+                            'r7443; 852,992 -> 2,944 characters, the record going to the '
+                            'consolidation ledger and the full row kept at the commit named'),
 }
 
 ROW = re.compile(r'\| ~?~?\*\*((?:PO|L|C)-?\d+)\*\*')
