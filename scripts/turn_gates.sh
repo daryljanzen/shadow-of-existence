@@ -115,6 +115,7 @@ if [ "$LEAN" -eq 1 ]; then
     # A heavy gate is left to the push ONLY while the push asks it.
     echo "$ci_fast" | grep -qw "$n" || continue
     [ "$n" = check_compile ] && [ -n "$touched_tex" ] && continue
+    case " $EXCLUDE_NAMES " in *" $n "*) continue;; esac
     pushed="$pushed $n"
   done
   EXCLUDE_NAMES="$EXCLUDE_NAMES$pushed"
