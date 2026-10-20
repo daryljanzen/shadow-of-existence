@@ -7,7 +7,7 @@ WHAT IS CLAIMED, each with its scope in the sentence that states it.
      c_C), have level-summed values that lie in exactly the three structures r7018 found, and the
      combination with r7032's seven rationals uses TWO of them with exact rational weights:
 
-         49/48 * (c_C d)   -   13/480 * (lambda d^2),     and  45 * c_B^2  before parity.
+         49/48 * (c_C d)   -   13/480 * (lambda d^2),     and  -45 * c_B^2  before parity.
 
      The c_B^2 weight is NOT zero, so the parity r7020 derived from the curl is load-bearing here
      rather than decorative: without it the level object would carry a third number.
@@ -631,7 +631,7 @@ gate("r7010's criterion mu^2 > g^2/2c_4 is the rearrangement of 2 c_4 - g^2/mu^2
      sp.simplify(sp.expand(honest - banked*2*c4s/mus)) == 0)
 gate("⛭⛭ SO THE REARRANGED FORM'S DOMAIN IS c_4 > 0, and r7010 declared both symbols positive: at "
      "c_4 < 0 the two disagree in sign, which is exhibited here with its arithmetic rather than "
-     "argued (c_4 = -1, g^2 = 1, mu^2 = 8: honest -9/8 < 0 while the rearranged reads 8.5 > 0)",
+     "argued (c_4 = -1, g^2 = 1, mu^2 = 8: honest -17/8 < 0 while the rearranged reads 8.5 > 0)",
      honest.subs({c4s: -1, g2s: 1, mus: 8}) < 0
      and banked.subs({c4s: -1, g2s: 1, mus: 8}) > 0)
 sgn = [sp.sign(honest.subs({c4s: -sp.Rational(1, k), g2s: sp.Rational(j, 1), mus: mm**2 - 1}))

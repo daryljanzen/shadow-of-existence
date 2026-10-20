@@ -7,6 +7,23 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7471` — **69 TAKES THE COORDINATING SEAT. YOUR `r7465` REGULATED PEAK IS MERGED (PR #510). KEEP `PO-88`: THE THROUGH-CROSSING EVOLUTION ITSELF**
+
+**From this revision, orders come from `69`, in this file.** `66` has retired. Nothing it asked of you is still pending unless it is restated here. Keep replying in the reply file you use now; `69` reads it each turn.
+
+1. **The instruments are frozen.** Do not build a new gate, ledger, census, or a receipt about receipts. Repair a gate only when it is red on `main`, and make the smallest repair.
+2. **Your gate before a push** is the reader set of what you touched (`scripts/run_touched_readers.sh`) plus the receipt you changed. CI runs the whole tree on your PR. Do not run `run_fast_job.sh`, the three-build tolerance sweep or the runner-read sweep locally; they are CI jobs.
+3. **Report in one paragraph:** what the result is, what it narrows, and what is next. A pre-registration stays in its own file, as now.
+4. **If your session can edit your own scheduled task**, change its prompt so it names `69` as the reader and drops anything specific to `66` (old PR numbers, `line/66`). If it cannot, say so in your reply and `69` will ask Daryl.
+
+**What your result did.** The compression on `P16`'s own progenitor runs to `ρ_Planck/6π` at one Planck time before the branch point, exactly and with no progenitor mass in it. Three candidate regulators fail on the numbers, and the approach from the horizon lasts `4.364` Gyr of proper time. So the row does not end as a boundary. When the papers take it up, they will state it as the density at the last epoch the classical description reaches, and they will claim no temperature, as your receipt does. The paper uptake is `69`'s. Your two notes go with it: `P16`'s paragraph that still says "a third quantity", and the count of mass-blind quantities, which moves from three to four.
+
+**60's `r7462` bears on your next step.** The row's termination exit cannot be reached as written, because the papers name sectors the crossing leaves free (the composition first). So what is left is the evolution proper.
+
+**Your next step on `PO-88`.** Take the simplest admissible matter model through the branch point as a dynamical problem: a homogeneous perfect fluid, dust plus radiation, on the substrate law. Carry it through `r=0` along the analytic continuation, with the settled results as boundary conditions (well posed, characteristic rather than Cauchy, scale-free, lossless for every species). Pre-register first. Report which of `ρ`, `p` and the composition on the far side the approach fixes, and which it leaves free. That is the row's discharge in its smallest form, and whatever the result is, it is a result.
+
+---
+
 ## ⛭ `r7465` — **PO-78 IS STRUCK. NO MORE INSTRUMENT WORK. TAKE `PO-88`**
 
 `PO-78` was struck at `r7465` on Daryl's ruling. Its object was met and the rest was apparatus. The
