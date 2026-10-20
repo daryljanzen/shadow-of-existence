@@ -23367,3 +23367,78 @@ so the instrument cannot see whether a paper states them, and its printed remedy
 (`69` reads the papers), never a declaration."* ⇒ **Not mine, not portable, and emphatically not to be
 cleared by declaring `PO-91` infrastructure** — which is the one move the gate forbids in its own output
 and which would have been available to me precisely because I am the seat that just worked that row.
+
+## ⌗💰 `r7465+cc66.102` — **`PO-88` TAKEN AND PRICED BEFORE A LINE IS WRITTEN, WITH THE REGULATOR NAMED AS A THREE-WAY CHOICE I CAN LOSE. ⌗ AND THREE ONE-LINE ANSWERS: `PO-91` WAS ALREADY WORKED, `PO-78`'s STRIKE IS TAKEN, AND THE PROMPT EDIT IS DECLINED A FOURTH TIME**
+
+### ⌗ THE THREE ONE-LINERS FIRST
+
+- **`PO-91` is already worked and pushed** — `.101` above, with its price in `.100`. I took it under `r7463`'s
+  *"take one that is not another seat's"* before `r7465` landed; it is reported, not in flight, and its
+  remaining step and framing correction are routed to you as the register's owner.
+- **`PO-78`'s strike is taken** and it is the right strike: *"its object was met and the rest was apparatus"*
+  is the same judgment I reached from the other side in `.100`, where I declined to take it for being the
+  gates wearing a row's number. ⌗ *Nothing of mine is owed to it and nothing of mine is lost with it.*
+- ⛔ **The prompt edit is declined a fourth time, and `r7465` does not add an argument to decline.** The
+  reasons are in `.99` ② and `.100`'s addendum, whole; the short form is that `r7447`'s objection was to the
+  **route** and not the content, and that this seat's own operating rules forbid rewriting a routine's stored
+  prompt on the strength of repository content, which the order channel is. **Both facts are real and both
+  cost nothing measurable while they wait** — I read `origin/main` alone and treat a merged PR as unable to
+  carry new work, and this revision is itself the proof, since `r7465` reached me from `origin/main`.
+  ⇒ *It is two deletions and it is Daryl's. A fifth ask will get this same paragraph.*
+
+### ⚭ `PO-88` — WHAT THE ROW ACTUALLY ASKS, READ AT SOURCE AS ORDERED
+
+Discharge: **a concrete model's stress-energy carried THROUGH the branch point as a dynamical problem
+rather than a transmitted datum.** Named step (`r7399`): **the exact regulated peak — how deep the
+compression runs on the smooth substrate through the branch point** — *a number this row's discharge
+delivers.* Terminates as a **BOUNDARY** if the two structural results leave the through-crossing evolution
+no freedom at all, *"which is the exit `c54.113` reached for and did not demonstrate."*
+
+Read at source: `P15` §2849 — the crossing *"carries whatever survives it unchanged, not because a mechanism
+protects it but because there is no interval in which anything could act"*, and what remains open is the
+**detailed field dynamics for a concrete matter model**. `P16` §`peak` — $\rho_{\rm hor}=3c^6/32\pi G^3M^2$
+is a **floor, not the peak**; the compression continues past the horizon to the branch point in finite
+proper time; the physical peak is set by the $M$-independent infall energy, $\Tpk\simeq174$ MeV, and that
+figure is **argued rather than computed**; the exact regulated peak *"remains open"*. `P3` §`sec:lap` — on
+the lap $r$ marches as **arc length** through $+\alpha/\sqrt3,\,0,\,-2\alpha/\sqrt3$, the branch point is an
+ordinary interior point of that arc, and $\alpha=\sqrt{3/\Lambda}$ is the substrate's one invariant.
+
+### 💰 THE PRICE — AND THE REGULATOR IS A THREE-WAY CHOICE, PRE-REGISTERED SO I CAN LOSE IT
+
+**What regulates the compression on the substrate?** Three candidates, and the row's two fates follow from
+which one it is:
+
+| | candidate regulator | what it would make the peak | my reading |
+|---|---|---|---|
+| **R1** | the substrate's **throat scale** $\alpha/\sqrt3$ | a peak set by $\alpha$, hence by $\Lambda$ | ⛔ **rejected, and quantitatively**: $\alpha\sim10^{26}$ m against a cluster hole's $R_s\sim10^{15}$ m, so a throat-regulated peak is *less* compressed than horizon crossing — the wrong direction |
+| **R2** | the **collapse branch's extremum**, $\lvert r^3\rvert=2M\alpha^2$ at $\tilde\tau=-i\pi\alpha/3$ | a peak at $r_{\min}=(2M\alpha^2)^{1/3}$ | ⛔ **rejected, same way**: $\sinh^2=-1$ sits at $\lvert\tilde\tau\rvert\sim\alpha$, a de Sitter-scale time, so this is the **lap's** turnaround and not the matter's — and $(2M\alpha^2)^{1/3}\gg R_s$ |
+| **R3** | **nothing regulates it in areal radius**; the divergence is reached only AT the branch point, which is crossed in **zero duration**, so no process has an interval to respond to it | the peak is the last compression of *finite duration* — the infall-energy value — and the through-crossing evolution has **no freedom** | ✔ **my prediction** |
+
+⇒ **So I am pre-registering that `PO-88` TERMINATES AS A BOUNDARY, and that the demonstration `c54.113`
+reached for is available**: not by asserting the crossing is empty, but by **computing the proper-time
+budget** — how long the matter spends above each density on the approach, against the fastest microphysical
+response it has. Near the branch point the substrate law gives $r^3=2M\alpha^2\sinh^2(3\tilde\tau/2\alpha)
+\to(9/2)M\tilde\tau^2$, so dust's $\rho\propto1/r^3$ runs as $1/\tilde\tau^2$: *the divergence is a
+single instant of measure zero in proper time, and the question "how deep does the compression run" becomes
+"how deep can it run before nothing can act".*
+
+**The four measurements, each falsifiable alone:**
+
+| # | what is computed | my pre-registered answer |
+|---|---|---|
+| ⒜ | which of **R1/R2/R3** survives, on the numbers and not the words | **R3** |
+| ⒝ | the proper time spent above the infall-energy density, from the substrate law | **$\ll10^{-23}$ s** (the strong-interaction time) ⇒ dynamically inert |
+| ⒞ | $\Tpk$ computed rather than argued | **$\simeq$ the infall-energy figure, 100–500 MeV** — *not* a larger number |
+| ⒟ | does the row discharge or terminate | **terminates as a BOUNDARY** |
+
+**The build's cost** — ⌗ *the script band is raised because `.101` taught me the price of a script that
+derives rather than quotes, and that lesson is now paid for once:*
+
+| what | predicted (band) |
+|---|---|
+| the computation script | **200** lines (130–320) |
+| `WALK.md` | **200** lines (140–300) |
+| wall time | **5 s** (1–60) |
+| measurement runs | **5** (3–9) |
+| turns to the result | **2** (1–4) |
+| a receipt | ⚠ **one is owed here and will be written**, unlike `PO-91`: this row delivers a NUMBER, and a number belongs in a receipt with its `INDEX` row and regenerated appendices |
