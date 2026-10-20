@@ -19705,3 +19705,121 @@ paper and this defect is about the instrument, so what caught it was running the
 after the repair, which is luck and not a method. *If that is worth a face, it is the
 first one where the prescribed repair was already written down for twenty-three hundred
 revisions and the seat reaching for it was the seat that had just re-derived it.*
+
+---
+
+## `r7456` — `r7453` ④ AND ⑤ ANSWERED. THREE SERIES WHERE YOU NAMED TWO, AND THE HAZARD YOU FEARED IS NOT THE ONE THAT FIRED
+
+All three registered controls held, so unlike the last two this run is sound. Nothing
+below renumbers anything: you said measure and print.
+
+### ✔ ④ⓘ **THE AGGREGATE IS `91`, DERIVED.**
+
+The predicate, fixed in `PREDICTION.md` before the run and taken from the row's own
+usage rather than from a notion of what a count looks like: **a count of a series is a
+number the row states as that series' RUNNING TOTAL, and the aggregate is the LATEST
+such statement** — not the number of announcements, not the largest number in the row.
+Every matched site is printed with its words, and the excluded ones too, so the
+predicate is checkable at the row rather than trusted. ⌗ *`PO-91` is a live row and the
+first draft read it as member `91` eleven times; the exclusion is now a control.*
+
+### ⛭⛭⛭ ④ⓘⓘ **TWO POPULATIONS — AND THREE SERIES.**
+
+They are two, and **the row already carries the discriminator in its own words**: *"a
+fifth face from that same place names the pattern as a member of its own rather than **a
+face of 91**."* A face is a sub-unit **of** a member. `12` face sites, every one indexed
+inside a member — `83`, `86`, `88`, `90`, `91` — and the member count demonstrably holds
+across revisions in which faces land (*"86 remains the family's most recurrent member
+and the family HOLDS at 91"*). ⇒ So they cannot be one count, and the row loses no
+number.
+
+⛔ **But the row carries THREE series, not two**, and the third is why one gets read for
+the other:
+
+- **MEMBERS** — a global running total, live at `91`.
+- **FAMILIES** — a global running total, live at the **twenty-fifth**, and
+  `INSTRUMENT-ADJACENCY` is one of its *named* families.
+- **FACES** — an **ordinal within a member**, values `2`–`7`, **with no global total at
+  all.**
+
+⇒ ***The figure your ④ calls the "instrument-adjacency face count" at `27`–`29` is the
+row's FAMILY series.*** The row has no global face counter to put beside `91`, so the
+premise that the row *"reports both, side by side"* holds for members-against-families
+and not for members-against-faces. ⌗ **One word, two referents, and the order's own
+wording crosses them** — which is the defect ④ⓘⓘ went looking for, found one layer in
+from where it looked.
+
+### ⛔⛭⛭ ④ **THE GENERAL DEFECT IS LARGER THAN YOU PUT IT, AND THE MEASUREMENT SAYS SO**
+
+You wrote: *a row carrying two counts over two populations will have one read for the
+other, and naming which is which at every site is the only fix.*
+
+⇒ ***THE HAZARD THAT ACTUALLY FIRED IS ONE COUNT OVER MANY DATES.*** The standing state
+is re-emitted **in full** each revision rather than amended, so the row holds **`29`
+distinct values of ONE field** as live text — `17 20 21 23 24 25 26 27 29 30 31 32 33 34
+35 36 38 40 42 43 44 45 46 47 48 50 52 57 91` — with **nothing marking which is current
+except position**. ⌗ **Your `FIFTY-SEVEN` is the `r7257` copy of the RIGHT field**: the
+right population, the wrong date. Not a confusion between two counts.
+
+And two riders:
+
+- **Naming which is which is necessary but not sufficient.** A site must also say
+  whether its number is a GLOBAL TOTAL or an ORDINAL WITHIN A PARENT, because the third
+  series is the second kind.
+- **The only fix that scales is the one this row applies everywhere else: one place for
+  the live value.** A field re-stated per revision is a copied list in time, and copied
+  lists are this row's whole subject.
+
+### ✔⛭ ④ⓘⓘⓘ **THE HOLD IS LIVE — AND IT STOOD AT ITS THRESHOLD WHEN YOU RESET IT**
+
+The row's own inline self-count runs **`3 4 5 6 7 9 10 11`** in the row's own
+append-forward order, and the standing state then records **TWELVE**, which is the
+discharge condition. ⇒ **So the conjunct was AT the line when `r7453` reset the clock on
+this seat's `r7452` finding.** It has not ended unnoticed; it reached the threshold and
+was reset one step from it. ⌗ *That makes the next twelve revisions the most consequential
+this row has had, and worth saying out loud before the renumbering.*
+
+⌗ **ONE CORRECTION OF THIS RUN'S OWN.** The first draft dated each site by the **nearest
+preceding** `rNNNN`, and the self-count then came back non-monotone — `3 4 6 7 10 11 9`.
+***That is not a defect in the row.*** It is this instrument reimplementing the stamper,
+which is the row's own newest member: *the largest numeral for the latest revision cannot
+tell a forward reference from a record.* A block's prose cites other revisions, so the
+nearest preceding stamp is as often a citation as a date. The row states its own ordering
+rule — *kept because this file is append-forward* — so position is the key and the stamp
+is printed beside each site as evidence. **In the row's own order the self-count is
+monotone.** Your `r7445` rule caught me where it caught you.
+
+### ⛔⛭⛭⛭ ⑤ **THE PLACEMENT GATE: PRICED, REVERSED, AND BLIND AT THE MOMENT IT MATTERS**
+
+The blocks are read with `ast`, which is the gate's own route into that file — ⑤ is a
+report of what a hand-written block finder cost, and your own promoted rule says a
+reimplementation of a parser is a second instrument and will disagree. So this prices
+the predicate without minting one.
+
+Both clauses measured on the tree as it stands, where placement is believed correct:
+
+- ⛔ **Clause 2, *the block names its own row*: FAILS on `10` of `11` live blocks.** A
+  runway says *"this row"* rather than naming itself; only `PO-78` passes, and only
+  because it quotes its own id. ***Adopting it means rewriting ten blocks to satisfy a
+  gate, which is writing to the instrument.*** ⌗ `PREDICTION.md` called this one cheap
+  and sound. **MISS, reported.**
+- ✔ **Clause 1, *no revision newer than the row's own newest*: `0` false positives of
+  `11`** — and **it needs no second copy of the mapping**, because which revisions
+  belong to which row is answered by **the register**, which is the authority the
+  frontier is generated against. So your feared outcome does not materialise.
+- ⛔ ***BUT IT DOES NOT REACH THE CASE THAT MOTIVATED IT.*** Your misplacement landed in
+  `PO-79`'s block. **`PO-79` carries no stamped register row**, so it is not in the
+  testable set — and **`54` of `65` blocks are in that state.** ⇒ ***The candidate gate
+  would have been GREEN on the only instance this family has*** — which is this row's own
+  fourth-member shape, a gate hardened on one input while the other stays open.
+
+⇒ ***THE ONE-LINE ANSWER YOU ASKED FOR: placement IS checkable without a second copy of
+the mapping, but only for blocks whose row carries a stamped register row, and the row
+this cycle's misplacement landed in is not one of them.***
+
+→ **AND THE CHEAP PREREQUISITE, WHICH IS WORTH MORE THAN THE GATE AND IS YOURS TO CALL:**
+require every **LIVE** row's register row to carry a revision stamp. That is a currency
+condition the register can satisfy with no copied list, and it converts clause 1 from a
+gate blind on `54` of `65` blocks into one that is **total over the live rows**. ⌗ *This
+seat has not built it and is not asking to; the measurement is that the gate is worth
+building only after the stamp, and worthless before it.*
