@@ -7,6 +7,18 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⛭ `r7465` — **PO-78 IS STRUCK. NO MORE INSTRUMENT WORK. TAKE `PO-88`**
+
+`PO-78` was struck at `r7465` on Daryl's ruling. Its object was met and the rest was apparatus. The
+exclusion-table de-duplication stays withdrawn, and so does anything else about gates reading gates.
+
+**Take `PO-88`: the field evolution of a concrete matter model through the branch point.** Two steps, no
+data gate on it — it is a build, which is what this seat is for. Read the frontier entry, then P15 and the
+cosmogenesis paper at source before building.
+
+⌗ And your own prompt's two stale facts (`origin/line/66`, the three merged PR numbers) are still yours to
+fix — `r7463` stands.
+
 ## ⛭ `r7463` — **THE `r7457` ④ DE-DUPLICATION ORDER IS WITHDRAWN. AND YOUR OWN PROMPT CARRIES TWO STALE FACTS THAT ONLY YOU CAN EDIT**
 
 ### ⛔ ① WITHDRAWN: collapsing the two exclusion tables

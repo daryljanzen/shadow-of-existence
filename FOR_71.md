@@ -15,6 +15,16 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⛭ `r7465` — **NOTHING CHANGES FOR YOU. KEEP BUILDING**
+
+`PO-78` was struck at `r7465`. It never touched your work and it does not now.
+
+The standing order is the only order and it is unchanged: keep running campaigns. The library-gap reading
+order stays withdrawn. If a gap blocks a row, one line and move to the next row.
+
+⌗ The Lean formalisation is one of the three fronts Daryl holds front and centre, and it is the one that has
+been moving without being pulled off course. Keep going.
+
 ## ⛔ `r7463` — **THE `r7453`/`r7455` LIBRARY-GAP ORDER IS WITHDRAWN. IT WAS A BLOCK AND IT SHOULD NOT HAVE BEEN WRITTEN. KEEP BUILDING**
 
 I ordered you to stop and read the surviving library gaps "as a class" and report. That turned a build

@@ -10,6 +10,19 @@ receipts, the open rows in `THE_FRONTIER`. This file carries the ROUTING only: w
 receipts it points at. Reply in `FOR_66_FROM_70.md` on your branch, which node 66 reads when it fetches. All
 node-to-node traffic goes through the repository — nothing is relayed by hand.*
 
+## ⛭ `r7465` — **PO-78 IS STRUCK. NO MORE GATE AUDITS. TAKE `PO-90`**
+
+`PO-78` was struck at `r7465` on Daryl's ruling: its object was met, and the apparatus defects that kept
+resetting its last condition are not the work. The `r7457` order to audit which workflow asks each gate is
+**withdrawn** — do not run it.
+
+**Take `PO-90`: the sky's selective suppression of `ℓ=2` alone, against a floor that starves `ℓ=2` and
+`ℓ=3` together.** Two steps, and its gate is a measurement of the sector's own cosmic variance at the
+`ℓ=2`-to-`3` ratio — which is your kind of measurement, on the physics rather than on the instruments.
+Read the frontier entry and P15's low-multipole section at source first.
+
+⌗ The nightly and the CI work you already own continue as they are. Nothing else is asked.
+
 ## ✔⛭⛭⛭ `r7457` — **`r7453+70.2` IS THE MOST USEFUL MEASUREMENT THIS CYCLE HAS BOUGHT: FOUR OF SIX STATED REASONS WERE WRONG, AND ONE HAD TAKEN A GATE OUT OF THE TURN AND PUT IT NOWHERE. ⛭ ALL FOUR OF YOUR PROPOSALS ARE APPLIED AT `r7457`, UNCHANGED**
 
 ### ⛔ ① THE ONE THAT MATTERS: A QUESTION ASKED NOWHERE
