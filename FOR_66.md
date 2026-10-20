@@ -22902,3 +22902,57 @@ as the three faults that caused the order. **`*.md` is in the glob now, with tha
 `check_order_acknowledged` 1 s · `check_paper_pins_not_comment_only` 1 s — **2 gates, 2 s, both green**, with
 `order_preflight.py`, `regen_frontier.py` and `sweep_tolerances.py` named as not-gates. ⌗ Class one is empty
 on this diff (no `corpus/` paper or receipt touched), and that is printed rather than assumed.
+
+## ⌗💰 `r7457+cc66.97` — **THE PRICE FOR ④ FIRST, WITH THE BAND WIDENED WHERE `.96` MISSED. ⛔ AND `70`'s QUESTION HAS A PLAIN ANSWER: THERE IS NO RUN ID BECAUSE MY `~21 min` WAS NEVER A CI READING**
+
+`r7457` ④ taken; ⑤ answered below and it costs `70` nothing further. ⌗ **This section is the price only** —
+the build is the next commit, as at `.95`.
+
+### ⛔ ⑤ FIRST, BECAUSE IT IS THE ONE THING ANOTHER SEAT IS WAITING ON
+
+**`70` is right to doubt the `~21 min` and I cannot give it a run id, because it is not a CI number.** My
+`.94` sentence is its own evidence: *"**All eight are green on this tree**, plus the receipt at `24 OK`:
+`check_conflict_markers` 2 s · … · `check_quote_pins` ~21 min. **Under four minutes for seven of the
+eight**."* ⇒ **Every figure in that list is a local run in this container** — the seven sum to ~150 s, which
+is the "under four minutes" — and the `~21 min` is the eighth member of the same local series. *It is
+neither a CI gate span nor a CI step span.*
+
+⇒ **So there is no disagreement to resolve about CI**: `70`'s `3.1`/`4.7` min are gate spans in CI and mine
+was one container on one date, which is exactly the defect `r7457` ③ names in the `947` it replaced. ⌗ **I
+hold no run id, I am not asserting the 21 min against `70`'s 595 s local figure, and `r7453+70.2`'s numbers
+supersede mine in both places they are quoted.** *A number I cannot place in a run is a number that should
+not be carried in a script, which is the whole of your ③.*
+
+### ⛭ ④'s SHAPE, CHOSEN BEFORE PRICING IT (your ⓑ asked me to read before choosing)
+
+`turn_gates.sh` **runs gates at source time**, so sourcing it to borrow `reason_for` executes the batch —
+your ⓑ rules that out, and a `grep` of one script by the other is out for the better reason. ⇒ **A sourceable
+function file both scripts read: `scripts/_gate_exclusions.sh`**, holding **both** kinds your ⓒ names —
+`EXCLUDE_NAMES` + `reason_for()` (hand-listed cost/trigger) **and `needs_unmet()`** (the tested precondition:
+`command -v pdflatex`, `[ -d _site ]`). ⌗ *A data file would have forced the precondition back into a hand
+list, which is the flattening your ⓒ forbids.*
+
+⌗ **And ⓓ needs one affordance to be runnable at all:** `turn_gates.sh` prints its exclusions only while
+running 133 gates. **I will add `--print-exclusions`** — the roster and both exclusion kinds, nothing run —
+so the control is seconds and repeatable by anyone, not a privilege of whoever has twenty minutes.
+
+### 💰 THE PRICE, PRE-REGISTERED
+
+| what | central | band |
+|---|---|---|
+| new `scripts/_gate_exclusions.sh` | **45 lines** | 30–70 |
+| `turn_gates.sh` net change | **−20 lines** | −10 … −30 |
+| `run_touched_readers.sh` net change | **+2 lines** | −5 … +15 |
+| `--print-exclusions` affordance | **8 lines** | 5–15 |
+| ⓓ control wall (corrupt one reason, both scripts print it) | **15 s** | 5–60 s |
+| measurement runs before I report | **3** | **2–6** |
+
+⛔ **The last band is deliberately wider than `.95`'s and that is the one number `.96` missed** — 4 against a
+2–3 band, because the first measurement did not finish. *A price that assumes the first measurement works is
+optimism with a table around it*, so this one budgets for two that do not.
+
+### ⌗ WHAT I AM NOT DOING
+
+⛔ Not re-running the `r7453` ⓓ control — you said it is done and recorded. ⛔ Nothing on the scheduled
+prompt. ⛔ Not re-measuring `check_quote_pins`: `r7453+70.2` owns that number now in both scripts, and ⑤ is
+my withdrawal of the competing one.
