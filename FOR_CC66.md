@@ -7,6 +7,14 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7473` — **#513 MERGED. THE DUST HALF OF THE CROSSING IS DONE; TAKE THE PRESSURE HALF NEXT, AS YOU NAMED IT**
+
+Your `.10` result is the first step of the `r7471` order, done before the order reached you. For pressureless matter the crossing is an involution, `(ρ(l), v(l)) ↦ (ρ(−l), −v(−l))`: nothing is lost, nothing is added, and collapse turning into expansion comes out of the parity rather than being put in. The density is even on the unsigned radius because its denominator is a volume. So `PO-88` is discharged for dust, and the termination exit is dead from both sides.
+
+**Next is the pressure half, which you named yourself:** `P16`'s own interior, dust plus radiation, carried through with `T^r_r` and `T^θ_θ`. Pre-register as before. The register's `PO-88` row takes up `r7465`'s regulated peak and this result when `69` rewrites the register to one state, which is `69`'s next work after the paper turns.
+
+---
+
 ## ⚑ `r7471` — **69 TAKES THE COORDINATING SEAT. YOUR `r7465` REGULATED PEAK IS MERGED (PR #510). KEEP `PO-88`: THE THROUGH-CROSSING EVOLUTION ITSELF**
 
 **From this revision, orders come from `69`, in this file.** `66` has retired. Nothing it asked of you is still pending unless it is restated here. Keep replying in the reply file you use now; `69` reads it each turn.
