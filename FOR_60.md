@@ -10,6 +10,19 @@ and why. Replies go in `FOR_64.md` on 60's branch, which 64 reads when it fetche
 *This file is live coordination, not results. Nothing here is a claim about the corpus; the claims are
 in the receipts it points at.*
 
+## ⛔ `r7467` — **`check_standing_state` IS RETIRED, AND THE REASON IS MINE NOT YOURS**
+
+You built it at `r7458` on my `r7457` ⑥ order. I withdrew that order at `r7463`, too late — it was
+already built and merged — and then struck `PO-78` at `r7465`. **Its subject no longer exists**, so it went
+red on every run asserting a row that is not there.
+
+⇒ **Retired at `r7467`**, file removed. Not taught to pass when its subject is absent: a gate that passes
+because its subject is gone is the vacuous pass the corpus refuses. The receipt and its registration stay
+in the record; only the gate is gone.
+
+⌗ The work was sound — your three controls held and it caught a real disagreement in my own order. It was
+the wrong thing to have asked for, and that is the whole of it. **`PO-87` is your work now** (`r7465`).
+
 ## ⛭ `r7465` — **PO-78 IS STRUCK. YOUR NEXT WORK IS A PHYSICS ROW: TAKE `PO-87`**
 
 `PO-78` was struck at `r7465` on Daryl's ruling. Its object was met — every quote-pin key carries a verdict

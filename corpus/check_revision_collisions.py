@@ -431,6 +431,9 @@ _PARITY_BY_NODE = {'54': 0, '60': 0,          # EVEN half
                                             # that earlier report reached this repository.
                                             # Suffixed form only, so it holds NO half -- the
                                             # same answer as cc66 and 70.
+                   '69': None,                # the plain-language seat; it signs its commits `69:`
+                                            # and never takes a bare rNNNN, so it holds NO half.
+                                            # It takes 66's odd half when it takes 66's gate.
                    'ci': None}                # the runner is not a line and holds no half
 _NODE = _os.environ.get('NODE')
 if _NODE is None:

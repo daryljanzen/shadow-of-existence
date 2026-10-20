@@ -163,7 +163,12 @@ print(f"    of which `cosmic variance`: x{cosmic}")
 #   variance. Taken together".  ** Every one of the 25 is still COSMIC variance, the genuine
 #   statistical object this verdict names, so the pin follows the measurement: P07 3 + P15 20 +
 #   p0 2. **
-check("cosmic variance occurs twenty-five times (24 before r6831's low-multipole floor)", cosmic, 25)
+# ** 69 (after r7467): 25 -> 26 when P7's frontier took up the l=2 selective suppression, which is
+#   measured against cosmic variance -- again COSMIC variance, again the same object.  This is the
+#   third time the count moved without the finding moving, so it is asserted as a FLOOR, exactly as
+#   VERDICT 5 below does for its control word: the finding is that the statistical word present is
+#   cosmic variance and in quantity, not how many sentences say it.
+check("cosmic variance occurs at least twenty-five times (24 before r6831, 26 after P7 took up the l=2 suppression)", min(cosmic, 25), 25)
 print("    *** A genuine statistical object, correctly used with an exact cosmic-variance")
 print("        likelihood -- and it is the statistics-inference bake's, not this one's. ***")
 

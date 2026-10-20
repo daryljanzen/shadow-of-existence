@@ -39,7 +39,7 @@ ROOT = os.path.abspath(os.path.join(HERE, '..'))
 #   construction 'is degenerate with the standard one here and predicts neither', so no result any
 #   paper asserts moves with it.  It is on the list because P18 states it open, not because the
 #   corpus leans on it.
-REACH = {'PO-93': 1, 'PO-92': 2, 'PO-46': 2, 'PO-2': 2, 'PO-3': 2, 'PO-4': 3, 'PO-5': 3, 'PO-6': 3, 'PO-7': 2, 'PO-8': 1,
+REACH = {'PO-94': 2, 'PO-93': 1, 'PO-92': 2, 'PO-46': 2, 'PO-2': 2, 'PO-3': 2, 'PO-4': 3, 'PO-5': 3, 'PO-6': 3, 'PO-7': 2, 'PO-8': 1,
          'PO-9': 2, 'PO-10': 2, 'PO-11': 3, 'PO-12': 2}
 # ** GATED_BY, added r2603 the moment the ranking first ran. **  ⛔ The first run put `PO-7` SECOND --
 # and `PO-7` cannot be worked at all: its one live route ⓷ IS `PO-seam`'s progenitor derivation, and all
@@ -54,6 +54,7 @@ GATED_BY = {'PO-7': 'PO-seam (its route 3 IS the progenitor derivation)',
             'PO-10': 'PO-12 step 2 (both halves are statements about C_l)'}
 
 CONVERGES = {
+    "PO-94": ("PO-86 -- the stride that produced it, and the only other row whose object is what the\n              corpus SAYS rather than what the geometry does; they converge where a ruling turns on a\n              paper having declared its ceiling."),
     "PO-93": ("PO-50 -- the two share a radius and an instrument and nothing else: the bound-to-attained\n              factor is parameter-free and the four-way guard reads either, and one sample with a\n              kinematically located turnaround radius would serve both.  PO-50 asks WHERE the mass is\n              measured, PO-93 asks WHAT IT IS MADE OF, so neither discharges the other.",),
 
     "PO-92": ("nothing yet -- the charged loop's generality converges with no other live row; PO-88 is the UNCHARGED bead's crossing and presupposes a bead this item asks whether the charged case has",),

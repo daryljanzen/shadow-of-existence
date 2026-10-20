@@ -1,0 +1,102 @@
+==============================================================================
+  STEP 1 -- the invariants, computed from the metric in this file
+==============================================================================
+  metric              g = diag(-(1-2M/r), 1/(1-2M/r), r^2, r^2 sin^2 th)
+  Kretschmann         K = 48*M**2/r**6
+  stationary Killing  |xi|^2 = g_tt = (2*M - r)/r
+  areal radius        (A/4pi)^(1/2) = r
+
+==============================================================================
+  STEP 2 -- the two critical points of r_N(z) = 2M cos^2(z/2)
+==============================================================================
+  r_N(z)   = 2*M*cos(z/2)**2        r_N'(z) = -M*sin(z)
+  r_N''(z) = -M*cos(z)
+    z = 0     r_N =    2*M   r_N' = 0   r_N'' = -M   non-degenerate: True
+    z = pi    r_N =      0   r_N' = 0   r_N'' = M   non-degenerate: True
+
+==============================================================================
+  STEP 3 -- (c) WHICH SECTOR COLLAPSES, from Killing-vector norms alone
+==============================================================================
+  These are scalars, so the answer cannot be a labelling artefact.
+  xi = d/dt (stationary);  the SO(3) orbit 2-sphere has area A = 4 pi r^2.
+  critical point          |xi|^2      orbit area A                 K   collapsing sector
+  --------------------------------------------------------------------------------------
+  z = 0  (r=2M)                0        16*pi*M**2        3/(4*M**4)   the stationary generator (t,r) block
+  z = pi (r=0)               zoo                 0                oo   the angular 2-sphere
+
+==============================================================================
+  STEP 4 -- (a) IS CHART H ADMISSIBLE?  the sweep-axis criterion
+==============================================================================
+  A sweep is a reduction by an SO(3) isometry whose orbits are the swept
+  2-spheres.  Its axis is the FIXED-POINT SET of that action, so the orbit
+  through a point of the axis must be a point: A = 0 there.  That is the
+  criterion, and it is a statement about an area, hence an observable.
+    axis at z = 0 :  A = 16*pi*M**2   => admissible as a sweep axis: False
+    axis at z = pi:  A = 0            => admissible as a sweep axis: True
+
+  ⚠ AND A SUBTLETY THAT CUTS AGAINST THE EASY VERSION OF THIS ARGUMENT.
+     In the maximal Schwarzschild MANIFOLD the SO(3) action has no fixed
+     point at all: A = 4 pi r^2 vanishes only at r = 0, and r = 0 is not a
+     point of that manifold.  So the sweep axis is a BOUNDARY locus the
+     orbits shrink toward, not a fixed point sitting inside the spacetime.
+     The criterion below is therefore 'the locus the orbit area degenerates
+     at', which is where P2's SPATIAL sweep does have an axis, and it is
+     still unique:
+       A(rho) = 4 pi rho^2 vanishes only at  {0: 2}  (value: multiplicity)
+       and on the chart's own domain rho > 0 the solution set is [] -- EMPTY, which is the subtlety
+       restated as arithmetic: the one candidate axis is not in the
+       manifold the orbits live in.
+
+    chart N sweeps about z = pi  -> ADMISSIBLE
+    chart H sweeps about z = 0   -> INADMISSIBLE: the orbit there has
+      area 16 pi M^2, so z = 0 is not fixed by any SO(3) action whose
+      orbits are these 2-spheres.  The vantage is NOT free to choose it.
+
+==============================================================================
+  STEP 5 -- (b) DOES THE DIVERGENCE FOLLOW THE LABEL?
+==============================================================================
+  The counterfactual profile with its zero at the other critical point is
+    r_H(z) = 2*M*sin(z/2)**2,   r_H(z) = r_N(z + pi)
+  so H's profile is N's shifted by pi -- the SAME function, relabelled.
+    K[r_N](z)  ->  z=0: 3/(4*M**4)      z=pi: oo
+    K[r_H](z)  ->  z=0: oo      z=pi: 3/(4*M**4)
+  So yes: composed with 48 M^2 / r^6 the divergence sits wherever the
+  profile's zero sits.  But that is a statement about a FUNCTION, not
+  about a spacetime -- and STEP 4 says only one of the two zeros can be
+  a sweep axis, so there is no second spacetime for the second answer to
+  be true of.  (b) is therefore VACUOUS as a comparison of charts.
+
+==============================================================================
+  STEP 6 -- (d) IS THERE AN OBSERVATIONAL DISCRIMINANT?
+==============================================================================
+  An observation is made by a worldline, so the quantity to compute is
+  the tidal tensor in a parallel-propagated orthonormal frame -- what a
+  falling observer actually measures.  Static orthonormal frame first:
+    R_{t r t r}        = -2*M/r**3
+    R_{t th t th}      = M/r**3
+    R_{r th r th}      = -M/r**3
+    R_{th ph th ph}    = 2*M/r**3
+
+  A STATIC frame is not an observer at the horizon, so boost along r by
+  rapidity w and recompute -- the falling observer's frame.  Nothing here
+  assumes the type-D invariance; it is derived and then reported.
+    R_{t r t r}        boosted = -2*M/r**3      w-independent: True
+    R_{t th t th}      boosted = M/r**3      w-independent: True
+
+  critical point             R_{t r t r}         R_{t th t th}
+  ------------------------------------------------------------
+  z = 0  (r=2M)              -1/(4*M**2)            1/(8*M**2)
+  z = pi (r=0)                       -oo                    oo
+
+  ** The falling observer measures FINITE tides at one critical point and
+     DIVERGENT tides at the other, in a frame that is boost-independent,
+     so the two critical points are told apart BY A MEASUREMENT and not
+     by a label. **
+
+  ⚠ What this file does NOT compute, and must not be read as computing:
+     that the substrate's own invariants are constant.  That the substrate
+     is the de Sitter manifold is the corpus's claim (P3 / the slicing
+     companion), not this file's; this file computes only the swept chart.
+     The step the row needs -- that the asymmetry predicts something the
+     SUBSTRATE alone does not display -- therefore rests on that claim and
+     is not established here.

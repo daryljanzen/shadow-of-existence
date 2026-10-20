@@ -69,9 +69,25 @@ def tables(path):
             keys = {e.value for e in node.value.elts
                     if isinstance(e, ast.Constant) and isinstance(e.value, str)}
         rows = {k for k in keys if ROW.match(k)}
-        if len(rows) >= 3:
+        if len(rows) >= 3 and tgt.id not in NOT_A_VIEW:
             out[tgt.id] = rows
     return out
+
+
+# ** r7467: A TABLE WHOSE MEMBERSHIP IS AN EXCEPTION IS NOT A VIEW TABLE, AND THE DISCOVERY
+#    RULE CANNOT TELL THE TWO APART. **  This gate finds tables by their shape -- any dict or
+#    sequence with three or more row ids -- and asks whether every LIVE row is in them, because a
+#    view table a row is missing from is a row that does not reach a reader.
+#    `check_register_monotone.DECLARED` is the opposite kind: membership WAIVES an invariant for
+#    one row, so a live row belongs in it only if something went wrong.  It sat at two entries and
+#    was invisible to the threshold; `r7465` added a third (`PO-78`, whose strike condensed it on
+#    purpose) and it crossed into discovery as a HARD table demanding all eleven live rows.
+#    ⌗ Listed here with its reason rather than by raising the threshold: a threshold hides the next
+#      one of these, and the reason is the thing a later reader needs.
+NOT_A_VIEW = {
+    'DECLARED': ('check_register_monotone: membership WAIVES the append-forward invariant for one '
+                 'row. A live row in it would be a defect, not a requirement.'),
+}
 
 
 def severity(src, name):

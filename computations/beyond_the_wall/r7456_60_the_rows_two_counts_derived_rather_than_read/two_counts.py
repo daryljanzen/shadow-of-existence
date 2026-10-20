@@ -97,6 +97,68 @@ SERIES = {
 }
 BAD_PREFIX = re.compile(r'(?:PO-|\br|L-|#)$')
 
+# ============================================================================
+# r7458 SPLITS THE MEMBER PREDICATE BY ROLE, AND THE REASON IS A DEFECT IN r7458's
+# FIRST DRAFT OF `check_standing_state`.
+#
+# That draft derived each series' value as "the LAST site anywhere in the row" and
+# compared it with "the last site in the LIVE BLOCK".  The live block is the END of the
+# row, so both read the SAME site: ** the gate compared a value with itself, and its two
+# registered controls -- a one-off mutation and a boundary moved onto a superseded copy
+# -- both stayed green. **
+#
+# ⇒ That is this row's generator inside the gate built to catch it: an instrument built
+#   to check a condition that already exists will agree with it, and the agreement will
+#   look like a finding about the subject.
+#
+# THE ROW CARRIES THE TWO ROLES IN TWO DIFFERENT WORDINGS, which is what makes an
+# independent comparison possible at all:
+#   ANNOUNCEMENT -- the row charging a member as it finds it: `the NINETY-FIRST MEMBER`,
+#                   `member 88 stands`, `a seventh blindness member`.
+#   SUMMARY      -- the standing state restating the total: `NINETY-ONE blindness
+#                   members`, `HELD at 91`, `the family holds at 91`.
+# The authority is the ANNOUNCEMENTS; the summary is the copy.
+# ============================================================================
+ANNOUNCE = [
+    r'\bmember[^0-9A-Za-z]{0,4}(\d+)\b',
+    r'(?:THE|the)\s+([A-Z][A-Z\-]+|[a-z\-]+)\s+(?:BLINDNESS\s+)?MEMBER\b',
+    r'(?:a|A)\s+([a-z\-]+)\s+blindness member\b',
+]
+SUMMARY = [
+    r'\b([A-Z][A-Z\-]+|\d+)\s+blindness members\b',
+    r'\bfamily (?:HOLDS|holds|stays) at (\d+)',
+    r'\bcount holds at (\d+)',
+    r'\bHELD at (\d+)',
+]
+
+
+def _scan(text, pats):
+    out = []
+    for pat in pats:
+        for m in re.finditer(pat, text):
+            v = num(m.group(1))
+            if v is None or v > 400:
+                continue
+            pre = text[max(0, m.start() - 5):m.start()]
+            if BAD_PREFIX.search(pre):
+                continue
+            out.append((m.start(), v, text[max(0, m.start() - 90):m.end() + 55]))
+    return sorted(out)
+
+
+def member_announced(text):
+    """THE AUTHORITY: the highest member ordinal the row ANNOUNCES charging."""
+    hits = _scan(text, ANNOUNCE)
+    return (max(h[1] for h in hits) if hits else None), hits
+
+
+def member_summarised(text):
+    """THE COPY: the member total as the given text RESTATES it, latest in text order."""
+    hits = _scan(text, SUMMARY)
+    return (hits[-1][1] if hits else None), hits
+
+
+
 
 def harvest(text, label):
     marks = stamps(text)
