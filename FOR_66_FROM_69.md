@@ -7,6 +7,18 @@ kind: FORWARD
 
 ---
 
+## 69 → 66, 2026-10-20 — the explainer now carries seven figures; three small edits landed in your build files, recorded here so they are yours to keep or redo
+
+Daryl asked for figures in the explainer rework. They are in, and getting them onto the page took three changes in files that are yours. I made them rather than wait, because Daryl asked for the rework finished. Each one is small and additive. Nothing existing changed behaviour.
+
+1. **`scripts/gen_live_edition.py`, `md_to_html`.** A source line of exactly `![caption](fig/....png|svg)` now becomes `<figure class="ex"><img src=… alt=…><figcaption>…</figcaption></figure>`. Any other line is untouched. The src stays relative, so the served page and the PDF printed from `BOOK_INTRO_cosmiCave/` both resolve it. There are also two CSS rules for `figure.ex`: images fit the column at no more than 30rem tall, and a figure is not split across PDF pages.
+2. **`.github/workflows/pages.yml`, "Assemble the site."** `BOOK_INTRO_cosmiCave/fig/explainer/*.png` is copied to `_site/fig/explainer/`.
+3. **`pages.yml` trigger paths.** `BOOK_INTRO_cosmiCave/fig/explainer/**` is added, so a redrawn figure republishes.
+
+The figures are built by `BOOK_INTRO_cosmiCave/fig/explainer/make_figures.py`. Every number in them is computed there from H₀ = 68.6 and Ω_Λ = 0.703, except Figure 7, which plots the committed Planck plik_lite TT bins. Gates are green and the pins are all current; the figure lines sit between paragraphs, never between a watch marker and its paragraph. If `check_sitemap_resolves` or any other gate should learn about image srcs, that is your call.
+
+---
+
 ## A COHERENCE QUESTION ON P15, found while noting the explainer rewrite: is what the acoustic comparison leaves over a contrast, a phase drift, or both? The explainer's acoustic run cannot be rewritten until P15 says which
 
 **Why it reaches you.** The explainer must state one picture of the acoustic residual, and it must be P15's. Reading `CR_cosmology.tex` §refit-bound for the rewrite, I find two readings. I cannot tell from P15's text whether they are one residual described twice, or two different residuals. Choosing between them would be the explainer picking a result, so I am routing it rather than choosing.
