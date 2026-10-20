@@ -1,0 +1,96 @@
+# r7443+71.31 — campaign 43 probe run, re-run by 71 after the delegated build
+# command: cd computations/formalisation/lean && lake env lean probes/Transgression.lean
+# exit 0, wall 15 s, 0 errors; 1000 lines; no sorry, no native_decide (decide +kernel for eps signs); deprecation warnings only, all in the copied row-96 code
+/tmp/claude-0/c43/Transgression.lean:135:13: warning: `ContinuousLinearMap.coe_sum'` has been deprecated: Use `FunLike.coe_sum` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.coe_sum'` to `FunLike.coe_sum x`).
+
+Hint: Replace the deprecated name:
+  C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵c̵o̵e̵_̵s̵u̵m̵'̵F̲u̲n̲L̲i̲k̲e̲.̲c̲o̲e̲_̲s̲u̲m̲
+/tmp/claude-0/c43/Transgression.lean:135:61: warning: `ContinuousLinearMap.coe_smul'` has been deprecated: Use `FunLike.coe_smul` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.coe_smul'` to `FunLike.coe_smul x`).
+
+Hint: Replace the deprecated name:
+  C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵c̵o̵e̵_̵s̵m̵u̵l̵'̵F̲u̲n̲L̲i̲k̲e̲.̲c̲o̲e̲_̲s̲m̲u̲l̲
+/tmp/claude-0/c43/Transgression.lean:183:25: warning: `ContinuousLinearMap.coe_smul'` has been deprecated: Use `FunLike.coe_smul` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.coe_smul'` to `FunLike.coe_smul x`).
+
+Hint: Replace the deprecated name:
+  C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵c̵o̵e̵_̵s̵m̵u̵l̵'̵F̲u̲n̲L̲i̲k̲e̲.̲c̲o̲e̲_̲s̲m̲u̲l̲
+/tmp/claude-0/c43/Transgression.lean:183:56: warning: `ContinuousLinearMap.coe_sum'` has been deprecated: Use `FunLike.coe_sum` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.coe_sum'` to `FunLike.coe_sum x`).
+
+Hint: Replace the deprecated name:
+  C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵c̵o̵e̵_̵s̵u̵m̵'̵F̲u̲n̲L̲i̲k̲e̲.̲c̲o̲e̲_̲s̲u̲m̲
+/tmp/claude-0/c43/Transgression.lean:184:4: warning: `ContinuousLinearMap.coe_add'` has been deprecated: Use `FunLike.coe_add` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.coe_add'` to `FunLike.coe_add x`).
+
+Hint: Replace the deprecated name:
+  C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵c̵o̵e̵_̵a̵d̵d̵'̵F̲u̲n̲L̲i̲k̲e̲.̲c̲o̲e̲_̲a̲d̲d̲
+/tmp/claude-0/c43/Transgression.lean:184:34: warning: `ContinuousLinearMap.coe_sub'` has been deprecated: Use `FunLike.coe_sub` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.coe_sub'` to `FunLike.coe_sub x`).
+
+Hint: Replace the deprecated name:
+  C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵c̵o̵e̵_̵s̵u̵b̵'̵F̲u̲n̲L̲i̲k̲e̲.̲c̲o̲e̲_̲s̲u̲b̲
+/tmp/claude-0/c43/Transgression.lean:212:13: warning: `ContinuousLinearMap.sum_apply` has been deprecated: Use `sum_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.sum_apply` to `sum_apply x`).
+
+Hint: Replace the deprecated name:
+  C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵s̵u̵m̵_̵a̵p̵p̵l̵y̵s̲u̲m̲_̲a̲p̲p̲l̲y̲
+/tmp/claude-0/c43/Transgression.lean:212:44: warning: `ContinuousLinearMap.add_apply` has been deprecated: Use `add_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.add_apply` to `add_apply x`).
+
+Hint: Replace the deprecated name:
+  C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵a̵d̵d̵_̵a̵p̵p̵l̵y̵a̲d̲d̲_̲a̲p̲p̲l̲y̲
+/tmp/claude-0/c43/Transgression.lean:212:75: warning: `ContinuousLinearMap.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+
+Hint: Replace the deprecated name:
+  C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵s̵m̵u̵l̵_̵a̵p̵p̵l̵y̵s̲m̲u̲l̲_̲a̲p̲p̲l̲y̲
+/tmp/claude-0/c43/Transgression.lean:756:46: warning: `ContinuousLinearMap.add_apply` has been deprecated: Use `_root_.add_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.add_apply` to `_root_.add_apply x`).
+
+Hint: Replace the deprecated name:
+  C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵a̵d̵d̵_̵a̵p̵p̵l̵y̵_̲r̲o̲o̲t̲_̲.̲a̲d̲d̲_̲a̲p̲p̲l̲y̲
+/tmp/claude-0/c43/Transgression.lean:762:15: warning: `ContinuousLinearMap.add_apply` has been deprecated: Use `_root_.add_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.add_apply` to `_root_.add_apply x`).
+
+Hint: Replace the deprecated name:
+  C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵a̵d̵d̵_̵a̵p̵p̵l̵y̵_̲r̲o̲o̲t̲_̲.̲a̲d̲d̲_̲a̲p̲p̲l̲y̲
+/tmp/claude-0/c43/Transgression.lean:762:46: warning: `ContinuousLinearMap.smul_apply` has been deprecated: Use `_root_.smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `_root_.smul_apply x`).
+
+Hint: Replace the deprecated name:
+  C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵s̵m̵u̵l̵_̵a̵p̵p̵l̵y̵_̲r̲o̲o̲t̲_̲.̲s̲m̲u̲l̲_̲a̲p̲p̲l̲y̲
+/tmp/claude-0/c43/Transgression.lean:767:51: warning: `ContinuousLinearMap.smul_apply` has been deprecated: Use `_root_.smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `_root_.smul_apply x`).
+
+Hint: Replace the deprecated name:
+  C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵s̵m̵u̵l̵_̵a̵p̵p̵l̵y̵_̲r̲o̲o̲t̲_̲.̲s̲m̲u̲l̲_̲a̲p̲p̲l̲y̲
+/tmp/claude-0/c43/Transgression.lean:773:15: warning: `ContinuousLinearMap.coe_sum'` has been deprecated: Use `FunLike.coe_sum` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.coe_sum'` to `FunLike.coe_sum x`).
+
+Hint: Replace the deprecated name:
+  C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵c̵o̵e̵_̵s̵u̵m̵'̵F̲u̲n̲L̲i̲k̲e̲.̲c̲o̲e̲_̲s̲u̲m̲
+'ShadowProbe.Transgression.transgression_alg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.Transgression.L1_pair' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.Transgression.pont_tab' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.Transgression.csArr_eq_CS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.Transgression.div_csLC' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.Transgression.Fc_eq_curv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.Transgression.transgression' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.Transgression.ratio_neg_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.Transgression.plane_divergence' depends on axioms: [propext, Classical.choice, Quot.sound]

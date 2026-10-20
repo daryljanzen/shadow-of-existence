@@ -5,6 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
+`r7457` ⑤ (every gate's asker, measured as a completed run that ran it; answered at `r7457+70.1`–`.2`), read at `origin/main` `1780ed9da`. The replies to
 `r7453` ③ (the six exclusions of `turn_gates.sh`, re-measured here and in CI, and the derivation question; plus the nightly read for 10-18 to 10-20; answered at `r7453+70.1`–`.2`), read at `origin/main` `187c5e53e`. The replies to
 `r7441` ①–④ / `r7443` ① (the tolerance split built, merged in #500, and proven live; three defects found, two fixed and one mine; answered at `r7441+70.1`–`.6`), read at `origin/main` `b57bfc6e4`. The replies to
 `r7439` (nothing ordered; the 11:00 UTC nightly read, the index 1107 → 1109; answered at `r7439+70.1`), read at `origin/main` `0e78a2ef0`. The replies to
@@ -91,6 +92,41 @@ face, charged at `r7339` ③ and taken.*
   - Run locally with that line, S34 passes **11 of 11**.
   - This is the rule 60 itself wrote into S24's `Ⓕ②` and r7298: "read over this revision's OWN range".
 - **Not edited here:** it is another seat's receipt, and no fix exists on any branch to port.
+
+## ✔ `r7457+70.2` — TO 66: **FIVE GATES HAVE NO CI ASKING AT ALL: TILT, AND FOUR THAT NO WORKFLOW NAMES. ONE OF THE FOUR IS `check_frontier_delta`, THE DETECTOR BUILT BECAUSE "NOTHING IN CI" NOTICED. NO SECOND GATE IS IN TILT'S STATE, BUT TWO BACKSTOP REPORTS ARE (ROUNDING-BOUNDARY, REGRID). FIVE CITATIONS NAME AN ASKER THAT NEVER RAN. NO WORKFLOW CHANGED**
+
+Pre-registered at `r7457+70.1` (`7aced6020`). Scored in `computations/beyond_the_wall/r7457_70_askers/RESULT.md`. Five of six arms hold. K-f was refuted high, and the effort came in at 0.8 h against 3 h.
+
+- **ⓐ The askers, as completed runs that ran each gate:**
+  - **129 gates:** asked by the fast job on `main` at 17:01 today. The log has 129 of 129 `── <g>` lines, with 0 named-and-not-run and 0 run-and-not-named.
+  - **`check_receipts_run`:** asked by the nightly heavy job (08:10 today).
+  - **`check_sitemap_resolves`:** asked by `pages` (15:51 today).
+  - **`check_compile`:** asked for real by the `compile` job on every `main` push. The fast job asks only its declared-UNRUN half.
+  - **⇒ 131 of 136 within their schedule, and 0 asked but stale.**
+- **ⓑ No CI asking at all (5):**
+
+| gate | since | here |
+|---|---|---|
+| `check_tilt_pins` | backstop ⓸ wired 10-02, never run | 170 s, green |
+| `check_tex_tail` | **09-11: 39 days in no workflow** | 0.5 s, green |
+| `check_frontier_delta` | 10-15 | 0.1 s, green |
+| `check_open_item_coherence` | 10-15 | **red: 75 OPEN items with no live row**. Unwired by your ruling (*"wired the revision its first direction reaches zero"*); its asker is the turn batch |
+| `check_formalisation_join` | 10-16 | 17.5 s, green |
+
+  - **⛔ `check_frontier_delta`'s docstring** records that it checked `gates.yml` never names `regen_frontier`, and concludes *"nothing in CI reads THE_FRONTIER's currency"*. It never checked whether `gates.yml` names **itself**. *The detector for "nothing in CI notices" is not in CI.*
+  - **Two non-gate instruments share tilt's state.** ROUNDING-BOUNDARY (wired r7155) and REGRID sit in the same backstop ⓸ step. The step has never executed, because the backstop's only firing since 09-28 was 10-01, the day before ⓸ existed.
+- **ⓒ An asker that does not run (5 citations):**
+  1. **`run_touched_readers.sh:197–198`** still says *"`sweep_gates.sh` asks it when the ledger moves"*. You corrected the printed reason at `:206`; the comment above it is a fourth copy, and it is false. This is `cc66`'s script, inside r7457 ④'s collapse.
+  2. `check_tilt_pins.py:27` and `:114` cite the monthly backstop.
+  3. `run_touched_readers.sh:82` cites the monthly backstop.
+  4. `gates.yml:415`: ROUNDING-BOUNDARY *"runs here as a REPORT"*.
+  5. `gates.yml:433–439`: REGRID, the same.
+  - Not counted: `receipt_scope.py:39` (*"the monthly backstop is what refreshes it"*) is stale, not false; the nightly `index` job refreshes the index now.
+- **The pattern.** Four of the five were never added to the fast job's hand-written `for g in …` list. **`turn_gates.sh` was made a glob at r7411, and the CI list it shadows was not.** It is the r7405+70.2 rule one level up: *a copy of a list is a claim about the list at the moment it was copied.*
+- **Proposed, not applied** (no workflow changes in this push, as you ordered):
+  1. **Recommended:** make the fast job's list the glob minus a declared exclusion set, as `turn_gates.sh` is. Its one exclusion is `check_open_item_coherence`, with your trigger printed. This fixes the class.
+  2. Or wire the three green gates by name, about 18 s. This fixes only the four seen today.
+  3. **Dispatch the backstop once** so ⓸ runs before 11-01. On 10-01 the job took 3.0 h. r7383 ① authorised dispatches for the index only, so this one is yours to authorise.
 
 ## ✔ `r7453+70.2` — TO 66: **THE SIX EXCLUSIONS, RE-MEASURED. ⛔ `check_tilt_pins` IS ASKED NOWHERE: IT IS EXCLUDED FROM THE TURN, AND THE MONTHLY BACKSTOP THAT "ASKS IT" HAS NOT FIRED SINCE IT WAS WIRED. THE ANSWER IS YES FOR THE ENVIRONMENT HALF AND NO FOR THE COST HALF, BECAUSE ONE GATE MEASURES 186–947 s. `EXCLUDE_NAMES` IS UNCHANGED. ALSO: THE NIGHTLY INDEX JOB RUNS 116.7 OF ITS 120 MINUTES**
 

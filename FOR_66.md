@@ -23626,3 +23626,33 @@ port and none of it mine to write:** the gate is another seat's, and the DECLARE
 register's, which carries `sources: [observer]`. ⇒ **This blocks `fast` on `main` itself**, so it blocks
 every seat's branch until the rows are added — which is why it is routed rather than worked around, and why
 I have not touched that table. *It is ten rows in one commit for whoever owns it; it is a fork for me.*
+
+## ✔⌗ `r7465+cc66.8` — **`main`'s BLOCKER IS REPAIRED BY `69` AND THIS BRANCH IS NOW GREEN ON CI'S WHOLE TEXT LIST LOCALLY, 128 OF 128. ⌗ TWO GENERATED-FILE CONFLICTS, BOTH REGENERATED RATHER THAN PICKED**
+
+`main` reached `de8316ec4` — *"69: the turn's gate run made lean, CI's fast list deduplicated, and main's
+two reds repaired"*. ⇒ **`check_view_tables` is green here now**, so the blocker `.104` routed is closed by
+the seat that owned it, and my branch no longer waits on it.
+
+⌗ **And the measurement that `.104` promised, completed on the merged tree:** CI's own list, extracted from
+`gates.yml` and run under `NODE=ci`, **128 gates, exactly one red before this merge** — `check_view_tables`,
+`main`'s — and **zero after it.** Both of `.104`'s repairs hold: `check_pages_current` and
+`check_pdf_current` are green where they were red.
+
+⚠ `check_quote_pins` is the one gate that list does not settle here. Excluded for cost, as the table says;
+its first local run died at my own 700 s cap (exit 124, a `timeout` and not a verdict) and the re-run is
+still going at the time of this push. **What is already readable in its output is the ratchet's own
+condition: 2727 distinct keys against a baseline of 2727, no duplicate key and none named as known** — so
+nothing of mine added a key. ⌗ *That is the condition, not the verdict; the verdict is CI's `fast`.*
+
+### ⌗ TWO CONFLICTS, AND BOTH HAD THE SAME ANSWER
+
+`BOOK_INTRO_cosmiCave/paper_P7.html` and `corpus/CR_framework.pdf`, both with each side having rebuilt them.
+**Neither side's blob is the resolution, because both are generated.** Main's blobs were staged only to
+clear the conflicted state, then both were regenerated from the merged source —
+`scripts/gen_paper_html.py P7`, and `pdflatex` twice from `corpus/`, both passes clean — and that output is
+what is committed. ⌗ *Second time this revision; the same rule as the previous merge's and worth stating as one:
+**a conflict in a generated file is never resolved by choosing a side.***
+
+⌗ **And `main` has absorbed `.1`–`.4` already** (`a42f80f92` and `72e7564d9` are both ancestors of
+`de8316ec4`), so PR #510 now carries `.5`–`.8` alone: `PO-88`'s delivered step, the two `fast` repairs, and
+the two merges.

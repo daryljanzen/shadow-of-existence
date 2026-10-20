@@ -1,0 +1,158 @@
+
+r7462 — PO-88's TERMINATION CLAUSE, COMPONENT BY COMPONENT.
+
+PO-88's second exit reads: "the two structural results are shown to leave the through-crossing
+evolution no freedom at all --- that every admissible stress-energy crosses identically because
+zero cosmic duration and zero oscillatory content exhaust the problem."  It quantifies over EVERY
+ADMISSIBLE STRESS-ENERGY and it is one sentence.  A concrete matter model's stress-energy is not
+one object: relative to the collapse worldline congruence it is rho, p, q_a, pi_ab, a composition
+vector, and perturbation content in three irreducible types.  SO THE CLAUSE IS ELEVEN CLAIMS AND
+IT IS WRITTEN AS ONE.
+
+This locator puts each sector to the corpus separately and asks what the eighteen papers say
+happens to IT at the branch point.  THREE STATES, NOT TWO (r7422, r7436):
+
+    COVERED      a sentence (or, with the scope printed, a paragraph) carrying both the sector's
+                 own anchor and a crossing marker
+    STATED-AWAY  the sector IS in the corpus, and never at the crossing
+    ABSENT       the anchor appears nowhere in the eighteen papers
+
+A sector's own absence is its own state.  Reporting it as coverage would be the gate writing the
+row rather than reading it (r7458's guard), and reporting it as a defect in the papers would be
+this seat's own generator: an instrument built to check a condition that already exists will
+disagree with it, and the disagreement will look like a finding about the subject.
+
+⌗ THE SENTENCE SPLITTER AND THE TEX STRIPPER ARE IMPORTED FROM r7454's `open_list.py`, NOT
+  REWRITTEN.  r7445's rule, promoted at r7447: a reimplementation of a predicate is a second
+  instrument and it will disagree.  If that file moves, this one fails loudly rather than
+  quietly growing a second copy.
+
+
+==============================================================================================
+THE SOUND RUN — eleven sectors, keyed on the crossing
+==============================================================================================
+  sector                                         state         sites  anchor hits
+  energy density  rho                            COVERED           5           63
+  isotropic pressure  p                          COVERED           1           16
+  energy flux  q_a                               ABSENT            0            0
+  anisotropic stress  pi_ab                      COVERED           2            2
+  composition vector (the species fractions)     COVERED          79          178
+  frozen SCALAR perturbation modes               COVERED          67          116
+  VECTOR perturbation modes                      STATED-AWAY       0            2
+  TENSOR perturbation modes (gravitational waves) COVERED          10           42
+  the time-stacking the reassignment acts on     COVERED          82          254
+  the species filter's own action                COVERED          42          147
+  the crossing's own duration                    COVERED          52           89
+Ⓥ [CONTROL] the crossing's torsion content       STATED-AWAY       0            3
+
+  ⇒ of 11 sectors: COVERED 9 · STATED-AWAY 1 · ABSENT 1
+
+----------------------------------------------------------------------------------------------
+  THE CONTROLS
+----------------------------------------------------------------------------------------------
+  Ⓥ① blindness guard  — the frozen SCALAR sector, whose site r7462's Ⓓ③ names
+      state = COVERED   ⇒ PASS
+  Ⓥ② over-fire guard  — an invented sector that cannot be at this locus
+      state = STATED-AWAY   ⇒ FIRED: co-occurrence read as aboutness
+  Ⓥ③ keying guard     — drop the crossing conjunct; the count must RISE
+      keyed 9 → unkeyed 10   ⇒ PASS
+
+----------------------------------------------------------------------------------------------
+  THE SITES, per covered sector — open the file at the line and read it
+----------------------------------------------------------------------------------------------
+
+  ⌈ energy density  rho  —  5 site(s)
+    CR_framework.tex:959  [SENTENCE]  anchor=\bthe density\b  crossing=branch point
+      The mechanism by which matter and observers transition through this shared ontological layer is advanced in the Frontiers section below ( ): the crossing is well posed at the branch point---the substrate's curvature finite there whatever the chart-borne geometry does, and r_* convergent so the cross
+    dynamics_paper.tex:340  [SENTENCE]  anchor=\bthe density\b  crossing=branch point
+      There the crossing of matter through the branch point is shown well posed and structurally governed---the foliation-preserving reassignment fixing the -set rate while the density crosses as inherited content---in the companion cosmology paper , and the worldline side is settled with it: a comoving w
+    CR_cosmology.tex:2625  [PARAGRAPH]  anchor=\bthe density\b  crossing=branch point
+      The state itself is whatever the leg's evolution produces, and supplies it in closed form: the potential from the leg's own equation, the effective temperature oscillating freely from horizon entry, and the density contrast as their difference.
+    CR_cosmology.tex:2635  [PARAGRAPH]  anchor=\bthe density\b  crossing=branch point
+      It is a definition, not a restriction: on the leftward reading the rate is set by the substrate and the content is read from it, so the perturbed constraint likewise defines the density contrast a given geometry carries rather than restricting which geometries are allowed.
+    … and 1 more
+
+  ⌈ isotropic pressure  p  —  1 site(s)
+    CR_cosmology.tex:2405  [PARAGRAPH]  anchor=\bequation of state\b  crossing=the crossing
+      For tensors that restriction is absent: z_T=aM_ Pl /2 exactly, for any content, any equation of state and any sound speed, so z_T''/z_T=a''/a identically and the entire passage---background, connection, monodromy---applies verbatim with nothing assumed.
+
+  ⌈ anisotropic stress  pi_ab  —  2 site(s)
+    CR_cosmology.tex:563  [SENTENCE]  anchor=\banisotropic stress\b  crossing=branch point
+      The structural point stands without it: the loading is the same in both because it is imprinted on the expansion side, and the argument is at the level of contents rather than of the driving---where the loading ratio alone would give 3.5. And the free-streaming neutrinos the cooling-leg nucleosynthe
+    CR_cosmology.tex:563  [PARAGRAPH]  anchor=\banisotropic stress\b  crossing=branch point
+      The transfer carries the effect, and what it carries is a composite: removing the anisotropic stress at both of its dynamical sites---the neutrino Euler equation and the shear term in ---leaves the sector a perfect fluid at the same background density, and pushes every peak on both arms to larger mu
+
+  ⌈ composition vector (the species fractions)  —  79 site(s)
+    janzen_circle_v3.tex:543  [SENTENCE]  anchor=\babundanc  crossing=branch point
+      Read forward on that perspectival reading and carried to >0, the passage the present paper opens is the branch point of a cosmogenesis: the framework's central theorem carries the collapse through it into an expanding cosmology, and the primordial light-element abundances that history produces are c
+    shadow_of_existence.tex:356  [PARAGRAPH]  anchor=\babundanc  crossing=branch point
+      The cosmogenesis to which the cosmology's frontier leads draws that criterion at its sharpest on the theory-choice axis: that the hot dense era is required by the corpus's structure---the far side of a collapse the programme already had---rather than a phase introduced to yield the primordial abunda
+    CR_framework.tex:680  [SENTENCE]  anchor=\bcomposition\b  crossing=branch point
+      On both legs alike the two rates are the one decomposition H_ leaf ^ 2 =H_ stack ^ 2 +H_0^ 2 _r(1+z)^ 4 (Eq. eq:two-rate ): content processes---the cooling leg's nucleosynthesis, the plasma's sound horizon and diffusion---run on the leaf's rate, where radiation gravitates, and comoving separations r
+    CR_framework.tex:771  [PARAGRAPH]  anchor=\bcomposition\b  crossing=branch point
+      The same handover fixes the light-element composition, produced on the cooling leg by a genuine nuclear network: helium-4, helium-3 and deuterium at their observed values (deuterium and helium-4 within 1 of the measured primordial values), the near-zero metallicity of the oldest systems from the han
+    … and 75 more
+
+  ⌈ frozen SCALAR perturbation modes  —  67 site(s)
+    BH_causality_v2.tex:593  [SENTENCE]  anchor=\bscalar perturbation  crossing=branch point
+      JanzenCRcosmology D. Janzen, The cosmology of Cosmological Relativity: the expansion history from causal reassignment on a de Sitter background, the cosmogenesis branch point, and the scalar perturbation sector, companion paper (P15).
+    janzen_circle_v3.tex:601  [SENTENCE]  anchor=\bscalar perturbation  crossing=branch point
+      JanzenCRcosmology D. Janzen, The cosmology of Cosmological Relativity: the expansion history from causal reassignment on a de Sitter background, the cosmogenesis branch point, and the scalar perturbation sector, companion paper (P15).
+    SdS-slicing-curve_v2.tex:1295  [SENTENCE]  anchor=\bscalar perturbation  crossing=branch point
+      JanzenCRcosmology D. Janzen, The cosmology of Cosmological Relativity: the expansion history from causal reassignment on a de Sitter background, the cosmogenesis branch point, and the scalar perturbation sector, companion paper (P15).
+    shadow_of_existence.tex:662  [SENTENCE]  anchor=\bscalar perturbation  crossing=branch point
+      JanzenCRcosmology D. Janzen, The cosmology of Cosmological Relativity: the expansion history from causal reassignment on a de Sitter background, the cosmogenesis branch point, and the scalar perturbation sector, companion paper (P15).
+    … and 63 more
+
+  ⌈ TENSOR perturbation modes (gravitational waves)  —  10 site(s)
+    slicing_operator.tex:602  [PARAGRAPH]  anchor=\bgravitational wave  crossing=branch point
+      JanzenDynamics D. Janzen, Why the cut bends: the dynamics of the de Sitter cut, the confined gravitational wave, the generative boundary of the slicing operator, and chirality as the turning of the polarization plane, companion paper (P11).
+    range_paper.tex:388  [PARAGRAPH]  anchor=\bgravitational wave  crossing=branch point
+      JanzenDynamics D. Janzen, Why the cut bends: the dynamics of the de Sitter cut, the confined gravitational wave, the generative boundary of the slicing operator, and chirality as the turning of the polarization plane, companion paper (P11).
+    dynamics_paper.tex:340  [PARAGRAPH]  anchor=\btensor sector\b  crossing=branch point
+      The scalar (density) perturbation sector---the counterpart to the transverse-traceless tensor sector developed here, and the primordial source of the cosmic-microwave-background anisotropies---is treated in the companion paper .
+    boundary_paper.tex:480  [PARAGRAPH]  anchor=\bgravitational wave  crossing=branch point
+      JanzenDynamics D. Janzen, Why the cut bends: the dynamics of the de Sitter cut, the confined gravitational wave, the generative boundary of the slicing operator, and chirality as the turning of the polarization plane, companion paper (P11).
+    … and 6 more
+
+  ⌈ the time-stacking the reassignment acts on  —  82 site(s)
+    BH_causality_v2.tex:593  [SENTENCE]  anchor=\breassignment\b  crossing=branch point
+      JanzenCRcosmology D. Janzen, The cosmology of Cosmological Relativity: the expansion history from causal reassignment on a de Sitter background, the cosmogenesis branch point, and the scalar perturbation sector, companion paper (P15).
+    janzen_circle_v3.tex:527  [PARAGRAPH]  anchor=\breassignment\b  crossing=branch point
+      Read as the static interior it is the collapsing hole---the Schwarzschild vantage, the matter falling on its own leaf; carried to the de Sitter substrate and read outward through the timelike vantage it is the expanding cosmology, whose rate the geometry alone sets, the framework's reassignment inst
+    janzen_circle_v3.tex:601  [SENTENCE]  anchor=\breassignment\b  crossing=branch point
+      JanzenCRcosmology D. Janzen, The cosmology of Cosmological Relativity: the expansion history from causal reassignment on a de Sitter background, the cosmogenesis branch point, and the scalar perturbation sector, companion paper (P15).
+    SdS-slicing-curve_v2.tex:886  [SENTENCE]  anchor=\breassignment\b  crossing=branch-point
+      The cosmological-side continuation here---the Lorentzian de Sitter piece r> onto which the slicing opens---is the geometric substrate of the cosmogenesis developed in the cosmological completion , where the reading of the branch-point crossing as the reassignment of the radial direction to cosmic ti
+    … and 78 more
+
+  ⌈ the species filter's own action  —  42 site(s)
+    CR_framework.tex:544  [SENTENCE]  anchor=\blossless\b  crossing=the crossing
+      No information is destroyed on the realised spacetime; a basis is selected on it. The crossing itself is settled on both halves, and the two are one geometry read on two clocks ( ): the segment carries no species selection rule, because a filter acting on oscillatory content has nothing to select fr
+    CR_framework.tex:680  [SENTENCE]  anchor=\bvacuum kernel\b  crossing=branch point
+      On both legs alike the two rates are the one decomposition H_ leaf ^ 2 =H_ stack ^ 2 +H_0^ 2 _r(1+z)^ 4 (Eq. eq:two-rate ): content processes---the cooling leg's nucleosynthesis, the plasma's sound horizon and diffusion---run on the leaf's rate, where radiation gravitates, and comoving separations r
+    CR_framework.tex:959  [SENTENCE]  anchor=\blossless\b  crossing=branch point
+      The mechanism by which matter and observers transition through this shared ontological layer is advanced in the Frontiers section below ( ): the crossing is well posed at the branch point---the substrate's curvature finite there whatever the chart-borne geometry does, and r_* convergent so the cross
+    CR_framework.tex:1410  [PARAGRAPH]  anchor=\bthe kernel\b  crossing=the crossing
+      Because cosmic time does not advance along the lift, the kernel carrying a state across is not the unitary e^ -i H but the Euclidean K=e^ - H ---consistent with the evolution operator being the identity, since no cosmic time elapses and the kernel is not an evolution in cosmic time .
+    … and 38 more
+
+  ⌈ the crossing's own duration  —  52 site(s)
+    BH_causality_v2.tex:411  [PARAGRAPH]  anchor=\btortoise\b  crossing=the crossing
+      At the horizon the curvature is finite while the tortoise measure r_ * = r/f diverges.
+    groupoid_paper.tex:421  [SENTENCE]  anchor=\bproper time\b  crossing=the crossing
+      The crossing's field evolution for a concrete matter model stands open on its own , and is the frontier the framework and the dynamics paper carry ; the worldline half is not open and is not among what such a model supplies, a comoving worldline terminating at finite proper time with the continuatio
+    CR_framework.tex:525  [SENTENCE]  anchor=\btortoise\b  crossing=branch point
+      The conjecture is thus dissolved rather than settled: its subject, a realised singularity whose visibility is in question, is never actualised on the evolving layer, and what the collapse produces instead is the cosmogenesis branch point of ---crossable because the substrate's curvature is finite th
+    CR_framework.tex:535  [SENTENCE]  anchor=\btortoise\b  crossing=branch point
+      Where the information goes is then answered rather than deferred: it rides that unitary evolution, which does not terminate but continues across the branch point---where the substrate's curvature stays finite while the geometry's diverges, and the tortoise measure r_* converges so the crossing carri
+    … and 48 more
+
+----------------------------------------------------------------------------------------------
+  THE SECTORS THE PAPERS DO NOT SPEAK TO AT THIS LOCUS
+----------------------------------------------------------------------------------------------
+    STATED-AWAY  VECTOR perturbation modes                      anchor hits elsewhere: 2
+    ABSENT       energy flux  q_a                               anchor hits elsewhere: 0
+
+==============================================================================================
+  ⛔ VOID — controls fired: Ⓥ②
