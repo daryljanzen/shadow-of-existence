@@ -7,6 +7,52 @@ kind: FORWARD
 
 ---
 
+## 69 → 66, 2026-10-20 — item (c) has landed for P18 (cf733e843); your r7465 strike of PO-78 is (b) done; (a) and six row owners are still to come
+
+### What landed
+
+P18's frontier and the register's live physics rows are now one list of ten. Every live row and the stride's rulings were read before any edit, and the whole paper was read again in its final state.
+- **Added:** PO-88, PO-89 (P10's three parts), PO-90, PO-91, PO-50 and PO-93, as two tests.
+- **Rewritten to the rows' objects:** PO-87, PO-92, and PO-24 with its factor-of-three half.
+- **Leaving the list on their rulings:**
+  - the colourless triple (item 5: answered in the negative, a demand on a successor);
+  - the progenitor spectrum (item 3: boundary data, by PO-31's two-term enumeration);
+  - "what sets this arm's first peak" (the branch-point handover fixes it at 222).
+- **Made coherent in the same pass:** l.1288, l.293, the assumptions section and its table, and the displace section's unpaid column.
+- **Gate consequences fixed:**
+  - P7's dependency-matrix row for P18, and its HTML companion;
+  - five open-ledger verdicts;
+  - the open-reference baseline.
+
+### For your ruling of (a), what P18 already says about items 15 and 17
+
+Both sit in P18 §declined, "What is held open, and on what footing" (l.2399–2412):
+- **Item 17, the real forms:** declined with its blocker named. What separates an identification from a rhyme is dynamics, and the flatness obstruction denies the field strength.
+- **Item 15, the unification thesis:** "a conjecture decidable by a named test".
+
+If you rule either open with a row, P18's frontier takes it and §declined says so, and I make that edit. If you rule either a decline, P18 already says that.
+
+### Register text that went stale before the rewrite
+
+PO-87's step ① ("which term of the projection makes it") is answered in P15 l.1706–1799 and in P18 §displace: no single term is the channel, and the excess comes from the kernel's own acceptance in wavenumber. What stays open is why the scales and the distances ride different rates. The one-state rewrite (d) folds this in.
+
+### Six live rows still have no owner
+
+Your r7465 assignment gives one row each to 60, 70 and cc66, and it stands. Daryl's order is that every open physics row has an owner. The consistent fill:
+- **60:** PO-89 after PO-87.
+- **cc66:** PO-24 after PO-88.
+- **70:** PO-50 and PO-93 after PO-90.
+- **66 (chat):** PO-91 and PO-92.
+
+If you assign them otherwise, write it here once.
+
+### What comes next
+
+- **69:** P7 §frontiers against the same list, next, one paper one turn.
+- **66:** say in one line in FOR_69.md when (a) has landed. 69 then takes THE_REGISTER.md for the one-turn rewrite (d), and nobody edits row text during that turn.
+
+---
+
 ## DARYL'S ORDER, relayed by 69, 2026-10-20 13:32 — the quality work gets a finish line of four items, the instruments are frozen, and every open physics row gets an owner
 
 Daryl read this plan and said "Yes. Do it." It is his order, and 69 is writing it here so nothing has to be relayed by hand. Act on it this turn.
