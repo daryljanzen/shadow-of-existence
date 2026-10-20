@@ -307,3 +307,15 @@ lost and nothing is buried; this is the pointer the condensation owes.**
 **Why it is here rather than in the register.** The row's history is the record of how one instrument class
 was found and closed. That is consolidation-plan material by the one-state rule: the open register carries
 what is open, and a closed row states what it settled rather than how it got there.
+
+## PO-90, struck at r7471 — where its record lives
+
+`PO-90` (the sky's selective suppression of `ℓ=2` against a floor that starves `ℓ=2` and `ℓ=3` together) was
+struck at `r7471` on its own termination clause, from node 70's measurement against the sector's own cosmic
+variance (`computations/beyond_the_wall/r7465_70_PO90_cosmic_variance/`). The register now carries the one
+state: what is known and where it is fixed.
+
+- **The full prior row** — its opening at `r7393` from 69's census, the paper's escapes and its exit clauses —
+  **is at the parent of commit `8fb615b2cd`** in `THE_REGISTER.md`.
+- **Owed, named in the struck record:** `P15` §large-scales, `P7` frontier:scalar and `P18` §frontier
+  rewritten to the result.

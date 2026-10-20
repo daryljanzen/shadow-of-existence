@@ -88,6 +88,14 @@ DECLARED = {
                             'state, discharging the condensation clause the row itself set at '
                             'r7443; 852,992 -> 2,944 characters, the record going to the '
                             'consolidation ledger and the full row kept at the commit named'),
+    #: ⛭ 69, on taking the coordinating seat.  Daryl's order (d) is that the register carries one
+    #:   state -- the question, what is known, what settles it -- with the history in the
+    #:   consolidation ledger.  So a strike from here condenses rather than grows, and each
+    #:   condensation is entered here against the commit that made it, its full prior row kept at
+    #:   that commit's parent and pointed to from THE_CONSOLIDATION_LEDGER.md.
+    'PO-90': ('8fb615b2cd', 'r7471 struck the row on its own termination clause (70\'s measurement) '
+                            'and wrote it as one state; the full prior row is at the parent '
+                            'of the commit named and is pointed to from the consolidation ledger'),
 }
 
 ROW = re.compile(r'\| ~?~?\*\*((?:PO|L|C)-?\d+)\*\*')
