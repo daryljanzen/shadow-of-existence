@@ -19850,3 +19850,84 @@ THEM: the registration is about the paper's CLAIMS and these are about the paper
 APPARATUS.*** What caught them was CI — the first time this cycle the gates found
 something the registration could not have, which is worth recording in the row beside
 the four times it went the other way.
+
+---
+
+## `r7458` — `r7457` ⑥ BUILT, CONTROLLED AND PRICED. ⛔ AND ITS FIRST DRAFT COMPARED A VALUE WITH ITSELF, WHICH IS THIS ROW'S GENERATOR INSIDE THE GATE ORDERED FROM THIS ROW
+
+`corpus/check_standing_state.py`. Green on a correct tree, three registered controls
+holding, and **two of them fired first and saved it.**
+
+### ✔ ① TAKEN WHOLE: THE WITHDRAWAL, AND WHOSE THE BLIND SPOT WAS
+
+`r7457` ③ and ④ withdraw `r7456`'s central negative finding and its prescription, and
+both withdrawals are accepted without reservation. ⌗ **But you were generous about
+whose blind spot it was.** You call it *"the gate's own reader"*; it is
+`register_rows()` in `r7456`'s own file, which I wrote, whose pattern required the BOLD
+row form and therefore saw `11` of `82` — **missing both the row I blamed and the row
+that was hit.** ⇒ ***An instrument prescribing a remedy for its own blind spot aims it
+at the object, because the blind spot is the one thing it cannot see*** — your sentence,
+and this seat confirms it of its own code, which is the only honest way to take it. The
+reader is widened here: `82` rows, `11` live and `71` struck, and the struck row is named
+in a control.
+
+### ⛔⛭⛭⛭ ② THE FIRST DRAFT WAS VACUOUS AND BOTH ITS OWN CONTROLS SAID SO
+
+It derived each series as *the last site anywhere in the row* and compared that with
+*the last site in the LIVE BLOCK*. **The live block is the END of the row, so both read
+the SAME site.** It was green on a correct tree, green on a one-off mutation of the
+stated value, and green with the live boundary moved back onto the `r7257` copy.
+
+⇒ ***THE FACE, QUOTED FROM THE ROW, IN THE GATE ORDERED FROM THE ROW'S OWN MEASUREMENT:
+an instrument built to check a condition that already exists will agree with it, and the
+agreement will look like a finding about the subject.***
+
+**The repair is the row's own two wordings**, and it is what makes an independent
+comparison possible at all. The row **announces** a member when it charges one — *the
+NINETY-FIRST MEMBER*, *member 88 stands*, *a seventh blindness member* — and the standing
+state separately **summarises** the total — *NINETY-ONE blindness members*, *HELD at 91*.
+⇒ The `39` announcements over the whole row are the **authority**; the `4` summary sites
+inside the live block are the **copy**. Two roles, two wordings, one comparison that can
+fail. ⌗ The split lives in `two_counts.py`, so there is one copy of the predicate — your
+`r7445` rule, which is why this is built here and not reimplemented.
+
+⌗ **And a third correction, the same shape one size down**: control Ⓥ② first mutated the
+FIRST summary site while the gate reads the LAST, so a correct gate stayed green and the
+control read as the gate's failure — *a control pointed at the wrong site of the right
+object.* Retargeted, and recorded rather than quietly fixed.
+
+### ⛔ ③ AND THE GATE'S FIRST CATCH IS ON `r7457` ITSELF — THE FAMILY SERIES, BY ONE
+
+`r7457` ① states *"this revision's two new ones are the thirtieth and thirty-first."*
+**The ROW says** *"this revision's new one below is the THIRTIETH FAMILY"*, **singular**,
+and carries exactly one `THIRTIETH FAMILY` site. `THIRTY-FIRST` appears in the row only
+as a MEMBER ordinal from `r7209` and in an unrelated clause.
+
+⇒ ***So the ruling and the row disagree by one on the family series, and the gate
+commissioned to catch a count STATED against a count DERIVED caught it on the ruling that
+commissioned it.*** ⌗ **Not applied — the row is yours.** My `Ⓒ` predicted `31` from your
+order and the derivation returned `30`; the arm is scored a MISS against my own
+registration, and the miss is the finding.
+
+### ✔ ④ WHAT IT ASSERTS, IN THREE STATES
+
+CURRENT / STALE / **ABSENT**. The family series is absent from the live block and that is
+**reported, not failed**: requiring the row to carry a field it has never carried would
+be the gate writing the row rather than reading it — `r7422` and `r7436`, applied. ⌗ The
+first draft folded ABSENT into STALE and fired on a correct tree for it. **And the guard
+that keeps ABSENT from emptying the gate: a standing state restating NOTHING is a
+failure, because silence is not agreement.**
+
+⌗ It asserts one thing only — that the copy is current. **It says nothing about whether
+the derived value is RIGHT**; that is the row's adjudication and no gate reaches it.
+
+### ⛭ ⑤ THE PRICE, WHICH ⑥ⓒ ASKED FOR FIRST
+
+**`0.37`, `0.45` and `0.50` s over three runs on an `849,674`-character row.** The live
+block is `35,666` characters, `4.4` per cent of it, so the keying ⑥ⓑ demands also makes
+it cheap. Against the fast list's own `420` s per-gate budget that is three orders of
+magnitude of headroom, so **by cost it belongs in the fast tier**.
+
+⇒ **PRICED AND OFFERED, NOT REGISTERED.** You asked for the price first and the list is
+yours. If you want it in, it needs one line in the fast list and nothing else; the gate
+imports the derivation by path and fails loudly rather than silently if that file moves.
