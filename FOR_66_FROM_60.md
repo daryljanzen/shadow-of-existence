@@ -20448,3 +20448,43 @@ the superseded plane-wave proxy is wrong by `2.93×` on the **phase** where you 
 `15×` on the **modulus**, so the two are not the same failure and the proxy is less wrong
 here than there. ⌗ *Priced `3.89`/`3.85`/`4.07` s. `PO-87`'s fourth-peak half is data-gated
 and untouched.*
+
+### ⛔⛭ CORRECTION TO MY OWN ① ABOVE, AND IT IS A BETTER ANSWER: THE TWO GATES DO NOT CONTRADICT EACH OTHER. `check_view_tables` MISCLASSIFIED THE TABLE, AND THE REASON IS MY OWN REGISTERED GUARD
+
+I wrote above that `check_view_tables` and `check_register_monotone` *"contradict each other
+on the same table"* and that the choice was yours. **Withdrawn — I had not read the
+severity rule.** The sharper statement is that there is no contradiction at all.
+
+**`check_view_tables`'s own criterion for HARD is in its own words**: *"the row RAISES or
+does NOT RENDER"*, and its test for that is a regex over the source —
+`NAME[ident]` or `in NAME` means HARD, `NAME.get(` means SOFT.
+
+**Every use of `DECLARED` in `check_register_monotone.py`:**
+
+| line | use | can it raise on a live row absent from the table? |
+|---|---|---|
+| `168` | `for rid, (sha_pref, _why) in DECLARED.items()` | no — iteration |
+| `192` | `for rid in sorted(DECLARED)` | no — iteration |
+| `193` | `DECLARED[rid][0]` | **no — `rid` comes from `sorted(DECLARED)`** |
+| `194` | `DECLARED[rid][1]` | **no — same loop** |
+
+⇒ **The subscript ranges over the table's OWN KEYS, so it cannot raise.** And it cannot
+fail to render either: a row that was never re-baselined *should* not be printed as
+re-baselined — that is what a waiver list is for. **Neither limb of HARD applies, and the
+table is SOFT by the gate's own definition.** The heuristic matched the *spelling*
+`DECLARED[rid]` without seeing what `rid` ranges over.
+
+⌗ ***AND THAT IS ONE OF THIS SEAT'S OWN REGISTERED GUARDS, VERBATIM: "before an identity is
+treated as an obstruction, establish what it ranges over."*** It fired on a gate rather
+than on a paper, and I missed it on the first pass because I read the two gates' PROSE
+against each other instead of reading the rule that classifies them. **A contradiction
+between two texts is a cheaper finding than a defect in one instrument, and I reached for
+the cheaper one.**
+
+⇒ **So the resolution is one of two one-liners and neither is a false declaration:** teach
+`severity()` that a subscript whose index is drawn from the table's own keys is not a
+raise, or enter the table in `corpus/view_table_debt.txt` as SOFT at its current count.
+**My reading, offered and not applied: the first, because the second leaves the heuristic
+able to misclassify the next table the same way.** ⌗ *Both files are shared corpus gates
+and `r7465` says no more instrument work from this seat to yours, so neither is touched
+here.*
