@@ -19931,3 +19931,160 @@ magnitude of headroom, so **by cost it belongs in the fast tier**.
 ⇒ **PRICED AND OFFERED, NOT REGISTERED.** You asked for the price first and the list is
 yours. If you want it in, it needs one line in the fast list and nothing else; the gate
 imports the derivation by path and fails loudly rather than silently if that file moves.
+
+---
+
+## ⛭⛭⛭ `r7462` — **NOTHING WAS ORDERED, SO THE FRONTIER. `PO-88`'s TERMINATION EXIT IS NOT REACHABLE, AND IT IS THE PAPERS THAT SAY SO IN FIVE PLACES — NOT ME. ⛔ BOTH OF THE CLAUSE'S GROUNDS ARE PRINTED RESULTS AND BOTH HOLD; WHAT FAILS IS THE QUANTIFIER**
+
+`FOR_60.md`'s topmost section is `r7457` and it is answered. `r7459` and `r7461` are
+other seats' landings and not orders to this one. So the frontier, and the first
+runway-clear item in dependency order is **`PO-88`** — a `BUILD` row, which the frontier
+marks as a class where **no step has ever been completed here**, so its estimates are
+judgement with nothing behind them. ⌗ **I did not claim the step.** I tested the row's
+**second** exit, which is cheaper and was never checked.
+
+The receipts are in
+`computations/beyond_the_wall/r7462_60_po88s_termination_clause_component_by_component/`.
+`PREDICTION.md` is registered `50a39f79` at `0c6f5772`, **before `sectors.py` existed**,
+and it declares five knowns including the inference the run was expected to rest on — so
+that inference is NOT scored. The locator **imports** `r7454`'s sentence splitter and TeX
+stripper by path rather than carrying a second copy of either: `r7445`'s rule, as you
+promoted it at `r7447`.
+
+### ⛔ ① THE CLAUSE QUANTIFIES OVER ELEVEN SECTORS AND IS WRITTEN AS ONE SENTENCE
+
+The exit reads *"every admissible stress-energy crosses identically because zero cosmic
+duration and zero oscillatory content exhaust the problem."* **A concrete matter model's
+stress-energy is not one object.** Relative to the collapse worldline congruence it is
+`ρ`, `p`, `q_a`, `π_ab`, a composition vector, and perturbation content in three
+irreducible types, with the time-stacking, the filter's action and the crossing's own
+duration beside them. **Eleven sectors, one verdict written across all of them.**
+
+Of the eleven the corpus speaks to **`9`** at this locus — `7` of them on the sentence
+column, the other two carried only by the registered rule's paragraph fallback, which I
+report separately because a paragraph naming the branch point somewhere and the sector
+somewhere is weaker evidence than one sentence carrying both. **`q_a` is ABSENT from all
+eighteen papers**, which was the one arm I predicted correctly.
+
+### ⛭ ② AND BOTH GROUNDS ARE YOURS AND BOTH HOLD — WHICH IS WHY THE FAILURE IS WHERE IT IS
+
+I predicted *zero cosmic duration* was the register's phrase and not a paper's. **Wrong:
+it is verbatim in `CR_framework.tex:1983` and `canonical_time.tex:242`**, and the first
+carries it in the same clause as its complement — *"the segment has zero cosmic duration
+and **finite conformal length 3.32**."* I predicted the losslessness was restricted to
+the observed modes. **Wrong again: `c_s k/|aH| → c_s k x → 0` for every `k` is stated in
+three papers.**
+
+⇒ **So the clause does not fail on a ground.** It fails on *every admissible*.
+
+### ⛔ ③ THE FIVE PRINTED SENTENCES, WHICH ARE THE FINDING
+
+**Ⓡ① THE COMPOSITION, AND YOUR OWN PAPER SENDS ITS DERIVATION ELSEWHERE.**
+`CR_framework.tex:801`: *"the frontier's two halves are constrained differently — the
+spectrum's by the crossing's selection rule, **the composition's not at all by it** — and
+a derivation of the composition must be sought on other grounds."* **A sector the
+crossing does not constrain cannot be one in which every admissible input crosses
+alike.**
+
+**Ⓡ② AND AT `787` THE SAME PAPER GIVES THE COMPOSITION'S ONE CROSSING RESULT WITH ITS
+LIMIT:** *"baryon number crosses conserved and the branch point relabels its sign."*
+**Conserved-and-relabelled is a map, and it is injective** — the opposite of degenerate.
+
+**Ⓡ③ THE FREE-STREAMING SPECIES THE COOLING LEG REQUIRES CARRIES ANISOTROPIC STRESS AT
+THE LOCUS.** `CR_cosmology.tex:563`: *"the free-streaming neutrinos the cooling-leg
+nucleosynthesis requires **do carry anisotropic stress at these temperatures — the branch
+point is far below their decoupling**."* And the isotropization is not the crossing's
+doing: `CR_cosmology.tex:2841` states *"the isotropy is **earned on the approach** and
+**preserved by** the crossing… the first is a damping calculation with a rate, a
+timescale and a **residual**."* ⇒ **A residual plus a required species that carries `π_ab`
+there is admissible stress-energy the crossing PRESERVES rather than erases.**
+
+**Ⓡ④ AND THE DECISIVE ONE — THE SECOND GROUND IS BOUNDED IN WAVENUMBER BY `P18` ITSELF.**
+`CR_synthesis.tex:1793`: *"**The premise that every mode is frozen at the handover carries
+a qualification**, and it is worth having because it names where the argument would fail:
+the imaginary-time segment before the branch point removes a mode's oscillatory content
+**strongly only above** `k ∼ 2×10⁻⁴ Mpc⁻¹`, so **modes below that cross with residual
+excitation** — so the acoustic band sits on the safe side by construction, and the
+low-wavenumber end is where it would bite."* `canonical_time.tex:273` carries the same
+bound with its `|Δη|` and its `ℓ ≈ 3`. ⇒ ***Zero oscillatory content* is true above a
+stated scale and the corpus says so. The ground is quantified where the papers quantify
+it; the clause is not.**
+
+**Ⓡ⑤ AND THE ROW'S OWN NAMED STEP IS ITSELF A STATEMENT THAT THE THROUGH-CROSSING
+EVOLUTION IS OPEN.** `cosmogenesis_paper.tex:549`: *"The exact regulated peak — **how deep
+the compression runs on the smooth substrate through the branch point** — **remains
+open**, and is downstream-irrelevant here: once dissociation is total, the memory of the
+peak is erased."* ⇒ The second half is why the openness is **harmless downstream**, not
+why the crossing is **determined**. **A quantity of the through-crossing evolution that
+the paper calls OPEN is, by itself, freedom the clause says is not there** — and you
+carried that very quantity into this row at `r7399` as a named step its discharge
+delivers. ***The clause and the step are in the same row.***
+
+### ⛔ ④ AND THE PHRASE THE CLAUSE USES IS THE CORPUS'S, FOR A DIFFERENT OBJECT
+
+I predicted `0` paper sites stating the degeneracy. **Measured `3`, and every one is a
+different no-freedom:** `groupoid_paper.tex:421` and `CR_cosmology.tex:2841` both read *"a
+concrete matter model has **no freedom in where the reassignment acts** — the vantage is
+forced."* ⇒ **ONE PHRASE, TWO OBJECTS.** That no-freedom is the **placement of the law**
+and it is proved. The clause's is a **degeneracy of the map on the content**. *A forced
+placement of the law is not a degenerate map on what crosses* — and the clause reads as
+though the corpus had already said the second because it has said the first.
+
+### ⛭⛭ ⑤ WHAT I SUPPLY, AND IT IS NOT APPLIED
+
+⇒ **The second exit closes as UNREACHABLE rather than unproven**, which is a result,
+because the row carries it as the exit `c54.113` *"reached for and did not demonstrate."*
+
+⇒ **And the first exit's live question now has three NAMED sectors with sites**: the
+composition (`CR_framework.tex:801`, which says where to look), the anisotropic stress of
+the free-streaming species (`CR_cosmology.tex:563`, with the approach's residual at
+`2841`), and the oscillatory content below `k ∼ 2×10⁻⁴ Mpc⁻¹` (`CR_synthesis.tex:1793`,
+`canonical_time.tex:273`).
+
+⌗ **Nothing is applied to `THE_REGISTER.md`.** The row is yours. **And no paper edit is
+owed by this reading either** — every sentence above is correct as printed. What is wrong
+is the register's sentence about them.
+
+### ⛔ ⑥ FOUR DEFECTS, EVERY ONE IN MY OWN INSTRUMENT, AND THE FIRST IS NEW
+
+**① A CONTROL THAT BUNDLED A GUARD WITH A PREDICTION, SO ITS FIRING COULD NOT BE READ.**
+`Ⓥ②` said the invented sector *"must come out ABSENT"* and then *"if it comes out COVERED
+the run is VOID."* It came out **STATED-AWAY**: the guard held, the prediction was wrong.
+**The run as registered is VOID and `void_as_registered.txt` is kept as the record.**
+Split: the guard alone is `Ⓥ②`, the prediction is scored as arm `Ⓙ` and it is a miss.
+⇒ ***A control is a check on the instrument; a prediction is a claim about the world. A
+clause that is both cannot tell you which half fired.*** That is a new face of the same
+family as `r7458`'s control pointed at the wrong site, and I would route it as a rule if
+you want one.
+
+**② THE THIRD SUBSTRING OVER-FIRE OF THIS SEAT'S RUN.** `'any k'` matched *"any **K**illing
+horizon"*; `'the observed'` matched every sentence in the corpus that mentions an
+observation — `52` and `138` sites. Whole tokens keyed on a mode subject give `28` and
+`3`. **`r7454` was repaired for this one size down** (`0.9` matching `0.992`). Same
+generator, third instance, this time in the arm rather than in the finding.
+
+**③ AN ANCHOR LIST THAT OMITTED THE CLAUSE'S OWN WORDS.** The scalar sector was anchored
+on *scalar mode*, *frozen mode*, *sound horizon*, *freez* — **and not on *oscillatory
+content***, which is the clause's own phrase. `CR_synthesis.tex:1793`, the one site that
+bounds the ground the instrument exists to test, carries none of the synonyms. **The
+locator was blind exactly at its subject until the anchor was repaired**, and `Ⓡ④` is
+what it then saw.
+
+**④ THE BIBLIOGRAPHY IS PROSE TO A SENTENCE SPLITTER.** `194` isotropization sites, whose
+printed head was six *bibitem* titles — three cited papers carry *isotropy* in their own
+titles. Cut at the bibliography: `10,998` of `11,743` sentences read, `745` dropped, both
+counts printed.
+
+⌗ **And the limitation that remains, stated rather than left to be found:** the `k` bound
+is carried in **two** papers and the locator sees **one**. `canonical_time.tex:273` states
+it in a sentence that names the wavenumber and not the locus, so the crossing conjunct —
+the thing that stops it reading co-occurrence as aboutness — also stops it reading that
+site. **The instrument UNDER-reports and the direction of its error is known.**
+
+### ⌗ ⑦ THE PRICE, AND IT IS NOT AN OFFER
+
+`7.76`, `7.63` and `8.71` s over three runs on the eighteen papers. **NOT offered for the
+fast list.** This is a measurement of one sentence, not a standing condition on the tree,
+and a list is for conditions that can go wrong again. ⌗ If you want the **sector
+decomposition** itself as a standing check on future exit clauses, that is a different
+object and I would build it as one rather than register this.
