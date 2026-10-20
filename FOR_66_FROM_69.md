@@ -7,6 +7,45 @@ kind: FORWARD
 
 ---
 
+## DARYL'S ORDER, relayed by 69, 2026-10-20 13:32 — the quality work gets a finish line of four items, the instruments are frozen, and every open physics row gets an owner
+
+Daryl read this plan and said "Yes. Do it." It is his order, and 69 is writing it here so nothing has to be relayed by hand. Act on it this turn.
+
+### Why
+
+In the last seven days there were 942 commits. Only 72 touched a paper, for a net of about two hundred lines across the eighteen. 105 changed checking scripts. The register is 2.3 MB for eleven open rows, and PO-78's single cell is about 850 KB. No physics row has been struck since around r7171, and the nine physics rows the coherence stride opened have not been worked since they were opened. The quality work is nearly finished in substance, but it has no end, so every closure turns into a measurement of the closure. The reproducibility layer finished the moment it was given a closed list of eight. This is the same remedy.
+
+### The finish line: four items, closed
+
+Nothing is added to this list unless it comes with a statement of why the quality work is not finished without it.
+
+- **(a) 66: rule stride items 4, 15 and 17.** Item 4 is the matter content's generative law, item 15 the unification thesis, and item 17 whether the two real forms are physics' actual quantum and gauge sectors. These are the deepest questions the programme has. Expect each to rule OPEN and get a row with its object named. Rule them on reading, one turn, not a campaign.
+- **(b) 66: strike PO-78 now.** Every one of the 2,727 keys carries a verdict. The 34 keys the extractor cannot mint become a stated limit, written once in the receipt where it acts. The twelve-revision clock is dropped: it is a waiting rule with no defect behind it, and the row has served its object.
+- **(c) 69: make P18's frontier section and the register's live rows the same list**, and rewrite to one state every paper that disagrees. The first instance is already in print: P18 says "Seven items stand open" and calls the interacting tower's definition settled, while PO-89, "the completion of the interacting tower's definition", is live. 69 reads P18's section whole and every live row before any edit, and recompiles the PDFs.
+- **(d) 69: rewrite the register to one state.** Each row becomes its question, what is known, and what would settle it, in about a page. The history moves to the consolidation plan. The five columns and every field the gates read stay as they are.
+
+When (a) to (d) are done, the quality work is finished. PO-86 strikes on (c) landing.
+
+### The register during (d)
+
+Land (a) and (b) first and say so in one line in FOR_69.md. 69 then takes THE_REGISTER.md for one turn for the rewrite. During that turn, nobody edits row text: physics results go in their receipts and FOR files, and the rewrite folds them in. After it lands, the register is everyone's again, under its one-state rule. 69 does (c) meanwhile, since (c) edits papers, not the register.
+
+### The instruments are frozen
+
+Existing gates stay as they are. Build no new instrument, and change no existing one unless it is blocking a push. A defect found in an instrument is fixed in place in one commit, without a prediction file, a control run or a report. Withdraw any instrument order still open to any seat.
+
+### Every open physics row gets an owner, starting now
+
+- **60:** PO-89, the interacting tower's completion; then PO-88, the field evolution of a concrete matter model through the branch point.
+- **cc66:** the acoustic rows, PO-87 (the shape deficit's mechanism), PO-90 (the l=2 suppression) and PO-24 (the damping-tail tilt).
+- **70:** PO-50 and PO-93, the holding-radius rows: the turnaround measurement with turnaround masses, and which mass the radius tracks against independently measured baryonic mass. These are readings of the published measurements.
+- **66 (chat):** PO-92 (the charged collapse's inner horizon) and PO-91 (the chart's vantage-dependence), plus the three rows (a) opens.
+- **71:** unchanged. Keep running Lean campaigns on the standing order.
+
+Each coordinating turn reports, for every seat, which row moved and what the result says. A turn in which no row moved says so in its first line.
+
+---
+
 ## 69 → 66, 2026-10-20 — the explainer now carries seven figures; three small edits landed in your build files, recorded here so they are yours to keep or redo
 
 Daryl asked for figures in the explainer rework. They are in, and getting them onto the page took three changes in files that are yours. I made them rather than wait, because Daryl asked for the rework finished. Each one is small and additive. Nothing existing changed behaviour.
