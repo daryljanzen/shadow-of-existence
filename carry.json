@@ -111,6 +111,16 @@
     "since": "72e7564d953dd4924042907f4d30a012e2313792",
     "unmeasured": true
    },
+   "receipts/L202_phase_at_the_seam/Z1_the_phase_is_the_antilinear_face_and_it_is_trivial_on_reality.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39495932726",
+    "since": "de118809a6b934f1ca40e21e0c5530c91a5fc2d1",
+    "unmeasured": true
+   },
+   "receipts/L202_phase_at_the_seam/Z2_the_off_real_contour_carries_the_wings.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39495932726",
+    "since": "de118809a6b934f1ca40e21e0c5530c91a5fc2d1",
+    "unmeasured": true
+   },
    "receipts/L202_the_seam/T1_the_transfer_is_half_built.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39487196713",
     "since": "72e7564d953dd4924042907f4d30a012e2313792",
@@ -211,6 +221,11 @@
     "since": "72e7564d953dd4924042907f4d30a012e2313792",
     "unmeasured": true
    },
+   "receipts/L221_the_bridge/B11_three_triples_two_identifications.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39495932726",
+    "since": "de118809a6b934f1ca40e21e0c5530c91a5fc2d1",
+    "unmeasured": true
+   },
    "receipts/L221_the_bridge/B1_the_index_argument_stops_where_a_mod_two_index_begins.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39487196713",
     "since": "72e7564d953dd4924042907f4d30a012e2313792",
@@ -219,6 +234,11 @@
    "receipts/L221_the_bridge/B22_the_tower_is_uniform.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39483252800",
     "since": "6cd6751b0bceb6207ccfde29558f28c48b2cea2b",
+    "unmeasured": true
+   },
+   "receipts/L221_the_bridge/B23_the_corpus_crosses_by_rotation.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39495932726",
+    "since": "de118809a6b934f1ca40e21e0c5530c91a5fc2d1",
     "unmeasured": true
    },
    "receipts/L221_the_bridge/B25_the_scattering_object_exists.py": {
@@ -291,6 +311,11 @@
     "since": "72e7564d953dd4924042907f4d30a012e2313792",
     "unmeasured": true
    },
+   "receipts/L221_the_bridge/B7_two_unbuilt_sectors_not_one.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39495932726",
+    "since": "de118809a6b934f1ca40e21e0c5530c91a5fc2d1",
+    "unmeasured": true
+   },
    "receipts/L230_computes_convention/C1_the_uptake_is_falling_and_this_line_is_why.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39489574419",
     "since": "d96035005a6644f352ad2512d4a52be1da10be41",
@@ -324,6 +349,16 @@
    "receipts/L248_the_strike_broke_its_readers/R1_r3001_struck_fourteen_rows_and_twelve_receipts_read_them_by_prefix.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39489574419",
     "since": "d96035005a6644f352ad2512d4a52be1da10be41",
+    "unmeasured": true
+   },
+   "receipts/L249_a_pin_on_a_live_register/P1_a_check_that_pins_a_live_register_punishes_the_finding_it_defends.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39495932726",
+    "since": "de118809a6b934f1ca40e21e0c5530c91a5fc2d1",
+    "unmeasured": true
+   },
+   "receipts/L250_the_break_reports_itself/Q1_a_quotation_pin_that_names_the_revision_that_removed_it.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39495932726",
+    "since": "de118809a6b934f1ca40e21e0c5530c91a5fc2d1",
     "unmeasured": true
    },
    "receipts/L251_the_numbering_collides/N1_two_lines_numbering_from_one_counter_and_a_paper_narrating_its_own_history.py": {
@@ -646,6 +681,11 @@
     "since": "d96035005a6644f352ad2512d4a52be1da10be41",
     "unmeasured": true
    },
+   "receipts/L_probability/S11_a_sweep_can_contain_its_own_gates_by_scoping_the_assertion_to_its_own_push_and_the_population_it_would_have_swept_is_mostly_another_seats.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39495932726",
+    "since": "de118809a6b934f1ca40e21e0c5530c91a5fc2d1",
+    "unmeasured": true
+   },
    "receipts/L_probability/S13_the_thirty_are_read_and_the_fifth_bucket_is_an_absence_guard_with_no_positive_control.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39489574419",
     "since": "d96035005a6644f352ad2512d4a52be1da10be41",
@@ -671,9 +711,19 @@
     "since": "6cd6751b0bceb6207ccfde29558f28c48b2cea2b",
     "unmeasured": true
    },
+   "receipts/L_probability/S21_a_pre_registered_negative_can_fire_without_reaching_the_claim_it_was_written_to_test_and_mine_did_while_the_order_was_wrong_about_both_defects_in_opposite_directions.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39495932726",
+    "since": "de118809a6b934f1ca40e21e0c5530c91a5fc2d1",
+    "unmeasured": true
+   },
    "receipts/L_probability/S23_four_items_and_every_one_was_mis_described_because_five_gates_stored_a_snapshot_of_a_rule_instead_of_the_rule.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39487196713",
     "since": "72e7564d953dd4924042907f4d30a012e2313792",
+    "unmeasured": true
+   },
+   "receipts/L_probability/S24_a_gate_on_a_repair_has_a_subject_another_seat_may_rewrite_so_all_three_of_mine_went_red_and_the_selector_two_of_them_were_about_was_still_reading_the_commit_body.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39495932726",
+    "since": "de118809a6b934f1ca40e21e0c5530c91a5fc2d1",
     "unmeasured": true
    },
    "receipts/L_probability/S29_the_high_call_is_refuted_again_and_the_low_mode_here_is_a_property_of_the_receipts_because_twenty_three_of_twenty_nine_cannot_take_the_verdict_at_all.py": {
@@ -891,6 +941,11 @@
     "since": "72e7564d953dd4924042907f4d30a012e2313792",
     "unmeasured": true
    },
+   "receipts/P07_CR_framework/L8_the_pencil.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39495932726",
+    "since": "de118809a6b934f1ca40e21e0c5530c91a5fc2d1",
+    "unmeasured": true
+   },
    "receipts/P07_CR_framework/LIFT_euclidean_filter.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39483252800",
     "since": "6cd6751b0bceb6207ccfde29558f28c48b2cea2b",
@@ -916,9 +971,19 @@
     "since": "6cd6751b0bceb6207ccfde29558f28c48b2cea2b",
     "unmeasured": true
    },
+   "receipts/P07_CR_framework/P07_the_lap_is_a_collapse_read_on_the_cosmic_clock_and_the_collapse_sheets_one_horizon_is_cosmological_in_signature.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39495932726",
+    "since": "de118809a6b934f1ca40e21e0c5530c91a5fc2d1",
+    "unmeasured": true
+   },
    "receipts/P07_CR_framework/P07_the_page_curve_is_a_falsifier_here_and_the_daughter_is_not_disconnected.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39487196713",
     "since": "72e7564d953dd4924042907f4d30a012e2313792",
+    "unmeasured": true
+   },
+   "receipts/P07_CR_framework/P07_the_trio_is_a_pair_because_the_foliations_umbilicity_and_the_photon_sphere_are_one_equation_on_any_static_sphere_and_what_merges_at_the_forced_member_is_kappa_with_lambda.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39495932726",
+    "since": "de118809a6b934f1ca40e21e0c5530c91a5fc2d1",
     "unmeasured": true
    },
    "receipts/P07_CR_framework/photon_cross_test.py": {
@@ -1009,6 +1074,11 @@
    "receipts/P10_canonical_time/P10_the_tower_limit_closes_at_first_order_and_the_wall_moves_into_a_boundary_condition_at_second.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39483252800",
     "since": "6cd6751b0bceb6207ccfde29558f28c48b2cea2b",
+    "unmeasured": true
+   },
+   "receipts/P10_canonical_time/P10_the_towers_zeta_at_zero_is_ten_and_the_claim_needs_its_scoping.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39495932726",
+    "since": "de118809a6b934f1ca40e21e0c5530c91a5fc2d1",
     "unmeasured": true
    },
    "receipts/P11_dynamics_paper/C50_the_dirac_sector_propagates_and_its_chirality_is_the_twists_sign.py": {
@@ -1104,6 +1174,11 @@
    "receipts/P14_matter_sector_paper/P14_the_stratifications_two_valued_data_are_one_involution_and_it_is_R.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39483252800",
     "since": "6cd6751b0bceb6207ccfde29558f28c48b2cea2b",
+    "unmeasured": true
+   },
+   "receipts/P14_matter_sector_paper/P14_the_two_colours_complex_structures_live_on_different_spaces_and_only_one_is_forced.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39495932726",
+    "since": "de118809a6b934f1ca40e21e0c5530c91a5fc2d1",
     "unmeasured": true
    },
    "receipts/P15_CR_cosmology/BRANCHPT_transmission_character.py": {
@@ -2031,6 +2106,11 @@
     "since": "6cd6751b0bceb6207ccfde29558f28c48b2cea2b",
     "unmeasured": true
    },
+   "receipts/P15_CR_cosmology/P15_the_phase_is_already_carried_into_the_projections_variable_and_the_two_statements_of_the_sound_horizon_agree_identically.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39495932726",
+    "since": "de118809a6b934f1ca40e21e0c5530c91a5fc2d1",
+    "unmeasured": true
+   },
    "receipts/P15_CR_cosmology/P15_the_phase_is_the_driving_and_the_undriven_arms_agree.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39483252800",
     "since": "6cd6751b0bceb6207ccfde29558f28c48b2cea2b",
@@ -2401,6 +2481,11 @@
     "since": "6cd6751b0bceb6207ccfde29558f28c48b2cea2b",
     "unmeasured": true
    },
+   "receipts/P16_cosmogenesis_paper/C13_downstream_irrelevant_is_not_downstream_blocked.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39495932726",
+    "since": "de118809a6b934f1ca40e21e0c5530c91a5fc2d1",
+    "unmeasured": true
+   },
    "receipts/P16_cosmogenesis_paper/CROSSING_no_made_asymmetry.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39483252800",
     "since": "6cd6751b0bceb6207ccfde29558f28c48b2cea2b",
@@ -2494,6 +2579,16 @@
    "receipts/P17_geometric_core_paper/P17_the_frontier_item_is_a_result_and_the_cosmogenesis_paper_reaches_it_the_other_way.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39487196713",
     "since": "72e7564d953dd4924042907f4d30a012e2313792",
+    "unmeasured": true
+   },
+   "receipts/RP_34_gr/G1_the_arrival_path_metric.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39495932726",
+    "since": "de118809a6b934f1ca40e21e0c5530c91a5fc2d1",
+    "unmeasured": true
+   },
+   "storyboard_receipts/L8_the_pencil.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39495932726",
+    "since": "de118809a6b934f1ca40e21e0c5530c91a5fc2d1",
     "unmeasured": true
    }
   },
