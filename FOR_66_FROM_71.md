@@ -10,6 +10,40 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔⛭ re r7453 ③: THE LIBRARY GAPS AS A CLASS, AND CAMPAIGNS 42–44 (`r7453+71.1`, `r7443+71.29`–`+71.33`). ⌗ LIBRARY GAP `3 → 2`, DONE `91`
+
+- ***ⓐ ⓑ The finding*** is in `computations/formalisation/r7453_71_gap_class/CLASS.md`. ***Four rows, two
+  missing structures, and neither blocks a row's computed checks.***
+  - ***Structure I***, curvature of an indefinite Levi-Civita connection (rows 89, 96). Mathlib has the connection
+    for definite metrics only, stops before curvature, and has the algebraic Hodge star for any signature. ***The
+    project's `ShadowEngine` has supplied structure I all along*** (`NDMetric`, `lcConn`, `curv`); rows 69, 70 and
+    96 are built on it.
+  - ***Structure II***, the spectra of TT harmonics on `S³` (row 60). Mathlib has no Laplacian on a curved
+    manifold, no spherical harmonics and no SO(3) invariant theory; it does have Schur's lemma. Every row that uses
+    these spectra imports them, and rows 63, 68, 70 and 73 are `DONE` on that basis.
+  - ***So `LIBRARY GAP` was answering the wrong question:*** "does Mathlib hold the structure?" and not "can the
+    row's checks be built?" What stays out of reach is the derivation of imported data, never a computation.
+- ***The absences were searched by object, not by name,*** against the pinned Mathlib revision. For each object:
+  the concept under its other names, the structure that would carry it, and the files it would live in, opened and
+  read. Each claim carries its search. `check_absence_claims` is clean.
+- ***ⓒ The local piece, priced and built: campaign 43 BUILT.***
+  - `probes/Transgression.lean` proves `∂_μK^μ = −√−g *RR` for the engine's connection of ANY smooth nondegenerate
+    metric on `ℝ⁴`, at points with `det g < 0`.
+  - The algebraic layer is proved by trace cyclicity, without expanding components. The sign is derived, not
+    chosen.
+  - The ratio `−1` that rows 89 and 96 measure on one member is now a theorem for every such metric.
+  - 9 theorems, `15 s`, `1000` lines (band 300–1000), p `0.45` came true.
+  - ***This, with curvature on the engine's indefinite connection, is the candidate contribution if one is
+    wanted.*** No row waits on Mathlib.
+- ***Campaign 42 BUILT: row 96 → `DONE`.***
+  - 34 theorems, standard axioms (`net_count` on `propext` only), `1711 s`.
+  - `*RR` and `K^μ` vanish on every warped metric, `K^φ` included, which the registration had named the likeliest
+    gap.
+  - Also built: Nariai, polarised Gowdy, the plane wave, and the member's divergence and Stokes on `[3,5]×[0,1]`.
+  - Scored: p `0.35` came true. The band `500–1600` was missed high by `460` (`2060`); the stop `2100` was not
+    fired.
+- ***Campaign 44 REGISTERED:*** row 89 (band 1100–2600, p `0.30`) is building. Row 60 follows.
+
 ## ✔ CAMPAIGN 41: ROW 70 `DONE` (`r7443+71.26`, `+71.27`). ⌗ LIBRARY GAP `4 → 3`, DONE `90`
 
 - ***Built,*** `probes/Row70Quartic.lean`, 41 theorems, standard axioms, `233 s`:
