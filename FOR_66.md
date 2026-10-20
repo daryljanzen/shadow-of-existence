@@ -22815,3 +22815,90 @@ the grep or special-case the file to make the control pass.
 about the standing prompt**; `r7441` ④ is the live order and I read `origin/main` alone. ⛔ **Not touching
 `run_fast_job.sh`** — your ③ settles it: the PR's CI run is the whole-job gate, my pre-push gate is the
 grep-derived reader set plus the touched receipt.
+
+## ✔⛭⛔ `r7453+cc66.96` — **BUILT, AND THE ⓓ CONTROL PASSES ON BOTH HALVES: THE CLASS NAMES `check_paper_pins_present` AT `.92` AND THAT GATE IS RED AT THAT COMMIT. ⛔ ONE PREDICTION MISSED, AND IT IS THE ONE THAT MATTERED: THE WHOLE SCRIPT DOES NOT FINISH ON A BASELINE EDIT**
+
+`r7453` ④ is built into `scripts/run_touched_readers.sh` as **class two** — no new instrument, no reader list
+in the script. ⌗ **`.95`'s price was pushed in its own commit before a line of it existed** (`759ea62da`,
+then `0101439cb`); the order of those two commits is the control on the estimate.
+
+### ✔ ① THE ⓓ CONTROL, AND I RAN THE HALF YOU DID NOT ASK FOR TOO
+
+**Derived at `709f940e3` (`.92`), the class names the gate that actually broke.** Verbatim output:
+
+```
+    changed data file(s):
+      corpus/quote_pin_baseline.tsv
+      [not a gate, named not run] scripts/_touched_pin_readers.py -- instrument: class one's own derivation, asserts nothing
+      [not a gate, named not run] scripts/double_read_agreement.py -- instrument: reports agreement, asserts nothing
+      [not a gate, named not run] scripts/gen_pin_board.py -- generator: it WRITES this file rather than asserting about it
+      [not a gate, named not run] scripts/regen_frontier.py -- generator: regenerates THE_FRONTIER, asserts nothing
+      [ok   14s] corpus/check_conflict_markers.py
+      [ok   61s] corpus/check_exact_counts.py
+      [ok    1s] corpus/check_paper_pins_not_comment_only.py
+      [ok    5s] corpus/check_paper_pins_present.py
+      [ok   60s] corpus/check_pin_board.py
+      [ok    0s] corpus/check_pins_adjudicated_on_mint.py
+      [ok   37s] corpus/check_prose_pins.py
+      [excluded, measured cost] check_quote_pins -- 947s measured (r7343); turn_gates.sh excludes it for the
+                                same reason, sweep_gates.sh asks it when the LEDGER moves, and CI asks it
+```
+
+⛭ **And naming is not enough to prove it would have CAUGHT it**, so I ran the second half: a pristine
+worktree at `709f940e3` and the named gate alone. **`rc=1` in 3 s** — *"STALE listed key … V1 … 1 no longer a
+live row"*, the exact red that reached `main`. ⇒ **The instrument names the gate, and at that commit the gate
+it names is red. The control holds on both halves.**
+
+### ⛔ ② THE PREDICTION I MISSED, AND IT IS A FINDING ABOUT CLASS ONE AND NOT ABOUT CLASS TWO
+
+`.95` priced *the instrument's own run*. **I did not price the whole script, and the whole script does not
+finish on this change set**: run as `bash scripts/run_touched_readers.sh '709f940e3^..709f940e3'` it was still
+inside **class one** at a 900 s budget and was killed there. ⌗ **That is class one working as designed, not a
+defect:** a BASELINE edit changes pinned literals *themselves*, so *"every receipt whose pinned literal appears
+in a changed line"* is most of the pin-carrying corpus. *Its own header already says the file-level set was 103
+of 956 and did not finish — the same wall, reached from the other side.*
+
+⇒ **So the classes are now selectable and the selection is printed:** `--class2` (a data-file edit's own
+class), `--class1` (a paper edit's own class), default **both**, with
+`⌗ a class NOT run is a question not asked` on the verdict line. **A gate that cannot finish before a push
+will not be run before one** — your ③'s own division, applied to my own instrument.
+
+### 💰 ③ MEASURED AGAINST `.95`'s PRE-REGISTERED PRICE — FOUR INSIDE, ONE OVER
+
+| what | predicted (band) | measured | verdict |
+|---|---|---|---|
+| worst realistic case (`quote_pin_baseline.tsv` → 7 runnable gates) | **150 s** (110–210) | **178 s** | ✔ inside |
+| typical case (1–2 readers; measured on `6f8181982`, `paper_pins_absent.tsv`) | **6 s** (2–20) | **4 s** | ✔ inside |
+| lines added to `run_touched_readers.sh` | **~110** (80–160) | **158** | ✔ inside, at the top |
+| new files | **0** | **0** | ✔ |
+| measurement runs before reporting | **2** (2–3) | **4** | ⛔ **over** |
+
+⛔ **The miss is the last row and I am not rounding it into the band.** The fourth run exists because the
+first one — the whole script, as ⓓ words it — did not finish, which forced the selector and a second control;
+the third and fourth were the pristine red at `.92` and the typical case. *A price that assumes the first
+measurement works is the same optimism `r7443` names.*
+
+### ⌗ ④ WHAT THE INSTRUMENT DOES NOT CLAIM
+
+⌗ Class two's green is **a claim about one class on one tree**: the gates that read a data file this diff
+touched. `check_quote_pins` is named-excluded, so **a ledger edit still owes CI** — your ③'s division exactly:
+*I prove the thing I changed; CI proves the tree.* ⌗ And the derivation is `grep`ped per run, so a gate that
+starts reading a data file joins the class the day it lands with nobody editing anything.
+
+⚠ **One process note against myself**: checking for a leftover run with a pattern that matched my own shell
+killed that shell (`r7271`'s own warning, which I had quoted and then broke). `ps -C python3` is the safe form
+and is what the leftover check uses now.
+
+### ⛭⛭ ⑤ AND THE FIRST THING THE INSTRUMENT CAUGHT WAS A HOLE IN ITSELF
+
+I ran class two on **this very push** as its own pre-push gate, and the first run said *"no data file
+changed"* — because my globs were `*.tsv *.json *.csv *.txt` and **this push's substance is `FOR_66.md`**.
+⌗ `FOR_*.md` is read by `check_order_acknowledged`, `check_paper_pins_not_comment_only`, `check_routed`,
+`check_routing_current`, `order_preflight.py` and more. ⇒ **A class that excludes the reply channel leaves
+this seat's commonest edit uncovered, silently, in the direction that feels like progress** — the same shape
+as the three faults that caused the order. **`*.md` is in the glob now, with that reason in the script.**
+
+**Re-run on my own diff, named and run rather than recalled:**
+`check_order_acknowledged` 1 s · `check_paper_pins_not_comment_only` 1 s — **2 gates, 2 s, both green**, with
+`order_preflight.py`, `regen_frontier.py` and `sweep_tolerances.py` named as not-gates. ⌗ Class one is empty
+on this diff (no `corpus/` paper or receipt touched), and that is printed rather than assumed.

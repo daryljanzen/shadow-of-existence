@@ -34,6 +34,23 @@
 set -u
 cd "$(dirname "$0")/.."
 ROOT=$(pwd)
+
+# ⛭⛭ WHICH CLASSES RUN, AND WHY THE SELECTOR EXISTS -- IT IS A MEASURED COST AND NOT A CONVENIENCE.
+#   `r7453+cc66` measured the whole script on `709f940e3` (a `quote_pin_baseline.tsv` edit): ** class
+#   one did not finish inside a 900 s budget. **  That is class one working as designed and not a
+#   defect -- a BASELINE edit changes pinned literals themselves, so "every receipt whose pinned
+#   literal appears in a changed line" is most of the pin-carrying corpus.  ⇒ *But the class that can
+#   break on a data-file edit is class two, and a gate that cannot finish before a push will not be
+#   run before one.*  So the classes are selectable, and the selection is PRINTED:
+#     --class2   the gates that read a touched data file          (a data-file edit's own class)
+#     --class1   the receipts that pin touched prose              (a paper edit's own class)
+#   ⌗ Default is BOTH, because a tree that edited both needs both and the conjunction is the verdict.
+CLASSES=both
+case "${1:-}" in
+    --class1) CLASSES=one; shift ;;
+    --class2) CLASSES=two; shift ;;
+    --both)   CLASSES=both; shift ;;
+esac
 REF=${1:-}
 
 # ===== CLASS ONE: receipts that pin a sentence in a touched corpus file =====
@@ -202,11 +219,16 @@ notgate_reason_for() {
 class_two() {
     local changed f base hits g gates notgates excl rc t0 secs failed timedout passed
 
+    # ⛭ `*.md` IS IN THIS GLOB AND IT IS NOT DECORATION.  The first push of this very instrument touched
+    #   `FOR_66.md` and nothing else of substance -- and `FOR_*.md` is read by `check_order_acknowledged`,
+    #   `check_paper_pins_not_comment_only`, `check_routed`, `check_routing_current` and more.  ** A class
+    #   that excluded the reply channel would have left this seat's own commonest edit uncovered, in the
+    #   one direction that feels like progress. **
     if [ -n "$REF" ]; then
-        changed=$(git diff --name-only "$REF" -- '*.tsv' '*.json' '*.csv' '*.txt' | sort -u)
+        changed=$(git diff --name-only "$REF" -- '*.tsv' '*.json' '*.csv' '*.txt' '*.md' | sort -u)
     else
-        changed=$( { git diff --name-only -- '*.tsv' '*.json' '*.csv' '*.txt'
-                     git diff --cached --name-only -- '*.tsv' '*.json' '*.csv' '*.txt'; } | sort -u)
+        changed=$( { git diff --name-only -- '*.tsv' '*.json' '*.csv' '*.txt' '*.md'
+                     git diff --cached --name-only -- '*.tsv' '*.json' '*.csv' '*.txt' '*.md'; } | sort -u)
     fi
 
     echo
@@ -270,13 +292,15 @@ class_two() {
     return 0
 }
 
-# ===== THE TWO CLASSES, AND THE VERDICT IS THE CONJUNCTION =====
-class_one; RC1=$?
-class_two; RC2=$?
+# ===== THE SELECTED CLASSES, AND THE VERDICT IS THE CONJUNCTION OF THE ONES THAT RAN =====
+RC1=0; RC2=0; RAN=""
+if [ "$CLASSES" = "both" ] || [ "$CLASSES" = "one" ]; then class_one; RC1=$?; RAN="$RAN one"; fi
+if [ "$CLASSES" = "both" ] || [ "$CLASSES" = "two" ]; then class_two; RC2=$?; RAN="$RAN two"; fi
 echo
+echo "  classes run:$RAN   ⌗ a class NOT run is a question not asked: --class1 / --class2 / --both"
 if [ "$RC1" = "0" ] && [ "$RC2" = "0" ]; then
-    echo "  BOTH CLASSES GREEN: no receipt that pins touched prose and no gate that reads a touched"
-    echo "  data file is red on this tree.  ⌗ Neither claim is the suite's verdict; CI is."
+    echo "  GREEN on the class(es) that ran: no receipt that pins touched prose and no gate that reads"
+    echo "  a touched data file is red on this tree.  ⌗ Neither claim is the suite's verdict; CI is."
     exit 0
 fi
 echo "  ⛔ NOT GREEN -- class one rc=$RC1, class two rc=$RC2.  The named line above says which."
