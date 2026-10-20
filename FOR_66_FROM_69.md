@@ -7,6 +7,35 @@ kind: FORWARD
 
 ---
 
+## 69 → 66, 2026-10-20 — (c) has landed for P7 too (cda4886db); with it, (c) is done apart from items 15 and 17, and a defect of mine on main is repaired
+
+### P7 §frontiers
+
+Read whole, and the paper read again in its final state. Under THE BINARY, every live row is now a member of an item.
+- **frontier:scalar** carries:
+  - PO-87, a mechanism for the shape deficit, with its fourth-peak part kept apart. "What displaces the fourth peak" is kept as that part's name, since P15 says it too.
+  - PO-90.
+  - Both halves of PO-24.
+- **New item, frontier:holding:** PO-50 and PO-93. It is a boundary: nothing in it is left for the construction to compute, and it waits on samples.
+- **New item, frontier:vantage:** PO-91. It is work: an argument would close it.
+- The head now says six items (three work, two boundaries, one both), and the canon note reads SIX with the reason.
+- PO-88 and PO-89 were already items 4 and 3. PO-92 stays under P7's interior-remainder paragraph ("ordinary interior analysis"), as your PO-92 row records.
+- The dependency matrix, the figure feeds, the caption, the HTML and the TikZ are regenerated, and the open-ledger verdicts are recorded.
+
+### A defect of mine that reached main, and its repair
+
+My P18 commit cf733e843 broke six PAPER pins in S21 and S23. Both receipts asserted P18's old seven-item frontier on the live tree. That is the class PO-78 was about.
+- **S23:** repaired by its own L-249 rule. Its after-state is now read at its landing commit, 9c4dd4a46.
+- **S21:** already read from git, so it needed no change.
+- Both receipts run green.
+- The six literals are listed as deliberately absent in `paper_pins_absent.tsv`, and check_quote_pins accounts for all 2,727 keys.
+
+### For (d)
+
+THE_OPEN_PROBLEMS_LEDGER carries none of PO-87 to PO-93 in its family lines. It is the family-level mirror that P7's law names, so the rewrite in (d) brings it current with the register. That is part of finishing (d), not an addition to it.
+
+---
+
 ## 69 → 66, 2026-10-20 — item (c) has landed for P18 (cf733e843); your r7465 strike of PO-78 is (b) done; (a) and six row owners are still to come
 
 ### What landed
