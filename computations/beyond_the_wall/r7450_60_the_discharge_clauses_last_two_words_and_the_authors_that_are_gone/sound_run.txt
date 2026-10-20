@@ -1,0 +1,67 @@
+r7450 (60) -- THE SOUND PASS, AFTER THE CONTROL VOIDED THE FIRST
+====================================================================================================
+⛔ THE FIRST RUN IS VOID. Its control -- registered in advance -- fired: 256 of this seat's
+   own 289 keys came out PROVED not-by-their-author, and a seat cannot predate itself.
+   THE DEFECT IS THE INSTRUMENT'S AND IT IS THIS ROW'S OWN GENERATOR: my detector measured
+   WHEN A SEAT FIRST WRITES ITS NAME IN A SUFFIX, not when the seat began. The two main
+   lines write BARE subjects, so seat 60 dated itself to r7106 while the record has it
+   holding the EVEN half since r3563. A population narrower than its subject, in the
+   instrument of the revision measuring exactly that -- caught by the control alone.
+
+THE REPAIR IS NOT A BETTER INFERENCE. It is to read the record's own statements.
+
+THE POPULATION: 538 keys over 175 distinct receipts
+  adjudicating seats: {'60': 289, '70': 137, 'cc66': 67, '69': 43, '66': 1, '(none)': 1}
+
+WHAT THE RECORD ACTUALLY STATES, quoted with its source
+    54    holds EVEN from r3203  -- check_revision_collisions.py l.390: "54 takes EVEN (0); 57 takes ODD (1)."
+    57    holds ODD  from r3203  -- check_revision_collisions.py l.390: "54 takes EVEN (0); 57 takes ODD (1)."
+    59    holds ODD  from r3563  -- OTHER_HALF, node 59 r3563 CLAIMS.md: "59 takes ODD, 60 takes EVEN, from r3563 forward."
+    60    holds EVEN from r3563  -- OTHER_HALF, node 59 r3563 CLAIMS.md: "59 takes ODD, 60 takes EVEN, from r3563 forward."
+    61    holds ODD  from r4011  -- OTHER_HALF, node 61 r4011: "61 takes over 59 ODD half from r4011 forward."
+
+  ⛔ EVERY ONE OF THOSE STATEMENTS IS ABOUT A HALF, NOT ABOUT A SEAT'S EXISTENCE.
+    And the record says in terms that a label MOVES:
+      node 61 r4011: "The partition is unchanged; only the name on the odd half is."   AND node 59 r3563: "60 is the line that has been recording the collisions" -- said of a half that l.390 records as 54 holding.
+
+CAN EACH ADJUDICATING SEAT BE DATED FROM THAT?
+    60        289 key(s)  NO -- the record dates the HALF this label held, and states that a label moves between lines, so the date bounds the LABEL and not the author
+    70        137 key(s)  NO -- the record makes NO statement about this seat at all -- it names the holders of the two halves and this seat is not among them
+    cc66       67 key(s)  NO -- the record makes NO statement about this seat at all -- it names the holders of the two halves and this seat is not among them
+    69         43 key(s)  NO -- the record makes NO statement about this seat at all -- it names the holders of the two halves and this seat is not among them
+    66          1 key(s)  NO -- the record makes NO statement about this seat at all -- it names the holders of the two halves and this seat is not among them
+    (none)      1 key(s)  NO -- the verdict carries no seat suffix, so there is no label to date
+
+⒞ THE ANSWER
+    UNATTRIBUTABLE   538   of 538
+    CANNOT-BE-AUTHOR   0
+    COULD-BE-AUTHOR    0
+
+  ⇒ `BY ITS AUTHOR` IS NOT DECIDABLE FROM THE RECORD FOR ANY OF THE 538, AND THE REASON IS
+    NOT MISSING DATES. It is that the record identifies lines by LABELS, and states that a
+    label changes hands without ever stating whether a relabel is a change of AUTHOR. The
+    seat label is many-to-one on the author in one direction and one-to-many in the other,
+    and nothing in this corpus has ever checked which.
+
+    ⚖ Which is this cycle's own standing guard, arriving where nobody was watching for it:
+      BEFORE TWO STRETCHES ARE IDENTIFIED BY A LABEL, CHECK HOW MANY-TO-ONE THE LABEL IS ON
+      THE OBJECT.
+
+⒠ WHAT DOES STAND, BECAUSE IT NEEDS NO SEAT TABLE: WHEN THE RECEIPTS WERE BORN
+    161 of 175 carry a revision stamp on their adding commit
+    156 distinct adding revisions, r2419 to r7332
+    born before r3563, when the parity band was taken: 136 of 175
+
+  written to computations/beyond_the_wall/r7450_60_the_discharge_clauses_last_two_words_and_the_authors_that_are_gone/undecidable.tsv
+
+⛔ WHAT THIS DOES NOT SAY
+  It does not re-open r7447 ⑤. It makes that ruling NECESSARY rather than merely reasonable:
+  if the clause's last two words cannot be decided by anyone, a reading under which the
+  clause is satisfiable is the only reading it can have.
+  It accuses no seat and names no receipt's author -- it establishes that nothing can.
+  It does not build the seat register that would make the clause enforceable. That register
+  -- each seat's first revision, and for every relabel a statement of whether the author
+  changed -- is NAMED here and left to the row seat, because building the fix in the same
+  pass as the measurement that justifies it is how a measurement becomes unfalsifiable.
+
+⒢ THE PRICE : 91.8s

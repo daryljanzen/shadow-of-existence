@@ -1,0 +1,64 @@
+r7452 (60) -- THE ROW'S OWN HEADLINE AGAINST THE RECORD IT CLAIMS
+====================================================================================================
+THE ROW AS THE FRONTIER PRINTS IT TODAY
+  the quote-pin backlog: 2,287 assertions across 343 receipts pin the presence of a sentence another seat owns, and none has been read
+
+⒜ THE COUNT, RE-DERIVED FROM THE BASELINE AND NOT INHERITED
+    the row claims  : 2,287 assertions across 343 receipts
+    the record holds: 2,727 keys across 416 receipts
+    the drift       : +440 keys, +73 receipts
+
+⒝ THE STATE -- does "none has been read" hold?
+    keys with no verdict      : 0
+    keys with no what-was-read: 0
+      DELIBERATE     1482
+      MEANING-HELD    538
+      EXTENDED        510
+      ALT-OK           79
+      NOT-A-PIN        72
+      ENCODING-OK      46
+    ⇒ REFUTED. Every key carries a verdict AND a what-was-read. The row's own clause
+      says nobody has read any of it, and the record says every one has been read.
+
+⒞ THE DISCHARGE CLAUSE, REQUIREMENT BY REQUIREMENT
+    a verdict on every one                               MET
+        measured here: 0 without one
+    with what was read                                   MET
+        measured here: 0 without one
+    every MEANING-HELD pin rewritten to what it is for   MET
+        RULED by r7447 ⑤: the gated verdict with a held-at commit IS the rewrite
+    BY ITS AUTHOR                                        MET
+        r7450: undecidable from the record for all of them -- the record dates HALVES, not seats, and says a label moves without saying whether the author does
+    ⇒ 0 of 4 remain open as the clause words them.
+
+  ⛔ AND THAT IS NOT A RULING THAT THE ROW IS DISCHARGEABLE.  The row also carries the
+     detector-failure family and its generator, which this clause does not mention.  A
+     clause with nothing open in it is a fact about the CLAUSE, not about the ROW, and the
+     row's seat is the one who knows whether the clause is the whole of what the row is for.
+
+⒟ THE CENSUS THAT WAS LOOKED FOR AND DOES NOT EXIST
+    11 live row(s); 1 carry a count in the headline at all
+      PO-78    ['2,287', '343']
+    ⇒ the class has 1 member(s), so this is one row's correction and not a census.
+      Dressing one row up as a class is how a finding gets inflated.
+
+⒠ THE CORRECTED HEADLINE, SUPPLIED AND NOT APPLIED
+    -  the quote-pin backlog: 2,287 assertions across 343 receipts pin the presence of a sentence another seat owns, and none has been read
+    +  the quote-pin backlog: 2,727 assertions across 416 receipts pin the presence of a sentence another seat owns, every one now carrying a verdict and a what-was-read
+    ⌗ two figures and one clause, and nothing else. Every figure in it was measured in this
+      run. The row lives in the register and the frontier is regenerated from it, so this
+      seat prints it for the row's seat rather than editing it.
+
+  written to computations/beyond_the_wall/r7452_60_the_rows_own_headline_against_the_record_it_claims/headline.tsv
+
+⛔ WHAT THIS DOES NOT SAY
+  It edits no register row and no frontier row, and regenerates neither.
+  It does not rule the row discharged or dischargeable -- that is its seat's call.
+  It re-opens nothing: r7447 ⑤'s ruling stands and r7450's negative result stands.
+  It makes no claim about any other row, for the reason ⒟ measures.
+  And it names no seat. A headline that has stopped being true is what happens when work
+  lands under a row faster than the row is rewritten -- a bookkeeping lag and nobody's
+  defect, and three of this cycle's four instances of the family this row owns were a seat
+  one step from filing exactly that kind of thing as somebody's fault.
+
+⒡ THE PRICE : 0.0s
