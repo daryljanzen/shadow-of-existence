@@ -19969,7 +19969,7 @@ eighteen papers**, which was the one arm I predicted correctly.
 ### ⛭ ② AND BOTH GROUNDS ARE YOURS AND BOTH HOLD — WHICH IS WHY THE FAILURE IS WHERE IT IS
 
 I predicted *zero cosmic duration* was the register's phrase and not a paper's. **Wrong:
-it is verbatim in `CR_framework.tex:1983` and `canonical_time.tex:242`**, and the first
+it is verbatim in `CR_framework.tex:1991` and `canonical_time.tex:247`**, and the first
 carries it in the same clause as its complement — *"the segment has zero cosmic duration
 and **finite conformal length 3.32**."* I predicted the losslessness was restricted to
 the observed modes. **Wrong again: `c_s k/|aH| → c_s k x → 0` for every `k` is stated in
@@ -20271,3 +20271,97 @@ and one that can express a run against a step, since a line is wrong by a factor
 ⌗ **Supplied, NOT applied**: nothing is written to `THE_REGISTER` and no paper edit is
 owed. ⌗ **`PO-87`'s fourth-peak half is data-gated and is untouched** — nothing above is
 reported against the fourth-peak datum. ⌗ *Priced `0.45`/`0.46`/`0.46` s.*
+
+---
+
+## ⛔⛭ `r7466`'s PUSH IS RED ON TWO FAST GATES AND NEITHER IS THIS BRANCH'S — BOTH MEASURED AT `origin/main`, ONE WITH A PATCH THAT NEEDS YOUR HANDS
+
+I ran all four of the `fast` job's named reds in a clean worktree **at `origin/main` itself**
+rather than reasoning about them. Two cleared on merging and regenerating; two are the
+trunk's, and one of those is a defect in `r7465`'s own new gate that **will red every open
+branch on this trunk**, not just mine.
+
+### ✔ WHAT CLEARED, AND WHAT IT WAS
+
+**`check_paper_pins_present`** — the runner saw `6` NEW absent `PAPER` pins in
+`receipts/L_probability/S21_*` and `S23_*`. ⌗ **Not a real red and not mine**: the `fast`
+job runs on the PR's *merge* commit, so it was reading a `main` mid-way through `69`'s own
+`S21`/`S23` pin repair. Green at `origin/main` and green here after merging. ⌗ *Worth
+knowing as a standing fact: a red on a `fast` job can be a red on a `main` that no longer
+exists.*
+
+**`check_pages_current`** — red at `origin/main`, **for the second time in two revisions and
+by the same mechanism**: a shared-template change regenerated the book pages and not the
+eighteen `paper_P*.html` pages. Regenerated mechanically here again, its own commit, no
+hand edits, and it no-ops the moment the trunk carries the same regeneration. ⌗ *If this
+is going to recur each time the template moves, the regeneration belongs in whatever step
+edits the template — I am not routing that as an order, only noting where the cost lands.*
+
+### ⛔ ① `check_view_tables` IS RED ON `main`, AND THE ONLY FIX ON OFFER WOULD BE A FALSE DECLARATION
+
+Measured `rc=1` at `origin/main`. `r7465`'s new `corpus/check_register_monotone.py` declares a
+**HARD** view table, and ten live rows are missing from it — `PO-24`, `PO-50`, `PO-86`,
+`PO-87`, `PO-88`, `PO-89`, `PO-90`, `PO-91`, `PO-92`, `PO-93`. `check_view_tables` says *"A
+row needs EVERY hard table to reach a reader. Add it, in the same revision."*
+
+⛔ **And that cannot be done honestly**, because the table in question is `DECLARED` — the
+re-baseline list — and `check_register_monotone`'s own text forbids exactly that use of it:
+*"Do not resolve this by declaring the shrink: `DECLARED` is for a shrink somebody chose."*
+
+⇒ ***THE TWO GATES CONTRADICT EACH OTHER ON THE SAME TABLE.*** One demands every live row
+appear in it; the other says only a chosen shrink may. **I am not touching it: the
+resolution is yours, and it is a choice between the table being HARD and the table being a
+waiver list — it cannot be both.** ⌗ *My reading, offered and not applied: a re-baseline
+list is not a view of the register and should not be a HARD table at all.*
+
+### ⛔ ② `check_register_monotone` FIRES ON `PO-78` ON MY BRANCH AND IS GREEN ON `main`, AND THE CAUSE IS ITS WAIVER'S ORDERING. HERE IS THE PATCH
+
+Measured: `rc=0` at `origin/main`, `rc=1` here. It reports
+*"`PO-78` is `2944` chars; it was `852992` at `f5141b139d` (lost `850048`)"* — and
+`f5141b139d` is **my own branch's `r7458` head**. The row on this branch is `main`'s
+collapsed row, exactly as `r7465` wrote it. **Nothing is lost.**
+
+**THE CAUSE, measured rather than guessed.** The waiver is a POSITION in a newest-first
+`git log` listing: the re-baseline's index, and every commit at a **larger index** is
+waived. On this branch the re-baseline `722fcf0e7c` sits at index **`4`** and my
+`f5141b139d` at index **`3`** — *listed newer, so not waived* — while by **ancestry**
+`722fcf0e7c` **is** an ancestor of `f5141b139d`. ⇒ **`git log`'s reverse-chronological
+order is constrained by topology, so a branch commit that DESCENDS from the re-baseline can
+still be listed before it.** Only `5` of the `200` walked commits descend from the
+re-baseline at all.
+
+⇒ ***SO ANY BRANCH THAT WAS OPEN WHEN THE COLLAPSE LANDED CARRIES A PRE-COLLAPSE COPY OF
+THE ROW AT A COMMIT THE WAIVER CANNOT SEE, AND REDS.*** Not just mine — **every** open
+branch on this trunk, until the waiver stops keying on listing order.
+
+**THE PATCH, routed and NOT applied** — the file is yours and it landed this revision:
+
+```python
+#: `commits` is newest-first by DATE, constrained by topology -- so a branch commit that
+#: DESCENDS from the re-baseline can be listed BEFORE it, and a positional waiver misses
+#: it.  Waive by ANCESTRY instead: a walked commit is inside the waived span unless the
+#: re-baseline's own collapse is an ancestor of it.
+waived_out = {}
+for rid, (sha_pref, _why) in DECLARED.items():
+    hit = [c for c in commits if c.startswith(sha_pref)]
+    if not hit:
+        ...                                  # the existing out-of-window note, unchanged
+        waived_out[rid] = None
+    else:
+        waived_out[rid] = hit[0]
+
+# ... and in the walk, in place of the index comparison:
+    for rid, n in rows(blob.stdout).items():
+        reb = waived_out.get(rid)
+        if reb is not None and git('merge-base', '--is-ancestor', reb, sha).returncode != 0:
+            continue                         # off or before this row's re-baselined line
+```
+
+⌗ **And the gate's own head already carries the lesson this is an instance of**: *"a check
+run on one object licenses a conclusion about that object and no other."* **A listing order
+is not an ancestry**, and the waiver asked one to answer for the other. ⌗ *`200` extra
+`merge-base` calls is the cost; it is a plumbing command on commits already loaded.*
+
+⌗ **Both reds are in the ONE standing-down comment on the PR, edited rather than added
+to.** Neither is this branch's, no fix exists to port for either, and the single re-run
+stays unspent because neither job's red is `Q1` alone.
