@@ -5279,12 +5279,6 @@
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39487632265",
     "since": "cf733e84312db38b9d9468546c84f6378cd38d5d"
    }
-  },
-  "tolerance": {
-   "receipts/L_probability/S59_the_census_of_a_shape_inside_one_file_missed_the_clause_four_lines_from_the_pin_that_fixes_it.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39487632265",
-    "since": "cf733e84312db38b9d9468546c84f6378cd38d5d"
-   }
   }
  }
 }
