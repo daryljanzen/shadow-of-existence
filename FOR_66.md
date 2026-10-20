@@ -23267,3 +23267,103 @@ prediction is dead and the row discharges or terminates as written. I would rath
 | measurement runs | **4** (**2–7**) |
 | turns to the result | **3** (2–5) — the frontier's own turns/step for this row |
 | ⚠ a receipt | **none this revision**: the row's step is an account, and a receipt asserting an account I have not yet got would be the `cannot-fail` class this family has now measured four times |
+
+## ✔⛭⛔ `r7463+cc66.101` — **`PO-91` IS WORKED AND IT DOES NOT TAKE EITHER FATE THE ROW OFFERS: THE COUNTERFACTUAL CHART DOES NOT EXIST, THE ASYMMETRY IS INVARIANT, AND THERE *IS* AN OBSERVATIONAL DISCRIMINANT — WHICH IS THE ONE THING I PRICED AT ZERO. ⛔ TWO COST ROWS OUT OF BAND AND THE SCRIPT CAUGHT A BUG OF ITS OWN IN A PLACE THE NUMBER I WAS WATCHING COULD NOT SHOW IT**
+
+Work is in `computations/beyond_the_wall/r7463_cc66_the_vantage_and_the_axis/` — `WALK.md` for the
+account, `vantage.py` for the computation, `vantage_out.txt` for its output. ⌗ **Nothing in it quotes a
+standard result**: the Riemann tensor, the Kretschmann scalar and every orthonormal-frame component are
+built from the metric written in that file, so the conclusion can be distrusted only by distrusting the
+metric.
+
+### ⛭ THE RESULT, AND IT IS A CORRECTION TO HOW THE ROW IS FRAMED
+
+`P2` asks whether the chart's asymmetry is *purely an artefact of the vantage* or whether *the
+vantage-dependence itself encodes something physical about observation*. **Neither, and the reason is that
+both horns assume the vantage is chosen.** It is not: the one place the asymmetry enters — which critical
+point the profile is swept about — is fixed by **the area of a sphere**, which is a measurement.
+
+| ⒜ | the counterfactual chart **H**, the same profile swept about the other critical point, is **inadmissible, not merely disfavoured**: the sweep axis is the locus the `SO(3)` orbit area degenerates at, $A(r)=4\pi r^2$ has its only zero at $r=0$ (double), and the two critical points sit at $A=16\pi M^2$ and $A=0$. **There is no second chart for "an artefact of the vantage" to be an artefact of.** |
+|---|---|
+| ⒞ | the asymmetry is **invariant**, and the invariant is *which sector collapses*: at $z=0$, $\lvert\xi\rvert^2=0$ with $A=16\pi M^2$ — the stationary generator going null; at $z=\pi$, $A=0$ with $K\to\infty$ — the angular 2-sphere. Both read off scalars. ⇒ **the row does NOT terminate as a stated limit**, and the frontier's "likely exit on this corpus's own reading" is the wrong exit |
+| ⒝ | **vacuous as posed, and that is my defect not the row's.** $K$ composed with $r_N$ diverges at $z=\pi$ and with $r_H$ at $z=0$ — measured both ways — but ⒜ says $r_H$ charts nothing, so there is no second spacetime for the swapped answer to be true of. *I wrote ⒝ as a conditional whose condition my own ⒜ denies, so it was unmeasurable the moment it was written.* |
+| ⒟ | ⛔ **a discriminant EXISTS, against my central value.** The falling observer's tidal components, derived and then shown $w$-independent under a radial boost rather than asserted from the type-D property: $R_{\hat t\hat r\hat t\hat r}=-2M/r^3$, $R_{\hat t\hat\theta\hat t\hat\theta}=M/r^3$ ⇒ $-1/4M^2$ and $+1/8M^2$ at $z=0$, both **divergent** at $z=\pi$. **A worldline tells the two critical points apart by measurement, at a speed-independent answer.** |
+
+⛔ **AND WHAT I AM NOT CLAIMING, WHICH IS THE HALF THE ROW ACTUALLY ASKS FOR.** Its discharge condition is
+an account on which the asymmetry predicts something about observation **that the symmetric substrate alone
+does not display.** ⒟ gives the first half. The second needs the substrate's own invariants, and **that the
+substrate is the de Sitter manifold is the corpus's claim — `P3` and the slicing companion — not this
+file's.** The file says so against itself in its own output. ⇒ *A seat closing its own row by computing
+another paper's object is the reach this corpus punishes, so that step is routed and not taken.*
+
+⚠ **AND THE INSTRUMENT CAUGHT A BUG OF MINE IN THE ONE PLACE THE NUMBER I WAS WATCHING COULD NOT SHOW IT.**
+My first orthonormal frame had $e_{\hat t}$ and $e_{\hat r}$ **swapped**. $R_{\hat t\hat r\hat t\hat r}$ is
+*blind* to that swap — the two wrong factors cancel in exactly that component — so it printed the right
+$-2M/r^3$ while $R_{\hat t\hat\theta\hat t\hat\theta}$ carried a spurious $(2M-r)^2$ and
+$R_{\hat r\hat\theta\hat r\hat\theta}$ a spurious $1/(2M-r)^2$. ⌗ *I was watching the component that could
+not see the error.* The comment recording it is in the file at the line that caused it, because a bug found
+by a sibling quantity is worth more than the fix. ⚠ **A second one is recorded against the argument rather
+than the code**: the easy form of ⒜ calls $r=0$ a fixed point of the spacetime's isometry group, and on the
+chart's own domain $r>0$ the solution set of $A=0$ is **empty** — the axis is a boundary locus the orbits
+shrink toward, and it is `P2`'s *spatial* sweep that has an axis in the ordinary sense.
+
+### ⛔ THE PRICE AGAINST THE MEASUREMENT — TWO ROWS OUT, BOTH WITH A NAMED CAUSE
+
+| what | predicted (band) | measured | verdict |
+|---|---|---|---|
+| `WALK.md` | 180 (120–260) | **120** | ✔ inside, at the floor |
+| the computation script | 150 (90–250) | **265** | ⛔ **over** |
+| wall time | 20 s (5–120) | **~2.3 s** | ⛔ **under** |
+| measurement runs | 4 (**2–7**) | **5** | ✔ inside |
+| turns to the result | 3 (2–5) | **1** | ⛔ **under** |
+| a receipt | **none**, pre-registered as a refusal | **none** | ✔ as declared |
+
+⛔ **The script is over because the price was for a script that ASSERTS the standard components and the
+script I wrote DERIVES them.** Three additions did it, and each is why the result can be trusted: the boost
+is applied to every component and simplified rather than waved at as type-D; the frame bug is recorded at
+its own line; and the fixed-point subtlety is computed rather than asserted. *A price written for an
+instrument that quotes cannot cover one that proves.*
+⛔ **The wall time is under because I priced a general-metric Christoffel loop and the metric is diagonal.**
+I wrote the $O(n^4)$ loops, priced them at what they cost on a dense metric, and did not notice that almost
+every term is zero before `simplify` sees it. ⌗ *That is the same error as the `turn_gates.sh` row in `.98`
+— pricing the shape of the code rather than the shape of the input — and it is now twice.*
+⛔ **And turns is under, which is not a success either**: I priced 3 and took 1 because ⒜ turned out to
+settle ⒝ and ⒟'s *framing* in one step, which a price written before the computation could not see. ⇒ *Two
+unders and one over out of five rows. The band is doing its job; my central values on anything that depends
+on the shape of the input are not.*
+
+### ⌗ WHAT IS OWED TO YOU, AND IT IS A ROW EDIT I WILL NOT MAKE
+
+`THE_REGISTER.md` carries `sources: [observer]` and `THE_FRONTIER.md` is generated from it, so **`PO-91`'s
+row is yours to amend and not mine.** What the amendment has to carry, if you take this:
+
+- the row does **not** terminate as a stated limit — ⒞ is an invariant, not a label;
+- it does **not** discharge either — the substrate half is untouched;
+- what is left is **one computation**, not a question: whether the substrate's own invariants fail to
+  display the tidal discriminant. That is the slicing companion's object, so it is a row whose remaining
+  step belongs to whichever seat holds that paper;
+- and the row's **framing** needs the correction: both horns presuppose a chosen vantage, and the asymmetry
+  is downstream of a measurement rather than upstream of one.
+
+### ⌗ THE PRE-PUSH GATE FOR THIS PUSH, DERIVED AND RUN — FIFTEEN GATES, ONE RED, AND THE RED IS NOT MINE
+
+The diff is this file plus a new `computations/beyond_the_wall/` directory, so the reader set is the two
+greps and not a recollection: `grep -lF FOR_66` and `grep -ln 'beyond_the_wall\|WALK'` over
+`corpus/check_*.py scripts/*.py`. **Fifteen gates after the cost exclusions, all run:**
+
+```
+check_banked_config  0/4s     check_depth  0/9s      check_figures_pinned  0/1s
+check_frontier_delta 0/0s     check_knob_shadows 0/1s check_marker_transposition 0/63s
+check_open_item_coherence ⛔1/0s                      check_order_acknowledged 0/0s
+check_pdf_current    0/52s    check_pin_board 0/43s   check_pins_adjudicated_on_mint 0/1s
+check_revision_collisions 0/208s                      check_tilt_pins 0/126s
+check_theatre_currency 0/0s   check_paper_pins_not_comment_only 0/1s
+```
+
+⛔ **`check_open_item_coherence` is red, and it is red on `origin/main` too** — run in a pristine detached
+worktree at `99948e6bb`, `rc=1`. ⌗ *And the gate names its own cause without being asked:* **7 live rows
+were opened after the `r7371` census** — `PO-87`, `PO-88`, `PO-89`, `PO-90`, **`PO-91`**, `PO-92`, `PO-93` —
+so the instrument cannot see whether a paper states them, and its printed remedy is *"a census refresh
+(`69` reads the papers), never a declaration."* ⇒ **Not mine, not portable, and emphatically not to be
+cleared by declaring `PO-91` infrastructure** — which is the one move the gate forbids in its own output
+and which would have been available to me precisely because I am the seat that just worked that row.
