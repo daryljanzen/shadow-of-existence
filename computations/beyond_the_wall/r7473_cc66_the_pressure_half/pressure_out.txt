@@ -1,0 +1,117 @@
+
+==============================================================================
+  STEP 1 -- P16's INTERIOR, WRITTEN DOWN AND THEN CHECKED
+==============================================================================
+  a(eta) = A*(1 - cos(eta))/2 + sqrt(B)*sin(eta)
+  a'' + a - A/2 = 0      solves the driven oscillator: True
+  a(0) = 0   -- so eta = 0 IS the branch point
+
+  even part of a : A*(1 - cos(eta))/2
+  odd  part of a : sqrt(B)*sin(eta)
+  ⇒ the even part carries A (dust) alone   : True
+  ⇒ the odd  part carries B (radiation) alone: True
+  ⌗ That is I14's split, reproduced here from the solution rather than cited.
+
+==============================================================================
+  STEP 2 -- ⒝ DOES THE CONFORMAL-TIME PARITY REACH THE CROSSING?
+==============================================================================
+  The crossing's structure is set by the ORDER OF THE ZERO of a at eta = 0,
+  because that is what decides whether the curve crosses or touches.
+  interior                               a(eta) near 0   order   parity of a
+  --------------------------------------------------------------------------
+  dust only        (B=0)                    A*eta**2/4       2   EVEN
+  radiation only   (A=0)    sqrt(B)*eta*(6 - eta**2)/6       1   ODD
+  P16's own: dust + radiationeta*(A*eta/4 - sqrt(B)*eta**2/6 + sqrt(B))       1   NEITHER
+
+  ** ⒝ ANSWERED, AND MY PRE-REGISTERED ANSWER IS WRONG.  The two parities are
+     NOT independent.  The order of the zero at the branch point depends on
+     the SPECIES CONTENT: dust alone gives a DOUBLE zero (the curve touches
+     a = 0 and returns, a even), while any radiation at all gives a SIMPLE
+     zero (the curve crosses, a neither even nor odd).  Radiation's odd
+     amplitude is exactly what makes the zero transversal. **
+
+  ⛔ AND IT CORRECTS r7465+cc66.10's ROUTE, THOUGH NOT ITS RESULT.  That
+     revision took the crossing parity from the VACUUM slicing curve,
+     r = alpha sin(theta), which is ODD with a simple zero -- and then needed
+     |r| to keep the dust density positive.  P16's dust interior has its own
+     scale factor with a DOUBLE zero, so for dust alone a never goes negative
+     and the density is even WITHOUT the absolute value.  The conclusion
+     stands and is now reached twice by different routes; the absolute value
+     was load-bearing only for the vacuum curve's parametrisation.
+
+==============================================================================
+  STEP 3 -- ⒜ THE STRESS-ENERGY, PER INTERIOR, BECAUSE IT DEPENDS ON THE INTERIOR
+==============================================================================
+  Perfect fluid, comoving: T^mu_nu = diag(-rho, p, p, p), so T^r_r and
+  T^theta_theta are both the scalar p.  Dust scales as |a|^-3, radiation as
+  |a|^-4, and radiation's p is rho/3.
+
+  ⛔ A FIRST DRAFT OF THIS STEP ASSERTED, IN PROSE, THAT EVERY SCALAR IS
+     EVEN 'whatever the species content', AND ITS OWN TABLE SAID OTHERWISE.
+     The table was right.  |a| is even only when a is even OR odd; with both
+     species a has neither parity (STEP 2), so |a| has none and no scalar
+     built on it does.  The verdict is therefore per interior:
+
+  interior                        rho_dust     rho_rad       p_rad    rate d|a|/deta
+  ----------------------------------------------------------------------------------
+  dust only      (B=0)                EVEN         n/a         n/a               ODD
+  radiation only (A=0)                 n/a        EVEN        EVEN               ODD
+  P16's own: dust+radiation        NEITHER     NEITHER     NEITHER           NEITHER
+
+  ** ⒜ ANSWERED, AND MY PRE-REGISTERED ANSWER IS RIGHT ONLY FOR A SINGLE
+     SPECIES.  For a one-species interior T^r_r and T^theta_theta are EVEN,
+     as priced -- and the reason priced was right too: p is a SCALAR in the
+     comoving frame, so it carries no radial index for the crossing's sign
+     flip to act on.  For P16's OWN interior they are NEITHER, because the
+     reflection does not map the member to itself at all (STEP 5). **
+
+==============================================================================
+  STEP 4 -- THE CONTROL: a component whose parity IS the other one
+==============================================================================
+  If EVEN were an artefact of taking absolute values, a component that
+  genuinely flips would come out even too.  Read on the two interiors where
+  the parity is defined at all:
+    dust only      (B=0)     scalar: EVEN     rate: ODD      ✔ they differ
+    radiation only (A=0)     scalar: EVEN     rate: ODD      ✔ they differ
+
+  ** THE CONTROL BITES on both: the rate is ODD where the scalars are EVEN,
+     so the even answer is not an artefact of the absolute value. **
+
+==============================================================================
+  STEP 5 -- ⒞ AND ⒟: THE INVOLUTION, AND WHAT DISCHARGES
+==============================================================================
+  For the DUST-ONLY interior the map is exactly r7465+cc66.10's:
+      (rho(eta), p(eta), v(eta))  |->  (rho(-eta), p(-eta), -v(-eta))
+  with rho and p even and v odd, so applying it twice is the identity: an
+  involution, hence a bijection.  ** ⒞ holds for dust. **
+
+  ⛔ FOR P16's OWN INTERIOR IT DOES NOT FOLLOW, AND THIS IS THE FINDING.
+     With radiation present a has a SIMPLE zero and no definite parity
+     (STEP 2), so eta -> -eta is not a symmetry of the solution: it maps
+     P16's interior to a DIFFERENT member of the same family, the one with
+     the radiation amplitude reversed in sign.
+       a(-eta) = -A*cos(eta)/2 + A/2 - sqrt(B)*sin(eta)
+       which is a(eta) with sqrt(B) -> -sqrt(B): True
+     ⇒ the reflection is still a BIJECTION -- it is invertible, and the
+       scalars are even -- but it is an involution on the FAMILY and not on
+       the member: it carries (A, +sqrt B) to (A, -sqrt B).
+
+  ** ⒟ ANSWERED, AND MORE NARROWLY THAN PRICED: the crossing carries P16's
+     interior through, and nothing is lost -- but what it hands out the other
+     side is the SIGN-REVERSED radiation amplitude, not the same member.
+     So the discharge holds, and the crossing is NOT species-blind. **
+
+==============================================================================
+  STEP 6 -- ⒠ IS ANY SECTOR LEFT FREE BY THE CROSSING?
+==============================================================================
+  60's r7462: the papers name sectors the crossing leaves free, the
+  composition first.  Measured here:
+    - the COMPOSITION is fixed on the APPROACH, not at the crossing: P16
+      sec:peak has total dissociation erase it before the branch point, so
+      it is free of the progenitor and not free at the crossing.
+    - the RADIATION AMPLITUDE's SIGN is the one thing the crossing itself
+      does not preserve (STEP 5).  It is not 'free' -- it is DETERMINED, and
+      reversed.
+  ⇒ ** ⒠ ANSWERED AS PRICED in its conclusion -- no sector is left FREE by
+     the crossing -- but the reason is sharper than the price gave: the one
+     thing the crossing changes is determined by it, not left open. **

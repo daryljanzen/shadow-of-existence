@@ -23852,3 +23852,37 @@ nothing measurable while they wait: I read `origin/main` alone and treat a merge
 work, and this revision is the proof, having reached me that way. ⇒ **Taking the branch ④ itself provides:
 say so, and `69` asks Daryl.** *The same answer went to `66` four times with the same reason; `69` is the
 first to offer the fallback, and I am taking it rather than restating the argument.*
+
+## ⚑⛔ `r7473+cc66.12` — **THE PRESSURE HALF: THE CROSSING REVERSES THE RADIATION AMPLITUDE'S SIGN, SO IT IS *NOT* SPECIES-BLIND — AND THE PRICE DIED WHERE IT SAID IT WOULD**
+
+`PO-88`'s pressure half is done and it came out the other way from the price. `P16`'s interior
+$a=(A/2)(1-\cos\eta)+\sqrt B\sin\eta$ solves its own stated equation and `I14`'s species split is
+re-derived from it rather than cited, and then the thing the pre-registration named as the one it could not
+compute in advance decides the result: **the two parities are not independent.** The **order of the zero**
+at the branch point is set by the species content — **2** for dust alone, where $a$ is even and the curve
+*touches* zero and returns, **1** for radiation alone and **1** for the mixture, where $a$ has no parity at
+all — so radiation's odd amplitude is exactly what makes the zero transversal. And then
+$a(-\eta)\equiv a(\eta)|_{\sqrt B\to-\sqrt B}$ **identically**: the reflection is not a symmetry of `P16`'s
+member but an involution on the **family**, handing out the **sign-reversed radiation amplitude**. So
+$T^r{}_r=T^\theta{}_\theta=p$ is **even on a single-species interior** — as priced, and for the reason
+priced, since $p$ is a scalar with no radial index for the sign flip to act on — and **neither** on `P16`'s
+own, defeated not by the index structure but by the member not mapping to itself. ⇒ **What it narrows:**
+the row **discharges for `P16`'s own interior**, nothing is lost at the crossing because the map is still
+invertible, but the crossing is **species-selective**, which is the opposite of what the price expected and
+is the live form of the filter question `.10` had closed for dust. ⌗ It also **corrects `.10`'s route
+without moving its result**: that revision took the parity from the *vacuum* curve $r=\alpha\sin\theta$, a
+simple **odd** zero, and so needed $\lvert r\rvert$ to keep the density positive — whereas `P16`'s dust
+interior has a **double** zero, never goes negative, and needs no absolute value, so the conclusion now
+stands by two routes. ⒠ holds as priced for a sharper reason: no sector is left **free** by the crossing —
+the composition is fixed on the **approach**, erased by total dissociation before the branch point, and the
+radiation amplitude's sign is **determined and reversed** rather than open. ⛔ **Scored honestly: two of
+five priced answers held, one half, two wrong — and the two wrong are ⒝ and ⒞, which the price flagged and
+said it was writing to be killed, so this is the flag working rather than the same miss again.** ⚠ One
+defect of mine, caught by my own table: a first draft asserted in prose that every scalar is even *"whatever
+the species content"* while the table beside it printed `NEITHER`; the table was right and the note now
+sits in the step that made the claim. **What is next:** whether the sign reversal has any observable
+consequence — nothing here says it does, the magnitude being untouched — priced in its own file first.
+⌗ Receipt: 20 gates, all pass, two controls. `WALK.md` **88** lines against the lowered central of 100
+(band 70–180), script **168** against 180, wall **~17 s** against 5 (band 1–60), runs **3** against 4,
+turns **1** against 2 — *five of five cost rows inside band for the first time, with the `WALK` central
+corrected last revision.*
