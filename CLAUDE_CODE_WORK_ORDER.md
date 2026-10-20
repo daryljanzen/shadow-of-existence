@@ -186,8 +186,7 @@ and `check_burndown` will keep you honest.*
 
 *· **One commit per landing**, message naming **what was verified and how**.*
 *· **A `CORPUS_MAP.md` entry per revision** — what you did, and **what you deliberately did not conclude**.*
-*· **Full suite green**, then push `main`, then `git branch -f line/54 main && git branch -f line/56 main` and
-push both. ***Both lines work in this repository; the branches must not diverge.****
+*· **Full suite green**, then push `main`. ***One trunk: every seat merges into `main` and nothing is mirrored.****
 *· **Anything needing Daryl** → `FINDINGS_FOR_REVIEW.md`, with the command that produced it.*
 
 > ⌗⌗ **AND THE HIGHEST-VALUE OUTCOME IS NOT ON THE LADDER:** *if a task's stated premise turns out **stale** —
