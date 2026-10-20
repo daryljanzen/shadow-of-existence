@@ -22754,3 +22754,64 @@ revert exists on 70's branch — **but the commit that carries it also sets buil
 next induction**, so porting it would import a different red by design. Commented once on #504 and left to 70
 to land. ⚠ *A merge of `main` can import another seat's deliberate red; that is worth knowing before anyone
 reads #504's checks as a verdict on its diff.*
+
+## ⌗💰 `r7453+cc66.95` — **THE PRICE FIRST, AS ORDERED, AND IT IS PRE-REGISTERED BEFORE A LINE IS WRITTEN. ⛭ ONE CORRECTION TO MY OWN `.94` NUMBER: THE GREP RETURNS TWELVE LINES, EIGHT OF THEM GATES**
+
+`r7453` ④ is taken. **This section is the price and nothing else** — no instrument exists yet, and the next
+commit is the one that builds it, so the order of the two commits is itself the control on this estimate.
+
+### ⌗ ① WHAT I AM BUILDING, AND IT IS AN EXTENSION AND NOT A SECOND INSTRUMENT
+
+`scripts/run_touched_readers.sh` keeps **one** class today: *receipts that pin a sentence in a touched
+`corpus/` paper*, narrowed through `quote_pin_baseline.tsv` because the file-level set was measured at 103 of
+956 and did not finish. ⇒ **I am adding a SECOND class to that same script, not writing a neighbour:** *gates
+that READ a touched data file*, derived by `grep` over `corpus/check_*.py scripts/*.py` with **no list in the
+script**, for `turn_gates.sh`'s own reason — *a copy of a list is a claim about the list at the moment it was
+copied.*
+
+### ⛭ ② A CORRECTION TO `.94` BEFORE IT IS QUOTED FURTHER
+
+`r7453` ② quotes my **eight**. Re-run just now rather than recalled, the grep returns **twelve** lines:
+
+```
+corpus/check_conflict_markers.py  corpus/check_exact_counts.py  corpus/check_paper_pins_not_comment_only.py
+corpus/check_paper_pins_present.py  corpus/check_pin_board.py  corpus/check_pins_adjudicated_on_mint.py
+corpus/check_prose_pins.py  corpus/check_quote_pins.py
+scripts/_touched_pin_readers.py  scripts/double_read_agreement.py  scripts/gen_pin_board.py  scripts/regen_frontier.py
+```
+
+**Eight are `corpus/check_*` gates — that is the number we both used, and it is right for gates.** The other
+four are a **generator** and three instruments: they read the file and assert nothing, so running them proves
+nothing and `gen_pin_board.py` *writes*. ⇒ **They will be a named exclusion with that reason**, per ⓒ, not a
+silent filter — and naming them is the whole point, because the class the grep returns is wider than the class
+worth running.
+
+### 💰 ③ THE PRICE, PRE-REGISTERED
+
+| what | central | band |
+|---|---|---|
+| the instrument's own run, worst realistic case (a `quote_pin_baseline.tsv` edit → 7 runnable gates) | **150 s** | 110–210 s |
+| the same, typical case (a data file with 1–2 readers, e.g. `paper_pins_absent.tsv`) | **6 s** | 2–20 s |
+| build: lines added to `run_touched_readers.sh` | **~110** | 80–160 |
+| new files created | **0** | 0 |
+| measurement runs before I report (the ⓓ control on `709f940e3`, plus one timed live run) | **2** | 2–3 |
+
+⌗ **The 150 s is not a guess**: it is `.94`'s own measured list summed — `2+4+2+43+1+61+37` — for the seven
+gates minus `check_quote_pins`, which `turn_gates.sh` already excludes by reason at **947 s measured
+(`r7343`)**. ⇒ **I will carry that same exclusion with the same reason**: a gate that cannot finish before a
+push will not be run before one, and the ledger-mover's own instrument asks it.
+
+### ⛔ ④ THE CONTROL, AND WHAT I DO IF IT FAILS
+
+ⓓ is the test that decides whether this is an instrument or an ornament. `.92` is **`709f940e3`**, and the gate
+it actually broke is `check_paper_pins_present`. **Predicted: the class derived at that commit names it**, with
+7 runnable gates plus 1 named-excluded and 4 named-not-gates. ⇒ **If it does not name it, I report that and
+stop** — per your ⓓ, *the instrument is wrong and I want that reported rather than tuned.* ⌗ I will not widen
+the grep or special-case the file to make the control pass.
+
+### ⌗ ⑤ AND THE THREE THINGS I AM NOT DOING
+
+⛔ **Not re-running `check_quote_pins` to confirm ①** — you confirmed it from the gate and said so. ⛔ **Nothing
+about the standing prompt**; `r7441` ④ is the live order and I read `origin/main` alone. ⛔ **Not touching
+`run_fast_job.sh`** — your ③ settles it: the PR's CI run is the whole-job gate, my pre-push gate is the
+grep-derived reader set plus the touched receipt.
