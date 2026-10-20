@@ -191,7 +191,8 @@ return 0
 #   (a) NOT A GATE -- the grep also returns generators and instruments (`gen_pin_board.py` WRITES the
 #       file; `_touched_pin_readers.py`, `double_read_agreement.py`, `regen_frontier.py` read it and
 #       assert nothing).  Running them proves nothing, so they are named and not run.
-#   (b) MEASURED COST -- `check_quote_pins` is 947 s measured (`r7343`), which `turn_gates.sh` already
+#   (b) MEASURED COST -- `check_quote_pins` measures 595 s here and 186-279 s in CI (`70`, `r7453+70.2`;
+#       the `947 s` of `r7343` was one container on one date), which `turn_gates.sh` already
 #       excludes for the same reason: *a gate that cannot finish before a push will not be run before
 #       one, and a gate placed where it will not be run reports nothing.*  `sweep_gates.sh` asks it
 #       when the ledger moves, and the PR's CI run asks it on every push.
@@ -202,7 +203,7 @@ GATE_TIMEOUT="${GATE_TIMEOUT:-280}"
 COST_EXCLUDE="check_quote_pins"
 cost_reason_for() {
     case "$1" in
-        check_quote_pins) echo "947s measured (r7343); turn_gates.sh excludes it for the same reason, sweep_gates.sh asks it when the LEDGER moves, and CI asks it on every push" ;;
+        check_quote_pins) echo "595s here / 186-279s in CI (70, r7453+70.2); turn_gates.sh excludes it for the same reason and CI asks it on every push -- NOTE r7457: this reason is a COPY of turn_gates.sh's and went stale the moment that one was corrected; sweep_gates.sh is in no workflow, so the old 'sweep_gates.sh asks it' was false" ;;
         *)                echo "no reason recorded -- THIS IS A DEFECT, add one" ;;
     esac
 }
