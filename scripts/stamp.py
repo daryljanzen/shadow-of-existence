@@ -183,7 +183,7 @@ def main():
     #   kind 2 stated limit if it carries no CR-specific content), so it is bounded on both ends.
     # ⛭ r7447: PO-93 is BOUNDED -- its discharge is one cluster carrying two independent
     #   measurements, named exactly, and the reading of them is already built.
-    BOUNDED = {'PO-4', 'PO-5', 'PO-6', 'PO-46', 'PO-92', 'PO-93'}  # ⌗ r6685: PO-46 asks a sharp question --
+    BOUNDED = {'PO-4', 'PO-5', 'PO-6', 'PO-46', 'PO-92', 'PO-93', 'PO-94'}  # ⌗ r6685: PO-46 asks a sharp question --
     # a propagating Dirac field on the polarised member with its characteristic cone computed
     # as P11's was -- so it is bounded, and it is gated by nothing.
     # ** r2729: UNBOUNDED WITHDRAWN.  *** The word was never in the register -- it was written
@@ -204,7 +204,7 @@ def main():
     # ⌗ r6685: PO-46 closes BY CONSTRUCTION -- a propagating Dirac field built on the chiral
     #   member, with its characteristic cone computed as P11's was -- so it is a definedness
     #   row and not a prediction one; no run against the sky can settle it.
-    DEFINEDNESS = ('PO-2', 'PO-4', 'PO-5', 'PO-6', 'PO-46', 'PO-92', 'PO-93')
+    DEFINEDNESS = ('PO-2', 'PO-4', 'PO-5', 'PO-6', 'PO-46', 'PO-92', 'PO-93', 'PO-94')
     PREDICTION = ('PO-7',)
     print(f'**KIND: {len(DEFINEDNESS)} DEFINEDNESS ({", ".join(DEFINEDNESS)}) · '
           f'{len(PREDICTION)} PREDICTION ({", ".join(PREDICTION)})**')

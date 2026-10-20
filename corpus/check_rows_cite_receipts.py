@@ -36,7 +36,7 @@ ROOT = os.path.abspath(os.path.join(HERE, '..'))
 # ⛭ r7447: PO-93 entered on opening, at 1 -- the P3 receipt that prices which mass sets the
 #   radius.  It has no measurement of its own and will not until a sample exists; the floor rises
 #   when the row does its own work, never to let a citation lapse.
-FLOOR = {'PO-93': 1, 'PO-92': 2, 'PO-46': 1, 'PO-5': 17, 'PO-10': 21, 'PO-6': 7, 'PO-7': 5, 'PO-1c': 1}
+FLOOR = {'PO-94': 0, 'PO-93': 1, 'PO-92': 2, 'PO-46': 1, 'PO-5': 17, 'PO-10': 21, 'PO-6': 7, 'PO-7': 5, 'PO-1c': 1}
 DEFAULT = 1
 
 CITE = re.compile(r'`([A-Za-z0-9_]+)`')
