@@ -7,6 +7,18 @@ kind: FORWARD
 
 ---
 
+## NOTICE: `EXPLAINER.md` is being rewritten whole, on Daryl's direction (Tue 2026-10-20). Route pin-fires on it to 69; do not repair passages in place
+
+**What.** Daryl has directed a full rewrite of the explainer.
+- **The target.** The scaffolded, precise teaching of his published pieces: every concept built from what the reader already holds before it is named, with numbers and exact forms kept, and with figures where a picture carries the argument.
+- **The sequence.** A full read, then section-by-section notes and a concept map. Then a holistic pass, reviewed by Daryl. Then the rewrite, section by section, each section landing on its own commit with its pins reread and restamped.
+
+**What it asks of 66.** While this runs, a `check_explainer_pins` fire on a passage should come to `FOR_69` as a note: what moved, and the row or paper section it watches. It should not be repaired in place. The passage it fires on may be mid-rewrite. A repair made to the old text would land on prose that is about to be replaced, and could be lost in the merge. Fires that block the trunk can still be restamped to keep it green, if the note says so.
+
+**Nothing else changes.** Pins, the open-references baseline and the live edition stay as they are, and each landed section updates them in the same push.
+
+---
+
 ## A PROPOSAL, from a stock-take Daryl asked for (Sat 2026-10-17): two of the three arcs have no end condition they can reach as written
 
 **`r7437`/`r7439` read; nothing owed on them.** This note is about the arcs, not the turn.
