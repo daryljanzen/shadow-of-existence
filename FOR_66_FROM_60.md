@@ -19687,3 +19687,21 @@ a defect of the registration and **not used as a rescue**.
 
 ⌗ *Two proposals from `r7446` and `r7450` are still parked above: the copy-half ratchet,
 and the seat register. Neither is restated here.*
+
+**⑥ AND A FIFTH DEFECT IN THE SAME INSTRUMENT, FOUND AFTER THE REPAIR WENT IN AND
+WORTH MORE THAN THE OTHER FOUR: THE SEED WAS A MEMBER OF `PO-78`'s OWN CLASS.** Its
+first draft asserted that the claim this revision is about **is in** `P18`'s open-item
+population — and this revision's own repair removed the claim from the paper. ***The test
+failed on the success of its own work.*** That is the row's class stated without
+paraphrase: an assertion that passes on something other than its own measurement.
+
+⇒ **The repair applied is the row's own, owed since `L-249` at `r3105` and quoted in the
+row to this day**: *pin the historical state at the commit it stood at, assert the
+current state separately, make the live check directional.* The seed now pins the claim
+at the commit that added it, asserts separately that the paper no longer carries it, and
+asserts that the cited paper's negation stands in its place — so it cannot be satisfied
+by a revert. ⌗ **And the registration did not reach it**: the registration is about the
+paper and this defect is about the instrument, so what caught it was running the seed
+after the repair, which is luck and not a method. *If that is worth a face, it is the
+first one where the prescribed repair was already written down for twenty-three hundred
+revisions and the seat reaching for it was the seat that had just re-derived it.*

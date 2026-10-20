@@ -476,16 +476,26 @@ def seed():
     ck('a figure still matches itself', shares_figure(['1.045'], "spectrum's 1.045,") == ['1.045'])
     ck('the cite key resolves to the cited paper',
        cmap.get('JanzenCRcosmology') == 'corpus/CR_cosmology.tex')
-    target = [n for n, t in flat.items() if t.startswith('Which term of the projection')]
-    ck('the claim this revision is about is in the population', len(target) == 1)
-    if target:
-        raw = [x for n, x, _ in sents if n == target[0]][0]
-        para = [pa for n, _, pa in sents if n == target[0]][0]
-        ck('the claim is one sentence, not a line fragment', raw.strip().endswith('computation.'))
-        ck('its source resolves through its paragraph, not its own sentence',
-           not cited(raw) and 'JanzenCRcosmology' in cited(para))
-        ck('and its own figures are reachable at paragraph scope',
-           '1.045' in figures(para) and '0.996' in figures(para))
+    # ⌘ THE SEED'S OWN FIRST DRAFT WAS A MEMBER OF THE CLASS THIS ROW IS ABOUT.
+    #   It asserted the claim is IN P18's open-item population -- and the revision's own
+    #   repair removed it, so the test failed on the SUCCESS of its own work.  That is
+    #   PO-78's class verbatim: an assertion that passes on something other than its own
+    #   measurement, breaking when the sentence it pinned stopped saying what it said.
+    #   The repair is the row's own, owed since L-249 at r3105: PIN THE HISTORICAL STATE
+    #   AT THE COMMIT IT STOOD AT, ASSERT THE CURRENT STATE SEPARATELY.
+    CLAIM = 'Which term of the projection makes it is the open computation.'
+    PIN = '4e82b053'          # the commit that added the claim; in main's history
+    hist = os.popen('git -C %s show %s:corpus/CR_synthesis.tex 2>/dev/null'
+                    % (ROOT, PIN)).read()
+    ck('HISTORICAL, pinned at %s: P18 carried the claim' % PIN, CLAIM in hist)
+    ck('CURRENT, asserted separately: P18 no longer carries it',
+       CLAIM not in read(P18_FILE))
+    ck('CURRENT: and it carries the cited paper\'s negation in its place',
+       'no single term is the channel' in read(P18_FILE))
+    ck('the claim parses as ONE sentence out of the pinned text, not a line fragment',
+       any(x.strip() == CLAIM for _n, x, _p in
+           [(0, t, 0) for t in SENT_END.split(' '.join(
+               [l for l in hist.split('\n') if l.strip() and not l.startswith('%')]))]))
     ck('a closure is not counted as an open item',
        not any('settled negatively rather than left open' in t for t in flat.values()))
     ck('the tabular preamble is not counted as a claim',

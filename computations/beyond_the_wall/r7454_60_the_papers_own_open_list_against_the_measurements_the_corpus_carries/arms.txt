@@ -117,7 +117,23 @@ FOUR DEFECTS OF THIS SEAT'S OWN, EACH RECORDED RATHER THAN QUIETLY REPAIRED
        population was counting closures as open items -- this family's shape pointed the
        other way.
 
- ⌗ THREE OF THE FOUR ARE ONE SHAPE: A POPULATION WHOSE UNIT WAS NARROWER OR WIDER THAN
+ (v)   AND THE FIFTH IS THE ONE THAT MATTERS MOST, BECAUSE IT IS A MEMBER OF THE CLASS
+       `PO-78` EXISTS FOR.  The seed's first draft asserted that the claim this revision
+       is about IS IN `P18`'s open-item population -- and this revision's own repair
+       removed it from the paper.  ** The test failed on the SUCCESS of its own work. **
+       That is the row's class verbatim: an assertion that passes on something other
+       than its own measurement, breaking when the sentence it pinned stopped saying
+       what it said.  ⌗ The repair applied is the row's OWN, owed since `L-249` at
+       `r3105` and quoted in the row to this day: ** pin the historical state at the
+       commit it stood at, assert the current state separately. **  The seed now pins
+       the claim at the commit that added it, asserts separately that the paper no
+       longer carries it, and asserts that the cited paper's negation stands in its
+       place -- so it is directional and cannot be satisfied by the paper reverting.
+       ⌗ Caught by running the seed after the repair rather than before, which is luck;
+       the registration did not reach it because the registration is about the paper and
+       this is about the instrument.
+
+ ⌗ THREE OF THE FIRST FOUR ARE ONE SHAPE: A POPULATION WHOSE UNIT WAS NARROWER OR WIDER THAN
    ITS SUBJECT WHILE ITS LOGIC WAS CORRECT.  That is the class `PO-78` carries, produced
    four times inside one instrument built to look for it, and caught by the registration
    rather than by any gate.  ** The generator is not a past error of this seat's.  It is
@@ -128,6 +144,6 @@ REPRODUCING
 
   python3 open_list.py            the VOID run, with its controls, 1.3 s
   python3 open_list.py --sound    what the record states, nothing inferred, 1.0 s
-  python3 open_list.py --seed     11 assertions over the four repairs, 0.4 s
+  python3 open_list.py --seed     11 assertions over the five repairs, 0.4 s
 
   Nothing here reads a network or a datum.  Every quotation carries its file and line.

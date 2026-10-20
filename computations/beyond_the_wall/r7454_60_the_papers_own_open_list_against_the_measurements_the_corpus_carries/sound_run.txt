@@ -5,7 +5,7 @@ r7454 SOUND -- WHAT THE RECORD STATES, WITH NOTHING INFERRED FROM A COUNT
 ⚑ Ⓐ  THE TABLE PARSES TO 7 ROWS.  P18 says seven, twice.  HIT.
 
 ⚑ THE ONE THING THIS CENSUS CAN ASSERT MECHANICALLY, AND IT IS A PARSE AND NOT
-  A VERDICT: ** 5 of P18's 19 open-item claims cite NOTHING, in the claim's own
+  A VERDICT: ** 5 of P18's 18 open-item claims cite NOTHING, in the claim's own
   sentence or anywhere in its paragraph. **  An uncited claim about what is open
   cannot be checked against a source by any instrument that follows citations --
   not by a better locator, and not by a reader either, without guessing which
@@ -14,7 +14,7 @@ r7454 SOUND -- WHAT THE RECORD STATES, WITH NOTHING INFERRED FROM A COUNT
     ⊢ corpus/CR_synthesis.tex:2716  The relative size is a number rather than an adjective. Seven open items stand against roughly seventy-four results ca
     ⊢ corpus/CR_synthesis.tex:2774  The acoustic rejection of is the largest open item in the paper , and it is open in the strongest sense.
     ⊢ corpus/CR_synthesis.tex:2774  The instrument is built, controlled against a known answer and converged, with the perturbations on the leaf congruenc
-    ⊢ corpus/CR_synthesis.tex:2963  That is the unpaid column, and it is short because the register is long --- not because anything has been left out. li
+    ⊢ corpus/CR_synthesis.tex:2967  That is the unpaid column, and it is short because the register is long --- not because anything has been left out. li
 
 ==============================================================================
 Ⓔ  THE SEVEN AGAINST THE REGISTER'S LIVE ROWS
@@ -34,9 +34,10 @@ r7454 SOUND -- WHAT THE RECORD STATES, WITH NOTHING INFERRED FROM A COUNT
 ==============================================================================
 Ⓖ  DOES ANY PAPER BUT P18 ASSERT THE TERM COMPUTATION IS OPEN?
 ==============================================================================
-  ⊢ corpus/CR_synthesis.tex:2905  Which term of the projection makes it is the open computation.
+  ⊢ corpus/CR_synthesis.tex:2905  Which term of the projection makes it is not open: projected separately, every term's source ratio is at or below 0.992 and every 
+  ⊢ corpus/appendix_receipts_corpus.tex:1  **AND `r7433` `(1)` ORDERS THE SMALLER OF THE TWO HALVES `r7434` LEFT**: *make the resolver distinguish the three states, because 
 
-  ** 1 occurrence(s), in 1 paper(s). **
+  ** 2 occurrence(s), in 2 paper(s). **
 
 ==============================================================================
 THE ADJUDICATION.  THIS SEAT'S, NOT THE INSTRUMENT'S, AND LABELLED AS SUCH.
@@ -98,4 +99,4 @@ ADJUDICATED ③ -- the instrument's own verdict on the instrument.
   before any code existed, which is the only reason the void run's disagreement with it
   was visible at all.
 
-price 1.0s
+price 1.1s

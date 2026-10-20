@@ -3,10 +3,10 @@ SEED
   ✓ a figure is a token, not a substring: 0.9 does not match 0.992
   ✓ a figure still matches itself
   ✓ the cite key resolves to the cited paper
-  ✓ the claim this revision is about is in the population
-  ✓ the claim is one sentence, not a line fragment
-  ✓ its source resolves through its paragraph, not its own sentence
-  ✓ and its own figures are reachable at paragraph scope
+  ✓ HISTORICAL, pinned at 4e82b053: P18 carried the claim
+  ✓ CURRENT, asserted separately: P18 no longer carries it
+  ✓ CURRENT: and it carries the cited paper's negation in its place
+  ✓ the claim parses as ONE sentence out of the pinned text, not a line fragment
   ✓ a closure is not counted as an open item
   ✓ the tabular preamble is not counted as a claim
   ✓ the cited paper carries the negation of the claim's own form

@@ -4,7 +4,7 @@ r7454 -- THE PAPER'S OWN OPEN LIST AGAINST THE MEASUREMENTS THE CORPUS CARRIES
 cite keys resolved to corpus files: 23 | receipt names resolvable: 1096
 
 -- Ⓐ  THE TABLE PARSES TO 7 ROWS.  The paper says seven, twice.
--- THE PROSE POPULATION: 19 sentences in P18 name something open or owed.
+-- THE PROSE POPULATION: 18 sentences in P18 name something open or owed.
 
 ==============================================================================
 PER ITEM.  Three conjuncts: the item's own cited source, the item's own
@@ -112,27 +112,15 @@ figures or a four-word run of its own words, and a settlement in the line.
       state NO-MARKER-MATCHED | figures - | cited ['JanzenOperator', 'JanzenSlicing', 'JanzenGroupoid']
       searched: corpus/SdS-slicing-curve_v2.tex, corpus/groupoid_paper.tex, corpus/slicing_operator.tex   (resolved via the claim's own PARAGRAPH)
 
-⚑ [L2905] Which term of the projection makes it is the open computation.
-      state REFUTATION-CANDIDATE | figures ['0.23', '0.996', '1.045', '1.16'] | cited ['JanzenCRcosmology']
-      searched: corpus/CR_cosmology.tex   (resolved via the claim's own PARAGRAPH)
-      ⊢ corpus/CR_cosmology.tex:1706  [figure 1.045]
-        Nor is it one term of the source, nor the interference between two. Decomposing the projection bilinearly---one transfer per source term, so that C_ = _ a b w_ ab _k P\, ^a ^b closes on D_ to one part
-      ⊢ corpus/CR_cosmology.tex:1706  [figure 1.045]
-        Each piece separately already carries the excess instead: the monopole at 1.034, the Doppler at 1.099 and the polarisation at 1.058, against the full spectrum's 1.045, while every term's source ratio 
-      ⊢ corpus/CR_cosmology.tex:2726  [figure 0.996]
-        So the acoustic contrast excess is a measured discrepancy of known size, location, period and shape whose carrier is not attributable from here, the degeneracy being exactly dimensional in that two ch
-      ⊢ corpus/CR_cosmology.tex:2726  [figure 0.996]
-        And the stage at which the excess is made is located, and so now is the mechanism, which is where this sector's open work now sits: the difference is not in the source---the same statistic reads 1.047
-
-  [L2942] One real open item in the cosmology: a mechanism for the acoustic defici
+  [L2946] One real open item in the cosmology: a mechanism for the acoustic defici
       state NO-MARKER-MATCHED | figures - | cited ['JanzenCRcosmology', 'JanzenCRcosmology']
       searched: corpus/CR_cosmology.tex   (resolved via the claim's own PARAGRAPH)
 
-  [L2942] One item that belongs to the field rather than to this framework: the li
+  [L2946] One item that belongs to the field rather than to this framework: the li
       state NO-MARKER-MATCHED | figures - | cited ['JanzenCRcosmology', 'JanzenCRcosmology']
       searched: corpus/CR_cosmology.tex   (resolved via the claim's own PARAGRAPH)
 
-⌗ [L2963] That is the unpaid column, and it is short because the register is long 
+⌗ [L2967] That is the unpaid column, and it is short because the register is long 
       state UNREACHABLE | figures - | cited -
       ⌗ no cited source resolves, so this item is NOT TESTED by this
         instrument.  UNREACHABLE is its own state and is not NOT-REFUTED.
@@ -140,7 +128,7 @@ figures or a four-word run of its own words, and a settlement in the line.
 ==============================================================================
 THE TALLY, MECHANICAL
 ==============================================================================
-  REFUTATION-CANDIDATE   2
+  REFUTATION-CANDIDATE   1
   NO-MARKER-MATCHED      14
   UNREACHABLE            10
 
@@ -173,4 +161,4 @@ the void run is kept in the tree, as r7450's was.
   The verdicts above are not to be read as findings.  The instrument is
   the measurement, and this is what it measured about itself.
 
-price 1.3s
+price 1.0s
