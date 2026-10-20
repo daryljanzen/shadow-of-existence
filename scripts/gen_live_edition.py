@@ -667,6 +667,18 @@ def md_to_html(md, matrix_slot=True, stop_at_h2=None):
                     out.append('</figure>')
                 in_fig = False
             continue
+        # The explainer's figures (69, r-explainer-figures): one source line
+        #   `![caption](fig/explainer/NAME.png)` becomes a captioned image.  The src
+        #   stays relative, so the page served from the site and the page printed to
+        #   PDF from BOOK_INTRO_cosmiCave/ both resolve it; pages.yml copies the
+        #   directory into `_site/fig/explainer/`.
+        mi = re.match(r'^!\[(.+)\]\((fig/[\w./-]+\.(?:png|svg))\)$', st)
+        if mi:
+            flush()
+            alt = re.sub(r'[*`$]', '', mi.group(1)).replace('&', '&amp;').replace('"', '&quot;').replace('<', '&lt;')
+            out.append(f'<figure class="ex"><img src="{mi.group(2)}" alt="{alt}" loading="lazy">'
+                       f'<figcaption>{inline(mi.group(1))}</figcaption></figure>')
+            continue
         m = re.match(r'^(#{1,4}) (.*)$', st)
         if m:
             flush()
@@ -844,6 +856,8 @@ def main():
   .intro h3 {{ font-size:1.08rem; margin:2rem 0 .6rem; font-weight:600;
                color:var(--ink); }}
   .intro figure {{ margin:1.4rem 0; }}
+  .intro figure.ex img {{ display:block; max-width:100%; max-height:30rem; width:auto; height:auto; margin:0 auto; }}
+  .intro figure.ex {{ break-inside:avoid; }}
   .intro figcaption {{ color:var(--faint); font-size:.86rem; margin-top:.5rem;
                        line-height:1.5; }}
   .intro .more {{ color:var(--faint); font-size:.86rem; font-style:italic; }}
