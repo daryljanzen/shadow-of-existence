@@ -133,6 +133,31 @@ FOUR DEFECTS OF THIS SEAT'S OWN, EACH RECORDED RATHER THAN QUIETLY REPAIRED
        the registration did not reach it because the registration is about the paper and
        this is about the instrument.
 
+ (vi)  AND A SIXTH, FOUND BY CI AFTER THE REPAIR SHIPPED, WHICH IS THE SAME SHAPE
+       POINTED AT THE CORPUS'S OWN GATE RATHER THAN AT THIS SEAT'S INSTRUMENT.
+       The replacement sentence read *"which term of the projection makes it is NOT
+       OPEN"*, and `check_open_references` matches `\bopen\b`.  ** A sentence that
+       DENIES openness tripped the open-claim detector, on its own wording, in the
+       revision whose whole point was to remove an open claim. **  ⌗ The gate is right
+       about the token and wrong about the sentence, and it says so itself: it *"RULES
+       NOTHING"* and reds only on a new key.
+       ⇒ It offers two routes and both are worse than a third: a baseline row for a
+       claim that is not one, or a negation entry in `corpus/open_vocabulary.tsv` --
+       which would widen a SHARED vocabulary for every seat, so that *"is not open"*
+       leaves the net wherever any seat writes it.  ** Reworded to "is settled", which
+       says the same thing in plainer English and carries no marker. **
+       ⌗ *And two more gates came with it, both from the same one-sentence repair: the
+       replacement carried a SECOND `\cite{JanzenCRcosmology}` the paragraph did not
+       need, which moved `P18`'s dependency row from `37` to `38` in the `P15` column
+       and would have owed an edit to `P7`'s matrix; and `P18`'s committed PDF went
+       older than its source.  The duplicate citation is dropped, the row is back at
+       `37` so `P7` is untouched, and the PDF is rebuilt in the commit after its
+       source, because that gate compares commits and not file times.*
+       ⇒ ** ONE SENTENCE IN A PAPER REACHED THREE GATES, AND THE REGISTRATION REACHED
+       NONE OF THEM: the registration is about the paper's claims and these are about
+       the paper's APPARATUS. **  What caught them was CI, which is the first time this
+       cycle that the gates found something the registration could not have.
+
  ⌗ THREE OF THE FIRST FOUR ARE ONE SHAPE: A POPULATION WHOSE UNIT WAS NARROWER OR WIDER THAN
    ITS SUBJECT WHILE ITS LOGIC WAS CORRECT.  That is the class `PO-78` carries, produced
    four times inside one instrument built to look for it, and caught by the registration

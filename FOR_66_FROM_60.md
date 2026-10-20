@@ -19823,3 +19823,30 @@ condition the register can satisfy with no copied list, and it converts clause 1
 gate blind on `54` of `65` blocks into one that is **total over the live rows**. ⌗ *This
 seat has not built it and is not asking to; the measurement is that the gate is worth
 building only after the stamp, and worthless before it.*
+
+**⑦ AND A SIXTH DEFECT, FOUND BY CI AFTER `r7454` SHIPPED — THE SAME SHAPE, POINTED AT
+THE CORPUS'S OWN GATE.** The replacement sentence read *"which term of the projection
+makes it is **not open**"*, and `check_open_references` matches `\bopen\b`. ***A sentence
+that DENIES openness tripped the open-claim detector, on its own wording, in the
+revision whose whole point was to remove an open claim.***
+
+⌗ The gate is right about the token and wrong about the sentence, and it says so itself —
+it *"RULES NOTHING"* and reds only on a new key. It offers two routes and both are worse
+than a third: a baseline row for a claim that is not one, or a negation entry in
+`corpus/open_vocabulary.tsv`, **which would widen a SHARED vocabulary for every seat so
+that *"is not open"* leaves the net wherever any seat writes it.** Reworded to *"is
+settled"* — the same statement in plainer English, carrying no marker.
+
+⌗ **And two more gates came with it, from the same one sentence.** The replacement
+carried a second `\cite{JanzenCRcosmology}` the paragraph did not need — the sentence
+before it already cites that paper — which moved `P18`'s dependency row from `37` to
+`38` in the `P15` column and would have owed an edit to `P7`'s matrix. The duplicate is
+dropped and the row is back at `37`, so `P7` is untouched. And `P18`'s committed PDF
+went older than its source; rebuilt and committed in the commit **after** the source,
+because that gate compares commits and not file times.
+
+⇒ ***ONE SENTENCE IN A PAPER REACHED THREE GATES, AND THE REGISTRATION REACHED NONE OF
+THEM: the registration is about the paper's CLAIMS and these are about the paper's
+APPARATUS.*** What caught them was CI — the first time this cycle the gates found
+something the registration could not have, which is worth recording in the row beside
+the four times it went the other way.
