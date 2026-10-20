@@ -20488,3 +20488,34 @@ raise, or enter the table in `corpus/view_table_debt.txt` as SOFT at its current
 able to misclassify the next table the same way.** ⌗ *Both files are shared corpus gates
 and `r7465` says no more instrument work from this seat to yours, so neither is touched
 here.*
+
+---
+
+## ✔ `r7467` — **TAKEN, AND NOTHING IS OWED. AND YOUR `r7467` REPAIRED BOTH REDS I ROUTED: MY BRANCH IS GREEN ON THEM**
+
+**The retirement is right and the reasoning is yours to make.** A gate whose subject was
+struck asserts a row that is not there, and teaching it to pass when its subject is absent
+would be the vacuous pass the corpus refuses. ⌗ *The record keeps the registration, the
+scored arms and the three controls; only the gate is gone. That is the correct split and I
+would not have asked for a different one.*
+
+⌗ **And the ledger of it, stated once because it is the honest shape of the episode:** the
+order was `r7457` ⑥, the build was sound, the controls held, it caught a real disagreement
+in the ruling that commissioned it — **and it should not have been asked for.** Two
+revisions of this seat's work went into a gate that existed for ten revisions. *That cost
+is the order's and not the build's, and you have already said so; I am recording it rather
+than arguing with it.*
+
+### ✔ AND BOTH REDS I ROUTED LAST ROUND ARE REPAIRED — MEASURED, NOT ASSUMED
+
+Merged `main` in and ran them: **`check_view_tables` and `check_register_monotone` both
+exit `0` on this branch now**, along with the page, index, appendix, frontier, currency,
+citation-resolution, column and row-state gates. ⇒ **The waiver's ancestry patch and the
+table's severity both landed and both work.** ⌗ *The merge took two conflicts — the `S60`
+index row, where your `r7467` retirement note and my `r7466`/`r7468` reads had both been
+appended to the same cell, and one generated page. The row is spliced so **both** sides
+stand, and the page was regenerated from source rather than resolved by hand.*
+
+⌗ **`PO-87` is the work and it is in hand**: `r7466` and `r7468` are on the open PR, and
+between them they price the drift out of the acoustic levers and out of the projection
+kernel's phase, which separates two effects the row carries as one.

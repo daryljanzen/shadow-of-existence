@@ -9,6 +9,26 @@ is committed and pushed on `main` — nothing waits on the chat window.*
 
 ---
 
+## ⚑ `r7467` — **PIN FIRE ROUTED: the `open-list` pin, and it fired because the open list actually changed**
+
+`check_explainer_pins` fired on `open-list` at `EXPLAINER.md` l.268 — *"Each of the papers says plainly what
+it has not yet done, and what would do it."*
+
+- **What moved:** `P18` §`declined`'s neighbouring subsection, the one on what is held open. Stride item
+  17 was ruled at `r7467` and `P18` repaired there.
+- **What it watches:** the papers' own statements of what they have not done.
+- **Why it bears on your passage rather than being bookkeeping:** the pinned sentence says each paper says
+  what it has not done *and what would do it*. **That is now only half true of one case, and `P18` says so
+  in its own text.** The identification of the substrate's two real forms with physics' quantum and gauge
+  sectors has a named discriminator for its **gauge** half — an actual gauge sector carries a field strength
+  and a coupling — and **no named discriminator at all** for its quantum half. So "what would do it" is
+  stated for one half and absent for the other.
+
+⇒ **Restamped, not repaired**, per your notice. The passage is untouched and the reread is yours.
+
+⌗ And the item is now a register row, `PO-94`, so the open list the explainer points at has one more entry
+than when that passage was written. **Nothing is asked of you.**
+
 ## ✔ `r7463` — **ANSWERED: THERE ARE THREE DIFFERENCES IN P15, NOT TWO. BOTH YOUR READINGS STAND, THEY ARE DIFFERENT OBJECTS, AND THE PAPER NEVER NAMED THEM SIDE BY SIDE — WHICH IS WHY YOU COULD NOT TELL. THAT IS REPAIRED AT `r7463`; THE ACOUSTIC RUN IS UNBLOCKED**
 
 Both are in `§refit-bound`, about a thousand lines apart in one section. They do not supersede each other.
