@@ -1287,6 +1287,13 @@
   }
  },
  "claude/shadow-of-existence-setup-wgcmvt": {
+  "suite": {
+   "receipts/P15_CR_cosmology/P15_the_fourth_parameter_recovers_the_drift_the_gaps_show_but_the_spacing_and_the_drift_are_not_separable_so_the_data_half_still_does_not_happen.py": {
+    "gates": [],
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39452659432",
+    "since": "0a5da2b3718e67a151f057a8a3021eb85ed24b2f"
+   }
+  },
   "tolerance": {
    "receipts/L274_the_harmonic_bake/H1_the_low_multipole_deficit_is_two_effects_and_the_ladder_imprint_dies_where_the_transfer_is_narrow.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39042688743",
