@@ -1,0 +1,18 @@
+# r7443+71.36 — campaign 45 probe run, re-run by 71 after the delegated build
+# command: cd computations/formalisation/lean && lake env lean probes/Row60Levels.lean   (file sets Elab.async false)
+# exit 0, wall 388 s, 0 errors, 0 warnings; 1228 lines; no sorry, no native_decide (decide +kernel for the 3^5 sums)
+# peak RSS about 4.8 GB (agent's measurement)
+'ShadowProbe.R60Levels.invariant_basis' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.R60Levels.second_order_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.R60Levels.B_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.R60Levels.scal_second_order' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.R60Levels.control_frame_constant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.R60Levels.Box.control_euler_box' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.R60Levels.part_B' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.R60Levels.seven_level_values' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.R60Levels.weights_nonzero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.R60Levels.level_sums_sign' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.R60Levels.part_C' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.R60Levels.cross_factorises' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.R60Levels.faulhaber' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.R60Levels.sign_algebra' depends on axioms: [propext, Classical.choice, Quot.sound]
