@@ -23886,3 +23886,25 @@ consequence — nothing here says it does, the magnitude being untouched — pri
 (band 70–180), script **168** against 180, wall **~17 s** against 5 (band 1–60), runs **3** against 4,
 turns **1** against 2 — *five of five cost rows inside band for the first time, with the `WALK` central
 corrected last revision.*
+
+## ⛔⚑ `r7473+cc66.13` — **`fast` WENT RED ON MY OWN HEAD *AND* ON `main`, AND BOTH HALVES ARE MINE: `check_unread_figure` CAUGHT TWO OF MY RECEIPTS ATTRIBUTING A FIGURE TO A PAPER NEITHER OPENS**
+
+`fast` failed on `ae1109516`, and this time the gate name came out of the **CI log** rather than a local
+sweep — `r7471` ② forbids the whole-job sweeps here, so the job log was fetched instead and it names
+`⛔ FAILED: check_unread_figure`. Run alone, the gate is exact: *2 new unread-figure keys, "a paper's
+figure asserted by a receipt that never opens it"* — one in `.12`'s new receipt (*"P16's interior solves
+a'' + a = A/2 identically"*) and **one in `.10`'s, which is already merged**, so the same gate is `rc=1` on
+pristine `origin/main` and **my own merged commit is what put it there.** Both labels attributed a quantity
+to a paper while nothing in the file opened it, which is precisely the defect the ratchet exists for: the
+check would have stayed green while the paper moved under it. ⇒ **Repaired both, with the gate's own second
+remedy — say what THIS receipt computed and drop the attribution — which is also the smallest repair
+`r7471` ① asks for**; the assertions themselves are byte-identical, only the labels changed, and I added a
+genuine `open()` of `cosmogenesis_paper.tex` to each so the printed law and the printed interior solution
+are now **read** rather than transcribed. The instrument reports **0 sites in 0 receipts** for both files
+and the gate is green, which also carries the repair for `main`'s red rather than leaving it. ⌗ *And the
+reason the first attempt failed is worth keeping: I added the paper read and expected it to reclassify the
+sites, because the gate's own notes say "one `open()` reclassified every site in the file" — but
+`mutate_assertions.py:1505` requires the site's **own names** to intersect the tainted set, so a read that
+does not feed the asserted figure changes nothing. The remedy menu was right and my reading of the
+mechanism was not.* **What is next:** unchanged — whether the radiation amplitude's sign reversal has any
+observable consequence, priced in its own file first.

@@ -63,6 +63,21 @@ print("=" * 78)
 
 eta = sp.Symbol('eta', real=True)
 A, B = sp.symbols('A B', positive=True)
+
+# ---- READ the paper, so this receipt fails when the paper moves -------------
+# â check_unread_figure was right: these numbers were the PAPER's and nothing
+#   here opened it, so the check would have stayed green while the paper moved.
+#   The remedy it names first is to READ the figure, and that is what this does.
+import os
+_HERE = os.path.dirname(os.path.abspath(__file__))
+_P16 = os.path.join(_HERE, '..', '..', 'corpus', 'cosmogenesis_paper.tex')
+with open(_P16, encoding='utf-8') as _fh:
+    _SRC = _fh.read()
+
+_LIT = r"a=\tfrac{A}{2}(1-\cos\eta)+\sqrt{B}\sin\eta"
+check("READ from cosmogenesis_paper.tex: P16's own interior solution is printed there "
+      f"as {_LIT}", _LIT in _SRC)
+
 a = (A / 2) * (1 - sp.cos(eta)) + sp.sqrt(B) * sp.sin(eta)
 
 
@@ -75,7 +90,9 @@ def parity(expr):
 
 
 # ---- (1) the solution ------------------------------------------------------
-check("P16's interior solves a'' + a = A/2 identically",
+# â Same rewording, same reason: the equation is checked, not attributed.
+check("the interior solution read above satisfies the driven-oscillator equation it is "
+      "said to solve, identically",
       sp.simplify(sp.diff(a, eta, 2) + a - A / 2) == 0)
 check("and vanishes at eta = 0, so eta = 0 is the branch point",
       sp.simplify(a.subs(eta, 0)) == 0)
