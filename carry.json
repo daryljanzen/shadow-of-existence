@@ -4828,6 +4828,11 @@
     "since": "09970c2b9fb3e841ce30ff87889a659425a551c9",
     "unmeasured": true
    },
+   "receipts/L221_the_bridge/B11_three_triples_two_identifications.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39504601443",
+    "since": "b77ff6f7e72826b21c398401804513262e10fc77",
+    "unmeasured": true
+   },
    "receipts/L221_the_bridge/B13_po2_identification_is_stated.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39501380187",
     "since": "09970c2b9fb3e841ce30ff87889a659425a551c9",
@@ -4891,6 +4896,11 @@
    "receipts/L221_the_bridge/B61_the_walls_do_not_cover_the_spectral_route.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39501380187",
     "since": "09970c2b9fb3e841ce30ff87889a659425a551c9",
+    "unmeasured": true
+   },
+   "receipts/L221_the_bridge/B7_two_unbuilt_sectors_not_one.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39504601443",
+    "since": "b77ff6f7e72826b21c398401804513262e10fc77",
     "unmeasured": true
    },
    "receipts/L230_computes_convention/C1_the_uptake_is_falling_and_this_line_is_why.py": {
@@ -5781,6 +5791,11 @@
    "receipts/P15_CR_cosmology/P15_verify_doppler_lowell.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39501380187",
     "since": "09970c2b9fb3e841ce30ff87889a659425a551c9",
+    "unmeasured": true
+   },
+   "receipts/P16_cosmogenesis_paper/C13_downstream_irrelevant_is_not_downstream_blocked.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39504601443",
+    "since": "b77ff6f7e72826b21c398401804513262e10fc77",
     "unmeasured": true
    },
    "receipts/P16_cosmogenesis_paper/P16_CR_makes_no_Neff_prediction_because_it_fixes_a_place_and_not_a_coupling.py": {
