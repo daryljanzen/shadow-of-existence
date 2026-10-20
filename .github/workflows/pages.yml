@@ -30,6 +30,7 @@ on:
       - 'corpus/**.tex'
       - 'corpus/**.pdf'
       - 'BOOK_INTRO_cosmiCave/assets/**'
+      - 'BOOK_INTRO_cosmiCave/fig/explainer/**'
       # r7433: the formalisation page's four inputs.  They were missing, which
       # is the SAME defect as the one below it in the file and found while
       # repairing that one: `r7425` taught the generator to read these and did
@@ -168,6 +169,9 @@ jobs:
           # copy -- without it the figure element ships with a dangling src and the
           # caption is back to describing a picture that is not there.
           cp BOOK_INTRO_cosmiCave/fig/*.svg _site/fig/ 2>/dev/null || true
+          # The explainer's figures, referenced from EXPLAINER.md as fig/explainer/*.png.
+          mkdir -p _site/fig/explainer
+          cp BOOK_INTRO_cosmiCave/fig/explainer/*.png _site/fig/explainer/ 2>/dev/null || true
           # Three figures are referenced from outside corpus/, by a relative
           # path that climbs out of it; mirrored so those links resolve.
           mkdir -p _site/resources/PhD_thesis
