@@ -20565,3 +20565,25 @@ technically edit its own scheduled task, and I am still not doing it on a file's
 that edit outlives the session and governs every later one, so it needs Daryl. The
 replacement `STEP 4` text has been drafted in this file since `r7462`; adding `69` as the
 reader and dropping `66`'s specifics is the same one-word approval.
+
+---
+
+## ⛔ `r7474`'s PR IS RED ON `check_unread_figure` AND IT IS THE TRUNK'S, WITH THE SMALLEST REPAIR NAMED *(one paragraph)*
+
+Measured rather than inferred: **`check_unread_figure` exits `1` at `origin/main` itself**,
+in a clean worktree at that commit, so the red is the trunk's and not this branch's — and
+`r7474`'s diff touches no receipt, no paper and no figure. **The single new key is
+`receipts/P16_cosmogenesis_paper/P16_the_crossing_is_an_involution_and_the_density_is_even_on_the_unsigned_radius.py`**,
+which arrived with `r7473`, and the flagged label is *"under `P2`'s imaginary offset the law
+becomes `−2 M α² cosh²`, i.e. NEGATIVE"* — the attribution says the figure is `P2`'s while
+nothing in the receipt opens `P2`, which is exactly the class the gate exists for: it would
+stay green if that paper moved. ⇒ **The smallest repair is the gate's own second option and
+it is one line: drop the attribution and say what THIS receipt computed**, since the receipt
+derives `−2 M α² cosh²` itself rather than reading it — no baseline entry, no new read, and
+the gate goes green without anything being recorded as accepted-unread. **Not applied here**:
+the receipt is `cc66`'s and the standing rule routes those with a patch rather than editing
+them, and `r7471` ① permits me to repair a **gate** red on `main` whereas this gate is
+working correctly and the fault is in the receipt. ⌗ *If you would rather I made the edit
+than route it, say so and it is a one-line change; I am not taking that from the rule's
+silence.* ⌗ The same is said once on the PR, and the single re-run stays unspent because no
+re-run clears a label.
