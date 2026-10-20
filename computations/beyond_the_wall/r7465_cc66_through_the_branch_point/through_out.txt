@@ -1,0 +1,148 @@
+
+==============================================================================
+  STEP 1 -- THE TWO CONTINUATIONS, WRITTEN DOWN FROM THE PAPERS
+==============================================================================
+  (a) P3 sec:lap / prop:flip -- the ARC-LENGTH picture.  On the de Sitter
+      slicing r = alpha sin(theta), theta = l/alpha, and the lap rides
+      'inward along a ruling to the equatorial seam; continue ... around the
+      throat THROUGH r=0 and out onto the negative branch', where r marches
+      as arc length through the three roots +alpha/sqrt3, 0, -2alpha/sqrt3.
+        r_P3(theta) = alpha*sin(theta)
+      ⌗ P3 also states the areal radius is a SIGNED coordinate: g_thth = r^2
+        is insensitive to the sign of r, so the curve may be run in the
+        negative sense without leaving the geometry.  That sentence is
+        load-bearing below.
+
+  (b) P2 / P16 -- the BEAD law in proper time along the collapse branch.
+        r^3(tilde_tau) = 2*M*alpha**2*sinh(3*tilde_tau/(2*alpha))**2
+      with P2's continuation at the conjugate critical point, z -> pi + i rho'.
+
+==============================================================================
+  STEP 2 -- ⒜ DO THEY AGREE ON PARITY THROUGH THE BRANCH POINT?
+==============================================================================
+  (a) P3's branch point is theta = 0, where r = 0.  Reflect theta -> -theta:
+        r_P3(-theta) = -alpha*sin(theta)      = -r_P3(theta)?  True
+      ⇒ r is ODD through the branch point.  The curve crosses onto r < 0,
+        which is exactly the 'negative branch' P3 names.
+
+  (b) P2's law in tilde_tau.  First the naive reflection:
+        r^3(-tilde_tau) - r^3(tilde_tau) = 0
+        so r^3 is EVEN in tilde_tau: True
+      ⛔ AND THAT IS NOT A CONTINUATION THROUGH THE BRANCH POINT.  sinh^2 >= 0
+         for real tilde_tau, so r^3 >= 0 on the whole real axis: the
+         reflection never leaves the forward branch.  It is the SAME leg
+         traversed backwards, not the other side.
+
+  The continuation P2 actually uses is the imaginary offset.  Taking it at
+  the conjugate critical point, tilde_tau -> -i pi alpha/3 + t:
+        r^3 -> -2*M*alpha**2*cosh(3*tilde_tau/(2*alpha))**2
+        at the critical point itself (t = 0):  r^3 = -2*M*alpha**2
+        which is -2 M alpha^2:  True
+  ⇒ r^3 is NEGATIVE on the continued branch.  So P2's continuation also
+    carries r through zero and out the other side.
+
+  ** ⒜ ANSWERED: the two continuations AGREE -- both carry r through zero
+     onto a branch where it is negative -- and they agree on ODD, not even.
+     ⛔ My pre-registered ⒜ said 'both give r^3 even'.  The EVEN reading is
+     the reflection, and the reflection is not the crossing.  Half right:
+     the agreement holds, the parity does not. **
+
+==============================================================================
+  STEP 3 -- ⒝ THE DUST STRESS-ENERGY, COMPONENT BY COMPONENT
+==============================================================================
+  Dust: T^{mu nu} = rho u^mu u^nu, pressure zero.  Two quantities carry the
+  parity -- the density and the radial velocity -- and they are not the same.
+
+  ⛔ THE NAIVE DENSITY IS NOT A DENSITY.  Writing rho = 3 M_b /(4 pi r^3)
+        rho_naive(r)  = 3*M_b/(4*pi*r**3)
+        rho_naive(-r) = -3*M_b/(4*pi*r**3)
+        odd in r: True
+     ⇒ it changes SIGN, and a negative mass density is not a state the
+       matter can be in.  Taken at face value this is C3, undefined.
+
+  ⌗ But the volume in the denominator is a VOLUME, and P3's own sentence
+    settles which function of r it is: the areal radius is SIGNED and
+    g_thth = r^2 is insensitive to its sign, so the proper volume of the
+    swept 2-sphere's interior goes as |r|^3 and never as r^3.
+        rho(r)  = 3*M_b/(4*pi*r**2*Abs(r))
+        rho(-r) = 3*M_b/(4*pi*r**2*Abs(r))
+        EVEN in r: True
+     ⇒ the density is EVEN, and the sign of r is pure gauge in it.
+
+  And the radial velocity.  On the arc-length picture u^r = dr/dl:
+        dr/dtheta = alpha*cos(theta)
+        at -theta: alpha*cos(theta)      EVEN in theta: True
+     ⌗ dr/dtheta is EVEN in theta -- but r itself is ODD, so the velocity
+       RELATIVE TO THE MATTER's own outward direction (the sign of r) flips:
+       d|r|/dtheta = sign(r) dr/dtheta, and sign(r) is odd.
+        d|r|/dtheta = Piecewise((0, Eq(sin(theta), 0)), (alpha*sin(2*theta)/(2*Abs(sin(theta))), True))
+        at -theta:    Piecewise((0, Eq(sin(theta), 0)), (-alpha*sin(2*theta)/(2*Abs(sin(theta))), True))
+        ODD: True
+
+  ** ⒝ ANSWERED, and it splits exactly as priced: the energy density is
+     EVEN, the radial momentum flux (rho times the areal rate) is ODD, and
+     dust's pressure is identically zero and so trivially even. **
+
+==============================================================================
+  STEP 4 -- THE CONTROL: a species whose parity is the OTHER one
+==============================================================================
+  If 'even' came out of the algebra rather than out of the physics, then a
+  species with a different equation of state would come out even too.
+  species                           rho(r) ~    rho(-r)/rho(r)  parity
+  ----------------------------------------------------------------------
+  dust        (w = 0)                   r^-3                -1  ODD on the signed radius
+  radiation   (w = 1/3)                 r^-4                 1  EVEN on the signed radius
+  stiff       (w = 1)                   r^-6                 1  EVEN on the signed radius
+
+  ⇒ ** THE CONTROL BITES: on the SIGNED radius radiation and stiff matter are
+     EVEN while dust is ODD, purely because 4 and 6 are even and 3 is not.**
+     So the signed-radius reading makes the crossing's behaviour depend on
+     the equation of state's exponent PARITY -- which is not a physical
+     distinction, and is the tell that the signed radius is the wrong
+     variable for a density.  On |r| every species is even, as a density
+     must be.  ⌗ That is the control's whole job: it shows the EVEN answer
+     comes from the volume being a volume, not from the arithmetic.
+
+==============================================================================
+  STEP 5 -- ⒞ AND ⒟: IS THE MAP A BIJECTION, AND DOES COLLAPSE BECOME EXPANSION?
+==============================================================================
+  The crossing's data are (rho, d|r|/dl) at the branch point.  From STEP 3:
+    rho          EVEN  -- the post-crossing density history is the mirror
+                          of the pre-crossing one, value for value
+    d|r|/dl      ODD   -- infall becomes outflow
+
+  So the map is (rho(l), v(l)) |-> (rho(-l), -v(-l)).  It is its own inverse:
+    applying it twice gives (rho(l), v(l)) back, so it is an INVOLUTION and
+    therefore a bijection on the state space.  Nothing is lost and nothing
+    is added: every moment of the approach has exactly one image.
+
+  ** ⒞ = C1, a BIJECTION.  ⒟ = YES: the sign flip of the areal rate IS
+     collapse becoming expansion, and it falls out of the parity rather
+     than being put in. **
+
+  ⌗ AND WHAT THAT SETTLES ABOUT THE ROW'S WORDING.  P15 says the crossing
+    'carries whatever survives it unchanged ... because there is no interval
+    in which anything could act'.  Measured here: the crossing is not a
+    filter, so 'whatever survives' is EVERYTHING -- the survival clause is
+    vacuous, not restrictive.  And the row's 'transmitted datum' is the
+    whole approach, not a few numbers off it, so C2 is excluded rather than
+    merely unchosen.
+
+==============================================================================
+  STEP 6 -- ⒠ DOES THE ROW DISCHARGE?  what is answered and what is not
+==============================================================================
+  ANSWERED: the stress-energy IS carried through, as an involution with no
+  free data -- a dynamical answer and not a transmitted datum.  The two
+  continuations the corpus uses agree, and they agree on the crossing being
+  a parity map.
+
+  ⛔ NOT ANSWERED, and it is the honest limit of this file: the matter model
+     here is DUST with Lambda, pressureless, so the only components with a
+     parity to have are the density and the radial rate.  A model with
+     pressure has T^{r}_{r} and T^{theta}_{theta} to carry as well, and
+     nothing here says what they do.  P16's own interior is dust PLUS
+     RADIATION, and radiation's parity on the signed radius is the opposite
+     of dust's (STEP 4) -- which on |r| is no difference at all, but no
+     computation here has carried a pressure term across.
+  ⇒ So: the row's DISCHARGE CONDITION is met for a pressureless concrete
+     model, and the pressure half is named rather than claimed.

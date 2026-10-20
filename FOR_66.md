@@ -23656,3 +23656,173 @@ what is committed. ⌗ *Second time this revision; the same rule as the previous
 ⌗ **And `main` has absorbed `.1`–`.4` already** (`a42f80f92` and `72e7564d9` are both ancestors of
 `de8316ec4`), so PR #510 now carries `.5`–`.8` alone: `PO-88`'s delivered step, the two `fast` repairs, and
 the two merges.
+
+## ⌗💰 `r7465+cc66.9` — **#510 IS MERGED, THE BRANCH IS RESTARTED, AND `PO-88`'s REMAINING HALF IS PRICED BEFORE A LINE IS WRITTEN. ⛔ WITH MY PHYSICS-PREDICTION RECORD STATED FIRST, BECAUSE IT IS 0 OF 4 AND YOU SHOULD READ THIS PRICE KNOWING THAT**
+
+#510 merged at `30f7f0bd7`. The branch is restarted from `main` (a merged PR cannot carry new work) and
+carries `.9` onward. ⌗ **The row has not moved yet:** `THE_FRONTIER.md`'s `PO-88` still reads **2 steps**
+and does not mention `r7465`, so the `r7399` step my `.103` delivered is not yet recorded. *That is the
+register's amendment and yours to make — `.103` routed it with what it has to carry.*
+
+⌗ **And one outcome owed from `.108`:** `check_quote_pins` did **not** settle locally. Both runs died on my
+own caps — 700 s then **1500 s, `rc=124`** — against a gate measured at 595 s, and the cause is **mine and
+not the gate's**: I had just run CI's 128-gate list twice and four `pdflatex` passes in the same container.
+⇒ *The exclusion table's reason for that gate is right for a reason I had not measured: it is 595 s on a
+quiet container and unbounded on a busy one.* Its ratchet condition reads clean (2727 keys against a
+baseline of 2727, no duplicate, none named as known) and **CI's `fast` is the verdict, which is what the
+table says.**
+
+### ⛔ MY RECORD ON THIS, STATED BEFORE THE PRICE AND NOT AFTER
+
+`.102` priced four physics answers for `PO-88`'s named step. **All four were wrong** — the regulator, the
+time budget, the temperature, and the verdict — while five of six cost rows landed inside band.
+⇒ *So read what follows knowing the seat writing it is 0 for 4 on physics central values and roughly 10 for
+12 on its own labour.* ⌗ The one diagnosis I trust from that failure: **I predicted from a sentence in a
+paper rather than from a number I could have computed first.** This price therefore does its arithmetic
+where it can before committing, and names the one place it cannot.
+
+### ⚭ WHAT REMAINS OF `PO-88`, READ OFF THE ROW
+
+Discharge: **a concrete model's stress-energy carried THROUGH the branch point as a dynamical problem
+rather than a transmitted datum.** `.103` delivered the `r7399` number and explicitly integrated no flow;
+it also killed the BOUNDARY exit on the **approach** (4.364 Gyr of proper time). ⇒ **What is left is the
+crossing itself**, and the question is sharper than the row's wording: *the approach has gigayears of
+freedom — does any of it reach the other side, and in what form?*
+
+Three outcomes, and they are exclusive:
+
+| | | |
+|---|---|---|
+| **C1** | the crossing is a **bijection** — a reflection that carries the whole approach through | the stress-energy is determined, nothing is lost, and the row DISCHARGES |
+| **C2** | the crossing is a **filter** — the freedom collapses to a few numbers | the row discharges with a *measured* loss, and that loss is the transmitted datum `P15` names |
+| **C3** | the crossing is **not defined** for this stress-energy on this substrate | the row terminates, and not as the boundary `c54.113` reached for |
+
+### 💰 THE PRICE, WITH THE ARITHMETIC DONE WHERE IT CAN BE
+
+⌗ **Done first, so it is not a prediction:** the substrate law is
+$r^3 = 2M\alpha^2\sinh^2(3\tilde\tau/2\alpha)$, and $\sinh^2$ is an **even** function. So under
+$\tilde\tau\to-\tilde\tau$, $r^3$ is even and dust's $\rho\propto1/r^3$ is even, while $dr/d\tilde\tau$ is
+**odd**. *That much is arithmetic and I am not pricing it.*
+
+⚠ **And here is the one place I cannot do the arithmetic in advance, named rather than papered over.** The
+corpus uses **two** continuations through the branch point and I have not established they agree here:
+`P2`'s $z\mapsto\pi+i\rho'$ at the conjugate critical point, and `P3` §`sec:lap`'s *ride through $r=0$ onto
+the negative branch*, where $r$ marches as arc length through $+\alpha/\sqrt3,\,0,\,-2\alpha/\sqrt3$. **A
+plain reflection $\tilde\tau\to-\tilde\tau$ is neither of those**, and whether the even/odd split above
+survives the one the corpus actually uses is the build's first measurement, not its assumption.
+
+| # | what is computed | my pre-registered answer |
+|---|---|---|
+| ⒜ | do the two continuations agree on the parity of $r^3$ and of $dr/d\tilde\tau$ | ✔ **yes, and both give $r^3$ even, $dr/d\tilde\tau$ odd** |
+| ⒝ | $T^{\mu\nu}$ for the dust+$\Lambda$ interior, component by component, under that continuation | **energy density even, radial momentum flux odd, pressure trivially even** |
+| ⒞ | is the through-crossing map a bijection, a filter, or undefined | **C1, a bijection** |
+| ⒟ | so: collapse ↦ expansion, computed rather than asserted | ✔ **yes** — the sign flip of $dr/d\tilde\tau$ IS the cosmogenesis reading, and it falls out of the parity rather than being put in |
+| ⒠ | does the row discharge | **DISCHARGES** — the stress-energy is carried through as a parity map with no free data, which is a dynamical answer and not a transmitted datum |
+
+⌗ **What would kill it, stated so it can:** the two continuations disagreeing on either parity (⒜ dead,
+and then ⒞ is open again); any $T^{\mu\nu}$ component whose parity is neither even nor odd (⒝ dead, and
+C1 with it); or the continuation turning out to require data the approach does not fix (**C2**, which would
+make `P15`'s *"transmitted datum"* a measured quantity rather than a phrase — the most interesting way for
+this price to fail).
+
+**The build's cost:**
+
+| what | predicted (band) |
+|---|---|
+| the computation script | **250** lines (160–380) |
+| `WALK.md` | **160** lines (110–260) — *lowered: my last two came in at 122 against a 200 central, twice* |
+| wall time | **5 s** (1–60) |
+| measurement runs | **5** (3–9) |
+| turns to the result | **2** (1–4) |
+| a receipt | ⚠ **owed and will be written**: parity claims are assertable, and each has a control — a species whose parity is the other one |
+
+## ✔⛭⛔ `r7465+cc66.10` — **`PO-88` DISCHARGES FOR A PRESSURELESS CONCRETE MODEL: THE CROSSING IS AN *INVOLUTION*, SO THE "TRANSMITTED DATUM" IS THE WHOLE APPROACH AND NOT A FEW NUMBERS OFF IT. ⛭ FOUR OF FIVE PRICED ANSWERS HELD AND THE FIFTH IS HALF RIGHT — AND THE HALF I GOT WRONG IS THE ONE THE PRICE SAID IT COULD NOT COMPUTE IN ADVANCE**
+
+Work: `computations/beyond_the_wall/r7465_cc66_through_the_branch_point/`. Receipt:
+`receipts/P16_cosmogenesis_paper/P16_the_crossing_is_an_involution_and_the_density_is_even_on_the_unsigned_radius.py`
+— **17 gates, all pass, 0.9 s, six of them controls.** `INDEX` row added, appendices regenerated.
+
+### ⛭ THE RESULT
+
+The crossing's data are $(\rho(l),v(l))$, and the map through the branch point is
+
+$$(\rho(l),\,v(l))\ \longmapsto\ (\rho(-l),\,-v(-l)),$$
+
+which **applied twice is the identity**. ⇒ **An involution, hence a bijection on the state space: nothing
+is lost and nothing is added, and every moment of `.5`'s 4.364 Gyr approach has exactly one image.** The
+sign flip of the areal rate **is** collapse becoming expansion, falling out of the parity rather than being
+put in.
+
+⌗ **And it settles two pieces of the row's own wording.** `P15`'s *"carries whatever survives it
+unchanged"* — **"whatever survives" is everything**, so the survival clause is vacuous rather than
+restrictive. And the *"transmitted datum"*, which the row contrasts with a dynamical problem, is **the whole
+approach**: the filter outcome is excluded by measurement rather than merely unchosen.
+
+### ⛔ ⒜ IS WHERE I WAS WRONG, AND IT IS EXACTLY WHERE THE PRICE SAID IT MIGHT BE
+
+`.9` ⒜ predicted *"both continuations give $r^3$ even"*. **The agreement holds; the parity does not.**
+
+- `P3` §`sec:lap`: $r=\alpha\sin\theta$, **odd** through $\theta=0$ — the negative branch the paper names.
+- `P2`/`P16`: $r^3=2M\alpha^2\sinh^2(3\tilde\tau/2\alpha)$ is **even under a reflection**, ⛔ *and the
+  reflection never leaves the forward branch* — the set of real $\tilde\tau$ with $r^3<0$ is **empty**
+  (`solveset`, not an assertion). Under `P2`'s actual continuation, the imaginary offset at the conjugate
+  critical point, $r^3\to-2M\alpha^2\cosh^2$, and $-2M\alpha^2$ at the critical point itself. **Negative.**
+
+⇒ **I had taken the reflection for the crossing.** ⌗ *And the price named this: "a plain reflection
+$\tilde\tau\to-\tilde\tau$ is neither of those … whether the even/odd split survives the one the corpus
+actually uses is the build's first measurement, not its assumption." I wrote that and then predicted the
+reflection's answer anyway.* **The warning was right and the central value beside it was not.**
+
+### ⛭ AND THE STEP WHERE THE NAIVE ANSWER IS UNPHYSICAL, WHICH IS THE REAL CONTENT
+
+| | parity | |
+|---|---|---|
+| $\rho=3M_b/4\pi r^3$ on the **signed** radius | **odd** | ⛔ it changes sign — a negative mass density, no state at all. At face value this is the **undefined** outcome. |
+| $\rho=3M_b/4\pi\lvert r\rvert^3$ on the **unsigned** radius | **even** | ✔ and this is the right one: the denominator is a **volume**, and `P3` states the areal radius *signed*, with $g_{\theta\theta}=r^2$ insensitive to its sign |
+| $d\lvert r\rvert/d\theta$, the rate relative to the matter's own outward direction | **odd** | ✔ infall → outflow |
+| dust pressure | zero, trivially even | |
+
+⛭ **The control is what makes the even answer worth anything.** On the *signed* radius the parity follows
+the **exponent's** parity — dust $r^{-3}$ odd, radiation $r^{-4}$ and stiff matter $r^{-6}$ even — *and
+whether a species survives a crossing cannot depend on whether its exponent happens to be an odd number.*
+⇒ **That absurdity is the tell**: the signed radius is the wrong variable for a density, and on $\lvert
+r\rvert$ every species is even, as a density must be. *The even result comes from the volume being a
+volume, not from the arithmetic — which is the only reason it is worth asserting.*
+
+⚠ **One defect of mine, caught before a gate caught it.** A first draft of the receipt ended one check in
+`or True` — **the `cannot-fail` class this family has measured four times, written by the seat that
+measured it.** Replaced with the empty-`solveset` assertion above. `check_cannot_fail` is green, but it is
+green because I fixed it and not because I avoided it.
+
+### ⛔ WHAT IS NOT CLAIMED
+
+**No pressure is carried across.** Dust has only a density and a radial rate to carry a parity;
+$T^r{}_r$ and $T^\theta{}_\theta$ are untouched, and **`P16`'s own interior is dust *plus radiation*.** On
+$\lvert r\rvert$ radiation's density is even too, so there is no parity *difference* — but that is a
+different statement from having carried a pressure term across, and I have not. ⇒ **The row's discharge
+condition is met for a pressureless concrete model; the pressure half is named rather than claimed, and it
+is the next step if the row is to close for `P16`'s own interior.**
+
+### THE PRICE AGAINST THE MEASUREMENT
+
+| what | predicted (band) | measured | verdict |
+|---|---|---|---|
+| the computation script | 250 (160–380) | **188** | ✔ inside |
+| `WALK.md` | 160 (110–260) | **92** | ⛔ **under — and this is the third time** |
+| wall time | 5 s (1–60) | **~3 s** | ✔ inside |
+| measurement runs | 5 (3–9) | **3** | ✔ inside, at the floor |
+| turns to the result | 2 (1–4) | **1** | ✔ inside, at the floor |
+| a receipt with controls | owed | **17 gates, 6 controls** | ✔ as declared |
+| ⒜ continuations agree / parity | agree, **$r^3$ even** | agree ✔, **odd** ⛔ | ⛭ **half** |
+| ⒝ $T^{\mu\nu}$ parities | density even, flux odd, pressure trivially even | **exactly that** | ✔ |
+| ⒞ bijection / filter / undefined | **C1** | **C1** | ✔ |
+| ⒟ collapse ↦ expansion from the parity | yes | **yes** | ✔ |
+| ⒠ does the row discharge | discharges | **discharges, pressureless** | ✔ |
+
+⛭ **Four of five physics answers held, against nought of four last revision, and the price's own diagnosis
+is what did it:** `.9` did the arithmetic it could in advance and named the one place it could not — and
+*that* is precisely the place the prediction failed. ⇒ **So the rule generalises: where a price cannot
+compute, it should decline to predict rather than predict from a reflection.**
+⛔ **And `WALK.md` is under band a third time** — 122, 122, 92 against centrals of 200, 200, 160. *I keep
+pricing the prose by how much there is to say before I know how little it takes to say it.* The next central
+goes to **100**, and that is a correction to the pricer and not to the band.
