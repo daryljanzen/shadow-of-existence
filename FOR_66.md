@@ -22956,3 +22956,70 @@ optimism with a table around it*, so this one budgets for two that do not.
 ⛔ Not re-running the `r7453` ⓓ control — you said it is done and recorded. ⛔ Nothing on the scheduled
 prompt. ⛔ Not re-measuring `check_quote_pins`: `r7453+70.2` owns that number now in both scripts, and ⑤ is
 my withdrawal of the competing one.
+
+## ✔⛭⛔ `r7457+cc66.98` — **ONE TABLE: BOTH SCRIPTS SOURCE IT AND NEITHER RESTATES IT. THE ⓓ CONTROL PASSES — ONE CORRUPTION, TWO SCRIPTS PRINT IT. ⛔ AND ONE PRICED ROW IS OUT OF BAND BECAUSE I MISPRICED MY OWN HABIT**
+
+`r7457` ④ built. **`scripts/_gate_exclusions.sh` is the single source**; `turn_gates.sh` and
+`run_touched_readers.sh` both `.` it behind a readability guard and neither holds a copy of any reason.
+
+### ✔ ① THE ⓓ CONTROL, VERBATIM METHOD AND RESULT
+
+I corrupted **one** reason in the single source — `check_quote_pins`' text replaced by a sentinel — and
+asked both scripts, then restored it and asked again:
+
+```
+corrupted:  _gate_exclusions.sh         sentinel present: 1
+            turn_gates.sh --print-exclusions         prints sentinel: 1
+            run_touched_readers.sh --class2 '709f940e3^..709f940e3'   prints sentinel: 1
+restored:   both print '595s here, 186-279s in CI'   1 and 1   (sentinel remaining: 0)
+```
+
+⇒ **Both scripts print the corrupted text, so there is one table and neither of them is mine.** ⌗ Your ⓓ
+wording was the test I needed: *if only one does, there are still two tables and one of them is yours.*
+
+### ⛭ ② ⓑ AND ⓒ, AND WHY THE SHAPE IS A FUNCTION FILE
+
+ⓑ: `turn_gates.sh` **runs gates at source time**, so sourcing it would execute the batch; a `grep` of one
+script by the other is parsing an instrument's source for its opinion. ⇒ **A sourceable function file.**
+ⓒ: **both kinds moved, neither flattened** — `EXCLUDE_NAMES` + `reason_for` (hand-written cost and trigger,
+with `70`'s two values and their dates) **and `needs_unmet`**, the tested precondition. ⌗ The proof that the
+second kind is still live rather than copied into a list: on this container `--print-exclusions` prints
+**`check_sitemap_resolves (no assembled _site here)` and NOT `check_compile`** — `pdflatex` is here, so that
+gate runs, exactly as your ⓒ says it now does. **A met precondition turns the gate back on, and class two
+carries the same test with the same printing.**
+
+⌗ **`--print-exclusions` exists so ⓓ is affordable**: the table and the roster, nothing run, 14 lines. *A
+control that costs a 133-gate batch is a control nobody re-runs — which is how the stale copy survived.*
+
+### 💰 ③ MEASURED AGAINST `.97`'s PRICE — FIVE INSIDE, ONE OUT
+
+| what | predicted (band) | measured | verdict |
+|---|---|---|---|
+| new `scripts/_gate_exclusions.sh` | 45 (30–70) | **54** | ✔ inside |
+| `turn_gates.sh` net | −20 (−10…−30) | **−4** (+24/−28) | ⛔ **out** |
+| `run_touched_readers.sh` net | +2 (−5…+15) | **+7** (+19/−12) | ✔ inside |
+| `--print-exclusions` affordance | 8 (5–15) | **14** | ✔ inside, at the top |
+| ⓓ control wall | 15 s (5–60) | **~10 s** | ✔ inside |
+| measurement runs | 3 (**2–6**) | **4** | ✔ inside the widened band |
+
+⛔ **The out-of-band row is `turn_gates.sh` and the cause is mine and specific:** I priced the pointer as
+*"source line plus guard"* — two lines — and then wrote ten, because this corpus's convention is that a
+thing which moved says **where it went and why** at the place it left. *The convention is right and the
+price was written by a seat that would not follow it.* ⌗ And `.97`'s widened measurement band held: 4 against
+2–6, where `.96`'s 4 against 2–3 did not.
+
+### ⌗ ④ THE PRE-PUSH GATE FOR THIS PUSH, DERIVED AND RUN
+
+`r7453` ③'s division, applied to a diff that is **three scripts and this file**:
+
+- **The grep rule on the scripts I edited names no gate.**
+  `grep -ln 'turn_gates\|run_touched_readers\|_gate_exclusions' corpus/check_*.py scripts/*.py` returns
+  `_touched_pin_readers.py`, `gen_live_edition.py`, `regen_frontier.py` — an instrument and two generators,
+  no `corpus/check_*`. ⌗ *So the reader set of a script edit is empty of gates here, which is why class two
+  reports `no data file changed` on the script half rather than nothing at all.*
+- **Class two on this file's edit** names and runs `check_order_acknowledged` and
+  `check_paper_pins_not_comment_only` — the FOR-channel readers — and both are green; the run is in the
+  commit message rather than recalled here.
+- ⛔ **What this push does NOT claim**: `turn_gates.sh`'s own batch is not re-run here. Its change is
+  structural (the table left, an affordance arrived) and its roster assertion is unchanged, but **CI's fast
+  job is the whole-job gate** and `--print-exclusions` is the only part of it this push measured.
