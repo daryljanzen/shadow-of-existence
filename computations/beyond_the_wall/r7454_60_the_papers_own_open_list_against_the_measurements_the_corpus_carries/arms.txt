@@ -1,0 +1,174 @@
+r7454 -- THE ARMS AS REGISTERED, SCORED AGAINST WHAT CAME BACK
+==============================================================
+
+PREDICTION.md registered at d47db6d6, before `open_list.py` existed.
+
+⛔ THE RUN IS VOID.  TWO OF THE THREE CONTROLS FIRED, AND THE SECOND FIRING IS NOT A
+   BUG BUT THE LIMIT OF THE WHOLE APPROACH.
+
+   Ⓥ① OVER-FIRE -- FIRED.  P18's fourth-peak item is open and data-gated.  Its own
+   figures `0.9` and `1.3` sit, as whole tokens, in its own cited paper, in a sentence
+   pair that carries a settlement marker.  The three conjuncts are met and the item is
+   still open.  ** Co-occurrence is not aboutness, and no threshold repairs that. **
+
+   Ⓥ② OVER-FIRE -- HELD.  PO-91, which no receipt in the tree measures, came back
+   NO-MARKER-MATCHED against its own cited paper.
+
+   Ⓥ③ UNDER-FIRE -- FIRED.  PO-50's live item was retired at r7222 and the receipt that
+   retired it is cited by name; the locator cannot see the retirement.  The receipt
+   closes the question in the words *"THERE IS NO CONTESTED DIRECTION"*, *"the quotient
+   is bounded below by one"* and *"the convention account is ELIMINATED"*, none of which
+   is in the fixed marker list.  ** THE LIST IS NOT GROWN TO REACH THEM. **  Growing a
+   word list until the figure agrees is the move this programme has refused since
+   r7125, and refusing it here is worth more than a passing control.
+
+   ⌗ AND THE VOID CLAUSE AS REGISTERED WAS COARSER THAN THE TWO FAILURES IT NAMED.
+     PREDICTION.md wrote one void clause for both controls.  An under-fire control bears
+     on the NEGATIVE verdicts and an over-fire control on the POSITIVE ones, so a reader
+     could rescue half this run on that distinction.  ** It is recorded as a defect in
+     the registration and not used as a rescue. **  The run is void as registered.
+
+THE ARMS
+--------
+
+ Ⓐ  THE TABLE'S ROW COUNT IS 7.  ** HIT. **  The table parses to seven rows and the
+    paper says seven, twice.  The one arm the broken locator does not touch.
+
+ Ⓑ  0 TO 2 OF THE SEVEN TABLE ROWS REFUTED.  ** NOT MEASURABLE. **  Reported as not
+    measurable and not as zero.  Three of the seven resolve to no cited source at all
+    even at paragraph scope, and the locator that would judge the other four is the one
+    the controls voided.
+
+ Ⓒ  1 TO 3 OF THE PROSE CLAIMS REFUTED.  ** NOT MEASURABLE, for the same reason. **
+    One case stands, and it stands on READING and was DECLARED in PREDICTION.md before
+    any code existed, so this arm is not credited with it.
+
+ Ⓓ  1 TO 2 ANSWERED AGAINST THEIR OWN FORM.  ** NOT MEASURABLE. **  The one declared
+    case is of this kind; whether there are others is exactly what the void prevents.
+
+ Ⓔ  3 TO 5 OF THE SEVEN HAVE A LIVE FRONTIER ROW.  ** MISS -- 2. **  Mechanically, by
+    a two-shared-word rule against the register's WHAT cells: row 5 -> `PO-93`, row 6 ->
+    `PO-92`.  ⌗ By READING there is a third: row 7's discharge clause is *"a constraint
+    on n_s that does not run through the damping tail"*, which is `PO-24`'s row text
+    almost verbatim, and the two share only the word "tilt" so the matcher cannot see
+    it.  ** The arm is scored on the mechanical figure and reported as a MISS, because
+    scoring it on the reading would be scoring it on the thing the instrument was
+    supposed to supply. **
+
+ Ⓕ  1 TO 2 FRONTIER STEPS MINTED FROM A REFUTED SENTENCE.  ** 1, BY READING, NOT BY A
+    CENSUS. **  `PO-87` step (1), minted at r7393.  A census would need the voided
+    locator, so no second case is claimed and none is excluded.
+
+ Ⓖ  NO PAPER BUT P18 ASSERTS THE TERM COMPUTATION IS OPEN.  ** HIT. **  One occurrence
+    across every `corpus/*.tex`, in P18 itself.  So the text repair is one sentence.
+
+ Ⓗ  PRICE UNDER 60 s.  ** HIT -- 1.0 s for the sound half, 1.3 s for the void run,
+    0.4 s for the seed. **
+
+WHAT STANDS, AND ON WHAT
+------------------------
+
+ ① ADJUDICATED, FROM THE RECORD'S OWN EXPLICIT STATEMENTS.  P18's sentence *"Which term
+   of the projection makes it is the open computation"* is refuted by the paper it cites
+   one sentence earlier, which states *"no single term is the channel"* and *"not by any
+   one source term nor by the interference between two"*, and which goes on to state the
+   mechanism as a law with nothing fitted in it.  ** The item is answered, and answered
+   against its own form: "which term" has no answer of the shape it asks for. **  An
+   item like that cannot be discharged by doing what it asks.
+
+ ② `PO-87` step (1) inherited it at r7393 and is retired.  What is open in its place is
+   named in the cited paper's own words and is not a term: the retention is what the
+   kernel's acceptance makes of a given projection distance, so it turns on which rate
+   that distance is built on.
+
+ ③ MECHANICAL, AND INDEPENDENT OF THE VOID BECAUSE IT IS A PARSE AND NOT A VERDICT:
+   ** 5 of P18's 19 open-item claims cite nothing at all **, in the claim's own sentence
+   or anywhere in its paragraph.  Among them is the sentence that calls the acoustic
+   rejection *"the largest open item in the paper"*.  An uncited claim about what is
+   open cannot be checked against a source by any instrument that follows citations, and
+   not by a reader either without guessing which result it is about.
+
+ ④ AND THE SEVEN-ITEM LIST DOES NOT CARRY THE ITEM THE PAPER TWICE CALLS ITS LARGEST.
+   ADJUDICATED by reading the list: the seven are the colourless triple, the generative
+   law, the first peak, the progenitor spectrum, the Hubble-Eddington mass, the charged
+   collapse and the tilt tension.  The acoustic contrast excess is not among them, while
+   the section's own prose says *"what this list carries is the question that section
+   leaves standing"* and the weighing section says *"one real open item in the
+   cosmology: a mechanism for the acoustic deficit"* and then *"lists the seven open
+   items in full"*.  ⌗ This is stated as a reading of the list and not as a count the
+   instrument produced.
+
+FOUR DEFECTS OF THIS SEAT'S OWN, EACH RECORDED RATHER THAN QUIETLY REPAIRED
+---------------------------------------------------------------------------
+
+ (i)   BAG-OF-WORDS OVER-FIRE.  The first draft scored evidence by shared distinctive
+       words and returned 1,543 evidence lines for the first table row, 135 of them
+       carrying a settlement marker, over a 146,677-line population.  At that rate every
+       item is answered by something.
+ (ii)  LINE VERSUS SENTENCE.  The second draft keyed items to lines.  The two figures
+       that tie P18's claim to its source sit on the line above the claim, so the one
+       item this seat had already established came back NO-MARKER-MATCHED.  ** What made
+       that visible is that PREDICTION.md DECLARED the answer before the code existed. **
+ (iii) CITATION ONE SENTENCE AWAY.  The claim's `\cite` is in the sentence before it, so
+       sentence-scoped resolution reported the claim UNREACHABLE.  Widened to the
+       paragraph, and the scope used is printed per item.
+ (iv)  A CLOSURE COUNTED AS AN OPEN ITEM.  The marker list matched *"settled negatively
+       RATHER THAN LEFT OPEN"* and read it as a claim that something is open.  The
+       population was counting closures as open items -- this family's shape pointed the
+       other way.
+
+ (v)   AND THE FIFTH IS THE ONE THAT MATTERS MOST, BECAUSE IT IS A MEMBER OF THE CLASS
+       `PO-78` EXISTS FOR.  The seed's first draft asserted that the claim this revision
+       is about IS IN `P18`'s open-item population -- and this revision's own repair
+       removed it from the paper.  ** The test failed on the SUCCESS of its own work. **
+       That is the row's class verbatim: an assertion that passes on something other
+       than its own measurement, breaking when the sentence it pinned stopped saying
+       what it said.  ⌗ The repair applied is the row's OWN, owed since `L-249` at
+       `r3105` and quoted in the row to this day: ** pin the historical state at the
+       commit it stood at, assert the current state separately. **  The seed now pins
+       the claim at the commit that added it, asserts separately that the paper no
+       longer carries it, and asserts that the cited paper's negation stands in its
+       place -- so it is directional and cannot be satisfied by the paper reverting.
+       ⌗ Caught by running the seed after the repair rather than before, which is luck;
+       the registration did not reach it because the registration is about the paper and
+       this is about the instrument.
+
+ (vi)  AND A SIXTH, FOUND BY CI AFTER THE REPAIR SHIPPED, WHICH IS THE SAME SHAPE
+       POINTED AT THE CORPUS'S OWN GATE RATHER THAN AT THIS SEAT'S INSTRUMENT.
+       The replacement sentence read *"which term of the projection makes it is NOT
+       OPEN"*, and `check_open_references` matches `\bopen\b`.  ** A sentence that
+       DENIES openness tripped the open-claim detector, on its own wording, in the
+       revision whose whole point was to remove an open claim. **  ⌗ The gate is right
+       about the token and wrong about the sentence, and it says so itself: it *"RULES
+       NOTHING"* and reds only on a new key.
+       ⇒ It offers two routes and both are worse than a third: a baseline row for a
+       claim that is not one, or a negation entry in `corpus/open_vocabulary.tsv` --
+       which would widen a SHARED vocabulary for every seat, so that *"is not open"*
+       leaves the net wherever any seat writes it.  ** Reworded to "is settled", which
+       says the same thing in plainer English and carries no marker. **
+       ⌗ *And two more gates came with it, both from the same one-sentence repair: the
+       replacement carried a SECOND `\cite{JanzenCRcosmology}` the paragraph did not
+       need, which moved `P18`'s dependency row from `37` to `38` in the `P15` column
+       and would have owed an edit to `P7`'s matrix; and `P18`'s committed PDF went
+       older than its source.  The duplicate citation is dropped, the row is back at
+       `37` so `P7` is untouched, and the PDF is rebuilt in the commit after its
+       source, because that gate compares commits and not file times.*
+       ⇒ ** ONE SENTENCE IN A PAPER REACHED THREE GATES, AND THE REGISTRATION REACHED
+       NONE OF THEM: the registration is about the paper's claims and these are about
+       the paper's APPARATUS. **  What caught them was CI, which is the first time this
+       cycle that the gates found something the registration could not have.
+
+ ⌗ THREE OF THE FIRST FOUR ARE ONE SHAPE: A POPULATION WHOSE UNIT WAS NARROWER OR WIDER THAN
+   ITS SUBJECT WHILE ITS LOGIC WAS CORRECT.  That is the class `PO-78` carries, produced
+   four times inside one instrument built to look for it, and caught by the registration
+   rather than by any gate.  ** The generator is not a past error of this seat's.  It is
+   reproducible on demand. **
+
+REPRODUCING
+-----------
+
+  python3 open_list.py            the VOID run, with its controls, 1.3 s
+  python3 open_list.py --sound    what the record states, nothing inferred, 1.0 s
+  python3 open_list.py --seed     11 assertions over the five repairs, 0.4 s
+
+  Nothing here reads a network or a datum.  Every quotation carries its file and line.

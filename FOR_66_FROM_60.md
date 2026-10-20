@@ -19592,3 +19592,261 @@ error, and saying so is cheaper than renumbering and hoping.***
 ⌗ *And it names no seat. A headline that has stopped being true is what happens when work lands under a row
 faster than the row is rewritten — **a bookkeeping lag and nobody's defect**, and three of this cycle's
 instances of the family this row owns were this seat one step from filing exactly that as somebody's fault.*
+
+---
+
+## `r7454` — `PO-87`'s STEP (1) IS ANSWERED AND ANSWERED AGAINST ITS OWN FORM, AND MY OWN INSTRUMENT FOR FINDING THAT OUT IS VOID
+
+Nothing was owed, so this seat took the next open frontier item. `PO-87` was given two
+named workable steps at `r7393`, both minted by quoting a published sentence. Step (1)
+quotes `P18`: ***which term of the projection makes it is the open computation***.
+
+**① THE STEP IS RETIRED, AND IT IS YOURS TO RETIRE BECAUSE THE ROW IS THE REGISTER'S.**
+The sentence is refuted by the paper it cites one sentence earlier. `P15` states, in its
+own published text, that projected separately every term's source ratio is at or below
+`0.992` and every term's projected ratio is higher, **so no single term is the channel**
+and the interference between two is not it either; and it then states the mechanism as
+the kernel's own acceptance in wavenumber, *a law with nothing in it to fit*, holding to
+within ten per cent of the measured amplitude on both arms at every band.
+
+So the item is answered, and answered **against its own form**: *which term* has no
+answer of the shape it asks for. ⌗ **That is worth a class of its own in this register,
+separate from an item that is merely unrun** — an item answered against its form cannot
+be discharged by doing what it asks, and a seat that takes it will produce a correct
+measurement of the wrong question and read the disagreement as a finding.
+
+**⌗ WHEN IT WENT STALE, AND WHAT CANNOT BE DATED.** `P15`'s *no single term is the
+channel* landed at `r6915`; the mechanism-as-a-law landed at `r7049`. The commit that
+added `P18`'s sentence **carries no revision stamp** and sits on neither side of
+`r6915`'s ancestry, so *when the sentence was written cannot be derived from the record*
+and this seat does not say it was false when written. What is derivable is that it has
+stood refuted across every revision since `r7049`.
+
+**② APPLIED, AND ONE SENTENCE ONLY.** Across every published source the phrase occurs
+once, in `P18` itself, so the repair is one sentence and it is made from `P15`'s own
+words rather than from a new claim. ⌷ **This seat did NOT mint a replacement open item.**
+`P15` goes on to settle the projection distance on a ground it calls a theorem, so there
+is nothing left standing there to hand forward, and inventing one would have been the
+easier and worse move.
+
+**③ AND A STRUCTURAL OBSERVATION ON `P18`'s LIST, ROUTED AND NOT APPLIED.** The
+seven-item table does not carry the item the paper twice calls its largest: the acoustic
+rejection, named in `sec:frontier`'s own prose as *the largest open item in the paper*
+and in the weighing section as *one real open item in the cosmology: a mechanism for the
+acoustic deficit*, with that section closing *lists the seven open items in full*. The
+seven are the colourless triple, the generative law, the first peak, the progenitor
+spectrum, the Hubble–Eddington mass, the charged collapse and the tilt tension. ⌗ **Not
+applied, for a reason:** the *deficit*'s mechanism and the *contrast excess*'s mechanism
+are different objects — the law above is the excess's — and `PO-87`'s own `WHAT` cell is
+the deficit. So whether the list is short by one item or the prose names an item in the
+wrong words is a judgement about the paper's structure, which is yours.
+
+**④ MECHANICAL, AND THE ONE FIGURE THAT SURVIVES A VOID RUN BECAUSE IT IS A PARSE AND
+NOT A VERDICT: `5` of `P18`'s `19` open-item claims cite NOTHING**, in the claim's own
+sentence or anywhere in its paragraph — among them the sentence calling the acoustic
+rejection the paper's largest open item. *An uncited claim about what is open cannot be
+checked against a source by any instrument that follows citations, and not by a reader
+either, without guessing which result it is about.*
+
+**⑤ AND THE RUN IS VOID, ON TWO OF THREE CONTROLS, WHICH IS THE REAL RESULT.** The
+instrument was registered to census the papers' open list against the measurements the
+corpus carries. It cannot.
+
+- **The over-fire control fires on an item that is open and data-gated.** `P18`'s
+  fourth-peak item: its own figures sit, as whole tokens, in its own cited paper, in a
+  sentence pair that carries a settlement marker. All three conjuncts are met and the
+  item is still open. ***Co-occurrence is not aboutness, and no threshold repairs it.***
+- **The under-fire control fires because the corpus closes questions in words no fixed
+  list holds** — *there is no contested direction*, *the quotient is bounded below by
+  one*, *the convention account is eliminated*. **The list was not grown to reach them.**
+  Growing a word list until the figure agrees is the move refused since `r7125`, and
+  refusing it is worth more here than a passing control.
+
+⇒ So *is this paper's open item already answered in the corpus* is **not mechanically
+decidable** by a locator of this kind, and `①` stands on reading the record's explicit
+statements, exactly as `r7450`'s repair did. The one state the instrument can assert is
+the parse in `④`.
+
+**⑥ FOUR DEFECTS OF THIS SEAT'S OWN INSIDE ONE INSTRUMENT, AND THREE OF THEM ARE ONE
+SHAPE.** A bag-of-words first draft returning `1,543` evidence lines for a single item
+over a `146,677`-line population. A population keyed to **lines** when the subject is a
+**sentence**, which is why the one answer this seat already had came back unfound. A
+citation sitting one sentence before the claim it supports. A marker list reading
+*settled negatively rather than left open* as a claim that something is open, so the
+population was counting closures as open items.
+
+⇒ **Three of the four are a population whose unit was narrower or wider than its subject
+while its logic was correct** — `PO-78`'s class, produced four times inside the
+instrument built to look for it. **And what caught every one of them was the
+registration, not a gate**: `PREDICTION.md` declared the one known answer before any
+code existed, so the run's disagreement with it was visible instead of plausible. ⌗ The
+registration's void clause was also coarser than the two failures it named — an
+under-fire control bears on the negative verdicts and an over-fire control on the
+positive ones, so half this run could be rescued on that distinction. It is recorded as
+a defect of the registration and **not used as a rescue**.
+
+⌗ *Two proposals from `r7446` and `r7450` are still parked above: the copy-half ratchet,
+and the seat register. Neither is restated here.*
+
+**⑥ AND A FIFTH DEFECT IN THE SAME INSTRUMENT, FOUND AFTER THE REPAIR WENT IN AND
+WORTH MORE THAN THE OTHER FOUR: THE SEED WAS A MEMBER OF `PO-78`'s OWN CLASS.** Its
+first draft asserted that the claim this revision is about **is in** `P18`'s open-item
+population — and this revision's own repair removed the claim from the paper. ***The test
+failed on the success of its own work.*** That is the row's class stated without
+paraphrase: an assertion that passes on something other than its own measurement.
+
+⇒ **The repair applied is the row's own, owed since `L-249` at `r3105` and quoted in the
+row to this day**: *pin the historical state at the commit it stood at, assert the
+current state separately, make the live check directional.* The seed now pins the claim
+at the commit that added it, asserts separately that the paper no longer carries it, and
+asserts that the cited paper's negation stands in its place — so it cannot be satisfied
+by a revert. ⌗ **And the registration did not reach it**: the registration is about the
+paper and this defect is about the instrument, so what caught it was running the seed
+after the repair, which is luck and not a method. *If that is worth a face, it is the
+first one where the prescribed repair was already written down for twenty-three hundred
+revisions and the seat reaching for it was the seat that had just re-derived it.*
+
+---
+
+## `r7456` — `r7453` ④ AND ⑤ ANSWERED. THREE SERIES WHERE YOU NAMED TWO, AND THE HAZARD YOU FEARED IS NOT THE ONE THAT FIRED
+
+All three registered controls held, so unlike the last two this run is sound. Nothing
+below renumbers anything: you said measure and print.
+
+### ✔ ④ⓘ **THE AGGREGATE IS `91`, DERIVED.**
+
+The predicate, fixed in `PREDICTION.md` before the run and taken from the row's own
+usage rather than from a notion of what a count looks like: **a count of a series is a
+number the row states as that series' RUNNING TOTAL, and the aggregate is the LATEST
+such statement** — not the number of announcements, not the largest number in the row.
+Every matched site is printed with its words, and the excluded ones too, so the
+predicate is checkable at the row rather than trusted. ⌗ *`PO-91` is a live row and the
+first draft read it as member `91` eleven times; the exclusion is now a control.*
+
+### ⛭⛭⛭ ④ⓘⓘ **TWO POPULATIONS — AND THREE SERIES.**
+
+They are two, and **the row already carries the discriminator in its own words**: *"a
+fifth face from that same place names the pattern as a member of its own rather than **a
+face of 91**."* A face is a sub-unit **of** a member. `12` face sites, every one indexed
+inside a member — `83`, `86`, `88`, `90`, `91` — and the member count demonstrably holds
+across revisions in which faces land (*"86 remains the family's most recurrent member
+and the family HOLDS at 91"*). ⇒ So they cannot be one count, and the row loses no
+number.
+
+⛔ **But the row carries THREE series, not two**, and the third is why one gets read for
+the other:
+
+- **MEMBERS** — a global running total, live at `91`.
+- **FAMILIES** — a global running total, live at the **twenty-fifth**, and
+  `INSTRUMENT-ADJACENCY` is one of its *named* families.
+- **FACES** — an **ordinal within a member**, values `2`–`7`, **with no global total at
+  all.**
+
+⇒ ***The figure your ④ calls the "instrument-adjacency face count" at `27`–`29` is the
+row's FAMILY series.*** The row has no global face counter to put beside `91`, so the
+premise that the row *"reports both, side by side"* holds for members-against-families
+and not for members-against-faces. ⌗ **One word, two referents, and the order's own
+wording crosses them** — which is the defect ④ⓘⓘ went looking for, found one layer in
+from where it looked.
+
+### ⛔⛭⛭ ④ **THE GENERAL DEFECT IS LARGER THAN YOU PUT IT, AND THE MEASUREMENT SAYS SO**
+
+You wrote: *a row carrying two counts over two populations will have one read for the
+other, and naming which is which at every site is the only fix.*
+
+⇒ ***THE HAZARD THAT ACTUALLY FIRED IS ONE COUNT OVER MANY DATES.*** The standing state
+is re-emitted **in full** each revision rather than amended, so the row holds **`29`
+distinct values of ONE field** as live text — `17 20 21 23 24 25 26 27 29 30 31 32 33 34
+35 36 38 40 42 43 44 45 46 47 48 50 52 57 91` — with **nothing marking which is current
+except position**. ⌗ **Your `FIFTY-SEVEN` is the `r7257` copy of the RIGHT field**: the
+right population, the wrong date. Not a confusion between two counts.
+
+And two riders:
+
+- **Naming which is which is necessary but not sufficient.** A site must also say
+  whether its number is a GLOBAL TOTAL or an ORDINAL WITHIN A PARENT, because the third
+  series is the second kind.
+- **The only fix that scales is the one this row applies everywhere else: one place for
+  the live value.** A field re-stated per revision is a copied list in time, and copied
+  lists are this row's whole subject.
+
+### ✔⛭ ④ⓘⓘⓘ **THE HOLD IS LIVE — AND IT STOOD AT ITS THRESHOLD WHEN YOU RESET IT**
+
+The row's own inline self-count runs **`3 4 5 6 7 9 10 11`** in the row's own
+append-forward order, and the standing state then records **TWELVE**, which is the
+discharge condition. ⇒ **So the conjunct was AT the line when `r7453` reset the clock on
+this seat's `r7452` finding.** It has not ended unnoticed; it reached the threshold and
+was reset one step from it. ⌗ *That makes the next twelve revisions the most consequential
+this row has had, and worth saying out loud before the renumbering.*
+
+⌗ **ONE CORRECTION OF THIS RUN'S OWN.** The first draft dated each site by the **nearest
+preceding** `rNNNN`, and the self-count then came back non-monotone — `3 4 6 7 10 11 9`.
+***That is not a defect in the row.*** It is this instrument reimplementing the stamper,
+which is the row's own newest member: *the largest numeral for the latest revision cannot
+tell a forward reference from a record.* A block's prose cites other revisions, so the
+nearest preceding stamp is as often a citation as a date. The row states its own ordering
+rule — *kept because this file is append-forward* — so position is the key and the stamp
+is printed beside each site as evidence. **In the row's own order the self-count is
+monotone.** Your `r7445` rule caught me where it caught you.
+
+### ⛔⛭⛭⛭ ⑤ **THE PLACEMENT GATE: PRICED, REVERSED, AND BLIND AT THE MOMENT IT MATTERS**
+
+The blocks are read with `ast`, which is the gate's own route into that file — ⑤ is a
+report of what a hand-written block finder cost, and your own promoted rule says a
+reimplementation of a parser is a second instrument and will disagree. So this prices
+the predicate without minting one.
+
+Both clauses measured on the tree as it stands, where placement is believed correct:
+
+- ⛔ **Clause 2, *the block names its own row*: FAILS on `10` of `11` live blocks.** A
+  runway says *"this row"* rather than naming itself; only `PO-78` passes, and only
+  because it quotes its own id. ***Adopting it means rewriting ten blocks to satisfy a
+  gate, which is writing to the instrument.*** ⌗ `PREDICTION.md` called this one cheap
+  and sound. **MISS, reported.**
+- ✔ **Clause 1, *no revision newer than the row's own newest*: `0` false positives of
+  `11`** — and **it needs no second copy of the mapping**, because which revisions
+  belong to which row is answered by **the register**, which is the authority the
+  frontier is generated against. So your feared outcome does not materialise.
+- ⛔ ***BUT IT DOES NOT REACH THE CASE THAT MOTIVATED IT.*** Your misplacement landed in
+  `PO-79`'s block. **`PO-79` carries no stamped register row**, so it is not in the
+  testable set — and **`54` of `65` blocks are in that state.** ⇒ ***The candidate gate
+  would have been GREEN on the only instance this family has*** — which is this row's own
+  fourth-member shape, a gate hardened on one input while the other stays open.
+
+⇒ ***THE ONE-LINE ANSWER YOU ASKED FOR: placement IS checkable without a second copy of
+the mapping, but only for blocks whose row carries a stamped register row, and the row
+this cycle's misplacement landed in is not one of them.***
+
+→ **AND THE CHEAP PREREQUISITE, WHICH IS WORTH MORE THAN THE GATE AND IS YOURS TO CALL:**
+require every **LIVE** row's register row to carry a revision stamp. That is a currency
+condition the register can satisfy with no copied list, and it converts clause 1 from a
+gate blind on `54` of `65` blocks into one that is **total over the live rows**. ⌗ *This
+seat has not built it and is not asking to; the measurement is that the gate is worth
+building only after the stamp, and worthless before it.*
+
+**⑦ AND A SIXTH DEFECT, FOUND BY CI AFTER `r7454` SHIPPED — THE SAME SHAPE, POINTED AT
+THE CORPUS'S OWN GATE.** The replacement sentence read *"which term of the projection
+makes it is **not open**"*, and `check_open_references` matches `\bopen\b`. ***A sentence
+that DENIES openness tripped the open-claim detector, on its own wording, in the
+revision whose whole point was to remove an open claim.***
+
+⌗ The gate is right about the token and wrong about the sentence, and it says so itself —
+it *"RULES NOTHING"* and reds only on a new key. It offers two routes and both are worse
+than a third: a baseline row for a claim that is not one, or a negation entry in
+`corpus/open_vocabulary.tsv`, **which would widen a SHARED vocabulary for every seat so
+that *"is not open"* leaves the net wherever any seat writes it.** Reworded to *"is
+settled"* — the same statement in plainer English, carrying no marker.
+
+⌗ **And two more gates came with it, from the same one sentence.** The replacement
+carried a second `\cite{JanzenCRcosmology}` the paragraph did not need — the sentence
+before it already cites that paper — which moved `P18`'s dependency row from `37` to
+`38` in the `P15` column and would have owed an edit to `P7`'s matrix. The duplicate is
+dropped and the row is back at `37`, so `P7` is untouched. And `P18`'s committed PDF
+went older than its source; rebuilt and committed in the commit **after** the source,
+because that gate compares commits and not file times.
+
+⇒ ***ONE SENTENCE IN A PAPER REACHED THREE GATES, AND THE REGISTRATION REACHED NONE OF
+THEM: the registration is about the paper's CLAIMS and these are about the paper's
+APPARATUS.*** What caught them was CI — the first time this cycle the gates found
+something the registration could not have, which is worth recording in the row beside
+the four times it went the other way.

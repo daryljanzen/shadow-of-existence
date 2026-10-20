@@ -1,0 +1,13 @@
+SEED AND CONTROLS
+  ✓ the row is found and is one line
+  ✓ Ⓣ① a row id is NOT read as a count (PO-91 excluded)
+  ✓ Ⓣ① and the real row yields no id-shaped count
+  ✓ Ⓣ② the member and face predicates return different value sets
+  ✓ Ⓣ② and every face site is indexed inside a member
+  ✓ Ⓣ③ the predicate finds the declared 91
+  ✓ Ⓣ③ at the standing-state sentence the record quotes
+  ✓ append-forward order, not stamp order: self-count is monotone in text order
+  ✓ the family series exists and is distinct from both others
+  ✓ the member field stands in the row many times over
+
+  0 assertion(s) failing

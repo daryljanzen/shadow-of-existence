@@ -1,0 +1,48 @@
+==============================================================================
+r7456 -- PRICING THE RUNWAY-PLACEMENT PREDICATE   (answers r7453 (5))
+==============================================================================
+  65 runway block(s) read via ast | 11 register row(s) with a newest stamp
+
+-- CLAUSE 2, "the block contains its own row id"
+   10 of 11 block(s) FAIL.  ['PO-24', 'PO-50', 'PO-86', 'PO-87', 'PO-88', 'PO-89', 'PO-90', 'PO-91', 'PO-92', 'PO-93']
+   ⇒ CHEAP AND CHECKABLE: one substring test per block, no mapping needed,
+     and it is the clause that would actually have caught r7453's misplacement,
+     because 51 lines of PO-78 text landed in PO-79's block.
+
+-- CLAUSE 1, "no revision newer than its own row's newest"
+   0 of 11 block(s) FAIL on a tree where placement is believed correct.
+   54 block(s) NOT TESTABLE (no register row or no stamp): ['PO-10', 'PO-13', 'PO-14', 'PO-15', 'PO-17', 'PO-18', 'PO-19', 'PO-20', 'PO-23', 'PO-25']
+
+==============================================================================
+THE PRICE, ADJUDICATED -- AND IT REVERSES THIS SEAT'S OWN PREDICTION
+==============================================================================
+  ⛔ ** CLAUSE 2 IS PRICED OUT, AND IT IS THE CLAUSE PREDICTION.md CALLED CHEAP. **
+    10 of 11 live blocks FAIL it on a tree where placement is believed correct, because a
+    row's runway prose says "this row" rather than naming itself; only PO-78 passes, and
+    only because it quotes its own id.  ⇒ Adopting it would mean rewriting ten blocks to
+    satisfy a gate, which is writing to the instrument.
+
+  ✓ ** CLAUSE 1 SHOWS NO FALSE POSITIVE -- 0 of 11 -- so it is SOUND where it applies,
+    and PREDICTION.md predicted the opposite.  REPORTED AS A MISS. **
+    And it needs no second copy of the mapping: which revisions belong to which row is
+    answered by THE REGISTER, which is the authority the frontier is generated against.
+
+  ⛔ ** BUT IT DOES NOT REACH THE CASE THAT MOTIVATED IT, AND THAT IS THE FINDING. **
+    r7453's misplacement put 51 lines of PO-78's amendment inside PO-79's block.  PO-79
+    carries NO stamped register row, so it is NOT in the testable set -- 54 of 65 blocks
+    are in that state.  ** The candidate gate would have been GREEN on the only instance
+    the family has. **  ⌗ That is this row's own fourth-member shape: a gate hardened on
+    one input while the other stays open, blind at the moment it matters.
+
+  ⌗ ** THE ONE-LINE ANSWER THE ORDER ASKED FOR: placement IS checkable without a second
+    copy of the mapping, but only for blocks whose row carries a stamped register row,
+    and the row this cycle's misplacement landed in is not one of them. **
+
+  → ** AND THE CHEAP PREREQUISITE, WHICH IS WORTH MORE THAN THE GATE: require every
+    LIVE row's register row to carry a revision stamp.  That is a currency condition the
+    register can satisfy with no copied list, and it converts clause 1 from a gate that
+    is blind on 54 of 65 blocks into one that is total over the live rows. **
+
+  ⌗ reachability of the motivating case, measured: NOT REACHED
+
+price 0.1s

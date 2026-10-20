@@ -1,0 +1,116 @@
+r7456 -- THE ARMS AS REGISTERED, SCORED AGAINST WHAT CAME BACK
+==============================================================
+
+PREDICTION.md registered at d9c23749, before `two_counts.py` existed.
+Answers `r7453` ④ and ⑤.
+
+✔ ALL THREE CONTROLS HELD.  The run is SOUND -- the first of this seat's last three
+  that is, and the reason is that the predicate was written from the row's own wording
+  rather than from a notion of what a count looks like.
+
+   Ⓥ① OVER-FIRE, the row-id trap -- HELD.  Fed the synthetic `PO-91 blindness members`,
+   the predicate excludes it and records the exclusion.  On the real row, `0` id-shaped
+   counts survive.  ⌗ The first draft DID read `PO-78 ... members` as a count, eleven
+   times; the exclusion list is printed in the run so it is checkable and not asserted.
+
+   Ⓥ② OVER-FIRE, the other series -- HELD.  The member and face predicates return
+   different value sets, and every face site is indexed inside a member.
+
+   Ⓥ③ UNDER-FIRE -- HELD.  The predicate finds the declared `91` at the standing-state
+   sentence the record quotes.
+
+THE ARMS
+--------
+
+ Ⓐ  ** THE DERIVED AGGREGATE IS `91`.  HIT. **  Derived, not read: the live value is the
+    last statement of the row's own running-total wording, and it is
+    *"NINETY-ONE blindness members, HELD at 91 for twelve revisions"*.
+
+ Ⓑ  ** 4 TO 9 DISTINCT VALUES.  MISS -- `29`. **  And the miss is the finding: `17 20 21
+    23 24 25 26 27 29 30 31 32 33 34 35 36 38 40 42 43 44 45 46 47 48 50 52 57 91` all
+    stand in the row as live text.  The band was wrong by a factor of three.
+
+ Ⓒ  ** TWO POPULATIONS, NOT ONE COUNTED TWICE.  HIT -- and the row already carries the
+    discriminator in its own words. **  Required evidence was a revision at which one
+    moves and the other does not; the row supplies it repeatedly -- *"86 remains the
+    family's most recurrent member and the family HOLDS at 91"*, a face landing while
+    the member count does not move.  And the row states the relation outright:
+    *"a fifth face from that same place names the pattern as a member of its own rather
+    than A FACE OF 91."*  ⇒ A face is a sub-unit OF a member, so they cannot be one
+    count, and `12` face sites are indexed inside members `83 86 88 90 91`.
+
+ Ⓓ  ** THE FACE COUNT'S LIVE VALUE IS 30.  MISS -- THERE IS NO GLOBAL FACE COUNT. **
+    Every face site in the row is a per-member ordinal and the values run `2`-`7`.
+    ⇒ ** THE ROW CARRIES THREE SERIES AND NOT TWO: ** members (global, `91`), FAMILIES
+    (global, latest `TWENTY-FIFTH`), and faces (ordinal within a member, no total).
+
+ Ⓔ  ** THE HOLD IS LIVE AND ITS CLOCK RESTARTED AT `r7453`.  HIT, with a sharper
+    figure. **  The row's own inline self-count runs `3 4 5 6 7 9 10 11` in text order
+    and the standing state then records TWELVE -- ** which is the threshold. **  So the
+    conjunct was AT its discharge condition when `r7453` reset the clock on this seat's
+    `r7452` finding.  The hold has not ended unnoticed; it reached the line and was
+    reset one step from it.
+
+ Ⓕ  ** THE PLACEMENT PREDICATE PRICES OUT.  MISS, AND REVERSED. **  PREDICTION.md said
+    clause 2 (*the block names its own row*) is cheap and clause 1 (*no revision newer
+    than the row's own newest*) is not.  Measured, it is the other way:
+      - clause 2 FAILS on `10` of `11` live blocks on a correct tree, because a runway
+        says *"this row"* rather than naming itself; only `PO-78` passes and only
+        because it quotes its own id.  Adopting it means rewriting ten blocks to satisfy
+        a gate, which is writing to the instrument.
+      - clause 1 has `0` false positives of `11`, and needs no second copy of the
+        mapping: which revisions belong to which row is answered by THE REGISTER.
+      - ⛔ ** but it does not reach the case that motivated it. **  `r7453`'s
+        misplacement landed in `PO-79`'s block; `PO-79` carries no stamped register row,
+        so it is not in the testable set -- `54` of `65` blocks are in that state.
+        ** The candidate gate would have been GREEN on the only instance the family
+        has. **
+
+ Ⓖ  ** PRICE UNDER 30 s.  HIT -- 0.3 s counts, 0.1 s placement, 0.2 s seed. **
+
+THE GENERAL DEFECT, WHICH THE ORDER ASKED FOR AND WHICH THE MEASUREMENT CHANGES
+------------------------------------------------------------------------------
+
+`r7453` ④ put it as: *a row carrying two counts over two populations will have one read
+for the other, and naming which is which at every site is the only fix.*  The
+measurement supports a different and larger statement.
+
+ ① ** THE HAZARD THAT ACTUALLY FIRED IS ONE COUNT OVER MANY DATES, NOT TWO COUNTS OVER
+   TWO POPULATIONS. **  The standing state is re-emitted in full each revision rather
+   than amended, so the row holds `29` values of ONE field as live text with nothing
+   marking which is current except position.  ⇒ `r7453`'s own `FIFTY-SEVEN` is the
+   `r7257` copy of the RIGHT field: the right population, the wrong date.
+
+ ② ** AND NAMING WHICH IS WHICH IS NECESSARY BUT NOT SUFFICIENT. **  A site must also
+   say whether its number is a GLOBAL TOTAL or an ORDINAL WITHIN A PARENT, because the
+   row's third series is the second kind and the word *face* is used for both it and
+   (in the order) for the series that does have a total.
+
+ ③ ** THE ONLY FIX THAT SCALES IS THE ONE THE ROW ALREADY APPLIES ELSEWHERE: one place
+   for the live value. **  A field re-stated per revision is a copied list in time, and
+   this row's whole subject is copied lists.
+
+REPRODUCING
+-----------
+
+  python3 two_counts.py            the three series, the time series, the hold, 0.3 s
+  python3 two_counts.py --place    the placement pricing, via `ast`, 0.1 s
+  python3 two_counts.py --seed     10 assertions and the three controls, 0.2 s
+
+  ⌗ The runway blocks are read with `ast`, which is the gate's own route into that file.
+    `r7453` ⑤ is a report of what a hand-written block finder cost, and `r7445`'s rule
+    says a reimplementation of a parser is a second instrument and will disagree -- so
+    this prices the predicate without minting one.
+
+  ⌗ ONE CORRECTION OF THIS RUN'S OWN, RECORDED: the first draft dated each site by the
+    NEAREST PRECEDING `rNNNN`, and under that rule the hold's self-count came back
+    non-monotone -- `3 4 6 7 10 11 9`.  That is not a defect in the row.  It is this
+    instrument reimplementing the stamper, which is the row's own newest member: *the
+    largest numeral for the latest revision cannot tell a forward reference from a
+    record.*  A block's prose cites other revisions, so the nearest preceding stamp is
+    as often a citation as a date.  The row states its own ordering rule -- *kept
+    because this file is append-forward* -- so POSITION is the key and the stamp is
+    printed beside each site as evidence.  In the row's own order the self-count is
+    monotone.
+
+  Nothing here renumbers the row.  `r7453`: measure and print, the gate seat applies.
