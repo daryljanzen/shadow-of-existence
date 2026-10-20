@@ -1,0 +1,186 @@
+
+r7462 — PO-88's TERMINATION CLAUSE, COMPONENT BY COMPONENT.
+
+PO-88's second exit reads: "the two structural results are shown to leave the through-crossing
+evolution no freedom at all --- that every admissible stress-energy crosses identically because
+zero cosmic duration and zero oscillatory content exhaust the problem."  It quantifies over EVERY
+ADMISSIBLE STRESS-ENERGY and it is one sentence.  A concrete matter model's stress-energy is not
+one object: relative to the collapse worldline congruence it is rho, p, q_a, pi_ab, a composition
+vector, and perturbation content in three irreducible types.  SO THE CLAUSE IS ELEVEN CLAIMS AND
+IT IS WRITTEN AS ONE.
+
+This locator puts each sector to the corpus separately and asks what the eighteen papers say
+happens to IT at the branch point.  THREE STATES, NOT TWO (r7422, r7436):
+
+    COVERED      a sentence (or, with the scope printed, a paragraph) carrying both the sector's
+                 own anchor and a crossing marker
+    STATED-AWAY  the sector IS in the corpus, and never at the crossing
+    ABSENT       no sentence matches the sector's anchor.  WHAT WAS SEARCHED, so the claim
+                 carries its own evidence: the anchor regex list printed in SECTORS below, run
+                 over every sentence of the eighteen paper sources named in CANONICAL_TITLES
+                 plus CR_synthesis -- 10,998 sentences after the bibliography cut, of 11,743 --
+                 with the TeX stripped by r7454's stripper and the match case-folded.  A wider
+                 claim than that is not made here: the sector may be in a receipt, a figure
+                 script or a register row, none of which this locator reads.
+
+A sector's own absence is its own state.  Reporting it as coverage would be the gate writing the
+row rather than reading it (r7458's guard), and reporting it as a defect in the papers would be
+this seat's own generator: an instrument built to check a condition that already exists will
+disagree with it, and the disagreement will look like a finding about the subject.
+
+⌗ THE SENTENCE SPLITTER AND THE TEX STRIPPER ARE IMPORTED FROM r7454's `open_list.py`, NOT
+  REWRITTEN.  r7445's rule, promoted at r7447: a reimplementation of a predicate is a second
+  instrument and it will disagree.  If that file moves, this one fails loudly rather than
+  quietly growing a second copy.
+
+
+==============================================================================================
+  THE ARMS, AGAINST PREDICTION.md — registered 50a39f79 before this file existed
+==============================================================================================
+  ⌗ the bibliography cut: 11746 sentences in the eighteen papers, 11001 read, 745 dropped as reference list
+
+  Ⓐ coverage      predicted COVERED 4 / STATED-AWAY 4 / ABSENT 3
+                  measured  COVERED 9 / STATED-AWAY 1 / ABSENT 1   ⇒ MISS, and in the direction that matters:
+                  THE CORPUS SPEAKS TO MORE OF THE DECOMPOSITION AT THIS LOCUS THAN
+                  THE PREDICTION ALLOWED FOR.
+                  covered:     rho p pi comp scalar tensor stack filter dur
+                  stated-away: vector
+                  absent:      q
+                  ⌗ AND THE REGISTERED RULE'S PARAGRAPH FALLBACK CARRIES 2 OF THEM:
+                    sentence-scope covered 7: rho pi comp scalar stack filter dur
+                    paragraph-only         2: p tensor
+                    a paragraph naming the branch point anywhere and the sector
+                    anywhere is weaker evidence than one sentence carrying both, and
+                    the finding below rests on the SENTENCE column.
+
+  Ⓑ degeneracy    predicted 0 paper sites stating the whole-tensor degeneracy
+                  measured  3   ⇒ MISS ON THE PHRASE, AND THE READING IS
+                  THE POINT: every one of them is a DIFFERENT no-freedom.
+                    groupoid_paper.tex:421  'no freedom'  So a concrete matter model has no freedom in where the reassignment acts---the vantage is forced---and of the two requirements only the second remains to be checked of such a model: whether its histor
+                    CR_cosmology.tex:2849  'no freedom'  A model therefore has no freedom in where the reassignment acts, and misplacing it does not fail to give a cosmology by a little---it gives a black hole instead.
+                    CR_synthesis.tex:343  'no freedom'  And what makes the first a category rather than a description is a theorem. Two events that are null-separated ( s^ 2 =0) and spatially coincident along the connection ( x=0) have =0 also, since s^ 2 
+                  ⇒ the corpus says a model has no freedom in WHERE THE REASSIGNMENT
+                    ACTS.  PO-88's clause says the through-crossing EVOLUTION has no
+                    freedom at all.  ONE PHRASE, TWO OBJECTS: a forced placement of
+                    the law is not a degenerate map on the content.
+
+  Ⓒ scope         predicted >=1 observed-range site, 0 every-k sites
+                  measured  every-k 28 · observed-range 3   ⇒ MISS ON THE EVERY-K HALF
+                    every-k   CR_framework.tex:801  '\bevery mode\b'
+                      Two constraints on that derivation are established, and both narrow it rather than advance it. The first fixes the class of what can be inherited: the segment preceding the branch point acts on perturbations as a filter that damps oscillatory content and leaves frozen content untouched, and every mo
+                    every-k   CR_framework.tex:1410  '\bevery mode\b'
+                      And at the crossing no mode is oscillating---on the contracting leg aH grows without bound as r 0, so the comoving horizon shrinks to zero and every mode exits it and freezes first ---so what the segment removes is the sub-horizon oscillation, that is the acoustic phase, and not the frozen amplitude
+                    every-k   CR_framework.tex:1753  '\bevery\s+k\b'
+                      The potential's own evolution is derived on each leg---closed form on the collapse leg, constant growing mode on the expanding one---and the two are joined at the branch point, where _i for every k and the expanding leg inherits 9 10 _i scale-invariantly .
+                    every-k   CR_framework.tex:1983  '\bevery wavenumber\b'
+                      On the field side the segment's selection rule e^ -kc_s has two factors, and reading it at fixed k rather than fixed c_s makes it a criterion on species: a pressureless component has c_s=0 identically, so its exponent vanishes at every wavenumber and its crossing is exact rather than adiabatic, whil
+                    every-k   CR_framework.tex:1983  '\bevery\s+k\b'
+                      Read as a selection rule on species that is too strong, and for a structural reason. The kernel acts on oscillatory content, and on the progenitor's own interior no content arrives oscillating: |aH| diverges as 1/x at the branch point while c_s saturates at 1/ 3, so c_sk/|aH| c_skx 0 for every k, an
+                    every-k   canonical_time.tex:262  '\bevery mode\b'
+                      And at the crossing no mode is oscillating: on the contracting leg aH grows without bound as r 0, so the comoving horizon shrinks to zero and every mode exits it and freezes before the branch point .
+                    every-k   canonical_time.tex:1490  '\bevery mode\b'
+                      Written in the field operators themselves the trace carries two terms and not none--- _n^ 2 /a^ 6 and _n^ 2 _n^ 2 /a^ 2 , the second a potential-like term from the tower's own gradient energy, with _n^ 2 8 for every mode so that it is neither zero nor small---and their combination is a^ -4 (a_n^ 2 +
+                    every-k   CR_cosmology.tex:128  '\bevery mode\b'
+                      The transmission is supported by a mechanism rather than by the absence of a scale alone ( ): on the contracting leg aH grows without bound as the branch point is approached, so the comoving horizon shrinks to zero and every mode exits it and freezes before the crossing; the imaginary-time segment's
+                    every-k   CR_cosmology.tex:297  '\bevery mode\b'
+                      proposition [Every acoustic mode is outside the horizon at the branch point] prop:subhorizon Approaching r=0 on the contracting leg the comoving Hubble scale aH grows without bound, so the comoving horizon shrinks to zero and every mode leaves it before the crossing, on either rate and for every wav
+                    every-k   CR_cosmology.tex:313  '\bevery mode\b'
+                      But is the frequency of an oscillating mode, and at the branch point no mode is oscillating. The comoving Hubble scale aH= r/ = 1-f grows without bound as r 0---normalised at the seam, where it is exactly unity, it is 1.96 at r =0.1\, and 19.6 at 10^ -3 ---so the comoving horizon 1/aH shrinks to zer
+                    every-k   CR_cosmology.tex:313  '\bevery mode\b'
+                      So the amplitude and the tilt cross unaltered, and the argument from the absence of a scale is recovered as a consequence of horizon exit rather than assumed. One limit of that census should be stated where it is used rather than left to be discovered: it is computed on the branch where 2M/r is posi
+                    every-k   CR_cosmology.tex:384  '\bevery wavenumber\b'
+                      A pressureless component has c_s=0 identically---not small, not slowly varying---so its exponent vanishes at every wavenumber; on the segment its mode equation is ''=0, whose constant solution the kernel leaves untouched with no approximation at all.
+                    every-k   CR_cosmology.tex:384  '\bevery\s+k\b'
+                      But the exponent has nothing to act on. The kernel acts on oscillatory content---a frozen, zero-frequency mode is a fixed point of it---and on the progenitor's own interior nothing arrives oscillating: aH = a'/a diverges as 1/x at the branch point while c_s saturates at 1/ 3, so c_sk/ aH c_skx 0 for
+                    every-k   CR_cosmology.tex:408  '\bevery mode\b'
+                      One consequence of that freezing bears on the acoustic sector rather than on the crossing, and it is computed rather than left as an inference. Every mode is outside the comoving horizon at the branch point (Prop. prop:subhorizon ), so each re-enters on the expanding leg at its own time, and what it
+                    every-k   CR_cosmology.tex:455  '\bevery wavenumber\b'
+                      At the branch point every acoustic mode is outside the horizon and the leg's closed-form potential has returned to its regular value, so the state arriving there is the ordinary frozen adiabatic one: the effective temperature at half the potential with no velocity, the potential unspent, and the col
+                    every-k   CR_cosmology.tex:550  '\bevery mode\b'
+                      The locus matters and the two available ones give opposite answers: the branch point lies at the far end of the same rising branch, where 2M/r carries aH up without bound and the comoving horizon to zero, so there every mode is outside it ( ).
+                    every-k   CR_cosmology.tex:775  '\bevery mode\b'
+                      At the branch point both follow: every mode is outside the horizon there, so the phase is an extremum with no velocity, and the amplitude is the frozen value the closed-form leg carries, 0.4835\, _i.
+                    every-k   CR_cosmology.tex:1612  '\bevery wavenumber\b'
+                      One whole class is excluded by structure rather than by measurement, and needs no run at all. Every quantity that belongs to the two clocks---the leaf clock, the ruler, the Jacobian between them, the visibility and the optical depth---is a function of conformal time alone, and a function of conforma
+                    every-k   CR_cosmology.tex:2557  '\bevery\s+k\b'
+                      The exponential-of-an-integral form e^ - \, is a WKB approximation whose adiabaticity parameter is of order unity at 5; but the underlying mode equation ^ 2 / ^ 2 = ^ 2 , with =kc_ s and = s/a along the segment, is well posed at every k, and integrating it is a matter of numerics rather than of appr
+                    every-k   CR_cosmology.tex:2603  '\bevery\s+k\b'
+                      Horizon entry on that leg occurs at x=k / 3=1/ 3 for every k---the radiation era's own scale invariance, which recovers from the substrate geometry---so every mode leaves the leg carrying the same free-oscillation amplitude (1/ 3)/2=0.4835\, _i, a single k-independent number .
+                    every-k   CR_cosmology.tex:2663  '\bevery\s+k\b'
+                      Horizon entry at x=1/ 3 for every k makes the accumulated leg phase k _ bp / 3-1/ 3: linear in k with a mode-independent offset.
+                    every-k   CR_cosmology.tex:2765  '\bevery wavenumber\b'
+                      So it is a running and not a tilt, by the same band test that closes the collapse leg --- and blue at every wavenumber, where the measured value is red by two parts in a thousand .
+                    every-k   cosmogenesis_paper.tex:660  '\bevery\s+k\b'
+                      Whatever a mode's history, it arrives at the branch point frozen: |aH|=|a'/a| diverges as 1/x at the crunch while c_s saturates at 1/ 3, so c_sk/|aH| c_skx 0 for every k, and every mode in the observed range---from 28 to 2475---exits the comoving sound horizon strictly before the crunch, the highest
+                    every-k   geometric_core_paper.tex:778  '\bevery mode\b'
+                      The trajectory reading fails for a reason of its own: a massive worldline's frequency enters as m^ 2 a^ 2 and the branch point annihilates it while aH diverges, so / aH 0 independently of m---a massive trajectory freezes like every mode, so the phase cannot be attributed to a failure to freeze.
+                    every-k   geometric_core_paper.tex:1841  '\bevery mode\b'
+                      And it does not attach to trajectories: a mass enters the mode equation as m^ 2 a^ 2 , and the branch point annihilates that term while |aH| diverges, so /|aH| 0 independent of m---a massive trajectory freezes like every mode, so the phase cannot be attributed to a failure to freeze .
+                    every-k   CR_synthesis.tex:1762  '\bevery mode\b'
+                      The observed tilt is inherited, and the scale-free crossing is the proven reason. The collapse leg supplies the same conclusion independently: horizon entry there occurs at one wavenumber-independent value for every mode, so the leg multiplies the spectrum by a constant and tilts nothing.
+                    every-k   CR_synthesis.tex:1777  '\bevery mode\b'
+                      This construction reaches the same condition from its geometry rather than from an added epoch: on the contracting leg the comoving horizon shrinks to zero as r 0, so every mode exits and freezes before the branch point, and at the handover every acoustic mode is outside the horizon, its phase an ex
+                    every-k   CR_synthesis.tex:1793  '\bevery mode\b'
+                      The premise that every mode is frozen at the handover carries a qualification, and it is worth having because it names where the argument would fail: the imaginary-time segment before the branch point removes a mode's oscillatory content strongly only above k 2 10^ -4 \,Mpc^ -1 , so modes below that
+                    observed  CR_framework.tex:1983  '\bobserved range\b'
+                      Read as a selection rule on species that is too strong, and for a structural reason. The kernel acts on oscillatory content, and on the progenitor's own interior no content arrives oscillating: |aH| diverges as 1/x at the branch point while c_s saturates at 1/ 3, so c_sk/|aH| c_skx 0 for every k, an
+                    observed  cosmogenesis_paper.tex:624  '\bobserved range\b'
+                      With the stretch factor included the observed range reaches interior mode 909 rather than 2500, and the bound relaxes to _r/ _m 4 10^ -5 at maximum expansion.
+                    observed  cosmogenesis_paper.tex:660  '\bobserved range\b'
+                      Whatever a mode's history, it arrives at the branch point frozen: |aH|=|a'/a| diverges as 1/x at the crunch while c_s saturates at 1/ 3, so c_sk/|aH| c_skx 0 for every k, and every mode in the observed range---from 28 to 2475---exits the comoving sound horizon strictly before the crunch, the highest
+                  ⇒ THE PAPER CARRIES BOTH SCOPES, AND IN ONE PLACE: the all-k
+                    argument and the observed-range measurement sit at the same site.
+                    So the losslessness ground is NOT restricted to observed modes,
+                    which is a stronger ground than the prediction credited it with.
+
+  Ⓔ energy flux   predicted ABSENT        measured ABSENT   ⇒ HIT
+  Ⓕ anis. stress  predicted STATED-AWAY   measured COVERED   ⇒ MISS, and the
+                  site is a COUNTEREXAMPLE TO THE CLAUSE rather than support for it:
+                    CR_cosmology.tex:563  The structural point stands without it: the loading is the same in both because it is imprinted on the expansion side, and the argument is at the level of contents rather than of the driving---where the loading ratio alone would give 3.5. And the free-streaming neutrinos the cooling-leg nucleosynthesis requires do carry anisotropic stress at these temperatures---the branch point is far below their decoupling---but th
+     isotropization: 178 sites, 7 of them at the crossing
+                    CR_framework.tex:959  The mechanism by which matter and observers transition through this shared ontological layer is advanced in the Frontiers section below ( ): the crossing is well posed at the branch point---the substrate's curvature finite there w
+                    CR_cosmology.tex:2709  The substrate carries everything the branch point's null geometry lets it carry---coherence, isotropization, the discreteness floor, the classical character, the faithful transmission---and the scale-free crossing proves precisely
+                    CR_cosmology.tex:2709  This is the shape inflation has when it parametrizes its observables through an unknown inflaton potential; CR routes them through an unknown progenitor collapse, with the arrival constrained---whatever the collapse supplies must 
+                    CR_cosmology.tex:2845  It isotropizes and is scale-free---the throat's de Sitter no-hair ( ) damps the anisotropic part of the crossing stress-energy to the isotropic monopole, and the degenerate approach ( ) imprints no thermal scale: the matter counte
+                    CR_cosmology.tex:2849  The isotropy is earned on the approach and preserved by the crossing, and the two halves are of different kinds: the first is a damping calculation with a rate, a timescale and a residual, the second follows from the zero-duration
+                    CR_cosmology.tex:2849  And it obeys a structural transition law: because the reassignment preserves the cosmic foliation and the density is leaf-carried and lapse-independent , the reassignment acts on the time-stacking---fixing the -set rate eq:rate --
+                    cosmogenesis_paper.tex:134  First, it exhibits the Big Bang as the deductively forced synthesis of consequences the corpus already establishes---the measured foliation forces the augmentation; the augmentation forces that collapse cannot terminate but become
+
+  Ⓖ tensor        predicted STATED-AWAY   measured COVERED on the registered
+                  rule and STATED-AWAY on the sentence column (0 sentence sites, 4 paragraph).
+                  ⇒ SPLIT: the arm's verdict is the rule's, not the corpus's, and the
+                    rule that flips it is the paragraph fallback Ⓐ already names.
+
+  Ⓗ duration      predicted ABSENT as a phrase
+                  measured  7 duration-phrase sites · 32 tortoise   ⇒ MISS
+                    CR_framework.tex:1369  'zero duration'  The lift is not a gap in the cosmic-time evolution but a single instant of it---a forced phase shift of finite path length and zero duration---which is why the deparametrized Hamiltonian evolution passes from the collapse leg to t
+                    CR_framework.tex:1983  'zero cosmic duration'  The two are one geometry read on two clocks---the segment has zero cosmic duration and finite conformal length 3.32 ---and the asymmetry is why the crossing is lossless for content and fatal for bodies.
+                    canonical_time.tex:229  'zero duration'  The beginning is therefore not a first instant of the evolution this section constructs; it is a boundary of zero duration within it, and that is why nothing can be lost across it: no evolution acts, so none can be non-unitary.
+                    canonical_time.tex:242  'zero cosmic duration'  The gap is named rather than managed, and its shape is definite. The silence is structural, not a matter of refinement---an evolution parametrized by cosmic time cannot describe a segment of zero cosmic duration, so no sharpening 
+                    boundary_paper.tex:311  'no duration'  The fully Wick-rotated S^5 is Riemannian: no timelike direction, no clock, no duration.
+                    matter_sector_paper.tex:824  'zero duration'  And the segment terminating there occupies no cosmic time at all---the real part of the complex cosmic time does not advance along it, so the crossing is a boundary of zero duration rather than an interval .
+                    matter_sector_paper.tex:824  'zero duration'  A structure localized at a boundary of zero duration has no interval in which to be altered, whatever a reassignment acts on.
+                  ⇒ ZERO COSMIC DURATION IS THE PAPERS' OWN PHRASE, and the site that
+                    carries it carries FINITE CONFORMAL LENGTH 3.32 in the same
+                    clause.  Both grounds of PO-88's clause are printed paper results
+                    and both hold.  WHAT FAILS IS NOT A GROUND.
+
+  Ⓙ the control's prediction half, now its own arm — the invented sector ABSENT
+                  measured  STATED-AWAY with 3 anchor hit(s)   ⇒ MISS
+
+  Ⓘ verdict       predicted NOT REACHABLE AS WRITTEN, sector-dependent
+                  ⇒ HIT, AND FOR A BETTER REASON THAN THE ONE REGISTERED.  The
+                    prediction expected to reach it by inference from losslessness
+                    (Ⓓ⑤, declared).  IT IS REACHED INSTEAD BY THE PAPERS' OWN
+                    SENTENCES: 5 refuter site(s), each naming a sector the
+                    clause quantifies over and saying the crossing does not fix it.
+                    [comp] CR_framework.tex:787 [SENTENCE] 'has\ no\ baryogenesis'
+                      The composition half of the consistency target is met with inherited, exactly as flat CDM inherits it; what would go beyond that is a derivation of and of the onset, and the cosmogenesis paper shows the lap cannot supply one: baryon number crosses conserved and the branch point relabels its sign, so the construction has no baryogenesis and needs none .
+                    [comp] CR_framework.tex:801 [SENTENCE] 'not\ at\ all\ by\ it'
+                      So the frontier's two halves are constrained differently---the spectrum's by the crossing's selection rule, the composition's not at all by it---and a derivation of the composition must be sought on other grounds.
+                    [pi] CR_cosmology.tex:563 [SENTENCE] 'do\ carry'
+                      The structural point stands without it: the loading is the same in both because it is imprinted on the expansion side, and the argument is at the level of contents rather than of the driving---where the loading ratio alone would give 3.5. And the free-streaming neutrinos the cooling-leg nucleosynthesis requires do carry anisotropic stress at these temperatures---the branch point is far below their decoupling---but their deep s
+                    [comp] cosmogenesis_paper.tex:549 [SENTENCE] 'remains\ open'
+                      The exact regulated peak---how deep the compression runs on the smooth substrate through the branch point---remains open, and is downstream-irrelevant here: once dissociation is total, the memory of the peak is erased, and the abundances are fixed by the conditions in the window on the cooling leg (Secs sec:rate , sec:network ), not by the peak's value.
+                    [scalar] CR_synthesis.tex:1793 [SENTENCE] 'residual\ excitation'
+                      The premise that every mode is frozen at the handover carries a qualification, and it is worth having because it names where the argument would fail: the imaginary-time segment before the branch point removes a mode's oscillatory content strongly only above k 2 10^ -4 \,Mpc^ -1 , so modes below that cross with residual excitation --- so the acoustic band sits on the safe side by construction, and the low-wavenumber end is wher

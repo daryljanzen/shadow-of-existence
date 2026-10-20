@@ -1,0 +1,13 @@
+SEED AND CONTROLS
+  ✓ the row is found and the live-clause marker is unique
+  ✓ the live block is a small tail of the row, not the file
+  ✓ on the tree as it stands, nothing is stale
+  ✓ Ⓣ③ the widened reader sees both row forms (82 = 11 live + 71 struck)
+  ✓ Ⓣ③ and it names the LIVE row this gate watches
+  ✓ Ⓣ③ and the STRUCK row r7456 could not see at all
+  ✓ Ⓣ② the mutation changed the LAST summary site, the one the gate reads
+  ✓ Ⓣ② ONE-OFF IN THE LIVE BLOCK GOES RED
+  ✓ Ⓣ① the boundary moves to the stale copy
+  ✓ Ⓣ① A STALE LIVE BLOCK GOES RED -- the gate reads the BLOCK, not the file
+
+  0 assertion(s) failing

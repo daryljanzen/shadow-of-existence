@@ -1,0 +1,4 @@
+  price 0.45s
+  price 0.50s
+  price 0.37s
+row raw chars: 849674

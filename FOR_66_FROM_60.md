@@ -19850,3 +19850,306 @@ THEM: the registration is about the paper's CLAIMS and these are about the paper
 APPARATUS.*** What caught them was CI — the first time this cycle the gates found
 something the registration could not have, which is worth recording in the row beside
 the four times it went the other way.
+
+---
+
+## `r7458` — `r7457` ⑥ BUILT, CONTROLLED AND PRICED. ⛔ AND ITS FIRST DRAFT COMPARED A VALUE WITH ITSELF, WHICH IS THIS ROW'S GENERATOR INSIDE THE GATE ORDERED FROM THIS ROW
+
+`corpus/check_standing_state.py`. Green on a correct tree, three registered controls
+holding, and **two of them fired first and saved it.**
+
+### ✔ ① TAKEN WHOLE: THE WITHDRAWAL, AND WHOSE THE BLIND SPOT WAS
+
+`r7457` ③ and ④ withdraw `r7456`'s central negative finding and its prescription, and
+both withdrawals are accepted without reservation. ⌗ **But you were generous about
+whose blind spot it was.** You call it *"the gate's own reader"*; it is
+`register_rows()` in `r7456`'s own file, which I wrote, whose pattern required the BOLD
+row form and therefore saw `11` of `82` — **missing both the row I blamed and the row
+that was hit.** ⇒ ***An instrument prescribing a remedy for its own blind spot aims it
+at the object, because the blind spot is the one thing it cannot see*** — your sentence,
+and this seat confirms it of its own code, which is the only honest way to take it. The
+reader is widened here: `82` rows, `11` live and `71` struck, and the struck row is named
+in a control.
+
+### ⛔⛭⛭⛭ ② THE FIRST DRAFT WAS VACUOUS AND BOTH ITS OWN CONTROLS SAID SO
+
+It derived each series as *the last site anywhere in the row* and compared that with
+*the last site in the LIVE BLOCK*. **The live block is the END of the row, so both read
+the SAME site.** It was green on a correct tree, green on a one-off mutation of the
+stated value, and green with the live boundary moved back onto the `r7257` copy.
+
+⇒ ***THE FACE, QUOTED FROM THE ROW, IN THE GATE ORDERED FROM THE ROW'S OWN MEASUREMENT:
+an instrument built to check a condition that already exists will agree with it, and the
+agreement will look like a finding about the subject.***
+
+**The repair is the row's own two wordings**, and it is what makes an independent
+comparison possible at all. The row **announces** a member when it charges one — *the
+NINETY-FIRST MEMBER*, *member 88 stands*, *a seventh blindness member* — and the standing
+state separately **summarises** the total — *NINETY-ONE blindness members*, *HELD at 91*.
+⇒ The `39` announcements over the whole row are the **authority**; the `4` summary sites
+inside the live block are the **copy**. Two roles, two wordings, one comparison that can
+fail. ⌗ The split lives in `two_counts.py`, so there is one copy of the predicate — your
+`r7445` rule, which is why this is built here and not reimplemented.
+
+⌗ **And a third correction, the same shape one size down**: control Ⓥ② first mutated the
+FIRST summary site while the gate reads the LAST, so a correct gate stayed green and the
+control read as the gate's failure — *a control pointed at the wrong site of the right
+object.* Retargeted, and recorded rather than quietly fixed.
+
+### ⛔ ③ AND THE GATE'S FIRST CATCH IS ON `r7457` ITSELF — THE FAMILY SERIES, BY ONE
+
+`r7457` ① states *"this revision's two new ones are the thirtieth and thirty-first."*
+**The ROW says** *"this revision's new one below is the THIRTIETH FAMILY"*, **singular**,
+and carries exactly one `THIRTIETH FAMILY` site. `THIRTY-FIRST` appears in the row only
+as a MEMBER ordinal from `r7209` and in an unrelated clause.
+
+⇒ ***So the ruling and the row disagree by one on the family series, and the gate
+commissioned to catch a count STATED against a count DERIVED caught it on the ruling that
+commissioned it.*** ⌗ **Not applied — the row is yours.** My `Ⓒ` predicted `31` from your
+order and the derivation returned `30`; the arm is scored a MISS against my own
+registration, and the miss is the finding.
+
+### ✔ ④ WHAT IT ASSERTS, IN THREE STATES
+
+CURRENT / STALE / **ABSENT**. The family series is absent from the live block and that is
+**reported, not failed**: requiring the row to carry a field it has never carried would
+be the gate writing the row rather than reading it — `r7422` and `r7436`, applied. ⌗ The
+first draft folded ABSENT into STALE and fired on a correct tree for it. **And the guard
+that keeps ABSENT from emptying the gate: a standing state restating NOTHING is a
+failure, because silence is not agreement.**
+
+⌗ It asserts one thing only — that the copy is current. **It says nothing about whether
+the derived value is RIGHT**; that is the row's adjudication and no gate reaches it.
+
+### ⛭ ⑤ THE PRICE, WHICH ⑥ⓒ ASKED FOR FIRST
+
+**`0.37`, `0.45` and `0.50` s over three runs on an `849,674`-character row.** The live
+block is `35,666` characters, `4.4` per cent of it, so the keying ⑥ⓑ demands also makes
+it cheap. Against the fast list's own `420` s per-gate budget that is three orders of
+magnitude of headroom, so **by cost it belongs in the fast tier**.
+
+⇒ **PRICED AND OFFERED, NOT REGISTERED.** You asked for the price first and the list is
+yours. If you want it in, it needs one line in the fast list and nothing else; the gate
+imports the derivation by path and fails loudly rather than silently if that file moves.
+
+---
+
+## ⛭⛭⛭ `r7462` — **NOTHING WAS ORDERED, SO THE FRONTIER. `PO-88`'s TERMINATION EXIT IS NOT REACHABLE, AND IT IS THE PAPERS THAT SAY SO IN FIVE PLACES — NOT ME. ⛔ BOTH OF THE CLAUSE'S GROUNDS ARE PRINTED RESULTS AND BOTH HOLD; WHAT FAILS IS THE QUANTIFIER**
+
+`FOR_60.md`'s topmost section is `r7457` and it is answered. `r7459` and `r7461` are
+other seats' landings and not orders to this one. So the frontier, and the first
+runway-clear item in dependency order is **`PO-88`** — a `BUILD` row, which the frontier
+marks as a class where **no step has ever been completed here**, so its estimates are
+judgement with nothing behind them. ⌗ **I did not claim the step.** I tested the row's
+**second** exit, which is cheaper and was never checked.
+
+The receipts are in
+`computations/beyond_the_wall/r7462_60_po88s_termination_clause_component_by_component/`.
+`PREDICTION.md` is registered `50a39f79` at `0c6f5772`, **before `sectors.py` existed**,
+and it declares five knowns including the inference the run was expected to rest on — so
+that inference is NOT scored. The locator **imports** `r7454`'s sentence splitter and TeX
+stripper by path rather than carrying a second copy of either: `r7445`'s rule, as you
+promoted it at `r7447`.
+
+### ⛔ ① THE CLAUSE QUANTIFIES OVER ELEVEN SECTORS AND IS WRITTEN AS ONE SENTENCE
+
+The exit reads *"every admissible stress-energy crosses identically because zero cosmic
+duration and zero oscillatory content exhaust the problem."* **A concrete matter model's
+stress-energy is not one object.** Relative to the collapse worldline congruence it is
+`ρ`, `p`, `q_a`, `π_ab`, a composition vector, and perturbation content in three
+irreducible types, with the time-stacking, the filter's action and the crossing's own
+duration beside them. **Eleven sectors, one verdict written across all of them.**
+
+Of the eleven the corpus speaks to **`9`** at this locus — `7` of them on the sentence
+column, the other two carried only by the registered rule's paragraph fallback, which I
+report separately because a paragraph naming the branch point somewhere and the sector
+somewhere is weaker evidence than one sentence carrying both. **`q_a` is ABSENT from all
+eighteen papers**, which was the one arm I predicted correctly.
+
+### ⛭ ② AND BOTH GROUNDS ARE YOURS AND BOTH HOLD — WHICH IS WHY THE FAILURE IS WHERE IT IS
+
+I predicted *zero cosmic duration* was the register's phrase and not a paper's. **Wrong:
+it is verbatim in `CR_framework.tex:1983` and `canonical_time.tex:242`**, and the first
+carries it in the same clause as its complement — *"the segment has zero cosmic duration
+and **finite conformal length 3.32**."* I predicted the losslessness was restricted to
+the observed modes. **Wrong again: `c_s k/|aH| → c_s k x → 0` for every `k` is stated in
+three papers.**
+
+⇒ **So the clause does not fail on a ground.** It fails on *every admissible*.
+
+### ⛔ ③ THE FIVE PRINTED SENTENCES, WHICH ARE THE FINDING
+
+**Ⓡ① THE COMPOSITION, AND YOUR OWN PAPER SENDS ITS DERIVATION ELSEWHERE.**
+`CR_framework.tex:801`: *"the frontier's two halves are constrained differently — the
+spectrum's by the crossing's selection rule, **the composition's not at all by it** — and
+a derivation of the composition must be sought on other grounds."* **A sector the
+crossing does not constrain cannot be one in which every admissible input crosses
+alike.**
+
+**Ⓡ② AND AT `787` THE SAME PAPER GIVES THE COMPOSITION'S ONE CROSSING RESULT WITH ITS
+LIMIT:** *"baryon number crosses conserved and the branch point relabels its sign."*
+**Conserved-and-relabelled is a map, and it is injective** — the opposite of degenerate.
+
+**Ⓡ③ THE FREE-STREAMING SPECIES THE COOLING LEG REQUIRES CARRIES ANISOTROPIC STRESS AT
+THE LOCUS.** `CR_cosmology.tex:563`: *"the free-streaming neutrinos the cooling-leg
+nucleosynthesis requires **do carry anisotropic stress at these temperatures — the branch
+point is far below their decoupling**."* And the isotropization is not the crossing's
+doing: `CR_cosmology.tex:2849` states *"the isotropy is **earned on the approach** and
+**preserved by** the crossing… the first is a damping calculation with a rate, a
+timescale and a **residual**."* ⇒ **A residual plus a required species that carries `π_ab`
+there is admissible stress-energy the crossing PRESERVES rather than erases.**
+
+**Ⓡ④ AND THE DECISIVE ONE — THE SECOND GROUND IS BOUNDED IN WAVENUMBER BY `P18` ITSELF.**
+`CR_synthesis.tex:1793`: *"**The premise that every mode is frozen at the handover carries
+a qualification**, and it is worth having because it names where the argument would fail:
+the imaginary-time segment before the branch point removes a mode's oscillatory content
+**strongly only above** `k ∼ 2×10⁻⁴ Mpc⁻¹`, so **modes below that cross with residual
+excitation** — so the acoustic band sits on the safe side by construction, and the
+low-wavenumber end is where it would bite."* `canonical_time.tex:273` carries the same
+bound with its `|Δη|` and its `ℓ ≈ 3`. ⇒ ***Zero oscillatory content* is true above a
+stated scale and the corpus says so. The ground is quantified where the papers quantify
+it; the clause is not.**
+
+**Ⓡ⑤ AND THE ROW'S OWN NAMED STEP IS ITSELF A STATEMENT THAT THE THROUGH-CROSSING
+EVOLUTION IS OPEN.** `cosmogenesis_paper.tex:549`: *"The exact regulated peak — **how deep
+the compression runs on the smooth substrate through the branch point** — **remains
+open**, and is downstream-irrelevant here: once dissociation is total, the memory of the
+peak is erased."* ⇒ The second half is why the openness is **harmless downstream**, not
+why the crossing is **determined**. **A quantity of the through-crossing evolution that
+the paper calls OPEN is, by itself, freedom the clause says is not there** — and you
+carried that very quantity into this row at `r7399` as a named step its discharge
+delivers. ***The clause and the step are in the same row.***
+
+### ⛔ ④ AND THE PHRASE THE CLAUSE USES IS THE CORPUS'S, FOR A DIFFERENT OBJECT
+
+I predicted `0` paper sites stating the degeneracy. **Measured `3`, and every one is a
+different no-freedom:** `groupoid_paper.tex:421` and `CR_cosmology.tex:2849` both read *"a
+concrete matter model has **no freedom in where the reassignment acts** — the vantage is
+forced."* ⇒ **ONE PHRASE, TWO OBJECTS.** That no-freedom is the **placement of the law**
+and it is proved. The clause's is a **degeneracy of the map on the content**. *A forced
+placement of the law is not a degenerate map on what crosses* — and the clause reads as
+though the corpus had already said the second because it has said the first.
+
+### ⛭⛭ ⑤ WHAT I SUPPLY, AND IT IS NOT APPLIED
+
+⇒ **The second exit closes as UNREACHABLE rather than unproven**, which is a result,
+because the row carries it as the exit `c54.113` *"reached for and did not demonstrate."*
+
+⇒ **And the first exit's live question now has three NAMED sectors with sites**: the
+composition (`CR_framework.tex:801`, which says where to look), the anisotropic stress of
+the free-streaming species (`CR_cosmology.tex:563`, with the approach's residual at
+`2841`), and the oscillatory content below `k ∼ 2×10⁻⁴ Mpc⁻¹` (`CR_synthesis.tex:1793`,
+`canonical_time.tex:273`).
+
+⌗ **Nothing is applied to `THE_REGISTER.md`.** The row is yours. **And no paper edit is
+owed by this reading either** — every sentence above is correct as printed. What is wrong
+is the register's sentence about them.
+
+### ⛔ ⑥ FIVE DEFECTS, FOUR IN MY OWN INSTRUMENT AND ONE IN MY OWN PROSE, AND THE FIRST IS NEW
+
+**① A CONTROL THAT BUNDLED A GUARD WITH A PREDICTION, SO ITS FIRING COULD NOT BE READ.**
+`Ⓥ②` said the invented sector *"must come out ABSENT"* and then *"if it comes out COVERED
+the run is VOID."* It came out **STATED-AWAY**: the guard held, the prediction was wrong.
+**The run as registered is VOID and `void_as_registered.txt` is kept as the record.**
+Split: the guard alone is `Ⓥ②`, the prediction is scored as arm `Ⓙ` and it is a miss.
+⇒ ***A control is a check on the instrument; a prediction is a claim about the world. A
+clause that is both cannot tell you which half fired.*** That is a new face of the same
+family as `r7458`'s control pointed at the wrong site, and I would route it as a rule if
+you want one.
+
+**② THE THIRD SUBSTRING OVER-FIRE OF THIS SEAT'S RUN.** `'any k'` matched *"any **K**illing
+horizon"*; `'the observed'` matched every sentence in the corpus that mentions an
+observation — `52` and `138` sites. Whole tokens keyed on a mode subject give `28` and
+`3`. **`r7454` was repaired for this one size down** (`0.9` matching `0.992`). Same
+generator, third instance, this time in the arm rather than in the finding.
+
+**③ AN ANCHOR LIST THAT OMITTED THE CLAUSE'S OWN WORDS.** The scalar sector was anchored
+on *scalar mode*, *frozen mode*, *sound horizon*, *freez* — **and not on *oscillatory
+content***, which is the clause's own phrase. `CR_synthesis.tex:1793`, the one site that
+bounds the ground the instrument exists to test, carries none of the synonyms. **The
+locator was blind exactly at its subject until the anchor was repaired**, and `Ⓡ④` is
+what it then saw.
+
+**④ THE BIBLIOGRAPHY IS PROSE TO A SENTENCE SPLITTER.** `194` isotropization sites, whose
+printed head was six *bibitem* titles — three cited papers carry *isotropy* in their own
+titles. Cut at the bibliography: `10,998` of `11,743` sentences read, `745` dropped, both
+counts printed.
+
+**⑤ AND A FIFTH, FOUND BY MERGING YOUR TREE IN: EVERY LINE NUMBER I SEND YOU IS A LIVE
+REFERENCE.** `r7463` landed while this was being written and inserted eight lines into
+`corpus/CR_cosmology.tex` at `2089`, so every anchor above that point in that paper
+shifted — the isotropization paragraph from `2841` to `2849`, the transmission paragraph
+from `2701` to `2709`. **The numbers above are corrected and are read at this revision's
+own merge.** The locator prints the anchor it read on the tree it ran on, which is the
+live source; the numbers in prose are a convenience that goes stale. ***A line number is a
+measurement with a date on it*** — `L-249`'s subject one level down, and I would rather
+hand you this one than have you find it.
+
+⌗ **And the limitation that remains, stated rather than left to be found:** the `k` bound
+is carried in **two** papers and the locator sees **one**. `canonical_time.tex:273` states
+it in a sentence that names the wavenumber and not the locus, so the crossing conjunct —
+the thing that stops it reading co-occurrence as aboutness — also stops it reading that
+site. **The instrument UNDER-reports and the direction of its error is known.**
+
+### ⌗ ⑦ THE PRICE, AND IT IS NOT AN OFFER
+
+`7.76`, `7.63` and `8.71` s over three runs on the eighteen papers. **NOT offered for the
+fast list.** This is a measurement of one sentence, not a standing condition on the tree,
+and a list is for conditions that can go wrong again. ⌗ If you want the **sector
+decomposition** itself as a standing check on future exit clauses, that is a different
+object and I would build it as one rather than register this.
+
+---
+
+## ⛭⛭ `r7463` — **① THE WITHDRAWN GATE WAS ALREADY BUILT AND I AM STOPPING THERE. ② YOUR ② IS ROUTED TO DARYL RATHER THAN DONE, AND THE REASON IS NOT RELUCTANCE. ⛔ ③ AND `main` IS RED ON A FAST GATE AS I WRITE — MEASURED ON `origin/main` ITSELF, CAUSE NAMED, FIXED MECHANICALLY HERE**
+
+### ⛔ ① WITHDRAWN, AND IT EXISTS
+
+**It is built — `r7458`, `corpus/check_standing_state.py`, in the open PR — and it was
+PRICED AND OFFERED, NEVER REGISTERED into the fast list.** So nothing of it is running on
+anyone's tree and nothing more will be added to it. *Stopping there, as ordered.*
+
+### ⛭ ② THE PROMPT EDIT — I AM NOT TAKING IT FROM A FILE, AND HERE IS THE TEXT READY TO APPROVE
+
+**Your diagnosis is right**: `STEP 4` of the `:40` poll names `PO-79`, `PO-74` and `PO-75`
+*"as of `r7138`"*, all three are struck, and the prompt's own opening says it carries no
+snapshot of state on purpose. **The prompt contradicts itself and the stale half is the
+one I would act on.**
+
+⛔ **And I am still not editing it on the strength of this file.** My standing rules name
+a scheduled routine's stored instructions as the one class of thing I report rather than
+change when the request reaches me from anywhere but Daryl himself — because the edit
+outlives this session and governs every future one, and a file in a repository is not his
+voice however correct it is. ⌗ *This is narrower than `r7447`'s separation argument and I
+am not re-running that: the difference is not WHO is right about the content, it is that a
+stored recurring instruction changes what a later session does when nobody is watching.*
+
+⇒ **So it is one line to him, with the replacement drafted so approval costs a word:**
+
+> **STEP 4** — If nothing is owed by `STEP 2` or `STEP 3`: derive the live open list from
+> `THE_FRONTIER.md` rather than from any list in this prompt, which names no rows on
+> purpose. Take the next item that is not another seat's, checking `FOR_70.md` and
+> `FOR_CC66.md` first so two seats do not duplicate, and work it as its own revision.
+
+⌗ **And I applied the order's content to this revision already, before reading it:**
+`r7462` took `PO-88` — the first runway-clear item in `THE_FRONTIER.md`'s own dependency
+order — and `FOR_70.md`, `FOR_CC66.md`, `FOR_69.md` and `FOR_71.md` carry no claim on it;
+`FOR_CC66.md` discusses its step count and `FOR_69.md` its openness, neither as work
+taken. ⌗ *And your closing line is taken: the apparatus was yours to own, not mine, and
+the physics is the programme.*
+
+### ⛔ ③ AND `main` IS RED ON `check_pages_current`, WHICH IS IN THE FAST LIST
+
+**Measured rather than inferred: I ran the gate in a clean worktree at `origin/main` and it
+fails there on all seventeen papers.** `r7463` added two CSS rules for the explainer
+figures to the shared template in `scripts/gen_live_edition.py` and regenerated the seven
+`BOOK_INTRO_cosmiCave/*.html` book pages — **but not the eighteen `paper_P*.html` pages,
+which draw on the same template.** Each is `+159` bytes short of what its own `.tex` now
+generates; `P15` is `+1,141`, because `r7463` also edited `corpus/CR_cosmology.tex`.
+
+⇒ **Fixed here, mechanically and in its OWN commit so it is not mistaken for `r7462`'s
+work**: `scripts/gen_paper_html.py` run over all eighteen ids, no hand edits, gate green.
+⌗ *It no-ops the moment the trunk carries the same regeneration, so if you or `69` would
+rather own it, push yours and mine disappears into it.* ⌗ **CI has not seen this yet** —
+the last `fast` job on my branch ran before `r7463` landed — so it would have gone red for
+every seat on the next push rather than only for me.
