@@ -73,14 +73,14 @@ THE SOUND RUN — eleven sectors, keyed on the crossing
       The mechanism by which matter and observers transition through this shared ontological layer is advanced in the Frontiers section below ( ): the crossing is well posed at the branch point---the substrate's curvature finite there whatever the chart-borne geometry does, and r_* convergent so the cross
     dynamics_paper.tex:340  [SENTENCE]  anchor=\bthe density\b  crossing=branch point
       There the crossing of matter through the branch point is shown well posed and structurally governed---the foliation-preserving reassignment fixing the -set rate while the density crosses as inherited content---in the companion cosmology paper , and the worldline side is settled with it: a comoving w
-    CR_cosmology.tex:2625  [PARAGRAPH]  anchor=\bthe density\b  crossing=branch point
+    CR_cosmology.tex:2633  [PARAGRAPH]  anchor=\bthe density\b  crossing=branch point
       The state itself is whatever the leg's evolution produces, and supplies it in closed form: the potential from the leg's own equation, the effective temperature oscillating freely from horizon entry, and the density contrast as their difference.
-    CR_cosmology.tex:2635  [PARAGRAPH]  anchor=\bthe density\b  crossing=branch point
+    CR_cosmology.tex:2643  [PARAGRAPH]  anchor=\bthe density\b  crossing=branch point
       It is a definition, not a restriction: on the leftward reading the rate is set by the substrate and the content is read from it, so the perturbed constraint likewise defines the density contrast a given geometry carries rather than restricting which geometries are allowed.
     … and 1 more
 
   ⌈ isotropic pressure  p  —  1 site(s)
-    CR_cosmology.tex:2405  [PARAGRAPH]  anchor=\bequation of state\b  crossing=the crossing
+    CR_cosmology.tex:2413  [PARAGRAPH]  anchor=\bequation of state\b  crossing=the crossing
       For tensors that restriction is absent: z_T=aM_ Pl /2 exactly, for any content, any equation of state and any sound speed, so z_T''/z_T=a''/a identically and the entire passage---background, connection, monodromy---applies verbatim with nothing assumed.
 
   ⌈ anisotropic stress  pi_ab  —  2 site(s)
@@ -114,11 +114,11 @@ THE SOUND RUN — eleven sectors, keyed on the crossing
   ⌈ TENSOR perturbation modes (gravitational waves)  —  4 site(s)
     dynamics_paper.tex:340  [PARAGRAPH]  anchor=\btensor sector\b  crossing=branch point
       The scalar (density) perturbation sector---the counterpart to the transverse-traceless tensor sector developed here, and the primordial source of the cosmic-microwave-background anisotropies---is treated in the companion paper .
-    CR_cosmology.tex:2437  [PARAGRAPH]  anchor=\btensor sector\b  crossing=the crossing
+    CR_cosmology.tex:2445  [PARAGRAPH]  anchor=\btensor sector\b  crossing=the crossing
       For the tensor sector this route does not reach a spectrum at all, and the obstruction is identified rather than merely met. The Lichnerowicz Laplacian preserves tracelessness at every squashing and generates divergence as soon as the layer stops being Einstein---and the layer is Einstein only at th
-    CR_cosmology.tex:2437  [PARAGRAPH]  anchor=\btensor sector\b  crossing=the crossing
+    CR_cosmology.tex:2445  [PARAGRAPH]  anchor=\btensor sector\b  crossing=the crossing
       This bounds a computation this paper's own route would require, and is not a claim about the tensor sector.
-    CR_cosmology.tex:2844  [PARAGRAPH]  anchor=\btensor sector\b  crossing=branch point
+    CR_cosmology.tex:2852  [PARAGRAPH]  anchor=\btensor sector\b  crossing=branch point
       They are, rather, the map of where this cosmology goes next---what displaces the fourth peak, and the full oscillating medium downstream in the matter sector, the tensor sector's companion in the dynamics paper .
 
   ⌈ the time-stacking the reassignment acts on  —  68 site(s)

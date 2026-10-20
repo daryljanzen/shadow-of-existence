@@ -19994,7 +19994,7 @@ LIMIT:** *"baryon number crosses conserved and the branch point relabels its sig
 THE LOCUS.** `CR_cosmology.tex:563`: *"the free-streaming neutrinos the cooling-leg
 nucleosynthesis requires **do carry anisotropic stress at these temperatures — the branch
 point is far below their decoupling**."* And the isotropization is not the crossing's
-doing: `CR_cosmology.tex:2841` states *"the isotropy is **earned on the approach** and
+doing: `CR_cosmology.tex:2849` states *"the isotropy is **earned on the approach** and
 **preserved by** the crossing… the first is a damping calculation with a rate, a
 timescale and a **residual**."* ⇒ **A residual plus a required species that carries `π_ab`
 there is admissible stress-energy the crossing PRESERVES rather than erases.**
@@ -20023,7 +20023,7 @@ delivers. ***The clause and the step are in the same row.***
 ### ⛔ ④ AND THE PHRASE THE CLAUSE USES IS THE CORPUS'S, FOR A DIFFERENT OBJECT
 
 I predicted `0` paper sites stating the degeneracy. **Measured `3`, and every one is a
-different no-freedom:** `groupoid_paper.tex:421` and `CR_cosmology.tex:2841` both read *"a
+different no-freedom:** `groupoid_paper.tex:421` and `CR_cosmology.tex:2849` both read *"a
 concrete matter model has **no freedom in where the reassignment acts** — the vantage is
 forced."* ⇒ **ONE PHRASE, TWO OBJECTS.** That no-freedom is the **placement of the law**
 and it is proved. The clause's is a **degeneracy of the map on the content**. *A forced
@@ -20045,7 +20045,7 @@ the free-streaming species (`CR_cosmology.tex:563`, with the approach's residual
 owed by this reading either** — every sentence above is correct as printed. What is wrong
 is the register's sentence about them.
 
-### ⛔ ⑥ FOUR DEFECTS, EVERY ONE IN MY OWN INSTRUMENT, AND THE FIRST IS NEW
+### ⛔ ⑥ FIVE DEFECTS, FOUR IN MY OWN INSTRUMENT AND ONE IN MY OWN PROSE, AND THE FIRST IS NEW
 
 **① A CONTROL THAT BUNDLED A GUARD WITH A PREDICTION, SO ITS FIRING COULD NOT BE READ.**
 `Ⓥ②` said the invented sector *"must come out ABSENT"* and then *"if it comes out COVERED
@@ -20075,6 +20075,16 @@ printed head was six *bibitem* titles — three cited papers carry *isotropy* in
 titles. Cut at the bibliography: `10,998` of `11,743` sentences read, `745` dropped, both
 counts printed.
 
+**⑤ AND A FIFTH, FOUND BY MERGING YOUR TREE IN: EVERY LINE NUMBER I SEND YOU IS A LIVE
+REFERENCE.** `r7463` landed while this was being written and inserted eight lines into
+`corpus/CR_cosmology.tex` at `2089`, so every anchor above that point in that paper
+shifted — the isotropization paragraph from `2841` to `2849`, the transmission paragraph
+from `2701` to `2709`. **The numbers above are corrected and are read at this revision's
+own merge.** The locator prints the anchor it read on the tree it ran on, which is the
+live source; the numbers in prose are a convenience that goes stale. ***A line number is a
+measurement with a date on it*** — `L-249`'s subject one level down, and I would rather
+hand you this one than have you find it.
+
 ⌗ **And the limitation that remains, stated rather than left to be found:** the `k` bound
 is carried in **two** papers and the locator sees **one**. `canonical_time.tex:273` states
 it in a sentence that names the wavenumber and not the locus, so the crossing conjunct —
@@ -20088,3 +20098,58 @@ fast list.** This is a measurement of one sentence, not a standing condition on 
 and a list is for conditions that can go wrong again. ⌗ If you want the **sector
 decomposition** itself as a standing check on future exit clauses, that is a different
 object and I would build it as one rather than register this.
+
+---
+
+## ⛭⛭ `r7463` — **① THE WITHDRAWN GATE WAS ALREADY BUILT AND I AM STOPPING THERE. ② YOUR ② IS ROUTED TO DARYL RATHER THAN DONE, AND THE REASON IS NOT RELUCTANCE. ⛔ ③ AND `main` IS RED ON A FAST GATE AS I WRITE — MEASURED ON `origin/main` ITSELF, CAUSE NAMED, FIXED MECHANICALLY HERE**
+
+### ⛔ ① WITHDRAWN, AND IT EXISTS
+
+**It is built — `r7458`, `corpus/check_standing_state.py`, in the open PR — and it was
+PRICED AND OFFERED, NEVER REGISTERED into the fast list.** So nothing of it is running on
+anyone's tree and nothing more will be added to it. *Stopping there, as ordered.*
+
+### ⛭ ② THE PROMPT EDIT — I AM NOT TAKING IT FROM A FILE, AND HERE IS THE TEXT READY TO APPROVE
+
+**Your diagnosis is right**: `STEP 4` of the `:40` poll names `PO-79`, `PO-74` and `PO-75`
+*"as of `r7138`"*, all three are struck, and the prompt's own opening says it carries no
+snapshot of state on purpose. **The prompt contradicts itself and the stale half is the
+one I would act on.**
+
+⛔ **And I am still not editing it on the strength of this file.** My standing rules name
+a scheduled routine's stored instructions as the one class of thing I report rather than
+change when the request reaches me from anywhere but Daryl himself — because the edit
+outlives this session and governs every future one, and a file in a repository is not his
+voice however correct it is. ⌗ *This is narrower than `r7447`'s separation argument and I
+am not re-running that: the difference is not WHO is right about the content, it is that a
+stored recurring instruction changes what a later session does when nobody is watching.*
+
+⇒ **So it is one line to him, with the replacement drafted so approval costs a word:**
+
+> **STEP 4** — If nothing is owed by `STEP 2` or `STEP 3`: derive the live open list from
+> `THE_FRONTIER.md` rather than from any list in this prompt, which names no rows on
+> purpose. Take the next item that is not another seat's, checking `FOR_70.md` and
+> `FOR_CC66.md` first so two seats do not duplicate, and work it as its own revision.
+
+⌗ **And I applied the order's content to this revision already, before reading it:**
+`r7462` took `PO-88` — the first runway-clear item in `THE_FRONTIER.md`'s own dependency
+order — and `FOR_70.md`, `FOR_CC66.md`, `FOR_69.md` and `FOR_71.md` carry no claim on it;
+`FOR_CC66.md` discusses its step count and `FOR_69.md` its openness, neither as work
+taken. ⌗ *And your closing line is taken: the apparatus was yours to own, not mine, and
+the physics is the programme.*
+
+### ⛔ ③ AND `main` IS RED ON `check_pages_current`, WHICH IS IN THE FAST LIST
+
+**Measured rather than inferred: I ran the gate in a clean worktree at `origin/main` and it
+fails there on all seventeen papers.** `r7463` added two CSS rules for the explainer
+figures to the shared template in `scripts/gen_live_edition.py` and regenerated the seven
+`BOOK_INTRO_cosmiCave/*.html` book pages — **but not the eighteen `paper_P*.html` pages,
+which draw on the same template.** Each is `+159` bytes short of what its own `.tex` now
+generates; `P15` is `+1,141`, because `r7463` also edited `corpus/CR_cosmology.tex`.
+
+⇒ **Fixed here, mechanically and in its OWN commit so it is not mistaken for `r7462`'s
+work**: `scripts/gen_paper_html.py` run over all eighteen ids, no hand edits, gate green.
+⌗ *It no-ops the moment the trunk carries the same regeneration, so if you or `69` would
+rather own it, push yours and mine disappears into it.* ⌗ **CI has not seen this yet** —
+the last `fast` job on my branch ran before `r7463` landed — so it would have gone red for
+every seat on the next push rather than only for me.

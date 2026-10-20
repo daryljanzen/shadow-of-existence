@@ -37,7 +37,7 @@ disagree with it, and the disagreement will look like a finding about the subjec
 ==============================================================================================
   THE ARMS, AGAINST PREDICTION.md — registered 50a39f79 before this file existed
 ==============================================================================================
-  ⌗ the bibliography cut: 11743 sentences in the eighteen papers, 10998 read, 745 dropped as reference list
+  ⌗ the bibliography cut: 11746 sentences in the eighteen papers, 11001 read, 745 dropped as reference list
 
   Ⓐ coverage      predicted COVERED 4 / STATED-AWAY 4 / ABSENT 3
                   measured  COVERED 9 / STATED-AWAY 1 / ABSENT 1   ⇒ MISS, and in the direction that matters:
@@ -57,7 +57,7 @@ disagree with it, and the disagreement will look like a finding about the subjec
                   measured  3   ⇒ MISS ON THE PHRASE, AND THE READING IS
                   THE POINT: every one of them is a DIFFERENT no-freedom.
                     groupoid_paper.tex:421  'no freedom'  So a concrete matter model has no freedom in where the reassignment acts---the vantage is forced---and of the two requirements only the second remains to be checked of such a model: whether its histor
-                    CR_cosmology.tex:2841  'no freedom'  A model therefore has no freedom in where the reassignment acts, and misplacing it does not fail to give a cosmology by a little---it gives a black hole instead.
+                    CR_cosmology.tex:2849  'no freedom'  A model therefore has no freedom in where the reassignment acts, and misplacing it does not fail to give a cosmology by a little---it gives a black hole instead.
                     CR_synthesis.tex:343  'no freedom'  And what makes the first a category rather than a description is a theorem. Two events that are null-separated ( s^ 2 =0) and spatially coincident along the connection ( x=0) have =0 also, since s^ 2 
                   ⇒ the corpus says a model has no freedom in WHERE THE REASSIGNMENT
                     ACTS.  PO-88's clause says the through-crossing EVOLUTION has no
@@ -102,13 +102,13 @@ disagree with it, and the disagreement will look like a finding about the subjec
                       At the branch point both follow: every mode is outside the horizon there, so the phase is an extremum with no velocity, and the amplitude is the frozen value the closed-form leg carries, 0.4835\, _i.
                     every-k   CR_cosmology.tex:1612  '\bevery wavenumber\b'
                       One whole class is excluded by structure rather than by measurement, and needs no run at all. Every quantity that belongs to the two clocks---the leaf clock, the ruler, the Jacobian between them, the visibility and the optical depth---is a function of conformal time alone, and a function of conforma
-                    every-k   CR_cosmology.tex:2549  '\bevery\s+k\b'
+                    every-k   CR_cosmology.tex:2557  '\bevery\s+k\b'
                       The exponential-of-an-integral form e^ - \, is a WKB approximation whose adiabaticity parameter is of order unity at 5; but the underlying mode equation ^ 2 / ^ 2 = ^ 2 , with =kc_ s and = s/a along the segment, is well posed at every k, and integrating it is a matter of numerics rather than of appr
-                    every-k   CR_cosmology.tex:2595  '\bevery\s+k\b'
+                    every-k   CR_cosmology.tex:2603  '\bevery\s+k\b'
                       Horizon entry on that leg occurs at x=k / 3=1/ 3 for every k---the radiation era's own scale invariance, which recovers from the substrate geometry---so every mode leaves the leg carrying the same free-oscillation amplitude (1/ 3)/2=0.4835\, _i, a single k-independent number .
-                    every-k   CR_cosmology.tex:2655  '\bevery\s+k\b'
+                    every-k   CR_cosmology.tex:2663  '\bevery\s+k\b'
                       Horizon entry at x=1/ 3 for every k makes the accumulated leg phase k _ bp / 3-1/ 3: linear in k with a mode-independent offset.
-                    every-k   CR_cosmology.tex:2757  '\bevery wavenumber\b'
+                    every-k   CR_cosmology.tex:2765  '\bevery wavenumber\b'
                       So it is a running and not a tilt, by the same band test that closes the collapse leg --- and blue at every wavenumber, where the measured value is red by two parts in a thousand .
                     every-k   cosmogenesis_paper.tex:660  '\bevery\s+k\b'
                       Whatever a mode's history, it arrives at the branch point frozen: |aH|=|a'/a| diverges as 1/x at the crunch while c_s saturates at 1/ 3, so c_sk/|aH| c_skx 0 for every k, and every mode in the observed range---from 28 to 2475---exits the comoving sound horizon strictly before the crunch, the highest
@@ -139,11 +139,11 @@ disagree with it, and the disagreement will look like a finding about the subjec
                     CR_cosmology.tex:563  The structural point stands without it: the loading is the same in both because it is imprinted on the expansion side, and the argument is at the level of contents rather than of the driving---where the loading ratio alone would give 3.5. And the free-streaming neutrinos the cooling-leg nucleosynthesis requires do carry anisotropic stress at these temperatures---the branch point is far below their decoupling---but th
      isotropization: 178 sites, 7 of them at the crossing
                     CR_framework.tex:959  The mechanism by which matter and observers transition through this shared ontological layer is advanced in the Frontiers section below ( ): the crossing is well posed at the branch point---the substrate's curvature finite there w
-                    CR_cosmology.tex:2701  The substrate carries everything the branch point's null geometry lets it carry---coherence, isotropization, the discreteness floor, the classical character, the faithful transmission---and the scale-free crossing proves precisely
-                    CR_cosmology.tex:2701  This is the shape inflation has when it parametrizes its observables through an unknown inflaton potential; CR routes them through an unknown progenitor collapse, with the arrival constrained---whatever the collapse supplies must 
-                    CR_cosmology.tex:2837  It isotropizes and is scale-free---the throat's de Sitter no-hair ( ) damps the anisotropic part of the crossing stress-energy to the isotropic monopole, and the degenerate approach ( ) imprints no thermal scale: the matter counte
-                    CR_cosmology.tex:2841  The isotropy is earned on the approach and preserved by the crossing, and the two halves are of different kinds: the first is a damping calculation with a rate, a timescale and a residual, the second follows from the zero-duration
-                    CR_cosmology.tex:2841  And it obeys a structural transition law: because the reassignment preserves the cosmic foliation and the density is leaf-carried and lapse-independent , the reassignment acts on the time-stacking---fixing the -set rate eq:rate --
+                    CR_cosmology.tex:2709  The substrate carries everything the branch point's null geometry lets it carry---coherence, isotropization, the discreteness floor, the classical character, the faithful transmission---and the scale-free crossing proves precisely
+                    CR_cosmology.tex:2709  This is the shape inflation has when it parametrizes its observables through an unknown inflaton potential; CR routes them through an unknown progenitor collapse, with the arrival constrained---whatever the collapse supplies must 
+                    CR_cosmology.tex:2845  It isotropizes and is scale-free---the throat's de Sitter no-hair ( ) damps the anisotropic part of the crossing stress-energy to the isotropic monopole, and the degenerate approach ( ) imprints no thermal scale: the matter counte
+                    CR_cosmology.tex:2849  The isotropy is earned on the approach and preserved by the crossing, and the two halves are of different kinds: the first is a damping calculation with a rate, a timescale and a residual, the second follows from the zero-duration
+                    CR_cosmology.tex:2849  And it obeys a structural transition law: because the reassignment preserves the cosmic foliation and the density is leaf-carried and lapse-independent , the reassignment acts on the time-stacking---fixing the -set rate eq:rate --
                     cosmogenesis_paper.tex:134  First, it exhibits the Big Bang as the deductively forced synthesis of consequences the corpus already establishes---the measured foliation forces the augmentation; the augmentation forces that collapse cannot terminate but become
 
   Ⓖ tensor        predicted STATED-AWAY   measured COVERED on the registered

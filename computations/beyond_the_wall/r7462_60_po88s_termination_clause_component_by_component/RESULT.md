@@ -56,7 +56,7 @@ injective** — which is the opposite of a degenerate one.
 **Ⓡ③ FREE-STREAMING NEUTRINOS CARRY ANISOTROPIC STRESS AT THE BRANCH POINT, IN PRINT.**
 `CR_cosmology.tex:563`: *"the free-streaming neutrinos the cooling-leg nucleosynthesis requires
 **do carry anisotropic stress at these temperatures — the branch point is far below their
-decoupling**."*  And the isotropization is not the crossing's doing: `CR_cosmology.tex:2841`
+decoupling**."*  And the isotropization is not the crossing's doing: `CR_cosmology.tex:2849`
 states *"the isotropy is **earned on the approach** and **preserved by** the crossing, and the two
 halves are of different kinds: the first is a **damping calculation with a rate, a timescale and a
 residual**, the second follows from the zero-duration…"*
@@ -90,7 +90,7 @@ step its discharge delivers.  *The clause and the step are in the same row.*
 ## ⌈ ③ THE PHRASE THE CLAUSE BORROWED IS THE CORPUS'S, AND IT IS ABOUT A DIFFERENT FREEDOM
 
 `Ⓑ` predicted `0` paper sites stating the degeneracy.  **Measured `3`, and every one of them is a
-different no-freedom:** `groupoid_paper.tex:421` and `CR_cosmology.tex:2841` both read *"a concrete
+different no-freedom:** `groupoid_paper.tex:421` and `CR_cosmology.tex:2849` both read *"a concrete
 matter model has **no freedom in where the reassignment acts** — the vantage is forced."*
 
 ⇒ **ONE PHRASE, TWO OBJECTS.**  The corpus's *no freedom* is the **placement of the law**, and it
@@ -117,7 +117,7 @@ above is correct as printed.  **What is wrong is the register's sentence about t
 
 ---
 
-## ⌈ ⑤ THE FOUR DEFECTS THIS RUN FOUND IN ITS OWN INSTRUMENT
+## ⌈ ⑤ THE FIVE DEFECTS THIS RUN FOUND, FOUR IN ITS OWN INSTRUMENT AND ONE IN ITS OWN PROSE
 
 **⛔ ① A CONTROL THAT BUNDLED A GUARD WITH A PREDICTION, AND ITS FIRING COULD NOT BE READ.**
 `Ⓥ②` as registered said the invented sector *"must come out ABSENT"* and then *"if it comes out
@@ -147,6 +147,16 @@ the printed head was six *bibitem* titles — three cited papers carry *isotropy
 After the cut, `178`.
 Cut at `\begin{thebibliography}`; `10,998` of `11,743` sentences are read and the `745` dropped
 are the reference lists.  **Both counts are printed** so the size of the removal is visible.
+
+**⛔ ⑤ AND A FIFTH, FOUND BY MERGING: EVERY LINE NUMBER ABOVE IS A LIVE REFERENCE AND ONE PAPER
+MOVED UNDER THEM.**  `r7463` landed on `main` while this revision was being written and inserted
+eight lines into `corpus/CR_cosmology.tex` at line `2089`, so every anchor in that paper above that
+point shifted: the isotropization paragraph this receipt quotes went from `2841` to `2849` and the
+transmission paragraph from `2701` to `2709`.  **The numbers here are corrected and they are read
+at this revision's own merge, not at the one the first draft was written against.**  The locator is
+the live source — it prints the anchor it read on the tree it ran on — and the numbers in this prose
+are a convenience that goes stale, which is `L-249`'s subject one level down.  *A line number is a
+measurement with a date on it.*
 
 *⌗ And the limitation that remains, stated rather than discovered later: the `k`-bound of `Ⓡ④` is
 carried in **two** papers and the locator sees **one**.  `canonical_time.tex:273` states it in a
