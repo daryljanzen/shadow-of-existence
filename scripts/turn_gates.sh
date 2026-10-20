@@ -44,7 +44,7 @@
 #   back into the turn the same day.  `check_compile` returns to the turn whenever a paper is edited.
 set -uo pipefail
 cd "$(dirname "$0")/.."
-export NODE="${NODE:-66}"
+export NODE="${NODE:-69}"   # the coordinating seat (69 since 2026-10-20)
 GATE_TIMEOUT="${GATE_TIMEOUT:-280}"
 
 # ** r7457, ON 70's r7453+70.2: THE EXCLUSION LIST WAS SIX STATED REASONS AND FOUR WERE WRONG. **

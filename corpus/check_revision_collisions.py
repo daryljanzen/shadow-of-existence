@@ -406,7 +406,8 @@ _PARITY_BY_NODE = {'54': 0, '60': 0,          # EVEN half
                                             # not assumed: 49 of 64's r6xxx revisions are odd
                                             # and 0 are even, against 60's even band above.
                    'cc54': 0,                 # compute node, works under 54's band
-                   '66': 1,                   # ODD half -- declared r6792 from the workflow
+                   '66': None,                # RETIRED 2026-10-20: its odd half passed to 69.
+                                            # Before that: ODD half -- declared r6792 from the workflow
                                             # change: 66 now gates and numbers `main` itself,
                                             # taking 64's role and so 64's half.  Bare rNNNN
                                             # from this seat is odd; the older suffixed form
@@ -431,9 +432,10 @@ _PARITY_BY_NODE = {'54': 0, '60': 0,          # EVEN half
                                             # that earlier report reached this repository.
                                             # Suffixed form only, so it holds NO half -- the
                                             # same answer as cc66 and 70.
-                   '69': None,                # the plain-language seat; it signs its commits `69:`
-                                            # and never takes a bare rNNNN, so it holds NO half.
-                                            # It takes 66's odd half when it takes 66's gate.
+                   '69': 1,                   # ODD half -- 69 took the coordinating seat from 66
+                                            # on 2026-10-20 (Daryl's order) and with it 66's half;
+                                            # its rulings and orders are bare odd rNNNN from r7469.
+                                            # Its earlier commits signed `69:` carry no number.
                    'ci': None}                # the runner is not a line and holds no half
 _NODE = _os.environ.get('NODE')
 if _NODE is None:
