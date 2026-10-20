@@ -191,3 +191,4 @@ receipts/L_probability/S59_the_census_of_a_shape_inside_one_file_missed_the_clau
 receipts/L_probability/S59_the_census_of_a_shape_inside_one_file_missed_the_clause_four_lines_from_the_pin_that_fixes_it.py	"f'{REG}~1..{FRAME}'"	SOURCE	(no file kind)	r7386
 receipts/L_probability/S59_the_census_of_a_shape_inside_one_file_missed_the_clause_four_lines_from_the_pin_that_fixes_it.py	"_s23_at_frame"	SOURCE	(no file kind)	r7386
 receipts/L_probability/S59_the_census_of_a_shape_inside_one_file_missed_the_clause_four_lines_from_the_pin_that_fixes_it.py	"_s23_live"	SOURCE	(no file kind)	r7386
+receipts/P16_cosmogenesis_paper/P16_the_crossing_reverses_the_radiation_amplitude_so_it_is_not_species_blind.py	"a=\\tfrac{A}{2}(1-\\cos\\eta)+\\sqrt{B}\\sin\\eta"	PAPER	tex	tex-present

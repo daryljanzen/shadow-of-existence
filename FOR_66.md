@@ -23908,3 +23908,28 @@ sites, because the gate's own notes say "one `open()` reclassified every site in
 does not feed the asserted figure changes nothing. The remedy menu was right and my reading of the
 mechanism was not.* **What is next:** unchanged — whether the radiation amplitude's sign reversal has any
 observable consequence, priced in its own file first.
+
+## ⛔⚑ `r7473+cc66.14` — **MY `.13` FIX TRIPPED THE NEXT RATCHET, WHICH IS WHAT IT SHOULD HAVE DONE: READING A PAPER'S EQUATION *IS* A QUOTE PIN, AND THE KEY IS NOW ADJUDICATED IN THE SAME PASS**
+
+`fast` went red again on the repaired head and the CI log named **`check_quote_pins`** — so `.13` did clear
+`check_unread_figure` and uncovered the next gate rather than failing. **The cause is mine and it is `.13`'s
+own remedy:** the fix made the receipt *read* `P16`'s printed interior solution by asserting the literal is
+present in `cosmogenesis_paper.tex`, and that is exactly what a quote pin **is** — a receipt testing that a
+string is present in a paper it does not own. One new key, measured with the instrument scoped to the file
+rather than by running the 20-minute gate blind: `[QUOTE-PIN][UNDECIDED][TOKEN]` with a **missing target
+annotation**. ⇒ **Adjudicated in the same pass, by the route the corpus provides for exactly this and
+without touching an instrument (`r7471` ① holds):** one row in `corpus/target_annotations.tsv` giving the
+target as `PAPER` (`tex`, `tex-present`), and one row in `corpus/quote_pin_baseline.tsv` verdicted
+**`DELIBERATE`** with what was read — `cosmogenesis_paper.tex:616`, the sentence printing the solution —
+and with the reason stated: **the pin guards an EQUATION this receipt reasons from, not a status sentence,
+so if `P16` restates its interior this receipt must fail and be re-read.** That is `r7127`'s own test for
+`DELIBERATE` and the failure mode the operator was built from cannot reach it. **Confirmed by the gate
+itself, not by the scoped instrument alone: `check_quote_pins` `rc=0` in 1193 s — 2728 keys against a
+baseline of 2728, no duplicate, no stale entry, every ratchet holding, and "the quote-pin class is fully
+accounted".** ⌗ *And one thing I tried and abandoned, kept because it bounds the method: I first attempted
+to make the key trace as `PAPER` automatically by rewriting the read as a direct `ROOT`-join the way
+`C26_the_onset_is_not_free.py` does. It stayed `UNDECIDED`, because the tracer needs the literal's own names
+to reach the read, and chasing that further would have been instrument work on a frozen instrument. The
+hand-kept annotation file exists for precisely the keys the tracer cannot decide, and using it is the
+prescribed route rather than a workaround.* **What is next:** unchanged — whether the radiation amplitude's
+sign reversal has any observable consequence, priced in its own file first.

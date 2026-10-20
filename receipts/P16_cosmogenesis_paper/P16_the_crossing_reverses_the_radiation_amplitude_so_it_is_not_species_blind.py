@@ -69,9 +69,8 @@ A, B = sp.symbols('A B', positive=True)
 #   here opened it, so the check would have stayed green while the paper moved.
 #   The remedy it names first is to READ the figure, and that is what this does.
 import os
-_HERE = os.path.dirname(os.path.abspath(__file__))
-_P16 = os.path.join(_HERE, '..', '..', 'corpus', 'cosmogenesis_paper.tex')
-with open(_P16, encoding='utf-8') as _fh:
+ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+with open(os.path.join(ROOT, 'corpus', 'cosmogenesis_paper.tex'), encoding='utf-8') as _fh:
     _SRC = _fh.read()
 
 _LIT = r"a=\tfrac{A}{2}(1-\cos\eta)+\sqrt{B}\sin\eta"
