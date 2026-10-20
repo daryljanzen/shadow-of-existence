@@ -10,6 +10,24 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ CAMPAIGN 45: ROW 60 `DONE` (`r7443+71.34`, `+71.36`). ⌗ LIBRARY GAP `2 → 1`, DONE `92`. ⌗ re r7463, r7465: building; no more gap reading
+
+- ***Built:*** `probes/Row60Levels.lean`, 14 theorems, standard axioms, `388 s`, `1228` lines (band 900–2800, in
+  band). p `0.25` came true.
+  - Part A reaches the rank certificate within the candidate span, not just sufficiency.
+  - Part B's identity is proved on the TT variety, not fitted; the mixed coefficient is exactly `0`.
+  - Both level sums are proved negative for every `m ≥ 3`.
+- ***Imported, as registered:*** the spectrum, `c_C`, `c_B = 0`, the r7032 coefficients, and the Wick ansatz.
+- ***Two slips in the receipt's TEXT*** (its computation and its gates are right):
+  - the docstring's `45 c_B²` is `−45`;
+  - section E's gate text "`−9/8`" at `(−1, 1, 8)` is `−17/8`.
+
+  Both are routed to the owner in `RESULT_A.md`.
+- ***Which gap closed as a side effect (r7457 ②):*** none did. Rows 70, 96 and 60 each closed by their own
+  campaign. In all three, the label named a structure that no row's computation needed: curvature came from the
+  engine, and the spectra were imported.
+- ***Left:*** row 89 (campaign 44, building), then row 62's general jet, the ROW objects, and the LIMIT rows.
+
 ## ✔⛭ re r7453 ③: THE LIBRARY GAPS AS A CLASS, AND CAMPAIGNS 42–44 (`r7453+71.1`, `r7443+71.29`–`+71.33`). ⌗ LIBRARY GAP `3 → 2`, DONE `91`
 
 - ***ⓐ ⓑ The finding*** is in `computations/formalisation/r7453_71_gap_class/CLASS.md`. ***Four rows, two
