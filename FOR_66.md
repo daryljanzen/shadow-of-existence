@@ -23656,3 +23656,82 @@ what is committed. ⌗ *Second time this revision; the same rule as the previous
 ⌗ **And `main` has absorbed `.1`–`.4` already** (`a42f80f92` and `72e7564d9` are both ancestors of
 `de8316ec4`), so PR #510 now carries `.5`–`.8` alone: `PO-88`'s delivered step, the two `fast` repairs, and
 the two merges.
+
+## ⌗💰 `r7465+cc66.9` — **#510 IS MERGED, THE BRANCH IS RESTARTED, AND `PO-88`'s REMAINING HALF IS PRICED BEFORE A LINE IS WRITTEN. ⛔ WITH MY PHYSICS-PREDICTION RECORD STATED FIRST, BECAUSE IT IS 0 OF 4 AND YOU SHOULD READ THIS PRICE KNOWING THAT**
+
+#510 merged at `30f7f0bd7`. The branch is restarted from `main` (a merged PR cannot carry new work) and
+carries `.9` onward. ⌗ **The row has not moved yet:** `THE_FRONTIER.md`'s `PO-88` still reads **2 steps**
+and does not mention `r7465`, so the `r7399` step my `.103` delivered is not yet recorded. *That is the
+register's amendment and yours to make — `.103` routed it with what it has to carry.*
+
+⌗ **And one outcome owed from `.108`:** `check_quote_pins` did **not** settle locally. Both runs died on my
+own caps — 700 s then **1500 s, `rc=124`** — against a gate measured at 595 s, and the cause is **mine and
+not the gate's**: I had just run CI's 128-gate list twice and four `pdflatex` passes in the same container.
+⇒ *The exclusion table's reason for that gate is right for a reason I had not measured: it is 595 s on a
+quiet container and unbounded on a busy one.* Its ratchet condition reads clean (2727 keys against a
+baseline of 2727, no duplicate, none named as known) and **CI's `fast` is the verdict, which is what the
+table says.**
+
+### ⛔ MY RECORD ON THIS, STATED BEFORE THE PRICE AND NOT AFTER
+
+`.102` priced four physics answers for `PO-88`'s named step. **All four were wrong** — the regulator, the
+time budget, the temperature, and the verdict — while five of six cost rows landed inside band.
+⇒ *So read what follows knowing the seat writing it is 0 for 4 on physics central values and roughly 10 for
+12 on its own labour.* ⌗ The one diagnosis I trust from that failure: **I predicted from a sentence in a
+paper rather than from a number I could have computed first.** This price therefore does its arithmetic
+where it can before committing, and names the one place it cannot.
+
+### ⚭ WHAT REMAINS OF `PO-88`, READ OFF THE ROW
+
+Discharge: **a concrete model's stress-energy carried THROUGH the branch point as a dynamical problem
+rather than a transmitted datum.** `.103` delivered the `r7399` number and explicitly integrated no flow;
+it also killed the BOUNDARY exit on the **approach** (4.364 Gyr of proper time). ⇒ **What is left is the
+crossing itself**, and the question is sharper than the row's wording: *the approach has gigayears of
+freedom — does any of it reach the other side, and in what form?*
+
+Three outcomes, and they are exclusive:
+
+| | | |
+|---|---|---|
+| **C1** | the crossing is a **bijection** — a reflection that carries the whole approach through | the stress-energy is determined, nothing is lost, and the row DISCHARGES |
+| **C2** | the crossing is a **filter** — the freedom collapses to a few numbers | the row discharges with a *measured* loss, and that loss is the transmitted datum `P15` names |
+| **C3** | the crossing is **not defined** for this stress-energy on this substrate | the row terminates, and not as the boundary `c54.113` reached for |
+
+### 💰 THE PRICE, WITH THE ARITHMETIC DONE WHERE IT CAN BE
+
+⌗ **Done first, so it is not a prediction:** the substrate law is
+$r^3 = 2M\alpha^2\sinh^2(3\tilde\tau/2\alpha)$, and $\sinh^2$ is an **even** function. So under
+$\tilde\tau\to-\tilde\tau$, $r^3$ is even and dust's $\rho\propto1/r^3$ is even, while $dr/d\tilde\tau$ is
+**odd**. *That much is arithmetic and I am not pricing it.*
+
+⚠ **And here is the one place I cannot do the arithmetic in advance, named rather than papered over.** The
+corpus uses **two** continuations through the branch point and I have not established they agree here:
+`P2`'s $z\mapsto\pi+i\rho'$ at the conjugate critical point, and `P3` §`sec:lap`'s *ride through $r=0$ onto
+the negative branch*, where $r$ marches as arc length through $+\alpha/\sqrt3,\,0,\,-2\alpha/\sqrt3$. **A
+plain reflection $\tilde\tau\to-\tilde\tau$ is neither of those**, and whether the even/odd split above
+survives the one the corpus actually uses is the build's first measurement, not its assumption.
+
+| # | what is computed | my pre-registered answer |
+|---|---|---|
+| ⒜ | do the two continuations agree on the parity of $r^3$ and of $dr/d\tilde\tau$ | ✔ **yes, and both give $r^3$ even, $dr/d\tilde\tau$ odd** |
+| ⒝ | $T^{\mu\nu}$ for the dust+$\Lambda$ interior, component by component, under that continuation | **energy density even, radial momentum flux odd, pressure trivially even** |
+| ⒞ | is the through-crossing map a bijection, a filter, or undefined | **C1, a bijection** |
+| ⒟ | so: collapse ↦ expansion, computed rather than asserted | ✔ **yes** — the sign flip of $dr/d\tilde\tau$ IS the cosmogenesis reading, and it falls out of the parity rather than being put in |
+| ⒠ | does the row discharge | **DISCHARGES** — the stress-energy is carried through as a parity map with no free data, which is a dynamical answer and not a transmitted datum |
+
+⌗ **What would kill it, stated so it can:** the two continuations disagreeing on either parity (⒜ dead,
+and then ⒞ is open again); any $T^{\mu\nu}$ component whose parity is neither even nor odd (⒝ dead, and
+C1 with it); or the continuation turning out to require data the approach does not fix (**C2**, which would
+make `P15`'s *"transmitted datum"* a measured quantity rather than a phrase — the most interesting way for
+this price to fail).
+
+**The build's cost:**
+
+| what | predicted (band) |
+|---|---|
+| the computation script | **250** lines (160–380) |
+| `WALK.md` | **160** lines (110–260) — *lowered: my last two came in at 122 against a 200 central, twice* |
+| wall time | **5 s** (1–60) |
+| measurement runs | **5** (3–9) |
+| turns to the result | **2** (1–4) |
+| a receipt | ⚠ **owed and will be written**: parity claims are assertable, and each has a control — a species whose parity is the other one |
