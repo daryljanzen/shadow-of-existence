@@ -23569,3 +23569,60 @@ when a frame bug hid inside the one component that could not see it.*
 - **The `sec:peak (mass-blindness)` row's count** moves from three to four, by a new mechanism.
 - **The `P16` paragraph** needs its disclaimer brought into line with its own third instance. `P16` is not
   mine; the finding is routed with the sentence quoted.
+
+## ⛔⛭ `r7465+cc66.104` — **`fast` WENT RED ON `.103`'s HEAD AND TWO OF THE THREE REDS ARE MINE. ⛭ AND THE DIAGNOSIS EXPOSES A REAL HOLE IN MY OWN PRE-PUSH RULE: A GREP FINDS WHAT READS A CHANGED FILE, NOT WHAT READS A FILE *DERIVED* FROM IT. ⌗ THE THIRD RED IS `r7465`'s OWN COMMIT**
+
+`fast — registers, views, IDs` failed on `d96035005`, step *"the text gates"*, exit 1 — which names no gate.
+⇒ So I ran **CI's own list**, extracted from `gates.yml` rather than retyped, **129 gates under `NODE=ci`**,
+one output file each. Three reds, and I tested each against a pristine detached worktree at `origin/main`:
+
+| gate | on my head | on pristine `origin/main` | whose |
+|---|---|---|---|
+| `check_pages_current` | ⛔ rc=1 | ✔ **rc=0** | **mine** |
+| `check_pdf_current` | ⛔ rc=1 | — | **mine**, and it names my commit |
+| `check_view_tables` | ⛔ rc=1 | ⛔ **rc=1, same ten rows** | **not mine** |
+
+### ⛭ THE TWO THAT ARE MINE, AND WHY MY 37-GATE PRE-PUSH SET DID NOT SEE THEM
+
+Both are **one cause**: `.103` regenerated the appendices, so `appendix_receipts_P16.tex` and
+`appendix_receipts_P07.tex` moved — and an appendix is a **generated input** that two other artefacts are
+built from.
+
+- `check_pages_current`: *"paper_P16.html differs by +1 bytes from what its .tex generates"*, and
+  `paper_P7.html` by +0 bytes with different content. ⇒ Fixed with the repo's own generator,
+  `scripts/gen_paper_html.py P16` and `P7`. Gate now green.
+- `check_pdf_current`: *"CR_framework.tex: appendix_receipts_P07.tex last changed at `d9603500`, PDF last
+  changed at `3a29af14`, which is not after it"*, and the same for `cosmogenesis_paper.tex`. ⇒ Fixed as the
+  gate instructs — `pdflatex` twice from `corpus/`, both papers, both passes `rc=0`, PDFs committed with the
+  source. ⌗ *`pdflatex` is present in this container, so this was never a capability question.*
+
+⛔ **AND THE HOLE IN MY OWN RULE, WHICH IS THE PART WORTH KEEPING.** `r7453` ③ and `.94`'s grep rule say the
+reader set of an edited file is produced by `grep`, named, and run. I did that: 37 gates, all green. **It
+could not have found either of these.** `grep -lF appendix_receipts_P16 corpus/check_*.py scripts/*.py`
+returns `check_appendix_current`, `check_receipt_tex_scope`, `regen_frontier` — and **not**
+`check_pages_current` or `check_pdf_current`, because neither mentions the appendix. They read
+`paper_P16.html` and `cosmogenesis_paper.pdf`, which are *built from* it.
+
+⇒ ***The grep finds what READS a changed file. It does not find what reads a file DERIVED from a changed
+file.*** That is the first measured limitation of the rule `PO-78` promoted as its 29th face, and it has a
+cheap closure: **after running a generator, the changed set is its OUTPUTS, not its inputs** — so the grep
+is run again on what `git status` shows, which here would have named both gates at once.
+
+⚠ **A second, smaller one, and it compounded the first.** `check_pdf_current` compares **commits**
+(*"last changed at `<sha>`"*), so it is blind to a working tree. My 37-gate set ran **before** the commit
+and the gate answered a different question — it was green then and red the moment the change had a sha.
+⇒ *A history-reading gate must be run after the commit, or it is not being asked anything.*
+
+### ⌗ THE THIRD RED IS NOT MINE, AND ITS COMMIT IS `r7465`'s
+
+`check_view_tables` reports `check_register_monotone.py:DECLARED` as a **HARD** table carrying
+**0 of 10** live rows, naming every one: `PO-24`, `PO-50`, `PO-86`, `PO-87`, `PO-88`, `PO-89`, `PO-90`,
+`PO-91`, `PO-92`, `PO-93`. **Identical on pristine `origin/main`, same ten rows** — and
+`git log origin/main -- corpus/check_register_monotone.py` names the commit that added the table:
+**`8e572cdcf` — `r7465`, the revision that put all four seats back on the physics.**
+
+⌗ *So the revision that struck the instrument row landed a hard view table with no row in it.* **No fix to
+port and none of it mine to write:** the gate is another seat's, and the DECLARED values it wants are the
+register's, which carries `sources: [observer]`. ⇒ **This blocks `fast` on `main` itself**, so it blocks
+every seat's branch until the rows are added — which is why it is routed rather than worked around, and why
+I have not touched that table. *It is ten rows in one commit for whoever owns it; it is a fork for me.*
