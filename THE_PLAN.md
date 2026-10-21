@@ -1,7 +1,7 @@
 ---
 name: the-plan
 kind: STATE
-current: r7507
+current: r7511
 job: The programme's work, route and destination — the lanes, the per-turn operating layer, the four-step state advance
 ---
 
@@ -321,7 +321,7 @@ corpus in `PO13_WORKING_STATE.md`.*
 
 <!-- GRAIN-CURRENCY:BEGIN -->
 
-## ⌗⌗⌗ CURRENCY — **GENERATED** by `scripts/regen_grain_currency.py`, baseline r2417, register front r7507
+## ⌗⌗⌗ CURRENCY — **GENERATED** by `scripts/regen_grain_currency.py`, baseline r2417, register front r7511
 
 > ⚠ **THE BODY BELOW STOPS AT THE BASELINE. This head is the list of what has moved since, and it is REGENERATED rather than written** — *because these documents go stale every ~20 revisions by construction, and paying that by hand is a debt that recurs rather than a defect that closes.*
 >
@@ -796,7 +796,9 @@ $$\Omega_\Lambda=\frac{x_0^3}{x_0^3+2},\quad \Omega_m=\frac{2}{x_0^3+2},\quad q_
 > **(2) ← WE ARE HERE, on its last family.** Close the four bounded families (1, 3, 4, 5). *The r1408 finding that
 > these are not four builds but ONE — all four living on the single progenitor collapse-excursion `P16` models — is
 > borne out: that interior is built, and it is what closed `PO-25`. **Families 1 and 4 are closed; family 5 has
-> reached its verdict, the arm's spectrum rejected on shape.** What remains of the four is **family 3, the inherited
+> reached its verdict on the configuration the construction specifies, the arm's spectrum rejected on shape** —
+> a rejection `P15` locates in one assignment, the rate the projection's comoving distance is built on, which on the
+> leaf rate closes the gap (`PO-87`). What remains of the four is **family 3, the inherited
 > datum, carried at `PO-31`** — with two residuals opened from the closures beside it, `PO-47` on what displaces the
 > fourth acoustic peak and `PO-49` on the charged interior's third regime.*
 > **(3)** the generative maths/physics pass, *without needing 6–8 first*; the arc may reach them.
@@ -2473,7 +2475,8 @@ The thin high-value edge — contained work inside established machinery, action
    reproducing a standard code to 0.23% in the arm's configuration: the arm returns the comb to a part in six hundred
    and height ratios 2.264 and 2.298 against the sky's 2.217 and 2.277, and the full-spectrum likelihood rejects it
    on TT shape, the difference being the **acoustic contrast**, made in the projection from wavenumber to multipole
-   and not in the source — the live edge (`PO-56`). On the settled leaf assignment the damping-scale signature is
+   and not in the source; `P15` locates it in the rate the projection's comoving distance is built on, the leaf rate
+   closing the gap below the control's own chi-squared — the live edge (`PO-87`). On the settled leaf assignment the damping-scale signature is
    under a per cent. *(Never multiply one cosmology's peaks by another's damping.)*
 2. ~~**A1.2 · Low-ℓ octopole / large-angle shape** — the exact closed-S³ hyperspherical (or full Boltzmann) large-angle shape, to firm the octopole verdict (the sharpest exposed falsification edge). Computation-complete/data-limited, but the exact-shape solve closes the last `[reading]`.~~ **✔ DONE (built in P15 §largescale/§scope, r1006 sweep-confirmed):** the exact large-angle shape is now built with a *genuine Boltzmann transfer* (SW + early/late ISW + Doppler, sampled at the discrete closed-S³ modes), gate-validated to four figures against the reference C_ℓ and stable in r₀ (receipts `verify_lowell_boltzmann.py`, `verify_lowell_exact_measure.py`, `verify_lowell_likelihood_v2.py`). It firmed the octopole verdict decisively: a *mild, non-discriminating* deficit (≈0.49/0.44 of ΛCDM at ℓ=2/3, minimum at ℓ=4, recovering by ℓ≈8, depth cross-validated between two transfers), a **wash** under the exact cosmic-variance likelihood (Δ(−2ln L)≈+1.6 over 2≤ℓ≤10, inside cosmic variance) — superseding the earlier over-deep ~0.2 estimate (≈+14) that had wrongly named it a falsification edge. The deficit's existence and location stand as a real parameter-free feature; its depth places it consistent with ΛCDM. The once-sharpest exposed edge is closed as non-discriminating. *(Was stale in the runway; struck. The broader full-spectrum likelihood remains open — that is A1.3, distinct.)*
 3. **A2.4 · Matter branch-point crossing worldline dynamics** — the detailed worldline/field dynamics of a concrete matter model transiting the shared layer (the crossing is well-posed; the depth is open). **This is the worldline-and-field side of item 2 below** — not a separate build. The crossing's well-posedness, isotropisation, scale-freeness and transition law are established (P7 §frontiers item 1); what is open is the dynamics on the excursion.
@@ -2938,7 +2941,8 @@ These are **strengths to state precisely and hold**, not work to grind — the d
   with the peak-heights transfer of Lane 1). **✔ RUN:** the full-spectrum likelihood scores both arms on the same
   bins; on the full-range lensed configuration the arm sits at 2.57 times the control's distance from the data as
   computed and 1.57 times once both are refitted — a rejection on TT shape whose content is the acoustic contrast
-  (P15 `sec:refit-bound`).
+  (P15 `sec:refit-bound`), carried by the rate the projection's distance is built on: on the leaf rate the arm
+  reaches 184.989 against the control's 186.007 (`PO-87`).
 - **A2.1 · Multi-abundance BBN likelihood** — whether one progenitor handover fits D, He-4, and the metallicity floor together (the live refutation edge).
 - **A2.6 · Li-7** — the shared problem, inherited honestly (neither cured nor worsened). **A4.8 · Dark matter** — carried as the bend, particle question open, at full weight against the standard evidence. *(Standing honest limitations, logged so no node re-manufactures a tension.)*
 

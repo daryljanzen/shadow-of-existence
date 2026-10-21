@@ -245,9 +245,12 @@ def main():
     #   that, and the absence of the token, so a returning fitted onset would reopen the question.
     check('P15 carries NO early-universe parameter and "what it does carry should be stated plainly" '
           '-- the fitted onset is gone, so this argument has no z_onset to leave untouched',
-          'The cosmology carries no early-universe parameter, and what it does carry should be '
-          'stated plainly' in p15
+          'The cosmology carries no early-universe parameter of its own' in p15
+          and 'what it does carry should be stated plainly' in p15
           and 'z_{\\mathrm{onset}}' not in p15)
+    # r7511 (69): the sentence now scopes the claim to the paper's own parameters, its inherited data
+    #   (eta and with it omega_b, A_s and n_s) being measured as flat LCDM measures them; the claim this
+    #   check guards is unchanged, so the literal is re-pointed rather than dropped.
 
     print()
     if FAILED:

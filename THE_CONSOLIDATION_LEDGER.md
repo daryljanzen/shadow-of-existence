@@ -376,9 +376,12 @@ identification, the observer's own flat slice. The summaries do not all carry th
 - `P16` §scoping and line 164: the same "quantitatively fatal" in the distance direction.
 - `ONTOLOGY_FOUNDATION_INDEX` lines 1131-1133 (quotes `P16` §scoping verbatim) and 1371.
 - `P15` abstract: headlines the 2.57x / 1.57x rejection only; it carries the leaf-distance result and the identification.
+  **Done (r7511)**, with the introduction's summary and the abstract's bare "no early-universe parameter" scoped to its own.
 - `P15` around line 1950: "the distance ladder confirms" the stacking rate. The radiation term is negligible below z of
-  about 10 (`P16` §scoping's own words), so the ladder is consistent with either; reword.
+  about 10 (`P16` §scoping's own words), so the ladder is consistent with either; reword. **Done (r7511).**
 - `THE_PLAN` family 5, A1.3, A2.3 and the 2410 verdict: "rejected on TT shape" with no word of the leaf-distance result.
+  **Done (r7511)** at lines 799, 2475 and 2940 (the 2475 line also pointed at the struck `PO-56`); the 2410 verdict goes with
+  `THE_PLAN`'s own turn.
 - `EXPLAINER` line 251 closed the leaf-distance door by nucleosynthesis, which runs on the leaf rate either way. **Done
   (r7509).** Line 262 states the identification as `P15` holds it; it stands until the adjudication.
 - The peak-spacing figures disagree across instruments: the wisdom-ledger row at r2789 has a spacing of 258 against a
@@ -386,10 +389,11 @@ identification, the observer's own flat slice. The summaries do not all carry th
   302.889 to 301.380. Find which figure is stale and fix it where it lives.
 - `PO-87`'s register row: it does not carry the leaf-distance result, nor the finding that the visibility's 14.6 per cent
   extra width alone is not the carrier (the width swap amplifies the difference and the undo test fails both ways, r6919
-  and r7191). Rewrite the row so its live clause is the identification itself.
+  and r7191). Rewrite the row so its live clause is the identification itself. **Done (r7511).**
 - **Frontier, for the first reactivation order (not in this arc):** whether the observer's-readout identification forces
   the stacking-rate distance. `P16`'s rule puts a comoving separation read across leaves on the stacking rate and a process
-  running in the content on the leaf's; light's path is the case the rule has to be shown to decide.
+  running in the content on the leaf's; light's path is the case the rule has to be shown to decide. Daryl's direction, to test first: the projection may need light's
+  real integrated path distance, with the fit's preference for the leaf-rate distance as the empirical pointer to the reason.
 
 ### 2. The paper turns, each carrying 72's items for that paper
 
@@ -410,9 +414,15 @@ crossing, `PO-92` §open), `P3` (`PO-92` at line 1222, `PO-93` §curvature), `P2
 - `P14`: normal-bundle rank 3 against 1; S3 "broken" against "not"; T in the order-12 group; K called the seam continuation
   (xi's name); "protected under any deformation" (recorded at r1830, still standing); "antipodal is R"; the 11/11 test's low
   power; the triality count mismatch.
-- `P15`: lines 432 and 1803-1804 call the branch point a "null surface", against "not a Killing horizon"; driving on the
-  collapse leg against the expanding leg; r_s 146.4 against 145.4; x0 1.678 against 1.6648; 2.56 against 2.57; line 2421
-  places the dS2xS2 throat at the branch point.
+- `P15`: the branch point called a "null surface" and "the cosmological horizon promoted to the initial layer" (line 433),
+  settled with section 3's r=0 canon and edited there; "collapse-phase driving" (sec:envelope) against every sound wave starting
+  fresh on the expanding leg, read with sec:coherence in `P15`'s second turn. Checked and not defects: r_s 146.4 against 145.4
+  (the two rates compared on purpose), 2.56 against 2.57 (two bin sets, adjudicated r7167), x0 1.678 (no longer in the paper),
+  the throat at the branch point (the caption places the branch point on the Nariai member, not the throat at it).
+  **The open-language read is done (r7511)**: 66 sites ruled, 28 ordinary English, 34 pointed at live rows, 4 owed (below);
+  three sentences rewritten (a history narration at the residual's period, "the distance" made "the total distance to last
+  scattering" where the leaf-rate result would otherwise contradict it, a false "remains owed" in the large-scale continuation)
+  and one history clause cut.
 - `P16`: "turnaround" used for the crossing; "seam" for r=0; collapse-side driving; datings 7.06 / 7.65 against 7.46.
 - `P17`: stale masthead; "past the wall"; "maximally symmetric S3"; the bare "NO free constant"; two polarity conventions.
 - `P18`: line 778 "continued through the seam"; 873-876 against 894-901 (where the Gowdy wave sits); 1508 "computed rather
@@ -474,6 +484,10 @@ crossing, `PO-92` §open), `P3` (`PO-92` at line 1222, `PO-93` §curvature), `P2
 
 ### 7. The register and the close
 
-- One-state rows still to do: `PO-50`, `PO-86`, `PO-89`, `PO-94`; `PO-87` rewritten with section 1.
+- One-state rows still to do: `PO-50`, `PO-86`, `PO-89`, `PO-94`; `PO-87` rewritten with section 1 (done r7511).
+- Owed rulings from the open-language reads, each to be worked to a verdict or given a row under `PO-86`: `P15`'s coherence
+  mechanism, "argued, not yet proven through the full transfer" while the transfer is run; the lift's account, whose kernel
+  exponent `P15` says is not settled (a factor, not a detail); the size of the polarisation source's pull on the reported
+  configuration, not measured; the flux the seam radiates into the lap's future, not computed.
 - Close: strike `PO-86`, put `check_open_item_coherence` in CI, and reactivate 60, cc66 and 70 (and 71 if a
   formalisation row is open by then) on the frontier as it stands, the projection-distance adjudication first.

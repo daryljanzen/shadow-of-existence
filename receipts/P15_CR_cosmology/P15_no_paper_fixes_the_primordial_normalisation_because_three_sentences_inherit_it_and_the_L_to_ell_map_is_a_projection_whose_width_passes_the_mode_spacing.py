@@ -159,9 +159,12 @@ counts = {'P15 A_s': P15.count('A_s'), 'P16 A_s': P16.count('A_s'), 'P14 A_s': P
 print("\n    the counts that establish the negative:")
 for k, v in counts.items():
     print(f"      {k:<20} {v}")
-gate("Ⓐ⑤  A_s appears 21 times in the paper that USES it and ZERO times in the two that would have"
+# r7511 (69): the P15 count was pinned at its exact value (21) and moved to 22 when P15's abstract named
+#   A_s among the inherited data; the claim is the located negative, so P15's side is now asserted
+#   present (at least the 21 the order counted) rather than frozen.
+gate(f"Ⓐ⑤  A_s appears {counts['P15 A_s']} times in the paper that USES it and ZERO times in the two that would have"
      " to produce it -- the negative is located, not inferred from silence",
-     counts['P15 A_s'] == 21 and counts['P16 A_s'] == 0 and counts['P14 A_s'] == 0)
+     counts['P15 A_s'] >= 21 and counts['P16 A_s'] == 0 and counts['P14 A_s'] == 0)
 gate("Ⓐ⑥  P14 is not a candidate: `anisotrop` ZERO times, against 8 in P15 -- the control that the"
      " instrument works",
      counts['P14 anisotrop'] == 0 and counts['P15 anisotrop'] == 8)
@@ -309,7 +312,7 @@ print("""
   ==========================================================================
   VERDICT, ORDER (1): NO paper of this corpus fixes the progenitor's
   anisotropic normalisation, and the corpus says so in its own voice three
-  times rather than by omission -- with A_s named 21 times in the paper that
+  times rather than by omission -- with A_s named in the paper that
   uses it and zero times in the two that would have to produce it.  What the
   corpus DOES fix is the amplitude's propagation: the contrast peaks at 1e-6
   where matter domination ends, composition-independent and linear in the
