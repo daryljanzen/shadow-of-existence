@@ -67,6 +67,7 @@ WINDOW = 200
 #:   which is why this invariant is the right one going forward and why this table should not
 #:   need a fourth entry.*
 DECLARED = {
+    'PO-87': ('d7539cf233', 'r7499 brought the row to one state on 60s r7496 draft; the prior record is at the parent of that commit (THE_CONSOLIDATION_LEDGER)'),
     'PO-30': ('549b7e4124', 'r6758 struck the row and rewrote it as a condensed struck record, '
                             'under the convention then in force; an earlier deliberate '
                             'condensation at r6476 (dd02b80649) is inside the same waived span'),

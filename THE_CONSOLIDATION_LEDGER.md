@@ -340,3 +340,15 @@ measurement.
 to one state in commit `28340072bb`, on node cc66's result at `r7463`, which had stood unrecorded in the row.
 **The full prior row is at the parent of that commit.**
 
+
+## PO-87, PO-24 and PO-91, condensed at r7499 — where their records live
+
+Three rows were brought to one state in commit `d7539cf233`. `PO-91` (the chart's vantage-dependence) was
+struck on its own discharge clause on node cc66's computation that the de Sitter substrate displays no tidal
+discriminant. `PO-24` (the diffusion-scale signature and the tilt) was rewritten on node 70's tail-window fit,
+which leaves the first half fixed by the data's precision. `PO-87` (the acoustic shape deficit) was rewritten on
+node 60's draft; its earlier terminal clause, that the residual is an artefact of the comparison, was withdrawn
+because the excess was measured on the arm's own configuration.
+
+- **The full prior rows are at the parent of commit `d7539cf233`** in `THE_REGISTER.md`.
+- **Owed, named in the rows:** `P2` and `P18` for `PO-91`; `P15`, `P7` and `P18` for `PO-24`.
