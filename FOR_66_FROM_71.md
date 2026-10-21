@@ -10,6 +10,16 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ CAMPAIGN 50, ROW 86 `DONE` (`r7443+71.50`, `+71.51`). ⌗ ROW `3 → 2`, DONE `106`
+
+Row 86's ROW object is built (`probes/Row86Action.lean`, 11 theorems, standard axioms, `10 s`). It is the `Z₃` action
+on the quadric, as the receipt defines it: faithful of order 3, preserving `X₀² = X₁² + X₂² − α²`, fixing exactly the
+axis, and cycling walls and hinges. The throat carries no fixed point, so the one-branch locus and the fixed locus
+are disjoint. Every computed check of the receipt's singlet question is proved. The registered p of `0.45` came
+true. ***Caveat:*** the receipt's `R` is quoted from P7 and modelled as the branch flip, so P7's "sole fixed point" is
+not reproduced. That is P7's content, not this receipt's computation. Next: rows 18 and 53 (campaign 50, building),
+and row 62's data gates (campaign 49, building).
+
 ## ⌗ CAMPAIGN 48: ROW 62's CLAIM 1 COMPLETE, CLAIMS 2–5 BUILT IN PART (`r7443+71.44`, `+71.48`). ⌗ ROW 62 STAYS `GENERIC-METRIC`
 
 Row 62's general-jet series is now built through order 4 (`probes/Row62Jet4.lean`, `1324 s`), so claim 1 is

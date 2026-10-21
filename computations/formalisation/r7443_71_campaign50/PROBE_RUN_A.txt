@@ -1,0 +1,14 @@
+# r7443+71.51 — campaign 50, row 86, re-run by 71
+# command: cd computations/formalisation/lean && lake env lean probes/Row86Action.lean
+# exit 0, wall 10 s, 0 errors, 0 warnings; 344 lines; no sorry, no native_decide
+'ShadowProbe.Row86Action.action_faithful_order3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.Row86Action.preserves_quadric' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.Row86Action.loci' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.Row86Action.orbit_free' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.Row86Action.fixedPoints_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.Row86Action.orbit_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.Row86Action.throat_points_permuted' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.Row86Action.branches_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.Row86Action.axis_pair' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.Row86Action.flip' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.Row86Action.singlet_obstructed' depends on axioms: [propext, Classical.choice, Quot.sound]
