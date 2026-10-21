@@ -129,6 +129,12 @@ SLOW = (
 #   The global cap stays where it is; this buys the one receipt that needs it the room to finish,
 #   and the number is the measurement plus headroom rather than a round figure chosen to feel safe.
 LONG = {
+    # r7513 (69), on the carry ledger's signature (an empty gate list, which is a kill and not a verdict) for two
+    # receipts the scoped suite selected on P15 pushes: P15_the_fourth_parameter_... measures 737.9s standing alone
+    # in the read index, so the 600s cap can never be met, and S36_... 496.5s, which four-way contention takes
+    # over it.  Budgets at about twice the measured figure, as the entries below are set.
+    'P15_the_fourth_parameter_recovers_the_drift_the_gaps_show_but_the_spacing_and_the_drift_are_not_separable_so_the_data_half_still_does_not_happen.py': 1500,
+    'S36_two_more_faces_of_the_live_subject_family_and_each_needed_a_different_widening_of_what_gets_run.py': 1200,
     # ⛭ ADDED r7412 (60), on the CARRY LEDGER'S OWN SIGNATURE rather than on either file being seen
     # slow.  The trunk's `refs/ci/carry` named these two with an EMPTY gate list, beside entries naming
     # one, two and four gates -- ** a carried red with no clause reporting **, which is what a KILL looks
