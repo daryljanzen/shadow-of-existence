@@ -1,0 +1,357 @@
+# r7443+71.70 — campaign 53 (P2), re-run by 71
+# command: cd computations/formalisation/lean && lake env lean probes/S3PolySpectrum.lean
+# exit 0, wall 171 s, 0 errors; 2626 lines; no sorry, no native_decide
+probes/S3PolySpectrum.lean:103:67: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+probes/S3PolySpectrum.lean:103:71: warning: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+probes/S3PolySpectrum.lean:103:71: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+probes/S3PolySpectrum.lean:166:56: warning: This simp argument is unused:
+  LinearMap.sum_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [LinearMap.sub_apply, Module.End.mul_apply, Finset.sum_apply, LinearMap.smul_apply, Pi.sub_apply,
+    Pi.smul_apply, Lt_apply, Fin.sum_univ_three, smul_eq_C_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/S3PolySpectrum.lean:166:77: warning: This simp argument is unused:
+  Finset.sum_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [LinearMap.sub_apply, Module.End.mul_apply, LinearMap.sum_apply, LinearMap.smul_apply, Pi.sub_apply,
+    Pi.smul_apply, Lt_apply, Fin.sum_univ_three, smul_eq_C_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/S3PolySpectrum.lean:167:6: warning: This simp argument is unused:
+  LinearMap.smul_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [LinearMap.sub_apply, Module.End.mul_apply, LinearMap.sum_apply, Finset.sum_apply, Pi.sub_apply,
+    Pi.smul_apply, Lt_apply, Fin.sum_univ_three, smul_eq_C_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/S3PolySpectrum.lean:167:42: warning: This simp argument is unused:
+  Pi.smul_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [LinearMap.sub_apply, Module.End.mul_apply, LinearMap.sum_apply, Finset.sum_apply,
+    LinearMap.smul_apply, Pi.sub_apply, Lt_apply, Fin.sum_univ_three, smul_eq_C_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/S3PolySpectrum.lean:167:87: warning: This simp argument is unused:
+  smul_eq_C_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [LinearMap.sub_apply, Module.End.mul_apply, LinearMap.sum_apply, Finset.sum_apply,
+    LinearMap.smul_apply, Pi.sub_apply, Pi.smul_apply, Lt_apply, Fin.sum_univ_three]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/S3PolySpectrum.lean:209:67: warning: This simp argument is unused:
+  smul_smul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [K, add_mul, mul_add, smul_mul_assoc, mul_smul_comm, c1, c2]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/S3PolySpectrum.lean:237:67: warning: This simp argument is unused:
+  smul_mul_assoc
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Fin.sum_univ_three, eps, mul_add, add_mul, mul_smul_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/S3PolySpectrum.lean:237:83: warning: This simp argument is unused:
+  mul_smul_comm
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Fin.sum_univ_three, eps, mul_add, add_mul, smul_mul_assoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/S3PolySpectrum.lean:237:98: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+probes/S3PolySpectrum.lean:237:102: warning: Unused tactic linter: `module` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+probes/S3PolySpectrum.lean:237:102: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+probes/S3PolySpectrum.lean:311:37: warning: This simp argument is unused:
+  LinearMap.add_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [dvL_apply, nab_K_apply, Pi.add_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/S3PolySpectrum.lean:384:76: warning: This simp argument is unused:
+  smul_eq_C_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [K_apply, smulT, Derivation.leibniz, Fin.sum_univ_three]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/S3PolySpectrum.lean:483:57: warning: Variable name `b` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _b
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+probes/S3PolySpectrum.lean:483:59: warning: Variable name `c` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _c
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+probes/S3PolySpectrum.lean:497:64: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+probes/S3PolySpectrum.lean:497:68: warning: Unused tactic linter: `iring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+probes/S3PolySpectrum.lean:497:68: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+probes/S3PolySpectrum.lean:540:64: warning: This simp argument is unused:
+  smul_eq_C_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [TL, outer, pR, Fin.sum_univ_three, eps]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/S3PolySpectrum.lean:543:80: warning: This simp argument is unused:
+  smul_eq_C_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [TL, outer, pR, Fin.sum_univ_three, eps]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/S3PolySpectrum.lean:587:36: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+probes/S3PolySpectrum.lean:587:63: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+probes/S3PolySpectrum.lean:683:21: warning: This simp argument is unused:
+  D_TU
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [eK, K_apply, TU, outer, vC, Fin.sum_univ_three, eps, smul_eq_C_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/S3PolySpectrum.lean:686:21: warning: This simp argument is unused:
+  D_TU
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [hK, K_apply, TU, outer, vC, Fin.sum_univ_three, eps, smul_eq_C_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/S3PolySpectrum.lean:747:19: warning: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  S̵e̵t̵.̵m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵S̲e̲t̲.̲m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+probes/S3PolySpectrum.lean:818:31: warning: Variable name `h` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+probes/S3PolySpectrum.lean:826:51: warning: Variable name `h` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+probes/S3PolySpectrum.lean:827:51: warning: Variable name `h` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+probes/S3PolySpectrum.lean:1384:17: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+probes/S3PolySpectrum.lean:1387:17: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+probes/S3PolySpectrum.lean:1426:74: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+probes/S3PolySpectrum.lean:1426:74: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+probes/S3PolySpectrum.lean:1471:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+probes/S3PolySpectrum.lean:1551:66: warning: This simp argument is unused:
+  smul_eq_C_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [T1, Derivation.leibniz]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/S3PolySpectrum.lean:1662:17: warning: This simp argument is unused:
+  LinearMap.sum_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [LL, Finset.sum_apply, Module.End.mul_apply, Fin.sum_univ_three]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/S3PolySpectrum.lean:1662:38: warning: This simp argument is unused:
+  Finset.sum_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [LL, LinearMap.sum_apply, Module.End.mul_apply, Fin.sum_univ_three]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/S3PolySpectrum.lean:1662:56: warning: This simp argument is unused:
+  Module.End.mul_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [LL, LinearMap.sum_apply, Finset.sum_apply, Fin.sum_univ_three]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/S3PolySpectrum.lean:1830:42: warning: This simp argument is unused:
+  Derivation.map_smul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Pi.smul_apply, smul_eq_C_mul, RingHom.id_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/S3PolySpectrum.lean:1878:53: warning: This simp argument is unused:
+  map_add
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [ckL_apply, DtL_apply, DY_comm, map_sub, map_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/S3PolySpectrum.lean:1878:62: warning: This simp argument is unused:
+  map_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [ckL_apply, DtL_apply, DY_comm, map_sub, map_add]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/S3PolySpectrum.lean:1879:51: warning: This simp argument is unused:
+  DY_comm
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [map_sum, Derivation.leibniz]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/S3PolySpectrum.lean:1905:31: warning: Variable name `h` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+probes/S3PolySpectrum.lean:2169:30: warning: This simp argument is unused:
+  ← smul_add
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Θ, LinearMap.add_apply, LinearMap.sub_apply, LinearMap.smul_apply, h1, h2, h3, h4, smul_smul,
+    ← sub_smul, ← add_smul]
+
+Note: Simp arguments with `←` have the additional effect of removing the other direction from the simp set, even if the simp argument itself is unused. If the hint above does not work, try replacing `←` with `-` to only get that effect and silence this warning.
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/S3PolySpectrum.lean:2197:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+probes/S3PolySpectrum.lean:2248:2: warning: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+probes/S3PolySpectrum.lean:2339:19: warning: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+probes/S3PolySpectrum.lean:2420:73: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+probes/S3PolySpectrum.lean:2420:73: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+probes/S3PolySpectrum.lean:2578:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+probes/S3PolySpectrum.lean:2579:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+probes/S3PolySpectrum.lean:2580:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+probes/S3PolySpectrum.lean:2581:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+'ShadowProbe.S3PolySpectrum.frame_bracket' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.S3PolySpectrum.lap_K' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.S3PolySpectrum.K_TT' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.S3PolySpectrum.TU_lap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.S3PolySpectrum.TL_lap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.S3PolySpectrum.seed_TT' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.S3PolySpectrum.sU_TT' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.S3PolySpectrum.sL_TT' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.S3PolySpectrum.tangent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.S3PolySpectrum.mem_spec' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.S3PolySpectrum.tt_level_multiplicity_N' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.S3PolySpectrum.tt_level_multiplicity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.S3PolySpectrum.tt_m345' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.S3PolySpectrum.Sd_invariant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.S3PolySpectrum.Sd_finrank_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.S3PolySpectrum.Sd_finrank' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.S3PolySpectrum.lap_casimir' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.S3PolySpectrum.SJ_eq_CY' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.S3PolySpectrum.neg_lap_casimir' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.S3PolySpectrum.CK_prim' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.S3PolySpectrum.Oop_wpow' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.S3PolySpectrum.Oop_seed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.S3PolySpectrum.Ev_linIndep' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.S3PolySpectrum.Sd_eq_span' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.S3PolySpectrum.lap_spectrum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.S3PolySpectrum.degree_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.S3PolySpectrum.tt_spectrum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.S3PolySpectrum.tt_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.S3PolySpectrum.finrank_TTR' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.S3PolySpectrum.tt_count_real' depends on axioms: [propext, Classical.choice, Quot.sound]
