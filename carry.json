@@ -9430,21 +9430,5 @@
     "unmeasured": true
    }
   }
- },
- "main": {
-  "suite": {
-   "receipts/L257_the_label_did_double_duty/V1_a_strike_that_reads_as_done_and_a_paper_that_says_otherwise.py": {
-    "gates": [
-     "\u24f9\u1d47"
-    ],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39508396720",
-    "since": "86080b091246a5eb7535ff58f2f35fa6bcbadda7"
-   },
-   "receipts/L_probability/S47_the_cheap_tail_closes_whole_and_nine_of_its_fourteen_rows_needed_an_instrument_or_a_normalised_reader_rather_than_a_widening.py": {
-    "gates": [],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39505175744",
-    "since": "30f7f0bd7c9b309241f94fc79fc4dab60c9204d1"
-   }
-  }
  }
 }
