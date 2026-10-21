@@ -24129,3 +24129,95 @@ do-not-edit list either way. So there is **no fix for me to port** and this is r
 numbers are in one comment on `#518` so a reader of the PR is not left to infer them. **What is next:** `#518`
 is `mergeable: true` and gating is yours; `PO-88` is struck, `r7475` is answered, `r7475` ③ holds and `P16` is
 not mine to touch, so I take whatever is topmost in the channel.
+
+## ✔⚑ `r7489+cc66.2` — **THE SUBSTRATE DOES NOT DISPLAY THE DISCRIMINANT, SO `PO-91` DISCHARGES ON THE ORDER'S FIRST EXIT — AND THE WHOLE OF THE DISCRIMINATING CONTENT IS ONE TERM**
+
+`r7489` ① is answered on its **first** exit: **the de Sitter substrate, read on its own, does not
+display the `r7463` ⒟ tidal discriminant.** Every cheap local scalar invariant of it is one
+constant — $R=12/\alpha^{2}$, $R_{\mu\nu}R^{\mu\nu}=36/\alpha^{4}$, Kretschmann $24/\alpha^{4}$,
+Weyl$^{2}=0$ at $D=4$, and $20/\alpha^{2}$, $80/\alpha^{4}$, $40/\alpha^{4}$, $0$ at $D=5$ (both
+taken, because `P3` §`slicing` makes the substrate proper $\mathrm{dS}_{5}$ while the paper works
+the equatorial section, so a statement true only at the section's dimension would not be the
+substrate's) — and so is every orthonormal tidal component a radially boosted observer measures on
+it, $R_{\hat t\hat r\hat t\hat r}=R_{\hat t\hat a\hat t\hat a}=-1/\alpha^{2}$,
+$R_{\hat r\hat a\hat r\hat a}=+1/\alpha^{2}$: **isotropic, rapidity-independent and
+position-independent**, with the Riemann itself matching $\alpha^{-2}(g_{ac}g_{bd}-g_{ad}g_{bc})$ in
+**0 deviations of 256 components at $D=4$ and 0 of 625 at $D=5$**. ⌗ *The absence is an identity and
+not a sample: the verdict is an assert over two **arbitrary symbolic radii**, since sampling cannot
+establish an absence, so no pair of substrate points whatever is separated — the two critical points
+included and wherever they sit.* ⛭ **And the sharper half, which is this file's own:** the swept
+chart's two components come back as the substrate's **own** constant plus a term carrying $M$ and
+nothing else, $-1/\alpha^{2}-2M/r^{3}$ and $-1/\alpha^{2}+M/r^{3}$, with the substrate's part the
+**same** at both critical points — so **the entire difference between them is the $M/r^{3}$ term** —
+and `P3` prop:curvature's $K_{G}=-f'/2r=1/\alpha^{2}-M/r^{3}$ is confirmed rather than quoted,
+finite at $r=2M$ ($1/\alpha^{2}-1/8M^{2}$), divergent at $r=0$, the $M$-term identically absent at
+$M=0$. ⇒ **What this narrows:** the row's discharge condition is met at the row's own quantity, so
+`PO-91` does not terminate as a stated limit and the asymmetry is not exhausted by the substrate's
+symmetry; what carries it is the cut. ⚠ **Three things I did not claim, two of them yours already.**
+`P3` §`sweep` says the *structural* thing in ink — the substrate maximally symmetric, `r=0` a regular
+point *on* the throat circle at $X_{1}=-\alpha$, the two critical points *"topologically identical
+on the substrate"* — and the honest source question found that **before** the file was written and
+it is recorded in `PREDICTION.md`, so **this is a confirmation at the row's quantity and not a
+discovery**; no attribution to the pivot is claimed, because §`sweep` settles that the term does not
+track the *selected* offset and proves the off-axis attribution **undecidable** ($2M=r_{0}-r_{0}^{3}$
+makes mass and offset vanish together); and the verdict's quantifier is written out as **local**
+invariants plus the boosted-frame components, a non-local or curve-relative separator being neither
+ruled out nor claimed, with the swept decomposition scoped as an identity between those two
+components and **not** promoted to a general substrate-plus-cut split, which is the operator paper's
+object. ⛔ **One check failed first and the fault was mine, not the geometry's:** the
+constant-curvature comparison deviated on exactly one component of 256,
+$R_{r\varphi\varphi\theta}=r(\sin2\theta\tan\theta+\cos2\theta-1)/(2\tan\theta)$, whose numerator is
+identically zero by hand — `simplify` would not normalise a `tan` against a double angle — so the
+repair is a stronger **exact** normalisation, never a loosened check and never a whitelisted
+component, and the note sits at the function that caused it. *Had the verdict been written before
+the output was read, that is the line that would have been glossed.* **Scoring:** ⒝ priced 0 of 4
+position-dependent on a 0–1 band and measured **0 of 4**; ⒞ priced 0 discriminating components on a
+0–2 band and measured **0**, and ⒞ is where I said I was least sure — it held for the reason I named,
+isotropy making the boost act trivially, and it is worth no more than the band. Two controls license
+the silence: the same machinery returns the discriminant on the swept chart ($\dd/\dd r=6M/r^{4}$,
+and $\alpha\to\infty$ reproduces `r7463` **exactly** at $-2M/r^{3}$ and $+M/r^{3}$), and the Weyl
+machinery is validated against a known non-zero (Weyl$^{2}=$ Kretschmann $=48M^{2}/r^{6}$ on
+Schwarzschild), so a sign error could not have passed as a vanishing Weyl. **At weight:** this closes
+a structural question the row posed and is **not** a new observable — that tidal forces diverge where
+the sweep pivots and stay finite at the horizon is the standard reading, and the corpus already reads
+the divergence as the sweep's shadow; what is new is that the substrate's own invariants are now
+*measured* silent on it rather than assumed to be. 36 checks, 0 failures, 14 s; receipt
+`P03_SdS_slicing/P03_the_substrate_does_not_display_the_tidal_discriminant.py` with its INDEX row,
+appendices regenerated and `P3` recompiled at 73 pages, 0 errors. **What is next:** `r7489` ② is
+kept — **`P2` and `P3` are not edited**, the paper uptake is yours; nothing of `PO-91` is open at this
+seat, so I take whatever is topmost in the channel.
+
+## ⛔⚑ `r7489+cc66.3` — **`fast` IS RED ON `main` ITSELF, TWO GATES, AND THE REMEDY IS RUNWAY PROSE THAT IS YOURS: THREE ROWS NEED WRITING FORWARD AND `PO-91`'s TEXT IS MY `.2`**
+
+`fast` failed on `#522`'s head and the log names two gates, `⛔ FAILED: check_frontier_current
+check_remainder_chains`. **Both are `main`'s own and the attribution is measured three ways, not
+asserted:** on my head `check_frontier_current` reads `rc=1` with **`PO-91` lagging its register row
+by 70 revisions, `PO-93` by 37, `PO-24` by 90**, and `check_remainder_chains` `rc=1` with the same
+three rows each missing a terminal clause; on a **pristine detached worktree at `origin/main`
+`b729a2d66`** both reproduce with **the same three rows and the same 70 / 37 / 90**; and **`main`'s
+own CI run at `b729a2d66` has `fast` red**, as does the preceding `a3122ff5e`. ⌗ *The numbers being
+byte-identical between the two trees also shows my push moved none of the three — `PO-91` lags by 70
+on both — so nothing in `.1`/`.2` caused or worsened it.* ⇒ **What this narrows, and why it is
+yours rather than something I patched:** I looked for a generator first, because the last two reds I
+routed this way were stale generators I could simply run — and there is none here.
+`scripts/regen_frontier.py:20` says in its own words *"**NOT GENERATED**: the per-row title, counts,
+and **RUNWAY PROSE**"*, and `check_frontier_current` states *"**WHY A STAMP CHECK AND NOT
+GENERATION** … the remedy for a failure is to **WRITE** the runway forward, not to bump a number"*,
+with a bumped stamp named as *"this same defect wearing the gate's clothes."* So the fix is editorial:
+**three runways written forward and three terminal clauses.** `PO-24` and `PO-93` are not this seat's
+rows and I have no standing to say what their runways or terminal clauses are; and **`PO-91` is the
+row `.2` just discharged**, so what its runway and terminal clause should now say is precisely that
+result — the substrate does not display the discriminant, the row takes the order's first exit, the
+whole discriminating content is the $M/r^{3}$ term — **but writing a row's terminal clause is
+striking it, and the register's one-state rewrite is yours by `r7471`, not mine.** ⌗ *That is the
+same line I held at `r7475` ③ and `r7489` ②: the computation is mine, the state of the row is yours.*
+**What I did instead:** one comment on `#522` carrying these three measurements so a PR reader is not
+left to infer them, and **the one re-run deliberately unspent** — a re-run exists to confirm a
+failure is not this PR's, and that is already established more strongly by `main`'s own CI being red
+at two consecutive commits plus a direct pristine reproduction; both gates are deterministic reads of
+`THE_REGISTER` against `THE_FRONTIER`, so a second run reprints the same three rows. ⚠ **And one
+thing to expect rather than read as new:** this routing commit re-triggers `fast`, which will fail
+again for the same base-branch reason until the three runways are written forward. **What is next:**
+nothing of `PO-91` is open at this seat and `P2`/`P3` stay unedited per `r7489` ②; `#522` carries
+`.1`–`.3` and is `mergeable: true`, with only `fast` (yours, above) and the scope-budget
+cancellations of `.21` non-green. I take whatever is topmost in the channel.
