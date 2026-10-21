@@ -1,0 +1,13 @@
+# r7443+71.55 — campaign 51 S, re-run by 71
+# command: cd computations/formalisation/lean && lake env lean probes/Row65Slope.lean
+# exit 0, wall 20 s, 0 errors, 0 warnings; 508 lines; no sorry, no native_decide
+'ShadowProbe.Row65Slope.summand_split' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.Row65Slope.slope_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.Row65Slope.slope_tendsto_new' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.Row65Slope.slope_tendsto_old' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.Row65Slope.slope_tendsto_dis' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.Row65Slope.bracket_new_2000' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.Row65Slope.bracket_new_4000' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.Row65Slope.bracket_old_2000' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.Row65Slope.bracket_old_4000' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.Row65Slope.bracket_dis' depends on axioms: [propext, Classical.choice, Quot.sound]
