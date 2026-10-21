@@ -1,0 +1,89 @@
+
+==============================================================================
+  STEP 1 -- THE FIRST INTEGRAL, DERIVED FROM THE EQUATION ITSELF
+==============================================================================
+  a(eta)  = A*(1 - cos(eta))/2 + sqrt(B)*sin(eta)
+  a'(eta) = A*sin(eta)/2 + sqrt(B)*cos(eta)
+  P16's interior obeys a'' + a = A/2.  Multiply by a' and integrate:
+      a'^2/2 + a^2/2 - (A/2) a = const,  and at the branch point a=0, a'=sqrt(B),
+      so const = B/2, giving
+
+      ** a'^2 = B + A a - a^2 **
+      checked identically: True
+      a'^2 - (B + A a - a^2) = 0
+
+  ⛭ AND THAT IS THE WHOLE ANSWER IN ONE LINE: the dynamics as a function of
+     the SCALE FACTOR carries B and never sqrt(B).  B = (sqrt B)^2, so the
+     sign cannot enter any quantity written as a function of a.
+     a'(a) = +/- sqrt(B + A a - a^2), and that sign is the EXPANDING-versus-
+     CONTRACTING branch, not the sign of sqrt(B).
+
+==============================================================================
+  STEP 2 -- ⒝ FIRST, BECAUSE THE PRICE NAMED IT AS THE RISK: the phase P15 reads
+==============================================================================
+  P15's transfer reads perturbations on this background, and the quantity
+  that carries a PHASE is the accumulated sound horizon,
+      s(a) = integral c_s dEta = integral c_s da / a'(a).
+  Written on the scale factor it carries a'(a) = sqrt(B + A a - a^2):
+      a'(a) = sqrt(A*a + B - a**2)      free symbols: {A, a, B}
+      sqrt(B) present as such: False
+      c_s^2(a) = B/(3*(A*a + B))      free symbols: {A, a, B}
+      the phase integrand c_s/a'(a) = sqrt(3)*sqrt(B)/(3*sqrt(A**2*a**2 + 2*A*B*a - A*a**3 + B**2 - B*a**2))
+      ⇒ carries B, A and a only; sqrt(B)'s SIGN is absent: True
+
+  ** ⒝ ANSWERED, AND THE RISK DID NOT MATERIALISE.  The phase is an integral
+     over the scale factor whose integrand is a function of B, so it is EVEN.
+     A phase CAN be odd where an amplitude is even -- the price was right to
+     flag that -- but not this phase, because the only place sqrt(B) could
+     have entered is a'(eta), and on the leg it is a'(a). **
+
+==============================================================================
+  STEP 3 -- ⒞ THE SWEEP, each observable written on the scale factor
+==============================================================================
+  observable                                                classification
+  ----------------------------------------------------------------------------
+  rho_m(a)                 dust density                               EVEN
+  rho_r(a)                 radiation density                          EVEN
+  rho_r/rho_m (a)          the ratio r7475 names                      EVEN
+  H^2(a) = (a'/a^2)^2      expansion rate squared                      EVEN
+  a''(a) = A/2 - a         areal acceleration                         EVEN
+  c_s^2(a)                 sound speed squared                        EVEN
+  (c_s/a')^2  the sound-horizon integrand SQUARED                      EVEN
+  integrand of the particle horizon  1/a'(a)                          EVEN
+  a_turnaround: root of a' = 0                                        EVEN
+
+  ⇒ 9 of 9 do not read the sign of sqrt(B).
+  ⌟ The sound horizon enters as its SQUARE, and that is deliberate: c_s is a
+    SPEED, the POSITIVE root of c_s^2, and c_s^2 carries B alone (row above).
+    The positive root of an even quantity is even, so the integrand is even --
+    while the SYMBOL sympy prints for it, sqrt(B)/sqrt(...), flips under the
+    substitution.  Sweeping the square states that step instead of hiding it.
+
+==============================================================================
+  STEP 4 -- ⒟ THE COUNT, and ⒠ THE VERDICT
+==============================================================================
+  observables checked: 9 in the sweep + 1 phase (STEP 2) = 10
+  of which read the sign of sqrt(B): 0
+
+  ** NO OBSERVABLE READS THE SIGN.  Every one is a function of the scale
+     factor, and the first integral a'^2 = B + A a - a^2 contains B and
+     never sqrt(B).  The sign of sqrt(B) is the label on WHICH DIRECTION
+     along eta is called forward -- which is the same choice as the
+     involution itself -- and not a fact about the world. **
+  ⇒ PO-88 STRIKES on its own termination clause.
+
+==============================================================================
+  STEP 5 -- THE CONTROL: a quantity that IS odd, before the leg is fixed
+==============================================================================
+  If 'even' came from the algebra rather than from the leg condition, then
+  nothing would come out odd.  Something must.
+    a'(0), the rate AT the branch point      ODD   (flipped: -sqrt(B))
+    a(eta) itself, at fixed eta              NEITHER   (flipped: A*(1 - cos(eta))/2 - sqrt(B)*sin(eta))
+    a'(eta) at fixed eta                     NEITHER   (flipped: A*sin(eta)/2 - sqrt(B)*cos(eta))
+
+  ** THE CONTROL BITES: a'(0) = sqrt(B) is ODD, and a(eta) and a'(eta) at
+     FIXED eta carry the sign too.  So the EVEN answer above comes from
+     writing each observable on the SCALE FACTOR -- i.e. from fixing the leg
+     by a > 0 -- and not from the arithmetic.  a'(0) is exactly the branch
+     label: it is the one quantity that lives AT a = 0, where the choice of
+     direction is made and no observable is read. **
