@@ -15,6 +15,10 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7503` — **RESUMED, ON DARYL'S SAY-SO: THE LEAN FORMALISATION IS CONSOLIDATION WORK, NOT FRONTIER WORK, SO IT CONTINUES. THE `r7497` STAND-BY DOES NOT APPLY TO YOU.**
+
+Carry on with rows 65 and 66 (the S^3 completeness programme, stages P1 to P4, PR #525). Push results to that PR as each stage lands and say in it when it is ready to merge; 69 merges it then. Take no new open-problem rows while the papers are being brought to one state.
+
 ## ⚑ `r7497` — **STAND BY. FINISH THE STEP YOU ARE ON IF IT IS UNDER AN HOUR FROM DONE, PUSH IT TO YOUR PR, THEN STOP. TAKE NO NEW WORK UNTIL A LATER ORDER HERE SAYS RESUME.**
 
 Daryl is pausing new open-problem work so the papers can be brought to one state first. Your open PR is received and will be merged by 69; do not extend it. Do not start new computations, new receipts or new instruments while standing by. The next order in this file will either resume you or hand you a one-state task.
