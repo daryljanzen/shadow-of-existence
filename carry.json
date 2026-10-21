@@ -6069,6 +6069,11 @@
     "since": "108e483e0c6affdfd85d6e77e8753b4045000ce6",
     "unmeasured": true
    },
+   "receipts/L_probability/S39_the_routed_collision_item_is_an_answer_read_as_a_claim_and_the_prevention_was_already_in_use.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39601282481",
+    "since": "f41771c6e5cde7bc5832111c728e1e9ae73b3e62",
+    "unmeasured": true
+   },
    "receipts/L_probability/S3_the_openness_subclass_is_read_in_full_and_the_flag_cannot_tell_a_pin_that_breaks_on_its_own_success_from_one_that_never_breaks_at_all.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39533334363",
     "since": "108e483e0c6affdfd85d6e77e8753b4045000ce6",
@@ -6232,6 +6237,16 @@
    "receipts/P03_SdS_slicing/P03_the_enclosed_mass_is_monotone_so_the_turnaround_ratio_cannot_fall_below_one_and_the_contested_direction_is_two_different_quantities.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39533334363",
     "since": "108e483e0c6affdfd85d6e77e8753b4045000ce6",
+    "unmeasured": true
+   },
+   "receipts/P03_SdS_slicing/P03_the_interior_mass_function_is_p_equals_one_along_the_shell_and_the_charge_falls_short_of_the_equality_radius.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39601282481",
+    "since": "f41771c6e5cde7bc5832111c728e1e9ae73b3e62",
+    "unmeasured": true
+   },
+   "receipts/P03_SdS_slicing/P03_the_substrate_does_not_display_the_tidal_discriminant.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39601282481",
+    "since": "f41771c6e5cde7bc5832111c728e1e9ae73b3e62",
     "unmeasured": true
    },
    "receipts/P03_SdS_slicing/P03_the_symbol_T_carries_four_structural_referents.py": {
@@ -7452,6 +7467,11 @@
    "receipts/P15_CR_cosmology/P15_the_route_from_the_handover_amplitude_to_the_spectral_parameters_is_already_in_print_as_the_hbar_sentence_so_the_tilt_passes_exactly_and_horn_two_cannot_carry_it_at_all.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39533334363",
     "since": "108e483e0c6affdfd85d6e77e8753b4045000ce6",
+    "unmeasured": true
+   },
+   "receipts/P15_CR_cosmology/P15_the_runtime_tail_in_r7170_is_not_localised_to_a_call_so_the_free_reduction_lands_and_the_pre_registered_fix_does_not_and_the_margin_to_the_cap_is_the_gates_to_set.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39601282481",
+    "since": "f41771c6e5cde7bc5832111c728e1e9ae73b3e62",
     "unmeasured": true
    },
    "receipts/P15_CR_cosmology/P15_the_seam_flux_is_not_computable_here_because_the_closure_makes_one_locus_carry_two_surface_gravities_and_the_euclidean_section_closes_in_a_clock_whose_conversion_vanishes_at_both_seams.py": {
