@@ -70,6 +70,23 @@ check("P3's arc-length radius is ODD through the branch point theta = 0",
       sp.simplify(r_P3.subs(theta, -theta) + r_P3) == 0,
       sp.simplify(r_P3.subs(theta, -theta)))
 
+
+# ---- READ the paper, so this receipt fails when the paper moves -------------
+# â check_unread_figure was right: these numbers were the PAPER's and nothing
+#   here opened it, so the check would have stayed green while the paper moved.
+#   The remedy it names first is to READ the figure, and that is what this does.
+import os
+_HERE = os.path.dirname(os.path.abspath(__file__))
+_P16 = os.path.join(_HERE, '..', '..', 'corpus', 'cosmogenesis_paper.tex')
+with open(_P16, encoding='utf-8') as _fh:
+    _SRC = _fh.read()
+
+for _lit, _what in (
+        (r"r^{3}=2M\alpha^{2}\sinh^{2}", "the bead law this receipt continues"),
+        (r"r^{3}=-2M\alpha^{2}", "the value at the conjugate critical point"),
+):
+    check(f"READ from cosmogenesis_paper.tex: {_what}  ({_lit})", _lit in _SRC)
+
 r3 = 2 * M * alpha**2 * sp.sinh(3 * tau / (2 * alpha))**2
 check("P2's law is EVEN under a reflection in proper time",
       sp.simplify(r3.subs(tau, -tau) - r3) == 0)
@@ -83,7 +100,11 @@ check("but that reflection cannot leave the forward branch: the set of real prop
       neg_set == sp.S.EmptySet, f"solveset gave {neg_set}")
 # the continuation P2 uses: the imaginary offset at the conjugate critical point
 r3_cont = sp.simplify(sp.expand_trig(r3.subs(tau, -sp.I * sp.pi * alpha / 3 + tau)))
-check("under P2's imaginary offset the law becomes -2 M alpha^2 cosh^2, i.e. NEGATIVE",
+# â Label reworded per check_unread_figure's second remedy: it says what THIS
+#   receipt COMPUTED and attributes no figure to a paper.  The assertion itself is
+#   unchanged, and the paper's printed form is read separately above.
+check("the imaginary offset at the conjugate critical point turns the law NEGATIVE "
+      "-- computed here, not quoted",
       sp.simplify(r3_cont + 2 * M * alpha**2 * sp.cosh(3 * tau / (2 * alpha))**2) == 0,
       r3_cont)
 check("and at the conjugate critical point itself r^3 = -2 M alpha^2 exactly",

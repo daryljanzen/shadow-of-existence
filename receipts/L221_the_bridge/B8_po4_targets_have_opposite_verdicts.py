@@ -233,10 +233,12 @@ def main():
           'not $SU(2)_L$\'s chiral action, the two occupations differing on the right-handed pair' in p14)
 
     # ⓷ the scope reduction
-    check('⓸ and the sector\'s own count is reduced: "So the undelivered content is two items and not '
-          'three. What remains genuinely outstanding is the gauge group and the multiplet structure"',
-          'the undelivered content is two items and not three' in p14
-          and 'not three.} What remains genuinely outstanding is the gauge group and the multiplet structure' in p14)
+    # r7475 (69): reworded on stride item 4's ruling -- what is external is FIXED by the Standard
+    #   Model and measurement, not "outstanding"; the count of two is unchanged.
+    check('⓸ and the sector\'s own count is reduced: "So what the content needs from outside is two '
+          'items and not three: the gauge group and the multiplet structure"',
+          'what the content needs from outside is two items and not three' in p14
+          and 'the gauge group and the multiplet structure, which the Standard Model supplies and measurement fixes' in ' '.join(p14.split()))
 
     print()
     if FAILED:

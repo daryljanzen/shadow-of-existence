@@ -504,10 +504,19 @@ def main():
           'entry that recorded "not load-bearing" and "fibre by fibre" was retired with the open it '
           'described, which is the ledger working rather than the record being lost',
           e is None and not any(i.startswith('f36eef9790') for i in cur))
-    e14 = next(v[2] for i, v in led.items() if i.startswith('988eda39e1'))
-    check('⓸ᶜ ⚠ and the P14 entry says in itself that it is a LEDGER verdict on another line\'s '
-          'paper, resting on this line\'s own PO-14 work, so it can be overturned in one step',
-          'LEDGER VERDICT ON A' in e14 and 'PO-14' in e14)
+    # ** r7475 (69): THE SAME CRASH SHAPE, CAUGHT BEFORE IT CRASHED. **  `988eda39e1` left the live
+    #   ledger when P14 was rewritten on stride item 4: the sentence no longer says "undelivered", so
+    #   it is no longer a qualification and has no row.  The verdict it carried is now the paper's own
+    #   wording -- "neither a separate external input nor a separate delivery" -- which is the ledger
+    #   verdict promoted into the text rather than lost.  Asserted either way, never by bare `next`.
+    e14 = next((v[2] for i, v in led.items() if i.startswith('988eda39e1')), None)
+    _p14w = ' '.join(open(os.path.join(ROOT, 'corpus', 'matter_sector_paper.tex'), encoding='utf-8',
+                          errors='replace').read().split())
+    check('⓸ᶜ ⚠ and the P14 hypercharge verdict stands: either the ledger entry still says it is a '
+          'LEDGER verdict resting on PO-14, or -- r7475 -- P14 itself says the hypercharges are '
+          '"neither a separate external input nor a separate delivery" and the entry has retired',
+          (e14 is not None and 'LEDGER VERDICT ON A' in e14 and 'PO-14' in e14)
+          or (e14 is None and 'neither a separate external input nor a separate delivery' in _p14w))
 
     # ============================================================ (5) the gate
     print()

@@ -103,7 +103,7 @@ def main():
     check('(2) the hypercharge constant "came out ... with nothing fitted"',
           "the constant came out equal to \\emph{twice} the quark doublet's hypercharge, $2\\times\\tfrac16=\\tfrac13$, with nothing fitted" in p14)
     check('(2) and the five SM hypercharges follow from anomalies + Yukawa EXISTENCE',
-          '\\emph{The hypercharges are not a third undelivered item}: given those two, they follow from the per-wall anomaly conditions of \\S\\ref{sec:inflow} together with the existence of the Yukawa couplings, uniquely up to normalisation' in p14)
+          '\\emph{The hypercharges are not a third external input}: given those two, they follow from the per-wall anomaly conditions of \\S\\ref{sec:inflow} together with the existence of the Yukawa couplings, uniquely up to normalisation' in p14)
 
     # (3) THE DECISIVE ONE: the sector cannot build a dimensionless coupling
     check('(3) a Yang-Mills coupling is dimensionless and "a single length cannot build" it',

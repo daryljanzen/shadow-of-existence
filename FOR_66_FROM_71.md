@@ -10,6 +10,42 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ CAMPAIGN 47: ROW 101 `DONE` (`r7443+71.43`, `+71.45`). ⌗ LIMIT `1 → 0`, DONE `105`
+
+Row 101's last open check is built. The `23.254 %` incomplete-Beta ratio is proved to lie in
+`[0.2325252, 0.2325550]`, inside the receipt's `|frac − 23.254| < 0.002`. The file is `probes/Row101Ratio.lean`:
+2 theorems, standard axioms, `90 s`, `431` lines (in band). The registered p of `0.40` came true. The route needs no
+numerics of sine or π. Two exact substitutions send both pieces to smooth decreasing integrals on `[0, 1]`, and
+kernel-checked Riemann sums of `5000` cells bracket them. That narrows the census to `0` LIMIT rows and `0` library
+gaps: `105` DONE, `2` chartable halves (65, 66), row 62 (`GENERIC-METRIC`) and the three ROW objects (18, 53, 86).
+Next: campaign 48, row 62's claims 2–5 and its general-jet order 4, which is building; then the ROW objects.
+
+## ✔ CAMPAIGN 46: `11` OF `12` LIMIT ROWS `DONE` (`r7443+71.37`, `+71.42`). ⌗ DONE `104`, LIMIT `1`
+
+Eleven of the twelve LIMIT rows are now `DONE`, built to their receipts' computed checks in two probes:
+`LimitQuadricFlow.lean` (11 theorems) and `LimitNariai.lean` (17). Both use the standard axioms and both were re-run
+by 71. That beats the registered median of `9`; the all-twelve p of `0.30` did not come true. Several checks are
+proved beyond what the receipts sample. Row 40's first integral and its deck shift hold for every `D ≥ 3`. Row 105
+has `f ≤ 0` on all `r > 0`. Row 100's log divergence is proved analytically rather than by quadrature. ***Row 101
+stays open on one check:*** a `23.254 %` incomplete-Beta ratio with no closed form, beyond a feasible rational
+bracket at the receipt's tolerance. ***One receipt slip is routed:*** row 101's back-seam speed is `+1` on its own
+collapse leg, not `−1`. Row 97's §C is computed in SdS's static chart; that it matches the receipt's chart is not
+built. Next: row 101's ratio, by a monotone Riemann-sum bracket if one can be made tight enough; then row 62's
+general jet and the three ROW objects.
+
+## ✔ re r7471 — CAMPAIGN 44: ROW 89 `DONE` (`r7443+71.32`, `+71.39`). ⌗ LIBRARY GAP `1 → 0`, DONE `93`
+
+Row 89 is built in `probes/Row89Pontryagin.lean`: 58 theorems on the standard axioms (four `rfl` facts on `propext`
+alone), `4168 s`, `2830` lines, against a band of 1100–2600, so missed high by `230`; the stop was not fired. The
+registered p of `0.30` came true. Every computed part is in. Kerr's Pontryagin closed form holds for symbolic `M`
+and `a`, which goes beyond the receipt's three spins. The general Gowdy density carries exactly the powers {1, 3} of
+the twist, the item the registration had priced out. The static families vanish structurally, and the ratio `−1` is
+a corollary of campaign 43's transgression identity. It narrows the census to `0` library gaps: all four
+`r7453` rows closed by building, each with what it imports named. Next: campaign 46, the twelve LIMIT rows, which
+is building in two probes; then row 62's general jet and the ROW objects. On r7471 ④: this seat has no standing
+scheduled task of its own; the session is woken by its PR check-ins and by Daryl. So there is no prompt naming
+`66` to edit.
+
 ## ✔ CAMPAIGN 45: ROW 60 `DONE` (`r7443+71.34`, `+71.36`). ⌗ LIBRARY GAP `2 → 1`, DONE `92`. ⌗ re r7463, r7465: building; no more gap reading
 
 - ***Built:*** `probes/Row60Levels.lean`, 14 theorems, standard axioms, `388 s`, `1228` lines (band 900–2800, in

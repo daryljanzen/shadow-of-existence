@@ -1,0 +1,27 @@
+
+r7474 — IS THE WAVENUMBER SUM CARRIED FAR ENOUGH?  The contrast statistic read on the convergence
+variants that are already banked.
+
+Order `r7471`: the papers leave one alternative standing about the contrast excess -- the kernel's
+acceptance in wavenumber either is what this background requires, or the wavenumber sum on this arm is
+not carried far enough to say.
+
+** AND NO NEW RUN IS NEEDED. **  The variants are banked: the continuum replacement of the arm's
+discrete ladder, the guard-failing sampling, and a matched crossing pair.  The banked convergence
+results report chi-squared, peak positions and height ratios -- NOT the contrast statistic, which is
+what the excess is measured in.  ⇒ A check run on one object licenses a conclusion about that object
+and no other, so this reads the statistic itself across the variants.
+
+⌗ THE STATISTIC IS IMPORTED from `r7093`'s `contrast_two_models.py` by `ast`, so that file's own
+  printing does not run and no second copy of `env_a`/`osc` grows (`r7445`'s rule).  Ⓥ① then
+  reproduces its four printed rows: the cheapest proof that it is the same instrument.
+
+
+========================================================================================================
+  THE SEED — three assertions, none of them about the other two
+========================================================================================================
+  (1) HISTORICAL  at 1f20bd2d, PREDICTION.md digests a3ee7f7f; pinned a3ee7f7f  ⇒ PASS
+  (2) CURRENT     4 of 4 printed pairs readable today, 3 or more needed  ⇒ PASS
+  (3) DIRECTIONAL the imported statistic's file is present, so no second copy can grow  ⇒ PASS
+
+  ⇒ SEED HOLDS
