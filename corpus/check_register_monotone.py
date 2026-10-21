@@ -96,6 +96,14 @@ DECLARED = {
     'PO-90': ('8fb615b2cd', 'r7471 struck the row on its own termination clause (70\'s measurement) '
                             'and wrote it as one state; the full prior row is at the parent '
                             'of the commit named and is pointed to from the consolidation ledger'),
+    'PO-88': ('e496e66559', 'r7487 struck the row on its own termination clause (cc66\'s computation) '
+                            'and wrote it as one state; the full prior row is at the parent'),
+    'PO-92': ('e496e66559', 'r7487 struck the row on its own termination clause (60\'s argument, a '
+                            'stated limit) and wrote it as one state; the full prior row is at the parent'),
+    'PO-93': ('e496e66559', 'r7487 rewrote the live row to one state on 60\'s one-cluster result; the '
+                            'full prior row is at the parent'),
+    'PO-24': ('e496e66559', 'r7487 rewrote the live row to one state on 70\'s off-tail tilt; the full '
+                            'prior row, 19,853 characters, is at the parent'),
 }
 
 ROW = re.compile(r'\| ~?~?\*\*((?:PO|L|C)-?\d+)\*\*')
