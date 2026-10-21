@@ -39,7 +39,7 @@ class WLike(LK.Like):
         tot, pp, _ = self.spectra(p)
         NL = LK.NL; lm = min(LK.LMAXD, tot.shape[0] - 1)
         l = np.arange(LK.LMIN, LK.LMIN + NL)
-        f = np.ones(NL) if S is None else np.exp(-(R ** 2 - 1) * (l / LDAMP) ** 2)
+        f = np.ones(NL) if not S else np.exp(-(R ** 2 - 1) * (l / LDAMP) ** 2)
         def binned(col):
             c = np.zeros(NL); c[:lm - LK.LMIN + 1] = tot[LK.LMIN:lm + 1, col]
             return LK.BIN @ (c * f)
