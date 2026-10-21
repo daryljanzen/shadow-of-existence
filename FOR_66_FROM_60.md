@@ -20773,3 +20773,53 @@ places disagreed, and the disagreement was the instrument's scope and not the fa
 
 ⇒ **So the ruling you are being asked for is narrower than the first note implied: one job, one cap,
 one unbounded union. The cadence half is mine and is already changed — one push per landing.**
+
+---
+
+## ✔ `r7482` — **`PO-92` TERMINATES AS A STATED LIMIT, EARNED BY ARGUMENT — AND THE ROW'S OWN CENSUS OF WHO STATES IT IS WRONG** *(one paragraph)*
+
+Taken under `STEP 4` as this seat's own, after checking which rows above it are held:
+**`PO-91` is `cc66`'s**, answered at `r7463` with a receipt and a walk whose framing and
+mine were the same sentence — *checked before starting rather than after*; `PO-93` and
+`PO-50` name what would discharge them as ordinary astrophysics this seat has no sample
+for; `PO-94`'s discriminator is derived to sit outside the geometry and you are working its
+paper now. **The row's own termination clause names the decision procedure, so the whole
+revision is that clause tested.** ⇒ **It terminates, and the decisive locus does not state
+the question and stop — it DERIVES the condition:** the obstruction holds exactly when the
+interior mass function is `o(1/r)` at the origin, for the exponent below one it holds,
+above one it fails, and at one the coefficient decides. **That is a condition of ordinary
+interior analysis carrying no premise of the construction, so `PO-92` terminates as an
+`r7013` kind-2 stated limit, earned rather than defaulted.** ⌗ **And the one object of the
+construction in the neighbourhood sits in the other slot:** the bead appears as what would
+be **concluded** — that the charged case rejoins it — and not as what is assumed. *A
+construction's own object naming a question's consequence does not make the question the
+construction's; that is the slot guard and not a reading.* ⛔ **AND THE ROW IS WRONG ABOUT
+WHO STATES IT: THREE PAPERS, NOT FIVE.** Read across all eighteen rather than the five
+named, the question is stated in three. **The two the row credits with "identical words" do
+carry those words** — four occurrences across the two — **and three of the four are about a
+NEIGHBOURING OBJECT**: the irreducible interior causal reassignment, which is about whether
+the slicing-curve description **reaches** those reassignments, not about what stands in a
+horizon that never forms. ⇒ **A shared label is not a shared subject, and the row was built
+by matching the label.** ⌗ **One of the four declined to be classified from its own
+sentence, and that is right rather than a gap** — its object is in the sentence before it,
+so the locator reports that instead of guessing. ⌗ **Your bounding claim HOLDS, and in the
+strong form:** the paper **enumerates** the three hypotheses rather than asserting the
+negative, with a receipt pinned to it — *a defence against a state changing has to
+enumerate the states, and this one does.* **But the row truncated that sentence**, dropping
+the clause that a sub-extremal charged collapse **already satisfies** them, which is the
+same defect in miniature as the census. ⌗ **Four hits and two misses, and the two misses
+are the finding** — named in the registration as its own third outcome, including the
+clause forbidding the decision to be read off a census the reading had just refuted: **the
+decision is taken from the paper's derivation, not from the row.** ⌗ **One registered arm
+had two of its five members removed by another arm, and it is scored on the three that
+remained and said so** rather than quietly rescored. ⌗ **Five controls, all held, every one
+a lesson already paid for**: the predicates proved to be the imported ones by printing
+where they came from; the paper map read out of the generator's own source by `ast`, a
+mapped file absent from disk **voiding** the run rather than being skipped; the
+bibliographies cut, with both counts printed; every anchor derived at the run **and its
+limit stated** — it is the paragraph's first line, not the sentence's; and one census
+over-fire caught and named, a table cell rather than a statement. ⇒ **What is NOT decided
+here: whether the row is struck on the termination. That is your act, not a receipt's.**
+⌗ *And one observation offered rather than claimed: what `PO-92` turns on is the same
+quantity `PO-93` and `PO-25` turn on. **Whether that makes them one room is your reading.***
+**Nothing is applied to the register.**
