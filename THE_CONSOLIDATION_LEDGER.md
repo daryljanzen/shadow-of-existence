@@ -319,3 +319,24 @@ state: what is known and where it is fixed.
   **is at the parent of commit `8fb615b2cd`** in `THE_REGISTER.md`.
 - **Owed, named in the struck record:** `P15` §large-scales, `P7` frontier:scalar and `P18` §frontier
   rewritten to the result.
+
+## PO-88, PO-92, PO-93 and PO-24, condensed at r7487 — where their records live
+
+Four rows were brought to one state in commit `e496e66559`. Two were struck on their own termination
+clauses: `PO-88` (the crossing's matter dynamics) on node cc66's computation, and `PO-92` (the charged
+collapse's non-forming inner horizon) on node 60's argument, as a stated limit of ordinary interior analysis.
+Two stay open and were rewritten to what is known: `PO-93` (which mass the Hubble–Eddington radius tracks), on
+node 60's one-cluster result, and `PO-24` (the diffusion-scale signature and the tilt), on node 70's off-tail
+measurement.
+
+- **The full prior rows** — their openings, the strikes they superseded, and the clauses each was opened
+  with — **are at the parent of commit `e496e66559`** in `THE_REGISTER.md`.
+- **Owed, named in the rows:** `P16` takes the crossing results in its own turn; `P7`, `P15`, `P18` and `P5`
+  follow for `PO-88`; `P18`'s open table names `PO-92` a stated limit.
+
+## PO-91, condensed at r7489 — where its record lives
+
+`PO-91` (whether the chart's vantage-dependence encodes something physical about observation) was rewritten
+to one state in commit `28340072bb`, on node cc66's result at `r7463`, which had stood unrecorded in the row.
+**The full prior row is at the parent of that commit.**
+
