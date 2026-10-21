@@ -20823,3 +20823,52 @@ here: whether the row is struck on the termination. That is your act, not a rece
 ⌗ *And one observation offered rather than claimed: what `PO-92` turns on is the same
 quantity `PO-93` and `PO-25` turn on. **Whether that makes them one room is your reading.***
 **Nothing is applied to the register.**
+
+---
+
+## ✔ `r7484` — **`PO-93` IS ANSWERED IN DIRECTION ON ONE CLUSTER, AND THE ROW'S CLAUSE NAMES THE WRONG MISSING THING** *(one paragraph)*
+
+`r7482` left no unheld frontier row but this one, and every other was checked for an
+owner first: **two are `cc66`'s and one of those is ordered, one is `70`'s, one has you
+working its paper, and two are gated on a datum nobody has.** `PO-93`'s clause says the
+instrument half is built and the sample half is missing, and external sources are
+reachable from this seat, which is the only reason it is takeable here. **The four
+selection criteria were registered before any system was looked up** — a sample chosen
+after seeing which answer it gives is not a sample — **and every system examined is listed
+with the criterion that kept or dropped it.** ⇒ **Four independent determinations of one
+cluster's KINEMATIC turnaround radius, against the bound a baryon-only cluster allows and
+the bound its independently measured dynamical mass allows: the observed radius EXCEEDS the
+baryon-only bound in `4` of `4`, by `19` to `33` per cent, and lies INSIDE the dynamical
+bound in `4` of `4`.** So **the Hubble–Eddington radius tracks the dynamical mass**, and the
+bound-to-attained factor your row says the instrument gives is **`0.74` to `0.82`** — the
+bound nearly attained, which is why one cluster decides the direction. ⛔ **And the first
+reading was mine and it was wrong, which your row's own sentence corrected: a bound inverted
+as an equality is a different instrument.** The run first inverted the relation as an
+equality and read a dark fraction of `0.34`–`0.48` off it; your clause says the quantity is
+a **bound**-to-attained factor. **The discarded reading is kept in the output beside its
+correction rather than deleted**, because the two readings disagreed and the error was found
+by re-reading the row rather than by the data. ⌗ **Two systems were dropped by criteria
+registered in advance, and the rejections are the point of printing them:** one quotes no
+baryonic mass at all, and one uses the word *turnaround* for a radius located from a
+**spatial** pattern rather than from the velocity field. *A label in someone else's paper is
+no safer than one in ours.* ⇒ **And the residual is quantified rather than waved at: the
+baryonic mass is independent of the radius, which is what the criterion asked for, but it is
+not measured WITHIN it** — its aperture is about half the turnaround radius. **For the
+baryon-only bound not to be violated the baryons inside `R₀` would have to be `1.70` to
+`2.35` times those measured inside that smaller aperture, which is `33` to `56` per cent of
+the measured total and would require the cluster to be baryon-dominated inside its own
+turnaround radius.** ⇒ ⚑ **SO WHAT IS MISSING IS NOT A SAMPLE — ONE EXISTS AND IT DECIDES
+THE DIRECTION — BUT A BARYONIC MASS MEASURED OUT TO THE TURNAROUND RADIUS. That is a
+different clause from the one the row carries, and it is the part of this the row could not
+do for itself.** ⌗ **Four arms hit and one was reframed rather than scored**, because it was
+written on the equality reading the run itself retracts — the third revision in a row to
+meet an arm whose domain its own result moved, and the third to say so. ⌗ **Five controls,
+all held:** the instrument imported by `ast` so its receipt's own printing-and-asserting
+module body never runs, with its control re-verified; every radius's kinematic character
+proved from the source's quoted sentence; the baryonic mass's aperture reported rather than
+absorbed; the cosmology propagated **with a number** rather than called negligible, the
+alternatives moving every bound by `0.7` and `6.3` per cent against a violation of `19` to
+`33`; and the criteria applied as written with every rejection printed. ⇒ **What is NOT
+supplied: the dark fraction at the turnaround radius as a number, which needs the baryons
+measured out to `R₀`. And the strike is your act, not a receipt's.** **Nothing is applied to
+the register.**
