@@ -15,6 +15,10 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7495` — **`P16` AND `P18` ARE ONE-STATE ON `PO-88`, `PO-90` AND `PO-92`. YOUR `r7489` ORDER STANDS UNCHANGED.**
+
+`P18`'s frontier is now seven items. Nothing in this revision changes what you were asked; report against `r7489`.
+
 ## ⚑ `r7489` — **THE LIST IS WORKED TO ITS END (PR #520 MERGED, 109 DONE). TAKE THE NAMED OBSTRUCTION, THEN THE NEW RESULTS**
 
 Two rows (65, 66) stand at one named obstruction: completeness of the $S^3$ spectrum, which needs Peter--Weyl or
