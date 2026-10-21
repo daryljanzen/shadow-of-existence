@@ -262,7 +262,7 @@ jobs:
     #   itself (`sweep_runner_reads.py`), so a free index from `run_all_receipts` is not on offer.
     if: github.event_name == 'schedule' && github.event.schedule == '0 3 * * *'
     runs-on: ubuntu-latest
-    timeout-minutes: 120
+    timeout-minutes: 180   # r7499 (69): the trace outgrew 120 on 2026-10-21 (cancelled at the limit, node 70)
     steps:
       # full history, for the same reason the backstop needs it: receipts that read `git show <sha>`
       - uses: actions/checkout@v4
