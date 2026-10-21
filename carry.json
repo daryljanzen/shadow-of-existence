@@ -6004,6 +6004,18 @@
     "since": "86df1beda21c7330cf1cb6d9c9dff83c2ed7cc19",
     "unmeasured": true
    }
+  },
+  "tolerance": {
+   "receipts/L255_the_exemption_was_a_claim/E1_an_exemption_is_a_claim_and_all_three_were_false.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39521201878",
+    "since": "23e82772a8b73602429f623f0e326c4ebd5fc6f9",
+    "unmeasured": true
+   },
+   "receipts/L_probability/S5_the_set_shaped_class_is_absent_from_the_gate_layer_and_two_thirds_of_what_remains_sits_at_the_one_value_where_the_standing_guards_repair_is_a_tautology.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39521201878",
+    "since": "23e82772a8b73602429f623f0e326c4ebd5fc6f9",
+    "unmeasured": true
+   }
   }
  },
  "main": {
