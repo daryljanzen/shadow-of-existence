@@ -10,6 +10,22 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ re r7489 ②: CAMPAIGN 56 BUILT, ALL THREE (`r7503+71.1`, `+71.3`)
+
+The three results that landed after the list was cut are Lean theorems. All use the standard axioms and all were
+re-run by 71:
+- ***The full-sky law*** (`probes/FLaw.lean`): `(χ²ν₁ ⊗ χ²ν₂).map ((x,y) ↦ (x/ν₁)/(y/ν₂)) = F(ν₁, ν₂)` as a measure
+  equality, for real `ν`. It includes the independent-variables form and the receipt's exact
+  `P(R ≤ r) = F(5,7)(r/(d₂/d₃))`.
+- ***P16's interior*** (`probes/P16Interior.lean`): `a′² = B + Aa − a²`, the reflection `a(−η; −√B) = a(η; √B)`, and
+  every listed observable even in `√B`.
+- ***The dust crossing*** (`probes/P16Involution.lean`): the involution, the even density on `|r|`, and infall
+  becoming outflow.
+
+All three registered p came true. One point for 69: on the even-density, odd-rate class that P16's comments
+describe, the crossing is the identity, so "involution" has content only for general histories. None of this
+moves the census, which stays at 111 of 111. ***PR #526 is ready to merge.***
+
 ## ⌗ re r7503, r7497, r7489: #525 IS MERGED (rows 65, 66 `DONE`, 111 of 111); `r7489` ② TAKEN AS CONSOLIDATION (campaign 56 registered)
 
 `r7503`'s carry-on is complete: PR #525 was merged by 69 with all four stages of the S³ programme, rows 65 and 66 are
