@@ -10,7 +10,7 @@ import Mathlib.LinearAlgebra.Matrix.Rank
 Each row is built to the COMPUTED checks of its receipt (ROWS.tsv column 6); text pins and symbol-occurrence checks
 are excepted, as for every DONE row. Imported from `ShadowEngine`: `sinh23_flow`, `unruh_ds_limits`,
 `ds_surface_gravity`, `ds_horizon_iff` (through it), `fNar`. Copied (probes cannot import probes):
-`section_quadric` (`HigherDim.lean`), `sds_kretschmann` with `cK`, `kR` (`CurvatureInstances.lean`), `cL3` and
+`section_quadric_copy` (`HigherDim.lean`), `sds_kretschmann_copy` with `cK`, `kR` (`CurvatureInstances.lean`), `cL3` and
 `sin2_at'` (`Row79Leaf.lean`).
 
 - **9** (`E50`): the orthogonal split for every `D ≥ 1`, instances `D = 5..8`; the rank-1 Jacobian of
@@ -28,7 +28,7 @@ are excepted, as for every DONE row. Imported from `ShadowEngine`: `sinh23_flow`
   `Z_{D−1}` is NOT claimed.
 - **97** (`P15`): §A the layer identity; §B Ricci of `ℝ × S²` and `S³` under THE connection; §C the Kretschmann
   closed form, its `r_s`-free excess and limit, and the six receipt points as instances. ⚠ §C's Kretschmann is THE
-  connection's in SdS's STATIC chart (`sds_kretschmann`), evaluated on the worldline; the receipt computes it in
+  connection's in SdS's STATIC chart (`sds_kretschmann_copy`), evaluated on the worldline; the receipt computes it in
   the reassigned (proper-frame) chart. That the two charts carry the same scalar is not built here. -/
 
 open Real Filter Topology Bundle Manifold Set VectorField
@@ -41,15 +41,15 @@ namespace ShadowProbe.LimitQuadricFlow
 
 section Row9
 
-/-- `section_quadric` (row 108, `HigherDim.lean`), copied: the split identity under any symmetric `η`. -/
+/-- `section_quadric_copy` (row 108, `HigherDim.lean`), copied: the split identity under any symmetric `η`. -/
 theorem split_identity {E : Type*} [AddCommGroup E] [Module ℝ E] (η : E →ₗ[ℝ] E →ₗ[ℝ] ℝ)
     (hs : ∀ x y, η x y = η y x) (n Y : E) (hn : η n n = 1) (hY : η n Y = 0) (c : ℝ) :
     η (c • n + Y) (c • n + Y) - η Y Y - c ^ 2 = 0 := by
   simp only [map_add, map_smul, LinearMap.add_apply, LinearMap.smul_apply, smul_eq_mul, hn, hY, hs Y n]
   ring
 
-/-- `section_quadric` (row 108), copied. -/
-theorem section_quadric {E : Type*} [AddCommGroup E] [Module ℝ E] (η : E →ₗ[ℝ] E →ₗ[ℝ] ℝ)
+/-- `section_quadric_copy` (row 108), copied. -/
+theorem section_quadric_copy {E : Type*} [AddCommGroup E] [Module ℝ E] (η : E →ₗ[ℝ] E →ₗ[ℝ] ℝ)
     (hs : ∀ x y, η x y = η y x) (n Y : E) (hn : η n n = 1) (hY : η n Y = 0) (c α : ℝ) :
     η (c • n + Y) (c • n + Y) = α ^ 2 ↔ η Y Y = α ^ 2 - c ^ 2 := by
   have := split_identity η hs n Y hn hY c
@@ -88,7 +88,7 @@ theorem eta_split (D : ℕ) (hD : 1 ≤ D) (Y : Fin (D + 1) → ℝ) (hY : Y (Fi
     simp [hY]
   have hs : ∀ x y, eta D x y = eta D y x := fun x y => by
     simp only [eta_apply]; exact Finset.sum_congr rfl fun i _ => by ring
-  exact ⟨hn, split_identity _ hs _ _ hn hnY c, section_quadric _ hs _ _ hn hnY c α⟩
+  exact ⟨hn, split_identity _ hs _ _ hn hnY c, section_quadric_copy _ hs _ _ hn hnY c α⟩
 
 /-- The rank-1 Jacobian: a nonzero `1 × 2` row has rank 1. -/
 theorem rank_row {a b : ℝ} (h : a ≠ 0) : (!![a, b] : Matrix (Fin 1) (Fin 2) ℝ).rank = 1 := by
@@ -792,7 +792,7 @@ theorem s3_ricci {a : ℝ} (ha : a ≠ 0) (eF : ∀ s, F s = (a ^ 2)⁻¹) (p : 
 
 end Row97B
 
-/-! ## Row 97, §C: `sds_kretschmann` (row 45), copied, on the worldline -/
+/-! ## Row 97, §C: `sds_kretschmann_copy` (row 45), copied, on the worldline -/
 
 /-- On the worldline, `48M²/r⁶ + 8Λ²/3` at `M = r_s/2`, `Λ = 3/α²` is `24/α⁴ + 12/(α⁴ sinh⁴(3τ̃/2α))`. -/
 theorem kret_worldline {rs α u : ℝ} (hrs : 0 < rs) (hα : 0 < α) (hu : 0 < u) :
@@ -845,7 +845,7 @@ open Filter Topology in
 set_option maxHeartbeats 8000000 in
 include hF hP hS hF0 hP0 hS0 in
 /-- **Row 45, the `S²` pilot.** -/
-theorem sds_kretschmann (M Λ : ℝ) (p : Fin 4 → ℝ)
+theorem sds_kretschmann_copy (M Λ : ℝ) (p : Fin 4 → ℝ)
     (eF : F =ᶠ[𝓝 (p 1)] fun s => 1 - 2 * M * s⁻¹ - Λ / 3 * s ^ 2) (eP : P =ᶠ[𝓝 (p 1)] fun s => s ^ 2)
     (eS : S =ᶠ[𝓝 (p 2)] fun s => Real.sin s ^ 2) :
     riem2C (fun i => cK F P S i p) (fun i j k => curv (lcConn (Fin 4 → ℝ) (ndOf (diag4 (cK F P S)) (diag4_symm _)
@@ -957,7 +957,7 @@ theorem kretschmann_on_worldline {rs α u : ℝ} (hrs : 0 < rs) (hα : 0 < α) (
       ((diag4_smooth (cK_smooth hF hP hS hF0)).differentiable (by simp))))
       (fun _ => (Pi.single i 1 : Fin 4 → ℝ)) (fun _ => (Pi.single j 1 : Fin 4 → ℝ))
       (fun _ => (Pi.single k 1 : Fin 4 → ℝ)) p) = 24 / α ^ 4 + 12 / (α ^ 4 * Real.sinh (3 / (2 * α) * u) ^ 4) := by
-  rw [sds_kretschmann hF hP hS hF0 hP0 hS0 _ _ p eF eP eS, hp, kret_worldline hrs hα hu]
+  rw [sds_kretschmann_copy hF hP hS hF0 hP0 hS0 _ _ p eF eP eS, hp, kret_worldline hrs hα hu]
 
 end Inst_R45
 

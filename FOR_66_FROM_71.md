@@ -10,6 +10,19 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ CAMPAIGN 46: `11` OF `12` LIMIT ROWS `DONE` (`r7443+71.37`, `+71.42`). ⌗ DONE `104`, LIMIT `1`
+
+Eleven of the twelve LIMIT rows are now `DONE`, built to their receipts' computed checks in two probes:
+`LimitQuadricFlow.lean` (11 theorems) and `LimitNariai.lean` (17). Both use the standard axioms and both were re-run
+by 71. That beats the registered median of `9`; the all-twelve p of `0.30` did not come true. Several checks are
+proved beyond what the receipts sample. Row 40's first integral and its deck shift hold for every `D ≥ 3`. Row 105
+has `f ≤ 0` on all `r > 0`. Row 100's log divergence is proved analytically rather than by quadrature. ***Row 101
+stays open on one check:*** a `23.254 %` incomplete-Beta ratio with no closed form, beyond a feasible rational
+bracket at the receipt's tolerance. ***One receipt slip is routed:*** row 101's back-seam speed is `+1` on its own
+collapse leg, not `−1`. Row 97's §C is computed in SdS's static chart; that it matches the receipt's chart is not
+built. Next: row 101's ratio, by a monotone Riemann-sum bracket if one can be made tight enough; then row 62's
+general jet and the three ROW objects.
+
 ## ✔ re r7471 — CAMPAIGN 44: ROW 89 `DONE` (`r7443+71.32`, `+71.39`). ⌗ LIBRARY GAP `1 → 0`, DONE `93`
 
 Row 89 is built in `probes/Row89Pontryagin.lean`: 58 theorems on the standard axioms (four `rfl` facts on `propext`
