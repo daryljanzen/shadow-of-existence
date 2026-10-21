@@ -11917,6 +11917,11 @@
     "since": "3184ccdf7e82a7dfc65abc437b2d8c75bfa5ef00",
     "unmeasured": true
    },
+   "receipts/P16_cosmogenesis_paper/P16_no_observable_reads_the_sign_of_the_radiation_amplitude.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39576551620",
+    "since": "9962d71c86ce7b5f56991faaf7f77ba6ce840e78",
+    "unmeasured": true
+   },
    "receipts/P16_cosmogenesis_paper/P16_peak_temperature.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39495945986",
     "since": "86df1beda21c7330cf1cb6d9c9dff83c2ed7cc19",
