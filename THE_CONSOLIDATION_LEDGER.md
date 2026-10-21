@@ -406,7 +406,12 @@ crossing, `PO-92` §open), `P3` (`PO-92` at line 1222, `PO-93` §curvature), `P2
 `P18` (`PO-93` after `P3`).
 
 - `P3`: the masthead comment fragment is split.
-- `P5`: R's dial action given as w to -w and as w to w+pi.
+- `P5`: R's dial action given as w to -w and as w to w+pi. **Done (r7517)**: both are R, as its two lifts to the dial (each
+  negates 2M and r0; they differ by the sheet involution w to pi-w), and the Galois remark now says so. With it, `P5`'s owed
+  one-state edits: the crossing's field evolution computed (the reassignment remark and §open), §open's charged interior a
+  stated limit of ordinary interior analysis in `P18`'s terms, the introduction's "one frontier" made "where the diagnostic
+  reaches past the vacuum cuts". **The open-language read is done (r7517)**: 13 sites, 10 ordinary English, 3 pointed at
+  their homes (the A2 coincidence and the located su(3), both PO-94; the charged interior, P3 and P18).
 - `P6`, `P7`: the "rejected" framing (with section 1). `P7`'s frontier item 1 still names "a mechanism for that deficit" as what
   is owed; it becomes the rate light's path distance takes, as `P15` and `P18` now state it.
 - `P10`: lines 1468-1479 say "value not claimed" while sections 959-1061 compute it positive; 10^-122 against 10^-123;
