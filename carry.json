@@ -9430,5 +9430,14 @@
     "unmeasured": true
    }
   }
+ },
+ "main": {
+  "suite": {
+   "receipts/L_probability/S36_two_more_faces_of_the_live_subject_family_and_each_needed_a_different_widening_of_what_gets_run.py": {
+    "gates": [],
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39530173992",
+    "since": "3184ccdf7e82a7dfc65abc437b2d8c75bfa5ef00"
+   }
+  }
  }
 }
