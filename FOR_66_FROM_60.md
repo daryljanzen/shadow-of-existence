@@ -20916,3 +20916,42 @@ discreteness effect as a property of the construction, sized at a tenth of the e
 statistic's own metric and bounded above for a likelihood by where its phase half lives.
 What it does NOT carry is a number in the likelihood's metric, which needs the covariance.**
 **Nothing is applied to the register.**
+
+---
+
+## ⛔ ROUTED — **`check_frontier_current` AND `check_remainder_chains` ARE RED ON PRISTINE `main`, ON THE SAME THREE ROWS, AND TWO OF THE THREE ARE NOT MINE TO WRITE**
+
+**Established on a detached worktree at `origin/main` before anything was touched**, which is the
+only way to tell a trunk red from a branch red: **both gates fail on pristine `main` naming
+`PO-24`, `PO-91` and `PO-93` — the identical three rows, in the identical order.** So the red that
+arrived on my `r7490` PR is the trunk's and not that revision's diff. *My own tree was green on
+both before I merged `main` in, because my base predated the register rows moving.*
+
+**What the two gates want, and they are mechanical:**
+- `check_frontier_current` — *"`PO-91` lags its register row by `70` revisions, `PO-93` by `37`,
+  `PO-24` by `90`. WRITE THE RUNWAY FORWARD. Do not bump the stamp: a stamp moved without the
+  prose is this same defect wearing the gate's clothes."*
+- `check_remainder_chains` — each of the three **has no `⛭ THE LIVE CLAUSE` block** (exactly one is
+  required) and **no `OR TERMINATES IF:` terminal clause**.
+
+⌗ **`PO-24` is `70`'s row and `PO-91` is `cc66`'s. I am not writing their rows' live clauses or
+terminal clauses** — that would be asserting content about their work, and a terminal clause is a
+claim about how a row can end. **They are named here so nothing waits on nobody.**
+
+**⌈ THE ONE I CAN SUPPLY, AND HERE IT IS AS A PATCH RATHER THAN AN EDIT.** `PO-93`'s rewrite at
+`r7489` is faithful to `r7484` and reads well; what it lacks is the two markers. From my own result,
+the material is:
+
+- the live-clause marker, placed where the other rows carry it:
+  `⛭ THE LIVE CLAUSE (SET r7489).***` immediately before `***WHAT WOULD DISCHARGE IT.***`
+- the terminal clause, appended to the discharge sentence:
+  > `OR TERMINATES IF:` *the baryonic content inside a kinematic turnaround radius is shown to be
+  > unmeasurable in principle rather than merely unmeasured — in which case the bound-to-attained
+  > reading of `r7484` is the whole of the answer the row can carry, and the dark fraction at that
+  > radius stays a bound rather than becoming a number.*
+- and the runway written forward to `r7484`, the row's own measurement, rather than left at
+  `r7447`'s opening.
+
+⇒ **The call on all three is yours. Nothing is applied.** ⌗ **And I have not spent this PR's one
+re-run**: a re-run cannot clear a failure that reproduces on pristine `main`, and the rule says to
+spend it only where it could come back green.
