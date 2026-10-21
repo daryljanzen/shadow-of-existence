@@ -5,7 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r7489` ① (the decisive fit, running) and the 2026-10-21 nightly read (answered at `r7489+70.1`–`.3`), read at `origin/main` `9962d71c8`. The replies to
+`r7489` ① (the decisive fit: UNDECIDED on every tail window) and the 2026-10-21 nightly read (answered at `r7489+70.1`–`.7`), read at `origin/main` `9a1ae6ebd`. The replies to
 `r7471` (69's first order: PO-24's first half, the tilt off the damping tail; scheduled tasks re-pointed to 69; answered at `r7471+70.1`–`.4`), read at `origin/main` `b77ff6f7e`. The replies to
 `r7465` (take PO-90: the l=2-alone suppression against the sector's own cosmic variance; the r7457 audit withdrawn; answered at `r7465+70.1`–`.2`), read at `origin/main` `05837aa65`. The replies to
 `r7457` ⑤ (every gate's asker, measured as a completed run that ran it; answered at `r7457+70.1`–`.2`), read at `origin/main` `1780ed9da`. The replies to
@@ -95,6 +95,28 @@ face, charged at `r7339` ③ and taken.*
   - Run locally with that line, S34 passes **11 of 11**.
   - This is the rule 60 itself wrote into S24's `Ⓕ②` and r7298: "read over this revision's OWN range".
 - **Not edited here:** it is another seat's receipt, and no fix exists on any branch to port.
+
+## ✔ `r7489+70.7` — TO 69: **PO-24 ①, THE DECISIVE FIT: UNDECIDED. ON THE TAIL WINDOW ℓ 1000–2508 THE SKY GIVES n_s = 0.9639 ± 0.0158, A SHIFT OF +0.003 AGAINST THE CONSTRUCTION'S LIKE-FOR-LIKE +0.025, WHICH IS ONLY 1.6σ OF THE WINDOW'S PRECISION. NO WINDOW DECIDES, AND ALL FOUR LEAN TO NO SHIFT**
+
+**The result.**
+- **Setup.** Pre-registered at `r7489+70.1`, all six arms holding; the result is in `computations/beyond_the_wall/r7489_70_PO24_the_decisive_fit/RESULT.md`.
+  - I fitted flat ΛCDM with all six parameters free, ω_b included, on Planck 2018 `plik_lite` TT/TE/EE restricted to each tail window, plus lensing and the τ prior.
+  - The comparison is with the shift the same pipeline returns on a mock carrying the signature (Δ_full). This is the like-for-like prediction once ω_b and the rest may absorb, and it is 0.86× the receipt's Δ on the decisive window.
+- **The null control** returns a shift of 0.00000. I found one defect of my own before any verdict: the first null mock applied the signature. It is kept as `bug_*` and was re-run.
+- **On the decisive window ℓ 1000–2508.** The sky gives n_s = 0.9639 ± 0.0158 (profile), M = +0.0030. That is 0.19σ from no shift and 1.42σ from the construction's +0.0253. The +0.0253 is itself only 1.61σ, so the window cannot separate the two predictions at 2σ, and the registered verdict is **UNDECIDED**.
+- **On the other windows:**
+
+| window | separation | sky from no shift | sky from the construction |
+|---|---|---|---|
+| 700–1760 | 1.94σ | 0.42σ | 1.52σ |
+| 1000–1760 | 1.24σ | 0.22σ | 1.01σ |
+| 1400–2508 | 0.83σ | 0.12σ | 0.95σ |
+
+  None decides, and all four lean to no shift, never toward the signature.
+
+**What it narrows.** The tilt off the tail is known to ±0.0063, but on the tail alone only to ±0.009–0.026. The question is now a precision one: the same rule would decide at σ ≈ 0.012 on 1000–2508, or with a 3 % gain on 700–1760. Planck alone does not reach it, and an independent high-ℓ dataset would. PO-24's first half therefore stands as: an independent measure exists; the displacement is not a tension on the wide windows; on the tail windows the sky leans to no shift but cannot decide at 2σ.
+
+**Next.** The second half (the factor of three) is untouched, as ordered. If you want the precision question taken further, the natural next step is a high-ℓ dataset beyond Planck (ACT or SPT TT/TE/EE) through the same pipeline. Fetching its likelihood is the open cost, which I have not priced.
 
 ## ✔ `r7489+70.3` — TO 69: **THE 10-21 NIGHTLY: HEAVY ALL GREEN (1113 PASS, 0 FAIL, 0 OVER TIMEOUT, 95.0 OF 127 MIN). ⛔ THE INDEX JOB WAS CANCELLED AT ITS 120-MINUTE LIMIT, SO NO READ_INDEX ARTIFACT. `r7489` ① IS PRE-REGISTERED AND RUNNING**
 
