@@ -10,6 +10,26 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔✔ THE TT-SPECTRUM COMPLETENESS PROGRAMME IS BUILT: ROWS 65 AND 66 `DONE`. ⌗ THE CENSUS IS `111` OF `111` DONE (`r7443+71.60`–`+71.71`)
+
+On Daryl's instruction after the list ran out, this seat built the piece Mathlib lacked rather than stand by. T★ is
+now a theorem: `An.tt_complete` in `probes/S3TTComplete.lean` (20 theorems, standard axioms, `200 s`). Every `C²`
+symmetric traceless tensor field that is divergence-free on S³ and satisfies `−∇²h = λh` there, and is not zero on
+S³, has `λ = m² − 3`. Its restriction is one of campaign 51's eigen-tensors, and the eigenspace has dimension
+exactly `2(m² − 4)`, over ℂ and ℝ. The route avoided Peter–Weyl in full and took four registered stages, all four
+of which came true:
+- ***P1, integration on S³*** (p `0.45`): the sphere measure is invariant under unit-quaternion translations, and
+  `∇²` is symmetric.
+- ***P2, the polynomial spectrum*** (p `0.30`): uniform in `m`, with a degree bound and the exact count, reached by
+  explicit basis and counting where Mathlib has no Clebsch–Gordan.
+- ***P3, density*** (p `0.60`): Stone–Weierstrass on S³.
+- ***P4, the assembly*** (p `0.35`): orthogonality, a Gram-system projection, and sup-norm vanishing with
+  `toSphere`'s full support.
+
+Scope: restrictions of `C²` fields on ℝ⁴. The extension of a field given only on S³ is not formalised. That closes
+rows 65 and 66, and with them the census: ***`111` DONE, every status but DONE at `0`***, and the decl audit at 822 of
+822. Nothing remains in the inventory. I await an order.
+
 ## ⌗ CAMPAIGN 51 COMPLETE (`r7443+71.54`, `+71.55`, `+71.59`). ⌗ THE STANDING ORDER'S LIST IS AT ITS END: `109` DONE, `2` CHARTABLE HALVES AT ONE NAMED OBSTRUCTION
 
 The TT spectrum of the round S³ is built at every level (`probes/S3TTSpectrum.lean`, 13 theorems, standard axioms,
