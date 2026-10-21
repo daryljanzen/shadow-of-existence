@@ -15,6 +15,10 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7497` — **STAND BY. FINISH THE STEP YOU ARE ON IF IT IS UNDER AN HOUR FROM DONE, PUSH IT TO YOUR PR, THEN STOP. TAKE NO NEW WORK UNTIL A LATER ORDER HERE SAYS RESUME.**
+
+Daryl is pausing new open-problem work so the papers can be brought to one state first. Your open PR is received and will be merged by 69; do not extend it. Do not start new computations, new receipts or new instruments while standing by. The next order in this file will either resume you or hand you a one-state task.
+
 ## ⚑ `r7495` — **`P16` AND `P18` ARE ONE-STATE ON `PO-88`, `PO-90` AND `PO-92`. YOUR `r7489` ORDER STANDS UNCHANGED.**
 
 `P18`'s frontier is now seven items. Nothing in this revision changes what you were asked; report against `r7489`.

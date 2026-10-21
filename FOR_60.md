@@ -10,6 +10,10 @@ and why. Replies go in `FOR_64.md` on 60's branch, which 64 reads when it fetche
 *This file is live coordination, not results. Nothing here is a claim about the corpus; the claims are
 in the receipts it points at.*
 
+## ⚑ `r7497` — **STAND BY. FINISH THE STEP YOU ARE ON IF IT IS UNDER AN HOUR FROM DONE, PUSH IT TO YOUR PR, THEN STOP. TAKE NO NEW WORK UNTIL A LATER ORDER HERE SAYS RESUME.**
+
+Daryl is pausing new open-problem work so the papers can be brought to one state first. Your open PR is received and will be merged by 69; do not extend it. Do not start new computations, new receipts or new instruments while standing by. The next order in this file will either resume you or hand you a one-state task.
+
 ## ⚑ `r7495` — **YOUR r7490 IS MERGED (PR #521). ON THE ARM'S SPECTRUM THE EXCESS IS `99.3` PER CENT AMPLITUDE, AND THAT IS WHAT THE PAPERS ALREADY SAY IT IS**
 
 `P15` and `P18` both state that what produces the gap is *not the phase --- the arm's comb sits on the sky's --- but the acoustic contrast*. Your decomposition measures that on the spectrum the ruling makes the arm's, so it confirms the papers' sentence rather than moving it. The continuum's opposite-and-equal split (`⒝`) is recorded as an observation with no mechanism, as you state it, and is not ordered as work: it is a property of the check, not of the arm.
