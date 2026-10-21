@@ -1,0 +1,125 @@
+r7489+cc66 -- PO-91: do the de Sitter SUBSTRATE's own invariants display the
+r7463 tidal discriminant?
+
+Everything numeric printed here is built from the metrics written in this file.
+No curvature result is quoted: the Christoffels, the Riemann tensor, the
+invariants and the orthonormal-frame components are all computed, so a reader
+who distrusts a number can distrust the metric instead.
+
+The discriminant to be matched is r7463 (d)'s, on the SWEPT chart: the
+orthonormal components R_{t r t r} = -2M/r^3 and R_{t th t th} = M/r^3, both
+independent of the infall rapidity, finite at r=2M and divergent at r=0.
+
+==============================================================================
+ (a)  THE SUBSTRATE, BUILT FROM ITS METRIC, AT TWO DIMENSIONS
+==============================================================================
+
+  P3 sec:slicing: the substrate is de Sitter in its maximally extended form,
+  throat radius alpha = sqrt(3/Lambda) "the one fixed invariant of everything
+  that follows"; the substrate PROPER is dS_5 = SO(5,1)/SO(4,1), and P3 "works
+  the equatorial section throughout".  So the result is taken at D = 4 AND
+  D = 5: a statement true only at the section's dimension would not be the
+  substrate's.
+
+  [PASS] D=4: the substrate Riemann IS the constant-curvature form R_abcd = (g_ac g_bd - g_ad g_bc)/alpha^2, in all 256 components   ->  0 deviations
+  [PASS] D=5: the substrate Riemann IS the constant-curvature form R_abcd = (g_ac g_bd - g_ad g_bc)/alpha^2, in all 625 components   ->  0 deviations
+
+==============================================================================
+ (b)  EVERY CHEAP LOCAL POLYNOMIAL CURVATURE INVARIANT, AS A FUNCTION
+      OF POSITION -- the absence is established as an IDENTITY in the
+      coordinates, never by agreement at two sampled points.
+==============================================================================
+
+  * A sampled answer to an algebraic question is this corpus's own named error
+    (the field note's sweep face: "SAMPLING CANNOT PROVE AN ABSENCE").  So each
+    invariant's derivative with respect to EVERY coordinate is taken and shown
+    identically zero.  The two-locus evaluation below is a cross-check on top of
+    that, not the evidence. *
+
+    D=4  R            = 12/alpha**2
+  [PASS] D=4: R is POSITION-INDEPENDENT (d/dx = 0 for all 4 coords)   ->  derivatives [0, 0, 0, 0]
+    D=4  Ric^2        = 36/alpha**4
+  [PASS] D=4: Ric^2 is POSITION-INDEPENDENT (d/dx = 0 for all 4 coords)   ->  derivatives [0, 0, 0, 0]
+    D=4  Kretschmann  = 24/alpha**4
+  [PASS] D=4: Kretschmann is POSITION-INDEPENDENT (d/dx = 0 for all 4 coords)   ->  derivatives [0, 0, 0, 0]
+    D=4  Weyl^2       = 0
+  [PASS] D=4: Weyl^2 is POSITION-INDEPENDENT (d/dx = 0 for all 4 coords)   ->  derivatives [0, 0, 0, 0]
+  [PASS] D=4: Weyl^2 vanishes identically (the substrate is conformally flat)   ->  0
+    D=5  R            = 20/alpha**2
+  [PASS] D=5: R is POSITION-INDEPENDENT (d/dx = 0 for all 5 coords)   ->  derivatives [0, 0, 0, 0, 0]
+    D=5  Ric^2        = 80/alpha**4
+  [PASS] D=5: Ric^2 is POSITION-INDEPENDENT (d/dx = 0 for all 5 coords)   ->  derivatives [0, 0, 0, 0, 0]
+    D=5  Kretschmann  = 40/alpha**4
+  [PASS] D=5: Kretschmann is POSITION-INDEPENDENT (d/dx = 0 for all 5 coords)   ->  derivatives [0, 0, 0, 0, 0]
+    D=5  Weyl^2       = 0
+  [PASS] D=5: Weyl^2 is POSITION-INDEPENDENT (d/dx = 0 for all 5 coords)   ->  derivatives [0, 0, 0, 0, 0]
+  [PASS] D=5: Weyl^2 vanishes identically (the substrate is conformally flat)   ->  0
+
+==============================================================================
+ (c)  THE FALLING OBSERVER'S TIDAL TENSOR, ON THE SUBSTRATE
+==============================================================================
+    D=4  R_[t r t r] = -1/alpha**2
+    D=4  R_[t a t a] = -1/alpha**2       (a = the first angular leg)
+    D=4  R_[r a r a] = alpha**(-2)
+  [PASS] D=4: the boosted R_[t r t r] is RAPIDITY-independent
+  [PASS] D=4: the boosted R_[t a t a] is RAPIDITY-independent
+  [PASS] D=4: the boosted Rtrtr is POSITION-independent   ->  [0, 0, 0, 0]
+  [PASS] D=4: the boosted Rtata is POSITION-independent   ->  [0, 0, 0, 0]
+  [PASS] D=4: the boosted Rrara is POSITION-independent   ->  [0, 0, 0, 0]
+  [PASS] D=4: the tidal tensor is ISOTROPIC (R_[t r t r] == R_[t a t a], so no direction is picked out)   ->  -1/alpha**2 vs -1/alpha**2
+    D=5  R_[t r t r] = -1/alpha**2
+    D=5  R_[t a t a] = -1/alpha**2       (a = the first angular leg)
+    D=5  R_[r a r a] = alpha**(-2)
+  [PASS] D=5: the boosted R_[t r t r] is RAPIDITY-independent
+  [PASS] D=5: the boosted R_[t a t a] is RAPIDITY-independent
+  [PASS] D=5: the boosted Rtrtr is POSITION-independent   ->  [0, 0, 0, 0, 0]
+  [PASS] D=5: the boosted Rtata is POSITION-independent   ->  [0, 0, 0, 0, 0]
+  [PASS] D=5: the boosted Rrara is POSITION-independent   ->  [0, 0, 0, 0, 0]
+  [PASS] D=5: the tidal tensor is ISOTROPIC (R_[t r t r] == R_[t a t a], so no direction is picked out)   ->  -1/alpha**2 vs -1/alpha**2
+
+==============================================================================
+ (d)  THE TWO CRITICAL POINTS -- a cross-check on an identity already
+      established, and NOT the evidence for it
+==============================================================================
+
+  P3 sec:sweep locates r=0 on the substrate: "a point ON the throat circle, at
+  X_1 = -alpha", a REGULAR point of a maximally symmetric manifold.  That
+  location is P3's and is cited, not recomputed here.  What (b) and (c) above
+  establish is stronger than any pair of evaluations and does not depend on the
+  location: every local invariant and every boosted tidal component of the
+  substrate is one CONSTANT over the whole manifold, so NO pair of points
+  whatever -- these two included, wherever they sit -- is separated by one.
+
+  [PASS] the substrate's R_[t r t r] is the SAME finite constant at both loci   ->  -1/alpha**2
+  [PASS] the substrate's R_[t a t a] is the SAME finite constant at both loci   ->  -1/alpha**2
+
+==============================================================================
+ (e)  THE CUT'S SIDE -- P3 prop:curvature, confirmed not quoted
+==============================================================================
+    K_G = -f'/2r = -M/r**3 + alpha**(-2)
+  [PASS] K_G = 1/alpha^2 - M/r^3 identically (P3 prop:curvature)
+  [PASS] the M-term is ABSENT IDENTICALLY at M=0: K_G -> 1/alpha^2, the substrate's own   ->  alpha**(-2)
+    K_G at r=2M  = alpha**(-2) - 1/(8*M**2)      (finite)
+  [PASS] K_G is FINITE at the horizon critical point r=2M   ->  alpha**(-2) - 1/(8*M**2)
+  [PASS] K_G DIVERGES at the pivot critical point r=0   ->  -oo
+
+==============================================================================
+ CONTROLS -- a failure of any one VOIDS the run rather than being noted
+==============================================================================
+
+  An instrument that returns "does not distinguish" is worthless until it is
+  shown it CAN return "distinguishes".
+
+    CONTROL 1  swept SdS:  R_[t r t r] = -2*M/r**3 - 1/alpha**2
+    CONTROL 1  swept SdS:  R_[t th t th] = M/r**3 - 1/alpha**2
+  [PASS] CONTROL 1: the same machinery DOES see the r7463 discriminant on the swept chart -- R_[t r t r] carries the -2M/r^3 term   ->  -2*M/r**3 - 1/alpha**2
+  [PASS] CONTROL 1: and it is POSITION-dependent there, unlike on the substrate   ->  d/dr = 6*M/r**4
+  [PASS] CONTROL 1: Schwarzschild limit reproduces r7463 exactly: R_[t r t r] = -2M/r^3, R_[t th t th] = +M/r^3   ->  -2*M/r**3, M/r**3
+  [PASS] CONTROL 2: the evaluator DOES report position dependence when it is there (the substrate's own areal radius)   ->  d(r)/dr = 1
+    CONTROL 3  Schwarzschild:  Kretschmann = 48*M**2/r**6   Weyl^2 = 48*M**2/r**6
+  [PASS] CONTROL 3: a non-maximally-symmetric metric comes back POSITION-DEPENDENT (Kretschmann = 48M^2/r^6)   ->  48*M**2/r**6
+  [PASS] CONTROL 3: the Weyl machinery is VALIDATED against a known non-zero value -- Weyl^2 = Kretschmann on a Ricci-flat metric, so a sign error in the decomposition could not have passed as a vanishing Weyl on the substrate   ->  48*M**2/r**6
+
+==============================================================================
+ ALL CHECKS PASS
+==============================================================================
