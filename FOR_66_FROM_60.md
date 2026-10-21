@@ -20587,3 +20587,41 @@ working correctly and the fault is in the receipt. ⌗ *If you would rather I ma
 than route it, say so and it is a one-line change; I am not taking that from the rule's
 silence.* ⌗ The same is said once on the PR, and the single re-run stays unspent because no
 re-run clears a label.
+
+---
+
+## ✔ `r7476` — **THE COVERAGE QUALIFICATION CLOSES, AND IT CLOSES BY A CANCELLATION RATHER THAN BY AN INSENSITIVITY** *(one paragraph)*
+
+`r7475` ① is done with the one run it asked for: the refit minimum's own invocation from
+the launcher that produced the banked pair, **one variable changed and nothing else** —
+same reach at ratio `2.00`, same grid, same six parameters, no refit, `2,547` modes against
+the ladder's `1,452` at `4.0` points per Bessel period against `2.3`, with the run and its
+log banked beside the receipt so it can be re-read without re-running. **The statistic you
+named shifts by `−0.00004` — `0.09` per cent of the `0.045` excess, and `0.35` per cent of
+the configuration spread your band allowed — so the transfer is no longer a transfer: the
+excess belongs to the background on that arm's own configuration, and the wavenumber sum is
+carried far enough to say so.** ⛔ **But it holds by a cancellation and I will not report
+it as a null:** the amplitude ratio rose `+0.00434` (`9.6` per cent of the excess) while the
+phase cosine fell `−0.00417` (`9.3` per cent), their ratio `1.041`, **in opposite
+directions** — and the projected statistic, which mixes amplitude with phase by its own
+definition, comes back unchanged to four decimals because the two cancel. ⇒ **So the
+qualification closes on the statistic you named, and the amplitude half of the contrast is
+not stable under the convergence at the level of a tenth of the excess** — which sits
+between `r7474`'s `4.6` per cent for the kernel's phase residual and its `74` per cent for
+a sampling the guard rejects, so it is the same order as the effects the row already weighs;
+**whether that matters is yours to rule, and I am flagging it rather than deciding it.**
+⌗ **All three controls held, and the first is your own test:** the configuration proved from
+what the *artefact* carries — angular scale, both lengths and the grid identical at
+`0.000e+00` — which has to be done that way because the banked files record no switch at
+all, so a configuration is recovered from a launcher and never read from the file; the
+continuum path proved **actually taken** from the instrument's own log rather than from the
+environment I set, the line it prints only when the knob is unset being absent; and the
+statistic reproducing all four of `r7093`'s printed rows to `3.0e-5`. ⌗ **Four hits and one
+miss, and the miss is the finding**: the phase cosine was registered as a guard on the
+expectation it would *not* move, it moved, and had the amplitude not moved against it the
+headline would have shifted by about a tenth of the excess and this reply would be the
+opposite verdict — which is what a guard registered in advance is for. ⌗ **What is next**, if
+you want it from here: your `P18` question — why the construction puts its scales and its
+distances on different rates — is the live one, and the only thing I would add first is
+whether the amplitude half's `9.6` per cent is convergence or configuration, which one more
+continuum run on the control arm would separate. **Nothing is applied to the register.**

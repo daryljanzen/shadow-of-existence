@@ -1,0 +1,95 @@
+
+r7476 — THE PROJECTED CONTINUUM AT THE EXCESS'S OWN CONFIGURATION, closing `r7474`'s transfer.
+
+Order `r7475` ①: the one run `r7474` left is a projected continuum at the refit minimum's own
+configuration, identified by what the file IS -- reach, grid, angular scale and the `k_max` that
+reach implies -- not by a label.  If the contrast statistic holds at `1.045` plus or minus its banked
+spread, the coverage qualification closes.  If it moves, size it against the `0.045`.
+
+THE RUN, and it is one.  The refit minimum's own invocation, from the launcher that produced the
+banked pair, with ONE variable changed: `KCONT=1`.  Same reach (`LMAXL=2000` at the corpus default
+`KFAC=2.0`), same `ell` grid (`LSTEP=8`), same six parameters.  No refit, no new physics.
+The run and its log are banked here beside this file.
+
+⌗ THE STATISTIC IS IMPORTED from `r7093`'s `contrast_two_models.py` by `ast`, exactly as `r7474`
+  imported it, so there is one copy of the predicate and `Ⓥ③` can prove it is the same one.
+
+
+====================================================================================================
+  Ⓥ① THE SAME CONFIGURATION, from what the artefact carries (the order's own test)
+====================================================================================================
+      l_A  continuum       301.798643   banked ladder       301.798643   rel 0.000e+00  ok
+      D_M  continuum     14017.038576   banked ladder     14017.038576   rel 0.000e+00  ok
+      r_s  continuum       145.911277   banked ladder       145.911277   rel 0.000e+00  ok
+      grid continuum n=238 [100,1996]   banked n=238 [100,1996]   ok
+  ⇒ PASS
+
+====================================================================================================
+  Ⓥ② THE CONTINUUM PATH WAS ACTUALLY TAKEN, from the instrument's own log
+====================================================================================================
+      the instrument's "Run KCONT=1 to check" line present: False   ok (it prints only when the knob is unset)
+      modes = 2547 against the banked ladder's 1452   ok
+      points per Bessel period = 4.0 (the ladder ran at 2.3)
+      reach: k_max = 4000/D_M against l_max 2000, ratio 2.00
+      switches: ARM=cr CRH0=68.581133 CROM=0.297209 HIER=1 KCONT=1 LEAFSCALES=1 LMAXL=2000 LSTEP=8 NS=0.997952 SAVE=/tmp/claude-0/r7476/verify_cr_kcont.npz WBH2=0.021
+  ⇒ PASS
+
+====================================================================================================
+  Ⓥ③ THE SAME STATISTIC — r7093's printed rows
+====================================================================================================
+      A  c54.178               -0.3766  printed   -0.3766  diff 1.50e-05
+      A  c54.186 L3000         -0.4108  printed   -0.4108  diff 1.84e-05
+      B  refit grid base       +1.0563  printed   +1.0563  diff 2.97e-05
+      B  refit minimum         +1.0452  printed   +1.0452  diff 2.61e-06
+  ⇒ worst 2.97e-05 against 5e-5  PASS
+
+====================================================================================================
+  THE MEASUREMENT — the contrast statistic, ladder against continuum, same control
+====================================================================================================
+                              projected       RMS  phase cos       l_A
+      LADDER   (banked)        +1.04520   1.04552   +0.99969   301.799
+      CONTINUUM (this run)     +1.04516   1.04986   +0.99552   301.799
+
+      ⇒ shift -0.00004  =  0.09 per cent of the 0.045 excess
+                        =  0.35 per cent of the 0.0111 configuration spread
+
+----------------------------------------------------------------------------------------------------
+  ⛔ AND IT HOLDS BY A CANCELLATION, NOT BY INSENSITIVITY — WHICH THE PROJECTED
+     NUMBER ALONE WOULD HAVE HIDDEN
+----------------------------------------------------------------------------------------------------
+      amplitude ratio   1.04552 -> 1.04986   +0.00434 = 9.6 per cent of the excess
+      phase cosine      0.99969 -> 0.99552   -0.00417 = 9.3 per cent of the excess
+      projected (their mix) 1.04520 -> 1.04516   -0.00004
+
+      ⇒ the two components move by 0.00434 and 0.00417 IN OPPOSITE
+        DIRECTIONS and the projected statistic -- which r7093's own note says MIXES
+        AMPLITUDE WITH PHASE -- comes back unchanged to four decimals.  Their ratio
+        is 1.041: a cancellation, not a null.
+
+      ** SO THE QUALIFICATION CLOSES ON THE STATISTIC THE ORDER NAMED, AND THE
+         AMPLITUDE HALF OF THE CONTRAST IS NOT STABLE UNDER THE CONVERGENCE AT THE
+         LEVEL OF A TENTH OF THE EXCESS. **  Reporting only the projected number would
+      have claimed an insensitivity its own components contradict.
+
+----------------------------------------------------------------------------------------------------
+  THE ARMS, AGAINST PREDICTION.md — registered 929d6d18 before the run existed
+----------------------------------------------------------------------------------------------------
+  Ⓐ the shift      predicted |d| < 0.002 (five times tighter than the order's band)
+                   measured  -0.00004   ⇒ HIT
+  Ⓑ the value      predicted in [1.0432, 1.0472]
+                   measured  1.04516   ⇒ HIT
+  Ⓒ the phase cos  predicted >= 0.999
+                   measured  0.99552   ⇒ MISS
+  Ⓔ the geometry   predicted identical to the printed digits
+                   measured  identical to 0 relative difference   ⇒ HIT
+  Ⓘ the verdict    predicted THE COVERAGE QUALIFICATION CLOSES
+                   ⇒ HIT — it closes
+
+====================================================================================================
+  ✔ CONTROLS HOLD.
+
+  ⇒ THE COVERAGE QUALIFICATION IS CLOSED.  The projected continuum at the excess's
+    OWN configuration returns the statistic the banked ladder returns, so r7474's
+    transfer from a matched pair elsewhere is no longer a transfer: the excess
+    belongs to the background on that arm's own configuration, and the wavenumber
+    sum is carried far enough to say so.
