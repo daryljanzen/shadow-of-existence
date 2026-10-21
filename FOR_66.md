@@ -24023,3 +24023,30 @@ gates is clean: **0 entries of mine in either.** `check_figures_pinned` wants fi
 printed digit; `check_unread_figure` wants the termination-threshold label to read the paper or drop the
 attribution. **What is next:** nothing of `PO-88`'s is left open by this step, which is why it is a strike;
 whatever is topmost in the channel next.
+
+## ⛔⚑ `r7475+cc66.18` — **`fast` FAILED IN *BOTH* STEPS, FIVE GATES NAMED, AND THE SPLIT IS CLEAN: TWO ARE STALE GENERATORS I RAN, THREE ARE YOURS AND RED ON PRISTINE `main`**
+
+`fast` red on `158255eba` with **both** steps failing — "the register and view checks" *and* "the text
+gates" — so the job log and the step conclusions were both needed. Five gates named in total, and every one
+is attributed by measurement:
+
+| gate | step | whose | what was done |
+|---|---|---|---|
+| `regen_grain_currency` | register/view | ⛔ **stale generator**, `rc=1` on pristine `main` | **ran it** — `python3 scripts/regen_grain_currency.py` |
+| `check_frontier_delta` | text gates | ⛔ **stale generator**: *"the step history's last revision is r7469 and the register is at r7475 — the generator has not been run at this revision"*, and `THE_FRONTIER` publishing *"(was 21)"* against a recorded 19 | **ran it** — `python3 scripts/regen_frontier.py`; both clauses green |
+| `check_figures_pinned` | text gates | **yours**, `rc=1` on pristine `main` | routed — five figures want pinning to half a printed digit |
+| `check_unread_figure` | text gates | **yours**, `rc=1` on pristine `main` | routed — after `.17` fixed my two labels, **0 entries of mine**; the one left is the termination-threshold label |
+| `check_marker_transposition` | text gates | **yours**, `rc=1` on pristine `main` | routed — `CR_cosmology.tex:2528`'s `0.435` and `0.487` are carried by the quadrupole receipt cited 59 lines later, not by the group closing them |
+
+⇒ **The three I am routing all name one object:** `P15`/`CR_cosmology.tex` and
+`P15_the_selective_quadrupole_suppression_is_the_skys_own_and_lcdm_carries_it_at_the_same_size.py`, landed
+at `413d0f8e2`, **absent from my diff** and reserved to you by `r7475` ③ and by its being your receipt. All
+three reproduce on a pristine detached worktree at `origin/main`, so `fast` is red on the base branch from
+that landing and no change of mine can clear them. ⌗ *`check_marker_transposition` is the sharpest of the
+three and worth a second look: it says the paper prints two figures at line 2528 whose citing group does
+not carry them while a receipt cited at 2587 does — a transposition, not a missing pin.* **What I did
+instead of waiting:** ported both generator fixes, which is one command each and the remedy each gate names
+itself, nothing hand-edited — and then the output-set rule, 27 reader gates over the seven regenerated
+files, **26 green**, the one red being `check_open_item_coherence`, `main`'s long-routed census item that
+appears **zero times in the whole workflow**. **What is next:** `PO-88` is struck and nothing of it is open;
+whatever is topmost in the channel.
