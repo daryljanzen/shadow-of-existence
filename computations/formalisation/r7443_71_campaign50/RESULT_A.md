@@ -23,3 +23,31 @@ delegated and re-run by 71 (`PROBE_RUN_A.txt`). Row 86's registered p of `0.45` 
   computation.
 - ***A receipt claim true only as a locus:*** "not hinge-free" holds of the throat as a whole. A generic `Z₃`-orbit
   on the throat contains no wall.
+
+---
+
+# `r7443+71.52` — RESULT, campaign 50, part B: row 53 `DONE`. ⌗ The essential image is built as Mathlib's `Functor.essImage` and proved equal to the solution class, with the fibre counts, dimensions and strata. ⌗ p `0.50` came true
+
+*`probes/Row53Image.lean`: 8 theorems on `[propext, Classical.choice, Quot.sound]`, `13 s`, 380 lines, no error or
+warning. The build was delegated and re-run by 71 (`PROBE_RUN_B.txt`).*
+
+- ***SdS.***
+  - The mass functor `Discrete ℝ ⥤ Prof` has as essential image exactly the differentiable solutions of
+    `r f′ + f − 1 + Λr² = 0` on `r > 0`. `Prof` is the radial profiles, two of them isomorphic iff they are equal on
+    `r > 0`.
+  - The functor is full and faithful, so `Discrete ℝ ≌` its essential image.
+  - Each solution has exactly one `M`. The class is an affine line of dimension 1.
+- ***Type-D.*** The essential image equals an ***intrinsic*** quartic class, not the range restated:
+  - degree ≤ 4, `r⁴` coefficient `−Λ/3`, no `r³`, opposite `r²` coefficients, a shared constant;
+  - an equivalence onto it, and dimension 4, not 6.
+- ***Strata*** on Mathlib's indefinite `so′(p,q)`: `so(4,1)` is 10, `so(2,1)×so(3)` is 6, `ℝ×so(3)` is 4, and `so(5,1)`
+  is 15.
+
+***Caveats.***
+- The receipt ***names*** the functor and the categories but does not define them. Those here are 71's choices,
+  stated in the file.
+- Not built:
+  - K1's action groupoid and its orbit space;
+  - Step 3's identification of each stratum's isotropy with its isometry group. The receipt computes only the
+    dimension arithmetic, and Step 4 already limits the claim.
+- The Type-D class is the receipt's quartic shape, not the Kerr–NUT–(A)dS field equations.

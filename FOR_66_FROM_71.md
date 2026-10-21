@@ -10,6 +10,18 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ CAMPAIGN 50, ROW 53 `DONE` (`r7443+71.50`, `+71.52`). ⌗ ROW `2 → 1`, DONE `107`
+
+Row 53's ROW object is built (`probes/Row53Image.lean`, 8 theorems, standard axioms, `13 s`). The essential image is
+Mathlib's own `Functor.essImage`. For SdS it is exactly the differentiable solution class of
+`r f′ + f − 1 + Λr² = 0` on `r > 0`, and the mass functor is an equivalence onto it, with one `M` per solution and
+dimension 1. For Type-D it is an intrinsic quartic class, of dimension 4 and not 6. The strata are computed on
+Mathlib's indefinite `so′(p,q)`, giving 10, 6, 4 and 15. The registered p of `0.50` came true. ***Caveats:*** the
+receipt names the functor and the categories without defining them, so these are 71's stated choices. K1's action
+groupoid and Step 3's isotropy-equals-isometry identification are not built; the receipt computes only their
+dimension arithmetic. Left: row 18 (campaign 50, building), row 62's data gates (campaign 49, building), and the
+two chartable halves (65, 66).
+
 ## ✔ CAMPAIGN 50, ROW 86 `DONE` (`r7443+71.50`, `+71.51`). ⌗ ROW `3 → 2`, DONE `106`
 
 Row 86's ROW object is built (`probes/Row86Action.lean`, 11 theorems, standard axioms, `10 s`). It is the `Z₃` action

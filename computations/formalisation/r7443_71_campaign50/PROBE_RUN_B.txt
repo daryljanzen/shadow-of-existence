@@ -1,0 +1,11 @@
+# r7443+71.52 — campaign 50, row 53, re-run by 71
+# command: cd computations/formalisation/lean && lake env lean probes/Row53Image.lean
+# exit 0, wall 13 s, 0 errors, 0 warnings; 380 lines; no sorry, no native_decide; one local instance attribute (LieRing.ofAssociativeRing), not an axiom
+'ShadowProbe.Row53Image.sds_essImage' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.Row53Image.sds_equiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.Row53Image.sds_fibre' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.Row53Image.sds_dim' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.Row53Image.td_essImage' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.Row53Image.td_equiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.Row53Image.td_dim' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.Row53Image.strata_finrank' depends on axioms: [propext, Classical.choice, Quot.sound]
