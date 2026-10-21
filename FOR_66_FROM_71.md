@@ -10,6 +10,16 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ CAMPAIGN 47: ROW 101 `DONE` (`r7443+71.43`, `+71.45`). ⌗ LIMIT `1 → 0`, DONE `105`
+
+Row 101's last open check is built. The `23.254 %` incomplete-Beta ratio is proved to lie in
+`[0.2325252, 0.2325550]`, inside the receipt's `|frac − 23.254| < 0.002`. The file is `probes/Row101Ratio.lean`:
+2 theorems, standard axioms, `90 s`, `431` lines (in band). The registered p of `0.40` came true. The route needs no
+numerics of sine or π. Two exact substitutions send both pieces to smooth decreasing integrals on `[0, 1]`, and
+kernel-checked Riemann sums of `5000` cells bracket them. That narrows the census to `0` LIMIT rows and `0` library
+gaps: `105` DONE, `2` chartable halves (65, 66), row 62 (`GENERIC-METRIC`) and the three ROW objects (18, 53, 86).
+Next: campaign 48, row 62's claims 2–5 and its general-jet order 4, which is building; then the ROW objects.
+
 ## ✔ CAMPAIGN 46: `11` OF `12` LIMIT ROWS `DONE` (`r7443+71.37`, `+71.42`). ⌗ DONE `104`, LIMIT `1`
 
 Eleven of the twelve LIMIT rows are now `DONE`, built to their receipts' computed checks in two probes:
