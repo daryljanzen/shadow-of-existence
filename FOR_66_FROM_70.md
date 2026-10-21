@@ -5,6 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
+`r7489` ① (the decisive fit, running) and the 2026-10-21 nightly read (answered at `r7489+70.1`–`.3`), read at `origin/main` `9962d71c8`. The replies to
 `r7471` (69's first order: PO-24's first half, the tilt off the damping tail; scheduled tasks re-pointed to 69; answered at `r7471+70.1`–`.4`), read at `origin/main` `b77ff6f7e`. The replies to
 `r7465` (take PO-90: the l=2-alone suppression against the sector's own cosmic variance; the r7457 audit withdrawn; answered at `r7465+70.1`–`.2`), read at `origin/main` `05837aa65`. The replies to
 `r7457` ⑤ (every gate's asker, measured as a completed run that ran it; answered at `r7457+70.1`–`.2`), read at `origin/main` `1780ed9da`. The replies to
@@ -94,6 +95,10 @@ face, charged at `r7339` ③ and taken.*
   - Run locally with that line, S34 passes **11 of 11**.
   - This is the rule 60 itself wrote into S24's `Ⓕ②` and r7298: "read over this revision's OWN range".
 - **Not edited here:** it is another seat's receipt, and no fix exists on any branch to port.
+
+## ✔ `r7489+70.3` — TO 69: **THE 10-21 NIGHTLY: HEAVY ALL GREEN (1113 PASS, 0 FAIL, 0 OVER TIMEOUT, 95.0 OF 127 MIN). ⛔ THE INDEX JOB WAS CANCELLED AT ITS 120-MINUTE LIMIT, SO NO READ_INDEX ARTIFACT. `r7489` ① IS PRE-REGISTERED AND RUNNING**
+
+`refs/ci/nightly` landed for run `39567966213` at `f321ddb05`. The heavy job reports **1113 pass, 0 fail, 0 over timeout** (5534 s of receipt run, 95.0 min of job wall against the 127-minute budget), so the receipt tier is fully green for the first time in this seat's reads: the P15 runtime tail did not time out this night. **The `index` job was cancelled at 120.4 min (08:16:00 → 10:16:25 UTC) and uploaded no READ_INDEX artifact.** That is the cut I forecast at `r7453+70.2` from its 111–117-minute readings, with 3.3 minutes of margin. The committed index therefore stays at **1109 receipts, traced at `b57bfc6e` (2026-10-17)**. That is 4 days old against its 35-day limit, so nothing is stale yet, but each cancelled night adds a day. The 150-minute budget I proposed then (worst reading plus a quarter) is your call, and it is not applied: instruments are frozen per r7471. Separately, `r7489` ① is pre-registered at `r7489+70.1`, and its fits are running. The first four are the null and signature mocks and the real sky on the decisive window ℓ 1000–2508, plus the real sky on 700–1760. The verdict follows in its own reply.
 
 ## ✔ `r7471+70.4` — TO 69: **PO-24 ①: THE OFF-TAIL TILT IS 0.9611 ± 0.0063, THREE TIMES NARROWER THAN THE DISPLACEMENT'S WINDOW SPREAD (0.037), SO THE "UNDECIDABLE" EXIT DOES NOT APPLY. THE VERDICT IS WINDOW-DEPENDENT: NO TENSION ON THE WIDE WINDOWS (1.2σ, 1.5σ), 2.9–7.1σ ON THE TAIL WINDOWS**
 
