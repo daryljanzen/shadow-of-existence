@@ -20519,3 +20519,71 @@ stand, and the page was regenerated from source rather than resolved by hand.*
 ⌗ **`PO-87` is the work and it is in hand**: `r7466` and `r7468` are on the open PR, and
 between them they price the drift out of the acoustic levers and out of the projection
 kernel's phase, which separates two effects the row carries as one.
+
+---
+
+## ✔ `r7474` — **THE EXCESS IS NOT THE WAVENUMBER SUM'S, AND THE MARGIN IS NARROWER THAN THAT SOUNDS** *(one paragraph, per `r7471` ③)*
+
+`r7471` is taken and this answers its convergence question as a **read**, not a run, because
+the variants are already banked and what had never been read on them is the contrast
+statistic itself — the banked convergence results report `χ²`, peak positions and height
+ratios, and a check run on one object licenses a conclusion about that object and no other.
+**On the one *matched* ladder-against-continuum pair in the bank** — same angular scale,
+same `ℓ` grid, same reported reach, spectra agreeing to `3.4×10⁻⁵` — **the statistic does
+not move at all, `−0.00000` to five decimals**, and the reach is twice the highest reported
+multipole where the banked height ratios converge by half that; **so the excess is not the
+sum's, the acceptance belongs to the background, and your default reading stands — the model
+does not yet do what CR requires of the projection, not that the sky has ruled.** ⚠ **But
+the margin is narrower than that sounds, and this is what I would carry forward:** a control
+resampled *below* the instrument's own projection guard moves the statistic by **`+0.0334`,
+which is `74` per cent of the `0.045` excess** — the banked runs pass that guard at `5.7`
+points per Bessel period so the excess survives, **because the guard is doing real work and
+not because the statistic is insensitive to sampling**; the guard's own waiver for this arm,
+that it is only not aliasing if the answer does not depend on it, is what the matched pair
+now certifies *for this statistic* for the first time. ⌗ **And one qualification, predicted
+in advance and confirmed: no banked PROJECTED continuum run sits at the configuration the
+excess is measured in** — of four continuum files three are projected at different
+configurations and the one at the excess's own angular scale is the *source* side, so the
+convergence evidence is transferred from a matched pair elsewhere and I am stating that
+transfer rather than hiding it. **Four hits, one arm withdrawn** — mine, not anyone else's:
+the apparent continuum twin of the main run reports to `ℓ 2996` where the continuum reports
+to `ℓ 1996`, and since the wavenumber ceiling is the multipole ceiling times the reach
+factor, a different reported reach *is* a different ceiling, so that comparison moved two
+things and answered about neither. ⛔ **Three defects, all mine and all one guard — a file
+stem, an angular scale, and a line number**: the coverage arm first matched configurations
+by angular scale within `0.5`, admitting a file whose contrast statistic is `−0.41` as being
+"at" the `+1.045` one; and the first append of this very index row went to the line number it
+held an hour earlier and landed on another seat's row, because the trunk had inserted rows
+above it — reverted and redone by locating the row by its receipt name, nothing reached the
+trunk. *`r7462` called a line number "a measurement with a date on it" and `r7474` then used
+one as an identity, in the act of writing the other two up.* ⌗ **What is next**, if you want
+it from here: your own next question — why the construction puts its scales and its distances
+on different rates — is now the live one, and the only thing I would add to it first is a
+projected continuum run at the refit minimum's own configuration, which would close the
+transfer above. **Nothing is applied to the register.** ⌗ **And `r7471` ④: my session can
+technically edit its own scheduled task, and I am still not doing it on a file's word** —
+that edit outlives the session and governs every later one, so it needs Daryl. The
+replacement `STEP 4` text has been drafted in this file since `r7462`; adding `69` as the
+reader and dropping `66`'s specifics is the same one-word approval.
+
+---
+
+## ⛔ `r7474`'s PR IS RED ON `check_unread_figure` AND IT IS THE TRUNK'S, WITH THE SMALLEST REPAIR NAMED *(one paragraph)*
+
+Measured rather than inferred: **`check_unread_figure` exits `1` at `origin/main` itself**,
+in a clean worktree at that commit, so the red is the trunk's and not this branch's — and
+`r7474`'s diff touches no receipt, no paper and no figure. **The single new key is
+`receipts/P16_cosmogenesis_paper/P16_the_crossing_is_an_involution_and_the_density_is_even_on_the_unsigned_radius.py`**,
+which arrived with `r7473`, and the flagged label is *"under `P2`'s imaginary offset the law
+becomes `−2 M α² cosh²`, i.e. NEGATIVE"* — the attribution says the figure is `P2`'s while
+nothing in the receipt opens `P2`, which is exactly the class the gate exists for: it would
+stay green if that paper moved. ⇒ **The smallest repair is the gate's own second option and
+it is one line: drop the attribution and say what THIS receipt computed**, since the receipt
+derives `−2 M α² cosh²` itself rather than reading it — no baseline entry, no new read, and
+the gate goes green without anything being recorded as accepted-unread. **Not applied here**:
+the receipt is `cc66`'s and the standing rule routes those with a patch rather than editing
+them, and `r7471` ① permits me to repair a **gate** red on `main` whereas this gate is
+working correctly and the fault is in the receipt. ⌗ *If you would rather I made the edit
+than route it, say so and it is a one-line change; I am not taking that from the rule's
+silence.* ⌗ The same is said once on the PR, and the single re-run stays unspent because no
+re-run clears a label.

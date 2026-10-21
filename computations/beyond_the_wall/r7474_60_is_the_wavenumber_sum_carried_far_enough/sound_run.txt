@@ -1,0 +1,79 @@
+
+r7474 — IS THE WAVENUMBER SUM CARRIED FAR ENOUGH?  The contrast statistic read on the convergence
+variants that are already banked.
+
+Order `r7471`: the papers leave one alternative standing about the contrast excess -- the kernel's
+acceptance in wavenumber either is what this background requires, or the wavenumber sum on this arm is
+not carried far enough to say.
+
+** AND NO NEW RUN IS NEEDED. **  The variants are banked: the continuum replacement of the arm's
+discrete ladder, the guard-failing sampling, and a matched crossing pair.  The banked convergence
+results report chi-squared, peak positions and height ratios -- NOT the contrast statistic, which is
+what the excess is measured in.  ⇒ A check run on one object licenses a conclusion about that object
+and no other, so this reads the statistic itself across the variants.
+
+⌗ THE STATISTIC IS IMPORTED from `r7093`'s `contrast_two_models.py` by `ast`, so that file's own
+  printing does not run and no second copy of `env_a`/`osc` grows (`r7445`'s rule).  Ⓥ① then
+  reproduces its four printed rows: the cheapest proof that it is the same instrument.
+
+
+========================================================================================================
+  Ⓥ① SAME INSTRUMENT — the imported statistic against r7093's printed rows
+========================================================================================================
+  A  default, solved onset   c54.178           projected   -0.3766  printed   -0.3766  diff 1.50e-05
+  A  default, solved onset   c54.186 L3000     projected   -0.4108  printed   -0.4108  diff 1.84e-05
+  B  refit grid base                           projected   +1.0563  printed   +1.0563  diff 2.97e-05
+  B  refit minimum (verify)                    projected   +1.0452  printed   +1.0452  diff 2.61e-06
+  ⇒ worst difference 2.97e-05 against 5e-5  PASS
+
+========================================================================================================
+  Ⓥ② THE NULL — a file against itself
+========================================================================================================
+  projected 1.000000000000  RMS 1.000000000000  phase cos 1.000000000000
+  ⇒ PASS
+
+========================================================================================================
+  Ⓥ③ THE VARIANTS ARE REAL PERTURBATIONS — max relative spectrum difference
+========================================================================================================
+  model A ladder vs continuum          max|dD/D| = 9.7171e-01  floor 0  ok
+  crossing ladder vs continuum         max|dD/D| = 3.3651e-05  floor 0  ok
+  control guard-passing vs failing     max|dD/D| = 9.9113e-01  floor 0.01  ok
+  ⇒ PASS
+
+========================================================================================================
+  THE CONTRAST STATISTIC ON THE BANKED CONVERGENCE VARIANTS
+========================================================================================================
+  variant                               l_A arm  l_A ctl  projected      RMS  phase cos
+  Ⓐ  model A  LADDER      (banked)      301.600  301.375    -0.4108   0.9448    -0.4348
+  Ⓐ  model A  CONTINUUM   (KCONT)       301.600  301.375    -0.4102   0.9848    -0.4165
+  Ⓑ  crossing LADDER      (banked)      172.841  301.375    -0.0262   0.6427    -0.0408
+  Ⓑ  crossing CONTINUUM   (KCONT)       172.841  301.375    -0.0262   0.6427    -0.0408
+  Ⓒ  model A vs GUARD-FAILING ctl       301.600  301.375    -0.3774   0.9057    -0.4167
+
+--------------------------------------------------------------------------------------------------------
+  THE ARMS
+--------------------------------------------------------------------------------------------------------
+  Ⓐ model A, ladder -> continuum   predicted |d| < 0.01
+                                   measured  +0.00061
+      ⛔ BUT THE PAIR IS NOT MATCHED: the continuum file reports to ell 1996 on 238 points and the ladder to ell 2996 on 363.
+        k_max = KFAC * LMAXL / D_M, so a different reported reach IS a different
+        k_max -- the comparison mixes the knob with the reach and answers about
+        neither.  ⇒ ** Ⓐ IS WITHDRAWN AS A MEASUREMENT **, kept as the record, and
+        Ⓑ below is the matched pair that does answer it.
+  Ⓑ crossing, ladder -> continuum  predicted |d| < 0.01, the cleaner pair
+                                   measured  -0.00000   ⇒ HIT
+  Ⓒ the guard-failing control      predicted 0.01 <= |d| <= 0.10
+                                   measured  +0.03342   ⇒ HIT
+
+  Ⓔ THE COVERAGE — is any banked PROJECTED continuum run at the excess's own l_A?
+      the excess is measured on cc66_r185_verify, projected +1.0452
+      file                                         l_A   source?  verdict
+      c54.186_cr_KCONT.npz                     301.600        no  projected, a DIFFERENT configuration
+      cc66_cr_x_kcont.npz                      172.841        no  projected, a DIFFERENT configuration
+      r6794_cr_crossing_kcont_summed.npz       172.324        no  projected, a DIFFERENT configuration
+      r6911_source_cr_kcont.npz                301.799       yes  SOURCE side, not projected
+  ⇒ predicted NO projected continuum run at the excess's configuration;
+    measured 0: none   ⇒ HIT
+
+========================================================================================================
+  ✔ CONTROLS HOLD.
