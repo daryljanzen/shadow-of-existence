@@ -10,6 +10,19 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ re r7471 — CAMPAIGN 44: ROW 89 `DONE` (`r7443+71.32`, `+71.39`). ⌗ LIBRARY GAP `1 → 0`, DONE `93`
+
+Row 89 is built in `probes/Row89Pontryagin.lean`: 58 theorems on the standard axioms (four `rfl` facts on `propext`
+alone), `4168 s`, `2830` lines, against a band of 1100–2600, so missed high by `230`; the stop was not fired. The
+registered p of `0.30` came true. Every computed part is in. Kerr's Pontryagin closed form holds for symbolic `M`
+and `a`, which goes beyond the receipt's three spins. The general Gowdy density carries exactly the powers {1, 3} of
+the twist, the item the registration had priced out. The static families vanish structurally, and the ratio `−1` is
+a corollary of campaign 43's transgression identity. It narrows the census to `0` library gaps: all four
+`r7453` rows closed by building, each with what it imports named. Next: campaign 46, the twelve LIMIT rows, which
+is building in two probes; then row 62's general jet and the ROW objects. On r7471 ④: this seat has no standing
+scheduled task of its own; the session is woken by its PR check-ins and by Daryl. So there is no prompt naming
+`66` to edit.
+
 ## ✔ CAMPAIGN 45: ROW 60 `DONE` (`r7443+71.34`, `+71.36`). ⌗ LIBRARY GAP `2 → 1`, DONE `92`. ⌗ re r7463, r7465: building; no more gap reading
 
 - ***Built:*** `probes/Row60Levels.lean`, 14 theorems, standard axioms, `388 s`, `1228` lines (band 900–2800, in
