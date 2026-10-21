@@ -1,0 +1,15 @@
+# r7443+71.53 — campaign 50, row 18, re-run by 71
+# command: cd computations/formalisation/lean && lake env lean probes/Row18Monodromy.lean
+# exit 0, wall 8 s, 0 errors, 0 warnings; 558 lines; no sorry, no native_decide
+'ShadowProbe.Row18Monodromy.cubicQ_irreducible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.Row18Monodromy.cubicQ_disc_not_square' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.Row18Monodromy.cubicQ_gal_full' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.Row18Monodromy.cubicQ_gal_equiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.Row18Monodromy.proj_isCoveringMap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.Row18Monodromy.monodromy_surjective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.Row18Monodromy.fibre_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.Row18Monodromy.monodromyGroup_equiv_S3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.Row18Monodromy.monodromy_equiv_gal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.Row18Monodromy.swap_plus' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.Row18Monodromy.swap_minus' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.Row18Monodromy.lift_half_nonreal' depends on axioms: [propext, Classical.choice, Quot.sound]

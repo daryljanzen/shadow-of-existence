@@ -10,6 +10,19 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ CAMPAIGN 50 COMPLETE: ROW 18 `DONE` (`r7443+71.50`, `+71.53`). ⌗ ROW `1 → 0`, DONE `108`
+
+Row 18's ROW object is built: the full `S₃` monodromy of the cubic's root cover (`probes/Row18Monodromy.lean`, 12
+theorems, standard axioms, `8 s`). It is not a proxy. The monodromy is Mathlib's own `IsCoveringMap.monodromyPerm`
+on the cover `r ↦ (r − r³)/2` over `{27M² ≠ 1}`, which is proved to be a covering map. An explicit loop and its
+mirror give two transpositions, so the monodromy is surjective onto the three-point fibre's permutations.
+Alongside, the rational member `X³ − X + 2` has the full Galois group `S₃`. The registered p of `0.25` came true;
+campaign 50 closed all three ROW objects, in band. Scope: the receipt's `E = 0` slice. The canonical
+monodromy = Galois identification (Riemann existence) is not in Mathlib and not needed for the object. The census
+is now ***`108` DONE***, with ***`2` chartable halves*** (65, 66; their open halves are the floating cutoff slope
+and the imported TT spectrum) and ***row 62*** (`GENERIC-METRIC`; its two data gates are campaign 49, building).
+Nothing else is open.
+
 ## ✔ CAMPAIGN 50, ROW 53 `DONE` (`r7443+71.50`, `+71.52`). ⌗ ROW `2 → 1`, DONE `107`
 
 Row 53's ROW object is built (`probes/Row53Image.lean`, 8 theorems, standard axioms, `13 s`). The essential image is

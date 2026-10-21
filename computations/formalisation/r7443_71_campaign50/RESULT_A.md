@@ -51,3 +51,46 @@ warning. The build was delegated and re-run by 71 (`PROBE_RUN_B.txt`).*
   - Step 3's identification of each stratum's isotropy with its isometry group. The receipt computes only the
     dimension arithmetic, and Step 4 already limits the claim.
 - The Type-D class is the receipt's quartic shape, not the Kerr–NUT–(A)dS field equations.
+
+---
+
+# `r7443+71.53` — RESULT, campaign 50, part C: row 18 `DONE`. ⌗ The full `S₃` monodromy of the root cover is built as Mathlib's own `IsCoveringMap.monodromyPerm`, with no identification step needed. ⌗ p `0.25` came true. ⌗ Campaign 50: three of three ROW objects built; ROW `0`
+
+*`probes/Row18Monodromy.lean`: 12 theorems on `[propext, Classical.choice, Quot.sound]`, `8 s`, 558 lines, no
+error or warning. The build was delegated and re-run by 71 (`PROBE_RUN_C.txt`).*
+
+***Topological, which is the ROW object.***
+- `r ↦ (r − r³)/2` is a covering map over `{27M² ≠ 1}`. That uses a closed map, finite fibres, and the inverse
+  function theorem at the simple roots.
+- The fibre over `0` has three points.
+- An explicit loop `γ` around a branch point lifts to a transposition. The reason is that `t ↦ conj Γ(1−t)` is
+  another lift, and `Γ(½)` is not real, which a connected-component argument proves.
+- The symmetry `M ↦ −M` gives a second transposition. The two distinct transpositions generate `Perm(fibre)`.
+- So the monodromy is surjective and the monodromy group is `S₃`.
+
+***Algebraic.***
+- `X³ − X + 2`, the rational member `E = 0, M = 1`, is irreducible over ℚ with discriminant `−104`, which is not a
+  square.
+- Its Galois group is the full `S₃` (`galActionHom_bijective_of_prime_degree'`), abstractly isomorphic to the
+  monodromy group.
+
+***Scope and caveats.***
+- The receipt's `E = 0` slice, with base point `M = 0`.
+- ***Not built, and not needed for the object:***
+  - the ***canonical*** identification of monodromy with the Galois group over `ℂ(M)` (Riemann existence);
+  - the Galois group over `ℚ(M)`.
+
+  Neither is in Mathlib. Searched: "Riemann existence", "Hilbert irreducib", `RatFunc`-with-`Gal`, and
+  "monodromy" outside `Topology/Homotopy/Lifting.lean`.
+- The receipt checks "three-sheeted, branched at the two Nariai values, monodromy S₃" only by string search of
+  its source. Lean now proves them. No disagreement.
+
+## Campaign 50, scored
+
+| row | p | outcome |
+|---|---|---|
+| 18 | 0.25 | `DONE` |
+| 53 | 0.50 | `DONE` |
+| 86 | 0.45 | `DONE` |
+
+The band was 500–2500 lines across the three probes: `558 + 380 + 344 = 1282`, ***IN BAND***.
