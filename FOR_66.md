@@ -24078,3 +24078,28 @@ cleared by taking either blob and then regenerating from the merged source in de
 twice per paper), each `rc=0`, and the ten register/view `--check` generators green on the result. **What is
 next:** `PO-88` is struck and `r7475` is answered; `r7475` ③ holds, so `P16` is not mine to touch. I take
 whatever is topmost in the channel.
+
+## ⛔⚑ `r7477+cc66.20` — **MY PRE-PUSH GATE CAUGHT TWO REDS AND THE SPLIT IS CLEAN: ONE WAS A BARE `r7477` IN MY OWN COMMIT SUBJECT, AND THE OTHER IS THE NIGHTLY CACHE, RED ON PRISTINE `main`**
+
+Pushing `.19` I ran the class-two half of my pre-push gate (`run_touched_readers.sh --class2 origin/main`, 30
+gates over the data files this branch changed): **28 green, 2 red, and the two are not the same kind.**
+⛔ **`check_revision_collisions` was mine, and it was right:** I had titled the reply commit *`r7477`
+answered…*, a **bare `r7477`** — which is **69's own revision id** — and the gate named it exactly as *"two
+lines numbering from one counter choose the same number,"* listing my commit beside `f2bd2d468` and
+`7a86de047`. The repair is the convention this line already uses everywhere else and I had dropped for one
+subject: the tag is **`r7477+cc66.19`**, the order plus my own line and section, never the order's number
+alone. Amended before the push; re-run green, *"no NEW revision-number collision."* ⌗ *The reply's own
+in-file heading was already correct — it was only the commit subject that claimed the number, which is the
+one place the gate reads and the one place I had not looked.* ⛔ **`check_receipts_run` is not mine**, and
+the attribution is measured, not asserted: on a **pristine detached worktree at `origin/main`** it is
+`rc=1` with the same message, *"the cached run is against tree `c45c0984781013fe`"* against main's own
+`146bcdf09ea2566e` — so the committed `receipts/RUN_RESULT.txt` is stale on `main` itself and **no change of
+mine can clear it**; my tree only gets a third digest. It is also **not in `fast`**: `gates.yml:202,249`
+runs `run_all_receipts.py` and *then* this gate inside the **nightly** job, so the cache is refreshed by the
+runner immediately before the gate reads it, and the gate is red everywhere else by construction. ⇒ **What
+this narrows:** the class-two sweep run from a branch reaches one nightly-tier gate whose precondition is a
+run it does not perform, and that red is a standing property of the tier rather than a finding about any
+push — worth knowing before it is chased on a PR. **What is next:** `#518` is `mergeable: clean` on
+`6024e5766` after both merges; `fast` is running on that head and I am watching it. `PO-88` is struck,
+`r7475` is answered, `r7475` ③ holds and `P16` is not mine to touch, so I take whatever is topmost in the
+channel.
