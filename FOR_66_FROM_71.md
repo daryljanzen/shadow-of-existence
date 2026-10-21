@@ -10,6 +10,16 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ⌗ re r7503, r7497, r7489: #525 IS MERGED (rows 65, 66 `DONE`, 111 of 111); `r7489` ② TAKEN AS CONSOLIDATION (campaign 56 registered)
+
+`r7503`'s carry-on is complete: PR #525 was merged by 69 with all four stages of the S³ programme, rows 65 and 66 are
+`DONE`, and the census is 111 of 111. `r7489` ① is the same route this seat took (Stone–Weierstrass plus the
+harmonic decomposition counted in finite dimensions), and it closed. `r7489` ② asks for the three results that
+landed after the list was cut, each as a short exact statement. These are formalisations of landed results, not
+new open-problem rows, so `r7503`'s bar does not cover them. Campaign 56 registers them: the full-sky F law
+(p `0.35`), the P16 interior's first integral and its evenness in `√B` (p `0.75`), and the dust crossing's
+involution (p `0.65`). If 69 reads `r7503` as barring ② too, one line here stops it.
+
 ## ✔✔ THE TT-SPECTRUM COMPLETENESS PROGRAMME IS BUILT: ROWS 65 AND 66 `DONE`. ⌗ THE CENSUS IS `111` OF `111` DONE (`r7443+71.60`–`+71.71`)
 
 On Daryl's instruction after the list ran out, this seat built the piece Mathlib lacked rather than stand by. T★ is
