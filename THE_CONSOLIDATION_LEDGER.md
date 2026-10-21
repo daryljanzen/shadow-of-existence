@@ -373,6 +373,9 @@ identification, the observer's own flat slice. The summaries do not all carry th
   other assignment survives either test". The only quantitative test of that direction is the TT run, and it prefers it.
   The nucleosynthesis direction is quantitatively fatal; the distance direction is fixed by the kernel theorem and the
   identification, and the sky prefers the other. `P18` line 2837 places the residual in the rates; keep, sharpen to the result.
+  **Done (r7513)**, with §acoustic, the own-column ledger, the narrow answer, the frontier item, its table row and the unpaid
+  column all carrying the one assignment; and two stale paragraphs rewritten (the "second confrontation", which was the same
+  likelihood run, and the three-candidate paragraph, physical or numerical or the datum, whose sampling question is closed).
 - `P16` §scoping and line 164: the same "quantitatively fatal" in the distance direction.
 - `ONTOLOGY_FOUNDATION_INDEX` lines 1131-1133 (quotes `P16` §scoping verbatim) and 1371.
 - `P15` abstract: headlines the 2.57x / 1.57x rejection only; it carries the leaf-distance result and the identification.
@@ -404,7 +407,8 @@ crossing, `PO-92` §open), `P3` (`PO-92` at line 1222, `PO-93` §curvature), `P2
 
 - `P3`: the masthead comment fragment is split.
 - `P5`: R's dial action given as w to -w and as w to w+pi.
-- `P6`, `P7`: the "rejected" framing (with section 1).
+- `P6`, `P7`: the "rejected" framing (with section 1). `P7`'s frontier item 1 still names "a mechanism for that deficit" as what
+  is owed; it becomes the rate light's path distance takes, as `P15` and `P18` now state it.
 - `P10`: lines 1468-1479 say "value not claimed" while sections 959-1061 compute it positive; 10^-122 against 10^-123;
   a receipt named "sign_is_mixed".
 - `P11`: line 314 (clock re-founding at the Nariai seam, against r=0 in the index at 1999); the two-Killing-vector / Type-I
@@ -428,7 +432,15 @@ crossing, `PO-92` §open), `P3` (`PO-92` at line 1222, `PO-93` §curvature), `P2
 - `P18`: line 778 "continued through the seam"; 873-876 against 894-901 (where the Gowdy wave sits); 1508 "computed rather
   than met"; 1555 the parameter-count frame; 1841 a duplicate test presented as independent; 2114 "not the same seven"
   against a list of six; 2661 r(1-omega) missing alpha squared; 2191 and 2681 the vantage-relative claim; 3050 "no
-  early-universe parameter" while omega_b and n_s are fitted.
+  early-universe parameter" while omega_b and n_s are fitted. **Done (r7513)**: 778 the crossing through the branch point; 873 the
+  Gowdy members placed inside the reach, as the dynamics paper has them (exactly two Killing vectors), the near side of the wall;
+  1838 and 1847 as in section 1; 2114 "not the same list"; 2661 alpha squared written in; 2191 brought to 2681's relation-not-identification;
+  1509 and 3050 scoped to the construction's own parameters, 3050's "fits fewer parameters" withdrawn against §assumptions, where
+  both arms fit the same four. Checked and kept: 1508 "computed rather than met" (the angle is an output, not a calibration),
+  1555 the parameter-count frame (§assumptions compares what is fixed against what is fitted, explicitly). **The open-language
+  read is done (r7513)**: 83 sites ruled, 47 ordinary English, 35 pointed at live rows, 1 owed (below); three further sentences
+  rewritten (a spinor route "open" meaning available; a pointer to a frontier row that no longer exists; the scale's reversal,
+  which the construction settles, now pointing where).
 
 ### 3. `ONTOLOGY_FOUNDATION_INDEX`, against the canon (P5, P6 and the dagger)
 
@@ -488,6 +500,7 @@ crossing, `PO-92` §open), `P3` (`PO-92` at line 1222, `PO-93` §curvature), `P2
 - Owed rulings from the open-language reads, each to be worked to a verdict or given a row under `PO-86`: `P15`'s coherence
   mechanism, "argued, not yet proven through the full transfer" while the transfer is run; the lift's account, whose kernel
   exponent `P15` says is not settled (a factor, not a detail); the size of the polarisation source's pull on the reported
-  configuration, not measured; the flux the seam radiates into the lap's future, not computed.
+  configuration, not measured; the flux the seam radiates into the lap's future, not computed; `P18`'s base rate for the
+  theory-choice criterion (the cases where the same criteria misled not sampled), which `P6` sets as the discipline's first programme.
 - Close: strike `PO-86`, put `check_open_item_coherence` in CI, and reactivate 60, cc66 and 70 (and 71 if a
   formalisation row is open by then) on the frontier as it stands, the projection-distance adjudication first.
