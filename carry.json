@@ -13257,6 +13257,11 @@
     "since": "3184ccdf7e82a7dfc65abc437b2d8c75bfa5ef00",
     "unmeasured": true
    },
+   "corpus/check_formalisation_join.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39535713782",
+    "since": "7598d851a06a73a5bc14c7595f7a52470ff30040",
+    "unmeasured": true
+   },
    "receipts/L_probability/S36_two_more_faces_of_the_live_subject_family_and_each_needed_a_different_widening_of_what_gets_run.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39530195945",
     "since": "3184ccdf7e82a7dfc65abc437b2d8c75bfa5ef00",
@@ -13267,17 +13272,7 @@
     "since": "3184ccdf7e82a7dfc65abc437b2d8c75bfa5ef00",
     "unmeasured": true
    },
-   "receipts/L_probability/S50_the_eleven_close_whole_and_all_three_arms_fail_high_because_two_of_them_were_measuring_one_quantity.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39530195945",
-    "since": "3184ccdf7e82a7dfc65abc437b2d8c75bfa5ef00",
-    "unmeasured": true
-   },
    "receipts/L_probability/S51_the_queue_closes_whole_and_both_arms_fail_because_one_arbiter_was_counting_its_own_ledger_and_the_other_counts_a_defect_the_fix_removes_before_the_record.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39530195945",
-    "since": "3184ccdf7e82a7dfc65abc437b2d8c75bfa5ef00",
-    "unmeasured": true
-   },
-   "receipts/L_probability/S52_the_seats_own_reading_closes_whole_and_two_arms_land_in_band_while_the_effort_band_fails_low_because_the_series_it_was_drawn_from_is_still_falling.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39530195945",
     "since": "3184ccdf7e82a7dfc65abc437b2d8c75bfa5ef00",
     "unmeasured": true
