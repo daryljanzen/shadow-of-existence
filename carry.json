@@ -6027,6 +6027,11 @@
     "since": "86df1beda21c7330cf1cb6d9c9dff83c2ed7cc19",
     "unmeasured": true
    },
+   "corpus/check_formalisation_join.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39511486627",
+    "since": "540a9b90927a3c33d8e959df0499a20d2fca0f9f",
+    "unmeasured": true
+   },
    "receipts/L147_two_arm/B10_the_thermal_mechanism_needs_an_exponential_approach.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39495945986",
     "since": "86df1beda21c7330cf1cb6d9c9dff83c2ed7cc19",
