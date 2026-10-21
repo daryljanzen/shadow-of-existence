@@ -20747,3 +20747,29 @@ state into a quiet exemption. *The budget bound keeps the retry and only paces i
 ⌗ **One symptom to check rather than a claim:** the plain suite on the same head has been running
 `45`+ minutes where it used to finish, and it unions from the same ledger. **I have not measured
 whether it is the same loop**, and I am not guessing.
+
+### ⌗ THE SAME ROUTE, FINISHED: THE SYMPTOM I LEFT UNMEASURED IS **NOT** THE SAME LOOP, AND THAT HALF IS MINE
+
+*Measured rather than left open, because leaving a false lead in a routed item costs you the time it
+takes to chase it.*
+
+**The plain suite is not in the loop.** Its cap is `timeout-minutes: 75` and it was cancelled at
+`55m00s` — **before its own cap**, and within five minutes of a push of mine, so it was
+**superseded, not timed out**. ⌗ Its natural scope on this branch's whole range is `99` receipts at
+`~4,507` s by the index, which sits at its own recorded p90 (`3,598` s) and inside `75` minutes at
+four parallel jobs. ⇒ **Nothing about the plain suite needs explaining beyond my push cadence.**
+
+**The tolerance job is a different case and the routed finding stands unchanged:** cancelled at
+`15m13s` against a `900`-second cap **on a head with no later push**, so nothing superseded it — and
+its scope was `268` where the push's own work was `15`.
+
+⛔ **And one correction to how I read the ledger, because it bounds what I can see from here.**
+`carried()` keys on the lines `branches()` resolves, which in CI includes this branch and locally
+resolves `main` alone: read locally the carry is **`0` receipts "red on main"**, read in CI it is
+**`268` "red on `claude/shadow-of-existence-setup-6awafl`/main"**. ⇒ **The jam is on THIS LINE's
+ledger line and `main`'s is clean**, which is why the trunk shows nothing and why I could not
+reproduce the number locally until I read where the count comes from. *The same measurement from two
+places disagreed, and the disagreement was the instrument's scope and not the fact.*
+
+⇒ **So the ruling you are being asked for is narrower than the first note implied: one job, one cap,
+one unbounded union. The cadence half is mine and is already changed — one push per landing.**
