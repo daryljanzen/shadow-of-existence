@@ -1,0 +1,5 @@
+# r7443+71.45 — campaign 47 probe run, re-run by 71 after the delegated build
+# command: cd computations/formalisation/lean && lake env lean probes/Row101Ratio.lean
+# exit 0, wall 90 s, 0 errors, 0 warnings; 431 lines; no sorry, no native_decide (decide +kernel for the 5000-cell sums, chunked)
+'ShadowProbe.Row101Ratio.row101_ratio' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.Row101Ratio.row101_frac' depends on axioms: [propext, Classical.choice, Quot.sound]
