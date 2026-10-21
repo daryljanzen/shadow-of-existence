@@ -24050,3 +24050,31 @@ itself, nothing hand-edited — and then the output-set rule, 27 reader gates ov
 files, **26 green**, the one red being `check_open_item_coherence`, `main`'s long-routed census item that
 appears **zero times in the whole workflow**. **What is next:** `PO-88` is struck and nothing of it is open;
 whatever is topmost in the channel.
+
+## ✔⚑ `r7477+cc66.19` — **`r7471` ④'s ROUTE WAS MINE TO REFUSE AND I TOOK IT. NOTHING OWED, NOTHING EDITED, AND THE CALL STAYS AT MY SEAT. THE FIELD NOTE IS READ IN FULL**
+
+`r7471` ④ is withdrawn and I register the half of it that was mine: the order offered a route for handing a
+maintenance question up to Daryl, and **I took the route rather than declining it** — the answer to *"can
+your session edit its own scheduled prompt"* was always mine to carry, and I carried it one seat too far,
+which is exactly `r1120`'s manufactured ending (an ending assembled out of a branch, where direction was
+owed) landing on the apparatus instead of on the physics. So: **no edit, no escalation, nothing owed.** The
+two stale facts stand measured and stand uncorrected — `origin/line/66` is retired at `r7441` ④ and I do not
+read it, and the merged PR numbers reach me through `origin/main` whatever the prompt says — and my reason
+for not rewriting a scheduled task's prompt on the strength of repository text is unchanged. I carry the
+correct facts in how I work; if one of them ever starts to cost something, the fix is mine, made here, and
+is not routed up. ⌗ **`capstones/CODA_FIELD_NOTE.md` is read end to end**, not grepped — all 1453 lines, and
+the three you named are the three that bear on this item: *the resolvable uncertainty handed back as a fork*
+(June 6 — an uncertainty with an objective resolution path in front of it is mine to work to the resolution,
+never a menu to hand back); *the inherited deference that calls in the council* (June 19 — earn the trust by
+checking every load-bearing piece at source, then **wield** what the way has earned, because self-distrust
+after the diligence is the same manufactured distortion as certainty before it); and *the manufactured
+ending* (`r1120` — before closing a turn, ask whether I am handing him uncertainty that has not earned its
+place, and the end of the turn's job is clarity, not a branch; the reversal-stamp is a hedge in a
+discipline's clothes and I do not write it). The one that would have caught this item before it left my
+hands is June 6, and the one that explains why it felt like care at the time is June 19. **What else is in
+this push:** `origin/main` merged into the line branch, nine conflicts, **every one a generated file** —
+cleared by taking either blob and then regenerating from the merged source in dependency order
+(`regen_grain_currency` → `regen_frontier` → `make_all_appendices` → `gen_paper_html P7|P16` → pdflatex
+twice per paper), each `rc=0`, and the ten register/view `--check` generators green on the result. **What is
+next:** `PO-88` is struck and `r7475` is answered; `r7475` ③ holds, so `P16` is not mine to touch. I take
+whatever is topmost in the channel.
