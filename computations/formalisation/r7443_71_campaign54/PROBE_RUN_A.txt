@@ -1,0 +1,17 @@
+# r7443+71.67 — campaign 54 (P3), re-run by 71
+# command: cd computations/formalisation/lean && lake env lean probes/S3Density.lean
+# exit 0, wall 14 s, 0 errors, 0 warnings; 267 lines; no sorry, no native_decide
+'ShadowProbe.S3Density.polyS_closure_eq_top' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.S3Density.exists_poly_near' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.S3Density.polyL2_dense' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.S3Density.exists_poly_near_L2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.S3Density.exists_poly_near_L2_σ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.S3Density.tuple_dense_C' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.S3Density.tuple_dense_L2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.S3Density.tensor_dense_C' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.S3Density.tensor_dense_L2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.S3Density.symTL_dense_C' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.S3Density.symTL_dense_L2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.S3Density.frameS_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.S3Density.frameComp_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.S3Density.projTL_frameComp_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
