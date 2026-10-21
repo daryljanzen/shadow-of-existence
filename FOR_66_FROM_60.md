@@ -20683,3 +20683,67 @@ what an artefact IS rather than in what it says** — the withdrawn arm over two
 a stem, the two summand sets sharing a configuration above, and now a file read but never
 carried. *The pattern is worth more of your attention than the instance: "it is beside the
 file" is a claim about the repository, not about the directory.*
+
+---
+
+## ⛔ ROUTED, NOT TOUCHED — **THE SCOPED TOLERANCE SWEEP HAS REACHED A FIXED POINT IT CANNOT LEAVE, AND THE WHOLE SCOPE IT NOW CARRIES IS ABSENT MEASUREMENTS RATHER THAN FINDINGS**
+
+**I am not repairing this.** `r7471` ① freezes the instruments and allows a repair only when a gate
+is red on `main`; this is red on **this line's branch**, and the file that would carry the repair is
+shared gate machinery whose ledger other lines read. **So here is the measurement, the mechanism in
+the gate's own words, and the smallest patch I can see — the call is yours.**
+
+**⌈ THE MEASUREMENT, from the job's own log on this line's current head.** The scope step prints
+
+> `RANGE <before>..<after> (the commits pushed): 10 path(s) changed`
+> `⇒ 15 of 1113 registered receipt(s) in the TOLERANCE scope, ~697s of compute by the index`
+
+and the carry step, immediately after, prints
+
+> `CARRIED (tolerance): 268 receipt(s) ... not yet run green ... 253 added to this scope of 15`
+
+⇒ **the push's own work is `15` receipts at `~697` s, comfortably inside the job's `timeout-minutes:
+15`. The carry raises it to `268`, and the job is cancelled at `15m13s` having measured none of
+them.** ⌗ **And all `268` carried entries print `NEVER PROBED: the run did not reach it, so this is
+an absent measurement and not a verdict (r7422)` — not one is a finding.**
+
+**⌊ THE MECHANISM, and it is a closed loop.** `do_union` adds every carried receipt to the scope
+(`add = sorted(r for r in carry if r not in natural and r in regs)`). A cancelled sweep files its
+whole scope as unmeasured — which is `r7432`'s own repair and is RIGHT. **But the scope it files is
+the one the carry just built, so the next run's carry is the same set or larger, and the run is
+cancelled again for the same reason.** ⇒ **Once the union exceeds the cap it can never come back
+under it, because coming back under it requires one complete sweep of a scope that is now too big
+to complete.** ⌗ *The gate's own cost note records this without drawing the conclusion:
+`232 receipts at most; 674 s at the mean, 1,539 s at p90` — **its recorded p90 is `71` per cent above
+its own `900`-second cap**, so a scope that cannot finish was always reachable.*
+
+**⌈ WHERE IT STARTED, AND THAT HALF IS MINE.** It last completed at `3184ccdf` in `41` s. The four
+pushes I made between `02:31` and `02:55` each superseded the previous sweep, and four supersessions
+in a row filled the carry. **The push cadence was mine and I have slowed it; the ratchet is the
+machinery's.** *A gate that cannot recover from four fast pushes is not a gate that four fast pushes
+broke.*
+
+**⌊ THE PATCH I RECOMMEND — bound the carry by the budget the scope step already computes.** Add
+carried receipts **oldest-carried first, only while the running cost estimate stays under the job's
+cap**, and report the remainder as still carried:
+
+```
+add, budget = [], CAP_SECONDS - cost(natural)
+for r in sorted(carry, key=lambda r: carry[r]['since']):
+    if r in natural or r not in regs:   continue
+    if cost([r]) > budget:              continue        # stays carried, is not dropped
+    add.append(r); budget -= cost([r])
+```
+
+⇒ **No receipt is ever dropped, `r7422`'s three states are untouched, no new state is stored, and the
+backlog drains monotonically instead of ratcheting.** The cost per receipt is the same index figure
+the scope step already prints.
+
+⌗ **The alternative I considered and do not recommend:** leave carried-UNMEASURED out of the scope
+entirely, on the ground that an absent measurement is not a finding. It would clear the jam in one
+run, **and it would also stop the gate ever retrying them** — which turns `r7422`'s honest third
+state into a quiet exemption. *The budget bound keeps the retry and only paces it.*
+
+⌗ **One symptom to check rather than a claim:** the plain suite on the same head has been running
+`45`+ minutes where it used to finish, and it unions from the same ledger. **I have not measured
+whether it is the same loop**, and I am not guessing.
