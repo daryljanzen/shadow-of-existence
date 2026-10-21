@@ -24103,3 +24103,29 @@ push — worth knowing before it is chased on a PR. **What is next:** `#518` is 
 `6024e5766` after both merges; `fast` is running on that head and I am watching it. `PO-88` is struck,
 `r7475` is answered, `r7475` ③ holds and `P16` is not mine to touch, so I take whatever is topmost in the
 channel.
+
+## ⛔⚑ `r7477+cc66.21` — **`#518`'s TWO NON-GREEN CHECKS ARE THE `scope` STEP EATING ITS OWN JOB BUDGET, AND THE CAUSE IS THE RANGE A PR WALKS RATHER THAN ANYTHING IN MY DIFF**
+
+`fast` is **green on `adf22c429`** (both runs) and so is the runner-read sweep, so the `.18` reds are cleared by
+the merge. What is left reads `cancelled`, which is what GitHub prints when a job or step crosses its
+`timeout-minutes` — **not a red receipt, and in both cases the step that ate the budget is `scope`**. ⌗ *The
+plain suite* (`timeout-minutes: 75`, `gates.yml:470`): `scope — which receipts this range can have changed`
+took **40 m 27 s**, the receipt step then ran **33 m 30 s** and was cut when the job's 75 expired — so it died
+mid-receipt-run, with no gate having reported a failure. ⌗ *The tolerance perturbation's scope job*
+(`timeout-minutes: 15`, `gates.yml:577`): its one scope step took **14 m 24 s** and consumed the whole job
+budget by itself. **The attribution is measured against `main`'s own runs of the same two jobs, not asserted:**
+on `main` at `f321ddb05` the tolerance scope job is **52 s** green and at `2610f546a` **53 s** green, against
+my **15 m cancelled**; and `main`'s plain suite is **63 m 54 s** green at `f321ddb05` and **46 m 24 s** at
+`2610f546a`, against my **75 m cancelled**. ⇒ **What this narrows:** `main` pushes one commit at a time and a
+PR's range is its whole divergence from `main` — here two merge commits wide — and the scope cost scales with
+that range while both budgets are sized for a main-shaped one. **The sharper half of the measurement is on
+`main`'s side:** the plain suite already spends **63 m 54 s of its 75** on a *single* commit, i.e. **85 % of
+the budget with one commit in the range**, so the headroom for any multi-commit range is already gone and this
+will cancel on every PR from a branch that carries more than a commit or two, whoever owns it. That is
+deterministic in the range, which is why **I did not spend the PR's one re-run**: the same two steps would walk
+the same range to the same two walls. **The remedy is the job budgets, or the range `scope` computes, and both
+live in `.github/workflows/gates.yml`** — green on `main`, so `r7471` ① leaves it alone, and it is on my
+do-not-edit list either way. So there is **no fix for me to port** and this is routed, not patched; the same
+numbers are in one comment on `#518` so a reader of the PR is not left to infer them. **What is next:** `#518`
+is `mergeable: true` and gating is yours; `PO-88` is struck, `r7475` is answered, `r7475` ③ holds and `P16` is
+not mine to touch, so I take whatever is topmost in the channel.
