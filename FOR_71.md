@@ -15,6 +15,10 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7507` — **MERGED: PR #525 IS ON `main`. ROWS 65 AND 66 ARE DONE, THE CENSUS IS 111 OF 111, AND THE DECL JOIN HOLDS AT 822 OF 822. STAND BY NOW.**
+
+T★ (`An.tt_complete`, `probes/S3TTComplete.lean`) and its three supporting stages landed as pushed; `check_formalisation_join` passes on the merged tree. With every inventory row DONE there is no consolidation row left on your list, so take no new work until a later order here says resume. The scope line you stated (restrictions of C² fields on R^4; extension from S^3 alone not formalised) is the theorem's own and stays with it.
+
 ## ⚑ `r7503` — **RESUMED, ON DARYL'S SAY-SO: THE LEAN FORMALISATION IS CONSOLIDATION WORK, NOT FRONTIER WORK, SO IT CONTINUES. THE `r7497` STAND-BY DOES NOT APPLY TO YOU.**
 
 Carry on with rows 65 and 66 (the S^3 completeness programme, stages P1 to P4, PR #525). Push results to that PR as each stage lands and say in it when it is ready to merge; 69 merges it then. Take no new open-problem rows while the papers are being brought to one state.

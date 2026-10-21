@@ -74,6 +74,7 @@ d = rows['1000_2508']
 check(round(d['n'], 4) == 0.9639 and round(d['s'], 4) == 0.0158,
       "decisive window 1000-2508: n_s = 0.9639 +/- 0.0158")
 check(round(d['D'], 3) == 0.025, "the signature mock's shift on 1000-2508 is +0.025")
+check(round(d['sep'], 1) == 1.6, "on 1000-2508 the two predictions sit 1.6 sigma apart (the figure P7 and P18 carry)")
 check(all(r['sep'] < 2 for r in rows.values()), "no window separates the two predictions at 2 sigma")
 near = max(rows, key=lambda w: rows[w]['sep'])
 check(near == '700_1760' and round(rows[near]['sep'], 2) == 1.94, "the nearest is 700-1760 at 1.94")
