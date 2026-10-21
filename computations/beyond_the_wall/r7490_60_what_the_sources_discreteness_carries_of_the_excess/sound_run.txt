@@ -1,0 +1,127 @@
+
+r7490 — WHAT PART OF THE 0.045 EXCESS THE SOURCE'S DISCRETENESS CARRIES, amplitude and phase
+read apart.  Order r7489 (1).
+
+THE RULING THIS RESTS ON, and it is 69's: the closed S^3 source spectrum is discrete by
+degree, one mode per L at k_L = sqrt(L(L+2))/r_0, and P15's own transfer is the L>=2-floored
+sum over that ladder, which reaches k_max D_M ~ 4000 at one mode per degree.  So THE LADDER IS
+THAT SPECTRUM and the continuum is the check -- which makes r7480's two component moves the
+measured effect of the source's DISCRETENESS on the contrast, not a numerical artefact.
+
+⌗ THE STATISTIC IS IMPORTED from r7093's contrast_two_models.py by ast, as r7474, r7476 and
+  r7480 imported it.  One copy of the predicate in the tree (r7445's rule, promoted r7447).
+
+
+========================================================================================================
+  Ⓥ① THE IMPORTED STATISTIC, AND ITS SOURCE'S OWN FOUR PRINTED ROWS FIRST
+========================================================================================================
+      A  c54.178               -0.3766  printed   -0.3766  diff 1.50e-05
+      A  c54.186 L3000         -0.4108  printed   -0.4108  diff 1.84e-05
+      B  refit grid base       +1.0563  printed   +1.0563  diff 2.97e-05
+      B  refit minimum         +1.0452  printed   +1.0452  diff 2.61e-06
+  ⇒ worst 2.97e-05  PASS   ⌗ window q in [0.85, 5.75], the statistic's own
+
+========================================================================================================
+  Ⓐ THE IDENTITY THE DECOMPOSITION RESTS ON:  proj  ==  rms × cos
+========================================================================================================
+      It is the algebra of the three sums and nothing else:
+        proj = S_AB/S_BB,   rms = sqrt(S_AA/S_BB),   cos = S_AB/sqrt(S_AA·S_BB)
+        rms × cos = sqrt(S_AA/S_BB) · S_AB/sqrt(S_AA·S_BB) = S_AB/S_BB = proj
+      ⇒ so it must hold to machine precision, and that is what is checked -- NOT the
+        five printed decimals, which could agree by rounding.
+
+      spectrum                          proj    rms × cos   |difference|
+      LADDER   (the arm)           +1.045197    +1.045197      0.000e+00
+      CONTINUUM 4.0 pts            +1.045159    +1.045159      0.000e+00
+      CONTINUUM 8.0 pts            +1.045159    +1.045159      0.000e+00
+      CONTROL vs itself            +1.000000    +1.000000      0.000e+00
+  ⇒ PASS — the identity is exact
+
+========================================================================================================
+  Ⓑ/Ⓒ THE EXCESS DECOMPOSED — what the amplitude carries and what the phase carries
+========================================================================================================
+      proj − 1 = (rms − 1) + rms·(cos − 1)    exactly, by the identity above
+
+      spectrum                       excess    amplitude        phase  phase share
+      LADDER   (the arm)           +0.04520     +0.04552     -0.00032        0.71%
+      CONTINUUM 4.0 pts            +0.04516     +0.04986     -0.00470       10.41%
+      CONTINUUM 8.0 pts            +0.04516     +0.04986     -0.00470       10.41%
+
+  ⇒ ON THE LADDER — the arm's own spectrum by the ruling — THE EXCESS IS ALMOST ALL
+    AMPLITUDE: +0.04552 of amplitude against -0.00032 of phase, the phase carrying
+    0.71 per cent of it.  On the continuum the phase part is
+    14.7 times larger (-0.00470) while the amplitude part grows by only
+    9.5 per cent of itself.
+
+========================================================================================================
+  Ⓔ/Ⓕ WHAT THE DISCRETENESS CARRIES — the two moves, and the metric NAMED
+========================================================================================================
+      the amplitude part moves  +0.00434   =  9.65 per cent of the 0.045 excess
+      the phase part moves      -0.00438   =  9.73 per cent
+      their SUM, the projected  -0.00004   =  0.09 per cent   ⌗ they cancel
+      and they are opposite in sign, their magnitudes within 0.9 per cent of each other
+
+  ⌈ Ⓥ③ THE METRIC, NAMED, AND ITS ARBITRARINESS STATED
+      This seat has NO DATA COVARIANCE.  What is used is the metric the statistic
+      itself induces -- the two additive parts taken as components of one residual
+      over the same q window -- so the discreteness's size is their QUADRATURE sum.
+      The L1 sum is printed beside it as the other obvious choice.
+      ⛔ A REAL LIKELIHOOD WEIGHTS PER-l RESIDUALS BY A COVARIANCE THIS DOES NOT
+        HAVE, AND WOULD GIVE A DIFFERENT NUMBER.  This is reported as what the
+        decomposition gives in the statistic's own metric, NOT as a likelihood result.
+
+  ⇒ ⚑ THE DISCRETENESS CARRIES 13.7 PER CENT OF THE 0.045 EXCESS IN QUADRATURE
+    (+0.00617), and 19.4 PER CENT IF THE TWO ARE SIMPLY ADDED (0.00872),
+    AGAINST 0.09 PER CENT IN THE PROJECTED STATISTIC.
+
+--------------------------------------------------------------------------------------------------------
+  Ⓥ④ WHERE IN q THE TWO PARTS LIVE — printed, so neither is taken on trust
+--------------------------------------------------------------------------------------------------------
+      q band (index)       ladder RMS     cont RMS  corr ladder    corr cont
+      [   0, 200)           1.01533      1.01846      0.99985      0.99909
+      [ 200, 400)           1.05707      1.05290      0.99996      0.99792
+      [ 400, 600)           1.05048      1.07584      0.99997      0.99737
+      [ 600, 800)           1.06275      1.04236      0.99984      0.99270
+      [ 800,1000)           1.06880      1.07639      0.99999      0.99440
+      [1000,1200)           1.06633      1.07280      0.99990      0.98505
+      ⌗ the window carries 1200 samples; the bands are equal in index, not in q.
+
+--------------------------------------------------------------------------------------------------------
+  ⌈ TWO THINGS THE BAND TABLE SHOWS THAT NO SCALAR DOES
+--------------------------------------------------------------------------------------------------------
+      ⒜ THE DISCRETENESS'S PHASE EFFECT IS CONCENTRATED AT HIGH q.  The ladder's
+        correlation with the control is >= 0.9998 in every band; the continuum's falls
+        monotonically to 0.985 in the top band.  ⇒ ** So the 13.7 per cent is an UPPER
+        reading for a likelihood: the phase half of it lives where the damping tail
+        gives a likelihood least weight, and a real covariance would discount it more
+        than it discounts the amplitude half. **  That is a direction, not a number,
+        and it is said because the metric caveat above would otherwise read as neutral.
+      ⒝ THE TWO MOVES AGREE TO 0.9 PER CENT AND THIS FILE DOES NOT KNOW WHY.  A
+        cancellation that close is either a coincidence of this configuration or a
+        structure of the statistic, and nothing here distinguishes them.  ⌗ No
+        mechanism is offered: the corpus has paid for invented ones before.  What can
+        be said is that it is NOT forced by the identity -- the identity makes the
+        projected number the product, not the two factors' moves equal and opposite.
+
+--------------------------------------------------------------------------------------------------------
+  THE ARMS, AGAINST PREDICTION.md — registered 744e5b6c, pinned 9962d71c
+--------------------------------------------------------------------------------------------------------
+  Ⓐ proj == rms × cos                     ⇒ HIT
+  Ⓑ the ladder excess is almost all       amplitude +0.04552 vs phase -0.00032, ratio 143x   ⇒ HIT
+  Ⓒ the continuum phase part grows        14.7x, amplitude by 9.5%   ⇒ HIT
+  Ⓔ 10 to 20 per cent in a metric that    measured 13.7%   ⇒ HIT
+    does not let them cancel
+  Ⓕ opposite and near-equal within 10%    0.9%, signs opposite: True   ⇒ HIT
+
+========================================================================================================
+  ✔ CONTROLS HOLD.
+
+  ⇒ THE ORDER IS ANSWERED: on the arm's own spectrum the 0.045 excess is carried
+    almost entirely by AMPLITUDE (+0.04552 of +0.04520, the phase 0.7 per cent of it),
+    and the source's discreteness moves the two parts by +0.00434 and -0.00438
+    IN OPPOSITE DIRECTIONS and within 1 per cent of each other -- so it carries
+    0.09 per cent of the excess in the projected statistic and 13.7 per cent
+    once they are read apart.  ** The projected number is a product of two factors
+    that move oppositely, and reading it alone hides a tenth of the excess. **
+
+  ** Nothing is applied to the register.  Supplied, not applied. **

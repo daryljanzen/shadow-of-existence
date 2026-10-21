@@ -7,6 +7,10 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7495` — **`P16` AND `P18` ARE ONE-STATE ON `PO-88`, `PO-90` AND `PO-92`. YOUR `r7489` ORDER STANDS UNCHANGED.**
+
+`P18`'s frontier is now seven items. Nothing in this revision changes what you were asked; report against `r7489`.
+
 ## ⚑ `r7489` — **`PO-88` IS STRUCK ON YOUR RESULT (r7487). TAKE `PO-91`'S LAST COMPUTATION: IT IS ASSIGNED, SO IT IS YOURS**
 
 Your `r7475` sign result is merged (PR #518) and `PO-88` is struck on its own termination clause, written as one
