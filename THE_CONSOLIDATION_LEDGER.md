@@ -352,3 +352,128 @@ because the excess was measured on the arm's own configuration.
 
 - **The full prior rows are at the parent of commit `d7539cf233`** in `THE_REGISTER.md`.
 - **Owed, named in the rows:** `P2` and `P18` for `PO-91`; `P15`, `P7` and `P18` for `PO-24`.
+
+
+## The arc to one state, with node 72's cold read folded in
+
+This is the complete list of what stands between the corpus and one consolidated state. Items leave it only by being
+done. The arc ends with `PO-86` struck, `check_open_item_coherence` in CI, and the code seats reactivated on the
+frontier as it then stands. Node 72's spin-up read (at r7503) is folded in below. Each of its items is checked at the
+passage it names before anything is edited there: the read is accurate but not every item survives (its `ONTOLOGY_FOUNDATION_INDEX`
+line 628 item does not: that line gives the self-adjointness threshold as three quarters, as line 1919 does).
+
+### 1. The projection distance, carried right everywhere (one state now; the adjudication is frontier)
+
+`P15` §refit-bound and §scope state the result. The specified configuration leaves an unreachable chi-squared of 278.8.
+Built with the projection's comoving distance on the leaf rate (radiation restored), the arm reaches 184.989, below the
+control's 186.007, with the control's crossings and run length. `P15` holds the stacking-rate distance on one
+identification, the observer's own flat slice. The summaries do not all carry this, and two state things it contradicts.
+
+- `P18` lines 1408-1418: the radiation-included law carried into the distances is called "quantitatively fatal", and "no
+  other assignment survives either test". The only quantitative test of that direction is the TT run, and it prefers it.
+  The nucleosynthesis direction is quantitatively fatal; the distance direction is fixed by the kernel theorem and the
+  identification, and the sky prefers the other. `P18` line 2837 places the residual in the rates; keep, sharpen to the result.
+- `P16` §scoping and line 164: the same "quantitatively fatal" in the distance direction.
+- `ONTOLOGY_FOUNDATION_INDEX` lines 1131-1133 (quotes `P16` §scoping verbatim) and 1371.
+- `P15` abstract: headlines the 2.57x / 1.57x rejection only; it carries the leaf-distance result and the identification.
+- `P15` around line 1950: "the distance ladder confirms" the stacking rate. The radiation term is negligible below z of
+  about 10 (`P16` §scoping's own words), so the ladder is consistent with either; reword.
+- `THE_PLAN` family 5, A1.3, A2.3 and the 2410 verdict: "rejected on TT shape" with no word of the leaf-distance result.
+- `EXPLAINER` line 251 closed the leaf-distance door by nucleosynthesis, which runs on the leaf rate either way. **Done
+  (r7509).** Line 262 states the identification as `P15` holds it; it stands until the adjudication.
+- The peak-spacing figures disagree across instruments: the wisdom-ledger row at r2789 has a spacing of 258 against a
+  stored acoustic scale of 301.6; `P15` and `P18` carry a comb of 298.0; the leaf run moves the acoustic scale from
+  302.889 to 301.380. Find which figure is stale and fix it where it lives.
+- `PO-87`'s register row: it does not carry the leaf-distance result, nor the finding that the visibility's 14.6 per cent
+  extra width alone is not the carrier (the width swap amplifies the difference and the undo test fails both ways, r6919
+  and r7191). Rewrite the row so its live clause is the identification itself.
+- **Frontier, for the first reactivation order (not in this arc):** whether the observer's-readout identification forces
+  the stacking-rate distance. `P16`'s rule puts a comoving separation read across leaves on the stacking rate and a process
+  running in the content on the leaf's; light's path is the case the rule has to be shown to decide.
+
+### 2. The paper turns, each carrying 72's items for that paper
+
+Open-language sites per paper (the open-reference baseline): P18 86, P15 68, P10 54, P14 25, P8 23, P17 23, P16 20,
+P11 19, P1 19, P13 16, P5 15, P3 15, P2 15, P6 11, P9 10, P12 7, P4 6. Already owed one-state edits: `P5` (`PO-88`
+crossing, `PO-92` §open), `P3` (`PO-92` at line 1222, `PO-93` §curvature), `P2` (`PO-91` §construction-not-error),
+`P18` (`PO-93` after `P3`).
+
+- `P3`: the masthead comment fragment is split.
+- `P5`: R's dial action given as w to -w and as w to w+pi.
+- `P6`, `P7`: the "rejected" framing (with section 1).
+- `P10`: lines 1468-1479 say "value not claimed" while sections 959-1061 compute it positive; 10^-122 against 10^-123;
+  a receipt named "sign_is_mixed".
+- `P11`: line 314 (clock re-founding at the Nariai seam, against r=0 in the index at 1999); the two-Killing-vector / Type-I
+  conflation.
+- `P12`: undefined phi at line 333.
+- `P13`: Z2xZ2 should be Z2^3; "A1 rank-two"; "vector-like" at line 270.
+- `P14`: normal-bundle rank 3 against 1; S3 "broken" against "not"; T in the order-12 group; K called the seam continuation
+  (xi's name); "protected under any deformation" (recorded at r1830, still standing); "antipodal is R"; the 11/11 test's low
+  power; the triality count mismatch.
+- `P15`: lines 432 and 1803-1804 call the branch point a "null surface", against "not a Killing horizon"; driving on the
+  collapse leg against the expanding leg; r_s 146.4 against 145.4; x0 1.678 against 1.6648; 2.56 against 2.57; line 2421
+  places the dS2xS2 throat at the branch point.
+- `P16`: "turnaround" used for the crossing; "seam" for r=0; collapse-side driving; datings 7.06 / 7.65 against 7.46.
+- `P17`: stale masthead; "past the wall"; "maximally symmetric S3"; the bare "NO free constant"; two polarity conventions.
+- `P18`: line 778 "continued through the seam"; 873-876 against 894-901 (where the Gowdy wave sits); 1508 "computed rather
+  than met"; 1555 the parameter-count frame; 1841 a duplicate test presented as independent; 2114 "not the same seven"
+  against a list of six; 2661 r(1-omega) missing alpha squared; 2191 and 2681 the vantage-relative claim; 3050 "no
+  early-universe parameter" while omega_b and n_s are fitted.
+
+### 3. `ONTOLOGY_FOUNDATION_INDEX`, against the canon (P5, P6 and the dagger)
+
+- r=0's curvature read three ways: a genuine curvature singularity (1475, 1497), a comoving-chart artefact (1368, 1396,
+  1526, 1533), a chain-rule effect with the curvature finite (772). `P15`'s crossing paragraph is the settled reading: the
+  geometry's Kretschmann scalar diverges there, the substrate's curvature is finite.
+- r=0 called a turning point (1521, 1533) against a vertical tangent and not a turning point (771-779); 1809 quotes P8
+  calling r=0 a horizon the slicing is anchored to.
+- The beginning placed at the horizon (933), the smooth past null boundary (1810), a=0 as the de Sitter horizon (1920, 1942).
+  The canon: the branch point r=0.
+- §1·SHADOW 1041-1042 puts the recombination plasma on the foliation, against the r6937 correction at 1073-1078.
+- The Weyl S3: inside so(5,1) (1616) against no substrate isometry (1665, 2122, 2280); 2247 on the part of D3 that is a
+  substrate isometry; 2285 calls S3 the deck symmetry while 1657 makes the deck group trivial.
+- 1468 (P7) against 1916 and 1940 (P10): different families of geodesics against one congruence with two synchronisations.
+- Generations: 2112-2150 still make the wall-modes the generations; the deck-Z3 relocation sits in parentheticals.
+- 2045 calls K the seam continuation (xi's name); su(3) across the branch point (1348) against across the signature seam
+  (2030, 2071); 2015 writes the throat as r=sqrt(3/Lambda), a form 826 forbids, and calls sigma "no seam"; 1980 calls R the
+  A2 diagram automorphism P; 1807 uses the retired R(T)=alpha cosh.
+- Bare "the seam" after the r2123 withdrawal: 881, 886, 894, 1204-1289, 1420, 1773, 2014, 2208; 1212 calls the throat
+  X=alpha the seam; 1673 and 916 use "the branch point" for the Nariai ramification; 750 against 761 on the Schwarzschild
+  front seam; 763 z of about 0.68 against 0.6648.
+- "Stated for reversal" in ten card headers (1311, 1383, 1405, 1435, 1509, 1551, 1603, 1644, 1692 and on), which the coda
+  forbids; 1700 (iv) "no early-universe parameter" and 1700 (iii) "no free dimensionless constant" without its qualifier.
+
+### 4. `capstones/THE_WISDOM_LEDGER.md`
+
+- Row 251 still LIVE though the condition sweep fixes a single H0 (r6915), while the section says nothing is listed.
+- LIVE rows on the removed onset datum or the old seam-handover framing: 1238, 1154, r2688, r2747, r2799, 1007 (H0=73),
+  1121 (l*=301.4). r6915 retired only the rows that named the onset explicitly.
+- 1075 (r1873): "the Nariai seam IS the beginning".
+- r2761, r2762, r2780: the dropped high-l bins (later run to 2512, which disfavours the arm further).
+- r2724-2726: an F3 decisive negative, then withdrawn.
+
+### 5. `THE_PLAN`
+
+- Family 6 marked closed (799, 1608) while the index and `P14` keep the propagating spinor sector open.
+- 3348 lists the baryon asymmetry as a dissolution (inherited from an antimatter progenitor), past `P14`'s own wording.
+- 3474 and 2370-2378 write deferrals to Daryl that `check_deferrals` misses.
+- 3652 "five missing" in the dissolution catalogue, closed at 17 of 17; 2942 A2.1 "the live refutation edge" after D1; 2346
+  "now returning in favour" against 2410's mixed verdict; Y_p as 0.243, 0.247 and 0.2506; 747 "necessarily sub-Nariai"
+  beside "collapse forces Nariai"; 4407 the chiral member "unbuilt" against 3066; 3295 and 3753 the family symmetry as S3;
+  2933 and 3291 "no early-universe parameter".
+
+### 6. `EXPLAINER` and the smaller documents
+
+- `EXPLAINER` 131 (the temperature, three and a half orders per `P16`), 43 and 167 (x0 1.66, z 0.66): **done (r7509).**
+  199: the three-wall count's protection stated flat where the stability is traced rather than computed; check against
+  the matter paper.
+- `INTERFERENCE_ENGINE` line 63 "seven faces" (now eight).
+- `FIELD_NOTE`: two face-count schemes; the conjugation-parity tautology (to check).
+- The coda and the field note presume /mnt/transcripts and present_files, which do not exist here.
+- The portrait, line 117: the Hubble tension called "its predictions".
+
+### 7. The register and the close
+
+- One-state rows still to do: `PO-50`, `PO-86`, `PO-89`, `PO-94`; `PO-87` rewritten with section 1.
+- Close: strike `PO-86`, put `check_open_item_coherence` in CI, and reactivate 60, cc66 and 70 (and 71 if a
+  formalisation row is open by then) on the frontier as it stands, the projection-distance adjudication first.
