@@ -376,7 +376,7 @@ identification, the observer's own flat slice. The summaries do not all carry th
   **Done (r7513)**, with §acoustic, the own-column ledger, the narrow answer, the frontier item, its table row and the unpaid
   column all carrying the one assignment; and two stale paragraphs rewritten (the "second confrontation", which was the same
   likelihood run, and the three-candidate paragraph, physical or numerical or the datum, whose sampling question is closed).
-- `P16` §scoping and line 164: the same "quantitatively fatal" in the distance direction.
+- `P16` §scoping and line 164: the same "quantitatively fatal" in the distance direction. **Done (r7515)**, as in `P18`.
 - `ONTOLOGY_FOUNDATION_INDEX` lines 1131-1133 (quotes `P16` §scoping verbatim) and 1371.
 - `P15` abstract: headlines the 2.57x / 1.57x rejection only; it carries the leaf-distance result and the identification.
   **Done (r7511)**, with the introduction's summary and the abstract's bare "no early-universe parameter" scoped to its own.
@@ -428,6 +428,12 @@ crossing, `PO-92` §open), `P3` (`PO-92` at line 1222, `PO-93` §curvature), `P2
   scattering" where the leaf-rate result would otherwise contradict it, a false "remains owed" in the large-scale continuation)
   and one history clause cut.
 - `P16`: "turnaround" used for the crossing; "seam" for r=0; collapse-side driving; datings 7.06 / 7.65 against 7.46.
+  **Done (r7515)**: the crossing is "past the branch point" at lines 159, 542 and the fig_history caption, "turnaround" kept for
+  the progenitor's H=0 recollapse where the paper uses it; the two mass-blindnesses "on the same collapse" rather than "at the same
+  seam" (they sit at different markers, the horizon and the proper interval). The datings are two stated readings on two H0 inputs,
+  not a defect. The driving lines (315-318, 772: "transmitted across the kappa=0 seam", "living on the contracting side") go with
+  `P15`'s second turn, where the same canon question is read. **The open-language read is done (r7515)**: 20 sites, 10 ordinary
+  English, 9 pointed at P16's own stated precision limit, 1 owed (below).
 - `P17`: stale masthead; "past the wall"; "maximally symmetric S3"; the bare "NO free constant"; two polarity conventions.
 - `P18`: line 778 "continued through the seam"; 873-876 against 894-901 (where the Gowdy wave sits); 1508 "computed rather
   than met"; 1555 the parameter-count frame; 1841 a duplicate test presented as independent; 2114 "not the same seven"
@@ -501,6 +507,7 @@ crossing, `PO-92` §open), `P3` (`PO-92` at line 1222, `PO-93` §curvature), `P2
   mechanism, "argued, not yet proven through the full transfer" while the transfer is run; the lift's account, whose kernel
   exponent `P15` says is not settled (a factor, not a detail); the size of the polarisation source's pull on the reported
   configuration, not measured; the flux the seam radiates into the lap's future, not computed; `P18`'s base rate for the
-  theory-choice criterion (the cases where the same criteria misled not sampled), which `P6` sets as the discipline's first programme.
+  theory-choice criterion (the cases where the same criteria misled not sampled), which `P6` sets as the discipline's first programme; `P16`'s thermalization of the infall energy that sets the peak floor,
+  argued and robust to the four-order margin but not computed.
 - Close: strike `PO-86`, put `check_open_item_coherence` in CI, and reactivate 60, cc66 and 70 (and 71 if a
   formalisation row is open by then) on the frontier as it stands, the projection-distance adjudication first.
