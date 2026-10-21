@@ -23933,3 +23933,28 @@ to reach the read, and chasing that further would have been instrument work on a
 hand-kept annotation file exists for precisely the keys the tracer cannot decide, and using it is the
 prescribed route rather than a workaround.* **What is next:** unchanged — whether the radiation amplitude's
 sign reversal has any observable consequence, priced in its own file first.
+
+## ⛔⚑ `r7473+cc66.15` — **THE `fast` RED IS NOW `main`'s OWN AND IN A DIFFERENT STEP: `regen_grain_currency` IS STALE ON PRISTINE `main`, AND THE REPO'S OWN GENERATOR IS THE WHOLE FIX**
+
+`fast` failed again on `0ac536eeb`, and the job log had **no `⛔ FAILED:` line at all** — because the red is
+not in the text gates this time. The step conclusions name it: *"the register and view checks"* **failed
+while "the text gates" PASSED**, so `.13` and `.14` cleared the half that was mine and the earlier step is
+now the blocker. Running that step's own generator list, one of ten fails — **`regen_grain_currency
+--check`**, reporting *"grain currency block is stale in: THE_PLAN.md, THE_OPEN_PROBLEMS_LEDGER.md,
+OPEN_PROBLEMS_MAP.md, THE_WEAVE.md, THE_REGISTER.md"* — and **it is `rc=1` on a pristine detached worktree
+at `origin/main`, so `fast` is red on the base branch itself**: another seat's register landing without
+regenerating the derived block. ⇒ **Not mine, but the fix exists and is one command, so it is ported rather
+than reported**: `python3 scripts/regen_grain_currency.py`, which the gate itself names as the remedy. 24
+lines across the five files, **all of it the generator's output and none of it hand-edited** — which
+matters because one of those files is `THE_REGISTER.md`, whose rows are the observer's; the generator
+touches only its stamped block, and it stamped `current: r7469` *derived from the register's own rows*,
+which also closes the staleness `check_frontier_delta` had been reporting (*"the `current:` stamp reads
+r7467 while its own rows reach r7469"*) — again by generator and not by hand. **Validated the way a CI fix
+should be: the failure reproduced first (`rc=1` on my tree and on pristine `main`), then the same step's
+full ten-generator list re-run with no failures.** Then the `.104` rule on the output set: the five
+regenerated files' reader set is 25 gates, and **24 are green.** The one red is
+`check_open_item_coherence`, which is `main`'s own long-routed census item — it names seven rows opened
+after the `r7371` census and prints its own remedy as *"a census refresh (`69` reads the papers), never a
+declaration"* — and it appears **zero times in the whole workflow**, so CI never runs it and it cannot be
+this red. **What is next:** unchanged — whether the radiation amplitude's sign reversal has any observable
+consequence, priced in its own file first.
