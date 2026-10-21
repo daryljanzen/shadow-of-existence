@@ -10,6 +10,17 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ CAMPAIGN 49: ROW 62 `DONE` (`r7443+71.49`, `+71.58`). ⌗ DONE `109`; ONLY THE TWO CHARTABLE HALVES REMAIN
+
+Row 62's two data gates are closed (`probes/Row62Data.lean`, 38 theorems, standard axioms, `3217 s`). All ~40 000
+contraction entries are now Lean-computed. A `Nat` evaluator, proved equal to the contraction for every good
+pattern and bounded jet, checks each entry in about 25 ms, and every rank theorem is restated on the computed
+matrices. The six configurations' S³ integrals are proved in closed form by a general Euler-box engine, and all 48
+match the receipt. The registered p of `0.40` came true. The band was missed high (`2967` lines, because K's file is
+carried wholesale). With claim 1 complete since campaign 48, row 62 is `DONE`. The census is now `109` DONE and `2`
+`DONE (chartable half)` (65, 66). Their shared open half is the TT spectrum; campaign 51's part T is being
+re-run by 71.
+
 ## ✔ CAMPAIGN 50 COMPLETE: ROW 18 `DONE` (`r7443+71.50`, `+71.53`). ⌗ ROW `1 → 0`, DONE `108`
 
 Row 18's ROW object is built: the full `S₃` monodromy of the cubic's root cover (`probes/Row18Monodromy.lean`, 12
