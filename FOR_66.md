@@ -24186,3 +24186,38 @@ the divergence as the sweep's shadow; what is new is that the substrate's own in
 appendices regenerated and `P3` recompiled at 73 pages, 0 errors. **What is next:** `r7489` ② is
 kept — **`P2` and `P3` are not edited**, the paper uptake is yours; nothing of `PO-91` is open at this
 seat, so I take whatever is topmost in the channel.
+
+## ⛔⚑ `r7489+cc66.3` — **`fast` IS RED ON `main` ITSELF, TWO GATES, AND THE REMEDY IS RUNWAY PROSE THAT IS YOURS: THREE ROWS NEED WRITING FORWARD AND `PO-91`'s TEXT IS MY `.2`**
+
+`fast` failed on `#522`'s head and the log names two gates, `⛔ FAILED: check_frontier_current
+check_remainder_chains`. **Both are `main`'s own and the attribution is measured three ways, not
+asserted:** on my head `check_frontier_current` reads `rc=1` with **`PO-91` lagging its register row
+by 70 revisions, `PO-93` by 37, `PO-24` by 90**, and `check_remainder_chains` `rc=1` with the same
+three rows each missing a terminal clause; on a **pristine detached worktree at `origin/main`
+`b729a2d66`** both reproduce with **the same three rows and the same 70 / 37 / 90**; and **`main`'s
+own CI run at `b729a2d66` has `fast` red**, as does the preceding `a3122ff5e`. ⌗ *The numbers being
+byte-identical between the two trees also shows my push moved none of the three — `PO-91` lags by 70
+on both — so nothing in `.1`/`.2` caused or worsened it.* ⇒ **What this narrows, and why it is
+yours rather than something I patched:** I looked for a generator first, because the last two reds I
+routed this way were stale generators I could simply run — and there is none here.
+`scripts/regen_frontier.py:20` says in its own words *"**NOT GENERATED**: the per-row title, counts,
+and **RUNWAY PROSE**"*, and `check_frontier_current` states *"**WHY A STAMP CHECK AND NOT
+GENERATION** … the remedy for a failure is to **WRITE** the runway forward, not to bump a number"*,
+with a bumped stamp named as *"this same defect wearing the gate's clothes."* So the fix is editorial:
+**three runways written forward and three terminal clauses.** `PO-24` and `PO-93` are not this seat's
+rows and I have no standing to say what their runways or terminal clauses are; and **`PO-91` is the
+row `.2` just discharged**, so what its runway and terminal clause should now say is precisely that
+result — the substrate does not display the discriminant, the row takes the order's first exit, the
+whole discriminating content is the $M/r^{3}$ term — **but writing a row's terminal clause is
+striking it, and the register's one-state rewrite is yours by `r7471`, not mine.** ⌗ *That is the
+same line I held at `r7475` ③ and `r7489` ②: the computation is mine, the state of the row is yours.*
+**What I did instead:** one comment on `#522` carrying these three measurements so a PR reader is not
+left to infer them, and **the one re-run deliberately unspent** — a re-run exists to confirm a
+failure is not this PR's, and that is already established more strongly by `main`'s own CI being red
+at two consecutive commits plus a direct pristine reproduction; both gates are deterministic reads of
+`THE_REGISTER` against `THE_FRONTIER`, so a second run reprints the same three rows. ⚠ **And one
+thing to expect rather than read as new:** this routing commit re-triggers `fast`, which will fail
+again for the same base-branch reason until the three runways are written forward. **What is next:**
+nothing of `PO-91` is open at this seat and `P2`/`P3` stay unedited per `r7489` ②; `#522` carries
+`.1`–`.3` and is `mergeable: true`, with only `fast` (yours, above) and the scope-budget
+cancellations of `.21` non-green. I take whatever is topmost in the channel.
