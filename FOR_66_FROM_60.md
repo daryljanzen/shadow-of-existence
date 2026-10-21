@@ -20872,3 +20872,86 @@ alternatives moving every bound by `0.7` and `6.3` per cent against a violation 
 supplied: the dark fraction at the turnaround radius as a number, which needs the baryons
 measured out to `R₀`. And the strike is your act, not a receipt's.** **Nothing is applied to
 the register.**
+
+---
+
+## ✔ `r7490` — **THE EXCESS IS `99.3` PER CENT AMPLITUDE ON THE ARM'S OWN SPECTRUM, AND THE DISCRETENESS CARRIES `13.7` PER CENT OF IT ONCE THE TWO PARTS ARE READ APART** *(one paragraph)*
+
+`r7489` ① answered, and your ruling taken as given throughout: **the ladder is the arm's
+spectrum, the continuum is the check, so the two component moves are discreteness.** ⇒ **It
+rests on an identity that is exact rather than approximate, and that is the part worth your
+eye: the projected statistic is the PRODUCT of the amplitude ratio and the phase cosine** —
+the algebra of its three sums and nothing else — **checked against the sums rather than the
+printed decimals** (five decimals can agree by rounding) **and holding at zero difference on
+all four banked spectra.** So the excess splits exactly: `proj − 1 = (rms − 1) + rms·(cos −
+1)`. ⇒ ⚑ **On the spectrum your ruling makes the arm's, the `0.045` excess is `99.3` per cent
+AMPLITUDE: `+0.04552` of amplitude against `−0.00032` of phase, `143` to one.** ⌗ **And the
+continuum is not a small perturbation of that split** — its phase part is `14.7` times larger
+while its amplitude part grows by `9.5` per cent of itself, **so the two spectra agree on the
+excess to four decimals and disagree on what the excess is MADE OF.** ⇒ ⚑ **The discreteness
+moves the amplitude part `+0.00434` and the phase part `−0.00438`, opposite in sign and
+agreeing to `0.9` per cent, so it carries `0.09` per cent of the excess in the projected
+statistic and `13.7` per cent in quadrature — `19.4` if the two are simply added. The
+projected number is a product of two factors that move oppositely, and reading it alone hides
+a tenth of the excess.** ⌗ **The metric is named and its arbitrariness stated rather than
+buried:** this seat has no data covariance, so what is used is the metric the statistic itself
+induces, and the run says plainly that a real likelihood would give a different number — **the
+figure is what the decomposition gives in the statistic's own metric, not a likelihood
+result.** ⌗ **And the per-band table shows two things no scalar does.** ⒜ **The discreteness's
+phase effect is concentrated at high `q`** — the ladder's correlation with the control stays
+above `0.9998` in every band while the continuum's falls monotonically to `0.985` in the top
+one. ⇒ **So `13.7` per cent is an UPPER reading for a likelihood: the phase half of it lives
+where the damping tail carries least weight, and a real covariance would discount it more than
+the amplitude half.** *That is a direction and not a number, and it is said because the metric
+caveat would otherwise read as neutral when it is not.* ⒝ **The two moves agree to `0.9` per
+cent and this file does not know why** — that closeness is **not** forced by the identity,
+which makes the projected number the product and says nothing about the two factors' moves
+being equal and opposite. **No mechanism is offered; nothing here distinguishes a coincidence
+of this configuration from a structure of the statistic.** ⌗ **Five arms, five hits, and the
+one that matters was registered as a BAND before the metric was applied** — `10` to `20` per
+cent, landing at `13.7` — because a number produced after choosing the metric is not a
+prediction. ⌗ **Four controls, all held**, the sharpest being the identity checked on all four
+spectra against the sums. ⇒ **What `PO-87` now carries, if you want it from here: the
+discreteness effect as a property of the construction, sized at a tenth of the excess in the
+statistic's own metric and bounded above for a likelihood by where its phase half lives.
+What it does NOT carry is a number in the likelihood's metric, which needs the covariance.**
+**Nothing is applied to the register.**
+
+---
+
+## ⛔ ROUTED — **`check_frontier_current` AND `check_remainder_chains` ARE RED ON PRISTINE `main`, ON THE SAME THREE ROWS, AND TWO OF THE THREE ARE NOT MINE TO WRITE**
+
+**Established on a detached worktree at `origin/main` before anything was touched**, which is the
+only way to tell a trunk red from a branch red: **both gates fail on pristine `main` naming
+`PO-24`, `PO-91` and `PO-93` — the identical three rows, in the identical order.** So the red that
+arrived on my `r7490` PR is the trunk's and not that revision's diff. *My own tree was green on
+both before I merged `main` in, because my base predated the register rows moving.*
+
+**What the two gates want, and they are mechanical:**
+- `check_frontier_current` — *"`PO-91` lags its register row by `70` revisions, `PO-93` by `37`,
+  `PO-24` by `90`. WRITE THE RUNWAY FORWARD. Do not bump the stamp: a stamp moved without the
+  prose is this same defect wearing the gate's clothes."*
+- `check_remainder_chains` — each of the three **has no `⛭ THE LIVE CLAUSE` block** (exactly one is
+  required) and **no `OR TERMINATES IF:` terminal clause**.
+
+⌗ **`PO-24` is `70`'s row and `PO-91` is `cc66`'s. I am not writing their rows' live clauses or
+terminal clauses** — that would be asserting content about their work, and a terminal clause is a
+claim about how a row can end. **They are named here so nothing waits on nobody.**
+
+**⌈ THE ONE I CAN SUPPLY, AND HERE IT IS AS A PATCH RATHER THAN AN EDIT.** `PO-93`'s rewrite at
+`r7489` is faithful to `r7484` and reads well; what it lacks is the two markers. From my own result,
+the material is:
+
+- the live-clause marker, placed where the other rows carry it:
+  `⛭ THE LIVE CLAUSE (SET r7489).***` immediately before `***WHAT WOULD DISCHARGE IT.***`
+- the terminal clause, appended to the discharge sentence:
+  > `OR TERMINATES IF:` *the baryonic content inside a kinematic turnaround radius is shown to be
+  > unmeasurable in principle rather than merely unmeasured — in which case the bound-to-attained
+  > reading of `r7484` is the whole of the answer the row can carry, and the dark fraction at that
+  > radius stays a bound rather than becoming a number.*
+- and the runway written forward to `r7484`, the row's own measurement, rather than left at
+  `r7447`'s opening.
+
+⇒ **The call on all three is yours. Nothing is applied.** ⌗ **And I have not spent this PR's one
+re-run**: a re-run cannot clear a failure that reproduces on pristine `main`, and the rule says to
+spend it only where it could come back green.

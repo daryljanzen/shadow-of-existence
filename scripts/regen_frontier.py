@@ -145,7 +145,7 @@ EST = {
         'something about observation that the symmetric substrate alone does not, the optical additions of P7 being the '
         'nearest existing instance of that shape. Terminates as a stated limit if the asymmetry is shown exhausted by '
         'the chart, which is the likely exit on this corpuss own reading -- and the row exists so that it is reached '
-        'by argument rather than by nobody asking. '),
+        'by argument rather than by nobody asking.  r7489-r7495: ONE STATE. cc66s r7463 measured it: the vantage is fixed by a measurement, the asymmetry is invariant, and a tidal discriminant exists on the swept chart. LIVE (r7495): one computation on P3s substrate, whether the substrates own invariants fail to display that discriminant. Discharged if they do, so the asymmetry predicts something the symmetric substrate does not; TERMINATES as a stated limit if they display it, and P2 says so.'),
     'PO-90': ('the skys selective suppression of l=2 alone against a floor that starves l=2 and l=3 together',
         2, 2, 3, 'a measurement of the sectors own cosmic variance at the l=2-to-3 ratio',
         'r7393: OPENED from the residue of 69s census, and it is the sharpest kind of item there is -- a measured '
@@ -7004,7 +7004,7 @@ EST = {
         'cluster or group with its turnaround radius located kinematically, from the motions rather than by a '
         'fixed-overdensity definition, together with a baryonic mass measured independently of that radius. The '
         'instrument half is built and shared with PO-50 -- the bound-to-attained factor is parameter-free and the '
-        'guard is four-way -- so what is missing is the sample and not the reading of it.'),
+        'guard is four-way -- so what is missing is the sample and not the reading of it. r7489-r7495: ONE STATE. 60s r7484 answered it in direction on one cluster: four kinematic turnaround radii, chosen by pre-registered criteria, all exceed the baryon-only bound by 19 to 33 per cent and sit inside the dynamical-mass bound, so the radius tracks the dynamical mass unless that cluster is baryon-dominated inside its own turnaround radius. LIVE (r7495): a baryonic mass measured out to the kinematic radius, so the dark fraction there is a number and not a bound. TERMINATES if the dark fraction at that scale is settled elsewhere, the ratio then discriminating nothing. P18 and P3 carry it in their turns.'),
     'PO-50': ('the turnaround measurement with turnaround masses', 1, 1, 3, None,
         'OPENED r6861 as PO-36 remainder. That row is struck: the radius tracks the dynamical mass, entailed rather '
         'than observed. What its own measurement could NOT do is discriminate -- the ensemble ratios run 1.20 to 2.33 '
@@ -9209,7 +9209,7 @@ EST = {
         'against the weaker bound the wash is stated at. Carried forward and not re-run: the Gaussian residual to a '
         'correlation of 1.000000, the tilts fixed seven-tenths share, the 6.3x window dependence, the shape residual '
         'as an upper bound. AND THE FINDING BEYOND THE ROW: for item 2 the three papers were already coherent with one '
-        'another and already right, and the register was the sole stale artefact -- the first such case of the phase. '),
+        'another and already right, and the register was the sole stale artefact -- the first such case of the phase.  r7489-r7495: ONE STATE. 70s r7471 measured the tilt off the damping tail, n_s = 0.9611 +/- 0.0063, three times narrower than the displacements spread: the two wide windows show no tension and every window from l=700 shows 2.9 to 7.1 sigma. That is a prediction and not yet a tension: a flat-LCDM fit over the tail windows alone should return n_s 0.018 to 0.044 above 0.9611. LIVE (r7495): that tail-window fit on the real sky, and the factor of three in the signatures magnitude. TERMINATES if the tail fit cannot decide (interval no narrower than the spread, or the displacement shared with omega_b), the signature then stated real and untestable against the tilt.'),
     'PO-43': ('the Weyl-squared coefficient at second order in the shear', 1, 1, 5, None,
         'r6415/r6435/r6471: the coefficient is COMPUTED -- 1/60 in units of (4pi)^-2, exactly twice a real minimally co '
         'upled scalars, the tower being two such degrees of freedom by P10s own description. Stated on the PHYSICAL-M '

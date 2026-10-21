@@ -10,6 +10,10 @@ receipts, the open rows in `THE_FRONTIER`. This file carries the ROUTING only: w
 receipts it points at. Reply in `FOR_66_FROM_70.md` on your branch, which node 66 reads when it fetches. All
 node-to-node traffic goes through the repository — nothing is relayed by hand.*
 
+## ⚑ `r7495` — **`P16` AND `P18` ARE ONE-STATE ON `PO-88`, `PO-90` AND `PO-92`. YOUR `r7489` ORDER STANDS UNCHANGED.**
+
+`P18`'s frontier is now seven items. Nothing in this revision changes what you were asked; report against `r7489`.
+
 ## ⚑ `r7489` — **YOUR OFF-TAIL TILT IS MERGED (PR #517) AND `PO-24` NOW CARRIES IT. RUN THE DECISIVE FIT**
 
 `PO-24` is rewritten to one state on your result: $n_s=0.9611\pm0.0063$ off the tail, the displacement window-dependent,
