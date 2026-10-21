@@ -132,7 +132,22 @@ _pin_map = {(r[0], r[1]): r[5] for r in
 _pin_agree = sum(1 for r in CONV if _pin_map.get((r[0], r[1])) == r[5])
 _live = {(r[0], r[1]): r[5] for r in BASE}
 _in_place = [r for r in CONV if (r[0], r[1]) in _live and _live[(r[0], r[1])] != r[5]]
-_retired = [r for r in CONV if (r[0], r[1]) not in _live]
+# ⛭ r7475 (69): A THIRD WAY A ROW MAY LEAVE, AND IT IS NOT A RE-VERDICT.  Stride item 4's ruling rewrote
+#   P14's content paragraphs, so B8's two pinned sentences no longer exist and B8 was re-keyed onto the new
+#   wording AT THE SAME SITE WITH THE SAME VERDICT.  That is a pin repaired, as ⓶ allows, but by a paper
+#   rewording rather than by this table's REPAIR-OWED list.  Named here, row by row, and checked: the new
+#   key must be live and carry the old key's verdict, so a re-verdict hidden in a re-key still turns red.
+REKEYED = {
+    ('receipts/L221_the_bridge/B8_po4_targets_have_opposite_verdicts.py',
+     '"the undelivered content is two items and not three"'):
+        '"what the content needs from outside is two items and not three"',
+    ('receipts/L221_the_bridge/B8_po4_targets_have_opposite_verdicts.py',
+     '"not three.} What remains genuinely outstanding is the gauge group and the multiplet structure"'):
+        '"the gauge group and the multiplet structure, which the Standard Model supplies and measurement fixes"',
+}
+_rekeyed_ok = [r for r in CONV if (r[0], r[1]) in REKEYED
+               and _live.get((r[0], REKEYED[(r[0], r[1])])) == r[5]]
+_retired = [r for r in CONV if (r[0], r[1]) not in _live and r not in _rekeyed_ok]
 _owed_tbl = sum(1 for r in CONV if r[5] == 'REPAIR-OWED')
 _owed_now = sum(1 for r in MINE if r[5] == 'REPAIR-OWED')
 print(f"      at the pin {TABLE_PIN}: {_pin_agree} of {len(CONV)} agree;  live now: "
@@ -292,7 +307,7 @@ gate(f"Ⓒ④ ⛔ AND NO VERDICT OF THEIRS IS CHANGED: all `{len(EXT)}` rows sti
      f" baseline, because they are another seat's repairs and a measurement that overturns `46` of them"
      f" is an order and not a conversion.  ⌗ *The prefix is this seat's on the board, so the restraint"
      f" is a choice and it is stated as one*",
-     all(_bmap.get((r[0], _RECUT.get((r[0], r[1]), r[1]))) == 'EXTENDED' for r in EXT))
+     all(_bmap.get((r[0], REKEYED.get((r[0], _RECUT.get((r[0], r[1]), r[1])), _RECUT.get((r[0], r[1]), r[1])))) == 'EXTENDED' for r in EXT))
 
 A = STATS['alignment_contrast']
 gate(f"Ⓒ⑤ ⛭⛭⛭ ONE INSTRUMENT, TWO POPULATIONS: `{A['this_seats_171_clipped']}` of this line's"

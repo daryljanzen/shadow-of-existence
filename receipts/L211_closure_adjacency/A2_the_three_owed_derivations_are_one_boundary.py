@@ -97,11 +97,17 @@ def main():
     #   ⇒ *** Each is extended to the clause that names its subject, over a markup-normalised read
     #     where the paper sets the key word in emphasis.  One site each. ***
     _p15u = re.sub(r'\\(?:emph|textit|textbf)\{([^{}]*)\}', r'\1', p15)
-    _OWES = ('Open: the derivation---as against the measurement---of $A_s$ and $n_s$')
-    check('P15 now owes only "Open: the derivation---as against the measurement---of $A_s$ and '
-          '$n_s$" -- asserted with the `Open` that makes it the list, in place of a span opening '
-          'mid-clause -- the inherited datum having left the list as closed (r6719)',
-          _OWES in _p15u
+    # ⛭ r7475 (69), stride item 3 RULED: the strike of PO-31 is upheld and the two are NOT owed.
+    #   P15's abstract no longer lists them as Open; it names them boundary data, measured, whose
+    #   derivation would be a bonus and not a debt -- P7 sec:inherited-datum's own words.  This
+    #   receipt's reading (dimensionless, so not from the substrate) is what that ruling rests on.
+    _OWES = ("$A_s$ and $n_s$, measured as the progenitor's boundary data in the sense flat "
+             "$\\Lambda$CDM measures its baryon-to-photon ratio")
+    check('P15 names $A_s$ and $n_s$ "Boundary data, and not a debt ... measured as the '
+          'progenitor\'s boundary data" (r7475, stride item 3) -- no longer an Open list -- '
+          'the inherited datum having left that list as closed (r6719)',
+          _OWES in p15
+          and 'Open: the derivation---as against the measurement---of $A_s$' not in _p15u
           and 'as against the measurement---of $A_s$, $n_s$, and the inherited datum' not in p15)
     _HANDOVER = ('$n_s$ and $A_s$ are inherited, fixed by the progenitor collapse---the same '
                  'handover that fixes $\\rho_r/\\rho_m$ and the light-element abundances---and not '

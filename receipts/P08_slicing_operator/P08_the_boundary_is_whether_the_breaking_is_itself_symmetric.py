@@ -101,21 +101,27 @@ for k, v in BUDGET.items():
     print(f"    {k:<38} {v}")
 print("  -> the budget SHRINKS; PO-30 asks whether the rest can follow      OK")
 
-# --- (4) and the row stays open, on the corpus's own wording ----------------------
+# --- (4) and P14 bounds its own marking, on the corpus's own wording --------------
 # Not asserted against a literal: READ FROM P14 itself, so the check fails if the
 # paper's bounding clause ever goes away.
+# r7475 (69), stride item 4 RULED: the content is fixed where GR's is fixed -- by the
+#   Standard Model and by measurement -- and P14 now says so in place of "does not say a
+#   geometric route is impossible".  The bound this clause watches is the same bound: the
+#   constraint closes one route and claims no construction of the content.
 import os
 _p14 = os.path.join(os.path.dirname(os.path.abspath(__file__)),
                     '..', '..', 'corpus', 'matter_sector_paper.tex')
 _src = open(_p14, encoding='utf-8', errors='replace').read()
 assert ("\\emph{Read this way the constraint proved in~\\cite{JanzenBoundary} is informative rather than "
-        "prohibitive.} It does not say that a geometric route to the representation content is impossible"
+        "prohibitive.} It closes the connected isometry route and identifies the single component the "
+        "obstruction cannot reach"
         ) in ' '.join(_src.split()), \
     "P14 must still bound its own marking, or this receipt's clause (4) is stale"
-assert "We claim no construction here." in _src, "P14's own disclaimer must still stand"
+assert "We claim no construction of that content here" in ' '.join(_src.split()), \
+    "P14's own disclaimer must still stand"
 print("\n  P14 bounds its own marking: the constraint is 'informative rather than")
 print("  prohibitive', and 'we claim no construction here'.")
-print("  -> nothing here closes the row                                     OK")
+print("  -> the content is fixed outside the geometry, and P14 says where     OK")
 
 print()
 print("ESTABLISHED: the boundary between what the geometry supplies and what it marks")
