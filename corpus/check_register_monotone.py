@@ -104,6 +104,8 @@ DECLARED = {
                             'full prior row is at the parent'),
     'PO-24': ('e496e66559', 'r7487 rewrote the live row to one state on 70\'s off-tail tilt; the full '
                             'prior row, 19,853 characters, is at the parent'),
+    'PO-91': ('28340072bb', 'r7489 rewrote the live row to one state on cc66\'s r7463 result; the '
+                            'full prior row is at the parent'),
 }
 
 ROW = re.compile(r'\| ~?~?\*\*((?:PO|L|C)-?\d+)\*\*')

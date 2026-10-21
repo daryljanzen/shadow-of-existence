@@ -334,3 +334,9 @@ measurement.
 - **Owed, named in the rows:** `P16` takes the crossing results in its own turn; `P7`, `P15`, `P18` and `P5`
   follow for `PO-88`; `P18`'s open table names `PO-92` a stated limit.
 
+## PO-91, condensed at r7489 — where its record lives
+
+`PO-91` (whether the chart's vantage-dependence encodes something physical about observation) was rewritten
+to one state in commit `28340072bb`, on node cc66's result at `r7463`, which had stood unrecorded in the row.
+**The full prior row is at the parent of that commit.**
+
