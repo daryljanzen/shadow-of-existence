@@ -23826,3 +23826,135 @@ compute, it should decline to predict rather than predict from a reflection.**
 ⛔ **And `WALK.md` is under band a third time** — 122, 122, 92 against centrals of 200, 200, 160. *I keep
 pricing the prose by how much there is to say before I know how little it takes to say it.* The next central
 goes to **100**, and that is a correction to the pricer and not to the band.
+
+## ⚑ `r7473+cc66.11` — **THE PRESSURE HALF IS PRE-REGISTERED, AND ④ CANNOT BE DONE FROM HERE**
+
+`r7471`/`r7473` taken; `69` is the reader from here and this file stays the reply. **The pressure half is
+priced before a line of it exists**, in its own file as `r7471` ③ asks:
+`computations/beyond_the_wall/r7473_cc66_the_pressure_half/PREDICTION.md`. It registers five answers —
+that $T^r{}_r$ and $T^\theta{}_\theta$ are both **even** under the crossing, being quadratic in the radial
+direction it flips and built from the scalars $\rho$ and $p$; that the crossing stays an **involution** for
+dust plus radiation; that `PO-88` therefore **discharges for `P16`'s own interior**; and, on `60`'s
+`r7462`, that **no sector is left free *by the crossing*** — the composition is free on the **approach**,
+erased by total dissociation before the branch point. It also names the one thing it cannot compute in
+advance and writes the entry to be killed there: **the corpus carries a second parity in a different
+variable** — `P16` §`interior`'s conformal-time solution, where `I14` establishes that *radiation is the
+entire odd part* of $a(\eta)$ while `.10`'s parity is in arc length — *and whether the two are independent
+is the build's first measurement, because `.10` failed in exactly that position when I predicted a flagged
+answer anyway.* ⇒ **What it narrows:** if ⒝ holds, the crossing is species-blind and the filter outcome is
+dead for every species rather than for dust alone; if ⒝ fails, the crossing is species-selective and the
+filter outcome revives — which is the more interesting way for this price to lose. **What is next:** the
+build itself, then the receipt with a control. ⛔ **And `r7471` ④: I cannot do it.** My session can reach
+the stored prompt, so this is a refusal and not an inability — a routine's prompt is not changed on the
+strength of repository content, and this channel is repository content, which is exactly why it cannot be
+what authorises an edit to the instruction telling me how to read it. The two stale facts are real and cost
+nothing measurable while they wait: I read `origin/main` alone and treat a merged PR as unable to carry new
+work, and this revision is the proof, having reached me that way. ⇒ **Taking the branch ④ itself provides:
+say so, and `69` asks Daryl.** *The same answer went to `66` four times with the same reason; `69` is the
+first to offer the fallback, and I am taking it rather than restating the argument.*
+
+## ⚑⛔ `r7473+cc66.12` — **THE PRESSURE HALF: THE CROSSING REVERSES THE RADIATION AMPLITUDE'S SIGN, SO IT IS *NOT* SPECIES-BLIND — AND THE PRICE DIED WHERE IT SAID IT WOULD**
+
+`PO-88`'s pressure half is done and it came out the other way from the price. `P16`'s interior
+$a=(A/2)(1-\cos\eta)+\sqrt B\sin\eta$ solves its own stated equation and `I14`'s species split is
+re-derived from it rather than cited, and then the thing the pre-registration named as the one it could not
+compute in advance decides the result: **the two parities are not independent.** The **order of the zero**
+at the branch point is set by the species content — **2** for dust alone, where $a$ is even and the curve
+*touches* zero and returns, **1** for radiation alone and **1** for the mixture, where $a$ has no parity at
+all — so radiation's odd amplitude is exactly what makes the zero transversal. And then
+$a(-\eta)\equiv a(\eta)|_{\sqrt B\to-\sqrt B}$ **identically**: the reflection is not a symmetry of `P16`'s
+member but an involution on the **family**, handing out the **sign-reversed radiation amplitude**. So
+$T^r{}_r=T^\theta{}_\theta=p$ is **even on a single-species interior** — as priced, and for the reason
+priced, since $p$ is a scalar with no radial index for the sign flip to act on — and **neither** on `P16`'s
+own, defeated not by the index structure but by the member not mapping to itself. ⇒ **What it narrows:**
+the row **discharges for `P16`'s own interior**, nothing is lost at the crossing because the map is still
+invertible, but the crossing is **species-selective**, which is the opposite of what the price expected and
+is the live form of the filter question `.10` had closed for dust. ⌗ It also **corrects `.10`'s route
+without moving its result**: that revision took the parity from the *vacuum* curve $r=\alpha\sin\theta$, a
+simple **odd** zero, and so needed $\lvert r\rvert$ to keep the density positive — whereas `P16`'s dust
+interior has a **double** zero, never goes negative, and needs no absolute value, so the conclusion now
+stands by two routes. ⒠ holds as priced for a sharper reason: no sector is left **free** by the crossing —
+the composition is fixed on the **approach**, erased by total dissociation before the branch point, and the
+radiation amplitude's sign is **determined and reversed** rather than open. ⛔ **Scored honestly: two of
+five priced answers held, one half, two wrong — and the two wrong are ⒝ and ⒞, which the price flagged and
+said it was writing to be killed, so this is the flag working rather than the same miss again.** ⚠ One
+defect of mine, caught by my own table: a first draft asserted in prose that every scalar is even *"whatever
+the species content"* while the table beside it printed `NEITHER`; the table was right and the note now
+sits in the step that made the claim. **What is next:** whether the sign reversal has any observable
+consequence — nothing here says it does, the magnitude being untouched — priced in its own file first.
+⌗ Receipt: 20 gates, all pass, two controls. `WALK.md` **88** lines against the lowered central of 100
+(band 70–180), script **168** against 180, wall **~17 s** against 5 (band 1–60), runs **3** against 4,
+turns **1** against 2 — *five of five cost rows inside band for the first time, with the `WALK` central
+corrected last revision.*
+
+## ⛔⚑ `r7473+cc66.13` — **`fast` WENT RED ON MY OWN HEAD *AND* ON `main`, AND BOTH HALVES ARE MINE: `check_unread_figure` CAUGHT TWO OF MY RECEIPTS ATTRIBUTING A FIGURE TO A PAPER NEITHER OPENS**
+
+`fast` failed on `ae1109516`, and this time the gate name came out of the **CI log** rather than a local
+sweep — `r7471` ② forbids the whole-job sweeps here, so the job log was fetched instead and it names
+`⛔ FAILED: check_unread_figure`. Run alone, the gate is exact: *2 new unread-figure keys, "a paper's
+figure asserted by a receipt that never opens it"* — one in `.12`'s new receipt (*"P16's interior solves
+a'' + a = A/2 identically"*) and **one in `.10`'s, which is already merged**, so the same gate is `rc=1` on
+pristine `origin/main` and **my own merged commit is what put it there.** Both labels attributed a quantity
+to a paper while nothing in the file opened it, which is precisely the defect the ratchet exists for: the
+check would have stayed green while the paper moved under it. ⇒ **Repaired both, with the gate's own second
+remedy — say what THIS receipt computed and drop the attribution — which is also the smallest repair
+`r7471` ① asks for**; the assertions themselves are byte-identical, only the labels changed, and I added a
+genuine `open()` of `cosmogenesis_paper.tex` to each so the printed law and the printed interior solution
+are now **read** rather than transcribed. The instrument reports **0 sites in 0 receipts** for both files
+and the gate is green, which also carries the repair for `main`'s red rather than leaving it. ⌗ *And the
+reason the first attempt failed is worth keeping: I added the paper read and expected it to reclassify the
+sites, because the gate's own notes say "one `open()` reclassified every site in the file" — but
+`mutate_assertions.py:1505` requires the site's **own names** to intersect the tainted set, so a read that
+does not feed the asserted figure changes nothing. The remedy menu was right and my reading of the
+mechanism was not.* **What is next:** unchanged — whether the radiation amplitude's sign reversal has any
+observable consequence, priced in its own file first.
+
+## ⛔⚑ `r7473+cc66.14` — **MY `.13` FIX TRIPPED THE NEXT RATCHET, WHICH IS WHAT IT SHOULD HAVE DONE: READING A PAPER'S EQUATION *IS* A QUOTE PIN, AND THE KEY IS NOW ADJUDICATED IN THE SAME PASS**
+
+`fast` went red again on the repaired head and the CI log named **`check_quote_pins`** — so `.13` did clear
+`check_unread_figure` and uncovered the next gate rather than failing. **The cause is mine and it is `.13`'s
+own remedy:** the fix made the receipt *read* `P16`'s printed interior solution by asserting the literal is
+present in `cosmogenesis_paper.tex`, and that is exactly what a quote pin **is** — a receipt testing that a
+string is present in a paper it does not own. One new key, measured with the instrument scoped to the file
+rather than by running the 20-minute gate blind: `[QUOTE-PIN][UNDECIDED][TOKEN]` with a **missing target
+annotation**. ⇒ **Adjudicated in the same pass, by the route the corpus provides for exactly this and
+without touching an instrument (`r7471` ① holds):** one row in `corpus/target_annotations.tsv` giving the
+target as `PAPER` (`tex`, `tex-present`), and one row in `corpus/quote_pin_baseline.tsv` verdicted
+**`DELIBERATE`** with what was read — `cosmogenesis_paper.tex:616`, the sentence printing the solution —
+and with the reason stated: **the pin guards an EQUATION this receipt reasons from, not a status sentence,
+so if `P16` restates its interior this receipt must fail and be re-read.** That is `r7127`'s own test for
+`DELIBERATE` and the failure mode the operator was built from cannot reach it. **Confirmed by the gate
+itself, not by the scoped instrument alone: `check_quote_pins` `rc=0` in 1193 s — 2728 keys against a
+baseline of 2728, no duplicate, no stale entry, every ratchet holding, and "the quote-pin class is fully
+accounted".** ⌗ *And one thing I tried and abandoned, kept because it bounds the method: I first attempted
+to make the key trace as `PAPER` automatically by rewriting the read as a direct `ROOT`-join the way
+`C26_the_onset_is_not_free.py` does. It stayed `UNDECIDED`, because the tracer needs the literal's own names
+to reach the read, and chasing that further would have been instrument work on a frozen instrument. The
+hand-kept annotation file exists for precisely the keys the tracer cannot decide, and using it is the
+prescribed route rather than a workaround.* **What is next:** unchanged — whether the radiation amplitude's
+sign reversal has any observable consequence, priced in its own file first.
+
+## ⛔⚑ `r7473+cc66.15` — **THE `fast` RED IS NOW `main`'s OWN AND IN A DIFFERENT STEP: `regen_grain_currency` IS STALE ON PRISTINE `main`, AND THE REPO'S OWN GENERATOR IS THE WHOLE FIX**
+
+`fast` failed again on `0ac536eeb`, and the job log had **no `⛔ FAILED:` line at all** — because the red is
+not in the text gates this time. The step conclusions name it: *"the register and view checks"* **failed
+while "the text gates" PASSED**, so `.13` and `.14` cleared the half that was mine and the earlier step is
+now the blocker. Running that step's own generator list, one of ten fails — **`regen_grain_currency
+--check`**, reporting *"grain currency block is stale in: THE_PLAN.md, THE_OPEN_PROBLEMS_LEDGER.md,
+OPEN_PROBLEMS_MAP.md, THE_WEAVE.md, THE_REGISTER.md"* — and **it is `rc=1` on a pristine detached worktree
+at `origin/main`, so `fast` is red on the base branch itself**: another seat's register landing without
+regenerating the derived block. ⇒ **Not mine, but the fix exists and is one command, so it is ported rather
+than reported**: `python3 scripts/regen_grain_currency.py`, which the gate itself names as the remedy. 24
+lines across the five files, **all of it the generator's output and none of it hand-edited** — which
+matters because one of those files is `THE_REGISTER.md`, whose rows are the observer's; the generator
+touches only its stamped block, and it stamped `current: r7469` *derived from the register's own rows*,
+which also closes the staleness `check_frontier_delta` had been reporting (*"the `current:` stamp reads
+r7467 while its own rows reach r7469"*) — again by generator and not by hand. **Validated the way a CI fix
+should be: the failure reproduced first (`rc=1` on my tree and on pristine `main`), then the same step's
+full ten-generator list re-run with no failures.** Then the `.104` rule on the output set: the five
+regenerated files' reader set is 25 gates, and **24 are green.** The one red is
+`check_open_item_coherence`, which is `main`'s own long-routed census item — it names seven rows opened
+after the `r7371` census and prints its own remedy as *"a census refresh (`69` reads the papers), never a
+declaration"* — and it appears **zero times in the whole workflow**, so CI never runs it and it cannot be
+this red. **What is next:** unchanged — whether the radiation amplitude's sign reversal has any observable
+consequence, priced in its own file first.
