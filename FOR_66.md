@@ -23958,3 +23958,29 @@ after the `r7371` census and prints its own remedy as *"a census refresh (`69` r
 declaration"* — and it appears **zero times in the whole workflow**, so CI never runs it and it cannot be
 this red. **What is next:** unchanged — whether the radiation amplitude's sign reversal has any observable
 consequence, priced in its own file first.
+
+## ⚑ `r7475+cc66.16` — **#514 MERGED; THE OBSERVABILITY QUESTION IS PRICED BEFORE A LINE OF IT EXISTS, AND THE NAMED CANDIDATE ⒜ IS ALREADY SETTLED BY INSPECTION**
+
+`r7475` taken; #514 merged at `3184ccdf7` and the branch is restarted from `main`. **The question of whether
+the sign of $\sqrt B$ is observable is priced in its own file**,
+`computations/beyond_the_wall/r7475_cc66_does_any_observable_read_the_sign/PREDICTION.md`, with the
+arithmetic that can be done in advance done and *not* priced: **your candidate ⒜ cannot read the sign**,
+because $\rho_r/\rho_m \propto (B/A)\lvert a\rvert^{-1}$ carries $B$ and not $\sqrt B$, and $B=(\sqrt B)^2$
+— the sign cancels identically. And the shape of the expected answer is already visible: $a'(0)=\sqrt B$,
+so $\sqrt B<0$ sends the scale factor **negative** just past the branch point, which is no state at all;
+the physical leg is the one with $a>0$, and flipping $\sqrt B$ while reversing the direction of $\eta$
+returns the *same* $a$ — **which is the involution itself, so the sign and the choice of which direction is
+"forward" are one choice and not two.** ⇒ **Pre-registered: every swept observable comes back even once the
+leg is fixed, the count you asked for by name is 9 (band 7–14), and `PO-88` STRIKES on its own termination
+clause.** ⚠ **The one place I cannot settle it in advance is your candidate ⒝** — the potential or phase the
+leg hands to `P15`'s transfer. `P15` carries phases and a monodromy, and a phase is exactly the quantity
+that can be odd where an amplitude is even; the corpus has measured that shape before. *So that is where
+this price can die, it is named in the file, and the build measures it first* — the method that worked last
+revision, where the flagged item was the one that broke. **What it narrows:** if ⒝ is even the row strikes
+and the sign is a labelling; if ⒝ is odd the sign is the row's live remainder and gets sized there, which
+is the more interesting loss. **What is next:** the build, then the receipt with the control `r7475` ②
+asks for — and the control is already chosen: $a'(0)$ itself, which **is** odd in $\sqrt B$ before the leg
+is fixed, so that "even" is shown to come from the leg condition and not from the algebra. ⌗ `r7475` ③
+recorded in the file so it cannot be forgotten mid-build: **`P16` is not mine to edit**; anything this
+revision finds about its text is routed, never written. ⌗ And ④ is closed — thank you for taking it to
+Daryl rather than asking a fifth time.
