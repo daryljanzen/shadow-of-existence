@@ -20625,3 +20625,61 @@ you want it from here: your `P18` question — why the construction puts its sca
 distances on different rates — is the live one, and the only thing I would add first is
 whether the amplitude half's `9.6` per cent is convergence or configuration, which one more
 continuum run on the control arm would separate. **Nothing is applied to the register.**
+
+---
+
+## ✔ `r7480` — **THE AMPLITUDE HALF IS CONVERGED, AND THE DISCHARGE RELOCATES THE NINE PER CENT RATHER THAN DISSOLVING IT** *(one paragraph)*
+
+Taken as this seat's own next step on `PO-87`'s workable half, because `r7476` left a
+qualification on **its own** result rather than on the order's: the coverage qualification
+closed on the projected statistic but closed by a cancellation, so nothing yet said the
+components were converged. ⛔ **And the follow-up I routed to you was wrong, which reading
+the instrument showed before a run was spent:** I proposed one more continuum run on the
+control arm, and the k-grid's ladder branch is guarded by the arm name, so the control arm
+is **already** the continuum and the knob is a no-op on it — that run would have measured
+nothing and returned a null that looked like a result. The knob is the mode count, so the
+run is `r7476`'s own invocation with it doubled: `5,094` modes at `8.0` points per Bessel
+period against `4.0`, a density ratio of exactly `2.000`, `62` minutes, banked with its
+log. **Doubling the sampling moves the projected statistic by `+4.07e-09`, the amplitude
+ratio by `+1.24e-09` and the phase cosine by `+2.70e-09` — zero to five decimals and zero
+at the ninth — so `4.0` points per period IS converged for both components and `r7476`'s
+two numbers are the resolved ones; the component qualification discharges.** ⌗ **But read
+at the level of the spectrum the two steps are five orders of magnitude apart** — the
+ladder-to-continuum change is `6.46e-02` at worst and `2.27e-02` in the mean, the doubled
+sampling `6.43e-07` and `4.61e-08` — **so the whole gap between the ladder and the
+continuum is the gap between two summand sets, a discrete physical ladder and a continuum,
+and not a numerical property of either.** The instrument's own note at the k-grid holds
+that the CR ladder *is* the object rather than an approximation to an integral; **if that
+stands, the ladder's `1.04552` is the arm's number, the continuum is the check — which is
+how `r7476` used it — and the `9.6` per cent is the measured price of discreteness, a
+modelling commitment of the row and not an error bar of the instrument.** ⇒ **Which of the
+two the row should carry is yours to rule, and it is the one thing here I am not deciding:
+a convergence run can only settle whether numerics defers the choice, and it settles that
+it does not.** ⌗ **Six controls, and the one this result needs most was added after the
+registration and is declared as added:** the components came back *equal* to five
+decimals, and `r7468` is the precedent for what that can mean, so the artefacts are shown
+to be different files by digest and their spectra shown to differ by `6.43e-07` — **the
+zero is a measurement, not a file read twice**; the configuration is proved from what the
+artefacts carry against **both** references at `0.000e+00`; the denser path is proved taken
+from the instrument's own log; the statistic reproduces all four of its source's printed
+rows to `2.97e-05`; one registered control was `r7468`'s phase-spacing guard carried across
+out of habit and is reported **NOT APPLICABLE**, because this statistic takes no phase
+unwrap and a control carried from another instrument is not a control. ⌗ **Three arms hit
+and two came back VACUOUS rather than missed:** both were registered on the presumption
+that a second step would exist to take the sign of, and it does not — scoring a sign test
+on `1.2e-09` would be reading a verdict out of an empty set, so they are named as a third
+outcome rather than counted as misses. **Nothing is applied to the register.**
+
+⛔ **One defect found while banking `r7480`, and it was already true of `r7476`:** that
+receipt says the run and its log are banked beside it, and its own control **reads** that
+log — and the log was never banked. The repository's ignore rule carries `*.log`, so the
+file sat on disk, was read by the control, and was excluded from every commit, which
+`git status` reports by simply not mentioning it. **A control that reads a file the
+repository does not carry is not reproducible from the repository, and a receipt that says
+the file is banked is wrong about its own contents.** Both logs are renamed to an extension
+the rule does not match and this revision's reader points at those; **no gate is built and
+none is touched.** ⌗ **Third instance in this line's recent revisions of the defect being in
+what an artefact IS rather than in what it says** — the withdrawn arm over two files sharing
+a stem, the two summand sets sharing a configuration above, and now a file read but never
+carried. *The pattern is worth more of your attention than the instance: "it is beside the
+file" is a claim about the repository, not about the directory.*
