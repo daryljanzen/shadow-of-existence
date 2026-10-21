@@ -405,6 +405,10 @@ P11 19, P1 19, P13 16, P5 15, P3 15, P2 15, P6 11, P9 10, P12 7, P4 6. Already o
 crossing, `PO-92` §open), `P3` (`PO-92` at line 1222, `PO-93` §curvature), `P2` (`PO-91` §construction-not-error),
 `P18` (`PO-93` after `P3`).
 
+- `P2`: **Done (r7521)**, its owed one-state edit: "Construction, not error" states `PO-91`'s result in place of "a question
+  this construction raises and leaves open"; a source comment that read the three roots as three generations corrected to the
+  settled reading. **The open-language read is done (r7521)**: 13 sites, 12 ordinary English, 1 owed (below). `P18` took
+  `PO-93`'s Virgo result in the same turn.
 - `P3`: the masthead comment fragment is split. **Done (r7519)**, with `P3`'s owed edits: §curvature carries `PO-93`'s Virgo result
   (four kinematic radii past the baryon-only bound by 19 to 33 per cent, inside the dynamical one, read by a new receipt that runs
   node 60's sample unchanged) in place of "until the mass question is settled"; the open section is now "the charged closed loop, a
@@ -523,5 +527,7 @@ crossing, `PO-92` §open), `P3` (`PO-92` at line 1222, `PO-93` §curvature), `P2
   argued and robust to the four-order margin but not computed.
 - `P3`'s suggestion that the charge-conjugation Z2, independent of Aut(A2), is the right shape for a distinction between two
   complementary readings (the 3 and its conjugate), "noted and not claimed; testing it is not this paper's work".
+- `P2`'s two triples (the horizon root triple and a {0,1,2} count), "not claimed" to be one structure until a derivation producing
+  {0,1,2} from a single condition is exhibited.
 - Close: strike `PO-86`, put `check_open_item_coherence` in CI, and reactivate 60, cc66 and 70 (and 71 if a
   formalisation row is open by then) on the frontier as it stands, the projection-distance adjudication first.
