@@ -1,0 +1,23 @@
+# r7443+71.48 — campaign 48 probe runs, re-run by 71 after the delegated builds
+# J: lake env lean probes/Row62Jet4.lean — exit 0, wall 1324 s, 1599 lines (2.8 MB), peak about 5.9 GB (agent); the file defines one command wrapper, noinfo, = withEnableInfoTree false (elabCommand c), which only stops info-tree retention; every declaration is still kernel-checked
+'ShadowProbe.Row62Jet4.jet_series4' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.Row62Jet4.jet_series' depends on axioms: [propext, Classical.choice, Quot.sound]
+# K: lake env lean probes/Row62Claims.lean — exit 0, wall 966 s, 1587 lines, peak about 3.8 GB (agent)
+'ShadowProbe.Row62Claims.enumeration' depends on axioms: [propext]
+'ShadowProbe.Row62Claims.jets_TT' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.Row62Claims.jets_frame_commutator' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.Row62Claims.eps4_values' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.Row62Claims.sector_ranks' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.Row62Claims.control_raises_A' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.Row62Claims.sel8_independent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.Row62Claims.seven_plus_five_span' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.Row62Claims.identity_pointwise' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.Row62Claims.identity_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.Row62Claims.coefficients_192' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.Row62Claims.kvecs_computed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.Row62Claims.frame_constant_rank_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.Row62Claims.six_configurations_rank_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.Row62Claims.frame_constant_anchor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.Row62Claims.six_predictions' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.Row62Claims.identity_fails_off_transversality' depends on axioms: [propext, Classical.choice, Quot.sound]
+# no sorry, no native_decide in either

@@ -10,6 +10,19 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ⌗ CAMPAIGN 48: ROW 62's CLAIM 1 COMPLETE, CLAIMS 2–5 BUILT IN PART (`r7443+71.44`, `+71.48`). ⌗ ROW 62 STAYS `GENERIC-METRIC`
+
+Row 62's general-jet series is now built through order 4 (`probes/Row62Jet4.lean`, `1324 s`), so claim 1 is
+complete. The registered p of `0.25` came true. Campaign 31's out-of-memory kills turned out to be info-tree
+retention, not proof size. A one-line `noinfo` wrapper switches the retention off and leaves kernel checking
+untouched, and the build peaked at 5.9 GB. Claims 2–5 (`probes/Row62Claims.lean`, `966 s`) certify every rank the
+receipt computes on its own 17 jets: 8, 4, 1, 12, 5 and dimension 7, plus the seven rationals over 192 and the
+identity on every jet. Two things stay open, so by the registration's own condition row 62 stays `GENERIC-METRIC`
+(p `0.45` for K did not come true). First, the ~35 000 contraction entries of the rank matrices are the receipt's
+data, kernel-checked at 11. Second, the six configurations' S³ integrals are data. Next: a faster kernel evaluator
+for those entries, registered on its own; then the three ROW objects. Row 62 has no page phrase in
+`ROW_TEXT.tsv` for a residue link, and I have left 69's wording file untouched.
+
 ## ✔ CAMPAIGN 47: ROW 101 `DONE` (`r7443+71.43`, `+71.45`). ⌗ LIMIT `1 → 0`, DONE `105`
 
 Row 101's last open check is built. The `23.254 %` incomplete-Beta ratio is proved to lie in
