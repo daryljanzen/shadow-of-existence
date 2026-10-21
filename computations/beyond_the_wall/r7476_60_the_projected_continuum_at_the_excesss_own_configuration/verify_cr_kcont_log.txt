@@ -1,0 +1,34 @@
+__SWITCHES__ ARM=cr CRH0=68.581133 CROM=0.297209 HIER=1 KCONT=1 LEAFSCALES=1 LMAXL=2000 LSTEP=8 NS=0.997952 SAVE=/tmp/claude-0/r7476/verify_cr_kcont.npz WBH2=0.021524 ZSTART=3e7
+  diffusion: r_D at the visibility peak = 7.56 Mpc  ->  l_D = 1854
+
+==============================================================================
+  ACOUSTIC TWO-ARM INSTRUMENT — ARM=cr   DRIVING=ON
+==============================================================================
+  rate: GEOMETRIC (L1)   H0=68.581133  Om=0.297209
+  z_start = 3e+07   eta_start = 2.928   eta_rec = 485.5   eta_end = 2171
+  D_M = 14017 Mpc   r_s = 145.91 Mpc   l_A = pi D/r_s = 301.8   modes = 2547
+  visibility: peak at eta = 487.79 (z = 1079.8), FWHM = 43.59 Mpc   R = 3 rho_b/4 rho_g there = 0.60414   1+R = 1.60414
+  z_eq(leaf) = 3367.4   Omega_r = 8.823457e-05   rho_r/rho_m at the onset = 8906.32
+
+  projection reach: k_max = 4000/D_M against a reported l_max = 2000 -> ratio 2.00
+  projection sampling: dk = 1.117e-04, Bessel period 2pi/D = 4.483e-04, points per period = 4.0
+  hierarchy: LG = 24, handover at tau' = 3.0/Mpc (eta = 307.1), where 3.7% of 1/k_D^2 has accumulated
+  so the envelope carries 3.7% of the damping and the multipoles carry 96.3% of it
+    modes 0-250 done
+    modes 250-500 done
+    modes 500-750 done
+    modes 750-1000 done
+    modes 1000-1250 done
+    modes 1250-1500 done
+    modes 1500-1750 done
+    modes 1750-2000 done
+    modes 2000-2250 done
+    modes 2250-2500 done
+    modes 2500-2547 done
+  saved 238 multipoles to /tmp/claude-0/r7476/verify_cr_kcont.npz
+  --------------------------------------------------------------------------
+  PEAKS (line-of-sight, HIERARCHY)   l_A = 301.8
+  --------------------------------------------------------------------------
+    peaks at l = [220, 532, 812, 1124]
+    l_1/l_A = 0.7290   P1/P2 = 2.157   P1/P3 = 2.185
+    sky: 220.6 / 538.1 / 809.8,  l_1/l_A = 0.7312,  P1/P2 = 2.217,  P1/P3 = 2.277

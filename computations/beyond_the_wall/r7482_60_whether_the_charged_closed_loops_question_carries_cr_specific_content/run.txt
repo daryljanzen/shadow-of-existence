@@ -1,0 +1,149 @@
+
+r7482 — PO-92: DOES THE CHARGED CLOSED-LOOP QUESTION CARRY **CR-SPECIFIC** CONTENT?
+
+The row says: *five* papers state the question and attach the same scope, `P7` and `P9` in
+identical words; it terminates as an `r7013` kind-2 stated limit if the question carries no
+CR-specific content at all.  This locates each statement, establishes WHICH OBJECT each is
+about, checks the row's own bounding claim against the theorem's own hypotheses, and reads
+what the answer is said to turn on.
+
+⌗ THE PREDICATES ARE IMPORTED, not reimplemented: `sentences`, `strip_tex` and the
+  bibliography cut come from `r7462`'s `sectors.py`, which imports the first two from
+  `r7454`'s `open_list.py` -- so there is ONE splitter in the tree and `Ⓥ①` can prove it
+  (`r7445`'s rule as promoted at `r7447`).
+⌗ THE PAPER MAP IS READ from `scripts/gen_paper_html.py`'s own `PAPERS` table by `ast`, so
+  the module body never runs and the map cannot drift from the generator's.
+
+
+========================================================================================================
+  Ⓥ① THE PREDICATES ARE THE IMPORTED ONES — proved by where they came from
+========================================================================================================
+      sentences_body, strip_tex  <-  computations/beyond_the_wall/r7462_60_po88s_termination_clause_component_by_component/sectors.py
+      and that file imports sentences/strip_tex from r7454's open_list.py
+      modules loaded: r7462_sectors  ⌗ one splitter in the tree, not two
+  ⇒ PASS
+
+========================================================================================================
+  Ⓥ② THE PAPER MAP IS THE GENERATOR'S OWN, read by ast — and a missing file VOIDS
+========================================================================================================
+      P3   -> corpus/SdS-slicing-curve_v2.tex                on disk
+      P5   -> corpus/groupoid_paper.tex                      on disk
+      P7   -> corpus/CR_framework.tex                        on disk
+      P9   -> corpus/range_paper.tex                         on disk
+      P18  -> corpus/CR_synthesis.tex                        on disk
+  ⇒ PASS   ⌗ 18 papers in the table; the five the row names are read below.
+
+========================================================================================================
+  Ⓐ WHICH PAPERS STATE THE QUESTION — all eighteen read, not only the five named
+========================================================================================================
+      the question: an inner horizon that does NOT form, or a spacelike origin behind it
+  ⌈ P3: 1 inner-horizon-not-formed, 1 spacelike-origin
+      P3 ¶@1196: So the eternal inner horizon is not formed, and the obstruction stated above is a property of a stationary solution that the dynamical problem does not reach.
+      P3 ¶@1219: So the charged case is not thereby rejoined to the uncharged loop of : what stands in the horizon's place, and whether a spacelike origin forms behind it, is the dynamical interior's question and belongs to the
+  ⌈ P5: 1 inner-horizon-not-formed, 1 spacelike-origin
+      P5 ¶@743: The irreducible interior reassignments (Kerr-inner, Reissner--Nordstr\"om-interior) are of a different kind: they lie outside the symmetry-reducible sector this diagnostic is stated on, and there the slicing pa
+      P5 ¶@743: The irreducible interior reassignments (Kerr-inner, Reissner--Nordstr\"om-interior) are of a different kind: they lie outside the symmetry-reducible sector this diagnostic is stated on, and there the slicing pa
+  ⌈ P18: 2 inner-horizon-not-formed, 2 spacelike-origin
+      P18 ¶@2887: What stands in the place of a charged collapse's inner horizon is open: the eternal inner horizon is not formed, but inextendibility is not a spacelike origin, so whether one forms behind it, and the charged ca
+      P18 ¶@2919: small tabular @ p 0.46 p 0.50 @ open item & what would discharge it\\ the crossing's matter dynamics & a concrete matter model's stress-energy carried through the branch point as a dynamical problem, with the c
+      P18 ¶@2887: What stands in the place of a charged collapse's inner horizon is open: the eternal inner horizon is not formed, but inextendibility is not a spacelike origin, so whether one forms behind it, and the charged ca
+      P18 ¶@2919: small tabular @ p 0.46 p 0.50 @ open item & what would discharge it\\ the crossing's matter dynamics & a concrete matter model's stress-energy carried through the branch point as a dynamical problem, with the c
+
+  ⇒ THE QUESTION IS STATED IN: P3 P5 P18   (3 papers)
+    the row says FIVE: P3 P5 P7 P9 P18
+
+========================================================================================================
+  Ⓑ THE SHARED SCOPE PHRASE — and HOW MANY-TO-ONE IT IS ON THE OBJECT
+========================================================================================================
+      "ordinary interior analysis rather than a frontier of this construction"
+  ⌈ P7: 2 occurrence(s)
+      P7 ¶@1618  ABOUT: THE IRREDUCIBLE INTERIOR REASSIGNMENT
+        What stays open on the interior side is the interior reassignment, which is ordinary interior analysis rather than a frontier of this construction.
+      P7 ¶@1996  ABOUT: neither — read the sentence
+        What is left of it is ordinary interior analysis rather than a frontier of this construction.
+  ⌈ P9: 2 occurrence(s)
+      P9 ¶@318  ABOUT: THE IRREDUCIBLE INTERIOR REASSIGNMENT
+        The vantage changes this range does not classify are the irreducible ones: the interior causal reassignments (Kerr-inner, Reissner--Nordstr\"om-interior) that carry across an inner horizon lie outside the reducible groupoid, and whether the slicing-curve descr
+      P9 ¶@324  ABOUT: THE IRREDUCIBLE INTERIOR REASSIGNMENT
+        The wall is characterized below and the explicit non-spherical matter functionals collected; what lies outside is the irreducible interior reassignments (Kerr-inner, Reissner--Nordstr\"om-interior)---the vantage-axis complement noted above, ordinary interior a
+
+  ⇒ the phrase occurs 4 time(s) across 2 paper(s): P7x2 P9x2
+
+========================================================================================================
+  Ⓒ THE CONTINUES-AS-A-COSMOLOGY RESULT'S HYPOTHESES — do they name charge?
+========================================================================================================
+  ⌈ P3 ¶@1242  charge tokens in the sentence: 3 ['charge', 'charged', 'sub-extremal']
+      Untouched is the framework's cosmogenesis: its hypotheses are the horizon's causal structure, the forced foliation and a foliation-preserving morphism, none of which mentions charge, and a sub-extremal charged collapse still carries an event horizon of exactly the structure the first requires .
+
+  ⌗ the claim is checked where the hypotheses are ENUMERATED, not where the result is
+    merely named — a defence against a state changing has to enumerate the states.
+
+========================================================================================================
+  Ⓕ/Ⓖ WHAT THE ANSWER IS SAID TO TURN ON — a CR premise, or an interior quantity?
+========================================================================================================
+  ⌈ P3 ¶@1219
+      So the obstruction holds exactly when the interior mass function is o(1/r) at the origin---writing m kr^ -p , for p<1 it holds, for p>1 it fails, and at p=1 the coefficient decides .
+      CR-apparatus tokens present: none   |  interior mass function named: True
+  ⌈ P5 ¶@743
+      The irreducible interior reassignments (Kerr-inner, Reissner--Nordstr\"om-interior) are of a different kind: they lie outside the symmetry-reducible sector this diagnostic is stated on, and there the slicing paper finds that a charged collapse on a progenitor of the framework's mass does not form the eternal solution's inner horizon, and that whether a spacelike origin then forms behind it---so that the case rejoins the unchar
+      CR-apparatus tokens present: ['bead']   |  interior mass function named: True
+  ⌈ P18 ¶@2919
+      small tabular @ p 0.46 p 0.50 @ open item & what would discharge it\\ the crossing's matter dynamics & a concrete matter model's stress-energy carried through the branch point as a dynamical problem, with the crossing's settled results --- well posed, scale-free, lossless for every species --- as its boundary conditions\\ the completion of the interacting tower's definition & the nine-level closed forms proved from the recoupl
+      CR-apparatus tokens present: ['branch point', 'substrate']   |  interior mass function named: False
+
+--------------------------------------------------------------------------------------------------------
+  THE ARMS, AGAINST PREDICTION.md — registered 90a95e79, pinned 986b9031, before the reading
+--------------------------------------------------------------------------------------------------------
+  Ⓐ five papers state it      predicted 5 of 5   measured 3: P3 P5 P18   ⇒ MISS
+        ⛔ P7 and P9 do NOT state the question.  They carry the SCOPE PHRASE,
+        attached to a different object — which is Ⓑ, and is the finding.
+  Ⓑ the shared phrase         predicted: one label, one object
+        measured: 4 occurrence(s) in 2 paper(s); 3 of them
+        about THE IRREDUCIBLE INTERIOR REASSIGNMENT, 0 about the
+        non-forming inner horizon   ⇒ MISS — ONE LABEL, TWO OBJECTS
+  Ⓒ hypotheses name no charge predicted: enumerated and charge-free
+        measured: 1 sentence(s) ENUMERATE them, naming the horizon's causal
+        structure, the forced foliation and a foliation-preserving morphism
+        ⇒ HIT
+  Ⓔ the same scope in all     predicted: the same in all FIVE
+    five                      ⛔ ITS DOMAIN IS THREE, NOT FIVE, because Ⓐ removed two:
+        scored on the 3 that state it, and all 3 place it in the
+        dynamical interior   ⇒ HIT on a domain the result narrowed
+        P3 ¶@1219: So the charged case is not thereby rejoined to the uncharged loop of : what stands in the horizon's place, and whether a spacelike origin forms behind it, is the dynamica
+        P5 ¶@743: The irreducible interior reassignments (Kerr-inner, Reissner--Nordstr\"om-interior) are of a different kind: they lie outside the symmetry-reducible sector this diagnosti
+        P18 ¶@2887: It is a question about general relativity's own dynamical interior rather than about this construction --- the eternal geometry's obstruction is stated exactly, and a col
+  Ⓕ no CR premise in the      predicted: the row TERMINATES as a stated limit
+    answer                    measured: 1 sentence(s) state what it turns on
+        with NO CR-apparatus token present   ⇒ HIT
+        ⌈ THE DECISIVE LOCUS — P3 ¶@1219:
+          So the obstruction holds exactly when the interior mass function is o(1/r) at the origin---writing m kr^ -p , for p<1 it holds, for p>1 it fails, and at p=1 the coefficient decides .
+  Ⓖ no CR apparatus INSIDE    predicted: none
+    the charged statement     measured: the only CR token in a turns-on sentence is
+        in 1 sentence(s), and it sits in the slot of what would be
+        CONCLUDED ("so that the case rejoins the uncharged bead"), not of a premise
+        ⇒ HIT
+  ⌗ Ⓥ⑤ AN OVER-FIRE, REPORTED RATHER THAN INFERRED: 1 of the turns-on
+    hits is a TABULAR of open items, not a statement about this question — the
+    anchors matched a table cell.  It is excluded by inspection and named here,
+    which is the fourth instance of this family in this line's recent revisions.
+
+========================================================================================================
+  ⇒ PO-92 TERMINATES AS AN r7013 KIND-2 STATED LIMIT, AND IT IS EARNED BY ARGUMENT
+    RATHER THAN BY THE QUESTION HAVING NO HOME — which is what the row says it
+    exists for.  What the charged closed-loop reading turns on is the interior mass
+    function's exponent at the origin, with the coefficient deciding the marginal
+    case: a condition of ordinary interior analysis, carrying no premise of this
+    construction.  The bead appears in the question as what would be CONCLUDED.
+
+  ⛔ AND THE ROW'S OWN CENSUS OF WHO STATES IT IS WRONG, which the registration
+    named as its own outcome: THREE papers state the question, not five, and the
+    two the row credits with "identical words" carry those words about a
+    NEIGHBOURING OBJECT.  A shared label is not a shared subject.
+
+  ** Nothing is applied to the register.  Supplied, not applied. **
+
+========================================================================================================
+  READ: 11054 body sentences of 11799 across 18 papers (745 cut with the bibliographies — Ⓥ③)
+  ⌗ Ⓥ④: every anchor above is the PARAGRAPH's first line, which is what the imported
+    splitter returns — NOT the sentence's own line, and it is said rather than implied.
+    The lines are derived at this run: a line number is a measurement with a date on it.

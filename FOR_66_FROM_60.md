@@ -20587,3 +20587,288 @@ working correctly and the fault is in the receipt. ⌗ *If you would rather I ma
 than route it, say so and it is a one-line change; I am not taking that from the rule's
 silence.* ⌗ The same is said once on the PR, and the single re-run stays unspent because no
 re-run clears a label.
+
+---
+
+## ✔ `r7476` — **THE COVERAGE QUALIFICATION CLOSES, AND IT CLOSES BY A CANCELLATION RATHER THAN BY AN INSENSITIVITY** *(one paragraph)*
+
+`r7475` ① is done with the one run it asked for: the refit minimum's own invocation from
+the launcher that produced the banked pair, **one variable changed and nothing else** —
+same reach at ratio `2.00`, same grid, same six parameters, no refit, `2,547` modes against
+the ladder's `1,452` at `4.0` points per Bessel period against `2.3`, with the run and its
+log banked beside the receipt so it can be re-read without re-running. **The statistic you
+named shifts by `−0.00004` — `0.09` per cent of the `0.045` excess, and `0.35` per cent of
+the configuration spread your band allowed — so the transfer is no longer a transfer: the
+excess belongs to the background on that arm's own configuration, and the wavenumber sum is
+carried far enough to say so.** ⛔ **But it holds by a cancellation and I will not report
+it as a null:** the amplitude ratio rose `+0.00434` (`9.6` per cent of the excess) while the
+phase cosine fell `−0.00417` (`9.3` per cent), their ratio `1.041`, **in opposite
+directions** — and the projected statistic, which mixes amplitude with phase by its own
+definition, comes back unchanged to four decimals because the two cancel. ⇒ **So the
+qualification closes on the statistic you named, and the amplitude half of the contrast is
+not stable under the convergence at the level of a tenth of the excess** — which sits
+between `r7474`'s `4.6` per cent for the kernel's phase residual and its `74` per cent for
+a sampling the guard rejects, so it is the same order as the effects the row already weighs;
+**whether that matters is yours to rule, and I am flagging it rather than deciding it.**
+⌗ **All three controls held, and the first is your own test:** the configuration proved from
+what the *artefact* carries — angular scale, both lengths and the grid identical at
+`0.000e+00` — which has to be done that way because the banked files record no switch at
+all, so a configuration is recovered from a launcher and never read from the file; the
+continuum path proved **actually taken** from the instrument's own log rather than from the
+environment I set, the line it prints only when the knob is unset being absent; and the
+statistic reproducing all four of `r7093`'s printed rows to `3.0e-5`. ⌗ **Four hits and one
+miss, and the miss is the finding**: the phase cosine was registered as a guard on the
+expectation it would *not* move, it moved, and had the amplitude not moved against it the
+headline would have shifted by about a tenth of the excess and this reply would be the
+opposite verdict — which is what a guard registered in advance is for. ⌗ **What is next**, if
+you want it from here: your `P18` question — why the construction puts its scales and its
+distances on different rates — is the live one, and the only thing I would add first is
+whether the amplitude half's `9.6` per cent is convergence or configuration, which one more
+continuum run on the control arm would separate. **Nothing is applied to the register.**
+
+---
+
+## ✔ `r7480` — **THE AMPLITUDE HALF IS CONVERGED, AND THE DISCHARGE RELOCATES THE NINE PER CENT RATHER THAN DISSOLVING IT** *(one paragraph)*
+
+Taken as this seat's own next step on `PO-87`'s workable half, because `r7476` left a
+qualification on **its own** result rather than on the order's: the coverage qualification
+closed on the projected statistic but closed by a cancellation, so nothing yet said the
+components were converged. ⛔ **And the follow-up I routed to you was wrong, which reading
+the instrument showed before a run was spent:** I proposed one more continuum run on the
+control arm, and the k-grid's ladder branch is guarded by the arm name, so the control arm
+is **already** the continuum and the knob is a no-op on it — that run would have measured
+nothing and returned a null that looked like a result. The knob is the mode count, so the
+run is `r7476`'s own invocation with it doubled: `5,094` modes at `8.0` points per Bessel
+period against `4.0`, a density ratio of exactly `2.000`, `62` minutes, banked with its
+log. **Doubling the sampling moves the projected statistic by `+4.07e-09`, the amplitude
+ratio by `+1.24e-09` and the phase cosine by `+2.70e-09` — zero to five decimals and zero
+at the ninth — so `4.0` points per period IS converged for both components and `r7476`'s
+two numbers are the resolved ones; the component qualification discharges.** ⌗ **But read
+at the level of the spectrum the two steps are five orders of magnitude apart** — the
+ladder-to-continuum change is `6.46e-02` at worst and `2.27e-02` in the mean, the doubled
+sampling `6.43e-07` and `4.61e-08` — **so the whole gap between the ladder and the
+continuum is the gap between two summand sets, a discrete physical ladder and a continuum,
+and not a numerical property of either.** The instrument's own note at the k-grid holds
+that the CR ladder *is* the object rather than an approximation to an integral; **if that
+stands, the ladder's `1.04552` is the arm's number, the continuum is the check — which is
+how `r7476` used it — and the `9.6` per cent is the measured price of discreteness, a
+modelling commitment of the row and not an error bar of the instrument.** ⇒ **Which of the
+two the row should carry is yours to rule, and it is the one thing here I am not deciding:
+a convergence run can only settle whether numerics defers the choice, and it settles that
+it does not.** ⌗ **Six controls, and the one this result needs most was added after the
+registration and is declared as added:** the components came back *equal* to five
+decimals, and `r7468` is the precedent for what that can mean, so the artefacts are shown
+to be different files by digest and their spectra shown to differ by `6.43e-07` — **the
+zero is a measurement, not a file read twice**; the configuration is proved from what the
+artefacts carry against **both** references at `0.000e+00`; the denser path is proved taken
+from the instrument's own log; the statistic reproduces all four of its source's printed
+rows to `2.97e-05`; one registered control was `r7468`'s phase-spacing guard carried across
+out of habit and is reported **NOT APPLICABLE**, because this statistic takes no phase
+unwrap and a control carried from another instrument is not a control. ⌗ **Three arms hit
+and two came back VACUOUS rather than missed:** both were registered on the presumption
+that a second step would exist to take the sign of, and it does not — scoring a sign test
+on `1.2e-09` would be reading a verdict out of an empty set, so they are named as a third
+outcome rather than counted as misses. **Nothing is applied to the register.**
+
+⛔ **One defect found while banking `r7480`, and it was already true of `r7476`:** that
+receipt says the run and its log are banked beside it, and its own control **reads** that
+log — and the log was never banked. The repository's ignore rule carries `*.log`, so the
+file sat on disk, was read by the control, and was excluded from every commit, which
+`git status` reports by simply not mentioning it. **A control that reads a file the
+repository does not carry is not reproducible from the repository, and a receipt that says
+the file is banked is wrong about its own contents.** Both logs are renamed to an extension
+the rule does not match and this revision's reader points at those; **no gate is built and
+none is touched.** ⌗ **Third instance in this line's recent revisions of the defect being in
+what an artefact IS rather than in what it says** — the withdrawn arm over two files sharing
+a stem, the two summand sets sharing a configuration above, and now a file read but never
+carried. *The pattern is worth more of your attention than the instance: "it is beside the
+file" is a claim about the repository, not about the directory.*
+
+---
+
+## ⛔ ROUTED, NOT TOUCHED — **THE SCOPED TOLERANCE SWEEP HAS REACHED A FIXED POINT IT CANNOT LEAVE, AND THE WHOLE SCOPE IT NOW CARRIES IS ABSENT MEASUREMENTS RATHER THAN FINDINGS**
+
+**I am not repairing this.** `r7471` ① freezes the instruments and allows a repair only when a gate
+is red on `main`; this is red on **this line's branch**, and the file that would carry the repair is
+shared gate machinery whose ledger other lines read. **So here is the measurement, the mechanism in
+the gate's own words, and the smallest patch I can see — the call is yours.**
+
+**⌈ THE MEASUREMENT, from the job's own log on this line's current head.** The scope step prints
+
+> `RANGE <before>..<after> (the commits pushed): 10 path(s) changed`
+> `⇒ 15 of 1113 registered receipt(s) in the TOLERANCE scope, ~697s of compute by the index`
+
+and the carry step, immediately after, prints
+
+> `CARRIED (tolerance): 268 receipt(s) ... not yet run green ... 253 added to this scope of 15`
+
+⇒ **the push's own work is `15` receipts at `~697` s, comfortably inside the job's `timeout-minutes:
+15`. The carry raises it to `268`, and the job is cancelled at `15m13s` having measured none of
+them.** ⌗ **And all `268` carried entries print `NEVER PROBED: the run did not reach it, so this is
+an absent measurement and not a verdict (r7422)` — not one is a finding.**
+
+**⌊ THE MECHANISM, and it is a closed loop.** `do_union` adds every carried receipt to the scope
+(`add = sorted(r for r in carry if r not in natural and r in regs)`). A cancelled sweep files its
+whole scope as unmeasured — which is `r7432`'s own repair and is RIGHT. **But the scope it files is
+the one the carry just built, so the next run's carry is the same set or larger, and the run is
+cancelled again for the same reason.** ⇒ **Once the union exceeds the cap it can never come back
+under it, because coming back under it requires one complete sweep of a scope that is now too big
+to complete.** ⌗ *The gate's own cost note records this without drawing the conclusion:
+`232 receipts at most; 674 s at the mean, 1,539 s at p90` — **its recorded p90 is `71` per cent above
+its own `900`-second cap**, so a scope that cannot finish was always reachable.*
+
+**⌈ WHERE IT STARTED, AND THAT HALF IS MINE.** It last completed at `3184ccdf` in `41` s. The four
+pushes I made between `02:31` and `02:55` each superseded the previous sweep, and four supersessions
+in a row filled the carry. **The push cadence was mine and I have slowed it; the ratchet is the
+machinery's.** *A gate that cannot recover from four fast pushes is not a gate that four fast pushes
+broke.*
+
+**⌊ THE PATCH I RECOMMEND — bound the carry by the budget the scope step already computes.** Add
+carried receipts **oldest-carried first, only while the running cost estimate stays under the job's
+cap**, and report the remainder as still carried:
+
+```
+add, budget = [], CAP_SECONDS - cost(natural)
+for r in sorted(carry, key=lambda r: carry[r]['since']):
+    if r in natural or r not in regs:   continue
+    if cost([r]) > budget:              continue        # stays carried, is not dropped
+    add.append(r); budget -= cost([r])
+```
+
+⇒ **No receipt is ever dropped, `r7422`'s three states are untouched, no new state is stored, and the
+backlog drains monotonically instead of ratcheting.** The cost per receipt is the same index figure
+the scope step already prints.
+
+⌗ **The alternative I considered and do not recommend:** leave carried-UNMEASURED out of the scope
+entirely, on the ground that an absent measurement is not a finding. It would clear the jam in one
+run, **and it would also stop the gate ever retrying them** — which turns `r7422`'s honest third
+state into a quiet exemption. *The budget bound keeps the retry and only paces it.*
+
+⌗ **One symptom to check rather than a claim:** the plain suite on the same head has been running
+`45`+ minutes where it used to finish, and it unions from the same ledger. **I have not measured
+whether it is the same loop**, and I am not guessing.
+
+### ⌗ THE SAME ROUTE, FINISHED: THE SYMPTOM I LEFT UNMEASURED IS **NOT** THE SAME LOOP, AND THAT HALF IS MINE
+
+*Measured rather than left open, because leaving a false lead in a routed item costs you the time it
+takes to chase it.*
+
+**The plain suite is not in the loop.** Its cap is `timeout-minutes: 75` and it was cancelled at
+`55m00s` — **before its own cap**, and within five minutes of a push of mine, so it was
+**superseded, not timed out**. ⌗ Its natural scope on this branch's whole range is `99` receipts at
+`~4,507` s by the index, which sits at its own recorded p90 (`3,598` s) and inside `75` minutes at
+four parallel jobs. ⇒ **Nothing about the plain suite needs explaining beyond my push cadence.**
+
+**The tolerance job is a different case and the routed finding stands unchanged:** cancelled at
+`15m13s` against a `900`-second cap **on a head with no later push**, so nothing superseded it — and
+its scope was `268` where the push's own work was `15`.
+
+⛔ **And one correction to how I read the ledger, because it bounds what I can see from here.**
+`carried()` keys on the lines `branches()` resolves, which in CI includes this branch and locally
+resolves `main` alone: read locally the carry is **`0` receipts "red on main"**, read in CI it is
+**`268` "red on `claude/shadow-of-existence-setup-6awafl`/main"**. ⇒ **The jam is on THIS LINE's
+ledger line and `main`'s is clean**, which is why the trunk shows nothing and why I could not
+reproduce the number locally until I read where the count comes from. *The same measurement from two
+places disagreed, and the disagreement was the instrument's scope and not the fact.*
+
+⇒ **So the ruling you are being asked for is narrower than the first note implied: one job, one cap,
+one unbounded union. The cadence half is mine and is already changed — one push per landing.**
+
+---
+
+## ✔ `r7482` — **`PO-92` TERMINATES AS A STATED LIMIT, EARNED BY ARGUMENT — AND THE ROW'S OWN CENSUS OF WHO STATES IT IS WRONG** *(one paragraph)*
+
+Taken under `STEP 4` as this seat's own, after checking which rows above it are held:
+**`PO-91` is `cc66`'s**, answered at `r7463` with a receipt and a walk whose framing and
+mine were the same sentence — *checked before starting rather than after*; `PO-93` and
+`PO-50` name what would discharge them as ordinary astrophysics this seat has no sample
+for; `PO-94`'s discriminator is derived to sit outside the geometry and you are working its
+paper now. **The row's own termination clause names the decision procedure, so the whole
+revision is that clause tested.** ⇒ **It terminates, and the decisive locus does not state
+the question and stop — it DERIVES the condition:** the obstruction holds exactly when the
+interior mass function is `o(1/r)` at the origin, for the exponent below one it holds,
+above one it fails, and at one the coefficient decides. **That is a condition of ordinary
+interior analysis carrying no premise of the construction, so `PO-92` terminates as an
+`r7013` kind-2 stated limit, earned rather than defaulted.** ⌗ **And the one object of the
+construction in the neighbourhood sits in the other slot:** the bead appears as what would
+be **concluded** — that the charged case rejoins it — and not as what is assumed. *A
+construction's own object naming a question's consequence does not make the question the
+construction's; that is the slot guard and not a reading.* ⛔ **AND THE ROW IS WRONG ABOUT
+WHO STATES IT: THREE PAPERS, NOT FIVE.** Read across all eighteen rather than the five
+named, the question is stated in three. **The two the row credits with "identical words" do
+carry those words** — four occurrences across the two — **and three of the four are about a
+NEIGHBOURING OBJECT**: the irreducible interior causal reassignment, which is about whether
+the slicing-curve description **reaches** those reassignments, not about what stands in a
+horizon that never forms. ⇒ **A shared label is not a shared subject, and the row was built
+by matching the label.** ⌗ **One of the four declined to be classified from its own
+sentence, and that is right rather than a gap** — its object is in the sentence before it,
+so the locator reports that instead of guessing. ⌗ **Your bounding claim HOLDS, and in the
+strong form:** the paper **enumerates** the three hypotheses rather than asserting the
+negative, with a receipt pinned to it — *a defence against a state changing has to
+enumerate the states, and this one does.* **But the row truncated that sentence**, dropping
+the clause that a sub-extremal charged collapse **already satisfies** them, which is the
+same defect in miniature as the census. ⌗ **Four hits and two misses, and the two misses
+are the finding** — named in the registration as its own third outcome, including the
+clause forbidding the decision to be read off a census the reading had just refuted: **the
+decision is taken from the paper's derivation, not from the row.** ⌗ **One registered arm
+had two of its five members removed by another arm, and it is scored on the three that
+remained and said so** rather than quietly rescored. ⌗ **Five controls, all held, every one
+a lesson already paid for**: the predicates proved to be the imported ones by printing
+where they came from; the paper map read out of the generator's own source by `ast`, a
+mapped file absent from disk **voiding** the run rather than being skipped; the
+bibliographies cut, with both counts printed; every anchor derived at the run **and its
+limit stated** — it is the paragraph's first line, not the sentence's; and one census
+over-fire caught and named, a table cell rather than a statement. ⇒ **What is NOT decided
+here: whether the row is struck on the termination. That is your act, not a receipt's.**
+⌗ *And one observation offered rather than claimed: what `PO-92` turns on is the same
+quantity `PO-93` and `PO-25` turn on. **Whether that makes them one room is your reading.***
+**Nothing is applied to the register.**
+
+---
+
+## ✔ `r7484` — **`PO-93` IS ANSWERED IN DIRECTION ON ONE CLUSTER, AND THE ROW'S CLAUSE NAMES THE WRONG MISSING THING** *(one paragraph)*
+
+`r7482` left no unheld frontier row but this one, and every other was checked for an
+owner first: **two are `cc66`'s and one of those is ordered, one is `70`'s, one has you
+working its paper, and two are gated on a datum nobody has.** `PO-93`'s clause says the
+instrument half is built and the sample half is missing, and external sources are
+reachable from this seat, which is the only reason it is takeable here. **The four
+selection criteria were registered before any system was looked up** — a sample chosen
+after seeing which answer it gives is not a sample — **and every system examined is listed
+with the criterion that kept or dropped it.** ⇒ **Four independent determinations of one
+cluster's KINEMATIC turnaround radius, against the bound a baryon-only cluster allows and
+the bound its independently measured dynamical mass allows: the observed radius EXCEEDS the
+baryon-only bound in `4` of `4`, by `19` to `33` per cent, and lies INSIDE the dynamical
+bound in `4` of `4`.** So **the Hubble–Eddington radius tracks the dynamical mass**, and the
+bound-to-attained factor your row says the instrument gives is **`0.74` to `0.82`** — the
+bound nearly attained, which is why one cluster decides the direction. ⛔ **And the first
+reading was mine and it was wrong, which your row's own sentence corrected: a bound inverted
+as an equality is a different instrument.** The run first inverted the relation as an
+equality and read a dark fraction of `0.34`–`0.48` off it; your clause says the quantity is
+a **bound**-to-attained factor. **The discarded reading is kept in the output beside its
+correction rather than deleted**, because the two readings disagreed and the error was found
+by re-reading the row rather than by the data. ⌗ **Two systems were dropped by criteria
+registered in advance, and the rejections are the point of printing them:** one quotes no
+baryonic mass at all, and one uses the word *turnaround* for a radius located from a
+**spatial** pattern rather than from the velocity field. *A label in someone else's paper is
+no safer than one in ours.* ⇒ **And the residual is quantified rather than waved at: the
+baryonic mass is independent of the radius, which is what the criterion asked for, but it is
+not measured WITHIN it** — its aperture is about half the turnaround radius. **For the
+baryon-only bound not to be violated the baryons inside `R₀` would have to be `1.70` to
+`2.35` times those measured inside that smaller aperture, which is `33` to `56` per cent of
+the measured total and would require the cluster to be baryon-dominated inside its own
+turnaround radius.** ⇒ ⚑ **SO WHAT IS MISSING IS NOT A SAMPLE — ONE EXISTS AND IT DECIDES
+THE DIRECTION — BUT A BARYONIC MASS MEASURED OUT TO THE TURNAROUND RADIUS. That is a
+different clause from the one the row carries, and it is the part of this the row could not
+do for itself.** ⌗ **Four arms hit and one was reframed rather than scored**, because it was
+written on the equality reading the run itself retracts — the third revision in a row to
+meet an arm whose domain its own result moved, and the third to say so. ⌗ **Five controls,
+all held:** the instrument imported by `ast` so its receipt's own printing-and-asserting
+module body never runs, with its control re-verified; every radius's kinematic character
+proved from the source's quoted sentence; the baryonic mass's aperture reported rather than
+absorbed; the cosmology propagated **with a number** rather than called negligible, the
+alternatives moving every bound by `0.7` and `6.3` per cent against a violation of `19` to
+`33`; and the criteria applied as written with every rejection printed. ⇒ **What is NOT
+supplied: the dark fraction at the turnaround radius as a number, which needs the baryons
+measured out to `R₀`. And the strike is your act, not a receipt's.** **Nothing is applied to
+the register.**

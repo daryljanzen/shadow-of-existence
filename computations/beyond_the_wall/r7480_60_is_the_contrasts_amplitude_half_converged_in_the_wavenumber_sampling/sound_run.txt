@@ -1,0 +1,149 @@
+
+r7480 — IS THE CONTRAST'S **AMPLITUDE** HALF CONVERGED IN THE WAVENUMBER SAMPLING?
+
+`r7476` closed `r7474`'s coverage qualification on the projected statistic -- it moved `-0.00004`
+between the banked ladder and a continuum at the same configuration -- but it closed BY A
+CANCELLATION: the amplitude ratio rose `+0.00434` while the phase cosine fell `-0.00417`, in
+opposite directions, and the statistic mixes the two by its own definition.  So that result
+licenses the order's conclusion and does NOT license a claim that the contrast is converged
+COMPONENT-WISE.  This asks whether `4.0` points per Bessel period is converged, by running the
+same arm at `8.0`.
+
+⛔ AND IT CORRECTS THE FOLLOW-UP I MYSELF ROUTED.  `r7476`'s reply proposed one more continuum run
+   on the CONTROL arm.  The instrument's k-grid is
+
+       if ARM == 'cr' and os.environ.get('KCONT', '0') != '1':   <- ladder
+       else:                                                      <- continuum
+
+   so the ladder branch is guarded by `ARM == 'cr'`: the control arm is ALREADY the continuum and
+   `KCONT` is a no-op on it.  That run would have measured nothing.  `NK` is the knob, and the run
+   here is `NK` doubled on `r7476`'s own invocation -- one variable changed, nothing else.
+
+⌗ THE STATISTIC IS IMPORTED from `r7093`'s `contrast_two_models.py` by `ast`, as `r7474` and
+  `r7476` imported it, so there is ONE copy of the predicate and `Ⓥ③` can prove it is the same one.
+
+
+====================================================================================================
+  Ⓥ① THE SAME CONFIGURATION, from what the artefacts carry -- not from the label
+====================================================================================================
+      l_A  vs r7476 continuum    dense     301.798643  ref     301.798643  rel 0.000e+00  ok
+      D_M  vs r7476 continuum    dense   14017.038576  ref   14017.038576  rel 0.000e+00  ok
+      r_s  vs r7476 continuum    dense     145.911277  ref     145.911277  rel 0.000e+00  ok
+      l_A  vs banked ladder      dense     301.798643  ref     301.798643  rel 0.000e+00  ok
+      D_M  vs banked ladder      dense   14017.038576  ref   14017.038576  rel 0.000e+00  ok
+      r_s  vs banked ladder      dense     145.911277  ref     145.911277  rel 0.000e+00  ok
+      ell grid vs r7476 continuum    dense n=238 [100,1996]  ref n=238 [100,1996]  ok
+      ell grid vs banked ladder      dense n=238 [100,1996]  ref n=238 [100,1996]  ok
+  ⇒ PASS
+
+====================================================================================================
+  Ⓥ② THE DENSER PATH WAS ACTUALLY TAKEN, from the instrument's own log
+====================================================================================================
+      the "Run KCONT=1 to check" line present: False   ok (it prints only when the knob is unset)
+      modes = 5094, registered 5094   ok
+      points per Bessel period = 8.0 against r7476's 4.0 and the ladder's 2.3   ok
+      the density ratio actually achieved: 2.000  (registered as exactly 2)
+      switches: ARM=cr CRH0=68.581133 CROM=0.297209 HIER=1 KCONT=1 LEAFSCALES=1 LMAXL=2000 LSTEP=8 NK=1698 NS=0.997952 SAVE=./verify_cr_kcont_nk2.npz WBH2=0.021524 ZSTART=3e7
+  ⇒ PASS
+
+====================================================================================================
+  Ⓥ③ THE SAME STATISTIC — r7093's four printed rows, before any number of this run
+====================================================================================================
+      A  c54.178               -0.3766  printed   -0.3766  diff 1.50e-05
+      A  c54.186 L3000         -0.4108  printed   -0.4108  diff 1.84e-05
+      B  refit grid base       +1.0563  printed   +1.0563  diff 2.97e-05
+      B  refit minimum         +1.0452  printed   +1.0452  diff 2.61e-06
+  ⇒ worst 2.97e-05 against the registered 1e-4  PASS
+
+====================================================================================================
+  Ⓥ④ REGISTERED AND INAPPLICABLE, SAID SO RATHER THAN SCORED
+====================================================================================================
+      PREDICTION.md registered Ⓥ④ as "adjacent raw phase samples closer than pi" --
+      r7468's guard, carried across out of habit.  r7093's statistic takes no phase
+      unwrap: it reads an oscillation about a running mean on the ell grid, so there are
+      no raw phase samples for a spacing to be checked on.  ⇒ NOT APPLICABLE, and it is
+      reported that way rather than being scored on something it does not range over.
+
+====================================================================================================
+  Ⓥ⑤ ADDED AFTER THE REGISTRATION, AND DECLARED AS ADDED — the instrument's OWN
+      aliasing and truncation gates, read out of both continuum logs
+====================================================================================================
+      4.0 pts (r7476)      UNDER-SAMPLED False   k-TRUNCATED False   ok
+      8.0 pts (this run)   UNDER-SAMPLED False   k-TRUNCATED False   ok
+  ⇒ PASS   ⌗ this is the guard that belongs to THIS instrument,
+      and it is the instrument's own verdict rather than a second one of mine.
+
+====================================================================================================
+  Ⓥ⑥ ADDED AFTER THE REGISTRATION, AND DECLARED AS ADDED — THE TWO ARTEFACTS ARE NOT
+      THE SAME FILE, AND THEIR SPECTRA DIFFER BY A MEASURED NONZERO AMOUNT
+====================================================================================================
+      Registered against the outcome this run actually produced: the components come
+      back EQUAL to five decimals, and r7468 is the precedent for what that can mean --
+      an instrument agreeing with itself is not correctness.  So the null is shown to be
+      a MEASURED null before it is read as one.
+      4.0 pts  artefact digest e688a10d1059e4db
+      8.0 pts  artefact digest 27a746047b4f6b3c
+      the two artefacts are distinct files: True   ok
+
+      the spectrum itself             max rel     mean rel   where
+      ladder -> 4.0 pts             6.462e-02    2.266e-02   l = 1852
+      4.0 pts -> 8.0 pts            6.427e-07    4.609e-08   l = 1972
+      ladder -> 8.0 pts             6.462e-02    2.266e-02   l = 1852
+      the doubled sampling changed the spectrum at all: True   ok — the null is measured, not a file read twice
+  ⇒ PASS
+
+      ⇒ THE TWO STEPS DIFFER BY FIVE ORDERS OF MAGNITUDE AT THE LEVEL OF THE SPECTRUM:
+        the ladder-to-continuum change is 6.46 per cent at worst and 2.27 per cent in the mean,
+        while doubling the sampling moves it by 6.4e-07 at worst and 4.6e-08 in the mean.
+
+====================================================================================================
+  THE MEASUREMENT — ONE ARM AT THREE SAMPLING DENSITIES, AGAINST THE SAME CONTROL
+====================================================================================================
+                                    projected  amplitude  phase cos       l_A
+      LADDER      2.3 pts/period     +1.04520    1.04552   +0.99969   301.799
+      CONTINUUM   4.0 pts/period     +1.04516    1.04986   +0.99552   301.799
+      CONTINUUM   8.0 pts/period     +1.04516    1.04986   +0.99552   301.799
+
+      STEP 2.3 -> 4.0                -0.00004   +0.00434   -0.00417
+      STEP 4.0 -> 8.0                +0.00000   +0.00000   +0.00000
+      STEP 4.0 -> 8.0 (as read)     +4.07e-09  +1.24e-09  +2.70e-09
+
+      ⇒ THE SECOND STEP IS ZERO TO FIVE DECIMALS IN ALL THREE QUANTITIES, and Ⓥ⑥ shows
+        that is a measured zero: the artefacts are different files whose spectra differ
+        by parts in ten million.  ** SO 4.0 POINTS PER BESSEL PERIOD IS CONVERGED, AND
+        THE 9.6 PER CENT OF r7476 IS NOT A SAMPLING ARTEFACT OF THE CONTINUUM. **
+
+----------------------------------------------------------------------------------------------------
+  THE ARMS, AGAINST PREDICTION.md — registered 1cf54a82, pinned 5190ba5f, before the run
+----------------------------------------------------------------------------------------------------
+  Ⓐ projected       |d| < 0.002 of r7476's value     measured +0.00000   ⇒ HIT
+  Ⓑ amplitude step  |d| < 0.00217 (half the first)  measured 0.00000   ⇒ HIT
+  Ⓒ phase step      |d| < 0.00209 (half the first)  measured 0.00000   ⇒ HIT
+  Ⓔ opposite signs again                                         no   ⇒ MISS, AND ITS DOMAIN IS EMPTY
+        ⌗ Ⓔ and Ⓕ were registered on the presumption that there WOULD be a second
+        step to take the sign of.  There is not: both steps are zero to five
+        decimals.  So a sign test has nothing to range over, and scoring it as a
+        substantive miss would be reading a verdict out of an empty set -- the same
+        error as treating an identity as an obstruction before establishing what it
+        ranges over.  ** Ⓔ and Ⓕ are reported as VACUOUS, not as a hit or a miss. **
+  Ⓖ read price      4.4/4.4/4.4 ms                   ⇒ reported, not a pass/fail
+
+====================================================================================================
+  ✔ CONTROLS HOLD (Ⓥ① Ⓥ② Ⓥ③ Ⓥ⑤ Ⓥ⑥; Ⓥ④ inapplicable and reported so).
+
+  ⇒ 4.0 POINTS PER BESSEL PERIOD IS CONVERGED FOR BOTH COMPONENTS, and r7476's
+    component qualification DISCHARGES: its two numbers are the resolved ones.
+
+  ⛭ AND THE DISCHARGE RELOCATES THE 9.6 PER CENT RATHER THAN DISSOLVING IT.  The
+    continuum is converged to parts in ten million, so the whole of the gap between
+    the ladder and the continuum is the gap between TWO SUMMAND SETS -- a discrete
+    physical ladder and a continuum -- and not a numerical property of either.  The
+    instrument's own note at the k-grid takes a position on which is the object:
+    "for CR the ladder k_L = sqrt(L(L+2))/r_0 is PHYSICAL -- the sum IS the object,
+    not an approximation to an integral".  ** If that stands, the ladder's 1.04552
+    is the arm's number and the continuum is the check, which is how r7476 used it;
+    and the 9.6 per cent is then the measured price of discreteness, which is a
+    modelling commitment of the row and not an error bar of the instrument. **
+    ⌗ Which of the two the row should carry is PO-87's to rule.  Not decided here.
+
+  ** Nothing is applied to the register.  Supplied, not applied. **

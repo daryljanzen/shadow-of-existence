@@ -1,0 +1,150 @@
+
+r7484 — PO-93: THE SAMPLE ITS DISCHARGE CLAUSE NAMES, SELECTED ON CRITERIA REGISTERED FIRST.
+
+The row: *"one cluster or group with its turnaround radius located kinematically, from the
+motions rather than by a fixed-overdensity definition, together with a baryonic mass measured
+independently of that radius.  The instrument half is built and shared with PO-50 ... so what
+is missing is the sample and not the reading of it."*
+
+⌗ THE INSTRUMENT IS IMPORTED, not rebuilt: `r_HE` and its constants come out of
+  `receipts/P03_SdS_slicing/P03_which_mass_sets_the_hubble_eddington_radius.py` by `ast`, so
+  that receipt's module body (which prints and asserts) never runs and there is ONE copy of
+  the relation in the tree.  r7445's rule as promoted at r7447.
+
+⌗ EVERY NUMBER BELOW IS A QUOTED LITERATURE VALUE WITH ITS SOURCE IN THE TABLE, and every
+  system examined is listed with the registered criterion that kept or dropped it.
+
+
+========================================================================================================
+  Ⓥ① THE INSTRUMENT IS THE IMPORTED ONE, AND ITS OWN CONTROL IS RE-RUN
+========================================================================================================
+      r_HE and constants  <-  receipts/P03_SdS_slicing/P03_which_mass_sets_the_hubble_eddington_radius.py  (by ast)
+      H0 = 73 km/s/Mpc,  OmL = 0.7,  Lambda = 1.308e-52 m^-2,  f_b = 0.157
+      its control: at f_b = 1 the two mass choices coincide exactly  -> ok
+      the separation it gives: f_b^(-1/3) = 1.854 in radius, 1/f_b = 6.37 in mass
+  ⇒ PASS   ⌗ so the quantity measured is the dark fraction, not an artefact.
+
+========================================================================================================
+  Ⓥ⑤ THE REGISTERED CRITERIA, APPLIED AS WRITTEN — WITH THE REJECTIONS
+========================================================================================================
+  ⌈ NGC 5353/4
+      located by: zero crossing of a fitted RADIAL VELOCITY profile from line-of-sight velocities and 3D distances of four bound-zone filament galaxies
+      DROPPED on Ⓢ②: no baryonic, stellar or gas mass is quoted anywhere in the paper
+      source: Lee, Kim & Rey 2015, ApJ 815 43 (arXiv:1511.00056)
+  ⌈ six isolated groups
+      located by: the Turn-around Radius Estimator applied to "an inclined streak pattern in the anisotropic SPATIAL distribution of the neighbour field galaxies"
+      DROPPED on Ⓢ①: the radius is located from a SPATIAL distribution, not from the velocity field -- and its turn-around mass is "approximated by the virial mass"
+      source: Lee et al. 2017 (arXiv:1709.06903)
+  ⌈ Virgo
+      located by: the radius of the ZERO-VELOCITY SURFACE from the spherically symmetric infall model, on galaxy motions; independently by the Numerical Action Method on galaxy trajectories
+      KEPT: Ⓢ① kinematic; Ⓢ② gas from Planck SZ and stars from photometry, both independent of R0; Ⓢ③ independent totals exist; Ⓢ④ H0 = 73 stated, the instrument's own value
+      source: Kashibadze, Karachentsev & Karachentseva 2020 (arXiv:2002.12820), carrying KKK18, Shaya+2017 and Karachentsev+2014
+
+  ⇒ Ⓐ: 1 of 3 systems examined meet all four criteria
+
+========================================================================================================
+  THE MEASUREMENT — the mass the OBSERVED kinematic radius implies, against the
+  masses measured independently of it
+========================================================================================================
+      R0 source                  R0 [Mpc]     M implied [Msun]
+      KKK18 (23 deg)             7.8 ± 0.3      4.116e+14  [3.66e+14, 4.61e+14]
+      Shaya+ 2017 (NAM)          7.3 ± 0.3      3.374e+14  [2.97e+14, 3.81e+14]
+      Karachentsev+ 2014         7.2 ± 0.7      3.237e+14  [2.38e+14, 4.28e+14]
+      Kashibadze+ 2018           7.0 ± 0.3      2.975e+14  [2.61e+14, 3.37e+14]
+
+      baryonic, measured independently of R0:
+        hot gas (Planck SZ)   1.40e+14 to 1.60e+14
+        stars (photometry)    1.50e+13
+        => M_bary             1.55e+14 to 1.75e+14
+      the paper's own total INSIDE R0  7.40e+14 ± 9.0e+13   ⚠ DERIVED FROM R0
+      X-ray M200 (Simionescu+ 2017)   1.05e+14   ⚠ WITHIN r200 ~ 1 Mpc, NOT within R0
+
+--------------------------------------------------------------------------------------------------------
+  ⌈ THE CONSISTENCY CHECK NOBODY HAS RUN: does the corpus's r_HE reproduce the
+    standard zero-velocity-surface mass, which is derived a different way?
+--------------------------------------------------------------------------------------------------------
+      r_HE inverted at R0 = 7.8 Mpc           4.116e+14 Msun
+      the paper's M_T inside the same R0      7.400e+14 ± 9.0e+13 Msun
+      ⇒ ratio 0.556   ⌗ the two routes are INDEPENDENT derivations: the corpus's is
+        the vanishing of the slicing surface's Gaussian curvature, the literature's
+        is a spherical infall model on the age of the Universe.
+
+--------------------------------------------------------------------------------------------------------
+  ⛔ AND THE FIRST READING OF THIS WAS MINE AND IT WAS WRONG, WHICH THE ROW'S OWN
+    WORDS CORRECT: r_HE IS A BOUND, NOT AN EQUALITY
+--------------------------------------------------------------------------------------------------------
+      The block above inverts r_HE as an EQUALITY and so reads a dark fraction of
+      0.34 to 0.48 off it.  That number is an artefact of the inversion.  The row says
+      what the instrument is: "the BOUND-to-attained factor is parameter-free".  r_HE is
+      the LARGEST radius that can still be turning around for a given enclosed mass --
+      the LambdaCDM bound the turnaround literature calls a bound and tests for
+      violation.  ⇒ So the test is not "which mass does the inversion return" but
+      ** IS THE OBSERVED RADIUS INSIDE THE BOUND EACH MASS CHOICE ALLOWS? **
+      ⌗ A bound inverted as an equality is a different instrument, and it gave a
+        different answer.  Recorded rather than quietly replaced.
+
+--------------------------------------------------------------------------------------------------------
+  ⌈ Ⓑ/Ⓒ THE DECISION, READ AS A BOUND: WHICH MASS DOES THE RADIUS TRACK?
+--------------------------------------------------------------------------------------------------------
+      mass choice                              M [Msun]   r_HE bound [Mpc]
+      BARYONIC (gas + stars)       1.55e+14 to 1.75e+14     5.63 to  5.87
+      DYNAMICAL (two routes)       7.40e+14 to 8.00e+14     9.48 to  9.73
+
+      R0 source                 R0 [Mpc]       vs BARYONIC bound      vs DYNAMICAL bound
+      KKK18 (23 deg)             7.8±0.3           1.330 VIOLATED           0.822   inside
+      Shaya+ 2017 (NAM)          7.3±0.3           1.245 VIOLATED           0.770   inside
+      Karachentsev+ 2014         7.2±0.7           1.228 VIOLATED           0.759   inside
+      Kashibadze+ 2018           7.0±0.3           1.193 VIOLATED           0.738   inside
+
+  ⇒ ⚑ THE OBSERVED KINEMATIC RADIUS EXCEEDS THE BOUND A BARYON-ONLY VIRGO ALLOWS IN
+    4 OF 4 DETERMINATIONS, BY 1.19 TO 1.33,
+    AND LIES INSIDE THE BOUND THE DYNAMICAL MASS ALLOWS IN 4 OF 4.
+    ⇒ ** THE HUBBLE-EDDINGTON RADIUS TRACKS THE DYNAMICAL MASS. **
+
+    THE BOUND-TO-ATTAINED FACTOR, which is what the row says the instrument gives:
+      R0 / r_HE(M_dyn) = 0.74 to 0.82   ⌗ the bound is nearly attained, which is why one cluster decides it.
+
+--------------------------------------------------------------------------------------------------------
+  ⌈ THE ONE RESIDUAL, QUANTIFIED RATHER THAN WAVED AT: THE APERTURES DIFFER
+--------------------------------------------------------------------------------------------------------
+      The baryonic mass is independent of R0 -- which is what Ⓢ② asked for -- but it
+      is NOT measured WITHIN R0.  The gas mass carries no stated aperture, and the
+      total Planck infers from it is quoted 'on a scale up to 2 times larger than the
+      virial radius' -- about 3.4 Mpc against R0 = 7.0 to 7.8 Mpc.  So the baryonic
+      content inside R0 is AT LEAST the value used, and the violation above is an
+      upper bound on the evidence rather than a floor.
+
+      ⇒ For the baryon-only bound NOT to be violated, the baryonic mass inside R0
+        would have to be 1.70 to 2.35 times the gas-plus-stars
+        measured inside about 3.4 Mpc -- i.e. 2.63e+14 to 4.12e+14 Msun of baryons.
+        That is 33 to 56 per cent of the independently measured
+        TOTAL, so it would require Virgo to be baryon-dominated inside R0.
+
+      ⇒ ** SO WHAT IS MISSING IS NOT A SAMPLE -- ONE EXISTS AND IT DECIDES THE
+        DIRECTION -- BUT A BARYONIC MASS MEASURED OUT TO THE TURNAROUND RADIUS. **
+        That is a different clause from the one the row carries, and naming it is
+        the part of this that the row cannot do for itself.
+
+--------------------------------------------------------------------------------------------------------
+  Ⓔ CAN THE DATUM TELL THE TWO APART AT ALL?
+--------------------------------------------------------------------------------------------------------
+      KKK18 (23 deg)         radius span 1.080   against the separation 1.854   RESOLVES
+      Shaya+ 2017 (NAM)      radius span 1.086   against the separation 1.854   RESOLVES
+      Karachentsev+ 2014     radius span 1.215   against the separation 1.854   RESOLVES
+      Kashibadze+ 2018       radius span 1.090   against the separation 1.854   RESOLVES
+
+--------------------------------------------------------------------------------------------------------
+  Ⓥ④ THE COSMOLOGY, PROPAGATED RATHER THAN WAVED THROUGH
+--------------------------------------------------------------------------------------------------------
+      the instrument: H0 = 73, OmL = 0.7
+      the source:     H0 = 73 stated (the instrument's own value); OmL not stated
+      Planck OmL = 0.685, same H0    -> every r_HE bound scales by 1.007  (+0.7 per cent)
+      Planck H0 = 67.3, OmL = 0.685  -> every r_HE bound scales by 1.063  (+6.3 per cent)
+      ⇒ the H0 choice moves the bounds by about 6 per cent, the OmL choice by under 1.
+        The baryon-only violation is 19 to 33 per cent, so it survives either; the
+        bound-to-attained factor would move from 0.74-0.82 to about 0.78-0.87.
+        ⌗ said with a number because r_HE goes as Lambda^(-1/3) and "negligible" is
+          not a measurement.
+
+========================================================================================================
+  ** Nothing is applied to the register.  Supplied, not applied. **
