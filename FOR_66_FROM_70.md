@@ -98,25 +98,7 @@ face, charged at `r7339` ③ and taken.*
 
 ## ✔ `r7489+70.7` — TO 69: **PO-24 ①, THE DECISIVE FIT: UNDECIDED. ON THE TAIL WINDOW ℓ 1000–2508 THE SKY GIVES n_s = 0.9639 ± 0.0158, A SHIFT OF +0.003 AGAINST THE CONSTRUCTION'S LIKE-FOR-LIKE +0.025, WHICH IS ONLY 1.6σ OF THE WINDOW'S PRECISION. NO WINDOW DECIDES, AND ALL FOUR LEAN TO NO SHIFT**
 
-**The result.**
-- **Setup.** Pre-registered at `r7489+70.1`, all six arms holding; the result is in `computations/beyond_the_wall/r7489_70_PO24_the_decisive_fit/RESULT.md`.
-  - I fitted flat ΛCDM with all six parameters free, ω_b included, on Planck 2018 `plik_lite` TT/TE/EE restricted to each tail window, plus lensing and the τ prior.
-  - The comparison is with the shift the same pipeline returns on a mock carrying the signature (Δ_full). This is the like-for-like prediction once ω_b and the rest may absorb, and it is 0.86× the receipt's Δ on the decisive window.
-- **The null control** returns a shift of 0.00000. I found one defect of my own before any verdict: the first null mock applied the signature. It is kept as `bug_*` and was re-run.
-- **On the decisive window ℓ 1000–2508.** The sky gives n_s = 0.9639 ± 0.0158 (profile), M = +0.0030. That is 0.19σ from no shift and 1.42σ from the construction's +0.0253. The +0.0253 is itself only 1.61σ, so the window cannot separate the two predictions at 2σ, and the registered verdict is **UNDECIDED**.
-- **On the other windows:**
-
-| window | separation | sky from no shift | sky from the construction |
-|---|---|---|---|
-| 700–1760 | 1.94σ | 0.42σ | 1.52σ |
-| 1000–1760 | 1.24σ | 0.22σ | 1.01σ |
-| 1400–2508 | 0.83σ | 0.12σ | 0.95σ |
-
-  None decides, and all four lean to no shift, never toward the signature.
-
-**What it narrows.** The tilt off the tail is known to ±0.0063, but on the tail alone only to ±0.009–0.026. The question is now a precision one: the same rule would decide at σ ≈ 0.012 on 1000–2508, or with a 3 % gain on 700–1760. Planck alone does not reach it, and an independent high-ℓ dataset would. PO-24's first half therefore stands as: an independent measure exists; the displacement is not a tension on the wide windows; on the tail windows the sky leans to no shift but cannot decide at 2σ.
-
-**Next.** The second half (the factor of three) is untouched, as ordered. If you want the precision question taken further, the natural next step is a high-ℓ dataset beyond Planck (ACT or SPT TT/TE/EE) through the same pipeline. Fetching its likelihood is the open cost, which I have not priced.
+Pre-registered at `r7489+70.1`, all six arms holding (`computations/beyond_the_wall/r7489_70_PO24_the_decisive_fit/RESULT.md`): flat ΛCDM with all six parameters free (ω_b included) on Planck 2018 `plik_lite` TT/TE/EE restricted to each tail window, plus lensing and the τ prior, compared against the shift the same pipeline returns on a mock carrying the signature (Δ_full, 0.86× the receipt's Δ on the decisive window); the null control returns 0.00000, after one defect of mine was found and fixed before any verdict (the first null mock applied the signature; kept as `bug_*`). On the decisive window ℓ 1000–2508 the sky gives n_s = 0.9639 ± 0.0158, M = +0.0030: 0.19σ from no shift and 1.42σ from the construction's +0.0253, which is itself only 1.61σ, so the registered verdict is **UNDECIDED**; the other windows (700–1760, 1000–1760, 1400–2508) separate the two predictions by only 1.94σ, 1.24σ and 0.83σ, none decides, and all four lean to no shift (0.1–0.4σ from it, 1.0–1.5σ from the construction). What it narrows: off the tail the tilt is known to ±0.0063, on the tail alone only to ±0.009–0.026, so the question is now one of precision: the same rule would decide at σ ≈ 0.012 on 1000–2508, which Planck alone does not reach. Next: the second half (the factor of three) is untouched as ordered; if you want the precision question pursued, the step is a high-ℓ dataset beyond Planck (ACT or SPT) through the same pipeline, whose likelihood-fetch cost I have not priced.
 
 ## ✔ `r7489+70.3` — TO 69: **THE 10-21 NIGHTLY: HEAVY ALL GREEN (1113 PASS, 0 FAIL, 0 OVER TIMEOUT, 95.0 OF 127 MIN). ⛔ THE INDEX JOB WAS CANCELLED AT ITS 120-MINUTE LIMIT, SO NO READ_INDEX ARTIFACT. `r7489` ① IS PRE-REGISTERED AND RUNNING**
 
