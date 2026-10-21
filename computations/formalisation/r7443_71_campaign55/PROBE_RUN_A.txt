@@ -1,0 +1,347 @@
+# r7443+71.71 — campaign 55 (P4), re-run by 71
+# command: cd computations/formalisation/lean && lake env lean probes/S3TTComplete.lean
+# exit 0, wall 200 s, 0 errors (style-linter warnings only, inside the verbatim P2 copy); 3741 lines; no sorry, no native_decide, no meta-code
+probes/S3TTComplete.lean:120:67: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+probes/S3TTComplete.lean:120:71: warning: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+probes/S3TTComplete.lean:120:71: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+probes/S3TTComplete.lean:183:56: warning: This simp argument is unused:
+  LinearMap.sum_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [LinearMap.sub_apply, Module.End.mul_apply, Finset.sum_apply, LinearMap.smul_apply, Pi.sub_apply,
+    Pi.smul_apply, Lt_apply, Fin.sum_univ_three, smul_eq_C_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/S3TTComplete.lean:183:77: warning: This simp argument is unused:
+  Finset.sum_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [LinearMap.sub_apply, Module.End.mul_apply, LinearMap.sum_apply, LinearMap.smul_apply, Pi.sub_apply,
+    Pi.smul_apply, Lt_apply, Fin.sum_univ_three, smul_eq_C_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/S3TTComplete.lean:184:6: warning: This simp argument is unused:
+  LinearMap.smul_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [LinearMap.sub_apply, Module.End.mul_apply, LinearMap.sum_apply, Finset.sum_apply, Pi.sub_apply,
+    Pi.smul_apply, Lt_apply, Fin.sum_univ_three, smul_eq_C_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/S3TTComplete.lean:184:42: warning: This simp argument is unused:
+  Pi.smul_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [LinearMap.sub_apply, Module.End.mul_apply, LinearMap.sum_apply, Finset.sum_apply,
+    LinearMap.smul_apply, Pi.sub_apply, Lt_apply, Fin.sum_univ_three, smul_eq_C_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/S3TTComplete.lean:184:87: warning: This simp argument is unused:
+  smul_eq_C_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [LinearMap.sub_apply, Module.End.mul_apply, LinearMap.sum_apply, Finset.sum_apply,
+    LinearMap.smul_apply, Pi.sub_apply, Pi.smul_apply, Lt_apply, Fin.sum_univ_three]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/S3TTComplete.lean:226:67: warning: This simp argument is unused:
+  smul_smul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [K, add_mul, mul_add, smul_mul_assoc, mul_smul_comm, c1, c2]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/S3TTComplete.lean:254:67: warning: This simp argument is unused:
+  smul_mul_assoc
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Fin.sum_univ_three, eps, mul_add, add_mul, mul_smul_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/S3TTComplete.lean:254:83: warning: This simp argument is unused:
+  mul_smul_comm
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Fin.sum_univ_three, eps, mul_add, add_mul, smul_mul_assoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/S3TTComplete.lean:254:98: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+probes/S3TTComplete.lean:254:102: warning: Unused tactic linter: `module` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+probes/S3TTComplete.lean:254:102: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+probes/S3TTComplete.lean:328:37: warning: This simp argument is unused:
+  LinearMap.add_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [dvL_apply, nab_K_apply, Pi.add_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/S3TTComplete.lean:401:76: warning: This simp argument is unused:
+  smul_eq_C_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [K_apply, smulT, Derivation.leibniz, Fin.sum_univ_three]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/S3TTComplete.lean:500:57: warning: Variable name `b` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _b
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+probes/S3TTComplete.lean:500:59: warning: Variable name `c` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _c
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+probes/S3TTComplete.lean:514:64: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+probes/S3TTComplete.lean:514:68: warning: Unused tactic linter: `iring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+probes/S3TTComplete.lean:514:68: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+probes/S3TTComplete.lean:557:64: warning: This simp argument is unused:
+  smul_eq_C_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [TL, outer, pR, Fin.sum_univ_three, eps]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/S3TTComplete.lean:560:80: warning: This simp argument is unused:
+  smul_eq_C_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [TL, outer, pR, Fin.sum_univ_three, eps]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/S3TTComplete.lean:604:36: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+probes/S3TTComplete.lean:604:63: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+probes/S3TTComplete.lean:700:21: warning: This simp argument is unused:
+  D_TU
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [eK, K_apply, TU, outer, vC, Fin.sum_univ_three, eps, smul_eq_C_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/S3TTComplete.lean:703:21: warning: This simp argument is unused:
+  D_TU
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [hK, K_apply, TU, outer, vC, Fin.sum_univ_three, eps, smul_eq_C_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/S3TTComplete.lean:764:19: warning: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  S̵e̵t̵.̵m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵S̲e̲t̲.̲m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+probes/S3TTComplete.lean:835:31: warning: Variable name `h` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+probes/S3TTComplete.lean:843:51: warning: Variable name `h` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+probes/S3TTComplete.lean:844:51: warning: Variable name `h` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+probes/S3TTComplete.lean:1401:17: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+probes/S3TTComplete.lean:1404:17: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+probes/S3TTComplete.lean:1443:74: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+probes/S3TTComplete.lean:1443:74: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+probes/S3TTComplete.lean:1488:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+probes/S3TTComplete.lean:1568:66: warning: This simp argument is unused:
+  smul_eq_C_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [T1, Derivation.leibniz]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/S3TTComplete.lean:1679:17: warning: This simp argument is unused:
+  LinearMap.sum_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [LL, Finset.sum_apply, Module.End.mul_apply, Fin.sum_univ_three]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/S3TTComplete.lean:1679:38: warning: This simp argument is unused:
+  Finset.sum_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [LL, LinearMap.sum_apply, Module.End.mul_apply, Fin.sum_univ_three]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/S3TTComplete.lean:1679:56: warning: This simp argument is unused:
+  Module.End.mul_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [LL, LinearMap.sum_apply, Finset.sum_apply, Fin.sum_univ_three]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/S3TTComplete.lean:1847:42: warning: This simp argument is unused:
+  Derivation.map_smul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Pi.smul_apply, smul_eq_C_mul, RingHom.id_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/S3TTComplete.lean:1895:53: warning: This simp argument is unused:
+  map_add
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [ckL_apply, DtL_apply, DY_comm, map_sub, map_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/S3TTComplete.lean:1895:62: warning: This simp argument is unused:
+  map_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [ckL_apply, DtL_apply, DY_comm, map_sub, map_add]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/S3TTComplete.lean:1896:51: warning: This simp argument is unused:
+  DY_comm
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [map_sum, Derivation.leibniz]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/S3TTComplete.lean:1922:31: warning: Variable name `h` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+probes/S3TTComplete.lean:2186:30: warning: This simp argument is unused:
+  ← smul_add
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Θ, LinearMap.add_apply, LinearMap.sub_apply, LinearMap.smul_apply, h1, h2, h3, h4, smul_smul,
+    ← sub_smul, ← add_smul]
+
+Note: Simp arguments with `←` have the additional effect of removing the other direction from the simp set, even if the simp argument itself is unused. If the hint above does not work, try replacing `←` with `-` to only get that effect and silence this warning.
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/S3TTComplete.lean:2214:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+probes/S3TTComplete.lean:2265:2: warning: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+probes/S3TTComplete.lean:2356:19: warning: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+probes/S3TTComplete.lean:2437:73: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+probes/S3TTComplete.lean:2437:73: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+probes/S3TTComplete.lean:2595:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+probes/S3TTComplete.lean:2596:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+probes/S3TTComplete.lean:2597:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+probes/S3TTComplete.lean:2598:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+'ShadowProbe.S3TTComplete.An.lapP_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.S3TTComplete.An.evT_lap'' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.S3TTComplete.An.mem_Z_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.S3TTComplete.An.orth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.S3TTComplete.An.zero_of_ip_self' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.S3TTComplete.An.lam_real' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.S3TTComplete.An.proj_exists' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.S3TTComplete.An.approx' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.S3TTComplete.An.orth_poly' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.S3TTComplete.An.vanish' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.S3TTComplete.An.tt_complete' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.S3TTComplete.An.lap_symm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.S3TTComplete.An.neg_lap_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.S3TTComplete.Dn.exists_poly_near' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.S3TTComplete.Sd_eq_span' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.S3TTComplete.lap_spectrum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.S3TTComplete.degree_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.S3TTComplete.tt_spectrum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.S3TTComplete.tt_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.S3TTComplete.tt_count_real' depends on axioms: [propext, Classical.choice, Quot.sound]
