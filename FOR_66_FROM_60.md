@@ -20955,3 +20955,83 @@ the material is:
 ⇒ **The call on all three is yours. Nothing is applied.** ⌗ **And I have not spent this PR's one
 re-run**: a re-run cannot clear a failure that reproduces on pristine `main`, and the rule says to
 spend it only where it could come back green.
+
+---
+
+## ✔ `r7496` — **`PO-87`'s ONE-STATE TEXT, DRAFTED AND TRIALLED AGAINST THE REGISTER'S OWN GATES. THE TERMINAL CLAUSE DOES NOT FIRE AND IS COUNTER-INDICATED; AT MOST A SEVENTH OF THE DEFICIT IS ATTRIBUTED** *(one paragraph, then the draft)*
+
+`r7495` ① answered. ⇒ **The terminal clause does NOT fire, and it is not merely unmet — it is
+counter-indicated.** It reads *"the shape residual is shown to be an artefact of the comparison
+rather than of the computed spectrum"*, and `r7476` measured the excess on the arm's **own**
+configuration and found it there, which is the opposite. **So the draft withdraws it and says
+why** rather than carrying a clause the evidence has turned around. ⇒ **And what six revisions
+bought is a LOCATION and a CHANNEL, not a mechanism:** the excess is made in the projection
+(`0.996` on the source against `1.045` on the spectrum), it is **`99.3` per cent amplitude and
+not phase** on the spectrum your ruling makes the arm's (`143` to one), four carriers are priced
+out against the `+0.04628` target — no acoustic lever, not the kernel's own phase, not the
+wavenumber sum, not the configuration — and the one part attributed to a stated feature of the
+construction is the source's discreteness at **`13.7` per cent, itself an upper reading**. ⇒ ⚑
+**SO AT MOST A SEVENTH OF THE DEFICIT IS ATTRIBUTED AND AT LEAST SIX SEVENTHS IS NOT, and the
+remainder is not "a mechanism" but a named channel: the amplitude channel of the projection's
+acceptance, with no term inside it yet named.** The discharge clause is not met and the row stays
+open on a narrower object; **the data-gated half is unmoved by all six**, so the two halves stay
+apart as the row was opened to express. ⛔ **And the trial found something no reading of the row
+would have: ADOPTING THE ROW ALONE TURNS A GATE RED.** Substituted into `THE_REGISTER` in a
+detached scratch worktree, the row by itself fails `check_frontier_current` — *"`PO-87` lags its
+register row by `103` revision(s)"* — **because the runway is not generated from the row**: it is
+an editorial note inside the frontier generator, and that gate's own instruction is to write the
+runway forward rather than bump a stamp. ⇒ **So the draft is TWO pieces below, and sending only
+the first would hand you a red.** With both in place the trial comes back **green on all seven**
+of `check_frontier_current`, `check_remainder_chains`, `check_register_columns`, `check_row_state`,
+`check_generators_parse`, `check_currency` and `check_glyph_coverage`. ⌗ **The trial earned its keep
+twice:** the first splice of the runway note landed **inside** the preceding string's closing quote
+and broke the generator's syntax — a worktree caught it before it was sent, where CI would have
+caught it after. *A draft that has not been run against the gates it must pass is a guess about
+them.* ⌗ **Five arms, five hits; four controls, all held**, including every number read back out of
+its own merged receipt before the draft was written rather than recalled. **Nothing is applied: you
+adopt it.**
+
+### ⌈ PIECE ONE — the register row, to replace `PO-87`'s line entire
+
+```
+| **PO-87** | **A MECHANISM FOR THE TEMPERATURE-SPECTRUM SHAPE DEFICIT. The comb is right to a part in six hundred, the phase intercept sits inside the sky's own locating spread, the first three peaks land within a grid step and the heights within a few per cent --- and the full-spectrum likelihood still rejects the computed spectrum on its SHAPE. What makes the shape depart?** &#9670; ⚭⚭⚭ ***OPENED r7379 (66) ON `PO-86`'s RULING OF ITS ITEM `1`. FIVE ROWS STOOD NEAR THIS QUESTION AND EACH ANSWERED ITS OWN NARROWER OBJECT CORRECTLY; ALL FIVE STRIKES ARE UPHELD*** --- *`PO-10` (which run the comparison rests on, struck r6799), `PO-47` (what displaces the fourth peak, struck r6877 on a stopping rule: at `0.9`--`1.3` standard deviations the sky cannot tell the models apart there, and its three candidates were not run), `PO-56` (the contrast difference's accounting, struck r7037 on its own terminal clause: the accounting closes exactly and still cannot attribute), `PO-70` (the projection's extra retention, struck r7201: constitutive rather than evidential), `PO-75` (the anisotropic spectrum's source, struck r7243: undischargeable rather than unmeasured).* &#9670; ⛭ ***THE PAPERS' OWN WORDS, WHICH ARE THE ROW'S OBJECT AND NOT A PARAPHRASE.*** *`P18`: "The acoustic rejection is **the largest open item in the paper** ... **what the cosmology names as owed is a mechanism for the deficit**, which the driving's measured size does not supply." `P7`: "a mechanism for that deficit is what the cosmology names as owed."* ⌗ *And the object rejected is a computed spectrum rather than the framework, which is `P18`'s own clause.* &#9670; ✔ ***WHAT IS KNOWN, AS IT NOW STANDS AFTER SIX MEASURED REVISIONS --- AND IT IS A LOCATION AND A CHANNEL, NOT YET A MECHANISM.*** ⌈ ***THE EXCESS IS LOCATED, TO ONE SIDE OF A NAMED BOUNDARY:*** *the same statistic reads `0.996` on the source at last scattering and `1.045` on the spectrum, so it is made in the projection from wavenumber to multipole and not in the acoustic dynamics.* ⌈ ***AND IT IS AMPLITUDE AND NOT PHASE, ON THE SPECTRUM THE r7489 RULING MAKES THE ARM'S.*** *The projected statistic is identically the product of an amplitude ratio and a phase cosine, so the excess splits exactly; on the ladder it is `+0.04552` of amplitude against `-0.00032` of phase --- **`99.3` per cent amplitude, `143` to one** (r7490). ⌗ Which is what `P15` and `P18` already say produces the gap, measured on the arm's own spectrum rather than asserted.* ⌈ ***FOUR CARRIERS ARE PRICED OUT AND NONE REACHES THE TARGET.*** *The required phase slope is `+0.04628` cycles per peak. No acoustic lever reaches it: loading `+0.00537` per `ln RBFAC`, driving `-0.00289`, `H_0` `-0.00200`, `\Omega_m` `-0.00121`, against an `se(s)` of `0.01116`; de-tilting moves it `-0.01944`, `42` per cent of target (r7466). Nor the projection kernel's own phase: its run is `+0.50215` cycles per peak, a half-cycle Bessel alternation plus a `0.00215` residual at `4.6` per cent of target, the differential `+0.00056` and branch-invariant (r7468). Nor the wavenumber sum: the matched crossing pair moves the statistic `-0.00000`, the one control that moved it `74` per cent being a sampling the guard rejects (r7474). Nor the configuration: the projected continuum at the excess's own configuration moves it `-0.00004`, `0.09` per cent of the `0.045`, so **the excess belongs to the background on that arm's own configuration** (r7476), and the sampling is converged, the next doubling moving every component by parts in ten million (r7480).* ⌈ ***ONE PART OF IT IS NOW ATTRIBUTED TO A STATED FEATURE OF THE CONSTRUCTION, AND IT IS A SMALL PART.*** *The source spectrum is discrete by degree, so the ladder is the arm's and the continuum is the check; the gap between them is between two summand sets rather than numerics, and it carries `0.09` per cent of the excess in the projected statistic but `13.7` per cent once amplitude and phase are read apart, their two moves being opposite in sign and equal to `0.9` per cent (r7490). ⌗ The metric there is the statistic's own and a likelihood would weight it differently; the phase half sits at high `q` where a likelihood carries least weight, so `13.7` per cent is an upper reading.* ⇒ **SO AT MOST A SEVENTH OF THE DEFICIT IS ATTRIBUTED AND AT LEAST SIX SEVENTHS IS NOT.** ⌊ ***AND WHAT WAS ALREADY RULED OUT STANDS:*** *the driving, within `4` per cent of the control's and slightly weaker (`0.1717` against `0.1792` in `ell_1/ell_A`); the damping envelope, a seventh of a multipole against an offset of two; the two instrument faults a reader would suspect; and the third-peak band, fixed by the same epoch the distance data fix. ⌗ The residual's period prefers `312.0`, excluding `ell_A = 298` at `\Delta\chi^{2} = 15.0` --- but the control prefers a longer period too, so preferring one is not by itself this arm's.* &#9670; ⛭ THE LIVE CLAUSE (SET r7496).*** ***THE ROW STAYS SPLIT AND THE SPLIT IS NOW SHARP ON BOTH SIDES.*** *WORKABLE: the amplitude channel of the projection's acceptance, carrying at least six sevenths of the `0.045` excess, with the location, the channel and four excluded carriers in hand and no term inside the acceptance yet named. **DATA-GATED: the fourth-peak displacement, unmoved by any of the six revisions --- `PO-47` measured that the sky cannot discriminate there, so a candidate can be computed and not tested, and its three unrun candidates are the named remainder.*** ⌗ ***WHAT WOULD DISCHARGE IT:*** *a term of the projection's acceptance named and computed to carry the unattributed share of the AMPLITUDE excess --- the channel is no longer open to question, only its term --- with the fourth-peak half reported under its own data gate rather than folded in.* ⌗ ***OR TERMINATES IF:*** *the amplitude excess is shown to be the sum of the source's own discreteness and effects already priced out, with nothing left for a term of the acceptance to carry --- in which case the deficit is a consequence of stated features and the row ends as a result rather than an answer.* ⌗ ***AND THE PREVIOUS TERMINAL CLAUSE IS WITHDRAWN AS COUNTER-INDICATED RATHER THAN MERELY UNMET:*** *it read "the shape residual is shown to be an artefact of the comparison rather than of the computed spectrum", and r7476 measured the excess on the arm's OWN configuration and found it there, which is the opposite of an artefact of the comparison.* | a mechanism for the computed temperature spectrum's shape deficit, with its workable and data-gated halves reported apart | `P15` `sec:acoustic` · `sec:refit-bound`; `P18` `sec:frontier`; `P7` `sec:frontiers` item 1 |
+```
+
+### ⌈ PIECE TWO — the runway continuation, appended inside `PO-87`'s runway string in the frontier generator, after the final closing quote and before the `),`
+
+```
+        'r7496 WRITES IT FORWARD on six measured revisions, and what they bought is a LOCATION and a '
+        'CHANNEL rather than a mechanism. The excess is amplitude and not phase on the spectrum the r7489 '
+        'ruling makes the arms: the projected statistic is identically the product of an amplitude ratio and '
+        'a phase cosine, so it splits exactly, and on the ladder it is +0.04552 of amplitude against -0.00032 '
+        'of phase -- 99.3 per cent amplitude, 143 to one -- which is what P15 and P18 already say produces '
+        'the gap, now measured on the arms own spectrum rather than asserted. FOUR CARRIERS ARE PRICED OUT '
+        'AND NONE REACHES THE TARGET of +0.04628 cycles per peak: no acoustic lever does (loading +0.00537 '
+        'per ln RBFAC, driving -0.00289, H0 -0.00200, Om -0.00121, against an se(s) of 0.01116, and de-tilting '
+        'moves it -0.01944, 42 per cent of target, r7466); nor the projection kernels own phase (its run is '
+        '+0.50215 cycles per peak, a half-cycle Bessel alternation plus a 0.00215 residual at 4.6 per cent of '
+        'target, the differential +0.00056 and branch-invariant, r7468); nor the wavenumber sum (the matched '
+        'crossing pair moves the statistic -0.00000, the one control that moved it 74 per cent being a '
+        'sampling the guard rejects, r7474); nor the configuration (the projected continuum at the excess own '
+        'configuration moves it -0.00004, 0.09 per cent of the 0.045, so the excess belongs to the background '
+        'on that arms own configuration, r7476, and the sampling is converged, the next doubling moving every '
+        'component by parts in ten million, r7480). ONE PART IS NOW ATTRIBUTED TO A STATED FEATURE AND IT IS '
+        'A SMALL PART: the source spectrum is discrete by degree, so the ladder is the arms and the continuum '
+        'the check, the gap between them is between two summand sets rather than numerics, and it carries 0.09 '
+        'per cent of the excess in the projected statistic but 13.7 per cent once amplitude and phase are read '
+        'apart, their two moves opposite in sign and equal to 0.9 per cent (r7490) -- an UPPER reading, since '
+        'the metric is the statistics own and the phase half sits at high q where a likelihood carries least '
+        'weight. So AT MOST A SEVENTH OF THE DEFICIT IS ATTRIBUTED AND AT LEAST SIX SEVENTHS IS NOT, and the '
+        'workable half is now the AMPLITUDE CHANNEL OF THE PROJECTIONS ACCEPTANCE with no term inside it yet '
+        'named. The data-gated half is unmoved by all six: PO-47 measured that the sky cannot discriminate at '
+        'the fourth peak, so a candidate can be computed and not tested, and its three unrun candidates are '
+        'the named remainder. AND THE ROWS PREVIOUS TERMINAL CLAUSE IS WITHDRAWN AS COUNTER-INDICATED rather '
+        'than merely unmet: it read that the shape residual is shown to be an artefact of the comparison '
+        'rather than of the computed spectrum, and r7476 measured the excess on the arms OWN configuration and '
+        'found it there, which is the opposite. The clause that replaces it fires if the amplitude excess is '
+        'shown to be the sum of the sources own discreteness and effects already priced out, with nothing left '
+        'for a term of the acceptance to carry. '
+```
+
+⌗ **Adopt both or neither.** The row alone is the `103`-revision stale runway above; the runway
+alone would describe a row that does not say it.
