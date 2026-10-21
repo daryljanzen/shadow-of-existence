@@ -405,7 +405,14 @@ P11 19, P1 19, P13 16, P5 15, P3 15, P2 15, P6 11, P9 10, P12 7, P4 6. Already o
 crossing, `PO-92` §open), `P3` (`PO-92` at line 1222, `PO-93` §curvature), `P2` (`PO-91` §construction-not-error),
 `P18` (`PO-93` after `P3`).
 
-- `P3`: the masthead comment fragment is split.
+- `P3`: the masthead comment fragment is split. **Done (r7519)**, with `P3`'s owed edits: §curvature carries `PO-93`'s Virgo result
+  (four kinematic radii past the baryon-only bound by 19 to 33 per cent, inside the dynamical one, read by a new receipt that runs
+  node 60's sample unchanged) in place of "until the mass question is settled"; the open section is now "the charged closed loop, a
+  stated limit", its own p=1 and three-orders result carrying the case (`PO-92` closes). **The open-language read is done (r7519)**:
+  13 sites, 9 ordinary English, 2 pointed at `PO-94`, 1 owed (below); four sentences rewritten (the hinge three-fold, which named
+  itself the generation multiplicity and a within-state index in one sentence, now only the latter; the generators' completeness
+  pointed at the groupoid paper, which shows it; the two cubics' root sets, which `P7` shows are not related even as covers, no longer
+  "held open"; the charged question's pointer to the framework paper's bead replaced by the answer that follows it).
 - `P5`: R's dial action given as w to -w and as w to w+pi. **Done (r7517)**: both are R, as its two lifts to the dial (each
   negates 2M and r0; they differ by the sheet involution w to pi-w), and the Galois remark now says so. With it, `P5`'s owed
   one-state edits: the crossing's field evolution computed (the reassignment remark and §open), §open's charged interior a
@@ -514,5 +521,7 @@ crossing, `PO-92` §open), `P3` (`PO-92` at line 1222, `PO-93` §curvature), `P2
   configuration, not measured; the flux the seam radiates into the lap's future, not computed; `P18`'s base rate for the
   theory-choice criterion (the cases where the same criteria misled not sampled), which `P6` sets as the discipline's first programme; `P16`'s thermalization of the infall energy that sets the peak floor,
   argued and robust to the four-order margin but not computed.
+- `P3`'s suggestion that the charge-conjugation Z2, independent of Aut(A2), is the right shape for a distinction between two
+  complementary readings (the 3 and its conjugate), "noted and not claimed; testing it is not this paper's work".
 - Close: strike `PO-86`, put `check_open_item_coherence` in CI, and reactivate 60, cc66 and 70 (and 71 if a
   formalisation row is open by then) on the frontier as it stands, the projection-distance adjudication first.
