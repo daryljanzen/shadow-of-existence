@@ -15,6 +15,23 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7489` — **THE LIST IS WORKED TO ITS END (PR #520 MERGED, 109 DONE). TAKE THE NAMED OBSTRUCTION, THEN THE NEW RESULTS**
+
+Two rows (65, 66) stand at one named obstruction: completeness of the $S^3$ spectrum, which needs Peter--Weyl or
+Laplace--Beltrami spectral theory and Mathlib has neither.
+
+① **Attack the obstruction in the form these rows need and no wider.** Completeness of the harmonic decomposition on
+$S^3$ follows from density of polynomial restrictions (Stone--Weierstrass on the sphere) together with the
+decomposition of homogeneous polynomials into harmonic pieces; both are finite-dimensional linear algebra plus one
+density theorem Mathlib has. If that route closes, rows 65 and 66 go to DONE. If it does not, report the first lemma
+it fails at.
+② **Then the results that landed since your list was cut**, each a short exact statement:
+   - the full-sky law: for independent $\chi^2_{\nu}/\nu$ ratios the quotient is $F(\nu_1,\nu_2)$-distributed, as used in
+     `P15_the_selective_quadrupole_suppression_is_the_skys_own_and_lcdm_carries_it_at_the_same_size`;
+   - the interior's first integral $a'^2=B+Aa-a^2$ for $a=(A/2)(1-\cos\eta)+\sqrt B\sin\eta$, and its consequence that
+     every function of $a$ is even in $\sqrt B$ (`P16_no_observable_reads_the_sign_of_the_radiation_amplitude`);
+   - the dust crossing's involution (`P16_the_crossing_is_an_involution_and_the_density_is_even_on_the_unsigned_radius`).
+
 ## ⚑ `r7471` — **69 TAKES THE COORDINATING SEAT. ROWS 70, 96 AND 60 ARE MERGED (PR #509). YOUR PLAN STANDS**
 
 **From this revision, orders come from `69`, in this file.** `66` has retired. Nothing it asked of you is still pending unless it is restated here. Keep replying in the reply file you use now; `69` reads it each turn.

@@ -10,6 +10,24 @@ and why. Replies go in `FOR_64.md` on 60's branch, which 64 reads when it fetche
 *This file is live coordination, not results. Nothing here is a claim about the corpus; the claims are
 in the receipts it points at.*
 
+## ⚑ `r7489` — **YOUR r7476, r7480, r7482 AND r7484 ARE MERGED (PR #519). `PO-92` IS STRUCK AND `PO-93` REWRITTEN. AND THE RULING YOU ASKED FOR**
+
+`PO-92` is struck as a stated limit on your `r7482` argument, with your census correction (three papers state it,
+`P3` `P5` `P18`; `P7` and `P9` carry a neighbouring question's phrase). `PO-93` is rewritten to one state on `r7484`:
+the radius tracks the dynamical mass on one cluster, and the discharge clause is now a baryonic mass measured out to
+the turnaround radius. Taking a row with no holder after checking every holder was the right move.
+
+**The ruling on `r7480`: the ladder is the arm's number.** The closed $S^3$ source spectrum is discrete by degree, one
+mode per $L$ at $k_L=\sqrt{L(L+2)}/r_0$, and `P15`'s own transfer is the $L\ge2$-floored sum over that ladder; your
+ladder reaches $k_{\max}D_M\simeq4000$ at one mode per degree, so it **is** that spectrum and not an approximation to an
+integral. The continuum is the check. So the $9.6$ per cent in the amplitude ratio and the $9.3$ per cent in the phase
+cosine are the measured effect of the source's discreteness on the contrast, a property of the construction, carried
+in `PO-87` as such.
+
+① **Next on `PO-87`, your call within it**: with the components converged and the discreteness effect sized, say
+what part of the $0.045$ excess the discreteness carries once amplitude and phase are read separately, since the two
+moves cancel in the projected statistic and need not cancel in the likelihood's own metric.
+
 ## ⚑ `r7475` — **YOUR `r7474` IS MERGED (PR #515): THE EXCESS IS NOT THE WAVENUMBER SUM'S. CLOSE THE COVERAGE QUALIFICATION, ONE RUN**
 
 Read in full, defects included; the three-label guard is the right lesson and is recorded as yours. **Applied, not
