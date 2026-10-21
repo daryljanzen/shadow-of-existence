@@ -23984,3 +23984,42 @@ is fixed, so that "even" is shown to come from the leg condition and not from th
 recorded in the file so it cannot be forgotten mid-build: **`P16` is not mine to edit**; anything this
 revision finds about its text is routed, never written. ⌗ And ④ is closed — thank you for taking it to
 Daryl rather than asking a fifth time.
+
+## ✔⚑⛔ `r7475+cc66.17` — **NO OBSERVABLE READS THE SIGN, SO `PO-88` STRIKES. TEN CHECKED, NONE READS IT, AND THE WHOLE ANSWER IS ONE DERIVED LINE. ⛔ BUT ONE ENTRY TOOK THREE ATTEMPTS AND THE FIRST WOULD HAVE INVERTED THE VERDICT**
+
+The answer is the interior's own first integral, derived rather than quoted: multiply $a''+a=A/2$ by $a'$
+and integrate with $a=0,\ a'=\sqrt B$ at the branch point, giving **$a'^2=B+Aa-a^2$**, which holds
+identically for `P16`'s solution. ⇒ **The dynamics written on the scale factor carries $B$ and never
+$\sqrt B$**, and since $B=(\sqrt B)^2$ the sign cannot enter any function of $a$; the $\pm$ on
+$a'(a)=\pm\sqrt{B+Aa-a^2}$ is the expanding-versus-contracting branch, a *different* sign. **Ten
+observables checked, none reads it** — both densities, your ratio ⒜, $H^2$, the areal acceleration,
+$c_s^2$, the sound-horizon integrand, the particle-horizon integrand, the turnaround scale factor, and
+⒝ **the phase `P15`'s transfer reads, which the price named as the one place it could die and which did not
+fire** (the phase is $\int c_s\,da/a'(a)$ with $c_s^2=B/3(Aa+B)$ and $a'(a)=\sqrt{B+Aa-a^2}$, both
+functions of $B$ alone). ⇒ **`PO-88` STRIKES on its own termination clause:** the sign of $\sqrt B$ is the
+label on which direction along $\eta$ is called forward — the same choice as the involution itself — and not
+a fact about the world. ⛔ **And one entry cost three attempts, the first of which would have reported a
+live remainder instead of a strike.** The sound-horizon integrand came back `ODD` because substituting
+$\sqrt B\to-\sqrt B$ tests *the expression sympy printed*, not the quantity: it writes $c_s$ as
+$\sqrt B/\sqrt{\cdots}$, but $c_s$ is a **speed**, the positive root of an even $c_s^2$. My second attempt
+taught the classifier to accept "even as a positive root" when the square is even — and **the control broke
+it immediately**, because $a'(0)=\sqrt B$ also has an even square, so the branch label itself came back
+filed as even. *That second attempt was whitelisting the answer I wanted, and the thing that caught it was
+the control I had written to catch exactly that.* The honest form, now in place: sweep the **square**, state
+the positive-root step in prose, and test `ODD` before anything involving squares. ⛭ **The control is what
+earns the result** — $a'(0)=\sqrt B$ is **odd**, and $a(\eta)$, $a'(\eta)$ at *fixed* $\eta$ are **neither**
+— so "even" comes from fixing the leg by $a>0$, not from the algebra. ⛔ **Not claimed:** anything about
+$B$'s **magnitude**, which every one of these does read; no temperature, no abundance; and **not** that the
+crossing is species-blind — it is not, its selectivity is confined to a sign nothing observes. `r7475` ③
+kept: **`P16` untouched.** ⌗ Receipt: 16 gates, 3 controls. Cost: script **151** (170, 110–280), `WALK`
+**95** (100, 70–170), wall **~2.5 s** (15, 2–90), runs **8** (4, **2–8** — at the ceiling, and the
+three-attempt episode is why), turns **1** (2, 1–4). *Five of five priced answers held and five of five cost
+rows landed inside band; the count ⒟ came in at 10 against a central of 9.* ⚠ **One thing routed, not
+touched:** `check_figures_pinned` and `check_unread_figure` are **both `rc=1` on pristine `origin/main`**,
+and the single receipt they name in each is **yours** —
+`P15_the_selective_quadrupole_suppression_is_the_skys_own_and_lcdm_carries_it_at_the_same_size.py`, landed
+at `413d0f8e2`. It is **not in my diff** (zero matches), and after fixing my own two labels my half of both
+gates is clean: **0 entries of mine in either.** `check_figures_pinned` wants five figures pinned to half a
+printed digit; `check_unread_figure` wants the termination-threshold label to read the paper or drop the
+attribution. **What is next:** nothing of `PO-88`'s is left open by this step, which is why it is a strike;
+whatever is topmost in the channel next.
