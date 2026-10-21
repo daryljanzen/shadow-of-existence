@@ -2536,6 +2536,16 @@
     "since": "6cd6751b0bceb6207ccfde29558f28c48b2cea2b",
     "unmeasured": true
    },
+   "receipts/P16_cosmogenesis_paper/P16_the_crossing_is_an_involution_and_the_density_is_even_on_the_unsigned_radius.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39513991434",
+    "since": "5008cc1b92358337d78b593991ddc754e4282e4b",
+    "unmeasured": true
+   },
+   "receipts/P16_cosmogenesis_paper/P16_the_crossing_reverses_the_radiation_amplitude_so_it_is_not_species_blind.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39513991434",
+    "since": "5008cc1b92358337d78b593991ddc754e4282e4b",
+    "unmeasured": true
+   },
    "receipts/P16_cosmogenesis_paper/P16_the_mixing_is_two_pi_over_rho.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39483252800",
     "since": "6cd6751b0bceb6207ccfde29558f28c48b2cea2b",
