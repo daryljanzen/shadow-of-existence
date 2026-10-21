@@ -20,3 +20,59 @@ warning. The build was delegated and re-run by 71 (`PROBE_RUN_A.txt`).*
 
 ***Census:*** row 65 stays `DONE (chartable half)`. Its open half is narrowed to the imported TT spectrum alone,
 which is part T.
+
+---
+
+# `r7443+71.59` — RESULT, campaign 51, part T: the TT spectrum of the round S³, lower half BUILT at every level with full multiplicity; completeness REPORTED at a named obstruction. ⌗ p `0.35` (eigen-tensors at every level) came true. ⌗ Rows 65 and 66 stay `DONE (chartable half)`, each open half narrowed to completeness alone
+
+*`probes/S3TTSpectrum.lean`: 13 theorems on `[propext, Classical.choice, Quot.sound]`, `87 s`, 1094 lines. The
+build was delegated and re-run by 71 (`PROBE_RUN_B.txt`).*
+
+## Built
+
+- ***The model.*** Unit S³ in ℍ, with the left-invariant frame `E_a(q) = q·u_a` acting as derivations on `ℂ[x₀..x₃]`.
+  `frame_bracket` proves `[E_a, E_b] = 2ε_abc E_c`, and the rough Laplacian reproduces `s3_tt_eigen` at `m = 3`.
+- ***The restriction to S³ is genuine.*** `tangent` proves that the frame fields preserve the ideal of S³, so every
+  operator descends to tensor fields on S³, and independence is proved there.
+- ***Symmetry.*** Two `sl₂` triples, from the frame Lie derivatives and from the right-invariant fields, commute with
+  `∇²` and preserve each TT eigenspace.
+- ***Seeds.*** Two level-3 seeds, one frame-constant and one right-invariant, are raised by `wᴺ` to every level
+  (`seed_TT`), with eigenvalue `(N+3)² − 3`.
+- ***Multiplicity.*** Mathlib's `IsSl2Triple.HasPrimitiveVectorWith` gives non-vanishing, and
+  `Module.End.eigenvectors_linearIndependent'` gives independence. ***`tt_level_multiplicity`:*** for every `m ≥ 3`
+  there are `2(m² − 4)` tensor fields in `TT(m² − 3)` that are ℂ-linearly independent on S³. `tt_m345` gives 10, 24
+  and 42.
+- ***Agreement with the corpus:*** `λ = m² − 3` and `deg = 2(m² − 4)`, the two SO(4) multiplets `k = j ± 2`, each of
+  size `(m+2)(m−2)`.
+
+## The obstruction, named
+
+"These are ALL the TT eigen-tensors" needs either Peter–Weyl for SU(2), or a Laplace–Beltrami operator on `L²`
+tensor fields of a Riemannian manifold with its spectral theory. ***Searched by object*** (case-insensitive file
+counts in the pinned Mathlib):
+
+| pattern | files |
+|---|---|
+| `Peter.?Weyl` | 0 |
+| `spherical.?harmonic` | 0 |
+| `Laplace.?Beltrami` | 0 |
+| `zonal` | 0 |
+| `Wigner` | 0 |
+| `Casimir` | 0 |
+| `specialUnitaryGroup` | 1, the bare submonoid |
+| `unitary.?representation` | 1, a docstring |
+| `Laplacian` | 13, all flat space |
+| `spectral theorem` | 3, finite-dimensional only |
+| `haarMeasure` | 47, nothing specific to SU(2) |
+
+Present and used: `IsSl2Triple` (8 files) and Stone–Weierstrass (10). `RepresentationTheory/` has no compact-group
+completeness.
+
+***One step not formalised:*** the passage from complex to real dimension (real and imaginary parts of a real
+operator's eigenvectors). It is standard.
+
+## Census
+
+Rows 65 and 66 stay `DONE (chartable half)`. Each open half is now exactly ***completeness of the TT spectrum***, a
+named Lean obstruction. That is the standing order's other exit. Row 66's deficiency claim is prose, excepted as
+text pins are. Row 65's cutoff slope is built (part S).

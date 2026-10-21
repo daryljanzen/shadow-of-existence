@@ -1,0 +1,186 @@
+# r7443+71.59 — campaign 51 T, re-run by 71
+# command: cd computations/formalisation/lean && lake env lean probes/S3TTSpectrum.lean
+# exit 0, wall 87 s, 0 errors; 1094 lines; no sorry, no native_decide
+probes/S3TTSpectrum.lean:77:67: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+probes/S3TTSpectrum.lean:77:71: warning: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+probes/S3TTSpectrum.lean:77:71: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+probes/S3TTSpectrum.lean:140:56: warning: This simp argument is unused:
+  LinearMap.sum_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [LinearMap.sub_apply, Module.End.mul_apply, Finset.sum_apply, LinearMap.smul_apply, Pi.sub_apply,
+    Pi.smul_apply, Lt_apply, Fin.sum_univ_three, smul_eq_C_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/S3TTSpectrum.lean:140:77: warning: This simp argument is unused:
+  Finset.sum_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [LinearMap.sub_apply, Module.End.mul_apply, LinearMap.sum_apply, LinearMap.smul_apply, Pi.sub_apply,
+    Pi.smul_apply, Lt_apply, Fin.sum_univ_three, smul_eq_C_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/S3TTSpectrum.lean:141:6: warning: This simp argument is unused:
+  LinearMap.smul_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [LinearMap.sub_apply, Module.End.mul_apply, LinearMap.sum_apply, Finset.sum_apply, Pi.sub_apply,
+    Pi.smul_apply, Lt_apply, Fin.sum_univ_three, smul_eq_C_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/S3TTSpectrum.lean:141:42: warning: This simp argument is unused:
+  Pi.smul_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [LinearMap.sub_apply, Module.End.mul_apply, LinearMap.sum_apply, Finset.sum_apply,
+    LinearMap.smul_apply, Pi.sub_apply, Lt_apply, Fin.sum_univ_three, smul_eq_C_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/S3TTSpectrum.lean:141:87: warning: This simp argument is unused:
+  smul_eq_C_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [LinearMap.sub_apply, Module.End.mul_apply, LinearMap.sum_apply, Finset.sum_apply,
+    LinearMap.smul_apply, Pi.sub_apply, Pi.smul_apply, Lt_apply, Fin.sum_univ_three]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/S3TTSpectrum.lean:183:67: warning: This simp argument is unused:
+  smul_smul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [K, add_mul, mul_add, smul_mul_assoc, mul_smul_comm, c1, c2]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/S3TTSpectrum.lean:211:67: warning: This simp argument is unused:
+  smul_mul_assoc
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Fin.sum_univ_three, eps, mul_add, add_mul, mul_smul_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/S3TTSpectrum.lean:211:83: warning: This simp argument is unused:
+  mul_smul_comm
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Fin.sum_univ_three, eps, mul_add, add_mul, smul_mul_assoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/S3TTSpectrum.lean:211:98: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+probes/S3TTSpectrum.lean:211:102: warning: Unused tactic linter: `module` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+probes/S3TTSpectrum.lean:211:102: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+probes/S3TTSpectrum.lean:285:37: warning: This simp argument is unused:
+  LinearMap.add_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [dvL_apply, nab_K_apply, Pi.add_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/S3TTSpectrum.lean:358:76: warning: This simp argument is unused:
+  smul_eq_C_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [K_apply, smulT, Derivation.leibniz, Fin.sum_univ_three]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/S3TTSpectrum.lean:457:57: warning: Variable name `b` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _b
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+probes/S3TTSpectrum.lean:457:59: warning: Variable name `c` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _c
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+probes/S3TTSpectrum.lean:471:64: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+probes/S3TTSpectrum.lean:471:68: warning: Unused tactic linter: `iring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+probes/S3TTSpectrum.lean:471:68: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+probes/S3TTSpectrum.lean:514:64: warning: This simp argument is unused:
+  smul_eq_C_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [TL, outer, pR, Fin.sum_univ_three, eps]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/S3TTSpectrum.lean:517:80: warning: This simp argument is unused:
+  smul_eq_C_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [TL, outer, pR, Fin.sum_univ_three, eps]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/S3TTSpectrum.lean:561:36: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+probes/S3TTSpectrum.lean:561:63: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+probes/S3TTSpectrum.lean:657:21: warning: This simp argument is unused:
+  D_TU
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [eK, K_apply, TU, outer, vC, Fin.sum_univ_three, eps, smul_eq_C_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/S3TTSpectrum.lean:660:21: warning: This simp argument is unused:
+  D_TU
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [hK, K_apply, TU, outer, vC, Fin.sum_univ_three, eps, smul_eq_C_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+probes/S3TTSpectrum.lean:721:19: warning: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  S̵e̵t̵.̵m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵S̲e̲t̲.̲m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+probes/S3TTSpectrum.lean:792:31: warning: Variable name `h` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+probes/S3TTSpectrum.lean:800:51: warning: Variable name `h` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+probes/S3TTSpectrum.lean:801:51: warning: Variable name `h` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'ShadowProbe.S3TTSpectrum.frame_bracket' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.S3TTSpectrum.lap_K' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.S3TTSpectrum.K_TT' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.S3TTSpectrum.TU_lap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.S3TTSpectrum.TL_lap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.S3TTSpectrum.seed_TT' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.S3TTSpectrum.sU_TT' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.S3TTSpectrum.sL_TT' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.S3TTSpectrum.tangent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.S3TTSpectrum.mem_spec' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.S3TTSpectrum.tt_level_multiplicity_N' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.S3TTSpectrum.tt_level_multiplicity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ShadowProbe.S3TTSpectrum.tt_m345' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -10,6 +10,20 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ⌗ CAMPAIGN 51 COMPLETE (`r7443+71.54`, `+71.55`, `+71.59`). ⌗ THE STANDING ORDER'S LIST IS AT ITS END: `109` DONE, `2` CHARTABLE HALVES AT ONE NAMED OBSTRUCTION
+
+The TT spectrum of the round S³ is built at every level (`probes/S3TTSpectrum.lean`, 13 theorems, standard axioms,
+`87 s`). For every `m ≥ 3` there are `2(m² − 4)` linearly independent TT tensor fields on S³ with `−∇²`-eigenvalue
+`m² − 3`. They come from two seeds raised by `sl₂` ladders and are separated by Mathlib's own `IsSl2Triple` and
+eigenvector independence. That is the corpus's `λ` and `deg` exactly. The registered p of `0.35` came true. What
+cannot be built is completeness: that these are all the eigen-tensors. It needs Peter–Weyl for SU(2) or a
+Laplace–Beltrami spectral theory, and Mathlib has neither. The searches are recorded by object in the result
+(Peter–Weyl, spherical harmonics, Laplace–Beltrami, Wigner and Casimir each 0 files). So rows 65 and 66 leave the
+order by its other exit, a specific Lean obstruction: each stays `DONE (chartable half)`, and its open half is now
+that one statement and nothing else. Row 65's cutoff slope is built (`→ 15/4`, part S). Row 66's deficiency claim
+is prose. ***The order's list is worked to its end:*** every row is `DONE` except these two, which stop at a named
+Mathlib gap. The next step is no longer mine to pick, so I await an order.
+
 ## ✔ CAMPAIGN 49: ROW 62 `DONE` (`r7443+71.49`, `+71.58`). ⌗ DONE `109`; ONLY THE TWO CHARTABLE HALVES REMAIN
 
 Row 62's two data gates are closed (`probes/Row62Data.lean`, 38 theorems, standard axioms, `3217 s`). All ~40 000
