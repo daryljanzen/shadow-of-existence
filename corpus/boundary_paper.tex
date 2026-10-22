@@ -1,168 +1,109 @@
 \documentclass[11pt]{article}
 % =====================================================================
-% [†ONT-BDRY] THE MATTER BOUNDARY — this paper is the HOME (ONTOLOGY_FOUNDATION_INDEX.md §1p).
-%   THE REGISTER, FIXED AT THE OUTSET: "a negative result is as easy to overstate as a positive one."
-%   WHAT IS ESTABLISHED IS BOUNDED: colour does not arise as a continuous internal gauge symmetry through
-%   ANY EXAMINED GEOMETRIC-ISOMETRY ROUTE. THE UNIVERSAL CLAIM IS NOT MADE. Colour by the ordinary route —
-%   an SU(3) matter bundle placed by hand — IS IN NO JEOPARDY AND IS NOT THE SUBJECT.
-%   THE HARD CONSTRAINTS: (C2) su(3) is NOT in so(5,1), STRUCTURALLY — its smallest faithful real rep is
-%   SIX-dimensional, so su(3) is in so(6) but not so(5), and so(5) is the maximal compact subalgebra of
-%   so(5,1). "Colour needs a six-dimensional real carrier; the Lorentzian substrate's compact sector
-%   supplies only five." (C3) WHERE su(3) CAN ACT GEOMETRICALLY, IT ACTS *SPATIALLY*, NOT INTERNALLY — it
-%   acts transitively on S^5 = SU(3)/SU(2) and ADMITS NO EQUIVARIANT MAP TO THE COSMOLOGICAL S^3, so the
-%   cut breaks it: "a symmetry of SPACE, which the physical cut destroys." (C7) su(3) lives ONLY on the
-%   compact (Wick) face, reached OFF the real Lorentzian substrate by a change of signature.
-%   *** THREE OPERATIONS — NEVER FUSE THEM (the last two co-localised at the equatorial seam
+% [†ONT-BDRY] THE MATTER BOUNDARY AND THE PHYSICS SYNTHESIS -- this paper is the HOME
+%   (ONTOLOGY_FOUNDATION_INDEX.md §1p).
+%   REGISTER: a negative result is as easy to overstate as a positive one. WHAT IS ESTABLISHED IS
+%   BOUNDED: colour does not arise as a continuous internal gauge symmetry through ANY EXAMINED
+%   GEOMETRIC-ISOMETRY ROUTE. The universal claim is not made, in either direction. Colour by the
+%   ordinary route (an SU(3) matter bundle placed by hand) is in no jeopardy and is not the subject.
+%   THE HARD CONSTRAINTS: (C2) su(3) is not in so(5,1), structurally -- its smallest faithful real rep
+%   is six-dimensional, so su(3) is in so(6) but not so(5), and so(5) is the maximal compact subalgebra
+%   of so(5,1). (C3) Where su(3) acts geometrically it acts SPATIALLY, not internally: transitively on
+%   S^5 = SU(3)/SU(2), with no equivariant map to the cosmological S^3, so the cut breaks it. (C7) su(3)
+%   lives only on the compact (Wick) face, reached off the real Lorentzian substrate by a change of
+%   signature.
+%   *** THREE OPERATIONS -- NEVER FUSE THEM (the last two co-localised at the equatorial seam
 %   r = sqrt(3/Lambda); sigma has no locus there, its fixed point being the Nariai crest):
-%     (1) the REAL Weyl reflection sigma — fixes x_0, fixes BOTH signatures, FIXES THE GEOMETRY;
-%     (2) the SEAM CONTINUATION theta -> pi/2 + i.psi — flips the signature of a SINGLE slicing curve,
+%     (1) the REAL Weyl reflection sigma -- fixes x_0, both signatures, and the geometry;
+%     (2) the SEAM CONTINUATION theta -> pi/2 + i.psi -- flips the signature of a single slicing curve,
 %         reaching the equatorial S^4 with isometry SO(5);
-%     (3) the GLOBAL WICK ROTATION x_0 -> i.x_0 — reaching S^5 with isometry SO(6) ⊃ su(3).
-%   "ONLY THE LAST LANDS ON THE FACE WHERE su(3) LIVES." Reading sigma as the bridge conflates (1) with (3);
-%   reading the seam continuation as the bridge conflates AN SO(5) OPERATION WITH AN SO(6) ONE. The
-%   so(6)\so(5) generators su(3) needs are supplied by the global Wick and by NEITHER of the others. ***
-%   THE CASCADE: colour is DROPPED the instant one descends to the real substrate ("'the gauge structure is
-%   which isometry survives the real-substrate cut' returns GRAVITY, NOT GAUGE"). THE RANK COUNT: the SM
-%   gauge group has RANK 4; SO(6) has RANK 3; a subgroup's rank cannot exceed the group's, SO THE WEAK SU(2)
-%   DOES NOT FIT, and the raise to dS_6 buys AT MOST SU(3) x U(1) — "colour-plus-a-U(1), and the rest is a
-%   TOWER OF POSITS." The A_2/S_3 skeleton is GENUINE and GEOMETRICALLY FORCED ("not generic cubic
-%   numerology, as a dedicated genericity check confirmed") — but DISCRETE: the Weyl skeleton in the
-%   observer-vantage groupoid, "A GENUINE DISCRETE SHADOW IS NOT A CONTINUOUS INTERNAL SYMMETRY."
-%   *** ATIYAH-HIRZEBRUCH: on a COMPACT, CONNECTED, even-dimensional spin manifold with a COMPACT CONNECTED
-%   Lie group acting BY ISOMETRIES, the equivariant Dirac index VANISHES (Lawson-Yau enforcing it a second
-%   way for non-abelian groups). "THE LOAD-BEARING HYPOTHESES ARE COMPACTNESS, A CONTINUOUS ISOMETRY AND
-%   EVEN DIMENSION — NOT A PRODUCT OR KALUZA-KLEIN STRUCTURE." Witten: "gauge group reachable, CHIRALITY
-%   THE ROCK."  *** AND THE THIRD HYPOTHESIS IS THE ONE THAT BITES HERE, SO READ sec:wall AND NOT THIS
-%   SUMMARY FOR THE VERDICT: the compact face is S^5, ODD-dimensional, so the equivariant index has no
-%   grading to vanish and "ON THIS FACE THE OBSTRUCTION IS VACUOUS RATHER THAN CANONICAL." The conclusion
-%   rests on a SECOND, DIMENSION-INDEPENDENT route: a non-abelian compact group acting by isometries forces
-%   positive scalar curvature and LICHNEROWICZ kills the kernel outright; on the round face of radius alpha
-%   the Dirac spectrum is +/-(5/2 + k)/alpha, least eigenvalue 5/2alpha, so THERE ARE NO ZERO MODES AT ALL.
-%   THE ABSENCE OF A PRODUCT IS NO ESCAPE: the earlier reading "CR is not a product, so the obstruction does
-%   not apply" REMOVED A PREMISE THE THEOREM NEVER USED.
-%   THE NON-COMPACTNESS ESCAPE IS CLOSED — PROOF-LEVEL, BY LOCALISATION: "WHERE su(3) ACTS AS AN ISOMETRY
-%   THE MANIFOLD IS COMPACT, AND WHERE THE MANIFOLD IS NON-COMPACT su(3) IS NOT AN ISOMETRY." Not because
-%   the AH index is shown to bite on a non-compact manifold — IT IS NOT INVOKED THERE — but because THE
-%   ROUTE'S OWN PREMISE FAILS. Bounded to the geometric-isometry route. ***
-%   *** THE MECHANISM — WHY CHIRALITY IS *FORCED* NON-GEOMETRIC. AH is a theorem about a compact CONNECTED
-%   group: "A POSITIVE-DIMENSIONAL CONNECTED GROUP CONTAINS A CIRCLE, AND IT IS THE CIRCLE ACTION THAT
-%   FORCES THE EQUIVARIANT DIRAC INDEX TO VANISH — A DISCRETE ORIENTATION PARITY IS NO SUCH ACTION AND DOES
-%   NOT TRIGGER IT." CR's gravitational handedness IS that discrete parity, in O(5,1)\SO_0(5,1). "They live
-%   in COMPLEMENTARY PIECES OF ONE GROUP: the obstruction on the identity component and its connected
-%   subgroups, the gravitational chirality on the DISCONNECTED complement." This "says WHERE geometric
-%   chirality can live at all — ONLY in the discrete orientation parity, NEVER in a connected-group isometry
-%   action." The SM's chiral fermions are charged under a CONNECTED gauge group => a geometric-isometry
-%   realization there is NOT VECTOR-LIKE BUT WITHOUT MASSLESS CONTENT — there is no spectrum to be chiral
-%   or vector-like about, which is the STRONGER statement and the one that holds (sec:wall).  A summary
-%   saying "rendered vector-like" understates it.  "OBSERVED FERMION CHIRALITY IS THEREFORE NOT MERELY
-%   *FOUND* TO BE
-%   NON-GEOMETRIC BUT *FORCED* TO BE." — "the conclusion of A MECHANISM, not only the report of a wall." ***
-%   THE PARITY *GRADES*, IT DOES NOT *EXCHANGE*: it reflects the CUT-NORMAL (along which the offset r_0,
-%   WHICH IS THE MASS, carries one cut to the next), so while orientation-reversing on dS_5 it is
-%   orientation-PRESERVING on the four-dimensional spacetime — FIXING ALL FOUR SPACETIME LEGS — and its
-%   Clifford generator on the cut IS gamma^5. Hence THE ORBIFOLD ROUTE IS CARRIED OUT ON BOUND MODES: a
-%   projection by a chirality PROJECTOR yields a CHIRAL spectrum, not the vector-like one an exchange would
-%   force; on the NON-COMPACT slicing normal the matter sector's wall (superpotential odd in the signed radius)
-%   is that construction, and the propagating Dirac sector is built on the chiral member (P11). The DIRECT route still fails: "the SM's
-%   chirality IS the differential gauge assignment, gauge-internal and non-geometric, NOT A BARE HANDEDNESS
-%   CARRIED APART FROM IT." The geometry supplies THE CHIRALITY ARENA AND ITS GRADING OPERATOR; NOT THE
-%   CHIRAL CONTENT (the unequal population of the two gradings).
-%   COLOUR-CLOSURE RESTS ON THE CAUSAL STRUCTURE (the most secure layer, independent of the compact face's
-%   status): the cosmogenesis is a SIGNATURE-PRESERVING reassignment on the REAL Lorentzian substrate, so
-%   THE MATTER RIDES THAT HORN while su(3) lives ACROSS THE SIGNATURE SEAM.
-%   THE COMPACT FACE IS REAL-BY-CONSTRUCTION, NOT A CO-EQUAL EXISTENT. SO(6) and SO(5,1) are two of the FIVE real
-%   forms of one complex group, and the group theory DOES privilege one on dimension: su(3) needs a
-%   maximal compact big enough to hold a subalgebra whose smallest faithful real representation is
-%   six-dimensional, which so(5) is not.  It does NOT privilege the compact form uniquely -- so*(6)
-%   has su(3)+u(1) as its own maximal compact -- so the enumeration bounds which forms COULD host a
-%   colour, and what decides which one the world is
-%   is CR's existence criterion: the Wick-rotated S^5 is Riemannian — NO TIMELIKE DIRECTION, NO CLOCK, NO
-%   DURATION. THE CLOSURE IS ONTOLOGICAL, NOT STRUCTURAL. And THE CLOCK IS MEASURED (the CMB isotropy): "to
-%   deny it, and thereby reopen the compact face as a co-equal timeless world, IS TO DENY AN OBSERVATIONAL
-%   RESULT, NOT TO DECLINE A COMMITMENT."
-%   BILINEARS: the kinetic term is R-EVEN, the mass term R-ODD — "the massless (chiral) fermion is precisely
-%   the R-RESPECTING sector, and A FERMION MASS IS THE BREAKING OF THE SUBSTRATE'S ONE ORIENTATION PARITY."
-%   The M=0 central cut is the one R fixes; MASS (geometric M or fermionic m) IS THE R-ODD DEPARTURE from the
-%   offset-free massless vacuum. The cosmogenesis places NO PARITY-BREAKING EVENT AT ALL — its seam is the
-%   Weyl-fixed NARIAI CREST, A FIXED POINT OF THE S_3 FACTOR AND NOT OF R.
-%   *** THE SECOND BOUNDARY — CHARGE CONJUGATION, AND NO GEOMETRIC CPT. At the cosmogenesis exit the
-%   substrate's discrete isometries are THREE LINEAR REFLECTIONS generating a Z_2 x Z_2: the ORIENTATION
-%   PARITY R = gamma^5 (the CUT-NORMAL reflection, which *GRADES* chirality); THE AREAL-RADIUS REFLECTION
-%   r -> -r (the spatial antipode, flipping all three spatial legs, whose Clifford generator gamma^1.gamma^2
-%   .gamma^3 ANTICOMMUTES with gamma^5 and *FLIPS* chirality where the cut-normal parity GRADES it); and the
-%   TIME REFLECTION x_0 -> -x_0. CHARGE CONJUGATION IS NOT AMONG THEM: C on a Dirac field is ANTILINEAR
-%   (acting on the complex conjugate, on the CHARGE structure), whereas EVERY SUBSTRATE ISOMETRY ACTS
-%   LINEARLY -- so C is no isometry. BUT NOT-AN-ISOMETRY IS NOT NOT-GEOMETRIC, and the perimeter is
-%   drawn with care:
-%   (1) The metric depends on charge only through Q^2, so Q->-Q FIXES it: charge conjugation is present
-%   in the geometry as a SYMMETRY -- the even-face degeneracy (prop:conjugation-parity) -- NOT as an
-%   absence. It fixes every horizon root, so it is an INDEPENDENT Z_2 the charged cut adjoins
-%   (D_6 -> D_6 x Z_2); C is NOT the outer Z_2 of D_6 (that is R -- rem:C-not-R).
-%   (2) The antilinear reality involution K: tau~ -> conj(tau~) is antilinear AND GEOMETRIC
-%   (complex-analytic -- the Feynman-Stuckelberg particle<->antiparticle face, fixing the neutral photon
-%   axis, swapping the r<0 wings). So CHARGE CONJUGATION FACTORISES (eq:C-factor, prop:conjugation-
-%   closure; receipt storyboard_receipts/A3_factorization.py, worked on the full C_r x C_tau~):
-%       C = (Q -> -Q)_field  o  (R o K)_geometric
-%   The geometry supplies ALL of C's KINEMATIC (CPT/FS) content; ONLY THE CHARGE SIGN closes from the
-%   field. So A FULL GEOMETRIC CPT IS NOT AUTO-YIELDED (the charge sign is external) -- what IS geometric
-%   is its kinematic face, and R o K is the bead's own r=0 crossing: the CPT<->cosmology connection.
-%   BOUND: the spinor lift gamma^5 S = -(C gamma^{0T}) implements psi -> psi^c -- the OPERATOR half,
-%   grounded (A3_spinor_lift.py); whether the two wings are a particle/antiparticle PAIR -- the SPECIES
-%   half, which no charge-free Clifford identity reaches -- is DO-NOT-ASSERT.
-%   GUARD, THE RIGGED TEST: "does it move the horizon roots?" sees the mass and is BLIND TO Q by
-%   construction (Q enters as Q^2), so it could only ever return "not C". C's real argument is LINEARITY.
-%   That L2 face is C's KINEMATIC SHADOW and not C itself: the charge sign closes from the field
-%   (settled in the body, rem:C-not-R and the factorisation). The MAIN NEGATIVE (su(3) not-subset so(5,1), no continuous colour) is UNTOUCHED.
-%   See rem:C-not-R, ONTOLOGY_FOUNDATION_INDEX §0 (C entry, de-compressed r1088), storyboard §8 D-Canat. ***
-%   *** SYMBOL COLLISION — RESOLVED r1305, R-framing corrected r1306 (r968 convention corpus-wide). R = the
-%   mass-reflection 2M -> -2M (flip the geometry to the conjugate -M branch), the A_2 diagram automorphism,
-%   = gamma^5 on the cut spinor, carrying 3 <-> 3bar; its coordinate realization is the sweep r -> -r through
-%   r=0 which -- because horizons are values of r -- drags r_0 -> -r_0 and 2M -> -2M onto the conjugate branch.
-%   P = the areal-radius spatial parity r -> -r (2M held), generator gamma^1.gamma^2.gamma^3, ANTICOMMUTING with
-%   gamma^5: R GRADES chirality, P FLIPS it. sigma = root-exchange (2M-invariant). The disambiguator is NOT
-%   "which of r/r_0 flips" (r_0 is a value of r, so R's r->-r drags r_0 with it) but whether the GEOMETRY (mass)
-%   changes: R flips it (conjugate branch), P is a spatial reflection within one geometry. The trap: -2M/r is odd
-%   under 2M->-2M (R) AND under r->-r (P) separately, so bare "r->-r" reads like R but is P's notation. P3
-%   sec:two-readings/sec:charge corrected r1305-06; no printed spot writes the mass-reflection as bare
-%   mass-holding "r->-r" or calls "P" the mass-reflection. ***
-%   THE MULTIPLICITY IS WHERE GEOMETRIC CONTENT *DID* ENTER. Three things the geometry does NOT fix — the
-%   individual MASS VALUES, the ELECTROWEAK SCALE and assignment, and the COSMOLOGICAL BREAKING HISTORY —
-%   "and on them the boundary is sharp. BUT THE FAMILY *MULTIPLICITY* IS NOT AMONG THEM." The offset-mass
-%   relation is the pure triple-angle 2M = (2/3.sqrt3) sin 3w, driven to that single-harmonic form by THE
-%   UNIQUE SLICING SCALE 2/sqrt3 the gnomonic image of the hole on the observer's sky fixes — so the three
-%   roots are the three preimages of 3w under the sine, and THE COUNT IS FORCED RATHER THAN FITTED. A flavour
-%   BREAKING STRUCTURE comes with the triplet: fixing the mass IS taking r_0 as one of the three roots, a
-%   "2+1 PRYING-APART FORCED BY THE SLICING, not a symmetry imposed and broken by hand." The triplet is
-%   degenerate in the mass PARAMETER 2M but NOT in the roots (physically distinct horizons, differing surface
-%   gravities), "so S_3 is a solution-space MONODROMY symmetry rather than a claim that the three coincide. A
-%   generation hierarchy is therefore NOT FORBIDDEN by the degeneracy; it is only not read off 2M."
-%   ALTITUDE: "The bounded negative is itself a result: THE HONEST PERIMETER of what one maximally symmetric
-%   Lorentzian substrate's geometry forces." CR is a GRAVITATIONAL-COSMOLOGICAL unification — "it is NOT, and
-%   on the evidence here does not claim to be, a geometric unification of the Standard Model." The
-%   COMPACT-FACE (gauge-acted) fermion sector the obstruction would act on REMAINS UNBUILT; the sector P14
-%   built lives on the DISCRETE component and supplies NO EQUIVARIANT INDEX. Do-not-assert: the
-%   mass-hierarchy identification, and the identification of the two real forms with physics' own
-%   sectors -- the latter a LOCATED question whose discriminator is dynamics, blocked by the flat bundle.
+%     (3) the GLOBAL WICK ROTATION x_0 -> i.x_0 -- reaching S^5 with isometry SO(6) ⊃ su(3).
+%   Only the last lands on the face where su(3) lives; the so(6)\so(5) generators su(3) needs are
+%   supplied by the global Wick and by neither of the others. ***
+%   THE CASCADE: colour is dropped the instant one descends to the real substrate (the isometry that
+%   survives the real cut returns gravity, not gauge). THE RANK COUNT: the SM gauge group has rank 4,
+%   SO(6) rank 3, so the weak SU(2) does not fit and the raise to dS_6 buys at most SU(3) x U(1), the
+%   rest a tower of posits. The A_2/S_3 skeleton is genuine and geometrically forced, but DISCRETE.
+%   *** THE CHIRALITY WALL (sec:wall). Atiyah-Hirzebruch: on a compact, connected, even-dimensional spin
+%   manifold with a compact connected Lie group acting by isometries, the equivariant Dirac index
+%   vanishes; for a non-abelian group Lawson-Yau + Lichnerowicz enforce it a second way. The two routes'
+%   hypotheses differ: the index route needs compactness, a continuous isometry and EVEN DIMENSION; the
+%   Lichnerowicz route only the first two; neither needs a product or Kaluza-Klein structure. The compact
+%   face is S^5, odd-dimensional, so on it the index route is VACUOUS and the verdict rests on the second
+%   route: positive scalar curvature, and on the round face of radius alpha the Dirac spectrum is
+%   +/-(5/2 + k)/alpha -- NO ZERO MODES AT ALL. A geometric-isometry fermion sector there is therefore
+%   not vector-like but WITHOUT MASSLESS CONTENT, the stronger statement.
+%   THE NON-COMPACTNESS ESCAPE IS CLOSED BY LOCALISATION: where su(3) acts as an isometry the manifold is
+%   compact, and where the manifold is non-compact su(3) is not an isometry -- the route's own premise
+%   fails; the index is not invoked on a non-compact manifold. Bounded to the geometric-isometry route. ***
+%   *** THE MECHANISM: it is the circle action a connected group contains that forces the vanishing; a
+%   discrete orientation parity is no such action. CR's gravitational handedness is that discrete parity,
+%   in O(5,1)\SO_0(5,1): the obstruction lives on the identity component, the gravitational chirality on
+%   the disconnected complement. The SM's chiral fermions are charged under a connected gauge group, so
+%   observed fermion chirality is FORCED, not merely found, to be non-geometric. ***
+%   THE PARITY GRADES, IT DOES NOT EXCHANGE: R reflects the cut-normal (along which the offset r_0, which
+%   is the mass, carries one cut to the next); orientation-reversing on dS_5, orientation-preserving on
+%   the four-dimensional spacetime, its Clifford generator on the cut is gamma^5. The orbifold route is
+%   carried out on bound modes (the matter sector's wall, superpotential odd in the signed radius); the
+%   propagating Dirac sector is built on the chiral member (P11). The direct route fails: the SM's
+%   chirality is the differential gauge assignment. The geometry supplies the chirality arena and its
+%   grading operator, NOT the chiral content (the unequal population of the two gradings).
+%   COLOUR-CLOSURE RESTS ON THE CAUSAL STRUCTURE: the cosmogenesis is a signature-preserving reassignment
+%   on the real Lorentzian substrate, so the matter rides that horn while su(3) lives across the
+%   signature seam.
+%   THE COMPACT FACE IS REAL-BY-CONSTRUCTION, NOT A CO-EQUAL EXISTENT. SO(6) and SO(5,1) are two of the
+%   five real forms of SO(6,C); the group theory privileges a form big enough to hold su(3) (so(5) is
+%   not), but not the compact form uniquely -- so*(6) has su(3)+u(1) as its maximal compact. What decides
+%   is CR's existence criterion: the Wick-rotated S^5 is Riemannian, no timelike direction, no clock. The
+%   closure is ontological, not structural, and the clock is measured (CMB isotropy).
+%   BILINEARS: the kinetic term is R-even, the mass term R-odd; the massless (chiral) fermion is the
+%   R-respecting sector, and mass (geometric M or fermionic m) is the R-odd departure from the M = 0
+%   central cut R fixes. The cosmogenesis places no parity-breaking event: its seam is the Nariai crest,
+%   a fixed point of S_3 and not of R.
+%   *** THE SECOND BOUNDARY -- CHARGE CONJUGATION (sec:closure). At the cosmogenesis exit the substrate's
+%   discrete isometries are three commuting linear reflections generating a Z_2^3: R = gamma^5 (grades
+%   chirality); the areal parity P: r -> -r at fixed mass (generator gamma^1.gamma^2.gamma^3,
+%   anticommuting with gamma^5, flips chirality); and T: x_0 -> -x_0. C is not among them: C on a Dirac
+%   field is antilinear, every substrate isometry linear. Not-an-isometry is not not-geometric:
+%   (1) the metric depends on charge only through Q^2, so Q -> -Q is a symmetry (prop:conjugation-parity),
+%       an independent Z_2 the charged cut adjoins (D_6 -> D_6 x Z_2), not the outer Z_2 of D_6 (that is R,
+%       rem:C-not-R);
+%   (2) K: tau~ -> conj(tau~), the reality involution of cosmic time, is antilinear and geometric (the
+%       Feynman-Stuckelberg face, fixing the neutral photon axis, swapping the conjugate wings). So
+%       C = (Q -> -Q)_field o (R o K)_geometric   (eq:C-factor, prop:conjugation-closure; P13_A3_factorization)
+%   The geometry supplies C's kinematic content; only the charge sign closes from the field, so a full
+%   geometric CPT is not auto-yielded. R o K turns on the bead's own r = 0 crossing. On the built sector
+%   (P14) R carries each wall-mode to its bound antimatter partner and K acts on the propagating
+%   cosmic-time fermion the continuation reaches. DO-NOT-ASSERT: that a wing is a specific charged
+%   particle. The Q-sign is invisible to the horizon-root test by construction (Q enters as Q^2); C's
+%   real argument is linearity. The main negative is untouched. ***
+%   *** SYMBOLS: R = the mass reflection (r_0, r) -> (-r_0, -r) (2M -> -2M, the conjugate branch), the A_2
+%   diagram automorphism, = gamma^5 on the cut spinor, carrying 3 <-> 3bar; its coordinate realisation is
+%   the sweep r -> -r through r = 0, which drags r_0 with it because horizons are values of r. P = the
+%   areal parity r -> -r at fixed 2M, a spatial reflection within one geometry. The disambiguator is
+%   whether the mass changes. sigma = root exchange (2M-invariant). ***
+%   THE MULTIPLICITY IS WHERE GEOMETRIC CONTENT ENTERS. The geometry does not fix the mass values, the
+%   electroweak scale and assignment, or the breaking history; it does fix the count: 2M = (2/3sqrt3)
+%   sin 3w, the three roots the three preimages of 3w, so three chiral seats are forced rather than
+%   fitted (the generations a different three, on the deck Z_3 of the comoving turnaround). The roots are
+%   degenerate in 2M but not as horizons, so S_3 is a monodromy symmetry; fixing the mass singles r_0
+%   out, a 2+1 breaking structure forced by the slicing. The cubic supplies the count and not the
+%   hierarchy (P13_mass_cubic_carries_no_hierarchy).
+%   *** THE SYNTHESIS (sec:synthesis): the substrate wears two real forms of SO(6,C). SO(5,1) carries the
+%   temporal world -- GR, the quantum framework (constraint algebra, problem of time), the matter, the
+%   classical cosmology; SO(6) carries the atemporal structure -- the gauge group and the quantum scale
+%   hbar, set by the horizon's thermal state. The two meet where beta = 2.pi.alpha. The pieces are
+%   established; the identification of these real forms with physics' own sectors is a LOCATED open
+%   question, its discriminator dynamics, blocked by the flat bundle. ***
+%   ALTITUDE: CR is a gravitational-cosmological unification, not a geometric unification of the Standard
+%   Model. The compact-face (gauge-acted) fermion sector is specified and obstructed twice (sec:open); the
+%   sector P14 built lives on the discrete component and supplies no equivariant index. Do-not-assert: the
+%   mass-hierarchy identification; the real-forms identification.
 %   Supplies the chirality mechanism P11/P12 defer to ([†ONT-DYN] §1o, [†ONT-ALG] §1h); rests on P12's
-%   gamma^5 result and P9's C-blindness ([†ONT-RANGE] §1m); the C/CPT closure is P17's "orientation skeleton,
-%   not charge" ([†ONT-CORE] §1j); the single geometric opening is what P14 builds.
-%
-% =====================================================================
-% THE BOUNDARY / NO-GO PAPER  (CR consolidation project, step 2)
-% STATUS: complete; the referee note below lists the secondaries still to re-verify at source.
-% Consolidates the colour/SM-from-geometry arc the corpus papers do not carry:
-%   backbone = SILVER_PLATTER_colour-frontier-arc.md (c19) C1-C7 + the claims that are recorded without being asserted
-%   boundary; extended with the cascade rank-map (r302), the three-sided wall
-%   (r303-r305), and the AH-aimed correction (r305).
-% REGISTER (non-negotiable): the universal claim is NOT asserted, in either direction. The wall
-%   is bounded to the geometric-ISOMETRY route. NOT "colour-from-geometry
-%   foreclosed"; NOT "CR produces the SM". Colour by the ordinary route (an SU(3)
-%   matter bundle by hand) was never in jeopardy.
-% REFEREE NOTE: primaries verified at source this session = Witten 1981
-%   (Nucl.Phys.B186,412), Atiyah-Hirzebruch 1970. Secondaries to re-verify at
-%   the referee read: Witten 1983 venue, Lawson-Yau venue, Hochs-Mathai venue.
-%   The positive-coherence-adjacent claims (three-sided convergence; "AH aimed")
-%   are the ones the cold node should weigh hardest -- the face-19 register.
+%   gamma^5 result and P9's C-blindness ([†ONT-RANGE] §1m); the C/CPT closure is P17's orientation
+%   skeleton, not charge ([†ONT-CORE] §1j); the discrete opening is what P14 builds.
+% REFERENCES: primaries Witten 1981 (Nucl.Phys.B186,412) and Atiyah-Hirzebruch 1970; Witten 1983 and
+%   Lawson-Yau venues as in the bibliography.
 % =====================================================================
 
 \usepackage[margin=1in]{geometry}
@@ -267,7 +208,7 @@ The remaining route reads colour from the substrate's discrete root structure di
 
 The three routes converge. Each places the gauge structure on the compact (Wick) face and off the real Lorentzian substrate; the substrate's own continuous symmetry, exhausted by $\SO(5,1)$, does not contain it. There is a fourth face to the same wall, and it is the one with forty years of standing behind it: even granting the gauge structure its home on the compact face, the \emph{chiral matter} charged under it cannot be obtained from the geometry there.
 
-The relevant theorem is the Atiyah--Hirzebruch index obstruction~\cite{AtiyahHirzebruch1970}. On a compact, connected, even-dimensional spin manifold carrying a non-trivial smooth action of a compact connected Lie group by isometries, the equivariant index of the Dirac operator vanishes in the representation ring of the group~\cite{AtiyahSinger1968,LawsonMichelsohn1989}; for a non-abelian compact group the vanishing is enforced a second way, since such an action forces an invariant metric of positive scalar curvature and Lichnerowicz then kills the index~\cite{LawsonYau,Lichnerowicz1963}. \emph{The two routes do not require the same hypotheses, and the difference decides the case below.} The index route needs compactness, a continuous isometry \emph{and even dimension}---the equivariant index it kills is $\mathbb{Z}_{2}$-graded, and the grading exists only there. The Lichnerowicz route needs only the first two. \emph{Neither needs a product or Kaluza--Klein structure}, which is the escape most often reached for. \emph{The second of those has a dynamical reading that says where the obstruction can and cannot reach.} A continuous isometry is a Killing vector, and a Killing vector is a linear first integral of the geodesic flow---so the hypothesis is that the flow on the face carries a conserved momentum. \emph{The strata of the construction are graded by exactly that count}: the substrate carries fifteen such integrals, and the cuts it sweeps inherit four at Schwarzschild--de~Sitter, two at Kerr--de~Sitter, and \emph{none at all} at the Type-N edge of the range, where the plane wave's own five-dimensional Heisenberg isometry is not inherited from the substrate~\cite{JanzenAlgebroid,JanzenRange,JanzenDynamics}. \emph{So the obstruction bites highest up the ladder and lapses at the bottom}, and the opening this paper turns to---the substrate's discrete orientation structure---is on the side of the wall where the hypothesis is unavailable rather than merely unused\ldg{integrable_systems}. Witten ran almost exactly this construction and reached its physical content: eleven-dimensional supergravity with seven dimensions compactified can yield an $\SU(3)\times\SU(2)\times\mathrm{U}(1)$ gauge group, ``but the proper fermion quantum numbers are difficult to achieve''~\cite{Witten1981,Witten1983}---gauge group reachable, chirality the rock. The four-dimensional chiral content is an index, and for the gauge group acting as an isometry that index makes the spectrum vector-like, against the observed chirality of the fermions.
+The relevant theorem is the Atiyah--Hirzebruch index obstruction~\cite{AtiyahHirzebruch1970}. On a compact, connected, even-dimensional spin manifold carrying a non-trivial smooth action of a compact connected Lie group by isometries, the equivariant index of the Dirac operator vanishes in the representation ring of the group~\cite{AtiyahSinger1968,LawsonMichelsohn1989}; for a non-abelian compact group the vanishing is enforced a second way, since such an action forces an invariant metric of positive scalar curvature and Lichnerowicz then kills the index~\cite{LawsonYau,Lichnerowicz1963}. \emph{The two routes do not require the same hypotheses, and the difference decides the case below.} The index route needs compactness, a continuous isometry \emph{and even dimension}---the equivariant index it kills is $\mathbb{Z}_{2}$-graded, and the grading exists only there. The Lichnerowicz route needs only the first two. \emph{Neither needs a product or Kaluza--Klein structure}, which is the escape most often reached for. \emph{The second of those has a dynamical reading that says where the obstruction can and cannot reach.} A continuous isometry is a Killing vector, and a Killing vector is a linear first integral of the geodesic flow---so the hypothesis is that the flow on the face carries a conserved momentum. \emph{The strata of the construction are graded by exactly that count}: the substrate carries fifteen such integrals, and the cuts it sweeps inherit four at Schwarzschild--de~Sitter, two at Kerr--de~Sitter, and \emph{none at all} at the Type-N edge of the range, where the plane wave's own five-dimensional Heisenberg isometry is not inherited from the substrate~\cite{JanzenAlgebroid,JanzenRange,JanzenDynamics}. \emph{So the obstruction bites highest up the ladder and lapses at the bottom}, and the opening this paper turns to---the substrate's discrete orientation structure---is on the side of the wall where the hypothesis is unavailable rather than merely unused\ldg{integrable_systems}. Witten ran almost exactly this construction and reached its physical content: eleven-dimensional supergravity with seven dimensions compactified can yield an $\SU(3)\times\SU(2)\times\mathrm{U}(1)$ gauge group, ``but the proper fermion quantum numbers are difficult to achieve''~\cite{Witten1981,Witten1983}---gauge group reachable, chirality the rock. The four-dimensional chiral content is an index, and for the gauge group acting as an isometry that index vanishes, so no net chirality survives, against the observed chirality of the fermions.
 
 The bearing on CR is direct. The defining geometric hope is colour $\SU(3)$ as a \emph{continuous isometry}; that is exactly the theorem's trigger. The compact (Wick) face on which the gauge structure lives is itself a compact Riemannian spin manifold
 with the group acting by isometry---compact, connected, spin, non-abelian continuous isometry, \emph{and
@@ -360,16 +301,14 @@ The triplet carries the full discrete symmetry $\mathrm{Aut}(A_2)=S_3\times\math
 
 What the discrete structure supplies, then, is \emph{why three chiral seats}---the generations being seated on the deck $\mathbb{Z}_3$ instead~\cite{JanzenMatter}---and the count is forced rather than fitted: the offset-mass relation is the pure triple-angle $2M=\tfrac{2}{3\sqrt3}\sin 3w$~\cite{JanzenSlicing}, driven to that single-harmonic form by the \emph{unique} slicing scale $2/\sqrt3$ that the gnomonic image of the hole on the observer's sky fixes, so the three roots are the three preimages of $3w$ under the sine and the threefoldness is the triple-angle's own---the degenerate $\mathfrak{su}(3)$-shadow triplet with its $\gamma^5$ chirality, grounded as structure---not their masses, which stay the breaking. A first test of the descent, run at the representation level, fixes its \emph{kind}: of the two $D_6$ factors only the $\mathbb{Z}_2$ is a substrate isometry---the parity $R\in\mathrm{O}(5,1)\setminus\mathrm{SO}_0$, acting on the cut spinor as $\gamma^5$---so chirality descends as a \emph{gauged} structure, whereas the $S_3$ is the monodromy (Weyl) symmetry of the solution space and no isometry, its continuous parent excluded above ($\mathfrak{su}(3)\not\subset\mathfrak{so}(5,1)$), and a single Dirac spinor carries no three-fold to realise it. The same verdict is returned by the substrate's null structure, independently of any spinor: the sky-angle periodicity $\tau$---the order-three factor of $D_6$'s $S_3$---is realised as two steps along a null ruling, a closed path of light on the substrate, whereas the Weyl reflection $\sigma$ is a loop in the complex $2M$-plane about the Nariai point~\cite{JanzenGroupoid}, and $2M$ labels the family rather than pointing along the manifold. So the rulings walk exactly the isometries and nothing else, and the gauged/global split of the two factors is legible in the light cone before any Dirac field is put on the cut~\cite{JanzenSlicing,JanzenGeometricCore}. So the seats' $S_3$ on this structure is \emph{global} and not gauged---the kind the Standard Model gives its flavour symmetry, beside a gauged chirality, here not assumed but following from which factor is an isometry and which the monodromy group. The descent is built~\cite{JanzenMatter}: a spinor sector of bound leaf-modes inherits the count within CR; the \emph{kind} of each symmetry the representation test settles, and the splitting of the values is the breaking. This whole reading---the forced multiplicity, the kind of each symmetry, and the seats as three hinged vantages---is drawn together in the geometric-core paper~\cite{JanzenGeometricCore}, and its descent is built~\cite{JanzenMatter}, the discrete structure of the families realised within CR, with the cubic route to the mass hierarchy closed.
 
-% ⟦SB:P13-CP-reframe⟧ blind→symmetric within this paragraph; ⟦SB:P13-CP-prop⟧ Proposition follows it. Receipt: storyboard_receipts/conjugation_parity.py. Label kept agnostic (signed-radius r↦−r), not R/P, per gate (R grades, P flips — distinct).
 A second boundary of the same kind stands beside the chirality wall, on charge conjugation, and completes the discrete picture. The substrate's discrete residue is richer than the single grading. 
 
-At the cosmogenesis exit $r=0$ its discrete isometries include, besides the orientation parity $R=\gamma^5$ (the cut-normal reflection, which \emph{grades} chirality), the spatial parity of the areal-radius reflection $r\mapsto-r$---the signed radius is the spatial antipode, flipping all three spatial legs $e^r,e^\theta,e^\phi\propto r$, so its Clifford generator $\gamma^1\gamma^2\gamma^3$ \emph{anticommutes} with $\gamma^5$ and \emph{flips} chirality where the cut-normal parity grades it---together with the time-direction reflection $x_0\mapsto-x_0$; the three are linear reflections generating a $\mathbb{Z}_2\times\mathbb{Z}_2$, the geometric $P$, $T$, and $\gamma^5$ the substrate carries. Charge conjugation is not among them, and cannot be. $C$ on a Dirac field is \emph{antilinear}---$\psi^c=C\gamma^{0\top}\psi^{*}$, acting on the complex conjugate of the field, on its charge structure---whereas every substrate isometry acts linearly, $\psi\mapsto M\psi$ with $M$ a real Clifford element. 
+At the cosmogenesis exit $r=0$ its discrete isometries include, besides the orientation parity $R=\gamma^5$ (the cut-normal reflection, which \emph{grades} chirality), the spatial parity of the areal-radius reflection $r\mapsto-r$---the signed radius is the spatial antipode, flipping all three spatial legs $e^r,e^\theta,e^\phi\propto r$, so its Clifford generator $\gamma^1\gamma^2\gamma^3$ \emph{anticommutes} with $\gamma^5$ and \emph{flips} chirality where the cut-normal parity grades it---together with the time-direction reflection $x_0\mapsto-x_0$; the three are commuting linear reflections generating a $\mathbb{Z}_2^{3}$, the geometric $P$, $T$, and $\gamma^5$ the substrate carries. Charge conjugation is not among them, and cannot be. $C$ on a Dirac field is \emph{antilinear}---$\psi^c=C\gamma^{0\top}\psi^{*}$, acting on the complex conjugate of the field, on its charge structure---whereas every substrate isometry acts linearly, $\psi\mapsto M\psi$ with $M$ a real Clifford element. 
 
 The complex structure $C$ acts on is the matter field's charge, which the substrate does not carry: the metric depends on the charge only through $Q^2$, so $Q\mapsto-Q$ leaves it invariant---charge conjugation present in the geometry not as a blindness but as a \emph{symmetry}, the even-face degeneracy of Prop.~\ref{prop:conjugation-parity}---and it is the charge \emph{sign}, the odd datum the metric does not carry, that lives entirely in the Maxwell potential (linear in $Q$), a bend on the matter side and not a substrate datum~\cite{JanzenRange}. $C$ is therefore field-level for the very reason charge is the bend, and the discrete antimatter structure factorises accordingly: the substrate supplies $P$ and $T$ (and the $\gamma^5$ grading, and the $R$-parity carrying $\mathbf 3\leftrightarrow\bar{\mathbf 3}$) as geometric linear reflections, while $C$---and the antiunitary half of a physical time reversal---is the field-level complex conjugation the $C$-blind geometry does not source. A geometric $CPT$ is not auto-yielded by the substrate's orientation structure; $PT$ is geometric, $C$ closes it from the matter field. This holds identically for classical (Maxwell) and fermionic (Dirac) charge---one $C$-blindness serving both---and, like the wall, it is grounded (the $C$-blindness established~\cite{JanzenRange}, the linear/antilinear distinction elementary) while the propagating charged sector it would act on stays the ordinary route. 
 
 What must be read correctly is the \emph{scope} of this boundary, for it is symmetric and does not withhold a name. The substrate supplies the discrete matter/antimatter \emph{skeleton}---the representation ($\mathbf 3$ against its $R$-image $\bar{\mathbf 3}$), the chirality ($\gamma^5$), and the mass-sign ($R$-odd $2M$)---and not the charge, on \emph{both} sides of the pair equally: matter's charge is field-level exactly as antimatter's is. That the geometry does not source $C$ is therefore no more a bar to naming the $\bar{\mathbf 3}$ branch antimatter than to naming the $\mathbf 3$ branch matter; the built fermion sector~\cite{JanzenMatter} realises the pair, and within CR the $R$-image of a generation is its antimatter at the weight the generation is matter. So the substrate's geometry supplies the orientation skeleton of matter \emph{and antimatter}---the discrete $\mathbf 3\oplus\bar{\mathbf 3}$ the $R$-parity relates---and not the charge that closes $C$: two faces of one boundary, a boundary on what the geometry sources, not on which branch earns which name. On the cosmogenesis this pairing is not abstract: the $\bar{\mathbf 3}$ branch the $R$-parity names antimatter is the conjugate ($r<0$) branch of the bead, the completed collapse whose future is our expansion, so our own universe's progenitor sits on it---an antimatter black hole in the signed-radius continuation~\cite{JanzenCRframework}, our matter and its the two ends of one standing $R$-conjugation and no seam-made asymmetry.
 
-% ⟦SB:P13-CP-prop⟧
 \begin{proposition}[Conjugation parity]\label{prop:conjugation-parity}
 Under the mass-reflection $R$---the diagram automorphism $2M\mapsto-2M$ of $\mathrm{Aut}(A_2)=D_6$, realised as the reticle reflection $r_0\mapsto-r_0$\rcpt{P13_conjugation_parity} and acting on a cut spinor as $\gamma^5$~\cite{JanzenGroupoid}---the charged spherical metric $f(r)=1-2M/r+Q^{2}/r^{2}-\Lambda r^{2}/3$ splits by parity: the mass term $-2M/r$ is $R$-\emph{odd} while the de~Sitter geometry \emph{and} the charge term $Q^{2}/r^{2}$ are both $R$-\emph{even}. Charge thus joins the invariant de~Sitter geometry on the $R$-even side---the charged extension of the de~Sitter$\leftrightarrow$Schwarzschild eigenspace split~\cite{JanzenGroupoid}---and mass is the $R$-odd datum, as the bilinears above already give ($2M$ is $R$-odd). Within that $R$-even charge sector charge conjugation acts as a \emph{further} symmetry: the metric depends on the charge only through $Q^{2}$, so $Q\mapsto-Q$ leaves it invariant---an even-face degeneracy, charge conjugation present in the geometry as a symmetry and not as an absence---the charge \emph{sign}, the odd datum the even metric does not carry, residing entirely in the Maxwell potential $A$ (linear in $Q$) and thereby field-level, \emph{derived} from the evenness. So $P$ and $T$ stay geometric, the full antilinear $C$ field-level, and a geometric $CPT$ is not auto-yielded, exactly as above. The split is elementary and grounded; the propagating charged sector it would act on stays the ordinary route.
 \end{proposition}
@@ -409,7 +348,7 @@ The geometric factor is anchored on the bead's own $r=0$ crossing. $R$ is the si
 \label{fig:the-plate}
 \end{figure}
 
-The scope is stated as sharply as the boundary. What is established is a factorisation of $C$ at the level of the bead geometry: its kinematic content is geometric, its charge sign field-level. Its action on the built fermion sector is established in the matter sector~\cite{JanzenMatter}: $R\circ K$ acts on the actual zero-modes as charge conjugation's \emph{kinematic} face, $R$ carrying each wall-mode to its bound antimatter partner on the reversed wall and the seam continuation supplying $K$, with the full antilinear $C$ and its charge still closing from the field. Two things lie beyond it: that a wing of the bead is a \emph{specific} charged particle, which needs the charge the geometry does not source; and a geometric $CPT$, which is not auto-yielded, the charge still closing from the field. Nor does the factorisation vindicate a ``species $=\operatorname{sign} r$'' reading: the maps are stated on the full object, where $\operatorname{sign} r$ has no meaning off the real axis, and the particle/antiparticle content is the Feynman--St\"uckelberg relation the object carries, not the slice's sign. What Proposition~\ref{prop:conjugation-closure} settles is the boundary's inside at exactly the earned weight: the geometry carries $C$'s kinematics, the field carries $C$'s charge, and the join between them is the cosmogenesis.
+The scope is stated as sharply as the boundary. What is established is a factorisation of $C$ at the level of the bead geometry: its kinematic content is geometric, its charge sign field-level. Its action on the built fermion sector is established in the matter sector~\cite{JanzenMatter}: $R\circ K$ acts on the actual zero-modes as charge conjugation's \emph{kinematic} face, $R$ carrying each wall-mode to its bound antimatter partner on the reversed wall and $K$, the reality involution of cosmic time, acting on the propagating fermion the real-to-imaginary continuation carries the bound mode into, with the full antilinear $C$ and its charge still closing from the field. Two things lie beyond it: that a wing of the bead is a \emph{specific} charged particle, which needs the charge the geometry does not source; and a geometric $CPT$, which is not auto-yielded, the charge still closing from the field. Nor does the factorisation vindicate a ``species $=\operatorname{sign} r$'' reading: the maps are stated on the full object, where $\operatorname{sign} r$ has no meaning off the real axis, and the particle/antiparticle content is the Feynman--St\"uckelberg relation the object carries, not the slice's sign. What Proposition~\ref{prop:conjugation-closure} settles is the boundary's inside at exactly the earned weight: the geometry carries $C$'s kinematics, the field carries $C$'s charge, and the join between them is the cosmogenesis.
 
 \begin{proposition}[The residue is the cosmogenesis's own symmetry]\label{prop:residue-is-the-bead}
 The factorisation above says what $C$ breaks into. This says what the residue \emph{is}, and the two are not the same statement. The discrete residue the wall leaves is not an inert remainder the substrate happens to carry alongside its cosmology: \emph{it is the cosmogenetic bead's own symmetry.} The orientation parity $R$ is the single reflection $r\mapsto-r$, and that one map simultaneously
@@ -423,7 +362,7 @@ The factorisation above says what $C$ breaks into. This says what the residue \e
 \end{proposition}
 
 \begin{proof}
-\textup{(i)}--\textup{(iii)} are the companion algebroid and groupoid constructions: $R=\mathrm{diag}(1,1,-1,1,1,1)\in\mathrm{O}(5,1)\setminus\mathrm{SO}_0(5,1)$ is a substrate isometry of determinant $-1$ globally and on the ruled three-block, which swaps the two rulings and, $2M=r_0-r_0^3$ being odd, sends $2M\mapsto-2M$; it is the $A_2$ diagram automorphism, hence $\mathbf 3\leftrightarrow\bar{\mathbf 3}$---and that step, which reads as though negating the roots were generally the same as conjugating the representation, holds for a reason peculiar to $A_2$ and worth stating: $-1\notin W(A_2)$, so negation is \emph{outer}, and since $\mathrm{Aut}(A_2)/W$ has order two it and the diagram automorphism lie in the one non-trivial coset and generate the same $\mathbb{Z}_2$. In a system where $-1$ \emph{is} Weyl---$A_1$, $B_2$, $G_2$, every rank-two system but this one---negation would be inner and would conjugate nothing. For \textup{(iv)}: $R$ is an involution, so its fixed set is $\{r:r=-r\}=\{0\}$, and $r=0$ is the branch point through which the bead's signed slicing continues onto the conjugate branch; since species is the region label $\operatorname{sign}r$ and $R$ exchanges the regions bijectively, the bead's two halves carry conjugate species. \emph{(Receipts: \rcpt{P13_closure_i_check}, \rcpt{P13_closure_iv_check}, \rcpt{P13_ruling_swaps}.)}
+\textup{(i)}--\textup{(iii)} are the companion algebroid and groupoid constructions: $R=\mathrm{diag}(1,1,-1,1,1,1)\in\mathrm{O}(5,1)\setminus\mathrm{SO}_0(5,1)$ is a substrate isometry of determinant $-1$ globally and on the ruled three-block, which swaps the two rulings and, $2M=r_0-r_0^3$ being odd, sends $2M\mapsto-2M$; it is the $A_2$ diagram automorphism, hence $\mathbf 3\leftrightarrow\bar{\mathbf 3}$---and that step, which reads as though negating the roots were generally the same as conjugating the representation, holds for a reason peculiar to $A_2$ and worth stating: $-1\notin W(A_2)$, so negation is \emph{outer}, and since $\mathrm{Aut}(A_2)/W$ has order two it and the diagram automorphism lie in the one non-trivial coset and generate the same $\mathbb{Z}_2$. In a system where $-1$ \emph{is} Weyl---$A_1$ in rank one, and $B_2$ and $G_2$, every other irreducible rank-two system---negation would be inner and would conjugate nothing. For \textup{(iv)}: $R$ is an involution, so its fixed set is $\{r:r=-r\}=\{0\}$, and $r=0$ is the branch point through which the bead's signed slicing continues onto the conjugate branch; since species is the region label $\operatorname{sign}r$ and $R$ exchanges the regions bijectively, the bead's two halves carry conjugate species. \emph{(Receipts: \rcpt{P13_closure_i_check}, \rcpt{P13_closure_iv_check}, \rcpt{P13_ruling_swaps}.)}
 \end{proof}
 
 \begin{remark}[The asymmetry is the content, not a blemish on it]\label{rem:closure-asym}

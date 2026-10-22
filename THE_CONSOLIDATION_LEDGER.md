@@ -440,6 +440,20 @@ crossing, `PO-92` §open), `P3` (`PO-92` at line 1222, `PO-93` §curvature), `P2
   conflation.
 - `P12`: undefined phi at line 333.
 - `P13`: Z2xZ2 should be Z2^3; "A1 rank-two"; "vector-like" at line 270.
+  **Done (r7541)**: the exit's three commuting linear reflections (R, the areal parity P, T) generate Z2^3, in the body
+  and the header; A1 placed in rank one, B2 and G2 the other irreducible rank-two systems; Witten's index stated as
+  vanishing, no net chirality surviving, so that "vector-like" no longer reads against sec:wall's stronger finding on the
+  odd-dimensional face (no massless content at all). The read's own: K on the built sector stated as the reality
+  involution of cosmic time acting on the propagating fermion the continuation reaches, matching P14 (the owed item below,
+  now done); the masthead rewritten to the current state, the synthesis added to it, the compact-face sector "specified and
+  obstructed twice" where it read "remains unbuilt", R and P given in the canon's form, and every revision stamp, the
+  storyboard flags and the session referee note removed. Ruled and left: "species is the region label" (l.403, l.426, l.432)
+  stands, being P7's antimatter-progenitor theorem on the real slice, and l.412's caution concerns the full complex object.
+  **The open-language read is done (r7541)**: 16 keys, 11 ordinary English or settled in place (the universal claim not
+  made, the compact-face sector specified and obstructed, the charge sign field-level, the stronger claims not made), 4
+  pointed at PO-14 (the charging content the two sectors bound, and the real-forms identification, P7 frontier:sm), 1 owed
+  (whether the slicing's 2+1 bears on the mass hierarchy, the same item as P14's breaking structure below). Owed from the
+  read, not open-language: the "gauged" term (below).
 - `P14`: normal-bundle rank 3 against 1; S3 "broken" against "not"; T in the order-12 group; K called the seam continuation
   (xi's name); "protected under any deformation" (recorded at r1830, still standing); "antipodal is R"; the 11/11 test's low
   power; the triality count mismatch.
@@ -601,14 +615,16 @@ crossing, `PO-92` §open), `P3` (`PO-92` at line 1222, `PO-93` §curvature), `P2
 - `P14`'s third mechanism: a route to a gauge coupling that is neither holonomy nor isometry, constrained to deliver a fixed
   pure number (the dimensionless Yang-Mills coupling the single length cannot build).
 - `P14`'s breaking structure: whether the slicing's singling of one root against the ellipse pair bears on the physical mass
-  hierarchy.
+  hierarchy. P13 l.298 disclaims the same identification.
 - `P17`'s thesis: that the seven separately established faces of maximal symmetry are one fact, held as a conjecture
   against the free-data-count test, both of whose sides are run and pass.
 - `P1`'s collapsing body: what thermodynamic content a perpetually collapsing ultra-compact body carries, its horizon's
   area law and entropy having no realised horizon to be defined on and local particle production untouched.
 - `P1`'s late-collapse ultraviolet regime: whether the collapsing surface's late-time regime, where the local blueshift
   reaches the Planck value at each finite exterior time, is benign, and what a treatment of it would supply.
-- `P13`: "the seam continuation supplying K" (sec:closure, after the plate) runs the reality involution of cosmic time together
-  with the seam continuation; P14 states them apart.
+- The word "gauged" for the discrete factor carried by an isometry (R acting as gamma^5): P13 l.302, P11 l.246, P12 l.345,
+  P5 l.648, P14 l.682, l.690, l.712, l.931. The factor is a spacetime symmetry acting on the spinor, with no gauge field, and
+  the Standard Model's chirality is a Lorentz property its gauge coupling distinguishes; the term is to be replaced in one
+  sweep across the six papers ("realised as an isometry" against "global"), not in one paper alone.
 - Close: strike `PO-86`, put `check_open_item_coherence` in CI, and reactivate 60, cc66 and 70 (and 71 if a
   formalisation row is open by then) on the frontier as it stands, the projection-distance adjudication first.
