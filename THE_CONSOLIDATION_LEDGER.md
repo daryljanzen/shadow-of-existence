@@ -458,6 +458,17 @@ crossing, `PO-92` §open), `P3` (`PO-92` at line 1222, `PO-93` §curvature), `P2
   as closing the tower reading; history narration removed at seven sites; Q1 below done, the two-real-forms pointer in the
   abstract, sec:scope and the header, THE PLATE kept in P13 and referenced.
   **The open-language read is done (r7529)**: 19 sites, 12 ordinary English, 7 owed (four items, below).
+- `P8` (71's M24, and the read's own): the trichotomy's flat leaf held a null direction fixed (the level sets of eta(X,B))
+  where it read "the null cone r=alpha gives the horosphere"; the Fredholm index stated in its setting (f -> (rf)' as a
+  bounded map C^1 -> C^0 on a closed radial interval away from r=0, kernel 1/r, every forcing a preimage) and its stability as
+  constancy along paths of Fredholm operators. The read's own: the finite-proper-time clarification said the t=-infinity was
+  only the synchronous coordinate, where in the massless reading tau is the comoving geodesic's proper time and B is never
+  reached; it now gives the massless reading's infinite past and the massive worldline's finite arrival at r=0 (r ~ tau^{2/3}),
+  with the areal invariant 64/27tau^4 divergent and the substrate's curvature finite, the branch point and the seam both
+  finite-substrate-curvature loci and distinct; the abstract no longer pairs t=-infinity with r=0; the header no longer calls
+  r=0 a horizon the slicing is anchored to or carries revision history.
+  **Done (r7531)**. **The open-language read is done (r7531)**: 21 sites, all ordinary English (the open leaf, or answered in
+  place).
 - `P15`: the branch point called a "null surface" and "the cosmological horizon promoted to the initial layer" (line 433),
   settled with section 3's r=0 canon and edited there; "collapse-phase driving" (sec:envelope) against every sound wave starting
   fresh on the expanding leg, read with sec:coherence in `P15`'s second turn. Checked and not defects: r_s 146.4 against 145.4

@@ -191,10 +191,13 @@ def main():
     #   comment's upper-case RAISES, so it passed on `len(occurrences) == 0` and read nothing.*
     _notes = [m for l in raw.split('\n') if l.lstrip().startswith('%')
               for m in [re.search(r'THIS NOTE READ "([^"]+)" until r(\d+)\+c54\.(\d+)', l)] if m]
+    # ⛭ REPAIRED r7531 (69, whose P8 header rewrite removed the correction note this parsed): the header
+    #   now states the current reading with no revision history, so the claim is asserted directly -- the
+    #   overstated phrasing stands nowhere in the file, case-folded (sec:open's settled reading of the
+    #   general case is pinned on the body by the row below).
     check('the OVERSTATED phrasing no longer stands as the comment\'s own claim (fixed c54.179)',
-          len(_notes) == 1
-          and (int(_notes[0].group(2)), int(_notes[0].group(3))) == (2376, 179)
-          and raw.casefold().count(_notes[0].group(1).casefold()) == 1)
+          not _notes
+          and raw.casefold().count('the deepest open question the construction raises') == 0)
     check('and any surviving occurrence is inside a % comment line, never published text',
           all(raw[raw.rfind('\n', 0, i):i].lstrip().startswith('%') for i in occurrences))
     check('while the PUBLISHED paragraph says "the deepest question the construction opens onto" and '
