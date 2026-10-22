@@ -658,15 +658,14 @@ crossing, `PO-92` §open), `P3` (`PO-92` at line 1222, `PO-93` §curvature), `P2
   section's premise, with its ground. The introduction counts four problems, matching the problems section and conclusion. Lemma 1's proof takes hypothesis (b) from the Killing flow carrying horizon cross-sections isometrically (zero expansion and shear), not from the orbit label, which every curve has.
   The corpus copy may also carry what the standalone drops: the information content carried through the branch point, as
   P7 states it (lossless for content).
-- `P4`, from the JCAP submission version read at r7551 (the corpus floor argument and its receipt carry the same
-  structure): the hypothesis the floor excludes, a local expansion rate H(1 - f delta/3) with zero shear and zero
-  acceleration along the ray, violates general relativity's momentum constraint, D^b sigma_ab = (2/3) D_a Theta for
-  irrotational dust, so it is not a solution of the theory and is not the backreaction or timescape programmes' reading;
-  in standard linear theory the dust's local rate does vary as H(1 - f delta/3) and the shear the constraint ties to it
-  is what makes the redshift telescope. The rigorous route from CMB isotropy to a cosmic time and uniform expansion is the
-  Ehlers-Geren-Sachs theorem and its almost-isotropic form (Stoeger, Maartens and Ellis 1995), which neither version cites.
-  The JCAP numbers are reproduced independently with CAMB (sigma_path 1.92e-2, 1.57e-2, 1.06e-2, 5.94e-3, 3.32e-3,
-  9.54e-4 at R = 4 to 300 h^-1 Mpc; temperature rms 4.13e-5); the de Sitter citation corrected to the KNAW paper of
-  March 1917. Raised with Daryl; the reframing is decided with him and then carried into the corpus copy and its receipt.
+- `P4`, from the JCAP submission version read at r7551: the floor stands as written. It is a reductio of the claim that
+  the expansion light crosses varies region by region with the matter: taken at face value and pushed to its most
+  accommodating floor (independent constant-density cells, each expanding at its own Friedmann rate), the CMB redshift
+  excludes it by orders of magnitude. The case in which shear makes the lumps' effect on light telescope is the paper's own
+  uniform-expansion branch (sec:sw), so it supports the conclusion rather than escaping it. The CAMB numbers are reproduced
+  independently (sigma_path 1.92e-2, 1.57e-2, 1.06e-2, 5.94e-3, 3.32e-3, 9.54e-4 at R = 4 to 300 h^-1 Mpc; temperature rms
+  4.13e-5); the de Sitter citation corrected to the KNAW paper of March 1917; the path-variance sentence corrected (it uses
+  the same narrow-correlation approximation as the Limber spectrum). Optional, for Daryl: cite the Ehlers-Geren-Sachs theorem
+  and its almost-isotropic form (Stoeger, Maartens and Ellis 1995) as the complementary route from CMB isotropy to FLRW.
 - Close: strike `PO-86`, put `check_open_item_coherence` in CI, and reactivate 60, cc66 and 70 (and 71 if a
   formalisation row is open by then) on the frontier as it stands, the projection-distance adjudication first.
