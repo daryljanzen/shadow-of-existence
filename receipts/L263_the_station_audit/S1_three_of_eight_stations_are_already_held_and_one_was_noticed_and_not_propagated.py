@@ -362,7 +362,9 @@ def main():
     # SEEDED: a phrase that exists ONLY in P14's comment header must not be found
     raw14 = open(os.path.join(ROOT, 'corpus', 'matter_sector_paper.tex'),
                  encoding='utf-8', errors='replace').read()
-    only_comment = 'THE RECEIPT WAS MORE HONEST THAN THE PAPER'
+    # ⛭ RE-SEEDED r7529 (69, whose P14 header rewrite removed the old seed phrase): a phrase that
+    #   lives only in P14's comment header.
+    only_comment = 'NEVER QUOTE THE NORMALIZABILITY WITHOUT THE NORM'
     check(f'⓸ᵇ SEEDED: "{only_comment}" is in P14\'s comment header and NOT in its body -- the '
           'instrument finds 0',
           only_comment in raw14 and sum(RB.counts(only_comment).values()) == 0)

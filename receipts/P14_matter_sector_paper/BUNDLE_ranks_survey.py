@@ -14,7 +14,7 @@ print("      In odd D the Dirac rep is irreducible and its restriction to a codi
 print()
 print("   other natural bundles of the substrate:")
 print("      tangent bundle of dS_5           rank 5")
-print("      normal bundle of the wall        rank 1  (codimension one)")
+print("      normal bundle of the wall        rank 3  (the transverse S^2 and the cut-normal)")
 print("      each ruling family               rank 1  (rulings are lines)")
 print()
 print("   SM needs, per generation: multiplets of dim 6,3,3,2,1 -> 15 Weyl fields.")
@@ -38,6 +38,7 @@ assert sum(_SM_MULTIPLETS.values()) == 15 and len(_SM_MULTIPLETS) == 5, \
     "the SM generation's 15 is a SUM over five multiplets, not the rank of anything"
 assert all(2**(D//2) != 15 for D in range(1, 65))
 # (iv) the other natural ranks printed, and none of them is 15 either: tangent bundle of dS_5
-#      has rank 5, the wall's normal bundle rank 1 (codimension one: 5 - 4), rulings rank 1.
-_other = [5, 5 - 4, 1]
-assert _other == [5, 1, 1] and 15 not in _other + _dims, _other
+#      has rank 5, the wall's normal bundle rank 3 (two transverse-sphere directions and the
+#      cut-normal, the rank P14_the_bundle_is_the_branching eliminates by reality), rulings rank 1.
+_other = [5, 2 + 1, 1]
+assert _other == [5, 3, 1] and 15 not in _other + _dims, _other

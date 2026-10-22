@@ -262,6 +262,7 @@ print("-" * 88)
 #   runner (red at r6921 `5f9c2b2d`) and passed only from the root.  ** Anchored to the
 #   repository root from this file's own location; the two pins are unchanged. **
 import os as _os
+import re
 _ROOT = _os.path.abspath(_os.path.join(_os.path.dirname(_os.path.abspath(__file__)), '..', '..'))
 _tex = open(_os.path.join(_ROOT, 'corpus', 'matter_sector_paper.tex'), encoding='utf-8').read()
 _pay = open(_os.path.join(_ROOT, 'receipts', 'P14_matter_sector_paper', 'P14_P14_payoff.py'),
@@ -269,10 +270,16 @@ _pay = open(_os.path.join(_ROOT, 'receipts', 'P14_matter_sector_paper', 'P14_P14
 # ⛭ r7293+cc66: widened to the clause this file's own print line already quotes.  The old span
 #   opened on the participle `exchanged` and left outside it exactly the half that
 #   distinguishes the two senses of `R` -- WHAT is exchanged.
-_secount = "the two crossings are exchanged by the antipodal map, which is $R$." in _tex
+# ⛭ RE-PINNED r7529 (69, whose P14 edit moved this sentence): sec:count now names the map it means --
+#   R as the reflection through the origin of the horizon locus, acting on the M=0 throat circle where the
+#   mass it reflects is zero, so there it is the reversal of every signed radius.  The two senses this
+#   check separates are the mass-fixed reversal and the mass-flipping R; the paper's sentence is the latter
+#   restricted to M=0, where the two act alike on (r, M).
+_secount = ("the two crossings are exchanged by the antipodal map, which is how $R$ acts there" in _tex
+            and "where the three radii are exhibited and the mass it reflects is zero" in re.sub(r'\s+', ' ', _tex))
 _cosmo = "R = r_0->-r_0 (2M->-2M) carries 3 -> 3bar" in _pay
-print("    sec:count       : 'the two crossings are exchanged by the antipodal map, which is R'")
-print("                      -- WITHIN one geometry, the mass FIXED")
+print("    sec:count       : 'the two crossings are exchanged by the antipodal map, which is how R acts there'")
+print("                      -- R restricted to the M=0 member, where the mass it flips is zero")
 print("    sec:cosmogenesis: 'R = r_0->-r_0 (2M->-2M) carries 3 -> 3bar'  (P14_P14_payoff)")
 print("                      -- BETWEEN two geometries, the mass FLIPPED")
 check('④ᵉ ⛔ both sentences are in the corpus verbatim, and PART 4 shows they are '

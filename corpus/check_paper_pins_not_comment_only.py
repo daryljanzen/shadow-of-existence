@@ -36,8 +36,9 @@ KNOWN = {
     # r7349+70: W1's 'until r2376+c54.179' retired -- RC4 ruled at r7353 (1), the pin replaced by a parsed
     #   assertion on the comment, so the key no longer exists
     ('receipts/L263_the_station_audit/S1_three_of_eight_stations_are_already_held_and_one_was_noticed_and_not_'
-     'propagated.py', 'THE RECEIPT WAS MORE HONEST THAN THE PAPER'):
-        'only in a comment of matter_sector_paper.tex -- routed r7275+70.2',
+     'propagated.py', 'NEVER QUOTE THE NORMALIZABILITY WITHOUT THE NORM'):
+        'only in a comment of matter_sector_paper.tex -- the seed is a header-only phrase by design '
+        '(re-seeded r7529+69 when P14\'s header rewrite removed the old one)',
 }
 
 

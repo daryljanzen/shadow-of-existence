@@ -13,7 +13,7 @@ print("      In odd D the Dirac rep is irreducible and its restriction to a codi
 print()
 print("   other natural bundles of the substrate:")
 print("      tangent bundle of dS_5           rank 5")
-print("      normal bundle of the wall        rank 1  (codimension one)")
+print("      normal bundle of the wall        rank 3  (the transverse S^2 and the cut-normal)")
 print("      each ruling family               rank 1  (rulings are lines)")
 print()
 print("   SM needs, per generation: multiplets of dim 6,3,3,2,1 -> 15 Weyl fields.")

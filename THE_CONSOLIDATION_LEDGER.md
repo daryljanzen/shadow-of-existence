@@ -54,7 +54,9 @@ two-real-forms reflection. So P14 owes a **reciprocal in-voice pointer** — its
 structure *on* the Lorentzian real form, the flavour skeleton one factor of the two real forms — written in
 P14's own voice, not P13's pasted in. **And a decision:** THE PLATE (the "P13/P14 conjecture") currently
 lives in P13 `sec:closure`; keep it P13-only with P14 referencing, or make it a shared figure? *(Rec: keep
-in P13, the synthesis home; P14 references it.)* Real, not urgent.
+in P13, the synthesis home; P14 references it.)* Real, not urgent. **Done (r7529)**: P14 states in its own voice, in the abstract and
+sec:scope, that it is the matter's discrete structure on the Lorentzian real form, colour's continuous algebra on the
+compact face, which is why its two colours are not one; THE PLATE stays in P13 and P14 references it.
 
 **Q2 — the QM-synthesis cross-corpus propagation (the D1-analogue, and the "draw connections again" pass
 Daryl named).** The synthesis is landed in P13/p0; the papers that **feed** it may each earn a reciprocal
@@ -441,6 +443,21 @@ crossing, `PO-92` §open), `P3` (`PO-92` at line 1222, `PO-93` §curvature), `P2
 - `P14`: normal-bundle rank 3 against 1; S3 "broken" against "not"; T in the order-12 group; K called the seam continuation
   (xi's name); "protected under any deformation" (recorded at r1830, still standing); "antipodal is R"; the 11/11 test's low
   power; the triality count mismatch.
+  **Done (r7529)**: the wall's normal bundle is rank three, as the bundle-is-the-branching receipt eliminates it by reality;
+  the stale bundle passage (one candidate examined, the rest untouched, the normal bundle rank one) is rewritten to the
+  settled state, and the ranks survey receipt corrected in both copies; the deck Z3 is exact on everything the construction
+  builds, its breaking the mass mechanism's, matching the correspondence section; T is stated as the horn swap the
+  construction already carries, with no unnamed order-twelve group; K is the reality involution of cosmic time acting on
+  the propagating fermion the continuation reaches, not the continuation; the header no longer carries the "protected under
+  any deformation" claim or any revision history; "antipodal is R" spelled out as R's action on the throat circle of the
+  M=0 member, where the radii are exhibited and the mass R reflects is zero, so the reflection through the origin of the
+  horizon locus reverses every signed radius there (the corpus's two senses of R, mass-fixed and mass-flipping, coincide on
+  (r, M) at M=0, which is what the lifts receipt separates); the eleven-of-eleven test's reach is
+  stated (any vanishing-residue condition returns the same verdicts once the residue is triality; what is added is the
+  residue derived); the triality values are no longer called a configuration count. Also: the Kaluza-Klein negative stated
+  as closing the tower reading; history narration removed at seven sites; Q1 below done, the two-real-forms pointer in the
+  abstract, sec:scope and the header, THE PLATE kept in P13 and referenced.
+  **The open-language read is done (r7529)**: 19 sites, 12 ordinary English, 7 owed (four items, below).
 - `P15`: the branch point called a "null surface" and "the cosmological horizon promoted to the initial layer" (line 433),
   settled with section 3's r=0 canon and edited there; "collapse-phase driving" (sec:envelope) against every sound wave starting
   fresh on the expanding leg, read with sec:coherence in `P15`'s second turn. Checked and not defects: r_s 146.4 against 145.4
@@ -538,5 +555,16 @@ crossing, `PO-92` §open), `P3` (`PO-92` at line 1222, `PO-93` §curvature), `P2
   {0,1,2} from a single condition is exhibited.
 - `P10`'s Euclidean segment: whether the imaginary-time stretch admits a quantum treatment in its own right, which the
   deparametrization does not supply.
+- `P14`'s index equality: the Atiyah-Singer equality of the analytical index with a topological integral on the branched
+  bead, which would give the count's invariance under every deformation preserving the three walls (local stability is the
+  spectral gap's, and the parity the holonomy's).
+- `P14`'s quantised field: the fermion field's mode completeness and the matching of the static region's continuum to the
+  wall-bound modes across the locus the geometry already crosses.
+- `P14`'s third mechanism: a route to a gauge coupling that is neither holonomy nor isometry, constrained to deliver a fixed
+  pure number (the dimensionless Yang-Mills coupling the single length cannot build).
+- `P14`'s breaking structure: whether the slicing's singling of one root against the ellipse pair bears on the physical mass
+  hierarchy.
+- `P13`: "the seam continuation supplying K" (sec:closure, after the plate) runs the reality involution of cosmic time together
+  with the seam continuation; P14 states them apart.
 - Close: strike `PO-86`, put `check_open_item_coherence` in CI, and reactivate 60, cc66 and 70 (and 71 if a
   formalisation row is open by then) on the frontier as it stands, the projection-distance adjudication first.
