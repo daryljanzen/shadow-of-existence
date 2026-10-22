@@ -469,6 +469,19 @@ crossing, `PO-92` §open), `P3` (`PO-92` at line 1222, `PO-93` §curvature), `P2
   r=0 a horizon the slicing is anchored to or carries revision history.
   **Done (r7531)**. **The open-language read is done (r7531)**: 21 sites, all ordinary English (the open leaf, or answered in
   place).
+- `P17` (72's five, 71's M16, and the read's own): the masthead rewritten to the current state with no revision history
+  (the two header blocks, the inline r2376 comment); "past the wall" named as the wall of the symmetry-reducible sector where
+  "the wall" otherwise means P13's; "the closed S3 of the cosh-law cosmology" kept (it is the de Sitter presentation's
+  layer) and qualified as the substrate's own slice at zero mass, the Nariai mass carried into the observer's presentation
+  by the reassignment; "no free dimensionless constant" scoped to the geometric ledger at every site, the
+  mode sums' one spent constant named; the two polarities kept apart (the absolute's polar {eta(P,X)=0}, whose section is
+  the dS_4 background, and the substrate quadric's {eta(P,X)=alpha^2}, the tangent hyperplane the throat protocol runs on),
+  where two sentences called them the same relation. M16 found already resolved (sec:imaginary gives five instances, the
+  conjugacy circle its own paragraph). The read's own: the two P15 statements ("rejects the computed temperature spectrum",
+  "still rejected on shape at 2.57") brought to P15's own, the disagreement sitting in one assignment and the leaf-rate
+  distance taking the arm below the control; P14's twelve stated with the right-handed multiplet difference; narration at
+  the figure-theorem run and the entropy question removed. **Done (r7533)**. **The open-language read is done (r7533)**:
+  22 sites, 18 ordinary English, 2 pointed at PO-87 and PO-89, 2 owed (the thesis, below).
 - `P15`: the branch point called a "null surface" and "the cosmological horizon promoted to the initial layer" (line 433),
   settled with section 3's r=0 canon and edited there; "collapse-phase driving" (sec:envelope) against every sound wave starting
   fresh on the expanding leg, read with sec:coherence in `P15`'s second turn. Checked and not defects: r_s 146.4 against 145.4
@@ -575,6 +588,8 @@ crossing, `PO-92` §open), `P3` (`PO-92` at line 1222, `PO-93` §curvature), `P2
   pure number (the dimensionless Yang-Mills coupling the single length cannot build).
 - `P14`'s breaking structure: whether the slicing's singling of one root against the ellipse pair bears on the physical mass
   hierarchy.
+- `P17`'s thesis: that the seven separately established faces of maximal symmetry are one fact, held as a conjecture
+  against the free-data-count test, both of whose sides are run and pass.
 - `P13`: "the seam continuation supplying K" (sec:closure, after the plate) runs the reality involution of cosmic time together
   with the seam continuation; P14 states them apart.
 - Close: strike `PO-86`, put `check_open_item_coherence` in CI, and reactivate 60, cc66 and 70 (and 71 if a

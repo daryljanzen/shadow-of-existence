@@ -1,27 +1,5 @@
 \documentclass[11pt,a4paper]{article}
 
-% *** rem:onecircle / |-58 EXTENDED to the projective
-%   setting. The bound was stated for CLASSICAL CIRCLE GEOMETRY in the projection; the polarity of the
-%   EMBEDDING QUADRIC itself returns, at every named point, what eq:powerisheight already gives -- because
-%   that identity IS the hyperboloid's equation. THE HINGES LIE ON THE QUADRIC (-3+4=1), so each polar is
-%   just the tangent hyperplane there, and the sqrt3.alpha tangent length from the foot of the hinge axis
-%   is eq:powerisheight at transverse 2alpha, NOT a new relation. Receipt Q1_quadric_polarity.
-%   THE FIELD'S TRAP, recorded in QUADRIC_GEOMETRY_LEDGER: a first pass computed the polar's EUCLIDEAN
-%   distance in a Minkowski space (1/sqrt7) -- a gauge artefact. Projective quadric geometry's classical
-%   formulae are written for Euclidean/complex-projective settings; every length it offers must be checked
-%   for invariance under the substrate's own group before it is read as a result. ***
-% *** THE ONE SCALE HAS A CLASSICAL NAME.
-%   Read projectively the substrate is a CAYLEY-KLEIN geometry whose ABSOLUTE is the quadric
-%   eta(X,X)=0 -- the null cone -- and its geodesic separation IS the CK log-cross-ratio against
-%   that absolute, with CK constant = alpha EXACTLY (timelike tau = (alpha/2)|log CR|, verified at
-%   every rapidity and every alpha; spacelike the corresponding angle; discriminant 4.alpha^4(u^2-1)
-%   in u = eta(P,Q)/alpha^2 deciding which). Receipt Q3_cayley_klein.
-%   WHY IT MATTERS: the SCALE is the only free constant a CK construction carries -- signature, null
-%   structure and isometry group are fixed by the absolute's projective type -- so ONE SCALE is not
-%   merely the outcome of the constants audit (the adversarial hunt's 'audited exhaustive zero') but
-%   THE CLASSICAL STATEMENT about a geometry of this kind. The corpus reached it by exhaustion;
-%   Cayley-Klein says it structurally.  TRACED, not computed: the only-free-constant fact is
-%   standard CK theory. ***
 % [†ONT-CORE] THE GEOMETRIC CORE — this paper is the HOME (ONTOLOGY_FOUNDATION_INDEX.md §1j).
 %   THE SYNTHESIS POLE (with P7), and the space the corpus lands in. Established here: the substrate is
 %   EVERYWHERE INTRINSICALLY REAL BY CONSTRUCTION — a real manifold with a real coordinate basis, its
@@ -33,42 +11,43 @@
 %   Eddington corrected and grounded; the HORIZON PROBLEM DISSOLVED — the CMB's uniformity is the
 %   substrate's maximal symmetry, not early causal contact). The straight null rulings are the light
 %   cone: signature and curvature are the asymptote and waist of ONE equilateral pseudo-sphere.
+%   THE ONE SCALE HAS A CLASSICAL NAME: read projectively the substrate is a CAYLEY-KLEIN geometry whose
+%   ABSOLUTE is the null cone eta(X,X)=0, its geodesic separation the CK log-cross-ratio against that
+%   absolute with CK constant alpha (receipt Q3_cayley_klein). The scale is the only free constant a CK
+%   construction carries (standard CK theory, traced, not computed here).
+%   TWO POLARITIES, NEVER CONFLATED: a substrate point P has its polar with respect to the ABSOLUTE,
+%   {X: eta(P,X)=0}, whose section of the substrate is the totally geodesic dS_4 background, and its polar
+%   with respect to the SUBSTRATE QUADRIC, {X: eta(P,X)=alpha^2}, the tangent hyperplane at P — parallel
+%   hyperplanes; the throat protocol (rem:onecircle) runs on the second. Lengths from projective formulae
+%   are checked for invariance under the substrate's own group before being read (QUADRIC_GEOMETRY_LEDGER).
 %   *** MAXIMAL SYMMETRY WORN SEVEN WAYS (SO(5,1) complete and exhausted, one root of seven separately-
 %   established results): (i) the augmentation necessary and sufficient, its necessary half MEASURED —
 %   maximal symmetry making the substrate the LEAST-ARBITRARY vacuum, so the substrate's selection is an
 %   instance of the programme's own R2 ([†ONT-EPI]), not an added axiom; (ii) GR's Dirac algebra IS the
 %   symmetric-space grading, the problem of time its base-dependence ([†ONT-ALG]); (iii) ONE SCALE — the
-%   constants are unit gauges, the grav-cosmo-quantum sector spending NO free dimensionless constant;
-%   (iv) the cosmology's RATE PARAMETER-FREE, set by Lambda alone, with no early-universe parameter (the plasma handed over at the branch point) ([†ONT-COSMO]); (v) the continuous matter symmetry WALLED
+%   constants are unit gauges, the grav-cosmo-quantum sector spending no free dimensionless constant IN
+%   ITS GEOMETRIC LEDGER (the graviton tower's mode sums spend one, P10's renormalised value);
+%   (iv) the cosmology's RATE PARAMETER-FREE, set by Lambda alone, with no early-universe parameter (the
+%   plasma handed over at the branch point) ([†ONT-COSMO]); (v) the continuous matter symmetry WALLED
 %   (su(3) not in so(5,1) precisely BECAUSE SO(5,1) is exhausted) — but the complement is not empty: the
-%   unique spin structure and the one orientation parity acting as gamma^5 ([†ONT-DISC]); (vi) ONE CIRCLE -- the equator/waist is
-%   what the construction is built on: its radius IS the curvature, its tangents ARE the null rulings,
-%   the power of a point with respect to it is that point's HEIGHT, and P3's hinge placement, 60deg
-%   subtense, incircle and nine-point relations all read off it -- P3 calls it "the SEVENTH FACE of the
-%   substrate's maximal symmetry". (vii) the
-%   UNIVERSALITY of physics IS the maximal symmetry (invariance of the measure).
+%   unique spin structure and the one orientation parity acting as gamma^5 ([†ONT-DISC]); (vi) ONE CIRCLE
+%   — the equator/waist is what the construction is built on: its radius IS the curvature, its tangents
+%   ARE the null rulings, the power of a point with respect to it is that point's HEIGHT, and P3's hinge
+%   placement, 60deg subtense, incircle and nine-point relations all read off it; (vii) the UNIVERSALITY
+%   of physics IS the maximal symmetry (invariance of the measure).
 %   THE RIGIDITY AND THE WALL ARE ONE FACT: what makes CR decisive against the world (no knob at any
 %   rung) is what makes matter geometrically hard. "The discrete half of matter is the stone's and the
 %   content half the search." LEDGER: the Planck values are gauge-combinations, not physical scales;
 %   alpha is the one physical length; alpha/l_P ~ 10^61 is a NUMBER, NOT A TUNING; Lambda's VALUE is the
 %   ledger's one input, NOT predicted. ***
-%   *** ALTITUDE (P6's boundary, enacted — hold this): the seven results are EACH ESTABLISHED; reading
-%   them as ONE FACT is the THESIS, stated as a conjecture, decidable by the test in §frontiers. The
-%   two-fine-tuning-problems-one-fact reading is CONJECTURE. Assert neither a geometric su(3), nor the
-%   hexad IDENTITY (the geometric six-fold and the seat triplet are two distinct O(5,1) reflections
-%   — R vs T, a true resonance, NOT a naming-blocker: R carries 3->3bar, so the R-image branch is
-%   antimatter within CR at the weight the fundamental is matter), and a geometric CPT is not
-%   auto-yielded (the residue is a LINEAR orientation skeleton P/T/gamma^5/R; charge conjugation is
-%   antilinear and field-level — the geometry supplies the orientation SKELETON of matter AND antimatter,
-%   the 3(+)3bar the R-parity relates, not the CHARGE, which is field-level on both branches alike), nor
-%   the generation descent's empirical reach. EVERY FORCING HERE IS AT RULE-FAVOURED ALTITUDE. ***
-%   *** UPDATE (r1088->r1092): "field-level" enlarged. The antilinear structure is NOT wholly field-level:
-%   tau~ -> conj(tau~) is antilinear AND geometric (L2), so C FACTORISES, C = (Q->-Q)_field o (R o K)_geom,
-%   the geometry carrying all of C's KINEMATIC (CPT/FS) content and only the charge sign field-level; R o K
-%   is the bead's own r=0 crossing, so the cosmogenesis carries C's kinematic face (P13 prop:conjugation-
-%   closure), realised on P14's zero-modes (P14_payoff.py). A geometric CPT still not auto-yielded (charge
-%   closes from the field); what is new is C's kinematic face is geometric. See P13 sec:closure, ONTOLOGY 1BDRY. ***
-%   Its §landing is the corpus's two-way reciprocity ledger (all 17 rounds complete, r885–r895).
+%   *** ALTITUDE (P6's boundary, enacted): the seven results are EACH ESTABLISHED; reading them as ONE
+%   FACT is the THESIS, decidable by the test in sec:frontiers. Assert neither a geometric su(3) nor the
+%   hexad IDENTITY (the geometric six-fold and the seat triplet are two distinct O(5,1) reflections — R vs
+%   T, a resonance; R carries 3->3bar, so the R-image branch is antimatter within CR at the weight the
+%   fundamental is matter). C FACTORISES, C = (Q->-Q)_field o (R o K)_geom: the geometry carries C's
+%   KINEMATIC (CPT/Feynman-Stueckelberg) content and only the charge sign is field-level (P13
+%   prop:conjugation-closure, realised on P14's zero-modes); a geometric CPT is not auto-yielded. ***
+%   sec:landing is the corpus's two-way reciprocity ledger, one entry per companion paper.
 
 \usepackage[margin=1in]{geometry}
 \usepackage{amsmath, amssymb, amsthm}
@@ -98,24 +77,12 @@
 \captionsetup{font=small, labelfont=bf}
 
 % =====================================================================
-%  THE ONTOLOGICAL-GEOMETRIC HEART --- P17.
-%  SPINE POSITION — P17, THE BORDER/CAPSTONE PAPER.
-%    The border, not an interior slot: it is DUAL — §2–§3 STATE the
-%    substrate (foundational, prior to P1 = "P0"); §5–§7 GATHER the
-%    maximal-symmetry unification (synthetic, posterior to P1–P14, forced
-%    by the whole body = "P15").  No linear interior position holds both,
-%    so it is the frame that bounds the corpus, touching the foundation at
-%    one end and the matter boundary (P13) at the other.  Built by the
-%    reciprocal distillation of P1–P14 (its §6 landing space fills from
-%    each round) — so it is forced by the whole corpus by construction.
-%    Held at HYPOTHESIS weight; the spine is flexible (coherence + empirical
-%    forcings drive adjustments) — see OPEN_PROBLEMS_MAP. Its foundational
-%    content GATHERS the substrate (development lives in P3/thesis), never
-%    re-develops it, so the "P0" role forward-references nothing.
-%  Opened r609/r610 from the Entry-18 maximal-symmetry vision + a
-%  directed source read of PhD thesis ch.3 (2012).  This is a SPACE
-%  the G0 propagation lands into and back-propagates from --- every
-%  section states its source; conjectures are named as such.
+%  THE ONTOLOGICAL-GEOMETRIC HEART --- P17, THE BORDER PAPER OF THE SPINE.
+%    It is DUAL: §2–§3 STATE the substrate (foundational, prior to the applications); §5–§7 GATHER the
+%    maximal-symmetry unification (synthetic, posterior to them, forced by the whole body). So it is
+%    the frame that bounds the corpus, touching the foundation at one end and the matter boundary (P13)
+%    at the other. Its foundational content GATHERS the substrate (development lives in P3 and the
+%    thesis), never re-develops it; every section states its source, and conjectures are named as such.
 % =====================================================================
 
 \title{Reached through the imaginary, real by construction:\\
@@ -184,13 +151,13 @@ spacelike, the corresponding angle; and the discriminant $4\alpha^{4}(u^{2}-1)$
 in $u=\eta(P,Q)/\alpha^{2}$ deciding which, according as the joining line meets
 the absolute or misses it\rcpt{Q3_cayley_klein}. A second projective fact follows at once, and it settles how the ladder's second rung sits in its first. 
 
-Since a point $P$ of the substrate has $\eta(P,P)=\alpha^{2}>0$, its polar hyperplane $\{X:\eta(P,X)=0\}$ carries signature $(1,4)$, so the substrate cut by it is a totally geodesic $\mathrm{dS}_{4}$ of isometry $\mathrm{SO}(4,1)$\rcpt{Q6r_polar_is_the_background}. 
+Since a point $P$ of the substrate has $\eta(P,P)=\alpha^{2}>0$, its polar hyperplane with respect to the absolute, $\{X:\eta(P,X)=0\}$, carries signature $(1,4)$, so the substrate cut by it is a totally geodesic $\mathrm{dS}_{4}$ of isometry $\mathrm{SO}(4,1)$\rcpt{Q6r_polar_is_the_background}. 
 
 That subgroup is a sweep-subgroup of the substrate's $\mathrm{SO}(5,1)$, which is the criterion by which a four-geometry is a \emph{cut}; and being the maximally symmetric such cut it is the $\mathrm{dS}_{4}$ background itself. 
 
 \emph{So polarity is how the background sits in the substrate}---the background is the polar slice of a substrate point, one for each point and none privileged, the point a slice is polar to being what selects it. 
 
-The ladder and its embedding are stated here; it is the same pole--polar relation the throat protocol already runs on, read one dimension up. Since the scale is the only
+The ladder and its embedding are stated here. That polar is taken against the absolute; the throat protocol runs on the polarity of the substrate quadric itself, $\{X:\eta(P,X)=\alpha^{2}\}$, the tangent hyperplane at $P$, and the two polars of a point are parallel. Since the scale is the only
 free constant a Cayley--Klein construction carries---signature, null structure
 and isometry group being fixed by the absolute's projective type---the
 one-scale reading is not merely the outcome of the constants audit but the
@@ -518,15 +485,17 @@ into a metric but the constant of a projective geometry whose absolute is the li
 same fact the signature proposition above states metrically.
 
 \emph{A second projective fact follows at once, and it settles how the background sits in the
-substrate.} Since a point $P$ of the substrate has $\eta(P,P)=\alpha^{2}>0$, its polar hyperplane
-$\{X:\eta(P,X)=0\}$ carries signature $(1,4)$, so the substrate cut by it is a totally geodesic
+substrate.} Since a point $P$ of the substrate has $\eta(P,P)=\alpha^{2}>0$, its polar hyperplane with respect to
+the absolute, $\{X:\eta(P,X)=0\}$, carries signature $(1,4)$, so the substrate cut by it is a totally geodesic
 $\mathrm{dS}_{4}$ of isometry $\mathrm{SO}(4,1)$\rcpt{Q6r_polar_is_the_background}. That subgroup is a
 sweep-subgroup of the substrate's $\mathrm{SO}(5,1)$, which is the criterion by which a four-geometry
 is a \emph{cut}~\cite{JanzenRange}; and being the maximally symmetric such cut it is the
 $\mathrm{dS}_{4}$ background itself. \emph{So polarity is how the background sits in the
 substrate}---the background is the polar slice of a substrate point, one for each point and none
-privileged, the point a slice is polar to being what selects it. \emph{It is the same pole--polar
-relation the throat protocol already runs on, read one dimension up.}
+privileged, the point a slice is polar to being what selects it. \emph{It is the polarity of the absolute,
+and the throat protocol runs on the other one the construction carries}: the polar of $P$ with respect to
+the substrate quadric, $\{X:\eta(P,X)=\alpha^{2}\}$, is the tangent hyperplane at $P$, parallel to the
+absolute's polar through the origin (Remark~\ref{rem:onecircle}).
 
 \section{The $\Lambda$-completed vacuum as the universal standard of
 physics}\label{sec:standard}
@@ -934,7 +903,7 @@ And the polarity has a second thing to say about the figure, which is what a pro
 
 Duality with respect to the throat carries points to lines and reverses incidence, so the pencil of slicing planes through a hinge goes over to the range of points on that hinge's polar. 
 
-That polar is computed in one line---the hinge sits at transverse $2\alpha$, so its polar is the line at $\alpha/2$---and it is not a new line in the figure: it is \emph{the opposite side of the contact triangle}, whose vertices are the three points at which the hinge triangle's sides touch the throat, the midpoints of the companion slicing paper's midpoint-tangency statement~\cite{JanzenSlicing}%  r2376+c54.9: was \ref{prop:twoalpha}, a label that lives in P3 -- \ref does not cross papers, so it printed as ??
+That polar is computed in one line---the hinge sits at transverse $2\alpha$, so its polar is the line at $\alpha/2$---and it is not a new line in the figure: it is \emph{the opposite side of the contact triangle}, whose vertices are the three points at which the hinge triangle's sides touch the throat, the midpoints of the companion slicing paper's midpoint-tangency statement~\cite{JanzenSlicing}%
 \rcpt{D1_hinge_duality}. The dual of the hinge triangle is therefore the contact triangle, the dual of the swing is a point sliding along one of its sides, and the throat is self-dual, being the conic of the duality. The self-conjugate case is the throat-tangent door, whose pole is its own point of contact. \emph{The dual figure is already in the construction}---the tangency points are the same three the hinge placement turns on---and it is more than a set of midpoints. The
 polarity of the embedding quadric itself---$P\mapsto\{X:\eta(P,X)=\alpha^{2}\}$,
 which depends on the single invariant $\eta(P,P)$ against $\alpha^{2}$---returns
@@ -961,7 +930,7 @@ construction but as the mass itself~\cite{JanzenSlicing,JanzenOperator}.
 Proposition~\ref{prop:tangentnull} are identities, verified; the
 one-circle bound of Remark~\ref{rem:onecircle} is established by the
 identity's own dependence on the waist; the historiographic reading is
-collected here. The bound of Remark~\ref{rem:onecircle} is where that run stopped paying. The pole--polar relation, the radical
+collected here. The bound of Remark~\ref{rem:onecircle} is where the classical catalogue stops returning causal structure. The pole--polar relation, the radical
 axis of the throat and the circle that places the hinge, and inversion in the throat
 each return the same object---the chord of contact of a point's two null tangents,
 which is that point's horizon on the throat---by three routes sharing no machinery;
@@ -969,13 +938,13 @@ Ptolemy, La~Hire's reciprocity, and Casey's bitangent identity~\cite{CoxeterGrei
 figure and return nothing, for the three reasons the remark names. The catalogue,
 its receipts, and the failures that drew the boundary are recorded in the
 programme's figure-theorem ledger (\ldg{figure_theorem}, with
-\texttt{storyboard\_receipts/}); what is carried here is the identity, its bound, and what the run returned.
+\texttt{storyboard\_receipts/}); what is carried here is the identity, its bound, and what the catalogue returns.
 
 Two things about that boundary are worth stating together, because they are the
 reason to trust the reading rather than merely to admire it. The first is that it
-was \emph{found}, not posited: the classical catalogue was run against the throat
-one theorem at a time, and the boundary is where the run stopped paying. The
-second is what the run returned when it did pay. The pole--polar relation gives
+is \emph{measured}, not posited: the classical catalogue read against the throat
+theorem by theorem returns causal structure exactly where the remark predicts and
+nothing elsewhere. The second is what it returns where it does. The pole--polar relation gives
 the chord of contact of a point's two null tangents; the radical axis of the
 throat and the circle that places the hinge gives the same line without mentioning
 a tangent; inversion in the throat gives it a third time, as the image of that
@@ -1074,7 +1043,7 @@ horizon's thermal state~\cite{GibbonsHawking1977} closing the scale factor's lon
 freedom \emph{without a free parameter}~\cite{JanzenCanonicalTime}---and \emph{lone} there is a dimension count rather than a manner of speaking, the radial operator having deficiency indices $(1,1)$ so that von~Neumann's extension theory gives a $U(1)$ of self-adjoint extensions and exactly one real parameter, which is the parameter the horizon's thermal state spends\ldg{functional_analysis}; and $k_B$
 converts that horizon temperature to energy. So the
 gravitational--cosmological--quantum sector spends \emph{no free dimensionless
-constant}---every would-be free parameter is a unit gauge or a freedom maximal
+constant in its geometric ledger}---every would-be free parameter is a unit gauge or a freedom maximal
 symmetry has already spent (the perspectival mass fixed at Nariai, the
 quantization closed by the horizon).  \emph{The claim is about those constants and
 carries one scope, which is stated here rather than discovered later}: the graviton
@@ -1095,10 +1064,11 @@ free datum is the matter's.
 scale, the low-multipole deficit, the transmission character, and the
 geometric expansion rate carry no tunable freedom. What the cosmology takes from the data is its epoch and its expansion rate, fixed together by the baryon-acoustic distances and the acoustic angle~\cite{JanzenCRcosmology}. The rigidity is two-sided, and that is its
 discriminating power: the rate matches the distance ladder and the abundances,
-and the acoustic shape is a falsifiable prediction on which the full-spectrum
-likelihood rejects the computed temperature spectrum, the low multipoles a
-cosmic-variance-limited wash and the damping-scale signature a Gaussian residual
-of the joint fit~\cite{JanzenCRcosmology}.
+and the acoustic shape is a falsifiable prediction: the full-spectrum likelihood
+holds the computed temperature spectrum short of the control on shape, the
+disagreement sitting in the one assignment of the rate the projection's distance is
+built on, the low multipoles a cosmic-variance-limited wash and the damping-scale
+signature a Gaussian residual of the joint fit~\cite{JanzenCRcosmology}.
 \item \textbf{The continuous matter symmetry is excluded.}
 $\mathfrak{su}(3)\not\subset\mathfrak{so}(5,1)$ precisely because $SO(5,1)$
 is exhausted; the same completeness that locks the constants leaves no room
@@ -1242,8 +1212,9 @@ fermion \emph{content} alone---the gauge assignment and the mass values, the
 ordinary route, whose deeper structure is the open search. \emph{Those two entries do not
 stand alike.} The gauge assignment is part delivered: twelve of a generation's
 fifteen Weyl fermions factor by the construction's own sheet index as colour,
-weak isospin and chirality, with the multiplicities agreeing state by
-state~\cite{JanzenMatter}; and the three that do not appear are not merely
+the horn and the ruling, the count agreeing state by state while the multiplet
+structure differs from the Standard Model's on exactly one right-handed
+pair~\cite{JanzenMatter}; and the three that do not appear are not merely
 missing, their absence following from the welding of unbranchedness to the
 colour index, which holds exactly at odd hinge count and so in even dimension.
 \emph{The mass values are in a different position}: what is established there is
@@ -1301,7 +1272,7 @@ hypotheses---a Killing horizon with non-vanishing surface gravity and a bifurcat
 that reaches the horizon term, so the law carries there. \emph{At the forced member it cannot}: the double
 root makes the surface gravity vanish identically, and at vanishing surface gravity the first law admits no
 solution for the entropy variation at all. \emph{That is undetermined rather than false}, which is the
-sharper statement, and it is why this question looked undecidable while being asked of two objects at once.
+sharper statement, and it is why the question has no single answer for the two objects.
 \emph{And at a collapse horizon there is no entropy to be determined}: it is not a bifurcate Killing horizon
 and carries no distinguished cross-section, so the construction has no surface to evaluate the charge on. Its
 area is computable all the same---through the ledger's own $2M=\alpha(u-u^{3})$ the ratio to the substrate's
@@ -1459,12 +1430,12 @@ geometry. (2012 dissertation.)}\label{fig:comoving}
 symmetry, exhausting the continuous isometry, leaves over exactly the
 \emph{discrete} orientation parity $O(5,1)\setminus SO_0(5,1)$---the
 $\mathbb{Z}_2$ that threads the mass-reflection, the graviton helicities, and
-the chirality of the turning polarisation plane past the
-wall~\cite{JanzenGroupoid,JanzenDynamics,JanzenAlgebroid,JanzenBoundary}.
+the chirality of the turning polarisation plane past the wall of the
+symmetry-reducible sector~\cite{JanzenGroupoid,JanzenDynamics,JanzenAlgebroid,JanzenBoundary,JanzenRange}.
 That discrete residue is the home of the fermion sector the matter paper
-builds~\cite{JanzenMatter}: not the continuous isometry the wall closes, but the
-discrete parity the wall cannot reach. The ordinary route --- a matter bundle
-placed by hand --- is untouched by the wall.
+builds~\cite{JanzenMatter}: not the continuous isometry the boundary paper's wall
+closes, but the discrete parity that wall cannot reach. The ordinary route --- a
+matter bundle placed by hand --- is untouched by it.
 
 \paragraph{The families' discrete skeleton, as a within-CR result.} One reach on that residue is worth
 stating whole, because its parts are grounded in several registers at once. \textbf{The reading, and what
@@ -1510,7 +1481,7 @@ and not selected~\cite{JanzenMatter}, the leaf-bound modes and the propagating f
 being two sectors; what stays the ordinary route is the gauge content, excluded from the
 continuous isometry~\cite{JanzenBoundary}, and the mass spectrum (electroweak). For the discrete skeleton this is a result rather than a conjecture.
 
-\paragraph{One principle, worn three ways.} Step back from the descent to the shape of the whole. The three-fold built there~\cite{JanzenMatter} is the innermost of three nested registers of maximal symmetry the construction carries. The substrate is maximally symmetric---$\mathrm{dS}_5$, its isometry $SO(5,1)$ exhausted (Prop.~\ref{prop:unique}). The evolving three-space it presents is maximally symmetric---the closed $S^3$ of the $\cosh$-law cosmology, $SO(4)$~\cite{JanzenOperator,JanzenCRcosmology}. And the discrete symmetry the slicing breaks out of the substrate is itself maximally symmetric---the hexagonal $\mathrm{Aut}(A_2)=D_6$, the $\mathbf 3\oplus\bar{\mathbf 3}$ worn on the two horns, the fundamental $\mathbf 3$ matter and its $R$-image $\bar{\mathbf 3}$ antimatter, on one footing within CR~\cite{JanzenMatter,JanzenBoundary}. Read this way the candidate synthesis widens past the generations: the Standard Model's apparent arbitrariness---why three families, why a chirality, why any discrete family structure at all---is, with the descent built~\cite{JanzenMatter} and forced within CR, not a list of inputs but the shadow of one principle broken symmetrically: a maximally-symmetric breaking of a maximally-symmetric substrate, carried in a maximally-symmetric space. The grounded floor is the three registers, and the discrete structure they carry is counted and built~\cite{JanzenMatter}, not conjectured: three chiral seats related by $S_3$, the generations on the turnaround's cyclic three, forced within CR. What is \emph{not} claimed---and stays the ordinary route---is a geometric origin for the gauge content or the masses; those are excluded from the isometry, and electroweak. For the discrete skeleton of the families, then, this is the thing the one principle reaches---within CR, at the scope the matter paper states in full.
+\paragraph{One principle, worn three ways.} Step back from the descent to the shape of the whole. The three-fold built there~\cite{JanzenMatter} is the innermost of three nested registers of maximal symmetry the construction carries. The substrate is maximally symmetric---$\mathrm{dS}_5$, its isometry $SO(5,1)$ exhausted (Prop.~\ref{prop:unique}). The evolving three-space it presents is maximally symmetric---the closed $S^3$ of the $\cosh$-law cosmology, $SO(4)$---the de~Sitter presentation's layer, which is the substrate's own slice at zero mass, the cosmology's Nariai mass carried into the observer's presentation by the reassignment~\cite{JanzenOperator,JanzenCRcosmology}. And the discrete symmetry the slicing breaks out of the substrate is itself maximally symmetric---the hexagonal $\mathrm{Aut}(A_2)=D_6$, the $\mathbf 3\oplus\bar{\mathbf 3}$ worn on the two horns, the fundamental $\mathbf 3$ matter and its $R$-image $\bar{\mathbf 3}$ antimatter, on one footing within CR~\cite{JanzenMatter,JanzenBoundary}. Read this way the candidate synthesis widens past the generations: the Standard Model's apparent arbitrariness---why three families, why a chirality, why any discrete family structure at all---is, with the descent built~\cite{JanzenMatter} and forced within CR, not a list of inputs but the shadow of one principle broken symmetrically: a maximally-symmetric breaking of a maximally-symmetric substrate, carried in a maximally-symmetric space. The grounded floor is the three registers, and the discrete structure they carry is counted and built~\cite{JanzenMatter}, not conjectured: three chiral seats related by $S_3$, the generations on the turnaround's cyclic three, forced within CR. What is \emph{not} claimed---and stays the ordinary route---is a geometric origin for the gauge content or the masses; those are excluded from the isometry, and electroweak. For the discrete skeleton of the families, then, this is the thing the one principle reaches---within CR, at the scope the matter paper states in full.
 
 \paragraph{The two readings: general relativity and the Standard Model's families, one discrete structure.} Stated at its sharpest, the synthesis is one claim about one discrete structure read two ways. The residue $\mathrm{Aut}(A_2)=S_3\times\mathbb{Z}_2\cong D_6$, read as \emph{cuts} of the substrate, is the organising symmetry of general relativity's symmetry-reducible solution space~\cite{JanzenRange}---the three horizon roots, the vantages that permute them, the mass-reflection $R$, the two null rulings; read on a \emph{fermion sector} it is the discrete skeleton of the Standard Model's families---a threeness against two chiralities, an $S_3$ and the parity $\gamma^5=R$~\cite{JanzenMatter}. \emph{The matter sector distinguishes two threes here and this paper follows it}: the $S_3$ among these vantages is the \emph{within-state} index, and the generations' threeness is the turnaround's deck $\mathbb{Z}_3$ (\emph{ibid.}). One structure, two readings, one slicing operator: the vacuum sector and that skeleton are not two theories to be reconciled but two perspectival shadows of the one substrate's discrete symmetry---the reading, not the read, in the exact sense of \S\ref{sec:shadows}. Two boundaries bound this, and both are load-bearing rather than caveats. \emph{What the two readings share is the discrete residue, not the continuous symmetry:} the continuous isometry $SO(5,1)$ generates the cuts and is excluded from the Standard Model ($\mathfrak{su}(3)\not\subset\mathfrak{so}(5,1)$~\cite{JanzenBoundary}), so it is the residue the exhausted continuous isometry leaves that both readings share, the gravitational reading keeping the continuous part to itself. \emph{And it is that skeleton, not the gauge structure:} the Standard Model's defining $\mathrm{SU}(3)\times\mathrm{SU}(2)\times\mathrm{U}(1)$ is exactly the part \emph{not} read off the substrate~\cite{JanzenBoundary}, the mass spectrum stays electroweak, and the reading delivers the generation count, the chirality, the seats' $S_3$ and the generations' $\mathbb{Z}_3$, and those alone. Nor does the synthesis unify the quantum with gravity: what the two readings share is a discrete \emph{geometric} symmetry, neither quantum nor classical in itself, while ``the quantum'' enters the corpus separately, in the horizon-thermal register of the ledger ($\hbar$ the Gibbons--Hawking gauge, \S\ref{sec:ledger})---so the old divide this synthesis bears on is between general relativity and the Standard Model's discrete content, not between general relativity and the quantum. A gravitational--cosmological unification whose matter reach is the discrete skeleton of the families, asserted nowhere as more. The parts are established across the corpus~\cite{JanzenSlicing,JanzenGroupoid,JanzenOperator,JanzenDynamics}, and the two-reading statement is their consolidation.
 
@@ -1749,9 +1720,12 @@ returned on the data --- the genuine-Boltzmann low-multipole shape a
 cosmic-variance-limited wash (a smooth deficit bottoming at $\ell=4$,
 neither the sharp observed quadrupole dip nor a sharp
 falsification), while the geometric rate fits the baryon-acoustic distances and the primordial abundances return deuterium and helium within measurement on the corpus's own hot dense history. The full-spectrum
-likelihood is run as well and returns the sharpest datum against: the acoustic transfer, run end to end on
-the background the distance data fix, reproduces the comb to a part in six hundred and the heights to a few
-per cent, and the spectrum is still rejected on shape at $2.57$ times the control's distance from the data. The cosmic beginning is the
+likelihood is run as well: the acoustic transfer, run end to end on the background the distance data fix,
+reproduces the comb to a part in six hundred and the heights to a few per cent, and on shape sits at $2.57$
+times the control's distance from the data, the disagreement lying in one assignment---the projection's
+distance built on the leaf rate rather than the stacking rate, radiation restored, takes the arm below the
+control---so the
+identification of light's path is the cosmology's frontier. The cosmic beginning is the
 cosmogenesis branch point---the substrate finite in curvature across it, the geometry read over
 the areal chart divergent there---reached through the conjugacy yet real.
 \item \textbf{P16, the cosmogenesis~\cite{JanzenCosmogenesis}} --- Forward: P16 points here, reading the Big Bang as a
