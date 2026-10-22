@@ -647,10 +647,16 @@ crossing, `PO-92` §open), `P3` (`PO-92` at line 1222, `PO-93` §curvature), `P2
   stationary slicing and not for every exterior Cauchy time (in the exterior of a collapse, a retarded-time slicing
   Theta=a(u+eta r) near the horizon accumulates on it with g(grad Theta, grad Theta) -> -2a^2 eta, finite); Vachaspati,
   Stojkovic and Krauss described as the nearest prior account, not as retaining a completed horizon; the event horizon's
-  growth from the centre inside the collapsing matter stated. Adopt from the submission version once it settles, together
-  with whatever is decided on the three larger items raised with it: the Hawking flux at finite exterior time (the
-  late-time Planckian flux is computed on the exterior domain and needs no completed horizon, only its exact thermality
-  does), the non-expanding-horizon literature and the null hypersurfaces of flat space that the definition also covers, and
-  the restriction of the external universe's time to the exterior domain stated as the premise it is.
+  growth from the centre inside the collapsing matter stated. Decided with Daryl and written into the submission version
+  (r7547), to be adopted with it: what the realised exterior lacks is Hawking's exactly thermal state, the permanent
+  in/out inequivalence and evaporation to completion, all of them the u -> infinity limit, while at every finite exterior time
+  the still-collapsing surface emits a near-Planckian flux at kappa/2pi computed on the exterior domain (Barcelo, Liberati,
+  Sonego and Visser), the information paradox not arising because that radiation comes from a body outside its horizon; the
+  metric singularity is the reading as metric coincidence of the known non-expanding condition (Ashtekar and Krishnan),
+  stated to cover the Rindler horizon and every flat null hyperplane, the event horizon singled out by being in addition the
+  exterior's null future boundary; and the external universe's time as a Cauchy time of the exterior domain stated as the
+  section's premise, with its ground. The introduction counts four problems, matching the problems section and conclusion.
+  The corpus copy may also carry what the standalone drops: the information content carried through the branch point, as
+  P7 states it (lossless for content).
 - Close: strike `PO-86`, put `check_open_item_coherence` in CI, and reactivate 60, cc66 and 70 (and 71 if a
   formalisation row is open by then) on the frontier as it stands, the projection-distance adjudication first.
