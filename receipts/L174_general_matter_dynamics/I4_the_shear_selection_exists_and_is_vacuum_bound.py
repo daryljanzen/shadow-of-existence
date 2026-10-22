@@ -24,8 +24,9 @@ strong: the identity is not the only thing the corpus has. **
 twice and does not hide it -- "an algebraically special ** vacuum **", "a Type-D ** vacuum ** admits a
 Killing tensor" -- and the paper's own title names the object the ** Kerr--NUT--(A)dS VACUUM KERNEL **.
 
-  ⇒ *** AND THE BEYOND-WALL STRATUM IS EXACTLY WHERE MATTER IS DYNAMICAL.  So the one selection
-      principle this corpus has for shear is hypothesis-bound to the sector the wall excludes. ***
+  ⇒ *** AND THE BEYOND-WALL STRATUM'S MATTER SIDE IS EXACTLY WHERE MATTER IS DYNAMICAL.  So the one
+      selection principle this corpus has for shear is hypothesis-bound away from the inhomogeneous-matter
+      side of the wall (its other side, radiating vacuum, the theorem does reach). ***
 
 ** ⌗ WHICH SHARPENS THE DARK REGION RATHER THAN REMOVING IT, and corrects its statement: **
   * ** WRONG (r2504): ** "nothing selects among five-component shears."
@@ -136,13 +137,15 @@ def main():
           'the Kerr--NUT--(A)dS vacuum kernel, and the wall of inhomogeneity' in p9)
 
     # and the stratum it cannot reach
-    check('while the wall is where matter is genuinely inhomogeneous -- "such a geometry is one whose '
-          'matter is genuinely inhomogeneous"',
-          's nothing to grip, and such a geometry is one whose matter is genuinely inhomogeneous' in p9)
-    check('⇒⇒ SO THE ONE SHEAR-SELECTION PRINCIPLE THE CORPUS HAS IS HYPOTHESIS-BOUND TO THE SECTOR '
-          'THE WALL EXCLUDES',
+    # The wall's complement has two parts (P9 cor:wall): inhomogeneous matter, and vacuum whose radiation breaks
+    # every symmetry.  The vacuum theorem reaches the second; the stratum it cannot reach is the first.
+    check('while past the wall the matter is genuinely inhomogeneous -- "Such a geometry is one whose '
+          'matter is genuinely inhomogeneous, or a vacuum whose radiation breaks every symmetry"',
+          'Such a geometry is one whose matter is genuinely inhomogeneous, or a vacuum whose radiation breaks every symmetry' in p9)
+    check('⇒⇒ SO THE ONE SHEAR-SELECTION PRINCIPLE THE CORPUS HAS IS HYPOTHESIS-BOUND AWAY FROM THE '
+          'INHOMOGENEOUS-MATTER SIDE OF THE WALL',
           _VAC.search(p9) is not None
-          and 's nothing to grip, and such a geometry is one whose matter is genuinely inhomogeneous' in p9)
+          and 'Such a geometry is one whose matter is genuinely inhomogeneous, or a vacuum whose radiation breaks every symmetry' in p9)
 
     # the corrected statement
     check('⌗ so r2504\'s dark region is SHARPENED, not removed: not "no principle exists" but "the '
@@ -166,9 +169,9 @@ def main():
     print('    cut\'s shear is its departure from the substrate\'s shear-free reference congruence. **')
     print('  ⛔ AND THE HYPOTHESIS IS THE FINDING: ** Goldberg--Sachs is a VACUUM theorem ** -- P9 says')
     print('     so at both uses and its title names the kernel a vacuum kernel -- ** while the')
-    print('     beyond-wall stratum is exactly where matter is dynamical. **')
-    print('  ⇒⇒ ** So the one shear-selection principle the corpus has is hypothesis-bound to the')
-    print('     sector the wall excludes. **')
+    print('     beyond-wall stratum\'s matter side is exactly where matter is dynamical. **')
+    print('  ⇒⇒ ** So the one shear-selection principle the corpus has is hypothesis-bound away from')
+    print('     the inhomogeneous-matter side of the wall. **')
     print('  ⌗ Which SHARPENS r2504 rather than removing it: not "no principle exists" but ** "the')
     print('    principle we have has a hypothesis the stratum violates" ** -- and that names what a')
     print('    beyond-wall result must supply: ** a shear-selection statement that does not assume')

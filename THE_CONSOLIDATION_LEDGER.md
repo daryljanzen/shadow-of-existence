@@ -441,6 +441,20 @@ crossing, `PO-92` §open), `P3` (`PO-92` at line 1222, `PO-93` §curvature), `P2
   Dependency matrix refreshed (P6 now cites P4 6, P13 2, P17 5), with P7's dependency figure carrying the P4-to-P6 edge at 6. **The open-language read is done (r7543)**: 13 keys, 10
   ordinary English or settled in place, 3 pointed at their rows (the acoustic case twice, PO-87; the matter sector and the
   damping-scale signature, PO-14 and PO-24), none owed. `P7`'s item waits for the `P7` return.
+- `P9` (the read's own, no listed items): **Done (r7559)**. The abstract's close promised "what would be needed to reach [the
+  wall] and what remains open" where sec:open says the wall is named and walked past into ordinary evolution (P11); it now
+  says what lies past the wall. The introduction's "that paper closed with the range as its principal open problem" brought
+  to P8's own state (a question P8 places and does not answer, settled here). Corollary cor:wall's first sentence said a
+  geometry with no continuous isometry has genuinely inhomogeneous matter, false for radiating vacuum, which the corollary
+  itself goes on to stress; it now names both. Two header lines brought to the body: chirality genuine once the swept
+  rotation is lost (first in the unpolarized turning wave, inside the range; generic at the wall), not "past the wall"; the
+  strut reading not tied to the coordinate form, as Remark rem:accel argues. The section title "Scope and open problems"
+  made "Scope, the matter functionals, and the wall"; the confined Gowdy wave's construction cited to P11; the Bianchi-I
+  scale factors marked as in units Lambda=3. Dependency matrix refreshed (P9 cites P11 5). **The open-language read is done
+  (r7559)**: 6 keys after the edits, 4 ordinary English or settled in place, 2 pointed at their homes (the inner-horizon
+  interior reassignments, ordinary interior analysis, P3 and P18), none owed; the abstract's retired qualification
+  commented out of the open ledger. Receipt I4 (the shear selection is vacuum-bound) re-pinned to the corrected
+  corollary and scoped to the wall's inhomogeneous-matter side, which is where its vacuum theorem does not reach.
 - `P10`: lines 1468-1479 say "value not claimed" while sections 959-1061 compute it positive; 10^-122 against 10^-123;
   a receipt named "sign_is_mixed".
   **Done (r7523)**: the level-summed coupling's value stated as the odd-level coupling computed above (the recoupling
