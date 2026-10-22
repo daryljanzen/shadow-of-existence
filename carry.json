@@ -5451,9 +5451,34 @@
     "since": "e8eaa96cd92b7c8d35160092cf3522db832da48e",
     "unmeasured": true
    },
+   "receipts/L174_general_matter_dynamics/I10_the_constraint_propagation_is_symmetry_free.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39784874077",
+    "since": "a28709423d0a1bf404e07417c5cd8185de12eb46",
+    "unmeasured": true
+   },
    "receipts/L174_general_matter_dynamics/I1_the_general_case_is_stated_and_exhibited_in_one_class.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39778630943",
     "since": "e8eaa96cd92b7c8d35160092cf3522db832da48e",
+    "unmeasured": true
+   },
+   "receipts/L174_general_matter_dynamics/I2_the_stratification_three_of_four_are_worked.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39784874077",
+    "since": "a28709423d0a1bf404e07417c5cd8185de12eb46",
+    "unmeasured": true
+   },
+   "receipts/L174_general_matter_dynamics/I3_the_identification_is_general_and_the_shear_count_is_the_gap.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39784874077",
+    "since": "a28709423d0a1bf404e07417c5cd8185de12eb46",
+    "unmeasured": true
+   },
+   "receipts/L174_general_matter_dynamics/I5_two_not_five_and_the_constraint_is_in_the_receipt.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39784874077",
+    "since": "a28709423d0a1bf404e07417c5cd8185de12eb46",
+    "unmeasured": true
+   },
+   "receipts/L174_general_matter_dynamics/I6_two_objects_one_word_the_optical_shear_is_not_the_ADM_shear.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39784874077",
+    "since": "a28709423d0a1bf404e07417c5cd8185de12eb46",
     "unmeasured": true
    },
    "receipts/L174_general_matter_dynamics/I8_no_sweep_reaches_the_stratum_and_the_theorem_says_so.py": {
@@ -6244,9 +6269,19 @@
     "since": "108e483e0c6affdfd85d6e77e8753b4045000ce6",
     "unmeasured": true
    },
+   "receipts/L801_nonlinear_shear_freedom/N1_the_nonlinear_freedom_is_the_general_first_class_structure.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39784874077",
+    "since": "a28709423d0a1bf404e07417c5cd8185de12eb46",
+    "unmeasured": true
+   },
    "receipts/L802_stability_bracket/S1_the_stability_bracket_closes_the_needed_cell_is_covered.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39533334363",
     "since": "108e483e0c6affdfd85d6e77e8753b4045000ce6",
+    "unmeasured": true
+   },
+   "receipts/L802_stability_bracket/S2_the_regime_question_is_settled_by_the_corpus.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39784874077",
+    "since": "a28709423d0a1bf404e07417c5cd8185de12eb46",
     "unmeasured": true
    },
    "receipts/L803_station9_neff/S1_the_cosmology_sector_rests_on_neff_and_never_names_it.py": {
@@ -6862,6 +6897,16 @@
    "receipts/P10_canonical_time/P10_the_vertex_numbers_are_exact_at_the_level_this_row_owns_and_the_whole_scheme_is_one_series_pole_data.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39778630943",
     "since": "e8eaa96cd92b7c8d35160092cf3522db832da48e",
+    "unmeasured": true
+   },
+   "receipts/P11_dynamics_paper/F50_the_a_minus_two_belongs_to_W_and_Q_is_bounded_by_going_constant.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39784874077",
+    "since": "a28709423d0a1bf404e07417c5cd8185de12eb46",
+    "unmeasured": true
+   },
+   "receipts/P11_dynamics_paper/P11_mukhanov.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39784874077",
+    "since": "a28709423d0a1bf404e07417c5cd8185de12eb46",
     "unmeasured": true
    },
    "receipts/P12_algebroid/A4_the_ledger_seven_swept.py": {
