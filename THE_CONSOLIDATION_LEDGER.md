@@ -640,5 +640,17 @@ crossing, `PO-92` §open), `P3` (`PO-92` at line 1222, `PO-93` §curvature), `P2
   P5 l.648, P14 l.682, l.690, l.712, l.931. The factor is a spacetime symmetry acting on the spinor, with no gauge field, and
   the Standard Model's chirality is a Lorentz property its gauge coupling distinguishes; the term is to be replaced in one
   sweep across the six papers ("realised as an isometry" against "global"), not in one paper alone.
+- `P1`, from the GRG submission version read at r7545 (the corpus copy carries the same text): Proposition 1, Lemma 2(i) and
+  their proofs work with the set where an exterior observer's past light cone meets the horizon, which is empty (the paper's own
+  collapse section says no horizon event is in the causal past of an exterior event), now stated as convergence of the cones
+  onto the horizon, with the hypothesis I^-(O)=D the proof uses made explicit; Lemma 2(ii)'s lapse collapse holds for the
+  stationary slicing and not for every exterior Cauchy time (in the exterior of a collapse, a retarded-time slicing
+  Theta=a(u+eta r) near the horizon accumulates on it with g(grad Theta, grad Theta) -> -2a^2 eta, finite); Vachaspati,
+  Stojkovic and Krauss described as the nearest prior account, not as retaining a completed horizon; the event horizon's
+  growth from the centre inside the collapsing matter stated. Adopt from the submission version once it settles, together
+  with whatever is decided on the three larger items raised with it: the Hawking flux at finite exterior time (the
+  late-time Planckian flux is computed on the exterior domain and needs no completed horizon, only its exact thermality
+  does), the non-expanding-horizon literature and the null hypersurfaces of flat space that the definition also covers, and
+  the restriction of the external universe's time to the exterior domain stated as the premise it is.
 - Close: strike `PO-86`, put `check_open_item_coherence` in CI, and reactivate 60, cc66 and 70 (and 71 if a
   formalisation row is open by then) on the frontier as it stands, the projection-distance adjudication first.
