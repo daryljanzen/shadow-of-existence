@@ -396,7 +396,7 @@ def main():
     # ** rather than a residual freedom in the quantization"; it now makes the SAME distinction in
     # ** other words, and the distinction is the whole of what this check is for. **
     check('⓷ᵇ and P10 draws the same distinction in its own voice -- what remains open is "the '
-          'ultraviolet definition of the tower sums---a different thing from a residual freedom in '
+          'completion of the ultraviolet definition of the tower sums ... ---a different thing from a residual freedom in '
           'the quantization at the boundary, and not settled by being shared with every interacting '
           'field theory" -- so the two papers agree and it is the ROW\'s one-word label that reads '
           'otherwise',
@@ -408,8 +408,10 @@ def main():
           #   apart, the paper could carry them in unrelated places and the check would pass.
           #   ⌗ Verified before adopting: the whole sentence stands ONCE in the flattened
           #     `canonical_time.tex` and once under `_unmark`.
-          'What remains genuinely open is accordingly the ultraviolet definition of the tower '
-          'sums---a different thing from a residual freedom in the quantization at the boundary, '
+          # ⛭ RE-PINNED r7523 (69, whose P10 edit moved this wording): the completion of the definition.
+          'What remains genuinely open is accordingly the completion of the ultraviolet definition of '
+          'the tower sums, the definition itself being delivered below by the construction\'s own '
+          'regulator---a different thing from a residual freedom in the quantization at the boundary, '
           'and not settled by being shared with every interacting field theory'
           in re.sub(r'\s+', ' ', p10))
     # ⛔⛭ AMENDED r4548, AND IT *** CRASHED *** RATHER THAN FAILING -- the third receipt in this

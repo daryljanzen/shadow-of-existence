@@ -189,8 +189,10 @@ def main():
     tex_txt = open(tex, encoding='utf-8', errors='replace').read().lower() if os.path.exists(tex) else ''
     _tex_u = re.sub(r'\\(?:emph|textit|textbf)\{([^{}]*)\}', r'\1',
                     re.sub(r'\s+', ' ', tex_txt))
-    _UV_OPEN = ("so the one open thing is the ultraviolet definition of the interacting tower's "
-                'mode sums')
+    # ⛭ RE-PINNED r7523 (69, whose P10 edit moved this wording): the open item is now stated as the
+    #   COMPLETION of the definition, the definition itself being delivered by the construction's own regulator.
+    _UV_OPEN = ("so the one open thing is the completion of the ultraviolet definition of the "
+                "interacting tower's mode sums")
     check('THE CORPUS NAMES THE QUESTION: S50 asks whether "the one-dimensional counterterm basis '
           'survive[s] on a background whose curvature runs" and names the instrument (sub-leading '
           'Schwinger-DeWitt on the sinh^{2/3} layer); canonical_time.tex names the interacting-tower UV -- '

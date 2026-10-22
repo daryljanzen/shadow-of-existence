@@ -130,10 +130,12 @@ def main():
     #     a markup-normalised read, and the history stays in the note above rather than in the
     #     condition.  ONE site. ***
     _p10u = re.sub(r'\\(?:emph|textit|textbf)\{([^{}]*)\}', r'\1', p10)
-    _OPEN = ('what remains open is not the boundary condition but the definition of the interacting '
-             'tower')
+    # ⛭ RE-PINNED r7523 (69, whose P10 edit moved this wording): the open item is now stated as the
+    #   COMPLETION of the definition, the definition itself being delivered by the construction's own regulator.
+    _OPEN = ('what remains open is not the boundary condition but the completion of the interacting '
+             'tower\'s definition')
     check('so that, in the paper\'s current words, "what remains open is not the boundary condition '
-          'but the definition of the interacting tower" -- asserted as the whole `not ... but` with '
+          'but the completion of the interacting tower\'s definition" -- asserted as the whole `not ... but` with '
           'its object inside the span, over a markup-normalised read',
           _OPEN in _p10u)
 

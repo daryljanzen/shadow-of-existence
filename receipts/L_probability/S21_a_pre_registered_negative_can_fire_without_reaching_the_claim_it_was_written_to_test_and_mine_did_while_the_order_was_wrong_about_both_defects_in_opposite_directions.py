@@ -405,7 +405,9 @@ gate('Ⓒ③ ⛔⛭⛭ AND SO IS THE SECOND ARM\'S, WHICH IS WHAT THE ORDER DOES
 
 _K_NEW_FIRST = "The interacting tower's divergence structure does reach second order in the coupling"
 _K_NEW_SECOND = "What follows from that is the definition's incompleteness and not the ledger's refutation"
-_K_NEW_OPEN = 'the one open thing is the ultraviolet definition of the interacting tower\'s mode sums'
+# ⛭ RE-PINNED r7523 (69, whose P10 edit moved this wording): the open item is now stated as the
+#   COMPLETION of the definition, the definition itself being delivered by the construction's own regulator.
+_K_NEW_OPEN = 'the one open thing is the completion of the ultraviolet definition of the interacting tower\'s mode sums'
 _news = [_K_NEW_FIRST, _K_NEW_SECOND, _K_NEW_OPEN]
 gate(f'Ⓒ④ ✔⛭ and the repaired summary states all three --- the answer, the refusal of the consequent, '
      f'and the narrower thing that IS open --- each present and word-aligned '

@@ -427,6 +427,13 @@ crossing, `PO-92` §open), `P3` (`PO-92` at line 1222, `PO-93` §curvature), `P2
   is owed; it becomes the rate light's path distance takes, as `P15` and `P18` now state it.
 - `P10`: lines 1468-1479 say "value not claimed" while sections 959-1061 compute it positive; 10^-122 against 10^-123;
   a receipt named "sign_is_mixed".
+  **Done (r7523)**: the level-summed coupling's value stated as the odd-level coupling computed above (the recoupling
+  identity removes the two-point integral); 10^-123 and 10^-245 corrected to 10^-122 and 10^-244 at lines 863 and 1484 (the
+  receipt's 9.63e-123 and its square); the superseded mixed-sign receipt no longer cited, its INDEX row marked superseded as a
+  result and live as arithmetic; two history narrations rewritten ("the passage between them was simply never written", "this
+  row exists because a predecessor was struck"); every statement of what is open in the tower brought to the completion of its
+  ultraviolet definition, in PO-89's three parts, the definition itself delivered by the construction's own regulator.
+  **The open-language read is done (r7523)**: 53 sites, 13 ordinary English, 39 pointed at PO-89, 1 owed (below).
 - `P11`: line 314 (clock re-founding at the Nariai seam, against r=0 in the index at 1999); the two-Killing-vector / Type-I
   conflation.
 - `P12`: undefined phi at line 333.
@@ -529,5 +536,7 @@ crossing, `PO-92` §open), `P3` (`PO-92` at line 1222, `PO-93` §curvature), `P2
   complementary readings (the 3 and its conjugate), "noted and not claimed; testing it is not this paper's work".
 - `P2`'s two triples (the horizon root triple and a {0,1,2} count), "not claimed" to be one structure until a derivation producing
   {0,1,2} from a single condition is exhibited.
+- `P10`'s Euclidean segment: whether the imaginary-time stretch admits a quantum treatment in its own right, which the
+  deparametrization does not supply.
 - Close: strike `PO-86`, put `check_open_item_coherence` in CI, and reactivate 60, cc66 and 70 (and 71 if a
   formalisation row is open by then) on the frontier as it stands, the projection-distance adjudication first.
