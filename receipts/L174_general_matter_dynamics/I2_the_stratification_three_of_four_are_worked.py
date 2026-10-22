@@ -133,12 +133,13 @@ def main():
     check('with the TT mode\'s energy and momentum being the shear of the leaf, and the ADM '
           'equations being exactly the constraints',
           _SHEAR.search(p11) is not None and _CONSTR.search(p11) is not None)
-    check('⇒ and it locates that stratum: "the Type-I edge of the isotropy stratification---the LAST '
+    check('⇒ and it locates that stratum: "the two-Killing-vector edge of the isotropy stratification---the LAST '
           'CONFINED STRATUM BEFORE THE WALL"',
+          # ⛭ RE-PINNED r7535 (69, whose P11 edit stopped naming the stratum by the Petrov type I)
           # ⛭ WIDENED r7287+cc66: an appositive naming a POSITION without naming the stratum
           #   it is a position of; widened to prop:twoKV's own clause.
           'admits exactly two Killing vectors, $\\partial_x$ and $\\partial_y$'
-          '\\rcpt{P11_twoKV}, and so occupies the two-Killing-vector (Type-I) '
+          '\\rcpt{P11_twoKV}, and so occupies the two-Killing-vector '
           'stratum---the last confined stratum before the wall' in p11)
 
     # stratum 4: not worked
@@ -175,7 +176,7 @@ def main():
           'stratum) rather than the CASE, and does not say which',
           _CITES.search(p9) is not None
           and 'admits exactly two Killing vectors, $\\partial_x$ and $\\partial_y$'
-              '\\rcpt{P11_twoKV}, and so occupies the two-Killing-vector (Type-I) '
+              '\\rcpt{P11_twoKV}, and so occupies the two-Killing-vector '
               'stratum---the last confined stratum before the wall' in p11)
 
     print()

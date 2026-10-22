@@ -90,7 +90,8 @@ def main():
           _SHEAR.search(p11) is not None)
     check('and the ADM energy and momentum equations "are precisely the ADM Hamiltonian and momentum '
           'constraints"', _CONSTR.search(p11) is not None)
-    check('and it carries exactly two Killing vectors, at the Type-I edge',
+    check('and it carries exactly two Killing vectors, at the two-Killing-vector edge',
+          # ⛭ RE-PINNED r7535 (69, whose P11 edit stopped naming the stratum by the Petrov type I)
           # ⛭ WIDENED r7287+cc66: `exactly two Killing vectors` named a COUNT and no counted
           #   object -- satisfied by a paper saying the FLRW stratum admits two -- and `the last
           #   confined stratum before the wall` was an appositive with its head outside.  ** One
@@ -98,7 +99,7 @@ def main():
           'The polarized Gowdy--de Sitter metric~\\eqref{eq:metric} with a generic profile '
           '$\\psi(t,z)$ admits exactly two Killing vectors' in p11
           and 'admits exactly two Killing vectors, $\\partial_x$ and $\\partial_y$'
-          '\\rcpt{P11_twoKV}, and so occupies the two-Killing-vector (Type-I) '
+          '\\rcpt{P11_twoKV}, and so occupies the two-Killing-vector '
           'stratum---the last confined stratum before the wall' in p11)
 
     # ** the general decomposition -- symbolic, no symmetry assumed **

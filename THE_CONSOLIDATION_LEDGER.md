@@ -482,6 +482,15 @@ crossing, `PO-92` §open), `P3` (`PO-92` at line 1222, `PO-93` §curvature), `P2
   distance taking the arm below the control; P14's twelve stated with the right-handed multiplet difference; narration at
   the figure-theorem run and the entropy question removed. **Done (r7533)**. **The open-language read is done (r7533)**:
   22 sites, 18 ordinary English, 2 pointed at PO-87 and PO-89, 2 owed (the thesis, below).
+- `P11` (72's two, and the read's own): cosmogenesis no longer placed at the Nariai seam as the clock's re-founding (l.304,
+  l.314, the header), against l.334's own r=0 crossing: the reassignment acts on the freed null direction at the horizon seam
+  where the lap is entered, and the clock it founds starts at the branch point r=0 the lap reaches; the two-Killing-vector
+  stratum no longer named "Type-I" (the Killing count and the Petrov type I stated as two properties, at prop:twoKV, the
+  section title, the isotropy sentence and the scope list, and in P17's landing entry), the range-paper quotation brought to
+  P9's own words. The read's own: the non-perturbative quantization stated as the interacting tower's completion, the
+  definition delivered by the construction's own regulator; the header rewritten to the current state with no revision
+  history. **Done (r7535)**. **The open-language read is done (r7535)**: 13 sites, 10 ordinary English or settled in place, 3
+  pointed at PO-89.
 - `P15`: the branch point called a "null surface" and "the cosmological horizon promoted to the initial layer" (line 433),
   settled with section 3's r=0 canon and edited there; "collapse-phase driving" (sec:envelope) against every sound wave starting
   fresh on the expanding leg, read with sec:coherence in `P15`'s second turn. Checked and not defects: r_s 146.4 against 145.4
