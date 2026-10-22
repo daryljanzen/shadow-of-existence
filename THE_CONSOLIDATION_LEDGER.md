@@ -427,6 +427,20 @@ crossing, `PO-92` §open), `P3` (`PO-92` at line 1222, `PO-93` §curvature), `P2
   their homes (the A2 coincidence and the located su(3), both PO-94; the charged interior, P3 and P18).
 - `P6`, `P7`: the "rejected" framing (with section 1). `P7`'s frontier item 1 still names "a mechanism for that deficit" as what
   is owed; it becomes the rate light's path distance takes, as `P15` and `P18` now state it.
+  **`P6` done (r7543)**: the acoustic case is no longer a counter-instance in the abstract or sec:place; it is an episode not
+  yet decided, its measurement in hand and its verdict waiting on one identification (the specified configuration's
+  unreachable chi-squared 278.8; built on the leaf rate, 184.989 against the control's 186.007; the stacking-rate distance held
+  on the observer's flat slice), and the discipline holds it in the reference class as neither vindication nor refutation.
+  The read's own: the real form of the register's boundary was said to "stand exposed" with "thin support", against P13
+  sec:face-status, which settles it by the existence criterion (the compact form carries no clock, and the clock is
+  measured); it is now settled by that criterion beside the layering, with the matter sector bearing on it in neither
+  direction, and the class receipt brought to the same state. The substrate's uniqueness stated in P17's form (the unique real
+  maximally symmetric manifold carrying an intrinsic Lorentzian signature), with P17 cited. The cosmological-constant
+  dissolution's "no dimensionless constant" scoped to the geometry, matching the paper's own audit paragraph. The masthead's
+  revision stamps, two section references by old line number, and four source comments narrating compile repairs removed.
+  Dependency matrix refreshed (P6 now cites P4 6, P13 2, P17 5), with P7's dependency figure carrying the P4-to-P6 edge at 6. **The open-language read is done (r7543)**: 13 keys, 10
+  ordinary English or settled in place, 3 pointed at their rows (the acoustic case twice, PO-87; the matter sector and the
+  damping-scale signature, PO-14 and PO-24), none owed. `P7`'s item waits for the `P7` return.
 - `P10`: lines 1468-1479 say "value not claimed" while sections 959-1061 compute it positive; 10^-122 against 10^-123;
   a receipt named "sign_is_mixed".
   **Done (r7523)**: the level-summed coupling's value stated as the odd-level coupling computed above (the recoupling
