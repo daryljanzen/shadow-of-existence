@@ -13,10 +13,10 @@ WHAT IS CLAIMED.
   (2) SO THE DYNAMICS ON THE SCALE FACTOR CARRIES B AND NEVER sqrt(B).  B = (sqrt B)^2, so
       the sign cannot enter a quantity written as a function of a; and a'(a) carries only
       the expanding-versus-contracting branch sign, which is a different sign.
-  (3) NO OBSERVABLE READS IT.  Ten quantities are checked -- the two densities, their
-      ratio, H^2, the areal acceleration, the sound speed squared, the sound-horizon and
-      particle-horizon integrands, the turnaround scale factor, and the accumulated phase
-      P15's transfer reads -- and none depends on the sign.
+  (3) NO OBSERVABLE READS IT.  Nine quantities are checked -- the two densities, their
+      ratio, H^2, the areal acceleration, the sound speed squared, the particle-horizon
+      integrand, the turnaround scale factor, and the sound-horizon integrand, whose
+      accumulation is the phase P15's transfer reads -- and none depends on the sign.
   (4) ONE OF THEM IS EVEN ONLY AS A POSITIVE ROOT, and that distinction is the result's
       hinge.  c_s is a SPEED, the positive root of c_s^2 = B/(3(Aa+B)); substituting
       sqrt(B) -> -sqrt(B) flips the SYMBOL sympy prints for it while the QUANTITY does not
@@ -137,8 +137,8 @@ if FAILS:
     raise SystemExit(1)
 print("  VERDICT: ALL PASS.  The first integral a'^2 = B + A a - a^2 is derived from the")
 print("  interior's own equation and holds identically, so the dynamics written on the")
-print("  scale factor carries B and never sqrt(B).  Ten observables were checked --")
-print("  eight densities and rates, the turnaround, and the phase P15's transfer reads --")
+print("  scale factor carries B and never sqrt(B).  Nine observables were checked --")
+print("  seven densities and rates, the turnaround, and the phase P15's transfer reads --")
 print("  and NONE reads the sign; the phase is even as the positive root of an even")
 print("  quantity, which is the distinction the result turns on.  The control confirms")
 print("  the test is not blind: a'(0) = sqrt(B) is ODD and the scale factor at fixed eta")

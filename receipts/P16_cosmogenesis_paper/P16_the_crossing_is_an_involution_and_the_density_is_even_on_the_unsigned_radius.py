@@ -135,8 +135,10 @@ check("but the rate relative to the matter's own outward direction, d|r|/dtheta,
 
 # ---- (5) the involution ----------------------------------------------------
 l = sp.Symbol('l', real=True)
-R = sp.Function('R')          # an arbitrary even density history
-V = sp.Function('V')          # an arbitrary odd rate history
+R = sp.Function('R')          # an arbitrary density history
+V = sp.Function('V')          # an arbitrary rate history
+# On the class of even density and odd rate histories the crossing fixes every state, so the
+# involution has content only on general histories, which is how R and V are taken here.
 # the crossing map: (rho(l), v(l)) -> (rho(-l), -v(-l))
 def crossing(pair):
     f, g = pair
