@@ -491,6 +491,11 @@ crossing, `PO-92` §open), `P3` (`PO-92` at line 1222, `PO-93` §curvature), `P2
   definition delivered by the construction's own regulator; the header rewritten to the current state with no revision
   history. **Done (r7535)**. **The open-language read is done (r7535)**: 13 sites, 10 ordinary English or settled in place, 3
   pointed at PO-89.
+- `P1` (the read's own, no listed items): the matter-and-observers crossing, said to be "carried, and left open, in the
+  companions", now stated as the companions settle it (well posed and structurally governed, lossless for content and
+  fatal for bodies); the collapse-horizon entropy pointed at P17's finding that a collapse horizon has no distinguished
+  cross-section for a Noether-charge entropy; two narration phrases and a header revision comment removed. **Done (r7539)**.
+  **The open-language read is done (r7539)**: 17 sites, 12 ordinary English or settled in place, 5 owed (two items, below).
 - `P15`: the branch point called a "null surface" and "the cosmological horizon promoted to the initial layer" (line 433),
   settled with section 3's r=0 canon and edited there; "collapse-phase driving" (sec:envelope) against every sound wave starting
   fresh on the expanding leg, read with sec:coherence in `P15`'s second turn. Checked and not defects: r_s 146.4 against 145.4
@@ -599,6 +604,10 @@ crossing, `PO-92` §open), `P3` (`PO-92` at line 1222, `PO-93` §curvature), `P2
   hierarchy.
 - `P17`'s thesis: that the seven separately established faces of maximal symmetry are one fact, held as a conjecture
   against the free-data-count test, both of whose sides are run and pass.
+- `P1`'s collapsing body: what thermodynamic content a perpetually collapsing ultra-compact body carries, its horizon's
+  area law and entropy having no realised horizon to be defined on and local particle production untouched.
+- `P1`'s late-collapse ultraviolet regime: whether the collapsing surface's late-time regime, where the local blueshift
+  reaches the Planck value at each finite exterior time, is benign, and what a treatment of it would supply.
 - `P13`: "the seam continuation supplying K" (sec:closure, after the plate) runs the reality involution of cosmic time together
   with the seam continuation; P14 states them apart.
 - Close: strike `PO-86`, put `check_open_item_coherence` in CI, and reactivate 60, cc66 and 70 (and 71 if a
