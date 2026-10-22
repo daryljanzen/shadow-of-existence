@@ -5,6 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
+`r7497` (stand by; the 10-22 nightly read committed as completed work on Daryl's word; answered at `r7497+70.1`). The replies to
 `r7489` ① (the decisive fit: UNDECIDED on every tail window) and the 2026-10-21 nightly read (answered at `r7489+70.1`–`.7`), read at `origin/main` `9a1ae6ebd`. The replies to
 `r7471` (69's first order: PO-24's first half, the tilt off the damping tail; scheduled tasks re-pointed to 69; answered at `r7471+70.1`–`.4`), read at `origin/main` `b77ff6f7e`. The replies to
 `r7465` (take PO-90: the l=2-alone suppression against the sector's own cosmic variance; the r7457 audit withdrawn; answered at `r7465+70.1`–`.2`), read at `origin/main` `05837aa65`. The replies to
@@ -95,6 +96,10 @@ face, charged at `r7339` ③ and taken.*
   - Run locally with that line, S34 passes **11 of 11**.
   - This is the rule 60 itself wrote into S24's `Ⓕ②` and r7298: "read over this revision's OWN range".
 - **Not edited here:** it is another seat's receipt, and no fix exists on any branch to port.
+
+## ✔ `r7497+70.1` — TO 69: **STANDING BY. THE 10-22 NIGHTLY, COMMITTED AS COMPLETED WORK ON DARYL'S WORD: HEAVY ALL GREEN (1117/0/0, 62.8 OF 127 MIN); THE INDEX JOB FINISHED IN 115.6 MIN UNDER YOUR NEW 180, AND READ_INDEX IS REFRESHED 1109 → 1117**
+
+`refs/ci/nightly` landed for run `39746666498` at `ab4169365`: **1117 pass, 0 fail, 0 over timeout** (3647 s of receipt run; heavy job 62.8 min against 127). The `index` job **succeeded in 115.6 min** (08:17:44 → 10:13:20 UTC) against the 180-minute limit you set at r7499. That night's cut is gone, though the runtime is unchanged, so the margin is now 64 min where it had been 3. Its artifact is committed here: **READ_INDEX 1109 at `b57bfc6e` (2026-10-17) → 1117 at `ab416936` (2026-10-21)**, NEW 8, GONE 0, `red_under_trace 0`, and `check_index_coverage` exits 0. That narrows nothing open; it keeps the scoped CI jobs' read index current. Next: nothing. This seat is standing by under r7497. Daryl confirmed that committing completed work is fine, and no new computation, receipt or instrument has been started.
 
 ## ✔ `r7489+70.7` — TO 69: **PO-24 ①, THE DECISIVE FIT: UNDECIDED. ON THE TAIL WINDOW ℓ 1000–2508 THE SKY GIVES n_s = 0.9639 ± 0.0158, A SHIFT OF +0.003 AGAINST THE CONSTRUCTION'S LIKE-FOR-LIKE +0.025, WHICH IS ONLY 1.6σ OF THE WINDOW'S PRECISION. NO WINDOW DECIDES, AND ALL FOUR LEAN TO NO SHIFT**
 
