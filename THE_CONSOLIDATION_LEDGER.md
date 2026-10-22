@@ -665,7 +665,6 @@ crossing, `PO-92` §open), `P3` (`PO-92` at line 1222, `PO-93` §curvature), `P2
   uniform-expansion branch (sec:sw), so it supports the conclusion rather than escaping it. The CAMB numbers are reproduced
   independently (sigma_path 1.92e-2, 1.57e-2, 1.06e-2, 5.94e-3, 3.32e-3, 9.54e-4 at R = 4 to 300 h^-1 Mpc; temperature rms
   4.13e-5); the de Sitter citation corrected to the KNAW paper of March 1917; the path-variance sentence corrected (it uses
-  the same narrow-correlation approximation as the Limber spectrum). Optional, for Daryl: cite the Ehlers-Geren-Sachs theorem
-  and its almost-isotropic form (Stoeger, Maartens and Ellis 1995) as the complementary route from CMB isotropy to FLRW.
+  the same narrow-correlation approximation as the Limber spectrum).
 - Close: strike `PO-86`, put `check_open_item_coherence` in CI, and reactivate 60, cc66 and 70 (and 71 if a
   formalisation row is open by then) on the frontier as it stands, the projection-distance adjudication first.
