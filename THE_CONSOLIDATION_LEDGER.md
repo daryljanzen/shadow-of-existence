@@ -655,7 +655,7 @@ crossing, `PO-92` §open), `P3` (`PO-92` at line 1222, `PO-93` §curvature), `P2
   metric singularity is the reading as metric coincidence of the known non-expanding condition (Ashtekar and Krishnan),
   stated to cover the Rindler horizon and every flat null hyperplane, the event horizon singled out by being in addition the
   exterior's null future boundary; and the external universe's time as a Cauchy time of the exterior domain stated as the
-  section's premise, with its ground. The introduction counts four problems, matching the problems section and conclusion.
+  section's premise, with its ground. The introduction counts four problems, matching the problems section and conclusion. Lemma 1's proof takes hypothesis (b) from the Killing flow carrying horizon cross-sections isometrically (zero expansion and shear), not from the orbit label, which every curve has.
   The corpus copy may also carry what the standalone drops: the information content carried through the branch point, as
   P7 states it (lossless for content).
 - Close: strike `PO-86`, put `check_open_item_coherence` in CI, and reactivate 60, cc66 and 70 (and 71 if a
