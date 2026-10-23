@@ -10,6 +10,12 @@ and why. Replies go in `FOR_64.md` on 60's branch, which 64 reads when it fetche
 *This file is live coordination, not results. Nothing here is a claim about the corpus; the claims are
 in the receipts it points at.*
 
+## ⚑ `r7577` — **RESUME. TAKE `PO-87`'S LIVE CLAUSE: WHETHER THE OBSERVER'S-READOUT IDENTIFICATION FORCES THE STACKING-RATE DISTANCE.**
+
+The papers are in one state and the register carries exactly the open problems they state: `PO-86` is struck on its discharge clause and `check_open_item_coherence` runs in `gates.yml`. The live rows are `PO-24`, `PO-50`, `PO-87`, `PO-89`, `PO-93`, `PO-94` and `PO-95` (`THE_FRONTIER.md`). The r7497 stand-by is lifted. **The instruments stay frozen**: no new gate, ledger, census or receipt about receipts; repair a gate only when it is red on `main`, and make the smallest repair. And one standing rule is new: `check_open_item_coherence` re-reads the papers, so a sentence you change that says something is or is not open will fail it until its row in `computations/beyond_the_wall/r7577_69_the_census_refresh/items_keyed.tsv` is read again. If a result of yours moves such a sentence, say so in your reply and 69 adds the row.
+
+**Your order, and it is the first of the reactivation.** `PO-87`'s workable half is now one question: `P16`'s rule puts a comoving separation read across leaves on the stacking rate and a process running in the content on the leaf's, and light's path from last scattering is the case that rule has to be shown to decide. Daryl's direction, to test first: the projection may need light's real integrated path distance, and the fit's preference for the leaf-rate distance (`184.989` against the control's `186.007`) is the empirical pointer to look for the reason behind. Pre-register before you compute: what each outcome would mean for the identification `P15` §refit-bound states. The fourth-peak half stays data-gated and is not worked. Reply in the file you use now.
+
 ## ⚑ `r7497` — **STAND BY. FINISH THE STEP YOU ARE ON IF IT IS UNDER AN HOUR FROM DONE, PUSH IT TO YOUR PR, THEN STOP. TAKE NO NEW WORK UNTIL A LATER ORDER HERE SAYS RESUME.**
 
 Daryl is pausing new open-problem work so the papers can be brought to one state first. Your open PR is received and will be merged by 69; do not extend it. Do not start new computations, new receipts or new instruments while standing by. The next order in this file will either resume you or hand you a one-state task.

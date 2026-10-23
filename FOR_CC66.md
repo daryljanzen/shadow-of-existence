@@ -7,6 +7,12 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7577` — **RESUME. TAKE `PO-95`, THE QUANTISED FERMION FIELD ON THE SLICING: IT IS NEW, IT IS WORK, AND IT HAS NO HOLDER.**
+
+The papers are in one state and the register carries exactly the open problems they state: `PO-86` is struck on its discharge clause and `check_open_item_coherence` runs in `gates.yml`. The live rows are `PO-24`, `PO-50`, `PO-87`, `PO-89`, `PO-93`, `PO-94` and `PO-95` (`THE_FRONTIER.md`). The r7497 stand-by is lifted. **The instruments stay frozen**: no new gate, ledger, census or receipt about receipts; repair a gate only when it is red on `main`, and make the smallest repair. And one standing rule is new: `check_open_item_coherence` re-reads the papers, so a sentence you change that says something is or is not open will fail it until its row in `computations/beyond_the_wall/r7577_69_the_census_refresh/items_keyed.tsv` is read again. If a result of yours moves such a sentence, say so in your reply and 69 adds the row.
+
+**Your order.** `P14` states it open: the wall's tortoise divergence is the normalisation of a radial continuum with a thermal spectrum, and what that supplies is the continuum and not the sector. The row's discharge is the completeness of the wall-bound modes together with the continuum, shown in the leaf's own measure, and the matching of the static region's continuum to the wall-bound modes computed across the locus the geometry already crosses. Its terminal clause matters as much: if both turn out to be standard spectral theory of a Dirac operator on a fixed background with nothing the construction adds, say so, and the row ends as a stated limit. Price it first with a band, as you did at `.95`, and pre-register what each outcome means.
+
 ## ⚑ `r7497` — **STAND BY. FINISH THE STEP YOU ARE ON IF IT IS UNDER AN HOUR FROM DONE, PUSH IT TO YOUR PR, THEN STOP. TAKE NO NEW WORK UNTIL A LATER ORDER HERE SAYS RESUME.**
 
 Daryl is pausing new open-problem work so the papers can be brought to one state first. Your open PR is received and will be merged by 69; do not extend it. Do not start new computations, new receipts or new instruments while standing by. The next order in this file will either resume you or hand you a one-state task.

@@ -219,9 +219,8 @@ null-ruling slope, $G$ appears only as $GM/c^2$ with the mass fixed to Nariai by
 which makes the double ruling and the classical power law **one statement, set by $\alpha$ and nothing else**.
 Then the line worth the whole section: **$\mathrm{Aut}(A_2)=S_3\times\mathbb Z_2$ factorises because its
 factors act on the two things a figure can be to a circle — the three roots are ON the waist, the two rulings
-are TANGENT to it.** *A ruling is a line of the substrate, so exchanging them is an isometry: **chirality
-descends gauged**. A root labels a different cut, so permuting them is no motion at all: **flavour is global**.*
-***The Standard Model's arrangement of a gauged chirality against a global flavour, read as on versus tangent.***
+are TANGENT to it.** *A ruling is a line of the substrate, so exchanging them is an isometry: **chirality descends as an isometry**. A root labels a different cut, so permuting them is no motion at all: **flavour is global**.*
+***The Standard Model's arrangement of a chirality carried by spacetime symmetry against a global flavour, read as on versus tangent.***
 
 **⑧ `P3`, with `P5` and `P2` beside it — the geometry all of that was read off, and its group.**
 **`P5` is the algebraic half and it is the one to put beside P17**, because it does in group terms what §⑦ did in

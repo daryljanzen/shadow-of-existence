@@ -16,22 +16,32 @@ THE KEY is `(paper, normalised marker sentence)` -- `check_prose_pins`' own rule
 moves it, what does not, and why not `69`'s paragraph index, are in
 `computations/beyond_the_wall/r7371_cc66_the_coherence_key/key.py`.
 
-⚠ STATUS: this gate is NOT in `gates.yml` and is not wired to any job.  `r7371` ⑥ ③ asks for the price
-first; it prints and exits 0 on a clean correspondence, non-zero otherwise, so it can be wired when
-the correspondence is one a ratchet should hold.
+⛭ r7577 (69): THE CENSUS IS REFRESHED AND THE GATE IS WIRED.  `items_keyed.tsv` is now
+`r7577_69_the_census_refresh/`'s: the net run on the papers as they stand, every candidate whose sentence
+changed since r7371 read again against the stride's 29 rulings.  Three things change here, each named:
+  ① a class for what PO-86's own r7451 clause says must NOT be rowed -- `LIMIT`, an r7013 kind-② stated
+    limit, a boundary, a decline or a weight marker -- exempt from ⒜ and counted where it can be seen;
+  ② ⒞, the half that makes this a ratchet rather than a snapshot: the gate RE-EXTRACTS the papers with the
+    census's own net (`net.py`) and fails on any candidate the census has not read and on any census row
+    whose sentence no longer exists -- so a reworded statement of openness is read before it is credited,
+    which is the key's own rule (KEY.md);
+  ③ it runs in `gates.yml`, PO-86's discharge clause asking for exactly this: "a GATE asserting it, so
+    the drift cannot recur".
 """
 import os, re, sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-KEYED = os.path.join(ROOT, 'computations', 'beyond_the_wall', 'r7371_cc66_the_coherence_key',
-                     'items_keyed.tsv')
+CENSUS_DIR = os.path.join(ROOT, 'computations', 'beyond_the_wall', 'r7577_69_the_census_refresh')
+KEYED = os.path.join(CENSUS_DIR, 'items_keyed.tsv')
+sys.path.insert(0, CENSUS_DIR)
+import net  # noqa: E402 -- the census's own net, so gate and census extract the same candidates
 REGISTER = os.path.join(ROOT, 'THE_REGISTER.md')
 
 # ⌗ rows DECLARED infrastructure: live by their own job rather than by a paper stating them open.
 #   A row named here is exempt from direction ⒝ and the reason is recorded beside it.
 INFRASTRUCTURE = {
     'PO-78': 'the quote/prose-pin family -- an instrument debt, not a physics item any paper states',
-    'PO-86': "this census's own row: the coherence question itself, opened by r7371 on 69's reading",
+    # 'PO-86' was this census's own row and is struck at r7577 on its discharge clause, this gate being its fourth part.
 }
 
 # ⛭ r7411: THE CENSUS HAS A VINTAGE AND DIRECTION ⒝ MUST NOT SPEND IT AS IF IT DID NOT.
@@ -44,7 +54,7 @@ INFRASTRUCTURE = {
 #   silenced.  It is SPLIT: a row the census period covers is a finding, and a row opened after it
 #   is this instrument's own blind spot, reported as such and not counted against the tree.  The
 #   remedy for the second class is a census refresh (69's reading), never an entry above.
-CENSUS_REVISION = 7371
+CENSUS_REVISION = 7577
 
 
 def live_rows():
@@ -80,13 +90,36 @@ def main():
     live, struck = live_rows()
     items = keyed()
     opens = [i for i in items if i['cls'] == 'OPEN']
+    limits = [i for i in items if i['cls'] == 'LIMIT']
     bad = 0
 
     print()
     print('  OPEN-ITEM COHERENCE -- two lists compared; no item is classified here')
     print(f'    {len(items)} adjudicated candidate(s), {len(opens)} classed OPEN by 69')
+    print(f'    {len(limits)} classed LIMIT: stated limits, boundaries, declines and weight markers, which PO-86\'s'
+          f' r7451 clause says must not be rowed')
     print(f'    register: {len(live)} live PO row(s), {len(struck)} struck')
     print()
+
+    # ⒞ the census is CURRENT: every candidate the net catches in the papers today has been read, and
+    #   every row the census carries still names a sentence the papers contain.
+    have = {(i['paper'], i['sent']) for i in items}
+    now = net.candidates(ROOT)
+    nowset = set(now)
+    unread = [k for k in now if k not in have]
+    gone = [k for k in sorted(have) if k not in nowset]
+    if unread or gone:
+        print(f'  ⛔ THE CENSUS IS BEHIND THE PAPERS: {len(unread)} candidate(s) the census has not read, '
+              f'{len(gone)} census row(s) whose sentence is gone.')
+        for p, t in unread[:12]:
+            print(f'    unread  {p:4} {t[:110]}')
+        for p, t in gone[:12]:
+            print(f'    gone    {p:4} {t[:110]}')
+        print('    ⇒ read each unread sentence and add its row (class, topic, register, note) to items_keyed.tsv;')
+        print('      drop the rows whose sentence is gone.  A reworded statement of openness is a new site.')
+        bad += 1
+    else:
+        print(f'    ⒞ the census is current: all {len(now)} candidates in the papers are read, none stale.')
 
     # ⒜ every open item the papers state has a LIVE register row
     orphan = [i for i in opens if not (pointers(i['reg']) & live)]

@@ -369,6 +369,18 @@ different openness and its r7467 live clause, citing `P7` `frontier:realforms` a
 - **The full prior rows are at the parent of the commit that made the condensation** in `THE_REGISTER.md`, named in
   `check_register_monotone`'s declared table.
 
+## PO-86, struck at r7577 — where its record lives
+
+`PO-86` (the register's open list against the papers' own, in both directions) was struck on its r7451 discharge
+clause: all 29 stride items ruled and landed, the census refreshed and the contradictions it found fixed, `P18`'s
+frontier table and the register's live rows the same seven, and `check_open_item_coherence` in `gates.yml`. The row
+stood at 85,708 characters and collapses to one state.
+
+- **The full prior row is at the parent of the commit that struck it** in `THE_REGISTER.md`, named in
+  `check_register_monotone`'s declared table.
+- **The census** that discharged it is `computations/beyond_the_wall/r7577_69_the_census_refresh/` (`REFRESH.md`
+  says how it was read); the r7371 census and the stride stay where they are, as the record of how the phase ran.
+
 ## The arc to one state, with node 72's cold read folded in
 
 This is the complete list of what stands between the corpus and one consolidated state. Items leave it only by being
@@ -847,3 +859,31 @@ outputs; the corpus fixes $H_0\simeq68.6$ and claims no Hubble-tension predictio
   reproduces Daryl's original count of 8e-3.
 - Close: strike `PO-86`, put `check_open_item_coherence` in CI, and reactivate 60, cc66 and 70 (and 71 if a
   formalisation row is open by then) on the frontier as it stands, the projection-distance adjudication first.
+
+**Done (r7577).** The owed rulings, each against the paper as it now reads: `P15`'s coherence mechanism (r7567) and the
+lift kernel's exponent are settled in `P15` (the exponent "is a factor and not a detail, and it is settled rather than
+left to the reader", on the tilt budget); the polarisation source's pull is a margin (stride 25), and the seam's flux
+into the lap's future a stated limit (`P15`: the construction selects no state, so the flux has no object); `P18`'s
+base rate is `P6`'s first programme (stride 16); `P16`'s thermalisation a weight marker, argued and robust to the
+four-order margin; `P3`'s $\mathbb{Z}_2$ a declined conjecture (stride 21); `P2`'s two triples a boundary (stride 20);
+`P10`'s Euclidean segment is carried by `P7` sec:lift-quantum, the kernel across the lift; `P14`'s index equality a
+weight marker (stride 23), its third mechanism under the declared ceiling (stride 18), and its breaking structure the
+mass hierarchy, a boundary (`P18` sec:frontier, `P13` l.298); `P17`'s thesis held to its test (stride 15); `P1`'s
+collapsing-body thermodynamics a scope statement with `P17`'s answer beside it, and its ultraviolet regime a decline.
+**One is open and earned a row**: `P14`'s quantised fermion field, its mode completeness and the continuum-to-wall
+join, whose pointer to `P17` and `P13` landed nowhere. It is `PO-95`, carried on `P7`'s frontier
+(`frontier:fermion`) and in `P18`'s seven. The "gauged" sweep ran across `P5`, `P11`, `P12`, `P13`, `P14`, `P17`
+and `P18`, which also carried it, with `INTRODUCTION`, the index, `THE_PLAN` and the wisdom ledger: the
+chirality descends as an isometry, a spacetime symmetry acting on the spinor with no gauge field, against the seats'
+global $S_3$, and the Standard Model's pairing is a chirality carried by spacetime symmetry beside a global flavour
+symmetry. `P1` adopts the GRG version's decisions: the definition read against the non-expanding condition, with the
+Rindler horizon and every null hyperplane as metric singularities and the event horizon singled out as the exterior's
+null future boundary; the premise that the external universe's time is a Cauchy time of the exterior domain, with its
+ground; Proposition 1 and Lemma 2(i) on cones that converge on the horizon without meeting it, $I^-(O)=D$ explicit;
+Lemma 2(ii)'s lapse collapse for the stationary slicing, with the retarded-time slicing's finite norm; the horizon's
+growth from the centre; Hawking's exactly thermal state as the $u\to\infty$ limit of a near-Planckian flux present at
+every finite time; Vachaspati, Stojkovic and Krauss as the nearest account; four problems counted; hypothesis (b) for
+Killing horizons from the flow carrying cross-sections isometrically. `P4` already carried the JCAP read (r7563).
+The census is refreshed (`r7577_69_the_census_refresh`, 240 candidates) and the gate wired; `PO-86` is struck; 60, cc66
+and 70 are resumed in their files on `PO-87`, `PO-95` and `PO-24`, 60's the projection-distance adjudication; 71 stays
+standing by, no formalisation row being open.

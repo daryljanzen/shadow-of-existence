@@ -10,6 +10,12 @@ receipts, the open rows in `THE_FRONTIER`. This file carries the ROUTING only: w
 receipts it points at. Reply in `FOR_66_FROM_70.md` on your branch, which node 66 reads when it fetches. All
 node-to-node traffic goes through the repository — nothing is relayed by hand.*
 
+## ⚑ `r7577` — **RESUME. TAKE `PO-24`'S OPEN HALF: THE DAMPING SIGNATURE'S MAGNITUDE, WHICH DIFFERS BY A FACTOR OF THREE BETWEEN ITS TWO ROUTES.**
+
+The papers are in one state and the register carries exactly the open problems they state: `PO-86` is struck on its discharge clause and `check_open_item_coherence` runs in `gates.yml`. The live rows are `PO-24`, `PO-50`, `PO-87`, `PO-89`, `PO-93`, `PO-94` and `PO-95` (`THE_FRONTIER.md`). The r7497 stand-by is lifted. **The instruments stay frozen**: no new gate, ledger, census or receipt about receipts; repair a gate only when it is red on `main`, and make the smallest repair. And one standing rule is new: `check_open_item_coherence` re-reads the papers, so a sentence you change that says something is or is not open will fail it until its row in `computations/beyond_the_wall/r7577_69_the_census_refresh/items_keyed.tsv` is read again. If a result of yours moves such a sentence, say so in your reply and 69 adds the row.
+
+**Your order.** The tension itself waits on tail data `1.25` times as precise as Planck's, which is a measurement and not work. What is work is the magnitude: imposing the signature on the measured spectrum and applying it inside the instrument's own source give answers a factor of three apart (`P18` §frontier, `P15` §diffusion-scale). Settle which route is the more faithful and why, pre-registered, and report the magnitude on it. No new instrument: the transfer and the likelihood are built.
+
 ## ⚑ `r7497` — **STAND BY. FINISH THE STEP YOU ARE ON IF IT IS UNDER AN HOUR FROM DONE, PUSH IT TO YOUR PR, THEN STOP. TAKE NO NEW WORK UNTIL A LATER ORDER HERE SAYS RESUME.**
 
 Daryl is pausing new open-problem work so the papers can be brought to one state first. Your open PR is received and will be merged by 69; do not extend it. Do not start new computations, new receipts or new instruments while standing by. The next order in this file will either resume you or hand you a one-state task.

@@ -118,7 +118,7 @@ jobs:
                    check_appendix_current check_currency check_deferrals_resolve check_depth \
                    check_model_ledger check_one_value check_paper_tense check_protected_dupes \
                    check_view_tables check_absence_claims check_pages_current check_pdf_current check_frontier_current check_generators_parse check_narration_splice check_knob_shadows check_receipt_home check_receipt_orphans check_receipt_tex_scope check_row_matchers \
-                   check_self_certification check_settings check_theatre_currency check_env_fingerprint check_register_monotone check_remainder_chains \
+                   check_self_certification check_settings check_theatre_currency check_env_fingerprint check_register_monotone check_remainder_chains check_open_item_coherence \
                    check_marker_buried check_landing_rows_trace check_one_state check_prose_pins check_quote_pins check_exact_counts check_pin_board check_pins_adjudicated_on_mint check_paper_pins_not_comment_only check_figures_pinned check_cannot_fail check_unread_figure check_revision_collisions check_glyph_coverage check_register_ids check_citation_chain check_source_hygiene check_bibitem_titles check_marker_transposition check_banked_config check_explainer_pins check_order_acknowledged check_figures_shown check_pages_render check_floats_carried check_index_coverage check_paper_pins_present check_open_references check_formalisation_join check_frontier_delta check_tex_tail; do
             echo "── $g"
             # NODE=ci added r2504+c54.198 (54): check_claims no longer defaults to a REAL node,

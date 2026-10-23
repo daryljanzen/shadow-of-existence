@@ -6953,6 +6953,19 @@ EST = {
         'equally cannot be undercut by that absence. Nothing on the identification is live. The row is ready to close '
         'and is left open one revision so the print lands first. '
         ),
+    'PO-95': ('the quantised fermion field on the slicing: mode completeness and the continuum-to-wall join', 1, 1, 3, None,
+        'r7577: OPENED on PO-86s census refresh. P14 states it open in its own words and no row carried it: the walls '
+        'tortoise divergence is the normalisation of a radial continuum with a thermal spectrum and unitary transmission, '
+        'and what that supplies is the continuum and not the sector -- the quantised field, its mode completeness and the '
+        'join between the static regions continuum and the wall remain open. P14 had pointed to P17 and P13 as naming the '
+        'undertaking and neither does; P14 now carries it as work on P7s frontier (frontier:fermion) and P18 lists it among '
+        'seven. SETTLED: the discrete structure as three wall-bound chiral zero-modes, the count a finite analytical index '
+        'on the compact leaf, the propagating spinor sector on the chiral member built, and the geometric half of the join '
+        'not open (a C-infinity continuation across the walls locus). WORK, not a boundary: the Dirac spectrum on the '
+        'slicing, bound and continuum, and the matching across a locus the geometry already crosses. Discharged by '
+        'completeness shown in the leafs own measure and the matching computed; terminates as a stated limit if both are '
+        'standard spectral theory on a fixed background with nothing the construction adds. '
+        ),
     'PO-94': ('whether the substrates two real forms are physics actual quantum and gauge sectors, or a structural rhyme with them', 1, 1, 3, None,
         'r7467: OPENED on PO-86s ruling of stride item 17 -- the first outcome, and the registers silence was wrong because '
         'both papers call this open in their own words. P13 sec:synthesis says the PIECES are established, the '
@@ -11071,6 +11084,7 @@ KIND = {'PO-85': 'BUILD', 'PO-84': 'READ', 'PO-83': 'READ', 'PO-82': 'READ', 'PO
         'PO-24': 'WORK',   #: the diffusion signature's effect on observed high-ell power -- a
         #:                 computed effect whose consequence is to be worked out, not read or built
         'PO-94': 'READ',  #: the identification, half of it answered and half without a test
+        'PO-95': 'WORK',   #: the quantised fermion field's completeness and join -- a computation
         'PO-93': 'WORK',   #: which mass the radius tracks -- a measurement, waiting on a sample
         'PO-50': 'WORK',   #: the turnaround measurement with turnaround masses -- a measurement
         'PO-86': 'READ',   #: the census itself: two lists compared by reading the papers
@@ -11093,8 +11107,9 @@ KIND = {'PO-85': 'BUILD', 'PO-84': 'READ', 'PO-83': 'READ', 'PO-82': 'READ', 'PO
 #   and the generator reported "9 open" while the table showed EIGHT -- the count comes from
 #   the live set and the rows come from here.*  ** Adding a row needs three things: the
 #   register row, the runway, and this list. **  check_frontier_current now checks all three.
-ORDER = ['PO-86', 'PO-94', 'PO-92', 'PO-91', 'PO-90', 'PO-89', 'PO-88', 'PO-87', 'PO-24', 'PO-85', 'PO-84', 'PO-83', 'PO-82', 'PO-78', 'PO-75', 'PO-71', 'PO-70', 'PO-63', 'PO-62', 'PO-61', 'PO-60', 'PO-59', 'PO-58', 'PO-57', 'PO-56', 'PO-55', 'PO-54', 'PO-53', 'PO-52', 'PO-47', 'PO-48', 'PO-49', 'PO-50', 'PO-93', 'PO-51', 'PO-45', 'PO-46', 'PO-10', 'PO-13', 'PO-43', 'PO-36', 'PO-30', 'PO-25', 'PO-26', 'PO-31', 'PO-23', 'PO-15', 'PO-14', 'PO-17', 'PO-18', 'PO-19', 'PO-20']
+ORDER = ['PO-86', 'PO-95', 'PO-94', 'PO-92', 'PO-91', 'PO-90', 'PO-89', 'PO-88', 'PO-87', 'PO-24', 'PO-85', 'PO-84', 'PO-83', 'PO-82', 'PO-78', 'PO-75', 'PO-71', 'PO-70', 'PO-63', 'PO-62', 'PO-61', 'PO-60', 'PO-59', 'PO-58', 'PO-57', 'PO-56', 'PO-55', 'PO-54', 'PO-53', 'PO-52', 'PO-47', 'PO-48', 'PO-49', 'PO-50', 'PO-93', 'PO-51', 'PO-45', 'PO-46', 'PO-10', 'PO-13', 'PO-43', 'PO-36', 'PO-30', 'PO-25', 'PO-26', 'PO-31', 'PO-23', 'PO-15', 'PO-14', 'PO-17', 'PO-18', 'PO-19', 'PO-20']
 GROUP = {'PO-94': 'C',  # r7467: the identification of the two real forms with physics' own sectors
+         'PO-95': 'A',  # r7577: the quantised fermion field on the slicing
          'PO-92': 'E', 'PO-91': 'E', 'PO-90': 'D', 'PO-89': 'C', 'PO-88': 'D', 'PO-87': 'D',
          'PO-86': 'F',  # ⛭ r7371: the coherence phase -- the register against the papers.
          # ⛭ r7371: PO-78 moved out of C, the quantum sector, which it never was -- it is the
