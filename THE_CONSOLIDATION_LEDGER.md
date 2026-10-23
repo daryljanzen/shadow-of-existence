@@ -356,6 +356,19 @@ because the excess was measured on the arm's own configuration.
 - **Owed, named in the rows:** `P2` and `P18` for `PO-91`; `P15`, `P7` and `P18` for `PO-24`.
 
 
+## PO-50, PO-89 and PO-94, condensed at r7575 — where their records live
+
+Three live rows were brought to one state at r7575, each re-read against its papers first. `PO-50` (the turnaround
+measurement with turnaround masses) keeps what is known (the substitution's size, the correction's one sign, the two
+fixed-overdensity numbers as the bound's own, the surface at $5.23\,r_{200}$, `CHANCES` building the ensemble and
+`CATARSIS` short of it) and its r7211 live clause. `PO-89` (the completion of the interacting tower's definition) keeps
+`PO-23`'s upheld strike, `P10`'s three unlike parts and its r7389 live clause, with `P10`'s line numbers brought to the
+current text and `P7`'s item cited by label. `PO-94` (the two real forms) keeps what is settled, the two halves'
+different openness and its r7467 live clause, citing `P7` `frontier:realforms` and `P18` §dissolved and §frontier.
+
+- **The full prior rows are at the parent of the commit that made the condensation** in `THE_REGISTER.md`, named in
+  `check_register_monotone`'s declared table.
+
 ## The arc to one state, with node 72's cold read folded in
 
 This is the complete list of what stands between the corpus and one consolidated state. Items leave it only by being
@@ -767,7 +780,7 @@ outputs; the corpus fixes $H_0\simeq68.6$ and claims no Hubble-tension predictio
 
 ### 7. The register and the close
 
-- One-state rows still to do: `PO-50`, `PO-86`, `PO-89`, `PO-94`; `PO-87` rewritten with section 1 (done r7511).
+- One-state rows: `PO-50`, `PO-89`, `PO-94` **done (r7575)**; `PO-86` with the close; `PO-87` rewritten with section 1 (done r7511).
 - Owed rulings from the open-language reads, each to be worked to a verdict or given a row under `PO-86`: `P15`'s coherence
   mechanism, "argued, not yet proven through the full transfer" while the transfer is run (**done r7567**: coherence is
   the frozen handover, and the transfer started from it returns the comb); the lift's account, whose kernel
