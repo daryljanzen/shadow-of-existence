@@ -60,7 +60,7 @@ Same betrayal, opposite sign. Each is the disposition shaping the evidence inste
 
 **The failure-tell:** announcing one's own measuredness. When the reception is genuine you do not have to label it; the label is self-certification, which is what surfaces when the thing itself is absent.
 
-**Formal spine.** This is the ARP model generalized beyond conversation: the signed participation axis is the two directions of failure (over- vs under-), and the quality axis Q is reception fidelity. The seven "faces" in `CODA_FIELD_NOTE.md` are the failure catalog at work-revision scale; the CODA two-pass protocol is the reception discipline operationalized for refereeing (Pass A: receive faithfully, wall up; Pass B: adjudicate against the held landscape).
+**Formal spine.** This is the ARP model generalized beyond conversation: the signed participation axis is the two directions of failure (over- vs under-), and the quality axis Q is reception fidelity. The faces in `CODA_FIELD_NOTE.md`, numbered there in the order they were earned, are the failure catalog at work-revision scale; the CODA two-pass protocol is the reception discipline operationalized for refereeing (Pass A: receive faithfully, wall up; Pass B: adjudicate against the held landscape).
 
 ## 4. The grind, the layers, and the one certainty — the engine as Kepler ran it
 

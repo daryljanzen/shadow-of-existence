@@ -754,6 +754,17 @@ remainder at `PO-87`; it now reads two.
 - The coda and the field note presume /mnt/transcripts and present_files, which do not exist here.
 - The portrait, line 117: the Hubble tension called "its predictions".
 
+**Done (r7573)**, each document read whole. `EXPLAINER` 199 now says what `P14` l.536 says: the flip runs through the
+branch point rather than round a loop, so the even-crossing pairing does not apply and the three, of one handedness,
+have no partner; the count is computed and its deformation stability traced. `INTERFERENCE_ENGINE` 63 no longer fixes a
+number. The field note's status note now explains its two counts (the main sequence, faces 1-8 then entries from the
+ninth, and the late-July "seventh" and "eighth" faces, which extend the first six) and reads `present_files`,
+`/mnt/transcripts/` and `journal.txt` as the platform's names. The conjugation-parity line (550) quotes P3's own "R
+exchanges 3 and 3-bar" and needs no edit. `THE_CODA`, an operational document, now names the transcript store in
+environment-neutral terms, keeping `/mnt/transcripts/` as where the rule was born. The portrait's 117 says the early
+universe is where the construction gets checked, its expansion rate, acoustic peaks and light elements coming out as
+outputs; the corpus fixes $H_0\simeq68.6$ and claims no Hubble-tension prediction.
+
 ### 7. The register and the close
 
 - One-state rows still to do: `PO-50`, `PO-86`, `PO-89`, `PO-94`; `PO-87` rewritten with section 1 (done r7511).
