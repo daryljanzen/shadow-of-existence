@@ -725,6 +725,25 @@ is removed.
   beside "collapse forces Nariai"; 4407 the chiral member "unbuilt" against 3066; 3295 and 3753 the family symmetry as S3;
   2933 and 3291 "no early-universe parameter".
 
+**Done (r7573)**, after a whole read of the plan. Family 6 stands closed, now with its reason: `P14` carries the
+continuation onto the cosmological leaf (`P14_B2_zeromode_continuation`) and the propagating spinor sector is built
+(P11, P7 §frontiers), so the spin-off note (3760) and the `PO-5` line (4411) say so instead of "unbuilt". 3348 reads the
+matter/antimatter relation as P7 and P14 state it, relational and with no baryogenesis claim. The deferrals at 2367,
+2371 and 2380 name what decides the frontier-vs-chore pass, the recorded intent in the arc documents and the c33
+record; 3474 is a style question for the publication pass. 3652 is done at 17 of 17. A2.1 is marked run, with P16's
+helium and deuterium; the lane tally (2911) and A1.4's closing line follow. 2346 points at the mixed verdict, and THE
+LINE's verdict now carries the leaf-rate distance result beside the stacking-rate rejection. Y_p is 0.247 with the
+radiative correction, 0.243 named as the Born-level figure. 747 says the progenitor is capped at the Nariai threshold.
+The family symmetry is the turnaround's cyclic Z3 inside an S3 whose transpositions belong to isospin; "no
+early-universe parameter" gains "of its own", the inherited data measured as flat LCDM measures them, and the P17 quote
+at 3291 is P17's current wording. Found on the way: the destination (796-810) and the crosswalk still carried families
+3, 5 and 8 at struck rows (now closed, at `PO-87`, at `PO-89`); the clusters paragraph described a map rewritten at
+r4319; A2.4 was closed at c54.113 and A4.7 carried out in P14, both unmarked; Lane 1 item 2 (the interior) is built and
+item 3 answered, the ratio being a clock reading (`P17` §frontiers); the A4.4 quote had P14's old "disjoint support";
+1353 named the Nariai branch point, which is a ramification point. P17 throughout. And in `THE_OPEN_PROBLEMS_LEDGER`
+(460-462), the family layer read "zero live families" two bullets after placing family 8 at `PO-89` and family 5's
+remainder at `PO-87`; it now reads two.
+
 ### 6. `EXPLAINER` and the smaller documents
 
 - `EXPLAINER` 131 (the temperature, three and a half orders per `P16`), 43 and 167 (x0 1.66, z 0.66): **done (r7509).**

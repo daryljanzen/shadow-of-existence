@@ -457,10 +457,11 @@ resolves) and as the **clue-map** (everywhere an open touches points at where it
 >   its workable half and its data-gated half (the fourth peak, where `PO-47` measured that the sky cannot
 >   discriminate) reported apart.*
 >
-> ⇒ ***SO THE FAMILY LAYER NOW READS: ZERO live families of the original eight, and one live row that no
-> family numbered --- `PO-87`.*** *Which is the honest shape of what happened: the eight families were
-> worked down, and the one item that outlived them all was never a family at all but a question that fell
-> between five rows.  ⌗ And the view is kept rather than rewritten, because this table's own rule is that
+> ⇒ ***SO THE FAMILY LAYER NOW READS: TWO live families of the original eight, each at a new row ---
+> family 8 at `PO-89`, and family 5's remainder at `PO-87`.*** *Which is the honest shape of what happened:
+> the eight families were worked down to their rows, and in two of them the item the papers carry outlived
+> every row that stood near it --- in family 8 the completion of a definition, in family 5 a question that
+> fell between five rows.  ⌗ And the view is kept rather than rewritten, because this table's own rule is that
 > nothing is erased: the lines above stand as what the view said, and this block is what it says now.*
 > ⌗ *Struck in place, not deleted — nothing in this corpus is erased. And recorded honestly: no
 > argument anywhere in the corpus reasons FROM a clue-map, which is the other half of why retiring
