@@ -467,6 +467,18 @@ crossing, `PO-92` §open), `P3` (`PO-92` at line 1222, `PO-93` §curvature), `P2
 - `P11`: line 314 (clock re-founding at the Nariai seam, against r=0 in the index at 1999); the two-Killing-vector / Type-I
   conflation.
 - `P12`: undefined phi at line 333.
+  **Done (r7561)**: the Weyl-factor roots restated in the sky angle the sentence introduces, r_k = (2/sqrt3) sin(w + 2 pi k/3)
+  with r_0 = (2/sqrt3) sin w, checked against the cubic's roots, the reflection w <-> pi/3 - w exchanging r_0 and r_1 with its
+  fixed point at the Nariai crest r = 1/sqrt3. The read's own: sec:strata called the Nariai double root "the stratum boundary
+  at which collapse re-founds as cosmology", against the paper's own header and the canon P11 was brought to (the clock
+  starts at the branch point r=0, a lap away; the abundances are produced on the expansion after it); fixed. Lovelock
+  theories reduce to general relativity in four dimensions and depart from it above (not "only in four"). The parity's
+  graded sector pointed at P14 where it read "not built here"; the section title "Scope and what is open" made "Scope and
+  the handoff at the wall"; the header's "general-cut functionals are open scope" brought to the body (collected in P9),
+  its revision stamps and the compile-repair comment removed. Dependency matrix refreshed (P12 cites P14 5). **The
+  open-language read is done (r7561)**: 4 keys after the edits, 3 ordinary English or settled in place, 1 pointed at P17's
+  thesis (the rungs as one fact, a conjecture there), none owed; the retired section-title qualification commented out of
+  the open ledger. Receipt L560/P1 re-pinned to the corrected Lovelock sentence (M1, which runs it, green with it).
 - `P13`: Z2xZ2 should be Z2^3; "A1 rank-two"; "vector-like" at line 270.
   **Done (r7541)**: the exit's three commuting linear reflections (R, the areal parity P, T) generate Z2^3, in the body
   and the header; A1 placed in rank one, B2 and G2 the other irreducible rank-two systems; Witten's index stated as

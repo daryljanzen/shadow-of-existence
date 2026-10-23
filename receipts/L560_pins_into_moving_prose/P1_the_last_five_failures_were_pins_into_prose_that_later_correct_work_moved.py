@@ -131,8 +131,8 @@ def main():
           'now -- the fork\'s c54.202 added it',
           'Lovelock' not in p12_then
           and '\\emph{That forcing is dimension-dependent}: the same algebra closes for the Lovelock '
-              'theories~\\cite{TeitelboimZanelli1987}, which coincide with general relativity only in four '
-              'dimensions' in live)
+              'theories~\\cite{TeitelboimZanelli1987}, which reduce to general relativity in four '
+              'dimensions and depart from it above' in live)
     p0_then = flat(git('show', 'aa2b6ee:corpus/geometric_core_paper.tex'))
     # ** r6931+70.1: RE-POINTED, class (b) DISCHARGED -- and at what discharged it. **  The c54.179
     #    split sentence ("The item has two sides and they now stand differently, so it is split rather
