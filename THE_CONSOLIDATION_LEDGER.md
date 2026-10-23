@@ -767,9 +767,10 @@ remainder at `PO-87`; it now reads two.
 - The coda and the field note presume /mnt/transcripts and present_files, which do not exist here.
 - The portrait, line 117: the Hubble tension called "its predictions".
 
-**Done (r7573)**, each document read whole. `EXPLAINER` 199 now says what `P14` l.536 says: the flip runs through the
-branch point rather than round a loop, so the even-crossing pairing does not apply and the three, of one handedness,
-have no partner; the count is computed and its deformation stability traced. `INTERFERENCE_ENGINE` 63 no longer fixes a
+**Done (r7573)**, each document read whole. `EXPLAINER` 199 keeps the loop protection, which is computed (`P14`
+l.669-676, `V4_chirality_parity`: the holonomy changes the walls' chiralities only in pairs), and no longer lets
+"or twist" stand for every deformation: the deformation stability is stated as traced rather than computed (`P14`
+l.536). `INTERFERENCE_ENGINE` 63 no longer fixes a
 number. The field note's status note now explains its two counts (the main sequence, faces 1-8 then entries from the
 ninth, and the late-July "seventh" and "eighth" faces, which extend the first six) and reads `present_files`,
 `/mnt/transcripts/` and `journal.txt` as the platform's names. The conjugation-parity line (550) quotes P3's own "R
