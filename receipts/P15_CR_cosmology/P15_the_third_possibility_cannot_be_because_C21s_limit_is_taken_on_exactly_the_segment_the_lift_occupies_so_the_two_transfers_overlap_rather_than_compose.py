@@ -1,6 +1,21 @@
 #!/usr/bin/env python3
 """P15 receipt -- `r7125`'s `PO-77`, THE ONE CHEAP ITEM IT NAMED: CAN THE THIRD POSSIBILITY BE RULED
 OUT?
+** ⛭⛭⛭ SUPERSEDED AS A READING, LIVE AS ARITHMETIC (r7567, 69). **  *The segment identity below was
+read off a `sec:envelope` that stated `C21`'s equation on the collapse leg.  `P15` states it on the
+radiation-dominated stretch of the EXPANDING leg, with `$\eta$` measured from the branch point and
+every mode arriving there frozen (`prop:subhorizon`).  On that statement `C21`'s `$\eta\to0$` is the
+approach to `$a=0$` FROM THE EXPANSION SIDE, while the lift is the stretch `$\lvert r\rvert:A\to0$`
+BEFORE the branch point -- two stretches meeting at one point, so the composition the third
+possibility names is not excluded by this receipt's identity.  ** And the composition is what `P15`
+`sec:what-crosses` states: the lift's kernel acts on oscillatory content, every mode arrives frozen,
+so amplitude and tilt cross it unaltered, and the driving is the expanding leg's re-entry. **  So the
+third possibility is the paper's reading, and `PO-77`'s own discharge clause (the two shown to be about
+different objects and to compose) is the one met.*  ⌗ *Everything this file COMPUTES stands as
+arithmetic: the constant-`$w$` Bardeen identification (`$a\propto\eta$`), the `23.25` per cent overlap
+of a collapse leg down to `$r_N$` with the lift under `$\lvert r\rvert$`, and the bead's own
+`$a\propto\eta^{2}$` near `$\lvert r\rvert\to0$`.  The gates below read the paper's CURRENT
+clause and assert the arithmetic, not the superseded conclusion.*
 ** ⛭⛭⛭ AMENDED AT `r7130`, AND THE AMENDMENT IS AN EXACTNESS AND NOT A WITHDRAWAL. **  *`r7127`
 ordered this receipt's section `E` withdrawn and the file renamed; `r7128` did that; and `r7129`
 ** CANCELS that order ** on `70`'s audit, which reversed the settlement.  The withdrawal is itself
@@ -144,12 +159,12 @@ eta, k, A, al, u, w = sp.symbols('eta k A alpha u w', positive=True)
 # ============================================================ A. what C21's variable is
 head("A.  ⓵ WHAT C21's VARIABLE IS -- READ FROM THE PAPER, NOT FROM C21")
 
-EQ = "On the radiation-dominated collapse leg the potential obeys $\\Psi''+(4/\\eta)\\Psi'+(k^{2}/3)\\Psi=0$"
+EQ = "from the branch point, the potential obeys $\\Psi''+(4/\\eta)\\Psi'+(k^{2}/3)\\Psi=0$"
 SOLN = "$\\Psi=3\\Psi_{i}(\\sin x-x\\cos x)/x^{3}$ with $x=k\\eta/\\sqrt3$"
 print(f"      `sec:envelope`'s own clause present: {b15.count(EQ)}x;  its solution: {b15.count(SOLN)}x")
-gate("⓵ `sec:envelope` states `C21`'s equation and its own premise in one clause: *\"ON THE "
-     "RADIATION-DOMINATED COLLAPSE LEG the potential obeys "
-     "`$\\Psi''+(4/\\eta)\\Psi'+(k^{2}/3)\\Psi=0$`\"*, with the elementary solution "
+gate("⓵ `sec:envelope` states `C21`'s equation and its premise in one clause: on the radiation-"
+     "dominated stretch of the EXPANDING leg, *\"with `$\\eta$` measured from the branch point, the "
+     "potential obeys `$\\Psi''+(4/\\eta)\\Psi'+(k^{2}/3)\\Psi=0$`\"*, with the elementary solution "
      "`$3\\Psi_i(\\sin x-x\\cos x)/x^3$`, `$x=k\\eta/\\sqrt3$`.  ⇒ *located in the CURRENT source, so "
      "the premise is the paper's and not an attribution*",
      b15.count(EQ) == 1 and b15.count(SOLN) == 1)
@@ -199,10 +214,12 @@ gate("⓶ the segment over which the areal radius runs from its turnaround value
 # ============================================================ C. the overlap: the answer
 head("C.  ⇒ ⓷ THE ANSWER: THE TWO INTERVALS ARE THE SAME ONE, SO THEY OVERLAP RATHER THAN COMPOSE")
 
-gate("⇒ ** THE COMPOSITION AS STATED REQUIRES DISJOINT STRETCHES, AND THE TWO SEQUENCES ARE NOT "
-     "DISJOINT. ** The third possibility asks `C21` to govern the passage while the lift's envelope "
-     "is what the lap adds ON TOP.  ⇒ By ⓵ `C21`'s stretch runs down the leaf; by ⓶ the stretch "
-     "`$\\lvert r\\rvert:A\\to0$` is the lift.  ⛔ ** r7130 AMENDMENT: the two share the lift's "
+gate("⇒ ** THE COMPOSITION REQUIRES DISJOINT STRETCHES, AND ON THE PAPER'S CURRENT CLAUSE THEY ARE "
+     "DISJOINT (r7567). ** The third possibility asks `C21` to govern the passage while the lift's "
+     "envelope is what the lap adds ON TOP.  ⇒ By ⓵ `C21`'s `$\\eta\\to0$` is the expansion side of the "
+     "branch point; by ⓶ the stretch `$\\lvert r\\rvert:A\\to0$` before it is the lift.  The overlap "
+     "measured below is between the lift and a collapse leg down to `$r_N$`, which `sec:envelope` no "
+     "longer names.  ⛔ ** r7130 AMENDMENT: the two share the lift's "
      "FIRST 23.25 PER CENT and nothing beyond it -- see `C2`, which measures it. **  ⌗ *So this "
      "section's original \"the same interval\" is NARROWED rather than retracted: the overlap is "
      "real and it is partial, which is neither what `r7126` claimed nor what `r7127` settled*",
@@ -229,9 +246,9 @@ print(f"        so it NEVER REACHES r_N at all -- 'where the collapse leg ends' 
 _RATIO_SENT = 'The two therefore stand in the fixed ratio $2^{1/3}$ for every $M$'
 gate("⛭⛭⛭ `$A/r_N=2^{1/3}$` SYMBOLICALLY, so the bead's collapse leg `$\\lvert r\\rvert=A\\cosh^{2/3}"
      "\\ge A=2^{1/3}r_N>r_N$` ** NEVER REACHES `$r_N$` AT ALL **.  ⇒ *So `sec:envelope`'s \"the seam "
-     "--- where the collapse leg ends\" names a point on the **LEAF's** leg and not on the bead's, "
-     "which is why `r7126` was right that the two were being made to share an interval: the "
-     "settlement replaced one unlabelled identification with another*",
+     "--- where the collapse leg ends\" named a point on the **LEAF's** leg and not on the bead's; "
+     "`P15` no longer carries that appositive (r7567), the seam it means being the front chart value "
+     "on the expansion leg*",
      sp.simplify(_A / _rN - 2 ** sp.Rational(1, 3)) == 0
      and _RATIO_SENT in b15)
 
@@ -352,7 +369,8 @@ for n, ok in CHECKS:
 print(f"\n  {len(CHECKS) - len(bad)} of {len(CHECKS)} checks pass   [{time.time()-t_all:.1f}s]")
 if bad:
     raise SystemExit(1)
-print("  ALL PASS -- AMENDED AT r7130: the overlap is REAL and PARTIAL, 23.25 per cent of the\n"
+print("  ALL PASS (AS ARITHMETIC; SUPERSEDED AS A READING AT r7567 -- on P15's current clause the\n"
+      "  third possibility composes) -- AMENDED AT r7130: the overlap is REAL and PARTIAL, 23.25 per cent of the\n"
       "  lift's conformal length, reproduced here independently from the lift's own quadrature. So\n"
       "  neither r7126's 'overlap' nor r7127's 'disjoint' is the geometry, and the r7127 order to\n"
       "  withdraw section E is itself cancelled by r7129 -- what this receipt gets is the exactness.\n"

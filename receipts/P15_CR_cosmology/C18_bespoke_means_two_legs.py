@@ -94,9 +94,11 @@ def main():
     check("and sec:envelope uses $4/\\eta$, the radiation form: \"the potential obeys "
           "$\\Phi''+(4/\\eta)\\Phi'+(k^2/3)\\Phi=0$\"",
           "(4/\\eta)" in p15)
-    check('⚠ which is NOT a contradiction, because the paper scopes it: "On the radiation-dominated '
-          'collapse leg the potential obeys"',
-          'On the radiation-dominated collapse leg the potential obeys' in p15)
+    # r7567: the scope clause is on the radiation-dominated stretch of the EXPANDING leg, eta measured
+    #   from the branch point; the check is the same -- the radiation form is scoped, not assumed.
+    check('⚠ which is NOT a contradiction, because the paper scopes it: "on the radiation-dominated '
+          'stretch of that leg"',
+          'on the radiation-dominated stretch of that leg' in p15)
 
     # ⓶ two legs, two contents
     # ** r6931+70.1 (PO-59): CLASS (a), THE PIN FROZE AN ASSIGNMENT THE CORPUS CORRECTED.  The sentence

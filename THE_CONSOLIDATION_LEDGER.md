@@ -588,6 +588,34 @@ crossing, `PO-92` §open), `P3` (`PO-92` at line 1222, `PO-93` §curvature), `P2
   three sentences rewritten (a history narration at the residual's period, "the distance" made "the total distance to last
   scattering" where the leaf-rate result would otherwise contradict it, a false "remains owed" in the large-scale continuation)
   and one history clause cut.
+  **Second turn done (r7567)**: the driving and the coherence brought to the r=0 canon P15's own Prop. subhorizon states.
+  sec:envelope was titled and written as collapse-phase driving ("the seam---where the collapse leg ends", "it is the
+  seam, not the crossing, that this construction reads"), and sec:coherence's opening made the branch point "a null
+  surface---the cosmological horizon promoted to the initial layer", with coherence from its characteristic data "not a
+  super-horizon freeze-out", against the same paper's census (every mode outside the horizon at r=0, frozen, its
+  oscillatory phase destroyed at the crossing; the driving on the expanding leg). Read against the receipts, the envelope's
+  own computation (C2 limits, C3 map, C4 assembly: infall, branch point, re-expanding cooling leg, seam) is the
+  re-expanding leg already, mislabelled; so sec:envelope is now "The expanding-leg driving envelope": every mode starts
+  from the frozen state, re-enters on the rising branch, and is driven between the branch point and the seam, both loci
+  read (outside at the first, back inside by the second), the closed form taking the frozen value Psi_i at the branch
+  point and its evenness meaning a contracting leg would carry the same form; the seam it means is cited to the receipt
+  that fixes it as the front chart value on the expansion leg. Coherence is now the frozen handover: one datum per mode,
+  with no velocity, is one phase per mode, forced by the collapse geometry rather than by an added epoch; and the
+  end-to-end transfer, started from that state with nothing chosen per mode, returns the comb, so the "argued, not yet
+  proven through the full transfer" status of the coherence mechanism is discharged (the header's ARGUED list, the scope
+  item, the predictions item, the abstract, the two economy-of-assumption sentences). Three remaining "rejected on shape"
+  sentences (sec:coherence's verdict paragraph, sec:envelope-consequence's close, the scope item) brought to the one
+  assignment. Carried into P7 (the perturbation-spectrum paragraph), P16 (the deductive chain's driving link, now "the
+  expanding leg's own" with no transmission across the seam, and the cooling-leg paragraph) and P18 (the coherence
+  paragraph and the requirement table). Receipts C1 and C4 relabelled to the leg they compute on (docstrings, step
+  prose, the stale P15 quotations removed; no number moved), their INDEX rows with them; seven receipts that quote the
+  changed sentences re-pinned to them (T1, C18, the kernel, locus and seam receipts among them). PO-77 (struck): its
+  third-possibility receipt read sec:envelope's equation on the collapse leg and concluded that C21's transfer and the
+  lift share a stretch and cannot compose; on the current clause C21's eta->0 is the expansion side of the branch point,
+  disjoint from the lift, so the two compose, which is the row's own discharge clause and sec:what-crosses's reading
+  (the kernel passes frozen content unaltered). That receipt is marked superseded as a reading and live as arithmetic
+  (the 23.25 per cent overlap, a ~ eta against the bead's a ~ eta^2), its INDEX row and the register row noted.
+  Dependency matrix refreshed (P15 cites P7 20).
 - `P16`: "turnaround" used for the crossing; "seam" for r=0; collapse-side driving; datings 7.06 / 7.65 against 7.46.
   **Done (r7515)**: the crossing is "past the branch point" at lines 159, 542 and the fig_history caption, "turnaround" kept for
   the progenitor's H=0 recollapse where the paper uses it; the two mass-blindnesses "on the same collapse" rather than "at the same
@@ -665,7 +693,8 @@ crossing, `PO-92` §open), `P3` (`PO-92` at line 1222, `PO-93` §curvature), `P2
 
 - One-state rows still to do: `PO-50`, `PO-86`, `PO-89`, `PO-94`; `PO-87` rewritten with section 1 (done r7511).
 - Owed rulings from the open-language reads, each to be worked to a verdict or given a row under `PO-86`: `P15`'s coherence
-  mechanism, "argued, not yet proven through the full transfer" while the transfer is run; the lift's account, whose kernel
+  mechanism, "argued, not yet proven through the full transfer" while the transfer is run (**done r7567**: coherence is
+  the frozen handover, and the transfer started from it returns the comb); the lift's account, whose kernel
   exponent `P15` says is not settled (a factor, not a detail); the size of the polarisation source's pull on the reported
   configuration, not measured; the flux the seam radiates into the lap's future, not computed; `P18`'s base rate for the
   theory-choice criterion (the cases where the same criteria misled not sampled), which `P6` sets as the discipline's first programme; `P16`'s thermalization of the infall energy that sets the peak floor,

@@ -127,13 +127,13 @@ def main():
 
     # ⓶ step ① is built
     check('⛭⛭ ⓶ and STEP ① IS BUILT: "That driving is computed below (\\S\\ref{sec:envelope}), and the '
-          'calculation removes the licence the shortcut lacked: the envelope is derived on the collapse '
-          'leg rather than imported."',
+          'calculation removes the licence the shortcut lacked: the envelope is derived on the expanding '
+          'leg from the handed-over state rather than imported."',
           'and the calculation removes the licence the shortcut lacked: the envelope is derived on the '
-          'collapse leg rather than imported' in p15)
+          'expanding leg from the handed-over state rather than imported' in p15)
     check('with the same object named: "the same geometric stacking rate that enlarges $r_{D}$ also governs '
           'the high-$\\ell$ driving envelope"',
-          'e handover that fixes $r_D$ also governs the high-$\\ell$ driving envelope' in p15)
+          'e handover that fixes $r_D$ also fixes where the high-$\\ell$ driving starts' in p15)
 
     # ⓷ the machinery exists too
     check('⓷ and a genuine Boltzmann transfer is already in use at large angles: "on a genuine '
@@ -175,7 +175,7 @@ def main():
     print('     background -- the piece that sets the high-ℓ driving envelope, which no standard')
     print('     Boltzmann code can supply -- and ② a bespoke transfer against that specification.')
     print('  ⛭⛭ ⓶ ** And ① IS BUILT: ** "That driving is computed below (sec:envelope) ... ** the envelope')
-    print('     is derived on the collapse leg rather than imported. **"')
+    print('     is derived on the expanding leg from the handed-over state rather than imported. **"')
     print('  ⓷ ** And the machinery exists: ** a "genuine Boltzmann transfer" is already built for the')
     print('     flat-projection of the closed-S³ source.')
     print('     ⇒ ** The specification exists and the machinery exists; what has not been run is the two')

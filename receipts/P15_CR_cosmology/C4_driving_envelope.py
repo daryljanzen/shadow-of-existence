@@ -1,4 +1,4 @@
-"""C4 — ASSEMBLE IT.  Integrand (C1) + limits (C2) + map (C3), on the collapse leg.
+"""C4 — ASSEMBLE IT.  Integrand (C1) + limits (C2) + map (C3), on the re-expanding leg from the branch point to the seam.
 CONFIRMATION 4 — the assumptions, stated up front and not buried:
   (i)  tight coupling, R = 3 rho_b/4 rho_gamma -> 0 (pure photon fluid, c_s^2 = 1/3).  R is small deep
        on the leg where the driving happens; near the seam it is not, and that is a stated limit.
@@ -98,30 +98,22 @@ print("""
   - HIGH k: x_seam is large, many oscillations, and |Psi| has fallen as 1/x^2 to nothing -- so the
     mode arrives as a pure free oscillation of amplitude Psi(1/sqrt3)/2 = 0.4835 Psi_i.
   *** THE BOOST IS PRESENT, IT IS k-DEPENDENT, AND IT SATURATES. ***
-  This is the radiation-driving boost -- the very thing P15 said the geometric stacking rate REMOVES.
-  It is not removed on L2.  It is removed on L1, WHICH IS THE READOUT AND NOT THE DRIVING.
+  This is the radiation-driving boost.  The geometric stacking rate carries no radiation term, but it is
+  the READOUT and not the driving: the perturbations run on the leaf rate, which carries it.
 """)
-print("  *** SO THE ANSWER TO 'WHAT STANDS IN PLACE OF THE BOOST' IS: THE BOOST ITSELF, EARNED ON THE")
-print("      COLLAPSE LEG WHERE RADIATION DOES GRAVITATE -- and the three-level rule is exactly what")
-print("      makes that consistent rather than contradictory. ***")
+print("  *** SO THE BOOST IS EARNED ON THE RE-EXPANDING LEG, WHERE RADIATION DOES GRAVITATE -- and the")
+print("      three-level rule is exactly what makes that consistent rather than contradictory. ***")
 print("="*80)
 
 print("\n" + "="*80)
-print("STEP 6 — DOES THIS CONTRADICT P15?  Read the sentence again, exactly.")
+print("STEP 6 — WHERE THIS SITS IN P15.")
 print("="*80)
 print("""
-  P15: 'the same geometric stacking rate that enlarges r_D also reshapes the high-ell driving envelope
-        (REMOVING THE RADIATION-DRIVING BOOST THAT SETS THE LambdaCDM PEAKS), so CR's high-ell
-        spectrum is governed by SHORT-WAVELENGTH COLLAPSE-PHASE DRIVING THAT HAS NOT BEEN COMPUTED.'
-
-  IT DOES NOT SAY 'THERE IS NO BOOST.'  It says LambdaCDM's boost MECHANISM -- an expanding radiation
-  era -- is absent, and that CR's peaks are instead set by collapse-phase driving, WHICH HAS NOT BEEN
-  COMPUTED.  *** THAT IS THE OBJECT COMPUTED ABOVE. ***
-  And the manual is explicit that this is where it lives: L2, 'the leaf's local rate, ordinary
-  Friedmann, RADIATION GRAVITATING NORMALLY... THE ACOUSTIC DRIVING LIVES HERE.'
-  *** So the computation is on the level the corpus assigns it to, and finds that the collapse leg
-      earns a boost of its own.  No level has been crossed.  The L1 rate is the READOUT and is not
-      used anywhere above. ***
+  P15 sec:envelope: every mode starts on the re-expanding leg from the frozen state the branch point
+  hands over, re-enters on the rising branch, and is driven by the radiation-era potential of C1 --
+  the driving lives on the leaf's rate, ordinary Friedmann with radiation gravitating normally, which
+  is where the corpus's three-level rule puts it.  The stacking rate is the readout and is not used
+  anywhere above.
 """)
 print("STEP 7 — AND THE SHAPE OF THE ANSWER, WHICH IS THE POINT.")
 import numpy as np
@@ -143,9 +135,9 @@ print("""
 """)
 print("="*80)
 print("*** WHAT IS AND IS NOT CLAIMED, held exactly: ***")
-print("  CLAIMED: the collapse-phase driving envelope P15 names as uncomputed IS computed here, in")
-print("    closed form, and it SATURATES -- flat in k above ~10 k_s.  The mechanism P15 said LambdaCDM's")
-print("    radiation era supplies is supplied on CR's collapse leg instead, at the same saturating value.")
+print("  CLAIMED: the driving envelope on the re-expanding leg is computed here, in closed form, and it")
+print("    SATURATES -- flat in k above ~10 k_s, the radiation era's own scale invariance recovered")
+print("    from CR's geometry, at the same saturating value flat LambdaCDM's radiation era supplies.")
 print("  NOT CLAIMED: the peak-HEIGHT pattern.  This is the R -> 0 skeleton -- baryons are neglected,")
 print("    so the odd/even asymmetry is absent; and Phi = Psi assumes no anisotropic stress, which")
 print("    free-streaming neutrinos would break.  *** Those are the next two terms, not a caveat on")
@@ -159,8 +151,8 @@ print("="*80)
 #
 # CR_cosmology.tex sec:envelope, as it reads NOW:
 #   "entry then occurs at x -> 1/sqrt3 IN THE DEEP SUB-HORIZON LIMIT ... a mode at k ~ 10 k_s
-#    enters within 2% of 1/sqrt3 and one at 300 k_s within 0.1%, all of them reaching the branch
-#    point with the same driving amplitude Psi(1/sqrt3)/2, and the residual potential is below a
+#    enters within 2% of 1/sqrt3 and one at 300 k_s within 0.1%, all of them reaching the seam
+#    with the same driving amplitude Psi(1/sqrt3)/2, and the residual potential is below a
 #    percent ON AVERAGE while oscillating up to some seven per cent of it where cos x_seam is
 #    near an extremum."
 # The paper previously read the limit as an IDENTITY and the average as a BOUND.  So the gate

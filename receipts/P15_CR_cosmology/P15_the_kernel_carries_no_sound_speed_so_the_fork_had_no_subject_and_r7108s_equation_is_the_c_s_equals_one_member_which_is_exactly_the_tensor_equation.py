@@ -126,7 +126,7 @@ gate("Ⓐ③ THE CLASSICAL READING IS THE SAME OPERATOR WITH `$\\omega$` FILLED 
 
 _M152 = (r"an exponent of $-152$ at the first acoustic peak, integrated across the segment's own "
          r"sound-speed profile rather than at the single value the estimate above uses")
-_BARD = (r"On the radiation-dominated collapse leg the potential obeys "
+_BARD = (r"from the branch point, the potential obeys "
          r"$\Psi''+(4/\eta)\Psi'+(k^{2}/3)\Psi=0$")
 print(f"      `P15`'s `-152` clause: {b15.count(_M152)}x;  the plasma's `c_s^2 = 1/3`: "
       f"{b15.count(_BARD)}x")

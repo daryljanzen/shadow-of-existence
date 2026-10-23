@@ -215,7 +215,7 @@ REPAIRED = [
     ('sec:envelope derivation',
      r'\\emph\{seam\}\s*\} sits just inside that turning point'),
     ('sec:envelope driving amplitude',
-     r'reaching the \\emph\{seam\}---where the collapse leg ends---with the same driving amplitude'),
+     r'all of them reaching the \\emph\{seam\} with the same driving amplitude'),
 ]
 # (the heading regex above is written against the file; the envelope one is checked loosely below)
 def _prop_subhorizon_bound_to_its_locus():
@@ -276,8 +276,11 @@ for name, pat in REPAIRED[:3]:
     if not ok:
         fail.append(f"the repaired text for {name} is not in the paper")
 for name, frag in [('sec:envelope derivation', 'sits just inside that turning point'),
-                   ('sec:envelope driving amplitude', 'where the collapse leg ends'),
-                   ('header STATUS block', 'the SEAM, not the branch point')]:
+                   # the appositive "where the collapse leg ends" is gone with PO-77's finding that the
+                   # seam sec:envelope means is the front chart value, on the expansion leg; the header
+                   # states both loci (r7567).
+                   ('sec:envelope driving amplitude', r'all of them reaching the \emph{seam} with the same driving amplitude'),
+                   ('header STATUS block', 'every mode outside the horizon at the branch point, back inside by the')]:
     ok = frag in tex
     print(f"  {'OK ' if ok else 'MISSING'}  {name}")
     if not ok:

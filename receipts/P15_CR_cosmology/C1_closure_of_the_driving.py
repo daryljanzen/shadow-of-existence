@@ -1,21 +1,21 @@
-"""C1-CLOSURE — DOES THE ACOUSTIC OSCILLATOR CLOSE IN ELEMENTARY TERMS ON CR's COLLAPSE LEG?
-CONFIRMATION 4 first — WHICH background.  The corpus is specific and I must not substitute:
-  L2 (where the driving lives) = 'the leaf's local rate, ORDINARY FRIEDMANN, radiation GRAVITATING
-  NORMALLY, on the progenitor's collapse excursion' -- and P16: on the cooling leg |H| = sqrt(8 pi G
-  rho/3), 'identical to standard BBN at every temperature in the window, differing from an expanding
-  radiation era ONLY BY THE SIGN OF adot'.
-  So L2 is a STANDARD Friedmann background, contracting.  NOT the sinh^{2/3} law -- that is L1.
+"""C1-CLOSURE — DOES THE ACOUSTIC OSCILLATOR CLOSE IN ELEMENTARY TERMS ON CR's DRIVING LEG?
+WHICH background.  The driving lives on the leaf's local rate, ordinary Friedmann with radiation
+  gravitating normally -- the cooling leg, re-expanding from the branch point, on which P16 runs a
+  standard nucleosynthesis.  Every mode leaves the branch point frozen (P15 Prop. subhorizon) and
+  re-enters on this leg, so the driving background is a STANDARD radiation-dominated Friedmann leg,
+  expanding.  NOT the sinh^{2/3} law -- that is the stacking rate.  The closed form found below is
+  EVEN in x, so a contracting radiation leg would carry it identically.
 ORIGIN: storyboard_receipts/C1_closure_of_the_driving.py -- registered r2376 (c54); edit the origin, not this copy."""
 import sympy as sp
 print("="*80); print("C1 — THE MODE EQUATION ON L2"); print("="*80)
 eta,k,x=sp.symbols('eta k x', positive=True)
 print("""
 STEP 1 — WHERE ON THE LEG DOES THE DRIVING HAPPEN?  This decides the background.
-  P15: the modes are SUB-HORIZON AT THE SEAM and 'each mode's driving is COMPLETE on the collapse
-  side'.  At the seam rho_r/rho_m ~ 2.  But the driving is not done AT the seam -- it is done BY
-  then, i.e. DEEPER on the leg, hotter and earlier, where P16 puts the peak at ~10^2 MeV with total
-  dissociation.  *** DEEP ON THE COLLAPSE LEG RADIATION DOMINATES OVERWHELMINGLY. ***
-  So the driving background is a RADIATION-DOMINATED Friedmann leg, contracting.
+  P15: every mode is outside the horizon at the branch point and back inside it by the seam, where
+  rho_r/rho_m ~ 2.  The driving is the re-entry between the two -- early on the re-expanding leg,
+  near the branch point, where the radiation term is constant while the others vanish (C3).
+  *** THERE RADIATION DOMINATES OVERWHELMINGLY. ***
+  So the driving background is a RADIATION-DOMINATED Friedmann leg, expanding from the branch point.
 """)
 print("STEP 2 — AND THE RADIATION-ERA POTENTIAL IS ELEMENTARY. Derive it, do not quote it.")
 Psi=sp.Function('Psi')
@@ -42,55 +42,27 @@ print("""
   *** SO THE RADIATION-ERA DRIVING POTENTIAL IS ELEMENTARY IN CLOSED FORM: sin x - x cos x over x^3.
       No Boltzmann integration is needed to have it. ***
 """)
-print("STEP 3 — AND CR's LEG IS ITS TIME-REVERSE, WHICH IS THE SAME FUNCTION.")
-print("   P16: the collapse leg differs from an expanding radiation era ONLY BY THE SIGN OF adot.")
+print("STEP 3 — AND THE TIME-REVERSED LEG CARRIES THE SAME FUNCTION.")
+print("   A contracting radiation leg differs from an expanding one ONLY BY THE SIGN OF adot.")
 print("   Under eta -> -eta the equation Psi'' + (4/eta) Psi' + (k^2/3) Psi = 0 is INVARIANT:")
 Pm=P.subs(x,-x)
 print(f"     Psi(-x) = {sp.simplify(Pm)}")
 print(f"     and Psi(-x) - Psi(x) = {sp.simplify(Pm - P)}   <- the solution is EVEN in x")
-print("   *** SO THE POTENTIAL IS LITERALLY THE SAME FUNCTION ON THE CONTRACTING LEG. Not merely")
+print("   *** SO THE POTENTIAL IS LITERALLY THE SAME FUNCTION ON EITHER LEG. Not merely")
 print("       equal in Fourier magnitude at omega=1 -- the SAME CLOSED FORM, pointwise. ***")
 
 print("\n" + "="*80)
-print("STEP 4 — WHERE MY RESULT AND P15's CAUTION MEET.  Held carefully, not smoothed.")
+print("STEP 4 — WHAT IS SETTLED AND WHAT IS LEFT TO THE LIMITS.")
 print("="*80)
 print("""
-  P15 says two things that must both stand:
-    (a) 'its driving does not live on an expanding radiation era... it lives on the CONTRACTING side
-         --- the progenitor's radiation-comparable collapse phase, whose potential evolution is the
-         Friedmann TIME-REVERSE of an expanding radiation era'  -- and
-    (b) 'the same geometric stacking rate that enlarges r_D also reshapes the high-ell driving envelope
-         (removing the radiation-driving boost that sets the LambdaCDM peaks), so CR's high-ell
-         spectrum is governed by SHORT-WAVELENGTH COLLAPSE-PHASE DRIVING THAT HAS NOT BEEN COMPUTED.'
-
-  STEP 2-3 SETTLE THE FUNCTION AND NOT THE SAMPLING.  What is now established:
-    * the driving potential on a radiation-dominated Friedmann leg is ELEMENTARY, verified exactly:
-      Psi = 3 Psi_i (sin x - x cos x)/x^3, x = k eta / sqrt3 ;
-    * that function is EVEN in x, so the contracting leg carries THE SAME CLOSED FORM POINTWISE --
-      which is stronger than the Fourier-magnitude equality P15 buys at omega = 1, and consistent
-      with it.
-  *** SO THE FUNCTION IS NOT THE UNCOMPUTED THING. ***
-
-  WHAT IS UNCOMPUTED IS WHICH PART OF IT EACH MODE SAMPLES.  A mode's driving is the stretch of
-  Psi(x) it experiences while INSIDE the horizon, and the horizon history differs:
-    - LambdaCDM: comoving Hubble radius GROWS through the radiation era; modes ENTER, high-ell first,
-      and each is driven from its entry to equality.  The 'radiation-driving boost' is that entry-to-
-      equality stretch.
-    - CR's leg: the corpus's own sequence is INFALL (contracting) -> PEAK -> TURNAROUND -> COOLING
-      LEG (re-expanding) -> seam.  So the comoving Hubble radius SHRINKS, reaches a minimum at
-      turnaround, then GROWS again -- and a mode can EXIT and RE-ENTER on one leg.
-  *** THAT is the uncomputed object, and it is not a transfer function: it is a HORIZON-CROSSING
-      HISTORY on a non-monotonic Hubble radius, deciding the limits of an integral whose integrand
-      is already in closed form. ***
+  The function is settled: on a radiation-dominated Friedmann leg the driving potential is
+  Psi = 3 Psi_i (sin x - x cos x)/x^3, x = k eta / sqrt3, exact and regular, taking the frozen value
+  Psi_i at the branch point; and it is EVEN in x, so either leg carries the same closed form pointwise
+  -- stronger than the Fourier-magnitude equality P15 states at omega = 1, and consistent with it.
+  What each mode samples of it is set by its horizon-crossing history: exit on the infall, where
+  aH -> infinity at the branch point, and re-entry on the re-expanding leg.  Those limits are C2's
+  and the map is C3's; C4 assembles the envelope.
 """)
-print("  AND IT SHARPENS THE OPEN ITEM RATHER THAN CLOSING IT:")
-print("    before: 'the high-ell driving envelope has not been computed' -- shape unknown, and a")
-print("            Boltzmann transfer implied.")
-print("    after : the integrand is elementary and known; what is owed is the horizon-crossing")
-print("            history across infall-peak-turnaround-cooling, which fixes each mode's limits.")
-print("  *** A CLOSED-FORM INTEGRAND WITH UNKNOWN LIMITS IS A DIFFERENT AND MUCH SMALLER PROBLEM ***")
-print("  *** THAN AN UNKNOWN TRANSFER FUNCTION -- and it is the corpus's own bead geometry that")
-print("      supplies the limits, not a code. ***")
 print("="*80)
 
 # ============================================================================================
@@ -100,8 +72,8 @@ print("="*80)
 #   (1) EXACTNESS — the printed "substituted into the ODE it returns: 0" is now a gate;
 #   (2) REGULARITY — the x -> 0 limit is Psi_i, not a divergence;
 #   (3) EVENNESS — Psi(-x) - Psi(x) = 0, which is the claim CR_cosmology.tex sec:envelope cites
-#       this receipt for ("which is EVEN in x -- so the contracting leg carries the same closed
-#       form pointwise").
+#       this receipt for ("which is EVEN in x -- so a contracting radiation leg would carry the
+#       same closed form pointwise").
 #   (4) PIN — the closed form evaluated at x = 1/sqrt3, the horizon-entry phase.  C4 carries this
 #       same number into the driving amplitude Psi(1/sqrt3)/2, which the paper quotes.  Pinning it
 #       here means a change to C1's closed form breaks this gate before it can move C4 silently.
