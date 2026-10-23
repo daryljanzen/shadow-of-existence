@@ -440,7 +440,16 @@ crossing, `PO-92` §open), `P3` (`PO-92` at line 1222, `PO-93` §curvature), `P2
   revision stamps, two section references by old line number, and four source comments narrating compile repairs removed.
   Dependency matrix refreshed (P6 now cites P4 6, P13 2, P17 5), with P7's dependency figure carrying the P4-to-P6 edge at 6. **The open-language read is done (r7543)**: 13 keys, 10
   ordinary English or settled in place, 3 pointed at their rows (the acoustic case twice, PO-87; the matter sector and the
-  damping-scale signature, PO-14 and PO-24), none owed. `P7`'s item waits for the `P7` return.
+  damping-scale signature, PO-14 and PO-24), none owed.
+  **`P7` done (r7565)**: frontier item 1 (frontier:scalar), its overview sentence, the abstract-adjacent synthesis paragraph
+  and the economy-of-assumption paragraph no longer say the spectrum is "rejected on TT shape" with "a mechanism for that
+  deficit" owed; each states the one assignment: on the construction's assignment of the projection's comoving distance to
+  the stacking rate the fit leaves 278.8 unreachable against the control's 186.0, built on the leaf rate (radiation restored)
+  it reaches 184.989, below the control's 186.007, and what is open is the rate light's path distance takes (the
+  observer's-flat-slice identification shown to force the stacking rate, or light's path shown to take another and the
+  spectrum recomputed). The two-rate remark (eq:two-rate) now says light's path is the case its rule has still to be shown to
+  decide, pointing at the item; the dependency matrix refreshed (P7 cites P15 41). The read's own: `P18`'s cosmology frontier paragraph still opened on "the acoustic
+  rejection" with "a mechanism for the deficit" owed, against its own next paragraph; brought to the same state.
 - `P9` (the read's own, no listed items): **Done (r7559)**. The abstract's close promised "what would be needed to reach [the
   wall] and what remains open" where sec:open says the wall is named and walked past into ordinary evolution (P11); it now
   says what lies past the wall. The introduction's "that paper closed with the range as its principal open problem" brought
