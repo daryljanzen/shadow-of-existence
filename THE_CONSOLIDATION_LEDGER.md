@@ -9,14 +9,14 @@ corpus currently misrepresents itself) and PLANNED (real work, safely queued). C
 
 ## 0. What has LANDED (the ledger starts from truth, not from worry)
 
-- The synthesis's **firm core is in the corpus**: p0's hub paragraph (`§ledger` close, r1199); P13's
+- The synthesis's **firm core is in the corpus**: P17's hub paragraph (`§ledger` close, r1199); P13's
   synthesis section (`sec:synthesis`, r1200); the **S⁴-vs-S⁵ computation** (`qm_S4_vs_S5.py`, r1196) that
   dissolved the last open link (su(3)⊄so(5)/⊂so(6) ⟹ gauge and ℏ share the one global-Wick real form).
   THE PLATE and THE QM PLATE are in P13 as figure placeholders (real draft images).
-- The **three-pillar home is decided** (r1198): **P7** cosmology/GR · **P13** physics synthesis · **p0**
+- The **three-pillar home is decided** (r1198): **P7** cosmology/GR · **P13** physics synthesis · **P17**
   geometric closure. **No new paper** — P13 grows into the physics-synthesis paper.
 - The sketchpad's **firm sketches are integrated**: Sketch 1 (two real forms + ontological asymmetry →
-  P13 `sec:face-status` + `sec:synthesis` + p0); the positive face (P12 backbone → P13 `sec:synthesis`);
+  P13 `sec:face-status` + `sec:synthesis` + P17); the positive face (P12 backbone → P13 `sec:synthesis`);
   Sketch 7 (the straddle → P13 `sec:synthesis`'s straddle paragraph).
 
 ---
@@ -122,9 +122,9 @@ among the planned items, not last.
 the papers whose numbers it adjudicated) — not a standalone sweep. Also owed: its Companions entry + map
 card (the figure ledger has both).
 
-**Q6 — the masthead pass (LAST).** p0's `JanzenParallax`/`JanzenShadow` bibkey unification (13 occurrences
+**Q6 — the masthead pass (LAST).** P17's `JanzenParallax`/`JanzenShadow` bibkey unification (13 occurrences
 → standard `JanzenModernParallax`/`JanzenShadowExistence`); the full dependency-matrix sweep catching every
-new citation (p0 and P13 rows already synced; Q1/Q2 will add more). Runs after U1, 7·B, and the propagation.
+new citation (P17 and P13 rows already synced; Q1/Q2 will add more). Runs after U1, 7·B, and the propagation.
 
 **Q7 — QM frontier flags (optional, low priority).** Two *located* open questions from the sketchpad could
 earn a "what stays open" flag in P13 `§open` at not claimed weight: **Sketch 5** (the empty Wick+discrete
@@ -134,7 +134,7 @@ too speculative to flag even as open.
 
 **Q8 — the pre-existing owed sweeps (see §8 for the changelog-verified state).** ✔ **DONE:** E.1 reference
 completeness (r1144), bibitem completeness (r1141). **Still owed** (parked when the campaigns took over):
-the entry-point-register **signs (0 written)**, the register's **rooms** (p0/P15/P5/P3), **3d
+the entry-point-register **signs (0 written)**, the register's **rooms** (P17/P15/P5/P3), **3d
 defragmentation**, **idiom/glossary** sweep 4, and **Lane 8 / the combinatorics ledger** (Daryl's
 publish-blocker). These are gathered and sequenced in **§8**.
 
@@ -143,7 +143,7 @@ publish-blocker). These are gathered and sequenced in **§8**.
 ## 3. What I CHECKED and am NOT missing (honest both ways)
 
 - The **firm** QM material is integrated — Sketch 1 core, the positive face, S⁴-vs-S⁵, Sketch 7 straddle —
-  into P13 + p0. Not stranded on the sketchpad.
+  into P13 + P17. Not stranded on the sketchpad.
 - The **speculative** sketches are correctly stated without being claimed and are *not* owed integration: Sketch 2
   (thermal = vacuum-selector, a correction toward *less*), Sketch 3-loose (uncertainty-as-finiteness),
   Sketch 6 (Born rule). Kept, not dropped.
@@ -190,7 +190,7 @@ the Q-MINE block above. **This is the immediate next work.**
 synthesis is now a headline result, and **the corpus must know it the way it knows maximal symmetry, the
 constant ledger, and that our universe formed from the gravitational collapse of an antimatter black hole.**
 Not reciprocal footnotes — prominence. This is the D1 / on-tangent campaign shape applied to the QM result:
-prominent in the three pillars (P13 ✔ U1 · p0 ✔ hub · **P7 owed**), and an **earned in-voice connection from
+prominent in the three pillars (P13 ✔ U1 · P17 ✔ hub · **P7 owed**), and an **earned in-voice connection from
 every paper that has one** — P12 (the constraint-algebra = Lorentzian-coset backbone), P10 (the door), P15
 (the classical-cosmology consequence), P16 (matter-on-real-horn / gauge-across-seam), P14 (the residue as
 the Lorentzian form's discrete structure), and any other the reads turn up — the map carrying it (D2), the
@@ -235,7 +235,7 @@ Nothing in this plan lives only in-head. To resume: **this ledger** = the live s
 §6 the three big landings). **`retired/THE_REFINEMENT_ARC.md`** = the master plan, the routine, and the standing
 rules (incl. the two ⛔⛔ rules: never-close-without-working, and no-comment-without-standing). **`CORPUS_MAP.md`**
 = the per-revision log (r1120→r1204, head presented as `cr_r1204.tar.gz`). **`THE_QUANTUM_JOINT.md`** = the
-QM sketchpad (firm material integrated into P13+p0; speculative sketches held). **The owed-figures ledger**
+QM sketchpad (firm material integrated into P13+P17; speculative sketches held). **The owed-figures ledger**
 = arc row 7·L (five figure items). The take-over read is the arc's *"Catching up cold"* section, then this
 ledger's §6.
 
@@ -264,7 +264,7 @@ Every item below is decided at source, in context, by reading the paper whole �
 3. **★ The entry-point-register SIGNS — 0 written; the refinement arc's core unfinished work.** Each capped
    pipe / open room in this paper gets its five-part frontier sign (*what is known beyond · the route in ·
    why it matters · the cheapest next step · why it was left open*) + its discharge condition. Rooms still
-   unopened: **p0, P15, P5, P3** (P13/P7 opened). Spec: `THE_REFINEMENT_ARC` step 5 + `ENTRY_POINT_REGISTER`.
+   unopened: **P17, P15, P5, P3** (P13/P7 opened). Spec: `THE_REFINEMENT_ARC` step 5 + `ENTRY_POINT_REGISTER`.
 4. **3d defragmentation** — where a closure landed, is the telling now fragmented / out of order? Re-cut what
    history placed. (P13 worst on the metric, 24→1.)
 5. **The QM-infrastructure prominence connection** — the earned in-voice pointer to the two-real-forms
@@ -283,7 +283,7 @@ its fragmentation is re-asked, and its QM connection is drawn or declined — al
   integrate and earn its citation per paper.
 - **The figures (7·B)** — the owed-figures ledger (arc 7·L).
 - **The map (D2)** — the Lane-8 card (main result unfindable from the map) + a QM-synthesis card.
-- **Masthead (Q6) — LAST** — p0 bibkey unification, the full dependency-matrix sweep.
+- **Masthead (Q6) — LAST** — P17 bibkey unification, the full dependency-matrix sweep.
 
 ### Sequencing (updated r1206)
 **The unified per-paper pass, P1 → standing order, is the immediate work** — Q-MINE leads inside each read
@@ -391,7 +391,8 @@ identification, the observer's own flat slice. The summaries do not all carry th
   (r7509).** Line 262 states the identification as `P15` holds it; it stands until the adjudication.
 - The peak-spacing figures disagree across instruments: the wisdom-ledger row at r2789 has a spacing of 258 against a
   stored acoustic scale of 301.6; `P15` and `P18` carry a comb of 298.0; the leaf run moves the acoustic scale from
-  302.889 to 301.380. Find which figure is stale and fix it where it lives.
+  302.889 to 301.380. Find which figure is stale and fix it where it lives. **Done (r7573):** 258 belongs to the
+  onset-pinned arm, which is gone; the comb is 298.0 against the sky's 298.4, and the r2789 row and its cluster now say so.
 - `PO-87`'s register row: it does not carry the leaf-distance result, nor the finding that the visibility's 14.6 per cent
   extra width alone is not the carrier (the width swap amplifies the difference and the undo test fails both ways, r6919
   and r7191). Rewrite the row so its live clause is the identification itself. **Done (r7511).**
@@ -683,8 +684,8 @@ reality involution of cosmic time; su(3) lives on the compact face reached by th
 the equatorial-seam continuation is named as such, the throat X=α, σ acting on descriptions and not at a locus; R, not
 P, is the diagram automorphism. Every bare seam is qualified; the Nariai ramification point is not called the branch
 point; the Schwarzschild front seam is r=2M at both 750 and 761; z is 0.66 (0.6648). The ten headers and the narration
-where edits landed (r6937, r973, r1840, r1609, the significance-weight histories) are gone; p0's (iii) carries its scope
-(the graviton tower's mode sums spend one constant) and (iv) reads as p0 now states it. §1a's record names P13, not P14,
+where edits landed (r6937, r973, r1840, r1609, the significance-weight histories) are gone; P17's (iii) carries its scope
+(the graviton tower's mode sums spend one constant) and (iv) reads as P17 now states it. §1a's record names P13, not P14,
 and P4, not P5. Two paper sentences found on the way: `P12` l.323 put the S3 inside so(5,1) against its own l.344 and is
 now "beside... read off the horizon cubic"; `P16`'s header comment still called both directions fatal and now carries the
 two directions. Owed to `P3`'s next turn: l.919 still reads the inward leg as the local rate "where the light elements
@@ -698,6 +699,21 @@ freeze out" and continues the conjugate branch "through the seam".
 - 1075 (r1873): "the Nariai seam IS the beginning".
 - r2761, r2762, r2780: the dropped high-l bins (later run to 2512, which disfavours the arm further).
 - r2724-2726: an F3 decisive negative, then withdrawn.
+
+**Done (r7573)**, every item above, after a whole read of the ledger, each row checked against its paper's current text.
+Row 251 is retired on its own condition (one $H_0$, 68.6). Rows resting on the onset datum, the seam handover, the seam
+phase or a radiation-free observable leg carry an UPDATED note where the rule stands and are retired where the row's own
+claim was the superseded physics; with row 251 and the withdrawn F3 negative (r2724, retired) that is 159 rows, across the onset-era PO-10/PO-12 arc (r2485-r2835), the CMB build arc
+(r1912-r2083: the seam datum, the leg phase, the reset, the predicted first peak at 165, the +14% damping figure and its
+error budget) and the stray H0=73 and seam-is-the-beginning rows (1007, 1075, 1195, 1238, 1355). The notes name what
+replaced each: the plasma handed over at the branch point, the driving envelope on the expanding leg, the leaf rate
+carrying radiation with the early ISW present, the comb at 298.0 against 298.4, the damping signature under a per cent,
+the propagating spinor sector built. Rows whose figures P15 still carries (146.4 against 145.4, 302.2 against 301.76,
+the 10.8% diffusion length, the branch-point join) stay LIVE. Row 274 now says the seats' S3 is the cover's monodromy
+symmetry, as P17 way 6 does; 1356's citation points at THE_PLAN A2.11, where the 13.78 Gyr lives; the paper is P17
+throughout, except where a row distinguishes the two names historically. Found on the way: P15's lap passage still said
+the "collapse leg" of sec:envelope terminates at the seam; sec:envelope is the expanding-leg envelope, and the sentence
+is removed.
 
 ### 5. `THE_PLAN`
 
