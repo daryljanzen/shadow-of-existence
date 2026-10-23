@@ -107,6 +107,10 @@ DECLARED = {
                             'prior row, 19,853 characters, is at the parent'),
     'PO-91': ('28340072bb', 'r7489 rewrote the live row to one state on cc66\'s r7463 result; the '
                             'full prior row is at the parent'),
+    'PO-50': ('0e2320a9ef', 'r7575 rewrote the live row to one state (arc step 6); the full prior row, '
+                            '13,863 characters, is at the parent'),
+    'PO-89': ('0e2320a9ef', 'r7575 rewrote the live row to one state (arc step 6); the full prior row is at the parent'),
+    'PO-94': ('0e2320a9ef', 'r7575 rewrote the live row to one state (arc step 6); the full prior row is at the parent'),
 }
 
 ROW = re.compile(r'\| ~?~?\*\*((?:PO|L|C)-?\d+)\*\*')
