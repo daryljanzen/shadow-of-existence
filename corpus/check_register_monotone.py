@@ -111,6 +111,8 @@ DECLARED = {
                             '13,863 characters, is at the parent'),
     'PO-89': ('0e2320a9ef', 'r7575 rewrote the live row to one state (arc step 6); the full prior row is at the parent'),
     'PO-94': ('0e2320a9ef', 'r7575 rewrote the live row to one state (arc step 6); the full prior row is at the parent'),
+    'PO-86': ('024b9f4965', 'r7577 struck the row on its own discharge clause and condensed it to one state '
+                            '(85,708 characters); the full prior row is at the parent of the commit named'),
 }
 
 ROW = re.compile(r'\| ~?~?\*\*((?:PO|L|C)-?\d+)\*\*')
