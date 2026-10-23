@@ -337,8 +337,8 @@ and that is a measurement of the corpus rather than a failure of the reader.***
 | the other fifteen | MEDIUM / LOW | CHECKED-NEGATIVE | agreed |
 
 ⇒ ⚠ ***`P04` IS ABOUT WHAT A MEASUREMENT CAN DISTINGUISH***, *which is this field's central question: a floor
-of $2.8\times10^{-3}$ against an observed $3\times10^{-6}$, a margin of 923, and an explicit statement of how
-much worse the data would have to be to close it.* ⌗ **The verdict is nonetheless unchanged and the reason is
+of $8.8\times10^{-3}$ against a whole measured anisotropy of $4.1\times10^{-5}$, a margin of some 210, and an
+explicit statement of how much more anisotropic the sky would have to be to close it.* ⌗ **The verdict is nonetheless unchanged and the reason is
 worth separating from the estimate being wrong: `P04` does that work in the language of statistics and
 harmonic analysis, and already carries `\ldg{statistics_inference}` and `\ldg{harmonic_analysis}`.**
 ***The estimate was right that the paper is about this field's question; the term pass was right that this

@@ -50,7 +50,7 @@ division; this is a note, not a repair.*
 
 | register | routed clause · its paper | disposition |
 |---|---|---|
-| **`S3` `P04`'s exclusion is a LOWER BOUND against an UPPER LIMIT, so every free choice pushes the two apart and it cannot be weakened by a different estimate — only by a different physical claim** | *"name the structure, and give the robustness factor — $9\times$ to weaken it to two orders, $92\times$ to one, $923\times$ to vanish"* · **P4** | ***MOSTLY LANDED; the FACTORS are owed.*** *P4 already carries the structure in its own voice — the growth-weighting choice, "the no-correlation value is a **strict lower bound**", the $2.8\times$ and $4\times$ multipliers, and "an exclusion by three orders of magnitude". **What is absent is the robustness statement**: `923` ×0, and P4 never says how much the observed limit would have to move* |
+| **`S3` `P04`'s exclusion is a LOWER BOUND against an UPPER LIMIT, so every free choice pushes the two apart and it cannot be weakened by a different estimate — only by a different physical claim** | *"name the structure, and give the robustness factor"* · **P4** | ***LANDED.*** *P4 states the structure in its own voice — "the comparison is a lower bound against an upper limit", the measured anisotropy bounding any redshift scatter from above — and the factor: the sky would have to be some $210\times$ more anisotropic for the floor to reach it* |
 | **`S9` `P16`'s shared lithium miss is the DISCRIMINATING datum and is filed as a problem — a concordant success is reached many ways, a concordant failure *of a specific size* is a fingerprint** | — | ***LANDED r3569*** — *placed in P16 `sec:verdict` with its `\ldg` marker.* |
 | **`S10` `P07`'s citation proxy survives its size confound ($r=+0.181$) but the test is UNDERPOWERED — at $n=6$ the interval runs $-0.74$ to $+0.87$ and excludes nothing; $\rho=0.5$ at 80% power needs 30 papers, the corpus has 17 and the figure draws 6** | *routed* · **P7's figure caption** | ***LANDED r3577*** — *placed in P7 `fig:dependency-structure`'s caption with its `\ldg` marker.* |
 | **`S1` the first programme is a POWER CALCULATION and it has not been done** · **`S7` the corpus may not count its own successes, because successes are selected** | — | **LANDED as method.** *P6 carries `reference class` ×7 and `base rate` ×4 — the discipline is in the paper that owns it* |
@@ -287,18 +287,19 @@ bins. The superseded figure is kept and labelled, not deleted.*
 ## ⟐ S3 — **`P04`'S EXCLUSION IS A BOUND AGAINST A BOUND** — *and that is why the attack bounces*
 
 *Built as an attack: a **ratio of point estimates** is not an exclusion.* ⇒ ***It is not a ratio of
-point estimates.*** *`P04`'s own receipt establishes $\sigma_{\rm path}=2.77\times10^{-3}$ as a **floor**
-and checks two alternative estimate choices that **both raise it** — $7.78\times10^{-3}$ without
-growth-weighting, $5.55\times10^{-3}$ with correlations — against an observed **upper limit** of
-$3\times10^{-6}$.*
+point estimates.*** *`P04`'s own receipt establishes $\sigma_{\rm path}=8.8\times10^{-3}$, for light
+crossing independent uniform cells, as a **floor**, and computes two alternative estimate choices that
+**both raise it** — $1.6\times10^{-2}$ with the matter field's correlations along the ray,
+$8.5\times10^{-2}$ with the contrast held at its present value along the path — against the whole
+measured anisotropy, $4.1\times10^{-5}$, which bounds any redshift scatter from **above**.*
 
 ⇒ ***LOWER BOUND AGAINST UPPER LIMIT. Every free choice pushes the two further apart, so the exclusion
 cannot be weakened by a different estimate — only by a different physical claim.*** *And the control
 returns $\sigma_{\rm path}=0$ **exactly**, so the test could have come out the other way.*
 
-**⌷ ROUTED, NOT APPLIED.** *A sentence, in the shape `S2` already found: name the structure, and give
-the robustness factor — the observed limit would have to be $9\times$ larger to weaken the exclusion to
-two orders, $92\times$ to one order, $923\times$ for it to vanish.*
+**⌷ LANDED.** *P4 names the structure and gives the robustness factor: the measured anisotropy would have
+to be some $210\times$ larger for the floor to reach it ($2.1\times$ to weaken the exclusion to two
+orders, $21\times$ to one).*
 *(receipt `receipts/L271_the_statistics_bake/S3_the_exclusion_is_a_bound_against_a_bound.py`)*
 
 ---
@@ -423,7 +424,7 @@ a bare mention. Three readers swept the corpus; the roster below is the result.*
 | `P01` | **CHECKED-NEGATIVE** | `BH_causality`: `significance`/`distribution` epistemic + physical; no fit, no likelihood, no count |
 | `P02` | **CHECKED-NEGATIVE** | `janzen_circle`: `variance`=*invariance* substring; `distribution` physical; no statistical claim |
 | `P03` | **CHECKED-NEGATIVE** | `SdS-slicing`: `residual` = geometric remainder; `covariance` = general covariance; homonyms only |
-| `P04` | WORKED | the CLT redshift-isotropy floor: $\sigma_{\rm path}=\sigma_{8,\rm eff}/(3\sqrt N)\approx2.8\times10^{-3}$ vs observed $\lesssim3\times10^{-6}$, differential expansion excluded (`P04_redshift_isotropy_floor`, ALL PASS) |
+| `P04` | WORKED | the redshift-isotropy floor: independent uniform cells along the ray, $\sigma^2_{\rm path}=\int d\chi\,g^2R\,\sigma_R^2\approx(8.8\times10^{-3})^2$ ($1.6\times10^{-2}$ with the matter's correlations) vs the whole measured anisotropy $4.1\times10^{-5}$, differential expansion excluded (`P04_redshift_isotropy_floor`, ALL PASS) |
 | `P05` | **CHECKED-NEGATIVE** | `groupoid`: `covariance`=general covariance; `statistics`=spin-statistics; no fit/count/likelihood |
 | `P06` | WORKED | `S1` — the reference-class power calculation: ~170 (two-arm) / ~40 (matched-pair) episodes for conventional power; five paired concordant → $p=1/32$ (`S1_the_first_programme_is_a_power_calculation...`) |
 | `P07` | WORKED | `S9`/`S10` + the full-spectrum likelihood it stakes: the computed spectrum at $2.57\times$ the control's distance on the full-range lensed configuration ($214.1$ vs $550.5$ over $185$ bins, control $1.16$/bin); DESI $\chi^2/\text{dof}\simeq1$ at $\Omega_m\simeq0.30$, $H_0\simeq68.6$; $P_1/P_2=2.264$ vs $2.2564\pm0.0772$ (the parameter refit on this configuration is in flight) |

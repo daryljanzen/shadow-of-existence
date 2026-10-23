@@ -1001,8 +1001,6 @@ APPENDIX	P3	P03_which_mass_sets_the_hubble_eddington_radius	6.37	1
 APPENDIX	P3 · P7 · P8	P03_acceleration_is_slice_curvature	67.4	1
 APPENDIX	P3 · P7 · P8	P03_acceleration_is_slice_curvature	7.06	1
 APPENDIX	P3 · P7 · P8	P03_acceleration_is_slice_curvature	7.65	1
-APPENDIX	P4	R2_the_papers_correlation_figures_are_the_ones_nothing_checked	0.44	1
-APPENDIX	P4	R2_the_papers_correlation_figures_are_the_ones_nothing_checked	0.92	1
 APPENDIX	PO-13	D1_the_diagnosis_is_the_driving_and_the_driving_is_the_rate	0.01037	1
 APPENDIX	PO-13	D1_the_diagnosis_is_the_driving_and_the_driving_is_the_rate	0.01040	1
 APPENDIX	PO-13	D1_the_diagnosis_is_the_driving_and_the_driving_is_the_rate	0.013	1
@@ -1041,9 +1039,6 @@ APPENDIX	—	S1_the_peak_spacing_follows_latarg_so_the_deficit_is_structural_not
 APPENDIX	—	S1_the_peak_spacing_follows_latarg_so_the_deficit_is_structural_not_an_artefact	301.6	1
 APPENDIX	—	S2_the_fundamental_resonance_is_omega_two_minus_pt_eight_i_by_wkb_both_partners_agreeing	1.93	1
 APPENDIX	—	S2_the_fundamental_resonance_is_omega_two_minus_pt_eight_i_by_wkb_both_partners_agreeing	2.01	1
-APPENDIX	—	S3_the_exclusion_is_a_bound_against_a_bound	2.77	1
-APPENDIX	—	S3_the_exclusion_is_a_bound_against_a_bound	5.55	1
-APPENDIX	—	S3_the_exclusion_is_a_bound_against_a_bound	7.78	1
 APPENDIX	—	U1_a_survey_that_needs_the_list_cannot_find_what_is_missing_from_the_list	0.136	1
 APPENDIX	—	U1_a_survey_that_needs_the_list_cannot_find_what_is_missing_from_the_list	0.278	1
 APPENDIX	—	U1_a_survey_that_needs_the_list_cannot_find_what_is_missing_from_the_list	107.6	1
@@ -1289,5 +1284,3 @@ PROSE	cosmogenesis_paper.tex	P16_validate_bbn	0.2506	1
 PROSE	cosmogenesis_paper.tex	P16_validate_bbn	2.5671	1
 PROSE	cosmogenesis_paper.tex	P16_validate_bbn	4.4611	1
 PROSE	matter_sector_paper.tex	P14_leaf_compactness	1.8138	1
-PROSE	modern_parallax.tex	P04_redshift_isotropy_floor	0.285	1
-PROSE	modern_parallax.tex	R2_the_papers_correlation_figures_are_the_ones_nothing_checked	0.285	1

@@ -607,27 +607,30 @@ The "marginal" label applied to `p0` and `P09` was a word count speaking, and it
 
 ---
 
-## ⛔⛭⛭ H19 — **`P04`'s FLOOR IN FOURIER: THE $1/\sqrt N$ IS A WHITE-NOISE LIMIT**
+## ⛔⛭⛭ H19 — **`P04`'s FLOOR IN FOURIER: THE INDEPENDENT-CELL COUNT IS A WHITE-NOISE LIMIT**
 
-*Estimated HIGH from contents before grepping, and confirmed. `P04` models a photon path as* ***"a tube
-binned into $N$ statistically independent cells of comoving size $R=8\,h^{-1}$ Mpc"*** *and takes the
-central limit theorem, $\sigma_{\rm path}=\sigma_{8,\rm eff}/(3\sqrt N)$.*
+*Estimated HIGH from contents before grepping, and confirmed. `P04`'s floor takes the photon's path as
+a chain of statistically independent uniform cells of comoving length $R=8\,h^{-1}$ Mpc, each adding
+$gR\,\delta_R$ to the accumulated redshift, so $\sigma^2_{\rm path}=\int d\chi\,g^2R\,\sigma_R^2$
+($8.8\times10^{-3}$ over $\sim1200$ cells).*
 
-**⌘ A PATH AVERAGE IS A WINDOW IN FOURIER SPACE**, *with variance $\int\!\mathrm dk\,P(k)|W(k)|^2$ and
-$|W|^2=\mathrm{sinc}^2(kL/2)$. At $L=9390\,h^{-1}$ Mpc, $N=1174$:*
+**⌘ A LINE INTEGRAL IS A WINDOW IN FOURIER SPACE.** *For a path of length $L$ the variance is
+$\int\!\mathrm dk\,P(k)|W(k)|^2$ with $|W|^2=\mathrm{sinc}^2(kL/2)$:*
 
 | $k$ | $1/L$ *(path)* | $3/L$ | $10/L$ | $1/R$ *(cell)* |
 |---|---|---|---|---|
 | $\lvert W\rvert^2$ | **0.919** | 0.442 | 0.037 | $0.000$ |
 
-⇒ ***So the $1/\sqrt N$ is the WHITE-NOISE limit, exact for $k\gg1/L$. Modes with $k\lesssim1/L$ are
-not averaged down at all — they contribute COHERENTLY along the whole path.***
+⇒ ***So the independent-cell count is the WHITE-NOISE limit, exact for $k\gg1/L$. Modes the cells
+share are not averaged down — they contribute COHERENTLY along the path.***
 
 **⌗ AND IT MOVES THE RESULT THE RIGHT WAY.** *Coherent contributions **add** to the scatter, so the
-true floor is **higher** than the cell estimate.* `P04` *states that* ***"every choice in the estimate
-biases it downward, so the number is a floor"*** *— and this is a further instance of exactly that,
-**through a channel its own robustness checks ($\sigma_8$ normalisation, correlated cells) do not
-cover**. The harmonic form **strengthens** the exclusion.*
+true value is **higher** than the cell estimate. `P04` computes it: with the matter field's
+correlations the cell length is replaced by the correlation length of the smoothed field,
+$\sigma^2_{\rm path,corr}=\int d\chi\,g^2\,(1/2\pi)\!\int\!dk\,k\,P_R$, which raises the scatter to
+$1.6\times10^{-2}$. The harmonic form **strengthens** the exclusion, and the paper says so.* The one
+boundary is the observable's: a mode longer than the observable region lands on every direction alike
+and is removed with the monopole, which `R50` measures and the paper states.
 
 **⌘ AND THE MODES RESPONSIBLE ARE THE LOWEST MULTIPOLES.** *With $\ell\sim kD_C$ and $D_C=L$, the
 unsuppressed band is $\ell$ of order a few.* ⇒ ***That is the same range at which the corpus
@@ -635,9 +638,8 @@ independently places the transmission boundary ($\ell\sim2.5$), the Euclidean pr
 and the adiabatic breakdown at $n=2,3$ — which `H13` shows is FORCED. A fourth arrival at the same
 place, from the isotropy floor.***
 
-**⏷ ROUTED, NOT APPLIED.** *The clause owed: that the cell estimate is the white-noise limit of the
-path window, exact for $k\gg1/L$, and that the unaveraged long-wavelength band raises the floor
-further.*
+**⏷ LANDED.** *`P04` carries the correlated value beside the independent-cell floor, and the
+long-wavelength boundary of the single-ray variance against the across-sky scatter.*
 *(receipt `storyboard_receipts/HA_H19_the_isotropy_floor_in_fourier.py`)*
 
 ---

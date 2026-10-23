@@ -479,6 +479,26 @@ crossing, `PO-92` §open), `P3` (`PO-92` at line 1222, `PO-93` §curvature), `P2
   open-language read is done (r7561)**: 4 keys after the edits, 3 ordinary English or settled in place, 1 pointed at P17's
   thesis (the rungs as one fact, a conjecture there), none owed; the retired section-title qualification commented out of
   the open ledger. Receipt L560/P1 re-pinned to the corrected Lovelock sentence (M1, which runs it, green with it).
+- `P4` (the JCAP read's adoptions, section 7, and the read's own): **Done (r7563)**. The floor brought to the JCAP
+  version's: the hypothesis stated through the redshift-rate relation (expansion, shear, acceleration; Ellis 1971), the
+  local rate H(1 - f delta/3) derived from the separate-universe deficit, the line integral with g = aHf/3; the floor is
+  light crossing independent uniform cells, sigma_path^2 = int dchi g^2 R sigma_R^2 = (8.8e-3)^2 at R = 8 h^-1 Mpc (6.8e-3
+  at 20, 2.6e-3 at 100), with the correlated value 1.6e-2 beside it and its R scan (1.9e-2 at 4 to 9.5e-4 at 300),
+  against the whole measured anisotropy, rms 4.1e-5 over l = 2..2508 (Planck 2018 V): some 210 and 380 times, 23 times at
+  R = 300. The genuine-floor bullets rewritten to the computation (growth weighting nearly tenfold; the correlation theorem
+  for the sum; linear spectrum; linear local rate; the comparison against the whole sky), the long-wavelength boundary
+  kept as the statement that the single-ray variance is the across-sky scatter, the sinc window values and the 138 Mpc
+  basin figures retired with the model they belonged to. Sec sw takes the shear-term telescoping and the Rasanen
+  scatter-not-mean paragraph. Abstract, introduction, history and masthead say "more than two orders"; the de Sitter
+  citation is the KNAW paper (Proc. Kon. Ned. Akad. Wetensch. 19, 1217); bib adds Planck 2018 V, CAMB, Ellis 1971,
+  Ellis-Maartens-MacCallum, Rasanen 2009; header revision stamps removed. The same numbers carried into the six papers
+  that quote P4's floor (P8 slicing_operator, P10, P13 boundary, P16, P17, P18), and into ONTOLOGY_FOUNDATION_INDEX and
+  the statistics, probability, harmonic-analysis and information-theory ledgers. Receipts: P04_redshift_isotropy_floor
+  rebuilt on CAMB (camb 2.0.4, the pin); R2 checks the correlation theorem for the sum; R50's docstring brought to the
+  paper; S3 takes the floor by running P04's receipt and pushes the laws through P04's weighted cells (MC 8.79e-3
+  against 8.84e-3). Against the JCAP file, the computation gives the correlated/rms ratio 381 (JCAP: 390), 23 times at
+  R = 300 (JCAP: 24), 9.5e-4 at 300 and 5.9e-3 at 50 (JCAP: 9.6e-4, 6.0e-3). **The open-language read is done (r7563)**:
+  5 keys after the edits, 2 ordinary English or settled in place, 3 pointed at the companions (P7, P8, P9), none owed.
 - `P13`: Z2xZ2 should be Z2^3; "A1 rank-two"; "vector-like" at line 270.
   **Done (r7541)**: the exit's three commuting linear reflections (R, the areal parity P, T) generate Z2^3, in the body
   and the header; A1 placed in rank one, B2 and G2 the other irreducible rank-two systems; Witten's index stated as

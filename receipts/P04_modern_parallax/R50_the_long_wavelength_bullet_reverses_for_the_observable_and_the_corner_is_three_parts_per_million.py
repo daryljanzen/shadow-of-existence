@@ -1,62 +1,58 @@
 #!/usr/bin/env python3
-r"""R50 -- P04's FIFTH "BIASES DOWNWARD" BULLET REVERSES DIRECTION FOR THE OBSERVABLE, AND THE
-     CORNER WHERE IT DOES CARRIES THREE PARTS PER MILLION OF THE VARIANCE.
+r"""R50 -- P04's SINGLE-RAY VARIANCE IS THE ACROSS-SKY SCATTER WHEREVER THE VARIANCE LIVES; THE TWO
+     PART ONLY FOR MODES LONGER THAN THE PATH, WHICH CARRY THREE PARTS PER MILLION OF IT.
 
-** WHAT THE PAPER SAYS.  ** `modern_parallax.tex` `sec:floor`, the fifth of five reasons the floor
-$\sigma_{\rm path}\approx2.8\times10^{-3}$ is a genuine lower bound:
+** WHAT THE PAPER SAYS.  ** `modern_parallax.tex` `sec:floor`, after the reasons the floor is a genuine
+lower bound:
 
-  > *"the $1/\sqrt N$ is only the WHITE-NOISE LIMIT of the path average.  A path mean is a window in
-  > Fourier space, with variance $\int dk\,P(k)\,|W(k)|^{2}$ and $|W|^{2}=\mathrm{sinc}^{2}(kL/2)$
-  > for a tube of length $L$ ... **Modes longer than the path are not averaged down at all** --- they
-  > contribute coherently along its whole length, and **coherent contributions add to the scatter
-  > rather than cancelling in it**, so the true floor is higher than (14) on this count as well."*
+  > *"The quantity bounded is an anisotropy, the scatter across directions, while (eq:floor) and
+  > (eq:sigmapath) are variances along one ray.  The two differ only for modes longer than the path:
+  > every sightline is cast from the same observer, so a mode much longer than the observable region
+  > takes one value over the whole of it, lands on every direction alike, and is removed with the
+  > monopole.  Measured, the across-sky scatter tracks the single-ray variance to 1% for modes much
+  > shorter than the path and falls to 2e-4 of it for modes much longer; on a CDM spectrum the
+  > fraction of the single-ray variance lying in modes longer than the path is 3e-6, and 95% of it
+  > lies in modes at least seventy times shorter ..."*
 
-*** THE STEP THAT DOES NOT CARRY.  $\mathrm{sinc}^{2}(kL/2)$ is the window for the variance of ONE
-    path.  The quantity the paper is bounding is the scatter ACROSS DIRECTIONS --- an anisotropy ---
-    and every sightline starts at the same observer. ***
-  ** A mode much longer than the observable region takes essentially one value over the whole of it,
-  so it lands on every sightline alike.  That is a MONOPOLE.  It is removed with the mean, and it
-  contributes NOTHING to the anisotropy. **
-  => *So in the $k\to0$ corner the coherence the bullet invokes does not add to the scatter; it
-    cancels out of it exactly, and the bullet's stated direction is reversed there.*
-
-⛭⛭ *** AND THE CORRECTION CANNOT TOUCH THE RESULT, WHICH IS WHY THIS IS A CLAUSE AND NOT A
-     CHALLENGE. ***  *Measured below on a BBKS CDM spectrum: the fraction of the path-mean variance
-     coming from $k<1/L$ is $3.1\times10^{-6}$, and 95% of it sits between $kL\approx74$ and
-     $kL\approx709$ --- deep inside the regime where the across-sky scatter and the single-path
-     variance agree to 2%.*  ** The floor's margin is a factor of 923.  A three-parts-per-million
-     corner cannot move it. **  => *** The bullet needs one clause, not a retraction: the coherence
-     it invokes is real for $1/L \lesssim k$, and for $k \lesssim 1/L$ the modes are a monopole. ***
+** WHY IT MATTERS.  ** The floor and its correlated value are computed as the variance of the
+accumulated redshift along ONE ray; the observable is the scatter ACROSS directions, and every
+sightline starts at the same observer.  A mode much longer than the observable region takes
+essentially one value over the whole of it, so it lands on every sightline alike: a MONOPOLE, removed
+with the mean, contributing nothing to the anisotropy.  The identification of the two is therefore
+exact for kL >> 1 and fails for kL << 1, and this probe measures both the boundary and how much of the
+variance lies beyond it.  *Measured below on a BBKS CDM spectrum: the fraction of the single-ray
+variance coming from k < 1/L is 3.1e-6, and 95% of it sits between kL ~ 74 and kL ~ 709 -- deep inside
+the regime where the across-sky scatter and the single-ray variance agree to 2%.*  ** Against a floor
+some 210 times the measured anisotropy, a three-parts-per-million corner cannot move it. **
 
 ** WHAT IS MEASURED, and it is the OBSERVABLE rather than a proxy. **  *A Gaussian field is built
-as a sum of random plane waves with $\vec k$ drawn from a chosen band; sightlines are cast from one
-origin; the path mean is taken along each.  Two numbers come out per realisation:*
-  * ** $V_{\rm path}$ ** -- the second moment of the path mean about zero.  *This is what
-    $\sigma_{\rm path}^{2}$ estimates.*
-  * ** $V_{\rm sky}$ ** -- the variance ACROSS directions, monopole removed.  ** This is the
-    anisotropy the paper compares against $3\times10^{-6}$. **
+as a sum of random plane waves with k drawn from a chosen band; sightlines are cast from one
+origin; the path mean is taken along each (the ratio below is the same for the path sum).  Two
+numbers come out per realisation:*
+  * ** V_path ** -- the second moment of the path mean about zero.  *This is what the single-ray
+    variance estimates.*
+  * ** V_sky ** -- the variance ACROSS directions, monopole removed.  ** This is the anisotropy the
+    paper compares against the measured sky. **
 
-⛔ ** THE CONTROLS, and the first one is what stops this from being a measurement of the geometry. **
-  * ** WHITE-NOISE control: ** *as the band moves to $kL\gg1$ the two must AGREE.*  ** If
-    $V_{\rm sky}/V_{\rm path}$ fell below one there too, the cancellation would be an artefact of
-    casting rays from a common origin and nothing to do with wavelength. **
-  * ** FIELD-IS-THERE control: ** *in the long-wave band $V_{\rm path}$ must stay LARGE while
-    $V_{\rm sky}$ collapses.*  ** Otherwise the field would simply be absent and the ratio would be
-    0/0 wearing a verdict. **
+** THE CONTROLS, and the first one is what stops this from being a measurement of the geometry. **
+  * ** WHITE-NOISE control: ** *as the band moves to kL >> 1 the two must AGREE.*  ** If
+    V_sky/V_path fell below one there too, the cancellation would be an artefact of casting rays
+    from a common origin and nothing to do with wavelength. **
+  * ** FIELD-IS-THERE control: ** *in the long-wave band V_path must stay LARGE while V_sky
+    collapses.*  ** Otherwise the field would simply be absent and the ratio would be 0/0 wearing a
+    verdict. **
   * ** MONOTONICITY: ** *the ratio must fall as the band moves down, not jump.*
 
-⌗ ** WHAT IS NOT CLAIMED. **  *Not that the floor is wrong -- the other four bullets are untouched
-and the along-path correlation theorem `R2` checks is exactly right.  Not that the window integral
-is the wrong tool -- it is the right tool for $V_{\rm path}$.  Only that the paper's fifth bullet
-identifies $V_{\rm path}$ with $V_{\rm sky}$ at $k\to0$, where they differ, and that the corner is
-measured here rather than waved at.*
+** WHAT IS NOT CLAIMED. **  *Not any value of the floor, and not that the window integral is the
+wrong tool -- it is the right tool for V_path.  Only that V_path and V_sky differ at k -> 0, and that
+the corner where they do is measured here rather than waved at.*
 
 COMPUTES: scope.
   * `L=1` sets the path length; every band is quoted as $kL$, so the result is dimensionless.
   * `NMODES`, `NDIRS`, `NREAL` are the plane-wave count, sightline count and realisation count.
     ** The verdict is a ratio in a limit and must not move with them; two are swept. **
   * `Om_h2=0.143`, `ns=0.96`, `h=0.674` and BBKS feed only the fraction in block (B);
-    `L_LSS=9400` $h^{-1}$Mpc is the paper's own $d_{\rm lss}$.
+    `L_LSS=9400` $h^{-1}$Mpc is the comoving distance to last scattering.
   * ** NOT CLAIMED: any value of the floor itself. **  *`P04_redshift_isotropy_floor` owns that.*
 
 Written r3718 by node 60, probability v2 pass B row 1 (`P04`).
@@ -67,7 +63,7 @@ from scipy.integrate import quad
 L = 1.0
 NMODES, NDIRS, NREAL = 4000, 200, 60
 Om_h2, ns, h = 0.143, 0.96, 0.674
-L_LSS = 9400.0                      # h^-1 Mpc -- the paper's own comoving distance to last scattering
+L_LSS = 9400.0                      # h^-1 Mpc -- the comoving distance to last scattering
 
 FAILS = []
 
@@ -195,9 +191,9 @@ if __name__ == '__main__':
 
     print()
     print('=' * 98)
-    print('    => THE BULLET NEEDS ONE CLAUSE, NOT A RETRACTION.  The coherence it invokes is real')
-    print('       for kL >~ 1 and reverses below it, and below it lives 3 parts per million of the')
-    print("       variance against a margin of 923.  The floor is untouched; the sentence is not.")
+    print('    => THE SINGLE-RAY VARIANCE AND THE ACROSS-SKY SCATTER AGREE for kL >~ 1 and part below it,')
+    print('       and below it lives 3 parts per million of the variance, against a floor some 210 times')
+    print('       the measured anisotropy.  The single-ray variance is the across-sky scatter.')
     print('=' * 98)
     if FAILS:
         print(f'  {len(FAILS)} FAILED: ' + '; '.join(FAILS))

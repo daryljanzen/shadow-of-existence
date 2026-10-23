@@ -8,7 +8,7 @@ sources: [chat]
 
 > ⛭ **`R1`'s RECEIPT — named here at r3660, because it was named nowhere.** *`receipts/L_probability/R1_the_whole_footprint_is_three_geometry_words.py`* — *the whole footprint is three geometry words — `Gaussian` curvature, general `covariance`, and the string inside `invariance`.* ⌗ *It ran and was registered; **the ledger whose probe it settles did not name it**, so the computation had no argument attached. `check_citation_chain` now fails on that.*
 
-> ⛭ **`R2`'s RECEIPT — named here at r3668, and it is 60's own break that 59's new gate found.** *`receipts/P04_modern_parallax/R2_the_papers_correlation_figures_are_the_ones_nothing_checked.py`* — *`P04`'s correlation figures are correct, and the receipt that was supposed to check them checked a **placeholder** instead.* ⌗ *`check_citation_chain` (59, r3660) reported it: **on disk, registered, and named by no ledger** — so the computation had no argument attached. 59 fixed `R1`'s break in the same pass and left this one, which is 60's.* ⇒ ***A receipt that runs and is registered is a LINK; a receipt a ledger names is a CHAIN. This one was a link for two revisions.***
+> ⛭ **`R2`'s RECEIPT — named here at r3668, and it is 60's own break that 59's new gate found.** *`receipts/P04_modern_parallax/R2_the_papers_correlation_figures_are_the_ones_nothing_checked.py`* — *it checks the correlation theorem that makes `P04`'s uncorrelated floor a lower bound.* ⌗ *`check_citation_chain` (59, r3660) reported it: **on disk, registered, and named by no ledger** — so the computation had no argument attached. 59 fixed `R1`'s break in the same pass and left this one, which is 60's.* ⇒ ***A receipt that runs and is registered is a LINK; a receipt a ledger names is a CHAIN. This one was a link for two revisions.***
 
 # THE PROBABILITY LEDGER — the sixth field, and the cleanest bounce of the six
 
@@ -67,7 +67,7 @@ sources: [chat]
 | **`P15`** | ⛭ **WORKED — the only paper with statistics, and it owes this field nothing** | `variance` ×19, of which **cosmic variance** dominates; `likelihood` ×26; the **Silk random walk**. *All correct, all the statistics bake's* |
 | **`P07`** · **`P09`** · **`p0`** | ⛭ **CHECKED-NEGATIVE, all three** | `covariance` in the general-covariance sense throughout; `p0`'s ×2 are the *"covariance-of-geometries reading"* |
 | **`P16`** | ⛭ **CHECKED-NEGATIVE** | One `Gaussian curvature`, one `random walk`, correctly cited |
-| **`P04`** | ⛭⛭ **WORKED — AND THE TERM-SIDE PASS HAD THIS WRONG, WHICH IS THE LEDGER'S MOST IMPORTANT ROW** | ⛔ *I first scored it CHECKED-NEGATIVE and wrote that **"`P04` returned empty on all six fields"**. **Both halves were wrong.*** *Its probability vocabulary really is near zero — `probability` ×0, `stochastic` ×0, `random` ×0, `variance` ×2 — **and its entire argument is the standard deviation of a path-averaged random field**: a floor $\sigma_{\mathrm{path}}\approx2.8\times10^{-3}$, a central-limit $1/\sqrt N$ over $N\approx1174$ cells, an explicit correlation caveat with its own effective $N$, and a Fourier window $|W|^2=\mathrm{sinc}^2(kL/2)$.* ⇒ ***Every screen this bake ran scored it negative and would again. Only reading the abstract found it*** — which is `OVERNIGHT_FIELD_BAKE_WORK_ORDER.md` STEP 2, the step this campaign skipped. **`R2` landed** |
+| **`P04`** | ⛭⛭ **WORKED — AND THE TERM-SIDE PASS HAD THIS WRONG, WHICH IS THE LEDGER'S MOST IMPORTANT ROW** | ⛔ *I first scored it CHECKED-NEGATIVE and wrote that **"`P04` returned empty on all six fields"**. **Both halves were wrong.*** *Its probability vocabulary really is near zero — `probability` ×0, `stochastic` ×0, `random` ×0, `variance` ×2 — **and its entire argument is the standard deviation of a path-integrated random field**: a floor $\sigma_{\mathrm{path}}\approx8.8\times10^{-3}$ summed over $N\approx1200$ independent cells, a correlation theorem that makes it a lower bound, the correlated value $1.6\times10^{-2}$ from the matter spectrum, and the across-sky scatter set against the single-ray variance.* ⇒ ***Every screen this bake ran scored it negative and would again. Only reading the abstract found it*** — which is `OVERNIGHT_FIELD_BAKE_WORK_ORDER.md` STEP 2, the step this campaign skipped. **`R2` landed** |
 | **`P01`** · **`P02`** · **`P05`** · **`P06`** · **`P10`** · **`P11`** · **`P12`** · **`P13`** · **`P14`** | ⛭ **CHECKED-NEGATIVE, all nine** | *Screened on all sixteen field terms.* **No probabilistic content in any of them** |
 
 ---
@@ -189,7 +189,7 @@ paper was opened for this pass.**
 
 | # | paper | sections named | ⌗ **the prediction — falsifiable** |
 |---|---|---|---|
-| 1 | **`P04`** | `sec:floor` · `sec:decomp` | ⛭⛭ ***THE SKY-SCATTER OF A PATH-INTEGRATED RANDOM FIELD IS NOT $\sigma_{\rm cell}/\sqrt N$, BECAUSE NEARBY SIGHTLINES SHARE THEIR NEAR-OBSERVER CELLS AND THE SHARED PART IS A MONOPOLE.*** *`P04` measures an **anisotropy** — scatter **across** directions — and estimates it from the variance **along** one path with a central-limit $1/\sqrt N$ over $N\approx1174$ cells and an explicit correlation caveat with its own $N_{\rm eff}$.* **Prediction: the caveat treats correlation ALONG a path and not correlation BETWEEN paths, and the between-path term is the one that acts on the observable.** ⛔ *The paper's own guard is "every choice in the estimate biases it downward, so the number is a floor". **The falsifiable question is whether the between-path correlation is one of those choices and whether it biases downward.** If it does, the row is a confirmation and the paper is stronger than it claims; if it does not, the floor wants a qualifier* |
+| 1 | **`P04`** | `sec:floor` · `sec:decomp` | ⛭⛭ ***THE SKY-SCATTER OF A PATH-INTEGRATED RANDOM FIELD IS NOT $\sigma_{\rm cell}/\sqrt N$, BECAUSE NEARBY SIGHTLINES SHARE THEIR NEAR-OBSERVER CELLS AND THE SHARED PART IS A MONOPOLE.*** *`P04` measures an **anisotropy** — scatter **across** directions — and estimates it from the variance **along** one path, summed over $N\approx1200$ independent cells, with an explicit correlation theorem.* **Prediction: the caveat treats correlation ALONG a path and not correlation BETWEEN paths, and the between-path term is the one that acts on the observable.** ⛔ *The paper's own guard is "every choice in the estimate biases it downward, so the number is a floor". **The falsifiable question is whether the between-path correlation is one of those choices and whether it biases downward.** If it does, the row is a confirmation and the paper is stronger than it claims; if it does not, the floor wants a qualifier* |
 | 2 | **`p0`** | `sec:ledger` | ⛭ ***A FINE-TUNING PROBLEM IS A PROBABILITY CLAIM AND IT NEEDS A SAMPLE SPACE.*** *"How unlikely is this value" presupposes a measure on a parameter space. `p0` says the one scale **dissolves** the two deepest fine-tuning problems. **Prediction: what it removes is the PARAMETER, and this field's register says the consequence is sharper — with no dimensionless parameter there is no random variable, so the value is not improbable, it is not a variate at all.*** ⛔ *Wrong if `p0` already puts it in measure terms, or if the sharpening is a restatement of the number-theory finding rather than a second one — **that risk is named here in advance because the same move twice is one finding, not two*** |
 | 3 | **`P06`** | `sec:engine` · `sec:reflexive` · `sec:boundary` | ⛔ ***THE HARDEST READ, BY RULE AND BY THIS CORPUS'S OWN PRECEDENT.*** *`P06`'s engine is historiography and its data are episodes; a **base rate over a family of episodes is a probability claim**. The paper argues explicitly against reliability estimates built from one's own successes — *"five applications of a criterion within a single programme, by the same hand, are five bets outstanding and not five confirmations"*. **Prediction: that IS the selection-effect argument, correctly made in words, and nothing is owed** — the read must establish it rather than assume it* |
 | 4 | **`P11`** | `sec:nonlinear` · `sec:gowdy` | *"Randomised phases wash out" is a **variance** claim: a sum of $N$ random phases does not vanish, it grows like $\sqrt N$, and "washes out" is a statement about a RATIO. **Prediction: the phrase is used where the ratio is the right one and the paper does not need the estimate** — the test is whether any conclusion turns on the size of the residual rather than on its sign* |
@@ -225,19 +225,19 @@ twice.***
 | | |
 |---|---|
 | **verdict** | ⛭⛭ **CONFIRMED — the prediction was right, and the paper is more careful than it assumed** |
-| **landed** | `P04` `sec:floor`, the fifth bullet — `\ldg{probability}` |
+| **landed** | `P04` `sec:floor`, the paragraph after the floor's bullets — `\ldg{probability}` |
 | **the receipt** | `receipts/P04_modern_parallax/R50_the_long_wavelength_bullet_reverses_for_the_observable_and_the_corner_is_three_parts_per_million.py` |
 
 ⌗ ***WHAT THE LOCATOR GOT WRONG FIRST.*** *Row 1 predicted the correlation caveat treats correlation
 **along** a path and not **between** paths.* **The paper treats both, and one of them as a theorem**:
-*the along-path variance $(\sigma^{2}/N)(1+(N-1)\bar\rho)$ exceeds the independent value for every
-$\bar\rho>0$ (`R2`), and the window bullet is explicitly about coherence across the whole path.*
+*the along-path variance $N\sigma^{2}(1+(N-1)\bar\rho)$ exceeds the independent value for every
+$\bar\rho>0$ (`R2`), and the correlated value carries the coherence across the whole path.*
 
-⇒ ***BUT THE FIFTH BULLET IDENTIFIES TWO QUANTITIES THAT DIFFER AT $k\to0$.*** *$\mathrm{sinc}^{2}(kL/2)$
-is the window for the variance of **one path**. The bounded quantity is an **anisotropy**, and every
+⇒ ***BUT THE SINGLE-RAY VARIANCE AND THE OBSERVABLE DIFFER AT $k\to0$.*** *The floor is the variance
+of **one path**. The bounded quantity is an **anisotropy**, and every
 sightline is cast from the same observer — so a mode much longer than the observable region takes one
 value over the whole of it, lands on every direction alike, and **is removed with the monopole**.*
-**The coherence the bullet invokes adds to the scatter for $kL\gtrsim1$ and cancels out of it below.**
+**Coherence along the path adds to the scatter for $kL\gtrsim1$ and cancels out of it below.**
 
 | measured | |
 |---|---|
@@ -247,9 +247,9 @@ value over the whole of it, lands on every direction alike, and **is removed wit
 | fraction of a BBKS CDM path-mean variance below $k=1/L$ | ⛭ **$3.1\times10^{-6}$** |
 | where the variance actually lives | *$kL$ from **73** (5%) to **870** (95%)* |
 
-⇒ ***THE BULLET NEEDS ONE CLAUSE, NOT A RETRACTION*** — *three parts per million against a margin of
-**923**. **The floor is untouched and the sentence is not**, and the clause makes the paper's own
-statement true rather than nearly true.*
+⇒ ***THE PAPER STATES THE BOUNDARY*** — *three parts per million of the variance, against a floor some
+**210** times the measured anisotropy: the single-ray variance is the across-sky scatter wherever the
+variance lives, and the paper says where the two part.*
 
 ⛔ ***THE TWO CONTROLS, AND THE FIRST IS WHAT STOPS THIS BEING A MEASUREMENT OF THE GEOMETRY.***
 *If the ratio fell in the **white-noise** band too, the cancellation would be an artefact of casting
