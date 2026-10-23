@@ -660,6 +660,36 @@ crossing, `PO-92` §open), `P3` (`PO-92` at line 1222, `PO-93` §curvature), `P2
 - "Stated for reversal" in ten card headers (1311, 1383, 1405, 1435, 1509, 1551, 1603, 1644, 1692 and on), which the coda
   forbids; 1700 (iv) "no early-universe parameter" and 1700 (iii) "no free dimensionless constant" without its qualifier.
 
+**Done (r7571)**, every item above, after a whole read of the index, each item checked at its paper's current text:
+r=0's curvature is the one reading (the geometry's Kretschmann scalar diverges, the substrate's curvature is finite) at
+the branch-point entry, the §1b, §1c, §1f and §1·LEVELS sites, and the P8 card, which now carries P8 §synchronous as it
+stands (on the massless substrate the smooth asymptote B, a horizon; dressed with mass the branch point; the closed
+sphere written X(T), not the retired R(T)); r=0 is a vertical tangent and not a turning point wherever stations are
+listed; the beginning is the branch point at the occurrence entry and the P10 card, where a=0 is the scale-factor
+boundary. The L1/L2 entries, the decision rules and the §1·SHADOW and §1·LEVELS cards carry P7's `eq:two-rate` rule
+(content processes on the leaf rate, BBN on the cooling leg past the branch point, a separation read across leaves on
+the stacking rate, no locus where the rate switches, light's path the open case, `PO-87`) and P16 §scoping's two
+directions as they now bear (the window direction quantitatively fatal; the distance direction excluded structurally,
+the spectrum preferring it); the cross-corpus web no longer labels the legs as levels, and the crossing is the branch
+point; the TT rejection carries the leaf-distance result wherever it is stated (§1·SHADOW, §1j, §1r, §1s). The P4
+numbers are 8.8e-3 against 4.1e-5, more than two orders, at every site. The S3 is the monodromy symmetry and, as a
+group, no substrate isometry (only τ walks a ruling), the deck word gone from the marriage paragraph (the cover's deck
+group is trivial); P10's one congruence and P7's different family reconciled at both cards (the different family is the
+closed slicing's own orthogonal geodesics). The P14 card carries `sec:whichthree` (the wall-modes are the seats, their
+identical content a property the generations also have), the continuation onto the cosmological leaf as carried out
+(receipt `P14_B2_zeromode_continuation`), the zero-duration argument, and P14's own wording of the footing and the
+count; the propagating spinor sector is built (P11, P7 §frontiers) at the three sites that called it open. K is the
+reality involution of cosmic time; su(3) lives on the compact face reached by the global Wick across the signature seam;
+the equatorial-seam continuation is named as such, the throat X=α, σ acting on descriptions and not at a locus; R, not
+P, is the diagram automorphism. Every bare seam is qualified; the Nariai ramification point is not called the branch
+point; the Schwarzschild front seam is r=2M at both 750 and 761; z is 0.66 (0.6648). The ten headers and the narration
+where edits landed (r6937, r973, r1840, r1609, the significance-weight histories) are gone; p0's (iii) carries its scope
+(the graviton tower's mode sums spend one constant) and (iv) reads as p0 now states it. §1a's record names P13, not P14,
+and P4, not P5. Two paper sentences found on the way: `P12` l.323 put the S3 inside so(5,1) against its own l.344 and is
+now "beside... read off the horizon cubic"; `P16`'s header comment still called both directions fatal and now carries the
+two directions. Owed to `P3`'s next turn: l.919 still reads the inward leg as the local rate "where the light elements
+freeze out" and continues the conjugate branch "through the seam".
+
 ### 4. `capstones/THE_WISDOM_LEDGER.md`
 
 - Row 251 still LIVE though the condition sweep fixes a single H0 (r6915), while the section says nothing is listed.
