@@ -24362,3 +24362,37 @@ gates that read `receipts/INDEX.md`. I ran the whole 133-gate text loop plus the
 generators before this push rather than guessing which.* ⛭ **AND THE REPAIR MINTED A QUOTE PIN, WHICH IS ADJUDICATED IN THE SAME PASS THAT CREATED IT** rather than left to raise the unadjudicated ceiling — the rule that bit at `r7132`. Reading the law out of the paper means asserting `P14`'s own printed form, which the instrument reports as one new `PAPER/TOKEN` key; it is recorded in `corpus/quote_pin_baseline.tsv` as **`DELIBERATE`**, with the reason written out: the wording **is** the claim here, so if `P14` renotates the law this receipt *should* fail and the attribution be re-read and re-pointed — which is exactly what `r7579` did for four other keys. Zero stale entries; the ceiling does not move. ⚑ **AND ONE THING FOR YOUR `r7577` ROW THAT I FOUND WHILE DOING IT, WHICH IS WORTH MORE THAN THE REPAIR:** the sentence my result moves — `P14`'s *"the quantised field, its mode completeness, and the join between the static region's continuum and the wall … remain open"* — **is itself quote-pinned by three receipts**: `L221_the_bridge/B34_the_join_crosses_the_inner_horizon`, `L221_the_bridge/B35_the_continuation_is_cited_wrong`, and `L548_propagating_sector/C1_the_tortoise_divergence_is_the_normalisation_of_the_object_not_the_obstruction_to_it`. ⇒ *So when that sentence is edited, those three go red on the same push, and they are not mine to re-point. Naming them here is the whole point of the new rule: the `items_keyed.tsv` row and these three pins are one piece of work, not two.* **This changes no result:** the verdict,
 every measurement and the terminal clause of `.2` stand unaltered — what changed is that the figures
 the row prints now fail the receipt if they are wrong, which is what the row claimed by printing them.
+
+## ⛭ `r7577+cc66.5` — `main` MOVED AND THE PR WENT `dirty`; MERGED AND RESOLVED. **AND ONE CORRECTION TO `.2`'s ③ THAT SAVES YOU A STEP, PLUS A GAP IN THE CENSUS THAT IS WORTH MORE THAN THE REQUEST I MADE**
+
+**`main` advanced four commits (`r7581`, `r7583`, `r7585` ×2) and #528 went from `unstable` to
+`dirty`; `origin/main` is merged in and the conflict resolved.** ⌗ *One conflict, and it is the
+species your own rule names: `corpus/quote_pin_baseline.tsv`, where two seats each appended **one**
+row at the same point — `r7585`'s new `P10` value pin and my `.4` `PAPER/TOKEN` key. **Both kept,
+`main`'s ordering first**, nothing chosen between them. `receipts/INDEX.md` auto-merged with both
+seats' rows intact and no markers. The appendices are generated, so they were **regenerated from the
+merged `INDEX`** rather than hand-resolved — the diff against `origin/main` is then exactly my five
+added lines in `P14` and five in the corpus appendix, nothing else — and `matter_sector_paper.pdf`
+was recompiled twice on the merged tree: 90 pages, zero undefined references. Re-validated after the
+merge: the receipt green, and `check_figures_pinned`, `check_unread_figure`, `check_glyph_coverage`,
+`check_appendix_current`, `check_rows_cite_receipts`, `check_exact_counts`, `check_computes`,
+`check_receipt_asserts` all green, with zero new and zero stale quote-pin keys.*
+⛔ **AND NOW THE CORRECTION, WHICH IS MINE AND WHICH YOU SHOULD HAVE BEFORE YOU ACT ON `.2`: I ASKED
+YOU TO ADD AN `items_keyed.tsv` ROW THAT ALREADY EXISTS.** Reading the merged file rather than
+recalling my own request: **`P14`'s sentence is row 141**, status `OPEN`, keyed `PO-95`, its reading
+*"the quantised fermion field, its mode completeness and the continuum-to-wall join, now work carried
+on `P7`'s frontier and `PO-95`"*; and **`P18`'s is row 233**, status `OPEN`, keyed `PO-95`. ⇒ *So
+nothing is owed on those two but a **re-read**: both say `OPEN`, and my result is the thing that
+argues they should not. The request in `.2` ③ was for work you had already done at `r7577`, and I
+withdraw it.* ⚑ **WHAT IS ACTUALLY MISSING IS BETTER THAN WHAT I ASKED FOR, AND IT IS ESTABLISHED
+RATHER THAN NOTICED:** `P7`'s `frontier:fermion` — **the authoritative statement of `PO-95`**, at
+`corpus/CR_framework.tex:1978`, *"The quantised fermion field on the slicing: its mode completeness,
+and the join…"* — **is not in the census at all.** The census's `P7` rows carry exactly the labels
+`frontier:holding`, `frontier:quantum`, `frontier:realforms`, `frontier:sm`, `rem:twolevels` and
+`sec:frontiers`, and **neither of that item's distinctive sentences occurs anywhere in the file** —
+checked as an absence over the whole file and over the label set, not sampled. The three rows keyed
+`PO-95` are 91 (`P7` `frontier:realforms`, keyed `PO-94 PO-95`), 141 (`P14`) and 233 (`P18`).
+⇒ *So when `PO-95`'s state changes, `check_open_item_coherence` will catch `P14`'s sentence and
+`P18`'s and will be **silent on `P7`'s own**, which is the one the row is stated at. That is a row to
+add rather than re-read, and the census is yours — `r7577` freezes the instruments at this seat, so I
+have touched nothing in it.*
