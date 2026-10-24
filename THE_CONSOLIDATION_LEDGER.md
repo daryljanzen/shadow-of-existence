@@ -919,6 +919,19 @@ standing by, no formalisation row being open.
   `P10` states the dimension-six coefficient as the same-level part where it is computed, the naming paragraph,
   the rank paragraph and §lock's close carry the corrected state; `P7` `frontier:quantum` and `P18` (§frontier, its
   discharge, its table, the dissolution paragraph) with them.
+- `PO-89` part (d), first stage: the cubic over three different levels. **Derived (r7595)**, with r7583's recoupling
+  algebra at three independent levels: the sum factors into linear forms, $S=(P^2-1)\prod(Q_i^2-1)[f(P)+\sum f(Q_i)]/
+  (2^{15}\prod m(m^2-1))$ with $P=\sum m_i$, $Q_i=P-2m_i$, $f(s)=(s^2-1)^2(s^2-9)(s^2-25)$, exact against r7056's machinery inside the triangle, on its boundary and at the lowest level.
+  r7593 stated the complete coefficient as the logarithm of that sum; that does not hold as stated, because the sum is
+  doubly logarithmic: with one level low and two high the high pair has a logarithm of its own, coefficient
+  $(m^2-4)(608m^4-3866m^2+1233)/2520$ over the low level's frequency, and summed over the low level that logarithm
+  diverges logarithmically again (partial sums growing as $4979/2240$ times the square of the cutoff's logarithm,
+  where the same-level line's grow as $-15405/16384$ times the logarithm). The complete coefficient is the single logarithm after that nested
+  divergence is subtracted by the one-loop counterterm inserted at the low level. Receipt
+  `P10_the_cubic_over_three_different_levels_is_derived_in_closed_form_and_its_low_level_region_carries_a_nested_logarithm_so_the_bare_sum_is_double_logarithmic`.
+  `P10` (the three-level sentence after the parity, the naming paragraph, §lock's close), `P7` `frontier:quantum` and
+  `P18` (§frontier, its discharge and table) carry it; `PO-89` (d) keeps the subtraction, the three-level kernel on a
+  varying scale factor, and the quartic.
 
 ## The lap's Killing order (chat seat, branch `claude/lap-killing-order`)
 
