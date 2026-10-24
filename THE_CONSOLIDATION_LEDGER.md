@@ -903,16 +903,19 @@ standing by, no formalisation row being open.
   Receipt `P10_the_closed_forms_are_derived_from_the_recoupling_algebra_at_the_extreme_right_labels_so_the_nine_levels_are_a_check_and_not_the_ground`.
   `P10` (the scope paragraph after the parity, §lock and its header comment), `P7` `frontier:quantum` and `P18`
   (§frontier, its table, and the dissolution paragraph) state the completion in two parts; `PO-89` keeps (a) and (b).
-- `PO-89` part (b), the invariant the dimension-six coefficient belongs to. **Narrowed (r7587)** to a kind. On a
-  scale factor that varies, where the covariant dimension-six scalars separate, the same-level logarithm is computed
-  by expanding the cubic's three-propagator integral locally in derivatives of the scale factor (checked against the
-  propagator integrated numerically): $-15405/8192$, $-8313/4096$ and $14769/8192$ at zero, two and four
-  derivatives, nothing beyond. It lies outside the four-direction span of the covariant scalars on that class. The
-  same instrument returns a minimally coupled scalar's $R^2/72$ exactly; the free transverse-traceless tower, two
-  scalar towers less eight modes per level, returns twice that plus a foliation term carried by the eight, and the
-  static $15/4$ is $-1/4$ from the scalar towers and $4$ from the eight. So the coefficient belongs to an invariant
-  of the foliation; which one needs the tower's own shear. Receipt
-  `P10_on_a_scale_factor_that_varies_the_tower_logarithms_are_not_covariant_so_the_dimension_six_coefficient_belongs_to_an_invariant_of_the_foliation`.
-  `P10` (the naming paragraph, the structural remark on the logarithm's counterterm, the rank-sequence paragraph and
-  §lock's close), `P7` `frontier:quantum` and `P18` (§frontier, its discharge, its table) carry it; `PO-89` (b) is
-  restated as work on the shear.
+- `PO-89` part (b), the invariant the dimension-six coefficient belongs to. **Worked (r7587, corrected r7591).** On a
+  scale factor that varies, where the covariant dimension-six scalars separate, the same-level logarithm is computed by
+  expanding the cubic's three-propagator integral locally in derivatives of the scale factor (checked against the
+  propagator integrated numerically): $-15405/8192$, $-8313/4096$ and $14769/8192$ at zero, two and four derivatives,
+  nothing beyond. r7587 tested covariance without the scale factor's equation of motion and concluded the carrier was an
+  invariant of the foliation; that does not follow, because off the classical history an effective action is defined
+  only up to multiples of that equation, which a redefinition of the scale factor removes. Taken up to the equation
+  (r7591): the free tower at dimension four is covariant, the eight-modes-per-level piece included (a minimally
+  coupled scalar's $R^2/72$ recovered exactly as the control); the same-level cubic at dimension six is not, while a
+  control of covariant scalars plus a multiple of the equation passes. So the same-level part is not by itself the
+  coefficient of an invariant, and the coefficient is completed by the cubic joining three different levels and the
+  quartic on a varying scale factor, a new open part (d) of `PO-89`. Receipt
+  `P10_on_a_scale_factor_that_varies_the_free_towers_logarithm_is_covariant_up_to_the_scale_factors_equation_and_the_same_level_cubics_is_not_so_the_coefficient_needs_the_complete_second_order`.
+  `P10` states the dimension-six coefficient as the same-level part where it is computed, the naming paragraph,
+  the rank paragraph and §lock's close carry the corrected state; `P7` `frontier:quantum` and `P18` (§frontier, its
+  discharge, its table, the dissolution paragraph) with them.

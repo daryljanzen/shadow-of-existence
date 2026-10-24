@@ -24431,3 +24431,39 @@ PR's, and an 80-minute job whose cause is its own scope arithmetic will return t
 cost another 80 minutes to say it. The single standing-down comment on #528 now carries both jobs,
 edited rather than duplicated. And one thing to expect rather than read as new: this routing push
 re-triggers both, so both will cancel again for the same reason.*
+
+## ⛔ `r7577+cc66.8` — MERGED `r7591`, AND **THE MERGE RULE I HAD WRITTEN DOWN IS WRONG**: "KEEP BOTH" RESURRECTED A ROW `main` HAD DELIBERATELY DELETED
+
+**`main` advanced two commits (`r7591` ×2) and the PR would have conflicted again in the same file;
+merged and resolved — but the resolution caught a defect in the rule itself, and the rule is mine.**
+⌗ *The standing recipe, yours in the cycle prompt and mine in my own check-in prompt, reads:
+"`INDEX.md` conflicts are usually two seats adding rows at the same point — **keep both**, take
+`main`'s ordering." **That is right for two independent ADDITIONS and wrong the moment one side has
+DELETED a row**, and `r7591` is exactly that case: it is a CORRECTION of `r7587`/`r7589`, and it
+**renamed** the `P10` receipt —
+`…the_tower_logarithms_are_not_covariant_so_the_dimension_six_coefficient_belongs_to_an_invariant_of_the_foliation.py`
+became
+`…the_free_towers_logarithm_is_covariant_up_to_the_scale_factors_equation_and_the_same_level_cubics_is_not_so_the_coefficient_needs_the_complete_second_order.py`
+— and replaced that receipt's quote-pin row with one for the new name.* ⇒ **Taking "both sides" of
+that hunk resurrected the pin row for the DELETED name**, a row whose receipt no longer exists.
+⛭ **And that is not a cosmetic slip: it is precisely what `check_quote_pins` fails as STALE** — *"no
+longer reported, so the adjudication describes nothing"* — and the gate's own charter says the
+baseline **may only shrink**. *So a blind "keep both" would have landed a stale baseline row on `main`
+under cover of a merge, which is the quietest way there is to raise an exemption ceiling.*
+⇒ **THE RULE, CORRECTED, AND I WOULD RATHER STATE IT THAN HAVE IT INFERRED FROM A FIXED FILE: keep
+both seats' LIVE ADDITIONS, and take `main`'s DELETIONS.** A side that removed a row made a decision,
+and a merge is not the place to undo it. **And the check is a SET COMPARISON rather than a reading of
+the diff**, because the diff of an append-only file is exactly where this hides: after the repair the
+baseline carries **`main`'s 2734 rows with 0 missing**, plus **exactly one** of mine
+(`P14_the_leaf_measure_closes_completeness_by_a_different_theorem`), and the instrument reports
+**0 new and 0 stale keys**. ⌗ *My own check-in prompt carried the uncorrected rule, so it is rewritten
+with this one; and the same correction applies to any file two seats append to, not only this one.*
+**The rest of the merge is as `.5` and `.7`:** `receipts/INDEX.md` auto-merged with both seats' rows
+and no markers; the appendices **regenerated from the merged `INDEX`**, the diff against `origin/main`
+again exactly five added lines in `P14` and five in the corpus appendix; `matter_sector_paper.pdf`
+recompiled twice — 90 pages, zero undefined references; `main` did not touch
+`corpus/matter_sector_paper.tex`, so the receipt's paper-read pin still finds the near-wall law at
+source. Re-validated: the receipt green, and `check_figures_pinned`, `check_unread_figure`,
+`check_appendix_current`, `check_pin_board`, `check_prose_pins`, `check_exact_counts` green.
+**No result changes:** `.2`'s verdict, measurements and terminal clause stand, and the routed items of
+`.5` and `.6` stand as written.

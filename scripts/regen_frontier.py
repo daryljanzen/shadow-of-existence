@@ -167,8 +167,8 @@ EST = {
         'or by the discrepancy being shown the skys own. Terminates as a RESULT if the selective suppression is within '
         'cosmic variance at the level the sectors own Monte Carlo over 10^4 skies measures -- a measurement this '
         'programme can take, which is why it is data-gated in part rather than blocked. '),
-    'PO-89': ('the completion of the interacting towers definition, in two unlike parts',
-        2, 3, 3, 'the divergence on the towers own shear, which separates the foliations dimension-six invariants',
+    'PO-89': ('the completion of the interacting towers definition, in three unlike parts',
+        3, 3, 3, 'the cross-level cubic and the quartic on a varying scale factor, completing the dimension-six coefficient',
         'r7389: OPENED on PO-86s ruling of its item 7, and it corrects the second half of this seats own r7377 '
         'ruling. What stands: PO-23s strike is UPHELD -- its object was the ultraviolet definition of the mode sums '
         'and its own condition read a definition of the mode sums, or a demonstration that the obstruction is the '
@@ -187,11 +187,10 @@ EST = {
         'rank of one makes representatives indistinguishable rather than forced, with the count a lower bound so '
         'completing the basis can only deepen it. The closed forms the coefficient rests on are DERIVED from the '
         'recoupling algebra as identities in the level, at every odd level, with the orbit degeneracy and the '
-        'representative independence derived with them. And the invariant is narrowed to a kind: on a scale factor '
-        'that varies, where the covariant dimension-six scalars separate, the towers logarithm lies outside their span, '
-        'and the free towers does too at dimension four through the eight modes per level the transverse-traceless '
-        'count lacks against two scalar towers, so the carrier is an invariant of the foliation, which the isotropic '
-        'class cannot name. '
+        'representative independence derived with them. And the same-level coefficient is shown incomplete: on a '
+        'scale factor that varies the free towers logarithm is covariant up to the scale factors equation of motion '
+        'while the same-level cubics is not, so the cross-level cubic and the quartic complete the order before the '
+        'invariant can be read. '
         'THIRD IN THREE REVISIONS after PO-87 and PO-88: every one a correct strike with the papers item lying beyond '
         'it, and three is where it stops being a coincidence -- the registers rows answered narrower questions than '
         'the papers state, as a habit rather than an accident, and this phases real product is the rows nobody opened. '
