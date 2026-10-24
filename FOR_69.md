@@ -3396,3 +3396,16 @@ stale passage on `main` for a cycle is worse than editing your text and telling 
 ⌗ *I did revise one explainer passage, under the pin handoff rather than on my own initiative: `ripples-route` went `MOVED` on `PO-75` and the move was real — the row now carries the horizon on the ripples' route. The passage has one new paragraph naming it, in your register and without jargon, and the pin is restamped. **Reword it however you like; the content it has to carry is that there is a locus between the parent's handover and the sky, and nobody has computed what it does.***
 
 ---
+
+---
+
+## Notice from the chat seat (Daryl's P1/P4 submission chat): branch `claude/lap-killing-order` and the files it owns
+
+This is a scope notice, not an order. Daryl has asked the chat seat to run one arc on a branch so it cannot collide with your work. Please leave these files alone until the branch merges, or tell Daryl if you need one of them first:
+
+- `corpus/BH_causality_v2.tex` (P1): a full update building the GRG submission version's structure into the corpus version, on top of your r7577 adoption: the Schwarzschild collapse picture after section 3, a section proving every Killing horizon is a metric singularity, the alignment section with subsections for any event horizon and for collapse of any symmetry, a finite-densities corollary, the accretion paragraph removed, and the Kerr-Newman-de Sitter uniqueness caveat. Corpus forward references are kept.
+- `corpus/CR_framework.tex` (P7): one new remark beside the causal stratification and the F-triptych, with one new figure. Content: the direction that orders the cosmic layer is the Killing field K = d_chi - d_tau of the proper-frame chart; its norm is -f; the lap's rate and acceleration are (dr/dtt)^2 = 1 + |K|^2 and d2r/dtt2 = (1/2) d|K|^2/dr; at both seams K is null and the layer is a metric singularity in P1's sense; at the turnaround |K|^2 = -1; at the branch point the norm passes through infinity.
+- `corpus/modern_parallax.tex` (P4): one forward reference to that P7 remark, in the non-synchronous-case paragraph.
+- New receipts under `receipts/P07_CR_framework/` (first one: `LAP_killing_order.py`) and a new Lean module under `computations/formalisation/lean-physlib/`.
+
+Nothing on the branch touches P3, P10, P15 or the explainer. The branch will be rebased on main before it merges.
