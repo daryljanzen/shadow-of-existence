@@ -10,8 +10,8 @@ Hawking/Bogoliubov as an absent horizon effect."
 ** ⓵ THE CLAIM, AND IT IS PRECISE. **  P7: "with no completed horizon there is no background on which
 the Bogoliubov mode-mixing yielding an exactly thermal Hawking flux can be computed, so ** the thermal
 endpoint the paradox must reconcile is itself absent as a horizon effect, ordinary local particle
-production untouched **."  And P1: "** the globally completed horizon on which the standard black-hole
-problems rest is ... never physically realised **", because the densities "never form at any finite
+production untouched **."  And P1: "** the completed horizon on which the standard problems of black-hole
+physics rest is therefore never realised in the exterior of a collapsing body **", because the densities "never form at any finite
 exterior time".
 
   ⌗ ** THE ARGUMENT TURNS ON COMPLETION IN FINITE EXTERIOR TIME, NOT ON HORIZONS BEING CHART
@@ -115,9 +115,10 @@ def main():
     check('and "the thermal endpoint the paradox must reconcile is itself absent as a horizon effect, '
           'ordinary local particle production untouched"',
           'absent as a horizon effect, ordinary local particle production untouched' in p7)
-    check('P1: the globally completed horizon "is ... never physically realised", the densities '
-          '"never form at any finite exterior time"',
-          'never physically realised' in p1 and 'never form at any finite exterior time' in p1)
+    check('P1: the completed horizon "is therefore never realised in the exterior of a collapsing body", '
+          'the densities "never form at any finite exterior time"',
+          'never realised in the exterior of a collapsing body' in p1
+          and 'never form at any finite exterior time' in p1)
     n_comp = len(re.findall('completed horizon', allp, re.I))
     n_fin = len(re.findall('finite exterior', allp, re.I))
     # ** MEASURED PROPERLY.  "chart artefact" is NOT zero across the corpus -- it occurs twice, and in

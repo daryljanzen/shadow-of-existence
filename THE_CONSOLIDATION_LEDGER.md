@@ -919,3 +919,30 @@ standing by, no formalisation row being open.
   `P10` states the dimension-six coefficient as the same-level part where it is computed, the naming paragraph,
   the rank paragraph and §lock's close carry the corrected state; `P7` `frontier:quantum` and `P18` (§frontier, its
   discharge, its table, the dissolution paragraph) with them.
+
+## The lap's Killing order (chat seat, branch `claude/lap-killing-order`)
+
+- **How the event horizon's metric-singular structure evolves around the lap. Done.** The question was where the
+  affine order along a horizon generator goes as the lap runs back seam, turnaround, lift, branch point, front seam.
+  In `P7`'s proper-frame chart $K=\partial_\chi-\partial_\tau$ is Killing, lies in every layer $\tilde\tau=$ const, is
+  the static field $\pm\partial_t$ (isometry algebra $\mathbb{R}\oplus\mathfrak{so}(3)$ for $M\neq0$), and has
+  $|K|^2=-f$. The stratification's two characters are its sign and its side of $-1$; the causal triple
+  $1-f\in\{+1,0,-1\}$ is $|K|^2\in\{0,-1,-2\}$; the branch point is $-\infty\to+\infty$. At each seam the layer is a
+  Killing horizon of $K$, so `P1`'s metric singularity, and the generator's order is at once the worldlines' order in
+  the layer and their proper-time order; $\kappa=3\sqrt3/4\alpha$ at the back seam and $0$ at the front, where the
+  Killing parameter is affine, which is what `thm:null-boundary` (iii) needs at the occurrence. Receipt
+  `LAP_killing_order` (sympy); the closed-form core is machine-checked in Lean, `ShadowFormal.LapKilling`, fifteen
+  theorems on the standard axioms only. `P7` carries it as `rem:killingorder` with `fig:F-killing`.
+- **`P1` builds in the GRG submission's structure.** The Schwarzschild picture, then `sec:killing` (lemma, rigidity
+  corollary, the standard families), then `sec:alignment` in three subsections (any event horizon; collapse of any
+  symmetry; the Schwarzschild exterior explicitly), the standard problems and a conclusion. The accretion paragraph is
+  gone and "auxiliary completed geometry" is "maximally extended geometry" in `P1` and in `P7`'s two echoes. The
+  Kerr--Newman--de~Sitter caveat now cites Hintz--Vasy for the stability of slowly rotating Kerr--de~Sitter, leaving
+  uniqueness in that family as the open question of mathematical relativity it is. `P1` points forward to
+  `rem:killingorder` without leaning on it.
+- **`P4` carries the non-synchronous qualification** from the JCAP version, with the forward pointer that this case
+  is `P7`'s cosmology. Non-load-bearing, stated so.
+- Instruments moved with it: the dependency matrix in `P7` and the HTML (P1->P7, P4->P7, P7->P1 each +1; a stale
+  P4->P5 edge label of 8 corrected to the matrix's 7), the receipt appendices, the open-reference baseline (four `P1`
+  sites re-keyed under the new sections, verdicts unchanged), one stale pin into `P1` in
+  `L204_physics_reach/P2_the_corpus_never_mentions_unruh.py`, and the `P1`, `P4`, `P7` HTML chapters.
