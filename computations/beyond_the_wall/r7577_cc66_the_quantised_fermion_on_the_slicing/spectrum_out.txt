@@ -1,0 +1,283 @@
+r7577+cc66 -- PO-95: completeness in the LEAF's own measure, and the matching at the wall.
+
+Everything numeric printed here is built from f(r) and the superpotential written in this file.
+No spectral result is quoted: the horizons, the leaf length, the endpoint classification, the
+eigenvalues and the matching are all computed, so a reader who distrusts a number can distrust
+the metric instead.
+
+WHAT IS NOT THIS FILE'S.  receipts/L221_the_bridge carried the TORTOISE-measure half under PO-11:
+B25 (the scattering object exists), B26 (the spectrum computed: transmission 0.020 to 0.9997,
+unitarity to six figures, V_+ peaking 1.96307 at r=0.30385 on M=0.12, alpha=1), B27 (completeness
+closes, by KATO-RELLICH on the tortoise line), B46 (one matching not two: the inner horizon at
+infinite tortoise distance, the wall at finite), B48 (the field is Dirac so the matching is
+determined), B67 (the analytic sqrt-f operator call).  ** None of that is reported here as mine. **
+B26's barrier is reproduced below only as CONTROL 1.
+
+THE OPERATOR.  P14 sec:chirality: the massless radial Dirac problem separates with superpotential
+W = lambda*sqrt(f)/r in the tortoise variable, and -- "read instead against the frame derivative
+sqrt(f) d/dr the same operator carries W = lambda/r, the two being one operator written on two
+derivatives".  Since d/dl = sqrt(|f|) d/dr, the LEAF-variable operator is the second form:
+
+        H = -i sigma_x d/dl + m(l) sigma_z,      m = lambda / r(l),
+
+on the closed bead, with dl = dr/sqrt(|f|) and f = 1 - 2M/r - r^2/alpha^2.
+
+==============================================================================
+ (1)  THE MEMBER, ITS HORIZONS, AND THE LEAF LENGTH          [CONTROL 3]
+==============================================================================
+    positive roots of r*f=0:  r_b = 0.256968   r_c = 0.846439
+  [PASS] the member is undercritical (two distinct positive horizons)   ->  gap 0.589471
+    leaf length, static region  r_b..r_c : 1.767055
+    leaf length, inner region    0..r_b  : 0.439899
+  [PASS] the static region has FINITE leaf length (horizons at finite distance)   ->  1.767055
+  [PASS] the inner region 0..r_b has FINITE leaf length (r=0 integrable)   ->  0.439899
+    Nariai mass  M_N = alpha/(3*sqrt3) = 0.192450
+  [PASS] the static-region length at M=0.12 reproduces the receipt's own object   ->  1.767055
+    the BETWEEN-HORIZON length as the Nariai gap closes:
+        eps = 0.01      L_between = 1.8128 alpha
+        eps = 0.001     L_between = 1.8137 alpha
+        eps = 0.0001    L_between = 1.8138 alpha
+        eps = 1e-05     L_between = 1.8138 alpha
+  [PASS] CONTROL 3: the between-horizon leaf length CONVERGES at Nariai and reproduces P14_leaf_compactness 1.8138 alpha   ->  1.8138 vs 1.8138
+
+    ⌗ OBSERVED, and routed rather than claimed: the INNER segment 0..r_b does NOT converge
+      as the horizons merge -- there the interval does not close, so the double root leaves a
+      simple pole in dl at finite distance from r=0:
+        eps = 0.01      L_inner = 1.5617 alpha
+        eps = 0.0001    L_inner = 2.8935 alpha
+        eps = 1e-06     L_inner = 4.2228 alpha
+        eps = 1e-08     L_inner = 5.5520 alpha
+  [PASS] the inner segment GROWS as the gap closes (increments do not shrink), which is the log signature and is this file's observation, not its claim   ->  1.562 -> 5.552
+
+==============================================================================
+ (2)  CONTROL 1 -- B26's TORTOISE BARRIER, REPRODUCED
+==============================================================================
+
+  An instrument that reports "no continuum in the leaf measure" is worthless until it is shown
+  able to find the continuum that IS there.  B26 computed it on this member in the tortoise
+  measure: V_+ peaks at r = 0.30385 with height 1.96307.
+
+    V_+ peaks at r = 0.30378   height = 1.96307
+  [PASS] CONTROL 1: the barrier peak LOCATION reproduces B26's r = 0.30385   ->  0.30378
+  [PASS] CONTROL 1: the barrier HEIGHT reproduces B26's 1.96307   ->  1.96307
+    decay toward the inner horizon (B27's short-range hypothesis):
+        eps=0.001   x=-2.413  |V|=4.667e-02
+        eps=1e-05   x=-3.940  |V|=4.725e-04
+        eps=1e-07   x=-27.559  |V|=4.726e-06
+  [PASS] CONTROL 1: |V| decays toward the horizon in the tortoise variable
+
+==============================================================================
+ (3)  THE ENDPOINT CLASSIFICATION, IN THE LEAF MEASURE
+==============================================================================
+
+  The leaf operator's mass term is m = lambda/r.  What decides whether the operator needs a
+  boundary condition at a locus is whether m is INTEGRABLE in dl there -- an L^1 coefficient at a
+  finite endpoint is the regular / limit-circle case; a non-integrable one is limit-point.
+
+  [PASS] near the wall the leaf measure gives P14's own r^3 = (9/2) M l^2   ->  r(l) = 6**(2/3)*M**(1/3)*l**(2/3)/2
+    m(l) near the wall = 6**(1/3)*lambda/(3*M**(1/3)*l**(2/3))
+  [PASS] the near-wall exponent is l^(-2/3): m * l^(2/3) is independent of l   ->  m*l^(2/3) = 6**(1/3)*lambda/(3*M**(1/3))
+    int_0^1 m dl (M=lambda=1) = 6**(1/3)
+  [PASS] ** m is INTEGRABLE at the wall (l^-2/3 is L^1) on the leaf operator -- the one section (7) calls branch A -- so on that branch the wall is a LIMIT-CIRCLE / regular endpoint and NOT limit-point **   ->  6**(1/3)
+    at the horizons m -> lambda/r_h, finite: lambda/r_b = 3.891530, lambda/r_c = 1.181420
+  [PASS] the horizons are REGULAR in the leaf measure (m bounded, finite distance)
+
+==============================================================================
+ (4)  CONTROL 2 -- THE INTEGRABILITY CLASSIFIER, ON A KNOWN PAIR
+==============================================================================
+    l^(-1/2)  (L^1: limit-circle)          -> L^1 = True   (expected True)
+    l^(-2/3)  (L^1: limit-circle)          -> L^1 = True   (expected True)
+    l^(-1)    (NOT L^1: limit-point)       -> L^1 = False   (expected False)
+    l^(-3/2)  (NOT L^1: limit-point)       -> L^1 = False   (expected False)
+  [PASS] CONTROL 2: the classifier separates L^1 from non-L^1 correctly on all four
+
+==============================================================================
+ (5)  THE LEAF-MEASURE SPECTRUM: DISCRETE, AND THE WEYL SPACING
+==============================================================================
+
+  A first-order Dirac system on a FINITE interval with an L^1 mass term has discrete spectrum and
+  a complete orthonormal basis, and its eigenvalue counting obeys N(E) ~ L E / pi -- so the
+  spacing tends to pi/L.  That is the quantitative signature of a pure point spectrum, and it is
+  what is measured here rather than asserted.
+
+  [PASS] the staggered discretisation is Hermitian to machine precision   ->  max|H-H^dag| = 0.00e+00
+    leaf length of the static arc  L = 1.766630
+    first eight positive eigenvalues: [ 1.6015  3.1053  4.3592  5.8136  7.4551  9.1607 10.8922 12.6372]
+    mean spacing over the first 40   = 1.73719
+    pi / L                            = 1.77830
+  [PASS] the leaf-measure spectrum is DISCRETE (isolated eigenvalues, no zero gaps, none accumulating at a finite point)   ->  min gap 1.25387
+  [PASS] ** the Weyl spacing matches pi/L, the signature of a PURE POINT spectrum on a finite interval **   ->  1.73719 vs 1.77830
+  [PASS] and NO continuum branch is present: the count is a ladder, not a band   ->  spacing cv 0.060
+
+==============================================================================
+ (6)  THE MATCHING AT THE WALL, AND WHETHER THE GEOMETRY FIXES IT
+==============================================================================
+
+  P14_route_or_point: a crossing of the wall is a half-loop in l sending r -> omega r exactly,
+  omega = exp(2 pi i / 3), so a mode transported across returns multiplied by omega^(-lambda).
+
+  [PASS] omega is a primitive cube root of unity   ->  omega^3 = 1
+        lambda = 1:  omega^(-lambda) = -1/2 - sqrt(3)*I/2   trivial = False   (lambda mod 3 = 1)
+        lambda = 2:  omega^(-lambda) = -1/2 + sqrt(3)*I/2   trivial = False   (lambda mod 3 = 2)
+        lambda = 3:  omega^(-lambda) = 1   trivial = True   (lambda mod 3 = 0)
+        lambda = 4:  omega^(-lambda) = -1/2 - sqrt(3)*I/2   trivial = False   (lambda mod 3 = 1)
+        lambda = 6:  omega^(-lambda) = 1   trivial = True   (lambda mod 3 = 0)
+  [PASS] the monodromy is trivial exactly on lambda = 0 mod 3, which is P14's own dichotomy
+
+    ** THE BEAD IS A CLOSED CURVE, SO EACH WALL IS AN INTERIOR LOCUS. **  P14 sec:chirality:
+    the curve "runs forward through the seam and backward through r=0 as one closed object ...
+    r=0 being a branch point the field crosses smoothly, not a barrier".  The horizons are
+    TURNING points at finite leaf distance (P14_leaf_compactness), so the closed leaf has no
+    endpoint anywhere: the only candidate loci for a condition are the three walls, and they are
+    interior.
+
+    ⌗ ** AND THE NOTE SITS AT THE LINE THAT CAUSED IT.  This section first ended "the only datum a
+    crossing carries is the monodromy phase, and the geometry supplies it."  That sentence is wrong
+    twice over.  (i) The omega^(-lambda) phase is read off psi ~ r^(-lambda), which follows from ONE
+    of the pairings the corpus disputes -- section (7).  (ii) "No boundary" does not by itself
+    remove a freedom: an interior LIMIT-CIRCLE point is exactly a locus at which a transmission
+    condition can be chosen, which is what L-265 opened.  ** What actually removes it is measured in
+    section (8), and it is not the monodromy. ** The check below therefore carries only the
+    geometric fact it can carry. **
+
+  [PASS] each arc of the leaf has FINITE length, so the closed leaf is a finite sum of finite arcs and compactness does not depend on the itinerary   ->  0.4399 + 1.7671 per pass; the lap count is P3's itinerary and not this file's, and no claim below uses it
+
+==============================================================================
+ (7)  THE OPERATOR FORK, CARRIED ON BOTH BRANCHES AND NOT ADJUDICATED HERE
+==============================================================================
+
+  ** THIS SECTION EXISTS BECAUSE THE SOURCE QUESTION, RUN AGAIN AT THE WRITE-UP, FOUND THREE LINES
+  THE PRE-REGISTRATION HAD MISSED. **  The wall mode's near-throat exponent is DISPUTED in the
+  corpus's own record and the dispute has turned over three times: L-264/K1 and L-275/U1 read
+  LIMIT-POINT from psi ~ r^(-lambda); PO-22/W2 (L-246) and L-265/L1 read LIMIT-CIRCLE from
+  psi'/psi = lambda/(r sqrt f); L-276/V1 reconciled to limit-circle at r3319 and was then WITHDRAWN
+  at r3339 back to limit-point.  P14 sec:chirality itself flags the exponent as the one thing that
+  turns on which pairing is written: ** "What does turn on it is the near-throat exponent, which is
+  taken up where the index is read." **
+
+  ** SO THE HONEST MOVE IS NOT TO ADJUDICATE IT INSIDE A ROW ABOUT COMPLETENESS. **  Both branches
+  are carried here, and section (8) shows the row's two halves answer the SAME on each -- so the
+  row does not hang on the dispute, and the dispute is routed rather than absorbed.
+
+  [PASS] the FRAME pairing and the TORTOISE pairing force the SAME logarithmic derivative -- one operator written on two derivatives, which is B60 and is not this file's   ->  psi'/psi = lambda/(r*sqrt(f(r)))
+  [PASS] and only the MIXED pairing drops f entirely, which is the step PO-22 struck   ->  psi'/psi = lambda/r
+    branch A  (frame = tortoise):  int (psi'/psi) dr = sqrt(2)*lambda*sqrt(r)/sqrt(M)
+    branch B  (mixed):             int (psi'/psi) dr = lambda*log(r)
+  [PASS] branch A's exponent is BOUNDED at the wall (it is O(sqrt r), not a logarithm), so |psi| -> const on BOTH solutions and both are L^2 at finite distance: LIMIT-CIRCLE, which is L-265's verdict and not this file's   ->  sqrt(2)*lambda*sqrt(r)/sqrt(M) -> 0
+  [PASS] branch B's exponent IS a logarithm, so psi ~ r^(+/-lambda)   ->  lambda*log(r)
+  [PASS] branch B is L^2 at the wall only inside |lambda| < 3/4, and no attained lambda lies there, so branch B is LIMIT-POINT on every mode of the tower -- which is K1's verdict and not this file's   ->  window s < 3/4, attained [1, 2, 3]...
+  [PASS] CONTROL 4: at M=0 the throat has f(0)=1, the two pairings coincide and r^(+/-lambda) IS the right exponent -- so the discriminator is f blowing up at the wall and not the algebra style   ->  f(0)=1  =>  both give lambda/r
+
+    WHERE EACH BRANCH LIVES, so a reader can go to the source rather than to this summary:
+      branch A  B60 (one operator, the fork does not exist) | W2 / PO-22 | L-265 / L1 | and P14
+                sec:chirality's own text, which carries psi'/psi = lambda/(r sqrt f) today
+      branch B  S3 | B67 | K1 / L-264 | U1 / L-275 | L-276's withdrawal note at r3339
+    ** AND receipts/INDEX.md's row for L-276 still reads "LIMIT-CIRCLE STANDS" (written r3319),
+    which the r3339 withdrawal in the receipt's own head reverses.  That incoherence is 69's and is
+    named in the reply, not repaired here: the instruments and the registers stay frozen. **
+
+
+==============================================================================
+ (8)  NO FREE PARAMETER AT THE WALL -- ON EITHER BRANCH, AND MEASURED
+==============================================================================
+
+  The row's two halves need one thing from the wall: that the crossing be DETERMINED, so that the
+  mode set is fixed and completeness can be asserted of it.  A free self-adjoint-extension parameter
+  would defeat that -- it would make a family of mode sets rather than one.
+
+  ** ON BRANCH B THERE IS NOTHING TO SETTLE: ** limit-point at the wall means the operator is
+  essentially self-adjoint there and no condition exists to be chosen (K1's own sentence).
+
+  ** ON BRANCH A THE QUESTION IS REAL, AND IT IS THE ONE L-265 LEFT OPEN: ** "the open item is which
+  self-adjoint extension the geometry selects."  Limit-circle AT AN ENDPOINT means a condition must
+  be chosen.  But r=0 is not an endpoint of this domain -- it is a crossing of one closed curve.  At
+  an INTERIOR point what decides is whether the first-order system's coefficient matrix is L^1
+  there: if it is, the solution continues absolutely continuously and uniquely (Caratheodory), and
+  the transfer matrix across a shrinking window tends to the IDENTITY.  Then there is no family to
+  choose from, and the datum the geometry supplies is the continuation itself.
+
+  [PASS] the closed form for int m dl at exponent 0.6667 agrees with quadrature, so the dichotomy below is not my integrator's   ->  0.756860 vs 0.756860
+  [PASS] the closed form for int m dl at exponent 1.0000 agrees with quadrature, so the dichotomy below is not my integrator's   ->  11.310395 vs 11.310395
+  [PASS] the closed form for int m dl at exponent 1.3333 agrees with quadrature, so the dichotomy below is not my integrator's   ->  351.303390 vs 351.303390
+    the window transfer matrix across |l| < eps, both halves, on the leaf coefficient m = lambda/r:
+        eps = 0.01      ||T - I|| = 1.017e+00   Phi = int m dl = 1.587e+00
+        eps = 0.0001    ||T - I|| = 3.354e-01   Phi = int m dl = 3.420e-01
+        eps = 1e-06     ||T - I|| = 7.361e-02   Phi = int m dl = 7.368e-02
+        eps = 1e-08     ||T - I|| = 1.587e-02   Phi = int m dl = 1.587e-02
+        eps = 1e-10     ||T - I|| = 3.420e-03   Phi = int m dl = 3.420e-03
+        eps = 1e-12     ||T - I|| = 7.368e-04   Phi = int m dl = 7.368e-04
+  [PASS] ** the transfer matrix across the wall tends to the IDENTITY as the window shrinks, monotonically and over six decades, so the continuation is unique and no transmission parameter is free **   ->  1.02e+00 -> 7.37e-04
+  [PASS] and it tends to it at the rate the L^1 norm sets, eps^(1/3), rather than at an accidental one   ->  measured exponent 0.3323 vs 1/3
+  [PASS] and the measured deviation IS the analytic Gronwall quantity, so the integrator is reporting the coefficient and not itself   ->  7.368e-04 vs Phi = 7.368e-04
+  [PASS] the verdict is independent of the spectral parameter E, as it must be if it is the coefficient's integrability that decides   ->  E = 0, 5, 50  ->  7.361e-02, 7.362e-02, 7.371e-02
+
+    CONTROL 5 -- the same question on a NON-L^1 coefficient, which must NOT settle.  If the window
+    transfer tended to the identity for every exponent, the convergence above would measure my
+    machinery and not this operator.  ⌗ ** The note sits at the line that caused it: the first
+    version integrated the controls directly and returned nan from overflow, and a nan is not a
+    measurement.  The exact E=0 form above is used instead, with the inner cutoff shrinking at a
+    FIXED outer edge -- which is the honest shape of the question, since for a non-L^1 coefficient
+    the transfer across the singularity does not exist at all. **
+
+        m ~ l^(-0.6667):  delta=0.0001 Phi=6.227e-01 ||T-I||=0.583  delta=1e-08  Phi=7.858e-01 ||T-I||=0.707  delta=1e-12  Phi=7.933e-01 ||T-I||=0.713  delta=1e-16  Phi=7.937e-01 ||T-I||=0.713
+        m ~ l^(-1.0000):  delta=0.0001 Phi=5.655e+00 ||T-I||=0.588  delta=1e-08  Phi=1.697e+01 ||T-I||=1.308  delta=1e-12  Phi=2.828e+01 ||T-I||=2.000  delta=1e-16  Phi=3.959e+01 ||T-I||=1.311
+        m ~ l^(-1.3333):  delta=0.0001 Phi=6.227e+01 ||T-I||=0.533  delta=1e-08  Phi=1.693e+03 ||T-I||=1.904  delta=1e-12  Phi=3.682e+04 ||T-I||=1.821  delta=1e-16  Phi=7.937e+05 ||T-I||=1.635
+  [PASS] CONTROL 5: on our exponent 2/3 the integral CONVERGES as the cutoff shrinks -- the increments shrink to nothing -- which is why the crossing exists at all   ->  Phi 0.6227 -> 0.7937, last increment 3.51e-04
+  [PASS] CONTROL 5: on m ~ l^(-1.0000) (not L^1) the integral DIVERGES and the transfer does not settle   ->  Phi 5.66 -> 39.59, ||T-I|| spans 0.588..2.000
+  [PASS] CONTROL 5: on m ~ l^(-1.3333) (not L^1) the integral DIVERGES and the transfer does not settle   ->  Phi 62.27 -> 793683.43, ||T-I|| spans 0.533..1.904
+
+    AND THE CONDITION IS LOAD-BEARING RATHER THAN A GAUGE, which is the other half of the question:
+    if every transmission condition gave the same spectrum, "determined" would be an empty word.
+    Inserting a phase exp(i theta) at one point of a closed arc of length L shifts the Dirac ladder
+    to (2 pi n + theta)/L, so the spectrum MOVES with theta -- the datum does work, and the identity
+    is one value of it rather than the only available one.
+
+        theta = 0.0000:  first three levels [0.     3.5557 7.1115]
+        theta = 1.5708:  first three levels [0.8889 4.4447 8.0004]
+        theta = 3.1416:  first three levels [1.7779 5.3336 8.8893]
+  [PASS] the twisted ladder moves with theta, so the transmission datum is physical and the identity is a determination rather than a vacuum   ->  d(level)/d(theta) = 1/L = 0.5659
+
+==============================================================================
+ (9)  THE VERDICT, AND THE ORDER'S TERMINAL CLAUSE
+==============================================================================
+
+  ⒜ COMPLETENESS, IN THE LEAF'S OWN MEASURE.  The leaf is a closed curve of finite length (section
+     1, and P14_leaf_compactness's object reproduced as CONTROL 3); the mass coefficient is bounded
+     except at the three walls, where it is l^(-2/3) and L^1 (section 3, with CONTROL 2 on the
+     classifier); there is no endpoint anywhere and no free transmission parameter at any wall
+     (section 8, both branches).  So the operator is self-adjoint with COMPACT RESOLVENT: pure point
+     spectrum, a complete orthonormal eigenbasis, and Weyl counting N(E) ~ L E / pi -- which is
+     measured in section 5 as a spacing of 1.737 against pi/L = 1.778, with no continuum branch,
+     by an instrument shown in CONTROL 1 able to find the continuum B26 computed where it IS.
+     ** So the wall-bound modes ARE complete in the leaf measure -- together with nothing, because
+     in this measure there is no continuum to be complete with. **  The continuum is the TORTOISE
+     measure's, where B27 closed completeness by Kato-Rellich; L^2(dr_*) sits strictly inside
+     L^2(dl), and the two measures close completeness by DIFFERENT THEOREMS.
+
+  ⒝ THE MATCHING, ACROSS THE LOCUS THE GEOMETRY ALREADY CROSSES.  Determined, on both branches of
+     the operator dispute, and determined for different reasons: limit-point leaves nothing to
+     choose, and limit-circle at an INTERIOR point of a closed curve with an L^1 coefficient leaves
+     nothing to choose either, the transfer matrix across the wall being the identity in the limit.
+     Near the wall the mode is W2's exp(-i sqrt2 lambda sqrt r / sqrt M) on branch A and r^(-lambda)
+     on branch B; the matching is closed-form on both.
+
+  ** AND THE TERMINAL CLAUSE, WHICH THE ORDER WEIGHTS EQUALLY, HOLDS. **  Every theorem used above
+  is textbook: Caratheodory continuation for an L^1 first-order system, compact resolvent on a
+  compact domain, Weyl asymptotics.  Nothing in the closure is a mechanism the construction
+  supplies -- the closed domain through r=0 and the finite leaf length are READ OFF the fixed
+  background, which is what "a Dirac operator on a fixed background" means.  *** So PO-95's two
+  halves close, and the row ends as a STATED LIMIT: the completeness and the matching are standard
+  spectral theory of a Dirac operator on this background, and the sector is not supplied by them. ***
+
+  ⌗ ONE THING I EXPECTED TO BE THE CONSTRUCTION'S OWN AND IT IS NOT.  The pre-registration's ⒞ was
+  that the wall's omega^(-lambda) monodromy SELECTS the extension.  It does not, and it cannot: on
+  branch A there is no multiplicative monodromy to select with (the mode is a bounded phase in
+  sqrt r, and transporting it across the wall is not multiplication by a constant), and on branch B
+  there is no extension to select.  ** ⒞ is reported as a FAILURE and not rounded, as the
+  pre-registration committed. **
+
+  [PASS] ** THE VERDICT, inside the assert where it can fail: completeness closes in the leaf measure by compact resolvent, the wall matching is determined on both branches of the operator dispute, and both are standard spectral theory -- so PO-95 ends as a STATED LIMIT **
+
+==============================================================================
+ ALL CHECKS PASS
+==============================================================================

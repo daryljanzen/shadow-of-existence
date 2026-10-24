@@ -24221,3 +24221,89 @@ again for the same base-branch reason until the three runways are written forwar
 nothing of `PO-91` is open at this seat and `P2`/`P3` stay unedited per `r7489` ②; `#522` carries
 `.1`–`.3` and is `mergeable: true`, with only `fast` (yours, above) and the scope-budget
 cancellations of `.21` non-green. I take whatever is topmost in the channel.
+
+## ⚑ `r7577` — **`PO-95` ANSWERS, AND IT ANSWERS INTO THE TERMINAL CLAUSE.** Both halves close; the row ends as a stated limit; and ⒞, the one I priced lowest, FAILED
+
+**The order's two halves close and its terminal clause holds, so the honest verdict is the stated
+limit and not a discharge, and I am giving the reasoning so you can disagree with the reading rather
+than with the result.** ⒜ *Completeness, in the leaf's own measure:* **it holds, by a different
+theorem than the tortoise half's** — the leaf is a closed curve of finite length, the coefficient
+$\lambda/r$ is bounded except at the three walls where it is $\ell^{-2/3}$ and $L^1$
+($\int_0^1 m\,\dd\ell=6^{1/3}$), so the operator has **compact resolvent**: the measured spectrum is a
+ladder with the leaf's own Weyl spacing ($1.73719$ against $\pi/L=1.77830$, cv $0.060$, min gap
+$1.25387$) and **no continuum branch**, on an instrument first shown able to find the continuum that
+*is* there (`B26`'s barrier reproduced, $1.96307$ at $r=0.30378$ against its $0.30385$). ⇒ **So the
+row's own sentence — "the completeness of the wall-bound modes together with the continuum, shown in
+the leaf's own measure" — asks in that measure for an object that is not there:** the continuum is the
+**tortoise** measure's, where `B27` closed completeness by Kato–Rellich under `PO-11`, and
+$L^2(\dd r_*)\subset L^2(\dd\ell)$ strictly, so **the two measures close completeness by two different
+theorems and that pair is the answer, not the single one.** ⒝ *The matching across the locus the
+geometry already crosses:* **determined — and determined on BOTH branches of an operator dispute I
+deliberately did not settle inside this row.** ⌗ *And here is what the source question cost me, run a
+second time at the write-up against the **receipts** rather than the papers, which is `L-276`'s own
+stated rule: three more lines than my pre-registration had. `L-246`/`W2` (`PO-22`) already recomputed
+the wall mode on `B60`'s operator and got the near-throat exponent
+$\exp(-i\sqrt2\lambda\sqrt r/\sqrt M)$ — **so my ⒠ is right and the credit is `W2`'s, not mine**;
+`L-264`/`K1` read the branch point **limit-point**, `L-265`/`L1` inverted it to **limit-circle,
+deficiency $(1,1)$** and named the open item *"which self-adjoint extension the geometry selects"* —
+**so my ⒝ was not mine to predict either, and scores as* **not mine***, not as a hit.* What **is**
+mine is that **`L-265`'s open item is answered without choosing anything, and the row's answer is
+invariant under the dispute**: on the limit-point branch there is nothing to choose; on the
+limit-circle branch $r=0$ is an **interior** locus of one closed curve carrying an $L^1$ coefficient,
+so the crossing continues **absolutely continuously and uniquely** — measured as the window transfer
+matrix across $|\ell|<\varepsilon$ falling $1.02\to7.37\times10^{-4}$ over six decades at exponent
+$0.3323$ against the $1/3$ the $L^1$ norm sets, equal to the analytic Gronwall quantity to four
+figures and independent of $E$ ($0,5,50$), with the control that the same question on $\ell^{-1}$ and
+$\ell^{-4/3}$ **diverges and does not settle**. ⛔ **And ⒞ FAILED, reported as a failure and not
+rounded, as the pre-registration committed in advance:** I predicted the wall's $\omega^{-\lambda}$
+monodromy would *select* the extension, and **it does not and cannot** — on the limit-circle branch
+the mode is a bounded phase in $\sqrt r$ and transporting it across the wall is not multiplication by
+a constant, and on the limit-point branch there is no extension to select. ⌗ *Worse than a failed
+prediction, and recorded at the line that carried it: my first draft of that section ended "the only
+datum a crossing carries is the monodromy phase, and the geometry supplies it" — a confident
+over-reading twice over, since the $\omega^{-\lambda}$ phase is read off $\psi\sim r^{-\lambda}$,
+which is the pairing `PO-22` struck, and "no boundary" does not by itself remove a freedom, an
+interior limit-circle point being exactly a locus at which a condition **can** be chosen. The note
+now sits at that line and the check there carries only the geometric fact it can carry.* **⇒ THE
+TERMINAL CLAUSE, which your order weighted equally:** every theorem used is textbook — Carathéodory
+continuation for an $L^1$ first-order system, compact resolvent on a compact domain, Weyl asymptotics
+— and the closed domain through $r=0$ and the finite leaf length are **read off** the fixed
+background, which is what *"a Dirac operator on a fixed background"* means; **nothing in the closure
+is a mechanism the construction supplies**, and the one thing I expected to be the construction's own
+is the thing that failed. **So I say it as you asked it to be said: `PO-95`'s two halves close, and
+the row ends as a STATED LIMIT.** ⌗ *The register is not mine to rewrite — same line as `r7475` ③ and
+`r7489` ②: the computation is mine, the state of the row is yours.* **ROUTED, THREE THINGS, NONE
+ABSORBED.** ⛔ **① The operator dispute is incoherent in the corpus's own record and my row does not
+need it settled, which is why I carried both branches instead of adjudicating it:**
+`receipts/INDEX.md`'s row for `L-276` reads *"THE TWO BRANCH-POINT VERDICTS RECONCILED: LIMIT-CIRCLE
+STANDS"* (written r3319) while that receipt's **own head reads WITHDRAWN r3339** and reverts to
+limit-point, and `P14` sec:chirality currently carries $\psi'/\psi=\lambda/(r\sqrt f)$ — the
+limit-circle form — citing `W2`. Three records, two verdicts. ⌗ *Two observations inside it, offered
+as observations and not as a verdict: `L-276`'s withdrawal test substitutes candidate solutions into
+$\psi'=(\lambda/r)\psi$, which is the disputed pairing's **own** equation, so it returns $r^{+\lambda}$
+by construction; and `L-265`'s displayed exponent $-i\lambda r/2M$ pairs a $\dd/\dd r$ coefficient
+with $\dd\ell$, the same species of mismatch its own finding is about — its verdict is unaffected,
+both exponents being bounded.* **② The inner segment does not converge at Nariai:** as the horizons
+merge $\int_0^{r_b}\dd r/\sqrt{\lvert f\rvert}$ **grows** ($1.5617\to2.8935\to4.2228\to5.5520$ as
+$\varepsilon\to10^{-8}$), increments not shrinking, while `P14_leaf_compactness`'s **between-horizon**
+object converges to $1.8138\,\alpha$ — so compactness **at Nariai** rests on the itinerary, which is
+`P3`'s and not mine. **③ `r7577`'s new rule fires:** this result moves `P14` sec:chirality's own
+sentence that *"the quantised field, its mode completeness, and the join between the static region's
+continuum and the wall … remain open"*, and `P7`'s `frontier:fermion` with it — **please add the row
+to `computations/beyond_the_wall/r7577_69_the_census_refresh/items_keyed.tsv`** so
+`check_open_item_coherence` reads it again. **WHAT I TOUCHED:** the pre-registration, computation and
+walk under
+`computations/beyond_the_wall/r7577_cc66_the_quantised_fermion_on_the_slicing/` (40 checks, five
+controls, 0 failures); one receipt,
+`receipts/P14_matter_sector_paper/P14_the_leaf_measure_closes_completeness_by_a_different_theorem.py`
+(22 checks, 24 s); its `INDEX` row, appended at the **end** of the `P14` block on purpose so the
+appendix numbering appends rather than renumbering 160 labels; the two regenerated appendices,
+additive, five lines each; and `matter_sector_paper.pdf` recompiled twice, **90 pages, zero undefined
+references**. **No paper source, no register and no instrument is edited** — the instruments stay
+frozen per your order, and the one gate repair I would otherwise have reached for (the stale `L-276`
+`INDEX` row) is item ① above and is yours. ⚠ *One environment fact worth having: this container was
+re-provisioned and had lost its toolchain, so `numpy`, `sympy` and `mpmath` were reinstalled **at
+exactly `requirements-ci.txt`'s pins** (no pin moved) and a TeX toolchain was installed from scratch
+to recompile `P14` — `check_compile.py`'s link half is clean, and its compile half can now run here
+again.* **WHAT IS NEXT:** nothing of `PO-95` is open at this seat. I take whatever is topmost in the
+channel.
