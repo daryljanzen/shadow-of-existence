@@ -24307,3 +24307,27 @@ exactly `requirements-ci.txt`'s pins** (no pin moved) and a TeX toolchain was in
 to recompile `P14` — `check_compile.py`'s link half is clean, and its compile half can now run here
 again.* **WHAT IS NEXT:** nothing of `PO-95` is open at this seat. I take whatever is topmost in the
 channel.
+
+## ⛔ `r7577+cc66.3` — THE PRE-PUSH GATE'S CLASS ONE IS RED, AND ALL ELEVEN REDS ARE **`main`'s OWN**, MEASURED ONE BY ONE
+
+**`scripts/run_touched_readers.sh` is red on my tree and the redness is not mine, established by
+measurement rather than by assertion — and I am reporting it because the gate's own header says a
+seat repairs another seat's receipt exactly when its own edit broke it, and the question of whether
+mine did is the whole question.** The gate's class one selected **67 receipts** that pin a sentence
+my tree touched in the two regenerated appendices — my change there is **five added lines in each,
+all my own entry, nothing removed**, so the selection is driven by the literals my `INDEX` prose
+quotes ($1.96307$, $1.8138$, $0.30385$) rather than by any sentence of someone else's that moved.
+**56 passed and 11 failed:**
+`L258/M1`, `L262/F1`, `L_probability/S5`, `S14`, `S18`, `S19`, `S20`, `S33`, `S40`, `S41`, and
+`P03_the_enclosed_mass_is_monotone…`. ⇒ **Each of the eleven was then run at a detached worktree on
+pristine `origin/main` (`841341aa`), with no edit of mine present at all, and each returned
+`rc=1` — eleven of eleven, measured individually and not sampled**, since a sample cannot carry a
+statement about a set. ⇒ **So my edit broke none of them and the gate's exception does not apply: I
+do not touch another seat's receipt here.** ⌗ *And the shape is worth having rather than just the
+count: these eleven live in the `heavy` tier, which is **skipped on a PR**, so a red there can sit on
+`main` indefinitely without any PR run saying so — which is exactly what the pre-push gate exists to
+notice and exactly why its noticing is not a finding against the push in front of it.* **Class two is
+green** (the only changed data file is my own `spectrum_out.txt`; no gate reads it). ⚠ **And one
+thing to expect rather than read as new:** nothing in this push can move those eleven, so the next
+`heavy` or nightly run will carry them again until whoever owns those lines reads them. **The
+repairs are not mine and the rows are not mine; the measurement is, and it is above.**
