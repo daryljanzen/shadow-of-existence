@@ -172,8 +172,11 @@ P1 = open(os.path.join(CORPUS, 'BH_causality_v2.tex'), encoding='utf-8').read()
 WRITTEN = [
     ("the topic is named at all — it was at ZERO uses before this revision",
      r'trans-Planckian'),
-    ("the objection is placed on the Bogoliubov construction, which P1 does not perform",
-     r'targets the\s*\n?Bogoliubov construction, which is not carried out here'),
+    # r7577 (69): P1 adopted the GRG version's wording -- P1 now computes the finite-time flux on the
+    #   realised exterior, so the objection is placed on the mode-tracing behind the LATE-TIME flux,
+    #   which the causal argument does not use.  Same placement, the current sentence.
+    ("the objection is placed on the mode-tracing behind the late-time flux, which P1's argument does not use",
+     r'targets the\s*\n?mode-tracing behind the late-time flux, which the argument here does not use'),
     ("the local frequency and the delta^{-1/2} scaling are stated",
      r'omega_\{\\mathrm\{loc\}\}=\\omega_\{\\infty\}/\\sqrt\{f\}'),
     ("the finite-at-each-finite-time claim is made",

@@ -150,16 +150,23 @@ def main():
           and not _r7267().wall_is_odd(4))
 
     # ⓸ and P14 cites the other two
-    check('⓸ while P14\'s join sentence cites JanzenGeometricCore and JanzenBoundary',
-          'remain the undertaking the corpus names' in P['matter_sector_paper']
-          and 'JanzenBoundary' in P['matter_sector_paper'])
+    # ⛭ r7577 (69): DISCHARGED.  The citation this receipt found landing on two papers without the
+    #   continuation is gone: P14's join sentence now states the join open as work and cites the framework
+    #   paper, whose frontier carries it (frontier:fermion, register PO-95).  The check asserts the repair.
+    check('⓸ and P14\'s join sentence no longer cites the two papers that lack the continuation: it cites '
+          'the framework paper\'s frontier, which carries the join as work',
+          'remain the undertaking the corpus names' not in P['matter_sector_paper']
+          and ("the quantised field, its mode completeness, and the join between the static region's continuum "
+               "and the wall---which sit in different regions---remain open, and they are work rather than a "
+               "boundary, carried on the framework paper's frontier~\\cite{JanzenCRframework}")
+               in P['matter_sector_paper'])
 
     print()
     if FAILED:
         print(f'  {len(FAILED)} check(s) FAILED')
         return 1
-    print("  VERDICT: ** the continuation EXISTS, and P14's join sentence cites the two papers")
-    print("  without it. **")
+    print("  VERDICT: ** the continuation EXISTS, and P14's join sentence, which cited two papers")
+    print("  without it, now cites the framework paper's frontier, which carries the join (PO-95). **")
     print('  ⛔ ⓵ ** geometric_core and boundary carry NO horizon-crossing vocabulary. **  Their')
     print('     "continuation" hits are the SEAM — signature flips and the Wick rotation.  ** That')
     print('     continuation crosses a signature, not a horizon. **')

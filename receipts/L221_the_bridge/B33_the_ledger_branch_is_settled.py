@@ -124,7 +124,10 @@ def main():
     _n_ell = len(bare.findall(_bh))
     # the second arm: every `Planck` in the paper sits inside the Hawking/Unruh construction or the
     # trans-Planckian objection, which is what makes it a REPORT and not a commitment
-    _ATTR = re.compile(r'Planck spectrum|trans-Planckian|derivation|Jacobson|Unruh|Hawking|Bogoliubov')
+    # ⛭ r7577 (69): P1 adopted the GRG version's Hawking section, whose finite-time flux is "near-Planckian"
+    #   -- Hawking's flux at a finite retarded time, a report about the construction and not a length the
+    #   paper commits to; the term joins the attributing list.
+    _ATTR = re.compile(r'Planck spectrum|near-Planckian|trans-Planckian|derivation|Jacobson|Unruh|Hawking|Bogoliubov')
     _planck = [m.start() for m in re.finditer(r'Planck', _bh)]
     _unattributed = [i for i in _planck
                      if not _ATTR.search(_bh[max(0, i - 400):i + 400])]

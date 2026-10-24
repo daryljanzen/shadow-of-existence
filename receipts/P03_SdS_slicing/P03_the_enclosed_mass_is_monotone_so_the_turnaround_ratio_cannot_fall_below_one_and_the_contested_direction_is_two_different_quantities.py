@@ -118,10 +118,19 @@ head("A.  THE CONTEST, READ OUT OF THE ROW RATHER THAN RECALLED")
 
 CLAIM = ('the caustic route puts the turnaround-enclosed mass above the virial one, while the Local '
          'Volume flow route puts the mass inside the zero-velocity surface at about six tenths of it')
+# ⛭ r7577 (69): PO-50 was brought to one state at r7575 (commit 0e2320a9e), and the contest this receipt
+#   settled is now stated there as settled -- the correction has one sign.  The row's sentences that set
+#   the contest are read where the condensation left them: the register at that commit's parent, which
+#   is where the consolidation ledger points for the full prior row.
+import subprocess as _sp
+_prior = _sp.run(['git', 'show', '0e2320a9e^:THE_REGISTER.md'], cwd=ROOT, capture_output=True, text=True)
+PRIORTXT = ' '.join(_prior.stdout.split()) if _prior.returncode == 0 else ''
 gate("Ⓐ① the contest is quoted from `THE_REGISTER` and not from memory -- the row's own sentence is "
-     "present verbatim", CLAIM in REGTXT)
+     "present verbatim in the row as it stood before its r7575 condensation", CLAIM in PRIORTXT)
 gate("Ⓐ② and the row states the settling comes FIRST because its arithmetic runs through it, which is "
-     "why this is the step", "That disagreement is the first thing to settle" in REGTXT)
+     "why this is the step", "That disagreement is the first thing to settle" in PRIORTXT)
+gate("Ⓐ②ᵇ and the condensed row carries the settlement: the correction has one sign",
+     "THE CORRECTION HAS ONE SIGN" in REGTXT)
 gate("Ⓐ③ and the two fixed-overdensity pure numbers this receipt will re-derive are the ones the row "
      "banks", '0.737' in REGTXT and '0.632' in REGTXT)
 print("      ⌗ Nothing outside this file is quoted.  The caustic route's own mass ratio, as the row")

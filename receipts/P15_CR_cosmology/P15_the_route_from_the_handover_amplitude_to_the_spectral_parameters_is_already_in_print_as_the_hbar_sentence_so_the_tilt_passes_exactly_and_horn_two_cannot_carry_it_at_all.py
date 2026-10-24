@@ -272,7 +272,9 @@ gate("Ⓔ③ ⌗ AND THE CONTRAST IS THE SAME ALGEBRA AS `Ⓑ②` RATHER THAN A 
 head("F.  SO `PO-79` DISCHARGES ON HORN ⓵, AND WHAT STAYS OPEN STAYS OPEN")
 
 _UNALT = r"so amplitude and tilt cross unaltered while the collapse-leg acoustic phase does not"
-_FRONT = r"a modelling task awaiting a progenitor interior"
+# ⛭ r7579 (69): anchored on its own clause -- r7577 placed the throat's angular-momentum bound at the same
+#   modelling task, a second use of the phrase that is a pointer to this frontier, not a second frontier.
+_FRONT = r"not an argument awaiting more cleverness but a modelling task awaiting a progenitor interior"
 _DRIVE = r"the resonant Fourier magnitude of the potential's evolution, $|\tilde\Psi(\omega{=}1)|$"
 print(f"      the clause: {b15.count(_UNALT)}x;   the frontier: {b15.count(_FRONT)}x;   "
       f"the driving: {b15.count(_DRIVE)}x")

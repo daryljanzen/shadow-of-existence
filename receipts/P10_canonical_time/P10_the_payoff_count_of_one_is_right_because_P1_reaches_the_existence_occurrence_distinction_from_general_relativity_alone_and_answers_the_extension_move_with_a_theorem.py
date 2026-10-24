@@ -120,10 +120,13 @@ gate("Ⓐ⑥  and the proposition the order names quantifies over ANY smooth Cau
      " the exterior adapted to the observer, resting on global hyperbolicity and the horizon's"
      " causal definition -- read here from its own statement, with no foliation premise among its"
      " hypotheses",
-     P1.count('let $\\Theta:M\\to\\mathbb{R}$ be any smooth Cauchy temporal function of the'
-              ' exterior adapted to $O$') == 1
-     and P1.count('globally hyperbolic spacetime with future event horizon'
-                  ' $\\mathcal{H}^+=\\partial J^-(\\mathscr{I}^+)$') == 1)
+     # ⛭ r7579 (69): P1 adopted its GRG version at r7577 -- the exterior is now named $D$, its global
+     #   hyperbolicity is the hypothesis, and the identification with exterior time is a premise stated
+     #   in the section's prose, not among the proposition's hypotheses
+     P1.count('let $\\Theta:D\\to\\mathbb{R}$ be any smooth Cauchy temporal function of $D$'
+              ' adapted to $O$') == 1
+     and P1.count('future event horizon $\\mathcal{H}^+=\\partial J^-(\\mathscr{I}^+)$'
+                  ' whose exterior domain $D$ is globally hyperbolic') == 1)
 
 n_cosmic = len(re.findall(r'cosmic time', P1))
 gate("Ⓐ⑦  AND THE PHRASE THE ORDER WARNS AGAINST APPEARS IN `P1` ONCE AND NOT IN ANY HYPOTHESIS:"

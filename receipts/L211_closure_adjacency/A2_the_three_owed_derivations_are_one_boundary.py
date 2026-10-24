@@ -109,13 +109,17 @@ def main():
           _OWES in p15
           and 'Open: the derivation---as against the measurement---of $A_s$' not in _p15u
           and 'as against the measurement---of $A_s$, $n_s$, and the inherited datum' not in p15)
-    _HANDOVER = ('$n_s$ and $A_s$ are inherited, fixed by the progenitor collapse---the same '
-                 'handover that fixes $\\rho_r/\\rho_m$ and the light-element abundances---and not '
-                 'derived here')
-    check('and P15 itself joins the three: "$n_s$ and $A_s$ are inherited, fixed by the progenitor '
-          'collapse---the same handover that fixes $\\rho_r/\\rho_m$ and the light-element '
-          'abundances---and not derived here" -- asserted as the whole clause with both subjects '
-          'and the denial inside it',
+    # ⛭ r7577 (69), the census refresh: P15's clause named rho_r/rho_m as a datum the handover fixes,
+    #   against P17 sec:frontiers (the ratio is a clock reading on the observable leg, receipt
+    #   X1_the_ratio_is_a_clock_reading_not_a_carried_datum) and against P16's abstract.  The clause now
+    #   joins the spectrum with eta, the datum the handover does carry; this receipt's reading of the
+    #   three (dimensionless, so not from the substrate) is untouched, rho_r/rho_m now closed as no
+    #   handover datum at all.
+    _HANDOVER = ('$n_s$ and $A_s$ are inherited, fixed by the progenitor collapse and handed over at '
+                 'the branch point with $\\eta$---and not derived here')
+    check('and P15 itself joins them: "$n_s$ and $A_s$ are inherited, fixed by the progenitor collapse '
+          'and handed over at the branch point with $\\eta$---and not derived here" -- asserted as '
+          'the whole clause with both subjects and the denial inside it',
           _HANDOVER in p15)
 
     # all three are dimensionless

@@ -131,10 +131,16 @@ def main():
     #   Every other flagged label is unchanged, set for set.  A flagged result acquiring an explicit
     #   arrival path is the narrowing this receipt is about, not a change to it; the check keeps
     #   asserting the CURRENT number and the label that moved, so a further move fires here. **
-    check(f'routes 2+3 alone flag 19 (found {len(n23)}) -- 20 when last pinned; prop:nariai-fixed '
-          f'gained a declaration (\\eqref) at r6903',
-          len(n23) == 19
-          and ('groupoid_paper.tex', 'prop:nariai-fixed') not in n23)
+    # ⛭ r7577 (69): 19 -> 18, and the one that left is named.  BH_causality_v2.tex's
+    #   `prop:causal-alignment` adopted the GRG version's hypotheses -- an exterior domain "whose"
+    #   global hyperbolicity is assumed, an observer "whose causal past is the whole exterior" --
+    #   and route 2's word list catches "whose".  The proposition has its proof block either way, so
+    #   route 1 reads it as before; every other flagged label is unchanged, set for set.
+    check(f'routes 2+3 alone flag 18 (found {len(n23)}) -- 19 when last pinned; prop:nariai-fixed '
+          f'gained a declaration (\\eqref) at r6903 and P1 prop:causal-alignment an in-body clause at r7577',
+          len(n23) == 18
+          and ('groupoid_paper.tex', 'prop:nariai-fixed') not in n23
+          and ('BH_causality_v2.tex', 'prop:causal-alignment') not in n23)
 
     _, n123 = sweep({'proof', 'inbody', 'decl'})
     # ⛭ r4070: THE COUNT MOVED 7 -> 6 UNDER 61's REACH PASSES, AND THE THESIS DID NOT.

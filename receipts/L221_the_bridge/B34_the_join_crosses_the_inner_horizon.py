@@ -171,10 +171,14 @@ def main():
           f(0.01) < 0 and RB > 0)
 
     # ⓷ and P14 names the consequence
-    check('⛭ ⓷ and P14 names it as an undertaking in other papers: the join "remains the undertaking '
-          'the corpus names", citing the geometric-core and boundary papers',
-          'remain the undertaking the corpus names' in p14
-          and 'JanzenBoundary' in p14)
+    # ⛭ r7577 (69): P14's sentence pointed to the geometric-core and boundary papers as naming the
+    #   undertaking, and neither does (B35's finding).  It now states the join open as work, carried on
+    #   P7's frontier (frontier:fermion) and in the register at PO-95 -- the consequence this check names.
+    check('⛭ ⓷ and P14 names the consequence as open work: the join and the quantised field "remain open, '
+          'and they are work rather than a boundary, carried on the framework paper\'s frontier"',
+          ("the quantised field, its mode completeness, and the join between the static region's continuum "
+           "and the wall---which sit in different regions---remain open, and they are work rather than a "
+           "boundary, carried on the framework paper's frontier~\\cite{JanzenCRframework}") in p14)
 
     print()
     if FAILED:
