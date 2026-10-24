@@ -959,3 +959,14 @@ standing by, no formalisation row being open.
   P4->P5 edge label of 8 corrected to the matrix's 7), the receipt appendices, the open-reference baseline (four `P1`
   sites re-keyed under the new sections, verdicts unchanged), one stale pin into `P1` in
   `L204_physics_reach/P2_the_corpus_never_mentions_unruh.py`, and the `P1`, `P4`, `P7` HTML chapters.
+- The back-reaction criterion's volume (r7058, used by P10 §lock). **Corrected (r7599).** r7058 found the criterion
+  $G/\text{target}<18V=36\pi^2$ on the ground that r7034's level values carry no volume, since its quadratic
+  level sum rebuilds without one, while a triple product of orthonormal harmonics carries $V^{-1/2}$. That does not
+  follow: r7034's level tensors are pointwise sums normalised to the degeneracy, which for orthonormal harmonics is
+  the degeneracy over the volume, so a quadratic term (one level sum integrated once) carries no volume and the
+  quartic (two at a point, integrated once) carries $1/V$, exactly as the cubic's square does. The volume cancels:
+  the criterion is $G/\text{target}<18$. r7060's level-to-two-mode factor $88\pi^2/49$ is $(44/49)V$, the trace of
+  the missing $1/V$. The six ratios stay below 18 (the largest, $175/22$, by $396/175$), so the sign stays positive at
+  every odd level computed, by a margin $2\pi^2$ smaller than stated; the net a level contributes is bounded below
+  by $221/396$ of its quartic energy, not $39/40$; the quartic energy per level is in units of $\kappa\hbar^2/(a^3V)$.
+  Receipt `P10_the_quartic_carries_the_inverse_volume_as_the_cubics_square_does_so_the_criterion_is_eighteen_and_not_eighteen_v`. `P10` §lock (the criterion, the residue, the summand) carries the corrected state.
