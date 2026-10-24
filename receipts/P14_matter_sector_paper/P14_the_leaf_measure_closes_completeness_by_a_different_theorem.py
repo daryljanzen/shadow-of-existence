@@ -53,6 +53,8 @@ LEVEL: L1 READING of a fixed background.  The theorems are textbook; what the co
 ORIGIN: computations/beyond_the_wall/r7577_cc66_the_quantised_fermion_on_the_slicing/spectrum.py --
   edit the origin, not this copy.
 """
+import pathlib
+
 import numpy as np
 import sympy as sp
 
@@ -104,7 +106,18 @@ print('  (2)  THE WALL COEFFICIENT -- l^(-2/3), and L^1')
 lS, MS, lamS = sp.symbols('ell M lambda', positive=True)
 r_of_l = ((sp.Rational(9, 2)*MS*lS**2))**sp.Rational(1, 3)
 m_of_l = sp.simplify(lamS/r_of_l)
-check("the near-wall law is P14's own r^3 = (9/2) M l^2", sp.simplify(r_of_l**3 - sp.Rational(9, 2)*MS*lS**2) == 0)
+# ** THE ATTRIBUTION IS READ FROM THE PAPER AND NOT RECALLED, and the note sits at the line that
+# caused it: the first version's label said "P14's own r^3 = (9/2) M l^2" while nothing here opened
+# P14, so the check stayed green on any sentence the paper might move.  check_unread_figure named it.
+# The repair is to READ it, which is the stronger of the two remedies that gate offers. **
+P14_SRC = pathlib.Path(__file__).resolve().parents[2] / 'corpus' / 'matter_sector_paper.tex'
+src = P14_SRC.read_text(encoding='utf-8')
+LAW = r'r^{3}=\tfrac92 M\ell^{2}'
+check("the near-wall law is READ from P14 sec:chirality's own sentence rather than recalled -- the "
+      f'paper prints {LAW}', LAW in src,
+      f'found in {P14_SRC.name}' if LAW in src else 'NOT FOUND -- the paper moved it')
+check("and this file's own symbolic r(l) satisfies exactly the law the paper prints",
+      sp.simplify(r_of_l**3 - sp.Rational(9, 2)*MS*lS**2) == 0)
 check('and the coefficient is exactly l^(-2/3): m * l^(2/3) carries no l',
       sp.simplify(sp.diff(sp.simplify(m_of_l*lS**sp.Rational(2, 3)), lS)) == 0,
       f'm l^(2/3) = {sp.simplify(m_of_l*lS**sp.Rational(2,3))}')
@@ -232,6 +245,41 @@ check('CONTROL: on m ~ 1/l and m ~ l^(-4/3) the window integral DIVERGES as the 
       'this operator', all(v[1] > 4*v[0] for _, v in nonl1),
       f'1/l: {nonl1[0][1][0]:.2f} -> {nonl1[0][1][1]:.2f};  l^(-4/3): {nonl1[1][1][0]:.1f} -> {nonl1[1][1][1]:.1f}')
 
+# ------------------------------- (5b) the figures the published row prints, PINNED
+print()
+print('  (5b)  THE PUBLISHED FIGURES, PINNED -- so a drift breaks this receipt')
+for _ln in [
+    '',
+    '  ** WHY THIS BLOCK EXISTS, written at the line that caused it. **  check_figures_pinned named',
+    '  five figures the INDEX row prints beside this receipt that the receipt did not PIN: it asserted',
+    '  a RELATIVE agreement between the measured spacing and pi/L, which stays green if both drift',
+    '  together, and it printed the transfer ladder and its exponent without pinning either.',
+    '  ** Each is pinned below at the precision the published row quotes, so the row cannot outlive',
+    '  the number. **',
+    '',
+]:
+    print(_ln)
+# ⌗ ** the note sits at the line that caused it: these pins were first written as a TABLE walked by a
+# loop, and check_figures_pinned stayed red -- its reader parses COMPARISONS in the source, so a literal
+# sitting in a data row pins nothing.  Each is written out as its own comparison, which is the form the
+# gate's own docstring names.  The allowances are the gate's rule: the coarser of half a unit in the last
+# printed digit and 0.05 % of the value. **
+_spacing = float(gaps.mean())
+check('PINNED: the mean spacing over the first 40 levels = 1.7372',
+      abs(_spacing - 1.7372) < 8.6e-4, f'{_spacing:.6g}')
+_piL = float(np.pi/Ltot)
+check('PINNED: pi / L for the leaf arc = 1.7783', abs(_piL - 1.7783) < 8.8e-4, f'{_piL:.6g}')
+_cv = float(gaps.std()/gaps.mean())
+check('PINNED: the spacing coefficient of variation = 0.060', abs(_cv - 0.060) < 5.0e-4, f'{_cv:.6g}')
+_dev0 = float(devs[0])
+check('PINNED: ||T - I|| at the widest window, eps = 1e-4, = 0.3354',
+      abs(_dev0 - 0.3354) < 1.6e-4, f'{_dev0:.6g}')
+_devN = float(devs[-1])
+check('PINNED: ||T - I|| at the narrowest window, eps = 1e-12, = 0.0007368',
+      abs(_devN - 0.0007368) < 5.0e-7, f'{_devN:.6g}')
+_rate = float(rate)
+check('PINNED: the measured convergence exponent against the L^1 norm\'s 1/3 = 0.3323',
+      abs(_rate - 0.3323) < 1.6e-4, f'{_rate:.6g}')
 # ----------------------------------------------------------------- (6) the verdict
 print()
 print('  (6)  THE VERDICT, inside an assert that can fail')

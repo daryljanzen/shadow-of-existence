@@ -24331,3 +24331,34 @@ green** (the only changed data file is my own `spectrum_out.txt`; no gate reads 
 thing to expect rather than read as new:** nothing in this push can move those eleven, so the next
 `heavy` or nightly run will carry them again until whoever owns those lines reads them. **The
 repairs are not mine and the rows are not mine; the measurement is, and it is above.**
+
+## ⛔ `r7577+cc66.4` — `fast` WENT RED ON MY OWN HEAD AND **BOTH REDS WERE MINE**, so this one is a repair and not a routing
+
+**Unlike `.3`'s eleven, these two are not `main`'s: `fast` was GREEN at `6a19e63a` and went red at
+`c19b3c72`, which is my push, and the two failing gates name my own receipt.** ⛔ **①
+`check_unread_figure`:** my receipt's label read *"the near-wall law is `P14`'s own
+$r^{3}=\tfrac92M\ell^{2}$"* while **nothing in the receipt opened `P14`** — so the check would have
+stayed green on any sentence the paper might move, which is exactly the defect that gate exists to
+catch. The gate offers two remedies — read the figure, or drop the attribution — and **I took the
+stronger one: the receipt now reads the law out of `corpus/matter_sector_paper.tex` and asserts its
+own symbolic $r(\ell)$ against what the paper prints**, so the paper moving breaks the receipt.
+⛔ **② `check_figures_pinned`:** five figures my `INDEX` row printed beside that receipt were **not
+pinned in it** — the Weyl check asserted only a *relative* agreement between the measured spacing and
+$\pi/L$, which stays green if both drift together, and the transfer ladder and its exponent were
+printed without being pinned at all. **Six are now pinned, each at the gate's own allowance (the
+coarser of half a unit in the last printed digit and $0.05\%$), and the row's digits were brought
+back to exactly what is pinned** — $1.7372$, $1.7783$, $0.060$, $0.3354$, $7.368\times10^{-4}$,
+$0.3323$. Back to baseline $1376$; both gates green locally. ⌗ **And the first repair attempt failed
+in a way worth keeping, with the note now at the line that caused it:** I wrote the pins as a
+**table walked by a loop**, and the gate stayed red — its reader parses **comparisons** in the
+receipt's source, so a literal sitting in a data row pins nothing. Each pin is now written out as its
+own comparison, which is the form the gate's own docstring names. ⚠ **AND THE METHOD FAILURE IS THE
+PART WORTH KEEPING, because it is mine and not the gate's:** `r7471` ② makes the pre-push gate the
+**reader set plus the receipt**, and I ran exactly that and it told me nothing about these two,
+because **neither is a reader of a changed file — both are text gates that read the `INDEX` row I
+wrote**. ⇒ *So a landing that adds an `INDEX` row has a second exposure the reader-set gate does not
+cover by construction, and the affordable cover is not `run_fast_job.sh` but the handful of text
+gates that read `receipts/INDEX.md`. I ran the whole 133-gate text loop plus the ten `--check`
+generators before this push rather than guessing which.* ⛭ **AND THE REPAIR MINTED A QUOTE PIN, WHICH IS ADJUDICATED IN THE SAME PASS THAT CREATED IT** rather than left to raise the unadjudicated ceiling — the rule that bit at `r7132`. Reading the law out of the paper means asserting `P14`'s own printed form, which the instrument reports as one new `PAPER/TOKEN` key; it is recorded in `corpus/quote_pin_baseline.tsv` as **`DELIBERATE`**, with the reason written out: the wording **is** the claim here, so if `P14` renotates the law this receipt *should* fail and the attribution be re-read and re-pointed — which is exactly what `r7579` did for four other keys. Zero stale entries; the ceiling does not move. ⚑ **AND ONE THING FOR YOUR `r7577` ROW THAT I FOUND WHILE DOING IT, WHICH IS WORTH MORE THAN THE REPAIR:** the sentence my result moves — `P14`'s *"the quantised field, its mode completeness, and the join between the static region's continuum and the wall … remain open"* — **is itself quote-pinned by three receipts**: `L221_the_bridge/B34_the_join_crosses_the_inner_horizon`, `L221_the_bridge/B35_the_continuation_is_cited_wrong`, and `L548_propagating_sector/C1_the_tortoise_divergence_is_the_normalisation_of_the_object_not_the_obstruction_to_it`. ⇒ *So when that sentence is edited, those three go red on the same push, and they are not mine to re-point. Naming them here is the whole point of the new rule: the `items_keyed.tsv` row and these three pins are one piece of work, not two.* **This changes no result:** the verdict,
+every measurement and the terminal clause of `.2` stand unaltered — what changed is that the figures
+the row prints now fail the receipt if they are wrong, which is what the row claimed by printing them.
