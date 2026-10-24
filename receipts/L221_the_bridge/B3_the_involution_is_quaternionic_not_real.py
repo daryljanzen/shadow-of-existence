@@ -131,12 +131,16 @@ def main():
     #     have weakened the label to match the string. ***
     #   ⌗ *The sub-class reported at r7131: the condition WEAKER than its label rather than opposite.*
     _inv = re.compile(r'K\^\{?2\}?-K_\{ij\}K\^\{ij\}|K_\{ij\}K\^\{ij\}-K\^\{?2\}?')
+    # ⛭ r7589 (69): P10's foliation invariant a^3[(3R)^2/18 - 3R K^2/27] (PO-89 (b)) is a seventh use, the
+    #   same extrinsic curvature's trace and named so in its own sentence; it is counted as extrinsic
+    #   curvature when the sentence names it, which keeps the label's ALL a tested claim.
     _k2_in_constraint = sum(1 for m in re.finditer(r'K\^\{?2\}?', allp)
                             if _inv.search(allp[max(0, m.start() - 70):m.start() + 100]
-                                           .replace(' ', '')))
+                                           .replace(' ', ''))
+                            or 'extrinsiccurvature' in allp[m.start():m.start() + 200].replace(' ', ''))
     check(f'⌗ and "K^2" appears {n_k2} times -- ALL of them the extrinsic curvature in the '
-          f'Hamiltonian constraint ({_k2_in_constraint} of {n_k2} sit in '
-          f'$K^2-K_{{ij}}K^{{ij}}$ or its transposition), a name collision with the antilinear '
+          f'Hamiltonian constraint or named as its trace ({_k2_in_constraint} of {n_k2} sit in '
+          f'$K^2-K_{{ij}}K^{{ij}}$, its transposition, or a sentence naming the extrinsic curvature), a name collision with the antilinear '
           f'involution.  ** The "ALL" is ASSERTED, and testing it is what found the second ordering **',
           n_k2 > 0 and _k2_in_constraint == n_k2)
 
