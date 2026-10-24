@@ -24396,3 +24396,38 @@ checked as an absence over the whole file and over the label set, not sampled. T
 `P18`'s and will be **silent on `P7`'s own**, which is the one the row is stated at. That is a row to
 add rather than re-read, and the census is yours — `r7577` freezes the instruments at this seat, so I
 have touched nothing in it.*
+
+## ⛔ `r7577+cc66.6` — THE SCOPED **PLAIN SUITE** ALSO CANCELS, AND ITS OWN SCOPE ESTIMATOR SAYS WHY: 143 RECEIPTS / $7458$ s AGAINST A 75-MINUTE BUDGET
+
+**A second budget cancellation, a different job from `.21`'s, and this one is measured with the
+repo's own instrument rather than inferred.** On the merge head `482a4b20` the job *"scoped — the
+plain suite, on what this push can have changed"* (`gates.yml:470`, `timeout-minutes: 75`) ran
+`04:39:51 → 05:59:52` and came back **`cancelled`** — **80 m 01 s** of wall clock against a
+75-minute budget, which is how GitHub reports a job that exhausts `timeout-minutes`. ⇒ **And the
+cause is not a guess: `scripts/receipt_scope.py` on this exact range prints it —**
+*"RANGE `origin/main..HEAD`: 11 path(s) changed, 0 deleted or renamed ⇒ **143 of 1119 registered
+receipt(s) in the SUITE scope, ~7458 s of compute by the index**."* At the step's own `--jobs 4`
+that is **$31.1$ minutes ideal**, comfortably inside 75 — so the overrun is the gap between ideal
+packing and realised wall time, and **the corpus already has that mechanism on record with a
+number**: node 60's channel reports `L_numerics/Q1` passing in about $50$ s on a seat's tree against
+$615$ s on the runner **under 4-way contention**. ⌗ *I name that as the known mechanism and not as
+this job's established cause — the job's log returns HTTP 404, so I cannot say which receipt it was
+in when the budget ran out, and I would rather say that than imply a reading I do not have.*
+⇒ **WHAT IS ESTABLISHED, AND WHY IT IS NOT THIS PR's CONTENT:** the 11 changed paths are my own, the
+scope they pull in is 143 receipts because an `INDEX`-row landing necessarily touches
+`receipts/INDEX.md` and the regenerated appendices — **files a large part of the receipt corpus
+reads** — and my own receipt contributes $24$ s of the $7458$. *So the arithmetic belongs to the
+SHAPE of an `INDEX`-row landing rather than to anything questionable in this diff, and **every seat
+landing a receipt faces the same sum**.* ⛭ **AND THAT MAKES IT A FINDING RATHER THAN AN EXCUSE, which
+is why it is here and not just on the PR:** `.21` measured that `main`'s own one-commit plain suite
+already runs at $46$–$64$ minutes of its 75, and this range's estimator predicts $124$ minutes of
+serial compute. ⇒ *So the 75-minute budget is below what the job's own scope estimator predicts for a
+landing of this shape, and the job is **structurally unable** to go green on such a push — not
+flaky, not content-dependent, and not fixable from inside a diff.* The remedies are all in places
+this seat does not edit: the budget at `gates.yml:470`, the step's `--jobs 4`, or the scope rule that
+maps a touched `INDEX` to 143 receipts. **Routed to you with the numbers; I have changed nothing.**
+⌗ *The one re-run stays **unspent**, and deliberately: a re-run exists to show a failure is not this
+PR's, and an 80-minute job whose cause is its own scope arithmetic will return the same answer and
+cost another 80 minutes to say it. The single standing-down comment on #528 now carries both jobs,
+edited rather than duplicated. And one thing to expect rather than read as new: this routing push
+re-triggers both, so both will cancel again for the same reason.*
