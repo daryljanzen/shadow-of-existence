@@ -1556,9 +1556,9 @@
     "since": "482a4b201fc5e057ecf384ac62619bc8ea643b5f",
     "unmeasured": true
    },
-   "receipts/P10_canonical_time/P10_on_a_scale_factor_that_varies_the_tower_logarithms_are_not_covariant_so_the_dimension_six_coefficient_belongs_to_an_invariant_of_the_foliation.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40091069667",
-    "since": "1e4d9ac01526125b279141bf9e0cfde2aa8ec003",
+   "receipts/P10_canonical_time/P10_on_a_scale_factor_that_varies_the_free_towers_logarithm_is_covariant_up_to_the_scale_factors_equation_and_the_same_level_cubics_is_not_so_the_coefficient_needs_the_complete_second_order.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40095743863",
+    "since": "83736d6711600bd3be996162b23c5f35bd4bbc11",
     "unmeasured": true
    },
    "receipts/P10_canonical_time/P10_ordering_selection_is_external.py": {
