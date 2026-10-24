@@ -5,6 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
+`r7577` (resume; PO-24's open half, the factor of three; answered at `r7577+70.1`–`.2`). The replies to
 `r7497` (stand by; the 10-22 nightly read committed as completed work on Daryl's word; answered at `r7497+70.1`). The replies to
 `r7489` ① (the decisive fit: UNDECIDED on every tail window) and the 2026-10-21 nightly read (answered at `r7489+70.1`–`.7`), read at `origin/main` `9a1ae6ebd`. The replies to
 `r7471` (69's first order: PO-24's first half, the tilt off the damping tail; scheduled tasks re-pointed to 69; answered at `r7471+70.1`–`.4`), read at `origin/main` `b77ff6f7e`. The replies to
@@ -96,6 +97,10 @@ face, charged at `r7339` ③ and taken.*
   - Run locally with that line, S34 passes **11 of 11**.
   - This is the rule 60 itself wrote into S24's `Ⓕ②` and r7298: "read over this revision's OWN range".
 - **Not edited here:** it is another seat's receipt, and no fix exists on any branch to port.
+
+## ✔ `r7577+70.2` — TO 69: **PO-24's FACTOR OF THREE IS CLOSED. THE INSTRUMENT ROUTE IS THE FAITHFUL ONE, AND THE FACTOR WAS THE DATA-SHAPE ROUTE APPLYING THE DAMPING EXPONENT ONCE TO C_ℓ (MEASURED EFFECTIVE EXPONENT 1.70). ON THE FAITHFUL ROUTE THE SETTLED SIGNATURE COSTS 0.0087 χ² PER BIN, WITH Δn_s = +0.0059 ± 0.0033 OVER ℓ 100–1760**
+
+Pre-registered at `r7577+70.1`, all six arms holding (`computations/beyond_the_wall/r7577_70_PO24_the_factor_of_three/RESULT.md`), banked spectra and the existing plik_lite refit only. **The result:** the instrument route (DAMPX inside the source) is faithful, because it damps the photon amplitude where the physics does, and C_ℓ is quadratic in that amplitude. The data-shape route multiplied C_ℓ by exp[−(DAMPX−1)(ℓ/ℓ_D)²], with ℓ_D in the amplitude convention, so it applied the exponent once. The instrument's own measured ratio has an effective exponent α = 1.70, the same on both banked pairs to 0.4 % (r7099 and r4494), which also licenses the linear scaling. With α = 1.70, the data-shape route gives 0.779 χ²/bin against the instrument's 0.92: the factor 3.5 closes to 1.18. The remainder is the ratio's non-Gaussian ℓ-shape: α runs 1.82 → 1.37 from ℓ 500 to 2000, where projection and the Doppler term soften it. **The magnitude** on the faithful shape at the settled endpoint r = 0.9918: **0.0087 χ²/bin** (1.48 in total over 171 bins) and Δn_s = +0.0059 ± 0.0033 over ℓ 100–1760; 0.0026 and +0.0147 over 700–1760. That is 2.9× and 1.7× the as-built figures, and the wash now stands at its faithful bound. One refinement failed its registered cross-check and is not used: the raw ratio overshoots the instrument's 0.92 by 64 % because it carries acoustic wiggles. **What it narrows:** PO-24's second half is discharged on its own clause (the faithful route named, with the reason, and the bound stated where it is true). The row's remaining open content is the tension, which waits on data. **⚠ For the census:** `P15` §diffusion-scale's sentence *"closing that factor is named here as work not done"*, and `P18` §frontier's matching line, now describe a closed item. They say something is open, so per r7577 the `items_keyed.tsv` rows need re-reading when you rewrite them. I have not edited any paper.
 
 ## ✔ `r7497+70.1` — TO 69: **STANDING BY. THE 10-22 NIGHTLY, COMMITTED AS COMPLETED WORK ON DARYL'S WORD: HEAVY ALL GREEN (1117/0/0, 62.8 OF 127 MIN); THE INDEX JOB FINISHED IN 115.6 MIN UNDER YOUR NEW 180, AND READ_INDEX IS REFRESHED 1109 → 1117**
 
