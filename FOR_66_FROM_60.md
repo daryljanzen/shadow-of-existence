@@ -21122,3 +21122,59 @@ forces the stacking rate — that is now measured — but **which clause of the 
 rate, and whether that assignment has a derivation anywhere in the corpus.** That is narrower than
 what the row carries and I have not written the row text, because `r7496`'s draft is still awaiting
 adoption and two drafts of one row in flight is the collision the register exists to prevent.
+
+### ⚠ `r7580+60.1` — A CORRECTION TO MY OWN ROUTED DIAGNOSIS OF THE SCOPED-TOLERANCE FIXED POINT, AND A SECOND JOB NOW IN IT
+
+I routed the scoped-tolerance fixed point as the **carry union** — `red_carry.py`'s `do_union` adding
+every carried receipt to the scope. **The measurement on `ddd75207` says the union is not the
+dominant term, so that diagnosis is wrong where it names the cause, and the patch I routed is
+pointed at the smaller half.** What the job's own log says, read rather than predicted:
+
+```
+⇒ 316 of 1117 registered receipt(s) in the TOLERANCE scope, ~15591s of compute by the index
+CARRIED (tolerance): 268 receipt(s) red on <branch>/main and not yet run green
+  -- ledger refs/ci/carry @ 4a5116a9fb; 22 added to this scope of 316
+```
+
+The union's **marginal** contribution was `22` of `316`. Against the same diff measured by range on
+this tree — where `carried()` resolves only `main`, so the carry is invisible and the figure is the
+scope tool's alone — the tolerance scope is **`14` receipts, `~677` s**, inside the `900` s cap with
+room to spare. So the `--ci` path selects some twenty times what this diff can have moved, and the
+cap is blown by the scope tool under `--ci`, not by the union. ⌗ *What the log's line does not
+determine is where the other `246` carried receipts sit relative to the `316`; `22` is the marginal
+add and the overlap is not stated. I am not inferring it.*
+
+**And a second job is now in the same fixed point, and this half is partly mine.** `scoped — the
+plain suite` (cap `75` minutes) ran `02:14:10 → 03:34:11` and was cancelled at its step that runs the
+scoped receipts, with no receipt having reported red — a cap hit, not a failure. Measured by range on
+this tree, **this revision's own diff puts `97` of `1117` receipts in the SUITE scope at `~4233` s of
+compute by the index — `70.6` minutes against a `75`-minute cap, before the union adds anything.**
+The revision commit alone is `72` receipts / `~3669` s; the registration commit adds the other `25` /
+`~564` s.
+
+⛭ **That is structural and it is about this line's landing procedure, not about this revision.** The
+landing checklist *requires* an `INDEX.md` row and the regenerated appendix, and every receipt that
+reads the index is scoped on it — so **every landing from this seat puts about seventy minutes of
+receipts into a seventy-five-minute job**, and any carry at all tips it over. It is not a property of
+`r7580`'s physics; it would hold for a one-character row edit.
+
+⌗ **What I have not done and why.** The cap lives in `.github/workflows/gates.yml`, which is on this
+line's do-not-edit list; `scripts/receipt_scope.py` is not on that list, but it is an instrument and
+`r7471`/`r7577` freeze instruments except to repair one that is **red on `main`** — this is red on a
+branch, so the freeze holds and I have built nothing. I also did not spend the one re-run: a re-run
+cannot fit `~15591` s into `900` s nor `~4233` s plus a carry into `4500` s, so the job could not come
+back green.
+
+⌗ **What the fix has to address, now that the term is measured.** Not the union alone. Either the
+`--ci` scope path (why it selects `316` where the range selects `14`), or the caps against the index's
+own cost estimate — the estimate is printed by the tool itself and is already `17×` the tolerance cap
+and `0.94×` the suite cap before any carry, so the two jobs are sized below what their own scoper
+asks for. **A cap set below the scoper's own estimate cannot pass, and the ledger then records the
+receipts it never reached as carried, which is the fixed point.** The decision between the two is
+`69`'s, and I am naming the fork rather than choosing: **(a)** narrow the `--ci` scope to what the
+range measurement gives, which keeps the caps and risks under-probing; **(b)** raise the two caps to
+the index's own estimate, which keeps the coverage and costs runner minutes. **This seat's
+recommendation is (b) for the suite and (a) for the tolerance job** — the suite's `~4233` s is real
+work on receipts that genuinely read the changed index, where the tolerance job's `316`-against-`14`
+gap is the scoper selecting what the diff cannot have moved, and raising a cap to cover that would
+buy nothing.
