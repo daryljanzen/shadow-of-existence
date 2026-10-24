@@ -21035,3 +21035,146 @@ adopt it.**
 
 ⌗ **Adopt both or neither.** The row alone is the `103`-revision stale runway above; the runway
 alone would describe a row that does not say it.
+
+## `r7580` — `r7577`'s ORDER: THE IDENTIFICATION DOES NOT **FORCE** THE STACKING-RATE DISTANCE, AND LIGHT'S REAL INTEGRATED PATH IS A THIRD OBJECT THE COMB EXCLUDES
+
+The order asked whether the observer's-readout identification forces the stacking-rate distance, with
+Daryl's direction to test light's real integrated path first; nine arms were registered and committed
+before the run (`fb00db0c`), eight HIT and one MISS, and **the MISS is mine and is withdrawn rather
+than quietly narrowed.** The ground `P15` §refit-bound gives has two halves and they were tested
+apart: the **flatness half is rate-neutral**, because `D_M` follows from the comoving radial distance
+by the curvature branch and at zero curvature that branch is the identity with no rate in it,
+satisfied to `0` by all three candidate distances alike — the stacking one, the leaf one, and light's
+real path — while at curvature `±0.01` it fails by `1.72` and `1.70` per cent, so flatness fixes
+*which length* and no rate follows from it; and the **three-metric half cannot deliver a rate because
+its own words are literally true**, reparameterising each constant-proper-time slice by the areal
+radius returning `dr² + r²dΩ²` with the proper time nowhere in it, checked at three slices and four
+radii to `3.1e-10`, so every slice is isometric to one fixed flat three-space, the stack carries no
+expansion of its own metric, and what moves is the congruence's place in it. Neither half selects, so
+the selecting is left to the one remaining clause — *on that slice the expansion law is exactly
+flat-ΛCDM's with radiation absent from it* — which **asserts** which rate the distance is built on
+rather than deriving it: the hedge is load-bearing and belongs in the stem. **And `P16`'s rate rule
+cannot be appealed to in their place, because its two slots do not cover the case the order names**:
+the corpus puts the optical depth, an accumulation through the content in every factor, on the
+**stacking** rate on the ground that it is a *photon-path observable*, while the sound horizon and the
+diffusion length — accumulations through the content too — go to the **leaf**, and the criterion that
+separates them occurs `0` times in `P16`, where the rule is stated and derived, against `3` in `P15`,
+where it is applied; light's path from last scattering is both at once and the rule ranks neither,
+which is `r7422`'s shape again, a resolver with two states meeting a case that is a third. **Light's
+real integrated path exists and is computed here for the first time**: a radial null ray on
+eq:proper-frame has `dτ = (∂_χ r)dχ`, so the proper length traversed in the local fundamental
+observer's own frame equals `dτ` — the *observer's* proper time, not the layer time the implementation
+integrates against — and the two differ by exactly the non-synchrony factor `(∂_χ r)/(1 + ∂_χ r)`,
+which runs `0.954` at last scattering, `0.500` at the tangency and `0.536` now and is nowhere near
+one; the path comes out at `8787` Mpc against the implementation's `14011` (ratio `0.627`, inside the
+registered window `[0.60, 0.75]`), where the leaf-rate distance the fit prefers is `13942`, short of
+the implementation by `0.50` per cent. Both are shorter, so **pointer and gap point the same way and
+are not the same object**, and **the comb excludes the path outright with no likelihood run** — it
+puts the acoustic scale at `190` against the sky's `298.4`, where the implementation sits at `303` and
+the leaf-rate distance at `301` — so the projection does **not** need light's real integrated path and
+Daryl's direction finds a **gap** rather than the mechanism. Two exact chart facts fall out and were
+not in the sector before: `(∂_χ r)² ≥ 1` on the whole real branch with its minimum **exactly** `1` at
+**exactly** the merged Nariai radius `α/√3 = 3009.892488` Mpc (so the Nariai condition is what makes
+that minimum one rather than something else, and the single tangency sits at `z = 0.6783`), and the
+implementation's distance **is** the layer-time integral, the stacking rate being `c(∂_χ r)/r`
+identically to `2.3e-15`. ⛔ *This is **not** a refutation of the assignment — it may well be right,
+and what is established is only that the identification does not **force** it, so the sky's preference
+meets an assertion of the same logical kind rather than a theorem; `r7099`'s three routes are not
+reopened and the two that survived to `r7511` are the two tested here.* ⚠ *The withdrawn arm: I
+registered that the identification equates one object from each of the rule's two slots and so crosses
+the rule's own partition, and the corpus's own optical-depth assignment refutes it, since
+accumulation-through-content does not by itself place a quantity in the leaf slot; the discarded
+reading is kept beside its correction in the output rather than deleted. The arm as first written also
+scored its prose on a weaker check than the prose claimed — location only — which is the
+gate-asserts-what-it-reasons-from guard, caught on reading the run before writing it up and fixed by
+splitting the arm; the registered control was fixed the same way, from a hard-coded verdict to a
+measured one.* ⌗ *No instrument added, no parameter pinned, no quote-pin key minted; the five
+sentences are located by containment. `computations/beyond_the_wall/r7580_60_whether_the_observers_readout_identification_forces_the_stacking_rate_distance/`
+carries the registration, the nine arms, the control and the captured read.*
+
+### ⌗ ROUTED, NOT APPLIED — ONE SENTENCE OF `P15` §refit-bound, AND IT MOVES AN OPEN-ITEM SENTENCE
+
+`P15` §refit-bound closes the ground with *"So the support is one established theorem rather than a
+count"*. On this measurement the support is one **assertion** and not one theorem, so that sentence
+is owed a correction. **It is a sentence about what is open** — it states that the sector's one ground
+is settled — so **`r7577`'s new standing rule bites: `check_open_item_coherence` re-reads the papers
+and will fail until `PO-87`'s row in `computations/beyond_the_wall/r7577_69_the_census_refresh/items_keyed.tsv`
+is read again.** I have **not** edited the paper, so that the sentence and the keyed row can land in
+one turn. The replacement, to be substituted for the quoted sentence verbatim:
+
+```
+\emph{So the support is one ground rather than a count, and what the ground supplies is an identity
+and not a rate}: the flatness is rate-neutral --- $D_M=\chi$ at $\Omega_k=0$ holds for a distance
+built on either rate alike --- and the three-metric statement has, as it says, no rate in it at all,
+every constant-$\tau$ slice being isometric to one fixed flat $\mathbb{R}^3$ so that the stack carries
+no expansion of its own metric.  \emph{The rate the projection's distance is built on is therefore
+assigned by the clause that names it and is not forced by the readout}, and the rate rule cannot be
+appealed to in its place, its two slots putting the optical depth's accumulation through the content
+on the stacking rate as a photon-path observable and the plasma's own accumulations on the leaf, with
+no clause ranking the two properties light's own path carries at
+once\rcpt{P15_the_rate_rule_reaches_the_projection_only_through_the_identification_because_P7_gives_the_lapse_the_rate_and_the_shift_the_appearance_as_distance}.
+```
+
+⌗ **Two things for the adopter.** The `\rcpt` key is the one already on the neighbouring sentence and
+is reused rather than minted, so no quote-pin adjudication is owed. And if the row's own text is being
+rewritten in the same turn, the live clause has moved: it is no longer *whether* the identification
+forces the stacking rate — that is now measured — but **which clause of the construction assigns the
+rate, and whether that assignment has a derivation anywhere in the corpus.** That is narrower than
+what the row carries and I have not written the row text, because `r7496`'s draft is still awaiting
+adoption and two drafts of one row in flight is the collision the register exists to prevent.
+
+### ⚠ `r7580+60.1` — A CORRECTION TO MY OWN ROUTED DIAGNOSIS OF THE SCOPED-TOLERANCE FIXED POINT, AND A SECOND JOB NOW IN IT
+
+I routed the scoped-tolerance fixed point as the **carry union** — `red_carry.py`'s `do_union` adding
+every carried receipt to the scope. **The measurement on `ddd75207` says the union is not the
+dominant term, so that diagnosis is wrong where it names the cause, and the patch I routed is
+pointed at the smaller half.** What the job's own log says, read rather than predicted:
+
+```
+⇒ 316 of 1117 registered receipt(s) in the TOLERANCE scope, ~15591s of compute by the index
+CARRIED (tolerance): 268 receipt(s) red on <branch>/main and not yet run green
+  -- ledger refs/ci/carry @ 4a5116a9fb; 22 added to this scope of 316
+```
+
+The union's **marginal** contribution was `22` of `316`. Against the same diff measured by range on
+this tree — where `carried()` resolves only `main`, so the carry is invisible and the figure is the
+scope tool's alone — the tolerance scope is **`14` receipts, `~677` s**, inside the `900` s cap with
+room to spare. So the `--ci` path selects some twenty times what this diff can have moved, and the
+cap is blown by the scope tool under `--ci`, not by the union. ⌗ *What the log's line does not
+determine is where the other `246` carried receipts sit relative to the `316`; `22` is the marginal
+add and the overlap is not stated. I am not inferring it.*
+
+**And a second job is now in the same fixed point, and this half is partly mine.** `scoped — the
+plain suite` (cap `75` minutes) ran `02:14:10 → 03:34:11` and was cancelled at its step that runs the
+scoped receipts, with no receipt having reported red — a cap hit, not a failure. Measured by range on
+this tree, **this revision's own diff puts `97` of `1117` receipts in the SUITE scope at `~4233` s of
+compute by the index — `70.6` minutes against a `75`-minute cap, before the union adds anything.**
+The revision commit alone is `72` receipts / `~3669` s; the registration commit adds the other `25` /
+`~564` s.
+
+⛭ **That is structural and it is about this line's landing procedure, not about this revision.** The
+landing checklist *requires* an `INDEX.md` row and the regenerated appendix, and every receipt that
+reads the index is scoped on it — so **every landing from this seat puts about seventy minutes of
+receipts into a seventy-five-minute job**, and any carry at all tips it over. It is not a property of
+`r7580`'s physics; it would hold for a one-character row edit.
+
+⌗ **What I have not done and why.** The cap lives in `.github/workflows/gates.yml`, which is on this
+line's do-not-edit list; `scripts/receipt_scope.py` is not on that list, but it is an instrument and
+`r7471`/`r7577` freeze instruments except to repair one that is **red on `main`** — this is red on a
+branch, so the freeze holds and I have built nothing. I also did not spend the one re-run: a re-run
+cannot fit `~15591` s into `900` s nor `~4233` s plus a carry into `4500` s, so the job could not come
+back green.
+
+⌗ **What the fix has to address, now that the term is measured.** Not the union alone. Either the
+`--ci` scope path (why it selects `316` where the range selects `14`), or the caps against the index's
+own cost estimate — the estimate is printed by the tool itself and is already `17×` the tolerance cap
+and `0.94×` the suite cap before any carry, so the two jobs are sized below what their own scoper
+asks for. **A cap set below the scoper's own estimate cannot pass, and the ledger then records the
+receipts it never reached as carried, which is the fixed point.** The decision between the two is
+`69`'s, and I am naming the fork rather than choosing: **(a)** narrow the `--ci` scope to what the
+range measurement gives, which keeps the caps and risks under-probing; **(b)** raise the two caps to
+the index's own estimate, which keeps the coverage and costs runner minutes. **This seat's
+recommendation is (b) for the suite and (a) for the tolerance job** — the suite's `~4233` s is real
+work on receipts that genuinely read the changed index, where the tolerance job's `316`-against-`14`
+gap is the scoper selecting what the diff cannot have moved, and raising a cap to cover that would
+buy nothing.

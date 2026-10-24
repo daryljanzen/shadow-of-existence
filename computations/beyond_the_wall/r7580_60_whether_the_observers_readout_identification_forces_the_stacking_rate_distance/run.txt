@@ -1,0 +1,199 @@
+
+`r7580` -- WHETHER THE OBSERVER'S-READOUT IDENTIFICATION FORCES THE STACKING-RATE DISTANCE.
+
+Scores the arms registered in `PREDICTION.md` (digest printed below, and the file is committed
+before this script runs).  Nothing here is fitted: every number comes from the published
+background parameters and the chart's own closed forms.
+
+`r7445`'s rule is respected: the background map is not reimplemented.  It is read out of
+`receipts/P15_CR_cosmology/P15_the_kernels_distance_is_the_observers_own_flat_slice_so_the_rate_rule_does_reach_it_and_the_disagreement_with_the_sky_is_real.py`
+by `ast`, because that module's body prints and gates and must not be imported for its side
+effects.  A reimplementation of a predicate is a second instrument and it will disagree.
+
+  PREDICTION.md sha1 = 02da790f6ebe398eb57dbb5892b9942a4e96b879
+  read from the prior receipt by ast: background(), C = 299792.458, Z_REC = 1089.9, OMBH2 = 0.0224
+
+  H0 = 68.6  Om = 0.2973  Om_r = 8.819e-05   alpha = 5213.287  r_N = 3009.892  r_0 = 5051.488 Mpc
+  2M = 2006.5950   A = 3792.2269   A from r_0 and u_0 = 3792.2269   u_0 = 1.215333   tilde-tau_0 = 4223.92 Mpc
+
+====================================================================================================
+A.  THE CHART, CALIBRATED BEFORE ANYTHING IS ASKED OF IT
+====================================================================================================
+  min over r of (d_chi r)^2 = 1.0000000000000000   attained at r = 3009.892488 Mpc
+  alpha/sqrt3 = 3009.892488 Mpc   |min_at/r_N - 1| = 0.000e+00
+  the grid's own minimum over r in [1e-9 r_0, r_0]: 1.000000000059
+  [  HIT]  Ⓐ  the Nariai tangency: min (d_chi r)^2 is exactly 1, at exactly r = alpha/sqrt3
+            so (d_chi r) >= 1 on the whole real branch, with a single tangency at z = 0.6783
+  worst |c (d_chi r)/r  /  H_stack - 1| over z = [0.0, 1.0, 10.0, 1090.0, 30000000.0]: 2.331e-15
+  [  HIT]  Ⓑ  the rate is the layer-time rate: H_stack = c (d_chi r)/r identically
+  the implementation's  int c dz/H_stack      =  14011.456 Mpc
+  the layer-time form   r_0 int d(tt)/r       =  14011.456 Mpc   relative difference 7.772e-15
+  [  HIT]  Ⓒ  the implementation's distance IS the layer-time light-travel integral
+
+====================================================================================================
+B.  LIGHT'S REAL INTEGRATED PATH ON THE CONSTRUCTION'S OWN METRIC
+====================================================================================================
+  the null ray:  d(tau) = (d_chi r) d(chi)  =>  d(tilde-tau) = (1 + d_chi r) d(chi)
+  the proper length traversed, in the local fundamental observer's own frame, is
+  sqrt(g_chi chi) d(chi) = (d_chi r) d(chi), which the null condition makes equal to d(tau).
+  so the comoving accumulation is r_0 d(tau)/r, and on the ray
+        d(tau) = [ (d_chi r) / (1 + d_chi r) ] d(tilde-tau)
+
+  the non-synchrony weight (d_chi r)/(1 + d_chi r):
+        z =    0.0000   d_chi r =    1.1559   weight = 0.536158
+        z =    0.2500   d_chi r =    1.0476   weight = 0.511619
+        z =    0.6740   d_chi r =    1.0000   weight = 0.500001
+        z =    1.0000   d_chi r =    1.0145   weight = 0.503595
+        z =    3.0000   d_chi r =    1.2836   weight = 0.562092
+        z =   10.0000   d_chi r =    2.0922   weight = 0.676605
+        z =  100.0000   d_chi r =    6.3340   weight = 0.863650
+        z = 1089.9000   d_chi r =   20.8167   weight = 0.954164
+
+  light's real integrated path   D_path     =   8787.241 Mpc
+  the implementation's distance   D_C^stack =  14011.456 Mpc
+  ratio D_path / D_C^stack                  = 0.627147
+  [  HIT]  Ⓓ  light's real path is strictly shorter, by the registered factor
+            registered window [0.60, 0.75]; measured 0.627147
+
+  the leaf-rate distance          D_C^leaf  =  13941.629 Mpc
+  D_C^leaf / D_C^stack - 1                  = -0.4984 per cent
+  |D_path - D_C^leaf| / D_C^leaf             = 36.971 per cent
+  [  HIT]  Ⓔ  light's real path is NOT the leaf-rate distance
+            the leaf shift is -0.4984 per cent where the path gap is 36.971 per cent
+
+====================================================================================================
+C.  EACH CANDIDATE PRICED AGAINST THE ONE QUANTITY THE COMB ALREADY FIXES
+====================================================================================================
+  r_s on the leaf rate = 145.337 Mpc   (the prior receipt gates pi D_C/r_s near 301.6)
+        the implementation, stacking rate           D =  14011.46 Mpc   l_A =   302.87   vs the sky's 298.4:   +1.50 per cent
+        the leaf-rate distance the fit prefers      D =  13941.63 Mpc   l_A =   301.36   vs the sky's 298.4:   +0.99 per cent
+        light's real integrated path                D =   8787.24 Mpc   l_A =   189.94   vs the sky's 298.4:  -36.35 per cent
+  calibration against the prior receipt's banked figure: |pi D_C/r_s / 301.6 - 1| = 0.0042
+  [  HIT]  Ⓕ  the acoustic scale each distance implies, against the sky
+            no pass/fail was registered for the pricing itself; the HIT is the calibration holding
+
+====================================================================================================
+D.  IS THE IDENTIFICATION'S RATE-FREE HALF ABLE TO SELECT A RATE?
+====================================================================================================
+  D_M is got from the comoving radial distance chi by the curvature branch:
+        Ok > 0:  D_M = (c/H0)/sqrt(Ok)  sinh( sqrt(Ok) H0 chi / c )
+        Ok = 0:  D_M = chi                      <-- no H in it at all
+        Ok < 0:  D_M = (c/H0)/sqrt(-Ok) sin( sqrt(-Ok) H0 chi / c )
+
+  at Ok = 0 the identity D_M = chi holds for every one of the three candidate chi, to 0.000e+00
+  at Ok = +0.01 it fails by 1.722 per cent -- so the identity's content is FLATNESS
+  at Ok = -0.01 it fails by 1.704 per cent -- so the identity's content is FLATNESS
+  and the three chi were built on three different rates, so the identity is satisfied by
+  all three alike:  flatness fixes WHICH LENGTH D_M is, and no rate follows from it.
+  [  HIT]  Ⓖ  the identification's rate-free half is rate-NEUTRAL and cannot select
+
+  THE REGISTERED CONTROL.  Does the constant-tau stack carry an expansion law of its own?
+  The induced three-metric is (d_chi r)^2 d(chi)^2 + r^2 dOmega^2 with r = r(tau + chi).
+  Changing the slice's own radial variable to r removes tau outright: dr^2 + r^2 dOmega^2.
+  Checked rather than asserted: on each slice, reparameterise chi by r and read g_rr back.
+        tau =  1055.98:  g_rr = 1 and g_angular = r^2 at every r tried -- the slice's metric in the r-chart carries no tau
+        tau =  2111.96:  g_rr = 1 and g_angular = r^2 at every r tried -- the slice's metric in the r-chart carries no tau
+        tau =  4223.92:  g_rr = 1 and g_angular = r^2 at every r tried -- the slice's metric in the r-chart carries no tau
+  worst |g_rr - 1| over three slices and four radii: 3.121e-10
+  worst |r(tau+chi)/r_target - 1|:                   1.885e-13
+  what moves is the CONGRUENCE's place in that one fixed flat R^3: a fundamental observer
+  at fixed chi sits at r(tau + chi), and dr/dtau at fixed chi = d_chi r = 1.1559 != 0.
+  [  HIT]  Ⓘ  control: the slice's own geometry is tau-free, so the clause carries no rate
+            the slices are isometric to one flat R^3 for every tau, so the stack carries no expansion of
+            its own metric -- which confirms `P15`'s own words, `with no rate in it at all`, literally.
+
+====================================================================================================
+E.  THE PARTITION `P16`'s OWN CLASSIFIER DRAWS, LOCATED IN `P16` RATHER THAN PARAPHRASED
+====================================================================================================
+        located     `P16`'s classifier, verbatim
+        located     `P16`'s worked case (r_s, r_D), verbatim
+        located     `P15`'s identification, verbatim
+        located     `P15`'s optical-depth assignment, verbatim
+        located     `P15`'s ground for it, verbatim
+
+  `P16`'s rule, as `P16` states it, has exactly TWO slots:
+
+        (1) a comoving separation read across leaves  ->  the STACKING rate
+        (2) a process running in the content          ->  the LEAF rate
+
+  D_M falls in (1) without strain: it is a separation, read on ONE slice, between the observer's
+  worldline and the source's, and the slice is the flat constant-tau one.
+
+  ** MY REGISTERED Ⓗ THEN CLAIMED D_C FALLS IN (2), AND THAT CLAIM DOES NOT SURVIVE THE CORPUS'S
+  OWN APPLICATIONS.  THE REGISTERED FORM IS SCORED MISS AND THE DISCARDED READING IS KEPT HERE
+  BESIDE ITS CORRECTION. **
+
+  The discarded reading: a light-travel distance is ACCUMULATED along a history through the content
+  the photon crosses, which is the criterion by which (2) takes r_s and r_D -- so D_C is in (2) and
+  the identification crosses the partition.
+
+  What refutes it: the corpus assigns ANOTHER accumulation-through-the-content to the STACKING
+  rate.  The optical depth is int n_e sigma_T dl -- every factor of it content -- and `P15` puts it
+  on the stacking rate explicitly, grounded on its being `a photon-path observable of the same kind
+  as the redshift and the distances`.  So accumulation-through-content does NOT by itself place a
+  quantity in slot (2): r_s and r_D are there, the optical depth is not.
+
+  ⇒ THE CRITERION THAT ACTUALLY SEPARATES THEM IS `photon-path observable`, AND THAT CRITERION IS
+    NOT IN THE RULE.  Counted in the two papers:
+        occurrences of `photon-path` in `P16`, where the rule is stated and derived: 0
+        occurrences of `photon-path` in `P15`, where the rule is applied:            3
+
+  So the rule as stated holds two slots, the corpus's own applications need three, and the third
+  criterion appears only where the rule is used and nowhere where it is derived.
+
+  ⇒ ** THE RULE DOES NOT DECIDE THE CASE THE ORDER NAMES. **  Light's path from last scattering is
+    an accumulation through the content AND a photon-path observable at once, which is precisely the
+    pair of properties the corpus's two worked assignments separate on -- and the rule contains no
+    clause that ranks them.  This is `r7422`'s shape again: a resolver with two states meeting a
+    case that is a third.
+  [ MISS]  Ⓗ  REGISTERED FORM: the identification equates objects the classifier sorts to opposite rates
+            refuted by the corpus's own optical-depth assignment, which puts an accumulation through the
+            content on the stacking rate; the registered wording overclaimed and is withdrawn.
+  [  HIT]  Ⓗ′  CORRECTED, AND CHECKED: the rule's two slots do not cover light's path, and the criterion that
+            separates the corpus's own two accumulations is absent from the rule
+            all five sentences located verbatim: True; `photon-path` in P16 = 0, in P15 = 3
+
+====================================================================================================
+F.  THE VERDICT THE REGISTRATION BOUND THIS TO
+====================================================================================================
+        Ⓐ    HIT
+        Ⓑ    HIT
+        Ⓒ    HIT
+        Ⓓ    HIT
+        Ⓔ    HIT
+        Ⓕ    HIT
+        Ⓖ    HIT
+        Ⓗ    MISS
+        Ⓗ′   HIT
+        Ⓘ    HIT
+
+  THE REGISTERED BRANCH DOES NOT FIRE AS WRITTEN.  `Ⓖ HIT and Ⓗ HIT` was to read `the
+  identification does not force the stacking-rate distance`, and Ⓗ is a MISS on its registered
+  wording.  What Ⓖ + Ⓗ′ + Ⓘ deliver instead is the same conclusion on a narrower and checked
+  ground, and the narrower ground is what the reply carries:
+
+    Ⓖ   the identification's rate-free half -- flatness, hence D_M = chi -- is satisfied by all
+        three candidate distances alike, so it cannot select a rate.  It fixes WHICH LENGTH, not
+        which rate.
+    Ⓘ   the constant-tau stack carries no expansion law of its own: every slice is isometric to one
+        fixed flat R^3.  `P15`'s own words for the clause -- `with no rate in it at all` -- are
+        literally true, and a clause with no rate in it cannot deliver a rate.
+    Ⓗ′  and the rate rule cannot supply the rate either, because its two slots do not cover light's
+        path and the criterion the corpus actually separates on is not in the rule.
+
+  ⇒ NEITHER HALF OF THE GROUND SELECTS.  The selecting is done by the remaining clause, `on that
+    slice the expansion law is exactly flat-$\Lambda$CDM's with radiation absent from it`, which
+    asserts the rate rather than deriving it -- and that clause is the hedge, so it belongs in the
+    stem.
+
+  AND ON DARYL'S DIRECTION: light's real integrated path EXISTS, is computed here for the first
+  time, is a THIRD object at 8787 Mpc against the implementation's 14011 Mpc, and
+  the comb excludes it outright at l_A = 190 against the sky's 298.4.
+  So the projection does not need it.  What the direction finds is real and is a GAP and not a
+  mechanism: the identification calls D_C `the light-travel distance` while computing the
+  layer-time integral, and on this non-synchronous chart those are not the same object -- they
+  differ by the factor (d_chi r)/(1 + d_chi r), which runs from 0.954 at last
+  scattering to 0.536 now and is nowhere near 1.
+
+  VOIDED ARMS: none
+  MISSED ARMS: ['Ⓗ']
