@@ -153,6 +153,8 @@ _SYM = {
     # algebroid / canonical_time.
     'Theta': '\u0398', 'varrho': '\u03f1', 'varphi': '\u03c6',
     'cdots': '\u22ef', 'lozenge': '\u25ca', 'Diamond': '\u25c7',
+    # the turnaround's marker in P7's lap figure (fig:F-killing); unmapped it rendered as nothing
+    'square': '\u25a1', 'Box': '\u25a1',
     'Hphys': 'H<sub>phys</sub>', 'Tpk': 'T<sub>peak</sub>',
     'C': '\U0001d49e', 'St': '\U0001d4ae<sub>t</sub>',
     'nu': '\u03bd', 'xi': '\u03be', 'pi': '\u03c0', 'rho': '\u03c1',

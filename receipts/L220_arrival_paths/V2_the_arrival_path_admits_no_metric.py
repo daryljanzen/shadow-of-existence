@@ -120,10 +120,13 @@ def main():
                             r'(?:\[[^\]]*\])?\s*\\label\{([^}]+)\}(.*?)\\end\{\1\}', _b, re.S))
         if _n:
             _by_file[os.path.basename(_f)] = _n
-    check(f'86 labelled results across the {len(_by_file)} papers that carry one (found {tot}) -- '
-          f'85 when this was written, and the extra is CR_synthesis.tex\'s single result, the paper '
-          f'r4187 added',
-          tot == 86 and _by_file.get('CR_synthesis.tex') == 1)
+    # ⛭ r7597 (69): 86 -> 89, and the three are located.  BH_causality_v2.tex's rebuild in the GRG
+    #   structure (14b02f0bd, the lap Killing-order seat) added lem:killing, cor:stationary and
+    #   cor:densities; every other paper's count is unchanged.
+    check(f'89 labelled results across the {len(_by_file)} papers that carry one (found {tot}) -- '
+          f'85 when this was written; CR_synthesis.tex\'s single result (r4187) and P1\'s lem:killing, '
+          f'cor:stationary and cor:densities (14b02f0bd) are the four added since',
+          tot == 89 and _by_file.get('CR_synthesis.tex') == 1 and _by_file.get('BH_causality_v2.tex') == 7)
     # ** r6931+70.1: class (c), STALE COUNT -- 20 -> 19, and the one that left is named.  Measured
     #   20 at 91751daa (r6774) and 19 at r6931 head; the move is `groupoid_paper.tex`'s
     #   `prop:nariai-fixed`, whose statement gained "the involution $\sigma$ of \eqref{eq:f}" and a
@@ -136,9 +139,14 @@ def main():
     #   global hyperbolicity is assumed, an observer "whose causal past is the whole exterior" --
     #   and route 2's word list catches "whose".  The proposition has its proof block either way, so
     #   route 1 reads it as before; every other flagged label is unchanged, set for set.
-    check(f'routes 2+3 alone flag 18 (found {len(n23)}) -- 19 when last pinned; prop:nariai-fixed '
-          f'gained a declaration (\\eqref) at r6903 and P1 prop:causal-alignment an in-body clause at r7577',
-          len(n23) == 18
+    # ⛭ r7597 (69): 18 -> 20, and the two are named: P1's new cor:stationary and cor:densities carry no
+    #   in-body arrival clause or declaration, and each has its proof block, so route 1 reads both and
+    #   the residue below is unchanged at five.
+    check(f'routes 2+3 alone flag 20 (found {len(n23)}) -- 18 when last pinned; P1\'s new '
+          f'cor:stationary and cor:densities (14b02f0bd) are the two added, prop:nariai-fixed and '
+          f'prop:causal-alignment still out',
+          len(n23) == 20
+          and ('BH_causality_v2.tex', 'cor:stationary') in n23 and ('BH_causality_v2.tex', 'cor:densities') in n23
           and ('groupoid_paper.tex', 'prop:nariai-fixed') not in n23
           and ('BH_causality_v2.tex', 'prop:causal-alignment') not in n23)
 

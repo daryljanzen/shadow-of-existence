@@ -20,6 +20,10 @@ LOCI on the Nariai member (alpha = 1):  back seam |K|^2 = 0;  turnaround |K|^2 =
 Killing time is proper time -- the rest-frame locus of P15);  Euclidean null |K|^2 = -2;  branch point
 |K|^2 -> -inf / +inf (time turned to space through infinite norm);  front seam |K|^2 = 0;  then > 0.
 Companion: LAP_complete_account.py (the same loci as values of f).
+
+COMPUTES: the Killing property and |K|^2 = R'^2 - 1 symbolically, for any R(tau + chi); the rate and
+acceleration laws at four (M, alpha, tt) points to 1e-25; the surface gravity at the two seams and the
+lap's loci on the Nariai member alone, M = 1/(3 sqrt3) and alpha = 1.
 """
 import sympy as sp
 

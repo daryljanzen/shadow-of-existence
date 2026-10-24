@@ -129,11 +129,18 @@ gate("Ⓐ⑥  and the proposition the order names quantifies over ANY smooth Cau
                   ' whose exterior domain $D$ is globally hyperbolic') == 1)
 
 n_cosmic = len(re.findall(r'cosmic time', P1))
-gate("Ⓐ⑦  AND THE PHRASE THE ORDER WARNS AGAINST APPEARS IN `P1` ONCE AND NOT IN ANY HYPOTHESIS:"
-     " its single use is in the companion-programme paragraph, which says the enduring cosmic time"
-     f" is empirically forced THERE while this paper reaches its result from GR alone -- measured,"
-     f" {n_cosmic} occurrence(s), and it is the sentence that disclaims the dependence",
-     n_cosmic == 1 and _ALONE in P1[max(0, P1.find('cosmic time') - 400):P1.find('cosmic time') + 400])
+# ⛭ r7597 (69): P1's rebuild (14b02f0bd) added a second use, in the Killing-horizon remark, and it too
+#   reports the companion framework's cosmology rather than assuming it: both uses sit in passages
+#   about the companions, and the one in the programme paragraph is still the sentence that
+#   disclaims the dependence.
+_sites = [m_.start() for m_ in re.finditer(r'cosmic time', P1)]
+_ctx = [P1[max(0, i - 400):i + 400] for i in _sites]
+gate("Ⓐ⑦  AND THE PHRASE THE ORDER WARNS AGAINST APPEARS IN `P1` ONLY WHERE IT REPORTS THE COMPANIONS AND"
+     " NOT IN ANY HYPOTHESIS: one use in the Killing-horizon remark, on the companion framework's"
+     " cosmology, and one in the companion-programme paragraph, which says the enduring cosmic time is"
+     f" empirically forced THERE while this paper reaches its result from GR alone -- measured,"
+     f" {n_cosmic} occurrence(s), each beside the word companion",
+     n_cosmic == 2 and all('companion' in c_ for c_ in _ctx) and any(_ALONE in c_ for c_ in _ctx))
 
 # =====================================================================================
 head("B -- THE TWO PREMISES THE ADJUDICATION TURNS ON, COMPUTED RATHER THAN QUOTED")
