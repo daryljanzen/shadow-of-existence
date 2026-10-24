@@ -1641,6 +1641,11 @@
     "since": "72e7564d953dd4924042907f4d30a012e2313792",
     "unmeasured": true
    },
+   "receipts/P14_matter_sector_paper/P14_the_leaf_measure_closes_completeness_by_a_different_theorem.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40057409724",
+    "since": "283e1c031ddf06f7610b8de79576c748a99c6ea0",
+    "unmeasured": true
+   },
    "receipts/P14_matter_sector_paper/P14_the_lift_fibre_content_is_two_plus_one_and_R_is_the_square_of_the_frame_exchange.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39483252800",
     "since": "6cd6751b0bceb6207ccfde29558f28c48b2cea2b",
