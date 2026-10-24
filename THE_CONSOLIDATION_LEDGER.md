@@ -713,8 +713,11 @@ where edits landed (r6937, r973, r1840, r1609, the significance-weight histories
 (the graviton tower's mode sums spend one constant) and (iv) reads as P17 now states it. §1a's record names P13, not P14,
 and P4, not P5. Two paper sentences found on the way: `P12` l.323 put the S3 inside so(5,1) against its own l.344 and is
 now "beside... read off the horizon cubic"; `P16`'s header comment still called both directions fatal and now carries the
-two directions. Owed to `P3`'s next turn: l.919 still reads the inward leg as the local rate "where the light elements
-freeze out" and continues the conjugate branch "through the seam".
+two directions. `P3` l.919 read the inward leg as the local rate "where the light elements freeze out" and continued the
+conjugate branch "through the seam". **Done (r7581)**: the conjugate branch is continued through the branch point, the
+inward and outward readings are dust collapse and the expanding cosmology, one congruence crossing the branch point, and
+the freeze-out sits on the outward leg as it cools past the branch point, on the content's own rate (`P7` eq:two-rate,
+`P18` and `P16` on the cooling leg).
 
 ### 4. `capstones/THE_WISDOM_LEDGER.md`
 
