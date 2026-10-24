@@ -970,3 +970,15 @@ standing by, no formalisation row being open.
   every odd level computed, by a margin $2\pi^2$ smaller than stated; the net a level contributes is bounded below
   by $221/396$ of its quartic energy, not $39/40$; the quartic energy per level is in units of $\kappa\hbar^2/(a^3V)$.
   Receipt `P10_the_quartic_carries_the_inverse_volume_as_the_cubics_square_does_so_the_criterion_is_eighteen_and_not_eighteen_v`. `P10` §lock (the criterion, the residue, the summand) carries the corrected state.
+- `PO-89` parts (d) and (b): the complete second order. **Computed, and the exit taken (r7601).** The cubic's
+  three-level local expansion on a varying scale factor (eight jet monomials, the diagonal r7591's); its double
+  logarithm read from the high pair at each low level with r7595's closed form, checked against the three-level sum
+  slice by slice; every quartic's two-label part a product of one-loop sums (no logarithm of its own), the kinetic
+  quartic included ($-\tfrac{1}{12}\mathrm{tr}[H,\dot H]^2$ in the exponential variable, absent only on a commuting
+  sector). Up to the scale factor's equation of motion and total derivatives, covariance at dimension six is one
+  linear condition; the complete double logarithm's obstruction is $6023/20160$ (curvature quartic $367/48$, kinetic
+  quartic $389/160$, cubic $-\tfrac13\cdot197131/6720$, in the unit where $a^{-3}$ has one), not zero, and the single
+  logarithm's share is moved by the subtraction's freedom along non-covariant directions. So the complete order is
+  not covariant: `PO-89`'s stated exit, the invariant a stated limit, the difference in the reduction. Receipt
+  `P10_the_complete_second_orders_double_logarithm_is_not_covariant_up_to_the_scale_factors_equation_so_the_invariant_is_a_stated_limit`. `P10` (the quartic paragraph, the naming paragraph, §lock's close and its header comment), `P7`
+  `frontier:quantum` and `P18` carry it; `PO-89` keeps the renormalised value, data-gated.
