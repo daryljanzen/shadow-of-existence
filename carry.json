@@ -15028,16 +15028,5 @@
     "unmeasured": true
    }
   }
- },
- "main": {
-  "suite": {
-   "receipts/L_probability/S48_the_middle_closes_whole_and_the_ledger_gains_on_fifty_six_of_fifty_nine_rows_while_the_instrument_mints_keys_the_receipts_never_pinned.py": {
-    "gates": [
-     "\u24b8\u2461"
-    ],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40047428180",
-    "since": "841341aa422a1bcd3304e230dc0e99dd6da415fb"
-   }
-  }
  }
 }
