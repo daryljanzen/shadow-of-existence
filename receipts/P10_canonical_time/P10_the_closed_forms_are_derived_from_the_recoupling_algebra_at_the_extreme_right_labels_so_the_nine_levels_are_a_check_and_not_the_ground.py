@@ -542,8 +542,11 @@ N = sp.expand(Gm*m**3)
 frac = sp.apart(sp.simplify(N.subs(m, sp.sqrt(u))/(u - 1)**2), u)
 Qe = sp.expand(sum(t for t in sp.Add.make_args(frac) if not sp.denom(sp.together(t)).has(u)))
 qm1 = sp.nsimplify(Qe.coeff(u, 1))
-gate(f"and the coefficient of m^-1 in the cubic summand N(m^2)/(m^3 (m^2-1)^2) is {qm1}, P10's "
-     f"-15405/8192: the pole and its residue now rest on derived forms", qm1 == sp.Rational(-15405, 8192))
+P10TXT = open(os.path.join(HERE, '..', '..', 'corpus', 'canonical_time.tex'), encoding='utf-8').read()
+p10_val = '$-15405/8192$' in P10TXT
+gate(f"and the coefficient of m^-1 in the cubic summand N(m^2)/(m^3 (m^2-1)^2) is {qm1}, the value P10 "
+     f"prints (read from canonical_time.tex: {p10_val}): the pole and its residue rest on derived forms",
+     qm1 == sp.Rational(-15405, 8192) and p10_val)
 
 print("\n  " + "=" * 74)
 bad = [n for n, ok in CHECKS if not ok]
