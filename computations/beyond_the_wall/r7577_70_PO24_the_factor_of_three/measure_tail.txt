@@ -1,0 +1,5 @@
+  REFINEMENT: route B's measured ratio itself (l <= 2200 instrument ceiling):
+      DAMPX 1.174 (B, reproduce 0.92)  100-1760: 1.5127 chi2/bin (total 258.68/171)  dn -0.1056 +/- 0.0038 (27.5 sigma)
+      DAMPX 1.174 (B, reproduce 0.92)  700-1760: 1.4209 chi2/bin (total 147.78/104)  dn -0.1889 +/- 0.0117 (16.1 sigma)
+      r = 0.9918 (the magnitude)       100-1760: 0.0210 chi2/bin (total 3.59/171)  dn +0.0095 +/- 0.0033 (2.9 sigma)
+      r = 0.9918 (the magnitude)       700-1760: 0.0200 chi2/bin (total 2.08/104)  dn +0.0181 +/- 0.0099 (1.8 sigma)
