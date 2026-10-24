@@ -231,6 +231,36 @@
     "since": "fe8f6b28ac487a171cb266844ef406fc370f3e85",
     "unmeasured": true
    }
+  },
+  "tolerance": {
+   "receipts/L559_the_registry_from_files_inward/O1_the_registry_was_turned_outward_and_the_arrow_still_pointed_one_way.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40105337646",
+    "since": "fe8f6b28ac487a171cb266844ef406fc370f3e85"
+   },
+   "receipts/L_probability/S54_a_ledger_change_scopes_five_receipts_and_none_of_the_forty_four_that_read_the_ledger_because_the_read_index_is_a_list_of_spellings_without_tsv_on_it.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40105337646",
+    "since": "fe8f6b28ac487a171cb266844ef406fc370f3e85",
+    "unmeasured": true
+   },
+   "receipts/L_probability/S55_the_previous_repairs_own_written_safety_argument_was_the_defect_because_a_shrinking_population_is_safe_for_a_restraint_and_fatal_for_the_non_vacuity_read_off_the_same_range.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40105337646",
+    "since": "fe8f6b28ac487a171cb266844ef406fc370f3e85",
+    "unmeasured": true
+   },
+   "receipts/L_probability/S59_the_census_of_a_shape_inside_one_file_missed_the_clause_four_lines_from_the_pin_that_fixes_it.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40105337646",
+    "since": "fe8f6b28ac487a171cb266844ef406fc370f3e85",
+    "unmeasured": true
+   },
+   "receipts/L_probability/S60_the_test_that_asks_whether_a_literal_is_anywhere_in_the_repo_cannot_see_a_dead_pin_in_its_own_container.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40105337646",
+    "since": "fe8f6b28ac487a171cb266844ef406fc370f3e85",
+    "unmeasured": true
+   },
+   "receipts/P17_geometric_core_paper/P17_the_frontier_item_is_a_result_and_the_cosmogenesis_paper_reaches_it_the_other_way.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40105337646",
+    "since": "fe8f6b28ac487a171cb266844ef406fc370f3e85"
+   }
   }
  },
  "claude/shadow-of-existence-setup-5tjf0b": {
