@@ -890,3 +890,16 @@ Killing horizons from the flow carrying cross-sections isometrically. `P4` alrea
 The census is refreshed (`r7577_69_the_census_refresh`, 240 candidates) and the gate wired; `PO-86` is struck; 60, cc66
 and 70 are resumed in their files on `PO-87`, `PO-95` and `PO-24`, 60's the projection-distance adjudication; 71 stays
 standing by, no formalisation row being open.
+
+## After the arc
+
+- `PO-89` part (c), the nine-level closed forms of `P10`'s same-level cubic. **Done (r7581)**: derived from the
+  recoupling algebra as identities in the level. Each channel's amplitude is read at the extreme right-label triple
+  (the Wigner-Eckart theorem makes it one constant times the right 3j), where every left magnetic number lies within six
+  of the top, the bottom or zero; in magnetic bases rescaled to those positions every ingredient is a factorial ratio
+  times a polynomial in the level, so the amplitude is a polynomial and its degeneracy-summed square a rational function.
+  The two extreme channels give the extreme form and the six mixed ones the mixed form at every odd level from 19 up, and
+  r7056's machinery gives the levels below; the orbit degeneracy and the representative independence come with them.
+  Receipt `P10_the_closed_forms_are_derived_from_the_recoupling_algebra_at_the_extreme_right_labels_so_the_nine_levels_are_a_check_and_not_the_ground`.
+  `P10` (the scope paragraph after the parity, §lock and its header comment), `P7` `frontier:quantum` and `P18`
+  (§frontier, its table, and the dissolution paragraph) state the completion in two parts; `PO-89` keeps (a) and (b).
