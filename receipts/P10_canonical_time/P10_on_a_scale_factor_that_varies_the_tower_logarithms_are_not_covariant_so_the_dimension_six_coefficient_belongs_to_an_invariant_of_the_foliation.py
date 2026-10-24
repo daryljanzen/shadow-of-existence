@@ -150,7 +150,7 @@ Pk = {k: sp.expand(sp.powsimp(sp.expand(res[2 * k] * mu ** (4 + 2 * k)), force=T
 head("A.  THE LOCAL EXPANSION, AGAINST THE PROPAGATOR INTEGRATED NUMERICALLY")
 
 gate("every order is mu^(-4-2k) times a function of the scale factor's derivatives alone, and the odd orders "
-     "vanish: P_0 = 1/(12 a^3), the static second-order energy P10's assembly gives",
+     "vanish: P_0 = 1/(12 a^3), the static second-order energy of a cubic on modes of one frequency",
      all(not v.has(mu) for v in Pk.values()) and sp.expand(res[1]) == 0 and sp.expand(res[3]) == 0
      and sp.simplify(Pk[0] - 1/(12 * a ** 3)) == 0)
 print(f"      P_1 = {sp.factor(Pk[1])}\n      P_2 = {sp.factor(Pk[2])}", flush=True)
@@ -283,8 +283,11 @@ Bform = (m ** 2 - 25) * (m ** 2 - 9) * (m ** 2 - 1) ** 2 * (9 * m ** 2 - 1) / (6
 Sm = 2 * Aform + 6 * Bform
 q = {k: lc(Sm * (m ** 2 - 1) ** (-2 - k)) for k in range(4)}
 print(f"      level logarithms q_k: {q}", flush=True)
-gate("q_0 is P10's -15405/8192, and q_3 = 0: the logarithm stops at four derivatives",
-     q[0] == sp.Rational(-15405, 8192) and q[3] == 0)
+P10TXT = open(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', 'corpus',
+                           'canonical_time.tex'), encoding='utf-8').read()
+gate(f"q_0 is the value P10 prints for the instant (read from canonical_time.tex: {'$-15405/8192$' in P10TXT}), "
+     f"and q_3 = 0: the logarithm stops at four derivatives",
+     q[0] == sp.Rational(-15405, 8192) and '$-15405/8192$' in P10TXT and q[3] == 0)
 L6 = sum(q[k] * plain(Pk[k]) for k in range(3))
 vecs = [sp.Poly(sp.numer(sp.together(EL(L))), *B).as_dict() for L in six]
 mons = sorted(set().union(*vecs))
