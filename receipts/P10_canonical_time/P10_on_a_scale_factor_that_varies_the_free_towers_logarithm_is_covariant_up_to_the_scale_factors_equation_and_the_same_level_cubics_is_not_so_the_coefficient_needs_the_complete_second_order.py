@@ -1,52 +1,51 @@
 #!/usr/bin/env python3
-r"""PO-89 part (b): on a scale factor that varies, the transverse-traceless tower's logarithms are not
-reductions of spacetime-covariant invariants -- already at dimension four, for the free tower -- so the
-dimension-six coefficient P10 computes belongs to an invariant of the foliation, not of the four-geometry.
+r"""PO-89 part (b): on a scale factor that varies, the free tower's logarithm is covariant up to terms in the
+scale factor's equation of motion, and the same-level cubic's dimension-six logarithm is not, even up to those
+terms -- so the same-level coefficient is not by itself the coefficient of an invariant, and naming the invariant
+needs the complete second order (the cross-level cubic and the quartic).
 
 LEVEL: exact symbolic algebra for every derived statement; one numerical check (the local expansion against
 the propagator integrated by an ODE solver), reported with its scaling and tolerance.
 
 OBJECT UNDER TEST.  P10 sec:lock computes the same-level cubic's logarithmic coefficient at dimension six,
--15405/8192, on the scale factor at one instant, and says the invariant it is the coefficient of cannot be
-named there: on the one-parameter family the five dimension-six scalars have rank one.  The construction
-quantizes the scale factor, and on a scale factor that varies those scalars are independent (r7062).  So the
-datum the naming needs is on the admitted class: the tower's divergence on a time-varying scale factor.
+-15405/8192, on the scale factor at one instant, where the five dimension-six scalars have rank one and the
+residue names nothing.  The construction quantizes the scale factor, and on a scale factor that varies those
+scalars are independent (r7062), so the tower's divergence is computed there.
 
-THE ROUTE.  Euclidean, closed Friedmann geometry d tau^2 + a(tau)^2 dOmega_3.  Each level is P10's oscillator
-with mass a^3 and frequency mu/a, mu^2 = m^2 - 1, and the potential cubic carries one power of a (the
-Einstein-Hilbert cubic's spatial-gradient term, a^3 times a^-2).  At second order in the cubic the effective
-action is  Gamma_2 = -3 S_m  Int Int a(t) a(t') G(t,t')^3,  S_m the level's degeneracy-summed squared vertex
-(2A + 6B, the derived closed forms), G the propagator.  G is written exactly in WKB form,
-    G(t,t') = [M(t) M(t') W(t) W(t')]^(-1/2) / 2 * exp(-|Int_t^t' W|),
-with W the exact solution of the Euclidean Riccati-WKB equation, expanded in derivatives of a; the double
-integral is expanded about the midpoint.  Each order of 2k derivatives comes with mu^(-4-2k), so the level
-sum's logarithm at that order is the 1/m coefficient of S_m (m^2-1)^(-2-k).  The same machinery, run on the
-free tower (Gamma_1 = (1/2) sum_m d(m) Int W), gives the dimension-four logarithm.
+THE ROUTE.  Euclidean closed Friedmann geometry d tau^2 + a(tau)^2 dOmega_3.  Each level is P10's oscillator,
+mass a^3 and frequency mu/a with mu^2 = m^2 - 1 -- exact off the classical history in the exponential
+parametrisation, where the transverse-traceless kinetic term has no cubic or background cross term -- and the
+potential cubic carries one power of a.  At second order Gamma_2 = -3 S_m Int Int a a' G^3, S_m = 2A + 6B the
+derived closed forms; G is written exactly in WKB form and expanded in derivatives of a about the midpoint;
+each order of 2k derivatives comes with mu^(-4-2k), so its logarithm is the 1/m coefficient of S_m (m^2-1)^(-2-k).
+The free tower's Gamma_1 = (1/2) sum_m d(m) Int W gives dimension four.
+
+THE TEST, AND WHY IT IS TAKEN MODULO THE EQUATION OF MOTION.  Off the classical history an effective action is
+defined only up to terms proportional to the scale factor's equation of motion, E = 2 a a'' + a'^2 - 1 + Lambda a^2
+(Euclidean), because a redefinition of the scale factor removes them.  So a functional is tested against the
+covariant ones after eliminating a'' and its derivatives by E = 0, and modulo the total derivatives that survive
+that elimination; the covariant basis includes the lower-dimension invariants times powers of Lambda, which the
+elimination mixes in.
 
 WHAT IS CLAIMED.
   1. The local expansion is right: against the propagator integrated numerically on a(tau) = 1.3 + 0.2 sin(0.7 tau),
      the residual after orders 0, 2 and 4 falls as mu^-2, mu^-4 and mu^-6.
-  2. The machinery reproduces covariance where covariance is owed.  A minimally coupled scalar's tower
-     (degeneracy m^2, the same frequencies) returns, on every scale factor, exactly -1/576 a^3 R^2: the known
-     (1/16 pi^2)(1/72) R^2 of its a_2 coefficient times the volume 2 pi^2, normalisation included.
-  3. The free transverse-traceless tower does not.  Its degeneracy is 2(m^2-4), two scalar towers less eight
-     modes per level.  The two scalar towers give 2 x (-1/576) a^3 R^2; the eight-per-level deficit gives
-     2(1 - a'^2)/a up to a total derivative, which is no multiple of a^3 R^2 -- the only covariant
-     dimension-four functional on this class -- and is the foliation invariant a^3 [ (3R)^2/18 - (3R) K^2/27 ]
-     (3R the slice's curvature, K the trace of its extrinsic curvature).  The static logarithm 15/4 is
-     -1/4 from the two scalar towers and 4 from the deficit.
-  4. At dimension six the same holds.  The level logarithms are q_0 = -15405/8192 (P10's), q_1 = -8313/4096,
-     q_2 = 14769/8192 and q_3 = 0; the six covariant dimension-six scalars (R^3, R Ric^2, Ric^3, (grad R)^2,
-     R Box R, (grad Ric)^2) span four directions on this class modulo total derivatives, and the tower's
-     functional is not in that span: the matching system has coefficient rank 4 and augmented rank 5.
-  5. So the coefficient is not the coefficient of a spacetime invariant on the admitted class.  Its carrier is
-     an invariant of the foliation, which the construction's absolute cosmic time makes admissible, and on the
-     isotropic class the foliation's invariants are themselves degenerate (K_ij is proportional to the slice
-     metric there), so naming the carrier among them needs the tower's own shear.
+  2. Dimension four.  A minimally coupled scalar's tower returns exactly -1/576 a^3 R^2 on every scale factor, the
+     known (1/16 pi^2)(1/72) R^2 times the volume 2 pi^2.  The free transverse-traceless tower, two scalar towers
+     less eight modes per level, is not a multiple of a^3 R^2 off the history, but it is covariant modulo the
+     equation of motion, the eight-per-level piece included: what it adds is removable by a redefinition of the
+     scale factor.  The static logarithm 15/4 is -1/4 from the two scalar towers and 4 from the eight.
+  3. Dimension six.  The level logarithms are q_0 = -15405/8192 (P10's), q_1 = -8313/4096, q_2 = 14769/8192 and
+     q_3 = 0.  The same-level cubic's functional is outside the covariant span off the history (coefficient rank 4,
+     augmented 5), and it stays outside modulo the equation of motion, where a control built from covariant
+     scalars plus a multiple of E is recovered by the same test.
+  4. So the same-level coefficient is not by itself the coefficient of an invariant.  The complete second order
+     at this dimension also has the cross-level cubic, joining three different levels, and the quartic on a
+     varying scale factor; the invariant is read from their sum, and the same test applies to it.
 
-SCOPE.  The same-level cubic, as P10 computes it, and the transverse-traceless tower the deparametrization
-leaves after the constraints are solved; nothing about the cross-level couplings, and no claim about a
-covariant theory carrying the removed sectors, whose divergences would combine with these.
+SCOPE.  The transverse-traceless tower the deparametrization leaves, on the closed Friedmann class with the scale
+factor varying; the equation of motion is the scale factor's own, the lapse being cosmic time.  Nothing computed
+here about the cross-level cubic or the quartic.
 """
 import os, time, pickle
 import sympy as sp
@@ -242,8 +241,37 @@ def lc(f):
     x = sp.Symbol('x', positive=True)
     return sp.expand(sp.series(sp.simplify(f.subs(m, 1 / x)), x, 0, 6).removeO()).coeff(x, 1)
 
+# ---------------------------------------------------------------- modulo the equation of motion
+Lam = sp.Symbol('Lambda')
+B0, B1 = B[0], B[1]
+f2 = (1 - B1 ** 2 - Lam * B0 ** 2) / (2 * B0)
+onshell = {B[2]: f2}
+_e = f2
+for _k in range(3, 9):
+    _e = sp.together(Dt(_e).subs(onshell))
+    onshell[B[_k]] = sp.factor(_e)
+def reduce_on(L):
+    x = L
+    for _k in reversed(range(2, 9)):
+        x = x.subs(B[_k], onshell[B[_k]])
+    return sp.factor(sp.together(x))
+def fit_mod_eom(Lt, Lcs, pr=(-15, 9), qmax=15, rmax=6):
+    cs = sp.symbols('c0:%d' % len(Lcs))
+    gs, G = [], 0
+    for p_ in range(pr[0], pr[1] + 1):
+        for q_ in range(1, qmax + 1, 2):
+            for r_ in range(rmax + 1):
+                s_ = sp.Symbol(f'g_{p_}_{q_}_{r_}'.replace('-', 'm'))
+                gs.append(s_); G += s_ * B0 ** p_ * B1 ** q_ * Lam ** r_
+    tot = B1 * sp.diff(G, B0) + f2 * sp.diff(G, B1)          # a total derivative, on the history
+    d = sp.together(reduce_on(Lt) - sum(c * reduce_on(L) for c, L in zip(cs, Lcs)) - tot)
+    sol = sp.solve(sp.Poly(sp.numer(d), B0, B1, Lam).coeffs(), list(cs) + gs, dict=True)
+    return sol
+vol = B[0] ** 3
+EOMx = 2 * B[0] * B[2] + B[1] ** 2 - 1 + Lam * B[0] ** 2
+
 # ============================================================ B. dimension four, the free tower
-head("B.  DIMENSION FOUR: THE CONTROL PASSES, AND THE FREE TOWER DOES NOT")
+head("B.  DIMENSION FOUR: THE FREE TOWER IS COVARIANT UP TO THE SCALE FACTOR'S EQUATION OF MOTION")
 
 Wk = {k: plain(sp.expand(sp.powsimp(sp.expand(W[2 * k] * mu ** (2 * k - 1)), force=True))) for k in range(3)}
 def oneloop(deg):
@@ -257,26 +285,26 @@ gate(f"CONTROL: a minimally coupled scalar's tower (degeneracy m^2, the same fre
      bool(sol) and sol[0][sp.Symbol('c0')] == -sp.Rational(1, 16) / sp.pi ** 2 * sp.Rational(1, 72) * 2 * sp.pi ** 2)
 Ltt, qtt = oneloop(2 * (m ** 2 - 4))
 sol, r1, r2 = fit(Ltt, [R2])
-gate(f"THE FREE TRANSVERSE-TRACELESS TOWER (degeneracy 2(m^2-4)) is NOT a multiple of a^3 R^2, the only "
-     f"covariant dimension-four functional on this class modulo total derivatives: rank {r1} against "
-     f"augmented {r2}", not sol and r2 == r1 + 1)
 Ldef = sp.expand(Ltt - 2 * Lsc)
 b0, b1, b2 = B[0], B[1], B[2]
-gate(f"and the difference is the eight modes per level by which 2(m^2-4) falls short of two scalar towers: "
-     f"{sp.factor(Ldef)}, which is 2(1 - a'^2)/a up to the total derivative -2a''",
-     sp.simplify(Ldef - (2 / b0 - 2 * b2 - 2 * b1 ** 2 / b0)) == 0
-     and sp.simplify(sp.expand(2 * (m ** 2 + 0) - 2 * (m ** 2 - 4)) - 8) == 0)
-R3s, Ks = 6 / b0 ** 2, 3 * b1 / b0
-gate("that piece is the foliation invariant a^3 [ (3R)^2/18 - (3R) K^2/27 ] (3R = 6/a^2 the slice's curvature, "
-     "K = 3a'/a the trace of its extrinsic curvature), and it fits no multiple of a^3 R^2",
-     EL(sp.expand(b0 ** 3 * (R3s ** 2 / 18 - R3s * Ks ** 2 / 27))) == EL(Ldef) and not fit(Ldef, [R2])[0])
+gate(f"off the history the transverse-traceless tower (degeneracy 2(m^2-4), two scalar towers less eight modes "
+     f"per level) is not a multiple of a^3 R^2 (rank {r1}, augmented {r2}), the difference being the eight: "
+     f"{sp.factor(Ldef)}",
+     not sol and r2 == r1 + 1 and sp.simplify(Ldef - (2 / b0 - 2 * b2 - 2 * b1 ** 2 / b0)) == 0)
+dim4 = [R2, Lam * red(Rs), Lam ** 2 * vol]
+s_tt = fit_mod_eom(Ltt, dim4, pr=(-9, 7), qmax=9, rmax=4)
+s_def = fit_mod_eom(Ldef, dim4, pr=(-9, 7), qmax=9, rmax=4)
+gate("⛭ BUT MODULO THE SCALE FACTOR'S EQUATION OF MOTION THE TOWER IS COVARIANT, the eight-per-level piece "
+     "included: both are recovered as a^3 R^2, Lambda a^3 R and Lambda^2 a^3 up to a total derivative on the "
+     "history -- what the eight add off the history is removable by a redefinition of the scale factor",
+     bool(s_tt) and bool(s_def))
 gate(f"and the static logarithm P10 states, 15/4, is {qsc[0]*2} from the two scalar towers and "
-     f"{lc(-8 * (m ** 2 - 1) ** sp.Rational(1, 2))} from the deficit",
+     f"{lc(-8 * (m ** 2 - 1) ** sp.Rational(1, 2))} from the eight",
      qtt[0] == sp.Rational(15, 4) and 2 * qsc[0] == -sp.Rational(1, 4)
      and lc(-8 * (m ** 2 - 1) ** sp.Rational(1, 2)) == 4)
 
 # ============================================================ C. dimension six, the cubic
-head("C.  DIMENSION SIX: THE SAME-LEVEL CUBIC'S LOGARITHM IS NOT IN THE COVARIANT SPAN")
+head("C.  DIMENSION SIX: THE SAME-LEVEL CUBIC'S LOGARITHM IS NOT COVARIANT, EVEN MODULO THE EQUATION")
 
 Aform = 9 * (m ** 2 - 1) * (9 * m ** 2 - 25) * (9 * m ** 2 - 1) ** 3 / (65536 * m ** 3)
 Bform = (m ** 2 - 25) * (m ** 2 - 9) * (m ** 2 - 1) ** 2 * (9 * m ** 2 - 1) / (65536 * m ** 3)
@@ -292,23 +320,26 @@ L6 = sum(q[k] * plain(Pk[k]) for k in range(3))
 vecs = [sp.Poly(sp.numer(sp.together(EL(L))), *B).as_dict() for L in six]
 mons = sorted(set().union(*vecs))
 rank6 = sp.Matrix([[v.get(mo, 0) for mo in mons] for v in vecs]).rank()
-gate(f"the six covariant scalars R^3, R Ric^2, Ric^3, (grad R)^2, R Box R and (grad Ric)^2 span {rank6} "
-     f"directions on this class modulo total derivatives", rank6 == 4)
 sol, r1, r2 = fit(L6, six)
-gate(f"⛭ AND THE TOWER'S DIMENSION-SIX LOGARITHM IS NOT IN THAT SPAN: coefficient rank {r1}, augmented "
-     f"{r2}, no solution -- so on the admitted class the coefficient belongs to no spacetime invariant",
-     not sol and r1 == 4 and r2 == 5)
-Lfake = sp.expand(sp.Rational(3, 7) * six[0] - 2 * six[2] + sp.Rational(5, 3) * six[3])
-gate("⌗ and the test can pass: a functional built from the covariant scalars is recovered by it",
-     bool(fit(Lfake, six)[0]))
+gate(f"off the history the same-level functional is outside the span of the six covariant dimension-six scalars "
+     f"(R^3, R Ric^2, Ric^3, (grad R)^2, R Box R, (grad Ric)^2), which span {rank6} directions: coefficient rank "
+     f"{r1}, augmented {r2}", rank6 == 4 and not sol and r1 == 4 and r2 == 5)
+basis6 = six + [Lam * R2, Lam ** 2 * red(Rs), Lam ** 3 * vol]
+s6 = fit_mod_eom(L6, basis6)
+Lctl = sp.expand(sp.Rational(2, 7) * six[0] - six[2] + 3 * six[3] + EOMx * B[1] ** 2 / B[0] ** 3)
+s_ctl = fit_mod_eom(Lctl, basis6)
+gate("⛭ AND IT STAYS OUTSIDE MODULO THE EQUATION OF MOTION: no combination of the covariant dimension-six scalars "
+     "and the lower invariants times powers of Lambda matches it up to a total derivative on the history -- while "
+     "the control, covariant scalars plus a multiple of the equation, is recovered by the same test",
+     not s6 and bool(s_ctl))
 
-# ============================================================ D. what it is
-head("D.  WHAT THE COEFFICIENT BELONGS TO")
-gate("so the carrier is an invariant of the foliation -- admissible because cosmic time is absolute here -- "
-     "and the free tower's logarithm is already one at dimension four; the foliation's invariants are "
-     "themselves degenerate on the isotropic class, K_ij being proportional to the slice metric, so naming "
-     "the carrier among them needs the tower's own shear",
-     not sol and not fit(Ltt, [R2])[0])
+# ============================================================ D. what it means
+head("D.  WHAT THE SAME-LEVEL COEFFICIENT IS")
+gate("so the same-level coefficient is not by itself the coefficient of an invariant: a complete second order is "
+     "covariant up to the equation of motion, as the free tower is at the order below, and this part alone is "
+     "not.  The rest of that order -- the cubic joining three different levels, and the quartic on a varying "
+     "scale factor -- is what the invariant waits on, and the same test applies to the sum",
+     not s6 and bool(s_tt) and bool(s_ctl))
 
 print("\n  " + "=" * 74)
 bad = [n for n, ok in CHECKS if not ok]

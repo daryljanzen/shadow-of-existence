@@ -60,7 +60,7 @@
 %   every fibre). THEREFORE WHAT REMAINS OPEN IS NOT THE BOUNDARY CONDITION BUT THE *COMPLETION OF THE
 %   INTERACTING TOWER'S DEFINITION* — Gamma-hat is bounded below, and the UV definition of the tower sums is
 %   delivered by the construction's own regulator; its completion (the
-%   paying coefficient's foliation invariant named, the renormalised value measured) is "the standard problem of the
+%   paying coefficient completed across levels and its invariant named, the renormalised value measured) is "the standard problem of the
 %   interacting theory rather than a residual freedom in the quantization at the boundary."
 %   DO NOT REPORT THE COUPLED SECTOR AS A RESIDUAL QUANTIZATION FREEDOM. ***
 %   DISSOLUTION, NOT SOLUTION: "a solution would add structure to make a defective formalism work; A
@@ -501,9 +501,7 @@ because their counterterms are not cosmological-constant terms.} Only the \emph{
 logarithmic successors} carry the mass, which is to say only they renormalise masses and couplings; in
 the standard curved-space expansion the first goes with the Ricci scalar and the second with
 curvature-squared invariants, and a curvature-squared coupling is not an entry in this framework's
-ledger. On this tower the second is that only in part: on a scale factor that varies, the eight modes per
-level by which the transverse-traceless count falls short of two scalar towers carry an invariant of the
-foliation beside the curvature-squared term, as computed below.  \emph{The statement about curvature-squared couplings is two claims and not one, and the useful thing is that the
+ledger.  \emph{The statement about curvature-squared couplings is two claims and not one, and the useful thing is that the
 criterion separating them does not depend on the operator dimension at all.} The framework's dimensionful
 content is one length, and the gauge length is a combination over it rather than a second physical
 length; so a coefficient carrying any power of length is admissibly the substrate scale to that power
@@ -618,9 +616,8 @@ is the whole of the collapse there---and the fixed-background reading buys stric
 dimension, not more. \emph{What that count is a fact about is said before it is used}: it is read off a
 chosen five-element subset, so it is a fact about those five---\emph{but it is a lower bound on the full
 basis's rank, and a lower bound is the direction the argument needs}, completion being able only to
-raise it. \emph{And the basis that finally counts is the foliation's}: on a scale factor that varies, the
-tower's own logarithms leave the covariant span at both dimensions (computed below), so these covariant ranks
-bound the count from below rather than fixing it.
+raise it. \emph{And off the classical history a count is taken modulo the scale factor's equation of motion},
+terms proportional to it being removable by a redefinition of the scale factor (below).
 
 \emph{And the narrower of the two questions this raises is not closer than the other; it is finished.}
 Whether the coefficient the free spectrum settles survives the coupling is answered by the same
@@ -1168,14 +1165,15 @@ vertex\rcpt{P10_the_parity_is_structural_in_shape_but_order_by_order_in_conclusi
 \emph{The two halves of second order carry opposite parities, and the one that decides the entry is the cubic's.}
 The counting turns on whether a vertex coefficient is even in the frequency, and the quartic's is: the summand
 regularised above is a function of the squared label alone. \emph{The cubic's is odd, and settling it settles the
-entry.} Its recoupling sum closes in two orbits, each internally degenerate and each exact---the extreme pair at
+entry for the part computed here}---the same-level part, in which all three harmonics share one level. Its
+recoupling sum closes in two orbits, each internally degenerate and each exact---the extreme pair at
 $9(m^{2}-1)(9m^{2}-25)(9m^{2}-1)^{3}/65536$ and the mixed sextet at
 $(m^{2}-25)(m^{2}-9)(m^{2}-1)^{2}(9m^{2}-1)/65536$, both over $m^{3}$---so the sum is an \emph{even} polynomial of
 degree ten divided by $m^{3}$, and is therefore odd in the label. \emph{One form carries every level with no case
 split}: the two-channel levels are not a second regime, $(m^{2}-9)(m^{2}-25)$ vanishing at exactly the two lowest
 of them.
 
-\emph{So the sum meets the pole the quartic misses, and at dimension six the ledger pays.} The assembly's
+\emph{So the same-level sum meets the pole the quartic misses, and at dimension six that part pays.} The assembly's
 remaining factor is an integer power of the squared frequency, so the parity rides entirely on the recoupling sum;
 the summand's powers of the label are all odd, the continued sum therefore reaches the underlying zeta at odd
 integer arguments, and one of those is its single pole. The coefficient of the inverse label is
@@ -1185,7 +1183,9 @@ because it recovers the other half's answer as a control rather than citing it}:
 powers of the label are even throughout, the same construction returns residue zero. \emph{What the two halves
 therefore exhibit is one selection rule read in its two parities}, and second order carries a pole contributed by
 the cubic and not by the
-quartic\rcpt{P10_the_cubic_summand_is_odd_over_m_cubed_so_it_reaches_the_pole_and_the_ledger_pays_at_dimension_six}.
+quartic\rcpt{P10_the_cubic_summand_is_odd_over_m_cubed_so_it_reaches_the_pole_and_the_ledger_pays_at_dimension_six}. \emph{The cubic also joins three different levels, and that part's contribution at
+this dimension is not computed here}: the complete coefficient is the sum of the two, and the same-level part is
+not by itself the coefficient of an invariant (below).
 
 \emph{And the parity the pole turns on is proved rather than read off those levels, by a symmetry of the channel
 list itself.} The reflection that sends the label to its negative is the Casimir-preserving involution applied to
@@ -1243,18 +1243,19 @@ level's second-order term is the double time integral of the cubic's three propa
 derivatives of the scale factor---the expansion checked against the propagator integrated numerically, its
 residual falling at each order by the next two powers of the frequency---and the logarithm at each order is the
 inverse-label term of the level sum: $-15405/8192$ at the instant, $-8313/4096$ at two derivatives, $14769/8192$
-at four, and nothing beyond. \emph{That functional is not the reduction of any spacetime invariant}: the
-covariant dimension-six scalars span four directions on this class, and the tower's logarithm lies outside them.
-\emph{And the same thing shows a dimension lower, in the free tower.} The same instrument returns a minimally coupled
-scalar's covariant $\tfrac{1}{72}R^{2}$ exactly, normalisation included, while the transverse-traceless
-tower---two scalar towers less eight modes per level---returns that twice together with a term carried by the
-eight, $a^{3}\bigl[({}^{3}\!R)^{2}/18-{}^{3}\!R\,K^{2}/27\bigr]$ in the slice's curvature ${}^{3}\!R$ and the
-trace $K$ of its extrinsic curvature, which is no multiple of $R^{2}$; the static $\tfrac{15}{4}$ is $-\tfrac14$
-from the two scalar towers and $4$ from the eight. \emph{So the coefficient belongs to an invariant of the
-foliation and not of the four-geometry}---admissible because cosmic time is absolute here, and the form the
-tower's divergences take once its constraints are solved. \emph{Naming it among the foliation's invariants is
-the step that remains}, and the isotropic class does not take it, the extrinsic curvature being a multiple of
-the slice metric there; it needs the tower's own shear\rcpt{P10_on_a_scale_factor_that_varies_the_tower_logarithms_are_not_covariant_so_the_dimension_six_coefficient_belongs_to_an_invariant_of_the_foliation}.
+at four, and nothing beyond. \emph{Off the classical history the test is covariance up to the scale factor's
+equation of motion}, terms proportional to it being removable by a redefinition of the scale factor. \emph{The
+free tower passes it a dimension lower}: the same instrument returns a minimally coupled scalar's covariant
+$\tfrac{1}{72}R^{2}$ exactly, normalisation included, and the transverse-traceless tower---two scalar towers less
+eight modes per level, the static $\tfrac{15}{4}$ being $-\tfrac14$ from the scalar towers and $4$ from the
+eight---is covariant up to that equation, what the eight add off the history being such a term. \emph{The
+same-level cubic does not pass it}: its dimension-six logarithm is the reduction of no covariant combination,
+the lower invariants times powers of the cosmological constant included, even up to the equation of motion,
+where a control built from covariant scalars and a multiple of the equation is recovered by the same test.
+\emph{So the same-level coefficient is not by itself the coefficient of an invariant}: a complete order is
+covariant up to the equation, as the free tower is, and the invariant is read from the complete second
+order---the cubic joining three different levels and the quartic on a varying scale factor added to the
+same-level part\rcpt{P10_on_a_scale_factor_that_varies_the_free_towers_logarithm_is_covariant_up_to_the_scale_factors_equation_and_the_same_level_cubics_is_not_so_the_coefficient_needs_the_complete_second_order}.
 
 \emph{And the two halves settle a question about the regulator itself, which is worth stating because it is a
 choice the section has been making silently.} Continued in the squared frequency, the cubic's inverse cube of the
@@ -1853,9 +1854,10 @@ single-scale ledger stands either way---an undetermined dimensionless number not
 number is already counted, the ledger of dimensionless constants spent standing at one for these very
 sums, while what the branch adds is bounded by the background's own turnover and the counterterm it would
 need collapses on an exactly maximally symmetric substrate. \emph{So the one open thing is the completion of the
-ultraviolet definition of the interacting tower's mode sums}, in two parts: the invariant of the
-foliation the paying coefficient belongs to named, which needs the tower's own shear, and the renormalised value
-at that dimension, which a measurement fixes. \emph{So the two
+ultraviolet definition of the interacting tower's mode sums}, in three parts: the complete second order at
+the paying dimension, the cubic joining three different levels and the quartic on a varying scale factor added
+to the same-level part; the invariant that complete coefficient belongs to, named from it; and the renormalised
+value at that dimension, which a measurement fixes. \emph{So the two
 extension questions this sector meets pair, and the pairing is the clearest thing it has produced about its own
 shape}: the one at the origin of the scale factor is closed, without a free parameter, by the de~Sitter
 horizon's own thermal state; the one at unbounded momentum is open, and it is not a new object standing beside
