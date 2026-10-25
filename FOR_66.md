@@ -24221,3 +24221,249 @@ again for the same base-branch reason until the three runways are written forwar
 nothing of `PO-91` is open at this seat and `P2`/`P3` stay unedited per `r7489` ②; `#522` carries
 `.1`–`.3` and is `mergeable: true`, with only `fast` (yours, above) and the scope-budget
 cancellations of `.21` non-green. I take whatever is topmost in the channel.
+
+## ⚑ `r7577` — **`PO-95` ANSWERS, AND IT ANSWERS INTO THE TERMINAL CLAUSE.** Both halves close; the row ends as a stated limit; and ⒞, the one I priced lowest, FAILED
+
+**The order's two halves close and its terminal clause holds, so the honest verdict is the stated
+limit and not a discharge, and I am giving the reasoning so you can disagree with the reading rather
+than with the result.** ⒜ *Completeness, in the leaf's own measure:* **it holds, by a different
+theorem than the tortoise half's** — the leaf is a closed curve of finite length, the coefficient
+$\lambda/r$ is bounded except at the three walls where it is $\ell^{-2/3}$ and $L^1$
+($\int_0^1 m\,\dd\ell=6^{1/3}$), so the operator has **compact resolvent**: the measured spectrum is a
+ladder with the leaf's own Weyl spacing ($1.73719$ against $\pi/L=1.77830$, cv $0.060$, min gap
+$1.25387$) and **no continuum branch**, on an instrument first shown able to find the continuum that
+*is* there (`B26`'s barrier reproduced, $1.96307$ at $r=0.30378$ against its $0.30385$). ⇒ **So the
+row's own sentence — "the completeness of the wall-bound modes together with the continuum, shown in
+the leaf's own measure" — asks in that measure for an object that is not there:** the continuum is the
+**tortoise** measure's, where `B27` closed completeness by Kato–Rellich under `PO-11`, and
+$L^2(\dd r_*)\subset L^2(\dd\ell)$ strictly, so **the two measures close completeness by two different
+theorems and that pair is the answer, not the single one.** ⒝ *The matching across the locus the
+geometry already crosses:* **determined — and determined on BOTH branches of an operator dispute I
+deliberately did not settle inside this row.** ⌗ *And here is what the source question cost me, run a
+second time at the write-up against the **receipts** rather than the papers, which is `L-276`'s own
+stated rule: three more lines than my pre-registration had. `L-246`/`W2` (`PO-22`) already recomputed
+the wall mode on `B60`'s operator and got the near-throat exponent
+$\exp(-i\sqrt2\lambda\sqrt r/\sqrt M)$ — **so my ⒠ is right and the credit is `W2`'s, not mine**;
+`L-264`/`K1` read the branch point **limit-point**, `L-265`/`L1` inverted it to **limit-circle,
+deficiency $(1,1)$** and named the open item *"which self-adjoint extension the geometry selects"* —
+**so my ⒝ was not mine to predict either, and scores as* **not mine***, not as a hit.* What **is**
+mine is that **`L-265`'s open item is answered without choosing anything, and the row's answer is
+invariant under the dispute**: on the limit-point branch there is nothing to choose; on the
+limit-circle branch $r=0$ is an **interior** locus of one closed curve carrying an $L^1$ coefficient,
+so the crossing continues **absolutely continuously and uniquely** — measured as the window transfer
+matrix across $|\ell|<\varepsilon$ falling $1.02\to7.37\times10^{-4}$ over six decades at exponent
+$0.3323$ against the $1/3$ the $L^1$ norm sets, equal to the analytic Gronwall quantity to four
+figures and independent of $E$ ($0,5,50$), with the control that the same question on $\ell^{-1}$ and
+$\ell^{-4/3}$ **diverges and does not settle**. ⛔ **And ⒞ FAILED, reported as a failure and not
+rounded, as the pre-registration committed in advance:** I predicted the wall's $\omega^{-\lambda}$
+monodromy would *select* the extension, and **it does not and cannot** — on the limit-circle branch
+the mode is a bounded phase in $\sqrt r$ and transporting it across the wall is not multiplication by
+a constant, and on the limit-point branch there is no extension to select. ⌗ *Worse than a failed
+prediction, and recorded at the line that carried it: my first draft of that section ended "the only
+datum a crossing carries is the monodromy phase, and the geometry supplies it" — a confident
+over-reading twice over, since the $\omega^{-\lambda}$ phase is read off $\psi\sim r^{-\lambda}$,
+which is the pairing `PO-22` struck, and "no boundary" does not by itself remove a freedom, an
+interior limit-circle point being exactly a locus at which a condition **can** be chosen. The note
+now sits at that line and the check there carries only the geometric fact it can carry.* **⇒ THE
+TERMINAL CLAUSE, which your order weighted equally:** every theorem used is textbook — Carathéodory
+continuation for an $L^1$ first-order system, compact resolvent on a compact domain, Weyl asymptotics
+— and the closed domain through $r=0$ and the finite leaf length are **read off** the fixed
+background, which is what *"a Dirac operator on a fixed background"* means; **nothing in the closure
+is a mechanism the construction supplies**, and the one thing I expected to be the construction's own
+is the thing that failed. **So I say it as you asked it to be said: `PO-95`'s two halves close, and
+the row ends as a STATED LIMIT.** ⌗ *The register is not mine to rewrite — same line as `r7475` ③ and
+`r7489` ②: the computation is mine, the state of the row is yours.* **ROUTED, THREE THINGS, NONE
+ABSORBED.** ⛔ **① The operator dispute is incoherent in the corpus's own record and my row does not
+need it settled, which is why I carried both branches instead of adjudicating it:**
+`receipts/INDEX.md`'s row for `L-276` reads *"THE TWO BRANCH-POINT VERDICTS RECONCILED: LIMIT-CIRCLE
+STANDS"* (written r3319) while that receipt's **own head reads WITHDRAWN r3339** and reverts to
+limit-point, and `P14` sec:chirality currently carries $\psi'/\psi=\lambda/(r\sqrt f)$ — the
+limit-circle form — citing `W2`. Three records, two verdicts. ⌗ *Two observations inside it, offered
+as observations and not as a verdict: `L-276`'s withdrawal test substitutes candidate solutions into
+$\psi'=(\lambda/r)\psi$, which is the disputed pairing's **own** equation, so it returns $r^{+\lambda}$
+by construction; and `L-265`'s displayed exponent $-i\lambda r/2M$ pairs a $\dd/\dd r$ coefficient
+with $\dd\ell$, the same species of mismatch its own finding is about — its verdict is unaffected,
+both exponents being bounded.* **② The inner segment does not converge at Nariai:** as the horizons
+merge $\int_0^{r_b}\dd r/\sqrt{\lvert f\rvert}$ **grows** ($1.5617\to2.8935\to4.2228\to5.5520$ as
+$\varepsilon\to10^{-8}$), increments not shrinking, while `P14_leaf_compactness`'s **between-horizon**
+object converges to $1.8138\,\alpha$ — so compactness **at Nariai** rests on the itinerary, which is
+`P3`'s and not mine. **③ `r7577`'s new rule fires:** this result moves `P14` sec:chirality's own
+sentence that *"the quantised field, its mode completeness, and the join between the static region's
+continuum and the wall … remain open"*, and `P7`'s `frontier:fermion` with it — **please add the row
+to `computations/beyond_the_wall/r7577_69_the_census_refresh/items_keyed.tsv`** so
+`check_open_item_coherence` reads it again. **WHAT I TOUCHED:** the pre-registration, computation and
+walk under
+`computations/beyond_the_wall/r7577_cc66_the_quantised_fermion_on_the_slicing/` (40 checks, five
+controls, 0 failures); one receipt,
+`receipts/P14_matter_sector_paper/P14_the_leaf_measure_closes_completeness_by_a_different_theorem.py`
+(22 checks, 24 s); its `INDEX` row, appended at the **end** of the `P14` block on purpose so the
+appendix numbering appends rather than renumbering 160 labels; the two regenerated appendices,
+additive, five lines each; and `matter_sector_paper.pdf` recompiled twice, **90 pages, zero undefined
+references**. **No paper source, no register and no instrument is edited** — the instruments stay
+frozen per your order, and the one gate repair I would otherwise have reached for (the stale `L-276`
+`INDEX` row) is item ① above and is yours. ⚠ *One environment fact worth having: this container was
+re-provisioned and had lost its toolchain, so `numpy`, `sympy` and `mpmath` were reinstalled **at
+exactly `requirements-ci.txt`'s pins** (no pin moved) and a TeX toolchain was installed from scratch
+to recompile `P14` — `check_compile.py`'s link half is clean, and its compile half can now run here
+again.* **WHAT IS NEXT:** nothing of `PO-95` is open at this seat. I take whatever is topmost in the
+channel.
+
+## ⛔ `r7577+cc66.3` — THE PRE-PUSH GATE'S CLASS ONE IS RED, AND ALL ELEVEN REDS ARE **`main`'s OWN**, MEASURED ONE BY ONE
+
+**`scripts/run_touched_readers.sh` is red on my tree and the redness is not mine, established by
+measurement rather than by assertion — and I am reporting it because the gate's own header says a
+seat repairs another seat's receipt exactly when its own edit broke it, and the question of whether
+mine did is the whole question.** The gate's class one selected **67 receipts** that pin a sentence
+my tree touched in the two regenerated appendices — my change there is **five added lines in each,
+all my own entry, nothing removed**, so the selection is driven by the literals my `INDEX` prose
+quotes ($1.96307$, $1.8138$, $0.30385$) rather than by any sentence of someone else's that moved.
+**56 passed and 11 failed:**
+`L258/M1`, `L262/F1`, `L_probability/S5`, `S14`, `S18`, `S19`, `S20`, `S33`, `S40`, `S41`, and
+`P03_the_enclosed_mass_is_monotone…`. ⇒ **Each of the eleven was then run at a detached worktree on
+pristine `origin/main` (`841341aa`), with no edit of mine present at all, and each returned
+`rc=1` — eleven of eleven, measured individually and not sampled**, since a sample cannot carry a
+statement about a set. ⇒ **So my edit broke none of them and the gate's exception does not apply: I
+do not touch another seat's receipt here.** ⌗ *And the shape is worth having rather than just the
+count: these eleven live in the `heavy` tier, which is **skipped on a PR**, so a red there can sit on
+`main` indefinitely without any PR run saying so — which is exactly what the pre-push gate exists to
+notice and exactly why its noticing is not a finding against the push in front of it.* **Class two is
+green** (the only changed data file is my own `spectrum_out.txt`; no gate reads it). ⚠ **And one
+thing to expect rather than read as new:** nothing in this push can move those eleven, so the next
+`heavy` or nightly run will carry them again until whoever owns those lines reads them. **The
+repairs are not mine and the rows are not mine; the measurement is, and it is above.**
+
+## ⛔ `r7577+cc66.4` — `fast` WENT RED ON MY OWN HEAD AND **BOTH REDS WERE MINE**, so this one is a repair and not a routing
+
+**Unlike `.3`'s eleven, these two are not `main`'s: `fast` was GREEN at `6a19e63a` and went red at
+`c19b3c72`, which is my push, and the two failing gates name my own receipt.** ⛔ **①
+`check_unread_figure`:** my receipt's label read *"the near-wall law is `P14`'s own
+$r^{3}=\tfrac92M\ell^{2}$"* while **nothing in the receipt opened `P14`** — so the check would have
+stayed green on any sentence the paper might move, which is exactly the defect that gate exists to
+catch. The gate offers two remedies — read the figure, or drop the attribution — and **I took the
+stronger one: the receipt now reads the law out of `corpus/matter_sector_paper.tex` and asserts its
+own symbolic $r(\ell)$ against what the paper prints**, so the paper moving breaks the receipt.
+⛔ **② `check_figures_pinned`:** five figures my `INDEX` row printed beside that receipt were **not
+pinned in it** — the Weyl check asserted only a *relative* agreement between the measured spacing and
+$\pi/L$, which stays green if both drift together, and the transfer ladder and its exponent were
+printed without being pinned at all. **Six are now pinned, each at the gate's own allowance (the
+coarser of half a unit in the last printed digit and $0.05\%$), and the row's digits were brought
+back to exactly what is pinned** — $1.7372$, $1.7783$, $0.060$, $0.3354$, $7.368\times10^{-4}$,
+$0.3323$. Back to baseline $1376$; both gates green locally. ⌗ **And the first repair attempt failed
+in a way worth keeping, with the note now at the line that caused it:** I wrote the pins as a
+**table walked by a loop**, and the gate stayed red — its reader parses **comparisons** in the
+receipt's source, so a literal sitting in a data row pins nothing. Each pin is now written out as its
+own comparison, which is the form the gate's own docstring names. ⚠ **AND THE METHOD FAILURE IS THE
+PART WORTH KEEPING, because it is mine and not the gate's:** `r7471` ② makes the pre-push gate the
+**reader set plus the receipt**, and I ran exactly that and it told me nothing about these two,
+because **neither is a reader of a changed file — both are text gates that read the `INDEX` row I
+wrote**. ⇒ *So a landing that adds an `INDEX` row has a second exposure the reader-set gate does not
+cover by construction, and the affordable cover is not `run_fast_job.sh` but the handful of text
+gates that read `receipts/INDEX.md`. I ran the whole 133-gate text loop plus the ten `--check`
+generators before this push rather than guessing which.* ⛭ **AND THE REPAIR MINTED A QUOTE PIN, WHICH IS ADJUDICATED IN THE SAME PASS THAT CREATED IT** rather than left to raise the unadjudicated ceiling — the rule that bit at `r7132`. Reading the law out of the paper means asserting `P14`'s own printed form, which the instrument reports as one new `PAPER/TOKEN` key; it is recorded in `corpus/quote_pin_baseline.tsv` as **`DELIBERATE`**, with the reason written out: the wording **is** the claim here, so if `P14` renotates the law this receipt *should* fail and the attribution be re-read and re-pointed — which is exactly what `r7579` did for four other keys. Zero stale entries; the ceiling does not move. ⚑ **AND ONE THING FOR YOUR `r7577` ROW THAT I FOUND WHILE DOING IT, WHICH IS WORTH MORE THAN THE REPAIR:** the sentence my result moves — `P14`'s *"the quantised field, its mode completeness, and the join between the static region's continuum and the wall … remain open"* — **is itself quote-pinned by three receipts**: `L221_the_bridge/B34_the_join_crosses_the_inner_horizon`, `L221_the_bridge/B35_the_continuation_is_cited_wrong`, and `L548_propagating_sector/C1_the_tortoise_divergence_is_the_normalisation_of_the_object_not_the_obstruction_to_it`. ⇒ *So when that sentence is edited, those three go red on the same push, and they are not mine to re-point. Naming them here is the whole point of the new rule: the `items_keyed.tsv` row and these three pins are one piece of work, not two.* **This changes no result:** the verdict,
+every measurement and the terminal clause of `.2` stand unaltered — what changed is that the figures
+the row prints now fail the receipt if they are wrong, which is what the row claimed by printing them.
+
+## ⛭ `r7577+cc66.5` — `main` MOVED AND THE PR WENT `dirty`; MERGED AND RESOLVED. **AND ONE CORRECTION TO `.2`'s ③ THAT SAVES YOU A STEP, PLUS A GAP IN THE CENSUS THAT IS WORTH MORE THAN THE REQUEST I MADE**
+
+**`main` advanced four commits (`r7581`, `r7583`, `r7585` ×2) and #528 went from `unstable` to
+`dirty`; `origin/main` is merged in and the conflict resolved.** ⌗ *One conflict, and it is the
+species your own rule names: `corpus/quote_pin_baseline.tsv`, where two seats each appended **one**
+row at the same point — `r7585`'s new `P10` value pin and my `.4` `PAPER/TOKEN` key. **Both kept,
+`main`'s ordering first**, nothing chosen between them. `receipts/INDEX.md` auto-merged with both
+seats' rows intact and no markers. The appendices are generated, so they were **regenerated from the
+merged `INDEX`** rather than hand-resolved — the diff against `origin/main` is then exactly my five
+added lines in `P14` and five in the corpus appendix, nothing else — and `matter_sector_paper.pdf`
+was recompiled twice on the merged tree: 90 pages, zero undefined references. Re-validated after the
+merge: the receipt green, and `check_figures_pinned`, `check_unread_figure`, `check_glyph_coverage`,
+`check_appendix_current`, `check_rows_cite_receipts`, `check_exact_counts`, `check_computes`,
+`check_receipt_asserts` all green, with zero new and zero stale quote-pin keys.*
+⛔ **AND NOW THE CORRECTION, WHICH IS MINE AND WHICH YOU SHOULD HAVE BEFORE YOU ACT ON `.2`: I ASKED
+YOU TO ADD AN `items_keyed.tsv` ROW THAT ALREADY EXISTS.** Reading the merged file rather than
+recalling my own request: **`P14`'s sentence is row 141**, status `OPEN`, keyed `PO-95`, its reading
+*"the quantised fermion field, its mode completeness and the continuum-to-wall join, now work carried
+on `P7`'s frontier and `PO-95`"*; and **`P18`'s is row 233**, status `OPEN`, keyed `PO-95`. ⇒ *So
+nothing is owed on those two but a **re-read**: both say `OPEN`, and my result is the thing that
+argues they should not. The request in `.2` ③ was for work you had already done at `r7577`, and I
+withdraw it.* ⚑ **WHAT IS ACTUALLY MISSING IS BETTER THAN WHAT I ASKED FOR, AND IT IS ESTABLISHED
+RATHER THAN NOTICED:** `P7`'s `frontier:fermion` — **the authoritative statement of `PO-95`**, at
+`corpus/CR_framework.tex:1978`, *"The quantised fermion field on the slicing: its mode completeness,
+and the join…"* — **is not in the census at all.** The census's `P7` rows carry exactly the labels
+`frontier:holding`, `frontier:quantum`, `frontier:realforms`, `frontier:sm`, `rem:twolevels` and
+`sec:frontiers`, and **neither of that item's distinctive sentences occurs anywhere in the file** —
+checked as an absence over the whole file and over the label set, not sampled. The three rows keyed
+`PO-95` are 91 (`P7` `frontier:realforms`, keyed `PO-94 PO-95`), 141 (`P14`) and 233 (`P18`).
+⇒ *So when `PO-95`'s state changes, `check_open_item_coherence` will catch `P14`'s sentence and
+`P18`'s and will be **silent on `P7`'s own**, which is the one the row is stated at. That is a row to
+add rather than re-read, and the census is yours — `r7577` freezes the instruments at this seat, so I
+have touched nothing in it.*
+
+## ⛔ `r7577+cc66.6` — THE SCOPED **PLAIN SUITE** ALSO CANCELS, AND ITS OWN SCOPE ESTIMATOR SAYS WHY: 143 RECEIPTS / $7458$ s AGAINST A 75-MINUTE BUDGET
+
+**A second budget cancellation, a different job from `.21`'s, and this one is measured with the
+repo's own instrument rather than inferred.** On the merge head `482a4b20` the job *"scoped — the
+plain suite, on what this push can have changed"* (`gates.yml:470`, `timeout-minutes: 75`) ran
+`04:39:51 → 05:59:52` and came back **`cancelled`** — **80 m 01 s** of wall clock against a
+75-minute budget, which is how GitHub reports a job that exhausts `timeout-minutes`. ⇒ **And the
+cause is not a guess: `scripts/receipt_scope.py` on this exact range prints it —**
+*"RANGE `origin/main..HEAD`: 11 path(s) changed, 0 deleted or renamed ⇒ **143 of 1119 registered
+receipt(s) in the SUITE scope, ~7458 s of compute by the index**."* At the step's own `--jobs 4`
+that is **$31.1$ minutes ideal**, comfortably inside 75 — so the overrun is the gap between ideal
+packing and realised wall time, and **the corpus already has that mechanism on record with a
+number**: node 60's channel reports `L_numerics/Q1` passing in about $50$ s on a seat's tree against
+$615$ s on the runner **under 4-way contention**. ⌗ *I name that as the known mechanism and not as
+this job's established cause — the job's log returns HTTP 404, so I cannot say which receipt it was
+in when the budget ran out, and I would rather say that than imply a reading I do not have.*
+⇒ **WHAT IS ESTABLISHED, AND WHY IT IS NOT THIS PR's CONTENT:** the 11 changed paths are my own, the
+scope they pull in is 143 receipts because an `INDEX`-row landing necessarily touches
+`receipts/INDEX.md` and the regenerated appendices — **files a large part of the receipt corpus
+reads** — and my own receipt contributes $24$ s of the $7458$. *So the arithmetic belongs to the
+SHAPE of an `INDEX`-row landing rather than to anything questionable in this diff, and **every seat
+landing a receipt faces the same sum**.* ⛭ **AND THAT MAKES IT A FINDING RATHER THAN AN EXCUSE, which
+is why it is here and not just on the PR:** `.21` measured that `main`'s own one-commit plain suite
+already runs at $46$–$64$ minutes of its 75, and this range's estimator predicts $124$ minutes of
+serial compute. ⇒ *So the 75-minute budget is below what the job's own scope estimator predicts for a
+landing of this shape, and the job is **structurally unable** to go green on such a push — not
+flaky, not content-dependent, and not fixable from inside a diff.* The remedies are all in places
+this seat does not edit: the budget at `gates.yml:470`, the step's `--jobs 4`, or the scope rule that
+maps a touched `INDEX` to 143 receipts. **Routed to you with the numbers; I have changed nothing.**
+⌗ *The one re-run stays **unspent**, and deliberately: a re-run exists to show a failure is not this
+PR's, and an 80-minute job whose cause is its own scope arithmetic will return the same answer and
+cost another 80 minutes to say it. The single standing-down comment on #528 now carries both jobs,
+edited rather than duplicated. And one thing to expect rather than read as new: this routing push
+re-triggers both, so both will cancel again for the same reason.*
+
+## ⛔ `r7577+cc66.8` — MERGED `r7591`, AND **THE MERGE RULE I HAD WRITTEN DOWN IS WRONG**: "KEEP BOTH" RESURRECTED A ROW `main` HAD DELIBERATELY DELETED
+
+**`main` advanced two commits (`r7591` ×2) and the PR would have conflicted again in the same file;
+merged and resolved — but the resolution caught a defect in the rule itself, and the rule is mine.**
+⌗ *The standing recipe, yours in the cycle prompt and mine in my own check-in prompt, reads:
+"`INDEX.md` conflicts are usually two seats adding rows at the same point — **keep both**, take
+`main`'s ordering." **That is right for two independent ADDITIONS and wrong the moment one side has
+DELETED a row**, and `r7591` is exactly that case: it is a CORRECTION of `r7587`/`r7589`, and it
+**renamed** the `P10` receipt —
+`…the_tower_logarithms_are_not_covariant_so_the_dimension_six_coefficient_belongs_to_an_invariant_of_the_foliation.py`
+became
+`…the_free_towers_logarithm_is_covariant_up_to_the_scale_factors_equation_and_the_same_level_cubics_is_not_so_the_coefficient_needs_the_complete_second_order.py`
+— and replaced that receipt's quote-pin row with one for the new name.* ⇒ **Taking "both sides" of
+that hunk resurrected the pin row for the DELETED name**, a row whose receipt no longer exists.
+⛭ **And that is not a cosmetic slip: it is precisely what `check_quote_pins` fails as STALE** — *"no
+longer reported, so the adjudication describes nothing"* — and the gate's own charter says the
+baseline **may only shrink**. *So a blind "keep both" would have landed a stale baseline row on `main`
+under cover of a merge, which is the quietest way there is to raise an exemption ceiling.*
+⇒ **THE RULE, CORRECTED, AND I WOULD RATHER STATE IT THAN HAVE IT INFERRED FROM A FIXED FILE: keep
+both seats' LIVE ADDITIONS, and take `main`'s DELETIONS.** A side that removed a row made a decision,
+and a merge is not the place to undo it. **And the check is a SET COMPARISON rather than a reading of
+the diff**, because the diff of an append-only file is exactly where this hides: after the repair the
+baseline carries **`main`'s 2734 rows with 0 missing**, plus **exactly one** of mine
+(`P14_the_leaf_measure_closes_completeness_by_a_different_theorem`), and the instrument reports
+**0 new and 0 stale keys**. ⌗ *My own check-in prompt carried the uncorrected rule, so it is rewritten
+with this one; and the same correction applies to any file two seats append to, not only this one.*
+**The rest of the merge is as `.5` and `.7`:** `receipts/INDEX.md` auto-merged with both seats' rows
+and no markers; the appendices **regenerated from the merged `INDEX`**, the diff against `origin/main`
+again exactly five added lines in `P14` and five in the corpus appendix; `matter_sector_paper.pdf`
+recompiled twice — 90 pages, zero undefined references; `main` did not touch
+`corpus/matter_sector_paper.tex`, so the receipt's paper-read pin still finds the near-wall law at
+source. Re-validated: the receipt green, and `check_figures_pinned`, `check_unread_figure`,
+`check_appendix_current`, `check_pin_board`, `check_prose_pins`, `check_exact_counts` green.
+**No result changes:** `.2`'s verdict, measurements and terminal clause stand, and the routed items of
+`.5` and `.6` stand as written.
