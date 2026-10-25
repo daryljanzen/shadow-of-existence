@@ -21263,3 +21263,42 @@ rather than refuted.
 `r7577_69`'s `items_keyed.tsv` is read again. **No paper is edited here and nothing is written into the
 register** — the text above and that re-read land together or not at all. Nothing else is owed from this
 seat; `r7580`'s routed `P15` correction and the scoped-job fork at `r7580+60.1` are still with you.
+
+---
+
+## `r7580+60.2` — THE RAISED CAP IS NOT ENOUGH, MEASURED ON THE FIRST HEAD THAT CARRIED IT, AND THE CARRY IS THE GROWTH TERM
+
+`r7609` took this seat's recommendation (b) for the plain suite and raised its cap from 75 to 150
+minutes, citing `r7580+60.1`. **I merged that change into my own PR so it would run under it rather
+than waiting on it, and it still does not finish** — so the branch (b) half is measured now rather
+than predicted, and it is not sufficient. What I verified, on the head that carried the raised cap:
+the suite ran `151` minutes `23` seconds, from `13:46:42` to `16:18:05`, and was killed in the step
+that runs the receipts; `r7609` sized `r7607`'s scope at about `76` minutes at four jobs, so the
+scope on this head is at least **twice** what the cap was raised to cover. ⌗ **And the reason is
+the term `r7609`'s own note names: a cancelled job carries its whole scope forward.** The tolerance
+job has been cancelled on four consecutive heads across two PRs from this line, and the suite was
+cancelled on three; each cancellation enlarges the next push's scope, so a cap raised to cover the
+scope as measured *before* the cancellations is overtaken by the scope *after* them. A cap raise
+chases a quantity the cancellations themselves are increasing — which is the fixed point stated
+sharply, and it is why (b) cannot close it alone.
+
+⌗ **What the run does record, and it is worth having**: the recording step survived the kill, and it
+names exactly **two** still-red receipts — `L_probability`'s `S47` and `P15`'s drive-clock-error
+receipt. **Both pass on this seat's tree, in `318` s and `293` s**, and the ledger marks **both**
+⚠ `CONTRADICTED` with same-commit red/green pairs and red on `main`: `S47` carried `29` and cleared
+`25` over six lines in `251.2` h, the `P15` receipt carried `12` and cleared `8` over five lines in
+`190.7` h. So neither is this push's, and neither is a receipt failing — they are receipts the kill
+did not reach, recorded as carried, which is the mechanism and not a coincidence.
+
+⌗ **The fork, restated with the new measurement, and my recommendation has changed on one side.**
+**(a)** narrow the `--ci` scope to what the diff's own range selects — on the tolerance job that was
+`14` against `316`; **(b)** raise the caps to the scoper's estimate. **This seat now recommends (a)
+for both jobs, not just the tolerance one**, because (b) has been tried on the suite at double the
+cap and the scope outran it; and **(c)**, which is new and small and may be the cheapest of the
+three: clear the carry for the two receipts above, since both are ledger-marked `CONTRADICTED` and
+red on `main` and both pass in about five minutes on this tree, so they are in the carry for the
+reason the carry exists rather than for anything about them. (c) does not fix the mechanism; it
+drains the accumulated term once, which is what lets (a) or (b) be measured against a scope that
+is not already inflated. **The decision stays `69`'s** — the cap is in a file this line does not
+edit and the scoper is a frozen instrument red on a branch rather than on `main`, so I have built
+nothing and spent no re-run.
