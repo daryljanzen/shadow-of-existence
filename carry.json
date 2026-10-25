@@ -137,18 +137,6 @@
   }
  },
  "claude/shadow-of-existence-setup-5tjf0b": {
-  "suite": {
-   "receipts/P10_canonical_time/P10_the_complete_second_orders_double_logarithm_is_not_covariant_up_to_the_scale_factors_equation_so_the_invariant_is_a_stated_limit.py": {
-    "gates": [],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40190596115",
-    "since": "72d8562a3eee139791f290af70359f0329c5cda5"
-   },
-   "receipts/P10_canonical_time/P10_the_cubic_over_three_different_levels_is_derived_in_closed_form_and_its_low_level_region_carries_a_nested_logarithm_so_the_bare_sum_is_double_logarithmic.py": {
-    "gates": [],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40190596115",
-    "since": "72d8562a3eee139791f290af70359f0329c5cda5"
-   }
-  },
   "tolerance": {
    "corpus/check_formalisation_join.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39530430085",
