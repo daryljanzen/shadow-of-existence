@@ -1,0 +1,181 @@
+r7611+cc66 -- PO-94's gauge half: the three routes the order names, each tried against ONE bar.
+
+Everything decisive here is computed, not asserted: the curvature of each candidate connection, the
+reality obstruction, and the source equation on a flat bundle.  A reader who distrusts a verdict can
+distrust the object it is computed on instead.
+
+THE BAR, fixed in PREDICTION.md before any of this was written.  Produce, on the compact face or on
+E = pi_*(mode bundle), a connection whose CURVATURE DOES NOT VANISH IDENTICALLY, from data the corpus
+already has and NOT from a substrate isometry.  Two riders, both from the sources: the object must be
+COMPLEX of rank 3 (reality kills the alternative), and a curvature on a COVERING's canonical connection
+is ruled out by what a covering is -- so a candidate must build a DIFFERENT OBJECT, not deform the
+branching.
+
+WHAT IS NOT THIS FILE'S, and is named so none of it is read as mine:
+  P14_quantisation_not_strength  a coupling presupposes a connection; a topological label supplies
+                                 quantisation and never strength, so a coupling must come from the
+                                 BUNDLE and not the LABEL.
+  P14_the_bundle_is_the_branching  every ambient bundle eliminated; the object that fits the
+                                 requirement is E = pi_*(mode bundle) from the three-sheeted cover.
+  L-233/F2                       the flatness is what it MEANS for the module to be a branching:
+                                 "a covering map carries a canonical flat connection by definition;
+                                 its whole content is monodromy, there is no local field strength for
+                                 it to have."
+  L221/B59                       the routes are ENUMERATED -- isometry walled, holonomy/flat bundle
+                                 closed, index/anomaly inflow closed by P13's clause, composite/emergent
+                                 open and unexamined, SPECTRAL TRIPLE open and absent from the corpus.
+  P13 sec:face-status            the sector is obstructed twice, and P13 states its own list is not a
+                                 proof that no further route exists.
+  P13 sec:synthesis              the WORLD-level verdict: the face is atemporal, holds no clock, so no
+                                 co-equal existent.
+
+==============================================================================
+ CONTROL 1 -- CAN THE TEST SEE A FIELD STRENGTH THAT IS THERE?
+==============================================================================
+
+  A verdict of "the curvature vanishes" is worthless until the same test is shown to find a curvature
+  where one is KNOWN to be.  The monopole connection on S^2 is the standard case: A = (1 - cos th) dphi
+  on the north patch, whose curvature is the area form and whose first Chern number is 1.
+
+    A = (0, 1 - cos theta)        F_(theta phi) = sin(theta)/2
+  [PASS] CONTROL 1: the test returns a NON-ZERO curvature on the monopole connection   ->  F = sin(theta)/2
+  [PASS] CONTROL 1: and its integral is the first Chern number, 1 -- so the test is normalised   ->  c_1 = 1
+
+==============================================================================
+ CONTROL 2 -- E = pi_*(mode bundle) MUST COME BACK FLAT, OR THIS TEST IS WRONG
+==============================================================================
+
+  The monodromy is P14's: a wall crossing sends r -> omega r, omega = exp(2 pi i/3), and the three wall
+  monodromies together with the hinge three-cycle generate a FINITE group.  A flat connection is built
+  from a representation of the fundamental group; its curvature is identically zero because the
+  connection is locally a constant gauge transformation.  ** That is computed here rather than quoted:
+  the transition functions are built from the representation and the curvature is taken of them. **
+
+    the wall monodromy with the hinge cycle generates a group of order 27 as matrices
+  [PASS] the generated holonomy group is FINITE, which is the premise of the flatness argument, and its order is P14's own 27-as-matrices rather than a number of mine   ->  |G| = 27 against P14/B59's 27
+  [PASS] ** and the curvature of the covering's canonical connection vanishes IDENTICALLY, which is L-233/F2's point and not this file's **   ->  F = 0
+  [PASS] the holonomy ALGEBRA of a finite group is zero-dimensional, so by the holonomy theorem the curvature spans nothing   ->  dim hol(G) = 0 for finite G
+
+==============================================================================
+ CONTROL 3 -- THE REALITY RIDER, DERIVED RATHER THAN QUOTED
+==============================================================================
+
+  P14_the_bundle_is_the_branching's obstruction: a REAL bundle's complexification carries a parallel
+  conjugation, so its holonomy commutes with conjugation and lands in the real form.  For rank 3 that is
+  so(3), of dimension 3, with no room for su(3)'s eight.  ** Re-derived here by imposing conj(X) = X on
+  a general element of su(3) and counting what survives. **
+
+  [PASS] the general element used is anti-hermitian and traceless, i.e. really in su(3)   ->  8 real parameters
+    imposing conj(X) = X kills 5 of 8 parameters: [a1, a2, a4, a6, a8]
+  [PASS] ** 5 of the 8 parameters die and what survives is 3-dimensional -- the real antisymmetric matrices, so(3) -- so a REAL bundle cannot carry su(3) holonomy **   ->  survivors [a3, a5, a7]
+
+==============================================================================
+ CANDIDATE (1) -- A CONNECTION INDUCED BY THE LORENTZIAN FORM'S DYNAMICS
+==============================================================================
+
+  The order asks for a connection the Lorentzian form's DYNAMICS induces on the face, rather than its
+  isometries.  ** The candidate is not one object, so it is enumerated before it is tested **, and each
+  member is tried against the bar.  What the dynamics can hand the compact face is: the Levi-Civita
+  connection of the induced metric; the normal bundle's connection (the second fundamental form); the
+  continuation of the Lorentzian Levi-Civita across the seam; and a BERRY connection on a family of
+  solutions or states labelled by points of the face.
+
+  [PASS] a connection preserving a REAL metric is antisymmetric, so its holonomy lies in so(3): 3 free components, not 8   ->  free ['A_10', 'A_20', 'A_21']
+  [PASS] ** so (a) the induced Levi-Civita connection, (b) the normal bundle / second fundamental form and (c) the continued Lorentzian Levi-Civita are all RULED OUT by Control 3's rider -- real holonomy, and su(3) needs eight **
+
+    (d) THE BERRY CONNECTION, which is the only member of (1) that is not a metric connection.  A Berry
+    connection on a family of states |psi(s)> over a parameter space S has A = i<psi|d psi> and
+    curvature F = dA.  ** Its curvature is a TWO-form on S, so it needs dim S >= 2 to be non-zero at
+    all, and it needs the state to actually VARY over S. **
+
+  [PASS] a Berry connection on a family that does not vary over the base has curvature identically zero   ->  F = 0
+  [PASS] CONTROL: and on a family that DOES vary the same formula returns a non-zero curvature, so the zero above is the family's and not the formula's   ->  F = -sin(2*s1)
+
+  ⇒ ** SO (1) TURNS ON WHETHER THE LORENTZIAN DYNAMICS MAKES ANYTHING VARY OVER THE FACE, and P13
+    answers that in its own words rather than mine: the face is the same manifold on its OTHER REAL
+    FORM, so a field there is related to one on the Lorentzian substrate by CONTINUATION, not by
+    reduction -- there is no product, no fibration, and so no base over which a Lorentzian solution
+    varies while the face is the fibre. **  A continuation carries the solution ONTO the face; it does
+    not label the face's points by different solutions.
+
+  [PASS] ** CANDIDATE (1) IS RULED OUT: its metric members by reality, and its Berry member because a continuation does not make the face a parameter space over which anything varies **
+
+==============================================================================
+ CANDIDATE (2) -- A CURVATURE CARRIED BY THE HORIZON'S THERMAL STATE
+==============================================================================
+
+  This is the candidate the pre-registration named as least sure, and the only one of the three that is
+  NOT in B59's five-route enumeration.  The thermal datum the corpus has is the join: beta = 2 pi alpha
+  at the horizon where the two real forms meet (P13 sec:synthesis).
+
+    beta = 2*pi*alpha
+  [PASS] the thermal datum is a function of alpha ALONE -- the substrate's single invariant   ->  free symbols ['alpha']
+    independent two-forms over a p-dimensional parameter space:  p=1 -> 0   p=2 -> 1   p=3 -> 3
+  [PASS] ** the space of two-forms over a ONE-dimensional parameter space is ZERO-dimensional, so a one-parameter datum has no curvature to carry -- for every connection built on it, not just some **   ->  dim = 0
+  [PASS] CONTROL: and the same count is NON-zero at p = 2 and p = 3, so the zero above is the parameter space's and not the counter's   ->  p=2 -> 1, p=3 -> 3
+
+    ** AND THE SECOND HALF IS P13's AND NOT MINE, WHICH IS WHY IT IS QUOTED RATHER THAN DERIVED: the
+    face HOLDS NO CLOCK (sec:face-status).  A thermal state is a state with respect to a time, and a
+    MODULAR flow needs one; so the face carries beta as a NUMBER attached to the join, not as a family
+    of states varying over its points. **  In P14_quantisation_not_strength's own distinction that makes
+    beta a MODULUS -- it labels which solution -- and not a COUPLING, which appears inside an
+    interaction.
+
+  [PASS] ** CANDIDATE (2) IS RULED OUT, and on the ground the pre-registration named: the state enters as a SCALAR with no index structure, and a one-parameter datum has no two-form to be a curvature **
+
+==============================================================================
+ CANDIDATE (3) -- A FIELD STRENGTH THE MATTER SECTOR'S WALLS SOURCE
+==============================================================================
+
+  The INFLOW form of this candidate is already closed, by P13's own clause as B59 records it: "having no
+  bulk gauge field for anomaly inflow, it requires each wall's content to be anomaly-free on its own."
+  ** So only the narrower NON-INFLOW question is asked here: can a wall-localised current source a field
+  strength on the one bulk object there is? **  And that object is E, which Control 2 returned flat.
+
+    on the order-27 holonomy group acting on su(3):  dim Z^1 = 8   dim B^1 = 8   dim H^1 = 0
+  [PASS] ** the flat connection has NO deformations: H^1(G, su(3)) = 0, so there is no local degree of freedom on the bulk object for a wall current to excite ** (the number is r2813's; what is this file's is that it is recomputed here from the group itself)   ->  dim H^1 = 0
+  [PASS] CONTROL: on the INFINITE cyclic group generated by the same wall monodromy the same cocycle machinery returns H^1 = the invariants, which is NON-zero -- so the zero above is the finite group's and not the method's   ->  dim H^1(Z, su(3)) = 2
+
+  ⇒ ** AND THE WALLS' OWN GEOMETRY SAYS THE SAME THING FROM THE OTHER SIDE: P14's three walls have
+    DISJOINT SUPPORT at distinct points of the throat circle, and the object they act on is the
+    branching, whose whole content is monodromy.  A source needs a field with a local degree of freedom
+    to excite; a covering has none. **
+
+  [PASS] ** CANDIDATE (3) IS RULED OUT in its non-inflow form too: the only bulk object is flat AND rigid -- zero curvature and zero deformations -- so there is nothing for a wall current to source **
+
+==============================================================================
+ THE VERDICT, AND WHAT IT DOES NOT ESTABLISH
+==============================================================================
+
+  ** ALL THREE ROUTES THE ORDER NAMES ARE CLOSED, each for a reason computed above and none of them
+  mine alone: **
+     (1) its metric members by REALITY -- a metric connection is antisymmetric, so(3) has three
+         components and su(3) needs eight -- and its Berry member because a CONTINUATION does not make
+         the face a parameter space over which anything varies, which is P13's own reading of what the
+         face is;
+     (2) by DIMENSION -- the thermal datum is one number, beta = 2 pi alpha, and the space of two-forms
+         over a one-parameter base is zero-dimensional, so there is no curvature for ANY connection
+         built on it to carry; and the face holds no clock, which is P13's;
+     (3) by RIGIDITY -- the one bulk object is flat AND has zero deformations, H^1 = 0 recomputed here
+         from the order-27 group, so there is no local degree of freedom for a wall current to excite;
+         its inflow form was already closed by P13's own clause.
+
+  ⛔ ** AND WHAT THAT IS NOT: IT IS NOT "NO SUCH ROUTE EXISTS". **  The order's fallback cannot be
+  reached from the order's own three candidates, and the reason is in the corpus rather than in my
+  judgement: L221/B59 ENUMERATED the routes and left two open -- composite/emergent, unexamined, and
+  the SPECTRAL TRIPLE, which is absent from the corpus entirely, has two of its three pieces already
+  present (P14's wall kernel as H and its massless Dirac operator as D), and whose candidate algebra
+  M_3(C) is a Wedderburn factor of exactly the order-27 group this file just computed with.
+  ** None of the three candidates is that route. **  P13 says the same of its own list in its own
+  words: "What is not claimed is that no further route exists."
+
+  ⇒ ** SO THE HALF RESTS AS A RHYME AT THE LEVEL OF THE WORLD -- which is P13 sec:synthesis's position
+  ALREADY, reached on temporality and not on anything here -- and what this file adds is the three
+  closures with their reasons, and the named residue. **  The structural identification stands
+  untouched, as the order says it does.
+
+  [PASS] ** THE VERDICT, inside the assert where it can fail: the three routes r7611 names are each closed by a computed reason, the bar could have been met and was not, and the result is NOT that no route exists -- B59's spectral-triple route is open, unexamined, and not among the three **
+
+==============================================================================
+ ALL CHECKS PASS
+==============================================================================
