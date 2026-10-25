@@ -14,16 +14,18 @@ quote pinned against its own output:
     built on either rate, and fails at Omega_k = +-0.01;
   * the three-metric half carries no rate: every constant-tau slice, reparameterised by r, is one fixed flat
     R^3, so the stack carries no expansion of its own metric;
-  * the rate rule's two slots do not cover light's path: the criterion that puts the optical depth on the
-    stacking rate, photon-path observable, is absent where the rule is stated and present where it is used;
-  * light's own integrated path, the proper length read in each fundamental observer's own frame, is
+  * the rate rule as stated carries no photon-path criterion: that criterion, which puts the optical depth on
+    the stacking rate, is absent where the rule is stated and present where it is used;
+  * the proper frame's own light cone, the proper length along its null rays read in each fundamental
+    observer's own frame, is
     8787 Mpc against the implementation's 14011 (ratio 0.627), and puts the acoustic scale at 190 against
     the sky's 298.4, so the comb excludes it; the leaf-rate distance is 13942 Mpc, acoustic scale 301.4.
 The registered arm Hb (that the identification equates objects from the rule's two slots) is the one
 60 withdrew; it is asserted here to stay withdrawn, and its corrected form to hold.
 
 SCOPE.  Not a refutation of the stacking-rate assignment: what is established is that the identification
-does not force it.  No likelihood is run.
+does not force it.  The rate is fixed by the reassignment instead (the P15 receipt on the photon family crossing
+the leaves at unit cosmic-time rate).  No likelihood is run.
 """
 import contextlib
 import io
@@ -76,9 +78,9 @@ gate("the chart calibrated: min (d_chi r)^2 is exactly 1 at exactly alpha/sqrt3 
 gate("the identification's flatness half is rate-neutral (D_M = chi at Omega_k = 0 for every candidate rate)",
      A.get('Ⓖ') == 'HIT')
 gate("and its three-metric half carries no rate: every constant-tau slice is one fixed flat R^3", A.get('Ⓘ') == 'HIT')
-gate("the rate rule's two slots do not cover light's path (the corrected arm Hb'), the registered form Hb "
+gate("the rate rule as stated carries no photon-path criterion (the corrected arm Hb'), the registered form Hb "
      "staying withdrawn", A.get('Ⓗ′') == 'HIT' and A.get('Ⓗ') == 'MISS')
-gate("light's own integrated path is 8787 Mpc against 14011 (ratio 0.627) and is not the leaf-rate distance, "
+gate("the proper frame's own light cone is 8787 Mpc against 14011 (ratio 0.627) and is not the leaf-rate distance, "
      "13942 Mpc",
      A.get('Ⓓ') == 'HIT' and A.get('Ⓔ') == 'HIT'
      and D_path is not None and abs(D_path - 8787.241) < 0.001

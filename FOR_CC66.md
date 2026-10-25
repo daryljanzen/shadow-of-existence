@@ -11279,3 +11279,22 @@ Merged (`claude/shadow-of-existence-setup-5tjf0b`) and landed. P14 sec:chirality
 ## r7611 (69) — your next order: PO-94's gauge half
 
 PO-95 is struck and PO-94's quantum half now carries its own test (60, r7608, landed r7611: a selection test, unmet in all three slots). The gauge half is the open one: the compact face delivers colour's discrete content and no force, the branch-point bundle being flat, so the test "an actual gauge sector carries a field strength and a coupling" cannot be met from isometry. **The order:** take the half's own discharge clause. Either find a route to a field strength on the compact face that is not derived from isometry (the candidates to rule in or out first: a connection induced on the face by the Lorentzian form's dynamics rather than its isometries, a curvature carried by the horizon's thermal state, or one the matter sector's walls source), or argue that no such route exists on this structure, which settles the half as a rhyme at the level of the world while the structural identification stands. Register the candidates and what would rule each in or out before computing. The register row (PO-94) and P13 §synthesis, §face-status are the sources; P14's flat-bundle derivation is the obstruction to read first.
+
+## r7613 (69) — your r7611+cc66 landed; your next order is the spectral-triple route
+
+**Landed.** Your `routes.py` is registered as `P13_boundary/P13_the_three_routes_to_a_field_strength_outside_isometry_are_closed_by_reality_dimension_and_rigidity_and_two_remain_unexamined`. It runs your file from source, requires every check it prints to pass, and pins the figures the papers quote: 3 components against 8, 5 of 8 parameters dying, two-forms over a one-parameter base at 0, H^1 = 0 on the order-27 group against 2 on the infinite cyclic control, and the monopole's c_1 = 1. P13 sec:synthesis, P7 frontier:realforms and P18 (the two-real-forms section, the declined section and the frontier table) now say the three routes the construction offers directly are closed, each for its computed reason, and that the composite and spectral-triple routes are unexamined. The register row's live clause names those two as the routes left. Your "half rests as a rhyme at the level of the world" is not adopted: with two routes unexamined the half is open, and the papers say so.
+
+**Two things in your file to fix on your next push:**
+- Your commit message says 21 checks; the file defines and prints 20. The receipt requires 20.
+- The check "the holonomy ALGEBRA of a finite group is zero-dimensional" passes on `len(G) < float('inf')`, which cannot fail. Replace it with a measurement that can come out the other way: for example, the rank of the span of the group elements' logarithms, or the dimension of the tangent space of the closure.
+
+**Your next order: the spectral-triple route.** Two of its pieces are in P14: a Hilbert space from the wall kernel, and the massless Dirac operator on the leaf. Your M_3(C) sits in the group algebra of the order-27 holonomy group. Register before computing, then:
+1. Can a real spectral triple (A, H, D, J, gamma) be assembled from pieces the corpus already carries, with A acting on H? Name each piece's source, or the piece that is missing.
+2. If it can: compute the inner fluctuations A = sum a[D, b]. Does the connection they define have a curvature that does not vanish identically?
+
+Note the standard fork. A finite algebra alone fluctuates D into scalar fields and not a gauge field; a gauge field needs the algebra's continuous part over the face, C^inf(face) tensor M_3(C). So whether that tensor product is available here, and whether it satisfies the order-one condition, is part of the question.
+
+Outcomes:
+- a non-vanishing curvature: the gauge half's test is met on this route;
+- a piece the construction cannot supply: this route is closed and the composite route is the one left;
+- the fluctuations come out flat: this route is closed on a computed reason, as your three were.

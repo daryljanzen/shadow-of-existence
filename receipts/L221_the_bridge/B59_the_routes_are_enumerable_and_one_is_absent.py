@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """B59 -- the routes to a gauge field are ENUMERABLE, three of five are closed in the corpus, and the
-fourth is unmentioned: the spectral-triple route, whose algebra the corpus already has.
+fourth is untaken: the spectral-triple route, whose algebra the corpus already has, named in the papers only as unexamined.
 
 ** WHY THIS EXISTS. **  *** "No third mechanism has been named" is not a bound -- it is a report on who
 has spoken.  ** A bound needs the space of mechanisms enumerated. **  Standard field theory names
@@ -14,7 +14,7 @@ five. ***
                                                  for anomaly inflow, it requires each wall's
                                                  content to be anomaly-free on its own"
              composite / emergent        open     not examined
-             spectral triple (Connes)    open     NOT MENTIONED ANYWHERE IN THE CORPUS ***
+             spectral triple (Connes)    open     NAMED ONLY AS UNEXAMINED, TAKEN NOWHERE ***
 
   ⇒ *** THREE CLOSED, TWO OPEN, AND ONE OF THE TWO IS ABSENT FROM THE CORPUS ENTIRELY.  ** That is a
       bounded problem where there was an unbounded one. ** ***
@@ -120,10 +120,17 @@ def main():
         if os.path.basename(f).startswith('appendix_receipts'):
             continue
         t = open(f, encoding='utf-8', errors='replace').read()
-        if 'Connes' in t or 'spectral triple' in t or 'inner fluctuation' in t:
+        # r7613 (69): P7, P13 and P18 now NAME the route, as one of the two the gauge half has not
+        #   examined (cc66's r7611+cc66).  A mention that names it unexamined is not the route taken, so
+        #   what is checked is that no paper BUILDS it: no Connes, no inner fluctuation, and every
+        #   sentence saying "spectral triple" saying in the same sentence that it is unexamined.
+        _flat59 = ' '.join(t.split())
+        built = 'Connes' in t or 'inner fluctuation' in t
+        named = [x for x in re.split(r'(?<=[.;])\s+', _flat59) if 'spectral triple' in x]
+        if built or any(not re.search(r'unexamined|not yet examined|neither yet examined', x) for x in named):
             absent.append(os.path.basename(f))
-    check(f'⛭⛭⛭ ⓶ and the SPECTRAL-TRIPLE route is mentioned in {len(absent)} paper(s) -- ** absent '
-          'from the corpus entirely **', len(absent) == 0)
+    check(f'⛭⛭⛭ ⓶ and the SPECTRAL-TRIPLE route is BUILT in {len(absent)} paper(s) -- ** named only as '
+          'unexamined, and taken nowhere in the corpus **', len(absent) == 0)
     # ** the amendment is CHECKED rather than trusted: the term must still BE in a generated
     # ** appendix, or the exclusion above is decoration and would hide a real future mention. **
     _gen = [os.path.basename(f) for f in glob.glob(os.path.join(ROOT, 'corpus',
@@ -171,7 +178,7 @@ def main():
     print('       ⛔ holonomy / flat bundle     CLOSED  (r2813)')
     print('       ⛔ index / anomaly inflow     CLOSED  (boundary paper: no bulk field for inflow)')
     print('          composite / emergent       open    not examined')
-    print('          spectral triple (Connes)   open    ** NOT MENTIONED ANYWHERE **')
+    print('          spectral triple (Connes)   open    ** NAMED ONLY AS UNEXAMINED, TAKEN NOWHERE **')
     print('     ⇒ *** "No third mechanism has been named" is a report on who has spoken.  This is a')
     print('     bound. ***')
     print('  ⛭⛭⛭ ⓶ ** And the spectral route has its pieces: ** H is the wall kernel, D is P14\'s')

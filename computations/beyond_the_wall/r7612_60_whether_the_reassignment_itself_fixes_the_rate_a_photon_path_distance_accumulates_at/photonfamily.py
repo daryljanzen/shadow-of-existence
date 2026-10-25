@@ -86,11 +86,6 @@ ADJ = {
    "P10, and the closest thing in the corpus to a derivation -- but its object is a PLASMA PROCESS and "
    "an era computation, not the projection's distance; the same sentence puts distance and redshift on "
    "the SHIFT, not the lapse"),
- "fixes which length that is and not which rate it is built on, so whether the construction derives "
- "that rate is the open item of the scalar sector": ('STATES',
-   "P7, carrying r7580's own result: it states that the rate is NOT derived"),
- "The rate the projection's distance is built on is therefore assigned by the clause that names it and "
- "is not forced by the readout": ('STATES', "P15, r7580's own landed sentence: assigned, not derived"),
  "the Nariai member, by the reassignment's own selection argument rather than by choice": ('GROUNDS',
    "P18's ledger, and the object is the Nariai member, not the distance's rate"),
  "And the division is carried out rather than asserted": ('STATES',
@@ -99,23 +94,21 @@ ADJ = {
 # it was dropped rather than kept as a stale one: that sentence names the three levels and neither a
 # rate nor a distance, so by the net's own definition it is not a sentence assigning a distance to a
 # rate.  It grounds WHICH LEVEL a quantity sits on, which is a step before the question asked here.
- "So what carries the item to a verdict is the rate light's path distance takes": ('STATES',
-   "P7, naming the open item"),
- "so the rate is assigned rather than forced, and whether the construction derives it is the question "
- "the episode turns on": ('STATES',
-   "P6, carrying r7580's result: it says in terms that the rate is NOT derived and that whether it can "
-   "be is the open question -- which is this revision's question, stated by the corpus as open"),
- "fixes which length the distance is and not which rate it is built on, so the stacking rate is "
- "assigned rather than forced": ('STATES', "P7 sec:frontiers, the same sentence in its frontier item"),
- "which fixes the length and not the rate, so the stacking rate is assigned rather than forced, and "
- "light's own integrated path, a third distance, the acoustic comb excludes": ('STATES',
-   "P7 again, with r7580's third object; assigned, not derived"),
  "the verdict it returns is that the spectrum derived here, with the projection's distance on the "
  "stacking rate the construction assigns it, is disfavoured": ('STATES',
    "the only sentence in the net whose 'derived' is about the SPECTRUM and not about the assignment -- "
    "caught by the marker and adjudicated rather than counted"),
- "whether the two real forms are physics' gauge and quantum sectors & for the gauge half": ('STATES',
-   "P18's table of the six open items, which lists this rate as one of them"),
+ # r7613 (69): the derivation this file found, written into the papers when 69 landed it.  These are
+ # this result's own sentences and not prior clauses, so they are LANDED and not DERIVES: arm A asks
+ # whether any clause derived the rate BEFORE this computation, and the six keys above that r7613's
+ # rewrite removed are dropped rather than kept stale.
+ "on the stacking rate, which the construction derives for it": ('LANDED', "P7's abstract, r7613"),
+ "whether the stacking rate it derives for light's path distance holds on the cut": ('LANDED', "P7 sec:intro's cosmology summary, r7613"),
+ "So the stacking rate the projection's distance is built on is derived, by the reassignment's own "
+ "identification of the photon family": ('LANDED', "P15 sec:scope, r7613: this file's derivation, written in"),
+ "the stacking rate the reassignment derives for it on the vacuum chart": ('LANDED', "P16, r7613"),
+ "And the stacking rate is derived": ('LANDED', "P18 sec:frontier, r7613"),
+ "whether the rate light's path distance takes, derived on the vacuum chart, holds on the cut": ('LANDED', "P18's open-items summary, r7613"),
 }
 seen, unadj, derives = {}, [], []
 for stem, s in claims:
