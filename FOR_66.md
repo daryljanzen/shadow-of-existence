@@ -24743,3 +24743,84 @@ and attaching it to a structural result with two routes unexamined borrows a clo
 argument. *The three closures and the named residue are the whole of what I contributed; the register
 row's live clause naming composite and spectral-triple as the routes left is the correct statement and
 mine was not.*
+
+## ⚑ `r7613` — **THE SPECTRAL-TRIPLE ROUTE IS CLOSED, AND IT CLOSES ON THE *LOCUS*, NOT ON THE REAL STRUCTURE `B61` PRICED.** Four of `B59`'s five are now closed and composite/emergent is the only one left
+
+**The answer to ⑴ is "a piece the construction cannot supply", and the piece is not the one anybody
+expected: it is a two-form over the carrier the corpus's $\mathcal H$ and $D$ actually live on.**
+⒜ *Where the pieces are.* `P14` supplies $\mathcal H$ and $D$ over the **leaf** — read from the paper
+here and not recalled: *"the leaf is compact and the Dirac operator on it carries a `\emph{finite}`
+analytical index"*. **The leaf is a compact ONE-dimensional domain.** ⒝ *And a gauge curvature is a
+two-form on its base,* so the question has an arithmetic answer rather than an interpretive one: the
+space of two-forms over a one-dimensional base is **zero**-dimensional — counted by solving
+$M+M^{\mathsf T}=0$ for the free entries, never by quoting $\binom p2$, with the counter returning
+**1, 3 and 10** at $p=2,3,5$ so the zero is the leaf's dimension and not my counter's. ⇒ **So a
+connection built from these pieces has no object a field strength could BE, whatever its inner
+fluctuations are, and the route closes before the real structure is ever reached.** ⒞ *And the repair
+is where the corpus states an obstruction rather than supplies a piece:* building the triple over the
+**face** instead needs a Dirac operator there, and `P13` §face-status says in its own words — read
+here — *"the round face carries no Dirac zero modes, so there is no massless content for it to act
+on"*. ⒟ *On the reading $\mathcal H=\ker D$ it closes twice over:* `P14`'s $\dim\ker_+=3$,
+$\dim\ker_-=0$ admits **no** grading-reversing $J$ — the gap is **3** and an antilinear bijection
+cannot close it, against gap **0** on a balanced space where the $J$ is **exhibited** rather than
+asserted — and on a kernel $D$ is zero, so every inner fluctuation $a[D,b]$ vanishes: span rank **0**,
+against rank **11** for the same expression on a circle triple. ⚠ **AND THE READING IT DOES NOT CLOSE
+IS NAMED, because `PREDICTION.md` named it before it was computed:** the $(3,0)$ count belongs to
+$\ker D$ and **not** to $\mathcal H$; on the full $L^2$ of the leaf the grading is balanced and the
+chirality obstruction does not apply. *So ⑴ is closed on the kernel reading and **open** on the $L^2$
+one — and the locus is what closes that one, not $J$.* ⛭ **THE PRE-REGISTERED CALL HELD AND IT WAS
+AGAINST `B61`, which is worth more to you than the verdict.** `B61` prices the risk as *"the real
+structure $J$ and the order-one condition — either can kill it"*. `PREDICTION.md` priced the **locus**,
+reached first, and committed to saying so in those words if $J$ turned out to be the killer instead.
+**The locus fired; the order-one condition does NOT close the route — it passes, VACUOUSLY, because
+$D$ is zero on a kernel**, and I report that as a pass that buys the route nothing rather than folding
+it into the closure. ⒠ *Scored:* **1 of 4** questions answered in the route's favour, inside the
+registered band of 0–1, at its top edge; pre-registered **outcome 2**. ⛔ **NOT claimed:** that no
+route exists — **`B59`'s composite/emergent route is untouched, unexamined, and is now the only one of
+the five left**; that a **coupling** follows (`PO-5`, a different row); that `B61` is weakened — its
+rows are read, not re-derived, except the grading, recomputed here so nothing is inherited on trust.
+**Landed:** `receipts/P13_boundary/P13_the_spectral_triple_route_is_closed_on_the_locus_because_the_
+leaf_carries_no_two_form_and_the_face_carries_no_zero_modes.py` (9 gates, ALL PASS) over
+`computations/beyond_the_wall/r7613_cc66_the_spectral_triple_route/` (`PREDICTION.md`, `spectral.py`
+22 checks / 2 s, `spectral_out.txt`, `WALK.md`), its `INDEX` row at the end of `P13`'s block,
+appendices regenerated, `boundary_paper.pdf` recompiled at 36 pages with zero undefined references.
+
+## ⛔ `r7613+cc66.3` — **MY FIRST CONTROL FAILED TWICE BEFORE IT PASSED, AND BOTH FAILURES WERE MINE.** That is the part of this row I would most want read
+
+**A control that cannot fail licenses every verdict under it, so this is not a confession, it is the
+reason the passes above mean anything.** ⒜ *The first version asserted the wrong axiom.*
+$\mathcal A=C(S^1)$ on $L^2(S^1)$, $D=-i\dd/\dd\theta$, $J$ = complex conjugation, asserting
+$JD=DJ$. **It failed, and correctly: for that $D$, conjugation gives $JDJ^{-1}=-D$, so plain
+conjugation is not a real structure for that operator.** ⌗ *The axiom I had written down was the wrong
+one — and had I written the check the other way round it would have **passed** and certified nothing,
+which is the same shape as the four cannot-fail checks in `r7611`.* ⒝ *The repair was also wrong, and
+more interestingly.* The two-point space taken naively — $\mathbb C\oplus\mathbb C$ acting
+**diagonally** on $\mathbb C^2$ with $D$ purely off-diagonal — asserting the order-one condition. **It
+failed too, and again correctly: that triple genuinely violates order-one, defect $60.1$ at
+$a=b=\operatorname{diag}(2,-3)$.** ⌗ *Which is exactly why the Standard Model's finite triple is built
+as a **bimodule** and not like that — a thing I did not know until the control refused to pass.*
+⒞ *The passing form is the one the condition is actually about:* the algebra on the left tensor factor,
+its opposite on the right through $J$, $D=D_1\otimes1+1\otimes D_1$ with $D_1$ real symmetric so $D$ is
+$J$-symmetric. Then $J^2=+1$, $JD=DJ$, order-one defect **$0$ exactly**, and $\lVert[D,a]\rVert$ up to
+**$17$** so the arm is **not** vacuous. ⒟ *And the circle is kept as a control whose job is now to come
+back the other way:* $\lVert JDJ^{-1}-D\rVert=26.98$ against $\lVert JDJ^{-1}+D\rVert=0$, so a real
+structure is distinguished from something that merely looks like one. ⇒ *Two of my own errors, caught
+by the instrument I built to catch them, before either reached a verdict.*
+
+## ⛭ `r7613+cc66.4` — a gate blind spot I hit rather than guessed at: **a paper-read inside a COMPUTATION file is a real pin the quote-pin ledger cannot see**
+
+**This row reads four literals out of `corpus/matter_sector_paper.tex` and `corpus/boundary_paper.tex`
+— and minted ZERO quote-pin keys.** I expected four and checked rather than assumed: the instrument
+reports $2737$ live keys against a baseline of $2737$, 0 new and 0 stale. ⌗ *The reason is structural:
+`check_quote_pins` scans `receipts/`, and my reads live in
+`computations/beyond_the_wall/r7613_cc66_the_spectral_triple_route/spectral.py`, which the receipt
+**runs** rather than contains.* ⇒ **So the pin is real and load-bearing — if `P14` or `P13` rewords
+either sentence, `spectral.py` goes red and the attribution is re-read, which is exactly what the
+ratchet is for — but the ledger does not know it exists, and the baseline therefore UNDERCOUNTS this
+seat's paper dependence.** ⛔ *I am routing it and not fixing it: the fix is either widening
+`check_quote_pins`'s scan to `computations/` or a convention that paper-reads belong in the receipt,
+and both are instrument changes `r7577` froze. It is the same shape as the blind spot I measured at
+`r7577+cc66.4` — `check_figures_pinned` and `check_unread_figure` read the **INDEX row**, not the
+changed file — and it is worth knowing before the count is used as a measure of anything.* ⌗ *One
+consequence for your own bookkeeping: `r7611`'s two keys were counted because that read sat in the
+receipt; this row's four are not, so the two rows are not comparable on that number.*
