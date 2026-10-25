@@ -21178,3 +21178,88 @@ recommendation is (b) for the suite and (a) for the tolerance job** — the suit
 work on receipts that genuinely read the changed index, where the tolerance job's `316`-against-`14`
 gap is the scoper selecting what the diff cannot have moved, and raising a cap to cover that would
 buy nothing.
+
+---
+
+## `r7608` — `PO-94`'s QUANTUM HALF CAN CARRY A TEST, IT IS NOT THE GAUGE HALF'S, AND ON IT THE IDENTIFICATION IS UNMET IN EVERY SLOT IT COULD BE MET IN
+
+**Taken, not assigned.** `r7577` is answered (`r7580`, merged) and the channel's topmost section has not
+moved, so the standing instruction applies and I took the next open frontier item. Three of the six open
+rows are gated on data this seat cannot get (`PO-89`, `PO-87`, `PO-24`) and one on a sample (`PO-93`), so
+the frontier's first ungated row is `PO-94`, kind `READ`, yours since `r7467` with nothing in flight on
+it — and the half I took is the one the row says has no test at all, together with its terminate clause.
+**The finding.** The gauge half's test asks the compact face to carry the sector's own *structure* — a
+connection with curvature, and a coupling — while the quantum claim, in `P13`'s own words, is only that
+the face carries its *scale*, the structure being Lorentzian and the quantum *not a third thing*; a test
+for a structure-claim cannot score a scale-claim, which is why one sentence carrying one test reads as
+governing both halves when it cannot. The right test for the quantum half is a **selection** test: the
+face is an actual quantum sector rather than a rhyme iff its data remove a freedom of the quantum theory
+that no other principle removes. There are exactly three slots where it could do that and all three are
+empty — **no value**, by your own ledger arithmetic in `P10` (one equation, one unknown, net zero, which
+I recorded in the registration as a source finding before computing anything, with the measured addition
+that the relation projects *onto* the ledger at `200` random points); **an extension** whose selected
+member is the member finite quadratic-form energy singles out on its own, which is the measured core
+below; and **the ordering**, the one freedom the construction states it cannot close internally, which
+the face provably cannot reach because it acts downstream of the form — located in `P10` and in
+`P10_ordering_selection_is_external`, read by path and not reimplemented. So the quantum half now has a
+named test and it is **unmet**, with what would meet it named alongside: a *dimensionless* selection the
+compact face makes and the Lorentzian form does not. **And the terminate clause does not fire**: the
+halves stay two questions, blocked for different reasons — the gauge half by a *vanishing* (the structure
+its test asks for is not there, `P14`'s flat bundle) and the quantum half by a *non-distinctness*. The
+control was run over all eighteen papers and not over `P13`: the net returns six candidate sentences
+across the fifty-five corpus files, every one adjudicated against a keyed table — five place the scale,
+one claims the selection, **none** places a commutator, a Hilbert space, an operator algebra or a
+deformation on the face — so nothing fired. `55` checks, `0` failures, eight arms registered at
+`9a2a65659f69dcb1eb57f371310ee225b4e7aabe` before the script existed; seven HIT, the control silent,
+nothing withdrawn.
+
+⌗ **The measured core, and it is the arm the verdict turns on.** On
+$-\psi''+\gamma\psi/x^{2}=E\psi$ on $(0,1)$ with Dirichlet at $1$, at `P10`'s ordering-family maximum
+$\gamma=\tfrac14$ so $\nu=1/\sqrt2<1$ and the endpoint is limit circle: the one-parameter extension
+family's lowest eigenvalue runs `11.776812` → `1.335962` **strictly monotone**, so the members are
+physically distinct and the freedom is an ontological family and not bookkeeping; exactly one member
+carries no $x^{1/2-\nu}$ admixture; and the form energy $\int(\psi'^2+\gamma\psi^2/x^2)$ **converges at
+that member alone** (`0.41748475`, last relative change `2.4\times10^{-7}`) while diverging at every
+other at the irregular branch's own rate — log-log slopes in the cutoff `-1.4127` and `-1.4133` against
+the predicted `-2\nu=-1.414214`. The threshold control is checked rather than quoted: the irregular
+branch is in $L^{2}$ exactly while $\nu<1$, and $\nu=1$ **exactly** at $\gamma=\tfrac34$.
+
+⚠ **This seat's own stated limit, and I would rather you had it than the headline.** Finite form energy
+is a **standard** requirement and not one CR derives. So what is established is that the face's selection
+is reachable *without Euclidean input*, not that CR independently forces the same member; a reading that
+wants the face to be doing the work can answer that the form-closure requirement is itself unmotivated
+here, and that answer is available. That is why this is scored as non-distinctness and **not** as a
+refutation — and why the row's text below says *unmet* rather than *refuted*. Nor is the placement of
+$\hbar$'s register touched.
+
+⌗ **The row text, routed rather than written.** `PO-94`'s quantum half, for you to adopt or correct:
+
+```
+⛭ THE LIVE CLAUSE (QUANTUM HALF, SET r7608).  ⌗ THE TEST, WHICH IS NOT THE GAUGE HALF'S: the gauge
+half asks whether the compact face carries the sector's own structure (a field strength and a
+coupling), and that test cannot score the quantum claim, which is only that the face carries the
+sector's scale.  The quantum half's test is a SELECTION test: the Euclidean real form is physics'
+actual quantum sector rather than a structural rhyme iff its data remove a freedom of the quantum
+theory, with physically distinct members, that no other principle removes.  ⌗ SCORED r7608, AND
+UNMET IN ALL THREE SLOTS: no VALUE, the thermal relation adding one equation with its own one
+unknown and projecting onto the ledger (P10 sec:lock, measured at r7608); no distinctive EXTENSION,
+the member Euclidean regularity selects being the member finite quadratic-form energy singles out
+on its own, measured on the deficiency-(1,1) family at gamma = 1/4 where the form energy converges
+at the regular member alone and diverges elsewhere as eps^(-2nu); and not the ORDERING, the one
+freedom the construction cannot close internally, which the thermal state acts downstream of
+(P10_ordering_selection_is_external, candidate (1)).  ⌗ WHAT WOULD DISCHARGE IT: a DIMENSIONLESS
+selection the compact face makes and no other principle makes.  ⌗ OR TERMINATES IF: every freedom
+the face could close is shown to be one some other principle closes, IN WHICH CASE THE TERMINAL
+STATE IS THAT THE QUANTUM HALF'S IDENTIFICATION IS A STRUCTURAL RHYME AT THE LEVEL OF THE WORLD
+WHILE THE PLACEMENT OF THE SCALE STANDS -- the same shape the gauge half ends in, for a different
+reason.  ⌗ AND THE HALVES ARE NOT ONE QUESTION, so the row carries two tests and not one: the
+terminate clause set at r7467 does not fire.  r7608's stated limit: finite form energy is a
+standard requirement and not one CR derives, so the extension slot is scored non-distinctive
+rather than refuted.
+```
+
+⚠ **`r7577`'s standing rule bites on this one.** The row text says what is open and what is not, so
+`check_open_item_coherence` re-reads the papers and will fail on it until `PO-94`'s row in
+`r7577_69`'s `items_keyed.tsv` is read again. **No paper is edited here and nothing is written into the
+register** — the text above and that re-read land together or not at all. Nothing else is owed from this
+seat; `r7580`'s routed `P15` correction and the scoped-job fork at `r7580+60.1` are still with you.

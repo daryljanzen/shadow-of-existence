@@ -1,0 +1,135 @@
+==============================================================================
+Ⓐ  THE GAUGE HALF'S TEST HAS A DEFINITE LOGICAL FORM
+==============================================================================
+   [HIT ] P13: told apart by DYNAMICS
+   [HIT ] P13: an actual gauge sector carries A FIELD STRENGTH AND A COUPLING
+   [HIT ] P13: and the blocker -- THE BUNDLE AT THE BRANCH POINT IS FLAT
+   ⇒ Ⓐ HIT: the gauge half's test asks the face to carry the
+     sector's own STRUCTURE -- a connection with curvature -- and a coupling.
+
+==============================================================================
+Ⓑ  THE CORPUS PLACES THE QUANTUM'S STRUCTURE ON THE LORENTZIAN FORM AND ONLY ITS SCALE
+   ON THE OTHER
+==============================================================================
+   [HIT ] P13: the framework's STRUCTURE is Lorentzian
+   [HIT ] P13: only the framework's SCALE is set on the Euclidean face
+   [HIT ] P13: the quantum is not a third thing
+   ⇒ Ⓑ HIT
+
+==============================================================================
+Ⓒ / Ⓗ  THE NET: DOES ANY PAPER PLACE A QUANTUM *STRUCTURE* ON THE COMPACT FACE?
+==============================================================================
+   candidates the net returns over all 55 corpus files: 6
+     [SCALE    ] CR_framework.tex: "borne on the substrate's conjugate (Euclidean) real form"
+     [SCALE    ] boundary_paper.tex: "they carry the two sides of the divides the corpus keeps apart"
+     [SCALE    ] boundary_paper.tex: "So the quantum of action and the colour symmetry share the one Euclidean real "
+     [SELECTION] boundary_paper.tex: "closes the free sector's lone quantization ambiguity without a free parameter"
+     [SCALE    ] boundary_paper.tex: "that places it, together with the quantum of action, on the substrate's Euclid"
+     [SCALE    ] geometric_core_paper.tex: "So the thermal and the gauge registers are not two entries in the ledger"
+   sentences placing a quantum STRUCTURE on the face: 0
+   ⇒ Ⓒ HIT   Ⓗ does not fire
+     The two halves make claims of DIFFERENT STRENGTH: gauge asks the face to carry the
+     sector's own structure; the quantum claim is only that the face carries its scale.
+     A test for a structure-claim cannot score a scale-claim.
+
+==============================================================================
+Ⓓ  THE VALUE SLOT: WHAT THE THERMAL RELATION CONSTRAINS ON THE LEDGER
+==============================================================================
+   [HIT ] P10: the place the quantum constant enters is NOT the place a value is fixed
+   [HIT ] P10: one equation and one unknown, NET CONSTRAINT ZERO
+   new unknowns introduced = 1 (['T']);  new equations = 1
+   solution for the new unknown is unique and positive for every ledger assignment tested: True
+   ⇒ the projection onto (hbar, alpha, k_B) is ONTO, so the relation fixes NO VALUE the
+     ledger did not already hold.  net constraint = 1 equation - 1 unknown = 0.
+   ⇒ Ⓓ HIT: the VALUE slot of the selection test is EMPTY.
+
+==============================================================================
+Ⓔ  THE EXTENSION SLOT, MEASURED: IS THE MEMBER EUCLIDEAN REGULARITY SELECTS THE MEMBER THE
+   LORENTZIAN FORM CLOSURE ALREADY SINGLES OUT?
+==============================================================================
+   model problem: -psi'' + gamma psi / x^2 = E psi on (0,1), Dirichlet at x=1, gamma = 1/4
+   (P10's ordering-family maximum), so nu = sqrt(gamma + 1/4) = 1/sqrt(2) < 1: limit circle.
+   nu = 0.707106781187   (1/sqrt(2) = 0.707106781187)
+   k=1.0:  A/x^(1/2+nu) -> 1.0000000000   B/x^(1/2-nu) -> 1.0000000000  (both -> 1)
+   k=3.0:  A/x^(1/2+nu) -> 1.0000000000   B/x^(1/2-nu) -> 1.0000000000  (both -> 1)
+
+   (i) are the members physically distinct?  lowest eigenvalue against the extension
+       parameter theta (theta=0 is the pure regular branch):
+        theta = 0.000000   E_0 = 11.7768123192
+        theta = 0.261799   E_0 = 5.0319636338
+        theta = 0.523599   E_0 = 3.2899939677
+        theta = 0.785398   E_0 = 2.5181527889
+        theta = 1.047198   E_0 = 2.0368983917
+        theta = 1.308997   E_0 = 1.6675881604
+        theta = 1.570796   E_0 = 1.3359617028
+       strictly monotone across the family: True   (E_0 runs 11.776812 -> 1.335962)
+
+   (ii) exactly one member carries no irregular admixture: by construction the admixture
+        coefficient is sin(theta), zero only at theta = 0 in [0, pi/2].
+        members with zero admixture on the grid: 1
+
+   (iii) the quadratic FORM energy Q[psi] = int (psi'^2 + gamma psi^2 / x^2):
+             eps       Q at theta=0     Q at theta=0.6    Q at theta=pi/2
+           1e-02         0.41569346        45.29660552       140.98492783
+           1e-03         0.41741572      1155.30259546      3622.54736675
+           1e-04         0.41748210     29964.55497835     93984.34536288
+           1e-05         0.41748465    777699.86992063   2439297.31532194
+           1e-06         0.41748475  20195658.71676620  63344794.03700097
+        theta=0:      Q converges, last relative change 2.40e-07
+        theta=0.6:    log-log slope in eps = -1.412650   (predicted -2nu = -1.414214)
+        theta=pi/2:   log-log slope in eps = -1.413333  (predicted -2nu = -1.414214)
+   ⇒ Ⓔ HIT: the family is ontological (distinct spectra), and
+     the FINITE-FORM-ENERGY member is the regular-branch member and nothing else.  So the
+     member Euclidean regularity selects is the member the Lorentzian quadratic form
+     closure already singles out: the selection is real but it is NOT distinctive.
+
+   control at the threshold: the irregular branch leaves L^2 exactly where P10's threshold
+   sits, which is why there is a family to choose from below it and none above it.
+        gamma=0.25  nu=0.707107  int|x^(1/2-nu)|^2:       1.7071 ->       1.7071   in L^2
+        gamma=0.70  nu=0.974679  int|x^(1/2-nu)|^2:      17.8296 ->      19.5606   in L^2
+        gamma=0.75  nu=1.000000  int|x^(1/2-nu)|^2:      46.0517 ->      92.1034   NOT in L^2
+        gamma=1.00  nu=1.118034  int|x^(1/2-nu)|^2:  223004.8053 -> 11740376395.6278   NOT in L^2
+        nu = 1 exactly at gamma = 3/4 (computed: nu(3/4) = 1.000000000000) -- the limit-point
+        threshold P10 states, reached here as the integrability of the irregular branch.
+
+==============================================================================
+Ⓕ  THE ORDERING SLOT: THE FACE CANNOT REACH THE ONE FREEDOM THE CONSTRUCTION CANNOT CLOSE
+==============================================================================
+   [HIT ] P10: the ordering choice is not one this construction can make internally
+   [HIT ] P10: the thermal state and the seam act DOWNSTREAM
+   [HIT ] receipt: the thermal state selects the FRIEDRICHS extension, defined FROM the form
+   [HIT ] receipt: the closure is ordering-independent, THE SELECTION IS NOT
+   ⇒ Ⓕ HIT: the ORDERING slot is empty, and the receipt that
+     establishes it is read here rather than reimplemented (r7445).
+
+==============================================================================
+Ⓖ  THE TERMINATE CLAUSE: ARE THE HALVES ONE QUESTION?
+==============================================================================
+   ⇒ Ⓖ HIT: NOT one question.  Two claims of different strength
+     about two different objects, blocked for different reasons -- the gauge half by a
+     VANISHING (the bundle is flat, so the structure its test asks for is not there), the
+     quantum half by a NON-DISTINCTNESS (the selection the face makes is one the Lorentzian
+     form closure also makes).  The terminate clause does not fire.
+
+==============================================================================
+VERDICT
+==============================================================================
+   A: HIT
+   B: HIT
+   C: HIT
+   D: HIT
+   E: HIT
+   F: HIT
+   G: HIT
+   H (control): does not fire
+
+   THE QUANTUM HALF CAN CARRY A TEST, AND IT IS NOT THE GAUGE HALF'S.  The gauge half's test
+   is a STRUCTURE test and the quantum claim is a SCALE claim, so the right test is a
+   SELECTION test: the face is an actual quantum sector rather than a rhyme iff its data
+   remove a freedom of the quantum theory that no Lorentzian principle removes.  All three
+   slots where it could do that are empty -- no VALUE (Ⓓ), an EXTENSION the form closure
+   also picks (Ⓔ), an ORDERING it cannot reach (Ⓕ).  So the test is named and UNMET, and
+   what would meet it is named with it: a DIMENSIONLESS selection the compact face makes
+   and the Lorentzian form does not.
+
+   55 checks, 0 failures.
