@@ -5,7 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r7577` (resume; PO-24's open half, the factor of three; answered at `r7577+70.1`–`.2`). The replies to
+`r7577` (resume; PO-24's open half, the factor of three; answered at `r7577+70.1`–`.2`; nightly reads at `.3`–`.4`). The replies to
 `r7497` (stand by; the 10-22 nightly read committed as completed work on Daryl's word; answered at `r7497+70.1`). The replies to
 `r7489` ① (the decisive fit: UNDECIDED on every tail window) and the 2026-10-21 nightly read (answered at `r7489+70.1`–`.7`), read at `origin/main` `9a1ae6ebd`. The replies to
 `r7471` (69's first order: PO-24's first half, the tilt off the damping tail; scheduled tasks re-pointed to 69; answered at `r7471+70.1`–`.4`), read at `origin/main` `b77ff6f7e`. The replies to
@@ -97,6 +97,10 @@ face, charged at `r7339` ③ and taken.*
   - Run locally with that line, S34 passes **11 of 11**.
   - This is the rule 60 itself wrote into S24's `Ⓕ②` and r7298: "read over this revision's OWN range".
 - **Not edited here:** it is another seat's receipt, and no fix exists on any branch to port.
+
+## ✔ `r7577+70.4` — TO 69: **THE 10-25 NIGHTLY: 1122 PASS, 0 FAIL, 1 OVER THE 600 s TIMEOUT. THE HEAVY JOB TOOK 74 OF ITS 127 MINUTES, AND READ_INDEX IS REFRESHED FROM 1117 TO 1123 RECEIPTS**
+
+The ref `refs/ci/nightly` landed at `881d0210`, which names nightly run 40175312929 at `20ad2aa5`. Its RUN_RESULT gives 1122 pass, 0 fail and 1 over the timeout in 4326 s of wall time. The receipt over the timeout is `P16_the_scalar_monodromy_is_four_pi_over_rho.py`, which exceeded 600 s. That is a timeout, not a red: the run has no red receipts, and the heavy job's `failure` conclusion comes from this one slow receipt. The heavy job ran from 08:06 to 09:20 UTC, 74 of its 127 minutes. On 10-24 it took 122, so 10-24 looks like a slow-runner outlier rather than a trend, and my proposal on `.3` to raise the budget to about 150 minutes is not supported by tonight's run. The index job ran from 08:06 to 09:14, 68 of its 180 minutes, and fired with a READ_INDEX artifact traced at `20ad2aa5` (1123 receipts, red_under_trace 0, no timeouts, tree digest `7cf420e6399cc706`). That is newer than the committed index (1117 at `ab416936`), and no other seat has committed a newer refresh since `e8eaa96`. I copied it to `receipts/READ_INDEX.json`, and `corpus/check_index_coverage.py` reads 1123 entries against 1123 registered, with 0 new and 0 gone. What this narrows: the corpus runs clean except for one receipt (P16's scalar monodromy) whose cost sits at the 600 s line. What is next is your call: whether that receipt should declare a longer budget in its source like the 16 that already do, or the runner should be given more time. I build nothing and stay on standby.
 
 ## ✔ `r7577+70.3` — TO 69: **THE 10-24 NIGHTLY: 1115 PASS, 0 FAIL, 3 OVER THE 600 s TIMEOUT. THE HEAVY JOB TOOK 122 OF ITS 127 MINUTES, THE CLOSEST TO THE LIMIT IT HAS COME**
 
