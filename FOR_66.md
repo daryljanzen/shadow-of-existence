@@ -24619,3 +24619,37 @@ been contradicted; it cannot say that THIS red is a contradiction, and reading i
 is how a seat launders its own red into somebody else's worklist.* **Rule I am keeping: before any
 "not mine", read the failing assertion's own text against my diff. The ledger is evidence about the
 receipt's history and never about this failure's cause.**
+
+## ⛭ `r7611+cc66.7` — **`r7611` IS GREEN ON `main`'s OWN GATES.** One check cancels, and it is the **tolerance** half of the carry drain `r7612` ran for the suite half — routed, because the ledger is CI's and the budget is under `r7577`'s freeze
+
+**On `3629563c`: `fast` green, the scoped plain suite green, the runner-read sweep green.** ⌗ *And
+the plain suite going green is the measurement that settles `.4`: `L559/O1` and `P17`'s frontier row
+were both red at `c08b4df3` because my receipt had no `INDEX` row, and the ledger now carries
+**zero** suite entries for this branch where it carried two.* ⛔ **One check cancels, and it is worth
+your decision rather than my patch:** `tol-scope` (`gates.yml:577`, *"the tolerance perturbation, the
+scope this push can have moved"*) ran 15 m 18 s against `timeout-minutes: 15` and reports
+`cancelled`. **It is not a failing receipt and it reached no verdict** — the job runs **no** receipts
+at all (scope, carry union, artifact upload), and every line it printed carries its own disclaimer,
+*"NEVER PROBED: the run did not reach it, so this is an absent measurement and not a verdict
+(`r7422`)"*. ⒜ *Where the budget went, from the log's own timestamps:* the scope and the carry list
+were printed by `21:24:03`, about **48 s** in; the remaining **14 m 27 s** went into
+`red_carry.py --union`'s `PO-68` ledger-history read, whose last line before the cancel is *"⌗ PO-68:
+what the ledger has recorded about these before, read at the run:"*. That read walks the ledger per
+carried receipt and fetches pushed trees, some of which it reports as no longer fetchable. ⒝ *And the
+cost scales with the BRANCH'S CARRY LIST, not with my diff, which is the whole reason this is yours
+and not mine:* `refs/ci/carry` has **no `main` key at all**, so the job is cheap there; this branch
+carries **168** `tolerance` entries, every one `carried since 91bfc06721`, all `P15`, and **none** of
+them touched by my eleven-path diff. What my diff sets is only the scope — `receipt_scope.py --range
+origin/main..HEAD --scope tolerance` returns **88 of 1128**. The job's **own** cost note in
+`gates.yml` reads *"674 s at the mean, 1,539 s at p90"* against a **900 s** cap, so **p90 already
+exceeds it by the job's own figures** and this is a budget that was short before I arrived. ⇒ **THE
+FIX THAT EXISTS IS THE DRAIN YOU ALREADY RAN, APPLIED TO THE OTHER CLASS.** `r7612`/`r7612+1` drained
+the **suite** class (this branch 2 → 0) and left the **tolerance** class at 168. The sibling job
+`scope-tolerance` at `gates.yml:661` carries **90** minutes where this one carries **15**, which may
+itself be the smaller answer. ⛔ *I am routing both rather than taking either: the ledger lives in
+`refs/ci/carry` and is written by CI, so there is nothing in this tree for me to port; and raising a
+job's budget is an instrument change `r7577` froze and `r7611` does not lift. This is the same shape
+as `.6`, which you answered at `r7609` by raising the plain suite to 150 — the tolerance side of that
+same arithmetic was left behind.* ⌗ *One re-run is unspent and I am leaving it: the cause is a fixed
+cap against a ledger size, so a second attempt exhausts it identically and adds nothing to the
+diagnosis. One standing-down comment is on the PR with the same numbers.*
