@@ -8890,6 +8890,11 @@
     "since": "108e483e0c6affdfd85d6e77e8753b4045000ce6",
     "unmeasured": true
    },
+   "corpus/make_fig_acoustic_two_arm.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40187481980",
+    "since": "6b035fa9067f5592ec93cdd3b99b449a6dfcef24",
+    "unmeasured": true
+   },
    "receipts/L147_two_arm/B10_the_thermal_mechanism_needs_an_exponential_approach.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39533334363",
     "since": "108e483e0c6affdfd85d6e77e8753b4045000ce6",
@@ -9903,6 +9908,11 @@
     "since": "108e483e0c6affdfd85d6e77e8753b4045000ce6",
     "unmeasured": true
    },
+   "receipts/L_probability/S12_ownership_makes_the_class_larger_and_the_path_scope_was_too_narrow_as_well_as_impure.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40187481980",
+    "since": "6b035fa9067f5592ec93cdd3b99b449a6dfcef24",
+    "unmeasured": true
+   },
    "receipts/L_probability/S13_the_thirty_are_read_and_the_fifth_bucket_is_an_absence_guard_with_no_positive_control.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39533334363",
     "since": "108e483e0c6affdfd85d6e77e8753b4045000ce6",
@@ -10113,6 +10123,11 @@
     "since": "108e483e0c6affdfd85d6e77e8753b4045000ce6",
     "unmeasured": true
    },
+   "receipts/L_probability/S53_the_owed_list_is_one_row_in_four_a_uniqueness_problem_and_that_figure_belongs_to_the_class_rather_than_to_the_reader_because_the_other_seats_rows_land_in_a_band_drawn_from_mine.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40187481980",
+    "since": "6b035fa9067f5592ec93cdd3b99b449a6dfcef24",
+    "unmeasured": true
+   },
    "receipts/L_probability/S54_a_ledger_change_scopes_five_receipts_and_none_of_the_forty_four_that_read_the_ledger_because_the_read_index_is_a_list_of_spellings_without_tsv_on_it.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39533334363",
     "since": "108e483e0c6affdfd85d6e77e8753b4045000ce6",
@@ -10173,6 +10188,11 @@
     "since": "108e483e0c6affdfd85d6e77e8753b4045000ce6",
     "unmeasured": true
    },
+   "receipts/P01_BH_causality/P1_the_transplanckian_claim_is_finite_at_each_finite_time_and_it_is_not_bounded.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40187481980",
+    "since": "6b035fa9067f5592ec93cdd3b99b449a6dfcef24",
+    "unmeasured": true
+   },
    "receipts/P01_BH_causality/P1_the_trapped_surface_theorem_is_cited_as_a_theorem_and_never_as_an_open_test.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39533334363",
     "since": "108e483e0c6affdfd85d6e77e8753b4045000ce6",
@@ -10186,6 +10206,11 @@
    "receipts/P01_BH_causality/P1_thermality_is_the_exponential_and_a_double_root_has_no_exponential.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39533334363",
     "since": "108e483e0c6affdfd85d6e77e8753b4045000ce6",
+    "unmeasured": true
+   },
+   "receipts/P01_metric_singularity/I53_the_two_horizons_are_a_repeller_attractor_pair_and_the_alternation_is_forced.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40187481980",
+    "since": "6b035fa9067f5592ec93cdd3b99b449a6dfcef24",
     "unmeasured": true
    },
    "receipts/P03_SdS_slicing/A6_item_58_resolves_split.py": {
@@ -10233,6 +10258,16 @@
     "since": "108e483e0c6affdfd85d6e77e8753b4045000ce6",
     "unmeasured": true
    },
+   "receipts/P04_modern_parallax/R2_the_papers_correlation_figures_are_the_ones_nothing_checked.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40187481980",
+    "since": "6b035fa9067f5592ec93cdd3b99b449a6dfcef24",
+    "unmeasured": true
+   },
+   "receipts/P04_modern_parallax/R50_the_long_wavelength_bullet_reverses_for_the_observable_and_the_corner_is_three_parts_per_million.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40187481980",
+    "since": "6b035fa9067f5592ec93cdd3b99b449a6dfcef24",
+    "unmeasured": true
+   },
    "receipts/P05_groupoid/P05_deck_group_S3.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39778630943",
     "since": "e8eaa96cd92b7c8d35160092cf3522db832da48e",
@@ -10253,6 +10288,11 @@
     "since": "e8eaa96cd92b7c8d35160092cf3522db832da48e",
     "unmeasured": true
    },
+   "receipts/P07_CR_framework/EUCNULL_continuous_null_definition.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40187481980",
+    "since": "6b035fa9067f5592ec93cdd3b99b449a6dfcef24",
+    "unmeasured": true
+   },
    "receipts/P07_CR_framework/I7_conserved_charge_carries_three_objects_and_one_denies_the_others.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39533334363",
     "since": "108e483e0c6affdfd85d6e77e8753b4045000ce6",
@@ -10261,6 +10301,31 @@
    "receipts/P07_CR_framework/L8_the_pencil.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39533334363",
     "since": "108e483e0c6affdfd85d6e77e8753b4045000ce6",
+    "unmeasured": true
+   },
+   "receipts/P07_CR_framework/LAP_killing_order.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40187481980",
+    "since": "6b035fa9067f5592ec93cdd3b99b449a6dfcef24",
+    "unmeasured": true
+   },
+   "receipts/P07_CR_framework/LIFT_euclidean_filter.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40187481980",
+    "since": "6b035fa9067f5592ec93cdd3b99b449a6dfcef24",
+    "unmeasured": true
+   },
+   "receipts/P07_CR_framework/O1_photon_sphere_nariai.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40187481980",
+    "since": "6b035fa9067f5592ec93cdd3b99b449a6dfcef24",
+    "unmeasured": true
+   },
+   "receipts/P07_CR_framework/O5_kappa_and_lyapunov.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40187481980",
+    "since": "6b035fa9067f5592ec93cdd3b99b449a6dfcef24",
+    "unmeasured": true
+   },
+   "receipts/P07_CR_framework/O6_eikonal_ringdown.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40187481980",
+    "since": "6b035fa9067f5592ec93cdd3b99b449a6dfcef24",
     "unmeasured": true
    },
    "receipts/P07_CR_framework/P07_the_back_seam_is_the_laps_one_non_degenerate_horizon_and_its_surface_gravity_is_the_beads_own_acceleration_there.py": {
@@ -10293,6 +10358,11 @@
     "since": "e8eaa96cd92b7c8d35160092cf3522db832da48e",
     "unmeasured": true
    },
+   "receipts/P07_CR_framework/photon_cross_test.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40187481980",
+    "since": "6b035fa9067f5592ec93cdd3b99b449a6dfcef24",
+    "unmeasured": true
+   },
    "receipts/P08_slicing_operator/I52_the_vacuum_theorem_is_an_index_one_statement_and_the_index_is_the_mass.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39778630943",
     "since": "e8eaa96cd92b7c8d35160092cf3522db832da48e",
@@ -10323,6 +10393,26 @@
     "since": "e8eaa96cd92b7c8d35160092cf3522db832da48e",
     "unmeasured": true
    },
+   "receipts/P09_range_paper/P09_carter_killing.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40187481980",
+    "since": "6b035fa9067f5592ec93cdd3b99b449a6dfcef24",
+    "unmeasured": true
+   },
+   "receipts/P09_range_paper/P09_kerr_deSitter.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40187481980",
+    "since": "6b035fa9067f5592ec93cdd3b99b449a6dfcef24",
+    "unmeasured": true
+   },
+   "receipts/P10_canonical_time/LIFT_adiabatic_correction.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40187481980",
+    "since": "6b035fa9067f5592ec93cdd3b99b449a6dfcef24",
+    "unmeasured": true
+   },
+   "receipts/P10_canonical_time/LIFT_gravitational_action.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40187481980",
+    "since": "6b035fa9067f5592ec93cdd3b99b449a6dfcef24",
+    "unmeasured": true
+   },
    "receipts/P10_canonical_time/P10_gamma_is_one_quarter_and_is_the_maximum.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39778630943",
     "since": "e8eaa96cd92b7c8d35160092cf3522db832da48e",
@@ -10336,6 +10426,16 @@
    "receipts/P10_canonical_time/P10_no_state_makes_the_curvature_sharp_and_the_obstruction_is_the_anomaly_coefficient_itself.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39778630943",
     "since": "e8eaa96cd92b7c8d35160092cf3522db832da48e",
+    "unmeasured": true
+   },
+   "receipts/P10_canonical_time/P10_on_a_scale_factor_that_varies_the_free_towers_logarithm_is_covariant_up_to_the_scale_factors_equation_and_the_same_level_cubics_is_not_so_the_coefficient_needs_the_complete_second_order.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40187481980",
+    "since": "6b035fa9067f5592ec93cdd3b99b449a6dfcef24",
+    "unmeasured": true
+   },
+   "receipts/P10_canonical_time/P10_ordering_selection_is_external.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40187481980",
+    "since": "6b035fa9067f5592ec93cdd3b99b449a6dfcef24",
     "unmeasured": true
    },
    "receipts/P10_canonical_time/P10_sec_lock_quotes_the_superseding_receipt_everywhere_the_two_mode_shift_sits_under_the_wrong_pair_and_the_four_receipt_group_is_one_chain.py": {
@@ -10356,6 +10456,21 @@
    "receipts/P10_canonical_time/P10_the_clause_66_wrote_on_this_seats_offer_says_exactly_what_its_receipt_supports_and_no_more_so_the_loop_the_grade_class_opened_is_closed_on_itself.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39778630943",
     "since": "e8eaa96cd92b7c8d35160092cf3522db832da48e",
+    "unmeasured": true
+   },
+   "receipts/P10_canonical_time/P10_the_closed_forms_are_derived_from_the_recoupling_algebra_at_the_extreme_right_labels_so_the_nine_levels_are_a_check_and_not_the_ground.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40187481980",
+    "since": "6b035fa9067f5592ec93cdd3b99b449a6dfcef24",
+    "unmeasured": true
+   },
+   "receipts/P10_canonical_time/P10_the_complete_second_orders_double_logarithm_is_not_covariant_up_to_the_scale_factors_equation_so_the_invariant_is_a_stated_limit.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40187481980",
+    "since": "6b035fa9067f5592ec93cdd3b99b449a6dfcef24",
+    "unmeasured": true
+   },
+   "receipts/P10_canonical_time/P10_the_cubic_over_three_different_levels_is_derived_in_closed_form_and_its_low_level_region_carries_a_nested_logarithm_so_the_bare_sum_is_double_logarithmic.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40187481980",
+    "since": "6b035fa9067f5592ec93cdd3b99b449a6dfcef24",
     "unmeasured": true
    },
    "receipts/P10_canonical_time/P10_the_degeneracy_needs_r_constant_not_the_cosh_so_the_anomaly_is_what_makes_its_own_constant_observable.py": {
@@ -10383,9 +10498,19 @@
     "since": "108e483e0c6affdfd85d6e77e8753b4045000ce6",
     "unmeasured": true
    },
+   "receipts/P10_canonical_time/P10_the_odd_residue_is_the_levels_below_a_crossing_linear_in_one_constant_and_a_count_bounds_terms_not_sizes.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40187481980",
+    "since": "6b035fa9067f5592ec93cdd3b99b449a6dfcef24",
+    "unmeasured": true
+   },
    "receipts/P10_canonical_time/P10_the_operator_is_an_inverted_quartic_so_the_deficiency_is_two_two_and_the_measure_closes_it_anyway.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39533334363",
     "since": "108e483e0c6affdfd85d6e77e8753b4045000ce6",
+    "unmeasured": true
+   },
+   "receipts/P10_canonical_time/P10_the_operator_is_second_order_in_momentum_so_the_weyl_function_is_real_analytic_and_strictly_monotone.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40187481980",
+    "since": "6b035fa9067f5592ec93cdd3b99b449a6dfcef24",
     "unmeasured": true
    },
    "receipts/P10_canonical_time/P10_the_parity_is_structural_in_shape_but_order_by_order_in_conclusion_and_the_cubic_half_of_second_order_is_unverified.py": {
@@ -10398,9 +10523,19 @@
     "since": "e8eaa96cd92b7c8d35160092cf3522db832da48e",
     "unmeasured": true
    },
+   "receipts/P10_canonical_time/P10_the_quartic_carries_the_inverse_volume_as_the_cubics_square_does_so_the_criterion_is_eighteen_and_not_eighteen_v.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40187481980",
+    "since": "6b035fa9067f5592ec93cdd3b99b449a6dfcef24",
+    "unmeasured": true
+   },
    "receipts/P10_canonical_time/P10_the_regulator_passage_keeps_its_line_but_the_minus_four_thirds_closes_under_a_group_that_does_not_compute_it.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39533334363",
     "since": "108e483e0c6affdfd85d6e77e8753b4045000ce6",
+    "unmeasured": true
+   },
+   "receipts/P10_canonical_time/P10_the_same_level_sum_is_orthogonality_rather_than_an_integral_and_the_completeness_bound_was_loose_by_one_power.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40187481980",
+    "since": "6b035fa9067f5592ec93cdd3b99b449a6dfcef24",
     "unmeasured": true
    },
    "receipts/P10_canonical_time/P10_the_second_logarithm_holes_the_mechanism_and_not_the_conclusion_because_the_leading_log_is_unpartnered.py": {
@@ -10421,6 +10556,11 @@
    "receipts/P10_canonical_time/P10_the_thermal_condition_is_helicity_blind_at_the_mode_functions_and_the_parity_odd_entry_is_not_owed.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39778630943",
     "since": "e8eaa96cd92b7c8d35160092cf3522db832da48e",
+    "unmeasured": true
+   },
+   "receipts/P10_canonical_time/P10_the_third_order_operator_is_regular_and_its_deficiency_indices_are_equal_so_a_realisation_exists.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40187481980",
+    "since": "6b035fa9067f5592ec93cdd3b99b449a6dfcef24",
     "unmeasured": true
    },
    "receipts/P10_canonical_time/P10_the_tower_limit_closes_at_first_order_and_the_wall_moves_into_a_boundary_condition_at_second.py": {
