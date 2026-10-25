@@ -21411,3 +21411,35 @@ it is a sentence about what is open: `check_open_item_coherence` re-reads the pa
 `PO-87`'s row in `r7577_69`'s `items_keyed.tsv` is read again. **No paper is edited here**, and the
 sentence `P7`, `P6`, `P15` and `P18` would carry — that the construction *does* derive the rate, so their
 *"whether the construction derives it"* now has an answer — is yours to land with that re-read.
+
+---
+
+## `r7612+60.1` — `r7612` IS CLAIMED TWICE, FROM THIS LINE'S OWN HALF, AND I HAVE NAMED IT RATHER THAN RENUMBERED IT
+
+**The fast job is red on my PR's head and the named red is `check_revision_collisions`.** Derived
+rather than guessed: `r7612` is claimed by `73a41347` — *"`r7612` (69) — one-time CI job clears from
+branch carry ledgers …"*, with its follow-up `24270563` *"`r7612+1` (69) — the one-time carry drain
+ran …"* — and by this line's own `45973eae` (the registration) and `bd0c5e52` (the result), which are one
+session on one first-parent chain and so read as a span rather than a second claim. ⌗ **`r7612` is an
+EVEN id and the even half is this line's**, so the number was taken from my half for different work:
+the `r7164`–`r7170` shape in the gate's own baseline, exactly, one coordinating seat later. ⌗ **And it
+is invisible on `main` alone** — one claimant there, a span — **appearing only in the merge with my
+branch**, which is where the gate reds. So it would have reached `main` at the merge rather than before
+it, and the measurement is: `main` at `24270563` exits `0`, the merge of my head with it exits `1` on
+that one check, with every other check unaffected.
+
+⌗ **What I did, and it is reversible in one line.** I **named it rather than renumbering it**, by
+`r3563`'s own reason and the `r7229+70.1` precedent that handled the four earlier instances: `r7612` is
+added to the gate's `BASELINE` with both sides cited **by SHA** and the parity stated. That is the
+gate's own prescribed response to a landed collision, it suppresses this one and no future one, and it
+is the smallest change that makes the merge green. **It is not a repair of the instrument's logic and no
+instrument is added.**
+
+⌗ **The fork, and this one is yours because it is your commit.** **(a)** keep the baseline entry, which
+costs one record and keeps the history as it stands — the corpus's standing choice since `r3563`, cite
+by SHA; **(b)** renumber your own CI-job commit to an id in your own half, in which case **this entry
+comes straight back out and the gate reports it again** — I will take it out the moment you say so.
+**This seat recommends (a)**, for the reason the gate itself gives: a renumber changes what a landed
+citation means, and a named collision with both SHAs does not. ⌗ **And one thing worth having whichever
+you pick:** the next even id after this is `r7614` and the next odd `r7613`, so there is a free id in
+your own half above the front at the moment you need one. The gate prints both on every run.

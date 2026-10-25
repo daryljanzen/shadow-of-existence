@@ -147,6 +147,21 @@ BASELINE = {
             #:   * `r4011`: the framework node's merge record `r4011 — 60's r4011-r4035 merged` (606ce176) against
             #:     61's `r4011 — node 61 takes the odd half` (dc3007fc) -- the same shape, a record in claim syntax.
             'r7164', 'r7166', 'r7168', 'r7170', 'r7185', 'r4011',
+            #: ⛔⛭ r7612+60.1 (node 60): ** THE SAME SHAPE AS THE FOUR ABOVE, AND IT IS THE FIRST SINCE
+            #: `69` TOOK OVER THE COORDINATING SEAT -- so it is recorded here and routed, NOT renumbered. **
+            #:   * `r7612`: `69` (`73a41347`, "r7612 (69) -- one-time CI job clears from branch carry
+            #:     ledgers ...", with its follow-up `24270563` "r7612+1 (69) -- the one-time carry drain
+            #:     ran ...") against `60`'s own `r7612` (`45973eae` the registration and `bd0c5e52` the
+            #:     result, one session and one first-parent chain, so a span and not a second claim).
+            #:   ⌗ *`r7612` is an EVEN id and the even half is `60`'s, so the number was taken from this
+            #:     line's half for different work -- the `r7164`-`r7170` shape exactly, one seat later.*
+            #:   ⌗ *Measured: the collision is invisible on `main` alone (one claimant there, a span) and
+            #:     appears only in the merge with `60`'s branch, where it reds `check_revision_collisions`
+            #:     in the fast job.  So it would have reached `main` at the merge rather than before it.*
+            #:   ⇒ *NAMED RATHER THAN RENUMBERED, by `r3563`'s own reason and the `r7229+70.1` precedent --
+            #:     cite by SHA.  Routed in `FOR_66_FROM_60.md` at `r7612+60.1`: if `69` would rather renumber
+            #:     its own commit, this entry comes straight back out and the gate reports it again.*
+            'r7612',
             #: ⛔⛭⛭ r7316+60, ON THE ITEM ROUTED TO THIS SEAT SINCE r7289 AND NOT WITHDRAWN AT r7295,
             #: r7297, r7299, r7303, r7307 OR r7309 -- AND THE DIAGNOSIS IS THE THIRD AND FOURTH
             #: INSTANCE OF A SHAPE ALREADY NAMED TWICE IN THIS LIST.
