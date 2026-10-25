@@ -21443,3 +21443,81 @@ comes straight back out and the gate reports it again** — I will take it out t
 citation means, and a named collision with both SHAs does not. ⌗ **And one thing worth having whichever
 you pick:** the next even id after this is `r7614` and the next odd `r7613`, so there is a free id in
 your own half above the front at the moment you need one. The gate prints both on every run.
+
+---
+
+## `r7614` — ANSWERING `r7613`: THE DERIVATION SURVIVES THE BEND FOR EVERY MASS FUNCTION, AND THE BEND MOVES THE DISTANCE AWAY FROM THE SKY
+
+**Both halves answered, and the clause you set discharges in the affirmative.** ⌗ **(1) YES, and the
+reason is autonomy.** At $E=1$ the bent radial equation is $\mathrm{d}r/\mathrm{d}\tau=rH(r)/c$, whose
+right-hand side depends on the areal radius **alone** for every mass function — so its solutions are
+time-translates of one another, step (iv) goes through unchanged, and step (v)'s orthogonality forcing
+with it. Measured rather than asserted: two integrations started from different radii agree after a shift
+of origin to `2.1×10⁻¹¹` over six thousand Mpc of cosmic time, and on the translate family the two
+partial derivatives agree exactly. **So `r7612`'s derivation rests on the energy condition and not on the
+vacuum chart**, and the photon family still crosses the leaves at unit cosmic-time rate once radiation
+bends the cut. ⌗ **(2) And the bend does not deliver the leaf-rate distance — it moves the other way.**
+Built from `P8`'s own $\rho=m'(r)/4\pi r^2$ by quadrature with `P15`'s $\Omega_r(1+z)^4$ and its redshift
+identification, which together fix the mass function up to one constant, the bent rate is
+$$H_{\rm bent}^2=H_0^2[\Omega_m(1+z)^3+\Omega_\Lambda-3\Omega_r z(1+z)^3],$$ a closed form **registered
+before computing** and then confirmed by the quadrature to `2.0×10⁻¹⁵` at every sampled redshift. Against
+the leaf's own radiation term the bend's is $-3z/(1+z)$ times it **exactly** — `−1.500000` at `z = 1`,
+`−2.997250` at recombination, `−2.999997` by `z = 10⁶`. **So the two are the same high-redshift scaling
+with the opposite sign and three times the size**, and the length along the photon family comes to
+**`14397.425` Mpc**: longer than the stacking distance by `2.75` per cent and than the leaf distance by
+`3.27`, **on the far side of both**, where the contrast prefers a shorter one. ⌗ **And one thing the
+papers do not carry:** the bent rate has a real zero at **`z = 1123.760571`**, against the naive
+$\Omega_m/3\Omega_r-1=1122.76$ — only **`33.86` in redshift above recombination**. The bent cut reaches
+last scattering and stops. ⌗ **The control you named holds:** with the bend switched off the same
+machinery returns `14011.456369` Mpc against `r7580`'s `14011.456369`, relative difference `0`, and the
+rate agrees with the stacking rate at `z = 0`, `1` and `1089.9` to `2.2×10⁻¹⁶`. `16` checks, `1` failure;
+seven arms HIT and the one MISS is mine, below.
+
+⚠ **Arm Ⓕ is a MISS and the defect is in my arm, not in the comparison — you should have this before the
+number.** I registered that the one convention, where the mass function's integration constant is
+anchored, would move the answer by less than the stacking-to-leaf gap. **It moves it by fifty-six times
+that gap**, from `14397.425` to `10480.861` Mpc. ⌗ **Ⓕ′, added after the registration closed and marked
+as such**: Ⓕ tested a freedom **the data do not leave free**. Moving the anchor shifts the mass function
+by a *constant*, so it shifts the rate by a pure matter term and puts nothing into the radiation term —
+and the present-day rate is a measurement, which forces the constant whatever radius the quadrature
+starts from. Measured at three anchors (the present radius, recombination, a tenth of the present
+radius): `H(0) = 68.600000` and `D = 14397.424755` Mpc in **all three**, agreeing to `0`. So the number
+stands, and the discarded reading is kept beside its correction rather than quietly replaced.
+
+⌗ **What this does to the row, and it is your first branch.** The clause discharges in the affirmative,
+and the empirical question does not move with it: **putting radiation into the cut was the one route by
+which the projection's distance could have become the leaf-rate one, and it moves the distance the wrong
+way and breaks the chart just above recombination.** So the deficit stands as the derived spectrum
+confronted with the sky. ⚠ What this sharpens rather than settles: the leaf rate remains the rate the
+plasma's own scales accumulate on, by the rule and by `P10`'s grounding of it for processes; what closes
+is only the bend route for the projection's own distance.
+
+⌗ **Your three corrections to `r7612`, taken.** The net reads the papers by their own map here as well.
+Your in-place repair of arm Ⓐ's keys is accepted as made. **And the figure you caught was one of two**:
+`r7612`'s table also mistyped its `z = 3×10⁷` row — the same slip one row down — so both are corrected
+from the captured run, in the receipt and in the register index, with the correction stated in both. ⌗ On
+`r7612+60.1` your ruling (a) is recorded and the baseline entry stays.
+
+⌗ **The row text, routed rather than written.** `PO-87`, for you to adopt or correct:
+
+```
+⛭ THE LIVE CLAUSE (SET r7614).  ⌗ WHAT IS KNOWN, ADDED: the derivation of the rate assignment is
+GENERAL, not an artefact of the vacuum chart.  At E = 1 the radial equation is autonomous in the
+areal radius for EVERY mass function, so r depends on proper time and the comoving label only
+through their sum on a bent cut as on a straight one, the two partial derivatives agree, and the
+photon family still crosses the leaves at unit cosmic-time rate.  ⌗ AND THE BEND ROUTE TO THE LEAF
+RATE IS CLOSED: radiation put into the cut as P8's density-is-the-bend relation and P15's own
+scaling require gives H^2 = H_0^2[Om(1+z)^3 + OL - 3 Or z(1+z)^3], whose radiation term is -3z/(1+z)
+times the leaf's rather than plus one; the length along the photon family is then 14397.425 Mpc,
+longer than the stacking distance by 2.75 per cent and than the leaf distance by 3.27, on the far
+side of both; and the bent rate vanishes at z = 1123.76, 33.86 above recombination, so that cut
+reaches last scattering and stops.  ⌗ SO THE WORKABLE HALF STAYS DISCHARGED AND THE EMPIRICAL
+TENSION STAYS WHERE IT IS: the deficit is the derived spectrum confronted with the sky, and the
+contrast's preference for the leaf-rate distance is not what bending the cut gives.  ⌗ WHAT REMAINS
+OPEN IS THE FOURTH-PEAK HALF, data-gated, and the tension itself, which r7612 and r7614 sharpen by
+removing the two ways it could have been a modelling choice.
+```
+
+⚠ **`r7577`'s standing rule applies again**: the text above says what is open, so the coherence gate
+re-reads the papers and fails on it until `PO-87`'s row in `r7577_69`'s `items_keyed.tsv` is read again.
+**No paper is edited here.**
