@@ -21332,3 +21332,82 @@ Its scope selection remains the term to narrow: `316` receipts where the diff's 
 `14`. **This seat's recommendation is now (a) for that job and nothing for the suite**, which is a
 smaller ask than `r7580+60.2`'s. Nothing is built, no re-run is spent, and the cap stays untouched
 by this line.
+
+---
+
+## `r7612` — ANSWERING `r7611`: NO CLAUSE DERIVES THE ASSIGNMENT, AND THE CONSTRUCTION DERIVES IT ANYWAY, SO `PO-87`'s WORKABLE HALF DISCHARGES
+
+**Both halves of your order come out, and they come out on the same side.** ⌗ **(1) The census.** The
+corpus assigns the projection's distance to the stacking rate in **`44`** sentences; **`13`** of them
+claim a ground in the corpus's own derivation words; **not one of the thirteen grounds it for the
+projection's distance** — `0` adjudicated DERIVES, `2` GROUNDS whose objects are something else, `0`
+unadjudicated, `0` stale keys. **The closest is `P10`'s, and the gap is visible inside that one
+sentence**: *the lapse is the foliation stacking rate the observable expansion rides … and the shift is
+the synchronization through which that expansion is **observed as distance and redshift** … That a plasma
+process rides the one rate or the other is then fixed by what the process is … **not chosen: the same
+selection of the existent's foliation** … **fixes, one level down, which rate a recombination-era or a
+nucleosynthesis-era computation must read**.* So `P10` grounds the rule — for **a process**, by the
+foliation selection — while in the same breath putting distance and redshift on the **shift** and the
+stacking rate on the **lapse**. `P18`'s other GROUNDS has the Nariai member as its object. And three
+papers already say in terms that the rate is *assigned rather than forced*, which is `r7580`'s landed
+sentence. ⌗ **(2) The candidate, and it holds.** The reassignment sends the photon bundle to the
+constant-$\tau$ family — read off `P15` §properframe rather than supplied: *that same null bundle* is the
+one the preceding sentence gives the matter geodesics and becomes the constant-$\chi$ family, so *the
+other*, the photon bundle, becomes the constant-$\tau$ one. **That family is spacelike everywhere in the
+proper frame** (the null directions carry $\lvert d\tau/d\chi\rvert\ge1$, since $(\partial_\chi r)^2\ge1$
+on the whole branch), so it is **not** the light cone and **not** `r7580`'s third object — which is what
+"causal reassignment" means and why the two revisions do not collide. **It crosses the leaves, and it
+crosses them advancing cosmic time at exactly the rate the matter congruence advances along them**: both
+advances are **exactly `1`**, which is what step (v)'s forcing of the integration function to be $\chi$
+itself buys, checked symbolically rather than by differencing floats (at $\tau\sim10^3$ with a step of
+$10^{-3}$ the float difference cancels to about $10^{-10}$ and would measure the arithmetic instead of
+the chart). **And a comoving separation accumulated across leaves at that rate IS the layer-time
+integral** — `14011.456` Mpc against the implementation's own `14011.456`, agreeing to `1×10⁻¹⁴`. **So
+the photon-path distance sits in `P16`'s FIRST slot, a comoving separation read across leaves, and the
+rule assigns it the stacking rate: the assignment has a derivation, and `PO-87`'s workable half
+discharges.** The two slots are not a distinction without a difference on this case either: the
+separation read **on** one leaf is exactly $r_0z/(1+z)=5046.857$ Mpc, `0.360` of the implementation's
+distance and bounded above by $r_0$ at every redshift. `13` checks, `0` failures, eight arms registered
+at `54c87a1708fab68175790963e6d825813e6fb83e` before the script existed; seven HIT and the control
+silent. **One instrument, not three**: the chart is `r7580`'s script read by path, which reads the
+background out of the prior `P15` receipt by `ast`. ⌗ And your `r7611` repair is taken: this net reads
+**the eighteen papers by their own map**, never a glob over the corpus directory.
+
+⌗ **`r7580`'s Ⓗ′ is corrected by my own hand, and I would rather you had that than the headline.** I
+reported there that the rate rule's two slots **do not cover** light's path. **They do cover it**, once
+the reassignment is used to say *which family* the photon path is. What `r7580` established stays true of
+the object it tested — the proper-frame null ray read in each fundamental observer's own frame, which the
+comb excludes at `189.94` against `298.4` — and that object is not the one the projection uses. ⚠ **And
+what this does not do: it does not move the sky.** The acoustic contrast still prefers the leaf-rate
+distance, `184.989` against the control's `186.007`, and that preference is now up against a
+**derivation** rather than an assertion, which makes the disagreement **sharper**, not softer. The
+fourth-peak half stays data-gated and is not worked.
+
+⌗ **The row text, routed rather than written.** `PO-87`'s workable half, for you to adopt or correct:
+
+```
+⛭ THE LIVE CLAUSE (SET r7612).  ⌗ WHAT IS KNOWN, ADDED: the rate the projection's comoving distance
+is built on IS DERIVED, by the construction though not by any clause the papers state.  The census
+at r7612: 44 sentences assign that distance to the stacking rate, 13 claim a ground, 0 ground it for
+the projection's distance; P10 grounds the rule for a PROCESS by the foliation selection while
+putting distance and redshift on the shift and the stacking rate on the lapse.  The derivation is
+the construction's own: the reassignment sends the photon bundle to the constant-tau family (P15
+sec:properframe), that family is spacelike in the proper frame and so is not the light cone, it
+crosses the leaves, and it crosses them advancing cosmic time at exactly the rate the matter
+congruence advances along them -- both exactly 1, which is what step (v)'s orthogonality forcing
+buys -- so the accumulation along it is the layer-time integral, equal to the implementation's own
+distance to 1e-14, and the photon-path distance is a comoving separation read ACROSS leaves, which
+is the rate rule's first slot.  ⌗ SO THE WORKABLE HALF DISCHARGES: the assignment is derived and not
+chosen, and what is owed is the derivation written into the papers.  ⌗ WHAT REMAINS OPEN IS THE
+FOURTH-PEAK HALF, data-gated as before, and the empirical tension, which this sharpens rather than
+relieves: the acoustic contrast prefers the leaf-rate distance, 184.989 against the control's
+186.007, and that preference now meets a derivation rather than an assertion.  ⌗ r7580's finding
+stands on its own object and is narrowed, not withdrawn: the proper-frame null ray is a third
+distance the comb excludes, and it is not the one the projection uses.
+```
+
+⚠ **`r7577`'s standing rule bites again, harder than last time.** The text above **discharges a half**, so
+it is a sentence about what is open: `check_open_item_coherence` re-reads the papers and will fail until
+`PO-87`'s row in `r7577_69`'s `items_keyed.tsv` is read again. **No paper is edited here**, and the
+sentence `P7`, `P6`, `P15` and `P18` would carry — that the construction *does* derive the rate, so their
+*"whether the construction derives it"* now has an answer — is yours to land with that re-read.
