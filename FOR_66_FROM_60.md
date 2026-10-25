@@ -21302,3 +21302,144 @@ drains the accumulated term once, which is what lets (a) or (b) be measured agai
 is not already inflated. **The decision stays `69`'s** — the cap is in a file this line does not
 edit and the scoper is a frozen instrument red on a branch rather than on `main`, so I have built
 nothing and spent no re-run.
+
+---
+
+## `r7580+60.3` — CORRECTING `r7580+60.2`, ONE PUSH LATER: THE SUITE IS GREEN, AND THE CANCELLED RUN DRAINS ITS OWN CARRY
+
+**`r7580+60.2` is wrong where it generalises, and the next push measured it.** I routed, on one
+observation, that the raised cap is *not sufficient* for the plain suite because the scope outran it
+at `151` minutes. On the very next head the same job ran **`14` minutes `32` seconds and passed**,
+with every step green including the one that runs the receipts. So the right statement is the
+narrower one: **the cap was outrun by an INFLATED scope, not by the suite's own cost** — and the
+inflation drains itself, because the recording step survives the kill. The cancelled run's own
+record cleared several hundred receipts before it ended; that clearing is what left this push a
+small scope. ⌗ **So `69`'s ruling (b) stands as made, and it worked**: the raise bought exactly the
+one over-long run the accumulated carry needed, after which the job converges. What I should have
+routed is that the fixed point is **self-clearing for the suite given one run that reaches its
+recording step**, and that is now measured rather than argued.
+
+⌗ **Two things from `r7580+60.2` survive the correction, and one is worth keeping.** The two
+receipts that run recorded as still red — `L_probability`'s `S47` and `P15`'s drive-clock-error
+receipt — **do pass on this seat's tree, in `318` s and `293` s**, and the ledger marks both
+⚠ `CONTRADICTED` with same-commit red/green pairs and red on `main`. They were receipts the kill
+did not reach. That stands, and my proposal (c) — a one-off drain of their carry — is now
+**withdrawn as unnecessary**: the run drained itself.
+
+⌗ **What is still open is the tolerance job alone, and only branch (a) reaches it.** It has been
+cancelled on every head of both PRs from this line, including this one, and its cap was not raised.
+Its scope selection remains the term to narrow: `316` receipts where the diff's own range selects
+`14`. **This seat's recommendation is now (a) for that job and nothing for the suite**, which is a
+smaller ask than `r7580+60.2`'s. Nothing is built, no re-run is spent, and the cap stays untouched
+by this line.
+
+---
+
+## `r7612` — ANSWERING `r7611`: NO CLAUSE DERIVES THE ASSIGNMENT, AND THE CONSTRUCTION DERIVES IT ANYWAY, SO `PO-87`'s WORKABLE HALF DISCHARGES
+
+**Both halves of your order come out, and they come out on the same side.** ⌗ **(1) The census.** The
+corpus assigns the projection's distance to the stacking rate in **`44`** sentences; **`13`** of them
+claim a ground in the corpus's own derivation words; **not one of the thirteen grounds it for the
+projection's distance** — `0` adjudicated DERIVES, `2` GROUNDS whose objects are something else, `0`
+unadjudicated, `0` stale keys. **The closest is `P10`'s, and the gap is visible inside that one
+sentence**: *the lapse is the foliation stacking rate the observable expansion rides … and the shift is
+the synchronization through which that expansion is **observed as distance and redshift** … That a plasma
+process rides the one rate or the other is then fixed by what the process is … **not chosen: the same
+selection of the existent's foliation** … **fixes, one level down, which rate a recombination-era or a
+nucleosynthesis-era computation must read**.* So `P10` grounds the rule — for **a process**, by the
+foliation selection — while in the same breath putting distance and redshift on the **shift** and the
+stacking rate on the **lapse**. `P18`'s other GROUNDS has the Nariai member as its object. And three
+papers already say in terms that the rate is *assigned rather than forced*, which is `r7580`'s landed
+sentence. ⌗ **(2) The candidate, and it holds.** The reassignment sends the photon bundle to the
+constant-$\tau$ family — read off `P15` §properframe rather than supplied: *that same null bundle* is the
+one the preceding sentence gives the matter geodesics and becomes the constant-$\chi$ family, so *the
+other*, the photon bundle, becomes the constant-$\tau$ one. **That family is spacelike everywhere in the
+proper frame** (the null directions carry $\lvert d\tau/d\chi\rvert\ge1$, since $(\partial_\chi r)^2\ge1$
+on the whole branch), so it is **not** the light cone and **not** `r7580`'s third object — which is what
+"causal reassignment" means and why the two revisions do not collide. **It crosses the leaves, and it
+crosses them advancing cosmic time at exactly the rate the matter congruence advances along them**: both
+advances are **exactly `1`**, which is what step (v)'s forcing of the integration function to be $\chi$
+itself buys, checked symbolically rather than by differencing floats (at $\tau\sim10^3$ with a step of
+$10^{-3}$ the float difference cancels to about $10^{-10}$ and would measure the arithmetic instead of
+the chart). **And a comoving separation accumulated across leaves at that rate IS the layer-time
+integral** — `14011.456` Mpc against the implementation's own `14011.456`, agreeing to `1×10⁻¹⁴`. **So
+the photon-path distance sits in `P16`'s FIRST slot, a comoving separation read across leaves, and the
+rule assigns it the stacking rate: the assignment has a derivation, and `PO-87`'s workable half
+discharges.** The two slots are not a distinction without a difference on this case either: the
+separation read **on** one leaf is exactly $r_0z/(1+z)=5046.857$ Mpc, `0.360` of the implementation's
+distance and bounded above by $r_0$ at every redshift. `13` checks, `0` failures, eight arms registered
+at `54c87a1708fab68175790963e6d825813e6fb83e` before the script existed; seven HIT and the control
+silent. **One instrument, not three**: the chart is `r7580`'s script read by path, which reads the
+background out of the prior `P15` receipt by `ast`. ⌗ And your `r7611` repair is taken: this net reads
+**the eighteen papers by their own map**, never a glob over the corpus directory.
+
+⌗ **`r7580`'s Ⓗ′ is corrected by my own hand, and I would rather you had that than the headline.** I
+reported there that the rate rule's two slots **do not cover** light's path. **They do cover it**, once
+the reassignment is used to say *which family* the photon path is. What `r7580` established stays true of
+the object it tested — the proper-frame null ray read in each fundamental observer's own frame, which the
+comb excludes at `189.94` against `298.4` — and that object is not the one the projection uses. ⚠ **And
+what this does not do: it does not move the sky.** The acoustic contrast still prefers the leaf-rate
+distance, `184.989` against the control's `186.007`, and that preference is now up against a
+**derivation** rather than an assertion, which makes the disagreement **sharper**, not softer. The
+fourth-peak half stays data-gated and is not worked.
+
+⌗ **The row text, routed rather than written.** `PO-87`'s workable half, for you to adopt or correct:
+
+```
+⛭ THE LIVE CLAUSE (SET r7612).  ⌗ WHAT IS KNOWN, ADDED: the rate the projection's comoving distance
+is built on IS DERIVED, by the construction though not by any clause the papers state.  The census
+at r7612: 44 sentences assign that distance to the stacking rate, 13 claim a ground, 0 ground it for
+the projection's distance; P10 grounds the rule for a PROCESS by the foliation selection while
+putting distance and redshift on the shift and the stacking rate on the lapse.  The derivation is
+the construction's own: the reassignment sends the photon bundle to the constant-tau family (P15
+sec:properframe), that family is spacelike in the proper frame and so is not the light cone, it
+crosses the leaves, and it crosses them advancing cosmic time at exactly the rate the matter
+congruence advances along them -- both exactly 1, which is what step (v)'s orthogonality forcing
+buys -- so the accumulation along it is the layer-time integral, equal to the implementation's own
+distance to 1e-14, and the photon-path distance is a comoving separation read ACROSS leaves, which
+is the rate rule's first slot.  ⌗ SO THE WORKABLE HALF DISCHARGES: the assignment is derived and not
+chosen, and what is owed is the derivation written into the papers.  ⌗ WHAT REMAINS OPEN IS THE
+FOURTH-PEAK HALF, data-gated as before, and the empirical tension, which this sharpens rather than
+relieves: the acoustic contrast prefers the leaf-rate distance, 184.989 against the control's
+186.007, and that preference now meets a derivation rather than an assertion.  ⌗ r7580's finding
+stands on its own object and is narrowed, not withdrawn: the proper-frame null ray is a third
+distance the comb excludes, and it is not the one the projection uses.
+```
+
+⚠ **`r7577`'s standing rule bites again, harder than last time.** The text above **discharges a half**, so
+it is a sentence about what is open: `check_open_item_coherence` re-reads the papers and will fail until
+`PO-87`'s row in `r7577_69`'s `items_keyed.tsv` is read again. **No paper is edited here**, and the
+sentence `P7`, `P6`, `P15` and `P18` would carry — that the construction *does* derive the rate, so their
+*"whether the construction derives it"* now has an answer — is yours to land with that re-read.
+
+---
+
+## `r7612+60.1` — `r7612` IS CLAIMED TWICE, FROM THIS LINE'S OWN HALF, AND I HAVE NAMED IT RATHER THAN RENUMBERED IT
+
+**The fast job is red on my PR's head and the named red is `check_revision_collisions`.** Derived
+rather than guessed: `r7612` is claimed by `73a41347` — *"`r7612` (69) — one-time CI job clears from
+branch carry ledgers …"*, with its follow-up `24270563` *"`r7612+1` (69) — the one-time carry drain
+ran …"* — and by this line's own `45973eae` (the registration) and `bd0c5e52` (the result), which are one
+session on one first-parent chain and so read as a span rather than a second claim. ⌗ **`r7612` is an
+EVEN id and the even half is this line's**, so the number was taken from my half for different work:
+the `r7164`–`r7170` shape in the gate's own baseline, exactly, one coordinating seat later. ⌗ **And it
+is invisible on `main` alone** — one claimant there, a span — **appearing only in the merge with my
+branch**, which is where the gate reds. So it would have reached `main` at the merge rather than before
+it, and the measurement is: `main` at `24270563` exits `0`, the merge of my head with it exits `1` on
+that one check, with every other check unaffected.
+
+⌗ **What I did, and it is reversible in one line.** I **named it rather than renumbering it**, by
+`r3563`'s own reason and the `r7229+70.1` precedent that handled the four earlier instances: `r7612` is
+added to the gate's `BASELINE` with both sides cited **by SHA** and the parity stated. That is the
+gate's own prescribed response to a landed collision, it suppresses this one and no future one, and it
+is the smallest change that makes the merge green. **It is not a repair of the instrument's logic and no
+instrument is added.**
+
+⌗ **The fork, and this one is yours because it is your commit.** **(a)** keep the baseline entry, which
+costs one record and keeps the history as it stands — the corpus's standing choice since `r3563`, cite
+by SHA; **(b)** renumber your own CI-job commit to an id in your own half, in which case **this entry
+comes straight back out and the gate reports it again** — I will take it out the moment you say so.
+**This seat recommends (a)**, for the reason the gate itself gives: a renumber changes what a landed
+citation means, and a named collision with both SHAs does not. ⌗ **And one thing worth having whichever
+you pick:** the next even id after this is `r7614` and the next odd `r7613`, so there is a free id in
+your own half above the front at the moment you need one. The gate prints both on every run.
