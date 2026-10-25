@@ -713,8 +713,11 @@ where edits landed (r6937, r973, r1840, r1609, the significance-weight histories
 (the graviton tower's mode sums spend one constant) and (iv) reads as P17 now states it. §1a's record names P13, not P14,
 and P4, not P5. Two paper sentences found on the way: `P12` l.323 put the S3 inside so(5,1) against its own l.344 and is
 now "beside... read off the horizon cubic"; `P16`'s header comment still called both directions fatal and now carries the
-two directions. Owed to `P3`'s next turn: l.919 still reads the inward leg as the local rate "where the light elements
-freeze out" and continues the conjugate branch "through the seam".
+two directions. `P3` l.919 read the inward leg as the local rate "where the light elements freeze out" and continued the
+conjugate branch "through the seam". **Done (r7581)**: the conjugate branch is continued through the branch point, the
+inward and outward readings are dust collapse and the expanding cosmology, one congruence crossing the branch point, and
+the freeze-out sits on the outward leg as it cools past the branch point, on the content's own rate (`P7` eq:two-rate,
+`P18` and `P16` on the cooling leg).
 
 ### 4. `capstones/THE_WISDOM_LEDGER.md`
 
@@ -887,3 +890,95 @@ Killing horizons from the flow carrying cross-sections isometrically. `P4` alrea
 The census is refreshed (`r7577_69_the_census_refresh`, 240 candidates) and the gate wired; `PO-86` is struck; 60, cc66
 and 70 are resumed in their files on `PO-87`, `PO-95` and `PO-24`, 60's the projection-distance adjudication; 71 stays
 standing by, no formalisation row being open.
+
+## After the arc
+
+- `PO-89` part (c), the nine-level closed forms of `P10`'s same-level cubic. **Done (r7581)**: derived from the
+  recoupling algebra as identities in the level. Each channel's amplitude is read at the extreme right-label triple
+  (the Wigner-Eckart theorem makes it one constant times the right 3j), where every left magnetic number lies within six
+  of the top, the bottom or zero; in magnetic bases rescaled to those positions every ingredient is a factorial ratio
+  times a polynomial in the level, so the amplitude is a polynomial and its degeneracy-summed square a rational function.
+  The two extreme channels give the extreme form and the six mixed ones the mixed form at every odd level from 19 up, and
+  r7056's machinery gives the levels below; the orbit degeneracy and the representative independence come with them.
+  Receipt `P10_the_closed_forms_are_derived_from_the_recoupling_algebra_at_the_extreme_right_labels_so_the_nine_levels_are_a_check_and_not_the_ground`.
+  `P10` (the scope paragraph after the parity, §lock and its header comment), `P7` `frontier:quantum` and `P18`
+  (§frontier, its table, and the dissolution paragraph) state the completion in two parts; `PO-89` keeps (a) and (b).
+- `PO-89` part (b), the invariant the dimension-six coefficient belongs to. **Worked (r7587, corrected r7591).** On a
+  scale factor that varies, where the covariant dimension-six scalars separate, the same-level logarithm is computed by
+  expanding the cubic's three-propagator integral locally in derivatives of the scale factor (checked against the
+  propagator integrated numerically): $-15405/8192$, $-8313/4096$ and $14769/8192$ at zero, two and four derivatives,
+  nothing beyond. r7587 tested covariance without the scale factor's equation of motion and concluded the carrier was an
+  invariant of the foliation; that does not follow, because off the classical history an effective action is defined
+  only up to multiples of that equation, which a redefinition of the scale factor removes. Taken up to the equation
+  (r7591): the free tower at dimension four is covariant, the eight-modes-per-level piece included (a minimally
+  coupled scalar's $R^2/72$ recovered exactly as the control); the same-level cubic at dimension six is not, while a
+  control of covariant scalars plus a multiple of the equation passes. So the same-level part is not by itself the
+  coefficient of an invariant, and the coefficient is completed by the cubic joining three different levels and the
+  quartic on a varying scale factor, a new open part (d) of `PO-89`. Receipt
+  `P10_on_a_scale_factor_that_varies_the_free_towers_logarithm_is_covariant_up_to_the_scale_factors_equation_and_the_same_level_cubics_is_not_so_the_coefficient_needs_the_complete_second_order`.
+  `P10` states the dimension-six coefficient as the same-level part where it is computed, the naming paragraph,
+  the rank paragraph and §lock's close carry the corrected state; `P7` `frontier:quantum` and `P18` (§frontier, its
+  discharge, its table, the dissolution paragraph) with them.
+- `PO-89` part (d), first stage: the cubic over three different levels. **Derived (r7595)**, with r7583's recoupling
+  algebra at three independent levels: the sum factors into linear forms, $S=(P^2-1)\prod(Q_i^2-1)[f(P)+\sum f(Q_i)]/
+  (2^{15}\prod m(m^2-1))$ with $P=\sum m_i$, $Q_i=P-2m_i$, $f(s)=(s^2-1)^2(s^2-9)(s^2-25)$, exact against r7056's machinery inside the triangle, on its boundary and at the lowest level.
+  r7593 stated the complete coefficient as the logarithm of that sum; that does not hold as stated, because the sum is
+  doubly logarithmic: with one level low and two high the high pair has a logarithm of its own, coefficient
+  $(m^2-4)(608m^4-3866m^2+1233)/2520$ over the low level's frequency, and summed over the low level that logarithm
+  diverges logarithmically again (partial sums growing as $4979/2240$ times the square of the cutoff's logarithm,
+  where the same-level line's grow as $-15405/16384$ times the logarithm). The complete coefficient is the single logarithm after that nested
+  divergence is subtracted by the one-loop counterterm inserted at the low level. Receipt
+  `P10_the_cubic_over_three_different_levels_is_derived_in_closed_form_and_its_low_level_region_carries_a_nested_logarithm_so_the_bare_sum_is_double_logarithmic`.
+  `P10` (the three-level sentence after the parity, the naming paragraph, §lock's close), `P7` `frontier:quantum` and
+  `P18` (§frontier, its discharge and table) carry it; `PO-89` (d) keeps the subtraction, the three-level kernel on a
+  varying scale factor, and the quartic.
+
+## The lap's Killing order (chat seat, branch `claude/lap-killing-order`)
+
+- **How the event horizon's metric-singular structure evolves around the lap. Done.** The question was where the
+  affine order along a horizon generator goes as the lap runs back seam, turnaround, lift, branch point, front seam.
+  In `P7`'s proper-frame chart $K=\partial_\chi-\partial_\tau$ is Killing, lies in every layer $\tilde\tau=$ const, is
+  the static field $\pm\partial_t$ (isometry algebra $\mathbb{R}\oplus\mathfrak{so}(3)$ for $M\neq0$), and has
+  $|K|^2=-f$. The stratification's two characters are its sign and its side of $-1$; the causal triple
+  $1-f\in\{+1,0,-1\}$ is $|K|^2\in\{0,-1,-2\}$; the branch point is $-\infty\to+\infty$. At each seam the layer is a
+  Killing horizon of $K$, so `P1`'s metric singularity, and the generator's order is at once the worldlines' order in
+  the layer and their proper-time order; $\kappa=3\sqrt3/4\alpha$ at the back seam and $0$ at the front, where the
+  Killing parameter is affine, which is what `thm:null-boundary` (iii) needs at the occurrence. Receipt
+  `LAP_killing_order` (sympy); the closed-form core is machine-checked in Lean, `ShadowFormal.LapKilling`, fifteen
+  theorems on the standard axioms only. `P7` carries it as `rem:killingorder` with `fig:F-killing`.
+- **`P1` builds in the GRG submission's structure.** The Schwarzschild picture, then `sec:killing` (lemma, rigidity
+  corollary, the standard families), then `sec:alignment` in three subsections (any event horizon; collapse of any
+  symmetry; the Schwarzschild exterior explicitly), the standard problems and a conclusion. The accretion paragraph is
+  gone and "auxiliary completed geometry" is "maximally extended geometry" in `P1` and in `P7`'s two echoes. The
+  Kerr--Newman--de~Sitter caveat now cites Hintz--Vasy for the stability of slowly rotating Kerr--de~Sitter, leaving
+  uniqueness in that family as the open question of mathematical relativity it is. `P1` points forward to
+  `rem:killingorder` without leaning on it.
+- **`P4` carries the non-synchronous qualification** from the JCAP version, with the forward pointer that this case
+  is `P7`'s cosmology. Non-load-bearing, stated so.
+- Instruments moved with it: the dependency matrix in `P7` and the HTML (P1->P7, P4->P7, P7->P1 each +1; a stale
+  P4->P5 edge label of 8 corrected to the matrix's 7), the receipt appendices, the open-reference baseline (four `P1`
+  sites re-keyed under the new sections, verdicts unchanged), one stale pin into `P1` in
+  `L204_physics_reach/P2_the_corpus_never_mentions_unruh.py`, and the `P1`, `P4`, `P7` HTML chapters.
+- The back-reaction criterion's volume (r7058, used by P10 §lock). **Corrected (r7599).** r7058 found the criterion
+  $G/\text{target}<18V=36\pi^2$ on the ground that r7034's level values carry no volume, since its quadratic
+  level sum rebuilds without one, while a triple product of orthonormal harmonics carries $V^{-1/2}$. That does not
+  follow: r7034's level tensors are pointwise sums normalised to the degeneracy, which for orthonormal harmonics is
+  the degeneracy over the volume, so a quadratic term (one level sum integrated once) carries no volume and the
+  quartic (two at a point, integrated once) carries $1/V$, exactly as the cubic's square does. The volume cancels:
+  the criterion is $G/\text{target}<18$. r7060's level-to-two-mode factor $88\pi^2/49$ is $(44/49)V$, the trace of
+  the missing $1/V$. The six ratios stay below 18 (the largest, $175/22$, by $396/175$), so the sign stays positive at
+  every odd level computed, by a margin $2\pi^2$ smaller than stated; the net a level contributes is bounded below
+  by $221/396$ of its quartic energy, not $39/40$; the quartic energy per level is in units of $\kappa\hbar^2/(a^3V)$.
+  Receipt `P10_the_quartic_carries_the_inverse_volume_as_the_cubics_square_does_so_the_criterion_is_eighteen_and_not_eighteen_v`. `P10` §lock (the criterion, the residue, the summand) carries the corrected state.
+- `PO-89` parts (d) and (b): the complete second order. **Computed, and the exit taken (r7601).** The cubic's
+  three-level local expansion on a varying scale factor (eight jet monomials, the diagonal r7591's); its double
+  logarithm read from the high pair at each low level with r7595's closed form, checked against the three-level sum
+  slice by slice; every quartic's two-label part a product of one-loop sums (no logarithm of its own), the kinetic
+  quartic included ($-\tfrac{1}{12}\mathrm{tr}[H,\dot H]^2$ in the exponential variable, absent only on a commuting
+  sector). Up to the scale factor's equation of motion and total derivatives, covariance at dimension six is one
+  linear condition; the complete double logarithm's obstruction is $6023/20160$ (curvature quartic $367/48$, kinetic
+  quartic $389/160$, cubic $-\tfrac13\cdot197131/6720$, in the unit where $a^{-3}$ has one), not zero, and the single
+  logarithm's share is moved by the subtraction's freedom along non-covariant directions. So the complete order is
+  not covariant: `PO-89`'s stated exit, the invariant a stated limit, the difference in the reduction. Receipt
+  `P10_the_complete_second_orders_double_logarithm_is_not_covariant_up_to_the_scale_factors_equation_so_the_invariant_is_a_stated_limit`. `P10` (the quartic paragraph, the naming paragraph, §lock's close and its header comment), `P7`
+  `frontier:quantum` and `P18` carry it; `PO-89` keeps the renormalised value, data-gated.

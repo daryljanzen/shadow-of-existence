@@ -191,11 +191,14 @@ def main():
                     re.sub(r'\s+', ' ', tex_txt))
     # ⛭ RE-PINNED r7523 (69, whose P10 edit moved this wording): the open item is now stated as the
     #   COMPLETION of the definition, the definition itself being delivered by the construction's own regulator.
-    _UV_OPEN = ("so the one open thing is the completion of the ultraviolet definition of the "
-                "interacting tower's mode sums")
+    # ⛭ RE-PINNED r7601 (69, whose P10 edit moved it again): the complete second order is computed and
+    #   not covariant, so what P10 names open of the interacting tower's ultraviolet definition is its
+    #   renormalised value at the paying dimension.
+    _UV_OPEN = "so the one open thing is the renormalised value at the paying dimension"
     check('THE CORPUS NAMES THE QUESTION: S50 asks whether "the one-dimensional counterterm basis '
           'survive[s] on a background whose curvature runs" and names the instrument (sub-leading '
-          'Schwinger-DeWitt on the sinh^{2/3} layer); canonical_time.tex names the interacting-tower UV -- '
+          'Schwinger-DeWitt on the sinh^{2/3} layer); canonical_time.tex names what remains of the '
+          'interacting-tower UV, its renormalised value at the paying dimension -- '
           'this is the decidable answer for the running classical background',
           'curvature runs' in s50_txt and 'counterterm basis survive' in s50_txt
           and _UV_OPEN in _tex_u)

@@ -162,7 +162,13 @@ gate(f'Ⓒ①  ⛭⛭ THE WHOLE BLOCK CARRIES NO OWED ROW, and what it HELD is r
      f'landed -- the fail-on-success shape a pinned commit cures **',
      len(_was) == K.RESULT['B_RETIRED'] and len(RECEIPTS) == K.A_SPACE and not _now)
 
-_minted = [c for c in ledger() if c[0] in BLOCK and 'r7338+60' in c[6]]
+# ⛭ r7583 (69): the mint is a fact about the push that closed the block, so it is read AT that push
+#   (28edd3c6e).  Read live it fell by one at r7579, when A2's handover pin was re-pointed to P15's
+#   current wording and its r7338 row retired -- the fail-on-success shape Ⓒ① already pins against.
+#   The live arm is kept monotone: what survives of the mint carries no verdict but `EXTENDED`.
+MINT_AT = '28edd3c6e'
+_minted = [c for c in ledger(MINT_AT) if c[0] in BLOCK and 'r7338+60' in c[6]]
+_live_minted = [c for c in ledger() if c[0] in BLOCK and 'r7338+60' in c[6]]
 _verdicts = collections.Counter(c[5] for c in _minted)
 print(f'      keys this revision minted in the block: {len(_minted)};  verdicts {dict(_verdicts)};  '
       f'{len(_minted) / len(_was):.2f} keys a row')
@@ -170,7 +176,8 @@ gate(f'Ⓒ②  and EVERY KEY THE REPAIRS MINTED IS ADJUDICATED IN THE SAME PUSH,
      f'`{len(_minted)}` keys for `{len(_was)}` rows, `{len(_minted) / len(_was):.2f}` a row.  '
      f'** Higher than the dense blocks\' `0.62` and lower than one: the middle\'s rows are fewer '
      f'fragments-of-one-sentence and more independent claims **',
-     len(_minted) == K.RESULT['MINTED'] and set(_verdicts) == {'EXTENDED'})
+     len(_minted) == K.RESULT['MINTED'] and set(_verdicts) == {'EXTENDED'}
+     and len(_live_minted) <= len(_minted) and {c[5] for c in _live_minted} <= {'EXTENDED'})
 
 # ══════════════════════════════════════════════════════════════════════════════════════════════════
 head('D -- EVERY REPAIRED RECEIPT RE-RUNS GREEN, AND NO RETIRED LITERAL SURVIVES AS A CONSTANT')

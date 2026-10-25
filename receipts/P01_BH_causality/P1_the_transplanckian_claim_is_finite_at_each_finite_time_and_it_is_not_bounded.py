@@ -188,7 +188,7 @@ WRITTEN = [
     ("the two phrasings are set against each other as non-interchangeable",
      r'``finite at each finite exterior time.. and not\s*\n?``bounded'),
     ("the growth rate is identified with the thermality kappa",
-     r'same \$\\kappa\$\s*\n?the preceding paragraph identified as the mechanism of thermality'),
+     r'same \$\\kappa\$\s*\n?identified above as the mechanism of thermality'),
     ("the millisecond timescale is in print rather than left implicit",
      r'2\\times10\^\{-3\}\$\s*seconds at a solar mass'),
     ("and the paper states plainly that the surface is NOT free of ultraviolet physics",
@@ -215,7 +215,7 @@ CROSS = ("and `L-526`'s thermality exponential is still in the text the new clau
 _ok_c = re.search(CROSS[1], P1) is not None
 print(f"  {'OK ' if _ok_c else 'MISSING'}  {CROSS[0]}")
 if not _ok_c:
-    fail.append("the preceding paragraph's exponential is gone — 'the same kappa' has no referent")
+    fail.append("the thermality exponential is gone — 'the same kappa' has no referent")
 
 # =====================================================================
 print()

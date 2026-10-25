@@ -151,15 +151,20 @@ def last_writers(sites, sha=CENSUS):
         byfile[rel].add(l)
     out = {}
     for rel, lines in byfile.items():
-        sha = ln = None
+        # ⛔ r7601 (69): the blamed commit was written into `sha`, the parameter naming the census, so
+        #   blame ran on the LIVE tree with the census's line numbers -- and any edit above a site in
+        #   another seat's file moved which line it read (V2's r7597 re-pin put a second V2 line into
+        #   the foreign-file exposed bucket and turned `Ⓒ③` red).  The census is now blamed AT the
+        #   census, as the header above says the whole of sections A-D is.
+        cur = ln = None
         info = {}
         for row in git('blame', '--line-porcelain', *( (sha,) if sha else () ),
                        '--', rel).split('\n'):
             p = row.split()
             if len(p) >= 3 and len(p[0]) == 40 and all(c in '0123456789abcdef' for c in p[0]):
-                sha, ln = p[0], int(p[2])
+                cur, ln = p[0], int(p[2])
             elif row.startswith('summary ') and ln is not None:
-                info[ln] = (sha, row[8:])
+                info[ln] = (cur, row[8:])
         for l in lines:
             out[(rel, l)] = info.get(l, ('?', '?'))
     return out

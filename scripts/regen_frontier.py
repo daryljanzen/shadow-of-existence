@@ -167,9 +167,13 @@ EST = {
         'or by the discrepancy being shown the skys own. Terminates as a RESULT if the selective suppression is within '
         'cosmic variance at the level the sectors own Monte Carlo over 10^4 skies measures -- a measurement this '
         'programme can take, which is why it is data-gated in part rather than blocked. '),
-    'PO-89': ('the completion of the interacting towers definition, in three unlike parts',
-        3, 3, 3, 'a datum off this background that separates the three dimension-six directions',
-        'r7389: OPENED on PO-86s ruling of its item 7, and it corrects the second half of this seats own r7377 '
+    'PO-89': ('the completion of the interacting towers definition: its renormalised value at dimension six',
+        1, 3, 3, 'a measurement of the renormalised value at operator dimension six',
+        'r7601: the complete second order is COMPUTED (the cubic over all three levels with its nested divergence, and '
+        'both quartics, each a product of one-loop sums) and its double logarithm is NOT covariant up to the scale '
+        'factors equation of motion -- obstruction 6023/20160 against a one-condition test -- so part (d) is done and '
+        'part (b) takes the stated exit, the invariant a stated limit of the reduction; what remains is part (a), the '
+        'renormalised value, which a measurement fixes. r7389: OPENED on PO-86s ruling of its item 7, and it corrects the second half of this seats own r7377 '
         'ruling. What stands: PO-23s strike is UPHELD -- its object was the ultraviolet definition of the mode sums '
         'and its own condition read a definition of the mode sums, or a demonstration that the obstruction is the '
         'general one, and a definition WAS delivered, the interacting sum continued to -4/3 exactly on a regulator '
@@ -180,14 +184,17 @@ EST = {
         'because a predecessor was struck on an inference of just that shape, a result true where it was computed read '
         'as true where it was wanted. So the two objects share a title and are not the same: PO-23 asked for a '
         'definition and got one, while P10 states open the definitions completion. That is r7013 (1), so a row and '
-        'nothing unstruck. Open in three unlike parts: the renormalised value at dimension six, DATA-GATED since a '
+        'nothing unstruck. Open in two unlike parts: the renormalised value at dimension six, DATA-GATED since a '
         'renormalised value is a measurement and the construction takes the horizons temperature and never its '
         'entropy; which invariant the computed coefficient -15405/8192 belongs to, BLOCKED ON THE BACKGROUND since each '
         'of the three surviving dimension-six directions alone reproduces the residue after a single rescaling and a '
         'rank of one makes representatives indistinguishable rather than forced, with the count a lower bound so '
-        'completing the basis can only deepen it; and the nine-level closed forms, WORKABLE, established on nine levels '
-        'with three held out against a discriminating control and not proved from the recoupling algebra, two routes '
-        'tried and neither closing, while the parity they carry IS proved by the channel lists own mirror symmetry. '
+        'completing the basis can only deepen it. The closed forms the coefficient rests on are DERIVED from the '
+        'recoupling algebra as identities in the level, at every odd level, with the orbit degeneracy and the '
+        'representative independence derived with them. And the same-level coefficient is shown incomplete: on a '
+        'scale factor that varies the free towers logarithm is covariant up to the scale factors equation of motion '
+        'while the same-level cubics is not, so the cross-level cubic and the quartic complete the order before the '
+        'invariant can be read. '
         'THIRD IN THREE REVISIONS after PO-87 and PO-88: every one a correct strike with the papers item lying beyond '
         'it, and three is where it stops being a coincidence -- the registers rows answered narrower questions than '
         'the papers state, as a habit rather than an accident, and this phases real product is the rows nobody opened. '
@@ -11092,8 +11099,8 @@ KIND = {'PO-85': 'BUILD', 'PO-84': 'READ', 'PO-83': 'READ', 'PO-82': 'READ', 'PO
         #:                 what is wanted is the mechanism, so neither a read nor a build
         'PO-88': 'BUILD',  #: the crossing's field evolution FOR A CONCRETE MATTER MODEL -- the
         #:                 model is the deliverable, so BUILD
-        'PO-89': 'BUILD',  #: the interacting tower's completion: a renormalised value, the
-        #:                 invariant it coefficients, and the closed forms' proof
+        'PO-89': 'WORK',   #: the interacting tower's completion: since r7601 only the renormalised
+        #:                 value is left (the complete order computed, its invariant a stated limit) -- a measurement
         'PO-90': 'WORK',   #: the sky's selective ell=2 suppression against a floor that starves
         #:                 ell=2 and ell=3 together -- a measured discrepancy wanting a cause
         'PO-92': 'WORK',  #: the charged interior carried past the locus -- an analysis to be done
