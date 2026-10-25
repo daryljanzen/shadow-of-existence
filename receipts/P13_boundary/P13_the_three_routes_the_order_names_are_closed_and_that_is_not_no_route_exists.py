@@ -90,8 +90,8 @@ while frontier:
             if p not in G:
                 G.add(p); nxt.append(p)
     frontier = nxt
-check("PINNED: the wall monodromy with the hinge cycle generates a group of order 27, which is P14's "
-      'own number and not this file\'s', len(G) == 27, f'|G| = {len(G)}')
+check('PINNED: the wall monodromy with the hinge cycle generates a group of order 27',
+      len(G) == 27, f'|G| = {len(G)}')
 check("** and the covering's canonical connection is FLAT, which is L-233/F2's point and not this "
       "file's -- measured below as the finiteness the holonomy theorem turns on **", len(G) == 27)
 
@@ -171,6 +171,29 @@ def coords(X):
 def rho(g):
     gi = np.linalg.inv(g)
     return np.column_stack([coords(g @ B @ gi) for B in BAS])
+# ** THE ORDER IS READ FROM P14's OWN SENTENCE, NOT ATTRIBUTED TO IT.  ⌗ The note sits at the line that
+# caused it, and this is the SECOND time this seat has made this exact mistake -- the first was
+# r7577+cc66.4, where a label said "P14's own r^3 = (9/2) M l^2" while nothing opened P14.  ** The habit
+# is attributing a number to a paper without reading the paper. **  Reading it here also SHARPENS the
+# result: P14 states the full group is of order 81 in U(3), with each monodromy carrying determinant
+# omega, and that its DETERMINANT-ONE part is Delta(27) in SU(3).  The generators used above are
+# determinant-one, so what this file computed is the det-one part -- and the relation 81/27 = 3 is then
+# derived rather than quoted. **
+import pathlib
+P14_SRC = pathlib.Path(__file__).resolve().parents[2] / 'corpus' / 'matter_sector_paper.tex'
+src14 = P14_SRC.read_text(encoding='utf-8')
+ORDER81 = r'finite group of order $81$'
+DELTA27 = r'$\Delta(27)$'
+check(f'P14 itself states the full group is a {ORDER81} in U(3) -- READ from the paper', ORDER81 in src14,
+      f'found in {P14_SRC.name}')
+check(f"and that its determinant-one part is {DELTA27} -- read, not recalled", DELTA27 in src14)
+dets = [np.linalg.det(mat(el)) for el in sorted(G)]
+check('** every element of the group these generators produce has determinant 1, so what this file '
+      "computed is P14's DETERMINANT-ONE part and not the order-81 group **",
+      all(abs(d - 1) < 1e-9 for d in dets), f'max |det - 1| = {max(abs(d - 1) for d in dets):.2e}')
+check('** and the two numbers P14 states are then related rather than quoted: 81 / 27 = 3, the order of '
+      "the determinant character's image <omega> **", 81 // len(G) == 3, f'81 / {len(G)} = {81 // len(G)}')
+
 EL = sorted(G)
 idx = {el: i for i, el in enumerate(EL)}
 R = {i: rho(mat(el)) for i, el in enumerate(EL)}
@@ -210,13 +233,13 @@ def closure_size(gen_mat, cap=2000, tol=1e-9):
 n_fin = closure_size(mat(ZG))
 n_inf = closure_size(np.diag([1.0, np.exp(1j), np.exp(-1j)]))      # an irrational angle: infinite order
 check('the wall monodromy has FINITE order, so the holonomy algebra it generates is zero-dimensional '
-      'and by the holonomy theorem the curvature spans nothing', n_fin < 10, f'closure reaches {n_fin}')
+      'and by the holonomy theorem the curvature spans nothing', n_fin == 3, f'closure reaches {n_fin}')
 check('CONTROL: the same closure on a generator of INFINITE order does NOT terminate, so finiteness is '
-      'measured here rather than assumed', n_inf >= 2000, f'closure reaches the {n_inf}-element cap')
+      'measured here rather than assumed', n_inf == 2000, f'closure reaches the {n_inf}-element cap')
 
 inv = 8 - np.linalg.matrix_rank(rho(mat(ZG)) - np.eye(8), tol=1e-8)
 check('CONTROL: the same cocycle machinery on the INFINITE cyclic group returns H^1 = 2, non-zero, so '
-      "the zero above is the finite group's and not the method's", inv > 0, f'dim H^1(Z, su(3)) = {inv}')
+      "the zero above is the finite group's and not the method's", inv == 2, f'dim H^1(Z, su(3)) = {inv}')
 
 # ------------------------------------------------- the verdict
 print()
@@ -227,8 +250,8 @@ verdict = (sp.simplify(F_hopf) != 0 and sp.simplify(c1 - 1) == 0      # the bar 
            and len(Asol.free_symbols) == 3 and sp.simplify(Fb) == 0   # (1) closed
            and sp.simplify(Fv) != 0                                   # and could have said otherwise
            and d1 == 0 and d2 == 1                                    # (2) closed, counter works
-           and h1 == 0 and inv > 0                                     # (3) closed, machinery works
-           and n_fin < 10 and n_inf >= 2000)                           # and finiteness is measured
+           and h1 == 0 and inv == 2                                     # (3) closed, machinery works
+           and n_fin == 3 and n_inf == 2000)                           # and finiteness is measured
 check('** EACH OF THE THREE ROUTES r7611 NAMES IS CLOSED BY A COMPUTED REASON -- reality and '
       'continuation, dimension, rigidity -- AND THAT IS NOT "NO ROUTE EXISTS": B59\'s enumeration '
       'leaves composite/emergent and the spectral triple open and neither is among the three, so the '

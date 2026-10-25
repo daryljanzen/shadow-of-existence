@@ -24467,3 +24467,146 @@ source. Re-validated: the receipt green, and `check_figures_pinned`, `check_unre
 `check_appendix_current`, `check_pin_board`, `check_prose_pins`, `check_exact_counts` green.
 **No result changes:** `.2`'s verdict, measurements and terminal clause stand, and the routed items of
 `.5` and `.6` stand as written.
+
+## ⚑ `r7611` — **`PO-94`'s GAUGE HALF: EACH OF THE THREE ROUTES THE ORDER NAMES IS CLOSED BY A COMPUTED REASON, AND THAT IS NOT "NO ROUTE EXISTS".** The discharge clause does not fire; the half rests as a rhyme at the level of the world, which is `P13`'s position already; and the bound is `B59`'s enumeration, not my silence
+
+**The order's own discharge clause asked for either a route or an argument that none exists, and the
+honest answer is neither of those two in full: the three routes the order names are each closed by a
+reason I computed, and the fallback — "no such route exists" — is NOT available from examining them,
+because `B59` has an enumerated route that is open, un-examined and not among the three.** That is
+pre-registered **outcome 2**, written into `PREDICTION.md` before anything was computed, and the band
+I registered (0–1 of 3 ruled in) is where it landed: **0 of 3.** One bar for all three, so that each
+is judged by the same one: *produce, on the compact face or on $E=\pi_*(\text{mode bundle})$, a
+connection whose curvature does not vanish identically, from data the corpus already has and not from
+a substrate isometry* — with the two riders the sources force, that the object be **complex of rank
+3** (reality kills the alternative, `P14_the_bundle_is_the_branching`) and that deforming the
+**branching** is not a candidate (`L-233`/`F2`: a covering's canonical connection has no local field
+strength to have — *that* is what it means for the module to be a branching). ⑴ *A connection induced
+by the **Lorentzian form's dynamics** rather than its isometries:* **closed, and in two pieces.** Its
+metric-compatible members die by **reality** — a connection preserving a real metric is
+antisymmetric, which I counted rather than asserted: **3 free components against `su(3)`'s 8, so 5 of
+8 parameters die**, and the rank-3 complex rider is exactly what they fail. Its Berry/adiabatic member
+dies because `P13` §face-status's own sentence removes the base: the face is reached from the
+substrate by **continuation**, not reduction, so it is not a parameter space over which a family of
+states varies — measured as the Berry curvature of a non-varying family against a varying one, with
+the varying control returning a non-zero answer so the zero is a reading. ⑵ *A curvature carried by
+the **horizon's thermal state**:* **closed by DIMENSION — and this is where my own pre-registration
+was weaker than the result, which I record as a correction and not a hit.** I registered the rule-out
+as *"the state enters only as a scalar"*, i.e. `P14_quantisation_not_strength`'s modulus/coupling
+distinction. The computation gives something stronger and cheaper: the datum is **one number**,
+$\beta=2\pi\alpha$, and the space of two-forms over a one-parameter base is **zero-dimensional** — so
+**no** connection built on that datum has a curvature to carry, whatever its index structure would
+have been. I got that by solving $M+M^{\mathsf T}=0$ for the free components rather than quoting
+$\binom p2$, with the counter returning $1$ at $p=2$ and $3$ at $p=3$ so the $0$ at $p=1$ is measured.
+⌗ *And ⑵ is the one I had named as least sure, and the one place the order may have been pointing
+somewhere the corpus has not asked — it is **not** in `B59`'s five routes. It closed hardest of the
+three.* ⑶ *One the **matter sector's walls source**, in the **non-inflow** form only, the inflow form
+being already closed by `P13`'s clause as `B59` records:* **closed by RIGIDITY.** $H^1(G,\mathfrak{su}
+(3))=0$, recomputed here from the holonomy group as $\dim Z^1-\dim B^1=8-8$ by ranks, so the bulk
+object has **no local degree of freedom for a wall current to excite** — a current with nothing to
+source is not a source. ⛭ **AND THE RESIDUE IS NAMED RATHER THAN LEFT TO SILENCE, which is the part of
+this that is not a closure:** `L221`/`B59` **enumerated** the routes and leaves two open — **composite
+/emergent**, and the **spectral triple**, the latter absent from the corpus entirely while $H$ (`P14`'s
+wall kernel) and $D$ (`P14`'s massless Dirac operator) are both present and $M_3(\mathbb C)$ is a
+Wedderburn factor of **exactly** the order-27 group this row computes with. **Neither is among the
+order's three.** ⇒ **So the half rests as a rhyme at the level of the world — which is `P13`
+§synthesis's position already, reached on temporality and not on anything here — and the structural
+identification stands; what is new is the three closures and the named residue, not the world-level
+verdict.** ⛔ **NOT claimed:** that no route exists; that a **coupling** follows (`PO-5` is untouched,
+and a connection without a dimensionless kinetic coefficient is **half** the named test, which `B59`
+warns of and I am not going to claim past); that the structural identification moves. **FIVE
+CONTROLS,** because a verdict of "the curvature vanishes" is otherwise a measurement of my test: the
+Hopf connection on $S^2$, so the bar is shown able to see a field strength and to be normalised
+($c_1=1$, **pinned** — the first attempt was twice the Hopf one and returned $c_1=2$, a correct Chern
+number for a **different** bundle, so the **label** was wrong and not the test); the holonomy group's
+order **27** with its closure terminating at **3** while an irrational-angle generator runs to the
+**2000**-element cap, so finiteness is **measured** and not assumed; the reality rider re-derived; the
+two-form counter above; and the same cocycle machinery returning $H^1=2$ on the infinite cyclic group,
+so the $0$ discriminates. **Landed:** `receipts/P13_boundary/P13_the_three_routes_the_order_names_are_
+closed_and_that_is_not_no_route_exists.py` (22 checks, 46 s, ALL PASS), its `INDEX` row at the end of
+`P13`'s block, `routes.py`/`routes_out.txt` (21 checks) and `WALK.md` under
+`computations/beyond_the_wall/r7611_cc66_the_gauge_halfs_discharge_clause/`, appendices regenerated,
+`corpus/boundary_paper.pdf` recompiled twice at 36 pages with zero undefined references.
+
+## ⚠ `r7611+cc66.1` — **THIS MOVES A SENTENCE ABOUT WHAT IS OPEN, so re-read `PO-94`'s `items_keyed.tsv` row**; and the two things I am ROUTING rather than claiming
+
+⌗ **`r7577`'s standing rule says to tell you when a result moves a sentence saying something is or is
+not open, and this one does, in a direction that is narrower than the order's clause reads.** The
+order's clause offers "no such route exists" as a terminal statement; **I cannot give you that, and I
+am not going to write it.** What the row establishes is strictly: *the three routes `r7611` names are
+closed, by the reasons above.* The half's **bound** is therefore `B59`'s enumeration, with two routes
+open — so if `PO-94`'s row carries the gauge half as "open pending the discharge clause", the correct
+edit is that **the clause's own three candidates are discharged and the half remains open on `B59`'s
+residue**, not that the half is settled. ⇒ **Two routed items, neither of them mine to claim.** ⒜
+**`r7611`'s three-candidate list and `B59`'s five-route enumeration are DIFFERENT LISTS, and the
+order's is the shorter one.** ⑵ (the thermal state) is in the order and **not** in `B59`; composite
+/emergent and the spectral triple are in `B59` and **not** in the order. That mismatch is why the
+fallback cannot be reached by examining the order's three, and it is worth a decision at your end
+about which list the register row is keyed to. ⒝ **The spectral route's candidate algebra and this
+row's obstruction live on the SAME finite group.** $M_3(\mathbb C)$ is a Wedderburn factor of the
+order-27 group algebra; $H^1(G,\mathfrak{su}(3))=0$ is computed on that same $G$. **That is either why
+the spectral route is promising or why it is not, and it is a computation neither `B59` nor this row
+has done.** I am naming it rather than guessing at it.
+
+## ⛔ `r7611+cc66.2` — TWO FAULTS OF MINE IN THIS ROW, and one of them is the SAME fault as `r7577+cc66.4`, which makes it a pattern and not a slip
+
+**⒜ Three checks that could not fail, all in one file.** `diff(A) - diff(A)`; the derivative of a zero
+matrix; `zeros == zeros - zeros`. Each was written as an **identity on the object it was about**, so
+each would have been green against any input whatever — including an input that refuted the row.
+⌗ *The cure in each case was the same: a measurement that **discriminates**, with a control that can
+come back the other way* — which is where the two-form dimension count ($0$, controls $1$ and $3$),
+the $H^1$ cocycle rank ($0$, control $H^1(\mathbb Z)=2$) and the finiteness closure ($3$, control the
+$2000$ cap) come from. The three replacements are the reason the verdict is worth reading; the three
+originals were decoration. **⒝ I attributed a number to a paper without opening the paper — the SECOND
+time from this seat.** The receipt's label said the order 27 *"is `P14`'s own number"* and nothing in
+the receipt read `P14`. `check_unread_figure` named it, exactly as it named `r7577+cc66.4`'s
+$r^3=\tfrac92M\ell^2$ three days ago. **Twice in two consecutive rows is a habit, so I am writing the
+rule down rather than the repair:** *a label that says "the paper's own" is a claim about a FILE, and
+the only thing that discharges it is opening the file in the receipt.* Repaired the stronger way
+again — the receipt now **reads** `P14`'s two sentences (*"a finite group of order $81$ in $U(3)$"*,
+*"whose determinant-one part is $\Delta(27)$ and lies in $SU(3)$"*), verifies every element of the
+group it generates has determinant $1$ so that what it computed **is** the determinant-one part and
+not the order-81 $U(3)$ group, and then **derives** $81/27=3$ as the order of the determinant
+character's image $\langle\omega\rangle$ — so the two numbers `P14` prints are *related* rather than
+quoted. ⌗ *That read **mints two quote-pin keys**, and both are adjudicated `DELIBERATE` in
+`corpus/quote_pin_baseline.tsv` **in the same pass that minted them**, which is the rule that bit at
+`r7577` — the multi-site count goes $168\to170$ against its ceiling of $249$.* ⛭ *And one method
+recurrence worth your file: keying group elements by `np.round(matrix,9).tobytes()` returned a bogus
+**"order 282"** — not a multiple of 27, so a count of rounding representatives and not a group order —
+and then the same keying **recurred** in the product lookup and raised a `KeyError` on $-0.0$ against
+$0.0$. **A group order is exact arithmetic or it is nothing:** the file now keeps the structure in
+exact $(\text{exponents} \bmod 3, \text{permutation})$ tuples and the lookup cannot miss.
+
+## ⛔ `r7611+cc66.3` — **MY READING RULE FOR `FOR_CC66.md` WAS WRONG AND IT COST ME `r7607` AND `r7611` FOR SEVERAL HOURLY TICKS.** The file is no longer reverse-chronological
+
+**You began APPENDING new sections to the BOTTOM of `FOR_CC66.md`.** My rule was "the topmost `##` is
+the newest order", which was right when the file was reverse-chronological and is now wrong. The
+consequence was not cosmetic: `r7607` (line 11275) and `r7611` (line 11279) both sat unread at the
+bottom of an 11281-line file across several hourly cycles while I re-read a struck row at the top and
+reported no new order. **My rule is now "the section with the HIGHEST revision number", which is
+correct under either convention**, and it is written into my own check-in prompt so it survives a
+context boundary. ⌗ *I am not asking you to change how you write the file — appending at the bottom is
+the normal direction and the defect was mine for keying on position instead of on the revision
+number. I am telling you because if 54 or 57 carry the same rule, they have the same blind spot, and
+it is silent: a seat with a stale reading rule reports "no new order" rather than an error.*
+
+## ⛭ `r7611+cc66.4` — THE REDS ON MY OWN HEAD AT `c08b4df3`, MEASURED: THREE OF FOUR WERE MINE and this landing repairs them; the fourth is `main`'s own CONTRADICTED carry
+
+**`fast` red on `check_receipt_orphans` and `check_unread_figure`; the scoped plain suite red on two of
+43 receipts.** ⒜ **Three of the four are one fault of mine and this push closes them all:** the
+`r7611` receipt existed with **no `INDEX` row** — which `check_receipt_orphans` reads directly, and
+which `P17_the_frontier_item_is_a_result_and_the_cosmogenesis_paper_reaches_it_the_other_way.py`
+reads as *"1 receipt(s) still have no INDEX row"* inside the suite — and `check_unread_figure` was the
+unread attribution of `.2`⒝. All three are green here with the row and the paper-read in the tree.
+⌗ *The ordering defect is mine and is the one `run_touched_readers.sh`'s own header describes: I ran
+the receipt, then pushed it, and the `INDEX` row came a commit later.* ⒝ **The fourth is `main`'s
+own, and I am not spending a re-run on it:**
+`L559.../O1_the_registry_was_turned_outward_and_the_arrow_still_pointed_one_way.py`, red at gates ⓹⓺.
+It passes **here, in 5 s, rc=0**, and the corpus's **own** `red_carry` ledger calls it `CONTRADICTED`
+at the run: *carried 24, cleared 23, over 6 branch lines including `main`, 612.6 h* — with the
+ledger's own line *"red at `c82002537b`, green at `011a879080` — **nothing it reads differs between
+the two**"*, three such pairs printed and ten more counted. **A receipt that goes red and green on
+identical trees, on `main` too, is not this PR's failure and no fix exists to port**; `P17`'s
+companion row in the same record carries 21/20 on the same six lines. ⌗ *I am flagging it rather than
+filing it: 24 carries over 612 hours with nobody's fix is a worklist item for whoever owns `L559`, and
+the diagnosis the ledger already prints is better than anything a re-run would add.*

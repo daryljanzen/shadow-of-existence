@@ -129,9 +129,9 @@ n_fin = closure_size(np.diag([1.0, _w, _w**2]))
 n_inf = closure_size(np.diag([1.0, np.exp(1j), np.exp(-1j)]))
 check('the wall monodromy has FINITE order, so its holonomy algebra is zero-dimensional and by the '
       "holonomy theorem the curvature spans nothing -- which is L-233/F2's point and not this file's",
-      n_fin < 10, f'closure reaches {n_fin}')
+      n_fin == 3, f'closure reaches {n_fin}')
 check('CONTROL: the same closure on a generator of INFINITE order does NOT terminate, so the finiteness '
-      'above is measured and not assumed', n_inf >= 2000, f'closure reaches the {n_inf}-element cap')
+      'above is measured and not assumed', n_inf == 2000, f'closure reaches the {n_inf}-element cap')
 F_flat = sp.zeros(3, 3)
 # and the holonomy theorem's half: a finite group has a zero-dimensional Lie algebra
 check('the holonomy ALGEBRA of a finite group is zero-dimensional, so by the holonomy theorem the '
