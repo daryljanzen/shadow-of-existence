@@ -7174,6 +7174,11 @@
     "since": "ddd7520798bf1e3a9dba6cade57e9d2008ee80ad",
     "unmeasured": true
    },
+   "receipts/P15_CR_cosmology/P15_the_readout_fixes_which_length_the_distance_is_and_not_which_rate_so_the_stacking_rate_is_assigned_and_lights_own_path_is_excluded.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40194341296",
+    "since": "91ad5a8e09a7d9ea190a28d2f3fe80aaf09b732e",
+    "unmeasured": true
+   },
    "receipts/P15_CR_cosmology/P15_the_refit_bound_figures_all_reproduce_and_one_of_them_is_a_ratio_standing_where_a_per_bin_chi2_is_read.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40053314799",
     "since": "ddd7520798bf1e3a9dba6cade57e9d2008ee80ad",
@@ -7282,6 +7287,11 @@
    "receipts/P15_CR_cosmology/P15_the_source_decomposition_is_reachable_on_the_reporting_path_and_the_neutrinos_have_a_knob.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40053314799",
     "since": "ddd7520798bf1e3a9dba6cade57e9d2008ee80ad",
+    "unmeasured": true
+   },
+   "receipts/P15_CR_cosmology/P15_the_source_route_is_faithful_because_the_imposed_ratio_applies_the_damping_exponent_once_and_the_instruments_own_exponent_is_one_point_seven.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40194341296",
+    "since": "91ad5a8e09a7d9ea190a28d2f3fe80aaf09b732e",
     "unmeasured": true
    },
    "receipts/P15_CR_cosmology/P15_the_spacing_deficit_survives_the_one_fitted_parameter.py": {
