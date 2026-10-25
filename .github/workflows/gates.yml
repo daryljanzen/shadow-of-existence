@@ -457,48 +457,6 @@ jobs:
   #     names the remedy, rather than scoping on a map of a tree that has moved on. **
   #   ⌗ A push that touches nothing any receipt reads runs NOTHING: the scope step prints 0, and the
   #     steps that install and run are skipped, so such a push costs a checkout and a `git diff`.
-  # r7612 (69): ONE-TIME, removed on the next push.  Branch ledgers still carry the suite receipts main ran
-  #   green under the 150-minute cap at 611a07c281 (ledger commit 6c3cd4fa0); every branch push inherits
-  #   them and is cancelled.  This clears exactly those entries from every branch's suite ledger.
-  carry-drain-once:
-    name: one-time — clear from branch ledgers what main ran green at 611a07c281
-    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-    permissions: { contents: write }
-    runs-on: ubuntu-latest
-    timeout-minutes: 10
-    steps:
-      - uses: actions/checkout@v4
-        with: { fetch-depth: 0 }
-      - name: drain
-        shell: bash
-        run: |
-          python3 - <<'EOF'
-          import json, sys
-          sys.path.insert(0, 'scripts')
-          import red_carry as rc
-          rc.git('.', 'fetch', '-q', 'origin', f'+{rc.REF}:{rc.REF}', check=True)
-          green = set(json.loads(rc.git('.', 'show', '6c3cd4fa0^:carry.json', check=True).stdout)['main']['suite'])
-          assert len(green) == 542, len(green)
-          for _ in range(rc.TRIES):
-              led, tip = rc.fetch('.')
-              moved = {}
-              for br, cls in led.items():
-                  if br == 'main' or 'suite' not in cls:
-                      continue
-                  n = len(cls['suite'])
-                  cls['suite'] = {k: v for k, v in cls['suite'].items() if k not in green}
-                  moved[br] = (n, len(cls['suite']))
-                  if not cls['suite']:
-                      del cls['suite']
-              msg = ('one-time drain (r7612): suite entries main ran green at 611a07c281 cleared from branch '
-                     'ledgers\n\n' + '\n'.join(f'{b}: suite {a} -> {c}' for b, (a, c) in moved.items()))
-              if rc.write('.', led, tip, msg):
-                  print(msg)
-                  break
-          else:
-              sys.exit('drain did not land')
-          EOF
-
   scope-suite:
     name: scoped — the plain suite, on what this push can have changed
     if: github.event_name == 'push'      # r7401+70.2 (r7397 ①): off `pull_request`; see the note at `concurrency:`
