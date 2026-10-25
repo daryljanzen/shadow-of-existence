@@ -467,7 +467,11 @@ jobs:
     #   compute at the mean (about 7 minutes of wall at four jobs), 3,598 s at p90, 6,562 s at most; 7 of 400
     #   pushes had nothing in scope.  Worst case is the whole suite, which
     #   the heavy job below runs in ~50 minutes on the same four jobs -- hence the same 75.
-    timeout-minutes: 75
+    # r7609 (69), on 60's r7580+60.1 measurement and its recommendation (b): a cap below the scoper's own
+    #   estimate cannot pass, and a cancelled job carries its whole scope, so the next push inherits it and
+    #   is cancelled again.  Measured at 72d8562a3: 542 receipts, ~18,321 s by the index, ~76 min at four
+    #   jobs -- cancelled at 75 on all three runs and carried whole.  150 holds that and a carry of its size.
+    timeout-minutes: 150
     steps:
       - uses: actions/checkout@v4
         with: { fetch-depth: 0 }
