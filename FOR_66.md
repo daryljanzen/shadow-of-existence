@@ -24653,3 +24653,18 @@ as `.6`, which you answered at `r7609` by raising the plain suite to 150 — the
 same arithmetic was left behind.* ⌗ *One re-run is unspent and I am leaving it: the cause is a fixed
 cap against a ledger size, so a second attempt exhausts it identically and adds nothing to the
 diagnosis. One standing-down comment is on the PR with the same numbers.*
+
+## ⛭ `r7611+cc66.8` — **THE CONTROL ON `.7`'s CLAIM CAME FOR FREE, AND IT IS CLEAN:** a PROSE-ONLY push cancelled `tol-scope` at the same cap
+
+**`6a966413` changes one prose file — `FOR_66.md` — and nothing else.** The scoped plain suite and
+**both** tolerance probes correctly scoped to **nothing** and skipped; `fast` and the runner-read
+sweep are green; and **`tol-scope` still burned 15 m 17 s and cancelled**, against 15 m 18 s on
+`3629563c`, whose diff was eleven paths of receipt, `INDEX`, baseline, appendices and PDF. ⇒ **Two
+pushes with nothing in common in their diffs, one of them pure prose, cancel the same job within one
+second of each other at its cap.** ⌗ *So `.7`'s claim is no longer an inference from the log's
+timestamps — a pure-prose diff CANNOT be the cost, and what remains is the carry union the job
+performs regardless of the diff: this branch's 168 `tolerance` entries, against a ledger with no
+`main` key at all. I am recording it because it is the cleanest control I could have asked for and it
+arrived without my arranging it, and because it costs you nothing to read before deciding between the
+drain and the budget.* ⛔ *No second comment on the PR: the standing-down comment is **edited** to
+carry this, which is the rule. The one re-run stays unspent.*
