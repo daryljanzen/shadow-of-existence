@@ -107,10 +107,32 @@ check('the generated holonomy group is FINITE, which is the premise of the flatn
       len(G) == 27, f'|G| = {len(G)} against P14/B59\'s 27')
 # a flat connection: A = g^-1 dg for a LOCALLY CONSTANT g, so A = 0 in every patch and F = 0 identically.
 x, y = sp.symbols('x y', real=True)
-A_flat = sp.zeros(3, 3)                                     # locally constant transition => zero form
-F_flat = sp.simplify(sp.diff(A_flat, x) - sp.diff(A_flat, y) + A_flat*A_flat - A_flat*A_flat)
-check('** and the curvature of the covering\'s canonical connection vanishes IDENTICALLY, which is '
-      "L-233/F2's point and not this file's **", F_flat == sp.zeros(3, 3), 'F = 0')
+# ⌗ ** THE NOTE SITS AT THE LINE THAT CAUSED IT, AND IT IS THE THIRD CHECK-THAT-CANNOT-FAIL IN THIS ONE
+# PIECE OF WORK.  The first version asserted F == 0 for F built as  zeros - zeros  -- true for every
+# input.  ** The habit is mine: writing the verdict as an identity on the object it is about.  The cure
+# is a test that DISCRIMINATES, so what is measured is the FINITENESS the holonomy theorem turns on,
+# with a generator of infinite order as the control. **
+def closure_size(gen_mat, cap=2000, tol=1e-9):
+    """how many distinct elements the closure reaches, up to `cap`; cap means "did not terminate"."""
+    seen, frontier = [np.eye(3, dtype=complex)], [np.eye(3, dtype=complex)]
+    while frontier and len(seen) < cap:
+        nxt = []
+        for g in frontier:
+            p = g @ gen_mat
+            if not any(np.allclose(p, q, atol=tol) for q in seen):
+                seen.append(p); nxt.append(p)
+        frontier = nxt
+    return len(seen)
+
+_w = np.exp(2j*np.pi/3)
+n_fin = closure_size(np.diag([1.0, _w, _w**2]))
+n_inf = closure_size(np.diag([1.0, np.exp(1j), np.exp(-1j)]))
+check('the wall monodromy has FINITE order, so its holonomy algebra is zero-dimensional and by the '
+      "holonomy theorem the curvature spans nothing -- which is L-233/F2's point and not this file's",
+      n_fin < 10, f'closure reaches {n_fin}')
+check('CONTROL: the same closure on a generator of INFINITE order does NOT terminate, so the finiteness '
+      'above is measured and not assumed', n_inf >= 2000, f'closure reaches the {n_inf}-element cap')
+F_flat = sp.zeros(3, 3)
 # and the holonomy theorem's half: a finite group has a zero-dimensional Lie algebra
 check('the holonomy ALGEBRA of a finite group is zero-dimensional, so by the holonomy theorem the '
       'curvature spans nothing', len(G) < float('inf'), 'dim hol(G) = 0 for finite G')
