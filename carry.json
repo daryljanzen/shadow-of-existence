@@ -15390,14 +15390,5 @@
     "unmeasured": true
    }
   }
- },
- "main": {
-  "suite": {
-   "receipts/P10_canonical_time/P10_the_complete_second_orders_double_logarithm_is_not_covariant_up_to_the_scale_factors_equation_so_the_invariant_is_a_stated_limit.py": {
-    "gates": [],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40151539506",
-    "since": "b838f82223711cdad8a50f09d8f3a92981cdf8bd"
-   }
-  }
  }
 }
