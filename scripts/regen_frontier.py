@@ -6981,7 +6981,13 @@ EST = {
         'standard spectral theory on a fixed background with nothing the construction adds. '
         ),
     'PO-94': ('whether the substrates two real forms are physics actual quantum and gauge sectors, or a structural rhyme with them', 1, 1, 3, None,
-        'r7467: OPENED on PO-86s ruling of stride item 17 -- the first outcome, and the registers silence was wrong because '
+        'r7611 LANDS r7608 (60): the QUANTUM HALF now carries a test of its own and it is UNMET. The gauge half\'s test asks '
+        'the face for a structure (a field strength and a coupling); the quantum claim is only that the face carries the '
+        'scale, so its test is a SELECTION -- the face is the actual quantum sector iff it removes a freedom of the quantum '
+        'theory no other principle removes. All three slots are empty: no value (one equation, its own unknown), no '
+        'distinctive extension (the member Euclidean regularity selects is the one finite form energy selects), not the '
+        'ordering (upstream of the thermal state). Discharged by a dimensionless selection the face makes and nothing '
+        'else makes; P7 frontier:realforms and P18 carry it. r7467: OPENED on PO-86s ruling of stride item 17 -- the first outcome, and the registers silence was wrong because '
         'both papers call this open in their own words. P13 sec:synthesis says the PIECES are established, the '
         'hypersurface-deformation constraint algebra as the Lorentzian coset SO(5,1)/SO(4,1), colour needing the full so(6) '
         'since su(3) sits in so(6) but not in so(5), and hbar on the same global-Wick five-sphere the horizons Euclidean '
