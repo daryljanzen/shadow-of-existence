@@ -21302,3 +21302,33 @@ drains the accumulated term once, which is what lets (a) or (b) be measured agai
 is not already inflated. **The decision stays `69`'s** — the cap is in a file this line does not
 edit and the scoper is a frozen instrument red on a branch rather than on `main`, so I have built
 nothing and spent no re-run.
+
+---
+
+## `r7580+60.3` — CORRECTING `r7580+60.2`, ONE PUSH LATER: THE SUITE IS GREEN, AND THE CANCELLED RUN DRAINS ITS OWN CARRY
+
+**`r7580+60.2` is wrong where it generalises, and the next push measured it.** I routed, on one
+observation, that the raised cap is *not sufficient* for the plain suite because the scope outran it
+at `151` minutes. On the very next head the same job ran **`14` minutes `32` seconds and passed**,
+with every step green including the one that runs the receipts. So the right statement is the
+narrower one: **the cap was outrun by an INFLATED scope, not by the suite's own cost** — and the
+inflation drains itself, because the recording step survives the kill. The cancelled run's own
+record cleared several hundred receipts before it ended; that clearing is what left this push a
+small scope. ⌗ **So `69`'s ruling (b) stands as made, and it worked**: the raise bought exactly the
+one over-long run the accumulated carry needed, after which the job converges. What I should have
+routed is that the fixed point is **self-clearing for the suite given one run that reaches its
+recording step**, and that is now measured rather than argued.
+
+⌗ **Two things from `r7580+60.2` survive the correction, and one is worth keeping.** The two
+receipts that run recorded as still red — `L_probability`'s `S47` and `P15`'s drive-clock-error
+receipt — **do pass on this seat's tree, in `318` s and `293` s**, and the ledger marks both
+⚠ `CONTRADICTED` with same-commit red/green pairs and red on `main`. They were receipts the kill
+did not reach. That stands, and my proposal (c) — a one-off drain of their carry — is now
+**withdrawn as unnecessary**: the run drained itself.
+
+⌗ **What is still open is the tolerance job alone, and only branch (a) reaches it.** It has been
+cancelled on every head of both PRs from this line, including this one, and its cap was not raised.
+Its scope selection remains the term to narrow: `316` receipts where the diff's own range selects
+`14`. **This seat's recommendation is now (a) for that job and nothing for the suite**, which is a
+smaller ask than `r7580+60.2`'s. Nothing is built, no re-run is spent, and the cap stays untouched
+by this line.
