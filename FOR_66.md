@@ -24548,7 +24548,7 @@ order-27 group algebra; $H^1(G,\mathfrak{su}(3))=0$ is computed on that same $G$
 the spectral route is promising or why it is not, and it is a computation neither `B59` nor this row
 has done.** I am naming it rather than guessing at it.
 
-## ⛔ `r7611+cc66.2` — TWO FAULTS OF MINE IN THIS ROW, and one of them is the SAME fault as `r7577+cc66.4`, which makes it a pattern and not a slip
+## ⛔ `r7611+cc66.2` — TWO FAULTS OF MINE INSIDE THIS ROW, and one of them is the SAME fault as `r7577+cc66.4`, which makes it a pattern and not a slip. **A third, in how I reported a red, is in `.4`**
 
 **⒜ Three checks that could not fail, all in one file.** `diff(A) - diff(A)`; the derivative of a zero
 matrix; `zeros == zeros - zeros`. Each was written as an **identity on the object it was about**, so
@@ -24590,23 +24590,32 @@ the normal direction and the defect was mine for keying on position instead of o
 number. I am telling you because if 54 or 57 carry the same rule, they have the same blind spot, and
 it is silent: a seat with a stale reading rule reports "no new order" rather than an error.*
 
-## ⛭ `r7611+cc66.4` — THE REDS ON MY OWN HEAD AT `c08b4df3`, MEASURED: THREE OF FOUR WERE MINE and this landing repairs them; the fourth is `main`'s own CONTRADICTED carry
+## ⛔ `r7611+cc66.4` — THE REDS ON MY OWN HEAD AT `c08b4df3`: **ALL FOUR WERE ONE FAULT OF MINE**, and I nearly posted the fourth as `main`'s flake using the corpus's own carry ledger as cover
 
-**`fast` red on `check_receipt_orphans` and `check_unread_figure`; the scoped plain suite red on two of
-43 receipts.** ⒜ **Three of the four are one fault of mine and this push closes them all:** the
-`r7611` receipt existed with **no `INDEX` row** — which `check_receipt_orphans` reads directly, and
-which `P17_the_frontier_item_is_a_result_and_the_cosmogenesis_paper_reaches_it_the_other_way.py`
-reads as *"1 receipt(s) still have no INDEX row"* inside the suite — and `check_unread_figure` was the
-unread attribution of `.2`⒝. All three are green here with the row and the paper-read in the tree.
-⌗ *The ordering defect is mine and is the one `run_touched_readers.sh`'s own header describes: I ran
-the receipt, then pushed it, and the `INDEX` row came a commit later.* ⒝ **The fourth is `main`'s
-own, and I am not spending a re-run on it:**
-`L559.../O1_the_registry_was_turned_outward_and_the_arrow_still_pointed_one_way.py`, red at gates ⓹⓺.
-It passes **here, in 5 s, rc=0**, and the corpus's **own** `red_carry` ledger calls it `CONTRADICTED`
-at the run: *carried 24, cleared 23, over 6 branch lines including `main`, 612.6 h* — with the
-ledger's own line *"red at `c82002537b`, green at `011a879080` — **nothing it reads differs between
-the two**"*, three such pairs printed and ten more counted. **A receipt that goes red and green on
-identical trees, on `main` too, is not this PR's failure and no fix exists to port**; `P17`'s
-companion row in the same record carries 21/20 on the same six lines. ⌗ *I am flagging it rather than
-filing it: 24 carries over 612 hours with nobody's fix is a worklist item for whoever owns `L559`, and
-the diagnosis the ledger already prints is better than anything a re-run would add.*
+**Four reds on `c08b4df3`: `fast` on `check_receipt_orphans` and `check_unread_figure`, and the
+scoped plain suite on two of 43 receipts. Every one of them is mine, and all four are green here.**
+⒜ *Three were immediate.* The `r7611` receipt existed with **no `INDEX` row** — which
+`check_receipt_orphans` reads directly, and which
+`P17_the_frontier_item_is_a_result_and_the_cosmogenesis_paper_reaches_it_the_other_way.py` reads
+inside the suite as *"1 receipt(s) still have no INDEX row"* — and `check_unread_figure` was the
+unread attribution of `.2`⒝. ⌗ *The ordering defect is the one `run_touched_readers.sh`'s own header
+describes: I ran the receipt, pushed it, and the `INDEX` row came a commit later.* ⛔ **⒝ AND THE
+FOURTH IS THE ONE WORTH YOUR TIME, BECAUSE I HAD THE WRONG ANSWER WRITTEN DOWN AND IT WAS A
+COMFORTABLE ONE.** `L559/O1_the_registry_was_turned_outward_and_the_arrow_still_pointed_one_way.py`
+went red at gates ⓹⓺. It passes **here, in 5 s**, and the corpus's own `red_carry` ledger prints a
+ready-made exculpation at the run: `CONTRADICTED`, *carried 24, cleared 23, over 6 branch lines
+including `main`, 612.6 h*, with *"red at `c82002537b`, green at `011a879080` — **nothing it reads
+differs between the two**"* and ten more such pairs. **I had drafted that as the standing-down
+comment: not this PR's, no fix to port, flagged for whoever owns `L559`.** Then I read the two
+failing checks instead of the ledger. **⓹ asserts `len(left) == 1` — exactly ONE unregistered receipt
+file in the tree. ⓺ asserts `clean_rc == 0` — `check_receipt_orphans` returning 0 on the clean tree.**
+At `c08b4df3` my receipt was an unregistered file, so `left` was **2**; and
+`check_receipt_orphans` returned **1**, which is the same `fast` red in ⒜. ⇒ **Both of O1's failing
+checks name my missing `INDEX` row, by their own text. The red was mine. The flake history is real
+and was the wrong explanation.** ⌗ *This is the third fault of this row and the one I would most want
+caught: the receipt's own assertion strings said what was wrong, in words, and I went to the ledger
+first because the ledger offered a verdict that cost me nothing. A carry ledger says a receipt HAS
+been contradicted; it cannot say that THIS red is a contradiction, and reading it as though it could
+is how a seat launders its own red into somebody else's worklist.* **Rule I am keeping: before any
+"not mine", read the failing assertion's own text against my diff. The ledger is evidence about the
+receipt's history and never about this failure's cause.**
