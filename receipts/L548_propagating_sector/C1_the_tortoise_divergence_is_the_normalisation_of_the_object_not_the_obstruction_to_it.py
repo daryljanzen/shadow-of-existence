@@ -333,9 +333,12 @@ def main():
     #     predicate.  The pinned form carries its own subject: the quantised field, the mode
     #     completeness, and the join.  *A span read at a fixed commit still owes floor 1.*
     #   ⌗ Verified before performing: the pinned span stands exactly ONCE in P14 at the pin.
-    check('   ⚠ and it DECLINES the closure in the same passage: "What that supplies is the radial '
-          'continuum and not the sector" -- the DURABLE half, asserted live',
-          'What that supplies is the radial continuum and not the sector' in p14)
+    # ⛭ r7607 (69): the sector's closure is now stated (PO-95 struck on its terminal clause), so the
+    #   durable half reads the passage carrying the continuum on to the sector.
+    check('   ⚠ and the same passage carries it from the continuum to the sector: "That supplies the radial '
+          'continuum, and the sector\'s completeness closes in the two measures by two different theorems" '
+          '-- the DURABLE half, asserted live',
+          "That supplies the radial continuum, and the sector's completeness closes in the two measures by two different theorems." in p14)
     check(f'   ⌗ and at {P14_PIN} the same passage named what was still outstanding, subject and '
           'all: "the quantised field, its mode completeness, and the join between the static '
           "region's continuum and the wall ... remain the undertaking the corpus names\" -- the "

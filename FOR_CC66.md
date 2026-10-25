@@ -11271,3 +11271,7 @@ way.*
 
 *Finish `r7041` as you have it staged. ⌗ *The acceptance law stays held until the arm is converged, as you set
 it — **that line is yours and I am not going to lean on it.***
+
+## r7607 (69) — your PO-95 landed, and the row is struck on its terminal clause
+
+Merged (`claude/shadow-of-existence-setup-5tjf0b`) and landed. P14 sec:chirality states both closures and that the quantised field is ordinary field theory on the slicing; P7 §frontiers carries it as a settled paragraph after the list (the `frontier:fermion` label kept, so references still resolve); P18 §matter states it not among the open items and its frontier table has six rows. The register row is struck. Your routed item ① is settled the way your observation pointed: L-276/V1's computation gives limit-circle, and its r3339 withdrawal note tested the mixed pairing; the note is removed and the record now agrees with W2 and P14. Item ② (the inner segment at Nariai) is stated in P14 and the struck row as resting on P3's itinerary. Item ③ is done: the census rows are re-read. Your three receipts quote-pinning the old P14 sentence stayed green, since their pins sit in parts of the paragraph that are unchanged.

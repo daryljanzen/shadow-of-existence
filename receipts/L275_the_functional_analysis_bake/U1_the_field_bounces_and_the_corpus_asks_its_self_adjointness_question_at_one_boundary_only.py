@@ -29,8 +29,9 @@ arithmetic; and where in the corpus each verdict actually lives.  Nothing is fit
 
 ** ⌗ ⓶ AND THE VOCABULARY ABSENCE IS NOT A HOLE, WHICH IS WORTH SEPARATING FROM THE CARTAN CASE. **
 *`Hilbert space` ×0, `inner product` ×0, `von Neumann` ×0, `density matrix` ×0, `mixed state` ×0,
-`S-matrix` ×0, `spectral theorem` ×0, `resolvent` ×0 -- ×1 for exactly one revision, r6967 to r6973,
-in a limit-circle closure the corpus then withdrew; `Stone` ×1 and not in a physics sense.*
+`S-matrix` ×0, `spectral theorem` ×0; `resolvent` in `P14` and `P7` alone, where the quantised fermion
+field's leaf-measure completeness closes by compact resolvent (it stood in `P10` for one revision, r6967 to
+r6973, in a closure the corpus then withdrew); `Stone` ×1 and not in a physics sense.*
   ⇒ ** But `P10` names its Hilbert spaces as $L^2$ of the half-line and $L^2(\mathbb{R})$ throughout. **
     *The objects are there under their standard notation and the phrases are not.*
   ⇒ *** So this is the sixth appearance of the corpus's anonymity, and it is the WEAK form: a
@@ -152,14 +153,21 @@ def main():
     #   it has never needed, and this row is about which of those the field's vocabulary is.*
     #   ⌗ Found by node 70's dependency trace at `r6975`, which is the scoped-suite argument in
     #     miniature: the push that removed the phrase was in this receipt's own read scope.
-    check('⓶ all EIGHT of the field\'s standard phrases are ×0 across the seventeen bodies, '
-          'word-bounded',
-          all(TOTW(t) == 0 for t in absent))
-    check('⓶ᵃ ⛭ and the eighth went ×1 for exactly one revision and back: r6967 wrote "compact '
-          'resolvent" into P10 when the measure argument closed the criterion, and r6973 removed it '
-          'with that argument -- so the gap re-opened where the work stopped needing the term',
-          TOTW('resolvent') == 0
-          and 'compact resolvent' not in re.sub(r'\s+', ' ', p10))
+    # ⛭ r7607 (69): ** THE EIGHTH PHRASE CLOSES AGAIN, AND THIS TIME WHERE THE WORK NEEDS IT TO STAY. **
+    #   PO-95's completeness closes in the leaf's own measure by compact resolvent (cc66, r7577+cc66.2),
+    #   and P14 sec:chirality and P7's settled fermion paragraph now say so in the field's word.  So the
+    #   gap narrows by `resolvent` once more, in exactly the two bodies that carry that argument, while
+    #   the other seven stay x0 and P10, where the r6967 round trip happened, still does not carry it.
+    _rv = {k: v for k, v in RB.word_counts('resolvent', tex=True).items() if v}
+    check('⓶ SEVEN of the field\'s eight standard phrases are ×0 across the seventeen bodies, '
+          'word-bounded, and the eighth, "resolvent", appears only where PO-95\'s completeness argument uses it',
+          all(TOTW(t) == 0 for t in absent if t != 'resolvent') and set(_rv) == {'P07', 'P14'})
+    check('⓶ᵃ ⛭ and the eighth has a history: r6967 wrote "compact resolvent" into P10 when the measure '
+          'argument closed the criterion, r6973 removed it with that argument, and it returns in P14 and '
+          'P7 where the leaf-measure completeness closes by compact resolvent -- the term arriving where '
+          'the work needs it, and still absent from P10',
+          'compact resolvent' not in re.sub(r'\s+', ' ', p10)
+          and 'compact resolvent' in re.sub(r'\s+', ' ', open(os.path.join(ROOT, 'corpus', 'matter_sector_paper.tex'), encoding='utf-8').read()))
     check('⓶ᵇ ⛭ BUT THE OBJECTS ARE THERE UNDER THEIR STANDARD NOTATION: P10 works on "$L^2$ of '
           'the half-line" and "$L^2(R)$" -- so this is a vocabulary gap over work fully done',
           'L^2' in p10 or 'L^{2}' in p10)

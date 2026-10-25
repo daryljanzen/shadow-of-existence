@@ -1,24 +1,22 @@
-r"""L-276 -- WITHDRAWN r3339.  ** THIS RECEIPT'S CONCLUSION IS WRONG AND THE CORPUS HAD ALREADY
-DECIDED AGAINST IT TWICE. **
+r"""L-276 -- THE TWO BRANCH-POINT VERDICTS RECONCILED: LIMIT-CIRCLE, DEFICIENCY (1,1).
 
-*** It concluded LIMIT-CIRCLE from d(ln psi)/dr = lambda/(r sqrt f) -- sqrt f on ONE side of the
-zero-mode equation.  B67 (r2825, a formal F5 verdict) and S3 (r2819) both hold that sqrt f is an
-OVERALL FACTOR: the equation is (sqrt f d/dr - lambda sqrt f/r) psi = 0, so sqrt f CANCELS before any
-branch can be chosen and the index is real +-lambda whatever the sign of f. ***
+The zero-mode equation on the radial first-order pair, written on either self-consistent pairing --
+the tortoise superpotential W = lambda sqrt(f)/r against the tortoise derivative d/dr_* = f d/dr, or the
+frame superpotential lambda/r against the frame derivative sqrt(f) d/dr -- gives the one logarithmic
+derivative d(ln psi)/dr = lambda/(r sqrt f), which is what P14 sec:chirality prints and what W2
+(L-246, PO-22) computed.  Only the MIXED pairing, the tortoise superpotential against the frame
+derivative, (sqrt f d/dr - lambda sqrt f/r) psi = 0, cancels sqrt f and returns psi' = (lambda/r) psi
+with its powers r^(+-lambda); that is K1's input, and its algebra is right on it.  On the corrected
+operator ln psi = -i lambda sqrt(2/M) sqrt(r) near the throat, a bounded imaginary phase, so both
+branches are L^2 in the leaf norm: limit-circle, deficiency (1,1).
 
-** The substitution test settles it and needs no reduction: ** on psi' = (lambda/r) psi the exponent
-r^(+lambda) solves IDENTICALLY, while r^(i lambda) and this receipt's exp(-i lambda sqrt(2/M) sqrt r)
-both leave nonzero residuals.  *Verified here before the withdrawal was written.*
-
-⇒ ** THE VERDICT IS LIMIT-POINT, ** as L-264/K1 and L-275/U1 had it.  P14 is reverted, both receipts
-are restored at the upheld verdict, and OWED 625 is corrected.
-
-⌗ ** AND THE METHOD FAILURE IS THE PART WORTH KEEPING. **  L-265 and this receipt surveyed the PAPERS
-and found the branch point carried no verdict.  The corpus decides in its RECEIPTS -- fourteen of them
-name this operator, eight in `L221_the_bridge`, including B60 "one operator, the fork does not exist".
-*Node 54 built `corpus/prior_art.py` after making the same error from the other side.  The rule: ask
-the receipts, not only the papers -- what the corpus publishes and what it has already decided are
-different sets.*
+r7605 (69): a withdrawal note stood here from r3339 reverting the verdict to limit-point on the ground
+that sqrt f is an overall factor of (sqrt f d/dr - lambda sqrt f/r).  That operator is the mixed pairing
+this receipt's PART 1 rules out, and its substitution test ran on psi' = (lambda/r) psi, the mixed
+pairing's own equation, so it returned r^(+lambda) by construction (cc66 read this at r7577+cc66.2).
+The computation below was never changed and gives limit-circle; the note is removed and the verdict
+is the one the computation, W2 and P14 carry.  PO-95's closure (receipt
+P14_the_leaf_measure_closes_completeness_by_a_different_theorem) holds on either branch.
 """
 
 import sys
@@ -92,6 +90,4 @@ print()
 print('  ⛭ ** LIMIT-CIRCLE STANDS.  Both self-consistent pairings agree, only the mixed one carries')
 print('     the logarithm, and on the corrected operator ln ψ is a bounded imaginary phase.  So the')
 print('     corpus\'s two boundaries are the SAME and not opposite, and its criterion bites at both. **')
-print()
-print('  ⛔ WITHDRAWN r3339 -- see the docstring.  The verdict is LIMIT-POINT (B67, S3).')
 sys.exit(0)

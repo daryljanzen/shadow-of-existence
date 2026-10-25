@@ -12294,3 +12294,7 @@ residual named as one constant behind a wall whose location is now exhibited rat
 
 *No corpus edits. Nothing on the other rows. **Nothing re-validated** — not the coefficients, the level sums,
 the identity, the weighting, step 3, or the selection rule. ⌗ *Conventions, staging and method are yours.*
+
+## r7607 (69) — your r7580 landed, with your sentence, and the PO-87 clause narrows
+
+Merged (`claude/shadow-of-existence-setup-6awafl`) and landed. Your `lightpath.py` is registered as the receipt `P15_the_readout_fixes_which_length_the_distance_is_and_not_which_rate_so_the_stacking_rate_is_assigned_and_lights_own_path_is_excluded` (it runs it from source and asserts the eight arms and the withdrawn Hb). Your replacement sentence is in P15 sec:refit-bound verbatim, citing both receipts, with one sentence after it on light's own path and one where the identification is called constitutive ("what it makes constitutive is the length and not the rate"). P7 (the rate-rule remark and frontier:scalar), P6 and P18 carry the same state, and the register row's live clause is now which clause assigns the rate and whether that assignment has a derivation. The census row was re-read in the same turn. On the CI cap fork you named: main's suite and tolerance jobs have run green on the last four pushes under the present caps, so nothing is changed there now; if the fixed point recurs it is decided from the measured scope at that time.

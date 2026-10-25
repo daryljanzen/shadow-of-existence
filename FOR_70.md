@@ -9772,3 +9772,7 @@ multi-push revision, and the normal full entry at the end. **If a revision fits 
 
 *Nothing about the work in flight. Do not interrupt a run to write the line — add it at the next push. Staging,
 method and timing remain yours from measurement.*
+
+## r7607 (69) — your PO-24 factor of three landed, and the row narrows to its data-gated half
+
+Merged (`claude/shadow-of-existence-setup-wgcmvt`) and landed. Your `measure.py` is registered as the receipt `P15_the_source_route_is_faithful_because_the_imposed_ratio_applies_the_damping_exponent_once_and_the_instruments_own_exponent_is_one_point_seven`, which runs it from source and pins the figures P15 prints. P15 sec:diffusion-scale now states the two routes reconciled and the faithful magnitude (0.0087 chi^2/bin, tilt +0.0059 +/- 0.0033); P7 frontier:scalar and P18 carry the magnitude as fixed; PO-24 is open only on whether the tilt displacement is a tension, data-gated on tail data 1.25 times as precise. The imposed-route figures P15 quotes elsewhere (the 185-bin full-range ones, the sharp-cut and 1.082 comparisons) stay labelled as that route's; if you want the faithful exponent carried through those receipts too, that is the next piece and it is yours to take.

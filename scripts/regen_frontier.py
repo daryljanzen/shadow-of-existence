@@ -255,7 +255,14 @@ EST = {
         'temperature -- a correct strike with the item lying beyond it. '),
     'PO-87': ('a mechanism for the computed spectrum\'s shape deficit, its two halves reported apart',
         2, 2, 3, 'a datum that discriminates the models at the fourth peak',
-        'r7379: OPENED on PO-86\'s ruling of its item 1.  Five rows stood near this question and every one was a '
+        'r7607 LANDS r7580 (60): the observer\'s-readout identification does NOT force the stacking-rate distance. '
+        'Its flatness half is rate-neutral (D_M = chi at Omega_k = 0 for either rate) and its three-metric half carries '
+        'no rate (every constant-tau slice one fixed flat R^3), and the rate rule needs a third criterion, photon-path '
+        'observable, that its derivation does not carry. So the stacking rate is assigned, not forced, and the sky\'s '
+        'preference for the leaf rate meets an assignment rather than a theorem. Light\'s own integrated path, read '
+        'in each fundamental observer\'s frame, is 8787 Mpc against 14011 and the comb excludes it (acoustic scale '
+        '190 against 298.4). The workable clause narrows to which clause assigns the rate and whether it has a '
+        'derivation; P15 sec:refit-bound, P7 frontier:scalar and P18 carry it. r7379: OPENED on PO-86\'s ruling of its item 1.  Five rows stood near this question and every one was a '
         'narrower object, and all five strikes are upheld: PO-10 (which run the comparison rests on), PO-47 (what '
         'displaces the fourth peak -- struck on a STOPPING RULE, the sky unable to tell the models apart there, with '
         'three candidates unrun), PO-56 (the contrast accounting -- closes exactly and cannot attribute), PO-70 (the '
@@ -9189,9 +9196,14 @@ EST = {
         'condition on the interior mass function. NOT CLAIMED that m fails it: nothing computes the '
         'interior, and mass inflation is about the Cauchy horizon at FINITE r, not about the origin. '
 ),
-    'PO-24': ('a constraint on the tilt off the damping tail, and the factor of three in the signature\'s own magnitude',
-        2, 2, 2, None,
-        'r6793 NARROWS IT: the structural legs stand and every quantitative leg was computed on a signature '
+    'PO-24': ('whether the damping signature\'s tilt displacement is a tension, its magnitude settled',
+        1, 2, 2, 'damping-tail data 1.25 times as precise as Planck\'s on l 1000-2508',
+        'r7607 LANDS r7577+70: the factor of three is CLOSED. Imposing the ratio on the measured spectrum applies '
+        'the damping exponent once; inside the source the ratio damps the photon amplitude, and the banked pairs '
+        'measure the effective exponent on the power as 1.70 (1.004 on a second pair). Imposed with it the measured '
+        'spectrum returns 0.779 chi2/bin against the source route\'s 0.92, so the source route is the faithful one, '
+        'and on it the signature at r = 0.9918 costs 0.0087 chi2/bin over l 100-1760 with a tilt of +0.0059 +/- 0.0033: '
+        'the wash stands at its faithful bound. What is left is the data-gated half. r6793 NARROWS IT: the structural legs stand and every quantitative leg was computed on a signature '
         'that has since changed size and can change sign. The signature is theta_D/theta_* = r_D/r_s, the '
         'projection cancels from it, and it depends on exactly two choices -- where the plasma is handed over, '
         'and how far the diffusion integral is carried. At the branch point with both scales on the leaf rate '

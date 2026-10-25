@@ -174,11 +174,13 @@ def main():
     # ⛭ r7577 (69): P14's sentence pointed to the geometric-core and boundary papers as naming the
     #   undertaking, and neither does (B35's finding).  It now states the join open as work, carried on
     #   P7's frontier (frontier:fermion) and in the register at PO-95 -- the consequence this check names.
-    check('⛭ ⓷ and P14 names the consequence as open work: the join and the quantised field "remain open, '
-          'and they are work rather than a boundary, carried on the framework paper\'s frontier"',
-          ("the quantised field, its mode completeness, and the join between the static region's continuum "
-           "and the wall---which sit in different regions---remain open, and they are work rather than a "
-           "boundary, carried on the framework paper's frontier~\\cite{JanzenCRframework}") in p14)
+    # ⛭ r7607 (69): PO-95 is struck on its terminal clause (cc66's computation), and P14 now states the
+    #   consequence closed: the join determined across the wall's locus and the field ordinary field
+    #   theory on the slicing.  The check follows the paper to its present state.
+    check('⛭ ⓷ and P14 names the consequence and closes it: "the join between the static region\'s continuum '
+          'and the wall is determined", and the quantised field "is ordinary field theory on that background"',
+          "And the join between the static region's continuum and the wall is determined." in p14
+          and "the quantised field on the slicing is ordinary field theory on that background and is fixed there" in p14)
 
     print()
     if FAILED:

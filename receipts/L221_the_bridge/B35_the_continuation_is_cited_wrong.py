@@ -153,13 +153,13 @@ def main():
     # ⛭ r7577 (69): DISCHARGED.  The citation this receipt found landing on two papers without the
     #   continuation is gone: P14's join sentence now states the join open as work and cites the framework
     #   paper, whose frontier carries it (frontier:fermion, register PO-95).  The check asserts the repair.
+    # ⛭ r7607 (69): the join is now stated determined (PO-95 struck), and the sentence that carries it
+    #   cites the continuation to the two papers that DO carry it, the slicing and circle papers.
     check('⓸ and P14\'s join sentence no longer cites the two papers that lack the continuation: it cites '
-          'the framework paper\'s frontier, which carries the join as work',
+          'the slicing and circle papers, which carry it',
           'remain the undertaking the corpus names' not in P['matter_sector_paper']
-          and ("the quantised field, its mode completeness, and the join between the static region's continuum "
-               "and the wall---which sit in different regions---remain open, and they are work rather than a "
-               "boundary, carried on the framework paper's frontier~\\cite{JanzenCRframework}")
-               in P['matter_sector_paper'])
+          and ("which the slicing construction carries by a $C^{\\infty}$ continuation---``a branch point and "
+               "not a barrier''~\\cite{JanzenSlicing,JanzenCircle}") in P['matter_sector_paper'])
 
     print()
     if FAILED:
