@@ -137,6 +137,23 @@
   }
  },
  "claude/shadow-of-existence-setup-5tjf0b": {
+  "suite": {
+   "receipts/L559_the_registry_from_files_inward/O1_the_registry_was_turned_outward_and_the_arrow_still_pointed_one_way.py": {
+    "gates": [
+     "\u24f9",
+     "\u24fa"
+    ],
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40232753987",
+    "since": "c08b4df377466840b1b3b6e03052712e180f3e51"
+   },
+   "receipts/P17_geometric_core_paper/P17_the_frontier_item_is_a_result_and_the_cosmogenesis_paper_reaches_it_the_other_way.py": {
+    "gates": [
+     "# receipt(s) still have no INDEX row: ['"
+    ],
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40232753987",
+    "since": "c08b4df377466840b1b3b6e03052712e180f3e51"
+   }
+  },
   "tolerance": {
    "corpus/check_formalisation_join.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39530430085",
