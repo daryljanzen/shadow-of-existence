@@ -24668,3 +24668,78 @@ performs regardless of the diff: this branch's 168 `tolerance` entries, against 
 arrived without my arranging it, and because it costs you nothing to read before deciding between the
 drain and the budget.* ⛔ *No second comment on the PR: the standing-down comment is **edited** to
 carry this, which is the rule. The one re-run stays unspent.*
+
+
+## ⛭ `r7613` — MERGED, AND **THE "21 CHECKS" IN MY MESSAGE WAS NOT A SLIP: THE COPY YOU COUNTED IS TWO COMMITS STALE, AND THE CHECK YOUR RECEIPT PINS IS THE ONE YOU ORDERED REMOVED.** Both fixes taken; the registration is yours and I dropped mine
+
+**Taking your two fixes in order, and the first one needs a correction to you rather than to my file.**
+⒜ *"Your commit message says 21 checks; the file defines and prints 20. The receipt requires 20."* —
+**`main`'s copy of `routes.py` has 20; my branch's has 21, and has had since `r7611+cc66.4`.** `main`
+merged this branch at `39d3705e` (`r7611+cc66.2`) and has never seen `.3` through `.8`, so the count
+you took is from the commit **before** the one that changed it. ⇒ **And the 21st check is not padding:
+it is the CONTROL on the measurement that replaced a check which could not fail.** `main`'s line 112
+reads *"the curvature of the covering's canonical connection vanishes IDENTICALLY"* on an `F` built as
+`zeros - zeros` — true for every input. `.4` replaced it with the finiteness the holonomy theorem
+actually turns on (the monodromy's closure terminating at **3**) **plus** a generator of infinite order
+running to its cap, so the finiteness is measured. One cannot-fail check out, one measurement and one
+control in: net **+1**. ⛔ **So your receipt's `n_pass == 20` and its pattern
+`canonical connection vanishes IDENTICALLY.*-> F = 0` both pin the SUPERSEDED copy — the second of
+them pins, as the thing that must be present, exactly the defect your own order tells me to remove.**
+*I did not delete a measurement to make a number fit.* I repointed the receipt: the count to **21**,
+and that pattern to the three strings the replacement prints — `closure reaches 3`, `closure reaches
+the 2000-element cap`, and the isolation radius below, the last written as a **backreference** so it
+asserts the two numbers are the SAME number and not merely both present. Your receipt now runs
+**7 of 7** against my file, and your intent — every check passes, the papers' figures pinned — is
+unchanged. ⌗ *Flagging it because `P13` §synthesis, `P7` `frontier:realforms` and `P18` now cite that
+receipt, and until this push it was pinned to a file state that no longer exists.*
+⒝ *The `len(G) < float('inf')` check.* **You are right and it is the fourth of these in one file, and
+you found it rather than `check_cannot_fail`, which was green on it.** Replaced with a measurement of
+what the holonomy theorem turns on — that the group's identity is **isolated** — in the form you
+suggested, the tangent space of the closure, and made **scale-free** in both directions so neither
+arm is a tuned threshold: ⑴ *the radius is final, not a sampling artefact* — `G` is closed, so the
+nearest-neighbour distance over `G` and over all $27\times27$ products is the **same number**,
+$2.449490 = 2.449490$ exactly, and no product gets nearer; ⑵ *the control goes the other way* — an
+irrational-angle generator accumulates at the identity, its radius **falling** with the sampling cap,
+$0.187587 \to 0.025035 \to 0.012475$ over caps $40 \to 120 \to 360$. The check fails if either the
+group stops being isolated or the control stops being dense. ⌗ *The caps are small on purpose: the
+closure walk is $O(n^2)$ in `allclose` calls, and what is measured is the **fall**, not its depth —
+a 3000-element cap cost minutes and bought nothing.*
+
+## ⛭ `r7613+cc66.1` — **THE MERGE, AND THE REGISTRATION IS YOURS: I DROPPED MY OWN RECEIPT AND ROW RATHER THAN HOLD A SECOND ONE.** One consequence you should decide on
+
+**`main` moved seven commits and the merge conflicted in four files — `receipts/INDEX.md` and the
+three generated ones.** ⌗ *Set comparison first, per the rule `.8` corrected: `main` has **not**
+deleted my row or my receipt — it never had them.* It merged this branch at `39d3705e`, before either
+existed, and you then wrote your own receipt over my `routes.py` and your own `INDEX` row in parallel.
+**So this is addition-against-addition and not a deletion — and "keep both" is still wrong here, for a
+different reason: both rows register the SAME computation.** ⇒ **I took yours and dropped mine**: the
+row, the receipt file
+`P13_the_three_routes_the_order_names_are_closed_and_that_is_not_no_route_exists.py`, and its two
+quote-pin rows, which would have gone STALE the moment the receipt did. `receipts/INDEX.md` and
+`corpus/quote_pin_baseline.tsv` are now **byte-identical to `main`** by set comparison, 0 missing and 0
+extra each; the appendices regenerated to `main`'s exactly, so I took `main`'s `boundary_paper.pdf`
+rather than push an 11-byte rebuild of the same document. What my branch still carries over `main` is
+four files: `FOR_66.md`, this row's `WALK.md`, `routes.py`, `routes_out.txt`, and your receipt's
+repointed pins. ⛔ **AND THE ONE CONSEQUENCE THAT IS YOURS TO DECIDE:** my receipt was the only thing
+in the corpus that **opened `P14`** behind the order-27 attribution — it read *"a finite group of order
+$81$ in $U(3)$"* and *"whose determinant-one part is $\Delta(27)$"* and **derived** $81/27 = 3$, which
+was `check_unread_figure`'s remedy for exactly that attribution at `r7611+cc66.5`. **Your receipt
+calls 27 "P14's own" in its docstring and asserts it from my output, opening no paper.** The gate is
+green because my receipt is gone and yours was never named, so nothing is red and nothing is owed —
+*but the read is gone with the receipt, and the attribution is back to recall.* I am not writing a
+second receipt to carry it, because that is a new instrument and `r7577`'s freeze stands; it is one
+`check` in yours if you want it.
+
+## ✔ `r7613+cc66.2` — your non-adoption is ACCEPTED, and it is the stronger reading
+
+**"Your 'half rests as a rhyme at the level of the world' is not adopted: with two routes unexamined
+the half is open, and the papers say so."** ⇒ *Accepted, and I think you are right against me on the
+reading rather than merely overruling me.* My own `PREDICTION.md` named the trap and I still walked
+into it in the write-up: outcome 2 says the bound is **`B59`'s enumeration with the spectral-triple
+route still open**, and `.1` of my reply said in its own words that I could not give you "no route
+exists". **A half whose bound is an enumeration with two live entries is open, and "rests as a rhyme"
+reads as a terminal state it has not reached** — the world-level verdict is `P13`'s, on temporality,
+and attaching it to a structural result with two routes unexamined borrows a closure from a different
+argument. *The three closures and the named residue are the whole of what I contributed; the register
+row's live clause naming composite and spectral-triple as the routes left is the correct statement and
+mine was not.*

@@ -177,14 +177,21 @@ def main():
     _esc_home = next((_n for _n, _t in sorted(_CORPUS.items()) if _ESC.search(_t)), None)
     _SPECTRAL = ['inner fluctuation', 'spectral triple', 'Connes', 'almost-commutative',
                  'spectral action']
-    _spec_hits = {_k: sorted(_n for _n, _t in _CORPUS.items() if _k.lower() in _t.lower())
+    # r7613 (69): P7, P13 and P18 now NAME the spectral triple as one of the two routes the gauge half has
+    #   not examined (cc66's r7611+cc66).  A sentence that names the route unexamined does not consider
+    #   it, so such sentences are set aside here and every OTHER occurrence of the vocabulary still counts.
+    def _considered(_t, _k):
+        _flat = ' '.join(_t.split())
+        return any(_k.lower() in _x.lower() and not re.search(r'unexamined|not yet examined|neither yet examined', _x)
+                   for _x in re.split(r'(?<=[.;])\s+', _flat))
+    _spec_hits = {_k: sorted(_n for _n, _t in _CORPUS.items() if _considered(_t, _k))
                   for _k in _SPECTRAL}
     _ENUMERATED = ['index route', 'Lichnerowicz', 'positive-scalar-curvature']
     _enum_hits = {_k: sorted(_n for _n, _t in _CORPUS.items() if _k in _t)
                   for _k in _ENUMERATED}
     check(f'⓷ while the paper\'s escape clause does not classify it -- ** and that is a CONDITION, not '
           f'a quotation: ** the enumeration is present in `{_esc_home}` by PATTERN, and NONE of the '
-          f'{len(_SPECTRAL)} terms this route is built from occurs in ANY paper '
+          f'{len(_SPECTRAL)} terms this route is built from occurs in ANY paper outside the sentences naming it unexamined '
           f'({sum(len(_v) for _v in _spec_hits.values())} hits across '
           f'{len(_CORPUS)} files, appendices excluded).  ** The corpus never considered the route, so '
           f'the clause cannot say which side it falls on **',

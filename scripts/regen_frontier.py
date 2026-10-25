@@ -255,6 +255,11 @@ EST = {
         'temperature -- a correct strike with the item lying beyond it. '),
     'PO-87': ('a mechanism for the computed spectrum\'s shape deficit, its two halves reported apart',
         2, 2, 3, 'a datum that discriminates the models at the fourth peak',
+        'r7613 LANDS r7612 (60): the REASSIGNMENT DERIVES the stacking-rate distance. It sends the photon bundle to the '
+        'constant-tau family, which crosses the leaves at the matter congruence\'s own unit cosmic-time rate (step v), so '
+        'a length along it is a comoving separation read across leaves, the rule\'s first slot: the layer-time integral, '
+        '14011.456 Mpc to 1e-14. The derivation is on the vacuum chart; WORKABLE now is whether it holds on the cut as '
+        'radiation bends it, the leaf rate the sky prefers being the stacking rate with that term restored. '
         'r7607 LANDS r7580 (60): the observer\'s-readout identification does NOT force the stacking-rate distance. '
         'Its flatness half is rate-neutral (D_M = chi at Omega_k = 0 for either rate) and its three-metric half carries '
         'no rate (every constant-tau slice one fixed flat R^3), and the rate rule needs a third criterion, photon-path '
@@ -6981,6 +6986,9 @@ EST = {
         'standard spectral theory on a fixed background with nothing the construction adds. '
         ),
     'PO-94': ('whether the substrates two real forms are physics actual quantum and gauge sectors, or a structural rhyme with them', 1, 1, 3, None,
+        'r7613 LANDS r7611+cc66: the GAUGE HALF\'s three routes outside isometry are closed -- a dynamics-induced '
+        'connection by reality (3 components, su(3) needs 8), the thermal state by dimension (one number, no two-form), '
+        'the walls by rigidity (H^1 = 0 on the order-27 group); the composite and spectral-triple routes are unexamined. '
         'r7611 LANDS r7608 (60): the QUANTUM HALF now carries a test of its own and it is UNMET. The gauge half\'s test asks '
         'the face for a structure (a field strength and a coupling); the quantum claim is only that the face carries the '
         'scale, so its test is a SELECTION -- the face is the actual quantum sector iff it removes a freedom of the quantum '

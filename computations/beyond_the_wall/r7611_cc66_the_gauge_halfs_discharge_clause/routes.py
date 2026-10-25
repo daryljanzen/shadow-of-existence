@@ -133,9 +133,70 @@ check('the wall monodromy has FINITE order, so its holonomy algebra is zero-dime
 check('CONTROL: the same closure on a generator of INFINITE order does NOT terminate, so the finiteness '
       'above is measured and not assumed', n_inf == 2000, f'closure reaches the {n_inf}-element cap')
 F_flat = sp.zeros(3, 3)
-# and the holonomy theorem's half: a finite group has a zero-dimensional Lie algebra
-check('the holonomy ALGEBRA of a finite group is zero-dimensional, so by the holonomy theorem the '
-      'curvature spans nothing', len(G) < float('inf'), 'dim hol(G) = 0 for finite G')
+
+
+# ⌗ ** AND THE FOURTH CHECK-THAT-CANNOT-FAIL IN THIS FILE, NAMED BY 69 AT r7613 AND NOT BY ME. **
+#   This line read  `len(G) < float('inf')`  -- true of every finite Python set, so the verdict was
+#   written as a property of the object again: the same habit the three notes above already carry, and
+#   the gate that catches it is `check_cannot_fail`, which did not.  ⇒ *What the holonomy theorem
+#   actually turns on is that the group's identity is ISOLATED.  A group that supplies no tangent
+#   direction at the identity has a zero-dimensional algebra, and "isolated" is measurable two ways
+#   that are both SCALE-FREE, so neither is a tuned threshold:*
+#     ⒜ the radius is FINAL, not a sampling artefact -- `G` is closed under multiplication, so the
+#        nearest-neighbour distance measured over `G` and over all of `G.G` is the SAME number; no
+#        product gets nearer, and refinement cannot reduce it;
+#     ⒝ the CONTROL goes the other way -- a generator of irrational angle accumulates at the
+#        identity, so its nearest-neighbour radius FALLS as the sampling cap rises, without bound.
+def _mat(el):
+    """one exact (exponents, permutation) element as a 3x3 complex matrix."""
+    w = np.exp(2j*np.pi/3)
+    e, pm = el
+    P = np.zeros((3, 3), dtype=complex)
+    for i in range(3):
+        P[i, pm[i]] = 1.0
+    return np.diag([w**e[0], w**e[1], w**e[2]]) @ P
+
+
+def _ident_radius(mats, tol=1e-9):
+    """the distance from I to the nearest OTHER element of `mats`; inf if there is none."""
+    I3 = np.eye(3, dtype=complex)
+    d = [np.linalg.norm(g - I3) for g in mats if np.linalg.norm(g - I3) > tol]
+    return min(d) if d else float('inf')
+
+
+def closure_radius(gen_mat, cap, tol=1e-9):
+    """`_ident_radius` of the closure of one generator, sampled up to `cap` elements.  A group whose
+    identity is isolated returns the same radius however far the sampling runs; one with a continuous
+    part returns a radius that FALLS with the cap, because it accumulates at the identity."""
+    seen, frontier = [np.eye(3, dtype=complex)], [np.eye(3, dtype=complex)]
+    while frontier and len(seen) < cap:
+        nxt = []
+        for g in frontier:
+            p = g @ gen_mat
+            if not any(np.allclose(p, q, atol=tol) for q in seen):
+                seen.append(p); nxt.append(p)
+        frontier = nxt
+    return _ident_radius(seen)
+
+
+_Gm = [_mat(el) for el in sorted(G)]
+r_G = _ident_radius(_Gm)
+r_GG = _ident_radius([a @ b for a in _Gm for b in _Gm])
+_caps = (40, 120, 360)   # the closure walk is O(n^2) in allclose calls; the FALL is what is measured, not its depth
+r_cap = [closure_radius(np.diag([1.0, np.exp(1j), np.exp(-1j)]), c) for c in _caps]
+_falls = all(r_cap[i + 1] < r_cap[i] for i in range(len(r_cap) - 1))
+print()
+print(f'    nearest neighbour of the identity in G: {r_G:.6f}   over all 27x27 products: {r_GG:.6f}')
+print(f'    the control, by sampling cap {_caps}: ' + ', '.join(f'{r:.6f}' for r in r_cap))
+check("the holonomy ALGEBRA of this group is zero-dimensional, MEASURED and not asserted: the identity "
+      "is ISOLATED at a radius that refinement cannot reduce -- G is closed, so the nearest-neighbour "
+      "distance over G and over all of G.G is the SAME number -- so no tangent direction is supplied "
+      "and by the holonomy theorem the curvature spans nothing; and the CONTROL comes out the other "
+      "way, an irrational-angle generator's radius FALLING with the sampling cap because it "
+      "accumulates at the identity, which is what a non-zero algebra looks like here",
+      abs(r_GG - r_G) < 1e-12 and r_G > 1e-6 and _falls and r_cap[-1] < r_G / 10,
+      f'G isolated at {r_G:.6f} = G.G at {r_GG:.6f}; control falls '
+      f'{r_cap[0]:.6f} -> {r_cap[-1]:.6f} over caps {_caps[0]} -> {_caps[-1]}')
 
 # ================================================== CONTROL 3 -- the reality rider, re-derived here
 print()
@@ -294,15 +355,6 @@ print("""
 # keying whose failure is already written up in Control 2 -- and it raised a KeyError on the first
 # product, because -0.0 and 0.0 have different bytes.  ** The group's structure stays in EXACT
 # arithmetic and the floats are used only for the adjoint matrices. **
-def _mat(el):
-    """one exact (exponents, permutation) element as a 3x3 complex matrix."""
-    w = np.exp(2j*np.pi/3)
-    e, pm = el
-    P = np.zeros((3, 3), dtype=complex)
-    for i in range(3):
-        P[i, pm[i]] = 1.0
-    return np.diag([w**e[0], w**e[1], w**e[2]]) @ P
-
 # a real basis of su(3): 8 anti-hermitian traceless generators (i*Gell-Mann)
 def _su3_basis():
     lam = []

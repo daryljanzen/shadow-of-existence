@@ -1,0 +1,171 @@
+papers read: 18  (the receipt appendices are NOT in this net -- 69's r7611 repair)
+
+==============================================================================
+Ⓐ  THE CENSUS: DOES ANY CLAUSE *DERIVE* THE ASSIGNMENT?
+==============================================================================
+   sentences assigning a distance or a comoving separation to a rate: 44
+   of those, sentences that CLAIM a ground (the corpus's own derivation words): 13
+
+   [STATES ] ['shadow_of_existence']
+             "so the rate is assigned rather than forced, and whether the construction derives it is the quest..."
+             P6, carrying r7580's result: it says in terms that the rate is NOT derived and that whether it can be is the open question -- which is this revision's question, stated by the corpus as open
+
+   [STATES ] ['CR_framework']
+             "fixes which length that is and not which rate it is built on, so whether the construction derive..."
+             P7, carrying r7580's own result: it states that the rate is NOT derived
+
+   [STATES ] ['CR_framework']
+             "fixes which length the distance is and not which rate it is built on, so the stacking rate is as..."
+             P7 sec:frontiers, the same sentence in its frontier item
+
+   [STATES ] ['CR_framework']
+             "which fixes the length and not the rate, so the stacking rate is assigned rather than forced, an..."
+             P7 again, with r7580's third object; assigned, not derived
+
+   [STATES ] ['CR_framework']
+             "So what carries the item to a verdict is the rate light's path distance takes..."
+             P7, naming the open item
+
+   [GROUNDS] ['canonical_time']
+             "not chosen: the same selection of the existent's foliation that turns the frozen constraint into..."
+             P10, and the closest thing in the corpus to a derivation -- but its object is a PLASMA PROCESS and an era computation, not the projection's distance; the same sentence puts distance and redshift on the SHIFT, not the lapse
+
+   [STATES ] ['CR_cosmology']
+             "the verdict it returns is that the spectrum derived here, with the projection's distance on the ..."
+             the only sentence in the net whose 'derived' is about the SPECTRUM and not about the assignment -- caught by the marker and adjudicated rather than counted
+
+   [STATES ] ['CR_cosmology']
+             "The assignment is not a modelling choice on either side..."
+             restates the rule for both slots; the ground offered is the slot a quantity sits in, which is the rule itself
+
+   [STATES ] ['CR_cosmology']
+             "And the division is carried out rather than asserted..."
+             the claim is that the division is IMPLEMENTED on each object, not that the assignment is derived
+
+   [STATES ] ['CR_cosmology']
+             "The rate the projection's distance is built on is therefore assigned by the clause that names it..."
+             P15, r7580's own landed sentence: assigned, not derived
+
+   [STATES ] ['cosmogenesis_paper']
+             "and the rule is kinematic: a comoving separation read across leaves takes the stacking rate..."
+             P16, where the rule is derived: 'kinematic' qualifies the rule, and the sentence states it
+
+   [GROUNDS] ['CR_synthesis']
+             "the Nariai member, by the reassignment's own selection argument rather than by choice..."
+             P18's ledger, and the object is the Nariai member, not the distance's rate
+
+   [STATES ] ['CR_synthesis']
+             "whether the two real forms are physics' gauge and quantum sectors & for the gauge half..."
+             P18's table of the six open items, which lists this rate as one of them
+
+   sentences adjudicated DERIVES: 0
+   ⇒ Ⓐ HIT: the corpus ASSIGNS the projection's distance to the stacking rate in 44 places
+     and GROUNDS the rule once, in P10 -- for a plasma process, by the foliation selection.
+     No clause derives it for the projection's distance.  And P10's own sentence puts distance
+     and redshift on the SHIFT while the stacking rate is the LAPSE, which is where the gap is.
+
+==============================================================================
+THE CHART, READ FROM r7580'S OWN SCRIPT BY PATH (r7445: one instrument)
+==============================================================================
+   alpha = 5213.286715 Mpc   r_0 = 5051.488048 Mpc   z_rec = 1089.9
+   r7580's three distances, read rather than recomputed: stacking 14011.456, leaf 13941.629, light's own path 8787.241 Mpc
+
+==============================================================================
+Ⓗ  CONTROL: WHICH FAMILY IS THE PHOTON BUNDLE'S IMAGE?  READ OFF THE PAPER
+==============================================================================
+   [HIT ] the at-rest geodesics are the photon bundle, one of the two null bundles on the cosmological...
+   [HIT ] that same null bundle becomes the constant-$\chi$ geodesics and the other becomes the consta...
+   reading, which is the paper's own and not supplied: 'that same null bundle' is the one the
+   preceding sentence says carries the MATTER geodesics, and it becomes the constant-chi family
+   (matter is comoving, so chi is constant along it -- the chart agrees).  'The other' is then
+   the photon bundle, and it becomes the CONSTANT-TAU family.
+   ⇒ Ⓗ does not fire
+
+==============================================================================
+Ⓑ  THE REASSIGNMENT IS A REASSIGNMENT: THE PHOTON FAMILY'S IMAGE IS NOT THE LIGHT CONE
+==============================================================================
+   min over the branch of (d_chi r)^2 = g_chi chi : 1.000000000059   (r7580: exactly 1 at alpha/sqrt3)
+   radial null directions in eq:proper-frame: dtau = +- (d_chi r) dchi, so |dtau/dchi| >= 1 > 0.
+   a constant-tau curve has dtau = 0, hence ds^2 = g_chi chi dchi^2 > 0: SPACELIKE, nowhere null.
+     z =        0.0   g_chi chi = (d_chi r)^2 =         1.336120   null slope |dtau/dchi| =   1.155907
+     z =        1.0   g_chi chi = (d_chi r)^2 =         1.029180   null slope |dtau/dchi| =   1.014485
+     z =       10.0   g_chi chi = (d_chi r)^2 =         4.377273   null slope |dtau/dchi| =   2.092193
+     z =     1090.0   g_chi chi = (d_chi r)^2 =       433.376288   null slope |dtau/dchi| =  20.817692
+     z = 30000000.0   g_chi chi = (d_chi r)^2 =  11916855.231503   null slope |dtau/dchi| = 3452.079841
+   ⇒ Ⓑ HIT: so r7580's third object (the proper-frame null ray) and
+     this revision's candidate (the photon bundle's image) are two different curves.  That is
+     what 'causal reassignment' means, stated on the loci the object itself distinguishes.
+
+==============================================================================
+Ⓒ  THE CANDIDATE'S LOAD-BEARING STEP: BOTH FAMILIES ADVANCE COSMIC TIME AT UNIT RATE
+==============================================================================
+   [HIT ] Fixing the transformation $t(\tau,\chi)$ by requiring the comoving coordinate orthogonal to pr...
+   so tilde tau = tau + chi, and the two partial derivatives are both exactly 1 by construction.
+     (tau,chi) = (  1000.0,   200.0)   d_chi r = 1.092074411417   d_tau r = 1.092074411607   rel diff 1.74e-10
+     (tau,chi) = (  4000.0,     1.0)   d_chi r = 1.124752136195   d_tau r = 1.124752136195   rel diff 0.00e+00
+     (tau,chi) = (  8000.0,  5000.0)   d_chi r = 5.551259304551   d_tau r = 5.551259303432   rel diff 2.02e-10
+     (tau,chi) = (   100.0,    50.0)   d_chi r = 2.075479666435   d_tau r = 2.075479666814   rel diff 1.83e-10
+   d(tilde tau)/d chi = 1, d(tilde tau)/d tau = 1  (exact, symbolic)
+   ⇒ Ⓒ HIT: worst |d_chi r / d_tau r - 1| = 2.02e-10
+     The photon family crosses the leaves, and it crosses them at the same cosmic-time rate as
+     the matter congruence advances along them.
+
+==============================================================================
+Ⓓ  SO WHAT ACCUMULATES ALONG THE PHOTON FAMILY IS THE LAYER-TIME INTEGRAL
+==============================================================================
+   r_0 * int dtilde tau / r  over the photon family's crossing = 14011.456369 Mpc
+   int c dz / H_stack, the implementation's own distance        = 14011.456369 Mpc
+   relative difference = 7.772e-15
+   ⇒ Ⓓ HIT
+
+==============================================================================
+Ⓔ  AND THE SEPARATION READ *ON* ONE LEAF IS A DIFFERENT OBJECT
+==============================================================================
+   int (d_chi r) dchi at fixed tau        = 5046.85747856 Mpc
+   r(tilde tau_0) - r(tilde tau_e)        = 5046.85747856 Mpc   (the exact closed form)
+   r_0 z/(1+z)                            = 5046.85747856 Mpc   (the same, since 1+z = r_0/r_e)
+   ratio to the implementation's D_C      = 0.360195   (registered: below 0.5)
+   and it is bounded above by r_0 = 5051.488 Mpc for every z, while D_C = 14011.456
+   ⇒ Ⓔ HIT: reading a separation ON a leaf and accumulating one ACROSS
+     leaves give different numbers on this very case, so the rule's two slots are not a
+     distinction without a difference here.
+
+==============================================================================
+Ⓖ  THE CLOCK GUARD (r7138), APPLIED TO THIS REVISION'S OWN TWO READINGS
+==============================================================================
+   r_s on the leaf rate, read from r7580   = 145.337 Mpc
+   l_A on the photon family's accumulation = 302.87   vs the sky's 298.4   (+1.50 %)
+   l_A on the proper-frame null ray        = 189.94   vs the sky's 298.4   (-36.35 %)
+   ⇒ Ⓖ HIT: the two differ by 37.8 per cent of the measured comb, which no choice of clock
+     moves.  So the difference is content and not bookkeeping, and the question the order asks
+     is a real one.
+
+==============================================================================
+Ⓕ  THE VERDICT ON THE ORDER'S QUESTION
+==============================================================================
+   A: HIT
+   B: HIT
+   C: HIT
+   D: HIT
+   E: HIT
+   F: HIT
+   G: HIT
+   H (control): does not fire
+
+   NO CLAUSE IN THE CORPUS DERIVES THE ASSIGNMENT, AND THE CONSTRUCTION DERIVES IT ANYWAY.
+   The reassignment sends the photon bundle to the constant-tau family (Ⓗ, read off P15).  That
+   family is spacelike in the proper frame, so it is not the light cone and not r7580's third
+   object (Ⓑ).  It crosses the leaves, and it crosses them advancing cosmic time at exactly the
+   rate the matter congruence advances along them, which is what step (v)'s forcing buys (Ⓒ).
+   A comoving separation accumulated across leaves at that rate IS the layer-time integral, which
+   is the implementation's own distance (Ⓓ) -- and it is not the separation read on a single leaf,
+   which is a smaller object entirely (Ⓔ).  So the photon-path distance sits in P16's FIRST slot,
+   a comoving separation read across leaves, and the rule assigns it the stacking rate.
+
+   ⌗ AND THAT NARROWS r7580's Hb-prime BY MY OWN HAND: I reported there that the rule's two slots
+     do not cover light's path.  They do cover it, once the reassignment is used to say WHICH
+     family the photon path is.  What r7580 showed remains true of the object it tested -- the
+     proper-frame null ray, which the comb excludes -- and that object is not the one the
+     projection uses.
+
+   13 checks, 0 failures.
