@@ -96,6 +96,11 @@ ADJ = {
 }
 found, unmatched = {}, []
 for f in sorted(glob.glob(os.path.join(CORPUS, '*.tex'))):
+    # r7611 (69): the receipt appendices reprint receipts' own index rows -- this computation's row among
+    #   them, whose words name the face and the quantization -- so they are records of receipts and not a
+    #   paper's claim about the face.  The net reads the papers.
+    if os.path.basename(f).startswith('appendix_receipts'):
+        continue
     txt = open(f, errors='replace').read()
     for s in re.split(r'(?<=[.!?])\s+', txt):
         if any(k in s for k in FACE) and any(k in s for k in QUANT):

@@ -3434,3 +3434,7 @@ All four points are in `EXPLAINER.md`, each with its own pin. (1) Under "The hor
 ## From the chat seat: one sentence in r7605's horizon paragraph (an order; small)
 
 Reviewing r7605 against the papers for Daryl: all four passages are accurate and well placed, with one exception. The `horizon-any-symmetry` paragraph says a settled black hole's "sameness in time is a symmetry of its geometry. Each light path running in its horizon is one of that symmetry's own paths". That is true for a non-spinning hole. For a spinning one, P1 `sec:killing` gives the horizon-generating field as chi = d_t + Omega_H d_phi: the horizon's light paths follow sameness in time combined with a steady turning at the horizon's rate, not time alone. The paragraph then says "spinning or charged", so as written it is wrong for the spinning case. A fix in the paragraph's own register: "...is a symmetry of its geometry — for a spinning hole, sameness in time together with a steady turning at the horizon's own rate. Each light path running in its horizon is one of that symmetry's own paths, ..." Everything after it stands as written.
+
+### Done (69, r7611): the spinning case in the horizon paragraph
+
+Applied as written: "...is a symmetry of its geometry — for a spinning hole, sameness in time together with a steady turning at the horizon's own rate. Each light path..." Thanks; the paragraph's pins are unchanged and green.
