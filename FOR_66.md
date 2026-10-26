@@ -24881,3 +24881,35 @@ cause is already named and nobody re-derives it.* ⌗ *The `tol-scope` side is g
 finished on this head for the first time, which I know because the three tolerance probes STARTED —
 they are `needs: tol-scope` with `if: n != '0'`, so they only run when the scope job hands them a
 list. `fast` and the runner-read sweep are green.*
+
+## ⛔ `r7613+cc66.7` — **THE PLAIN SUITE WENT RED WITH "0 FAIL". THE TWO RECEIPTS ARE *OVER TIMEOUT*, WHICH THE RUNNER'S OWN HEADER CALLS "REPORTED, NOT FAILED" — AND I MEASURED THEM BEFORE SAYING SO**
+
+**The suite reached a verdict this time — your ten-minute bound worked, the scope step took exactly
+$10$ minutes against $70\,\text{m}\,53\,\text{s}$ on the previous head — and the verdict is:**
+`496 pass, 0 fail, 2 over timeout, in 4909s wall`. ⒜ *So nothing failed an assertion.* The two named
+are `P15_a_drive_clock_error_cannot_move_the_spacing...` and
+`P15_the_carrier_separation_on_L_p_is_the_combs_peak_count...`, and `run_all_receipts.py`'s own header
+says what that class is: *"**SLOW** over the per-file timeout; **reported, not failed**, and named so
+the budget is visible"*, and at line 125, *"a green run that reports it as `over timeout` is making no
+claim about it at all"*. ⛭ **But the job is not wrong to be red: `gates.yml:505` says so in its own
+words — "⛔ `SLOW` is not a pass here either: the verdict must read `0 fail, 0 over timeout`" — and
+greps for exactly that.** *So this is a deliberate policy meeting a measured cost, not a defect in
+either.* ⒝ **AND I RAN THEM BEFORE CONCLUDING, because the `r7611+cc66.6` lesson is that the ledger
+cannot tell me whose red this is:** both pass on this tree, `rc=0`, in **$321$ s** and **$308$ s**
+against the suite's `--timeout 600` at `--jobs 4`. ⇒ *Unloaded they have about $50\,\%$ margin; the
+suite ran $496$ receipts in $4909$ s of wall and `C59` alone took $1608$ s there, so the contention
+factor needed to cross the cap is only $\approx1.9\times$ — and the corpus already records
+`L_numerics/Q1` at $\approx50$ s locally against $615$ s on the runner, about $12\times$.* ⒞ *Three
+independent reasons it is not this PR's, in increasing order of strength:* the ledger marks both
+`CONTRADICTED` (carried 16/cleared 14 and 17/cleared 15 over five lines **including `main`**, with a
+printed pair *red at `6937aaa103` on `main`, green at `b57bfc6e43` on `main`*); **neither receipt names
+any of the fourteen files my diff touches**, checked file by file and not assumed; and both **pass
+here**. ⛔ **No fix to port: the $600$ s cap and the "0 over timeout" policy are both `gates.yml`, which
+`r7577`'s freeze reserves and which you are actively tuning (`r7609`, `r7613+1`, `+2`, `+3`).** *So it
+is yours to decide and I am not touching it.* ⌗ *Two things worth having before you do. ⑴ The margin is
+not symmetric: raising the cap helps, but so would a lower `--jobs`, and the corpus's own Q1 note is
+that contention and not the receipt is the variable. ⑵ The explicit re-run on this PR stays **unspent**:
+pushing this very note starts a fresh suite on a new head, which is a second attempt at no extra cost,
+so spending the re-run as well would buy nothing. If the new head comes back `0 over timeout`, the
+cause was contention and the measurement above is the record; if it names the same two, the cap is
+genuinely short for them under this policy and that is a number for you rather than a verdict for me.*
