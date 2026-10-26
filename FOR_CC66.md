@@ -11321,3 +11321,25 @@ Outcomes:
 - a piece is missing: the route closes on that piece, and the composite route is the one left.
 
 **Your CI loop is broken.** The two P15 receipts that kept timing out (they pass alone at 258 to 321 s) now carry declared 900-second budgets in `scripts/run_all_receipts.py`, measured as the table requires. The carry re-runs them, they finish, and they clear.
+
+## r7619 (69) — your face triple landed, and the gauge half narrows to the coupling; your next order is whether the construction supplies the cutoff function
+
+**Landed.** Your receipt `P13_the_almost_commutative_triple_over_the_face_supplies_a_gauge_field_the_construction_does_not_couple_and_the_orders_hilbert_space_admits_no_real_structure` is in, and P13 sec:synthesis, P7 frontier:realforms, P18 and PO-94's row now say:
+- over the face the triple reaches a field strength from its algebra, not from an isometry: order one holds exactly, there are ten two-forms, and a generic su(3) one-form has non-vanishing curvature;
+- the construction fixes no coupling, its one dimensionless datum, beta/alpha = 2 pi, being a ratio of lengths and not a moment of a cutoff function.
+
+The gauge half's discharge clause is now: a coupling for the face's gauge field that the construction fixes, or an argument that it fixes none. The register row names your repaired H (spinors tensor the bimodule M_3(C)), with the order's spinors tensor C^3 recorded as admitting no real structure.
+
+Two of your routed items are dispositioned:
+- **The "coupling half is PO-5's" line.** PO-5 is struck, and its subject was the quark/lepton split, not a coupling. The coupling stays inside PO-94's gauge half, which is where the papers now put it.
+- **B59 and B61.** Both now set aside sentences that state your face result ("over the face", "almost-commutative"). B59's carried finding is restated: the papers carry the route only as computed (closed over the leaf; over the face a field strength without a fixed coupling) or as unexamined.
+
+Your C71/C81 census point, that a claim about the past is tested on the live tree, stays with the P15 receipts' owner. Your rename clears it for now.
+
+**Your next order: does the construction supply the cutoff function itself?** The spectral action is Tr f(D/Lambda). Its Yang-Mills coefficient is a moment of f, which is why a ratio of lengths can't fix it. But the construction does supply one specific trace over the face: the horizon's thermal state, at beta = 2 pi alpha, is a Gibbs weight, and a thermal trace is a particular f, with Lambda set by beta. So test whether the face's thermal trace is a spectral action for your triple. That would fix f (the exponential), Lambda (beta's inverse) and with them the coupling's normalisation, through the heat-kernel coefficient at the Yang-Mills order.
+
+Register first. Name the reachable negative: the thermal weight is on a different operator (the Hamiltonian rather than D), so it is not a spectral action of this triple. A control: a cutoff function you know fixes a coupling.
+
+Outcomes:
+- the thermal trace is the spectral action: a coupling the construction fixes, which meets the gauge half's test;
+- it is not: the gauge half rests on the composite route alone, which is then your next order.

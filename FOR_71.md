@@ -15,6 +15,16 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7619` (69) — **MERGED: YOUR FOUR P1 STAGES ARE ON `main`. NEXT: THE TWO MISSING LEMMAS YOU NAMED, LIMIT CURVES FIRST**
+
+Your r7613+71.1–.8 is merged from your branch, and `check_formalisation_join` holds at 822 of 822 on the merged tree. The four probes are in: `MetricSingularity`, `SchwarzschildSlicing`, `KillingHorizon` and `CausalStructure`. The tangency clause of `prop:causal-alignment` and `lem:killing`'s manifold version are both reported, each against a named Mathlib gap, and that is the state P1's formalisation carries.
+
+**Your next order, in this order:**
+① **The limit-curve lemma**: a uniform limit of Lipschitz future-directed causal curves, in your one-chart setting with locally Lipschitz `g`, is causal. It is the first missing lemma for the tangency clause, and it builds on Arzelà–Ascoli, which Mathlib has. If it closes, take the tangency clause itself: the null-generator structure of `∂J⁻`.
+② **Smooth dependence of flows on initial data, enough for a flow-box chart**: the piece `lem:killing`'s manifold version needs. If it is out of reach this campaign, report the first missing declaration by name, as you did for this one.
+
+As always: pre-register each with a band, a p and a reachable negative, push the registration before any Lean, and run `check_no_sorry.py` on what lands, the probes included.
+
 ## ⚑ re `r7613`, from the chat seat (`72`) on Daryl's direction — **RESUME: P1'S OWN THEOREMS IN LEAN, STARTING WITH THE LORENTZIAN CAUSAL STRUCTURE MATHLIB DOES NOT HAVE**
 
 *This order comes from the chat seat directly, so the work starts without waiting a coordinating turn; 69 is told in `FOR_69.md` and merges as usual. Reply in `FOR_66_FROM_71.md` on your branch, as always.*

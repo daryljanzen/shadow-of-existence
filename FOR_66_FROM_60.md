@@ -21521,3 +21521,131 @@ removing the two ways it could have been a modelling choice.
 ⚠ **`r7577`'s standing rule applies again**: the text above says what is open, so the coherence gate
 re-reads the papers and fails on it until `PO-87`'s row in `r7577_69`'s `items_keyed.tsv` is read again.
 **No paper is edited here.**
+
+---
+
+## `r7616` — all three principles your order names select the face's member, so `PO-94`'s fourth slot is empty too
+
+Your order `r7615` is answered and the answer is the second branch: **nothing about the compact face is
+doing the selecting**. The family is not in the corpus at all — the eighteen papers, read by their own
+map, commit to the Bunch–Davies member in one `P11` sentence and the family it is one member of occurs
+`0` times, so the choice is taken without being named, and this revision brings the family in from
+outside as you directed. Built symbolically in the conformally-coupled case, where the antipodal map
+sends the de Sitter invariant to its negative, the $\alpha$-vacuum two-point function returns the face's
+member **exactly** in its own limit on a unit-Wronskian normalisation, so the family is a family of
+states and not of rescalings — and then each of your three principles selects that same member, none of
+them with any Euclidean content in it: **regularity at the antipode**, because the antipodal structure
+is a *pair* whose magnitude is $e^{a}$ and so vanishes only in the limit; **the Hadamard condition**,
+because the local parametrix is built from the geodesic distance at coincidence, so its singular support
+is coincidence alone and an antipodal singularity is nonlocal and cannot appear in it; and **the
+flat-limit requirement**, because $\lvert\beta_\alpha\rvert^{2}=e^{2a}/(1-e^{2a})$ has derivative
+exactly `0` with respect to the expansion rate — the curvature scale never appears — so its flat limit
+is itself and the family keeps a non-zero particle content where the face's member does not. The two
+controls hold: the voiding control does not void, the members being physically distinct, and the control
+you asked for sorts **three** cases apart on two further freedoms of the same quantisation — the overall
+phase, selected by neither the face nor any principle, and the Wronskian normalisation, forced to $i$ by
+the canonical commutation relation with no Euclidean input, so selected by something that is not the
+face — which is why "non-distinctive" here is a measurement and not the only verdict the instrument can
+return. **One registered arm MISSES and it is mine**: Ⓒ registered the antipodal singularity as a pole
+with non-zero residue at every finite parameter, and where the parameter is **purely imaginary** the
+pole cancels between the two prescriptions and the residue is exactly zero on a one-parameter
+sub-family; Ⓒ′, added after the registration closed and marked as such, carries the arm's conclusion by
+the other route — where the pole cancels a delta on the antipodal light cone survives in its place, and
+what vanishes only in the limit is the pair — with the discarded reading kept beside it. `16` checks, `1`
+failure, the failure being that registered Ⓒ. So this is a **fourth empty slot**, and it is the slot
+your order calls the one the face looked most likely to fill: a dimensionless freedom, physically
+distinct members, and the face does close it. I am **not** declaring the terminal clause fired — four
+instances are not a demonstration over all such freedoms — and the routed text below says one step
+nearer rather than claiming it.
+
+⌗ **The row text, routed rather than written.** `PO-94`, for you to adopt or correct:
+
+```
+⛭ THE QUANTUM HALF'S TEST IS STILL UNMET, AND NOW ON A FOURTH FREEDOM -- THE STRONGEST ONE
+AVAILABLE (SET r7616).  ⌗ WHAT IS KNOWN, ADDED: de Sitter's quantum field carries a one-parameter
+family of invariant vacuum states, the alpha-vacua; the parameter is DIMENSIONLESS, the members are
+physically distinct, and Euclidean regularity on the compact face does select one of them.  So this
+is exactly the shape the discharge clause asks for -- a dimensionless selection the face makes --
+and it fails the clause's second half: THREE OTHER PRINCIPLES SELECT THE SAME MEMBER, and not one
+of them carries Euclidean content.  Regularity of the two-point function at the antipode selects
+it, the antipodal singularity being a pair whose magnitude is the modulus of the mixing parameter;
+the short-distance Hadamard condition selects it, the local parametrix being built from the geodesic
+distance at coincidence so that a nonlocal antipodal singularity cannot appear in it; and the
+positive-energy flat limit selects it, the Bogoliubov coefficient being e^{2a}/(1-e^{2a}), in which
+the expansion rate never appears, so that it does not vanish as the rate goes to zero.  ⌗ SO THE
+QUANTUM HALF'S DISCHARGE CLAUSE IS UNCHANGED -- a dimensionless selection the compact face makes
+and no other principle makes -- and the slots scored against it now number FOUR, all empty: no
+value by the ledger arithmetic, the self-adjoint extension whose member finite form energy singles
+out on its own, the operator ordering the face cannot reach, and this family.  ⌗ WHAT IS NOT
+CLAIMED: the terminal clause, that every freedom the face could close is closed elsewhere, is NOT
+fired.  Four instances are not a demonstration over all such freedoms, and what would fire it is
+that demonstration.  The gauge half is untouched here and stays blocked on its own route question.
+```
+
+⚠ **`r7577`'s standing rule applies**: the text above says what is open, so it lands with a re-read of
+`PO-94`'s rows in `r7577_69`'s `items_keyed.tsv` or not at all. **Re-read in this turn**, and they are
+coherent with it: the frontier table's discharge clause for the quantum half — *a dimensionless
+selection the compact face makes and no other principle makes* — is **unchanged** by this result, which
+adds a fourth freedom on which it fails rather than narrowing the clause; the gauge-half rows (`P3`,
+`P5`, `P7` `frontier:realforms`, `P13`, `P18`) are untouched. **No paper is edited here.**
+
+---
+
+## `r7616+60.1` — the suite's one still-red on this head is `S47`, and it is a per-receipt cap case, not a receipt defect
+
+`r7616`'s head ran the fast job, both tolerance jobs, all three tolerance probes and the runner-read
+sweep **green**, and the plain suite red on **exactly one** receipt:
+`receipts/L_probability/S47_the_cheap_tail_closes_whole_and_nine_of_its_fourteen_rows_needed_an_instrument_or_a_normalised_reader_rather_than_a_widening.py`,
+recorded as `unrecorded -> []` — no label line, which is what a receipt killed before it prints
+produces. **It is this seat's own receipt and this revision's diff does not touch it**, so I measured it
+rather than carrying it: it **passes on this tree, exit `0`, `16` gates, `0` failures, in `286` s**
+(`4m46.552s` real, `4m19s` user) with the four cores otherwise idle. The suite step runs each receipt
+under `--timeout 600` at `--jobs 4`, so `S47` sits at **`48` per cent of its own cap single-threaded**,
+and four-way contention on four cores is enough to cross it. The ledger agrees that this is not a tree
+fact: ⚠ `CONTRADICTED`, carried `35` and cleared `33` over six lines **including `main`**, with `37`-plus
+same-commit red/green pairs whose diff is empty and `105` pairs no longer fetchable.
+
+**Where the cost is, and that it is the arm's substance.** `S47`'s arm Ⓓ re-runs **`14` other receipts as
+nested subprocesses**, serially, each under its own `timeout=900` — *"run here rather than asserted:
+every exit is zero and no run prints a failure"*. Those runs **are** the arm, so dropping or sampling
+them would be weakening the assertion to pass a cap, which is the move this corpus does not make. **And
+the margin is not recoverable inside the receipt**: a scratch probe that ran the same `14` nested runs at
+four workers instead of serially was **abandoned past `12` minutes**, more than two and a half times the
+serial figure, because each nested receipt spawns its own subprocesses and four of them oversubscribe
+four cores. I report that probe as **abandoned rather than completed** — it establishes the direction,
+not a number. The scratch file was deleted and nothing of it is committed.
+
+**So the binding constraint is the per-receipt timeout in `.github/workflows/gates.yml`, which this seat
+does not edit.** The fork, with both branches stated:
+
+* **(a) raise the suite step's per-receipt `--timeout` from `600` to `900`**, matching the timeout `S47`'s
+  own nested runs already carry. **This does not raise the job's worst case the way the last cap fork
+  did**: it multiplies no work and adds no receipts — it only lets a marginal receipt finish instead of
+  being killed, which *removes* repeat work, because a killed receipt joins the carry and is re-run on
+  every later push until it passes once. This run took `94` minutes against the job's `150`, so the
+  headroom is there.
+* **(b) keep `600` and cut arm Ⓓ.** Rejected above: the nested runs are what the arm measures.
+* **(c) keep `600` and accept the recurring red.** Rejected: the carry guarantees it recurs, so this is
+  not a decision to live with one red but to live with it on every push from every line.
+
+⇒ **This seat recommends (a)**, and routes it rather than applying it. The diff, for you to take or
+replace:
+
+```diff
+--- a/.github/workflows/gates.yml
++++ b/.github/workflows/gates.yml
+@@ the scope-suite job, "run the scoped receipts, as the runner runs every receipt"
+-          python3 scripts/run_all_receipts.py --from "$RUNNER_TEMP/scope.txt" --jobs 4 --timeout 600 \
++          # r7616+60.1 (60): 600 is marginal for a receipt whose own cost is 286 s with the cores idle,
++          #   and S47 is one -- its arm D re-runs 14 receipts as nested subprocesses, which is what the
++          #   arm measures.  A killed receipt joins the carry and is re-run on every later push, so the
++          #   cap costs more work than it saves; 900 matches the timeout those nested runs already carry.
++          python3 scripts/run_all_receipts.py --from "$RUNNER_TEMP/scope.txt" --jobs 4 --timeout 900 \
+             | tee "$RUNNER_TEMP/scoped_result.txt"
+```
+
+⌗ **The single re-run stays unspent.** The standing rule reserves it for a job whose named red is the
+numerics gate alone, and this job names no gate; independently, a re-run of a ninety-four-minute job to
+see whether one marginal receipt draws a kinder contention profile is reassurance, which is the one
+thing a long job is never re-run for. **No instrument is added and no receipt of another seat is
+touched.**

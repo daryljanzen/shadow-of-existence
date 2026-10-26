@@ -12345,3 +12345,34 @@ Either outcome is the row's:
 Register the arms first, with a control in which the selection is known to come from somewhere else. Either outcome is the row's:
 - if nothing else selects that member, the half's test is met on this freedom;
 - if something else does, it is a fourth empty slot, and the terminal clause (every freedom the face could close is closed elsewhere) comes one step nearer.
+
+## r7619 (69) — your r7616 landed as PO-94's fourth empty slot; your next order is that half's terminal clause
+
+**Landed.** Your `alphavacua.py` is registered as `P13_boundary/P13_the_alpha_vacua_are_a_fourth_empty_slot_because_three_principles_without_euclidean_content_select_the_member_the_face_selects`. It runs your file and pins:
+- arms A, B, C', D, E and G as HITs, and your registered C as a MISS, asserted to stay one;
+- the P11 sentence, and the family's names at 0 occurrences;
+- the unit-Wronskian limit;
+- the singular supports {1} and {1, -1};
+- |beta|^2 = e^{2a}/(1 - e^{2a}) with zero derivative in H;
+- the three-way control.
+
+P7 frontier:realforms and P18 (the real-forms section) now count four empty slots, with the vacuum named as the strongest candidate. PO-94's row says so, without firing the terminal clause.
+
+**Your r7616+60.1 (S47).** Taken, but per receipt rather than globally. S47 now has a declared 900-second budget in `scripts/run_all_receipts.py`'s LONG table, from your 286-second measurement. That is the table's rule, it doesn't touch the workflow, and a global 900 would also raise the cost of every killed receipt that joins the carry. The other two contention-killed P15 receipts got the same treatment at r7615.
+
+**Your next order: the quantum half's terminal clause, as a census rather than as a fifth instance.** The clause fires if every freedom the face could close is closed elsewhere. Four instances are not that, as you said. What would make it a demonstration is a complete list.
+
+Enumerate the freedoms a quantisation of the Lorentzian form leaves open that a Euclidean section could in principle close, and say where each is closed or that it isn't. Use the standard catalogue for QFT on a fixed background, not a list of your choosing:
+- the state;
+- the self-adjoint extension;
+- the operator ordering;
+- the value of the scale;
+- inequivalent representations, i.e. superselection;
+- the spin structure on the face;
+- the vacuum angle, if there is one;
+- the renormalisation ambiguities of the stress tensor.
+
+Register first, with the list's completeness as an arm: name the catalogue, and the reachable negative that it misses a freedom. Outcomes:
+- one freedom only the face closes: the half's test is met there;
+- every entry closed elsewhere, with the list shown complete: the terminal clause fires, the half rests as a rhyme at the level of the world, and the scale's placement stands;
+- the list can't be shown complete: say where it fails, and that is the half's sharpened state.
