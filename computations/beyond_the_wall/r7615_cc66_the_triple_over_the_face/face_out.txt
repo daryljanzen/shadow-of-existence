@@ -1,0 +1,85 @@
+
+==============================================================================
+ WHAT P13 ALREADY DECIDES -- READ FROM THE PAPER, NOT RECALLED
+==============================================================================
+
+  [PASS] P13 states the face is ODD-dimensional in its own words -- READ: "odd-dimensional}, being the five-sphere"   ->  found in boundary_paper.tex
+  [PASS] and draws the consequence this row needs -- READ: "the grading exists only in even dimension"   ->  found in boundary_paper.tex
+  [PASS] and gives the operator the triple is built on -- READ: "the least eigenvalue is $5/2\alpha$"   ->  found in boundary_paper.tex
+
+  ⇒ So "J and gamma as the face's dimension allows" is settled by the paper, not by me:
+    gamma NONE (odd dimension admits no Z_2 grading), J to be verified below.
+
+==============================================================================
+ CONTROL 1 -- THE CHECKER MUST CERTIFY A REAL TRIPLE THAT IS ONE
+==============================================================================
+
+  [PASS] CONTROL: the two-point BIMODULE triple satisfies J^2 = +1, JD = DJ, and the order-one condition EXACTLY, with [D,a] non-zero so the order-one arm is not vacuous   ->  ||J^2-1|| = 0.0e+00, ||JDJ^-1-D|| = 0.0e+00, max||[D,a]|| = 17, order-one = 0.0e+00
+  [PASS] CONTROL: and a generic non-commutative pair VIOLATES order-one, so the expression above can come out the other way and its zeros are measurements   ->  defect = 81.2
+
+==============================================================================
+ CONTROL 2 -- THE FACE'S DIRAC SPECTRUM: P13'S FORMULA, DERIVED FROM THE CURVATURE
+==============================================================================
+
+    S^5 of radius alpha:  R = 20/alpha**2
+    Friedrich bound:      lambda^2 >= 25/(4*alpha**2)
+    least eigenvalue:     lambda(k=0) = 5/(2*alpha)
+  [PASS] the face's least eigenvalue is DERIVED, not quoted: Friedrich's bound on S^5's own scalar curvature is saturated exactly at k = 0, which is what makes 5/(2 alpha) the least eigenvalue and matches P13's printed spectrum   ->  lambda_min = 5/(2*alpha), saturates = True
+  [PASS] CONTROL: and the bound is STRICTLY exceeded at k = 1 and k = 2, so the saturation above picks out the LEAST eigenvalue rather than holding for every level -- the comparison that discriminates, after my first attempt at this control asserted something false about S^4   ->  k=1: 49/(4*alpha**2) > 25/(4*alpha**2); k=2: 81/(4*alpha**2) >
+  [PASS] ** and the operator is GAPPED with no zero mode, which is why 69 was right at r7615 that P13's "no zero modes" sentence does NOT close this route: a triple needs the OPERATOR, and the face has one **   ->  |lambda| >= 5/(2*alpha) > 0
+
+==============================================================================
+ QUESTION (1a) -- THE ORDER'S HILBERT SPACE OFFERS THE OPPOSITE ALGEBRA NOWHERE TO ACT
+==============================================================================
+
+  A real structure needs J a* J^-1 to lie in the COMMUTANT of the algebra.  The order specifies
+  H = spinors tensor C^3, so the finite factor is C^3 and the algebra acting on it is M_3(C).
+  ** M_3(C) acts IRREDUCIBLY on C^3, so its commutant is the scalars and there is no room for
+  an opposite action.  That is a DIMENSION and it is computed, with the bimodule as the control
+  where the room exists. **
+
+    commutant of M_3(C) on C^3 (the order's H):      dim = 1
+    commutant of M_3(C) on M_3(C) (the bimodule):    dim = 9
+  [PASS] ** ON THE ORDER'S OWN H = spinors tensor C^3 THERE IS NO REAL STRUCTURE: the commutant of M_3(C) acting on C^3 is ONE-dimensional, the scalars, so J a* J^-1 has nowhere to live.  This is a correction to the specification, NOT a closure of the route **   ->  dim commutant = 1 (scalars only)
+  [PASS] CONTROL: on the BIMODULE H = spinors tensor M_3(C) the commutant is NINE-dimensional -- room for a faithful opposite action -- so the obstruction above is about the order's choice of H and not about M_3(C) or about my solver   ->  dim commutant = 9
+
+  ⇒ THE REPAIR IS THE ONE CONTROL 1 TEACHES: take H's finite factor to be the bimodule
+    M_3(C) rather than C^3.  The route SURVIVES this; it is the order's H that does not.
+
+==============================================================================
+ QUESTION (1c) -- WHAT A FIVE-DIMENSIONAL BASE CARRIES THAT THE LEAF DID NOT
+==============================================================================
+
+    base dimension -> independent two-forms: p=1 -> 0, p=2 -> 1, p=3 -> 3, p=5 -> 10
+  [PASS] ** THE FACE IS FIVE-DIMENSIONAL AND CARRIES TEN INDEPENDENT TWO-FORMS, where the leaf of r7613 carried ZERO -- which is exactly why that route closed and this one is open.  The same counter, the same file, opposite answers **   ->  p=5 -> 10, p=1 -> 0 (r7613)
+  [PASS] a generic su(3)-valued one-form on the face has NON-VANISHING curvature, computed from F = dA + A^A rather than asserted   ->  F_12 has 2 free symbol(s) and is not the zero matrix
+  [PASS] CONTROL: and the same formula returns IDENTICALLY ZERO on a constant commuting one-form, so the non-vanishing above is a property of the field and not of my expression   ->  F = 0
+
+==============================================================================
+ QUESTION (2) -- CAN ANYTHING IN CR FIX A DIMENSIONLESS COUPLING?
+==============================================================================
+
+  A gauge coupling is DIMENSIONLESS.  The data CR offers are beta = 2 pi alpha and the face's
+  radius alpha -- both LENGTHS -- and the walls' flat bundle, which r7611 showed has H^1 = 0
+  and so no moduli.  ** The dimensional question is decided by solving for the exponents, not
+  by assertion, and the pre-registration named beta/alpha = 2 pi as the one candidate that
+  could rule this IN. **
+
+    alpha^p_a beta^p_b is dimensionless iff  p_a + p_b = 0  ->  [{p_a: -p_b}]
+  [PASS] ** NO power of alpha or beta ALONE is dimensionless: the exponents must satisfy p_a = -p_b, so the ONLY dimensionless monomial the pair admits is a power of the RATIO beta/alpha **   ->  p_a = -p_b forced
+  [PASS] and that ratio is FIXED by the construction, exactly: beta/alpha = 2 pi -- so the candidate the pre-registration named as the one that could overturn the verdict is real and is evaluated rather than dismissed   ->  beta/alpha = 2*pi
+  [PASS] ** BUT A RATIO OF LENGTHS IS NOT A MOMENT OF A CUTOFF FUNCTION.  2 pi is a pure number the geometry fixes; the Yang-Mills coefficient is a FUNCTIONAL of f, and nothing in CR supplies f.  So the coupling is NOT fixed, and this is reported as the pre-registered outcome 2 rather than as a closure: the route supplies a gauge sector the construction does not determine **   ->  beta/alpha = 2 pi is fixed; the cutoff moment is not a ratio of lengths
+  [PASS] CONTROL: the dimensional solver can tell the two apart -- alpha alone is NOT dimensionless while beta/alpha is -- so the argument above is a measurement and not a form of words   ->  alpha/alpha = 1 dimensionless, alpha is not
+
+==============================================================================
+ THE VERDICT -- INSIDE THE ASSERT, WHERE IT CAN FAIL
+==============================================================================
+
+  [PASS] ** ⑴ THE ORDER'S H IS WRONG AND THE ROUTE SURVIVES THE CORRECTION: M_3(C) acts irreducibly on C^3, commutant dimension 1, so spinors tensor C^3 admits NO real structure; on the bimodule spinors tensor M_3(C) the commutant is 9 and there is room.  gamma does not exist at all, which is P13's own sentence about odd dimension and not a finding of mine **   ->  commutant 1 vs 9; gamma absent by P13
+  [PASS] ** ⑵ AND THE REAL TEST ANSWERS AGAINST THE CONSTRUCTION, as pre-registered: the face carries ten two-forms and a generic fluctuation has non-zero curvature, so a gauge FIELD is there -- but no power of alpha or beta is dimensionless, the only dimensionless combination is beta/alpha = 2 pi, and a ratio of lengths is not a moment of a cutoff function.  ** THE ROUTE SUPPLIES A GAUGE SECTOR THE CONSTRUCTION DOES NOT DETERMINE ** -- pre-registered outcome 2, a result about the rhyme, and the coupling half is PO-5's row and not annexed here **   ->  field yes, coupling no; outcome 2
+
+  19 checks, 19 pass, 0 fail
+
+==============================================================================
+ ALL CHECKS PASS
+==============================================================================
