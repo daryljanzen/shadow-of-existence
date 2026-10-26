@@ -482,7 +482,12 @@ jobs:
         shell: bash
         run: |
           python3 scripts/receipt_scope.py --ci --scope suite --list "$RUNNER_TEMP/scope.txt"
-          python3 scripts/red_carry.py --union suite --list "$RUNNER_TEMP/scope.txt"
+          # r7613+3 (69): the union writes the scope list and prints its CARRIED line BEFORE the PO-68 history read,
+          #   which pairs every carried receipt's reds with its greens and diffs each pair; on a 236-receipt carry it
+          #   ran past an hour.  The history is diagnostic, so it gets ten minutes; a cut-off is accepted only when the
+          #   CARRIED line has printed, so the list on disk is the full union and never the natural scope alone.
+          rc=0; timeout 600 python3 scripts/red_carry.py --union suite --list "$RUNNER_TEMP/scope.txt" 2> "$RUNNER_TEMP/union.err" || rc=$?; cat "$RUNNER_TEMP/union.err" >&2
+          if [ "$rc" = 124 ] && grep -q "CARRIED (suite)" "$RUNNER_TEMP/union.err"; then echo "  ⌗ PO-68 history cut off at ten minutes; the scope list is complete"; elif [ "$rc" != 0 ]; then exit "$rc"; fi
           echo "n=$(wc -l < "$RUNNER_TEMP/scope.txt")" >> "$GITHUB_OUTPUT"
           sed 's/^/    /' "$RUNNER_TEMP/scope.txt"
       - name: nothing in scope — nothing runs
@@ -538,7 +543,12 @@ jobs:
         shell: bash
         run: |
           python3 scripts/receipt_scope.py --ci --scope reads --list "$RUNNER_TEMP/scope.txt"
-          python3 scripts/red_carry.py --union reads --list "$RUNNER_TEMP/scope.txt"
+          # r7613+3 (69): the union writes the scope list and prints its CARRIED line BEFORE the PO-68 history read,
+          #   which pairs every carried receipt's reds with its greens and diffs each pair; on a 236-receipt carry it
+          #   ran past an hour.  The history is diagnostic, so it gets ten minutes; a cut-off is accepted only when the
+          #   CARRIED line has printed, so the list on disk is the full union and never the natural scope alone.
+          rc=0; timeout 600 python3 scripts/red_carry.py --union reads --list "$RUNNER_TEMP/scope.txt" 2> "$RUNNER_TEMP/union.err" || rc=$?; cat "$RUNNER_TEMP/union.err" >&2
+          if [ "$rc" = 124 ] && grep -q "CARRIED (reads)" "$RUNNER_TEMP/union.err"; then echo "  ⌗ PO-68 history cut off at ten minutes; the scope list is complete"; elif [ "$rc" != 0 ]; then exit "$rc"; fi
           echo "n=$(wc -l < "$RUNNER_TEMP/scope.txt")" >> "$GITHUB_OUTPUT"
           sed 's/^/    /' "$RUNNER_TEMP/scope.txt"
       - name: nothing in scope — nothing runs
@@ -600,7 +610,12 @@ jobs:
         shell: bash
         run: |
           python3 scripts/receipt_scope.py --ci --scope tolerance --list "$RUNNER_TEMP/scope.txt"
-          python3 scripts/red_carry.py --union tolerance --list "$RUNNER_TEMP/scope.txt"
+          # r7613+3 (69): the union writes the scope list and prints its CARRIED line BEFORE the PO-68 history read,
+          #   which pairs every carried receipt's reds with its greens and diffs each pair; on a 236-receipt carry it
+          #   ran past an hour.  The history is diagnostic, so it gets ten minutes; a cut-off is accepted only when the
+          #   CARRIED line has printed, so the list on disk is the full union and never the natural scope alone.
+          rc=0; timeout 600 python3 scripts/red_carry.py --union tolerance --list "$RUNNER_TEMP/scope.txt" 2> "$RUNNER_TEMP/union.err" || rc=$?; cat "$RUNNER_TEMP/union.err" >&2
+          if [ "$rc" = 124 ] && grep -q "CARRIED (tolerance)" "$RUNNER_TEMP/union.err"; then echo "  ⌗ PO-68 history cut off at ten minutes; the scope list is complete"; elif [ "$rc" != 0 ]; then exit "$rc"; fi
           echo "n=$(wc -l < "$RUNNER_TEMP/scope.txt")" >> "$GITHUB_OUTPUT"
           sed 's/^/    /' "$RUNNER_TEMP/scope.txt"
       - name: nothing in scope — nothing runs
