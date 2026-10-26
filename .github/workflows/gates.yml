@@ -578,7 +578,11 @@ jobs:
     name: scoped — the tolerance perturbation, the scope this push can have moved
     if: github.event_name == 'push'      # r7401+70.2 (r7397 ①): off `pull_request`; see the note at `concurrency:`
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    # r7613+2 (69), measured: with main's tolerance carry at 236 the scope step ran past 15 minutes and the job was
+    #   cancelled before it could hand the probes a scope.  The time is the union's history read, about 10 s a
+    #   carried receipt (the figure the compare job's note gives); locally the union over that carry did not finish
+    #   inside 10 minutes.  60 holds a 236-receipt carry; once it drains the step is back to seconds.
+    timeout-minutes: 60
     outputs:
       n: ${{ steps.scope.outputs.n }}
     steps:
@@ -615,14 +619,19 @@ jobs:
     #   single job's 120 -- the three now run side by side, so the push waits on the slowest build, not on the sum.
     #   `timeout` ends the probe at its budget and says so in STATUS (rc 124); the job limit above it leaves room
     #   for checkout, install and the upload, so the upload still runs when the probe runs out of time.
+    # r7613+1 (69), measured: the r7613 push (two seat merges in one range) put 236 receipts in this scope,
+    #   6,555 s by the read index; all three builds hit the 60-minute budget, and a timed-out build carries its
+    #   whole scope, so every later push would inherit 236 and time out again -- the fixed point the suite job
+    #   had at r7609.  A local probe of six of them ran in 0.61 of their index seconds, so the index is an upper
+    #   reading for the probe's own cost: 150 holds the 6,555 s carry with room, the same cap the suite job has.
     timeout-minutes: ${{ matrix.job_minutes }}
     strategy:
       fail-fast: false        # a build that fails must not cancel its siblings: that is the whole point
       matrix:
         include:
-          - { id: A, label: "the runner's one thread", args: '', budget: 60, job_minutes: 75 }
-          - { id: B, label: 'four threads', args: '--threads 4', budget: 60, job_minutes: 75 }
-          - { id: C, label: 'Prescott at two threads', args: '--threads 2 --coretype Prescott', budget: 60, job_minutes: 75 }
+          - { id: A, label: "the runner's one thread", args: '', budget: 150, job_minutes: 165 }
+          - { id: B, label: 'four threads', args: '--threads 4', budget: 150, job_minutes: 165 }
+          - { id: C, label: 'Prescott at two threads', args: '--threads 2 --coretype Prescott', budget: 150, job_minutes: 165 }
     steps:
       - uses: actions/checkout@v4
         with: { fetch-depth: 0 }
