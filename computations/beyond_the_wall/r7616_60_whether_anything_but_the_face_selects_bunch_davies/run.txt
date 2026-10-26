@@ -1,0 +1,104 @@
+==============================================================================
+Ⓐ  THE CORPUS'S OWN COMMITMENT, AND THE FREEDOM IT DOES NOT NAME
+==============================================================================
+   papers read by their own map: 18  (never a glob over the corpus directory)
+   [HIT ] "admits a clean, unitary Bunch--Davies quantization" in ['dynamics_paper']
+   [HIT ] the family's names occur 0 times
+   ⇒ Ⓐ HIT: the corpus commits to the member without naming the
+     freedom, so the family is brought in from outside, as the order directs.
+
+==============================================================================
+Ⓑ  THE FAMILY, AND THAT IT RETURNS BUNCH-DAVIES IN ITS OWN LIMIT
+==============================================================================
+   G_alpha as e^alpha -> 0 (a -> -oo):  -c/(Z - 1)
+   [HIT ] equals the Bunch-Davies function c/(1-Z)
+   [HIT ] |N|^2 (1 - |e^alpha|^2) = 1, the unit-Wronskian normalisation
+   ⇒ Ⓑ HIT
+
+==============================================================================
+Ⓒ  THE ANTIPODAL SINGULARITY, MEASURED -- AND THE REGISTERED ARM IS WRONG IN A SUB-CASE
+==============================================================================
+   principal-value pole coefficient at Z = -1 : -c*cos(theta)/sinh(a)
+   delta-function coefficient on Z = -1       : pi*c*sin(theta)/sinh(a)
+
+   REGISTERED Ⓒ: 'the residue at Z = -1 is non-zero at every sampled finite alpha'.
+          a      theta           PV coeff        delta coeff
+       -1/2          0        c/sinh(1/2)                  0
+       -1/2       pi/4 sqrt(2)*c/(2*sinh(1/2)) -sqrt(2)*pi*c/(2*sinh(1/2))
+       -1/2       pi/2                  0    -pi*c/sinh(1/2)
+         -2       pi/2                  0      -pi*c/sinh(2)
+       -1/4         pi       -c/sinh(1/4)                  0
+   ⇒ Ⓒ MISS: the residue VANISHES at [('-1/2', 'pi/2'), ('-2', 'pi/2')]
+
+   ⌗ Ⓒ′ -- THE CORRECTED ARM, ADDED AFTER THE REGISTRATION CLOSED AND MARKED AS SUCH.
+     The singularity is a PAIR, and the pair is what vanishes only in the Bunch-Davies limit:
+     where the parameter is purely imaginary the pole cancels between the two prescriptions and
+     a DELTA FUNCTION on the antipodal light cone survives in its place.
+     |(Re, Im)| of the parameter = exp(a), which vanishes only as a -> -oo
+     ⇒ Ⓒ′ HIT: so regularity at the antipode selects the face's
+       member and nothing else -- the registered arm had the right conclusion on a reading
+       that is wrong for a one-parameter sub-family, and the correction is stated rather than
+       quietly absorbed.
+
+==============================================================================
+Ⓓ  HADAMARD: THE SINGULAR SUPPORT AGAINST THE LOCAL PARAMETRIX'S
+==============================================================================
+   singular support of the Bunch-Davies function in Z : {1}
+   singular support of G_alpha in Z                   : {1, -1}  (the second from the
+     antipodal terms above, as a pole or as a delta by Ⓒ′)
+   the local Hadamard parametrix is built from the geodesic distance at COINCIDENCE, so its
+   singular support is {1} alone: an antipodal singularity is nonlocal and cannot appear in it.
+   ⇒ Ⓓ HIT: the Hadamard condition selects the face's member too.
+
+==============================================================================
+Ⓔ  THE FLAT LIMIT: DOES THE PARTICLE CONTENT CARRY THE CURVATURE SCALE AT ALL?
+==============================================================================
+   |beta_alpha|^2 = exp(2*a)/(1 - exp(2*a))
+   d|beta|^2 / dH = 0   -- the Bogoliubov coefficient carries NO curvature scale
+   its flat limit H -> 0  = exp(2*a)/(1 - exp(2*a))   (unchanged, since H does not appear)
+   ⇒ Ⓔ HIT: the alpha-vacua keep a non-zero particle content in the
+     flat limit while the face's member does not, so the positive-energy flat-limit
+     requirement selects the same member -- on a coefficient with no curvature in it.
+
+==============================================================================
+Ⓖ  THE CONTROL THE ORDER ASKS FOR: TWO FREEDOMS WHOSE SELECTORS ARE KNOWN
+==============================================================================
+   [HIT ] (i) overall phase: d/dlambda of the two-point function = 0  -- selected by NEITHER the face nor any principle
+   [HIT ] (ii) Wronskian: the canonical commutation relation forces
+        W = i exactly, with no Euclidean input -- selected by SOMETHING THAT IS NOT THE FACE
+   and (iii) the family above is selected by the face AND by three other principles.
+   ⇒ Ⓖ HIT: the test sorts three cases apart -- selected by nothing,
+     selected by something that is not the face, selected by the face and others alike -- so a
+     verdict of non-distinctive is a measurement and not the only answer available.
+
+==============================================================================
+Ⓗ  CONTROL: ARE THE MEMBERS PHYSICALLY DISTINCT AT ALL?
+==============================================================================
+   G_alpha - G_BD at a = -1/2, theta = 0, Z = 0 : -(2 + 2*exp(1/2))/(1 - E)
+   ⇒ Ⓗ does not void: the members are physically
+     distinct, so there is a real freedom here and the slot is a slot.
+
+==============================================================================
+Ⓕ  THE VERDICT ON THE ORDER'S QUESTION
+==============================================================================
+   A: HIT
+   B: HIT
+   C: MISS
+   C': HIT
+   D: HIT
+   E: HIT
+   G: HIT
+   H (control): does not void
+
+   THE FACE'S SELECTION IS NOT DISTINCTIVE ON THIS FREEDOM EITHER.  Regularity at the
+   antipode, the Hadamard condition and the flat-limit requirement each select the same
+   member the compact face selects, and none of the three carries any Euclidean content:
+   the first two are statements about the two-point function's singular support, the third
+   about a coefficient with no curvature scale in it.  So this is a FOURTH EMPTY SLOT, and
+   it is the slot the order calls the one the face looked most likely to fill -- a
+   dimensionless freedom with physically distinct members that the face does close.
+   ⇒ The row's terminal clause -- every freedom the face could close is closed elsewhere --
+     comes one step nearer on the strongest candidate yet, and is NOT declared fired: what
+     would fire it is a demonstration over ALL such freedoms, which four instances are not.
+
+   16 checks, 1 failures.  FAILED: ['Ⓒ as registered: the PV residue is non-zero at every sampled alpha']
