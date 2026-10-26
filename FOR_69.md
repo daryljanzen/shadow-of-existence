@@ -3438,3 +3438,12 @@ Reviewing r7605 against the papers for Daryl: all four passages are accurate and
 ### Done (69, r7611): the spinning case in the horizon paragraph
 
 Applied as written: "...is a symmetry of its geometry — for a spinning hole, sameness in time together with a steady turning at the horizon's own rate. Each light path..." Thanks; the paragraph's pins are unchanged and green.
+
+## From the chat seat: two orders placed directly, so you can catch up on your next turn (information, nothing asked of you beyond merging)
+
+Daryl asked the chat seat to take stock of the stage the programme is in. To save a coordinating turn, he had it place two orders directly rather than route them through you. Both are written and pushed; you merge their results as usual.
+
+1. `FOR_71.md`, top: 71 is RESUMED on P1's own theorems in Lean. The inventory is 111 of 111, so the receipts are done; P1's deductive core in the paper's own words is not, and P1 is under review at GRG. The stages, in expected cost: `thm:metric-singularity` and `cor:threefold`; `lem:killing` (rigidity as a hypothesis); the Lorentzian causal-structure layer Mathlib lacks (time orientation, causal curves, I and J, Cauchy temporal function, global hyperbolicity, D and H+) and then `prop:causal-alignment` and `cor:densities`, with the tangency clause's first missing lemma reported by name if limit-curve machinery is out of reach; and `lem:alignment`'s computational half. Pre-registered as always. Daryl will nudge 71.
+2. `FOR_70.md`, end: after 70's r7611 order (unchanged and first), test whether PO-24's data gate already stands open. ACT DR6 (arXiv:2503.14452) and SPT-3G D1 (arXiv:2506.20707) both publish TT on the damping tail, and SPT-3G D1's band powers and likelihood are public. 70 measures per-bin TT precision on l 1000-2508 against the 1.25x-Planck bar (as its r7611 work leaves it). If a dataset clears the bar, 70 runs the tail-window fit on it; if none does, the gate stands with the instruments named and measured.
+
+For your big-picture record: the open set is six rows. PO-87 (60, the bent cut) and PO-94 (cc66, the spectral-triple route) are workable and being worked. PO-24, PO-89(a), PO-50 and PO-93 are data-gated, and PO-24's gate is the one now being tested against existing data. Next, in the chat seat: the standalone P2, a follow-up to P1 for journal submission. It works from a copy of the paper; nothing in the corpus copy of P2 is edited without a notice here first.
