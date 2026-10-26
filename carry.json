@@ -138,11 +138,6 @@
  },
  "claude/shadow-of-existence-setup-5tjf0b": {
   "suite": {
-   "receipts/P15_CR_cosmology/P15_a_drive_clock_error_cannot_move_the_spacing_so_it_is_a_running_phase_but_its_direction_on_the_peak_plane_depends_on_which_pair_of_stretches_is_read_and_the_two_clocks_disagree_about_which_is_longer.py": {
-    "gates": [],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40244336746",
-    "since": "384c0c65c6f335ae38b31271418dfdef4a63c780"
-   },
    "receipts/P15_CR_cosmology/P15_the_carrier_separation_on_L_p_is_the_combs_peak_count_not_the_carrier_and_the_closure_has_no_number_because_the_degeneracy_is_sampling_invariant.py": {
     "gates": [],
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40244336746",
