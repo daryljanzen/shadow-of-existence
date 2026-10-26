@@ -24946,3 +24946,52 @@ choice is yours and either unblocks me.* ⌗ *The one standing-down comment on t
 carry this; the explicit re-run stays **unspent**, because a re-run cannot break a loop whose input is
 the ledger. I am going to stop pushing to this branch until you have acted, since each push re-reds and
 tells you nothing new.*
+
+---
+
+## ⚑ `r7615` — **THE TRIPLE OVER THE FACE SURVIVES, AND IT IS THE FIRST OF `B59`'s FIVE THAT DOES: A GAUGE FIELD IS THERE AND THE CONSTRUCTION DOES NOT COUPLE IT. TWO SMALLER THINGS CAME WITH IT — THE ORDER'S OWN `H` ADMITS NO `J` AT ALL, AND `B61` NEEDS A THIRD SET-ASIDE**
+
+**Both registered questions are answered rather than one answered and one deferred, and the answer to ⑵
+is the one `PREDICTION.md` priced at medium-high: the construction does not fix the coupling.** ⑴ᵃ
+splits, and the split is a correction to the specification and not a closure of the route: the order's
+$\mathcal H=\text{spinors}\otimes\mathbb C^3$ admits **no real structure at all**, because
+$M_3(\mathbb C)$ acts *irreducibly* on $\mathbb C^3$ — its commutant is **one**-dimensional, the
+scalars, so $Ja^*J^{-1}$ has nowhere to live — against **nine** on the bimodule $M_3(\mathbb C)$, where
+the room exists; both numbers come out of solving $[X,m]=0$ rather than out of quoting, and the
+bimodule is the control that puts the obstruction in the *choice of $\mathcal H$* and not in
+$M_3(\mathbb C)$ or in my solver, so **which $\mathcal H$ the register row should name is your call** —
+the $\mathbb C^3$ is the one you asked for and the bimodule is the only one that carries a $J$, and I
+have written the row on the bimodule while saying so in the open. $\gamma$ needed no computation at
+all: `P13` itself says the face is *"odd-dimensional}, being the five-sphere"* and that *"the grading
+exists only in even dimension"*, so the order's "as the face's dimension allows" was already settled by
+the paper — that half I **read** rather than derived, and `PREDICTION.md` records that I found it before
+writing a line. ⑴ᵇ then holds **exactly** on the repaired triple — order-one defect $0$ over all $81$
+generator pairs — and it holds **non-vacuously**, $\max\lVert[D,a]\rVert=4.33$ on the same algebra, with
+the order's own $\mathbb C^3$ returning $3.536$ as the control; ⑴ᶜ holds too, the face carrying **ten**
+independent two-forms where `r7613`'s leaf carried **zero** on the same counter in the same file, and a
+generic $\mathfrak{su}(3)$-valued one-form there having non-vanishing $F=dA+A\wedge A$. ⇒ **But ⑵
+answers against the construction**: a coupling is dimensionless, `CR` offers two *lengths* and a flat
+bundle `r7611` showed has $H^1=0$, and solving the exponents forces $p_\alpha=-p_\beta$ — so the only
+dimensionless monomial the pair admits is the ratio, which the construction *does* fix exactly at
+$\beta/\alpha=2\pi$, the one candidate the pre-registration named as able to overturn the verdict, **and
+a ratio of lengths is not a moment of a cutoff function.** That is pre-registered outcome 2: *the route
+supplies a gauge sector the construction does not determine*, a result about the rhyme, and the coupling
+half is `PO-5`'s row, which I have not annexed. ⌗ *Three things to route rather than decide.* ⒜ **`B61`
+wants a third set-aside**: its five alternatives carry two that are about the *leaf* —
+`over the leaf` and `one-dimensional leaf` — and this row examines the **face**, so a sentence naming the
+face closed would be set aside by none of them. Your amendment, not mine to make. ⒝ After this row **`B59`'s
+composite/emergent route is the only one of the five untouched.** ⒞ `check_quote_pins` mints **zero**
+new keys off this receipt, and I measured that rather than assumed it: `mutate_assertions.py --quote
+--files` returns `0 site(s)` on my receipt *and* on your `r7613` wrapper — the `has()` indirection is
+invisible to the scanner — while the same command on `P13_the_entropy_is_the_corpuss_own_number.py`
+returns six, so the zero is the wrapper shape and not a scan that failed. ⛔ **And two faults of my own,
+both caught by controls I had written to discriminate, both in the `WALK`.** ⒜ I asserted $S^4$ would
+*not* saturate Friedrich's bound; false — the round sphere is the equality case in **every** dimension,
+and the repair is saturation at $k=0$ against strict inequality at $k=1,2$. ⒝ The worse one: I took
+$\Delta=\mathrm{diag}(0,1,2,3)$ and called it a derivative. **It is a multiplication operator** —
+diagonal, so it commutes with the diagonal $f$, so $[D,a]=0$ identically and order-one "held" on *both*
+the bimodule and the $\mathbb C^3$ because both sides vanished. The control written to tell them apart
+returned $0$ where it had to return non-zero, and that is the only reason I know. ⌗ *The guard I now
+carry twice over: `r7613` taught me that a condition met because both sides vanish constrains nothing,
+and one row later I wrote exactly that operator — so the non-vacuity assertion is in the file beside the
+line that caused it, and the note sits there too.*
