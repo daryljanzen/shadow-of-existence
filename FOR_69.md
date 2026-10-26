@@ -3512,3 +3512,16 @@ Also cited in the journal version, as ordinary coverage: Weyl 1923 for the cosmi
 \bibitem[{Weyl}(1923)]{Weyl1923} Weyl, H. 1923, PhyZ, 24, 230; English translation 2009, GReGr, 41, 1661, doi:\doi{10.1007/s10714-009-0826-6}
 \bibitem[{Zhang} \& {Stebbins}(2011)]{ZhangStebbins2011} Zhang, P., \& Stebbins, A. 2011, PhRvL, 107, 041301, doi:\doi{10.1103/PhysRevLett.107.041301}
 ```
+
+### Done (69, r7617): all six P4 items, landed in `corpus/modern_parallax.tex`
+
+1. **Timescape.** The l.114 sentence is replaced with your wording. The backreaction reviews (Buchert 2008, Rasanen 2004, Kolb-Matarrese-Riotto 2006, Clarkson-Ellis-Larena-Umeh 2011, Buchert & Rasanen 2012) are cited with it. The timescape paragraph stands after "Either way ...", and the Wiltshire PRL entry is added.
+2. **Lapse uniformity.** l.254 now reads: the isotropy forces the foliation whose advance the lapse is, one cosmic time with a uniform expansion on its slices. A new sentence follows with the scope: comoving clock rates across regions are bounded at the 1e-5 level of the potentials across last scattering, and an offset at the observer's end is common to every direction, so isotropy seen from one place does not fix it. The theorem's ontological lapse is kept as written. The sentence after the theorem now says the lapse it requires is the advance of a foliation that is measured. l.262 now reads "the foliation and a uniform expansion on its slices" and gains the York constant-mean-curvature point. ONTOLOGY_FOUNDATION_INDEX.md item 5 is aligned to the same scope.
+3. **Clarkson.** The key stays; the entry is now Clarkson, Bassett & Lu 2008, PRL 101, 011301.
+4. **EGS.** Ehlers-Geren-Sachs, Stoeger-Maartens-Ellis and Nilsson et al. are positioned after "accepted because the model built on them works". The from-our-own-vantage sentence is in the claim paragraph. Weyl 1923 is cited for the cosmic-time posit.
+5. **The l.190 citation.** It now cites Barrett-Clarkson, Clarkson-Bassett-Lu and Maartens 2011, followed by the void exclusions (Zhang & Stebbins 2011, Moss-Zibin-Scott 2011). Ellis 2006, Ellis & Rothman, Craig & Smith and Goedel 1949 sit with the objective-present discussion, after the modal-fallacy paragraph.
+6. **The matter dipole.** The intro now carries the dipole's record (Peebles & Wilkinson, Smoot et al., Planck 2018 I, Planck 2013 XXVII) and the source-count test (Ellis & Baldwin, Secrest 2021 and 2025). l.262 says a matter dipole bears on how the matter's rest frame stands to the slices, not on the uniformity of the expansion.
+
+Also: the velocity figure (369.82 km/s) now cites Planck 2018 I, where it is measured, instead of the parameters paper; and Rees & Sciama, Scrimgeour 2012, Green & Wald 2011 and Buchert et al. 2015 are cited where the journal version cites them. Not added: Jacobson & Mattingly, because the corpus copy has no list of preferred-foliation programmes for it to sit in.
+
+Two section pointers fixed: the theorem and the non-synchronous qualification live in sec:history, not sec:establishes. New bibliography entries carry the volume and start page as in your verified list, in the corpus style.
