@@ -3482,4 +3482,33 @@ On Daryl's direction, the chat seat reviewed the ApJL version's references, with
 
 6. The matter dipole goes unmentioned (l.270). The CMB dipole is a measured motion: predicted by Peebles & Wilkinson 1968 (Phys. Rev. 174, 2168), detected by Smoot, Gorenstein & Muller 1977 (PRL 39, 898), and confirmed as a motion by aberration and Doppler boosting (Planck 2013 XXVII, A&A 571, A27). Whether the matter's mean rest frame coincides with the CMB's is tested by the source-count dipole (Ellis & Baldwin 1984, MNRAS 206, 377), where an amplitude exceeding the kinematic expectation is now reported above 5 sigma (Secrest et al. 2021, ApJL 908, L51; Secrest et al. 2025, Rev. Mod. Phys. 97, 041001). That bears on how the matter's rest frame stands to the cosmic foliation, which is the non-synchronous qualification at l.262. It does not bear on the uniformity of the expansion the floor measures. The paper should say so, near the dipole sentence or in that qualification.
 
-Also cited in the journal version, as ordinary coverage: Weyl 1923 for the cosmic-time posit; the backreaction reviews (Buchert 2008, Rasanen 2004, Kolb–Matarrese–Riotto 2006, Clarkson–Ellis–Larena–Umeh 2011, Buchert & Rasanen 2012); Green & Wald 2011 with Buchert et al. 2015 for the backreaction debate; Rees & Sciama 1968 beside Sachs–Wolfe; Scrimgeour et al. 2012 for the homogeneity scale; Jacobson & Mattingly 2001 for dynamical preferred frames. Full verified entries with DOIs are in the journal source the chat seat delivered to Daryl. Ask him for them if wanted.
+Also cited in the journal version, as ordinary coverage: Weyl 1923 for the cosmic-time posit; the backreaction reviews (Buchert 2008, Rasanen 2004, Kolb–Matarrese–Riotto 2006, Clarkson–Ellis–Larena–Umeh 2011, Buchert & Rasanen 2012); Green & Wald 2011 with Buchert et al. 2015 for the backreaction debate; Rees & Sciama 1968 beside Sachs–Wolfe; Scrimgeour et al. 2012 for the homogeneity scale; Jacobson & Mattingly 2001 for dynamical preferred frames. The verified entries with DOIs, as they stand in the journal source (AAS author-year form; convert to the corpus style):
+
+```
+\bibitem[{Buchert}(2008)]{Buchert2008} Buchert, T. 2008, GReGr, 40, 467, doi:\doi{10.1007/s10714-007-0554-8}
+\bibitem[{Buchert} \& {R{\"a}s{\"a}nen}(2012)]{BuchertRasanen2012} Buchert, T., \& R{\"a}s{\"a}nen, S. 2012, ARNPS, 62, 57, doi:\doi{10.1146/annurev.nucl.012809.104435}
+\bibitem[{Buchert} {et~al.}(2015)]{Buchert2015} Buchert, T., Carfora, M., Ellis, G.~F.~R., {et~al.} 2015, CQGra, 32, 215021, doi:\doi{10.1088/0264-9381/32/21/215021}
+\bibitem[{Clarkson} {et~al.}(2011)]{Clarkson2011} Clarkson, C., Ellis, G., Larena, J., \& Umeh, O. 2011, RPPh, 74, 112901, doi:\doi{10.1088/0034-4885/74/11/112901}
+\bibitem[{Craig} \& {Smith}(2007)]{CraigSmith2007} Craig, W.~L., \& Smith, Q., eds. 2007, Einstein, Relativity and Absolute Simultaneity (London: Routledge), doi:\doi{10.4324/9780203700051}
+\bibitem[{Ehlers} {et~al.}(1968)]{EGS1968} Ehlers, J., Geren, P., \& Sachs, R.~K. 1968, JMP, 9, 1344, doi:\doi{10.1063/1.1664720}
+\bibitem[{Ellis} \& {Baldwin}(1984)]{EllisBaldwin1984} Ellis, G.~F.~R., \& Baldwin, J.~E. 1984, MNRAS, 206, 377, doi:\doi{10.1093/mnras/206.2.377}
+\bibitem[{Ellis} \& {Rothman}(2010)]{EllisRothman2010} Ellis, G.~F.~R., \& Rothman, T. 2010, IJTP, 49, 988, doi:\doi{10.1007/s10773-010-0278-5}
+\bibitem[{G{\"o}del}(1949)]{Godel1949} G{\"o}del, K. 1949, in Albert Einstein: Philosopher-Scientist, ed. P.~A.~Schilpp (Evanston: Library of Living Philosophers), 555
+\bibitem[{Green} \& {Wald}(2011)]{GreenWald2011} Green, S.~R., \& Wald, R.~M. 2011, PhRvD, 83, 084020, doi:\doi{10.1103/PhysRevD.83.084020}
+\bibitem[{Jacobson} \& {Mattingly}(2001)]{Jacobson2001} Jacobson, T., \& Mattingly, D. 2001, PhRvD, 64, 024028, doi:\doi{10.1103/PhysRevD.64.024028}
+\bibitem[{Kolb} {et~al.}(2006)]{Kolb2006} Kolb, E.~W., Matarrese, S., \& Riotto, A. 2006, NJPh, 8, 322, doi:\doi{10.1088/1367-2630/8/12/322}
+\bibitem[{Maartens}(2011)]{Maartens2011} Maartens, R. 2011, RSPTA, 369, 5115, doi:\doi{10.1098/rsta.2011.0289}
+\bibitem[{Moss} {et~al.}(2011)]{Moss2011} Moss, A., Zibin, J.~P., \& Scott, D. 2011, PhRvD, 83, 103515, doi:\doi{10.1103/PhysRevD.83.103515}
+\bibitem[{Nilsson} {et~al.}(1999)]{Nilsson1999} Nilsson, U.~S., Uggla, C., Wainwright, J., \& Lim, W.~C. 1999, ApJL, 522, L1, doi:\doi{10.1086/312209}
+\bibitem[{Peebles} \& {Wilkinson}(1968)]{PeeblesWilkinson1968} Peebles, P.~J.~E., \& Wilkinson, D.~T. 1968, PhRv, 174, 2168, doi:\doi{10.1103/PhysRev.174.2168}
+\bibitem[{Planck Collaboration} {et~al.}(2014)]{Planck2013XXVII} {Planck Collaboration}, Aghanim, N., Armitage-Caplan, C., {et~al.} 2014, A\&A, 571, A27, doi:\doi{10.1051/0004-6361/201321556}
+\bibitem[{R{\"a}s{\"a}nen}(2004)]{Rasanen2004} R{\"a}s{\"a}nen, S. 2004, JCAP, 2004, 003, doi:\doi{10.1088/1475-7516/2004/02/003}
+\bibitem[{Rees} \& {Sciama}(1968)]{Rees1968} Rees, M.~J., \& Sciama, D.~W. 1968, Natur, 217, 511, doi:\doi{10.1038/217511a0}
+\bibitem[{Scrimgeour} {et~al.}(2012)]{Scrimgeour2012} Scrimgeour, M.~I., Davis, T., Blake, C., {et~al.} 2012, MNRAS, 425, 116, doi:\doi{10.1111/j.1365-2966.2012.21402.x}
+\bibitem[{Secrest} {et~al.}(2021)]{Secrest2021} Secrest, N.~J., von Hausegger, S., Rameez, M., {et~al.} 2021, ApJL, 908, L51, doi:\doi{10.3847/2041-8213/abdd40}
+\bibitem[{Secrest} {et~al.}(2025)]{Secrest2025} Secrest, N.~J., von Hausegger, S., Rameez, M., Mohayaee, R., \& Sarkar, S. 2025, RvMP, 97, 041001, doi:\doi{10.1103/9ygx-z2yq}
+\bibitem[{Smoot} {et~al.}(1977)]{Smoot1977} Smoot, G.~F., Gorenstein, M.~V., \& Muller, R.~A. 1977, PhRvL, 39, 898, doi:\doi{10.1103/PhysRevLett.39.898}
+\bibitem[{Stoeger} {et~al.}(1995)]{Stoeger1995} Stoeger, W.~R., Maartens, R., \& Ellis, G.~F.~R. 1995, ApJ, 443, 1, doi:\doi{10.1086/175496}
+\bibitem[{Weyl}(1923)]{Weyl1923} Weyl, H. 1923, PhyZ, 24, 230; English translation 2009, GReGr, 41, 1661, doi:\doi{10.1007/s10714-009-0826-6}
+\bibitem[{Zhang} \& {Stebbins}(2011)]{ZhangStebbins2011} Zhang, P., \& Stebbins, A. 2011, PhRvL, 107, 041301, doi:\doi{10.1103/PhysRevLett.107.041301}
+```
