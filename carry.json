@@ -153,35 +153,6 @@
    }
   }
  },
- "claude/shadow-of-existence-setup-wgcmvt": {
-  "suite": {
-   "receipts/L_probability/S47_the_cheap_tail_closes_whole_and_nine_of_its_fourteen_rows_needed_an_instrument_or_a_normalised_reader_rather_than_a_widening.py": {
-    "gates": [],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40219078532",
-    "since": "02c6bd96ced1a9f2967054c824692452b531ff3c"
-   },
-   "receipts/P10_canonical_time/P10_the_complete_second_orders_double_logarithm_is_not_covariant_up_to_the_scale_factors_equation_so_the_invariant_is_a_stated_limit.py": {
-    "gates": [],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40187481980",
-    "since": "6b035fa9067f5592ec93cdd3b99b449a6dfcef24"
-   },
-   "receipts/P10_canonical_time/P10_the_cubic_over_three_different_levels_is_derived_in_closed_form_and_its_low_level_region_carries_a_nested_logarithm_so_the_bare_sum_is_double_logarithmic.py": {
-    "gates": [],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40187481980",
-    "since": "6b035fa9067f5592ec93cdd3b99b449a6dfcef24"
-   },
-   "receipts/P15_CR_cosmology/P15_the_carrier_separation_on_L_p_is_the_combs_peak_count_not_the_carrier_and_the_closure_has_no_number_because_the_degeneracy_is_sampling_invariant.py": {
-    "gates": [],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40219078532",
-    "since": "02c6bd96ced1a9f2967054c824692452b531ff3c"
-   },
-   "receipts/P15_CR_cosmology/P15_the_four_dimensional_treatment_keeps_the_economy_and_keeps_more_of_it_but_in_the_sphere_label_so_the_bridge_exists_only_on_the_squashing_free_sector.py": {
-    "gates": [],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40219078532",
-    "since": "02c6bd96ced1a9f2967054c824692452b531ff3c"
-   }
-  }
- },
  "claude/youthful-darwin-xvkwh7": {
   "suite": {
    "corpus/check_formalisation_join.py": {
