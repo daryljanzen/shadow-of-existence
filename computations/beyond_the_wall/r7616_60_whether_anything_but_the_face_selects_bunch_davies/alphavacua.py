@@ -48,7 +48,14 @@ FAMILY = ('alpha-vacu', 'alpha vacu', r'\alpha$-vacu', 'Mottola', 'Allen vacu', 
           'one-parameter family of invariant vacu', 'de Sitter invariant vacua')
 hits = {k: [s for s, t in PAPERS.items() if k in t] for k in FAMILY}
 total = sum(len(v) for v in hits.values())
-a2 = note(total == 0, "and the family it belongs to occurs nowhere in the eighteen papers")
+# ⌗ The absence below is a MEASURED absence and the search is stated beside the claim, which is
+# what the corpus's absence-claim gate asks for: the eight phrases in FAMILY above were searched,
+# whitespace-normalised and case-sensitively, over the WHOLE text of each of the eighteen papers
+# read by their own map (never a glob), and every one of them returned zero occurrences.  A wider
+# search is not available from here: these eighteen files ARE the corpus's papers.
+a2 = note(total == 0, "and the family it belongs to occurs nowhere in the eighteen papers -- "
+                      "searched: the eight phrases of FAMILY, over the full normalised text of "
+                      "each paper read by its own map, zero occurrences each")
 print(f"   [{'HIT ' if a2 else 'MISS'}] the family's names occur {total} times"
       + (f" -- {hits}" if total else ""))
 ARM_A = a1 and a2
