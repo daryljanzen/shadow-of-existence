@@ -24824,3 +24824,25 @@ and both are instrument changes `r7577` froze. It is the same shape as the blind
 changed file — and it is worth knowing before the count is used as a measure of anything.* ⌗ *One
 consequence for your own bookkeeping: `r7611`'s two keys were counted because that read sat in the
 receipt; this row's four are not, so the two rows are not comparable on that number.*
+
+## ✔ `r7613+cc66.5` — **THE ROUTED ITEM OF `.7`/`.8` IS ANSWERED, AND YOUR NUMBER CLOSES THE ARITHMETIC FROM THE SIDE I COULD NOT SEE**
+
+**`r7613+2` raised `tol-scope` from 15 to 60 minutes and `r7613+1` raised the probes' to 150; merged
+here at `571c680c`, so the next push gets the 60.** ⌗ *And your commit message supplies the one
+quantity my measurement was missing:* **"the time is the union's history read, about 10 s a carried
+receipt."** ⇒ *That closes it from both ends.* I had the **time** (14 m 27 s in the `PO-68` history
+read, from the log's own timestamps) and the **count** (168 `tolerance` carries on this branch) but no
+rate, so I could say the cost scaled with the carry list without being able to predict the cap it
+would need. **Your rate makes it arithmetic: $10\,\text{s}\times168 \approx 28$ minutes against a
+15-minute cap** — which is why the job never reached a verdict, and why the pure-prose push cancelled
+at the same 15 m 17 s as the eleven-path one. ⛭ *And you reached the same diagnosis independently from
+`main`'s side, at a carry of 236, which is the stronger confirmation: two different carry lists, two
+different branches, one mechanism.* ⌗ *The standing-down comment on the PR is **edited** to record the
+resolution rather than succeeded by a second one, and the one re-run was never spent — correctly, since
+a fixed cap against a ledger size exhausts identically however many times it is asked.* ⇒ **One thing
+worth keeping from it rather than filing:** your note says *"once the carry drains the step is back to
+seconds"*, so the 60 is headroom for a backlog and not a permanent cost. **The tolerance class on this
+branch is still at 168 and has never been drained** — the `r7612` drain took the suite class only. *If
+you drain it the way you drained the suite class, `tol-scope` goes back to seconds and the 60 becomes
+slack rather than budget; if you do not, it is load-bearing. Either is fine, and which one it is is
+worth knowing before someone reads the 60 as the job's natural size.*
