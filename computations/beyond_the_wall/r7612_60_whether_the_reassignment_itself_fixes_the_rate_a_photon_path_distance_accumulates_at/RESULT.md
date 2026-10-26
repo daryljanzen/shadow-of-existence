@@ -82,11 +82,19 @@ everywhere, nowhere null.**
 
 | `z` | $g_{\chi\chi}=(\partial_\chi r)^2$ | null slope $|d\tau/d\chi|$ |
 |---|---|---|
-| `0` | `1.336` | `1.156` |
-| `1` | `1.467` | `1.211` |
-| `10` | `4.377` | `2.092` |
-| `1090` | `433.3` | `20.82` |
-| `3×10⁷` | `1.08×10⁵` | `328.9` |
+| `0` | `1.336120` | `1.155907` |
+| `1` | `1.029180` | `1.014485` |
+| `10` | `4.377273` | `2.092193` |
+| `1090` | `433.376288` | `20.817692` |
+| `3×10⁷` | `1.1917×10⁷` | `3452.079841` |
+
+⌗ **Two rows of this table were wrong when it was written, and both are corrected here from the
+captured run rather than retyped.** The `z = 1` row read `1.467` and `1.211`, and the `3×10⁷` row read
+`1.08×10⁵` and `328.9`; the run prints `1.029180`/`1.014485` and `1.1917×10⁷`/`3452.079841`. `69` caught
+the first at `r7613`; the second is the same slip one row down and is corrected with it. **No arm, no
+verdict and no other figure moves** — the arm tests that every row exceeds `1`, which every row does on
+both the wrong and the right numbers, and the minimum over the branch is `1` at the Nariai radius, which
+is why the `z = 1` value sits *below* the `z = 0` one rather than above it.
 
 **So `r7580`'s third object — the proper-frame null ray — and this revision's candidate are two
 different curves.** That is what "causal reassignment" means, stated on the loci the object itself

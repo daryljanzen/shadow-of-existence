@@ -1,0 +1,129 @@
+==============================================================================
+Ⓐ  THE BEND IS THE PAPERS', LOCATED
+==============================================================================
+   [HIT ] P8: f = 1 - 2m(r)/r - Lambda r^2/3, m(r) a MASS FUNCTION
+   [HIT ] P8: a straight cut has m' = 0; the bend is m' != 0
+   [HIT ] P8 prop:bend: rho(r) = m'(r) / 4 pi r^2
+   [HIT ] P15: radiation, requiring m'(r) != 0, is a BEND of the cut
+   ⇒ Ⓐ HIT
+
+==============================================================================
+THE UNBENT CHART AND THE BACKGROUND, READ FROM r7580 BY PATH
+==============================================================================
+   H0 = 68.6   Omega_m = 0.297300   Omega_r = 8.818604e-05   r_0 = 5051.488 Mpc   z_rec = 1089.9
+   r7580's two distances: stacking 14011.456 Mpc, leaf 13941.629 Mpc
+
+==============================================================================
+Ⓓ  THE BEND'S RATE TERM: THE REGISTERED CLOSED FORM AGAINST THE QUADRATURE
+==============================================================================
+            z      H^2 bent (quad)    H^2 bent (closed)        rel  (bend term)/(leaf term)
+          0.0          4705.960000          4705.960000   2.22e-16                 0.000000
+          1.0         14489.573356         14489.573356   1.11e-16                -1.500000
+         10.0       1848913.947640       1848913.947640   0.00e+00                -2.727273
+        100.0    1313206321.272399    1313206321.272400   3.33e-16                -2.970297
+        500.0   97656343887.321945   97656343887.321960   1.11e-16                -2.994012
+       1089.9   54729118169.650452   54729118169.650337   2.00e-15                -2.997250
+   the ratio at z = 1e6: -2.99999700   (registered: tends to -3)
+   ⇒ Ⓓ HIT: worst relative difference 2.00e-15
+     So the bend does NOT restore the leaf's +Omega_r(1+z)^4: it SUBTRACTS a term of the same
+     high-z scaling and three times the size.
+
+==============================================================================
+Ⓗ  THE ZERO THE REGISTERED DERIVATION PREDICTS, AND WHERE IT LIES
+==============================================================================
+   real zero of H^2_bent: z = 1123.760571
+   recombination sits at z = 1089.9, so the zero is ABOVE it by 33.86 in z
+   the naive estimate Omega_m/(3 Omega_r) - 1 = 1122.76
+   ⇒ Ⓗ HIT: beyond that redshift the bent cut carries no real rate.
+
+==============================================================================
+Ⓑ  (1) DOES r(tau + chi) SURVIVE THE BEND?  THE TRANSLATE TEST
+==============================================================================
+   the bent radial equation at E = 1 is dr/dtau = r H(r)/c, whose right-hand side depends on r
+   ALONE -- so its solutions should be time-translates of one another.  Measured, not assumed:
+   solution A from r = 12.597227 Mpc, solution B from r = 3723.896557 Mpc (A's value at 3000)
+     A(3000 +   500.0) =    4245.622865   B(  500.0) =    4245.622865   rel 7.427e-13
+     A(3000 +  1500.0) =    5372.367383   B( 1500.0) =    5372.367383   rel 7.878e-12
+     A(3000 +  3000.0) =    7386.310682   B( 3000.0) =    7386.310682   rel 2.104e-11
+     A(3000 +  5000.0) =   11001.535291   B( 5000.0) =   11001.535291   rel 1.389e-11
+     A(3000 +  6000.0) =   13367.202779   B( 6000.0) =   13367.202780   rel 1.434e-11
+     (tau,chi) = ( 1000.0,  500.0)  d_chi r = 1.0426937636  d_tau r = 1.0426937636  rel 0.00e+00
+     (tau,chi) = ( 4000.0,  200.0)  d_chi r = 1.1519286805  d_tau r = 1.1519286805  rel 0.00e+00
+     (tau,chi) = ( 7000.0, 1500.0)  d_chi r = 2.3619338788  d_tau r = 2.3619338788  rel 0.00e+00
+   ⇒ Ⓑ HIT: worst translate mismatch 2.10e-11, worst derivative mismatch 0.00e+00
+
+==============================================================================
+Ⓒ  THE CLAUSE r7613 SET: DOES THE UNIT COSMIC-TIME RATE SURVIVE?
+==============================================================================
+   d(tilde tau)/d chi = 1, d(tilde tau)/d tau = 1   (exact, symbolic)
+   ⇒ Ⓒ HIT: with Ⓑ, the sum-dependence and the unit rate both survive,
+     so the clause answers YES and r7612's derivation is not an artefact of the vacuum chart.
+
+==============================================================================
+Ⓔ  (2) THE LENGTH ALONG THE PHOTON FAMILY ON THE BENT CUT
+==============================================================================
+   r_0 * int dtilde tau / r on the bent cut = int c dz / H_bent = 14397.425 Mpc
+   against the stacking distance             14011.456 Mpc   (+2.75 %)
+   against the leaf distance                 13941.629 Mpc   (+3.27 %)
+   ⇒ Ⓔ HIT: registered as longer than the stacking distance and not
+     between the two.  The bend lowers the rate, so it lengthens the distance -- away from the
+     leaf distance the sky prefers, not toward it.
+
+==============================================================================
+Ⓕ  HOW MUCH THE ONE CONVENTION CARRIES
+==============================================================================
+   anchored at the present radius      : 14397.425 Mpc
+   anchored at recombination instead   : 10480.861 Mpc
+   the two differ by                     3916.564 Mpc
+   the stacking-to-leaf gap is           69.828 Mpc
+   ⇒ Ⓕ MISS -- registered as a HIT and it is a MISS: moving the anchor
+     moves the answer by fifty-six times the gap the order asks me to compare against.
+
+   ⌗ Ⓕ′ -- THE CORRECTED ARM, ADDED AFTER THE REGISTRATION CLOSED AND MARKED AS SUCH.
+     Ⓕ tested a freedom the data do not leave free.  Moving the anchor shifts mu by a CONSTANT,
+     so it shifts the rate by c^2 2 Delta mu / r^3 -- a pure matter term, (1+z)^3, with nothing
+     in the radiation term.  And the present-day rate is a measurement: H(0) = H_0 forces
+     mu(r_0) = G M /c^2 whatever radius the quadrature starts from.  Measured:
+       anchored at the present radius            : H(0) = 68.600000, D = 14397.424755 Mpc   (rel to the first: 0.00e+00)
+       anchored at recombination                 : H(0) = 68.600000, D = 14397.424755 Mpc   (rel to the first: 0.00e+00)
+       anchored at a tenth of the present radius : H(0) = 68.600000, D = 14397.424755 Mpc   (rel to the first: 0.00e+00)
+     ⇒ Ⓕ′ HIT: once the rate is normalised at the present, the anchor is not a convention at
+       all and the bent-cut length is one number.  So Ⓕ's MISS is a defect in MY registered
+       arm, not a limit on the comparison -- and it is reported that way rather than smoothed.
+
+==============================================================================
+Ⓖ  THE CONTROL THE ORDER NAMES: m' = 0 MUST RETURN r7612'S FIGURES
+==============================================================================
+   with the bend switched off, the same machinery returns 14011.456369 Mpc
+   r7580's stacking distance is                            14011.456369 Mpc
+   relative difference 0.000e+00
+     z =      0.0   H_unbent =    68.600000   H_stack =    68.600000   rel 0.00e+00
+     z =      1.0   H_unbent =   120.414008   H_stack =   120.414008   rel 0.00e+00
+     z =   1089.9   H_unbent = 1347717.858897   H_stack = 1347717.858897   rel 2.22e-16
+   ⇒ Ⓖ HIT
+
+==============================================================================
+VERDICT
+==============================================================================
+   A: HIT
+   B: HIT
+   C: HIT
+   D: HIT
+   E: HIT
+   F: MISS
+   G: HIT
+   H: HIT
+
+   (1) YES: the sum-dependence and the unit cosmic-time rate SURVIVE the bend, and the reason
+       is that the radial equation stays autonomous in r for every mass function.  So the
+       clause r7613 set answers in the affirmative and r7612's derivation is not an artefact
+       of the vacuum chart.
+   (2) AND THE BEND DOES NOT DELIVER THE LEAF-RATE DISTANCE.  It subtracts three times the
+       leaf's radiation term rather than adding it, so the bent cut's length is LONGER than
+       the stacking distance, not between the two -- and the bent rate has a real zero just
+       above recombination, beyond which that cut carries no rate at all.
+   ⇒ So the sky's preference for the leaf-rate distance is NOT what putting radiation into
+     the cut gives, and the row's first branch holds: the deficit stands as the derived
+     spectrum confronted with the sky.
+
+   16 checks, 1 failures.  FAILED: ['Ⓕ the convention moves the answer by less than the stacking-to-leaf gap']
