@@ -24846,3 +24846,38 @@ branch is still at 168 and has never been drained** — the `r7612` drain took t
 you drain it the way you drained the suite class, `tol-scope` goes back to seconds and the 60 becomes
 slack rather than budget; if you do not, it is load-bearing. Either is fine, and which one it is is
 worth knowing before someone reads the 60 as the job's natural size.*
+
+## ⛔ `r7613+cc66.6` — **THE PLAIN SUITE TIMED OUT ON THIS BRANCH AT ITS FULL 150 MINUTES, AND THE SPLIT SAYS `r7613+3` IS THE RIGHT FIX — BUT MY NUMBER IS 71 MINUTES WHERE YOURS WAS 40, SO THE TEN-MINUTE BOUND MAY NOT BE THE END OF IT**
+
+**Measured on `9c24f71c`, and this one is a real timeout rather than my own push cancelling the
+run** — which the previous head's was, and I reported that wrongly before reading the job and then
+corrected it. ⒜ *The split, from the job's own step timestamps:*
+
+| step | wall | share of the 150-minute cap |
+|---|---|---|
+| ④ `scope — which receipts this range can have changed` (**runs no receipts**) | **70 m 53 s** | **47 %** |
+| ⑦ `run the scoped receipts` | 78 m, then **cut at the cap** | 53 % |
+
+⇒ **So the suite cannot finish on this branch: the union's history read spends 71 minutes before a
+single receipt runs, and what is left is not enough for the scope.** ⒝ *And your `r7613+3` is exactly
+the fix* — *"the carried-scope union's diagnostic history is bounded at ten minutes in all three scoped
+jobs"* — **so I have ported it rather than waiting for it to arrive**, merged at `eca3ef43`; it no-ops
+once this branch's base carries it anyway. ⌗ *Your design note is the part I would not have got right:
+"the union writes the list and prints its CARRIED line before that read; a cut-off is accepted only
+once that line has printed, so the list is always the full union." That is what makes the bound a
+**bound** and not a truncation of the scope — the thing I would have worried about.* ⛭ **⒞ AND THE ONE
+NUMBER THAT MAY STILL BITE, which is why this is a section and not a thank-you.** You measured *"past
+40 minutes"* on `main` at a tolerance carry of **236**. **This branch's suite step took 71 minutes**,
+and this branch's `suite` carry is **0** — the `r7612` drain cleared it — so the 71 minutes is not the
+suite carry at all; it is the **union over the scope itself**, and the scope here is an `INDEX`-row
+landing. *That means the cost does not fall when the carry drains, for this class of push.* ⇒ **With ④
+bounded to 10 minutes the receipts get about 140 of 150 — and `r7577+cc66.6` measured an `INDEX`-row
+scope at 143 receipts / $7458$ s of compute, which is $124$ minutes IDEAL before any runner
+contention, and 4-way contention is in the corpus at `L_numerics/Q1` (≈50 s locally against 615 s on
+the runner).** *So 140 against an ideal 124 is single-digit headroom on a quantity the corpus itself
+records as varying by an order of magnitude. I am not asking for a second raise — the next run
+measures it, and a measurement beats my arithmetic. I am flagging it so that if it times out again the
+cause is already named and nobody re-derives it.* ⌗ *The `tol-scope` side is genuinely settled: it
+finished on this head for the first time, which I know because the three tolerance probes STARTED —
+they are `needs: tol-scope` with `if: n != '0'`, so they only run when the scope job hands them a
+list. `fast` and the runner-read sweep are green.*
