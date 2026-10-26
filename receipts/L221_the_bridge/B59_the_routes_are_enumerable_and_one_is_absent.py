@@ -127,13 +127,19 @@ def main():
         #   that the triple from the leaf's pieces is closed over the one-dimensional leaf (cc66's r7613+cc66).
         #   r7615 (69): a sentence naming the triple from the leaf's pieces CLOSED over the one-dimensional leaf
         #   (cc66's r7613+cc66) is set aside the same way: it is not the route taken.
+        #   r7619 (69): and cc66's r7615+cc66 EXAMINED the route over the face (a field strength reached, no coupling
+        #   fixed), which P7, P13 and P18 now state.  So the finding this receipt carries forward is that the route
+        #   appears in the papers ONLY as those computed results or as unexamined: no Connes anywhere, and every
+        #   sentence naming the triple or its inner fluctuations naming one of those states.
         _flat59 = ' '.join(t.split())
-        built = 'Connes' in t or 'inner fluctuation' in t
-        named = [x for x in re.split(r'(?<=[.;])\s+', _flat59) if 'spectral triple' in x]
-        if built or any(not re.search(r'unexamined|not yet examined|neither yet examined|over the leaf|one-dimensional leaf', x) for x in named):
+        _ok59 = r'unexamined|not yet examined|neither yet examined|over the leaf|one-dimensional leaf|over the face|face itself|almost-commutative'
+        sents = re.split(r'(?<=[.;])\s+', _flat59)
+        named = [x for x in sents if 'spectral triple' in x or 'inner fluctuation' in x]
+        if 'Connes' in t or any(not re.search(_ok59, x) for x in named):
             absent.append(os.path.basename(f))
-    check(f'⛭⛭⛭ ⓶ and the SPECTRAL-TRIPLE route is BUILT in {len(absent)} paper(s) -- ** named only as '
-          'unexamined, and taken nowhere in the corpus **', len(absent) == 0)
+    check(f'⛭⛭⛭ ⓶ and the SPECTRAL-TRIPLE route is stated otherwise in {len(absent)} paper(s) -- ** the papers carry it '
+          'only as computed (closed over the leaf; over the face a field strength with no coupling fixed) or as '
+          'unexamined **', len(absent) == 0)
     # ** the amendment is CHECKED rather than trusted: the term must still BE in a generated
     # ** appendix, or the exclusion above is decoration and would hide a real future mention. **
     _gen = [os.path.basename(f) for f in glob.glob(os.path.join(ROOT, 'corpus',

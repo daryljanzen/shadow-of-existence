@@ -6990,6 +6990,11 @@ EST = {
         'standard spectral theory on a fixed background with nothing the construction adds. '
         ),
     'PO-94': ('whether the substrates two real forms are physics actual quantum and gauge sectors, or a structural rhyme with them', 1, 1, 3, None,
+        'r7619 LANDS r7615+cc66 and r7616 (60): over the FACE the almost-commutative triple reaches a field strength '
+        '(su(3) one-forms with non-vanishing curvature) and the construction fixes NO coupling (its one dimensionless '
+        'datum, beta/alpha = 2 pi, is a ratio of lengths); the gauge half narrows to whether anything fixes that coupling, '
+        'the composite route unexamined. QUANTUM HALF: a fourth empty slot, the vacuum state (Bunch-Davies selected '
+        'also by antipodal regularity, Hadamard and the flat limit); the terminal clause not fired. '
         'r7615 LANDS r7613+cc66: a spectral triple from the matter sector\'s pieces is CLOSED (they live over the '
         'one-dimensional leaf, which carries no two-form); a triple over the face and a composite connection are the '
         'routes left unexamined. '
