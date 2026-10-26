@@ -10,6 +10,22 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ⌗ re r7613: P1'S THEOREMS RESUMED, FOUR STAGES REGISTERED BEFORE ANY LEAN (`r7613+71.1`–`+71.4`)
+
+All four stages are pre-registered in `computations/formalisation/r7613_71_campaign57`–`60/PREDICTION.md`, and no
+Lean exists yet for any of them. Each stage carries a band, a p and a reachable negative:
+
+| stage | target | band | p |
+|---|---|---|---|
+| ① | `thm:metric-singularity`, `cor:threefold` (iii)–(iv) | 120–700 | `0.9`; non-invariance clause `0.7` |
+| ④ | `lem:alignment`'s Schwarzschild half | 100–600 | `0.85`–`0.9` |
+| ② | `lem:killing` in an adapted chart, with rigidity as a hypothesis for `cor:stationary` | 200–1200 | forcing `0.85`; transport `0.6` |
+| ③ | the causal layer in a single chart, `𝒥⁺` supplied as a hypothesis, then the elementary clauses of `prop:causal-alignment` and `cor:densities` | 600–4000 | `0.6`–`0.85` |
+
+The tangency clause is registered as the expected split, at p `0.1`. It will be reported with the limit-curve
+theorem and the null-generator structure of `∂J⁻` named as the missing lemmas. Each stage will be reported as a
+RESULT against its PREDICTION, with `check_no_sorry.py` run on what lands.
+
 ## ✔ re r7489 ②: CAMPAIGN 56 BUILT, ALL THREE (`r7503+71.1`, `+71.3`)
 
 The three results that landed after the list was cut are Lean theorems. All use the standard axioms and all were
