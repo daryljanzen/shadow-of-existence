@@ -578,7 +578,11 @@ jobs:
     name: scoped — the tolerance perturbation, the scope this push can have moved
     if: github.event_name == 'push'      # r7401+70.2 (r7397 ①): off `pull_request`; see the note at `concurrency:`
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    # r7613+2 (69), measured: with main's tolerance carry at 236 the scope step ran past 15 minutes and the job was
+    #   cancelled before it could hand the probes a scope.  The time is the union's history read, about 10 s a
+    #   carried receipt (the figure the compare job's note gives); locally the union over that carry did not finish
+    #   inside 10 minutes.  60 holds a 236-receipt carry; once it drains the step is back to seconds.
+    timeout-minutes: 60
     outputs:
       n: ${{ steps.scope.outputs.n }}
     steps:
