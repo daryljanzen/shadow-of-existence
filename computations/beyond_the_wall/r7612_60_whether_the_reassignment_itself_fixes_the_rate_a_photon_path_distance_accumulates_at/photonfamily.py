@@ -103,12 +103,17 @@ ADJ = {
  # whether any clause derived the rate BEFORE this computation, and the six keys above that r7613's
  # rewrite removed are dropped rather than kept stale.
  "on the stacking rate, which the construction derives for it": ('LANDED', "P7's abstract, r7613"),
- "whether the stacking rate it derives for light's path distance holds on the cut": ('LANDED', "P7 sec:intro's cosmology summary, r7613"),
+ # r7615 (69): r7614's result (the derivation holds on any cut) written in; LANDED as above, and the three r7613
+ # keys whose sentences r7615 rewrote are dropped rather than kept stale.
+ "that derivation holds on any cut, bent by radiation or not": ('LANDED', "P6, r7615"),
+ "and the stacking rate light's path distance takes is derived on any cut": ('LANDED', "P7 sec:intro's cosmology summary, r7615"),
+ "The rate light's path distance takes is derived, and the residual is carried by it": ('LANDED', "P7 frontier:scalar, r7615"),
+ "So the comparison is between the construction's derived configuration and the sky": ('LANDED', "P15 sec:scope, r7615"),
+ "the stacking rate the reassignment derives for it on any cut": ('LANDED', "P16, r7615"),
+ "the projection's distance being on the stacking rate by derivation on any cut": ('LANDED', "P18's open-items summary, r7615"),
  "So the stacking rate the projection's distance is built on is derived, by the reassignment's own "
  "identification of the photon family": ('LANDED', "P15 sec:scope, r7613: this file's derivation, written in"),
- "the stacking rate the reassignment derives for it on the vacuum chart": ('LANDED', "P16, r7613"),
  "And the stacking rate is derived": ('LANDED', "P18 sec:frontier, r7613"),
- "whether the rate light's path distance takes, derived on the vacuum chart, holds on the cut": ('LANDED', "P18's open-items summary, r7613"),
 }
 seen, unadj, derives = {}, [], []
 for stem, s in claims:

@@ -269,10 +269,14 @@ check('** THE LEAF IS ONE-DIMENSIONAL AND CARRIES ZERO INDEPENDENT TWO-FORMS, so
 check('CONTROL: and the same counter is NON-zero at p = 2, 3 and 5, so the zero above is the leaf\'s '
       'dimension and not my counter -- the FACE, at p = 5, would carry 10',
       (dims[2], dims[3], dims[5]) == (1, 3, 10), f'p=2 -> {dims[2]}, p=3 -> {dims[3]}, p=5 -> {dims[5]}')
-check('** AND THE REPAIR IS WHERE THE CORPUS STATES AN OBSTRUCTION RATHER THAN SUPPLIES A PIECE: '
-      'building the triple over the FACE instead needs a Dirac operator there, and P13 sec:face-status '
-      'says in its own words that the round face carries NO Dirac zero modes -- read from the paper, '
-      'not recalled **', FACE in P13, 'P13 sec:face-status, read above')
+# r7615 (69): the label below drew more than the check measures.  P13's sentence is about MASSLESS content:
+#   the round face carries no Dirac zero modes.  A spectral triple needs a Dirac operator, not zero modes, and
+#   the round five-sphere carries one with a gapped spectrum, so a triple over the face is NOT closed by it.
+#   The check itself (the sentence is in P13) is unchanged; the label now says what it reads.
+check('** AND OVER THE FACE THE CORPUS STATES NO PIECE AND NO OBSTRUCTION TO ONE: P13 sec:face-status '
+      'says in its own words that the round face carries NO Dirac zero modes -- which bears on massless '
+      'content, not on whether a Dirac operator exists there, and the round face carries one -- so a '
+      'triple over the face is left open here, not closed **', FACE in P13, 'P13 sec:face-status, read above')
 
 # ============================================================ QUESTION 3 -- the order-one condition
 head('QUESTION (3) -- THE ORDER-ONE CONDITION ON THE CORPUS\'S OWN ALGEBRA')
@@ -324,8 +328,8 @@ check('** THE SPECTRAL-TRIPLE ROUTE IS CLOSED ON THE PIECES THE CORPUS SUPPLIES,
       'LOCUS: P14 gives H and D over the LEAF, the leaf is ONE-dimensional, and a one-dimensional base '
       'carries ZERO two-forms, so there is no object a field strength could be -- before the real '
       'structure is ever reached.  The kernel reading closes twice over, the fluctuations there being '
-      'identically zero and the chirality count (3,0) admitting no grading-reversing J.  Building over '
-      'the FACE instead is where P13 states no Dirac zero modes.  ** AND THIS IS NOT "NO ROUTE '
+      'identically zero and the chirality count (3,0) admitting no grading-reversing J.  A triple over '
+      'the FACE is not closed here (r7615: no zero modes is not no Dirac operator).  ** AND THIS IS NOT "NO ROUTE '
       'EXISTS": B59\'s composite/emergent route is untouched and unexamined **',
       dims[1] == 0 and _gap_corpus == 3 and _fmax < 1e-12 and FACE in P13 and LEAF in P14,
       'closed on the locus; (1) closed on the kernel reading; (3) vacuous; (4) zero')

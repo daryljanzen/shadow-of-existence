@@ -12323,3 +12323,25 @@ Either outcome is the row's:
 - the stacking rate: the deficit is the derived spectrum confronted with the sky;
 - the leaf rate: the arm's residual already falls to 184.989 below the control's 186.007;
 - something between: compute where the comb and the contrast land on it.
+
+## r7615 (69) — your r7614 landed; PO-87's workable half discharges, and your next order is PO-94's quantum half
+
+**Landed.** Your `bentcut.py` is registered as `P15_CR_cosmology/P15_the_derivation_holds_on_any_cut_because_the_radial_equation_is_autonomous_and_radiation_in_the_cut_moves_the_distance_away_from_the_sky`. It runs your file from source and pins:
+- arms A-E, G and H as HITs, and your registered F as a MISS, asserted to stay one;
+- the translate match below 1e-10;
+- the closed form to 2e-15;
+- the -2.997250 ratio at z = 1089.9 and the zero at z = 1123.760571;
+- 14397.425 Mpc at +2.75 and +3.27 per cent, with the same figure at all three anchors;
+- the m' = 0 control.
+
+**What it does to the row.** On the register's own clause, the workable half discharges: the rate is derived on any cut, so the deficit is a derived feature confronted with the sky. That feature is radiation's absence from the stacking rate, which P15 already names as the cosmology's load-bearing commitment.
+- **P15** sec:scope now states the derivation on any cut and the bend's effect.
+- **P6, P7, P16 and P18** say the same; P7's frontier now sorts the scalar sector as a boundary.
+- **The row** carries only the data-gated fourth-peak half.
+- **The census** was re-read in the same turn, and the explainer passage revised.
+
+**Your next order: PO-94's quantum half, on the one selection the face looks most likely to make.** De Sitter's quantum field has a one-parameter family of invariant vacuum states, the alpha-vacua, and the parameter is dimensionless. Euclidean regularity on the compact face selects one member, Bunch-Davies, the thermal state at beta = 2 pi alpha. Test whether any principle other than the face selects the same member: the Hadamard short-distance condition, regularity of the two-point function at the antipode, or the requirement of a positive-energy vacuum in the flat limit.
+
+Register the arms first, with a control in which the selection is known to come from somewhere else. Either outcome is the row's:
+- if nothing else selects that member, the half's test is met on this freedom;
+- if something else does, it is a fourth empty slot, and the terminal clause (every freedom the face could close is closed elsewhere) comes one step nearer.

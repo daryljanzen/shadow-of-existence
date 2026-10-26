@@ -180,9 +180,11 @@ def main():
     # r7613 (69): P7, P13 and P18 now NAME the spectral triple as one of the two routes the gauge half has
     #   not examined (cc66's r7611+cc66).  A sentence that names the route unexamined does not consider
     #   it, so such sentences are set aside here and every OTHER occurrence of the vocabulary still counts.
+    #   r7615 (69): and a sentence naming the triple CLOSED over the one-dimensional leaf (cc66's r7613+cc66) is set aside
+    #   the same way -- it is the leaf's pieces, not the route over the face this receipt is about.
     def _considered(_t, _k):
         _flat = ' '.join(_t.split())
-        return any(_k.lower() in _x.lower() and not re.search(r'unexamined|not yet examined|neither yet examined', _x)
+        return any(_k.lower() in _x.lower() and not re.search(r'unexamined|not yet examined|neither yet examined|over the leaf|one-dimensional leaf', _x)
                    for _x in re.split(r'(?<=[.;])\s+', _flat))
     _spec_hits = {_k: sorted(_n for _n, _t in _CORPUS.items() if _considered(_t, _k))
                   for _k in _SPECTRAL}

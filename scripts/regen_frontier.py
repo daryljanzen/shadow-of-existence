@@ -255,6 +255,10 @@ EST = {
         'temperature -- a correct strike with the item lying beyond it. '),
     'PO-87': ('a mechanism for the computed spectrum\'s shape deficit, its two halves reported apart',
         2, 2, 3, 'a datum that discriminates the models at the fourth peak',
+        'r7615 LANDS r7614 (60): the derivation HOLDS ON ANY CUT (the radial equation at E = 1 is autonomous in r), '
+        'and radiation put into the cut as its bend subtracts three times the leaf\'s radiation term, lengthening the '
+        'distance to 14397.425 Mpc, away from the sky. So the WORKABLE HALF DISCHARGES on its own clause: the deficit is '
+        'a derived feature (radiation absent from the stacking rate) confronted with the sky; the fourth-peak half stays data-gated. '
         'r7613 LANDS r7612 (60): the REASSIGNMENT DERIVES the stacking-rate distance. It sends the photon bundle to the '
         'constant-tau family, which crosses the leaves at the matter congruence\'s own unit cosmic-time rate (step v), so '
         'a length along it is a comoving separation read across leaves, the rule\'s first slot: the layer-time integral, '
@@ -6986,6 +6990,9 @@ EST = {
         'standard spectral theory on a fixed background with nothing the construction adds. '
         ),
     'PO-94': ('whether the substrates two real forms are physics actual quantum and gauge sectors, or a structural rhyme with them', 1, 1, 3, None,
+        'r7615 LANDS r7613+cc66: a spectral triple from the matter sector\'s pieces is CLOSED (they live over the '
+        'one-dimensional leaf, which carries no two-form); a triple over the face and a composite connection are the '
+        'routes left unexamined. '
         'r7613 LANDS r7611+cc66: the GAUGE HALF\'s three routes outside isometry are closed -- a dynamics-induced '
         'connection by reality (3 components, su(3) needs 8), the thermal state by dimension (one number, no two-form), '
         'the walls by rigidity (H^1 = 0 on the order-27 group); the composite and spectral-triple routes are unexamined. '

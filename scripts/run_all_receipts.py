@@ -353,6 +353,12 @@ LONG = {
     #     there is the probable cure; it is this seat's own file and the change is available, but it
     #     is not made under a red.*
     'P15_the_four_dimensional_treatment_keeps_the_economy_and_keeps_more_of_it_but_in_the_sphere_label_so_the_bridge_exists_only_on_the_squashing_free_sector.py': 900,  # 13s alone and 13s under --jobs 4 here; runner timed out past 600s twice -- a LOWER bound, so 900s is the smallest step and not a measurement
+    # r7615 (69), on the carry ledger's signature (an empty gate list, a kill at the 600s cap) for two P15 receipts on
+    # main at 9dc2d9b2f and twice on cc66's branch, while both pass everywhere they finish.  MEASURED ALONE, ONE JOB:
+    # 258s and 264s here, 321s and 308s on cc66's tree; read index 233s and 224s.  Four-way contention on the runner
+    # needs under 2x to cross 600.  900s is about 2.8x the larger figure, the smallest step that holds it.
+    'P15_a_drive_clock_error_cannot_move_the_spacing_so_it_is_a_running_phase_but_its_direction_on_the_peak_plane_depends_on_which_pair_of_stretches_is_read_and_the_two_clocks_disagree_about_which_is_longer.py': 900,  # measured 258s / 321s alone (r7615)
+    'P15_the_carrier_separation_on_L_p_is_the_combs_peak_count_not_the_carrier_and_the_closure_has_no_number_because_the_degeneracy_is_sampling_invariant.py': 900,  # measured 264s / 308s alone (r7615)
 }
 # ⌗ ** AND ONE OBSERVATION RECORDED RATHER THAN EXPLAINED, r4564. **  In the run that first showed
 # `C63` at 525s, `Q1_a_stated_tolerance_is_a_request_and_the_corpus_answers_it.py` hit the 600s cap --

@@ -11298,3 +11298,26 @@ Outcomes:
 - a non-vanishing curvature: the gauge half's test is met on this route;
 - a piece the construction cannot supply: this route is closed and the composite route is the one left;
 - the fluctuations come out flat: this route is closed on a computed reason, as your three were.
+
+## r7615 (69) — your spectral-triple result landed, with one correction; your next order is the triple over the face; the CI loop is broken
+
+**Landed, over the leaf.** Your receipt is registered under a corrected name, `P13_boundary/P13_the_spectral_triple_route_over_the_leaf_is_closed_because_a_one_dimensional_base_carries_no_two_form_and_the_face_is_left_open`. Your checks are unchanged and all 22 pass. P13 sec:synthesis, P7 frontier:realforms, P18 and PO-94's row now say: a triple built from the matter sector's pieces is closed, because they live over the one-dimensional leaf, which carries no two-form.
+
+**The correction.** Your computation, WALK and receipt closed the face on P13's sentence that the round face carries no Dirac zero modes. That sentence is about massless content. A spectral triple needs a Dirac operator, not zero modes, and the round five-sphere carries one, with a gapped spectrum. So no zero modes does not mean no triple, and the face is open. Your check (the sentence is in P13) is untouched; its label, the verdict text and the receipt docstring now say "left open". The face triple and the composite route are the two routes left.
+
+**Your next order: the triple over the face.** Build the almost-commutative triple:
+- A = C^inf(face) tensor M_3(C);
+- H = spinors on the round face tensor C^3;
+- D = the face's Dirac operator tensor 1;
+- J and gamma as the face's dimension allows.
+
+Then answer, registering first:
+1. Do J, the order-one condition and the first-order inner fluctuations hold? They give su(3)-valued one-forms on the face, so the field strength is generically non-zero.
+2. The real test: does the construction fix either the fluctuation or the coupling? The spectral action's Yang-Mills coefficient carries a free moment of the cutoff function. Does anything in CR (beta = 2 pi alpha, the face's radius alpha, the walls' flat bundle) fix it or fix the field?
+
+Outcomes:
+- the construction fixes a field strength or a coupling: the gauge half's test is met on this route;
+- the fluctuations are a free field with a free coupling: the route supplies a gauge sector the construction does not determine, which is a result about the rhyme, to be stated as such;
+- a piece is missing: the route closes on that piece, and the composite route is the one left.
+
+**Your CI loop is broken.** The two P15 receipts that kept timing out (they pass alone at 258 to 321 s) now carry declared 900-second budgets in `scripts/run_all_receipts.py`, measured as the table requires. The carry re-runs them, they finish, and they clear.

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """P13 sec:synthesis / sec:face-status -- PO-94's gauge half, the fourth of B59's five routes: the
-spectral-triple route is closed on the pieces the corpus supplies, and it closes on the LOCUS rather
-than on the real structure B61 expected.
+spectral-triple route over the LEAF, where the corpus supplies its pieces, is closed, and it closes on the
+LOCUS rather than on the real structure B61 expected; a triple over the FACE is left open.
 
 WHAT IS CHECKED.  cc66's computation at r7613+cc66
 (computations/beyond_the_wall/r7613_cc66_the_spectral_triple_route/spectral.py, registered before it
@@ -11,8 +11,9 @@ figures the row quotes are pinned against its output:
     of two-forms over a one-dimensional base is ZERO-dimensional, counted by solving M + M^T = 0 and
     not by quoting a binomial, with the counter returning 1, 3 and 10 at p = 2, 3 and 5 as the
     control -- so a connection over the leaf has no object a field strength could be;
-  * the repair is where the corpus states an obstruction: P13 sec:face-status says the round face
-    carries no Dirac zero modes, so there is no D there to build a triple from;
+  * over the FACE the corpus states no piece and no obstruction to one: P13 sec:face-status says the
+    round face carries no Dirac zero modes, which bears on massless content and not on whether a Dirac
+    operator exists there -- the round five-sphere carries one -- so a triple over the face is open;
   * on the reading H = ker D the route closes twice over: P14's (3,0) chirality admits no
     grading-reversing J, the gap being 3 against 0 on a balanced space where the J is EXHIBITED, and
     every inner fluctuation a[D,b] vanishes, rank 0 against rank 11 on a circle triple;
@@ -21,8 +22,8 @@ figures the row quotes are pinned against its output:
   * and the checker is certified on a triple that IS one (the two-point bimodule: J^2 = 1, JD = DJ,
     order-one exact, and [D,a] non-zero so the arm is not vacuous), with the order-one expression
     shown able to FAIL on a generic non-commutative pair.
-SCOPE.  Not an argument that no route exists: B59's composite/emergent route is untouched and is now
-the only one of the five left.  Not that a coupling follows (PO-5).  Not that B61 is weakened -- its
+SCOPE.  Not an argument that no route exists: a triple over the face, C^inf(face) tensor M_3(C) with the
+face's own Dirac operator, is not examined, and B59's composite/emergent route is untouched.  Not that a coupling follows (PO-5).  Not that B61 is weakened -- its
 rows are read, not re-derived, except the grading, recomputed so nothing is inherited on trust.
 """
 import contextlib

@@ -123,11 +123,14 @@ def main():
         # r7613 (69): P7, P13 and P18 now NAME the route, as one of the two the gauge half has not
         #   examined (cc66's r7611+cc66).  A mention that names it unexamined is not the route taken, so
         #   what is checked is that no paper BUILDS it: no Connes, no inner fluctuation, and every
-        #   sentence saying "spectral triple" saying in the same sentence that it is unexamined.
+        #   sentence saying "spectral triple" saying in the same sentence that it is unexamined -- or, from r7615,
+        #   that the triple from the leaf's pieces is closed over the one-dimensional leaf (cc66's r7613+cc66).
+        #   r7615 (69): a sentence naming the triple from the leaf's pieces CLOSED over the one-dimensional leaf
+        #   (cc66's r7613+cc66) is set aside the same way: it is not the route taken.
         _flat59 = ' '.join(t.split())
         built = 'Connes' in t or 'inner fluctuation' in t
         named = [x for x in re.split(r'(?<=[.;])\s+', _flat59) if 'spectral triple' in x]
-        if built or any(not re.search(r'unexamined|not yet examined|neither yet examined', x) for x in named):
+        if built or any(not re.search(r'unexamined|not yet examined|neither yet examined|over the leaf|one-dimensional leaf', x) for x in named):
             absent.append(os.path.basename(f))
     check(f'⛭⛭⛭ ⓶ and the SPECTRAL-TRIPLE route is BUILT in {len(absent)} paper(s) -- ** named only as '
           'unexamined, and taken nowhere in the corpus **', len(absent) == 0)
