@@ -215,6 +215,86 @@ print()
 print('  ⇒ THE REPAIR IS THE ONE CONTROL 1 TEACHES: take H\'s finite factor to be the bimodule')
 print('    M_3(C) rather than C^3.  The route SURVIVES this; it is the order\'s H that does not.')
 
+# ================================================ QUESTION 1b -- order-one on the REPAIRED triple
+head('QUESTION (1b) -- THE ORDER-ONE CONDITION, ON THE TRIPLE THE REPAIR GIVES')
+print("  PREDICTION.md asked this of the order's H, where (1a) has just shown there is no J to write")
+print("  the condition with.  ** Leaving it there would be deferring a registered question that is")
+print("  cheap to answer, so it is answered on the REPAIRED triple instead: the bimodule, where the")
+print("  left action and the J-conjugated right action occupy DIFFERENT tensor slots of M_3(C). **")
+print("  D = Delta tensor 1 carries no finite part, so [D,a] keeps a's finite factor untouched and the")
+print("  two actions commute slot-wise -- which is computed here, with the order's own C^3 as the")
+print("  control that comes back the other way.")
+print()
+_npts = 4
+# ⌗ ** AND THE NOTE SITS AT THE LINE THAT CAUSED IT, BECAUSE MY FIRST VERSION OF THIS BLOCK WAS
+#   VACUOUS AND THE CONTROL IS WHAT SAID SO. **  I first took Delta = diag(0,1,2,3) and called it a
+#   "derivative".  It is a MULTIPLICATION operator: diagonal, so it commutes with the diagonal
+#   function f, so [D,a] = 0 identically -- and then the order-one condition holds on BOTH the
+#   bimodule and the order's C^3, for the empty reason that both sides vanish.  ** The control failed
+#   and was right to: it is the same vacuity that r7613 recorded on a kernel, and I did not carry my
+#   own guard over. **  ⇒ *Delta is now a genuine finite-difference operator -- the hermitian part of
+#   a cyclic shift, which does NOT commute with a non-constant f -- and `[D,a] != 0` is asserted
+#   below so this block can never pass vacuously again.*
+_shift = np.roll(np.eye(_npts, dtype=complex), 1, axis=0)
+_Delta = (_shift + _shift.conj().T) / 2.0      # hermitian, OFF-diagonal: a difference, not a product
+_I3 = np.eye(3, dtype=complex)
+_I9 = np.eye(9, dtype=complex)
+
+
+def _left(m):
+    """a = f tensor (m acting on the LEFT of M_3(C) = C^3 tensor C^3-bar)."""
+    return np.kron(np.diag([1.0, 2.0, -1.0, 0.5]).astype(complex), np.kron(m, _I3))
+
+
+def _right_opp(b):
+    """b^o = J b* J^-1 on the bimodule: right multiplication, i.e. the OTHER tensor slot."""
+    return np.kron(np.eye(_npts, dtype=complex), np.kron(_I3, b.conj()))
+
+
+_D_face = np.kron(_Delta, _I9)
+_gens = []
+for _i in range(3):
+    for _j in range(3):
+        _E = np.zeros((3, 3), dtype=complex)
+        _E[_i, _j] = 1.0
+        _gens.append(_E)
+_worst_bim = 0.0
+for _m in _gens:
+    _da = _D_face @ _left(_m) - _left(_m) @ _D_face
+    for _b in _gens:
+        _bo = _right_opp(_b)
+        _worst_bim = max(_worst_bim, float(np.linalg.norm(_da @ _bo - _bo @ _da)))
+# the control: on the order's C^3 there is no second slot, so the "opposite" action is the SAME
+# algebra acting on the same factor and the commutator has no reason to vanish
+_D_irr = np.kron(_Delta, _I3)
+
+
+def _left_irr(m):
+    return np.kron(np.diag([1.0, 2.0, -1.0, 0.5]).astype(complex), m)
+
+
+_worst_irr = 0.0
+for _m in _gens:
+    _da = _D_irr @ _left_irr(_m) - _left_irr(_m) @ _D_irr
+    for _b in _gens:
+        _bo = np.kron(np.eye(_npts, dtype=complex), _b.conj().T)
+        _worst_irr = max(_worst_irr, float(np.linalg.norm(_da @ _bo - _bo @ _da)))
+_nonvac = max(float(np.linalg.norm(_D_face @ _left(_m) - _left(_m) @ _D_face)) for _m in _gens)
+check('** FIRST, THE ARM IS NOT VACUOUS: [D,a] is NON-zero on this algebra, so the order-one zero '
+      'below is a measurement and not two vanishing sides -- the guard r7613 earned and my first '
+      'version of this block dropped **', _nonvac > 1e-6, f'max ||[D,a]|| = {_nonvac:.4g}')
+check('** THE ORDER-ONE CONDITION HOLDS EXACTLY on the repaired triple: D carries no finite part, so '
+      "[D,a] leaves a's finite factor alone and the J-conjugated right action lives in the other "
+      'tensor slot -- the commutator is identically zero, computed over all 81 generator pairs **',
+      _worst_bim < 1e-12, f'max ||[[D,a],b^o]|| = {_worst_bim:.2e} over 81 pairs')
+check("CONTROL: and on the ORDER'S OWN C^3 the same expression is NON-zero -- there is no second slot "
+      'for the opposite action, which is (1a)\'s obstruction showing up again from the order-one side '
+      'rather than from the commutant side', _worst_irr > 1.0,
+      f'max ||[[D,a],b^o]|| = {_worst_irr:.4g}')
+print()
+print('  ⇒ So (1b) answers YES on the repaired triple and is UNWRITEABLE on the order\'s own, and the')
+print('    two facts have one cause: where the opposite algebra is allowed to act.')
+
 # ================================================ QUESTION 1c -- the two-form the face carries
 head('QUESTION (1c) -- WHAT A FIVE-DIMENSIONAL BASE CARRIES THAT THE LEAF DID NOT')
 

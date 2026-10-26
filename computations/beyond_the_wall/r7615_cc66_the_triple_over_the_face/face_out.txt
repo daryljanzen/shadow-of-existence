@@ -47,6 +47,25 @@
     M_3(C) rather than C^3.  The route SURVIVES this; it is the order's H that does not.
 
 ==============================================================================
+ QUESTION (1b) -- THE ORDER-ONE CONDITION, ON THE TRIPLE THE REPAIR GIVES
+==============================================================================
+
+  PREDICTION.md asked this of the order's H, where (1a) has just shown there is no J to write
+  the condition with.  ** Leaving it there would be deferring a registered question that is
+  cheap to answer, so it is answered on the REPAIRED triple instead: the bimodule, where the
+  left action and the J-conjugated right action occupy DIFFERENT tensor slots of M_3(C). **
+  D = Delta tensor 1 carries no finite part, so [D,a] keeps a's finite factor untouched and the
+  two actions commute slot-wise -- which is computed here, with the order's own C^3 as the
+  control that comes back the other way.
+
+  [PASS] ** FIRST, THE ARM IS NOT VACUOUS: [D,a] is NON-zero on this algebra, so the order-one zero below is a measurement and not two vanishing sides -- the guard r7613 earned and my first version of this block dropped **   ->  max ||[D,a]|| = 4.33
+  [PASS] ** THE ORDER-ONE CONDITION HOLDS EXACTLY on the repaired triple: D carries no finite part, so [D,a] leaves a's finite factor alone and the J-conjugated right action lives in the other tensor slot -- the commutator is identically zero, computed over all 81 generator pairs **   ->  max ||[[D,a],b^o]|| = 0.00e+00 over 81 pairs
+  [PASS] CONTROL: and on the ORDER'S OWN C^3 the same expression is NON-zero -- there is no second slot for the opposite action, which is (1a)'s obstruction showing up again from the order-one side rather than from the commutant side   ->  max ||[[D,a],b^o]|| = 3.536
+
+  ⇒ So (1b) answers YES on the repaired triple and is UNWRITEABLE on the order's own, and the
+    two facts have one cause: where the opposite algebra is allowed to act.
+
+==============================================================================
  QUESTION (1c) -- WHAT A FIVE-DIMENSIONAL BASE CARRIES THAT THE LEAF DID NOT
 ==============================================================================
 
@@ -78,7 +97,7 @@
   [PASS] ** ⑴ THE ORDER'S H IS WRONG AND THE ROUTE SURVIVES THE CORRECTION: M_3(C) acts irreducibly on C^3, commutant dimension 1, so spinors tensor C^3 admits NO real structure; on the bimodule spinors tensor M_3(C) the commutant is 9 and there is room.  gamma does not exist at all, which is P13's own sentence about odd dimension and not a finding of mine **   ->  commutant 1 vs 9; gamma absent by P13
   [PASS] ** ⑵ AND THE REAL TEST ANSWERS AGAINST THE CONSTRUCTION, as pre-registered: the face carries ten two-forms and a generic fluctuation has non-zero curvature, so a gauge FIELD is there -- but no power of alpha or beta is dimensionless, the only dimensionless combination is beta/alpha = 2 pi, and a ratio of lengths is not a moment of a cutoff function.  ** THE ROUTE SUPPLIES A GAUGE SECTOR THE CONSTRUCTION DOES NOT DETERMINE ** -- pre-registered outcome 2, a result about the rhyme, and the coupling half is PO-5's row and not annexed here **   ->  field yes, coupling no; outcome 2
 
-  19 checks, 19 pass, 0 fail
+  22 checks, 22 pass, 0 fail
 
 ==============================================================================
  ALL CHECKS PASS
