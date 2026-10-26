@@ -2848,15 +2848,6 @@
    }
   }
  },
- "claude/shadow-of-existence-setup-6awafl": {
-  "suite": {
-   "receipts/L_probability/S47_the_cheap_tail_closes_whole_and_nine_of_its_fourteen_rows_needed_an_instrument_or_a_normalised_reader_rather_than_a_widening.py": {
-    "gates": [],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40370447958",
-    "since": "63175819b2d3abbfc03afa2ce8deed537d93fdf7"
-   }
-  }
- },
  "claude/youthful-darwin-xvkwh7": {
   "suite": {
    "receipts/P10_canonical_time/P10_the_cubic_over_three_different_levels_is_derived_in_closed_form_and_its_low_level_region_carries_a_nested_logarithm_so_the_bare_sum_is_double_logarithmic.py": {
