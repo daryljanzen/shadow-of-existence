@@ -154,6 +154,12 @@
   }
  },
  "claude/youthful-darwin-xvkwh7": {
+  "reads": {
+   "receipts/P10_canonical_time/P10_the_complete_second_orders_double_logarithm_is_not_covariant_up_to_the_scale_factors_equation_so_the_invariant_is_a_stated_limit.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40336168816",
+    "since": "b179b2254410422d5077177783efde80e6ca6493"
+   }
+  },
   "suite": {
    "corpus/check_formalisation_join.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/39511486627",
