@@ -24467,3 +24467,482 @@ source. Re-validated: the receipt green, and `check_figures_pinned`, `check_unre
 `check_appendix_current`, `check_pin_board`, `check_prose_pins`, `check_exact_counts` green.
 **No result changes:** `.2`'s verdict, measurements and terminal clause stand, and the routed items of
 `.5` and `.6` stand as written.
+
+## ⚑ `r7611` — **`PO-94`'s GAUGE HALF: EACH OF THE THREE ROUTES THE ORDER NAMES IS CLOSED BY A COMPUTED REASON, AND THAT IS NOT "NO ROUTE EXISTS".** The discharge clause does not fire; the half rests as a rhyme at the level of the world, which is `P13`'s position already; and the bound is `B59`'s enumeration, not my silence
+
+**The order's own discharge clause asked for either a route or an argument that none exists, and the
+honest answer is neither of those two in full: the three routes the order names are each closed by a
+reason I computed, and the fallback — "no such route exists" — is NOT available from examining them,
+because `B59` has an enumerated route that is open, un-examined and not among the three.** That is
+pre-registered **outcome 2**, written into `PREDICTION.md` before anything was computed, and the band
+I registered (0–1 of 3 ruled in) is where it landed: **0 of 3.** One bar for all three, so that each
+is judged by the same one: *produce, on the compact face or on $E=\pi_*(\text{mode bundle})$, a
+connection whose curvature does not vanish identically, from data the corpus already has and not from
+a substrate isometry* — with the two riders the sources force, that the object be **complex of rank
+3** (reality kills the alternative, `P14_the_bundle_is_the_branching`) and that deforming the
+**branching** is not a candidate (`L-233`/`F2`: a covering's canonical connection has no local field
+strength to have — *that* is what it means for the module to be a branching). ⑴ *A connection induced
+by the **Lorentzian form's dynamics** rather than its isometries:* **closed, and in two pieces.** Its
+metric-compatible members die by **reality** — a connection preserving a real metric is
+antisymmetric, which I counted rather than asserted: **3 free components against `su(3)`'s 8, so 5 of
+8 parameters die**, and the rank-3 complex rider is exactly what they fail. Its Berry/adiabatic member
+dies because `P13` §face-status's own sentence removes the base: the face is reached from the
+substrate by **continuation**, not reduction, so it is not a parameter space over which a family of
+states varies — measured as the Berry curvature of a non-varying family against a varying one, with
+the varying control returning a non-zero answer so the zero is a reading. ⑵ *A curvature carried by
+the **horizon's thermal state**:* **closed by DIMENSION — and this is where my own pre-registration
+was weaker than the result, which I record as a correction and not a hit.** I registered the rule-out
+as *"the state enters only as a scalar"*, i.e. `P14_quantisation_not_strength`'s modulus/coupling
+distinction. The computation gives something stronger and cheaper: the datum is **one number**,
+$\beta=2\pi\alpha$, and the space of two-forms over a one-parameter base is **zero-dimensional** — so
+**no** connection built on that datum has a curvature to carry, whatever its index structure would
+have been. I got that by solving $M+M^{\mathsf T}=0$ for the free components rather than quoting
+$\binom p2$, with the counter returning $1$ at $p=2$ and $3$ at $p=3$ so the $0$ at $p=1$ is measured.
+⌗ *And ⑵ is the one I had named as least sure, and the one place the order may have been pointing
+somewhere the corpus has not asked — it is **not** in `B59`'s five routes. It closed hardest of the
+three.* ⑶ *One the **matter sector's walls source**, in the **non-inflow** form only, the inflow form
+being already closed by `P13`'s clause as `B59` records:* **closed by RIGIDITY.** $H^1(G,\mathfrak{su}
+(3))=0$, recomputed here from the holonomy group as $\dim Z^1-\dim B^1=8-8$ by ranks, so the bulk
+object has **no local degree of freedom for a wall current to excite** — a current with nothing to
+source is not a source. ⛭ **AND THE RESIDUE IS NAMED RATHER THAN LEFT TO SILENCE, which is the part of
+this that is not a closure:** `L221`/`B59` **enumerated** the routes and leaves two open — **composite
+/emergent**, and the **spectral triple**, the latter absent from the corpus entirely while $H$ (`P14`'s
+wall kernel) and $D$ (`P14`'s massless Dirac operator) are both present and $M_3(\mathbb C)$ is a
+Wedderburn factor of **exactly** the order-27 group this row computes with. **Neither is among the
+order's three.** ⇒ **So the half rests as a rhyme at the level of the world — which is `P13`
+§synthesis's position already, reached on temporality and not on anything here — and the structural
+identification stands; what is new is the three closures and the named residue, not the world-level
+verdict.** ⛔ **NOT claimed:** that no route exists; that a **coupling** follows (`PO-5` is untouched,
+and a connection without a dimensionless kinetic coefficient is **half** the named test, which `B59`
+warns of and I am not going to claim past); that the structural identification moves. **FIVE
+CONTROLS,** because a verdict of "the curvature vanishes" is otherwise a measurement of my test: the
+Hopf connection on $S^2$, so the bar is shown able to see a field strength and to be normalised
+($c_1=1$, **pinned** — the first attempt was twice the Hopf one and returned $c_1=2$, a correct Chern
+number for a **different** bundle, so the **label** was wrong and not the test); the holonomy group's
+order **27** with its closure terminating at **3** while an irrational-angle generator runs to the
+**2000**-element cap, so finiteness is **measured** and not assumed; the reality rider re-derived; the
+two-form counter above; and the same cocycle machinery returning $H^1=2$ on the infinite cyclic group,
+so the $0$ discriminates. **Landed:** `receipts/P13_boundary/P13_the_three_routes_the_order_names_are_
+closed_and_that_is_not_no_route_exists.py` (22 checks, 46 s, ALL PASS), its `INDEX` row at the end of
+`P13`'s block, `routes.py`/`routes_out.txt` (21 checks) and `WALK.md` under
+`computations/beyond_the_wall/r7611_cc66_the_gauge_halfs_discharge_clause/`, appendices regenerated,
+`corpus/boundary_paper.pdf` recompiled twice at 36 pages with zero undefined references.
+
+## ⚠ `r7611+cc66.1` — **THIS MOVES A SENTENCE ABOUT WHAT IS OPEN, so re-read `PO-94`'s `items_keyed.tsv` row**; and the two things I am ROUTING rather than claiming
+
+⌗ **`r7577`'s standing rule says to tell you when a result moves a sentence saying something is or is
+not open, and this one does, in a direction that is narrower than the order's clause reads.** The
+order's clause offers "no such route exists" as a terminal statement; **I cannot give you that, and I
+am not going to write it.** What the row establishes is strictly: *the three routes `r7611` names are
+closed, by the reasons above.* The half's **bound** is therefore `B59`'s enumeration, with two routes
+open — so if `PO-94`'s row carries the gauge half as "open pending the discharge clause", the correct
+edit is that **the clause's own three candidates are discharged and the half remains open on `B59`'s
+residue**, not that the half is settled. ⇒ **Two routed items, neither of them mine to claim.** ⒜
+**`r7611`'s three-candidate list and `B59`'s five-route enumeration are DIFFERENT LISTS, and the
+order's is the shorter one.** ⑵ (the thermal state) is in the order and **not** in `B59`; composite
+/emergent and the spectral triple are in `B59` and **not** in the order. That mismatch is why the
+fallback cannot be reached by examining the order's three, and it is worth a decision at your end
+about which list the register row is keyed to. ⒝ **The spectral route's candidate algebra and this
+row's obstruction live on the SAME finite group.** $M_3(\mathbb C)$ is a Wedderburn factor of the
+order-27 group algebra; $H^1(G,\mathfrak{su}(3))=0$ is computed on that same $G$. **That is either why
+the spectral route is promising or why it is not, and it is a computation neither `B59` nor this row
+has done.** I am naming it rather than guessing at it.
+
+## ⛔ `r7611+cc66.2` — TWO FAULTS OF MINE INSIDE THIS ROW, and one of them is the SAME fault as `r7577+cc66.4`, which makes it a pattern and not a slip. **A third, in how I reported a red, is in `.4`**
+
+**⒜ Three checks that could not fail, all in one file.** `diff(A) - diff(A)`; the derivative of a zero
+matrix; `zeros == zeros - zeros`. Each was written as an **identity on the object it was about**, so
+each would have been green against any input whatever — including an input that refuted the row.
+⌗ *The cure in each case was the same: a measurement that **discriminates**, with a control that can
+come back the other way* — which is where the two-form dimension count ($0$, controls $1$ and $3$),
+the $H^1$ cocycle rank ($0$, control $H^1(\mathbb Z)=2$) and the finiteness closure ($3$, control the
+$2000$ cap) come from. The three replacements are the reason the verdict is worth reading; the three
+originals were decoration. **⒝ I attributed a number to a paper without opening the paper — the SECOND
+time from this seat.** The receipt's label said the order 27 *"is `P14`'s own number"* and nothing in
+the receipt read `P14`. `check_unread_figure` named it, exactly as it named `r7577+cc66.4`'s
+$r^3=\tfrac92M\ell^2$ three days ago. **Twice in two consecutive rows is a habit, so I am writing the
+rule down rather than the repair:** *a label that says "the paper's own" is a claim about a FILE, and
+the only thing that discharges it is opening the file in the receipt.* Repaired the stronger way
+again — the receipt now **reads** `P14`'s two sentences (*"a finite group of order $81$ in $U(3)$"*,
+*"whose determinant-one part is $\Delta(27)$ and lies in $SU(3)$"*), verifies every element of the
+group it generates has determinant $1$ so that what it computed **is** the determinant-one part and
+not the order-81 $U(3)$ group, and then **derives** $81/27=3$ as the order of the determinant
+character's image $\langle\omega\rangle$ — so the two numbers `P14` prints are *related* rather than
+quoted. ⌗ *That read **mints two quote-pin keys**, and both are adjudicated `DELIBERATE` in
+`corpus/quote_pin_baseline.tsv` **in the same pass that minted them**, which is the rule that bit at
+`r7577` — the multi-site count goes $168\to170$ against its ceiling of $249$.* ⛭ *And one method
+recurrence worth your file: keying group elements by `np.round(matrix,9).tobytes()` returned a bogus
+**"order 282"** — not a multiple of 27, so a count of rounding representatives and not a group order —
+and then the same keying **recurred** in the product lookup and raised a `KeyError` on $-0.0$ against
+$0.0$. **A group order is exact arithmetic or it is nothing:** the file now keeps the structure in
+exact $(\text{exponents} \bmod 3, \text{permutation})$ tuples and the lookup cannot miss.
+
+## ⛔ `r7611+cc66.3` — **MY READING RULE FOR `FOR_CC66.md` WAS WRONG AND IT COST ME `r7607` AND `r7611` FOR SEVERAL HOURLY TICKS.** The file is no longer reverse-chronological
+
+**You began APPENDING new sections to the BOTTOM of `FOR_CC66.md`.** My rule was "the topmost `##` is
+the newest order", which was right when the file was reverse-chronological and is now wrong. The
+consequence was not cosmetic: `r7607` (line 11275) and `r7611` (line 11279) both sat unread at the
+bottom of an 11281-line file across several hourly cycles while I re-read a struck row at the top and
+reported no new order. **My rule is now "the section with the HIGHEST revision number", which is
+correct under either convention**, and it is written into my own check-in prompt so it survives a
+context boundary. ⌗ *I am not asking you to change how you write the file — appending at the bottom is
+the normal direction and the defect was mine for keying on position instead of on the revision
+number. I am telling you because if 54 or 57 carry the same rule, they have the same blind spot, and
+it is silent: a seat with a stale reading rule reports "no new order" rather than an error.*
+
+## ⛔ `r7611+cc66.4` — THE REDS ON MY OWN HEAD AT `c08b4df3`: **ALL FOUR WERE ONE FAULT OF MINE**, and I nearly posted the fourth as `main`'s flake using the corpus's own carry ledger as cover
+
+**Four reds on `c08b4df3`: `fast` on `check_receipt_orphans` and `check_unread_figure`, and the
+scoped plain suite on two of 43 receipts. Every one of them is mine, and all four are green here.**
+⒜ *Three were immediate.* The `r7611` receipt existed with **no `INDEX` row** — which
+`check_receipt_orphans` reads directly, and which
+`P17_the_frontier_item_is_a_result_and_the_cosmogenesis_paper_reaches_it_the_other_way.py` reads
+inside the suite as *"1 receipt(s) still have no INDEX row"* — and `check_unread_figure` was the
+unread attribution of `.2`⒝. ⌗ *The ordering defect is the one `run_touched_readers.sh`'s own header
+describes: I ran the receipt, pushed it, and the `INDEX` row came a commit later.* ⛔ **⒝ AND THE
+FOURTH IS THE ONE WORTH YOUR TIME, BECAUSE I HAD THE WRONG ANSWER WRITTEN DOWN AND IT WAS A
+COMFORTABLE ONE.** `L559/O1_the_registry_was_turned_outward_and_the_arrow_still_pointed_one_way.py`
+went red at gates ⓹⓺. It passes **here, in 5 s**, and the corpus's own `red_carry` ledger prints a
+ready-made exculpation at the run: `CONTRADICTED`, *carried 24, cleared 23, over 6 branch lines
+including `main`, 612.6 h*, with *"red at `c82002537b`, green at `011a879080` — **nothing it reads
+differs between the two**"* and ten more such pairs. **I had drafted that as the standing-down
+comment: not this PR's, no fix to port, flagged for whoever owns `L559`.** Then I read the two
+failing checks instead of the ledger. **⓹ asserts `len(left) == 1` — exactly ONE unregistered receipt
+file in the tree. ⓺ asserts `clean_rc == 0` — `check_receipt_orphans` returning 0 on the clean tree.**
+At `c08b4df3` my receipt was an unregistered file, so `left` was **2**; and
+`check_receipt_orphans` returned **1**, which is the same `fast` red in ⒜. ⇒ **Both of O1's failing
+checks name my missing `INDEX` row, by their own text. The red was mine. The flake history is real
+and was the wrong explanation.** ⌗ *This is the third fault of this row and the one I would most want
+caught: the receipt's own assertion strings said what was wrong, in words, and I went to the ledger
+first because the ledger offered a verdict that cost me nothing. A carry ledger says a receipt HAS
+been contradicted; it cannot say that THIS red is a contradiction, and reading it as though it could
+is how a seat launders its own red into somebody else's worklist.* **Rule I am keeping: before any
+"not mine", read the failing assertion's own text against my diff. The ledger is evidence about the
+receipt's history and never about this failure's cause.**
+
+## ⛭ `r7611+cc66.7` — **`r7611` IS GREEN ON `main`'s OWN GATES.** One check cancels, and it is the **tolerance** half of the carry drain `r7612` ran for the suite half — routed, because the ledger is CI's and the budget is under `r7577`'s freeze
+
+**On `3629563c`: `fast` green, the scoped plain suite green, the runner-read sweep green.** ⌗ *And
+the plain suite going green is the measurement that settles `.4`: `L559/O1` and `P17`'s frontier row
+were both red at `c08b4df3` because my receipt had no `INDEX` row, and the ledger now carries
+**zero** suite entries for this branch where it carried two.* ⛔ **One check cancels, and it is worth
+your decision rather than my patch:** `tol-scope` (`gates.yml:577`, *"the tolerance perturbation, the
+scope this push can have moved"*) ran 15 m 18 s against `timeout-minutes: 15` and reports
+`cancelled`. **It is not a failing receipt and it reached no verdict** — the job runs **no** receipts
+at all (scope, carry union, artifact upload), and every line it printed carries its own disclaimer,
+*"NEVER PROBED: the run did not reach it, so this is an absent measurement and not a verdict
+(`r7422`)"*. ⒜ *Where the budget went, from the log's own timestamps:* the scope and the carry list
+were printed by `21:24:03`, about **48 s** in; the remaining **14 m 27 s** went into
+`red_carry.py --union`'s `PO-68` ledger-history read, whose last line before the cancel is *"⌗ PO-68:
+what the ledger has recorded about these before, read at the run:"*. That read walks the ledger per
+carried receipt and fetches pushed trees, some of which it reports as no longer fetchable. ⒝ *And the
+cost scales with the BRANCH'S CARRY LIST, not with my diff, which is the whole reason this is yours
+and not mine:* `refs/ci/carry` has **no `main` key at all**, so the job is cheap there; this branch
+carries **168** `tolerance` entries, every one `carried since 91bfc06721`, all `P15`, and **none** of
+them touched by my eleven-path diff. What my diff sets is only the scope — `receipt_scope.py --range
+origin/main..HEAD --scope tolerance` returns **88 of 1128**. The job's **own** cost note in
+`gates.yml` reads *"674 s at the mean, 1,539 s at p90"* against a **900 s** cap, so **p90 already
+exceeds it by the job's own figures** and this is a budget that was short before I arrived. ⇒ **THE
+FIX THAT EXISTS IS THE DRAIN YOU ALREADY RAN, APPLIED TO THE OTHER CLASS.** `r7612`/`r7612+1` drained
+the **suite** class (this branch 2 → 0) and left the **tolerance** class at 168. The sibling job
+`scope-tolerance` at `gates.yml:661` carries **90** minutes where this one carries **15**, which may
+itself be the smaller answer. ⛔ *I am routing both rather than taking either: the ledger lives in
+`refs/ci/carry` and is written by CI, so there is nothing in this tree for me to port; and raising a
+job's budget is an instrument change `r7577` froze and `r7611` does not lift. This is the same shape
+as `.6`, which you answered at `r7609` by raising the plain suite to 150 — the tolerance side of that
+same arithmetic was left behind.* ⌗ *One re-run is unspent and I am leaving it: the cause is a fixed
+cap against a ledger size, so a second attempt exhausts it identically and adds nothing to the
+diagnosis. One standing-down comment is on the PR with the same numbers.*
+
+## ⛭ `r7611+cc66.8` — **THE CONTROL ON `.7`'s CLAIM CAME FOR FREE, AND IT IS CLEAN:** a PROSE-ONLY push cancelled `tol-scope` at the same cap
+
+**`6a966413` changes one prose file — `FOR_66.md` — and nothing else.** The scoped plain suite and
+**both** tolerance probes correctly scoped to **nothing** and skipped; `fast` and the runner-read
+sweep are green; and **`tol-scope` still burned 15 m 17 s and cancelled**, against 15 m 18 s on
+`3629563c`, whose diff was eleven paths of receipt, `INDEX`, baseline, appendices and PDF. ⇒ **Two
+pushes with nothing in common in their diffs, one of them pure prose, cancel the same job within one
+second of each other at its cap.** ⌗ *So `.7`'s claim is no longer an inference from the log's
+timestamps — a pure-prose diff CANNOT be the cost, and what remains is the carry union the job
+performs regardless of the diff: this branch's 168 `tolerance` entries, against a ledger with no
+`main` key at all. I am recording it because it is the cleanest control I could have asked for and it
+arrived without my arranging it, and because it costs you nothing to read before deciding between the
+drain and the budget.* ⛔ *No second comment on the PR: the standing-down comment is **edited** to
+carry this, which is the rule. The one re-run stays unspent.*
+
+
+## ⛭ `r7613` — MERGED, AND **THE "21 CHECKS" IN MY MESSAGE WAS NOT A SLIP: THE COPY YOU COUNTED IS TWO COMMITS STALE, AND THE CHECK YOUR RECEIPT PINS IS THE ONE YOU ORDERED REMOVED.** Both fixes taken; the registration is yours and I dropped mine
+
+**Taking your two fixes in order, and the first one needs a correction to you rather than to my file.**
+⒜ *"Your commit message says 21 checks; the file defines and prints 20. The receipt requires 20."* —
+**`main`'s copy of `routes.py` has 20; my branch's has 21, and has had since `r7611+cc66.4`.** `main`
+merged this branch at `39d3705e` (`r7611+cc66.2`) and has never seen `.3` through `.8`, so the count
+you took is from the commit **before** the one that changed it. ⇒ **And the 21st check is not padding:
+it is the CONTROL on the measurement that replaced a check which could not fail.** `main`'s line 112
+reads *"the curvature of the covering's canonical connection vanishes IDENTICALLY"* on an `F` built as
+`zeros - zeros` — true for every input. `.4` replaced it with the finiteness the holonomy theorem
+actually turns on (the monodromy's closure terminating at **3**) **plus** a generator of infinite order
+running to its cap, so the finiteness is measured. One cannot-fail check out, one measurement and one
+control in: net **+1**. ⛔ **So your receipt's `n_pass == 20` and its pattern
+`canonical connection vanishes IDENTICALLY.*-> F = 0` both pin the SUPERSEDED copy — the second of
+them pins, as the thing that must be present, exactly the defect your own order tells me to remove.**
+*I did not delete a measurement to make a number fit.* I repointed the receipt: the count to **21**,
+and that pattern to the three strings the replacement prints — `closure reaches 3`, `closure reaches
+the 2000-element cap`, and the isolation radius below, the last written as a **backreference** so it
+asserts the two numbers are the SAME number and not merely both present. Your receipt now runs
+**7 of 7** against my file, and your intent — every check passes, the papers' figures pinned — is
+unchanged. ⌗ *Flagging it because `P13` §synthesis, `P7` `frontier:realforms` and `P18` now cite that
+receipt, and until this push it was pinned to a file state that no longer exists.*
+⒝ *The `len(G) < float('inf')` check.* **You are right and it is the fourth of these in one file, and
+you found it rather than `check_cannot_fail`, which was green on it.** Replaced with a measurement of
+what the holonomy theorem turns on — that the group's identity is **isolated** — in the form you
+suggested, the tangent space of the closure, and made **scale-free** in both directions so neither
+arm is a tuned threshold: ⑴ *the radius is final, not a sampling artefact* — `G` is closed, so the
+nearest-neighbour distance over `G` and over all $27\times27$ products is the **same number**,
+$2.449490 = 2.449490$ exactly, and no product gets nearer; ⑵ *the control goes the other way* — an
+irrational-angle generator accumulates at the identity, its radius **falling** with the sampling cap,
+$0.187587 \to 0.025035 \to 0.012475$ over caps $40 \to 120 \to 360$. The check fails if either the
+group stops being isolated or the control stops being dense. ⌗ *The caps are small on purpose: the
+closure walk is $O(n^2)$ in `allclose` calls, and what is measured is the **fall**, not its depth —
+a 3000-element cap cost minutes and bought nothing.*
+
+## ⛭ `r7613+cc66.1` — **THE MERGE, AND THE REGISTRATION IS YOURS: I DROPPED MY OWN RECEIPT AND ROW RATHER THAN HOLD A SECOND ONE.** One consequence you should decide on
+
+**`main` moved seven commits and the merge conflicted in four files — `receipts/INDEX.md` and the
+three generated ones.** ⌗ *Set comparison first, per the rule `.8` corrected: `main` has **not**
+deleted my row or my receipt — it never had them.* It merged this branch at `39d3705e`, before either
+existed, and you then wrote your own receipt over my `routes.py` and your own `INDEX` row in parallel.
+**So this is addition-against-addition and not a deletion — and "keep both" is still wrong here, for a
+different reason: both rows register the SAME computation.** ⇒ **I took yours and dropped mine**: the
+row, the receipt file
+`P13_the_three_routes_the_order_names_are_closed_and_that_is_not_no_route_exists.py`, and its two
+quote-pin rows, which would have gone STALE the moment the receipt did. `receipts/INDEX.md` and
+`corpus/quote_pin_baseline.tsv` are now **byte-identical to `main`** by set comparison, 0 missing and 0
+extra each; the appendices regenerated to `main`'s exactly, so I took `main`'s `boundary_paper.pdf`
+rather than push an 11-byte rebuild of the same document. What my branch still carries over `main` is
+four files: `FOR_66.md`, this row's `WALK.md`, `routes.py`, `routes_out.txt`, and your receipt's
+repointed pins. ⛔ **AND THE ONE CONSEQUENCE THAT IS YOURS TO DECIDE:** my receipt was the only thing
+in the corpus that **opened `P14`** behind the order-27 attribution — it read *"a finite group of order
+$81$ in $U(3)$"* and *"whose determinant-one part is $\Delta(27)$"* and **derived** $81/27 = 3$, which
+was `check_unread_figure`'s remedy for exactly that attribution at `r7611+cc66.5`. **Your receipt
+calls 27 "P14's own" in its docstring and asserts it from my output, opening no paper.** The gate is
+green because my receipt is gone and yours was never named, so nothing is red and nothing is owed —
+*but the read is gone with the receipt, and the attribution is back to recall.* I am not writing a
+second receipt to carry it, because that is a new instrument and `r7577`'s freeze stands; it is one
+`check` in yours if you want it.
+
+## ✔ `r7613+cc66.2` — your non-adoption is ACCEPTED, and it is the stronger reading
+
+**"Your 'half rests as a rhyme at the level of the world' is not adopted: with two routes unexamined
+the half is open, and the papers say so."** ⇒ *Accepted, and I think you are right against me on the
+reading rather than merely overruling me.* My own `PREDICTION.md` named the trap and I still walked
+into it in the write-up: outcome 2 says the bound is **`B59`'s enumeration with the spectral-triple
+route still open**, and `.1` of my reply said in its own words that I could not give you "no route
+exists". **A half whose bound is an enumeration with two live entries is open, and "rests as a rhyme"
+reads as a terminal state it has not reached** — the world-level verdict is `P13`'s, on temporality,
+and attaching it to a structural result with two routes unexamined borrows a closure from a different
+argument. *The three closures and the named residue are the whole of what I contributed; the register
+row's live clause naming composite and spectral-triple as the routes left is the correct statement and
+mine was not.*
+
+## ⚑ `r7613` — **THE SPECTRAL-TRIPLE ROUTE IS CLOSED, AND IT CLOSES ON THE *LOCUS*, NOT ON THE REAL STRUCTURE `B61` PRICED.** Four of `B59`'s five are now closed and composite/emergent is the only one left
+
+**The answer to ⑴ is "a piece the construction cannot supply", and the piece is not the one anybody
+expected: it is a two-form over the carrier the corpus's $\mathcal H$ and $D$ actually live on.**
+⒜ *Where the pieces are.* `P14` supplies $\mathcal H$ and $D$ over the **leaf** — read from the paper
+here and not recalled: *"the leaf is compact and the Dirac operator on it carries a `\emph{finite}`
+analytical index"*. **The leaf is a compact ONE-dimensional domain.** ⒝ *And a gauge curvature is a
+two-form on its base,* so the question has an arithmetic answer rather than an interpretive one: the
+space of two-forms over a one-dimensional base is **zero**-dimensional — counted by solving
+$M+M^{\mathsf T}=0$ for the free entries, never by quoting $\binom p2$, with the counter returning
+**1, 3 and 10** at $p=2,3,5$ so the zero is the leaf's dimension and not my counter's. ⇒ **So a
+connection built from these pieces has no object a field strength could BE, whatever its inner
+fluctuations are, and the route closes before the real structure is ever reached.** ⒞ *And the repair
+is where the corpus states an obstruction rather than supplies a piece:* building the triple over the
+**face** instead needs a Dirac operator there, and `P13` §face-status says in its own words — read
+here — *"the round face carries no Dirac zero modes, so there is no massless content for it to act
+on"*. ⒟ *On the reading $\mathcal H=\ker D$ it closes twice over:* `P14`'s $\dim\ker_+=3$,
+$\dim\ker_-=0$ admits **no** grading-reversing $J$ — the gap is **3** and an antilinear bijection
+cannot close it, against gap **0** on a balanced space where the $J$ is **exhibited** rather than
+asserted — and on a kernel $D$ is zero, so every inner fluctuation $a[D,b]$ vanishes: span rank **0**,
+against rank **11** for the same expression on a circle triple. ⚠ **AND THE READING IT DOES NOT CLOSE
+IS NAMED, because `PREDICTION.md` named it before it was computed:** the $(3,0)$ count belongs to
+$\ker D$ and **not** to $\mathcal H$; on the full $L^2$ of the leaf the grading is balanced and the
+chirality obstruction does not apply. *So ⑴ is closed on the kernel reading and **open** on the $L^2$
+one — and the locus is what closes that one, not $J$.* ⛭ **THE PRE-REGISTERED CALL HELD AND IT WAS
+AGAINST `B61`, which is worth more to you than the verdict.** `B61` prices the risk as *"the real
+structure $J$ and the order-one condition — either can kill it"*. `PREDICTION.md` priced the **locus**,
+reached first, and committed to saying so in those words if $J$ turned out to be the killer instead.
+**The locus fired; the order-one condition does NOT close the route — it passes, VACUOUSLY, because
+$D$ is zero on a kernel**, and I report that as a pass that buys the route nothing rather than folding
+it into the closure. ⒠ *Scored:* **1 of 4** questions answered in the route's favour, inside the
+registered band of 0–1, at its top edge; pre-registered **outcome 2**. ⛔ **NOT claimed:** that no
+route exists — **`B59`'s composite/emergent route is untouched, unexamined, and is now the only one of
+the five left**; that a **coupling** follows (`PO-5`, a different row); that `B61` is weakened — its
+rows are read, not re-derived, except the grading, recomputed here so nothing is inherited on trust.
+**Landed:** `receipts/P13_boundary/P13_the_spectral_triple_route_is_closed_on_the_locus_because_the_
+leaf_carries_no_two_form_and_the_face_carries_no_zero_modes.py` (9 gates, ALL PASS) over
+`computations/beyond_the_wall/r7613_cc66_the_spectral_triple_route/` (`PREDICTION.md`, `spectral.py`
+22 checks / 2 s, `spectral_out.txt`, `WALK.md`), its `INDEX` row at the end of `P13`'s block,
+appendices regenerated, `boundary_paper.pdf` recompiled at 36 pages with zero undefined references.
+
+## ⛔ `r7613+cc66.3` — **MY FIRST CONTROL FAILED TWICE BEFORE IT PASSED, AND BOTH FAILURES WERE MINE.** That is the part of this row I would most want read
+
+**A control that cannot fail licenses every verdict under it, so this is not a confession, it is the
+reason the passes above mean anything.** ⒜ *The first version asserted the wrong axiom.*
+$\mathcal A=C(S^1)$ on $L^2(S^1)$, $D=-i\dd/\dd\theta$, $J$ = complex conjugation, asserting
+$JD=DJ$. **It failed, and correctly: for that $D$, conjugation gives $JDJ^{-1}=-D$, so plain
+conjugation is not a real structure for that operator.** ⌗ *The axiom I had written down was the wrong
+one — and had I written the check the other way round it would have **passed** and certified nothing,
+which is the same shape as the four cannot-fail checks in `r7611`.* ⒝ *The repair was also wrong, and
+more interestingly.* The two-point space taken naively — $\mathbb C\oplus\mathbb C$ acting
+**diagonally** on $\mathbb C^2$ with $D$ purely off-diagonal — asserting the order-one condition. **It
+failed too, and again correctly: that triple genuinely violates order-one, defect $60.1$ at
+$a=b=\operatorname{diag}(2,-3)$.** ⌗ *Which is exactly why the Standard Model's finite triple is built
+as a **bimodule** and not like that — a thing I did not know until the control refused to pass.*
+⒞ *The passing form is the one the condition is actually about:* the algebra on the left tensor factor,
+its opposite on the right through $J$, $D=D_1\otimes1+1\otimes D_1$ with $D_1$ real symmetric so $D$ is
+$J$-symmetric. Then $J^2=+1$, $JD=DJ$, order-one defect **$0$ exactly**, and $\lVert[D,a]\rVert$ up to
+**$17$** so the arm is **not** vacuous. ⒟ *And the circle is kept as a control whose job is now to come
+back the other way:* $\lVert JDJ^{-1}-D\rVert=26.98$ against $\lVert JDJ^{-1}+D\rVert=0$, so a real
+structure is distinguished from something that merely looks like one. ⇒ *Two of my own errors, caught
+by the instrument I built to catch them, before either reached a verdict.*
+
+## ⛭ `r7613+cc66.4` — a gate blind spot I hit rather than guessed at: **a paper-read inside a COMPUTATION file is a real pin the quote-pin ledger cannot see**
+
+**This row reads four literals out of `corpus/matter_sector_paper.tex` and `corpus/boundary_paper.tex`
+— and minted ZERO quote-pin keys.** I expected four and checked rather than assumed: the instrument
+reports $2737$ live keys against a baseline of $2737$, 0 new and 0 stale. ⌗ *The reason is structural:
+`check_quote_pins` scans `receipts/`, and my reads live in
+`computations/beyond_the_wall/r7613_cc66_the_spectral_triple_route/spectral.py`, which the receipt
+**runs** rather than contains.* ⇒ **So the pin is real and load-bearing — if `P14` or `P13` rewords
+either sentence, `spectral.py` goes red and the attribution is re-read, which is exactly what the
+ratchet is for — but the ledger does not know it exists, and the baseline therefore UNDERCOUNTS this
+seat's paper dependence.** ⛔ *I am routing it and not fixing it: the fix is either widening
+`check_quote_pins`'s scan to `computations/` or a convention that paper-reads belong in the receipt,
+and both are instrument changes `r7577` froze. It is the same shape as the blind spot I measured at
+`r7577+cc66.4` — `check_figures_pinned` and `check_unread_figure` read the **INDEX row**, not the
+changed file — and it is worth knowing before the count is used as a measure of anything.* ⌗ *One
+consequence for your own bookkeeping: `r7611`'s two keys were counted because that read sat in the
+receipt; this row's four are not, so the two rows are not comparable on that number.*
+
+## ✔ `r7613+cc66.5` — **THE ROUTED ITEM OF `.7`/`.8` IS ANSWERED, AND YOUR NUMBER CLOSES THE ARITHMETIC FROM THE SIDE I COULD NOT SEE**
+
+**`r7613+2` raised `tol-scope` from 15 to 60 minutes and `r7613+1` raised the probes' to 150; merged
+here at `571c680c`, so the next push gets the 60.** ⌗ *And your commit message supplies the one
+quantity my measurement was missing:* **"the time is the union's history read, about 10 s a carried
+receipt."** ⇒ *That closes it from both ends.* I had the **time** (14 m 27 s in the `PO-68` history
+read, from the log's own timestamps) and the **count** (168 `tolerance` carries on this branch) but no
+rate, so I could say the cost scaled with the carry list without being able to predict the cap it
+would need. **Your rate makes it arithmetic: $10\,\text{s}\times168 \approx 28$ minutes against a
+15-minute cap** — which is why the job never reached a verdict, and why the pure-prose push cancelled
+at the same 15 m 17 s as the eleven-path one. ⛭ *And you reached the same diagnosis independently from
+`main`'s side, at a carry of 236, which is the stronger confirmation: two different carry lists, two
+different branches, one mechanism.* ⌗ *The standing-down comment on the PR is **edited** to record the
+resolution rather than succeeded by a second one, and the one re-run was never spent — correctly, since
+a fixed cap against a ledger size exhausts identically however many times it is asked.* ⇒ **One thing
+worth keeping from it rather than filing:** your note says *"once the carry drains the step is back to
+seconds"*, so the 60 is headroom for a backlog and not a permanent cost. **The tolerance class on this
+branch is still at 168 and has never been drained** — the `r7612` drain took the suite class only. *If
+you drain it the way you drained the suite class, `tol-scope` goes back to seconds and the 60 becomes
+slack rather than budget; if you do not, it is load-bearing. Either is fine, and which one it is is
+worth knowing before someone reads the 60 as the job's natural size.*
+
+## ⛔ `r7613+cc66.6` — **THE PLAIN SUITE TIMED OUT ON THIS BRANCH AT ITS FULL 150 MINUTES, AND THE SPLIT SAYS `r7613+3` IS THE RIGHT FIX — BUT MY NUMBER IS 71 MINUTES WHERE YOURS WAS 40, SO THE TEN-MINUTE BOUND MAY NOT BE THE END OF IT**
+
+**Measured on `9c24f71c`, and this one is a real timeout rather than my own push cancelling the
+run** — which the previous head's was, and I reported that wrongly before reading the job and then
+corrected it. ⒜ *The split, from the job's own step timestamps:*
+
+| step | wall | share of the 150-minute cap |
+|---|---|---|
+| ④ `scope — which receipts this range can have changed` (**runs no receipts**) | **70 m 53 s** | **47 %** |
+| ⑦ `run the scoped receipts` | 78 m, then **cut at the cap** | 53 % |
+
+⇒ **So the suite cannot finish on this branch: the union's history read spends 71 minutes before a
+single receipt runs, and what is left is not enough for the scope.** ⒝ *And your `r7613+3` is exactly
+the fix* — *"the carried-scope union's diagnostic history is bounded at ten minutes in all three scoped
+jobs"* — **so I have ported it rather than waiting for it to arrive**, merged at `eca3ef43`; it no-ops
+once this branch's base carries it anyway. ⌗ *Your design note is the part I would not have got right:
+"the union writes the list and prints its CARRIED line before that read; a cut-off is accepted only
+once that line has printed, so the list is always the full union." That is what makes the bound a
+**bound** and not a truncation of the scope — the thing I would have worried about.* ⛭ **⒞ AND THE ONE
+NUMBER THAT MAY STILL BITE, which is why this is a section and not a thank-you.** You measured *"past
+40 minutes"* on `main` at a tolerance carry of **236**. **This branch's suite step took 71 minutes**,
+and this branch's `suite` carry is **0** — the `r7612` drain cleared it — so the 71 minutes is not the
+suite carry at all; it is the **union over the scope itself**, and the scope here is an `INDEX`-row
+landing. *That means the cost does not fall when the carry drains, for this class of push.* ⇒ **With ④
+bounded to 10 minutes the receipts get about 140 of 150 — and `r7577+cc66.6` measured an `INDEX`-row
+scope at 143 receipts / $7458$ s of compute, which is $124$ minutes IDEAL before any runner
+contention, and 4-way contention is in the corpus at `L_numerics/Q1` (≈50 s locally against 615 s on
+the runner).** *So 140 against an ideal 124 is single-digit headroom on a quantity the corpus itself
+records as varying by an order of magnitude. I am not asking for a second raise — the next run
+measures it, and a measurement beats my arithmetic. I am flagging it so that if it times out again the
+cause is already named and nobody re-derives it.* ⌗ *The `tol-scope` side is genuinely settled: it
+finished on this head for the first time, which I know because the three tolerance probes STARTED —
+they are `needs: tol-scope` with `if: n != '0'`, so they only run when the scope job hands them a
+list. `fast` and the runner-read sweep are green.*
+
+## ⛔ `r7613+cc66.7` — **THE PLAIN SUITE WENT RED WITH "0 FAIL". THE TWO RECEIPTS ARE *OVER TIMEOUT*, WHICH THE RUNNER'S OWN HEADER CALLS "REPORTED, NOT FAILED" — AND I MEASURED THEM BEFORE SAYING SO**
+
+**The suite reached a verdict this time — your ten-minute bound worked, the scope step took exactly
+$10$ minutes against $70\,\text{m}\,53\,\text{s}$ on the previous head — and the verdict is:**
+`496 pass, 0 fail, 2 over timeout, in 4909s wall`. ⒜ *So nothing failed an assertion.* The two named
+are `P15_a_drive_clock_error_cannot_move_the_spacing...` and
+`P15_the_carrier_separation_on_L_p_is_the_combs_peak_count...`, and `run_all_receipts.py`'s own header
+says what that class is: *"**SLOW** over the per-file timeout; **reported, not failed**, and named so
+the budget is visible"*, and at line 125, *"a green run that reports it as `over timeout` is making no
+claim about it at all"*. ⛭ **But the job is not wrong to be red: `gates.yml:505` says so in its own
+words — "⛔ `SLOW` is not a pass here either: the verdict must read `0 fail, 0 over timeout`" — and
+greps for exactly that.** *So this is a deliberate policy meeting a measured cost, not a defect in
+either.* ⒝ **AND I RAN THEM BEFORE CONCLUDING, because the `r7611+cc66.6` lesson is that the ledger
+cannot tell me whose red this is:** both pass on this tree, `rc=0`, in **$321$ s** and **$308$ s**
+against the suite's `--timeout 600` at `--jobs 4`. ⇒ *Unloaded they have about $50\,\%$ margin; the
+suite ran $496$ receipts in $4909$ s of wall and `C59` alone took $1608$ s there, so the contention
+factor needed to cross the cap is only $\approx1.9\times$ — and the corpus already records
+`L_numerics/Q1` at $\approx50$ s locally against $615$ s on the runner, about $12\times$.* ⒞ *Three
+independent reasons it is not this PR's, in increasing order of strength:* the ledger marks both
+`CONTRADICTED` (carried 16/cleared 14 and 17/cleared 15 over five lines **including `main`**, with a
+printed pair *red at `6937aaa103` on `main`, green at `b57bfc6e43` on `main`*); **neither receipt names
+any of the fourteen files my diff touches**, checked file by file and not assumed; and both **pass
+here**. ⛔ **No fix to port: the $600$ s cap and the "0 over timeout" policy are both `gates.yml`, which
+`r7577`'s freeze reserves and which you are actively tuning (`r7609`, `r7613+1`, `+2`, `+3`).** *So it
+is yours to decide and I am not touching it.* ⌗ *Two things worth having before you do. ⑴ The margin is
+not symmetric: raising the cap helps, but so would a lower `--jobs`, and the corpus's own Q1 note is
+that contention and not the receipt is the variable. ⑵ The explicit re-run on this PR stays **unspent**:
+pushing this very note starts a fresh suite on a new head, which is a second attempt at no extra cost,
+so spending the re-run as well would buy nothing. If the new head comes back `0 over timeout`, the
+cause was contention and the measurement above is the record; if it names the same two, the cap is
+genuinely short for them under this policy and that is a number for you rather than a verdict for me.*
+
+## ⛔ `r7613+cc66.8` — **THE TWO `over timeout` RECEIPTS ARE A CLOSED LOOP, AND IT IS SELF-SUSTAINING: THIS BRANCH CANNOT REACH GREEN ON ANY DIFF UNTIL THE CAP RISES OR THE SUITE CARRY IS DRAINED**
+
+**`06ee8907` changed ONE PROSE FILE — `FOR_66.md` — and the plain suite went red again, on the same
+two receipts.** ⌗ *The step timings are the whole argument and they are cheap to check.* ⒜ The scope
+step took **$25$ s**, down from $70\,\text{m}\,53\,\text{s}$ and from the $10$-minute bound, because
+the diff is prose and your bound is in: *that half is working exactly as designed.* ⒝ **But the
+receipts step still ran $605$ s and failed** — and $605$ s is the $600$ s per-file cap plus overhead.
+⇒ **So the scope was NOT empty on a prose-only diff: `red_carry.py --union suite` put the two CARRIED
+receipts back into it.** ⒞ *Which closes the loop:*
+
+> the carry puts them in scope → the $600$ s cap times them out → `record` re-carries them → the next
+> push, whatever it contains, puts them in scope again.
+
+**Every future push on this branch is red for this reason regardless of its content, and that is now
+observed twice rather than predicted: an eleven-path landing and a prose-only note, four minutes of
+scope apart, produced the identical verdict on the identical two receipts.** ⛔ **And nothing in my
+scope breaks it.** The $600$ s cap and the `0 over timeout` policy are `gates.yml` (frozen by `r7577`,
+and yours); the carry lives in `refs/ci/carry` and is written by CI; and the two receipts are another
+seat's `P15` files, which my standing rules say to route with a patch and never to edit. *So I am not
+able to get this PR green, and I would rather say that plainly than keep pushing notes that re-enter
+the loop.* ⇒ **Two fixes exist and they are not equivalent, which is the part worth your decision.**
+⑴ *Raise the cap.* Both receipts pass here at **$321$ s** and **$308$ s**, so the margin needed is
+under $2\times$; but the cap is global and the corpus's own `Q1` note records contention at
+$\approx12\times$, so a raise that is safe for these two is a guess about the next one. ⑵ *Drain the
+suite carry, as `r7612` drained it before.* `r7612` ran **before** these two entered it — they were
+recorded at the run that timed out, not before — so the drain you already built is the instrument that
+fits, and after it the scope on a prose push is genuinely empty and the step is seconds. ⌗ *My reading
+is that ⑵ is the smaller and more honest move and ⑴ is a budget question that outlives this PR, but the
+choice is yours and either unblocks me.* ⌗ *The one standing-down comment on the PR is **edited** to
+carry this; the explicit re-run stays **unspent**, because a re-run cannot break a loop whose input is
+the ledger. I am going to stop pushing to this branch until you have acted, since each push re-reds and
+tells you nothing new.*

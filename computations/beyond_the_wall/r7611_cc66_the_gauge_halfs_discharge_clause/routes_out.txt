@@ -53,8 +53,12 @@ WHAT IS NOT THIS FILE'S, and is named so none of it is read as mine:
 
     the wall monodromy with the hinge cycle generates a group of order 27 as matrices
   [PASS] the generated holonomy group is FINITE, which is the premise of the flatness argument, and its order is P14's own 27-as-matrices rather than a number of mine   ->  |G| = 27 against P14/B59's 27
-  [PASS] ** and the curvature of the covering's canonical connection vanishes IDENTICALLY, which is L-233/F2's point and not this file's **   ->  F = 0
-  [PASS] the holonomy ALGEBRA of a finite group is zero-dimensional, so by the holonomy theorem the curvature spans nothing   ->  dim hol(G) = 0 for finite G
+  [PASS] the wall monodromy has FINITE order, so its holonomy algebra is zero-dimensional and by the holonomy theorem the curvature spans nothing -- which is L-233/F2's point and not this file's   ->  closure reaches 3
+  [PASS] CONTROL: the same closure on a generator of INFINITE order does NOT terminate, so the finiteness above is measured and not assumed   ->  closure reaches the 2000-element cap
+
+    nearest neighbour of the identity in G: 2.449490   over all 27x27 products: 2.449490
+    the control, by sampling cap (40, 120, 360): 0.187587, 0.025035, 0.012475
+  [PASS] the holonomy ALGEBRA of this group is zero-dimensional, MEASURED and not asserted: the identity is ISOLATED at a radius that refinement cannot reduce -- G is closed, so the nearest-neighbour distance over G and over all of G.G is the SAME number -- so no tangent direction is supplied and by the holonomy theorem the curvature spans nothing; and the CONTROL comes out the other way, an irrational-angle generator's radius FALLING with the sampling cap because it accumulates at the identity, which is what a non-zero algebra looks like here   ->  G isolated at 2.449490 = G.G at 2.449490; control falls 0.187587 -> 0.012475 over caps 40 -> 360
 
 ==============================================================================
  CONTROL 3 -- THE REALITY RIDER, DERIVED RATHER THAN QUOTED

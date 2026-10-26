@@ -1,0 +1,107 @@
+
+==============================================================================
+ THE PIECES THE CORPUS SUPPLIES -- READ FROM THE PAPERS, NOT RECALLED
+==============================================================================
+
+  [PASS] P14 supplies D and its domain in its own words -- READ: "the leaf is compact and the Dirac operator on it car..."   ->  found in matter_sector_paper.tex
+  [PASS] P14 states the wall kernel is ONE-CHIRALITY and gives both dimensions -- READ: "$\dim\ker_+=3$, $\dim\ker_-=0$"   ->  found in matter_sector_paper.tex
+  [PASS] P14 states the three wall modes are the kernel of ONE operator, so H_ker is a space of one field's states -- READ, not recalled   ->  found in matter_sector_paper.tex
+  [PASS] P13 sec:face-status states the FACE obstruction in its own words -- READ: "the round face carries no Dirac zero modes, so there..."   ->  found in boundary_paper.tex
+
+==============================================================================
+ CONTROL 1 -- THE CHECKER MUST CERTIFY A REAL TRIPLE THAT IS ONE, OR ITS REFUSALS MEASURE IT
+==============================================================================
+
+  The two-point real triple in its BIMODULE form, which is what the order-one condition is
+  about: H = C^2 tensor C^2, the algebra acting on the LEFT factor (a -> a tensor 1), its
+  opposite acting on the RIGHT through J, D = D1 tensor 1 + 1 tensor D1 with D1 real symmetric
+  so that D is J-symmetric, and J = (complex conjugation) o (flip of the two factors).
+  Asked of it: J^2 = +1, JD = DJ, the order-one condition, AND [D, a] non-zero so that the
+  order-one arm certifies something instead of holding because both sides vanish.
+
+  [PASS] CONTROL: J^2 = +1 on the two-point bimodule triple   ->  ||J^2-1|| = 0.00e+00
+  [PASS] CONTROL: and JD = DJ there, which is the axiom a real structure actually asks   ->  ||JDJ^-1 - D|| = 0.00e+00
+  [PASS] CONTROL: and [D, a] is NON-zero on this algebra, so the order-one arm below is not vacuous and certifies something   ->  max ||[D,a]|| = 17
+  [PASS] CONTROL: the ORDER-ONE CONDITION HOLDS EXACTLY on it -- the left action and the J-conjugated right action live in different tensor factors, which is the structure the condition encodes -- so a later failure is a finding and not my expression being wrong   ->  max ||[[D,a],Jb*J^-1]|| = 0.00e+00
+  [PASS] CONTROL, THE OTHER WAY: on the circle with D = -i d/dtheta, plain conjugation ANTI-commutes with D rather than commuting, so it is NOT a real structure for that operator -- the checker distinguishes a real structure from something that merely looks like one, which is the distinction my first version of this control got wrong   ->  ||JDJ^-1 - D|| = 26.98 but ||JDJ^-1 + D|| = 0.00e+00
+
+==============================================================================
+ CONTROL 2 -- AND A PAIR THAT VIOLATES THE ORDER-ONE CONDITION MUST BE REPORTED AS VIOLATING IT
+==============================================================================
+
+  [PASS] CONTROL: a generic non-commutative pair VIOLATES the order-one condition and the checker says so, so its verdicts discriminate   ->  max ||[[D,a],Jb*J^-1]|| = 732
+
+==============================================================================
+ CONTROL 3 -- B61's GRADING ROW RECOMPUTED HERE RATHER THAN INHERITED ON TRUST
+==============================================================================
+
+  [PASS] the grading axioms hold for gamma^5: gamma^2 = 1 and it ANTI-commutes with every gamma^mu -- B61's row, recomputed here so nothing is taken on trust   ->  ||g5^2-1|| = 0.00e+00, max ||{g5,g^mu}|| = 0.00e+00
+
+==============================================================================
+ QUESTION (1) -- IS THERE A REAL STRUCTURE J ON THE CORPUS'S OWN HILBERT SPACE?
+==============================================================================
+
+  P14's wall kernel is ONE chirality: dim ker_+ = 3, dim ker_- = 0, READ above.  A real
+  structure in the KO-dimensions where J ANTI-commutes with the grading must carry the +1
+  eigenspace ONTO the -1 eigenspace, and an antilinear BIJECTION cannot do that between spaces
+  of different dimension.  ** That is a RANK statement and it is computed, with a balanced
+  space as the control where such a J exists and is exhibited. **
+
+  [PASS] ON THE READING H = ker D: no invertible J can anti-commute with the grading, because it would have to map a 3-dimensional eigenspace onto a 0-dimensional one -- the gap is 3 and an antilinear bijection cannot close it   ->  |dim ker_+ - dim ker_-| = 3
+  [PASS] CONTROL: on a BALANCED (3,3) graded space the same count gives gap 0 AND the J is EXHIBITED, anti-commuting with the grading and squaring to +1 -- so the obstruction above is about the corpus's chirality count and not about the axiom   ->  gap = 0, ||Jgamma+gammaJ|| = 0.00e+00, ||J^2-1|| = 0.00e+00
+
+  ⚠ AND THE READING THIS DOES **NOT** CLOSE, named in PREDICTION.md before it was computed:
+    the (3,0) count belongs to ker D, not to H.  On the full L^2 of the leaf the grading is
+    balanced and this obstruction does not apply.  So question (1) is closed on the KERNEL
+    reading and OPEN on the L^2 reading, and question (2) is what decides the latter.
+
+==============================================================================
+ QUESTION (2) -- OVER WHICH LOCUS, AND IS THERE A TWO-FORM THERE FOR A CURVATURE TO BE?
+==============================================================================
+
+  P14's H and D are the LEAF's: the leaf is compact of finite proper length (READ above), a
+  ONE-dimensional domain.  The bar asks for a curvature on the compact FACE or on E.  A gauge
+  curvature is a TWO-FORM on its base, so the question has an arithmetic answer: how many
+  independent two-forms does a base of each dimension carry?  Counted by solving the
+  antisymmetry condition M + M^T = 0, never by quoting a binomial.
+
+    base dimension -> independent two-forms: p=1 -> 0, p=2 -> 1, p=3 -> 3, p=5 -> 10
+  [PASS] ** THE LEAF IS ONE-DIMENSIONAL AND CARRIES ZERO INDEPENDENT TWO-FORMS, so a connection built over it has NO OBJECT a field strength could be -- whatever its inner fluctuations are. **  This closes the route on the pieces the corpus actually supplies, and it closes it BEFORE the real structure is reached   ->  two-forms over the leaf (p=1) = 0
+  [PASS] CONTROL: and the same counter is NON-zero at p = 2, 3 and 5, so the zero above is the leaf's dimension and not my counter -- the FACE, at p = 5, would carry 10   ->  p=2 -> 1, p=3 -> 3, p=5 -> 10
+  [PASS] ** AND THE REPAIR IS WHERE THE CORPUS STATES AN OBSTRUCTION RATHER THAN SUPPLIES A PIECE: building the triple over the FACE instead needs a Dirac operator there, and P13 sec:face-status says in its own words that the round face carries NO Dirac zero modes -- read from the paper, not recalled **   ->  P13 sec:face-status, read above
+
+==============================================================================
+ QUESTION (3) -- THE ORDER-ONE CONDITION ON THE CORPUS'S OWN ALGEBRA
+==============================================================================
+
+  A = M_3(C), the Wedderburn factor B59 names, acting on the 3-dimensional wall kernel; D the
+  restriction of the leaf operator to it, i.e. ZERO on a kernel, so the kernel reading is also
+  the one where [D,a] = 0 for every a.  ** That is computed, not argued: if [D,a] vanishes the
+  order-one condition holds VACUOUSLY and gives the route nothing. **
+
+  [PASS] on the kernel, D is ZERO by construction -- it is a kernel -- so [D,a] = 0 for every element of M_3(C) and the order-one condition is satisfied VACUOUSLY   ->  max ||[D,a]|| = 0.00e+00, order-one defect = 0.00e+00
+  [PASS] ** SO QUESTION (3) ANSWERS IN THE ROUTE'S FAVOUR AND BUYS IT NOTHING, which is reported as a pass that does not help rather than folded into the closure: a condition met because both sides are zero constrains no construction **  -- and CONTROL 2 above shows the same expression CAN fail, so this is a measurement and not a tautology of my checker   ->  vacuous here (0.00e+00), violable there (732)
+
+==============================================================================
+ QUESTION (4) -- WHAT ARE THE INNER FLUCTUATIONS OF A FINITE ALGEBRA?
+==============================================================================
+
+  The order's own fork: a finite algebra fluctuates D into scalars, not a gauge field.  Here
+  that is measured on the corpus's pieces: A = sum a_i [D, b_i] over M_3(C) with D the kernel
+  operator.  ** With [D,a] = 0 the fluctuation space is not merely scalar, it is ZERO. **
+
+  [PASS] ** the inner fluctuations over the wall kernel span a ZERO-dimensional space: every a[D,b] vanishes, so there is no one-form to build a connection from, let alone a curvature **   ->  max ||a[D,b]|| = 0.00e+00, rank of their span = 0
+  [PASS] CONTROL: the same expression on the CIRCLE triple spans a space of dimension > 0, so the zero above is the corpus's pieces and not my formula for the fluctuations   ->  rank of the circle triple's fluctuation span = 11
+
+==============================================================================
+ THE VERDICT -- INSIDE THE ASSERT, WHERE IT CAN FAIL
+==============================================================================
+
+  [PASS] ** THE SPECTRAL-TRIPLE ROUTE IS CLOSED ON THE PIECES THE CORPUS SUPPLIES, AND IT CLOSES ON THE LOCUS: P14 gives H and D over the LEAF, the leaf is ONE-dimensional, and a one-dimensional base carries ZERO two-forms, so there is no object a field strength could be -- before the real structure is ever reached.  The kernel reading closes twice over, the fluctuations there being identically zero and the chirality count (3,0) admitting no grading-reversing J.  Building over the FACE instead is where P13 states no Dirac zero modes.  ** AND THIS IS NOT "NO ROUTE EXISTS": B59's composite/emergent route is untouched and unexamined **   ->  closed on the locus; (1) closed on the kernel reading; (3) vacuous; (4) zero
+  [PASS] ** AND THE PRE-REGISTERED PREDICTION IS SCORED HONESTLY: B61 priced the risk as J or the order-one condition; PREDICTION.md priced it as the LOCUS, reached first.  The locus fires and the order-one condition does NOT close the route -- it passes vacuously -- so the registered call holds and B61's expected killer is not the one that fired **   ->  locus closes it; order-one passes vacuously
+
+  22 checks, 22 pass, 0 fail
+
+==============================================================================
+ ALL CHECKS PASS
+==============================================================================
