@@ -573,6 +573,11 @@
     "since": "63175819b2d3abbfc03afa2ce8deed537d93fdf7",
     "unmeasured": true
    },
+   "receipts/L237_gates_check_declarations/G51_the_twelve_can_all_exit_non_zero_and_the_backlog_is_an_artefact.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40389310956",
+    "since": "a9f6efd08e10fcf962d54e7e9d2bbb12c36dd689",
+    "unmeasured": true
+   },
    "receipts/L239_capability_assumed/K1_a_capability_assumed_from_one_failure.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40370608627",
     "since": "63175819b2d3abbfc03afa2ce8deed537d93fdf7",
@@ -851,6 +856,11 @@
    "receipts/L_probability/S13_the_thirty_are_read_and_the_fifth_bucket_is_an_absence_guard_with_no_positive_control.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40370608627",
     "since": "63175819b2d3abbfc03afa2ce8deed537d93fdf7",
+    "unmeasured": true
+   },
+   "receipts/L_probability/S14_four_of_the_five_uncontrolled_zeros_were_a_false_negative_of_this_seats_own_proxy_and_the_fifth_had_the_read_controlled_and_not_the_counter.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40389310956",
+    "since": "a9f6efd08e10fcf962d54e7e9d2bbb12c36dd689",
     "unmeasured": true
    },
    "receipts/L_probability/S17_the_cross_read_leaves_six_of_twenty_seven_open_and_all_six_are_identity_pins_so_the_residual_is_one_missing_clause_and_not_two_instruments.py": {
@@ -1223,6 +1233,11 @@
     "since": "63175819b2d3abbfc03afa2ce8deed537d93fdf7",
     "unmeasured": true
    },
+   "receipts/P13_boundary/P13_the_almost_commutative_triple_over_the_face_supplies_a_gauge_field_the_construction_does_not_couple_and_the_orders_hilbert_space_admits_no_real_structure.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40389310956",
+    "since": "a9f6efd08e10fcf962d54e7e9d2bbb12c36dd689",
+    "unmeasured": true
+   },
    "receipts/P13_boundary/P13_the_quantum_half_carries_a_selection_test_and_it_is_unmet_in_every_slot_because_the_form_closure_selects_the_same_member.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40370608627",
     "since": "63175819b2d3abbfc03afa2ce8deed537d93fdf7",
@@ -1556,6 +1571,16 @@
    "receipts/P15_CR_cosmology/C68_all_twenty_seven_owed_rows_are_performed_and_none_is_held_so_the_owed_class_was_redundant_assertion_and_six_fall_in_the_computable_class_the_negative_asked_for.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40370608627",
     "since": "63175819b2d3abbfc03afa2ce8deed537d93fdf7",
+    "unmeasured": true
+   },
+   "receipts/P15_CR_cosmology/C69_the_four_hundred_and_seventy_five_are_adjudicated_and_meaning_held_takes_none_of_them_so_three_of_four_pinned_numbers_miss_on_one_error.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40389310956",
+    "since": "a9f6efd08e10fcf962d54e7e9d2bbb12c36dd689",
+    "unmeasured": true
+   },
+   "receipts/P15_CR_cosmology/C70_seventy_one_per_cent_of_the_two_hundred_and_seventy_two_held_rows_are_computable_so_the_negative_misses_by_sixty_one_points_and_my_band_by_twenty_nine_and_the_cost_inverts.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40389310956",
+    "since": "a9f6efd08e10fcf962d54e7e9d2bbb12c36dd689",
     "unmeasured": true
    },
    "receipts/P15_CR_cosmology/C71_the_census_is_sixty_two_per_cent_ast_and_the_backlog_has_a_nearest_function_for_eighty_three_per_cent_but_the_fourteen_that_do_not_are_one_hole_and_a_cheaper_form_lowers_the_strict_count.py": {
