@@ -5,7 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r7577` (resume; PO-24's open half, the factor of three; answered at `r7577+70.1`–`.2`; nightly reads at `.3`–`.4`). The replies to
+`r7577` (resume; PO-24's open half, the factor of three; answered at `r7577+70.1`–`.2`; nightly reads at `.3`–`.5`). The replies to
 `r7497` (stand by; the 10-22 nightly read committed as completed work on Daryl's word; answered at `r7497+70.1`). The replies to
 `r7489` ① (the decisive fit: UNDECIDED on every tail window) and the 2026-10-21 nightly read (answered at `r7489+70.1`–`.7`), read at `origin/main` `9a1ae6ebd`. The replies to
 `r7471` (69's first order: PO-24's first half, the tilt off the damping tail; scheduled tasks re-pointed to 69; answered at `r7471+70.1`–`.4`), read at `origin/main` `b77ff6f7e`. The replies to
@@ -97,6 +97,10 @@ face, charged at `r7339` ③ and taken.*
   - Run locally with that line, S34 passes **11 of 11**.
   - This is the rule 60 itself wrote into S24's `Ⓕ②` and r7298: "read over this revision's OWN range".
 - **Not edited here:** it is another seat's receipt, and no fix exists on any branch to port.
+
+## ✔ `r7577+70.5` — TO 69: **THE 10-26 NIGHTLY: 1128 PASS, 0 FAIL, 1 OVER THE 600 s TIMEOUT. THE HEAVY JOB TOOK 92 OF ITS 127 MINUTES, AND READ_INDEX IS REFRESHED FROM 1123 TO 1129 RECEIPTS**
+
+The ref `refs/ci/nightly` landed at `4e29b92`, which names nightly run 40292785339 at `40cc6ee9`. Its RUN_RESULT gives 1128 pass, 0 fail and 1 over the timeout in 5340 s of wall time, so the run has no red receipts. The receipt over the timeout is `P10_the_cubic_over_three_different_levels_is_derived_in_closed_form_and_…_double_logarithmic.py`, which exceeded 600 s. Last night's slow receipt, P16's scalar monodromy, passed tonight, so each night's single timeout is a different receipt near the 600 s line and not one fixed defect. The heavy job ran from 08:31 to 10:03 UTC, 92 of its 127 minutes, after 122 on 10-24 and 74 on 10-25: the spread comes from the runner, and none of the three nights went over the limit. The index job ran from 08:31 to 10:43, 132 of its 180 minutes, and fired with a READ_INDEX artifact traced at `40cc6ee9` (1129 receipts, red_under_trace 0, no timeouts, tree digest `5304dc1de27184b9`). That is newer than the committed index (1123 at `20ad2aa5`), and no other seat has committed a newer refresh since `6b035fa`. I copied it to `receipts/READ_INDEX.json`, and `corpus/check_index_coverage.py` reports 0 new and 0 gone. What this narrows: the corpus runs clean except for single receipts that cost about 600 s and cross the line on a slow runner. What is next is your call on whether the 600 s default needs headroom. I build nothing and stay on standby.
 
 ## ✔ `r7577+70.4` — TO 69: **THE 10-25 NIGHTLY: 1122 PASS, 0 FAIL, 1 OVER THE 600 s TIMEOUT. THE HEAVY JOB TOOK 74 OF ITS 127 MINUTES, AND READ_INDEX IS REFRESHED FROM 1117 TO 1123 RECEIPTS**
 
