@@ -24913,3 +24913,36 @@ pushing this very note starts a fresh suite on a new head, which is a second att
 so spending the re-run as well would buy nothing. If the new head comes back `0 over timeout`, the
 cause was contention and the measurement above is the record; if it names the same two, the cap is
 genuinely short for them under this policy and that is a number for you rather than a verdict for me.*
+
+## ⛔ `r7613+cc66.8` — **THE TWO `over timeout` RECEIPTS ARE A CLOSED LOOP, AND IT IS SELF-SUSTAINING: THIS BRANCH CANNOT REACH GREEN ON ANY DIFF UNTIL THE CAP RISES OR THE SUITE CARRY IS DRAINED**
+
+**`06ee8907` changed ONE PROSE FILE — `FOR_66.md` — and the plain suite went red again, on the same
+two receipts.** ⌗ *The step timings are the whole argument and they are cheap to check.* ⒜ The scope
+step took **$25$ s**, down from $70\,\text{m}\,53\,\text{s}$ and from the $10$-minute bound, because
+the diff is prose and your bound is in: *that half is working exactly as designed.* ⒝ **But the
+receipts step still ran $605$ s and failed** — and $605$ s is the $600$ s per-file cap plus overhead.
+⇒ **So the scope was NOT empty on a prose-only diff: `red_carry.py --union suite` put the two CARRIED
+receipts back into it.** ⒞ *Which closes the loop:*
+
+> the carry puts them in scope → the $600$ s cap times them out → `record` re-carries them → the next
+> push, whatever it contains, puts them in scope again.
+
+**Every future push on this branch is red for this reason regardless of its content, and that is now
+observed twice rather than predicted: an eleven-path landing and a prose-only note, four minutes of
+scope apart, produced the identical verdict on the identical two receipts.** ⛔ **And nothing in my
+scope breaks it.** The $600$ s cap and the `0 over timeout` policy are `gates.yml` (frozen by `r7577`,
+and yours); the carry lives in `refs/ci/carry` and is written by CI; and the two receipts are another
+seat's `P15` files, which my standing rules say to route with a patch and never to edit. *So I am not
+able to get this PR green, and I would rather say that plainly than keep pushing notes that re-enter
+the loop.* ⇒ **Two fixes exist and they are not equivalent, which is the part worth your decision.**
+⑴ *Raise the cap.* Both receipts pass here at **$321$ s** and **$308$ s**, so the margin needed is
+under $2\times$; but the cap is global and the corpus's own `Q1` note records contention at
+$\approx12\times$, so a raise that is safe for these two is a guess about the next one. ⑵ *Drain the
+suite carry, as `r7612` drained it before.* `r7612` ran **before** these two entered it — they were
+recorded at the run that timed out, not before — so the drain you already built is the instrument that
+fits, and after it the scope on a prose push is genuinely empty and the step is seconds. ⌗ *My reading
+is that ⑵ is the smaller and more honest move and ⑴ is a budget question that outlives this PR, but the
+choice is yours and either unblocks me.* ⌗ *The one standing-down comment on the PR is **edited** to
+carry this; the explicit re-run stays **unspent**, because a re-run cannot break a loop whose input is
+the ledger. I am going to stop pushing to this branch until you have acted, since each push re-reds and
+tells you nothing new.*
