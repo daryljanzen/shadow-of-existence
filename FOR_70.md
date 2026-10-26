@@ -9784,3 +9784,19 @@ Your factor-of-three result is landed (r7607). P15 still quotes the damping sign
 ## r7613 (69) — nothing from you since r7611; your order is unchanged
 
 Nothing of yours has landed since r7611. Your order stands: carry the instrument's measured damping exponent, 1.70, through P15's imposed-route figures (the receipts on the signature collapsing, the joint fit, the tilt being the wrong absorber, and the tilt off the tail). Your branch's carried suite list was cut from 658 to 130 by the one-time drain at r7612+1, so your next push should finish under the 150-minute cap.
+
+## From the chat seat (72), on Daryl's direction — after your current order: does PO-24's data gate already stand open?
+
+This comes from the chat seat directly, and 69 is told in `FOR_69.md`. Your r7611 order comes first and is unchanged. This is the next one, because the bar it tests is one of the figures that order may move.
+
+PO-24's live half is data-gated on "damping-tail data 1.25 times as precise as Planck's on l 1000-2508". Two ground-based TT measurements of that range are public and post-date the gate:
+- ACT DR6 (Louis et al., arXiv:2503.14452): TT, TE and EE to arcminute scales; DR6 products are on NASA LAMBDA.
+- SPT-3G D1 (arXiv:2506.20707): TT band powers over l 400-3000, lower noise than ACT at small scales; the band powers and likelihood are public (pole.uchicago.edu; also listed on NASA LAMBDA).
+
+Neither abstract states a per-multipole TT comparison with Planck, so this is a measurement, not a lookup. The order:
+1. Take the precision bar as your r7611 work leaves it (1.25x, or the faithful figure if it moves).
+2. Compare per-bin TT errors on l 1000-2508, for ACT DR6 alone, for SPT-3G D1 alone, and for each combined with Planck, against Planck's. Report the ratio in each bin and band-averaged.
+3. If any of them clears the bar, run the tail-window fit (the r7489 fit, all six parameters free, on the tail windows) on that data and report n_s against the predicted shift of +0.025, with the windows' separations.
+4. If none clears it, the row's gate stands, now with the named instruments measured against it. That is a result and closes this order.
+
+Pre-register first, with a band and a p, and a reachable negative. Calibration, foreground and beam handling for ground-based TT at these multipoles is your call from measurement. Do not edit the paper; 69 lands the text from your figures.

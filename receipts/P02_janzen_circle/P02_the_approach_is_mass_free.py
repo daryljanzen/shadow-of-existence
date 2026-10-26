@@ -6,7 +6,8 @@ carry, and the negative answer it gives to the worldline half of the branch-poin
 MARGINALLY-BOUND INFALLING GEODESIC, AS A FUNCTION OF THE FALLER'S OWN PROPER TIME, IT DOES NOT. **
 On r(tau) = (2 M alpha^2)^(1/3) sinh^(2/3)(3 tau / 2 alpha) the cube of the amplitude cancels the
 M^2 exactly, leaving K = 12[2 + sinh^-4(3 tau / 2 alpha)]/alpha^4 -- no M anywhere -- with
-K -> (64/27) tau^-4 at the approach, the matter-dominated Friedmann value.  The radial tidal
+K -> (64/27) tau^-4 at the approach, where r follows the matter-dominated law r ~ tau^(2/3)
+(the curvature is pure Weyl, not a dust Friedmann universe's 80/27 tau^-4).  The radial tidal
 component goes likewise to -4/(9 tau^2) and is likewise M-free.
 
 ** SO THE DISTINGUISHING FACT IS THE UNIVERSALITY OF THE APPROACH, NOT THE SIZE OF THE CURVATURE. **
@@ -64,8 +65,8 @@ print(f"  i.e.  K -> (64/27) / tau^4 :  ** {sp.simplify(lead - sp.Rational(64,27
 assert sp.simplify(lead - sp.Rational(64, 27)) == 0
 print()
 for s in [
- "⇒⇒ ** THE CURVATURE DIVERGES AT THE BRANCH POINT.  $K\\sim64/27\\tau^{4}$, the matter-dominated",
- "   Friedmann value exactly -- and read on the faller's OWN CLOCK the mass has cancelled out. **",
+ "⇒⇒ ** THE CURVATURE DIVERGES AT THE BRANCH POINT.  $K\\sim64/27\\tau^{4}$, with the matter-dominated",
+ "   law r ~ tau^(2/3) for the radius -- and read on the faller's OWN CLOCK the mass has cancelled out. **",
  "   *At fixed $r$ the curvature is $48M^{2}/r^{6}+24/\\alpha^{4}$ and carries $M$; it is the bead's",
  "   own $r(\\tau)$ that removes it.  The universality is of the APPROACH, not of the locus.*",
  "",
@@ -87,7 +88,7 @@ print(f"  along the bead:  {tidb}")
 print(f"  ** M-free?  dR/dM = {sp.simplify(sp.diff(tidb, M))} **")
 assert sp.simplify(sp.diff(tidb, M)) == 0
 lead2 = sp.limit(tau**2*tidb, tau, 0)
-print(f"  leading small-tau:  lim tau^2 R = {lead2}   (i.e. -4/(9 tau^2), the Friedmann stretch)")
+print(f"  leading small-tau:  lim tau^2 R = {lead2}   (i.e. -4/(9 tau^2); a dust Friedmann universe's is -2/(9 tau^2))")
 assert sp.simplify(lead2 + sp.Rational(4, 9)) == 0
 print()
 for s in [
@@ -195,3 +196,27 @@ for s in [
  "   and the continuation through it is analytic.*",
 ]:
     print("  " + s)
+
+# =====================================================================
+# PART 3 -- WHICH HISTORY: the 64/27 approach is the vacuum Kasner (-1/3, 2/3, 2/3) metric's, not a dust universe's
+tk = sp.symbols('tk', positive=True); xs = sp.symbols('x1 x2 x3', positive=True); XK = [tk, *xs]
+pk = [sp.Rational(-1, 3), sp.Rational(2, 3), sp.Rational(2, 3)]
+gk = sp.diag(-1, *[tk**(2*q_) for q_ in pk]); gki = gk.inv()
+Gm = [[[sum(gki[i, l]*(sp.diff(gk[l, j], XK[k]) + sp.diff(gk[l, k], XK[j]) - sp.diff(gk[j, k], XK[l])) for l in range(4))/2
+        for k in range(4)] for j in range(4)] for i in range(4)]
+def _Rk(i, j, k, l):
+    return sp.diff(Gm[i][j][l], XK[k]) - sp.diff(Gm[i][j][k], XK[l]) + sum(Gm[i][k][m]*Gm[m][j][l] - Gm[i][l][m]*Gm[m][j][k] for m in range(4))
+Kk = 0; Ric = sp.zeros(4)
+for i in range(4):
+    for j in range(4):
+        for k in range(4):
+            for l in range(4):
+                v = sp.simplify(_Rk(i, j, k, l))
+                if v != 0: Kk += gk[i, i]*v*v*gki[j, j]*gki[k, k]*gki[l, l]
+                if i == k: Ric[j, l] += v
+assert sp.simplify(Ric) == sp.zeros(4)
+assert sp.simplify(Kk - sp.Rational(64, 27)/tk**4) == 0
+ad = tk**sp.Rational(2, 3)
+assert sp.simplify(12*((sp.diff(ad, tk, 2)/ad)**2 + (sp.diff(ad, tk)/ad)**4) - sp.Rational(80, 27)/tk**4) == 0
+print("\nPART 3: Kasner (-1/3,2/3,2/3) is vacuum with K = 64/(27 t^4): the approach's history.  A dust Friedmann")
+print("        universe has K = 80/(27 t^4): same r ~ t^(2/3) law for the radius, different curvature.  PASS")

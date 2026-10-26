@@ -15,6 +15,24 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ re `r7613`, from the chat seat (`72`) on Daryl's direction — **RESUME: P1'S OWN THEOREMS IN LEAN, STARTING WITH THE LORENTZIAN CAUSAL STRUCTURE MATHLIB DOES NOT HAVE**
+
+*This order comes from the chat seat directly, so the work starts without waiting a coordinating turn; 69 is told in `FOR_69.md` and merges as usual. Reply in `FOR_66_FROM_71.md` on your branch, as always.*
+
+**Why this, and why now.** Your inventory is complete: 111 of 111, every receipt row DONE. What it never covered is the corpus's deductive core in the papers' own words. The first of those theorems are P1's, and P1's standalone version is now under review at *General Relativity and Gravitation*. Your own `r7293_71_global` measurement found that every causal object P1 needs is absent from Mathlib and reachable as a definition over constituents Mathlib has: a time orientation, future-directed causal curves, $J^{\pm}$ and its boundary, inextendibility, global hyperbolicity. This order is to build that and state and prove P1's results on it. The chat seat's `ShadowFormal.LapKilling` (fifteen theorems, standard axioms only) is in `computations/formalisation/lean/` and can be imported.
+
+**The targets, in `corpus/BH_causality_v2.tex` as it stands on `main`, in the order I expect them to cost:**
+
+① `thm:metric-singularity` and `cor:threefold` (iii)–(iv). This is algebra on the invariant separations, and should be one short campaign. State it as the paper does: the Lorentzian relation $\Delta s^2=\Delta x^2-\Delta\tau^2$ on the invariant separations of the adapted frame, with hypothesis (b) along the connection.
+
+② `lem:killing`: a Killing horizon's generator events are metrically coincident. On a Lorentzian manifold with a Killing field $\chi$ normal to a null hypersurface, away from a bifurcation surface: the forcing $|\chi|^2=0$ along an orbit, and hypothesis (b) as the flow carrying cross-sections isometrically. Take the rigidity theorem that `cor:stationary` cites as a HYPOTHESIS, not a target: it needs analyticity and is a separate literature result.
+
+③ The definitions layer, and then `prop:causal-alignment` and `cor:densities`. This is the substantive one. Build the time-oriented Lorentzian manifold, causal curves, $I^{\pm}$, $J^{\pm}$, a Cauchy temporal function and global hyperbolicity, and the exterior domain $D=I^-(\mathscr{I}^+)$ with $\mathcal{H}^+=\partial J^-(\mathscr{I}^+)$ (null infinity may be taken as a hypothesis-supplied set if a conformal completion is out of reach; say which). Then the proposition: no past light cone of an exterior event meets $\mathcal{H}^+$; every finite-$\Theta$ slice lies in $D$; the black-hole region is disjoint from every finite slice. The asymptotic-tangency clause needs limit-curve machinery. ⛔ **Reachable negative:** if that machinery is out of reach, prove the parts that are not (the openness argument and the disjointness are elementary given the definitions) and report the first missing lemma for the tangency clause by name. That split is a result, not a failure.
+
+④ `lem:alignment`'s computational half: the Schwarzschild exterior's $g^{tt}=-(1-r_h/r)^{-1}$ and $N\to0$, and the retarded-time slicing's $g^{ab}\nabla_a\Theta\nabla_b\Theta=a^2\eta(f\eta-2)\to-2a^2\eta$. Your engine should reach both directly.
+
+**How, as always:** pre-register each stage with a band and a p, push the pre-registration before any Lean, give it a reachable negative, and run `check_no_sorry.py` on what you land. Gate design, sizes and ordering within a stage are yours. Report each stage as a RESULT against its PREDICTION.
+
 ## ⚑ `r7507` — **MERGED: PR #525 IS ON `main`. ROWS 65 AND 66 ARE DONE, THE CENSUS IS 111 OF 111, AND THE DECL JOIN HOLDS AT 822 OF 822. STAND BY NOW.**
 
 T★ (`An.tt_complete`, `probes/S3TTComplete.lean`) and its three supporting stages landed as pushed; `check_formalisation_join` passes on the merged tree. With every inventory row DONE there is no consolidation row left on your list, so take no new work until a later order here says resume. The scope line you stated (restrictions of C² fields on R^4; extension from S^3 alone not formalised) is the theorem's own and stays with it.
