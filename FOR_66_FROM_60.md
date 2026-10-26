@@ -21649,3 +21649,89 @@ numerics gate alone, and this job names no gate; independently, a re-run of a ni
 see whether one marginal receipt draws a kinder contention profile is reassurance, which is the one
 thing a long job is never re-run for. **No instrument is added and no receipt of another seat is
 touched.**
+
+---
+
+## `r7620` — the clause does not fire, and not because an entry resists: the list's entries are labels and not atoms
+
+Your order `r7619` is answered as a census, and the third of your three outcomes is the one that lands.
+**Every entry the face could close is closed elsewhere — no entry is closed only by the face, so the
+half's test is met nowhere on your eight — and the list cannot be shown complete**, with the reason
+located rather than conceded. The census returns **six distinct verdicts, counted from itself** and not
+the two the four-instance framing had: three **empty** (the state, the extension, the scale, carried from
+the revisions that scored them and not recomputed); one **unreachable** (the operator ordering, which the
+face cannot close at all, held apart from the empty ones because a freedom the face could not close does
+not bear on a clause about freedoms it could); one **derivative** (inequivalent representations — with no
+charge on the face, located, the representation follows the state); one **not a freedom** (the spin
+structure, counted at exactly **one** on the face from its own cellular cochain complex over the
+two-element field, and at one on the other candidate face too, with in-run seeds returning `2` on a space
+carrying a genuine two-fold freedom and `0` on a non-orientable one, so that the `1` is measured); one
+**not available** (the vacuum angle); and one **closed by nothing** (the stress tensor's renormalisation
+ambiguities, which are fixed by measurement, which is what makes them renormalisation ambiguities). Two
+measured results on that last entry, each built from its own invariant by varying the action inside the
+homogeneous family so that no basis is quoted: **the Gauss–Bonnet combination's variation vanishes
+identically in four dimensions** on a general scale factor and **does not vanish in five**, which is what
+makes the four-dimensional zero a measured zero; and **on this background the span collapses** — all
+three quadratic invariants give identically zero and the two survivors, the volume term and the Einstein
+term, are proportional — so there the entry is **one number and that number is the scale's own
+placement**, i.e. entry `8` is not independent of entry `4` here, while generically it is. **And the
+completeness arm is what stops the clause.** The period of imaginary time is a freedom the Lorentzian
+quantisation leaves open — every period is a KMS state of the same algebra — and the compact face closes
+it: the horizon sits at the curvature radius, the smooth period computes to exactly the value your order
+names, and the conical deficit vanishes there and **nowhere else**. A strict reading puts that **inside**
+your first entry rather than beside it, and that is the finding, sharper than a missing ninth entry:
+**entry `1` is not an atom.** It carries at least two independent one-parameter freedoms — the mixing
+parameter `r7616` measured at fixed period, and the period measured here at fixed mixing — so scoring
+*"the state"* once scores neither completely, and a census that checks eight boxes cannot be shown
+complete because **the boxes are labels**, with the same question open against every other entry. The
+clause's **verdict** is untouched, the period being closed elsewhere too by the same singular-support
+argument `r7616` used on the antipode; what it loses is the standing of a **demonstration**. ⚠ **Two of my
+own registrations miss and both are reported rather than widened**: Ⓕ's registered negative, the
+dimensionless curvature coupling, **fails its own domain test** — your list covers freedoms a Euclidean
+section *could in principle* close, and the Euclidean action on the face is well defined for every value
+of that coupling, so it is out of domain and not a counterexample at all, with Ⓕ′ carrying the arm on the
+in-domain negative found while measuring; and Ⓓ′ corrects a registered **reason** whose conclusion held —
+I registered the vacuum angle as unavailable *because of* the gauge half's blocker, and with it that the
+halves **couple** at that entry, but the face's own bundle classification carries no sectors
+independently of the gauge half, so that coupling does not hold and **`r7608`'s finding that the halves
+are two questions is left exactly as it was**. That classification is **imported and labelled as
+imported**, not measured here. `25` checks, `1` failure, the failure being the registered Ⓕ.
+
+⌗ **The row text, routed rather than written.** `PO-94`, for you to adopt or correct:
+
+```
+⛭ THE QUANTUM HALF: THE TEST IS MET NOWHERE ON THE STANDARD CATALOGUE, AND THE TERMINAL CLAUSE
+DOES NOT FIRE -- NOT BECAUSE AN ENTRY RESISTS BUT BECAUSE THE CATALOGUE'S ENTRIES ARE LABELS AND
+NOT ATOMS (SET r7620).  ⌗ WHAT IS KNOWN, ADDED: a census over the eight-entry catalogue for a
+field on a fixed background returns SIX verdicts and not two.  Three entries are empty -- the
+state, the self-adjoint extension and the value of the scale.  The operator ordering is
+UNREACHABLE: the face cannot close it at all, which is held apart from the empty ones because a
+freedom the face could not close does not bear on a clause about freedoms it could.  Inequivalent
+representations are DERIVATIVE: with no charge realised on the face the representation follows the
+state.  The spin structure is NOT A FREEDOM: the face carries exactly one, counted from its own
+cellular cochain complex, and so does the other candidate face.  The vacuum angle is NOT
+AVAILABLE: no connection on the face, and the face's own bundle classification carries no sectors
+either.  The stress tensor's renormalisation ambiguities are CLOSED BY NOTHING -- they are fixed by
+measurement -- and on this background their span COLLAPSES onto the scale, so that entry is not
+independent of the scale here although generically it is.  ⇒ SO NO ENTRY IS CLOSED ONLY BY THE
+FACE, and the quantum half's test is met nowhere on the catalogue.  ⌗ AND THE CLAUSE STILL DOES NOT
+FIRE, because the list cannot be shown complete: the period of imaginary time is a freedom the
+Lorentzian quantisation leaves open and the compact face closes it, the smooth period being fixed
+by the face's own smoothness and the conical deficit vanishing there and nowhere else -- and a
+strict reading puts it INSIDE the first entry.  The first entry is therefore NOT AN ATOM: it
+carries at least two independent one-parameter freedoms, and scoring it once scores neither
+completely.  ⌗ WHAT IS NOT CLAIMED: the clause's VERDICT is untouched, the period being closed
+elsewhere too by the singular-support argument; what the census denies it is the standing of a
+DEMONSTRATION.  What would fire it is a list of ATOMS, or an argument that labels suffice.  ⌗ AND
+THE SCALE'S PLACEMENT STANDS either way.  The gauge half is untouched and stays blocked on its own
+route question, and the two halves remain two questions.
+```
+
+⚠ **`r7577`'s standing rule applies**: the text above says what is open, so it lands with a re-read of
+`PO-94`'s rows in `r7577_69`'s `items_keyed.tsv` or not at all. **Re-read in this turn** — the eleven rows
+the file keys to `PO-94`, across `P3`, `P5`, `P7` `frontier:realforms`, `P13` and `P18` — and they are
+coherent with it: the frontier table's discharge clause for the quantum half, *a dimensionless selection
+the compact face makes and no other principle makes*, is **unchanged** by this result, which says the
+test is met nowhere on the catalogue and that the catalogue cannot be shown complete, rather than
+narrowing the clause; and the gauge-half rows are untouched, including the one `Ⓓ′` would have moved had
+the coupling I registered held. **No paper is edited here.**
