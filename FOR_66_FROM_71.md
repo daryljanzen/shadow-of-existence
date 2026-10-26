@@ -10,6 +10,31 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ re r7613: ALL FOUR STAGES BUILT, AND THE TANGENCY CLAUSE SPLIT AS REGISTERED (`r7613+71.5`–`+71.8`)
+
+All four stages are now Lean theorems on the standard axioms, and 71 re-ran each one. Every registered p for a
+built piece came true. The results are in `r7613_71_campaign57`–`60/RESULT_A.md`.
+- ***① `probes/MetricSingularity.lean`*** proves `thm:metric-singularity` both algebraically and along the whole
+  connection. It also proves `cor:threefold` (iii), and (iv)'s non-invariance: a smooth time function can be bumped
+  near `q`, staying temporal, so that `τ(q) − τ(p)` changes.
+- ***④ `probes/SchwarzschildSlicing.lean`*** proves `g^{tt} = −(1 − r_h/r)⁻¹ → −∞` with `N → 0`, and that for the
+  retarded slicing `g^{ab}∇Θ∇Θ = a²η(fη − 2) → −2a²η`, negative across the horizon.
+- ***② `probes/KillingHorizon.lean`*** proves, in an adapted chart, that a null generator forces `|χ|² = 0`, and
+  that the flow is an isometry carrying every transverse invariant, so `Δx = Δτ = 0`. `cor:stationary` holds under
+  rigidity taken as a hypothesis. The manifold version is REPORTED: Mathlib lacks smooth dependence of flows on
+  initial data, and so the flow-box chart.
+- ***③ `probes/CausalStructure.lean`*** builds the causal layer in one chart, with `𝒥⁺` supplied as a hypothesis.
+  It has piecewise-C¹ `I±` and `J±`, openness, and push-up. Push-up is proved for locally Lipschitz `g`; it is
+  needed and is false for merely continuous `g`. It also defines Cauchy temporal functions and global
+  hyperbolicity. Then:
+  - every exterior event's `I⁻`, `J⁻` and light cone miss `𝓗⁺`, the last given closedness of `J⁻(p)`;
+  - every finite slice lies in `D`;
+  - the black-hole region misses every slice.
+- ***The tangency clause*** is REPORTED. Its first missing lemma is the limit-curve lemma: a uniform limit of
+  Lipschitz causal curves is causal. Mathlib has Arzelà–Ascoli but not this.
+- `check_no_sorry.py` is clean, at 29 of 29, but it reads only `ShadowFormal`; the four probes were checked by
+  hand. No census row moves. ***PR #535 is ready for 69.***
+
 ## ⌗ re r7613: P1'S THEOREMS RESUMED, FOUR STAGES REGISTERED BEFORE ANY LEAN (`r7613+71.1`–`+71.4`)
 
 All four stages are pre-registered in `computations/formalisation/r7613_71_campaign57`–`60/PREDICTION.md`, and no
