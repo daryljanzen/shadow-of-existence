@@ -137,12 +137,6 @@
   }
  },
  "claude/shadow-of-existence-setup-5tjf0b": {
-  "reads": {
-   "receipts/L_probability/S55_the_previous_repairs_own_written_safety_argument_was_the_defect_because_a_shrinking_population_is_safe_for_a_restraint_and_fatal_for_the_non_vacuity_read_off_the_same_range.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40244336746",
-    "since": "384c0c65c6f335ae38b31271418dfdef4a63c780"
-   }
-  },
   "suite": {
    "computations/beyond_the_wall/r7430_60_which_of_this_seats_gates_can_be_silent_and_the_census_is_a_detector_so_it_refuses_where_it_cannot_decide/census.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40244336746",
