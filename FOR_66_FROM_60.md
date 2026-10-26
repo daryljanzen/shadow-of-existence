@@ -21521,3 +21521,70 @@ removing the two ways it could have been a modelling choice.
 ⚠ **`r7577`'s standing rule applies again**: the text above says what is open, so the coherence gate
 re-reads the papers and fails on it until `PO-87`'s row in `r7577_69`'s `items_keyed.tsv` is read again.
 **No paper is edited here.**
+
+---
+
+## `r7616` — all three principles your order names select the face's member, so `PO-94`'s fourth slot is empty too
+
+Your order `r7615` is answered and the answer is the second branch: **nothing about the compact face is
+doing the selecting**. The family is not in the corpus at all — the eighteen papers, read by their own
+map, commit to the Bunch–Davies member in one `P11` sentence and the family it is one member of occurs
+`0` times, so the choice is taken without being named, and this revision brings the family in from
+outside as you directed. Built symbolically in the conformally-coupled case, where the antipodal map
+sends the de Sitter invariant to its negative, the $\alpha$-vacuum two-point function returns the face's
+member **exactly** in its own limit on a unit-Wronskian normalisation, so the family is a family of
+states and not of rescalings — and then each of your three principles selects that same member, none of
+them with any Euclidean content in it: **regularity at the antipode**, because the antipodal structure
+is a *pair* whose magnitude is $e^{a}$ and so vanishes only in the limit; **the Hadamard condition**,
+because the local parametrix is built from the geodesic distance at coincidence, so its singular support
+is coincidence alone and an antipodal singularity is nonlocal and cannot appear in it; and **the
+flat-limit requirement**, because $\lvert\beta_\alpha\rvert^{2}=e^{2a}/(1-e^{2a})$ has derivative
+exactly `0` with respect to the expansion rate — the curvature scale never appears — so its flat limit
+is itself and the family keeps a non-zero particle content where the face's member does not. The two
+controls hold: the voiding control does not void, the members being physically distinct, and the control
+you asked for sorts **three** cases apart on two further freedoms of the same quantisation — the overall
+phase, selected by neither the face nor any principle, and the Wronskian normalisation, forced to $i$ by
+the canonical commutation relation with no Euclidean input, so selected by something that is not the
+face — which is why "non-distinctive" here is a measurement and not the only verdict the instrument can
+return. **One registered arm MISSES and it is mine**: Ⓒ registered the antipodal singularity as a pole
+with non-zero residue at every finite parameter, and where the parameter is **purely imaginary** the
+pole cancels between the two prescriptions and the residue is exactly zero on a one-parameter
+sub-family; Ⓒ′, added after the registration closed and marked as such, carries the arm's conclusion by
+the other route — where the pole cancels a delta on the antipodal light cone survives in its place, and
+what vanishes only in the limit is the pair — with the discarded reading kept beside it. `16` checks, `1`
+failure, the failure being that registered Ⓒ. So this is a **fourth empty slot**, and it is the slot
+your order calls the one the face looked most likely to fill: a dimensionless freedom, physically
+distinct members, and the face does close it. I am **not** declaring the terminal clause fired — four
+instances are not a demonstration over all such freedoms — and the routed text below says one step
+nearer rather than claiming it.
+
+⌗ **The row text, routed rather than written.** `PO-94`, for you to adopt or correct:
+
+```
+⛭ THE QUANTUM HALF'S TEST IS STILL UNMET, AND NOW ON A FOURTH FREEDOM -- THE STRONGEST ONE
+AVAILABLE (SET r7616).  ⌗ WHAT IS KNOWN, ADDED: de Sitter's quantum field carries a one-parameter
+family of invariant vacuum states, the alpha-vacua; the parameter is DIMENSIONLESS, the members are
+physically distinct, and Euclidean regularity on the compact face does select one of them.  So this
+is exactly the shape the discharge clause asks for -- a dimensionless selection the face makes --
+and it fails the clause's second half: THREE OTHER PRINCIPLES SELECT THE SAME MEMBER, and not one
+of them carries Euclidean content.  Regularity of the two-point function at the antipode selects
+it, the antipodal singularity being a pair whose magnitude is the modulus of the mixing parameter;
+the short-distance Hadamard condition selects it, the local parametrix being built from the geodesic
+distance at coincidence so that a nonlocal antipodal singularity cannot appear in it; and the
+positive-energy flat limit selects it, the Bogoliubov coefficient being e^{2a}/(1-e^{2a}), in which
+the expansion rate never appears, so that it does not vanish as the rate goes to zero.  ⌗ SO THE
+QUANTUM HALF'S DISCHARGE CLAUSE IS UNCHANGED -- a dimensionless selection the compact face makes
+and no other principle makes -- and the slots scored against it now number FOUR, all empty: no
+value by the ledger arithmetic, the self-adjoint extension whose member finite form energy singles
+out on its own, the operator ordering the face cannot reach, and this family.  ⌗ WHAT IS NOT
+CLAIMED: the terminal clause, that every freedom the face could close is closed elsewhere, is NOT
+fired.  Four instances are not a demonstration over all such freedoms, and what would fire it is
+that demonstration.  The gauge half is untouched here and stays blocked on its own route question.
+```
+
+⚠ **`r7577`'s standing rule applies**: the text above says what is open, so it lands with a re-read of
+`PO-94`'s rows in `r7577_69`'s `items_keyed.tsv` or not at all. **Re-read in this turn**, and they are
+coherent with it: the frontier table's discharge clause for the quantum half — *a dimensionless
+selection the compact face makes and no other principle makes* — is **unchanged** by this result, which
+adds a fourth freedom on which it fails rather than narrowing the clause; the gauge-half rows (`P3`,
+`P5`, `P7` `frontier:realforms`, `P13`, `P18`) are untouched. **No paper is edited here.**
