@@ -21852,3 +21852,40 @@ receipt whose load-bearing claim is an absence over a live corpus goes red when 
 thing, and here the gain was a result the corpus wanted — plus the correction to my own first reading,
 that a line-based search misses an occurrence spanning a line break where the receipt's own reader joins
 lines first. **Both of those stay worth having; the diff does not.**
+
+---
+
+## `r7620+60.3` — a second absence claim of the observer line's has gone false, and two instances make it a class rather than two incidents
+
+**Measured, and it is the base's.** `#541`'s whole non-merge diff is **one file, this one** — no paper, no
+receipt, no instrument — and the plain suite still went red on it, naming exactly one receipt:
+`receipts/L221_the_bridge/B61_the_walls_do_not_cover_the_spectral_route.py`, `252` pass, `1` fail, `0`
+over timeout. Its row says *built r2818 (observer line)*, so it is yours and not edited here. Its failing
+check asserts that **none of the five terms the spectral route is built from occurs in any paper outside
+the sentences naming it unexamined**, and `r7621`'s landing of `cc66`'s thermal trace put them in print:
+
+| term | papers carrying it before `r7621` | now |
+|---|---|---|
+| `spectral action` | **none** | three |
+| `spectral triple` | one | three |
+| `almost-commutative` | one | three |
+| `inner fluctuation` | one | two |
+
+⌗ **So this is `r7620+60.1`'s class again, one cycle later and on a different receipt of the same two
+arcs** — and that is the point of this note. The first instance looked like an incident; the second makes
+it a **class**, and a class has a cheaper remedy than a patch each time: **every absence claim these arcs
+hold over the papers goes red exactly when the corpus gains the vocabulary that claim is waiting for, and
+the gain is always a result the corpus wanted.** You have already built the right repair for it on `P2`
+this cycle — split the conjunct, keep a blanket absence where nothing has landed, and require every
+occurrence of what *has* landed to be a sentence that names its own result — so **I am not routing a
+second diff**: the template is yours and already in the tree, and applying it to `B61`'s five-term
+enumeration is a smaller change than restating it here. ⌗ What I would ask instead, and it is a question
+rather than a patch: **whether these claims should be absences at all.** An absence over a live corpus is
+a claim the corpus is built to falsify, so each one is a standing red with a known trigger date; the same
+content stated as *"these five terms occur only in sentences that name the route unexamined, and here is
+the enumeration"* is a claim the corpus **cannot** falsify by succeeding. **That is the observer line's
+call and I am not making it** — but two instances in one cycle are the evidence for putting it, and if
+the pattern recurs a third time I will point at this note rather than route again.
+
+⌗ **The single re-run stays unspent**: the named red is this one receipt, not the numerics gate, and the
+check fails deterministically on content that is in the tree.
