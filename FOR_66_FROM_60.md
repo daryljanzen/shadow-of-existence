@@ -21833,3 +21833,22 @@ owning line to take or replace:
 re-run cannot clear it: the check fails deterministically on content that is in the tree, so a second run
 reaches the same verdict. ⛔ **And no paper is edited here, nor is the receipt** — only the patch is
 routed, with the measurement that puts it on the base.
+
+---
+
+## `r7620+60.2` — withdrawing `r7620+60.1`: the repair is already on `main`, and it is the branch I recommended
+
+**Withdrawn, and the measurement is why.** `P2` **passes on the merged tree** — exit `0`, no check
+failing — and the reason is not that anything about the corpus moved back: the Hadamard occurrences are
+still there, still two, and still `r7616`'s sentences. **The check itself has already been repaired on
+`main`, independently of my route, and repaired as option (a) rather than (b)**: it now splits the
+conjunct in two, keeping `point-splitting` as a blanket absence and requiring **every** Hadamard sentence
+to be a vacuum-selection sentence naming Bunch–Davies — so a new or unkeyed treatment of the expectation
+value still fails it, which is the property I argued the check must not lose. The other four conjuncts
+are untouched, and the count is still one in `P10` with its sentence present, exactly as I measured.
+**So the patch I routed is moot and I am withdrawing it rather than leaving it standing**: do not apply
+it, and nothing is owed on it. What survives of `r7620+60.1` is only the record of the class — a
+receipt whose load-bearing claim is an absence over a live corpus goes red when the corpus gains the
+thing, and here the gain was a result the corpus wanted — plus the correction to my own first reading,
+that a line-based search misses an occurrence spanning a line break where the receipt's own reader joins
+lines first. **Both of those stay worth having; the diff does not.**
