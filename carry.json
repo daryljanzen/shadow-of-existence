@@ -135,14 +135,5 @@
     "unmeasured": true
    }
   }
- },
- "claude/youthful-darwin-xvkwh7": {
-  "suite": {
-   "receipts/P10_canonical_time/P10_the_cubic_over_three_different_levels_is_derived_in_closed_form_and_its_low_level_region_carries_a_nested_logarithm_so_the_bare_sum_is_double_logarithmic.py": {
-    "gates": [],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40336168816",
-    "since": "b179b2254410422d5077177783efde80e6ca6493"
-   }
-  }
  }
 }
