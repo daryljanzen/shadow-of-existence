@@ -1,0 +1,57 @@
+  window l = 1000-2508; bar 1.44x Planck (r7611+70.2)
+
+      Planck plik_lite: 215 TT bins, 101 centred in the window, l_eff 1004-2492, effective sky (lowest bins) 0.551
+      ACT DR6 CMB-only: 45 TT bins, 26 centred in the window, l_eff 1000-2476, effective sky (lowest bins) 0.061
+    SPT-3G D1 SPT-lite: 52 TT bins, 30 centred in the window, l_eff 1024-2474, effective sky (lowest bins) 0.019
+
+  PER-BIN: Planck bins in the window, R = (frac err x sqrt N_eff)_Planck / (same)_X, X interpolated in l
+        l   Planck   R ACT   R SPT
+     1004   0.0471   0.605   0.257
+     1031   0.0459   0.597   0.256
+     1058   0.0440   0.581   0.252
+     1085   0.0429   0.579   0.250
+     1112   0.0443   0.609   0.259
+     1139   0.0440   0.612   0.259
+     1166   0.0442   0.619   0.264
+     1193   0.0436   0.613   0.259
+     1220   0.0449   0.633   0.263
+     1247   0.0458   0.646   0.268
+     1274   0.0471   0.662   0.277
+     1301   0.0477   0.669   0.289
+     1328   0.0486   0.693   0.302
+     1355   0.0474   0.688   0.293
+     1382   0.0487   0.715   0.302
+     1409   0.0470   0.698   0.297
+     1436   0.0483   0.724   0.307
+     1463   0.0497   0.749   0.312
+     1490   0.0499   0.751   0.311
+     1529   0.0625   0.912   0.383
+     1580   0.0743   1.039   0.432
+     1631   0.0873   1.201   0.474
+     1682   0.0950   1.313   0.509
+     1733   0.0950   1.326   0.515
+     1784   0.1073   1.480   0.554
+     1835   0.1335   1.733   0.634
+     1886   0.1634   2.033   0.646
+     1937   0.1868   2.234   0.671
+     1988   0.2161   2.527   0.766
+     2063   0.3151   3.133   1.012
+     2162   0.4514   3.533   1.082
+     2261   0.7299   4.535   1.257
+     2360   0.8651   4.913   1.285
+     2459   1.3849   6.424   1.509
+  ACT overtakes Planck (R > 1) from l = 1580.0
+  SPT overtakes Planck (R > 1) from l = 2063.0
+
+  BAND-AVERAGED (alone)
+                           amp    ampC    tilt   sigma_ns(TT, A+tilt)
+      Planck plik_lite   1.000   1.000   1.000   0.0148
+      ACT DR6 CMB-only   0.874   0.785   1.224   0.0121
+    SPT-3G D1 SPT-lite   0.356   0.369   0.512   0.0288
+
+  COMBINED WITH PLANCK, per-l Fisher integrated over l = 1000-2508 (diagonal, per-multipole model)
+                      f_X  amp indep  amp overlap  tilt indep  tilt overlap  clears 1.44?
+      Planck + ACT  0.061      1.322        1.141       1.672         1.511  YES
+   Planck + SPT-3G  0.019      1.056        1.029       1.111         1.094  no
+
+  Planck's own effective sky from its lowest bins: 0.551
