@@ -2953,6 +2953,30 @@
    }
   }
  },
+ "claude/shadow-of-existence-setup-wgcmvt": {
+  "reads": {
+   "receipts/L221_the_bridge/B59_the_routes_are_enumerable_and_one_is_absent.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40424857204",
+    "since": "2f5ee2d90cdf39454b46c265bc010b03bb8f8cb8",
+    "unmeasured": true
+   },
+   "receipts/L221_the_bridge/B61_the_walls_do_not_cover_the_spectral_route.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40424857204",
+    "since": "2f5ee2d90cdf39454b46c265bc010b03bb8f8cb8",
+    "unmeasured": true
+   },
+   "receipts/P13_boundary/P13_the_almost_commutative_triple_over_the_face_supplies_a_gauge_field_the_construction_does_not_couple_and_the_orders_hilbert_space_admits_no_real_structure.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40424857204",
+    "since": "2f5ee2d90cdf39454b46c265bc010b03bb8f8cb8",
+    "unmeasured": true
+   },
+   "receipts/P13_boundary/P13_the_alpha_vacua_are_a_fourth_empty_slot_because_three_principles_without_euclidean_content_select_the_member_the_face_selects.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40424857204",
+    "since": "2f5ee2d90cdf39454b46c265bc010b03bb8f8cb8",
+    "unmeasured": true
+   }
+  }
+ },
  "claude/youthful-darwin-xvkwh7": {
   "suite": {
    "receipts/P10_canonical_time/P10_the_cubic_over_three_different_levels_is_derived_in_closed_form_and_its_low_level_region_carries_a_nested_logarithm_so_the_bare_sum_is_double_logarithmic.py": {
