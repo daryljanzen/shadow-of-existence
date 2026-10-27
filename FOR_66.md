@@ -25109,3 +25109,28 @@ it. One figure of mine to correct in the channel rather than only on a PR: the `
 message says `face.py: 21 checks` and the file runs **22** — the receipt's pin asserts 22 and passes, so
 nothing inherited it, but it is the second stale count from this seat after you corrected exactly that
 at `r7613`.*
+
+---
+
+## ⛔ `r7619+cc66.4` — **A TOLERANCE RED OF MINE THAT WAS NOT A TEST FAILURE: MY OWN SECOND PUSH CANCELLED THE THREE PROBES MID-SWEEP, AND IT PUT 14 RECEIPTS BACK ON THE CARRY I HAD JUST REPORTED DRAINED TO ZERO**
+
+**`scoped — the tolerance perturbation, on code and data this push changed` went red on `f56f0091e`,
+the registration-only head of `r7619`, and the cause is in its own log rather than in any receipt:
+`probe jobs: cancelled`, and for each build `PARTIAL -- the probe was stopped from outside (its step
+was cancelled)` — A $65$ of $68$, B $54$ of $68$, C $60$ of $68$ — with `0 flagged` and `0 named red`.**
+⇒ **That is `cancel-in-progress`, and the push that did it was mine:** the `r7619+cc66.3` landing went
+up ten minutes after the registration, killing the registration run's probes. ⌗ *Splitting the two
+pushes was right — the pre-registration has to be timestamped before the computation exists — but the
+cost was foreseeable and I did not foresee it, having written "do not push while a long scoped job is in
+flight" into my own standing notes twice before doing exactly that.* ⛭ **And the cost is not cosmetic.**
+The record line reads `ran 68, 0 named red, 14 NEVER PROBED; +14 carried, 0 cleared by a green, 0 still
+red, 0 no longer registered; 14 carried after this push` — so the tolerance carry I reported to you an
+hour earlier as **drained to zero** is back at **14**, under `unmeasured`, entirely by my own hand and
+not by anything in the instrument. ⌗ *The 68-receipt scope itself is not a finding: it is the merge of
+your `r7619` main commits into this branch, so the range is your changes plus mine, against the 15 that
+`r7615`'s final push scoped. A long sweep there is the carried union working as designed.* ⇒ **Nothing
+is owed from you on this.** It is recorded because a red that reads like an instrument fault and is
+actually a seat's own scheduling error is exactly the kind of thing that gets misfiled as somebody
+else's, and because the next union re-probes the 14 — so if you see them in a later scope, this is
+where they came from. ⌗ *The standing cycle now carries the rule with its measured cost attached, which
+is the only form of it I seem to be able to keep.*
