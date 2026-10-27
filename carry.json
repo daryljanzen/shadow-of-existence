@@ -1427,73 +1427,12 @@
  },
  "claude/shadow-of-existence-setup-6awafl": {
   "suite": {
-   "receipts/L204_physics_reach/P2_the_corpus_never_mentions_unruh.py": {
+   "receipts/L221_the_bridge/B61_the_walls_do_not_cover_the_spectral_route.py": {
     "gates": [
-     "\u26d4 AND \"stress tensor\" as QFT in curved s"
+     "\u24f7"
     ],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40418240949",
-    "since": "2675c5c22b463ac4ed381bf53d3b3cde69f70340",
-    "unmeasured": true
-   },
-   "receipts/L_probability/S10_the_sweep_for_exact_counts_could_not_contain_its_own_gate_and_the_class_doubled_in_the_receipts_written_after_its_pin.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40429821868",
-    "since": "fa96ae2deae03cf156f9c7bd038d10a391ecc8f7",
-    "unmeasured": true
-   },
-   "receipts/L_probability/S21_a_pre_registered_negative_can_fire_without_reaching_the_claim_it_was_written_to_test_and_mine_did_while_the_order_was_wrong_about_both_defects_in_opposite_directions.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40429821868",
-    "since": "fa96ae2deae03cf156f9c7bd038d10a391ecc8f7",
-    "unmeasured": true
-   },
-   "receipts/L_probability/S41_a_within_class_rate_set_beside_an_all_class_rate_is_not_a_comparison_and_matched_the_era_re_read_lands_on_the_guess_it_was_said_to_refute.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40429821868",
-    "since": "fa96ae2deae03cf156f9c7bd038d10a391ecc8f7",
-    "unmeasured": true
-   },
-   "receipts/L_probability/S54_a_ledger_change_scopes_five_receipts_and_none_of_the_forty_four_that_read_the_ledger_because_the_read_index_is_a_list_of_spellings_without_tsv_on_it.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40429821868",
-    "since": "fa96ae2deae03cf156f9c7bd038d10a391ecc8f7",
-    "unmeasured": true
-   },
-   "receipts/L_probability/S8_the_source_half_is_the_blinder_one_and_the_class_is_mostly_a_receipt_pinning_a_ledger_not_another_receipt.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40429821868",
-    "since": "fa96ae2deae03cf156f9c7bd038d10a391ecc8f7",
-    "unmeasured": true
-   },
-   "receipts/L_probability/S9_the_exposure_is_zero_so_the_count_judgement_was_right_and_the_class_was_already_registered_before_it.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40429821868",
-    "since": "fa96ae2deae03cf156f9c7bd038d10a391ecc8f7",
-    "unmeasured": true
-   },
-   "receipts/P10_canonical_time/P10_the_field_squared_is_already_in_the_trace_at_quadratic_order_and_the_degenerate_point_is_representational.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40429821868",
-    "since": "fa96ae2deae03cf156f9c7bd038d10a391ecc8f7",
-    "unmeasured": true
-   },
-   "receipts/P10_canonical_time/P10_the_lowest_tt_harmonics_are_frame_constant_so_the_overlap_is_a_determinant_times_the_volume.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40429821868",
-    "since": "fa96ae2deae03cf156f9c7bd038d10a391ecc8f7",
-    "unmeasured": true
-   },
-   "receipts/P10_canonical_time/P10_the_operator_is_an_inverted_quartic_so_the_deficiency_is_two_two_and_the_measure_closes_it_anyway.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40429821868",
-    "since": "fa96ae2deae03cf156f9c7bd038d10a391ecc8f7",
-    "unmeasured": true
-   },
-   "receipts/P10_canonical_time/P10_the_second_logarithm_holes_the_mechanism_and_not_the_conclusion_because_the_leading_log_is_unpartnered.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40429821868",
-    "since": "fa96ae2deae03cf156f9c7bd038d10a391ecc8f7",
-    "unmeasured": true
-   },
-   "receipts/P10_canonical_time/P10_the_second_logarithm_line_closes_because_the_interaction_cannot_reach_the_anomalys_own_power_of_a.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40429821868",
-    "since": "fa96ae2deae03cf156f9c7bd038d10a391ecc8f7",
-    "unmeasured": true
-   },
-   "receipts/P10_canonical_time/P10_the_tower_limit_closes_at_first_order_and_the_wall_moves_into_a_boundary_condition_at_second.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40429821868",
-    "since": "fa96ae2deae03cf156f9c7bd038d10a391ecc8f7",
-    "unmeasured": true
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40430137002",
+    "since": "c22835f831f1b61da144e7cff2cba5c50400d9ce"
    }
   }
  },
