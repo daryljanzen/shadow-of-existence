@@ -149,12 +149,12 @@
  },
  "claude/shadow-of-existence-setup-wgcmvt": {
   "suite": {
-   "receipts/L204_physics_reach/P2_the_corpus_never_mentions_unruh.py": {
+   "receipts/L221_the_bridge/B61_the_walls_do_not_cover_the_spectral_route.py": {
     "gates": [
-     "\u26d4 AND \"stress tensor\" as QFT in curved s"
+     "\u24f7"
     ],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40424857204",
-    "since": "2f5ee2d90cdf39454b46c265bc010b03bb8f8cb8"
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40435098632",
+    "since": "db51c82672311d2881deada1995b2a4a8f8fd5ed"
    }
   }
  },
