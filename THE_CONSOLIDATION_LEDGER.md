@@ -1005,4 +1005,5 @@ standing by, no formalisation row being open.
   - The augmentation passage carries the 3+1 literature and the preferred-foliation programmes: York's CMC time, shape dynamics, Horava-Lifshitz and Einstein-aether.
   - The modal-fallacy diagnosis names the arguments it answers (Rietdijk, Putnam, Penrose), with Stein.
   - The close states the three consequences.
+  - The Ehlers-Geren-Sachs theorem is set as an argument of a different kind, deducing the geometry from isotropy at every observer, while the floor reads the observed isotropy as the record of the radiation's journey. Section 2 adds that the last-scattering anisotropies arrive with their spectrum intact, so the journey imposed z = 1089 the same in every direction to well within 1e-5.
   - The hypothesis paragraph places the floor as the complement of the classical CMB bound on a global anisotropy of the expansion (Collins-Hawking, Saadeh et al.) and of direct directional maps (Zhou et al.).

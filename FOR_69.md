@@ -3585,3 +3585,25 @@ Fourteen entries were added in the corpus style: ADM 1962, Baumgarte & Shapiro 2
 - Zhou et al.'s title is the current arXiv one, "The isotropy of cosmic expansion in the early and late Universe". Earlier listings show a version titled "... of Hubble expansion ...".
 
 P4 builds with no undefined references, and its six overfull boxes are the same six that predate r7617.
+
+### Correction to the P4 order, on Daryl's direction: Ehlers-Geren-Sachs is a different kind of argument, and the preservation point goes in
+
+Daryl corrected how the chat seat framed Ehlers-Geren-Sachs (EGS), and the correction is right. The order presented EGS as "the classical route from observation to the posits", contrasted with the floor only by vantage. But EGS is not the same argument. It deduces the geometry from a symmetry assumed at every observer. It never reads the isotropy we actually observe as the record of the radiation's journey across the expansion since decoupling, and that journey is what the floor computes. Daryl also made a point the paper did not state. The last-scattering surface is not homogeneous: its 1e-5 Sachs-Wolfe and acoustic anisotropies arrive with their predicted spectrum intact. So the journey imposed z = 1089 the same in every direction to well within 1e-5, or it would have overwritten that pattern. The journal version now carries both points; please bring the corpus copy to match.
+
+1. Intro, l.91. Replace from "The classical route from observation to the posits, other than through the fit, ..." through "...\cite{Nilsson1999}." with:
+"The nearest argument in the literature is of a different kind. The Ehlers--Geren--Sachs theorem and its almost-isotropic extension deduce the geometry from a symmetry: if every comoving observer sees an (almost) isotropic radiation background, the spacetime is (almost) Friedmann~\cite{EGS1968, Stoeger1995}. Its premise is isotropy at every observer, which cannot be observed from here, and the almost-isotropic form needs bounds on the derivatives of the anisotropies as well, without which an almost isotropic temperature does not imply an almost isotropic universe~\cite{Nilsson1999}. Neither reads the isotropy we do observe as what it is: the record of the radiation's journey to us."
+
+2. Intro, l.93. Replace "And it is made from our own vantage: the floor is what a density-tracking expansion would imprint on our own sky, so" with:
+"And it is made from what we observe: the radiation reaches us across the whole of the expansion since decoupling, and the floor is what a density-tracking expansion would imprint on it along the way, so"
+
+3. Section 2, l.108, immediately after "...as a \emph{direct measurement of uniform expansion}." insert:
+"The surface is not in fact homogeneous, and that sharpens the point: its Sachs--Wolfe and acoustic anisotropies, at the $10^{-5}$ level, arrive with their predicted spectrum intact. The journey that carried them imposed a redshift of 1089, and it imposed it the same in every direction to well within one part in $10^{5}$, for a directional variation in the journey at that level would have overwritten the primordial pattern."
+
+### Done (69, r7623): the EGS correction and the preservation point, landed in `corpus/modern_parallax.tex`
+
+All three replacements are in, word for word:
+1. The intro's EGS passage, from "The nearest argument in the literature is of a different kind" through "the record of the radiation's journey to us".
+2. "And it is made from what we observe: the radiation reaches us across the whole of the expansion since decoupling ..." in the claim paragraph.
+3. "The surface is not in fact homogeneous, and that sharpens the point ..." in Section 2, right after "a direct measurement of uniform expansion".
+
+Nothing else in the corpus or its receipts reads the replaced wording. P4 builds clean, and the overfull boxes are the same six.
