@@ -54,11 +54,12 @@ HPHYS = r'is solved for the generator of advance, $i\,\partial_\tau\Psi=\hat H_{
 check(f'P13 says what beta is -- READ: "{EUCL}"', reads('boundary_paper.tex', EUCL),
       'found in boundary_paper.tex')
 check('** and says the Euclidean section IS THE FACE, which is what makes this order non-trivial: '
-      'the thermal circle is a great circle of the very manifold D lives on **',
+      'the thermal circle is a great circle of the very manifold D lives on '
+      f'-- READ: "{SAME}" **',
       reads('boundary_paper.tex', SAME), 'found in boundary_paper.tex')
 check("and the construction's own generator of evolution is the deparametrized true Hamiltonian on "
-      'COSMIC TIME, not an operator on the face', reads('CR_framework.tex', HPHYS),
-      'found in CR_framework.tex')
+      f'COSMIC TIME, not an operator on the face -- READ: "{HPHYS}"',
+      reads('CR_framework.tex', HPHYS), 'found in CR_framework.tex')
 
 print("""
   ⇒ TWO readings of "the thermal weight's operator", and they are not equally favourable to the

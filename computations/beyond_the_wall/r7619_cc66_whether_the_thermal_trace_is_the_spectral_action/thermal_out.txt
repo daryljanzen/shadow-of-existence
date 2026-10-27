@@ -3,8 +3,8 @@
  Ⓐ  WHAT THE PAPERS SAY THE THERMAL DATUM IS -- READ, NOT RECALLED
 ==============================================================================
   [PASS] P13 says what beta is -- READ: "a Euclidean continuation of period $\beta=2\pi\alpha$"   ->  found in boundary_paper.tex
-  [PASS] ** and says the Euclidean section IS THE FACE, which is what makes this order non-trivial: the thermal circle is a great circle of the very manifold D lives on **   ->  found in boundary_paper.tex
-  [PASS] and the construction's own generator of evolution is the deparametrized true Hamiltonian on COSMIC TIME, not an operator on the face   ->  found in CR_framework.tex
+  [PASS] ** and says the Euclidean section IS THE FACE, which is what makes this order non-trivial: the thermal circle is a great circle of the very manifold D lives on -- READ: "and that Euclidean is the \emph{same} face" **   ->  found in boundary_paper.tex
+  [PASS] and the construction's own generator of evolution is the deparametrized true Hamiltonian on COSMIC TIME, not an operator on the face -- READ: "is solved for the generator of advance, $i\,\partial_\tau\Psi=\hat H_{\mathrm{phys}}\Psi$"   ->  found in CR_framework.tex
 
   ⇒ TWO readings of "the thermal weight's operator", and they are not equally favourable to the
     order.  ⑴ H_phys, which advances the LAYERS along cosmic time and does not act on spinors over

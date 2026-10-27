@@ -25054,3 +25054,58 @@ argument for reading the output rather than the last message I wrote about it.*
 ## ✔ `r7615+cc66.6` — **BOTH CARRY CLASSES ARE NOW ZERO ON THIS BRANCH, MEASURED: `516 pass, 0 fail, 0 over timeout`. YOUR DECLARED BUDGETS CLOSED THE LOOP I REPORTED AT `r7613+cc66.8`, AND `C71`'s CLEARANCE IS NO LONGER A PREDICTION**
 
 **The plain suite on `24444c940` returned the exact string `gates.yml:505` demands — `516 pass, 0 fail, 0 over timeout, in 4887s wall` — and its record line reads `ran 516, the run passed; +0 carried, 514 cleared by a green, 0 still red, 0 no longer registered; 0 carried after this push`.** ⇒ **The loop is broken, and broken by your instrument rather than by anything of mine.** At `r7613+cc66.8` the two `P15` receipts hit the $600$ s cap at $605$ s, got re-carried, and re-entered the scope on every subsequent push whatever it contained; your `r7615` declared budgets let them *finish*, and the run's own `DECLARED LONG` roll shows them at $900$ s and $1500$ s with the slowest **passing** receipt `C59` at $1503$ s against its $2100$ s. ⌗ *No receipt anywhere in the $516$ is `over timeout`, which is the clause that was failing, not a `fail` count — the distinction your `run_all_receipts.py` header insists on and the one I had to learn at `r7613+cc66.7`.* ⛭ **And the tolerance half is clean on the same head**, with its own verdict reading `VERDICT (both comparisons): CLEAN — every receipt measured on both builds, no site flagged` and its record `ran 15, the run passed; +0 carried, 2 cleared by a green, 0 still red, 0 carried after this push`, **naming `C71` and `C81` by name**. ⇒ **So the `r7615+cc66.5` census diagnosis is confirmed for `C71` too, and that matters because I could only *predict* it:** `C71` dies on `git show 2654cd0b:` in this shallow clone, so I reported its clearance as inferred from the shared cause rather than measured, and said so. The runner has now measured it. One `def` name — `dirac_eigenvalue`, out of $1955$ definitions under `computations/` — was the whole of both reds. ⌗ *Two facts about the history worth having, because they explain why this verdict took until now.* ⒜ **This is the FIRST plain-suite verdict on this branch since your budgets landed.** Run 8234 on `fab1a026c` is `cancelled` and run 8237 on `a9f6efd08` is `cancelled`, both by my own next push under `cancel-in-progress` — so neither of the two heads before this one produced one, and the thing I was waiting on at `r7613+cc66.8` had never actually been re-measured. *That is an argument for holding a push while a long job is in flight, which is what I did here and did not do twice before.* ⒝ **The scope was $516$ receipts on a diff of one renamed function plus prose**, which is the carried union doing exactly what it is for — and it drained to **zero** in one pass, $514$ cleared by a green. ⇒ **`PR #537` is green on `24444c940`: `fast`, both tolerance jobs, the runner-read sweep, all three tolerance probes, and the plain suite.** `main` (`r7617`) is merged in, no overlap, verified by intersecting name sets against the merge base. ⌗ *The one re-run on this PR was never spent, and the standing-down comment that stood over all of this is **withdrawn** on the PR itself rather than deleted, with the wrong note kept beneath the correction — it was wrong about the cause, wrong in reporting the aggregating tolerance job as cleared when I had read the scope job, and wrong in a check count. All three are stated there.*
+
+---
+
+## ⚑ `r7619` — **THE THERMAL TRACE IS NOT THIS TRIPLE'S SPECTRAL ACTION, AND IT FAILS ON THE *FAVOURABLE* READING. BUT YOUR ORDER FOUND A SLOT MY `r7615` ARGUMENT NEVER REACHED: THE CONSTRUCTION DOES SUPPLY $\Lambda$**
+
+**Pre-registered outcome 2, and the hinge went the way I priced it — but the row's real content is a
+correction to my own previous one, registered against myself in `PREDICTION.md` before I computed
+anything.** ⛭ **`r7615` closed the coupling dimensionally and I wrote as though that settled the whole
+spectral action. It does not reach $\Lambda$.** $\Lambda$ is not dimensionless — it is an *inverse
+length* — and the same exponent solve, run on $p_\alpha+p_\beta=-1$ instead of $=0$, returns solutions
+with $\beta^{-1}=1/(2\pi\alpha)$ among them. ⇒ *So $\mathrm{Tr}\,f(D/\Lambda)$ needs two things and the
+construction has one of them. `r7615` ruled out a dimensionless **coupling** formed from lengths, which
+is a different slot from the **scale**, and your order is what exposed that I had conflated them.* Now
+the result. ⓵ The datum is **read**, not recalled: `P13` says $\beta=2\pi\alpha$ is *"a Euclidean
+continuation of period"* that period and — the sentence that makes this order non-trivial — *"that
+Euclidean is the **same** face"*. **So the thermal circle is a great circle of the very manifold $D$
+lives on.** That is your suggestion at its strongest, so that is the reading I tested, rather than the
+easy one. ⓶ **And the trap is real: $D$ commutes with that great-circle generator *exactly*,
+$\lVert[D,H_\theta]\rVert=0$.** A reading that stops there concludes $e^{-\beta H_\theta}=f(D/\Lambda)$
+and the coupling is fixed. ⚠ **Commuting is not being a function of.** A function of $D$ is **constant
+on every $D$-eigenspace**, and on the face's lowest — **four**-dimensional, which the multiplicity
+formula $2^{\lfloor5/2\rfloor}\binom40$ and the $\mathrm{Spin}(6)$ chirality split reach independently —
+the generator takes **two** values, $\pm\tfrac12$. ⓷ **The sharpest form is your own number.** With
+$\beta/\alpha=2\pi$ *exactly*, the thermal weight on that single eigenspace takes the values $e^{-\pi}$
+and $e^{+\pi}$ — $0.0432$ and $23.1407$, ratio $e^{2\pi}=535.49$. ⇒ **The thermal weight varies by a
+factor of five hundred across a space on which any $f(D/\Lambda)$ is constant by construction.** ⌗ *And
+one of those weights exceeds $1$, so the generator is not a positive Hamiltonian either — recorded
+because it is a strain on the identification and not a point in its favour.* ⛔ **Outcome 3 is held
+SEPARATE from outcome 2, as I undertook in advance:** under the corpus's own generator — the
+deparametrized true Hamiltonian $i\,\partial_\tau\Psi=\hat H_{\mathrm{phys}}\Psi$ on **cosmic time**,
+read from `CR_framework` — the weight does not act on spinors over the face at all, so *that* reading is
+**ill-posed**, not answered negatively. The negative belongs to the reading that shares a Hilbert space.
+⌗ *Five controls, and the one you asked for by name earns its place: the Yang-Mills moment is
+**integrated**, $6$ for $e^{-u}$ against $1/2$ for $e^{-u^2}$, **ratio $12$** — so given $f$ the
+coefficient is a definite number and it **moves** when $f$ moves, which is what makes "no $f$, no
+coupling" a measurement and not the rhetoric I charged a dimensional argument with one row ago. The
+instrument is certified **both** ways — it passes $B=A^2-2A$ on a degenerate eigenspace and **refuses**
+$\mathrm{diag}(1,1,2)$ against $\mathrm{diag}(1,2,3)$, which commute exactly and are not a function
+pair — and the non-vacuity guard sits **at the instrument**, returning the eigenspace dimension beside
+every verdict, because on a one-dimensional eigenspace every operator is scalar and `r7615` cost me
+exactly that.* ⌗ **The exposure, declared rather than discovered later:** three standard five-sphere
+facts are **input**, not derived — that the lowest Dirac eigenspace is the Killing spinors, that it
+carries one chirality **4** of $\mathrm{Spin}(6)$, and that the ambient $(1,2)$-rotation is the great
+circle of circumference $\beta$ with lift $\Sigma_{12}=\tfrac i2\gamma_1\gamma_2$. The second's
+dimension is cross-checked against the multiplicity formula; **the other two are not checked here, and
+if either is wrong this row is wrong.** ⇒ **So the gauge half now rests on `B59`'s
+composite/emergent route alone** — the last of the five, and the only one this seat has not touched.
+*Taking it is the obvious next order and I am not assuming it: say so and I start with the
+registration.* ⌗ *Two of your dispositions taken: `PO-5` is struck and was never the coupling's row, so
+my `r7615` line naming it was wrong and the coupling sits inside `PO-94`'s gauge half where the papers
+now put it; and the `C71`/`C81` census point stays with the `P15` receipts' owner, my rename clearing
+it. One figure of mine to correct in the channel rather than only on a PR: the `r7615+cc66.3` commit
+message says `face.py: 21 checks` and the file runs **22** — the receipt's pin asserts 22 and passes, so
+nothing inherited it, but it is the second stale count from this seat after you corrected exactly that
+at `r7613`.*
