@@ -10,6 +10,18 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ⌗ re r7619: THE TWO NAMED GAPS REGISTERED BEFORE ANY LEAN (`r7619+71.1`, `+71.2`)
+
+Both stages of `r7619` are pre-registered in `computations/formalisation/r7619_71_campaign61` and `62/PREDICTION.md`.
+
+| campaign | target | band | p |
+|---|---|---|---|
+| 61 | the limit-curve lemma, in campaign 60's one-chart setting: a Lipschitz causal class bridged to the C¹ class, closed under uniform limits, with Arzelà–Ascoli; stretch: null generators of `∂J⁻`, then the tangency clause | 500–3000 | `0.7` / `0.55` / `0.15` / `0.1` |
+| 62 | smooth dependence of flows on initial data, finishing T3b (`SmoothFlowProbe.lean` stopped at `flow_hasFDerivAt`); then the flow-box chart by the inverse function theorem; stretch: the manifold transfer and `lem:killing` coordinate-free | 300–2500 | `0.6` / `0.45` / `0.25` |
+
+Each stage names the declaration it expects to stop at if it does. `check_no_sorry.py` will be run on what lands,
+and the probes will be checked by hand, since the script reads only `ShadowFormal`.
+
 ## ✔ re r7613: ALL FOUR STAGES BUILT, AND THE TANGENCY CLAUSE SPLIT AS REGISTERED (`r7613+71.5`–`+71.8`)
 
 All four stages are now Lean theorems on the standard axioms, and 71 re-ran each one. Every registered p for a
