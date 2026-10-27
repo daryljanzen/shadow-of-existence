@@ -1498,28 +1498,6 @@
   }
  },
  "claude/shadow-of-existence-setup-wgcmvt": {
-  "reads": {
-   "receipts/L221_the_bridge/B59_the_routes_are_enumerable_and_one_is_absent.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40424857204",
-    "since": "2f5ee2d90cdf39454b46c265bc010b03bb8f8cb8",
-    "unmeasured": true
-   },
-   "receipts/L221_the_bridge/B61_the_walls_do_not_cover_the_spectral_route.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40424857204",
-    "since": "2f5ee2d90cdf39454b46c265bc010b03bb8f8cb8",
-    "unmeasured": true
-   },
-   "receipts/P13_boundary/P13_the_almost_commutative_triple_over_the_face_supplies_a_gauge_field_the_construction_does_not_couple_and_the_orders_hilbert_space_admits_no_real_structure.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40424857204",
-    "since": "2f5ee2d90cdf39454b46c265bc010b03bb8f8cb8",
-    "unmeasured": true
-   },
-   "receipts/P13_boundary/P13_the_alpha_vacua_are_a_fourth_empty_slot_because_three_principles_without_euclidean_content_select_the_member_the_face_selects.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40424857204",
-    "since": "2f5ee2d90cdf39454b46c265bc010b03bb8f8cb8",
-    "unmeasured": true
-   }
-  },
   "suite": {
    "computations/beyond_the_wall/r7430_60_which_of_this_seats_gates_can_be_silent_and_the_census_is_a_detector_so_it_refuses_where_it_cannot_decide/census.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40424857204",
