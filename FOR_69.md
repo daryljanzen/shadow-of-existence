@@ -3583,3 +3583,82 @@ Daryl corrected how the chat seat framed Ehlers-Geren-Sachs (EGS), and the corre
 
 3. Section 2, l.108, immediately after "...as a \emph{direct measurement of uniform expansion}." insert:
 "The surface is not in fact homogeneous, and that sharpens the point: its Sachs--Wolfe and acoustic anisotropies, at the $10^{-5}$ level, arrive with their predicted spectrum intact. The journey that carried them imposed a redshift of 1089, and it imposed it the same in every direction to well within one part in $10^{5}$, for a directional variation in the journey at that level would have overwritten the primordial pattern."
+
+
+## From the chat seat: timescape corrected again, the other way, with a computation (an order, on Daryl's direction; supersedes the timescape wording in the earlier P4 orders)
+
+Daryl asked for the timescape papers themselves to be read, because he understood the model to vary the spatial expansion too. He was right. The wording the chat seat sent in the first P4 order ("keeps the locally measured expansion uniform ... the floor does not test it") was wrong. Read from Wiltshire 2009 (PRD 80, 123512):
+- Its eq. 10 sets the "uniform quasilocal bare Hubble flow": each region's expansion rate is the same in its own proper time.
+- Its eq. 11 gives Hbar = gamma_w H_w = gamma_v H_v, with H_w and H_v defined against the volume-average time, and states h_r = H_w/H_v < 1. Voids expand faster than walls in the common time.
+- Its eq. 15 gives the backreaction Q = 6 f_v (1 - f_v)(H_v - H_w)^2. That variance of expansion is the model's engine.
+- Its eq. 38 with eq. 14 gives gamma_w = (2 + f_v)/2, so H_w/H_v = 2/3 on the tracker. Wall clocks run 38 per cent slow today.
+So timescape is a differential-expansion model, with the difference absorbed into clock rates.
+
+The clock postulate does not keep the differential expansion out of the redshift. By the redshift-rate relation (the corpus's eq:redshiftrate), a photon gains the local rate per unit local proper time. Per unit volume-average time it spends 1/gamma_i of local proper time in region i. So per unit common time it gains H_v in voids and H_w in walls, and the clock rates enter only at the endpoints, through the acceleration term. The mean of that accumulation reproduces timescape's own redshift relation (its eq. 38) exactly. Its scatter, with void and wall cells drawn independently along each ray (the most accommodating case, by the corpus's R2 correlation theorem), is an rms in ln(1+z) of 2.4e-2, 4.2e-2 and 5.4e-2 for cells of 10, 30 and 50 h^-1 Mpc. That is 600 to 1300 times the whole measured anisotropy, 4.1e-5. The variance is (1/6) times the integral of Q times the cell-crossing time, so the backreaction that gives timescape its acceleration is the same quantity that scatters its redshifts. The timescape papers compute observables on the average geometry (Wiltshire 2009; Nazer & Wiltshire 2015, PRD 91, 063519; Seifert et al. 2025, MNRAS 537, L55, the Pantheon+ claim) and nowhere compute this scatter.
+
+Please land:
+1. corpus/modern_parallax.tex, the timescape paragraph after "Either way ..." (sec:sw). Replace it with:
+The timescape model~\cite{Wiltshire2007, Wiltshire2007PRL, Wiltshire2009} is the most developed realization of the averaging programme, and it falls inside the hypothesis. It divides the universe into voids and walls whose expansion rates, referred to the volume-average time, differ: in its tracker solution the walls expand at two-thirds the rate of the voids, and the difference is the backreaction that produces its apparent acceleration, $\mathcal{Q}=6f_{\rm v}(1-f_{\rm v})(H_{\rm v}-H_{\rm w})^{2}$, with $f_{\rm v}$ the void fraction. Its further postulate is that each region measures the same expansion rate in its own proper time, the difference being carried by the rates of clocks, which differ between walls and voids by 38 per cent today. That postulate does not remove the differential expansion from the redshift. By~\eqref{eq:redshiftrate} a photon crossing a region gains the local rate per unit of local proper time, and per unit of volume-average time it spends less local proper time crossing a wall than a void; the redshift it gains per unit of volume-average time is therefore the region's own rate, $H_{\rm v}$ or $H_{\rm w}$, while the clock rates enter only at the ends of the path, through the acceleration term. The mean of that accumulation is exactly the model's own redshift relation~\cite{Wiltshire2009} (its eq.~38), and its scatter is of the floor's kind: for void and wall cells drawn independently along each ray, the most accommodating case, the rms of $\ln(1+z)$ across directions is $2.4\times10^{-2}$, $4.2\times10^{-2}$ and $5.4\times10^{-2}$ for cells of $10$, $30$ and $50\,h^{-1}$\,Mpc, some $600$ to $1300$ times the whole measured anisotropy. The timescape papers compute observables on the average geometry~\cite{Wiltshire2009, NazerWiltshire2015, Seifert2025} and do not compute this scatter. Uniformity in local proper time is not uniformity along the journey of the light, and it is the latter that the isotropy of the CMB measures.
+2. The significance paragraph from the earlier order (not yet landed): its timescape clause becomes "That includes the timescape model~\cite{Wiltshire2007, Wiltshire2007PRL}, which makes the expansion uniform in each region's own clock but not along the journey of the light (\S\ref{sec:sw}); an inhomogeneous cosmology that survives keeps a uniform expansion."
+3. New bibliography entries: Wiltshire2009 = D. L. Wiltshire, "Average observational quantities in the timescape cosmology", Phys. Rev. D 80 (2009) 123512. NazerWiltshire2015 = M. A. Nazer and D. L. Wiltshire, "Cosmic microwave background anisotropies in the timescape cosmology", Phys. Rev. D 91 (2015) 063519. Seifert2025 = A. Seifert, Z. G. Lane, M. Galoppo, R. Ridden-Harper and D. L. Wiltshire, "Supernovae evidence for foundational change to cosmological models", MNRAS 537 (2025) L55.
+4. The receipt below, as receipts/P04_modern_parallax/ (your naming), with its INDEX row on sec:sw. It runs in a second and ends ALL PASS. It checks: the tracker identities; Q computed both ways; the mean reproducing eq. 38; and the analytic variance against a Monte Carlo of 4000 rays.
+5. Check ONTOLOGY_FOUNDATION_INDEX.md and any other instrument that repeats "the floor does not test timescape", and align it.
+
+```
+"""Timescape (Wiltshire tracker) along a ray: redshift scatter from the void/wall mix.
+Units: bare Hbar0 = 1, c = 1.  Tracker (Wiltshire 2009, PRD 80 123512, eqs 11,14,15,38,39):
+  f_v = 2t/(2t+3b),  b = 2(1-f0)(2+f0)/(9 f0),  abar/abar0 = 3 t f0^(1/3) f_v^(-1/3)/(2+f0)
+  Hbar = gamma_w H_w = gamma_v H_v,  gamma_w = 1 + (1-h_r) f_v/h_r,  Q = 6 f_v(1-f_v)(H_v-H_w)^2 = 2 fdot^2/(3 f_v(1-f_v))
+A photon crossing a region over volume-average time dt gains d ln(1+z) = (local rate in local time) x (local proper time)
+  = Hbar dt/gamma_i = H_i dt  (void: H_v, wall: H_w).  Mean = int Hbar dt -> timescape's own eq. 38 with the clock ratio.
+Scatter: uncorrelated cells of comoving size L (the most accommodating case), each void with probability f_v:
+  var = sum_cells f_v(1-f_v) [(H_v-H_w) dt_cell]^2,  dt_cell = (abar/abar0) L  ->  sigma^2 = int (Q/6) (abar/abar0) L dt
+"""
+import numpy as np
+from scipy.integrate import quad
+f0 = 0.762; b = 2*(1-f0)*(2+f0)/(9*f0); t0 = (2+f0)/3
+fv   = lambda t: 2*t/(2*t+3*b)
+fdot = lambda t: 6*b/(2*t+3*b)**2
+abar = lambda t: 3*t*f0**(1/3)*fv(t)**(-1/3)/(2+f0)
+Hbar = lambda t: 2/(3*t) + 2/(3*(2*t+3*b))
+assert abs(fv(t0)-f0) < 1e-12 and abs(abar(t0)-1) < 1e-12 and abs(Hbar(t0)-1) < 1e-12
+# h_r from the tracker: gamma_w(eq.38 ratio) = (2+f_v)/2 -> h_r = 2/3; check Q two ways
+hr = 2/3
+Hv = lambda t: Hbar(t)*3/(2+fv(t)); Hw = lambda t: hr*Hv(t)
+for t in [0.1, 0.5, t0]:
+    assert abs(fv(t)*Hv(t)+(1-fv(t))*Hw(t) - Hbar(t)) < 1e-12          # volume average
+    Q1 = 6*fv(t)*(1-fv(t))*(Hv(t)-Hw(t))**2; Q2 = 2*fdot(t)**2/(3*fv(t)*(1-fv(t)))
+    assert abs(Q1/Q2-1) < 1e-10, (Q1, Q2)
+H0_dressed = (4*f0**2+f0+4)/(2*(2+f0))          # in units of Hbar0
+print(f"gamma_w0 = {(2+f0)/2:.3f}, H_w/H_v = {hr:.3f}, Hbar0/H0 = {1/H0_dressed:.4f}")
+for Lh in [10, 30, 50]:                          # comoving cell, h^-1 Mpc (dressed h)
+    L = Lh/2997.9 * H0_dressed                  # in c/Hbar0
+    zdec_t = 1e-6
+    s2 = quad(lambda t: (2*fdot(t)**2/(3*fv(t)*(1-fv(t))))/6 * abar(t)*L, zdec_t, t0, limit=400)[0]
+    print(f"cell {Lh:3d} h^-1 Mpc: rms of ln(1+z) across directions = {np.sqrt(s2):.2e}")
+
+# (i) the mean of the accumulation is timescape's own redshift, eq. (38): exp(int_t^t0 Hbar) * gamma_w(t)/gamma_w0
+gw = lambda t: (2+fv(t))/2
+for t in [0.05, 0.3, 0.8]:
+    mean = np.exp(quad(Hbar, t, t0)[0]) * gw(t)/gw(t0)
+    eq38 = (2+fv(t))*fv(t)**(1/3)/(3*f0**(1/3)*t)
+    assert abs(mean/eq38-1) < 1e-8, (mean, eq38)
+print("mean accumulation reproduces timescape eq. (38): OK")
+
+# (ii) Monte Carlo rays through random void/wall cells confirm the variance formula (30 h^-1 Mpc cells)
+rng = np.random.default_rng(1)
+L = 30/2997.9*H0_dressed
+# march backward from t0: each cell takes dt = abar(t) L of volume-average time
+ts = [t0]
+while ts[-1] > 1e-4:
+    ts.append(ts[-1] - abar(ts[-1])*L)
+ts = np.array(ts[:-1]); dts = abar(ts)*L
+dH = (Hv(ts)-Hw(ts))*dts
+var_an = np.sum(fv(ts)*(1-fv(ts))*dH**2)
+nray = 4000
+draws = (rng.random((nray, ts.size)) < fv(ts)).astype(float)
+dev = ((draws - fv(ts)) * dH).sum(axis=1)
+print(f"cells per ray {ts.size}; rms analytic {np.sqrt(var_an):.3e}, Monte Carlo {dev.std():.3e}")
+assert abs(dev.std()/np.sqrt(var_an)-1) < 0.05
+print("ALL PASS")
+```
