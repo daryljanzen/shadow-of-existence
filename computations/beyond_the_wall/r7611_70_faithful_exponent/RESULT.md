@@ -4,7 +4,7 @@
 - `collapse_faithful.py` and `jointfit_faithful.py` are the copies;
 - `absorber_faithful.py` is exact arithmetic;
 - `wfit_faithful.py` is r7489's tail fitter with the faithful S, and `tail_faithful.py` reads its four mocks;
-- the as-built outputs are kept beside the faithful ones (`*_asbuilt.out`, `*_faithful.out`).
+- the as-built outputs are kept beside the faithful ones (`*_asbuilt.txt`, `*_faithful.txt`).
 
 ## Scorecard
 | arm | figure | as built | **faithful** | band | verdict |

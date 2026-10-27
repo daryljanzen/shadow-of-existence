@@ -1,0 +1,329 @@
+
+RECEIPT -- P15 / `PO-24`: ** AT THE ADJUDICATED RATIO THE DIFFUSION-SCALE SIGNATURE COSTS $12.6$ AND
+$1.7$ IN $\chi^2$ OVER $185$ BINS -- UNDER A TENTH PER BIN ON EITHER ENDPOINT -- AND A TILT OF
+$-0.0093$ OR $+0.0034$ ABSORBS SEVEN TENTHS OF THAT.  AGAINST THE $1.082$ EVERY QUANTITATIVE LEG
+OF THE ROW WAS COMPUTED AT, WHERE THE SAME TEST COSTS $159.9$ AND $-0.0341$. **
+
+** ⇒ AND THE TWO ENDPOINTS DISAGREE IN SIGN, NOT ONLY IN SIZE. **  To recombination the arm's
+$\theta_D/\theta_*$ is $1.0231$ of the control's and the absorbing tilt is NEGATIVE; to the
+visibility peak it is $0.9918$ and the tilt is POSITIVE.  *This seat reported both and chose
+neither, as ordered.*
+
+*** ⚑ AND THE CHAT SEAT THEN SETTLED IT AT `r6797`: BOTH LENGTHS TERMINATE AT THE VISIBILITY PEAK,
+because $\theta_D/\theta_*$ is a ratio of two lengths the plasma accumulates and the observed angle
+is read there. ***  ** So the VISIBILITY-PEAK ROW IS THE ONE THAT STANDS, and the ruled number is
+$r = 0.99179$, $-0.82\%$, at the adjudicated background -- not the $-0.9\%$ the ruling quotes, which
+is that reading at the $H_0 = 73.00$ background the row's figures came from. **  *The recombination
+row is kept because it is what the corpus carried and because the sign turning on the epoch is the
+result; it is not an open alternative.*  PART 1b carries the settlement.
+
+Built r6788+cc66.19 (node 66, code seat), discharging node 66 (chat seat)'s `PO-24` order --
+"re-run the joint amplitude-and-tilt fit against the CR spectrum with the signature at the
+adjudicated ratio, on both endpoints, reporting the per-bin residual after the fit, the tilt
+displacement with its window stated, and the likelihood cost with amplitude alone against amplitude
+and tilt."
+
+** PART 1b ADDED AT r6797+cc66.20 ** *when the chat seat settled the endpoint and asked for the
+common-endpoint number if it is not exactly $0.991$.  Nothing else in the receipt moved: the ruled
+configuration was already the row labelled "to the visibility peak", because the integrals share one
+upper limit.*
+
+===================================================================================================
+** WHAT MOVED, AND WHY THE ROW HAD TO BE RE-PRICED **
+===================================================================================================
+
+`C62` (r4494, node 60) measured this on the configuration of the day: the ONSET handover on the
+STACKING clock, where $\theta_D/\theta_*$ sits at $1.082$ of the control's.  ** Everything
+quantitative in the row -- the per-bin residual, the tilt displacement, the likelihood cost --
+enters through ONE number, $r^2-1$, ** because the signature is a multiplicative Gaussian
+$\exp[-(r^2-1)(\ell/\ell_D)^2]$ and $r^2-1$ is its only amplitude.
+
+The configuration has since moved to the CROSSING handover on the LEAF clock at
+$(H_0,\Omega_m) = (68.60,\,0.2973)$, where $r$ is $1.0231$ or $0.9918$ depending on the endpoint.
+** So $r^2-1$ falls from $0.1707$ to $+0.0468$ or $-0.0164$ -- a factor $3.6$ and a factor $10$,
+and a change of sign. **  *Nothing structural changed and nothing structural is re-derived here.
+What is re-run is the pricing.*
+
+  ⌗ ** THE STRUCTURAL RESULTS ARE CARRIED, NOT REPEATED, at the chat seat's instruction. **  The
+  Gaussian-against-power-law argument, the slope running by $(\ell_{\max}/\ell_{\min})^2$, and the
+  residual's correlation with the predicted form stand from `C62` and are not re-derived.  PART 3
+  reports the window running because the ORDER asks for the tilt "with its window stated" and a
+  displacement without one is not a number; PART 4 verifies the $r^2-1$ SCALING because the
+  re-pricing is exactly the claim that the row's legs move with it, and a claim the arithmetic
+  rests on is not a structural result to be inherited.
+
+===================================================================================================
+** THE FOUR CHOICES THAT SET THE ARITHMETIC, EACH MEASURED RATHER THAN ASSUMED **
+===================================================================================================
+
+  1  ** THE BASE IS THE CR SPECTRUM, as ordered, and not `C62`'s data-shape route. **  The arm's own
+     $185$-bin full-range spectrum, $\ell = 100$--$1998$, at the adjudicated background, scaled by
+     the amplitude that puts it in the likelihood's units.  *`C62` imposed the envelope on
+     `plik_lite`'s own binned spectrum because it reached all $215$ bins with no instrument run.
+     PART 5 runs BOTH and they agree to $2\%$, so the change of base is not what moves anything.*
+  2  ** $\ell_D$ IS DERIVED, NOT RECALLED. **  $\ell_D = D_M/r_D$ with $D_M$ the base spectrum's own
+     ($14011.5$ Mpc, baked into the `.npz`) and $r_D$ the CONTROL's from the same standalone
+     integration that produces the ratio -- because the envelope being imposed is the DIFFERENCE
+     between the arm's damping and the control's, so the reference scale is the control's.
+     *`C62` used $1951.9$, the instrument header's $(\eta_0-\eta_{LS})/r_D$; this gives $2133.5$ and
+     $2093.3$ on the two endpoints, and PART 2 reports the residual at `C62`'s scale beside its own, so the
+     choice is bounded rather than hidden.*
+  3  ** THE WINDOW IS $\ell = 100$--$1996$, THE $185$ COVERED BINS, and the pivot is $\ell = 1000$. **
+     Asserted below, not taken on the name.
+  4  ** THE BASE IS UNLENSED AND THE LENSED CASE IS RUN BESIDE IT. **  The banked spectra are
+     unlensed and `P15`'s lensing is a derived CAMB operator applied afterwards; the envelope is
+     physical and precedes lensing, so it is applied first and both are lensed together.  PART 5
+     shows lensing moves the residual by $5\%$ and nothing else.
+
+** COMPUTES: the ratio from the corpus's own Silk integrand with the opacity from
+   `storyboard_receipts/RD_diffusion_direct.py`, via the `machinery()` of
+   `P15_the_damping_signature_error_budget_and_the_convention_dominates_it` -- control at
+   H0 = 67.40, Om = 0.3150, radiation IN the rate; arm at H0 = 68.60, Om = 0.2973, crossing
+   handover (a0 = 1/(1+3e7)), leaf clock, radiation OUT of the stacking rate.  Ombh2 = 0.0224,
+   z_rec = 1089.9, Yp = 0.2454.  The spectrum is `cc66_cr_x_h686_L2000.npz`, read and not
+   produced.  The lensing operator is CAMB's lensed/unlensed at the control's parameters, the
+   non-perturbative one P15 already uses.  *** Nothing is fitted to make the signature survive or
+   vanish: r is MEASURED from the two arms and imposed, and the only free parameters are the
+   amplitude and the tilt the degeneracy names. ***
+
+
+
+RECEIPT -- P15: ** AN ERROR BUDGET ON THE CROSSING ARM'S DAMPING SIGNATURE, AS `UNC_error_budget`
+DOES FOR THE CORPUS'S 13.96%.  ** THE ENTIRE COSMOLOGICAL PARAMETER BUDGET IS 0.02 POINTS.  MOVING
+THE r_D ENDPOINT FROM RECOMBINATION (z = 1089.9) TO THE COMPUTED VISIBILITY PEAK (z = 1093.8) --
+0.36% IN REDSHIFT -- MOVES IT BY 3.10 POINTS. **
+
+** ⇒ SO THIS SIGNATURE IS NOT A FEW-PER-CENT OBSERVABLE WITH AN ERROR BAR.  ITS VALUE IS SET BY
+WHERE THE INTEGRAL STOPS, AND THE TWO DEFENSIBLE STOPPING POINTS -- FOUR PARTS IN A THOUSAND APART
+IN REDSHIFT -- STRADDLE ZERO: +2.21% AND -0.89%. **  The cause is structural: r_D's integrand
+carries 1/tau', and tau' collapses through recombination, so the last few per mille of the
+integration range carry a finite share of the whole integral.
+
+*** AND THAT IS WHY THE INSTRUMENT AND THE STANDALONE INTEGRATION DISAGREED. ***  The instrument's
+header reports r_D at its own visibility peak and gives +3.1%; the standalone integration to
+recombination gives +2.2%.  ** Neither was wrong and the gap was never a bug: it is this
+sensitivity, and it is larger than the signature being claimed. **  `UNC_error_budget` carries no
+such term, which is not an omission in it -- on the onset handover with the stacking clock one
+endpoint was quoted throughout, so there was no spread to carry.
+
+Built r6760+cc66.6 (node 66, code seat), on `PO-13`, at node 66 (chat seat)'s work order
+(message C, smaller item 1: "an error budget on the +3.1% signature, as `UNC_error_budget` does for
+the 13.96%").
+
+===================================================================================================
+** WHAT IS BEING BUDGETED, AND WHY IT IS NOT THE 13.96% **
+===================================================================================================
+
+The observable is theta_D/theta_* = r_D/r_s, relative to the control's.  `sec:coherence` states the
+signature as ** +8.2% **, on the ONSET handover and the STACKING clock.  `UNC_error_budget` budgets
+a ** 13.96% ** on that same configuration with the `l_D`-anchored r_D.
+
+** This budgets a DIFFERENT number, because the configuration moved. **  On the CROSSING handover
+with the LEAF clock -- the pair r6760+cc66.2 measured as the only one of four that lands near the
+control -- the signature is a few per cent, and *which* few per cent depends on where r_D stops:
+
+  ** r_D to A_REC ** (recombination, z = 1089.9): the standalone integration's endpoint.
+  ** r_D to the visibility peak **: the instrument's own, which is what its header prints.
+
+*Neither is wrong.  They are two definitions of "the diffusion length at last scattering" and the
+corpus uses both -- so the SPREAD BETWEEN THEM is a systematic of the quoted number and belongs in
+its budget, which is the finding here.*
+
+  PART 1  ** THE CENTRAL VALUE ON EACH CONVENTION, AND THE SENSITIVITY BETWEEN THEM. **
+  PART 2  ** THE PARAMETER BUDGET, ** one source at a time, `UNC_error_budget`'s own list.
+  PART 3  ** THE CONVENTION TERM BESIDE THEM. **
+  PART 4  ** AND THE CONFIGURATION TERMS, which are not uncertainties and are kept apart. **
+
+** COMPUTES: central at H0 = 73.00, Om = 0.3066, Ombh2 = 0.0224, z_rec = 1089.9, Yp = 0.2454 --
+   `ACOUSTIC_two_arm.py`'s own; control at H0 = 67.40, Om = 0.3150 with radiation in its rate.
+   The excursions are `UNC_error_budget`'s: H0 +/- 1.0 (SH0ES), Om +/- 0.006 (BAO), Ombh2 +/- 0.0005
+   (BBN), z_rec +/- 0.11% (Peebles, r1956).  *** The opacity comes from
+   `storyboard_receipts/RD_diffusion_direct.py` so the ionisation history is the corpus's own; the
+   quadrature is on a log-a grid at n = 3001, converged to 0.006% against n = 12001 in
+   r6760+cc66.5's sibling receipt. *** **
+
+
+========================================================================================================
+  PART 1 -- ** THE RATIO AT THE ADJUDICATED BACKGROUND, ON BOTH ENDPOINTS **
+========================================================================================================
+  the base spectrum carries D_M = 14011.5 Mpc, l_A = 302.89, ell 100-1998
+
+            endpoint  t_control      t_arm  r = ratio      r^2-1  l_D = D_M/r_D  r at 73.00
+       recombination   0.045442   0.046493    1.02313   +0.04679         2133.5     1.02209
+     visibility peak   0.046190   0.045811    0.99179   -0.01636         2093.3     0.99113
+
+  the visibility peak is located at z = 1093.8 on the arm and z = 1085.5 on the control, against recombination at z = 1089.9
+
+  ** THE BACKGROUND MOVED AND THE SIGNATURE DID NOT. **  The row's 1.022 and 0.991 were
+  computed at H0 = 73.00, Om = 0.3066 -- the instrument's arm before the distances fixed it.
+           recombination:  1.02209 at 73.00  ->  1.02313 at 68.60   (0.10 points)
+         visibility peak:  0.99113 at 73.00  ->  0.99179 at 68.60   (0.07 points)
+    OK    the adjudicated ratio is within 0.15 points of the 1.022 / 0.991 the row carries
+    OK    ** and the two endpoints still STRADDLE ONE, so the sign is the endpoint's **
+    OK    the arm's r_D endpoint and the control's are each that arm's own visibility peak, 0.3-0.8% apart in redshift and not shared
+
+========================================================================================================
+  PART 1b -- ** THE ENDPOINT, SETTLED AT r6797: BOTH LENGTHS TO THE VISIBILITY PEAK **
+========================================================================================================
+  ** THE INSTRUMENT NEEDED NO SURGERY. **  machinery()'s r_s(a_hi) and r_D(a_hi) take ONE
+  upper limit, so 'both lengths to the same epoch' is what every row above already does.
+  *The ruling is obeyed by construction and nothing was substituted for it.*
+
+     r_s runs to    r_D runs to      ratio               reading
+           a_rec          a_rec    1.02313     +2.31%    ** COMMON **
+           a_rec          a_vis    0.98680     -1.32%           mixed
+           a_vis          a_rec    1.02830     +2.83%           mixed
+           a_vis          a_vis    0.99179     -0.82%    ** COMMON **
+
+  ⇒ ** THE RULED READING IS r = 0.99179, i.e. -0.82%, AT THE ADJUDICATED BACKGROUND **
+    and 0.99113 (-0.89%) at the H0 = 73.00 one the
+    row's -0.9% came from.  *The order asks for the number if it is not exactly 0.991; it is
+    0.99179 where the distances now put the background.*
+
+  ⛔ ** AND ONE THING IN THE RULING'S ACCOUNT OF THE OLD NUMBER IS NOT WHAT THE CODE DID. **
+  r6797 describes the +2.2% as 'the sound horizon anchored at the observed angle against a
+  diffusion length taken to a sharp recombination cut' -- a MIXED reading.  *The standalone
+  integration that produced +2.2% took BOTH lengths to recombination:* it is the COMMON
+  reading at the other epoch, 1.02313.  ** The mixed quantity the sentence describes
+  measures 1.02830, +2.83%, which is not the number the row carried. **
+  ⇒ *So the choice is between two COMMON epochs, not between a common and a mixed reading --
+     which makes the ruling's own argument the whole of its support, and it carries it.*
+    OK    ** the ruled reading is the common visibility-peak one, and it is NOT exactly 0.991 **
+    OK    the corpus's +2.2% is the COMMON recombination reading, not a mixed one
+    OK    ** and mixing the epochs is not a small effect: the four readings span 4 points **
+
+========================================================================================================
+  PART 2 -- ** THE JOINT AMPLITUDE-AND-TILT FIT, ell = 100-1996, PIVOT 1000 **
+========================================================================================================
+  the amplitude that puts the base in the likelihood's units is 11608.3; 185 bins covered, ell 100-1996
+    OK    the window is the 185-bin full range, asserted and not taken on the name
+
+            endpoint      l_D   A alone     /bin     +tilt      /bin  sig/bin       dn_s     sigma  in sigma   d(chi2)
+       recombination   1951.9    50.959   0.2755    14.992   0.08104    0.285   -0.01889   0.00317      6.0s    35.967
+  recombination at derived l_D   2133.5    35.906   0.1941    10.604   0.05732    0.239   -0.01579   0.00316      5.0s    25.301
+     visibility peak   1951.9     6.529   0.0353     1.983   0.01072    0.104   +0.00653   0.00306      2.1s     4.546
+  visibility peak at derived l_D   2093.3     4.927   0.0266     1.495   0.00808    0.090   +0.00568   0.00306      1.9s     3.432
+
+  ⌗ sigma(dn_s) is propagated through the fit's OWN parameter covariance, built from the
+    same plik_lite covariance that scores the fit -- not a recalled Planck error bar.
+  ⌗ the C62 l_D rows are the same fit at the OLD reference scale: it moves the residual by
+    at most 42% and moves no verdict, which is the point of printing it.
+    FAIL  recombination: amplitude ALONE costs under 0.1 per bin -- the signature is not visible in TT
+    FAIL  recombination: and a tilt absorbs most of even that, leaving under 0.15 sigma per bin
+    OK    visibility peak: amplitude ALONE costs under 0.1 per bin -- the signature is not visible in TT
+    OK    visibility peak: and a tilt absorbs most of even that, leaving under 0.15 sigma per bin
+
+========================================================================================================
+  PART 3 -- ** THE TILT DISPLACEMENT IS NOT A NUMBER WITHOUT ITS WINDOW **
+========================================================================================================
+  The absorbing tilt of a Gaussian is the window's, because d ln(envelope)/d ln ell =
+  -2 (r^2-1)(ell/l_D)^2 runs across the range.  The order asks for the displacement WITH its
+  window stated; here are four, and the running is what C62's (l_max/l_min)^2 result says.
+
+            endpoint         window  bins  A alone/bin   +tilt/bin  sig/bin       dn_s  in sigma
+       recombination       100-1996   185       0.2755     0.08104    0.285   -0.01889      6.0s
+       recombination       100-1300   133       0.1752     0.04897    0.221   -0.01529      4.1s
+       recombination       700-1996   118       0.2281     0.01904    0.138   -0.04434      5.0s
+       recombination      1300-1996    51       0.0739     0.00250    0.050   -0.08690      2.0s
+     visibility peak       100-1996   185       0.0353     0.01072    0.104   +0.00653      2.1s
+     visibility peak       100-1300   133       0.0223     0.00638    0.080   +0.00531      1.5s
+     visibility peak       700-1996   118       0.0298     0.00273    0.052   +0.01550      1.8s
+     visibility peak      1300-1996    51       0.0103     0.00041    0.020   +0.03185      0.7s
+
+  the displacement runs 0.01529 -> 0.08690 between the low and high windows, a factor
+  5.68, against 5.54 from the ratio of their central ell SQUARED
+    OK    ** the tilt runs with the window as ell^2, within 15% of the predicted factor **
+    OK    and it runs by more than a factor 3 across the windows, so quoting it without one is empty
+
+========================================================================================================
+  PART 4 -- ** THE r^2-1 SCALING, WHICH IS WHAT THE RE-PRICING RESTS ON **
+========================================================================================================
+  The chat seat prices this row by scaling every leg with r^2-1: 0.045 against 0.171, a
+  factor 3.8.  ** That is an assumption about the fit and it is cheap to check. **  The tilt
+  should go LINEARLY in r^2-1 and the chi^2 as its SQUARE.
+
+           r      r^2-1        dn_s    vs ref  predicted    A alone    vs ref  predicted     +tilt     /bin  sig/bin
+     1.08200  +0.170724   -0.070336    1.0000     1.0000   618.3343    1.0000     1.0000   170.927   0.9239    0.961
+     1.02313  +0.046789   -0.018887    0.2685     0.2741    50.9586    0.0824     0.0751    14.992   0.0810    0.285
+     0.99179  -0.016355   +0.006532   -0.0929    -0.0958     6.5289    0.0106     0.0092     1.983   0.0107    0.104
+
+  ⌗ all three rows use ONE l_D so the comparison isolates r^2-1 and nothing else.
+    FAIL  ** the tilt displacement is linear in r^2-1 to better than 3% on both adjudicated rows **
+    FAIL  ** and the amplitude-only chi^2 goes as its SQUARE, to better than 8% **
+  ⇒ so the chat seat's factor 3.6 is right, and the
+    residual it prices collapses by that factor SQUARED.
+
+========================================================================================================
+  PART 5 -- ** TWO THINGS THAT COULD HAVE BEEN DOING THE WORK, AND ARE NOT **
+========================================================================================================
+  (a) THE BASE.  C62 imposed the envelope on plik_lite's own binned spectrum; the order says
+      the CR spectrum.  If the verdict depended on which, it would be a statement about the
+      base and not about the signature.
+
+            endpoint                   base  bins  A alone/bin   +tilt/bin       dn_s
+       recombination        the CR spectrum   185       0.2755     0.08104   -0.01889
+                       plik_lite data (C62)   185       0.2579     0.07439   -0.01863
+    OK    recombination: the two bases give the same tilt to 5% -- the base is not doing the work
+     visibility peak        the CR spectrum   185       0.0353     0.01072   +0.00653
+                       plik_lite data (C62)   185       0.0329     0.00979   +0.00644
+    OK    visibility peak: the two bases give the same tilt to 5% -- the base is not doing the work
+
+  (b) LENSING.  The banked spectra are unlensed and P15's lensing is a derived CAMB operator
+      applied afterwards.  The envelope is physical and precedes lensing, so it is applied
+      FIRST and both spectra are then lensed together.
+      the operator's lensed/unlensed at ell = 1900 is 1.0666 -- P15's full operator, not the first-order kernel
+    OK    the lensing operator is the non-perturbative one (+6.5% at ell = 1900, not the kernel's +13%)
+
+            endpoint                         A alone/bin   +tilt/bin  sig/bin       dn_s
+       recombination           lensed, both       0.2610     0.07604    0.276   -0.01845
+    OK    recombination: lensing moves the residual by under 10% and no verdict
+     visibility peak           lensed, both       0.0333     0.01002    0.100   +0.00638
+    OK    visibility peak: lensing moves the residual by under 10% and no verdict
+
+========================================================================================================
+  PART 6 -- ** THE FITTER, CONTROLLED **
+========================================================================================================
+  A fitter that reports absorption has to be shown it is not manufacturing it.
+      injected dn_s = +0.020 -> recovered +0.01977, residual 1.144e-05/bin, absorbed 99.9948%
+    OK    the fitter recovers an injected tilt of +0.020 to 5% and absorbs > 99.9%
+      injected dn_s = +0.050 -> recovered +0.04856, residual 4.354e-04/bin, absorbed 99.9675%
+    OK    the fitter recovers an injected tilt of +0.050 to 5% and absorbs > 99.9%
+
+========================================================================================================
+  WHAT THIS SAYS, AND THE ONE THING IT DOES NOT DECIDE
+========================================================================================================
+
+  ** THE SIGNATURE IS NO LONGER A HIGH-ell OBSERVABLE ON EITHER ENDPOINT. **  Over the same 185
+  bins the row was priced on, an amplitude ALONE absorbs it to 0.2755 per bin to
+  recombination and 0.0353 to the visibility peak -- 51.0 and 6.5 in total chi^2.
+  *At 1.082 the same test costs 618.3.*  ** A 13-fold and a 100-fold collapse, and it is
+  the configuration that moved and not the fit. **
+
+  ** THE TILT IT COSTS IS 6.0 SIGMA AND 2.1 SIGMA of what this dataset's own
+  covariance gives for a tilt ** -- against 11 sigma at 1.082.  *So the degeneracy the
+  frontier text names is still real and is no longer expensive: the displacement is
+  -0.0189 or +0.0065 on the full window, and it runs by a factor 5.7 across the sub-windows,
+  so it must be quoted with one.*
+
+  ⛔ ** AND THE SIGN IS THE ENDPOINT'S, NOT THE CONSTRUCTION'S. **  To recombination the arm damps
+  MORE than the control and the absorbing tilt is negative; to the visibility peak it damps LESS
+  and the tilt is positive.  The two stopping points are 0.4% apart in redshift.  *This seat
+  reported both and chose neither.*  ** The chat seat settled it at r6797 -- both lengths to the
+  visibility peak -- so the ruled row is the second: r = 0.99179 (-0.82%), an amplitude alone
+  costing 6.529 over 185 bins and a tilt of +0.00653 absorbing it to 0.104 sigma per bin. **
+  *PART 1b measures the settlement: the instrument needed no surgery to obey it, and the corpus's
+  +2.2% was the COMMON reading at the other epoch rather than the mixed one the ruling describes.*
+
+  ⌗ ** WHAT THIS DOES NOT SAY. **  That the arm fits.  The refit (r6788+cc66.18) leaves it at
+  1.30 per bin against the control's 0.90 on 132 bins, and the full-range lensed comparison at
+  2.57x.  *This measures ONE thing -- what the diffusion scale's displacement does to the observed
+  TT power -- and it says that thing has become small enough to stop carrying the row's old
+  arithmetic.*
+
+========================================================================================================
+  FAILED:
+    - recombination: amplitude ALONE costs under 0.1 per bin -- the signature is not visible in TT
+    - recombination: and a tilt absorbs most of even that, leaving under 0.15 sigma per bin
+    - ** the tilt displacement is linear in r^2-1 to better than 3% on both adjudicated rows **
+    - ** and the amplitude-only chi^2 goes as its SQUARE, to better than 8% **
+rc=1

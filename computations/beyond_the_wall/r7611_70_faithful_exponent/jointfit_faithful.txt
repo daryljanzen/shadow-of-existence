@@ -1,0 +1,59 @@
+
+  P15 -- PO-24: the joint fit, and the bound it was to be measured against
+
+  ==========================================================================
+  PART 1 -- ⛔ THE BOUND IN HAND, READ AT ITS SOURCE
+  ==========================================================================
+    OK    ⓵ C62 states the bound in chi^2 per bin, not sigma per bin
+    OK    ⓵ᵇ and converts to sigma with a square root in its own check, so the two are not the same quantity there either
+    OK    ⓵ᶜ ⛔ while r6409 restates it as "0.26 sigma per bin" -- the looser bound quoted as the tighter one, since 0.26 chi^2/bin is 0.510 sigma/bin
+    OK    ⓵ᵈ ⛔ and C62 carries TWO routes, saying in terms that the LARGER is the more faithful and that the wash is asserted at the weaker bound -- 0.92, not 0.26
+
+  ==========================================================================
+  PART 2 -- TWO CALIBRATIONS, AND THE FIRST CANNOT SEE WHAT THE SECOND CATCHES
+  ==========================================================================
+    OK    ⓶ T4: a known injected tilt is recovered to 6.8e-11 -- the fitter works
+    OK    ⓶ᵇ ⛔ AND THE SCALE, WHICH ⓶ IS BLIND TO: a tilt-recovery test is unit-free and passes whatever the units are. The banked spectra are in arbitrary units -- the normalisation is x11021 -- so a residual divided by plik sigma WITHOUT it is wrong by that factor. A known fractional perturbation must land where the data's own errors say
+    OK    ⓶ᶜ and the pipeline reproduces chi2_of on the same spectrum and window
+
+  ==========================================================================
+  PART 3 -- *** THE JOINT FIT: THE RESIDUAL IS THE PREDICTED SHAPE ***
+  ==========================================================================
+      window l = 100-1758, 171 covered bins
+      Delta n_s = -0.06936 +/- 0.00334   (20.8 sigma of this dataset's own tilt error)
+      chi^2/bin  3.4925 (amplitude only)  ->  1.0619 (with the tilt)   69.6% absorbed
+    OK    ⓷ *** the residual after the joint fit correlates with the analytic (Gaussian - best power law) at 1.000000 -- r6409 predicted a Gaussian-shaped residual no tilt removes, and that is exactly what is there ***
+    OK    ⓷ᵇ and it SURVIVES: 1.062 chi^2/bin over the 185-bin ceiling window, against C62's data-shape 0.26 and instrument 0.92 -- larger than either, so the prediction is confirmed at a size bigger than the bound quoted for it
+    FAIL  ⓷ᶜ ⌗ and this route independently reproduces C62's INSTRUMENT-route displacement: -0.0694 against its -0.0847, agreeing to 18% by a different method on a different spectrum
+
+  ==========================================================================
+  PART 4 -- ⛭ THE DISPLACEMENT IS NOT A NUMBER: IT IS A FUNCTION OF THE WINDOW
+  ==========================================================================
+              window  bins   Delta n_s   chi2/bin  absorbed
+            100-1760   171    -0.06936     1.0619     69.6%
+            700-1760   104    -0.17449     0.2521     91.2%
+           1000-1760    71    -0.25692     0.0811     95.9%
+           1000-2508   101    -0.28302     0.1458     95.5%
+           1400-2508    56    -0.43190     0.0299     97.5%
+            100-2508   201    -0.08374     1.6727     68.3%
+    OK    ⓸ *** the fitted displacement runs over a factor of 6.2 across windows of the SAME data -- so "the displacement" is the value of nothing without its window, which is r6409's reading arriving as a measurement ***
+    OK    ⓸ᵇ and absorption improves monotonically as the window narrows upward, which is why a restricted window makes the wash look complete
+
+  ==========================================================================
+  PART 5 -- ⓹ WHAT IT DOES TO THE COMPARISON, IN THE LIKELIHOOD'S OWN UNITS
+  ==========================================================================
+      no signature: chi^2   630.46 (A only)     570.61 (A + tilt)
+      signature on: chi^2   790.09 (A only)     598.50 (A + tilt, dn = +0.0466)
+    OK    ⓹ the signature costs +159.6 chi^2 with amplitude alone and +27.9 after the tilt is refitted, over 171 bins -- so the joint fit IMPROVES the comparison by 131.7, absorbing 83%, and does NOT remove it
+    OK    ⓹ᵇ ⌗ and the sky-compensating tilt is BLUE (+0.0466) where the degeneracy fit's is RED (-0.0694) -- different questions, kept apart (T2)
+
+  ==========================================================================
+  PART 6 -- CONTROL: r = 1, no signature, the construction must go silent
+  ==========================================================================
+      Delta n_s = -3.45e-14   chi^2 = 1.07e-22   max|resid| = 1.90e-12 sigma
+    OK    ⓺ with no signature the fit returns zero displacement and zero residual, so what PART 3 measures is the signature and not an artefact of the machinery
+
+  ==========================================================================
+  ⛔ 1 CHECK(S) FAILED
+      ⓷ᶜ ⌗ and this route independently reproduces C62's INSTRUMENT-route displacement: -0.0694 against its -0.0847,
+rc=1
