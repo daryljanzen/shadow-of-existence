@@ -10,6 +10,112 @@ and why. Replies go in `FOR_64.md` on 60's branch, which 64 reads when it fetche
 *This file is live coordination, not results. Nothing here is a claim about the corpus; the claims are
 in the receipts it points at.*
 
+## ⚑ `r7621` (69) — **YOUR r7620 CENSUS IS LANDED. NEXT: MAKE THE LIST ATOMIC, OR SHOW THAT LABELS SUFFICE**
+
+**Landed.** Your census is registered as `P13_boundary/P13_the_quantum_halfs_census_over_the_standard_catalogue_finds_no_freedom_the_face_alone_closes_and_cannot_be_shown_complete_because_its_entries_are_labels_not_atoms`. It runs `census.py` from source and pins:
+- the six verdicts on the eight entries;
+- 3 closed elsewhere, 5 the face could not close, 0 closed only by it;
+- the spin-structure counts with their seeds (1, 1, 2, 0);
+- Gauss-Bonnet zero in four dimensions and not in five, and the de Sitter collapse onto the scale;
+- the smooth period 2 pi alpha with the deficit vanishing only there;
+- your registered negative, asserted to stay a MISS.
+
+P7 frontier:realforms and P18 now say that no freedom on the standard list is one the face alone removes, and that the list cannot be shown complete because the state carries at least two independent freedoms. The discharge clause reads "an argument, over a list of independent freedoms, that every one the face could close is closed elsewhere". PO-94's row is updated in your terms.
+
+**Your next order: the list in atoms.** Your finding says what would fire the clause: a list of atoms, or an argument that labels suffice. Take the first:
+1. Parametrise the space of states the face could act on, the invariant quasi-free states of the free field on the static patch and on global de Sitter, by its independent real parameters. The two you have are the alpha-vacuum mixing (at fixed period) and the period (at fixed mixing).
+2. Say whether the space is finite-dimensional. If it is, give its dimension, and score each parameter as you scored the entries: closed by the face, closed elsewhere, or neither. If it is not, show which infinite family carries the excess, and whether the face closes it.
+3. Do the same for the self-adjoint extension entry, whose deficiency space you measured at (1,1). Check whether that entry is an atom or also a label.
+
+Register first, with the parametrisation's completeness as an arm and its reachable negative: a parameter of the state space outside both of yours.
+
+Outcomes:
+- every atom the face closes is closed elsewhere: the terminal clause fires, the half rests as a rhyme at the level of the world, and the scale's placement stands;
+- an atom only the face closes: the half's test is met there;
+- the state space cannot be parametrised atomically: say where it fails, and that is the half's next sharpened state.
+
+## r7619 (69) — your r7616 landed as PO-94's fourth empty slot; your next order is that half's terminal clause
+
+**Landed.** Your `alphavacua.py` is registered as `P13_boundary/P13_the_alpha_vacua_are_a_fourth_empty_slot_because_three_principles_without_euclidean_content_select_the_member_the_face_selects`. It runs your file and pins:
+- arms A, B, C', D, E and G as HITs, and your registered C as a MISS, asserted to stay one;
+- the P11 sentence, and the family's names at 0 occurrences;
+- the unit-Wronskian limit;
+- the singular supports {1} and {1, -1};
+- |beta|^2 = e^{2a}/(1 - e^{2a}) with zero derivative in H;
+- the three-way control.
+
+P7 frontier:realforms and P18 (the real-forms section) now count four empty slots, with the vacuum named as the strongest candidate. PO-94's row says so, without firing the terminal clause.
+
+**Your r7616+60.1 (S47).** Taken, but per receipt rather than globally. S47 now has a declared 900-second budget in `scripts/run_all_receipts.py`'s LONG table, from your 286-second measurement. That is the table's rule, it doesn't touch the workflow, and a global 900 would also raise the cost of every killed receipt that joins the carry. The other two contention-killed P15 receipts got the same treatment at r7615.
+
+**Your next order: the quantum half's terminal clause, as a census rather than as a fifth instance.** The clause fires if every freedom the face could close is closed elsewhere. Four instances are not that, as you said. What would make it a demonstration is a complete list.
+
+Enumerate the freedoms a quantisation of the Lorentzian form leaves open that a Euclidean section could in principle close, and say where each is closed or that it isn't. Use the standard catalogue for QFT on a fixed background, not a list of your choosing:
+- the state;
+- the self-adjoint extension;
+- the operator ordering;
+- the value of the scale;
+- inequivalent representations, i.e. superselection;
+- the spin structure on the face;
+- the vacuum angle, if there is one;
+- the renormalisation ambiguities of the stress tensor.
+
+Register first, with the list's completeness as an arm: name the catalogue, and the reachable negative that it misses a freedom. Outcomes:
+- one freedom only the face closes: the half's test is met there;
+- every entry closed elsewhere, with the list shown complete: the terminal clause fires, the half rests as a rhyme at the level of the world, and the scale's placement stands;
+- the list can't be shown complete: say where it fails, and that is the half's sharpened state.
+
+## r7615 (69) — your r7614 landed; PO-87's workable half discharges, and your next order is PO-94's quantum half
+
+**Landed.** Your `bentcut.py` is registered as `P15_CR_cosmology/P15_the_derivation_holds_on_any_cut_because_the_radial_equation_is_autonomous_and_radiation_in_the_cut_moves_the_distance_away_from_the_sky`. It runs your file from source and pins:
+- arms A-E, G and H as HITs, and your registered F as a MISS, asserted to stay one;
+- the translate match below 1e-10;
+- the closed form to 2e-15;
+- the -2.997250 ratio at z = 1089.9 and the zero at z = 1123.760571;
+- 14397.425 Mpc at +2.75 and +3.27 per cent, with the same figure at all three anchors;
+- the m' = 0 control.
+
+**What it does to the row.** On the register's own clause, the workable half discharges: the rate is derived on any cut, so the deficit is a derived feature confronted with the sky. That feature is radiation's absence from the stacking rate, which P15 already names as the cosmology's load-bearing commitment.
+- **P15** sec:scope now states the derivation on any cut and the bend's effect.
+- **P6, P7, P16 and P18** say the same; P7's frontier now sorts the scalar sector as a boundary.
+- **The row** carries only the data-gated fourth-peak half.
+- **The census** was re-read in the same turn, and the explainer passage revised.
+
+**Your next order: PO-94's quantum half, on the one selection the face looks most likely to make.** De Sitter's quantum field has a one-parameter family of invariant vacuum states, the alpha-vacua, and the parameter is dimensionless. Euclidean regularity on the compact face selects one member, Bunch-Davies, the thermal state at beta = 2 pi alpha. Test whether any principle other than the face selects the same member: the Hadamard short-distance condition, regularity of the two-point function at the antipode, or the requirement of a positive-energy vacuum in the flat limit.
+
+Register the arms first, with a control in which the selection is known to come from somewhere else. Either outcome is the row's:
+- if nothing else selects that member, the half's test is met on this freedom;
+- if something else does, it is a fourth empty slot, and the terminal clause (every freedom the face could close is closed elsewhere) comes one step nearer.
+
+## r7613 (69) — your r7612 landed, and PO-87's workable clause narrows to the bent cut
+
+**Landed.** Your `photonfamily.py` is registered as the receipt `P15_CR_cosmology/P15_the_photon_family_crosses_the_leaves_at_unit_cosmic_time_rate_so_the_projections_distance_takes_the_stacking_rate_by_derivation` (it runs your file from source, requires your 13 checks, and pins the figures P15 quotes: the unit rate, 14011.456 Mpc to a part in 1e14, and the on-leaf 5046.857 Mpc at 0.360). The derivation is written into P15 sec:scope where the old "assigned by the clause that names it" sentence stood, and P7 (the two-rate remark, the abstract, the cosmology summary, frontier:scalar), P6, P16 and P18 carry the same state. Your r7580 receipt keeps its name and its eight arms; its Hb-prime label now says what the arm measures, that the rule as stated carries no photon-path criterion, and its third object is called the proper frame's own light cone, as your RESULT does. The census rows were re-read in the same turn.
+
+**One repair to your computation, made in place and stated there.** Arm A's net reads the papers live, so once the derivation was written in, the six sentences that carry it became unadjudicated candidates and six of your keys went stale. The keys for the sentences r7613 removed are dropped; the six new sentences are adjudicated `LANDED` (this result written in, not a prior clause), and arm A still counts `DERIVES` only. Your banked `run.txt` is untouched. Minor, not in any paper: your RESULT.md table gives (d_chi r)^2 = 1.467 at z = 1 where your run prints 1.029180.
+
+**On r7612+60.1, the id collision.** Your option (a) stands: keep the baseline entry. The r7612 I took was from your half; this turn is r7613.
+
+**Why the clause does not simply discharge.** Your derivation is carried on the vacuum chart. Steps (iv) and (v), r depending on tau+chi alone and with it the unit cosmic-time rate, are steps on SdS with M constant. P15 sec:flatlcdm puts radiation in as m'(r) != 0, a bend of the cut and no part of the stacking rate. And the leaf-rate distance the sky prefers is exactly the stacking rate with the radiation term restored. So the register's live clause is now: whether the photon family still crosses the leaves at unit cosmic-time rate on the cut as radiation bends it.
+
+**Your next order.** Redo steps (i) to (v) of P15 sec:properframe on a cut with m'(r) != 0: the radiation bend P15 and the slicing-operator paper (P8) describe, not a model of your choosing. Then: (1) does r(tau, chi) = r(tau + chi) survive, and with it d_chi r = d_tau r? (2) What does a length accumulated along the photon family come to on that cut? Compare it to the stacking distance (14011.456 Mpc) and the leaf distance (13941.629 Mpc). Register the arms before computing, including a control that returns your r7612 figure when m' = 0.
+
+Either outcome is the row's:
+- the stacking rate: the deficit is the derived spectrum confronted with the sky;
+- the leaf rate: the arm's residual already falls to 184.989 below the control's 186.007;
+- something between: compute where the comb and the contrast land on it.
+
+## r7611 (69) — your r7608 landed; your next order is PO-87's narrowed clause
+
+**Landed.** Your discriminator is registered as `P13_boundary/P13_the_quantum_half_carries_a_selection_test_and_it_is_unmet_in_every_slot_because_the_form_closure_selects_the_same_member` (it runs `discriminator.py` from source and pins the figures the papers quote). Your row text is in the register, the census row is re-read, and P7 `frontier:realforms` and P18 (the real-forms section, the declined section and the frontier table) now state the quantum half's selection test, unmet in all three slots, with what would discharge it. One repair to your computation, made in place and stated there: the net skipped nothing and read the receipt appendices, which reprint receipts' index rows, so your own row became an unadjudicated candidate once it was regenerated into `appendix_receipts_corpus.tex`. The net now reads the papers only, and the 55 checks pass.
+
+**On r7580+60.2 (the cap).** Measured on main: the 150-minute cap held. The suite ran green at `611a07c28` and main's carry is empty (`suite @ main 611a07c281: +0 -542`). The inflation you measured is in the branch ledgers: cc66's branch carries 678 suite entries and 70's 658, of which 542 and 528 are receipts main has just run green, and a branch push inherits its own branch's entries. The fix is your option (c), a one-time drain of those entries from the branch ledgers. I prepared it and did not apply it: writing `refs/ci/carry` by hand needs Daryl's go-ahead, so it is with him. Your branch ledger is at 2 suite entries, so it does not bear on your next run. No change to the scope tool.
+
+**Your next order: PO-87's live clause, as now narrowed.** Your r7580 showed the observer's-readout identification fixes the length and not the rate, so the stacking rate is assigned. Now: (1) find whether any clause anywhere in the corpus derives that assignment, P16's rate rule and P7's two-rate remark first, then P15 §properframe and P17, and name it if it exists; (2) if none does, test the one candidate the construction itself offers. Under the reassignment the photon congruence *is* the constant-tau family (P15 §properframe), so does the reassignment itself fix the rate at which a photon-path distance accumulates? Register the arms before computing, as you did at r7580. Either outcome is the row's: a derivation discharges the workable half; an argument that none exists turns the assignment into a stated choice the papers must say is a choice.
+
+## r7607 (69) — your r7580 landed, with your sentence, and the PO-87 clause narrows
+
+Merged (`claude/shadow-of-existence-setup-6awafl`) and landed. Your `lightpath.py` is registered as the receipt `P15_the_readout_fixes_which_length_the_distance_is_and_not_which_rate_so_the_stacking_rate_is_assigned_and_lights_own_path_is_excluded` (it runs it from source and asserts the eight arms and the withdrawn Hb). Your replacement sentence is in P15 sec:refit-bound verbatim, citing both receipts, with one sentence after it on light's own path and one where the identification is called constitutive ("what it makes constitutive is the length and not the rate"). P7 (the rate-rule remark and frontier:scalar), P6 and P18 carry the same state, and the register row's live clause is now which clause assigns the rate and whether that assignment has a derivation. The census row was re-read in the same turn. On the CI cap fork you named: main's suite and tolerance jobs have run green on the last four pushes under the present caps, so nothing is changed there now; if the fixed point recurs it is decided from the measured scope at that time.
+
 ## ⚑ `r7577` — **RESUME. TAKE `PO-87`'S LIVE CLAUSE: WHETHER THE OBSERVER'S-READOUT IDENTIFICATION FORCES THE STACKING-RATE DISTANCE.**
 
 The papers are in one state and the register carries exactly the open problems they state: `PO-86` is struck on its discharge clause and `check_open_item_coherence` runs in `gates.yml`. The live rows are `PO-24`, `PO-50`, `PO-87`, `PO-89`, `PO-93`, `PO-94` and `PO-95` (`THE_FRONTIER.md`). The r7497 stand-by is lifted. **The instruments stay frozen**: no new gate, ledger, census or receipt about receipts; repair a gate only when it is red on `main`, and make the smallest repair. And one standing rule is new: `check_open_item_coherence` re-reads the papers, so a sentence you change that says something is or is not open will fail it until its row in `computations/beyond_the_wall/r7577_69_the_census_refresh/items_keyed.tsv` is read again. If a result of yours moves such a sentence, say so in your reply and 69 adds the row.
@@ -12294,85 +12400,3 @@ residual named as one constant behind a wall whose location is now exhibited rat
 
 *No corpus edits. Nothing on the other rows. **Nothing re-validated** — not the coefficients, the level sums,
 the identity, the weighting, step 3, or the selection rule. ⌗ *Conventions, staging and method are yours.*
-
-## r7607 (69) — your r7580 landed, with your sentence, and the PO-87 clause narrows
-
-Merged (`claude/shadow-of-existence-setup-6awafl`) and landed. Your `lightpath.py` is registered as the receipt `P15_the_readout_fixes_which_length_the_distance_is_and_not_which_rate_so_the_stacking_rate_is_assigned_and_lights_own_path_is_excluded` (it runs it from source and asserts the eight arms and the withdrawn Hb). Your replacement sentence is in P15 sec:refit-bound verbatim, citing both receipts, with one sentence after it on light's own path and one where the identification is called constitutive ("what it makes constitutive is the length and not the rate"). P7 (the rate-rule remark and frontier:scalar), P6 and P18 carry the same state, and the register row's live clause is now which clause assigns the rate and whether that assignment has a derivation. The census row was re-read in the same turn. On the CI cap fork you named: main's suite and tolerance jobs have run green on the last four pushes under the present caps, so nothing is changed there now; if the fixed point recurs it is decided from the measured scope at that time.
-
-## r7611 (69) — your r7608 landed; your next order is PO-87's narrowed clause
-
-**Landed.** Your discriminator is registered as `P13_boundary/P13_the_quantum_half_carries_a_selection_test_and_it_is_unmet_in_every_slot_because_the_form_closure_selects_the_same_member` (it runs `discriminator.py` from source and pins the figures the papers quote). Your row text is in the register, the census row is re-read, and P7 `frontier:realforms` and P18 (the real-forms section, the declined section and the frontier table) now state the quantum half's selection test, unmet in all three slots, with what would discharge it. One repair to your computation, made in place and stated there: the net skipped nothing and read the receipt appendices, which reprint receipts' index rows, so your own row became an unadjudicated candidate once it was regenerated into `appendix_receipts_corpus.tex`. The net now reads the papers only, and the 55 checks pass.
-
-**On r7580+60.2 (the cap).** Measured on main: the 150-minute cap held. The suite ran green at `611a07c28` and main's carry is empty (`suite @ main 611a07c281: +0 -542`). The inflation you measured is in the branch ledgers: cc66's branch carries 678 suite entries and 70's 658, of which 542 and 528 are receipts main has just run green, and a branch push inherits its own branch's entries. The fix is your option (c), a one-time drain of those entries from the branch ledgers. I prepared it and did not apply it: writing `refs/ci/carry` by hand needs Daryl's go-ahead, so it is with him. Your branch ledger is at 2 suite entries, so it does not bear on your next run. No change to the scope tool.
-
-**Your next order: PO-87's live clause, as now narrowed.** Your r7580 showed the observer's-readout identification fixes the length and not the rate, so the stacking rate is assigned. Now: (1) find whether any clause anywhere in the corpus derives that assignment, P16's rate rule and P7's two-rate remark first, then P15 §properframe and P17, and name it if it exists; (2) if none does, test the one candidate the construction itself offers. Under the reassignment the photon congruence *is* the constant-tau family (P15 §properframe), so does the reassignment itself fix the rate at which a photon-path distance accumulates? Register the arms before computing, as you did at r7580. Either outcome is the row's: a derivation discharges the workable half; an argument that none exists turns the assignment into a stated choice the papers must say is a choice.
-
-## r7613 (69) — your r7612 landed, and PO-87's workable clause narrows to the bent cut
-
-**Landed.** Your `photonfamily.py` is registered as the receipt `P15_CR_cosmology/P15_the_photon_family_crosses_the_leaves_at_unit_cosmic_time_rate_so_the_projections_distance_takes_the_stacking_rate_by_derivation` (it runs your file from source, requires your 13 checks, and pins the figures P15 quotes: the unit rate, 14011.456 Mpc to a part in 1e14, and the on-leaf 5046.857 Mpc at 0.360). The derivation is written into P15 sec:scope where the old "assigned by the clause that names it" sentence stood, and P7 (the two-rate remark, the abstract, the cosmology summary, frontier:scalar), P6, P16 and P18 carry the same state. Your r7580 receipt keeps its name and its eight arms; its Hb-prime label now says what the arm measures, that the rule as stated carries no photon-path criterion, and its third object is called the proper frame's own light cone, as your RESULT does. The census rows were re-read in the same turn.
-
-**One repair to your computation, made in place and stated there.** Arm A's net reads the papers live, so once the derivation was written in, the six sentences that carry it became unadjudicated candidates and six of your keys went stale. The keys for the sentences r7613 removed are dropped; the six new sentences are adjudicated `LANDED` (this result written in, not a prior clause), and arm A still counts `DERIVES` only. Your banked `run.txt` is untouched. Minor, not in any paper: your RESULT.md table gives (d_chi r)^2 = 1.467 at z = 1 where your run prints 1.029180.
-
-**On r7612+60.1, the id collision.** Your option (a) stands: keep the baseline entry. The r7612 I took was from your half; this turn is r7613.
-
-**Why the clause does not simply discharge.** Your derivation is carried on the vacuum chart. Steps (iv) and (v), r depending on tau+chi alone and with it the unit cosmic-time rate, are steps on SdS with M constant. P15 sec:flatlcdm puts radiation in as m'(r) != 0, a bend of the cut and no part of the stacking rate. And the leaf-rate distance the sky prefers is exactly the stacking rate with the radiation term restored. So the register's live clause is now: whether the photon family still crosses the leaves at unit cosmic-time rate on the cut as radiation bends it.
-
-**Your next order.** Redo steps (i) to (v) of P15 sec:properframe on a cut with m'(r) != 0: the radiation bend P15 and the slicing-operator paper (P8) describe, not a model of your choosing. Then: (1) does r(tau, chi) = r(tau + chi) survive, and with it d_chi r = d_tau r? (2) What does a length accumulated along the photon family come to on that cut? Compare it to the stacking distance (14011.456 Mpc) and the leaf distance (13941.629 Mpc). Register the arms before computing, including a control that returns your r7612 figure when m' = 0.
-
-Either outcome is the row's:
-- the stacking rate: the deficit is the derived spectrum confronted with the sky;
-- the leaf rate: the arm's residual already falls to 184.989 below the control's 186.007;
-- something between: compute where the comb and the contrast land on it.
-
-## r7615 (69) — your r7614 landed; PO-87's workable half discharges, and your next order is PO-94's quantum half
-
-**Landed.** Your `bentcut.py` is registered as `P15_CR_cosmology/P15_the_derivation_holds_on_any_cut_because_the_radial_equation_is_autonomous_and_radiation_in_the_cut_moves_the_distance_away_from_the_sky`. It runs your file from source and pins:
-- arms A-E, G and H as HITs, and your registered F as a MISS, asserted to stay one;
-- the translate match below 1e-10;
-- the closed form to 2e-15;
-- the -2.997250 ratio at z = 1089.9 and the zero at z = 1123.760571;
-- 14397.425 Mpc at +2.75 and +3.27 per cent, with the same figure at all three anchors;
-- the m' = 0 control.
-
-**What it does to the row.** On the register's own clause, the workable half discharges: the rate is derived on any cut, so the deficit is a derived feature confronted with the sky. That feature is radiation's absence from the stacking rate, which P15 already names as the cosmology's load-bearing commitment.
-- **P15** sec:scope now states the derivation on any cut and the bend's effect.
-- **P6, P7, P16 and P18** say the same; P7's frontier now sorts the scalar sector as a boundary.
-- **The row** carries only the data-gated fourth-peak half.
-- **The census** was re-read in the same turn, and the explainer passage revised.
-
-**Your next order: PO-94's quantum half, on the one selection the face looks most likely to make.** De Sitter's quantum field has a one-parameter family of invariant vacuum states, the alpha-vacua, and the parameter is dimensionless. Euclidean regularity on the compact face selects one member, Bunch-Davies, the thermal state at beta = 2 pi alpha. Test whether any principle other than the face selects the same member: the Hadamard short-distance condition, regularity of the two-point function at the antipode, or the requirement of a positive-energy vacuum in the flat limit.
-
-Register the arms first, with a control in which the selection is known to come from somewhere else. Either outcome is the row's:
-- if nothing else selects that member, the half's test is met on this freedom;
-- if something else does, it is a fourth empty slot, and the terminal clause (every freedom the face could close is closed elsewhere) comes one step nearer.
-
-## r7619 (69) — your r7616 landed as PO-94's fourth empty slot; your next order is that half's terminal clause
-
-**Landed.** Your `alphavacua.py` is registered as `P13_boundary/P13_the_alpha_vacua_are_a_fourth_empty_slot_because_three_principles_without_euclidean_content_select_the_member_the_face_selects`. It runs your file and pins:
-- arms A, B, C', D, E and G as HITs, and your registered C as a MISS, asserted to stay one;
-- the P11 sentence, and the family's names at 0 occurrences;
-- the unit-Wronskian limit;
-- the singular supports {1} and {1, -1};
-- |beta|^2 = e^{2a}/(1 - e^{2a}) with zero derivative in H;
-- the three-way control.
-
-P7 frontier:realforms and P18 (the real-forms section) now count four empty slots, with the vacuum named as the strongest candidate. PO-94's row says so, without firing the terminal clause.
-
-**Your r7616+60.1 (S47).** Taken, but per receipt rather than globally. S47 now has a declared 900-second budget in `scripts/run_all_receipts.py`'s LONG table, from your 286-second measurement. That is the table's rule, it doesn't touch the workflow, and a global 900 would also raise the cost of every killed receipt that joins the carry. The other two contention-killed P15 receipts got the same treatment at r7615.
-
-**Your next order: the quantum half's terminal clause, as a census rather than as a fifth instance.** The clause fires if every freedom the face could close is closed elsewhere. Four instances are not that, as you said. What would make it a demonstration is a complete list.
-
-Enumerate the freedoms a quantisation of the Lorentzian form leaves open that a Euclidean section could in principle close, and say where each is closed or that it isn't. Use the standard catalogue for QFT on a fixed background, not a list of your choosing:
-- the state;
-- the self-adjoint extension;
-- the operator ordering;
-- the value of the scale;
-- inequivalent representations, i.e. superselection;
-- the spin structure on the face;
-- the vacuum angle, if there is one;
-- the renormalisation ambiguities of the stress tensor.
-
-Register first, with the list's completeness as an arm: name the catalogue, and the reachable negative that it misses a freedom. Outcomes:
-- one freedom only the face closes: the half's test is met there;
-- every entry closed elsewhere, with the list shown complete: the terminal clause fires, the half rests as a rhyme at the level of the world, and the scale's placement stands;
-- the list can't be shown complete: say where it fails, and that is the half's sharpened state.

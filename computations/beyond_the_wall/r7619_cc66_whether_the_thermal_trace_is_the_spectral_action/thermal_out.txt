@@ -1,0 +1,62 @@
+
+==============================================================================
+ Ⓐ  WHAT THE PAPERS SAY THE THERMAL DATUM IS -- READ, NOT RECALLED
+==============================================================================
+  [PASS] P13 says what beta is -- READ: "a Euclidean continuation of period $\beta=2\pi\alpha$"   ->  found in boundary_paper.tex
+  [PASS] ** and says the Euclidean section IS THE FACE, which is what makes this order non-trivial: the thermal circle is a great circle of the very manifold D lives on -- READ: "and that Euclidean is the \emph{same} face" **   ->  found in boundary_paper.tex
+  [PASS] and the construction's own generator of evolution is the deparametrized true Hamiltonian on COSMIC TIME, not an operator on the face -- READ: "is solved for the generator of advance, $i\,\partial_\tau\Psi=\hat H_{\mathrm{phys}}\Psi$"   ->  found in CR_framework.tex
+
+  ⇒ TWO readings of "the thermal weight's operator", and they are not equally favourable to the
+    order.  ⑴ H_phys, which advances the LAYERS along cosmic time and does not act on spinors over
+    the face at all -- under that reading the question is not answered negatively, it is ILL-POSED
+    (pre-registered outcome 3, which I undertook not to report as outcome 2).  ⑵ the generator of
+    rotation along the face's own great circle of circumference beta -- internal to the face, acting
+    on the same spinors as D.  ** ⑵ is the order's suggestion at its strongest, so ⑵ is what gets
+    tested below. **
+
+==============================================================================
+ Ⓑ  THE INSTRUMENT: "IS B A FUNCTION OF A?" -- CONSTANT ON EVERY A-EIGENSPACE
+==============================================================================
+  [PASS] CONTROL: the instrument CERTIFIES a true function pair -- B = A^2 - 2A is constant on every A-eigenspace, including the degenerate one, so a "no" from it later is worth something   ->  function_of = True, spread = 0.00e+00, largest eigenspace = 2
+  [PASS] ** CONTROL, AND IT IS THE HINGE OF THIS ROW: a pair that COMMUTES EXACTLY and is NOT a function pair -- so commuting and being-a-function-of come apart, and the naive reading that stops at [D,H]=0 is measurably wrong **   ->  ||[A,B]|| = 0.0e+00 yet function_of = False, spread = 1.0 on a 2-dimensional eigenspace
+
+==============================================================================
+ Ⓒ  THE FACE'S LOWEST DIRAC EIGENSPACE, AND THE GREAT-CIRCLE GENERATOR ON IT
+==============================================================================
+  [PASS] the Clifford algebra is BUILT and verified, not quoted: {gamma_a, gamma_b} = 2 delta_ab on all 36 pairs of the 8x8 generators   ->  max defect = 0.0e+00
+  [PASS] the chirality splits the 8 spinors into 4 + 4, which is the dimension the MULTIPLICITY FORMULA independently gives for the face's lowest Dirac level -- 2^floor(5/2) * C(4,0) = 4, so two routes agree on the number before anything is asked of it   ->  chirality eigenvalues [-1.0, 1.0], dim(+) = 4, multiplicity formula = 4
+  [PASS] ** FIRST, THE TRAP IS REAL AND MEASURED: the great-circle generator COMMUTES with D on this eigenspace, exactly -- which is the step a naive reading would stop at **   ->  ||[D, H_theta]|| = 0.0e+00
+  [PASS] ** AND YET IT IS NOT A FUNCTION OF D: the lowest Dirac eigenspace is FOUR-dimensional and the great-circle generator takes TWO distinct values on it, so no f can reproduce it -- a function of D is constant on every D-eigenspace and this is not **   ->  weights on the 4 = [-0.5, 0.5], spread = 1.0 on a 4-dimensional D-eigenspace
+  [PASS] NON-VACUITY, the guard r7615 cost me: the eigenspace tested is of dimension 4 > 1, so the "not scalar" above is a measurement -- on a one-dimensional eigenspace every operator is scalar and the test could not have failed   ->  dim = 4
+  [PASS] ** AND IN THE CONSTRUCTION'S OWN NUMBER: with beta/alpha = 2 pi exactly, the thermal weight e^{-beta H_theta} takes the two values e^{-pi} and e^{+pi} on this ONE D-eigenspace -- it varies across it by a factor of e^{2 pi}, where any f(D/Lambda) is constant by construction **   ->  weights 0.0432 and 23.1407, ratio = 535.49 = e^(2 pi)
+  [PASS] ⌗ and one of those exceeds 1, so this generator is not a positive Hamiltonian either -- recorded because it is a strain on the identification and not a point in its favour   ->  max weight = 23.14 > 1
+
+  ⇒ The weights are [-0.5, 0.5]: the rotation acts on the Killing spinors as the U(1) inside
+    Spin(6) whose weights on the chirality-4 are +-1/2, NOT as a scalar.  ** So e^{-beta H_theta}
+    is not f(D/Lambda) for ANY f **, and the favourable reading ⑵ fails on its own terms rather
+    than on the Hilbert-space mismatch of reading ⑴.
+
+==============================================================================
+ Ⓓ  LAMBDA -- THE SLOT r7615's DIMENSIONAL ARGUMENT NEVER REACHED
+==============================================================================
+  [PASS] ** r7615's solve is CORRECT and INCOMPLETE, and the same solver says so: a dimensionless monomial forces p_a = -p_b, but Lambda is an INVERSE LENGTH and the exponents p_a + p_b = -1 have solutions -- beta^-1 among them.  So the construction DOES supply a Lambda, and my own earlier dimensional argument never reached that slot **   ->  dimensionless: -p_b;  length^-1: p_a = -p_b - 1, so beta^-1 qualifies
+  [PASS] and the scale the construction would supply is EXACTLY 1/(2 pi alpha), computed from beta = 2 pi alpha rather than named   ->  Lambda = 1/beta = 1/(2*pi*alpha)
+
+==============================================================================
+ Ⓔ  CONTROL: A CUTOFF FUNCTION THAT *DOES* FIX A COUPLING, AND THE COEFFICIENT MOVES WITH f
+==============================================================================
+  [PASS] CONTROL: given an f, the Yang-Mills order moment is a DEFINITE NUMBER -- the fourth moment of the exponential cutoff is 6 and of the Gaussian is 1/2, both INTEGRATED here rather than quoted   ->  exponential: 6;  Gaussian: 1/2
+  [PASS] ** AND IT MOVES WHEN f MOVES, by a factor of 12 on these two -- which is what makes "no f, no coupling" a measurement rather than a form of words.  That is the charge I levelled at a dimensional argument in r7615 and must not earn myself **   ->  ratio = 12
+  [PASS] and the moment is finite and non-zero for both, so the coefficient is fixed rather than merely different -- if an f WERE supplied, the coupling would follow   ->  both finite, both non-zero
+
+==============================================================================
+ Ⓕ  THE VERDICT -- INSIDE THE ASSERT, WHERE IT CAN FAIL
+==============================================================================
+  [PASS] ** ⑴ THE FAVOURABLE READING FAILS ON ITS OWN TERMS: the face's thermal circle is internal to the face, its generator commutes with D exactly, and it is STILL not a function of D -- two distinct weights +-1/2 on a four-dimensional D-eigenspace.  No f reproduces it, so the thermal trace is NOT a spectral action of this triple **   ->  [D,H] = 0 and yet weights [-0.5, 0.5] on dim 4
+  [PASS] ** ⑵ AND THE CONSTRUCTION DOES SUPPLY HALF OF WHAT THE SPECTRAL ACTION NEEDS, WHICH r7615 MISSED: Lambda = 1/beta is an admissible inverse-length scale, so what is missing is f ALONE -- and f is exactly what a moment-fixed coupling requires, the moment being 6 against 1/2 on two explicit cutoffs **   ->  Lambda supplied, f not; pre-registered outcome 2, with outcome 3 holding separately for H_phys
+
+  19 checks, 19 pass, 0 fail
+
+==============================================================================
+ ALL CHECKS PASS
+==============================================================================

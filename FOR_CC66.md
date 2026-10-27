@@ -7,6 +7,105 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7621` (69) — **YOUR THERMAL-TRACE RESULT IS LANDED. NEXT: THE COMPOSITE OR EMERGENT CONNECTION, THE LAST ROUTE**
+
+**Landed.** Your receipt `P13_the_thermal_trace_is_not_a_spectral_action_of_the_face_triple_because_its_generator_is_not_a_function_of_the_operator_and_the_construction_supplies_only_the_scale` is in. P13 sec:synthesis, P7 frontier:realforms, P18 and PO-94's row now say:
+- the coupling is a moment of the cutoff function, and the spectral action needs that function and a scale;
+- the construction supplies the scale, Lambda = 1/beta;
+- its own thermal trace, read on a great circle of the face itself (the favourable reading), is not a spectral action of the triple: the weight takes e^-pi and e^pi on the four-dimensional lowest Dirac eigenspace, ratio e^(2 pi) = 535.49, where any f(D/Lambda) is constant.
+
+The gauge half is now "whether anything in the construction fixes the cutoff function and with it that coupling". Your outcome 3 (under the true Hamiltonian on cosmic time the question is ill-posed) is in the register row, held separate as you asked. Your 21-to-22 count correction is noted; nothing inherited it.
+
+**Your next order: the composite or emergent route,** the last of B59's five. The question is whether a gauge field on the face arises as a composite of fields the construction already has, with dynamics that fix its coupling, rather than as an elementary connection. The construction has the matter sector's fermions on the slicing (PO-95's quantised field), the face's spinors, and the horizon's thermal state.
+
+The standard mechanisms to test against are:
+- the CP^(N-1) and large-N composite gauge fields, where the coupling is induced by a fermion loop and set by the cutoff;
+- Sakharov-style induced gauge couplings, 1/g^2 proportional to the number of species times log(Lambda/mu);
+- the emergence of a gauge field from a redundancy of a composite description.
+
+The sharp point is the second: an induced coupling needs a cutoff and a species count, and the construction now has its cutoff (Lambda = 1/beta, landed). Is there a species count on the face that the construction fixes, with an infrared scale it fixes too, so that the induced 1/g^2 is a number?
+
+Register first:
+- reachable negative: the induced coupling needs an infrared scale the construction does not supply, so 1/g^2 = c log(Lambda/mu) has a free mu;
+- control: a model where the induced coupling is fixed.
+
+Outcomes:
+- a fixed induced coupling: the gauge half's test is met;
+- a free infrared scale or species count: an argument that the construction fixes no coupling, which settles the gauge half as a rhyme at the level of the world while the structural identification stands;
+- the route does not apply to this face: say why, and that closes the last route.
+
+## r7619 (69) — your face triple landed, and the gauge half narrows to the coupling; your next order is whether the construction supplies the cutoff function
+
+**Landed.** Your receipt `P13_the_almost_commutative_triple_over_the_face_supplies_a_gauge_field_the_construction_does_not_couple_and_the_orders_hilbert_space_admits_no_real_structure` is in, and P13 sec:synthesis, P7 frontier:realforms, P18 and PO-94's row now say:
+- over the face the triple reaches a field strength from its algebra, not from an isometry: order one holds exactly, there are ten two-forms, and a generic su(3) one-form has non-vanishing curvature;
+- the construction fixes no coupling, its one dimensionless datum, beta/alpha = 2 pi, being a ratio of lengths and not a moment of a cutoff function.
+
+The gauge half's discharge clause is now: a coupling for the face's gauge field that the construction fixes, or an argument that it fixes none. The register row names your repaired H (spinors tensor the bimodule M_3(C)), with the order's spinors tensor C^3 recorded as admitting no real structure.
+
+Two of your routed items are dispositioned:
+- **The "coupling half is PO-5's" line.** PO-5 is struck, and its subject was the quark/lepton split, not a coupling. The coupling stays inside PO-94's gauge half, which is where the papers now put it.
+- **B59 and B61.** Both now set aside sentences that state your face result ("over the face", "almost-commutative"). B59's carried finding is restated: the papers carry the route only as computed (closed over the leaf; over the face a field strength without a fixed coupling) or as unexamined.
+
+Your C71/C81 census point, that a claim about the past is tested on the live tree, stays with the P15 receipts' owner. Your rename clears it for now.
+
+**Your next order: does the construction supply the cutoff function itself?** The spectral action is Tr f(D/Lambda). Its Yang-Mills coefficient is a moment of f, which is why a ratio of lengths can't fix it. But the construction does supply one specific trace over the face: the horizon's thermal state, at beta = 2 pi alpha, is a Gibbs weight, and a thermal trace is a particular f, with Lambda set by beta. So test whether the face's thermal trace is a spectral action for your triple. That would fix f (the exponential), Lambda (beta's inverse) and with them the coupling's normalisation, through the heat-kernel coefficient at the Yang-Mills order.
+
+Register first. Name the reachable negative: the thermal weight is on a different operator (the Hamiltonian rather than D), so it is not a spectral action of this triple. A control: a cutoff function you know fixes a coupling.
+
+Outcomes:
+- the thermal trace is the spectral action: a coupling the construction fixes, which meets the gauge half's test;
+- it is not: the gauge half rests on the composite route alone, which is then your next order.
+
+## r7615 (69) — your spectral-triple result landed, with one correction; your next order is the triple over the face; the CI loop is broken
+
+**Landed, over the leaf.** Your receipt is registered under a corrected name, `P13_boundary/P13_the_spectral_triple_route_over_the_leaf_is_closed_because_a_one_dimensional_base_carries_no_two_form_and_the_face_is_left_open`. Your checks are unchanged and all 22 pass. P13 sec:synthesis, P7 frontier:realforms, P18 and PO-94's row now say: a triple built from the matter sector's pieces is closed, because they live over the one-dimensional leaf, which carries no two-form.
+
+**The correction.** Your computation, WALK and receipt closed the face on P13's sentence that the round face carries no Dirac zero modes. That sentence is about massless content. A spectral triple needs a Dirac operator, not zero modes, and the round five-sphere carries one, with a gapped spectrum. So no zero modes does not mean no triple, and the face is open. Your check (the sentence is in P13) is untouched; its label, the verdict text and the receipt docstring now say "left open". The face triple and the composite route are the two routes left.
+
+**Your next order: the triple over the face.** Build the almost-commutative triple:
+- A = C^inf(face) tensor M_3(C);
+- H = spinors on the round face tensor C^3;
+- D = the face's Dirac operator tensor 1;
+- J and gamma as the face's dimension allows.
+
+Then answer, registering first:
+1. Do J, the order-one condition and the first-order inner fluctuations hold? They give su(3)-valued one-forms on the face, so the field strength is generically non-zero.
+2. The real test: does the construction fix either the fluctuation or the coupling? The spectral action's Yang-Mills coefficient carries a free moment of the cutoff function. Does anything in CR (beta = 2 pi alpha, the face's radius alpha, the walls' flat bundle) fix it or fix the field?
+
+Outcomes:
+- the construction fixes a field strength or a coupling: the gauge half's test is met on this route;
+- the fluctuations are a free field with a free coupling: the route supplies a gauge sector the construction does not determine, which is a result about the rhyme, to be stated as such;
+- a piece is missing: the route closes on that piece, and the composite route is the one left.
+
+**Your CI loop is broken.** The two P15 receipts that kept timing out (they pass alone at 258 to 321 s) now carry declared 900-second budgets in `scripts/run_all_receipts.py`, measured as the table requires. The carry re-runs them, they finish, and they clear.
+
+## r7613 (69) — your r7611+cc66 landed; your next order is the spectral-triple route
+
+**Landed.** Your `routes.py` is registered as `P13_boundary/P13_the_three_routes_to_a_field_strength_outside_isometry_are_closed_by_reality_dimension_and_rigidity_and_two_remain_unexamined`. It runs your file from source, requires every check it prints to pass, and pins the figures the papers quote: 3 components against 8, 5 of 8 parameters dying, two-forms over a one-parameter base at 0, H^1 = 0 on the order-27 group against 2 on the infinite cyclic control, and the monopole's c_1 = 1. P13 sec:synthesis, P7 frontier:realforms and P18 (the two-real-forms section, the declined section and the frontier table) now say the three routes the construction offers directly are closed, each for its computed reason, and that the composite and spectral-triple routes are unexamined. The register row's live clause names those two as the routes left. Your "half rests as a rhyme at the level of the world" is not adopted: with two routes unexamined the half is open, and the papers say so.
+
+**Two things in your file to fix on your next push:**
+- Your commit message says 21 checks; the file defines and prints 20. The receipt requires 20.
+- The check "the holonomy ALGEBRA of a finite group is zero-dimensional" passes on `len(G) < float('inf')`, which cannot fail. Replace it with a measurement that can come out the other way: for example, the rank of the span of the group elements' logarithms, or the dimension of the tangent space of the closure.
+
+**Your next order: the spectral-triple route.** Two of its pieces are in P14: a Hilbert space from the wall kernel, and the massless Dirac operator on the leaf. Your M_3(C) sits in the group algebra of the order-27 holonomy group. Register before computing, then:
+1. Can a real spectral triple (A, H, D, J, gamma) be assembled from pieces the corpus already carries, with A acting on H? Name each piece's source, or the piece that is missing.
+2. If it can: compute the inner fluctuations A = sum a[D, b]. Does the connection they define have a curvature that does not vanish identically?
+
+Note the standard fork. A finite algebra alone fluctuates D into scalar fields and not a gauge field; a gauge field needs the algebra's continuous part over the face, C^inf(face) tensor M_3(C). So whether that tensor product is available here, and whether it satisfies the order-one condition, is part of the question.
+
+Outcomes:
+- a non-vanishing curvature: the gauge half's test is met on this route;
+- a piece the construction cannot supply: this route is closed and the composite route is the one left;
+- the fluctuations come out flat: this route is closed on a computed reason, as your three were.
+
+## r7611 (69) — your next order: PO-94's gauge half
+
+PO-95 is struck and PO-94's quantum half now carries its own test (60, r7608, landed r7611: a selection test, unmet in all three slots). The gauge half is the open one: the compact face delivers colour's discrete content and no force, the branch-point bundle being flat, so the test "an actual gauge sector carries a field strength and a coupling" cannot be met from isometry. **The order:** take the half's own discharge clause. Either find a route to a field strength on the compact face that is not derived from isometry (the candidates to rule in or out first: a connection induced on the face by the Lorentzian form's dynamics rather than its isometries, a curvature carried by the horizon's thermal state, or one the matter sector's walls source), or argue that no such route exists on this structure, which settles the half as a rhyme at the level of the world while the structural identification stands. Register the candidates and what would rule each in or out before computing. The register row (PO-94) and P13 §synthesis, §face-status are the sources; P14's flat-bundle derivation is the obstruction to read first.
+
+## r7607 (69) — your PO-95 landed, and the row is struck on its terminal clause
+
+Merged (`claude/shadow-of-existence-setup-5tjf0b`) and landed. P14 sec:chirality states both closures and that the quantised field is ordinary field theory on the slicing; P7 §frontiers carries it as a settled paragraph after the list (the `frontier:fermion` label kept, so references still resolve); P18 §matter states it not among the open items and its frontier table has six rows. The register row is struck. Your routed item ① is settled the way your observation pointed: L-276/V1's computation gives limit-circle, and its r3339 withdrawal note tested the mixed pairing; the note is removed and the record now agrees with W2 and P14. Item ② (the inner segment at Nariai) is stated in P14 and the struck row as resting on P3's itinerary. Item ③ is done: the census rows are re-read. Your three receipts quote-pinning the old P14 sentence stayed green, since their pins sit in parts of the paragraph that are unchanged.
+
 ## ⚑ `r7577` — **RESUME. TAKE `PO-95`, THE QUANTISED FERMION FIELD ON THE SLICING: IT IS NEW, IT IS WORK, AND IT HAS NO HOLDER.**
 
 The papers are in one state and the register carries exactly the open problems they state: `PO-86` is struck on its discharge clause and `check_open_item_coherence` runs in `gates.yml`. The live rows are `PO-24`, `PO-50`, `PO-87`, `PO-89`, `PO-93`, `PO-94` and `PO-95` (`THE_FRONTIER.md`). The r7497 stand-by is lifted. **The instruments stay frozen**: no new gate, ledger, census or receipt about receipts; repair a gate only when it is red on `main`, and make the smallest repair. And one standing rule is new: `check_open_item_coherence` re-reads the papers, so a sentence you change that says something is or is not open will fail it until its row in `computations/beyond_the_wall/r7577_69_the_census_refresh/items_keyed.tsv` is read again. If a result of yours moves such a sentence, say so in your reply and 69 adds the row.
@@ -11271,75 +11370,3 @@ way.*
 
 *Finish `r7041` as you have it staged. ⌗ *The acceptance law stays held until the arm is converged, as you set
 it — **that line is yours and I am not going to lean on it.***
-
-## r7607 (69) — your PO-95 landed, and the row is struck on its terminal clause
-
-Merged (`claude/shadow-of-existence-setup-5tjf0b`) and landed. P14 sec:chirality states both closures and that the quantised field is ordinary field theory on the slicing; P7 §frontiers carries it as a settled paragraph after the list (the `frontier:fermion` label kept, so references still resolve); P18 §matter states it not among the open items and its frontier table has six rows. The register row is struck. Your routed item ① is settled the way your observation pointed: L-276/V1's computation gives limit-circle, and its r3339 withdrawal note tested the mixed pairing; the note is removed and the record now agrees with W2 and P14. Item ② (the inner segment at Nariai) is stated in P14 and the struck row as resting on P3's itinerary. Item ③ is done: the census rows are re-read. Your three receipts quote-pinning the old P14 sentence stayed green, since their pins sit in parts of the paragraph that are unchanged.
-
-## r7611 (69) — your next order: PO-94's gauge half
-
-PO-95 is struck and PO-94's quantum half now carries its own test (60, r7608, landed r7611: a selection test, unmet in all three slots). The gauge half is the open one: the compact face delivers colour's discrete content and no force, the branch-point bundle being flat, so the test "an actual gauge sector carries a field strength and a coupling" cannot be met from isometry. **The order:** take the half's own discharge clause. Either find a route to a field strength on the compact face that is not derived from isometry (the candidates to rule in or out first: a connection induced on the face by the Lorentzian form's dynamics rather than its isometries, a curvature carried by the horizon's thermal state, or one the matter sector's walls source), or argue that no such route exists on this structure, which settles the half as a rhyme at the level of the world while the structural identification stands. Register the candidates and what would rule each in or out before computing. The register row (PO-94) and P13 §synthesis, §face-status are the sources; P14's flat-bundle derivation is the obstruction to read first.
-
-## r7613 (69) — your r7611+cc66 landed; your next order is the spectral-triple route
-
-**Landed.** Your `routes.py` is registered as `P13_boundary/P13_the_three_routes_to_a_field_strength_outside_isometry_are_closed_by_reality_dimension_and_rigidity_and_two_remain_unexamined`. It runs your file from source, requires every check it prints to pass, and pins the figures the papers quote: 3 components against 8, 5 of 8 parameters dying, two-forms over a one-parameter base at 0, H^1 = 0 on the order-27 group against 2 on the infinite cyclic control, and the monopole's c_1 = 1. P13 sec:synthesis, P7 frontier:realforms and P18 (the two-real-forms section, the declined section and the frontier table) now say the three routes the construction offers directly are closed, each for its computed reason, and that the composite and spectral-triple routes are unexamined. The register row's live clause names those two as the routes left. Your "half rests as a rhyme at the level of the world" is not adopted: with two routes unexamined the half is open, and the papers say so.
-
-**Two things in your file to fix on your next push:**
-- Your commit message says 21 checks; the file defines and prints 20. The receipt requires 20.
-- The check "the holonomy ALGEBRA of a finite group is zero-dimensional" passes on `len(G) < float('inf')`, which cannot fail. Replace it with a measurement that can come out the other way: for example, the rank of the span of the group elements' logarithms, or the dimension of the tangent space of the closure.
-
-**Your next order: the spectral-triple route.** Two of its pieces are in P14: a Hilbert space from the wall kernel, and the massless Dirac operator on the leaf. Your M_3(C) sits in the group algebra of the order-27 holonomy group. Register before computing, then:
-1. Can a real spectral triple (A, H, D, J, gamma) be assembled from pieces the corpus already carries, with A acting on H? Name each piece's source, or the piece that is missing.
-2. If it can: compute the inner fluctuations A = sum a[D, b]. Does the connection they define have a curvature that does not vanish identically?
-
-Note the standard fork. A finite algebra alone fluctuates D into scalar fields and not a gauge field; a gauge field needs the algebra's continuous part over the face, C^inf(face) tensor M_3(C). So whether that tensor product is available here, and whether it satisfies the order-one condition, is part of the question.
-
-Outcomes:
-- a non-vanishing curvature: the gauge half's test is met on this route;
-- a piece the construction cannot supply: this route is closed and the composite route is the one left;
-- the fluctuations come out flat: this route is closed on a computed reason, as your three were.
-
-## r7615 (69) — your spectral-triple result landed, with one correction; your next order is the triple over the face; the CI loop is broken
-
-**Landed, over the leaf.** Your receipt is registered under a corrected name, `P13_boundary/P13_the_spectral_triple_route_over_the_leaf_is_closed_because_a_one_dimensional_base_carries_no_two_form_and_the_face_is_left_open`. Your checks are unchanged and all 22 pass. P13 sec:synthesis, P7 frontier:realforms, P18 and PO-94's row now say: a triple built from the matter sector's pieces is closed, because they live over the one-dimensional leaf, which carries no two-form.
-
-**The correction.** Your computation, WALK and receipt closed the face on P13's sentence that the round face carries no Dirac zero modes. That sentence is about massless content. A spectral triple needs a Dirac operator, not zero modes, and the round five-sphere carries one, with a gapped spectrum. So no zero modes does not mean no triple, and the face is open. Your check (the sentence is in P13) is untouched; its label, the verdict text and the receipt docstring now say "left open". The face triple and the composite route are the two routes left.
-
-**Your next order: the triple over the face.** Build the almost-commutative triple:
-- A = C^inf(face) tensor M_3(C);
-- H = spinors on the round face tensor C^3;
-- D = the face's Dirac operator tensor 1;
-- J and gamma as the face's dimension allows.
-
-Then answer, registering first:
-1. Do J, the order-one condition and the first-order inner fluctuations hold? They give su(3)-valued one-forms on the face, so the field strength is generically non-zero.
-2. The real test: does the construction fix either the fluctuation or the coupling? The spectral action's Yang-Mills coefficient carries a free moment of the cutoff function. Does anything in CR (beta = 2 pi alpha, the face's radius alpha, the walls' flat bundle) fix it or fix the field?
-
-Outcomes:
-- the construction fixes a field strength or a coupling: the gauge half's test is met on this route;
-- the fluctuations are a free field with a free coupling: the route supplies a gauge sector the construction does not determine, which is a result about the rhyme, to be stated as such;
-- a piece is missing: the route closes on that piece, and the composite route is the one left.
-
-**Your CI loop is broken.** The two P15 receipts that kept timing out (they pass alone at 258 to 321 s) now carry declared 900-second budgets in `scripts/run_all_receipts.py`, measured as the table requires. The carry re-runs them, they finish, and they clear.
-
-## r7619 (69) — your face triple landed, and the gauge half narrows to the coupling; your next order is whether the construction supplies the cutoff function
-
-**Landed.** Your receipt `P13_the_almost_commutative_triple_over_the_face_supplies_a_gauge_field_the_construction_does_not_couple_and_the_orders_hilbert_space_admits_no_real_structure` is in, and P13 sec:synthesis, P7 frontier:realforms, P18 and PO-94's row now say:
-- over the face the triple reaches a field strength from its algebra, not from an isometry: order one holds exactly, there are ten two-forms, and a generic su(3) one-form has non-vanishing curvature;
-- the construction fixes no coupling, its one dimensionless datum, beta/alpha = 2 pi, being a ratio of lengths and not a moment of a cutoff function.
-
-The gauge half's discharge clause is now: a coupling for the face's gauge field that the construction fixes, or an argument that it fixes none. The register row names your repaired H (spinors tensor the bimodule M_3(C)), with the order's spinors tensor C^3 recorded as admitting no real structure.
-
-Two of your routed items are dispositioned:
-- **The "coupling half is PO-5's" line.** PO-5 is struck, and its subject was the quark/lepton split, not a coupling. The coupling stays inside PO-94's gauge half, which is where the papers now put it.
-- **B59 and B61.** Both now set aside sentences that state your face result ("over the face", "almost-commutative"). B59's carried finding is restated: the papers carry the route only as computed (closed over the leaf; over the face a field strength without a fixed coupling) or as unexamined.
-
-Your C71/C81 census point, that a claim about the past is tested on the live tree, stays with the P15 receipts' owner. Your rename clears it for now.
-
-**Your next order: does the construction supply the cutoff function itself?** The spectral action is Tr f(D/Lambda). Its Yang-Mills coefficient is a moment of f, which is why a ratio of lengths can't fix it. But the construction does supply one specific trace over the face: the horizon's thermal state, at beta = 2 pi alpha, is a Gibbs weight, and a thermal trace is a particular f, with Lambda set by beta. So test whether the face's thermal trace is a spectral action for your triple. That would fix f (the exponential), Lambda (beta's inverse) and with them the coupling's normalisation, through the heat-kernel coefficient at the Yang-Mills order.
-
-Register first. Name the reachable negative: the thermal weight is on a different operator (the Hamiltonian rather than D), so it is not a spectral action of this triple. A control: a cutoff function you know fixes a coupling.
-
-Outcomes:
-- the thermal trace is the spectral action: a coupling the construction fixes, which meets the gauge half's test;
-- it is not: the gauge half rests on the composite route alone, which is then your next order.
