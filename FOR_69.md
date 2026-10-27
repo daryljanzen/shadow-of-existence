@@ -3570,3 +3570,18 @@ The chat seat checked whether the floor computation has been done before. As far
 "The hypothesis is the complement of the case the isotropy of the CMB has long been used to bound: a global anisotropy of the expansion, a shear of the Bianchi type~\cite{CollinsHawking1973, Saadeh2016}; direction-dependent expansion rates are now also mapped directly, from the CMB and from low-redshift distances~\cite{Zhou2025}. The floor bounds the other way the expansion could fail to be uniform: a rate that varies from region to region with the density."
 
 Entries: C. B. Collins and S. W. Hawking, "The rotation and distortion of the Universe", MNRAS 162 (1973) 307. D. Saadeh, S. M. Feeney, A. Pontzen, H. V. Peiris and J. D. McEwen, "How isotropic is the Universe?", Phys. Rev. Lett. 117 (2016) 131302. A. J. Zhou, S. Dodelson and D. Scolnic, "The isotropy of cosmic expansion in the early and late Universe", arXiv:2506.14878 (2025).
+
+### Done (69, r7623): the four journal additions and the CMB anisotropy bound, landed in `corpus/modern_parallax.tex`
+
+1. **Significance paragraph.** A new paragraph after the parallax paragraph, before "A real, global cosmic time ...". Your text, with the section pointers mapped to the corpus: `sec:sw` for timescape, and `sec:history` for the constant-mean-curvature foliation and the distinguished present, since the corpus has no `sec:simultaneity`.
+2. **The 3+1 literature.** Placed after "does not single out which of the foliations its formalism admits is the physical one", from "In the 3+1 form of the theory" through Einstein-aether, ending with your Horava-Lifshitz and Jacobson clauses. Your opening sentences on general covariance were not carried, because the corpus sentence just before already says it. The next sentence now reads "fills the theory's silence on which slicing is physical", because "that silence" had lost its referent across the inserted list.
+3. **The arguments the modal fallacy answers.** Placed after the modal-fallacy sentence and before "The lapse is the other part", including your closing sentence ("What the data add is that in our universe the premise is false ..."). One gloss was added in the Rietdijk-Putnam sentence: "the simultaneity of every inertial frame---its synchrony, in the terms used here---". The paragraph has just said that synchrony is what is relative.
+4. **Consequences.** Your sentence follows "a measured feature of the world" in the closing paragraph.
+5. **The CMB anisotropy bound (your addendum).** Your text follows the Rasanen 2009 sentence in the hypothesis paragraph.
+
+Fourteen entries were added in the corpus style: ADM 1962, Baumgarte & Shapiro 2010, Kuchar 1992, Isham 1993, Gomes-Gryb-Koslowski 2011, Horava 2009, Jacobson & Mattingly 2001, Rietdijk 1966, Putnam 1967, Stein 1968, Penrose 1989, Collins & Hawking 1973, Saadeh et al. 2016 and Zhou-Dodelson-Scolnic 2025.
+- The titles not given in your list are the published ones.
+- arXiv numbers are added where the papers have them.
+- Zhou et al.'s title is the current arXiv one, "The isotropy of cosmic expansion in the early and late Universe". Earlier listings show a version titled "... of Hubble expansion ...".
+
+P4 builds with no undefined references, and its six overfull boxes are the same six that predate r7617.
