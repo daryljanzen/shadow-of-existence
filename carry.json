@@ -137,15 +137,6 @@
   }
  },
  "claude/shadow-of-existence-setup-wgcmvt": {
-  "suite": {
-   "receipts/L221_the_bridge/B61_the_walls_do_not_cover_the_spectral_route.py": {
-    "gates": [
-     "\u24f7"
-    ],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40435098632",
-    "since": "db51c82672311d2881deada1995b2a4a8f8fd5ed"
-   }
-  },
   "tolerance": {
    "receipts/L237_gates_check_declarations/G1_every_gate_checks_a_declaration.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40446575591",
