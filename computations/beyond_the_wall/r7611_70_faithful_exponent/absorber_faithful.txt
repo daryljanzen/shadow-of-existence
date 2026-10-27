@@ -1,0 +1,11 @@
+  l_eff = 1497.0;  s = (1362/l_eff)^2 = 0.8277
+       l   as built   faithful
+      30    -0.0002    -0.0002
+     100    -0.0021    -0.0017
+     500    -0.0522    -0.0432
+    1000    -0.2089    -0.1729
+    1759    -0.6464    -0.5350
+    2508    -1.3141    -1.0877
+  swing over 30-2508: as built 6989, faithful 6989
+  as built: the reported -0.0304 equals dn_eff at l = 381 only
+  faithful: the reported -0.0304 equals dn_eff at l = 419 only

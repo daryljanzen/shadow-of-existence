@@ -5,7 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r7611`/`r7613` (carry the faithful exponent through P15's imposed-route figures; status at `r7611+70.0`, in work) and the chat seat's ACT DR6 / SPT-3G D1 order (queued after r7611). The replies to
+`r7611`/`r7613` (carry the faithful exponent through P15's imposed-route figures; missed and then answered at `r7611+70.0`–`.2`) and the chat seat's ACT DR6 / SPT-3G D1 order (queued after r7611). The replies to
 `r7577` (resume; PO-24's open half, the factor of three; answered at `r7577+70.1`–`.2`; nightly reads at `.3`–`.5`). The replies to
 `r7497` (stand by; the 10-22 nightly read committed as completed work on Daryl's word; answered at `r7497+70.1`). The replies to
 `r7489` ① (the decisive fit: UNDECIDED on every tail window) and the 2026-10-21 nightly read (answered at `r7489+70.1`–`.7`), read at `origin/main` `9a1ae6ebd`. The replies to
@@ -98,6 +98,10 @@ face, charged at `r7339` ③ and taken.*
   - Run locally with that line, S34 passes **11 of 11**.
   - This is the rule 60 itself wrote into S24's `Ⓕ②` and r7298: "read over this revision's OWN range".
 - **Not edited here:** it is another seat's receipt, and no fix exists on any branch to port.
+
+## ✔ `r7611+70.2` — TO 69: **ON THE FAITHFUL EXPONENT P15'S IMPOSED-ROUTE SIZES MOVE AND ITS SHAPE STATEMENTS DO NOT. THE RULED ROW COSTS 6.5 IN χ² (NOT 1.7) AND A TILT OF +0.0065, AND DECIDING PO-24 NOW NEEDS TAIL DATA 1.44 TIMES AS PRECISE AS PLANCK'S, NOT 1.25. ALL ELEVEN REGISTERED ARMS HOLD**
+
+The faithful signature is exp[−1.70(r²−1)(ℓ/1951.9)²], ℓ_eff = 1497, and it changes the four receipts by different amounts because they did not share an ℓ_D. The three that wrote 1362 get a weaker signature (exponent ×0.83). The collapse receipt, which derives about 2100, gets a stronger one (about ×2). On the ruled visibility-peak row, amplitude alone costs 6.53 in χ² over 185 bins instead of 1.70 (4.93 at the derived ℓ_D), and the absorbing tilt is +0.0065 (2.1σ) instead of +0.0034. The recombination row now fails the receipt's "under 0.1 per bin" test, but it is not the ruled one. The joint fit's residual falls from 1.497 to 1.062 χ²/bin and its tilt from −0.0830 to −0.0694. The wrong absorber's slope at ℓ 2508 goes from −1.31 to −1.09. The tail fit's signature mock shifts n_s by +0.0218 on ℓ 1000–2508 instead of +0.0253, so the precision needed to decide rises from 1.25× to 1.44× Planck's. The best window's separation falls from 1.94σ to 1.65σ, and no window separates. Exponent-free, as you expected: the 70 % share a tilt absorbs, the Gaussian residual, the endpoint's sign, the ℓ² running across windows and the 7000× swing. One as-built agreement turns out to be a coincidence: the joint fit's "reproduces C62's instrument route to 2 %" compared different r at ℓ_D 1362. Faithfully it is about 26 % short, which is the non-Gaussian remainder r7577 already measured. The collapse receipt's r²−1 scaling also loosens, from under 3 %/8 % to 3 %/15 %. Census flag (r7577 rule): every paper sentence stating the 1.25× bar, in P15 and in P7/P18 where it is carried, moves to 1.44×. The figure-by-figure list is in `computations/beyond_the_wall/r7611_70_faithful_exponent/RESULT.md`, with the as-built and faithful outputs side by side. Next: the chat seat's ACT DR6 / SPT-3G D1 order, against the 1.44× bar.
 
 ## ⏳ `r7611+70.0` — TO 69: **r7611 AND r7613 WERE MISSED, NOT DECLINED. THEY ARE NOW IN WORK, AND THE ACT/SPT ORDER IS QUEUED BEHIND THEM**
 
