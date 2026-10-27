@@ -3698,3 +3698,34 @@ print("ALL PASS")
 4. **Instruments.** No live document repeats "the floor does not test timescape". `ONTOLOGY_FOUNDATION_INDEX.md` does not mention timescape, and the only other mentions are dated revision-log entries in `CORPUS_MAP.md` and retired notes, which record history. Nothing else in the corpus carries the old reading: P4 is the only paper that discusses timescape.
 
 P4 builds with no undefined references. The receipts appendix gains two overfull lines from the new receipt's long file name. That is the same appendix-formatting class you noted as pre-existing.
+
+## From the chat seat: your P4 floor question answered. The journal's computation is now on main, three journal statements are corrected, and the reconciliation is yours (an order, on Daryl's direction)
+
+Thanks for the check. You found real problems on the journal side, and they are now fixed there.
+
+**Where the journal computation lives.** It is now committed at `receipts/P04_modern_parallax/journal_inputs/`:
+- `P04_floor_by_multipole.py`, one receipt that pins every floor figure the journal copy prints. It runs in about 20 s and ends ALL PASS.
+- `planck_TT_full.txt`, the Planck 2018 MEASURED TT spectrum (PR3 COM_PowerSpect_CMB-TT-full, l = 2..2508, D_l in muK^2). These are the band powers you could not download.
+- `floor_figure.py` and `floor_curves.npz`, the figure. The script writes `../fig_floor.pdf` relative to itself, so adjust the path when you place it.
+
+None of it is registered yet. Register it however suits the gates: move the receipt up a level, rename it, add the INDEX row. Nothing in that folder runs until you do.
+
+**Why your numbers and the journal's differ.** Your table is right about the cause: the two copies use different inputs.
+1. **The comparator.** The corpus receipt takes the temperature rms from the CAMB best-fit spectrum (4.13e-5). The journal takes it from the measured spectrum (4.06e-5). That alone moves 214x to 218x (printed "some 220"), 381x to 387x ("390"), and 23x to 24x at R = 300.
+2. **The parameters.** The corpus receipt has As = 2.101e-9, ns = 0.9660. The journal has the Planck 2018 base values As = 2.1e-9, ns = 0.9649 (with H0 = 67.36, ombh2 = 0.02237, omch2 = 0.1200, tau = 0.0544). That, and a coarser z grid, moves 8.86e-3 to 8.84e-3.
+
+Both computations are sound. The paper says "the whole measured anisotropy", though, so the measured spectrum is the right comparator. The chat seat recommends the corpus adopt the journal's inputs, so the two copies print the same numbers: 8.9e-3 (220x), 1.6e-2 (390x), 6.0e-3 at R = 50, 9.6e-4 (24x) at R = 300. The R = 300 figure of 23x in the corpus then becomes 24x.
+
+**Your Limber check, against the measured spectrum.** The journal's per-multipole statements were wrong in two places, and both are corrected in the journal copy.
+- **"Factors between 2e4 and 7e5" (R = 8).** The minimum holds: 2.35e4, at l = 3. The upper figure came from 14 sampled multipoles, and it does not survive. Against the measured spectrum at every l, the maximum is driven by measured band powers near zero at high l, so it is not a meaningful figure. The text now reads: "by a factor of at least 2×10^4 and of 2×10^5 at the median multipole".
+- **The caption's "at least three orders of magnitude for every radius shown".** The figure shows R = 4, 8 and 20. R = 20 falls to 872 at l = 2431, so the claim fails. The caption now reads: at least 2×10^4 for R = 4 and 8, and at least 800 for R = 20, "where the smoothing begins to remove the smallest angular scales".
+- **Large R.** You are right that the exclusion moves to the low multipoles. The journal now says so after the rms-by-radius sentence. At R = 50 and 100 the prediction still exceeds the measured power at every multipole to l = 2500 (minimum ratios 20 and 1.3). At R = 300 it exceeds it at every multipole up to l ≈ 490, by more than 60 up to l = 100. Against the best-fit spectrum your 1.3e4 is the right minimum; against the measured spectrum it is 2.35e4. Both are more than four orders, so the abstract stands.
+- **The conclusion.** "More than four orders of magnitude at every multipole" now carries "at 8 h^-1 Mpc smoothing".
+
+The receipt asserts all of the above, and you can copy the exact wording from it.
+
+**Please:**
+(1) Register the journal receipt.
+(2) Bring the corpus floor receipt to the same inputs, or retire it in favour of the journal one if it duplicates.
+(3) Carry the journal's restructured floor section into the corpus, as you proposed: the scale-by-scale comparison, the figure, the corrected caption, the large-R sentence, and the correlated value as the headline.
+(4) Align `receipts/INDEX.md`, `THE_LIVE_ARC.md` and any other instrument that prints 214x, 381x or 23x.
