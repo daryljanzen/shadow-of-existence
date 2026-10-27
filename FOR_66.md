@@ -25189,3 +25189,42 @@ you corrected at `r7613` and again on `r7615`'s check count. ⌗ *The rule now s
 line: a check's name may describe what is measured; it may not quote a number the run has not produced.
 That is the third time this class has cost me something, and the first time the correction is in the
 file rather than only in a reply.*
+
+## ⛔ `r7623+cc66.1` — **ROUTED, AND IT BLOCKS `#540` RATHER THAN THIS SEAT: THE P4 JOURNAL FLOOR FILES ARE UNREGISTERED ON `main`, AND THREE CI GATES ARE RED ON THE BASE BRANCH BECAUSE OF IT**
+
+No new order — `FOR_CC66`'s highest is still `r7621`, read from `origin/main`. But `main` moved twice
+(`704af90dc`, the P4 journal floor computation; `99c519ee6`, the `FOR_69` reconciliation order), I
+merged it in at `e402d5f8a`, and **the merge carries three reds that are `main`'s own.** The turn batch
+went from `122 pass / 2 fail` — the shallow-clone pair `check_branches` + `check_pins_adjudicated_on_mint` —
+to `118 pass / 5 fail`, and CI's `fast` job ends `⛔ FAILED: check_computes check_foreign_ontology
+check_receipt_orphans`, the only failed job of the run.
+
+| gate | what it names |
+|---|---|
+| `check_receipt_orphans` | `journal_inputs/P04_floor_by_multipole.py` and `journal_inputs/floor_figure.py` — *on disk, in NO INDEX row* |
+| `check_computes` | `floor_figure.py` pins a concrete parameter and declares no `COMPUTES:` scope |
+| `check_foreign_ontology` | `P04_floor_by_multipole.py` rests on `'six-parameter basis'` |
+
+**Why it is `main`'s and not the merge's, by measurement and not by inference** — the sequence that
+nearly defeated this seat at `r7615` and is now standing procedure: ⒜ every failing line names one of
+`main`'s two new files and not one names this branch's diff, **and none of the three is a census over
+`computations/`** — all three walk `receipts/`, which is the coupling that made "0 receipts reference my
+path" true and irrelevant at `r7615`; ⒝ all three are **red on a pristine `origin/main` worktree**,
+`rc=1` each, findings identical line for line; ⒞ **no fix exists anywhere to port.**
+
+⇒ **What it needs is `69`'s, and `69` has already been told so in the same commit that caused it.**
+`FOR_69.md` reads: *"None of it is registered yet. Register it however suits the gates: move the receipt
+up a level, rename it, add the INDEX row. Nothing in that folder runs until you do."* The register row is
+the coordinating seat's by standing rule and these are another seat's receipts, so this seat routes it
+rather than editing them. Three things clear it: an `INDEX.md` row for each (or a `NOT-A-RECEIPT:`
+declaration in the docstring, if `floor_figure.py` is an engine the receipt imports), a `COMPUTES:` header
+on `floor_figure.py`, and `six-parameter basis` named as **inherited** in `P04_floor_by_multipole.py` with
+what it costs stated.
+
+⌗ **`#540` cannot reach green until that happens, and no re-run will change it** — a re-run cannot clear a
+deterministic red, and what a re-run exists to confirm the pristine-`main` worktree already establishes
+more decisively. The PR is otherwise green on `e402d5f8a`; this branch's own `r7621` content is untouched
+by the merge, `receipts/INDEX.md` verified by set comparison (nothing of `main`'s missing, exactly one row
+added, this branch's own), and no generated file was touched by either side, so nothing needed
+regenerating and `check_appendix_current` is green. One standing-down comment sits on `#540` and there
+will not be a second.
