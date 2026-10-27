@@ -5,7 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r7611`/`r7613` (carry the faithful exponent through P15's imposed-route figures; missed and then answered at `r7611+70.0`–`.2`) and the chat seat's ACT DR6 / SPT-3G D1 order (queued after r7611). The replies to
+`r7611`/`r7613` (carry the faithful exponent through P15's imposed-route figures; missed and then answered at `r7611+70.0`–`.2`) and the chat seat's ACT DR6 / SPT-3G D1 order (in work: part 1 at `r7611+70.5`). The replies to
 `r7577` (resume; PO-24's open half, the factor of three; answered at `r7577+70.1`–`.2`; nightly reads at `.3`–`.5`). The replies to
 `r7497` (stand by; the 10-22 nightly read committed as completed work on Daryl's word; answered at `r7497+70.1`). The replies to
 `r7489` ① (the decisive fit: UNDECIDED on every tail window) and the 2026-10-21 nightly read (answered at `r7489+70.1`–`.7`), read at `origin/main` `9a1ae6ebd`. The replies to
@@ -98,6 +98,10 @@ face, charged at `r7339` ③ and taken.*
   - Run locally with that line, S34 passes **11 of 11**.
   - This is the rule 60 itself wrote into S24's `Ⓕ②` and r7298: "read over this revision's OWN range".
 - **Not edited here:** it is another seat's receipt, and no fix exists on any branch to port.
+
+## ⏳ `r7611+70.5` — TO 69 AND THE CHAT SEAT: **PART 1 OF THE ACT/SPT ORDER: PLANCK+ACT DR6 CLEARS PO-24'S 1.44× BAR ON THE TAIL TILT, SO THE TAIL FIT (STEP 3) IS NOW RUNNING**
+
+On ℓ 1000–2508 with TT only and amplitude plus tilt free, Planck+ACT DR6 (CMB-only) measures the tilt 1.58–1.63× as precisely as Planck alone after correcting for the shared sky. That holds for any ACT effective sky from its measured floor 0.17 to 0.50, and the independent combination reaches 1.67. ACT alone is 1.22, SPT-3G D1 alone 0.51, and Planck+SPT 1.09. On the amplitude measure nothing clears: Planck+ACT reaches 1.21, because ACT overtakes Planck only from ℓ ≈ 1580. My pre-registered "no configuration clears" therefore failed on the figure that matters, σ(n_s). Two caveats: this is a TT proxy for a bar set by a six-parameter TT/TE/EE fit, and ACT's own P-ACT combination cuts Planck where ACT measures, which on this window leaves ACT alone at 1.22. So step 3 runs: r7489's six-parameter tail fit with ACT DR6 added, in two arms (summed as independent; P-ACT-style), each against the faithful +0.0218 shift. It needs about 3–4 h. Figures: `computations/beyond_the_wall/r7625_70_PO24_gate_act_spt/RESULT.md`.
 
 ## ✔ `r7611+70.2` — TO 69: **ON THE FAITHFUL EXPONENT P15'S IMPOSED-ROUTE SIZES MOVE AND ITS SHAPE STATEMENTS DO NOT. THE RULED ROW COSTS 6.5 IN χ² (NOT 1.7) AND A TILT OF +0.0065, AND DECIDING PO-24 NOW NEEDS TAIL DATA 1.44 TIMES AS PRECISE AS PLANCK'S, NOT 1.25. ALL ELEVEN REGISTERED ARMS HOLD**
 
