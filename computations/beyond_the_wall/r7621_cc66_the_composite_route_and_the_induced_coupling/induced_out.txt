@@ -1,0 +1,56 @@
+
+==============================================================================
+ Ⓐ  THE THREE DATA THE FORMULA NEEDS -- WHICH OF THEM THE PAPERS SUPPLY
+==============================================================================
+  [PASS] the face's spectral GAP is the paper's own figure -- READ: "the least eigenvalue is $5/2\alpha$"   ->  found in boundary_paper.tex
+  [PASS] and the thermal period, from which r7619's Lambda is built -- READ: "a Euclidean continuation of period $\beta=2\pi\alpha$"   ->  found in boundary_paper.tex
+
+  ⇒ So of the three data 1/g^2 = c N log(Lambda/mu) needs, the construction supplies Lambda
+    (r7619) and -- on the reading this row argues for -- mu, because a COMPACT face has a GAP
+    and a gap is an infrared scale.  ** The order expects mu to be the free one.  This file
+    tests that reading too, but it tests the favourable one first. **
+
+==============================================================================
+ Ⓑ  THE INSTRUMENT: HOW MANY FACE MODES LIE UNDER A CUTOFF -- AND IT MUST BE ABLE TO COUNT
+==============================================================================
+  [PASS] the spinor rank is COMPUTED from the dimension and agrees with the Clifford construction at r7619, which found the chirality-4 by building the algebra   ->  rank(5) = 4, rank(6) = 8
+  [PASS] and the multiplicities are the ones r7615 and r7619 used, recomputed here rather than carried: 4 at the lowest level, 20 at the next   ->  m_0 = 4, m_1 = 20
+  [PASS] ** CONTROL, AND THE GUARD r7615 COST ME: the counter CAN return non-zero, and it RISES with the cutoff -- so a zero from it later is a measurement and not an instrument that cannot count **   ->  cut = 3/alpha -> 8 modes;  cut = 20/alpha -> 210672 modes
+  [PASS] CONTROL: and it returns ZERO below the gap, which is the arithmetic the whole row turns on, checked here on a cutoff chosen for the test rather than on the construction's   ->  cut = 2/alpha (below 5/2) -> 0 modes
+
+==============================================================================
+ Ⓒ  THE FAVOURABLE READING: mu = THE GAP, EVERY SLOT FILLED -- AND THE WINDOW IS INVERTED
+==============================================================================
+  [PASS] ** THE WINDOW IS INVERTED, EXACTLY: Lambda/mu = 1/(5 pi), computed from the two symbolic scales and not asserted -- the construction's cutoff lies BELOW its own infrared scale by a factor of 5 pi **   ->  Lambda/mu = 1/(5*pi) = 0.063662, and 5 pi = 15.7080
+  [PASS] so the logarithm the induced coupling needs comes out NEGATIVE, which would make 1/g^2 negative and g^2 negative -- unphysical, and computed rather than described   ->  log(Lambda/mu) = log(1/(5*pi)) = -2.754168
+  [PASS] ** AND THE DECISIVE FORM, WHICH IS A COUNT AND NOT A SIGN: the number of face Dirac modes under the construction's own cutoff is ZERO.  A loop of a field with no modes below the cutoff induces NOTHING, so the mechanism does not engage on this geometry at all **   ->  Lambda = 1/(2*pi) / alpha = 0.159155 / alpha, against a least eigenvalue of 2.5 / alpha  ->  0 modes
+
+==============================================================================
+ Ⓓ  CONTROL: A MODEL WHERE THE INDUCED COUPLING *IS* FIXED -- WHAT THE ORDER ASKS FOR BY NAME
+==============================================================================
+  [PASS] CONTROL: with a window the right way up the coupling IS a number -- N = 4, Lambda/mu = 100 gives a positive 1/g^2 with a large population under the cutoff, so the formula and the counter both engage   ->  1/g^2 = 0.155534 > 0, modes under 100/alpha = 666333360
+  [PASS] ** and it MOVES with the cutoff, so the coefficient is genuinely a function of the data and "no window, no coupling" is a measurement rather than a form of words **   ->  Lambda/mu = 100 -> 0.155534;  Lambda/mu = 1000 -> 0.233301
+  [PASS] CONTROL: and the same expression on the construction's OWN ratio returns NEGATIVE, so the two cases are distinguished by the instrument and not by my description of them   ->  on Lambda/mu = 1/(5 pi): 1/g^2 = -0.093019
+
+==============================================================================
+ Ⓔ  THE ORDER'S OWN READING, RUN SO THE VERDICT DOES NOT REST ON MY IDENTIFICATION
+==============================================================================
+  [PASS] ** ON THE ORDER'S READING -- mu FREE, the scale at which the coupling is quoted -- the answer is also no, and for the reason the order gives: 1/g^2 depends on mu, its derivative being non-zero everywhere, so a free mu is a free coupling **   ->  d(1/g^2)/d(mu) = -N/(12*pi**2*mu), non-zero for all mu > 0
+  [PASS] ⇒ so BOTH readings give no fixed coupling, by DIFFERENT mechanisms -- the order's because mu is free, mine because with mu fixed by the gap there is no window and nothing under the cutoff.  The conclusion does not depend on which reading is right   ->  mu free -> free coupling; mu = gap -> zero modes
+
+==============================================================================
+ Ⓕ  WHAT THE CONSTRUCTION DOES FIX, SO THE NEGATIVE IS NOT OVERSTATED
+==============================================================================
+  [PASS] the SPECIES COUNT is not the missing datum: the face's spinor bundle has rank 4, a discrete fact of dimension five and not a choice, and the lowest level carries 4 states -- so N is available even though the window is not   ->  N = 4 from the rank, 4 states at the lowest level
+
+==============================================================================
+ Ⓖ  THE VERDICT -- INSIDE THE ASSERT, WHERE IT CAN FAIL
+==============================================================================
+  [PASS] ** ⑴ THE INDUCED-COUPLING ROUTE DOES NOT ENGAGE ON THIS FACE, AND THE REASON IS NOT THE ONE THE ORDER NAMED: the species count IS fixed (4) and the infrared scale IS fixed (the gap, 5/2alpha), so the missing datum is neither -- it is that the cutoff the construction supplies lies BELOW the gap, Lambda/mu = 1/(5 pi), leaving ZERO modes to integrate out **   ->  N = 4 fixed, mu = 5/2alpha fixed, Lambda/mu = 1/(5 pi) < 1, modes under cutoff = 0
+  [PASS] ** ⑵ AND IT FAILS ON THE ORDER'S READING TOO, so the answer is robust to the one identification this row makes: with mu free the coupling is free, which is the negative the order named.  Pre-registered outcome 2, reached by BOTH routes, and whether "no modes under the cutoff" CLOSES the route or merely fails to engage it here is 69's to rule on **   ->  outcome 2 on both readings; the close-or-not-engage distinction is routed, not collapsed
+
+  17 checks, 17 pass, 0 fail
+
+==============================================================================
+ ALL CHECKS PASS
+==============================================================================
