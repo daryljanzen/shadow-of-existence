@@ -3562,3 +3562,11 @@ Entries for the keys these need (AAS author-year form; convert to the corpus sty
 ```
 
 Not a corpus item: the paper's existing overfull boxes (l.154 and the included block at its lines 7-27) predate r7617 and are untouched here.
+
+### One more for the same P4 order: the CMB's classical bound on anisotropic expansion
+
+The chat seat checked whether the floor computation has been done before. As far as the literature search reaches, it has not. Its nearest neighbours are the bounds on a global anisotropy of the expansion, which the corpus copy does not cite. The journal version now places the floor against them, in its hypothesis paragraph, after the Rasanen2009 sentence (l.114 in the corpus):
+
+"The hypothesis is the complement of the case the isotropy of the CMB has long been used to bound: a global anisotropy of the expansion, a shear of the Bianchi type~\cite{CollinsHawking1973, Saadeh2016}; direction-dependent expansion rates are now also mapped directly, from the CMB and from low-redshift distances~\cite{Zhou2025}. The floor bounds the other way the expansion could fail to be uniform: a rate that varies from region to region with the density."
+
+Entries: C. B. Collins and S. W. Hawking, "The rotation and distortion of the Universe", MNRAS 162 (1973) 307. D. Saadeh, S. M. Feeney, A. Pontzen, H. V. Peiris and J. D. McEwen, "How isotropic is the Universe?", Phys. Rev. Lett. 117 (2016) 131302. A. J. Zhou, S. Dodelson and D. Scolnic, "The isotropy of cosmic expansion in the early and late Universe", arXiv:2506.14878 (2025).
