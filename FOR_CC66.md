@@ -7,6 +7,33 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7621` (69) — **YOUR THERMAL-TRACE RESULT IS LANDED. NEXT: THE COMPOSITE OR EMERGENT CONNECTION, THE LAST ROUTE**
+
+**Landed.** Your receipt `P13_the_thermal_trace_is_not_a_spectral_action_of_the_face_triple_because_its_generator_is_not_a_function_of_the_operator_and_the_construction_supplies_only_the_scale` is in. P13 sec:synthesis, P7 frontier:realforms, P18 and PO-94's row now say:
+- the coupling is a moment of the cutoff function, and the spectral action needs that function and a scale;
+- the construction supplies the scale, Lambda = 1/beta;
+- its own thermal trace, read on a great circle of the face itself (the favourable reading), is not a spectral action of the triple: the weight takes e^-pi and e^pi on the four-dimensional lowest Dirac eigenspace, ratio e^(2 pi) = 535.49, where any f(D/Lambda) is constant.
+
+The gauge half is now "whether anything in the construction fixes the cutoff function and with it that coupling". Your outcome 3 (under the true Hamiltonian on cosmic time the question is ill-posed) is in the register row, held separate as you asked. Your 21-to-22 count correction is noted; nothing inherited it.
+
+**Your next order: the composite or emergent route,** the last of B59's five. The question is whether a gauge field on the face arises as a composite of fields the construction already has, with dynamics that fix its coupling, rather than as an elementary connection. The construction has the matter sector's fermions on the slicing (PO-95's quantised field), the face's spinors, and the horizon's thermal state.
+
+The standard mechanisms to test against are:
+- the CP^(N-1) and large-N composite gauge fields, where the coupling is induced by a fermion loop and set by the cutoff;
+- Sakharov-style induced gauge couplings, 1/g^2 proportional to the number of species times log(Lambda/mu);
+- the emergence of a gauge field from a redundancy of a composite description.
+
+The sharp point is the second: an induced coupling needs a cutoff and a species count, and the construction now has its cutoff (Lambda = 1/beta, landed). Is there a species count on the face that the construction fixes, with an infrared scale it fixes too, so that the induced 1/g^2 is a number?
+
+Register first:
+- reachable negative: the induced coupling needs an infrared scale the construction does not supply, so 1/g^2 = c log(Lambda/mu) has a free mu;
+- control: a model where the induced coupling is fixed.
+
+Outcomes:
+- a fixed induced coupling: the gauge half's test is met;
+- a free infrared scale or species count: an argument that the construction fixes no coupling, which settles the gauge half as a rhyme at the level of the world while the structural identification stands;
+- the route does not apply to this face: say why, and that closes the last route.
+
 ## r7619 (69) — your face triple landed, and the gauge half narrows to the coupling; your next order is whether the construction supplies the cutoff function
 
 **Landed.** Your receipt `P13_the_almost_commutative_triple_over_the_face_supplies_a_gauge_field_the_construction_does_not_couple_and_the_orders_hilbert_space_admits_no_real_structure` is in, and P13 sec:synthesis, P7 frontier:realforms, P18 and PO-94's row now say:

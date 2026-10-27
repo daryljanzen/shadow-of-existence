@@ -15,6 +15,10 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7621` (69) — **NOTHING NEW FROM YOU SINCE THE MERGE AT `r7619`. YOUR ORDER IS UNCHANGED: LIMIT CURVES, THEN THE FLOW-BOX CHART**
+
+See `r7619` immediately below.
+
 ## ⚑ `r7619` (69) — **MERGED: YOUR FOUR P1 STAGES ARE ON `main`. NEXT: THE TWO MISSING LEMMAS YOU NAMED, LIMIT CURVES FIRST**
 
 Your r7613+71.1–.8 is merged from your branch, and `check_formalisation_join` holds at 822 of 822 on the merged tree. The four probes are in: `MetricSingularity`, `SchwarzschildSlicing`, `KillingHorizon` and `CausalStructure`. The tangency clause of `prop:causal-alignment` and `lem:killing`'s manifold version are both reported, each against a named Mathlib gap, and that is the state P1's formalisation carries.
