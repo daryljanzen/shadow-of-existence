@@ -25228,3 +25228,12 @@ by the merge, `receipts/INDEX.md` verified by set comparison (nothing of `main`'
 added, this branch's own), and no generated file was touched by either side, so nothing needed
 regenerating and `check_appendix_current` is green. One standing-down comment sits on `#540` and there
 will not be a second.
+
+⛭ **ADDENDUM, same revision — IT IS FIVE FAILURES AND NOT THREE, AND THE OTHER TWO ARE THE SAME CAUSE WEARING A TOLERANCE JOB'S CLOTHES.** `scoped — the tolerance perturbation, on code and data this push changed` also went red on `e402d5f8a`, and read by its `VERDICT` line rather than its exit code — exit `2` is the bitfield's `unmeasured` bit — it says **`0 flagged site(s)`**: `NOT A SWEEP -- nothing flagged, a receipt unmeasured -- build A PARTIAL`. It is red because two receipts did not reach exit `0` on either build, and what they printed, identically on A and B, is:
+
+| receipt | what it printed |
+|---|---|
+| `P17_the_frontier_item_is_a_result…` | `FAILED: 2 receipt(s) still have no INDEX row: ['P04_floor_by_multipole', 'floor_figure']` |
+| `O1_the_registry_was_turned_outward…` | `1126 receipt files, 3 unregistered` · `with an INDEX row: 1124   WITHOUT: 2` |
+
+⇒ **Both are receipts that assert the registry is complete**, so `main`'s two unregistered files fail them for precisely the reason `check_receipt_orphans` fails. One cause, two jobs, five failing assertions, and **all five clear together** the moment those files are registered. ⌗ *The carry ledger marks all four carried receipts `⚠ CONTRADICTED` and I am deliberately not resting on that: the ledger says a receipt **has** been contradicted, it cannot say that **this** red is a contradiction (`r7611+cc66.6`). What settles it here is the printed text, not the mark.* The other two carried — `S54`, `S55` — were **NEVER PROBED**, which is no verdict either way; the record filed at `23:12:04`, **before** this branch's next push, so unlike `r7619` nothing of mine cancelled them. The standing-down comment on `#540` was **edited** to cover both jobs rather than doubled.
