@@ -25134,3 +25134,58 @@ actually a seat's own scheduling error is exactly the kind of thing that gets mi
 else's, and because the next union re-probes the 14 — so if you see them in a later scope, this is
 where they came from. ⌗ *The standing cycle now carries the rule with its measured cost attached, which
 is the only form of it I seem to be able to keep.*
+
+---
+
+## ⚑ `r7621` — **THE INDUCED-COUPLING ROUTE DOES NOT ENGAGE, AND THE MISSING DATUM IS *NEITHER* OF THE TWO YOU NAMED: THE SPECIES COUNT IS FIXED, THE INFRARED SCALE IS FIXED, AND THE CUTOFF LIES *BELOW* THE GAP**
+
+**Pre-registered outcome 2, reached by a route your order did not name — and also by the one it did,
+which is what makes it robust rather than merely mine.** Your reachable negative was *"the induced
+coupling needs an infrared scale the construction does not supply, so $1/g^2=c\log(\Lambda/\mu)$ has a
+free $\mu$."* ⛭ **I registered before computing that I expected that to be the wrong negative, and it
+is.** ⓵ **The species count is fixed:** the face's spinor bundle has rank $2^{\lfloor5/2\rfloor}=4$, a
+discrete fact of dimension five and not a choice, with $4$ states at the lowest level — computed from
+the dimension and agreeing with `r7619`'s Clifford build. ⓶ **And the infrared scale is fixed too,
+because the face is COMPACT.** A compact manifold carries no infrared infinity: its Dirac spectrum is
+**gapped** at $5/2\alpha$ — your own `P13` figure, which `r7615` landed — and a gap *is* an infrared
+scale. ⇒ *So every slot of the formula fills: $N=4$, $\mu=5/2\alpha$, $\Lambda=1/\beta$ from `r7619`.*
+⚠ **And then the window is inverted:**
+
+$$\frac{\Lambda}{\mu}=\frac{1/(2\pi\alpha)}{5/(2\alpha)}=\frac{1}{5\pi}\approx0.0637<1 .$$
+
+The cutoff the construction supplies lies **below** its own infrared scale by a factor of
+$5\pi\approx15.7$, and $\log(\Lambda/\mu)=-2.754168$. ⓷ **But the sign is not the finding — the count
+is.** The number of face Dirac modes with $\lvert\lambda\rvert\le\Lambda$ is **zero**, since every
+$\lvert\lambda\rvert=(5/2+k)/\alpha$ exceeds it. ⇒ **A loop of a field with no modes under the cutoff
+induces nothing.** The mechanism does not come out one datum short of a number; **it does not engage.**
+⌗ *That distinction is the whole reason I am not reporting this as a confirmation of your negative. "A
+free $\mu$" leaves Sakharov's mechanism intact and one datum missing — fix $\mu$ and you have a
+coupling. "Zero modes under the cutoff" says there is nothing for the mechanism to act on, whatever
+$\mu$ is. The first is a gap in the data; the second is a statement about this geometry.* ⇒ **And it
+fails your reading too, which is why I ran both:** with $\mu$ free,
+$\partial(1/g^2)/\partial\mu=-N/(12\pi^2\mu)\neq0$ everywhere, so a free $\mu$ is a free coupling.
+**Both readings give no fixed coupling, by different mechanisms** — so the verdict does not depend on
+the one identification this row makes. ⛔ **TWO THINGS ARE YOURS TO RULE ON, AND I HAVE NOT COLLAPSED
+EITHER.** ⒜ **Whether this CLOSES `B59`'s last route or merely fails to engage it on *this* face.**
+Outcome **3** (*the route does not apply*) is **available** on the zero-mode reading; outcome **2** is
+what I report. The pre-registration undertook not to decide that, and the receipt and the row both
+leave it to the register. ⒝ **The identification of the spectral gap as the induced coupling's infrared
+scale is mine** — not in the corpus, not in your order. The row survives its rejection, because your
+reading fails too, but the identification itself wants adjudicating rather than inheriting. ⌗ *Five
+controls, and the one you asked for by name earns its place: with a window the right way up the
+coupling **is** a number — $1/g^2=0.155534$ at $\Lambda/\mu=100$, rising to $0.233301$ at $1000$ — so
+the coefficient moves with the data and "no window, no coupling" is a measurement rather than a form of
+words. The counter is certified **both** ways ($8$ modes at $3/\alpha$, $210672$ at $20/\alpha$, and
+$0$ below the gap on a cutoff chosen for the test), because a zero from a counter that cannot return
+non-zero would mean nothing — the `r7615` guard, in before the test this time.* ⌗ *And every figure the
+row prints is pinned **by comparison** against numbers parsed out of the computation's output, not by a
+regex on their digits, and I verified it failable by perturbing the computation and watching the receipt
+go red. `check_figures_pinned` held at its $1376$ baseline on the first pass, where at `r7619` it had
+to catch me first.* ⛔ **One fault of mine, caught before the push.** A check's **name** read *"with
+1255 modes under that cutoff"* where the counter returns **$666{,}333{,}360$**. I wrote $1255$ from
+nothing and never reconciled it against the run. The assertion was sound, so nothing downstream was
+false — **but the prose was wrong by five orders of magnitude**, which is the same stale-figure fault
+you corrected at `r7613` and again on `r7615`'s check count. ⌗ *The rule now sits as a comment at the
+line: a check's name may describe what is measured; it may not quote a number the run has not produced.
+That is the third time this class has cost me something, and the first time the correction is in the
+file rather than only in a reply.*
