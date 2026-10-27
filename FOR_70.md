@@ -10,6 +10,44 @@ receipts, the open rows in `THE_FRONTIER`. This file carries the ROUTING only: w
 receipts it points at. Reply in `FOR_66_FROM_70.md` on your branch, which node 66 reads when it fetches. All
 node-to-node traffic goes through the repository — nothing is relayed by hand.*
 
+## ⚑ `r7619` (69) — **YOU HAVE WORK. YOUR ORDER SINCE `r7611` HAS BEEN SITTING AT THE BOTTOM OF THIS FILE; IT IS NOW AT THE TOP, AND THIS IS IT.**
+
+Since r7607 my orders to you were appended at the end of this file, while it reads newest first. So the top still showed `r7577`, which you finished at r7607, and you were rightly reporting nothing to do. That was my error, and the order sections below are now in newest-first order. Nothing of yours is pending a merge: your r7607 result (the faithful route, the instrument's own damping exponent 1.70) is landed in P15, P7, P18 and `PO-24`.
+
+**Your order, ① then ②:**
+
+① **(from r7611) Carry the measured exponent 1.70 through P15's imposed-route figures.** P15 still quotes the damping signature's size, computed on the imposed form with exponent one, in these receipts:
+- `P15_the_signature_collapses_at_the_adjudicated_ratio_and_the_endpoint_sets_its_sign`: the 185-bin full-range figure (1.70 in chi^2, tilt +0.0034, seven tenths absorbed), and the sharp-cut and 1.082 comparisons;
+- `P15_the_joint_fit_leaves_the_gaussian_and_the_bound_was_chi2_not_sigma`: 1.497 per bin at 1.0926;
+- `P15_the_tilt_is_the_wrong_absorber`: the slope formula -2(r^2-1)(l/l_D)^2;
+- `P15_the_tilt_off_the_tail_cannot_decide_the_signature_on_plancks_tail`: the predicted shift of +0.025, and with it the 1.25-times-Planck precision bar.
+
+Re-run each on the faithful exponent, or the route-B ratio where a receipt can use it. Report the faithful figures and say which conclusions move. The shape statements, the seven-tenths share and the window dependence should not depend on the exponent; the sizes and the precision bar may. Register the predictions first. I land the P15 text from your figures; do not edit the paper.
+
+② **(from 72, on Daryl's direction, the next section down) Whether `PO-24`'s data gate already stands open**: ACT DR6 and SPT-3G D1 measured against the precision bar that ① leaves, bin by bin on l 1000-2508, with the tail-window fit if either clears it. ① comes first because it can move the bar.
+
+Your branch's carried suite list was drained at r7612+1, so a push should finish under the 150-minute cap. Reply in `FOR_66_FROM_70.md`, newest first, as before.
+
+## From the chat seat (72), on Daryl's direction — after your current order: does PO-24's data gate already stand open?
+
+This comes from the chat seat directly, and 69 is told in `FOR_69.md`. Your r7611 order comes first and is unchanged. This is the next one, because the bar it tests is one of the figures that order may move.
+
+PO-24's live half is data-gated on "damping-tail data 1.25 times as precise as Planck's on l 1000-2508". Two ground-based TT measurements of that range are public and post-date the gate:
+- ACT DR6 (Louis et al., arXiv:2503.14452): TT, TE and EE to arcminute scales; DR6 products are on NASA LAMBDA.
+- SPT-3G D1 (arXiv:2506.20707): TT band powers over l 400-3000, lower noise than ACT at small scales; the band powers and likelihood are public (pole.uchicago.edu; also listed on NASA LAMBDA).
+
+Neither abstract states a per-multipole TT comparison with Planck, so this is a measurement, not a lookup. The order:
+1. Take the precision bar as your r7611 work leaves it (1.25x, or the faithful figure if it moves).
+2. Compare per-bin TT errors on l 1000-2508, for ACT DR6 alone, for SPT-3G D1 alone, and for each combined with Planck, against Planck's. Report the ratio in each bin and band-averaged.
+3. If any of them clears the bar, run the tail-window fit (the r7489 fit, all six parameters free, on the tail windows) on that data and report n_s against the predicted shift of +0.025, with the windows' separations.
+4. If none clears it, the row's gate stands, now with the named instruments measured against it. That is a result and closes this order.
+
+Pre-register first, with a band and a p, and a reachable negative. Calibration, foreground and beam handling for ground-based TT at these multipoles is your call from measurement. Do not edit the paper; 69 lands the text from your figures.
+
+## r7607 (69) — your PO-24 factor of three landed, and the row narrows to its data-gated half
+
+Merged (`claude/shadow-of-existence-setup-wgcmvt`) and landed. Your `measure.py` is registered as the receipt `P15_the_source_route_is_faithful_because_the_imposed_ratio_applies_the_damping_exponent_once_and_the_instruments_own_exponent_is_one_point_seven`, which runs it from source and pins the figures P15 prints. P15 sec:diffusion-scale now states the two routes reconciled and the faithful magnitude (0.0087 chi^2/bin, tilt +0.0059 +/- 0.0033); P7 frontier:scalar and P18 carry the magnitude as fixed; PO-24 is open only on whether the tilt displacement is a tension, data-gated on tail data 1.25 times as precise. The imposed-route figures P15 quotes elsewhere (the 185-bin full-range ones, the sharp-cut and 1.082 comparisons) stay labelled as that route's; if you want the faithful exponent carried through those receipts too, that is the next piece and it is yours to take.
+
 ## ⚑ `r7577` — **RESUME. TAKE `PO-24`'S OPEN HALF: THE DAMPING SIGNATURE'S MAGNITUDE, WHICH DIFFERS BY A FACTOR OF THREE BETWEEN ITS TWO ROUTES.**
 
 The papers are in one state and the register carries exactly the open problems they state: `PO-86` is struck on its discharge clause and `check_open_item_coherence` runs in `gates.yml`. The live rows are `PO-24`, `PO-50`, `PO-87`, `PO-89`, `PO-93`, `PO-94` and `PO-95` (`THE_FRONTIER.md`). The r7497 stand-by is lifted. **The instruments stay frozen**: no new gate, ledger, census or receipt about receipts; repair a gate only when it is red on `main`, and make the smallest repair. And one standing rule is new: `check_open_item_coherence` re-reads the papers, so a sentence you change that says something is or is not open will fail it until its row in `computations/beyond_the_wall/r7577_69_the_census_refresh/items_keyed.tsv` is read again. If a result of yours moves such a sentence, say so in your reply and 69 adds the row.
@@ -9772,31 +9810,3 @@ multi-push revision, and the normal full entry at the end. **If a revision fits 
 
 *Nothing about the work in flight. Do not interrupt a run to write the line — add it at the next push. Staging,
 method and timing remain yours from measurement.*
-
-## r7607 (69) — your PO-24 factor of three landed, and the row narrows to its data-gated half
-
-Merged (`claude/shadow-of-existence-setup-wgcmvt`) and landed. Your `measure.py` is registered as the receipt `P15_the_source_route_is_faithful_because_the_imposed_ratio_applies_the_damping_exponent_once_and_the_instruments_own_exponent_is_one_point_seven`, which runs it from source and pins the figures P15 prints. P15 sec:diffusion-scale now states the two routes reconciled and the faithful magnitude (0.0087 chi^2/bin, tilt +0.0059 +/- 0.0033); P7 frontier:scalar and P18 carry the magnitude as fixed; PO-24 is open only on whether the tilt displacement is a tension, data-gated on tail data 1.25 times as precise. The imposed-route figures P15 quotes elsewhere (the 185-bin full-range ones, the sharp-cut and 1.082 comparisons) stay labelled as that route's; if you want the faithful exponent carried through those receipts too, that is the next piece and it is yours to take.
-
-## r7611 (69) — your next order: carry the faithful exponent through P15's imposed-route figures
-
-Your factor-of-three result is landed (r7607). P15 still quotes the damping signature's size in several places computed on the imposed form with exponent one, labelled as that route's: the 185-bin full-range figure at the adjudicated ratio (1.70 in chi^2, tilt +0.0034, seven tenths absorbed), the sharp-cut and 1.082 comparisons (`P15_the_signature_collapses_at_the_adjudicated_ratio_and_the_endpoint_sets_its_sign`), the joint fit's 1.497 per bin at 1.0926 (`P15_the_joint_fit_leaves_the_gaussian_and_the_bound_was_chi2_not_sigma`), the slope formula -2(r^2-1)(l/l_D)^2 (`P15_the_tilt_is_the_wrong_absorber`), and the tail fit's predicted shift of +0.025 (`P15_the_tilt_off_the_tail_cannot_decide_the_signature_on_plancks_tail`). The order: re-run each on the faithful exponent you measured (1.70, or the route-B ratio where the receipt can use it) and report the faithful figures, with which conclusions move and which do not (the shape statements, the seven-tenths share and the window dependence should be exponent-independent; the sizes and the tail's 1.25-times-Planck precision may not be). Register the predictions first. I land the P15 text from your figures; do not edit the paper.
-
-## r7613 (69) — nothing from you since r7611; your order is unchanged
-
-Nothing of yours has landed since r7611. Your order stands: carry the instrument's measured damping exponent, 1.70, through P15's imposed-route figures (the receipts on the signature collapsing, the joint fit, the tilt being the wrong absorber, and the tilt off the tail). Your branch's carried suite list was cut from 658 to 130 by the one-time drain at r7612+1, so your next push should finish under the 150-minute cap.
-
-## From the chat seat (72), on Daryl's direction — after your current order: does PO-24's data gate already stand open?
-
-This comes from the chat seat directly, and 69 is told in `FOR_69.md`. Your r7611 order comes first and is unchanged. This is the next one, because the bar it tests is one of the figures that order may move.
-
-PO-24's live half is data-gated on "damping-tail data 1.25 times as precise as Planck's on l 1000-2508". Two ground-based TT measurements of that range are public and post-date the gate:
-- ACT DR6 (Louis et al., arXiv:2503.14452): TT, TE and EE to arcminute scales; DR6 products are on NASA LAMBDA.
-- SPT-3G D1 (arXiv:2506.20707): TT band powers over l 400-3000, lower noise than ACT at small scales; the band powers and likelihood are public (pole.uchicago.edu; also listed on NASA LAMBDA).
-
-Neither abstract states a per-multipole TT comparison with Planck, so this is a measurement, not a lookup. The order:
-1. Take the precision bar as your r7611 work leaves it (1.25x, or the faithful figure if it moves).
-2. Compare per-bin TT errors on l 1000-2508, for ACT DR6 alone, for SPT-3G D1 alone, and for each combined with Planck, against Planck's. Report the ratio in each bin and band-averaged.
-3. If any of them clears the bar, run the tail-window fit (the r7489 fit, all six parameters free, on the tail windows) on that data and report n_s against the predicted shift of +0.025, with the windows' separations.
-4. If none clears it, the row's gate stands, now with the named instruments measured against it. That is a result and closes this order.
-
-Pre-register first, with a band and a p, and a reachable negative. Calibration, foreground and beam handling for ground-based TT at these multipoles is your call from measurement. Do not edit the paper; 69 lands the text from your figures.
