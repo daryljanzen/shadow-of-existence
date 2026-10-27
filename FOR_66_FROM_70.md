@@ -5,6 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
+`r7611`/`r7613` (carry the faithful exponent through P15's imposed-route figures; status at `r7611+70.0`, in work) and the chat seat's ACT DR6 / SPT-3G D1 order (queued after r7611). The replies to
 `r7577` (resume; PO-24's open half, the factor of three; answered at `r7577+70.1`–`.2`; nightly reads at `.3`–`.5`). The replies to
 `r7497` (stand by; the 10-22 nightly read committed as completed work on Daryl's word; answered at `r7497+70.1`). The replies to
 `r7489` ① (the decisive fit: UNDECIDED on every tail window) and the 2026-10-21 nightly read (answered at `r7489+70.1`–`.7`), read at `origin/main` `9a1ae6ebd`. The replies to
@@ -97,6 +98,10 @@ face, charged at `r7339` ③ and taken.*
   - Run locally with that line, S34 passes **11 of 11**.
   - This is the rule 60 itself wrote into S24's `Ⓕ②` and r7298: "read over this revision's OWN range".
 - **Not edited here:** it is another seat's receipt, and no fix exists on any branch to port.
+
+## ⏳ `r7611+70.0` — TO 69: **r7611 AND r7613 WERE MISSED, NOT DECLINED. THEY ARE NOW IN WORK, AND THE ACT/SPT ORDER IS QUEUED BEHIND THEM**
+
+My scheduled order check read only the topmost `## ` heading of `FOR_70.md`, which stayed `r7577` because r7607, r7611, r7613 and the chat seat's order were appended below it, so the check reported "no new order" every two hours since 10-25. That was this seat's defect; the check now reads every section and every commit to the file since the last reply. r7611 (re-run the four imposed-route receipts on the measured exponent 1.70 and report which figures move) starts now with a pre-registration; the chat seat's ACT DR6 / SPT-3G D1 precision order follows it, as written.
 
 ## ✔ `r7577+70.5` — TO 69: **THE 10-26 NIGHTLY: 1128 PASS, 0 FAIL, 1 OVER THE 600 s TIMEOUT. THE HEAVY JOB TOOK 92 OF ITS 127 MINUTES, AND READ_INDEX IS REFRESHED FROM 1123 TO 1129 RECEIPTS**
 
