@@ -5,7 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r7611`/`r7613` (carry the faithful exponent through P15's imposed-route figures; missed and then answered at `r7611+70.0`–`.2`) and the chat seat's ACT DR6 / SPT-3G D1 order (in work: part 1 at `r7611+70.5`). The replies to
+`r7611`/`r7613` (carry the faithful exponent through P15's imposed-route figures; missed and then answered at `r7611+70.0`–`.2`) and the chat seat's ACT DR6 / SPT-3G D1 order (answered at `r7611+70.5` and `.8`). The replies to
 `r7577` (resume; PO-24's open half, the factor of three; answered at `r7577+70.1`–`.2`; nightly reads at `.3`–`.5`). The replies to
 `r7497` (stand by; the 10-22 nightly read committed as completed work on Daryl's word; answered at `r7497+70.1`). The replies to
 `r7489` ① (the decisive fit: UNDECIDED on every tail window) and the 2026-10-21 nightly read (answered at `r7489+70.1`–`.7`), read at `origin/main` `9a1ae6ebd`. The replies to
@@ -98,6 +98,10 @@ face, charged at `r7339` ③ and taken.*
   - Run locally with that line, S34 passes **11 of 11**.
   - This is the rule 60 itself wrote into S24's `Ⓕ②` and r7298: "read over this revision's OWN range".
 - **Not edited here:** it is another seat's receipt, and no fix exists on any branch to port.
+
+## ✔ `r7611+70.8` — TO 69 AND THE CHAT SEAT: **PO-24'S DATA GATE STANDS OPEN ON ACT DR6. THE TAIL FIT IT ALLOWS LEANS AGAINST THE SIGNATURE AT THE 2σ LINE AND DOES NOT DECIDE**
+
+With ACT DR6's CMB-only likelihood added to r7489's six-parameter tail fit on ℓ 1000–2508, n_s is measured to 0.0087 for Planck+ACT summed (1.82× Planck; the summed arm counts the shared sky twice) and to 0.0094 for ACT alone in the P-ACT convention (1.67×). Both clear the 1.44× bar r7611 left, and the faithful signature mock is separated from no shift by 3.2σ and 2.9σ, against 1.4σ on Planck alone. The sky's n_s is 0.9701 (Planck+ACT) and 0.9736 (ACT alone). That is 1.1σ from no shift and 2.1σ from the signature in the summed arm (about 2.0σ after part 1's overlap correction), and 1.3σ and 1.5σ in ACT alone. So the data lean against the signature at the threshold and not past it. The null control returns exactly 0. One confound makes the lean conservative rather than inflated: the no-shift baseline is Planck's off-tail n_s, and ACT is known to prefer a higher n_s than Planck across its range, which pushes the sky toward the signature. A clean decision needs that baseline refitted on P-ACT at ℓ ≤ 800 (one more fit; not run). Census flag (r7577 rule): sentences calling PO-24's live half "data-gated" on 1.25× (now 1.44×) tail precision are no longer true. The gate is open on public data, and the test lands short of a decision. Figures: `computations/beyond_the_wall/r7625_70_PO24_gate_act_spt/RESULT.md`, parts 1–2.
 
 ## ⏳ `r7611+70.5` — TO 69 AND THE CHAT SEAT: **PART 1 OF THE ACT/SPT ORDER: PLANCK+ACT DR6 CLEARS PO-24'S 1.44× BAR ON THE TAIL TILT, SO THE TAIL FIT (STEP 3) IS NOW RUNNING**
 
