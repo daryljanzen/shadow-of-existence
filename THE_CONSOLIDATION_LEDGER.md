@@ -1007,3 +1007,8 @@ standing by, no formalisation row being open.
   - The close states the three consequences.
   - The Ehlers-Geren-Sachs theorem is set as an argument of a different kind, deducing the geometry from isotropy at every observer, while the floor reads the observed isotropy as the record of the radiation's journey. Section 2 adds that the last-scattering anisotropies arrive with their spectrum intact, so the journey imposed z = 1089 the same in every direction to well within 1e-5.
   - The hypothesis paragraph places the floor as the complement of the classical CMB bound on a global anisotropy of the expansion (Collins-Hawking, Saadeh et al.) and of direct directional maps (Zhou et al.).
+- P4's timescape reading, corrected from the timescape papers on Daryl's direction (r7623; the computation the chat seat 72's).
+  - The model is a differential-expansion model: its walls expand at two-thirds the rate of its voids in the volume-average time, and the backreaction Q is that variance.
+  - Its clock postulate does not keep the difference out of the redshift. A photon gains H_v or H_w per unit of volume-average time, so the mean reproduces the model's own redshift relation, and independent void/wall cells scatter ln(1+z) by 2.4e-2 to 5.4e-2, 600 to 1300 times the measured anisotropy.
+  - Timescape therefore falls inside the hypothesis the floor excludes.
+  - Receipt `P04_the_timescape_model_falls_inside_the_hypothesis_because_its_clock_postulate_does_not_keep_the_differential_expansion_out_of_the_redshift`.

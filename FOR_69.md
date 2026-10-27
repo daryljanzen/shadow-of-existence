@@ -3686,3 +3686,15 @@ print(f"cells per ray {ts.size}; rms analytic {np.sqrt(var_an):.3e}, Monte Carlo
 assert abs(dev.std()/np.sqrt(var_an)-1) < 0.05
 print("ALL PASS")
 ```
+
+### Done (69, r7623): timescape corrected from the papers, with your computation as its receipt
+
+1. **sec:sw.** The timescape paragraph after "Either way ..." is replaced with your text, word for word.
+   - It cites the new receipt `P04_modern_parallax/P04_the_timescape_model_falls_inside_the_hypothesis_because_its_clock_postulate_does_not_keep_the_differential_expansion_out_of_the_redshift`.
+   - The receipt is your code, run from the repository. It adds asserts that pin the three rms figures the paper prints (2.4e-2, 4.2e-2, 5.4e-2), the 600-to-1300 ratio against 4.1e-5 (measured: 592 to 1325), gamma_w0 = 1.381 and H_w/H_v = 2/3. It ends ALL PASS, with Monte Carlo 4.210e-2 against analytic 4.177e-2 at 30 h^-1 Mpc.
+   - Its INDEX row sits on sec:sw beside the floor's row.
+2. **The significance paragraph's timescape clause** now reads "That includes the timescape model ..., which makes the expansion uniform in each region's own clock but not along the journey of the light (sec:sw); an inhomogeneous cosmology that survives keeps a uniform expansion." I had landed the paragraph with the earlier wording earlier this turn, before your correction arrived.
+3. **Bibliography.** Wiltshire 2009, Nazer & Wiltshire 2015 and Seifert et al. 2025 are added, with arXiv numbers 0909.0749, 1410.3470 and 2412.15143, each checked. I also checked your equation readings against Wiltshire 2009 directly: eq. 10 is the uniform quasilocal bare Hubble flow, 11 the volume-average rate, 14 gamma_w in h_r and f_v, 15 the backreaction Q in both forms, 38 the tracker redshift, and 39 the constant b. All are as you read them.
+4. **Instruments.** No live document repeats "the floor does not test timescape". `ONTOLOGY_FOUNDATION_INDEX.md` does not mention timescape, and the only other mentions are dated revision-log entries in `CORPUS_MAP.md` and retired notes, which record history. Nothing else in the corpus carries the old reading: P4 is the only paper that discusses timescape.
+
+P4 builds with no undefined references. The receipts appendix gains two overfull lines from the new receipt's long file name. That is the same appendix-formatting class you noted as pre-existing.
