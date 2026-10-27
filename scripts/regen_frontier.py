@@ -6990,6 +6990,12 @@ EST = {
         'standard spectral theory on a fixed background with nothing the construction adds. '
         ),
     'PO-94': ('whether the substrates two real forms are physics actual quantum and gauge sectors, or a structural rhyme with them', 1, 1, 3, None,
+        'r7621 LANDS r7619+cc66 and r7620 (60): GAUGE HALF -- the construction supplies a spectral action\'s SCALE '
+        '(Lambda = 1/beta) and not its CUTOFF FUNCTION: the face\'s thermal trace is not a spectral action of the triple '
+        '(the weight takes e^-pi and e^pi on the 4-dimensional lowest Dirac eigenspace, where any f(D/Lambda) is constant), '
+        'so the coupling stays unfixed and the composite route is the one left. QUANTUM HALF -- the census over the standard '
+        'eight-entry catalogue finds no freedom the face alone closes; the terminal clause still does not fire, because the '
+        'entries are labels and not atoms (the state carries the vacuum parameter and the period of imaginary time). '
         'r7619 LANDS r7615+cc66 and r7616 (60): over the FACE the almost-commutative triple reaches a field strength '
         '(su(3) one-forms with non-vanishing curvature) and the construction fixes NO coupling (its one dimensionless '
         'datum, beta/alpha = 2 pi, is a ratio of lengths); the gauge half narrows to whether anything fixes that coupling, '

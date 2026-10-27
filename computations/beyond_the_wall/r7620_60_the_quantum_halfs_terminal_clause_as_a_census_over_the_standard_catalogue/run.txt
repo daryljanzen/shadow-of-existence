@@ -1,0 +1,158 @@
+
+==================================================================================================
+  Ⓐ  THE FACE AND THE CATALOGUE, LOCATED IN THE PAPERS RATHER THAN ASSUMED
+==================================================================================================
+   papers read by their own map: 18  (never a glob over the corpus directory)
+   the face, located verbatim           : The face is $S^{5}=\SO(6)/\SO(5)$   in ['boundary_paper']
+   and distinguished from the other one : in ['boundary_paper']
+   the gauge half's standing blocker     : in ['boundary_paper']
+   ⇒ Ⓐ HIT: the object the census is about is the papers' own,
+     and WHICH compact object it is was settled before anything was counted.
+
+==================================================================================================
+  Ⓘ  THE VOIDING CONTROL, ASKED FIRST: DOES THE CATALOGUE RANGE OVER THIS OBJECT?
+==================================================================================================
+   the corpus's own placement of the quantum claim: in ['boundary_paper']
+   the clause says the CONSTRAINT STRUCTURE is Lorentzian and only the SCALE is the face's,
+     so the quantum claim is about a field on a background the Lorentzian form supplies --
+     which is what the catalogue ranges over.  The absolute foliation is additional
+     structure ON that background, not a replacement for it.
+   ⇒ Ⓘ does not void: the census is about the right object
+
+==================================================================================================
+  Ⓗ  THE THREE-WAY CONTROL, CARRIED FROM r7616 AND RE-RUN HERE
+==================================================================================================
+   |N|^2 solutions of the commutator condition : [1/w]
+   d(two-point function)/d(phase)              : 0
+   [HIT ] the overall phase       -> CLOSED BY NOTHING        (derivative identically 0)
+   [HIT ] the Wronskian modulus   -> CLOSED BY NOT-THE-FACE   (exactly one solution)
+   ⇒ Ⓗ HIT: the instrument distinguishes the three verdicts,
+     so 'closed elsewhere' below is a reading and not the only thing it can return.
+
+==================================================================================================
+  Ⓒ  ENTRY 6, THE SPIN STRUCTURE ON THE FACE -- COUNTED, NOT ASSERTED
+==================================================================================================
+   space                                   dim H^1(.;Z_2)  orientable  spin structures
+   S^5  (the face)                                      0        True                1
+   S^4  (the other candidate)                           0        True                1
+   RP^5 (seed: pi_1 = Z_2, orientable)                  1        True                2
+   RP^4 (seed: non-orientable)                          1       False                0
+   the corpus's own spin-group sentence on the face: in ['boundary_paper']
+   ⇒ Ⓒ HIT: ENTRY 6 IS NOT A SLOT -- there is no
+     freedom here for the face to close, on either candidate face, and the count is measured.
+
+==================================================================================================
+  Ⓔ  ENTRY 8, THE STRESS TENSOR'S RENORMALISATION AMBIGUITIES -- COMPUTED IN n DIMENSIONS
+==================================================================================================
+   invariant                   n                      energy density                            pressure
+   Gauss-Bonnet                4                                   0                                   0
+   Gauss-Bonnet                5   24*Derivative(a(t), t)**4/a(t)**4  24*Derivative(a(t), t)**2*Derivati
+   ⇒ Gauss-Bonnet in 4d: (0, 0)        in 5d: nonzero = True
+
+   ── THE SPAN, GENERICALLY (a general scale factor) ──
+      live directions: 5;  all mutually proportional: False;  all p = -rho: False
+
+   ── THE SPAN ON THE CONSTRUCTION'S OWN BACKGROUND (a = e^{Ht}) ──
+      Lambda (the volume term)   rho = 1                            p = 1
+      R (the Einstein term)      rho = 6*H**2                       p = 6*H**2
+      R^2                        rho = 0                            p = 0
+      Ric.Ric                    rho = 0                            p = 0
+      Riem.Riem                  rho = 0                            p = 0
+      Gauss-Bonnet               rho = 0                            p = 0
+      the three QUADRATIC invariants on this background: all identically zero = True
+      the live directions that remain: ['Lambda (the volume term)', 'R (the Einstein term)']
+      and they are mutually proportional: True
+   ⇒ Ⓔ HIT: entry 8 is a freedom NOTHING closes
+     -- they are fixed by measurement, which is what makes them RENORMALISATION ambiguities --
+     and on this background it is ONE number, which is the scale's own placement.
+
+==================================================================================================
+  Ⓑ  ENTRY 5, INEQUIVALENT REPRESENTATIONS -- WHAT WOULD LABEL A SECTOR
+==================================================================================================
+   the papers on a gauge-acted sector ON the face: {'A gauge-acted sector placed on the compact face where the gauge structure lives walks into the obstruction': ['boundary_paper']}
+   ⇒ with no charge on the face, the representation is fixed by the STATE through the GNS
+     construction, so entry 5 is not a freedom of its own: it is DERIVATIVE ON ENTRY 1,
+     and entry 1 is where it is scored.
+   ⇒ Ⓑ HIT: entry 5 carries no independent freedom here.
+
+==================================================================================================
+  Ⓓ  ENTRY 7, THE VACUUM ANGLE -- AND THE REGISTERED REASON IS INCOMPLETE
+==================================================================================================
+   (i) MEASURED, located: no realised gauge connection on the face (the same sentence as Ⓑ).
+  (ii) IMPORTED, and labelled as imported rather than measured: principal G-bundles on S^n are
+       classified by pi_{n-1}(G), so on this face by pi_4(G), and pi_4(SU(n)) = 0 for n >= 2.
+       ⇒ even if the gauge half discharged, THIS face would carry no bundle sectors at all.
+   ⇒ Ⓓ HIT on the conclusion, with the registered reason corrected by Ⓓ′.
+
+==================================================================================================
+  Ⓕ  COMPLETENESS -- THE ARM THE ORDER ASKS FOR
+==================================================================================================
+   the registered negative: the dimensionless curvature coupling.
+     its conformal value in n dimensions: xi_c = (n - 2)/(4*(n - 1))  (= 1/6 at n = 4, 3/16 at n = 5)
+     the Euclidean action on the face is well defined for EVERY value of it, so smoothness of
+     the compact face selects none -- which means the face COULD NOT close it in principle.
+   ⇒ Ⓕ MISS on the registered negative: the order's list covers freedoms A EUCLIDEAN SECTION
+     COULD IN PRINCIPLE CLOSE, and this one it could not, so it is OUT OF DOMAIN and is not a
+     counterexample at all.  The registered negative is reported as a MISS rather than widened.
+
+   ── Ⓕ′ THE IN-DOMAIN NEGATIVE, FOUND IN THE COURSE OF MEASURING AND MARKED AS SUCH ──
+      horizon of the Euclidean static patch : r_h = alpha
+      the smooth period, computed            : beta_H = 2*pi*alpha
+      the conical deficit at a general period: delta(beta) = 2*pi - beta/alpha
+      delta(beta_H) = 0, and delta = 0 only there: [2*pi*alpha]
+      ⇒ so the period is a freedom the Lorentzian quantisation leaves open -- every period is
+        a KMS state of the same algebra -- and the compact face closes it.  IN DOMAIN.
+      ⇒ AND IT IS CLOSED ELSEWHERE TOO, by the same argument r7616 used on the antipode: a
+        non-smooth period puts a curvature delta at the tip, so the state's two-point function
+        is singular ON THE HORIZON, away from coincidence, where the local parametrix's
+        singular support is coincidence alone.  The Hadamard condition excludes it, with no
+        Euclidean content.
+
+   ── Ⓕ′′ WHERE THE LIST FAILS, STATED PRECISELY RATHER THAN AS A MISSING NINTH ENTRY ──
+      A KMS state at any period IS a state, so under a strict reading the period lives inside
+      entry 1 rather than beside it.  That is the finding, and it is sharper than an omission:
+      ⛭ ENTRY 1 IS NOT AN ATOM.  It carries at least TWO independent one-parameter freedoms --
+        the mixing parameter r7616 measured, at fixed period, and the PERIOD measured here,
+        at fixed mixing -- and scoring 'the state' once scores neither of them completely.
+      ⇒ So a census that checks eight boxes cannot be shown complete, because the boxes are
+        LABELS and not atoms, and the same question can be put to every other entry.
+
+   ⌗ AND WHAT IT DOES NOT DO: the period is closed elsewhere as well, so exhibiting it moves
+     no entry from 'closed elsewhere' to 'closed only by the face'.  The clause's VERDICT is
+     untouched; what it loses is the standing of a DEMONSTRATION.
+
+==================================================================================================
+  Ⓖ  THE VERDICT ON THE TERMINAL CLAUSE
+==================================================================================================
+   entry                                            verdict            on what
+   the state                                        EMPTY              r7616: three principles with no Euclidean content select the same member
+   the self-adjoint extension                       EMPTY              r7608: finite form energy singles out the same member on its own
+   the operator ordering                            UNREACHABLE        r7608: the face acts downstream of the quadratic form -- the face CANNOT close it
+   the value of the scale                           EMPTY              r7608: P10's own ledger arithmetic
+   inequivalent representations, i.e. superselection DERIVATIVE         Ⓑ here: no charge on the face, so the GNS representation follows the state
+   the spin structure on the face                   NOT-A-FREEDOM      Ⓒ here: exactly one spin structure on the face, counted (and on the other candidate too)
+   the vacuum angle, if there is one                NOT-AVAILABLE      Ⓓ here: no connection on the face, and the face's own topology carries no bundle sectors
+   the renormalisation ambiguities of the stress tensor CLOSED-BY-NOTHING  Ⓔ here: renormalisation ambiguities, fixed by measurement; and on this background they collapse onto the scale
+
+   entries the face COULD close and that are closed elsewhere : 3
+   entries the face could NOT close                           : 5   (under 5 distinct verdicts)
+   entries closed ONLY by the face                            : 0
+   ⇒ THE TERMINAL CLAUSE DOES NOT FIRE.
+     Not because an entry resists: every entry the face could close IS closed elsewhere, so
+     the clause's VERDICT stands as a reading -- the third of the order's three outcomes.
+     It does not fire because the LIST cannot be shown complete, and the reason is located:
+     its entries are labels and not atoms, exhibited on the first entry.
+   ⌗ What would fire it is a list of ATOMS, or an argument that labels suffice.
+   ⌗ And the scale's placement stands either way: entry 4 was already empty, and Ⓔ measures
+     that on this background entry 8 collapses onto it rather than adding to it.
+
+==================================================================================================
+  THE COUNT
+==================================================================================================
+   25 checks, 1 failures.
+   FAILED: Ⓕ as registered: the dimensionless coupling is a counterexample to completeness
+
+   ⌗ The one failure is the REGISTERED Ⓕ negative, reported as a miss rather than widened:
+     the coupling I named is out of the order's domain, and Ⓕ′ carries the arm on an in-domain
+     negative found while measuring.  Ⓓ′ likewise corrects a registered REASON whose
+     conclusion held.

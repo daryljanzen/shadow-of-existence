@@ -209,15 +209,25 @@ def main():
                  if re.search('stress tensor', body(f), re.I)]
     _prose_nobib = re.sub(r'\\bibitem\{[^}]*\}.*?(?=\\bibitem|\\end\{thebibliography\})', '',
                           allp, flags=re.S)
+    # ** r7619 (69): CLASS (c) AGAIN -- "Hadamard" is in print, as a condition on the STATE and not a
+    #   treatment of <T_mn>.  PO-94's fourth empty slot (60's alpha-vacua) names the Hadamard short-distance
+    #   condition as one of three principles selecting the Bunch-Davies member, in P7 frontier:realforms and
+    #   P18's frontier; neither sentence renormalises a stress tensor.  So the check asserts that every
+    #   sentence naming Hadamard is a vacuum-selection sentence (it names Bunch--Davies), and keeps \langle T
+    #   and point-splitting absent: a Hadamard use outside vacuum selection fails it and must be read.
+    _hadamard_sents = [_s for _s in re.split(r'(?<=[.;])\s+', re.sub(r'\s+', ' ', _prose_nobib))
+                       if re.search('Hadamard', _s, re.I)]
     check('⛔ AND "stress tensor" as QFT in curved space\'s object: STILL ABSENT -- the one use (P10, '
           'r6909) is the classical source "the field equations trade for the stress tensor", and no '
-          'paper treats the renormalised <T_mn> (no \\langle T, no point-splitting, no Hadamard)',
+          'paper treats the renormalised <T_mn> (no \\langle T, no point-splitting; Hadamard named '
+          f'only as a vacuum-selection condition, in {len(_hadamard_sents)} sentence(s))',
           counts['stress tensor'] == 1
           and _st_where == ['canonical_time.tex']
           and 'what the field equations trade for the stress tensor' in body(
               os.path.join(ROOT, 'corpus', 'canonical_time.tex'))
           and not re.search(r'\\langle\s*(?:\\hat\s*\{?\s*)?T(?![A-Za-z])', _prose_nobib)
-          and not re.search(r'Hadamard|point-splitting', _prose_nobib, re.I))
+          and not re.search(r'point-splitting', _prose_nobib, re.I)
+          and all('Bunch--Davies' in _s for _s in _hadamard_sents))
     check('⛭ AND "trans-Planckian" is in print -- at ZERO when this receipt was written, supplied at '
           'c54.207 WITH its scoping, which is the whole content of that clause',
           counts['trans-Planckian'] > 0)
