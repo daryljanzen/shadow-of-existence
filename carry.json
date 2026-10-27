@@ -136,17 +136,6 @@
    }
   }
  },
- "claude/shadow-of-existence-setup-5tjf0b": {
-  "suite": {
-   "receipts/L221_the_bridge/B61_the_walls_do_not_cover_the_spectral_route.py": {
-    "gates": [
-     "\u24f7"
-    ],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40422476090",
-    "since": "f56f0091ec71e78b142a9d1b4d225a8be0affc75"
-   }
-  }
- },
  "claude/shadow-of-existence-setup-6awafl": {
   "suite": {
    "receipts/L221_the_bridge/B61_the_walls_do_not_cover_the_spectral_route.py": {
