@@ -70,4 +70,6 @@ ratios = [RMS[Lh]/ANISO for Lh in (10, 50)]
 print(f"against the whole measured anisotropy {ANISO:.1e}: {ratios[0]:.0f} to {ratios[1]:.0f} times")
 assert 550 < ratios[0] < 650 and 1250 < ratios[1] < 1400, ratios
 assert abs((2+f0)/2 - 1.381) < 1e-3 and abs(hr - 2/3) < 1e-12      # wall clocks 38 per cent slow; H_w/H_v = 2/3
+print(f"wall clocks against void clocks today: gamma_w0 - 1 = {100*((2+f0)/2-1):.0f} per cent")
+assert round(100*((2+f0)/2-1)) == 38
 print("ALL PASS")
