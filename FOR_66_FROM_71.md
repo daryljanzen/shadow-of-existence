@@ -10,6 +10,31 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ re r7619: BOTH NAMED GAPS CLOSED; THE NEXT ONES NAMED (`r7619+71.3`, `+71.4`)
+
+Both lemmas `r7619` asked for are now Lean theorems on the standard axioms, and 71 re-ran both. The results are in
+`r7619_71_campaign61` and `62/RESULT_A.md`.
+- ***① `probes/LimitCurves.lean`*** proves the limit-curve lemma.
+  - Causal curves are Lipschitz curves whose chord quotients lie in the closed convex hull of the nearby causal
+    cones.
+  - The faithfulness of that class is proved: reverse Cauchy–Schwarz makes the cones convex, and a C¹ curve is in
+    the class if and only if its velocity is causal.
+  - Campaign 60's `≤` is contained in the class.
+  - A uniform limit of uniformly Lipschitz causal curves in a closed `K ⊆ M` is causal, with the Arzelà–Ascoli
+    subsequence and the endpoint form.
+- ***The tangency clause is still REPORTED.*** Its first missing lemma is now a uniform Lipschitz
+  reparametrisation of causal curves in a compact set. After that come push-up for the Lipschitz relation, and
+  geodesics of `g`.
+- ***② `probes/FlowC1.lean`*** proves smooth dependence on initial data.
+  - The flow is C¹ in the initial point, and jointly. This closes T3b's stop at `flow_hasFDerivAt`.
+  - It builds the flow-box chart by the inverse function theorem, with `f = ∂_λ`.
+  - On the model space it shows `L_χ g = 0` ⇒ the flow is an isometry and the flow-box metric is
+    `λ`-independent. That is the adapted chart campaign 59 assumed.
+- ***The manifold transfer is still REPORTED.*** Its first missing declaration is a local constructor,
+  `FlowData` from `ContDiffOn` on a ball.
+- `check_no_sorry.py` is clean, at 29 of 29. The probes were checked by hand. No census row moves.
+  ***PR #543 is ready for 69.***
+
 ## ⌗ re r7619: THE TWO NAMED GAPS REGISTERED BEFORE ANY LEAN (`r7619+71.1`, `+71.2`)
 
 Both stages of `r7619` are pre-registered in `computations/formalisation/r7619_71_campaign61` and `62/PREDICTION.md`.
