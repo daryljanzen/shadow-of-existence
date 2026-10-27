@@ -3571,6 +3571,21 @@ The chat seat checked whether the floor computation has been done before. As far
 
 Entries: C. B. Collins and S. W. Hawking, "The rotation and distortion of the Universe", MNRAS 162 (1973) 307. D. Saadeh, S. M. Feeney, A. Pontzen, H. V. Peiris and J. D. McEwen, "How isotropic is the Universe?", Phys. Rev. Lett. 117 (2016) 131302. A. J. Zhou, S. Dodelson and D. Scolnic, "The isotropy of cosmic expansion in the early and late Universe", arXiv:2506.14878 (2025).
 
+### Done (69, r7623): the four journal additions and the CMB anisotropy bound, landed in `corpus/modern_parallax.tex`
+
+1. **Significance paragraph.** A new paragraph after the parallax paragraph, before "A real, global cosmic time ...". Your text, with the section pointers mapped to the corpus: `sec:sw` for timescape, and `sec:history` for the constant-mean-curvature foliation and the distinguished present, since the corpus has no `sec:simultaneity`.
+2. **The 3+1 literature.** Placed after "does not single out which of the foliations its formalism admits is the physical one", from "In the 3+1 form of the theory" through Einstein-aether, ending with your Horava-Lifshitz and Jacobson clauses. Your opening sentences on general covariance were not carried, because the corpus sentence just before already says it. The next sentence now reads "fills the theory's silence on which slicing is physical", because "that silence" had lost its referent across the inserted list.
+3. **The arguments the modal fallacy answers.** Placed after the modal-fallacy sentence and before "The lapse is the other part", including your closing sentence ("What the data add is that in our universe the premise is false ..."). One gloss was added in the Rietdijk-Putnam sentence: "the simultaneity of every inertial frame---its synchrony, in the terms used here---". The paragraph has just said that synchrony is what is relative.
+4. **Consequences.** Your sentence follows "a measured feature of the world" in the closing paragraph.
+5. **The CMB anisotropy bound (your addendum).** Your text follows the Rasanen 2009 sentence in the hypothesis paragraph.
+
+Fourteen entries were added in the corpus style: ADM 1962, Baumgarte & Shapiro 2010, Kuchar 1992, Isham 1993, Gomes-Gryb-Koslowski 2011, Horava 2009, Jacobson & Mattingly 2001, Rietdijk 1966, Putnam 1967, Stein 1968, Penrose 1989, Collins & Hawking 1973, Saadeh et al. 2016 and Zhou-Dodelson-Scolnic 2025.
+- The titles not given in your list are the published ones.
+- arXiv numbers are added where the papers have them.
+- Zhou et al.'s title is the current arXiv one, "The isotropy of cosmic expansion in the early and late Universe". Earlier listings show a version titled "... of Hubble expansion ...".
+
+P4 builds with no undefined references, and its six overfull boxes are the same six that predate r7617.
+
 ### Correction to the P4 order, on Daryl's direction: Ehlers-Geren-Sachs is a different kind of argument, and the preservation point goes in
 
 Daryl corrected how the chat seat framed Ehlers-Geren-Sachs (EGS), and the correction is right. The order presented EGS as "the classical route from observation to the posits", contrasted with the floor only by vantage. But EGS is not the same argument. It deduces the geometry from a symmetry assumed at every observer. It never reads the isotropy we actually observe as the record of the radiation's journey across the expansion since decoupling, and that journey is what the floor computes. Daryl also made a point the paper did not state. The last-scattering surface is not homogeneous: its 1e-5 Sachs-Wolfe and acoustic anisotropies arrive with their predicted spectrum intact. So the journey imposed z = 1089 the same in every direction to well within 1e-5, or it would have overwritten that pattern. The journal version now carries both points; please bring the corpus copy to match.
@@ -3583,6 +3598,15 @@ Daryl corrected how the chat seat framed Ehlers-Geren-Sachs (EGS), and the corre
 
 3. Section 2, l.108, immediately after "...as a \emph{direct measurement of uniform expansion}." insert:
 "The surface is not in fact homogeneous, and that sharpens the point: its Sachs--Wolfe and acoustic anisotropies, at the $10^{-5}$ level, arrive with their predicted spectrum intact. The journey that carried them imposed a redshift of 1089, and it imposed it the same in every direction to well within one part in $10^{5}$, for a directional variation in the journey at that level would have overwritten the primordial pattern."
+
+### Done (69, r7623): the EGS correction and the preservation point, landed in `corpus/modern_parallax.tex`
+
+All three replacements are in, word for word:
+1. The intro's EGS passage, from "The nearest argument in the literature is of a different kind" through "the record of the radiation's journey to us".
+2. "And it is made from what we observe: the radiation reaches us across the whole of the expansion since decoupling ..." in the claim paragraph.
+3. "The surface is not in fact homogeneous, and that sharpens the point ..." in Section 2, right after "a direct measurement of uniform expansion".
+
+Nothing else in the corpus or its receipts reads the replaced wording. P4 builds clean, and the overfull boxes are the same six.
 
 
 ## From the chat seat: timescape corrected again, the other way, with a computation (an order, on Daryl's direction; supersedes the timescape wording in the earlier P4 orders)
@@ -3662,3 +3686,15 @@ print(f"cells per ray {ts.size}; rms analytic {np.sqrt(var_an):.3e}, Monte Carlo
 assert abs(dev.std()/np.sqrt(var_an)-1) < 0.05
 print("ALL PASS")
 ```
+
+### Done (69, r7623): timescape corrected from the papers, with your computation as its receipt
+
+1. **sec:sw.** The timescape paragraph after "Either way ..." is replaced with your text, word for word.
+   - It cites the new receipt `P04_modern_parallax/P04_the_timescape_model_falls_inside_the_hypothesis_because_its_clock_postulate_does_not_keep_the_differential_expansion_out_of_the_redshift`.
+   - The receipt is your code, run from the repository. It adds asserts that pin the three rms figures the paper prints (2.4e-2, 4.2e-2, 5.4e-2), the 600-to-1300 ratio against 4.1e-5 (measured: 592 to 1325), gamma_w0 = 1.381 and H_w/H_v = 2/3. It ends ALL PASS, with Monte Carlo 4.210e-2 against analytic 4.177e-2 at 30 h^-1 Mpc.
+   - Its INDEX row sits on sec:sw beside the floor's row.
+2. **The significance paragraph's timescape clause** now reads "That includes the timescape model ..., which makes the expansion uniform in each region's own clock but not along the journey of the light (sec:sw); an inhomogeneous cosmology that survives keeps a uniform expansion." I had landed the paragraph with the earlier wording earlier this turn, before your correction arrived.
+3. **Bibliography.** Wiltshire 2009, Nazer & Wiltshire 2015 and Seifert et al. 2025 are added, with arXiv numbers 0909.0749, 1410.3470 and 2412.15143, each checked. I also checked your equation readings against Wiltshire 2009 directly: eq. 10 is the uniform quasilocal bare Hubble flow, 11 the volume-average rate, 14 gamma_w in h_r and f_v, 15 the backreaction Q in both forms, 38 the tracker redshift, and 39 the constant b. All are as you read them.
+4. **Instruments.** No live document repeats "the floor does not test timescape". `ONTOLOGY_FOUNDATION_INDEX.md` does not mention timescape, and the only other mentions are dated revision-log entries in `CORPUS_MAP.md` and retired notes, which record history. Nothing else in the corpus carries the old reading: P4 is the only paper that discusses timescape.
+
+P4 builds with no undefined references. The receipts appendix gains two overfull lines from the new receipt's long file name. That is the same appendix-formatting class you noted as pre-existing.
