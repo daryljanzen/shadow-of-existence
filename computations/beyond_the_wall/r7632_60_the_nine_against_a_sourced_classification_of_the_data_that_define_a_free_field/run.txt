@@ -1,0 +1,129 @@
+
+==================================================================================================
+  Ⓘ  THE VOIDING CONTROL, ASKED FIRST: IS THE CLASSIFICATION ARGUMENT ALREADY IN THE PAPERS?
+==================================================================================================
+   an OPEN-state wording 'the nine are not shown complete': no paper
+   an OPEN-state wording 'the list is not shown complete even with nine entries': ['CR_framework', 'CR_synthesis']
+   an OPEN-state wording 'the list is not shown complete': ['CR_framework', 'CR_synthesis']
+   ⇒ the state is carried by at least one wording, in: ['CR_framework', 'CR_synthesis']
+   a completeness phrase 'the nine are shown complete': no paper
+   a completeness phrase 'the nine cover': no paper
+   a completeness phrase 'the classification is complete': no paper
+   a completeness phrase 'every datum of a free field': no paper
+   a completeness phrase 'the list is exhaustive': ['janzen_circle_v3']
+   ADJUDICATING 'the list is exhaustive' in janzen_circle_v3: subject words present in its sentence -> NONE -- a different object
+     what it IS about: ...n, and the count it returns is the circle's own.} Writing $z=a+ib$, the cycloid gives $\operatorname{Im}r = -M\sin a\,\sinh b$: a product, so $\operatorname{Im}r=0$ if and only if $b=0$ or $a\in\pi\mathbb{Z}$, and $2\pi$-periodicity collapses the second alternative to $a=0$ and $a=\pi$. There are th...
+
+==================================================================================================
+  Ⓐ  THE CLAUSE AND THE SCOPING, BOTH LOCATED AT THIS HEAD
+==================================================================================================
+   the clause's prerequisite: 'over a list of freedoms shown complete' in ['CR_framework', 'CR_synthesis']
+   the clause's second half:  'every one the face could close is closed elsewhere' in ['CR_framework', 'CR_synthesis']
+   the SCOPE of the list:     'the standard catalogue of freedoms for a field on a fixed background' in ['CR_framework', 'CR_synthesis']
+   ⇒ under that located scope these are not freedoms OF the subject: ['the choice of field content', "the background's own period"]
+
+==================================================================================================
+  Ⓑ  THE NINTH ENTRY, LOCATED -- SO THIS MEASURES AGAINST THE CORPUS'S NINE
+==================================================================================================
+   'With it as a ninth entry' in ['CR_framework']
+   "the catalogue misses the field's own mass term" in ['CR_synthesis']
+
+==================================================================================================
+  Ⓒ  THE CLASSIFICATION, SOURCED FROM KEYS THE PAPERS ALREADY CITE
+==================================================================================================
+   the field content and its action's parameters  CITED: BunchDavies1978
+   the algebra of observables                     CITED: Shale1962
+   the state and its representation               CITED: Shale1962, NarnhoferPeterThirring1996
+   the global and topological data                CITED: LawsonMichelsohn1989
+   the renormalisation data                       CITED: BunchDavies1978
+   bibitem keys naming curved spacetime: NONE
+   bibitem titles naming 'quantum field theory in curved': NONE
+
+==================================================================================================
+  Ⓓ  THE ALGEBRA OF OBSERVABLES CARRIES NO PARAMETER: THE FORM IS CONSERVED, COMPUTED
+==================================================================================================
+   d/dt (u u'bar - ubar u')  before the equation: u(t)*Derivative(ubar(t), (t, 2)) - ubar(t)*Derivative(u(t), (t, 2))
+   on shell, for ANY real profile Omega(t):       0
+   CONTROL, with a first-derivative term added:    gamma_damp*(-u(t)*Derivative(ubar(t), t) + ubar(t)*Derivative(u(t), t))
+   ⇒ the algebra of observables carries 0 free parameters: it is fixed by the action.
+
+==================================================================================================
+  Ⓔ  THE REPRESENTATION FOLLOWS THE STATE, BY THE IMPLEMENTABILITY COUNT
+==================================================================================================
+   |beta|^2 = exp(2*a)/(1 - exp(2*a))  (no n in it: mode-INDEPENDENT)
+   |beta|^2 at a sample value of the parameter: 1/(-1 + exp(2/3)) = 1.055148 > 0
+   the degeneracy sum alone converges? False  ->  the product diverges: True
+   CONTROL, a mode-DEPENDENT coefficient e^-n: converges? True; value 0.237680
+
+==================================================================================================
+  Ⓕ  THE GLOBAL AND TOPOLOGICAL DATA: COUNTS RE-RUN AS CONTROLS
+==================================================================================================
+   H^1(S^4; GF(2)) = 0  ->  1 spin structure(s)
+   H^1(S^5; GF(2)) = 0  ->  1 spin structure(s)
+   H^1(RP^5; GF(2)) = 1  ->  2 spin structure(s)
+   ⇒ the global and topological data map onto entries 6 and 7, and the background's own period
+     is NOT among them: under Ⓐ's located scope the background is FIXED, so its period is a
+     datum OF THE BACKGROUND and not a freedom of the field on it.
+
+==================================================================================================
+  Ⓖ  THE RENORMALISATION DATA COLLAPSE ON THIS BACKGROUND, COUNTED FROM THE CURVATURE
+==================================================================================================
+   d = 4:  R = 12*K;  R^2 = 144*K**2;  Ric^2 = 36*K**2;  Riem^2 = 24*K**2
+   d = 5:  R = 20*K;  R^2 = 400*K**2;  Ric^2 = 80*K**2;  Riem^2 = 40*K**2
+   the three invariants in d = 4, as ratios to the first: [1, 1/4, 1/6]
+   rank of the three invariants' row, per dimension (d = 4, 5): [1, 1]
+
+==================================================================================================
+  Ⓗ  THE MAPPING: EVERY ITEM OF THE CLASSIFICATION AGAINST THE NINE
+==================================================================================================
+   the field content and its action's parameters  INSIDE (entry 9)           the action's parameters ARE the mass term, collapsed to one combinatio
+   the algebra of observables                     INSIDE (no freedom)        fixed by the action: the symplectic form is conserved identically, com
+   the state and its representation               INSIDE (entries 1 and 5)   one datum read twice: the mixing coefficient is not Hilbert-Schmidt, s
+   the global and topological data                INSIDE (entries 6 and 7)   one spin structure and no flat sectors, counted; the background's own 
+   the renormalisation data                       INSIDE (entries 8 and 4)   the counterterm basis is one-dimensional on this background, counted i
+
+==================================================================================================
+  THE VERDICT
+==================================================================================================
+
+==================================================================================================
+  CHECKS
+==================================================================================================
+   [ok ] Ⓘ the papers say in so many words that the list is NOT SHOWN COMPLETE -- located verbatim in ['CR_framework', 'CR_synthesis'] on 2 of the 3 enumerated wordings -- so this order's question is the corpus's own open question and not this line's framing. ⌗ A DISJUNCTION and not a pin, because the pin this arm first carried went red when the base reworded the same state
+   [ok ] Ⓘ DOES NOT VOID: of the 5 completeness phrases, 1 occur at all and every occurrence is ADJUDICATED to a different object -- one paper's exhaustiveness of its own three continuations, read here rather than matched -- so none is this catalogue's completeness and there is something to supply. ⌗ Widening the phrase to make the hit go away would have been the wrong repair
+   [ok ] Ⓐ the clause is located at THIS head and unchanged: a list SHOWN COMPLETE, and every freedom the face could close closed elsewhere -- read off the papers, not carried from the order
+   [ok ] Ⓐ and the SCOPE is located: the list is of freedoms FOR A FIELD on a FIXED background, so its subject is a GIVEN field on a GIVEN background and not the choice of either
+   [ok ] Ⓑ the ninth entry is IN THE PAPERS, located verbatim in two of them, so the list measured against here is the corpus's nine and not the eight plus a proposal of this line's
+   [ok ] Ⓑ the list carries 9 entries
+   [ok ] Ⓒ all five of the order's classification items are accounted for, 5 sourced from keys the papers already carry and 0 unsourced
+   [ok ] Ⓒ AS PREDICTED OR BETTER: 5 of 5 rest on a source the corpus already cites, so the classification is the field's and not this seat's -- predicted at least four
+   [ok ] Ⓒ and the extension datum's standard sources are cited too -- the self-adjointness text and the limit-point/limit-circle original -- so entry 2's domain is sourced as well
+   [ok ] Ⓒ THE ONE GAP, MEASURED: no single standard monograph on quantum field theory in curved spacetime is cited anywhere in the corpus -- searched over every bibitem key and the text of every bibitem in all eighteen papers. The classification here is assembled from five cited sources instead, which is weaker than resting it on one, and it is ROUTED not patched
+   [ok ] Ⓒ seed for that absence: the de Sitter renormalisation paper IS cited, so the search finds what is there and the zero above is a measured zero rather than a broken reader
+   [ok ] Ⓓ the symplectic form is CONSERVED identically, for any real profile and so on this background among others -- computed from the equation and not quoted
+   [ok ] Ⓓ CONTROL: the same computation returns a NON-zero divergence once a first-derivative term is added, so the conservation above is a property of the equation and not of the algebra
+   [ok ] Ⓓ and the control's failure is exactly proportional to the form itself, which is what says the zero above comes from the ABSENCE of that term rather than from a cancellation
+   [ok ] Ⓔ the mixing coefficient carries NO mode dependence, which is what invariance buys and what makes the sum below a sum of a constant over an unbounded set
+   [ok ] Ⓔ the sum DIVERGES, so the coefficient is NOT Hilbert-Schmidt: the transformation is not unitarily implementable and the members are unitarily INEQUIVALENT
+   [ok ] Ⓔ CONTROL: a decaying coefficient gives a FINITE sum, so the criterion separates the two cases and the divergence above is a measurement rather than an artefact of the sum
+   [ok ] Ⓔ ⇒ and the corpus's own sentence -- that the representation FOLLOWS the state -- is located verbatim, so entries 1 and 5 are one datum read twice, now measured rather than asserted
+   [ok ] Ⓕ CONTROL REPRODUCES: S^4 carries 1 spin structure(s), counted over GF(2) with the projective space as the seed that separates the counter from one returning a fixed answer
+   [ok ] Ⓕ CONTROL REPRODUCES: S^5 carries 1 spin structure(s), counted over GF(2) with the projective space as the seed that separates the counter from one returning a fixed answer
+   [ok ] Ⓕ CONTROL REPRODUCES: RP^5 carries 2 spin structure(s), counted over GF(2) with the projective space as the seed that separates the counter from one returning a fixed answer
+   [ok ] Ⓕ and the flat-sector statement is located verbatim, so entry 7 has no object on this face
+   [ok ] Ⓖ in d = 4 the scalar curvature is the maximally symmetric value, contracted here from the Riemann tensor rather than quoted
+   [ok ] Ⓖ in d = 5 the scalar curvature is the maximally symmetric value, contracted here from the Riemann tensor rather than quoted
+   [ok ] Ⓖ COLLAPSE, counted: at fixed dimension the three quadratic invariants stand in FIXED numerical ratios, so they span ONE direction and not three on this background
+   [ok ] Ⓖ the rank of the row they span is ONE, so the counterterm basis the stress tensor's ambiguities live in is one-dimensional here: entry 8 and entry 4 are the same datum
+   [ok ] Ⓖ and it is one-dimensional in EACH dimension examined, not an artefact of one of them
+   [ok ] Ⓖ ⌗ while ACROSS the two dimensions the rank is 2, because the fixed ratios are different numbers in each -- which is a fact about the invariants and not a defect, and is stated here so the per-dimension rank above is not read as a claim about dimension-independence
+   [ok ] Ⓗ every one of the five classification items maps INSIDE the nine; 0 lie outside, so nothing of the classification is left unaccounted for
+   [ok ] Ⓗ ⚠ AND THE QUALIFICATION, REGISTERED IN ADVANCE AND LOAD-BEARING: exactly TWO things are excluded by Ⓐ's LOCATED SCOPE rather than by a structural exhaustion -- the choice of field content, and the background's own period. The fire below rests on that scope
+   [ok ] Ⓗ and the one place the papers themselves say the nine may fail -- the coupled tower's boundary condition -- is located, and is NOT this line's: the order gave it to the seat that holds that paper, and the coupled tower is not a free field
+   [ok ] Ⓗ THE REACHABLE NEGATIVE DID NOT ARRIVE: no item of the classification lies outside the nine and is closed by the face alone, so the quantum half's test is met nowhere on the free field
+   [ok ] VERDICT: the nine COVER the order's classification, every item mapped inside and each by a measurement or a located sentence rather than by assertion
+   [ok ] VERDICT: and the clause's second half is the corpus's own, located verbatim -- no freedom on the list is one the face alone removes -- so with coverage shown the clause FIRES for the FREE-FIELD part of the half
+   [ok ] VERDICT: ⚠ QUALIFIED TWICE, and both qualifications are this revision's own findings rather than hedges: the coverage rests on a LOCATED SCOPE that excludes two things, and the classification rests on five cited sources because the corpus cites no single monograph on the subject. Neither is a reason to withhold the fire; both belong in the row
+   [ok ] VERDICT: the coupled tower's edge is untouched and stays where the order put it, so what fires here is the free-field part and not the half entire
+
+   36 checks, 0 failure(s).

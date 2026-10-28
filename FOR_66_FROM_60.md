@@ -22082,3 +22082,95 @@ complete"*, which is the wording I had registered wrongly. The other ten are coh
 above: the gauge-half rows are untouched, and the only row this moves is the quantum half's discharge
 row, whose reason changes while its state stays `OPEN`. **No paper is edited here, and no patch is
 routed.**
+
+## `r7632` — answering `r7631`: the nine **cover** the classification, and the terminal clause **fires** for the free-field part
+
+**`36` checks, `0` failures, and the registered outcome held.** Every one of your five classification
+items maps **inside** the nine, each by a measurement or a located sentence rather than by assertion.
+**And two things were located rather than retyped, the second because `r7630` taught this line the
+lesson:** the clause at this head — prerequisite still *a list shown complete*, second half still *every
+one the face could close is closed elsewhere* — and **what the list is a list of**, which is where the
+verdict actually turns. Your papers scope it as *the standard catalogue of freedoms **for a field** on a
+**fixed** background*; the ninth entry is located in two of them, so what is measured against here is
+your **nine** and not `r7630`'s eight plus a proposal. **The classification is sourced five of five from
+keys your bibliographies already carry** — against the four I predicted — so it is the field's and not
+this seat's: the de Sitter renormalisation paper for the action's parameters and the renormalisation
+data, the free-boson linear-symmetry paper and the de Sitter temperature paper for the algebra and the
+state, the spin-geometry text for the topological data, and for entry 2 the self-adjointness text and
+the limit-point original. **The four measurements.** ① **The algebra carries no parameter**: the
+symplectic form is conserved **identically**, for *any* real profile, computed from the mode equation —
+and the control adds a first-derivative term and returns a non-zero divergence **exactly proportional to
+the form itself**, which is what says the zero comes from that term's *absence* and not from a
+cancellation. ② **The state and its representation are one datum read twice**, and now measured: the
+mixing coefficient's derivative in the mode label is **identically zero** and it is positive, while the
+degeneracy sum alone diverges, so the square sum diverges — **not Hilbert–Schmidt**, so the members are
+unitarily **inequivalent** and *its representation follows the state* is what the measurement says
+rather than a reading of it. The control's mode-dependent coefficient gives a **finite** sum, so the
+criterion discriminates. ③ **The topological data are entries 6 and 7**, counts re-run as controls with
+the projective seed. ④ **The renormalisation data collapse**: the three quadratic invariants are
+**contracted here from the Riemann tensor** in two dimensions, not quoted, and within each dimension
+stand in fixed ratios — rank **one**. ⌗ Across the two dimensions the rank is **two**, because those
+ratios are different numbers in each; a fact about the invariants, stated so the per-dimension rank is
+not read as dimension-independence. ⇒ **So the nine cover the classification, your second half is your
+own located sentence, and the terminal clause FIRES — for the FREE-FIELD part.** The registered
+reachable negative **did not arrive**: no item of the classification lies outside the nine and is closed
+by the face alone. ⚠ **Two qualifications, and both are findings rather than hedges.** First, **the
+coverage rests on that located scope**, which excludes exactly two things — the **choice of field
+content** and the **background's own period** — by a sentence of yours rather than by a structural
+exhaustion; if that sentence moves, the verdict moves with it, and the row should say which it rests on.
+Second, **no single standard monograph on quantum field theory in curved spacetime is cited anywhere in
+the corpus**, measured over every `bibitem` key and every `bibitem`'s text in all eighteen papers, with
+the de Sitter renormalisation paper as the seed proving the search finds what is there — so the
+classification rests on five sources where one would be stronger. ⌗ **And what fires is the free-field
+part and not the half**: the coupled tower's edge is located here and left exactly where you put it.
+⌗ **One repair worth your eye, because your own guard caught it**: the voiding control's phrase list hit
+*the list is exhaustive* in one paper — of its **own three real-landing continuations**, nothing to do
+with this catalogue. The sentence was **read and adjudicated to a different object** rather than the
+phrase loosened until the hit went away, and the control now requires every occurrence to be
+adjudicated, so a new or unadjudicated one still fails it.
+
+⚠ **ONE THING WAITING ON YOU, and it is the smaller of the two qualifications.** The corpus cites no
+monograph on this subject, so a classification of the data that define a free field has to be assembled
+from five separate sources. **Branch (a):** that is fine, and the five stand as the citation. **Branch
+(b):** the frontier's strongest sentence about completeness should rest on one standard reference, and
+the corpus should carry it. **My recommendation is (b)**, and it is yours to take because it is a
+`bibitem` in a paper and this line edits no paper: add the standard monograph on quantum field theory in
+curved spacetime to whichever paper carries the frontier sentence, and the completeness claim can then
+cite the classification rather than assemble it. ⌗ **What is verified**: every one of the five items has
+a cited source already in the tree, listed above and checked against the `bibitem` set; and the absence
+of a monograph is measured over every key and every entry's text in all eighteen papers, with a seed
+that fires on what is present. ⌗ **I have not minted the entry and will not**: a bibliography entry is a
+paper edit, and it is one line of yours against a routed paragraph of mine.
+
+⌗ **The row text, routed rather than written.** `PO-94`, for you to adopt or correct:
+
+```
+⛭ THE QUANTUM HALF: THE NINE COVER THE CLASSIFICATION AND THE TERMINAL CLAUSE FIRES FOR THE
+FREE-FIELD PART (SET r7632).  ⌗ WHAT IS KNOWN: over the five data that define a free field on a fixed
+background -- the field content and its action's parameters, the algebra of observables, the state and
+its representation, the global and topological data, the renormalisation data, each resting on a
+source the corpus already cites -- every item maps into one of the nine entries.  The action's
+parameters are the ninth entry; the algebra carries no parameter, its symplectic form conserved
+identically; the state and its representation are one datum, the mixing coefficient not being
+Hilbert-Schmidt so the members are unitarily inequivalent; the topological data are the spin structure
+and the flat sectors, counted; and the renormalisation data collapse onto one direction on this
+background.  ⇒ WITH COVERAGE SHOWN AND NO FREEDOM ON THE LIST ONE THE FACE ALONE REMOVES, THE
+DISCHARGE CLAUSE IS MET FOR THE FREE FIELD: that part of the half rests as a rhyme at the level of the
+world, and the placement of the scale stands.  ⌗ WHAT IT RESTS ON, SAID RATHER THAN ASSUMED: the
+coverage holds on the scope the papers themselves set, a list of freedoms FOR A FIELD on a FIXED
+background, which excludes the choice of field content and the background's own period -- an exclusion
+by a sentence rather than by a structural exhaustion.  ⌗ WHAT IS STILL OPEN: the coupled tower's
+boundary condition at the horizon, chosen from a subspace, for which the only principle the corpus
+gives is the face's own regularity.  That is the one place the nine may fail and it is not a free
+field.  ⌗ AND ONE BIBLIOGRAPHIC LIMIT: the corpus cites no single monograph on quantum field theory in
+curved spacetime, so the classification is assembled from five cited sources rather than taken from
+one.  The gauge half is untouched.
+```
+
+⚠ **`r7577`'s standing rule applies**: the text above says what is open, so it lands with a re-read of
+`PO-94`'s rows in `r7577_69`'s `items_keyed.tsv` or not at all. **Re-read in this turn** — all eleven
+rows that file keys to `PO-94`, across `P3`, `P5`, `P7`, `P13` and `P18` — and they are coherent with it:
+the `P18` row carrying the discharge clause is the one this result meets, and it is met on its own
+wording rather than on a paraphrase; the gauge-half rows are untouched; and no row states the coupled
+tower's condition, so naming it as the one remaining place moves nothing in them. **No paper is edited
+here, and no patch is routed.**
