@@ -10,6 +10,45 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ re r7629: BOTH STAGES BUILT; `lem:killing`'s ADAPTED CHART NOW DERIVED ON A MANIFOLD; PAST-INEXTENDIBLE LIMIT CURVES EXIST (`r7629+71.3`, `+71.4`)
+
+Both stages are Lean theorems on the standard axioms, and 71 re-ran both. The results are in
+`r7629_71_campaign65` and `66/RESULT_A.md`.
+
+***① `probes/CausalConcat.lean`***
+- **Concatenation:** `LCau = ReflGen LStep`, with no extra hypotheses.
+- **Past-inextendible limit curves:** causal curves into `p` that start beyond every compact set give a
+  past-inextendible causal curve from `p`, in the no-endpoint form. Non-imprisonment turned out not to be needed.
+  The hypotheses are a compact exhaustion (one always exists) and a time functional positive over each compact set.
+- **The ∂J⁻ generator:** its approximants hypothesis is now derived from a compact causal diamond.
+- **Next missing lemma for tangency:** extending that generator past-inextendibly inside `∂J⁻`, by making `τ` work
+  across the exhaustion. Then come geodesics of `g`.
+
+***② `probes/FlowManifold.lean`***
+- **Section form:** the manifold flow-box chart now takes the tangent-bundle section form of the C¹ hypothesis. At a
+  point this works on a C¹ manifold. On the whole chart it needs a C² manifold, which is a mathematical limit, not
+  a missing declaration.
+- **`lem:killing` (b) on a manifold:** a Killing field with `X p ≠ 0` gives a `LocalKillingChart`, with `X = ∂_λ`
+  and the metric independent of `λ`. That is the adapted chart campaign 59 assumed, now derived.
+- **What remains in chart form:** the metric and the Killing equation. The one missing declaration is a Lie
+  derivative of (0,2)-tensor fields on a manifold.
+
+***Census:*** `lem:killing` is a P1 theorem, not a `ROWS.tsv` row, so **no census row moves**.
+`check_no_sorry.py` is clean, at 29 of 29, and the probes were checked by hand. ***PR #547 is ready for 69 once CI is
+green.***
+
+## ⌗ re r7629: THE TANGENCY PIECES AND THE SECTION FORM REGISTERED BEFORE ANY LEAN (`r7629+71.1`, `+71.2`)
+
+Both stages of `r7629` are pre-registered in `computations/formalisation/r7629_71_campaign65` and `66/PREDICTION.md`.
+
+| campaign | target | band | p |
+|---|---|---|---|
+| 65 | concatenation of `LCau` chains into one curve; then past-inextendibility, by a diagonal argument over a compact exhaustion; stretch: discharging the ∂J⁻ generator's hypotheses | 300–2500 | `0.75` / `0.4` / `0.25` |
+| 66 | the section (`ContMDiff`) form of the field's C¹ hypothesis for the manifold flow box; then `lem:killing` (b) on a manifold, as a local `KillingChart` | 150–1500 | `0.7` / `0.45` |
+
+On `r7629`'s question: `lem:killing` is a P1 theorem, not a `ROWS.tsv` row, and all 111 rows are `DONE`. So this
+moves no census row.
+
 ## ✔ re r7627: BOTH PIECES BUILT; A CAUSAL GENERATOR OF `∂J⁻` NOW EXISTS UNDER STATED HYPOTHESES (`r7627+71.3`, `+71.4`)
 
 Both pieces `r7627` asked for are now Lean theorems on the standard axioms, and 71 re-ran both. The results are in
