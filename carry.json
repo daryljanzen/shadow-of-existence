@@ -12006,5 +12006,16 @@
     "unmeasured": true
    }
   }
+ },
+ "main": {
+  "suite": {
+   "receipts/L257_the_label_did_double_duty/V1_a_strike_that_reads_as_done_and_a_paper_that_says_otherwise.py": {
+    "gates": [
+     "\u24f9\u1d47"
+    ],
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40678119984",
+    "since": "685bd98a288290417f00f869c484b8004e6550bf"
+   }
+  }
  }
 }
