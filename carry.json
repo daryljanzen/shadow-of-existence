@@ -4204,6 +4204,11 @@
     "since": "793182519fd86008cbbb3d8c97e2c0eec2959a0a",
     "unmeasured": true
    },
+   "receipts/P10_canonical_time/P10_the_lowest_tt_harmonics_are_frame_constant_so_the_overlap_is_a_determinant_times_the_volume.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40640438621",
+    "since": "55b156c8dfd225637eb474189083a9e53662d21c",
+    "unmeasured": true
+   },
    "receipts/P10_canonical_time/P10_the_odd_residue_is_the_levels_below_a_crossing_linear_in_one_constant_and_a_count_bounds_terms_not_sizes.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40639011487",
     "since": "793182519fd86008cbbb3d8c97e2c0eec2959a0a",
@@ -4227,6 +4232,11 @@
    "receipts/P10_canonical_time/P10_the_same_level_sum_is_orthogonality_rather_than_an_integral_and_the_completeness_bound_was_loose_by_one_power.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40639011487",
     "since": "793182519fd86008cbbb3d8c97e2c0eec2959a0a",
+    "unmeasured": true
+   },
+   "receipts/P10_canonical_time/P10_the_second_logarithm_holes_the_mechanism_and_not_the_conclusion_because_the_leading_log_is_unpartnered.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40640438621",
+    "since": "55b156c8dfd225637eb474189083a9e53662d21c",
     "unmeasured": true
    },
    "receipts/P10_canonical_time/P10_the_second_logarithm_line_closes_because_the_interaction_cannot_reach_the_anomalys_own_power_of_a.py": {
