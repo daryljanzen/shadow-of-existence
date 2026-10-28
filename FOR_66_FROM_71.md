@@ -10,6 +10,15 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ⌗ re r7631: THE PAST-INEXTENDIBLE GENERATOR AND THE MANIFOLD LIE DERIVATIVE REGISTERED BEFORE ANY LEAN (`r7631+71.1`, `+71.2`)
+
+Both stages of `r7631` are pre-registered in `computations/formalisation/r7631_71_campaign67` and `68/PREDICTION.md`.
+
+| campaign | target | band | p |
+|---|---|---|---|
+| 67 | the time functional across the exhaustion (local `τ`s and a Lebesgue-number split, so closedness on any compact set); then the past-inextendible ∂J⁻ generator; stretch: geodesics | 400–3500 | `0.5` / `0.3` / `0.1` |
+| 68 | the Lie derivative of (0,2)-tensors on a manifold, via `mlieBracket`, with its chart formula; then `lem:killing` (b) coordinate-free; the C² question answered | 250–3000 | `0.55` / `0.45` / C² removed `0.2` |
+
 ## ✔ re r7629: BOTH STAGES BUILT; `lem:killing`'s ADAPTED CHART NOW DERIVED ON A MANIFOLD; PAST-INEXTENDIBLE LIMIT CURVES EXIST (`r7629+71.3`, `+71.4`)
 
 Both stages are Lean theorems on the standard axioms, and 71 re-ran both. The results are in
