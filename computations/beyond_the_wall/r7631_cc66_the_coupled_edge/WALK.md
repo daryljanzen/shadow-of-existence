@@ -133,3 +133,142 @@ three builds and one published false claim.*
 - It does **not** claim the selector is Euclidean-free *because* it is a form condition and the form
   looks Lorentzian. The claim is narrower and is the one the order asked for: form-finiteness makes no
   appeal to Euclidean smoothness, a horizon period, or a temperature, and it selects the same member.
+
+---
+
+# `r7631+cc66` ② — `PO-89`'s cutoff, walked
+
+What `PREDICTION_part2.md` registered at `82b7d4e2e` before any search of the corpus was run, what the
+search found, and the one crash that turned out to be the most informative thing in the row.
+
+## The result, in one paragraph
+
+**The lowest energy at which the corpus uses the interacting tower is `ω₂ = √8/a ≈ 4.07e−33` eV — about
+`33.3` orders of magnitude below `PO-89`'s `8.345` eV threshold. So the order's firing condition is
+MISSED and `PO-89` does not close as a stated limit by this route.** That is what the registration
+expected. ⇒ **But the search turned up something sharper than the expectation, and it changes what the
+answer means: the construction's regulator is a SPECTRAL ZETA, not a cutoff.** Its stated values are
+pure numbers (`ζ(0) = 10` exactly, the logarithmic coefficient `15/4`, the interacting sum returning the
+rational `−4/3`), and the scale factor factors out of the sum identically. **So the construction has no
+cutoff parameter for the exit to be about.** The exit is not merely unsatisfied — *it is not addressable
+from inside the construction as it stands.*
+
+## The registered test, and why its asymmetry had to be written down first
+
+| what the search finds | what follows |
+|---|---|
+| the **lowest** use lies **above** `8.345` eV | every use is above it → the cutoff is certainly above it → **the exit fires** |
+| the lowest use lies **below** `8.345` eV | ⚠ **nothing follows about the cutoff either way** — a low-energy use does not cap the cutoff, it merely fails to establish a floor for it |
+
+⚠ *"The corpus uses the tower below `8.345` eV"* is **not** *"the cutoff lies below `8.345` eV"*. A
+construction can use a tower at the Hubble scale and still carry a Planck-scale cutoff. Registering that
+before searching is what kept the low answer from being reported as evidence against the exit — which
+would have been the flattering direction for a row that had just closed one exit in part ①.
+
+## What the corpus actually says, located
+
+| statement | where |
+|---|---|
+| harmonics with Laplace eigenvalues `n(n+2)−2`, `n ≥ 2` | `canonical_time` l.439 |
+| `μ_n² = n(n+2)`, `n ≥ 2` | l.389 |
+| equivalently `μ² = m²−1` on labels `m = n+1 ≥ 3`, degeneracy `d = 2(m²−4)` | l.488 |
+| the **physical** frequency is `ω_n = μ_n/a` | l.373 |
+| **the regulator is "the spectral sum over the tower's own frequencies"**, settled **"by exhibiting the continuation rather than by an estimate"** | l.1081–1082 |
+| the continuation returns the exact rational `−4/3`; its simple pole sits at label `1`, **outside** a tower beginning at `3` | l.1084, l.1090 |
+| `ζ(0) = 10` **exactly**, "a functional of the degeneracy alone"; the logarithmic coefficient `15/4`, "which **a hard cutoff carrying no zeta function** reproduces" | l.489–493 |
+| **"the scale factor does not enter it"** — `a` factors out of the sum identically | l.493 |
+| the open frontier is the **completion** of the ultraviolet definition of the mode sums | l.144, l.461 |
+
+⌗ *The decisive line is l.493's parenthesis. A hard cutoff appears in the corpus only as a **foil** — the
+thing that, "carrying no zeta function", would reproduce one of these coefficients. The construction's
+own regulator is the zeta. So `Λ` is not a parameter of it.*
+
+## Both values reproduced, so this is a reading of what the regulator computes
+
+Not quoted — derived from the spectrum:
+
+- `d·μ = 2(m²−4)√(m²−1) = 2m³ − 9m + (15/4)m⁻¹ + (7/8)m⁻³ + (27/64)m⁻⁵ + …` ⇒ the `1/m` coefficient is
+  **exactly `15/4`**, the corpus's logarithmic coefficient.
+- `ζ(0) = 2[ζ_H(−2,3) − 4ζ_H(0,3)] = 2[(−5) − 4(−5/2)] = ` **`10` exactly**, the corpus's value, and a
+  functional of the degeneracy alone exactly as it says.
+
+⌗ *Both are shown **failable** by perturbing the spectrum they come from: with degeneracy `2(m²−5)`
+instead of `2(m²−4)` the coefficient becomes `19/4` and the zeta becomes `15`. Neither is an identity
+that would hold for any tower.*
+
+## ⚠ The crash that was the best measurement in the row
+
+Control 2 asked the opposite direction: is there *any* usage above the threshold? I wrote it as a loop,
+`for n in range(N_MIN, 10**7)`, and it returned `None` — then crashed the row on `None + 2`.
+
+**The crash was the useful part.** The label needed is `n = −1 + √(1 + (Λ*a)²) ≈ 5.795e33`. A search
+bounded at `10⁷` was not a near miss; it was **the wrong kind of instrument** by twenty-six orders of
+magnitude. Solved in closed form instead — and the number is worth having: **the construction's own tower
+runs across ~34 decades of label before any single mode's energy reaches `PO-89`'s figure.**
+
+⌗ *A loop that cannot reach its target returns nothing and says nothing about why. This is the third
+instrument fault of this revision and the third of a different kind — part ① had a blind mesh and a
+guessed Bessel bracket; this one had a search bounded below its answer. **All three were caught by the
+instrument's own output being impossible rather than merely wrong**, which is the only reason they were
+caught at all.*
+
+## And that unbounded label range does *not* fire the exit
+
+This is the reading most easily got wrong in the row's favour, so it is stated flatly: **a
+zeta-regularised sum whose terms run to infinite label is not a claim that the theory is valid up to
+infinite energy.** The analytic continuation is precisely the device that avoids committing to a cutoff,
+and the corpus calls it a continuation and **not a truncation** (l.1081, l.1088). A summand evaluated at
+a label is not an effective theory asserted at an energy.
+
+⇒ **So neither direction establishes a cutoff.** The lowest use is 33 orders below the threshold; the
+unbounded label range belongs to a continuation that introduces no cutoff at all.
+
+## What would bound the cutoff — the three registered candidates, answered
+
+| # | candidate | verdict |
+|---|---|---|
+| ⓵ | **the regulator's own scale** | **there is none.** A spectral continuation has no cutoff; its two stated values are the pure numbers above and its result is a rational |
+| ⓶ | **the counterterm scales** | a counterterm's **coefficient** is not a scale, and the corpus's are all pure numbers — the quartic's leading constant from the propagating-component count, the logarithmic `15/4`, a Weyl-squared coefficient twice a real scalar's. ⇒ **They bound nothing by themselves, exactly as registered** |
+| ⓷ | **the single-scale ledger** | it makes the constants unit gauges over **one** scale, but `r7627` established the construction fixes **no absolute scale**. ⇒ So it gives a **relation** among scales, not a value. **It permits a cutoff; it does not bound it** |
+
+⇒ **Nothing the construction currently contains bounds the cutoff — and the reason is sharper than
+`r7627`'s "no absolute scale": the cutoff is not an unmeasured parameter of the construction, it is not a
+parameter of it at all.** Its ultraviolet definition is a continuation, and a continuation has no `Λ` to
+be large or small.
+
+**What *would* bound it, stated as the corpus's own open item rather than invented:** the corpus names
+*"the **completion** of the ultraviolet definition of the mode sums"* as its open frontier (l.144, l.461).
+**That is where a cutoff would enter if it entered anywhere.** A completion that regulates by
+**truncation** rather than by **continuation** would carry a `Λ`, and only then is `PO-89`'s exit
+decidable. Until then there is nothing to compare to `8.345` eV.
+
+⌗ **I do not name the Planck scale.** The construction does not supply it either, and reaching for it
+would be inventing the datum the exit needs — which the registration named as the error to avoid here.
+
+## One more fault, caught by a gate rather than by me
+
+The receipt's `Ⓗ` group first ran **five `literal in canonical_time.tex` presence tests** to locate the
+corpus's statements. `check_quote_pins` went from its baseline `2744` keys to **`2749`** — five new pins
+minted on another seat's sentences, which this seat does not adjudicate. **That is the `r7627` fault
+exactly**, and it is the hollow kind twice over: asserting that a paper *contains a string* is not
+asserting that the construction *does* anything.
+
+⇒ Repaired the way `r7627` was: the presence tests are **gone**, the located quotations stay in
+`cutoff.py`'s output and in this walk — where they are evidence for a reader rather than a minted pin —
+and what the receipt gates is the **substance**, which `Ⓒ` and `Ⓓ` already measure. Back to `2744`.
+
+⌗ *Also caught in passing: `Ⓘ②` was first written ending `nsimplify(_log_coeff + Rational(1,1000)) !=
+Rational(15,4)` — constant arithmetic that holds for every operator in the world, the same hollow shape
+as part ①'s first `Ⓘ②`. **Twice in one revision.** It now perturbs the spectrum instead.*
+
+## What this row does *not* claim
+
+- It does **not** claim the cutoff is low. It claims there is no cutoff in the construction to be high or
+  low, and that the exit's condition is therefore not addressable from inside it.
+- It does **not** claim the tower is only ever used at low energy — the sum's terms reach far above the
+  threshold, at a label of order `10³⁴`, and the row says so.
+- It does **not** supply a value for `a`. `1/a` is a declared cosmological input of order `H₀`, varied
+  across a decade, and the conclusion is reported in orders of magnitude because `r7627` established the
+  construction fixes no absolute scale.
+- It does **not** rule on whether the open frontier *should* be completed by truncation. That is the
+  coordinating seat's call; this row only says that is where a `Λ` would have to come from.

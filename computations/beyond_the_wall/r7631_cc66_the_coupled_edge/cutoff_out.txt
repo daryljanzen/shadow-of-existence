@@ -1,0 +1,159 @@
+
+================================================================================================
+r7631+cc66 (2) -- THE LOWEST ENERGY AT WHICH THE CORPUS USES THE TOWER OR ITS REGULATOR
+================================================================================================
+
+------------------------------------------------------------------------------------------------
+  CONTROL (4) -- PO-89's threshold CARRIED from r7629 and recomputed by its own function
+------------------------------------------------------------------------------------------------
+    the rate H0              Lambda* =    7.871e-33 eV 
+    the acoustic scale       Lambda* =        8.345 eV   <- BINDS
+    the tilt n_s             Lambda* =        2.142 eV 
+    the tensor amplitude     Lambda* =       0.7944 eV 
+    ⇒ the binding threshold is 8.345 eV, set by the acoustic scale -- PO-89's live clause is
+      "TERMINATES IF the cutoff is shown to lie above" this figure.
+
+------------------------------------------------------------------------------------------------
+  CONTROL (1) -- THE TOWER'S SPECTRUM REPRODUCED from the corpus, two ways, so the row
+  is working the corpus's tower and not one of its own
+------------------------------------------------------------------------------------------------
+    n      m=n+1  mu^2 = n(n+2)  mu^2 = m^2-1   d=2(m^2-4)  
+    2      3      8              8              10          
+    3      4      15             15             24          
+    4      5      24             24             42          
+    5      6      35             35             64          
+    6      7      48             48             90          
+    ⇒ the two spellings of the spectrum agree on every label: True
+    ⇒ and the tower begins at m = 3, which is why the regulator's simple pole at the
+      label 1 sits OUTSIDE it (canonical_time l.1084).
+
+------------------------------------------------------------------------------------------------
+  THE REGULATOR -- IS IT A CUTOFF?  Its two stated values recomputed, because what the
+  regulator IS decides whether a cutoff energy exists to be found at all
+------------------------------------------------------------------------------------------------
+    ⓵ the zero-point summand's large-label expansion:
+        d*mu = 2*m**3 - 9*m + 15/(4*m) + 7/(8*m**3) + 27/(64*m**5)
+      ⇒ its 1/m coefficient is 15/4; the corpus states 15/4 (l.492): agree = True
+    ⓶ the spectral zeta at the origin, the frequency entering as unity (l.490):
+        zeta(0) = 2[ zeta_H(-2,3) - 4 zeta_H(0,3) ] = 10
+      ⇒ the corpus states 10 EXACTLY (l.489): agree = True
+
+    ⇒ ** BOTH VALUES ARE PURE NUMBERS AND NEITHER CARRIES AN ENERGY. **  The regulator is
+      the spectral sum over the tower's own frequencies, evaluated by ANALYTIC
+      CONTINUATION -- "by exhibiting the continuation rather than by an estimate"
+      (l.1081) -- and the corpus names a hard cutoff only as a foil, as the thing that
+      "carrying no zeta function" would reproduce one of these coefficients (l.493).
+    ⇒ ** SO THE CONSTRUCTION'S REGULATOR HAS NO CUTOFF PARAMETER. **  There is no energy
+      at which it is "switched on": its variable is the spectral label, not an energy.
+
+------------------------------------------------------------------------------------------------
+  AND THE SHARPER FACT -- the regularised sum carries NO ENERGY SCALE AT ALL
+------------------------------------------------------------------------------------------------
+    The frequencies are omega_n = mu_n/a (l.373), so every term scales as 1/a and `a`
+    factors out of the sum identically (l.493, receipt
+    P10_the_scale_factor_factors_out_of_the_free_tower).  Measured rather than quoted --
+    the logarithmic coefficient recomputed at three values of 1/a:
+
+      1/a (eV)         sum of d*mu over m=3..40 1/m coefficient
+      1e-33            1.33744e-27              15/4
+      1e+00            1.33744e+06              15/4
+      1e+09            1.33744e+15              15/4
+
+    ⇒ the sum is proportional to 1/a, so the COEFFICIENTS -- which are what the
+      construction uses -- are independent of it: True
+    ⇒ ** A quantity with no scale in it cannot name an energy at which it is used. **
+
+------------------------------------------------------------------------------------------------
+  THE ORDER'S QUESTION -- THE LOWEST ENERGY AT WHICH A MODE IS USED
+------------------------------------------------------------------------------------------------
+    The lowest mode is n = 2, mu = sqrt(8) = 2.828427, and its physical energy is mu/a.
+    ⌗ `a` is a COSMOLOGICAL input, not something the construction fixes (r7627), so it is
+      declared: 1/a is taken of order H0 = 1.44e-33 eV, carried from r7629.  The de Sitter
+      radius differs from the present layer radius by factors of order unity
+      (sqrt(Omega_Lambda), the sinh^(2/3) law), which is why the answer below is reported
+      in ORDERS OF MAGNITUDE and not to three figures.
+
+      1/a                omega_2 (eV)       threshold (eV)   orders below
+      H0                 4.073e-33          8.345            +33.31
+      H0*sqrt(0.7)       3.408e-33          8.345            +33.39
+      10*H0              4.073e-32          8.345            +32.31
+
+    ⇒ ** THE LOWEST ENERGY AT WHICH THE CORPUS USES THE TOWER IS 4.07e-33 eV, WHICH IS
+      33.3 ORDERS OF MAGNITUDE BELOW THE 8.345 eV THRESHOLD. **
+    ⇒ ** SO THE EXIT DOES NOT FIRE ON THIS ROUTE, AND PO-89 DOES NOT CLOSE AS A STATED
+      LIMIT BY IT. **  That was the registered expectation, and it is a MISS of the
+      order's firing condition rather than a result.
+
+------------------------------------------------------------------------------------------------
+  CONTROL (2) -- BOTH DIRECTIONS ASKED.  Is there ANY usage above the threshold, since a
+  single high one would change what this row may say about the cutoff?
+------------------------------------------------------------------------------------------------
+    The spectral sum runs over ALL labels, so formally the summand is evaluated at
+    arbitrarily high frequency.  The label at which omega_n first exceeds the threshold,
+    solved in closed form (n > -1 + sqrt(1 + (Lambda* a)^2)):
+      n ~ 5.795e+33, where omega_n = 8.345 eV reaches the 8.345 eV threshold
+      ⇒ so the sum's terms DO reach above the threshold -- but only at a label of order
+        1e34, which is the number worth having: the construction's own tower is used
+        across 34 decades of label before ANY single mode reaches PO-89's figure.
+
+    ⚠ ** AND THAT DOES NOT FIRE THE EXIT, WHICH IS THE READING MOST EASILY GOT WRONG IN
+      THIS ROW'S FAVOUR. **  The exit needs the CUTOFF shown to lie above the threshold.
+      A zeta-regularised sum's terms running to infinite label is not a claim that the
+      theory is valid up to infinite energy -- the analytic continuation is precisely the
+      device that avoids committing to a cutoff, and the corpus calls it a continuation
+      and not a truncation (l.1081, l.1088).  ⇒ A summand evaluated at a label is not an
+      effective theory asserted at an energy.
+    ⇒ So neither direction establishes a cutoff: the lowest USE is 33 orders below the
+      threshold, and the unbounded label range belongs to a continuation that introduces
+      no cutoff at all.
+
+------------------------------------------------------------------------------------------------
+  WHAT WOULD BOUND THE CUTOFF -- the deliverable the second outcome calls for
+------------------------------------------------------------------------------------------------
+    The three candidates PREDICTION_part2.md registered, each answered:
+
+    ⓵ THE REGULATOR'S OWN SCALE -- there is none.  It is a spectral zeta whose two stated
+      values are the pure numbers recomputed above (zeta(0) = 10, the coefficient 15/4),
+      and whose result -4/3 is a rational.  ** A spectral continuation has no cutoff. **
+    ⓶ THE COUNTERTERM SCALES -- a counterterm's COEFFICIENT is not a scale, and the
+      corpus's are all pure numbers: the quartic's leading constant fixed by the
+      propagating-component count, the logarithmic 15/4 settled by the spectrum, and a
+      Weyl-squared coefficient twice a real scalar's.  ** These bound nothing by
+      themselves, exactly as registered. **
+    ⓷ THE SINGLE-SCALE LEDGER -- it makes the constants unit gauges over ONE scale, but
+      r7627 established the construction fixes NO ABSOLUTE SCALE.  So the ledger gives a
+      RELATION among scales, not a value for one.  ** It permits a cutoff; it does not
+      bound it. **
+
+    ⇒ ** SO NOTHING THE CONSTRUCTION CURRENTLY CONTAINS BOUNDS THE CUTOFF -- and the
+      reason is sharper than r7627's "no absolute scale": the cutoff is not an
+      unmeasured parameter of the construction, it is NOT A PARAMETER OF IT AT ALL. **
+      Its ultraviolet definition is a continuation, and a continuation has no Lambda to
+      be large or small.
+
+    ⌗ AND WHAT WOULD BOUND IT, stated as the corpus's own open item rather than invented:
+      the corpus names "the COMPLETION of the ultraviolet definition of the mode sums" as
+      its open frontier (l.144, l.461).  ** That is where a cutoff would enter if it
+      entered anywhere. **  A completion that regulates by truncation rather than by
+      continuation would carry a Lambda, and THEN PO-89's exit becomes decidable.  Until
+      it is completed there is nothing to compare to 8.345 eV.
+    ⌗ I do not name the Planck scale.  The construction does not supply it either, and
+      reaching for it would be inventing the datum the exit needs -- which
+      PREDICTION_part2.md registered as the error to avoid here.
+
+================================================================================================
+  CONCLUSION -- THE EXIT DOES NOT FIRE, AND NOT BECAUSE THE CUTOFF IS LOW.
+  The lowest energy at which the corpus uses the tower is omega_2 = sqrt(8)/a ~ 4.07e-33 eV,
+  about 33 orders of magnitude below PO-89's 8.345 eV threshold.  So the order's firing
+  condition is MISSED and PO-89 does not close as a stated limit by this route.
+  ⇒ But the stronger finding is what the search turned up about the regulator: it is a
+    SPECTRAL ZETA, not a cutoff.  Its values are pure numbers, the scale factor factors
+    out of the sum identically, and the construction therefore has no cutoff parameter
+    for the exit to be about.  ** The exit is not merely unsatisfied; it is not
+    addressable from inside the construction as it stands. **
+  ⇒ What would make it addressable is the corpus's own named open frontier: the
+    COMPLETION of the ultraviolet definition of the mode sums.  A completion that
+    truncates rather than continues would carry a Lambda, and only then is there
+    something to compare to 8.345 eV.
+================================================================================================
+

@@ -25429,3 +25429,58 @@ to occur in one of its twelve `PAPER_FILES`. **Your `eb6448798` rewrote that sen
 ⚠ **I did not make it, deliberately.** It is `60`'s computation and your paper edit, and my own registration scoped me out of re-adjudicating `60`'s row. ⌗ *The ledger shows this one carried **3** times across **3** lines including `main`, over `0.1` h — so it is travelling, not new.*
 
 ⚠ **And note what that sentence now says, because my ① answers it.** *"The one place they may fail is named"* — that place is **the coupled edge**, and `r7631+cc66.1` above finds a **non-Euclidean selector closes it**. ⇒ **So the clause's live doubt is the thing I just measured.** I am routing that, not ruling on it: whether my result moves `PO-94`'s half is `60`'s call and yours.
+
+---
+
+## ⚑ `r7631+cc66.3` ② — **`PO-89`'s EXIT DOES NOT FIRE: THE CORPUS USES THE TOWER `33` ORDERS BELOW `8.345` eV. ⚠ BUT THE REASON IS NOT THAT THE CUTOFF IS LOW — IT IS THAT THE CONSTRUCTION HAS NO CUTOFF PARAMETER AT ALL, ITS REGULATOR BEING A SPECTRAL ZETA**
+
+**The order's answer.** The tower's frequencies are `μ_n² = n(n+2)`, `n ≥ 2` (`canonical_time` l.389) — equivalently `μ² = m²−1` on labels `m = n+1 ≥ 3` with degeneracy `d = 2(m²−4)` (l.488) — and the physical frequency is `ω_n = μ_n/a` (l.373). So the lowest mode is
+
+> `ω₂ = √8 / a = 4.073e−33` eV at `1/a ~ H₀`, which is **`33.31` orders below `8.345` eV**
+
+and the margin stays between `32` and `34` orders across a decade of `1/a`. ⇒ **The firing condition is missed and `PO-89` does not close as a stated limit by this route.** That is what I registered at `82b7d4e2e`, and I registered it as a *miss of the firing condition* rather than as a result.
+
+**⚠ And I want to be exact about what that does NOT mean, because the registration made me write it down before looking.** *"The corpus uses the tower below `8.345` eV"* is **not** *"the cutoff lies below `8.345` eV"*. A construction can use a tower at the Hubble scale and still carry a Planck-scale cutoff. **A low answer is evidence of nothing about the cutoff.** I am not offering it as a defence of anything.
+
+### ⇒ The search found something sharper, and it is what the row is actually for
+
+**The construction's regulator is a SPECTRAL ZETA, not a cutoff.** Your own words: it is *"the spectral sum over the tower's own frequencies"*, settled *"by exhibiting the continuation rather than by an estimate"* (l.1081–1082), returning the exact rational `−4/3`. ⚠ **And a hard cutoff appears in the corpus only as a FOIL** — the thing that, *"carrying no zeta function"*, would reproduce one coefficient (l.493).
+
+I reproduced both of its stated values **from the spectrum rather than quoting them**, so this is a reading of what the regulator computes and not of what the paper says about itself:
+
+| value | reproduced | corpus |
+|---|---|---|
+| the `1/m` coefficient of `d·μ = 2m³ − 9m + (15/4)m⁻¹ + (7/8)m⁻³ + (27/64)m⁻⁵ + …` | **`15/4` exactly** | l.492 ✔ |
+| `ζ(0) = 2[ζ_H(−2,3) − 4ζ_H(0,3)] = 2[(−5) − 4(−5/2)]` | **`10` exactly** | l.489 ✔ |
+
+And **the scale factor factors out of the sum identically** (l.493) — *measured*, not quoted: the partial sum scales by `10³³` and `10⁹` when `1/a` does, to ten significant figures.
+
+⇒ **So the construction's regulated output is a pure number, and `Λ` is not a parameter of it.** ⚠ **The exit is therefore not merely unsatisfied — it is not addressable from inside the construction as it stands.** That is a different finding from either outcome the order named, and I think it is the one that matters.
+
+### Both directions asked, because the convenient half is not the whole truth
+
+The sum's terms **do** reach above the threshold. The label at which a mode's own energy gets there is `n ≈ 5.795e33` — so **the tower runs ~`34` decades of label before any single mode reaches your figure.** ⚠ **And that does not fire the exit either.** A zeta-regularised sum whose terms run to infinite label is not a claim that the theory is valid up to infinite energy; the continuation is precisely the device that avoids committing to a cutoff, and you call it a continuation and **not a truncation** (l.1081, l.1088). *A summand evaluated at a label is not an effective theory asserted at an energy.* ⇒ **Neither direction establishes a cutoff.**
+
+### What would bound it — your three candidates as I registered them, each answered
+
+**⓵ The regulator's own scale — there is none.** A spectral continuation has no cutoff; its values are the pure numbers above and its result is a rational.
+**⓶ The counterterm scales — they bound nothing**, exactly as registered. A counterterm's *coefficient* is not a scale, and yours are all pure numbers: the quartic's leading constant from the propagating-component count, the logarithmic `15/4` settled by the spectrum, the Weyl-squared coefficient twice a real scalar's.
+**⓷ The single-scale ledger — it permits a cutoff, it does not bound one.** It makes the constants unit gauges over one scale, but `r7627` established the construction fixes **no absolute scale**, so it gives a *relation* among scales and not a value.
+
+⇒ **Nothing the construction currently contains bounds the cutoff — and the reason is sharper than `r7627`'s "no absolute scale": the cutoff is not an unmeasured parameter of the construction, it is not a parameter of it at all.**
+
+**What would bound it is your own named open frontier**: *"the **completion** of the ultraviolet definition of the mode sums"* (l.144, l.461). **That is where a `Λ` would enter if it entered anywhere.** A completion that regulates by **truncation** rather than by **continuation** would carry one, and only then is `PO-89`'s exit decidable. Until then there is nothing to compare to `8.345` eV. ⌗ *I deliberately do not name the Planck scale — the construction does not supply it either, and reaching for it would be inventing the datum the exit needs. My registration named that in advance as the error to avoid here, and this is me not making it.*
+
+### ⚠ Two faults of mine, and the first one's crash was the best measurement in the row
+
+**⑴ Control 2 was `for n in range(N_MIN, 10**7)`. It returned `None` and crashed the row on `None + 2`.** The needed label is `~5.8e33`. ⇒ **A search bounded at `10⁷` was not a near miss; it was the wrong KIND of instrument, by twenty-six orders of magnitude.** Solved in closed form (`n > −1 + √(1 + (Λ*a)²)`, checked against the frequency it inverts) — and **the crash is why the row now carries that label as its own number**, which is more informative than the "runs to infinity" I would otherwise have written.
+
+⌗ *That is the third instrument fault in this revision and the third of a different kind — part ① had a blind mesh and a guessed Bessel bracket, this one a search bounded below its answer. **All three were caught because the instrument's output was impossible rather than merely wrong.** A plausible wrong number is the one that gets through, which is why I now check that an instrument responds before trusting it.*
+
+**⑵ The receipt's corpus-locating group minted five quote-pin keys** (`2744 → 2749`) — five `literal in canonical_time.tex` presence tests, pins on **your** sentences, which I do not adjudicate. **That is the `r7627` fault exactly**, and hollow twice over: a paper *containing a string* is not the construction *doing* anything. ⇒ Repaired as `r7627` was — presence tests gone, the located quotations kept in the computation's output and the walk where they are evidence rather than pins, and the receipt gating the **substance** instead. Back to `2744`, verified. ⌗ *And a third, smaller: I wrote a constant-arithmetic cannot-fail check **twice in this revision**, once in each part. Both replaced with perturbations of the thing they are about. `check_cannot_fail` holds at `43`/`39`, and I confirmed it RESPONDS to that class (`43 → 44` with a tautology planted, back to `43` without) so its clean result means something.*
+
+Landed: receipt `P10_the_corpus_uses_the_tower_thirty_three_orders_below_the_dimension_six_threshold_and_its_regulator_is_a_spectral_zeta_carrying_no_cutoff_parameter_at_all`, **`33` checks**, the `8.345` eV threshold and `H₀` both **carried by importing `r7629`'s module and calling its own function** rather than retyped, both exact values compared **symbolically** and shown failable by perturbing the spectrum (`d = 2(m²−5)` gives `19/4` and `15`). Five controls. INDEX row at the end of `P10`'s run; appendices regenerated; `canonical_time.pdf` recompiled.
+
+⇒ **Both halves of `r7631` are now done.** ① the coupled edge closes on a non-Euclidean selector, so the face is not the only closer and `PO-94`'s quantum half does not meet its test by that route — on **one** selector, positivity not being one. ② `PO-89`'s exit does not fire, and the cutoff it asks about is not a quantity the construction has.
+
+⌗ **And a cost I caused again, recorded because I wrote the rule that forbids it.** Pushing part ②'s registration `2.5` minutes after part ①'s result **cancelled run `8404`'s tolerance sweep** — `concurrency: cancel-in-progress`. By my own `r7625` rule the carry is **shared state across heads, not per-sha**, so that sweep's receipts ride into the next head's scope rather than vanishing, and *"superseded"* is never a reason to treat a running sweep as expendable. ⇒ **And then I checked rather than assumed, which refined the rule.** Run `8405` (the registration's own) had dispatched **zero jobs** when I came to push part ②'s result — it was queued behind the earlier head, not running — so that push cancelled a *queued* run and **no sweep was lost**. ⇒ **So the cost is not per cancellation but per cancellation of a run that has already dispatched its jobs**, and the test before pushing over a live run is to list its jobs, not to read its status: `pending` with zero jobs is free, `in_progress` with a tolerance job running is not. ⌗ *I had drafted the opposite claim — that I held the push until the registration's run finished — and it was false; the run had not started. Corrected here rather than shipped.* The underlying rule stands unchanged: a **running** sweep is never expendable, because the carry is shared across heads.
