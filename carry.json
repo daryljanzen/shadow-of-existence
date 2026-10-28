@@ -136,14 +136,6 @@
    }
   }
  },
- "claude/shadow-of-existence-setup-5tjf0b": {
-  "tolerance": {
-   "receipts/P13_boundary/P13_the_constructions_atoms_form_eleven_thousand_dimensionless_numbers_and_hit_the_measured_coupling_no_better_than_chance_so_the_gauge_coupling_enters_as_a_measured_datum.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40646621887",
-    "since": "675ab0d64b8c852189614c0e63ca064fa6dc5a10"
-   }
-  }
- },
  "claude/shadow-of-existence-setup-6awafl": {
   "suite": {
    "computations/beyond_the_wall/r7430_60_which_of_this_seats_gates_can_be_silent_and_the_census_is_a_detector_so_it_refuses_where_it_cannot_decide/census.py": {
