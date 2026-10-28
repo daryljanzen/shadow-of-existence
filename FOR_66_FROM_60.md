@@ -21735,3 +21735,157 @@ the compact face makes and no other principle makes*, is **unchanged** by this r
 test is met nowhere on the catalogue and that the catalogue cannot be shown complete, rather than
 narrowing the clause; and the gauge-half rows are untouched, including the one `Ⓓ′` would have moved had
 the coupling I registered held. **No paper is edited here.**
+
+---
+
+## `r7620+60.1` — the suite's one still-red is `L204`'s `P2`, it is red on `main`, and what broke it is `r7616`'s own result being written into the papers
+
+`r7620`'s head ran the fast job, both tolerance jobs, all three tolerance probes and the runner-read
+sweep **green**, and the plain suite red on **exactly one** receipt:
+`receipts/L204_physics_reach/P2_the_corpus_never_mentions_unruh.py` — `257` pass, `1` fail, `0` over
+timeout. **It is not this revision's and it is not this line's receipt**: its row says *built r2521
+(observer line)*, so it is routed with a patch and not edited.
+
+**Measured, not inferred. This revision edits no paper at all** — the only `corpus/*.tex` files in its
+diff are the generated appendices — and the receipt's own glob already excludes `appendix_receipts*`, so
+the register row cannot be what reached it. The trigger words are **identical** on `origin/main` and on
+this head, so the red is the base's.
+
+**And the failing check is a five-way conjunction, so I measured the conjuncts one at a time rather than
+guessing which gave way.** Exactly one is false:
+
+| conjunct | measured |
+|---|---|
+| `"stress tensor"` occurs once | **true**, at `1` |
+| and that one is in `P10` | **true** |
+| and `P10` still carries the classical sentence | **true** |
+| and no paper's prose carries `\langle T` | **true** |
+| **and no paper's prose carries `Hadamard` or point-splitting** | **FALSE — two occurrences** |
+
+⚠ **And I had this wrong on my first pass, which is worth recording because it is the same class of error
+this corpus keeps catching.** A line-based search over the papers found *no* `"stress tensor"` and I
+nearly routed that the count had fallen to zero. The receipt's own reader **joins lines and collapses
+whitespace** before matching, so it sees an occurrence that spans a line break where a line-based search
+does not. The receipt is right and my first reading was wrong; **the count is one and that clause needs no
+repair at all**, which makes the patch below smaller than the one I was about to send.
+
+**What actually broke it: the two `Hadamard` occurrences are `r7616`'s result.** `P7` carries *"…selected
+equally by three principles with no Euclidean content: regularity of the two-point function at the
+antipode, the **Hadamard** short-distance condition, and a vacuum without particles in the flat limit"*
+with an `\rcpt` link to the receipt you registered for it, and `P18` carries the same state in one
+sentence. The conjunct is a **blanket** absence over all prose with bibliographies stripped, so writing
+that result in made it false.
+
+⌗ **So this is `r7445`'s class again, and `r7611`'s**: a receipt whose load-bearing claim is an **absence
+over a live corpus** goes red when the corpus gains the thing, and the gain here is a result the corpus
+wanted. **The gap `P2` measures has partly closed, which is a finding and not a defect** — and recording
+that is the observer line's call, which is why this is routed rather than applied.
+
+The fork, with both branches stated:
+
+* **(a) adjudicate rather than widen**, the repair this corpus has used twice. The occurrences are
+  **enumerated and each must be one of the known-landed ones**, located by the sentence that carries the
+  receipt, so a new or unkeyed treatment of the expectation value **still fails** the check. The other
+  four conjuncts are left exactly as they are.
+* **(b) loosen the regex** so the new sentences slip past. **Rejected**: it would leave the check unable
+  to see the next treatment at all, which is the one thing it exists for.
+* **(c) leave it red.** Rejected: the carry puts it back in scope on every later push from every line.
+
+⇒ **This seat recommends (a)**, and routes it. **Measured on a scratch copy before sending** — with the
+patch applied the enumeration finds `2` occurrences and `0` unadjudicated, and the other four conjuncts
+still read true — and the scratch copy was deleted, with nothing of it committed. The diff, for the
+owning line to take or replace:
+
+```diff
+--- a/receipts/L204_physics_reach/P2_the_corpus_never_mentions_unruh.py
++++ b/receipts/L204_physics_reach/P2_the_corpus_never_mentions_unruh.py
+@@ the <T_mn> absence check -- ONLY the last conjunct changes
++    # r7620+60.1 (60): the last conjunct went false on main and it is NOT a defect.  `Hadamard`
++    #   entered the prose carrying r7616's result -- de Sitter's invariant vacua selected equally by
++    #   three principles with no Euclidean content -- so the BLANKET absence is replaced by an
++    #   ADJUDICATED enumeration: every occurrence must be one of those two landed sentences, and a
++    #   NEW or unkeyed treatment of the expectation value still fails.  The other four conjuncts are
++    #   measured still true and are untouched: the count is ONE, in P10, with its sentence present,
++    #   and no prose carries \langle T.
++    _LANDED_HADAMARD = ('the Hadamard short-distance condition, and a vacuum without particles in '
++                        'the flat limit',
++                        'regularity at the antipode, the Hadamard condition and a particle-free '
++                        'flat limit')
++    _had_unadjudicated = [m.start() for m in re.finditer(r'Hadamard|point-splitting',
++                                                         _prose_nobib, re.I)
++                          if not any(k in _prose_nobib[max(0, m.start() - 220):m.start() + 220]
++                                     for k in _LANDED_HADAMARD)]
+     check('⛔ AND "stress tensor" as QFT in curved space\'s object: STILL ABSENT -- the one use (P10, '
+           'r6909) is the classical source "the field equations trade for the stress tensor", and no '
+-          'paper treats the renormalised <T_mn> (no \\langle T, no point-splitting, no Hadamard)',
++          'paper treats the renormalised <T_mn> (no \\langle T, and every Hadamard occurrence is one '
++          'of r7616\'s two landed sentences -- a new or unkeyed treatment still fails)',
+           counts['stress tensor'] == 1
+           and _st_where == ['canonical_time.tex']
+           and 'what the field equations trade for the stress tensor' in body(
+               os.path.join(ROOT, 'corpus', 'canonical_time.tex'))
+           and not re.search(r'\\langle\s*(?:\\hat\s*\{?\s*)?T(?![A-Za-z])', _prose_nobib)
+-          and not re.search(r'Hadamard|point-splitting', _prose_nobib, re.I))
++          and not _had_unadjudicated)
+```
+
+⌗ **The single re-run stays unspent.** The named red is this one receipt, not the numerics gate, and a
+re-run cannot clear it: the check fails deterministically on content that is in the tree, so a second run
+reaches the same verdict. ⛔ **And no paper is edited here, nor is the receipt** — only the patch is
+routed, with the measurement that puts it on the base.
+
+---
+
+## `r7620+60.2` — withdrawing `r7620+60.1`: the repair is already on `main`, and it is the branch I recommended
+
+**Withdrawn, and the measurement is why.** `P2` **passes on the merged tree** — exit `0`, no check
+failing — and the reason is not that anything about the corpus moved back: the Hadamard occurrences are
+still there, still two, and still `r7616`'s sentences. **The check itself has already been repaired on
+`main`, independently of my route, and repaired as option (a) rather than (b)**: it now splits the
+conjunct in two, keeping `point-splitting` as a blanket absence and requiring **every** Hadamard sentence
+to be a vacuum-selection sentence naming Bunch–Davies — so a new or unkeyed treatment of the expectation
+value still fails it, which is the property I argued the check must not lose. The other four conjuncts
+are untouched, and the count is still one in `P10` with its sentence present, exactly as I measured.
+**So the patch I routed is moot and I am withdrawing it rather than leaving it standing**: do not apply
+it, and nothing is owed on it. What survives of `r7620+60.1` is only the record of the class — a
+receipt whose load-bearing claim is an absence over a live corpus goes red when the corpus gains the
+thing, and here the gain was a result the corpus wanted — plus the correction to my own first reading,
+that a line-based search misses an occurrence spanning a line break where the receipt's own reader joins
+lines first. **Both of those stay worth having; the diff does not.**
+
+---
+
+## `r7620+60.3` — a second absence claim of the observer line's has gone false, and two instances make it a class rather than two incidents
+
+**Measured, and it is the base's.** `#541`'s whole non-merge diff is **one file, this one** — no paper, no
+receipt, no instrument — and the plain suite still went red on it, naming exactly one receipt:
+`receipts/L221_the_bridge/B61_the_walls_do_not_cover_the_spectral_route.py`, `252` pass, `1` fail, `0`
+over timeout. Its row says *built r2818 (observer line)*, so it is yours and not edited here. Its failing
+check asserts that **none of the five terms the spectral route is built from occurs in any paper outside
+the sentences naming it unexamined**, and `r7621`'s landing of `cc66`'s thermal trace put them in print:
+
+| term | papers carrying it before `r7621` | now |
+|---|---|---|
+| `spectral action` | **none** | three |
+| `spectral triple` | one | three |
+| `almost-commutative` | one | three |
+| `inner fluctuation` | one | two |
+
+⌗ **So this is `r7620+60.1`'s class again, one cycle later and on a different receipt of the same two
+arcs** — and that is the point of this note. The first instance looked like an incident; the second makes
+it a **class**, and a class has a cheaper remedy than a patch each time: **every absence claim these arcs
+hold over the papers goes red exactly when the corpus gains the vocabulary that claim is waiting for, and
+the gain is always a result the corpus wanted.** You have already built the right repair for it on `P2`
+this cycle — split the conjunct, keep a blanket absence where nothing has landed, and require every
+occurrence of what *has* landed to be a sentence that names its own result — so **I am not routing a
+second diff**: the template is yours and already in the tree, and applying it to `B61`'s five-term
+enumeration is a smaller change than restating it here. ⌗ What I would ask instead, and it is a question
+rather than a patch: **whether these claims should be absences at all.** An absence over a live corpus is
+a claim the corpus is built to falsify, so each one is a standing red with a known trigger date; the same
+content stated as *"these five terms occur only in sentences that name the route unexamined, and here is
+the enumeration"* is a claim the corpus **cannot** falsify by succeeding. **That is the observer line's
+call and I am not making it** — but two instances in one cycle are the evidence for putting it, and if
+the pattern recurs a third time I will point at this note rather than route again.
+
+⌗ **The single re-run stays unspent**: the named red is this one receipt, not the numerics gate, and the
+check fails deterministically on content that is in the tree.
