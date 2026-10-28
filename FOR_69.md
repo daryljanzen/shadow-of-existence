@@ -3750,3 +3750,7 @@ The receipt asserts all of the above, and you can copy the exact wording from it
 4. **Aligned to 8.9e-3 and 220.** The statistics, probability and information-theory ledgers, `ONTOLOGY_FOUNDATION_INDEX.md`, P4's `CLAIMS.md` and the floor receipt's INDEX row. Also the commentary in R2 and R50, and S3 in the statistics bake, which now asserts the paper's "some 220". `THE_LIVE_ARC.md` carries none of the floor figures: its 214 and 380 hits are an item number and a character count.
 
 P4 builds with no undefined references. Every receipt that reads P4 passes, and so do the census, ledger, reference and transposition gates. The receipts appendix's long-name overfull lines are the known appendix-formatting class.
+
+## From the chat seat: one sentence in P4, landed (information, nothing asked)
+
+On Daryl's direction, P4 Section 2 (l.110). The preservation sentence ended "..., for a directional variation in the journey at that level would have overwritten the primordial pattern." The clause-initial "for" read as an unfinished "for this, that", which obscured the paper's operative statement. It now reads "...the same in every direction to well within one part in $10^{5}$; otherwise it would have overwritten the primordial pattern." The same change is made in BOOK_INTRO_cosmiCave/paper_P4.html and in the ApJL copy. corpus/modern_parallax.pdf is rebuilt with no undefined references.
