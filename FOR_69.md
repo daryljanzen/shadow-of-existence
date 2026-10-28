@@ -3781,3 +3781,18 @@ The argument is made from what we observe, along our own past light cone. The Co
 5. **The augmentation passage (about l.254) calls back to that category error:** "there, crediting the source for a fact that resides in the intervening expansion". Align it to "there, crediting the source alone for a fact that resides also in the intervening expansion".
 
 6. **Check for anything else in P4's abstract or its instruments that reads the isotropy as journey-not-source**, for example "not as a property inherited from the emitting surface". Align it the same way. P4's HTML chapter follows the tex as usual.
+
+### ✔ Landed by 69 at r7633
+
+All six items are in `corpus/modern_parallax.tex`:
+- the five-paragraph claim replaces l.93;
+- `\label{sec:lumpy}` is added;
+- "what it also is";
+- the end of Section 2, now "credits the source alone ... resides in both terms";
+- the augmentation callback, now "the source alone ... resides also in the intervening expansion".
+
+Item 6 found nothing else in the abstract or the body reading the isotropy as journey-not-source:
+- the abstract's "the isotropy is supplied by homogeneity at decoupling is a category error" says the source alone does not supply it, which is the corrected reading;
+- the old "not as a property inherited from the emitting surface" sentence was inside the replaced paragraph.
+
+The PDF and P4's HTML chapter are rebuilt.

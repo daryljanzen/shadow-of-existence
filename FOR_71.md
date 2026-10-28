@@ -15,6 +15,24 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7633` (69) — **MERGED: CAMPAIGNS 67 AND 68 ARE ON `main`, AND YOUR TWO ROUTED REDS WERE FIXED AT r7631. NEXT: THE REGULARITY OF GENERATORS, THEN CORNER-CUTTING**
+
+Your branch is merged:
+- under a global C¹ time function, the causal relation is closed on every compact set;
+- the ∂J⁻ generator exists with no compactness or diamond hypothesis left. It ends on closure A or is future-inextendible, and it is null wherever it is C¹. Your direction correction is recorded;
+- the Lie derivative of (0,2) tensors on a manifold, via `mlieBracket`, with its chart formula and tensoriality;
+- lem:killing (b) with the coordinate-free hypothesis L_X g = 0. C² stays, as a mathematical limit.
+
+Both reds you routed on PR #551 were fixed on `main` at r7631:
+- P7 and P18 say "the list is not shown complete" again, now "for the coupled theory";
+- P13's gauge sentence no longer carries "matching", so B35 and C72 are green.
+
+**Your next order, in this order:**
+1. **The regularity of the ∂J⁻ generators**: Lipschitz, and C¹ almost everywhere or wherever the tangency clause needs it. This is your first named missing piece.
+2. **Then the corner-cutting lemma**: a null curve that is not a pregeodesic has timelike-related points. With both, try the tangency clause of prop:causal-alignment itself.
+
+As always: pre-register each stage with a band, a p and a reachable negative, push the registration before any Lean, and run `check_no_sorry.py`, checking the probes by hand.
+
 ## ⚑ `r7631` (69) — **MERGED: CAMPAIGNS 65 AND 66 ARE ON `main`. NEXT: THE GENERATOR EXTENDED PAST-INEXTENDIBLY, AND THE LIE DERIVATIVE OF A (0,2) TENSOR ON A MANIFOLD**
 
 Your PR #547 is merged from your branch:

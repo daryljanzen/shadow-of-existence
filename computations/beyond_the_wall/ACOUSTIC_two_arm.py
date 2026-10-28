@@ -1263,6 +1263,13 @@ _SRCD_B = []      # one (n_ls, 10) block per k-batch; C_l is a SUM over k, so th
 # above and it is why this is a separate accumulator rather than another key in theirs.*
 _DLK = os.environ.get('DLKSAVE')
 _DLK_B = []
+# ⛭ ** POLSAVE (r7631+70): THE E-MODE AND TE SPECTRA, off unless asked. **  The polarisation source this
+# instrument already carries in T (Pi, on the hierarchy path) is projected through the E-mode kernel,
+#     Delta_E,l(k) = sqrt((l+2)!/(l-2)!) * (3/4) INT g Pi j_l(k x)/(k x)^2 d(eta),
+# and C_EE = sum P Delta_E^2, C_TE = sum P Delta_T Delta_E.  Additive over k-batches like `_SRCD_B`.
+# ⌗ *Peak LOCATIONS are what it is for; the overall E normalisation does not move them.*
+_POLS = os.environ.get('POLSAVE')
+_POLS_B = []
 # ⛔⛭⛭ ** AND r6889+cc66.36: THEY REACHED ONE PATH OF THREE, WHICH IS THE SHADOW AGAIN. **
 # *r4558 placed these beside `_ISW` and calibrated them -- on `los_spectrum`.  ** The HIERARCHY path
 # builds its own source at the foot of `los_hier` and the LOW-ELL path builds a third at the foot of
@@ -1710,6 +1717,11 @@ def hier_run(kk, EE, L_A_, D_M_, R_S_):
                            / np.abs(Cl * ls * (ls + 1))))
         print(f"  SRCDEC: {len(ls)} multipoles x 10 term pairs; the pairs close on D_l to "
               f"{_cl:.3e} relative -> {_SRCD}")
+    if _POLS:
+        _pt = sum(_POLS_B) * (ls * (ls + 1))[:, None]
+        np.savez(_POLS, ls=ls, Dl=Cl * ls * (ls + 1), Dl_EE=_pt[:, 0], Dl_TE=_pt[:, 1], arm=ARM, r_s=R_S,
+                 D_M=D_M, l_A=L_A, ns=NS, sliced=bool(_ksl), n_modes=len(kk))
+        print(f"  POLSAVE: TT, EE and TE on {len(ls)} multipoles -> {_POLS}")
     if _DLK:
         # ** the k axis is CONCATENATED, in the batch order, and the receipt gates that the saved
         # transfer reproduces `Cl` by its own definition -- sum(P * Dlk^2) over the whole axis. **
@@ -1894,10 +1906,16 @@ def _project(kb, ee, Y, ls, x0, e_sw):
     #   ⌗ ** Output only: unset, this branch does not execute and the run is bit-identical. **  It is
     #   the same discipline as `SRCSAVE`/`SRCETA` and is gated the same way.
     _dlk = np.empty((len(ls), len(kb))) if _DLK else None
+    if _POLS:                                       # POLSAVE: reuses this loop's J, so it costs no second Bessel pass
+        _SE = 0.75 * g_ * Pi / np.maximum(kb[None, :] * x0[:, None], 1e-30) ** 2
+        _ee_te = np.zeros((len(ls), 2))
     for j, l in enumerate(ls):
         J = spherical_jn(int(l), kb[None, :] * x0[:, None])
         _tr = np.trapezoid(S * J, ee, axis=0)
         out[j] = np.sum(P * _tr ** 2)
+        if _POLS:
+            _dE = np.sqrt(max((l + 2.0) * (l + 1.0) * l * (l - 1.0), 0.0)) * np.trapezoid(_SE * J, ee, axis=0)
+            _ee_te[j] = (np.sum(P * _dE ** 2), np.sum(P * _tr * _dE))
         if _DLK:
             _dlk[j] = _tr
         if _SRCD:
@@ -1912,6 +1930,8 @@ def _project(kb, ee, Y, ls, x0, e_sw):
                     _c += 1
     if _SRCD:
         _SRCD_B.append(_dec)
+    if _POLS:
+        _POLS_B.append(_ee_te)
     if _DLK:
         # ⛔ ** THE TWO CLOCKS ARE DELIBERATELY NOT READ HERE, AND THAT IS NOT A CONVENIENCE. **
         # *`C60_the_hier_composition_defect_names_two_flags_its_own_tree_never_had` measures, as a

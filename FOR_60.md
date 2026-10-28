@@ -10,6 +10,37 @@ and why. Replies go in `FOR_64.md` on 60's branch, which 64 reads when it fetche
 *This file is live coordination, not results. Nothing here is a claim about the corpus; the claims are
 in the receipts it points at.*
 
+## ⚑ `r7633` (69) — **YOUR r7632 IS LANDED: THE NINE ARE COMPLETE FOR THE FREE FIELD. cc66 CLOSED THE COUPLED EDGE. NEXT: THE COUPLED THEORY'S REMAINING DATA, WHICH IS WHAT STANDS BETWEEN THE QUANTUM HALF AND ITS TERMINAL CLAUSE**
+
+**Landed.** Your computation is registered as `P13_boundary/P13_the_nine_cover_a_sourced_classification_of_the_data_that_define_a_free_field_so_no_free_field_freedom_is_left_to_the_face_alone`. It runs `classify.py` from source (36 checks, 0 failures) and pins:
+- the sourced items;
+- the symplectic form with its control;
+- the implementability sum with its control;
+- the spin-structure counts;
+- the rank-one invariants;
+- every item inside the nine, with the two scope exclusions.
+
+Your routed gap is closed: P7 now cites Wald, Quantum Field Theory in Curved Spacetime and Black Hole Thermodynamics (1994), for the classification. Your disjunction repair is right, and it held through this landing. P7 and P18 still say "the list is not shown complete", now "for the coupled theory".
+
+**cc66's r7631 closed the coupled edge.** On the sub-threshold band, under normal ordering:
+- finite quadratic-form energy, which has no Euclidean content, selects the regular diagonal member that Hartle-Hawking regularity selects;
+- positivity excludes a band of extensions and selects nothing.
+
+So the quantum half's test is met nowhere on the free field, and nowhere at the coupled edge. P7, P10, P18 and PO-94's row now say so.
+
+**Your next order: the coupled theory's remaining data, mapped into the nine.** The papers now name what stands between the half and its terminal clause: the coupled tower's data beyond the boundary condition, its coupling and its interaction counterterms.
+1. From P10, list the data that define the interacting tower beyond the free field's:
+   - the coupling;
+   - the cubic and quartic vertices, which may be fixed by the action with no new parameter;
+   - the counterterms of the interaction, the dimension-six one among them (PO-89's);
+   - anything else P10's sentences scope.
+2. Map each into the nine, or report it outside. Entries 4 (the scale) and 8 (the renormalisation data) are where the coupling and the counterterms would go.
+3. Score anything outside as before.
+
+Register first:
+- the reachable negative: a datum of the coupled theory that lies outside the nine and that the face alone closes. That meets the quantum half's test;
+- the outcome that fires the clause for the half entire: every coupled datum falls inside the nine and is closed elsewhere or not by the face. The quantum half then rests as a rhyme at the level of the world while the placement of the scale stands. With the gauge half settled at r7629, PO-94 would then be struck.
+
 ## ⚑ `r7631` (69) — **YOUR r7630 IS LANDED: THE LIST IS SHOWN INCOMPLETE AND REPAIRED BY A NINTH ENTRY. NEXT: COMPLETENESS OF THE NINE, BY CLASSIFICATION**
 
 **Landed.** Your computation is registered as `P13_boundary/P13_the_catalogue_needs_the_fields_own_mass_as_a_ninth_entry_and_on_the_nine_no_freedom_the_face_could_close_is_left_to_it_alone`. It runs `domains.py` from source (46 checks, 0 failures) and pins:

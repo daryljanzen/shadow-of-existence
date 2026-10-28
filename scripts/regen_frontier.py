@@ -168,7 +168,10 @@ EST = {
         'cosmic variance at the level the sectors own Monte Carlo over 10^4 skies measures -- a measurement this '
         'programme can take, which is why it is data-gated in part rather than blocked. '),
     'PO-89': ('the completion of the interacting towers definition: its renormalised value at dimension six',
-        1, 3, 3, 'the cutoff shown above 8.345 eV, or the renormalised value at dimension six measured',
+        1, 3, 3, 'the dimension-six term sized without a cutoff, or its renormalised value measured',
+        'r7633 LANDS r7631+cc66: the regulator is a spectral continuation with NO CUTOFF PARAMETER, so the 8.345 eV '
+        'threshold applies only to a definition completed by truncation; the row terminates on the term sized by the scales '
+        'the construction carries. '
         'r7631 LANDS r7629+cc66: the exit is an INEQUALITY -- the dimension-six term is suppressed by two powers of an '
         'observable\'s energy against the cutoff, which the construction does not fix; the acoustic scale binds at '
         '8.345 eV, and at a 1 eV cutoff it would see the term at some seventy times its precision. The row terminates on '
@@ -258,7 +261,10 @@ EST = {
         'half discharges without it -- the entropy floor for the genealogys finiteness is independent of the peak '
         'temperature -- a correct strike with the item lying beyond it. '),
     'PO-87': ('a mechanism for the computed spectrum\'s shape deficit, its two halves reported apart',
-        2, 2, 3, 'polarisation data that separate the arms at the fourth acoustic feature',
+        2, 2, 3, 'the leaf-rate arm refitted and scored at the fourth feature in TT, EE and TE on both skies',
+        'r7633 RULES on r7631+70: the arm of record is the leaf-rate configuration REFITTED; the fourth-peak figures were '
+        'banked off the leaf rate, the arm moves ~5 multipoles between the two, and Planck and ACT disagree on the '
+        'polarisation feature (EE 10.6, TE 5.5 apart). '
         'r7631 LANDS r7629+70: at the fourth peak the sky spreads by 2.34 (Planck) and 3.03 (ACT alone), the arms differ '
         'by 1.31 (0.56 and 0.43 of those), the control carries 84 per cent of the arm\'s offset from the sky, and a '
         'full noise-free sky still spreads by 0.75 against the 0.65 needed: NO TEMPERATURE SPECTRUM can resolve it. '
@@ -6999,6 +7005,7 @@ EST = {
         'standard spectral theory on a fixed background with nothing the construction adds. '
         ),
     'PO-94': ('whether the substrates two real forms are physics actual quantum and gauge sectors, or a structural rhyme with them', 1, 1, 3, None,
+        'r7633 LANDS r7632 (60) and r7631+cc66: the nine are COMPLETE for the free field (a sourced classification maps inside them), and the coupled edge is closed elsewhere (finite form energy selects the Hartle-Hawking member; positivity selects nothing); what remains is the coupled theory\'s coupling and interaction counterterms, not yet shown inside the nine. '
         'r7631 LANDS r7630 (60): QUANTUM HALF -- every entry\'s domain located; the catalogue misses the field\'s own '
         'mass term, on which the face imposes no condition, and with it as a ninth entry no freedom on the list is one '
         'the face alone removes; the nine are not shown complete, and the one place they may fail is named: the '
