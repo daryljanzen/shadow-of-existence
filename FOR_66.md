@@ -25297,3 +25297,40 @@ ran 328, 0 named red, 294 NEVER PROBED; +292 carried, 0 cleared by a green, 2 st
 ⌗ **The rule of mine that was wrong, stated so it does not recur:** I dismissed `8318` as *"a superseded head, its result wouldn't be authoritative anyway."* The first half was true and the second half does not follow. **The carry is shared state across heads, not per-`sha`** — a sweep on a superseded head is still draining the same ledger the next head inherits, so "superseded" is no reason at all to treat a running sweep as expendable. ⇒ The hold test takes the *sweep's* state, never the head's: hold while probes are running, whichever commit they are running on.
 
 ⌗ *And on the third firing the hold was finally taken correctly: at `03:46` nothing of mine was uncommitted, no fix was waiting, `8323`'s probes were live — so I wrote nothing and pushed nothing until it finished, and this entry carries its verdict instead of cancelling it.*
+
+## ⚑ `r7627` — **THE ATOMS FORM `11,049` NUMBERS, ONE SITS INSIDE $\alpha_s$'s OWN ERROR BAR, AND IT MEANS NOTHING: THE HIT RATE IS *AT CHANCE*. AND THE REASON NO MONOMIAL CAN BE A COUPLING IS DIMENSIONAL, NOT NUMERICAL**
+
+Both your rulings received. `⒝` in particular — thank you for taking the gap identification on its merits, and the row still records that the verdict does not depend on it.
+
+**The enumeration, bounded and declared before any comparison ran** (products of integer powers, `Σ|e| ≤ D`, deduplicated **by value and not by spelling**): `30`, `374`, `2481`, **`11,049`** numbers at `D = 1,2,3,4` from the `15` frozen atoms.
+
+**⓵ Your named negative is observed, and I will not soften it.** The closest formed number is
+
+```
+0.117893  =  (β/α)⁻¹ · 60 · 81⁻¹        against   α_s(M_Z) = 0.1180 ± 0.0009      −0.09%
+```
+
+**inside the measured value's own experimental error.** Quoted alone that is a find.
+
+**⚠ ⓶ It is not one, and this is the row's finding.** The pre-registration required the candidate count beside the hit, so:
+
+| target | window | observed | **expected by chance** | ratio |
+|---|---|---|---|---|
+| `α_s(M_Z)` | ±1% | `12` | **`13.26`** | **`0.91`** |
+| `1/g²(M_Z) = 0.674385` | ±1% | `12` | **`13.73`** | **`0.87`** |
+| `α_s(M_Z)` | ±5% | `71` | `66.45` | `1.07` |
+| `1/g²(M_Z)` | ±5% | `77` | `69.05` | `1.12` |
+
+⇒ **The atoms hit the measured coupling no better than a target drawn at random from the same two decades — slightly *worse*, in both tight windows.** `4000` random targets set that expectation; it is measured, not estimated. *A row reporting the `−0.09%` without the `13.26` would have reported noise as a result.*
+
+**⓷ And underneath both, the part I think is the actual answer to your order: the obstruction is dimensional.** A gauge coupling **is** an action normalisation; the atoms are lengths, integers and spectral ratios — geometry. The toy control you asked for by name makes it exact: Kaluza–Klein gives `1/g₄² = 2πR/g₅² = 12.566371`, **determinate** — and what makes it determinate is `g₅²`, an independent **dimensionful** datum. Strip it, keep the geometry, and the coupling is not a number at all. ⇒ **No monomial in these atoms is a coupling whatever its value**, which is why ② came back *uninformative* rather than *empty*, and why all five routes failed in the same place.
+
+So: no **reference scale** (`α` symbolic end to end, every atom a ratio — a coupling is quoted *at an energy* and a set of ratios names no energy), and no **matching condition** (nothing picks which of `11,049`, or where). ⇒ **The coupling enters as a measured datum**, as the papers already say. That is your second outcome, reached through ③ and ④ rather than through "no candidate found", exactly as registered.
+
+⌗ **Where this row is open, and it is the atom list — your third outcome, stated where it applies.** Whether *"the integers"* is **closed** is a reading of what the construction posits, not a computation: `27` and `81` are derived group orders, `5` is a dimension, and the multiplicities continue past `60`. **The enumeration is bounded by my `D` and by my choice of where the multiplicity list stops, and neither bound is the construction's.** Two things keep that honest rather than fatal: the chance-hit *ratio* is flat in `D` by construction, since observed and expected both scale with `N`; and the dimensional argument does not depend on the list's length at all — adding atoms adds geometry, and geometry is the thing that cannot be an action normalisation.
+
+⌗ **Your open invitation, answered as registered.** Mechanisms that fix a coupling *without* a constituent loop do exist in the standard constructions — topological and index-type conditions, a coupling set by a boundary condition. **That they exist is not that one applies here**, and I have kept those two apart rather than claiming either way; it wants its own row if you want it pursued.
+
+⌗ *One fault of mine, in the `WALK` and the row: the first enumerator swept the full exponent grid, `9¹⁵ ≈ 2×10¹⁴` products, and had to be killed. The monomials it was after number `11,049` — the grid containing them was ten orders of magnitude larger. The fix, recursing over the **support**, and the reason sit in the function's own docstring.*
+
+Landed: receipt `P13_the_constructions_atoms_form_eleven_thousand_dimensionless_numbers_and_hit_the_measured_coupling_no_better_than_chance_so_the_gauge_coupling_enters_as_a_measured_datum`, `26` checks, every printed figure pinned by **comparison** and verified failable by perturbing an atom (`27→28`) and watching six checks go red, then restoring byte-identically. INDEX row at the end of `P13`'s block; appendices regenerated; `boundary_paper.pdf` recompiled.

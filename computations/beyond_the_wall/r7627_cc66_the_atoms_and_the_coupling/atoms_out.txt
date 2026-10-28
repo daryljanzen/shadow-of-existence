@@ -1,0 +1,111 @@
+
+==============================================================================================
+r7627+cc66 -- THE ATOMS, THE NUMBERS THEY FORM, AND WHAT A COUPLING WOULD STILL NEED
+==============================================================================================
+
+  THE ATOM LIST, frozen in PREDICTION.md before any of this ran: 15 atoms
+    beta/alpha = 2 pi                  = 6.283185307          [r7615 -- the ONLY dimensionless monomial the two lengths form]
+    gap * beta = 5 pi                  = 15.70796327          [r7627's own figure; (5/2a)(2 pi a) = 5 pi]
+    matrix factor / generations        = 3                    [P13 M_3(C) on C^3; the generations Z_3]
+    spinor rank 2^floor(5/2)           = 4                    [r7619, r7621]
+    face dimension                     = 5                    [P13 -- the round five-sphere]
+    walls' S_3 order                   = 6                    [CR_framework l.1935]
+    commutant on the bimodule          = 9                    [r7615]
+    two-forms at p = 5                 = 10                   [r7615]
+    multiplicity at k = 1              = 20                   [r7621 -- 2^2 * C(5,1)]
+    Delta(27) in SU(3)                 = 27                   [CR_framework l.1935; P07/P13 receipts]
+    multiplicity at k = 2              = 60                   [r7621 -- 2^2 * C(6,2)]
+    wall/hinge holonomy in U(3)        = 81                   [CR_framework l.1935]
+    eigenvalue ratio k=1               = 1.4                  [r7615 -- 1 + 2k/5]
+    eigenvalue ratio k=2               = 1.8                  [r7615]
+    eigenvalue ratio k=3               = 2.2                  [r7615]
+
+  THE MEASURED DATUM, with its scale (never a bare number):
+    alpha_s(M_Z = 91.1876 GeV) = 0.1180 +- 0.0009
+    the same datum as a Lagrangian normalisation: 1/g^2 = 1/(4 pi alpha_s) = 0.674385
+
+----------------------------------------------------------------------------------------------
+  (1) THE ENUMERATION -- rule and bound declared in advance, count REPORTED
+----------------------------------------------------------------------------------------------
+    sum|exponent| <= 1 :  N =      30 distinct values
+    sum|exponent| <= 2 :  N =     374 distinct values
+    sum|exponent| <= 3 :  N =    2481 distinct values
+    sum|exponent| <= 4 :  N =   11049 distinct values
+
+    the working bound is D = 4, N = 11049
+
+----------------------------------------------------------------------------------------------
+  (2) DOES A NUMBER LAND NEAR THE MEASURED COUPLING -- AND HOW MANY WOULD, BY CHANCE
+----------------------------------------------------------------------------------------------
+
+    target alpha_s(M_Z)   window +- 1.0%   OBSERVED    12    EXPECTED BY CHANCE    13.26
+      ratio observed/expected = 0.91   (4000 random targets in the same two decades)
+        0.117893  (-0.09%)  = beta/alpha = 2 pi^-1 * multiplicity at k = 2 * wall/hinge holonomy in U(3)^-1
+        0.117845  (-0.13%)  = face dimension * Delta(27) in SU(3)^-1 * eigenvalue ratio k=1 * eigenvalue ratio k=3^-1
+        0.117810  (-0.16%)  = gap * beta = 5 pi * Delta(27) in SU(3) * multiplicity at k = 2^-2
+
+    target alpha_s(M_Z)   window +- 5.0%   OBSERVED    71    EXPECTED BY CHANCE    66.45
+      ratio observed/expected = 1.07   (4000 random targets in the same two decades)
+        0.117893  (-0.09%)  = beta/alpha = 2 pi^-1 * multiplicity at k = 2 * wall/hinge holonomy in U(3)^-1
+        0.117845  (-0.13%)  = face dimension * Delta(27) in SU(3)^-1 * eigenvalue ratio k=1 * eigenvalue ratio k=3^-1
+        0.117810  (-0.16%)  = gap * beta = 5 pi * Delta(27) in SU(3) * multiplicity at k = 2^-2
+
+    target 1/g^2(M_Z)     window +- 1.0%   OBSERVED    12    EXPECTED BY CHANCE    13.73
+      ratio observed/expected = 0.87   (4000 random targets in the same two decades)
+        0.675000  (+0.09%)  = walls' S_3 order^-1 * multiplicity at k = 1^-1 * wall/hinge holonomy in U(3)
+        0.673401  (-0.15%)  = walls' S_3 order * multiplicity at k = 1 * wall/hinge holonomy in U(3)^-1 * eigenvalue ratio k=3^-1
+        0.673198  (-0.18%)  = beta/alpha = 2 pi * commutant on the bimodule * multiplicity at k = 2^-1 * eigenvalue ratio k=1^-1
+
+    target 1/g^2(M_Z)     window +- 5.0%   OBSERVED    77    EXPECTED BY CHANCE    69.05
+      ratio observed/expected = 1.12   (4000 random targets in the same two decades)
+        0.675000  (+0.09%)  = walls' S_3 order^-1 * multiplicity at k = 1^-1 * wall/hinge holonomy in U(3)
+        0.673401  (-0.15%)  = walls' S_3 order * multiplicity at k = 1 * wall/hinge holonomy in U(3)^-1 * eigenvalue ratio k=3^-1
+        0.673198  (-0.18%)  = beta/alpha = 2 pi * commutant on the bimodule * multiplicity at k = 2^-1 * eigenvalue ratio k=1^-1
+
+----------------------------------------------------------------------------------------------
+  (5) THE ENUMERATION SHOWN ABLE TO MISS -- a counter that cannot miss counts nothing
+----------------------------------------------------------------------------------------------
+    target 1e-30    window +-1%  ->  0 hit(s)
+    target 1e+30    window +-1%  ->  0 hit(s)
+
+----------------------------------------------------------------------------------------------
+  (3) POSITIVE CONTROL -- the machinery returns a DETERMINATE number when there is one
+----------------------------------------------------------------------------------------------
+    beta/alpha = 2 pi = 6.2831853072 is in the set: True
+    ⇒ so "no coupling comes out" is not the machinery failing to produce numbers.
+
+----------------------------------------------------------------------------------------------
+  (4) CONTROL THE ORDER ASKS FOR BY NAME -- a construction whose data DO fix its coupling
+----------------------------------------------------------------------------------------------
+    Kaluza-Klein on a circle:  1/g4^2 = 2 pi R / g5sq = 12.566371   [determinate]
+    and WHAT makes it determinate is g5sq -- a DIMENSIONFUL datum, the action's own
+    normalisation.  Keep only the geometry (R) and 1/g4^2 is not a number at all.
+
+----------------------------------------------------------------------------------------------
+  (6) WHAT ANY MECHANISM NEEDS, AND WHETHER THE CONSTRUCTION SUPPLIES IT
+----------------------------------------------------------------------------------------------
+    a. A REFERENCE SCALE at which the coupling is quoted.
+       The construction fixes NO absolute scale: alpha is carried symbolically end to
+       end (r7615, r7619, r7621 all declare it so), and every datum above is either
+       dimensionless or a ratio of the two lengths.  A coupling is quoted AT AN ENERGY;
+       a set of pure ratios names no energy.  ⇒ NOT SUPPLIED.
+    b. And even taking the construction's OWN two scales rather than an absolute one,
+       r7621 measured Lambda = 1/(2 pi alpha) BELOW the gap 5/(2 alpha), with ZERO modes
+       between: Lambda/mu = 1/(5 pi) = 0.063662 < 1.  ⇒ no interval to run over.
+    c. A MATCHING CONDITION -- a statement that some particular number IS the coupling
+       at that scale.  Nothing in the data picks WHICH of the 11049 numbers, or where.
+       ⇒ NOT SUPPLIED.
+
+    ⛭ AND THE REASON UNDERNEATH ALL THREE, which is dimensional and not numerical:
+      a gauge coupling IS an action normalisation.  The atoms are lengths, integers and
+      spectral ratios -- geometry.  The toy fixes its coupling because it is GIVEN an
+      independent dimensionful coupling; this construction is given no such datum for a
+      gauge field.  ⇒ No monomial in these atoms is a coupling REGARDLESS of its value,
+      which is why the near-misses above are numerology and not evidence.
+
+==============================================================================================
+  CONCLUSION: numbers DO land near the measured coupling, there are far too many of them
+  for that to count, and the construction names neither the scale nor the matching that
+  would turn one into a coupling.  The coupling enters as a MEASURED DATUM.
+==============================================================================================
+
