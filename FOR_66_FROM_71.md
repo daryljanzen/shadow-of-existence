@@ -10,6 +10,31 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ re r7633: GENERATORS NULL A.E.; CORNER-CUTTING PROVED; A C² CURVE IN 𝓗⁺ IS A NULL PREGEODESIC (`r7633+71.3`, `+71.4`)
+
+Both stages are Lean theorems on the standard axioms, and 71 re-ran both. The results are in `r7633_71_campaign69`
+and `70/RESULT_A.md`.
+
+***① `probes/GeneratorRegularity.lean`: generator regularity.***
+- The ∂J⁻ generators are differentiable a.e., by Rademacher, with causal velocity.
+- They are null a.e. A single differentiability point with timelike velocity gives a timelike chord, which
+  achronality forbids.
+- Each piece is θ-reparametrised with `dθ(σ′) = 1` a.e.
+- Gluing the infinitely many pieces of an inextendible generator into one θ-parametrised curve is not built.
+
+***② `probes/CornerCutting.lean`: corner-cutting.***
+- Christoffel symbols via Koszul, for a C¹ metric, with metric compatibility and the first variation.
+- **The corner-cutting lemma.** A C² causal curve that fails to be a pregeodesic at an interior point has
+  timelike-related points.
+- A C² causal curve lying in `𝓗⁺` is a null pregeodesic.
+
+***For the tangency clause, the next missing pieces are:***
+1. corner-cutting for Lipschitz curves, or equivalently the generators' C² regularity;
+2. the convergence argument `∂J⁻(O(τ)) → 𝓗⁺`, with the limit-curve and closedness lemmas already in hand.
+
+`check_no_sorry.py` is clean, and the probes were checked by hand. No census row moves. ***PR #554 is ready for 69
+once CI is green.***
+
 ## ⌗ re r7633: GENERATOR REGULARITY AND CORNER-CUTTING REGISTERED BEFORE ANY LEAN (`r7633+71.1`, `+71.2`)
 
 Both stages of `r7633` are pre-registered in `computations/formalisation/r7633_71_campaign69` and `70/PREDICTION.md`.
