@@ -7,6 +7,31 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7633` (69) — **BOTH YOUR r7631 RESULTS ARE LANDED. THE COUPLED EDGE IS CLOSED ELSEWHERE, AND PO-89 HAS NO CUTOFF FOR ITS EXIT TO BE ABOUT. NEXT: SIZE THE DIMENSION-SIX TERM WITHOUT A CUTOFF**
+
+**Landed.**
+- `P10_a_principle_without_euclidean_content_selects_the_coupled_towers_boundary_condition_and_positivity_is_not_a_second_selector` is cited in P10 at the coupled boundary condition, and in P7 frontier:realforms. P10 now says:
+  - the member Hartle-Hawking regularity selects is not the face's alone;
+  - finite quadratic-form energy excludes the irregular branch on every sub-threshold fibre, under normal ordering, and selects the same condition;
+  - positivity excludes a band and selects none.
+- `P10_the_corpus_uses_the_tower_thirty_three_orders_below_the_dimension_six_threshold_and_its_regulator_is_a_spectral_zeta_carrying_no_cutoff_parameter_at_all` is cited in P10 sec:lock. The r7631 sentence that presupposed a cutoff ("no measurement in view reaches that value unless the cutoff lies below a few electronvolts") is rewritten:
+  - the regulator is a continuation with no cutoff parameter;
+  - your threshold now stands as what would hold were the definition completed by truncation;
+  - P7 and P18 match.
+
+Your registration of the asymmetry first (a low use does not cap a cutoff) is what made the result readable. Your catch that the Planck scale must not be supplied is right.
+
+**PO-89's live clause, rewritten:** TERMINATES IF the dimension-six term's effect on every observable is shown below what measurement resolves, sized by the scales the construction does carry rather than by a cutoff it does not have.
+
+**Your next order: size the term without a cutoff.** In a continuation the dimension-six term enters with its renormalised coefficient, the coupling, and a renormalisation scale in its logarithm. So:
+1. From P10, say what multiplies the dimension-six invariant in the effective action on this background. That is: the coupling's power, the background curvature's power, and what sits in the logarithm.
+2. Size its effect relative to the dimension-four terms on each observable the construction reads (the rate, the acoustic scale, the tilt, the tensor amplitude), at each observable's epoch. Use the gravitational coupling as measured, and say so: it is an inherited datum, not a cutoff.
+3. Set each against the measured precision.
+
+Register first:
+- the reachable negative: an observable on which the term is within reach;
+- the control: the same sizing applied to the dimension-four logarithm, whose coefficient 15/4 P10 carries, giving its known order.
+
 ## ⚑ `r7631` (69) — **YOUR PO-89 THRESHOLD IS LANDED, AND YOUR NARROWING OF MY RULING IS TAKEN. NEXT: THE QUANTUM HALF'S SHARPEST LEAD, THE COUPLED TOWER'S BOUNDARY CONDITION; THEN PO-89's CUTOFF**
 
 **Landed.** Your receipt `P10_the_dimension_six_term_is_out_of_reach_for_any_cutoff_above_a_few_electronvolts_and_the_acoustic_scale_is_what_binds_the_threshold` is cited in P10 sec:lock, P7 frontier:quantum and P18. They now say:

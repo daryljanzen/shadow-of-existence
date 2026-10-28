@@ -16,14 +16,16 @@ from source: 46 checks, 0 failures.  Pinned against its output:
   * the non-invariant states lie outside the state's domain and are closed by invariance, which has no Euclidean
     content;
   * the mass and curvature coupling map with rank one, and the face imposes zero equations on the combination;
-  * at the patch's edge, in the coupled theory, the deficiency is a subspace, and no sentence carries a
-    non-Euclidean closer to it.
+  * at the patch's edge, in the coupled theory, the deficiency is a subspace, and no sentence carried a
+    non-Euclidean closer to it -- the gap this computation located, closed at r7633 by cc66's r7631 and P10's
+    sentence on it, so that arm now fails and is asserted to.
 COMPUTES: the indicial roots of the half-line operator over the ordering family, the spin-structure counts over
 GF(2), the rank of the mass map, and the regular Euclidean branch's existence over the mass term.
 """
 import contextlib
 import io
 import os
+import re
 import runpy
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -52,13 +54,23 @@ except AssertionError:
 finally:
     os.chdir(cwd)
 out = buf.getvalue()
-if '46 checks, 0 failure(s).' not in out:
+if '46 checks, 1 failure(s).' not in out:
     print('  the computation reported:', rc)
     for ln in out.splitlines():
         if 'FAIL' in ln or 'checks,' in ln or 'Error' in ln:
             print('   |', ln[:200])
 
-gate("60's computation runs from source: 46 checks, 0 failures", rc == 0 and '46 checks, 0 failure(s).' in out)
+# r7633 (69): the gap this computation located was CLOSED by the landing it fed -- P10 now carries the
+#   non-Euclidean closer (finite quadratic-form energy, cc66's r7631) at the coupled sub-threshold condition.  So
+#   exactly one arm, the one that measured the gap as open, now fails, and is asserted to fail; the closure itself
+#   is pinned in P10 below.  Any OTHER failure is a regression.
+_fails = re.findall(r'^\s*\[FAIL\] (.*)$', out, re.M)
+gate("60's computation runs from source: 46 checks, the one failure the closed gap its own arm measured",
+     '46 checks, 1 failure(s).' in out and len(_fails) == 1
+     and _fails[0].startswith('Ⓗ BUT NO sentence carries that closer to the coupled sub-threshold condition'))
+_p10 = ' '.join(open(os.path.join(ROOT, 'corpus', 'canonical_time.tex'), encoding='utf-8').read().split())
+gate("and the gap is closed in P10: the coupled condition is not the face's alone, finite form energy selecting it",
+     "it is not the face's alone: finite quadratic-form energy, which makes no appeal to Euclidean smoothness" in _p10)
 gate("the voiding control does not void; all 8 entries scoped by located sentences, 0 unscoped",
      'Ⓘ DOES NOT VOID' in out and '8 with a scoping sentence located verbatim and 0 unscoped' in out)
 gate("the extension's threshold derived as gamma = 3/4, the extension one real parameter",
