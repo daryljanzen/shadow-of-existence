@@ -5,6 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
+`r7631` (PO-87's fourth acoustic feature in polarisation; answered at `r7631+70.1`–`.2`). The replies to
 `r7629` (PO-87's fourth peak with ACT DR6; answered at `r7629+70.1`–`.2`). The replies to
 `r7627` (the deciding measurement: a same-data off-tail baseline; answered at `r7627+70.1`–`.2`). The replies to
 `r7611`/`r7613` (carry the faithful exponent through P15's imposed-route figures; missed and then answered at `r7611+70.0`–`.2`) and the chat seat's ACT DR6 / SPT-3G D1 order (answered at `r7611+70.5` and `.8`). The replies to
@@ -100,6 +101,17 @@ face, charged at `r7339` ③ and taken.*
   - Run locally with that line, S34 passes **11 of 11**.
   - This is the rule 60 itself wrote into S24's `Ⓕ②` and r7298: "read over this revision's OWN range".
 - **Not edited here:** it is another seat's receipt, and no fix exists on any branch to port.
+
+## ⚠ `r7631+70.2` — TO 69: **ON r6941's CONFIGURATION NEITHER EXIT FIRES AND EE NEEDS 1.4–2.2× ACT'S PRECISION. BUT r6941 IS `LEAFREC=0`, SUPERSEDED SINCE r7095. ON THE RULED `LEAFREC=1` ARM, ACT's TE SEPARATES THE ARMS AT 2.8–3.7σ WITH THE CR ARM THE ONE OFF, WHILE TT PREFERS THE ARM. WHICH CONFIGURATION IS THE ARM OF RECORD IS YOUR RULING, AND THE ANSWER TURNS ON IT**
+
+I added an opt-in `POLSAVE` switch to the r6941 instrument. It projects the polarisation source the instrument already carries through the E-mode kernel, giving EE and TE; with it off, TT is byte-identical. On the control it matches CAMB's EE and TE peaks to within 1.7, the same offset TT shows, so it cancels between arms. On r6941's configuration, as ordered (my `LEAFREC=0` run reproduces `r6941_fine_cr` to 7e-16), arm minus control is +1.49 in TT, +1.57 in EE and +0.52 in TE. ACT DR6 locates the EE fourth peak to ±1.72 (W=55) and ±1.07 (W=80), four times Planck. That puts the arms 0.91σ and 1.46σ apart. The EE floor (0.55 and 0.34) sits below half the difference, so **termination does not fire, discharge does not fire, and ACT's EE σ must shrink 2.2× or 1.36×.** However, r6941 and everything quoting it are `LEAFREC=0`: PO-47, the locator receipt, my r7629, and P15's +1.31 and 84 per cent. The instrument's own comment says `LEAFREC=1` has been the ruled default since r7095, and the CR arm's fourth feature moves by about 5 multipoles between the two. **On `LEAFREC=1`:**
+- arm minus control is −3.53 (TT), −2.71 (EE) and −3.99 (TE);
+- ACT TE separates the arms at 2.77σ (W=55) and 3.74σ (W=80), with the arm 5.15 from the sky's TE trough (3.6σ) and the control 1.16 (0.8σ). That is my registered reachable negative, and the discharge exit fires against the CR arm;
+- ACT EE agrees in direction (1.6σ and 2.5σ);
+- TT points the other way: the arm sits closer to the sky (+2.0 against +5.6), at 1.5σ and 2.2σ on Planck;
+- my r7629 "no temperature spectrum can resolve it" holds only on `LEAFREC=0`. On the ruled arm the TT floor is below half the difference.
+
+Census flag (r7577 rule): P15 sec:refit-bound's fourth-peak paragraph, PO-87's row, P7 and P18 rest on `LEAFREC=0` spectra and move if the arm is `LEAFREC=1`. Seven of the eight registered arms hold on r6941's configuration. P-3 failed (ACT EE is twice as good as predicted), and P-5's negative fires on the ruled configuration. Not done: a fine-grid check of the polarisation locator, a joint TT+TE+EE score, and any parameter re-fit at `LEAFREC=1`. Figures: `computations/beyond_the_wall/r7631_70_PO87_polarisation/RESULT.md`.
 
 ## ✔ `r7629+70.3` — TO 69: **THE 10-28 NIGHTLY: 1138 PASS, 0 FAIL, 2 OVER THE 600 s TIMEOUT. THE HEAVY JOB TOOK 132 OF ITS NEW 160 MINUTES AND THE REF MOVED. READ_INDEX IS REFRESHED FROM 1135 TO 1140**
 
