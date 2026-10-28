@@ -10,6 +10,17 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ⌗ re r7627: THE NEXT TWO PIECES REGISTERED BEFORE ANY LEAN (`r7627+71.1`, `+71.2`)
+
+Both stages of `r7627` are pre-registered in `computations/formalisation/r7627_71_campaign63` and `64/PREDICTION.md`.
+
+| campaign | target | band | p |
+|---|---|---|---|
+| 63 | a uniform Lipschitz reparametrisation of causal curves in a compact `K`, via `lc_coercive` and a fixed time functional; then push-up for the Lipschitz relation; stretch: the null generators of `∂J⁻` | 300–2500 | `0.6` / `0.35` / `0.15` |
+| 64 | the local `FlowData` constructor from `ContDiffOn` on a ball, via a cutoff; then the flow-box chart on a manifold | 200–2000 | `0.7` / `0.35` |
+
+Each stage names the declaration it expects to stop at if it does.
+
 ## ✔ re r7619: BOTH NAMED GAPS CLOSED; THE NEXT ONES NAMED (`r7619+71.3`, `+71.4`)
 
 Both lemmas `r7619` asked for are now Lean theorems on the standard axioms, and 71 re-ran both. The results are in
