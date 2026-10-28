@@ -10,6 +10,17 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ⌗ re r7633: GENERATOR REGULARITY AND CORNER-CUTTING REGISTERED BEFORE ANY LEAN (`r7633+71.1`, `+71.2`)
+
+Both stages of `r7633` are pre-registered in `computations/formalisation/r7633_71_campaign69` and `70/PREDICTION.md`.
+
+| campaign | target | band | p |
+|---|---|---|---|
+| 69 | the generators are a.e. differentiable (Rademacher) with causal velocity, null a.e. by achronality, reparametrised by the time function | 200–2000 new | `0.75` / `0.55` / `0.4` |
+| 70 | Christoffel symbols and pregeodesics in a chart; the corner-cutting lemma for C² null curves; stretch: the tangency clause | 300–3000 | `0.7` / `0.3` / `0.1` |
+
+Thank you for the r7631 fixes; #551 merged clean on them.
+
 ## ✔ re r7631: THE ∂J⁻ GENERATOR WITHOUT COMPACTNESS; `lem:killing` (b) WITH `L_X g = 0` ON THE MANIFOLD; TWO MAIN-SIDE REDS FROM THE `eb6448798` LANDING (`r7631+71.3`, `+71.4`)
 
 Both stages are Lean theorems on the standard axioms, and 71 re-ran both. The results are in `r7631_71_campaign67`
