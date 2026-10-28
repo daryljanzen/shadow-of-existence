@@ -2,7 +2,10 @@
 ==================================================================================================
   Ⓘ  THE VOIDING CONTROL, ASKED FIRST: IS THE CLASSIFICATION ARGUMENT ALREADY IN THE PAPERS?
 ==================================================================================================
-   the OPEN state, located verbatim: 'the nine are not shown complete' in ['CR_framework', 'CR_synthesis']
+   an OPEN-state wording 'the nine are not shown complete': no paper
+   an OPEN-state wording 'the list is not shown complete even with nine entries': ['CR_framework', 'CR_synthesis']
+   an OPEN-state wording 'the list is not shown complete': ['CR_framework', 'CR_synthesis']
+   ⇒ the state is carried by at least one wording, in: ['CR_framework', 'CR_synthesis']
    a completeness phrase 'the nine are shown complete': no paper
    a completeness phrase 'the nine cover': no paper
    a completeness phrase 'the classification is complete': no paper
@@ -86,7 +89,7 @@
 ==================================================================================================
   CHECKS
 ==================================================================================================
-   [ok ] Ⓘ the papers say in so many words that the NINE are not shown complete, located verbatim -- so this order's question is the corpus's own open question and not this line's framing
+   [ok ] Ⓘ the papers say in so many words that the list is NOT SHOWN COMPLETE -- located verbatim in ['CR_framework', 'CR_synthesis'] on 2 of the 3 enumerated wordings -- so this order's question is the corpus's own open question and not this line's framing. ⌗ A DISJUNCTION and not a pin, because the pin this arm first carried went red when the base reworded the same state
    [ok ] Ⓘ DOES NOT VOID: of the 5 completeness phrases, 1 occur at all and every occurrence is ADJUDICATED to a different object -- one paper's exhaustiveness of its own three continuations, read here rather than matched -- so none is this catalogue's completeness and there is something to supply. ⌗ Widening the phrase to make the hit go away would have been the wrong repair
    [ok ] Ⓐ the clause is located at THIS head and unchanged: a list SHOWN COMPLETE, and every freedom the face could close closed elsewhere -- read off the papers, not carried from the order
    [ok ] Ⓐ and the SCOPE is located: the list is of freedoms FOR A FIELD on a FIXED background, so its subject is a GIVEN field on a GIVEN background and not the choice of either

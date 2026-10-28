@@ -72,7 +72,17 @@ nine may fail — the coupled tower's boundary condition at the horizon, chosen 
 located here and is **not this line's**: the order gave it to the seat that holds that paper, and the
 coupled tower is not a free field. Nothing here claims it.
 
-## One repair worth recording, because the guard caught it
+## Two repairs worth recording, both forced by this revision's own first reading
+
+**The open-state arm first PINNED one wording and the base reworded it.** This arm opened by pinning the
+single phrase *the nine are not shown complete*; between the push and the merge the base reworded the same
+state to *the list is not shown complete even with nine entries*, and the pin went red **on a paper change
+that contradicted nothing**. The repair is the corpus's own rule and not a widening: *a defence against a
+paper state changing has to **enumerate** the states it may produce, and a **disjunction beats a pin***.
+Every wording that *says* the list is not shown complete is now enumerated and at least one must hold —
+while a paper that stops saying it **at all** still fails the arm, which is the whole point of it.
+
+## And the repair the guard caught
 
 The voiding control's phrase list found **one** occurrence: a paper saying *the list is exhaustive* — of
 its **own three real-landing continuations**, nothing to do with this catalogue. The sentence was **read**

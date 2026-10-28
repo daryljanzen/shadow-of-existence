@@ -47,16 +47,33 @@ def where(sub):
 
 # ══════════════════════════════════════════════════════════════════════════════════════════════════
 head('Ⓘ  THE VOIDING CONTROL, ASKED FIRST: IS THE CLASSIFICATION ARGUMENT ALREADY IN THE PAPERS?')
-OPEN_STATE = 'the nine are not shown complete'
+# ⌗ THE OPEN STATE IS READ AS A DISJUNCTION OVER ENUMERATED WORDINGS, NOT AS A PIN ON ONE -- and that
+#   repair is this revision's own, forced by its own first reading.  The arm first pinned the single
+#   phrase `the nine are not shown complete`; the base then reworded it to `the list is not shown
+#   complete even with nine entries`, the same state in different words, and the pin went red on a
+#   paper change that contradicted nothing.  The corpus's guard is explicit: a defence against a paper
+#   state changing has to ENUMERATE the states it may produce, and A DISJUNCTION BEATS A PIN.  So every
+#   wording that SAYS the list is not shown complete is enumerated here, and at least one must hold --
+#   while a paper that stops saying it at all still fails this, which is the point of the arm.
+OPEN_STATES = ['the nine are not shown complete',
+               'the list is not shown complete even with nine entries',
+               'the list is not shown complete']
 ALREADY = ['the nine are shown complete', 'the nine cover', 'the classification is complete',
            'every datum of a free field', 'the list is exhaustive']
-open_where, done = where(OPEN_STATE), {k: where(k) for k in ALREADY}
-print(f"   the OPEN state, located verbatim: {OPEN_STATE!r} in {open_where}")
+open_by_wording = {k: where(k) for k in OPEN_STATES}
+open_where = sorted({s for v in open_by_wording.values() for s in v})
+done = {k: where(k) for k in ALREADY}
+for k, v in open_by_wording.items():
+    print(f"   an OPEN-state wording {k!r}: {v if v else 'no paper'}")
+print(f"   ⇒ the state is carried by at least one wording, in: {open_where}")
 for k, v in done.items():
     print(f"   a completeness phrase {k!r}: {v if v else 'no paper'}")
 i1 = note(bool(open_where),
-          "Ⓘ the papers say in so many words that the NINE are not shown complete, located verbatim -- "
-          "so this order's question is the corpus's own open question and not this line's framing")
+          f"Ⓘ the papers say in so many words that the list is NOT SHOWN COMPLETE -- located verbatim in "
+          f"{open_where} on {sum(1 for v in open_by_wording.values() if v)} of the "
+          f"{len(OPEN_STATES)} enumerated wordings -- so this order's question is the corpus's own open "
+          f"question and not this line's framing. ⌗ A DISJUNCTION and not a pin, because the pin this "
+          f"arm first carried went red when the base reworded the same state")
 # ⌗ ONE of the five DOES occur, and it is ADJUDICATED rather than dropped and rather than loosened.
 #   The corpus's own guard: a sentence located in a paper is a fact about the object THAT PAPER is
 #   talking about, and which object that is has to be established FIRST.  So every occurrence is read
