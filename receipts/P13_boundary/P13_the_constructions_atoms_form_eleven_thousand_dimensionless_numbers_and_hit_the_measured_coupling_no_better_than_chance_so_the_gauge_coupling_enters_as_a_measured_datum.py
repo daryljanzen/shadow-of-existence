@@ -18,9 +18,9 @@ collects.  ** The finding is the control, not the hit. **
 import math
 import os
 import re
-import runpy
 import subprocess
 import sys
+import time
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(os.path.dirname(HERE))          # receipts/P13_boundary -> repo root
@@ -156,13 +156,39 @@ ok('Ⓖ③ the matching condition is reported NOT SUPPLIED, naming the count it 
 # smaller, which makes a hit look MORE significant.  The row counts the harder way on purpose, and
 # this check reads the source to confirm it, because the claim is about the method and not the
 # output.
-src = open(SRC).read()
-ok('Ⓗ① the enumerator dedupes by VALUE, not by spelling -- the choice that makes the '
-   'chance-hit control harder to pass rather than easier',
-   'dedupe by value, not by spelling' in src or 'keyed by VALUE' in src)
-ok('Ⓗ② and it recurses over the support rather than the exponent grid, the fix for the '
-   'first version that had to be killed',
-   'Recurses over the SUPPORT' in src)
+# ⌗ ** THESE TWO CHECKED THE SOURCE'S COMMENTS AND THAT WAS A HOLLOW ASSERTION. **  The first
+#   version asserted that atoms.py's docstring SAYS it dedupes by value and recurses over the
+#   support.  A comment is not behaviour: both checks would have passed with the code doing the
+#   opposite so long as the prose stayed, and check_quote_pins was right to mint three keys on
+#   them.  ** Do not put them back as string tests. **  Both are now BEHAVIOURAL.
+import importlib.util as _ilu
+_spec = _ilu.spec_from_file_location('r7627_atoms', SRC)
+_mod = _ilu.module_from_spec(_spec)
+_spec.loader.exec_module(_mod)                     # atoms.py guards main() behind __main__
+
+# ⓵ dedup by VALUE, tested on a collision the atom list actually contains: 9 is an atom and so
+#    is 3, so `9` and `3^2` are two spellings of one number and both are formable at D = 2.
+_t2 = _mod.enumerate_monomials(_mod.ATOMS, 2)
+_nine = [v for (v, _d, _sp) in _t2.values() if abs(v - 9.0) < 1e-12]
+ok('Ⓗ① the enumerator dedupes by VALUE and not by spelling, tested on a real collision: 9 is '
+   'an atom and 3^2 is formable, and the table holds that value exactly ONCE',
+   len(_nine) == 1)
+ok('Ⓗ② and the collision is genuine -- both 3 and 9 are in the frozen atom list, so the two '
+   'spellings really do exist for the enumerator to collapse',
+   any(abs(a[0] - 3.0) < 1e-12 for a in _mod.ATOMS)
+   and any(abs(a[0] - 9.0) < 1e-12 for a in _mod.ATOMS))
+
+# ⓶ the support recursion, tested by what the grid version could not do: finish.
+_t0 = time.time()
+_t4 = _mod.enumerate_monomials(_mod.ATOMS, 4)
+_elapsed = time.time() - _t0
+ok('Ⓗ③ the D = 4 enumeration COMPLETES and returns 11049 values -- the behavioural signature '
+   'of recursing over the support, since the full grid is 9^15 ~ 2e14 products and does not '
+   'finish (the first version had to be killed)',
+   len(_t4) == 11049 and _elapsed < 60.0)
+ok('Ⓗ④ and it agrees with the count the computation printed, so the receipt and the run are '
+   'enumerating the same set',
+   len(_t4) == counts[4])
 
 # --------------------------------------------------------------------------------------------
 # Ⓘ THE CONCLUSION THE ROW ACTUALLY REACHES
