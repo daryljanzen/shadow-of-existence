@@ -1,0 +1,24 @@
+  PART 1 -- the two arms' fourth acoustic feature (locator on the model spectra themselves, no noise)
+    TT: CR  1124.56   control  1128.09   arm - control -3.53
+    EE: CR   988.60   control   991.32   arm - control -2.71
+    TE: CR  1069.04   control  1073.03   arm - control -3.99
+
+  PART 2 -- the sky's fourth acoustic feature, and the arms scored against it (2 sigma needed)
+              sky       l4  stat55  stat80  proc  tot55  tot80   arm-ctl  /tot55  /tot80   ctl-sky  arm-sky
+      TT   Planck   1122.5    2.17    1.32  0.90   2.35   1.60     -3.53   -1.50   -2.21     +5.55    +2.02
+      TT      ACT   1122.0    3.01    1.99  0.58   3.06   2.08     -3.53   -1.15   -1.70     +6.11    +2.57
+      TT  P+A bnd                                  1.87            -3.53   -1.89
+      EE   Planck   1001.2    5.95    3.29  3.39   6.84   4.72     -2.71   -0.40   -0.58     -9.88   -12.59
+      EE      ACT    990.6    1.70    1.04  0.28   1.72   1.07     -2.71   -1.58   -2.53     +0.72    -1.99
+      EE  P+A bnd                                  1.67            -2.71   -1.63
+      TE   Planck   1068.7    2.03    1.29  1.35   2.43   1.86     -3.99   -1.64   -2.14     +4.30    +0.31
+      TE      ACT   1074.2    1.28    0.83  0.67   1.44   1.07     -3.99   -2.77   -3.74     -1.16    -5.15
+      TE  P+A bnd                                  1.24            -3.99   -3.22
+
+  PART 3 -- the full-sky, noise-free floor on the feature's location (the control's spectra, plik_lite's bins)
+    TT W=55: floor sigma(l4) = 1.27  -> arm-control -3.53 at best 2.78 sigma; half the difference is 1.77: floor below it
+    TT W=80: floor sigma(l4) = 0.80  -> arm-control -3.53 at best 4.43 sigma; half the difference is 1.77: floor below it
+    EE W=55: floor sigma(l4) = 0.55  -> arm-control -2.71 at best 4.89 sigma; half the difference is 1.36: floor below it
+    EE W=80: floor sigma(l4) = 0.34  -> arm-control -2.71 at best 7.93 sigma; half the difference is 1.36: floor below it
+    TE W=55: floor sigma(l4) = 0.48  -> arm-control -3.99 at best 8.36 sigma; half the difference is 2.00: floor below it
+    TE W=80: floor sigma(l4) = 0.30  -> arm-control -3.99 at best 13.22 sigma; half the difference is 2.00: floor below it
