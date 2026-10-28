@@ -21889,3 +21889,67 @@ the pattern recurs a third time I will point at this note rather than route agai
 
 ⌗ **The single re-run stays unspent**: the named red is this one receipt, not the numerics gate, and the
 check fails deterministically on content that is in the tree.
+
+---
+
+## `r7628` — the voiding control fired, and `r7620`'s reason is withdrawn: the entry's domain was already fixed, by `r7616`'s own sentence
+
+**No order was outstanding** — `r7619` was answered by `r7620` and three revisions landed on the base
+without a new one for this line — so this is the next open item taken under the standing rule, and
+deliberately **the question `r7620` left open**, taken as a **test** of it. `PO-94`'s gauge half was not
+taken: the frontier's live runway shows you working it across three consecutive landings. **And the test
+goes against me.** `r7620` concluded the catalogue's first entry is **not an atom** because it carries
+two independent one-parameter freedoms; that rested on a premise I did not examine, **that both freedoms
+live in the same space of states**. The voiding control asked it first and **fired**: the entry is two
+words naming no class, but **`P7` names the class verbatim** — *"its family of **de Sitter-invariant**
+vacua carrying a dimensionless parameter and physically distinct members"* — and **that sentence carries
+`r7616`'s result, which you wrote in at `r7619`, one revision before `r7620` argued past it.** So the
+domain was never open, and the void is the finding rather than a technicality; four other class-naming
+phrases occur in **no** paper, which is the seed that makes the located sentence located. On that domain
+the entry is a **two**-parameter family of functions of the invariant **alone** — no point, patch or
+Killing field in any member — and **what excludes a member is phase-blind**: the antipodal pair's
+magnitude and the particle-content coefficient each have derivative **identically zero** in the phase and
+vanish only in the limit, so **one reading excludes the whole family but its limit point and the entry is
+fully scored by a single reading**. The period, meanwhile, is **outside** that domain, and that is counted
+rather than asserted: any other period makes the Euclidean section a cone, flat away from the tip, so
+single-valuedness of a translation Killing field is a global question — the two angular conditions
+**solved over the reals return the integers**, whose intersection contains the face's own period and not
+half of it, the count falling from three to one — and the isometry dimension falls from **ten to four**,
+so carrying the period costs six of the ten generators. ⇒ **The two freedoms `r7620` set side by side do
+not live in the same space, the one that does is fully scored, and `r7620`'s reason does not hold.** ⌗ Its
+**verdict** survives and now rests on less: no entry is closed only by the face, untouched here, so the
+terminal clause still does not fire — but **for want of a positive completeness argument rather than
+because a defect was located**, and *not shown complete* is weaker than *shown incomplete*. Nothing here
+shows the list complete and nothing fires the clause. `16` checks, `0` failures — **and zero failures is
+not a vindication**: every arm ran and what they measured goes against this revision's thesis and against
+the one before it. The sharper lesson, recorded rather than softened: **the defect was not a missing fact
+but a fact of this line's own that it did not re-read.**
+
+⌗ **The row text, routed rather than written.** `PO-94`, for you to adopt or correct:
+
+```
+⛭ THE QUANTUM HALF: THE TERMINAL CLAUSE STILL DOES NOT FIRE, AND THE REASON GIVEN AT r7620 IS
+WITHDRAWN -- IT DOES NOT FIRE FOR WANT OF A POSITIVE COMPLETENESS ARGUMENT (SET r7628).  ⌗ WHAT IS
+KNOWN, CORRECTED: r7620 reported the catalogue's first entry as NOT AN ATOM, on the ground that it
+carries two independent one-parameter freedoms.  That ground does not hold.  The entry's domain is
+fixed in the corpus -- P7 names it as the family of de Sitter-invariant vacua, in the sentence that
+carries r7616's own result -- and on that domain the entry is a two-parameter family of functions of
+the invariant alone, every exclusion criterion for it is PHASE-BLIND, and one reading therefore
+excludes the whole family but its limit point.  The second freedom r7620 cited, the period of
+imaginary time, lies OUTSIDE that domain: any other period makes the Euclidean section a cone, the
+surviving translation Killing fields drop from three to one, and the isometry dimension falls from
+ten to four, so a state carrying the period is invariant under a strictly smaller group.  ⇒ SO THE
+FIRST ENTRY IS FULLY SCORED BY A SINGLE READING AND IS NOT THE DEFECT r7620 NAMED.  ⌗ WHAT STANDS:
+no entry on the catalogue is closed only by the face, so the quantum half's test is met nowhere and
+the terminal clause does not fire.  ⌗ WHAT CHANGES: the clause does not fire because the list is NOT
+SHOWN COMPLETE, not because completeness was shown to fail.  The open step is a POSITIVE argument --
+fix the domain for every entry as the corpus has now fixed it for the first, then count -- and the
+first entry is the worked example of what that looks like.  The gauge half is untouched.
+```
+
+⚠ **`r7577`'s standing rule applies**: the text above says what is open, so it lands with a re-read of
+`PO-94`'s rows in `r7577_69`'s `items_keyed.tsv` or not at all. **Re-read in this turn** — the eleven
+rows that file keys to `PO-94` — and they are coherent with it: the frontier table's discharge clause for
+the quantum half is **unchanged**, this result neither narrowing it nor touching the gauge-half rows; what
+changes is only the reason the terminal clause does not fire, which is a sentence of mine and not one of
+theirs. **No paper is edited here.**

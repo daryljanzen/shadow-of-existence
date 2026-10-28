@@ -1,0 +1,78 @@
+
+==================================================================================================
+  Ⓕ  THE VOIDING CONTROL, ASKED FIRST -- AND IT FIRES
+==================================================================================================
+   the catalogue's entry, verbatim from the order that supplied it: 'the state'  (2 words, naming no class)
+   but the PAPERS do name the class, located verbatim: 'its family of de Sitter-invariant vacua carrying a dimensionless parameter and physically distinct members'
+     in ['CR_framework']
+   ⇒ Ⓕ VOIDS.  Per the registration the reply says that -- and the next arms say WHAT IT COSTS,
+     because a premise that fails here leaves a claim of mine standing in the register.
+   seed: the other 4 class-naming phrases occur in: no paper
+
+==================================================================================================
+  Ⓐ  THE INVARIANT FAMILY, COUNTED
+==================================================================================================
+   G_alpha = -c*((Z - 1)*exp(a) + (Z - 1)*exp(a + 2*I*theta) - (Z + 1)*(exp(2*a) + 1)*exp(I*theta))*exp(-I*theta)/((Z - 1)*(Z + 1)*(exp(2*a) - 1))
+   its free real parameters (excluding normalisation and the invariant): ['a', 'theta']
+   ⇒ Ⓐ HIT: a TWO-parameter family of functions of the
+     invariant alone.
+
+==================================================================================================
+  Ⓑ  DOES SCORING THE ENTRY ONCE SCORE BOTH ITS PARAMETERS?  -- THE ARM THAT DECIDES AGAINST r7620
+==================================================================================================
+   the antipodal pair's magnitude            : |e^alpha| = exp(a)
+   its derivative in the PHASE               : 0
+   the particle-content coefficient          : exp(2*a)/(1 - exp(2*a))
+   its derivative in the PHASE               : 0
+   ⇒ Ⓑ HIT: scoring the entry ONCE scores BOTH parameters,
+     because what excludes a member is phase-blind.  THE ENTRY IS FULLY SCORED BY ONE READING.
+
+==================================================================================================
+  Ⓒ  AND THE PERIOD IS OUTSIDE THAT DOMAIN -- COUNTED, NOT ASSERTED
+==================================================================================================
+   single-valuedness on a translation Killing field, for EVERY angle, needs both of
+     cos(2*pi*c) - 1 = 0  and  sin(2*pi*c) = 0
+   solved over the reals:  first Integers
+                           second Union(ImageSet(Lambda(_n, (2*_n*pi + pi)/(2*pi)), Integers), Integers)
+   their intersection:     Integers
+   at c = 1/2 the condition reads -2*cos(phi) -- not zero
+   at c = 3/4 the condition reads sin(phi) - cos(phi) -- not zero
+   ⌗ IMPORTED and labelled as imported, not measured here: the smooth section's isometry group
+     is SO(5) and the conical one's is the period rotation times SO(3).  Their dimensions,
+     computed: 10 against 4.
+   ⇒ Ⓒ HIT: the period is OUTSIDE the entry's own domain
+     as the corpus states that domain, because carrying it costs six of the ten generators.
+
+==================================================================================================
+  Ⓔ  THE CONTROLS, CARRIED FROM r7616 AND r7620
+==================================================================================================
+   phase derivative: 0;  Wronskian solutions: 1
+   ⇒ Ⓔ HIT: the instrument still tells the verdicts apart.
+
+==================================================================================================
+  Ⓓ  THE VERDICT ON r7620 -- AND IT GOES AGAINST ME
+==================================================================================================
+   r7620 concluded: the first entry is NOT AN ATOM, because scoring 'the state' once scores
+   neither of its two freedoms completely -- the mixing parameter and the period.
+
+   MEASURED HERE, and each part against that conclusion:
+     Ⓕ the entry's domain IS fixed in the corpus, to the de Sitter-INVARIANT vacua, by a
+       sentence that carries this line's own r7616 result -- so the domain was never open.
+     Ⓐ that domain is a TWO-parameter family of functions of the invariant alone.
+     Ⓑ and what excludes a member of it is PHASE-BLIND, so ONE reading excludes the whole
+       family but its limit: scoring the entry once DOES score both of its parameters.
+     Ⓒ while the period is OUTSIDE that domain, costing six of the ten generators.
+
+   ⇒ Ⓓ r7620's reason is WITHDRAWN and its verdict is RE-GROUNDED, which is the outcome this
+     revision registered as the one that would cost me something.  The other was reachable and
+     did not happen.
+
+==================================================================================================
+  THE COUNT
+==================================================================================================
+   16 checks, 0 failures.
+
+   ⌗ The voiding control FIRED, which the registration treats as the premise failing -- and the
+     arms after it say what that costs rather than stopping, because a premise that fails here
+     leaves a claim of mine standing in the register.  Nothing here is scored as a HIT for the
+     revision's own thesis: the thesis is withdrawn.
