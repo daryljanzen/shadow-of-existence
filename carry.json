@@ -3752,17 +3752,5 @@
     "unmeasured": true
    }
   }
- },
- "main": {
-  "tolerance": {
-   "receipts/L559_the_registry_from_files_inward/O1_the_registry_was_turned_outward_and_the_arrow_still_pointed_one_way.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40595947226",
-    "since": "704af90dc9c762743e7e2edbc9e3ac72f9457fe7"
-   },
-   "receipts/P17_geometric_core_paper/P17_the_frontier_item_is_a_result_and_the_cosmogenesis_paper_reaches_it_the_other_way.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40595947226",
-    "since": "704af90dc9c762743e7e2edbc9e3ac72f9457fe7"
-   }
-  }
  }
 }
