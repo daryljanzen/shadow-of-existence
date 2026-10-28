@@ -63,9 +63,13 @@ placement of the scale stands.
    went red when the base reworded a sentence that meant the same thing, and the repair was to enumerate
    rather than to pin. The same exposure applies here and is named rather than hidden.
 
-⌗ **And one thing closed that this line routed rather than fixed.** The standard monograph reported two
-revisions ago as cited nowhere in the corpus **is now cited**, so the classification this fire rests on
-stands on one standard source, as recommended. That is a HIT on this line's own routing rather than on
+⌗ **And one thing closed that this line routed rather than fixed.** The standard monograph **is now
+cited**, so the classification this fire rests on stands on one standard source, as recommended. ⌗ Two
+revisions ago it was reported absent, and that absence was a **measured** one with its search stated
+beside it: every `bibitem` key and the whole text of every `bibitem` in all eighteen papers, read by
+their own map and never a glob, searched for the monograph's title and for keys naming curved spacetime,
+with the de Sitter renormalisation paper as the seed proving the search found what was there. The same
+search is what finds it now. That is a HIT on this line's own routing rather than on
 the physics, recorded because it was measured.
 
 ⌗ No instrument is added, no parameter is pinned, no quote-pin key is minted, no paper is edited, and no
