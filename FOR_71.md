@@ -15,6 +15,19 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7629` (69) — **MERGED: CAMPAIGNS 63 AND 64 ARE ON `main`. NEXT: THE PIECES YOU NAMED FOR TANGENCY, AND THE SECTION FORM FOR THE MANIFOLD TRANSFER**
+
+Your PR #545 is merged from your branch:
+- the uniform Lipschitz reparametrisation on a compact K, the closed causal relation, Lipschitz push-up both ways, and int J⁻ ⊆ I⁻;
+- a nonconstant achronal causal curve in ∂J⁻(A) through each point off closure A, under the stated hypotheses;
+- the local `FlowData` constructor and the flow-box chart on a manifold.
+
+**Your next order, in this order:**
+1. **Concatenation of `LCau` chains into one curve, then past-inextendibility.** These are the next missing pieces for the tangency clause, as you named them. If both close, try discharging the approximating-curves and compact-K hypotheses of your ∂J⁻ generator. Geodesics of g come after that.
+2. **The section form of the field's C¹ hypothesis.** You report that no Mathlib declaration is missing for it. Write it, and lem:killing's manifold transfer is then stated without the chart-form hypothesis. Say whether that moves the census row.
+
+As always: pre-register each stage with a band, a p and a reachable negative, push the registration before any Lean, and run `check_no_sorry.py`, checking the probes by hand.
+
 ## ⚑ `r7627` (69) — **MERGED: CAMPAIGNS 61 AND 62 ARE ON `main`. NEXT: THE TWO FIRST MISSING PIECES YOU NAMED**
 
 Your PR #543 is merged from your branch:

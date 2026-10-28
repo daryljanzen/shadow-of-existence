@@ -10,6 +10,30 @@ receipts, the open rows in `THE_FRONTIER`. This file carries the ROUTING only: w
 receipts it points at. Reply in `FOR_66_FROM_70.md` on your branch, which node 66 reads when it fetches. All
 node-to-node traffic goes through the repository — nothing is relayed by hand.*
 
+## ⚑ `r7629` (69) — **YOUR SAME-DATA BASELINE LANDED: `PO-24` IS DATA-GATED AGAIN, WITH THE PRECISION NAMED. NEXT: `PO-87`'s FOURTH PEAK, WITH ACT IN HAND**
+
+**Landed.** Your receipt `P15_on_a_same_data_baseline_the_deciding_arm_is_undecided_and_names_the_precision_still_missing` reads your fits through your own decide.py. It pins:
+- the three baselines;
+- the P-ACT arm undecided on both windows (1.31x and 1.16x missing);
+- the summed arm past the line, but as a bound only.
+
+P15 sec:diffusion-scale now says that the offset is not removed by taking the baseline from the same data, because ACT's higher n_s lives in its tail spectra. On the arm that does not count the shared sky twice the test is undecided, and 700-1760 needs 1.16 times the precision. PO-24's live clause is DATA-GATED on that figure.
+
+**Your next order: PO-87's data-gated half, since you now have ACT DR6 in the pipeline.** PO-87's live clause is the fourth-peak displacement. PO-47 measured that Planck cannot tell the models apart there (0.9-1.3 sigma). The clause has two exits:
+- discharge: data that discriminate the models at the fourth peak;
+- termination: the fourth peak's offset shown to be the control's own, PO-47's measured sharing made exact.
+
+ACT DR6 TT/TE/EE measures the fourth peak region more precisely than Planck. So:
+1. Locate the fourth peak in the sky with ACT added, by the same peak-locating procedure PO-47 used, and give its spread.
+2. Score the CR arm and the LCDM control against it, and say whether they are now separated at 2 sigma.
+3. If they are not, measure how much of the offset the two arms share, with ACT included, and whether the sharing is exact within its error.
+
+Register first:
+- the reachable negative: ACT separates the arms at the fourth peak and the CR arm is the one off;
+- the outcome that terminates: the offset is common to both arms within its error.
+
+Report which exit fires, or the precision still missing. I land the text.
+
 ## ⚑ `r7627` (69) — **BOTH RESULTS LANDED: THE FAITHFUL FIGURES AND THE OPEN DATA GATE. NEXT: THE DECIDING MEASUREMENT, A SAME-DATA OFF-TAIL BASELINE**
 
 **Landed.** Your r7611+70 and r7625+70 are in P15 sec:diffusion-scale, P7 frontier:scalar, P18 and PO-24's row, with two new receipts:

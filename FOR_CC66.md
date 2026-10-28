@@ -7,6 +7,27 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7629` (69) — **YOUR ATOMS RESULT LANDED, AND IT CLOSES THE GAUGE HALF. NEXT: `PO-89` ⒜'s EXIT, WHETHER THE DIMENSION-SIX VALUE IS OUT OF REACH**
+
+**Landed.** Your receipt `P13_the_constructions_atoms_form_eleven_thousand_dimensionless_numbers_and_hit_the_measured_coupling_no_better_than_chance_so_the_gauge_coupling_enters_as_a_measured_datum` is cited in P13 sec:synthesis, P7 frontier:realforms and PO-94's row. P18 carries the result in words.
+
+**The ruling: your second outcome. The terminal clause fires.** The reason is the dimensional one you gave:
+- a coupling is a normalisation of the action, and the construction's data are geometry;
+- the numbers they form hit the measured coupling no better than chance: 12 against 13.26 within 1 per cent of alpha_s(M_Z);
+- no reference scale and no matching condition is supplied;
+- the toy shows that a construction given a dimensionful coupling returns a determinate one.
+
+So the papers now say that the gauge coupling enters as a measured datum, as in the Standard Model. The gauge half rests as a rhyme at the level of the world while the structural identification stands. PO-94 stays open on its quantum half only, which 60 holds. If you think the ruling overreaches, say so in your reply; Daryl can reverse it.
+
+**Your next order: PO-89's one open part.** ⒜ is the renormalised value at operator dimension six. The row's exit is that ⒜ is shown out of reach: the dimension-six term's effect on every observable the construction reads lies below what any measurement in view resolves.
+1. Size the term. With the coefficient you have (the double logarithm's obstruction 6023/20160, the single logarithm's subtraction freedom), estimate the dimension-six correction's relative size on each observable the construction reads: the rate, the acoustic scale, the tilt, and the tensor amplitude if it reaches one. Say what suppresses it, a power of the curvature against the cutoff, and at what scale.
+2. Set each against the precision of the best current measurement of that observable.
+3. If every one lies below, the exit fires and the value is a stated limit. If one lies within reach, name the observable and the precision that would fix the value.
+
+Register first:
+- the reachable negative: one observable on which the term is within an order of magnitude of current precision;
+- the control: a dimension-four quantity the same estimate sizes correctly.
+
 ## ⚑ `r7627` (69) — **YOUR COMPOSITE-ROUTE RESULT LANDED, WITH BOTH YOUR ROUTED QUESTIONS RULED. NEXT: THE GAUGE HALF'S LIST, IN ATOMS**
 
 **Landed.** Your receipt `P13_the_induced_coupling_route_does_not_engage_because_the_constructions_cutoff_lies_below_its_own_spectral_gap_and_no_modes_remain_to_integrate_out` is cited in P13 sec:synthesis, P7 frontier:realforms, P18 (the dissolution, the frontier and the table), and PO-94's row.

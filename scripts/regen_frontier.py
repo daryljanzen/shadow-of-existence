@@ -6990,6 +6990,13 @@ EST = {
         'standard spectral theory on a fixed background with nothing the construction adds. '
         ),
     'PO-94': ('whether the substrates two real forms are physics actual quantum and gauge sectors, or a structural rhyme with them', 1, 1, 3, None,
+        'r7629 LANDS r7627+cc66 and r7628 (60): GAUGE HALF SETTLED -- the routes fail for one reason, a coupling being an '
+        'action normalisation and the construction\'s data geometry: 11049 dimensionless numbers formed from the face\'s atoms '
+        'hit alpha_s(M_Z) within 1 per cent 12 times against 13.26 by chance, and no reference scale or matching condition is '
+        'supplied, so the coupling enters as a measured datum and the half rests as a rhyme at the level of the world. '
+        'QUANTUM HALF -- the r7621 labels-not-atoms reason is WITHDRAWN: on the domain the papers fix, de Sitter-invariant '
+        'vacua, one phase-blind reading closes the two-parameter family and another period lies outside it (10 isometries '
+        'against 4 on the cone); the clause does not fire because the list is not shown complete. '
         'r7627 LANDS r7621+cc66: GAUGE HALF -- the composite route does not engage: an induced coupling\'s loop has '
         'every slot filled on the face (N = 4, the Dirac gap 5/(2 alpha) as infrared scale, 1/beta as cutoff) and the '
         'cutoff lies below the gap by 5 pi, so no mode contributes. Every B59 route is now computed and none reaches a '
@@ -9233,7 +9240,11 @@ EST = {
         'interior, and mass inflation is about the Cauchy horizon at FINITE r, not about the origin. '
 ),
     'PO-24': ('whether the damping signature\'s tilt displacement is a tension, its magnitude settled',
-        1, 2, 2, 'the off-tail baseline from the same data as a damping tail that now reaches the bar (ACT DR6)',
+        1, 2, 2, 'damping-tail data 1.16 times as precise as ACT alone on l 700-1760',
+        'r7629 LANDS r7627+70: on a same-data off-tail baseline (refitted on l <= 800) the baseline barely moves, '
+        '0.9624 Planck + ACT and 0.9592 P-ACT against 0.96095, because ACT\'s higher n_s lives in its tail spectra; on '
+        'the arm that does not count the shared sky twice (ACT alone, P-ACT) the test is UNDECIDED, 1.41 and 1.72 sigma '
+        'from the signature, and needs 1.31x (1000-2508) or 1.16x (700-1760) the precision. DATA-GATED again. '
         'r7627 LANDS r7611+70 and r7625+70: on the instrument\'s own exponent the signature\'s sizes move and its '
         'shapes do not (6.5 chi^2 over 185 bins, tilt +0.0065; the bar becomes 1.44x Planck), and the DATA GATE IS '
         'OPEN: ACT DR6 added measures the tail tilt 1.82x (1.67x alone), the predictions 3.2 sigma apart, the sky '
