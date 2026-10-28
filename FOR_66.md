@@ -25267,3 +25267,78 @@ RECORD (suite @ b8d04e8f0e): ran 53, 2 named red; +0 carried, 40 cleared by a gr
 ⌗ **The merge was verified rather than trusted, and this one had a DELETION in it**, which is the case the old "keep both" rule got wrong at `r7591`: `main` deleted `journal_inputs/floor_figure.py` and renamed three files out of `journal_inputs/`. By set comparison against `git show origin/main:receipts/INDEX.md` — rows `main` has that this tree lacks: **none** (so no deletion resurrected and no addition lost); rows this tree adds: **exactly one**, this branch's own `r7621` row. `journal_inputs` survives nowhere in the merged tree but in the two forward files' prose, where it is history. And the generated appendices were **regenerated from the merged index** rather than resolved by choosing a side: all three came back **byte-identical** to the auto-merge, with `check_appendix_current` green on both rails, `1129` receipt rows and `25` ledger rows.
 
 ⇒ **Nothing is owed on `#540` now but CI's own confirmation.** The standing-down comment stays as the record of why the reds were not this branch's; it needs no further edit once the run is green.
+
+## ✔ `r7625+cc66.2` — **`#540` IS GREEN AND BOTH CARRIES ARE AT ZERO. AND A COST I CAUSED ALONG THE WAY, WITH THE RULE OF MINE THAT WAS WRONG**
+
+Run `8323` on `e4050ee9f` completed **`success`**, every one of its 12 jobs green or skipped. The two measurements worth having:
+
+```
+plain suite   417 pass, 0 fail, 0 over timeout, in 4937s wall
+              ran 417, the run passed; +0 carried, 412 cleared by a green, 0 still red; 0 carried after this push
+tolerance     build A: MEASURED -- 301 of 301 probed    build B: 301 of 301    build C: 301 of 301
+              VERDICT (both comparisons): CLEAN -- 0 flagged site(s) (1 and 5 at the precision floor, counted not flagged)
+              ran 301, the run passed; +0 carried, 294 cleared by a green, 0 still red; 0 carried after this push
+```
+
+⇒ **Both carry classes are drained to zero**, and `0 over timeout` on a `4937 s` suite is the first direct confirmation that your `r7625` budget bump was the right call: `82` minutes of wall over `417` receipts is precisely the four-job contention that broke `1500 s`, and nothing went over.
+
+### ⛔ AND THE COST, WHICH WAS MINE AND WHICH I HAD ALREADY BEEN TAUGHT ONCE
+
+Run `8318`, on the previous head, had a **328-receipt** tolerance sweep in flight. My two pushes killed it. Its own log:
+
+```
+build A: PARTIAL -- the probe was stopped from outside (its step was cancelled) -- 34 of 328 probed
+build B: PARTIAL -- ... 41 of 328 probed        build C: PARTIAL -- ... 36 of 328 probed
+ran 328, 0 named red, 294 NEVER PROBED; +292 carried, 0 cleared by a green, 2 still red
+```
+
+**No test failed there either** — both comparisons read `CLEAN`, `0 flagged`, `0 named red`. What it cost was `292` receipts back on the carry as `unmeasured`, and the `2 still red` were `O1` and `P17` listed *simultaneously* as `~ never probed`, so that was the held carry and not a verdict. ⇒ `8323` then re-probed and cleared all of it, which is the carry mechanism working exactly as advertised — **the loss was recoverable, and it was still a loss I paid for twice.**
+
+⌗ **The rule of mine that was wrong, stated so it does not recur:** I dismissed `8318` as *"a superseded head, its result wouldn't be authoritative anyway."* The first half was true and the second half does not follow. **The carry is shared state across heads, not per-`sha`** — a sweep on a superseded head is still draining the same ledger the next head inherits, so "superseded" is no reason at all to treat a running sweep as expendable. ⇒ The hold test takes the *sweep's* state, never the head's: hold while probes are running, whichever commit they are running on.
+
+⌗ *And on the third firing the hold was finally taken correctly: at `03:46` nothing of mine was uncommitted, no fix was waiting, `8323`'s probes were live — so I wrote nothing and pushed nothing until it finished, and this entry carries its verdict instead of cancelling it.*
+
+## ⚑ `r7627` — **THE ATOMS FORM `11,049` NUMBERS, ONE SITS INSIDE $\alpha_s$'s OWN ERROR BAR, AND IT MEANS NOTHING: THE HIT RATE IS *AT CHANCE*. AND THE REASON NO MONOMIAL CAN BE A COUPLING IS DIMENSIONAL, NOT NUMERICAL**
+
+Both your rulings received. `⒝` in particular — thank you for taking the gap identification on its merits, and the row still records that the verdict does not depend on it.
+
+**The enumeration, bounded and declared before any comparison ran** (products of integer powers, `Σ|e| ≤ D`, deduplicated **by value and not by spelling**): `30`, `374`, `2481`, **`11,049`** numbers at `D = 1,2,3,4` from the `15` frozen atoms.
+
+**⓵ Your named negative is observed, and I will not soften it.** The closest formed number is
+
+```
+0.117893  =  (β/α)⁻¹ · 60 · 81⁻¹        against   α_s(M_Z) = 0.1180 ± 0.0009      −0.09%
+```
+
+**inside the measured value's own experimental error.** Quoted alone that is a find.
+
+**⚠ ⓶ It is not one, and this is the row's finding.** The pre-registration required the candidate count beside the hit, so:
+
+| target | window | observed | **expected by chance** | ratio |
+|---|---|---|---|---|
+| `α_s(M_Z)` | ±1% | `12` | **`13.26`** | **`0.91`** |
+| `1/g²(M_Z) = 0.674385` | ±1% | `12` | **`13.73`** | **`0.87`** |
+| `α_s(M_Z)` | ±5% | `71` | `66.45` | `1.07` |
+| `1/g²(M_Z)` | ±5% | `77` | `69.05` | `1.12` |
+
+⇒ **The atoms hit the measured coupling no better than a target drawn at random from the same two decades — slightly *worse*, in both tight windows.** `4000` random targets set that expectation; it is measured, not estimated. *A row reporting the `−0.09%` without the `13.26` would have reported noise as a result.*
+
+**⓷ And underneath both, the part I think is the actual answer to your order: the obstruction is dimensional.** A gauge coupling **is** an action normalisation; the atoms are lengths, integers and spectral ratios — geometry. The toy control you asked for by name makes it exact: Kaluza–Klein gives `1/g₄² = 2πR/g₅² = 12.566371`, **determinate** — and what makes it determinate is `g₅²`, an independent **dimensionful** datum. Strip it, keep the geometry, and the coupling is not a number at all. ⇒ **No monomial in these atoms is a coupling whatever its value**, which is why ② came back *uninformative* rather than *empty*, and why all five routes failed in the same place.
+
+So: no **reference scale** (`α` symbolic end to end, every atom a ratio — a coupling is quoted *at an energy* and a set of ratios names no energy), and no **matching condition** (nothing picks which of `11,049`, or where). ⇒ **The coupling enters as a measured datum**, as the papers already say. That is your second outcome, reached through ③ and ④ rather than through "no candidate found", exactly as registered.
+
+⌗ **Where this row is open, and it is the atom list — your third outcome, stated where it applies.** Whether *"the integers"* is **closed** is a reading of what the construction posits, not a computation: `27` and `81` are derived group orders, `5` is a dimension, and the multiplicities continue past `60`. **The enumeration is bounded by my `D` and by my choice of where the multiplicity list stops, and neither bound is the construction's.** Two things keep that honest rather than fatal: the chance-hit *ratio* is flat in `D` by construction, since observed and expected both scale with `N`; and the dimensional argument does not depend on the list's length at all — adding atoms adds geometry, and geometry is the thing that cannot be an action normalisation.
+
+⌗ **Your open invitation, answered as registered.** Mechanisms that fix a coupling *without* a constituent loop do exist in the standard constructions — topological and index-type conditions, a coupling set by a boundary condition. **That they exist is not that one applies here**, and I have kept those two apart rather than claiming either way; it wants its own row if you want it pursued.
+
+⌗ *And a second fault, which `check_quote_pins` caught and was right about: two checks asserted that the computation's own **docstring says** it dedupes by value and recurses over the support. A comment is not behaviour — both would have passed with the code doing the opposite — and the gate minted three keys on them. They are behavioural now: a real collision ($9$ is an atom, $3^2$ is formable, the table holds the value once) and the $D=4$ enumeration completing at $11{,}049$, which the grid could not do. No key was adjudicated into the baseline, because the right fix was to stop pinning my own prose.*
+
+⌗ *One fault of mine, in the `WALK` and the row: the first enumerator swept the full exponent grid, `9¹⁵ ≈ 2×10¹⁴` products, and had to be killed. The monomials it was after number `11,049` — the grid containing them was ten orders of magnitude larger. The fix, recursing over the **support**, and the reason sit in the function's own docstring.*
+
+Landed: receipt `P13_the_constructions_atoms_form_eleven_thousand_dimensionless_numbers_and_hit_the_measured_coupling_no_better_than_chance_so_the_gauge_coupling_enters_as_a_measured_datum`, `36` checks, every printed figure pinned by **comparison** and verified failable by perturbing an atom (`27→28`) and watching six checks go red, then restoring byte-identically. INDEX row at the end of `P13`'s block; appendices regenerated; `boundary_paper.pdf` recompiled.
+
+⛭ **ADDENDUM to `r7627+cc66` — two more faults of mine, both caught by instruments rather than by me, and one correction to my own push rule**
+
+**⒜ The tolerance sweep flagged my own receipt, and it was right.** Run `8346` on `675ab0d64`: all three builds `MEASURED`, `94 of 94` probed, **`1 flagged site`** in both comparisons — and the site was mine, line `188` of the new receipt. It was a **wall-clock** term, `elapsed < 60 s`, standing as the "behavioural signature" of the support recursion. The same comparison read `0.0876 s` on build A, `0.1232 s` on B and `0.0747 s` on C. ⇒ **A clock measures the machine, not the code**, so it is a numeric site that moves between builds *by construction*; the enormous headroom (`487×`, `685×`) did not make it stable, it made it *harmlessly* unstable. **A duration is never a pinned comparison.** The check now asserts only that the enumeration completes at exactly `11,049`, which is build-stable; that the `9^15` grid could not finish is history and sits in the docstring and the `WALK`. ⌗ *This is the third fault in one row that an instrument caught and I had not: `check_figures_pinned` on seven unpinned figures, `check_quote_pins` on three keys minted by pinning my own prose, and now the sweep on a clock. Each was a case of asserting something **adjacent** to the claim rather than the claim.*
+
+**⒝ And a correction to what I told the chat about holding a push.** When I pushed the row over run `8338`, I argued its sweep would be small because the push was Markdown-only, citing earlier `FOR_66`-only scopes of `16` and `4` receipts. **It was `274`, and `71` were lost** — all three builds `PARTIAL`, *"the probe was stopped from outside"*, `203`/`210`/`272` of `274` probed, `0 named red`, `0 flagged`, both comparisons `CLEAN`. The push was still the right call (a whole uncommitted row against a recoverable carry) but **my estimate was wrong, and wrong by reasoning rather than by luck**: `4ef36517a` was a **merge commit**, so the sweep's range included everything the merge brought in from `main`, not just the two files I authored. ⇒ **The rule gains a clause: a merge commit's sweep is never scoped by the files you wrote.** The `71` cleared on the next union, as the carry is designed to do.
