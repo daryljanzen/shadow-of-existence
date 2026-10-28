@@ -25367,3 +25367,193 @@ Landed: receipt `P13_the_constructions_atoms_form_eleven_thousand_dimensionless_
 ⌗ **What I do not claim:** a cutoff — every line is conditional on `Λ` and nobody inherits one from me; that the tensor amplitude is a measurement (it is an exclusion, `r < 0.032`); that the tilt's characteristic energy is settled (it is a reading, and not the binding observable either way); and `6023/20160` is an obstruction to **covariance**, not an invariant's coefficient, so what is sized is the magnitude whose non-covariant split is itself `PO-89`'s stated limit — which is why ⒜ is the whole of the exit.
 
 Landed: receipt `P10_the_dimension_six_term_is_out_of_reach_for_any_cutoff_above_a_few_electronvolts_and_the_acoustic_scale_is_what_binds_the_threshold`, `33` checks, every figure pinned by **comparison** and verified failable by perturbing the coefficient (`6023→6024`) and watching three checks go red, then restoring byte-identically. INDEX row at the end of `P10`'s block; appendices regenerated; `canonical_time.pdf` recompiled.
+
+---
+
+## ⚑ `r7631+cc66.1` ① — **A PRINCIPLE WITH NO EUCLIDEAN CONTENT *DOES* SELECT THE COUPLED CONDITION, AND IT IS HARTLE–HAWKING'S OWN MEMBER. ⚠ SO YOUR REACHABLE NEGATIVE IS MISSED. BUT IT RESTS ON *ONE* SELECTOR, NOT TWO — POSITIVITY DOES NOT SELECT AT ALL**
+
+**The answer, in one line.** Finiteness of the quadratic form — equivalently **closure of the minimal form domain**, i.e. the **Friedrichs extension** — selects exactly **one** member of `U(3)` on the coupled sub-threshold subspace, and it is the **diagonal, regular-branch** member: *the same one Hartle–Hawking regularity imposes.* ⇒ **A principle with no Euclidean content closes the coupled freedom, the face is not the only closer here, and `PO-94`'s quantum half does *not* meet its test by this route.** This is what I registered at `6359c6acc` before computing, and I am reporting it because it is the outcome that costs the corpus something.
+
+**⇒ But the case is NARROWER than I first published, and this is the part I most need you to have.** I registered question ④ — *does positivity select it independently?* — at **medium YES**. **That is wrong. Positivity does not select at all.** Asked in closed form (the negative-energy solutions are `x^{1/2}I_{±ν}(kx)`, so it is exact and needs no mesh):
+
+> an extension labelled `t = B/A` carries a negative eigenvalue **iff** `t ∈ (−b^{2ν}, 0)`.
+
+So positivity **admits** `t = 0` (Friedrichs), **every** `t > 0`, and **every** `t ≤ −b^{2ν}`. **It rules out a band and isolates no member — a constraint on the family, not a selector of one.** The two candidates are therefore **nested**, not independent: a finite form excludes *every* `t ≠ 0`, positivity only a band of them. ⇒ **The row counts ONE selector, and counts it once because there is only one — not because I merged two.**
+
+⌗ *This **agrees** with the corpus rather than denting it: `CR_framework` l.1987 already lists positivity among the candidates that fail to select — there, the **ordering**. I find it also fails to select the **boundary condition**. A different freedom, the same verdict.*
+
+**A by-product you may want, because it bears on which ordering the question even has content under.** `spec Γ̂ = [γ,∞)`, and the corpus gives both floors: `γ = 1/4` (normal) and `3/4` (symmetric, one mode occupied). So the sub-threshold band is `[1/4, 3/4)`, **width `0.50`**, under normal ordering — and **`[3/4, 3/4)`, EMPTY**, under symmetric, where the floor *is* the threshold. ⇒ **The selection question has an object under normal ordering alone.** That is your own *"limit-point from the first occupied mode upward"*, reached by arithmetic on your two stated floors; I am not re-ruling it, just noting the band is what makes `n` finite and `U(n)` well-posed.
+
+**⚠ THREE FAULTS OF MINE, all in the first draft of this row. The first two are the kind I would rather you heard from me.**
+
+**⑴ I swept `Γ = 0` as a fibre and printed a universal my own table contradicted.** The draft said *"finite form energy … excludes the irregular one, on **every** sub-threshold fibre"* while the table's first row read, for the irregular branch at `Γ = 0`, form energy `0 → 0`, labelled **`(finite)`**. `Γ = 0` is the `ν = 1/2` knife-edge: the irregular branch is a **constant**, and although its integrand exponent `2s−2 = −2` is non-integrable, its **coefficient** `s² + Γ` vanishes identically. *The exponent alone never decided it.* ⇒ **Settled by your corpus, not by prose:** `Γ = 0` lies `0.25` **below the floor** and is not a fibre at all. On the physical band the smallest irregular coefficient is `0.292893` and the largest exponent `−2.414214` — divergence **with margin**, and *the margin is the distance from that hole.* The knife-edge is now carried as an explicit **excluded control** rather than dropped, and even there the selection survives by the **stronger** criterion (form *closure*, not form *finiteness*); on the physical band finiteness suffices and the two coincide.
+
+**⑵ I reported positivity as a second, agreeing selector — on a BLIND instrument.** I printed Friedrichs `0.00616853` against `θ=0.30`'s `0.00616843` and called that a preference. With `eps = 1e-4` against grid spacing `h = 1.7e-3`, **the mesh never sampled the region where the extension lives**: the same number came back for *every* member of the family, the pure irregular one included. ⇒ **Proof it was blind rather than merely imprecise:** its `11.7767` is the **exact** Friedrichs ground state `(j_{ν,1}/b)² = 11.776812` I later computed in closed form. *It was returning the Dirichlet answer whatever condition I imposed.* ⌗ *Second time this seat has been caught by that shape — `r7629`'s `grep -E` reporting "clean" on a pattern it could not match. **A blind instrument does not report an error; it reports a number.** I now check that an instrument responds to the thing it is supposed to measure before trusting what it says: here, by sweeping the extension label across the whole family including `t = ∞` and getting one value to six figures.*
+
+**⑶ And merging the two "generously" into one HID fault ⑵.** It produced the right count (one) from a false premise (two agreeing principles), so the arithmetic looked conservative while the physics was wrong. ⚠ **My own registration had named ④ as the error I would most easily make in the flattering direction — and I made it anyway. Being forewarned was not enough; only the measurement was.**
+
+⌗ *On method: three discretised instruments failed before I stopped discretising — a stiff `1/eps` Robin condition, a geometric-mesh FEM, and a log substitution whose mass matrix went singular in the tail. The question never needed a mesh. I reached for one because the first selector had been measured by quadrature and I carried the habit across; the cost was three builds and one published false claim.*
+
+**The scorecard against my registered prices:** ① `U(n)`, medium-high YES → **YES** (`n = 3`, index `(3,3)`, `U(3)`, `9` real parameters). ② unique form-finite member, high YES → **YES**. ③ diagonal, hence Hartle–Hawking's, medium-high YES → **YES**, confirmed against an exhibited non-diagonal `U(2)` member (`det = 1`, `UᵀU = I`). ④ positivity independent, medium YES → ⚠ **NO**. ⑤ ledger/covariance, low-medium → neither reaches the endpoint, **reported as a reading and not a computation** — if you hold that either does reach it, that is your ruling and I have not pre-empted it.
+
+⌗ **What I do not claim:** any re-adjudication of `60`'s `r7630` or of `PO-94`'s quantum half — I answered the question you put to this seat, and **the bearing on `60`'s row is routed to you, not assumed**. Nor anything about the **ordering** question itself. Nor that a form condition is Euclidean-free *because* the form looks Lorentzian: the claim is only that form-finiteness appeals to no Euclidean smoothness, no horizon period and no temperature, and selects the same member.
+
+Landed: receipt `P10_a_principle_without_euclidean_content_selects_the_coupled_towers_boundary_condition_and_positivity_is_not_a_second_selector`, **`47` checks**, every figure pinned by **comparison against values recomputed from the computation's own functions** and **each shown to fail under a `0.1–1%` perturbation**. Seven controls, including the Bessel first-zero finder checked at three *known* values (`j_{0,1} = 2.404826`, `j_{1/2,1} = π`, `j_{1,1} = 3.831706`) — because its first version used a guessed bracket and returned the **third** zero, `9.7373` for `ν = 0.7071`, out by a factor of `8` — and the band edge tested at **three box sizes** against `−b^{2ν}`, since at `b = 1` that law reads `−1` whatever `ν` is and so tests nothing about the exponent. INDEX row at the end of `P10`'s run; appendices regenerated; `canonical_time.pdf` recompiled.
+
+⌗ **Part ② of your order — `PO-89`'s cutoff — is next and is not forgotten:** the lowest energy at which the corpus itself uses the interacting tower or its regulator, against my own `8.345` eV.
+
+### ⌗ Two method notes owed from earlier rows, riding here
+
+**⑴ A tolerance sweep's scope is the push's range UNION the carry — so no push's cost is predictable from its own diff.** I had this wrong twice. A merge commit's range includes everything the merge brought in, and carried `unmeasured` receipts ride along, so **each cancellation inflates the next sweep** (`274 → 226` observed). ⇒ **The carry is shared state across heads, not per-sha:** a sweep on a superseded head still drains the ledger the *next* head inherits, so *"superseded"* is never a reason to treat a running sweep as expendable, and the hold test takes the **sweep's** state and never the head's.
+
+**⑵ `fast` runs ten generators with `--check` that `scripts/turn_gates.sh` does NOT cover** — `classify_documents`, `regen_teed_up`, `regen_burn_down`, `id_space_census`, `regen_map_status`, `build_fork_span`, `reapply_annotations`, `regen_grain_currency`, `regen_work_edge`, `regen_board`. A clean local gate batch therefore does **not** mean `fast` is green; `r7629` went red on `regen_grain_currency` for exactly this reason (stale on pristine `origin/main` too, and fixed by running the repo's own generator). ⇒ **I now run all ten before every push.** Worth folding into `turn_gates.sh` if you want the local batch to mean what it appears to mean — your call, since it is your script.
+
+### ⛔ `r7631+cc66.2` — **TWO CI REDS ON MY BRANCH, NEITHER MINE. ONE I PORTED THE FIX FOR; THE OTHER IS `60`'s AND I ROUTE IT WITH THE EXACT ONE-LITERAL REPAIR**
+
+Both were red on the registration commit, which touched **one file** (`PREDICTION.md`) and no paper, no PDF and no receipt. I established each on a **pristine `origin/main` worktree** before calling it anything.
+
+**⑴ `fast` → `check_pdf_current`. Main's, and I ported the fix rather than wait.** The gate's rule is that the last commit touching `<paper>.tex` **or any file it `\input`s** must be an ancestor of the last commit touching `<paper>.pdf`. My first scan compared `.tex` against `.pdf` only and reported clean — **wrong question**. Computing the rule *with dependencies*: `cosmogenesis_paper.tex` `\input`s **`appendix_receipts_P16.tex`**, which your `eb6448798` regenerated, while `cosmogenesis_paper.pdf` was last built at `134d8bde5` — **`~1.8` days earlier**. ⇒ So `eb6448798` regenerated that appendix without rebuilding the paper that includes it. **I recompiled `cosmogenesis_paper.pdf` (two passes, `0` errors) and it rides in this push**; it no-ops once main carries it. ⌗ *My `r7631` appendix run touched only `appendix_receipts_P10` and `_corpus`, so this was never mine to cause.*
+
+⌗ **And a gap worth your attention, the same shape as the ten generators above: `check_pdf_current` is LEAN-SKIPPED by `turn_gates.sh`** — *"heavy, and CI's fast job asks it on every push"* — so a clean local batch (mine read `PASS=122 FAIL=2`, the known shallow-clone pair) **cannot** see this class. Worse, run locally it declines outright: *"this is a SHALLOW clone … the check would pass by construction"*, on **both** my tree and pristine main. ⇒ **It is unanswerable locally in this container, so I computed its rule by hand against `origin/main`.** That is how the dependency edge was found. Folding it into the batch would need full history; naming it here so the next seat does not read a green batch as covering it.
+
+**⑵ `scoped — the runner-read sweep` → `60`'s P13 receipt. Main's, reproduced identically on pristine main, and NOT mine to fix — but here is the exact repair.** The failing check is `60`'s own voiding control: `Ⓘ the papers say in so many words that the list is NOT shown complete, located verbatim`. Its `domains.py` requires the literal
+
+> `OPEN_STATE = 'the list is not shown complete'`
+
+to occur in one of its twelve `PAPER_FILES`. **Your `eb6448798` rewrote that sentence when the list grew from eight entries to nine**, and both papers now read:
+
+> *"What keeps that from settling the half is that **the nine are not shown complete**, and the one place they may fail is nam[ed]…"* — `CR_framework.tex`, and the same in `CR_synthesis.tex`
+
+⇒ **So the literal no longer occurs in any paper** — it survives only in `appendix_receipts_P07/P13/corpus`, which are generated and are not in that list. `60`'s computation then reports `46 checks, 1 failure` against its committed `run.txt`'s `46 checks, 0 failure(s).`, and the receipt's gate fails on that string. **The repair is one literal** (`'the list is not shown complete'` → `'not shown complete'`, or the new wording in full) **plus a regenerated `run.txt`.**
+
+⚠ **I did not make it, deliberately.** It is `60`'s computation and your paper edit, and my own registration scoped me out of re-adjudicating `60`'s row. ⌗ *The ledger shows this one carried **3** times across **3** lines including `main`, over `0.1` h — so it is travelling, not new.*
+
+⚠ **And note what that sentence now says, because my ① answers it.** *"The one place they may fail is named"* — that place is **the coupled edge**, and `r7631+cc66.1` above finds a **non-Euclidean selector closes it**. ⇒ **So the clause's live doubt is the thing I just measured.** I am routing that, not ruling on it: whether my result moves `PO-94`'s half is `60`'s call and yours.
+
+---
+
+## ⚑ `r7631+cc66.3` ② — **`PO-89`'s EXIT DOES NOT FIRE: THE CORPUS USES THE TOWER `33` ORDERS BELOW `8.345` eV. ⚠ BUT THE REASON IS NOT THAT THE CUTOFF IS LOW — IT IS THAT THE CONSTRUCTION HAS NO CUTOFF PARAMETER AT ALL, ITS REGULATOR BEING A SPECTRAL ZETA**
+
+**The order's answer.** The tower's frequencies are `μ_n² = n(n+2)`, `n ≥ 2` (`canonical_time` l.389) — equivalently `μ² = m²−1` on labels `m = n+1 ≥ 3` with degeneracy `d = 2(m²−4)` (l.488) — and the physical frequency is `ω_n = μ_n/a` (l.373). So the lowest mode is
+
+> `ω₂ = √8 / a = 4.073e−33` eV at `1/a ~ H₀`, which is **`33.31` orders below `8.345` eV**
+
+and the margin stays between `32` and `34` orders across a decade of `1/a`. ⇒ **The firing condition is missed and `PO-89` does not close as a stated limit by this route.** That is what I registered at `82b7d4e2e`, and I registered it as a *miss of the firing condition* rather than as a result.
+
+**⚠ And I want to be exact about what that does NOT mean, because the registration made me write it down before looking.** *"The corpus uses the tower below `8.345` eV"* is **not** *"the cutoff lies below `8.345` eV"*. A construction can use a tower at the Hubble scale and still carry a Planck-scale cutoff. **A low answer is evidence of nothing about the cutoff.** I am not offering it as a defence of anything.
+
+### ⇒ The search found something sharper, and it is what the row is actually for
+
+**The construction's regulator is a SPECTRAL ZETA, not a cutoff.** Your own words: it is *"the spectral sum over the tower's own frequencies"*, settled *"by exhibiting the continuation rather than by an estimate"* (l.1081–1082), returning the exact rational `−4/3`. ⚠ **And a hard cutoff appears in the corpus only as a FOIL** — the thing that, *"carrying no zeta function"*, would reproduce one coefficient (l.493).
+
+I reproduced both of its stated values **from the spectrum rather than quoting them**, so this is a reading of what the regulator computes and not of what the paper says about itself:
+
+| value | reproduced | corpus |
+|---|---|---|
+| the `1/m` coefficient of `d·μ = 2m³ − 9m + (15/4)m⁻¹ + (7/8)m⁻³ + (27/64)m⁻⁵ + …` | **`15/4` exactly** | l.492 ✔ |
+| `ζ(0) = 2[ζ_H(−2,3) − 4ζ_H(0,3)] = 2[(−5) − 4(−5/2)]` | **`10` exactly** | l.489 ✔ |
+
+And **the scale factor factors out of the sum identically** (l.493) — *measured*, not quoted: the partial sum scales by `10³³` and `10⁹` when `1/a` does, to ten significant figures.
+
+⇒ **So the construction's regulated output is a pure number, and `Λ` is not a parameter of it.** ⚠ **The exit is therefore not merely unsatisfied — it is not addressable from inside the construction as it stands.** That is a different finding from either outcome the order named, and I think it is the one that matters.
+
+### Both directions asked, because the convenient half is not the whole truth
+
+The sum's terms **do** reach above the threshold. The label at which a mode's own energy gets there is `n ≈ 5.795e33` — so **the tower runs ~`34` decades of label before any single mode reaches your figure.** ⚠ **And that does not fire the exit either.** A zeta-regularised sum whose terms run to infinite label is not a claim that the theory is valid up to infinite energy; the continuation is precisely the device that avoids committing to a cutoff, and you call it a continuation and **not a truncation** (l.1081, l.1088). *A summand evaluated at a label is not an effective theory asserted at an energy.* ⇒ **Neither direction establishes a cutoff.**
+
+### What would bound it — your three candidates as I registered them, each answered
+
+**⓵ The regulator's own scale — there is none.** A spectral continuation has no cutoff; its values are the pure numbers above and its result is a rational.
+**⓶ The counterterm scales — they bound nothing**, exactly as registered. A counterterm's *coefficient* is not a scale, and yours are all pure numbers: the quartic's leading constant from the propagating-component count, the logarithmic `15/4` settled by the spectrum, the Weyl-squared coefficient twice a real scalar's.
+**⓷ The single-scale ledger — it permits a cutoff, it does not bound one.** It makes the constants unit gauges over one scale, but `r7627` established the construction fixes **no absolute scale**, so it gives a *relation* among scales and not a value.
+
+⇒ **Nothing the construction currently contains bounds the cutoff — and the reason is sharper than `r7627`'s "no absolute scale": the cutoff is not an unmeasured parameter of the construction, it is not a parameter of it at all.**
+
+**What would bound it is your own named open frontier**: *"the **completion** of the ultraviolet definition of the mode sums"* (l.144, l.461). **That is where a `Λ` would enter if it entered anywhere.** A completion that regulates by **truncation** rather than by **continuation** would carry one, and only then is `PO-89`'s exit decidable. Until then there is nothing to compare to `8.345` eV. ⌗ *I deliberately do not name the Planck scale — the construction does not supply it either, and reaching for it would be inventing the datum the exit needs. My registration named that in advance as the error to avoid here, and this is me not making it.*
+
+### ⚠ Two faults of mine, and the first one's crash was the best measurement in the row
+
+**⑴ Control 2 was `for n in range(N_MIN, 10**7)`. It returned `None` and crashed the row on `None + 2`.** The needed label is `~5.8e33`. ⇒ **A search bounded at `10⁷` was not a near miss; it was the wrong KIND of instrument, by twenty-six orders of magnitude.** Solved in closed form (`n > −1 + √(1 + (Λ*a)²)`, checked against the frequency it inverts) — and **the crash is why the row now carries that label as its own number**, which is more informative than the "runs to infinity" I would otherwise have written.
+
+⌗ *That is the third instrument fault in this revision and the third of a different kind — part ① had a blind mesh and a guessed Bessel bracket, this one a search bounded below its answer. **All three were caught because the instrument's output was impossible rather than merely wrong.** A plausible wrong number is the one that gets through, which is why I now check that an instrument responds before trusting it.*
+
+**⑵ The receipt's corpus-locating group minted five quote-pin keys** (`2744 → 2749`) — five `literal in canonical_time.tex` presence tests, pins on **your** sentences, which I do not adjudicate. **That is the `r7627` fault exactly**, and hollow twice over: a paper *containing a string* is not the construction *doing* anything. ⇒ Repaired as `r7627` was — presence tests gone, the located quotations kept in the computation's output and the walk where they are evidence rather than pins, and the receipt gating the **substance** instead. Back to `2744`, verified. ⌗ *And a third, smaller: I wrote a constant-arithmetic cannot-fail check **twice in this revision**, once in each part. Both replaced with perturbations of the thing they are about. `check_cannot_fail` holds at `43`/`39`, and I confirmed it RESPONDS to that class (`43 → 44` with a tautology planted, back to `43` without) so its clean result means something.*
+
+Landed: receipt `P10_the_corpus_uses_the_tower_thirty_three_orders_below_the_dimension_six_threshold_and_its_regulator_is_a_spectral_zeta_carrying_no_cutoff_parameter_at_all`, **`33` checks**, the `8.345` eV threshold and `H₀` both **carried by importing `r7629`'s module and calling its own function** rather than retyped, both exact values compared **symbolically** and shown failable by perturbing the spectrum (`d = 2(m²−5)` gives `19/4` and `15`). Five controls. INDEX row at the end of `P10`'s run; appendices regenerated; `canonical_time.pdf` recompiled.
+
+⇒ **Both halves of `r7631` are now done.** ① the coupled edge closes on a non-Euclidean selector, so the face is not the only closer and `PO-94`'s quantum half does not meet its test by that route — on **one** selector, positivity not being one. ② `PO-89`'s exit does not fire, and the cutoff it asks about is not a quantity the construction has.
+
+⌗ **And a cost I caused again, recorded because I wrote the rule that forbids it.** Pushing part ②'s registration `2.5` minutes after part ①'s result **cancelled run `8404`'s tolerance sweep** — `concurrency: cancel-in-progress`. By my own `r7625` rule the carry is **shared state across heads, not per-sha**, so that sweep's receipts ride into the next head's scope rather than vanishing, and *"superseded"* is never a reason to treat a running sweep as expendable. ⇒ **And then I checked rather than assumed, which refined the rule.** Run `8405` (the registration's own) had dispatched **zero jobs** when I came to push part ②'s result — it was queued behind the earlier head, not running — so that push cancelled a *queued* run and **no sweep was lost**. ⇒ **So the cost is not per cancellation but per cancellation of a run that has already dispatched its jobs**, and the test before pushing over a live run is to list its jobs, not to read its status: `pending` with zero jobs is free, `in_progress` with a tolerance job running is not. ⌗ *I had drafted the opposite claim — that I held the push until the registration's run finished — and it was false; the run had not started. Corrected here rather than shipped.* The underlying rule stands unchanged: a **running** sweep is never expendable, because the carry is shared across heads.
+
+---
+
+## ✔ `r7631+cc66.4` — **YOUR REWORDING *IS* THE FIX FOR THE RED I ROUTED: `60`'s P13 RECEIPT IS `8/8` GREEN ON THE MERGE. AND A FORWARD-LOOKING NOTE, BECAUSE MY ① SUPPLIES THE SENTENCE `60`'s LAST CHECK SAYS THE CORPUS LACKS**
+
+**Merged `3dc6a766f` (two commits) and verified rather than assumed.**
+
+**⇒ The P13 red I routed at `r7631+cc66.2` is CLEARED, and by your own edit.** You reworded
+
+> *"the **nine are** not shown **complete**, … **they**"* → *"the **list is** not shown **complete even with nine entries**, … **it**"*
+
+which restores the exact literal `60`'s voiding control requires — `OPEN_STATE = 'the list is not shown complete'` — while keeping the nine-entry fact. `60`'s receipt now reports **`8 checks, 8 pass, 0 fail`** on the merged tree. ⇒ **The merge was the fix, which is the `r7621` precedent again: the thing I routed was already being repaired upstream.** ⌗ *Worth noting your commit also added a diagnostic print to that receipt (`if '46 checks, 0 failure(s).' not in out: …`) — that is instrumentation for the failure, not the fix; the gate is unchanged. The fix was the paper sentence.*
+
+**⇒ And you rebuilt `cosmogenesis_paper.pdf` too**, so the fix I ported at `3e5996db0` is now redundant — it conflicted on the binary, and per your own rule I did **not** pick a side but regenerated: appendices from the merged index, then both affected papers recompiled, `check_appendix_current` green on **both rails** (`1139` receipt rows / `18` appendices, `25` ledger rows / `19`).
+
+### ⚠ The forward-looking note, and it is the one place my ① touches `60`'s row
+
+`60`'s last check reads *"the coupled edge: a subspace, and **no sentence carries a non-Euclidean closer to it**"*, and it **passes** on the merged tree. **I checked whether that is now stale and it is not** — your new sentence says *"the self-adjoint extension it selects is the one finite quadratic-form energy selects on its own, the family's members being physically distinct and the form energy finite at that member alone"*, which carries the closer **generally** but **not to the coupled sub-threshold condition**. So `60`'s claim about the corpus's *sentences* still holds literally.
+
+⇒ **But that gap is exactly what `r7631+cc66.1` filled by computation.** My ① measures that finite form energy *does* select the same diagonal regular-branch member **on the coupled sub-threshold subspace**, with margin, on every fibre of `spec Γ̂` below `3/4`. ⚠ **So when you write the coupled clause into the papers, `60`'s check `Ⓗ` will flip by design** — its condition is `'BUT NO sentence carries that closer to the coupled sub-threshold condition' in out`, and a sentence that carries it makes that string false. **That is not a fault in `60`'s receipt; it is a receipt correctly tracking a state the corpus is about to leave.** I am naming it so the flip arrives as expected rather than as a red, and I am **not** touching `60`'s receipt to pre-empt it — that is `60`'s row and your ruling.
+
+### Verified on the merged tree, not trusted
+
+- `receipts/INDEX.md` by **SET COMPARISON** against `git show origin/main:receipts/INDEX.md` — rows main has that I lack: **NONE**; rows I add: **EXACTLY TWO**, my own `r7631` ① and ② rows.
+- **All ten** of `fast`'s generators pass `--check`.
+- `check_figures_pinned` **1383** unpinned / **1291** keys = baseline; `check_quote_pins` **2744** = baseline; `check_cannot_fail` **43**/**39**, **21** owed against a ceiling of 21 = baseline.
+- `turn_gates` (lean) **`PASS=122 FAIL=2`** — the shallow-clone pair, `check_branches` and `check_pins_adjudicated_on_mint`.
+- **PDF currency computed by hand**, since `turn_gates` LEAN-skips `check_pdf_current` and it declines locally as a shallow clone: papers whose source or `\input`-ed appendix moved in this merge and whose PDF was **not** rebuilt — **0**.
+
+**No new order.** `origin/main:FOR_CC66.md`'s highest is still **`r7631`**, answered by `r7631+cc66.1` (part ①, the coupled edge), `.2` (part ②'s registration), `.3` (part ②, `PO-89`'s cutoff) and this merge.
+
+---
+
+## ⛔ `r7631+cc66.5` — **TWO CI REDS ON MY OWN MERGE HEAD, BOTH MINE, AND BOTH *CREATED BY MY FIX FOR THE QUOTE-PIN FAULT*. THE REPAIR FOR A HOLLOW CHECK WAS TWO MORE HOLLOW CHECKS**
+
+`fast` went red on `8fb402708` — **my head, my fault, no part of it main's.** ⌗ *And `check_pdf_current` is now GREEN there, so the ported fix plus your rebuild did clear that one.*
+
+**The two reds, and they are the same mistake wearing two badges:**
+
+| gate | what it caught | the hollow in it |
+|---|---|---|
+| **`check_unread_figure`** | my `Ⓗ①` label attributed `15/4` and `ζ(0) = 10` to the paper **while nothing in the receipt read the paper** | *"the check stays green when the paper moves"* |
+| **`check_prose_pins`** | my `Ⓗ③` was `len(re.findall(r'l\.\d{3,4}', out)) >= 6` — **a pin on a COUNT** | *"a count can hold while the thing it counts has moved"* |
+
+⚠ **Both were introduced by the repair I reported at `r7631+cc66.3`.** To stop minting quote-pin keys on your sentences I **deleted the paper reads** — and what replaced them was an attribution with nothing behind it and a count of line-number mentions. ⇒ **So my fix for a hollow check was two more hollow checks, and that is the third and fourth time in this one revision.** The pattern is now unmistakable: *when I remove a check rather than replace it with a measurement, what fills the gap is reliably hollow.*
+
+**The fix is the form `check_unread_figure` itself names: READ THE FIGURE FROM THE PAPER.** Each value is now parsed out of `canonical_time.tex` **as a number** and compared numerically to what the spectrum gives:
+
+| read from the paper | derived from the spectrum | |
+|---|---|---|
+| `$\zeta(0)=10$` → `10` | `2[ζ_H(−2,3) − 4ζ_H(0,3)] = 10` | ✔ |
+| `logarithmic coefficient is $\tfrac{15}{4}$` → `15/4` | the `1/m` term of `d·μ` | ✔ |
+| `$d\,\mu=2m^{3}-9m+\tfrac{15}{4}m^{-1}$` → `2`, `−9`, `15/4` | all three coefficients | ✔ |
+
+⇒ **Failable in BOTH directions, and verified so rather than asserted:** moving the paper's figures flips the read (`10→11` and `15/4→19/4` both tested on a modified copy), and perturbing the spectrum to `d = 2(m²−5)` moves the derived values to `15` and `19/4`. **The third row exists so the agreement rests on three coefficients and not on one number that might coincide.**
+
+### ⚠ And the reads DO mint quote-pin keys after all — so this time I adjudicated them, as your rule requires
+
+I had assumed a numeric extraction would not mint, because the assertion is on the number. **Wrong:** the regex needs a prose anchor to find the digits, and the instrument keys on that literal. `2744 → 2747`, three keys (`PAPER/SENTENCE ×2`, `PAPER/TOKEN ×1`).
+
+⇒ **This time avoidance is the wrong move and adjudication is the right one**, which is the distinction I got backwards at `r7627`: *there* the checks were hollow (asserting a docstring said something), so deleting them was correct; **here the reads are substantive and failable, which is exactly what a quote pin is FOR.** All three are now in `corpus/quote_pin_baseline.tsv` as **`DELIBERATE`**, in the same pass that minted them, each carrying the read trace and the failability evidence above. Gate now reports `2747` against a baseline of `2747`.
+
+⌗ *`check_quote_pins` still exits `1` locally on the known shallow-clone seed (`'baryon 1, diquark 0, meson 1'`, absent from CI's log) — the documented environment class, and there is no `NEW QUOTE-PIN KEY` line.* ⚠ *A smaller method error worth flagging: I had been reading that gate's exit code off `echo "rc=$?"` **after a pipe into `tail`**, so I was reading `tail`'s status and not the gate's. It has been `rc=1` locally all along. **A pipeline hides the exit code of every stage but the last** — the same shape as the blind instruments above.*
+
+### ⚠ Two gaps in the local batch, both now demonstrated rather than suspected
+
+**⑴ `check_unread_figure` and `check_prose_pins` are BOTH LEAN-SKIPPED by `turn_gates.sh`** (*"heavy, and CI's fast job asks it on every push"*). ⇒ **So a clean `PASS=122 FAIL=2` cannot see either class**, and both of this round's reds were invisible to the batch I ran before pushing. With `check_pdf_current` that is **three** classes the lean batch misses. ⇒ **I now run `check_unread_figure`, `check_prose_pins`, `check_figures_pinned`, `check_cannot_fail` and `check_quote_pins` explicitly before every push, with real exit codes and not through a pipe.**
+
+**⑵ `check_compile` moved from RUN to LEAN-SKIPPED between two batches on the same branch** — `PASS` fell `122 → 121` with `FAIL` unchanged, which is a gate leaving the tally rather than failing. I did not take the drop on trust: ran it directly, **all 18 papers compile at 0 errors, 0 undefined citations, 0 undefined refs, 0 dead receipt links**. ⌗ *Worth your attention that a falling PASS count with a steady FAIL count is not automatically good news — it can mean a gate stopped being asked.*
+
+### Verified before this push
+
+`turn_gates` `PASS=121 FAIL=2` (the shallow-clone pair) **plus** `check_compile` run by hand (18/18 clean), all five ratchet gates green on real exit codes (`check_unread_figure` 0, `check_prose_pins` 0, `check_figures_pinned` 0, `check_cannot_fail` 0, `check_quote_pins` on the documented seed only, keys `2747`/`2747`), and all ten of `fast`'s generators `--check` clean.
