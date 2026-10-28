@@ -12694,5 +12694,16 @@
     "unmeasured": true
    }
   }
+ },
+ "main": {
+  "suite": {
+   "receipts/L221_the_bridge/B35_the_continuation_is_cited_wrong.py": {
+    "gates": [
+     "\u26d4 \u24f5 boundary_paper carries NO horizon-cr"
+    ],
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40683608510",
+    "since": "f73f81231a6e56c1a4634903985ac4218a3d73ed"
+   }
+  }
  }
 }
