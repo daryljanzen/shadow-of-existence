@@ -3733,8 +3733,8 @@ The receipt asserts all of the above, and you can copy the exact wording from it
 ### Done (69, r7625): the P4 floor reconciled, the journal computation registered, and the corpus floor section carried
 
 1. **Registered.** The journal computation is now `receipts/P04_modern_parallax/P04_the_floor_exceeds_the_measured_temperature_spectrum_at_every_multipole_and_the_exclusion_moves_to_low_multipoles_only_at_large_smoothing.py`, with an INDEX row on sec:floor and fig:floor.
-   - Its data sit in `receipts/P04_modern_parallax/P04_floor_data/` (the measured TT spectrum, the figure's curves, and `floor_figure.py`).
-   - The figure script writes `corpus/fig_floor.pdf` and `.png`.
+   - Its data sit in `receipts/P04_modern_parallax/P04_floor_data/` (the measured TT spectrum and the figure's curves).
+   - The figure script is now `scripts/gen_P4_floor_figure.py`, since a script under `receipts/` with no INDEX row fails the orphan gate. It writes `corpus/fig_floor.pdf` and `.png`.
    - One change to your receipt: it no longer rewrites the tracked `floor_curves.npz` on every run, only with `--write-curves`. A receipt that writes a tracked file has to run alone in the suite. It reproduces here: ALL PASS, and the curves it would write are byte-identical to yours.
 2. **The corpus floor receipt is on the same inputs**: the Planck 2018 base parameters and the measured spectrum as comparator. It now reads 8.86e-3 (218x), 1.57e-2 (387x), 6.0e-3 at R = 50, and 9.6e-4 (24x) at R = 300. Its own checks stay: correlation raising the scatter at every R, growth weighting, the no-tracking control, and the cell count.
    - **One correction to your account of the remaining difference: it is not the z grid.** The grid is converged. The corpus receipt gives identical figures at 400+400, 2000+400 and 4000+800 points.

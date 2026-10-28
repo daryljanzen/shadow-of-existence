@@ -1,9 +1,13 @@
-"""P4 Figure fig:floor (written to corpus/fig_floor.pdf and .png): angular power the matter-tracking hypothesis predicts, against Planck's measured TT spectrum."""
+"""P4 Figure fig:floor (written to corpus/fig_floor.pdf and .png): angular power the matter-tracking hypothesis
+predicts, against Planck's measured TT spectrum.
+It computes nothing: it plots the curves P04_the_floor_exceeds_..._large_smoothing.py writes (floor_curves.npz,
+  R = 4, 8, 20 h^-1 Mpc) against planck_TT_full.txt, both in units of (Delta T/T)^2 with T0 = 2.7255 K."""
 import os, numpy as np, matplotlib
 matplotlib.use("Agg"); import matplotlib.pyplot as plt
 T0 = 2.7255e6
-here = os.path.dirname(os.path.abspath(__file__))
-out = os.path.join(here, "..", "..", "..", "corpus", "fig_floor")
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+here = os.path.join(ROOT, "receipts", "P04_modern_parallax", "P04_floor_data")
+out = os.path.join(ROOT, "corpus", "fig_floor")
 d = np.load(os.path.join(here, "floor_curves.npz")); ells = d["ells"]
 obs = np.loadtxt(os.path.join(here, "planck_TT_full.txt")); l, Dl, lo, hi = obs.T
 fig, ax = plt.subplots(figsize=(6.4, 4.2))
