@@ -20,7 +20,6 @@ import os
 import re
 import subprocess
 import sys
-import time
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(os.path.dirname(HERE))          # receipts/P13_boundary -> repo root
@@ -178,14 +177,19 @@ ok('Ⓗ② and the collision is genuine -- both 3 and 9 are in the frozen atom l
    any(abs(a[0] - 3.0) < 1e-12 for a in _mod.ATOMS)
    and any(abs(a[0] - 9.0) < 1e-12 for a in _mod.ATOMS))
 
-# ⓶ the support recursion, tested by what the grid version could not do: finish.
-_t0 = time.time()
+# ⓶ the support recursion, tested by what the grid version could not do: finish AT THE RIGHT COUNT.
+# ⌗ ** THIS CHECK CARRIED A WALL-CLOCK TERM AND THE TOLERANCE SWEEP FLAGGED IT.  It was right. **
+#   A clock measures the MACHINE, not the code: the same comparison read 0.0876 s on build A,
+#   0.1232 s on build B and 0.0747 s on build C, so it was a numeric site that moves between
+#   builds by construction.  Headroom of 487x and 685x did not make it stable; it made it
+#   harmlessly unstable.  ** Never assert a duration in a receipt. **  The build-stable signature
+#   of the support recursion is that the enumeration COMPLETES AT THE RIGHT COUNT; that the 9^15
+#   grid could not finish is history, and history belongs in the docstring and the WALK, not in a
+#   pinned comparison.
 _t4 = _mod.enumerate_monomials(_mod.ATOMS, 4)
-_elapsed = time.time() - _t0
-ok('Ⓗ③ the D = 4 enumeration COMPLETES and returns 11049 values -- the behavioural signature '
-   'of recursing over the support, since the full grid is 9^15 ~ 2e14 products and does not '
-   'finish (the first version had to be killed)',
-   len(_t4) == 11049 and _elapsed < 60.0)
+ok('Ⓗ③ the D = 4 enumeration COMPLETES and returns exactly 11049 values -- the build-stable '
+   'signature of recursing over the support rather than over the 9^15 grid',
+   len(_t4) == 11049)
 ok('Ⓗ④ and it agrees with the count the computation printed, so the receipt and the run are '
    'enumerating the same set',
    len(_t4) == counts[4])
