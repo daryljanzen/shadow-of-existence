@@ -18,7 +18,8 @@ What it pins, each re-derived from the JSONs:
   decisive window l = 1000-2508 on the sky: 0.9639 +/- 0.0158; the signature mock's shift +0.025
   the 2 sigma rule: no window separates the two predictions; the nearest is 700-1760 at 1.94
   every window sits 0.1-0.4 sigma from no shift and 1.0-1.5 sigma from the signature's
-  deciding needs the decisive window's sigma at Delta/2: 1.25 times Planck's precision there
+  deciding needs the decisive window's sigma at Delta/2: 1.25 times Planck's precision there on the exponent-one
+  mocks (1.44 on the instrument's exponent: P15_on_the_instruments_own_exponent_...)
 It also checks that P15 states the result and no longer says the question is unsupplied.
 """
 import json, pathlib, re, sys
@@ -74,7 +75,7 @@ d = rows['1000_2508']
 check(round(d['n'], 4) == 0.9639 and round(d['s'], 4) == 0.0158,
       "decisive window 1000-2508: n_s = 0.9639 +/- 0.0158")
 check(round(d['D'], 3) == 0.025, "the signature mock's shift on 1000-2508 is +0.025")
-check(round(d['sep'], 1) == 1.6, "on 1000-2508 the two predictions sit 1.6 sigma apart (the figure P7 and P18 carry)")
+check(round(d['sep'], 1) == 1.6, "on 1000-2508 the exponent-one mocks put the two predictions 1.6 sigma apart (1.38 on the instrument's exponent)")
 check(all(r['sep'] < 2 for r in rows.values()), "no window separates the two predictions at 2 sigma")
 near = max(rows, key=lambda w: rows[w]['sep'])
 check(near == '700_1760' and round(rows[near]['sep'], 2) == 1.94, "the nearest is 700-1760 at 1.94")
@@ -84,8 +85,10 @@ need = d['s'] / (d['D'] / 2)
 check(round(need, 2) == 1.25, f"deciding needs the tail {need:.2f} times as precise (1.25)")
 
 flat = re.sub(r'\s+', ' ', TEX)
-for s in ('$0.9611\\pm0.0063$', '$0.9639\\pm0.0158$', '$+0.025$', '$1.94$', '$1.25$',
-          'decidable and not decided'):
+# r7627 (69): the signature's shift, the nearest separation and the precision bar P15 prints are the FAITHFUL
+# exponent's (+0.022, 1.65, 1.44), pinned in P15_on_the_instruments_own_exponent_..., and the gate's state is pinned
+# in P15_the_damping_tail_data_now_reach_the_bar_...; this receipt keeps the measured fits and the figures they fix.
+for s in ('$0.9611\\pm0.0063$', '$0.9639\\pm0.0158$', 'decidable and not decided'):
     check(s in flat, f"P15 states {s}")
 check('where the question properly sits' not in flat, "P15 no longer leaves the off-tail constraint unsupplied")
 check('a separate question this paper does not settle' not in flat,

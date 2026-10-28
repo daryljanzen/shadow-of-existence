@@ -78,7 +78,7 @@
 % which is the damping wavenumber and belongs at ell > 1760.  NOT OPEN (stride
 % item 3, r7475): n_s, A_s are boundary data, MEASURED; deriving them is a bonus
 % and not a debt.  The crossing dynamics (PO-88) is computed in P16 and is no
-% longer a debt (r7491); PO-24's first half is data-gated (r7505).  The acoustic SCALE is RESOLVED
+% longer a debt (r7491); PO-24's first half has its data gate open on ACT DR6 (r7627).  The acoustic SCALE is RESOLVED
 % in this paper's own cosmological development (Sec flatlcdm), synthesised in P7,
 % and NOT re-opened in the perturbation sector; the "1.9x
 % tension" earlier readings reported is a retired chimera (standard radiation-
@@ -478,22 +478,25 @@ neither of the two a reader expects.} Scaling the diffusion length by the instru
 multiplies the damping by a Gaussian in $\ell$, and a tilt is a power law --- so over a restricted high-$\ell$
 range the one is well approximated by the other. \emph{Refitting amplitude and tilt therefore absorbs the
 signature almost entirely in shape}, and what it costs is a shift in the inferred tilt. \emph{Both scale with
-$r^{2}-1$, and at the adjudicated ratio that factor is small}: with both lengths carried to the visibility
-peak, $r=0.9918$, the signature costs $1.70$ in $\chi^{2}$ over the $185$ full-range bins---under a hundredth
-per bin---and a tilt of $+0.0034$ absorbs seven tenths of it. \emph{Terminating the diffusion integral at a
-sharp recombination cut instead}, $r=1.0231$, \emph{gives $12.6$ and a tilt of $-0.0093$}, and a ratio of $1.082$ gives $160$ and $-0.034$ on the same base and the same damping scale\rcpt{P15_the_signature_collapses_at_the_adjudicated_ratio_and_the_endpoint_sets_its_sign}. \emph{So the
-hundredfold collapse is the configuration moving and not the fit improving}. \emph{So the signature
+$r^{2}-1$, and at the adjudicated ratio that factor is small}: imposed with the exponent the instrument itself
+measures on the power (below), and with both lengths carried to the visibility peak, $r=0.9918$, the signature
+costs $6.5$ in $\chi^{2}$ over the $185$ full-range bins---under four hundredths per bin---and a tilt of
+$+0.0065$ absorbs seven tenths of it. \emph{Terminating the diffusion integral at a
+sharp recombination cut instead}, $r=1.0231$, \emph{gives $51$ and a tilt of $-0.019$}, and a ratio of $1.082$ gives $618$ and $-0.070$ on the same base and the same damping scale\rcpt{P15_the_signature_collapses_at_the_adjudicated_ratio_and_the_endpoint_sets_its_sign}\rcpt{P15_on_the_instruments_own_exponent_the_signatures_sizes_move_and_its_shapes_do_not}. \emph{So the
+near-hundredfold collapse is the configuration moving and not the fit improving}. \emph{So the signature
 does not vanish under a refit --- it moves out of the spectrum's shape and into an inferred parameter.}
 \emph{What a refit buys in shape it pays for in parameters}, and that direction is the robust part.
 
 \emph{And how local that approximation is can be stated exactly, which settles what a joint fit would
 actually meet.} The signature's own logarithmic slope is
-$\dd\ln(\text{ratio})/\dd\ln\ell=-2(r^{2}-1)(\ell/\ell_{D})^{2}$ --- \emph{not a constant, but growing as
-$\ell^{2}$}: across the likelihood's own $\ell=30$--$2508$ it runs from $-0.0002$ to $-1.31$, a factor of
+$\dd\ln(\text{ratio})/\dd\ln\ell=-2\alpha(r^{2}-1)(\ell/\ell_{D})^{2}$, with $\alpha=1.70$ the instrument's
+exponent --- \emph{not a constant, but growing as
+$\ell^{2}$}: across the likelihood's own $\ell=30$--$2508$ it runs from $-0.0002$ to $-1.09$, a factor of
 seven thousand, which is exactly
-$(\ell_{\max}/\ell_{\min})^{2}$\rcpt{P15_the_tilt_is_the_wrong_absorber}. \emph{So a single tilt is a
-one-parameter fit to a function whose slope varies by that factor over the data it is scored on}, and the
-displacement quoted above is the signature's true slope at $\ell=381$ and at no other multipole.
+$(\ell_{\max}/\ell_{\min})^{2}$\rcpt{P15_the_tilt_is_the_wrong_absorber}\rcpt{P15_on_the_instruments_own_exponent_the_signatures_sizes_move_and_its_shapes_do_not}. \emph{So a single tilt is a
+one-parameter fit to a function whose slope varies by that factor over the data it is scored on}, and a
+fitted displacement is the signature's true slope at one multipole and at no other---$\ell=419$ for the
+full-range fit.
 \emph{The consequence is the useful part}: a joint fit does not encounter a shifted tilt but a residual
 whose \emph{shape} is a Gaussian in $\ell$, and no tilt removes a Gaussian --- so what such a fit weighs
 is the shape residual, which is the quantity already bounded from above. \emph{And a displacement in
@@ -503,19 +506,29 @@ on $n_s$ that does not run through the damping tail}, and that constraint is mea
 run. Off the tail---\texttt{plik\_lite}'s $TT$, $TE$ and $EE$ to $\ell=800$, with lensing and the
 optical-depth prior---the tilt is $0.9611\pm0.0063$; on the tail alone, all six parameters free and the
 baryon density among them, $\ell=1000$--$2508$ returns $0.9639\pm0.0158$, where the signature predicts a
-shift of $+0.025$ and its absence none. \emph{No window decides}: separating the two predictions needs
-$2\sigma$, the nearest window, $\ell=700$--$1760$, reaches $1.94$, and each of the four windows sits
-$0.1$--$0.4\sigma$ from no shift and $1.0$--$1.5\sigma$ from the signature's, all four leaning the same
-way. \emph{So the question is decidable and not decided}: it waits on damping-tail data $1.25$ times as
-precise as Planck's on that window, which is a measurement and not a computation this paper can
-supply\rcpt{P15_the_tilt_off_the_tail_cannot_decide_the_signature_on_plancks_tail}.
+shift of $+0.022$ and its absence none. \emph{No window of Planck's decides}: separating the two predictions
+needs $2\sigma$, the nearest window, $\ell=700$--$1760$, reaches $1.65$, and each of the four windows sits
+$0.1$--$0.4\sigma$ from no shift and $0.85$--$1.2\sigma$ from the signature's, all four leaning the same
+way\rcpt{P15_the_tilt_off_the_tail_cannot_decide_the_signature_on_plancks_tail}\rcpt{P15_on_the_instruments_own_exponent_the_signatures_sizes_move_and_its_shapes_do_not}. \emph{So on Planck's
+tail the question is decidable and not decided}: deciding it on $\ell=1000$--$2508$ needs the tail's tilt
+measured $1.44$ times as precisely as Planck measures it there. \emph{And the data now reach that precision.}
+Adding the Atacama Cosmology Telescope's sixth data release~\cite{ACTDR6}, its damping-tail $TT$, $TE$ and $EE$,
+to the same six-parameter fit on that window measures the tilt $1.82$ times as precisely as Planck alone, and
+$1.67$ times with ACT alone on the window and Planck cut where ACT measures; the two predictions are then
+$3.2$ and $2.9$ standard deviations apart. The sky's tilt there is $0.9701\pm0.0087$, $1.1\sigma$ from no
+shift and $2.1\sigma$ from the signature's, and $0.9736\pm0.0094$, $1.3\sigma$ and $1.5\sigma$, with ACT
+alone. \emph{So the data lean against the signature, at the $2\sigma$ line and not past it}, and the combined
+figure counts the sky the two experiments share twice. The lean is conservative rather than inflated: the
+no-shift baseline is Planck's off-tail tilt, and ACT prefers a higher tilt than Planck across its whole range,
+which moves the sky toward the signature's prediction. What decides it is the same comparison with the
+off-tail baseline taken from the same combination of data\rcpt{P15_the_damping_tail_data_now_reach_the_bar_and_lean_against_the_signature_without_deciding_it}.
 
 \emph{Two bounds travel with that and neither can be left to a reader.} \emph{The shape residual is an upper
 bound}: freeing only the named degeneracy is the least absorption a fuller refit could achieve, so a wash is a
 wash \emph{a fortiori}. \emph{The tilt displacement is not a bound}, because more free parameters would share
 it --- the baryon density moves the diffusion length itself. \emph{And the magnitude is fixed on the faithful
-route, the two routes being reconciled.} Imposing the ratio on the measured spectrum gives the figures above, and at a
-ratio of $1.174$ it gives $0.30$ in $\chi^{2}$ per bin over $\ell=100$--$1760$, while applying it inside the
+route, the two routes being reconciled.} Imposing the ratio on the measured spectrum as $\exp[-(r^{2}-1)(\ell/\ell_{D})^{2}]$, with exponent one,
+gives, at a ratio of $1.174$, $0.30$ in $\chi^{2}$ per bin over $\ell=100$--$1760$, while applying it inside the
 instrument's own source gives $0.92$. \emph{The difference is the exponent}: inside the source the ratio damps the
 photon amplitude, which the power sees through its square and the Doppler term through a derivative, and the
 instrument's own banked pairs measure the effective exponent of $(\ell/\ell_{D})^{2}$ as $1.70$ rather than the one
@@ -531,17 +544,17 @@ residual on the same window and $1.7$ times its tilt\rcpt{P15_the_source_route_i
 predicts.} Fitting amplitude and tilt together against the signature-carrying spectrum, on
 \texttt{plik\_lite}'s own bandpowers and covariance, the residual left after the fit is the analytic
 Gaussian-minus-power-law shape to a correlation of $1.000000$ --- \emph{not merely non-zero, but the
-predicted form}. \emph{The residual's form is the finding and its size is the configuration's}: at the adjudicated ratio it is under a hundredth in $\chi^{2}$ per bin, and $1.50$ per bin at a ratio of $1.0926$ on the same window.
+predicted form}. \emph{The residual's form is the finding and its size is the configuration's}: at the adjudicated ratio it is about a hundredth in $\chi^{2}$ per bin, and $1.06$ per bin at a ratio of $1.0926$ on the same window.
 \emph{And the displacement is not one number}: fitted over $\ell=100$--$1760$ and over
-$\ell=1400$--$2508$ it differs by a factor of $6.3$ across windows of the same data, so a
+$\ell=1400$--$2508$ it differs by a factor of $6.2$ across windows of the same data, so a
 displacement is the value of nothing without the window it was fitted over. \emph{And the tilt takes a fixed share of it rather than a variable one}: seven tenths at the adjudicated ratio and seven tenths at $1.0926$, so what the refit can and cannot do is a
-property of the shapes and not of the size\rcpt{P15_the_joint_fit_leaves_the_gaussian_and_the_bound_was_chi2_not_sigma}.
+property of the shapes and not of the size\rcpt{P15_the_joint_fit_leaves_the_gaussian_and_the_bound_was_chi2_not_sigma}\rcpt{P15_on_the_instruments_own_exponent_the_signatures_sizes_move_and_its_shapes_do_not}.
 
 \emph{Not} settled by that run: whether a displacement of that size in the inferred
 tilt is a \emph{tension}. The tilt is inherited boundary data here, not predicted, so a different
 value of it is a different input; what would make it a tension is the off-tail constraint, which
-this fit does not supply and the comparison above does, returning a question that the damping tail
-can decide and has not yet decided. The observable is $\theta_D/\theta_*=r_D/\rs$, and translating it into a spectrum requires the full acoustic transfer, which is run (\S\ref{sec:refit-bound}) and does not return high-$\ell$ peaks tracking flat $\Lambda$CDM's. A leading-order pass that simply \emph{assumes} the high-$\ell$ peaks equal $\Lambda$CDM's and applies the extra damping produces a large high-$\ell$ deficit (receipt: \texttt{full\_transfer\_verdict.py}\rcpt{P15_full_transfer_verdict})---but that assumption may not be imported for free: the same handover that fixes $r_D$ also fixes where the high-$\ell$ driving starts, every mode re-entering on the expanding leg from the frozen state the branch point hands over, so CR's high-$\ell$ spectrum rests on its own driving rather than on one imported from flat $\Lambda$CDM.
+this fit does not supply and the comparison above does, returning a question the damping tail can decide,
+on which the data now reaching the required precision lean against the signature without yet deciding it. The observable is $\theta_D/\theta_*=r_D/\rs$, and translating it into a spectrum requires the full acoustic transfer, which is run (\S\ref{sec:refit-bound}) and does not return high-$\ell$ peaks tracking flat $\Lambda$CDM's. A leading-order pass that simply \emph{assumes} the high-$\ell$ peaks equal $\Lambda$CDM's and applies the extra damping produces a large high-$\ell$ deficit (receipt: \texttt{full\_transfer\_verdict.py}\rcpt{P15_full_transfer_verdict})---but that assumption may not be imported for free: the same handover that fixes $r_D$ also fixes where the high-$\ell$ driving starts, every mode re-entering on the expanding leg from the frozen state the branch point hands over, so CR's high-$\ell$ spectrum rests on its own driving rather than on one imported from flat $\Lambda$CDM.
 
 \emph{And the observable ratio is read at one epoch on both lengths, which is what fixes it.} The two-arm transfer measures the raw diffusion length at the visibility peak, and the sound horizon is carried to the same place, because a ratio of integrals taken to different epochs is not a ratio of anything (\S\ref{sec:diffusion-scale}). \emph{The endpoint is therefore not a free choice}, and the difference between terminating the two lengths together and terminating them apart is larger than anything the cosmological parameters do to the signature.
 
@@ -619,11 +632,12 @@ against the measured $301.76$\rcpt{C10_highl_ratio}.
 
 The high-$\ell$ consequence follows with no free parameter:
 $C_{\ell}^{\mathrm{CR}}/C_{\ell}^{\Lambda\mathrm{CDM}}
-=\exp[-(\ell/\ell_{D})^{2}(r^{2}-1)]$ with $r=\theta_{D}/\theta_{*}$---the same ratio the preceding
-paragraph derives, and nothing else---so with both lengths carried to the peak of the
-visibility function, $r=0.992$, it is a rise of about two per cent at $\ell_{D}$ and four at
+=\exp[-\alpha(\ell/\ell_{D})^{2}(r^{2}-1)]$ with $r=\theta_{D}/\theta_{*}$---the same ratio the preceding
+paragraph derives---and $\alpha=1.70$ the exponent the instrument's own spectra measure on the power
+(\S\ref{sec:diffusion-scale})\rcpt{P15_on_the_instruments_own_exponent_the_signatures_sizes_move_and_its_shapes_do_not}, and nothing else; so with both lengths carried to the peak of the
+visibility function, $r=0.992$, it is a rise of about three per cent at $\ell_{D}$ and six at
 $1.5\,\ell_{D}$, where terminating the diffusion integral at a sharp recombination cut instead, $r=1.023$,
-turns it into a fall of four and ten\rcpt{P15_the_signature_collapses_at_the_adjudicated_ratio_and_the_endpoint_sets_its_sign}, the sentence and the ratio it defines being checked against each other rather than corrected separately\rcpt{R1_the_correction_stopped_at_the_sentence_and_the_number_it_defines_was_left_behind}.
+turns it into a fall of eight and sixteen\rcpt{P15_the_signature_collapses_at_the_adjudicated_ratio_and_the_endpoint_sets_its_sign}, the sentence and the ratio it defines being checked against each other rather than corrected separately\rcpt{R1_the_correction_stopped_at_the_sentence_and_the_number_it_defines_was_left_behind}.
 \emph{Whether that is a tension is not settled from these numbers}: a
 confrontation refits the cosmological parameters, which is a likelihood analysis and not a closed-form
 calculation---run on the tail alone with every parameter free, it does not yet decide
@@ -3007,6 +3021,7 @@ a length. \emph{The branch point is crossed by continuation, not traversed by a 
 \bibitem{DESI2025} DESI Collaboration, \emph{DESI DR2 Results II: Measurements of Baryon Acoustic Oscillations and Cosmological Constraints}, arXiv:2503.14738 (2025).
 
 \bibitem{Planck2018} Planck Collaboration (N.~Aghanim et al.), \emph{Planck 2018 results.~VI.~Cosmological parameters}, Astron.\ Astrophys.\ \textbf{641} (2020) A6.
+\bibitem{ACTDR6} T.~Louis et al.\ (ACT Collaboration), \emph{The Atacama Cosmology Telescope: DR6 power spectra, likelihoods and $\Lambda$CDM parameters}, \texttt{arXiv:2503.14452} (2025).
 \bibitem{Riess2022} A.~G.~Riess et al., \emph{A comprehensive measurement of the local value of the Hubble constant with 1~km\,s$^{-1}$\,Mpc$^{-1}$ uncertainty from the Hubble Space Telescope and the SH0ES team}, Astrophys.\ J.\ Lett.\ \textbf{934} (2022) L7.
 \bibitem{Moresco2016} M.~Moresco et al., \emph{A 6\% measurement of the Hubble parameter at $z\sim0.45$: direct evidence of the epoch of cosmic re-acceleration}, J.\ Cosmol.\ Astropart.\ Phys.\ \textbf{05} (2016) 014.
 \bibitem{Silk1968} J.~Silk, \emph{Cosmic black-body radiation and galaxy formation}, Astrophys.\ J.\ \textbf{151} (1968) 459.

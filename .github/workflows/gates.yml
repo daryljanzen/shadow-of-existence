@@ -178,7 +178,11 @@ jobs:
     #   ** One completed run is one sample of a suite that grows.  If a run is cut off at 127, the
     #   always() step below still records RUN_RESULT, and the next budget is set from that record --
     #   never by raising this number without a measured figure. **
-    timeout-minutes: 127
+    # ⌗ r7627 (69), on node 70's r7621+70.1: the suite grew into 127.  Completed runs took 74, 92 and 122 minutes on
+    #   the three nights before 10-27, and 10-27 was cut off at 127 (run 40474897195) with an EMPTY partial record,
+    #   because the runner's output was block-buffered through `tee` -- fixed below with `python3 -u`.  The worst
+    #   figure is now at least 127; plus a quarter is 158.75, hence 160.
+    timeout-minutes: 160
     permissions: { contents: write }   # PO-65: the record step below pushes refs/ci/nightly, and nothing else
     steps:
       # ⛔ r6977+70.1 (70): FULL HISTORY.  With the default depth-1 checkout every receipt that reads an
@@ -199,7 +203,7 @@ jobs:
       #   fail on import in EVERY environment -- this container and this job alike -- so two
       #   registered receipts were unrunnable everywhere and counted as real failures.
       - run: pip install -r requirements-ci.txt pynucastro
-      - run: python3 scripts/run_all_receipts.py --jobs 4 --timeout 600 | tee receipts/RUN_RESULT.txt
+      - run: python3 -u scripts/run_all_receipts.py --jobs 4 --timeout 600 | tee receipts/RUN_RESULT.txt   # -u: a cut-off run still records how far it got (r7627)
       # ⛔ r7309 (66), node 70's option ③, taken unconditionally and first: ** A CANCELLED RUN RECORDED
       #   NOTHING. **  Seven of the last ten scheduled runs were cut off at the clock and left no trace
       #   of which receipts they had reached, so seven nights of the one guard that covers the
@@ -255,7 +259,7 @@ jobs:
     #   only thing that REFRESHED it was the monthly backstop -- so no per-push or nightly run ever had,
     #   by construction, and the index aged a whole month between traces.  This is the backstop's own
     #   ⓶ trace, `emit` and upload, lifted UNCHANGED onto the 03:00 cron as a SEPARATE job: no `needs:`,
-    #   so it adds 0 minutes to the heavy tier's wall against its 127, and costs one full trace of runner
+    #   so it adds 0 minutes to the heavy tier's wall against its 160, and costs one full trace of runner
     #   time (the backstop's ⓶ step measured 39 min on 927 receipts, 2026-10-01).  CI cannot commit, so
     #   the index is an ARTIFACT, and node 70's nightly read downloads it and commits it.
     #   ⌗ The heavy tier itself runs no tracer and cannot emit an index: the tracer runs each receipt

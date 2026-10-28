@@ -1018,3 +1018,15 @@ standing by, no formalisation row being open.
   - The correlated value (1.6e-2, some 390 times the measured anisotropy) is the headline, and independent cells (8.9e-3, some 220 times) the most accommodating case.
   - Both copies use the same inputs: the Planck 2018 base parameters, the measured spectrum as comparator, and the growth rate read on large scales.
   - Receipt `P04_the_floor_exceeds_the_measured_temperature_spectrum_at_every_multipole_and_the_exclusion_moves_to_low_multipoles_only_at_large_smoothing`.
+- `PO-24`'s figures carried on the instrument's own exponent, and its data gate opened. **Landed r7627; the computations 70's (r7611+70, r7625+70).**
+  - On $\alpha=1.70$, the exponent the instrument's spectra measure on the power, the signature's sizes move and its shapes do not. The ruled row costs $6.5$ in $\chi^2$ over 185 bins with a tilt of $+0.0065$. The joint fit leaves $1.06$ per bin after the tilt. The slope reaches $-1.09$ at $\ell=2508$, and the tail mock's shift is $+0.022$.
+  - Deciding the tension on $\ell$ 1000--2508 needs $1.44\times$ Planck's precision, and ACT DR6 reaches it: $1.82\times$ combined, $1.67\times$ alone. The predictions are then $3.2\sigma$ apart.
+  - The sky leans against the signature at the $2\sigma$ line ($1.1\sigma$ from no shift, $2.1\sigma$ from the signature) without deciding.
+  - The deciding measurement is a same-data off-tail baseline.
+  - Receipts `P15_on_the_instruments_own_exponent_the_signatures_sizes_move_and_its_shapes_do_not` and `P15_the_damping_tail_data_now_reach_the_bar_and_lean_against_the_signature_without_deciding_it`.
+- `PO-94`'s gauge half, the composite route. **Landed r7627; the computation cc66's (r7621+cc66).**
+  - An induced coupling's loop has every slot filled on the face: $N=4$, the Dirac gap $5/(2\alpha)$ as infrared scale, $\beta^{-1}$ as cutoff.
+  - The cutoff lies below the gap by $5\pi$, so no mode contributes and the loop induces nothing. With $\mu$ free, the coupling is free.
+  - Every one of `B59`'s routes is now computed and none reaches a coupling. The gauge half stands, as the quantum half does, on whether its list of routes is complete.
+  - Where the coupling is fixed: by measurement at a reference scale, as in the Standard Model.
+  - Receipt `P13_the_induced_coupling_route_does_not_engage_because_the_constructions_cutoff_lies_below_its_own_spectral_gap_and_no_modes_remain_to_integrate_out`.

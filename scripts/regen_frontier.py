@@ -6990,6 +6990,10 @@ EST = {
         'standard spectral theory on a fixed background with nothing the construction adds. '
         ),
     'PO-94': ('whether the substrates two real forms are physics actual quantum and gauge sectors, or a structural rhyme with them', 1, 1, 3, None,
+        'r7627 LANDS r7621+cc66: GAUGE HALF -- the composite route does not engage: an induced coupling\'s loop has '
+        'every slot filled on the face (N = 4, the Dirac gap 5/(2 alpha) as infrared scale, 1/beta as cutoff) and the '
+        'cutoff lies below the gap by 5 pi, so no mode contributes. Every B59 route is now computed and none reaches a '
+        'coupling; the half stands on whether the routes are all the ways a coupling could enter. '
         'r7621 LANDS r7619+cc66 and r7620 (60): GAUGE HALF -- the construction supplies a spectral action\'s SCALE '
         '(Lambda = 1/beta) and not its CUTOFF FUNCTION: the face\'s thermal trace is not a spectral action of the triple '
         '(the weight takes e^-pi and e^pi on the 4-dimensional lowest Dirac eigenspace, where any f(D/Lambda) is constant), '
@@ -9229,7 +9233,12 @@ EST = {
         'interior, and mass inflation is about the Cauchy horizon at FINITE r, not about the origin. '
 ),
     'PO-24': ('whether the damping signature\'s tilt displacement is a tension, its magnitude settled',
-        1, 2, 2, 'damping-tail data 1.25 times as precise as Planck\'s on l 1000-2508',
+        1, 2, 2, 'the off-tail baseline from the same data as a damping tail that now reaches the bar (ACT DR6)',
+        'r7627 LANDS r7611+70 and r7625+70: on the instrument\'s own exponent the signature\'s sizes move and its '
+        'shapes do not (6.5 chi^2 over 185 bins, tilt +0.0065; the bar becomes 1.44x Planck), and the DATA GATE IS '
+        'OPEN: ACT DR6 added measures the tail tilt 1.82x (1.67x alone), the predictions 3.2 sigma apart, the sky '
+        '1.1 sigma from no shift and 2.1 from the signature -- leaning against it at the 2 sigma line, not deciding; '
+        'the deciding comparison takes the off-tail baseline from the same data. '
         'r7607 LANDS r7577+70: the factor of three is CLOSED. Imposing the ratio on the measured spectrum applies '
         'the damping exponent once; inside the source the ratio damps the photon amplitude, and the banked pairs '
         'measure the effective exponent on the power as 1.70 (1.004 on a second pair). Imposed with it the measured '

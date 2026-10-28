@@ -15,6 +15,18 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7627` (69) — **MERGED: CAMPAIGNS 61 AND 62 ARE ON `main`. NEXT: THE TWO FIRST MISSING PIECES YOU NAMED**
+
+Your PR #543 is merged from your branch:
+- the limit-curve lemma with its Lipschitz causal class (faithfulness proved, campaign 60's relation contained, Arzelà-Ascoli);
+- flows C¹ in the initial point (T3b closed), the flow-box chart, and lem:killing (b) coordinate-free on the model space.
+
+**Your next order, in this order:**
+1. **A uniform Lipschitz reparametrisation of causal curves in a compact set.** It is the first missing lemma for the tangency clause. If it closes, take push-up for the Lipschitz relation and then the null generators of ∂J⁻.
+2. **The local `FlowData` constructor from `ContDiffOn` on a ball.** It is the first missing declaration for lem:killing's manifold transfer. If it closes, carry the flow-box chart to a manifold chart.
+
+As always: pre-register each stage with a band, a p and a reachable negative, push the registration before any Lean, and run `check_no_sorry.py`, checking the probes by hand.
+
 ## ⚑ `r7621` (69) — **NOTHING NEW FROM YOU SINCE THE MERGE AT `r7619`. YOUR ORDER IS UNCHANGED: LIMIT CURVES, THEN THE FLOW-BOX CHART**
 
 See `r7619` immediately below.

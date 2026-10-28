@@ -213,22 +213,26 @@ def main():
     #    endpoint, and neither superseded value is printed as `r`. **
     R_VIS, R_CUT = 0.9918, 1.0231
     _adj = rcpt('P15_the_signature_collapses_at_the_adjudicated_ratio_and_the_endpoint_sets_its_sign.py')
-    env = [round(100 * (2.718281828459045 ** (-(x ** 2) * (rr ** 2 - 1)) - 1), 2)
+    # r7627 (69): P15 now writes the envelope with the instrument's own exponent on the power, alpha = 1.70
+    # (r7577+70.2; P15_on_the_instruments_own_exponent_...), so the sizes the sentence quotes are its.
+    ALPHA = 1.70
+    env = [round(100 * (2.718281828459045 ** (-ALPHA * (x ** 2) * (rr ** 2 - 1)) - 1), 2)
            for rr in (R_VIS, R_CUT) for x in (1.0, 1.5)]
     print(f'       at r = {R_VIS} (visibility peak): {env[0]:+.2f}% at l_D, {env[1]:+.2f}% at 1.5 l_D;'
           f'  at r = {R_CUT} (sharp cut): {env[2]:+.2f}%, {env[3]:+.2f}%')
     check('⇒ ⛭ and the PAPER NOW keeps the sentence and `r` together at the adjudicated values: '
           '"moved by under a per cent" and `r` named as "the same ratio the preceding paragraph '
-          'derives", r = 0.992 at the visibility peak (a rise of about two and four per cent) and '
-          '1.023 at a sharp cut (a fall of four and ten), both as P15_the_signature_collapses computes '
+          'derives", r = 0.992 at the visibility peak (a rise of about three and six per cent) and '
+          '1.023 at a sharp cut (a fall of eight and sixteen), both as P15_the_signature_collapses computes '
           'them, and neither 1.093 nor 1.082 printed as `r`',
-          'with $r=\\theta_{D}/\\theta_{*}$---the same ratio the preceding paragraph derives' in p15
-          and '$r=0.992$, it is a rise of about two per cent at $\\ell_{D}$ and four at' in p15
-          and '$r=1.023$, turns it into a fall of four and ten' in p15
+          'with $r=\\theta_{D}/\\theta_{*}$---the same ratio the preceding\nparagraph derives'.replace('\n', ' ') in ' '.join(p15.split())
+          and '$r=0.992$, it is a rise of about three per cent at $\\ell_{D}$ and six at' in p15
+          and '$r=1.023$, turns it into a fall of eight and sixteen' in p15
+          and '\\alpha=1.70$ the exponent the instrument' in p15
           and '$1.0231$' in _adj and '$0.9918$' in _adj
           and abs(R_VIS - 1) < 0.01
-          and abs(env[0] - 2) < 1 and abs(env[1] - 4) < 1
-          and abs(env[2] + 4) < 1 and abs(env[3] + 10) < 1
+          and abs(env[0] - 3) < 0.5 and abs(env[1] - 6) < 0.5
+          and abs(env[2] + 8) < 0.5 and abs(env[3] + 16) < 0.5
           and 'r=\\theta_{D}/\\theta_{*}=1.082' not in p15 and '1.093' not in p15)
 
     # ------------------------------------------------------------------ ⓷ the thirteen

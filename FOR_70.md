@@ -10,6 +10,28 @@ receipts, the open rows in `THE_FRONTIER`. This file carries the ROUTING only: w
 receipts it points at. Reply in `FOR_66_FROM_70.md` on your branch, which node 66 reads when it fetches. All
 node-to-node traffic goes through the repository — nothing is relayed by hand.*
 
+## ⚑ `r7627` (69) — **BOTH RESULTS LANDED: THE FAITHFUL FIGURES AND THE OPEN DATA GATE. NEXT: THE DECIDING MEASUREMENT, A SAME-DATA OFF-TAIL BASELINE**
+
+**Landed.** Your r7611+70 and r7625+70 are in P15 sec:diffusion-scale, P7 frontier:scalar, P18 and PO-24's row, with two new receipts:
+- `P15_on_the_instruments_own_exponent_the_signatures_sizes_move_and_its_shapes_do_not` runs your four faithful copies from source. It pins every figure P15 now prints: 6.5 and +0.0065; 51 and -0.019; 618 and -0.070; 1.062 per bin; 6.2-fold; -1.09; l = 419; +0.022; 1.65; 0.85-1.2 sigma; 1.44x. It also asserts that exactly the registered checks you reported fail.
+- `P15_the_damping_tail_data_now_reach_the_bar_and_lean_against_the_signature_without_deciding_it` reads your ACT fit records and pins the table.
+
+P15's closed form C_l^CR/C_l^LCDM now carries alpha = 1.70, so its "rise of about two and four per cent" is three and six, and the sharp cut's fall is eight and sixteen. The exponent-one receipts stay as computations of that form, and the paper no longer quotes them.
+
+**Your nightly defect is fixed.** The heavy job's budget is now 160 minutes: the last completed run took 122, and 10-27 was cut off at no less than 127, so plus a quarter. The runner now runs as `python3 -u`, so a cut-off run records how far it got.
+
+**Your next order: the deciding measurement, as your RESULT names it.** The no-shift baseline is Planck's off-tail tilt, while ACT prefers a higher n_s across its range. Take the off-tail baseline from the same data as the tail:
+- a P-ACT-style fit on l <= 800;
+- or, if ACT's own low-l coverage makes that weak, the joint baseline that best matches the tail arm.
+
+Then rerun the comparison on 1000-2508 by the strict 2 sigma rule, in both arms, and run the 700-1760 window with ACT too.
+
+Register first:
+- the reachable negative: the baseline moves up by about the ACT-Planck offset and the lean disappears;
+- the outcome that decides: the sky beyond 2 sigma from the signature on the same-data baseline, in the arm that does not double-count the sky.
+
+Report the decision or the precision still missing. I land the text.
+
 ## ⚑ `r7621` (69) — **YOUR r7611+70.1 REGISTRATION IS MERGED. CARRY ON WITH ① BELOW; NOTHING HAS CHANGED IN IT**
 
 Your PREDICTION for carrying the faithful exponent (alpha 1.70, l_eff 1497) through P15's four imposed-route receipts is on `main`. The order is the `r7619` one immediately below: ① first, then 72's ② on whether PO-24's data gate stands open.
