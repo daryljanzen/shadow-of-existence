@@ -1,0 +1,12 @@
+  f_ACT lower bound from each bin (noise >= 0): max over bins = 0.170 at l = 1150
+  independent (upper bound): tilt 1.672
+   f_ACT  amp overlap  tilt overlap
+   0.170        1.211         1.587
+   0.150        1.213         1.584
+   0.200        1.205         1.586
+   0.250        1.204         1.592
+   0.300        1.206         1.600
+   0.350        1.209         1.608
+   0.400        1.213         1.616
+   0.450        1.217         1.624
+   0.500        1.221         1.631
