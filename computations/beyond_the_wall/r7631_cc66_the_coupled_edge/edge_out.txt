@@ -1,0 +1,200 @@
+
+================================================================================================
+r7631+cc66 (1) -- THE COUPLED EDGE: WHAT SELECTS THE SUB-THRESHOLD CONDITION?
+================================================================================================
+
+------------------------------------------------------------------------------------------------
+  CONTROL (2) -- the threshold reproduced, so the fibres worked on are the corpus's
+------------------------------------------------------------------------------------------------
+    Gamma      nu         sub-threshold    branches x^(1/2 +- nu)     in spec(Gamma-hat)?
+    0.000      0.500000   YES              x^+1.000000 and x^+0.000000  NO -- below the 0.25 floor
+    0.250      0.707107   YES              x^+1.207107 and x^-0.207107  yes
+    0.500      0.866025   YES              x^+1.366025 and x^-0.366025  yes
+    0.740      0.994987   YES              x^+1.494987 and x^-0.494987  yes
+    1.000      1.118034   no (ess. s.a.)   x^+1.618034 and x^-0.618034  yes
+    ⇒ sub-threshold is nu < 1, i.e. Gamma < 0.75 -- the corpus's 3/4.
+
+------------------------------------------------------------------------------------------------
+  CONTROL (5) -- WHICH fibres the corpus's operator actually has, since a selector
+  demonstrated on a fibre outside spec(Gamma-hat) would be demonstrated on nothing
+------------------------------------------------------------------------------------------------
+    spec(Gamma-hat) = [floor, oo), and the corpus states the floor for both orderings:
+
+    ordering               floor      sub-threshold band         non-empty?
+    normal                 0.25       [0.25, 0.75)                YES, width 0.50
+    symmetric (1 mode)     0.75       [0.75, 0.75)                NO -- EMPTY
+
+    ⇒ Under NORMAL ordering the band is non-empty and there is a condition to select.
+      Under SYMMETRIC ordering the floor IS the threshold, the band is empty, and the
+      question has no object -- which is the corpus's own "limit-point from the first
+      occupied mode upward", reached here by arithmetic on its two stated floors.
+    ⇒ ** So the selection question has content under normal ordering, and every fibre
+      used below lies in [0.25, 0.75). **  Gamma = 0 is NOT in the spectrum.
+
+------------------------------------------------------------------------------------------------
+  (1) THE PARAMETRISATION -- the deficiency is a SUBSPACE, so the family is U(n)
+------------------------------------------------------------------------------------------------
+    sub-threshold fibres sampled: n = 3, each contributing deficiency index (1,1)
+    ⇒ total deficiency index (3,3), so by von Neumann the self-adjoint extensions are
+      in bijection with the unitaries U(3): 9 real parameters, NOT one angle.
+    ⇒ Hartle-Hawking picks ONE point of that family: the regular branch on EVERY fibre,
+      which is DIAGONAL in the fibre decomposition (no mixing).
+
+------------------------------------------------------------------------------------------------
+  CONTROL (3) -- a SUPER-threshold fibre: the family must be EMPTY there
+------------------------------------------------------------------------------------------------
+    Gamma = 1.00 gives nu = 1.118034 >= 1, so the operator is essentially self-adjoint:
+    deficiency index (0,0), extensions = U(0), i.e. 0 parameters -- NOTHING to select.
+    ⇒ A principle that "selects" on such a fibre would be measuring nothing.  Every
+      selection below is therefore asked only on the 3 sub-threshold fibres.
+
+------------------------------------------------------------------------------------------------
+  CONTROL (1) + THE SELECTOR -- finite quadratic-form energy, MEASURED on both branches
+  rather than cited, on the corpus's physical fibres
+------------------------------------------------------------------------------------------------
+
+    Gamma    branch     exponent     coefficient  form(1e-4)    form(1e-8)   
+    0.250    regular    0.414214     1.707107     1.207         1.207         (finite)
+    0.250    irregular  -2.414214    0.292893     9.4e+04       7.539e+12     <- DIVERGES
+    0.500    regular    0.732051     2.366025     1.366         1.366         (finite)
+    0.500    irregular  -2.732051    0.633975     3.103e+06     5.694e+15     <- DIVERGES
+    0.740    regular    0.989975     2.974987     1.495         1.495         (finite)
+    0.740    irregular  -2.989975    0.985013     4.515e+07     1.024e+18     <- DIVERGES
+
+    ⇒ The integrand is (s^2 + Gamma) x^(2s-2), so int_0 converges iff s > 1/2.  The
+      REGULAR branch has s = 1/2 + nu > 1/2 and its form energy is stable as eps
+      shrinks; the IRREGULAR branch has s = 1/2 - nu < 1/2 and its form energy GROWS.
+    ⇒ And it does so WITH MARGIN across the whole physical band, which is the part the
+      knife-edge below shows is not automatic: the smallest irregular coefficient is
+      0.292893 > 0 and the largest irregular exponent is -2.414214 < -1.
+      ** Finite form energy therefore admits the regular branch and excludes the
+      irregular one, on every fibre of spec(Gamma-hat) below the threshold. **
+
+------------------------------------------------------------------------------------------------
+  CONTROL (6) -- THE ONE PLACE THIS ARGUMENT FAILS, exhibited and then excluded by
+  measurement rather than left for a reader to find (the first draft swept it as a fibre)
+------------------------------------------------------------------------------------------------
+    At Gamma = 0.00: nu = 0.500000 EXACTLY 1/2, so the branches are x^1.0 and x^0.0 --
+    the irregular one is a CONSTANT.  Its form integrand:
+      exponent -2.000000 (non-integrable) but coefficient s^2 + Gamma = 0.000000 + 0.000000 = 0.000000
+      ⇒ form energy 0 -> 0: FINITE, because the coefficient vanishes identically.
+      (regular branch there: exponent +0.000000, coefficient 1.000000, form 0.999900 -> 1.000000.)
+
+    ** So at nu = 1/2 finite form energy does NOT exclude the irregular branch. **  This
+    is the free Laplacian on a half-line, Dirichlet (x^1) against Neumann (x^0), and
+    both have finite energy.  Two things about it, and neither is a repair by prose:
+
+    (i) IT IS NOT A FIBRE.  spec(Gamma-hat) = [0.25, oo), and 0.00 < 0.25, so the
+        knife-edge lies outside the operator's spectrum by 0.25 -- the selector is never
+        asked there.  The margin reported above is exactly the distance from this hole.
+    (ii) AND EVEN THERE THE SELECTION SURVIVES, but by a STRONGER criterion: not
+        finiteness of the form but CLOSURE of the minimal form domain.  The Friedrichs
+        extension is the form-closure extension, H^1_0, whose members have trace 0 at
+        the origin; the constant has trace 1 and is not in it.  ⌗ That is the trace
+        theorem and not a measurement, so it is reported as a reading.  The MECHANISM is
+        measurable, and here it is -- the energy of pulling the constant down to 0 over
+        a width delta:
+          delta = 1e-02     int_0^delta |phi'|^2 = 1/delta = 100
+          delta = 1e-04     int_0^delta |phi'|^2 = 1/delta = 10000
+          delta = 1e-06     int_0^delta |phi'|^2 = 1/delta = 1e+06
+        ⇒ it grows without bound, so the constant is not an H^1 limit of functions
+        vanishing at the origin.  ** The selector is form-CLOSURE; on the physical band
+        form-FINITENESS already suffices, and the two coincide there. **
+
+------------------------------------------------------------------------------------------------
+  CONTROL (4) -- a NON-DIAGONAL member of U(n) exhibited, so the comparison is over a
+  real family and not over the only member I bothered to construct
+------------------------------------------------------------------------------------------------
+    Take the two fibres Gamma = 0.25, 0.50 and the rotation
+      U = [[cos45, -sin45], [sin45, cos45]],  det = 1.000000,  U^T U = I: True
+    This is a unitary on the 2-dimensional deficiency space, so by von Neumann it IS a
+    self-adjoint extension -- a genuine member of the family, not a construction error.
+    ⇒ But it MIXES the fibres: its boundary data give each fibre a nonzero coefficient
+      on the OTHER fibre's irregular branch.  Since a finite form requires EVERY
+      irregular coefficient to vanish, any member with a nonzero one is form-infinite --
+      and on the physical band that is settled by the margin above, with no appeal to
+      the knife-edge's weaker case.
+      ** So the form-finite member is unique and DIAGONAL: it is Hartle-Hawking's. **
+
+------------------------------------------------------------------------------------------------
+  THE SECOND CANDIDATE -- POSITIVITY, asked SEPARATELY because it constrains the SPECTRUM
+  and not the form domain, and asked in CLOSED FORM because three meshes were blind to it
+------------------------------------------------------------------------------------------------
+
+    First, the instrument is checked where its answer is known:
+      j_{0,1}          got 2.404826  want 2.404826  ok = True
+      j_{1/2,1} = pi   got 3.141593  want 3.141593  ok = True
+      j_{1,1}          got 3.831706  want 3.831706  ok = True
+
+    Gamma    nu         Friedrichs lambda_0  non-negative?      band of t with lambda < 0
+    0.250    0.707107   11.776812            yes                (-1.000000, 0)
+    0.500    0.866025   13.323162            yes                (-1.000000, 0)
+    0.740    0.994987   14.630229            yes                (-1.000000, 0)
+
+    The band's upper edge is 0 approached from BELOW (k -> oo) and its lower edge is
+    -b^(2nu) (k -> 0); T(k) is monotone in k, so the band is exactly that interval.
+    ⌗ At b = 1 the law -b^(2nu) reads -1 whatever nu is, so testing it ONLY there tests
+      nothing about the exponent.  It is therefore tested at three box sizes:
+
+      Gamma    b        lower edge         -b^(2nu)           agree to 1e-6?
+      0.25     0.5      -0.37521423        -0.37521423        True
+      0.25     1.0      -1.00000000        -1.00000000        True
+      0.25     2.0      -2.66514414        -2.66514414        True
+      0.50     0.5      -0.30102374        -0.30102374        True
+      0.50     1.0      -1.00000000        -1.00000000        True
+      0.50     2.0      -3.32199709        -3.32199709        True
+      0.74     0.5      -0.25174327        -0.25174327        True
+      0.74     1.0      -1.00000000        -1.00000000        True
+      0.74     2.0      -3.97230080        -3.97230080        True
+
+      Gamma = 0.25: T monotone in k: True;  upper edge -6.71e-08 approaches 0 from below: True
+      Gamma = 0.50: T monotone in k: True;  upper edge -9.86e-10 approaches 0 from below: True
+      Gamma = 0.74: T monotone in k: True;  upper edge -2.24e-12 approaches 0 from below: True
+      ⇒ the -b^(2nu) law holds at every box size tested: True
+
+    ⇒ READ IT OFF.  A negative eigenvalue exists for extension t if and only if
+      t lies in (-b^(2nu), 0).  So positivity EXCLUDES that band and ADMITS:
+        * t = 0, the Friedrichs/regular member;
+        * every t > 0; and
+        * every t <= -b^(2nu).
+    ** POSITIVITY THEREFORE DOES NOT SELECT A MEMBER.  It is a constraint that rules out
+    a band and leaves a continuum -- including, but nowhere near isolating, Friedrichs. **
+
+    ⚠ AND THAT ANSWERS THE INDEPENDENCE QUESTION THE REGISTRATION NAMED as the thing I
+      would most easily get wrong in the flattering direction.  The flattering answer was
+      "two principles agree", and the first draft printed it, on a blind instrument.  The
+      measured answer is that there is nothing to double-count: ONE principle selects and
+      the other does not select at all.  The two are nested rather than independent --
+      a finite form excludes every t != 0, positivity excludes only a band of them -- so
+      ** this row counts ONE selector, and counts it once because there is only one. **
+
+    ⌗ This also agrees with the corpus rather than contradicting it: CR_framework l.1987
+      already lists positivity among the candidates that FAIL to select -- there, the
+      ordering.  This row finds it also fails to select the boundary condition.  A
+      different freedom, the same verdict, and the corpus's exhaustion list is not dented.
+
+------------------------------------------------------------------------------------------------
+  THE REMAINING PRINCIPLES P10 NAMES -- the ledger and covariance
+------------------------------------------------------------------------------------------------
+    Neither reaches the endpoint. The ledger is a bookkeeping constraint on what a
+    computation may claim, and covariance is a condition on how expressions transform;
+    NEITHER makes a statement about the behaviour of a mode as x -> 0, which is what a
+    boundary condition is.  ⌗ This is a READING of what those principles are about, not
+    a computation, and it is reported as such: if the coordinating seat holds that either
+    does reach the endpoint, that is its ruling and this row does not pre-empt it.
+
+================================================================================================
+  CONCLUSION -- THE ORDER'S REACHABLE NEGATIVE IS MISSED, AND THE OTHER OUTCOME HOLDS.
+  Finiteness of the quadratic form -- equivalently, closure of the minimal form domain --
+  selects exactly one member of U(3) on the coupled sub-threshold subspace, and it is the
+  DIAGONAL, regular-branch member: the same one Hartle-Hawking regularity imposes.  It
+  does so on every fibre of spec(Gamma-hat) below the threshold, with margin, the one
+  knife-edge where it would fail lying 0.25 outside the spectrum.
+  ⇒ A principle WITHOUT Euclidean content selects the coupled condition, so the coupled
+    edge closes as the free sector does, THE FACE IS NOT THE ONLY CLOSER HERE, and
+    PO-94's quantum half does NOT meet its test by this route.
+  ⇒ And it is ONE selector, not two: positivity rules out a band of extensions and
+    isolates none, so the case is narrower than the first draft claimed and is stated
+    at the width the measurement supports.
+================================================================================================
+
