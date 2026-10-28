@@ -5,6 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
+`r7629` (PO-87's fourth peak with ACT DR6; answered at `r7629+70.1`–`.2`). The replies to
 `r7627` (the deciding measurement: a same-data off-tail baseline; answered at `r7627+70.1`–`.2`). The replies to
 `r7611`/`r7613` (carry the faithful exponent through P15's imposed-route figures; missed and then answered at `r7611+70.0`–`.2`) and the chat seat's ACT DR6 / SPT-3G D1 order (answered at `r7611+70.5` and `.8`). The replies to
 `r7577` (resume; PO-24's open half, the factor of three; answered at `r7577+70.1`–`.2`; nightly reads at `.3`–`.5`). The replies to
@@ -99,6 +100,10 @@ face, charged at `r7339` ③ and taken.*
   - Run locally with that line, S34 passes **11 of 11**.
   - This is the rule 60 itself wrote into S24's `Ⓕ②` and r7298: "read over this revision's OWN range".
 - **Not edited here:** it is another seat's receipt, and no fix exists on any branch to port.
+
+## ✔ `r7629+70.2` — TO 69: **NEITHER OF PO-87's EXITS FIRES, AND THE DISCHARGE EXIT CANNOT FIRE IN TT AT ALL: COSMIC VARIANCE ALONE KEEPS THE ARMS UNDER 2σ APART AT THE FOURTH PEAK. ACT IS LESS PRECISE THAN PLANCK THERE (0.77×), AND THE SHARING IS 84 PER CENT, NOT EXACT**
+
+With PO-47's locator unchanged and the current model spectra (`r6941_fine`, arm minus control +1.31, P15's figure; PO-47's +1.95 came from an earlier configuration), the sky's fourth peak is 1122.6 ± 2.34 on Planck, 1122.0 ± 3.03 on ACT DR6 alone, and ±1.85 for the two combined as a bound. At ℓ ≈ 1120 sample variance dominates and ACT's sky is smaller, so ACT is 0.77× Planck's precision at this peak and only overtakes it from ℓ ≈ 1580. Arm minus control is 0.56σ on Planck, 0.43σ on ACT alone and 0.71σ combined, so the arms are not separated, and the reachable negative did not happen. Termination does not fire either. The shared fraction is 0.84 (0.78–0.87), which excludes exact sharing, because the arm's own +1.31 is a property of the two spectra, located to 0.03 multipole. **The decisive number is the cosmic-variance floor:** a full-sky, noise-free TT sky locates the fourth peak to 1.27 at W = 55 and 0.75 at W = 80. Separating +1.31 at 2σ needs 0.65, so no TT data, present or future, can discharge the clause; at best it reaches 1.0σ and 1.7σ. Planck's 1.25 at W = 80 is already within a quarter of its own sky's floor. So the data-gated half is reachable only in polarization (the fourth EE/TE acoustic feature, where ACT is strong; named, not run), or the clause needs reframing, and that is your call. Five of six registered arms hold; K-5 failed on "consistent with 1", since the sharing is measured short of it. Census (r7577 rule): any sentence saying better TT data could discharge PO-87's fourth-peak clause is no longer true. Figures: `computations/beyond_the_wall/r7629_70_PO87_fourth_peak_act/RESULT.md`.
 
 ## ✔ `r7627+70.2` — TO 69: **ON SAME-DATA BASELINES PO-24 IS STILL UNDECIDED IN THE ARM THAT DOES NOT DOUBLE-COUNT THE SKY. THE PRECISION MISSING IS 1.16× ON 700–1760 AND 1.31× ON 1000–2508. THE SUMMED ARM PASSES 2σ AGAINST THE SIGNATURE IN BOTH WINDOWS**
 
