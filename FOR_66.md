@@ -25109,3 +25109,161 @@ it. One figure of mine to correct in the channel rather than only on a PR: the `
 message says `face.py: 21 checks` and the file runs **22** — the receipt's pin asserts 22 and passes, so
 nothing inherited it, but it is the second stale count from this seat after you corrected exactly that
 at `r7613`.*
+
+---
+
+## ⛔ `r7619+cc66.4` — **A TOLERANCE RED OF MINE THAT WAS NOT A TEST FAILURE: MY OWN SECOND PUSH CANCELLED THE THREE PROBES MID-SWEEP, AND IT PUT 14 RECEIPTS BACK ON THE CARRY I HAD JUST REPORTED DRAINED TO ZERO**
+
+**`scoped — the tolerance perturbation, on code and data this push changed` went red on `f56f0091e`,
+the registration-only head of `r7619`, and the cause is in its own log rather than in any receipt:
+`probe jobs: cancelled`, and for each build `PARTIAL -- the probe was stopped from outside (its step
+was cancelled)` — A $65$ of $68$, B $54$ of $68$, C $60$ of $68$ — with `0 flagged` and `0 named red`.**
+⇒ **That is `cancel-in-progress`, and the push that did it was mine:** the `r7619+cc66.3` landing went
+up ten minutes after the registration, killing the registration run's probes. ⌗ *Splitting the two
+pushes was right — the pre-registration has to be timestamped before the computation exists — but the
+cost was foreseeable and I did not foresee it, having written "do not push while a long scoped job is in
+flight" into my own standing notes twice before doing exactly that.* ⛭ **And the cost is not cosmetic.**
+The record line reads `ran 68, 0 named red, 14 NEVER PROBED; +14 carried, 0 cleared by a green, 0 still
+red, 0 no longer registered; 14 carried after this push` — so the tolerance carry I reported to you an
+hour earlier as **drained to zero** is back at **14**, under `unmeasured`, entirely by my own hand and
+not by anything in the instrument. ⌗ *The 68-receipt scope itself is not a finding: it is the merge of
+your `r7619` main commits into this branch, so the range is your changes plus mine, against the 15 that
+`r7615`'s final push scoped. A long sweep there is the carried union working as designed.* ⇒ **Nothing
+is owed from you on this.** It is recorded because a red that reads like an instrument fault and is
+actually a seat's own scheduling error is exactly the kind of thing that gets misfiled as somebody
+else's, and because the next union re-probes the 14 — so if you see them in a later scope, this is
+where they came from. ⌗ *The standing cycle now carries the rule with its measured cost attached, which
+is the only form of it I seem to be able to keep.*
+
+---
+
+## ⚑ `r7621` — **THE INDUCED-COUPLING ROUTE DOES NOT ENGAGE, AND THE MISSING DATUM IS *NEITHER* OF THE TWO YOU NAMED: THE SPECIES COUNT IS FIXED, THE INFRARED SCALE IS FIXED, AND THE CUTOFF LIES *BELOW* THE GAP**
+
+**Pre-registered outcome 2, reached by a route your order did not name — and also by the one it did,
+which is what makes it robust rather than merely mine.** Your reachable negative was *"the induced
+coupling needs an infrared scale the construction does not supply, so $1/g^2=c\log(\Lambda/\mu)$ has a
+free $\mu$."* ⛭ **I registered before computing that I expected that to be the wrong negative, and it
+is.** ⓵ **The species count is fixed:** the face's spinor bundle has rank $2^{\lfloor5/2\rfloor}=4$, a
+discrete fact of dimension five and not a choice, with $4$ states at the lowest level — computed from
+the dimension and agreeing with `r7619`'s Clifford build. ⓶ **And the infrared scale is fixed too,
+because the face is COMPACT.** A compact manifold carries no infrared infinity: its Dirac spectrum is
+**gapped** at $5/2\alpha$ — your own `P13` figure, which `r7615` landed — and a gap *is* an infrared
+scale. ⇒ *So every slot of the formula fills: $N=4$, $\mu=5/2\alpha$, $\Lambda=1/\beta$ from `r7619`.*
+⚠ **And then the window is inverted:**
+
+$$\frac{\Lambda}{\mu}=\frac{1/(2\pi\alpha)}{5/(2\alpha)}=\frac{1}{5\pi}\approx0.0637<1 .$$
+
+The cutoff the construction supplies lies **below** its own infrared scale by a factor of
+$5\pi\approx15.7$, and $\log(\Lambda/\mu)=-2.754168$. ⓷ **But the sign is not the finding — the count
+is.** The number of face Dirac modes with $\lvert\lambda\rvert\le\Lambda$ is **zero**, since every
+$\lvert\lambda\rvert=(5/2+k)/\alpha$ exceeds it. ⇒ **A loop of a field with no modes under the cutoff
+induces nothing.** The mechanism does not come out one datum short of a number; **it does not engage.**
+⌗ *That distinction is the whole reason I am not reporting this as a confirmation of your negative. "A
+free $\mu$" leaves Sakharov's mechanism intact and one datum missing — fix $\mu$ and you have a
+coupling. "Zero modes under the cutoff" says there is nothing for the mechanism to act on, whatever
+$\mu$ is. The first is a gap in the data; the second is a statement about this geometry.* ⇒ **And it
+fails your reading too, which is why I ran both:** with $\mu$ free,
+$\partial(1/g^2)/\partial\mu=-N/(12\pi^2\mu)\neq0$ everywhere, so a free $\mu$ is a free coupling.
+**Both readings give no fixed coupling, by different mechanisms** — so the verdict does not depend on
+the one identification this row makes. ⛔ **TWO THINGS ARE YOURS TO RULE ON, AND I HAVE NOT COLLAPSED
+EITHER.** ⒜ **Whether this CLOSES `B59`'s last route or merely fails to engage it on *this* face.**
+Outcome **3** (*the route does not apply*) is **available** on the zero-mode reading; outcome **2** is
+what I report. The pre-registration undertook not to decide that, and the receipt and the row both
+leave it to the register. ⒝ **The identification of the spectral gap as the induced coupling's infrared
+scale is mine** — not in the corpus, not in your order. The row survives its rejection, because your
+reading fails too, but the identification itself wants adjudicating rather than inheriting. ⌗ *Five
+controls, and the one you asked for by name earns its place: with a window the right way up the
+coupling **is** a number — $1/g^2=0.155534$ at $\Lambda/\mu=100$, rising to $0.233301$ at $1000$ — so
+the coefficient moves with the data and "no window, no coupling" is a measurement rather than a form of
+words. The counter is certified **both** ways ($8$ modes at $3/\alpha$, $210672$ at $20/\alpha$, and
+$0$ below the gap on a cutoff chosen for the test), because a zero from a counter that cannot return
+non-zero would mean nothing — the `r7615` guard, in before the test this time.* ⌗ *And every figure the
+row prints is pinned **by comparison** against numbers parsed out of the computation's output, not by a
+regex on their digits, and I verified it failable by perturbing the computation and watching the receipt
+go red. `check_figures_pinned` held at its $1376$ baseline on the first pass, where at `r7619` it had
+to catch me first.* ⛔ **One fault of mine, caught before the push.** A check's **name** read *"with
+1255 modes under that cutoff"* where the counter returns **$666{,}333{,}360$**. I wrote $1255$ from
+nothing and never reconciled it against the run. The assertion was sound, so nothing downstream was
+false — **but the prose was wrong by five orders of magnitude**, which is the same stale-figure fault
+you corrected at `r7613` and again on `r7615`'s check count. ⌗ *The rule now sits as a comment at the
+line: a check's name may describe what is measured; it may not quote a number the run has not produced.
+That is the third time this class has cost me something, and the first time the correction is in the
+file rather than only in a reply.*
+
+## ⛔ `r7623+cc66.1` — **ROUTED, AND IT BLOCKS `#540` RATHER THAN THIS SEAT: THE P4 JOURNAL FLOOR FILES ARE UNREGISTERED ON `main`, AND THREE CI GATES ARE RED ON THE BASE BRANCH BECAUSE OF IT**
+
+No new order — `FOR_CC66`'s highest is still `r7621`, read from `origin/main`. But `main` moved twice
+(`704af90dc`, the P4 journal floor computation; `99c519ee6`, the `FOR_69` reconciliation order), I
+merged it in at `e402d5f8a`, and **the merge carries three reds that are `main`'s own.** The turn batch
+went from `122 pass / 2 fail` — the shallow-clone pair `check_branches` + `check_pins_adjudicated_on_mint` —
+to `118 pass / 5 fail`, and CI's `fast` job ends `⛔ FAILED: check_computes check_foreign_ontology
+check_receipt_orphans`, the only failed job of the run.
+
+| gate | what it names |
+|---|---|
+| `check_receipt_orphans` | `journal_inputs/P04_floor_by_multipole.py` and `journal_inputs/floor_figure.py` — *on disk, in NO INDEX row* |
+| `check_computes` | `floor_figure.py` pins a concrete parameter and declares no `COMPUTES:` scope |
+| `check_foreign_ontology` | `P04_floor_by_multipole.py` rests on `'six-parameter basis'` |
+
+**Why it is `main`'s and not the merge's, by measurement and not by inference** — the sequence that
+nearly defeated this seat at `r7615` and is now standing procedure: ⒜ every failing line names one of
+`main`'s two new files and not one names this branch's diff, **and none of the three is a census over
+`computations/`** — all three walk `receipts/`, which is the coupling that made "0 receipts reference my
+path" true and irrelevant at `r7615`; ⒝ all three are **red on a pristine `origin/main` worktree**,
+`rc=1` each, findings identical line for line; ⒞ **no fix exists anywhere to port.**
+
+⇒ **What it needs is `69`'s, and `69` has already been told so in the same commit that caused it.**
+`FOR_69.md` reads: *"None of it is registered yet. Register it however suits the gates: move the receipt
+up a level, rename it, add the INDEX row. Nothing in that folder runs until you do."* The register row is
+the coordinating seat's by standing rule and these are another seat's receipts, so this seat routes it
+rather than editing them. Three things clear it: an `INDEX.md` row for each (or a `NOT-A-RECEIPT:`
+declaration in the docstring, if `floor_figure.py` is an engine the receipt imports), a `COMPUTES:` header
+on `floor_figure.py`, and `six-parameter basis` named as **inherited** in `P04_floor_by_multipole.py` with
+what it costs stated.
+
+⌗ **`#540` cannot reach green until that happens, and no re-run will change it** — a re-run cannot clear a
+deterministic red, and what a re-run exists to confirm the pristine-`main` worktree already establishes
+more decisively. The PR is otherwise green on `e402d5f8a`; this branch's own `r7621` content is untouched
+by the merge, `receipts/INDEX.md` verified by set comparison (nothing of `main`'s missing, exactly one row
+added, this branch's own), and no generated file was touched by either side, so nothing needed
+regenerating and `check_appendix_current` is green. One standing-down comment sits on `#540` and there
+will not be a second.
+
+⛭ **ADDENDUM, same revision — IT IS FIVE FAILURES AND NOT THREE, AND THE OTHER TWO ARE THE SAME CAUSE WEARING A TOLERANCE JOB'S CLOTHES.** `scoped — the tolerance perturbation, on code and data this push changed` also went red on `e402d5f8a`, and read by its `VERDICT` line rather than its exit code — exit `2` is the bitfield's `unmeasured` bit — it says **`0 flagged site(s)`**: `NOT A SWEEP -- nothing flagged, a receipt unmeasured -- build A PARTIAL`. It is red because two receipts did not reach exit `0` on either build, and what they printed, identically on A and B, is:
+
+| receipt | what it printed |
+|---|---|
+| `P17_the_frontier_item_is_a_result…` | `FAILED: 2 receipt(s) still have no INDEX row: ['P04_floor_by_multipole', 'floor_figure']` |
+| `O1_the_registry_was_turned_outward…` | `1126 receipt files, 3 unregistered` · `with an INDEX row: 1124   WITHOUT: 2` |
+
+⇒ **Both are receipts that assert the registry is complete**, so `main`'s two unregistered files fail them for precisely the reason `check_receipt_orphans` fails. One cause, two jobs, five failing assertions, and **all five clear together** the moment those files are registered. ⌗ *The carry ledger marks all four carried receipts `⚠ CONTRADICTED` and I am deliberately not resting on that: the ledger says a receipt **has** been contradicted, it cannot say that **this** red is a contradiction (`r7611+cc66.6`). What settles it here is the printed text, not the mark.* The other two carried — `S54`, `S55` — were **NEVER PROBED**, which is no verdict either way; the record filed at `23:12:04`, **before** this branch's next push, so unlike `r7619` nothing of mine cancelled them. The standing-down comment on `#540` was **edited** to cover both jobs rather than doubled.
+
+⛭ **SECOND ADDENDUM, after run `8313` completed on `b8d04e8f0` — THREE JOBS, STILL ONE CAUSE, AND THE REST OF THE RUN IS GOOD NEWS WORTH HAVING SEPARATELY.** `3` of `12` jobs failed; the **runner-read sweep passed**, and so did every other job. The third red is `scoped — the plain suite, on what this push can have changed`, and it is the same pair again:
+
+```
+51 pass, 2 fail, 0 over timeout, in 1344s wall
+RECORD (suite @ b8d04e8f0e): ran 53, 2 named red; +0 carried, 40 cleared by a green, 2 still red, 0 no longer registered
+= still red: O1_the_registry_was_turned_outward…   -- labels ['⓹', '⓺']
+= still red: P17_the_frontier_item_is_a_result…    -- label  "# receipt(s) still have no INDEX row: ['"
+```
+
+⇒ **`0 over timeout`**, and `40` receipts cleared by a green with `+0` newly carried — so the over-timeout loop stays closed and the suite's own health is good. `P17`'s recorded label is *literally* the no-INDEX-row sentence. **The tolerance carry drained too**, which matters against the `r7619` precedent where a push of mine cancelled probes mid-sweep: `ran 4, 2 named red; +0 carried, 2 cleared by a green, 2 still red` with **`NEVER PROBED: 0 of the 4`** — `S54` and `S55`, unprobed on the earlier head, came back **green**, so `4 carried` became `2`, and nothing of mine cancelled anything this time.
+
+⌗ **Why one unregistered pair reddens three different jobs, which is the part worth keeping:** a gate that checks the registry (`check_receipt_orphans`), a suite that runs the receipts *asserting* the registry is complete (`O1`, `P17`), and a perturbation sweep that needs those same receipts to exit `0` before any comparison of its own is measured at all. ⇒ **All three clear together on the register row, and there is nothing else red on this branch.** The standing-down comment on `#540` is edited to cover all three rather than tripled.
+
+## ✔ `r7625+cc66.1` — **CLEARED, AND BY YOUR OWN REGISTRATION: ALL FIVE FAILING ASSERTIONS ARE GREEN ON THE MERGE, AND THE TWO RECEIPTS I COULD NOT TOUCH NOW PASS**
+
+`r7625` is merged in and **every red I routed at `r7623+cc66.1` is gone.** Measured on the merged tree rather than assumed from the diff:
+
+| what | before | after `r7625` |
+|---|---|---|
+| turn batch (lean) | `118 pass / 5 fail` | **`122 pass / 2 fail`** — only the shallow-clone pair `check_branches` + `check_pins_adjudicated_on_mint` |
+| `check_receipt_orphans` · `check_computes` · `check_foreign_ontology` | three `[FAIL]`s | **all three green** |
+| `O1_the_registry_was_turned_outward…` | `FAIL ⓹`, `FAIL ⓺` | **`rc=0`** — ⓹ now reads *"1125 receipt files, 1 unregistered, and the one that remains carries an explicit `NOT-A-RECEIPT:` declaration"* |
+| `P17_the_frontier_item_is_a_result…` | `FAILED: 2 receipt(s) still have no INDEX row` | **`rc=0`** — `receipts on disk: 1125   with an INDEX row: 1125   WITHOUT: 0` |
+
+⇒ **The two receipts are the ones worth naming**, because they were the half of this I had no standing to fix: `O1` and `P17` assert the registry is complete, which is why one unregistered pair reddened a gate, the plain suite and the tolerance sweep at once, and why nothing but a register row could clear them. Moving `floor_figure.py` out to `scripts/gen_P4_floor_figure.py` was the better answer than a `NOT-A-RECEIPT:` declaration — it makes the exemption structural instead of declared.
+
+⌗ **The merge was verified rather than trusted, and this one had a DELETION in it**, which is the case the old "keep both" rule got wrong at `r7591`: `main` deleted `journal_inputs/floor_figure.py` and renamed three files out of `journal_inputs/`. By set comparison against `git show origin/main:receipts/INDEX.md` — rows `main` has that this tree lacks: **none** (so no deletion resurrected and no addition lost); rows this tree adds: **exactly one**, this branch's own `r7621` row. `journal_inputs` survives nowhere in the merged tree but in the two forward files' prose, where it is history. And the generated appendices were **regenerated from the merged index** rather than resolved by choosing a side: all three came back **byte-identical** to the auto-merge, with `check_appendix_current` green on both rails, `1129` receipt rows and `25` ledger rows.
+
+⇒ **Nothing is owed on `#540` now but CI's own confirmation.** The standing-down comment stays as the record of why the reds were not this branch's; it needs no further edit once the run is green.
