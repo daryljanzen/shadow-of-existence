@@ -1,0 +1,159 @@
+
+==================================================================================================
+  Ⓘ  THE VOIDING CONTROL, ASKED FIRST: IS THE POSITIVE ARGUMENT ALREADY IN THE PAPERS?
+==================================================================================================
+   the OPEN state, located verbatim: 'the list is not shown complete'
+     in ['CR_framework', 'CR_synthesis']
+   a COMPLETENESS phrase 'the list is shown complete': no paper
+   a COMPLETENESS phrase 'the list is complete': no paper
+   a COMPLETENESS phrase 'every freedom the face could close is closed elsewhere': no paper
+   a COMPLETENESS phrase 'the catalogue is complete': no paper
+   a COMPLETENESS phrase 'shown to be complete': no paper
+
+==================================================================================================
+  Ⓐ  THE EIGHT DOMAINS, LOCATED IN THE PAPERS RATHER THAN ASSUMED
+==================================================================================================
+   1. the state                                      -> the de Sitter-invariant vacua          LOCATED in ['CR_framework']
+   2. the self-adjoint extension                     -> the half-line extensions at the origin LOCATED in ['canonical_time']
+   3. the operator ordering                          -> the natural ordering family            LOCATED in ['canonical_time']
+   4. the value of the scale                         -> a coefficient, not an observable       LOCATED in ['canonical_time']
+   5. inequivalent representations                   -> the GNS representation of the state    LOCATED in ['CR_framework']
+   6. the spin structure on the face                 -> the spin structures on the face        LOCATED in ['CR_framework']
+   7. the vacuum angle                               -> the flat bundle sectors on the face    LOCATED in ['CR_framework']
+   8. the renormalisation ambiguities of the stress tensor -> the counterterm coefficients           LOCATED in ['CR_framework']
+
+==================================================================================================
+  Ⓑ  THE EXTENSION ENTRY IS AN ATOM: THE THRESHOLD DERIVED, NOT RECALLED
+==================================================================================================
+   indicial roots of s(s-1) = gamma:  [1/2 - sqrt(4*gamma + 1)/2, sqrt(4*gamma + 1)/2 + 1/2]
+   the lower root is (1 - sqrt(1+4 gamma))/2; it equals -1/2 at gamma = [3/4]
+   at the family's maximum gamma = 1/4: lower root = 1/2 - sqrt(2)/2 = -0.207107
+   ⇒ ENTRY 2 IS AN ATOM: exactly 1 real parameter, counted.
+
+==================================================================================================
+  Ⓒ  THE ORDERING ENTRY: ONE PARAMETER, AND ONE READING ACROSS THE WHOLE FAMILY
+==================================================================================================
+   limit-circle fails on Interval(3/4, oo); the family is Interval(0, 1/4)
+   members of the family (0 <= gamma <= 1/4) that are NOT limit-circle: EmptySet
+   ⇒ ENTRY 3 carries 1 parameter and one reading, and the face CANNOT close it: the papers place it upstream of the thermal state.
+
+==================================================================================================
+  Ⓓ  THE STATE ENTRY, RE-RUN AS A CONTROL: r7628 MUST REPRODUCE OR THIS RUN IS VOID
+==================================================================================================
+   |e^alpha| = exp(a) ;  d/dtheta = 0
+   |beta|^2  = exp(2*a)/(1 - exp(2*a)) ;  d/dtheta = 0
+   ⇒ ENTRY 1 carries 2 real parameters on its located domain, closed by ONE reading.
+
+==================================================================================================
+  Ⓔ  THE REMAINING FIVE ENTRIES, DIMENSIONS COUNTED ON THIS BACKGROUND
+==================================================================================================
+   H^1(S^4; GF(2)) = 0  ->  1 spin structure(s)
+   H^1(S^5; GF(2)) = 0  ->  1 spin structure(s)
+   H^1(RP^5; GF(2)) = 1  ->  2 spin structure(s)
+   dimensions by entry (1..8): [2, 1, 1, 0, 0, 0, 0, 0]
+
+==================================================================================================
+  Ⓕ  FIRST ENLARGEMENT: THE NON-INVARIANT STATES
+==================================================================================================
+   the constraint |alpha|^2 - |beta|^2 = 1 in 4 real coordinates; gradient [2*a_r, 2*a_i, -2*b_r, -2*b_i]
+   per mode: 4 - 1 (constraint) - 1 (phase convention) = 2 physical parameters
+
+==================================================================================================
+  Ⓖ  SECOND ENLARGEMENT: THE FIELD'S OWN MASS AND ITS COUPLING TO CURVATURE
+==================================================================================================
+   R(dS_d) = d*(d - 1)/alpha**2;   at d = 5: 20/alpha**2;   at d = 4: 12/alpha**2
+   the field equation's only mass term is M^2 = (alpha**2*m2 + d*xi*(d - 1))/alpha**2
+   nu is complex on EmptySet; the admissible range is Interval(0, oo)
+   nu = sqrt(Gamma + 1/4);  values of Gamma >= 0 for which the regular branch fails to exist: EmptySet
+
+==================================================================================================
+  Ⓗ  THIRD ENLARGEMENT: BOUNDARY CONDITIONS AT THE PATCH'S EDGE -- AND A LOCATED GAP
+==================================================================================================
+   the ORIGIN locus, located: 'a single boundary condition at $a=0$' in ['canonical_time']
+   the EDGE   locus, located: 'Euclidean smoothness at the horizon mode by mode' in ['canonical_time']
+   the coupled deficiency,    'its deficiency that subspace rather than a line' in ['canonical_time']
+   the non-Euclidean closer 'finite quadratic-form energy' occurs in ['CR_framework', 'CR_synthesis']
+   of those, the ones whose sentence reaches the coupled / sub-threshold condition: NONE
+   ⇒ Ⓗ is the sharpest thing this revision can point at, and it is pointed at rather than
+     claimed: the coupled tower is NOT a free field, so this freedom lies outside the order's
+     own scope. Whether the form energy reaches the sub-threshold subspace decides whether the
+     face is its only closer, and that is a question for the seat that owns the canonical paper.
+
+==================================================================================================
+  Ⓙ  THE CLAUSE ITSELF, LOCATED -- AND THE REGISTERED PREDICTION SCORED AGAINST IT
+==================================================================================================
+   the clause's live scope, located verbatim: 'over a list of freedoms shown complete' in ['CR_framework', 'CR_synthesis']
+   the wording this line REGISTERED:          'over a list of independent freedoms' in NO PAPER
+   the clause's second half, located:         'every one the face could close is closed elsewhere' in ['CR_framework', 'CR_synthesis']
+   ⇒ the prediction is scored a MISS here rather than reinterpreted, and the arms below read the
+     verdict off the LOCATED clause.
+
+==================================================================================================
+  THE VERDICT: THE DOMAINS, THE ATOMS, AND WHAT THE COMPLETENESS TEST RETURNS
+==================================================================================================
+   1. the state                                      ATOM (2 parameters, one reading closes the family)
+   2. the self-adjoint extension                     ATOM (1 parameter, counted)
+   3. the operator ordering                          ATOM (1 parameter, one reading across the family; the face cannot close it)
+   4. the value of the scale                         NOT A FREEDOM (a coefficient, not an observable)
+   5. inequivalent representations                   NOT A FREEDOM (follows the state)
+   6. the spin structure on the face                 NOT A FREEDOM (exactly one spin structure, counted)
+   7. the vacuum angle                               NOT A FREEDOM (no flat sectors to label)
+   8. the renormalisation ambiguities of the stress tensor NOT A FREEDOM (fixed by measurement; collapses onto the scale here)
+   + the non-invariant states                 OUTSIDE entry 1      face COULD close           closed elsewhere (invariance)
+   + the mass and curvature coupling          OUTSIDE all eight    face CANNOT close          fixed by measurement
+   + boundary conditions at the patch's edge  OUTSIDE entry 2      face CLOSES it (coupled)   no non-Euclidean closer STATED for the coupled condition
+   freedoms of a free field lying outside ALL EIGHT domains: ['the mass and curvature coupling']
+   enlargements INSIDE the order's free-field scope: ['the non-invariant states', 'the mass and curvature coupling']
+   of those, closed by the face ALONE: NONE
+
+==================================================================================================
+  CHECKS
+==================================================================================================
+   [ok ] Ⓘ the papers say in so many words that the list is NOT shown complete, located verbatim -- so the order's question is the corpus's own open question and not this line's framing
+   [ok ] Ⓘ DOES NOT VOID: none of the 5 completeness phrases occurs in any paper, so no positive argument is already carried and there is something here to supply
+   [ok ] Ⓐ all 8 entries of the order's catalogue are accounted for, 8 with a scoping sentence located verbatim and 0 unscoped
+   [ok ] Ⓐ AS PREDICTED: at least six of the eight are scoped by the papers' own sentences (8 of 8), so the domains are read off the corpus and not supplied here
+   [ok ] Ⓐ and the two the order singles out -- the state and the self-adjoint extension -- are both among the located, which is what makes the count below a count and not a convention
+   [ok ] Ⓑ the essential-self-adjointness threshold is DERIVED as gamma = 3/4 from the indicial equation, not quoted from the source that states it
+   [ok ] Ⓑ at that coefficient BOTH solutions are square-integrable at the origin, so the operator is LIMIT-CIRCLE there: one boundary condition, deficiency 1 at that end
+   [ok ] Ⓑ and the paired index is the papers' own, located: the deficiency indices are (1,1), the far end forcing no condition -- IMPORTED and labelled as imported, not measured here
+   [ok ] Ⓑ the extension parameter runs over the unit circle, whose real dimension is ONE
+   [ok ] Ⓒ NO member of the ordering family fails the limit-circle reading: ONE reading covers the whole family, which is exactly what makes the entry an atom in the order's sense
+   [ok ] Ⓒ and the papers say the same in their own words, located verbatim, so this is a check of their statement and not a replacement for it
+   [ok ] Ⓒ the closure is of the boundary CONDITION and holds for either ordering, located verbatim: so what the one reading closes is the family's bearing on the extension, NOT the ordering
+   [ok ] Ⓓ CONTROL REPRODUCES: both exclusion criteria are PHASE-BLIND, derivative identically zero in the second parameter, exactly as r7628 measured
+   [ok ] Ⓓ CONTROL REPRODUCES: the face's own member is the limit point of the family
+   [ok ] Ⓔ S^4 carries 1 spin structure(s), COUNTED over GF(2); the seed RP^5 separates the counter from one that always returns the same answer
+   [ok ] Ⓔ S^5 carries 1 spin structure(s), COUNTED over GF(2); the seed RP^5 separates the counter from one that always returns the same answer
+   [ok ] Ⓔ RP^5 carries 2 spin structure(s), COUNTED over GF(2); the seed S^5 separates the counter from one that always returns the same answer
+   [ok ] Ⓔ the first Betti number of the face is ZERO, so the flat U(1) sectors a vacuum angle would label form a single point: entry 7 is not a freedom here, dimension 0
+   [ok ] Ⓔ COMPUTED on an operator rather than asserted: a one-point spectrum commutes with every element of the algebra and every polynomial in it is a multiple of the identity, so it decomposes nothing -- entry 5 follows the state, dimension 0
+   [ok ] Ⓔ and the scale's own closure is located verbatim as closing WITHOUT a free parameter, so entry 4 carries no unfixed parameter either
+   [ok ] Ⓔ the counterterm ambiguities reduce to the scale on this background, located verbatim, and measurement fixes them: entry 8 is closed by nothing the face supplies, dimension 0 of unfixed parameters once the measurement is in
+   [ok ] Ⓔ the eight entries carry 4 real parameters in all -- two in the state, one in the extension, one in the ordering, and none in the other five
+   [ok ] Ⓕ the constraint is a submersion away from the origin, so it cuts the 4 real coordinates down to a 3-dimensional group -- su(1,1), counted rather than named
+   [ok ] Ⓕ and the mode set's degeneracies grow without bound, so the non-invariant quasi-free freedom is INFINITE-dimensional: two parameters per mode over unboundedly many modes
+   [ok ] Ⓕ OUTSIDE the state entry's located domain, and outside it by an unbounded margin: 2 real parameters there against 2 PER MODE here
+   [ok ] Ⓕ CLOSED ELSEWHERE: the papers themselves scope the selection to the invariant vacua, located verbatim -- and invariance is a symmetry requirement with no Euclidean content, so the cut from the infinite-dimensional class to the two parameters is not the face's
+   [ok ] Ⓕ ⇒ the test is NOT met at this enlargement: the face COULD close it, and something without Euclidean content closes it first
+   [ok ] Ⓖ COLLAPSE, counted: the map from (mass, curvature coupling) to what the field equation sees has rank ONE on this background, so the two-parameter freedom is one-dimensional here
+   [ok ] Ⓖ ZERO EQUATIONS: the regular Euclidean branch exists at EVERY admissible value, so the face's regularity condition imposes no equation at all on the mass term
+   [ok ] Ⓖ and it is not that the condition is blind to the mass term -- the regular exponent MOVES with it -- it is that the condition is satisfiable at every value, which is a different thing and is what makes the count zero rather than vacuous
+   [ok ] Ⓖ ⇒ OUTSIDE all eight domains, and NOT a freedom the face could close -- and against the LOCATED clause, which asks for a list SHOWN COMPLETE, that makes it a located INCOMPLETENESS of the eight-entry list rather than the harmless case the registration predicted
+   [ok ] Ⓖ and the repair is the smallest one: add the field's own mass term as a NINTH entry, after which every freedom the face could close is still closed elsewhere, because this one is not a freedom the face could close at all -- so the clause's second half survives the repair
+   [ok ] Ⓗ TWO LOCI, both located verbatim and distinct: one boundary condition at the origin, and Euclidean smoothness at the horizon -- so the patch's edge is not the extension entry's own locus and the enlargement is a real one
+   [ok ] Ⓗ and at the edge, in the COUPLED theory, the deficiency is a SUBSPACE rather than a line, located verbatim: so the freedom there is not one real parameter
+   [ok ] Ⓗ the non-Euclidean closer IS stated -- the extension the face selects is the one finite quadratic-form energy selects on its own -- so the free sector's condition is closed elsewhere and the test is not met there
+   [ok ] Ⓗ BUT NO sentence carries that closer to the coupled sub-threshold condition, measured over the whole text: at the patch's edge beyond the free sector the only closer the papers name is Euclidean smoothness at the horizon
+   [ok ] Ⓗ and the papers' own next sentence says what stays open there is not the boundary condition -- so the gap this arm finds is a gap in what is WRITTEN, not a contradiction of it
+   [ok ] Ⓙ ⛔ THE REGISTRATION'S QUOTATION IS WRONG, AND THE CORRECTION IS AGAINST THIS LINE: the clause asks for a list of freedoms SHOWN COMPLETE, located verbatim in two papers, and the wording registered here -- a list of INDEPENDENT freedoms -- occurs in no paper at all
+   [ok ] Ⓙ the second half is as registered -- every one the face could close is closed elsewhere -- so only the prerequisite moved, and it moved to the stronger side
+   [ok ] Ⓙ ⇒ SO THE REGISTERED PREDICTION OF A QUALIFIED FIRE IS A MISS. Completeness is a PREREQUISITE of the clause and not a convenience: a freedom outside all eight domains breaks the list whether or not the face could close it
+   [ok ] VERDICT: exactly THREE of the eight entries are freedoms at all on this background, and each of the three is an atom on its located domain -- which is step 2 of the order, answered
+   [ok ] VERDICT: of the three enlargements the order names, two are settled against the test and ONE is left open -- the coupled condition at the patch's edge, where the face is the only closer the papers name
+   [ok ] VERDICT: THE LIST IS SHOWN INCOMPLETE, and the missing freedom is NAMED: the field's own mass term lies outside all eight located domains. That is stronger than r7628's `not shown complete` and it is the opposite sign to this revision's registered prediction
+   [ok ] VERDICT: the REACHABLE NEGATIVE did not arrive as registered -- no freedom of a FREE field on this background lies outside every domain and is closed by the face alone, so the quantum half's test is still met nowhere
+   [ok ] VERDICT: ⇒ THE TERMINAL CLAUSE DOES NOT FIRE. Its prerequisite is a list SHOWN COMPLETE and the list is shown INCOMPLETE here; the registered qualified fire is a MISS. What the clause needs is the repaired list -- the eight plus the mass term -- shown complete, and this revision shows completeness only over the three enlargements the order named
+   [ok ] VERDICT: and what this does deliver is the row moving from NOT SHOWN COMPLETE to SHOWN INCOMPLETE WITH THE MISSING ENTRY NAMED AND THE REPAIR STATED, every domain located in the papers rather than supplied, and every one of the three freedoms an atom on its own domain
+
+   46 checks, 0 failure(s).
