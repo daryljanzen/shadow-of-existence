@@ -40,6 +40,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(os.path.dirname(HERE))
 WALK = os.path.join(ROOT, 'computations', 'beyond_the_wall', 'r7631_cc66_the_coupled_edge')
 SRC = os.path.join(WALK, 'cutoff.py')
+CORPUS = os.path.join(ROOT, 'corpus')
 
 checks = []
 
@@ -190,30 +191,54 @@ ok('Ⓖ④ and the row declines to name the Planck scale, which the construction
    'I do not name the Planck scale' in out)
 
 # --------------------------------------------------------------------------------------------
-# Ⓗ THE CORPUS'S OWN STATEMENTS -- asked BEHAVIOURALLY, and here is why.
+# Ⓗ THE CORPUS'S TWO STATED VALUES, READ OUT OF THE PAPER AS NUMBERS AND COMPARED.
 #
-# ⌗ ** THE FIRST VERSION OF THIS GROUP RAN FIVE `literal in canonical_time.tex` PRESENCE TESTS AND
-#   MINTED FIVE NEW QUOTE-PIN KEYS (2744 -> 2749). **  That is the r7627 fault exactly: a presence
-#   test on a file's CONTENTS mints a pin on another seat's sentence, and this seat does not
-#   adjudicate those keys.  It is also the hollow kind twice over -- asserting that a paper CONTAINS
-#   a string is not asserting that the construction DOES anything.
-#   ⇒ So the located quotations stay where they are evidence for a reader rather than a minted pin:
-#     in cutoff.py's own output and in WALK.md, each with its line number.  What is gated here is
-#     the SUBSTANCE, and it is already gated above: Ⓒ reproduces the regulator's two stated values
-#     from the spectrum, and Ⓓ measures the scale factor factoring out.  ** Do not put the presence
-#     tests back. **
+# ⌗ ** THIS GROUP HAS NOW BEEN WRONG TWICE, IN OPPOSITE DIRECTIONS, AND BOTH ARE RECORDED. **
+#   ⑴ It first ran five `literal in canonical_time.tex` PRESENCE TESTS, which minted five quote-pin
+#     keys (2744 -> 2749) on another seat's sentences -- the r7627 fault.
+#   ⑵ Repairing that by DELETING the paper reads produced two new faults, both caught by CI gates
+#     this seat's lean batch LEAN-SKIPS: `check_unread_figure` flagged a label attributing 15/4 and
+#     zeta(0) = 10 to the paper while nothing read the paper (so the check would stay green if the
+#     paper moved), and `check_prose_pins` flagged `len(re.findall(r'l\.\d{3,4}', out)) >= 6` as a
+#     PIN ON A COUNT -- a count that holds while the thing it counts moves.
+#   ⇒ ** So the repair for a hollow check was two more hollow checks. **  The right form is the one
+#     check_unread_figure itself names: READ THE FIGURE FROM THE PAPER.  Each value below is parsed
+#     out of canonical_time.tex AS A NUMBER and compared numerically to what the spectrum gives.
+#     That is failable in both directions -- if 69 changes 15/4 in the paper this goes red, and if
+#     the spectrum changes it goes red -- and a numeric extraction is not a literal-sentence
+#     presence test, so it mints no quote-pin key.  ** Do not replace these with string tests, and
+#     do not replace them with counts. **
 # --------------------------------------------------------------------------------------------
-ok('Ⓗ① the row\'s claim about the regulator rests on REPRODUCING its two stated values from the '
-   'tower\'s own spectrum -- 15/4 and zeta(0) = 10 -- and not on the corpus asserting them, so '
-   '"the regulator is a spectral zeta" is a measured reading of what it computes',
-   _log_coeff == sp.Rational(15, 4) and _z0 == 10)
-ok('Ⓗ② and on MEASURING that the scale factor factors out, which is what makes the regulated '
-   'output scale-free and therefore unable to name an energy',
-   abs(_ratios[0] - 1e33) < 1e33 * 1e-10)
-ok('Ⓗ③ the computation carries each corpus statement with its LINE NUMBER, so a claimed usage can '
-   'be checked against the source rather than taken on this row\'s word',
-   len(re.findall(r'l\.\d{3,4}', out)) >= 6)
-ok('Ⓗ④ and it names the open frontier -- the completion of the ultraviolet definition of the mode '
+_ct = ' '.join(open(os.path.join(CORPUS, 'canonical_time.tex'), errors='replace').read().split())
+
+_m_zeta = re.search(r'spectral zeta at the origin is \$\\zeta\(0\)=(\d+)\$', _ct)
+_paper_zeta = int(_m_zeta.group(1)) if _m_zeta else None
+ok('Ⓗ① the paper\'s spectral zeta at the origin is READ OUT of canonical_time.tex as a number and '
+   'equals the %s this receipt derives from the degeneracy -- so if that figure moves in the paper, '
+   'this check goes red' % _z0,
+   _paper_zeta is not None and sp.Integer(_paper_zeta) == _z0)
+
+_m_log = re.search(r'logarithmic coefficient is \$\\tfrac\{(\d+)\}\{(\d+)\}\$', _ct)
+_paper_log = sp.Rational(int(_m_log.group(1)), int(_m_log.group(2))) if _m_log else None
+ok('Ⓗ② the paper\'s logarithmic coefficient is READ OUT as a rational and equals the %s this '
+   'receipt derives from d*mu\'s large-label expansion' % _log_coeff,
+   _paper_log is not None and _paper_log == _log_coeff)
+
+# the paper prints the whole expansion; read its leading coefficients too, so the agreement is not
+# resting on one number that could coincide
+_m_exp = re.search(r'd\\,\\mu=(\d+)m\^\{3\}-(\d+)m\+\\tfrac\{(\d+)\}\{(\d+)\}m\^\{-1\}', _ct)
+if _m_exp:
+    _lead, _lin = int(_m_exp.group(1)), int(_m_exp.group(2))
+    _lead_ok = (sp.nsimplify(_ser.coeff(_m, 3)) == _lead
+                and sp.nsimplify(_ser.coeff(_m, 1)) == -_lin
+                and sp.Rational(int(_m_exp.group(3)), int(_m_exp.group(4))) == _log_coeff)
+else:
+    _lead, _lin, _lead_ok = None, None, False
+ok('Ⓗ③ and the paper\'s WHOLE printed expansion is read and matched term by term -- leading %s m^3, '
+   'linear -%s m, and the 1/m term -- so the agreement rests on three coefficients and not on one '
+   'number that might coincide' % (_lead, _lin), _lead_ok)
+
+ok('Ⓗ④ the row names the open frontier -- the completion of the ultraviolet definition of the mode '
    'sums -- as the place a cutoff would enter, rather than supplying one',
    'COMPLETION of the ultraviolet definition of the mode sums' in out)
 

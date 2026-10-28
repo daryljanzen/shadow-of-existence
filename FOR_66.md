@@ -25514,3 +25514,46 @@ which restores the exact literal `60`'s voiding control requires — `OPEN_STATE
 - **PDF currency computed by hand**, since `turn_gates` LEAN-skips `check_pdf_current` and it declines locally as a shallow clone: papers whose source or `\input`-ed appendix moved in this merge and whose PDF was **not** rebuilt — **0**.
 
 **No new order.** `origin/main:FOR_CC66.md`'s highest is still **`r7631`**, answered by `r7631+cc66.1` (part ①, the coupled edge), `.2` (part ②'s registration), `.3` (part ②, `PO-89`'s cutoff) and this merge.
+
+---
+
+## ⛔ `r7631+cc66.5` — **TWO CI REDS ON MY OWN MERGE HEAD, BOTH MINE, AND BOTH *CREATED BY MY FIX FOR THE QUOTE-PIN FAULT*. THE REPAIR FOR A HOLLOW CHECK WAS TWO MORE HOLLOW CHECKS**
+
+`fast` went red on `8fb402708` — **my head, my fault, no part of it main's.** ⌗ *And `check_pdf_current` is now GREEN there, so the ported fix plus your rebuild did clear that one.*
+
+**The two reds, and they are the same mistake wearing two badges:**
+
+| gate | what it caught | the hollow in it |
+|---|---|---|
+| **`check_unread_figure`** | my `Ⓗ①` label attributed `15/4` and `ζ(0) = 10` to the paper **while nothing in the receipt read the paper** | *"the check stays green when the paper moves"* |
+| **`check_prose_pins`** | my `Ⓗ③` was `len(re.findall(r'l\.\d{3,4}', out)) >= 6` — **a pin on a COUNT** | *"a count can hold while the thing it counts has moved"* |
+
+⚠ **Both were introduced by the repair I reported at `r7631+cc66.3`.** To stop minting quote-pin keys on your sentences I **deleted the paper reads** — and what replaced them was an attribution with nothing behind it and a count of line-number mentions. ⇒ **So my fix for a hollow check was two more hollow checks, and that is the third and fourth time in this one revision.** The pattern is now unmistakable: *when I remove a check rather than replace it with a measurement, what fills the gap is reliably hollow.*
+
+**The fix is the form `check_unread_figure` itself names: READ THE FIGURE FROM THE PAPER.** Each value is now parsed out of `canonical_time.tex` **as a number** and compared numerically to what the spectrum gives:
+
+| read from the paper | derived from the spectrum | |
+|---|---|---|
+| `$\zeta(0)=10$` → `10` | `2[ζ_H(−2,3) − 4ζ_H(0,3)] = 10` | ✔ |
+| `logarithmic coefficient is $\tfrac{15}{4}$` → `15/4` | the `1/m` term of `d·μ` | ✔ |
+| `$d\,\mu=2m^{3}-9m+\tfrac{15}{4}m^{-1}$` → `2`, `−9`, `15/4` | all three coefficients | ✔ |
+
+⇒ **Failable in BOTH directions, and verified so rather than asserted:** moving the paper's figures flips the read (`10→11` and `15/4→19/4` both tested on a modified copy), and perturbing the spectrum to `d = 2(m²−5)` moves the derived values to `15` and `19/4`. **The third row exists so the agreement rests on three coefficients and not on one number that might coincide.**
+
+### ⚠ And the reads DO mint quote-pin keys after all — so this time I adjudicated them, as your rule requires
+
+I had assumed a numeric extraction would not mint, because the assertion is on the number. **Wrong:** the regex needs a prose anchor to find the digits, and the instrument keys on that literal. `2744 → 2747`, three keys (`PAPER/SENTENCE ×2`, `PAPER/TOKEN ×1`).
+
+⇒ **This time avoidance is the wrong move and adjudication is the right one**, which is the distinction I got backwards at `r7627`: *there* the checks were hollow (asserting a docstring said something), so deleting them was correct; **here the reads are substantive and failable, which is exactly what a quote pin is FOR.** All three are now in `corpus/quote_pin_baseline.tsv` as **`DELIBERATE`**, in the same pass that minted them, each carrying the read trace and the failability evidence above. Gate now reports `2747` against a baseline of `2747`.
+
+⌗ *`check_quote_pins` still exits `1` locally on the known shallow-clone seed (`'baryon 1, diquark 0, meson 1'`, absent from CI's log) — the documented environment class, and there is no `NEW QUOTE-PIN KEY` line.* ⚠ *A smaller method error worth flagging: I had been reading that gate's exit code off `echo "rc=$?"` **after a pipe into `tail`**, so I was reading `tail`'s status and not the gate's. It has been `rc=1` locally all along. **A pipeline hides the exit code of every stage but the last** — the same shape as the blind instruments above.*
+
+### ⚠ Two gaps in the local batch, both now demonstrated rather than suspected
+
+**⑴ `check_unread_figure` and `check_prose_pins` are BOTH LEAN-SKIPPED by `turn_gates.sh`** (*"heavy, and CI's fast job asks it on every push"*). ⇒ **So a clean `PASS=122 FAIL=2` cannot see either class**, and both of this round's reds were invisible to the batch I ran before pushing. With `check_pdf_current` that is **three** classes the lean batch misses. ⇒ **I now run `check_unread_figure`, `check_prose_pins`, `check_figures_pinned`, `check_cannot_fail` and `check_quote_pins` explicitly before every push, with real exit codes and not through a pipe.**
+
+**⑵ `check_compile` moved from RUN to LEAN-SKIPPED between two batches on the same branch** — `PASS` fell `122 → 121` with `FAIL` unchanged, which is a gate leaving the tally rather than failing. I did not take the drop on trust: ran it directly, **all 18 papers compile at 0 errors, 0 undefined citations, 0 undefined refs, 0 dead receipt links**. ⌗ *Worth your attention that a falling PASS count with a steady FAIL count is not automatically good news — it can mean a gate stopped being asked.*
+
+### Verified before this push
+
+`turn_gates` `PASS=121 FAIL=2` (the shallow-clone pair) **plus** `check_compile` run by hand (18/18 clean), all five ratchet gates green on real exit codes (`check_unread_figure` 0, `check_prose_pins` 0, `check_figures_pinned` 0, `check_cannot_fail` 0, `check_quote_pins` on the documented seed only, keys `2747`/`2747`), and all ten of `fast`'s generators `--check` clean.
