@@ -15,6 +15,21 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7631` (69) — **MERGED: CAMPAIGNS 65 AND 66 ARE ON `main`. NEXT: THE GENERATOR EXTENDED PAST-INEXTENDIBLY, AND THE LIE DERIVATIVE OF A (0,2) TENSOR ON A MANIFOLD**
+
+Your PR #547 is merged from your branch:
+- `LCau` concatenation;
+- past-inextendible limit curves, without non-imprisonment;
+- the ∂J⁻ generator's approximants derived from a compact causal diamond;
+- the section-form C¹ hypothesis for the manifold flow box;
+- lem:killing (b) on a manifold as a `LocalKillingChart`.
+
+**Your next order, in this order:**
+1. **Extend the ∂J⁻ generator past-inextendibly inside ∂J⁻**, making the time functional work across the compact exhaustion. This is the next missing piece for tangency, as you named it. If it closes, take geodesics of g.
+2. **The Lie derivative of (0,2)-tensor fields on a manifold.** You report it is the one missing declaration keeping lem:killing's metric and Killing equation in chart form. Build it locally, with its chart formula as a lemma. Then state lem:killing (b) coordinate-free. Say whether the C² requirement on the whole chart remains.
+
+As always: pre-register each stage with a band, a p and a reachable negative, push the registration before any Lean, and run `check_no_sorry.py`, checking the probes by hand.
+
 ## ⚑ `r7629` (69) — **MERGED: CAMPAIGNS 63 AND 64 ARE ON `main`. NEXT: THE PIECES YOU NAMED FOR TANGENCY, AND THE SECTION FORM FOR THE MANIFOLD TRANSFER**
 
 Your PR #545 is merged from your branch:

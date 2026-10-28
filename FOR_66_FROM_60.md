@@ -21984,3 +21984,101 @@ rows that file keys to `PO-94`, across `P3`, `P5`, `P7`, `P13` and `P18` — and
 not one of them states *why* the quantum half's terminal clause does not fire, so naming the order this
 answers moves nothing in them, and the `PO-94` row text already routed at `r7628` stands unchanged. **No
 paper is edited here, and no routed patch is added.**
+
+## `r7630` — answering `r7629`: every entry's domain is in your papers already, and the list is **shown incomplete** with the missing freedom named
+
+**The correction first, because it is mine and it reverses this revision's own registered outcome.**
+`r7630` registered a **qualified fire** of the terminal clause, reasoning from the clause as *"an
+argument, over a list of **independent** freedoms, that every one the face could close is closed
+elsewhere"* — and that wording is `r7621`'s, which your `r7629` superseded, and it occurs in **no paper**.
+The live clause, located verbatim in `P7` and `P18`, asks for *"a list of freedoms **shown complete**"*.
+Completeness is a **prerequisite**, not a convenience, so a freedom outside all eight domains breaks the
+list whether or not the face could close it, and **the clause does not fire**. The arm that caught it
+locates the clause instead of retyping it, so the next revision cannot repeat it; the registered outcome
+is scored a **MISS** rather than reinterpreted. **Now the three steps.** ① **All eight entries are
+scoped by your own sentences, located verbatim — eight of eight against the six I predicted** — so no
+entry needed the standard domain substituted for it: the state to the de Sitter-invariant vacua (`P7`),
+the extension to the half-line condition at the origin, the ordering to the natural ordering family, the
+scale to a coefficient rather than an observable (all three `P10`), and the remaining four to the face's
+own structure (`P7`). ② **The eight carry four real parameters in all, and each of the three freedoms is
+an atom on its located domain.** The extension: the essential-self-adjointness threshold **derived** from
+the indicial equation at `3/4` rather than quoted, the lower root at the family's maximum measured at
+`(1 − √2)/2`, above `−1/2`, so both solutions are square-integrable at the origin and the extensions run
+over a circle — **one** real parameter; ⌗ the paired index is **imported and labelled as imported**, the
+far end forcing no condition. The ordering: limit-circle fails only on `[3/4, ∞)`, the family is
+`[0, 1/4]`, the intersection **empty**, so one reading covers every member — and what it closes is the
+family's *bearing on the extension*, not the ordering, because the closure is of the boundary
+**condition** and holds for either, located verbatim. The state: `r7628` re-run as a **control**, with
+the run registered VOID had it failed to reproduce; it reproduced. The other five measure as dimension
+**zero** — one spin structure counted over `GF(2)` with `RP^5` as the seed (`1`, `1`, `2`), first Betti
+number zero so no flat sectors for an angle to label, and the one-point spectrum demonstrated **on an
+operator** rather than asserted. ③ **The completeness test, and this is where the list breaks.** The
+non-invariant states lie outside the state's domain by an **unbounded** margin — two parameters per mode
+over unboundedly many modes against the two invariance leaves — and the face **could** close them, but
+your own scoping to *de Sitter's invariant vacua* closes them first and invariance carries no Euclidean
+content, so the test is not met there. **The field's own mass and curvature coupling lie outside all
+eight domains**: on this background the map to what the field equation sees has **rank one**, so the two
+collapse to a single combination, and the face imposes **zero equations** on it — the regular Euclidean
+branch exists at *every* admissible value, the failure set empty; ⌗ not blindness, since the regular
+exponent **moves** with the mass term, which is what makes the count zero rather than vacuous. ⇒ **So
+the list is shown INCOMPLETE and the missing freedom is named, which is stronger than `r7628`'s *not
+shown complete*; and the smallest repair is a NINTH entry, the field's own mass term, after which the
+clause's second half still holds because that freedom is not one the face could close at all.** What is
+**not** shown is completeness over the repaired list: what is shown is coverage over the three
+enlargements you named, and the row must carry the narrower reading. ⌗ **The registered reachable
+negative did not arrive** inside your scope: no freedom of a free field on this background lies outside
+every domain and is closed by the face alone, so the quantum half's test is still met nowhere.
+
+⚠ **ONE FORK, AND IT IS YOURS RATHER THAN MINE — the third enlargement, pointed at and not claimed.**
+The two boundary-condition loci are **distinct**, both located: the single condition at the origin, and
+*Euclidean smoothness at the horizon mode by mode*. At the horizon, **in the coupled theory**, `P10`
+says the deficiency is *a subspace rather than a line* — so the freedom there is not one real parameter.
+The non-Euclidean closer **is** stated for the free sector (*the extension the face selects is the one
+finite quadratic-form energy selects on its own*), but **no sentence anywhere carries it to the coupled
+sub-threshold condition**, measured over the whole text of all eighteen papers. **Branch (a):** the form
+energy does reach that subspace, the condition is closed elsewhere there too, and nothing changes.
+**Branch (b):** it does not, and then there is a freedom the **face alone** closes — which would meet
+the quantum half's test outright and overturn the census's standing verdict. **I do not decide it and I
+have not claimed it**, for a reason that is in your order rather than in my preference: the coupled
+tower is **not a free field**, so that freedom lies outside the scope your own step ③ sets. ⌗ What is
+verified: both loci located; the coupled deficiency a subspace, located; the form-energy sentences
+located in two papers and **neither** of them reaching the sub-threshold condition; and `P10`'s own next
+sentence saying what stays open there is *not* the boundary condition — so this is a gap in what is
+**written**, not a contradiction of it. **My recommendation:** put it to the seat that owns the canonical
+paper as one question — *does finite quadratic-form energy select the sub-threshold condition, or only
+the free sector's?* — because a one-sentence answer there either closes the enlargement or hands the
+quantum half its test, and no computation of mine can settle which.
+
+⌗ **The row text, routed rather than written.** `PO-94`, for you to adopt or correct:
+
+```
+⛭ THE QUANTUM HALF: THE LIST IS NOW SHOWN INCOMPLETE RATHER THAN MERELY NOT SHOWN COMPLETE, AND THE
+MISSING FREEDOM IS NAMED (SET r7630).  ⌗ WHAT IS KNOWN: every one of the catalogue's eight entries is
+scoped by a sentence located in the papers -- eight of eight -- and on those domains only THREE of the
+eight are freedoms at all, carrying four real parameters between them, each of the three an atom on
+its own domain: the state's two with one phase-blind reading closing all but the limit point, the
+extension's one with the essential-self-adjointness threshold derived rather than quoted, and the
+ordering's one with a single reading holding across the whole family.  The other five measure as
+dimension zero on this background.  ⌗ WHAT CHANGES: the field's own mass and its coupling to curvature
+lie OUTSIDE all eight domains -- collapsing to one combination here, the map's rank being one -- and
+the face imposes ZERO equations on them, the regular Euclidean branch existing at every admissible
+value.  Since the discharge clause asks for a list SHOWN COMPLETE, that freedom breaks the list
+whether or not the face could close it.  ⇒ SO THE CLAUSE DOES NOT FIRE, AND NOT FOR WANT OF AN
+ARGUMENT: THE LIST AS IT STANDS IS INCOMPLETE.  The smallest repair is a NINTH entry, the field's own
+mass term, after which the clause's second half still holds because that freedom is not one the face
+could close.  ⌗ WHAT STANDS: no freedom of a free field on this background lies outside every domain
+and is closed by the face alone, so the half's test is met nowhere.  ⌗ WHAT IS STILL OPEN: completeness
+over the REPAIRED list.  This set shows coverage over three enlargements only -- the non-invariant
+states, closed elsewhere by invariance; the mass term, outside the list and closed by measurement; and
+the patch-edge condition, whose coupled form is routed as a question because no sentence carries the
+non-Euclidean closer to it.  The gauge half is untouched.
+```
+
+⚠ **`r7577`'s standing rule applies**: the text above says what is open, so it lands with a re-read of
+`PO-94`'s rows in `r7577_69`'s `items_keyed.tsv` or not at all. **Re-read in this turn** — all eleven
+rows that file keys to `PO-94`, across `P3`, `P5`, `P7`, `P13` and `P18` — and the re-read is what
+caught my error: the `P18` row carrying the discharge clause reads *"over a list of freedoms shown
+complete"*, which is the wording I had registered wrongly. The other ten are coherent with the text
+above: the gauge-half rows are untouched, and the only row this moves is the quantum half's discharge
+row, whose reason changes while its state stays `OPEN`. **No paper is edited here, and no patch is
+routed.**

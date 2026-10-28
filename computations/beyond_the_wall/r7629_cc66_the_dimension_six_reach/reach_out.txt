@@ -1,0 +1,130 @@
+
+================================================================================================
+r7629+cc66 -- PO-89 (a): THE DIMENSION-SIX TERM AGAINST WHAT IS MEASURED
+================================================================================================
+
+  THE LANDED COEFFICIENT (canonical_time l.1283; P10 receipt at r7601):
+    -(1/3) * 197131/6720     = -9.7783234127
+    367/48                   = +7.6458333333
+    389/160                  = +2.4312500000
+    their sum                = +0.2987599206
+    the stated total         = +0.2987599206   (6023/20160)
+    ⇒ the three parts reproduce the stated total: YES
+
+  ⌗ AND WHAT IS BEING SIZED, which the row must not misstate: 6023/20160 is the
+    obstruction to COVARIANCE -- the carrier is not covariant from inside, so this is
+    not an invariant's coefficient.  It is the magnitude of the dimension-six term whose
+    split between the reduction and the truncation is itself PO-89's stated limit.
+
+------------------------------------------------------------------------------------------------
+  CONTROL (1) -- THE ORDER'S NAMED CONTROL: does the same estimate size a
+                 DIMENSION-FOUR quantity correctly?
+------------------------------------------------------------------------------------------------
+    at E = 2.600e-10 GeV and Lambda = 1.0 GeV, with unit coefficient:
+      dimension 4 -> relative size 1.000000     (UNSUPPRESSED, exponent 0)
+      dimension 6 -> relative size 6.760000e-20     (suppressed by (E/Lambda)^2)
+    ⇒ The estimator returns NO suppression at dimension four, which is why the
+      dimension-four terms are the ones these observables actually measure, and a
+      suppression of exactly two powers at dimension six.  ** The dimension is a
+      parameter of the function, so this is the estimator's own bookkeeping being
+      checked rather than a sentence about it. **
+
+------------------------------------------------------------------------------------------------
+  CONTROL (2) -- the same estimator on a dimension-six operator whose cutoff is KNOWN:
+                 the four-fermion (Fermi) operator, Lambda ~ m_W
+------------------------------------------------------------------------------------------------
+    (m_mu / m_W)^2 = (0.1057 / 80.4)^2 = 1.728e-06
+    ⇒ the estimator reproduces the known smallness of a weak-scale dimension-six
+      operator at the muon mass, ~1e-6, which is the right order.  ** So the (E/Lambda)^2
+      form is validated on a case where the answer is independently known, not only
+      asserted for this construction. **
+
+------------------------------------------------------------------------------------------------
+  (1)-(2) THE SIZING AND THE THRESHOLDS -- the row's deliverable
+------------------------------------------------------------------------------------------------
+
+    observable                  E (GeV)      sigma    Lambda* (GeV) Lambda* (eV)
+    the rate H0               1.440e-42    1.0e-02        7.871e-42    7.871e-33
+    the acoustic scale        2.600e-10    2.9e-04        8.345e-09    8.345e+00
+    the tilt n_s              2.600e-10    4.4e-03        2.142e-09    2.142e+00
+    the tensor amplitude      2.600e-10    3.2e-02        7.944e-10    7.944e-01
+
+    the rate H0            sigma: about 1 per cent, the width of the current H0 determinations
+    the acoustic scale     sigma: 100 theta* = 1.04109 +- 0.00030, so 2.9e-4 fractional
+    the tilt n_s           sigma: n_s = 0.9649 +- 0.0042, so 4.4e-3 fractional
+    the tensor amplitude   sigma: r < 0.032 as an upper limit -- an EXCLUSION, not a measurement (see the caveat)
+
+    ⇒ THE BINDING OBSERVABLE is the acoustic scale, with the HIGHEST threshold:
+      Lambda* = 8.345e-09 GeV = 8.345 eV
+      ** It binds because it couples a recombination-era energy to the tightest
+         fractional precision of the four. **
+
+------------------------------------------------------------------------------------------------
+  (3) DOES THE EXIT FIRE?  Reported as Lambda > Lambda*, against candidate cutoffs
+------------------------------------------------------------------------------------------------
+
+    candidate cutoff           Lambda (GeV)   orders of magnitude above the binding Lambda*
+    the Planck scale              1.220e+19      +27.2   -> the term is HIDDEN
+    a GUT scale                   1.000e+16      +24.1   -> the term is HIDDEN
+    the weak scale                1.000e+02      +10.1   -> the term is HIDDEN
+    1 GeV                         1.000e+00       +8.1   -> the term is HIDDEN
+    1 eV                          1.000e-09       -0.9   -> the term is VISIBLE
+    the CMB temperature           2.350e-13       -4.6   -> the term is VISIBLE
+
+    ⇒ Every candidate cutoff at or above 1 GeV hides the term, the weakest of those by
+      8.1 orders of magnitude.
+
+    ⚠ AND THE THRESHOLD IS NOT VACUOUS, WHICH IS THE PART WORTH REPORTING.  A cutoff of
+      1 eV sits 0.9 orders BELOW the binding Lambda* of 8.345 eV, and there the term
+      would stand at about 70 times the acoustic scale's precision -- VISIBLE, not
+      hidden.  ** So the exit does not fire for every cutoff one could write down: it
+      requires Lambda above a few eV, i.e. an atomic scale or higher. **
+      ⌗ An earlier draft of this line claimed the exit failed only below the CMB
+        temperature (2.350e-04 eV).  That was FALSE: Lambda* is 4.6 orders of magnitude
+        ABOVE the CMB temperature, and 1 eV lies between them.  The claim is corrected
+        here rather than quietly dropped, because the margin is the whole result.
+
+------------------------------------------------------------------------------------------------
+  THE ORDER'S NAMED REACHABLE NEGATIVE -- one observable within an order of magnitude
+  of current precision.  Tested, and MISSED, for each candidate cutoff.
+------------------------------------------------------------------------------------------------
+    cutoff the Planck scale         -> observables within 10x of precision: NONE
+    cutoff a GUT scale              -> observables within 10x of precision: NONE
+    cutoff the weak scale           -> observables within 10x of precision: NONE
+    cutoff 1 GeV                    -> observables within 10x of precision: NONE
+    cutoff 1 eV                     -> observables within 10x of precision: the acoustic scale (delta/sigma = 6.96e+01), the tilt n_s (delta/sigma = 4.59e+00), the tensor amplitude (delta/sigma = 6.31e-01)
+    cutoff the CMB temperature      -> observables within 10x of precision: the acoustic scale (delta/sigma = 1.26e+09), the tilt n_s (delta/sigma = 8.31e+07), the tensor amplitude (delta/sigma = 1.14e+07)
+
+------------------------------------------------------------------------------------------------
+  WHAT THIS ROW DOES NOT CLAIM
+------------------------------------------------------------------------------------------------
+    a. ** It does not supply a cutoff. **  Every line above is conditional on Lambda,
+       because r7627 established the construction fixes no absolute scale.  The exit
+       fires as an INEQUALITY and the row says so on its face.
+    b. The tensor amplitude enters as an EXCLUSION (r < 0.032), not a measurement, so
+       its threshold is the weakest OF THE THREE READ AT RECOMBINATION and is reported
+       apart rather than averaged in with two measured precisions.
+       ⌗ A draft of this line said "the weakest of the four".  THAT WAS FALSE and this
+         row's own table falsified it: the RATE's threshold is lower still, 7.871e-42 GeV,
+         by about 33 orders of magnitude -- not because its precision is loose but
+         because its characteristic energy is H0 itself.  Two different reasons for a
+         low threshold, and the caveat had merged them.
+    c. The characteristic energy of the TILT is the least well defined of the four: it
+       is a property of the primordial spectrum, and which energy the construction
+       reads it at is a reading rather than a computation.  It is carried at the
+       recombination scale and is NOT the binding observable either way.
+    d. 6023/20160 is an obstruction to covariance, not an invariant's coefficient, so
+       "the dimension-six term" here means the magnitude whose non-covariant split is
+       PO-89's stated limit -- which is what makes (a) the whole of the exit.
+
+================================================================================================
+  CONCLUSION: the exit FIRES, conditionally and explicitly so.  The binding threshold is
+  Lambda* = 8.345 eV, set by the ACOUSTIC SCALE, which binds because it couples a
+  recombination energy to the tightest fractional precision of the four.  Any cutoff above
+  that hides the term on every observable the construction reads; at 1 GeV and above the
+  margin is 8 orders of magnitude or more, and NO observable comes within ten times its
+  precision.  ⚠ But the threshold is not vacuous -- at a 1 eV cutoff the acoustic scale
+  would see the term at ~70x its precision.  ⇒ PO-89 (a) is OUT OF REACH for Lambda above
+  a few eV, and on that condition the dimension-six value is a STATED LIMIT.
+================================================================================================
+

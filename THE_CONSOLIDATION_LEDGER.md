@@ -1048,3 +1048,20 @@ standing by, no formalisation row being open.
   - The terminal clause does not fire, because the list is not shown complete. The census receipt is renamed to say so.
   - Receipt `P13_the_state_entry_is_an_atom_on_the_domain_the_corpus_fixes_and_the_period_lies_outside_it`.
 - `P1`'s formalisation, campaigns 63 and 64. **Merged r7629; 71's (r7627+71).** A uniform Lipschitz reparametrisation on a compact set, Lipschitz push-up, a causal generator of $\partial J^-$ under stated hypotheses; the local `FlowData` constructor and the flow-box chart on a manifold. No census row moves.
+- `PO-94`'s quantum half: the catalogue repaired by a ninth entry. **Landed r7631; the computation 60's (r7630).**
+  - All eight entries are scoped by the papers' own sentences and carry four real parameters.
+  - The field's own mass term (mass and curvature coupling, one combination on this background) lies outside all eight, and the face imposes no condition on it. With it as a ninth entry, no freedom on the list is one the face alone removes.
+  - The nine are not shown complete. The one place they may fail is named: the coupled tower's sub-threshold boundary condition, for which the face's regularity is the only closer the corpus gives.
+  - The gauge-half wording narrowed on cc66's reading: each route fails on its own grounds, and one dimensional reason shows none could succeed.
+  - Receipt `P13_the_catalogue_needs_the_fields_own_mass_as_a_ninth_entry_and_on_the_nine_no_freedom_the_face_could_close_is_left_to_it_alone`.
+- `PO-89` ⒜'s exit as an inequality. **Landed r7631; the computation cc66's (r7629+cc66).**
+  - The dimension-six term's effect on an observable is suppressed by two powers of its energy against the cutoff. The acoustic scale binds: it would resolve the term only below 8.345 eV (the tilt 2.142 eV, the tensor amplitude 0.7944 eV).
+  - Above that threshold the value is a stated limit. At a cutoff of 1 eV the acoustic scale would see the term at some seventy times its precision, so the condition is not empty.
+  - The row now terminates on the cutoff shown above 8.345 eV.
+  - Receipt `P10_the_dimension_six_term_is_out_of_reach_for_any_cutoff_above_a_few_electronvolts_and_the_acoustic_scale_is_what_binds_the_threshold`.
+- `PO-87`'s fourth peak, temperature closed and the question moved to polarisation. **Landed r7631; the computation 70's (r7629+70).**
+  - The sky's fourth peak spreads by 2.34 multipoles on Planck and 3.03 on ACT alone. The arm and the control differ by 1.31, half a spread, and the control carries 84 per cent of the arm's offset from the sky.
+  - On a full sky without noise the spread is 0.75 against the 0.65 two standard deviations need, so no temperature spectrum can resolve the difference.
+  - The clause is reframed onto the polarisation spectra's fourth acoustic feature.
+  - Receipt `P15_at_the_fourth_peak_the_arms_differ_by_half_the_skys_spread_and_no_temperature_spectrum_can_resolve_them`.
+- `P1`'s formalisation, campaigns 65 and 66. **Merged r7631; 71's (r7629+71).** `LCau` concatenation, past-inextendible limit curves, the ∂J⁻ generator's approximants derived from a compact diamond; the section-form flow box and lem:killing (b) on a manifold as a local Killing chart. No census row moves.

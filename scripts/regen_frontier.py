@@ -168,7 +168,11 @@ EST = {
         'cosmic variance at the level the sectors own Monte Carlo over 10^4 skies measures -- a measurement this '
         'programme can take, which is why it is data-gated in part rather than blocked. '),
     'PO-89': ('the completion of the interacting towers definition: its renormalised value at dimension six',
-        1, 3, 3, 'a measurement of the renormalised value at operator dimension six',
+        1, 3, 3, 'the cutoff shown above 8.345 eV, or the renormalised value at dimension six measured',
+        'r7631 LANDS r7629+cc66: the exit is an INEQUALITY -- the dimension-six term is suppressed by two powers of an '
+        'observable\'s energy against the cutoff, which the construction does not fix; the acoustic scale binds at '
+        '8.345 eV, and at a 1 eV cutoff it would see the term at some seventy times its precision. The row terminates on '
+        'the cutoff shown above that threshold. '
         'r7601: the complete second order is COMPUTED (the cubic over all three levels with its nested divergence, and '
         'both quartics, each a product of one-loop sums) and its double logarithm is NOT covariant up to the scale '
         'factors equation of motion -- obstruction 6023/20160 against a one-condition test -- so part (d) is done and '
@@ -254,7 +258,12 @@ EST = {
         'half discharges without it -- the entropy floor for the genealogys finiteness is independent of the peak '
         'temperature -- a correct strike with the item lying beyond it. '),
     'PO-87': ('a mechanism for the computed spectrum\'s shape deficit, its two halves reported apart',
-        2, 2, 3, 'a datum that discriminates the models at the fourth peak',
+        2, 2, 3, 'polarisation data that separate the arms at the fourth acoustic feature',
+        'r7631 LANDS r7629+70: at the fourth peak the sky spreads by 2.34 (Planck) and 3.03 (ACT alone), the arms differ '
+        'by 1.31 (0.56 and 0.43 of those), the control carries 84 per cent of the arm\'s offset from the sky, and a '
+        'full noise-free sky still spreads by 0.75 against the 0.65 needed: NO TEMPERATURE SPECTRUM can resolve it. '
+        'The clause moves to the polarisation spectra\'s fourth acoustic feature, and terminates if their floor keeps '
+        'the arms under 2 sigma too. '
         'r7615 LANDS r7614 (60): the derivation HOLDS ON ANY CUT (the radial equation at E = 1 is autonomous in r), '
         'and radiation put into the cut as its bend subtracts three times the leaf\'s radiation term, lengthening the '
         'distance to 14397.425 Mpc, away from the sky. So the WORKABLE HALF DISCHARGES on its own clause: the deficit is '
@@ -6990,6 +6999,10 @@ EST = {
         'standard spectral theory on a fixed background with nothing the construction adds. '
         ),
     'PO-94': ('whether the substrates two real forms are physics actual quantum and gauge sectors, or a structural rhyme with them', 1, 1, 3, None,
+        'r7631 LANDS r7630 (60): QUANTUM HALF -- every entry\'s domain located; the catalogue misses the field\'s own '
+        'mass term, on which the face imposes no condition, and with it as a ninth entry no freedom on the list is one '
+        'the face alone removes; the nine are not shown complete, and the one place they may fail is named: the '
+        'coupled tower\'s sub-threshold boundary condition, whose only named closer is the face (cc66 ordered on it). '
         'r7629 LANDS r7627+cc66 and r7628 (60): GAUGE HALF SETTLED -- the routes fail for one reason, a coupling being an '
         'action normalisation and the construction\'s data geometry: 11049 dimensionless numbers formed from the face\'s atoms '
         'hit alpha_s(M_Z) within 1 per cent 12 times against 13.26 by chance, and no reference scale or matching condition is '
