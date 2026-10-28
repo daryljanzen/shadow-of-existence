@@ -25484,3 +25484,33 @@ Landed: receipt `P10_the_corpus_uses_the_tower_thirty_three_orders_below_the_dim
 ⇒ **Both halves of `r7631` are now done.** ① the coupled edge closes on a non-Euclidean selector, so the face is not the only closer and `PO-94`'s quantum half does not meet its test by that route — on **one** selector, positivity not being one. ② `PO-89`'s exit does not fire, and the cutoff it asks about is not a quantity the construction has.
 
 ⌗ **And a cost I caused again, recorded because I wrote the rule that forbids it.** Pushing part ②'s registration `2.5` minutes after part ①'s result **cancelled run `8404`'s tolerance sweep** — `concurrency: cancel-in-progress`. By my own `r7625` rule the carry is **shared state across heads, not per-sha**, so that sweep's receipts ride into the next head's scope rather than vanishing, and *"superseded"* is never a reason to treat a running sweep as expendable. ⇒ **And then I checked rather than assumed, which refined the rule.** Run `8405` (the registration's own) had dispatched **zero jobs** when I came to push part ②'s result — it was queued behind the earlier head, not running — so that push cancelled a *queued* run and **no sweep was lost**. ⇒ **So the cost is not per cancellation but per cancellation of a run that has already dispatched its jobs**, and the test before pushing over a live run is to list its jobs, not to read its status: `pending` with zero jobs is free, `in_progress` with a tolerance job running is not. ⌗ *I had drafted the opposite claim — that I held the push until the registration's run finished — and it was false; the run had not started. Corrected here rather than shipped.* The underlying rule stands unchanged: a **running** sweep is never expendable, because the carry is shared across heads.
+
+---
+
+## ✔ `r7631+cc66.4` — **YOUR REWORDING *IS* THE FIX FOR THE RED I ROUTED: `60`'s P13 RECEIPT IS `8/8` GREEN ON THE MERGE. AND A FORWARD-LOOKING NOTE, BECAUSE MY ① SUPPLIES THE SENTENCE `60`'s LAST CHECK SAYS THE CORPUS LACKS**
+
+**Merged `3dc6a766f` (two commits) and verified rather than assumed.**
+
+**⇒ The P13 red I routed at `r7631+cc66.2` is CLEARED, and by your own edit.** You reworded
+
+> *"the **nine are** not shown **complete**, … **they**"* → *"the **list is** not shown **complete even with nine entries**, … **it**"*
+
+which restores the exact literal `60`'s voiding control requires — `OPEN_STATE = 'the list is not shown complete'` — while keeping the nine-entry fact. `60`'s receipt now reports **`8 checks, 8 pass, 0 fail`** on the merged tree. ⇒ **The merge was the fix, which is the `r7621` precedent again: the thing I routed was already being repaired upstream.** ⌗ *Worth noting your commit also added a diagnostic print to that receipt (`if '46 checks, 0 failure(s).' not in out: …`) — that is instrumentation for the failure, not the fix; the gate is unchanged. The fix was the paper sentence.*
+
+**⇒ And you rebuilt `cosmogenesis_paper.pdf` too**, so the fix I ported at `3e5996db0` is now redundant — it conflicted on the binary, and per your own rule I did **not** pick a side but regenerated: appendices from the merged index, then both affected papers recompiled, `check_appendix_current` green on **both rails** (`1139` receipt rows / `18` appendices, `25` ledger rows / `19`).
+
+### ⚠ The forward-looking note, and it is the one place my ① touches `60`'s row
+
+`60`'s last check reads *"the coupled edge: a subspace, and **no sentence carries a non-Euclidean closer to it**"*, and it **passes** on the merged tree. **I checked whether that is now stale and it is not** — your new sentence says *"the self-adjoint extension it selects is the one finite quadratic-form energy selects on its own, the family's members being physically distinct and the form energy finite at that member alone"*, which carries the closer **generally** but **not to the coupled sub-threshold condition**. So `60`'s claim about the corpus's *sentences* still holds literally.
+
+⇒ **But that gap is exactly what `r7631+cc66.1` filled by computation.** My ① measures that finite form energy *does* select the same diagonal regular-branch member **on the coupled sub-threshold subspace**, with margin, on every fibre of `spec Γ̂` below `3/4`. ⚠ **So when you write the coupled clause into the papers, `60`'s check `Ⓗ` will flip by design** — its condition is `'BUT NO sentence carries that closer to the coupled sub-threshold condition' in out`, and a sentence that carries it makes that string false. **That is not a fault in `60`'s receipt; it is a receipt correctly tracking a state the corpus is about to leave.** I am naming it so the flip arrives as expected rather than as a red, and I am **not** touching `60`'s receipt to pre-empt it — that is `60`'s row and your ruling.
+
+### Verified on the merged tree, not trusted
+
+- `receipts/INDEX.md` by **SET COMPARISON** against `git show origin/main:receipts/INDEX.md` — rows main has that I lack: **NONE**; rows I add: **EXACTLY TWO**, my own `r7631` ① and ② rows.
+- **All ten** of `fast`'s generators pass `--check`.
+- `check_figures_pinned` **1383** unpinned / **1291** keys = baseline; `check_quote_pins` **2744** = baseline; `check_cannot_fail` **43**/**39**, **21** owed against a ceiling of 21 = baseline.
+- `turn_gates` (lean) **`PASS=122 FAIL=2`** — the shallow-clone pair, `check_branches` and `check_pins_adjudicated_on_mint`.
+- **PDF currency computed by hand**, since `turn_gates` LEAN-skips `check_pdf_current` and it declines locally as a shallow clone: papers whose source or `\input`-ed appendix moved in this merge and whose PDF was **not** rebuilt — **0**.
+
+**No new order.** `origin/main:FOR_CC66.md`'s highest is still **`r7631`**, answered by `r7631+cc66.1` (part ①, the coupled edge), `.2` (part ②'s registration), `.3` (part ②, `PO-89`'s cutoff) and this merge.
