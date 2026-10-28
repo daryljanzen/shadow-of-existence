@@ -132,7 +132,9 @@ LONG = {
     # r7603 (69), on the carry ledger's signature for r7601's receipt (an empty gate list: a kill at the 600s cap).
     # MEASURED ALONE, ONE THREAD, NOTHING ELSE RUNNING: 834s, exit 0, 14 of 14 (836s in a two-job scoped run).
     # The rule the entries below use: 834 x 1.7 = 1418 -> 1500, the next 300s step.
-    'P10_the_complete_second_orders_double_logarithm_is_not_covariant_up_to_the_scale_factors_equation_so_the_invariant_is_a_stated_limit.py': 1500,  # measured 834s alone, one thread (r7603)
+    # r7625 (69): 1500 was exceeded in a four-job CI suite run (run 40613510079, 412 in scope): the 1.7x rule is too
+    # tight for this one under contention.  2100, about 2.5x its solo time, the budget C59 runs on.
+    'P10_the_complete_second_orders_double_logarithm_is_not_covariant_up_to_the_scale_factors_equation_so_the_invariant_is_a_stated_limit.py': 2100,  # measured 834s alone, one thread (r7603); 1500 exceeded at four jobs (r7625)
     # r7513 (69), on the carry ledger's signature (an empty gate list, which is a kill and not a verdict) for two
     # receipts the scoped suite selected on P15 pushes: P15_the_fourth_parameter_... measures 737.9s standing alone
     # in the read index, so the 600s cap can never be met, and S36_... 496.5s, which four-way contention takes
