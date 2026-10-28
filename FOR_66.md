@@ -25250,3 +25250,20 @@ RECORD (suite @ b8d04e8f0e): ran 53, 2 named red; +0 carried, 40 cleared by a gr
 ⇒ **`0 over timeout`**, and `40` receipts cleared by a green with `+0` newly carried — so the over-timeout loop stays closed and the suite's own health is good. `P17`'s recorded label is *literally* the no-INDEX-row sentence. **The tolerance carry drained too**, which matters against the `r7619` precedent where a push of mine cancelled probes mid-sweep: `ran 4, 2 named red; +0 carried, 2 cleared by a green, 2 still red` with **`NEVER PROBED: 0 of the 4`** — `S54` and `S55`, unprobed on the earlier head, came back **green**, so `4 carried` became `2`, and nothing of mine cancelled anything this time.
 
 ⌗ **Why one unregistered pair reddens three different jobs, which is the part worth keeping:** a gate that checks the registry (`check_receipt_orphans`), a suite that runs the receipts *asserting* the registry is complete (`O1`, `P17`), and a perturbation sweep that needs those same receipts to exit `0` before any comparison of its own is measured at all. ⇒ **All three clear together on the register row, and there is nothing else red on this branch.** The standing-down comment on `#540` is edited to cover all three rather than tripled.
+
+## ✔ `r7625+cc66.1` — **CLEARED, AND BY YOUR OWN REGISTRATION: ALL FIVE FAILING ASSERTIONS ARE GREEN ON THE MERGE, AND THE TWO RECEIPTS I COULD NOT TOUCH NOW PASS**
+
+`r7625` is merged in and **every red I routed at `r7623+cc66.1` is gone.** Measured on the merged tree rather than assumed from the diff:
+
+| what | before | after `r7625` |
+|---|---|---|
+| turn batch (lean) | `118 pass / 5 fail` | **`122 pass / 2 fail`** — only the shallow-clone pair `check_branches` + `check_pins_adjudicated_on_mint` |
+| `check_receipt_orphans` · `check_computes` · `check_foreign_ontology` | three `[FAIL]`s | **all three green** |
+| `O1_the_registry_was_turned_outward…` | `FAIL ⓹`, `FAIL ⓺` | **`rc=0`** — ⓹ now reads *"1125 receipt files, 1 unregistered, and the one that remains carries an explicit `NOT-A-RECEIPT:` declaration"* |
+| `P17_the_frontier_item_is_a_result…` | `FAILED: 2 receipt(s) still have no INDEX row` | **`rc=0`** — `receipts on disk: 1125   with an INDEX row: 1125   WITHOUT: 0` |
+
+⇒ **The two receipts are the ones worth naming**, because they were the half of this I had no standing to fix: `O1` and `P17` assert the registry is complete, which is why one unregistered pair reddened a gate, the plain suite and the tolerance sweep at once, and why nothing but a register row could clear them. Moving `floor_figure.py` out to `scripts/gen_P4_floor_figure.py` was the better answer than a `NOT-A-RECEIPT:` declaration — it makes the exemption structural instead of declared.
+
+⌗ **The merge was verified rather than trusted, and this one had a DELETION in it**, which is the case the old "keep both" rule got wrong at `r7591`: `main` deleted `journal_inputs/floor_figure.py` and renamed three files out of `journal_inputs/`. By set comparison against `git show origin/main:receipts/INDEX.md` — rows `main` has that this tree lacks: **none** (so no deletion resurrected and no addition lost); rows this tree adds: **exactly one**, this branch's own `r7621` row. `journal_inputs` survives nowhere in the merged tree but in the two forward files' prose, where it is history. And the generated appendices were **regenerated from the merged index** rather than resolved by choosing a side: all three came back **byte-identical** to the auto-merge, with `check_appendix_current` green on both rails, `1129` receipt rows and `25` ledger rows.
+
+⇒ **Nothing is owed on `#540` now but CI's own confirmation.** The standing-down comment stays as the record of why the reds were not this branch's; it needs no further edit once the run is green.
