@@ -135,5 +135,84 @@
     "unmeasured": true
    }
   }
+ },
+ "claude/shadow-of-existence-setup-wgcmvt": {
+  "reads": {
+   "receipts/L271_the_statistics_bake/S3_the_exclusion_is_a_bound_against_a_bound.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40638964008",
+    "since": "793182519fd86008cbbb3d8c97e2c0eec2959a0a",
+    "unmeasured": true
+   },
+   "receipts/L557_the_correction_stopped_at_the_sentence/R1_the_correction_stopped_at_the_sentence_and_the_number_it_defines_was_left_behind.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40638964008",
+    "since": "793182519fd86008cbbb3d8c97e2c0eec2959a0a",
+    "unmeasured": true
+   },
+   "receipts/P04_modern_parallax/P04_redshift_isotropy_floor.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40638964008",
+    "since": "793182519fd86008cbbb3d8c97e2c0eec2959a0a",
+    "unmeasured": true
+   },
+   "receipts/P04_modern_parallax/P04_the_floor_exceeds_the_measured_temperature_spectrum_at_every_multipole_and_the_exclusion_moves_to_low_multipoles_only_at_large_smoothing.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40638964008",
+    "since": "793182519fd86008cbbb3d8c97e2c0eec2959a0a",
+    "unmeasured": true
+   },
+   "receipts/P04_modern_parallax/P04_the_timescape_model_falls_inside_the_hypothesis_because_its_clock_postulate_does_not_keep_the_differential_expansion_out_of_the_redshift.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40638964008",
+    "since": "793182519fd86008cbbb3d8c97e2c0eec2959a0a",
+    "unmeasured": true
+   },
+   "receipts/P04_modern_parallax/R2_the_papers_correlation_figures_are_the_ones_nothing_checked.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40638964008",
+    "since": "793182519fd86008cbbb3d8c97e2c0eec2959a0a",
+    "unmeasured": true
+   },
+   "receipts/P04_modern_parallax/R50_the_long_wavelength_bullet_reverses_for_the_observable_and_the_corner_is_three_parts_per_million.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40638964008",
+    "since": "793182519fd86008cbbb3d8c97e2c0eec2959a0a",
+    "unmeasured": true
+   },
+   "receipts/P13_boundary/P13_the_induced_coupling_route_does_not_engage_because_the_constructions_cutoff_lies_below_its_own_spectral_gap_and_no_modes_remain_to_integrate_out.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40638964008",
+    "since": "793182519fd86008cbbb3d8c97e2c0eec2959a0a",
+    "unmeasured": true
+   },
+   "receipts/P15_CR_cosmology/C16_the_transfer_is_six_eighths_built.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40638964008",
+    "since": "793182519fd86008cbbb3d8c97e2c0eec2959a0a",
+    "unmeasured": true
+   },
+   "receipts/P15_CR_cosmology/C22_the_end_to_end_number.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40638964008",
+    "since": "793182519fd86008cbbb3d8c97e2c0eec2959a0a",
+    "unmeasured": true
+   },
+   "receipts/P15_CR_cosmology/C27_the_number_bracketed.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40638964008",
+    "since": "793182519fd86008cbbb3d8c97e2c0eec2959a0a",
+    "unmeasured": true
+   },
+   "receipts/P15_CR_cosmology/C36_the_negative_is_the_envelope.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40638964008",
+    "since": "793182519fd86008cbbb3d8c97e2c0eec2959a0a",
+    "unmeasured": true
+   },
+   "receipts/P15_CR_cosmology/P15_on_the_instruments_own_exponent_the_signatures_sizes_move_and_its_shapes_do_not.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40638964008",
+    "since": "793182519fd86008cbbb3d8c97e2c0eec2959a0a",
+    "unmeasured": true
+   },
+   "receipts/P15_CR_cosmology/P15_the_damping_tail_data_now_reach_the_bar_and_lean_against_the_signature_without_deciding_it.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40638964008",
+    "since": "793182519fd86008cbbb3d8c97e2c0eec2959a0a",
+    "unmeasured": true
+   },
+   "receipts/P15_CR_cosmology/P15_the_tilt_off_the_tail_cannot_decide_the_signature_on_plancks_tail.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40638964008",
+    "since": "793182519fd86008cbbb3d8c97e2c0eec2959a0a",
+    "unmeasured": true
+   }
+  }
  }
 }
