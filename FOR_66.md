@@ -25267,3 +25267,33 @@ RECORD (suite @ b8d04e8f0e): ran 53, 2 named red; +0 carried, 40 cleared by a gr
 ⌗ **The merge was verified rather than trusted, and this one had a DELETION in it**, which is the case the old "keep both" rule got wrong at `r7591`: `main` deleted `journal_inputs/floor_figure.py` and renamed three files out of `journal_inputs/`. By set comparison against `git show origin/main:receipts/INDEX.md` — rows `main` has that this tree lacks: **none** (so no deletion resurrected and no addition lost); rows this tree adds: **exactly one**, this branch's own `r7621` row. `journal_inputs` survives nowhere in the merged tree but in the two forward files' prose, where it is history. And the generated appendices were **regenerated from the merged index** rather than resolved by choosing a side: all three came back **byte-identical** to the auto-merge, with `check_appendix_current` green on both rails, `1129` receipt rows and `25` ledger rows.
 
 ⇒ **Nothing is owed on `#540` now but CI's own confirmation.** The standing-down comment stays as the record of why the reds were not this branch's; it needs no further edit once the run is green.
+
+## ✔ `r7625+cc66.2` — **`#540` IS GREEN AND BOTH CARRIES ARE AT ZERO. AND A COST I CAUSED ALONG THE WAY, WITH THE RULE OF MINE THAT WAS WRONG**
+
+Run `8323` on `e4050ee9f` completed **`success`**, every one of its 12 jobs green or skipped. The two measurements worth having:
+
+```
+plain suite   417 pass, 0 fail, 0 over timeout, in 4937s wall
+              ran 417, the run passed; +0 carried, 412 cleared by a green, 0 still red; 0 carried after this push
+tolerance     build A: MEASURED -- 301 of 301 probed    build B: 301 of 301    build C: 301 of 301
+              VERDICT (both comparisons): CLEAN -- 0 flagged site(s) (1 and 5 at the precision floor, counted not flagged)
+              ran 301, the run passed; +0 carried, 294 cleared by a green, 0 still red; 0 carried after this push
+```
+
+⇒ **Both carry classes are drained to zero**, and `0 over timeout` on a `4937 s` suite is the first direct confirmation that your `r7625` budget bump was the right call: `82` minutes of wall over `417` receipts is precisely the four-job contention that broke `1500 s`, and nothing went over.
+
+### ⛔ AND THE COST, WHICH WAS MINE AND WHICH I HAD ALREADY BEEN TAUGHT ONCE
+
+Run `8318`, on the previous head, had a **328-receipt** tolerance sweep in flight. My two pushes killed it. Its own log:
+
+```
+build A: PARTIAL -- the probe was stopped from outside (its step was cancelled) -- 34 of 328 probed
+build B: PARTIAL -- ... 41 of 328 probed        build C: PARTIAL -- ... 36 of 328 probed
+ran 328, 0 named red, 294 NEVER PROBED; +292 carried, 0 cleared by a green, 2 still red
+```
+
+**No test failed there either** — both comparisons read `CLEAN`, `0 flagged`, `0 named red`. What it cost was `292` receipts back on the carry as `unmeasured`, and the `2 still red` were `O1` and `P17` listed *simultaneously* as `~ never probed`, so that was the held carry and not a verdict. ⇒ `8323` then re-probed and cleared all of it, which is the carry mechanism working exactly as advertised — **the loss was recoverable, and it was still a loss I paid for twice.**
+
+⌗ **The rule of mine that was wrong, stated so it does not recur:** I dismissed `8318` as *"a superseded head, its result wouldn't be authoritative anyway."* The first half was true and the second half does not follow. **The carry is shared state across heads, not per-`sha`** — a sweep on a superseded head is still draining the same ledger the next head inherits, so "superseded" is no reason at all to treat a running sweep as expendable. ⇒ The hold test takes the *sweep's* state, never the head's: hold while probes are running, whichever commit they are running on.
+
+⌗ *And on the third firing the hold was finally taken correctly: at `03:46` nothing of mine was uncommitted, no fix was waiting, `8323`'s probes were live — so I wrote nothing and pushed nothing until it finished, and this entry carries its verdict instead of cancelling it.*
