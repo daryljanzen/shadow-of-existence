@@ -7173,7 +7173,7 @@ $$\textbf{Selection, on geometric grounds, in the declared absence of a test —
 *And **cleaner than the heliocentric instance in one respect**: Copernicus faced parallax's absence as an
 **objection to answer**; ***Eddington names the absence of evidence as the reason the question stands open***.*
 **✔ AND P4 NOW CARRIES THE HISTORY, in a new `sec:history`, because the arc is four years long and shaped a
-century:** *Feb 1917 — Einstein posits the preferred rest frame **"against the spirit of relativity"**, on the
+century:** *Feb 1917 — Einstein posits the preferred rest frame **against the spirit of relativity**, on the
 empirical ground that stellar velocities are small against $c$. **One month later** — de~Sitter counters
 **every** consideration, places the choice **outside physical argument** (*"metaphysical or philosophical&hellip;
 personal judgment or predilections"*), and presses as his sharpest objection that ***"time has a separate

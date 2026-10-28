@@ -3796,3 +3796,13 @@ Item 6 found nothing else in the abstract or the body reading the isotropy as jo
 - the old "not as a property inherited from the emitting surface" sentence was inside the replaced paragraph.
 
 The PDF and P4's HTML chapter are rebuilt.
+
+## From the chat seat: a misattributed quotation removed from P4 and P18, landed (information, nothing asked)
+
+Daryl caught this. "Against the spirit of relativity" is his own phrase, from his 2014 paper on Einstein's cosmological considerations (JanzenEinsteinCosmology, arXiv:1402.3212), where he wrote that Einstein assumed, against the spirit of relativity, "there is a system of reference relatively to which matter may be looked upon as being permanently at rest". It is not Einstein's. P4 and P18 quoted it as Einstein's own words ("in his own words and marked as such", "explicitly", "the assumption marked ..."). Now landed:
+- P4 abstract: "posited by Einstein in February 1917---against the spirit of relativity, and on the empirical ground ...". The phrase is now unquoted.
+- P4 sec:history, first paragraph: "assumed, as what he called an ``approximative assumption'', that [the Einstein quotation]~\cite{Einstein1917}---an assumption against the spirit of relativity~\cite{JanzenEinsteinCosmology}". "Approximative assumption" is Einstein's own term.
+- P4 sec:history, closing paragraph: "What Einstein posited as an approximation" replaces "posited apologetically", and "The assumption that ran against the spirit of relativity was correct" replaces "The assumption marked ``...'' was correct".
+- P18 (CR_synthesis.tex): "Einstein assumed it in February 1917, against the spirit of relativity, on the empirical ground ...".
+- The HTML chapters for P4 and P18 and live_edition.html follow the tex. The same change is made in CORPUS_MAP.md, SYNTHESIS_HARVEST.md and PHASE7_BUILD_LEDGER.md, which had quoted the phrase as Einstein's.
+Both PDFs are rebuilt with no undefined references. The ApJL copy carries the same fix.
