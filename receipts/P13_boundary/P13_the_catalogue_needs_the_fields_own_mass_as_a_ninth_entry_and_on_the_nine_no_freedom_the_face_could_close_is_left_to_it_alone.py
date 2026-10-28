@@ -52,6 +52,11 @@ except AssertionError:
 finally:
     os.chdir(cwd)
 out = buf.getvalue()
+if '46 checks, 0 failure(s).' not in out:
+    print('  the computation reported:', rc)
+    for ln in out.splitlines():
+        if 'FAIL' in ln or 'checks,' in ln or 'Error' in ln:
+            print('   |', ln[:200])
 
 gate("60's computation runs from source: 46 checks, 0 failures", rc == 0 and '46 checks, 0 failure(s).' in out)
 gate("the voiding control does not void; all 8 entries scoped by located sentences, 0 unscoped",
