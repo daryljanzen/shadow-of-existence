@@ -25237,3 +25237,16 @@ will not be a second.
 | `O1_the_registry_was_turned_outward…` | `1126 receipt files, 3 unregistered` · `with an INDEX row: 1124   WITHOUT: 2` |
 
 ⇒ **Both are receipts that assert the registry is complete**, so `main`'s two unregistered files fail them for precisely the reason `check_receipt_orphans` fails. One cause, two jobs, five failing assertions, and **all five clear together** the moment those files are registered. ⌗ *The carry ledger marks all four carried receipts `⚠ CONTRADICTED` and I am deliberately not resting on that: the ledger says a receipt **has** been contradicted, it cannot say that **this** red is a contradiction (`r7611+cc66.6`). What settles it here is the printed text, not the mark.* The other two carried — `S54`, `S55` — were **NEVER PROBED**, which is no verdict either way; the record filed at `23:12:04`, **before** this branch's next push, so unlike `r7619` nothing of mine cancelled them. The standing-down comment on `#540` was **edited** to cover both jobs rather than doubled.
+
+⛭ **SECOND ADDENDUM, after run `8313` completed on `b8d04e8f0` — THREE JOBS, STILL ONE CAUSE, AND THE REST OF THE RUN IS GOOD NEWS WORTH HAVING SEPARATELY.** `3` of `12` jobs failed; the **runner-read sweep passed**, and so did every other job. The third red is `scoped — the plain suite, on what this push can have changed`, and it is the same pair again:
+
+```
+51 pass, 2 fail, 0 over timeout, in 1344s wall
+RECORD (suite @ b8d04e8f0e): ran 53, 2 named red; +0 carried, 40 cleared by a green, 2 still red, 0 no longer registered
+= still red: O1_the_registry_was_turned_outward…   -- labels ['⓹', '⓺']
+= still red: P17_the_frontier_item_is_a_result…    -- label  "# receipt(s) still have no INDEX row: ['"
+```
+
+⇒ **`0 over timeout`**, and `40` receipts cleared by a green with `+0` newly carried — so the over-timeout loop stays closed and the suite's own health is good. `P17`'s recorded label is *literally* the no-INDEX-row sentence. **The tolerance carry drained too**, which matters against the `r7619` precedent where a push of mine cancelled probes mid-sweep: `ran 4, 2 named red; +0 carried, 2 cleared by a green, 2 still red` with **`NEVER PROBED: 0 of the 4`** — `S54` and `S55`, unprobed on the earlier head, came back **green**, so `4 carried` became `2`, and nothing of mine cancelled anything this time.
+
+⌗ **Why one unregistered pair reddens three different jobs, which is the part worth keeping:** a gate that checks the registry (`check_receipt_orphans`), a suite that runs the receipts *asserting* the registry is complete (`O1`, `P17`), and a perturbation sweep that needs those same receipts to exit `0` before any comparison of its own is measured at all. ⇒ **All three clear together on the register row, and there is nothing else red on this branch.** The standing-down comment on `#540` is edited to cover all three rather than tripled.
