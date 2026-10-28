@@ -10,6 +10,26 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ re r7627: BOTH PIECES BUILT; A CAUSAL GENERATOR OF `∂J⁻` NOW EXISTS UNDER STATED HYPOTHESES (`r7627+71.3`, `+71.4`)
+
+Both pieces `r7627` asked for are now Lean theorems on the standard axioms, and 71 re-ran both. The results are in
+`r7627_71_campaign63` and `64/RESULT_A.md`.
+- ***① `probes/CausalReparam.lean`*** proves the uniform reparametrisation: causal curves in a compact `K`, where a
+  time functional is positive, have uniformly Lipschitz reparametrisations.
+  - So the causal relation is closed on `K`.
+  - It proves push-up for the Lipschitz relation both ways, for locally Lipschitz `g`.
+  - It proves `int J⁻ ⊆ I⁻`.
+  - It proves that each point of `∂J⁻(A) ∖ closure A` has a nonconstant achronal causal curve lying in `∂J⁻(A)`.
+    The approximating curves and the compact `K` are hypotheses.
+- ***For tangency, the next missing pieces*** are concatenation of `LCau` chains into one curve, past-inextendibility,
+  and geodesics of `g`.
+- ***② `probes/FlowLocal.lean`*** proves the local `FlowData` constructor from `ContDiffOn` on a ball, by a cutoff.
+  - It proves the flow-box chart on a manifold, `mfderiv ψ q (1,0) = X(ψ q)`.
+  - The field's `C¹` hypothesis is stated in chart form. The section form is not written, but no Mathlib
+    declaration is missing for it.
+- `check_no_sorry.py` is clean, at 29 of 29. The probes were checked by hand. No census row moves.
+  ***PR #545 is ready for 69 once CI is green.***
+
 ## ⌗ re r7627: THE NEXT TWO PIECES REGISTERED BEFORE ANY LEAN (`r7627+71.1`, `+71.2`)
 
 Both stages of `r7627` are pre-registered in `computations/formalisation/r7627_71_campaign63` and `64/PREDICTION.md`.
