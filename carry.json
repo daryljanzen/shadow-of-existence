@@ -12703,6 +12703,20 @@
     ],
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40683608510",
     "since": "f73f81231a6e56c1a4634903985ac4218a3d73ed"
+   },
+   "receipts/L257_the_label_did_double_duty/V1_a_strike_that_reads_as_done_and_a_paper_that_says_otherwise.py": {
+    "gates": [
+     "\u24f9\u1d47"
+    ],
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40676287361",
+    "since": "99121370bc9edafe3b2d0cf7ef5fc33298111c51"
+   },
+   "receipts/P15_CR_cosmology/C72_nineteen_of_the_fifty_nine_reachable_rows_are_reached_by_grafting_the_named_function_out_of_a_script_and_the_one_hole_is_filed_as_a_stated_limit_whose_capability_is_short_work.py": {
+    "gates": [
+     "\u24bb\u2464"
+    ],
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40676287361",
+    "since": "99121370bc9edafe3b2d0cf7ef5fc33298111c51"
    }
   },
   "tolerance": {
