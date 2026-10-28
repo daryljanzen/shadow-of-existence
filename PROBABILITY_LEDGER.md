@@ -67,7 +67,7 @@ sources: [chat]
 | **`P15`** | ⛭ **WORKED — the only paper with statistics, and it owes this field nothing** | `variance` ×19, of which **cosmic variance** dominates; `likelihood` ×26; the **Silk random walk**. *All correct, all the statistics bake's* |
 | **`P07`** · **`P09`** · **`p0`** | ⛭ **CHECKED-NEGATIVE, all three** | `covariance` in the general-covariance sense throughout; `p0`'s ×2 are the *"covariance-of-geometries reading"* |
 | **`P16`** | ⛭ **CHECKED-NEGATIVE** | One `Gaussian curvature`, one `random walk`, correctly cited |
-| **`P04`** | ⛭⛭ **WORKED — AND THE TERM-SIDE PASS HAD THIS WRONG, WHICH IS THE LEDGER'S MOST IMPORTANT ROW** | ⛔ *I first scored it CHECKED-NEGATIVE and wrote that **"`P04` returned empty on all six fields"**. **Both halves were wrong.*** *Its probability vocabulary really is near zero — `probability` ×0, `stochastic` ×0, `random` ×0, `variance` ×2 — **and its entire argument is the standard deviation of a path-integrated random field**: a floor $\sigma_{\mathrm{path}}\approx8.8\times10^{-3}$ summed over $N\approx1200$ independent cells, a correlation theorem that makes it a lower bound, the correlated value $1.6\times10^{-2}$ from the matter spectrum, and the across-sky scatter set against the single-ray variance.* ⇒ ***Every screen this bake ran scored it negative and would again. Only reading the abstract found it*** — which is `OVERNIGHT_FIELD_BAKE_WORK_ORDER.md` STEP 2, the step this campaign skipped. **`R2` landed** |
+| **`P04`** | ⛭⛭ **WORKED — AND THE TERM-SIDE PASS HAD THIS WRONG, WHICH IS THE LEDGER'S MOST IMPORTANT ROW** | ⛔ *I first scored it CHECKED-NEGATIVE and wrote that **"`P04` returned empty on all six fields"**. **Both halves were wrong.*** *Its probability vocabulary really is near zero — `probability` ×0, `stochastic` ×0, `random` ×0, `variance` ×2 — **and its entire argument is the standard deviation of a path-integrated random field**: a floor $\sigma_{\mathrm{path}}\approx8.9\times10^{-3}$ summed over $N\approx1200$ independent cells, a correlation theorem that makes it a lower bound, the correlated value $1.6\times10^{-2}$ from the matter spectrum, and the across-sky scatter set against the single-ray variance.* ⇒ ***Every screen this bake ran scored it negative and would again. Only reading the abstract found it*** — which is `OVERNIGHT_FIELD_BAKE_WORK_ORDER.md` STEP 2, the step this campaign skipped. **`R2` landed** |
 | **`P01`** · **`P02`** · **`P05`** · **`P06`** · **`P10`** · **`P11`** · **`P12`** · **`P13`** · **`P14`** | ⛭ **CHECKED-NEGATIVE, all nine** | *Screened on all sixteen field terms.* **No probabilistic content in any of them** |
 
 ---
@@ -248,7 +248,7 @@ value over the whole of it, lands on every direction alike, and **is removed wit
 | where the variance actually lives | *$kL$ from **73** (5%) to **870** (95%)* |
 
 ⇒ ***THE PAPER STATES THE BOUNDARY*** — *three parts per million of the variance, against a floor some
-**210** times the measured anisotropy: the single-ray variance is the across-sky scatter wherever the
+**220** times the measured anisotropy: the single-ray variance is the across-sky scatter wherever the
 variance lives, and the paper says where the two part.*
 
 ⛔ ***THE TWO CONTROLS, AND THE FIRST IS WHAT STOPS THIS BEING A MEASUREMENT OF THE GEOMETRY.***

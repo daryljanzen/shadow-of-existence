@@ -1,6 +1,9 @@
-"""P4's floor against Planck's MEASURED temperature spectrum, multipole by multipole, with every figure
-the paper prints pinned.  Inputs: CAMB on the Planck 2018 base-LCDM parameters, and the Planck 2018
-measured TT spectrum (planck_TT_full.txt: PR3 COM_PowerSpect_CMB-TT-full, l = 2..2508, D_l in muK^2).
+"""P4 sec:floor -- the floor against Planck's MEASURED temperature spectrum, multipole by multipole, with every
+floor figure the paper prints pinned.  Inputs: CAMB on the Planck 2018 base-LCDM parameters, and the Planck 2018
+measured TT spectrum (P04_floor_data/planck_TT_full.txt: PR3 COM_PowerSpect_CMB-TT-full, l = 2..2508, D_l in
+muK^2).  Computation by the chat seat 72 (the ApJ Letters copy); registered by 69 at r7625.
+RUN: python3 <this file>  (about 30 s).  With --write-curves it also rewrites P04_floor_data/floor_curves.npz,
+the figure's data; by default it writes nothing.
 
 Hypothesis: the expansion rate tracks the smoothed density, H_loc = H(1 - f delta_R/3).  Along a ray
   delta ln(1+z)(n) = - int dchi g(chi) delta_R,   g = a H f / (3c).
@@ -11,9 +14,9 @@ The comparator is the MEASURED spectrum (its rms over l = 2..2508 is 4.06e-5); l
 measured D_l (33 of them, all at high l) are where the measured power is consistent with zero and are
 left out of the minimum ratios, since there any positive prediction exceeds it.
 """
-import numpy as np, camb, os
+import numpy as np, camb, os, sys
 from scipy.integrate import simpson
-here = os.path.dirname(os.path.abspath(__file__))
+here = os.path.join(os.path.dirname(os.path.abspath(__file__)), "P04_floor_data")
 T0 = 2.7255e6; c = 299792.458
 pars = camb.set_params(H0=67.36, ombh2=0.02237, omch2=0.1200, ns=0.9649, As=2.1e-9, tau=0.0544,
                        WantTransfer=True, kmax=50)
@@ -66,6 +69,7 @@ r3, L3 = ratio[300][pos], L[pos]
 first_below = L3[r3 < 1][0]
 check("R=300: exceeds at every multipole up to l ~ 490", 480 <= first_below <= 500, f"first l below: {first_below}")
 check("R=300: by more than 60 up to l = 100", r3[L3 <= 100].min() > 60, f"{r3[L3 <= 100].min():.3g}")
-np.savez(os.path.join(here, "floor_curves.npz"), ells=np.unique(np.round(np.geomspace(2, 2500, 80)).astype(int)),
-         **{f"R{R}": Cl(np.unique(np.round(np.geomspace(2, 2500, 80)).astype(int)), float(R)) for R in (4, 8, 20)})
+if "--write-curves" in sys.argv:
+  np.savez(os.path.join(here, "floor_curves.npz"), ells=np.unique(np.round(np.geomspace(2, 2500, 80)).astype(int)),
+           **{f"R{R}": Cl(np.unique(np.round(np.geomspace(2, 2500, 80)).astype(int)), float(R)) for R in (4, 8, 20)})
 print("\nALL PASS" if ok else "\nFAILURES"); assert ok

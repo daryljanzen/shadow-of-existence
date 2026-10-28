@@ -23,7 +23,7 @@ exact for kL >> 1 and fails for kL << 1, and this probe measures both the bounda
 variance lies beyond it.  *Measured below on a BBKS CDM spectrum: the fraction of the single-ray
 variance coming from k < 1/L is 3.1e-6, and 95% of it sits between kL ~ 74 and kL ~ 709 -- deep inside
 the regime where the across-sky scatter and the single-ray variance agree to 2%.*  ** Against a floor
-some 210 times the measured anisotropy, a three-parts-per-million corner cannot move it. **
+some 220 times the measured anisotropy, a three-parts-per-million corner cannot move it. **
 
 ** WHAT IS MEASURED, and it is the OBSERVABLE rather than a proxy. **  *A Gaussian field is built
 as a sum of random plane waves with k drawn from a chosen band; sightlines are cast from one
@@ -192,7 +192,7 @@ if __name__ == '__main__':
     print()
     print('=' * 98)
     print('    => THE SINGLE-RAY VARIANCE AND THE ACROSS-SKY SCATTER AGREE for kL >~ 1 and part below it,')
-    print('       and below it lives 3 parts per million of the variance, against a floor some 210 times')
+    print('       and below it lives 3 parts per million of the variance, against a floor some 220 times')
     print('       the measured anisotropy.  The single-ray variance is the across-sky scatter.')
     print('=' * 98)
     if FAILS:

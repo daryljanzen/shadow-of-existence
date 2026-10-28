@@ -1,9 +1,11 @@
-"""Figure: angular power the matter-tracking hypothesis predicts, against Planck's measured TT spectrum."""
-import numpy as np, matplotlib
+"""P4 Figure fig:floor (written to corpus/fig_floor.pdf and .png): angular power the matter-tracking hypothesis predicts, against Planck's measured TT spectrum."""
+import os, numpy as np, matplotlib
 matplotlib.use("Agg"); import matplotlib.pyplot as plt
 T0 = 2.7255e6
-d = np.load("floor_curves.npz"); ells = d["ells"]
-obs = np.loadtxt("planck_TT_full.txt"); l, Dl, lo, hi = obs.T
+here = os.path.dirname(os.path.abspath(__file__))
+out = os.path.join(here, "..", "..", "..", "corpus", "fig_floor")
+d = np.load(os.path.join(here, "floor_curves.npz")); ells = d["ells"]
+obs = np.loadtxt(os.path.join(here, "planck_TT_full.txt")); l, Dl, lo, hi = obs.T
 fig, ax = plt.subplots(figsize=(6.4, 4.2))
 for R, ls in ((4, ":"), (8, "-"), (20, "--")):
     C = d[f"R{R}"]
@@ -16,5 +18,5 @@ ax.set_xlim(2, 2600); ax.set_ylim(1e-12, 1e-3)
 ax.set_xlabel(r"multipole $\ell$")
 ax.set_ylabel(r"$\ell(\ell+1)C_\ell/2\pi$  [$(\Delta T/T)^2$]")
 ax.legend(fontsize=8, loc="center left", bbox_to_anchor=(0.0, 0.5), frameon=False)
-fig.tight_layout(); fig.savefig("../fig_floor.pdf"); fig.savefig("../fig_floor.png", dpi=200)
+fig.tight_layout(); fig.savefig(out + ".pdf"); fig.savefig(out + ".png", dpi=200)
 print("ok")

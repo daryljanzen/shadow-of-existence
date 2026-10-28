@@ -12,7 +12,7 @@ correlations can only increase the variance of the accumulated redshift, and
 
 The paper's whole floor is the standard deviation of a sum of random contributions along a ray, so
 this is the statement that makes the uncorrelated value a lower bound rather than an estimate.  The
-size of the rise on the measured matter spectrum (8.8e-3 to 1.6e-2 at R = 8 h^-1 Mpc) is computed in
+size of the rise on the measured matter spectrum (8.9e-3 to 1.6e-2 at R = 8 h^-1 Mpc) is computed in
 `P04_redshift_isotropy_floor`; this probe checks the theorem the paper states for it.
 
 VERDICTS:
