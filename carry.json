@@ -7448,23 +7448,6 @@
   }
  },
  "main": {
-  "suite": {
-   "receipts/P15_CR_cosmology/P15_the_free_streaming_knob_is_common_to_both_arms_and_the_switch_sweep_finds_no_further_shadow.py": {
-    "gates": [
-     "the instrument reads sixty environment s"
-    ],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40761379791",
-    "since": "4d9199d09bafc6d8c0ab2640a1ac912d12c8b119"
-   },
-   "receipts/P15_CR_cosmology/P15_the_photon_family_crosses_the_leaves_at_unit_cosmic_time_rate_so_the_projections_distance_takes_the_stacking_rate_by_derivation.py": {
-    "gates": [
-     "#'s computation runs from source and it",
-     "the photon bundle's image is the constan"
-    ],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40771139683",
-    "since": "62546379bb72bdbe16fe86f3395dc056540bb640"
-   }
-  },
   "tolerance": {
    "receipts/P15_CR_cosmology/P15_the_free_streaming_knob_is_common_to_both_arms_and_the_switch_sweep_finds_no_further_shadow.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40761379791",
