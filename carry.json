@@ -3754,13 +3754,6 @@
   }
  },
  "main": {
-  "suite": {
-   "receipts/P10_canonical_time/P10_the_complete_second_orders_double_logarithm_is_not_covariant_up_to_the_scale_factors_equation_so_the_invariant_is_a_stated_limit.py": {
-    "gates": [],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40613510079",
-    "since": "ca6c0b9df2dc38ae3a663ab891a065f70ce38b4b"
-   }
-  },
   "tolerance": {
    "receipts/L559_the_registry_from_files_inward/O1_the_registry_was_turned_outward_and_the_arrow_still_pointed_one_way.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40595947226",
