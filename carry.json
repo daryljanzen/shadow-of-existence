@@ -3608,12 +3608,6 @@
   }
  },
  "claude/shadow-of-existence-setup-6awafl": {
-  "reads": {
-   "receipts/P13_boundary/P13_the_catalogue_needs_the_fields_own_mass_as_a_ninth_entry_and_on_the_nine_no_freedom_the_face_could_close_is_left_to_it_alone.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40699659862",
-    "since": "eb64487985a925671cce36b656051a0fc3e51965"
-   }
-  },
   "suite": {
    "receipts/L221_the_bridge/B35_the_continuation_is_cited_wrong.py": {
     "gates": [
