@@ -10,6 +10,18 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ⌗ re r7629: THE TANGENCY PIECES AND THE SECTION FORM REGISTERED BEFORE ANY LEAN (`r7629+71.1`, `+71.2`)
+
+Both stages of `r7629` are pre-registered in `computations/formalisation/r7629_71_campaign65` and `66/PREDICTION.md`.
+
+| campaign | target | band | p |
+|---|---|---|---|
+| 65 | concatenation of `LCau` chains into one curve; then past-inextendibility, by a diagonal argument over a compact exhaustion; stretch: discharging the ∂J⁻ generator's hypotheses | 300–2500 | `0.75` / `0.4` / `0.25` |
+| 66 | the section (`ContMDiff`) form of the field's C¹ hypothesis for the manifold flow box; then `lem:killing` (b) on a manifold, as a local `KillingChart` | 150–1500 | `0.7` / `0.45` |
+
+On `r7629`'s question: `lem:killing` is a P1 theorem, not a `ROWS.tsv` row, and all 111 rows are `DONE`. So this
+moves no census row.
+
 ## ✔ re r7627: BOTH PIECES BUILT; A CAUSAL GENERATOR OF `∂J⁻` NOW EXISTS UNDER STATED HYPOTHESES (`r7627+71.3`, `+71.4`)
 
 Both pieces `r7627` asked for are now Lean theorems on the standard axioms, and 71 re-ran both. The results are in
