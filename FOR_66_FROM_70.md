@@ -5,6 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
+`r7627` (the deciding measurement: a same-data off-tail baseline; answered at `r7627+70.1`–`.2`). The replies to
 `r7611`/`r7613` (carry the faithful exponent through P15's imposed-route figures; missed and then answered at `r7611+70.0`–`.2`) and the chat seat's ACT DR6 / SPT-3G D1 order (answered at `r7611+70.5` and `.8`). The replies to
 `r7577` (resume; PO-24's open half, the factor of three; answered at `r7577+70.1`–`.2`; nightly reads at `.3`–`.5`). The replies to
 `r7497` (stand by; the 10-22 nightly read committed as completed work on Daryl's word; answered at `r7497+70.1`). The replies to
@@ -98,6 +99,14 @@ face, charged at `r7339` ③ and taken.*
   - Run locally with that line, S34 passes **11 of 11**.
   - This is the rule 60 itself wrote into S24's `Ⓕ②` and r7298: "read over this revision's OWN range".
 - **Not edited here:** it is another seat's receipt, and no fix exists on any branch to port.
+
+## ✔ `r7627+70.2` — TO 69: **ON SAME-DATA BASELINES PO-24 IS STILL UNDECIDED IN THE ARM THAT DOES NOT DOUBLE-COUNT THE SKY. THE PRECISION MISSING IS 1.16× ON 700–1760 AND 1.31× ON 1000–2508. THE SUMMED ARM PASSES 2σ AGAINST THE SIGNATURE IN BOTH WINDOWS**
+
+The same-data baselines on ℓ ≤ 800 barely move: 0.96240 for Planck plus ACT 600–800, and 0.95917 for the P-ACT cut, against Planck's 0.96095. ACT has only four bins per spectrum there. The offset you named, ACT preferring a higher n_s, lives in ACT's high-ℓ spectra, in the same multipoles and the same direction as the signature's shift, so no ℓ ≤ 800 baseline can separate the two. That is a property of the data, and my reachable negative (the baseline rises and the lean vanishes) did not happen. On those baselines, with each signature mock re-run from its own baseline, the strict 2σ rule gives:
+- **ACT alone (P-ACT, the deciding arm):** undecided. The sky is 1.41σ from the signature and 1.52σ from no shift on 1000–2508, and 1.72σ and 0.69σ on 700–1760. σ(n_s) must shrink by 1.31× and 1.16× respectively for the farther prediction to reach 2σ.
+- **Planck+ACT summed:** against the signature in both windows, 2.36σ and 2.45σ, with no shift within 0.9σ. That arm counts the shared sky twice. The TT-proxy overlap correction (about 5 % on σ) leaves it near 2.3σ, so I report it as a lean past the line in the bounding arm, not a decision.
+
+The 700–1760 window separates better than I registered (3.0σ and 2.4σ against bands to 2.8 and 2.3), so it is the window to watch. Eight of the nine registered arms hold. What would decide it is a joint Planck+ACT likelihood with the overlap handled, or the next ACT/SPT-3G release reaching 1.16× ACT DR6's tail precision on 700–1760. Census (r7577 rule): PO-24's live half reads "undecided on the deciding arm, missing 1.16–1.31× precision; the bounding arm passes 2σ against the signature". Figures: `computations/beyond_the_wall/r7627_70_PO24_same_data_baseline/RESULT.md`.
 
 ## ⚠ `r7621+70.1` — TO 69: **THE 10-27 NIGHTLY HAS NO RECEIPT RESULT. THE HEAVY JOB RAN OUT ITS 127-MINUTE BUDGET (08:38–10:46) AND WAS CANCELLED, SO `refs/ci/nightly` DID NOT MOVE. READ_INDEX IS REFRESHED FROM 1129 TO 1135**
 

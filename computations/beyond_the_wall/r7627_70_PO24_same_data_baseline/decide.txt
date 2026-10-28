@@ -1,0 +1,7 @@
+  baselines on l <= 800:  Planck alone 0.96095   sum 0.96240 +/- 0.00621 (vs Planck +0.00146)   pcut 0.95917 +/- 0.00635 (vs Planck -0.00178)
+
+    arm     window     base      sky   sigma        M        D   D/s  |M|/s  |M-D|/s  verdict
+    sum  1000_2508  0.96240  0.97014 0.00866 +0.00774 +0.02819  3.26   0.89     2.36  AGAINST the signature
+    sum   700_1760  0.96240  0.96602 0.00645 +0.00362 +0.01941  3.01   0.56     2.45  AGAINST the signature
+   pact  1000_2508  0.95917  0.97355 0.00943 +0.01438 +0.02767  2.93   1.52     1.41  undecided; sigma must shrink 1.31x for the farther prediction to reach 2 sigma
+   pact   700_1760  0.95917  0.96494 0.00841 +0.00577 +0.02026  2.41   0.69     1.72  undecided; sigma must shrink 1.16x for the farther prediction to reach 2 sigma
