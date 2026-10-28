@@ -149,13 +149,13 @@ def main():
     #    the formula to the r the paper states, and the arithmetic above is labelled as the retired
     #    configuration's, which is what C16's repair (r6931+70.1) did for the same number. ***
     r_now = 0.992
-    at_lD = float(np.exp(-(r_now**2 - 1)))
+    at_lD = float(np.exp(-1.70 * (r_now**2 - 1)))   # r7627 (69): on the instrument's own exponent, as P15 now writes it
     check('⓷ the arithmetic above is at the RETIRED $r=1.082$ (the fitted-onset configuration); the '
-          'paper\'s no-free-parameter form now carries "$r=0.992$", a RISE of about two per cent at '
+          'paper\'s no-free-parameter form now carries "$r=0.992$", a RISE of about three per cent at '
           f'$\\ell_D$ -- recomputed here as {at_lD:.3f}',
           'The high-$\\ell$ consequence follows with no free parameter' in p15
-          and 'visibility function, $r=0.992$, it is a rise of about two per cent at $\\ell_{D}$' in p15
-          and abs(at_lD - 1.016) < 0.002)
+          and 'visibility function, $r=0.992$, it is a rise of about three per cent at $\\ell_{D}$' in p15
+          and abs(at_lD - 1.028) < 0.002)
 
     print()
     if FAILED:

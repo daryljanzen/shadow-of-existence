@@ -95,10 +95,10 @@ def main():
           len(_then) > 100000
           and 'with $r=\\theta_{D}/\\theta_{*}=1.082$' in _then
           and 'so the ratio is $0.84$ at $\\ell_{D}$' in _then)
-    check('⌗ and the envelope TODAY is the adjudicated one: "$r=0.992$, it is a rise of about two per '
+    check('⌗ and the envelope TODAY is the adjudicated one: "$r=0.992$, it is a rise of about three per '
           'cent at $\\ell_{D}$" -- so the estimate below explains the negative L-814 measured on the '
           'retired configuration, and is not a statement about the current one',
-          'visibility function, $r=0.992$, it is a rise of about two per cent at $\\ell_{D}$' in p15)
+          'visibility function, $r=0.992$, it is a rise of about three per cent at $\\ell_{D}$' in p15)
 
     # ⓶ the estimate
     r, lD = 1.0816, 1400.0   # ** RE-PINNED c54.223 (`L-557`) -- was 1.0926 **

@@ -153,17 +153,18 @@ def main():
     #    pin now binds the formula to its stated $r$ and the recomputation to the paper's stated
     #    size.  The 1.082 / 0.844 arithmetic is kept below as the value the paper carried then. ***
     r = 0.992          # ** RE-PINNED c54.223 (`L-557`) -- was 1.093; then 1.082; r6931+70.1: 0.992 **
-    ratio = float(np.exp(-(1.0**2) * (r**2 - 1)))
+    ALPHA = 1.70       # r7627 (69): P15's closed form carries the instrument's own exponent on the power
+    ratio = float(np.exp(-ALPHA * (1.0**2) * (r**2 - 1)))
     _then = float(np.exp(-(1.082**2 - 1)))
     check('⛭⛭⛭ ⓸ and a $C_\\ell$ ratio with no free parameter is already in the paper: '
-          '"$C_{\\ell}^{\\rm CR}/C_{\\ell}^{\\Lambda\\rm CDM}=\\exp[-(\\ell/\\ell_{D})^{2}(r^{2}-1)]$ with '
+          '"$C_{\\ell}^{\\rm CR}/C_{\\ell}^{\\Lambda\\rm CDM}=\\exp[-\\alpha(\\ell/\\ell_{D})^{2}(r^{2}-1)]$ with '
           '$r=\\theta_{D}/\\theta_{*}$", and at the visibility peak "$r=0.992$"',
           'The high-$\\ell$ consequence follows with no free parameter' in p15
           and 'with $r=\\theta_{D}/\\theta_{*}$' in p15
-          and 'visibility function, $r=0.992$, it is a rise of about two per cent at $\\ell_{D}$' in p15)
-    check(f'and recomputing it at $\\ell=\\ell_D$ gives {ratio:.3f} -- the paper\'s "rise of about two '
-          f'per cent" (at the retired $r=1.082$ it was {_then:.3f}, the old $0.84$)',
-          abs(ratio - 1.016) < 0.002 and abs(_then - 0.844) < 0.002)
+          and 'visibility function, $r=0.992$, it is a rise of about three per cent at $\\ell_{D}$' in p15)
+    check(f'and recomputing it at $\\ell=\\ell_D$ gives {ratio:.3f} -- the paper\'s "rise of about three '
+          f'per cent" on the instrument\'s exponent (at the retired $r=1.082$ it was {_then:.3f}, the old $0.84$)',
+          abs(ratio - 1.028) < 0.002 and abs(_then - 0.844) < 0.002)
 
     print()
     if FAILED:

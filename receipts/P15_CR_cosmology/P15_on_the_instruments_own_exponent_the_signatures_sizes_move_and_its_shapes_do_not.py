@@ -21,6 +21,8 @@ signature's exponent changed -- and every figure P15 prints from it is pinned ag
     reported: the collapse copy's recombination row exceeds a tenth per bin, its r^2-1 scaling loosens (linear to
     about 3 per cent, quadratic to 15), and the joint-fit route's agreement with C62's instrument-route tilt becomes
     18 per cent (26 per cent at the instrument's own r^2-1).  None of those is a figure P15 prints.
+COMPUTES: alpha = 1.70 (the exponent each faithful copy declares), l_D = 1951.9 (the instrument header's) and 1362 (the
+  joint-fit, absorber and tail receipts'), r = 0.9918, 1.0231, 1.082 and 1.0926, on the windows each figure names.
 INHERITED.  The measured Planck spectrum and the base the exponent-one receipts used; nothing re-fitted to favour either
 verdict.
 """
@@ -58,6 +60,12 @@ def run(script):
         os.chdir(cwd)
     return rc, buf.getvalue()
 
+
+# --- the exponent each copy runs on ---------------------------------------------------------------------------------
+_src = open(os.path.join(D, 'collapse_faithful.py')).read()
+_m = re.search(r'ALPHA, LF = ([\d.]+), ([\d.]+)', _src)
+gate("the faithful copies run on alpha = 1.70 at the instrument header's l_D = 1951.9",
+     _m is not None and abs(float(_m.group(1)) - 1.70) < 0.005 and abs(float(_m.group(2)) - 1951.9) < 0.05)
 
 # --- the collapse ---------------------------------------------------------------------------------------------------
 rc, out = run('collapse_faithful.py')
@@ -108,6 +116,37 @@ gate("tail: no window separates the predictions at 2 sigma; the nearest, 700-176
      and max(rows, key=lambda w: rows[w][6]) == '700_1760')
 gate("tail: all four windows sit 0.85-1.2 sigma from the signature's prediction",
      len(rows) == 4 and all(0.84 <= r[7] <= 1.23 for r in rows.values()))
+
+# --- every figure P15 prints beside this receipt, compared against the literal it prints --------------------------
+_, cout = run('collapse_faithful.py')
+_, jout = run('jointfit_faithful.py')
+_, aout = run('absorber_faithful.py')
+r_vis = float(re.search(r'^\s+visibility peak\s+[\d.]+\s+[\d.]+\s+([\d.]+)\s+[+-]', cout, re.M).group(1))
+r_rec = float(re.search(r'^\s+recombination\s+[\d.]+\s+[\d.]+\s+([\d.]+)\s+[+-]', cout, re.M).group(1))
+v_chi2, v_tilt = float(vis.group(1)), float(vis.group(6))
+c_chi2, c_tilt = float(rec.group(1)), float(rec.group(6))
+k_chi2, k_tilt = float(r1082.group(2)), float(r1082.group(1))
+r_k = float(re.search(r'^\s+(1\.08\d+)\s', cout, re.M).group(1))
+jf_bin = float(re.search(r'->\s+([\d.]+) \(with the tilt\)', jout).group(1))
+jf_share = float(re.search(r'([\d.]+)% absorbed', jout).group(1))
+jf_run = float(re.search(r'a factor of ([\d.]+) across windows', jout).group(1))
+jf_r = float(re.search(r'^R, LD = ([\d.]+), 1951\.9 / 1\.70', open(os.path.join(D, 'jointfit_faithful.py')).read(), re.M).group(1))   # the ratio the joint fit runs at, read from its source
+s30 = float(re.search(r'^\s+30\s+\S+\s+(\S+)', aout, re.M).group(1))
+s2508 = float(re.search(r'^\s+2508\s+\S+\s+(\S+)', aout, re.M).group(1))
+l_hit = int(re.search(r'faithful: the reported -0\.0304 equals dn_eff at l = (\d+)', aout).group(1))
+alpha = float(_m.group(1))
+gate("the printed figures, each within half its last printed digit",
+     abs(r_vis - 0.992) < 0.0005 and abs(r_vis - 0.9918) < 0.00005 and abs(r_rec - 1.023) < 0.0005
+     and abs(r_rec - 1.0231) < 0.00005 and abs(r_k - 1.082) < 0.0005 and abs(alpha - 1.70) < 0.005
+     and abs(v_chi2 - 6.5) < 0.05 and abs(v_tilt - 0.0065) < 0.00005
+     and abs(c_chi2 - 51) < 0.5 and abs(-c_tilt - 0.019) < 0.0005
+     and abs(k_chi2 - 618) < 0.5 and abs(-k_tilt - 0.070) < 0.0005
+     and abs(jf_bin - 1.062) < 0.0005 and abs(jf_bin - 1.06) < 0.005 and abs(jf_share - 69.6) < 0.05
+     and abs(jf_run - 6.2) < 0.05 and abs(jf_r - 1.0926) < 0.00005
+     and abs(-s30 - 0.0002) < 0.00005 and abs(-s2508 - 1.09) < 0.005 and l_hit == 419
+     and abs(d[3] - 0.022) < 0.0005 and abs(rows['700_1760'][6] - 1.65) < 0.005
+     and abs(min(r[7] for r in rows.values()) - 0.85) < 0.005 and abs(max(r[7] for r in rows.values()) - 1.2) < 0.05
+     and abs(d[8] - 1.44) < 0.005)
 
 bad = [n for n, ok in CHECKS if not ok]
 print(f"\n  {len(CHECKS)} checks, {len(CHECKS) - len(bad)} pass, {len(bad)} fail")

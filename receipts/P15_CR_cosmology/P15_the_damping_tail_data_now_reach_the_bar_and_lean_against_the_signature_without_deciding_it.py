@@ -74,7 +74,9 @@ gate("ACT alone: 0.9736 +/- 0.0094, 1.67 times Planck, shift +0.0269 at 2.85 sig
      round(a['n'], 4) == 0.9736 and round(a['s'], 4) == 0.0094 and round(a['x'], 2) == 1.67
      and round(a['D'], 4) == 0.0269 and round(a['sep'], 2) == 2.85 and round(a['from0'], 1) == 1.3
      and round(a['fromD'], 1) == 1.5)
-gate("both configurations clear the 1.44 bar; Planck alone does not", s_['x'] >= 1.44 and a['x'] >= 1.44 and p['x'] < 1.44)
+need = p['s'] / (p['D'] / 2)
+gate(f"the bar: deciding on Planck's tail needs {need:.2f} times its precision (1.44), and both ACT configurations clear it",
+     abs(need - 1.44) < 0.005 and s_['x'] >= need and a['x'] >= need and p['x'] < need)
 gate("with ACT the two predictions are separated by more than 2 sigma, and the sky decides neither at 2 sigma "
      "on the arm that does not double-count the sky",
      s_['sep'] > 2 and a['sep'] > 2 and a['from0'] < 2 and a['fromD'] < 2)

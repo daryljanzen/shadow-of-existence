@@ -164,7 +164,7 @@ def main():
           and 'larger by $8.2\\%$' in _at_r2755)
     check('⌗ and P15 today states the ratio at the common endpoint, "$r=0.992$" -- the bracket is of '
           'the retired fitted-onset figures, not of the current one',
-          'visibility function, $r=0.992$, it is a rise of about two per cent at $\\ell_{D}$' in p15
+          'visibility function, $r=0.992$, it is a rise of about three per cent at $\\ell_{D}$' in p15
           and 'larger by $8.2\\%$' not in p15)
 
     print()

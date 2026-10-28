@@ -225,12 +225,13 @@ def main():
           'derives", r = 0.992 at the visibility peak (a rise of about three and six per cent) and '
           '1.023 at a sharp cut (a fall of eight and sixteen), both as P15_the_signature_collapses computes '
           'them, and neither 1.093 nor 1.082 printed as `r`',
-          'with $r=\\theta_{D}/\\theta_{*}$---the same ratio the preceding\nparagraph derives'.replace('\n', ' ') in ' '.join(p15.split())
+          'with $r=\\theta_{D}/\\theta_{*}$---the same ratio the preceding paragraph derives' in p15
           and '$r=0.992$, it is a rise of about three per cent at $\\ell_{D}$ and six at' in p15
           and '$r=1.023$, turns it into a fall of eight and sixteen' in p15
           and '\\alpha=1.70$ the exponent the instrument' in p15
           and '$1.0231$' in _adj and '$0.9918$' in _adj
           and abs(R_VIS - 1) < 0.01
+          and abs(ALPHA - 1.70) < 0.005
           and abs(env[0] - 3) < 0.5 and abs(env[1] - 6) < 0.5
           and abs(env[2] + 8) < 0.5 and abs(env[3] + 16) < 0.5
           and 'r=\\theta_{D}/\\theta_{*}=1.082' not in p15 and '1.093' not in p15)
