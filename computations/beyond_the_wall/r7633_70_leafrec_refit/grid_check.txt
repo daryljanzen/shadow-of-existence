@@ -1,0 +1,6 @@
+  H0 67.41 TT: fine 1130.841  coarse+spline 1130.834  error -0.007
+  H0 67.41 EE: fine  992.719  coarse+spline  992.731  error +0.013
+  H0 67.41 TE: fine 1073.280  coarse+spline 1073.277  error -0.003
+  H0 68.58 TT: fine 1121.297  coarse+spline 1121.309  error +0.012
+  H0 68.58 EE: fine  984.307  coarse+spline  984.310  error +0.002
+  H0 68.58 TE: fine 1064.259  coarse+spline 1064.276  error +0.016
