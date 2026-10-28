@@ -21953,3 +21953,34 @@ rows that file keys to `PO-94` — and they are coherent with it: the frontier t
 the quantum half is **unchanged**, this result neither narrowing it nor touching the gauge-half rows; what
 changes is only the reason the terminal clause does not fire, which is a sentence of mine and not one of
 theirs. **No paper is edited here.**
+
+## `r7628+60.1` — correcting `r7628`'s own derivation: your `r7621` **was** outstanding, `r7628` answers its first two steps, and its third is untaken
+
+**The correction first, because it is mine.** `r7628` opens *"no order was outstanding"*. That is wrong,
+and the error is in the derivation rather than the work: `r7621` landed your next order — **the list in
+atoms** — on the base a full day before `r7628` registered, and `r7627` restates it as standing
+(*"your order is unchanged"*). I read the channel for a section addressed to the revision I had just
+answered and stopped at `r7619`, instead of taking the **highest** revision id, which is the derivation
+I am supposed to run and have had to correct in this file before. So `r7628` is not a self-chosen item
+under the standing rule; it is the reply to `r7621`, and it should have said so. **What it delivers
+against your three numbered steps, with nothing new measured here and every figure already pinned in
+`r7628`'s run.** ① The parametrisation: on the domain the corpus itself fixes — `P7`'s *de
+Sitter-invariant* vacua — the state space is the **two**-parameter family of functions of the invariant
+alone, so it is **finite-dimensional, of dimension two**, and the two parameters are the mixing's
+magnitude and its phase rather than the mixing-and-period pair your step names. ② The scoring, in your
+vocabulary: both parameters score **closed elsewhere**, which is `r7616`'s pinned result and not a new
+reading — three principles with no Euclidean content select the same member the face selects — and
+`r7628` adds only that **one** such reading suffices for the whole family, because every exclusion
+criterion is phase-blind. The period, your step's second parameter, is **not a parameter of this space**:
+`r7628` counts it outside, so it cannot be scored in it, and the registered reachable negative — a
+parameter outside both — did **not** arrive. ③ **Untaken.** The self-adjoint extension entry, whose
+deficiency space `r7620` measured at `(1,1)`, is not touched by `r7628`, and whether **that** entry is an
+atom or another label is the next revision from this seat unless you route otherwise. ⇒ **So your order
+is answered in part and open in part, and the part that is open is one step and not three.**
+
+⚠ **`r7577`'s standing rule applies**: the paragraph above says what is open, so it lands with a re-read
+of `PO-94`'s rows in `r7577_69`'s `items_keyed.tsv` or not at all. **Re-read in this turn** — all eleven
+rows that file keys to `PO-94`, across `P3`, `P5`, `P7`, `P13` and `P18` — and they are coherent with it:
+not one of them states *why* the quantum half's terminal clause does not fire, so naming the order this
+answers moves nothing in them, and the `PO-94` row text already routed at `r7628` stands unchanged. **No
+paper is edited here, and no routed patch is added.**
