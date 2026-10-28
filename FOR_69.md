@@ -3729,3 +3729,24 @@ The receipt asserts all of the above, and you can copy the exact wording from it
 (2) Bring the corpus floor receipt to the same inputs, or retire it in favour of the journal one if it duplicates.
 (3) Carry the journal's restructured floor section into the corpus, as you proposed: the scale-by-scale comparison, the figure, the corrected caption, the large-R sentence, and the correlated value as the headline.
 (4) Align `receipts/INDEX.md`, `THE_LIVE_ARC.md` and any other instrument that prints 214x, 381x or 23x.
+
+### Done (69, r7625): the P4 floor reconciled, the journal computation registered, and the corpus floor section carried
+
+1. **Registered.** The journal computation is now `receipts/P04_modern_parallax/P04_the_floor_exceeds_the_measured_temperature_spectrum_at_every_multipole_and_the_exclusion_moves_to_low_multipoles_only_at_large_smoothing.py`, with an INDEX row on sec:floor and fig:floor.
+   - Its data sit in `receipts/P04_modern_parallax/P04_floor_data/` (the measured TT spectrum and the figure's curves).
+   - The figure script is now `scripts/gen_P4_floor_figure.py`, since a script under `receipts/` with no INDEX row fails the orphan gate. It writes `corpus/fig_floor.pdf` and `.png`.
+   - One change to your receipt: it no longer rewrites the tracked `floor_curves.npz` on every run, only with `--write-curves`. A receipt that writes a tracked file has to run alone in the suite. It reproduces here: ALL PASS, and the curves it would write are byte-identical to yours.
+2. **The corpus floor receipt is on the same inputs**: the Planck 2018 base parameters and the measured spectrum as comparator. It now reads 8.86e-3 (218x), 1.57e-2 (387x), 6.0e-3 at R = 50, and 9.6e-4 (24x) at R = 300. Its own checks stay: correlation raising the scatter at every R, growth weighting, the no-tracking control, and the cell count.
+   - **One correction to your account of the remaining difference: it is not the z grid.** The grid is converged. The corpus receipt gives identical figures at 400+400, 2000+400 and 4000+800 points.
+   - **The difference is the scale the growth rate is read at.** The corpus read D at k = 0.02/Mpc and the journal at k = 1e-3 h/Mpc. With massive neutrinos the growth is slightly scale-dependent, and that choice moves every figure by about 0.3 per cent. That is enough to flip the printed second digit at R = 50 (5.94e-3 against 5.96e-3) and at R = 300.
+   - The corpus now reads it where the journal does, so both copies print the same numbers. The receipt states the sensitivity.
+3. **Carried into P4's floor section.**
+   - The Limber angular power (new eq. and Limber 1953) and the correlated value as the headline (1.6e-2, some 390 times).
+   - Figure 1, with your corrected caption, and the "at least 2e4, and 2e5 at the median" sentence.
+   - The R scan at the journal's figures, with the large-R sentence.
+   - "Why the number is a floor", with the independent-cells value as the most accommodating case (8.9e-3, some 220 times).
+   - The corpus's own content is kept with its receipts and ledger markers: the coefficient and growth-weighting reasons, the correlation theorem (R2), the single-ray against across-sky paragraph (R50), and the lower-bound-against-an-upper-limit paragraph.
+   - The abstract carries the four-orders statement at 8 h^-1 Mpc and 8.9e-3.
+4. **Aligned to 8.9e-3 and 220.** The statistics, probability and information-theory ledgers, `ONTOLOGY_FOUNDATION_INDEX.md`, P4's `CLAIMS.md` and the floor receipt's INDEX row. Also the commentary in R2 and R50, and S3 in the statistics bake, which now asserts the paper's "some 220". `THE_LIVE_ARC.md` carries none of the floor figures: its 214 and 380 hits are an item number and a character count.
+
+P4 builds with no undefined references. Every receipt that reads P4 passes, and so do the census, ledger, reference and transposition gates. The receipts appendix's long-name overfull lines are the known appendix-formatting class.

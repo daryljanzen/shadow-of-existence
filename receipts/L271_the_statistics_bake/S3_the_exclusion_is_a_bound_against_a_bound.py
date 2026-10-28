@@ -6,7 +6,7 @@ ROBUST. **
 LEVEL: NO RATE — inference structure on a stated comparison.
 
 THE FIELD'S QUESTION.  P04 excludes a matter-tracking expansion rate: light crossing independent cells
-  of uniform density, each expanding at its own rate, accumulates a redshift scatter of ~8.8e-3, against
+  of uniform density, each expanding at its own rate, accumulates a redshift scatter of ~8.9e-3, against
   a whole measured CMB anisotropy of 4.1e-5.  A statistician's first move is that a RATIO OF POINT
   ESTIMATES is not an exclusion -- it carries no error model and no direction.
   ** The probe is that attack.  It bounces, and the reason it bounces is the finding. **
@@ -20,7 +20,7 @@ WHAT P04 ACTUALLY DOES.  Its receipt establishes the uncorrelated value as a FLO
   ** LOWER BOUND AGAINST UPPER LIMIT.  Every free choice in the calculation pushes the two FURTHER
   apart, so the exclusion cannot be weakened by a different estimate -- only by a different physical
   claim.  That is the strongest form an exclusion of this kind can take. **  The paper says so, with the
-  robustness factor: the sky would have to be some 210 times more anisotropic for the floor to reach it.
+  robustness factor: the sky would have to be some 220 times more anisotropic for the floor to reach it.
 
 AND THE TEST CAN FAIL.  The null is PRODUCED, three ways:
   (1) THE COUPLING IS DIFFERENTIATED OUT OF THE LAW, not assigned.  Each expansion law is written as
@@ -72,7 +72,7 @@ print("     LOWER BOUND on the predicted scatter, not a point estimate. **")
 
 print(f"\n  measured anisotropy, whole sky : {rms:.2e}   (an UPPER LIMIT on any redshift scatter)")
 ratio = floor / rms
-print(f"  ratio                          : {ratio:.0f}   -- the paper's 'some 210'")
+print(f"  ratio                          : {ratio:.0f}   -- the paper's 'some 220'")
 assert 200 < ratio < 225
 print("  ** VERDICT 2: LOWER BOUND against UPPER LIMIT.  Every free choice pushes the two")
 print("     further apart, so the exclusion cannot be weakened by a different estimate --")
@@ -140,7 +140,7 @@ print("\n  robustness factor:")
 for tgt, lbl in [(100, "two orders"), (10, "one order"), (1, "no exclusion at all")]:
     need = floor / tgt
     print(f"      to weaken the ratio to {tgt:>4} ({lbl:19s}): the measured anisotropy must be {need/rms:>5.1f}x larger")
-assert abs(floor / rms - 214) < 6, "the paper's 'some 210 times more anisotropic'"
+assert round(floor / rms, -1) == 220, "the paper's 'some 220 times more anisotropic'"
 
 print("\n" + "=" * 78)
 print("  ALL PASS")

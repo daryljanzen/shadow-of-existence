@@ -1012,3 +1012,9 @@ standing by, no formalisation row being open.
   - Its clock postulate does not keep the difference out of the redshift. A photon gains H_v or H_w per unit of volume-average time, so the mean reproduces the model's own redshift relation, and independent void/wall cells scatter ln(1+z) by 2.4e-2 to 5.4e-2, 600 to 1300 times the measured anisotropy.
   - Timescape therefore falls inside the hypothesis the floor excludes.
   - Receipt `P04_the_timescape_model_falls_inside_the_hypothesis_because_its_clock_postulate_does_not_keep_the_differential_expansion_out_of_the_redshift`.
+- P4's floor reconciled with the journal copy (r7625, on Daryl's direction; the per-multipole computation the chat seat 72's).
+  - The floor is now stated against Planck's measured temperature spectrum, multipole by multipole: the Limber angular power of a matter-tracking expansion exceeds the measured power at every multipole from l = 2 to 2500 by at least 2e4 at 8 h^-1 Mpc.
+  - At large smoothing the exclusion moves to the low multipoles.
+  - The correlated value (1.6e-2, some 390 times the measured anisotropy) is the headline, and independent cells (8.9e-3, some 220 times) the most accommodating case.
+  - Both copies use the same inputs: the Planck 2018 base parameters, the measured spectrum as comparator, and the growth rate read on large scales.
+  - Receipt `P04_the_floor_exceeds_the_measured_temperature_spectrum_at_every_multipole_and_the_exclusion_moves_to_low_multipoles_only_at_large_smoothing`.

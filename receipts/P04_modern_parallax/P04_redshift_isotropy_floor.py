@@ -1,20 +1,20 @@
 """
 P04_redshift_isotropy_floor.py -- verifies: the redshift-isotropy floor a matter-tracking expansion would
   produce. Light crossing independent cells of uniform density, each of comoving length R = 8 h^-1 Mpc and
-  expanding at its own rate H(1 - f delta_R/3), accumulates a redshift scatter sigma_path ~ 8.8e-3; with the
+  expanding at its own rate H(1 - f delta_R/3), accumulates a redshift scatter sigma_path ~ 8.9e-3; with the
   correlations of the matter field along the ray it is ~1.6e-2.  Both exceed the rms of the whole measured
-  CMB temperature anisotropy (4.1e-5) by more than two orders of magnitude.  [P4 modern_parallax sec:floor]
+  CMB temperature anisotropy (4.1e-5, from the measured Planck 2018 TT spectrum) by more than two orders of magnitude.  [P4 modern_parallax sec:floor]
 STATUS: ✔✔   RUN: python3 P04_redshift_isotropy_floor.py   RUNTIME: ~30s
-COMPUTES: the Planck 2018 base-LCDM linear matter spectrum with CAMB (sigma_8 = 0.811, z_* = 1089.9); the
+COMPUTES: the Planck 2018 base-LCDM linear matter spectrum with CAMB (H0 67.36, ombh2 0.02237, omch2 0.1200,
+  ns 0.9649, As 2.1e-9; sigma_8 = 0.811, z_* = 1089.9); the
   growth rate f from the same spectrum; g = a H f / 3 from the separate-universe rate; the uncorrelated floor
   sigma_path^2 = int dchi g^2 R sigma_R^2(z) and the correlated value int dchi g^2 (1/2pi) int dk k P_R, for
-  R = 4..300 h^-1 Mpc; the cell count chi_*/R; the rms of the CAMB temperature spectrum over l = 2..2508; the
-  ratios.  GENUINE-FLOOR checks: the correlated value exceeds the uncorrelated one at every R (correlation
+  R = 4..300 h^-1 Mpc; the cell count chi_*/R; the rms of the MEASURED Planck 2018 temperature spectrum over
+  l = 2..2508 (P04_floor_data/planck_TT_full.txt), the comparator the paper names; the ratios.  GENUINE-FLOOR checks: the correlated value exceeds the uncorrelated one at every R (correlation
   leaves fewer independent cells); holding sigma_R at its present value along the path (no growth
   weighting) raises the floor nearly tenfold.  CONTROL: a rate that does not track the density (f -> 0 in g) gives zero.
 BOUND: the linear separate-universe rate H_loc = H(1 - f delta/3), derived here from delta a/a = -delta/3, is
-  taken as the hypothesis; the temperature rms is that of the Planck 2018 best-fit spectrum, which fits the
-  measured spectrum.
+  taken as the hypothesis.
 """
 import numpy as np
 import sympy as sp
@@ -37,13 +37,13 @@ ok &= check("H_loc - H = -(1/3) f H delta  (delta-dot = f H delta)",
 
 # Planck 2018 base-LCDM
 p = camb.CAMBparams()
-p.set_cosmology(H0=67.32, ombh2=0.02238, omch2=0.1201, tau=0.0544, mnu=0.06)
-p.InitPower.set_params(As=2.101e-9, ns=0.9660)
+p.set_cosmology(H0=67.36, ombh2=0.02237, omch2=0.1200, tau=0.0544, mnu=0.06)   # Planck 2018 base-LCDM
+p.InitPower.set_params(As=2.1e-9, ns=0.9649)
 p.set_for_lmax(2600, lens_potential_accuracy=0)
 zs = np.concatenate([np.linspace(0, 10, 101), np.geomspace(10.5, 1100, 60)])
 p.set_matter_power(redshifts=zs[::-1], kmax=50.0, nonlinear=False)
 r = camb.get_results(p)
-h = 0.6732
+h = 0.6736
 PK = r.get_matter_power_interpolator(nonlinear=False, hubble_units=False, k_hunit=False)
 s8 = float(r.get_sigma8_0()); zstar = r.get_derived_params()['zstar']
 ok &= check(f"sigma_8 = {s8:.3f} ~ 0.811, z_* = {zstar:.1f} ~ 1089.9", abs(s8 - 0.811) < 0.005 and abs(zstar - 1089.9) < 0.5)
@@ -52,7 +52,10 @@ k = np.geomspace(1e-4, 50, 4000)
 W = lambda x: 3*(np.sin(x) - x*np.cos(x))/x**3
 zg = np.concatenate([np.linspace(0, 10, 400), np.geomspace(10.01, zstar, 400)])
 chi = r.comoving_radial_distance(zg); H = r.hubble_parameter(zg)/2.99792458e5; a = 1/(1 + zg)
-D = np.sqrt(PK.P(zg, 0.02)); f = -np.gradient(np.log(D), np.log(1 + zg))
+# the growth rate is read on large scales, k = 1e-3 h/Mpc, as in the journal copy's computation; with massive
+# neutrinos the growth is slightly scale-dependent, and reading it at k = 0.02/Mpc instead moves every figure by
+# ~0.3 per cent (5.94e-3 rather than 5.96e-3 at R = 50), enough to flip a printed second digit and nothing more.
+D = np.sqrt(PK.P(zg, 1e-3*h)); f = -np.gradient(np.log(D), np.log(1 + zg))
 g = a*H*f/3
 
 def floors(Rh, growth=True):
@@ -63,25 +66,27 @@ def floors(Rh, growth=True):
     cor = np.sqrt(simpson(g**2*lin, x=chi))
     return unc, cor, chi[-1]/R
 
-L = np.arange(2, 2509)
-TT = r.get_cmb_power_spectra(p, CMB_unit=None, raw_cl=True)['total'][:, 0]
-rms = np.sqrt(np.sum((2*L + 1)*TT[L])/(4*np.pi))
-ok &= check(f"rms of the temperature anisotropy, l = 2..2508: {rms:.3e} ~ 4.1e-5", abs(rms - 4.13e-5) < 0.03e-5)
+# the comparator is the MEASURED spectrum (Planck 2018 PR3 TT, l = 2..2508), the whole measured anisotropy
+import os
+_obs = np.loadtxt(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'P04_floor_data', 'planck_TT_full.txt'))
+_l, _Dl = _obs[:, 0], _obs[:, 1]
+rms = np.sqrt(np.sum((2*_l + 1)/(4*np.pi)*2*np.pi*_Dl/(_l*(_l + 1))/2.7255e6**2))
+ok &= check(f"rms of the MEASURED temperature anisotropy, l = 2..2508: {rms:.3e} ~ 4.1e-5", abs(rms - 4.06e-5) < 0.02e-5)
 
 res = {Rh: floors(Rh) for Rh in (4, 8, 20, 50, 100, 300)}
 for Rh, (u, c, n) in res.items():
     print(f"    R = {Rh:3d} h^-1 Mpc:  uncorrelated {u:.2e}   correlated {c:.2e}   cells {n:5.0f}   corr/rms {c/rms:6.0f}")
 u8, c8, n8 = res[8]
-ok &= check(f"uncorrelated floor at R=8: {u8:.2e} ~ 8.8e-3 over {n8:.0f} ~ 1200 cells", abs(u8 - 8.8e-3) < 0.1e-3 and abs(n8 - 1200) < 60)
+ok &= check(f"uncorrelated floor at R=8: {u8:.2e} ~ 8.9e-3 over {n8:.0f} ~ 1200 cells", abs(u8 - 8.86e-3) < 0.05e-3 and abs(n8 - 1200) < 60)
 ok &= check(f"correlated value at R=8: {c8:.2e} ~ 1.6e-2", abs(c8 - 1.6e-2) < 0.05e-2)
-ok &= check(f"floor / measured rms = {u8/rms:.0f} ~ 210; correlated / rms = {c8/rms:.0f} ~ 380",
-            abs(u8/rms - 214) < 6 and abs(c8/rms - 381) < 6)
+ok &= check(f"floor / measured rms = {u8/rms:.0f} ~ 220; correlated / rms = {c8/rms:.0f} ~ 390",
+            round(u8/rms, -1) == 220 and round(c8/rms, -1) == 390)
 ok &= check(f"uncorrelated 6.8e-3 at R=20, 2.6e-3 at R=100: {res[20][0]:.2e}, {res[100][0]:.2e}",
             abs(res[20][0] - 6.8e-3) < 0.1e-3 and abs(res[100][0] - 2.6e-3) < 0.1e-3)
-want = {4: 1.9e-2, 20: 1.1e-2, 50: 5.9e-3, 100: 3.3e-3, 300: 9.5e-4}
-ok &= check("correlated R scan: 1.9e-2, 1.1e-2, 5.9e-3, 3.3e-3, 9.5e-4 at R = 4, 20, 50, 100, 300 (two figures)",
+want = {4: 1.9e-2, 20: 1.1e-2, 50: 6.0e-3, 100: 3.3e-3, 300: 9.6e-4}
+ok &= check("correlated R scan: 1.9e-2, 1.1e-2, 6.0e-3, 3.3e-3, 9.6e-4 at R = 4, 20, 50, 100, 300 (two figures)",
             all(abs(res[R][1] - v) <= 0.05*10**np.floor(np.log10(v)) + 1e-12 for R, v in want.items()))
-ok &= check(f"at R = 300 the correlated value is {res[300][1]/rms:.0f} ~ 23 times the measured rms", abs(res[300][1]/rms - 23) < 1.0)
+ok &= check(f"at R = 300 the correlated value is {res[300][1]/rms:.0f} ~ 24 times the measured rms", round(res[300][1]/rms) == 24)
 # genuine floor
 ok &= check("GENUINE FLOOR: correlation raises the scatter at every R", all(c > u for u, c, _ in res.values()))
 u8_const, _, _ = floors(8, growth=False)
@@ -99,7 +104,7 @@ print("=" * 70)
 
 # --- ASSERTIONS -------------------------------------------------------------------------------
 assert ok, "P04 isotropy floor: at least one floor/exclusion check FAILED"
-assert abs(u8 - 8.8e-3) < 0.1e-3 and abs(c8 - 1.6e-2) < 0.05e-2
-assert abs(rms - 4.13e-5) < 0.03e-5
-assert 205 < u8/rms < 220 and 375 < c8/rms < 390
+assert abs(u8 - 8.86e-3) < 0.05e-3 and abs(c8 - 1.6e-2) < 0.05e-2
+assert abs(rms - 4.06e-5) < 0.02e-5
+assert 215 < u8/rms < 225 and 385 < c8/rms < 395
 assert u8_const > 9*u8
