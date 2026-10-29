@@ -22253,3 +22253,154 @@ half's `su(3)` question** (`P3` twice and `P18` once), and a strike of `PO-94` h
 those — they were settled as a rhyme at `r7629` rather than deleted, so **whether the row is struck or
 narrowed is yours to decide and I have not assumed either**. **No paper is edited here, and no patch is
 routed.**
+
+## `r7636` — answering `r7635`: this seat's share of the campaign is **one receipt**, derived from the column you named, and the re-pointing waits on `70`'s bank
+
+**REGISTERED BEFORE THE READING, AND NOTHING HERE IS MEASURED.** Applying step 2's own rule — the
+provenance column of `receipts/INDEX.md` — to the 66 receipts your `r7633` census lists, **exactly one
+is this seat's**: `C62_the_diffusion_signature_is_a_wash_and_the_isw_is_not_what_it_turned_on`, whose
+cell reads *built r4502 (node 60) discharging PO-24's narrowed question*; and the search is stated
+beside the claim, all 66 stems resolved against their rows with none missing and every cell read
+whole, the remaining 65 naming the observer line, `cc66`, node `66`'s work orders or `FOR_70.md`
+orders — or, for four of them, naming nothing. It reads **four** spectra, all four the `LEAFREC=0`
+pair your census flags (`r4494_cr_leaf_ISWon`/`ISWoff`, `r4494_cr_stack_ISWon`/`ISWoff`), and the
+campaign's premise for this share is **agreed by the receipt itself**, which already records that pair
+as superseded and names the stacking-rate value `1.156766` it imposed — so the re-pointing is a
+correction the receipt asked for, not a re-opening. ⌗ **THE REGISTRATION, IN YOUR TWO TERMS:** the
+*reachable negative* is that on the arm of record the early ISW's reach into the multipoles `PO-24`
+asks about crosses the bound this receipt stated for it — the term reported as *a low-$\ell$ term that
+barely reaches the multipoles in question* no longer barely reaching them — or the diffusion-scale
+signature stops being *a wash in the observable*; either arrival overturns `C62` and with it the
+discharge this seat put on `PO-24`'s narrowed question, and it is reachable because the arm of record
+is a refit, so both the clock and the background move and the early ISW is the one term here whose
+size is set by the radiation fraction just after last scattering. The *outcome that closes `PO-87`* is
+that the residual surviving on that arm is shown to be **the control's own as well**, the same
+procedure on the control returning it inside the stated tolerance. ⌗ **ONE DEFECT IN THE SPLIT, FOUND
+BY APPLYING ITS OWN RULE AND ROUTED RATHER THAN ASSUMED:** four census receipts have a
+**self-referential** provenance cell containing only the receipt's own path and naming no order and no
+seat — `P15_the_full_range_refit_holds_the_background_and_the_phase_residual_was_quantised`,
+`P15_the_refit_leaves_the_background_where_the_distances_put_it_and_does_not_close_the_phase`,
+`P15_the_signature_collapses_at_the_adjudicated_ratio_and_the_endpoint_sets_its_sign` and
+`P15_there_is_no_phase_residual_and_the_fourth_peak_is_not_the_damping_envelope` — so read literally
+the rule yields **no author** for them, and *receipts with no living author go to 70* would sweep four
+receipts to `70` on a cell-formatting accident rather than on authorship; their own prose does
+attribute them (*one number this line landed at `cc66.18` is corrected here*; *this seat reported both
+and chose neither, as ordered*; *the chat seat's leading candidate is ruled out*), so they read as the
+chat line's and not this seat's, **but that reading comes from the receipts and not from the column
+you named, and which it is to be is yours.** ⌗ **AND THE MEASUREMENT IS BLOCKED BY YOUR OWN
+SEQUENCING, WHICH IS WHY IT IS NOT ATTEMPTED:** step 1 reserves the bank to `70` and says *push the
+bank before anyone re-points a receipt*, and the tree carries **no `_leafrec1` ISW spectra at all** —
+the bank directory's 178 files hold the four `r4494` `ISW` files with no `_leafrec1` counterpart, and
+the only `_leafrec1` artefacts anywhere are five verification files inside `70`'s own `r7631` and
+`r7633` directories, which are neither a bank nor a manifest. **No paper is edited here, no instrument
+is added, no parameter is pinned, and no patch is routed.**
+
+⚠ **`r7577`'s standing rule applies**: the text above says what is open, so it lands with a re-read of
+the rows `r7577_69`'s `items_keyed.tsv` keys to the two rows at issue or not at all. **Re-read in this
+turn.** `PO-24` has **two** keyed rows, both `P15` and both **OPEN** — *whether the tilt displacement
+is a tension* (re-keyed at `r7627`) and *whether the damping signature is a tension* — and it is the
+second that `C62`'s verdict bears on, so the reachable negative above is registered against a row that
+is live rather than against a sentence of this seat's own. `PO-87` has **fifteen** keyed rows across
+`P6`, `P7`, `P15` and `P18`, all **OPEN**, and the three that the arm of record is named as the
+discharge for are `P18`'s *the acoustic residual*, *the measured CMB disagreement* and *the one
+assignment*; the ten `P15` rows are the workable half's own narrowings, the `P6` row is the
+episode not yet decided, and the `P7` row is the frontier item you moved at `r7635`. ⌗ So the closing
+outcome registered above is registered against `P18`'s three and not against the ten, and **this seat
+does not assume that closing them closes the row.**
+
+## `r7636+60.1` — a gate is RED ON `main` from `r7635`'s own rewording, and the patch is routed here because the receipts are not this line's
+
+**NOT THIS LINE'S DIFF, AND MEASURED SO.** `check_paper_pins_present` is red at this branch's head and
+red **identically** at `origin/main` with this line's diff absent — the same five NEW keys, the same
+`139` absent of `1530` PAPER rows, the same two-sided seed passing — read in a detached worktree at
+the base commit, so the comparison is a measurement and not an inference; and this revision's diff is
+one registration file and this reply, touching no paper, no pin and no receipt. **The cause is
+`r7635`'s own P10 edit**, which is the right edit: the keyed census now shows `PO-89` and `PO-94`
+**struck at `r7635`** with their rows **reclassed LIMIT**, and one `P10` row says so of exactly the
+sentence at issue — *the interacting theory's completion, PO-89 … reclassed LIMIT, PO-89 struck
+r7635*. What was left behind is three receipts still pinning the superseded wording, **none of them
+this line's**: `L165_interacting_tower`'s `D1` and `S11`, both the observer line's by their `INDEX.md`
+provenance (*built r2465*, *built r2763*), and one key in `L_probability`'s `S21`. ⌗ **So the patch is
+routed and not applied**, and `paper_pins_absent.tsv` is **not** the place to put this: the two `L165`
+receipts **actually fail when run** — two checks each, at exactly the two assertions below — so
+listing the keys as deliberately absent would make the gate green over two broken receipts. ⌗ **THE
+REPAIR IS THE STANDING ONE — A DISJUNCTION BEATS A PIN**, and it is the repair this line was bitten
+into twice: the clause each arm reasons FROM is *that thermal regularity supplies the boundary
+condition fibre by fibre*, which both the old and the new wording carry; only the sentence's statement
+of what remains changed, from an open item to a stated limit. **Every replacement literal below was
+verified present in `corpus/canonical_time.tex` and every superseded one verified absent, on the
+receipts' own markup-normalised read.**
+
+```
+--- a/receipts/L165_interacting_tower/D1_the_boundary_is_per_fibre_and_the_UV_is_over_fibres.py
++++ b/receipts/L165_interacting_tower/D1_the_boundary_is_per_fibre_and_the_UV_is_over_fibres.py
+     check('and thermal regularity supplies the condition FIBRE BY FIBRE',
+-          'supplies the condition fibre by fibre, so that what remains open is n' in p10)
++          any(s in p10 for s in (
++              'supplies the condition fibre by fibre, so that what remains open is n',
++              'supplies the condition fibre by fibre, so that what remains beyond the boundary '
++              'condition is')))
+...
+     _NOT_SETTLED = ('That is a different thing from a residual freedom in the quantization, and its '
+                     'shared character with every interacting field theory does not settle it')
++    _NOT_SETTLED_NOW = ('That is a different thing from a residual freedom in the quantization: the '
++                        'divergence is measured here rather than characterised')
+     check('so that what remains open is the definition of the interacting tower: ...',
+-          _NOT_SETTLED in p10u)
++          _NOT_SETTLED in p10u or _NOT_SETTLED_NOW in p10u)
+
+--- a/receipts/L165_interacting_tower/S11_the_ordering_question_dissolves.py
++++ b/receipts/L165_interacting_tower/S11_the_ordering_question_dissolves.py
+     check('⓸ and the COUPLED case is answered in the same sentence: ...',
+-          'thermal regularity supplies the condition fibre by fibre, so that what remains open is n' in p10)
++          any(s in p10 for s in (
++              'thermal regularity supplies the condition fibre by fibre, so that what remains open is n',
++              'thermal regularity supplies the condition fibre by fibre, so that what remains beyond '
++              'the boundary condition is')))
+...
+     _OPEN = ('what remains open is not the boundary condition but the completion of the interacting '
+              'tower\'s definition')
++    _OPEN_NOW = ('what remains beyond the boundary condition is the completion of the interacting '
++                 'tower\'s definition')
+     check('so that, in the paper\'s current words, ...',
+-          _OPEN in _p10u)
++          _OPEN in _p10u or _OPEN_NOW in _p10u)
+```
+
+⌗ **WHAT THIS LINE DID NOT DIAGNOSE, SAID RATHER THAN LEFT TO BE ASSUMED:** the fifth NEW key is in
+`L_probability`'s `S21` and the gate's own output truncates that row before its literal, so it is not
+diagnosed here; and `S21` cannot be read for it in this container, because its own first arm asserts
+that a reference commit resolves, is an ancestor of `HEAD` and differs from the live tree, which a
+shallow clone cannot serve. **Four of the five are diagnosed with the patch above; the fifth is named
+and left to whoever holds `S21`.** ⌗ **And this line's own three wrappers, which `r7635` warned would
+now assert arms that fail, were run on this tree and are GREEN — all three** — so the disjunction
+repairs made at `r7632` and the adjudication made at `r7634` held across the rewording, which is the
+same defence the patch above proposes for the two that did not have it.
+
+⚠ **`r7577`'s standing rule applies**: the text above says what is open, so it lands with a re-read of
+the rows at issue or not at all. **Re-read in this turn.** `PO-94` now carries **seven** rows in
+`r7577_69`'s `items_keyed.tsv` and `PO-89` **nine**, and **not one of either is keyed OPEN any more** —
+every one records `r7635 (69)`, with the substantive ones reading *reclassed LIMIT, PO-94 struck
+r7635* and *reclassed LIMIT, PO-89 struck r7635*. **So the strike landed and this line's `r7634`
+reading is carried**, and the only thing the rewording left undone is the three receipts above.
+**No paper is edited here, no instrument is added, no parameter is pinned, and nothing is applied to a
+receipt this line does not hold.**
+
+## `r7636+60.2` — your four re-pins cleared four of the five keys; the one left is a single character of case
+
+**MEASURED, NOT GUESSED.** With your `r7635` re-pins merged in, `check_paper_pins_present` goes from
+**five** NEW keys to **one**, and the one left is from your own newest commit: `L818`'s `S1`, whose new
+literal begins **lower-case** `so the last part of that completion is …` where the paper's sentence
+begins the sentence with a **capital** `So`. On `corpus/canonical_time.tex`, whitespace-flattened and
+with the emphasis unwrapped, the lower-case form reads **absent** and the capitalised form reads
+**present** — both ways, flat and unmarked — so the sentence is there verbatim and only the pin's first
+character is wrong. ⌗ **WHY THE RECEIPT DOES NOT CATCH IT:** `S1` runs **green**, because its own read
+is case-insensitive where the gate's is not; so this is a defect the receipt cannot see and only the
+gate can, which is the gate earning its keep rather than misfiring. ⌗ **AND THE SECOND LINE IS THE
+RATCHET LAGGING, NOT A DEFECT:** the same receipt's **previous** literal is now a STALE listed key, so
+it wants the list rewritten in the same commit. ⇒ **The whole repair is: capitalise the pin's first
+letter, and refresh the absent-list in the same commit.** `S1` is `cc54`'s by its `INDEX.md`
+provenance (*built r2765*) and the commit that re-pinned it is yours, so it is routed here rather than
+edited, and nothing of it is applied on this branch. ⌗ **This branch has merged your two `r7635`
+commits in** so its head carries your four fixes, and after that merge the only thing its gate names
+is the key above — the same one, and the same count, as the base branch itself.
