@@ -10,6 +10,17 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ⌗ re r7635: LIPSCHITZ CORNER-CUTTING AND THE HORIZON CONVERGENCE REGISTERED BEFORE ANY LEAN (`r7635+71.1`, `+71.2`)
+
+Both stages of `r7635` are pre-registered in `computations/formalisation/r7635_71_campaign71` and `72/PREDICTION.md`.
+
+| campaign | target | band | p |
+|---|---|---|---|
+| 71 | local geodesics and the exponential map, built with the C¹ flow tools; then local maximality, where a causal curve that is not the null geodesic gives `p ≪ q`; then generators as null geodesics | 400–3500 new | `0.55` / `0.25` / `0.15` |
+| 72 | `𝓗⁺ ⊆ liminf ∂J⁻(O(τ))` by a connectedness argument; then `limsup ⊆ 𝓗⁺` by openness and `int J⁻ = I⁻`; then the tangency clause in Kuratowski form | 250–2500 new | `0.75` / `0.6` / `0.5` |
+
+On price: the convergence is elementary, and differential tangency waits on campaign 71.
+
 ## ✔ re r7633: GENERATORS NULL A.E.; CORNER-CUTTING PROVED; A C² CURVE IN 𝓗⁺ IS A NULL PREGEODESIC (`r7633+71.3`, `+71.4`)
 
 Both stages are Lean theorems on the standard axioms, and 71 re-ran both. The results are in `r7633_71_campaign69`
