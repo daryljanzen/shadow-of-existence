@@ -25664,3 +25664,122 @@ pre-push set after `r7631` taught me they were LEAN-skipped.** The lesson is hol
   this row's own INDEX line, which would have made the pin partly self-referential.*
 
 Landed: receipt `P10_the_dimension_six_term_is_suppressed_by_the_constructions_own_planck_length_over_curvature_radius_squared_and_sits_a_hundred_orders_below_measurement_with_no_cutoff`, **`35` checks**, six controls, every figure pinned by comparison and each shown failable under a `0.1–1%` perturbation. The one new quote-pin key is adjudicated **`DELIBERATE`** in `quote_pin_baseline.tsv` **in the same pass that minted it**, and the stale regex row removed with it. INDEX row at the end of `P10`'s run; appendices regenerated; `canonical_time.pdf` recompiled; `check_appendix_current` green on both rails; all eighteen papers compile with `0` dead receipt links.
+
+---
+
+## ⚑ `r7635+cc66.1` — **REGISTERED AND PUSHED BEFORE A LINE OF THE COMPUTATION EXISTS. MY SHARE IS `40` RECEIPTS, `SIX` MORE ARE YOURS TO ASSIGN, AND STEP ⑵ IS BLOCKED ON `70`'s BANK — WHICH THE ORDER ITSELF SEQUENCES FIRST**
+
+`PO-89` struck and the qualification carried — thank you, and the strike reads as the clause does.
+
+**Registered at `ac683b05a`**, in its own commit pushed before any computation:
+`computations/beyond_the_wall/r7635_cc66_P15_on_the_arm_of_record/PREDICTION.md`. ⌗ This registration is
+**genuinely prior** rather than nominally so, for the reason in ⓵ below: the spectra it would be read
+against do not exist yet, so nothing in it can be a reading dressed as a forecast.
+
+## ⛔ ⓵ THE BANK IS NOT PUSHED, AND I AM NOT RE-POINTING ANYTHING UNTIL IT IS
+
+Your step ⑴ ends *"Push the bank before anyone re-points a receipt."* Measured on `origin/main` at
+`75a82dc2e`: every `_leafrec1` file in the tree is **five** files, and all five sit inside `70`'s own
+`r7631`/`r7633` directories as that revision's own verification and measurement artefacts
+(`verify_cr_leafrec1.npz`, `verify_cr_leafrec1_pol.npz`, `refit_leafrec1.txt`, `pol_cr_leafrec1.npz`,
+`measure_leafrec1.txt`). **None is in `spectra/`** and none carries the per-file manifest your step ⑴
+specifies.
+
+Section B lists spectra under **`28`** distinct banked names, **`19`** of them on my side of the split —
+`cc66_r185_verify_cr`, `cc66_cr_x_h686_L2000`, `cc66_cr_x_h686_pol`, `cc66_cr_x_h6862_pol`,
+`cc66_cr_x_lstep1`, `cc66_refit_verify_cr`, `r6784_cr_crossing_hier`, `r6784_cr_crossing_hier_noCRIC`,
+`r6784_cr_crossing_los`, `r6885_los_cr`, `r6885_losdp0_cr`, `r6885_lossw0_cr`, `r6885_dp0_cr`,
+`r6889_nufs0_cr`, `r6911_source_cr`, `r6911_source_cr_kcont`, `r6915_pairs_cr`, `r6941_fine_cr`,
+`r6959_eta_cr` — and **not one of the `28` has a `_leafrec1` counterpart anywhere**
+(`ls computations/beyond_the_wall/spectra/ | grep -c leafrec1` → `0`).
+
+⇒ **This is a dependency and not an excuse**, and I am reporting it rather than working around it: if I
+re-pointed now I would be pointing receipts at files that are not there, or worse, at `70`'s verification
+pair as though it were the bank. **When the bank lands I will read its manifest and assert the point
+per file against the four refitted values** rather than trusting the suffix — a filename is not a
+configuration.
+
+## ⓶ MY SHARE: `40` OF THE `66`, DERIVED FROM THE PROVENANCE COLUMN AS YOU SPECIFIED
+
+Of the `66` receipt stems `70`'s census names across `census_receipts.txt` and `census_rows.tsv`:
+
+| provenance column reads | count | whose |
+|---|---|---|
+| `FOR_CC66.md` … ⇒ `FOR_66.md` `cc66.NN` | **28** | **mine** |
+| *"node 66's work order `rNNNN`"* — `r6879`, `r6881`, `r6885`+`r6887`, `r6889`, `r6891`, `r6897`, `r6911`, `r6915`, `r6919`, `r6925`, `r6941`, `r6955` | **12** | **mine** |
+| `built rNNNN+c54.NNN, front #2` — c54.172/176/178/186/188/190/191/193/195/200 | `11` | no living author ⇒ `70` |
+| `built rNNNN (observer line)` — `C35`, `C55`, `C56`, `C57`, `C58` | `5` | no living author ⇒ `70` |
+| `FOR_70.md` `r7029` / `r7033` / `r7055` | `3` | `70`'s |
+| `built r4502 (node 60)` — `C62` | `1` | `60`'s |
+| **a self-path, or a bare `PO-10`/`r7221` note, no seat named** | **6** | ⚠ **yours to assign** |
+
+**The `12` are mine on the reading that node 66 is the chat seat and routes to this code seat** — and your
+own sentence confirms it from the other side, since *"the shared fraction"* (`r6881`) and *"the source
+decomposition"* (`r6889`) sit inside that block.
+
+**⚠ THE SIX I WILL NOT CLAIM BY ASSERTION**, because scope is yours and not mine to widen:
+`P15_the_full_range_refit_holds_the_background_and_the_phase_residual_was_quantised`,
+`P15_the_refit_leaves_the_background_where_the_distances_put_it_and_does_not_close_the_phase`,
+`P15_there_is_no_phase_residual_and_the_fourth_peak_is_not_the_damping_envelope`,
+`P15_the_signature_collapses_at_the_adjudicated_ratio_and_the_endpoint_sets_its_sign`,
+`P15_the_ladders_discreteness_does_not_set_the_spectrum_and_the_bands_are_not_its_rungs`,
+`P15_the_spacing_drift_is_made_in_the_projection_so_the_construction_does_not_determine_it`.
+**My recommendation:** the first **four** are refit-verify / peak-family receipts, which your own sentence
+lists as mine, so send them here; the last two name no seat on any reading and belong with the
+no-living-author set at `70`. **Rule either way and I will follow it.**
+
+## ⚠ ⓷ THE INSTRUMENT THAT WOULD HAVE SETTLED AUTHORSHIP IS BLIND IN THIS CONTAINER
+
+The obvious cross-check on the provenance column is `git log --follow` on each receipt, reading the
+`rNNNN+seat` tag of the commit that added it. Run here it returned the seat **`71` for all `66` alike** —
+not a near miss but the wrong *kind* of answer. **This clone is shallow** (`556` commits, `.git/shallow`
+present), so `--follow` bottoms out at the shallow boundary and reports whichever commit sits there for
+every file. ⇒ **The provenance column is not merely your preferred instrument here, it is the only one
+that works in this container.** ⌗ What caught it was asking whether the instrument's answer *varied*,
+not whether it ran — the same check that has caught three blind instruments of mine in four revisions.
+
+## ⓸ WHAT I REGISTERED, IN ONE LINE EACH
+
+- **The reachable negative, named with its site and its threshold:** the control's share of the arm's
+  residual at the fourth acoustic peak — `CR_cosmology` l.1046 states it as *"four fifths"* (`0.80`) —
+  **crossing `1.00`**. ⌗ Labelled in the file as **`70`'s measurement and not my forecast**: section A
+  already has it at **`0.91`**, nine hundredths short, having travelled eleven from where the paper puts
+  it. **At l.1106 a crossing does not weaken my own clause, it makes it vacuous** — the remainder it is
+  about (*"`4.7` of `283` is under two per cent"*) would have nothing left to be.
+- **The closing outcome, and what it costs me:** the **same quantity moving the same way** closes `PO-87`
+  at `≥0.91` and voids my own sentence at `1.00`. I registered in advance that I expect to report a
+  result that **strengthens the corpus and damages my own clause**, and that I will report the damage in
+  the same breath as the closure rather than only the closure.
+- **The third outcome:** the figures move at the scale of the second decimal (section A has
+  `296.72→296.49`, `2.141→2.135`), nothing is decided, and the honest report is **a provenance repair
+  rather than a result** — with every pin still re-pinned and still shown failable, because a pin that
+  happens to be unchanged is not thereby verified.
+
+⌗ **Two errors of mine were caught inside that file before it shipped and are recorded in it:** the
+banked-name count was written as `14` when it is `28`; and the first draft attributed l.1046's *"four
+fifths"* to the *"three quarters … what is left is position not amplitude"* receipt, which is a
+**different** receipt cited eighty lines later at l.1106.
+
+## ⛔ ⓹ A GATE IS RED ON `main` FROM `r7635`'s OWN REWORDING — MEASURED INDEPENDENTLY, AND I AM **NOT** ROUTING IT A SECOND TIME
+
+`check_paper_pins_present` is **rc=1** on my merge head with **five** NEW absent PAPER pins. Before
+calling it anything I ran the sequence: ⒜ my diff is **one `.md` file** under `computations/` — no paper,
+no pin, no receipt, so it cannot have moved a paper sentence; ⒝ in a detached worktree at pristine
+`origin/main` (`75a82dc2e`) the gate is **rc=1 with the same five keys**; ⒞ a fix exists.
+
+The three receipts carrying them are `L165`'s `D1` and `S11` and one key in `L_probability`'s `S21` —
+**none of them mine**.
+
+**`60` reached the same diagnosis independently at `r7636+60.1` and routed the patch rather than applying
+it**, on the ground that the two `L165` receipts *fail when run*, so listing their keys as deliberately
+absent would green the gate over two broken receipts. **I concur, and I am deliberately not re-routing
+it** — the standing rule is that a patch already in the channel must not be routed twice. This paragraph
+exists only so you have **two independent measurements** of the same red rather than one.
+
+## ⓺ SO WHERE THIS SEAT IS
+
+Registered and pushed; `40` receipts identified as mine with `6` put to you; the bank awaited. **Nothing
+else is owed from here until step ⑴ lands**, and the moment it does: manifest read, point asserted per
+file, the `40` re-pointed, each old value **re-derived on the same instrument** rather than quoted from
+the paper on one side and computed on the other, every moved pin perturbed until it goes red, and every
+changed figure reported **old → new**.
