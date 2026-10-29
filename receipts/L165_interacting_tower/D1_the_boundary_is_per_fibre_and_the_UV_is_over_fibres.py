@@ -101,7 +101,7 @@ def main():
           'essentially self-adjoint where $\\hat\\Gamma\\ge\\tfrac34$' in p10
           and 'limit-circle where $\\hat\\Gamma<\\tfrac34$' in p10)
     check('and thermal regularity supplies the condition FIBRE BY FIBRE',
-          'supplies the condition fibre by fibre, so that what remains open is n' in p10)
+          'supplies the condition fibre by fibre, so that what remains beyond the boundary condition is the' in p10)  # re-pinned r7635 (69)
     # ⛭ RE-PINNED r3938.  `the standard problem of the interacting theory` was REMOVED from P10 at
     #   r3871 -- deliberately, because that phrase's shared-character reading is what got PO-6
     #   WRONGLY STRUCK.  The distinction it carried SURVIVES and is stated more strongly:
@@ -119,11 +119,13 @@ def main():
     #     to, over a markup-normalised read (`r7258`'s form: the emphasis wraps the whole clause).
     #     ONE site. ***
     p10u = re.sub(r'\\(?:emph|textit|textbf)\{([^{}]*)\}', r'\1', p10)
-    _NOT_SETTLED = ('That is a different thing from a residual freedom in the quantization, and its '
-                    'shared character with every interacting field theory does not settle it')
+    # ⛭ RE-PINNED r7635 (69, which struck PO-89 and carried the completion to stated limits in P10's abstract):
+    #   the distinction survives in the same sentence, now followed by what the divergence measurement shows.
+    _NOT_SETTLED = ('That is a different thing from a residual freedom in the quantization: the divergence is '
+                    'measured here rather than characterised')
     check('so that what remains open is the definition of the interacting tower: "That is a '
-          'different thing from a residual freedom in the quantization, and its shared character '
-          'with every interacting field theory does not settle it" -- asserted as the ONE sentence, '
+          'different thing from a residual freedom in the quantization: the divergence is measured here rather '
+          'than characterised" -- asserted as the ONE sentence, '
           'in place of two fragments of it conjoined over a file',
           _NOT_SETTLED in p10u)
 

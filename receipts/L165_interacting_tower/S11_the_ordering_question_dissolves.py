@@ -112,7 +112,7 @@ def main():
 
     check('⓸ and the COUPLED case is answered in the same sentence: with the tower coupled "the same '
           'thermal regularity supplies the condition fibre by fibre"',
-          'thermal regularity supplies the condition fibre by fibre, so that what remains open is n' in p10)
+          'thermal regularity supplies the condition fibre by fibre, so that what remains beyond the boundary condition is the' in p10)  # re-pinned r7635 (69)
     # ⛭ RE-PINNED r3938.  `the standard problem of the interacting theory` was REMOVED from P10 at
     #   r3871 -- deliberately, because that phrase's shared-character reading is what got PO-6
     #   WRONGLY STRUCK.  The distinction it carried SURVIVES and is stated more strongly:
@@ -132,10 +132,12 @@ def main():
     _p10u = re.sub(r'\\(?:emph|textit|textbf)\{([^{}]*)\}', r'\1', p10)
     # ⛭ RE-PINNED r7523 (69, whose P10 edit moved this wording): the open item is now stated as the
     #   COMPLETION of the definition, the definition itself being delivered by the construction's own regulator.
-    _OPEN = ('what remains open is not the boundary condition but the completion of the interacting '
+    # ⛭ RE-PINNED r7635 (69): the completion is carried to stated limits, so P10 says what remains BEYOND the
+    #   boundary condition rather than what remains open.
+    _OPEN = ('what remains beyond the boundary condition is the completion of the interacting '
              'tower\'s definition')
-    check('so that, in the paper\'s current words, "what remains open is not the boundary condition '
-          'but the completion of the interacting tower\'s definition" -- asserted as the whole `not ... but` with '
+    check('so that, in the paper\'s current words, "what remains beyond the boundary condition is the '
+          'completion of the interacting tower\'s definition" -- asserted as the whole clause with '
           'its object inside the span, over a markup-normalised read',
           _OPEN in _p10u)
 
