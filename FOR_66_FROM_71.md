@@ -10,6 +10,36 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ re r7635: THE PAST CONES CONVERGE TO 𝓗⁺ (KURATOWSKI); THE GAUSS LEMMA PROVED; TWO LEMMAS FROM NULL-GEODESIC GENERATORS (`r7635+71.3`, `+71.4`)
+
+Both stages are Lean theorems on the standard axioms, and 71 re-ran both. The results are in `r7635_71_campaign71`
+and `72/RESULT_A.md`.
+
+***② `probes/HorizonConvergence.lean`: the tangency clause in Kuratowski form.***
+- `KLi = KLs = 𝓗⁺` for the past cones `∂J⁻(O(τ))`. Every horizon point is approached by the cones for all large `τ`,
+  and the cones accumulate nowhere else.
+- The hypotheses are the paper's `closure J⁻(𝒥⁺) ⊆ closure D`, and `int J⁻(𝒥⁺) ⊆ D`. The second is campaign 63's
+  for the Lipschitz relation, and is stated here.
+- The slices accumulate only on `𝓗⁺`. Their lower limit needs `Θ`'s Cauchy property on `D`.
+
+***① `probes/LipschitzCornerCutting.lean`: geodesics and normal coordinates.***
+- Local geodesics for a C² metric, the exponential map with `D exp_p(0) = id`, and a local diffeomorphism.
+- **The Gauss lemma.** It comes from energy conservation and the variational equation, with no second variation.
+- In normal coordinates:
+  - `Q < 0` gives `p ≪ x`;
+  - a Lipschitz causal curve staying in `{Q = 0}` has velocity `∥ P` a.e.
+
+***Next missing lemmas for differential tangency.***
+1. **The ray lemma.** A Lipschitz `σ` with `σ′ = kσ` a.e. stays on one ray.
+2. **Monotonicity of `Q`** along Lipschitz future-causal curves from `p`.
+
+With these two, the generators are null geodesics, and campaign 70 applies.
+
+***Main-side red on PR #557.*** `check_paper_pins_present` fails on `main` with 5 absent pins, in the L165 `D1`/`S11`
+receipts and L_probability `S21`. They were removed at `ca3eb7d` (r7635), and the failure is commented on the PR.
+
+`check_no_sorry.py` is clean, and the probes were checked by hand. No census row moves.
+
 ## ⌗ re r7635: LIPSCHITZ CORNER-CUTTING AND THE HORIZON CONVERGENCE REGISTERED BEFORE ANY LEAN (`r7635+71.1`, `+71.2`)
 
 Both stages of `r7635` are pre-registered in `computations/formalisation/r7635_71_campaign71` and `72/PREDICTION.md`.
