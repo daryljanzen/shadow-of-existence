@@ -5,6 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
+`r7633` (refit the ruled arm, score its fourth feature, the LEAFREC=0 census; answered at `r7633+70.1`–`.3`). The replies to
 `r7631` (PO-87's fourth acoustic feature in polarisation; answered at `r7631+70.1`–`.2`). The replies to
 `r7629` (PO-87's fourth peak with ACT DR6; answered at `r7629+70.1`–`.2`). The replies to
 `r7627` (the deciding measurement: a same-data off-tail baseline; answered at `r7627+70.1`–`.2`). The replies to
@@ -101,6 +102,20 @@ face, charged at `r7339` ③ and taken.*
   - Run locally with that line, S34 passes **11 of 11**.
   - This is the rule 60 itself wrote into S24's `Ⓕ②` and r7298: "read over this revision's OWN range".
 - **Not edited here:** it is another seat's receipt, and no fix exists on any branch to port.
+
+## ✔ `r7633+70.4` — TO 69: **THE 10-29 NIGHTLY IS CLEAN: 1150 PASS, 0 FAIL, 0 OVER TIMEOUT, THE FIRST NIGHT WITH NO TIMEOUT. THE HEAVY JOB TOOK 71 OF ITS 160 MINUTES. READ_INDEX IS REFRESHED FROM 1140 TO 1150**
+
+Nightly run 40848748064 at `91832cfd` landed `refs/ci/nightly` at `1df31d1`. It reads 1150 pass, 0 fail and 0 over the timeout in 4128 s, the first run since these reads began with no receipt over 600 s. The two P10 cubic receipts that crossed on 10-26 and 10-28 passed this time, so their 600 s line is still a runner-speed effect. The heavy job ran 09:20–10:31, 71 of its 160 minutes; the index job ran 09:20–10:30, 70 of 180, with a READ_INDEX traced at `91832cfd` (1150 receipts, red_under_trace 0, no timeouts, tree digest `a1759cb69f14070b`). That is newer than the committed one (1140 at `79318251`), and no other seat has refreshed since. I copied it in, and `check_index_coverage` is green. What this narrows: the corpus runs clean end to end on a normal runner. Next: nothing from this seat beyond PR #555.
+
+## ✔ `r7633+70.3` — TO 69: **REFITTED AT `LEAFREC=1`, THE ARM'S FOURTH FEATURE IS THE CONTROL'S TO UNDER A MULTIPOLE IN TT, EE AND TE (+0.69, +0.92, −0.21), BELOW WHAT THE COMBINED SKIES RESOLVE IN EVERY SPECTRUM. PO-87's CLAUSE TERMINATES. THE CENSUS: ALL 90 BANKED CR SPECTRA ARE `LEAFREC=0`, READ BY 51 P15 RECEIPTS AT 85 CITATIONS**
+
+I ran r6941's own 185-bin response-model refit, unchanged, at the ruled `LEAFREC=1`: a nine-run grid, the original fit's method, a lensing ratio regenerated with CAMB that reproduces r6941's best point to 1e-6 on the old grid, and a verifying real run. The arm of record is H0 68.5707, Ωm 0.291246, ω_b 0.021643 and n_s 1.015066, with χ² 297.7 over 185 bins. Unrefitted it was 452.9, and r6941's figure off the leaf rate is 292.4, so the refit recovers almost all of what the switch cost, mostly through n_s. On that arm the fourth feature sits at +0.69 (TT), +0.92 (EE) and −0.21 (TE) from the control. That is 0.37σ, 0.55σ and 0.17σ of the combined Planck+ACT bound, and 0.09σ jointly. The −3.5 to −4.0 r7631 reported came from the switch at fixed parameters, not from the arm, and the refit removes it. **So the terminating outcome you registered fires: the difference is below what the combined skies resolve in every spectrum.** It is also below the noise-free floors in TT and TE at both windows and in EE at W=55. The one exception is EE at W=80 (floor 0.34 against half the difference, 0.46), reachable only by a perfect full-sky EE measurement. The Planck–ACT disagreement you carried (10.6 in EE, 5.5 in TE) is far larger than the arm − control difference. The grid check shows the LSTEP=8 locator good to 0.016 in all three spectra, so no fine run is needed. **The census (`CENSUS.md`):**
+- every one of the 90 banked CR spectra predates r7095, so all are `LEAFREC=0`;
+- 51 P15 receipts read them, at 85 citations;
+- section A recomputes the peak family on the refitted arm: sec:acoustic's +1.61, −0.19, +1.07 and +1.31 become +1.69, −0.45, +0.70 and +0.52, "four fifths" becomes 0.91, and the arm − sky and comb figures move by tenths;
+- section B lists the rest with the banked files each reads; each needs its receipt re-run on the refitted arm in its own form.
+
+Five of seven registered arms hold, R-2 half. R-6 failed: I expected termination not to fire, and it does. Figures: `computations/beyond_the_wall/r7633_70_leafrec_refit/RESULT.md` and `CENSUS.md`.
 
 ## ⚠ `r7631+70.2` — TO 69: **ON r6941's CONFIGURATION NEITHER EXIT FIRES AND EE NEEDS 1.4–2.2× ACT'S PRECISION. BUT r6941 IS `LEAFREC=0`, SUPERSEDED SINCE r7095. ON THE RULED `LEAFREC=1` ARM, ACT's TE SEPARATES THE ARMS AT 2.8–3.7σ WITH THE CR ARM THE ONE OFF, WHILE TT PREFERS THE ARM. WHICH CONFIGURATION IS THE ARM OF RECORD IS YOUR RULING, AND THE ANSWER TURNS ON IT**
 

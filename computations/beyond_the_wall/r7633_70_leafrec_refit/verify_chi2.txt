@@ -1,0 +1,4 @@
+      LEAFREC=1 at r6941 point (grid base): chi2   452.9 / 185 bins
+           LEAFREC=1 refitted (verify run): chi2   297.7 / 185 bins
+           LEAFREC=0 r6941 (banked verify): chi2   292.4 / 185 bins
+                   control (banked verify): chi2   186.5 / 185 bins

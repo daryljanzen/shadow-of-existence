@@ -1,0 +1,32 @@
+  PART 1 -- the two arms' fourth acoustic feature (locator on the model spectra themselves, no noise)
+    TT: CR  1128.78   control  1128.09   arm - control +0.69
+    EE: CR   992.23   control   991.32   arm - control +0.92
+    TE: CR  1072.83   control  1073.03   arm - control -0.21
+
+  PART 2 -- the sky's fourth acoustic feature, and the arms scored against it (2 sigma needed)
+              sky       l4  stat55  stat80  proc  tot55  tot80   arm-ctl  /tot55  /tot80   ctl-sky  arm-sky
+      TT   Planck   1122.5    2.17    1.32  0.90   2.35   1.60     +0.69    0.29    0.43     +5.55    +6.24
+      TT      ACT   1122.0    3.01    1.99  0.58   3.06   2.08     +0.69    0.23    0.33     +6.11    +6.80
+      TT  P+A bnd                                  1.87            +0.69    0.37
+      EE   Planck   1001.2    5.95    3.29  3.39   6.84   4.72     +0.92    0.13    0.19     -9.88    -8.96
+      EE      ACT    990.6    1.70    1.04  0.28   1.72   1.07     +0.92    0.53    0.85     +0.72    +1.64
+      EE  P+A bnd                                  1.67            +0.92    0.55
+      TE   Planck   1068.7    2.03    1.29  1.35   2.43   1.86     -0.21   -0.09   -0.11     +4.30    +4.10
+      TE      ACT   1074.2    1.28    0.83  0.67   1.44   1.07     -0.21   -0.14   -0.19     -1.16    -1.37
+      TE  P+A bnd                                  1.24            -0.21   -0.17
+
+  PART 3 -- the full-sky, noise-free floor on the feature's location (the control's spectra, plik_lite's bins)
+    TT W=55: floor sigma(l4) = 1.27  -> arm-control +0.69 at best 0.54 sigma; half the difference is 0.35: floor ABOVE it
+    TT W=80: floor sigma(l4) = 0.80  -> arm-control +0.69 at best 0.87 sigma; half the difference is 0.35: floor ABOVE it
+    EE W=55: floor sigma(l4) = 0.55  -> arm-control +0.92 at best 1.65 sigma; half the difference is 0.46: floor ABOVE it
+    EE W=80: floor sigma(l4) = 0.34  -> arm-control +0.92 at best 2.68 sigma; half the difference is 0.46: floor below it
+    TE W=55: floor sigma(l4) = 0.48  -> arm-control -0.21 at best 0.43 sigma; half the difference is 0.10: floor ABOVE it
+    TE W=80: floor sigma(l4) = 0.30  -> arm-control -0.21 at best 0.69 sigma; half the difference is 0.10: floor ABOVE it
+
+  PART 4 -- the joint score over TT, EE and TE (W = 55 / W = 80)
+      Planck W=55: arms apart chi2   0.11 (3 dof) = 0.01 sigma;   chi2 to sky: arm  11.75, control  10.92, arm - control  +0.83
+      Planck W=80: arms apart chi2   0.23 (3 dof) = 0.04 sigma;   chi2 to sky: arm  23.95, control  22.01, arm - control  +1.94
+         ACT W=55: arms apart chi2   0.35 (3 dof) = 0.06 sigma;   chi2 to sky: arm   6.71, control   4.80, arm - control  +1.92
+         ACT W=80: arms apart chi2   0.87 (3 dof) = 0.21 sigma;   chi2 to sky: arm  14.59, control  10.22, arm - control  +4.36
+    combined W=55: arms apart chi2   0.46 (3 dof) = 0.09 sigma;   chi2 to sky: arm  12.40, control   9.65, arm - control  +2.75
+    combined W=80: arms apart chi2   1.10 (3 dof) = 0.28 sigma;   chi2 to sky: arm  27.13, control  20.83, arm - control  +6.30
