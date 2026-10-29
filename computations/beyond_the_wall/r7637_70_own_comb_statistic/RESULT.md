@@ -45,3 +45,25 @@ Fitted combs:
 Compared with the old arm's shared row, the step is 0.003 smaller in size and the rise is unchanged.
 
 **For cc66's re-points:** read the excess/step family with `band_excess_own` on `r6941_fine_cr_leafrec1` against `r6941_fine_lcdm`.
+
+**⚠ At the declared-sensitivity amplitude the worst-over-phase reading crosses the registered line (`sensitivity.py`, `sensitivity.txt`).** In r7055's convention, amplitude 0.5 is pre-registered, and each bank's own fitted amplitude (0.236) is the declared sensitivity. Gb was fixed at 0.5.
+
+At 0.236, on the arm of record and on the own comb, the null's worst over phase reaches:
+- **0.61 of the step** (0.0241);
+- **0.62 of the rise** (0.0038).
+
+That is "half or more", so the registered negative's wording is met on that reading.
+
+At the **real phase** the same null is −0.0105 on the step and +0.0006 on the rise. With it subtracted:
+- the step stands at **−0.029** (−0.036 at amplitude 0.5);
+- the rise stands at **+0.0055** (+0.0060 at amplitude 0.5).
+
+This harsher test was never passed even before:
+- on the old arm's shared comb the same amplitude gave 0.44 on the step and 0.71 on the rise;
+- on the old arm's own comb it gives 0.46 and 0.70.
+
+**So the settled statement is:**
+- the step and the rise survive the comb-phase null subtracted at the real phase, at −0.029 to −0.036 and +0.0055 to +0.0060;
+- over every phase, at the banks' own amplitude, the null can reach six tenths of either.
+
+P15 should say both.

@@ -4,6 +4,25 @@ P15_the_phase_systematic_leaves_the_step_standing_and_carries_a_third_of_the_ret
 r7055 Q1 -> 70: the phase systematic's effective count against the slope and the step.  Pre-registered at
 `computations/beyond_the_wall/r7055_70_phase_count/PREDICTION.md`, committed before this file.
 
+⛭ RE-POINTED r7637 (node 70) ONTO THE ARM OF RECORD, AND ON IT THE SHARED-COMB VERDICTS INVERT.
+  The banks are now the `_leafrec1` arm (LEAFREC=1, r7633's refit) against the unchanged control.  On it the
+  two arms' combs part: D_l periods 1.0045 against 1.0090, source periods 1.0115 against 1.0170, the source
+  phase difference running +0.034 to +0.199 rad across the range (it was +0.013 to +0.042).  So:
+  - THE SHARED-COMB STEP DOES NOT STAND.  The step statistic's null reaches 0.0304 / 0.0363 at the real phase,
+    half or more of the arm-of-record step of 0.0617, in its direction; N_eff 2.3 / 2.9.
+  - ON THE OWN COMB IT DOES (69's ruling 1; `r7637_70_own_comb_statistic/own_comb.py`).  The step is -0.0396;
+    at the real phase the null is -0.0039 / -0.0105, so the step survives its subtraction at -0.036 / -0.029.
+    Over phase the null's worst is 0.0090 at amplitude 0.5 (0.23 of the step) and 0.0241 at the banks' own
+    (0.61) -- the declared sensitivity is the harsher test, and on the LEAFREC=0 arm's shared comb it was 0.44.
+  - THE RETENTION SLOPE IS CARRIED WHOLE BY THE NULL.  At the real phase it returns +0.0309 / +0.0291, 115 /
+    108 per cent of the arm-of-record slope of +0.0269, and the rise does not survive its subtraction.  The D_l
+    side no longer cancels (7 per cent) and the source side reaches 9.
+  - One comb for both arms still takes most of the null away (+0.0309 -> +0.0047 at amplitude 0.5), so the
+    carrier is still the arms' own combs, now on both sides of the ratio.
+  ⇒ The title's two clauses are the LEAFREC=0 arm's.  On the arm of record the step stands only on the own
+    comb, and the retention slope is not carried by a third of itself but by all of it.  Routed to 69 for the
+    restated stem; the old-arm reading below is kept as written.
+
 What is measured.  Each statistic -- `band_excess` (the step's) and `retained` (the slope's) -- is lifted from
 its own receipt by syntax tree and run unchanged.  Each is fed a NULL injection built on every bank it reads:
   - each bank's own envelope, with a comb at that bank's own fitted period and phase;
@@ -69,8 +88,8 @@ LAW = os.path.join(HERE, 'P15_the_retention_is_the_combs_average_over_the_kernel
 STEPF = os.path.join(HERE, 'P15_the_step_is_the_excesss_own_and_it_sits_at_the_second_acoustic_peak_'
                            'and_none_of_the_four_produces_it.py')
 SLOPEF = os.path.join(HERE, 'P15_the_cross_term_is_not_the_channel_and_every_projected_term_carries_the_excess.py')
-STEP_REPORTED = 0.043          # band 1 below the band 2-7 mean, the step receipt's printed mean-envelope row
-SLOPE_PAPER = 0.0139           # the figure P15 and the slope receipt's docstring carry
+STEP_REPORTED = 0.0617         # r7637: band 1 below the band 2-7 mean on the ARM OF RECORD, shared comb (was 0.043)
+SLOPE_PAPER = 0.0139           # the figure P15 and the slope receipt's docstring carry (the LEAFREC=0 arm's)
 PH = np.linspace(0, 2 * np.pi, 24, endpoint=False)
 SETTINGS = [(w, nb, hi) for w in (0.75, 1.0, 1.25, 1.5) for nb, hi in ((7, 5.75), (10, 6.10), (5, 5.75))]
 
@@ -115,8 +134,8 @@ print()
 print("  " + "=" * 96)
 print("  THE STEP'S STATISTIC -- `band_excess('mean')` on the `r6941_fine` banks")
 print("  " + "=" * 96)
-QE = np.asarray(np.load(os.path.join(SP, 'r6959_eta_cr.npz'))['q_edges'], float)
-FB = {t: np.load(os.path.join(SP, f'r6941_fine_{t}.npz')) for t in ('lcdm', 'cr')}
+QE = np.asarray(np.load(os.path.join(SP, 'r6959_eta_cr_leafrec1.npz'))['q_edges'], float)
+FB = {t: np.load(os.path.join(SP, n)) for t, n in (('lcdm', 'r6941_fine_lcdm.npz'), ('cr', 'r6941_fine_cr_leafrec1.npz'))}
 FQ = {t: FB[t]['ls'].astype(float) / float(FB[t]['l_A']) for t in FB}
 FY = {t: np.asarray(FB[t]['Dl'], float) for t in FB}
 INJ = {}
@@ -125,10 +144,9 @@ NS = lift(STEPF, ['env', 'band_excess'], {'np': np, 'savgol_filter': savgol_filt
 INJ.update({t: (FQ[t], FY[t]) for t in FB})
 T_real = NS['band_excess']('mean')
 step_real = float(T_real[0] - T_real[1:].mean())
-check("the lifted statistic on the real banks IS the step receipt's printed row: band 1 +0.0215, step "
-      "ratio 0.333, band 1 below the rest by 0.043",
-      abs(T_real[0] - 0.0215) < 5e-5 and abs(T_real[0] / T_real[1:].mean() - 0.333) < 5e-4
-      and abs(step_real + STEP_REPORTED) < 5e-4,
+check("the lifted statistic on the arm of record, shared comb: band 1 +0.0186, band 6 +0.0141 BELOW it, "
+      "band 1 below the rest by 0.0617 -- the alternation the two arms' parted combs make",
+      abs(T_real[0] - 0.0186) < 5e-5 and T_real[5] < T_real[0] and abs(step_real + STEP_REPORTED) < 5e-4,
       "  ".join(f"{v:+.4f}" for v in T_real) + f"   step {step_real:+.4f}")
 CPF = {t: comb_params(FQ[t], FY[t]) for t in FB}
 print(f"    the banks' own combs: " + ", ".join(f"{t} T {CPF[t][1]:.4f} phase {CPF[t][2]:.3f} amp "
@@ -155,25 +173,48 @@ for lab, A in (('pre-registered amplitude 0.5', 0.5),
           f"spread over phase {s.std():.4f}, worst {np.abs(s).max():.4f}")
     print("      e at the real phase: " + "  ".join(f"{v:+.4f}" for v in E[0]))
 p0 = RS['pre-registered amplitude 0.5']
-check("⛭ ② the step statistic's phase systematic has fewer than four modes across the seven bands",
-      3.0 < p0['n'] < 4.0, f"N_eff {p0['n']:.2f}")
+check("⛭ ② the step statistic's phase systematic has fewer than three modes across the seven bands",
+      2.0 < p0['n'] < 3.0, f"N_eff {p0['n']:.2f}")
 wstep = max(np.abs(r['s']).max() for r in RS.values())
-check("⛭ THE STEP STANDS: its worst false value over phase is well under half the step, on both amplitudes",
-      wstep < 0.5 * STEP_REPORTED, f"worst {wstep:.4f} against {STEP_REPORTED}")
-check("     ...and at the real phase the false step is a quarter to two fifths of it, in the step's own direction",
-      all(-0.45 * STEP_REPORTED < r['s'][0] < -0.2 * STEP_REPORTED for r in RS.values()),
+check("⛭ ON THE SHARED COMB THE STEP DOES NOT STAND: its worst false value over phase is half or more of the "
+      "step", wstep > 0.45 * STEP_REPORTED, f"worst {wstep:.4f} against {STEP_REPORTED}")
+check("     ...and at the real phase the false step is half or more of it, in the step's own direction",
+      all(r['s'][0] < -0.45 * STEP_REPORTED for r in RS.values()),
       ", ".join(f"{r['s'][0]:+.4f}" for r in RS.values()))
-check("     signal to systematic over the phase spread: seven and a half at the pre-registered amplitude, "
-      "under four at the banks' own", all(STEP_REPORTED / r['s'].std() > 3.5 for r in RS.values()),
+check("     signal to systematic over the phase spread falls to under four on both amplitudes (it was 7.5 / 3.8)",
+      all(STEP_REPORTED / r['s'].std() < 4.0 for r in RS.values()),
       ", ".join(f"{STEP_REPORTED / r['s'].std():.1f}" for r in RS.values()))
+
+# r7637: the same null through the OWN-COMB statistic (69's ruling 1), on both amplitudes
+import sys as _sys
+_sys.path.insert(0, os.path.join(ROOT, 'computations', 'beyond_the_wall', 'r7637_70_own_comb_statistic'))
+import own_comb as OC  # noqa: E402
+_B = {t: (FQ[t], FY[t]) for t in FB}
+E_own, _ = OC.band_excess_own(_B, QE)
+s_own = OC.step(E_own)
+N_OWN = {A: OC.null(_B, QE, lambda b, q: OC.band_excess_own(b, q)[0], A)[:, 0]
+         for A in (0.5, float(np.mean([CPF[t][3] for t in CPF])))}
+print("    own comb: " + "  ".join(f"{v:+.4f}" for v in E_own) + f"   step {s_own:+.4f}; null "
+      + ", ".join(f"A {A:.3f}: real {n[0]:+.4f} worst {np.abs(n).max():.4f}" for A, n in N_OWN.items()))
+_n5, _nb = N_OWN[0.5], [n for A, n in N_OWN.items() if A != 0.5][0]
+check("⛭⛭ ON THE OWN COMB THE STEP STANDS at the pre-registered amplitude: -0.0396, the null's worst over phase "
+      "under a third of it", abs(s_own + 0.0396) < 5e-4 and np.abs(_n5).max() < abs(s_own) / 3,
+      f"step {s_own:+.4f}; worst {np.abs(_n5).max():.4f}")
+check("     ⚠ at the banks' own amplitude its worst over phase reaches 0.61 of it -- REPORTED: the declared "
+      "sensitivity is the harsher test, and on the LEAFREC=0 arm it reached 0.44 on the shared comb too",
+      0.55 < np.abs(_nb).max() / abs(s_own) < 0.67, f"worst {np.abs(_nb).max():.4f}")
+check("     ...and at the REAL phase the null is a quarter of the step or less, on both amplitudes, so the step "
+      "survives the null's subtraction at -0.029 to -0.036",
+      all(abs(n[0]) < 0.3 * abs(s_own) for n in N_OWN.values()),
+      ", ".join(f"{s_own - n[0]:+.4f}" for n in N_OWN.values()))
 
 # ================================================================================================
 print()
 print("  " + "=" * 96)
 print("  THE SLOPE'S STATISTIC -- `retained` on the `r6915_pairs` and `r6911_source` banks")
 print("  " + "=" * 96)
-PR0 = {t: dict(np.load(os.path.join(SP, f'r6915_pairs_{t}.npz'))) for t in ('lcdm', 'cr')}
-SO0 = {t: dict(np.load(os.path.join(SP, f'r6911_source_{t}.npz'))) for t in ('lcdm', 'cr')}
+PR0 = {t: dict(np.load(os.path.join(SP, n))) for t, n in (('lcdm', 'r6915_pairs_lcdm.npz'), ('cr', 'r6915_pairs_cr_leafrec1.npz'))}
+SO0 = {t: dict(np.load(os.path.join(SP, n))) for t, n in (('lcdm', 'r6911_source_lcdm_leafrec1.npz'), ('cr', 'r6911_source_cr_leafrec1.npz'))}
 QL = {t: PR0[t]['ls'].astype(float) / float(PR0[t]['l_A']) for t in PR0}
 QK = {t: SO0[t]['k'] * float(SO0[t]['r_s']) / np.pi for t in SO0}
 NS2 = lift(SLOPEF, ['env_a', 'osc', 'retained'], {'np': np, 'QL': QL, 'QK': QK})
@@ -187,8 +228,9 @@ def slopes(pr, so):
 
 
 xr, yr, s7r, s12r, sd12r = slopes(PR0, SO0)
-check("the lifted statistic on the real banks IS the slope receipt's: +0.01359 +- 0.00202 over twelve settings",
-      abs(s12r - 0.01359) < 5e-6 and abs(sd12r - 0.00202) < 5e-6, f"{s12r:+.5f} +- {sd12r:.5f}")
+check("the lifted statistic on the arm of record: +0.0269 +- 0.0123 over twelve settings (the LEAFREC=0 arm's "
+      "+0.01359 +- 0.00202)", abs(s12r - 0.02690) < 5e-5 and abs(sd12r - 0.01226) < 5e-5,
+      f"{s12r:+.5f} +- {sd12r:.5f}")
 print(f"    ⌗ the paper and that receipt's docstring carry +{SLOPE_PAPER} +- 0.0021 -- REPORTED, not required")
 CPD = {t: comb_params(QL[t], np.asarray(PR0[t]['Dl'], float)) for t in PR0}
 CPS = {t: comb_params(QK[t], np.asarray(SO0[t]['S_i'], float) ** 2) for t in SO0}
@@ -234,16 +276,16 @@ check("     ...and the SLOPE's own effective count against it is nine at the pre
       "at the banks' own -- above the pre-registered four either way",
       all(r['n_slope'] > 4 for r in RSL.values()), ", ".join(f"{r['n_slope']:.1f}" for r in RSL.values()))
 f12 = [r['S12'][0] / s12r for r in RSL.values()]
-check("⛭⛭ ① at the REAL phase the null returns a third or more of the reported slope, in its own direction, "
-      "on both amplitudes", all(0.30 < f < 0.45 for f in f12),
+check("⛭⛭ ① at the REAL phase the null returns ALL of the reported slope, in its own direction, on both "
+      "amplitudes", all(f > 1.0 for f in f12),
       ", ".join(f"{r['S12'][0]:+.4f} ({f*100:.0f} per cent)" for r, f in zip(RSL.values(), f12)))
 check("     ...and on the single seven-band setting it reaches over half of the reported slope",
-      q0['S7'][0] > 0.5 * SLOPE_PAPER, f"{q0['S7'][0]:+.4f} against {SLOPE_PAPER}")
-check("     ...while the rise survives the null's subtraction on both amplitudes",
-      all(s12r - r['S12'][0] > 3 * sd12r for r in RSL.values()),
+      q0['S7'][0] > 0.5 * s12r, f"{q0['S7'][0]:+.4f} against {s12r:+.4f}")
+check("     ...so the rise does NOT survive the null's subtraction, on either amplitude",
+      all(s12r - r['S12'][0] < sd12r for r in RSL.values()),
       ", ".join(f"{s12r - r['S12'][0]:+.4f}" for r in RSL.values()))
-check("     the phase systematic's spread of the slope exceeds the reported setting spread of 0.0021",
-      all(r['S12'].std() > 0.0021 for r in RSL.values()),
+check("     the phase systematic's spread of the slope exceeds the reported setting spread",
+      all(r['S12'].std() > sd12r for r in RSL.values()),
       ", ".join(f"{r['S12'].std():.4f}" for r in RSL.values()))
 
 print()
@@ -259,8 +301,8 @@ for a, b in zip(ed[:-1], ed[1:]):
     dr.append(d['cr'] / d['lcdm'] - 1)
     sr.append(s['cr'] / s['lcdm'] - 1)
     print(f"    {a:5.2f}-{b:5.2f}   D_l side {dr[-1]:+.4f}   source side {sr[-1]:+.4f}")
-check("⛭ the carrier is the SOURCE side: the D_l null cancels within one per cent in every band, the "
-      "source null reaches four per cent and more", max(map(abs, dr)) < 0.01 and max(map(abs, sr)) > 0.04,
+check("⛭ on the arm of record NEITHER side cancels: the D_l null reaches five per cent and more (the arms' D_l "
+      "combs have parted too), the source null eight", max(map(abs, dr)) > 0.05 and max(map(abs, sr)) > 0.08,
       f"D_l worst {max(map(abs, dr))*100:.2f}, source worst {max(map(abs, sr))*100:.2f} per cent")
 print()
 print("  AND WHICH PART OF THE SOURCE SIDE: each arm's own comb or one comb for both, x own or flat envelope")
@@ -289,15 +331,14 @@ for AS in (0.5, float(np.mean([CPS[t][3] for t in CPS]))):
 dphi = [2 * np.pi * q * (1 / CPS['cr'][1] - 1 / CPS['lcdm'][1]) + CPS['cr'][2] - CPS['lcdm'][2] for q in (0.85, 5.75)]
 print(f"    the two arms' source combs: periods {CPS['lcdm'][1]:.4f} / {CPS['cr'][1]:.4f}, so their phase "
       f"difference runs {dphi[0]:+.3f} to {dphi[1]:+.3f} rad across the range")
-check("⛭⛭ the carrier is the arms' own SOURCE COMBS: with one comb for both the null slope falls to a sixth "
-      "or less, while a flat envelope keeps most of it -- so the band-RMS ratio is reading a phase drift of "
-      "a few hundredths of a radian between the arms' sources as a difference in retention",
-      all(abs(DEC[(k, True, False)]) < 0.2 * abs(DEC[(k, False, False)])
+check("⛭⛭ the carrier is still the arms' own SOURCE COMBS: with one comb for both the null slope falls to a "
+      "third or less, while a flat envelope keeps most of it",
+      all(abs(DEC[(k, True, False)]) < 0.3 * abs(DEC[(k, False, False)])
           and abs(DEC[(k, False, True)]) > 0.6 * abs(DEC[(k, False, False)]) for k in (False, True)),
       f"own/own {DEC[(False, False, False)]:+.4f}, one comb {DEC[(False, True, False)]:+.4f}, "
       f"flat envelope {DEC[(False, False, True)]:+.4f}")
-check("     ...and that drift is under the pre-registered 0.05 rad, which is why it was not scanned separately "
-      "and is carried inside the own-comb null instead", max(map(abs, dphi)) < 0.05,
+check("     ...and that drift is now FOUR TIMES the pre-registered 0.05 rad (it was under it on the LEAFREC=0 "
+      "arm), which is why the null now carries the whole slope", max(map(abs, dphi)) > 0.15,
       f"{max(map(abs, dphi)):.3f} rad")
 
 print()
@@ -315,9 +356,8 @@ if FAILS:
     raise SystemExit(1)
 print("GATES: ALL PASS.")
 print()
-print("  VERDICT: ** the count is not where the cost is; the step stands, and a third of the slope is a")
-print("  phase drift between the two arms' sources, read by the statistic as retention. **")
-print("  *Against the phase systematic both banded statistics have three to three and a half modes across")
-print("  seven bands.  The step's false value at the real phase is a quarter to two fifths of it.  The")
-print("  retention slope's null at the real phase is 36 to 39 per cent of the reported slope, in its")
-print("  direction, and a comb shared by both arms removes it.  The rise survives; its size does not.*")
+print("  VERDICT (the arm of record, r7637): ** on the shared comb neither banded statistic survives its")
+print("  phase systematic -- the step's null is half or more of it, the retention slope's is all of it.")
+print("  On each arm's own comb the step stands: -0.0396 against a null at most a third of it. **")
+print("  *The LEAFREC=0 reading (a third of the slope, the step standing on the shared comb) is the")
+print("  docstring's below; the arms' combs have since parted, D_l and source alike.*")
