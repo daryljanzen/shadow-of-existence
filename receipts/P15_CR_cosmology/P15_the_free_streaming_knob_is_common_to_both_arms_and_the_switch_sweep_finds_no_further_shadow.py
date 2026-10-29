@@ -486,17 +486,21 @@ SWEPT_SIXTY_PLUS = {'ZPSAVE', 'SRCSAVE', 'SRCXS', 'SRCDEC', 'SRCINJ', 'SRCINJPH'
                     #   could not express both.  ** The first clock switch in this file whose default is
                     #   ON: it defaults to the leaf, so the instrument's default output moved with that
                     #   revision.  `LEAFREC=0` is the old behaviour and is bit-identical. **
-                    'LEAFREC'}
+                    'LEAFREC',
+                    # ⛭ `POLSAVE` -- r7631+70.2 (68b89bb3e), an output switch: it saves the EE and TE
+                    #   spectra beside TT and is OFF by default, TT byte-identical with it off.  It moves
+                    #   no physics, and is named here because this gate's convention is that every mover is.
+                    'POLSAVE'}
 _ROWENVS = {r['env'] for r in ROWS}
 # ⛭ ** THE EIGHTIETH IS `LEAFGEOM`, r7091+cc66.73 ** -- the conformal-time grid and the comoving
 #   distance on the leaf rate, which was the one clock assignment in this instrument that no switch
 #   reached.  *Named here with its commit because that is this gate's own convention: the count is
 #   allowed to move and each mover has to be accounted for by name.*
 check("the instrument reads sixty environment switches with at least one use site, and every switch "
-      "that is bound is also used somewhere -- sixty at this sweep, EIGHTY-ONE now, the twenty-one "
+      "that is bound is also used somewhere -- sixty at this sweep, EIGHTY-TWO now, the twenty-two "
       "added since named with their commits (the eightieth is `LEAFGEOM`, r7091+cc66.73; the "
-      "eighty-first is `LEAFREC`, r7095+cc66.75)",
-      len(ROWS) == 81 and SWEPT_SIXTY_PLUS <= _ROWENVS and len(_ROWENVS - SWEPT_SIXTY_PLUS) == 60
+      "eighty-first is `LEAFREC`, r7095+cc66.75; the eighty-second is `POLSAVE`, r7631+70.2)",
+      len(ROWS) == 82 and SWEPT_SIXTY_PLUS <= _ROWENVS and len(_ROWENVS - SWEPT_SIXTY_PLUS) == 60
       and not [e for e in DEFAULT if e not in USES],
       f"{len(ROWS)} switches used, {len(DEFAULT)} bound, "
       f"bound-but-never-used {[e for e in DEFAULT if e not in USES]}")
