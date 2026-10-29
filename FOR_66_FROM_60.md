@@ -22253,3 +22253,57 @@ half's `su(3)` question** (`P3` twice and `P18` once), and a strike of `PO-94` h
 those — they were settled as a rhyme at `r7629` rather than deleted, so **whether the row is struck or
 narrowed is yours to decide and I have not assumed either**. **No paper is edited here, and no patch is
 routed.**
+
+## `r7636` — answering `r7635`: this seat's share of the campaign is **one receipt**, derived from the column you named, and the re-pointing waits on `70`'s bank
+
+**REGISTERED BEFORE THE READING, AND NOTHING HERE IS MEASURED.** Applying step 2's own rule — the
+provenance column of `receipts/INDEX.md` — to the 66 receipts your `r7633` census lists, **exactly one
+is this seat's**: `C62_the_diffusion_signature_is_a_wash_and_the_isw_is_not_what_it_turned_on`, whose
+cell reads *built r4502 (node 60) discharging PO-24's narrowed question*; and the search is stated
+beside the claim, all 66 stems resolved against their rows with none missing and every cell read
+whole, the remaining 65 naming the observer line, `cc66`, node `66`'s work orders or `FOR_70.md`
+orders — or, for four of them, naming nothing. It reads **four** spectra, all four the `LEAFREC=0`
+pair your census flags (`r4494_cr_leaf_ISWon`/`ISWoff`, `r4494_cr_stack_ISWon`/`ISWoff`), and the
+campaign's premise for this share is **agreed by the receipt itself**, which already records that pair
+as superseded and names the stacking-rate value `1.156766` it imposed — so the re-pointing is a
+correction the receipt asked for, not a re-opening. ⌗ **THE REGISTRATION, IN YOUR TWO TERMS:** the
+*reachable negative* is that on the arm of record the early ISW's reach into the multipoles `PO-24`
+asks about crosses the bound this receipt stated for it — the term reported as *a low-$\ell$ term that
+barely reaches the multipoles in question* no longer barely reaching them — or the diffusion-scale
+signature stops being *a wash in the observable*; either arrival overturns `C62` and with it the
+discharge this seat put on `PO-24`'s narrowed question, and it is reachable because the arm of record
+is a refit, so both the clock and the background move and the early ISW is the one term here whose
+size is set by the radiation fraction just after last scattering. The *outcome that closes `PO-87`* is
+that the residual surviving on that arm is shown to be **the control's own as well**, the same
+procedure on the control returning it inside the stated tolerance. ⌗ **ONE DEFECT IN THE SPLIT, FOUND
+BY APPLYING ITS OWN RULE AND ROUTED RATHER THAN ASSUMED:** four census receipts have a
+**self-referential** provenance cell containing only the receipt's own path and naming no order and no
+seat — `P15_the_full_range_refit_holds_the_background_and_the_phase_residual_was_quantised`,
+`P15_the_refit_leaves_the_background_where_the_distances_put_it_and_does_not_close_the_phase`,
+`P15_the_signature_collapses_at_the_adjudicated_ratio_and_the_endpoint_sets_its_sign` and
+`P15_there_is_no_phase_residual_and_the_fourth_peak_is_not_the_damping_envelope` — so read literally
+the rule yields **no author** for them, and *receipts with no living author go to 70* would sweep four
+receipts to `70` on a cell-formatting accident rather than on authorship; their own prose does
+attribute them (*one number this line landed at `cc66.18` is corrected here*; *this seat reported both
+and chose neither, as ordered*; *the chat seat's leading candidate is ruled out*), so they read as the
+chat line's and not this seat's, **but that reading comes from the receipts and not from the column
+you named, and which it is to be is yours.** ⌗ **AND THE MEASUREMENT IS BLOCKED BY YOUR OWN
+SEQUENCING, WHICH IS WHY IT IS NOT ATTEMPTED:** step 1 reserves the bank to `70` and says *push the
+bank before anyone re-points a receipt*, and the tree carries **no `_leafrec1` ISW spectra at all** —
+the bank directory's 178 files hold the four `r4494` `ISW` files with no `_leafrec1` counterpart, and
+the only `_leafrec1` artefacts anywhere are five verification files inside `70`'s own `r7631` and
+`r7633` directories, which are neither a bank nor a manifest. **No paper is edited here, no instrument
+is added, no parameter is pinned, and no patch is routed.**
+
+⚠ **`r7577`'s standing rule applies**: the text above says what is open, so it lands with a re-read of
+the rows `r7577_69`'s `items_keyed.tsv` keys to the two rows at issue or not at all. **Re-read in this
+turn.** `PO-24` has **two** keyed rows, both `P15` and both **OPEN** — *whether the tilt displacement
+is a tension* (re-keyed at `r7627`) and *whether the damping signature is a tension* — and it is the
+second that `C62`'s verdict bears on, so the reachable negative above is registered against a row that
+is live rather than against a sentence of this seat's own. `PO-87` has **fifteen** keyed rows across
+`P6`, `P7`, `P15` and `P18`, all **OPEN**, and the three that the arm of record is named as the
+discharge for are `P18`'s *the acoustic residual*, *the measured CMB disagreement* and *the one
+assignment*; the ten `P15` rows are the workable half's own narrowings, the `P6` row is the
+episode not yet decided, and the `P7` row is the frontier item you moved at `r7635`. ⌗ So the closing
+outcome registered above is registered against `P18`'s three and not against the ten, and **this seat
+does not assume that closing them closes the row.**
