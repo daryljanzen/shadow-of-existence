@@ -1,0 +1,117 @@
+
+===================================================================================================
+Ⓐ  THE REGISTERED LOCATOR'S TWO-SIDED CONTROL, RUN BEFORE IT READS ANY SPECTRUM
+===================================================================================================
+    OK    ⓵ A SYMMETRIC PEAK OF KNOWN CENTRE comes back at its centre at every one of the 6 windows: worst error 1.6e-10 multipoles
+    OK    ⓶ AND ONE PLANTED THREE MULTIPOLES OFF is read as moved by three, so the fitter is not pinned to one answer: worst error 1.4e-04 -- this is the control `r7638+60.1`'s repair was made for
+    OK    ⓷ ⚠ AND WHAT THIS CONTROL DOES NOT TEST, SAID BEFORE IT IS LEANED ON: it plants the locator's OWN model -- a symmetric bump on a straight line -- so it validates the FITTER and says nothing about whether that model fits an acoustic peak.  Ⓒ below is where that is tested, and it is where the registered locator fails
+
+===================================================================================================
+Ⓑ  THE SPECTRA, AND THE REGISTERED LOCATOR'S ANSWER
+===================================================================================================
+    OK    Ⓑ⓵ THE ARM READ IS THE ARM OF RECORD, asserted from the spectrum's OWN manifest and not from a file name: LEAFREC=1 at the refitted point
+    OK    Ⓑ⓶ ⛔ THE REGISTERED NEGATIVE ARRIVED, AND IT IS SCORED AS ARRIVING: on the registered Gaussian the TT share is 1.023 to 1.030 over 18 readings -- it CROSSES 1.00 at every window and every sky source, so by the registration the figure is the locator's and not the spectra's.  ⌗ This line's registered expectation that it would land inside the band is a MISS and is reported as one
+
+===================================================================================================
+Ⓒ  THE ADJUDICATION -- FIVE LOCATOR FAMILIES ON ONE CURVE, AND THE GAUSSIAN IS THE OUTLIER
+===================================================================================================
+    locator                               arm    control  arm-control
+    raw grid extremum                1130.000   1129.000       +1.000
+    three-point parabola (70's)      1129.742   1129.224       +0.518
+    parabola W=10                    1129.713   1129.189       +0.524
+    parabola W=20                    1129.628   1129.087       +0.541
+    parabola W=40                    1129.267   1128.659       +0.607
+    parabola W=80                    1127.362   1126.449       +0.914
+    centroid W=40                    1129.280   1128.658       +0.622
+    centroid W=80                    1127.486   1126.584       +0.902
+    GAUSSIAN W=25                    1135.530   1135.884       -0.354
+    GAUSSIAN W=40                    1135.852   1136.181       -0.329
+    GAUSSIAN W=60                    1136.459   1136.797       -0.338
+    GAUSSIAN W=120                   1140.106   1140.544       -0.438
+    OK    Ⓒ⓵ ⛔ THE GAUSSIAN REVERSES THE SIGN OF THE DISPLACEMENT that every other locator agrees on: 8 non-Gaussian readings all give arm-minus-control POSITIVE (+0.518 to +1.000, around 70's +0.518), and all 4 Gaussian readings give it NEGATIVE (-0.438 to -0.329)
+    OK    Ⓒ⓶ AND IT SITS SOME SIX MULTIPOLES UP-ELL OF ALL OF THEM on the same curve: 1135.852 against 1129.742
+    OK    Ⓒ⓷ AND THE CAUSE IS MEASURED RATHER THAN GUESSED: the Gaussian centre climbs MONOTONICALLY with window on BOTH the arm (1135.530 -> 1140.106) and the control (1135.884 -> 1140.544) -- the signature of a SYMMETRIC model fitted to an ASYMMETRIC peak on a steep damping tail, and a property of the curve rather than of either arm
+    OK    Ⓒ⓸ AND THE ASYMMETRY IS MEASURED: the feature is 172 multipoles wide at half maximum and its two half-widths are 94 up and 78 down, differing by 9 per cent of the width -- so a symmetric model cannot sit on it without bias
+
+===================================================================================================
+Ⓓ  THE SECOND LOCATOR THAT PASSES THE ADJUDICATION, AND IT IS STILL NOT 70's
+===================================================================================================
+    spec   W        arm    control   arm-ctl      70 arm    70 ctl   70 a-c
+    TT    25   1129.562   1129.011    +0.551    1129.742  1129.224   +0.518
+    TT    40   1129.280   1128.658    +0.622    1129.742  1129.224   +0.518
+    TT    60   1128.619   1127.877    +0.742    1129.742  1129.224   +0.518
+    TT    80   1127.486   1126.584    +0.902    1129.742  1129.224   +0.518
+    TT   100   1125.621   1124.512    +1.109    1129.742  1129.224   +0.518
+    TT   120   1122.607   1121.240    +1.366    1129.742  1129.224   +0.518
+    EE    25    988.693    991.431    -2.738     988.600   991.320   -2.720
+    EE    40    988.685    991.390    -2.705     988.600   991.320   -2.720
+    EE    60    988.763    991.433    -2.670     988.600   991.320   -2.720
+    EE    80    988.959    991.587    -2.628     988.600   991.320   -2.720
+    EE   100    989.126    991.734    -2.608     988.600   991.320   -2.720
+    EE   120    989.409    992.004    -2.595     988.600   991.320   -2.720
+    TE    25   1067.968   1071.907    -3.939    1069.040  1073.030   -3.990
+    TE    40   1068.631   1072.236    -3.605    1069.040  1073.030   -3.990
+    TE    60   1069.426   1072.806    -3.380    1069.040  1073.030   -3.990
+    TE    80   1070.991   1074.122    -3.132    1069.040  1073.030   -3.990
+    TE   100   1072.347   1075.357    -3.010    1069.040  1073.030   -3.990
+    TE   120   1075.040   1077.944    -2.904    1069.040  1073.030   -3.990
+    OK    Ⓓ⓵ THE CENTROID REPRODUCES 70's POSITIONS IN ALL THREE SPECTRA to under a multipole: worst disagreement 0.794 across TT, EE and TE at W=40 -- so it is reading the same feature, which is what makes it a second reading of one quantity rather than a different quantity
+    OK    Ⓓ⓶ AND IT AGREES WITH 70 ON THE SIGN of the displacement in all three, where the registered Gaussian did not -- it carries no shape assumption at all, being a weighted mean of band power above the window's own shoulder, so it is neither 70's parabola nor a re-parameterisation of it
+
+===================================================================================================
+Ⓔ  THE SHARE ON THE SECOND LOCATOR, PER SPECTRUM AND PER SKY SOURCE, NEVER AVERAGED
+===================================================================================================
+    spec   W   sky source                           arm-sky   ctl-sky    share
+    TT    25   plik_lite, P15 sec:intro's locator    +5.662    +5.111    0.903
+    TT    25   Planck, 70's table                    +7.062    +6.511    0.922
+    TT    25   ACT, 70's table                       +7.562    +7.011    0.927
+    TT    40   plik_lite, P15 sec:intro's locator    +5.380    +4.758    0.884
+    TT    40   Planck, 70's table                    +6.780    +6.158    0.908
+    TT    40   ACT, 70's table                       +7.280    +6.658    0.915
+    TT    60   plik_lite, P15 sec:intro's locator    +4.719    +3.977    0.843
+    TT    60   Planck, 70's table                    +6.119    +5.377    0.879
+    TT    60   ACT, 70's table                       +6.619    +5.877    0.888
+    TT    80   plik_lite, P15 sec:intro's locator    +3.586    +2.684    0.749
+    TT    80   Planck, 70's table                    +4.986    +4.084    0.819
+    TT    80   ACT, 70's table                       +5.486    +4.584    0.836
+    TT   100   plik_lite, P15 sec:intro's locator    +1.721    +0.612    0.356
+    TT   100   Planck, 70's table                    +3.121    +2.012    0.645
+    TT   100   ACT, 70's table                       +3.621    +2.512    0.694
+    TT   120   plik_lite, P15 sec:intro's locator    -1.293    -2.660    2.056
+    TT   120   Planck, 70's table                    +0.107    -1.260  -11.827
+    TT   120   ACT, 70's table                       +0.607    -0.760   -1.253
+    EE    25   Planck, 70's table                   -12.507    -9.769    0.781
+    EE    25   ACT, 70's table                       -1.907    +0.831   -0.436
+    EE    40   Planck, 70's table                   -12.515    -9.810    0.784
+    EE    40   ACT, 70's table                       -1.915    +0.790   -0.413
+    EE    60   Planck, 70's table                   -12.437    -9.767    0.785
+    EE    60   ACT, 70's table                       -1.837    +0.833   -0.453
+    EE    80   Planck, 70's table                   -12.241    -9.613    0.785
+    EE    80   ACT, 70's table                       -1.641    +0.987   -0.601
+    EE   100   Planck, 70's table                   -12.074    -9.466    0.784
+    EE   100   ACT, 70's table                       -1.474    +1.134   -0.770
+    EE   120   Planck, 70's table                   -11.791    -9.196    0.780
+    EE   120   ACT, 70's table                       -1.191    +1.404   -1.179
+    TE    25   Planck, 70's table                    -0.732    +3.207   -4.384
+    TE    25   ACT, 70's table                       -6.232    -2.293    0.368
+    TE    40   Planck, 70's table                    -0.069    +3.536  -51.391
+    TE    40   ACT, 70's table                       -5.569    -1.964    0.353
+    TE    60   Planck, 70's table                    +0.726    +4.106    5.657
+    TE    60   ACT, 70's table                       -4.774    -1.394    0.292
+    TE    80   Planck, 70's table                    +2.291    +5.422    2.367
+    TE    80   ACT, 70's table                       -3.209    -0.078    0.024
+    TE   100   Planck, 70's table                    +3.647    +6.657    1.825
+    TE   100   ACT, 70's table                       -1.853    +1.157   -0.625
+    TE   120   Planck, 70's table                    +6.340    +9.244    1.458
+    TE   120   ACT, 70's table                       +0.840    +3.744    4.457
+    OK    Ⓔ⓵ ⛭ ON TT THE CLOSING FIGURE SURVIVES THE SECOND LOCATOR: the share runs 0.843 to 0.927 over 9 readings, every one inside the registered band, around 70's 0.911 -- so PO-87's closing outcome is reached on an instrument that is not 70's
+    OK    Ⓔ⓶ ⚠ AND IT BRUSHES THE LOWER BOUND AT THE WIDEST WINDOW, which is reported rather than trimmed: at W=80 the plik_lite reading is 0.749 against a registered floor of 0.75 -- the share falls monotonically with window because the asymmetry pulls both positions down-ell together, so the figure is window-dependent at the third digit
+    OK    Ⓔ⓷ ⛔ IN EE THE ANSWER IS THE SKY SOURCE'S, EXACTLY AS THE REGISTRATION ENUMERATED: against Planck the share is 0.780 to 0.785, inside the band; against ACT it is -1.179 to -0.413, outside it and negative -- one spectrum, one locator, two verdicts, and they are reported apart and never averaged
+    OK    Ⓔ⓸ ⛔ AND IN TE THE SHARE IS NOT A USABLE QUANTITY AT ALL, which is a structural fact and not a reading: the arm lands 0.069 of a multipole from the Planck sky value, so the ratio's DENOMINATOR very nearly vanishes and the share runs from -51.4 to 5.7 across the 6 windows.  ⇒ *** The registered negative arrives in TE, and its cause is the denominator and not a disagreement between the spectra. ***
+    OK    Ⓔ⓺ ⛔ AND AT THE TWO WIDEST WINDOWS THE TT SHARE BREAKS TOO, by the SAME mechanism as TE and not by a different one: none of the 6 readings at W=100 and W=120 is inside the band (-11.827 to +2.056), and the smallest arm-minus-sky residual there is 0.107 of a multipole -- the denominator passes through zero.  ⇒ *** So Ⓐ⓷'s reading that the wide windows are the better instrument, taken on a PLANTED SYMMETRIC peak, is REFUTED on the real curve: it was the fitter that got better with width, not the model.  The verdict rests on the registered windows, and that is now measured rather than preferred. ***
+    OK    Ⓔ⓹ ⌗ AND ONE TRAP NAMED BECAUSE THIS RECEIPT'S FIRST PASS FELL INTO IT: TE's fourth feature is a MINIMUM, not a maximum -- TE changes sign under it -- so a locator seeking a maximum does not find it at all and wanders with the window.  Every TE reading here is taken on the minimum
+
+===================================================================================================
+VERDICT
+===================================================================================================
+  17 check(s), 0 FAILED

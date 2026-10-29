@@ -46,19 +46,24 @@ below holds the geometry fixed and moves only $1/k_D^2$.*
 ** (2) THE EARLY ISW IS LARGE AT LOW $\ell$ AND SMALL WHERE THIS ROW LIVES. **  With the flag
 repaired, its imprint on this arm's spectrum, as a mean fractional change:
 
-        band            leaf rate      stacking rate
-        100-300           56.7%            22.6%
-        300-700            3.1%             1.3%
-        700-1300           1.4%             0.9%
+        band            leaf rate      stacking rate      [superseded arm]
+        100-300           51.9%            23.7%           56.7% / 22.6%
+        300-700            4.1%             2.1%            3.1% /  1.3%
+        700-1300           1.9%             1.1%            1.4% /  0.9%
 
-⇒ *The leaf assignment multiplies the ISW's low-$\ell$ imprint by ${\sim}2.5$, confirming the
-judgement by measurement.*  ⛔ ** And at high $\ell$ it is a $1.4\%$ effect. **  *The term the row
+⇒ *The leaf assignment multiplies the ISW's low-$\ell$ imprint by $2.19$ on the arm of record --
+COMPUTED and printed below rather than quoted, after `r7638` found this paragraph carrying a
+multiplier that was prose -- against $2.51$ on the superseded arm, confirming the judgement by
+measurement and narrowing its margin.*  ⛔ ** And at high $\ell$ it is a $1.9\%$ effect
+($1.4\%$ on the superseded arm). **  *The term the row
 names as one of two things the answer turns on barely reaches the multipoles the question is about.*
 ⛔ ** AND TWO THINGS I FIRST WROTE ABOUT THIS ARE WRONG, CORRECTED HERE. **  *(i) I said the term
 EXISTS because of the leaf assignment.  It does not: `_rt`, which sets the radiation FRACTIONS in the
 perturbation source, is built from the stack "both arms" by the instrument's own comment, so radiation
 is in the source under EITHER assignment and `STACKPERT` changes only which $H$ the equations use.
-The leaf assignment makes the term $1.52\times$ larger, not present.  (ii) I said the stacking arm's
+The leaf assignment makes the term LARGER, not present -- by the multiplier printed below, $2.19$ on
+the arm of record.  ⌗ *`r7638`: the figure this sentence first carried, $1.52\times$, was prose with no
+computation behind it in this file; it is replaced by the computed one, which the receipt now prints.*  (ii) I said the stacking arm's
 $22.6\%$ was late ISW from $\Lambda$ surviving.  It is not: `ETA_END` is $20\,a_{\rm rec}$, so the
 line-of-sight integration STOPS AT $z\simeq54$ and the late-ISW era is outside the calculation
 entirely.*  ⇒ ** So everything measured here is EARLY ISW, on both rate assignments, which makes the
@@ -238,10 +243,10 @@ print("        isolation below holds the geometry fixed and moves only 1/k_D^2."
 # =====================================================================================
 print(); print(BAR); print("PART 2 — THE EARLY ISW: LARGE AT LOW ell, SMALL WHERE THIS ROW LIVES")
 print(BAR)
-l_on, on, m_on = load('r4494_cr_leaf_ISWon')
-l_off, off, _ = load('r4494_cr_leaf_ISWoff')
-l_os, ons, _ = load('r4494_cr_stack_ISWon')
-l_fs, offs, _ = load('r4494_cr_stack_ISWoff')
+l_on, on, m_on = load('r4494_cr_leaf_ISWon_leafrec1')
+l_off, off, _ = load('r4494_cr_leaf_ISWoff_leafrec1')
+l_os, ons, _ = load('r4494_cr_stack_ISWon_leafrec1')
+l_fs, offs, _ = load('r4494_cr_stack_ISWoff_leafrec1')
 check("the banked spectra are the CR arm at LMAXL=1300, KFAC=2.0, one configuration apart",
       int(m_on['LMAXL']) == 1300 and float(m_on['KFAC']) == 2.0)
 
@@ -257,6 +262,9 @@ for lo, hi in ((100, 300), (300, 700), (700, 1300)):
     lf, st = band(l_on, on, off, lo, hi), band(l_os, ons, offs, lo, hi)
     res[(lo, hi)] = (lf, st)
     print(f"      {f'{lo}-{hi}':>12}{lf:>11.1f}%{st:>11.1f}%")
+_mult = res[(100, 300)][0] / res[(100, 300)][1]
+print(f"      and the low-ell multiplier, COMPUTED rather than quoted: {_mult:.2f}x"
+      f"   [2.51x on the superseded arm; the margin over 2 narrows]")
 check("** the leaf assignment MULTIPLIES the ISW's low-ell imprint (it does not create it) **",
       res[(100, 300)][0] > 2 * res[(100, 300)][1])
 
@@ -477,8 +485,9 @@ an inferred parameter, where it is large. ***
      **The larger number comes from the more faithful route, so the wash is stated at the weaker
      bound and closing the factor of three is named as work this receipt does not do.**
 
-⌗ ** SO THE ROW NARROWS RATHER THAN CLOSING. **  The early-ISW leg is answered and small -- 0.77
-sigma/bin over 700-1296, against 3.49 over 100-1296 -- so it is not what the high-ell question turns
+⌗ ** SO THE ROW NARROWS RATHER THAN CLOSING. **  The early-ISW leg is answered and small -- 0.86
+sigma/bin over 700-1296, against 3.51 over 100-1296 (0.77 and 3.49 on the superseded arm) -- so it is
+not what the high-ell question turns
 on.  What remains is the tilt question alone: whether a displacement of this size in the inferred
 tilt is a tension, which is a statement about a joint fit this receipt does not perform.""")
 print(BAR)
