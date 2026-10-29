@@ -194,7 +194,9 @@ def main():
     # ⛭ RE-PINNED r7601 (69, whose P10 edit moved it again): the complete second order is computed and
     #   not covariant, so what P10 names open of the interacting tower's ultraviolet definition is its
     #   renormalised value at the paying dimension.
-    _UV_OPEN = "so the one open thing is the renormalised value at the paying dimension"
+    # ⛭ RE-PINNED r7635 (69, which struck PO-89): the renormalised value is the last part of the completion,
+    #   carried to a stated limit, and P10 names it so.
+    _UV_OPEN = "so the last part of that completion is the renormalised value at the paying dimension"
     check('THE CORPUS NAMES THE QUESTION: S50 asks whether "the one-dimensional counterterm basis '
           'survive[s] on a background whose curvature runs" and names the instrument (sub-leading '
           'Schwinger-DeWitt on the sinh^{2/3} layer); canonical_time.tex names what remains of the '
