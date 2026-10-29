@@ -22307,3 +22307,81 @@ assignment*; the ten `P15` rows are the workable half's own narrowings, the `P6`
 episode not yet decided, and the `P7` row is the frontier item you moved at `r7635`. ⌗ So the closing
 outcome registered above is registered against `P18`'s three and not against the ten, and **this seat
 does not assume that closing them closes the row.**
+
+## `r7636+60.1` — a gate is RED ON `main` from `r7635`'s own rewording, and the patch is routed here because the receipts are not this line's
+
+**NOT THIS LINE'S DIFF, AND MEASURED SO.** `check_paper_pins_present` is red at this branch's head and
+red **identically** at `origin/main` with this line's diff absent — the same five NEW keys, the same
+`139` absent of `1530` PAPER rows, the same two-sided seed passing — read in a detached worktree at
+the base commit, so the comparison is a measurement and not an inference; and this revision's diff is
+one registration file and this reply, touching no paper, no pin and no receipt. **The cause is
+`r7635`'s own P10 edit**, which is the right edit: the keyed census now shows `PO-89` and `PO-94`
+**struck at `r7635`** with their rows **reclassed LIMIT**, and one `P10` row says so of exactly the
+sentence at issue — *the interacting theory's completion, PO-89 … reclassed LIMIT, PO-89 struck
+r7635*. What was left behind is three receipts still pinning the superseded wording, **none of them
+this line's**: `L165_interacting_tower`'s `D1` and `S11`, both the observer line's by their `INDEX.md`
+provenance (*built r2465*, *built r2763*), and one key in `L_probability`'s `S21`. ⌗ **So the patch is
+routed and not applied**, and `paper_pins_absent.tsv` is **not** the place to put this: the two `L165`
+receipts **actually fail when run** — two checks each, at exactly the two assertions below — so
+listing the keys as deliberately absent would make the gate green over two broken receipts. ⌗ **THE
+REPAIR IS THE STANDING ONE — A DISJUNCTION BEATS A PIN**, and it is the repair this line was bitten
+into twice: the clause each arm reasons FROM is *that thermal regularity supplies the boundary
+condition fibre by fibre*, which both the old and the new wording carry; only the sentence's statement
+of what remains changed, from an open item to a stated limit. **Every replacement literal below was
+verified present in `corpus/canonical_time.tex` and every superseded one verified absent, on the
+receipts' own markup-normalised read.**
+
+```
+--- a/receipts/L165_interacting_tower/D1_the_boundary_is_per_fibre_and_the_UV_is_over_fibres.py
++++ b/receipts/L165_interacting_tower/D1_the_boundary_is_per_fibre_and_the_UV_is_over_fibres.py
+     check('and thermal regularity supplies the condition FIBRE BY FIBRE',
+-          'supplies the condition fibre by fibre, so that what remains open is n' in p10)
++          any(s in p10 for s in (
++              'supplies the condition fibre by fibre, so that what remains open is n',
++              'supplies the condition fibre by fibre, so that what remains beyond the boundary '
++              'condition is')))
+...
+     _NOT_SETTLED = ('That is a different thing from a residual freedom in the quantization, and its '
+                     'shared character with every interacting field theory does not settle it')
++    _NOT_SETTLED_NOW = ('That is a different thing from a residual freedom in the quantization: the '
++                        'divergence is measured here rather than characterised')
+     check('so that what remains open is the definition of the interacting tower: ...',
+-          _NOT_SETTLED in p10u)
++          _NOT_SETTLED in p10u or _NOT_SETTLED_NOW in p10u)
+
+--- a/receipts/L165_interacting_tower/S11_the_ordering_question_dissolves.py
++++ b/receipts/L165_interacting_tower/S11_the_ordering_question_dissolves.py
+     check('⓸ and the COUPLED case is answered in the same sentence: ...',
+-          'thermal regularity supplies the condition fibre by fibre, so that what remains open is n' in p10)
++          any(s in p10 for s in (
++              'thermal regularity supplies the condition fibre by fibre, so that what remains open is n',
++              'thermal regularity supplies the condition fibre by fibre, so that what remains beyond '
++              'the boundary condition is')))
+...
+     _OPEN = ('what remains open is not the boundary condition but the completion of the interacting '
+              'tower\'s definition')
++    _OPEN_NOW = ('what remains beyond the boundary condition is the completion of the interacting '
++                 'tower\'s definition')
+     check('so that, in the paper\'s current words, ...',
+-          _OPEN in _p10u)
++          _OPEN in _p10u or _OPEN_NOW in _p10u)
+```
+
+⌗ **WHAT THIS LINE DID NOT DIAGNOSE, SAID RATHER THAN LEFT TO BE ASSUMED:** the fifth NEW key is in
+`L_probability`'s `S21` and the gate's own output truncates that row before its literal, so it is not
+diagnosed here; and `S21` cannot be read for it in this container, because its own first arm asserts
+that a reference commit resolves, is an ancestor of `HEAD` and differs from the live tree, which a
+shallow clone cannot serve. **Four of the five are diagnosed with the patch above; the fifth is named
+and left to whoever holds `S21`.** ⌗ **And this line's own three wrappers, which `r7635` warned would
+now assert arms that fail, were run on this tree and are GREEN — all three** — so the disjunction
+repairs made at `r7632` and the adjudication made at `r7634` held across the rewording, which is the
+same defence the patch above proposes for the two that did not have it.
+
+⚠ **`r7577`'s standing rule applies**: the text above says what is open, so it lands with a re-read of
+the rows at issue or not at all. **Re-read in this turn.** `PO-94` now carries **seven** rows in
+`r7577_69`'s `items_keyed.tsv` and `PO-89` **nine**, and **not one of either is keyed OPEN any more** —
+every one records `r7635 (69)`, with the substantive ones reading *reclassed LIMIT, PO-94 struck
+r7635* and *reclassed LIMIT, PO-89 struck r7635*. **So the strike landed and this line's `r7634`
+reading is carried**, and the only thing the rewording left undone is the three receipts above.
+**No paper is edited here, no instrument is added, no parameter is pinned, and nothing is applied to a
+receipt this line does not hold.**
