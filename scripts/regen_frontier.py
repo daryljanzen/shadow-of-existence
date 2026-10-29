@@ -261,7 +261,11 @@ EST = {
         'half discharges without it -- the entropy floor for the genealogys finiteness is independent of the peak '
         'temperature -- a correct strike with the item lying beyond it. '),
     'PO-87': ('a mechanism for the computed spectrum\'s shape deficit, its two halves reported apart',
-        2, 2, 3, 'the leaf-rate arm refitted and scored at the fourth feature in TT, EE and TE on both skies',
+        2, 2, 3, 'P15\'s acoustic figures re-derived on the leaf-rate arm of record',
+        'r7635 LANDS r7633+70: refitted at the ruled configuration the arm\'s fourth feature is the control\'s to under a '
+        'multipole in TT, EE and TE (0.69, 0.92, -0.21; jointly 0.09 sigma), so that clause TERMINATES; the census finds '
+        'all 90 banked CR spectra off the leaf rate, read by 51 P15 receipts, and the row\'s live clause is their '
+        're-derivation on the arm of record. '
         'r7633 RULES on r7631+70: the arm of record is the leaf-rate configuration REFITTED; the fourth-peak figures were '
         'banked off the leaf rate, the arm moves ~5 multipoles between the two, and Planck and ACT disagree on the '
         'polarisation feature (EE 10.6, TE 5.5 apart). '
