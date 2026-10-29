@@ -1,0 +1,134 @@
+
+================================================================================================
+r7633+cc66 -- SIZING THE DIMENSION-SIX TERM WITHOUT A CUTOFF
+================================================================================================
+
+------------------------------------------------------------------------------------------------
+  CONTROL (1), REPORTED FIRST -- the same estimator on the DIMENSION-FOUR logarithm,
+  whose coefficient 15/4 P10 carries, against its KNOWN order
+------------------------------------------------------------------------------------------------
+    The dimension-four trace anomaly is Theta = rho - 3p ∝ (15/4) a^-4 (l.583-585).
+    Sized against the classical background density rho_cl = 3H^2/(8 pi G) with H ~ 1/a and
+    G = ell_P^2 (hbar = c = 1):
+
+      Theta / rho_cl  =  (15/4) a^-4 / [ 3 / (8 pi ell_P^2 a^2) ]  =  (15/4)(8 pi/3) (ell_P/a)^2
+                      =  31.415927 (ell_P/a)^2      [ = 10 pi, since (15/4)(8/3) = 10 ]
+
+    ⇒ at the present epoch that is 4.357e-121 -- i.e. of order 1e-121.
+    ** AND THAT IS THE KNOWN ORDER OF A ONE-LOOP GRAVITON CORRECTION ON THIS BACKGROUND,
+    the familiar (ell_P H)^2 ~ 1e-122. **  The estimator returns, for a term whose order is
+    independently known, that known order.  ⇒ So it is measuring something, and the
+    dimension-six number below is not read off an unvalidated instrument.
+
+    ⌗ The coefficient check: (15/4)(8/3) = 10.000000 exactly, so the prefactor is 10 pi and
+      the control reproduces its own arithmetic rather than being asserted.
+    ⚠ And the trap PREDICTION.md registered: 15/4 is SCHEME-INDEPENDENT (it is an anomaly)
+      while a logarithm's VALUE is not, so this control checks the ORDER and never a digit.
+
+------------------------------------------------------------------------------------------------
+  STEP (1) -- WHAT MULTIPLIES THE DIMENSION-SIX TERM, read from P10 rather than derived
+------------------------------------------------------------------------------------------------
+    the coupling's power:        ONE ell_P^2 per vertex pair (l.1623)
+    the curvature's power:       two more inverse powers of a, the only
+                                 length the background has (l.1621)
+    in the logarithm:            ln(a/ell_P) (l.1621) -- a ratio of the
+                                 construction's OWN two scales, NOT a cutoff
+    the coefficient:             6023/20160 = 0.298760 (l.1283)
+
+    ⇒ so the dimensionless suppression of dimension six against dimension four is
+      ** (ell_P/a)^2 **, times a rational of order one, times that logarithm.
+
+    ⚠ AND ONE THING THE ORDER'S WORDING PRESUPPOSES IS NOT TRUE ON THIS BACKGROUND.
+      The order asks what multiplies "the dimension-six INVARIANT".  P10 says the five
+      dimension-six scalars COLLAPSE on the one-parameter family -- two vanish identically,
+      the rest are pure numbers, rank one -- so the residue "is one equation on three
+      directions, each of which alone reproduces it after a single rescaling, and IT NAMES
+      NOTHING" (l.1283).  The receipt carrying that is titled in those terms: the invariant
+      CANNOT BE NAMED on this background.
+      ⇒ ** So what is sized here is the magnitude of the dimension-six OBSTRUCTION, not an
+      invariant's coefficient. **  PREDICTION.md registered this as the outcome to report
+      rather than paper over, and it is the outcome that arrived.  The suppression is
+      unaffected -- it is dimensional -- but what it multiplies is an obstruction.
+
+------------------------------------------------------------------------------------------------
+  STEP (2) -- THE EFFECT RELATIVE TO DIMENSION FOUR, each observable at ITS OWN epoch
+------------------------------------------------------------------------------------------------
+    The construction's `a` at each epoch (c/H(z), declared inputs: H0 = 67.4 km/s/Mpc,
+    Omega_m = 0.315, z_rec = 1089.9), and ell_P = 1.616255e-35 m as MEASURED -- an inherited datum,
+    not a cutoff:
+
+      epoch      z          a = c/H (m)      (ell_P/a)^2    ln(a/ell_P)
+      today      0.0        1.3725e+26       1.3867e-122    140.3
+      recomb.    1089.9     6.7870e+21       5.6710e-114    130.4
+
+    ⌗ The last three observables are read at recombination, which is the epoch r7629 read
+      them at (its T_rec = 0.26 eV); the rate is read today.  Same epochs, so the two rows
+      of this programme are comparable.
+
+      observable               epoch      suppression    precision    orders BELOW precision
+      the rate H0              today      4.1430e-123    1.0e-02      +120.4
+      the acoustic scale       recomb.    1.6943e-114    2.9e-04      +110.2
+      the tilt n_s             recomb.    1.6943e-114    4.4e-03      +111.4
+      the tensor amplitude     recomb.    1.6943e-114    3.2e-02      +112.3
+
+    ⇒ ** THE SMALLEST MARGIN OF THE FOUR IS 110.2 ORDERS OF MAGNITUDE, on the acoustic scale. **
+      Every observable is below what measurement resolves by more than a hundred orders.
+
+------------------------------------------------------------------------------------------------
+  STEP (3) + THE ORDER'S REACHABLE NEGATIVE -- is the term within reach ANYWHERE?
+------------------------------------------------------------------------------------------------
+    The term reaches the tightest measured precision (2.9e-04) where C6 (ell_P/a)^2 = that,
+    i.e. at a = ell_P sqrt(C6/sigma) = 5.1877e-34 m = 32.10 ell_P.
+    ⇒ ** So the term is within reach only where the background's curvature radius is
+      within a factor of ~32 of the Planck length. **  That is the Planck era.
+    ⇒ ** THE REACHABLE NEGATIVE IS MISSED, AND FOR A STRUCTURAL REASON RATHER THAN A
+      NUMERICAL ONE: none of the four observables reads there. **  The construction reads
+      epochs from recombination onward, where a exceeds ell_P by 57 orders.
+
+------------------------------------------------------------------------------------------------
+  CONTROL (3) -- A CUTOFF-SHAPED QUANTITY SHOWN **ABSENT**, which is this row's own claim
+------------------------------------------------------------------------------------------------
+    The claim is that this sizing uses no cutoff.  That is checked by VARYING one and
+    watching: r7629's estimator, which takes Lambda, against this one, which does not.
+
+      Lambda (GeV)   r7629 (E/Lambda)^2 at 1 GeV    this row, today
+      1e-03          2.9876e+05                     4.1430e-123
+      1e+00          2.9876e-01                     4.1430e-123
+      1e+03          2.9876e-07                     4.1430e-123
+      1e+06          2.9876e-13                     4.1430e-123
+      1e+09          2.9876e-19                     4.1430e-123
+
+    ⇒ r7629's number moves over 24 orders as Lambda moves over 12;
+      this row's moves by a factor of exactly 1.0 -- it does not move at all.
+    ** So the sizing is cutoff-free BY MEASUREMENT and not by assertion. **  ⌗ That is the
+      difference r7633 asked for against r7629: same term, same observables, and an
+      estimator built from the construction's own two scales instead of an assumed one.
+
+------------------------------------------------------------------------------------------------
+  CONTROL (5) -- A DECADE OF `a` AT EACH EPOCH, since `a` carries cosmological inputs
+------------------------------------------------------------------------------------------------
+      a scaled by    today (orders)   recomb. (orders)   verdict
+      0.1            118.4            108.2              still >100
+      1.0            120.4            110.2              still >100
+      10.0           122.4            112.2              still >100
+
+    ⇒ the verdict survives a decade either way at both epochs: True
+      ** A factor of a few in any cosmological input cannot move a hundred-order margin. **
+
+================================================================================================
+  CONCLUSION -- THE EXIT FIRES, AND WITH NO CUTOFF ANYWHERE IN THE ARGUMENT.
+  On this background the only scales are `a` and ell_P, so the dimension-six term is
+  suppressed against dimension four by (ell_P/a)^2 -- one vertex pair's ell_P^2 and two
+  more inverse powers of the only length there is -- with ln(a/ell_P) in the logarithm and
+  a rational of order one in front.  Sized that way, the term sits 110 to 120 orders
+  BELOW what measurement resolves on every one of the four observables.
+  ⇒ ** PO-89 CLOSES AS ITS CLAUSE NOW READS: the effect is below what measurement
+    resolves, sized by the scales the construction does carry. **  The reachable negative
+    is missed structurally -- the term would need a curvature radius within ~32 ell_P.
+  ⚠ WITH ONE QUALIFICATION THE ROW WILL NOT DROP: on this background the dimension-six
+    INVARIANT cannot be named -- the five scalars collapse to rank one and name nothing --
+    so what is sized is the magnitude of the OBSTRUCTION, not an invariant's coefficient.
+    The suppression is dimensional and so unaffected; what it multiplies is not an
+    invariant, and this row does not supply one.
+================================================================================================
+

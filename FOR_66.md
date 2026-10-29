@@ -25557,3 +25557,110 @@ I had assumed a numeric extraction would not mint, because the assertion is on t
 ### Verified before this push
 
 `turn_gates` `PASS=121 FAIL=2` (the shallow-clone pair) **plus** `check_compile` run by hand (18/18 clean), all five ratchet gates green on real exit codes (`check_unread_figure` 0, `check_prose_pins` 0, `check_figures_pinned` 0, `check_cannot_fail` 0, `check_quote_pins` on the documented seed only, keys `2747`/`2747`), and all ten of `fast`'s generators `--check` clean.
+
+---
+
+## ⚑ `r7633+cc66` — **SIZED BY THE CONSTRUCTION'S OWN SCALES, THE DIMENSION-SIX TERM SITS `110`–`120` ORDERS BELOW MEASUREMENT ON ALL FOUR OBSERVABLES. `PO-89` CLOSES. ⚠ AND THE ORDER'S STEP ① PRESUPPOSES AN INVARIANT THIS BACKGROUND DOES NOT HAVE**
+
+**The answer, and it needs no cutoff anywhere.**
+
+### ⓵ What multiplies it — read from P10, not derived
+
+> *"in the reduced theory the only scales are `a` and the Planck length"*, so the vacuum energy is
+> `a^{-1} Σ_j f_j (ℓ_P/a)^j` against **a polynomial in `ln(a/ℓ_P)`**; the power is `1+j`, **one vertex
+> pair costs `ℓ_P²`**, and the interaction enters at `j ≥ 2` — `canonical_time` l.1621–1623
+
+⇒ So the three things you asked for: **the coupling's power** is one `ℓ_P²` per vertex pair; **the
+curvature's power** is two more inverse powers of `a`, the only length the background has; and **in
+the logarithm sits `ln(a/ℓ_P)`** — a ratio of the construction's *own* two scales. ⚠ **That last one
+is the substantive content of "without a cutoff": the logarithm's argument is fixed by the theory
+rather than chosen.** Hence the suppression against dimension four is **`(ℓ_P/a)²`**, times
+`6023/20160 = 0.298760`.
+
+⌗ *And `ℓ_P` enters as the **measured** gravitational coupling — an inherited datum, said so in the
+computation's own output and not only here. P10 adds (l.484) that it is "a gauge-combination rather
+than a second physical length", so it is not a second scale smuggled in.*
+
+### ⓶⓷ The four observables at their own epochs, against measured precision
+
+| epoch | `a = c/H` | `(ℓ_P/a)²` | `ln(a/ℓ_P)` |
+|---|---|---|---|
+| today | `1.3725e26` m | `1.3867e-122` | `140.3` |
+| recombination | `6.7870e21` m | `5.6710e-114` | `130.4` |
+
+| observable | epoch | orders **below** precision |
+|---|---|---|
+| the rate `H₀` | today | **`+120.4`** |
+| **the acoustic scale** | recomb. | **`+110.2`** ← binds, as at `r7629` |
+| the tilt `n_s` | recomb. | `+111.4` |
+| the tensor amplitude | recomb. | `+112.3` |
+
+⇒ **Every observable is below what measurement resolves by more than a hundred orders, and `PO-89`
+closes exactly as its rewritten clause reads.** ⌗ *The three later observables are read at
+recombination — the epoch `r7629` read them at — so the two rows of this programme are comparable.*
+
+**⚠ The reachable negative is MISSED, and structurally rather than numerically.** The term reaches
+the tightest precision only at `a = 32.10 ℓ_P` — the Planck era — while the earliest epoch any of the
+four observables reads exceeds `ℓ_P` by **`57` orders**. So no observable the construction reads gets
+within `55` orders of curvature radius of where the term would matter.
+
+### ⚠ AND ONE THING YOUR STEP ① PRESUPPOSES IS NOT TRUE ON THIS BACKGROUND
+
+You asked what multiplies *"the dimension-six **invariant**"*. **There is none here to multiply, and
+P10 says so itself:** the five dimension-six scalars collapse on the one-parameter family — two
+vanish identically, the rest are pure numbers, **rank one** — so the residue *"is one equation on
+three directions, each of which alone reproduces it after a single rescaling, and **it names
+nothing**"* (l.1283). The receipt carrying that is titled in exactly those terms: *the invariant
+cannot be named on this background*.
+
+⇒ **So what I have sized is the magnitude of the dimension-six OBSTRUCTION, not an invariant's
+coefficient.** The suppression is dimensional and therefore unaffected; what it multiplies is not an
+invariant, **and I have not supplied one.** ⌗ *`PREDICTION.md` registered this in advance as the
+outcome to report rather than paper over — it was the third pre-registered outcome — and it is the
+one that arrived. It is also consistent with `r7629`, which established `6023/20160` as an
+obstruction to **covariance** rather than an invariant's coefficient.*
+
+### The two controls that make the rest readable
+
+**⑴ The dimension-four control, reported FIRST — because an estimator trusted on a term of unknown
+order must first return the known order of one.** `(15/4)(8/3) = 10` **exactly**, so the
+anomaly-to-background ratio is `10π (ℓ_P/a)² = 4.357e-121` today — **which is** the familiar one-loop
+graviton `(ℓ_P H)²`. ⌗ *And its trap, registered: `15/4` is scheme-**independent** (it is an anomaly)
+while a logarithm's value is not, so this control checks the **order** and never a digit.*
+
+**⑵ The cutoff shown ABSENT BY MEASUREMENT, which is this row's own claim and could not be borrowed.**
+`r7629`'s estimator moves **`24` orders** as `Λ` moves `12`; this row's reported value is **identical
+at every `Λ`** — read off the printed table rather than recomputed, with the two compared on the
+**same** coefficient so the contrast is not tautological. Plus the suppression function's
+**signature** checked to take no cutoff argument at all. ⇒ **So "cutoff-free" is measured, not
+asserted.**
+
+### ⚠ Four faults of mine — and this time every one was caught before the push
+
+| # | fault | caught by |
+|---|---|---|
+| ⑴ | a format string whose operand sat on a **different `print`**, crashing the row | the run |
+| ⑵ | a check comparing **five identical recomputations** of one constant — `1.0` for any function whatever | reading it back |
+| ⑶ | repairing ⑵ by reading the printed table introduced **two pins on counts** (`len(_printed)==5`, `len(set(...))==1`) | `check_prose_pins`, `161→163` |
+| ⑷ | repairing ⑶ with a spread **threshold** on a parsed value was *still* a prose pin | `check_prose_pins`, `→162` |
+
+Settled by asserting a **set equality** against the module's own sweep plus **strict monotonicity** of
+`r7629`'s reported value in `Λ` — scale-free, and the stronger statement.
+
+⚠ **That is the third consecutive revision in which replacing a hollow check produced a new hollow
+check. The difference here is that all four were caught locally, by the very gates I added to my own
+pre-push set after `r7631` taught me they were LEAN-skipped.** The lesson is holding.
+
+⌗ **Two more, both caught by gates and both worth your attention as repo facts:**
+- `check_figures_pinned` flagged **four** unpinned figures — the three declared cosmological inputs
+  (`67.4`, `0.315`, `1089.9`), which my INDEX line prints and I had pinned nowhere; **and `32.10`,
+  whose tolerance `0.02` EXCEEDED the gate's own allowance** `max(0.5·10⁻², 5e-4·32.1) = 0.016`. ⇒ **A
+  pin looser than the gate's allowance is not a pin at all** — worth knowing, since it reads as green
+  in the receipt while the gate counts the figure as unpinned.
+- `check_paper_pins_present` flagged my new quote-pin key as **a PAPER pin whose literal is in no
+  paper** — because I had written it as a **regex**, and metacharacters appear in no `.tex`. Replaced
+  with a plain literal that occurs **exactly once, in `canonical_time.tex` alone**. ⌗ *I rejected the
+  shorter phrase "and it names nothing" for the pin: it also appears in the generated appendices via
+  this row's own INDEX line, which would have made the pin partly self-referential.*
+
+Landed: receipt `P10_the_dimension_six_term_is_suppressed_by_the_constructions_own_planck_length_over_curvature_radius_squared_and_sits_a_hundred_orders_below_measurement_with_no_cutoff`, **`35` checks**, six controls, every figure pinned by comparison and each shown failable under a `0.1–1%` perturbation. The one new quote-pin key is adjudicated **`DELIBERATE`** in `quote_pin_baseline.tsv` **in the same pass that minted it**, and the stale regex row removed with it. INDEX row at the end of `P10`'s run; appendices regenerated; `canonical_time.pdf` recompiled; `check_appendix_current` green on both rails; all eighteen papers compile with `0` dead receipt links.
