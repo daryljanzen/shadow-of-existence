@@ -26043,3 +26043,103 @@ correct claim on the strength of a grid artefact.** The receipt is held on ⒜ r
 (own-comb) + `3` (unbanked `cr` spectra) + `4` (response grid) + `3` (P15 figure) + `2` (the `DPSRC`
 substitution) + `2` (comb-period reach)** — every one named with its reason and its router. **No seat has
 edited P15.** Container versions are on `requirements-ci.txt` exactly.
+
+## ⚑ `r7637+cc66.3` — **`3` RE-POINTED GREEN, `41` HELD WITH A NAMED REASON EACH, AND THE STRUCTURAL CAP: A RECEIPT'S FIGURES AND `P15`'s ARE ONE OBJECT, SO ONLY YOU CAN AUTHORISE THE SECOND HALF**
+
+Full detail in `computations/beyond_the_wall/r7637_cc66_P15_repoint/RESULT.md`. ⌗ *This reply reports a
+step ⑴ that is **capped rather than finished**, and the cap is measured and gate-enforced. I would rather
+hand you that plainly than hand you 18 green receipts, four of which quietly compare the new arm against
+the old one and one of which un-pins a sentence in your paper.*
+
+## ⓵ THE THIRD RE-POINT, AND IT CORRECTED THE SHAPE OF TWO PINS RATHER THAN THEIR WIDTH
+
+**`the_free_streaming_knob_…`** — `rc=0`, 46 PASS, GATES ALL PASS. Its two moved pins were **absolute
+numbers cut to the old arm**, and the claim they serve — *"the shift is common to the two arms, so it is
+not a candidate for Delta"* — is a statement about **smallness relative to the shift**:
+
+| | old arm | arm of record |
+|---|---|---|
+| `d_l/l_A` difference between the arms | `1.70e-4` | **`3.9213e-4`** — which is **`1.2%` of the `0.03254` shift** |
+| envelope-rise difference | — | **`+2.3447e-3`** — **`0.9%` of the `0.257` rise** |
+| **contrast** difference, the quantity Delta IS | — | **`−6.80e-4`** (bound untouched) |
+
+⇒ **Re-cut scale-free AND pinned on the measured value to the pin rule: `2e-7` where the bound it replaces
+was `2e-4`.** *A thousand times tighter, so this is a corrected pin and not a loosened one.* Red on
+reverting the pointer (`1.70e-4`) — which also confirms the old pin was right for the old arm.
+
+⚑ **And it improved your pin coverage.** `check_figures_pinned` then reported `[STALE] P15 0.0004 cites
+…the_free_streaming_knob…`: **P15 prints `0.0004` beside it and nothing pinned that figure before.** The
+gate's rule is that the baseline *"can only shrink"*, so `--write-baseline` after reading the one row it
+names: `1383 → 1382`.
+
+## ⛔ ⓶ AND THE CAP, WHICH I FOUND BY TRIPPING OVER IT
+
+**`the_monopole_zero_point_…` was re-pointed GREEN — `rc=0`, 22 PASS — and I reverted it anyway.**
+
+`P15` prints **`1.040`** citing that receipt. The arm of record makes it **`1.044`** (your `1.044`,
+reproduced on a different code path). Moving the receipt's pin left the paper's sentence **unpinned**, and
+`check_figures_pinned` went red: `1386 unpinned … baseline 1383`, naming P15 and `CR_cosmology.tex`.
+
+The only two honest fixes are to print `1.044` in P15 — which your *"No seat edits P15"* forbids — or to
+pin `1.040`, **which is false on the arm of record.** ⇒ **So a green receipt is not a completed re-point**,
+and I reverted rather than ship either.
+
+**Measured exposure: `40` of my `44` are cited in `CR_cosmology.tex`, and for `13` the citing sentence
+prints a figure.** ⇒ **The receipts and the paper are one object on the arm of record, and only you can
+authorise the half I cannot touch.** ⌗ *`free_streaming` is the same coupling pointing the benign way, so
+this is not an argument for stopping — it is the reason the count is 3 and not 18.*
+
+## ⓷ WHERE THE `44` STAND, EVERY HOLD NAMED AND ROUTED
+
+| n | state |
+|---|---|
+| **3** | **re-pointed, green, pushed** — `shared_fraction`, `signature_collapses`, `free_streaming` |
+| **23** | held on `r7637_70_own_comb_statistic` — **as you ordered** |
+| **6** | held on **the response grids** ⇒ `70` |
+| **3** | held on **three unbanked `cr` spectra** ⇒ `70` |
+| **3** | held on **the comb-period mechanism reaching past the family** ⇒ `70` |
+| **2** | held on **a spectrum that is a different measurement** (`DPSRC`) ⇒ `69`/`70` |
+| **2** | held because **the re-point dissolves the receipt's own subject** ⇒ `69` |
+| **2** | held because **P15 prints the figure** ⇒ `69` |
+
+**⒜ The response grids, for `70` — and it is bigger than I said last turn.** Five banked directories
+besides `spectra/` carry **`83` `.npz` with ZERO arm-of-record counterparts**: `refit_grid` (20),
+`refit_grid185` (20), `r7093_directions/grid_oneclock` (18), `r7095_directions/grid_licensed` (18),
+`r7201_cc66_loading_lever` (7). ⇒ **The bank covered `spectra/` only.** Six of my receipts read one of
+these *alongside* a re-pointed spectrum, so re-pointing them compares the new arm against the old.
+
+**⒝ Two receipts whose subject the re-point dissolves — and both are explicable, not broken.**
+- **`the_crossing_spectrum_…_the_172_is_the_radiation_free_ruler`.** All three crossing spectra read
+  `l_A = 172.324` on the namesake and **`302.943`** rebuilt. **The `172` the receipt is named for is
+  gone**, because the rebuild moved `LEAFSCALES 0 → 1` along with the point. Its `lcdm` and `pinned` reads
+  are also **calibration anchors** (`r6782`: the two banked arms must return `1320.5` and `51817.0` before
+  a third spectrum goes on the scorer), and `pinned` is *"the SUPERSEDED configuration"* by its own
+  comment. ⇒ **Re-pointing those would destroy a calibration rather than move it** — which is exactly
+  what swapping every `_leafrec1` over its namesake does, and one more reason the dry run is a map.
+- **`the_133_bin_pair_…`.** Its PART 3 asks which of two arms a hardcoded row carried. The namesakes
+  differ (`max|dDl| = 2.41e-04`, `l_A 302.8891` against `302.8442`); the rebuilt pair is **BIT-IDENTICAL,
+  `0.0000e+00`**, because you banked one run for both names — as `r7637` says. ⇒ **There is no measurement
+  left to make.** The finding stands as a record of the old pair. **Your call** whether `h6862` should be
+  banked as its own run or PART 3 marked historical.
+
+## ⌗ ⓸ TWO SMALL ONES FOR `70`
+
+- `r6784_cr_crossing_hier_leafrec1`'s manifest `held` note reads *"here the arm of record (68.62,
+  0.2973)"*, but its own `point` and `switches` say `68.570730 / 0.291246`. The parenthetical names the
+  crossing background, not the arm of record — a wording slip, not a wrong run.
+- **`r6911_source` is the one family where the CONTROL moves too** (the `SRCXS` re-point), so a receipt
+  reading it needs a **per-file** map, not the per-arm one the rest take. Worth a line in `RECIPES.md`
+  before a seat applies `{'lcdm': '', 'cr': '_leafrec1'}` to it by habit.
+
+## ⓹ WHAT I NEED FROM YOU, IN ONE PLACE
+
+⑴ **May I regenerate the P15 figures and their banked numbers** (`cc66_fig_acoustic_numbers`,
+`nofit_figure_numbers`) with `corpus/make_fig_acoustic_two_arm.py`, and **may the figures P15 prints move
+with the arm**? That unblocks **5** receipts. If the answer is that P15 moves separately, say who moves it
+and I will hand them the old → new list.
+⑵ **The `DPSRC` pair**: restate the bit-identity as history, or have `70` bank an `r6885`-era counterpart?
+⑶ **`h6862`**: its own run, or PART 3 marked historical?
+
+**Nothing else is owed from here until ⑴–⑶ are answered or `70` pushes.** Gates: `PASS=120 FAIL=3` is the
+tree's standing shallow-clone pair plus one I have **fixed** — `check_figures_pinned` is green again at
+baseline `1382`. No seat has edited P15.

@@ -174,3 +174,107 @@ on history cannot be re-pointed onto a post-wiring run**, and restating it is a 
 than a re-point. ⇒ `P15_the_model_difference_…` and `P15_the_source_decomposition_…` **held for `69` to
 rule.** ⌗ *The `6.8e-13` thread-count wobble `70` gated at `1e-11` is a different thing entirely; this is
 `2.3e-1` and it is physics, not summation order.*
+
+---
+
+## ⓸ `P15_the_free_streaming_knob_is_common_to_both_arms_and_the_switch_sweep_finds_no_further_shadow`
+
+**Re-pointed and green: `rc=0`, 46 PASS, 0 FAIL, GATES ALL PASS.** Two pins moved; **both were absolute
+numbers cut to the old arm, and both are re-cut SCALE-FREE rather than widened.**
+
+| figure | old arm | arm of record |
+|---|---|---|
+| largest band-by-band shift difference | `0.174` multipoles | **`0.1853`** (bound `< 0.20`, unchanged) |
+| extremum-averaged `d_l/l_A` difference | `1.70e-4` | **`3.9213e-4`** |
+| the shift itself, `d_l/l_A` | `0.032543` | `0.032543` (control) / **`0.032151`** (arm) |
+| envelope rise, control / arm | — | `1.257337` / **`1.259682`**, difference **`+2.3447e-3`** |
+| **contrast** difference — the quantity Delta IS | — | **`−6.80e-4`** |
+
+**⇒ The claim survives, and the pins were the wrong shape.** *"The free-streaming shift is common to the
+two arms, so it is not a candidate for Delta"* is a statement about **smallness relative to the shift**,
+but the pin read `_fd < 2e-4` — an absolute number that happened to fit the old arm. On the arm of record
+the arms' shifts agree to **`3.9213e-4`, which is `1.2%` of the `0.03254` shift**, and the envelope
+difference is **`0.9%` of the `0.257` rise**.
+
+⌗ **So this is not a loosened pin, it is a corrected one.** Each is now pinned BOTH on the measured value
+to the pin rule (`2e-7` and `1.2e-6`) **and** on the scale-free inequality (`< 2%` of the shift, `< 1%` of
+the rise). ⇒ *The absolute tolerance it replaces was `2e-4`; the new pin on the same quantity is `2e-7`,
+a thousand times tighter.* The **contrast** difference keeps its absolute bound untouched, because that is
+the quantity the claim is actually about and it has not changed character (`−6.8e-4` against the stated
+`6e-4`, and the receipt's prose is corrected to `6.8e-4`).
+
+**PERTURBED UNTIL RED:** the pointer reverted to the old arm gives `_fd = 1.70e-4` and both pins go
+**RED**. ⌗ *And `1.70e-4` is inside the old `2e-4` bound — so the perturbation also confirms the old pin
+was correct for the old arm.*
+
+**⚑ And it IMPROVED the corpus's pin coverage.** `check_figures_pinned` then reported
+`[STALE] P15 0.0004 cites …the_free_streaming_knob… -- now pinned or gone`: P15 prints `0.0004` beside
+this receipt, and the tightened pin now **covers** it where nothing did before. The gate's own rule is
+that *"a baselined one that comes to be pinned is STALE and fails, so the baseline can only shrink"*, so
+`--write-baseline` was run **after reading the one row it names**: `1383 → 1382`, one row deleted.
+
+---
+
+# ⛔ THE HELD SET: `41` OF `44`, EVERY ONE WITH A NAMED REASON AND A ROUTER
+
+| n | held on | receipts |
+|---|---|---|
+| **23** | `r7637_70_own_comb_statistic` — **as ordered** | the band-ratio / band-1-step family |
+| **6** | **the response grids, not banked at the arm of record** | `de_tilted`, `full_range_refit`, `no_fit_confrontation`, `phase_slope`, `refit_leaves`, `refit_bound_figures` |
+| **3** | **three `cr` spectra not in the bank** | `a_source_with_no_physics`, `contrast_excess_is_symmetric`, `locator_is_good` |
+| **3** | **the comb-period mechanism, reaching past the family** | `acoustic_contrast`, `there_is_no_phase_residual`, `cross_term` |
+| **2** | **a spectrum that is a different measurement** (`DPSRC` wired after its namesake was banked) | `model_difference`, `source_decomposition` |
+| **2** | **the re-point dissolves the receipt's own subject** | `crossing_spectrum`, `133_bin_pair` |
+| **2** | **P15 prints the figure, and no seat edits P15** | `monopole_zero_point`, `three_quarters` |
+
+## ⛔ THE COUPLING THAT CAPS THIS ORDER: A RECEIPT'S FIGURES AND P15's ARE ONE OBJECT
+
+**Measured, not argued.** `40` of my `44` are cited in `corpus/CR_cosmology.tex`, and for **13** of them the
+citing sentence **prints a figure**. `check_figures_pinned` enforces the join: *"does a figure a citing
+sentence prints fail its receipt when it is wrong?"*
+
+I found this the hard way and report it as such. **`monopole_zero_point` was re-pointed GREEN — `rc=0`, 22
+PASS — and it still had to be reverted**, because P15 prints `1.040` citing it, the arm of record makes
+that `1.044`, and moving the receipt's pin left the paper's sentence unpinned:
+
+```
+[UNPINNED] P15              1.040  cites P15_the_monopole_zero_point_…  (+2)
+[UNPINNED] CR_cosmology.tex 1.040  cites P15_the_monopole_zero_point_…
+1386 unpinned figure(s) …; baseline 1383
+```
+
+⇒ **A green receipt is not a completed re-point.** The honest options were to print `1.044` in P15 — which
+*"No seat edits P15"* forbids — or to pin `1.040`, which is **false** on the arm of record. So the receipt
+is reverted and held. ⌗ *`free_streaming` shows the benign direction of the same coupling: there the
+re-point made the paper's figure MORE pinned, and the baseline shrank.*
+
+⇒ **This is the cap on step ⑴, and it is structural rather than a shortfall of effort.** The arm of record
+moves figures the paper prints; the receipts and the paper have to move together, and only one seat can
+authorise the second half.
+
+## ⌗ TWO SMALLER THINGS FOR `70`
+
+- **`r6784_cr_crossing_hier_leafrec1`'s manifest `held` note says *"here the arm of record (68.62,
+  0.2973)"*.** Its own `point` and `switches` say `CRH0 = 68.570730`, `CROM = 0.291246`. The parenthetical
+  names the crossing configuration's background, not the arm of record — a wording slip in the manifest,
+  not a wrong run.
+- **`r6911_source` is the one family where the CONTROL also moves** (the `SRCXS` re-point), so a receipt
+  reading it needs a **per-file** map and not the per-arm `AOR` the others use. Worth a line in
+  `RECIPES.md` so no seat applies `{'lcdm': '', 'cr': '_leafrec1'}` to it by habit.
+
+## ⌗ AND ONE INSTRUMENT I BUILT, TRIED AND THREW AWAY
+
+To predict *which* of the 13 figure-printing receipts the coupling would block, I wrote a cheap test:
+does a figure P15 prints appear in the receipt's old output but not its new one? **It reported "no printed
+figure left the output" for `monopole_zero_point` — the one case I had already PROVEN blocked**, by
+running the gate and watching it go from `1383` to `1386`.
+
+⇒ **The test was blind, and in the one direction that mattered.** It checks whether a literal string moves
+in the output; the gate checks whether the **receipt still pins the figure**, and a figure can sit in the
+prose as a quoted reference while the pin underneath it moves. ⇒ *Discarded, and recorded here so no seat
+reaches for it.* **The only valid test is the empirical one: re-point, run `check_figures_pinned`, read
+the verdict** — which is what each of the four re-point attempts above went through.
+
+⌗ *Third blind instrument caught this revision, after the shallow-clone `--follow` at `r7635` and the
+dry-run `[FAIL]` column above. All three were caught the same way: by asking whether the answer **varied**
+where it should, not whether the thing ran.*
