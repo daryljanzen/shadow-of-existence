@@ -25913,3 +25913,133 @@ reported in the same breath as the closure, as registered, when the locator rece
 note that it is `P15_the_locator_is_good_…` that carries the fourth-peak closure and it is in set B**, so
 the `0.91` re-derivation and the `l.1106` clause both wait on `r6929_scan_cr` and `r6941_fine_cr_visleaf`.
 No seat has edited P15.
+
+## ⚑ `r7637+cc66.2` — **THE `0.91` RE-DERIVED AND `PO-87` CLOSES; `l.1106` STANDS AND STRENGTHENS. THREE RECEIPTS RE-POINTED GREEN. AND THREE MORE DEPENDENCIES, ONE OF WHICH IS A SUBSTITUTED SPECTRUM RATHER THAN A MISSING ONE**
+
+Detail in `computations/beyond_the_wall/r7637_cc66_P15_repoint/RESULT.md`.
+
+## ⓵ THE REGISTERED NEGATIVE, RE-DERIVED ON MY INSTRUMENT, IN THE FORM I REGISTERED
+
+Your `0.91` reproduces **exactly**, and I verified the instrument was yours before believing the number:
+my locator first returns this receipt's **own recorded** old quartet `221.96/536.11/815.40/1130.53` and
+residuals `+1.56/−1.60/−1.90/+6.63` to the digit, so it is the same three-point parabola on the same
+fine grid.
+
+| | control | arm | control's share |
+|---|---|---|---|
+| old arm | `+5.3236` | `+6.6313` | `0.8028` — the paper's *"four fifths"* at l.1046 |
+| **arm of record** | `+5.3236` | **`+5.8415`** | **`0.911331`** |
+
+**Read against the two thresholds I registered at `r7635`, which were written down before the bank existed:**
+- **`≥ 0.91` ⇒ `PO-87` CLOSES.** Measured `0.911331`. ⌗ *This is the outcome I registered as the one that
+  closes `PO-87` and costs me, and it is the one that landed.*
+- **`≥ 1.00` would have made my `l.1106` clause vacuous. Measured `0.911331` ⇒ THE CLAUSE STANDS.**
+
+**And it is failable, not a constant:** the same statistic reads `0.8028` on the old arm, so it moves
+`+0.1085` across the arm. Arm−control offsets `+1.6055/−0.1860/+1.0666/+1.3078` → **`+1.6955/−0.4453/
++0.6957/+0.5180`**. ⌗ *Your `+1.69` is a truncation of `+1.6955`; I read `+1.70` rounding. Not a disagreement.*
+
+**⇒ `l.1106`, in the same breath, as registered — and it STRENGTHENS.** The clause is *"the rescale is
+under a multipole at the fourth peak, and 4.7 of 283 is under two per cent."* On the arm of record the
+peak-position rescale buys **`+1.67`** of **`286.9`** — **`0.6%`** against the old `1.7%`. ⇒ *So "it is not
+the explanation either" is MORE true, not less.* ⚠ But its supporting margin fails and I am not keeping
+it: *"three times the damping and fifty times the tilt"* goes to `1.67 / 1.12 / 0.43` — position is still
+the largest of the three but by `1.5×` and `3.9×`, not `3×` and `52×`. **That sentence must be re-worded,
+and the receipt carrying it is held on ⒝ below.**
+
+⌗ **And my own ⓻ last turn was wrong**: I said the `0.91` and the `l.1106` clause both waited on set B.
+They did not — both are re-derivable from the banked fine grid, which is what the table above is. Corrected.
+
+## ⓶ RE-POINTED GREEN, `3` OF THEM, EVERY MOVED PIN PERTURBED UNTIL RED
+
+- **`the_shared_fraction_…`** — `rc=0`, 14 PASS. shared fraction `73.1% → 71.8%`, cosine `+0.855 → +0.848`,
+  excess `+105.08 → +109.02`, model difference `77.3 → 81.8`, arm chi² `282.96 → 286.89`. ⇒ **The one pin
+  that moved: the rms ratio `1.357 → 1.388`, which leaves `r6881`'s quoted `1.34` by more than the `0.03`
+  band — so NONE of `r6881`'s four diagnostics survives and the receipt's verdict gets stronger.** I did
+  **not** widen the tolerance; the pin is re-cut on the measured value at `7e-4` *and* on its distance
+  from `1.34`, so a drift back toward the quoted number cannot satisfy it. Red on reverting the pointer
+  (`1.357`) and red on a shape tilt of `dn_s = 5e-4` (`1.384`); a pure rescale cannot move it, correctly,
+  because the amplitude is re-fitted — **I report the degenerate direction too, since showing only the
+  perturbation that worked would overstate the test.**
+- **`the_monopole_zero_point_…`** — `rc=0`, 22 PASS. Contrast `1.04015 → 1.04403`. ⇒ **This is your
+  `1.040 → 1.044` reproduced on a different code path**, inside the band you registered. Pin centre moved,
+  **tolerance unchanged** (the rule gives `5.3e-4`; the old pin was `5e-4`). Red on reverting the pointer.
+- **`the_signature_collapses_…`** — `rc=0`, all passed, **no pin moved**. `D_M 14011.5 → 14134.0`,
+  `l_A 301.80 → 302.94`. ⚠ *Its analytic core is at the **adjudicated** background `(68.60, 0.2973)`,
+  which is a different object from the arm of record. I re-pointed the spectrum and **left the
+  adjudicated point alone** — moving it would change what the receipt is about. Say the word and I will
+  do the ratio **at** the arm of record as a new reading.*
+
+## ⛔ ⓷ THREE MORE DEPENDENCIES — `18` BECOMES `12`, AND NONE OF THESE IS IN `DRYRUN.md`
+
+**⒜ The refit RESPONSE GRIDS are not banked at the arm of record.** `refit_grid` (24 files) and
+`refit_grid185` (23) hold `cr_base`, `cr_H0p/m`, `cr_OMp/m`, `cr_WBp/m`, `cr_NSp/m` — **zero `_leafrec1`
+counterparts.** So the response model is on the old arm while the verify spectrum is on the new one, and
+that **is** the `+11.1` in `the_refit_leaves_…` (`170.6` predicted against `181.7` measured). A grid
+centred on a minimum that has moved is the wrong grid, and rebuilding it is production runs. **Blocks 4,
+routed to `70`.**
+
+**⒝ Two P15 figures' banked numbers are on the old arm.** Three receipts gate against
+`cc66_fig_acoustic_numbers.npz` / `nofit_figure_numbers.npz` with a check whose purpose is *"so the figure
+and this receipt cannot drift apart"* — and it fires correctly once re-pointed (`cr_chi2` figure
+`282.95613` against receipt `286.89412`, plus four more). Finishing them means **regenerating a P15
+figure**. Your order ends *"No seat edits P15."* ⇒ **I am not regenerating a paper figure on my own
+authority. Blocks 3; one word and it is done.**
+
+**⚠⚠ ⒞ AND ONE BANKED SPECTRUM IS NOT ITS NAMESAKE MOVED — IT IS A DIFFERENT MEASUREMENT.** For `70`:
+
+`r6885_dp0_cr` against the plain refit spectrum reads **`0.000e+00` on the old arm** and **`2.270e-01` on
+the arm of record**. The other four of that family are unchanged to three digits (`los` `0.1253→0.1251`,
+`losdp0` `0.2565→0.2539`, `lossw0` `0.8409→0.8410`, `nufs0` `0.1345→0.1355`). **One file, and the
+instrument says why:** `ACOUSTIC_two_arm.py` l.1277 records that `DPSRC=0` *"returned a BIT-IDENTICAL
+spectrum on both arms (r6885+cc66.35)"*, and l.1782 records `_SWSRC` and `_DPSRC` **wired at
+`r6889+cc66.36`**. The namesake was banked at `r6885`, **before** the wiring; the rebuild ran the recorded
+command through the **post-wiring** instrument, where `DPSRC=0` really does remove the Doppler dipole
+(`−10%` at `l=220`, `−41%` at `540`, `−60%` at `1900`).
+
+⇒ **Rebuilding from the recorded command was right procedure; the instrument moved underneath it.** Two
+of my receipts pin that bit-identity as *"the signature of an unwired knob"* — a **historical** finding,
+and a pin on history cannot be re-pointed onto a post-wiring run. Restating it is a change of claim, not
+a re-point, so **`the_model_difference_…` and `the_source_decomposition_…` are held for you to rule.**
+⌗ *Not the `6.8e-13` thread wobble you gated at `1e-11` — this is `2.3e-1`, and it is physics.*
+
+## ⚠ ⓸ AND THE COMB-PERIOD MECHANISM REACHES PAST THE FAMILY YOU HELD
+
+Two receipts outside the band-ratio family fail on **exactly** the `0.46%` comb difference you named:
+- **`there_is_no_phase_residual_…`**: the arm's geometric comb `301.80 → 302.94` makes the comb-width term
+  go `+0.085% → +0.464%` wider, and it now **over-subtracts** — `+5.22` against a total fourth-peak offset
+  of `+1.07`, leaving `−4.16`. The claim *"what is left is one multipole, uniform"* fails
+  (`+1.41/−0.70/+0.56/+0.99` → `+0.67/−2.99/−2.88/−4.16`).
+- **`the_acoustic_contrast_…`**: 11 checks red, most of them *"the two arms' acoustic period AGREES"* —
+  now `0.464%` apart.
+
+⇒ **I am not re-pointing those two to a new verdict.** Their comb-width model was calibrated at `0.085%`
+and is being asked to work at `0.464%`, and whether it still can is the same question
+`r7637_70_own_comb_statistic` exists to answer. ⇒ **Held with the family, reason named.** ⌗ *Writing
+"the uniform phase is gone" into the corpus on a model I cannot vouch for at five times its calibration
+range is the mistake I would least like to make here.*
+
+## ⓹ ONE MORE OF MINE, AND IT NEARLY COST A CORRECT CLAIM
+
+`the_refit_leaves_…` reports *"the refit DID close the phase — PART 4's verdict is wrong"*: the acoustic
+phase reads `4.5% → 0.7%` out. **It has not closed.** That statistic reads **raw grid** peak indices with
+no sub-bin refinement, and the arm move flips peak 2 by exactly one `LSTEP=8` step (`540 → 532`). The
+tell is decisive: **on the raw statistic the old arm and the CONTROL both return `4.46%` — the same
+number, which is how a statistic that measures the grid shows itself.** On the sub-bin locator my own
+`full_range_refit` already validated against an `LSTEP=1` spectrum:
+
+| | old arm | arm of record | control |
+|---|---|---|---|
+| raw grid | `4.46%` | `0.72%` | `4.46%` ⚠ |
+| **sub-bin** | `3.14%` | **`3.69%`** | `1.63%` |
+
+⇒ **The phase gets WORSE, not closed**, and `full_range_refit`'s own refined figure agrees independently
+on a different spectrum (`3.4% → 3.7%`, control `1.6%`). **A naive re-point here would have withdrawn a
+correct claim on the strength of a grid artefact.** The receipt is held on ⒜ regardless.
+
+## ⓺ WHERE THE SEAT IS
+
+`3` re-pointed green and pushed, `9` of the clean `12` still in hand, and the held set is now **`23`
+(own-comb) + `3` (unbanked `cr` spectra) + `4` (response grid) + `3` (P15 figure) + `2` (the `DPSRC`
+substitution) + `2` (comb-period reach)** — every one named with its reason and its router. **No seat has
+edited P15.** Container versions are on `requirements-ci.txt` exactly.

@@ -48,7 +48,8 @@ COMPUTES: scope.
   * ** THE NEW SWITCH'S DEFAULT IS PROVED AND NOT ASSERTED **: both arms' bases are re-run against the
     edited file and gated BIT-IDENTICAL against the banked screen, before any other number is read.
   * The alternation and contrast statistics are computed in the binned, lensed, amplitude-fitted space
-    `cc66.35` defined them in, and the contrast reproduces its $1.0401$ as a check on the machinery.
+    `cc66.35` defined them in; on the arm of record the contrast reads $1.04403$ against that
+    receipt's $1.0401$, and the control against itself is exactly one, which is the machinery check.
   * ** NOT CLAIMED: a mechanism for the contrast imbalance. **  `r6897` says this is an order to
     measure a displacement and check whether two residuals are one, and that no mechanism is being
     asked for and none should be claimed.
@@ -339,8 +340,9 @@ if FAILS:
 print("""
   ** THE TWO STATISTICS, IN cc66.35's OWN SPACE. **  Both are read off the binned, lensed,
   amplitude-fitted model, and the CONTRAST is `cc66.35`'s own statistic -- the regression of one arm's
-  envelope-normalised oscillation on the other's -- so it reproduces its 1.0401 as a check that the
-  machinery here is the same machinery.
+  envelope-normalised oscillation on the other's.  On the arm of record it reads 1.04403 against that
+  receipt's 1.0401 -- moved with the arm, and inside the [1.02, 1.07] band r7635+70 registered -- while
+  the control against itself is EXACTLY one, which is the check that the machinery is the same.
 
   ** AND THE ALTERNATION IS NOT A SECOND DIFFERENCE, WHICH IS THE ONE PLACE THIS COULD HAVE GONE
   WRONG QUIETLY. **  A second difference of the peak heights vanishes on a LINEAR trend, and the
@@ -413,16 +415,20 @@ def alternation(m, deg=2):
     return float(b[-1]), pk
 
 
-M_ARM = fit_amp(*sp('cc66_r185_verify_cr.npz'))
+# r7637+cc66: the arm of record is the `_leafrec1` bank (r7635+70); the control does not move.
+M_ARM = fit_amp(*sp('cc66_r185_verify_cr_leafrec1.npz'))
 A_L, _pk = alternation(REF)
 A_C, _ = alternation(M_ARM)
 C_C = contrast(M_ARM)
 print(f"    the acoustic peaks the statistics are read at: l = {[round(LCK[j]) for j in _pk]}")
 print(f"    control: contrast {contrast(REF):.5f}   alternation a = {A_L:+.6f}")
 print(f"    arm    : contrast {C_C:.5f}   alternation a = {A_C:+.6f}")
-check("the contrast statistic reproduces `cc66.35`'s 1.0401 for the arm against the control, so the "
-      "space these two statistics live in is that receipt's space and not a new one",
-      abs(C_C - 1.0401) < 0.0005 and abs(contrast(REF) - 1.0) < 1e-12,
+check("the contrast statistic is still `cc66.35`'s -- the control against itself is EXACTLY one -- and "
+      "on the arm of record it reads 1.04403, having MOVED off that receipt's 1.0401 by 0.0039 with "
+      "the arm.  ⌗ *Inside the [1.02, 1.07] band `r7635+70` registered for it, so the move is the "
+      "arm's and not a change of space; the tolerance is the pin rule's 5.3e-4 for this magnitude, "
+      "which is the 5e-4 the old pin already carried -- only its centre moves*",
+      abs(C_C - 1.04403) < 5.3e-4 and abs(contrast(REF) - 1.0) < 1e-12 and 1.02 <= C_C <= 1.07,
       f"arm {C_C:.5f} against cc66.35's 1.0401; the control against itself {contrast(REF):.5f}")
 check("⚑⚑ ** AND AGAINST THE CONTROL THE TWO RESIDUALS POINT OPPOSITE WAYS: the arm's CONTRAST is four "
       "per cent HIGHER and its ALTERNATION is about two per cent LOWER. **",
@@ -526,7 +532,7 @@ def three_peaks(f):
 
 
 PK = {t: three_peaks(f) for t, f in (('control', 'cc66_r185_verify_lcdm.npz'),
-                                     ('arm', 'cc66_r185_verify_cr.npz'))}
+                                     ('arm', 'cc66_r185_verify_cr_leafrec1.npz'))}
 for t, v in PK.items():
     print(f"    {t:8s} peaks at l = {[round(a) for a, _ in v]}   heights "
           f"{[round(b, 4) for _, b in v]}   P1/P2 = {v[0][1]/v[1][1]:.4f}   "
