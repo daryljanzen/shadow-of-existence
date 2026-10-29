@@ -325,8 +325,10 @@ def main():
     # ⌗ ONE pin, not four, and it is the one where the wording IS the claim: the ledger's own verdict
     #   sentence on `PO-23`.  If the ledger rewords THAT, this seat wants to know.  The rest is a
     #   STRUCTURAL absence (`PO-89` is not struck -- an absence pins nothing) plus reported context.
+    # ⛭ RE-PINNED r7635 (69, which struck PO-89 as its completion carried to stated limits): the register still
+    #   moves WITH the paper -- P07 now states the completion carried to stated limits, and PO-89 is struck for it.
     _moved = ("`PO-23`'s strike is upheld" in _led
-              and '~~**PO-89**~~' not in _regs)
+              and '~~**PO-89**~~' in _regs and 'STRUCK r7635' in _regs)
     _ctx = ('the definition and its completion are two objects' in _led,
             '| **PO-89** |' in _regs,
             "THE COMPLETION OF THE INTERACTING TOWER'S DEFINITION" in _regs)
@@ -351,8 +353,8 @@ def main():
     check('⓶ᵃᐟ ⚖ and the REGISTER MOVED WITH THE PAPER rather than against it, which is what makes '
           'this a withdrawal and not a drift: the ledger states in its own verdict that `PO-23`\'s '
           'strike is UPHELD for the definition that was delivered, and `PO-89` -- the row carrying '
-          'the completion -- is NOT struck.  ** Paper, ledger and register all current and all '
-          'agreeing; the receipt was the one layer that had not moved **',
+          'the completion -- is struck at r7635 because the paper now carries the completion to stated '
+          'limits.  ** Paper, ledger and register all current and all agreeing **',
           _moved)
     po6 = [l for l in prot.split('\n') if re.match(r'\|\s*~*\*\*PO-6\*\*', l)]
     # ** ⛭⛭⛭ AND HERE IS THE FINDING BEING ACTED ON, IN THE REGISTER ITSELF (re-pinned r3962). **
@@ -409,10 +411,11 @@ def main():
           #   ⌗ Verified before adopting: the whole sentence stands ONCE in the flattened
           #     `canonical_time.tex` and once under `_unmark`.
           # ⛭ RE-PINNED r7523 (69, whose P10 edit moved this wording): the completion of the definition.
-          'What remains genuinely open is accordingly the completion of the ultraviolet definition of '
+          # ⛭ RE-PINNED r7635 (69, whose P10 edit carried the completion to stated limits): the same
+          #   distinction, the completion a different thing from a residual freedom, in P10's present sentence.
+          'What remains beyond the boundary is accordingly the completion of the ultraviolet definition of '
           'the tower sums, the definition itself being delivered below by the construction\'s own '
-          'regulator---a different thing from a residual freedom in the quantization at the boundary, '
-          'and not settled by being shared with every interacting field theory'
+          'regulator---a different thing from a residual freedom in the quantization at the boundary'
           in re.sub(r'\s+', ' ', p10))
     # ⛔⛭ AMENDED r4548, AND IT *** CRASHED *** RATHER THAN FAILING -- the third receipt in this
     #    line's work with a bare `next(...)`/`led[id]` over the ledger and no default.  ** r4525

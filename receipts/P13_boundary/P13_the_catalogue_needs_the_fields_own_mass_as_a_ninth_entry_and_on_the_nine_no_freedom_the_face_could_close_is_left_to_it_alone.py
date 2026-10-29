@@ -54,23 +54,36 @@ except AssertionError:
 finally:
     os.chdir(cwd)
 out = buf.getvalue()
-if '46 checks, 1 failure(s).' not in out:
+if '46 checks, 9 failure(s).' not in out:
     print('  the computation reported:', rc)
     for ln in out.splitlines():
         if 'FAIL' in ln or 'checks,' in ln or 'Error' in ln:
             print('   |', ln[:200])
 
-# r7633 (69): the gap this computation located was CLOSED by the landing it fed -- P10 now carries the
-#   non-Euclidean closer (finite quadratic-form energy, cc66's r7631) at the coupled sub-threshold condition.  So
-#   exactly one arm, the one that measured the gap as open, now fails, and is asserted to fail; the closure itself
-#   is pinned in P10 below.  Any OTHER failure is a regression.
+# r7635 (69): the computation's open-state arms read the papers' statement of PO-94's quantum half as OPEN and its
+#   terminal clause as still to be met.  r7633 closed the coupled-edge gap this computation located (cc66's r7631),
+#   and r7635 closed the half (60's r7634): the papers now say every freedom the face could close is closed
+#   elsewhere.  So exactly the arms that read the open state, the clause's wording and the gap now fail, and are
+#   asserted to; the closures are pinned below.  Any OTHER failure is a regression.
+EXPECT = ('Ⓘ the papers say in so many words that the list is NOT shown complete',
+          'Ⓘ DOES NOT VOID: none of the 5 completeness phrases',
+          'Ⓗ BUT NO sentence carries that closer to the coupled sub-threshold condition',
+          "Ⓗ and the papers' own next sentence says what stays open there",
+          "Ⓙ ⛔ THE REGISTRATION'S QUOTATION IS WRONG",
+          'Ⓙ the second half is as registered',
+          'Ⓙ ⇒ SO THE REGISTERED PREDICTION OF A QUALIFIED FIRE IS A MISS',
+          'VERDICT: ⇒ THE TERMINAL CLAUSE DOES NOT FIRE',
+          'VERDICT: and what this does deliver is the row moving')
 _fails = re.findall(r'^\s*\[FAIL\] (.*)$', out, re.M)
-gate("60's computation runs from source: 46 checks, the one failure the closed gap its own arm measured",
-     '46 checks, 1 failure(s).' in out and len(_fails) == 1
-     and _fails[0].startswith('Ⓗ BUT NO sentence carries that closer to the coupled sub-threshold condition'))
+gate("60's computation runs from source: 46 checks, the 9 failures exactly the arms that read the now-closed open state",
+     f'46 checks, {len(EXPECT)} failure(s).' in out and len(_fails) == len(EXPECT)
+     and all(any(f.startswith(e) for e in EXPECT) for f in _fails))
 _p10 = ' '.join(open(os.path.join(ROOT, 'corpus', 'canonical_time.tex'), encoding='utf-8').read().split())
 gate("and the gap is closed in P10: the coupled condition is not the face's alone, finite form energy selecting it",
      "it is not the face's alone: finite quadratic-form energy, which makes no appeal to Euclidean smoothness" in _p10)
+_p7 = ' '.join(open(os.path.join(ROOT, 'corpus', 'CR_framework.tex'), encoding='utf-8').read().split())
+gate("and the half is closed in P7: every freedom the face could close is closed elsewhere",
+     "So every freedom of the quantum theory the face could close is closed elsewhere" in _p7)
 gate("the voiding control does not void; all 8 entries scoped by located sentences, 0 unscoped",
      'Ⓘ DOES NOT VOID' in out and '8 with a scoping sentence located verbatim and 0 unscoped' in out)
 gate("the extension's threshold derived as gamma = 3/4, the extension one real parameter",

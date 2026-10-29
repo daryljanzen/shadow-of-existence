@@ -1,0 +1,6 @@
+  cr on /tmp/claude-0/-home-user-shadow-of-existence/4913e7eb-3c04-585c-bc52-ac1b69fc5eb8/scratchpad/refit1 (185 bins): chi2 at base 452.9, refitted 298.2
+     H0  68.581133 ->  68.570730  (-0.01 steps)
+     OM   0.297209 ->   0.291246  (-0.40 steps)
+     WB   0.021524 ->   0.021643  (+0.15 steps)
+     NS   0.997952 ->   1.015066  (+0.86 steps)
+  BEST H0=68.570730 OM=0.291246 WB=0.021643 NS=1.015066

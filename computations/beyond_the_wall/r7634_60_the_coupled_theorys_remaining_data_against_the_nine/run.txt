@@ -1,0 +1,89 @@
+
+==================================================================================================
+  Ⓘ  THE VOIDING CONTROL, ASKED FIRST: IS THIS MAPPING ALREADY IN THE PAPERS?
+==================================================================================================
+   a mapping phrase 'the coupled data fall inside the nine': no paper
+   a mapping phrase 'every coupled datum': no paper
+   a mapping phrase 'the coupled theory adds no entry': no paper
+   a mapping phrase 'mapped into the nine': no paper
+   a mapping phrase 'the nine cover the coupled': no paper
+
+==================================================================================================
+  Ⓐ  THE CLAUSE, ITS NEW SCOPE, AND THE ROUTE THIS LINE OPENED -- ALL LOCATED AT THIS HEAD
+==================================================================================================
+   the clause                     'over a list of freedoms shown complete' in ['CR_framework', 'CR_synthesis']
+   its second half                'every one the face could close is closed elsewhere' in ['CR_framework', 'CR_synthesis']
+   the open sentence              'the list is not shown complete' in ['CR_framework', 'CR_synthesis']
+   the open sentence's new scope  'for the coupled theory' in ['CR_framework', 'CR_synthesis']
+   the monograph this line routed as missing: 'Quantum Field Theory in Curved Spacetime' in ['CR_framework']
+
+==================================================================================================
+  Ⓑ  THE COUNTERTERM DATA: THE FIXED-BACKGROUND RANK MEASURED, THE QUANTIZED STEP IMPORTED
+==================================================================================================
+   located verbatim: 'the counterterm basis is one-dimensional at fixed background and two-dimensional once the scale factor is quantized'
+     in ['canonical_time']
+   on a GENERAL scale factor, in terms of H and its derivative:
+     R^2        = 36*(2*H**2 + Hdot)**2
+     Ric.Ric    = 12*(3*H**4 + 3*H**2*Hdot + Hdot**2)
+     Riem.Riem  = 12*(2*H**4 + 2*H**2*Hdot + Hdot**2)
+   the Jacobian of the three in (H, Hdot) has rank 2
+   on the ONE-PARAMETER family (the de Sitter case, Hdot = 0): [144*H0**4, 36*H0**4, 24*H0**4]
+   their ratios to the first: [1, 1/4, 1/6]
+
+==================================================================================================
+  Ⓒ  THE COUPLING INTRODUCES NO PARAMETER: THE SCALE FACTORS OUT OF THE REGULATOR, COMPUTED
+==================================================================================================
+   located verbatim: 'it carries no cutoff parameter at all' in ['canonical_time']
+   one term of the spectral sum: (c_n/alpha)**(-s)  against  alpha**s/c_n**s
+
+==================================================================================================
+  Ⓓ  THE VERTICES ENTER AT EXACTLY THE INVERSE-SQUARE ORDER, DERIVED RATHER THAN QUOTED
+==================================================================================================
+   located verbatim: 'the cubic and higher self-interactions enter at the same inverse-square order at the origin' in ['canonical_time']
+   the cubic's a^-3         -> kappa**2/x**2   exponent of x = -2
+   CONTROL, an a^-2 term    -> kappa**(4/3)/x**(4/3)   exponent of x = -4/3
+
+==================================================================================================
+  Ⓔ  THE DECISIVE ARM, AND IT IS P10's SENTENCE RATHER THAN THIS LINE'S ARGUMENT
+==================================================================================================
+   'the completion of the interacting tower' in ['CR_framework', 'canonical_time', 'CR_synthesis']
+   'That is a different thing from a residual freedom in the quantization' in ['canonical_time']
+   what the sentence is about, read rather than assumed: ...r straddling the threshold and the same thermal regularity supplies the condition fibre by fibre, so that what remains open is not the boundary condition but the \emph{completion of the interacting tower's definition}, the definition itself being delivered by the construction's own regulator. \emph{
+
+==================================================================================================
+  Ⓕ  THE MAPPING, AND THE VERDICT
+==================================================================================================
+   the coupling                               INSIDE (entry 4, the scale)    scaled by the one constant, and its regulator carries no cut
+   the cubic and quartic vertices             INSIDE (no new datum)          they enter at exactly the inverse-square order where the bou
+   the counterterms of the interaction        INSIDE (entry 8, with entry 4) the basis is one-dimensional at fixed background -- measured
+   the dimension-six counterterm              INSIDE (entry 8)               one of the counterterms above; the papers place what settles
+   the completion of the tower's definition   OUTSIDE -- AND NOT A FREEDOM   located verbatim, and the papers say in their own words that
+   inside the nine: 4;  outside but not a freedom: 1;  outside AND a freedom: 0
+
+==================================================================================================
+  CHECKS
+==================================================================================================
+   [ok ] Ⓘ DOES NOT VOID: of the 5 mapping phrases, 0 occur at all and none of their occurrences is about this subject, so no such mapping is already carried and there is something here to supply
+   [ok ] Ⓐ the clause is located at THIS head and unchanged -- a list SHOWN COMPLETE, and every freedom the face could close closed elsewhere -- read off the papers and not carried from the order
+   [ok ] Ⓐ and the open sentence now carries FOR THE COUPLED THEORY, located verbatim: so the free field is behind the clause and this list is what stands in front of it
+   [ok ] Ⓐ ⛭ AND THE ROUTE THIS LINE OPENED AT r7632 IS CLOSED: the standard monograph it reported as cited nowhere is now cited, so the classification rests on one source as recommended -- a HIT on this line's own routing rather than on the physics, and recorded because it was measured
+   [ok ] Ⓑ both numbers are the papers' own, located verbatim in one sentence: ONE at fixed background and TWO once the scale factor is quantized
+   [ok ] Ⓑ ⌗ THE STEP FROM ONE TO TWO IS IMPORTED AND LABELLED AS IMPORTED: it is the anomaly result of the seat that owns that paper, cited here and not re-derived -- what is measured below is the FIXED-BACKGROUND half, which is the half this line can check
+   [ok ] Ⓑ MEASURED on a GENERAL scale factor: the three quadratic invariants are functionally INDEPENDENT -- their Jacobian in the two independent data has rank 2, above one -- so a one-dimensional basis is NOT a fact about quadratic invariants in general
+   [ok ] Ⓑ CONTROL REPRODUCES r7632: on the one-parameter family the same three stand in FIXED numerical ratios and span ONE direction -- so `one-dimensional on the admitted family' is a measurement about THAT family and not a convention, which is what makes the import meaningful
+   [ok ] Ⓒ the papers state the regulator carries NO cutoff parameter at all, located verbatim
+   [ok ] Ⓒ COMPUTED: the scale leaves each term as the PURE PREFACTOR alpha^s, so it factors out of the whole sum and what remains is a function of pure numbers -- no dimensionful parameter survives inside the regulator, which is what `no cutoff parameter' amounts to
+   [ok ] Ⓒ and the quotient is independent of the scale, derivative identically zero, so the factoring is exact rather than a leading behaviour
+   [ok ] Ⓓ the papers state the cubic and higher self-interactions enter at the SAME inverse-square order at the origin, located verbatim
+   [ok ] Ⓓ DERIVED: the cubic's near-origin term comes out at EXACTLY the inverse-square order, the exponent being -2 and not approximately so -- so the vertices enter where the boundary coefficient already lives and add no datum of their own
+   [ok ] Ⓓ CONTROL: a term of a different power does NOT come out at -2 (it comes out at -4/3), so the result above is about the cubic and not about the substitution
+   [ok ] Ⓔ what remains open at the coupled edge is located verbatim: the COMPLETION OF THE INTERACTING TOWER's definition, named in three papers
+   [ok ] Ⓔ ⇒ AND THE PAPERS THEMSELVES SAY IT IS NOT A FREEDOM: `that is a different thing from a residual freedom in the quantization', located verbatim. That is the whole of the verdict below, and it is P10's sentence rather than this line's reading of it
+   [ok ] Ⓔ ADJUDICATED: the sentence's own run-up names the interacting tower AND the boundary condition, so its `that' is this object and not another -- which is the guard this line was bitten by before, applied here before the verdict leans on the sentence
+   [ok ] Ⓕ every datum the order lists falls INSIDE the nine except one, and that one is not a freedom -- so nothing on the coupled list is a freedom lying outside the nine
+   [ok ] Ⓕ THE REACHABLE NEGATIVE DID NOT ARRIVE: no datum of the coupled theory lies outside the nine and is closed by the face alone, so the quantum half's test is met nowhere at all
+   [ok ] VERDICT: ⇒ THE CLAUSE FIRES FOR THE QUANTUM HALF ENTIRE. The nine cover the free field (r7632) and the coupled edge is closed; the coupled theory's remaining data fall inside the nine; and what stands outside is an incomplete DEFINITION, which the papers themselves distinguish from a freedom. Every freedom the face could close is closed elsewhere
+   [ok ] VERDICT: ⚠ QUALIFIED TWICE, and both qualifications are findings rather than hedges -- the rank step from one to two is IMPORTED from the seat that owns that paper and is not measured here; and the decisive step is a LOCATED SENTENCE whose wording this line does not control, so if that sentence moves the verdict moves with it
+   [ok ] VERDICT: ⌗ and the one thing this line routed rather than fixed at r7632 -- the missing monograph -- is now cited, so the classification the fire rests on stands on one standard source as recommended
+
+   22 checks, 0 failure(s).

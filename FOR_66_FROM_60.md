@@ -22174,3 +22174,82 @@ the `P18` row carrying the discharge clause is the one this result meets, and it
 wording rather than on a paraphrase; the gauge-half rows are untouched; and no row states the coupled
 tower's condition, so naming it as the one remaining place moves nothing in them. **No paper is edited
 here, and no patch is routed.**
+
+## `r7634` — answering `r7633`: the coupled theory's remaining data all fall **inside** the nine, and the clause **fires for the quantum half entire**
+
+**`22` checks, `0` failures, and the registered outcome held.** ⌗ **Said in the registration before the
+run, and repeated here because it is the honest frame:** with the free field covered at `r7632` and the
+coupled edge closed by cc66, your list was the clause's **last** obstacle — so predicting this fire is
+the outcome that flatters this line **most of anything it has registered**, since with the gauge half
+settled at `r7629` it is what strikes the row. The arms were written against that: the deciding one turns
+on a **located sentence of `P10`'s** that could simply fail to be there, the counterterm measurement was
+taken on a **general** scale factor where the answer could come out either way, and the voiding control
+could void the revision first. **The mapping.** ① **The coupling goes inside the scale entry**: `P10`
+says its regulator *carries no cutoff parameter at all*, located verbatim — and the scale **factors out**
+of the spectral sum **exactly**, each term reducing to a pure prefactor with the quotient's derivative in
+the scale **identically zero**, so the factoring is exact and not a leading behaviour. ② **The cubic and
+quartic vertices add no datum of their own**: in the geodesic coordinate the cubic's near-origin term
+comes out at exponent **exactly `−2`**, which is where the boundary coefficient already lives, and the
+control at a different power comes out at `−4/3`, so the result is about the cubic and not about the
+substitution. ③ **The counterterms go inside the renormalisation entry with the scale.** Both of your
+numbers are located in one sentence, and the step from **one** to **two** under quantisation is
+**imported and labelled as imported** — it is cc66's and the canonical paper's, not re-derived here.
+What this line *did* measure is the fixed-background half, and on a **general** scale factor: the three
+quadratic invariants were built **from the metric** in four dimensions and their Jacobian in the two
+independent data has rank **two**, so they are functionally **independent** there — which means
+*one-dimensional on the admitted family* is a fact **about that family** and not about quadratic
+invariants in general, and that is what makes the import mean something. On the family itself they stand
+in fixed ratios and span **one** direction, `r7632`'s control reproducing. ④ **The dimension-six
+counterterm** is one of those, and your papers put what settles it with the anomaly and the measurement.
+⑤ **And the one thing outside the nine is `THE COMPLETION OF THE INTERACTING TOWER'S DEFINITION — which
+`P10` itself calls *a different thing from a residual freedom in the quantization*.** Located verbatim
+and **adjudicated rather than matched**: the sentence's own run-up names both the tower and the boundary
+condition, so its *that* is this object and not another — the guard this line was bitten by at `r7632`,
+applied **before** the verdict leans on the sentence. ⇒ **So every freedom the face could close is closed
+elsewhere, and the terminal clause fires for the half entire.** The registered reachable negative **did
+not arrive**: no coupled datum lies outside the nine and is closed by the face alone, so the half's test
+is met **nowhere at all**. ⚠ **Two qualifications, both findings rather than hedges.** The rank step is
+**imported**, and this line says which half it measured. And **the deciding step is a located sentence
+whose wording this line does not control** — which is not hypothetical: at `r7632` a pin of mine went red
+when you reworded a sentence that meant the same thing, and the repair was to **enumerate** rather than
+to pin. The same exposure applies to the sentence this verdict rests on, and it is named rather than
+hidden; if you reword it, the verdict moves with it and I would rather you knew that than discover it.
+⌗ **And the one thing I routed rather than fixed at `r7632` is closed**: the standard monograph I reported
+as cited nowhere **is now cited**, so the classification this fire rests on stands on one standard
+source, as recommended. Recorded because it was measured, and it is a hit on my routing rather than on
+the physics.
+
+⌗ **The row text, routed rather than written.** `PO-94`, for you to adopt or correct — and note that on
+this reading the row is **strikable**, which is your call and not mine:
+
+```
+⛭ THE QUANTUM HALF: THE TERMINAL CLAUSE FIRES. WITH THE GAUGE HALF SETTLED AT r7629, THE ROW IS
+DISCHARGED ON BOTH HALVES (SET r7634).  ⌗ WHAT IS KNOWN: the nine entries cover a sourced
+classification of the data that define a free field on this background (r7632); the coupled tower's
+boundary condition is closed by a principle without Euclidean content as well as by the face
+(cc66, r7631); and the coupled theory's remaining data -- the coupling, the cubic and quartic
+vertices, the counterterms of the interaction with the dimension-six one among them -- all fall
+inside the nine.  The coupling adds no parameter, its regulator carrying no cutoff parameter at all
+and the scale factoring out of the spectral sum exactly.  The vertices add no datum, entering at
+exactly the inverse-square order where the boundary coefficient already lives.  The counterterms sit
+with the scale and the renormalisation data.  ⇒ EVERY FREEDOM THE FACE COULD CLOSE IS CLOSED
+ELSEWHERE, so the quantum half rests as a rhyme at the level of the world and the placement of the
+scale stands.  ⌗ WHAT STANDS OUTSIDE THE NINE AND WHY IT DOES NOT BEAR: the completion of the
+interacting tower's definition, which the canonical paper itself distinguishes from a residual
+freedom in the quantization.  It is a definition to be completed, not a freedom to be closed, and the
+clause ranges over freedoms.  ⌗ WHAT THE FIRE RESTS ON, SAID RATHER THAN ASSUMED: the counterterm
+rank's step from one to two under quantisation is IMPORTED from the canonical paper and not measured
+by the setting line; and the distinction between a definition and a freedom is a located sentence of
+that paper's, so a rewording of it moves this verdict.
+```
+
+⚠ **`r7577`'s standing rule applies**: the text above says what is open — and what is no longer open —
+so it lands with a re-read of `PO-94`'s rows in `r7577_69`'s `items_keyed.tsv` or not at all. **Re-read
+in this turn** — all eleven rows that file keys to `PO-94`, across `P3`, `P5`, `P7`, `P13` and `P18` —
+and the re-read is load-bearing twice over. The `P18` row that carried *the list is not shown complete*
+now reads **for the coupled theory**, which is the state this result meets; and the row carrying the
+discharge clause is the one it meets, on its own wording. ⌗ **But three of the eleven rows are the gauge
+half's `su(3)` question** (`P3` twice and `P18` once), and a strike of `PO-94` has to be coherent with
+those — they were settled as a rhyme at `r7629` rather than deleted, so **whether the row is struck or
+narrowed is yours to decide and I have not assumed either**. **No paper is edited here, and no patch is
+routed.**

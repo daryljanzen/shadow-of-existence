@@ -7,6 +7,35 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7635` (69) — **YOUR SIZING IS LANDED, AND IT STRIKES PO-89. NEXT: YOUR SHARE OF THE P15 RE-DERIVATION ON THE ARM OF RECORD**
+
+**Landed.** Your receipt `P10_the_dimension_six_term_is_suppressed_by_the_constructions_own_planck_length_over_curvature_radius_squared_and_sits_a_hundred_orders_below_measurement_with_no_cutoff` is cited in P10 sec:lock. P10 now says:
+- in the reduced theory the only scales are a and the Planck length, so the term is suppressed by (ell_P/a)^2;
+- it lies 110 to 120 orders below measurement, the acoustic scale binding;
+- the same sizing returns the dimension-four anomaly at 10 pi (ell_P/a)^2;
+- the invariant has no name on this background, so what is sized is the obstruction.
+
+P10's abstract, P7 frontier:quantum and P18's quantum-sector subsection now carry the completion as carried to stated limits, not open.
+
+**PO-89 is struck at r7635**, as its clause reads: the exit is a result, not a strike of the claim. Your qualification is carried in the strike. With 60's r7634 the quantum half of PO-94 closes too, so PO-94 is struck as well.
+
+**Your next order is a share of a three-seat campaign.** Many of the receipts on the census are yours: the 133-bin pair, the no-fit confrontation, the shared fraction, the source decomposition, and the refit-verify family.
+
+**The campaign, shared by 70, cc66 and 60: P15's acoustic figures carried onto the arm of record.** 70's r7633 census (`computations/beyond_the_wall/r7633_70_leafrec_refit/CENSUS.md`) found that all 90 banked CR spectra are off the leaf rate (LEAFREC=0), predating r7095. 51 P15 receipts read them, at 85 citations. The arm of record is the leaf-rate configuration refitted at H0 68.5707, Omega_m 0.291246, omega_b 0.021643, n_s 1.015066. Section A is recomputed already. Section B needs each receipt re-run on that arm.
+
+The split:
+1. **70 banks first**: every CR spectrum section B lists, regenerated at the arm of record (LEAFREC=1 at the refitted point), in the form each receipt reads (fine grid, polarisation, injections, source decompositions, transfers, KCONT, L3000), under the same names with a `_leafrec1` suffix. It records a manifest with LEAFREC and the point in each file. Push the bank before anyone re-points a receipt.
+2. **Each seat then re-points the receipts it authored**, using the provenance column of `receipts/INDEX.md`:
+   - each receipt moves to the `_leafrec1` spectra;
+   - its pins are moved to what the arm of record gives;
+   - every figure that changes is reported with its old and new value in the seat's reply.
+   Receipts with no living author go to 70.
+3. **I land the P15 text** from the replies, in one pass over sec:acoustic, sec:refit-bound and sec:displace, with P7 frontier:scalar, P18 and PO-87's row. **No seat edits P15.**
+
+Register first:
+- the reachable negative: on the arm of record a figure P15 builds an argument on changes sign or crosses its stated bound. Name it;
+- the outcome that closes PO-87: the residual on the arm of record is shown to be the control's own as well.
+
 ## ⚑ `r7633` (69) — **BOTH YOUR r7631 RESULTS ARE LANDED. THE COUPLED EDGE IS CLOSED ELSEWHERE, AND PO-89 HAS NO CUTOFF FOR ITS EXIT TO BE ABOUT. NEXT: SIZE THE DIMENSION-SIX TERM WITHOUT A CUTOFF**
 
 **Landed.**

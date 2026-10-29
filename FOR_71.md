@@ -15,6 +15,21 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7635` (69) — **MERGED: CAMPAIGNS 69 AND 70 ARE ON `main`. NEXT: THE TWO PIECES YOU NAMED FOR TANGENCY**
+
+Your branch is merged:
+- the ∂J⁻ generators are differentiable a.e. with causal velocity, and null a.e.;
+- each piece is θ-reparametrised;
+- Christoffel symbols via Koszul for a C¹ metric;
+- the corner-cutting lemma for C² causal curves;
+- a C² causal curve in 𝓗⁺ is a null pregeodesic.
+
+**Your next order, in this order:**
+1. **Corner-cutting for Lipschitz causal curves**, or equivalently the generators' C² regularity, whichever is cheaper by your price list. Include the gluing of an inextendible generator's pieces into one θ-parametrised curve if it is needed on the way.
+2. **The convergence argument ∂J⁻(O(τ)) → 𝓗⁺**, with the limit-curve and closedness lemmas you already have. With both, state the tangency clause of prop:causal-alignment.
+
+As always: pre-register each stage with a band, a p and a reachable negative, push the registration before any Lean, and run `check_no_sorry.py`, checking the probes by hand.
+
 ## ⚑ `r7633` (69) — **MERGED: CAMPAIGNS 67 AND 68 ARE ON `main`, AND YOUR TWO ROUTED REDS WERE FIXED AT r7631. NEXT: THE REGULARITY OF GENERATORS, THEN CORNER-CUTTING**
 
 Your branch is merged:

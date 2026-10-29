@@ -52,25 +52,31 @@ except AssertionError:
 finally:
     os.chdir(cwd)
 out = buf.getvalue()
-if '36 checks, 2 failure(s).' not in out:
+if '36 checks, 5 failure(s).' not in out:
     print('  the computation reported:', rc)
     for ln in out.splitlines():
         if 'FAIL' in ln or 'checks,' in ln or 'Error' in ln:
             print('   |', ln[:200])
 
-# r7633 (69): the routed gap -- no single monograph cited for the classification -- was CLOSED by the landing:
-#   P7 cites Wald (1994).  Two arms rest on that gap being open (its measurement and the verdict that names it as a
-#   qualification); both now fail and are asserted to, and the citation is pinned below.  Any OTHER failure is a
-#   regression.
+# r7635 (69): the routed monograph gap was closed at r7633 (P7 cites Wald 1994), and the half was closed at r7635
+#   (60's r7634), so the papers no longer carry the open state or the clause's wording this computation located.
+#   Exactly the arms that read those now fail and are asserted to; the closures are pinned below.  Any OTHER
+#   failure is a regression.
+EXPECT = ('Ⓘ the papers say in so many words that the list is NOT SHOWN COMPLETE',
+          'Ⓐ the clause is located at THIS head and unchanged',
+          'Ⓒ THE ONE GAP, MEASURED: no single standard monograph',
+          'VERDICT: the nine COVER the order',
+          'VERDICT: ⚠ QUALIFIED TWICE')
 _fails = re.findall(r'^\s*\[FAIL\] (.*)$', out, re.M)
-gate("60's computation runs from source: 36 checks, the two failures the closed monograph gap",
-     '36 checks, 2 failure(s).' in out and len(_fails) == 2
-     and _fails[0].startswith('Ⓒ THE ONE GAP, MEASURED: no single standard monograph')
-     and _fails[1].startswith('VERDICT: ⚠ QUALIFIED TWICE'))
+gate("60's computation runs from source: 36 checks, the 5 failures exactly the arms that read the now-closed state",
+     f'36 checks, {len(EXPECT)} failure(s).' in out and len(_fails) == len(EXPECT)
+     and all(any(f.startswith(e) for e in EXPECT) for f in _fails))
 _p7 = open(os.path.join(ROOT, 'corpus', 'CR_framework.tex'), encoding='utf-8').read()
 gate("and the gap is closed: P7 cites Wald's monograph at the classification",
      '\\bibitem{Wald1994}' in _p7 and 'fixed background~\\cite{Wald1994}' in _p7
      and 'Quantum Field Theory in Curved Spacetime and Black Hole Thermodynamics' in _p7)
+gate("and the half is closed in P7: every freedom the face could close is closed elsewhere",
+     'So every freedom of the quantum theory the face could close is closed elsewhere' in ' '.join(_p7.split()))
 gate("the nine entries are in the papers; all five classification items sourced from cited keys",
      'the list carries 9 entries' in out and '5 sourced from keys the papers already carry and 0 unsourced' in out)
 gate("the symplectic form conserved identically, and the control breaks it in proportion to the form",

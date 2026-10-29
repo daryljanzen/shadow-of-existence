@@ -1,0 +1,6 @@
+  refitted ruled arm (LEAFREC=1)
+    peaks            222.05 / 535.85 / 815.03 / 1129.74
+    arm - sky        +1.65 / -1.85 / -2.27 / +5.84
+    comb l_A 296.49   phi/pi +0.2316   P1/P2 2.135   P1/P3 2.166
+    arm - control    +1.69 / -0.45 / +0.70 / +0.52
+    control's share of the arm's offset at the fourth peak: 0.91
