@@ -1,4 +1,4 @@
-# r7635+70 — RESULT (interim: the bank's first half, the dry re-point, and the registered negative)
+# r7635+70 — RESULT: the leaf-rate bank, the dry re-point of all 51 receipts, and the registered negative
 
 **1. The bank, first half — pushed.** Eleven `_leafrec1` files in `spectra/`, each with a `manifest` key:
 - cc66_r185_verify, the four r6885 files, r6889 nufs0;
@@ -60,3 +60,41 @@ The last three are solved by their receipts' own procedures, so re-solving them 
 | phase systematic (r7055) | the step and the rise fail, as in 3 |
 
 The c54 receipts wait on the second half. Pins are not moved yet: the step family needs a ruling first (see the reply).
+
+## The bank's second half (r7635+70.4)
+
+**The bank is complete: 36 `_leafrec1` files, every CR stem CENSUS.md §B lists.** Each has a manifest key. `MANIFEST_clean.json` and `MANIFEST_old.json` gather the manifests; `bank_old.py` and `launch_old.sh` are the scripts. All gates hold.
+
+What could not be held (each file's manifest says which applies):
+- **KFAC.** The c54 and item38 files were made at `KFAC=1`, which the alias gate now refuses, so they run at KFAC=2.
+- **c54.186_cr_KCONT.** At KFAC=2, NK=600 gives 2.8 points per Bessel period, and the sampling gate refused it. That refusal is kept as a log. NK=1200 restores the 5.7 points per period its README row names.
+- **The l_A=340 injection** keeps `LATARG=340`, so its onset is solved and `ZSTART` is unset.
+- **Banked from shared runs.**
+  - item38 φ=0 and φ=π come from the c54.186 and c54.191 φ=π runs; their namesakes agreed to 4e-9 and bit for bit.
+  - `cc66_cr_x_h6862_pol` comes from the h686 run, because that pair differed only in CRH0 (68.60 vs 68.62).
+- **cc66_cr_x_lstep1** is low confidence: no command was ever recorded for it.
+
+**The dry re-point covers all 51 receipts (`DRYRUN.md`, `dry/`).** 49 move at least one figure. Two exit cleanly: the photon hierarchy and the spacing drift.
+
+**The named bounds:**
+
+| figure | old → new | result |
+|---|---|---|
+| collapse ratio r (l.485, l.647) | 1.02313 → **1.02313** | unmoved: it is a ratio of the background, which the arm of record does not move. Sign held. |
+| 133-bin "factor 2" (l.921, l.956) | the arm's 4.19 per bin → **3.36**; ratio to the control's 2.10: 1.99 → **1.60** | sign held, size moved |
+| 185-bin unlensed ratio | 1.68 → **1.35** | |
+| the h686/h6862 pair | 4.19 / 4.16 → **one figure, 3.36** | on the arm of record the two are one point, so the 'two H0 values in three rows' defect dissolves |
+
+**The negative fires a SECOND time, in the c54 family (ownerless, so 70's).** These receipts were built on the arm at the old built-in point: H0 73, Ωm 0.3066, onset solved to l_A 301.6, χ² 51817. On the arm of record the same forms give:
+
+| receipt | old → new | what breaks |
+|---|---|---|
+| `where_the_likelihood_sits` | CR 51817 → **923.9**; F3 +50496.5 → **−396.5**, a sign change; F4 45.3 → **0.36** floors | its assertion "the CR arm must cost more than the control" fails |
+| `the_height_target…` | c54.175's pinned 50675.2 → **4864.6** | |
+| `the_control_entered_the_regime…` | the arm 298.93/302.07 per bin → **1.61/1.61** | "the arm did not move" becomes the arm moving by 2221% |
+| `the_floor_is_a_distance…` | F3 51848 → **706**; margin 827× → **11×** | the receipt's own refusal fires: "the reference choice reaches the verdict" |
+| `the_phase_is_the_driving…` | the driving's share of the discrepancy 98% → **−24%**; driven discrepancy +0.615 → **+0.013** | |
+| `the_phase_moves_with_the_datum…` | the first-peak transient 100 → **0** | |
+| `the_photon_hierarchy…` | F3 ratio 45.3 → **−0.4** | |
+
+The c54 comparisons are unlensed and truncated, so a control scoring 1320 there is not the control's real fit. These figures describe an instrument state the corpus has superseded twice: the pin, then the leaf rate. **I recommend re-pinning the c54 family as HISTORICAL**: it reads its LEAFREC=0 namesakes deliberately, and a docstring names the superseded pin. Carrying it onto the arm of record would print, for example, "CR beats ΛCDM by 396" from a comparison that means nothing. The new figures are recorded here either way.

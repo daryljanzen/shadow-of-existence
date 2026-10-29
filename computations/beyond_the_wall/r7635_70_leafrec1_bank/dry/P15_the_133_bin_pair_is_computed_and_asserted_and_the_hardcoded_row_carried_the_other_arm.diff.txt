@@ -1,0 +1,56 @@
+72,73c72,73
+<         cc66_cr_x_h686_pol        100..1298    133    556.6858   4.185607
+<        cc66_cr_x_h6862_pol        100..1298    133    552.9992   4.157889
+---
+>         cc66_cr_x_h686_pol        100..1298    133    447.3733   3.363709
+>        cc66_cr_x_h6862_pol        100..1298    133    447.3733   3.363709
+80,82c80,81
+<   ** the arm at H0 = 68.60: chi^2 = 556.6858 = 4.185607 per bin **   (cc66.7's own 4.19)
+<   the arm's chi^2 is 556.6858 against the 556.7 `FOR_66` records for cc66.7, so the file is identified and not guessed
+<   ratio, 68.60 against the control: ** 1.992290 ** -- the 'factor 2.0'
+---
+>   ** the arm at H0 = 68.60: chi^2 = 447.3733 = 3.363709 per bin **   (cc66.7's own 4.19)
+>   ratio, 68.60 against the control: ** 1.601078 ** -- the 'factor 2.0'
+88,90c87,88
+<   the arm at H0 = 68.62: chi^2 = 552.9992 = 4.157889 per bin  -> 4.16
+<   the arm at H0 = 68.60: 4.185607 per bin  -> 4.19
+<   ** the two runs are distinguishable at the two decimals the corpus quotes: 4.16 and 4.19 **
+---
+>   the arm at H0 = 68.62: chi^2 = 447.3733 = 3.363709 per bin  -> 3.36
+>   the arm at H0 = 68.60: 3.363709 per bin  -> 3.36
+92,96d89
+<   ⚠ ** THE DEFECT, STATED: the literal numerator is the 68.62 run's figure, while the
+<      row's own label reads '(r6760+cc66.7)' and cc66.7's arm is the 68.60 one -- whose
+<      figure is 4.19. **
+<      ⌗ and the two rows computed LIVE beneath it load `cr_x_h686_L2000`, the 68.60
+<         arm -- so the table mixes two H0 values in three rows.
+101,102c94,95
+<   the ratio the conclusion rests on, both ways: 1.9791 (68.62) and 1.9923 (68.60)
+<   to the two figures that conclusion quotes: 1.98x and 1.99x
+---
+>   the ratio the conclusion rests on, both ways: 1.6011 (68.62) and 1.6011 (68.60)
+>   to the two figures that conclusion quotes: 1.60x and 1.60x
+108,109c101,102
+<                       cc66_cr_x_h686_L2000    185   1169.8183    6.3233
+<                     185-bin unlensed ratio                       1.6809
+---
+>                       cc66_cr_x_h686_L2000    185    938.3175    5.0720
+>                     185-bin unlensed ratio                       1.3482
+116,120c109,115
+<   ** ALL CHECKS HOLD. **  The first half of `r7109` ⓷ is answered: the control's 2.10 per bin
+<   on 133 bins is COMPUTED (2.100902) and ASSERTED, and so is the 4.16 beside it
+<   (4.157889) -- together with cc66.7's own 4.19 (4.185607), which is the figure the
+<   hardcoded row should have carried and does not.  ** The conclusion is untouched and the
+<   attribution is not, and only a computed row could have told the two apart. **
+---
+>   FAIL -- 6 check(s) did not hold
+>     - the 68.60 arm comes out 3.3637 per bin, which is not cc66.7's 4.19
+>     - the 68.60 arm's chi^2 is 447.37, not the 556.7 cc66.7 recorded -- this may not be cc66.7's spectrum
+>     - the 133-bin ratio is 1.601, not the factor 2.0 the corpus quotes
+>     - the 68.62 arm comes out 3.3637 per bin, not the 4.16 the hardcoded row carries
+>     - the two arms round to the same figure -- PART 3's whole distinction fails
+>     - the hardcoded numerator 4.16 matches neither arm at two decimals (3.36, 3.36) -- it is a third number with no file
+122c117
+< rc=0
+---
+> rc=1

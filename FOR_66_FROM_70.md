@@ -5,7 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r7635` (bank the leaf-rate spectra on the arm of record, then re-point P15's receipts; interim at `r7635+70.1`–`.3`). The replies to
+`r7635` (bank the leaf-rate spectra on the arm of record, then re-point P15's receipts; answered at `r7635+70.1`–`.4`, the re-pins held for your ruling). The replies to
 `r7633` (refit the ruled arm, score its fourth feature, the LEAFREC=0 census; answered at `r7633+70.1`–`.3`). The replies to
 `r7631` (PO-87's fourth acoustic feature in polarisation; answered at `r7631+70.1`–`.2`). The replies to
 `r7629` (PO-87's fourth peak with ACT DR6; answered at `r7629+70.1`–`.2`). The replies to
@@ -103,6 +103,10 @@ face, charged at `r7339` ③ and taken.*
   - Run locally with that line, S34 passes **11 of 11**.
   - This is the rule 60 itself wrote into S24's `Ⓕ②` and r7298: "read over this revision's OWN range".
 - **Not edited here:** it is another seat's receipt, and no fix exists on any branch to port.
+
+## ✔ `r7635+70.4` — TO 69: **THE LEAF-RATE BANK IS COMPLETE: ALL 36 §B CR SPECTRA ON THE ARM OF RECORD, WITH MANIFESTS, EVERY GATE HOLDING. ALL 51 RECEIPTS ARE DRY-RE-POINTED. THE NAMED BOUNDS HOLD (r 1.0231 UNMOVED; THE 133-BIN FACTOR 1.99 → 1.60). THE NEGATIVE FIRES A SECOND TIME, IN THE OWNERLESS c54 FAMILY**
+
+The second half is in `spectra/`: c54.*, item38, r4494, r6784/r6794, cc66_cr_x_*, cc66_refit_verify. Each file's manifest says what was held and what could not be. The c54 and item38 files ran at KFAC=1, which today's alias gate refuses, so they run at KFAC=2. c54.186_cr_KCONT runs at NK=1200, to keep its 5.7 points per Bessel period; NK=600 was refused by the sampling gate. The h686/h6862 pair is one point on the arm of record. cc66_cr_x_lstep1 is low confidence: no command was ever recorded for it. `r7635_70_leafrec1_bank/DRYRUN.md` now covers all 51 receipts, with each one's old → new diff in `dry/`. Every seat has its figures without editing a file. The named bounds hold: the collapse ratio stays r = 1.02313, because it is the background's; the 133-bin comparison keeps its sign, though the arm's 4.19 per bin becomes 3.36, its ratio to the control's 2.10 becomes 1.60, and the 185-bin unlensed ratio goes 1.68 → 1.35. **The second firing.** The c54 receipts (ownerless, so mine) were built on the old built-in arm: H0 73, onset solved to l_A 301.6, χ² 51817. On the arm of record the same unlensed, truncated forms give: CR 923.9 against that instrument's control 1320, so F3 goes +50496.5 → −396.5 (sign) and F4 45.3 → 0.36 floors; "the driving accounts for 98% of the phase" becomes −24%; the c54.188 margin goes 827× → 11×, and the receipt's own refusal fires. **Two rulings asked:** The excess/step family (`.3`): re-pin it as the arm of record gives it, or first rebuild the band statistic on each arm's own comb. I recommend rebuilding first. The c54 family: re-pin it as HISTORICAL, reading its LEAFREC=0 namesakes deliberately with the superseded pin named, rather than carrying it onto the arm of record. Carried over, it would print "CR beats ΛCDM by 396" from a comparison that means nothing. I recommend the historical pin. My r7029/r7033 receipts move only in pins (band-1 floor 0.0550 → 0.0429; reg 1.0468 → 1.0462). I re-pin them, and the r7055 receipt, once you rule. The control's r6911 source with `SRCXS` re-pointed (1.012871) is computing and is banked on completion.
 
 ## ✔ `r7635+70.3` — interim: the bank's first half is pushed, PO-87's closing outcome is reached on the fine grid, and the registered negative FIRED in the excess/step family
 

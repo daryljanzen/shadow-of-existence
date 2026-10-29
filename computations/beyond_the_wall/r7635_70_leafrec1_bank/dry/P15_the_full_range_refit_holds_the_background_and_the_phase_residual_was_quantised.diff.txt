@@ -1,0 +1,51 @@
+82,83c82,83
+<               CR, crossing   185      292.5      292.4     -0.0
+<     OK    CR, crossing: the real run lands within 2 in chi^2 of the model's prediction
+---
+>               CR, crossing   185      292.5      297.7     +5.2
+>     FAIL  CR, crossing: the real run lands within 2 in chi^2 of the model's prediction
+85c85
+<   ** RATIO AT THE VERIFIED MINIMUM: 1.57x ** against 2.56x as-computed on the same bins.
+---
+>   ** RATIO AT THE VERIFIED MINIMUM: 1.60x ** against 2.56x as-computed on the same bins.
+126,129c126,129
+<       at spacing 1: peaks 221.96 / 536.10 / 815.40 / 1130.53
+<       subsampled to  2: raw locator errs by  0.60 in ell, refined by  0.00
+<       subsampled to  4: raw locator errs by  1.96 in ell, refined by  0.01
+<       subsampled to  8: raw locator errs by  3.90 in ell, refined by  0.02
+---
+>       at spacing 1: peaks 222.05 / 535.85 / 815.03 / 1129.74
+>       subsampled to  2: raw locator errs by  0.97 in ell, refined by  0.00
+>       subsampled to  4: raw locator errs by  1.95 in ell, refined by  0.01
+>       subsampled to  8: raw locator errs by  3.85 in ell, refined by  0.02
+137,138c137,138
+<       CR, crossing, raw (as cc66.18 read it)     220.0 / 540.0 / 812.0 / 1132.0         4.5%        0.7%
+<            CR, crossing, refined     222.0 / 536.1 / 815.4 / 1130.5         3.4%        0.6%
+---
+>       CR, crossing, raw (as cc66.18 read it)     220.0 / 532.0 / 812.0 / 1132.0         0.7%        0.7%
+>            CR, crossing, refined     222.0 / 535.9 / 815.0 / 1129.7         3.7%        0.5%
+140c140
+<     OK    ** ON THE RAW LOCATOR THE TWO ARMS RETURN THE SAME PHASE RESIDUAL -- which is how a number that measures the grid shows itself **
+---
+>     FAIL  ** ON THE RAW LOCATOR THE TWO ARMS RETURN THE SAME PHASE RESIDUAL -- which is how a number that measures the grid shows itself **
+143c143
+<      3.4% on the full range against the control's 1.6%, and the fourth peak is 0.6% out against 0.5%.
+---
+>      3.7% on the full range against the control's 1.6%, and the fourth peak is 0.5% out against 0.5%.
+159c159
+<   ** AND IT COSTS 1.57x THE CONTROL ** (1.58 per bin against 1.01), against
+---
+>   ** AND IT COSTS 1.60x THE CONTROL ** (1.61 per bin against 1.01), against
+167c167
+<   3.4% against the control's 1.6%.  ** The verdict does not change and the numbers do. **
+---
+>   3.7% against the control's 1.6%.  ** The verdict does not change and the numbers do. **
+170,172c170,173
+<   ✓ ALL CHECKS PASSED
+< ========================================================================================================
+< rc=0
+---
+>   FAILED:
+>     - CR, crossing: the real run lands within 2 in chi^2 of the model's prediction
+>     - ** ON THE RAW LOCATOR THE TWO ARMS RETURN THE SAME PHASE RESIDUAL -- which is how a number that measures the grid shows itself **
+> rc=1

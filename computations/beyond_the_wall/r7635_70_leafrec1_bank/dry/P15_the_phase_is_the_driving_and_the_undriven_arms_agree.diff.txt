@@ -1,0 +1,40 @@
+64,65c64,65
+<      CR         driving ON    8           [172, 404, 636, 916]     0.9761     -0.8780
+<     CR         driving OFF    7          [268, 564, 860, 1164]     1.0000     -0.1485
+---
+>      CR         driving ON    9          [220, 532, 812, 1132]     1.0012     -0.2758
+>     CR         driving OFF    9          [276, 564, 860, 1164]     0.9997     -0.1515
+67c67
+<   ** UNDRIVEN, THE TWO INTERCEPTS DIFFER BY 0.0132 OF ell_A. **
+---
+>   ** UNDRIVEN, THE TWO INTERCEPTS DIFFER BY 0.0161 OF ell_A. **
+71,73c71,73
+<   ** WHAT THE DRIVING SUPPLIES: -0.1274 to the control, -0.7294 here — a factor of 5.7. **
+<   ** THE DRIVEN DISCREPANCY IS +0.6152 AND THE UNDRIVEN IS +0.0132, SO THE DRIVING
+<      ACCOUNTS FOR 98% OF IT. **
+---
+>   ** WHAT THE DRIVING SUPPLIES: -0.1274 to the control, -0.1242 here — a factor of 1.0. **
+>   ** THE DRIVEN DISCREPANCY IS +0.0130 AND THE UNDRIVEN IS +0.0161, SO THE DRIVING
+>      ACCOUNTS FOR -24% OF IT. **
+81,82c81,82
+<      CR         driving ON     0.9761
+<     CR         driving OFF     1.0000
+---
+>      CR         driving ON     1.0012
+>     CR         driving OFF     0.9997
+84c84
+<   ** UNDRIVEN BOTH SLOPES ARE ell_A TO 0.07%. DRIVEN, THIS CONSTRUCTION'S IS 2.4% SHORT. **
+---
+>   ** UNDRIVEN BOTH SLOPES ARE ell_A TO 0.07%. DRIVEN, THIS CONSTRUCTION'S IS 0.1% SHORT. **
+107,114c107,108
+< ALL CHECKS PASS — with every coupling to the potential removed the two arms' acoustic phases
+< agree to 0.013 of l_A and both spacings are l_A to a part in a thousand; switching the driving
+< on supplies -0.127 to the control and -0.729 here, a factor of 5.7, which is 98% of the 0.615
+< discrepancy; and the same switch accounts for the 2.4% the spacing was short.  The acoustic
+< disagreement is one coupling, not four items and a ratio.
+< ==============================================================================
+< GATE c54.193 (r2441), `L-507`: undriven the two arms' acoustic phases differ by 0.0132 of l_A with both slopes at l_A to a part in a thousand; the driving supplies -0.1274 to the control and -0.7294 here (5.7x), accounting for 98% of the 0.615 discrepancy, and for the 2.4% the spacing was short — pinned against `L-505`, `L-506` and `L-147` F5.
+< rc=0
+---
+> FAILED: the driving supplies only 1.0x more here than in the control -- PART 2 has no content
+> rc=1

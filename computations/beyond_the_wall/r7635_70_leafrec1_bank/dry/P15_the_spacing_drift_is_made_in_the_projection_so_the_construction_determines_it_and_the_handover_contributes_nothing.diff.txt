@@ -1,0 +1,20 @@
+89,90c89,90
+<     SW alone,   refined q: ['0.8933', '1.8691', '2.8609', '3.8717', '4.8651', '5.8604']  ->  D = +0.56 (rms 3.18)
+<     whole monopole source: ['0.8452', '1.8322', '2.8403', '3.8544', '4.8525', '5.8487']  ->  D = +0.03 (rms 3.02)
+---
+>     SW alone,   refined q: ['0.8891', '1.8609', '2.8479', '3.8536', '4.8420', '5.8323']  ->  D = +0.53 (rms 3.12)
+>     whole monopole source: ['0.8410', '1.8240', '2.8273', '3.8365', '4.8295', '5.8207']  ->  D = +0.00 (rms 2.96)
+104c104
+<     the instrument's OWN saved source, re-projected: peaks ['234.8', '525.7', '818.6', '1126.3', '1423.0']  D = +2.57
+---
+>     the instrument's OWN saved source, re-projected: peaks ['234.8', '525.5', '818.1', '1125.3', '1421.7']  D = +2.55
+124,125c124,125
+<       uniform (KCONT=1): peaks ['188.9', '422.0', '644.2', '925.4', '1209.6']  D = +13.76
+<       discrete ladder  : peaks ['187.7', '420.9', '643.6', '925.1', '1210.2']  D = +13.84
+---
+>       uniform (KCONT=1): peaks ['256.6', '555.6', '828.9', '1140.8', '1437.4']  D = +4.52
+>       discrete ladder  : peaks ['256.6', '555.6', '828.9', '1140.8', '1437.4']  D = +4.52
+176c176
+<       source comb in k   D = +0.03  (driven, uniform grid -- no drift at all)
+---
+>       source comb in k   D = +0.00  (driven, uniform grid -- no drift at all)

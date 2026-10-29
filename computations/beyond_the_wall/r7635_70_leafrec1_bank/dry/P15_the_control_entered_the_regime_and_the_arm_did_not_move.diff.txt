@@ -1,0 +1,64 @@
+130,131c130,131
+<      ladder (2.3 per period)    359.39    329.16    280.09     172   0.5703
+<      continuum KCONT=1 (5.7)    359.39    329.16    280.08     172   0.5703
+---
+>      ladder (2.3 per period)      1.30      3.26      4.99     220   0.7262
+>      continuum KCONT=1 (5.7)      1.30      3.26      4.99     220   0.7262
+133c133
+<   ** THE TWO SPECTRA AGREE TO 0.67% EVERYWHERE AND THE chi^2 TO 2.1 IN 51817. **
+---
+>   ** THE TWO SPECTRA AGREE TO 0.00% EVERYWHERE AND THE chi^2 TO 0.0 IN 924. **
+143,146c143,146
+<                        c54.175  fluid, C = 8/9 |     21.20    290.71
+<              c54.177  fluid, derived C = 16/15 |     27.73    304.20
+<        c54.178  the polarised photon hierarchy |      5.34    298.93
+<     c54.186  the same, wavenumber range opened |      1.18    302.07
+---
+>                        c54.175  fluid, C = 8/9 |     21.20     23.53
+>              c54.177  fluid, derived C = 16/15 |     27.73     37.44
+>        c54.178  the polarised photon hierarchy |      5.34      1.61
+>     c54.186  the same, wavenumber range opened |      1.18      1.61
+148c148
+<   ** THE CONTROL IMPROVED BY A FACTOR OF 18 AND THE CR ARM MOVED BY 5%. **
+---
+>   ** THE CONTROL IMPROVED BY A FACTOR OF 18 AND THE CR ARM MOVED BY 2221%. **
+161,167c161,167
+<      500    44     34.1      33.8   0.77    15871.9 |    -0.2    15838.1        —
+<      700    66     54.4      58.2   0.88    23744.7 |     3.8    23686.5     6212
+<      900    89     73.0      89.5   1.01    35467.9 |    16.5    35378.4     2142
+<     1100   111     97.7     114.0   1.03    40313.5 |    16.3    40199.5     2459
+<     1300   133    124.5     141.6   1.06    43848.5 |    17.1    43706.8     2549
+<     1500   155    151.9     168.6   1.09    49015.6 |    16.7    48847.0     2925
+<     1996   185    186.6     217.8   1.18    52065.6 |    31.2    51847.9     1661
+---
+>      500    44     34.1      33.8   0.77       37.2 |    -0.2        3.4        —
+>      700    66     54.4      58.2   0.88       86.0 |     3.8       27.8        7
+>      900    89     73.0      89.5   1.01      146.1 |    16.5       56.5        3
+>     1100   111     97.7     114.0   1.03      287.1 |    16.3      173.1       11
+>     1300   133    124.5     141.6   1.06      434.0 |    17.1      292.4       17
+>     1500   155    151.9     168.6   1.09      651.7 |    16.7      483.1       29
+>     1996   185    186.6     217.8   1.18      924.0 |    31.2      706.2       23
+169,170c169,170
+<   ** AT FULL RANGE, WITH BOTH ARMS k-ADEQUATE: F2 = 31 AND F3 = 51848, SO F4's SECOND
+<      CLAUSE FIRES BY 1661x WHERE IT ASKS FOR 10. **
+---
+>   ** AT FULL RANGE, WITH BOTH ARMS k-ADEQUATE: F2 = 31 AND F3 = 706, SO F4's SECOND
+>      CLAUSE FIRES BY 23x WHERE IT ASKS FOR 10. **
+172c172
+<      F3 = 23687. **
+---
+>      F3 = 28. **
+181,190c181,182
+< ALL CHECKS PASS — 73% of the control's residual was in the 16% of bins above ell = 1500, and
+< opening the wavenumber range removes 78% of it: the control reaches chi^2/dof = 1.18 against a
+< true LambdaCDM fit's 1.01 on the same bins, so front #2's target is met and its last item is
+< struck as numerical.  The CR ladder's alias-gate waiver is checked in chi^2 and holds.  Four
+< instrument states improved the control eighteenfold and moved the CR arm 5%.  And `L-147`'s F4
+< fires by three orders of magnitude — as a MEASUREMENT DISCREPANCY, with `PO-7` protected and
+< the conversion left where it belongs.
+< ==============================================================================
+< GATE c54.186 (r2441), `L-500`: opening the wavenumber range removes 78% of the control's residual and takes it to chi^2/dof = 1.18 against CAMB's 1.01 on 185 identical bins; F3 = 51848 against F2 = 31 at full range and 23687 against 3.8 below ell=700, so F4 fires; the CR ladder waiver holds to 0.67%; four states improved the control 18x while the CR arm moved 5% — pinned against `L-147` F2/F3/F4/F5 and THE_WORK front #2.
+< rc=0
+---
+> FAILED: the CR arm moved 2221% across the four states -- it is not the fixed point PART 4 reports; F4 does not fire below ell=700 either
+> rc=1

@@ -1,0 +1,45 @@
+102,103c102,103
+<       L3000 cr ON     peaks/l_A = [0.629 1.409 2.134 3.067 4.01 ]  worst gap error 0.275
+<       L3000 cr OFF    peaks/l_A = [1.015 1.936 2.9   3.897 4.898]  worst gap error 0.079
+---
+>       L3000 cr ON     peaks/l_A = [0.848 1.839 2.735 3.766 4.743]  worst gap error 0.103
+>       L3000 cr OFF    peaks/l_A = [1.004 1.924 2.884 3.877 4.872]  worst gap error 0.080
+106c106
+<     OK    Ⓓ①  ** THE CR ARM'S BANKED DRIVING-ON SPECTRUM HAS NO INTEGER-SPACED PEAK SERIES, SO THIS STATISTIC CANNOT READ IT. **  Its gaps miss `1` by three times what the grid's do, and the common offset is DEFINED as a mean against integer index -- so a CR driving number taken from it would be a statement about the detector
+---
+>     FAIL  Ⓓ①  ** THE CR ARM'S BANKED DRIVING-ON SPECTRUM HAS NO INTEGER-SPACED PEAK SERIES, SO THIS STATISTIC CANNOT READ IT. **  Its gaps miss `1` by three times what the grid's do, and the common offset is DEFINED as a mean against integer index -- so a CR driving number taken from it would be a statement about the detector
+111c111
+<     OK    Ⓓ③  ⛔ and NO CR DRIVING NUMBER IS CLAIMED HERE, which is the whole value of having run the zero-cost half first: the ask `cc66.155` costed at eight runs is REVISED to ten, the two added being a `NODRIVE` pair at the grids' own configuration -- because the banked driving-ON spectrum is a different vintage this statistic cannot read
+---
+>     FAIL  Ⓓ③  ⛔ and NO CR DRIVING NUMBER IS CLAIMED HERE, which is the whole value of having run the zero-cost half first: the ask `cc66.155` costed at eight runs is REVISED to ten, the two added being a `NODRIVE` pair at the grids' own configuration -- because the banked driving-ON spectrum is a different vintage this statistic cannot read
+134c134
+<     OK    Ⓔ②  and the revised ask is bounded and justified by what was measured rather than by what was hoped: ten runs, each named, at a configuration read off the grids' own switch lines
+---
+>     FAIL  Ⓔ②  and the revised ask is bounded and justified by what was measured rather than by what was hoped: ten runs, each named, at a configuration read off the grids' own switch lines
+137,155c137,142
+<   ✔ ** THE DE-TILTED PEAK SET IS THE PHASE OBSERVABLE THE FREE-PERIOD SLOPE WAS NOT. **  It
+<     separates the baryon direction from a pure tilt by ~11x on the common offset and ~21x on
+<     the odd-even alternation, against 1.3x for the slope, on both arms and both grids.
+<   ⛭ ** AND THE DE-TILT IS FORCED RATHER THAN CHOSEN: without it `n_s` moves the common offset
+<     more than the baryon direction does, which a primordial tilt cannot do.  With it that
+<     response falls by a factor of ten or more and stops depending on the fitting window. **
+<   ⌗ A third gain that was not predicted: the arm's response is convention-robust here -- a
+<     factor of ~2 between LEAFGEOM and LEAFREC, against up to 49 on the slope.
+<   ⛔ ** THE DRIVING HALF IS NOT ESTABLISHED AND THAT IS THE VALUE OF HAVING RUN THIS FIRST.
+<     ** On the control the driving and the baryon direction move the peak set in OPPOSITE
+<     directions on both components -- the orthogonality the ask rested on.  But the CR arm's
+<     banked driving-ON spectrum has no integer-spaced peak series and this statistic is
+<     defined against integer index, so no CR driving number is claimed.
+<   ⇒ ** THE ASK IS THEREFORE TEN RUNS AND NOT EIGHT: ** eight `RBFAC` plus a `NODRIVE` pair,
+<     all at the grids' own configuration.  Sharpened by a measurement rather than met.
+<   ⚠ Named and not supplied: five peaks make the alternation a coarse estimate; the de-tilt
+<     is one global power law over 150-1600 and its necessity is swept but its FORM is a
+<     choice; and `n_s` is inherited, used only as a control, with no claim made about it.
+< rc=0
+---
+>   ⛔ 3 CHECK(S) FAILED
+>       - Ⓓ①  ** THE CR ARM'S BANKED DRIVING-ON SPECTRUM HAS NO INTEGER-SPACED PEAK SERIES, SO THIS STATISTIC CANNOT READ IT. **  Its gaps miss `1` by three times what the grid's do, and the common offset is DEFINED as a mean against integer index -- so a CR driving number taken from it would be a statement about the detector
+>       - Ⓓ③  ⛔ and NO CR DRIVING NUMBER IS CLAIMED HERE, which is the whole value of having run the zero-cost half first: the ask `cc66.155` costed at eight runs is REVISED to ten, the two added being a `NODRIVE` pair at the grids' own configuration -- because the banked driving-ON spectrum is a different vintage this statistic cannot read
+>       - Ⓔ②  and the revised ask is bounded and justified by what was measured rather than by what was hoped: ten runs, each named, at a configuration read off the grids' own switch lines
+> ========================================================================================================
+> rc=1

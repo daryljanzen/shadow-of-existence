@@ -1,0 +1,15 @@
+154c154
+<         c54.175_cr:  pinned   50675.2   recomputed   50675.2   (0.00% over 185 bins)
+---
+>         c54.175_cr:  pinned   50675.2   recomputed    4864.6   (90.40% over 185 bins)
+164,170c164,165
+< ALL CHECKS PASS — the instrument is converged to 0.4%, the sky's own peak-height ratios carry
+< 3.2-3.4% so front #2's sub-per-cent height target is retired, a shape claim is withdrawn at
+< 1.0 sigma, chi^2 prefers 8/9 by 1123 and is not allowed to choose it, and L-147's pinned
+< values are recomputable.
+< ==============================================================================
+< GATE c54.176 (r2376): sky ratios 2.2564+-0.0772 and 2.2800+-0.0737; split 1.03 sigma; chi^2 minimum at 0.865 against 8/9's 0.859; 16/15 costs +1123 -- pinned against CR_cosmology.tex sec:refit-bound.
+< rc=0
+---
+> FAILED: c54.175_cr recomputes to 4864.6 against a pinned 50675.2
+> rc=1
