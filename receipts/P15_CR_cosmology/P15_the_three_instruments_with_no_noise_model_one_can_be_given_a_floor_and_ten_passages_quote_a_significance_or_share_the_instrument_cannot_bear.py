@@ -35,6 +35,10 @@ No re-scoring, no channel, no mechanism, no physics, no verdict on `cc66`'s resu
 touched.  The paper is not edited here; the passages are routed to 66.
 
 Written r7033 by node 70.  Stated for reversal.
+
+RE-POINTED r7637 (node 70) onto the arm of record (the `_leafrec1` banks of r7635): the contrast regression on
+the binned rung 1.0468 -> 1.0462, and the arm's excess over the sky-noise floor stays 2.6 floors (the floor,
+0.0177, is the control's own and does not move).  No pinned figure moves.
 """
 import os
 import re
@@ -75,7 +79,8 @@ NOISE = r'multivariate_normal|standard_normal|cholesky|default_rng|np\.random|ra
 print("\n" + "=" * 110)
 print("  a) THE CONTRAST STATISTIC -- its binned rung, with the contrast receipt's own definitions")
 print("-" * 110)
-VER = {t: np.load(os.path.join(SP, f'cc66_r185_verify_{t}.npz')) for t in ('lcdm', 'cr')}
+VER = {t: np.load(os.path.join(SP, n)) for t, n in (('lcdm', 'cc66_r185_verify_lcdm.npz'),
+                                                   ('cr', 'cc66_r185_verify_cr_leafrec1.npz'))}   # r7637: the arm of record
 LA = {t: float(VER[t]['l_A']) for t in ('lcdm', 'cr')}
 LC, FACB = CS.bin_center_and_fac()
 _p = camb.set_params(H0=67.40, ombh2=0.02237, omch2=0.3150 * 0.674 ** 2 - 0.02237,
@@ -131,7 +136,7 @@ check("⛭ AS DEFINED THE STATISTIC NEVER SEES THE DATA: the data enter only thr
 L = np.linalg.cholesky(COVK)
 rng = np.random.default_rng(7033)
 base = A['lcdm'] * M['lcdm']
-QE = np.asarray(np.load(os.path.join(SP, 'r6959_eta_cr.npz'))['q_edges'], float)
+QE = np.asarray(np.load(os.path.join(SP, 'r6959_eta_cr_leafrec1.npz'))['q_edges'], float)
 BANDS = [(Q['lcdm'] >= a) & (Q['lcdm'] < b) for a, b in zip(QE[:-1], QE[1:])]
 BREF = np.array([OB[m].std() for m in BANDS])
 R, BN = [], []

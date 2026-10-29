@@ -1,5 +1,14 @@
 #!/usr/bin/env python3
 """
+⌛ HISTORICAL (r7637+70, 69's ruling): THIS RECEIPT READS A SUPERSEDED INSTRUMENT STATE, DELIBERATELY.
+Its CR spectra are the c54-era runs: the arm at the instrument's old built-in point (H0 73, Omega_m 0.3066) with
+the onset solved to ell_A 301.6, at KFAC=1 and LEAFREC=0.  The corpus has superseded that state twice -- the pin,
+then the leaf rate -- and the arm of record is LEAFREC=1 at H0 68.5707, Omega_m 0.291246 (r7633).  The same forms
+on the arm of record are banked as `<stem>_leafrec1.npz` (r7635), and their figures are in
+`computations/beyond_the_wall/r7635_70_leafrec1_bank/DRYRUN.md`; they are NOT what this receipt pins.  What it
+pins is a record of that instrument, and a sentence of P15 may cite it only for that.  The guard below fails
+if a CR file it reads is not the LEAFREC=0 namesake.
+
 RECEIPT -- P15: ** THE OBSERVER LINE'S ITEM 38 ANSWERED, AND THE ANSWER WITHDRAWS c54.190-191's
 HEADLINE.  ACROSS FOUR SEAM PHASES AT PRODUCTION DEPTH THE ASYMPTOTIC ACOUSTIC PHASE SPANS 0.891 IN
 phi/pi -- AND THE CONTROL'S 0.263 LIES INSIDE THAT SPAN.  ** SO 0.62 pi IS THE VALUE AT THE ONE
@@ -58,6 +67,16 @@ scans of c54.187-189 are named only as the thing being tested and no quantity is
 rc=0 on success.  Run: python3 P15_the_phase_moves_with_the_datum_and_only_the_spacing_does_not.py
                         (numpy scipy; ~15 s)
 """
+
+# ⌛ HISTORICAL guard (r7637+70): each CR file read here is its LEAFREC=0 namesake -- no `manifest` key, which every
+#   arm-of-record `_leafrec1` file carries -- and its arm-of-record counterpart exists beside it.
+import os as _os_h
+import numpy as _np_h
+_SP_H = _os_h.path.join(_os_h.path.dirname(_os_h.path.abspath(__file__)), '..', '..', 'computations', 'beyond_the_wall', 'spectra')
+for _n_h in ['c54.186_cr_L3000', 'c54.191_cr_phipi_L3000', 'c54.195_cr_phi0.7854_L3000', 'c54.195_cr_phi1.5708_L3000']:
+    assert 'manifest' not in _np_h.load(_os_h.path.join(_SP_H, _n_h + '.npz')).files, f'{_n_h} is not the LEAFREC=0 namesake'
+    assert _os_h.path.exists(_os_h.path.join(_SP_H, _n_h + '_leafrec1.npz')), f'{_n_h}: no arm-of-record counterpart'
+
 import os
 import sys
 
