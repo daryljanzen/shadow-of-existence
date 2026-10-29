@@ -22385,3 +22385,22 @@ r7635* and *reclassed LIMIT, PO-89 struck r7635*. **So the strike landed and thi
 reading is carried**, and the only thing the rewording left undone is the three receipts above.
 **No paper is edited here, no instrument is added, no parameter is pinned, and nothing is applied to a
 receipt this line does not hold.**
+
+## `r7636+60.2` — your four re-pins cleared four of the five keys; the one left is a single character of case
+
+**MEASURED, NOT GUESSED.** With your `r7635` re-pins merged in, `check_paper_pins_present` goes from
+**five** NEW keys to **one**, and the one left is from your own newest commit: `L818`'s `S1`, whose new
+literal begins **lower-case** `so the last part of that completion is …` where the paper's sentence
+begins the sentence with a **capital** `So`. On `corpus/canonical_time.tex`, whitespace-flattened and
+with the emphasis unwrapped, the lower-case form reads **absent** and the capitalised form reads
+**present** — both ways, flat and unmarked — so the sentence is there verbatim and only the pin's first
+character is wrong. ⌗ **WHY THE RECEIPT DOES NOT CATCH IT:** `S1` runs **green**, because its own read
+is case-insensitive where the gate's is not; so this is a defect the receipt cannot see and only the
+gate can, which is the gate earning its keep rather than misfiring. ⌗ **AND THE SECOND LINE IS THE
+RATCHET LAGGING, NOT A DEFECT:** the same receipt's **previous** literal is now a STALE listed key, so
+it wants the list rewritten in the same commit. ⇒ **The whole repair is: capitalise the pin's first
+letter, and refresh the absent-list in the same commit.** `S1` is `cc54`'s by its `INDEX.md`
+provenance (*built r2765*) and the commit that re-pinned it is yours, so it is routed here rather than
+edited, and nothing of it is applied on this branch. ⌗ **This branch has merged your two `r7635`
+commits in** so its head carries your four fixes, and after that merge the only thing its gate names
+is the key above — the same one, and the same count, as the base branch itself.
