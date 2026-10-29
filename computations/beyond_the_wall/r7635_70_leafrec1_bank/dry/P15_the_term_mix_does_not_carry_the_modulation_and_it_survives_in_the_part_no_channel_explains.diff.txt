@@ -1,0 +1,40 @@
+83,84c83,84
+<   [PASS] ⛭ ⓑ's AMPLITUDE REPRODUCES THE ARITHMETIC IN BOTH ORIENTATIONS, so it carries nothing its input did not and no exit may be read from it   (A: 0.7435x7.304=5.4304;  B: 0.8033x4.238=3.4044)
+<   [PASS] and the arm's own modulation is the reference this revision inherits, unchanged from `cc66.64`   (7.304 against a null max of 5.561, 0 of 110 above)
+---
+>   [PASS] ⛭ ⓑ's AMPLITUDE REPRODUCES THE ARITHMETIC IN BOTH ORIENTATIONS, so it carries nothing its input did not and no exit may be read from it   (A: 0.6913x7.876=5.4448;  B: 0.8775x4.238=3.7187)
+>   [FAIL] and the arm's own modulation is the reference this revision inherits, unchanged from `cc66.64`   (got 7.876 against a null max of 6.130, 0 of 110 above)
+90,92c90,92
+<     ⓒ  A: the 45% it misplaces                1.482    2.793    3.188    110          -
+<     ⓒ  B: what it does NOT explain            4.005    3.034    3.889      0      -0.16
+<     the WINDOW own cost                       2.010    0.777    1.711      0      +3.12
+---
+>     ⓒ  A: the 45% it misplaces                1.333    2.866    3.342    110          -
+>     ⓒ  B: what it does NOT explain            4.206    3.383    4.356     17          -
+>     the WINDOW own cost                       2.010    0.777    1.711      0      +3.06
+95,96c95,96
+<   [PASS] ⛭⛭ AND THE MODULATION SURVIVES IN THE PART THE TERM MIX DOES NOT EXPLAIN, at the arm's own phase   (4.005 against a null max of 3.889, 0 of 110 above, -0.16 rad from the arm)
+<   [PASS] and the 45% the channel misplaces is decisively NOT combed, so the two orientations agree on the substance once ⓑ's arithmetic is set aside   (1.482, 110 of 110 wrong periods above it)
+---
+>   [FAIL] ⛭⛭ AND THE MODULATION SURVIVES IN THE PART THE TERM MIX DOES NOT EXPLAIN, at the arm's own phase   (got 4.206 against a null max of 4.356, 17 of 110 above, -0.10 rad from the arm)
+>   [PASS] and the 45% the channel misplaces is decisively NOT combed, so the two orientations agree on the substance once ⓑ's arithmetic is set aside   (1.333, 110 of 110 wrong periods above it)
+102,103c102,103
+<   [PASS] ⛭ THE WINDOW IS COMBED AND IN ANTIPHASE ON THE EXCESS, so it is not a smooth offset -- it is a modulation at the same period, opposed   (2.010 against a null max of 1.711, 0 above; +3.121 rad, pi to within 0.020)
+<   [PASS] ⛔ AND THE BLUNT TEST OF "one structure read with two signs" FAILS: the window is not a negative multiple of the arm at the spectrum level   (alpha = -0.0587, the residual keeping 98% of the window's power)
+---
+>   [PASS] ⛭ THE WINDOW IS COMBED AND IN ANTIPHASE ON THE EXCESS, so it is not a smooth offset -- it is a modulation at the same period, opposed   (2.010 against a null max of 1.711, 0 above; +3.055 rad, pi to within 0.086)
+>   [PASS] ⛔ AND THE BLUNT TEST OF "one structure read with two signs" FAILS: the window is not a negative multiple of the arm at the spectrum level   (alpha = -0.0834, the residual keeping 96% of the window's power)
+105,106c105,106
+<   [PASS] ⛭⛭⛭ LIKE-FOR-LIKE, THE TWO SPECTRUM-LEVEL MODULATIONS ARE IN PHASE, both clearing their own nulls   (d_window 1.448e-05 (0 over), d_arm 5.491e-05 (0 over), +0.27 rad apart, ratio 0.264)
+<   [PASS] ⇒ *** AND THE MAGNITUDE COMPOSES WHILE THE SIGN DOES NOT: the ratio predicts the window's cross-term amplitude to within a fifth, and predicts the OPPOSITE phase to the one measured ***   (predicted 1.646 against measured 1.893; in phase at the spectrum, +3.12 rad on the excess)
+---
+>   [PASS] ⛭⛭⛭ LIKE-FOR-LIKE, THE TWO SPECTRUM-LEVEL MODULATIONS ARE IN PHASE, both clearing their own nulls   (d_window 1.448e-05 (0 over), d_arm 5.311e-05 (0 over), -0.05 rad apart, ratio 0.273)
+>   [PASS] ⇒ *** AND THE MAGNITUDE COMPOSES WHILE THE SIGN DOES NOT: the ratio predicts the window's cross-term amplitude to within a fifth, and predicts the OPPOSITE phase to the one measured ***   (predicted 1.833 against measured 1.893; in phase at the spectrum, +3.06 rad on the excess)
+111,112c111,114
+< GATES: ALL PASS
+< rc=0
+---
+> GATES: 2 FAILED:
+>   - and the arm's own modulation is the reference this revision inherits, unchanged from `cc66.64`
+>   - ⛭⛭ AND THE MODULATION SURVIVES IN THE PART THE TERM MIX DOES NOT EXPLAIN, at the arm's own phase
+> rc=1

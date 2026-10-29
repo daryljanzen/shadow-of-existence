@@ -1,0 +1,98 @@
+99,106c99,106
+<         1.20    1.0140     1.0346       1.0100
+<         1.90    1.0578     1.0563       1.0608
+<         2.60    1.0484     1.0456       1.0610
+<         3.30    1.0549     1.0822       1.0541
+<         4.00    1.0748     1.0757       1.0737
+<         4.70    1.0652     1.0643       1.0684
+<         5.40    1.0671     1.1088       1.0651
+<         mean    1.0546     1.0668       1.0561
+---
+>         1.20    1.0158     1.0240       1.0142
+>         1.90    1.0770     1.0643       1.1032
+>         2.60    1.0526     1.0600       1.0185
+>         3.30    1.0645     1.2048       1.0602
+>         4.00    1.0962     1.0704       1.1266
+>         4.70    1.0483     1.0748       0.9424
+>         5.40    1.0910     1.4257       1.0730
+>         mean    1.0636     1.1320       1.0483
+108,111c108,111
+<     at the literal extrema, arm/control: maxima 1.0566, minima 1.0535 (six of each, fine grid)
+<   [PASS] ⛭⛭ ** THE EXCESS IS SYMMETRIC ABOUT THE ENVELOPE. **  The two sides of the decomposition carry it within about one per cent of each other, and at the literal extrema the arm exceeds the control by 5.7 per cent at the maxima against 5.3 at the minima   (band split 1.0668 / 1.0561; extrema 1.0566 / 1.0535)
+<   [PASS] ⇒ so it is an AMPLITUDE excess and neither trough- nor peak-dominated: Delta's trough dominance is a statement about the WHITENED residual and does not transfer to the contrast's own decomposition   (trough side / peak side = 0.9900)
+<   [PASS] ⚠ and the order's STOP condition does not fire -- the excess is not in the peaks either, so the row is not pushed back onto the driving   (peak side exceeds the trough side by only 1.0 per cent)
+---
+>     at the literal extrema, arm/control: maxima 1.0686, minima 1.0617 (six of each, fine grid)
+>   [FAIL] ⛭⛭ ** THE EXCESS IS SYMMETRIC ABOUT THE ENVELOPE. **  The two sides of the decomposition carry it within about one per cent of each other, and at the literal extrema the arm exceeds the control by 5.7 per cent at the maxima against 5.3 at the minima   (got band split 1.1320 / 1.0483; extrema 1.0686 / 1.0617)
+>   [FAIL] ⇒ so it is an AMPLITUDE excess and neither trough- nor peak-dominated: Delta's trough dominance is a statement about the WHITENED residual and does not transfer to the contrast's own decomposition   (got trough side / peak side = 0.9260)
+>   [FAIL] ⚠ and the order's STOP condition does not fire -- the excess is not in the peaks either, so the row is not pushed back onto the driving   (got peak side exceeds the trough side by only 8.0 per cent)
+126c126
+<   [PASS] ⌗ and the endpoints reproduce on the LSTEP=1 grid, so the family's response is the spectra's and not the grid's   (fine -2.46% against coarse -2.58%)
+---
+>   [PASS] ⌗ and the endpoints reproduce on the LSTEP=1 grid, so the family's response is the spectra's and not the grid's   (fine -3.22% against coarse -2.58%)
+131,132c131,132
+<     depths : control 0.28007  arm 0.29071  sky 0.28038   arm-control +0.01064
+<     heights: control 0.27715  arm 0.28743  sky 0.28382   arm-control +0.01029
+---
+>     depths : control 0.28007  arm 0.29283  sky 0.28038   arm-control +0.01276
+>     heights: control 0.27715  arm 0.29069  sky 0.28382   arm-control +0.01354
+137,140c137,140
+<     ⇒ in the sky's own units:  depths  arm-control +1.81 sigma, control-sky -0.05 sigma, arm-sky +1.76 sigma
+<                                heights arm-control +0.91 sigma, control-sky -0.59 sigma, arm-sky +0.32 sigma
+<   [PASS] ⇒ *** SO THE SAME EXCESS READS 1.8 SIGMA IN THE DEPTHS AND 0.9 IN THE HEIGHTS -- the order's conclusion stands and its argument does not: the troughs are where the assignment becomes observable because of how well the SKY measures them, not because of how they mix the clocks ***   (+1.81 sigma against +0.91 sigma, on excesses of +0.01064 and +0.01029)
+<   [PASS] ⛭ ** AND THE CONTROL LANDS ON THE SKY'S TROUGH DEPTHS TO A TWENTIETH OF A SIGMA, so this is the first statistic in this sector whose residual is NOT shared with the control ** -- against the fourth peak, where arm-minus-control was 0.83 sigma and both models sat high of the sky   (control-sky -0.05 sigma, arm-sky +1.76 sigma)
+---
+>     ⇒ in the sky's own units:  depths  arm-control +2.17 sigma, control-sky -0.05 sigma, arm-sky +2.12 sigma
+>                                heights arm-control +1.19 sigma, control-sky -0.59 sigma, arm-sky +0.61 sigma
+>   [FAIL] ⇒ *** SO THE SAME EXCESS READS 1.8 SIGMA IN THE DEPTHS AND 0.9 IN THE HEIGHTS -- the order's conclusion stands and its argument does not: the troughs are where the assignment becomes observable because of how well the SKY measures them, not because of how they mix the clocks ***   (got +2.17 sigma against +1.19 sigma, on excesses of +0.01276 and +0.01354)
+>   [PASS] ⛭ ** AND THE CONTROL LANDS ON THE SKY'S TROUGH DEPTHS TO A TWENTIETH OF A SIGMA, so this is the first statistic in this sector whose residual is NOT shared with the control ** -- against the fourth peak, where arm-minus-control was 0.83 sigma and both models sat high of the sky   (control-sky -0.05 sigma, arm-sky +2.12 sigma)
+144,148c144,148
+<     W= 20  control 0.28007  arm 0.29071  arm-control +0.01064  sky 0.28038
+<     W= 30  control 0.28007  arm 0.29071  arm-control +0.01064  sky 0.28038
+<     W= 40  control 0.28007  arm 0.29071  arm-control +0.01064  sky 0.28038
+<     W= 55  control 0.28007  arm 0.29071  arm-control +0.01064  sky 0.28038
+<     W= 70  control 0.28007  arm 0.29071  arm-control +0.01064  sky 0.28038
+---
+>     W= 20  control 0.28007  arm 0.29283  arm-control +0.01276  sky 0.28038
+>     W= 30  control 0.28007  arm 0.29283  arm-control +0.01276  sky 0.28038
+>     W= 40  control 0.28007  arm 0.29283  arm-control +0.01276  sky 0.28038
+>     W= 55  control 0.28007  arm 0.29283  arm-control +0.01276  sky 0.28038
+>     W= 70  control 0.28007  arm 0.29283  arm-control +0.01276  sky 0.28038
+155,184c155,160
+< GATES: ALL PASS.
+< 
+<   ⛭⛭ ⓶ᵃ THE EXCESS IS SYMMETRIC ABOUT THE ENVELOPE: the band-variance split gives 1.0668 on
+<   the peak side against 1.0561 on the trough side, and at the literal extrema the arm exceeds
+<   the control by 5.7 per cent at the maxima against 5.4 at the minima.
+<   So it is an AMPLITUDE excess; Delta's trough dominance does not transfer to the contrast's own
+<   decomposition, and the order's stop condition does not fire either.
+< 
+<   ⛔ ⓶ᵇ THE DEPTHS ARE THREE TIMES THE MORE CLOCK-RESPONSIVE (-2.58 per cent against
+<   -0.77 across the VISLEAF family) -- but theta_D/theta_* moves -4.08 per cent, MORE
+<   than either, because r_D is itself Jac-weighted under LEAFSCALES.  The paper's discriminant of
+<   principle is the most sensitive of the three and not the insensitive one, so by the order's own rule
+<   the depths are not a new handle on the clock.
+< 
+<   ⛭⛭⛭ ⓶ᶜ AND YET THE TROUGHS ARE WHERE THE ASSIGNMENT BECOMES OBSERVABLE, for a reason neither seat
+<   named: THE SKY MEASURES DEPTHS TWICE AS WELL AS HEIGHTS (0.00588 against 0.01135 propagated from
+<   COV_TT through the identical anchored locator).  The same excess -- +0.01064 in the depths,
+<   +0.01029 in the heights -- therefore reads +1.81 sigma against +0.91.
+<   And the control lands on the sky's depths at -0.05 sigma while the arm sits
+<   +1.76 above: the first statistic in this sector whose residual is NOT the control's.
+< 
+<   ⚑ THE GUARDS: the anchored depth has NO window bias (identical over W = 20..70, because it reads a
+<   value and not a location), the free search reproduces PO-47's trap at six times the spread, and the
+<   envelope's abscissa is worth about a third of a sigma and is reported.
+< 
+<   NOT CLAIMED: that 1.8 sigma is a detection; a mechanism for the amplitude excess; a
+<   re-derivation of PO-47's spreads; that the depths discriminate the CLOCK, which they do not; a verdict
+<   on the two-rate assignment.  No refit, nothing touching prop:flat, and no corpus edits.
+< 
+< rc=0
+---
+> GATES: 4 FAILED:
+>   - ⛭⛭ ** THE EXCESS IS SYMMETRIC ABOUT THE ENVELOPE. **  The two sides of the decomposition carry it within about one per cent of each other, and at the literal extrema the arm exceeds the control by 5.7 per cent at the maxima against 5.3 at the minima
+>   - ⇒ so it is an AMPLITUDE excess and neither trough- nor peak-dominated: Delta's trough dominance is a statement about the WHITENED residual and does not transfer to the contrast's own decomposition
+>   - ⚠ and the order's STOP condition does not fire -- the excess is not in the peaks either, so the row is not pushed back onto the driving
+>   - ⇒ *** SO THE SAME EXCESS READS 1.8 SIGMA IN THE DEPTHS AND 0.9 IN THE HEIGHTS -- the order's conclusion stands and its argument does not: the troughs are where the assignment becomes observable because of how well the SKY measures them, not because of how they mix the clocks ***
+> rc=1

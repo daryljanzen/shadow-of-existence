@@ -1,0 +1,134 @@
+54,55c54,55
+<     [ok]  the lifted statistic on the real banks IS the step receipt's printed row: band 1 +0.0215, step ratio 0.333, band 1 below the rest by 0.043   +0.0215  +0.0574  +0.0519  +0.0606  +0.0748  +0.0659  +0.0762   step -0.0430
+<     the banks' own combs: lcdm T 1.0090 phase 1.441 amp 0.230, cr T 1.0092 phase 1.456 amp 0.242
+---
+>     [FAIL]  the lifted statistic on the real banks IS the step receipt's printed row: band 1 +0.0215, step ratio 0.333, band 1 below the rest by 0.043   +0.0186  +0.0818  +0.0373  +0.0868  +0.1005  +0.0141  +0.1617   step -0.0617
+>     the banks' own combs: lcdm T 1.0090 phase 1.441 amp 0.230, cr T 1.0045 phase 1.450 amp 0.243
+57,58c57,58
+<     pre-registered amplitude 0.5 (0.500):  N_eff 3.45 of 7;  false step at the real phase -0.0099, spread over phase 0.0057, worst 0.0100
+<       e at the real phase: -0.0101  +0.0051  -0.0024  -0.0009  +0.0005  -0.0033  -0.0002
+---
+>     pre-registered amplitude 0.5 (0.500):  N_eff 2.33 of 7;  false step at the real phase -0.0304, spread over phase 0.0157, worst 0.0304
+>       e at the real phase: -0.0167  +0.0342  -0.0141  +0.0151  +0.0227  -0.0511  +0.0753
+60,65c60,65
+<     declared sensitivity: the banks' own amplitude (0.236):  N_eff 2.76 of 7;  false step at the real phase -0.0167, spread over phase 0.0113, worst 0.0188
+<       e at the real phase: -0.0165  +0.0054  -0.0009  -0.0008  +0.0008  -0.0007  -0.0023
+<     [ok]  ⛭ ② the step statistic's phase systematic has fewer than four modes across the seven bands   N_eff 3.45
+<     [ok]  ⛭ THE STEP STANDS: its worst false value over phase is well under half the step, on both amplitudes   worst 0.0188 against 0.043
+<     [ok]       ...and at the real phase the false step is a quarter to two fifths of it, in the step's own direction   -0.0099, -0.0167
+<     [ok]       signal to systematic over the phase spread: seven and a half at the pre-registered amplitude, under four at the banks' own   7.5, 3.8
+---
+>     declared sensitivity: the banks' own amplitude (0.236):  N_eff 2.92 of 7;  false step at the real phase -0.0363, spread over phase 0.0187, worst 0.0363
+>       e at the real phase: -0.0290  +0.0268  -0.0159  -0.0042  +0.0213  -0.0523  +0.0682
+>     [FAIL]  ⛭ ② the step statistic's phase systematic has fewer than four modes across the seven bands   N_eff 2.33
+>     [FAIL]  ⛭ THE STEP STANDS: its worst false value over phase is well under half the step, on both amplitudes   worst 0.0363 against 0.043
+>     [FAIL]       ...and at the real phase the false step is a quarter to two fifths of it, in the step's own direction   -0.0304, -0.0363
+>     [FAIL]       signal to systematic over the phase spread: seven and a half at the pre-registered amplitude, under four at the banks' own   2.7, 2.3
+71c71
+<     [ok]  the lifted statistic on the real banks IS the slope receipt's: +0.01359 +- 0.00202 over twelve settings   +0.01359 +- 0.00202
+---
+>     [FAIL]  the lifted statistic on the real banks IS the slope receipt's: +0.01359 +- 0.00202 over twelve settings   +0.02690 +- 0.01226
+73,74c73,74
+<     D_l combs: lcdm T 1.0092 ph 1.449 amp 0.226, cr T 1.0092 ph 1.459 amp 0.238
+<     source combs: lcdm T 1.0170 ph 1.076 amp 0.933, cr T 1.0160 ph 1.084 amp 0.927
+---
+>     D_l combs: lcdm T 1.0092 ph 1.449 amp 0.226, cr T 1.0045 ph 1.454 amp 0.237
+>     source combs: lcdm T 1.0170 ph 1.076 amp 0.933, cr T 1.0115 ph 1.082 amp 0.942
+76,90c76,90
+<     pre-registered amplitude 0.5 (0.500 / 0.500):  N_eff 3.34 of 7;  n_slope 8.9
+<       false slope at the real phase: 7-band +0.0081, twelve-setting mean +0.0048
+<       over phase: 7-band spread 0.0028 worst 0.0081;  twelve-setting mean spread 0.0026 worst 0.0053
+<       e at the real phase: -0.0014  -0.0540  -0.0034  +0.0162  -0.0296  -0.0004  +0.0245
+< 
+<     declared sensitivity: the banks' own amplitudes (0.232 / 0.930):  N_eff 3.61 of 7;  n_slope 5.1
+<       false slope at the real phase: 7-band +0.0036, twelve-setting mean +0.0052
+<       over phase: 7-band spread 0.0035 worst 0.0062;  twelve-setting mean spread 0.0036 worst 0.0058
+<       e at the real phase: -0.0020  -0.0134  +0.0039  +0.0198  -0.0136  +0.0103  +0.0118
+<     [ok]  ⛭ ② the slope statistic's phase systematic has fewer than four modes across the seven bands   N_eff 3.34
+<     [ok]       ...and the SLOPE's own effective count against it is nine at the pre-registered amplitude and five at the banks' own -- above the pre-registered four either way   8.9, 5.1
+<     [ok]  ⛭⛭ ① at the REAL phase the null returns a third or more of the reported slope, in its own direction, on both amplitudes   +0.0048 (36 per cent), +0.0052 (39 per cent)
+<     [ok]       ...and on the single seven-band setting it reaches over half of the reported slope   +0.0081 against 0.0139
+<     [ok]       ...while the rise survives the null's subtraction on both amplitudes   +0.0088, +0.0083
+<     [ok]       the phase systematic's spread of the slope exceeds the reported setting spread of 0.0021   0.0026, 0.0036
+---
+>     pre-registered amplitude 0.5 (0.500 / 0.500):  N_eff 3.77 of 7;  n_slope 9.4
+>       false slope at the real phase: 7-band +0.0258, twelve-setting mean +0.0309
+>       over phase: 7-band spread 0.0106 worst 0.0258;  twelve-setting mean spread 0.0134 worst 0.0402
+>       e at the real phase: -0.0057  -0.0081  -0.0223  +0.0776  -0.0331  -0.0283  +0.1799
+> 
+>     declared sensitivity: the banks' own amplitudes (0.231 / 0.937):  N_eff 3.45 of 7;  n_slope 17.7
+>       false slope at the real phase: 7-band +0.0143, twelve-setting mean +0.0291
+>       over phase: 7-band spread 0.0082 worst 0.0185;  twelve-setting mean spread 0.0134 worst 0.0294
+>       e at the real phase: -0.0165  -0.0295  -0.0277  +0.0451  -0.0478  -0.0294  +0.0833
+>     [ok]  ⛭ ② the slope statistic's phase systematic has fewer than four modes across the seven bands   N_eff 3.77
+>     [ok]       ...and the SLOPE's own effective count against it is nine at the pre-registered amplitude and five at the banks' own -- above the pre-registered four either way   9.4, 17.7
+>     [FAIL]  ⛭⛭ ① at the REAL phase the null returns a third or more of the reported slope, in its own direction, on both amplitudes   +0.0309 (115 per cent), +0.0291 (108 per cent)
+>     [ok]       ...and on the single seven-band setting it reaches over half of the reported slope   +0.0258 against 0.0139
+>     [FAIL]       ...while the rise survives the null's subtraction on both amplitudes   -0.0040, -0.0022
+>     [ok]       the phase systematic's spread of the slope exceeds the reported setting spread of 0.0021   0.0134, 0.0134
+93,100c93,100
+<      0.85- 1.55   D_l side -0.0078   source side -0.0064
+<      1.55- 2.25   D_l side +0.0052   source side +0.0626
+<      2.25- 2.95   D_l side -0.0018   source side +0.0016
+<      2.95- 3.65   D_l side -0.0000   source side -0.0160
+<      3.65- 4.35   D_l side +0.0015   source side +0.0320
+<      4.35- 5.05   D_l side -0.0037   source side -0.0033
+<      5.05- 5.75   D_l side +0.0020   source side -0.0220
+<     [ok]  ⛭ the carrier is the SOURCE side: the D_l null cancels within one per cent in every band, the source null reaches four per cent and more   D_l worst 0.78, source worst 6.26 per cent
+---
+>      0.85- 1.55   D_l side -0.0174   source side -0.0118
+>      1.55- 2.25   D_l side +0.0316   source side +0.0400
+>      2.25- 2.95   D_l side -0.0182   source side +0.0042
+>      2.95- 3.65   D_l side +0.0142   source side -0.0589
+>      3.65- 4.35   D_l side +0.0199   source side +0.0548
+>      4.35- 5.05   D_l side -0.0571   source side -0.0296
+>      5.05- 5.75   D_l side +0.0738   source side -0.0899
+>     [FAIL]  ⛭ the carrier is the SOURCE side: the D_l null cancels within one per cent in every band, the source null reaches four per cent and more   D_l worst 7.38, source worst 8.99 per cent
+103,113c103,113
+<     source amplitude 0.500, own combs, own envelope: twelve-setting null slope +0.00483
+<     source amplitude 0.500, own combs, flat envelope: twelve-setting null slope +0.00342
+<     source amplitude 0.500, one comb, own envelope: twelve-setting null slope +0.00077
+<     source amplitude 0.500, one comb, flat envelope: twelve-setting null slope +0.00021
+<     source amplitude 0.930, own combs, own envelope: twelve-setting null slope +0.00442
+<     source amplitude 0.930, own combs, flat envelope: twelve-setting null slope +0.00341
+<     source amplitude 0.930, one comb, own envelope: twelve-setting null slope +0.00050
+<     source amplitude 0.930, one comb, flat envelope: twelve-setting null slope +0.00020
+<     the two arms' source combs: periods 1.0170 / 1.0160, so their phase difference runs +0.013 to +0.042 rad across the range
+<     [ok]  ⛭⛭ the carrier is the arms' own SOURCE COMBS: with one comb for both the null slope falls to a sixth or less, while a flat envelope keeps most of it -- so the band-RMS ratio is reading a phase drift of a few hundredths of a radian between the arms' sources as a difference in retention   own/own +0.0048, one comb +0.0008, flat envelope +0.0034
+<     [ok]       ...and that drift is under the pre-registered 0.05 rad, which is why it was not scanned separately and is carried inside the own-comb null instead   0.042 rad
+---
+>     source amplitude 0.500, own combs, own envelope: twelve-setting null slope +0.03088
+>     source amplitude 0.500, own combs, flat envelope: twelve-setting null slope +0.02537
+>     source amplitude 0.500, one comb, own envelope: twelve-setting null slope +0.00469
+>     source amplitude 0.500, one comb, flat envelope: twelve-setting null slope +0.00901
+>     source amplitude 0.937, own combs, own envelope: twelve-setting null slope +0.03129
+>     source amplitude 0.937, own combs, flat envelope: twelve-setting null slope +0.02533
+>     source amplitude 0.937, one comb, own envelope: twelve-setting null slope +0.00827
+>     source amplitude 0.937, one comb, flat envelope: twelve-setting null slope +0.00903
+>     the two arms' source combs: periods 1.0170 / 1.0115, so their phase difference runs +0.034 to +0.199 rad across the range
+>     [FAIL]  ⛭⛭ the carrier is the arms' own SOURCE COMBS: with one comb for both the null slope falls to a sixth or less, while a flat envelope keeps most of it -- so the band-RMS ratio is reading a phase drift of a few hundredths of a radian between the arms' sources as a difference in retention   own/own +0.0309, one comb +0.0047, flat envelope +0.0254
+>     [FAIL]       ...and that drift is under the pre-registered 0.05 rad, which is why it was not scanned separately and is carried inside the own-comb null instead   0.199 rad
+119,127c119,131
+< GATES: ALL PASS.
+< 
+<   VERDICT: ** the count is not where the cost is; the step stands, and a third of the slope is a
+<   phase drift between the two arms' sources, read by the statistic as retention. **
+<   *Against the phase systematic both banded statistics have three to three and a half modes across
+<   seven bands.  The step's false value at the real phase is a quarter to two fifths of it.  The
+<   retention slope's null at the real phase is 36 to 39 per cent of the reported slope, in its
+<   direction, and a comb shared by both arms removes it.  The rise survives; its size does not.*
+< rc=0
+---
+> GATES: 11 FAILED:
+>   - the lifted statistic on the real banks IS the step receipt's printed row: band 1 +0.0215, step ratio 0.333, band 1 below the rest by 0.043
+>   - ⛭ ② the step statistic's phase systematic has fewer than four modes across the seven bands
+>   - ⛭ THE STEP STANDS: its worst false value over phase is well under half the step, on both amplitudes
+>   -      ...and at the real phase the false step is a quarter to two fifths of it, in the step's own direction
+>   -      signal to systematic over the phase spread: seven and a half at the pre-registered amplitude, under four at the banks' own
+>   - the lifted statistic on the real banks IS the slope receipt's: +0.01359 +- 0.00202 over twelve settings
+>   - ⛭⛭ ① at the REAL phase the null returns a third or more of the reported slope, in its own direction, on both amplitudes
+>   -      ...while the rise survives the null's subtraction on both amplitudes
+>   - ⛭ the carrier is the SOURCE side: the D_l null cancels within one per cent in every band, the source null reaches four per cent and more
+>   - ⛭⛭ the carrier is the arms' own SOURCE COMBS: with one comb for both the null slope falls to a sixth or less, while a flat envelope keeps most of it -- so the band-RMS ratio is reading a phase drift of a few hundredths of a radian between the arms' sources as a difference in retention
+>   -      ...and that drift is under the pre-registered 0.05 rad, which is why it was not scanned separately and is carried inside the own-comb null instead
+> rc=1

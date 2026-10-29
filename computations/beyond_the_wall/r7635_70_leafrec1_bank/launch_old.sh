@@ -5,6 +5,8 @@
 # record (ZSTART=3e7 LEAFSCALES=1 LEAFREC=1 and the refitted four), replacing both the old built-in-default point
 # with its LATARG-solved onset (c54/item38/r4494) and the old CRH0/CROM points (r6784/r6794/cc66).
 # ⚠ KFAC=1, which the c54/item38 files were made at, is refused by today's alias gate: these run at KFAC=2.
+# ⚠ c54.186_cr_KCONT: at KFAC=2 its NK=600 continuum is 2.8 points per Bessel period and the sampling gate refuses it;
+#   NK=1200 restores the namesake's 5.7 points per period (3600 modes), which is the property its README row names.
 cd /home/user/shadow-of-existence/computations/beyond_the_wall || exit 1
 D=${D:-/tmp/claude-0/-home-user-shadow-of-existence/4913e7eb-3c04-585c-bc52-ac1b69fc5eb8/scratchpad/bank}
 mkdir -p $D/old $D/r6794
@@ -34,7 +36,7 @@ $O c54.195_cr_phi1.5708_L3000 $CR $F186 CRPHI=1.5708
 $O c54.175_cr $CR NK=600 LMAXL=2000 ETAEND=4000 BSPLIT=0 POLC=0.8888888889
 $O c54.177_cr $CR NK=600 LMAXL=2000 ETAEND=4000 BSPLIT=0
 $O c54.178_cr $CR $F178
-$O c54.186_cr_KCONT $CR $F178 KCONT=1
+$O c54.186_cr_KCONT $CR HIER=1 BSPLIT=1 NK=1200 LMAXL=2000 ETAEND=4000 KBATCH=300 KCONT=1
 $O r6784_cr_crossing_hier $CR $F178 CRIC=branchpoint
 $O r6784_cr_crossing_hier_noCRIC $CR $F178
 $O r6784_cr_crossing_los $CR BSPLIT=1 NK=600 LMAXL=2000 ETAEND=4000 KBATCH=300 CRIC=branchpoint

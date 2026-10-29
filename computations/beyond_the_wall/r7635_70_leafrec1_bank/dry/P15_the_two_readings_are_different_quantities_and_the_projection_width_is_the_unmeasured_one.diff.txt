@@ -1,0 +1,32 @@
+105c105
+<   [PASS] ⛭ AND THE SIGN DIFFERENCE IS NOT THE RANGE BUT THE QUANTITY: on the SAME range the oscillation-amplitude ratio is still ABOVE the control while the band-power ratio is BELOW it   (amplitude +0.95% against band power -11.58% on q in [3.50, 5.40])
+---
+>   [PASS] ⛭ AND THE SIGN DIFFERENCE IS NOT THE RANGE BUT THE QUANTITY: on the SAME range the oscillation-amplitude ratio is still ABOVE the control while the band-power ratio is BELOW it   (amplitude +0.95% against band power -11.97% on q in [3.50, 5.40])
+112c112
+<   target    (r-1): +0.05193 -> +0.07621
+---
+>   target    (r-1): +0.03734 -> +0.16166
+114c114
+<   [PASS] ⛭⛭ ⓶ ON THE RANGE WHERE THE RIGHT QUANTITY CAN BE MEASURED THE CANDIDATE GROWS AND DECELERATES, with the SAME curvature sign as the target -- so it passes both teeth where it can be tested, reversing `cc66.50`'s dismissal on this seat's own error rather than on new data   (departure -0.00064 -> +0.01661; curvature -0.00373 against the target's -0.00291)
+---
+>   [FAIL] ⛭⛭ ⓶ ON THE RANGE WHERE THE RIGHT QUANTITY CAN BE MEASURED THE CANDIDATE GROWS AND DECELERATES, with the SAME curvature sign as the target -- so it passes both teeth where it can be tested, reversing `cc66.50`'s dismissal on this seat's own error rather than on new data   (got departure -0.00064 -> +0.01661; curvature -0.00373 against the target's +0.01403)
+116c116
+<   [PASS] ⛔ AND THE FILTER STILL CANNOT CLOSE IT: the target's growth is concentrated BELOW q = 2, which is exactly where the only quantity that could carry it cannot be measured -- so a pass on the shared range is a pass on the part carrying least of what is to be explained   (target grows 3.55-fold over the full range against 1.47-fold over the shared one)
+---
+>   [PASS] ⛔ AND THE FILTER STILL CANNOT CLOSE IT: the target's growth is concentrated BELOW q = 2, which is exactly where the only quantity that could carry it cannot be measured -- so a pass on the shared range is a pass on the part carrying least of what is to be explained   (target grows 8.69-fold over the full range against 4.33-fold over the shared one)
+123,125c123,125
+<   window width in eta      : control 51.6255  arm 54.9754  -> 1.0649
+<   window width in rs_leaf  : control 19.1368  arm 18.9866  -> 0.9921
+<   [PASS] ⛭⛭⛭ ⓷ AND THE PROJECTION HOLDS A WIDTH NOBODY HAS IMPOSED, WHICH IS THE FINDING.  The acoustic phase swept across the window varies by k x the width in the LEAF clock -- what smears the oscillation and what `cc66.47` acted on -- while the projection smears by k x the width in CONFORMAL TIME, the Bessel argument being k(eta_0 - eta).  In a one-rate cosmology these are one object; here the two clocks differ and THE TWO WIDTHS DO NOT SCALE TOGETHER BETWEEN THE ARMS   (the arm's window is +6.5% in conformal time and -0.8% in the leaf horizon -- a ratio +7.3% different from the control's)
+---
+>   window width in eta      : control 51.6255  arm 57.0189  -> 1.1045
+>   window width in rs_leaf  : control 19.1368  arm 19.5983  -> 1.0241
+>   [FAIL] ⛭⛭⛭ ⓷ AND THE PROJECTION HOLDS A WIDTH NOBODY HAS IMPOSED, WHICH IS THE FINDING.  The acoustic phase swept across the window varies by k x the width in the LEAF clock -- what smears the oscillation and what `cc66.47` acted on -- while the projection smears by k x the width in CONFORMAL TIME, the Bessel argument being k(eta_0 - eta).  In a one-rate cosmology these are one object; here the two clocks differ and THE TWO WIDTHS DO NOT SCALE TOGETHER BETWEEN THE ARMS   (got the arm's window is +10.4% in conformal time and +2.4% in the leaf horizon -- a ratio +7.8% different from the control's)
+129,130c129,132
+< GATES: ALL PASS
+< rc=0
+---
+> GATES: 2 FAILED:
+>   - ⛭⛭ ⓶ ON THE RANGE WHERE THE RIGHT QUANTITY CAN BE MEASURED THE CANDIDATE GROWS AND DECELERATES, with the SAME curvature sign as the target -- so it passes both teeth where it can be tested, reversing `cc66.50`'s dismissal on this seat's own error rather than on new data
+>   - ⛭⛭⛭ ⓷ AND THE PROJECTION HOLDS A WIDTH NOBODY HAS IMPOSED, WHICH IS THE FINDING.  The acoustic phase swept across the window varies by k x the width in the LEAF clock -- what smears the oscillation and what `cc66.47` acted on -- while the projection smears by k x the width in CONFORMAL TIME, the Bessel argument being k(eta_0 - eta).  In a one-rate cosmology these are one object; here the two clocks differ and THE TWO WIDTHS DO NOT SCALE TOGETHER BETWEEN THE ARMS
+> rc=1

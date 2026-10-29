@@ -1,0 +1,130 @@
+69c69
+<      CR crossing           221.8 / 536.8 / 812.9 / 1126.5    295.58     -0.2278 +- 0.0017    299.04     -0.2445 +- 0.0019
+---
+>      CR crossing           221.9 / 536.5 / 812.6 / 1125.6    295.35     -0.2270 +- 0.0017    298.73     -0.2433 +- 0.0019
+73c73
+<      CR crossing   phi(1-3) +0.0100 +- 0.0101 = +1.0 sigma      phi(1-4) +0.0004 +- 0.0076 = +0.0 sigma
+---
+>      CR crossing   phi(1-3) +0.0108 +- 0.0101 = +1.1 sigma      phi(1-4) +0.0015 +- 0.0076 = +0.2 sigma
+77c77
+<       phi(1-3) +0.0040 +- 0.0025 = +1.6 sigma      phi(1-4) +0.0019 +- 0.0029 = +0.6 sigma
+---
+>       phi(1-3) +0.0048 +- 0.0025 = +1.9 sigma      phi(1-4) +0.0030 +- 0.0029 = +1.0 sigma
+87,90c87,90
+<     cc66.25: native grid, unlensed, stored sky    -0.2324    +0.0081           3.4%
+<                                       + lensed    -0.2312    +0.0092           3.8%
+<                     + binned through plik_lite    -0.2278    +0.0126           5.3%
+<                      + sky by the SAME locator    -0.2278    +0.0100           4.2%
+---
+>     cc66.25: native grid, unlensed, stored sky    -0.2316    +0.0089           3.7%
+>                                       + lensed    -0.2304    +0.0100           4.2%
+>                     + binned through plik_lite    -0.2270    +0.0134           5.6%
+>                      + sky by the SAME locator    -0.2270    +0.0108           4.5%
+92c92
+<   ⇒ ** THE PER-CENT OFFSET DOES NOT FALL: 3.4% becomes 4.2% under the matched procedure. **
+---
+>   ⇒ ** THE PER-CENT OFFSET DOES NOT FALL: 3.7% becomes 4.5% under the matched procedure. **
+98c98
+<      +0.0100 is +1.0 sigma.  ** The number was never small; it was never
+---
+>      +0.0108 is +1.1 sigma.  ** The number was never small; it was never
+100c100
+<      removes the procedure's shared bias, leaves +1.6 sigma.*
+---
+>      removes the procedure's shared bias, leaves +1.9 sigma.*
+162c162
+<   the settled-endpoint ratio r = 0.99179, so r^2 - 1 = -0.016355; l_D = D_M/r_D(control) = 2094.2
+---
+>   the settled-endpoint ratio r = 0.99179, so r^2 - 1 = -0.016355; l_D = D_M/r_D(control) = 2111.6
+165,167c165,167
+<       l =  540:  -0.109%
+<       l =  810:  -0.244%
+<       l = 1127:  -0.473%
+---
+>       l =  540:  -0.107%
+>       l =  810:  -0.240%
+>       l = 1127:  -0.465%
+170,171c170,171
+<                          CR, as computed    221.8+-0.0    536.8+-0.5    812.9+-0.6   1126.5+-0.9
+<      CR, damping forced to the control's    221.7+-0.0    536.7+-0.5    812.8+-0.6   1126.4+-0.9
+---
+>                          CR, as computed    221.9+-0.0    536.5+-0.5    812.6+-0.6   1125.6+-0.9
+>      CR, damping forced to the control's    221.8+-0.0    536.4+-0.4    812.5+-0.6   1125.5+-0.9
+175c175
+<    the shift the envelope alone produces      -0.01      -0.05      -0.08      -0.13
+---
+>    the shift the envelope alone produces      -0.01      -0.10      -0.08      -0.13
+177,179c177,179
+<            CR minus control, as computed      +1.60      -0.24      +1.25      +1.95
+<      CR minus control, damping equalised      +1.58      -0.29      +1.17      +1.82
+<     OK    the operation is sound: imposing the arm's envelope on the control shifts the peaks equal and opposite to within 10%
+---
+>            CR minus control, as computed      +1.69      -0.50      +0.89      +1.07
+>      CR minus control, damping equalised      +1.68      -0.60      +0.81      +0.94
+>     FAIL  the operation is sound: imposing the arm's envelope on the control shifts the peaks equal and opposite to within 10%
+181c181
+<   ⇒ *** THE ENVELOPE ACCOUNTS FOR 7% OF THE FOURTH PEAK'S OFFSET (0.13 of 1.95 in ell). ***
+---
+>   ⇒ *** THE ENVELOPE ACCOUNTS FOR 12% OF THE FOURTH PEAK'S OFFSET (0.13 of 1.07 in ell). ***
+188,191c188,191
+<        1          +1.60          0.65     +2.4s            +0.19      +1.41
+<        2          -0.24          4.24     -0.1s            +0.46      -0.70
+<        3          +1.25          2.38     +0.5s            +0.69      +0.56
+<        4          +1.95          0.94     +2.1s            +0.95      +0.99
+---
+>        1          +1.69          0.65     +2.6s            +1.02      +0.67
+>        2          -0.50          4.24     -0.1s            +2.49      -2.99
+>        3          +0.89          2.38     +0.4s            +3.77      -2.88
+>        4          +1.07          0.94     +1.1s            +5.22      -4.16
+193c193
+<   the arm's geometric comb is 301.80 against the control's 301.54 -- +0.085% -- and the column above
+---
+>   the arm's geometric comb is 302.94 against the control's 301.54 -- +0.464% -- and the column above
+197c197
+<      is left over is +1.41, -0.70, +0.56, +0.99 -- *a roughly UNIFORM shift of about one
+---
+>      is left over is +0.67, -2.99, -2.88, -4.16 -- *a roughly UNIFORM shift of about one
+199c199
+<      +1.6 sigma against the control and +1.0 against the sky.  ** So it is a phase-like
+---
+>      +1.9 sigma against the control and +1.1 against the sky.  ** So it is a phase-like
+204,205c204,205
+<     OK    the comb-width term accounts for between a third and two thirds of the fourth peak's offset -- stated as the share it is, not as the whole
+<     OK    ** and what it leaves has the same sign and the same order at peaks 1, 3 and 4 -- all positive, all between half a multipole and two -- which is a phase and not a peak **
+---
+>     FAIL  the comb-width term accounts for between a third and two thirds of the fourth peak's offset -- stated as the share it is, not as the whole
+>     FAIL  ** and what it leaves has the same sign and the same order at peaks 1, 3 and 4 -- all positive, all between half a multipole and two -- which is a phase and not a peak **
+213,214c213,214
+<   phi/pi carries +-0.0099 across the same seven locator windows, so the arm sits +1.0 sigma from it on
+<   the three-peak fit and +0.0 sigma on the four-peak fit, and +1.6 and +0.6 sigma from the control. **
+---
+>   phi/pi carries +-0.0099 across the same seven locator windows, so the arm sits +1.1 sigma from it on
+>   the three-peak fit and +0.2 sigma on the four-peak fit, and +1.9 and +1.0 sigma from the control. **
+220c220
+<   moves it -0.13 in ell against an offset of +1.95 -- 7%.  *The test is validated by its
+---
+>   moves it -0.13 in ell against an offset of +1.07 -- 12%.  *The test is validated by its
+223,226c223,226
+<   ** (3) AND WHAT IS LEFT IS ONE MULTIPOLE, UNIFORM. **  Peaks one, three and four sit +1.60, +1.25
+<   and +1.95 above the control's -- 2.1 sigma of the sky's own locating spread at the fourth.  A comb
+<   +0.085% wider, which is what the arm's geometry gives, accounts for about half of the third and
+<   fourth and little of the first; what it leaves is +1.41, +0.56, +0.99 -- *the same sign and the
+---
+>   ** (3) AND WHAT IS LEFT IS ONE MULTIPOLE, UNIFORM. **  Peaks one, three and four sit +1.69, +0.89
+>   and +1.07 above the control's -- 1.1 sigma of the sky's own locating spread at the fourth.  A comb
+>   +0.464% wider, which is what the arm's geometry gives, accounts for about half of the third and
+>   fourth and little of the first; what it leaves is +0.67, -2.88, -4.16 -- *the same sign and the
+228c228
+<   not a clean constant.*  ** And PART 2 measured that phase at +1.6 sigma against the control. **
+---
+>   not a clean constant.*  ** And PART 2 measured that phase at +1.9 sigma against the control. **
+243,245c243,247
+<   ✓ ALL CHECKS PASSED
+< ========================================================================================================
+< rc=0
+---
+>   FAILED:
+>     - the operation is sound: imposing the arm's envelope on the control shifts the peaks equal and opposite to within 10%
+>     - the comb-width term accounts for between a third and two thirds of the fourth peak's offset -- stated as the share it is, not as the whole
+>     - ** and what it leaves has the same sign and the same order at peaks 1, 3 and 4 -- all positive, all between half a multipole and two -- which is a phase and not a peak **
+> rc=1

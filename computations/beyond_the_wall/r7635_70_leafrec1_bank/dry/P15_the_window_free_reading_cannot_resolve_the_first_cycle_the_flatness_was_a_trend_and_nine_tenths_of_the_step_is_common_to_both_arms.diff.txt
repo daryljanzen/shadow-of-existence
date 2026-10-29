@@ -1,0 +1,66 @@
+82c82
+<   band 1: -0.0008 on 1 datum(s);  bands 2--7: +0.0722, scatter 0.0456 on 10
+---
+>   band 1: -0.0024 on 1 datum(s);  bands 2--7: +0.0375, scatter 0.0649 on 10
+84c84
+<   [PASS] ⇒ AND IT IS CONSISTENT WITH ZERO **AND** WITH THE BANDS 2--7 MEAN AT ONCE, so it distinguishes "the excess is zero below the step" from "there is no step at all" not at all   (0.02 sigma from zero, 1.60 sigma from the bands 2--7 mean)
+---
+>   [PASS] ⇒ AND IT IS CONSISTENT WITH ZERO **AND** WITH THE BANDS 2--7 MEAN AT ONCE, so it distinguishes "the excess is zero below the step" from "there is no step at all" not at all   (0.04 sigma from zero, 0.61 sigma from the bands 2--7 mean)
+86,89c86,89
+<   [PASS] and its below-step stretch rests on the SAME single extremum, and it interpolates ACROSS the step, so its reading there is biased TOWARD the above-step value rather than away from it -- which is why it reads higher than the per-transition one and still cannot settle the question   (1 located extremum below the step; +0.0245 there against +0.0726 above)
+<   [PASS] ⌗ AND THE EXTREMUM FINDER IS NOT WHAT DECIDES ANY OF IT: the below/above ratio is unchanged across three settings of what counts as an extremum   (order 12/20/30 all give 0.338)
+<   [PASS] ⇒ *** SO THE ANSWER IS THE STATISTICS THAT DO RESOLVE BAND 1, AND THERE THE EXCESS IS NON-ZERO AND POSITIVE OVER THE FULL BAND INCLUDING THE STRETCH THE WINDOW-FREE FAMILY CANNOT REACH: "SMALL BUT NON-ZERO" IS THE SUPPORTED ROW AND THE STEP STAYS A STEP ***   (band 1's windowed excess +0.0215 over q = 0.85--1.55)
+<   [PASS] ⛔ AND `cc66.57`'s "none" ENDPOINT IS WITHDRAWN AS UNRESOLVED RATHER THAN AS A READING, WHICH TIGHTENS THE SIZE INSTEAD OF LOOSENING IT: every statistic that can see band 1 puts it between a third and two thirds of the rest   (step ratios 0.333, 0.391, 0.633, 0.338)
+---
+>   [PASS] and its below-step stretch rests on the SAME single extremum, and it interpolates ACROSS the step, so its reading there is biased TOWARD the above-step value rather than away from it -- which is why it reads higher than the per-transition one and still cannot settle the question   (1 located extremum below the step; +0.0174 there against +0.0725 above)
+>   [PASS] ⌗ AND THE EXTREMUM FINDER IS NOT WHAT DECIDES ANY OF IT: the below/above ratio is unchanged across three settings of what counts as an extremum   (order 12/20/30 all give 0.239)
+>   [PASS] ⇒ *** SO THE ANSWER IS THE STATISTICS THAT DO RESOLVE BAND 1, AND THERE THE EXCESS IS NON-ZERO AND POSITIVE OVER THE FULL BAND INCLUDING THE STRETCH THE WINDOW-FREE FAMILY CANNOT REACH: "SMALL BUT NON-ZERO" IS THE SUPPORTED ROW AND THE STEP STAYS A STEP ***   (band 1's windowed excess +0.0186 over q = 0.85--1.55)
+>   [FAIL] ⛔ AND `cc66.57`'s "none" ENDPOINT IS WITHDRAWN AS UNRESOLVED RATHER THAN AS A READING, WHICH TIGHTENS THE SIZE INSTEAD OF LOOSENING IT: every statistic that can see band 1 puts it between a third and two thirds of the rest   (got step ratios 0.333, 0.391, 0.633, 0.239)
+97c97
+<     measured excess  trend statistic 0.442   worst residual 38.2% of range
+---
+>     measured excess  trend statistic 0.901   worst residual 56.9% of range
+102c102
+<     measured excess  -0.566(-7.23s)  -0.598(-7.65s)  -0.575(-7.36s)  -0.601(-7.51s)
+---
+>     measured excess  -0.596(-1.20s)  -0.638(-1.33s)  -0.684(-0.89s)  -0.675(-0.92s)
+106,107c106,107
+<   [PASS] AND THE TERM MIX IS NOT FLAT EITHER AND STEPS **DOWNWARD** ON ALL FOUR -- the RIGHT sign, at a substantial minority of the excess's own departure   (-35% to -39%, 63% of the excess's)
+<   [PASS] AND THE PAIR AS ACTUALLY COMPOSED -- one spectrum, both coefficients at the sizes their own profiles solve -- CARRIES A MINORITY SHARE OF THE STEP IN THE RIGHT DIRECTION   (42% of the excess's, clearing 2 sigma on 3 of the four bases)
+---
+>   [PASS] AND THE TERM MIX IS NOT FLAT EITHER AND STEPS **DOWNWARD** ON ALL FOUR -- the RIGHT sign, at a substantial minority of the excess's own departure   (-35% to -39%, 57% of the excess's)
+>   [PASS] AND THE PAIR AS ACTUALLY COMPOSED -- one spectrum, both coefficients at the sizes their own profiles solve -- CARRIES A MINORITY SHARE OF THE STEP IN THE RIGHT DIRECTION   (38% of the excess's, clearing 2 sigma on 3 of the four bases)
+114,115c114,115
+<     windowed     arm      +0.300(+2.95s)  +0.360(+3.86s)  +0.268(+2.54s)  +0.342(+3.53s)
+<     windowed     EXCESS   -0.566(-7.23s)  -0.598(-7.65s)  -0.575(-7.36s)  -0.601(-7.51s)
+---
+>     windowed     arm      +0.293(+3.02s)  +0.352(+3.85s)  +0.267(+2.67s)  +0.339(+3.62s)
+>     windowed     EXCESS   -0.596(-1.20s)  -0.638(-1.33s)  -0.684(-0.89s)  -0.675(-0.92s)
+117,125c117,125
+<     window-free  arm      +0.344(+3.36s)  +0.389(+3.99s)  +0.334(+3.19s)  +0.388(+3.94s)
+<     window-free  EXCESS   -0.664(-8.48s)  -0.724(-8.35s)  -0.695(-8.44s)  -0.732(-7.41s)
+<   [PASS] ⓷ BOTH ARMS STEP UPWARD AT BAND 1 AGAINST THEIR OWN BANDS 2--7 TREND, ON ALL FOUR BASES, on the windowed contrast -- so this is not a feature of one spectrum   (control +30% to +40%, arm +27% to +36%)
+<   [PASS] AND THE ARM'S STEP IS ALWAYS THE SHALLOWER, on every basis, on the windowed contrast   (shallower by 11.5%, 11.0%, 11.5%, 11.0%)
+<   [PASS] ⇒ *** AND THE COMMON PART IS ABOUT NINE TENTHS: the arm's step is some ELEVEN PER CENT shallower than the control's and no more, so the excess's step is the small part that FAILS TO CANCEL *** -- on the windowed contrast   (11.0% to 11.5% of the step is arm-specific; the excess's own departure is -57% to -60%)
+<   [PASS] ⓷ BOTH ARMS STEP UPWARD AT BAND 1 AGAINST THEIR OWN BANDS 2--7 TREND, ON ALL FOUR BASES, on the window-free contrast -- so this is not a feature of one spectrum   (control +36% to +43%, arm +33% to +39%)
+<   [PASS] AND THE ARM'S STEP IS ALWAYS THE SHALLOWER, on every basis, on the window-free contrast   (shallower by 9.4%, 10.4%, 8.2%, 9.9%)
+<   [PASS] ⇒ *** AND THE COMMON PART IS ABOUT NINE TENTHS: the arm's step is some ELEVEN PER CENT shallower than the control's and no more, so the excess's step is the small part that FAILS TO CANCEL *** -- on the window-free contrast   (8.2% to 10.4% of the step is arm-specific; the excess's own departure is -66% to -73%)
+<   [PASS] ⌗ AND THE EXCESS'S OWN DEPARTURE IS FAR MORE SIGNIFICANT THAN EITHER ARM'S AGAINST ITS OWN SCATTER, which is what makes the residual readable at all: the ratio's bands 2--7 are much smoother than either spectrum's   (excess 7.2--7.6 sigma against the control's 4.5)
+---
+>     window-free  arm      +0.334(+3.26s)  +0.380(+3.91s)  +0.324(+3.09s)  +0.378(+3.84s)
+>     window-free  EXCESS   -0.837(-7.97s)  -0.858(-7.14s)  -0.842(-7.54s)  -0.857(-6.72s)
+>   [PASS] ⓷ BOTH ARMS STEP UPWARD AT BAND 1 AGAINST THEIR OWN BANDS 2--7 TREND, ON ALL FOUR BASES, on the windowed contrast -- so this is not a feature of one spectrum   (control +30% to +40%, arm +27% to +35%)
+>   [PASS] AND THE ARM'S STEP IS ALWAYS THE SHALLOWER, on every basis, on the windowed contrast   (shallower by 13.6%, 12.9%, 11.8%, 11.5%)
+>   [PASS] ⇒ *** AND THE COMMON PART IS ABOUT NINE TENTHS: the arm's step is some ELEVEN PER CENT shallower than the control's and no more, so the excess's step is the small part that FAILS TO CANCEL *** -- on the windowed contrast   (11.5% to 13.6% of the step is arm-specific; the excess's own departure is -60% to -68%)
+>   [PASS] ⓷ BOTH ARMS STEP UPWARD AT BAND 1 AGAINST THEIR OWN BANDS 2--7 TREND, ON ALL FOUR BASES, on the window-free contrast -- so this is not a feature of one spectrum   (control +36% to +43%, arm +32% to +38%)
+>   [PASS] AND THE ARM'S STEP IS ALWAYS THE SHALLOWER, on every basis, on the window-free contrast   (shallower by 12.0%, 12.6%, 11.2%, 12.3%)
+>   [PASS] ⇒ *** AND THE COMMON PART IS ABOUT NINE TENTHS: the arm's step is some ELEVEN PER CENT shallower than the control's and no more, so the excess's step is the small part that FAILS TO CANCEL *** -- on the window-free contrast   (11.2% to 12.6% of the step is arm-specific; the excess's own departure is -84% to -86%)
+>   [FAIL] ⌗ AND THE EXCESS'S OWN DEPARTURE IS FAR MORE SIGNIFICANT THAN EITHER ARM'S AGAINST ITS OWN SCATTER, which is what makes the residual readable at all: the ratio's bands 2--7 are much smoother than either spectrum's   (got excess 0.9--1.3 sigma against the control's 4.5)
+130,131c130,133
+< GATES: ALL PASS
+< rc=0
+---
+> GATES: 2 FAILED:
+>   - ⛔ AND `cc66.57`'s "none" ENDPOINT IS WITHDRAWN AS UNRESOLVED RATHER THAN AS A READING, WHICH TIGHTENS THE SIZE INSTEAD OF LOOSENING IT: every statistic that can see band 1 puts it between a third and two thirds of the rest
+>   - ⌗ AND THE EXCESS'S OWN DEPARTURE IS FAR MORE SIGNIFICANT THAN EITHER ARM'S AGAINST ITS OWN SCATTER, which is what makes the residual readable at all: the ratio's bands 2--7 are much smoother than either spectrum's
+> rc=1

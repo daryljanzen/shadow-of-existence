@@ -1,0 +1,218 @@
+168c168
+<   [PASS] [cr] ⚑ THE SLICED SOURCE RUN REPRODUCES THE BANKED 185-BIN REFIT SPECTRUM, which is what makes the k end and the ell end ONE run rather than two   (max relative |dD_l| = 6.299e-16 over 238 multipoles, 6 slices)
+---
+>   [PASS] [cr] ⚑ THE SLICED SOURCE RUN REPRODUCES THE BANKED 185-BIN REFIT SPECTRUM, which is what makes the k end and the ell end ONE run rather than two   (max relative |dD_l| = 4.690e-16 over 238 multipoles, 6 slices)
+175,176c175,176
+<     cr        14017.039    145.911   301.799
+<     arm/control:  D_M 1.004492 (+0.449%)   r_s 1.003640   l_A 1.000849 (+0.085%)
+---
+>     cr        14133.955    146.573   302.943
+>     arm/control:  D_M 1.012871 (+1.287%)   r_s 1.008189   l_A 1.004644 (+0.464%)
+178,179c178,179
+<   [PASS] ⛔ ** THE PREMISE IS WRONG IN SIZE AND IN SIGN. **  The arms' comoving distances differ by under half a per cent at the adjudicated minima, and the ARM'S IS THE LARGER; 13005/13865 belongs to the superseded configuration (r_s 135.46/144.53)   (+0.449% against the order's -6.2%)
+<   [PASS] ...and the cancellation the order relies on IS real -- the acoustic angles agree -- so it is the six per cent and not the reasoning that fails   (l_A agree to 0.085%)
+---
+>   [FAIL] ⛔ ** THE PREMISE IS WRONG IN SIZE AND IN SIGN. **  The arms' comoving distances differ by under half a per cent at the adjudicated minima, and the ARM'S IS THE LARGER; 13005/13865 belongs to the superseded configuration (r_s 135.46/144.53)   (got +1.287% against the order's -6.2%)
+>   [FAIL] ...and the cancellation the order relies on IS real -- the acoustic angles agree -- so it is the six per cent and not the reasoning that fails   (got l_A agree to 0.464%)
+188c188
+<       the source POWER at its troughs, as a fraction of its own median: control 5.617e-09, arm 7.183e-09
+---
+>       the source POWER at its troughs, as a fraction of its own median: control 5.617e-09, arm 4.355e-08
+190c190
+<   [PASS] ⛔ the ell-space definition CANNOT be carried to the source unchanged: the source power comes within a part in a million of zero at its troughs, where a running LOG mean is dominated by near-zeros -- so the envelope is arithmetic at EVERY rung, and both are reported   (source 7.18e-09 of median against D_l 0.150)
+---
+>   [PASS] ⛔ the ell-space definition CANNOT be carried to the source unchanged: the source power comes within a part in a million of zero at its troughs, where a running LOG mean is dominated by near-zeros -- so the envelope is arithmetic at EVERY rung, and both are reported   (source 4.35e-08 of median against D_l 0.150)
+194c194
+<       source at last scattering  cr    period in q = 0.9978
+---
+>       source at last scattering  cr    period in q = 0.9940
+196c196
+<       source eta-integrated      cr    period in q = 1.0206
+---
+>       source eta-integrated      cr    period in q = 1.0167
+198,201c198,201
+<       raw D_l                    cr    period in q = 1.0338
+<   [PASS] the two arms' acoustic period in q AGREES at the `source at last scattering` rung, so the regression there is a contrast and not a frequency mismatch   (arm/control period = 0.99782)
+<   [PASS] the two arms' acoustic period in q AGREES at the `source eta-integrated` rung, so the regression there is a contrast and not a frequency mismatch   (arm/control period = 0.99731)
+<   [PASS] the two arms' acoustic period in q AGREES at the `raw D_l` rung, so the regression there is a contrast and not a frequency mismatch   (arm/control period = 0.99915)
+---
+>       raw D_l                    cr    period in q = 1.0299
+>   [FAIL] the two arms' acoustic period in q AGREES at the `source at last scattering` rung, so the regression there is a contrast and not a frequency mismatch   (got arm/control period = 0.99405)
+>   [FAIL] the two arms' acoustic period in q AGREES at the `source eta-integrated` rung, so the regression there is a contrast and not a frequency mismatch   (got arm/control period = 0.99354)
+>   [PASS] the two arms' acoustic period in q AGREES at the `raw D_l` rung, so the regression there is a contrast and not a frequency mismatch   (arm/control period = 0.99538)
+210c210
+<       lensed+binned+fitted D_l    self 1.000000   injected 1.040 -> 1.0379   injected 1.200 -> 1.1903   resample-null 0.99754
+---
+>       lensed+binned+fitted D_l    self 1.000000   injected 1.040 -> 1.0379   injected 1.200 -> 1.1903   resample-null 0.99190
+212,213c212,213
+<   [PASS] [lensed+binned+fitted D_l] ...and resampling the control through the OTHER arm's abscissa and back returns it, so the two grids' difference is not what a ratio would read   (0.99754)
+<       ⇒ the floor, as the largest of those: 0.62 per cent
+---
+>   [FAIL] [lensed+binned+fitted D_l] ...and resampling the control through the OTHER arm's abscissa and back returns it, so the two grids' difference is not what a ratio would read   (got 0.99190)
+>       ⇒ the floor, as the largest of those: 0.81 per cent
+218,231c218,231
+<     1  source at last scattering     0.9960   0.9976   0.9985   0.6847   0.6832  +0.0050
+<     1m   monopole + Doppler only     0.9937   0.9941   0.9996   0.7095   0.7052  -0.0010
+<     1s   monopole alone              0.9923   0.9930   0.9993   0.7047   0.6998  -0.0050
+<     2  source eta-integrated         0.9923   0.9928   0.9995   0.6895   0.6843  -0.0040
+<     2m   monopole + Doppler only     0.9920   0.9926   0.9994   0.6982   0.6929  -0.0050
+<     2P   with the k-measure P(k)     0.9930   0.9935   0.9995   0.6822   0.6776  -0.0040
+<     3  raw D_l, this run             1.0452   1.0455   0.9997   0.1664   0.1740  -0.0010
+<     4  lensed + binned + fitted      1.0468   1.0472   0.9996   0.1536   0.1610  -0.0010
+<   [PASS] ⚑ ** THE SOURCE RATIO IS 1.00 AND THE ell RATIO IS 1.045: the excess is NOT in the dynamics, and it is manufactured between k and ell. **  This is the order's second branch   (source 0.9960 / 0.9923 against ell 1.0452 / 1.0468, a step of +0.0545 on a floor of 0.0062)
+<   [PASS] ...and the source ratio is if anything BELOW one, which is the direction all four of the order's channels point -- so four-for-four needed nothing upstream to overcome it   (0.9960 at last scattering, 0.9923 eta-integrated)
+<   [PASS] the eta-integration alone -- an average over the visibility WITHOUT the kernel -- barely moves it, so the step is the kernel's and not the visibility width's   (0.9960 -> 0.9923, -0.37%)
+<   [PASS] the lensing and the binning are not what make it either: the RAW spectrum already carries the excess and the banked pipeline adds 0.002   (raw 1.0452 -> lensed/binned/fitted 1.0468)
+<   [PASS] and the term subsets agree -- monopole alone, monopole plus Doppler (what the order names), and the full source -- so the answer is not a choice of terms   (1m   monopole + Do 0.9937  1s   monopole alon 0.9923  2m   monopole + Do 0.9920)
+<   [PASS] and including the k-measure P(k) -- whose `dk` is one-sided at each batch edge and whose tilt differs between the arms -- moves the source rung by less than the floor   (0.9923 -> 0.9930)
+---
+>     1  source at last scattering     1.0112   1.0172   0.9941   0.6847   0.6973  -0.0100
+>     1m   monopole + Doppler only     1.0057   1.0139   0.9919   0.7095   0.7194  -0.0170
+>     1s   monopole alone              1.0015   1.0123   0.9893   0.7047   0.7136  -0.0210
+>     2  source eta-integrated         0.9973   1.0058   0.9915   0.6895   0.6940  -0.0180
+>     2m   monopole + Doppler only     1.0003   1.0096   0.9908   0.6982   0.7052  -0.0190
+>     2P   with the k-measure P(k)     0.9976   1.0059   0.9918   0.6822   0.6871  -0.0180
+>     3  raw D_l, this run             1.0415   1.0465   0.9952   0.1664   0.1743  -0.0130
+>     4  lensed + binned + fitted      1.0462   1.0506   0.9958   0.1536   0.1616  -0.0120
+>   [PASS] ⚑ ** THE SOURCE RATIO IS 1.00 AND THE ell RATIO IS 1.045: the excess is NOT in the dynamics, and it is manufactured between k and ell. **  This is the order's second branch   (source 1.0112 / 0.9973 against ell 1.0415 / 1.0462, a step of +0.0488 on a floor of 0.0081)
+>   [FAIL] ...and the source ratio is if anything BELOW one, which is the direction all four of the order's channels point -- so four-for-four needed nothing upstream to overcome it   (got 1.0112 at last scattering, 0.9973 eta-integrated)
+>   [FAIL] the eta-integration alone -- an average over the visibility WITHOUT the kernel -- barely moves it, so the step is the kernel's and not the visibility width's   (got 1.0112 -> 0.9973, -1.39%)
+>   [PASS] the lensing and the binning are not what make it either: the RAW spectrum already carries the excess and the banked pipeline adds 0.002   (raw 1.0415 -> lensed/binned/fitted 1.0462)
+>   [PASS] and the term subsets agree -- monopole alone, monopole plus Doppler (what the order names), and the full source -- so the answer is not a choice of terms   (1m   monopole + Do 1.0057  1s   monopole alon 1.0015  2m   monopole + Do 1.0003)
+>   [PASS] and including the k-measure P(k) -- whose `dk` is one-sided at each batch edge and whose tilt differs between the arms -- moves the source rung by less than the floor   (0.9973 -> 0.9976)
+235,236c235,236
+<       cr    rms o(source) 0.6843 -> rms o(D_l) 0.1740   suppression 0.2543
+<   [PASS] ⚑ the arm's projection RETAINS more of its OWN source oscillation than the control's does, by the same 5 per cent the ell rung reports -- the localisation restated as one number   (0.2413 against 0.2543, ratio 1.0542)
+---
+>       cr    rms o(source) 0.6940 -> rms o(D_l) 0.1743   suppression 0.2511
+>   [PASS] ⚑ the arm's projection RETAINS more of its OWN source oscillation than the control's does, by the same 5 per cent the ell rung reports -- the localisation restated as one number   (0.2413 against 0.2511, ratio 1.0408)
+239,241c239,241
+<       source eta-integrated      q<3 (ell<905) 0.9925    q>3 0.9921    change -0.0004
+<       raw D_l                    q<3 (ell<905) 1.0310    q>3 1.0647    change +0.0337
+<   [PASS] the ell rung's excess RISES with wavenumber and the source rung's is flat, which is one more way of saying the two are not the same measurement   (ell 1.0310 -> 1.0647 against source 0.9925 -> 0.9921)
+---
+>       source eta-integrated      q<3 (ell<905) 1.0031    q>3 0.9924    change -0.0107
+>       raw D_l                    q<3 (ell<905) 1.0280    q>3 1.0600    change +0.0320
+>   [FAIL] the ell rung's excess RISES with wavenumber and the source rung's is flat, which is one more way of saying the two are not the same measurement   (got ell 1.0280 -> 1.0600 against source 1.0031 -> 0.9924)
+245,252c245,252
+<     1 source at last scattering  arithmetic  w0.75 1.0053   w1.00 0.9960   w1.25 0.9976   w1.50 0.9962
+<     1 source at last scattering  geometric   w0.75 0.9926   w1.00 0.9796   w1.25 0.9763   w1.50 0.9713
+<     2 source eta-integrated      arithmetic  w0.75 1.0033   w1.00 0.9923   w1.25 0.9994   w1.50 1.0004
+<     2 source eta-integrated      geometric   w0.75 0.9925   w1.00 0.9744   w1.25 0.9847   w1.50 0.9870
+<     3 raw D_l                    arithmetic  w0.75 1.0443   w1.00 1.0452   w1.25 1.0449   w1.50 1.0425
+<     3 raw D_l                    geometric   w0.75 1.0459   w1.00 1.0487   w1.25 1.0515   w1.50 1.0506
+<   [PASS] ⚑ ** THE GAP IS NOT A DEFINITION. **  Over four windows and both envelope definitions the source rungs never leave the neighbourhood of one and the ell rung never comes near it   (source 0.9713-1.0053, ell 1.0425-1.0515)
+<   [PASS] ...and the ell rung under `r6885+cc66.35`'s own GEOMETRIC envelope agrees with this receipt's arithmetic one to within the definition's own span, so 1.0401 is not superseded   (geometric mean 1.0492 against arithmetic 1.0442)
+---
+>     1 source at last scattering  arithmetic  w0.75 1.0018   w1.00 1.0112   w1.25 0.9923   w1.50 0.9922
+>     1 source at last scattering  geometric   w0.75 1.0165   w1.00 1.0430   w1.25 0.9995   w1.50 0.9903
+>     2 source eta-integrated      arithmetic  w0.75 0.9963   w1.00 0.9973   w1.25 0.9918   w1.50 0.9953
+>     2 source eta-integrated      geometric   w0.75 0.9790   w1.00 0.9928   w1.25 0.9734   w1.50 0.9752
+>     3 raw D_l                    arithmetic  w0.75 1.0418   w1.00 1.0415   w1.25 1.0400   w1.50 1.0400
+>     3 raw D_l                    geometric   w0.75 1.0440   w1.00 1.0449   w1.25 1.0463   w1.50 1.0474
+>   [FAIL] ⚑ ** THE GAP IS NOT A DEFINITION. **  Over four windows and both envelope definitions the source rungs never leave the neighbourhood of one and the ell rung never comes near it   (got source 0.9734-1.0430, ell 1.0400-1.0474)
+>   [PASS] ...and the ell rung under `r6885+cc66.35`'s own GEOMETRIC envelope agrees with this receipt's arithmetic one to within the definition's own span, so 1.0401 is not superseded   (geometric mean 1.0457 against arithmetic 1.0408)
+257c257
+<     cr    x0 * 0.995528: l_A 301.799 -> 300.449;  its own contrast moves to 1.0059 of itself (+0.59%, cos 1.0000)
+---
+>     cr    x0 * 0.987293: l_A 302.943 -> 299.094;  its own contrast moves to 1.0167 of itself (+1.67%, cos 1.0000)
+259,263c259,263
+<     arm/control, both at their own D_M          : 1.0452
+<     arm/control, the ARM moved to the control's : 1.0513
+<     arm/control, the CONTROL moved to the arm's : 1.0519
+<   [PASS] ⛔ ** THE DISTANCE DIFFERENCE IS NOT HOW THE PROJECTION MAKES IT. **  Moving one arm's source to the other's distance changes its contrast by well under a per cent, and REMOVING the difference makes the arm/control excess LARGER rather than smaller   (control -0.63%, arm +0.59%; 1.0452 -> 1.0513 / 1.0519)
+<   [PASS] ...and the swap acts in the direction a wider kernel should: the arm's LARGER D_M gives more contrast, so the diagnostic is connected and is not reporting a null   (arm at the control's smaller D_M 1.0059, control at the arm's larger 0.9937)
+---
+>     arm/control, both at their own D_M          : 1.0415
+>     arm/control, the ARM moved to the control's : 1.0587
+>     arm/control, the CONTROL moved to the arm's : 1.0481
+>   [PASS] ⛔ ** THE DISTANCE DIFFERENCE IS NOT HOW THE PROJECTION MAKES IT. **  Moving one arm's source to the other's distance changes its contrast by well under a per cent, and REMOVING the difference makes the arm/control excess LARGER rather than smaller   (control -0.63%, arm +1.67%; 1.0415 -> 1.0587 / 1.0481)
+>   [PASS] ...and the swap acts in the direction a wider kernel should: the arm's LARGER D_M gives more contrast, so the diagnostic is connected and is not reporting a null   (arm at the control's smaller D_M 1.0167, control at the arm's larger 0.9937)
+269,273c269,273
+<     1 source at last scattering  ladder 0.9960    uniform 1.0041
+<     2 source eta-integrated      ladder 0.9923    uniform 0.9992
+<     3 raw D_l                    ladder 1.0452    uniform 1.0452
+<   [PASS] ⚑ ** THE EXCESS IS NOT THE k GRID. **  On the uniform grid at the control's own mode count, the arm's physics untouched, the source rungs are still one and the ell rung still carries the excess -- so the sampling of an oscillating integrand is not what a contrast read off the projection is reading   (source 1.0041 / 0.9992, ell 1.0452)
+<   [PASS] ...and `KCONT=1` demonstrably reaches the spectrum, so this is a null from a connected knob and not `r4558`'s unwired one   (max relative |dD_l| ladder against uniform = 2.604e-06)
+---
+>     1 source at last scattering  ladder 1.0112    uniform 1.0023
+>     2 source eta-integrated      ladder 0.9973    uniform 0.9899
+>     3 raw D_l                    ladder 1.0415    uniform 1.0415
+>   [PASS] ⚑ ** THE EXCESS IS NOT THE k GRID. **  On the uniform grid at the control's own mode count, the arm's physics untouched, the source rungs are still one and the ell rung still carries the excess -- so the sampling of an oscillating integrand is not what a contrast read off the projection is reading   (source 1.0023 / 0.9899, ell 1.0415)
+>   [PASS] ...and `KCONT=1` demonstrably reaches the spectrum, so this is a null from a connected knob and not `r4558`'s unwired one   (max relative |dD_l| ladder against uniform = 2.335e-06)
+280,283c280,283
+<   1.047 it has in ell.  ⇒ *** THE SOURCE RATIO IS 0.9960 AT LAST SCATTERING AND 0.9923
+<   ETA-INTEGRATED, AND THE ell RATIO IS 1.0452 RAW AND 1.0468 BANKED. ***  Over four envelope
+<   windows and both envelope definitions the source rungs span 0.9713-1.0053 and
+<   the ell rung 1.0425-1.0515, against a statistic floor of 0.62 per
+---
+>   1.046 it has in ell.  ⇒ *** THE SOURCE RATIO IS 1.0112 AT LAST SCATTERING AND 0.9973
+>   ETA-INTEGRATED, AND THE ell RATIO IS 1.0415 RAW AND 1.0462 BANKED. ***  Over four envelope
+>   windows and both envelope definitions the source rungs span 0.9734-1.0430 and
+>   the ell rung 1.0400-1.0474, against a statistic floor of 0.81 per
+289c289
+<   upstream had to overcome all four.  ** Upstream the arm's oscillation is 0.9960 of the
+---
+>   upstream had to overcome all four.  ** Upstream the arm's oscillation is 1.0112 of the
+294c294
+<   differ by +0.449 per cent with the arm's the LARGER, not -6.2 per cent with the arm's the
+---
+>   differ by +1.287 per cent with the arm's the LARGER, not -6.2 per cent with the arm's the
+297,298c297,298
+<   +0.59 per cent, and removing the difference takes the arm/control ratio
+<   UP, 1.0452 -> 1.0513.
+---
+>   +1.67 per cent, and removing the difference takes the arm/control ratio
+>   UP, 1.0415 -> 1.0587.
+301,306c301,306
+<   1.0542 times as much of its own source oscillation as the control's does
+<   (0.2413 against 0.2543), the excess rises with wavenumber
+<   (1.0310 -> 1.0647) where the source ratio is flat
+<   (0.9925 -> 0.9921), it is not the
+<   visibility width acting before the kernel (0.9960 -> 0.9923), not the lensing or the
+<   binning (1.0452 -> 1.0468), and not the k grid (uniform 1.0452).
+---
+>   1.0408 times as much of its own source oscillation as the control's does
+>   (0.2413 against 0.2511), the excess rises with wavenumber
+>   (1.0280 -> 1.0600) where the source ratio is flat
+>   (1.0031 -> 0.9924), it is not the
+>   visibility width acting before the kernel (1.0112 -> 0.9973), not the lensing or the
+>   binning (1.0415 -> 1.0462), and not the k grid (uniform 1.0415).
+310c310
+<   at all -- the source power comes within 7.2e-09 of its own median at the troughs
+---
+>   at all -- the source power comes within 4.4e-08 of its own median at the troughs
+313c313
+<   0.22
+---
+>   0.60
+318,334c318,328
+< GATES: ALL PASS.
+< 
+< ESTABLISHED: the acoustic contrast excess is not in the source.  The same statistic that reads
+< 1.0468 on the reported spectrum reads 0.9960 on the source at last scattering and
+< 0.9923 on the eta-integrated source, and the gap survives four envelope windows, both envelope
+< definitions, three term subsets, the k-measure, and the arm's k grid replaced by the control's kind.
+< The excess is manufactured between k and ell.  The order's named route is eliminated: the arms'
+< comoving distances differ by +0.449 per cent with the arm's the larger -- not -6.2 per cent
+< -- and projecting either arm's source through the other's distance moves its contrast by under a
+< per cent in the direction that makes the excess bigger, not smaller.  The projection suppresses the
+< arm's source oscillation 0.9486 times as much as it does the control's --
+< equivalently, the arm retains 1.0542 times as much of its own.
+< NOT CLAIMED: a mechanism within the projection; that the projection is the wrong projection; that
+< the visibility width is its route; that the source is identical on the two arms -- it is
+< 0.9923, shallower, and that sign is the four channels' own.
+< 
+< rc=0
+---
+> GATES: 9 FAILED:
+>   - ⛔ ** THE PREMISE IS WRONG IN SIZE AND IN SIGN. **  The arms' comoving distances differ by under half a per cent at the adjudicated minima, and the ARM'S IS THE LARGER; 13005/13865 belongs to the superseded configuration (r_s 135.46/144.53)
+>   - ...and the cancellation the order relies on IS real -- the acoustic angles agree -- so it is the six per cent and not the reasoning that fails
+>   - the two arms' acoustic period in q AGREES at the `source at last scattering` rung, so the regression there is a contrast and not a frequency mismatch
+>   - the two arms' acoustic period in q AGREES at the `source eta-integrated` rung, so the regression there is a contrast and not a frequency mismatch
+>   - [lensed+binned+fitted D_l] ...and resampling the control through the OTHER arm's abscissa and back returns it, so the two grids' difference is not what a ratio would read
+>   - ...and the source ratio is if anything BELOW one, which is the direction all four of the order's channels point -- so four-for-four needed nothing upstream to overcome it
+>   - the eta-integration alone -- an average over the visibility WITHOUT the kernel -- barely moves it, so the step is the kernel's and not the visibility width's
+>   - the ell rung's excess RISES with wavenumber and the source rung's is flat, which is one more way of saying the two are not the same measurement
+>   - ⚑ ** THE GAP IS NOT A DEFINITION. **  Over four windows and both envelope definitions the source rungs never leave the neighbourhood of one and the ell rung never comes near it
+> rc=1

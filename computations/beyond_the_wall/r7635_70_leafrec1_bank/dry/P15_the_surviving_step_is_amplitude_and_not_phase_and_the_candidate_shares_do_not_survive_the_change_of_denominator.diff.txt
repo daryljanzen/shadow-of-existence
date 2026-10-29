@@ -1,0 +1,48 @@
+73,85c73,85
+<   [PASS] ⛔ THE LICENCE GATE THE PRE-REGISTRATION PUT FIRST: the closed form reproduces the DIFFERENCE'S OWN measured comb amplitude pointwise.  ⇒ ** The decomposition is an IDENTITY, not a fit, so the separation below is exact rather than modelled **   (worst relative error over q = 2.88e-13)
+<     BOTH                 -0.208(-3.11s)  -0.236(-3.30s)  -0.204(-3.02s)  -0.232(-3.21s)
+<     AMPLITUDE only       -0.231(-3.28s)  -0.260(-3.44s)  -0.227(-3.18s)  -0.256(-3.35s)
+<     PHASE only           +0.570(+2.10s)  +0.660(+2.38s)  +0.727(+2.50s)  +0.796(+2.67s)
+<     raw std (cc66.59)    -0.454(-3.09s)  -0.453(-3.11s)  -0.453(-3.04s)  -0.450(-3.05s)
+<   [PASS] ⓵ THE AMPLITUDE-ONLY TERM CARRIES THE STEP: it has the same sign as the full statistic on all four bases and is close to it in size, where a phase-carried step would leave the amplitude term flat   (amplitude -0.243 against the full statistic's -0.220)
+<   [PASS] AND AT BAND 1 THE AMPLITUDE LIMIT SUPPLIES ALMOST ALL OF THE STATISTIC WHERE THE PHASE LIMIT SUPPLIES LITTLE.  ⇒ *** THE SURVIVING STEP IS A WEAKENING OF THE FIRST ACOUSTIC CYCLE, NOT A DISPLACEMENT OF IT, SO THE ROW IS NOT REFRAMED ***   (amplitude 0.958, phase 0.284)
+<     half 0.55: amplitude -0.126..-0.105   phase +2.928..+3.545
+<     half 0.75: amplitude -0.260..-0.227   phase +0.570..+0.796
+<     half 0.95: amplitude -0.342..-0.296   phase -0.498..-0.413
+<   [PASS] ⚠ AND THE PRE-REGISTERED TRADE-OFF FIRES, WHICH IS REPORTED AND NOT BURIED: the phase term's departure CHANGES SIGN across three window half-widths while the amplitude term's does not.  ⇒ ** AMPLITUDE ON THE SIGN, INSEPARABLE ON THE SHARE **   (amplitude keeps 1 sign; phase takes 2, running -0.50 to +3.54)
+<   [PASS] ⌗ AND THE REASON IS SIZE RATHER THAN STATISTICS: the relative phase is a fraction of a degree where the relative amplitude is several per cent, so the phase channel sits at the estimator's own resolution and the amplitude channel does not   (0.39 degrees against 0.0554 in relative amplitude)
+<   [PASS] ⚠⚠ AND THE CORRECTION TO `cc66.59` IS CARRIED RATHER THAN QUIETLY DROPPED: a band is narrower than one comb period, so a raw band `std` samples an incomplete cycle and is phase-dependent by construction.  ** The step SURVIVES on both aggregations and neither is chosen **   (a band is 0.70 of a 1.00 period; raw -0.453 against held-period -0.220)
+---
+>   [PASS] ⛔ THE LICENCE GATE THE PRE-REGISTRATION PUT FIRST: the closed form reproduces the DIFFERENCE'S OWN measured comb amplitude pointwise.  ⇒ ** The decomposition is an IDENTITY, not a fit, so the separation below is exact rather than modelled **   (worst relative error over q = 8.03e-14)
+>     BOTH                 -0.181(-4.88s)  -0.274(-4.81s)  -0.209(-4.62s)  -0.280(-4.33s)
+>     AMPLITUDE only       -0.159(-2.23s)  -0.179(-2.47s)  -0.154(-2.15s)  -0.174(-2.40s)
+>     PHASE only           -0.277(-5.75s)  -0.402(-6.34s)  -0.341(-6.11s)  -0.419(-5.41s)
+>     raw std (cc66.59)    -0.251(-1.34s)  -0.345(-1.88s)  -0.289(-1.53s)  -0.353(-1.88s)
+>   [FAIL] ⓵ THE AMPLITUDE-ONLY TERM CARRIES THE STEP: it has the same sign as the full statistic on all four bases and is close to it in size, where a phase-carried step would leave the amplitude term flat   (got amplitude -0.166 against the full statistic's -0.236)
+>   [FAIL] AND AT BAND 1 THE AMPLITUDE LIMIT SUPPLIES ALMOST ALL OF THE STATISTIC WHERE THE PHASE LIMIT SUPPLIES LITTLE.  ⇒ *** THE SURVIVING STEP IS A WEAKENING OF THE FIRST ACOUSTIC CYCLE, NOT A DISPLACEMENT OF IT, SO THE ROW IS NOT REFRAMED ***   (got amplitude 0.814, phase 0.570)
+>     half 0.55: amplitude -0.029..-0.028   phase -0.371..-0.231
+>     half 0.75: amplitude -0.179..-0.154   phase -0.419..-0.277
+>     half 0.95: amplitude -0.266..-0.214   phase -0.350..-0.182
+>   [FAIL] ⚠ AND THE PRE-REGISTERED TRADE-OFF FIRES, WHICH IS REPORTED AND NOT BURIED: the phase term's departure CHANGES SIGN across three window half-widths while the amplitude term's does not.  ⇒ ** AMPLITUDE ON THE SIGN, INSEPARABLE ON THE SHARE **   (got amplitude keeps 1 sign; phase takes 1, running -0.42 to -0.18)
+>   [FAIL] ⌗ AND THE REASON IS SIZE RATHER THAN STATISTICS: the relative phase is a fraction of a degree where the relative amplitude is several per cent, so the phase channel sits at the estimator's own resolution and the amplitude channel does not   (got 5.43 degrees against 0.0694 in relative amplitude)
+>   [PASS] ⚠⚠ AND THE CORRECTION TO `cc66.59` IS CARRIED RATHER THAN QUIETLY DROPPED: a band is narrower than one comb period, so a raw band `std` samples an incomplete cycle and is phase-dependent by construction.  ** The step SURVIVES on both aggregations and neither is chosen **   (a band is 0.70 of a 1.00 period; raw -0.309 against held-period -0.236)
+92c92
+<   [PASS] ⓶ THE WINDOW CHANNEL REVERSES SIGN BETWEEN THE TWO ROUTES -- it steps OPPOSITE to the arm on the differential estimator.  ** That is the strongest row the pre-registration tabled **   (window +1.05..+1.32 against the arm's -0.453)
+---
+>   [PASS] ⓶ THE WINDOW CHANNEL REVERSES SIGN BETWEEN THE TWO ROUTES -- it steps OPPOSITE to the arm on the differential estimator.  ** That is the strongest row the pre-registration tabled **   (window +1.05..+1.32 against the arm's -0.309)
+98,99c98,99
+<     product      predicts +0.8426   residual +0.8565 = 6.1 x the joint's own scatter
+<     sum          predicts +1.0279   residual +1.0418 = 7.4 x the joint's own scatter
+---
+>     product      predicts +0.8425   residual +0.8565 = 6.1 x the joint's own scatter
+>     sum          predicts +1.0278   residual +1.0417 = 7.4 x the joint's own scatter
+106,107c106,111
+< GATES: ALL PASS
+< rc=0
+---
+> GATES: 4 FAILED:
+>   - ⓵ THE AMPLITUDE-ONLY TERM CARRIES THE STEP: it has the same sign as the full statistic on all four bases and is close to it in size, where a phase-carried step would leave the amplitude term flat
+>   - AND AT BAND 1 THE AMPLITUDE LIMIT SUPPLIES ALMOST ALL OF THE STATISTIC WHERE THE PHASE LIMIT SUPPLIES LITTLE.  ⇒ *** THE SURVIVING STEP IS A WEAKENING OF THE FIRST ACOUSTIC CYCLE, NOT A DISPLACEMENT OF IT, SO THE ROW IS NOT REFRAMED ***
+>   - ⚠ AND THE PRE-REGISTERED TRADE-OFF FIRES, WHICH IS REPORTED AND NOT BURIED: the phase term's departure CHANGES SIGN across three window half-widths while the amplitude term's does not.  ⇒ ** AMPLITUDE ON THE SIGN, INSEPARABLE ON THE SHARE **
+>   - ⌗ AND THE REASON IS SIZE RATHER THAN STATISTICS: the relative phase is a fraction of a degree where the relative amplitude is several per cent, so the phase channel sits at the estimator's own resolution and the amplitude channel does not
+> rc=1

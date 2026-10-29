@@ -1,0 +1,51 @@
+71,72c71,72
+<   [PASS] ⛭⛭ THE INSTRUMENT ALREADY EMITS THE RIGHT QUANTITY: `SRCDEC`'s bilinear decomposition is on disk for BOTH arms, ten l-resolved terms per multipole in the order the instrument fixes, and they sum to Dl exactly.  ⇒ No run, no instrument change, and the order's escape hatch is not needed   (max relative departure from Dl is 1.2e-15)
+<   [PASS] and the coarse grid is CHECKED rather than assumed adequate: it reads the contrast about two per cent low, and the deficit agrees between the arms to parts in ten thousand -- so it CANCELS in the ratio, which is the only thing read from it   (coarse/fine 0.9813 on the control, and arm-against-control to 3.1e-04)
+---
+>   [PASS] ⛭⛭ THE INSTRUMENT ALREADY EMITS THE RIGHT QUANTITY: `SRCDEC`'s bilinear decomposition is on disk for BOTH arms, ten l-resolved terms per multipole in the order the instrument fixes, and they sum to Dl exactly.  ⇒ No run, no instrument change, and the order's escape hatch is not needed   (max relative departure from Dl is 1.6e-15)
+>   [FAIL] and the coarse grid is CHECKED rather than assumed adequate: it reads the contrast about two per cent low, and the deficit agrees between the arms to parts in ten thousand -- so it CANCELS in the ratio, which is the only thing read from it   (got coarse/fine 0.9813 on the control, and arm-against-control to 8.4e-03)
+75,77c75,77
+<     cr             -0.476    -0.861    -0.613    -0.644    -0.702    -0.549    -0.706
+<   [PASS] ⛭ AND THE BANK DISCHARGES A CAVEAT cc66.55 COULD ONLY STATE: the s-scaling of every pair is exact, so the coupling follows ANALYTICALLY for the ARM as well as the control -- negative at every band on both, equal between the arms to a few per cent, and agreeing with cc66.55's three-point finite difference   (arm against control to 4%, both against the finite difference to 7%)
+<   [PASS] ⚠ AND THE FIRST CONSTRUCTION IS REPORTED AS FAILED RATHER THAN DROPPED: sqrt(osc(dp*dp) / osc(sw*sw)) is small on the arithmetic envelope and runs away under a median one, because the oscillation of a weak, smooth term about a median envelope is not well conditioned.  ⇒ That definition inherits the envelope ambiguity through its OWN conditioning, so it is not used   (arithmetic |delta| <= 0.0100; median reaches +1.342)
+---
+>     cr             -0.474    -0.856    -0.601    -0.667    -0.684    -0.544    -0.717
+>   [PASS] ⛭ AND THE BANK DISCHARGES A CAVEAT cc66.55 COULD ONLY STATE: the s-scaling of every pair is exact, so the coupling follows ANALYTICALLY for the ARM as well as the control -- negative at every band on both, equal between the arms to a few per cent, and agreeing with cc66.55's three-point finite difference   (arm against control to 5%, both against the finite difference to 7%)
+>   [FAIL] ⚠ AND THE FIRST CONSTRUCTION IS REPORTED AS FAILED RATHER THAN DROPPED: sqrt(osc(dp*dp) / osc(sw*sw)) is small on the arithmetic envelope and runs away under a median one, because the oscillation of a weak, smooth term about a median envelope is not well conditioned.  ⇒ That definition inherits the envelope ambiguity through its OWN conditioning, so it is not used   (got arithmetic |delta| <= 0.0460; median reaches +1.156)
+81,82c81,82
+<     mean    excess  +0.0046   +0.0081   +0.0077   +0.0071   +0.0107   +0.0075   +0.0072   fraction     +1%     -12%      +5%     +12%     +11%     +26%     +17%
+<     median  excess  +0.0116   +0.0082   +0.0029   +0.0090   +0.0130   +0.0100   +0.0083   fraction    +12%     -20%     -13%     +32%     +33%     +34%     +48%
+---
+>     mean    excess  +0.0024   +0.0109   +0.0043   +0.0095   +0.0134   +0.0006   +0.0148   fraction    +28%      +7%     +58%     +13%     +24%    +571%     +11%
+>     median  excess  +0.0108   +0.0118   +0.0017   +0.0134   +0.0165   +0.0038   +0.0128   fraction    +39%     +25%     +40%     +53%     +46%    +158%     +62%
+84,87c84,87
+<   [PASS] ⛔ AND THE CONTRIBUTION IS A MINORITY SHARE, ON BOTH ENVELOPES: well under half of the excess at every band on the arithmetic envelope and under half on the median one.  ⇒ THE CANDIDATE IS NOT THE CARRIER   (arithmetic peaks at +26%, median at +48%)
+<   [PASS] and it GROWS with q and is SIGN-INDEFINITE at the bottom -- negative at q = 1.90 on both envelopes -- so it cannot be told from zero at the bands where the excess's own structure is   (band 2 -12% and -20%; band 7 +17% and +48%)
+<   [PASS] ⛭ AND IT LANDS BETWEEN THE TWO WRONG READINGS, which said -13 and +188 per cent -- the outcome the order told this seat to table first -- AND IT DOES NOT SETTLE NOTHING: a minority share is neither of them, and neither wrong reading said it   (the swap's share spans -12% to +26% against -13% and +94..188%)
+<   [PASS] ⌗ and cc66.55's split is confirmed rather than assumed: the coupling's SIGN is the same on both envelopes while the FRACTION moves by about a factor of two   (the median-envelope share is 2.7x the arithmetic one)
+---
+>   [FAIL] ⛔ AND THE CONTRIBUTION IS A MINORITY SHARE, ON BOTH ENVELOPES: well under half of the excess at every band on the arithmetic envelope and under half on the median one.  ⇒ THE CANDIDATE IS NOT THE CARRIER   (got arithmetic peaks at +571%, median at +158%)
+>   [FAIL] and it GROWS with q and is SIGN-INDEFINITE at the bottom -- negative at q = 1.90 on both envelopes -- so it cannot be told from zero at the bands where the excess's own structure is   (got band 2 +7% and +25%; band 7 +11% and +62%)
+>   [FAIL] ⛭ AND IT LANDS BETWEEN THE TWO WRONG READINGS, which said -13 and +188 per cent -- the outcome the order told this seat to table first -- AND IT DOES NOT SETTLE NOTHING: a minority share is neither of them, and neither wrong reading said it   (got the swap's share spans +7% to +571% against -13% and +94..188%)
+>   [PASS] ⌗ and cc66.55's split is confirmed rather than assumed: the coupling's SIGN is the same on both envelopes while the FRACTION moves by about a factor of two   (the median-envelope share is 1.9x the arithmetic one)
+91,93c91,93
+<     the excess    +0.0215   +0.0574   +0.0519   +0.0606   +0.0748   +0.0659   +0.0762
+<   [PASS] ⛭⛭⛭ THE EXCESS HAS ONE DOMINANT FEATURE AND IT IS NOT A TREND: band 1 is about a third of the mean of the rest and sits nearly five scatters below it   (band 1 is 0.33 of the bands 2-7 mean, 4.9 scatters below)
+<   [PASS] and above band 1 a CONSTANT already fits: a line adds a mild slope and only halves the residual, so bands 2-7 carry very little structure to distinguish a flat candidate from a rising one.  ⇒ ALL FOUR MISMATCHES WERE JUDGED THERE, which is the reason they share -- the sector has been spending its discriminating power where the excess has least structure, because the part that has the structure is the band cc66.54 showed it cannot measure a candidate in   (constant leaves 0.0088 on a mean of 0.0645; a line leaves 0.0049)
+---
+>     the excess    +0.0186   +0.0818   +0.0373   +0.0868   +0.1005   +0.0141   +0.1617
+>   [FAIL] ⛭⛭⛭ THE EXCESS HAS ONE DOMINANT FEATURE AND IT IS NOT A TREND: band 1 is about a third of the mean of the rest and sits nearly five scatters below it   (got band 1 is 0.23 of the bands 2-7 mean, 1.3 scatters below)
+>   [FAIL] and above band 1 a CONSTANT already fits: a line adds a mild slope and only halves the residual, so bands 2-7 carry very little structure to distinguish a flat candidate from a rising one.  ⇒ ALL FOUR MISMATCHES WERE JUDGED THERE, which is the reason they share -- the sector has been spending its discriminating power where the excess has least structure, because the part that has the structure is the band cc66.54 showed it cannot measure a candidate in   (got constant leaves 0.0471 on a mean of 0.0804; a line leaves 0.0440)
+97,98c97,105
+< GATES: ALL PASS
+< rc=0
+---
+> GATES: 7 FAILED:
+>   - and the coarse grid is CHECKED rather than assumed adequate: it reads the contrast about two per cent low, and the deficit agrees between the arms to parts in ten thousand -- so it CANCELS in the ratio, which is the only thing read from it
+>   - ⚠ AND THE FIRST CONSTRUCTION IS REPORTED AS FAILED RATHER THAN DROPPED: sqrt(osc(dp*dp) / osc(sw*sw)) is small on the arithmetic envelope and runs away under a median one, because the oscillation of a weak, smooth term about a median envelope is not well conditioned.  ⇒ That definition inherits the envelope ambiguity through its OWN conditioning, so it is not used
+>   - ⛔ AND THE CONTRIBUTION IS A MINORITY SHARE, ON BOTH ENVELOPES: well under half of the excess at every band on the arithmetic envelope and under half on the median one.  ⇒ THE CANDIDATE IS NOT THE CARRIER
+>   - and it GROWS with q and is SIGN-INDEFINITE at the bottom -- negative at q = 1.90 on both envelopes -- so it cannot be told from zero at the bands where the excess's own structure is
+>   - ⛭ AND IT LANDS BETWEEN THE TWO WRONG READINGS, which said -13 and +188 per cent -- the outcome the order told this seat to table first -- AND IT DOES NOT SETTLE NOTHING: a minority share is neither of them, and neither wrong reading said it
+>   - ⛭⛭⛭ THE EXCESS HAS ONE DOMINANT FEATURE AND IT IS NOT A TREND: band 1 is about a third of the mean of the rest and sits nearly five scatters below it
+>   - and above band 1 a CONSTANT already fits: a line adds a mild slope and only halves the residual, so bands 2-7 carry very little structure to distinguish a flat candidate from a rising one.  ⇒ ALL FOUR MISMATCHES WERE JUDGED THERE, which is the reason they share -- the sector has been spending its discriminating power where the excess has least structure, because the part that has the structure is the band cc66.54 showed it cannot measure a candidate in
+> rc=1

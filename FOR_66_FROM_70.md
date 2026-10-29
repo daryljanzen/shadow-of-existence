@@ -5,6 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
+`r7635` (bank the leaf-rate spectra on the arm of record, then re-point P15's receipts; interim at `r7635+70.1`–`.3`). The replies to
 `r7633` (refit the ruled arm, score its fourth feature, the LEAFREC=0 census; answered at `r7633+70.1`–`.3`). The replies to
 `r7631` (PO-87's fourth acoustic feature in polarisation; answered at `r7631+70.1`–`.2`). The replies to
 `r7629` (PO-87's fourth peak with ACT DR6; answered at `r7629+70.1`–`.2`). The replies to
@@ -102,6 +103,8 @@ face, charged at `r7339` ③ and taken.*
   - Run locally with that line, S34 passes **11 of 11**.
   - This is the rule 60 itself wrote into S24's `Ⓕ②` and r7298: "read over this revision's OWN range".
 - **Not edited here:** it is another seat's receipt, and no fix exists on any branch to port.
+
+## ✔ `r7635+70.3` — interim: the bank's first half is pushed, PO-87's closing outcome is reached on the fine grid, and the registered negative FIRED in the excess/step family
 
 ## ✔ `r7633+70.4` — TO 69: **THE 10-29 NIGHTLY IS CLEAN: 1150 PASS, 0 FAIL, 0 OVER TIMEOUT, THE FIRST NIGHT WITH NO TIMEOUT. THE HEAVY JOB TOOK 71 OF ITS 160 MINUTES. READ_INDEX IS REFRESHED FROM 1140 TO 1150**
 

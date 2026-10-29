@@ -1,0 +1,113 @@
+115,117c115,117
+<     cr      fine        221.956    536.105    815.398   1130.531
+<             LSTEP=8     221.953    536.114    815.381   1130.508
+<             error        0.0035     0.0089     0.0167     0.0229
+---
+>     cr      fine        222.047    535.846    815.027   1129.742
+>             LSTEP=8     222.043    535.853    815.006   1129.724
+>             error        0.0034     0.0078     0.0206     0.0175
+119c119
+<   [PASS] ⇒ and it misses the order's ten-multipole bar at l_4 by a factor of four hundred, so the residual IS measured and the order does not end at step one   (l_4 error 0.0229 (arm) / 0.0176 (control) against the bar 10)
+---
+>   [PASS] ⇒ and it misses the order's ten-multipole bar at l_4 by a factor of four hundred, so the residual IS measured and the order does not end at step one   (l_4 error 0.0175 (arm) / 0.0176 (control) against the bar 10)
+133,141c133,141
+<       W=  15    221.954    536.168    815.331   1130.470
+<       W=  25    221.949    536.282    815.209   1130.356
+<       W=  40    221.937    536.553    814.904   1130.060
+<       W=  55    221.919    536.938    814.431   1129.576
+<       W=  80    221.885    537.784    813.181   1128.154
+<       W= 110    221.875    538.935    810.601   1124.646
+<       spread      0.079      2.767      4.730      5.823
+<   [PASS] ⛔ the window bias GROWS steeply with peak index on both arms -- hundredths at l_1, nearly six multipoles at l_4 -- because a wider fit on an asymmetric, damping-suppressed hump pulls its apex down the envelope's slope   (arm ['0.08', '2.77', '4.73', '5.82'], control ['0.11', '2.97', '4.97', '6.49'])
+<   [PASS] ⇒ ** so at l_4 the window's bias is comparable to the residual being read there ** -- and it displaces the sky and both models alike, which is why matched-procedure differencing is what makes the comparison readable rather than a convenience   (window bias 5.82 against the arm's residual +6.63 at l_4)
+---
+>       W=  15    222.046    535.906    814.962   1129.680
+>       W=  25    222.046    536.014    814.843   1129.565
+>       W=  40    222.045    536.273    814.544   1129.267
+>       W=  55    222.045    536.639    814.081   1128.780
+>       W=  80    222.051    537.438    812.855   1127.349
+>       W= 110    222.113    538.502    810.316   1123.820
+>       spread      0.069      2.596      4.646      5.860
+>   [PASS] ⛔ the window bias GROWS steeply with peak index on both arms -- hundredths at l_1, nearly six multipoles at l_4 -- because a wider fit on an asymmetric, damping-suppressed hump pulls its apex down the envelope's slope   (arm ['0.07', '2.60', '4.65', '5.86'], control ['0.11', '2.97', '4.97', '6.49'])
+>   [PASS] ⇒ ** so at l_4 the window's bias is comparable to the residual being read there ** -- and it displaces the sky and both models alike, which is why matched-procedure differencing is what makes the comparison readable rather than a convenience   (window bias 5.86 against the arm's residual +5.84 at l_4)
+147,150c147,150
+<      1   221.956   220.351    220.4    +1.556    -0.049    +1.605
+<      2   536.105   536.291    537.7    -1.595    -1.409    -0.186
+<      3   815.398   814.331    817.3    -1.902    -2.969    +1.067
+<      4  1130.531  1129.224   1123.9    +6.631    +5.324    +1.308
+---
+>      1   222.047   220.351    220.4    +1.647    -0.049    +1.696
+>      2   535.846   536.291    537.7    -1.854    -1.409    -0.445
+>      3   815.027   814.331    817.3    -2.273    -2.969    +0.696
+>      4  1129.742  1129.224   1123.9    +5.842    +5.324    +0.518
+152,160c152,160
+<     here is the HIERARCHY path, whose raw grid reading is [220, 540, 812, 1132] -- and at l_3 the two bracketing bins differ by 0.041 per cent
+<   [PASS] ⛔ ** AND THE RAW GRID READING IS NOT A MEASUREMENT AT l_3 AT ALL: the two bracketing `LSTEP=8` bins differ by four parts in TEN THOUSAND, so which one is called the peak is a coin flip -- the paper quotes 820 on this path, this run's locator picks 812, and the sub-bin apex is 815.40, with the fine grid's own maximum at 815 **   (the l_3 bins differ by 0.041 per cent; raw 812, sub-bin 815.40)
+<   [PASS] ⇒ and sub-bin the arm's quartet is 221.96/536.11/815.40/1130.53, so the residual against the sky is +1.56 / -1.60 / -1.90 / +6.63: ** peaks two and three are not 'on', they are each about 1.7 LOW, and peak four is 6.6 out rather than the order's 10.1 **   (sub-bin residual ['+1.56', '-1.60', '-1.90', '+6.63'] against the order's +1.6 / +0.3 / +0.7 / +10.1)
+<   [PASS] ⛭⛭⛭ ** AND THE CONTROL PRODUCES NEARLY ALL OF IT. **  Through the identical locator the control's fourth-peak residual is +5.32 against the arm's +6.63, so four fifths of the largest residual in this sector is not the construction's   (control +5.32 of the arm's +6.63, 80 per cent)
+<     arm-control: mean +0.948, spread 1.791
+<     a constant dl fits with rms 0.682; a constant dl/l (the ruler) predicts ['0.52', '1.25', '1.91', '2.64'] and fits with rms 1.018
+<   [PASS] ⇒ *** WHAT IS THE CONSTRUCTION'S IS A NEAR-CONSTANT ONE-MULTIPOLE DISPLACEMENT AT ALL FOUR PEAKS -- a constant dl, the FIRST of the order's three shapes -- and it fits half again better than the ruler's constant dl/l ***   (constant dl rms 0.682 against the ruler's 1.018, a factor 1.49)
+<   [PASS] ⇒ ** SO THE PATTERN NEEDS ONE SYSTEMATIC AND NOT TWO **, and the 'one-off, two-and-three-on, four-off' shape that fitted none of the three candidates was the raw grid plus an undifferenced sky comparison -- neither of them physics   (the four displacements are ['+1.61', '-0.19', '+1.07', '+1.31'] about a mean of +0.95, against a locator error of 0.023)
+<   [PASS] ⌗ and the sky cannot tell that one multipole from zero: `PO-47` measured its fourth peak at 1121.9 +- 2.36 and put the arm-minus-control displacement at 0.83 sigma, so this is reported as a SHAPE and not as a disagreement   (every |arm - control| is under the sky's own spread of 2.36: ['1.61', '0.19', '1.07', '1.31'])
+---
+>     here is the HIERARCHY path, whose raw grid reading is [220, 532, 812, 1132] -- and at l_3 the two bracketing bins differ by 0.066 per cent
+>   [FAIL] ⛔ ** AND THE RAW GRID READING IS NOT A MEASUREMENT AT l_3 AT ALL: the two bracketing `LSTEP=8` bins differ by four parts in TEN THOUSAND, so which one is called the peak is a coin flip -- the paper quotes 820 on this path, this run's locator picks 812, and the sub-bin apex is 815.40, with the fine grid's own maximum at 815 **   (got the l_3 bins differ by 0.066 per cent; raw 812, sub-bin 815.03)
+>   [FAIL] ⇒ and sub-bin the arm's quartet is 221.96/536.11/815.40/1130.53, so the residual against the sky is +1.56 / -1.60 / -1.90 / +6.63: ** peaks two and three are not 'on', they are each about 1.7 LOW, and peak four is 6.6 out rather than the order's 10.1 **   (got sub-bin residual ['+1.65', '-1.85', '-2.27', '+5.84'] against the order's +1.6 / +0.3 / +0.7 / +10.1)
+>   [PASS] ⛭⛭⛭ ** AND THE CONTROL PRODUCES NEARLY ALL OF IT. **  Through the identical locator the control's fourth-peak residual is +5.32 against the arm's +6.63, so four fifths of the largest residual in this sector is not the construction's   (control +5.32 of the arm's +5.84, 91 per cent)
+>     arm-control: mean +0.616, spread 2.141
+>     a constant dl fits with rms 0.760; a constant dl/l (the ruler) predicts ['0.45', '1.09', '1.65', '2.29'] and fits with rms 1.192
+>   [PASS] ⇒ *** WHAT IS THE CONSTRUCTION'S IS A NEAR-CONSTANT ONE-MULTIPOLE DISPLACEMENT AT ALL FOUR PEAKS -- a constant dl, the FIRST of the order's three shapes -- and it fits half again better than the ruler's constant dl/l ***   (constant dl rms 0.760 against the ruler's 1.192, a factor 1.57)
+>   [PASS] ⇒ ** SO THE PATTERN NEEDS ONE SYSTEMATIC AND NOT TWO **, and the 'one-off, two-and-three-on, four-off' shape that fitted none of the three candidates was the raw grid plus an undifferenced sky comparison -- neither of them physics   (the four displacements are ['+1.70', '-0.45', '+0.70', '+0.52'] about a mean of +0.62, against a locator error of 0.021)
+>   [PASS] ⌗ and the sky cannot tell that one multipole from zero: `PO-47` measured its fourth peak at 1121.9 +- 2.36 and put the arm-minus-control displacement at 0.83 sigma, so this is reported as a SHAPE and not as a disagreement   (every |arm - control| is under the sky's own spread of 2.36: ['1.70', '0.45', '0.70', '0.52'])
+166,172c166,172
+<      1   +1.8931    31.2%     9.2%     59.6%
+<      2   +0.6276    94.1%    26.4%    -20.5%
+<      3   +0.7086    83.4%    22.7%     -6.0%
+<      4   +0.6617    89.3%    23.5%    -12.8%
+<   [PASS] the motions the shares are built on are resolved: fine against coarse they agree to a fiftieth of a multipole at every peak, so the shares are the spectra's and not the grid's   (worst difference 0.0211 of a multipole)
+<   [PASS] ⚑ l_1 IS THE OUTLIER AND NOTHING ELSE IS: at l_2 through l_4 the motion is almost entirely geometric and the plasma's phase partially CANCELS it, where at l_1 the plasma dominates and adds   (plasma share 59.6% at l_1 against -20.5%, -6.0%, -12.8%)
+<   [PASS] ⇒ by the order's reading, fixed in advance: the plasma's share does NOT grow with n, so the residual is not in the driving; and the relocation share DOES grow, which points at the ruler   (relocation 31.2% -> 89.3%, plasma 59.6% -> -12.8%)
+---
+>      1   +1.8518    31.9%     9.4%     58.7%
+>      2   +0.6763    87.3%    24.5%    -11.8%
+>      3   +0.7544    78.3%    21.3%      0.4%
+>      4   +0.7321    80.7%    21.3%     -2.0%
+>   [FAIL] the motions the shares are built on are resolved: fine against coarse they agree to a fiftieth of a multipole at every peak, so the shares are the spectra's and not the grid's   (got worst difference 0.7853 of a multipole)
+>   [FAIL] ⚑ l_1 IS THE OUTLIER AND NOTHING ELSE IS: at l_2 through l_4 the motion is almost entirely geometric and the plasma's phase partially CANCELS it, where at l_1 the plasma dominates and adds   (got plasma share 58.7% at l_1 against -11.8%, 0.4%, -2.0%)
+>   [PASS] ⇒ by the order's reading, fixed in advance: the plasma's share does NOT grow with n, so the residual is not in the driving; and the relocation share DOES grow, which points at the ruler   (relocation 31.9% -> 80.7%, plasma 58.7% -> -2.0%)
+176,202c176,181
+< GATES: ALL PASS.
+< 
+<   ⛭⛭ THE LOCATOR IS NOT THE PROBLEM.  Against a reference eight times as fine, at the reported reach,
+<   the reported grid's locator recovers every peak on both arms to under three hundredths of a
+<   multipole -- 0.0229 at l_4 on the arm against the order's bar of ten.  The order does not
+<   end at step one.  ⛔ What is imprecise is the parabola's WINDOW, whose bias grows with peak index to
+<   5.82 multipoles at l_4 -- comparable to the residual, and shared by the sky and both
+<   models, which is what matched-procedure differencing is for.
+< 
+<   ⛭⛭⛭ AND THE PATTERN THE ORDER ASKED ABOUT IS TWO ARTEFACTS.  222/538/818/1134 is the raw grid:
+<   sub-bin the arm is 221.96/536.10/815.40/1130.53,
+<   so the residual is +1.56 / -1.60 / -1.90 / +6.63 and peaks two and three were never 'on'.  And the
+<   CONTROL carries 80 per cent of the fourth
+<   peak's residual, so what is the construction's is +0.95 of a multipole at all four --
+<   ONE systematic, of the constant-dl shape, fitting half again better than the ruler's constant dl/l,
+<   with every one of the four inside the sky's own locating spread that PO-47 measured.
+< 
+<   ⚑ THE SEPARATION AT EVERY PEAK: relocation 31% -> 89%, the
+<   visibility's weighting 9% -> 24%, the plasma 60% ->
+<   -13%.  l_1 is the outlier; at l_2 to l_4 the motion is geometric and the plasma's
+<   phase cancels part of it.  The shares are not flat, and they do not reach the residual.
+< 
+<   NOT CLAIMED: a mechanism for the one-multipole offset; a re-derivation of the sky's spread, which is
+<   PO-47's; that the window convention is an error rather than a convention; a verdict on the two-rate
+<   assignment; and no corpus edits -- the paper-side consequences go to 66.
+< 
+< rc=0
+---
+> GATES: 4 FAILED:
+>   - ⛔ ** AND THE RAW GRID READING IS NOT A MEASUREMENT AT l_3 AT ALL: the two bracketing `LSTEP=8` bins differ by four parts in TEN THOUSAND, so which one is called the peak is a coin flip -- the paper quotes 820 on this path, this run's locator picks 812, and the sub-bin apex is 815.40, with the fine grid's own maximum at 815 **
+>   - ⇒ and sub-bin the arm's quartet is 221.96/536.11/815.40/1130.53, so the residual against the sky is +1.56 / -1.60 / -1.90 / +6.63: ** peaks two and three are not 'on', they are each about 1.7 LOW, and peak four is 6.6 out rather than the order's 10.1 **
+>   - the motions the shares are built on are resolved: fine against coarse they agree to a fiftieth of a multipole at every peak, so the shares are the spectra's and not the grid's
+>   - ⚑ l_1 IS THE OUTLIER AND NOTHING ELSE IS: at l_2 through l_4 the motion is almost entirely geometric and the plasma's phase partially CANCELS it, where at l_1 the plasma dominates and adds
+> rc=1
