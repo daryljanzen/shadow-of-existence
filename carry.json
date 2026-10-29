@@ -3649,6 +3649,11 @@
     "since": "75a82dc2e8e58fe17736b796da29f6417b4ce96b",
     "unmeasured": true
    },
+   "receipts/L165_defining_the_sum/S3_c6_is_a_theorem_not_a_condition.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40930568955",
+    "since": "0bfaa97c238beccd17cf68fa2a3697a2bf478215",
+    "unmeasured": true
+   },
    "receipts/L165_defining_the_sum/S4_the_open_half_is_the_floor.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40883013917",
     "since": "75a82dc2e8e58fe17736b796da29f6417b4ce96b",
@@ -4362,6 +4367,11 @@
    "receipts/L_probability/S23_four_items_and_every_one_was_mis_described_because_five_gates_stored_a_snapshot_of_a_rule_instead_of_the_rule.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40883013917",
     "since": "75a82dc2e8e58fe17736b796da29f6417b4ce96b",
+    "unmeasured": true
+   },
+   "receipts/L_probability/S24_a_gate_on_a_repair_has_a_subject_another_seat_may_rewrite_so_all_three_of_mine_went_red_and_the_selector_two_of_them_were_about_was_still_reading_the_commit_body.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40930568955",
+    "since": "0bfaa97c238beccd17cf68fa2a3697a2bf478215",
     "unmeasured": true
    },
    "receipts/L_probability/S25_the_backlog_is_a_verdicting_job_after_all_but_two_thirds_of_it_is_pins_on_what_a_paper_means_and_the_one_open_flagged_sentence_is_the_same_sentence_twice.py": {
