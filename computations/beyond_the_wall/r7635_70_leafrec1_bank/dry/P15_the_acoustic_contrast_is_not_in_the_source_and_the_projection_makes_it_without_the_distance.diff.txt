@@ -112,9 +112,11 @@
 >     3 raw D_l                    geometric   w0.75 1.0440   w1.00 1.0449   w1.25 1.0463   w1.50 1.0474
 >   [FAIL] ⚑ ** THE GAP IS NOT A DEFINITION. **  Over four windows and both envelope definitions the source rungs never leave the neighbourhood of one and the ell rung never comes near it   (got source 0.9734-1.0430, ell 1.0400-1.0474)
 >   [PASS] ...and the ell rung under `r6885+cc66.35`'s own GEOMETRIC envelope agrees with this receipt's arithmetic one to within the definition's own span, so 1.0401 is not superseded   (geometric mean 1.0457 against arithmetic 1.0408)
-257c257
+256,257c256,257
+<     lcdm  x0 * 1.004492: l_A 301.543 -> 302.897;  its own contrast moves to 0.9937 of itself (-0.63%, cos 1.0000)
 <     cr    x0 * 0.995528: l_A 301.799 -> 300.449;  its own contrast moves to 1.0059 of itself (+0.59%, cos 1.0000)
 ---
+>     lcdm  x0 * 1.012871: l_A 301.543 -> 305.424;  its own contrast moves to 1.0354 of itself (+3.54%, cos 0.9998)
 >     cr    x0 * 0.987293: l_A 302.943 -> 299.094;  its own contrast moves to 1.0167 of itself (+1.67%, cos 1.0000)
 259,263c259,263
 <     arm/control, both at their own D_M          : 1.0452
@@ -125,9 +127,9 @@
 ---
 >     arm/control, both at their own D_M          : 1.0415
 >     arm/control, the ARM moved to the control's : 1.0587
->     arm/control, the CONTROL moved to the arm's : 1.0481
->   [PASS] ⛔ ** THE DISTANCE DIFFERENCE IS NOT HOW THE PROJECTION MAKES IT. **  Moving one arm's source to the other's distance changes its contrast by well under a per cent, and REMOVING the difference makes the arm/control excess LARGER rather than smaller   (control -0.63%, arm +1.67%; 1.0415 -> 1.0587 / 1.0481)
->   [PASS] ...and the swap acts in the direction a wider kernel should: the arm's LARGER D_M gives more contrast, so the diagnostic is connected and is not reporting a null   (arm at the control's smaller D_M 1.0167, control at the arm's larger 0.9937)
+>     arm/control, the CONTROL moved to the arm's : 1.0045
+>   [FAIL] ⛔ ** THE DISTANCE DIFFERENCE IS NOT HOW THE PROJECTION MAKES IT. **  Moving one arm's source to the other's distance changes its contrast by well under a per cent, and REMOVING the difference makes the arm/control excess LARGER rather than smaller   (got control +3.54%, arm +1.67%; 1.0415 -> 1.0587 / 1.0045)
+>   [FAIL] ...and the swap acts in the direction a wider kernel should: the arm's LARGER D_M gives more contrast, so the diagnostic is connected and is not reporting a null   (got arm at the control's smaller D_M 1.0167, control at the arm's larger 1.0354)
 269,273c269,273
 <     1 source at last scattering  ladder 0.9960    uniform 1.0041
 <     2 source eta-integrated      ladder 0.9923    uniform 0.9992
@@ -158,10 +160,12 @@
 <   differ by +0.449 per cent with the arm's the LARGER, not -6.2 per cent with the arm's the
 ---
 >   differ by +1.287 per cent with the arm's the LARGER, not -6.2 per cent with the arm's the
-297,298c297,298
+296,298c296,298
+<   through the other's distance moves its contrast by -0.63 and
 <   +0.59 per cent, and removing the difference takes the arm/control ratio
 <   UP, 1.0452 -> 1.0513.
 ---
+>   through the other's distance moves its contrast by +3.54 and
 >   +1.67 per cent, and removing the difference takes the arm/control ratio
 >   UP, 1.0415 -> 1.0587.
 301,306c301,306
@@ -186,7 +190,7 @@
 <   0.22
 ---
 >   0.60
-318,334c318,328
+318,334c318,330
 < GATES: ALL PASS.
 < 
 < ESTABLISHED: the acoustic contrast excess is not in the source.  The same statistic that reads
@@ -205,7 +209,7 @@
 < 
 < rc=0
 ---
-> GATES: 9 FAILED:
+> GATES: 11 FAILED:
 >   - ⛔ ** THE PREMISE IS WRONG IN SIZE AND IN SIGN. **  The arms' comoving distances differ by under half a per cent at the adjudicated minima, and the ARM'S IS THE LARGER; 13005/13865 belongs to the superseded configuration (r_s 135.46/144.53)
 >   - ...and the cancellation the order relies on IS real -- the acoustic angles agree -- so it is the six per cent and not the reasoning that fails
 >   - the two arms' acoustic period in q AGREES at the `source at last scattering` rung, so the regression there is a contrast and not a frequency mismatch
@@ -215,4 +219,6 @@
 >   - the eta-integration alone -- an average over the visibility WITHOUT the kernel -- barely moves it, so the step is the kernel's and not the visibility width's
 >   - the ell rung's excess RISES with wavenumber and the source rung's is flat, which is one more way of saying the two are not the same measurement
 >   - ⚑ ** THE GAP IS NOT A DEFINITION. **  Over four windows and both envelope definitions the source rungs never leave the neighbourhood of one and the ell rung never comes near it
+>   - ⛔ ** THE DISTANCE DIFFERENCE IS NOT HOW THE PROJECTION MAKES IT. **  Moving one arm's source to the other's distance changes its contrast by well under a per cent, and REMOVING the difference makes the arm/control excess LARGER rather than smaller
+>   - ...and the swap acts in the direction a wider kernel should: the arm's LARGER D_M gives more contrast, so the diagnostic is connected and is not reporting a null
 > rc=1

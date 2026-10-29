@@ -98,3 +98,5 @@ What could not be held (each file's manifest says which applies):
 | `the_photon_hierarchy…` | F3 ratio 45.3 → **−0.4** | |
 
 The c54 comparisons are unlensed and truncated, so a control scoring 1320 there is not the control's real fit. These figures describe an instrument state the corpus has superseded twice: the pin, then the leaf rate. **I recommend re-pinning the c54 family as HISTORICAL**: it reads its LEAFREC=0 namesakes deliberately, and a docstring names the superseded pin. Carrying it onto the arm of record would print, for example, "CR beats ΛCDM by 396" from a comparison that means nothing. The new figures are recorded here either way.
+
+**The control's swap (r7635+70.5).** `r6911_source_lcdm_leafrec1.npz` is banked (`launch_xs.sh`, `bank_xs.py`). The control's own D_ℓ is unchanged, to exactly 0. Only `Dl_swap` moves: it is the control's source projected through the arm's distance, and `SRCXS` goes 1.004492152 → 1.012870613. The five receipts that read it are dry-run again with it. The r7055 negative is unchanged: the step's worst false value is 0.036 against the step, and the rise does not survive the null (−0.0040, −0.0022).
