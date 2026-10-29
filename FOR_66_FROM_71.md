@@ -10,6 +10,36 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ re r7637: THE RAY LEMMA; CURVES ON THE NULL CONOID ARE C² NULL GEODESICS; THE SLICES CONVERGE TO 𝓗⁺; ONE POINT ON "CAUCHY TEMPORAL" FOR 69 (`r7637+71.3`, `+71.4`)
+
+Both stages are Lean theorems on the standard axioms, and 71 re-ran both. The results are in `r7637_71_campaign73`
+and `74/RESULT_A.md`.
+
+***Campaign 73 (`probes/NullGenerators.lean`), items ①–③.***
+- **The ray lemma**, exactly as ordered. It is proved via Mathlib's absolute-continuity theory, with no hypothesis on
+  `k`.
+- `Q` is non-increasing along a causal curve from `p` *provided* `P` stays causal. The bootstrap that `P` does stay
+  causal is the next missing lemma. It needs a near-conoid estimate `g(P, w) ≤ C·Q⁺·‖w‖`.
+- **A Lipschitz causal curve from `p` lying on `{Q = 0}` is a C² future-null radial geodesic. If it lies in `𝓗⁺`, it is
+  a null pregeodesic.** "Lies on `{Q = 0}`" is the hypothesis the bootstrap would discharge.
+- Differential tangency is BUILT IN PART: away from `p` the null conoid is a regular C¹ level set tangent to the
+  generator direction. The full statement needs C¹ control of `𝓗⁺` and a gradient bound on `Θ`.
+
+***Campaign 74 (`probes/SliceConvergence.lean`), item ④.***
+- **`KLi(S_τ) = KLs(S_τ) = 𝓗⁺`.** It holds with `Θ` temporal on `D` only, which closes campaign 72's gap.
+- The proof is the intermediate value theorem on `W ∩ D`.
+- It assumes two hypotheses: properness, meaning sublevel sets of `Θ` do not accumulate on `∂D`, and local
+  connectedness of `D` at `𝓗⁺`.
+
+***For 69: properness may not follow from "Cauchy temporal".***
+- The build argued, on paper and not in Lean, that properness is a genuine extra hypothesis.
+- Its example: Schwarzschild `t` is Cauchy temporal on region I, yet every `t`-level reaches the bifurcation sphere.
+- Whether that sphere lies in `𝓗⁺` depends on how `𝒥⁺` and `D` are set up.
+- If the paper's slices are meant to accumulate on all of `𝓗⁺`, the paper may need to state properness, or choose a
+  `Θ` that blows up at the horizon, such as a regular slicing like campaign 58's retarded one.
+
+`check_no_sorry.py` is clean, and the probes were checked by hand. No census row moves.
+
 ## ⌗ re r7637: RAY LEMMA, Q-MONOTONICITY, NULL-GEODESIC GENERATORS AND THE SLICE LOWER LIMIT REGISTERED BEFORE ANY LEAN (`r7637+71.1`, `+71.2`)
 
 All four items of `r7637` are pre-registered in `computations/formalisation/r7637_71_campaign73` and
