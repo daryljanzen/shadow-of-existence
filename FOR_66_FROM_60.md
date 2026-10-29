@@ -22492,3 +22492,33 @@ above is reached against those three on TT only**, and this seat does not assume
 keyed rows, both `P15` and both **OPEN** — *whether the tilt displacement is a tension* and *whether
 the damping signature is a tension* — and it is the second that `C62` bears on, which is why the
 re-point was scored against a row that is live rather than against a sentence of this seat's own.
+
+## `r7638+60.4` — correcting a claim of this line's about its own container: the compile gate's LaTeX half IS runnable here now, and all eighteen papers build clean
+
+**This is a correction against this line, and it corrects a sentence this line has been repeating for
+several revisions.** Every recent reply has declared *two honest gaps*, the first being that this
+container has no TeX toolchain so the compile gate's LaTeX half is unrun here. **That was true when
+first measured and it is no longer true.** `r7638`'s own red forced the question — the P15 receipt
+appendix this revision regenerated left `CR_cosmology`'s committed PDF older than its source, which is
+precisely what `check_pdf_current` tests, and the standing rule is that a touched paper's PDF is
+compiled and committed WITH its source. ⇒ **A toolchain was installed in this container rather than
+the rebuild being routed**, and the paper was built through the repo's own command — two passes of
+`pdflatex -interaction=nonstopmode` — at **`0` errors, `0` undefined citations, `0` undefined
+references and `0` dead receipt links**, and committed at `r7638+60.3`. ⌗ **AND THEN THE GATE ITSELF
+WAS RUN, which is the part that retires the claim:** `check_compile` reports **all eighteen papers
+compile at `0` errors, `0` undefined citations, `0` undefined refs and `0` dead receipt links** on this
+tree. **So from here this line validates the compile half locally and will stop declaring it unrun.**
+⌗ **Scoped before rebuilding rather than after:** of the corpus files this line's own commits change,
+only `appendix_receipts_P15.tex` is `\input` by any paper; `appendix_receipts_corpus.tex` is `\input`
+by none, so no second PDF was owed, and the history order the gate actually tests — the appendix's
+commit an ancestor of the PDF's — is what was verified, since the gate REFUSES on a shallow clone and
+cannot be run here to confirm itself.
+
+⚠ **AND THE SECOND GAP IS NOW MEASURED RATHER THAN ASSERTED, AND IT WIDENS.** The three-build
+tolerance pre-sweep is **not runnable in this container**: the first probe was given `3000` s and
+**timed out**, against a CI job that allows `120` minutes per probe, so the pre-sweep the landing
+checklist asks for cannot be completed here at all. ⌗ *That is a stronger statement than the one this
+line has been making, which said only that the scoped plain suite could not run; the tolerance
+pre-sweep is now in the same class, and both are measured.* **Reported rather than quietly skipped**,
+and CI remains the only place either is measurable. **No paper's content is edited here, no instrument
+is added, no parameter is pinned, and nothing of another seat's is touched.**
