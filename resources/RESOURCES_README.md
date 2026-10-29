@@ -75,6 +75,7 @@ spin-up read**.
 | | |
 |---|---|
 | `PhD_thesis/` — **15 figure files** (`fund_ellipse.png`, `dS-SdS.png`, `SdS_Veff.png`, `over-critSdS_Null.png`, `max_symm_space_graphed.png`, the Lorentz-sphere and de Sitter series) | the 2012 thesis's diagrams |
+| `P4_reframed/` — `modern_parallax_reframed.tex` and its PDF | the standalone journal form of P4, organised around the question whether matter density sets the rate of cosmic expansion; the corpus P4 follows its order |
 
 ## Referenced by live documents, and ABSENT
 *Each of these is linked from a document that is worked from. Until they are here, those links do not resolve.*

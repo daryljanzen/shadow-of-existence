@@ -3838,3 +3838,54 @@ The second objection is that this saddles a theory without preferred frames with
 - Wheeler1998 and Feynman1965 are added to the bibliography.
 - The overlap is settled by stating the Einstein-to-Friedmann direction of determination in full in the new first paragraph, where the objection is met, since that is where a reader needs the 1917 radius formula. The l.273 paragraph now points to it ("a direction of determination Friedmann's equations carried forward to the rate (§lumpy)") and keeps its own conclusion.
 - The PDF builds with no undefined references, and P4's HTML chapter is rebuilt.
+
+## From the chat seat: P4 restructured around its question (an order, on Daryl's direction; he has read the reframed paper and approved it as the order P4 always needed)
+
+**What it is.** Working with Daryl, the chat seat rebuilt P4 around the question it answers: can matter density set the rate of cosmic expansion? The approved source is at `resources/P4_reframed/modern_parallax_reframed.tex`, with its PDF. It is the standalone journal form. **Please bring `corpus/modern_parallax.tex` to its order and text, keeping the corpus's own content in place** (mapping below). This is a whole-paper job. Read the reframed paper through first, then the corpus P4, then restructure. Take as many turns as it needs.
+
+**Why the order changed.** The old paper opened on the result, did the computation, and only at the end (the Wheeler/Feynman passage and the history) said what was at stake. The reframed paper runs in logical order:
+1. The question.
+2. How the principle entered cosmology:
+   - 2.1 Einstein, de Sitter, Eddington, Friedmann, Lemaître, Hubble: density fixes size, then density fixes rate;
+   - 2.2 the order of construction (the crux). The four kinematical posits must be in place before "the density" and "the rate" in the Friedmann equation are defined, so the global form of the principle presupposes the structure it would explain, and so does every analysis that perturbs a Friedmann model;
+   - 2.3 the two forms. The local form is the Raychaudhuri equation along the matter flow. It needs no slicing and predicts, through the redshift-rate relation (now introduced here), that light records the matter's local expansion.
+3. The tension and the challenge:
+   - 3.1 locality against lumpiness, with Green–Wald as stability, not existence;
+   - 3.2 backreaction and timescape, set up fairly as the side that takes the local form at its word;
+   - 3.3 what would decide it (Ehlers–Geren–Sachs, the anisotropic-expansion bounds).
+4. The observable: the redshift as the record of the journey.
+5. The test, with timescape as its own subsection, 5.6.
+6. What the exclusion establishes.
+7. What stands and what falls. The Raychaudhuri equation is not what fails; what fails is the claim that light records the matter's local expansion. The rate is set by the global form, now on measured kinematics. Then the non-synchronous qualification and Feynman's rule.
+8. What follows:
+   - 8.1 the order reversed;
+   - 8.2 the foliation in GR (3+1, York);
+   - 8.3 what is unchanged;
+   - 8.4 simultaneity;
+   - 8.5 the rest frame and source-count dipole;
+   - 8.6 the history closed.
+9. Conclusion.
+
+**New references** (each checked against its Crossref record; corpus style):
+- Eddington1930: A. S. Eddington, "On the instability of Einstein's spherical world", MNRAS 90 (1930) 668.
+- Friedmann1924: A. Friedmann, Z. Phys. 21 (1924) 326.
+- Robertson1929: H. P. Robertson, "On the foundations of relativistic cosmology", PNAS 15 (1929) 822.
+- Raychaudhuri1955: A. Raychaudhuri, "Relativistic cosmology. I", Phys. Rev. 98 (1955) 1123.
+- Ellis1984: G. F. R. Ellis, "Relativistic cosmology: its nature, aims and problems", in General Relativity and Gravitation, ed. B. Bertotti, F. de Felice and A. Pascolini (Dordrecht: Reidel, 1984), 215.
+
+**Where the corpus's own content goes.** The reframed paper is standalone. The corpus P4 keeps everything that is its own, placed by the new order:
+- **The register and companion paragraph (current l.97):** JanzenCRframework, the independence from JanzenBHcausality, and the lapse/shift reading. These go in the introduction's register paragraph, as now.
+- **The augmentation passage and Theorem (thm:augmentation), the synchrony/simultaneity modal-fallacy paragraph, the warrant paragraph, and the objective-present literature:** these are what follows from the measured foliation, so they belong in Section 8. The natural place is a subsection after 8.4 (simultaneity), or 8.4 extended. Your call, by how it reads.
+- **The CR-voiced lumpy paragraph (the density as the bend of the spatial cut):** this opens Section 7, in place of the reframed paper's generic first paragraph there.
+- **The non-synchronous qualification's CR sentences** (the companion framework's cosmology, the Killing field of the Schwarzschild–de Sitter family): these stay with the qualification in Section 7.
+- **The "direction of determination" paragraph (current l.273):** the reframed 2.1 now carries Einstein's content-to-geometry and Friedmann's content-to-rate. Keep l.273's own conclusion (the rate is fixed independently of how the content is distributed; whether the reversal extends to the scale is taken up in the companion) in 8.1, "the order reversed", where it belongs, and do not repeat the history.
+- **The density-sets-the-rate passage you landed after sec:lumpy at the last order:** it is superseded by 2.1–2.3 and Section 7 of the reframed text. Fold it in rather than keeping both.
+- **Floor content the journal copy compresses:** the coefficient and growth items in "why the number is a floor", the R2 correlation theorem, the R50 single-ray-versus-across-sky paragraph, the lower-bound-against-an-upper-limit paragraph, and the conformal Killing ledger marker. Keep all of it in Section 5, with every \rcpt and \ldg marker on its claim.
+- **The corpus abstract:** rebuild it from the reframed abstract. The corpus can be longer, and should add a sentence for the augmentation theorem.
+
+**Labels and instruments.**
+- The reframed paper uses `sec:principle`, `sec:history` (now 2.1, the history), `sec:order`, `sec:twoforms`, `sec:challenge`, `sec:tension`, `sec:backreaction`, `sec:decide`, `sec:timescape`, `sec:stands` and `sec:follows`. `sec:history` moves from the augmentation and history section to 2.1.
+- Re-point every `\S\ref`, every receipt or INDEX row on a P4 section, CLAIMS.md, the ontology index and any other paper's reference into P4 to the new labels.
+- The HTML chapter and the PDF follow the tex.
+
+**One state.** The paper is written in its final order. Nothing in it says it was reordered; any record of that belongs in the consolidation ledger.
