@@ -100,6 +100,7 @@ for stem, sub, pre, nk in (('r6911_source_cr', 'src', 'src_cr', 1452), ('r6911_s
     for q in SCAL:
         out[q] = ds[0][q]
     out['n_slices'] = np.array(len(ds))
+    out['config'] = sp[0]['config']          # the instrument's own, written at save time by the slice's run
     r = float(np.max(out['resid']))
     if not r < 1e-14:
         fail.append(f'G4 {stem}: split residual {r:.3e}')
@@ -115,6 +116,7 @@ out = dict(ls=ds[0]['ls'], pairs=ds[0]['pairs'], Dl=sum(d['Dl'] for d in ds),
            n_modes=np.array(sum(int(d['n_modes']) for d in ds)))
 for q in ('arm', 'r_s', 'D_M', 'l_A', 'ns', 'eta_ls', 'eta_ls_w'):
     out[q] = ds[0][q]
+out['config'] = np.load(os.path.join(D, 'dec', fs[0][1].replace('_pairs.npz', '.npz')), allow_pickle=True)['config']
 rel = float(np.max(np.abs(out['Dl_pairs'].sum(axis=1) - out['Dl']) / np.abs(out['Dl'])))
 if not rel < 1e-13:
     fail.append(f'G4 r6915: pairs close to {rel:.3e}')
@@ -129,13 +131,13 @@ if [i for i, _ in fs] != list(range(0, 1452, 250)):
 for _, f in fs:
     g2(os.path.join(D, 'fine', f))
 out = dict(ls=ds[0]['ls'], Dl=sum(d['Dl'] for d in ds), l_A=ds[0]['l_A'], D_M=ds[0]['D_M'],
-           r_s=ds[0]['r_s'], arm=ds[0]['arm'])
+           r_s=ds[0]['r_s'], arm=ds[0]['arm'], config=ds[0]['config'])
 save('r6941_fine_cr', out, switches(os.path.join(D, 'fine', fs[0][1].replace('.npz', '.log'))),
      f'r6941 launch; LSTEP=1, {len(ds)} KSLICE pieces of 250')
 
 # r6959: the eta profile (SRCETA output, unaltered)
 d = np.load(f'{D}/eta/eta_cr_prof.npz', allow_pickle=True)
-save('r6959_eta_cr', {k: d[k] for k in d.files}, switches(f'{D}/eta/eta_cr.log'), 'r6959 launch_a; SRCETA output unaltered')
+save('r6959_eta_cr', {**{k: d[k] for k in d.files}, 'config': np.load(f'{D}/eta/eta_cr.npz', allow_pickle=True)['config']}, switches(f'{D}/eta/eta_cr.log'), 'r6959 launch_a; SRCETA output unaltered')
 
 json.dump(MAN, open(os.path.join(HERE, 'MANIFEST_clean.json'), 'w'), indent=1)
 print('\n'.join(['FAILS:'] + fail) if fail else 'all gates hold (G1-G4)')

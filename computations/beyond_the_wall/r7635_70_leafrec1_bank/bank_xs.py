@@ -26,6 +26,7 @@ out['Dl_swap'] = sum(d['Dl_swap'] for d in ds)
 for q in SCAL:
     out[q] = ds[0][q]
 out['n_slices'] = np.array(len(ds))
+out['config'] = np.load(os.path.join(D, fs[0][1].replace('_fields', '')), allow_pickle=True)['config']
 old = np.load(os.path.join(SP, 'r6911_source_lcdm.npz'))
 dd = float(np.max(np.abs(out['Dl'] - old['Dl'])) / np.max(old['Dl']))
 assert dd < 1e-11, f'the control moved: {dd:.3e}'
