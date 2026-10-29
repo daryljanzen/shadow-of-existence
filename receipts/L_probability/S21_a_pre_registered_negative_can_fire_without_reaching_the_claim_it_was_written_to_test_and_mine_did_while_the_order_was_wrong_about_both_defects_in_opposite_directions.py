@@ -409,10 +409,12 @@ _K_NEW_SECOND = "What follows from that is the definition's incompleteness and n
 #   COMPLETION of the definition, the definition itself being delivered by the construction's own regulator.
 # ⛭ RE-PINNED r7601 (69): the complete second order computed and not covariant, so the narrower thing
 #   still open is the renormalised value at the paying dimension.
-_K_NEW_OPEN = 'the one open thing is the renormalised value at the paying dimension'
+# ⛭ RE-PINNED r7635 (69, which struck PO-89): the renormalised value is now the LAST PART of the completion,
+#   carried to a stated limit, so the narrower thing is named in P10's present words.
+_K_NEW_OPEN = 'the last part of that completion is the renormalised value at the paying dimension'
 _news = [_K_NEW_FIRST, _K_NEW_SECOND, _K_NEW_OPEN]
 gate(f'Ⓒ④ ✔⛭ and the repaired summary states all three --- the answer, the refusal of the consequent, '
-     f'and the narrower thing that IS open --- each present and word-aligned '
+     f'and the narrower thing, now carried to a stated limit --- each present and word-aligned '
      f'(`{sum(1 for k in _news if k in p10)}` of `{len(_news)}`)',
      all(k in p10 and held(k, p10)[0] for k in _news))
 
