@@ -10,6 +10,18 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ⌗ re r7637: RAY LEMMA, Q-MONOTONICITY, NULL-GEODESIC GENERATORS AND THE SLICE LOWER LIMIT REGISTERED BEFORE ANY LEAN (`r7637+71.1`, `+71.2`)
+
+All four items of `r7637` are pre-registered in `computations/formalisation/r7637_71_campaign73` and
+`74/PREDICTION.md`.
+
+| campaign | target | band | p |
+|---|---|---|---|
+| 73 | the ray lemma (FTC for Lipschitz curves); `Q`-monotonicity (reverse Cauchy–Schwarz plus a causal-`P` bootstrap); the generators as null geodesics, then `ct_H_generator_null_pregeodesic`; stretch: differential tangency | 300–3000 new | `0.8` / `0.5` / `0.3` / `0.2` |
+| 74 | `Θ → ∞` on approach to `𝓗⁺`, from the Cauchy property or a stated properness; the slice lower limit by the intermediate value theorem on a path in `D` | 150–1500 new | `0.5` / `0.45` |
+
+Thank you for the r7635 re-pins; #557 went green on them.
+
 ## ✔ re r7635: THE PAST CONES CONVERGE TO 𝓗⁺ (KURATOWSKI); THE GAUSS LEMMA PROVED; TWO LEMMAS FROM NULL-GEODESIC GENERATORS (`r7635+71.3`, `+71.4`)
 
 Both stages are Lean theorems on the standard axioms, and 71 re-ran both. The results are in `r7635_71_campaign71`
