@@ -1,0 +1,60 @@
+72,83c72,83
+<     raw, 7 bands, per common q   |d_arm|  0.4525  sigma  0.1473  f_min     0.65
+<     held, 7 bands, per common q  |d_arm|  0.2201  sigma  0.0696  f_min     0.63
+<     raw, per common l            |d_arm|  0.4522  sigma  0.1473  f_min     0.65
+<     held, per common l           |d_arm|  0.2199  sigma  0.0695  f_min     0.63
+<     raw, 8 bands to q=6.45       |d_arm|  0.4404  sigma  0.1369  f_min     0.62
+<     held, 8 bands to q=6.45      |d_arm|  0.2440  sigma  0.0724  f_min     0.59
+<     raw, 12 finer bands          |d_arm|  0.0136  sigma  0.3555  f_min    52.16
+<     held, 12 finer bands         |d_arm|  0.2224  sigma  0.0835  f_min     0.75
+<   [PASS] ⓵ EVERY ROUTE THIS CONSTRUCTION CAN BUILD GIVES THE SAME FLOOR TO WITHIN A QUARTER -- both aggregations, both abscissas, a longer lever arm and finer bands   (f_min from 0.59 to 0.75 over 7 routes)
+<   [PASS] AND THE HELD-PERIOD AGGREGATION LOWERS THE SCATTER EXACTLY AS PRE-REGISTERED -- AND LOWERS THE SIGNAL BY THE SAME FACTOR, so the ratio that matters does not move.  ** The candidate named in advance as the one expected to help most does not help **   (sigma falls 2.12x, signal falls 2.06x, f_min 0.65 -> 0.63)
+<   [PASS] ⇒ *** AND THE TWO CHANNELS SIT BELOW THAT FLOOR, SO NO STATISTIC THIS CONSTRUCTION CAN BUILD RESOLVES THEM AGAINST THE STEP ***   (term mix carries 0.35 and the realised pair 0.03, against a floor of 0.59)
+<   [PASS] ⛔ AND THE PRE-REGISTERED ABUSE HAZARD FIRES BEFORE ANY POWER CLAIM CAN BE MADE: the two channels in question CHANGE SIGN between the aggregations, so their departures are not established and more power would not decide them -- only the window channel keeps its sign   (sign flips on term mix, JOINT; window holds at +1.184 / +1.184)
+---
+>     raw, 7 bands, per common q   |d_arm|  0.3094  sigma  0.1869  f_min     1.21
+>     held, 7 bands, per common q  |d_arm|  0.2361  sigma  0.0510  f_min     0.43
+>     raw, per common l            |d_arm|  0.3094  sigma  0.1869  f_min     1.21
+>     held, per common l           |d_arm|  0.2353  sigma  0.0510  f_min     0.43
+>     raw, 8 bands to q=6.45       |d_arm|  0.3867  sigma  0.1996  f_min     1.03
+>     held, 8 bands to q=6.45      |d_arm|  0.2545  sigma  0.0534  f_min     0.42
+>     raw, 12 finer bands          |d_arm|  0.3376  sigma  0.3172  f_min     1.88
+>     held, 12 finer bands         |d_arm|  0.2505  sigma  0.0639  f_min     0.51
+>   [FAIL] ⓵ EVERY ROUTE THIS CONSTRUCTION CAN BUILD GIVES THE SAME FLOOR TO WITHIN A QUARTER -- both aggregations, both abscissas, a longer lever arm and finer bands   (got f_min from 0.42 to 1.88 over 8 routes)
+>   [FAIL] AND THE HELD-PERIOD AGGREGATION LOWERS THE SCATTER EXACTLY AS PRE-REGISTERED -- AND LOWERS THE SIGNAL BY THE SAME FACTOR, so the ratio that matters does not move.  ** The candidate named in advance as the one expected to help most does not help **   (got sigma falls 3.67x, signal falls 1.31x, f_min 1.21 -> 0.43)
+>   [FAIL] ⇒ *** AND THE TWO CHANNELS SIT BELOW THAT FLOOR, SO NO STATISTIC THIS CONSTRUCTION CAN BUILD RESOLVES THEM AGAINST THE STEP ***   (got term mix carries 0.51 and the realised pair 0.04, against a floor of 0.42)
+>   [PASS] ⛔ AND THE PRE-REGISTERED ABUSE HAZARD FIRES BEFORE ANY POWER CLAIM CAN BE MADE: the two channels in question CHANGE SIGN between the aggregations, so their departures are not established and more power would not decide them -- only the window channel keeps its sign   (sign flips on term mix, JOINT; window holds at +1.184 / +1.183)
+87,93c87,93
+<     upper range, 4 full-period stretches: mean +0.007368 rad, scatter 0.001949
+<     whole upper range as ONE stretch:            +0.007541 rad
+<     band 1 (0.70 of a period):                     -0.002440 rad
+<     matched-width control, 6 stretches of 0.70: mean +0.008575, scatter 0.007264
+<   [PASS] ⓶ THE LONG-STRETCH PROJECTION RESOLVES THE PHASE IN THE UPPER RANGE, which is what makes it a measurement rather than a bound: the mean of disjoint stretches agrees with the whole range taken as one, and is many sigma from zero   (+0.007368 +- 0.000974 rad, a 7.6 sigma determination; one stretch gives +0.007541)
+<   [PASS] ⛔ BUT THE FULL-PERIOD YARDSTICK IS THE WRONG ONE FOR BAND 1, and the matched-width control shows it: a projection over a NON-INTEGER number of periods leaks the baseline, so a narrow stretch is both noisier and biased   (band 1 is 0.70 of a period; matched-width scatter 0.007264 against the full-period 0.001949, 3.7x)
+<   [PASS] ⇒ *** SO THE PHASE STEP IS NOT RESOLVED ON THE ONLY YARDSTICK THAT MATCHES IT, AND `cc66.60`'s AMPLITUDE VERDICT STANDS AS THE COMPLETE ONE RATHER THAN THE SIGN-ONLY ONE ***   (1.52 scatters on the matched-width control against 5.03 on the full-period one)
+---
+>     upper range, 4 full-period stretches: mean +0.102910 rad, scatter 0.030202
+>     whole upper range as ONE stretch:            +0.108517 rad
+>     band 1 (0.70 of a period):                     +0.025464 rad
+>     matched-width control, 6 stretches of 0.70: mean +0.113181, scatter 0.054164
+>   [PASS] ⓶ THE LONG-STRETCH PROJECTION RESOLVES THE PHASE IN THE UPPER RANGE, which is what makes it a measurement rather than a bound: the mean of disjoint stretches agrees with the whole range taken as one, and is many sigma from zero   (+0.102910 +- 0.015101 rad, a 6.8 sigma determination; one stretch gives +0.108517)
+>   [FAIL] ⛔ BUT THE FULL-PERIOD YARDSTICK IS THE WRONG ONE FOR BAND 1, and the matched-width control shows it: a projection over a NON-INTEGER number of periods leaks the baseline, so a narrow stretch is both noisier and biased   (got band 1 is 0.70 of a period; matched-width scatter 0.054164 against the full-period 0.030202, 1.8x)
+>   [PASS] ⇒ *** SO THE PHASE STEP IS NOT RESOLVED ON THE ONLY YARDSTICK THAT MATCHES IT, AND `cc66.60`'s AMPLITUDE VERDICT STANDS AS THE COMPLETE ONE RATHER THAN THE SIGN-ONLY ONE ***   (1.62 scatters on the matched-width control against 2.56 on the full-period one)
+98,100c98,100
+<     held   joint departure / its own scatter, four bases: 4.20  4.52  4.16  4.98
+<   [PASS] ⓷ THE CANCELLATION IS NEITHER EXACT NOR APPROXIMATE -- IT IS AGGREGATION-DEPENDENT: the joint vanishes within its own scatter on every basis of the raw reading and on none of the phase-insensitive one.  ⇒ ** ⓷ inherits ⓵'s answer rather than choosing a word, which is the third possibility the pre-registration named **   (raw 0.24-0.54 sigma, held 4.16-4.98)
+<   [PASS] AND WHAT IT WOULD BE CANCELLING BETWEEN IS LARGE ON BOTH READINGS, so the claim is about a big number either way and not about two small ones   (the two singles sum to +0.895 (raw) and +1.149 (held))
+---
+>     held   joint departure / its own scatter, four bases: 4.20  4.52  4.15  4.97
+>   [PASS] ⓷ THE CANCELLATION IS NEITHER EXACT NOR APPROXIMATE -- IT IS AGGREGATION-DEPENDENT: the joint vanishes within its own scatter on every basis of the raw reading and on none of the phase-insensitive one.  ⇒ ** ⓷ inherits ⓵'s answer rather than choosing a word, which is the third possibility the pre-registration named **   (raw 0.24-0.54 sigma, held 4.15-4.97)
+>   [PASS] AND WHAT IT WOULD BE CANCELLING BETWEEN IS LARGE ON BOTH READINGS, so the claim is about a big number either way and not about two small ones   (the two singles sum to +0.895 (raw) and +1.148 (held))
+104,105c104,109
+< GATES: ALL PASS
+< rc=0
+---
+> GATES: 4 FAILED:
+>   - ⓵ EVERY ROUTE THIS CONSTRUCTION CAN BUILD GIVES THE SAME FLOOR TO WITHIN A QUARTER -- both aggregations, both abscissas, a longer lever arm and finer bands
+>   - AND THE HELD-PERIOD AGGREGATION LOWERS THE SCATTER EXACTLY AS PRE-REGISTERED -- AND LOWERS THE SIGNAL BY THE SAME FACTOR, so the ratio that matters does not move.  ** The candidate named in advance as the one expected to help most does not help **
+>   - ⇒ *** AND THE TWO CHANNELS SIT BELOW THAT FLOOR, SO NO STATISTIC THIS CONSTRUCTION CAN BUILD RESOLVES THEM AGAINST THE STEP ***
+>   - ⛔ BUT THE FULL-PERIOD YARDSTICK IS THE WRONG ONE FOR BAND 1, and the matched-width control shows it: a projection over a NON-INTEGER number of periods leaks the baseline, so a narrow stretch is both noisier and biased
+> rc=1

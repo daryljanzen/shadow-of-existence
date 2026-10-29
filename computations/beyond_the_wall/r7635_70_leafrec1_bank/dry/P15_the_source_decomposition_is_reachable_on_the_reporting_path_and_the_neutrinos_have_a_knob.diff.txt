@@ -1,0 +1,86 @@
+95c95
+<   the frame, carried over from `r6885+cc66.35` unchanged: 179 bins, ||DELTA||^2 = 77.26, the arms' contrast ratio 1.0401
+---
+>   the frame, carried over from `r6885+cc66.35` unchanged: 179 bins, ||DELTA||^2 = 81.81, the arms' contrast ratio 1.0440
+107c107
+<   [PASS] ⛔ AND THE MEASUREMENT IT WAS FOUND BY, kept and re-gated here: with the switch UNWIRED, `DPSRC=0` on the refit configuration returned a bit-identical spectrum on BOTH arms   (max |dD_l| = 0.0e+00 and 0.0e+00 at `r6885_dp0_*`)
+---
+>   [FAIL] ⛔ AND THE MEASUREMENT IT WAS FOUND BY, kept and re-gated here: with the switch UNWIRED, `DPSRC=0` on the refit configuration returned a bit-identical spectrum on BOTH arms   (got max |dD_l| = 0.0e+00 and 9.5e-02 at `r6885_dp0_*`)
+113,114c113,114
+<       CR arm  : max |D_l(new) - D_l(banked)| = 0.000e+00
+<   [PASS] ** BIT-IDENTICAL ON BOTH ARMS **, so wiring two switches into two more paths and adding the neutrino knob changes NOTHING at the defaults -- every number this sector has reported still stands unedited   (0.0e+00 and 0.0e+00, exactly zero)
+---
+>       CR arm  : max |D_l(new) - D_l(banked)| = 2.529e-02
+>   [FAIL] ** BIT-IDENTICAL ON BOTH ARMS **, so wiring two switches into two more paths and adding the neutrino knob changes NOTHING at the defaults -- every number this sector has reported still stands unedited   (got 0.0e+00 and 2.5e-02, exactly zero)
+124,130c124,130
+<     `DPSRC=0`, the Doppler dipole                max relative |dD_l|: control  62.34%   arm  61.29%
+<     `SWSRC=0`, the monopole                      max relative |dD_l|: control  89.11%   arm  90.26%
+<     `NUFS=0`, the neutrinos as a perfect fluid   max relative |dD_l|: control  36.27%   arm  37.26%
+<   [PASS] the Doppler switch demonstrably reaches the term it names on the hierarchy path   (62.3% and 61.3%)
+<   [PASS] the monopole switch demonstrably reaches the term it names on the hierarchy path   (89.1% and 90.3%)
+<   [PASS] the free-streaming switch demonstrably reaches the term it names on the hierarchy path   (36.3% and 37.3%)
+<   [PASS] ⛭ ** AND THAT IS THE PAIR THAT MAKES THE SHADOW A PROOF **: the same switch, the same two commands, exactly 0.0 before the repair and this much after -- a null and an unwired knob look identical until both halves are on the record   (0.0% at `r6885_dp0_*` against 61-62% at `r6889_hdp0_*`)
+---
+>     `DPSRC=0`, the Doppler dipole                max relative |dD_l|: control  62.34%   arm  58.87%
+>     `SWSRC=0`, the monopole                      max relative |dD_l|: control  89.11%   arm  89.69%
+>     `NUFS=0`, the neutrinos as a perfect fluid   max relative |dD_l|: control  36.27%   arm  37.45%
+>   [PASS] the Doppler switch demonstrably reaches the term it names on the hierarchy path   (62.3% and 58.9%)
+>   [PASS] the monopole switch demonstrably reaches the term it names on the hierarchy path   (89.1% and 89.7%)
+>   [PASS] the free-streaming switch demonstrably reaches the term it names on the hierarchy path   (36.3% and 37.5%)
+>   [PASS] ⛭ ** AND THAT IS THE PAIR THAT MAKES THE SHADOW A PROOF **: the same switch, the same two commands, exactly 0.0 before the repair and this much after -- a null and an unwired knob look identical until both halves are on the record   (0.0% at `r6885_dp0_*` against 59-62% at `r6889_hdp0_*`)
+141,148c141,148
+<       DPSRC=0                 149.30   193.3%          1.0376               +0.7980   [+0.893]
+<                      and it takes the arm's own oscillation to +1.828 of what it was   [LOS: +1.855]
+<       SWSRC=0                 229.69   297.3%          1.0818               -0.7655   [-0.791]
+<                      and it takes the arm's own oscillation to -0.399 of what it was   [LOS: -0.300]
+<   [PASS] ⚑ ** THE TWO HALVES OF THE SOURCE BRACKET THE CONTRAST WITH OPPOSITE SIGNS ON THE REPORTING PATH TOO **, so `r6885+cc66.35`'s reading -- the contrast direction IS the monopole-to-dipole balance -- was not an artefact of the path it had to be measured on   (DPSRC=0 cos +0.798, SWSRC=0 cos -0.765)
+<   [PASS] ...and the two paths agree in SIGN on both, which is the comparison that was owed and could not be made before this repair   (hierarchy +0.798/-0.765 against LOS +0.893/-0.791)
+<   [PASS] ⚠ ...while the arms' contrast RATIO SURVIVES both deletions -- it does not collapse toward 1.000 under either -- so the channel is identified and the cause is still not measured, which is the boundary `r6889` said it was not moving   (1.0401 -> hdp0 1.0376, hsw0 1.0818)
+<   [PASS] ...and the two deletions are NOT equally inert on it, which is reported rather than averaged away: dropping the dipole barely moves the ratio while dropping the monopole raises it by four points, so the balance is not symmetric in its two halves   (dipole -0.0025, monopole +0.0416)
+---
+>       DPSRC=0                 149.30   182.5%          1.0376               +0.7961   [+0.893]
+>                      and it takes the arm's own oscillation to +1.823 of what it was   [LOS: +1.855]
+>       SWSRC=0                 229.69   280.8%          1.0818               -0.7653   [-0.791]
+>                      and it takes the arm's own oscillation to -0.403 of what it was   [LOS: -0.300]
+>   [PASS] ⚑ ** THE TWO HALVES OF THE SOURCE BRACKET THE CONTRAST WITH OPPOSITE SIGNS ON THE REPORTING PATH TOO **, so `r6885+cc66.35`'s reading -- the contrast direction IS the monopole-to-dipole balance -- was not an artefact of the path it had to be measured on   (DPSRC=0 cos +0.796, SWSRC=0 cos -0.765)
+>   [PASS] ...and the two paths agree in SIGN on both, which is the comparison that was owed and could not be made before this repair   (hierarchy +0.796/-0.765 against LOS +0.893/-0.791)
+>   [PASS] ⚠ ...while the arms' contrast RATIO SURVIVES both deletions -- it does not collapse toward 1.000 under either -- so the channel is identified and the cause is still not measured, which is the boundary `r6889` said it was not moving   (1.0440 -> hdp0 1.0376, hsw0 1.0818)
+>   [PASS] ...and the two deletions are NOT equally inert on it, which is reported rather than averaged away: dropping the dipole barely moves the ratio while dropping the monopole raises it by four points, so the balance is not symmetric in its two halves   (dipole -0.0064, monopole +0.0377)
+166c166
+<     `NUFS=0` on the reporting path moves D_l by 36.3% (control) and 37.3% (arm)
+---
+>     `NUFS=0` on the reporting path moves D_l by 36.3% (control) and 37.5% (arm)
+190c190
+<   commands: exactly 0.0 on the reporting path before the repair, 61% after.  *A null and an
+---
+>   commands: exactly 0.0 on the reporting path before the repair, 59% after.  *A null and an
+206c206
+<   untouched.  ⇒ It moves the spectrum by 37.3% on the arm and it moves the PEAK POSITIONS, which is
+---
+>   untouched.  ⇒ It moves the spectrum by 37.5% on the arm and it moves the PEAK POSITIONS, which is
+211c211
+<   the DRAG half -- the amplitude suppression, 37.3% in D_l -- is the large effect and must not be
+---
+>   the DRAG half -- the amplitude suppression, 37.5% in D_l -- is the large effect and must not be
+230,245c230,233
+< GATES: ALL PASS.
+< 
+< ESTABLISHED: `_SWSRC` and `_DPSRC` now reach all three source constructions where they reached one,
+< and the repair is additive -- the unset configuration reproduces `cc66_r185_verify_{lcdm,cr}`
+< bit-for-bit on both arms.  Each newly wired switch is calibrated where it was newly wired: the
+< Doppler switch moves the reporting path by 61% where it moved it by exactly 0.0 before, which is
+< what turns `r6885+cc66.35`'s bit-identical pair from a null into a proof.  The two bracketing tests
+< re-run on the reporting path give DPSRC=0 at cos +0.80 and SWSRC=0 at cos -0.77, the same opposite-sign bracket the line-of-sight path gave,
+< so the contrast direction IS the monopole-to-dipole balance and that reading was not the path's.  AND
+< the free-streaming phase shift is reachable: `NUFS` is four lines, its quadrupole's initial condition
+< is exactly zero so `NUFS=0` is a perfect fluid at the same background density, and it moves the arm
+< by 37.3% and moves the peak positions.
+< NOT CLAIMED: a mechanism for the contrast imbalance; a value for the phase shift as a result about
+< this construction; or that no further knob in this instrument is shadowed.
+< 
+< rc=0
+---
+> GATES: 2 FAILED:
+>   - ⛔ AND THE MEASUREMENT IT WAS FOUND BY, kept and re-gated here: with the switch UNWIRED, `DPSRC=0` on the refit configuration returned a bit-identical spectrum on BOTH arms
+>   - ** BIT-IDENTICAL ON BOTH ARMS **, so wiring two switches into two more paths and adding the neutrino knob changes NOTHING at the defaults -- every number this sector has reported still stands unedited
+> rc=1

@@ -1,0 +1,4 @@
+131c131
+<   through the same likelihood: floor = +1114.1, difference = +50496.5, ratio = 45.3
+---
+>   through the same likelihood: floor = +1114.1, difference = -396.5, ratio = -0.4

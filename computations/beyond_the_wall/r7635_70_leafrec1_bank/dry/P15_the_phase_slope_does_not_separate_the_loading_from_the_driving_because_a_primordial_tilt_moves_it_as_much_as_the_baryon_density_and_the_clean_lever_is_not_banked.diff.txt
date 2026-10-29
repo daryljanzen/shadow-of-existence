@@ -1,0 +1,48 @@
+56c56
+<       315 banked .npz under computations/;  25 carry a `switches` line, 51 a `config`
+---
+>       315 banked .npz under computations/;  25 carry a `switches` line, 81 a `config`
+68c68
+<       driving OFF, cr  : l_A = 301.600, P = 299.50, slope = +1.4607e-04
+---
+>       driving OFF, cr  : l_A = 302.943, P = 296.50, slope = +4.5070e-04
+132c132
+<       cr    driving OFF: P = 299.50, slope = +1.4607e-04  against an observed -9.2995e-04
+---
+>       cr    driving OFF: P = 296.50, slope = +4.5070e-04  against an observed -9.2995e-04
+134,135c134,135
+<       ⇒ both driving-off slopes have the OPPOSITE sign to the observed one, and the larger is 0.37 of its magnitude
+<     OK    Ⓔ①  ** removing the driving entirely does not produce the observed drift: it moves the slope the other way and by a third of the size. **  So the driving is not carrying it in the direction the residual needs -- stated as the limit it is, since `NODRIVE` is a total removal and not a derivative, and these two spectra are a different vintage from the grids
+---
+>       ⇒ both driving-off slopes have the OPPOSITE sign to the observed one, and the larger is 0.48 of its magnitude
+>     FAIL  Ⓔ①  ** removing the driving entirely does not produce the observed drift: it moves the slope the other way and by a third of the size. **  So the driving is not carrying it in the direction the residual needs -- stated as the limit it is, since `NODRIVE` is a total removal and not a derivative, and these two spectra are a different vintage from the grids
+161,184c161,164
+<   ✔ ** THE SEPARATING MEASUREMENT IS RUNNABLE ON THE BANK, IT IS RUN, AND IT DOES NOT
+<     SEPARATE THE LOADING FROM THE DRIVING. **  All four banked directions need a 4-6 per
+<     cent move to carry the observed drift, and the most responsive beats the least by under
+<     a factor of two on either arm.
+<   ⛔ ** AND THE REASON IS DIAGNOSTIC RATHER THAN A SHORTFALL OF PRECISION: `n_s` MOVES IT AS
+<     MUCH AS `omega_b` DOES, AT EVERY DEGREE OF SMOOTH MARGINALISATION. **  A primordial tilt
+<     carries no acoustic phase, so the free-period slope is not a phase observable on a
+<     one-amplitude-fitted residual -- and taking out the gradient never opens the four
+<     directions apart. Pushed to degree 4 it breaks the statistic instead: every required
+<     move falls under 2.5 per cent and `n_s` changes sign through zero.
+<   ⌗ Two further reasons not to name a carrier on this statistic: the arm's response is
+<     convention-dependent (the licensed grid asks several times the one-clock grid's move on
+<     the same directions), and the driving-off limit moves the slope the WRONG WAY at a third
+<     the magnitude.
+<   ⇒ ** SO: IT NEEDS A GRID, AND IT ALSO NEEDS A DIFFERENT STATISTIC. **  The peak set with
+<     its odd-even decomposition separates the two signatures that one global period makes
+<     degenerate, and that half is a re-read of the bank at no run cost. The lever half is
+<     eight runs, because `RBFAC` moves the loading alone and appears in NEITHER GRID,
+<     while `WBH2` moves the loading and recombination together.
+<   ⚠ Named and not supplied: `NODRIVE` is a total removal rather than a derivative and its
+<     two spectra are a different vintage from the grids, so `PART E` is a limit and not a
+<     gradient; and the `WB` direction was never a clean loading lever, so even a
+<     discriminating `WB` result would have been two effects.
+< rc=0
+---
+>   ⛔ 1 CHECK(S) FAILED
+>       - Ⓔ①  ** removing the driving entirely does not produce the observed drift: it moves the slope the other way and by a third of the size. **  So the driving is not carrying it in the direction the residual needs -- stated as the limit it is, since `NODRIVE` is a total removal and not a derivative, and these two spectra are a different vintage from the grids
+> ========================================================================================================
+> rc=1

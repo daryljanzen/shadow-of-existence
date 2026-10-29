@@ -1,0 +1,44 @@
+76,77c76,77
+<     window: phase +0.270, ratio 0.2638, prediction 1.646 vs measured 1.893
+<   [PASS] ⛭ `cc66.65`'s THREE WINDOW NUMBERS REPRODUCE TO THE DIGIT, so this is the same instrument   (+0.27 rad, 0.264, 1.646 against 1.893)
+---
+>     window: phase -0.048, ratio 0.2727, prediction 1.833 vs measured 1.893
+>   [FAIL] ⛭ `cc66.65`'s THREE WINDOW NUMBERS REPRODUCE TO THE DIGIT, so this is the same instrument   (got -0.05 rad, 0.273, 1.833 against 1.893)
+81,83c81,83
+<     term mix: phase +0.383 rad, ratio 1.176;  prediction 7.341 vs measured 3.399
+<   [PASS] ⛭ ⓐ THE TERM MIX'S SPECTRUM-LEVEL MODULATION IS LARGER THAN THE ARM'S, where the window's was a quarter of it   (ratio 1.176 against the window's 0.264)
+<   [PASS] ⛭⛭ ⓑ AND THE RATIO DOES NOT PREDICT FOR THIS CHANNEL -- off by a factor of two where the window's template was off by a seventh, which is the hinge of the revision   (term mix 116%, window 13%)
+---
+>     term mix: phase +0.065 rad, ratio 1.216;  prediction 8.176 vs measured 3.399
+>   [PASS] ⛭ ⓐ THE TERM MIX'S SPECTRUM-LEVEL MODULATION IS LARGER THAN THE ARM'S, where the window's was a quarter of it   (ratio 1.216 against the window's 0.273)
+>   [PASS] ⛭⛭ ⓑ AND THE RATIO DOES NOT PREDICT FOR THIS CHANNEL -- off by a factor of two where the window's template was off by a seventh, which is the hinge of the revision   (term mix 141%, window 3%)
+87,88c87,88
+<     spectrum-level ratio       k= 1.176  contribution  4.985  residue  2.570  share  68.3%  closes True
+<     least-squares projection   k= 1.694  contribution  7.181  residue  1.335  share  98.3%  closes True
+---
+>     spectrum-level ratio       k= 1.216  contribution  5.154  residue  2.824  share  65.4%  closes True
+>     least-squares projection   k= 1.846  contribution  7.822  residue  0.927  share  99.3%  closes True
+90c90
+<   [PASS] ⛔ and the two scales DISAGREE about the size of the share, which is why neither is quoted alone   (spectrum-level ratio 68.3%; least-squares projection 98.3%)
+---
+>   [PASS] ⛔ and the two scales DISAGREE about the size of the share, which is why neither is quoted alone   (spectrum-level ratio 65.4%; least-squares projection 99.3%)
+94,98c94,98
+<     term mix     D=+0.184  |cos D|=0.9832  share=0.9832  k=+1.694
+<     window       D=+3.121  |cos D|=0.9998  share=0.9998  k=-3.633
+<   [PASS] ⛔⛔ THE LEAST-SQUARES SHARE IS $|\cos\Delta|$ EXACTLY -- it depends ONLY on the phase offset and not at all on the channel's amplitude, so a channel a millionth the size scores the same   (term mix |cos|=0.9832 share=0.9832; window |cos|=0.9998 share=0.9998)
+<   [PASS] ⇒ *** AND THE WINDOW IS THE PROOF RATHER THAN AN ANALOGY: in ANTIPHASE it scores 100% of the authorship, at a NEGATIVE scale that turns its cost upside down to get there ***   (+3.12 rad, share 100.0%, k = -3.633)
+<   [PASS] ⚠ and the two-channel line is printed TO BE DISCOUNTED: two channels span the plane, so together they reconstruct the arm exactly -- arithmetic, not attribution, and the same degeneracy one level up   (residue after both: 2.22e-15 of 7.304)
+---
+>     term mix     D=+0.118  |cos D|=0.9931  share=0.9931  k=+1.846
+>     window       D=+3.055  |cos D|=0.9963  share=0.9963  k=-3.904
+>   [PASS] ⛔⛔ THE LEAST-SQUARES SHARE IS $|\cos\Delta|$ EXACTLY -- it depends ONLY on the phase offset and not at all on the channel's amplitude, so a channel a millionth the size scores the same   (term mix |cos|=0.9931 share=0.9931; window |cos|=0.9963 share=0.9963)
+>   [FAIL] ⇒ *** AND THE WINDOW IS THE PROOF RATHER THAN AN ANALOGY: in ANTIPHASE it scores 100% of the authorship, at a NEGATIVE scale that turns its cost upside down to get there ***   (got +3.06 rad, share 99.6%, k = -3.904)
+>   [PASS] ⚠ and the two-channel line is printed TO BE DISCOUNTED: two channels span the plane, so together they reconstruct the arm exactly -- arithmetic, not attribution, and the same degeneracy one level up   (residue after both: 4.44e-16 of 7.876)
+104,105c104,107
+< GATES: ALL PASS
+< rc=0
+---
+> GATES: 2 FAILED:
+>   - ⛭ `cc66.65`'s THREE WINDOW NUMBERS REPRODUCE TO THE DIGIT, so this is the same instrument
+>   - ⇒ *** AND THE WINDOW IS THE PROOF RATHER THAN AN ANALOGY: in ANTIPHASE it scores 100% of the authorship, at a NEGATIVE scale that turns its cost upside down to get there ***
+> rc=1

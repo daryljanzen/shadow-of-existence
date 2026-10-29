@@ -1,0 +1,18 @@
+140c140
+<     the REAL source (cc66.41)                                     +0.01167     1.0308
+---
+>     the REAL source (cc66.41)                                     +0.02178     0.9966
+149,150c149,150
+<     the REAL source (cc66.41)       1.030  1.066  1.063  1.079  1.074  1.086  1.088
+<   [PASS] ⚑⚑ ** A SOURCE WITH NO PHYSICS IN IT REPRODUCES THE EFFECT AND OVER-DELIVERS. **  The injection's arm/control ratio exceeds the real source's and its slope in q is steeper -- so the projection's GEOMETRY accounts for the whole of it and the source is irrelevant to it, which is the order's first branch   (injection 1.0659 at slope +0.02260 against the real source's 1.054 at +0.01167)
+---
+>     the REAL source (cc66.41)       1.010  1.065  1.032  1.124  1.038  1.049  1.161
+>   [PASS] ⚑⚑ ** A SOURCE WITH NO PHYSICS IN IT REPRODUCES THE EFFECT AND OVER-DELIVERS. **  The injection's arm/control ratio exceeds the real source's and its slope in q is steeper -- so the projection's GEOMETRY accounts for the whole of it and the source is irrelevant to it, which is the order's first branch   (injection 1.0659 at slope +0.02260 against the real source's 1.054 at +0.02178)
+197c197
+<   1.0659 at a slope of +0.02260 per unit q, against the real source's 1.054 and +0.01167.
+---
+>   1.0659 at a slope of +0.02260 per unit q, against the real source's 1.054 and +0.02178.
+232c232
+< of +0.02260 per unit q, exceeding the real source's 1.054 and +0.01167, so the projection's geometry
+---
+> of +0.02260 per unit q, exceeding the real source's 1.054 and +0.02178, so the projection's geometry

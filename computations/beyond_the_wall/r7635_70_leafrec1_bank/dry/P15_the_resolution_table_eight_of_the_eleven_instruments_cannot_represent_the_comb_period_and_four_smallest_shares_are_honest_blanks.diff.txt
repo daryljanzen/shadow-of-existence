@@ -1,0 +1,17 @@
+58,59c58,59
+<   [PASS] the likelihood's band-1 floor REPRODUCES `cc66.62`'s: 2 / (band-1 sigma of the arm-control difference)   (band-1 36.37 sigma over 24 bins -> 0.0550)
+<     likelihood smallest detectable share, per band (2 sigma of the band's arm-control difference): 0.055  0.047  0.040  0.045  0.057  0.081  0.141
+---
+>   [FAIL] the likelihood's band-1 floor REPRODUCES `cc66.62`'s: 2 / (band-1 sigma of the arm-control difference)   (got band-1 46.64 sigma over 24 bins -> 0.0429)
+>     likelihood smallest detectable share, per band (2 sigma of the band's arm-control difference): 0.043  0.036  0.031  0.035  0.044  0.065  0.107
+116c116
+<     smallest share: per band, 2 sigma of the band's arm-control difference: 0.055, 0.047, 0.040, 0.045, 0.057, 0.081, 0.141 -- instrument noise (COV_TT)
+---
+>     smallest share: per band, 2 sigma of the band's arm-control difference: 0.043, 0.036, 0.031, 0.035, 0.044, 0.065, 0.107 -- instrument noise (COV_TT)
+128,129c128,130
+< GATES: ALL PASS
+< rc=0
+---
+> GATES: 1 FAILED:
+>   - the likelihood's band-1 floor REPRODUCES `cc66.62`'s: 2 / (band-1 sigma of the arm-control difference)
+> rc=1

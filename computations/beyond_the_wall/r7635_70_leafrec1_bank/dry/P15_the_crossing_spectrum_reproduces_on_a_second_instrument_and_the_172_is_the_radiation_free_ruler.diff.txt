@@ -1,0 +1,249 @@
+107c107
+<     pinned    c54.178_cr             chi^2 =   51817.0  / 185 bins  ell 100-1996  l_A =  301.6   peaks [172, 404, 636, 916]
+---
+>     pinned    c54.178_cr             chi^2 =     923.9  / 185 bins  ell 100-1996  l_A =  302.9   peaks [220, 532, 812, 1132]
+109,342c109,117
+<   [PASS] the pinned CR arm reproduces chi^2 = 51817.0
+<   [PASS] both on the same 185 covered bins
+<   [PASS] and over the same ell range, 100-1996
+< 
+< ==============================================================================================
+< PART 2 (Q1) — THE RUN THE CONFIGURATION NOW ALLOWS, ON THE SAME INSTRUMENT AND THE SAME BINS
+< ==============================================================================================
+< 
+<   The command is the banked CR arm's, with three knobs changed and nothing else:
+<   `CRH0 = 68.62`, `CROM = 0.2973`, `ZSTART = 3e7`.  Those three are the crossing handover -- the
+<   background the distance data fix on their own, and a start at the branch point instead of a
+<   z_onset solved to hit a chosen acoustic scale.  ** Same path (HIER=1), same NK=600, same
+<   LMAXL=2000, same KBATCH=300, same BSPLIT=1, same ETAEND=4000, same 185 bins, same covariance,
+<   one fitted amplitude. **
+< 
+<     peaks at ell = [220, 540, 820, 1132, 1436]
+<     the sky       = [220.6, 538.1, 809.8]
+<     chi^2 = 1191.0 over 185 bins, ell 100-1996, one fitted amplitude
+< 
+<     against the pinned configuration's 51817.0 on the SAME bins -- a factor of 43.5
+<     and against this instrument's own control arm at 1320.5
+< 
+<     peak 1:   220 against   220.6   -0.3%   0.07 grid steps
+<     peak 2:   540 against   538.1   +0.4%   0.24 grid steps
+<     peak 3:   820 against   809.8   +1.3%   1.28 grid steps
+<   [PASS] the first peak is within one grid step of the sky's
+<   [PASS] the second is too
+<   [PASS] ⚠ the THIRD is not -- it is high by more than a grid step, and that is reported
+<   [PASS] all three are nevertheless within 1.5%, against the pinned arm's 7.5% deficit
+<   [PASS] four peaks are present where the sky has four
+< 
+<     the ONE fitted parameter, for each arm:  control A = 10855.27,  pinned A = 9945.71,  crossing A = 10850.97
+<   [PASS] ⌗ and the amplitude is not doing the work either: the crossing arm wants the CONTROL's amplitude to 0.1%
+<   [PASS] where the pinned arm wanted one several per cent away
+<   [PASS] and the fall from the pinned configuration is more than fortyfold
+< 
+< ==============================================================================================
+< PART 3 (W) — THE SUBSTITUTION CONTROL, WHICH IS THE ONE THE ORDER'S WATCH NAMES
+< ==============================================================================================
+< 
+<   ** A number that improves because an easier test was substituted is the failure mode here. **  The
+<   run above carries `CRIC=branchpoint`, which hands the CR arm the CONTROL's super-horizon datum --
+<   precisely the substitution that watch is about.  So the same run is repeated with the arm's OWN
+<   handover datum and nothing else changed.  ** If the datum is doing the work, these two must differ. **
+< 
+<     with CRIC=branchpoint (control's datum)   chi^2 =    1191.0   peaks [220, 540, 820, 1132]
+<     with the arm's OWN handover datum        chi^2 =    1205.4   peaks [220, 540, 820, 1132]
+<     difference                                   +14.4 in chi^2, 0 multipoles at worst on the peaks
+<   [PASS] the datum does not move the peaks at this background
+<   [PASS] and the improvement is not the substituted datum's: chi^2 agrees to better than 10%
+<   [PASS] the arm's own datum also scores far below the pinned configuration
+< 
+< ==============================================================================================
+< PART 4 (C2) — THE DISCRETENESS CONTROL: WHAT IT COST TO ASK, AND IT IS NOT IN YET
+< ==============================================================================================
+< 
+<   This configuration samples 2.3 points per Bessel period, under the alias gate's 4, and the gate is
+<   waived because CR's k-ladder is DISCRETE and physical rather than a sampling of a continuum.  ** The
+<   waiver's own text says that is only not aliasing if the answer does not depend on it, and names the
+<   check: KCONT=1, a continuum grid. **  `c54.186` ran it for the PINNED arm.  It has never been run on
+<   this configuration, and node 66 asked for it by name.
+< 
+<   ⛔ AND ASKING IT PRODUCED A RESULT BEFORE THE RUN FINISHED, WHICH IS WHY THIS PART EXISTS AT ALL.
+< 
+<     the ladder, NK=600            2.3 points per Bessel period   (waived: the ladder is physical)
+<     continuum grid, NK=600        2.8 points per Bessel period   ** GATE FIRED, run refused **
+<     continuum grid, NK=900        4.3 points per Bessel period   clears the guard, 2700 modes
+< 
+<   ** So the continuum comparison at the run's own mode count is not merely unconverged -- the
+<   instrument REFUSES it, and the refusal is correct: on a continuum grid the discreteness waiver does
+<   not apply and 2.8 points per period would alias. **  The check therefore costs three times the modes
+<   of the run it validates, which is why it had never been paid for here.
+< 
+<   ⚠ THE RUN AT NK=900 IS IN FLIGHT AND ITS NUMBERS ARE NOT IN THIS RECEIPT.  A control that has not
+<   finished is not a control, and this file will not pass one off as though it had.  ** What stands in
+<   its place meanwhile is not an argument but another instrument: node 66's code seat integrated this
+<   configuration on a DIFFERENT path with a DIFFERENT wavenumber grid and its own bin range, and its
+<   peaks agree with this one's within a grid step (Part 5). **  That is weaker than the continuum check
+<   for the question the guard asks, and stronger than nothing, and it is stated as exactly that.
+< 
+<   [PASS] the alias guard's threshold is 4 points per Bessel period and this run sits under it
+<   [PASS] ⛔ and the continuum grid at the run's own NK=600 is ALSO under it, so the gate refuses it
+<   [PASS] clearing the guard needs NK=900, which is 2700 modes against the ladder's 1452
+<   [PASS] ⚠ the continuum spectrum is NOT among the banked files, so nothing here reads one
+< 
+< ==============================================================================================
+< PART 5 (Q2) — BOTH INSTRUMENT PATHS, AND THEY SEPARATE THE POSITION RESULT FROM THE HEIGHTS
+< ==============================================================================================
+< 
+<   The two paths are not two implementations of one calculation: the HIERARCHY path carries the photon
+<   Boltzmann hierarchy with polarisation, and the LINE-OF-SIGHT path integrates the source terms against
+<   the Bessel kernel and stores an UNLENSED spectrum.  ** So their chi^2 values are NOT comparable raw --
+<   `spectra/README.md` says so in terms of `c54.186_lcdm_L3000`, where the stored line-of-sight file
+<   scores 3.73/dof raw against 1.18 once the lensing operator is applied. **  The paths are therefore
+<   read here for POSITIONS, which they share, and the chi^2 above is the hierarchy path's against a
+<   hierarchy-path control.
+< 
+<     hierarchy path       peaks [220, 540, 820, 1132]   P1/P2 = 2.152  P1/P3 = 2.168
+<     line-of-sight path   peaks [220, 532, 812, 1124]   P1/P2 = 2.543  P1/P3 = 3.264
+<     the sky              peaks [220.6, 538.1, 809.8]   P1/P2 = 2.217  P1/P3 = 2.277
+< 
+<     peak 1: hierarchy   220 (-0.3%)   line-of-sight   220 (-0.3%)   sky   220.6
+<     peak 2: hierarchy   540 (+0.4%)   line-of-sight   532 (-1.1%)   sky   538.1
+<     peak 3: hierarchy   820 (+1.3%)   line-of-sight   812 (+0.3%)   sky   809.8
+<   [PASS] the two paths agree on all three peak positions to within one grid step
+<   [PASS] ⌗ so the POSITION result is the configuration's and not one path's
+<   [PASS] ⚠ and the two paths do NOT agree on the heights -- they sit on OPPOSITE sides of the sky
+<   [PASS] ⚠ nor is the line-of-sight chi^2 comparable raw, being the unlensed spectrum: it is fourteen times the hierarchy path's and is not read as a score here
+< 
+< ==============================================================================================
+< PART 6 (Q3) — THE FLOOR BESIDE THE DIFFERENCE, WHICH IS WHAT MAKES THIS READABLE OR NOT
+< ==============================================================================================
+< 
+<   `F2` is this instrument's own floor: chi^2(its LambdaCDM arm) - chi^2(CAMB).  It is what the
+<   instrument costs against a converged Boltzmann code, and no difference smaller than it is a
+<   preference.  ** Two differences are computed against it, and they land on opposite sides. **
+< 
+<     F2, the floor                      chi^2(LambdaCDM arm) - chi^2(CAMB) =   +1114.1
+<     CR(crossing) - LambdaCDM arm                                          =    -115.1
+<     CR(crossing) - CR(pinned)                                             =  -50611.6
+< 
+<     |-115.1| is 0.10 of the floor  ->  NOT RESOLVABLE as a preference
+<     |-50611.6| is 45 times the floor  ->  the CONFIGURATION change is resolvable
+<   [PASS] the floor is the +1114 the corpus carries
+<   [PASS] ⛔ the crossing arm's advantage over the control arm is INSIDE the floor
+<   [PASS] so no preference over LambdaCDM may be read off this, and none is
+<   [PASS] while the fall from the pinned configuration is many times the floor
+< 
+< ==============================================================================================
+< PART 7 (⛔) — THE 172 IS THE RADIATION-FREE RULER, WHICH IS A DIFFERENT OBJECT FROM THE COMB
+< ==============================================================================================
+< 
+<   `r6782` reported that the body and the instrument do not compute the same sound horizon, and routed
+<   "which rate does r_s ride" up as a decision.  ** It is the paper's question and the paper has now
+<   answered it: the LEAF. **  r_s and r_D are accumulated by the plasma, which runs on the leaf
+<   congruence; D_M is a comoving separation read across leaves and keeps the stacking rate.  So
+<   theta_* = r_s/D_M is built from two lengths on two rates by the three-level rule, and that is the
+<   construction's statement rather than an oversight.
+< 
+<   ⇒ ** SO THIS RECEIPT DOES NOT REPORT A DISCREPANCY WITH THE BODY, AND THE EARLIER READING OF MINE
+<   THAT IT DID IS WITHDRAWN HERE. **  `rs_from`'s integral is radiation-free: it is the ruler object the
+<   instrument also carries, not the length the oscillator accumulates.  What is measured below is that
+<   the two differ and by how much -- which is a fact about the instrument's two quantities, not a defect
+<   in either.
+< 
+<                                  r_s computed    comb r_s implied   ratio
+<     lcdm (c54.178_lcdm)                144.53   300.0      145.19   1.005
+<     pinned (c54.178_cr)                135.46   258.0      158.35   1.169
+<     matched (r6784_cr_crossing_hier_noCRIC)       255.36   304.0      144.75   0.567
+<     the sky                                     294.6
+< 
+<   ⌗ AND THE CONTROL IS WHAT MAKES THAT READABLE RATHER THAN A BARE ASSERTION.  On the control arm the
+<   radiation-free ruler and the spectrum's own comb agree to half a per cent, because that arm's rate
+<   CARRIES radiation and the two objects coincide there.  ** On the CR arm they cannot coincide, because
+<   radiation is content and not a source in its rate -- so the ruler and the comb come apart by
+<   construction, and the size of the gap is a measurement of that choice and not of an error. **
+< 
+<   [PASS] on the control the ruler and the comb agree to better than 1%, the two objects coinciding there
+<   [PASS] ⛔ on the crossing configuration they come apart by more than 70%
+<   [PASS] and what the SPECTRUM carries is the physical scale: its implied r_s is within 2% of the control's
+<   [PASS] the crossing spectrum's comb is within 5% of the sky's
+<   ⚠ AND NO DISCREPANCY WITH THE BODY IS CLAIMED FROM ANY OF IT.  The paper's comb rides the leaf
+<   accumulation; the number above is the radiation-free ruler.  That is a statement this receipt takes
+<   FROM the paper and does not test, so it is written here as prose and not dressed up as a check.
+< 
+< 
+< ==============================================================================================
+< PART 8 (Q4) — WHERE THE RESIDUAL NOW IS, AND THE ONE QUANTITY THAT DID NOT COME IN
+< ==============================================================================================
+< 
+<   The position deficit was the open item: the superseded figure could not see it at all and the pinned
+<   arm carried it at 7.5%.  ** It is in this spectrum and it is gone. **  So the question becomes where
+<   what is left sits, which is a per-bin reading rather than a total.  ** And the height ratios are
+<   reported in the same breath BECAUSE THEY DID NOT COME IN. **
+< 
+<     ell   32-700   67 bins    crossing     2.4 per bin      pinned    357.1 per bin
+<     ell  700-1000  33 bins    crossing     4.0 per bin      pinned    438.5 per bin
+<     ell 1000-2000  85 bins    crossing    10.7 per bin      pinned    157.9 per bin
+< 
+<     P1/P2 = 2.273 against the sky's 2.217   (+2.5%)
+<     P1/P3 = 2.319 against the sky's 2.277   (+1.9%)
+<   [PASS] the position deficit is in this spectrum and the first peak closes it to a grid step
+<   [PASS] the 700-1000 band, which carried 85.9 per bin on the superseded configuration, is now under 10
+<   [PASS] every band improves against the pinned configuration
+<   [PASS] ⚠ the residual is now LARGEST in the damping tail, not at the peaks
+<   [PASS] ⌗ AND THE HEIGHTS COME IN TOO on the hierarchy path, within 3% of the sky's
+<   [PASS] ⚠ but NOT on the line-of-sight path, which overshoots by more than 10%
+<   [PASS] so the heights are the PATH's and the positions are the CONFIGURATION's
+< 
+< ==============================================================================================
+< WHAT THIS REVISION ESTABLISHES
+< ==============================================================================================
+< 
+<   ** THE RUN THE CORPUS HAS BEEN WAITING ON IS IN, AND ON POSITIONS IT LANDS. **  On the crossing
+<   handover at the background the distance data fix -- H0 = 68.62, Omega_m = 0.2973, started at the
+<   branch point rather than at a solved onset -- the construction's own spectrum puts its first four
+<   peaks at [220, 540, 820, 1132] against the sky's [220.6, 538.1, 809.8] and scores
+<   chi^2 = 1205.4 on the same 185 `plik_lite` TT bins where the same arm at the
+<   superseded configuration scores 51817.0.  ** A factor of
+<   43.0, and the position deficit that was 7.5% is now
+<   -0.3% / +0.4% / +1.3% on the first three peaks -- the first two inside one grid step and the third
+<   not, which is stated rather than rounded away. **
+< 
+<   ⛔ AND THE INSTRUMENT DISAGREES WITH ITSELF ON THIS CONFIGURATION, WHICH IS WHY THIS IS A
+<   MEASUREMENT AND NOT YET A CLAIM.  The spectrum's own comb implies r_s = 144.75 Mpc -- within 2%
+<   of the control's 145.19 -- while `rs_from` COMPUTES 255.36 Mpc on the same
+<   background, and reports l_A = 172.3 for a spectrum whose peaks are spaced
+<   304.  ** On the control those two agree to 0.5%, so the disagreement is this
+<   configuration's and not the machinery's. **  Which of the two the paper's acoustic scale rides is
+<   `r6782`'s open question, routed and not settled here; what is new is that the CONTROL now calibrates
+<   it, and it is the computed ruler that is adrift, not the spectrum.
+< 
+<   ⚠ WHAT IS NOT ESTABLISHED, AND EACH OF THESE IS LOAD-BEARING.
+<     * NOT a preference over LambdaCDM.  CR(crossing) - LambdaCDM arm = -115.1 against a floor
+<       of +1114.1: inside it, so unreadable as a preference, and `PO-7` is protected exactly here.
+<       ** What IS resolvable is the configuration change, at 45 times the
+<       floor. **
+<     * The HEIGHTS are the PATH's, where the positions are the CONFIGURATION's.  The hierarchy path
+<       gives P1/P2 = 2.273 and P1/P3 = 2.319 against the sky's
+<       2.217 and 2.277, within 3%, and within 1% of node 66's independent 2.264 and
+<       2.298.  The line-of-sight path gives 2.543 and 3.264, overshooting
+<       by a tenth and more.  ** The two paths disagree with each other on the heights by far more than
+<       the hierarchy path differs from the sky, which is why the corpus reads heights from one path and
+<       positions from the other. **
+<     * NOT an easier test -- ON THE ONE CONTROL THAT IS IN.  The substituted-datum control (Part 3) ran
+<       before any number here was reported, and it moved the heights while leaving the positions and the
+<       chi^2 alone.  ⚠ ** The discreteness control (Part 4) is NOT in: it needs three times the modes,
+<       the instrument REFUSES it at the run's own NK, and it is in flight. **  Until it lands, what
+<       stands against aliasing is node 66's independent integration on a different wavenumber grid --
+<       weaker for that question than the continuum check and stated as weaker.
+<     * NOT a statement about `P15`'s computed 298.0, which is untouched.
+< 
+<   38 checks, all pass.
+< rc=0
+---
+>   [FAIL] the pinned CR arm reproduces chi^2 = 51817.0
+> Traceback (most recent call last):
+>   File "/tmp/claude-0/-home-user-shadow-of-existence/4913e7eb-3c04-585c-bc52-ac1b69fc5eb8/scratchpad/wt2/receipts/P15_CR_cosmology/P15_the_crossing_spectrum_reproduces_on_a_second_instrument_and_the_172_is_the_radiation_free_ruler.py", line 203, in <module>
+>     check("the pinned CR arm reproduces chi^2 = 51817.0", abs(D['pinned']['chi2'] - 51817.0) < 1.0)
+>   File "/tmp/claude-0/-home-user-shadow-of-existence/4913e7eb-3c04-585c-bc52-ac1b69fc5eb8/scratchpad/wt2/receipts/P15_CR_cosmology/P15_the_crossing_spectrum_reproduces_on_a_second_instrument_and_the_172_is_the_radiation_free_ruler.py", line 109, in check
+>     assert ok, label
+>            ^^
+> AssertionError: the pinned CR arm reproduces chi^2 = 51817.0
+> rc=1

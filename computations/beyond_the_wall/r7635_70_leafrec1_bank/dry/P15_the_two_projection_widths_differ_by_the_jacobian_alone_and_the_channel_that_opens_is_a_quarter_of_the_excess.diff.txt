@@ -1,0 +1,49 @@
+103,110c103,110
+<     rms       arm/control:  on the LEAF clock 1.07332   on the RULER clock 0.98163
+<     fwhm      arm/control:  on the LEAF clock 1.14452   on the RULER clock 0.99658
+<     chi-half  arm/control:  on the LEAF clock 1.14459   on the RULER clock 0.99667
+<   [PASS] ⛭ ⓑ ON THE RULER CLOCK THE TWO ARMS ARE THE SAME INSTRUMENT: the window's conformal width against its width in rs_stack agrees between the arms to under half a per cent, on BOTH core width definitions.  *The visibility is laid down in eta by the same Thomson physics on both.*   (fwhm -0.34%  chi-half -0.33%)
+<   [PASS] ⛭⛭ ⓒ AND ON THE LEAF CLOCK IT IS MORE THAN TEN PER CENT, ON BOTH core definitions -- the two widths do NOT scale together between the arms   (fwhm +14.5%  chi-half +14.5%)
+<   [PASS] ⛭⛭⛭ AND THE WHOLE OF THAT DIFFERENCE IS THE JACOBIAN: the leaf-clock ratio divided by the ruler-clock ratio accounts for it to under half a per cent   (fwhm: Jac share 1.14846 against leaf ratio 1.14452  chi-half: Jac share 1.14841 against leaf ratio 1.14459)
+<   [PASS] and stated as the prediction it is: the arm's own leaf-to-ruler WIDTH ratio equals the visibility-weighted mean of Jac, to under one per cent on both core definitions.  ⇒ THE TWO WIDTHS STANDING IN A DIFFERENT RATIO IS A PREDICTION OF THE TWO-RATE ASSIGNMENT, NOT AN ARTEFACT OF THIS INSTRUMENT'S WINDOW   (<Jac> = 0.87441 against fwhm 0.87073  chi-half 0.87077)
+<   [PASS] ⚠ AND SAY WHICH QUANTITY: the SIZE is definition-dependent while the attribution is not.  The two CORE measures agree to better than a hundredth of a per cent; RMS, which weights the window's long tails, gives a departure smaller by more than a factor of one and a half -- and RMS is what `cc66.51` reported   (core +14.5% and +14.5%, rms +7.3%)
+---
+>     rms       arm/control:  on the LEAF clock 1.07846   on the RULER clock 0.98562
+>     fwhm      arm/control:  on the LEAF clock 1.14915   on the RULER clock 0.99898
+>     chi-half  arm/control:  on the LEAF clock 1.14918   on the RULER clock 0.99898
+>   [PASS] ⛭ ⓑ ON THE RULER CLOCK THE TWO ARMS ARE THE SAME INSTRUMENT: the window's conformal width against its width in rs_stack agrees between the arms to under half a per cent, on BOTH core width definitions.  *The visibility is laid down in eta by the same Thomson physics on both.*   (fwhm -0.10%  chi-half -0.10%)
+>   [PASS] ⛭⛭ ⓒ AND ON THE LEAF CLOCK IT IS MORE THAN TEN PER CENT, ON BOTH core definitions -- the two widths do NOT scale together between the arms   (fwhm +14.9%  chi-half +14.9%)
+>   [PASS] ⛭⛭⛭ AND THE WHOLE OF THAT DIFFERENCE IS THE JACOBIAN: the leaf-clock ratio divided by the ruler-clock ratio accounts for it to under half a per cent   (fwhm: Jac share 1.15033 against leaf ratio 1.14915  chi-half: Jac share 1.15035 against leaf ratio 1.14918)
+>   [PASS] and stated as the prediction it is: the arm's own leaf-to-ruler WIDTH ratio equals the visibility-weighted mean of Jac, to under one per cent on both core definitions.  ⇒ THE TWO WIDTHS STANDING IN A DIFFERENT RATIO IS A PREDICTION OF THE TWO-RATE ASSIGNMENT, NOT AN ARTEFACT OF THIS INSTRUMENT'S WINDOW   (<Jac> = 0.87314 against fwhm 0.86932  chi-half 0.86930)
+>   [PASS] ⚠ AND SAY WHICH QUANTITY: the SIZE is definition-dependent while the attribution is not.  The two CORE measures agree to better than a hundredth of a per cent; RMS, which weights the window's long tails, gives a departure smaller by more than a factor of one and a half -- and RMS is what `cc66.51` reported   (core +14.9% and +14.9%, rms +7.8%)
+115,121c115,121
+<     the measured conformal-width ratio s = 1.13496   (half-fall definition, named with it)
+<     target        +0.02148  +0.05740  +0.05193  +0.06064  +0.07484  +0.06592  +0.07621
+<     mean-anchored +0.00338  +0.00571  +0.00816  +0.01075  +0.01355  +0.01637  +0.01954
+<     peak-anchored -0.00340  -0.00352  -0.00320  -0.00251  -0.00145  -0.00008  +0.00162
+<     plane-wave    -0.03323  -0.06928  -0.11234  -0.15897  -0.20638  -0.25209  -0.29679
+<   [PASS] ⛔ THE FIRST PASS IS SUPERSEDED AND THE CORRECTION IS THE HEADLINE OF THIS SECTION: treating the projection kernel as a PLANE WAVE in conformal time overstates the top band by more than a factor of ten AND reverses its sign.  j_l(x) near its turning point x ~ l -- where the whole window sits, k D_M ~ l being what the projection IS -- oscillates at local rate sqrt(1 - l^2/x^2), which vanishes there   (plane wave -0.2968 against the kernel's +0.0195)
+<   [PASS] ⚠ AND A STRETCH IS NOT AN OPERATION UNTIL ITS FIXED POINT IS NAMED: the two natural anchorings -- the visibility's mean in eta and its peak -- do not agree in SIGN at the bottom band, so the sign of this channel is NOT DETERMINED ON PAPER   (mean-anchored +0.00338, peak-anchored -0.00340)
+---
+>     the measured conformal-width ratio s = 1.15196   (half-fall definition, named with it)
+>     target        +0.01861  +0.08182  +0.03734  +0.08677  +0.10045  +0.01409  +0.16166
+>     mean-anchored +0.00381  +0.00643  +0.00919  +0.01211  +0.01525  +0.01844  +0.02201
+>     peak-anchored -0.00383  -0.00396  -0.00360  -0.00282  -0.00163  -0.00008  +0.00184
+>     plane-wave    -0.03949  -0.07762  -0.12214  -0.17010  -0.21907  -0.26665  -0.31361
+>   [PASS] ⛔ THE FIRST PASS IS SUPERSEDED AND THE CORRECTION IS THE HEADLINE OF THIS SECTION: treating the projection kernel as a PLANE WAVE in conformal time overstates the top band by more than a factor of ten AND reverses its sign.  j_l(x) near its turning point x ~ l -- where the whole window sits, k D_M ~ l being what the projection IS -- oscillates at local rate sqrt(1 - l^2/x^2), which vanishes there   (plane wave -0.3136 against the kernel's +0.0220)
+>   [PASS] ⚠ AND A STRETCH IS NOT AN OPERATION UNTIL ITS FIXED POINT IS NAMED: the two natural anchorings -- the visibility's mean in eta and its peak -- do not agree in SIGN at the bottom band, so the sign of this channel is NOT DETERMINED ON PAPER   (mean-anchored +0.00381, peak-anchored -0.00383)
+123,125c123,125
+<   [PASS] ⛔ AND THE VERDICT ON THE COMMITTED SECOND TOOTH: the channel ACCELERATES under BOTH anchorings where the target DECELERATES.  ** IT FAILS THE FILTER. **   (curvature +0.000158 and +0.000367 against the target's -0.003265)
+<   [PASS] and the size is bounded rather than merely failing: at the top band the channel delivers at most a third of what the measurement needs, under every anchoring.  ⇒ NOT THE CARRIER; NOT EXCLUDED AS A CONTRIBUTOR   (+1.95% (mean) and +0.16% (peak) against the target's +7.62%)
+<   [PASS] ⚠ AND THE FILTER ITSELF NEEDED A THIRD TOOTH, WHICH THE SUPERSEDED PASS EXPOSED AND WHICH IS REGISTERED ANYWAY BECAUSE IT IS A DEFECT OF THE STATISTIC AND NOT OF THAT ESTIMATE: those plane-wave numbers PASS both pre-registered teeth -- growth and negative curvature -- while moving the contrast the WRONG WAY in every band.  G is a ratio of a departure to a departure and is blind to their common sign.  ⇒ THE FIRST TOOTH IS NOW SIGN   (G = 8.93 and curvature -0.001410, with every band negative against a target every band positive)
+---
+>   [FAIL] ⛔ AND THE VERDICT ON THE COMMITTED SECOND TOOTH: the channel ACCELERATES under BOTH anchorings where the target DECELERATES.  ** IT FAILS THE FILTER. **   (got curvature +0.000178 and +0.000413 against the target's +0.003424)
+>   [PASS] and the size is bounded rather than merely failing: at the top band the channel delivers at most a third of what the measurement needs, under every anchoring.  ⇒ NOT THE CARRIER; NOT EXCLUDED AS A CONTRIBUTOR   (+2.20% (mean) and +0.18% (peak) against the target's +16.17%)
+>   [PASS] ⚠ AND THE FILTER ITSELF NEEDED A THIRD TOOTH, WHICH THE SUPERSEDED PASS EXPOSED AND WHICH IS REGISTERED ANYWAY BECAUSE IT IS A DEFECT OF THE STATISTIC AND NOT OF THAT ESTIMATE: those plane-wave numbers PASS both pre-registered teeth -- growth and negative curvature -- while moving the contrast the WRONG WAY in every band.  G is a ratio of a departure to a departure and is blind to their common sign.  ⇒ THE FIRST TOOTH IS NOW SIGN   (G = 7.94 and curvature -0.001494, with every band negative against a target every band positive)
+133,134c133,135
+< GATES: ALL PASS
+< rc=0
+---
+> GATES: 1 FAILED:
+>   - ⛔ AND THE VERDICT ON THE COMMITTED SECOND TOOTH: the channel ACCELERATES under BOTH anchorings where the target DECELERATES.  ** IT FAILS THE FILTER. **
+> rc=1

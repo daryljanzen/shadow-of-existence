@@ -1,0 +1,104 @@
+149c149
+<   the base spectrum carries D_M = 14011.5 Mpc, l_A = 302.89, ell 100-1998
+---
+>   the base spectrum carries D_M = 14134.0 Mpc, l_A = 302.94, ell 100-1998
+152,153c152,153
+<        recombination   0.045442   0.046493    1.02313   +0.04679         2133.5     1.02209
+<      visibility peak   0.046190   0.045811    0.99179   -0.01636         2093.3     0.99113
+---
+>        recombination   0.045442   0.046493    1.02313   +0.04679         2152.2     1.02209
+>      visibility peak   0.046190   0.045811    0.99179   -0.01636         2111.6     0.99113
+198c198
+<   the amplitude that puts the base in the likelihood's units is 11608.3; 185 bins covered, ell 100-1996
+---
+>   the amplitude that puts the base in the likelihood's units is 13504; 185 bins covered, ell 100-1996
+202,205c202,205
+<        recombination   2133.5    12.575   0.0680     3.744   0.02024    0.142   -0.00926   0.00313      3.0s     8.831
+<   recombination at C62 l_D   1951.9    17.890   0.0967     5.315   0.02873    0.169   -0.01107   0.00313      3.5s    12.575
+<      visibility peak   2093.3     1.698   0.0092     0.514   0.00278    0.053   +0.00335   0.00307      1.1s     1.184
+<   visibility peak at C62 l_D   1951.9     2.248   0.0121     0.680   0.00368    0.061   +0.00385   0.00307      1.3s     1.567
+---
+>        recombination   2152.2    12.110   0.0655     3.530   0.01908    0.138   -0.00935   0.00320      2.9s     8.580
+>   recombination at C62 l_D   1951.9    17.832   0.0964     5.184   0.02802    0.167   -0.01138   0.00321      3.5s    12.648
+>      visibility peak   2111.6     1.634   0.0088     0.484   0.00262    0.051   +0.00338   0.00315      1.1s     1.150
+>   visibility peak at C62 l_D   1951.9     2.241   0.0121     0.664   0.00359    0.060   +0.00395   0.00314      1.3s     1.577
+224,231c224,231
+<        recombination       100-1996   185       0.0680     0.02024    0.142   -0.00926      3.0s
+<        recombination       100-1300   133       0.0432     0.01216    0.110   -0.00751      2.0s
+<        recombination       700-1996   118       0.0567     0.00490    0.070   -0.02183      2.5s
+<        recombination      1300-1996    51       0.0188     0.00068    0.026   -0.04354      1.0s
+<      visibility peak       100-1996   185       0.0092     0.00278    0.053   +0.00335      1.1s
+<      visibility peak       100-1300   133       0.0058     0.00165    0.041   +0.00272      0.7s
+<      visibility peak       700-1996   118       0.0077     0.00070    0.026   +0.00793      0.9s
+<      visibility peak      1300-1996    51       0.0026     0.00010    0.010   +0.01619      0.4s
+---
+>        recombination       100-1996   185       0.0655     0.01908    0.138   -0.00935      2.9s
+>        recombination       100-1300   133       0.0415     0.01149    0.107   -0.00760      2.0s
+>        recombination       700-1996   118       0.0552     0.00476    0.069   -0.02138      2.4s
+>        recombination      1300-1996    51       0.0181     0.00067    0.026   -0.04262      1.0s
+>      visibility peak       100-1996   185       0.0088     0.00262    0.051   +0.00338      1.1s
+>      visibility peak       100-1300   133       0.0056     0.00156    0.040   +0.00275      0.7s
+>      visibility peak       700-1996   118       0.0075     0.00068    0.026   +0.00776      0.9s
+>      visibility peak      1300-1996    51       0.0025     0.00010    0.010   +0.01583      0.4s
+233,234c233,234
+<   the displacement runs 0.00751 -> 0.04354 between the low and high windows, a factor
+<   5.80, against 5.54 from the ratio of their central ell SQUARED
+---
+>   the displacement runs 0.00760 -> 0.04262 between the low and high windows, a factor
+>   5.61, against 5.54 from the ratio of their central ell SQUARED
+246,248c246,248
+<      1.08200  +0.170724   -0.034142    1.0000     1.0000   159.9348    1.0000     1.0000    46.176   0.2496    0.500
+<      1.02313  +0.046789   -0.009263    0.2713     0.2741    12.5754    0.0786     0.0751     3.744   0.0202    0.142
+<      0.99179  -0.016355   +0.003221   -0.0943    -0.0958     1.5729    0.0098     0.0092     0.476   0.0026    0.051
+---
+>      1.08200  +0.170724   -0.034465    1.0000     1.0000   154.1158    1.0000     1.0000    43.567   0.2355    0.485
+>      1.02313  +0.046789   -0.009353    0.2714     0.2741    12.1097    0.0786     0.0751     3.530   0.0191    0.138
+>      0.99179  -0.016355   +0.003253   -0.0944    -0.0958     1.5141    0.0098     0.0092     0.448   0.0024    0.049
+264,265c264,265
+<        recombination        the CR spectrum   185       0.0680     0.02024   -0.00926
+<                        plik_lite data (C62)   185       0.0635     0.01855   -0.00913
+---
+>        recombination        the CR spectrum   185       0.0655     0.01908   -0.00935
+>                        plik_lite data (C62)   185       0.0614     0.01792   -0.00897
+267,268c267,268
+<      visibility peak        the CR spectrum   185       0.0092     0.00278   +0.00335
+<                        plik_lite data (C62)   185       0.0086     0.00254   +0.00330
+---
+>      visibility peak        the CR spectrum   185       0.0088     0.00262   +0.00338
+>                        plik_lite data (C62)   185       0.0083     0.00245   +0.00324
+278c278
+<        recombination           lensed, both       0.0643     0.01897    0.138   -0.00905
+---
+>        recombination           lensed, both       0.0619     0.01786    0.134   -0.00913
+280c280
+<      visibility peak           lensed, both       0.0087     0.00260    0.051   +0.00327
+---
+>      visibility peak           lensed, both       0.0083     0.00244    0.049   +0.00330
+287c287
+<       injected dn_s = +0.020 -> recovered +0.01977, residual 1.144e-05/bin, absorbed 99.9948%
+---
+>       injected dn_s = +0.020 -> recovered +0.01977, residual 1.086e-05/bin, absorbed 99.9949%
+289c289
+<       injected dn_s = +0.050 -> recovered +0.04856, residual 4.354e-04/bin, absorbed 99.9675%
+---
+>       injected dn_s = +0.050 -> recovered +0.04860, residual 4.136e-04/bin, absorbed 99.9676%
+297,299c297,299
+<   bins the row was priced on, an amplitude ALONE absorbs it to 0.0680 per bin to
+<   recombination and 0.0092 to the visibility peak -- 12.6 and 1.7 in total chi^2.
+<   *At 1.082 the same test costs 159.9.*  ** A 13-fold and a 100-fold collapse, and it is
+---
+>   bins the row was priced on, an amplitude ALONE absorbs it to 0.0655 per bin to
+>   recombination and 0.0088 to the visibility peak -- 12.1 and 1.6 in total chi^2.
+>   *At 1.082 the same test costs 154.1.*  ** A 13-fold and a 100-fold collapse, and it is
+302c302
+<   ** THE TILT IT COSTS IS 3.0 SIGMA AND 1.1 SIGMA of what this dataset's own
+---
+>   ** THE TILT IT COSTS IS 2.9 SIGMA AND 1.1 SIGMA of what this dataset's own
+305c305
+<   -0.0093 or +0.0033 on the full window, and it runs by a factor 5.8 across the sub-windows,
+---
+>   -0.0094 or +0.0034 on the full window, and it runs by a factor 5.6 across the sub-windows,
+313c313
+<   costing 1.698 over 185 bins and a tilt of +0.00335 absorbing it to 0.053 sigma per bin. **
+---
+>   costing 1.634 over 185 bins and a tilt of +0.00338 absorbing it to 0.051 sigma per bin. **

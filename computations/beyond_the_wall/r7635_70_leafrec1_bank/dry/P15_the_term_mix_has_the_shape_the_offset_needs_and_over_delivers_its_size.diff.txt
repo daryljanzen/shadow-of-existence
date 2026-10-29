@@ -1,0 +1,94 @@
+113,124c113,124
+<   q=1.20  1.02148     1.02684          0.99478
+<   q=1.90  1.05740     1.01827          1.03843
+<   q=2.60  1.05193     1.01936          1.03195
+<   q=3.30  1.06064     1.01179          1.04828
+<   q=4.00  1.07484     1.01531          1.05864
+<   q=4.70  1.06592     1.01424          1.05095
+<   q=5.40  1.07621     1.01485          1.06046
+< 
+<   ln against q^2 -- measured slope +0.001349 intercept +0.039244 (1.0400 at q=0);  remainder slope +0.001657 intercept +0.018205 (1.0184)
+<   [PASS] the measured excess is recomputed here from `r6941_fine_*`, not quoted, and reproduces `cc66.46`'s seven band ratios   (1.0215  1.0574  1.0519  1.0606  1.0748  1.0659  1.0762)
+<   [PASS] the remainder carries about half the q=0 offset R1 fired on   (45.9 per cent of it)
+<   [PASS] and it carries ALL of the growth with wavenumber, and a little more   (122.8 per cent of the measured q^2 slope)
+---
+>   q=1.20  1.01861     1.02684          0.99199
+>   q=1.90  1.08182     1.01827          1.06241
+>   q=2.60  1.03734     1.01936          1.01764
+>   q=3.30  1.08677     1.01179          1.07410
+>   q=4.00  1.10045     1.01531          1.08386
+>   q=4.70  1.01409     1.01424          0.99984
+>   q=5.40  1.16166     1.01485          1.14467
+> 
+>   ln against q^2 -- measured slope +0.002511 intercept +0.035803 (1.0365 at q=0);  remainder slope +0.002819 intercept +0.014765 (1.0149)
+>   [FAIL] the measured excess is recomputed here from `r6941_fine_*`, not quoted, and reproduces `cc66.46`'s seven band ratios   (got 1.0186  1.0818  1.0373  1.0868  1.1005  1.0141  1.1617)
+>   [PASS] the remainder carries about half the q=0 offset R1 fired on   (40.8 per cent of it)
+>   [PASS] and it carries ALL of the growth with wavenumber, and a little more   (112.3 per cent of the measured q^2 slope)
+126,127c126,127
+<   anchored: the whole excess +5.66% / +2.58% -> 2.20;  the window channel +4.59% / +0.37% -> 12.44;  the remainder +1.07% / +2.21% -> 0.49
+<   [PASS] the remainder is trough-weighted where the channel that left it is peak-weighted   (remainder 0.49 against the window channel's 12.44)
+---
+>   anchored: the whole excess +6.35% / +2.75% -> 2.31;  the window channel +4.59% / +0.37% -> 12.44;  the remainder +1.76% / +2.38% -> 0.74
+>   [PASS] the remainder is trough-weighted where the channel that left it is peak-weighted   (remainder 0.74 against the window channel's 12.44)
+138c138
+<   [PASS] ⇒ SO THE ANCHORED READING CONFIRMS `cc66.46`'s VARIANCE SPLIT RATHER THAN CONTRADICTING IT: the whole excess sits within fifteen per cent of the symmetric baseline   (2.20 against a symmetric baseline of 1.96)
+---
+>   [FAIL] ⇒ SO THE ANCHORED READING CONFIRMS `cc66.46`'s VARIANCE SPLIT RATHER THAN CONTRADICTING IT: the whole excess sits within fifteen per cent of the symmetric baseline   (got 2.31 against a symmetric baseline of 1.96)
+144,146c144,146
+<     0.8974  0.8600  0.8824  0.8791  0.8753  0.8708  0.8908
+<   [PASS] ⛭ ONE CONSTANT DOES IT: the coefficient the profiles demand is the same in every band to two per cent, so the arm's term-mix difference is a single scalar on the Doppler and not a q-dependent reshaping   (0.8600 to 0.8974, a 4.3 per cent spread)
+<   [PASS] and the run used that band-mean, read from the bank rather than restated here   (DPSRC=0.8794 against the band-mean 0.8794)
+---
+>     0.8943  0.8619  0.8577  0.8925  0.8767  0.8377  0.9071
+>   [FAIL] ⛭ ONE CONSTANT DOES IT: the coefficient the profiles demand is the same in every band to two per cent, so the arm's term-mix difference is a single scalar on the Doppler and not a q-dependent reshaping   (got 0.8377 to 0.9071, a 8.3 per cent spread)
+>   [PASS] and the run used that band-mean, read from the bank rather than restated here   (DPSRC=0.8794 against the band-mean 0.8754)
+149,155c149,155
+<   q=1.20   1.05953        1.20777     |  1.02148
+<   q=1.90   1.10881        1.40097     |  1.05740
+<   q=2.60   1.07802        1.27594     |  1.05193
+<   q=3.30   1.08211        1.29952     |  1.06064
+<   q=4.00   1.09046        1.33313     |  1.07484
+<   q=4.70   1.07239        1.26584     |  1.06592
+<   q=5.40   1.09108        1.33940     |  1.07621
+---
+>   q=1.20   1.05953        1.20777     |  1.01861
+>   q=1.90   1.10881        1.40097     |  1.08182
+>   q=2.60   1.07802        1.27594     |  1.03734
+>   q=3.30   1.08211        1.29952     |  1.08677
+>   q=4.00   1.09046        1.33313     |  1.10045
+>   q=4.70   1.07239        1.26584     |  1.01409
+>   q=5.40   1.09108        1.33940     |  1.16166
+163c163
+<   [PASS] ⛔ ⓷ T3' THE WEIGHTING FIRES: the swap is PEAK-weighted, at the symmetric baseline, where the remainder it was to be is trough-weighted -- so the term mix is NOT the remainder   (2.23 and 2.21 against the remainder's 0.49 and a symmetric baseline of 1.96)
+---
+>   [PASS] ⛔ ⓷ T3' THE WEIGHTING FIRES: the swap is PEAK-weighted, at the symmetric baseline, where the remainder it was to be is trough-weighted -- so the term mix is NOT the remainder   (2.23 and 2.21 against the remainder's 0.74 and a symmetric baseline of 1.96)
+165c165
+<   [PASS] ⛔ AND IT OVER-DELIVERS: imposed at exactly the size the profiles measure, it raises the control's contrast by more than the whole measured excess in every band   (2.77x  1.90x  1.50x  1.35x  1.21x  1.10x  1.20x   mean 1.58x)
+---
+>   [FAIL] ⛔ AND IT OVER-DELIVERS: imposed at exactly the size the profiles measure, it raises the control's contrast by more than the whole measured excess in every band   (got 3.20x  1.33x  2.09x  0.95x  0.90x  5.14x  0.56x   mean 2.02x)
+168c168
+<   the arm's own      +1.605   -0.186   +1.067   +1.308
+---
+>   the arm's own      +1.696   -0.445   +0.696   +0.518
+170c170
+<   [PASS] and in the WRONG DIRECTION at l_1: the swap moves it down where the arm sits above the control   (swap -1.036 against the arm's +1.605)
+---
+>   [PASS] and in the WRONG DIRECTION at l_1: the swap moves it down where the arm sits above the control   (swap -1.036 against the arm's +1.696)
+174,176c174,176
+<   band-mean excess measured 5.835%;  window channel 1.724%;  term mix 8.320%;  their sum 10.044%
+<   [PASS] ⛔⛭⛭ THE TWO CHANNELS TOGETHER EXCEED WHAT IS MEASURED, so they cannot both be present at their measured sizes and simply compose   (1.72 times the excess)
+<   [PASS] ⇒ AND THAT IS WHAT ⓵'s REMAINDER ASSUMED: it is a RATIO of two responses, so it is a construct of the composition rule rather than a residual channel -- which is why its trough-weighted 0.49 and the term mix's peak-weighted reading are not in conflict   (remainder 0.49 is a construct; the swap's 2.23 is a measurement)
+---
+>   band-mean excess measured 7.153%;  window channel 1.724%;  term mix 8.320%;  their sum 10.044%
+>   [PASS] ⛔⛭⛭ THE TWO CHANNELS TOGETHER EXCEED WHAT IS MEASURED, so they cannot both be present at their measured sizes and simply compose   (1.40 times the excess)
+>   [PASS] ⇒ AND THAT IS WHAT ⓵'s REMAINDER ASSUMED: it is a RATIO of two responses, so it is a construct of the composition rule rather than a residual channel -- which is why its trough-weighted 0.49 and the term mix's peak-weighted reading are not in conflict   (remainder 0.74 is a construct; the swap's 2.23 is a measurement)
+184,185c184,189
+< GATES: ALL PASS
+< rc=0
+---
+> GATES: 4 FAILED:
+>   - the measured excess is recomputed here from `r6941_fine_*`, not quoted, and reproduces `cc66.46`'s seven band ratios
+>   - ⇒ SO THE ANCHORED READING CONFIRMS `cc66.46`'s VARIANCE SPLIT RATHER THAN CONTRADICTING IT: the whole excess sits within fifteen per cent of the symmetric baseline
+>   - ⛭ ONE CONSTANT DOES IT: the coefficient the profiles demand is the same in every band to two per cent, so the arm's term-mix difference is a single scalar on the Doppler and not a q-dependent reshaping
+>   - ⛔ AND IT OVER-DELIVERS: imposed at exactly the size the profiles measure, it raises the control's contrast by more than the whole measured excess in every band
+> rc=1

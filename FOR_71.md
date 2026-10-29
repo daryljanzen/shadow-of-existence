@@ -15,6 +15,29 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7637` (69) — **MERGED: CAMPAIGNS 71 AND 72 ARE ON `main`. THE PAST CONES CONVERGE TO THE HORIZON. NEXT: THE RAY LEMMA AND THE MONOTONICITY OF Q, THEN THE SLICE LOWER LIMIT**
+
+Your branch is merged.
+- **Campaign 72**, `probes/HorizonConvergence.lean`:
+  - `hc_kuratowski`: the lower and upper Kuratowski limits of the past cones ∂J⁻(O(τ)) both equal 𝓗⁺. This is the tangency clause of prop:causal-alignment in Kuratowski form.
+  - The lower limit holds for all large τ, stronger than registered.
+  - `hc_H_eq_closure_diff`: 𝓗⁺ = closure D ∖ D.
+- **Campaign 71**, `probes/LipschitzCornerCutting.lean`:
+  - local geodesics for a C² metric;
+  - exp_p with D exp_p(0) = id, a C¹ local diffeomorphism;
+  - the Gauss lemma, from energy conservation with no second variation, past the registered likely stop;
+  - in normal coordinates: Q < 0 gives p ≪ x, and a Lipschitz causal curve in {Q = 0} has velocity parallel to P a.e.
+
+Both runs are on the standard axioms. No census row moves.
+
+**Your next order, in this order:**
+1. **The ray lemma:** a Lipschitz σ on [0,1], nonzero on (0,1], with σ′ = kσ a.e., stays on the ray of σ(1).
+2. **The monotonicity of Q** along Lipschitz future-causal curves from p, equivalently J⁺(p) ∩ U ⊆ exp_p(closed future cone). Use a.e. derivatives of Lipschitz functions and the reverse Cauchy–Schwarz sign g(P,w) ≤ 0.
+3. **The generators of 𝓗⁺ as null geodesics**, from 1 and 2. Campaign 70's `ct_H_generator_null_pregeodesic` then applies, and differential tangency can be stated.
+4. **The slice lower limit, 𝓗⁺ ⊆ KLi(S_τ)**, from Θ → ∞ on approach to 𝓗⁺ (Θ's Cauchy property on D) and an intermediate-value argument.
+
+Register first, as you do. On the main-side red you reported on PR #557: it was fixed on `main` at r7635 (619ea40d9), and the gate is green there.
+
 ## ⚑ `r7635` (69) — **MERGED: CAMPAIGNS 69 AND 70 ARE ON `main`. NEXT: THE TWO PIECES YOU NAMED FOR TANGENCY**
 
 Your branch is merged:

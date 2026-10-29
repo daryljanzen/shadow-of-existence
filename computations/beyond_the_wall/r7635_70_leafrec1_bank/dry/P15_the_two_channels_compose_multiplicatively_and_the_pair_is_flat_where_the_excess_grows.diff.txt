@@ -1,0 +1,63 @@
+108c108
+<   [PASS] the measured excess is recomputed here from `r6941_fine_*` and reproduces `cc66.46`'s seven band ratios   (1.0215  1.0574  1.0519  1.0606  1.0748  1.0659  1.0762)
+---
+>   [FAIL] the measured excess is recomputed here from `r6941_fine_*` and reproduces `cc66.46`'s seven band ratios   (got 1.0186  1.0818  1.0373  1.0868  1.1005  1.0141  1.1617)
+113,119c113,119
+<   1.20  1.02684   1.05953  |  1.08797   1.08637   1.06530    |  1.08312   1.02148
+<   1.90  1.01827   1.10881  |  1.12906   1.12707   1.11033    |  1.12519   1.05740
+<   2.60  1.01936   1.07802  |  1.09889   1.09738   1.08039    |  1.09555   1.05193
+<   3.30  1.01179   1.08211  |  1.09486   1.09390   1.08295    |  1.09282   1.06064
+<   4.00  1.01531   1.09046  |  1.10715   1.10577   1.09175    |  1.10479   1.07484
+<   4.70  1.01424   1.07239  |  1.08766   1.08663   1.07378    |  1.08578   1.06592
+<   5.40  1.01485   1.09108  |  1.10728   1.10593   1.09228    |  1.10554   1.07621
+---
+>   1.20  1.02684   1.05953  |  1.08797   1.08637   1.06530    |  1.08312   1.01861
+>   1.90  1.01827   1.10881  |  1.12906   1.12707   1.11033    |  1.12519   1.08182
+>   2.60  1.01936   1.07802  |  1.09889   1.09738   1.08039    |  1.09555   1.03734
+>   3.30  1.01179   1.08211  |  1.09486   1.09390   1.08295    |  1.09282   1.08677
+>   4.00  1.01531   1.09046  |  1.10715   1.10577   1.09175    |  1.10479   1.10045
+>   4.70  1.01424   1.07239  |  1.08766   1.08663   1.07378    |  1.08578   1.01409
+>   5.40  1.01485   1.09108  |  1.10728   1.10593   1.09228    |  1.10554   1.16166
+132c132
+<     the whole excess     +5.664%    +2.577%   ratio   2.20
+---
+>     the whole excess     +6.353%    +2.749%   ratio   2.31
+147c147
+<     the arm's own    +1.605   -0.186   +1.067   +1.308   outside the sky's widths: 1/4
+---
+>     the arm's own    +1.696   -0.445   +0.696   +0.518   outside the sky's widths: 1/4
+156,157c156,157
+<     measured excess  slope +0.001349   intercept 1.0400 at q=0   |slope x <q^2>|/|intercept| = 0.442
+<     pre-registered: product 1.1035, sum 1.1019, quadrature 1.0839;  measured excess's own 1.0400
+---
+>     measured excess  slope +0.002511   intercept 1.0365 at q=0   |slope x <q^2>|/|intercept| = 0.901
+>     pre-registered: product 1.1035, sum 1.1019, quadrature 1.0839;  measured excess's own 1.0365
+161c161
+<   [PASS] ⛔ WHERE THE MEASURED EXCESS IS NOT FLAT AT ALL, which is the obstruction   (the excess carries 0.442 against the joint's 0.004, a factor 101)
+---
+>   [PASS] ⛔ WHERE THE MEASURED EXCESS IS NOT FLAT AT ALL, which is the obstruction   (the excess carries 0.901 against the joint's 0.004, a factor 206)
+165,166c165,166
+<   joint / measured, band by band  3.87  2.18  1.84  1.53  1.40  1.30  1.38   mean 1.93
+<   at q=0: joint offset 0.0993 against the measured 0.0400  ->  2.48x
+---
+>   joint / measured, band by band  4.47  1.53  2.56  1.07  1.04  6.09  0.65   mean 2.49
+>   at q=0: joint offset 0.0993 against the measured 0.0365  ->  2.73x
+168c168
+<   [PASS] ✔ CONFIRMED BY DIRECT MEASUREMENT: `cc66.48` put the pair at 1.72 times the measured excess by adding the two channels' separate shares; composing them in ONE spectrum reads the same to about one per cent   (1.70x joint against 1.72x summed)
+---
+>   [PASS] ✔ CONFIRMED BY DIRECT MEASUREMENT: `cc66.48` put the pair at 1.72 times the measured excess by adding the two channels' separate shares; composing them in ONE spectrum reads the same to about one per cent   (1.38x joint against 1.40x summed)
+170,171c170,171
+<   [PASS] ⛭⛭ AND THE OBSTRUCTION THAT SURVIVES IS A SHAPE, WHICH NO COEFFICIENT ON EITHER KNOB CAN REMOVE: the pair over-delivers by a factor of three at long wavelength and by a third at short, because it is flat in q where the excess grows -- so scaling it to the offset at q=0 leaves it short at high q, and scaling it to high q makes it an order too large at low q   (3.87x at q=1.20 against 1.38x at q=5.40, a 2.8-fold tilt across the bands)
+<   [PASS] ⌗ and that negative is available only because the rule was measured: with the rule assumed, the same numbers read as a size discrepancy that a smaller coefficient could absorb   (the pair exceeds the excess in all seven bands, smallest 1.30x)
+---
+>   [FAIL] ⛭⛭ AND THE OBSTRUCTION THAT SURVIVES IS A SHAPE, WHICH NO COEFFICIENT ON EITHER KNOB CAN REMOVE: the pair over-delivers by a factor of three at long wavelength and by a third at short, because it is flat in q where the excess grows -- so scaling it to the offset at q=0 leaves it short at high q, and scaling it to high q makes it an order too large at low q   (got 4.47x at q=1.20 against 0.65x at q=5.40, a 6.8-fold tilt across the bands)
+>   [FAIL] ⌗ and that negative is available only because the rule was measured: with the rule assumed, the same numbers read as a size discrepancy that a smaller coefficient could absorb   (got the pair exceeds the excess in all seven bands, smallest 0.65x)
+174,175c174,178
+< GATES: ALL PASS
+< rc=0
+---
+> GATES: 3 FAILED:
+>   - the measured excess is recomputed here from `r6941_fine_*` and reproduces `cc66.46`'s seven band ratios
+>   - ⛭⛭ AND THE OBSTRUCTION THAT SURVIVES IS A SHAPE, WHICH NO COEFFICIENT ON EITHER KNOB CAN REMOVE: the pair over-delivers by a factor of three at long wavelength and by a third at short, because it is flat in q where the excess grows -- so scaling it to the offset at q=0 leaves it short at high q, and scaling it to high q makes it an order too large at low q
+>   - ⌗ and that negative is available only because the rule was measured: with the rule assumed, the same numbers read as a size discrepancy that a smaller coefficient could absorb
+> rc=1

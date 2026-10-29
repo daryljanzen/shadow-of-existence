@@ -1,0 +1,69 @@
+81,83c81,83
+<     per common l     -0.374(-3.52s)  -0.387(-3.63s)  -0.374(-3.49s)  -0.386(-3.59s)
+<     per common q     -0.383(-3.20s)  -0.383(-3.26s)  -0.383(-3.17s)  -0.382(-3.22s)
+<     present excess   -0.566(-7.23s)  -0.598(-7.65s)  -0.575(-7.36s)  -0.601(-7.51s)
+---
+>     per common l     -0.386(-3.11s)  -0.384(-3.15s)  -0.388(-3.09s)  -0.383(-3.10s)
+>     per common q     +0.022(+0.09s)  -0.107(-0.42s)  -0.014(-0.05s)  -0.102(-0.39s)
+>     present excess   -0.596(-1.20s)  -0.638(-1.33s)  -0.684(-0.89s)  -0.675(-0.92s)
+85,87c85,87
+<   [PASS] ⇒ *** AND THE STEP SURVIVES IT: band 1 departs from its own bands 2--7 trend with the SAME SIGN on all four trend bases AND on both abscissas, above the bands 2--7 scatter throughout ***   (per l -0.387..-0.374, per q -0.383..-0.382, min 3.17 sigma)
+<   [PASS] AND IT SURVIVES AT A SIZE COMPARABLE TO THE PRESENT ROUTE'S rather than collapsing toward zero, which is what the order asked to be tested   (65% of the present route's fractional departure)
+<   [PASS] AND THE TWO ABSCISSAS AGREE, so the pairing is not what produces it -- which is the pre-registration's middle row NOT firing   (means -0.380 against -0.383)
+---
+>   [FAIL] ⇒ *** AND THE STEP SURVIVES IT: band 1 departs from its own bands 2--7 trend with the SAME SIGN on all four trend bases AND on both abscissas, above the bands 2--7 scatter throughout ***   (got per l -0.388..-0.383, per q -0.107..+0.022, min 0.05 sigma)
+>   [FAIL] AND IT SURVIVES AT A SIZE COMPARABLE TO THE PRESENT ROUTE'S rather than collapsing toward zero, which is what the order asked to be tested   (got 9% of the present route's fractional departure)
+>   [FAIL] AND THE TWO ABSCISSAS AGREE, so the pairing is not what produces it -- which is the pre-registration's middle row NOT firing   (got means -0.385 against -0.050)
+89c89
+<   [PASS] ⌗ AND THE SMOOTHED-DIVISOR CONTROL SHOWS IT IS THE **DIFFERENCING** AND NOT THE **DIVISION** THAT PRODUCES THE NEGATIVE STEP: remove the differencing by dividing by a smoothed control and the departure turns POSITIVE, back toward the arms' own positive step   (smoothed divisor +0.072..+0.186 against the differential's -0.382)
+---
+>   [FAIL] ⌗ AND THE SMOOTHED-DIVISOR CONTROL SHOWS IT IS THE **DIFFERENCING** AND NOT THE **DIVISION** THAT PRODUCES THE NEGATIVE STEP: remove the differencing by dividing by a smoothed control and the departure turns POSITIVE, back toward the arms' own positive step   (got smoothed divisor +0.077..+0.180 against the differential's +0.022)
+95c95
+<     cr   : 238-pt total +0.264..+0.355 against 1900-pt +0.268..+0.360, worst gap 0.0045
+---
+>     cr   : 238-pt total +0.261..+0.346 against 1900-pt +0.267..+0.352, worst gap 0.0067
+98,102c98,102
+<     sw*dp       +29.1% of the step on   5.2% of the oscillation  => leverage +5.59x   <- Doppler
+<     dp*dp       +46.2% of the step on  12.2% of the oscillation  => leverage +3.80x   <- Doppler
+<     sw*isw      +39.3% of the step on  31.8% of the oscillation  => leverage +1.23x
+<     sw*sw       +63.4% of the step on  88.1% of the oscillation  => leverage +0.72x
+<     sw*pol       +3.0% of the step on   5.8% of the oscillation  => leverage +0.52x
+---
+>     sw*dp       +28.8% of the step on   5.2% of the oscillation  => leverage +5.53x   <- Doppler
+>     dp*dp       +46.2% of the step on  12.2% of the oscillation  => leverage +3.79x   <- Doppler
+>     sw*isw      +39.6% of the step on  31.8% of the oscillation  => leverage +1.24x
+>     sw*sw       +63.0% of the step on  88.1% of the oscillation  => leverage +0.71x
+>     sw*pol       +2.8% of the step on   5.8% of the oscillation  => leverage +0.48x
+104,107c104,107
+<     isw*isw      -9.6% of the step on   4.6% of the oscillation  => leverage -2.07x
+<   [PASS] ⛭⛭ BUT THE LEVERAGE IS NOT FLAT, AND THAT IS WHAT THE NULL LEAVES STANDING: the two highest-leverage terms BOTH carry a Doppler factor, and they exceed every term without one by a wide margin   (sw*dp 5.59x and dp*dp 3.80x against the best non-Doppler sw*isw 1.23x)
+<   [PASS] AND THE MONOPOLE CARRIES THE OSCILLATION WITHOUT CARRYING THE STEP, which is what makes the leverage the readable quantity rather than the share   (`sw*sw` is 88% of the oscillation at 0.72x leverage)
+<   [PASS] ⚠ AND THE EXCEPTION IS NAMED RATHER THAN DROPPED: a Doppler-bearing term has NEGATIVE leverage, so the claim is "the two highest-leverage terms are Doppler" and NOT "every Doppler term leads"; and the ordering is not Doppler-versus-not, since a term without a Doppler factor sits lower still   (`dp*isw` -0.91x, and `isw*isw` lower still at -2.07x)
+---
+>     isw*isw      -9.6% of the step on   4.6% of the oscillation  => leverage -2.08x
+>   [PASS] ⛭⛭ BUT THE LEVERAGE IS NOT FLAT, AND THAT IS WHAT THE NULL LEAVES STANDING: the two highest-leverage terms BOTH carry a Doppler factor, and they exceed every term without one by a wide margin   (sw*dp 5.53x and dp*dp 3.79x against the best non-Doppler sw*isw 1.24x)
+>   [PASS] AND THE MONOPOLE CARRIES THE OSCILLATION WITHOUT CARRYING THE STEP, which is what makes the leverage the readable quantity rather than the share   (`sw*sw` is 88% of the oscillation at 0.71x leverage)
+>   [PASS] ⚠ AND THE EXCEPTION IS NAMED RATHER THAN DROPPED: a Doppler-bearing term has NEGATIVE leverage, so the claim is "the two highest-leverage terms are Doppler" and NOT "every Doppler term leads"; and the ordering is not Doppler-versus-not, since a term without a Doppler factor sits lower still   (`dp*isw` -0.91x, and `isw*isw` lower still at -2.08x)
+113,117c113,117
+<     the ONE departure, in excess units: -0.0323   (band 1's excess +0.0215 against its own trend's +0.0538)
+<       (i)  of the EXCESS's own size:        -0.601
+<       (ii) of the control's contrast step:  -0.100   (of the arm's: -0.110)
+<   [PASS] ⌗ AND THE TWO NORMALISATIONS ARE ONE DEPARTURE UNDER TWO DENOMINATORS, NOT TWO FINDINGS -- which is provable rather than asserted: the arms' own log-departures DIFFER BY that same number   (the arms differ by -0.0308 against the excess's -0.0323, 4.6 per cent apart)
+<   [PASS] ⇒ AND THAT IS WHY THE TWO READINGS OF THE SAME STEP LOOK SO DIFFERENT: the excess's own size and either arm's contrast departure differ by about an order of magnitude, so the SAME departure reads as three fifths against one and a tenth against the other   (-0.601 against -0.100)
+---
+>     the ONE departure, in excess units: -0.0386   (band 1's excess +0.0186 against its own trend's +0.0572)
+>       (i)  of the EXCESS's own size:        -0.675
+>       (ii) of the control's contrast step:  -0.119   (of the arm's: -0.132)
+>   [FAIL] ⌗ AND THE TWO NORMALISATIONS ARE ONE DEPARTURE UNDER TWO DENOMINATORS, NOT TWO FINDINGS -- which is provable rather than asserted: the arms' own log-departures DIFFER BY that same number   (got the arms differ by -0.0325 against the excess's -0.0386, 15.9 per cent apart)
+>   [PASS] ⇒ AND THAT IS WHY THE TWO READINGS OF THE SAME STEP LOOK SO DIFFERENT: the excess's own size and either arm's contrast departure differ by about an order of magnitude, so the SAME departure reads as three fifths against one and a tenth against the other   (-0.675 against -0.119)
+121,122c121,127
+< GATES: ALL PASS
+< rc=0
+---
+> GATES: 5 FAILED:
+>   - ⇒ *** AND THE STEP SURVIVES IT: band 1 departs from its own bands 2--7 trend with the SAME SIGN on all four trend bases AND on both abscissas, above the bands 2--7 scatter throughout ***
+>   - AND IT SURVIVES AT A SIZE COMPARABLE TO THE PRESENT ROUTE'S rather than collapsing toward zero, which is what the order asked to be tested
+>   - AND THE TWO ABSCISSAS AGREE, so the pairing is not what produces it -- which is the pre-registration's middle row NOT firing
+>   - ⌗ AND THE SMOOTHED-DIVISOR CONTROL SHOWS IT IS THE **DIFFERENCING** AND NOT THE **DIVISION** THAT PRODUCES THE NEGATIVE STEP: remove the differencing by dividing by a smoothed control and the departure turns POSITIVE, back toward the arms' own positive step
+>   - ⌗ AND THE TWO NORMALISATIONS ARE ONE DEPARTURE UNDER TWO DENOMINATORS, NOT TWO FINDINGS -- which is provable rather than asserted: the arms' own log-departures DIFFER BY that same number
+> rc=1

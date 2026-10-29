@@ -1,0 +1,128 @@
+90,91c90,91
+<     cr     chi2 =   292.42 over 185 bins = 1.581/bin   (refit reported 292.42)
+<   [PASS] the banked spectra reproduce the refit's own chi^2 to 0.05 -- so this is the refit's pipeline and not a new one
+---
+>     cr     chi2 =   297.67 over 185 bins = 1.609/bin   (refit reported 292.42)
+>   [FAIL] the banked spectra reproduce the refit's own chi^2 to 0.05 -- so this is the refit's pipeline and not a new one
+102,106c102,106
+<   cr:  chi2 = 282.96 over 179 bins (1.581/bin),  A(cov) = 12829.69,  A(diag) = 12936.54  (+0.833%)
+<     band mean, covariance amplitude, diagonal sigma :  -0.61  -0.07  +0.33  +0.54  -1.06  -0.36
+<     band mean, covariance amplitude, WHITENED       :  -0.63  -0.08  +0.35  +0.55  -0.99  +0.02
+<     band mean, DIAGONAL amplitude, diagonal sigma   :  -0.34  +0.31  +0.79  +1.08  -0.51  +0.19
+<     band rms,  covariance amplitude, diagonal sigma :   0.78   0.92   1.12   0.82   1.07   1.39
+---
+>   cr:  chi2 = 286.89 over 179 bins (1.603/bin),  A(cov) = 13583.48,  A(diag) = 13704.64  (+0.892%)
+>     band mean, covariance amplitude, diagonal sigma :  -0.69  -0.09  +0.32  +0.58  -1.07  -0.45
+>     band mean, covariance amplitude, WHITENED       :  -0.71  -0.10  +0.34  +0.58  -0.99  -0.07
+>     band mean, DIAGONAL amplitude, diagonal sigma   :  -0.41  +0.31  +0.82  +1.15  -0.49  +0.14
+>     band rms,  covariance amplitude, diagonal sigma :   0.79   0.93   1.14   0.84   1.05   1.45
+111c111
+<   [PASS] the SWING reproduces -- band 4 positive and band 5 negative on the arm, the shape the order reports -- so the feature is real and not the render's   (band4 = +0.54, band5 = -1.06)
+---
+>   [PASS] the SWING reproduces -- band 4 positive and band 5 negative on the arm, the shape the order reports -- so the feature is real and not the render's   (band4 = +0.58, band5 = -1.07)
+113,114c113,114
+<   [PASS] ** the AMPLITUDE METRIC accounts for about half the render's inflation **: fitting the amplitude on diagonal errors puts the arm 0.83% high and roughly doubles band 4, against the render's +1.46   (band4 +0.54 (cov) -> +1.08 (diag), render +1.46)
+<   [PASS] the scatter grows with ell, as the order reports   (rms 0.78 -> 1.39)
+---
+>   [PASS] ** the AMPLITUDE METRIC accounts for about half the render's inflation **: fitting the amplitude on diagonal errors puts the arm 0.83% high and roughly doubles band 4, against the render's +1.46   (band4 +0.58 (cov) -> +1.15 (diag), render +1.46)
+>   [PASS] the scatter grows with ell, as the order reports   (rms 0.79 -> 1.45)
+118,126c118,126
+<     |w_CR| =  16.82      |w_control| =  13.34
+<     cosine between the two whitened residual vectors : +0.8549
+<     fraction of the ARM's chi^2 along the CONTROL's direction : 73.1%
+<     what is left once that direction is projected out : 76.2 of 283.0
+<   [PASS] ** THREE QUARTERS OF THE ARM'S RESIDUAL LIES ALONG THE CONTROL'S **, so on the order's own criterion it is the transfer's and not the construction's   (73.1% at cos +0.855)
+<     bin cut 100-1996: shared fraction 73.7%
+<     bin cut 100-1500: shared fraction 72.5%
+<     bin cut 200-1900: shared fraction 73.6%
+<   [PASS] ...and the shared fraction does not depend on the bin cut, staying near three quarters across three of them   (73.6% against 73.1%)
+---
+>     |w_CR| =  16.94      |w_control| =  13.34
+>     cosine between the two whitened residual vectors : +0.8476
+>     fraction of the ARM's chi^2 along the CONTROL's direction : 71.8%
+>     what is left once that direction is projected out : 80.8 of 286.9
+>   [PASS] ** THREE QUARTERS OF THE ARM'S RESIDUAL LIES ALONG THE CONTROL'S **, so on the order's own criterion it is the transfer's and not the construction's   (71.8% at cos +0.848)
+>     bin cut 100-1996: shared fraction 72.3%
+>     bin cut 100-1500: shared fraction 70.9%
+>     bin cut 200-1900: shared fraction 72.7%
+>   [PASS] ...and the shared fraction does not depend on the bin cut, staying near three quarters across three of them   (72.7% against 71.8%)
+136,143c136,143
+<   cr:  amplitude only  chi2 =  282.96
+<     + peak-position rescale eps  best   -0.00075   dchi2 =   +4.68
+<     + tilt dn_s                  best   -0.00125   dchi2 =   +0.09
+<     + damping-shape fac          best   +0.01688   dchi2 =   +1.36
+<   [PASS] ** ON THE ARM THE POSITION DIRECTION IS THE LARGEST OF THE THREE **, three times the damping and fifty times the tilt   (eps +4.68, fac +1.36, dns +0.09)
+<   [PASS] ** AND ON THE CONTROL IT BUYS NOTHING **, so the position piece is the construction's rather than shared   (control +0.00 against the arm's +4.68)
+<   [PASS] the TILT is exhausted -- the refit already spent it, and a one-per-cent tilt costs chi^2 rather than buying it   (best dchi2 +0.09; dn_s = +0.01 costs +11.2)
+<   [PASS] ** but the position piece is SMALL **: eps = -7.5e-4 is 0.075 per cent in ell, and dchi^2 = 4.7 of 283 is under two per cent of the misfit -- so it is not the explanation either   (1.7% of the misfit; eps = -7.50e-04 is 0.8 in ell at the fourth peak)
+---
+>   cr:  amplitude only  chi2 =  286.89
+>     + peak-position rescale eps  best   +0.00050   dchi2 =   +1.67
+>     + tilt dn_s                  best   -0.00250   dchi2 =   +0.43
+>     + damping-shape fac          best   +0.01500   dchi2 =   +1.12
+>   [FAIL] ** ON THE ARM THE POSITION DIRECTION IS THE LARGEST OF THE THREE **, three times the damping and fifty times the tilt   (got eps +1.67, fac +1.12, dns +0.43)
+>   [FAIL] ** AND ON THE CONTROL IT BUYS NOTHING **, so the position piece is the construction's rather than shared   (got control +0.00 against the arm's +1.67)
+>   [PASS] the TILT is exhausted -- the refit already spent it, and a one-per-cent tilt costs chi^2 rather than buying it   (best dchi2 +0.43; dn_s = +0.01 costs +13.4)
+>   [PASS] ** but the position piece is SMALL **: eps = -7.5e-4 is 0.075 per cent in ell, and dchi^2 = 4.7 of 283 is under two per cent of the misfit -- so it is not the explanation either   (0.6% of the misfit; eps = 5.00e-04 is 0.6 in ell at the fourth peak)
+147c147
+<   [PASS] the figure's banked numbers exist -- corpus/make_fig_acoustic_two_arm.py has been run   (/home/user/shadow-of-existence/computations/beyond_the_wall/spectra/cc66_fig_acoustic_numbers.npz)
+---
+>   [PASS] the figure's banked numbers exist -- corpus/make_fig_acoustic_two_arm.py has been run   (/tmp/claude-0/-home-user-shadow-of-existence/4913e7eb-3c04-585c-bc52-ac1b69fc5eb8/scratchpad/wt/computations/beyond_the_wall/spectra/cc66_fig_acoustic_numbers.npz)
+149c149
+<     cr_chi2                      figure    282.95613   receipt    282.95613   OK
+---
+>     cr_chi2                      figure    282.95613   receipt    286.89412   MISMATCH
+151,155c151,155
+<     cr_A                         figure  12829.68703   receipt  12829.68703   OK
+<     shared_frac                  figure      0.73081   receipt      0.73081   OK
+<     shared_cos                   figure      0.85487   receipt      0.85487   OK
+<     cr_chi2_minus_control_dir    figure     76.16896   receipt     76.16896   OK
+<   [PASS] every headline number the figure plots is reproduced here independently from the banked spectra, so the figure and this receipt cannot drift apart
+---
+>     cr_A                         figure  12829.68703   receipt  13583.48307   MISMATCH
+>     shared_frac                  figure      0.73081   receipt      0.71847   MISMATCH
+>     shared_cos                   figure      0.85487   receipt      0.84763   MISMATCH
+>     cr_chi2_minus_control_dir    figure     76.16896   receipt     80.76949   MISMATCH
+>   [FAIL] every headline number the figure plots is reproduced here independently from the banked spectra, so the figure and this receipt cannot drift apart
+163,165c163,165
+<   1. ** 73 PER CENT OF THE ARM'S RESIDUAL IS THE CONTROL'S. **  Whitened against the full
+<      covariance the two residual vectors sit at cosine +0.855, and projecting the control's
+<      direction out of the arm's leaves 76.2 of 283.0.  On the order's own
+---
+>   1. ** 72 PER CENT OF THE ARM'S RESIDUAL IS THE CONTROL'S. **  Whitened against the full
+>      covariance the two residual vectors sit at cosine +0.848, and projecting the control's
+>      direction out of the arm's leaves 80.8 of 286.9.  On the order's own
+169,171c169,171
+<      A peak-position rescale buys +4.68 on the arm and +0.00 on the
+<      control; a tilt buys +0.09 and costs +11.2 at one per cent, the
+<      refit having already spent it; the damping buys +1.36.  ** So the answer to the
+---
+>      A peak-position rescale buys +1.67 on the arm and +0.00 on the
+>      control; a tilt buys +0.43 and costs +13.4 at one per cent, the
+>      refit having already spent it; the damping buys +1.12.  ** So the answer to the
+174,176c174,176
+<   3. ** BUT IT IS SMALL, AND THAT IS THE PART NOT TO OVERSELL. **  eps = -7.5e-04 is
+<      0.8 multipoles at the fourth peak -- consistent with the +2.0 measured there at
+<      r6875+cc66.32 -- and 4.7 of 283 is under two per cent of the misfit.
+---
+>   3. ** BUT IT IS SMALL, AND THAT IS THE PART NOT TO OVERSELL. **  eps = 5.0e-04 is
+>      0.6 multipoles at the fourth peak -- consistent with the +2.0 measured there at
+>      r6875+cc66.32 -- and 1.7 of 287 is under two per cent of the misfit.
+186,199c186,187
+< GATES: ALL PASS.
+< 
+< ESTABLISHED: the banked refit spectra reproduce the refit's own chi^2 (186.51 and 292.42 over 185
+< bins); the residual swing the order reports is real and reproduces in shape on both arms while its
+< amplitude is about a third of the quick render's, the amplitude metric accounting for about half of
+< that; 73 per cent of the arm's chi^2 lies along the control's residual direction (cosine +0.855),
+< so most of it is the transfer's and not the construction's; and of the rest a peak-position rescale
+< is the largest of the three single-parameter directions (+4.68 against +1.36 for damping and
+< +0.09 for tilt) and buys nothing at all on the control -- position rather than amplitude, and
+< under two per cent of the misfit.
+< NOT CLAIMED: a mechanism for the bulk of the misfit; a re-derivation of the refit minima; anything
+< about the low-multipole floor's score.
+< 
+< rc=0
+---
+> GATES: 9 FAILED -> the banked spectra reproduce the refit's own chi^2 to 0.05 -- so this is the refit's pipeline and not a new one; ** ON THE ARM THE POSITION DIRECTION IS THE LARGEST OF THE THREE **, three times the damping and fifty times the tilt; ** AND ON THE CONTROL IT BUYS NOTHING **, so the position piece is the construction's rather than shared; figure/receipt mismatch on cr_chi2; figure/receipt mismatch on cr_A; figure/receipt mismatch on shared_frac; figure/receipt mismatch on shared_cos; figure/receipt mismatch on cr_chi2_minus_control_dir; every headline number the figure plots is reproduced here independently from the banked spectra, so the figure and this receipt cannot drift apart
+> rc=1

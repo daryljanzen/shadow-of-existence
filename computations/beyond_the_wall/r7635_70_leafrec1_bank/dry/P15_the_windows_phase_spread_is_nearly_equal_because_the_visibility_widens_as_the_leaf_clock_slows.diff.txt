@@ -1,0 +1,143 @@
+145c145
+<   [PASS] the control's `Jac` is identically 1 across the window and the arm's is not -- the two-clock structure is present in the measurement and is not assumed   (lcdm 1.0000, cr 0.7893..0.9126 over +-3 FWHM)
+---
+>   [PASS] the control's `Jac` is identically 1 across the window and the arm's is not -- the two-clock structure is present in the measurement and is not assumed   (lcdm 1.0000, cr 0.7879..0.9114 over +-3 FWHM)
+148,163c148,163
+<   q=1.20      0.06938 -> 0.06862       0.96653  0.96728     0.1837 -> 0.2171
+<   q=1.90      0.06817 -> 0.06713       0.92194  0.92442     0.3417 -> 0.4100
+<   q=2.60      0.06685 -> 0.06584       0.86300  0.86708     0.3739 -> 0.4323
+<   q=3.30      0.06030 -> 0.05916       0.82476  0.83109     0.4432 -> 0.5057
+<   q=4.00      0.05973 -> 0.05865       0.77191  0.78048     0.5994 -> 0.6597
+<   q=4.70      0.05489 -> 0.05381       0.73339  0.74462     0.5768 -> 0.6408
+<   q=5.40      0.05265 -> 0.05163       0.67993  0.69118     0.5320 -> 0.5875
+< 
+<   band-summed: the control 0.06523 of its r_s, the arm 0.06424 of its -- the arm is 1.52 per cent the narrower
+<   and the reason: the arm's visibility is +14.6 per cent wider in eta (43.59 against 38.04) while its phase accumulates -13.7 per cent slower per unit of it (0.39334 against 0.45572)
+<   [PASS] the arm's window is WIDER in conformal time -- by more than ten per cent   (1.1459)
+<   [PASS] and its phase accumulates SLOWER per unit conformal time by nearly the same factor, so the product -- the spread the smearing reads -- is nearly invariant   (product ratio 0.9890)
+<   [PASS] so the arm is the narrower of the two in the phase variable, but by under three per cent   (1.52 per cent)
+<   [PASS] the arm carries MORE of its window's power in the monopole than the control does, in every band -- the term mix is where a normalisation difference that is NOT a smearing lives   (0.1837->0.2171 .. 0.5320->0.5875)
+<   [PASS] and correspondingly less in the Doppler, so the two exchange weight rather than one growing   (0.7901->0.7600)
+<   [PASS] the ISW is under one per cent of the window's power on both arms, so the window statistic is not carrying the term that lives outside it   (max 0.0046)
+---
+>   q=1.20      0.06938 -> 0.06899       0.96653  0.96694     0.1837 -> 0.2182
+>   q=1.90      0.06817 -> 0.06754       0.92194  0.92355     0.3417 -> 0.4090
+>   q=2.60      0.06685 -> 0.06574       0.86300  0.86752     0.3739 -> 0.4458
+>   q=3.30      0.06030 -> 0.05945       0.82476  0.82956     0.4432 -> 0.4983
+>   q=4.00      0.05973 -> 0.05904       0.77191  0.77813     0.5994 -> 0.6589
+>   q=4.70      0.05489 -> 0.05339       0.73339  0.74846     0.5768 -> 0.6579
+>   q=5.40      0.05265 -> 0.05190       0.67993  0.68892     0.5320 -> 0.5789
+> 
+>   band-summed: the control 0.06523 of its r_s, the arm 0.06447 of its -- the arm is 1.16 per cent the narrower
+>   and the reason: the arm's visibility is +15.5 per cent wider in eta (43.96 against 38.04) while its phase accumulates -14.0 per cent slower per unit of it (0.39178 against 0.45572)
+>   [PASS] the arm's window is WIDER in conformal time -- by more than ten per cent   (1.1555)
+>   [PASS] and its phase accumulates SLOWER per unit conformal time by nearly the same factor, so the product -- the spread the smearing reads -- is nearly invariant   (product ratio 0.9934)
+>   [PASS] so the arm is the narrower of the two in the phase variable, but by under three per cent   (1.16 per cent)
+>   [PASS] the arm carries MORE of its window's power in the monopole than the control does, in every band -- the term mix is where a normalisation difference that is NOT a smearing lives   (0.1837->0.2182 .. 0.5320->0.5789)
+>   [PASS] and correspondingly less in the Doppler, so the two exchange weight rather than one growing   (0.7901->0.7587)
+>   [PASS] the ISW is under one per cent of the window's power on both arms, so the window statistic is not carrying the term that lives outside it   (max 0.0047)
+168,186c168,186
+<   q=1.20        1.00078              [1.00078, 1.00156]      1.02148
+<   q=1.90        1.00269              [1.00269, 1.00538]      1.05740
+<   q=2.60        1.00472              [1.00472, 1.00947]      1.05193
+<   q=3.30        1.00768              [1.00768, 1.01542]      1.06064
+<   q=4.00        1.01111              [1.01111, 1.02234]      1.07484
+<   q=4.70        1.01531              [1.01531, 1.03085]      1.06592
+<   q=5.40        1.01654              [1.01654, 1.03335]      1.07621
+<   [PASS] the measured excess is this campaign's own, recomputed here from `r6941_fine_*` rather than quoted -- and it reproduces `cc66.46`'s seven band ratios   (1.0215  1.0574  1.0519  1.0606  1.0748  1.0659  1.0762)
+<   [PASS] ⓵ᶜ R5 THE SIGN SURVIVES: the arm is the LESS smeared of the two in every band, which is the direction a 6 per cent excess needs   (R1 = 1.00078 .. 1.01654)
+<   [PASS] ⛔ ⓵ᶜ R2 FIRES -- THE SIZE: the predicted log-excess at the top band is under half the measured one, which `PREDICTION.md` fixed in advance as the refutation bar   (ln R1 0.01640 against measured 0.07345, ratio 0.223, bar [0.5, 2])
+<   [PASS] and it under-delivers rather than over-delivers, so it is NOT `cc66.40`'s failure repeating   (4.48x short)
+<   [PASS] the shortfall is worst at the bottom of the band, where a smearing has almost nothing to give   (q=1.20: 0.0367 of the measured)
+< 
+<   ln(excess) against q^2 -- measured: slope 0.001349, intercept 0.039244 (1.0400 at q=0);  predicted: slope 0.000591, intercept 0.000754
+<   [PASS] ⛔ ⓵ᶜ R1 FIRES -- THE SHAPE: the measured excess extrapolates to a NON-ZERO offset at q=0, worth more than half the top band's, and a characteristic function is identically 1 there   (intercept 0.039244 is 0.534 of the top band's 0.07345)
+<   [PASS] the prediction's own intercept is two orders down, as a smearing's must be -- so the offset is not a shared systematic of the fit   (0.000754 against 0.039244)
+<   [PASS] and the q^2 SLOPE is the half that does survive: the prediction supplies a fifth to a half of it, not a hundredth   (0.438 of the measured slope)
+<   [PASS] the window cut is not load-bearing: R1 moves by under two thousandths across +-2 to +-6 FWHM, which is a twentieth of the shortfall it would have to explain   (max spread 1.01e-03 against the 0.0597 it is short by)
+<   [PASS] nor is the weight's term choice: on the monopole ALONE -- one phase rather than two -- the prediction is SMALLER still, so the conclusion does not rest on including the Doppler   (monopole-only top band 1.01107 against 1.01654)
+---
+>   q=1.20        1.00043              [1.00043, 1.00085]      1.01861
+>   q=1.90        1.00175              [1.00175, 1.00350]      1.08182
+>   q=2.60        1.00524              [1.00524, 1.01051]      1.03734
+>   q=3.30        1.00583              [1.00583, 1.01169]      1.08677
+>   q=4.00        1.00806              [1.00806, 1.01618]      1.10045
+>   q=4.70        1.02054              [1.02054, 1.04151]      1.01409
+>   q=5.40        1.01322              [1.01322, 1.02662]      1.16166
+>   [FAIL] the measured excess is this campaign's own, recomputed here from `r6941_fine_*` rather than quoted -- and it reproduces `cc66.46`'s seven band ratios   (got 1.0186  1.0818  1.0373  1.0868  1.1005  1.0141  1.1617)
+>   [PASS] ⓵ᶜ R5 THE SIGN SURVIVES: the arm is the LESS smeared of the two in every band, which is the direction a 6 per cent excess needs   (R1 = 1.00043 .. 1.02054)
+>   [PASS] ⛔ ⓵ᶜ R2 FIRES -- THE SIZE: the predicted log-excess at the top band is under half the measured one, which `PREDICTION.md` fixed in advance as the refutation bar   (ln R1 0.01313 against measured 0.14985, ratio 0.088, bar [0.5, 2])
+>   [PASS] and it under-delivers rather than over-delivers, so it is NOT `cc66.40`'s failure repeating   (11.41x short)
+>   [PASS] the shortfall is worst at the bottom of the band, where a smearing has almost nothing to give   (q=1.20: 0.0231 of the measured)
+> 
+>   ln(excess) against q^2 -- measured: slope 0.002511, intercept 0.035803 (1.0365 at q=0);  predicted: slope 0.000588, intercept 0.000261
+>   [FAIL] ⛔ ⓵ᶜ R1 FIRES -- THE SHAPE: the measured excess extrapolates to a NON-ZERO offset at q=0, worth more than half the top band's, and a characteristic function is identically 1 there   (got intercept 0.035803 is 0.239 of the top band's 0.14985)
+>   [PASS] the prediction's own intercept is two orders down, as a smearing's must be -- so the offset is not a shared systematic of the fit   (0.000261 against 0.035803)
+>   [PASS] and the q^2 SLOPE is the half that does survive: the prediction supplies a fifth to a half of it, not a hundredth   (0.234 of the measured slope)
+>   [PASS] the window cut is not load-bearing: R1 moves by under two thousandths across +-2 to +-6 FWHM, which is a twentieth of the shortfall it would have to explain   (max spread 5.99e-04 against the 0.1484 it is short by)
+>   [PASS] nor is the weight's term choice: on the monopole ALONE -- one phase rather than two -- the prediction is SMALLER still, so the conclusion does not rest on including the Doppler   (monopole-only top band 1.00678 against 1.01322)
+190c190
+<   [PASS] the swap's coefficient is the one the MEASUREMENT fixes: it takes the control's band-summed spread to the arm's, in units of each arm's own r_s   (SRCTAPER=0.000110088 gives 0.06424 against the arm's 0.06424)
+---
+>   [FAIL] the swap's coefficient is the one the MEASUREMENT fixes: it takes the control's band-summed spread to the arm's, in units of each arm's own r_s   (got SRCTAPER=0.000110088 gives 0.06424 against the arm's 0.06447)
+215,225c215,225
+<   q=1.20       1.09 per cent           1.24 per cent        1.01883 against 1.02148  ->   87.7 per cent
+<   q=1.90       1.53 per cent           5.58 per cent        1.01462 against 1.05740  ->   25.5 per cent
+<   q=2.60       1.51 per cent           3.59 per cent        1.02103 against 1.05193  ->   40.5 per cent
+<   q=3.30       1.89 per cent           5.05 per cent        1.02156 against 1.06064  ->   35.6 per cent
+<   q=4.00       1.81 per cent           7.16 per cent        1.01688 against 1.07484  ->   22.6 per cent
+<   q=4.70       1.97 per cent           4.90 per cent        1.02417 against 1.06592  ->   36.7 per cent
+<   q=5.40       1.95 per cent           4.01 per cent        1.03391 against 1.07621  ->   44.5 per cent
+< 
+<   mean over the bands: 1.68 per cent available against 4.51 needed -- a factor 2.69
+<   [PASS] ⛭ THE CHANNEL CARRIES A DEFINITE, NON-TRIVIAL SHARE: through the instrument's own two-coefficient response, the arm's own window narrowing delivers between a fifth and a half of the band excess everywhere above q=1.9   (shares 25%  40%  36%  23%  37%  44%)
+<   [PASS] and the narrowing that would deliver ALL of it is a factor of a few above what the arm has, not an order of magnitude   (4.51 against 1.68 per cent)
+---
+>   q=1.20       0.56 per cent           1.08 per cent        1.00948 against 1.01861  ->   50.9 per cent
+>   q=1.90       0.93 per cent           7.66 per cent        1.00879 against 1.08182  ->   10.7 per cent
+>   q=2.60       1.66 per cent           2.62 per cent        1.02316 against 1.03734  ->   62.0 per cent
+>   q=3.30       1.41 per cent           7.03 per cent        1.01603 against 1.08677  ->   18.5 per cent
+>   q=4.00       1.16 per cent           9.21 per cent        1.01066 against 1.10045  ->   10.6 per cent
+>   q=4.70       2.72 per cent           1.18 per cent        1.03427 against 1.01409  ->  243.3 per cent
+>   q=5.40       1.43 per cent           7.47 per cent        1.02444 against 1.16166  ->   15.1 per cent
+> 
+>   mean over the bands: 1.41 per cent available against 5.18 needed -- a factor 3.67
+>   [FAIL] ⛭ THE CHANNEL CARRIES A DEFINITE, NON-TRIVIAL SHARE: through the instrument's own two-coefficient response, the arm's own window narrowing delivers between a fifth and a half of the band excess everywhere above q=1.9   (got shares 11%  62%  18%  11%  243%  15%)
+>   [PASS] and the narrowing that would deliver ALL of it is a factor of a few above what the arm has, not an order of magnitude   (5.18 against 1.41 per cent)
+228,230c228,230
+<     0.99478  1.03843  1.03195  1.04828  1.05864  1.05095  1.06046   against the measured 1.02148  1.05740  1.05193  1.06064  1.07484  1.06592  1.07621
+<   [PASS] ⛭ THE TWO ROUTES AGREE: imposing the arm's spread on the control closes a fifth to two fifths of the excess above q=1.9, which is the share the inversion gives by a different road   (closed 33%  38%  20%  22%  23%  21%)
+<   [PASS] ⌗ and the lowest band is the one the inversion cannot be trusted in, which is stated rather than averaged away: there the swap OVERSHOOTS, taking the excess below unity   (q=1.20 excess 0.99478, closed fraction 1.243)
+---
+>     0.99199  1.06241  1.01764  1.07410  1.08386  0.99984  1.14467   against the measured 1.01861  1.08182  1.03734  1.08677  1.10045  1.01409  1.16166
+>   [FAIL] ⛭ THE TWO ROUTES AGREE: imposing the arm's spread on the control closes a fifth to two fifths of the excess above q=1.9, which is the share the inversion gives by a different road   (got closed 24%  53%  15%  17%  101%  11%)
+>   [PASS] ⌗ and the lowest band is the one the inversion cannot be trusted in, which is stated rather than averaged away: there the swap OVERSHOOTS, taking the excess below unity   (q=1.20 excess 0.99199, closed fraction 1.431)
+240c240
+<     the arm's own        +1.605    -0.186    +1.067    +1.308
+---
+>     the arm's own        +1.696    -0.445    +0.696    +0.518
+243c243
+<   [PASS] ⌗ and the arm-sized swap OVERSHOOTS l_1 rather than reproducing it: it moves l_1 further than the arm sits from the control, and past the sky's width there, while l_2, l_3 and l_4 stay inside   (l_1 +2.827 against the arm's +1.605 and a width of 1.00)
+---
+>   [PASS] ⌗ and the arm-sized swap OVERSHOOTS l_1 rather than reproducing it: it moves l_1 further than the arm sits from the control, and past the sky's width there, while l_2, l_3 and l_4 stay inside   (l_1 +2.827 against the arm's +1.696 and a width of 1.00)
+245c245
+<     control troughs 0.36952 heights 0.16853;  arm troughs 0.37904 (+2.58 per cent) heights 0.17807 (+5.66)
+---
+>     control troughs 0.36952 heights 0.16853;  arm troughs 0.37967 (+2.75 per cent) heights 0.17924 (+6.35)
+249,250c249,250
+<   ⛔ the arm-sized swap delivers 81 per cent of the arm's peak-HEIGHT excess and 14 per cent of its trough-DEPTH excess
+<   [PASS] ⛔ AND THAT REFUTES IT ON ITS OWN, FROM 66's OWN PREVIOUS REVISION: `cc66.46` measured the excess SYMMETRIC about the envelope (1.0668 peak side against 1.0561 trough side), and this channel is peak-weighted by more than a factor of five -- so a symmetric excess cannot be carried by it alone, whatever its size   (heights 81 per cent against depths 14 -- 5.7-fold asymmetry)
+---
+>   ⛔ the arm-sized swap delivers 72 per cent of the arm's peak-HEIGHT excess and 13 per cent of its trough-DEPTH excess
+>   [PASS] ⛔ AND THAT REFUTES IT ON ITS OWN, FROM 66's OWN PREVIOUS REVISION: `cc66.46` measured the excess SYMMETRIC about the envelope (1.0668 peak side against 1.0561 trough side), and this channel is peak-weighted by more than a factor of five -- so a symmetric excess cannot be carried by it alone, whatever its size   (heights 72 per cent against depths 13 -- 5.4-fold asymmetry)
+255,256c255,261
+< GATES: ALL PASS
+< rc=0
+---
+> GATES: 5 FAILED:
+>   - the measured excess is this campaign's own, recomputed here from `r6941_fine_*` rather than quoted -- and it reproduces `cc66.46`'s seven band ratios
+>   - ⛔ ⓵ᶜ R1 FIRES -- THE SHAPE: the measured excess extrapolates to a NON-ZERO offset at q=0, worth more than half the top band's, and a characteristic function is identically 1 there
+>   - the swap's coefficient is the one the MEASUREMENT fixes: it takes the control's band-summed spread to the arm's, in units of each arm's own r_s
+>   - ⛭ THE CHANNEL CARRIES A DEFINITE, NON-TRIVIAL SHARE: through the instrument's own two-coefficient response, the arm's own window narrowing delivers between a fifth and a half of the band excess everywhere above q=1.9
+>   - ⛭ THE TWO ROUTES AGREE: imposing the arm's spread on the control closes a fifth to two fifths of the excess above q=1.9, which is the share the inversion gives by a different road
+> rc=1
