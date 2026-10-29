@@ -1,0 +1,76 @@
+112c112
+<   [PASS] the measured excess is recomputed here from `r6941_fine_*` and reproduces `cc66.46`'s seven band ratios   (1.0215  1.0574  1.0519  1.0606  1.0748  1.0659  1.0762)
+---
+>   [FAIL] the measured excess is recomputed here from `r6941_fine_*` and reproduces `cc66.46`'s seven band ratios   (got 1.0186  1.0818  1.0373  1.0868  1.1005  1.0141  1.1617)
+121,122c121,122
+<   variation statistic by envelope window: mean 0.8 -> 0.444,  mean 1.0 -> 0.442,  mean 1.2 -> 0.401
+<   [PASS] ⓷c the excess's RISE survives the mean-envelope window, far above that bias   (0.444  0.442  0.401)
+---
+>   variation statistic by envelope window: mean 0.8 -> 0.720,  mean 1.0 -> 0.901,  mean 1.2 -> 1.066
+>   [FAIL] ⓷c the excess's RISE survives the mean-envelope window, far above that bias   (got 0.720  0.901  1.066)
+127,139c127,139
+<   F0 constant            chi2 =   12.16  nu = 6  chi2/nu =  2.03
+<   F1 linear in q^2       chi2 =   27.99  nu = 6  chi2/nu =  4.66
+<   F2 power law           chi2 =    2.72  nu = 5  chi2/nu =  0.54
+<   F3 logarithm           chi2 =    6.15  nu = 6  chi2/nu =  1.02
+<   F4 turnover            chi2 =    1.73  nu = 5  chi2/nu =  0.35
+<   F5 sat. exponential    chi2 =    2.17  nu = 5  chi2/nu =  0.43
+<   [PASS] ⛔⛭⛭ ⓵ THE RISE LINEAR IN q^2 IS EXCLUDED -- and it is the parametrisation cc66.47, cc66.48 and cc66.49 all quote their variation statistic in.  THE EXCESS DECELERATES WITH WAVENUMBER   (chi^2/nu = 4.66 against the pre-registered exclusion bar of 3)
+<   [PASS] and it is the ONLY form excluded, so this is a statement about curvature and not a cull   (1 of 6 excluded)
+<   [PASS] ⓵ AND NO FORM IS PREFERRED, on the pre-registered margin of 4   (best F4 turnover over next F5 sat. exponential by only 0.43)
+<   [PASS] the pre-registered NON-separation holds: F2 power law against F3 logarithm   (Delta chi^2 = 3.42)
+<   [PASS] the pre-registered NON-separation holds: F2 power law against F4 turnover   (Delta chi^2 = 0.99)
+<   [PASS] ⛔ ⓵ NO SCALE IS RESOLVED -- both scale-bearing forms put q0 with its uncertainty on the bottom edge of the measured range, and PREDICTION.md required it inside WITH its uncertainty   (turnover q0 = 1.64 +/- 0.52, exponential 2.52 +/- 1.50, range 1.20-5.40)
+<   [PASS] ⚠ ⓵ AND THE RISE IS A PREFERENCE AND NOT AN EXCLUSION OF FLATNESS, which are different claims: every rising form beats a constant by more than the margin, yet the constant's own chi^2/nu is under the exclusion bar   (Delta chi^2 over the constant 6.01 to 10.43; the constant itself chi^2/nu = 2.03)
+---
+>   F0 constant            chi2 =   98.03  nu = 6  chi2/nu = 16.34
+>   F1 linear in q^2       chi2 =   88.28  nu = 6  chi2/nu = 14.71
+>   F2 power law           chi2 =   71.37  nu = 5  chi2/nu = 14.27
+>   F3 logarithm           chi2 =   74.67  nu = 6  chi2/nu = 12.45
+>   F4 turnover            chi2 =   74.65  nu = 5  chi2/nu = 14.93
+>   F5 sat. exponential    chi2 =   71.83  nu = 5  chi2/nu = 14.37
+>   [PASS] ⛔⛭⛭ ⓵ THE RISE LINEAR IN q^2 IS EXCLUDED -- and it is the parametrisation cc66.47, cc66.48 and cc66.49 all quote their variation statistic in.  THE EXCESS DECELERATES WITH WAVENUMBER   (chi^2/nu = 14.71 against the pre-registered exclusion bar of 3)
+>   [FAIL] and it is the ONLY form excluded, so this is a statement about curvature and not a cull   (got 6 of 6 excluded)
+>   [PASS] ⓵ AND NO FORM IS PREFERRED, on the pre-registered margin of 4   (best F2 power law over next F5 sat. exponential by only 0.46)
+>   [PASS] the pre-registered NON-separation holds: F2 power law against F3 logarithm   (Delta chi^2 = 3.30)
+>   [PASS] the pre-registered NON-separation holds: F2 power law against F4 turnover   (Delta chi^2 = 3.28)
+>   [FAIL] ⛔ ⓵ NO SCALE IS RESOLVED -- both scale-bearing forms put q0 with its uncertainty on the bottom edge of the measured range, and PREDICTION.md required it inside WITH its uncertainty   (got turnover q0 = 2.29 +/- 0.55, exponential 18.83 +/- 44.31, range 1.20-5.40)
+>   [FAIL] ⚠ ⓵ AND THE RISE IS A PREFERENCE AND NOT AN EXCLUSION OF FLATNESS, which are different claims: every rising form beats a constant by more than the margin, yet the constant's own chi^2/nu is under the exclusion bar   (got Delta chi^2 over the constant 23.36 to 26.67; the constant itself chi^2/nu = 16.34)
+143,150c143,150
+<   the TARGET: departure grows by G = 3.55 across q = 1.20-5.40, curvature -0.00327
+<     source w2sw            G =  0.95   curvature -0.00858
+<     source w2dp            G =  1.00   curvature -0.00205
+<     source w2isw           G =  0.54   curvature -0.00132
+<     source w2pol           G =  0.96   curvature +0.00565
+<     source w2md            G =  0.87   curvature -0.00823
+<     source w2              G =  0.88   curvature -0.00799
+<     dipole/monopole        G =  1.08   curvature +0.00623
+---
+>   the TARGET: departure grows by G = 8.69 across q = 1.20-5.40, curvature +0.00342
+>     source w2sw            G =  1.03   curvature -0.01048
+>     source w2dp            G =  0.99   curvature -0.00147
+>     source w2isw           G =  0.73   curvature -0.00226
+>     source w2pol           G =  0.96   curvature +0.00602
+>     source w2md            G =  0.91   curvature -0.00870
+>     source w2              G =  0.92   curvature -0.00856
+>     dipole/monopole        G =  0.90   curvature +0.00967
+154,156c154,156
+<   [PASS] ⛭⛭⛭ ⓶ THE FILTER'S FIRST APPLICATION RETURNS EMPTY: every candidate already measured in this arm -- all six source terms, the dipole-to-monopole ratio, and all three measured channels -- fails the growth tooth, the largest reaching less than half of what the target needs   (largest G = 1.53 against the target's 3.55)
+<   [PASS] and the target's own curvature is negative, so the filter's second tooth is a real constraint and not a formality   (curvature -0.00327)
+<   [PASS] ⚠ AND THE ORDER'S NAMED CANDIDATE DISAGREES WITH THE REGISTER, WHICH IS NAMED AND NOT SETTLED: the register records the dipole-to-monopole ratio as two per cent ABOVE the control and rising; read from these profiles on the HIERARCHY path at each arm's own visibility peak it sits well below and is flat.  The register's reading may be the line-of-sight path or another definition, and which quantity it measured is owed before this candidate is closed   (amplitude ratio 0.8629 at the peak, departure growth G = 0.97)
+---
+>   [PASS] ⛭⛭⛭ ⓶ THE FILTER'S FIRST APPLICATION RETURNS EMPTY: every candidate already measured in this arm -- all six source terms, the dipole-to-monopole ratio, and all three measured channels -- fails the growth tooth, the largest reaching less than half of what the target needs   (largest G = 1.53 against the target's 8.69)
+>   [FAIL] and the target's own curvature is negative, so the filter's second tooth is a real constraint and not a formality   (got curvature +0.00342)
+>   [PASS] ⚠ AND THE ORDER'S NAMED CANDIDATE DISAGREES WITH THE REGISTER, WHICH IS NAMED AND NOT SETTLED: the register records the dipole-to-monopole ratio as two per cent ABOVE the control and rising; read from these profiles on the HIERARCHY path at each arm's own visibility peak it sits well below and is flat.  The register's reading may be the line-of-sight path or another definition, and which quantity it measured is owed before this candidate is closed   (amplitude ratio 0.8637 at the peak, departure growth G = 0.73)
+159,160c159,166
+< GATES: ALL PASS
+< rc=0
+---
+> GATES: 6 FAILED:
+>   - the measured excess is recomputed here from `r6941_fine_*` and reproduces `cc66.46`'s seven band ratios
+>   - ⓷c the excess's RISE survives the mean-envelope window, far above that bias
+>   - and it is the ONLY form excluded, so this is a statement about curvature and not a cull
+>   - ⛔ ⓵ NO SCALE IS RESOLVED -- both scale-bearing forms put q0 with its uncertainty on the bottom edge of the measured range, and PREDICTION.md required it inside WITH its uncertainty
+>   - ⚠ ⓵ AND THE RISE IS A PREFERENCE AND NOT AN EXCLUSION OF FLATNESS, which are different claims: every rising form beats a constant by more than the margin, yet the constant's own chi^2/nu is under the exclusion bar
+>   - and the target's own curvature is negative, so the filter's second tooth is a real constraint and not a formality
+> rc=1

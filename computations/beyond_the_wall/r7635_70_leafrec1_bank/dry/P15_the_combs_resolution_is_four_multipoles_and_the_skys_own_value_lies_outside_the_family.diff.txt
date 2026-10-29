@@ -1,0 +1,50 @@
+95c95
+<   [PASS] ⓹ and f=0 reproduces the banked REPORTED spectrum to the `KSLICE` sum's own rounding, which is this scan's provenance: the base of the family is the corpus's own arm   (relative max|dD_l| = 3.766e-16)
+---
+>   [FAIL] ⓹ and f=0 reproduces the banked REPORTED spectrum to the `KSLICE` sum's own rounding, which is this scan's provenance: the base of the family is the corpus's own arm   (got relative max|dD_l| = 6.066e-02)
+124,126c124,126
+<     the banked LSTEP=1 spectrum, sub-bin        : [221.956, 536.105, 815.398, 1130.531]
+<     the same data decimated to the LSTEP=8 grid : [221.953, 536.114, 815.381, 1130.508]
+<   [PASS] ⚑ the sub-bin locator recovers the FINE-GRID first peak from the coarse grid to better than a hundredth of a multipole, so the scan's abscissa is validated on the corpus's own bank before it is read   (l_1 differs by 0.0035, the worst of four by 0.023)
+---
+>     the banked LSTEP=1 spectrum, sub-bin        : [222.047, 535.846, 815.027, 1129.742]
+>     the same data decimated to the LSTEP=8 grid : [222.043, 535.853, 815.006, 1129.724]
+>   [PASS] ⚑ the sub-bin locator recovers the FINE-GRID first peak from the coarse grid to better than a hundredth of a multipole, so the scan's abscissa is validated on the corpus's own bank before it is read   (l_1 differs by 0.0034, the worst of four by 0.021)
+173,205c173,175
+< GATES: ALL PASS.
+< 
+<   ⛭⛭ THE COMB'S RESOLUTION, STATED BEFORE IT DECIDES: the whole one-parameter family between the two
+<   admissible clocks spans 4.21 multipoles in l_1 -- 0.01395 in l_1/l_A, which is
+<   4.2 of the sky's one-multipole locating widths and 2.1 of its
+<   two-multipole ones.  The comb separates the family's ends and pins f only to about +-0.24.
+< 
+<   ⛔ THE ORDER'S FIRST BRANCH IS HALF RIGHT.  The contrast's LEVEL is shallow
+<   (1.75 sigma against the comb's 4.21) but its q-SLOPE is the
+<   comb's equal (3.80 sigma).  What separates them is that the contrast's own
+<   error grows about five times across the family while the comb's locating width does not move.
+< 
+<   ⛭⛭⛭ AND THE DECIDING RESULT IS NOT ABOUT THE CHOICE.  The sky's 0.7312 sits at f = -0.304
+<   on the family's straight line -- OUTSIDE it, on the far side of the stacking clock.  So no interior
+<   fraction fits better than the endpoint in use (there is no fitted clock to declare), the best point
+<   is f=0, and the residual first-peak disagreement cannot be absorbed by the clock assignment.
+<   P1/P2 agrees independently: 2.141 -> 2.017 against the sky's 2.217.
+< 
+<   ⚑ THE GUARD: the comb's motion is 31% the peak relocating through
+<   r_s(ETA_LS), 9% the visibility's re-weighting of the kernel, and
+<   60% the plasma's own acoustic phase.  They separate.
+< 
+<   ⚠ AND TWO OF cc66.43's NUMBERS WERE GRID-LIMITED: l_1 220 -> 228 is really
+<   221.95 -> 226.16, l_1/l_A 0.7290 -> 0.7555 is really 0.73543 ->
+<   0.74938 (and the arm sits ABOVE the sky at f=0, not below), while the FWHM's
+<   43.591 -> 43.952 is exactly one step of the eta grid and is not a resolved motion at all.
+< 
+<   NOT CLAIMED: a verdict on the two-rate assignment; that f<0 is admissible (the -0.304 is the
+<   family's line extrapolated, reported because the order asked what the comb can decide); a
+<   re-derivation of the sky's locating width, which is P15's own; that the injected runs are spectra of
+<   this model; any mechanism beyond cc66.42's; nothing touches prop:flat and there is no refit.
+< 
+< rc=0
+---
+> GATES: 1 FAILED:
+>   - ⓹ and f=0 reproduces the banked REPORTED spectrum to the `KSLICE` sum's own rounding, which is this scan's provenance: the base of the family is the corpus's own arm
+> rc=1

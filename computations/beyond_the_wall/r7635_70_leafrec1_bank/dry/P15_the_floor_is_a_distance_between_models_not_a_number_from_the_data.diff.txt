@@ -1,0 +1,20 @@
+96c96
+<   F3 = chi^2(CR arm) - chi^2(LambdaCDM arm) = 51848
+---
+>   F3 = chi^2(CR arm) - chi^2(LambdaCDM arm) = 706
+99c99
+<   ** SO F4's MARGIN IS 827x AT ITS WORST AND 2438x AT ITS BEST — THREE ORDERS OF MAGNITUDE
+---
+>   ** SO F4's MARGIN IS 11x AT ITS WORST AND 33x AT ITS BEST — THREE ORDERS OF MAGNITUDE
+107,114c107,108
+< ALL CHECKS PASS — the instrument reproduces a reference LambdaCDM to better than 1.6% with a
+< smooth departure; F2 spans 21-31 across defensible references, a spread comparable to itself;
+< the model separation is 0.11 chi^2 per bin; the neutrino content moves it threefold and is the
+< last unaddressed item on c54.178's list, worth about ten of the thirty-one; and F4's margin is
+< three orders of magnitude whichever reference is taken.
+< ==============================================================================
+< GATE c54.188 (r2441), `L-503`: the instrument tracks a reference LambdaCDM to 1.52%; F2 spans +21 to +31 across three references while the model separation spans 21–63 (0.11 per bin at the reference used), and the two orderings REVERSE; F3 = 51848, so F4's margin is 827x at worst — pinned against `L-147` F2/F3/F4/F5 and c54.178's remaining-items list, whose last entry (the neutrino mass) is worth 10 of it.
+< rc=0
+---
+> FAILED: F4's margin falls to 11x at the worst reference -- the reference choice reaches the verdict and c54.186 must be restated
+> rc=1

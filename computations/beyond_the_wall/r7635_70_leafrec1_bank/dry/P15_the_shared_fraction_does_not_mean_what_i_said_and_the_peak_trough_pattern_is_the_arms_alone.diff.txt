@@ -1,0 +1,92 @@
+98c98
+<     |r_control| =  13.34    |m_CR - m_control| =   8.79    |r_CR| =  16.82
+---
+>     |r_control| =  13.34    |m_CR - m_control| =   9.04    |r_CR| =  16.94
+101c101
+<     CR vs control: shared fraction 73.1%, cosine +0.855   <- what cc66.33 reported
+---
+>     CR vs control: shared fraction 71.8%, cosine +0.848   <- what cc66.33 reported
+108c108
+<   [PASS] ** A DELIBERATELY WRONG MODEL SCORES HIGHER THAN THE CR ARM **: the control tilted by 0.02, at chi^2 = 214.6, is 82.2% 'shared' against the arm's 73.1% -- so the statistic ranks similarity to the control, not whose the misfit is   (82.2% at chi2 215 against the arm's 73.1%)
+---
+>   [PASS] ** A DELIBERATELY WRONG MODEL SCORES HIGHER THAN THE CR ARM **: the control tilted by 0.02, at chi^2 = 214.6, is 82.2% 'shared' against the arm's 73.1% -- so the statistic ranks similarity to the control, not whose the misfit is   (82.2% at chi2 215 against the arm's 71.8%)
+119,120c119,120
+<     CR arm   chi2 =  282.96 over 179 bins = 1.581/bin
+<     excess   +105.08,  of which the model difference alone carries 77.3 and the cross term +27.8
+---
+>     CR arm   chi2 =  286.89 over 179 bins = 1.603/bin
+>     excess   +109.02,  of which the model difference alone carries 81.8 and the cross term +27.2
+122c122
+<   [PASS] ** and the whole of the arm's excess traces to m_CR - m_control: remove the model difference and the arm IS the control **, so the excess is the construction's   (model difference carries 77.3 of the 105.1 excess)
+---
+>   [PASS] ** and the whole of the arm's excess traces to m_CR - m_control: remove the model difference and the arm IS the control **, so the excess is the construction's   (model difference carries 81.8 of the 109.0 excess)
+130,131c130,131
+<       CR arm, diag amplitude    +0.36     -0.51
+<       CR arm, whitened          +0.42     -0.52
+---
+>       CR arm, diag amplitude    +0.38     -0.56
+>       CR arm, whitened          +0.42     -0.56
+134c134
+<   [PASS] ...while the ARM does show it, on both metrics -- so the pattern is the arm's alone   (arm +0.36 / -0.51 diag, +0.42 / -0.52 whitened)
+---
+>   [PASS] ...while the ARM does show it, on both metrics -- so the pattern is the arm's alone   (arm +0.38 / -0.56 diag, +0.42 / -0.56 whitened)
+138,139c138,139
+<       diagonal  corr +0.8373   slope 1.137   rms ratio 1.357
+<       whitened  corr +0.8548   slope 1.078   rms ratio 1.261
+---
+>       diagonal  corr +0.8240   slope 1.145   rms ratio 1.388
+>       whitened  corr +0.8478   slope 1.076   rms ratio 1.269
+141,142c141,142
+<   [PASS] ** the RMS RATIO reproduces (1.36 against 1.34) **   (1.357)
+<   [PASS] ...but the CORRELATION does not: 0.84, not 0.96 -- so 'the same series scaled' is too strong even before PART 1's objection to what that would mean   (+0.837)
+---
+>   [FAIL] ** the RMS RATIO reproduces (1.36 against 1.34) **   (got 1.388)
+>   [PASS] ...but the CORRELATION does not: 0.84, not 0.96 -- so 'the same series scaled' is too strong even before PART 1's objection to what that would mean   (+0.824)
+146c146
+<       CR arm   diag   0.68   1.12   1.00    whitened   0.72   0.91   1.09
+---
+>       CR arm   diag   0.71   1.15   1.03    whitened   0.75   0.93   1.13
+153c153
+<       CR arm   diag  -0.64   whitened  -1.09
+---
+>       CR arm   diag  -0.58   whitened  -1.04
+155c155
+<   [PASS] ** THE GAP AT ell ~ 1000 IS THE ARM'S, NOT SHARED **: the control sits at +0.06 where the order has -1.56   (control +0.06, arm -0.64)
+---
+>   [PASS] ** THE GAP AT ell ~ 1000 IS THE ARM'S, NOT SHARED **: the control sits at +0.06 where the order has -1.56   (control +0.06, arm -0.58)
+160,162c160,162
+<     |m_CR - m_control| =   8.79   (77.3 in chi^2)
+<     |r_CR| =  16.82   ratio to the control = 1.261
+<   [PASS] ** the ratio is not an amplification of a shared defect -- it is the size of the model difference added to the control's residual **, which is the plain answer to what sets it   (|r_CR|^2 = |r_ctl|^2 + |diff|^2 + 2 r_ctl.diff = 177.9 + 77.3 + 27.8 = 283.0)
+---
+>     |m_CR - m_control| =   9.04   (81.8 in chi^2)
+>     |r_CR| =  16.94   ratio to the control = 1.270
+>   [PASS] ** the ratio is not an amplification of a shared defect -- it is the size of the model difference added to the control's residual **, which is the plain answer to what sets it   (|r_CR|^2 = |r_ctl|^2 + |diff|^2 + 2 r_ctl.diff = 177.9 + 81.8 + 27.2 = 286.9)
+178c178
+<   arm exceeds it by +105.1, the model difference alone carries 77.3 of that, and removing the
+---
+>   arm exceeds it by +109.0, the model difference alone carries 81.8 of that, and removing the
+189,190c189,190
+<   ** WHAT DOES REPRODUCE IS THE RMS RATIO: 1.357 against the quoted 1.34. **  And what sets it is
+<   not an amplification: |r_control| = 13.34, the model difference 8.79, the arm 16.82.
+---
+>   ** WHAT DOES REPRODUCE IS THE RMS RATIO: 1.388 against the quoted 1.34. **  And what sets it is
+>   not an amplification: |r_control| = 13.34, the model difference 9.04, the arm 16.94.
+199,212c199,200
+< GATES: ALL PASS.
+< 
+< ESTABLISHED: r_CR = r_control + (m_CR - m_control) exactly, so the shared fraction ranks model
+< similarity rather than attributing misfit -- a control tilted by dn_s = +0.02 scores 82.2% against
+< the arm's 73.1% -- and cc66.33's sentence reading it as "the transfer's and not the construction's"
+< is WITHDRAWN.  The control fits at 0.994/bin, the arm exceeds it by +105.1, and the model difference
+< carries 77.3 of that, so the excess is the construction's.  Of r6881's four diagnostics the rms
+< ratio reproduces (1.357 against 1.34) and three do not survive on the control: the peak/trough
+< pattern, the ell~1000 trough and the steepness of the growth are the ARM'S, so the composite reading
+< that both arms show it fails at its premise.  The 1.3 is the model difference's own size.
+< NOT CLAIMED: that the transfer is exonerated; a mechanism for the misfit; any change to cc66.33's
+< band means, single-parameter scans or figure.
+< 
+< rc=0
+---
+> GATES: 1 FAILED -> ** the RMS RATIO reproduces (1.36 against 1.34) **
+> rc=1

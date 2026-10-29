@@ -1,0 +1,182 @@
+142,144c142,144
+<     chi2_control =  177.88     chi2_arm =  282.96     excess = +105.08
+<     2<r_ctl,DELTA> =  +27.82   ||DELTA||^2 =   77.26   ||DELTA|| = 8.790
+<   [PASS] the three-term expansion is EXACT -- the identity the order writes, on the actual fitted vectors   (chi2_ctl + cross + ||DELTA||^2 = 282.956126 against 282.956126)
+---
+>     chi2_control =  177.88     chi2_arm =  286.89     excess = +109.02
+>     2<r_ctl,DELTA> =  +27.21   ||DELTA||^2 =   81.81   ||DELTA|| = 9.045
+>   [PASS] the three-term expansion is EXACT -- the identity the order writes, on the actual fitted vectors   (chi2_ctl + cross + ||DELTA||^2 = 286.894124 against 286.894124)
+146,147c146,147
+<     of the +105.08 excess:  ||DELTA||^2 carries 73.5%   the cross term 26.5%
+<   [PASS] ** ||DELTA||^2 CARRIES THE EXCESS, NOT THE CROSS TERM ** -- so the order's 'if the cross term carries the excess ... part of the rejection is a fluke of one sky' does NOT fire   (77.26 against 27.82)
+---
+>     of the +109.02 excess:  ||DELTA||^2 carries 75.0%   the cross term 25.0%
+>   [PASS] ** ||DELTA||^2 CARRIES THE EXCESS, NOT THE CROSS TERM ** -- so the order's 'if the cross term carries the excess ... part of the rejection is a fluke of one sky' does NOT fire   (81.81 against 27.21)
+150,153c150,153
+<     with DELTA fixed and r_ctl ~ N(0,I): E[cross] = 0, sd = 2||DELTA|| = 17.58
+<     measured +27.82  ->  +1.58 sigma -- unlucky, not decisive
+<     E[chi2_arm] on a TYPICAL sky = n + ||DELTA||^2 = 179 + 77.3 = 256.3 = 1.432 per bin
+<   [PASS] so on a typical draw the arm still scores above 1.4 per bin -- the rejection survives the sky, which is the order's question answered plainly   (1.432 per bin against the measured 1.581 and the control's 0.994)
+---
+>     with DELTA fixed and r_ctl ~ N(0,I): E[cross] = 0, sd = 2||DELTA|| = 18.09
+>     measured +27.21  ->  +1.50 sigma -- unlucky, not decisive
+>     E[chi2_arm] on a TYPICAL sky = n + ||DELTA||^2 = 179 + 81.8 = 260.8 = 1.457 per bin
+>   [PASS] so on a typical draw the arm still scores above 1.4 per bin -- the rejection survives the sky, which is the order's question answered plainly   (1.457 per bin against the measured 1.603 and the control's 0.994)
+157,158c157,158
+<     WHITENED : cosine +0.8549  norm ratio 1.2612  ->  coefficient 1.0782
+<     DIAGONAL : corr   +0.8373  rms  ratio 1.3569  ->  coefficient 1.1361
+---
+>     WHITENED : cosine +0.8476  norm ratio 1.2700  ->  coefficient 1.0765
+>     DIAGONAL : corr   +0.8240  rms  ratio 1.3881  ->  coefficient 1.1438
+160,161c160,161
+<   [PASS] ** THE 1.15 MIXES TWO METRICS **: taken consistently the coefficient is 1.08 whitened or 1.14 diagonal, and neither is 1.15   (1.0782 whitened, 1.1361 diagonal)
+<   [PASS] ...and the regression coefficient equals cosine x norm ratio in the same metric, so the two ways of writing it agree once the metric is not mixed   (b = 1.078207)
+---
+>   [PASS] ** THE 1.15 MIXES TWO METRICS **: taken consistently the coefficient is 1.08 whitened or 1.14 diagonal, and neither is 1.15   (1.0765 whitened, 1.1438 diagonal)
+>   [PASS] ...and the regression coefficient equals cosine x norm ratio in the same metric, so the two ways of writing it agree once the metric is not mixed   (b = 1.076478)
+164,167c164,167
+<     b - 1 = +0.0782   and   <DELTA,r_ctl>/||r_ctl||^2 = +0.0782
+<   [PASS] b - 1 IS the cross term over ||r_ctl||^2 -- the 'amplification along the noise direction' and the cross term are one number, so (1) and (2) cannot disagree   (identical to 3.1e-16)
+<     sd(b) with DELTA fixed and the sky a draw = ||DELTA||/||r_ctl||^2 = 0.0494
+<   [PASS] ** so the coefficient is 1.078 +- 0.049, which is +1.58 sigma from 1.00 ** -- a 15% amplification is not what the covariance says, and 8% at 1.6 sigma is what noise looks like   (b = 1.0782 +- 0.0494, (+1.58 sigma))
+---
+>     b - 1 = +0.0765   and   <DELTA,r_ctl>/||r_ctl||^2 = +0.0765
+>   [PASS] b - 1 IS the cross term over ||r_ctl||^2 -- the 'amplification along the noise direction' and the cross term are one number, so (1) and (2) cannot disagree   (identical to 1.9e-16)
+>     sd(b) with DELTA fixed and the sky a draw = ||DELTA||/||r_ctl||^2 = 0.0508
+>   [PASS] ** so the coefficient is 1.078 +- 0.049, which is +1.58 sigma from 1.00 ** -- a 15% amplification is not what the covariance says, and 8% at 1.6 sigma is what noise looks like   (b = 1.0765 +- 0.0508, (+1.50 sigma))
+171,176c171,176
+<       100-1996    185    186.51    292.42    78.06   +27.84  1.0746 0.0474  +1.58   73.7%
+<       100-1500    156    153.49    236.40    65.51   +17.39  1.0567 0.0527  +1.07   72.5%
+<       200-1900    168    172.33    269.55    72.10   +25.12  1.0729 0.0493  +1.48   73.6%
+<       100-1900    179    177.88    282.96    77.26   +27.82  1.0782 0.0494  +1.58   73.1%
+<   [PASS] ||DELTA||^2 exceeds the cross term at EVERY cut, so the verdict of PART 1 is not the cut's   (||D||^2 / cross: 78/28, 66/17, 72/25, 77/28)
+<   [PASS] ...and the coefficient is between 1.05 and 1.08 everywhere, at 1.1 to 1.6 sigma -- never reaching 2 sigma and never reaching the 1.15 the order read   (1.075(+1.58s), 1.057(+1.07s), 1.073(+1.48s), 1.078(+1.58s))
+---
+>       100-1996    185    186.51    297.67    83.61   +27.55  1.0738 0.0490  +1.51   72.3%
+>       100-1500    156    153.49    240.37    70.30   +16.58  1.0540 0.0546  +0.99   70.9%
+>       200-1900    168    172.33    271.03    74.76   +23.94  1.0695 0.0502  +1.38   72.7%
+>       100-1900    179    177.88    286.89    81.81   +27.21  1.0765 0.0508  +1.50   71.8%
+>   [PASS] ||DELTA||^2 exceeds the cross term at EVERY cut, so the verdict of PART 1 is not the cut's   (||D||^2 / cross: 84/28, 70/17, 75/24, 82/27)
+>   [PASS] ...and the coefficient is between 1.05 and 1.08 everywhere, at 1.1 to 1.6 sigma -- never reaching 2 sigma and never reaching the 1.15 the order read   (1.074(+1.51s), 1.054(+0.99s), 1.069(+1.38s), 1.076(+1.50s))
+183,192c183,192
+<        100-300  n= 22     7.4% of ||DELTA||^2    DELTA/sigma mean -0.426  rms 0.494
+<        300-500  n= 22     2.5% of ||DELTA||^2    DELTA/sigma mean -0.042  rms 0.281
+<        500-700  n= 23    10.9% of ||DELTA||^2    DELTA/sigma mean +0.168  rms 0.574
+<        700-900  n= 22    12.0% of ||DELTA||^2    DELTA/sigma mean +0.429  rms 0.628
+<        900-1100 n= 22    23.9% of ||DELTA||^2    DELTA/sigma mean -0.736  rms 0.942
+<       1100-1300 n= 22    12.5% of ||DELTA||^2    DELTA/sigma mean -0.324  rms 0.755
+<       1300-1500 n= 23    15.9% of ||DELTA||^2    DELTA/sigma mean -0.847  rms 1.032
+<       1500-1700 n= 12     3.4% of ||DELTA||^2    DELTA/sigma mean -1.355  rms 1.413
+<       1700-1900 n= 11    11.3% of ||DELTA||^2    DELTA/sigma mean -0.751  rms 0.761
+<   [PASS] over half of it sits in ell 900-1500, so DELTA is not spread evenly and not a low-ell effect   (52.4% in 900-1500)
+---
+>        100-300  n= 22     9.7% of ||DELTA||^2    DELTA/sigma mean -0.511  rms 0.581
+>        300-500  n= 22     3.6% of ||DELTA||^2    DELTA/sigma mean -0.065  rms 0.348
+>        500-700  n= 23    11.7% of ||DELTA||^2    DELTA/sigma mean +0.161  rms 0.613
+>        700-900  n= 22    11.5% of ||DELTA||^2    DELTA/sigma mean +0.462  rms 0.632
+>        900-1100 n= 22    23.2% of ||DELTA||^2    DELTA/sigma mean -0.753  rms 0.947
+>       1100-1300 n= 22    15.2% of ||DELTA||^2    DELTA/sigma mean -0.415  rms 0.882
+>       1300-1500 n= 23    11.3% of ||DELTA||^2    DELTA/sigma mean -0.800  rms 0.954
+>       1500-1700 n= 12     3.9% of ||DELTA||^2    DELTA/sigma mean -1.577  rms 1.614
+>       1700-1900 n= 11     9.8% of ||DELTA||^2    DELTA/sigma mean -0.903  rms 0.908
+>   [PASS] over half of it sits in ell 900-1500, so DELTA is not spread evenly and not a low-ell effect   (49.7% in 900-1500)
+195,197c195,197
+<       DELTA/sigma   at peaks +0.011 (n=93)   at troughs -0.760 (n=86)
+<       D_l ratio arm/control:  at peaks 0.9985   at troughs 0.9856
+<   [PASS] ** DELTA IS TROUGH-DOMINATED: essentially zero at the peaks and negative in the troughs **, so the two arms agree where the peaks are and differ between them   (+0.011 at peaks, -0.760 at troughs)
+---
+>       DELTA/sigma   at peaks +0.002 (n=93)   at troughs -0.836 (n=86)
+>       D_l ratio arm/control:  at peaks 0.9980   at troughs 0.9840
+>   [PASS] ** DELTA IS TROUGH-DOMINATED: essentially zero at the peaks and negative in the troughs **, so the two arms agree where the peaks are and differ between them   (+0.002 at peaks, -0.836 at troughs)
+200,205c200,205
+<       envelope = poly deg 3 in ln l : smooth  10.47   oscillatory  74.91   cross  -8.13   of 77.26
+<       envelope = poly deg 5 in ln l : smooth  17.32   oscillatory  67.12   cross  -7.19   of 77.26
+<       envelope = poly deg 7 in ln l : smooth  17.87   oscillatory  66.39   cross  -7.00   of 77.26
+<       and the OSCILLATORY part's own peak/trough means: +0.389 / -0.420  -- antisymmetric about the smooth level
+<   [PASS] ** THE OSCILLATORY PART CARRIES THE BULK OF ||DELTA||^2 **, so DELTA is not an envelope difference   (67.12 of 77.26 = 87%)
+<   [PASS] ...and it is peak-HIGH and trough-LOW, which is a CONTRAST and not a phase: a phase shift would be antisymmetric about each peak, not about the envelope   (+0.389 / -0.420)
+---
+>       envelope = poly deg 3 in ln l : smooth  13.60   oscillatory  78.32   cross -10.11   of 81.81
+>       envelope = poly deg 5 in ln l : smooth  19.79   oscillatory  71.05   cross  -9.03   of 81.81
+>       envelope = poly deg 7 in ln l : smooth  20.08   oscillatory  70.56   cross  -8.83   of 81.81
+>       and the OSCILLATORY part's own peak/trough means: +0.423 / -0.458  -- antisymmetric about the smooth level
+>   [PASS] ** THE OSCILLATORY PART CARRIES THE BULK OF ||DELTA||^2 **, so DELTA is not an envelope difference   (71.05 of 81.81 = 87%)
+>   [PASS] ...and it is peak-HIGH and trough-LOW, which is a CONTRAST and not a phase: a phase shift would be antisymmetric about each peak, not about the envelope   (+0.423 / -0.458)
+208,212c208,212
+<       window 0.75 periods ( 236 in ell): the arm's oscillation about its own envelope is 1.0408 of the control's
+<       window 1.00 periods ( 315 in ell): the arm's oscillation about its own envelope is 1.0401 of the control's
+<       window 1.25 periods ( 394 in ell): the arm's oscillation about its own envelope is 1.0364 of the control's
+<       window 1.50 periods ( 472 in ell): the arm's oscillation about its own envelope is 1.0276 of the control's
+<   [PASS] ** THE ARM'S ACOUSTIC OSCILLATION IS ABOUT 4 PER CENT LARGER THAN THE CONTROL'S AT FIXED ENVELOPE **, and that single number is what DELTA mostly is   (1.0401 at a one-period window)
+---
+>       window 0.75 periods ( 236 in ell): the arm's oscillation about its own envelope is 1.0452 of the control's
+>       window 1.00 periods ( 315 in ell): the arm's oscillation about its own envelope is 1.0440 of the control's
+>       window 1.25 periods ( 394 in ell): the arm's oscillation about its own envelope is 1.0393 of the control's
+>       window 1.50 periods ( 472 in ell): the arm's oscillation about its own envelope is 1.0290 of the control's
+>   [PASS] ** THE ARM'S ACOUSTIC OSCILLATION IS ABOUT 4 PER CENT LARGER THAN THE CONTROL'S AT FIXED ENVELOPE **, and that single number is what DELTA mostly is   (1.0440 at a one-period window)
+217,225c217,225
+<       (1) at the PEAKS                -0.104    -0.093    +0.011
+<       (1) at the TROUGHS              -0.200    -0.960    -0.760
+<       (4) ell 950-1080 (n=15)         -0.103    -1.177    -1.074   <- 23.4% of ||DELTA||^2 in 15 bins
+<       (3) |.| in third 1               0.668     0.718     0.332
+<       (3) |.| in third 2               0.746     0.899     0.550
+<       (3) |.| in third 3               0.871     1.140     0.681
+<   [PASS] ** THE ell ~ 1000 TROUGH IS DELTA'S **: the control sits at -0.10 there, the arm at -1.18, and DELTA carries 91 per cent of that deficit in 15 bins -- so `cc66.34`'s 'the gap is the arm's' sharpens to ** 'the gap is the MODEL DIFFERENCE'S' **, with this sky contributing the remaining tenth   (control -0.103, arm -1.177, DELTA -1.074 = 91% of the arm's deficit)
+<   [PASS] ...and DELTA grows with multipole monotonically where the residuals do not, because a residual is DELTA plus a noise floor of order one and the floor flattens the growth   (0.33 -> 0.55 -> 0.68)
+<   [PASS] ** so all three of the features `cc66.34` established are the ARM'S turn out to be DELTA'S ** -- the peak/trough pattern, the ell~1000 trough and the growth are the model difference showing through the residual, which is what makes them readable at all   (troughs -0.760, ell~1000 -1.074, growth 0.33 -> 0.68)
+---
+>       (1) at the PEAKS                -0.104    -0.102    +0.002
+>       (1) at the TROUGHS              -0.200    -1.036    -0.836
+>       (4) ell 950-1080 (n=15)         -0.103    -1.159    -1.056   <- 22.1% of ||DELTA||^2 in 15 bins
+>       (3) |.| in third 1               0.668     0.750     0.409
+>       (3) |.| in third 2               0.746     0.916     0.570
+>       (3) |.| in third 3               0.871     1.169     0.736
+>   [PASS] ** THE ell ~ 1000 TROUGH IS DELTA'S **: the control sits at -0.10 there, the arm at -1.18, and DELTA carries 91 per cent of that deficit in 15 bins -- so `cc66.34`'s 'the gap is the arm's' sharpens to ** 'the gap is the MODEL DIFFERENCE'S' **, with this sky contributing the remaining tenth   (control -0.103, arm -1.159, DELTA -1.056 = 91% of the arm's deficit)
+>   [PASS] ...and DELTA grows with multipole monotonically where the residuals do not, because a residual is DELTA plus a noise floor of order one and the floor flattens the growth   (0.41 -> 0.57 -> 0.74)
+>   [PASS] ** so all three of the features `cc66.34` established are the ARM'S turn out to be DELTA'S ** -- the peak/trough pattern, the ell~1000 trough and the growth are the model difference showing through the residual, which is what makes them readable at all   (troughs -0.836, ell~1000 -1.056, growth 0.41 -> 0.74)
+229,238c229,238
+<       amplitude (the fitted A)       cos -0.0027     0.00% of ||DELTA||^2
+<       position (peak rescale)        cos +0.0990     0.98% of ||DELTA||^2
+<       tilt (delta n_s)               cos +0.0444     0.20% of ||DELTA||^2
+<       damping shape                  cos -0.0776     0.60% of ||DELTA||^2
+<       ** CONTRAST (control only) **  cos +0.7151    51.13% of ||DELTA||^2
+< 
+<       SPAN of position+tilt+damping           :   5.73% of ||DELTA||^2
+<       SPAN with the contrast direction added :  66.84%   (+61.11 points)
+<   [PASS] ** `cc66.33`'s four-parameter family is essentially orthogonal to DELTA **, which is what that receipt found qualitatively and this measures   (5.73% -- so DELTA is 94.3% outside it)
+<   [PASS] ** AND ONE DIRECTION BUILT FROM THE CONTROL ALONE, WITH NO RUN AND NOTHING FITTED, CARRIES ABOUT HALF OF IT **   (51.1%)
+---
+>       amplitude (the fitted A)       cos -0.0025     0.00% of ||DELTA||^2
+>       position (peak rescale)        cos -0.1409     1.98% of ||DELTA||^2
+>       tilt (delta n_s)               cos +0.0832     0.69% of ||DELTA||^2
+>       damping shape                  cos -0.0628     0.39% of ||DELTA||^2
+>       ** CONTRAST (control only) **  cos +0.7464    55.72% of ||DELTA||^2
+> 
+>       SPAN of position+tilt+damping           :   8.57% of ||DELTA||^2
+>       SPAN with the contrast direction added :  69.16%   (+60.59 points)
+>   [PASS] ** `cc66.33`'s four-parameter family is essentially orthogonal to DELTA **, which is what that receipt found qualitatively and this measures   (8.57% -- so DELTA is 91.4% outside it)
+>   [PASS] ** AND ONE DIRECTION BUILT FROM THE CONTROL ALONE, WITH NO RUN AND NOTHING FITTED, CARRIES ABOUT HALF OF IT **   (55.7%)
+241,245c241,245
+<         window 0.75 periods: cos +0.7163  ->  51.3% of ||DELTA||^2
+<         window 1.00 periods: cos +0.7151  ->  51.1% of ||DELTA||^2
+<         window 1.25 periods: cos +0.7082  ->  50.2% of ||DELTA||^2
+<         window 1.50 periods: cos +0.6794  ->  46.2% of ||DELTA||^2
+<   [PASS] ...and it does not depend on the window: 46 to 51 per cent across a factor two in it, so the one tunable is reported rather than chosen   (46.2% to 51.3%)
+---
+>         window 0.75 periods: cos +0.7584  ->  57.5% of ||DELTA||^2
+>         window 1.00 periods: cos +0.7464  ->  55.7% of ||DELTA||^2
+>         window 1.25 periods: cos +0.7269  ->  52.8% of ||DELTA||^2
+>         window 1.50 periods: cos +0.6802  ->  46.3% of ||DELTA||^2
+>   [PASS] ...and it does not depend on the window: 46 to 51 per cent across a factor two in it, so the one tunable is reported rather than chosen   (46.3% to 57.5%)
+260,262c260,262
+<       chi2 282.9561260853 -> 282.9561260853    fitted amplitude 12829.6870 -> 11996.8992 (ratio 1.069417)
+<   [PASS] ** a k-independent factor on Theta-hat is absorbed by the single fitted amplitude: chi2 does not move and the residual does not move **, so it cannot be in DELTA at all   (dchi2 = +8.5e-13, max |dr| = 3.7e-14)
+<   [PASS] ...and independently, DELTA's overlap with the amplitude direction is zero to three decimals   (cos = -0.0027)
+---
+>       chi2 286.8941240254 -> 286.8941240254    fitted amplitude 13583.4831 -> 12701.7656 (ratio 1.069417)
+>   [PASS] ** a k-independent factor on Theta-hat is absorbed by the single fitted amplitude: chi2 does not move and the residual does not move **, so it cannot be in DELTA at all   (dchi2 = +2.8e-13, max |dr| = 2.9e-14)
+>   [PASS] ...and independently, DELTA's overlap with the amplitude direction is zero to three decimals   (cos = -0.0025)
+266c266
+<   File "/home/user/shadow-of-existence/receipts/P15_CR_cosmology/P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck.py", line 527, in <module>
+---
+>   File "/tmp/claude-0/-home-user-shadow-of-existence/4913e7eb-3c04-585c-bc52-ac1b69fc5eb8/scratchpad/wt/receipts/P15_CR_cosmology/P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck.py", line 527, in <module>

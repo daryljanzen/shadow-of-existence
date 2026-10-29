@@ -1,0 +1,178 @@
+{
+ "cc66_r185_verify_cr_leafrec1": {
+  "stem": "cc66_r185_verify_cr_leafrec1",
+  "namesake": "cc66_r185_verify_cr",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0,
+   "LEAFSCALES": 1
+  },
+  "switches": "ARM=cr CRH0=68.570730 CROM=0.291246 HIER=1 LEAFREC=1 LEAFSCALES=1 LMAXL=2000 LSTEP=8 NS=1.015066 WBH2=0.021643 ZSTART=3e7",
+  "held": "refit_grid185/verify.sh; the plain arm"
+ },
+ "r6885_dp0_cr_leafrec1": {
+  "stem": "r6885_dp0_cr_leafrec1",
+  "namesake": "r6885_dp0_cr",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0,
+   "LEAFSCALES": 1
+  },
+  "switches": "ARM=cr CRH0=68.570730 CROM=0.291246 DPSRC=0 HIER=1 LEAFREC=1 LEAFSCALES=1 LMAXL=2000 LSTEP=8 NS=1.015066 WBH2=0.021643 ZSTART=3e7",
+  "held": "the namesake launcher's switches; only the point and LEAFREC moved"
+ },
+ "r6885_los_cr_leafrec1": {
+  "stem": "r6885_los_cr_leafrec1",
+  "namesake": "r6885_los_cr",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0,
+   "LEAFSCALES": 1
+  },
+  "switches": "ARM=cr CRH0=68.570730 CROM=0.291246 LEAFREC=1 LEAFSCALES=1 LMAXL=2000 LSTEP=8 NS=1.015066 WBH2=0.021643 ZSTART=3e7",
+  "held": "the namesake launcher's switches; only the point and LEAFREC moved"
+ },
+ "r6885_losdp0_cr_leafrec1": {
+  "stem": "r6885_losdp0_cr_leafrec1",
+  "namesake": "r6885_losdp0_cr",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0,
+   "LEAFSCALES": 1
+  },
+  "switches": "ARM=cr CRH0=68.570730 CROM=0.291246 DPSRC=0 LEAFREC=1 LEAFSCALES=1 LMAXL=2000 LSTEP=8 NS=1.015066 WBH2=0.021643 ZSTART=3e7",
+  "held": "the namesake launcher's switches; only the point and LEAFREC moved"
+ },
+ "r6885_lossw0_cr_leafrec1": {
+  "stem": "r6885_lossw0_cr_leafrec1",
+  "namesake": "r6885_lossw0_cr",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0,
+   "LEAFSCALES": 1
+  },
+  "switches": "ARM=cr CRH0=68.570730 CROM=0.291246 LEAFREC=1 LEAFSCALES=1 LMAXL=2000 LSTEP=8 NS=1.015066 SWSRC=0 WBH2=0.021643 ZSTART=3e7",
+  "held": "the namesake launcher's switches; only the point and LEAFREC moved"
+ },
+ "r6889_nufs0_cr_leafrec1": {
+  "stem": "r6889_nufs0_cr_leafrec1",
+  "namesake": "r6889_nufs0_cr",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0,
+   "LEAFSCALES": 1
+  },
+  "switches": "ARM=cr CRH0=68.570730 CROM=0.291246 HIER=1 LEAFREC=1 LEAFSCALES=1 LMAXL=2000 LSTEP=8 NS=1.015066 NUFS=0 WBH2=0.021643 ZSTART=3e7",
+  "held": "the namesake launcher's switches; only the point and LEAFREC moved"
+ },
+ "r6911_source_cr_leafrec1": {
+  "stem": "r6911_source_cr_leafrec1",
+  "namesake": "r6911_source_cr",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0,
+   "LEAFSCALES": 1
+  },
+  "switches": "ARM=cr CRH0=68.570730 CROM=0.291246 HIER=1 LEAFREC=1 LEAFSCALES=1 LMAXL=2000 LSTEP=8 NS=1.015066 SRCXS=0.987292934 WBH2=0.021643 ZSTART=3e7",
+  "held": "r6911 launch/pass2; 6 KSLICE pieces of 250; split residual 2.78e-17"
+ },
+ "r6911_source_cr_kcont_leafrec1": {
+  "stem": "r6911_source_cr_kcont_leafrec1",
+  "namesake": "r6911_source_cr_kcont",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0,
+   "LEAFSCALES": 1
+  },
+  "switches": "ARM=cr CRH0=68.570730 CROM=0.291246 HIER=1 KCONT=1 LEAFREC=1 LEAFSCALES=1 LMAXL=2000 LSTEP=8 NS=1.015066 SRCXS=0.987292934 WBH2=0.021643 ZSTART=3e7",
+  "held": "r6911 launch/pass2; 11 KSLICE pieces of 250; split residual 2.78e-17"
+ },
+ "r6915_pairs_cr_leafrec1": {
+  "stem": "r6915_pairs_cr_leafrec1",
+  "namesake": "r6915_pairs_cr",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0,
+   "LEAFSCALES": 1
+  },
+  "switches": "ARM=cr CRH0=68.570730 CROM=0.291246 HIER=1 LEAFREC=1 LEAFSCALES=1 LMAXL=2000 LSTEP=8 NS=1.015066 WBH2=0.021643 ZSTART=3e7",
+  "held": "r6915 launch; 6 KSLICE pieces; pairs close on D_l to 1.61e-15"
+ },
+ "r6941_fine_cr_leafrec1": {
+  "stem": "r6941_fine_cr_leafrec1",
+  "namesake": "r6941_fine_cr",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0,
+   "LEAFSCALES": 1
+  },
+  "switches": "ARM=cr CRH0=68.570730 CROM=0.291246 HIER=1 LEAFREC=1 LEAFSCALES=1 LMAXL=2000 LSTEP=1 NS=1.015066 WBH2=0.021643 ZSTART=3e7",
+  "held": "r6941 launch; LSTEP=1, 6 KSLICE pieces of 250"
+ },
+ "r6959_eta_cr_leafrec1": {
+  "stem": "r6959_eta_cr_leafrec1",
+  "namesake": "r6959_eta_cr",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0,
+   "LEAFSCALES": 1
+  },
+  "switches": "ARM=cr CRH0=68.570730 CROM=0.291246 HIER=1 LEAFREC=1 LEAFSCALES=1 LMAXL=2000 LSTEP=8 NS=1.015066 WBH2=0.021643 ZSTART=3e7",
+  "held": "r6959 launch_a; SRCETA output unaltered"
+ }
+}

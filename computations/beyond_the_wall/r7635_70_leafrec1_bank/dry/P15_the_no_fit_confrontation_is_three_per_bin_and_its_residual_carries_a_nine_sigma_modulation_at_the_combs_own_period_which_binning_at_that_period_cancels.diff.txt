@@ -1,0 +1,43 @@
+80,81c80,81
+<       refit_cr    computations/beyond_the_wall/spectra/cc66_r185_verify_cr.npz D_M = 14017.0386
+<     OK    ⛭ every spectrum carries the `D_M` its slot is -- the arm's no-fit run at `14011.4567` is the BAO-fixed background `r7181+cc66.144` recovered from the distance data alone, and the refitted pair are the verified minima
+---
+>       refit_cr    computations/beyond_the_wall/spectra/cc66_r185_verify_cr.npz D_M = 14133.9546
+>     FAIL  ⛭ every spectrum carries the `D_M` its slot is -- the arm's no-fit run at `14011.4567` is the BAO-fixed background `r7181+cc66.144` recovered from the distance data alone, and the refitted pair are the verified minima
+90c90
+<       refit_cr    chi2 =   282.96    1.581 per bin
+---
+>       refit_cr    chi2 =   286.89    1.603 per bin
+93c93
+<     OK    ⌗ and refitted they are `1.58` and `0.99`, so four parameters close about a third of the gap -- `2.66x` becomes `1.59x`
+---
+>     FAIL  ⌗ and refitted they are `1.58` and `0.99`, so four parameters close about a third of the gap -- `2.66x` becomes `1.59x`
+103c103
+<       folded: refit_cr    one harmonic at l_A = 0.8128 +- 0.1180  (6.89 sigma)
+---
+>       folded: refit_cr    one harmonic at l_A = 0.8331 +- 0.1187  (7.02 sigma)
+114,115c114,115
+<     OK    ⛭⛭ the figure's own chi^2 per bin agree with this file's, computed independently from the same banked spectra -- so the numbers ON the figure are checkable and a drift in the generator fails here
+<     OK    ⛭⛭ and so do its harmonic amplitudes and significances, which are the figure's headline
+---
+>     FAIL  ⛭⛭ the figure's own chi^2 per bin agree with this file's, computed independently from the same banked spectra -- so the numbers ON the figure are checkable and a drift in the generator fails here
+>     FAIL  ⛭⛭ and so do its harmonic amplitudes and significances, which are the figure's headline
+119,125c119,123
+<   ✔ ** THE NO-FIT CONFRONTATION IS `3.00` PER BIN AGAINST THE CONTROL'S `1.13`, AND ITS
+<     RESIDUAL CARRIES A `9.1` SIGMA MODULATION AT THE COMB'S OWN PERIOD ** -- against the
+<     control's `1.8`, with refitting halving the amplitude and leaving `6.9`.
+<   ⛔ And the ordered operation -- binning AT the period -- is the one that cancels it, because
+<     a bin one period wide averages a full cycle of a modulation at that period.  *Both are
+<     drawn: the period bins because a reader will look for them, the fold because it answers.*
+<   ⌗ No new physics run: all four spectra were banked, each identified by its own stored D_M.
+---
+>   ⛔ 4 CHECK(S) FAILED:
+>       - ⛭ every spectrum carries the `D_M` its slot is -- the arm's no-fit run at `14011.4567` is the BAO-fixed background `r7181+cc66.144` recovered from the distance data alone, and the refitted pair are the verified minima
+>       - ⌗ and refitted they are `1.58` and `0.99`, so four parameters close about a third of the gap -- `2.66x` becomes `1.59x`
+>       - ⛭⛭ the figure's own chi^2 per bin agree with this file's, computed independently from the same banked spectra -- so the numbers ON the figure are checkable and a drift in the generator fails here
+>       - ⛭⛭ and so do its harmonic amplitudes and significances, which are the figure's headline
+127,128c125
+<   ALL CHECKS PASS
+< rc=0
+---
+> rc=1

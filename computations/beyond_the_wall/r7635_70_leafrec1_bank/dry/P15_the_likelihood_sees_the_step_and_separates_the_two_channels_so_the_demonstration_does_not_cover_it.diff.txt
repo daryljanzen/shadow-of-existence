@@ -1,0 +1,16 @@
+75,77c75,77
+<     arm vs control, sigma from each band alone:   36.37   42.79   49.75   44.61   35.13   24.59   14.23
+<     band 1 against its own bands 2--7 trend:     -0.373(-2.46s)  -0.311(-3.21s)  -0.489(-2.53s)  -0.394(-2.81s)
+<   [PASS] ⓵ⓑ THE STEP IS A LOCALISED CONTRIBUTION TO THE LIKELIHOOD'S EXCESS, with the SAME SIGN as every other instrument in this row -- and this per-band number carries the instrument's own noise rather than an empirical scatter across a noiseless theory spectrum   (-0.489..-0.311, 2.5-3.2 sigma; the trend predicts 53-71 where the likelihood delivers 36.4)
+---
+>     arm vs control, sigma from each band alone:   46.64   55.27   64.08   56.64   45.10   30.72   18.63
+>     band 1 against its own bands 2--7 trend:     -0.374(-2.59s)  -0.312(-3.42s)  -0.490(-2.63s)  -0.393(-2.96s)
+>   [PASS] ⓵ⓑ THE STEP IS A LOCALISED CONTRIBUTION TO THE LIKELIHOOD'S EXCESS, with the SAME SIGN as every other instrument in this row -- and this per-band number carries the instrument's own noise rather than an empirical scatter across a noiseless theory spectrum   (-0.490..-0.312, 2.6-3.4 sigma; the trend predicts 68-91 where the likelihood delivers 46.6)
+81c81
+<     the ARM vs control, at band 1          36.37 sigma
+---
+>     the ARM vs control, at band 1          46.64 sigma
+84c84
+<   [PASS] ⚠ AND THE TWO FLOORS ARE IN DIFFERENT UNITS, WHICH THE PRE-REGISTRATION REQUIRED BE SAID: the likelihood's is a share of the band-1 DIFFERENCE under real instrument noise and `cc66.61`'s is a share of the STEP under an empirical scatter of a NOISELESS spectrum.  ** Neither bounds the other, and this receipt says so in its own header **   (the likelihood's smallest detectable share at band 1 is 0.055; `cc66.61`'s floor is 0.59 of a different quantity)
+---
+>   [PASS] ⚠ AND THE TWO FLOORS ARE IN DIFFERENT UNITS, WHICH THE PRE-REGISTRATION REQUIRED BE SAID: the likelihood's is a share of the band-1 DIFFERENCE under real instrument noise and `cc66.61`'s is a share of the STEP under an empirical scatter of a NOISELESS spectrum.  ** Neither bounds the other, and this receipt says so in its own header **   (the likelihood's smallest detectable share at band 1 is 0.043; `cc66.61`'s floor is 0.59 of a different quantity)

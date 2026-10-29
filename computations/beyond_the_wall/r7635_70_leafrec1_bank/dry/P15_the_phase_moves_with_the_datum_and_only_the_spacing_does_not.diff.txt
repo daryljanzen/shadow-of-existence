@@ -1,0 +1,54 @@
+67,70c67,70
+<        phi=0    8         [172, 404, 636, 916]        [142, 80, 18]     0.9761   0.8780
+<     phi=pi/4    8         [188, 396, 612, 892]        [182, 96, 18]     0.9761   0.9576
+<     phi=pi/2    7        [388, 604, 884, 1164]        [112, 32, 16]     0.9814   0.0663
+<       phi=pi    8         [188, 436, 684, 964]        [100, 58, 15]     0.9629   0.6711
+---
+>        phi=0    9        [220, 532, 812, 1132]          [0, 9, -14]     1.0012   0.2758
+>     phi=pi/4    9        [236, 556, 812, 1132]        [11, 29, -17]     0.9975   0.2557
+>     phi=pi/2    8       [268, 820, 1140, 1412]        [-245, 5, 22]     0.9982  -0.6945
+>       phi=pi    9        [220, 532, 812, 1132]          [0, 9, -14]     1.0012   0.2758
+72,73c72,73
+<   ** phi/pi SPANS 0.0663 TO 0.9576 — A RANGE OF 0.8912 — AND THE CONTROL'S 0.2628 IS INSIDE IT. **
+<      *the smallest first-peak transient among the four is 100 in ell against the control's 3 — the signature is present in all four.*
+---
+>   ** phi/pi SPANS -0.6945 TO 0.2758 — A RANGE OF 0.9703 — AND THE CONTROL'S 0.2628 IS INSIDE IT. **
+>      *the smallest first-peak transient among the four is 0 in ell against the control's 3 — the signature is present in all four.*
+80,83c80,83
+<        phi=0     0.9761    0.878     281.44
+<     phi=pi/4     0.9761    0.483     245.38
+<     phi=pi/2     0.9814    0.648     224.13
+<       phi=pi     0.9629    1.618     379.35
+---
+>        phi=0     1.0012    2.136       4.99
+>     phi=pi/4     0.9975    2.846      26.36
+>     phi=pi/2     0.9982    3.822     375.15
+>       phi=pi     1.0012    2.133       5.01
+86,87c86,87
+<   ** P1/P2 RUNS 0.483 TO 1.618 AND NEVER REACHES THE SKY'S 2.217. **
+<   ** THE SPACING RUNS 0.9629 TO 0.9814 — 1.9% — ACROSS THE SAME FOUR. **
+---
+>   ** P1/P2 RUNS 2.133 TO 3.822 AND NEVER REACHES THE SKY'S 2.217. **
+>   ** THE SPACING RUNS 0.9975 TO 1.0012 — 0.4% — ACROSS THE SAME FOUR. **
+94,95c94,95
+<   the reading closest in PHASE is phi=pi/2 (|d phi/pi| = 0.1965), and its chi^2/dof is 224
+<   the BEST-FITTING reading is phi=pi/2 at 224, against the control's 3.71 on the same 185 bins
+---
+>   the reading closest in PHASE is phi=pi/4 (|d phi/pi| = 0.0071), and its chi^2/dof is 26
+>   the BEST-FITTING reading is phi=0 at 5, against the control's 3.71 on the same 185 bins
+97c97
+<   ** 60 TIMES THE CONTROL AT THE BEST READING, AND 60 TIMES IT WHILE AGREEING ON THE PHASE. **
+---
+>   ** 1 TIMES THE CONTROL AT THE BEST READING, AND 7 TIMES IT WHILE AGREEING ON THE PHASE. **
+105,112c105,106
+< ALL CHECKS PASS — across four seam phases at production depth the asymptotic acoustic phase
+< spans 0.891 in phi/pi with the control's 0.263 inside that span, so the 0.62 pi is the value
+< at one reading and not a prediction; the peak heights move over 0.48-1.62 and never reach the
+< sky's 2.22; the spacing holds at 0.963-0.981 of l_A; and the phase-matched reading is still
+< sixty times the control, so the phase was never carrying the disagreement.
+< ==============================================================================
+< GATE c54.195 (r2491), `L-508`: four seam phases at production depth span phi/pi = 0.0663-0.9576 (0.891) with the control's 0.2628 inside; the heights span 0.483-1.618 against the sky's 2.217; the spacing holds 0.9629-0.9814; and the phase-matched reading is 60x the control — pinned against `FOR_54` item 38, `L-505`, `L-506`, `L-507` and `L-147` F5.
+< rc=0
+---
+> FAILED: a CR reading shows no transient -- the peak indexing is not established by the test this file uses and PART 1 may be comparing different n; a reading reaches P1/P2 = 3.822, at or past the sky's -- PART 3 is wrong; the phase-matched reading is only 7x the control -- matching the phase DOES largely fix the spectrum and PART 5 is wrong
+> rc=1

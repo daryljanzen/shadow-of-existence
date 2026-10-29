@@ -1,0 +1,402 @@
+{
+ "c54.175_cr_leafrec1": {
+  "stem": "c54.175_cr_leafrec1",
+  "namesake": "c54.175_cr",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0,
+   "LEAFSCALES": 1
+  },
+  "switches": "ARM=cr BSPLIT=0 CRH0=68.570730 CROM=0.291246 ETAEND=4000 LEAFREC=1 LEAFSCALES=1 LMAXL=2000 NK=600 NS=1.015066 POLC=0.8888888889 WBH2=0.021643 ZSTART=3e7",
+  "held": "the point: the namesake sat at the built-in defaults (H0 73, Om 0.3066) with z_onset solved to l_A 301.6; here the arm of record; KFAC=2 (the namesake ran at KFAC=1, which the alias gate now refuses); POLC=8/9 and BSPLIT=0 kept"
+ },
+ "c54.177_cr_leafrec1": {
+  "stem": "c54.177_cr_leafrec1",
+  "namesake": "c54.177_cr",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0,
+   "LEAFSCALES": 1
+  },
+  "switches": "ARM=cr BSPLIT=0 CRH0=68.570730 CROM=0.291246 ETAEND=4000 LEAFREC=1 LEAFSCALES=1 LMAXL=2000 NK=600 NS=1.015066 WBH2=0.021643 ZSTART=3e7",
+  "held": "the point: the namesake sat at the built-in defaults (H0 73, Om 0.3066) with z_onset solved to l_A 301.6; here the arm of record; KFAC=2 (the namesake ran at KFAC=1, which the alias gate now refuses); BSPLIT=0 kept, POLC 16/15 is the default"
+ },
+ "c54.178_cr_leafrec1": {
+  "stem": "c54.178_cr_leafrec1",
+  "namesake": "c54.178_cr",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0,
+   "LEAFSCALES": 1
+  },
+  "switches": "ARM=cr BSPLIT=1 CRH0=68.570730 CROM=0.291246 ETAEND=4000 HIER=1 KBATCH=300 LEAFREC=1 LEAFSCALES=1 LMAXL=2000 NK=600 NS=1.015066 WBH2=0.021643 ZSTART=3e7",
+  "held": "the point: the namesake sat at the built-in defaults (H0 73, Om 0.3066) with z_onset solved to l_A 301.6; here the arm of record; KFAC=2 (the namesake ran at KFAC=1, which the alias gate now refuses)"
+ },
+ "c54.186_cr_KCONT_leafrec1": {
+  "stem": "c54.186_cr_KCONT_leafrec1",
+  "namesake": "c54.186_cr_KCONT",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0,
+   "LEAFSCALES": 1
+  },
+  "switches": "ARM=cr BSPLIT=1 CRH0=68.570730 CROM=0.291246 ETAEND=4000 HIER=1 KBATCH=300 KCONT=1 LEAFREC=1 LEAFSCALES=1 LMAXL=2000 NK=1200 NS=1.015066 WBH2=0.021643 ZSTART=3e7",
+  "held": "the point: the namesake sat at the built-in defaults (H0 73, Om 0.3066) with z_onset solved to l_A 301.6; here the arm of record; KFAC=2 (the namesake ran at KFAC=1, which the alias gate now refuses)"
+ },
+ "c54.186_cr_L3000_leafrec1": {
+  "stem": "c54.186_cr_L3000_leafrec1",
+  "namesake": "c54.186_cr_L3000",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0,
+   "LEAFSCALES": 1
+  },
+  "switches": "ARM=cr BSPLIT=1 CRH0=68.570730 CROM=0.291246 ETAEND=4000 HIER=1 KBATCH=300 LEAFREC=1 LEAFSCALES=1 LMAXL=3000 NK=900 NS=1.015066 WBH2=0.021643 ZSTART=3e7",
+  "held": "the point: the namesake sat at the built-in defaults (H0 73, Om 0.3066) with z_onset solved to l_A 301.6; here the arm of record; KFAC=2 (the namesake ran at KFAC=1, which the alias gate now refuses)"
+ },
+ "c54.191_cr_lA340_L3000_leafrec1": {
+  "stem": "c54.191_cr_lA340_L3000_leafrec1",
+  "namesake": "c54.191_cr_lA340_L3000",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0,
+   "LEAFSCALES": 1
+  },
+  "switches": "ARM=cr BSPLIT=1 CRH0=68.570730 CROM=0.291246 ETAEND=4000 HIER=1 KBATCH=300 LATARG=340 LEAFREC=1 LEAFSCALES=1 LMAXL=3000 NK=900 NS=1.015066 WBH2=0.021643",
+  "held": "the injection l_A=340 held by LATARG=340, so ZSTART is unset and the onset is solved; otherwise the arm of record; KFAC=2 (the namesake ran at KFAC=1, which the alias gate now refuses)"
+ },
+ "c54.191_cr_phipi_L3000_leafrec1": {
+  "stem": "c54.191_cr_phipi_L3000_leafrec1",
+  "namesake": "c54.191_cr_phipi_L3000",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0,
+   "LEAFSCALES": 1
+  },
+  "switches": "ARM=cr BSPLIT=1 CRH0=68.570730 CROM=0.291246 CRPHI=3.1416 ETAEND=4000 HIER=1 KBATCH=300 LEAFREC=1 LEAFSCALES=1 LMAXL=3000 NK=900 NS=1.015066 WBH2=0.021643 ZSTART=3e7",
+  "held": "the point: the namesake sat at the built-in defaults (H0 73, Om 0.3066) with z_onset solved to l_A 301.6; here the arm of record; KFAC=2 (the namesake ran at KFAC=1, which the alias gate now refuses)"
+ },
+ "c54.193_cr_nodrive_L3000_leafrec1": {
+  "stem": "c54.193_cr_nodrive_L3000_leafrec1",
+  "namesake": "c54.193_cr_nodrive_L3000",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0,
+   "LEAFSCALES": 1
+  },
+  "switches": "ARM=cr BSPLIT=1 CRH0=68.570730 CROM=0.291246 ETAEND=4000 HIER=1 KBATCH=300 LEAFREC=1 LEAFSCALES=1 LMAXL=3000 NK=900 NODRIVE=1 NS=1.015066 WBH2=0.021643 ZSTART=3e7",
+  "held": "the point: the namesake sat at the built-in defaults (H0 73, Om 0.3066) with z_onset solved to l_A 301.6; here the arm of record; KFAC=2 (the namesake ran at KFAC=1, which the alias gate now refuses)"
+ },
+ "c54.195_cr_phi0.7854_L3000_leafrec1": {
+  "stem": "c54.195_cr_phi0.7854_L3000_leafrec1",
+  "namesake": "c54.195_cr_phi0.7854_L3000",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0,
+   "LEAFSCALES": 1
+  },
+  "switches": "ARM=cr BSPLIT=1 CRH0=68.570730 CROM=0.291246 CRPHI=0.7854 ETAEND=4000 HIER=1 KBATCH=300 LEAFREC=1 LEAFSCALES=1 LMAXL=3000 NK=900 NS=1.015066 WBH2=0.021643 ZSTART=3e7",
+  "held": "the point: the namesake sat at the built-in defaults (H0 73, Om 0.3066) with z_onset solved to l_A 301.6; here the arm of record; KFAC=2 (the namesake ran at KFAC=1, which the alias gate now refuses)"
+ },
+ "c54.195_cr_phi1.5708_L3000_leafrec1": {
+  "stem": "c54.195_cr_phi1.5708_L3000_leafrec1",
+  "namesake": "c54.195_cr_phi1.5708_L3000",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0,
+   "LEAFSCALES": 1
+  },
+  "switches": "ARM=cr BSPLIT=1 CRH0=68.570730 CROM=0.291246 CRPHI=1.5708 ETAEND=4000 HIER=1 KBATCH=300 LEAFREC=1 LEAFSCALES=1 LMAXL=3000 NK=900 NS=1.015066 WBH2=0.021643 ZSTART=3e7",
+  "held": "the point: the namesake sat at the built-in defaults (H0 73, Om 0.3066) with z_onset solved to l_A 301.6; here the arm of record; KFAC=2 (the namesake ran at KFAC=1, which the alias gate now refuses)"
+ },
+ "item38_cr_phi0.0_prod_leafrec1": {
+  "stem": "item38_cr_phi0.0_prod_leafrec1",
+  "namesake": "item38_cr_phi0.0_prod",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0,
+   "LEAFSCALES": 1
+  },
+  "switches": "ARM=cr BSPLIT=1 CRH0=68.570730 CROM=0.291246 ETAEND=4000 HIER=1 KBATCH=300 LEAFREC=1 LEAFSCALES=1 LMAXL=3000 NK=900 NS=1.015066 WBH2=0.021643 ZSTART=3e7",
+  "held": "the c54.186_cr_L3000 run: CRPHI=0.0 is the default and the namesakes agreed to 4e-9; the point: the namesake sat at the built-in defaults (H0 73, Om 0.3066) with z_onset solved to l_A 301.6; here the arm of record; KFAC=2 (the namesake ran at KFAC=1, which the alias gate now refuses)"
+ },
+ "item38_cr_phi3.1416_prod_leafrec1": {
+  "stem": "item38_cr_phi3.1416_prod_leafrec1",
+  "namesake": "item38_cr_phi3.1416_prod",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0,
+   "LEAFSCALES": 1
+  },
+  "switches": "ARM=cr BSPLIT=1 CRH0=68.570730 CROM=0.291246 CRPHI=3.1416 ETAEND=4000 HIER=1 KBATCH=300 LEAFREC=1 LEAFSCALES=1 LMAXL=3000 NK=900 NS=1.015066 WBH2=0.021643 ZSTART=3e7",
+  "held": "the c54.191_cr_phipi_L3000 run: the namesakes were bit-identical; the point: the namesake sat at the built-in defaults (H0 73, Om 0.3066) with z_onset solved to l_A 301.6; here the arm of record; KFAC=2 (the namesake ran at KFAC=1, which the alias gate now refuses)"
+ },
+ "r4494_cr_leaf_ISWon_leafrec1": {
+  "stem": "r4494_cr_leaf_ISWon_leafrec1",
+  "namesake": "r4494_cr_leaf_ISWon",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0,
+   "LEAFSCALES": 1
+  },
+  "switches": "ARM=cr CRH0=68.570730 CROM=0.291246 LEAFREC=1 LEAFSCALES=1 LMAXL=1300 LSTEP=4 NS=1.015066 WBH2=0.021643 ZSTART=3e7",
+  "held": "the point: the namesake sat at the built-in defaults (H0 73, Om 0.3066) with z_onset solved to l_A 301.6; here the arm of record"
+ },
+ "r4494_cr_leaf_ISWoff_leafrec1": {
+  "stem": "r4494_cr_leaf_ISWoff_leafrec1",
+  "namesake": "r4494_cr_leaf_ISWoff",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0,
+   "LEAFSCALES": 1
+  },
+  "switches": "ARM=cr CRH0=68.570730 CROM=0.291246 LEAFREC=1 LEAFSCALES=1 LMAXL=1300 LSTEP=4 NOISW=1 NS=1.015066 WBH2=0.021643 ZSTART=3e7",
+  "held": "the point: the namesake sat at the built-in defaults (H0 73, Om 0.3066) with z_onset solved to l_A 301.6; here the arm of record"
+ },
+ "r4494_cr_stack_ISWon_leafrec1": {
+  "stem": "r4494_cr_stack_ISWon_leafrec1",
+  "namesake": "r4494_cr_stack_ISWon",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0,
+   "LEAFSCALES": 1
+  },
+  "switches": "ARM=cr CRH0=68.570730 CROM=0.291246 LEAFREC=1 LEAFSCALES=1 LMAXL=1300 LSTEP=4 NS=1.015066 STACKPERT=1 WBH2=0.021643 ZSTART=3e7",
+  "held": "the point: the namesake sat at the built-in defaults (H0 73, Om 0.3066) with z_onset solved to l_A 301.6; here the arm of record; STACKPERT=1 kept (the perturbations on the stacking rate; recombination on the leaf rate)"
+ },
+ "r4494_cr_stack_ISWoff_leafrec1": {
+  "stem": "r4494_cr_stack_ISWoff_leafrec1",
+  "namesake": "r4494_cr_stack_ISWoff",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0,
+   "LEAFSCALES": 1
+  },
+  "switches": "ARM=cr CRH0=68.570730 CROM=0.291246 LEAFREC=1 LEAFSCALES=1 LMAXL=1300 LSTEP=4 NOISW=1 NS=1.015066 STACKPERT=1 WBH2=0.021643 ZSTART=3e7",
+  "held": "the point: the namesake sat at the built-in defaults (H0 73, Om 0.3066) with z_onset solved to l_A 301.6; here the arm of record; STACKPERT=1 kept"
+ },
+ "r6784_cr_crossing_hier_leafrec1": {
+  "stem": "r6784_cr_crossing_hier_leafrec1",
+  "namesake": "r6784_cr_crossing_hier",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0,
+   "LEAFSCALES": 1
+  },
+  "switches": "ARM=cr BSPLIT=1 CRH0=68.570730 CRIC=branchpoint CROM=0.291246 ETAEND=4000 HIER=1 KBATCH=300 LEAFREC=1 LEAFSCALES=1 LMAXL=2000 NK=600 NS=1.015066 WBH2=0.021643 ZSTART=3e7",
+  "held": "the point: the namesake sat at its own CRH0/CROM with ZSTART=3e7 and LEAFSCALES=0; here the arm of record (68.62, 0.2973); CRIC=branchpoint kept"
+ },
+ "r6784_cr_crossing_hier_noCRIC_leafrec1": {
+  "stem": "r6784_cr_crossing_hier_noCRIC_leafrec1",
+  "namesake": "r6784_cr_crossing_hier_noCRIC",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0,
+   "LEAFSCALES": 1
+  },
+  "switches": "ARM=cr BSPLIT=1 CRH0=68.570730 CROM=0.291246 ETAEND=4000 HIER=1 KBATCH=300 LEAFREC=1 LEAFSCALES=1 LMAXL=2000 NK=600 NS=1.015066 WBH2=0.021643 ZSTART=3e7",
+  "held": "the point: the namesake sat at its own CRH0/CROM with ZSTART=3e7 and LEAFSCALES=0; here the arm of record (68.62, 0.2973)"
+ },
+ "r6784_cr_crossing_los_leafrec1": {
+  "stem": "r6784_cr_crossing_los_leafrec1",
+  "namesake": "r6784_cr_crossing_los",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0,
+   "LEAFSCALES": 1
+  },
+  "switches": "ARM=cr BSPLIT=1 CRH0=68.570730 CRIC=branchpoint CROM=0.291246 ETAEND=4000 KBATCH=300 LEAFREC=1 LEAFSCALES=1 LMAXL=2000 NK=600 NS=1.015066 WBH2=0.021643 ZSTART=3e7",
+  "held": "the point: the namesake sat at its own CRH0/CROM with ZSTART=3e7 and LEAFSCALES=0; here the arm of record (68.62, 0.2973); line-of-sight, CRIC=branchpoint kept (README: drop HIER, change nothing else)"
+ },
+ "cc66_cr_x_h686_pol_leafrec1": {
+  "stem": "cc66_cr_x_h686_pol_leafrec1",
+  "namesake": "cc66_cr_x_h686_pol",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0,
+   "LEAFSCALES": 1
+  },
+  "switches": "ARM=cr CRH0=68.570730 CROM=0.291246 HIER=1 LEAFREC=1 LEAFSCALES=1 LMAXL=1300 LSTEP=2 NS=1.015066 WBH2=0.021643 ZSTART=3e7",
+  "held": "the point: the namesake sat at its own CRH0/CROM with ZSTART=3e7 and LEAFSCALES=0; here the arm of record (68.60, 0.2973)"
+ },
+ "cc66_cr_x_h6862_pol_leafrec1": {
+  "stem": "cc66_cr_x_h6862_pol_leafrec1",
+  "namesake": "cc66_cr_x_h6862_pol",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0,
+   "LEAFSCALES": 1
+  },
+  "switches": "ARM=cr CRH0=68.570730 CROM=0.291246 HIER=1 LEAFREC=1 LEAFSCALES=1 LMAXL=1300 LSTEP=2 NS=1.015066 WBH2=0.021643 ZSTART=3e7",
+  "held": "the cc66_cr_x_h686_pol run: the pair differed ONLY in CRH0 (68.60 vs 68.62), and on the arm of record both are the one point; the point: the namesake sat at its own CRH0/CROM with ZSTART=3e7 and LEAFSCALES=0; here the arm of record"
+ },
+ "cc66_cr_x_h686_L2000_leafrec1": {
+  "stem": "cc66_cr_x_h686_L2000_leafrec1",
+  "namesake": "cc66_cr_x_h686_L2000",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0,
+   "LEAFSCALES": 1
+  },
+  "switches": "ARM=cr CRH0=68.570730 CROM=0.291246 HIER=1 LEAFREC=1 LEAFSCALES=1 LMAXL=2000 LSTEP=2 NS=1.015066 WBH2=0.021643 ZSTART=3e7",
+  "held": "the point: the namesake sat at its own CRH0/CROM with ZSTART=3e7 and LEAFSCALES=0; here the arm of record (68.60, 0.2973)"
+ },
+ "cc66_refit_verify_cr_leafrec1": {
+  "stem": "cc66_refit_verify_cr_leafrec1",
+  "namesake": "cc66_refit_verify_cr",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0,
+   "LEAFSCALES": 1
+  },
+  "switches": "ARM=cr CRH0=68.570730 CROM=0.291246 HIER=1 LEAFREC=1 LEAFSCALES=1 LMAXL=1300 LSTEP=8 NS=1.015066 WBH2=0.021643 ZSTART=3e7",
+  "held": "the point: the namesake sat at its own CRH0/CROM with ZSTART=3e7 and LEAFSCALES=0; here the arm of record (the cc66 refit minimum, ~68.6077/0.2967/0.0217/0.9949, digits unrecorded)"
+ },
+ "cc66_cr_x_lstep1_leafrec1": {
+  "stem": "cc66_cr_x_lstep1_leafrec1",
+  "namesake": "cc66_cr_x_lstep1",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0,
+   "LEAFSCALES": 1
+  },
+  "switches": "ARM=cr CRH0=68.570730 CROM=0.291246 HIER=1 LEAFREC=1 LEAFSCALES=1 LMAXL=1300 LSTEP=1 NS=1.015066 WBH2=0.021643 ZSTART=3e7",
+  "held": "\u26a0 LOW CONFIDENCE: no command was recorded for the namesake (default background, LMAXL=1300, LSTEP=1); rebuilt as HIER=1 LSTEP=1 LMAXL=1300 on the arm of record"
+ },
+ "r6794_cr_crossing_kcont_summed_leafrec1": {
+  "stem": "r6794_cr_crossing_kcont_summed_leafrec1",
+  "namesake": "r6794_cr_crossing_kcont_summed",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0,
+   "LEAFSCALES": 1
+  },
+  "switches": "ARM=cr BSPLIT=1 CRH0=68.570730 CROM=0.291246 ETAEND=4000 HIER=1 KBATCH=150 KCONT=1 LEAFREC=1 LEAFSCALES=1 LMAXL=2000 NK=900 NS=1.015066 WBH2=0.021643 ZSTART=3e7",
+  "held": "six KSLICE pieces of 450 summed (2700 continuum modes), as r6794; the point: the namesake sat at its own CRH0/CROM with ZSTART=3e7 and LEAFSCALES=0; here the arm of record (68.62, 0.2973)"
+ }
+}
