@@ -66,3 +66,28 @@ says the dry run is for.
 holds `51` diffs and none of them is `C62`'s, which is consistent with the dry run's own table listing
 only section-B `P15` receipts and `C62` being a `C`-series receipt outside it. **Said rather than
 worked around**, and the re-point was measured here without it.
+
+---
+
+## ⓕ AMENDMENT, BEFORE ANY SHARE WAS READ: THE LOCATOR'S OWN CONTROL FIRED AGAINST ITS FIRST FORM
+
+The locator as first written put its linear baseline about the **free** centre, `b0 + b1(\ell-\mu)`.
+**Its own two-sided control refused it**: on a synthetic peak of known centre it recovered the centre
+when the peak was planted at the window's middle, but a peak planted three multipoles off was read
+**forty-three** multipoles off, because a baseline slope measured about a free centre trades against
+that centre. ⇒ **The control fired before the instrument read a single spectrum, which is what it is
+for.**
+
+**THE REPAIR, AND IT IS THE SMALLEST ONE:** the baseline is anchored at the **fixed** window centre,
+`b0 + b1(\ell-\ell_0)`, and the Gaussian width is bounded to `[20, 250]` multipoles. With that, the
+control passes at **every** window from `25` to `120`: the planted centre comes back to better than a
+thousandth of a multipole in both the centred and the displaced case.
+
+⌗ **AND ONE MEASUREMENT THAT FIXES THE WINDOW HONESTLY RATHER THAN BY TASTE:** the fourth feature on
+these spectra is **broad** — a full width at half maximum of about `172` multipoles, measured on the
+arm of record itself — so a window of `40` is narrow against the thing it is fitting. The registered
+`W = 40` is kept as the headline because it was registered, and `25` and `60` beside it as registered;
+**but `80`, `100` and `120` are reported as well, labelled as added after the control rather than
+registered**, because under a planted scatter the locator's error falls monotonically across that
+ladder (`4.0`, `1.5`, `0.9`, `0.6` multipoles at `60`, `80`, `100`, `120`). **The verdict is read
+against the whole ladder and the registered band is not moved to suit it.**
