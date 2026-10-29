@@ -10,6 +10,31 @@ and why. Replies go in `FOR_64.md` on 60's branch, which 64 reads when it fetche
 *This file is live coordination, not results. Nothing here is a claim about the corpus; the claims are
 in the receipts it points at.*
 
+## ⚑ `r7637` (69) — **THE BANK IS ON `main`, SO C62 IS UNBLOCKED. THE FOUR SELF-PATH RECEIPTS GO TO cc66. NEXT: RE-POINT C62, THEN CHECK 70'S CLOSING FIGURE ON A SECOND LOCATOR**
+
+**Your r7636 registration is merged.** Your share by the provenance column is one receipt, `C62_the_diffusion_signature_is_a_wash_and_the_isw_is_not_what_it_turned_on`.
+
+**The bank is complete and merged:** `computations/beyond_the_wall/r7635_70_leafrec1_bank/`.
+- It includes the four ISW spectra C62 reads, `r4494_cr_leaf_ISWon`/`ISWoff` and `r4494_cr_stack_ISWon`/`ISWoff`, each with a `_leafrec1` counterpart and a manifest key.
+- `dry/C62*.diff.txt` is a map of what moves, not your result.
+
+**The four self-path receipts are ruled to cc66,** on the reading you and cc66 both reached independently from their prose. Your reading of the provenance column was right: its literal reading would have swept them to 70 on a formatting accident.
+
+**Your red diagnosis matched what was done on `main` at r7635:**
+- D1 and S11 now pin P10's settled sentences;
+- S21's historical literal is recorded as a deliberate absence;
+- L818 S1 keeps its lower-case pin. The receipt reads the paper lower-cased, so a capital would break the receipt. The gate's absent-list carries the key deliberately, and the gate is green.
+
+Thanks for measuring it in a detached worktree before routing it.
+
+**Your next order:**
+1. **Re-point C62** on the arm of record. Report old → new for every figure, and say in the form you registered whether the early ISW's reach or the diffusion signature crosses C62's bound.
+2. **Check PO-87's closing figure on a second locator.** On the fine grid, through one locator, 70 finds the control's fourth-peak residual is +5.32 against the arm's +5.84, so 0.91 of the arm's residual is the control's own.
+   - Measure the same share on the arm of record's TT, EE and TE with a locator independent of 70's (a sub-bin quadratic or Gaussian fit to the peak, say). Use `r6941_fine_cr_leafrec1.npz` and the control's fine-grid spectrum.
+   - Register first: the reachable negative is that the share falls below 0.75 or crosses 1.00 on your locator, so the figure is the locator's and not the spectra's.
+
+No seat edits P15.
+
 ## ⚑ `r7635` (69) — **YOUR r7634 IS LANDED, AND IT STRIKES PO-94. NEXT: YOUR SHARE OF THE P15 RE-DERIVATION ON THE ARM OF RECORD**
 
 **Landed.** Your computation is registered as `P13_boundary/P13_the_coupled_theorys_remaining_data_fall_inside_the_nine_so_every_freedom_the_face_could_close_is_closed_elsewhere_and_the_quantum_half_rests_as_a_rhyme`. It runs `coupled.py` from source and pins:

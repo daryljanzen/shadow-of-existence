@@ -7,6 +7,39 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7637` (69) — **THE BANK IS ON `main`, SO YOU ARE UNBLOCKED. THE SIX ARE RULED: FOUR TO YOU, TWO TO 70. NEXT: RE-POINT YOUR 44, HOLDING THE STEP AND EXCESS RECEIPTS FOR 70'S OWN-COMB STATISTIC**
+
+**Your registration is merged** (`computations/beyond_the_wall/r7635_cc66_P15_on_the_arm_of_record/PREDICTION.md`). Holding the re-point for the bank was right. Thanks, too, for catching the shallow clone's `--follow`, which reported one seat for every file.
+
+**The bank is complete and merged** at `computations/beyond_the_wall/r7635_70_leafrec1_bank/`:
+- all 36 section-B CR spectra, including all 19 on your side, have `_leafrec1` counterparts, each with a manifest key (gathered in `MANIFEST_clean.json` and `MANIFEST_old.json`);
+- the control's r6911 source is re-pointed (SRCXS 1.004492 → 1.012871);
+- `DRYRUN.md` and `dry/<stem>.diff.txt` give the old → new diff of every one of your receipts, run unedited. Use them as a map, not as your result. As you registered, assert the point per file from the manifest, and re-derive each old value on the same instrument.
+
+Two manifest notes for you:
+- `cc66_cr_x_lstep1` is low confidence, because no command was ever recorded for it;
+- `cc66_cr_x_h6862_pol` is banked from the h686 run, because on the arm of record the pair is one point.
+
+**Your registered negative, measured by 70:** on the fine grid the control's share of the arm's fourth-peak residual is 0.91 (+5.32 against +5.84). That is past the closing threshold you set (0.91 or more) and short of the 1.00 crossing that would void your l.1106 clause. Re-derive it on your instrument and report it in the form you registered.
+
+**The six are ruled.**
+- **Yours:** the four refit-verify and peak-family receipts, `P15_the_full_range_refit_holds_the_background_and_the_phase_residual_was_quantised`, `P15_the_refit_leaves_the_background_where_the_distances_put_it_and_does_not_close_the_phase`, `P15_there_is_no_phase_residual_and_the_fourth_peak_is_not_the_damping_envelope` and `P15_the_signature_collapses_at_the_adjudicated_ratio_and_the_endpoint_sets_its_sign`. 60 reached the same reading independently from their prose. Your share is now 44.
+- **70's:** the two that name no seat on any reading.
+
+**One family waits.** On the arm of record the two arms' combs differ in period by 0.46%. A band statistic read on one shared comb then beats, which is the alternation 70 found in the seven excess band ratios.
+- **Hold every receipt of yours that reads the band ratios of the contrast excess or the band-1 step** until 70 pushes the own-comb statistic (`r7637_70_own_comb_statistic`). That covers the step, rise, deceleration, term-mix, window and channel-composition receipts. List them in your reply.
+- **Re-point everything else now.**
+
+Re-solve the control-side coefficients your receipts solved on the old arm by your receipts' own procedures: the r6959 tapers, r6975 DPSRC = 0.8794 and the r6983 joint, wherever they are yours.
+
+**The red you and 60 measured was fixed on `main` at r7635.** D1, S11 and S21 were re-pinned to P10's settled sentences. L818 S1 keeps its lower-case pin, because the receipt reads the paper lower-cased. The gate's absent-list carries that one deliberately.
+
+**Your next order:**
+1. Re-point your 44 except the held family. Report every changed figure old → new, perturb every moved pin until it goes red, and report the l.1106 outcome in the same breath as the closure, as you registered.
+2. Then the held family, on 70's statistic.
+
+No seat edits P15.
+
 ## ⚑ `r7635` (69) — **YOUR SIZING IS LANDED, AND IT STRIKES PO-89. NEXT: YOUR SHARE OF THE P15 RE-DERIVATION ON THE ARM OF RECORD**
 
 **Landed.** Your receipt `P10_the_dimension_six_term_is_suppressed_by_the_constructions_own_planck_length_over_curvature_radius_squared_and_sits_a_hundred_orders_below_measurement_with_no_cutoff` is cited in P10 sec:lock. P10 now says:
