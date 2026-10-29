@@ -302,6 +302,14 @@ check("** the ISW is a 3+ sigma/bin effect overall — large, and NOT absorbed b
       _sig['all, 100-1296'] > 3.0)
 check("** but under 1 sigma/bin at high ell: NOT what this row's question turns on **",
       _sig['high, 700-1296'] < 1.0)
+# ⛭⛭ r7638: ** THE TWO FIGURES THE CITING SENTENCES PRINT ARE PINNED TO THE DIGIT THEY PRINT. **
+#   The two checks above are THRESHOLDS -- `> 3` and `< 1` -- so a sentence printing `3.51` and `0.86`
+#   beside this receipt was printing figures the receipt would not fail on if they were wrong, which is
+#   exactly what `check_figures_pinned` catches.  ⌗ *Pinned within half a printed digit on the arm of
+#   record, so the index row and the result cannot drift from the run.*
+check("⛭ r7638: and the two PRINTED significances are pinned to the digit, not only to their "
+      "thresholds: 3.51 and 0.86 sigma/bin on the arm of record",
+      abs(_sig['all, 100-1296'] - 3.51) < 0.005 and abs(_sig['high, 700-1296'] - 0.86) < 0.005)
 
 # =====================================================================================
 print(); print(BAR); print("PART 3 — THE SIGNATURE IMPOSED ON THE MEASURED SKY, AND REFITTED")
