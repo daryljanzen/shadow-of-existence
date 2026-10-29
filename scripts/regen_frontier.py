@@ -262,6 +262,10 @@ EST = {
         'temperature -- a correct strike with the item lying beyond it. '),
     'PO-87': ('a mechanism for the computed spectrum\'s shape deficit, its two halves reported apart',
         2, 2, 3, 'P15\'s acoustic figures re-derived on the leaf-rate arm of record',
+        'r7637 LANDS r7635+70: the bank on the arm of record is complete, all 36 section-B CR spectra with manifests, '
+        'and all 51 receipts are run on it unedited; on the fine grid 0.91 of the arm\'s fourth-peak residual is the '
+        'control\'s own; the excess/step statistic is RULED rebuilt on each arm\'s own comb before re-pinning, and the '
+        'c54 family pinned to its superseded instrument with its P15 sentences re-grounded or withdrawn. '
         'r7635 LANDS r7633+70: refitted at the ruled configuration the arm\'s fourth feature is the control\'s to under a '
         'multipole in TT, EE and TE (0.69, 0.92, -0.21; jointly 0.09 sigma), so that clause TERMINATES; the census finds '
         'all 90 banked CR spectra off the leaf rate, read by 51 P15 receipts, and the row\'s live clause is their '

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""P4 sec:sw -- THE TIMESCAPE MODEL FALLS INSIDE THE HYPOTHESIS THE FLOOR TESTS: its walls and voids expand at
+"""P4 sec:timescape -- THE TIMESCAPE MODEL FALLS INSIDE THE HYPOTHESIS THE FLOOR TESTS: its walls and voids expand at
 different rates in the volume-average time, and its clock postulate does not keep that difference out of the
 redshift.  A photon gains the local rate per unit of local proper time, so per unit of volume-average time it gains
 the region's own rate, H_v or H_w; the clock rates enter only at the ends of the path.
@@ -62,7 +62,7 @@ draws = (rng.random((nray, ts.size)) < fv(ts)).astype(float)
 dev = ((draws - fv(ts)) * dH).sum(axis=1)
 print(f"cells per ray {ts.size}; rms analytic {np.sqrt(var_an):.3e}, Monte Carlo {dev.std():.3e}")
 assert abs(dev.std()/np.sqrt(var_an)-1) < 0.05
-# (iii) PINNED: the figures P4 sec:sw quotes, against the whole measured anisotropy (P4 sec:floor, Planck 2018)
+# (iii) PINNED: the figures P4 sec:timescape quotes, against the whole measured anisotropy (P4 sec:floor, Planck 2018)
 for Lh, quoted in [(10, 2.4e-2), (30, 4.2e-2), (50, 5.4e-2)]:
     assert abs(RMS[Lh] - quoted) < 0.05e-2, (Lh, RMS[Lh], quoted)
 ANISO = 4.1e-5
