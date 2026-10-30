@@ -1553,6 +1553,83 @@
     "since": "70838a8e8ea317adcd87dc4b3ebc337092d1caf2",
     "unmeasured": true
    }
+  },
+  "tolerance": {
+   "receipts/L255_the_exemption_was_a_claim/E1_an_exemption_is_a_claim_and_all_three_were_false.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41103612118",
+    "since": "70838a8e8ea317adcd87dc4b3ebc337092d1caf2",
+    "unmeasured": true
+   },
+   "receipts/L_numerics/Q1_a_stated_tolerance_is_a_request_and_the_corpus_answers_it.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41103612118",
+    "since": "70838a8e8ea317adcd87dc4b3ebc337092d1caf2",
+    "unmeasured": true
+   },
+   "receipts/L_probability/S11_a_sweep_can_contain_its_own_gates_by_scoping_the_assertion_to_its_own_push_and_the_population_it_would_have_swept_is_mostly_another_seats.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41103612118",
+    "since": "70838a8e8ea317adcd87dc4b3ebc337092d1caf2",
+    "unmeasured": true
+   },
+   "receipts/L_probability/S13_the_thirty_are_read_and_the_fifth_bucket_is_an_absence_guard_with_no_positive_control.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41103612118",
+    "since": "70838a8e8ea317adcd87dc4b3ebc337092d1caf2",
+    "unmeasured": true
+   },
+   "receipts/L_probability/S50_the_eleven_close_whole_and_all_three_arms_fail_high_because_two_of_them_were_measuring_one_quantity.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41103612118",
+    "since": "70838a8e8ea317adcd87dc4b3ebc337092d1caf2",
+    "unmeasured": true
+   },
+   "receipts/L_probability/S51_the_queue_closes_whole_and_both_arms_fail_because_one_arbiter_was_counting_its_own_ledger_and_the_other_counts_a_defect_the_fix_removes_before_the_record.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41103612118",
+    "since": "70838a8e8ea317adcd87dc4b3ebc337092d1caf2",
+    "unmeasured": true
+   },
+   "receipts/L_probability/S54_a_ledger_change_scopes_five_receipts_and_none_of_the_forty_four_that_read_the_ledger_because_the_read_index_is_a_list_of_spellings_without_tsv_on_it.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41103612118",
+    "since": "70838a8e8ea317adcd87dc4b3ebc337092d1caf2",
+    "unmeasured": true
+   },
+   "receipts/L_probability/S55_the_previous_repairs_own_written_safety_argument_was_the_defect_because_a_shrinking_population_is_safe_for_a_restraint_and_fatal_for_the_non_vacuity_read_off_the_same_range.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41103612118",
+    "since": "70838a8e8ea317adcd87dc4b3ebc337092d1caf2",
+    "unmeasured": true
+   },
+   "receipts/L_probability/S56_a_pin_is_only_as_good_as_what_resolves_it_and_one_reference_over_resolved_while_the_other_under_resolved_so_both_wanted_the_fact_committed_beside_the_measurement.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41103612118",
+    "since": "70838a8e8ea317adcd87dc4b3ebc337092d1caf2",
+    "unmeasured": true
+   },
+   "receipts/L_probability/S58_the_repair_was_right_and_the_reason_written_beside_it_was_false_because_a_pin_keyed_by_an_abbreviation_is_keyed_by_a_length_the_environment_picks.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41103612118",
+    "since": "70838a8e8ea317adcd87dc4b3ebc337092d1caf2",
+    "unmeasured": true
+   },
+   "receipts/L_probability/S59_the_census_of_a_shape_inside_one_file_missed_the_clause_four_lines_from_the_pin_that_fixes_it.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41103612118",
+    "since": "70838a8e8ea317adcd87dc4b3ebc337092d1caf2",
+    "unmeasured": true
+   },
+   "receipts/L_probability/S60_the_test_that_asks_whether_a_literal_is_anywhere_in_the_repo_cannot_see_a_dead_pin_in_its_own_container.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41103612118",
+    "since": "70838a8e8ea317adcd87dc4b3ebc337092d1caf2",
+    "unmeasured": true
+   },
+   "receipts/L_probability/S8_the_source_half_is_the_blinder_one_and_the_class_is_mostly_a_receipt_pinning_a_ledger_not_another_receipt.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41103612118",
+    "since": "70838a8e8ea317adcd87dc4b3ebc337092d1caf2",
+    "unmeasured": true
+   },
+   "receipts/P15_CR_cosmology/C64_the_first_sixty_eight_keys_of_the_prefix_are_read_and_the_repair_owed_fraction_is_four_point_four_per_cent_with_both_mechanisms_present_in_shapes_the_flag_cannot_see.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41103612118",
+    "since": "70838a8e8ea317adcd87dc4b3ebc337092d1caf2",
+    "unmeasured": true
+   },
+   "receipts/P15_CR_cosmology/C65_the_next_sixty_keys_are_all_source_and_none_is_a_repair_so_last_cycles_prediction_is_wrong_and_all_three_repair_forms_already_exist_in_this_prefix.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41103612118",
+    "since": "70838a8e8ea317adcd87dc4b3ebc337092d1caf2",
+    "unmeasured": true
+   }
   }
  },
  "claude/shadow-of-existence-setup-6awafl": {
