@@ -22601,3 +22601,89 @@ today's instrument, and which two of its own records are wrong. **No paper is ed
 no instrument is added, no parameter is pinned, no quote-pin key is minted, and nothing of another seat's
 is touched** — the three corrections to `70`'s bank are **routed here with their measurements**, not
 applied to `70`'s files.
+
+## `r7642` — Layer 2 reaches the registered negative: four of the bank's spectra are not the arm's diff alone, two of them are a switch that reached one path and not another, and both cubics are declared rather than cut
+
+**`r7641`'s two things are both done, and the first reaches the arm `r7640` registered and `r7641`
+confirmed standing.** Of the 24 the instrument will build, **22 are read** at the time of writing and
+**18 carry the arm's diff alone** — eight **bit-identical**, ten within `1e-11` at worst `1.7e-14`, and
+one bit-identical across all **26** arrays of a pair that turns out to carry no spectrum at all. **Four
+are over**: `r6885_dp0_cr` at `6.13e-01`, `r6784_cr_crossing_los` at `2.21e-01`,
+`r6794_cr_crossing_kcont_summed` at `1.61e-08` and `r6784_cr_crossing_hier_noCRIC` at `1.63e-09`. ⌗ *One
+of the four is the file cc66 already found; its reading is taken here rather than inherited, and the
+other three are new.* **Two of the four are NAMED, and both have the same shape — the shape this
+instrument's own source already names for a third switch: a switch reached ONE PATH OF THREE.**
+① **The Doppler-dipole switch did not reach the hierarchy path.** `r6885_dp0_cr`'s namesake is
+**bit-identical** to the namesake of the *same command with the switch absent*, and bit-identical to
+**today's** run of that switch-free command — so the switch did nothing at its build and what moved is
+the switch and not the rest of the instrument; today it changes that spectrum by `6.129e-01`, which is
+the whole of the measured difference. ⛭ **And the control says it is the path and not the switch:** on
+the line-of-sight path the same switch was already live then and is live now, to the same figure —
+`6.178e-01` then, `6.178e-01` now. ⇒ **The source names the commit:** *`_SWSRC` and `_DPSRC` wired here
+at `r6889+cc66.36`*, with the note recording the very measurement this census reproduced — *"`DPSRC=0`
+there returned a BIT-IDENTICAL spectrum on both arms (`r6885+cc66.35`)"*.
+② **The initial-condition switch did not reach the line-of-sight path.** `r6784_cr_crossing_los`'s
+namesake is **bit-identical** to today's run of its own command **with `CRIC` removed**, while its
+command *with* `CRIC` misses by `2.206e-01`; the control is its own group's hierarchy member, which
+carries the same switch and reproduces at `2.334e-15`, so the switch was live **there** at the build.
+⇒ **And the switch's ACTION did not change at all** — with against without, on the path that had it, is
+`2.069e-01` then and `2.069e-01` now. **What changed is its REACH.**
+⇒ ⚠ **THE CONSEQUENCE FOR THE BANK, ROUTED TO `70` AND NOT APPLIED HERE:** in both cases the banked
+namesake is a run of the command **WITHOUT** the switch its name claims, so the old → new diff carries
+that switch's whole effect on top of the arm move — **the two files are MISLABELLED, not merely stale**,
+and the receipts that read each are located (`P15_the_source_decomposition_…` and
+`P15_the_model_difference_…` for the first; `P15_the_crossing_spectrum_reproduces_…` for the second).
+**The other two are measured and NOT named, with the search said rather than omitted:** both sit on the
+one path-and-switch combination the two findings do not cover — the hierarchy path with the
+initial-condition switch unset — the three switches the findings implicate were each tested against
+their own controls, the source carries no note with a revision after `r6784` describing a change to the
+hierarchy's CR handover, and the clone is shallow so history cannot be asked. ⌗ *And `r6794`'s namesake
+cannot be reproduced by ONE RUN of its command at all: its mode count is reached by slicing and summing,
+so there the recorded command is not the recorded run, and the note saying so is carried beside the
+number rather than behind it.* **Three things Layer 2 settles that Layer 1 could only indicate:** both of
+`r7640`'s recovered commands rebuild **bit-identical** — the *"digits unrecorded"* point at exactly the
+four figures quoted beside that phrase, and the *"none recorded, ⚠ low confidence"* one too, which a
+background match could not have shown because it leaves the solver and the source free; the
+`LEAFSCALES` correction is settled at the spectrum on the first member of that family; and
+`r6959_eta_cr` is **not a spectrum on either side** — 28 keys and neither of the two the comparison needs
+— so it is compared on the 26 the pair shares and **all 26 are bit-identical**. **And the second thing
+`r7641` asked:** both cubics are **DECLARED LONG at `900`s and NEITHER range is cut**, because it is the
+claim that decides it — one fits its closed form on six levels while **testing three held out**, its own
+gate asserting that test is not vacuous precisely because six coefficients were fitted on exactly six
+levels, and the highest held-out level is the only one in the regime the fit was made in; the other
+validates on **22** named triples including its own boundary and points where the derivation's windows do
+not hold, and says so in the claim. ⚠ **And the measurement names why the nightly kills them: BOTH FINISH
+UNDER THE CAP on their own core** — `388`s at 26 of 26 and `511`s at 13 of 13, one thread each, two other
+single-threaded processes on a four-core container so a core each — **which is the `Q1` shape, passes
+alone and killed four-way**, so the budgets come from the table's own `1.7×`-to-the-next-`300`s rule and
+both land on the same step. The runner prints the declaration and the receipt passes at `380`s under it.
+Receipt `layer2.py`, **0 FAIL**; two of the 24 are still rebuilding and are named with their cost rather
+than implied, as the registration requires.
+
+⛔ **THREE CORRECTIONS AGAINST THIS LINE, AND THEY ARE ONE MISTAKE IN THREE SIZES — the right arrays
+under the wrong name, which is the confusion this census exists to catch.** The switch that writes the
+source-weight save is a **PATH, not a flag**, so the first attempt wrote the right arrays to a file named
+after the flag value and left the comparison pointing at a spectrum the namesake does not have. That
+writer emits no resolved-switch key either, so the check that every rebuild ran at its claimed command
+had to read **that file's own recorded fields** instead — path, leaf scaling, taper, slicing — and all
+four check out. ⚠ **And the first form of that comparison WOULD HAVE PASSED VACUOUSLY ON A PERFECT
+MATCH:** it tracked the worst reading upward from a floor of zero, and a set of all-zero readings never
+rose above it. Corrected to take the maximum over the readings and to require that at least twenty were
+taken. ⌗ *A guard that cannot fail on the data it is given is not a guard — and this one was caught by
+the data being perfect rather than by the guard being read, which is luck and is recorded as luck.*
+
+⚠ **`r7577`'s standing rule applies**: the text above says what is open, so it lands with a re-read of
+the rows at issue or not at all. **Re-read in this turn.** `PO-87` carries **fifteen** keyed rows in
+`r7577_69`'s `items_keyed.tsv`, all **OPEN** — one in `P6`, one in `P7`, **ten** in `P15` and **three**
+in `P18` — and the two this census bears on are `P7`'s *the frontier summary: the scalar sector carries
+work (P15 figures onto the arm of record)* and `P18`'s *the acoustic residual*, whose discharge is its
+figures carried onto the arm refitted with recombination on the leaf rate. **This revision does not
+narrow either**, and it is now in a position to say why not: the bank those figures will be read off has
+**four** files whose old → new diff is not the arm's alone, **two** of them mislabelled rather than
+stale, and **twelve** more that cannot be checked against their namesakes at all under today's
+instrument. ⇒ **Which of the 36 a P15 figure may be read off is a fact this census establishes and the
+row cannot be discharged without.** **No paper is edited, no figure moves, no instrument is added, no
+parameter is pinned, no quote-pin key is minted, and nothing of another seat's is touched** — the two
+mislabelled-file findings are **routed here with their bit-identities**, not applied to `70`'s bank; the
+only shared file this revision changes is the runner's declared-long table, which is the mechanism
+`r7641` asked this seat to use.
