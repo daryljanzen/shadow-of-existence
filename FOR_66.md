@@ -28978,3 +28978,97 @@ the control for both obstructions and a licence gate on the receipt's published 
 perturbations, every one red**: the centre read forced to the distances' point, the banked run pointed
 back, the grid pointed back, the manifest-disagreement literal changed, the licence ratio moved by a
 hundredth, the phase-reversal finding inverted, and the ratio bound told that it falls.*
+
+---
+
+# `r7641+cc66.42` — grid reader 6 measured, ⛔ **one of my gates was green by a path-prefix accident, and is now green on purpose**
+
+The last of the six. Its substantive reading survives the arm, two of its margins do not, and ⛭ **the
+most valuable thing in it is not the re-point at all: a limb of `Ⓑ①` has been passing on `main` for a
+reason unconnected to what it checks.**
+
+## ⛔⛭⛭ ⓵ THE ACCIDENT, AND WHY IT IS A REPAIR RATHER THAN A RED
+
+`Ⓑ①`'s third limb requires **every `RBFAC` spectrum in the whole tree** to sit under the directory
+this receipt's own ask produced. It tested that with a **raw string prefix** —
+`os.path.abspath(f).startswith(os.path.abspath(ASKDIR))`, no separator. 70's second bank added three
+more `RBFAC` spectra, in **`r7201_cc66_loading_lever_leafrec1/`**.
+
+> *That directory's name happens to begin with `r7201_cc66_loading_lever`, so the test went on
+> passing. Separator-aware, three files fall outside and the limb would be **RED on `main` right
+> now**.* ⇒ ** Had 70 called the directory anything else — `r7639_lever_leafrec1`, say — a gate of
+> mine would have gone red for a reason having nothing to do with its claim. **
+
+**The gate's intent is intact**, which is what makes this a hardening and not a retraction: all three
+new files are `cr_rb0.1`, `cr_rb0.5`, `cr_rb1.5` — *the same ask's runs, re-run on the arm of record*.
+So the claim "no `RBFAC` spectrum in tree is outside this receipt's granted ask" is still true. ⇒ *Both
+directories are now **named**, the test is separator-aware, and the counts print per directory
+(`5` + `3` = `8`).*
+
+⌗ **And the hardening is proved to close a real hole, not a cosmetic one.** Planting an `RBFAC`
+spectrum in `r7201_cc66_loading_lever_stray/` — a directory that *shares the prefix* but is not the
+ask: **the hardened receipt goes RED and the raw-prefix form stays GREEN.** *Same tree, same file, two
+implementations, opposite verdicts.*
+
+⌗ *And I swept for the class rather than fixing the instance. Across every receipt and every corpus
+checker there is exactly one other raw path-prefix test and one near-miss, and **neither is a
+fragility**: `S2_the_quote_pin_backlog_…`'s `MINE_DIR` is `'receipts/P15_CR_cosmology/'` — it already
+carries the trailing separator — and `the_resolution_table_…`'s `not p.startswith(ROOT)` fails in the
+SAFE direction, flagging a sibling root rather than admitting one. **Reported as clean rather than
+left as an implied debt.**
+
+## ⓶ WHAT THE ARM DOES TO THE READING
+
+| figure | namesake | **arm of record** |
+|---|---|---|
+| move needed, $H_0$ | `4.0%` | **`6.0%`** |
+| move needed, $\Omega_m$ | `6.2%` | **`7.5%`** |
+| move needed, $n_s$ | `5.2%` | **`10.2%`** |
+| move needed, $\omega_b$ | `4.1%` | **`4.2%`** |
+| spread, most vs least responsive | `1.55×` | **`2.44×`** |
+| convention disagreement | `47.46×` | **`3.18×`** |
+| base slope, one-clock | `-1.1149e-04` | **`+1.0651e-03`** |
+| base slope, licensed | `-1.7729e-04` | **`+1.3389e-04`** |
+| driving-off slope | `+1.4607e-04` | **`+4.5070e-04`** |
+
+**⓷ `Ⓒ①`'s conclusion survives and its TELL weakens — and the tell is in the receipt's title.** The
+registered gate asserted a `4`–`6` per cent move on every direction and a spread under two. Here the
+moves run `4.2`–`10.2` and the spread is `2.44×`. ⇒ *The conclusion is untouched: a factor of two and
+a half still identifies no carrier, and the two independent reasons stand. What weakens is
+**"a primordial tilt moves it AS MUCH AS the baryon density"** — on the namesake $n_s$ needed `5.2%`
+against $\omega_b$'s `4.1%`, a factor of `1.28`; here it needs `10.2%` against `4.2%`, so $\omega_b$ is
+**two and a half times the more responsive**.* ⛭ *Restated as this arm's measurement, not carried over.*
+
+**⛭⛭ ⓸ And `Ⓒ③` survives while its headline number turns out to have been a near-zero artefact.** The
+namesake's `47×` convention disagreement is a ratio of *moves*, and a move is
+$(k_{\rm obs}-k)/(\mathrm dk/\mathrm d\ln\theta)$ — so a derivative near zero sends the move to
+infinity and the ratio with it. The namesake's licensed-grid $\Omega_m$ derivative is `+2.56e-04`,
+**twenty times smaller** than the arm of record's, which is where its `-293.6%` move and hence the
+`47×` come from. ⇒ *** On the arm of record that near-zero is absent and the disagreement is a clean
+`3.18×`. The conclusion is BETTER supported here than where it was made. ***
+
+## ⓹ AND `Ⓑ②`'s LITERALS CANNOT BE CARRIED OVER — WITH A BETTER FORM MEASURED
+
+`Ⓑ②` pins the grids' own lever values as literals: `WBH2 ['0.0216','0.0232']`, `NS
+['0.945','0.985']`. The arm-of-record grids record **three** values each
+(`['0.020843','0.021643','0.022443']`, `['0.995066','1.015066','1.035066']`) because their base writes
+them explicitly where the namesake's leaves them at the default. ⇒ *The literal form holds on one bank
+only.* ⛭ **The meaning-form holds on both and on any future centre, and is measured here: on each grid
+the extreme values straddle that grid's OWN centre by exactly one step — `0.000800` against
+`STEP['WB']`, `0.020000` against `STEP['NS']`, on both arms.** *That is the gate a re-point should
+carry, and nothing is weakened by it.*
+
+## ⌗ ⓺ AND ONE PERTURBATION DID NOT FIRE, WHICH CHANGED THE INSTRUMENT
+
+Replacing the lifted `K_OBS` with a plausible constant `3%` away left **every gate in the file green**.
+That is a property of the statistic rather than a flaw — the spread is *exactly* `K_OBS`-independent,
+since $(k_{\rm obs}-k_b)$ is common to the four directions and the ratio is the ratio of derivatives
+alone, and the move range shifts by only the same `3%`. ⇒ ** But it means a wrong lift would have been
+invisible, so `K_OBS` is now pinned directly against the receipt's published `-9.2995e-04`. With the
+pin in, that perturbation reds. ** ⚠ *A second perturbation of mine was a no-op — I replaced a string
+with itself — and I rewrote it rather than counting it. Eight perturbations, all red.*
+
+⇒ **The receipt is HARDENED but not re-pointed**: `Ⓐ①` compares the slope statistic against figures
+captured from `sec:refit-bound` itself, so moving the arm moves it against the paper, and that is the
+amended P15 rule's situation rather than mine to land. ⌗ *Instrument:
+`r7641_cc66_grid_readers/phase_slope_on_the_arm_of_record.py`.*
