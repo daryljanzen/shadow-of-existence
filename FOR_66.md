@@ -28749,3 +28749,122 @@ inverted.*
 
 ⇒ **Grid readers 2–6 next.** Each gets the same treatment: the centre read from the bank rather than
 assumed, and the carry measured rather than classified.
+
+---
+
+# `r7641+cc66.40` — grid reader 5 re-points IN FULL, and ⛔ **two of its gates' reasons turn out to be the namesake arm's — one of them its own title**
+
+`the_de_tilted_peak_set_…` is the opposite case from grid reader 1: all four of its CR-side pointers
+have arm-of-record siblings, so it re-points completely. **What does not survive is not a number but
+two REASONS, and one of them is the claim in the receipt's filename.**
+
+## ⓵ THE RE-POINT, AND THE PART A POINTER-ONLY MOVE WOULD HAVE GOT WRONG
+
+| | → |
+|---|---|
+| `r7093_directions/grid_oneclock/cr_*` | `…/grid_oneclock_leafrec1/cr_*` |
+| `r7095_directions/grid_licensed/cr_*` | `…/grid_licensed_leafrec1/cr_*` |
+| `spectra/c54.186_cr_L3000.npz` | `…_leafrec1.npz` |
+| `spectra/c54.193_cr_nodrive_L3000.npz` | `…_leafrec1.npz` |
+
+⛔ **AND `BASEVAL` MOVES WITH THEM.** Every gated quantity is a *logarithmic* derivative
+$\mathrm d\varphi/\mathrm d\ln\theta$, so the base value is a **divisor** — and both arm-of-record
+grids are centred on the arm of record's own fitted point. Read from their manifests, the re-point
+applies `H0 ×0.9996`, `Ωm ×0.9796`, **`n_s ×1.0519`**, **`ω_b ×0.9662`**. ⇒ *A pointer-only re-point
+would have divided the tilt direction by a base `5.2%` wrong and the baryon direction `3.4%` wrong —
+and both of those directions are the ones the receipt's headline ratio is built from.* ⛭ *This is the
+same fact that **blocked** grid reader 1, acting here as a correction instead: reader 1 asked how far
+the fit moves from the distances' point, and this receipt asks what the response is **at** the centre
+— which every grid has.*
+
+## ⓶ WHAT MOVED
+
+| figure | namesake | **arm of record** |
+|---|---|---|
+| WB:NS on the common offset | `11.3×` | **`11.7×`** |
+| WB:NS on the alternation | `21.4×` | **`18.3×`** |
+| de-tilt factor | `22` | **`21`** |
+| $\|d\varphi/d\ln n_s\|$ raw | `0.04887`–`0.06015` | **`0.05052`–`0.05121`** |
+| $\|d\varphi/d\ln n_s\|$ de-tilted | `0.00231`–`0.00247` | **`0.00233`–`0.00249`** |
+| worst convention disagreement | `2.01×` | **`1.87×`** |
+| $d\varphi/d\ln\omega_b$ | `-0.02760` | **`-0.02873`** |
+| $d\,\mathrm{alt}/d\ln\omega_b$ | `+0.01043` | **`+0.01306`** |
+| grid `cr_base` worst gap | `0.105` | **`0.102`** |
+| CR driving-**ON** worst gap | `0.275` | **`0.103`** |
+| CR driving-OFF worst gap | `0.079` | **`0.080`** |
+| raw window spread | `0.212` | **`0.014`** |
+
+⌗ *The control's figures are unchanged and asserted so, not assumed: its grids and its driving pair
+are in neither pointer column, and `11.4×`/`22.6×` reproduce exactly.*
+
+## ⛔⛭⛭ ⓷ Ⓓ① IS THE NAMESAKE ARM'S, AND THAT UNBLOCKS THE RECEIPT'S OWN HELD HALF
+
+The receipt claimed **no** CR driving number, and revised `cc66.155`'s ask from eight runs to **ten**,
+on one stated ground: *"the CR arm's banked driving-ON spectrum cannot serve: its detected peak series
+is not integer-spaced in $\ell_A$"* — worst gap error `0.275` against the grid's `0.105`, a factor of
+`2.6`. **On the arm of record the same spectrum reads `0.103` against the grid's own `0.102` — a
+factor of `1.0`.** Its peak series is `[0.848, 1.839, 2.735, 3.766, 4.743]` where the namesake's was
+`[0.629, 1.409, 2.134, 3.067, 4.010]`.
+
+⇒ *** So the statistic CAN read the CR driving pair on the arm of record, and I measured the step
+rather than leaving it as a note: ***
+
+| | $\Delta\varphi$ | $\Delta\mathrm{alt}$ |
+|---|---|---|
+| CR driving step, **arm of record** | **`+0.12611`** | **`-0.02201`** |
+| the control's, same vintage | `+0.12649` | `-0.02469` |
+| the arm's own baryon direction | `-0.02873` | `+0.01306` |
+
+⇒ ** The orthogonality the whole ask rested on now holds ON THE ARM and not only on the control:
+the driving step and the baryon direction move the peak set opposite ways on **both** components. And
+the driving step is the control's to `0.3%` on the common offset and `11%` on the alternation. **
+
+⛔ *Reported with its limit, which has not changed: the driving pair is a different vintage from the
+grids (`c54.186`/`c54.193` at `L3000`), so a clean number still wants the `NODRIVE` pair at the grids'
+own configuration. **What has changed is that the statistic can read the pair at all** — which is
+precisely what Ⓓ① denied.*
+
+## ⛔ ⓸ AND Ⓐ②'s THIRD LIMB IS ALSO THE NAMESAKE ARM'S
+
+Ⓐ② as registered asserted three things: the de-tilt collapses the control violation by ten or more,
+the de-tilted reading is window-independent, and **the raw reading is not** — that third limb being
+the receipt's evidence that the de-tilt is *a repair rather than a tuning*. The first two hold here
+(a factor of `21`, de-tilted spread `6%`). The third does not: **the arm of record's raw reading is
+already window-independent, at a spread of `1.4%` against the namesake's `21%`.**
+
+⇒ *The de-tilt is still **forced** — Ⓐ① fires on this arm too, `n_s` still moving the common offset
+more than the baryon direction does without it — and still removes the violation. What is absent is
+the drift the repair-not-tuning argument was built on.* **Restated as the namesake arm's rather than
+carried over as though it held.**
+
+## ⛭⛭ ⓹ AND HERE THE CARRY IS AN IDENTITY — CLASS 2, MEASURED
+
+Every gated quantity is a **difference** of the common offset between two spectra of the *same* arm,
+so a rigid comb offset — exactly what mapping the arm onto the control's comb adds — cancels. Rather
+than argue that, the instrument injects a rigid phase shift of `0.137` into every peak series: **the
+worst arm-of-record derivative moves by `6.3e-15`.** ⇒ *Class 2, not class 3: the carry is an identity
+on this statistic, not merely inapplicable to it. And the probe is live — breaking the cancellation
+by shifting one side only reds the gate.*
+
+## ⓺ ONE THING I HAVE NOT DONE, AND IT IS A RULING FOR YOU
+
+The receipt's own filename ends **`…but_the_driving_half_needs_its_own_pair`**, and its INDEX row says
+the same. On the arm of record the pair reads. ⇒ *Re-pointing the receipt therefore rewrites its title
+claim, which is a change of what the row IS and not a change of where it points.* Two ways:
+
+1. **Re-point it and narrow the title's claim to the namesake arm**, with Ⓓ① and Ⓐ②'s third limb
+   restated as that arm's and the driving step above landed in Ⓓ. One row, its figures moved, two of
+   its reasons rewritten.
+2. **Leave the receipt on the namesake arm and open a new row** for the arm-of-record reading, where
+   the driving pair reads and the orthogonality is measured on the arm.
+
+**My recommendation is ⑴.** The receipt's *findings* all survive — the separation, the de-tilt's
+necessity, the convention robustness, the orthogonality — and only two of its *reasons* are arm-bound;
+a second row would duplicate four gates to restate two. ⌗ *And the standing instruction not to invent
+a next row points the same way.*
+
+⌗ *Instrument: `r7641_cc66_grid_readers/de_tilted_peak_set_on_the_arm_of_record.py` — both arms in one
+pipeline, the namesake's published figures as a licence gate first, and **seven perturbations, every
+one red**: the base left at the distances' point, the grids pointed back, the driving pair pointed
+back, the carry probe's cancellation broken, the licence separation moved by a tenth, the raw-spread
+finding inverted, and the orthogonality gate told the two point the same way.*
