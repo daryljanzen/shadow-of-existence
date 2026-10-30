@@ -27498,3 +27498,67 @@ anyway.
 **9 of Set A's 21 landed.** Blocked at three (`combs_resolution`, `visibilitys_clock`,
 `held_period_estimator`). Still held on your word: the `l.1120` split (`.1`), `l.956` (`.2`), the
 `l.1106` margin wording, and `l.1635`–`1644` (`.17`).
+
+---
+
+# r7639+cc66.22 — ⛔ HELD FOR YOUR RULING: ON THE ARM OF RECORD, `the_surviving_step_is_amplitude_and_not_phase` LOSES ITS SIZE CLAIM AND KEEPS ITS SIGN CLAIM
+
+**The first Set A receipt where the arm of record WEAKENS a finding.** Every one before it held or came
+out stronger, so this one is reported before anything is landed and **no re-point is pushed**.
+
+Its decomposition is an exact identity — `BOTH = AC·√(R² − 2R·cos Δ + 1)`, `AMP = AC·|R − 1|`,
+`PH = 2·AC·|sin(Δ/2)|` — reproducing the difference's own measured comb amplitude to `8e-14` on the arm
+of record, so **the instrument is intact and it is the CONCLUSION that moves.**
+
+| reading | identity | amplitude / full | band 1: amp vs phase | median \|Δ\| | median \|R−1\| |
+|---|---|---|---|---|---|
+| namesake, as registered | `2.9e-13` | `1.106` ✓ | `0.958` vs `0.284` ✓ | **`0.388°`** | `6.11%` |
+| **arm of record** | `8.0e-14` | **`0.705`** ✗ | **`0.814` vs `0.570`** ✗ | **`5.550°`** | `7.56%` |
+| namesake, carried | `1.8e-13` | `2.764` ✗ | `0.834` vs `0.545` | `0.204°` | `6.16%` |
+| arm of record, carried | `1.9e-13` | `1.879` ✗ | `0.878` vs `0.472` | `0.240°` | `6.53%` |
+
+## ⛔ ⓵ AND THE CARRY CANNOT BE USED HERE — IT WOULD DELETE THE TERM THE RECEIPT WEIGHS
+
+`Δ` *is* the arm-control comb phase, and the carry's own parameter is that phase. Carried, the median
+`|Δ|` collapses to `0.24°` from `5.55°`, and the full statistic falls BELOW its own amplitude term
+(ratio `1.879`). ⇒ *** Carrying would not rescue "amplitude and not phase" — it would make it true by
+construction, by removing the phase difference before the decomposition that is supposed to weigh it. ***
+⌗ *And it breaks the same gate on the NAMESAKE arm too (`2.764`), which is the measurement that settles
+it: the failure is the carry's, not the arm's.* This is `.17`'s fourth class again, in the one receipt
+whose entire subject is the split.
+
+## ⚠ ⓶ WHAT SURVIVES AND WHAT DOES NOT, SPLIT PRECISELY
+
+- **THE SIGN CLAIM SURVIVES.** The amplitude term is negative on all four bases (`−0.159` to `−0.179`),
+  as is the full statistic (`−0.181` to `−0.280`). *Amplitude still carries the sign.*
+- **THE SIZE CLAIM DOES NOT.** The amplitude term supplies `0.705` of the full statistic against the
+  registered tolerance of `1 ± 0.25`, and at band 1 the phase share is `0.570` against amplitude's
+  `0.814` where the registered form wants amplitude above three times phase. ⇒ *The phase channel is a
+  substantial MINORITY on this arm, not a negligible one.*
+
+## ⛭ ⓷ AND TWO INDEPENDENT ESTIMATORS AGREE ON THE FACTOR
+
+This receipt's local held-period fit gives `0.388° → 5.550°`, a factor **`14.3`**. `.17`'s long-stretch
+projection, a different estimator on a different window, gave `+0.007368 → +0.102910` rad, a factor
+**`14.0`**. *The arm of record's comb phase really is an order of magnitude further from the control's,
+and it is not an artefact of either estimator.*
+
+## ⇒ WHAT I AM ASKING YOU TO RULE
+
+`CR_cosmology.tex` l.1634–1647 is cited to **both** this receipt and `no_statistic`, and both are now
+measured. The passage says *"the relative phase is a fraction of a degree, an order of magnitude below
+the relative amplitude"* and *"the amplitude reading is the complete account rather than a verdict on the
+sign alone"*. On the arm of record the phase is `5.55°` against an amplitude of `7.6%`, so it is **not**
+an order of magnitude below, and the amplitude reading is **not** the complete account.
+
+**My recommendation:** restate it as *the sign is amplitude's and the share is not separable* — which is
+this receipt's own ⓶ wording already — and drop "the complete account". The row's finding then stands on
+the arm of record exactly as measured, with the share left open rather than assigned.
+
+⌗ *I have not touched the receipt or the paper. If you would rather the row be re-derived than restated,
+say so and I will do it — the identity holds to `8e-14`, so there is nothing wrong with the instrument.*
+
+Instrument and output: `computations/beyond_the_wall/r7639_cc66_P15_repoint_paper/`
+`surviving_step_three_readings.py`, validated against the receipt's own printed namesake row.
+
+**Set A: 9 of 21 landed, 1 held for ruling, 3 bank-blocked.**
