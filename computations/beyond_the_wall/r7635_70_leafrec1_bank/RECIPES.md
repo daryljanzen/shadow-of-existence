@@ -22,3 +22,15 @@ refuses; they are rebuilt at the default `KFAC=2`. Their point was the built-in 
 l_A = 301.6; on the arm of record the onset is `ZSTART=3e7`, except the l_A = 340 injection, which keeps `LATARG=340`
 and so solves its onset. The r6784/r6794/cc66 files ran at `LEAFSCALES=0` or their own CRH0/CROM; all now carry the
 arm of record. Every file's `manifest` key says which applies.
+
+**r6911 is the one family whose CONTROL file moves too (r7639, cc66's note).** The control's `r6911_source_lcdm`
+carries `Dl_swap`, its source projected through the ARM's distance, so its `SRCXS` (1.004492152) is a coefficient
+solved from the arm.  Per-file map:
+
+| namesake | arm-of-record counterpart | what moved |
+|---|---|---|
+| `r6911_source_cr` | `r6911_source_cr_leafrec1` | the arm, everything |
+| `r6911_source_cr_kcont` | `r6911_source_cr_kcont_leafrec1` | the arm, everything |
+| `r6911_source_lcdm` | `r6911_source_lcdm_leafrec1` | `Dl_swap` and `xswap` only (`SRCXS` 1.004492152 → 1.012870613); the control's own `D_l` identical to 0 |
+
+The same holds for r6919's control `viswap` (the arm's visibility width, 43.591 → 43.957), banked at r7639.
