@@ -27002,3 +27002,62 @@ INDEX row, both appendices, `CR_cosmology.pdf` rebuilt (325 pages, 0 errors). No
 
 **4 of Set A's 21 landed.** Eight of the twelve measured-and-clear remain, then the seven whose citing
 sentence needs reading. Still held on your word: the l.1120 split (`.1`) and l.956 (`.2`).
+
+---
+
+## ⚑ `r7639+cc66.13` — **THE FIFTH SET A RE-POINT LANDED, AND IT IS THE ONE WHERE THE CARRY DOES NOT APPLY AT ALL — WHICH IS THE FINDING. PLUS A HEADER CHECK THAT IMMEDIATELY CAUGHT TWO FIGURES I HAD WRITTEN BY HAND**
+
+`P15_the_band_one_departure_…`. `rc=0`.
+
+## ⓵ THE CARRY DOES NOT APPLY HERE, AND THAT IS WORTH MORE THAN THE RE-POINT
+
+Your ruling is about a band RMS cut on a comb coordinate. *** This receipt has no such statistic. *** It
+works in **binned multipole space against the Planck covariance** — every quantity is a quadratic form in
+`COV_TT`, with no envelope, no oscillation and no comb anywhere in it. So the re-point is a pointer change
+and nothing else, and **carrying anything here would be a coordinate transformation applied to a statistic
+that does not live in that coordinate.**
+
+⇒ **That completes a three-class picture I will apply to the rest:**
+
+| the statistic | what the carry does |
+|---|---|
+| an arm-vs-control **comb-band ratio** | **APPLIES** — and at `the_excess_decelerates_…` it was the difference between a claim and its withdrawal |
+| **control against control** (injected forms, banked `lcdm` channels) | **IDENTITY** — left exactly as it was; carrying it is arithmetic with no referent |
+| **not a comb-band ratio at all** (a likelihood quadratic form, an eta-window integral) | **DOES NOT APPLY** — the coordinate is not the statistic's |
+
+## ⓶ WHAT MOVES, AND WHAT DOES NOT
+
+Band 1's contribution `2.6 → 3.9` of a seven-band sum `287 → 298.5`, against a total excess
+`322 → 336.5`; the share `0.9% → 1.3%`, so *"under one per cent"* becomes *"a little over one"*; band 1's
+separating power **`36.4 → 46.6σ`**. ** The claim is unmoved: ** band 1 still changes sign across
+`n = 1,2,3,4` and bands 2–7 still hold.
+
+⌗ *The `36.4` was printed as "`cc66.62`'s number, unchanged". On the arm of record that sentence is false,
+so the print now says `cc66.62`'s figure was the namesake arm's and names this one as the arm of record's.*
+
+## ⓷ THE ARM IS PINNED — AND THE ETA LEG'S SILENCE IS LEGITIMATE, NOT PATCHED
+
+- Pinned on band 1's **separating power** (`46.6σ` against the namesake's `36.4`), without which every
+  claim here is a share or a sign with room. Reverting `r6941_fine` now fires two gates.
+- **Reverting `r6959_eta` is silent, and it should be.** This receipt reads that bank for its **band edges
+  and nothing else**, and those are asserted **bit-identical** between arms. *A definition, not a
+  measurement — so no pin on that leg would mean anything, and the bit-identity check is what makes that
+  a statement rather than an assumption.* ⇒ **This is NOT the silent class of `r7637+cc66.1`**, and I am
+  recording the difference rather than adding a pin to make a number move.
+
+## ⛔ ⓸ AND A HEADER CHECK CAUGHT TWO FIGURES I HAD WRITTEN BY HAND
+
+I added a check tying the docstring's three arm-of-record figures to the computed ones. **It failed
+immediately on my own numbers:** I had written `$302$` for a band sum that is `298.5`, and `$337$` for a
+total excess that is `336.5` — both guessed from a printed row rather than computed. *Fixed, and the check
+is left in so the next hand-written figure is caught the same way.* ⌗ *The rounding is the trap: `:.0f`
+sends `298.5` to `298` and `336.5` to `336` by round-half-to-even, so the header now quotes one decimal
+and the check compares at one decimal.*
+
+## ⓹ LANDED WITH IT, AND WHERE THE SEAT IS
+
+INDEX row, both appendices, `CR_cosmology.pdf` rebuilt — **325 → 326 pages**, 0 errors. No sentence of
+`CR_cosmology.tex` touched.
+
+**5 of Set A's 21 landed.** Seven of the twelve measured-and-clear remain, then the seven whose citing
+sentence needs reading. Still held on your word: the l.1120 split (`.1`) and l.956 (`.2`).
