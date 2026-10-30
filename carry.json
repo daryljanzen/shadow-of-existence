@@ -2459,6 +2459,11 @@
     "since": "37f80aecf457b208204449bb0fe7ef2360145a17",
     "unmeasured": true
    },
+   "receipts/L255_the_exemption_was_a_claim/E1_an_exemption_is_a_claim_and_all_three_were_false.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41122267943",
+    "since": "4cfee5f4513d581bfaa4959bd3a8707fc2f667a8",
+    "unmeasured": true
+   },
    "receipts/L_probability/S10_the_sweep_for_exact_counts_could_not_contain_its_own_gate_and_the_class_doubled_in_the_receipts_written_after_its_pin.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41091585446",
     "since": "37f80aecf457b208204449bb0fe7ef2360145a17",
@@ -2659,6 +2664,11 @@
     "since": "37f80aecf457b208204449bb0fe7ef2360145a17",
     "unmeasured": true
    },
+   "receipts/L_probability/S6_an_unread_figure_is_a_claim_with_no_gate_and_one_of_this_seats_six_was_comparing_against_a_number_the_paper_had_withdrawn_as_the_error.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41122267943",
+    "since": "4cfee5f4513d581bfaa4959bd3a8707fc2f667a8",
+    "unmeasured": true
+   },
    "receipts/L_probability/S8_the_source_half_is_the_blinder_one_and_the_class_is_mostly_a_receipt_pinning_a_ledger_not_another_receipt.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41091585446",
     "since": "37f80aecf457b208204449bb0fe7ef2360145a17",
@@ -2681,11 +2691,13 @@
    },
    "receipts/P15_CR_cosmology/C64_the_first_sixty_eight_keys_of_the_prefix_are_read_and_the_repair_owed_fraction_is_four_point_four_per_cent_with_both_mechanisms_present_in_shapes_the_flag_cannot_see.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41091585446",
-    "since": "37f80aecf457b208204449bb0fe7ef2360145a17"
+    "since": "37f80aecf457b208204449bb0fe7ef2360145a17",
+    "unmeasured": true
    },
    "receipts/P15_CR_cosmology/C65_the_next_sixty_keys_are_all_source_and_none_is_a_repair_so_last_cycles_prediction_is_wrong_and_all_three_repair_forms_already_exist_in_this_prefix.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41091585446",
-    "since": "37f80aecf457b208204449bb0fe7ef2360145a17"
+    "since": "37f80aecf457b208204449bb0fe7ef2360145a17",
+    "unmeasured": true
    },
    "receipts/P15_CR_cosmology/C66_the_cross_read_agrees_with_sixty_on_thirty_three_of_forty_so_the_ratchet_is_a_measurement_and_twenty_five_of_my_own_rows_move_under_the_settlement.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41091585446",
@@ -2720,6 +2732,11 @@
    "receipts/P15_CR_cosmology/C81_order_two_is_done_in_one_cycle_the_zero_mode_capability_exists_and_the_measure_the_stated_limit_called_its_only_open_question_does_not_change_the_count.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41091585446",
     "since": "37f80aecf457b208204449bb0fe7ef2360145a17",
+    "unmeasured": true
+   },
+   "receipts/P15_CR_cosmology/P15_the_phase_slope_does_not_separate_the_loading_from_the_driving_because_a_primordial_tilt_moves_it_as_much_as_the_baryon_density_and_the_clean_lever_is_not_banked.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41122267943",
+    "since": "4cfee5f4513d581bfaa4959bd3a8707fc2f667a8",
     "unmeasured": true
    }
   }
