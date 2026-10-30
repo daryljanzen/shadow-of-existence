@@ -26775,3 +26775,61 @@ why it was taken first.
 and the 12 whose citing paragraph prints no number. ⚠ *And the two misses here are both properties of
 **sub-period windows**, which the whole family uses — so I check each remaining receipt at fixed width
 before reading its result, and I expect this to find more.*
+
+---
+
+## ⚑ `r7639+cc66.9` — **THE SECOND SET A RE-POINT IS LANDED, AND THE PERTURBATION FOUND THE SILENT CLASS IN MY OWN WORK: EVERY OTHER ASSERTION IN THAT RECEIPT PASSED ON BOTH ARMS, SO THE ARM IS NOW PINNED**
+
+`P15_the_coupling_is_measured_and_negative_…` — the other Set A receipt P15 does not cite, so again no
+paper coupling to resolve first.
+
+## ⓵ WHAT MOVES, AND WHAT DOES NOT
+
+| | namesake | arm of record, carried |
+|---|---|---|
+| target (the arm's band excess over the control's) | `+0.0215 … +0.0762` | **`+0.0295 … +0.0795`** |
+| projected departure | `−0.0977 … −0.1057` | **`−0.1569 … −0.0899`** |
+| fraction, field reading | `−6%` to `−13%` | **`−7%` to `−12%`** |
+| fraction, projected reading | `+188%` to `+94%` | **`+178%` to `+77%`** |
+| the two fractions' magnitude ratio, `> 5` | `7.3` | **`6.2`** ✓ |
+| **the COUPLING itself** | `−1.519 … −0.343` | **unchanged** |
+
+**The coupling does not move at all**, because it is measured entirely on the control and on the two
+banked `DPSRC` points, all `lcdm`. *So the re-point touches the INPUT side only, and the slopes are the
+same numbers they were.* Every assertion survives, and the one the receipt turns on survives with room:
+the two readings still disagree in **sign**, and the two fractions still differ in magnitude by more than
+a factor of five at their closest.
+
+## ⛔⛔ ⓶ AND THEN THE PERTURBATION FOUND THE SILENT CLASS — IN MY OWN RE-POINT
+
+Reverting the pointer to the namesake arm left **every assertion in the file PASSING.** They are
+sign-and-range claims with wide margins, so **a green said nothing whatever about which arm had been
+read.**
+
+⇒ *That is exactly the silent class I reported to you at `r7637+cc66.1` ⓷ and refused to take a green
+from — found this time in my own work rather than in `70`'s dry run.* ** A re-point whose correctness no
+assertion can fail is not a re-point. It is a pointer change. **
+
+**So the arm is pinned.** The carried target and the projected departure are pinned to their measured
+values at a `5e-4` half-width, which **excludes the namesake arm by `0.0080` at band 1** and by at least
+`0.0021` somewhere. Verified failable **on each leg independently**: reverting the `r6941_fine` pointer
+fires the target pin; reverting the `r6959_eta` pointer fires the projected pin.
+
+⌗ **This is worth generalising and I will apply it to the remaining 19 without being asked:** from here
+every Set A re-point is perturbed *before* it is reported, and where no existing assertion fires, a pin
+on the measured value is added until one does. *Two of two so far have needed something — the step
+receipt a withdrawal, this one a pin.*
+
+## ⓷ LANDED IN THE SAME COMMIT
+
+The INDEX row, both regenerated appendices, and `CR_cosmology.pdf` rebuilt — **324 → 325 pages**, 0
+errors; the INDEX addition pushed the appendix over a page. `check_pdf_current` and `check_pages_current`
+both green on the committed tree. No sentence of `CR_cosmology.tex` is touched.
+
+## ⓸ WHERE THE SEAT IS
+
+**2 of Set A's 21 landed.** Next are the 12 whose citing paragraph prints no number. ⌗ *And one measured
+note on the tolerance job, since it has now reported three cancellations: the failure notification
+arrives about **19 minutes after** the job's own verdict, because the PO-68 ledger read runs between
+them. So a quiet window right after a push is not evidence of anything — which is part of why that job
+needs a genuinely long stretch without a push to report a real sweep.*
