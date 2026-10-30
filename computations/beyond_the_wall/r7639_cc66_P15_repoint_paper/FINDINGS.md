@@ -233,3 +233,86 @@ eleven.** The two that differ are one declared over-match — a dict-keyed suffi
 as a cross product in `free_streaming`, naming two pairs the code never forms, both of which *do* have
 `_leafrec1` and so are not false gaps. **The sweep over-counts and never under-counts, which is the safe
 direction for a list someone else will work from.**
+
+---
+
+# ⑵ IS APPLIED TO BOTH RECEIPTS, AND IT REMOVES ITSELF AS A HOLD
+
+## What was done
+
+**Both receipts now load the historical comparison through a `hist` loader that reads the `LEAFREC=0`
+namesakes and records what it read**, guarded by a check that asserts the two files *actually read* are
+`cc66_r185_verify_{lcdm,cr}.npz`. Each carries a docstring paragraph naming the superseded state — the
+instrument before `_SWSRC`/`_DPSRC` were wired into `_project` at `r6889+cc66.36` (`736f9399`). The P15
+sentence classing is `P15_SENTENCES_dpsrc.md` beside this file.
+
+In `source_decomposition` the pin covers **all three** uses of that pair — PART 1's `DPSRC=0` bit-identity,
+PART 2's `r6889_noop` "bit-identical on both arms" default proof, and PART 2's "every newly wired switch
+reaches the term it names" demonstration. All three are measurements of the r6885/r6889 tree.
+
+## Perturbed with the re-point it exists to resist, and both go red
+
+The perturbation is not an arbitrary substitution: it is **the per-arm suffix map a real re-point would
+use**, `f"cc66_r185_verify_{t}{'_leafrec1' if t == 'cr' else ''}.npz"`.
+
+| receipt | result |
+|---|---|
+| `source_decomposition` | `rc=1`, **3 FAILED** — the guard, PART 1's bit-identity, and PART 2's default proof |
+| `model_difference` | `rc=1`, **2 FAILED** — the guard and part (b)'s bit-identity |
+
+And the guard reports the cause rather than a verdict: *"the two files actually read are
+`['cc66_r185_verify_lcdm.npz', 'cc66_r185_verify_cr_leafrec1.npz']`"*.
+
+## ⚠ AND MY FIRST VERSION OF THAT GUARD WOULD HAVE LET THE RE-POINT THROUGH
+
+The first guard asserted `'_leafrec1' not in NAMESAKE` — a check on the **constant**. The re-point above
+never touches `NAMESAKE`; it changes what `hist` builds from it. So the guard would have passed while the
+comparison it guards went cross-arm. Rewritten to **record what `hist` loaded and assert on that**.
+
+*Sixth time this campaign that a check which RUNS was not a check which MEASURES — and this one was in my
+own guard, written in the same revision that reported the other five.* ⌗ *What is left is the honest
+residual: a re-point that replaces `hist` wholesale defeats any guard inside it. That is why the pin is not
+the only protection — **the bit-identity check itself fails**, and it is that measurement, not the guard,
+that makes the re-point impossible to take green.*
+
+## The figures, in this receipt's own statistic
+
+⌗ **A correction to my own earlier report.** At `r7637` I gave this comparison as *"`0.000e+00` on the old
+arm and `2.270e-01` on the arm of record"*. That `2.270e-01` was in the dry-run sweep's own statistic, which
+is not the one the receipt's check uses. In `max |dD_l|`, which is:
+
+| comparison | `max |dD_l|` |
+|---|---|
+| `r6885_dp0_{lcdm,cr}` against the **namesake** base | **`0.000000e+00`** on both legs — the bit-identity |
+| `r6885_dp0_cr` against the **arm-of-record** base (what a per-arm re-point produces) | `2.529416e-02` — cross-arm, measures nothing |
+| `r6885_dp0_cr_leafrec1` against the **arm-of-record** base (both legs honest) | `9.466893e-02` — the knob **is** wired there |
+
+⚠ **Note the third row: `r6885_dp0_cr_leafrec1` exists.** So this family *is* reachable on the arm of
+record. What is **not** reachable there is the bit-identity, because on that arm there is nothing
+bit-identical to measure. That is why ⑵ pins it rather than moving it.
+
+## ⑵'s listing: no P15 sentence cites either receipt for the bit-identity
+
+**Measured, not assumed:** `CR_cosmology.tex` contains no occurrence of `bit-identical`, `unwired`, `DPSRC`
+or `not a null`. The three sentences that do cite these receipts cite them for other claims, and all three
+are **CONSTRUCTION**:
+
+| line | receipt | claim | status |
+|---|---|---|---|
+| l.1123 | `model_difference` (+ `monopole_zero_point`) | the `$1.040$` contrast and the half of `‖Δ‖²` one control-only direction carries | reported at `r7639+cc66.1` with a proposed split; `1.04403` measured |
+| l.1147 | `model_difference` | the three features of this arm's residual are all `Δ`'s — incl. `$-1.074$` of `$-1.177$` in fifteen bins | held on the four `r6885` CAND knob pairs |
+| l.1153 | `source_decomposition` | the contrast direction is the monopole/Doppler balance, bracketed by removing each and re-projecting on both paths | held on `r6889_{hdp0,hsw0}_cr` |
+
+⇒ **Nothing leaves P15 and nothing is restated there.** The finding lives in the two receipts, in `FOR_66.md`
+(`cc66.36`) and in `INDEX.md` row 908 as a *quotation* of `cc66.36`, and it is restated as history in all of
+those places that this seat owns.
+
+## And ⑵ removes itself as a hold
+
+| receipt | before ⑵ | after ⑵ |
+|---|---|---|
+| `model_difference` | the DPSRC substitution **and** four unbanked knob pairs | the **four knob pairs only** |
+| `source_decomposition` | the DPSRC substitution **and** `r6889_{noop,hdp0,hsw0}` | the **three `r6889` spectra only** |
+
+The DPSRC substitution was a hold because re-pointing the base would have moved a historical comparison.
+Pinning it to the namesakes removes that, and removes it in a way a later re-point cannot quietly undo.

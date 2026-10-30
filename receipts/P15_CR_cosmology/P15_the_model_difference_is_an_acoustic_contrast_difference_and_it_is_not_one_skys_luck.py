@@ -111,6 +111,20 @@ WHAT IS NOT CLAIMED.
    are comparable with each other and with DELTA; the BANKED `r4494` ISW pair is at the older
    leaf/stack configurations and is reported as indicative only, labelled as such.
 
+** ⛔ r7639 ⑵ -- THE `DPSRC=0` BIT-IDENTITY IN PART (b) IS HISTORICAL, AND IS PINNED HERE AS HISTORY. **
+It is a measurement of the instrument BEFORE `_SWSRC` and `_DPSRC` were wired into `_project` at
+`r6889+cc66.36` (`736f9399`), so it can only be read against the spectra that instrument made.  It is
+therefore loaded through `hist`, which reads the `LEAFREC=0` namesakes and RECORDS what it read, with a
+check that fails if either file carries the arm-of-record suffix.  *The pin is load-bearing and not
+decoration: in `max |dD_l|` the namesake pair reads exactly `0.0` on both legs, a per-arm re-point gives
+the cross-arm `2.529e-02`, which measures nothing, and the honest both-legs arm-of-record read is
+`9.467e-02` -- because the knob IS wired there.  A re-point would read as a repair having FAILED where
+what it records is a repair having SUCCEEDED, and it would read that way GREEN.*
+  ⌘ *The arm-of-record pair `r6885_dp0_cr_leafrec1` DOES exist, so this family is reachable on that arm.
+  What is not reachable there is the BIT-IDENTITY, because on that arm there is nothing bit-identical to
+  measure.  P15 cites this receipt at l.1123 and l.1147 and for neither of those claims -- classed in
+  `computations/beyond_the_wall/r7639_cc66_P15_repoint_paper/P15_SENTENCES_dpsrc.md`.*
+
 COMPUTES: scope.
   * ** EVERY COSMOLOGICAL PARAMETER IS BANKED, NOT CHOSEN HERE. **  The two arms are read from
     `spectra/cc66_r185_verify_{lcdm,cr}.npz`, which are `r6825+cc66.25`'s verified 185-bin refit
@@ -175,6 +189,24 @@ RAT[_m] = _le[_m] / _un[_m]
 load = lambda f: (lambda d: (d['ls'].astype(float), d['Dl'].astype(float)))(
     np.load(os.path.join(SP, f)))
 arm = lambda t: load(f'cc66_r185_verify_{t}.npz')
+# ** r7639 ⑵ -- THE NAMESAKE LOADER, WHICH DOES NOT MOVE WITH `arm`. **  Part (b)'s `DPSRC=0`
+#   bit-identity is a finding about the instrument BEFORE `_SWSRC`/`_DPSRC` were wired into
+#   `_project` at `r6889+cc66.36` (`736f9399`) -- it is a measurement of the r6885 tree, read against
+#   the spectra THAT tree produced.  So it is pinned to the `LEAFREC=0` namesakes and stays pinned if
+#   `arm` is ever re-pointed to the arm of record.  *In max |dD_l|, this receipt's own statistic: the
+#   namesake pair reads EXACTLY 0.0 on both legs; the cross-arm read a per-arm re-point would produce
+#   (`r6885_dp0_cr` against `cc66_r185_verify_cr_leafrec1`) is 2.529e-02, which measures nothing; and
+#   the honest both-legs arm-of-record read is 9.467e-02, because the knob IS wired there.  So a
+#   re-point would read as a repair having FAILED where what it records is a repair having SUCCEEDED.*
+NAMESAKE = 'cc66_r185_verify_{}.npz'
+_HIST_READ = []
+
+
+def hist(t):
+    """the LEAFREC=0 namesake, RECORDING what it read so the guard below measures and not declares"""
+    f = NAMESAKE.format(t)
+    _HIST_READ.append(f)
+    return load(f)
 mb = lambda ls, Dl: CS.bin_spectrum(ls, Dl * np.interp(ls, LG, RAT))
 
 
@@ -558,7 +590,12 @@ have = lambda t: (os.path.exists(os.path.join(RD, f'r6885_{t}_lcdm.npz'))
 pair = lambda t: (load(f'r6885_{t}_lcdm.npz'), load(f'r6885_{t}_cr.npz'))
 if have('dp0'):
     (_l1, _d1), (_l2, _d2) = pair('dp0')
-    _b1, _b2 = arm('lcdm'), arm('cr')
+    _b1, _b2 = hist('lcdm'), hist('cr')
+    check("** ⛔ AND THIS MEASUREMENT IS HISTORICAL, SO IT IS PINNED TO THE `LEAFREC=0` NAMESAKES AND NOT "
+          "TO WHATEVER `arm` POINTS AT **, because a measurement of the instrument before "
+          "`r6889+cc66.36` can only be read against the spectra that instrument made",
+          _HIST_READ == ['cc66_r185_verify_lcdm.npz', 'cc66_r185_verify_cr.npz'],
+          f"the two files actually read are {_HIST_READ}")
     check("** AND THE MEASUREMENT THAT FOUND IT: `DPSRC=0` on the refit configuration returns a "
           "BIT-IDENTICAL spectrum on BOTH arms ** -- which is the signature of an unwired knob and "
           "is not a null, exactly as this instrument's own note at r4558 says",

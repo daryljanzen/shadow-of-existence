@@ -26426,3 +26426,95 @@ green here; `check_appendix_current` was the one red and I read its diff before 
 gate requires — the two changed lines are the 133-bin row alone, and the INDEX side is the newer one. Still
 held on your word: the l.1120 split from `r7639+cc66.1`, and now l.956. ⑵'s INSTRUMENT/CONSTRUCTION classing
 and the own-comb family (`23` + `2`) are next and are not blocked.
+
+---
+
+## ⚑ `r7639+cc66.3` — **⑵ IS APPLIED TO BOTH RECEIPTS AND IT REMOVES ITSELF AS A HOLD. NO P15 SENTENCE CITES EITHER FOR THE BIT-IDENTITY — MEASURED, NOT ASSUMED. AND MY FIRST VERSION OF THE GUARD WOULD HAVE LET THE RE-POINT THROUGH**
+
+Detail in `…/r7639_cc66_P15_repoint_paper/FINDINGS.md`; the sentence classing is `P15_SENTENCES_dpsrc.md`
+beside it, in the shape `70` used for the c54 family.
+
+## ⓵ WHAT ⑵ LOOKS LIKE IN BOTH FILES
+
+Both now load the historical comparison through a **`hist` reader that reads the `LEAFREC=0` namesakes and
+records what it read**, guarded by a check that asserts the two files *actually read* are
+`cc66_r185_verify_{lcdm,cr}.npz`, with a docstring paragraph naming the superseded state — the instrument
+before `_SWSRC`/`_DPSRC` were wired into `_project` at `r6889+cc66.36` (`736f9399`). Both `rc=0`.
+
+In `source_decomposition` the pin covers **all three** uses of that pair, not just the one ⑵ names: PART 1's
+`DPSRC=0` bit-identity, PART 2's `r6889_noop` default proof, and PART 2's newly-wired-switch demonstration.
+All three are measurements of the r6885/r6889 tree and all three would have gone cross-arm together.
+
+**Perturbed with the re-point it exists to resist** — not an arbitrary substitution but the per-arm suffix
+map a real move would use, `f"cc66_r185_verify_{t}{'_leafrec1' if t == 'cr' else ''}.npz"`:
+
+| receipt | |
+|---|---|
+| `source_decomposition` | `rc=1`, **3 gates fire** — the guard, the bit-identity, the default proof |
+| `model_difference` | `rc=1`, **2 gates fire** — the guard and part (b)'s bit-identity |
+
+and the guard reports the cause rather than a verdict: *"the two files actually read are
+`['cc66_r185_verify_lcdm.npz', 'cc66_r185_verify_cr_leafrec1.npz']`"*.
+
+## ⚠ ⓶ AND MY FIRST VERSION OF THAT GUARD WOULD HAVE PASSED THE RE-POINT
+
+I first wrote it as `'_leafrec1' not in NAMESAKE` — a check on the **constant**. The re-point above never
+touches `NAMESAKE`; it changes what `hist` builds from it. **So the guard would have gone green while the
+comparison it guards went cross-arm.** Rewritten to record what `hist` actually loaded and assert on that.
+
+*Sixth time this campaign that a check which RUNS was not a check which MEASURES — and this one is in my own
+guard, written in the same revision that reported the other five.* ⌗ The honest residual: a re-point that
+replaces `hist` wholesale defeats any guard inside it. **Which is why the pin is not the only protection —
+the bit-identity check itself fails, and it is that measurement, not the guard, that makes the re-point
+impossible to take green.**
+
+## ⓷ THE FIGURES, AND A CORRECTION TO MY OWN EARLIER REPORT
+
+At `r7637` I gave this comparison as *"`0.000e+00` on the old arm and `2.270e-01` on the arm of record"*.
+**That `2.270e-01` was in the dry-run sweep's own statistic, not the one the receipt's check uses.** In
+`max |dD_l|`, which is what the receipt asserts on:
+
+| comparison | `max |dD_l|` |
+|---|---|
+| `r6885_dp0_{lcdm,cr}` against the **namesake** base | **`0.000000e+00`** on both legs — the bit-identity |
+| `r6885_dp0_cr` against the **arm-of-record** base (the per-arm re-point) | `2.529416e-02` — cross-arm, measures nothing |
+| `r6885_dp0_cr_leafrec1` against the **arm-of-record** base (both legs honest) | `9.466893e-02` — the knob **is** wired |
+
+⚠ **And the third row is new: `r6885_dp0_cr_leafrec1` exists.** So the family *is* reachable on the arm of
+record. What is **not** reachable there is the bit-identity, because on that arm there is nothing
+bit-identical to measure. *Which is the case for pinning it rather than moving it, made on the arm of record
+itself and not on the namesake.*
+
+## ⓸ ⑵'s LISTING: NO P15 SENTENCE CITES EITHER RECEIPT FOR THE BIT-IDENTITY
+
+**Measured:** `CR_cosmology.tex` contains no occurrence of `bit-identical`, `unwired`, `DPSRC` or
+`not a null`. The three sentences that *do* cite these receipts cite them for other claims, and all three
+are **CONSTRUCTION**:
+
+| line | receipt | what it is cited for | status |
+|---|---|---|---|
+| l.1123 | `model_difference` (+ `monopole_zero_point`) | the `$1.040$` contrast, and the half of `‖Δ‖²` one control-only direction carries | reported at `r7639+cc66.1` with the proposed split; `1.04403` measured |
+| l.1147 | `model_difference` | the three features of this arm's residual are all `Δ`'s — incl. `$-1.074$` of `$-1.177$` in fifteen bins | held on the four `r6885` CAND pairs |
+| l.1153 | `source_decomposition` | the contrast direction is the monopole/Doppler balance, bracketed by removing each and re-projecting on both paths | held on `r6889_{hdp0,hsw0}_cr` |
+
+⇒ **Nothing leaves P15 and nothing is restated there.** The finding lives in the two receipts, in this file
+(`cc66.36`) and in `INDEX.md` row 908 as a *quotation* of `cc66.36` — and it is restated as history in every
+one of those that this seat owns. ⌗ *`r6885_{los,losdp0,lossw0}_cr_leafrec1` all exist, so l.1153's "on both
+instrument paths" clause is already reachable on the second path; it is the hierarchy path's two deletions
+that are missing.*
+
+## ⓹ AND ⑵ REMOVES ITSELF AS A HOLD
+
+| receipt | before ⑵ | after ⑵ |
+|---|---|---|
+| `model_difference` | the DPSRC substitution **and** four unbanked knob pairs | the **four knob pairs only** |
+| `source_decomposition` | the DPSRC substitution **and** `r6889_{noop,hdp0,hsw0}` | the **three `r6889` spectra only** |
+
+So the DPSRC substitution is off the hold list for both. What is left on both is purely `70`'s bank, and it
+is in the measured list at `r7639+cc66.2` ⓷.
+
+## ⓺ WHERE THE SEAT IS
+
+⑵ and ⑶ are both applied. Held on your word: the l.1120 split (`r7639+cc66.1`) and l.956 (`r7639+cc66.2`).
+**Next is the own-comb family (`23` + `2`)**, which is unblocked, and for the two comb-width receipts I will
+re-derive the model at `0.464%` or say it cannot be done, as you ruled. No printed figure has moved.
