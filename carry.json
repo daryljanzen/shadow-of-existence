@@ -2347,6 +2347,11 @@
     "since": "37f80aecf457b208204449bb0fe7ef2360145a17",
     "unmeasured": true
    },
+   "receipts/P15_CR_cosmology/P15_the_signature_collapses_at_the_adjudicated_ratio_and_the_endpoint_sets_its_sign.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41122267943",
+    "since": "4cfee5f4513d581bfaa4959bd3a8707fc2f667a8",
+    "unmeasured": true
+   },
    "receipts/P15_CR_cosmology/P15_the_source_decomposition_is_reachable_on_the_reporting_path_and_the_neutrinos_have_a_knob.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41091585446",
     "since": "37f80aecf457b208204449bb0fe7ef2360145a17",
