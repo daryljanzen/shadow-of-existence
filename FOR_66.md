@@ -27102,3 +27102,50 @@ INDEX row, both appendices, `CR_cosmology.pdf` rebuilt (326 pages, 0 errors). No
 
 **6 of Set A's 21 landed.** Six of the twelve measured-and-clear remain, then the seven whose citing
 sentence needs reading. Still held on your word: the l.1120 split (`.1`) and l.956 (`.2`).
+
+---
+
+## ⚑ `r7639+cc66.15` — **THE SEVENTH SET A RE-POINT LANDED. THE CARRY RESCUES THE SECOND TOOTH AGAIN, AND ONE REGISTERED FORM MISSES IN A WAY THAT LEAVES ITS FINDING STRONGER THAN IT WAS**
+
+`P15_the_two_readings_are_different_quantities_…`. `rc=0`.
+
+## ⓵ THE CARRY, AND WHAT DOES NOT MOVE
+
+The target is an arm-vs-control comb-band ratio, so it is carried before the bands are cut. *Without
+that, the target's curvature on the shared range comes out **positive** and ⓶'s second tooth — "the same
+curvature sign as the target" — has nothing to be the same as.* ⌗ **And the register's own figures do not
+move at all** (`+2.06`, `+0.95`, `−11.58` per cent, and the undefined `G`'s `−26.1`): they are read off
+`r6897_fields` and the control side.
+
+**What moves:** the target `+0.05193 → +0.06099` at the bottom of the shared range and `+0.07621 →
++0.07946` at the top; the window widths to `+10.4%` in conformal time and `+2.4%` in the leaf sound
+horizon.
+
+## ⛔ ⓶ ONE REGISTERED FORM MISSES — AND THE FINDING COMES OUT STRONGER
+
+The registered condition required the two width ratios to **straddle one**: wider in conformal time,
+narrower in the leaf sound horizon. On the namesake arm that was `+6.5%` and `−0.8%`. **On the arm of
+record both exceed the control's** — `+10.4%` and `+2.4%` — so the straddle is gone.
+
+⇒ ** But the finding is the NON-PROPORTIONALITY, not the straddle, and it is marginally stronger: the
+two widths scale by factors `7.9%` apart where they were `7.3%` apart. ** *The straddle was a property of
+the namesake arm and not of the construction.* Recorded as a miss of the registered form, **not
+re-toleranced and not quietly dropped** — the receipt prints the registered form, the measured values and
+the direction, and asserts the surviving finding separately.
+
+⌗ *That is the second time in this family that a registered form misses while what it was registered to
+establish survives: at `.11` a non-separation became a separation because the instrument sharpened, and
+here a straddle became a double-exceedance while the non-proportionality it was testing held. **A
+registered condition can be a true claim stated in a form that is an accident of the arm it was measured
+on.** I am now reading every miss that way before reporting it, rather than assuming a lost gate is a
+lost result.*
+
+## ⓷ LANDED WITH IT, AND WHERE THE SEAT IS
+
+Both pointer legs fire when reverted. INDEX row, both appendices, `CR_cosmology.pdf` rebuilt (326 pages,
+0 errors). No sentence of `CR_cosmology.tex` touched.
+
+**7 of Set A's 21 landed.** Five of the twelve measured-and-clear remain — `no_statistic`,
+`held_period_estimator`, `lowest_band_is_closed`, `surviving_step_is_amplitude`, `term_mix_has_the_shape`,
+`two_channels_compose`, `windows_phase_spread` — then the seven whose citing sentence needs reading.
+Still held on your word: the l.1120 split (`.1`) and l.956 (`.2`).

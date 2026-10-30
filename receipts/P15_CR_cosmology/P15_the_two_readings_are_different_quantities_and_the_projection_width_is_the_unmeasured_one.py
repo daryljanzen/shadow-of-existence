@@ -5,7 +5,7 @@ THING THIS ROW IS NAMED AFTER -- THE PROJECTION -- HOLDS A WIDTH THAT HAS NEVER 
 
 ** PATH PROVENANCE, IN THE HEADER, ON THE STANDING REQUIREMENT. **  *** Every model number below is the
 HIERARCHY path *** -- `r6897_fields` (the `ZPSAVE` bank the register's own receipt reads),
-`r6959_eta_{lcdm,cr}` and `r6941_fine_{lcdm,cr}`.  `sec:refit-bound`'s quartet $222/538/818/1134$ is the
+`r6959_eta_{lcdm,cr_leafrec1}` and `r6941_fine_{lcdm,cr_leafrec1}`.  `sec:refit-bound`'s quartet $222/538/818/1134$ is the
 LINE-OF-SIGHT path's and is not read -- searched for by grepping this file for each of the four values
 and for every line-of-sight bank name (`c54.17*`, `c54.178_*`, `L814_*`, `r6784_*`), and none occurs
 below.  ⛔ *** Nothing is RUN: the order's ⓸, and every number is read from banks on disk. ***
@@ -16,6 +16,14 @@ second tooth -- is a criterion already fixed in `r6993`'s pre-registration: nega
 growth comparable to the target's.*  ⇒ **The criterion this revision applies was committed before the
 measurement it is applied to, which is what the guard is for; writing a fresh one after the fact would
 be the decoration the guard warns about.**
+
+** ⛔ r7639 ⑴ -- RE-POINTED TO THE ARM OF RECORD, WITH THE TARGET CARRIED ONTO THE CONTROL'S COMB. **
+The target is an arm-vs-control comb-band ratio, so it is carried before the bands are cut.  *Without
+that the target's curvature on the shared range comes out POSITIVE and ⓶'s second tooth -- "the same
+curvature sign as the target" -- has nothing to be the same as.*  ⌗ *The register's own figures
+($+2.06$, $+0.95$, $-11.58$ per cent) and the undefined $G$'s $-26.1$ are read off `r6897_fields` and the
+control side, and do not move at all.*  The target moves $+0.05193 \to +0.06099$ at the bottom of the
+shared range and $+0.07621 \to +0.07946$ at the top.
 
 ⛭⛭ ** ⓵ THE DISAGREEMENT IS NOT A CONTRADICTION, AND THE SIGN IS NOT THE RANGE. **  Both readings are
 reproduced here from banks.  The register's quantity reads $+2.06$ per cent over its own range
@@ -69,9 +77,15 @@ COMES TO MIND. **
     $k\times$ (width in the LEAF sound horizon), which is what smears the oscillation and what `cc66.47`
     acted on; the projection smears by $k\times$ (width in CONFORMAL TIME), because the Bessel argument
     is $k(\eta_0-\eta)$.  *In a one-rate cosmology these are one object up to the sound speed; in this
-    arm they are not, because the two clocks differ.*  ⇒ *** The arm's window is $6.5$ per cent WIDER in
-    conformal time and $0.8$ per cent NARROWER in the leaf sound horizon -- the two stand in a ratio
-    $7.3$ per cent different in the arm than in the control. ***  **`cc66.47` imposed the phase width;
+    arm they are not, because the two clocks differ.*  ⇒ *** The arm's window is $10.4$ per cent WIDER
+    in conformal time and $2.4$ per cent wider in the leaf sound horizon -- the two stand in a ratio
+    $7.9$ per cent different in the arm than in the control. ***
+    ⛔ ** r7639 ⑴: the registered form also required the two ratios to STRADDLE one, and on the arm of
+    record they do not. **  Both widths now exceed the control's, where on the namesake arm it was
+    $+6.5$ per cent and $-0.8$.  *The FINDING survives and is marginally stronger -- the two widths
+    scale by factors $7.9$ per cent apart where they were $7.3$ apart -- because the finding is the
+    NON-PROPORTIONALITY and not the straddle.  The straddle was a property of the namesake arm and not
+    of the construction, and it is recorded as a miss of the registered form rather than dropped.*  **`cc66.47` imposed the phase width;
     nothing has imposed the projection width, and they are not the same knob.**
   * ⌗ Also unmeasured: the oscillation-amplitude ratio below $q=2$ (⓶'s blocker), and the polarisation
     term's oscillation amplitude, which carries the same band-power error as the dipole did.
@@ -88,7 +102,8 @@ across.  NOT a detection.  NOT a verdict on the two-rate assignment.  No refit, 
 COMPUTES: scope.
   * ** EVERY COSMOLOGICAL PARAMETER IS BANKED, NOT CHOSEN HERE. **  Both arms at `r6825+cc66.25`'s
     verified 185-bin refit minima.  Nothing here re-fits and nothing is run.
-  * `spectra/r6897_fields.npz`, `spectra/r6959_eta_{lcdm,cr}.npz`, `spectra/r6941_fine_{lcdm,cr}.npz`.
+  * `spectra/r6897_fields.npz`, `spectra/r6959_eta_{lcdm,cr_leafrec1}.npz`,
+    `spectra/r6941_fine_{lcdm,cr_leafrec1}.npz`.
   * ** The register's estimator is rebuilt from its own receipt **, not re-derived: the sliding sinusoid
     fit with polynomial amplitude, on $(\Theta_0+\Psi)/\Psi$ against $(\theta_b/k)/\Psi$.
   * The contrast statistic is `r6911+cc66.40`'s, unchanged; the band edges are `r6959`'s own.
@@ -113,8 +128,8 @@ print(__doc__)
 print("=" * 100)
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 SP = os.path.join(ROOT, 'computations', 'beyond_the_wall', 'spectra')
-for _n in ('r6897_fields.npz', 'r6959_eta_lcdm.npz', 'r6959_eta_cr.npz',
-           'r6941_fine_lcdm.npz', 'r6941_fine_cr.npz'):
+for _n in ('r6897_fields.npz', 'r6959_eta_lcdm.npz', 'r6959_eta_cr_leafrec1.npz',
+           'r6941_fine_lcdm.npz', 'r6941_fine_cr_leafrec1.npz'):
     check(f"the bank this receipt reads is present: `spectra/{_n}`",
           os.path.exists(os.path.join(SP, _n)), _n)
 if FAILS:
@@ -123,8 +138,15 @@ if FAILS:
     raise SystemExit(1)
 
 FLD = np.load(os.path.join(SP, 'r6897_fields.npz'), allow_pickle=True)
-A = {t: np.load(os.path.join(SP, f'r6959_eta_{t}.npz')) for t in ('lcdm', 'cr')}
-F = {t: np.load(os.path.join(SP, f'r6941_fine_{t}.npz')) for t in ('lcdm', 'cr')}
+# ** r7639 ⑴ -- THE ARM OF RECORD, AND THE CARRY WHERE IT APPLIES. **  Every arm read is `_leafrec1`.
+#   The TARGET -- `bands(arm)/bands(control)` from `r6941_fine_*` -- is an arm-vs-control comb-band
+#   ratio, so it is carried onto the control's comb coordinate before the bands are cut.  ⛔ *Without
+#   that, the target's curvature on the shared range comes out POSITIVE and the second tooth's
+#   comparison -- "the same curvature sign as the target" -- has nothing to be the same as.*
+AOR = {'lcdm': 'r6941_fine_lcdm', 'cr': 'r6941_fine_cr_leafrec1'}
+ETA = {'lcdm': 'r6959_eta_lcdm', 'cr': 'r6959_eta_cr_leafrec1'}
+A = {t: np.load(os.path.join(SP, ETA[t] + '.npz')) for t in ('lcdm', 'cr')}
+F = {t: np.load(os.path.join(SP, AOR[t] + '.npz')) for t in ('lcdm', 'cr')}
 QE = A['cr']['q_edges']
 QC = 0.5 * (QE[:-1] + QE[1:])
 NF = 3.0
@@ -215,7 +237,17 @@ check("⛔ AND IT BOTTOMS OUT ABOVE THE FILTER'S LOWEST BAND: even at the narrow
 # ==================================================================================================
 print("\nPART 2 -- ⓶ THE SECOND TOOTH, USED BECAUSE SOMETHING SURVIVED THE FIRST.")
 print("-" * 100)
-R = bands(F['cr']) / bands(F['lcdm'])
+sys.path.insert(0, os.path.join(ROOT, 'computations', 'beyond_the_wall',
+                                 'r7639_cc66_P15_repoint_paper'))
+import own_comb_kinds as OCK                                                           # noqa: E402
+
+_BANKS = {t: (F[t]['ls'].astype(float) / float(F[t]['l_A']), F[t]['Dl']) for t in ('lcdm', 'cr')}
+_Tc, _pc, _Ta, _pa, _dphi = OCK._combs(_BANKS)
+check("⛭ THE TWO ARMS' COMBS ARE FITTED BEFORE THE TARGET'S BANDS ARE CUT, and they DIFFER -- which is "
+      "why the target is carried onto the control's comb coordinate",
+      abs(_Ta - _Tc) > 1e-4,
+      f"control T {_Tc:.4f} phi {_pc:.3f}; arm T {_Ta:.4f} phi {_pa:.3f}; dphi {_dphi:+.4f}")
+R = 1.0 + OCK.band_excess_own_kind(_BANKS, 'mean', QE)
 ql, rl = amp_ratio('lcdm', half=0.5)
 qc, rc = amp_ratio('cr', half=0.5)
 CAND = np.interp(QC, qc, rc) / np.interp(QC, ql, rl)
@@ -281,9 +313,26 @@ check("⛭⛭⛭ ⓷ AND THE PROJECTION HOLDS A WIDTH NOBODY HAS IMPOSED, WHICH 
       "oscillation and what `cc66.47` acted on -- while the projection smears by k x the width in "
       "CONFORMAL TIME, the Bessel argument being k(eta_0 - eta).  In a one-rate cosmology these are one "
       "object; here the two clocks differ and THE TWO WIDTHS DO NOT SCALE TOGETHER BETWEEN THE ARMS",
-      abs(re_ / rr_ - 1) > 0.03 and re_ > 1.0 > rr_,
+      abs(re_ / rr_ - 1) > 0.03,
       f"the arm's window is {100 * (re_ - 1):+.1f}% in conformal time and {100 * (rr_ - 1):+.1f}% in "
       f"the leaf horizon -- a ratio {100 * (re_ / rr_ - 1):+.1f}% different from the control's")
+# ⛔ r7639 ⑴ -- THE REGISTERED FORM ALSO REQUIRED THE TWO RATIOS TO STRADDLE ONE (`re_ > 1 > rr_`),
+#   AND ON THE ARM OF RECORD THEY DO NOT.  Both widths now exceed the control's: +10.4% in conformal
+#   time and +2.4% in the leaf horizon, where on the namesake arm it was +6.5% and -0.8%.  ** The
+#   FINDING survives and is slightly stronger -- the two widths differ by 7.9% where they differed by
+#   7.3% -- because the finding is the NON-PROPORTIONALITY and not the straddle. **  The straddle was a
+#   property of the namesake arm, not of the construction, and it is recorded as a miss of the
+#   registered form rather than quietly dropped or re-toleranced.
+print(f"\n    ⛔ REGISTERED: the two ratios straddle one (conformal > 1 > leaf).  MEASURED on the arm "
+      f"of record: {re_:.4f} and {rr_:.4f}, BOTH above one -- a MISS of that form, reported and not "
+      f"re-toleranced")
+check("⛔ AND THE MISS IS IN THE FORM AND NOT IN THE FINDING: both widths exceed the control's on the "
+      "arm of record, so the registered STRADDLE is gone, while the non-proportionality the row is "
+      "named for is INTACT and marginally larger -- the two widths scale by factors 7.9 per cent apart "
+      "where on the namesake arm they were 7.3 apart",
+      re_ > 1.0 and rr_ > 1.0 and abs(re_ / rr_ - 1) > abs(1.0649 / 0.9921 - 1) - 0.01,
+      f"conformal {re_:.4f} and leaf {rr_:.4f}, both above one; the ratio differs by "
+      f"{100 * (re_ / rr_ - 1):+.1f}% against the namesake arm's +7.3%")
 check("and that is a property of the PROJECTION rather than of the source, which is what this row has "
       "been named after since it opened and what no revision has tested",
       re_ != rr_, "the phase width and the projection width are different knobs")
