@@ -6,7 +6,7 @@ beside its namesake, in the namesake's own format, with the instrument's `config
       refit_grid185/     <- g2000   (LMAXL=2000; its verify_cr likewise)
       r7095_directions/grid_licensed/ <- g2000 (the same recipe, now that LEAFREC=1 is the default)
       r7093_directions/grid_oneclock/ <- gone  (LEAFGEOM=1)
-      r7095_directions/r7201_cc66_loading_lever/ <- lever
+      r7201_cc66_loading_lever/ <- lever
   * spectra/r6919_injected_cr_leafrec1, spectra/r6919_injected_lcdm_leafrec1 (the control: only `viswap`, which
     carries the arm's visibility width, moves; every other key is the namesake's own), spectra/r6929_scan_cr_leafrec1,
     spectra/r6941_fine_cr_visleaf_leafrec1;
@@ -34,6 +34,16 @@ def log_ok(path):
         fail.append(f'G {os.path.relpath(path, D)}: not __DONE__ rc=0')
     line = next((l for l in t.splitlines() if l.startswith('__SWITCHES__ ')), '__SWITCHES__ ?')
     return ' '.join(w for w in line.split()[1:] if not w.startswith(('SAVE=', 'KSLICE=')))
+
+
+def extras(log):
+    """The `switches` and `oneclock` keys some namesakes carry: the run's own __SWITCHES__ / __ONECLOCK__ lines."""
+    t = open(log).read().splitlines()
+    out = {'switches': np.array(next(l for l in t if l.startswith('__SWITCHES__ ')))}
+    one = [l.strip() for l in t if '__ONECLOCK__' in l]
+    if one:
+        out['oneclock'] = np.array(one[0])
+    return out
 
 
 def cfg_ok(cfg, name):
@@ -83,7 +93,7 @@ for dest, sub, held in GRIDS:
         if not os.path.exists(src):
             fail.append(f'missing {sub}/{t}'); continue
         d = np.load(src, allow_pickle=True)
-        out = {k: d[k] for k in d.files}
+        out = {**{k: d[k] for k in d.files}, **extras(src[:-4] + '.log')}
         cfg_ok(out['config'], t)
         save(os.path.join(BW, dest, t + '_leafrec1.npz'), out, log_ok(src[:-4] + '.log'),
              f'{held}; centred on the arm of record with the launcher\'s steps (H0 +-2, Om +-0.015, '
@@ -96,13 +106,13 @@ for dest, sub, held in GRIDS:
                 save(os.path.join(BW, dest, alias + '_leafrec1.npz'), {k: d[k] for k in d.files},
                      log_ok(os.path.join(D, sub, 'cr_base.log')),
                      f'{held}; the grid base: on the arm of record the refit point IS the centre', nm)
-LEV = os.path.join(BW, 'r7095_directions', 'r7201_cc66_loading_lever')
+LEV = os.path.join(BW, 'r7201_cc66_loading_lever')
 for t in ('cr_rb0.1', 'cr_rb0.5', 'cr_rb1.5', 'cr_nodrive'):
     src = os.path.join(D, 'lever', t + '.npz')
     if not os.path.exists(src):
         fail.append(f'missing lever/{t}'); continue
     d = np.load(src, allow_pickle=True)
-    out = {k: d[k] for k in d.files}
+    out = {**{k: d[k] for k in d.files}, **extras(src[:-4] + '.log')}
     cfg_ok(out['config'], t)
     save(os.path.join(LEV, t + '_leafrec1.npz'), out, log_ok(src[:-4] + '.log'),
          'r7201 launch_ten/launch_three (LEAFGEOM=1), at the arm of record', os.path.join(LEV, t + '.npz'))
