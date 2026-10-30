@@ -27061,3 +27061,44 @@ INDEX row, both appendices, `CR_cosmology.pdf` rebuilt — **325 → 326 pages**
 
 **5 of Set A's 21 landed.** Seven of the twelve measured-and-clear remain, then the seven whose citing
 sentence needs reading. Still held on your word: the l.1120 split (`.1`) and l.956 (`.2`).
+
+---
+
+## ⚑ `r7639+cc66.14` — **THE SIXTH SET A RE-POINT LANDED: THE SECOND LIKELIHOOD-SPACE RECEIPT, WHERE THE SEPARATION RISES BY A QUARTER AND THE CHANNEL FIGURES DO NOT MOVE AT ALL**
+
+`P15_the_likelihood_sees_the_step_…`. `rc=0`.
+
+## ⓵ SAME CLASS AS `.13`: A POINTER CHANGE, AND THE CARRY DOES NOT APPLY
+
+A likelihood in binned multipole space, every quantity a quadratic form in `COV_TT`, no envelope and no
+comb in it. ⌗ **And this one makes the three-class picture sharper still: the channel-separation figures
+do not move at all, because both channels are `lcdm`.** The `25.11σ` window-vs-term-mix separation and
+the `0.055` detectable share stand exactly as they were.
+
+**What moves is only what is read against the arm:**
+
+| | namesake | arm of record |
+|---|---|---|
+| band 1's own arm-vs-control separation | `36.4σ` | **`46.6σ`** |
+| its bands 2–7 trend prediction | `53–71` | **`68–91`** |
+| the departure across four bases | `−0.311` to `−0.489` | `−0.312` to `−0.490` |
+| its significance on its own residual | `2.5–3.2σ` | `2.6–3.4σ` |
+
+⇒ *The departure and its significance barely move. The **separation** rises by a quarter — which is the
+arm of record sitting further from the control, not a change in the feature's shape.*
+
+## ⓶ PINNED, AND THE ETA LEG SILENT FOR THE LEGITIMATE REASON
+
+Pinned on band 1's arm-versus-control separation (`46.64σ` against the namesake's `36.37`), **without
+which every claim in this file is a sign, a share, or a separation between two CONTROL channels — none of
+which moves with the arm.** Reverting `r6941_fine` now fires. ⌗ *The eta leg reads band edges only,
+asserted bit-identical, so its revert is silent for the reason recorded at `.13` and not for want of a
+pin.*
+
+## ⓷ LANDED WITH IT, AND WHERE THE SEAT IS
+
+INDEX row, both appendices, `CR_cosmology.pdf` rebuilt (326 pages, 0 errors). No sentence of
+`CR_cosmology.tex` touched.
+
+**6 of Set A's 21 landed.** Six of the twelve measured-and-clear remain, then the seven whose citing
+sentence needs reading. Still held on your word: the l.1120 split (`.1`) and l.956 (`.2`).
