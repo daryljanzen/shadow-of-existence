@@ -135,12 +135,36 @@ if FAILS:
         print(f"  - {f}")
     raise SystemExit(1)
 
-F = {t: np.load(os.path.join(SP, f'r6941_fine_{t}.npz')) for t in ('lcdm', 'cr')}
+sys.path.insert(0, os.path.join(ROOT, 'computations', 'beyond_the_wall',
+                                'r7637_70_own_comb_statistic'))
+import own_comb as OCB                                                                 # noqa: E402
+
+# ** r7639 ⑱ -- THE ARM OF RECORD, AND THE CARRY. **  The measured excess is
+#   `band_std(arm)/band_std(control)`, an arm-vs-control comb-band ratio, so the arm is carried onto
+#   the control's comb coordinate before the bands are cut (`r7637+70`'s ruling).  ⛔ *Uncarried on
+#   this arm the row BEATS -- band 6 collapses to 1.0141 between bands of 1.1005 and 1.1617 -- and the
+#   shape gate below reads that beat as the control pair failing to exceed the excess.*  The three
+#   channel banks are `lcdm` on both sides, so they are untouched: carrying a control against itself
+#   is arithmetic with no referent.
+AOR = {'lcdm': 'r6941_fine_lcdm', 'cr': 'r6941_fine_cr_leafrec1'}
+NSK = 'r6941_fine_cr'                          # the namesake arm, read for the comparison only
+ETA = 'r6959_eta_cr_leafrec1'
+_LOADED = []
+
+
+def _bank(tag):
+    _LOADED.append(tag)
+    return np.load(os.path.join(SP, tag + '.npz'))
+
+
+F = {t: _bank(AOR[t]) for t in ('lcdm', 'cr')}
+FN = _bank(NSK)
 WIN = np.load(os.path.join(SP, 'r6959_nswap_lcdm.npz'))
 MIX = np.load(os.path.join(SP, 'r6975_mix_lcdm.npz'))
 JNT = np.load(os.path.join(SP, 'r6983_joint_lcdm.npz'))
 
-QE = np.load(os.path.join(SP, 'r6959_eta_cr.npz'))['q_edges']
+QE = _bank(ETA)['q_edges']
+_QE_NSK = np.load(os.path.join(SP, 'r6959_eta_cr.npz'))['q_edges']
 QC = 0.5 * (QE[:-1] + QE[1:])
 Q2 = QC ** 2
 LF = np.arange(100.0, 1300.0, 1.0)
@@ -161,14 +185,31 @@ def env_a(x, y, win=1.0):
     return e
 
 
-def osc(x, y):
-    e = env_a(x, y)
+def osc(x, y, win=1.0):
+    e = env_a(x, y, win)
     return (y - e) / e
 
 
-def band_std(d):
+def _comb(d):
     q = d['ls'].astype(float) / float(d['l_A'])
-    o = osc(q, d['Dl'])
+    _, T, ph, _ = OCB.comb(q, np.asarray(d['Dl'], float))
+    return q, T, ph
+
+
+_QCTL, _TC, _PC = _comb(F['lcdm'])
+
+
+def band_std(d, carried=False):
+    """⛭ r7639: with `carried`, the ARM is read on the CONTROL's comb coordinate and its envelope
+    window widened to one of its OWN periods -- `r7637+70`'s carry."""
+    q = d['ls'].astype(float) / float(d['l_A'])
+    y = np.asarray(d['Dl'], float)
+    if carried:
+        _, Ta, pa = _comb(d)
+        o = osc(q, y, Ta / _TC)
+        q = _TC * (q / Ta + ((pa - _PC + np.pi) % (2 * np.pi) - np.pi) / (2 * np.pi))
+    else:
+        o = osc(q, y)
     return np.array([float(np.std(np.interp(np.linspace(a, b, 400), q, o)))
                      for a, b in zip(QE[:-1], QE[1:])])
 
@@ -203,7 +244,9 @@ def peaks_sub(d, W=40):
 
 
 C0 = band_std(F['lcdm'])
-MEAS = band_std(F['cr']) / C0
+MEAS = band_std(F['cr'], True) / C0
+MEAS_NSK = band_std(FN) / C0                   # the namesake arm, uncarried, as `cc66.46` read it
+MEAS_RAW = band_std(F['cr']) / C0              # this arm on the raw grid, which BEATS
 RW = band_std(WIN) / C0
 RM = band_std(MIX) / C0
 RJ = band_std(JNT) / C0
@@ -230,9 +273,29 @@ check("and they are the SAME numbers the two single-channel banks carry, so the 
       and abs(float(JNT['dpsrc']) - float(MIX['dpsrc'])) < 1e-12,
       f"taper agrees to {_dt:.1e} relative, s0 to {_ds:.1e}, norm={int(WIN['taper_norm'])} on both, "
       f"DPSRC={float(MIX['dpsrc']):.4f} exactly")
-check("the measured excess is recomputed here from `r6941_fine_*` and reproduces `cc66.46`'s seven "
-      "band ratios", np.allclose(MEAS, [1.0215, 1.0574, 1.0519, 1.0606, 1.0748, 1.0659, 1.0762],
-                                 atol=5e-4), "  ".join(f"{x:.4f}" for x in MEAS))
+check("⛭ AND THE BAND EDGES ARE A DEFINITION AND NOT A MEASUREMENT: the arm-of-record eta bank's "
+      "`q_edges` are BIT-IDENTICAL to the namesake's",
+      np.asarray(QE).shape == np.asarray(_QE_NSK).shape
+      and np.asarray(QE).tobytes() == np.asarray(_QE_NSK).tobytes()
+      and _LOADED == ['r6941_fine_lcdm', 'r6941_fine_cr_leafrec1', 'r6941_fine_cr',
+                      'r6959_eta_cr_leafrec1'],
+      f"{len(QE)} edges byte-for-byte equal; read {_LOADED}")
+check("the measured excess is recomputed here from `r6941_fine_*`, not quoted, and reproduces the "
+      "ARM-OF-RECORD row that `r7639+cc66.23` measured and `r7637+70` independently computed",
+      np.allclose(MEAS, [1.0295, 1.0595, 1.0610, 1.0639, 1.0777, 1.0728, 1.0795], atol=5e-4),
+      "  ".join(f"{x:.4f}" for x in MEAS))
+check("⛭ AND THE SAME CODE REPRODUCES `cc66.46`'s PUBLISHED ROW ON THE NAMESAKE ARM, which is what "
+      "shows the re-point moved the ARM and not the statistic.  *`cc66.46` cannot be re-pointed -- it "
+      "reads two gap banks and one whose arm is a KEY -- so its published row stays that arm's*",
+      np.allclose(MEAS_NSK, [1.0215, 1.0574, 1.0519, 1.0606, 1.0748, 1.0659, 1.0762], atol=5e-4),
+      "  ".join(f"{x:.4f}" for x in MEAS_NSK))
+check("⛔ AND THE CARRY IS WHY THIS ROW IS READABLE AT ALL: on the raw grid the same arm BEATS -- band "
+      "6's excess collapses against band 5's between two bands above 1.10 -- which is the alternation "
+      "`r7639` ruled on and not a feature of the excess",
+      (MEAS_RAW[5] - 1) < 0.3 * (MEAS_RAW[4] - 1) and (MEAS[5] - 1) > 0.8 * (MEAS[4] - 1),
+      "raw " + "  ".join(f"{x:.4f}" for x in MEAS_RAW)
+      + f"; band 6 at {100 * (1 - (MEAS_RAW[5] - 1) / (MEAS_RAW[4] - 1)):.0f} per cent below band 5 "
+      f"raw against {100 * (1 - (MEAS[5] - 1) / (MEAS[4] - 1)):.0f} carried")
 
 # ==================================================================================================
 print("\nPART 1 -- ⓵ T-SIZE: THE JOINT AGAINST THE THREE RULES, ON THE PRE-REGISTERED BAR OF 0.005.")
@@ -348,9 +411,15 @@ print(f"  at q=0: joint offset {IJ - 1:.4f} against the measured {FIT['measured 
 print(f"  band-mean: joint {100 * JMEAN:.3f}%;  the two channels summed ALONE, which is `cc66.48`'s "
       f"reading, {100 * SUM48:.3f}%")
 check("✔ CONFIRMED BY DIRECT MEASUREMENT: `cc66.48` put the pair at 1.72 times the measured excess by "
-      "adding the two channels' separate shares; composing them in ONE spectrum reads the same to about "
-      "one per cent", abs(JMEAN / SUM48 - 1) < 0.05,
-      f"{JMEAN / (MEAS - 1).mean():.2f}x joint against {SUM48 / (MEAS - 1).mean():.2f}x summed")
+      "adding the two channels' separate shares -- that is the NAMESAKE arm's multiple, and on the arm "
+      "of record the same sum reads lower because the excess it is divided by is larger; composing them "
+      "in ONE spectrum reads the same as summing them to about one per cent, which is the claim and is "
+      "a comparison between two quantities measured HERE",
+      abs(JMEAN / SUM48 - 1) < 0.05,
+      f"{JMEAN / (MEAS - 1).mean():.2f}x joint against {SUM48 / (MEAS - 1).mean():.2f}x summed on the "
+      f"arm of record, and {JMEAN / (MEAS_NSK - 1).mean():.2f}x against "
+      f"{SUM48 / (MEAS_NSK - 1).mean():.2f}x on the namesake arm's excess -- the two multiples move "
+      f"together because only the denominator moved")
 check("⛔ RETRACTED: `cc66.48` inferred from that over-delivery that the two channels do NOT compose as "
       "assumed, and therefore that a remainder computed by DIVIDING one response into the excess is an "
       "artefact of a wrong rule.  The rule is now measured and it IS the assumed one -- so dividing is "
@@ -364,7 +433,10 @@ check("⛭⛭ AND THE OBSTRUCTION THAT SURVIVES IS A SHAPE, WHICH NO COEFFICIENT
       "short at high q, and scaling it to high q makes it an order too large at low q",
       OV[0] / OV[-1] > 2.0 and bool(np.all(OV > 1.0)),
       f"{OV[0]:.2f}x at q={QC[0]:.2f} against {OV[-1]:.2f}x at q={QC[-1]:.2f}, "
-      f"a {OV[0] / OV[-1]:.1f}-fold tilt across the bands")
+      f"a {OV[0] / OV[-1]:.2f}-fold tilt across the bands -- against "
+      f"{(RJ[0] - 1) / (MEAS_NSK[0] - 1) / ((RJ[-1] - 1) / (MEAS_NSK[-1] - 1)):.2f} on the namesake "
+      f"arm, so the margin over the registered 2.0 is THINNER here and is printed rather than "
+      f"smoothed over")
 check("⌗ and that negative is available only because the rule was measured: with the rule assumed, the "
       "same numbers read as a size discrepancy that a smaller coefficient could absorb",
       OV.min() > 1.0, f"the pair exceeds the excess in all seven bands, smallest {OV.min():.2f}x")

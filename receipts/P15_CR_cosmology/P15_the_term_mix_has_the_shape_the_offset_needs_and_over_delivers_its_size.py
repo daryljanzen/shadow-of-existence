@@ -313,8 +313,13 @@ for b in range(len(QC)):
 CS_NEED = np.array(CS_NEED)
 print("  the DPSRC that gives the control the arm's monopole fraction, band by band:")
 print("    " + "  ".join(f"{x:.4f}" for x in CS_NEED))
-check("⛭ ONE CONSTANT DOES IT: the coefficient the profiles demand is the same in every band to two "
-      "per cent, so the arm's term-mix difference is a single scalar on the Doppler and not a "
+# ⛔ r7639+cc66.24: THE TITLE SAID "TO TWO PER CENT" AND THE CONDITION ALLOWS FIVE, while the
+#   measurement on this arm is 4.3 -- so the asserted text overstated its own number by a factor of
+#   two, on the namesake arm, before any re-point.  *Corrected to what is enforced and measured; the
+#   finding -- one scalar rather than a q-dependent reshaping -- is unchanged, and the spread is
+#   printed so no reader has to take the adjective on trust.*
+check("⛭ ONE CONSTANT DOES IT: the coefficient the profiles demand is the same in every band to "
+      "FIVE per cent, so the arm's term-mix difference is a single scalar on the Doppler and not a "
       "q-dependent reshaping", CS_NEED.max() / CS_NEED.min() - 1 < 0.05,
       f"{CS_NEED.min():.4f} to {CS_NEED.max():.4f}, a "
       f"{100 * (CS_NEED.max() / CS_NEED.min() - 1):.1f} per cent spread")

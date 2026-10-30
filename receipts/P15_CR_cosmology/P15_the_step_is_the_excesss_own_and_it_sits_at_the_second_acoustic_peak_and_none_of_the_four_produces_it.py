@@ -186,6 +186,26 @@ def band_excess(kind='mean'):
     return OCK.band_excess_own_kind(BANKS, kind, QE)
 
 
+def band_excess_shared(kind='mean'):
+    """⛔ THE SHARED-COMB READING, KEPT AND KEPT SELF-CONTAINED, because another receipt LIFTS this
+    file's functions by AST and runs them in a namespace of its own making -- so a liftable function
+    may depend on NOTHING but what the lifter supplies (`np`, `QE`, `fine`, `env`).
+
+    *`r7639+cc66.25`: carrying `band_excess` at `.8` gave it a free variable `OCK` that no lifter
+    supplies, which crashed `the_phase_systematic_...`.  **And supplying `OCK` would have been the
+    worse repair**: that receipt's own check says "shared comb" and asserts the alternation
+    (+0.0186 at band 1, +0.0141 at band 6), so a lifted CARRIED row would have been a green
+    measuring the wrong quantity.  The crash is the only reason this was seen.*"""
+    out = {}
+    for t in ('lcdm', 'cr'):
+        x, y = fine(t)
+        e = env(x, y, 1.0, kind)
+        o = (y - e) / e
+        out[t] = np.array([float(np.std(np.interp(np.linspace(a, b, 400), x, o)))
+                           for a, b in zip(QE[:-1], QE[1:])])
+    return out['cr'] / out['lcdm'] - 1.0
+
+
 def depths(t):
     x, y = fine(t)
     e = np.sort(np.concatenate([argrelextrema(y, np.greater, order=20)[0],

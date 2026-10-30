@@ -27604,3 +27604,67 @@ TARGET recomputed from banks that do have an arm of record, so what is blocked i
 reading, not theirs.* **Three receipts unblocked by one measurement, and the next unit is to land them.**
 
 `computations/beyond_the_wall/r7639_cc66_P15_repoint_paper/band_ratio_reference.py` + `.txt`.
+
+---
+
+# r7639+cc66.25 — THE TENTH RE-POINT, AND THE READERS CAUGHT A BREAKAGE I LANDED FIFTEEN REVISIONS AGO
+
+`the_two_channels_compose_multiplicatively_…` re-pointed and carried, against the row `.23` measured.
+**And running its reader closure before pushing — the discipline `.19` committed to — found two things CI
+had not.**
+
+## ⓵ THE RE-POINT
+
+The measured excess is `band_std(arm)/band_std(control)`, so the arm is carried. It reproduces `.23`'s
+arm-of-record row (`1.0295 … 1.0795`), **and the same code reproduces `cc66.46`'s published row on the
+namesake arm** — which is what shows the re-point moved the arm and not the statistic. Uncarried, the
+same arm's band 6 sits **`86` per cent below band 5** against `6` per cent carried.
+
+⚠ *One margin narrows and is printed: the shape tilt is `2.12`-fold against the registered `2.0`, where
+the namesake arm gave `2.79`.* And `cc66.48`'s `1.72×` is now explicitly the **namesake** arm's multiple
+— the arm of record reads `1.56×` because the excess it divides by is larger, while the claim that
+matters (joint against summed, both measured here) is untouched.
+
+## ⛔ ⓶ A SOURCE-LINE PIN IN ANOTHER RECEIPT, BROKEN BY THIS RE-POINT
+
+`the_window_free_reading_…` pins `"QE = np.load(…'r6959_eta_cr.npz')['q_edges']"` **as text** in this
+receipt, to establish that the flatness fit's abscissa is all seven band centres. My bank-block rewrite
+moved that line. ⇒ Pin re-pointed to the line as it now reads, with the arm named in it. *Same class as
+`.19`'s `S1` — and this time my own reader run caught it before the push, not CI after.*
+
+## ⛔⛔ ⓷ AND A BREAKAGE I LANDED AT `.8` THAT CI NEVER SURFACED
+
+`the_phase_systematic_…` **lifts functions out of `.8`'s receipt by AST** and runs them in a namespace it
+builds itself. `.8` carried `band_excess`, giving it a free variable `OCK` that no lifter supplies — so
+that receipt **crashed with a `NameError`**, and has done since `.8`. *It was not among the five reds CI
+named at `.17`, so its scope never reached it across fifteen revisions.*
+
+⇒ *** AND SUPPLYING `OCK` WOULD HAVE BEEN THE WORSE REPAIR. *** That receipt's own check says *"shared
+comb"* and asserts the alternation (`+0.0186` at band 1, `+0.0141` at band 6, `0.0617` below the rest).
+A lifted CARRIED row would have run green **measuring the wrong quantity**. ** The crash is the only
+reason this was seen at all. **
+
+**The repair:** `.8` keeps `band_excess` carried and gains `band_excess_shared`, written to depend on
+nothing but what a lifter supplies (`np`, `QE`, `fine`, `env`); the lifter asks for that name instead.
+Validated by that receipt's own assertion — it now reads `[ok]` on the figures it registered.
+
+⌗ *A third coupling mechanism, and the one my closure instrument does not model: not a text pin, not a
+subprocess, but **lifting a function's AST into a hand-built namespace**. A liftable function may depend
+on nothing the lifter does not pass, and carrying one broke that contract silently.*
+
+## ⓸ AND ONE DEFECT THAT PREDATES EVERY RE-POINT
+
+`the_term_mix_has_the_shape_…`'s coefficient gate is titled *"the same in every band to **two** per
+cent"*; its condition allows **five**, and the measurement on the namesake arm is **`4.3`**. ⇒ *The
+asserted text overstated its own number by a factor of two, on the arm it was written for, before
+anything moved.* Corrected to what is enforced and measured, with the spread printed.
+
+**And that receipt is NOT re-pointed — held for your ruling.** On the arm of record its eta-window
+profiles (class 3: a pointer change, no carry) give a coefficient spread of **`8.3` per cent against the
+`5` the condition enforces**, so *"a single scalar on the Doppler and not a q-dependent reshaping"* does
+not hold at the registered tolerance. Two more of its gates move with it: the anchored reading reads
+`2.31` against a symmetric baseline of `1.96` (`18%`, against a registered `15`), and the over-delivery
+dips to `0.99×` in band 6 so *"in every band"* fails by one per cent. **My recommendation: the row needs
+re-deriving rather than restating — the coefficient's q-dependence is a result, not a wording problem.**
+
+**Set A: 10 landed, 2 held for ruling, 3 bank-blocked, 1 (`windows_phase_spread`) next.**
