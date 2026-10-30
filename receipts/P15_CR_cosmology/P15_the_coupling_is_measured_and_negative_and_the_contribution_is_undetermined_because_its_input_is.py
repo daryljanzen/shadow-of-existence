@@ -6,8 +6,8 @@ THE COUPLING MULTIPLIES DISAGREE IN SIGN, AND IN MAGNITUDE BY A FACTOR OF SEVEN 
 CLOSEST. **
 
 ** PATH PROVENANCE, IN THE HEADER, ON THE STANDING REQUIREMENT. **  *** Every model number below is the
-HIERARCHY path *** -- `r6941_fine_{lcdm,cr}`, `r6975_mix_lcdm` and `r6975_mixb_lcdm` (the two banked
-`DPSRC` points) and `r6959_eta_{lcdm,cr}`.  The line-of-sight quartet is searched for below rather than
+HIERARCHY path *** -- `r6941_fine_{lcdm,cr_leafrec1}`, `r6975_mix_lcdm` and `r6975_mixb_lcdm` (the two banked
+`DPSRC` points) and `r6959_eta_{lcdm,cr_leafrec1}`.  The line-of-sight quartet is searched for below rather than
 asserted absent.  ⛔ *** Nothing is SOLVED: the three `DPSRC` spectra were already on disk. ***
 
 ** THE PRE-REGISTRATION IS `r7005_directions/PREDICTION.md`, FAILURE MODES AHEAD OF OUTCOMES **, five of
@@ -34,24 +34,37 @@ share differs by about a fifth, against the factor of six across which the sign 
 assumption cannot reach the sign and is not asked to reach more.*
 
 ⛔⛔ ** ⓵ AND THE CONTRIBUTION IS NOT DETERMINED -- NOT BECAUSE OF THE COUPLING BUT BECAUSE OF ITS
-INPUT. **  The criterion was named before use: *the coupling multiplies a fractional change in the
+INPUT. **
+  ⛭ ** r7639 ⑴ -- RE-POINTED TO THE ARM OF RECORD, AND THE TARGET IS CARRIED ONTO THE CONTROL'S COMB. **
+  Every arm read is `_leafrec1`, and the target -- the arm's band excess over the control's -- is the
+  CARRIED excess rather than a ratio of bands read on each arm's own $q$, because by 69's ruling a
+  $0.70$-wide band holds less than one comb period and the ratio beats when the periods differ.  *The
+  target moves from $+0.0215\ldots+0.0762$ to $+0.0295\ldots+0.0795$ and the projected departure with
+  it.*  ** Every one of this receipt's assertions survives, and the one it turns on survives with room:
+  the two fractions still differ in sign and still differ in magnitude by more than a factor of five at
+  their closest ($7.3$ on the namesake, $6.2$ here). **  ⌗ *The COUPLING itself is measured
+  entirely on the control and on the two banked `DPSRC` points, all `lcdm`, so it does not move at all --
+  which is why the slopes are the same numbers they were, and why the re-point touches the INPUT side
+  only.*
+
+  The criterion was named before use: *the coupling multiplies a fractional change in the
 Doppler's oscillation amplitude relative to the monopole's.*  Two measured quantities claim to be it and
 ** they disagree in sign **:
 
   · the FIELD reading (`cc66.51`'s, the held-period estimator at last scattering): the arm is **higher**
-    by $+0.5$ to $+1.4$ per cent  ⇒  contribution $-0.004$ to $-0.010$, ** $-6$ to $-13$ per cent of
+    by $+0.5$ to $+1.4$ per cent  ⇒  contribution $-0.004$ to $-0.010$, ** $-7$ to $-12$ per cent of
     the excess, the WRONG SIGN **;
   · the PROJECTED reading (`cc66.50`'s quantity, the square root of the banked `w2dp/w2sw` share, which
-    is what `DPSRC` actually scales): the arm is **lower** by $10$ to $13$ per cent  ⇒  contribution
-    $+0.066$ to $+0.108$, ** $+188$ down to $+94$ per cent of the excess, the RIGHT SIGN **.
+    is what `DPSRC` actually scales): the arm is **lower** by $9$ to $16$ per cent  ⇒  contribution
+    $+0.053$ to $+0.106$, ** $+178$ down to $+77$ per cent of the excess, the RIGHT SIGN **.
 
 ⇒ *** THE COUPLING TURNS A DISAGREEMENT ABOUT A QUANTITY INTO A DISAGREEMENT ABOUT WHETHER THE CANDIDATE
 HELPS AT ALL.  This is the third revision in which these two readings decide the answer between them and
 the first in which they decide its SIGN. ***
 
 ⌗ ** AND THE ORDER'S SECOND HALF -- CONSTANT SHORTFALL OR GROWING? GROWING, ON BOTH READINGS, IN
-OPPOSITE DIRECTIONS. **  The field reading's fraction grows in magnitude from $-6$ to $-13$ per cent; the
-projected reading's falls from $+188$ to $+94$.  ⇒ *** A SHAPE MISMATCH AND NOT A COUPLING DEFICIT, ON
+OPPOSITE DIRECTIONS. **  The field reading's fraction grows in magnitude from $-7$ to $-12$ per cent; the
+projected reading's falls from $+178$ to $+77$.  ⇒ *** A SHAPE MISMATCH AND NOT A COUPLING DEFICIT, ON
 EITHER READING, AND THE FOURTH THIS SECTOR HAS FOUND. ***  *The coupling is flat, so the $q$-dependence
 belongs to the input.*
 
@@ -69,6 +82,7 @@ PROJECTED DOPPLER CONTRIBUTION, per band, and the instrument banks neither it no
 fields a derivative of it would need.**  *One bank, not a channel: the order's ⓸ closes the list.*
 """
 import os
+import sys
 
 import numpy as np
 
@@ -88,7 +102,20 @@ print(__doc__)
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 SP = os.path.join(ROOT, 'computations', 'beyond_the_wall', 'spectra')
 DIR = os.path.join(ROOT, 'computations', 'beyond_the_wall', 'r7005_directions')
-QE = np.asarray(np.load(os.path.join(SP, 'r6959_eta_cr.npz'))['q_edges'], float)
+sys.path.insert(0, os.path.join(ROOT, 'computations', 'beyond_the_wall',
+                                 'r7639_cc66_P15_repoint_paper'))
+import own_comb_kinds as OCK                                                           # noqa: E402
+
+# ** r7639 ⑴ -- THE ARM OF RECORD, AND THE CARRY. **  Every arm read here is `_leafrec1`.  And the
+#   TARGET -- the arm's band excess over the control's -- is no longer cut on the control's comb: by
+#   69's ruling a 0.70-wide band holds less than one comb period, so when the arms' periods differ
+#   their bands cover different parts of the cycle and the ratio BEATS.  The arm is carried onto the
+#   control's comb coordinate first, through `own_comb_kinds`.  ** The COUPLING itself is measured
+#   entirely on the control and on the two banked `DPSRC` points, all `lcdm`, so it does not move --
+#   which is why the slopes below are the same numbers they were. **
+AOR = {'lcdm': 'r6941_fine_lcdm', 'cr': 'r6941_fine_cr_leafrec1'}
+ETA = {'lcdm': 'r6959_eta_lcdm', 'cr': 'r6959_eta_cr_leafrec1'}
+QE = np.asarray(np.load(os.path.join(SP, ETA['cr'] + '.npz'))['q_edges'], float)
 QC = 0.5 * (QE[:-1] + QE[1:])
 NF = 3.0
 PTS = ((1.0, 'r6941_fine_lcdm.npz'), (0.8794, 'r6975_mix_lcdm.npz'), (0.6, 'r6975_mixb_lcdm.npz'))
@@ -102,6 +129,11 @@ SOLVEMARK = ('ACOUSTIC_two_arm', 'subprocess', 'os.system')                     
 check("⛔ PATH PROVENANCE: no line-of-sight quartet value and no line-of-sight bank name occurs in the "
       "executable body", not any(m in BODY for m in LOSMARK),                             # noscan
       "r6941_fine_*, r6975_mix*_lcdm and r6959_eta_* only")
+_qe_ns = np.asarray(np.load(os.path.join(SP, 'r6959_eta_cr.npz'))['q_edges'], float)
+check("and the band edges are a DEFINITION and not a measurement, so they do not move with the arm: "
+      "the namesake's `q_edges` and the arm of record's are bit-identical",
+      np.array_equal(_qe_ns, QE),
+      f"{len(QE)} edges, {QE[0]:.2f} to {QE[-1]:.2f}")
 check("and nothing is SOLVED: the three DPSRC spectra were already banked",
       not any(m in BODY for m in SOLVEMARK), "banks on disk")                              # noscan
 
@@ -151,7 +183,7 @@ check("and the coupling is FLAT in q on the arithmetic envelope -- no trend -- s
 
 P = {}
 for t in ('lcdm', 'cr'):
-    d = np.load(os.path.join(SP, f'r6959_eta_{t}.npz'))
+    d = np.load(os.path.join(SP, ETA[t] + '.npz'))
     e = d['eta']
     m = (e >= float(d['eta_ls']) - NF * float(d['eta_ls_w'])) & \
         (e <= float(d['eta_ls']) + NF * float(d['eta_ls_w']))
@@ -168,7 +200,34 @@ check("⛭ ⓶ AND THE CONSTRUCTION FIXES IT, SHOWN BY WHAT DOES NOT CHANGE IT: 
 
 PROJ = np.sqrt((P['cr']['w2dp'] / P['cr']['w2sw']) / SHARE) - 1.0
 FIELD = np.array([-0.00031, +0.00482, +0.00494, +0.00507, +0.00903, +0.01241, +0.01441])
-TGT = bands('r6941_fine_cr.npz') / bands('r6941_fine_lcdm.npz') - 1.0
+# r7639 ⑴: the target is the CARRIED band excess, not the shared-comb ratio
+_BANKS = {t: OCK.fine(AOR[t]) for t in ('lcdm', 'cr')}
+_Tc, _pc, _Ta, _pa, _dphi = OCK._combs(_BANKS)
+check("⛭ THE TWO ARMS' COMBS ARE FITTED BEFORE THE TARGET IS CUT, and they DIFFER -- which is why the "
+      "target is the arm carried onto the control's comb coordinate and not a ratio of bands read on "
+      "each arm's own q",
+      abs(_Ta - _Tc) > 1e-4,
+      f"control T {_Tc:.4f} phi {_pc:.3f}; arm T {_Ta:.4f} phi {_pa:.3f}; dphi {_dphi:+.4f}")
+TGT = OCK.band_excess_own_kind(_BANKS, 'mean', QE)
+# ⛔ r7639 ⑴ -- AND THE ARM IS PINNED, BECAUSE WITHOUT THIS NOTHING HERE WOULD BE.
+#   Perturbing the pointer back to the namesake left every other assertion in this file PASSING: they
+#   are sign-and-range claims with wide margins, so a green said nothing about WHICH arm was read.
+#   That is the silent class reported at `r7637+cc66.1`, found here in my own re-point.  ** So the
+#   carried target is pinned to its measured values, tight enough to exclude the namesake arm: the two
+#   differ by 0.0080 at band 1 and by at least 0.0021 somewhere, against a 5e-4 half-width. **
+TGT_PINNED = np.array([0.02948, 0.05950, 0.06099, 0.06387, 0.07772, 0.07283, 0.07951])
+TGT_NAMESAKE = np.array([0.02150, 0.05737, 0.05189, 0.06063, 0.07478, 0.06588, 0.07619])
+check("⛔ THE CARRIED TARGET IS PINNED TO THE ARM OF RECORD, and the pin EXCLUDES the namesake arm -- "
+      "without which this receipt would pass on either arm and its green would say nothing about "
+      "which one it read",
+      float(np.max(np.abs(TGT - TGT_PINNED))) < 5e-4
+      and float(np.max(np.abs(TGT_NAMESAKE - TGT_PINNED))) > 5e-3,
+      f"max |TGT - pinned| = {float(np.max(np.abs(TGT - TGT_PINNED))):.2e} against a 5e-4 half-width; "
+      f"the namesake arm sits {float(np.max(np.abs(TGT_NAMESAKE - TGT_PINNED))):.4f} away")
+check("and the projected departure is pinned with it, so the INPUT side of the contribution is fixed "
+      "to the arm of record too and not only the target",
+      abs(float(PROJ.min()) + 0.1569) < 5e-4 and abs(float(PROJ.max()) + 0.0899) < 5e-4,
+      f"projected {PROJ.min():+.4f} to {PROJ.max():+.4f}")
 CF, CP = SLOPE['mean'][0] * FIELD, SLOPE['mean'][0] * PROJ
 print("\n⛔⛔ ⓵ THE CONTRIBUTION, ON BOTH READINGS\n")
 print('    target                ' + '  '.join(f'{x:+8.4f}' for x in TGT))
