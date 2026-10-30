@@ -91,8 +91,16 @@ QK QK=0.02,0.05,0.10
 QMIN QMIN=1
 QTURN QTURN=vel
 RD RD=8.0
-RD_2 RD=3.0
+RD2 RD=3.0
 SCR
+# and the later passes' cr runs (pass2, pass5, pass6): CRNOZ is the arm with ZSTART unset (the onset solved)
+CRNOZ="ARM=cr CRH0=68.570730 CROM=0.291246 LEAFSCALES=1 WBH2=0.021643 NS=1.015066"
+add $D/screen pairLATARGbase_cr $G $CRNOZ
+add $D/screen pairLATARG_cr $G $CRNOZ LATARG=310.0
+add $D/screen pairGSRC_cr $G $CR GSRC=1
+add $D/screen pairKCONT_cr $G $CR KCONT=1
+add $D/screen SWSRC_cr $G $CR SWSRC=0
+add $D/screen annot_cr $G $CR
 echo "$L" | sed '/^$/d' | wc -l
 printf '%s' "$L" | sed '/^$/d' | xargs -P 4 -I{} bash -c 'run {}'
 echo "=== r7641 THIRD BANK COMPLETE $(date -u) ==="
