@@ -405,3 +405,89 @@ wrong in the unsafe direction: a sentence's printed figure routinely sits two or
 the citation that pins it, so a line-level count misses it. *It is the same error as the template-regex gap
 sweep, which is why the count above is taken over the **paragraph** — which over-flags and never
 under-flags, and the over-flagged cases are read by hand rather than acted on.*
+
+---
+
+# THE FIRST SET A RE-POINT, MEASURED: TWO REGISTERED GATES MISS, AND ONE OF THEM MISSES ON BOTH ARMS
+
+`P15_the_step_is_the_excesss_own_…` — chosen first because it prints nothing in P15, so the full ⑴ loop
+runs on it with no paper coupling to resolve. The measurement is in `stepC` (scratchpad); every number
+below is on `r6941_fine_cr_leafrec1` and `r6915_pairs_cr_leafrec1` with the carry applied.
+
+## The instrument is validated against the receipt it is about to change
+
+Run with the namesake arm and the shared comb, my re-derivation returns **the receipt's own printed output
+exactly** — all seven bands on all four readings, all four EDGE values, all three plateaux and half-rise
+`q`'s, the second-peak match and the Doppler range. *So what moves below is the arm, not my arithmetic.*
+
+## What survives the re-point
+
+| assertion | namesake | arm of record, carried |
+|---|---|---|
+| the step survives all four readings, `max ratio-step < 0.7` | `0.633` | **`0.654`** ✓ |
+| envelope-free band 1, `\|·\| < 0.01` | `−0.0017` | **`−0.0024`** ✓ |
+| envelope-free bands 2–7 mean, `> 0.04` | `+0.0654` | **`+0.0685`** ✓ |
+| the step's location is stable, `ptp < 0.03` | `±0.008` | **`±0.009`** ✓ |
+| it sits at the second acoustic peak, `< 1.5%` | `0.9%` | **`0.3%`** ✓ *better* |
+| nearest other scale the construction fixes, `> 5%` | `7%` | **`7%`** ✓ |
+| the Doppler is noise at the step's resolution | ✓ | **✓** |
+| the projection width is linear to `< 5%` of its range | `2.6%` | **`2.6%`** ✓ |
+
+⇒ **The step is still the excess's, and it still sits at the second acoustic peak — three times more
+precisely than on the namesake.**
+
+## ⛔ MISS 1 — the localisation FACTOR leaves its registered window
+
+Registered: `1.9 < factor < 2.2`. Measured on the arm of record, carried: **`1.77` to `1.83`**.
+
+| half-width | plateaux, namesake | plateaux, arm of record |
+|---|---|---|
+| `0.175` | `0.0263 → 0.0528` (×`2.01`) | `0.0309 → 0.0551` (×**`1.78`**) |
+| `0.250` | `0.0257 → 0.0527` (×`2.05`) | `0.0316 → 0.0558` (×**`1.77`**) |
+| `0.350` | `0.0260 → 0.0527` (×`2.03`) | `0.0306 → 0.0561` (×**`1.83`**) |
+
+**The cause is the low-q plateau coming UP**, not the high one coming down: `0.026 → 0.031` against
+`0.053 → 0.056`. That is the same effect as `70`'s step shrinking from `−0.0430` (shared, old arm) to
+`−0.0396` (own, arm of record) — *the shared statistic was inflating the step with the beat.* So the factor
+is smaller because the step is smaller, and it is smaller for the reason the ruling names.
+
+**Reported as a miss of the registered gate, not re-toleranced**, exactly as `70` reported their `Ga`.
+*"A clean factor of two on all three" becomes a factor of 1.8 on all three.*
+
+## ⛔⛔ MISS 2 — AND THIS ONE IS A DEFECT IN THE REGISTERED TEST, ON BOTH ARMS
+
+The EDGE hazard check raises band 1's lower edge with the **upper edge fixed at 1.55**, and reads the
+excess higher each time; the receipt concludes that a truncation artefact would have made it read lower.
+Carried onto the arm of record it is no longer monotone — and the reason is not the arm:
+
+| sweep | namesake, shared | arm of record, carried |
+|---|---|---|
+| **registered** — upper edge fixed, so the window narrows `0.70 → 0.40` | `+0.0215 +0.0239 +0.0282 +0.0361` **monotone** | `+0.0295 +0.0335 +0.0330 +0.0243` **not** |
+| the same sweep at a **fixed width of one comb period** | `+0.0259 +0.0271 +0.0266 +0.0277` **not** | `+0.0297 +0.0302 +0.0291 +0.0305` **not** |
+| the same sweep at a **fixed width of 0.70**, the registered band width | `+0.0215 +0.0276 +0.0318 +0.0298` **not** | `+0.0295 +0.0313 +0.0300 +0.0305` **not** |
+
+⇒ ** THE MONOTONE RISE IS A PROPERTY OF THE WINDOW NARROWING, NOT OF MOVING THE LOWER EDGE UP. ** The
+registered test shrinks the window from `0.70` to `0.40` as it raises the edge, and a narrower sub-period
+window reads a higher RMS ratio — the pathology `own_comb.py`'s own note names (*"a 0.70-wide band holds
+less than one comb period, so its RMS depends on WHICH part of the cycle it covers"*). Hold the width fixed
+and the rise is gone **on the namesake too**, where the test currently passes.
+
+**So the test confounds the two things it varies, and it does so today, not only after the re-point.** My
+first guess was that the carry had exposed something about the arm; the fixed-width sweeps say it is the
+test. *Measured rather than assumed, which is the only reason the difference showed up.*
+
+### And the claim it supports survives on other support the receipt already computes
+
+The hazard is that band 1 reads low because the **envelope truncates** at the low-`q` edge. The receipt's
+**envelope-free** reading answers that directly: it takes peak-to-trough depths between consecutive
+extrema, uses **no envelope and no window at all**, and puts band 1 at **`−0.0024`** against a bands 2–7
+mean of `+0.0685`. *A reading with no envelope cannot suffer envelope truncation.* So the conclusion stands
+and the test cited for it does not — which is the best available outcome, and it is the receipt's own
+arithmetic, not a new instrument.
+
+## What this means for the other 20
+
+Both misses are properties of **sub-period windows**, which the whole step/excess family uses: the
+registered bands are `0.70` wide where the comb period is `≈1.0`. ⇒ *Every Set A receipt that slides a
+window narrower than one period, or varies its width while varying something else, is suspect in the same
+way, and is checked at fixed width before its result is read.*
