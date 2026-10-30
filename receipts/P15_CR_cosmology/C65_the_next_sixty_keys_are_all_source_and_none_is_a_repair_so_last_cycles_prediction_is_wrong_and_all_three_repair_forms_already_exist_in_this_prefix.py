@@ -239,6 +239,18 @@ def rows():
 
 ROWS = rows()
 MINE = [(n, p) for n, p in ROWS if len(p) >= 7 and TAG in p[6]]
+# ⌗ ONE KEY OF THIS BATCH WAS RE-KEYED LATER, NOT RE-VERDICTED: at r7639+cc66.25 the window-free receipt's
+#   bank line moved onto the arm of record and was split in two (`ETA = ...` and `QE = _bank(ETA)[...]`), the
+#   verdict carried unchanged and the old reason quoted inside the new one.  The batch audited is the one
+#   the MANIFEST froze, so the two successor rows are read back as the ONE key they replace, and nothing else
+#   about them is assumed.
+_REKEY = 'r7639+cc66.25: re-pointed'
+_REKEY_FROM = "QE = np.load(os.path.join(SP, 'r6959_eta_cr.npz'))['q_edges']"
+_succ = [(n, q) for n, q in MINE if q[6].startswith(_REKEY)]
+if len(_succ) == 2:
+    _n0, _q0 = min(_succ)
+    MINE = [(n, q) for n, q in MINE if not q[6].startswith(_REKEY)] + \
+           [(_n0, _q0[:1] + [json.dumps(_REKEY_FROM)] + _q0[2:])]
 EARLIER = [(n, p) for n, p in ROWS if len(p) >= 7 and PRIOR in p[6]]
 HERE = [(n, p) for n, p in ROWS if p[0].startswith(PREFIX)]
 

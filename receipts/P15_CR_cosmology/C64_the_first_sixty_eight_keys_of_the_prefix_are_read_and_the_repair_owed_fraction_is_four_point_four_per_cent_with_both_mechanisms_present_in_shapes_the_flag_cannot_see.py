@@ -556,10 +556,13 @@ gate("⛭⛭ THE THIRTEEN REST ON AN IMMUTABLE FILE, AND THAT IS CHECKED RATHER 
      "`cc66.59` was computed.  ⇒ ** so a pin on it reds exactly when the discipline it proves is voided, "
      "which is the mechanism and not the defect **",
      len(_pre_log) == 1)
-gate("⌗ and the three source pins in the same receipt rest on the same kind of fact: `cc66.58`'s "
-     "receipt also has exactly one commit, so the reformat exposure a pin on another receipt's code "
-     "normally carries is not live in this corpus -- a landed receipt is superseded, not reformatted",
-     len(_c58_log) == 1)
+_c58_src = open(os.path.join(ROOT, C58), encoding='utf-8').read()
+_C58_PINS = ("QC = 0.5 * (QE[:-1] + QE[1:])", "Q2 = QC ** 2", "QE = _bank(ETA)['q_edges']")
+gate("⌗ and the three source pins in the same receipt rest on a different fact: `cc66.58`'s receipt was "
+     "edited in place when it was re-pointed onto the arm of record (r7639+cc66.25), so the reformat "
+     "exposure a pin on another receipt's code carries IS live here -- and the three pinned source lines are "
+     "read against the file as it stands, each present verbatim",
+     len(_c58_log) >= 1 and all(s in _c58_src for s in _C58_PINS))
 
 PHRASES = ['Nothing below has been measured', 'THE STEP DOES NOT SURVIVE', 'THE STEP SURVIVES',
            'sensitive to a **phase** difference', 'ill-conditioned', 'inside band 1',
