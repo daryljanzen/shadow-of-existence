@@ -21,14 +21,25 @@ be the decoration the guard warns about.**
 The target is an arm-vs-control comb-band ratio, so it is carried before the bands are cut.  *Without
 that the target's curvature on the shared range comes out POSITIVE and ⓶'s second tooth -- "the same
 curvature sign as the target" -- has nothing to be the same as.*  ⌗ *The register's own figures
-($+2.06$, $+0.95$, $-11.58$ per cent) and the undefined $G$'s $-26.1$ are read off `r6897_fields` and the
-control side, and do not move at all.*  The target moves $+0.05193 \to +0.06099$ at the bottom of the
-shared range and $+0.07621 \to +0.07946$ at the top.
+($+2.06$, $+0.95$ per cent) and the undefined $G$'s $-26.1$ are read off `r6897_fields` and the control
+side, and do not move at all.*  The target moves $+0.05193 \to +0.06099$ at the bottom of the shared
+range and $+0.07621 \to +0.07946$ at the top.
+
+⛔⛔ ** AND r7639+cc66.18 CORRECTS THIS FILE'S OWN PREVIOUS REVISION ON THE THIRD OF THOSE FIGURES. **
+`cc66.50`'s band power at $-11.58$ per cent was reported as unmoved, and it is NOT: it reads the `eta`
+bank, which this re-point moved, and on the arm of record it is $-11.97$.  ** The register's quantity it
+is compared against comes from `r6897_fields`, which carries its ARM AS A KEY SUFFIX and has NO
+arm-of-record key at all, so that comparison was CROSS-ARM -- a pair differing in the arm as well as in
+the quantity, which is the confound the claim's own wording denies. **  ⇒ *The licensed comparison is
+now namesake on both sides, at $-11.58$; the arm-of-record band power is computed and REPORTED beside it
+at $-11.97$, and the sign difference holds on either.  The guard measures which banks were read, and
+reverting it to the arm of record turns this file red.*
 
 ⛭⛭ ** ⓵ THE DISAGREEMENT IS NOT A CONTRADICTION, AND THE SIGN IS NOT THE RANGE. **  Both readings are
 reproduced here from banks.  The register's quantity reads $+2.06$ per cent over its own range
 $q\in[3.5,11]$ -- *its recorded "two per cent above", exactly* -- and still $+0.95$ per cent over the
-part of `cc66.50`'s range it reaches, where `cc66.50`'s quantity reads $-11.58$ per cent.
+part of `cc66.50`'s range it reaches, where `cc66.50`'s quantity reads $-11.58$ per cent on the same
+arm (and $-11.97$ on the arm of record, reported above).
 ⇒ *** So the sign survives being put on one range: the difference is the QUANTITY. ***  They differ in
 three independent ways: **what is ratioed** (the OSCILLATION AMPLITUDE of each source field, from a
 sliding sinusoid fit, against the INTEGRATED BAND POWER, which keeps the smooth part); **which fields**
@@ -212,13 +223,49 @@ check("the register's own number is REPRODUCED from its own bank and estimator: 
 lo, hi = max(AR['lcdm'][0].min(), QC[0]), min(AR['lcdm'][0].max(), QC[-1])
 QD2 = np.arange(lo, hi + 0.01, 0.1)
 REG2 = np.interp(QD2, AR['cr'][0], AR['cr'][1]) / np.interp(QD2, AR['lcdm'][0], AR['lcdm'][1])
-PW = np.sqrt((band_power(A['cr'], 'w2dp') / band_power(A['cr'], 'w2sw'))
-             / (band_power(A['lcdm'], 'w2dp') / band_power(A['lcdm'], 'w2sw')))
-check("⛭ AND THE SIGN DIFFERENCE IS NOT THE RANGE BUT THE QUANTITY: on the SAME range the "
-      "oscillation-amplitude ratio is still ABOVE the control while the band-power ratio is BELOW it",
+# ⛭⛭ r7639+cc66.18 -- ** THIS ONE COMPARISON IS NAMESAKE ON BOTH SIDES, AND r7639+cc66.15 HAD IT
+#   CROSS-ARM. **  The register's quantity comes from `r6897_fields`, which carries its ARM AS A KEY
+#   SUFFIX (`k__cr`, `k__lcdm`) and has NO arm-of-record key at all -- so the amplitude ratio EXISTS
+#   only on the namesake arm.  Read against the arm-of-record band power, the claim that the sign
+#   difference is "not the range but the QUANTITY" would rest on a pair differing in the ARM too, which
+#   is the confound its own wording denies.  ⇒ *The licensed comparison is the within-arm one; the
+#   arm-of-record band power is COMPUTED AND REPORTED beside it, and the sign difference holds on
+#   either -- but what the claim rests on is the pair that differs in one thing only.*
+_NSK_READ = []
+
+
+def nsk(tag):
+    """the namesake-arm eta bank, RECORDING what it read so the guard below measures and not declares"""
+    _NSK_READ.append(tag)
+    return np.load(os.path.join(SP, tag + '.npz'))
+
+
+ANSK = {t: nsk('r6959_eta_' + t) for t in ('lcdm', 'cr')}
+
+
+def pw_of(bk):
+    return np.sqrt((band_power(bk['cr'], 'w2dp') / band_power(bk['cr'], 'w2sw'))
+                   / (band_power(bk['lcdm'], 'w2dp') / band_power(bk['lcdm'], 'w2sw')))
+
+
+PW, PW_AOR = pw_of(ANSK), pw_of(A)
+check("⛭ AND THE SIGN DIFFERENCE IS NOT THE RANGE BUT THE QUANTITY: on the SAME range and the SAME "
+      "arm the oscillation-amplitude ratio is still ABOVE the control while the band-power ratio is "
+      "BELOW it",
       REG2.mean() > 1.0 > PW.mean(),
       f"amplitude {100 * (REG2.mean() - 1):+.2f}% against band power {100 * (PW.mean() - 1):+.2f}% "
-      f"on q in [{lo:.2f}, {hi:.2f}]")
+      f"on q in [{lo:.2f}, {hi:.2f}], both on the namesake arm")
+check("⛔ AND BOTH SIDES OF THAT COMPARISON ARE THE SAME ARM, WHICH IS THE POINT: the register's bank "
+      "has no arm-of-record counterpart, so the arm-of-record band power is reported and is NOT what the "
+      "sign claim rests on.  ** The difference it is attributed to is the quantity, and the pair differs "
+      "in nothing else **",
+      _NSK_READ == ['r6959_eta_lcdm', 'r6959_eta_cr']
+      and abs(PW_AOR.mean() - PW.mean()) > 1e-3 and '_leafrec1' in ETA['cr']
+      and REG2.mean() > 1.0 > PW_AOR.mean(),
+      f"read {_NSK_READ}; the arm of record reads {100 * (PW_AOR.mean() - 1):+.2f}% against the "
+      f"namesake's {100 * (PW.mean() - 1):+.2f}% -- a live difference of "
+      f"{100 * abs(PW_AOR.mean() - PW.mean()):.2f} points, so the sign difference holds on either and "
+      f"the asserted pair is the namesake one")
 STAB = []
 for h in (2.0, 1.5, 1.0, 0.75, 0.5):
     ql, rl = amp_ratio('lcdm', half=h)
@@ -336,6 +383,15 @@ check("⛔ AND THE MISS IS IN THE FORM AND NOT IN THE FINDING: both widths excee
 check("and that is a property of the PROJECTION rather than of the source, which is what this row has "
       "been named after since it opened and what no revision has tested",
       re_ != rr_, "the phase width and the projection width are different knobs")
+
+# ⛭ EVERY FIGURE THIS HEADER PRINTS FOR THE TWO READINGS, TIED TO THE COMPUTATION.  `.15` shipped a
+#   header figure that its own re-point had moved, and this file had no such check to catch it.
+_DOC = open(os.path.abspath(__file__), encoding='utf-8').read().split(chr(34) * 3)[1]
+_FIG = (f'${100 * (REG.mean() - 1):+.2f}$', f'${100 * (REG2.mean() - 1):+.2f}$',
+        f'${100 * (PW.mean() - 1):.2f}$', f'${100 * (PW_AOR.mean() - 1):.2f}$')
+check("⛭ AND EVERY FIGURE THIS HEADER PRINTS FOR THE TWO READINGS IS THE COMPUTED ONE, compared and not "
+      "merely found -- the check this file did not have when it printed a figure its own re-point moved",
+      all(x in _DOC for x in _FIG), ' '.join(_FIG))
 
 print("\n" + "=" * 100)
 if FAILS:

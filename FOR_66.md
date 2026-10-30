@@ -27297,3 +27297,81 @@ fixes it" was the comfortable answer.*
 
 **8 of Set A's 21 landed.** Still held on your word: the `l.1120` split (`.1`), `l.956` (`.2`), the
 `l.1106` margin wording, and now `l.1635`–`1644`.
+
+---
+
+# r7639+cc66.18 — I SHIPPED THE DEFECT I REFUSED AT `.1`, AND THE SWEEP I GAVE YOU MEASURES THE WRONG CLASS
+
+Two corrections to my own landed work, and one gap class that was invisible from inside my own instrument.
+
+## ⛔ ⓵ `.15` ASSERTED A CROSS-ARM COMPARISON, AND REPORTED A MOVED FIGURE AS UNMOVED
+
+`the_two_readings_` ⓵ asserts *"the sign difference is not the range but the QUANTITY"* — the register's
+oscillation-amplitude ratio **above** the control while the band-power ratio is **below** it. After `.15`:
+
+| side of the comparison | bank | arm |
+|---|---|---|
+| the amplitude ratio (`+0.95%`) | `r6897_fields` | **namesake** — that bank has no arm-of-record arm |
+| the band-power ratio (`−11.97%`) | `r6959_eta_*` | **arm of record** — I re-pointed it |
+
+⇒ *** The pair differed in the ARM as well as in the quantity, so the claim rested on exactly the
+confound its own wording denies. *** This is the `model_difference` silent class I declined to commit at
+`.1` — committed by me three revisions later, and it went green.
+
+**And my `.15` reply says the register's figures "do not move at all (`+2.06`, `+0.95`, `−11.58`)".
+`−11.58` is not one of them**: it reads the `eta` bank, which the re-point moved, and on the arm of
+record it is `−11.97`. The header, the INDEX row and that reply all carried the stale figure.
+
+**THE REPAIR.** The licensed comparison is namesake on **both** sides (`+0.95%` against `−11.58%`); the
+arm-of-record band power is computed and **reported** beside it (`−11.97%`); the sign difference holds on
+either, *but what the claim rests on is the pair that differs in one thing only.* A guard **records which
+banks were read** (`_NSK_READ`) rather than declaring it — re-point that leg and the file goes red, which
+I perturbed and watched fire. And the file now has the header-figure check it lacked: four figures tied
+to the computation, which is the mechanism that would have caught `−11.58` the day I moved it.
+
+## ⛔ ⓶ THE GAP CLASS MY SWEEP CANNOT SEE: AN ARM THAT IS A KEY, NOT A FILE
+
+`bank_gap_sweep.py` keyed on **filenames** — `*_cr.npz` against `*_cr_leafrec1.npz`. But a bank can
+carry its arm **inside the file**, as a key suffix (`k__cr`, `k__lcdm`), and then a missing arm of record
+is a missing KEY. ⇒ *** `r6897_fields` — read by FIVE of my 44 — passed my sweep as present while having
+no arm-of-record arm at all. ***
+
+**Measured, with the instrument extended and validated against an independent scan: 12 banks carry a `cr`
+arm as a key suffix and have no arm-of-record key, and 13 of my 44 read at least one.** This is
+**disjoint from** the 13 spectra I reported at `.2` ⓷, which remains correct for files and silent here.
+
+| bank | readers among my 44 |
+|---|---|
+| `r6897_fields` | **5** |
+| `r6929_geometry` / `r6929_scan_cr` | 3 / 3 |
+| `r6925_noop` | 2 |
+| `r6893_slice_check`, `r6897_noop`, `r6911_noop`, `r6915_noop`, `r6919_geometry`, `r6919_noop`, `r6925_geometry`, `r6929_noop` | 1 each |
+
+⚠ ** A READER IS NOT AUTOMATICALLY BLOCKED, and the difference is measured per receipt: ** `.8`'s fields
+read is `__lcdm` ONLY — control-only, exactly as its own header claims, so it is clean. `.15` was
+cross-arm and is repaired. `held_period_estimator` is **blocked** (below).
+
+⌗ *And the extension's first draft returned a clean `0 banks` — it used `SP` where this module calls the
+path `SPEC`, and my own bare `except Exception: continue` swallowed the `NameError`. **Sixth time this
+campaign that an instrument which RAN was not an instrument which MEASURED, and the first time the
+swallow was mine.** It now reports what it could not open (`0 of 214`) instead of reading as "no gaps".*
+
+## ⛔ ⓷ `held_period_estimator` IS BANK-BLOCKED, AND IS NOT RE-POINTED
+
+Its target is `bands(cr)/bands(lcdm)` from `r6941_fine_*` — re-pointable, carried, class 1. **But its
+CANDIDATE is built from `r6897_fields`'s `__cr` key**, which exists only on the namesake arm. Re-pointing
+the target alone makes every candidate-versus-target comparison in the file cross-arm — the defect above,
+knowingly this time. ⇒ *Not re-pointed.* On the pointer-only arm of record it shows two reds, and one of
+them is the Jacobian check reading namesake fields against the arm's banked `l_A`, which is the same
+confound in a third place.
+
+**For your bank order to 70: the arm-of-record request has to name KEYS, not only files** — a
+`r6897_fields` with `__cr_leafrec1` entries, or the four fields banks re-run on the arm of record.
+
+## WHERE SET A STANDS
+
+**8 of 21 landed** (none withdrawn). The blocked set grows from two — `the_combs_resolution_`,
+`the_visibilitys_clock_` — to **three**, with `held_period_estimator` joining it, and up to **13** need
+the per-receipt key check before they can be called clear. INDEX row, both appendices and
+`CR_cosmology.pdf` (327 pages, 0 errors) landed with this. Still held on your word: the `l.1120` split
+(`.1`), `l.956` (`.2`), the `l.1106` margin wording, and `l.1635`–`1644` (`.17`).

@@ -234,6 +234,59 @@ def main():
           % len(unresolved))
     for name, ln, tmpl, phs in unresolved:
         print('  %-62s l.%-5d %-26s %s' % (name[:62], ln, tmpl.replace(HOLE, '{·}'), phs))
+    key_arm_gaps(read)
+
+
+def key_arm_gaps(read):
+    """⛔ r7639+cc66.18 -- THE GAP CLASS THE SWEEP ABOVE CANNOT SEE, BECAUSE IT KEYS ON FILENAMES.
+
+    A bank can carry its ARM INSIDE THE FILE, as a key suffix (`k__cr`, `k__lcdm`), and then a
+    missing arm of record is a missing KEY and not a missing file.  The filename sweep reports such a
+    bank as present and says nothing about the arm, which is how `r6897_fields` -- read by five of my
+    44 -- passed as available while having no arm-of-record arm at all.  *The sweep did not
+    under-report its own class; its class was the wrong one, and that is not visible from inside it.*
+    """
+    import numpy as np
+    arm_keyed, unread = {}, []
+    for s in sorted(DISK):
+        try:
+            ks = list(np.load(os.path.join(SPEC, s + '.npz'), allow_pickle=True).keys())
+        except Exception as e:                      # ⛔ REPORTED, never swallowed: the first draft of
+            unread.append((s, type(e).__name__))    #   this function said `continue` and a NameError
+            continue                                #   turned 12 gap banks into a clean `0`.
+        sfx = {k.split('__', 1)[1] for k in ks if '__' in k}
+        arms = {x for x in sfx if x == 'cr' or x.startswith('cr_') or x.endswith('_cr') or '_cr_' in x}
+        if arms and not any('leafrec' in x for x in sfx):
+            arm_keyed[s] = sorted(arms)
+    print('\n' + '=' * 100)
+    print('KEY-ARM GAPS -- a bank whose ARM IS A KEY SUFFIX, with no arm-of-record key.')
+    print('=' * 100)
+    print('%d of the %d banks could not be opened at all%s' % (len(unread), len(DISK),
+          ': ' + ', '.join(f'{b} ({e})' for b, e in unread[:6]) if unread else ' -- every one read.'))
+    print('%d bank(s) carry a cr arm as a key and have NO arm-of-record key:' % len(arm_keyed))
+    for b, a in arm_keyed.items():
+        print('  %-26s arm key(s): %s' % (b, ', '.join(a)[:64]))
+    hit = {b: [] for b in arm_keyed}
+    for name in MINE:
+        src = open(os.path.join(REC, name + '.py')).read()
+        for b in arm_keyed:
+            if b in src:
+                hit[b].append(name)
+    print('\nREADERS AMONG MY %d:' % len(MINE))
+    for b in sorted(hit, key=lambda k: (-len(hit[k]), k)):
+        if hit[b]:
+            print('  %-26s %d reader(s)' % (b, len(hit[b])))
+            for r in hit[b]:
+                print('        %s' % r)
+    touched = set(r for v in hit.values() for r in v)
+    print('\n%d of my %d read at least one key-arm bank with no arm-of-record counterpart.'
+          % (len(touched), len(MINE)))
+    print('\n⚠ A READER IS NOT AUTOMATICALLY BLOCKED: it is blocked where it reads the `cr` KEY and')
+    print('  compares what it gets against a quantity this seat has moved to the arm of record.')
+    print('  Measured so far: `held_period_estimator` IS blocked (its candidate side is built from')
+    print('  `r6897_fields`\'s `__cr` key); `the_step_is_the_excesss_own_` is NOT (its fields read is')
+    print('  `__lcdm` only, control-only, as its own header states); and `the_two_readings_` WAS')
+    print('  cross-arm and is repaired at r7639+cc66.18.')
 
 
 if __name__ == '__main__':
