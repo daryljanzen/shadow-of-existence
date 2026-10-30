@@ -11,9 +11,16 @@ so the artefact records what the run DID rather than what was typed.
 themselves, so nothing downstream trusts a number this script printed.
 
 ⌗ Cost order, cheapest first, as `r7642`'s arm ⑥ registers: `LMAXL` 1300 before 2000, and inside each
-  the coarser `LSTEP` first.  One process, one thread, no runner claimed (the order asks the two seats
-  to coordinate machine load; this claims one container's single core).
+  the coarser `LSTEP` first.  ** MEASURED: the cheapest family takes 639 s standing alone **, so the
+  24 do not fit in one serial pass and `JOBS` runs several at once.
+⚠ ** EVERY RUN IS PINNED TO ONE THREAD (`OMP`/`OPENBLAS`/`MKL` = 1) WHETHER OR NOT `JOBS` > 1, and
+  that is what makes the parallelism safe here: ** the census threshold is `1e-11`, which is the
+  thread-count wobble `70` gated, so a run whose thread count changed under contention would be
+  measuring the wobble rather than the instrument.  Pinned, the arithmetic is the same at `JOBS` 1 and
+  4 and only the wall time moves.  *The order asks the two seats to coordinate machine load: this
+  claims one container and no runner.*
 """
+import concurrent.futures as cf
 import json
 import os
 import subprocess
@@ -48,37 +55,46 @@ def main():
     os.makedirs(LOG, exist_ok=True)
     budget = float(os.environ.get('RUN_BUDGET', '5400'))     # per run, seconds
     only = os.environ.get('ONLY', '')
+    jobs = int(os.environ.get('JOBS', '1'))
     order = sorted(CFG.items(), key=cost_key)
-    print(f"  LAYER-2 RUNNER -- {len(order)} namesake(s), cheapest first, {budget:.0f}s each\n")
-    for stem, env in order:
-        if only and only not in stem:
-            continue
-        npz = os.path.join(OUT, stem + '.npz')
-        if os.path.exists(npz):
-            print(f"  [have] {stem}")
-            continue
-        e = dict(os.environ)
-        for k in ('OMP_NUM_THREADS', 'OPENBLAS_NUM_THREADS', 'MKL_NUM_THREADS'):
-            e[k] = '1'
-        e.update({'ARM': 'cr', 'LEAFREC': '0'})
-        e.update(env)
-        e['SAVE'] = npz
-        e.pop('ONLY', None)
-        e.pop('RUN_BUDGET', None)
-        note = SLICED.get(stem)
-        print(f"  [run ] {stem}  LMAXL={env['LMAXL']} LSTEP={env.get('LSTEP', '-')} "
-              f"NK={env.get('NK', 'auto')}" + (f"\n         ⚠ {note}" if note else ""), flush=True)
-        t0 = time.time()
-        with open(os.path.join(LOG, stem + '.log'), 'w') as fh:
-            try:
-                rc = subprocess.run([sys.executable, INSTR], env=e, cwd=BTW,
-                                    stdout=fh, stderr=subprocess.STDOUT,
-                                    timeout=budget).returncode
-            except subprocess.TimeoutExpired:
-                rc = 'TIMEOUT'
-        dt = time.time() - t0
-        print(f"         -> rc={rc}  {dt:.0f}s  "
-              f"{'saved' if os.path.exists(npz) else 'NO FILE'}", flush=True)
+    todo = [(s, e) for s, e in order
+            if (not only or only in s) and not os.path.exists(os.path.join(OUT, s + '.npz'))]
+    print(f"  LAYER-2 RUNNER -- {len(todo)} of {len(order)} namesake(s) left, cheapest first, "
+          f"{budget:.0f}s each, {jobs} at a time, ONE THREAD each\n", flush=True)
+    if jobs > 1:
+        with cf.ThreadPoolExecutor(max_workers=jobs) as pool:
+            for line in pool.map(lambda it: one(it[0], it[1], budget), todo):
+                print(line, flush=True)
+        return
+    for stem, env in todo:
+        print(one(stem, env, budget), flush=True)
+
+
+def one(stem, env, budget):
+    """Run ONE namesake at its identified command and return the report line."""
+    npz = os.path.join(OUT, stem + '.npz')
+    e = dict(os.environ)
+    for k in ('OMP_NUM_THREADS', 'OPENBLAS_NUM_THREADS', 'MKL_NUM_THREADS'):
+        e[k] = '1'
+    e.update({'ARM': 'cr', 'LEAFREC': '0'})
+    e.update(env)
+    e['SAVE'] = npz
+    for k in ('ONLY', 'RUN_BUDGET', 'JOBS'):
+        e.pop(k, None)
+    note = SLICED.get(stem)
+    t0 = time.time()
+    with open(os.path.join(LOG, stem + '.log'), 'w') as fh:
+        try:
+            rc = subprocess.run([sys.executable, INSTR], env=e, cwd=BTW,
+                                stdout=fh, stderr=subprocess.STDOUT,
+                                timeout=budget).returncode
+        except subprocess.TimeoutExpired:
+            rc = 'TIMEOUT'
+    dt = time.time() - t0
+    return (f"  [{stem}]  LMAXL={env['LMAXL']} LSTEP={env.get('LSTEP', '-')} "
+            f"NK={env.get('NK', 'auto')}  ->  rc={rc}  {dt:.0f}s  "
+            f"{'saved' if os.path.exists(npz) else 'NO FILE'}"
+            + (f"\n       ⚠ {note}" if note else ""))
 
 
 if __name__ == '__main__':
