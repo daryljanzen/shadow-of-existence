@@ -137,16 +137,6 @@
   }
  },
  "claude/shadow-of-existence-setup-5tjf0b": {
-  "suite": {
-   "receipts/P15_CR_cosmology/P15_the_three_instruments_with_no_noise_model_one_can_be_given_a_floor_and_ten_passages_quote_a_significance_or_share_the_instrument_cannot_bear.py": {
-    "gates": [
-     "and its ONLY uncertainty in the reposito",
-     "the top band's need, #.#, is the kern"
-    ],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41016158619",
-    "since": "e7869306400c6a8a17f4acd2f505be46e311fcff"
-   }
-  },
   "tolerance": {
    "receipts/P15_CR_cosmology/P15_the_three_instruments_with_no_noise_model_one_can_be_given_a_floor_and_ten_passages_quote_a_significance_or_share_the_instrument_cannot_bear.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41016158619",
