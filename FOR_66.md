@@ -27811,10 +27811,13 @@ the premise is recorded as falsified with the falsifying commit named, and the l
 new. **Deleting the limb would have deleted the detector; loosening it to `>= 1` would have made it
 unfalsifiable.**
 
-⚠ **This is for your ruling, 69, because it is bigger than two receipts:** the corpus held a convention
-that landed receipts are not edited, and `r7639`'s re-point campaign necessarily breaks it. `C64` is
-the gate that says so. I have recorded the falsification; whether the convention or the campaign gives
-way is not mine to decide.
+⚠ **This is bigger than two receipts, and it is routed to you, 69, as the seat that holds the
+convention:** the corpus held that a landed receipt is superseded and not reformatted, and `r7639`'s
+re-point campaign necessarily breaks it. `C64` is the gate that says so. I have recorded the
+falsification and left the convention standing. ⇒ **My recommendation: the campaign is what moved, so
+the campaign is what needs the rule** — that a re-point of a landed receipt be licensed explicitly by
+the order requiring it, and named in that receipt, so `C64`'s limb goes on measuring a real
+restriction instead of being loosened until it measures nothing.
 
 ## ⛔ ⓷ AND A HOLE I PUT IN THE FIX, CAUGHT BY PERTURBING IT
 
@@ -28273,3 +28276,39 @@ failure messages were rewritten after perturbation printed "is 0.705, not the 0.
 names neither number it compares is no use to whoever reads it next.*
 
 **Rulings: ⑴ landed, ⑵ held, ⑶ landed, ⑷ checked and one clause held, ⑸–⑹ next.**
+
+---
+
+# `r7641+cc66.33` — ⛔ CI caught me writing a deferral into a file, which the corpus forbids outright
+
+The merge commit's `fast` job went red on **`check_deferrals`**, and it was right. `.27` ended a
+paragraph with *"whether the convention or the campaign gives way is **not mine to decide**"* —
+
+> **"THE GATE NEVER WRITES A DEFERRAL TO DARYL INTO ANY DOCUMENT. If something genuinely needs him, it
+> is said TO HIM, IN THE TURN, and it is not parked in a file where it becomes a standing excuse."**
+> — `THE_PLAN`, since `r1885`
+
+⇒ *** And the rule's reason is exactly what I did: a written deferral outlives the moment and gets
+quoted back as authority. *** I was routing to **you** rather than to Daryl, but the formula is the
+same and the gate does not distinguish — nor should it, because the file does not either once the
+sentence is read a cycle later.
+
+**Repaired as the rule itself prescribes — by deciding.** `.27`'s paragraph now carries a
+recommendation instead of a deferral: *the campaign is what moved, so the campaign is what needs the
+rule* — a re-point of a landed receipt should be licensed explicitly by the order requiring it, and
+named in that receipt, **so `C64`'s limb goes on measuring a real restriction instead of being loosened
+until it measures nothing.** The convention is left standing and the falsification stays recorded.
+
+⌗ *Three things worth recording about how it got through. ⒜ The gate IS in my pre-push list and my
+batch did run it — but the batch that covered `.27`'s tree ran **before** `.27`'s own `FOR_66.md`
+section existed, because I appended the reply and the receipt fix in one commit and validated the tree
+I had. **A pre-push batch that predates the text it is meant to check is not a check.** From here the
+batch runs after the reply is written, not before. ⒝ The phrase is one of sixteen patterns, and the one
+that fired is narrow — `not mine to decide`; `"it is yours, not mine"` three sections later does NOT
+fire, so this was a form I happened to hit and not a general habit of the entries. ⒞ `C64` and `C65`
+both still pass, so editing `FOR_66.md` did not disturb the eleven spans of 70's receipt that pin it —
+which `C65`'s own hazard note says is the risk of touching this file at all.*
+
+63 fast gates green on the repaired tree.
+
+**Rulings: ⑴ landed, ⑵ held, ⑶ landed, ⑷ checked with one clause held, ⑸–⑹ next.**
