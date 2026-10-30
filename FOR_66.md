@@ -28127,3 +28127,79 @@ and that swap then **crashed** on a missing manifest, which is an instrument tha
 that measures, so a missing manifest is now a named failure.*
 
 **Rulings: ⑴ landed, ⑵ held, ⑶ confirmed and landing next, ⑷–⑹ after.**
+
+---
+
+# `r7641+cc66.31` — ruling ⑶ **LANDED**, and two of my own pins were widening a ratchet
+
+l.1103–1106 is landed in your wording. The receipt is re-pointed onto the arm of record, the figure and
+its banked numbers move with it, and every one of your ⑶'s clauses was checked before the wording was
+read against it. **The `5.7%` neighbour is NOT moved** — it is computed by the receipt your ⑴ holds on
+its namesake reading until the four CAND knob pairs are banked, so it is blocked by ⑴ and not by ⑶.
+
+## ⓵ WHAT MOVED, AND WHAT STAYED
+
+| | namesake | arm of record |
+|---|---|---|
+| the position rescale | `+4.68` at `eps = -7.5e-4` | **`+1.67`** at `+5.0e-4` |
+| the damping | `+1.36` | **`+1.12`** |
+| the tilt | `+0.09` | **`+0.43`** |
+| the arm's amplitude-only $\chi^2$ | `282.96` | **`286.89`** |
+| the whitened cosine | `+0.855` | **`+0.8476`** |
+| the shared fraction | `73.1%` | **`71.8%`** (cuts `70.9`–`72.7`) |
+| what the projection leaves | `76.2` | **`80.8`** |
+| a one-per-cent tilt's cost | `+8.6` | **`+13.4`** |
+| the rescale in multipoles | `0.8` | **`0.6`** |
+| the 185-bin refit $\chi^2$ | `292.42` | **`297.67`** |
+
+**Every clause of your wording holds:** the control's position direction buys `+0.00` against the arm's
+`+1.67`; the rescale is `0.6` multipoles at the fourth peak, under one; and `1.67` of `286.89` is
+`0.58` per cent, under one. ⌗ *And the refit tie now runs BOTH arms through the same pipeline — `297.67`
+for the arm of record and still `292.42` for the namesake — so what moved is demonstrably the arm and
+not the pipeline.*
+
+⛭ **Two gates were restated, not relaxed.** *"Three times the damping and fifty times the tilt"* were
+multiples read off the namesake's `4.68/1.36/0.09`; on the arm of record the lead is `1.5×` and `3.9×`.
+⇒ The durable claim is the **order** of the three, which is exactly what your wording says. And the
+control gate's arm limb was `> 3.0`, calibrated to `4.68` — **it failed at `1.67` while the clause it
+states stayed true**, the `cc66.21` class again; the form now compares the control's gain against the
+arm's instead of demanding a size the arm happens to have.
+
+## ⛔⛔ ⓶ AND TWICE I NEARLY WIDENED A RATCHET TO FIT MY OWN WORK
+
+This is the part worth recording.
+
+* **`check_figures_pinned`.** Re-pointing left six arm-of-record figures in the INDEX row unpinned —
+  `71.8`, `80.8`, `286.9`, `70.9`, `72.7`, `0.58`. They were in my header tie **as literals inside
+  strings**, which is not a pin. ⇒ *Writing the baseline would have taken the unpinned count from
+  `1380` to **`1381`** — widening the ratchet to accommodate the work, which is the opposite of what it
+  is for.* I pinned them as numbers instead: the count falls to **`1375`**, five rows removed and one
+  count lowered, **a strict tightening**. ⌗ *This is the second time in two rulings that my own pin was
+  digits in a string; it is a habit and not an accident, and the numeric form is now what I write
+  first.*
+* **`check_banked_config`.** Re-banking the figure's numbers graded the artefact `REWRITTEN` — *"a
+  re-banked artefact must carry `config`"*. It now writes one at save time, every defining switch at
+  its **resolved** value, and because it is a DERIVED artefact computed from two banks that do not
+  share an `ARM`, both sources are named beside it rather than one standing silently for the pair.
+  Its manifest entry is then removed, per the manifest's own shrink-only rule — **surgically, five
+  lines**, after my first attempt reformatted the whole file and corrupted `entries` from a dict into
+  a list. *The checker's own traceback caught that; nothing was committed.*
+
+## ⓷ THE HEADER AGAIN — NINE FIGURES, NONE GATED
+
+Re-pointing moved **nine** figures this receipt's header states and **not one was gated**. Same shape
+as `cc66.28` found in `the_monopole_zero_point` an hour earlier, so it is a pattern and not a one-off:
+all nine are now parsed out of the header and compared with the computation, and **perturbing any one
+literal reds the receipt.**
+
+## ⓸ THE REST
+
+The figure `fig_acoustic_two_arm.pdf` is regenerated on the arm of record, so it cannot drift from the
+numbers the receipt gates. ⌗ *This container's `matplotlib` could not import — the system `PIL`'s
+binaries are built for `cpython-312` while the interpreter is `3.11` — so Pillow was installed for the
+right interpreter into a scratch path. **No requirements file is touched**: the fault is this
+container's, not the repo's, and CI builds the figure already.* Explainer pin `acoustic-run` routed to
+`FOR_69.md` and restamped, with the `2.57`/`1.57` exposure flagged there so your rewrite does not bake
+in two figures you have not yet ruled on. 327 pages, 63 fast gates green.
+
+**Rulings: ⑴ landed, ⑵ held, ⑶ landed. ⑷–⑹ next.**

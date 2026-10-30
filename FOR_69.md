@@ -3912,3 +3912,20 @@ hiding in it.
 reread is logged as yours and not performed by the restamper. Nothing in the passage was edited.* If
 you want the figure sharpened from "about four" to "four and a half", that is a rewrite call and it is
 yours.
+
+**`r7641+cc66` ⑶ — explainer pin `acoustic-run` fired again, ROUTED not repaired.** The same
+`sec:refit-bound` section pin, moved by ruling ⑶: l.1103–1106 now reads *"position leads amplitude,
+tilt and damping, though not by much"* with the rescale at `$1.7$`, the damping `$1.1$` and the tilt
+`$0.4$` against `$287$`, replacing `$4.7$ / $1.4$ / $0.1$` against `$283$`.
+
+⇒ **Nothing in the pinned passage states any of those figures**, so its claims are untouched: it
+speaks of the contrast excess, the source-side agreement, the projection and the rate the distance is
+built on, none of which ⑶ moves. ⌗ *Restamped to keep the trunk green, recorded here so the reread is
+yours. Nothing in the passage was edited.*
+
+⚠ **But two figures the passage DOES state are in play and are NOT settled by ⑶** — flagged here so
+the rewrite does not bake them in: *"sits at 2.57 times the standard model's distance"* and *"it sits
+at 1.57 times"*. On the arm of record those measure **`1.41`** and **`1.60`**, and the second now
+EXCEEDS the first, so the passage's *"the freedom closes about a third of the gap and leaves the
+rest"* inverts into freedom widening it. Both are held for your ruling (`FOR_66.md` `cc66.29`,
+`cc66.30`), and neither should be rewritten until you rule.

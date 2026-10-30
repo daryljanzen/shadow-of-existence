@@ -41,6 +41,7 @@ marginalises.  No low-ell absolute spectrum, for the reason above.  The 1900 cut
 scored bins is the figure's own, so that the shifted-model tests in the companion receipt use the
 same bin set; the full 185-bin chi^2 is quoted in the caption from the refit itself.
 """
+import json
 import os
 import sys
 
@@ -71,7 +72,12 @@ def lensing_ratio():
 
 
 LG, RATIO = lensing_ratio()
-arm = lambda t: (lambda d: (d['ls'], d['Dl']))(np.load(os.path.join(SP, f'cc66_r185_verify_{t}.npz')))
+# ** r7641 ⑶ -- THE ARM OF RECORD, so the figure and
+#   `P15_three_quarters_of_the_arms_residual_...` cannot drift apart: that receipt gates every
+#   headline number this figure plots against its own recomputation, and re-pointing one without the
+#   other reds it.
+_AOR = {'lcdm': 'cc66_r185_verify_lcdm', 'cr': 'cc66_r185_verify_cr_leafrec1'}
+arm = lambda t: (lambda d: (d['ls'], d['Dl']))(np.load(os.path.join(SP, _AOR[t] + '.npz')))
 binned = lambda ls, Dl: CS.bin_spectrum(ls, Dl * np.interp(ls, LG, RATIO))
 
 KEEP = np.isfinite(binned(*arm('lcdm'))) & (LC >= 100) & (LC <= 1900)
@@ -122,8 +128,31 @@ def main():
     out['obs_lo'] = np.array([0.15, 0.58, 0.55, 0.70, 0.85, 0.95])
     out['obs_hi'] = np.array([0.25, 1.10, 1.05, 1.10, 1.05, 1.05])
 
+    # ** r7641 ⑶ -- `config` AT SAVE TIME, because re-banking this artefact on the arm of record
+    #   made `check_banked_config` grade it REWRITTEN: "a re-banked artefact must carry config".
+    #   ⌗ *This is a DERIVED artefact and not an instrument run -- it is computed from two verify
+    #   banks that do not share an ARM -- so the arm-side resolved configuration is written out, with
+    #   both sources named beside it rather than one of them silently standing for the pair.  Every
+    #   defining switch is written at its RESOLVED value, a default spelled out rather than omitted.*
+    _src_cfg = json.loads(str(np.load(os.path.join(SP, _AOR['cr'] + '.npz'),
+                                      allow_pickle=True)['config']))
+    out['config'] = json.dumps({
+        'ARM': _src_cfg['ARM'],
+        'LEAFSCALES': _src_cfg['LEAFSCALES'],
+        'ZSTART': _src_cfg['ZSTART'],
+        'STACKPERT': _src_cfg['STACKPERT'],
+        'VISLEAF': _src_cfg['VISLEAF'],
+        'LEAFREC': _src_cfg['LEAFREC'],
+        'KFAC': _src_cfg['KFAC'],
+        'derived_from': [_AOR['lcdm'], _AOR['cr']],
+        'derived_by': 'corpus/make_fig_acoustic_two_arm.py',
+        'note': ('a DERIVED artefact: the two arms are scored through '
+                 'chi2_of_spectrum and P15 derived lensing; the switches above are the '
+                 'ARM-side source bank\'s own resolved values'),
+    })
     np.savez(os.path.join(SP, 'cc66_fig_acoustic_numbers.npz'), **out)
-    print(f"  banked -> spectra/cc66_fig_acoustic_numbers.npz")
+    print(f"  banked -> spectra/cc66_fig_acoustic_numbers.npz  (with `config`, arm "
+          f"{_src_cfg['ARM']}, LEAFREC={_src_cfg['LEAFREC']})")
 
     import matplotlib
     matplotlib.use('Agg')
@@ -228,8 +257,9 @@ def main():
     back into D_l against the control's own low-ell spectrum, which is a reconstruction and is
     named as one; the observed low-multipole band is drawn behind it on the same reconstruction.
     Beneath each, whitened residuals for both arms on one axis.  ** The control lands at 1.01 per
-    bin and this arm at 1.58: the peak positions and the acoustic comb are right and the SHAPE is
-    still rejected, and the lower panels are where that is visible rather than the upper ones. **
+    bin and this arm at 1.61 on the ARM OF RECORD -- 1.58 on the namesake arm: the peak positions
+    and the acoustic comb are right and the SHAPE is still rejected, and the lower panels are where
+    that is visible rather than the upper ones. **
 """)
     return 0
 

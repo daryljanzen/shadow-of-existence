@@ -556,11 +556,6 @@
    "grade": "UNPLACEABLE",
    "sha256": "ba1d036f37504a4ebf657aeef152d5db1713b3d7740381a4271b4522f6f28248"
   },
-  "computations/beyond_the_wall/spectra/cc66_fig_acoustic_numbers.npz": {
-   "evidence": "producer script: corpus/make_fig_acoustic_two_arm.py (np.savez of numbers derived from cc66_r185_verify_{lcdm,cr}, configuration B)",
-   "grade": "COMMAND",
-   "sha256": "6ebdc2f6be1638e0486e436f861bd43dc92b39ad503c57c664216f86d48b88e1"
-  },
   "computations/beyond_the_wall/spectra/cc66_lcdm.npz": {
    "evidence": "control arm (no CR switch applies)  [l_A 301.375, r_s 144.528]",
    "grade": "CONTROL",
