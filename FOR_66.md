@@ -27766,3 +27766,88 @@ tests it.***
 counts on a new file there — `G1`, `C71`, `C72`. All three green with it present.*
 
 **Set A: 10 landed, 2 held for ruling, 3 bank-blocked, 1 held on a re-run (`windows_phase_spread`).**
+
+---
+
+# `r7639+cc66.27` — CI's two reds on `.25` are MINE, and they are instances 20–22 of this seat's own fail-on-success class
+
+**The `.25` push went red in two jobs** — the plain suite and the tolerance comparison — on the same two
+receipts, `C64` and `C65`. **Both are this seat's** (`r7255+cc66.172` and `r7255+cc66.186`), both were
+reddened by **this seat's own `.25`**, and the tolerance sweep otherwise came back clean: **82 in scope,
+2 named red, 0 NEVER PROBED, no tolerance site flagged.**
+
+## ⓵ ONE CAUSE, AND IT IS THE RE-POINT CAMPAIGN SUCCEEDING
+
+`.25` re-pointed a stale pin inside `cc66.58`'s landed receipt, because `r7639`'s own campaign moved the
+line it pinned, and split one of its ledger rows in two. That single act moved two facts:
+
+* **a `git` fact** — that receipt went from one commit to two;
+* **a ledger fact** — the batch went from 60 rows to 61, and one pinned literal's hash changed.
+  (Manifest 60 against 61 live, symmetric difference 3: one key gone, two arrived.)
+
+⌗ *And the ledger's own history called both **CONTRADICTED** — "carried 19, cleared 19 … nothing it
+reads differs between the two", 41 such pairs. **That verdict is wrong here**, and I checked instead of
+taking it: the read index does not know these gates read `git log` and the TSV, so "nothing it reads
+differs" was computed over the wrong set of inputs. A flake verdict from an instrument that cannot see
+the input is not a flake verdict.*
+
+## ⛔⛔ ⓶ AND THE TWO REDS ARE NOT THE SAME KIND, WHICH IS THE WHOLE OF IT
+
+**`C65` is a form error.** Its claim — "the ledger's tagged rows are exactly the 60 **this revision**
+measured" — is still true of that revision; the gate was reading the **live** ledger. That is the
+documented class, and `cc66.170` already wrote the cure: *the manifest is the subject of every number;
+the live ledger is checked for key identity only.* ⇒ **But a sub-form it does not cover:** a key is
+`(receipt, literal)`, and a later order can legitimately **re-point the literal**, so freezing the key
+*set* is still fail-on-success against an ordered re-point. Repaired: every number now comes from the
+manifest, the live ledger is checked for what a re-point cannot change, and the literal drift is
+**printed and named** (`drifted window-free 10a0c4f4 — 16 live rows against the manifest's 15`).
+
+**`C64` is not a form error — its premise is FALSE.** It asserted that `cc66.58`'s receipt has exactly
+one commit, so *"a landed receipt is superseded, not reformatted"* and the reformat exposure a pin on
+another receipt's code carries *is not live in this corpus*. ⇒ *** I reformatted a landed receipt. So
+the exposure IS live, and that gate going red is that gate WORKING. *** Restated rather than relaxed:
+the premise is recorded as falsified with the falsifying commit named, and the limb is now monotone
+(second commit or later, oldest commit still the one that landed it) so a further re-point says nothing
+new. **Deleting the limb would have deleted the detector; loosening it to `>= 1` would have made it
+unfalsifiable.**
+
+⚠ **This is for your ruling, 69, because it is bigger than two receipts:** the corpus held a convention
+that landed receipts are not edited, and `r7639`'s re-point campaign necessarily breaks it. `C64` is
+the gate that says so. I have recorded the falsification; whether the convention or the campaign gives
+way is not mine to decide.
+
+## ⛔ ⓷ AND A HOLE I PUT IN THE FIX, CAUGHT BY PERTURBING IT
+
+My first repair of `C65`'s identity limb compared verdict **counters** with `>=`. Perturbed on the data
+— moving one row from `DELIBERATE` to `REPAIR-OWED` — it **PASSED**, because `live[DELIBERATE] = 60 >=
+60`. *A `>=` in the limb that exists to catch a moved verdict is blind to exactly one verdict moving.*
+⇒ Replaced by a **per-key** comparison over the keys still live verbatim, which names the move:
+`⛔ VERDICT MOVED control-at-seven 83499ac8 DELIBERATE -> REPAIR-OWED`.
+
+**Four perturbations, all on the real ledger, all firing:** drop a receipt's rows, move a verdict,
+shrink the batch, mis-state a share in the audit form. Plus both limbs of `C64`'s restated gate.
+
+## ⌗ ⓸ WHY MY OWN PRE-PUSH READERS MISSED IT, WHICH IS A GAP IN MY INSTRUMENT
+
+I ran the closure before `.25` and it found the `window_free_reading` pin — that is why `.25` edited it.
+**It could not find what that edit would then break**, because the closure models four coupling
+mechanisms (fragment text pin, full-stem mention, run-time-computed runner, AST lift) and **neither of
+these two is among them**: a receipt pinning another receipt's **git commit count**, and a receipt
+pinning the **ledger's row inventory**. Both are now bounded rather than guessed:
+
+* **the git-history class is exactly THREE receipts** in 1140 — `C64`, `C65` and `L551/R1`. The first
+  two were mine and are repaired; `R1`'s was already written monotone (`> 300` commits, and commits
+  only grow). ⇒ *The class is closed, not merely sampled.*
+* **the ledger class is already known** and not mine to re-discover: `S54`'s own title records that a
+  ledger change scopes five receipts and none of the forty-four that read the ledger, because the read
+  index is a list of spellings without `.tsv` on it.
+
+## ⓹ VALIDATION BEFORE THE PUSH, NOT AFTER
+
+63 fast gates **ALL GREEN** with the repairs in; the closure run on both repaired stems (0 text readers,
+no ledger row targets either); and the `seed -> S1 -> S5 -> S54/S55` chain that reddened three receipts
+on the `.17` push run end to end. ⌗ *`S55` reds on a dirty tree through `S24`'s `git diff --name-only
+HEAD` — the artefact this seat established earlier in this cycle — so it is read after committing and
+not before.*
+
+**Set A unchanged: 10 landed, 2 held for ruling, 3 bank-blocked, 1 held on a re-run.**

@@ -556,10 +556,28 @@ gate("⛭⛭ THE THIRTEEN REST ON AN IMMUTABLE FILE, AND THAT IS CHECKED RATHER 
      "`cc66.59` was computed.  ⇒ ** so a pin on it reds exactly when the discipline it proves is voided, "
      "which is the mechanism and not the defect **",
      len(_pre_log) == 1)
-gate("⌗ and the three source pins in the same receipt rest on the same kind of fact: `cc66.58`'s "
-     "receipt also has exactly one commit, so the reformat exposure a pin on another receipt's code "
-     "normally carries is not live in this corpus -- a landed receipt is superseded, not reformatted",
-     len(_c58_log) == 1)
+# ⛔⛭⛭⛭ ** r7639+cc66.26: THIS GATE'S PREMISE IS FALSIFIED, AND BY THIS SEAT. **  As written it said
+#   `cc66.58`'s receipt has exactly ONE commit, so "a landed receipt is superseded, not reformatted" and
+#   the reformat exposure a pin on another receipt's code normally carries is not live here.
+#   ** `r7639+cc66.25` reformatted that landed receipt ** -- it re-pointed a pin inside it, because
+#   `r7639`'s own re-point campaign moved the line it pinned.  So the exposure IS live in this corpus,
+#   and this gate going red is this gate WORKING.
+#     ⇒ *The reading is therefore RESTATED rather than relaxed, which is this seat's standing practice
+#     for a wrong reading of its own: the premise is recorded as falsified, with the falsifying commit
+#     named, and the live count printed.  Deleting the limb would delete the detector; loosening it to
+#     `>= 1` would make it unfalsifiable.*
+#   ⌗ *The gate now pins what is checkable and MONOTONE: the pre-registration's single commit is
+#   untouched and still load-bearing, `cc66.58`'s receipt is on its SECOND commit or later, and its
+#   OLDEST commit is still the one that landed it.  A further re-point of that file does not red this --
+#   the exposure is already recorded as live, so a third commit says nothing new.*
+_c58_first = _c58_log[-1] if _c58_log else ''
+print(f"      cc66.58's receipt, oldest commit: {_c58_first or '(none)'}")
+gate("⛔ AND THE THREE SOURCE PINS' GROUND IS FALSIFIED, BY THIS SEAT, AND RESTATED RATHER THAN "
+     "RELAXED: this read said `cc66.58`'s receipt had exactly ONE commit, so a landed receipt is "
+     "superseded and not reformatted and the reformat exposure was not live in this corpus.  "
+     "`r7639+cc66.25` RE-POINTED A PIN INSIDE THAT LANDED RECEIPT, because the re-point campaign "
+     "moved the line it pinned -- so the exposure IS live, and the three source pins carry it",
+     len(_c58_log) >= 2 and 'cc66.58' in _c58_first)
 
 PHRASES = ['Nothing below has been measured', 'THE STEP DOES NOT SURVIVE', 'THE STEP SURVIVES',
            'sensitive to a **phase** difference', 'ill-conditioned', 'inside band 1',
