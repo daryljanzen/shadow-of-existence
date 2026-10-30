@@ -316,3 +316,61 @@ those places that this seat owns.
 
 The DPSRC substitution was a hold because re-pointing the base would have moved a historical comparison.
 Pinning it to the namesakes removes that, and removes it in a way a later re-point cannot quietly undo.
+
+---
+
+# SET A: THE INSTRUMENT FIRST, AND IT IS VERIFIED BEFORE IT IS USED
+
+`own_comb_kinds.py` here, output in `own_comb_kinds.txt`.
+
+**Why a new instrument was needed at all.** `r7637+70`'s `band_excess_own` carries the arm onto the
+control's comb coordinate before the seven bands are cut, which is what removes the beat. Its envelope is
+the retention law's running arithmetic **mean**, lifted unchanged — and that is exactly **one** of the four
+readings the step receipt uses to show the step is the excess's and not the estimator's. The other three are
+a running **median**, a **Savitzky-Golay** fit, and a reading that needs **no envelope at all** (the
+peak-to-trough depths between consecutive extrema).
+
+⇒ **The carry is about the abscissa and the window width, not about the kind of envelope.** It maps the
+arm's `x` to `u = T_c (x / T_a + Δφ/2π)` and widens the arm's window to one of *its own* periods,
+`T_a / T_c`. Neither step mentions how the envelope is estimated, so it generalises to all four; the depths
+reading carries by mapping the extrema's own `q`. *The generalisation is this seat's; the combs, the phase
+fit and the carry are 70's.*
+
+## It is verified two ways before it is used on a receipt
+
+**REPRODUCTION.** The mean reading returns `r7637+70`'s own-comb row on the arm of record **to every digit
+that result prints** — `+0.0295 +0.0595 +0.0610 +0.0639 +0.0777 +0.0728 +0.0795`, step `−0.0396`, rise
+`+0.0061` — from an independent implementation. *An instrument that runs is not an instrument that measures;
+this one is checked against a number computed elsewhere before it is trusted.*
+
+**REDUCTION.** With `T_a = T_c` and `Δφ = 0` the carry must **be** the shared statistic. Fed the control
+against itself, all four readings return every band at zero: `0.0`, `2.2e-16`, `2.2e-16`, `0.0` — floating
+point, not a difference. That is 70's own invariant, now checked for the three kinds they did not cover.
+
+## And the own comb restores the smooth pattern in EVERY kind, not just the mean
+
+| reading | arm of record, carried | ratio-step | 70-step | rise |
+|---|---|---|---|---|
+| mean | `+0.0295 +0.0595 +0.0610 +0.0639 +0.0777 +0.0728 +0.0795` | `0.427` | `−0.0396` | `+0.0061` |
+| median | `+0.0521 +0.0563 +0.0658 +0.1107 +0.1089 +0.1081 +0.1927` | `0.486` | `−0.0550` | `+0.0329` |
+| savgol | `+0.0464 +0.0454 +0.0646 +0.0766 +0.0753 +0.0737 +0.0904` | `0.654` | `−0.0246` | `+0.0103` |
+| no envelope | `−0.0024 +0.0602 +0.0669 +0.0508 +0.0539 +0.1235 +0.0554` | `−0.035` | — | — |
+
+Combs: control `T 1.0090, φ 1.441`; arm `T 1.0045, φ 1.450`; `Δφ +0.0083`.
+
+**The alternation is gone in all three envelope kinds.** On the *shared* statistic on the arm of record the
+savgol reading has a **negative** band 6 (`−0.0075`) and the mean reading drops to `+0.0141` there; carried,
+those become `+0.0737` and `+0.0728`. *So 69's ruling — that the alternation was the beat — holds on three
+envelope kinds, where 70 measured it on one.*
+
+## What the step receipt's own assertions do on the arm of record
+
+| its assertion | namesake | arm of record, carried |
+|---|---|---|
+| `max(ratio-step) < 0.7` over all four readings | `0.633` | **`0.654`** — passes, margin narrowed |
+| envelope-free band 1, `|·| < 0.01` | `−0.0017` | **`−0.0024`** — passes |
+| envelope-free bands 2–7 mean, `> 0.04` | `+0.0654` | **`+0.0685`** — passes |
+
+⚠ **The `0.7` gate is the one to watch**: the savgol reading moves from `0.633` to `0.654`, so the margin
+falls from `0.067` to `0.046`. It passes, and it passes on the reading the ruling says is the right one, but
+it is the narrowest margin in the family and is recorded as such rather than left to be rediscovered.
