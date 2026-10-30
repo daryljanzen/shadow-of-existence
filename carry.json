@@ -135,5 +135,149 @@
     "unmeasured": true
    }
   }
+ },
+ "claude/shadow-of-existence-setup-5tjf0b": {
+  "suite": {
+   "receipts/L237_gates_check_declarations/G1_every_gate_checks_a_declaration.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41142120798",
+    "since": "fc687d79738b63377942e458b65db6b82e09300b",
+    "unmeasured": true
+   },
+   "receipts/L237_gates_check_declarations/G50_the_receipt_runner_gate_was_green_because_its_cache_had_no_expiry.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41142120798",
+    "since": "fc687d79738b63377942e458b65db6b82e09300b",
+    "unmeasured": true
+   },
+   "receipts/L237_gates_check_declarations/G51_the_twelve_can_all_exit_non_zero_and_the_backlog_is_an_artefact.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41142120798",
+    "since": "fc687d79738b63377942e458b65db6b82e09300b",
+    "unmeasured": true
+   },
+   "receipts/L255_the_exemption_was_a_claim/E1_an_exemption_is_a_claim_and_all_three_were_false.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41142120798",
+    "since": "fc687d79738b63377942e458b65db6b82e09300b",
+    "unmeasured": true
+   },
+   "receipts/L257_the_label_did_double_duty/V1_a_strike_that_reads_as_done_and_a_paper_that_says_otherwise.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41142120798",
+    "since": "fc687d79738b63377942e458b65db6b82e09300b",
+    "unmeasured": true
+   },
+   "receipts/L259_the_distance_from_the_present/D1_a_check_pinned_to_a_distance_from_the_present_is_pinned_to_the_present.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41142120798",
+    "since": "fc687d79738b63377942e458b65db6b82e09300b",
+    "unmeasured": true
+   },
+   "receipts/L_probability/S14_four_of_the_five_uncontrolled_zeros_were_a_false_negative_of_this_seats_own_proxy_and_the_fifth_had_the_read_controlled_and_not_the_counter.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41142120798",
+    "since": "fc687d79738b63377942e458b65db6b82e09300b",
+    "unmeasured": true
+   },
+   "receipts/L_probability/S1_the_corpus_sweep_finds_no_headline_resting_on_an_overclaimed_sigma_and_three_in_one_paper_below_it.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41142120798",
+    "since": "fc687d79738b63377942e458b65db6b82e09300b",
+    "unmeasured": true
+   },
+   "receipts/L_probability/S42_the_between_seat_gap_the_campaign_calibrated_on_sits_inside_the_noise_floor_of_every_sample_the_campaign_has_read.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41142120798",
+    "since": "fc687d79738b63377942e458b65db6b82e09300b",
+    "unmeasured": true
+   },
+   "receipts/L_probability/S5_the_set_shaped_class_is_absent_from_the_gate_layer_and_two_thirds_of_what_remains_sits_at_the_one_value_where_the_standing_guards_repair_is_a_tautology.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41142120798",
+    "since": "fc687d79738b63377942e458b65db6b82e09300b",
+    "unmeasured": true
+   },
+   "receipts/L_probability/S6_an_unread_figure_is_a_claim_with_no_gate_and_one_of_this_seats_six_was_comparing_against_a_number_the_paper_had_withdrawn_as_the_error.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41142120798",
+    "since": "fc687d79738b63377942e458b65db6b82e09300b",
+    "unmeasured": true
+   },
+   "receipts/L_probability/S8_the_source_half_is_the_blinder_one_and_the_class_is_mostly_a_receipt_pinning_a_ledger_not_another_receipt.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41142120798",
+    "since": "fc687d79738b63377942e458b65db6b82e09300b",
+    "unmeasured": true
+   },
+   "receipts/L_probability/S9_the_exposure_is_zero_so_the_count_judgement_was_right_and_the_class_was_already_registered_before_it.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41142120798",
+    "since": "fc687d79738b63377942e458b65db6b82e09300b",
+    "unmeasured": true
+   },
+   "receipts/P15_CR_cosmology/C64_the_first_sixty_eight_keys_of_the_prefix_are_read_and_the_repair_owed_fraction_is_four_point_four_per_cent_with_both_mechanisms_present_in_shapes_the_flag_cannot_see.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41142120798",
+    "since": "fc687d79738b63377942e458b65db6b82e09300b",
+    "unmeasured": true
+   },
+   "receipts/P15_CR_cosmology/C65_the_next_sixty_keys_are_all_source_and_none_is_a_repair_so_last_cycles_prediction_is_wrong_and_all_three_repair_forms_already_exist_in_this_prefix.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41142120798",
+    "since": "fc687d79738b63377942e458b65db6b82e09300b",
+    "unmeasured": true
+   },
+   "receipts/P15_CR_cosmology/C67_the_hundred_and_forty_eight_are_re_stated_and_the_grain_clause_decides_twenty_three_so_the_negative_does_not_fire_but_the_paper_half_is_held_and_not_owed_so_cc66_170s_split_inverts.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41142120798",
+    "since": "fc687d79738b63377942e458b65db6b82e09300b",
+    "unmeasured": true
+   },
+   "receipts/P15_CR_cosmology/C68_all_twenty_seven_owed_rows_are_performed_and_none_is_held_so_the_owed_class_was_redundant_assertion_and_six_fall_in_the_computable_class_the_negative_asked_for.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41142120798",
+    "since": "fc687d79738b63377942e458b65db6b82e09300b",
+    "unmeasured": true
+   },
+   "receipts/P15_CR_cosmology/C69_the_four_hundred_and_seventy_five_are_adjudicated_and_meaning_held_takes_none_of_them_so_three_of_four_pinned_numbers_miss_on_one_error.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41142120798",
+    "since": "fc687d79738b63377942e458b65db6b82e09300b",
+    "unmeasured": true
+   },
+   "receipts/P15_CR_cosmology/C70_seventy_one_per_cent_of_the_two_hundred_and_seventy_two_held_rows_are_computable_so_the_negative_misses_by_sixty_one_points_and_my_band_by_twenty_nine_and_the_cost_inverts.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41142120798",
+    "since": "fc687d79738b63377942e458b65db6b82e09300b",
+    "unmeasured": true
+   },
+   "receipts/P15_CR_cosmology/C71_the_census_is_sixty_two_per_cent_ast_and_the_backlog_has_a_nearest_function_for_eighty_three_per_cent_but_the_fourteen_that_do_not_are_one_hole_and_a_cheaper_form_lowers_the_strict_count.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41142120798",
+    "since": "fc687d79738b63377942e458b65db6b82e09300b",
+    "unmeasured": true
+   },
+   "receipts/P15_CR_cosmology/C72_nineteen_of_the_fifty_nine_reachable_rows_are_reached_by_grafting_the_named_function_out_of_a_script_and_the_one_hole_is_filed_as_a_stated_limit_whose_capability_is_short_work.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41142120798",
+    "since": "fc687d79738b63377942e458b65db6b82e09300b",
+    "unmeasured": true
+   },
+   "receipts/P15_CR_cosmology/C79_batch_eight_takes_six_and_refutes_this_seats_own_pinned_call_by_its_own_clause_because_a_lie_group_claim_turns_out_to_be_reachable_by_a_finite_group_character_count.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41142120798",
+    "since": "fc687d79738b63377942e458b65db6b82e09300b",
+    "unmeasured": true
+   },
+   "receipts/P15_CR_cosmology/C81_order_two_is_done_in_one_cycle_the_zero_mode_capability_exists_and_the_measure_the_stated_limit_called_its_only_open_question_does_not_change_the_count.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41142120798",
+    "since": "fc687d79738b63377942e458b65db6b82e09300b",
+    "unmeasured": true
+   },
+   "receipts/P15_CR_cosmology/P15_the_background_returns_the_larger_stretch_so_2774_is_the_constructions_and_the_stale_trio_is_a_configuration_not_a_slip_but_the_figures_name_two_of_them.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41142120798",
+    "since": "fc687d79738b63377942e458b65db6b82e09300b",
+    "unmeasured": true
+   },
+   "receipts/P15_CR_cosmology/P15_the_one_fitted_number_moves_the_scale_and_not_the_peak.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41142120798",
+    "since": "fc687d79738b63377942e458b65db6b82e09300b",
+    "unmeasured": true
+   },
+   "receipts/P15_CR_cosmology/P15_the_onset_bracket_family_is_latent_everywhere_and_was_live_in_one_place.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41142120798",
+    "since": "fc687d79738b63377942e458b65db6b82e09300b",
+    "unmeasured": true
+   },
+   "receipts/P15_CR_cosmology/P15_the_resolution_table_eight_of_the_eleven_instruments_cannot_represent_the_comb_period_and_four_smallest_shares_are_honest_blanks.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41142120798",
+    "since": "fc687d79738b63377942e458b65db6b82e09300b",
+    "unmeasured": true
+   },
+   "receipts/P15_CR_cosmology/P15_the_shear_coefficient_derived_not_remembered.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41142120798",
+    "since": "fc687d79738b63377942e458b65db6b82e09300b",
+    "unmeasured": true
+   }
+  }
  }
 }
