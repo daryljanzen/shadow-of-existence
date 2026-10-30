@@ -96,6 +96,16 @@ def main():
         if not os.path.exists(p):
             continue
         z, env = load(p), cfg[stem]
+        if stem in NO_SPECTRUM:
+            # ⌗ The SRCETA writer has its OWN key set and does not carry `config`; what it DOES carry
+            #   is the same information under its own names, so that is what is checked here.
+            ok = (str(z['path']) == 'HIER' and int(z['leafscales']) == 1
+                  and float(z['taper']) == 0.0 and not bool(z['sliced']))
+            check(f"{stem:<32} is the SRCETA save and records its own resolved switches instead of "
+                  f"a config key: path {str(z['path'])}, leafscales {int(z['leafscales'])}, "
+                  f"taper {float(z['taper']):g}, sliced {bool(z['sliced'])}", ok)
+            have.append(stem)
+            continue
         c = json.loads(str(z['config']))
         want_lm = float(env['LMAXL'])
         ok = (c['ARM'] == 'cr' and c['LEAFREC'] is False and c['LMAXL'] == want_lm
@@ -115,18 +125,19 @@ def main():
         a, b = load(os.path.join(REBUILT, stem + '.npz')), load(os.path.join(SPEC, stem + '.npz'))
         if stem in NO_SPECTRUM:
             shared = sorted(set(a.files) & set(b.files) - {'config', 'manifest', 'arm', 'path'})
-            worst, worstk = 0.0, ''
+            reads = []
             for k in shared:
                 x, y = np.asarray(a[k], float).ravel(), np.asarray(b[k], float).ravel()
                 if x.shape != y.shape:
-                    worst, worstk = float('inf'), k + ' (shape)'
-                    break
-                rel = np.abs(x - y) / np.maximum(np.abs(y), 1e-300)
-                if float(rel.max()) > worst:
-                    worst, worstk = float(rel.max()), k
+                    reads.append((float('inf'), k + ' (shape)'))
+                    continue
+                reads.append((float((np.abs(x - y) / np.maximum(np.abs(y), 1e-300)).max()), k))
+            worst, worstk = max(reads) if reads else (float('inf'), '(nothing compared)')
+            nbit = sum(1 for r, _ in reads if r == 0.0)
             check(f"{stem:<32} has NO spectrum on either side -- the SRCETA save -- so it is "
-                  f"compared on the {len(shared)} arrays it does carry, worst at {worstk!r} "
-                  f"{worst:.3e}", worst < TOL)
+                  f"compared on the {len(reads)} arrays it does carry: {nbit} bit-identical, "
+                  f"worst at {worstk!r} {worst:.3e}",
+                  worst < TOL and len(reads) >= 20)
             (within if worst < TOL else over).append(stem)
             continue
         same_grid = np.array_equal(a['ls'], b['ls'])

@@ -78,7 +78,16 @@ def one(stem, env, budget):
         e[k] = '1'
     e.update({'ARM': 'cr', 'LEAFREC': '0'})
     e.update(env)
-    e['SAVE'] = npz
+    # ⛔ ** ONE ENTRY IS NOT WRITTEN BY `SAVE` AT ALL. **  `SRCETA` is a PATH, not a flag: the
+    #   namesake of `r6959_eta_cr` is what that switch's own `np.savez` wrote, and `SAVE` on the same
+    #   run writes a spectrum the namesake does not have.  *The first pass set `SRCETA=1` and got a
+    #   file called `1.npz` beside the instrument -- the right arrays under the wrong name, which is
+    #   the same confusion in miniature that this census exists to catch.*
+    if env.get('SRCETA') == '@OUT@':
+        e['SRCETA'] = npz
+        e['SAVE'] = npz + '.spectrum-ignored.npz'
+    else:
+        e['SAVE'] = npz
     for k in ('ONLY', 'RUN_BUDGET', 'JOBS'):
         e.pop(k, None)
     note = SLICED.get(stem)
