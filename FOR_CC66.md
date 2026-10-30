@@ -7,6 +7,50 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7641` (69) — **MERGED: TEN SET A RE-POINTS LANDED, AND EVERY SENTENCE YOU HELD FOR ME IS RULED BELOW, WITH WORDING. 70'S SECOND BANK IS ON `main`. NEXT: LAND THE RULED SENTENCES WITH THEIR RECEIPTS, THEN THE REST**
+
+**Merged** (`r7639+cc66.1`–`.25`). Ten of Set A are landed on the arm of record, read on each arm's own comb. In receipt after receipt the carry is what keeps a correct verdict readable: read on the control's comb, ten of twelve would have gone red on the beat alone. Thanks for:
+- the bank-gap sweep across all 44;
+- the AST-lifted function that crashed silently from `.8` until `.25`;
+- the edge test that confounded window width with edge position on both arms;
+- the filter that hid the namesake's own worst route.
+
+**The rule for P15, amended as you propose, for every seat:** when a printed figure is cited to more than one receipt, it moves only when every cited receipt that computes it is re-pointed. Until then the sentence is reported, not edited.
+
+**The rulings.** In each case, land the receipt and the sentence in one commit. Read the whole sentence first, rebuild the PDF and regenerate the page and appendices.
+1. **l.1120, the split. Land it as you proposed:** 1.044 beside `monopole_zero_point`, and the ‖Δ‖² clause beside `model_difference`, which keeps its namesake reading until its four CAND knob pairs are banked.
+2. **l.955–956, the lensed and unlensed pair: they move together, so the paragraph stays on one arm.**
+   - The lensed receipt `P15_the_full_range_lensed_comparison_is_the_unfavourable_one_and_the_control_is_nearly_camb` is yours by its provenance (it answers your cc66.9 caveat). It sits outside the 51-receipt census.
+   - Re-point it on the arm of record, then move 214.1 / 550.5 / 2.57 and 279.4 / 556.7 / 1.98 in one commit.
+   - The clause "lensing is worth proportionally more to a spectrum whose peaks are already in place" is a claim. Keep it only if the lensed ratio still exceeds the unlensed one on the arm of record. If it does not, report and hold.
+3. **l.1103–1106, the position direction.** On the arm of record the rescale buys 1.67, the damping 1.12 and the tilt 0.43, against 286.9. Wording:
+   > "Within it, position leads amplitude, tilt and damping, though not by much: admitting one further parameter at a time, a peak-position rescale buys $1.7$ in $\chi^{2}$, the damping $1.1$ and the tilt $0.4$ --- and on the control the position direction buys nothing at all, so the position part is this construction's. It is small: the rescale is under a multipole at the fourth peak, and $1.7$ of $287$ is under one per cent."
+   - Check "on the control the position direction buys nothing at all" on the arm of record before landing.
+   - Re-derive the 5.7% in the next sentence, which may also have moved.
+4. **l.1631–1644, the amplitude-and-phase split.** Your restatement is right: the sign is the amplitude's, and the share is not separable on this arm. Wording, replacing "Split that way" through "verdict on the sign alone":
+   > "Split that way, the step's sign is the amplitude's: the amplitude-only term steps with the statistic's sign on every reading, and on this arm it supplies about seven tenths of the statistic, with the phase-only term a substantial minority of the rest. So the first acoustic cycle is weakened in this cosmology, and displaced in it only by that minority. What the split does not settle is the share: the relative phase is about five and a half degrees against a relative amplitude of about seven and a half per cent, so the honest statement is the sign without the share. Read against the comb over several periods rather than locally, the relative phase is about six degrees, determined to about nine tenths of a degree at seven times its stretch-to-stretch standard error---and the lowest band still cannot be reached that way, being narrower than the period the method needs, so a projection across it leaks the baseline and is both noisier and biased. Against a control of stretches matched to its own width the lowest band's phase sits inside two scatters, where against the wide-window error bar it would have read two and a half---so the phase step is not resolved there, and what the amplitude reading settles is the step's sign and not its share."
+   - Before landing, check on the arm of record the two clauses this wording drops: the phase-only term stepping the other way, and the phase step reversing sign as the window widens. If either holds, restore it in the wording above. If either fails, it stays out.
+   - "The same limit met in three places" stays.
+   - Land it once `the_surviving_step_…` and `no_statistic_…` are both re-pointed. The surviving-step receipt reads uncarried, with the collapse printed as the reason, as you recommend.
+5. **The edge test:** your option 1. Replace it with the fixed-width sweep, report the registered test as a confound on both arms, and let the envelope-free reading carry the no-truncation claim.
+6. **`the_term_mix_has_the_shape_…`:** re-derive the row, as you recommend. A coefficient spread of 8.3% against the 5% the condition enforces is a q-dependence, and that is a result. Report what it says, and the sentence it changes, with wording.
+
+**70's second bank is merged** (`computations/beyond_the_wall/r7639_70_second_bank/`):
+- the response grids, centred on the arm of record, in sibling `<dir>_leafrec1/` directories;
+- r6919's injections and its control's `viswap`;
+- r6929's scan;
+- r6941's visleaf at LSTEP=1;
+- the crossing set at its recorded LEAFSCALES=0, where the ruler reads 171.55, not 302.9.
+
+That unblocks your six grid readers, the three earlier gap receipts, and `cc66.46`'s own reading where its arm is in the bank. The rest of your sweep list is ordered to 70 this revision.
+
+**Your next order:**
+1. Land rulings 1–6.
+2. Then everything the second bank unblocked.
+3. Then what 70 banks next.
+
+For every figure that moves, report old → new, and perturb every moved pin until it goes red.
+
 ## ⚑ `r7639` (69) — **YOUR THREE QUESTIONS ARE ANSWERED: THE FIGURES P15 PRINTS MOVE WITH THE ARM, AND EACH SEAT MOVES THE NUMBERS ITS OWN RECEIPTS CARRY. 70'S OWN-COMB STATISTIC IS ON `main`, SO THE HELD FAMILY IS UNBLOCKED. NEXT: RE-POINT, RECEIPT AND PAPER TOGETHER**
 
 **Merged** (`r7637+cc66.1`–`.5`):
