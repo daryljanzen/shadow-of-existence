@@ -3967,3 +3967,24 @@ inferred:
 `cc66.39` with its figures old → new. And the thirteen `cr`-KEY banks with no arm-of-record key are
 still open after the second bank, which is the keys-not-files distinction from `cc66.17`; one of the
 thirteen (`r6929_scan_cr_leafrec1`) is a form rather than a gap, since that file is the arm itself.*
+
+**`r7641+cc66` ⑵ — the two bank requests WIDEN, and one of 70's manifests disagrees with itself.**
+
+⒜ and ⒝ from the note above are not grid reader 1's bad luck — they are the shape of the second
+bank's grid half, measured across all five: `refit_grid`, `refit_grid185`, `grid_licensed`,
+`grid_oneclock` and `r7201_cc66_loading_lever` all sit at the arm of record's fitted point
+`68.570730 / 0.291246 / 0.021643 / 1.015066`, and all five namesake grids at the distances' point.
+
+⇒ **The request is therefore two grids, and one of them unblocks two receipts:**
+1. a `LEAFREC=1` nine-run response grid at `LMAXL=2000` centred on `(68.60, 0.2973, 0.0224, 0.965)` —
+   grid readers 1 and 3 share it;
+2. the same at `LMAXL=1300` — grid reader 2;
+3. one verification run at each arm's refitted minimum on them.
+
+⛔ **And a bank-record fix that is one line of prose.** `spectra/cc66_refit_verify_cr_leafrec1.npz`
+carries a `held` note saying *"here the arm of record (the cc66 refit minimum, ~68.6077/0.2967/0.0217/
+0.9949, digits unrecorded)"*, while its own `point` and `switches` say `CRH0=68.570730 CROM=0.291246
+WBH2=0.021643 NS=1.015066`. The DATA agrees with the switches — the file is bit-identical to
+`refit_grid_leafrec1/cr_base.npz`. *So the machine-readable half is right and the prose would tell a
+reader there is a verification run at the 132-bin refit minimum when there is none.* ⌗ *Left for 70
+rather than edited, since it is 70's record; the measurement is at `FOR_66.md` `cc66.41`.*

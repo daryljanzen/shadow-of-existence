@@ -28868,3 +28868,113 @@ pipeline, the namesake's published figures as a licence gate first, and **seven 
 one red**: the base left at the distances' point, the grids pointed back, the driving pair pointed
 back, the carry probe's cancellation broken, the licence separation moved by a tenth, the raw-spread
 finding inverted, and the orthogonality gate told the two point the same way.*
+
+---
+
+# `r7641+cc66.41` — grid reader 2 blocked the same two ways, ⛔ **a bank manifest that disagrees with itself**, and ⛭⛭ **the arm of record STRENGTHENS a withdrawal this line already made**
+
+`the_refit_leaves_the_background_…` asks grid reader 1's question on the shorter range, so it meets
+the same two obstructions. **What is new is that both are now shown to be the bank's shape rather than
+one receipt's bad luck — with the namesake arm as the control for each — and that re-reading this
+receipt on the arm of record makes a figure it withdrew look worse, not better.**
+
+## ⓵ BOTH OBSTRUCTIONS ARE THE BANK'S, MEASURED ACROSS ALL FIVE GRIDS
+
+| grid | namesake centre | arm-of-record centre |
+|---|---|---|
+| `refit_grid` | distances' point, no manifest | `68.570730 / 0.291246 / 0.021643 / 1.015066` |
+| `refit_grid185` | distances' point, no manifest | the same |
+| `grid_licensed` | distances' point, no manifest | the same |
+| `grid_oneclock` | distances' point, no manifest | the same |
+| `r7201_cc66_loading_lever` | — | the same, all four files |
+
+⇒ *** Every arm-of-record grid in the second bank sits at one point — the arm of record's fitted point
+— and every namesake grid at the distances' point. So ⒜ is not a property of grid reader 1; it is the
+shape of the bank's grid half. ***
+
+**And ⒝ likewise, with the control that makes it a measurement:**
+
+| | max \|verify − `cr_base`\| |
+|---|---|
+| namesake, `cc66_refit_verify_cr` | `6.28e-02` — **`12.3%` of the peak** |
+| **arm of record**, `cc66_refit_verify_cr_leafrec1` | **`0.0` — bit-identical** |
+
+⇒ *These files are **not** built as copies of their base: on the namesake arm the verification run is
+a genuinely different run at a different point, its own refit minimum, exactly as the receipt says. So
+the identity on the arm of record is **a missing run**, not a convention.*
+
+## ⛔⛭ ⓶ AND THAT FILE'S MANIFEST DISAGREES WITH ITSELF
+
+`cc66_refit_verify_cr_leafrec1.npz` carries both of these:
+
+> `held`: *"the point: the namesake sat at its own CRH0/CROM with ZSTART=3e7 and LEAFSCALES=0; here
+> the arm of record (**the cc66 refit minimum, ~68.6077/0.2967/0.0217/0.9949**, digits unrecorded)"*
+>
+> `switches`: `ARM=cr CRH0=68.570730 CROM=0.291246 … NS=1.015066 WBH2=0.021643`
+
+**The data agrees with the switches** — the file is bit-identical to the grid base at `68.570730`. ⇒
+*So the machine-readable half of the record is right and the prose is wrong, in the one direction that
+matters: it tells a reader there is a verification run at the 132-bin refit minimum when there is not.
+A receipt that trusted the prose would believe it had the licence this bank does not supply.* ⌗ *Routed
+to you for 70 rather than edited — it is 70's bank record, and the fix is one line of prose.*
+
+## ⛭⛭ ⓷ AND HERE IS THE RESULT THAT PAYS FOR THE RE-READ
+
+This receipt reads its peaks with `argrelextrema` on the spectrum's own `LSTEP=8` grid — the **raw**
+locator — and `r6825+cc66.25` withdrew its `4.5%` on exactly that ground: *at that resolution the
+CONTROL returns the same `4.5%`*, so the number could not distinguish the arms.
+
+| raw `LSTEP=8` phase residual | |
+|---|---|
+| control | `4.5%` |
+| namesake arm | `4.5%` — indistinguishable, which is why it was withdrawn |
+| **arm of record** | **`0.7%`** |
+
+⇒ *** The quantised figure does not merely blur the comparison — it REVERSES it. On the arm of record
+the same raw statistic makes the arm look three times BETTER than the control, where on the namesake
+it looked identical to it. *** The cause is measured, not guessed: **the arm's second peak lands at
+`532` where the control's and the namesake's both land at `540`** — one and a half grid steps, on the
+same $\ell$ grid. ⌗ *So the withdrawal is stronger than when it was made: a statistic that can produce
+`4.5%`, `4.5%` and `0.7%` on three spectra of the same family is reading its own sampling. The refined
+reading is what carries the verdict, and `cc66.39` measured it on this arm — `3.7%` against `1.6%`.*
+
+## ⓸ WHAT MOVES, IN THREE CLASSES
+
+| figure | namesake | arm of record | |
+|---|---|---|---|
+| $\chi^2$ refitted | `170.6` | **`174.7`** | moved |
+| per bin, refitted | `1.29` | **`1.32`** | moved |
+| phase, per cent out (raw) | `4.5` | **`0.7`** | moved — and ⓷ |
+| fourth peak, per cent out | `0.7` | `0.7` | unchanged |
+| flatness, cheapest step | `22.9` | `22.9` | trace |
+| banked run $\chi^2$ | `171.1` | `181.7` | ⚠ **a bound** — the arm's run is its base |
+| ratio, banked run | `1.45×` | `1.54×` | ⚠ **a bound** |
+| H0 move | `+0.0077` | `+0.0014` | ⛔ not comparable — different centre |
+| $\Omega_m$ move | `-0.195%` | `+0.245%` | ⛔ not comparable |
+| $n_s$ wanted | `0.9949` | `1.0117` | ⛔ not comparable |
+| $\chi^2$ at the centre | `299.0` | `181.7` | ⛔ not comparable |
+| ratio at the centre | `2.22×` | `1.35×` | ⛔ not comparable |
+
+## ⌗ ⓹ AND THE RATIO IS REPORTED AS A BOUND, WHICH IS WHAT THE BANK SUPPORTS
+
+The namesake's banked run is at a real refit minimum; the arm of record's **is** the base. A refit can
+only lower a $\chi^2$, so the arm of record's figure is an upper bound and its own response model's
+refit from that centre is the lower one: **between `1.48×` and `1.54×`, against the namesake's
+`1.45×`.** ⇒ *Either way the ratio does not fall on the arm of record — and that, rather than a point
+value, is the whole claim this bank licenses.*
+
+## ⓺ SO READER 2 IS ALSO NOT RE-POINTED, AND THE BANK REQUEST IS NOW TWO GRIDS
+
+Same reason as reader 1: its title names the figure that cannot be read. ⇒ **The request to 70 widens
+from one grid to two, and one of them unblocks two receipts:**
+
+1. `LEAFREC=1` nine-run response grid at **`LMAXL=2000`** centred on `(68.60, 0.2973, 0.0224, 0.965)`
+   — unblocks grid readers 1 **and** 3, which share that grid;
+2. the same at **`LMAXL=1300`** — unblocks grid reader 2;
+3. and one verification run at each arm's refitted minimum on them.
+
+⌗ *Instrument: `r7641_cc66_grid_readers/refit_132_on_the_arm_of_record.py`, with the namesake arm as
+the control for both obstructions and a licence gate on the receipt's published figures. **Seven
+perturbations, every one red**: the centre read forced to the distances' point, the banked run pointed
+back, the grid pointed back, the manifest-disagreement literal changed, the licence ratio moved by a
+hundredth, the phase-reversal finding inverted, and the ratio bound told that it falls.*
