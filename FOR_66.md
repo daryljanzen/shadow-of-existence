@@ -28203,3 +28203,73 @@ container's, not the repo's, and CI builds the figure already.* Explainer pin `a
 in two figures you have not yet ruled on. 327 pages, 63 fast gates green.
 
 **Rulings: ⑴ landed, ⑵ held, ⑶ landed. ⑷–⑹ next.**
+
+---
+
+# `r7641+cc66.32` — ⑷'s two dropped clauses both FAIL, so they stay out; and a third clause in your wording does not hold
+
+You asked me to check the two clauses your ⑷ wording drops before landing. **Both fail on the arm of
+record, so by your own instruction both stay out.** Three of your figures reproduce exactly. ⛔ **But a
+clause you did not ask about does not hold, and it is load-bearing for the sentence after it.**
+
+## ⓵ THE TWO DROPPED CLAUSES — BOTH OUT
+
+| clause | namesake | arm of record |
+|---|---|---|
+| ⒜ *the phase-only term steps the other way* | PH `+0.57 +0.66 +0.73 +0.80` against AMP all negative → **holds** | PH `-0.28 -0.40 -0.34 -0.42`, the **same** way as AMP → **FAILS** |
+| ⒝ *the phase step reverses sign as the window widens* | — | half `0.50→2.00` gives `-0.29 -0.36 -0.25 -0.14 -0.12`, **one sign throughout** → **FAILS** |
+
+⇒ *Correctly omitted. ⒜ is not merely absent on the arm of record — it is **reversed**: the phase
+channel now steps WITH the statistic on all four bases where on the namesake it stepped against it on
+all four.*
+
+## ⓶ THREE OF YOUR FIGURES ARE EXACT
+
+Measured before your wording was read against them: the amplitude-only term supplies
+`0.166/0.236 = `**`0.705`** of the statistic — your *"about seven tenths"*; the relative phase is
+**`5.55`** degrees — your *"about five and a half"*; the relative amplitude **`7.56`** per cent — your
+*"about seven and a half"*. And the amplitude term steps with the statistic's sign on **every** basis
+(`-0.159 -0.179 -0.154 -0.174`), so *"the step's sign is the amplitude's"* holds.
+
+## ⛔⛔ ⓷ BUT *"THE PHASE-ONLY TERM A SUBSTANTIAL MINORITY OF THE REST"* IS NOT SUPPORTED
+
+`dep4` returns each **series' own** band-1 fractional step, so the three are directly comparable. On
+the arm of record they order **`|PH| > |BOTH| > |AMP|`**:
+
+> AMP `-0.166`  ·  BOTH `-0.236`  ·  PH **`-0.360`**
+
+⇒ *** The amplitude-only term is `0.705` of the composite, and the phase-only term is `1.524` of it —
+so the phase channel's own step is HALF AGAIN the statistic's, not a minority of anything. The two
+channels partially CANCEL in the composite. ***
+
+**And that carries into the next clause, which is why I am flagging it rather than landing it:** your
+wording continues *"So the first acoustic cycle is weakened in this cosmology, and displaced in it only
+by that minority."* With the phase channel's step exceeding the composite's and now pointing the same
+way, *"displaced only by that minority"* is not a statement the arm of record supports.
+
+⌗ *Note the namesake arm was no cleaner, only differently so: there PH was `+0.688`, a step of three
+times the composite in the OPPOSITE direction. On neither arm is the phase channel small; what changed
+is its sign, and the "minority" reading was an artefact of the composite being nearly all amplitude
+when the phase term cancels against it.*
+
+**Proposed wording** for the one clause, leaving the rest of your ⑷ exactly as written:
+
+> "...and on this arm it supplies about seven tenths of the statistic, while the phase-only term's own
+> step is half again the statistic's and points the same way, so the two channels partly cancel in the
+> composite rather than one being a remainder of the other. So the first acoustic cycle is weakened in
+> this cosmology; whether it is also displaced in it is not settled by this split, because neither
+> channel is small."
+
+## ⓸ AND ⑷ CANNOT LAND YET REGARDLESS
+
+Your ⑷ says to land it once `the_surviving_step_…` and `no_statistic_…` are both re-pointed.
+`no_statistic_…` is landed (`r7639+cc66.17`). **`the_surviving_step_…` is not re-pointed** — it is the
+receipt your ⑷ ruling is about, still at `r7017+cc66.60`, and it is next.
+
+⌗ *The instrument carries all of this and exits 1 on six validations, each perturbed: the namesake
+uncarried row against the receipt's own published reading, the `BOTH/AD` decomposition identity at
+`8.0e-14`, the amplitude share, both wording medians, and the phase-share inversion. Two of its
+failure messages were rewritten after perturbation printed "is 0.705, not the 0.705" — a message that
+names neither number it compares is no use to whoever reads it next.*
+
+**Rulings: ⑴ landed, ⑵ held, ⑶ landed, ⑷ checked and one clause held, ⑸–⑹ next.**
