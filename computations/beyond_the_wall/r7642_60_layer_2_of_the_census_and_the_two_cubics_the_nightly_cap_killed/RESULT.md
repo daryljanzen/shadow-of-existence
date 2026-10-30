@@ -13,7 +13,7 @@ besides `r6885_dp0` differs from its namesake under its own configuration by mor
 
 | | reading | what it means |
 |---|---|---|
-| **the arm's alone** | 8 **bit-identical**, 10 within `1e-11` (worst 1.7e-14), 1 bit-identical across all 26 arrays of a pair that carries no spectrum | the bank's old → new diff for these carries nothing but the arm move |
+| **the arm's alone** | **19 of the 23 read**: 9 **bit-identical**, 10 within `1e-11` (worst 1.7e-14) — one of the nine a pair that carries no spectrum at all and is bit-identical across every one of the 26 arrays it does carry | the bank's old → new diff for these carries nothing but the arm move |
 | **over** | `r6885_dp0_cr` 6.13e-01 · `r6784_cr_crossing_los` 2.21e-01 · `r6794_cr_crossing_kcont_summed` 1.61e-08 · `r6784_cr_crossing_hier_noCRIC` 1.63e-09 | the diff carries an instrument change too |
 
 ## ⚑ TWO OF THE FOUR ARE NAMED, AND BOTH ARE PROVED BY A BIT-IDENTITY
@@ -64,8 +64,9 @@ than behind it.
   *"digits unrecorded"* rebuilds **bit-identical** at the four figures quoted beside that phrase, and
   the entry marked *"none recorded, ⚠ low confidence"* rebuilds **bit-identical** too. A background
   match leaves the solver and the source free; a bit-identical spectrum does not.
-- **`r7640`'s `LEAFSCALES` correction is settled where it can be settled.** The first member of the
-  family whose two records disagreed is bit-identical at the value the namesakes chose.
+- **`r7640`'s `LEAFSCALES` correction is settled where it can be settled, now on two members.** Both
+  `cc66_cr_x_h686_pol` and `cc66_cr_x_h686_L2000` are **bit-identical** at the value the namesakes
+  chose, against the value `MANIFEST_old.json`'s `held` prose claims for them.
 - **One of the 36 is not a spectrum on either side.** `r6959_eta_cr`'s namesake carries 28 keys and
   neither of the two the comparison needs: it is the source-weight save. Compared on the 26 arrays the
   pair shares, **all 26 are bit-identical.**
@@ -87,8 +88,11 @@ All three are *the right arrays under the wrong name* — the confusion this cen
 
 ## ⚠ WHAT IS NOT CLAIMED
 
-- Not that the four over the threshold are the only ones: two of the 24 are still rebuilding at the
-  time of writing and are named with their cost rather than implied.
+- Not that the four over the threshold are the only ones: **one** of the 24, `r6941_fine_cr`, is still
+  rebuilding at the time of writing — it is the finest multipole step in the set and the most expensive
+  single run in it — and it is named here with its state rather than implied either way. ⌗ *That is arm
+  ⑥'s subject: the 24 did not fit one serial pass, which is why they were run several at a time with
+  every run pinned to one thread.*
 - Not that the twelve the instrument refuses are covered. `r7640` established that they cannot be read
   at all, and nothing here changes it.
 - No paper is edited, no figure moves, and no receipt belonging to another seat is touched. The
