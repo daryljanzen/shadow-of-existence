@@ -1,0 +1,175 @@
+r7640 (60) -- THE INSTRUMENT-DRIFT CENSUS OF THE BANK, LAYER 1: THE BACKGROUND.
+
+** THE ORDER (r7639, 69) asks for 36 spectrum rebuilds at each namesake's OWN configuration.  That
+instruction has a PRIOR STEP: "its old point and switches" has to be KNOWN, and `r7635+70`'s
+`RECIPES.md` says it is not known everywhere -- one entry is "none recorded", marked low
+confidence. **  A spectrum rebuilt against a guessed command cannot separate "the instrument
+drifted" from "we guessed the command wrong", so the census would answer a question nobody asked.
+
+** THE NAMESAKES MAKE THAT STEP PAYABLE.  Each of the 36 carries `l_A`, `D_M` and `r_s` in its own
+file, and those three are set by the BACKGROUND switches alone -- `CRH0`, `CROM`, `WBH2`,
+`ZSTART`/`LATARG`, `LEAFSCALES` -- and are independent of the expensive half: `LMAXL`, `NK`,
+`LSTEP`, `KFAC`, `KBATCH` and every source switch.  So a namesake is a FINGERPRINT OF ITS OWN
+CONFIGURATION, readable in twenty seconds against today's instrument instead of hours. **
+
+  ⇒ The census splits.  LAYER 1 (here): does today's instrument reproduce each namesake's own
+    recorded scales under its own recorded command?  LAYER 2 (70's): the order's `1e-11` comparison
+    of `Dl`.
+  ⚠ ** Layer 1 is a NECESSARY CONDITION on Layer 2, not a proxy for it. **  `D_M` and `r_s` enter
+    the projection, so a background that misses by more than `1e-11` GUARANTEES a spectrum that
+    misses by more than `1e-11`.  The converse does not hold: a Layer-1 pass is NOT a verdict of
+    "the diff is the arm's alone", because `KFAC`, `NK`, `LSTEP`, `KBATCH`, `HIER`/`BSPLIT`,
+    `KCONT`, `KSLICE` and the source switches are all INVISIBLE to the three scales.  PART 2 below
+    is exactly such a case: twelve files whose background reproduces and whose spectrum cannot be
+    taken at all.
+
+Registered at `PREDICTION.md` in this directory, amended at `r7640+60.1` before arm (1) was read.
+
+==============================================================================================
+  r7640 (60) -- LAYER 1 OF THE INSTRUMENT-DRIFT CENSUS:  the threshold is 1e-11
+==============================================================================================
+
+PART 0 -- THE FREE TEST, WHICH NEEDS NO INSTRUMENT AND NO CONFIGURATION AT ALL
+  *`L_A = np.pi * D_M / R_S` at the end of the background, and `r6893+cc66.37` measured that
+  no transfer function on any of the three paths reads either -- they are metadata.  So each
+  stored triple checks ITSELF, and a mistyped scale fails before any run is spent on it.*
+  ⛭ ** THIS PART EXISTS BECAUSE `r7640+60.1` NEEDED IT: the first pass declared a MISS
+     against an `r_s` this seat had typed into its own target table.  The test catches it. **
+  [PASS] the bank is the 36 the order names
+  [PASS] all 36 namesakes satisfy l_A = pi D_M / r_s to better than 1e-11 (worst 0.000e+00)
+  [PASS] ⛭ r7640+60.1: and the DISCARDED typed r_s fails that same test by 1.4e-04, so the guard that was missing would have refused it
+
+PART 1 -- EVERY NAMESAKE'S OWN BACKGROUND, REPRODUCED UNDER ITS OWN RECORDED COMMAND
+
+  ⌗ defaults, onset solved to l_A = 301.6   [2s, exit 0]
+    today: l_A=301.6  D_M=13004.5551855381  r_s=135.460925179342
+  [PASS] c54.175_cr                     l_A/D_M/r_s within 1e-11  (0.00e+00 / 0.00e+00 / 0.00e+00)
+  [PASS] c54.177_cr                     l_A/D_M/r_s within 1e-11  (0.00e+00 / 0.00e+00 / 0.00e+00)
+  [PASS] c54.178_cr                     l_A/D_M/r_s within 1e-11  (0.00e+00 / 0.00e+00 / 0.00e+00)
+  [PASS] c54.186_cr_KCONT               l_A/D_M/r_s within 1e-11  (0.00e+00 / 0.00e+00 / 0.00e+00)
+  [PASS] c54.186_cr_L3000               l_A/D_M/r_s within 1e-11  (0.00e+00 / 0.00e+00 / 0.00e+00)
+  [PASS] c54.191_cr_phipi_L3000         l_A/D_M/r_s within 1e-11  (0.00e+00 / 0.00e+00 / 0.00e+00)
+  [PASS] c54.193_cr_nodrive_L3000       l_A/D_M/r_s within 1e-11  (0.00e+00 / 0.00e+00 / 0.00e+00)
+  [PASS] c54.195_cr_phi0.7854_L3000     l_A/D_M/r_s within 1e-11  (0.00e+00 / 0.00e+00 / 0.00e+00)
+  [PASS] c54.195_cr_phi1.5708_L3000     l_A/D_M/r_s within 1e-11  (0.00e+00 / 0.00e+00 / 0.00e+00)
+  [PASS] item38_cr_phi0.0_prod          l_A/D_M/r_s within 1e-11  (0.00e+00 / 0.00e+00 / 0.00e+00)
+  [PASS] item38_cr_phi3.1416_prod       l_A/D_M/r_s within 1e-11  (0.00e+00 / 0.00e+00 / 0.00e+00)
+  [PASS] r4494_cr_leaf_ISWon            l_A/D_M/r_s within 1e-11  (0.00e+00 / 0.00e+00 / 0.00e+00)
+  [PASS] r4494_cr_leaf_ISWoff           l_A/D_M/r_s within 1e-11  (0.00e+00 / 0.00e+00 / 0.00e+00)
+  [PASS] r4494_cr_stack_ISWon           l_A/D_M/r_s within 1e-11  (0.00e+00 / 0.00e+00 / 0.00e+00)
+  [PASS] r4494_cr_stack_ISWoff          l_A/D_M/r_s within 1e-11  (0.00e+00 / 0.00e+00 / 0.00e+00)
+
+  ⌗ defaults + LATARG=340 (the l_A injection)   [2s, exit 0]
+    today: l_A=340  D_M=13004.5551855381  r_s=120.161808923793
+  [PASS] c54.191_cr_lA340_L3000         l_A/D_M/r_s within 1e-11  (1.14e-13 / 0.00e+00 / 4.26e-14)
+
+  ⌗ defaults + ZSTART=3e7 -- RECOVERED; RECIPES has 'none recorded'   [2s, exit 0]
+    today: l_A=172.840717284773  D_M=13004.5551855381  r_s=236.37378781978
+  [PASS] cc66_cr_x_lstep1               l_A/D_M/r_s within 1e-11  (0.00e+00 / 0.00e+00 / 0.00e+00)
+
+  ⌗ r6941's point   [2s, exit 0]
+    today: l_A=301.798642768406  D_M=14017.0385762778  r_s=145.911277175992
+  [PASS] cc66_r185_verify_cr            l_A/D_M/r_s within 1e-11  (0.00e+00 / 0.00e+00 / 0.00e+00)
+  [PASS] r6885_dp0_cr                   l_A/D_M/r_s within 1e-11  (0.00e+00 / 0.00e+00 / 0.00e+00)
+  [PASS] r6885_los_cr                   l_A/D_M/r_s within 1e-11  (0.00e+00 / 0.00e+00 / 0.00e+00)
+  [PASS] r6885_losdp0_cr                l_A/D_M/r_s within 1e-11  (0.00e+00 / 0.00e+00 / 0.00e+00)
+  [PASS] r6885_lossw0_cr                l_A/D_M/r_s within 1e-11  (0.00e+00 / 0.00e+00 / 0.00e+00)
+  [PASS] r6889_nufs0_cr                 l_A/D_M/r_s within 1e-11  (0.00e+00 / 0.00e+00 / 0.00e+00)
+  [PASS] r6911_source_cr                l_A/D_M/r_s within 1e-11  (0.00e+00 / 0.00e+00 / 0.00e+00)
+  [PASS] r6911_source_cr_kcont          l_A/D_M/r_s within 1e-11  (0.00e+00 / 0.00e+00 / 0.00e+00)
+  [PASS] r6915_pairs_cr                 l_A/D_M/r_s within 1e-11  (0.00e+00 / 0.00e+00 / 0.00e+00)
+  [PASS] r6941_fine_cr                  l_A/D_M/r_s within 1e-11  (0.00e+00 / 0.00e+00 / 0.00e+00)
+  [PASS] r6959_eta_cr                   l_A/D_M/r_s within 1e-11  (0.00e+00 / 0.00e+00 / 0.00e+00)
+
+  ⌗ 68.62 / 0.2973, ZSTART=3e7, LEAFSCALES=0   [2s, exit 0]
+    today: l_A=172.324283254295  D_M=14007.3728810324  r_s=255.364240652066
+  [PASS] r6784_cr_crossing_hier         l_A/D_M/r_s within 1e-11  (0.00e+00 / 0.00e+00 / 0.00e+00)
+  [PASS] r6784_cr_crossing_hier_noCRIC  l_A/D_M/r_s within 1e-11  (0.00e+00 / 0.00e+00 / 0.00e+00)
+  [PASS] r6784_cr_crossing_los          l_A/D_M/r_s within 1e-11  (0.00e+00 / 0.00e+00 / 0.00e+00)
+  [PASS] r6794_cr_crossing_kcont_summed l_A/D_M/r_s within 1e-11  (0.00e+00 / 0.00e+00 / 0.00e+00)
+
+  ⌗ 68.60 / 0.2973, ZSTART=3e7, LEAFSCALES=1   [2s, exit 0]
+    today: l_A=302.889076967528  D_M=14011.4566632135  r_s=145.328084326931
+  [PASS] cc66_cr_x_h686_pol             l_A/D_M/r_s within 1e-11  (0.00e+00 / 0.00e+00 / 0.00e+00)
+  [PASS] cc66_cr_x_h686_L2000           l_A/D_M/r_s within 1e-11  (0.00e+00 / 0.00e+00 / 0.00e+00)
+
+  ⌗ 68.62 / 0.2973, ZSTART=3e7, LEAFSCALES=1   [2s, exit 0]
+    today: l_A=302.844201979627  D_M=14007.3728810324  r_s=145.307255187618
+  [PASS] cc66_cr_x_h6862_pol            l_A/D_M/r_s within 1e-11  (0.00e+00 / 0.00e+00 / 0.00e+00)
+
+  ⌗ the cc66 refit minimum AS QUOTED -- arm (1)   [2s, exit 0]
+    today: l_A=302.051509583755  D_M=14021.2816923752  r_s=145.83325744467
+  [PASS] cc66_refit_verify_cr           l_A/D_M/r_s within 1e-11  (0.00e+00 / 0.00e+00 / 0.00e+00)
+  [PASS] all 36 namesakes are placed in a group, none twice (36)
+  [PASS] ⇒ ** ALL 36 BACKGROUNDS CLEAR THE ORDER'S THRESHOLD ** (36/36)
+  [PASS] ⇒ and 35 of the 36 reproduce EXACTLY, not merely within 1e-11 (35/36) -- the one that does not is the l_A injection, whose onset is a brentq root
+
+  PART 1d -- AND LEAFREC, WHICH THE ORDER NAMES, IS INVISIBLE TO THE BACKGROUND
+  *So the three scales identify the POINT and the rulers, and say nothing about the switch
+  whose default moved -- which is why PART 4c has to read the source and not a spectrum.*
+  [PASS] at the refit point LEAFREC=0 and LEAFREC=1 give BIT-IDENTICAL l_A, D_M, r_s
+
+  PART 1b -- THE NEGATIVE CONTROL ON THE ONE SWITCH THE BANK'S TWO RECORDS DISAGREE ABOUT
+  [PASS] at LEAFSCALES=0 the SAME point misses r_s by 110.4 Mpc, so the three scales DO discriminate the switch and PART 1's match is not vacuous
+
+  PART 1c -- AND THE BACKGROUND REALLY IS INDEPENDENT OF THE EXPENSIVE HALF
+  *The claim that licenses reading 36 configurations in minutes rather than days.*
+  [PASS] the LATARG=340 onset solve returns BIT-IDENTICAL l_A, D_M, r_s at LMAXL = 200, 400, 800
+
+PART 2 -- ARM (3): TWELVE NAMESAKES WHOSE OWN KFAC TODAY'S INSTRUMENT REFUSES
+  *`RECIPES.md`: "The c54/item38 files were made at KFAC=1 (k_max = LMAXL/D_M), which
+  today's alias gate refuses."  `alias_gate`'s truncation half -- added r3870, FAIL-CLOSED,
+  caller `if not alias_gate(kk): return 1` -- refuses at k_max*D_M/LMAXL < 1.9, and KFAC=1
+  makes that ratio 1.0 BY CONSTRUCTION (`KMAXL = KFAC * LMAXL`).*
+  ⇒ ** For these twelve the order's Layer-2 comparison HAS NO READING TO TAKE, and the
+     honest census entry is the refusal named to its gate -- not a rebuild at KFAC=2
+     reported as though it were the namesake's configuration. **
+  [PASS] c54.175_cr                     ABORTS: exit 1, ratio 1.00, the gate's own line present  [1s]
+  [PASS] c54.177_cr                     ABORTS: exit 1, ratio 1.00, the gate's own line present  [1s]
+  [PASS] c54.178_cr                     ABORTS: exit 1, ratio 1.00, the gate's own line present  [1s]
+  [PASS] c54.186_cr_KCONT               ABORTS: exit 1, ratio 1.00, the gate's own line present  [1s]
+  [PASS] c54.186_cr_L3000               ABORTS: exit 1, ratio 1.00, the gate's own line present  [1s]
+  [PASS] c54.191_cr_lA340_L3000         ABORTS: exit 1, ratio 1.00, the gate's own line present  [1s]
+  [PASS] c54.191_cr_phipi_L3000         ABORTS: exit 1, ratio 1.00, the gate's own line present  [1s]
+  [PASS] c54.193_cr_nodrive_L3000       ABORTS: exit 1, ratio 1.00, the gate's own line present  [1s]
+  [PASS] c54.195_cr_phi0.7854_L3000     ABORTS: exit 1, ratio 1.00, the gate's own line present  [1s]
+  [PASS] c54.195_cr_phi1.5708_L3000     ABORTS: exit 1, ratio 1.00, the gate's own line present  [1s]
+  [PASS] item38_cr_phi0.0_prod          ABORTS: exit 1, ratio 1.00, the gate's own line present  [1s]
+  [PASS] item38_cr_phi3.1416_prod       ABORTS: exit 1, ratio 1.00, the gate's own line present  [1s]
+  [PASS] ⇒ ** ALL TWELVE REFUSE ** (12/12)
+  [PASS] and the refusal is reached BEFORE the solver, so it costs seconds and not hours -- the k grid and the gate sit above the mode integration in the same block
+
+PART 3 -- ARM (1): THE 'DIGITS UNRECORDED' POINT WAS THE QUOTED DIGITS ALL ALONG
+  *`RECIPES.md` / `MANIFEST_old.json`: "the cc66 refit minimum, ~68.6077/0.2967/0.0217/
+  0.9949, digits unrecorded".  Arm (1) registered that A POINT EXISTS within 0.01 of each
+  quoted figure reproducing all three scales to 1e-11.  It does, and it is STRONGER than
+  registered: the point is the four quoted figures themselves, to zero difference.*
+  [PASS] the bank does say 'digits unrecorded' of this point
+  [PASS] 68.6077 / 0.2967 / 0.0217 at ZSTART=3e7, LEAFSCALES=1 reproduces all three scales to ZERO (0.0e+00)
+  [PASS] ⇒ ** arm (1) is a HIT: nothing beyond the quoted four digits was ever needed, so the entry's 'digits unrecorded' is retired **
+
+PART 4 -- WHAT THE FILES SETTLE AGAINST THE BANK'S OWN PROSE
+  *Two records of the same switch disagree, and the namesake decides.*
+  [PASS] RECIPES.md's TABLE puts the cc66 h686/h6862 family at LEAFSCALES=1
+  [PASS] while MANIFEST's `held` says LEAFSCALES=0 of the namesakes of all four of them
+  [PASS] ⇒ and the FILES settle it at 1: PART 1 matched all four at LEAFSCALES=1 to zero, and PART 1b shows 0 misses r_s by over 100 Mpc
+
+  PART 4b -- THE pol PAIR IS TWO RUNS, AND THE BANK REBUILT IT AS ONE
+  [PASS] the two NAMESAKES differ: 1.19e-03 relative on Dl, and their points differ (D_M 14011.4567 vs 14007.3729)
+  [PASS] the two REBUILDS are bit-identical, because on the arm of record both points collapse to one -- which is right for the bank and WRONG for this census
+  [PASS] ⇒ Layer 2 owes TWO runs here, at 68.60 and at 68.62; one rebuild cannot be compared with both namesakes
+
+  PART 4c -- THE DEFAULT THAT MOVED, WHICH IS WHY A RECORDED COMMAND IS NOT A RECORD
+  [PASS] today's instrument defaults LEAFREC to ON: os.environ.get('LEAFREC', '1')
+  [PASS] and the instrument's own note names the move -- "LEAFREC defaulting ON at cc66.75 is the case in point" -- beside r7097's config ratchet, which exists because __SWITCHES__ records only what the environment SET
+  [PASS] ⇒ so any namesake banked before cc66.75 whose command omits LEAFREC is a command that, run verbatim today, rebuilds the leafrec1 arm and NOT the namesake -- the general form of what cc66 found on r6885_dp0
+  [PASS] and none of the 36 namesakes carries the `config` key that would have recorded it (36/36 without), while today's writer emits one
+
+==============================================================================================
+  LAYER 1 IS COMPLETE AND LAYER 2 IS NOT THIS SEAT'S: the order asks the two seats to
+  coordinate run order through the repo, and the background layer loads no machine.  What
+  this receipt hands 70 is an IDENTIFIED command per namesake -- the GROUPS table above --
+  so that 70's 36 spectrum rebuilds compare against the instrument and not against a guess.
+==============================================================================================
+
+  0 failure(s)

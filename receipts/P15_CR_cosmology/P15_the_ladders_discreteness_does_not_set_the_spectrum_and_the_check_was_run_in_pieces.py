@@ -1,10 +1,12 @@
 """
-RE-POINTED r7637 (node 70; 69 assigned it as naming no seat) ONTO THE ARM OF RECORD: the ladder and the continuum
-are now `r6784_cr_crossing_hier_noCRIC_leafrec1` and `r6794_cr_crossing_kcont_summed_leafrec1` (LEAFREC=1 at
-r7633's refit, r7635's bank).  The finding stands and its figures move: chi^2 1205.3755 / 1205.3745 -> 923.9467 /
-923.9464 (difference 0.0010 -> 0.0003), peaks 220/540/820/1132 -> 220/532/812/1132, P1/P2 2.273 -> 2.136, P1/P3
-2.319 -> 2.167, the spectra agreeing to 6.7e-8 -> 8.2e-8 of the peak (worst pointwise 2.1e-6 -> 2.3e-6), the
-amplitudes to 2.1e-8 -> 2.0e-8.  The figures below the line are the LEAFREC=0 arm's, as first written.
+RE-POINTED r7637, and AGAIN r7639 (node 70): the ladder and the continuum are now
+`r6784_cr_crossing_hier_noCRIC_leafrec1` and `r6794_cr_crossing_kcont_summed_leafrec1` -- the crossing
+configuration at its RECORDED LEAFSCALES=0 (the r7639 rebank, so the radiation-free ruler reads 171.55 and not
+302.9), at the arm of record's point with LEAFREC=1.  The finding stands and its figures move (LEAFREC=0 r7637-first
+-> r7639): chi^2 1205.3755 / 1205.3745 -> 926.3889 / 926.3888, difference 0.0010 -> 0.0001, peaks 220/540/820/1132
+-> 220/532/812/1132, P1/P2 2.273 -> 2.144, P1/P3 2.319 -> 2.188.  (r7637's LEAFSCALES=1 reading was 923.95, 2.136,
+2.167 -- the crossing's own ruler moves the spectrum by that much.)  The figures below the line are the LEAFREC=0
+arm's, as first written.
 
 P15_the_ladders_discreteness_does_not_set_the_spectrum_and_the_check_was_run_in_pieces
 =====================================================================================
@@ -162,7 +164,7 @@ print(f"    worst pointwise relative  {PTW:.4e}")
 check("⚑ the peaks are IDENTICAL on the reported grid", p_l == p_c)
 check("the height ratios agree to three decimals",
       abs(h_c[0] - h_l[0]) < 5e-4 and abs(h_c[1] - h_l[1]) < 5e-4)
-check("chi^2 agrees to better than 0.01 in 924", abs(c_c - c_l) < 0.01)
+check("chi^2 agrees to better than 0.01 in 926", abs(c_c - c_l) < 0.01)
 check("the spectra agree to better than 1e-6 of the peak", REL < 1e-6)
 check("⇒ so the ladder's DISCRETENESS does not set this spectrum, which is what the waiver claimed",
       REL < 1e-6 and p_l == p_c)
@@ -228,7 +230,7 @@ print("=" * 94)
 print(f"""
   ** THE CONTROL `r6788` LEFT OPEN IS CLOSED, AND IT PASSES. **  On the crossing configuration the
   continuum grid reproduces the ladder's spectrum to {REL:.1e} of the peak, its peaks exactly, its
-  heights to three decimals and its chi^2 to {abs(c_c - c_l):.4f} in 924.  ** The ladder's discreteness
+  heights to three decimals and its chi^2 to {abs(c_c - c_l):.4f} in 926.  ** The ladder's discreteness
   is not what sets this spectrum, so the alias gate's waiver is honest here. **
 
   ⌗ AND THE WAY IT WAS RUN IS PART OF THE RESULT.  Neither seat's container survives the whole run, so it
@@ -236,7 +238,7 @@ print(f"""
   nobody could run is now a check either seat can run in pieces. **
 
   ⚠ WHAT IT DOES NOT SAY.  Nothing about whether the spectrum is RIGHT; nothing that touches the floor,
-  which still forbids reading 923.9 against the control's 1320.5 as a preference; nothing about
+  which still forbids reading 926.4 against the control's 1320.5 as a preference; nothing about
   `c54.186`'s 0.7% at the pinned configuration, which is a different ladder density and a different
   measurement.  ** And the `KBATCH` footprint is reported at 1.2e-08 precisely so it is not mistaken for
   a defect. **

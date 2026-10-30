@@ -1,0 +1,752 @@
+{
+ "refit_grid_leafrec1/cr_base.npz": {
+  "file": "refit_grid_leafrec1/cr_base.npz",
+  "namesake": "refit_grid/cr_base.npz",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0
+  },
+  "switches": "ARM=cr CRH0=68.570730 CROM=0.291246 HIER=1 LEAFREC=1 LEAFSCALES=1 LMAXL=1300 LSTEP=8 NS=1.015066 WBH2=0.021643 ZSTART=3e7",
+  "held": "refit_grid/launch.sh, LMAXL=1300; centred on the arm of record with the launcher's steps (H0 +-2, Om +-0.015, omega_b +-0.0008, n_s +-0.02)"
+ },
+ "refit_grid_leafrec1/cr_H0p.npz": {
+  "file": "refit_grid_leafrec1/cr_H0p.npz",
+  "namesake": "refit_grid/cr_H0p.npz",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0
+  },
+  "switches": "ARM=cr CRH0=70.570730 CROM=0.291246 HIER=1 LEAFREC=1 LEAFSCALES=1 LMAXL=1300 LSTEP=8 NS=1.015066 WBH2=0.021643 ZSTART=3e7",
+  "held": "refit_grid/launch.sh, LMAXL=1300; centred on the arm of record with the launcher's steps (H0 +-2, Om +-0.015, omega_b +-0.0008, n_s +-0.02)"
+ },
+ "refit_grid_leafrec1/cr_H0m.npz": {
+  "file": "refit_grid_leafrec1/cr_H0m.npz",
+  "namesake": "refit_grid/cr_H0m.npz",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0
+  },
+  "switches": "ARM=cr CRH0=66.570730 CROM=0.291246 HIER=1 LEAFREC=1 LEAFSCALES=1 LMAXL=1300 LSTEP=8 NS=1.015066 WBH2=0.021643 ZSTART=3e7",
+  "held": "refit_grid/launch.sh, LMAXL=1300; centred on the arm of record with the launcher's steps (H0 +-2, Om +-0.015, omega_b +-0.0008, n_s +-0.02)"
+ },
+ "refit_grid_leafrec1/cr_OMp.npz": {
+  "file": "refit_grid_leafrec1/cr_OMp.npz",
+  "namesake": "refit_grid/cr_OMp.npz",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0
+  },
+  "switches": "ARM=cr CRH0=68.570730 CROM=0.306246 HIER=1 LEAFREC=1 LEAFSCALES=1 LMAXL=1300 LSTEP=8 NS=1.015066 WBH2=0.021643 ZSTART=3e7",
+  "held": "refit_grid/launch.sh, LMAXL=1300; centred on the arm of record with the launcher's steps (H0 +-2, Om +-0.015, omega_b +-0.0008, n_s +-0.02)"
+ },
+ "refit_grid_leafrec1/cr_OMm.npz": {
+  "file": "refit_grid_leafrec1/cr_OMm.npz",
+  "namesake": "refit_grid/cr_OMm.npz",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0
+  },
+  "switches": "ARM=cr CRH0=68.570730 CROM=0.276246 HIER=1 LEAFREC=1 LEAFSCALES=1 LMAXL=1300 LSTEP=8 NS=1.015066 WBH2=0.021643 ZSTART=3e7",
+  "held": "refit_grid/launch.sh, LMAXL=1300; centred on the arm of record with the launcher's steps (H0 +-2, Om +-0.015, omega_b +-0.0008, n_s +-0.02)"
+ },
+ "refit_grid_leafrec1/cr_WBp.npz": {
+  "file": "refit_grid_leafrec1/cr_WBp.npz",
+  "namesake": "refit_grid/cr_WBp.npz",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0
+  },
+  "switches": "ARM=cr CRH0=68.570730 CROM=0.291246 HIER=1 LEAFREC=1 LEAFSCALES=1 LMAXL=1300 LSTEP=8 NS=1.015066 WBH2=0.022443 ZSTART=3e7",
+  "held": "refit_grid/launch.sh, LMAXL=1300; centred on the arm of record with the launcher's steps (H0 +-2, Om +-0.015, omega_b +-0.0008, n_s +-0.02)"
+ },
+ "refit_grid_leafrec1/cr_WBm.npz": {
+  "file": "refit_grid_leafrec1/cr_WBm.npz",
+  "namesake": "refit_grid/cr_WBm.npz",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0
+  },
+  "switches": "ARM=cr CRH0=68.570730 CROM=0.291246 HIER=1 LEAFREC=1 LEAFSCALES=1 LMAXL=1300 LSTEP=8 NS=1.015066 WBH2=0.020843 ZSTART=3e7",
+  "held": "refit_grid/launch.sh, LMAXL=1300; centred on the arm of record with the launcher's steps (H0 +-2, Om +-0.015, omega_b +-0.0008, n_s +-0.02)"
+ },
+ "refit_grid_leafrec1/cr_NSp.npz": {
+  "file": "refit_grid_leafrec1/cr_NSp.npz",
+  "namesake": "refit_grid/cr_NSp.npz",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0
+  },
+  "switches": "ARM=cr CRH0=68.570730 CROM=0.291246 HIER=1 LEAFREC=1 LEAFSCALES=1 LMAXL=1300 LSTEP=8 NS=1.035066 WBH2=0.021643 ZSTART=3e7",
+  "held": "refit_grid/launch.sh, LMAXL=1300; centred on the arm of record with the launcher's steps (H0 +-2, Om +-0.015, omega_b +-0.0008, n_s +-0.02)"
+ },
+ "refit_grid_leafrec1/cr_NSm.npz": {
+  "file": "refit_grid_leafrec1/cr_NSm.npz",
+  "namesake": "refit_grid/cr_NSm.npz",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0
+  },
+  "switches": "ARM=cr CRH0=68.570730 CROM=0.291246 HIER=1 LEAFREC=1 LEAFSCALES=1 LMAXL=1300 LSTEP=8 NS=0.995066 WBH2=0.021643 ZSTART=3e7",
+  "held": "refit_grid/launch.sh, LMAXL=1300; centred on the arm of record with the launcher's steps (H0 +-2, Om +-0.015, omega_b +-0.0008, n_s +-0.02)"
+ },
+ "refit_grid_leafrec1/verify_cr.npz": {
+  "file": "refit_grid_leafrec1/verify_cr.npz",
+  "namesake": "refit_grid/verify_cr.npz",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0
+  },
+  "switches": "ARM=cr CRH0=68.570730 CROM=0.291246 HIER=1 LEAFREC=1 LEAFSCALES=1 LMAXL=1300 LSTEP=8 NS=1.015066 WBH2=0.021643 ZSTART=3e7",
+  "held": "refit_grid/launch.sh, LMAXL=1300; the grid base: on the arm of record the refit point IS the centre"
+ },
+ "refit_grid185_leafrec1/cr_base.npz": {
+  "file": "refit_grid185_leafrec1/cr_base.npz",
+  "namesake": "refit_grid185/cr_base.npz",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0
+  },
+  "switches": "ARM=cr CRH0=68.570730 CROM=0.291246 HIER=1 LEAFREC=1 LEAFSCALES=1 LMAXL=2000 LSTEP=8 NS=1.015066 WBH2=0.021643 ZSTART=3e7",
+  "held": "refit_grid185/launch.sh, LMAXL=2000; centred on the arm of record with the launcher's steps (H0 +-2, Om +-0.015, omega_b +-0.0008, n_s +-0.02)"
+ },
+ "refit_grid185_leafrec1/cr_H0p.npz": {
+  "file": "refit_grid185_leafrec1/cr_H0p.npz",
+  "namesake": "refit_grid185/cr_H0p.npz",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0
+  },
+  "switches": "ARM=cr CRH0=70.570730 CROM=0.291246 HIER=1 LEAFREC=1 LEAFSCALES=1 LMAXL=2000 LSTEP=8 NS=1.015066 WBH2=0.021643 ZSTART=3e7",
+  "held": "refit_grid185/launch.sh, LMAXL=2000; centred on the arm of record with the launcher's steps (H0 +-2, Om +-0.015, omega_b +-0.0008, n_s +-0.02)"
+ },
+ "refit_grid185_leafrec1/cr_H0m.npz": {
+  "file": "refit_grid185_leafrec1/cr_H0m.npz",
+  "namesake": "refit_grid185/cr_H0m.npz",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0
+  },
+  "switches": "ARM=cr CRH0=66.570730 CROM=0.291246 HIER=1 LEAFREC=1 LEAFSCALES=1 LMAXL=2000 LSTEP=8 NS=1.015066 WBH2=0.021643 ZSTART=3e7",
+  "held": "refit_grid185/launch.sh, LMAXL=2000; centred on the arm of record with the launcher's steps (H0 +-2, Om +-0.015, omega_b +-0.0008, n_s +-0.02)"
+ },
+ "refit_grid185_leafrec1/cr_OMp.npz": {
+  "file": "refit_grid185_leafrec1/cr_OMp.npz",
+  "namesake": "refit_grid185/cr_OMp.npz",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0
+  },
+  "switches": "ARM=cr CRH0=68.570730 CROM=0.306246 HIER=1 LEAFREC=1 LEAFSCALES=1 LMAXL=2000 LSTEP=8 NS=1.015066 WBH2=0.021643 ZSTART=3e7",
+  "held": "refit_grid185/launch.sh, LMAXL=2000; centred on the arm of record with the launcher's steps (H0 +-2, Om +-0.015, omega_b +-0.0008, n_s +-0.02)"
+ },
+ "refit_grid185_leafrec1/cr_OMm.npz": {
+  "file": "refit_grid185_leafrec1/cr_OMm.npz",
+  "namesake": "refit_grid185/cr_OMm.npz",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0
+  },
+  "switches": "ARM=cr CRH0=68.570730 CROM=0.276246 HIER=1 LEAFREC=1 LEAFSCALES=1 LMAXL=2000 LSTEP=8 NS=1.015066 WBH2=0.021643 ZSTART=3e7",
+  "held": "refit_grid185/launch.sh, LMAXL=2000; centred on the arm of record with the launcher's steps (H0 +-2, Om +-0.015, omega_b +-0.0008, n_s +-0.02)"
+ },
+ "refit_grid185_leafrec1/cr_WBp.npz": {
+  "file": "refit_grid185_leafrec1/cr_WBp.npz",
+  "namesake": "refit_grid185/cr_WBp.npz",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0
+  },
+  "switches": "ARM=cr CRH0=68.570730 CROM=0.291246 HIER=1 LEAFREC=1 LEAFSCALES=1 LMAXL=2000 LSTEP=8 NS=1.015066 WBH2=0.022443 ZSTART=3e7",
+  "held": "refit_grid185/launch.sh, LMAXL=2000; centred on the arm of record with the launcher's steps (H0 +-2, Om +-0.015, omega_b +-0.0008, n_s +-0.02)"
+ },
+ "refit_grid185_leafrec1/cr_WBm.npz": {
+  "file": "refit_grid185_leafrec1/cr_WBm.npz",
+  "namesake": "refit_grid185/cr_WBm.npz",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0
+  },
+  "switches": "ARM=cr CRH0=68.570730 CROM=0.291246 HIER=1 LEAFREC=1 LEAFSCALES=1 LMAXL=2000 LSTEP=8 NS=1.015066 WBH2=0.020843 ZSTART=3e7",
+  "held": "refit_grid185/launch.sh, LMAXL=2000; centred on the arm of record with the launcher's steps (H0 +-2, Om +-0.015, omega_b +-0.0008, n_s +-0.02)"
+ },
+ "refit_grid185_leafrec1/cr_NSp.npz": {
+  "file": "refit_grid185_leafrec1/cr_NSp.npz",
+  "namesake": "refit_grid185/cr_NSp.npz",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0
+  },
+  "switches": "ARM=cr CRH0=68.570730 CROM=0.291246 HIER=1 LEAFREC=1 LEAFSCALES=1 LMAXL=2000 LSTEP=8 NS=1.035066 WBH2=0.021643 ZSTART=3e7",
+  "held": "refit_grid185/launch.sh, LMAXL=2000; centred on the arm of record with the launcher's steps (H0 +-2, Om +-0.015, omega_b +-0.0008, n_s +-0.02)"
+ },
+ "refit_grid185_leafrec1/cr_NSm.npz": {
+  "file": "refit_grid185_leafrec1/cr_NSm.npz",
+  "namesake": "refit_grid185/cr_NSm.npz",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0
+  },
+  "switches": "ARM=cr CRH0=68.570730 CROM=0.291246 HIER=1 LEAFREC=1 LEAFSCALES=1 LMAXL=2000 LSTEP=8 NS=0.995066 WBH2=0.021643 ZSTART=3e7",
+  "held": "refit_grid185/launch.sh, LMAXL=2000; centred on the arm of record with the launcher's steps (H0 +-2, Om +-0.015, omega_b +-0.0008, n_s +-0.02)"
+ },
+ "refit_grid185_leafrec1/verify_cr.npz": {
+  "file": "refit_grid185_leafrec1/verify_cr.npz",
+  "namesake": "refit_grid185/verify_cr.npz",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0
+  },
+  "switches": "ARM=cr CRH0=68.570730 CROM=0.291246 HIER=1 LEAFREC=1 LEAFSCALES=1 LMAXL=2000 LSTEP=8 NS=1.015066 WBH2=0.021643 ZSTART=3e7",
+  "held": "refit_grid185/launch.sh, LMAXL=2000; the grid base: on the arm of record the refit point IS the centre"
+ },
+ "r7095_directions/grid_licensed_leafrec1/cr_base.npz": {
+  "file": "r7095_directions/grid_licensed_leafrec1/cr_base.npz",
+  "namesake": "r7095_directions/grid_licensed/cr_base.npz",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0
+  },
+  "switches": "ARM=cr CRH0=68.570730 CROM=0.291246 HIER=1 LEAFREC=1 LEAFSCALES=1 LMAXL=2000 LSTEP=8 NS=1.015066 WBH2=0.021643 ZSTART=3e7",
+  "held": "r7095 launch_licensed.sh -- the refit_grid185 run: the same recipe now that LEAFREC=1 is the default; centred on the arm of record with the launcher's steps (H0 +-2, Om +-0.015, omega_b +-0.0008, n_s +-0.02)"
+ },
+ "r7095_directions/grid_licensed_leafrec1/cr_H0p.npz": {
+  "file": "r7095_directions/grid_licensed_leafrec1/cr_H0p.npz",
+  "namesake": "r7095_directions/grid_licensed/cr_H0p.npz",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0
+  },
+  "switches": "ARM=cr CRH0=70.570730 CROM=0.291246 HIER=1 LEAFREC=1 LEAFSCALES=1 LMAXL=2000 LSTEP=8 NS=1.015066 WBH2=0.021643 ZSTART=3e7",
+  "held": "r7095 launch_licensed.sh -- the refit_grid185 run: the same recipe now that LEAFREC=1 is the default; centred on the arm of record with the launcher's steps (H0 +-2, Om +-0.015, omega_b +-0.0008, n_s +-0.02)"
+ },
+ "r7095_directions/grid_licensed_leafrec1/cr_H0m.npz": {
+  "file": "r7095_directions/grid_licensed_leafrec1/cr_H0m.npz",
+  "namesake": "r7095_directions/grid_licensed/cr_H0m.npz",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0
+  },
+  "switches": "ARM=cr CRH0=66.570730 CROM=0.291246 HIER=1 LEAFREC=1 LEAFSCALES=1 LMAXL=2000 LSTEP=8 NS=1.015066 WBH2=0.021643 ZSTART=3e7",
+  "held": "r7095 launch_licensed.sh -- the refit_grid185 run: the same recipe now that LEAFREC=1 is the default; centred on the arm of record with the launcher's steps (H0 +-2, Om +-0.015, omega_b +-0.0008, n_s +-0.02)"
+ },
+ "r7095_directions/grid_licensed_leafrec1/cr_OMp.npz": {
+  "file": "r7095_directions/grid_licensed_leafrec1/cr_OMp.npz",
+  "namesake": "r7095_directions/grid_licensed/cr_OMp.npz",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0
+  },
+  "switches": "ARM=cr CRH0=68.570730 CROM=0.306246 HIER=1 LEAFREC=1 LEAFSCALES=1 LMAXL=2000 LSTEP=8 NS=1.015066 WBH2=0.021643 ZSTART=3e7",
+  "held": "r7095 launch_licensed.sh -- the refit_grid185 run: the same recipe now that LEAFREC=1 is the default; centred on the arm of record with the launcher's steps (H0 +-2, Om +-0.015, omega_b +-0.0008, n_s +-0.02)"
+ },
+ "r7095_directions/grid_licensed_leafrec1/cr_OMm.npz": {
+  "file": "r7095_directions/grid_licensed_leafrec1/cr_OMm.npz",
+  "namesake": "r7095_directions/grid_licensed/cr_OMm.npz",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0
+  },
+  "switches": "ARM=cr CRH0=68.570730 CROM=0.276246 HIER=1 LEAFREC=1 LEAFSCALES=1 LMAXL=2000 LSTEP=8 NS=1.015066 WBH2=0.021643 ZSTART=3e7",
+  "held": "r7095 launch_licensed.sh -- the refit_grid185 run: the same recipe now that LEAFREC=1 is the default; centred on the arm of record with the launcher's steps (H0 +-2, Om +-0.015, omega_b +-0.0008, n_s +-0.02)"
+ },
+ "r7095_directions/grid_licensed_leafrec1/cr_WBp.npz": {
+  "file": "r7095_directions/grid_licensed_leafrec1/cr_WBp.npz",
+  "namesake": "r7095_directions/grid_licensed/cr_WBp.npz",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0
+  },
+  "switches": "ARM=cr CRH0=68.570730 CROM=0.291246 HIER=1 LEAFREC=1 LEAFSCALES=1 LMAXL=2000 LSTEP=8 NS=1.015066 WBH2=0.022443 ZSTART=3e7",
+  "held": "r7095 launch_licensed.sh -- the refit_grid185 run: the same recipe now that LEAFREC=1 is the default; centred on the arm of record with the launcher's steps (H0 +-2, Om +-0.015, omega_b +-0.0008, n_s +-0.02)"
+ },
+ "r7095_directions/grid_licensed_leafrec1/cr_WBm.npz": {
+  "file": "r7095_directions/grid_licensed_leafrec1/cr_WBm.npz",
+  "namesake": "r7095_directions/grid_licensed/cr_WBm.npz",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0
+  },
+  "switches": "ARM=cr CRH0=68.570730 CROM=0.291246 HIER=1 LEAFREC=1 LEAFSCALES=1 LMAXL=2000 LSTEP=8 NS=1.015066 WBH2=0.020843 ZSTART=3e7",
+  "held": "r7095 launch_licensed.sh -- the refit_grid185 run: the same recipe now that LEAFREC=1 is the default; centred on the arm of record with the launcher's steps (H0 +-2, Om +-0.015, omega_b +-0.0008, n_s +-0.02)"
+ },
+ "r7095_directions/grid_licensed_leafrec1/cr_NSp.npz": {
+  "file": "r7095_directions/grid_licensed_leafrec1/cr_NSp.npz",
+  "namesake": "r7095_directions/grid_licensed/cr_NSp.npz",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0
+  },
+  "switches": "ARM=cr CRH0=68.570730 CROM=0.291246 HIER=1 LEAFREC=1 LEAFSCALES=1 LMAXL=2000 LSTEP=8 NS=1.035066 WBH2=0.021643 ZSTART=3e7",
+  "held": "r7095 launch_licensed.sh -- the refit_grid185 run: the same recipe now that LEAFREC=1 is the default; centred on the arm of record with the launcher's steps (H0 +-2, Om +-0.015, omega_b +-0.0008, n_s +-0.02)"
+ },
+ "r7095_directions/grid_licensed_leafrec1/cr_NSm.npz": {
+  "file": "r7095_directions/grid_licensed_leafrec1/cr_NSm.npz",
+  "namesake": "r7095_directions/grid_licensed/cr_NSm.npz",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0
+  },
+  "switches": "ARM=cr CRH0=68.570730 CROM=0.291246 HIER=1 LEAFREC=1 LEAFSCALES=1 LMAXL=2000 LSTEP=8 NS=0.995066 WBH2=0.021643 ZSTART=3e7",
+  "held": "r7095 launch_licensed.sh -- the refit_grid185 run: the same recipe now that LEAFREC=1 is the default; centred on the arm of record with the launcher's steps (H0 +-2, Om +-0.015, omega_b +-0.0008, n_s +-0.02)"
+ },
+ "r7093_directions/grid_oneclock_leafrec1/cr_base.npz": {
+  "file": "r7093_directions/grid_oneclock_leafrec1/cr_base.npz",
+  "namesake": "r7093_directions/grid_oneclock/cr_base.npz",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0
+  },
+  "switches": "ARM=cr CRH0=68.570730 CROM=0.291246 HIER=1 LEAFGEOM=1 LEAFREC=1 LEAFSCALES=1 LMAXL=2000 LSTEP=8 NS=1.015066 WBH2=0.021643 ZSTART=3e7",
+  "held": "r7093 launch_grid.sh, LEAFGEOM=1; centred on the arm of record with the launcher's steps (H0 +-2, Om +-0.015, omega_b +-0.0008, n_s +-0.02)"
+ },
+ "r7093_directions/grid_oneclock_leafrec1/cr_H0p.npz": {
+  "file": "r7093_directions/grid_oneclock_leafrec1/cr_H0p.npz",
+  "namesake": "r7093_directions/grid_oneclock/cr_H0p.npz",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0
+  },
+  "switches": "ARM=cr CRH0=70.570730 CROM=0.291246 HIER=1 LEAFGEOM=1 LEAFREC=1 LEAFSCALES=1 LMAXL=2000 LSTEP=8 NS=1.015066 WBH2=0.021643 ZSTART=3e7",
+  "held": "r7093 launch_grid.sh, LEAFGEOM=1; centred on the arm of record with the launcher's steps (H0 +-2, Om +-0.015, omega_b +-0.0008, n_s +-0.02)"
+ },
+ "r7093_directions/grid_oneclock_leafrec1/cr_H0m.npz": {
+  "file": "r7093_directions/grid_oneclock_leafrec1/cr_H0m.npz",
+  "namesake": "r7093_directions/grid_oneclock/cr_H0m.npz",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0
+  },
+  "switches": "ARM=cr CRH0=66.570730 CROM=0.291246 HIER=1 LEAFGEOM=1 LEAFREC=1 LEAFSCALES=1 LMAXL=2000 LSTEP=8 NS=1.015066 WBH2=0.021643 ZSTART=3e7",
+  "held": "r7093 launch_grid.sh, LEAFGEOM=1; centred on the arm of record with the launcher's steps (H0 +-2, Om +-0.015, omega_b +-0.0008, n_s +-0.02)"
+ },
+ "r7093_directions/grid_oneclock_leafrec1/cr_OMp.npz": {
+  "file": "r7093_directions/grid_oneclock_leafrec1/cr_OMp.npz",
+  "namesake": "r7093_directions/grid_oneclock/cr_OMp.npz",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0
+  },
+  "switches": "ARM=cr CRH0=68.570730 CROM=0.306246 HIER=1 LEAFGEOM=1 LEAFREC=1 LEAFSCALES=1 LMAXL=2000 LSTEP=8 NS=1.015066 WBH2=0.021643 ZSTART=3e7",
+  "held": "r7093 launch_grid.sh, LEAFGEOM=1; centred on the arm of record with the launcher's steps (H0 +-2, Om +-0.015, omega_b +-0.0008, n_s +-0.02)"
+ },
+ "r7093_directions/grid_oneclock_leafrec1/cr_OMm.npz": {
+  "file": "r7093_directions/grid_oneclock_leafrec1/cr_OMm.npz",
+  "namesake": "r7093_directions/grid_oneclock/cr_OMm.npz",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0
+  },
+  "switches": "ARM=cr CRH0=68.570730 CROM=0.276246 HIER=1 LEAFGEOM=1 LEAFREC=1 LEAFSCALES=1 LMAXL=2000 LSTEP=8 NS=1.015066 WBH2=0.021643 ZSTART=3e7",
+  "held": "r7093 launch_grid.sh, LEAFGEOM=1; centred on the arm of record with the launcher's steps (H0 +-2, Om +-0.015, omega_b +-0.0008, n_s +-0.02)"
+ },
+ "r7093_directions/grid_oneclock_leafrec1/cr_WBp.npz": {
+  "file": "r7093_directions/grid_oneclock_leafrec1/cr_WBp.npz",
+  "namesake": "r7093_directions/grid_oneclock/cr_WBp.npz",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0
+  },
+  "switches": "ARM=cr CRH0=68.570730 CROM=0.291246 HIER=1 LEAFGEOM=1 LEAFREC=1 LEAFSCALES=1 LMAXL=2000 LSTEP=8 NS=1.015066 WBH2=0.022443 ZSTART=3e7",
+  "held": "r7093 launch_grid.sh, LEAFGEOM=1; centred on the arm of record with the launcher's steps (H0 +-2, Om +-0.015, omega_b +-0.0008, n_s +-0.02)"
+ },
+ "r7093_directions/grid_oneclock_leafrec1/cr_WBm.npz": {
+  "file": "r7093_directions/grid_oneclock_leafrec1/cr_WBm.npz",
+  "namesake": "r7093_directions/grid_oneclock/cr_WBm.npz",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0
+  },
+  "switches": "ARM=cr CRH0=68.570730 CROM=0.291246 HIER=1 LEAFGEOM=1 LEAFREC=1 LEAFSCALES=1 LMAXL=2000 LSTEP=8 NS=1.015066 WBH2=0.020843 ZSTART=3e7",
+  "held": "r7093 launch_grid.sh, LEAFGEOM=1; centred on the arm of record with the launcher's steps (H0 +-2, Om +-0.015, omega_b +-0.0008, n_s +-0.02)"
+ },
+ "r7093_directions/grid_oneclock_leafrec1/cr_NSp.npz": {
+  "file": "r7093_directions/grid_oneclock_leafrec1/cr_NSp.npz",
+  "namesake": "r7093_directions/grid_oneclock/cr_NSp.npz",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0
+  },
+  "switches": "ARM=cr CRH0=68.570730 CROM=0.291246 HIER=1 LEAFGEOM=1 LEAFREC=1 LEAFSCALES=1 LMAXL=2000 LSTEP=8 NS=1.035066 WBH2=0.021643 ZSTART=3e7",
+  "held": "r7093 launch_grid.sh, LEAFGEOM=1; centred on the arm of record with the launcher's steps (H0 +-2, Om +-0.015, omega_b +-0.0008, n_s +-0.02)"
+ },
+ "r7093_directions/grid_oneclock_leafrec1/cr_NSm.npz": {
+  "file": "r7093_directions/grid_oneclock_leafrec1/cr_NSm.npz",
+  "namesake": "r7093_directions/grid_oneclock/cr_NSm.npz",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0
+  },
+  "switches": "ARM=cr CRH0=68.570730 CROM=0.291246 HIER=1 LEAFGEOM=1 LEAFREC=1 LEAFSCALES=1 LMAXL=2000 LSTEP=8 NS=0.995066 WBH2=0.021643 ZSTART=3e7",
+  "held": "r7093 launch_grid.sh, LEAFGEOM=1; centred on the arm of record with the launcher's steps (H0 +-2, Om +-0.015, omega_b +-0.0008, n_s +-0.02)"
+ },
+ "r7201_cc66_loading_lever_leafrec1/cr_rb0.1.npz": {
+  "file": "r7201_cc66_loading_lever_leafrec1/cr_rb0.1.npz",
+  "namesake": "r7201_cc66_loading_lever/cr_rb0.1.npz",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0
+  },
+  "switches": "ARM=cr CRH0=68.570730 CROM=0.291246 HIER=1 LEAFGEOM=1 LEAFREC=1 LEAFSCALES=1 LMAXL=2000 LSTEP=8 NS=1.015066 RBFAC=0.1 WBH2=0.021643 ZSTART=3e7",
+  "held": "r7201 launch_ten/launch_three (LEAFGEOM=1), at the arm of record"
+ },
+ "r7201_cc66_loading_lever_leafrec1/cr_rb0.5.npz": {
+  "file": "r7201_cc66_loading_lever_leafrec1/cr_rb0.5.npz",
+  "namesake": "r7201_cc66_loading_lever/cr_rb0.5.npz",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0
+  },
+  "switches": "ARM=cr CRH0=68.570730 CROM=0.291246 HIER=1 LEAFGEOM=1 LEAFREC=1 LEAFSCALES=1 LMAXL=2000 LSTEP=8 NS=1.015066 RBFAC=0.5 WBH2=0.021643 ZSTART=3e7",
+  "held": "r7201 launch_ten/launch_three (LEAFGEOM=1), at the arm of record"
+ },
+ "r7201_cc66_loading_lever_leafrec1/cr_rb1.5.npz": {
+  "file": "r7201_cc66_loading_lever_leafrec1/cr_rb1.5.npz",
+  "namesake": "r7201_cc66_loading_lever/cr_rb1.5.npz",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0
+  },
+  "switches": "ARM=cr CRH0=68.570730 CROM=0.291246 HIER=1 LEAFGEOM=1 LEAFREC=1 LEAFSCALES=1 LMAXL=2000 LSTEP=8 NS=1.015066 RBFAC=1.5 WBH2=0.021643 ZSTART=3e7",
+  "held": "r7201 launch_ten/launch_three (LEAFGEOM=1), at the arm of record"
+ },
+ "r7201_cc66_loading_lever_leafrec1/cr_nodrive.npz": {
+  "file": "r7201_cc66_loading_lever_leafrec1/cr_nodrive.npz",
+  "namesake": "r7201_cc66_loading_lever/cr_nodrive.npz",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0
+  },
+  "switches": "ARM=cr CRH0=68.570730 CROM=0.291246 HIER=1 LEAFGEOM=1 LEAFREC=1 LEAFSCALES=1 LMAXL=2000 LSTEP=8 NODRIVE=1 NS=1.015066 WBH2=0.021643 ZSTART=3e7",
+  "held": "r7201 launch_ten/launch_three (LEAFGEOM=1), at the arm of record"
+ },
+ "spectra/r6919_injected_cr_leafrec1.npz": {
+  "file": "spectra/r6919_injected_cr_leafrec1.npz",
+  "namesake": "spectra/r6919_injected_cr.npz",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0
+  },
+  "switches": "ARM=cr CRH0=68.570730 CROM=0.291246 HIER=1 LEAFREC=1 LEAFSCALES=1 LMAXL=2000 LSTEP=8 NS=1.015066 SRCINJ=sweep SRCINJRS=own SRCINJVIS=38.042364089 WBH2=0.021643 ZSTART=3e7",
+  "held": "r6919_directions/launch.sh, five injections x six KSLICE pieces of 250"
+ },
+ "spectra/r6919_injected_lcdm_leafrec1.npz": {
+  "file": "spectra/r6919_injected_lcdm_leafrec1.npz",
+  "namesake": "spectra/r6919_injected_lcdm.npz",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0
+  },
+  "switches": "ARM=lcdm HIER=1 LH0=67.410309 LMAXL=2000 LOM=0.309826 LSTEP=8 NS=0.954248 SRCINJ=sweep SRCINJRS=own SRCINJVIS=43.957277107 WBH2=0.021966",
+  "held": "the CONTROL: only `viswap` moves -- it carries the ARM's visibility width, 43.591 -> 43.957 (the arm of record's); every other key is the namesake's own"
+ },
+ "spectra/r6929_scan_cr_leafrec1.npz": {
+  "file": "spectra/r6929_scan_cr_leafrec1.npz",
+  "namesake": "spectra/r6929_scan_cr.npz",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0
+  },
+  "switches": "ARM=cr CRH0=68.570730 CROM=0.291246 HIER=1 LEAFREC=1 LEAFSCALES=1 LMAXL=2000 LSTEP=8 NS=1.015066 SRCINJ=sweep SRCINJRS=own VISLEAF=<f> WBH2=0.021643 ZSTART=3e7",
+  "held": "r6929_directions/launch.sh: six VISLEAF values, real and injected, x six KSLICE pieces"
+ },
+ "spectra/r6941_fine_cr_visleaf_leafrec1.npz": {
+  "file": "spectra/r6941_fine_cr_visleaf_leafrec1.npz",
+  "namesake": "spectra/r6941_fine_cr_visleaf.npz",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0
+  },
+  "switches": "ARM=cr CRH0=68.570730 CROM=0.291246 HIER=1 LEAFREC=1 LEAFSCALES=1 LMAXL=2000 LSTEP=1 NS=1.015066 SRCINJ=sweep SRCINJRS=own VISLEAF=1 WBH2=0.021643 ZSTART=3e7",
+  "held": "r6941_directions/launch.sh: VISLEAF=1 real, and the injection at f=0 and f=1, LSTEP=1, six KSLICE pieces"
+ },
+ "spectra/r6784_cr_crossing_hier_leafrec1.npz": {
+  "file": "spectra/r6784_cr_crossing_hier_leafrec1.npz",
+  "namesake": "spectra/r6784_cr_crossing_hier.npz",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0
+  },
+  "switches": "ARM=cr BSPLIT=1 CRH0=68.570730 CRIC=branchpoint CROM=0.291246 ETAEND=4000 HIER=1 KBATCH=300 LEAFREC=1 LMAXL=2000 NK=600 NS=1.015066 WBH2=0.021643 ZSTART=3e7",
+  "held": "the CROSSING configuration (README:47-50) with LEAFSCALES unset (=0), its recorded command, so the 172 radiation-free ruler is the crossing background's; the POINT is the arm of record (the namesake sat at CRH0 68.62, CROM 0.2973). Replaces r7635's LEAFSCALES=1 file (69, r7639 item 3)"
+ },
+ "spectra/r6784_cr_crossing_hier_noCRIC_leafrec1.npz": {
+  "file": "spectra/r6784_cr_crossing_hier_noCRIC_leafrec1.npz",
+  "namesake": "spectra/r6784_cr_crossing_hier_noCRIC.npz",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0
+  },
+  "switches": "ARM=cr BSPLIT=1 CRH0=68.570730 CROM=0.291246 ETAEND=4000 HIER=1 KBATCH=300 LEAFREC=1 LMAXL=2000 NK=600 NS=1.015066 WBH2=0.021643 ZSTART=3e7",
+  "held": "the CROSSING configuration (README:47-50) with LEAFSCALES unset (=0), its recorded command, so the 172 radiation-free ruler is the crossing background's; the POINT is the arm of record (the namesake sat at CRH0 68.62, CROM 0.2973). Replaces r7635's LEAFSCALES=1 file (69, r7639 item 3)"
+ },
+ "spectra/r6784_cr_crossing_los_leafrec1.npz": {
+  "file": "spectra/r6784_cr_crossing_los_leafrec1.npz",
+  "namesake": "spectra/r6784_cr_crossing_los.npz",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0
+  },
+  "switches": "ARM=cr BSPLIT=1 CRH0=68.570730 CRIC=branchpoint CROM=0.291246 ETAEND=4000 KBATCH=300 LEAFREC=1 LMAXL=2000 NK=600 NS=1.015066 WBH2=0.021643 ZSTART=3e7",
+  "held": "the CROSSING configuration (README:47-50) with LEAFSCALES unset (=0), its recorded command, so the 172 radiation-free ruler is the crossing background's; the POINT is the arm of record (the namesake sat at CRH0 68.62, CROM 0.2973). Replaces r7635's LEAFSCALES=1 file (69, r7639 item 3)"
+ },
+ "spectra/r6794_cr_crossing_kcont_summed_leafrec1.npz": {
+  "file": "spectra/r6794_cr_crossing_kcont_summed_leafrec1.npz",
+  "namesake": "spectra/r6794_cr_crossing_kcont_summed.npz",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0
+  },
+  "switches": "ARM=cr BSPLIT=1 CRH0=68.570730 CROM=0.291246 ETAEND=4000 HIER=1 KBATCH=150 KCONT=1 LEAFREC=1 LMAXL=2000 NK=900 NS=1.015066 WBH2=0.021643 ZSTART=3e7",
+  "held": "the CROSSING configuration (README:47-50) with LEAFSCALES unset (=0), its recorded command, so the 172 radiation-free ruler is the crossing background's; the POINT is the arm of record (the namesake sat at CRH0 68.62, CROM 0.2973). Replaces r7635's LEAFSCALES=1 file (69, r7639 item 3); six KSLICE pieces of 450 summed, as r6794"
+ }
+}

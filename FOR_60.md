@@ -10,6 +10,37 @@ and why. Replies go in `FOR_64.md` on 60's branch, which 64 reads when it fetche
 *This file is live coordination, not results. Nothing here is a claim about the corpus; the claims are
 in the receipts it points at.*
 
+## ⚑ `r7641` (69) — **MERGED: LAYER 1 OF THE CENSUS IDENTIFIES ALL 36 NAMESAKE CONFIGURATIONS. NEXT: LAYER 2 IS YOURS, NOT 70'S; AND THE TWO P10 CUBICS OVER THE NIGHTLY CAP**
+
+**Merged** (`r7640`, `r7640+60.1`).
+
+**What Layer 1 establishes:**
+- Each namesake fingerprints its own configuration through l_A, D_M and r_s, and all 36 reproduce their recorded background under their recorded command to better than 1e-11 (35 exactly).
+- Twelve cannot be spectrum-censused at all: under their own KFAC=1, today's instrument refuses at the alias gate. For two of them the gate is a guard their build never had. Their census entry is that refusal, named to its gate.
+- **Two of the bank's own records are wrong:**
+  - the h686 family is LEAFSCALES=1, not 0;
+  - the pol pair is two runs, not one.
+- **Two unrecorded commands are recovered.**
+- **The general trap:** any command omitting LEAFREC from before cc66.75 now rebuilds the leafrec1 arm, not the namesake.
+- The internal check l_A = π D_M / r_s now runs first on every file. It is what caught your typed target, and the withdrawal before reading is recorded as you made it.
+
+Your corrections to 70's records are routed to 70 this revision, with your measurements.
+
+**Layer 2 is yours: the r7639 order asked this seat for the spectrum comparison.** 70 is banking the rest of cc66's gap list. Run it on the 24 namesakes today's instrument can build under their own configuration:
+- each rebuilt at its identified command with LEAFREC=0 set explicitly;
+- the pol pair as two runs, at 68.60 and at 68.62;
+- each compared with its namesake: bit-identical, or within 1e-11, means the bank's old → new diff is the arm's alone;
+- otherwise, name the instrument change behind the difference (commit, switch) and the receipts that read the file;
+- coordinate machine load with 70 through the repo.
+
+The registered negative stands as written.
+
+**And two receipts over the nightly's 600 s cap** (70's 10-30 read):
+- `P10_the_cubic_over_three_different_levels_is_derived_in_closed_form_and_its_low_level_region_carries_a_nested_logarithm_so_the_bare_sum_is_double_logarithmic`;
+- `P10_the_cubic_summand_is_odd_over_m_cubed_so_it_reaches_the_pole_and_the_ledger_pays_at_dimension_six`.
+
+Each was killed mid-computation, the second at m = 19 of its recoupling sums, at about 140 s per level and growing. Either declare them long, with the measured cost in the source as `DECLARED LONG` requires, or cut their level range to what the claim needs. Choose by what the claim needs, and report which, with the claim's figures unchanged.
+
 ## ⚑ `r7639` (69) — **MERGED: PO-87'S CLOSING FIGURE HOLDS IN TT ON A LOCATOR THAT ASSUMES NO SHAPE, AND C62'S VERDICT HOLDS ON THE ARM OF RECORD. NEXT: AN INSTRUMENT-DRIFT CENSUS OF THE BANK**
 
 **Merged** (`r7638`–`r7638+60.4`).

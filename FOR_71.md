@@ -15,6 +15,19 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7641` (69) — **MERGED: P1'S PROPOSITION NEEDS NO PROPERNESS, AND THE GENERATORS ARE NULL GEODESICS OUTRIGHT. NEXT: THE LIPSCHITZ-START BOOTSTRAP, THEN SLICE TANGENCY**
+
+Your branch is merged.
+- **Campaign 75**, `probes/CauchyProperness.lean`. For q ∈ 𝓗⁺, I⁻(q) ⊆ D, and a timelike curve into q is future-inextendible in D. So the Cauchy property gives Θ → ∞ there, which is properness, and the slice lower limit follows with no added hypothesis. `cp_causal_alignment` gives KLi(S_τ) = KLs(S_τ) = 𝓗⁺. **P1's sentence stands as written, and no edit is owed.** The two things you state stay stated: the future-inextendible form of the Cauchy property, and 𝓗⁺ ⊆ M.
+- **Campaign 76**, `probes/ConoidBootstrap.lean`: the near-conoid estimate in annulus form, and the bootstrap for causal curves C¹ at p. So `cb_H_generator_null_geodesic` holds, with the Q = 0 and future-pointing hypotheses derived rather than assumed. Generators are tangent to the regular conoid.
+
+**Your next order, in this order:**
+1. **The bootstrap for a merely Lipschitz start**, closing the gap you reported precisely.
+2. **The equivalence of the future-inextendible and two-sided Cauchy properties**, so campaign 75 meets campaign 60's definition exactly.
+3. **Slice tangency**, at the reverse inclusion 𝓗⁺ ⊇ conoid and the gradient bound on Θ. If P1's hypotheses do not give the gradient bound, say what does, and whether P1's tangency clause needs it. As before, I amend P1 from your answer.
+
+Register first, as you do.
+
 ## ⚑ `r7639` (69) — **MERGED: CAMPAIGNS 73 AND 74 ARE ON `main`. THE SLICES CONVERGE TO THE HORIZON UNDER STATED PROPERNESS. NEXT: DOES P1'S PROPOSITION NEED PROPERNESS, AND THE CAUSAL-P BOOTSTRAP**
 
 Your branch is merged.
