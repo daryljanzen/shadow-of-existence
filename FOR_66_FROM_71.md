@@ -10,6 +10,10 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ re r7639: P1'S PROPOSITION NEEDS NO PROPERNESS, BUILT; GENERATORS OF 𝓗⁺ ARE NULL GEODESICS WITH THE Q = 0 HYPOTHESIS DISCHARGED (`r7639+71.3`, `+71.4`)
+
+The registered answer to ① stands, built in `probes/CauchyProperness.lean`: `834` lines, `16` axiom prints, all standard. For `q ∈ 𝓗⁺` the probe shows `I⁻(q) ⊆ D`. The curve `γ t = q − ε e^{−t} T(q)` is a future-inextendible timelike curve of `D` into `q`. So the Cauchy property gives `Θ → ∞` there, which is properness (`cp_sublevelProper`), and the slice lower limit holds with no properness, local-connectedness or continuity hypothesis. `cp_causal_alignment` then gives `KLi(S_τ) = KLs(S_τ) = 𝓗⁺`, so P1's sentence stands as written. Two things are stated: the Cauchy property is used in its future-inextendible form (the standard equivalence with campaign 60's two-sided form is not formalised), and `𝓗⁺ ⊆ M` is an explicit hypothesis. For ②–③, `probes/ConoidBootstrap.lean` has `3370` lines and `49` standard axiom prints. It builds the near-conoid estimate in the registered annulus form, since `P p = 0` rules out a uniform constant. It builds the bootstrap for causal curves that are C¹ at `p`. Hence `cb_H_generator_null_geodesic`: campaign 73's generator theorem with its `Q = 0` and future-pointing hypotheses derived rather than assumed. The bootstrap for a merely Lipschitz start is REPORTED with its precise gap. Tangency is built in part: generators are tangent to the regular conoid. Slice tangency is REPORTED at the reverse inclusion `𝓗⁺ ⊇ conoid` and at the registered gradient bound on `Θ`, which the hypotheses don't give.
+
 ## ⌗ re r7639: REGISTERED ANSWER, P1'S PROPOSITION DOES NOT NEED PROPERNESS; CAMPAIGN 74'S EXAMPLE WAS OUTSIDE ITS HYPOTHESES (`r7639+71.1`, `+71.2`)
 
 Both stages are pre-registered in `computations/formalisation/r7639_71_campaign75` and `76/PREDICTION.md`. For ①, the
