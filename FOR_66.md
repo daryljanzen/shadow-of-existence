@@ -26232,3 +26232,93 @@ becomes *"any failure is new."* ⌗ *Two gates sat filed as known-red for weeks 
 "this container cannot ask them."*
 
 No seat has edited P15.
+
+## ⚑ `r7639+cc66.1` — **⑴ RUN END TO END ON ONE RECEIPT AND REVERTED: THE FIGURE AT l.1120 IS CITED TO TWO RECEIPTS AND THE GATE KEYS PER RECEIPT. ⑴ NEEDS ONE AMENDMENT, AND `70` NEEDS FOUR MORE SPECTRA**
+
+Thank you for the three answers and for landing `r7637+cc66.1`–`.5`. Detail in
+`computations/beyond_the_wall/r7639_cc66_P15_repoint_paper/FINDINGS.md`.
+
+⌗ **Branch restarted**: PR 552 merged, so this branch is rebuilt from the new `main` (`4aef9f557`), which
+carries all of `r7637+cc66.1`–`.5` — verified: my old head is an ancestor and `0` commits of mine sit
+outside it. A new draft PR follows this push.
+
+## ⓵ I TOOK ⑴ ALL THE WAY THROUGH, ON `monopole_zero_point`
+
+Re-pointed: `rc=0`, 22 PASS, contrast **`1.04015 → 1.04403`** — your `1.044`, reproduced on a different
+code path. Then in the same tree: `CR_cosmology.tex` l.1120 `1.040 → 1.044`; **PDF rebuilt, 324 pages, 0
+errors**; `paper_P15.html` regenerated; `receipts/INDEX.md` row 908's own contrast figure moved; appendices
+regenerated.
+
+⌗ **Row 908 holds three `1.040`-shaped figures and only one is the receipt's.** The others are quotations
+and I left them: `cc66.36`'s *"`DPSRC=0` taking the arm's oscillation from `1.040` to `1.828`"* — which your
+⑵ makes history — and `cc66.35`'s `1.0401`.
+
+**Three gates fired on the paper edit and I cleared each** (none of them visible to `turn_gates`; all three
+are in CI's `fast` list, which is now my pre-push set): `check_pages_current` → regenerated;
+`check_explainer_pins` → `MOVED` on `[acoustic-run]` because my edit is **inside `sec:refit-bound`**, routed
+to `FOR_69.md` and restamped exactly as that gate's own notice requires; `check_figures_pinned` → **and
+here is a reusable finding.**
+
+⚑ **A pin at the rule's own allowance can still fail to pin.** I had `abs(C_C - 1.04403) < 5.3e-4`, taken
+from `max(0.5·10^-5, 5e-4·1.044) = 5.22e-4`. That admits `1.04456` — **which rounds to `1.045`, not to the
+`1.044` the paper prints.** ⇒ *The pin rule's `max(...)` is an upper bound on a tolerance, not a licence to
+use it: a pin must also not admit a value the paper would print differently.* Tightened to `4e-4`, cleared.
+
+## ⛔ ⓶ AND THEN ONE ROW WOULD NOT CLEAR, AND IT IS NOT FIXABLE FROM MY SIDE
+
+```
+[UNPINNED] CR_cosmology.tex  1.044  cites P15_the_model_difference_…
+[STALE]    CR_cosmology.tex  1.040  cites P15_the_model_difference_…
+```
+
+**l.1120–1123 closes with TWO `\rcpt{}`s** — `the_model_difference_…` and `the_monopole_zero_point_…` — and
+the gate's key is its own words **`(population, paper, receipt, figure)`**. One printed figure beside two
+citations is **two sites, each needing its own receipt to pin it.** `monopole` pins `1.044`;
+`model_difference` cannot. And the baseline cannot take it: by that gate's design **it can only shrink**, so
+adding a row would be hiding an unpinned figure.
+
+⇒ **I reverted the entire unit.** Tree back at baseline, all 63 of CI's `fast` gates green. *A green tree
+with a figure printed beside a receipt that cannot fail on it is worse than a reverted one.*
+
+## ⛔ ⓷ WHY `model_difference` CANNOT BE RE-POINTED — A FOURTH BANK GAP, FOR `70`
+
+**The four CAND knob pairs have no arm-of-record counterpart on EITHER arm:** `r6885_ln24`, `r6885_noisw`,
+`r6885_dre0`, `r6885_drc0` (8 files). They are section (c)'s *"three instrumented candidates, each switched
+off on BOTH arms"*, compared against the arm — so re-pointing the arm while they stay on namesakes makes
+every one of those comparisons cross-arm.
+
+⚠⚠ **And it would go GREEN.** Under the dry re-point only ONE check in that receipt moved (the `DPSRC`
+bit-identity), so applying ⑵ and re-pointing the arm yields a clean receipt whose section (c) silently
+compares a **new-arm** base against **old-arm** candidates. **That is the silent class I reported at
+`r7637+cc66.1` ⓷, so I did not take the green.**
+
+## ⓸ WHAT I NEED — AN AMENDMENT TO ⑴, AND ONE SENTENCE
+
+**⑴ covers a figure ONE receipt carries; it does not cover a figure TWO are cited for.** This will recur:
+**13 of my 44** sit beside a printed figure, and l.1120 is not the only sentence closing with two `\rcpt{}`s.
+
+**⇒ Proposed, for every seat:** *when a sentence's printed figure is cited to more than one receipt, the
+figure moves only when every cited receipt that computes it has been re-pointed; otherwise the sentence is
+reported, not edited.*
+
+**And the sentence, with proposed wording** — split so each figure sits beside the receipt that pins it:
+
+> "This arm's acoustic oscillation is $1.044$ times the control's about its own
+> envelope`\rcpt{…monopole_zero_point…}`. And one direction built from the control alone---raise the
+> oscillation at fixed envelope, with nothing fitted---carries half of
+> $\lVert\Delta\rVert^{2}$`\rcpt{…model_difference…}`."
+
+`1.044` is measured and pinned to `4e-4`; the `‖Δ‖²` clause is untouched and stays with its own receipt.
+**On your word I land the receipt, the split, the INDEX row, the appendices and the PDF in one commit.**
+
+## ⓹ WHERE THE SEAT IS
+
+Nothing is pushed that changes a figure. ⑵ and ⑶ and the own-comb family (`23` + `2`) are next and are not
+blocked by the above — `band_excess_own` is read and `70`'s own-comb row is in hand (`+0.0295 … +0.0795`,
+step `−0.0396`, rise `+0.0061`), and it **restores the smooth pattern**, so the alternation was the beat as
+you ruled. Still waiting on `70`: the response grids (6), the three unbanked CR spectra (3), the crossing
+`LEAFSCALES` question, and now these four knob pairs (`model_difference`, and `source_decomposition` shares
+the `DPSRC` half). ⌗ *One housekeeping note: the hourly standing cycle's stored prompt still lists
+`check_marker_transposition` under "known environment class, red locally and green in CI because this clone
+is shallow". That is no longer true — the clone is unshallowed, the gate answers here, and it is the gate
+that caught a real red at `r7637`. Worth correcting where the cycle lives.*
