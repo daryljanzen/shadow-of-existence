@@ -1,0 +1,110 @@
+diff --git a/receipts/P15_CR_cosmology/P15_the_term_mix_has_the_shape_the_offset_needs_and_over_delivers_its_size.py b/receipts/P15_CR_cosmology/P15_the_term_mix_has_the_shape_the_offset_needs_and_over_delivers_its_size.py
+index c8200b685..a3c6e3baa 100644
+--- a/receipts/P15_CR_cosmology/P15_the_term_mix_has_the_shape_the_offset_needs_and_over_delivers_its_size.py
++++ b/receipts/P15_CR_cosmology/P15_the_term_mix_has_the_shape_the_offset_needs_and_over_delivers_its_size.py
+@@ -137,8 +137,24 @@ if FAILS:
+         print(f"  - {f}")
+     raise SystemExit(1)
+ 
+-A = {t: np.load(os.path.join(SP, f'r6959_eta_{t}.npz')) for t in ('lcdm', 'cr')}
+-F = {t: np.load(os.path.join(SP, f'r6941_fine_{t}.npz')) for t in ('lcdm', 'cr')}
++sys.path.insert(0, os.path.join(ROOT, 'computations', 'beyond_the_wall',
++                                'r7637_70_own_comb_statistic'))
++import own_comb as OCB                                                                 # noqa: E402
++
++# ** r7641 ⑹ -- THE ARM OF RECORD. **
++AETA = {'lcdm': 'r6959_eta_lcdm', 'cr': 'r6959_eta_cr_leafrec1'}
++AFIN = {'lcdm': 'r6941_fine_lcdm', 'cr': 'r6941_fine_cr_leafrec1'}
++_LOADED = []
++
++
++def _bank(tag):
++    _LOADED.append(tag)
++    return np.load(os.path.join(SP, tag + '.npz'))
++
++
++A = {t: _bank(AETA[t]) for t in ('lcdm', 'cr')}
++F = {t: _bank(AFIN[t]) for t in ('lcdm', 'cr')}
++FN = _bank('r6941_fine_cr')
+ WIN = np.load(os.path.join(SP, 'r6959_nswap_lcdm.npz'))
+ MIX = {k: np.load(os.path.join(SP, f'r6975_{k}_lcdm.npz')) for k in ('mix', 'mixb')}
+ 
+@@ -164,14 +180,33 @@ def env_a(x, y, win=1.0):
+     return e
+ 
+ 
+-def osc(x, y):
+-    e = env_a(x, y)
++def osc(x, y, win=1.0):
++    e = env_a(x, y, win)
+     return (y - e) / e
+ 
+ 
+-def band_std(d):
++# ** r7641 ⑹ -- THIS RECEIPT MIXES TWO CARRY CLASSES, AND THEY ARE HANDLED SEPARATELY. **
++#   ⒜ `MEAS = band_std(cr)/band_std(lcdm)` is an arm-vs-control COMB-BAND RATIO -- `r7637+70`'s
++#      carry APPLIES (class 1).  Uncarried, the beat makes band 6 collapse against band 5.
++#   ⒝ `RW`, `RM`, `RB` are tapered CONTROLS against the control -- the carry is the IDENTITY
++#      there (class 2), so they are read unchanged and nothing is gained by carrying them.
++#   ⒞ the eta-window profiles in PART 2 are an ETA-INTEGRAL and not a band ratio -- the carry DOES
++#      NOT APPLY (class 3, as `r7639+cc66.18` established).
++#   ⇒ *Three classes in one receipt.  Carrying ⒝ or ⒞ would be as wrong as not carrying ⒜.*
++def _comb(d):
+     q = d['ls'].astype(float) / float(d['l_A'])
+-    o = osc(q, d['Dl'])
++    T, ph, _amp = OCB.comb(q, np.asarray(d['Dl'], float))[1:]
++    return q, T, ph
++
++
++def band_std(d, carried=False, Tc=None, Pc=None):
++    q = d['ls'].astype(float) / float(d['l_A'])
++    if carried:
++        _q, Ta, pa = _comb(d)
++        o = osc(q, np.asarray(d['Dl'], float), Ta / Tc)
++        q = Tc * (q / Ta + ((pa - Pc + np.pi) % (2 * np.pi) - np.pi) / (2 * np.pi))
++    else:
++        o = osc(q, np.asarray(d['Dl'], float))
+     return np.array([float(np.std(np.interp(np.linspace(a, b, 400), q, o)))
+                      for a, b in zip(QE[:-1], QE[1:])])
+ 
+@@ -209,8 +244,11 @@ def peaks_sub(d, W=40):
+     return np.array(out)
+ 
+ 
+-C0 = {t: band_std(F[t]) for t in F}
++_QCTL, _TC, _PC = _comb(F['lcdm'])
++C0 = {'lcdm': band_std(F['lcdm']), 'cr': band_std(F['cr'], True, _TC, _PC)}
+ MEAS = C0['cr'] / C0['lcdm']
++MEAS_NSK = band_std(FN) / C0['lcdm']            # the namesake arm, as `cc66.46` read it
++MEAS_RAW = band_std(F['cr']) / C0['lcdm']       # the arm of record UNCARRIED, for the comparison
+ RW = band_std(WIN) / C0['lcdm']
+ RM = band_std(MIX['mix']) / C0['lcdm']
+ RB = band_std(MIX['mixb']) / C0['lcdm']
+@@ -228,10 +266,23 @@ sm, im = np.polyfit(Q2, np.log(MEAS), 1)
+ sr, ir = np.polyfit(Q2, np.log(REM), 1)
+ print(f"\n  ln against q^2 -- measured slope {sm:+.6f} intercept {im:+.6f} ({np.exp(im):.4f} at q=0);"
+       f"  remainder slope {sr:+.6f} intercept {ir:+.6f} ({np.exp(ir):.4f})")
+-check("the measured excess is recomputed here from `r6941_fine_*`, not quoted, and reproduces "
+-      "`cc66.46`'s seven band ratios",
+-      np.allclose(MEAS, [1.0215, 1.0574, 1.0519, 1.0606, 1.0748, 1.0659, 1.0762], atol=5e-4),
+-      "  ".join(f"{x:.4f}" for x in MEAS))
++print("  the namesake arm, uncarried, as `cc66.46` read it: "
++      + "  ".join(f"{x:.4f}" for x in MEAS_NSK))
++print("  the arm of record UNCARRIED (the beat, not a channel):  "
++      + "  ".join(f"{x:.4f}" for x in MEAS_RAW))
++check("the measured excess is recomputed here from `r6941_fine_*`, not quoted, and reproduces the "
++      "ARM-OF-RECORD row `r7639+cc66.23` measured and `r7637+70` independently computed -- while the "
++      "SAME code still returns `cc66.46`'s seven ratios on the namesake arm, so what moved is the arm",
++      np.allclose(MEAS, [1.0295, 1.0595, 1.0610, 1.0639, 1.0777, 1.0728, 1.0795], atol=5e-4)
++      and np.allclose(MEAS_NSK, [1.0215, 1.0574, 1.0519, 1.0606, 1.0748, 1.0659, 1.0762], atol=5e-4)
++      and _LOADED == ['r6959_eta_lcdm', 'r6959_eta_cr_leafrec1', 'r6941_fine_lcdm',
++                      'r6941_fine_cr_leafrec1', 'r6941_fine_cr'],
++      "  ".join(f"{x:.4f}" for x in MEAS) + f";  read {_LOADED}")
++check("⛔ AND THE CARRY IS WHY THE ROW IS READABLE AT ALL: uncarried, the arm of record's band 6 "
++      "collapses against band 5, which is the beat and not a channel changing its mind",
++      (MEAS_RAW[5] - 1) < 0.5 * (MEAS_RAW[4] - 1) and (MEAS[5] - 1) > 0.8 * (MEAS[4] - 1),
++      f"uncarried band 6 at {100 * (1 - (MEAS_RAW[5] - 1) / (MEAS_RAW[4] - 1)):.0f} per cent below "
++      f"band 5, carried at {100 * (1 - (MEAS[5] - 1) / (MEAS[4] - 1)):.0f}")
+ check("the remainder carries about half the q=0 offset R1 fired on",
+       0.35 < (np.exp(ir) - 1) / (np.exp(im) - 1) < 0.60,
+       f"{100 * (np.exp(ir) - 1) / (np.exp(im) - 1):.1f} per cent of it")

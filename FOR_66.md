@@ -28312,3 +28312,84 @@ which `C65`'s own hazard note says is the risk of touching this file at all.*
 63 fast gates green on the repaired tree.
 
 **Rulings: ⑴ landed, ⑵ held, ⑶ landed, ⑷ checked with one clause held, ⑸–⑹ next.**
+
+---
+
+# `r7641+cc66.34` — ⑹ re-derived, and ⛔ **the spread is real but the q-dependence is not**
+
+Your ⑹: *"A coefficient spread of 8.3% against the 5% the condition enforces is a q-dependence, and
+that is a result."* ⇒ **The spread reproduces exactly. The q-dependence does not survive being
+tested.** The receipt is **held**, its re-point banked as a patch, and the result is this.
+
+## ⓵ THE ROW, RE-DERIVED
+
+The Doppler coefficient the η-window profiles demand, band by band:
+
+| | $q=1.20$ | $1.90$ | $2.60$ | $3.30$ | $4.00$ | $4.70$ | $5.40$ | spread |
+|---|---|---|---|---|---|---|---|---|
+| namesake | `0.8974` | `0.8600` | `0.8824` | `0.8791` | `0.8753` | `0.8708` | `0.8908` | **`4.3%`** |
+| **arm of record** | `0.8943` | `0.8619` | `0.8577` | `0.8925` | `0.8767` | `0.8377` | `0.9071` | **`8.3%`** |
+
+## ⛔⛔ ⓶ AND IT IS SCATTER, NOT A q-DEPENDENCE
+
+The registered condition reads *"the same in every band to five per cent"*, and the claim it was
+registered to protect is *"a single scalar on the Doppler and **not a q-dependent reshaping**"*. So the
+question the failure raises is whether the extra spread has a **shape in $q$**. Tested directly:
+
+> against $q$ — slope `+0.00045 ± 0.00722` → **`0.06`σ**
+> against $q^2$ — slope `+0.00025 ± 0.00107` → **`0.23`σ**
+
+The fitted trend spans `0.002` and `0.007` across the whole range against a spread of `0.069` — **three
+and ten per cent of what is there.** The successive differences alternate (`− − + − − +`).
+
+⇒ *** So the registered tolerance fails on SCATTER, and the claim it protected is still true: there is
+no q-dependent reshaping because there is no q-dependence at all. What moved is not the mechanism but
+how tightly "one constant" can be asserted — to eight per cent, not two. ***
+
+⌗ *And the paper's neighbouring clause does not move at all: "the response is independent of
+wavenumber, an intercept against a slope worth three per cent of it" is measured on the **tapered
+controls** (`r6975_mix{,b}_lcdm`), where the carry is the identity. Intercept `1.0805`, ratio `0.031`,
+both unchanged. The arm enters that clause only through the excess it is compared against.*
+
+## ⓷ TWO OTHER FIGURES MOVE, AND ONE PRE-DATES EVERY RE-POINT
+
+* **The over-delivery.** *"It over-delivers the whole excess by between one and three times"* → on the
+  arm of record `2.02× 1.83× 1.28× 1.28× 1.16× 0.99×`: **band 6 dips just below one**, so "in every
+  band" fails by one per cent and "between one and three times" becomes "up to twice, and a hair under
+  once at the top".
+* **The anchored reading.** `2.31` against a symmetric baseline of `1.96` — `18` per cent, against the
+  `15` the gate registers.
+* ⚠ **And the paper's "two per cent" was wrong before anything was re-pointed.** `cc66.24` found the
+  receipt's own title saying *"to two per cent"* where its condition enforces **five** and the namesake
+  measurement is **`4.3`**. So that figure goes `2%` (as printed, and never true) → `4.3%` (the
+  namesake, correct) → `8.3%` (the arm of record). *Two of those three steps are a correction and only
+  one is the re-point.*
+
+## ⓸ PROPOSED WORDING
+
+For l.1205–1207, replacing *"one constant to two per cent across every band"*:
+
+> "...and imposing one on the other at a coefficient solved from the profiles themselves---one constant
+> to eight per cent across the bands, scattered rather than sloped, with no trend in wavenumber at
+> either first or second order---moves the contrast with the signature the long-wavelength offset
+> needs: *the response is independent of wavenumber*, an intercept against a slope worth three per cent
+> of it, where a window's smearing must die at long wavelength."
+
+And for l.1210, replacing *"by between one and three times"*:
+
+> "...it over-delivers the whole excess by up to twice and falls a hair short of it in the top band..."
+
+## ⓹ THE INSTRUMENT, AND WHY ITS FIRST ANSWER WOULD HAVE AGREED WITH YOU
+
+`term_mix_coefficient_is_scatter_not_q.py` exits 1 on four validations, each perturbed and each firing.
+
+⛔ ⌗ *Worth recording: my first version invented the coefficient instead of lifting the receipt's own
+solve — a ratio of Doppler-side fractions rather than `sw/(sw + c²dp + rest) = tgt`. It returned
+`13.0` per cent on the namesake against the receipt's `4.3`, and **a `1.88`σ trend against $q$, which
+would have CONFIRMED your q-dependence reading.** The only reason that did not get reported to you as
+agreement is the gate that makes the instrument reproduce the receipt's own namesake figure before any
+new number is believed. **A wrong instrument agreeing with the order is the most expensive thing I
+could have handed you.***
+
+**Rulings: ⑴ landed, ⑵ held, ⑶ landed, ⑷ checked with one clause held, ⑹ re-derived and held with the
+mechanism corrected. ⑸ next.**
