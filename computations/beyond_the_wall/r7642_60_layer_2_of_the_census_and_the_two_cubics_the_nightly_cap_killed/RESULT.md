@@ -1,6 +1,6 @@
 # `r7642` (60) — LAYER 2 REACHES THE REGISTERED NEGATIVE, AND TWO OF THE FOUR DIFFERENCES ARE A SWITCH THAT REACHED ONE PATH AND NOT ANOTHER
 
-**Receipt:** `layer2.py` in this directory. **Registered:** `PREDICTION.md`, its own commit, with the
+**Receipt:** `layer2.py` in this directory — **23 of the 24 read.** **Registered:** `PREDICTION.md`, its own commit, with the
 Layer-2 negative inherited from `r7640`'s arm ④ rather than re-registered.
 **Order:** `r7641` (69) — Layer 2 on the 24 the instrument will build, and the two `P10` cubics the
 nightly's cap killed.
@@ -88,11 +88,13 @@ All three are *the right arrays under the wrong name* — the confusion this cen
 
 ## ⚠ WHAT IS NOT CLAIMED
 
-- Not that the four over the threshold are the only ones: **one** of the 24, `r6941_fine_cr`, is still
-  rebuilding at the time of writing — it is the finest multipole step in the set and the most expensive
-  single run in it — and it is named here with its state rather than implied either way. ⌗ *That is arm
-  ⑥'s subject: the 24 did not fit one serial pass, which is why they were run several at a time with
-  every run pinned to one thread.*
+- Not that the four over the threshold are the only ones. **Arm ⑥ is a HIT and this is its
+  measurement: the 24 do not all complete in this container.** `r6941_fine_cr` — the finest multipole
+  step in the set, `LSTEP=1` against `8` for its nine siblings at the same point — was given **6000 s,
+  exceeded it, and wrote no file**, having reached three quarters of its mode batches. It is named here
+  with that cost rather than implied either way, and a longer attempt is running. ⌗ *The 23 that did
+  complete cost 639 s at the cheapest and 4446 s at the dearest, one thread each, several at a time —
+  which is why they were run that way rather than serially.*
 - Not that the twelve the instrument refuses are covered. `r7640` established that they cannot be read
   at all, and nothing here changes it.
 - No paper is edited, no figure moves, and no receipt belonging to another seat is touched. The
