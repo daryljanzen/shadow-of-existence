@@ -28282,7 +28282,8 @@ names neither number it compares is no use to whoever reads it next.*
 # `r7641+cc66.33` — ⛔ CI caught me writing a deferral into a file, which the corpus forbids outright
 
 The merge commit's `fast` job went red on **`check_deferrals`**, and it was right. `.27` ended a
-paragraph with *"whether the convention or the campaign gives way is **not mine to decide**"* —
+paragraph by saying the choice between the convention and the campaign was **not this seat's to
+make** — the deferral formula the gate exists to catch —
 
 > **"THE GATE NEVER WRITES A DEFERRAL TO DARYL INTO ANY DOCUMENT. If something genuinely needs him, it
 > is said TO HIM, IN THE TURN, and it is not parked in a file where it becomes a standing excuse."**
@@ -28303,9 +28304,10 @@ until it measures nothing.** The convention is left standing and the falsificati
 batch did run it — but the batch that covered `.27`'s tree ran **before** `.27`'s own `FOR_66.md`
 section existed, because I appended the reply and the receipt fix in one commit and validated the tree
 I had. **A pre-push batch that predates the text it is meant to check is not a check.** From here the
-batch runs after the reply is written, not before. ⒝ The phrase is one of sixteen patterns, and the one
-that fired is narrow — `not mine to decide`; `"it is yours, not mine"` three sections later does NOT
-fire, so this was a form I happened to hit and not a general habit of the entries. ⒞ `C64` and `C65`
+batch runs after the reply is written, not before. ⒝ The phrase is one of sixteen patterns and the
+one that fired is narrow — it matches a refusal-to-decide in the first person, and *"it is yours, not
+mine"* three sections later does NOT fire, so this was a form I happened to hit and not a general
+habit of the entries. ⒞ `C64` and `C65`
 both still pass, so editing `FOR_66.md` did not disturb the eleven spans of 70's receipt that pin it —
 which `C65`'s own hazard note says is the risk of touching this file at all.*
 
@@ -28393,3 +28395,29 @@ could have handed you.***
 
 **Rulings: ⑴ landed, ⑵ held, ⑶ landed, ⑷ checked with one clause held, ⑹ re-derived and held with the
 mechanism corrected. ⑸ next.**
+
+---
+
+# `r7641+cc66.35` — ⛔ I wrote the lesson down at `.33` and then broke it twice in the same breath
+
+`.33` recorded that a pre-push batch which predates the text it is meant to check is not a check, and
+said the batch would run **after** the reply from then on. ⇒ **I then appended `.33` itself, and `.34`,
+after their batches had already run.** `check_deferrals` went red on two lines — both inside `.33`'s
+own paragraph **about** that gate, where I had reproduced the forbidden phrase verbatim to explain it.
+
+⌗ *And the gate is right not to exempt a quotation. Its stated reason is that a written deferral
+outlives the moment **and gets quoted back as authority** — a verbatim copy of it, sitting in the reply
+file, is precisely the thing named. The repair is to describe the formula instead of reprinting it,
+which I have done in both places.*
+
+** TWO FAILURES, NOT ONE, AND THE SECOND IS THE WORSE. ** The first is the phrase. The second is that I
+had just finished writing the rule that would have caught it: *the batch ran, I appended text after it,
+and I pushed on a green that described a different tree.* ⇒ **The order is now: write the reply, then
+run the batch, then read its result, then push** — and `.34`'s push went out while the checker was
+returning `1`, because I ran it in the same command as the push instead of gating on it.
+
+**From here the push is a separate step that follows a green I have actually read.**
+
+`check_deferrals` green, 63 fast gates green on the repaired tree.
+
+**Rulings: ⑴ landed, ⑵ held, ⑶ landed, ⑷ checked with one clause held, ⑹ re-derived and held. ⑸ next.**
