@@ -1,5 +1,7 @@
-"""r7639+70: fold the second leaf-rate bank (launch.sh) into its namesakes' places, each `<name>_leafrec1.npz`
-beside its namesake, in the namesake's own format, with the instrument's `config` and a `manifest` key.
+"""r7639+70: fold the second leaf-rate bank (launch.sh).  Spectra go beside their namesakes as `<name>_leafrec1.npz`;
+the GRIDS go to sibling directories `<dir>_leafrec1/` under their namesakes' own file names, because receipts glob
+the grid directories and a suffixed file inside one changes what they count (cc66's phase-slope receipt did).
+Each file is in the namesake's own format, with the instrument's `config` and a `manifest` key.
 
   * the response grids (CR side), centred on the arm of record:
       refit_grid/        <- g1300   (LMAXL=1300; its best_cr and verify_cr are its base on the arm of record)
@@ -95,7 +97,8 @@ for dest, sub, held in GRIDS:
         d = np.load(src, allow_pickle=True)
         out = {**{k: d[k] for k in d.files}, **extras(src[:-4] + '.log')}
         cfg_ok(out['config'], t)
-        save(os.path.join(BW, dest, t + '_leafrec1.npz'), out, log_ok(src[:-4] + '.log'),
+        os.makedirs(os.path.join(BW, dest + '_leafrec1'), exist_ok=True)
+        save(os.path.join(BW, dest + '_leafrec1', t + '.npz'), out, log_ok(src[:-4] + '.log'),
              f'{held}; centred on the arm of record with the launcher\'s steps (H0 +-2, Om +-0.015, '
              f'omega_b +-0.0008, n_s +-0.02)', os.path.join(BW, dest, t + '.npz'))
     if dest in ('refit_grid', 'refit_grid185'):
@@ -103,7 +106,7 @@ for dest, sub, held in GRIDS:
             nm = os.path.join(BW, dest, alias + '.npz')
             if os.path.exists(nm):
                 d = np.load(os.path.join(D, sub, 'cr_base.npz'), allow_pickle=True)
-                save(os.path.join(BW, dest, alias + '_leafrec1.npz'), {k: d[k] for k in d.files},
+                save(os.path.join(BW, dest + '_leafrec1', alias + '.npz'), {k: d[k] for k in d.files},
                      log_ok(os.path.join(D, sub, 'cr_base.log')),
                      f'{held}; the grid base: on the arm of record the refit point IS the centre', nm)
 LEV = os.path.join(BW, 'r7201_cc66_loading_lever')
@@ -114,7 +117,8 @@ for t in ('cr_rb0.1', 'cr_rb0.5', 'cr_rb1.5', 'cr_nodrive'):
     d = np.load(src, allow_pickle=True)
     out = {**{k: d[k] for k in d.files}, **extras(src[:-4] + '.log')}
     cfg_ok(out['config'], t)
-    save(os.path.join(LEV, t + '_leafrec1.npz'), out, log_ok(src[:-4] + '.log'),
+    os.makedirs(LEV + '_leafrec1', exist_ok=True)
+    save(os.path.join(LEV + '_leafrec1', t + '.npz'), out, log_ok(src[:-4] + '.log'),
          'r7201 launch_ten/launch_three (LEAFGEOM=1), at the arm of record', os.path.join(LEV, t + '.npz'))
 
 # ---- r6919: the arm's five injections, and the control's viswap
