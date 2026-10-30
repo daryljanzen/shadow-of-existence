@@ -374,3 +374,34 @@ envelope kinds, where 70 measured it on one.*
 ⚠ **The `0.7` gate is the one to watch**: the savgol reading moves from `0.633` to `0.654`, so the margin
 falls from `0.067` to `0.046`. It passes, and it passes on the reading the ruling says is the right one, but
 it is the narrowest margin in the family and is recorded as such rather than left to be rediscovered.
+
+---
+
+# SET A, TRIAGED AGAINST ⑴'s RULE BEFORE ANYTHING IS EDITED
+
+⑴ couples a receipt to the figure P15 prints from it, so the order of work on Set A is set by which
+receipts are coupled at all. **23 in Set A. 2 are blocked by a bank gap** (`the_combs_resolution_…` and
+`the_visibilitys_clock_…`, on `r6919_injected_cr` / `r6925_visleaf_cr` / `r6929_scan_cr` /
+`r6893_switch_screen_cr`). Of the remaining 21:
+
+| | count | what it means for the work |
+|---|---|---|
+| **not cited in P15 at all** | **2** | re-pointable with no paper coupling whatsoever |
+| **cited, no number anywhere in the paragraph** | **12** | re-pointable without touching a figure |
+| **cited in a paragraph that prints a number** | **7** | the sentence is read before anything is edited |
+
+**The two uncited are `the_coupling_is_measured_and_negative_…` and `the_step_is_the_excesss_own_…`.**
+⇒ *The step receipt — the one the whole own-comb question was diagnosed on — prints nothing in P15.* So it
+is the right first re-point: the full ⑴ loop can be run on it with no paper coupling to resolve.
+
+**Six of the seven number-printing cases are flagged by one line**, `l.2783`, an omnibus with **14**
+`\rcpt{}`s and 4 printed numbers. So one reading of that line settles six of the seven; the seventh
+(`the_term_mix_does_not_carry_the_modulation_…`) also sits beside `l.1548-1555`, which prints one number.
+
+## ⌗ And the first version of this triage was line-level, which UNDERCOUNTS
+
+Counting numbers on the `\rcpt{}`'s own **line** gave 7 of 20 cited receipts as figure-printing. That is
+wrong in the unsafe direction: a sentence's printed figure routinely sits two or three source lines above
+the citation that pins it, so a line-level count misses it. *It is the same error as the template-regex gap
+sweep, which is why the count above is taken over the **paragraph** — which over-flags and never
+under-flags, and the over-flagged cases are read by hand rather than acted on.*
