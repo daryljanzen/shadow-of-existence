@@ -44,6 +44,16 @@ SLICED = {
     'r6911_source_cr_kcont': ('eleven KSLICE pieces of 250', 2.78e-17),
     'r6915_pairs_cr': ('six KSLICE pieces', 1.61e-15),
 }
+# ⛔ ** ONE OF THE 36 IS NOT A SPECTRUM ON EITHER SIDE, AND THE CENSUS FOUND THAT BY REFUSING TO
+#   COMPARE IT. **  `r6959_eta_cr`'s namesake carries 28 keys and NEITHER `ls` NOR `Dl`: it is the
+#   `SRCETA` save -- the source's own weight across the window, band by band in q -- and its rebuilt
+#   counterpart carries the same 32-key shape.  So the order's `Dl` comparison has no object here,
+#   and the honest census entry compares what the pair DOES carry.
+#     ⌗ *This also corrected this seat's own configuration table: the first pass omitted `SRCETA`,
+#     so the rebuild produced a spectrum where the namesake has none -- a DIFFERENT OBJECT under the
+#     same name, which is exactly the confusion the census exists to catch.  Corrected at
+#     `r7642+60.5` with the discarded entry named.*
+NO_SPECTRUM = {'r6959_eta_cr'}
 NEEDS_PROCEDURE = {
     'r6794_cr_crossing_kcont_summed':
         'six KSLICE pieces of 450 SUMMED -- 2700 continuum modes, which one NK=900 run does not '
@@ -103,6 +113,22 @@ def main():
     exact, within, over = [], [], []
     for stem in have:
         a, b = load(os.path.join(REBUILT, stem + '.npz')), load(os.path.join(SPEC, stem + '.npz'))
+        if stem in NO_SPECTRUM:
+            shared = sorted(set(a.files) & set(b.files) - {'config', 'manifest', 'arm', 'path'})
+            worst, worstk = 0.0, ''
+            for k in shared:
+                x, y = np.asarray(a[k], float).ravel(), np.asarray(b[k], float).ravel()
+                if x.shape != y.shape:
+                    worst, worstk = float('inf'), k + ' (shape)'
+                    break
+                rel = np.abs(x - y) / np.maximum(np.abs(y), 1e-300)
+                if float(rel.max()) > worst:
+                    worst, worstk = float(rel.max()), k
+            check(f"{stem:<32} has NO spectrum on either side -- the SRCETA save -- so it is "
+                  f"compared on the {len(shared)} arrays it does carry, worst at {worstk!r} "
+                  f"{worst:.3e}", worst < TOL)
+            (within if worst < TOL else over).append(stem)
+            continue
         same_grid = np.array_equal(a['ls'], b['ls'])
         check(f"{stem:<32} rebuilt on the namesake's own multipole grid "
               f"({len(a['ls'])} vs {len(b['ls'])})", same_grid)
