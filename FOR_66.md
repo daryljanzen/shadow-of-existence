@@ -26705,3 +26705,73 @@ registered bands are `0.70` wide where the comb period is `≈1.0`. ⇒ **Every 
 window narrower than one period, or varies its width while varying something else, is suspect the same way,
 and I check each at fixed width before reading its result.** That is a consequence of your ruling that goes
 beyond the alternation, and I expect it to find more than this one.
+
+---
+
+## ⚑ `r7639+cc66.8` — **THE FIRST SET A RE-POINT IS LANDED: THE STEP RECEIPT ON THE ARM OF RECORD AND ON THE ARM'S OWN COMB, `rc=0`, WITH BOTH REGISTERED MISSES REPORTED AND NEITHER RE-TOLERANCED**
+
+This is option ① of the three I put to you at `.7`, which I said I would write in if I heard nothing.
+
+## ⓵ THE RE-POINT
+
+Every arm read is `_leafrec1` (`r6941_fine_cr_leafrec1`, `r6915_pairs_cr_leafrec1`); the band edges come
+from `r6959_eta_cr_leafrec1` and are **asserted bit-identical** to the namesake's, because they are a
+definition and not a measurement; and the band statistic is no longer cut on the control's comb — the arm
+is carried onto the control's comb coordinate first. `rc=0`, 16 PASS.
+
+| | namesake | arm of record, carried |
+|---|---|---|
+| the step on all four readings, `< 0.7` | `0.333 0.391 0.633 −0.025` | **`0.427 0.486 0.654 −0.035`** ✓ |
+| envelope-free band 1 / bands 2–7 | `−0.0017` / `+0.0654` | **`−0.0024` / `+0.0685`** ✓ |
+| the location, `ptp < 0.03` | `1.794 ± 0.008` | **`1.783 ± 0.009`** ✓ |
+| **the second-peak match** | `0.9%` | **`0.3%`** ✓ *three times closer* |
+| the Doppler at the step's resolution | `−0.0016…+0.0014` | `−0.0013…+0.0026`, means `+0.0006`/`+0.0010` ✓ |
+| the projection width, linear to `< 5%` | `2.6%` | `2.6%` ✓ |
+
+## ⛔ ⓶ MISS 1 — THE SIZE, AND ITS CAUSE IS ASSERTED RATHER THAN ASSERTED AWAY
+
+Registered `1.9 < factor < 2.2`; measured **`1.77` to `1.83`**. The receipt now prints the miss in terms
+and carries a check on the *cause*: **the low-`q` plateau comes UP** (`0.026 → 0.031`) where the high one
+barely moves (`0.053 → 0.056`) — the beat leaving the statistic, the same effect as your step shrinking
+`−0.0430 → −0.0396`. ⇒ *The factor is smaller because the step is smaller, for the reason your ruling
+names.* "A clean factor of two" becomes a factor of `1.8`, and **the registered window is recorded as
+missed rather than widened to admit the new value.**
+
+## ⛔⛔ ⓷ MISS 2 — THE EDGE TEST IS WITHDRAWN, ON BOTH ARMS
+
+The receipt now prints all three sweeps, so the confound is on the record rather than in a reply:
+
+```
+NOT       +0.0295  +0.0335  +0.0330  +0.0243   registered: upper edge FIXED at 1.55, width narrows 0.70 -> 0.40
+NOT       +0.0297  +0.0302  +0.0291  +0.0305   fixed width 1.00, one comb period
+NOT       +0.0295  +0.0313  +0.0300  +0.0305   fixed width 0.70, the registered band width
+```
+
+and on the **namesake** arm, where the registered test passes, the fixed-width sweeps read
+`+0.0215 +0.0276 +0.0318 +0.0298` (width `0.70`) and `+0.0259 +0.0271 +0.0266 +0.0277` (one period) —
+**no monotone rise either.** ⇒ *The defect is the test's, not the arm's.*
+
+**And the claim it served survives on support the receipt already computes:** the hazard is that band 1
+reads low because the **envelope** truncates, and the envelope-free reading uses no envelope and no window
+at all — band 1 `−0.0024` against `+0.0685`. ⌗ *Option ② is declined on the record: reporting the miss on
+the arm of record alone would hide a cause already measured on the namesake.*
+
+## ⓸ PERTURBED UNTIL RED, AND THE PERTURBATION SAYS SOMETHING
+
+Pointing the arm back at the namesake with the carry still on fires **three** gates — the second-peak match
+collapsing `0.3%` to `9.8%`, the half-rise wandering by `±0.278`, and the plateau pair leaving its measured
+range. ⇒ **So the location's stability is a property of the arm of record and not of the statistic.**
+
+## ⓹ AND THE PAPER TRAIL LANDED IN THE SAME COMMIT
+
+The INDEX row, both regenerated appendices, and **`CR_cosmology.pdf` rebuilt** (324 pages, 0 errors) —
+because the appendix moved, which is the rule `r7639+cc66.4` learned the hard way. **No sentence of
+`CR_cosmology.tex` is touched:** this receipt is one of the two in Set A that P15 does not cite, which is
+why it was taken first.
+
+## ⓺ WHERE THE SEAT IS
+
+**1 of Set A's 21 landed.** The next are the other uncited one (`the_coupling_is_measured_and_negative_…`)
+and the 12 whose citing paragraph prints no number. ⚠ *And the two misses here are both properties of
+**sub-period windows**, which the whole family uses — so I check each remaining receipt at fixed width
+before reading its result, and I expect this to find more.*
