@@ -88,13 +88,18 @@ All three are *the right arrays under the wrong name* — the confusion this cen
 
 ## ⚠ WHAT IS NOT CLAIMED
 
-- Not that the four over the threshold are the only ones. **Arm ⑥ is a HIT and this is its
-  measurement: the 24 do not all complete in this container.** `r6941_fine_cr` — the finest multipole
-  step in the set, `LSTEP=1` against `8` for its nine siblings at the same point — was given **6000 s,
-  exceeded it, and wrote no file**, having reached three quarters of its mode batches. It is named here
-  with that cost rather than implied either way, and a longer attempt is running. ⌗ *The 23 that did
-  complete cost 639 s at the cheapest and 4446 s at the dearest, one thread each, several at a time —
-  which is why they were run that way rather than serially.*
+- Not that the four over the threshold are the only ones. **Arm ⑥ is a HIT, and the limit is
+  STRUCTURAL rather than a budget this seat chose.** `r6941_fine_cr` — the finest multipole step in the
+  set, `LSTEP=1` against `8` for its nine siblings at the same point — was given **6000 s, exceeded it
+  and wrote no file**, having reached three quarters of its mode batches; a second attempt at a far
+  larger budget reached a quarter of them in seventeen minutes. ⇒ **Its mode solve alone measures at
+  about two and a half hours before the `LSTEP=1` projection begins, against a longest available
+  execution window of two — and the run carries no checkpoint, so every attempt restarts from zero.**
+  ⚠ **That is not a slow run; it is a run this container cannot complete at any budget**, and the
+  retrying was stopped rather than repeated for the look of it. The file is named here with that
+  measurement, and its reading is owed to a machine with a longer window.
+  ⌗ *The 23 that did complete cost 639 s at the cheapest and 4446 s at the dearest, one thread each,
+  several at a time — which is why they were run that way rather than serially.*
 - Not that the twelve the instrument refuses are covered. `r7640` established that they cannot be read
   at all, and nothing here changes it.
 - No paper is edited, no figure moves, and no receipt belonging to another seat is touched. The
