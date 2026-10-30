@@ -28515,3 +28515,116 @@ main "has that I lack" are my own deliberate deletions and not deletions of your
 ⛭ *And the hold worked: the run on `8b982e673` is the first fully green verdict on this PR — all three
 tolerance probes completed with no `PARTIAL`, the sweep clean, and the plain suite green on its scoped
 receipts. The earlier tolerance reds were my push cadence and nothing else, as the PR comment records.*
+
+---
+
+# `r7641+cc66.38` — the surviving-step row re-pointed, and ⛔ **its conclusion survives while its REASON inverts**
+
+`r7641` ⑷ ruled this receipt reads **uncarried**; order item ⑵ sent it to the arm of record. Both are
+done: `_AOR = {'lcdm': 'r6941_fine_lcdm', 'cr': 'r6941_fine_cr_leafrec1'}`, with the namesake arm kept
+under its own name (`_NSK_ARM`) so the published row is reproduced in the same code rather than trusted.
+
+*** The headline holds — amplitude on the sign, inseparable on the share, the first acoustic cycle
+WEAKENED and not displaced, the row not reframed. What does not hold is WHY the share will not
+separate, and the published reason is now the opposite of the true one. ***
+
+## ⓵ WHAT MOVED — NINE FIGURES, OLD → NEW
+
+| | namesake (published) | **arm of record** |
+|---|---|---|
+| amplitude-only term, four bases | $-0.227$ .. $-0.260$ | **$-0.154$ .. $-0.179$** |
+| the full statistic | $-0.204$ .. $-0.236$ | **$-0.181$ .. $-0.280$** |
+| amplitude's share of the statistic | $0.958$ | **$0.705$** |
+| band 1, amplitude limit | $0.958$ | **$0.814$** |
+| band 1, phase limit | $0.284$ | **$0.570$** |
+| band 1 lead | more than three | **$1.43$** |
+| relative phase | $0.0068$ rad $=0.39°$ | **$5.55°$** |
+| relative amplitude | $0.0554$ | **$0.0756$** |
+| phase term, three half-widths | $+3.54$, $+0.66$, $-0.46$ — **sign change** | **$-0.42$ .. $-0.18$, ONE sign** |
+
+⌗ *And **not one of the nine is printed in the paper**, so under `r7641`'s amended P15 rule nothing in
+the corpus is due to move from this re-point and the row's own INDEX cell carries all nine. Checked
+literal by literal rather than assumed: `0.227` and `0.236` occur in `CR_cosmology.tex` only as
+`P15_there_is_no_phase_residual`'s phase intercepts (l.1027, l.163), `0.958` only as a $\chi^2$ per
+degree of freedom (l.972) and a DESI background (l.1069), and `0.260`, `0.204`, `0.284`, `0.0554` and
+`0.0068` do not occur at all.*
+
+## ⓶ THE CARRY'S FOURTH CLASS, COMPUTED AND NOT CITED
+
+The receipt no longer cites `cc66.22` for its uncarried reading — it **measures** it:
+
+> uncarried   the phase determination is **+5.432 degrees at 33.7 sigma**
+> CARRIED     it is **−0.205 degrees at 7.8 sigma** — the carry's own parameter IS this quantity
+
+A factor of twenty-six **and a change of sign**, because the map's own parameter *is* the offset being
+measured, so it sets it to zero by construction. ⛭ *And the gate is written on the MAGNITUDE, not the
+significance, which is the honest measure: carried, the phase is still **resolved** at $7.8\sigma$ —
+what has gone is the quantity, not the detection.*
+
+⛔ **AND A CAVEAT I FOUND BY PERTURBING MY OWN NUMBER.** Swapping the pointer back to the namesake, the
+same computation gives $+0.316° \to -0.232°$ — a factor of $1.4$, *and still a sign change*. ⇒ *So the
+fourth-class verdict holds on **both** arms, but it holds for the SIGN alone on the namesake and for
+the SIZE **and** the sign here. The twenty-six-fold collapse is this arm's number and I have written it
+as this arm's; had I lifted it as the class's property it would have been wrong.*
+
+⌗ *The namesake row is reproduced exactly in the same code — amplitude $-0.243$, statistic $-0.220$,
+share $1.106$ — and the read-recorder gates that the banks opened are the three the header names, so
+what moved is the ARM and not the decomposition.*
+
+## ⛔⛔ ⓷ AND THE PRE-REGISTERED TRADE-OFF DOES NOT FIRE — WHICH IS A RESULT, NOT A REPAIR
+
+On the namesake arm the phase term's departure **changed sign** across the three window half-widths,
+and that instability *was* the stated reason the share was called inseparable. On the arm of record
+**both terms keep one sign at every half-width**: the hazard that was pre-registered, and that fired
+there, does not fire here.
+
+⇒ *** The share is inseparable on this arm because the phase channel is LARGE and SAME-SIGNED — $5.55°$
+resolved, its own step $-0.360$ **exceeding** the composite's $-0.236$, so the two partly cancel — and
+not because it is small and unstable. The conclusion is unchanged; its reason is inverted. ***
+
+## ⓸ FIVE GATES RESTATED, AND TEN PERTURBATIONS
+
+| gate | restated as |
+|---|---|
+| the share | registered as the sign **and** the size ("close to it in size", 25%). The size limb misses at $0.705$, so ⑷'s ruling lands: the SIGN is gated, the share **printed** |
+| band 1 | registered as "almost all" against "little", a factor of three. Now **which of the two leads** is gated and the margin printed |
+| the trade-off | now gates that it does **not** fire, so the finding cannot be buried |
+| the phase's size | gated at $5.55°$ against $0.0756$ **and** $\|-0.360\| > \|-0.236\|$ |
+| the collapse | gated on magnitude, sign and the uncarried value |
+
+⌗ *And the phase-only step went in as a real comparison, not a literal: `$-0.360$` and `$-0.236$` were
+asserted by the header and the INDEX row with nothing computing them, which is exactly what I called
+UNPINNED at `cc66.31`. `_PHS` and `_FULLM` now carry them, and `check_figures_pinned` holds at **1375
+against a baseline of 1375** — the ratchet did not move.*
+
+Ten perturbations, **every one red**: ⒜ the arm pointer swapped back to the namesake (three gates);
+⒝ the share pin at the old $0.958$; ⒞ the band-1 pins at the old $0.958$/$0.284$; ⒟ the phase size at
+the namesake's $0.39°$; ⒠ the relative amplitude at $0.0554$; ⒡ the collapse's uncarried degrees moved
+by a tenth; ⒢ the trade-off gate told to expect the namesake's sign change; ⒣ the read-recorder's bank
+list truncated; ⒤ the phase-only step pinned to the composite's value; ⒥ the magnitude ordering
+inverted. ⚠ *Run in place, not from `/tmp` — `cc66.26`'s lesson, where five "exit=1" results were a
+`FileNotFoundError` and no gate had fired at all.*
+
+## ⛔ ⓹ AND ⑷'s PAPER SENTENCE STILL CANNOT LAND
+
+It stays held on the clause I reported at `r7639+cc66.32` — *"the phase-only term a substantial
+minority of the rest"*. This re-point is the second measurement of it and it fails the same way, now
+with a number: **the phase channel's own step is half again the composite's**, $-0.360$ against
+$-0.236$. A term larger than the thing it is a part of is not a minority of anything.
+
+⇒ *The receipt is complete and the row is re-pointed; **the sentence waits on your wording**, and it is
+the only part of ⑷ still outstanding.*
+
+## ⛔ ⓺ AND THE PRE-PUSH BATCH CAUGHT MY OWN COMMIT SUBJECT CLAIMING YOUR REVISION
+
+One red out of the 63: `check_revision_collisions`, and it was mine. I wrote the subject as
+`r7641 cc66.38: …` — the **bare** head form, which `CLAIM` reads as a claim on `r7641` itself, where
+`9b1fcb18f` and `37f80aecf` already claim it. The suffixed `r7641+cc66.38`, which every one of my
+commits from `.26` to `.37` used, is a different identifier by the `r3100a` rule and claims nothing.
+⌗ *Verified rather than assumed to be mine: the same gate runs green in a detached worktree at
+`8764fdc35`, so the collision arrived with my commit and with nothing else.* Amended before the push.
+
+⚠ *Worth noting what the shape of this was: the gate fired on the PREVENTION side, while the number
+could still be changed, on this line's own tree — which is what its own text says it is for. Had I
+pushed on the hook's prompt without reading the batch, it would have fired as a detector on `main`'s
+side instead, where amending is not available.*
