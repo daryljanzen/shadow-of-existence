@@ -1,0 +1,30 @@
+  the control's own band-summed spread        0.06523 of r_s (receipt header 0.06523)
+  the namesake arm's                          0.06424 of r_s (receipt header 0.06424)
+  the arm of record's                         0.06447 of r_s
+
+  banked SRCTAPER=0.000110087776 takes the control to 0.06424
+  re-solving for the NAMESAKE arm's spread gives SRCTAPER=0.000110087776 -- the banked value to 0.0e+00 relative
+
+  ⛭ THE ARM OF RECORD NEEDS SRCTAPER=8.31868228e-05 (lands 0.06447 against 0.06447), which is -24.4 per cent of the banked coefficient
+     taper_s0 unchanged at 145.347.
+     SRCTAPERBIG=0.00232920919 stays as it is: it narrows the control by 18.7 per cent against the namesake arm's 1.52 and the arm of record's 1.16, so it is the far probe point of the response calibration, not an arm-matched swap.
+     ⛔ and that is the whole defect in one number: the banked swap imposes 1.31 times the narrowing the arm of record has, which is why the direct-swap route overshoots the lowest band below unity.
+
+  ⇒ THE ASK: re-run 3 of the six tapered controls -- swap, swapall, nswap -- with
+     SRCTAPER=8.31868228e-05, SRCTAPERBIG and SRCTAPER_S0 unchanged, every other knob unchanged.
+     The 3 large-coefficient banks are untouched, and no arm is re-run: the
+     taper acts on the control's source, and the arm enters only through the target spread.
+
+  the two weight-preserving runs, recomputed here rather than quoted:
+    nswap 1.02684  1.01827  1.01936  1.01179  1.01531  1.01424  1.01485
+    nbig  1.25509  1.27014  1.28315  1.20187  1.26449  1.24213  1.29074
+
+  the DIRECT-SWAP closure, as the banked (wrong-arm) coefficient gives it and as the
+  receipt's own response quadratic predicts it at the arm-of-record coefficient:
+    banked       91%     32%     33%     19%     21%     21%     20%
+    predicted    70%     24%     25%     15%     16%     16%     15%
+    ⛔ the lowest band goes from 91 per cent closed to 70, so it does not overshoot on either -- and the re-run moves it AWAY from the overshoot the receipt asserts, not towards it.
+    ⛔ and above q=1.9 the closure goes from 19-33 to 15-25 per cent, so the PASS the banked coefficient gives the two-routes gate is as unreadable as the three FAILS.
+
+  OK -- the lift reproduces five figures computed elsewhere, the solve recovers the
+  banked coefficient EXACTLY, and the new coefficient lands its target.

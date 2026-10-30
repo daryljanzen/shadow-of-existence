@@ -27668,3 +27668,101 @@ dips to `0.99×` in band 6 so *"in every band"* fails by one per cent. **My reco
 re-deriving rather than restating — the coefficient's q-dependence is a result, not a wording problem.**
 
 **Set A: 10 landed, 2 held for ruling, 3 bank-blocked, 1 (`windows_phase_spread`) next.**
+
+---
+
+# `r7639+cc66.26` — `windows_phase_spread` HELD, and the re-run it needs is a number
+
+**For 69.** ⓵ᵃ of Set A's eleventh receipt is **held, not landed.** The re-point itself works — the
+carry, the arm-of-record banks, the bit-identity gate on the band edges and the namesake-reproduction
+gate all run — and it is **banked as a patch**, `windows_phase_spread_repoint.patch.txt`, so the re-run
+below is one `git apply` away from a landed receipt. What is not landable is the row it measures.
+
+## ⓵ THE ROOT, AND A CORRECTION TO MY OWN FIRST READING OF IT
+
+Three gates go red on the arm of record. ⛔ **I reported the root as "all three bank-blocked on the swap
+coefficient." That was wrong, and reading `alpha_for` is what corrected it.** The three sort into two
+different things:
+
+**Bank-blocked (one gate).** `SRCTAPER` is read out of the banked run as `T['swap']['taper']`. It was
+solved, before any swap ran, to take the **control's** band-summed phase spread to the **namesake
+arm's** — `0.06424` of $r_s$. The arm of record's window is `0.06447`. No edit to the receipt can move
+an injected coefficient.
+
+**NOT bank-blocked (the other two).** PART 4's **inversion** route solves its *own* coefficient from the
+arm's own narrowing (`alpha_for`) and uses the banked pair only as the two **fit nodes** of its response
+quadratic — which does not care whether `SRCTAPER` is arm-matched. ⇒ *So the inversion's shares are the
+arm of record's answer and wait on nothing.* Only the **direct-swap** route, which reads the excess
+against the tapered control itself, is blocked.
+
+## ⓶ THE ASK TO 70, SOLVED RATHER THAN REQUESTED
+
+`swap_taper_for_arm_of_record.py` lifts `weight` and `spread` out of the receipt and re-runs the
+original solve. **It recovers the banked coefficient bit-exactly — `0.0e+00` relative** — which is what
+says the lift is the same operation, not a similar one. Then:
+
+> ⇒ **`SRCTAPER = 8.31868228e-05`** (−24.4 per cent), `SRCTAPERBIG` and `SRCTAPER_S0` **unchanged**.
+> Re-run **three** of the six tapered controls — `swap`, `swapall`, `nswap`. **No arm is re-run**: the
+> taper acts on the control's source and the arm enters only through the target spread.
+
+⌗ *And one thing I had wrong there too and checked rather than assumed: I first wrote that `SRCTAPERBIG`
+scales with the small one. It does not — it narrows the control by **18.7** per cent against the arm's
+**1.2**, so it was never arm-matched. It is the far probe point of a two-point calibration, and it does
+not move.*
+
+**The defect in one number: the banked swap imposes `1.31` times the narrowing the arm of record has.**
+
+## ⓷ WHAT THE PAPER'S FOUR FIGURES DO, AND WHICH TWO ARE FINAL NOW
+
+l.1187–1196. Measured on both arms with the same code:
+
+| the paper's claim | namesake | arm of record | status |
+|---|---|---|---|
+| response route, "a quarter and a half" | `25 40 36 23 37 44` | **`15 38 25 14 47 31`** | ⛭ **final** |
+| "carrying about a third" | 34 per cent | **28 per cent** | ⛭ **final** |
+| substitution, "a fifth and two fifths" | `33 38 20 22 23 21` | `24 25 15 16 16 15` *predicted* | ⛔ **re-run** |
+| "four fifths / one seventh", five-fold | — | `72`/`13`, 5.4-fold *banked* | ⛔ **re-run** |
+
+**Proposed wording for the two that are final** — *"a seventh and a half"* for the response route, and
+*"rather more than a quarter"* for the share. ⌗ *But note what else moved: the band-to-band spread of
+that share goes from `1.7×` on the namesake to `3.4×` on the arm of record — adjacent bands at `14` and
+`47` per cent. The channel's share is the less well determined on the arm of record, and that is a fact
+about the claim's sturdiness, not only about its size.*
+
+## ⛔⛔ ⓸ AND THE REASON THIS IS A HOLD AND NOT A LANDING: TWO OF ITS **PASSES** ARE UNREADABLE
+
+This is the part I would have missed by counting reds.
+
+* **The two-routes gate PASSES** at `0.18 < closed < 0.42` — on the banked, wrong-arm coefficient. The
+  receipt's own response quadratic predicts `0.15`–`0.25` after the re-run, **below its own floor in
+  three bands.**
+* **The asymmetry gate's size limb is `SH_H > 0.5`** and reads `0.72`, which falls with the
+  coefficient — so it passes **near its threshold on a number that is going to move.**
+
+⇒ *** A gate that is green because a bank is keyed to the wrong arm is no more readable than one that is
+red. *** Landing this receipt would put two such greens in the corpus, one of them close to its bar.
+**That is worse than holding it, so it is held.**
+
+⌗ *What survives all of it is the paragraph's load-bearing claim — the asymmetry is a **ratio** of two
+shares of one operation. But it is not coefficient-free either: the receipt's own two coefficients put
+it at `5.4`-fold at 1.5 per cent narrowing and `2.25`-fold at 18.7, so the trend runs the favourable way
+and the re-run settles it. I did not build a projection for it: the re-run measures it in one pass.*
+
+## ⓹ THE INSTRUMENT
+
+`swap_taper_for_arm_of_record.py` — exits 1 on five validations, each perturbed and each seen to fire:
+the lift against the receipt's printed `0.06523` and `0.06424`; the solve against the banked coefficient
+itself; the response rows against the receipt's printed PART 3 table; the banked closure column against
+the re-pointed receipt's own `CLOSED`; and the monotonicity the sign argument rests on.
+
+⌗ *My first perturbation harness said all five gates fired. It was lying — it ran the copy from `/tmp`,
+where `ROOT` resolves to `/`, so every exit-1 was a `FileNotFoundError` and not a gate. Re-run in place,
+four fired with the right message and the fifth exposed a **tolerance so loose it gated nothing**: the
+recovery holds to better than `1e-9`, against a bar I had written at two per cent. Tightened to `1e-6`.
+**An instrument that runs is not an instrument that measures, and that applies to the harness that
+tests it.***
+
+⌗ *Also checked rather than hoped: three receipts walk `computations/**/*.py` and could move their
+counts on a new file there — `G1`, `C71`, `C72`. All three green with it present.*
+
+**Set A: 10 landed, 2 held for ruling, 3 bank-blocked, 1 held on a re-run (`windows_phase_spread`).**
