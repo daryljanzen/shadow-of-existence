@@ -23,7 +23,7 @@ spreads, which are not detection floors.  The refit's floor cannot be derived be
 (`/tmp/n66/...`) are not in the repository.  ⛔ *A guessed number in any of those cells would be worse than
 the blank.*
 
-⚠ ** SHARES IN DIFFERENT UNITS ARE NOT COMPARABLE. **  `cc66.61`'s 0.59 is a share of the STEP under an
+⚠ ** SHARES IN DIFFERENT UNITS ARE NOT COMPARABLE. **  `cc66.61`'s 0.91 is a share of the STEP under an
 empirical scatter of a noiseless spectrum; the likelihood's 0.043 is a share of the band-1 DIFFERENCE under
 instrument noise.  The table sets them side by side and ranks neither against the other.
 
@@ -168,7 +168,7 @@ print("    likelihood smallest detectable share, per band (2 sigma of the band's
 # ---------------------------------------------------------------------------- the quoted floors, text-gated
 Q = {
     'contrast': 'floor is 0.6 per cent',
-    'phase': '0.59',
+    'phase': '0.91',
     'locator_d': '0.0059', 'locator_h': '0.0114',
     'extremal_1363': '1.363', 'extremal_02': '0.02\\sigma',
 }
@@ -176,7 +176,8 @@ check("every floor this table QUOTES is literally in the receipt that derived it
       all([Q['contrast'] in TXT['contrast'], Q['phase'] in TXT['phase'], Q['locator_d'] in TXT['locator'],
            Q['locator_h'] in TXT['locator'], Q['extremal_1363'] in TXT['extremal'],
            Q['extremal_02'] in TXT['extremal']]),
-      "0.6 per cent (cc66.40); 0.59 (cc66.61); 0.0059 / 0.0114 (cc66.46); 1.363 and 0.02 sigma (cc66.58)")
+      "0.6 per cent (cc66.40); 0.91 (cc66.61, on the arm of record); 0.0059 / 0.0114 (cc66.46); 1.363 "
+      "and 0.02 sigma (cc66.58)")
 REFIT = os.path.join(ROOT, 'computations', 'beyond_the_wall', 'refit_grid', 'fit.py')
 refit_src = open(REFIT, encoding='utf-8').read() if os.path.exists(REFIT) else ''
 # ⛔⛭ FIXED AT r7099+cc66.82.  ** THE SECOND CLAUSE WAS `not os.path.exists('/tmp/n66')` -- a claim
@@ -224,8 +225,9 @@ TABLE = [
      "normalised by a 1.0-wide running envelope); sign and phase inside a band (a std)"),
     ("2  the held-period amplitude (cc66.60)",
      f"1.50 (its +-0.75 fit window; boxcar passes {sinc(1.50):.2f} at 1.00), and {B:.2f} once banded",
-     "0.59 of the STEP (cc66.61's floor; this is the route that attains it), under an EMPIRICAL scatter of a "
-     "noiseless spectrum",
+     "0.91 of the STEP (cc66.61's floor on the arm of record; \u26d4 this is NO LONGER the route that attains "
+     "it -- the raw band std is, at 0.91 against this one's 0.96, where on the namesake arm this route "
+     "attained the floor at 0.59), under an EMPIRICAL scatter of a noiseless spectrum",
      "amplitude structure narrower than 1.5; any oscillation at a period other than 1.00 (the fit fixes it); "
      "anything a quadratic baseline absorbs"),
     ("3  the window-free peak-to-trough depth (cc66.57)",
@@ -241,8 +243,9 @@ TABLE = [
      "73 per cent of band 1; structure between extrema, which it interpolates over"),
     ("5  the differential estimator (cc66.59)",
      f"{B:.2f} (band std of the arm/control ratio; boxcar passes {sinc(0.70):.2f} at 1.00)",
-     "no better than 0.59 of the STEP: cc66.61 minimised the floor over this family's routes and the held "
-     "amplitude attained it",
+     "no better than 0.91 of the STEP on the arm of record: cc66.61 minimised the floor over this family's "
+     "routes, and the RAW band std attains it there (0.91 against the held amplitude's 0.96) where the held "
+     "amplitude attained it on the namesake arm (0.59)",
      "anything finer than 1.40; a raw band std samples 0.70 of a cycle, so amplitude and phase mix (cc66.60's "
      "correction to cc66.59)"),
     ("6  the bilinear decomposition SRCDEC (r6915+cc66.41)",

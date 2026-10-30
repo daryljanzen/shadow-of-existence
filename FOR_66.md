@@ -27375,3 +27375,59 @@ confound in a third place.
 the per-receipt key check before they can be called clear. INDEX row, both appendices and
 `CR_cosmology.pdf` (327 pages, 0 errors) landed with this. Still held on your word: the `l.1120` split
 (`.1`), `l.956` (`.2`), the `l.1106` margin wording, and `l.1635`–`1644` (`.17`).
+
+---
+
+# r7639+cc66.19 — THE `.17` PUSH REDDENED FIVE RECEIPTS, ALL FIVE MINE, AND ONLY TWO WERE ONE HOP AWAY
+
+CI named five on `d64573787`. **Every one runs GREEN on a pristine `origin/main` worktree and red on
+mine**, so none is a foreign red. Two roots, and both are the class I claimed at `.16` to have swept
+and closed.
+
+## ⓵ ROOT ONE — `S1` PINS A LINE OF MY SOURCE, AND QUOTES A FIGURE `.17` MOVED
+
+`S1`'s class-(ii) instance asserts what the paper's *"better than seven standard deviations"* rests on,
+by pinning three literals in `no_statistic`'s source. `.17` renamed `delta_on`'s parameters — the line
+`pa, pc = phase_of(g, OA, a, b), …` became `phase_of(q, va, a, b), …` — so the pin missed, and its prose
+figure `±0.000974` is now `±0.015101`. **The clause is untouched**: still a standard error over disjoint
+stretches of a phase difference between two computed spectra, with no noise in the source. Pin re-pointed
+and figure corrected, *edited rather than routed because my own change inverted it, and recorded as such.*
+
+⌗ *A pin on a function's PARAMETER NAMES breaks on any refactor that changes nothing about what the line
+does. I have left that judgement to the owning seat rather than loosening their gate for them.*
+
+## ⓶ ROOT TWO — THE RESOLUTION TABLE QUOTES `cc66.61`'s FLOOR, AND THE ATTAINING ROUTE CHANGED
+
+It asserts *"every floor this table QUOTES is literally in the receipt that derived it"* and quoted
+`0.59`. On the arm of record that floor is `0.91`. ⇒ **But this one is not only a figure:** the table
+says the held-period amplitude *"is the route that attains it"*, and on the arm of record **it is not** —
+the RAW band std attains the floor at `0.91` against the held route's `0.96`, where on the namesake arm
+the held route attained it at `0.59`. Both rows restated with the measured figures and both arms named.
+
+## ⓷ AND THE OTHER THREE WERE THREE HOPS OUT
+
+`S5` classifies every receipt by source shape and RUNS the exposed ones — `S1` among them — asserting all
+14 exit zero. `S54` and `S55` then assert `S5` runs green. ⇒ *** seed → `S1` → `S5` → `S54`/`S55`, and
+fixing the one root cleared all three. ***
+
+**`reader_closure.py`** (new, validated against these five before use): it finds the two text readers
+exactly, and then **declares the part it cannot predict** — `99` receipts execute a python path built
+from a variable, deciding their population at run time, and **every single one builds its target from a
+variable, so text analysis cannot narrow that class by even one receipt.** It exits 1 if any known red
+falls in neither class.
+
+⇒ *** THE REMEDY IS PROCEDURAL, NOT ANALYTICAL. *** The deep edge is only measured by running the suite.
+My failure at `.17` was not a missing instrument: **I swept the class once at `.16` and then landed
+another re-point without re-running the readers.** From here the readers and the scoped suite run before
+a re-point is pushed, not after.
+
+## ⌗ AND ONE LOCAL RED THAT IS NOT A RED
+
+`S55` stayed red after the cascade cleared, naming `S24`, whose `Ⓕ②` reads **the working tree** and
+requires every touched receipt to be in its own allowed set. My uncommitted edits to `S1` and the
+resolution table are not in it. **That is an artefact of running with a dirty tree, and `S24`'s own
+comment says so in terms** — *"on the branch it is the uncommitted evidence and is right"*. CI checks out
+a commit and never sees it. Verified green after committing rather than argued.
+
+**Set A still stands at 8 of 21 landed**, none withdrawn; no re-point is added here — this revision is
+the readers.
