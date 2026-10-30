@@ -1,4 +1,13 @@
 r"""
+RE-POINTED r7637 (node 70; 69 assigned it as naming no seat) ONTO THE ARM OF RECORD: the source's continuum
+bank and the c54.186 uniform/ladder pair are now `r6911_source_cr_kcont_leafrec1`, `c54.186_cr_KCONT_leafrec1` and
+`c54.186_cr_L3000_leafrec1` (LEAFREC=1 at r7633's refit; r7635's bank).  The finding stands and its figures move:
+SW alone D +0.56 -> +0.53, the whole monopole source +0.03 -> +0.00, the instrument's own saved source re-projected
++2.57 -> +2.55, the source comb in k +0.03 -> +0.00; and the uniform/ladder pair, which sat at the superseded
+pinned arm (D +13.76 / +13.84), now gives +4.52 / +4.52 -- identical, so the handover still contributes nothing.
+The `r7234_60` runs this receipt also reads (`cr_base`, `lcdm_base`, `cr_nodrive`) are that seat's own and are
+not re-run here.  The figures in the text below are the LEAFREC=0 arm's, as first written.
+
 RECEIPT -- P15: ** `r7221` ORDERED THE DERIVATION: `IS THE DRIFT A QUANTITY THE CONSTRUCTION
 DETERMINES, OR AN ARTEFACT OF THE TRANSFER?`  *** IT IS DETERMINED, AND IT IS MADE ENTIRELY IN THE
 PROJECTION: THE ACOUSTIC PHASE CARRIES NO DRIFT AT ALL AND THE HANDOVER CONTRIBUTES NOTHING. *** **
@@ -95,7 +104,7 @@ def head(t):
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 BW = os.path.join(ROOT, 'computations', 'beyond_the_wall')
 MINE = os.path.join(BW, 'r7234_60_is_the_peak_spacing_drift_a_quantity_the_construction_determines')
-SRC_KCONT = os.path.join(BW, 'spectra', 'r6911_source_cr_kcont.npz')
+SRC_KCONT = os.path.join(BW, 'spectra', 'r6911_source_cr_kcont_leafrec1.npz')
 GO = os.path.join(BW, 'r7093_directions', 'grid_oneclock')
 LEV = os.path.join(BW, 'r7201_cc66_loading_lever')
 SPEC = os.path.join(BW, 'spectra')
@@ -353,8 +362,8 @@ gate("Ⓓ④ and live the state is read as a DISJUNCTION over the states a rewor
 # ═════════════════════════════════════════════════════════════════════════════════════════════════
 head("Ⓔ  IT IS NOT A GRID ARTEFACT -- THE BRANCH THE ORDER ASKED TO BE RULED OUT")
 # ═════════════════════════════════════════════════════════════════════════════════════════════════
-_kc, _lac = bank_peaks(os.path.join(SPEC, 'c54.186_cr_KCONT.npz'))
-_ld, _lad = bank_peaks(os.path.join(SPEC, 'c54.186_cr_L3000.npz'))
+_kc, _lac = bank_peaks(os.path.join(SPEC, 'c54.186_cr_KCONT_leafrec1.npz'))
+_ld, _lad = bank_peaks(os.path.join(SPEC, 'c54.186_cr_L3000_leafrec1.npz'))
 _Dk = comb_fit(_kc)[1]
 _Dl = comb_fit(_ld)[1]
 print(f"    one configuration run BOTH WAYS -- uniform k against CR's discrete ladder:")

@@ -24,7 +24,7 @@ spreads, which are not detection floors.  The refit's floor cannot be derived be
 the blank.*
 
 ⚠ ** SHARES IN DIFFERENT UNITS ARE NOT COMPARABLE. **  `cc66.61`'s 0.59 is a share of the STEP under an
-empirical scatter of a noiseless spectrum; the likelihood's 0.055 is a share of the band-1 DIFFERENCE under
+empirical scatter of a noiseless spectrum; the likelihood's 0.043 is a share of the band-1 DIFFERENCE under
 instrument noise.  The table sets them side by side and ranks neither against the other.
 
 ⛔ NOT CLAIMED: any statement about the physics, any channel or mechanism, any verdict on a result of `cc66`'s.
@@ -32,6 +32,11 @@ The table says what each instrument CAN see; it does not re-run or re-score what
 Nothing is solved; the only computation beyond geometry is the likelihood's per-band floor, on banks on disk.
 
 Written r7029 by node 70.  Stated for reversal.
+
+RE-POINTED r7637 (node 70) onto the arm of record (LEAFREC=1, r7633's refit; the `_leafrec1` banks of r7635):
+the likelihood's band-1 floor 0.055 -> 0.043 (band-1 sigma 36.37 -> 46.64), the per-band row
+0.055/0.047/0.040/0.045/0.057/0.081/0.141 -> 0.043/0.036/0.031/0.035/0.044/0.065/0.107.  The geometry columns
+(Nyquist 1.40 against 0.060, the boxcar's 0.37) are the instruments' own and do not move.
 """
 import os
 import re
@@ -89,7 +94,7 @@ if FAILS:
     raise SystemExit(f"GATES: {len(FAILS)} FAILED before the table could be built")
 
 # ---------------------------------------------------------------------------- the geometry, from disk
-QE = np.asarray(np.load(os.path.join(SP, 'r6959_eta_cr.npz'))['q_edges'], float)
+QE = np.asarray(np.load(os.path.join(SP, 'r6959_eta_cr_leafrec1.npz'))['q_edges'], float)
 BW = float(np.median(np.diff(QE)))
 check("the band edges are seven bands of 0.70", len(QE) == 8 and np.allclose(np.diff(QE), 0.70),
       f"edges {np.round(QE, 2).tolist()}")
@@ -130,7 +135,7 @@ check("and before the output is sampled, a band's own boxcar passes only about a
       sinc(0.70) < 0.40 and sinc(WQ) > 0.998, f"{sinc(0.70):.3f} vs {sinc(WQ):.4f}")
 
 # ---------------------------------------------------------------------------- the likelihood's own floors
-fl = np.load(os.path.join(SP, 'r6941_fine_cr.npz'))
+fl = np.load(os.path.join(SP, 'r6941_fine_cr_leafrec1.npz'))   # the arm of record (r7637 re-point)
 MA = CS.bin_spectrum(fl['ls'].astype(float), np.asarray(fl['Dl'], float))
 OK = np.isfinite(MC) & np.isfinite(MA)
 for _fn in ('r6959_nswap_lcdm.npz', 'r6975_mix_lcdm.npz', 'r6983_joint_lcdm.npz'):
@@ -153,8 +158,9 @@ def band_S(lo, hi, v):
 
 SB = [band_S(a, b, r) for a, b in zip(QE[:-1], QE[1:])]
 FLOORS = [2.0 / s for s, _ in SB]
-check("the likelihood's band-1 floor REPRODUCES `cc66.62`'s: 2 / (band-1 sigma of the arm-control difference)",
-      abs(SB[0][0] - 36.37) < 0.05 and abs(FLOORS[0] - 0.055) < 0.001,
+check("the likelihood's band-1 floor on the ARM OF RECORD: 2 / (band-1 sigma of the arm-control difference) "
+      "-- re-pinned r7637 from `cc66.62`'s 36.37 sigma / 0.055 on the LEAFREC=0 arm",
+      abs(SB[0][0] - 46.64) < 0.05 and abs(FLOORS[0] - 0.0429) < 0.001,
       f"band-1 {SB[0][0]:.2f} sigma over {SB[0][1]} bins -> {FLOORS[0]:.4f}")
 print("    likelihood smallest detectable share, per band (2 sigma of the band's arm-control difference): "
       + '  '.join(f'{x:.3f}' for x in FLOORS))

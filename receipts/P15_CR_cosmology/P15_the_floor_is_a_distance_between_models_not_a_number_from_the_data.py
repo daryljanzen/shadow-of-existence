@@ -1,5 +1,14 @@
 #!/usr/bin/env python3
 """
+⌛ HISTORICAL (r7637+70, 69's ruling): THIS RECEIPT READS A SUPERSEDED INSTRUMENT STATE, DELIBERATELY.
+Its CR spectra are the c54-era runs: the arm at the instrument's old built-in point (H0 73, Omega_m 0.3066) with
+the onset solved to ell_A 301.6, at KFAC=1 and LEAFREC=0.  The corpus has superseded that state twice -- the pin,
+then the leaf rate -- and the arm of record is LEAFREC=1 at H0 68.5707, Omega_m 0.291246 (r7633).  The same forms
+on the arm of record are banked as `<stem>_leafrec1.npz` (r7635), and their figures are in
+`computations/beyond_the_wall/r7635_70_leafrec1_bank/DRYRUN.md`; they are NOT what this receipt pins.  What it
+pins is a record of that instrument, and a sentence of P15 may cite it only for that.  The guard below fails
+if a CR file it reads is not the LEAFREC=0 namesake.
+
 RECEIPT -- P15: ** THE CONTROL'S REMAINING 17% IS NAMED, AND NAMING IT REQUIRED CHANGING THE
 MEASUREMENT.  MEASURED THROUGH THE DATA THE FLOOR IS F2 = 21-31 DEPENDING ON WHICH LambdaCDM IS
 CALLED TRUE; MEASURED AS A DISTANCE BETWEEN THE TWO MODELS -- WHICH IS WHAT IT ACTUALLY IS -- IT IS
@@ -56,6 +65,16 @@ between two LambdaCDM implementations at all. **
 rc=0 on success.  Run: python3 P15_the_floor_is_a_distance_between_models_not_a_number_from_the_data.py
                         (numpy scipy camb; ~3 min, three CAMB runs)
 """
+
+# ⌛ HISTORICAL guard (r7637+70): each CR file read here is its LEAFREC=0 namesake -- no `manifest` key, which every
+#   arm-of-record `_leafrec1` file carries -- and its arm-of-record counterpart exists beside it.
+import os as _os_h
+import numpy as _np_h
+_SP_H = _os_h.path.join(_os_h.path.dirname(_os_h.path.abspath(__file__)), '..', '..', 'computations', 'beyond_the_wall', 'spectra')
+for _n_h in ['c54.186_cr_L3000']:
+    assert 'manifest' not in _np_h.load(_os_h.path.join(_SP_H, _n_h + '.npz')).files, f'{_n_h} is not the LEAFREC=0 namesake'
+    assert _os_h.path.exists(_os_h.path.join(_SP_H, _n_h + '_leafrec1.npz')), f'{_n_h}: no arm-of-record counterpart'
+
 import os
 import sys
 

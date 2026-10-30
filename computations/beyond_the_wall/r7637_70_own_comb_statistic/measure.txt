@@ -1,0 +1,26 @@
+
+  old arm (LEAFREC=0, r6941)
+    combs: control T 1.0090 phi +1.441   arm T 1.0092 phi +1.456
+    shared comb  +0.0215  +0.0574  +0.0519  +0.0606  +0.0748  +0.0659  +0.0762   step -0.0430  rise +0.0061
+    own comb     +0.0283  +0.0544  +0.0563  +0.0606  +0.0734  +0.0699  +0.0740   step -0.0365  rise +0.0062
+
+  arm of record (LEAFREC=1, r7633)
+    combs: control T 1.0090 phi +1.441   arm T 1.0045 phi +1.450
+    shared comb  +0.0186  +0.0818  +0.0373  +0.0868  +0.1005  +0.0141  +0.1617   step -0.0617  rise +0.0140
+    own comb     +0.0295  +0.0595  +0.0610  +0.0639  +0.0777  +0.0728  +0.0795   step -0.0396  rise +0.0061
+
+  Ga -- REPRODUCTION ON THE OLD ARM, where the periods nearly coincide
+    [ok]  the shared statistic here IS the step receipt's printed row   +0.0215  +0.0574  +0.0519  +0.0606  +0.0748  +0.0659  +0.0762
+    [MISSED as registered]  Ga: the own-comb row reproduces the shared row to 0.004 per band and 0.004 on the step   max band 0.0068, step +0.0066
+    window only  +0.0215  +0.0574  +0.0519  +0.0606  +0.0748  +0.0659  +0.0762   step -0.0430
+    shift only   +0.0283  +0.0544  +0.0563  +0.0606  +0.0734  +0.0699  +0.0740   step -0.0365
+    [ok]  the miss is the ALIGNMENT and not the window: scaling the arm's envelope window alone reproduces the shared row to 1e-4, and the 0.015-rad phase shift alone reproduces the own-comb row exactly   shift 0.0024 in x, +0.0147 rad
+    [ok]  ...and it is the shared statistic's own phase systematic, already measured: the step moves by less than r7055's false step at the real phase (-0.0099), in the direction that undoes it   +0.0066
+
+  Gb -- THE COMB-PHASE NULL ON THE ARM OF RECORD (amplitude 0.5, 24 phases, combs refitted)
+    shared: reported step -0.0617 rise +0.0140; null worst step 0.0304 (0.49 of it), worst rise 0.0111 (0.79 of it)
+    own   : reported step -0.0396 rise +0.0061; null worst step 0.0090 (0.23 of it), worst rise 0.0015 (0.24 of it)
+    [ok]  Gb: the own-comb null's worst false step is under a third of the reported step   0.0090 against 0.0396
+    [ok]  Gb: ... and its worst false rise under a third of the reported rise   0.0015 against 0.0061
+
+GATES: ALL PASS
