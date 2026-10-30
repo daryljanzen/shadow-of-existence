@@ -27562,3 +27562,45 @@ Instrument and output: `computations/beyond_the_wall/r7639_cc66_P15_repoint_pape
 `surviving_step_three_readings.py`, validated against the receipt's own printed namesake row.
 
 **Set A: 9 of 21 landed, 1 held for ruling, 3 bank-blocked.**
+
+---
+
+# r7639+cc66.23 — THE ONE ROW THREE RECEIPTS REPRODUCE, MEASURED ON EVERY READING AND VALIDATED TWICE
+
+Three of Set A's remaining receipts — `the_term_mix_has_the_shape`, `the_two_channels_compose`,
+`the_windows_phase_spread` — each recompute `band_std(cr)/band_std(lcdm)` from `r6941_fine_*` and assert
+it matches **`cc66.46`'s published seven band ratios** to `5e-4`. That assertion is how they show they
+**recompute** the excess rather than quote it, and on the arm of record all three go red on that literal.
+
+| reading | band 1 | 2 | 3 | 4 | 5 | 6 | 7 |
+|---|---|---|---|---|---|---|---|
+| namesake, uncarried — `cc66.46`'s published | `1.0215` | `1.0574` | `1.0519` | `1.0606` | `1.0748` | `1.0659` | `1.0762` |
+| **arm of record, UNCARRIED** | `1.0186` | `1.0818` | `1.0373` | `1.0868` | `1.1005` | **`1.0141`** | **`1.1617`** |
+| **arm of record, CARRIED — the target** | `1.0295` | `1.0595` | `1.0610` | `1.0639` | `1.0777` | `1.0728` | `1.0795` |
+| namesake, carried | `1.0283` | `1.0544` | `1.0563` | `1.0606` | `1.0734` | `1.0699` | `1.0740` |
+
+⇒ *** THE UNCARRIED ARM-OF-RECORD ROW IS THE ALTERNATION IN PLAIN SIGHT: band 6's excess collapses by
+`86` per cent relative to band 5's, between two bands of `1.1005` and `1.1617`. *** That is what
+`r7639`'s ruling names, now visible in the very row these three receipts reproduce.
+
+**AND THE CARRIED ROW IS NOT THIS SEAT'S NUMBER ALONE.** It reproduces `r7637+70`'s own-comb row to
+`3.8e-05` — a different seat, a different code path. The instrument is validated **twice before use**
+and exits 1 if either reproduction fails:
+
+- ⓵ the NAMESAKE row reproduces `cc66.46`'s published literals to `3.9e-05`, against the `5e-4` the
+  receipts themselves assert ⇒ *this file demonstrably computes their statistic and not a lookalike*;
+- ⓶ the CARRIED row reproduces 70's row to `3.8e-05`.
+
+## ⌗ AND `cc66.46` ITSELF CANNOT BE RE-POINTED, WHICH IS WHY THE TARGET IS MEASURED HERE
+
+It reads `r6941_fine_cr_visleaf` and `r6929_scan_cr` — both on the `.2` ⓷ filename gap list — and
+`r6929_geometry`, whose arm is a KEY with no arm-of-record entry (`.18`'s class). **So its published row
+stays the namesake arm's**, and the three receipts must assert against a row measured here rather than
+against a figure quoted from a receipt that cannot move.
+
+⌗ *I had these three down as transitively BLOCKED for about ten minutes, on the reasoning that they
+depend on a bank-blocked receipt's figure. The measurement says otherwise: the row is a COMPARISON
+TARGET recomputed from banks that do have an arm of record, so what is blocked is `cc66.46`'s own
+reading, not theirs.* **Three receipts unblocked by one measurement, and the next unit is to land them.**
+
+`computations/beyond_the_wall/r7639_cc66_P15_repoint_paper/band_ratio_reference.py` + `.txt`.
