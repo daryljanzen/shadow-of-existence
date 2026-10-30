@@ -155,7 +155,11 @@ CTL = machinery(67.40, 0.3150, 0.0224, 1089.9, leaf_clock=True, radiation_in_rat
 ARM = machinery(68.60, 0.2973, 0.0224, 1089.9, leaf_clock=True, radiation_in_rate=False)
 OLD = machinery(73.00, 0.3066, 0.0224, 1089.9, leaf_clock=True, radiation_in_rate=False)
 
-d = np.load(os.path.join(SPEC, 'cc66_cr_x_h686_L2000.npz'))
+# r7637+cc66: the arm of record is the `_leafrec1` bank (r7635+70).  ⌗ *The ANALYTIC core below is
+# at the ADJUDICATED background (68.60, 0.2973), which is a different object from the arm of record
+# and is deliberately left where it is -- only the banked spectrum this part reads D_M and l_A from
+# moves.  Changing the adjudicated point would change what this receipt is about.*
+d = np.load(os.path.join(SPEC, 'cc66_cr_x_h686_L2000_leafrec1.npz'))
 LS = np.asarray(d['ls'], float)
 DL = np.asarray(d['Dl'], float)
 D_M = float(d['D_M'])

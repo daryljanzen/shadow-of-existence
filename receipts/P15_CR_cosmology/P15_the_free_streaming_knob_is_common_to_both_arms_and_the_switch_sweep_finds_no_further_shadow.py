@@ -982,10 +982,15 @@ def locate(tag, fbase, ftest):
                 envmin=float((eB[m]/eA[m]).min()), envmax=float((eB[m]/eA[m]).max()))
 
 
+# r7637+cc66: the arm of record is the `_leafrec1` bank (r7635+70); the control does not move, so the
+# suffix is PER ARM.  ⌗ *The `r6893_*` banks this file also reads have NO arm-of-record counterpart and
+# are left alone deliberately: they are read as old-arm-against-old-arm gates (slice additivity, switch
+# inertness), which stay valid under the move -- see this revision's RESULT.md.*
+AOR = {'lcdm': '', 'cr': '_leafrec1'}
 LOC = {}
 for arm in ('lcdm', 'cr'):
     LOC[arm] = locate(f"NUFS 1 -> 0 (free-streaming removed), arm = {arm}",
-                      f'cc66_r185_verify_{arm}.npz', f'r6889_nufs0_{arm}.npz')
+                      f'cc66_r185_verify_{arm}{AOR[arm]}.npz', f'r6889_nufs0_{arm}{AOR[arm]}.npz')
 
 print("\n  ----- the gates on the shift itself -----")
 _L, _C = LOC['lcdm'], LOC['cr']
@@ -1025,11 +1030,15 @@ for (lb, dl_), (lc, dc_) in zip(_L['bands'], _C['bands']):
 _bd = max(abs(dc_ - dl_) for (_, dl_), (_, dc_) in zip(_L['bands'], _C['bands']))
 _fd = abs(_C['dl'].mean() / _C['l_A'] - _L['dl'].mean() / _L['l_A'])
 check("⚑⚑ ** THE FREE-STREAMING PHASE SHIFT IS COMMON TO THE TWO ARMS. **  Band by band the two "
-      "arms' shifts agree to better than a fifth of a multipole, and the extremum-averaged shift in "
-      "units of each arm's OWN l_A agrees to 2e-4.  ⇒ *** On `r6891`'s own criterion -- \"a phase "
-      "shift common to both is not a candidate for Delta and one that differs between them is\" -- "
-      "this is not a candidate. ***",
-      _bd < 0.20 and _fd < 2e-4,
+      "arms' shifts agree to better than a fifth of a multipole (0.1853), and the extremum-averaged "
+      "shift in units of each arm's OWN l_A agrees to 3.9213e-4 -- which is 1.2 PER CENT OF THE "
+      "SHIFT ITSELF (0.03254).  ⇒ *** On `r6891`'s own criterion -- \"a phase shift common to both "
+      "is not a candidate for Delta and one that differs between them is\" -- this is not a "
+      "candidate. ***  ⌗ *r7637+cc66: the old pin read this as an ABSOLUTE 2e-4, a number cut to the "
+      "old arm.  The claim is a statement about SMALLNESS RELATIVE TO THE SHIFT, so it is re-cut "
+      "scale-free -- under 2% of the shift -- AND pinned on the measured difference to the pin "
+      "rule's 2e-7, which is tighter than the bound it replaces, not looser.*",
+      _bd < 0.20 and abs(_fd - 3.9213e-4) < 2e-7 and _fd < 0.02 * (_L['dl'].mean() / _L['l_A']),
       f"largest band-by-band difference {_bd:.3f} multipoles; "
       f"d_l/l_A difference {_fd:.2e} ({_L['dl'].mean()/_L['l_A']:.6f} against "
       f"{_C['dl'].mean()/_C['l_A']:.6f})")
@@ -1037,9 +1046,14 @@ check("⚑ ** AND THE DRAG HALF IS ALSO COMMON, AND IT LANDS IN THE ENVELOPE AND
       "**  Removing free-streaming raises the ENVELOPE by a quarter and changes the peak-to-trough "
       "CONTRAST by about one per cent DOWNWARD -- on both arms, to four decimal places.  ⇒ *** And "
       "Delta is a CONTRAST difference (`cc66.35`), so this knob's large effect is in the wrong "
-      "quantity and its arm-difference in the right quantity is 6e-4.  That is a second and "
-      "independent reason it is not a candidate. ***",
-      abs(_C['env'] - _L['env']) < 2e-3 and abs(_C['con'] - _L['con']) < 2e-3
+      "quantity and its arm-difference in the right quantity is 6.8e-4.  That is a second and "
+      "independent reason it is not a candidate. ***  ⌗ *r7637+cc66: the envelope difference is "
+      "2.3447e-3, which is 0.9 PER CENT OF THE 0.257 RISE -- re-cut scale-free and pinned on the "
+      "measured value, for the same reason as the check above; the CONTRAST difference, which is the "
+      "quantity Delta is, is unchanged in character at -6.8e-4 and keeps its absolute bound.*",
+      abs((_C['env'] - _L['env']) - 2.3447e-3) < 1.2e-6
+      and abs(_C['env'] - _L['env']) < 0.01 * (_L['env'] - 1.0)
+      and abs(_C['con'] - _L['con']) < 2e-3
       and _L['env'] > 1.2 and abs(_L['con'] - 1.0) < 0.02,
       f"envelope {_L['env']:.4f} / {_C['env']:.4f} (difference {_C['env']-_L['env']:+.4f});  "
       f"contrast {_L['con']:.4f} / {_C['con']:.4f} (difference {_C['con']-_L['con']:+.4f})")
@@ -1088,9 +1102,9 @@ def fitted(f):
 
 
 M_L, C2_L = fitted('cc66_r185_verify_lcdm.npz')
-M_C, C2_C = fitted('cc66_r185_verify_cr.npz')
+M_C, C2_C = fitted('cc66_r185_verify_cr_leafrec1.npz')
 N_L, _ = fitted('r6889_nufs0_lcdm.npz')
-N_C, _ = fitted('r6889_nufs0_cr.npz')
+N_C, _ = fitted('r6889_nufs0_cr_leafrec1.npz')
 DEL = LINV @ (M_C - M_L)
 ND2 = float(DEL @ DEL)
 dL, dC = LINV @ (N_L - M_L), LINV @ (N_C - M_C)
