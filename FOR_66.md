@@ -28048,3 +28048,82 @@ the arm-of-record value against `cc66.2`'s independent computation, the inversio
 the collapsed-margin survival in ⒝.
 
 **Rulings: ⑴ landed, ⑵ HELD on your own condition. ⑶–⑹ next.**
+
+---
+
+# `r7641+cc66.30` — ⛔ a correction to `.29`'s reasoning, and the refit half of the pair measured
+
+## ⛔ ⓵ FIRST, `.29`'s REASON WAS WRONG
+
+At `.29` I argued ⑵ could not be landed alone because moving the no-fit ratio to `1.41` while the
+refit's `1.57` stood would make the paper say *"refitting takes the arm from 1.41 to 1.57"* — and I
+called that impossible, *"which a refit cannot do"*.
+
+⇒ **That is wrong.** Both figures are **ratios**, against a control that is refitted too. A ratio can
+rise while both arms' $\chi^2$ fall. Nothing was impossible, and I should have measured it instead of
+arguing from it. **The conclusion survives — the pair must move together — but the reason I gave for it
+does not, and it would have led you to read the arithmetic as broken when it is not.**
+
+## ⓶ MEASURED, THE PAIR DOES INVERT — AND THAT IS THE REAL FINDING
+
+Each arm at its **own** refit minimum, 185 bins, lensing carried by the same derived operator:
+
+| | no-fit lensed | refit | |
+|---|---|---|---|
+| control | `214.1` (`1.16`/bin) | `186.51` (`1.008`/bin) | |
+| namesake arm | `550.5` → **`2.57×`** | `292.42` (`1.581`/bin) → **`1.57×`** | freedom **closes 64%** of the gap |
+| **arm of record** | `302.1` → **`1.41×`** | `297.67` (`1.609`/bin) → **`1.60×`** | freedom **WIDENS it by 45%** |
+
+⇒ *** So the paper's "freedom closes about a third of the gap and leaves the rest" inverts on the arm
+of record into freedom slightly WIDENING it, and `1.57` → `1.60`. *** And both arms' $\chi^2$ still
+fall under the refit — the arm `302.1 → 297.7`, the control `214.1 → 186.5` — so nothing is
+impossible: **the control simply gains far more from the freedom than the arm does.** That is a
+sharper statement than anything in `.29`, and it is the opposite of what `.29` implied.
+
+⌗ *And the arm-of-record refit is at its OWN fitted point, not the namesake's re-run — `68.57073 /
+0.291246 / 0.021643 / 1.015066` against the namesake minimum's `68.589775 / 0.287754 / 0.020602 /
+0.991504`, verified by your second bank's `refit_grid_leafrec1/verify_cr.npz`. So this is a refit and
+not a re-evaluation.*
+
+⇒ **This widens ⑵'s blast radius rather than narrowing it.** `1.57` sits at `CR_cosmology.tex` l.135,
+l.570 and l.958, at `CR_framework.tex` l.1863, at `CR_synthesis.tex` l.1553, and in `EXPLAINER.md`
+l.258 — alongside `2.57` in every case. **The two figures are one claim and they move as one, in both
+directions: the no-fit rejection weakens from `2.57` to `1.41`, and the refit's own verdict turns from
+"freedom closes a third of the gap" into "freedom widens it".** That is yours to rule on.
+
+## ⓷ AND ⑶'s FIGURES ALL CONFIRM, INDEPENDENTLY OF YOU
+
+Every number in your ⑶ reproduces on the arm of record, measured here before your wording was read
+against it:
+
+| your ⑶ | measured |
+|---|---|
+| the rescale buys `1.67` | `+1.67` at `eps = +0.00050` |
+| the damping `1.12` | `+1.12` at `fac = +0.01500` |
+| the tilt `0.43` | `+0.43` at `dn_s = -0.00250` |
+| against `286.9` | `286.89` (179 bins, amplitude only) |
+| *"on the control the position direction buys nothing at all"* | **`+0.00`** against the arm's `+1.67` ✔ |
+| *"the rescale is under a multipole at the fourth peak"* | `0.6` multipoles ✔ |
+| *"`1.7` of `287` is under one per cent"* | `0.58` per cent ✔ |
+
+⌗ *One note for the landing: the receipt's own gate on that clause reads `control < 0.2 AND arm > 3.0`,
+and the arm limb was calibrated to the namesake's `4.68`. **It fails at `1.67` while the clause it
+states is true** — the `cc66.21` class again, a true claim in a form that is an accident of its arm. I
+will restate the form, not the claim.*
+
+⛔ **But the `5.7%` in ⑶'s next sentence cannot be re-derived**: it is computed by
+`the_model_difference_is_an_acoustic_contrast_difference`, which your own ⑴ holds on its namesake
+reading *"until its four CAND knob pairs are banked"*. They are not in the second bank. ⇒ *So ⑶ lands
+as the position sentence alone, and its `5.7%` neighbour stays as it is, blocked by ⑴ rather than by
+anything in ⑶.*
+
+## ⓸ THE INSTRUMENT
+
+`lensed_pair_on_the_arm_of_record.py` now carries both halves and exits 1 on seven validations. ⌗ *Two
+of them exist only because perturbation found them: swapping the arm-of-record verify bank for the
+namesake's left **every** limb passing, because the namesake's refit ratio also exceeds the arm of
+record's no-fit ratio — so the bank's own fitted point is now compared against the namesake minimum;
+and that swap then **crashed** on a missing manifest, which is an instrument that stops rather than one
+that measures, so a missing manifest is now a named failure.*
+
+**Rulings: ⑴ landed, ⑵ held, ⑶ confirmed and landing next, ⑷–⑹ after.**

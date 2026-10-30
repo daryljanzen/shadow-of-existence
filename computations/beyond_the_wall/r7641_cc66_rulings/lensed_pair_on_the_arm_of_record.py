@@ -29,6 +29,7 @@ value an already-landed receipt (`r7639+cc66.2`) computes independently.
 Exits 1 if the namesake row is not reproduced, if the independently-landed cross-check is missed, or
 if the inversion is not present on the arm of record.
 """
+import json
 import os
 import sys
 
@@ -127,6 +128,82 @@ def main():
         fails.append("the inversion in the PAPER's pairing is not present -- re-read the ruling")
     if not (R_L_AOR > R_U_AOR and (R_L_AOR / R_U_AOR - 1) < 0.25 * (R_L_NSK / R_U_NSK - 1)):
         fails.append("the same-bins claim does not hold with a collapsed margin -- re-read ⒝")
+
+    # ---- ⓸ AND THE REFIT HALF OF THE PAIR, WHICH CORRECTS A REASON I PUBLISHED AT `.29` -------
+    # ⛔ At `.29` I argued ⑵ could not be landed alone because moving the no-fit ratio to 1.41 while
+    #   the refit's 1.57 stood would say "refitting makes the arm worse, which a refit cannot do".
+    #   ** That reason is WRONG. **  Both figures are RATIOS against a control that is refitted too,
+    #   so the ratio can RISE while both arms' chi^2 FALL.  The conclusion -- that the pair must move
+    #   together -- survives; the reason does not.  ⇒ Measured here instead of argued.
+    #   `cc66_r185_verify_*` are the spectra at each arm's OWN refit minimum: the arm of record's is a
+    #   different point from the namesake's (68.57073/0.291246/0.021643/1.015066 against
+    #   68.5898/0.287754/0.0206020/0.991504), verified by `refit_grid_leafrec1/verify_cr.npz`.
+    V_CTL, V_NSK, V_AOR = 'cc66_r185_verify_lcdm', 'cc66_r185_verify_cr', 'cc66_r185_verify_cr_leafrec1'
+    RCPT_REFIT = {'ctl': 186.51, 'nsk': 292.42}      # the refit's own reported chi^2, 185 bins
+
+    def refit_chi2(tag):
+        # ⛔ the verify banks are UNLENSED model spectra and the refit's chi^2 is scored with the
+        #   derived lensing operator applied -- `mb_of` in the position receipt does this.  Omitting
+        #   it put the control at 592.81 against its own 186.51, and the instrument's own gate caught
+        #   it as "a refit raised a chi^2, which cannot happen".
+        ls, Dl = load(tag)
+        mb = CS.bin_spectrum(ls, Dl * np.interp(ls, lg, rat))
+        k = np.isfinite(mb) & (CS.BIN_LO >= 100) & (CS.BIN_HI <= 1996)
+        k &= np.isfinite(CS.bin_spectrum(*(lambda t: (t[0], t[1] * np.interp(t[0], lg, rat)))(
+            load(V_CTL))))
+        m, d = mb[k], CS.X_DATA[k]
+        Fi = np.linalg.inv(CS.COV_TT[np.ix_(k, k)])
+        A = float(m @ Fi @ d / (m @ Fi @ m))
+        r = A * m - d
+        return float(r @ Fi @ r), int(k.sum())
+
+    rc, nb = refit_chi2(V_CTL)
+    rn, _ = refit_chi2(V_NSK)
+    ra, _ = refit_chi2(V_AOR)
+    print(f"\n  ⓸ THE REFIT HALF, each arm at its OWN refit minimum, {nb} bins:")
+    print(f"       control        {rc:8.2f}  {rc / nb:.3f}/bin")
+    print(f"       namesake arm   {rn:8.2f}  {rn / nb:.3f}/bin   -> {rn / rc:.3f}x")
+    print(f"       arm of record  {ra:8.2f}  {ra / nb:.3f}/bin   -> {ra / rc:.3f}x")
+    for nm, got, want in (('control', rc, RCPT_REFIT['ctl']), ('namesake', rn, RCPT_REFIT['nsk'])):
+        if abs(got - want) > 0.05:
+            fails.append(f"the refit's own {nm} chi^2 is not reproduced: {got:.2f} against {want}")
+    print(f"\n  ⛔ SO THE PAPER'S PAIR INVERTS: no-fit {R_L_AOR:.2f}x then refit {ra / rc:.2f}x on the "
+          f"arm of record, against no-fit {R_L_NSK:.2f}x then refit {rn / rc:.2f}x on the namesake.")
+    print(f"     *Freedom CLOSED {100 * (1 - (rn / rc - 1) / (R_L_NSK - 1)):.0f} per cent of the gap "
+          f"on the namesake and WIDENS it by {100 * ((ra / rc - 1) / (R_L_AOR - 1) - 1):.0f} per cent "
+          f"on the arm of record -- and both arms' chi^2 still FALL under the refit "
+          f"({aL:.1f}->{ra:.1f} for the arm, {cL:.1f}->{rc:.1f} for the control), which is why the "
+          f"ratio may rise without anything being impossible.*")
+    if not (rn / rc < R_L_NSK and ra / rc > R_L_AOR):
+        fails.append("the refit pair does not invert as measured -- re-read ⓸")
+    # ⛔ AND THE ARM-OF-RECORD REFIT MUST BE AT ITS OWN FITTED POINT, which is the fact that made this
+    #   measurement trustworthy and was NOT gated until it was perturbed: swapping `V_AOR` to the
+    #   namesake bank left every limb above passing, because the namesake's refit ratio ALSO exceeds
+    #   the arm of record's no-fit ratio.  ⇒ The bank's own manifest point is compared with the
+    #   NAMESAKE's fitted minimum and required to differ, and the two spectra required to be distinct.
+    # ⌗ and a MISSING manifest is reported, not raised: perturbed, swapping `V_AOR` to the namesake
+    #   bank crashed with a KeyError, which is an instrument that stops rather than one that measures.
+    _z = np.load(os.path.join(SPEC, V_AOR + '.npz'), allow_pickle=True)
+    if 'manifest' not in _z.files:
+        fails.append(f"{V_AOR} carries no manifest, so its fitted point cannot be checked -- it is "
+                     f"not an arm-of-record bank")
+        _man, _pt = {}, {'CRH0': 0.0, 'CROM': 0.0, 'WBH2': 0.0, 'NS': 0.0}
+    else:
+        _man = json.loads(str(_z['manifest']))
+        _pt = _man['point']
+    _nsk_best = np.load(os.path.join(ROOT, 'computations', 'beyond_the_wall',
+                                     'refit_grid', 'best_cr.npy'))
+    _mine = np.array([_pt['CRH0'], _pt['CROM'], _pt['WBH2'], _pt['NS']], float)
+    print(f"\n  the arm of record's refit point {list(np.round(_mine, 6))} against the NAMESAKE's "
+          f"fitted minimum {list(np.round(_nsk_best, 6))}")
+    if not (_man.get('namesake') == V_NSK
+            and bool(np.all(np.abs(_mine / _nsk_best - 1.0) > 1e-5))
+            and load(V_AOR)[1].tobytes() != load(V_NSK)[1].tobytes()
+            and abs(ra / rc - 1.596) < 5e-3):
+        fails.append(f"the arm-of-record refit is not at its own fitted point, or its ratio "
+                     f"{ra / rc:.4f} is not 1.596 -- the bank may be the namesake's")
+    if not (ra < aL and rc < cL):
+        fails.append("a refit raised a chi^2, which cannot happen -- the banks are mismatched")
 
     print()
     if fails:

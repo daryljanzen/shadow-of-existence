@@ -14,6 +14,16 @@
 
   and lensing's own gain: the control falls by 3.25x, the arm of record by 3.11x, the namesake by 2.13x
 
+  ⓸ THE REFIT HALF, each arm at its OWN refit minimum, 185 bins:
+       control          186.51  1.008/bin
+       namesake arm     292.42  1.581/bin   -> 1.568x
+       arm of record    297.67  1.609/bin   -> 1.596x
+
+  ⛔ SO THE PAPER'S PAIR INVERTS: no-fit 1.41x then refit 1.60x on the arm of record, against no-fit 2.57x then refit 1.57x on the namesake.
+     *Freedom CLOSED 64 per cent of the gap on the namesake and WIDENS it by 45 per cent on the arm of record -- and both arms' chi^2 still FALL under the refit (302.1->297.7 for the arm, 214.1->186.5 for the control), which is why the ratio may rise without anything being impossible.*
+
+  the arm of record's refit point [np.float64(68.57073), np.float64(0.291246), np.float64(0.021643), np.float64(1.015066)] against the NAMESAKE's fitted minimum [np.float64(68.589775), np.float64(0.287754), np.float64(0.020602), np.float64(0.991504)]
+
   OK -- the namesake row is reproduced, the arm-of-record value matches a landed
   receipt's independent computation, and the inversion is present in the paper's pairing
   while the same-bins claim holds with a collapsed margin.
