@@ -26833,3 +26833,61 @@ note on the tolerance job, since it has now reported three cancellations: the fa
 arrives about **19 minutes after** the job's own verdict, because the PO-68 ledger read runs between
 them. So a quiet window right after a push is not evidence of anything — which is part of why that job
 needs a genuinely long stretch without a push to report a real sweep.*
+
+---
+
+## ⚑ `r7639+cc66.10` — **⛔⛔ THE BEAT WAS ABOUT TO WITHDRAW A CORRECT CLAIM, AND I CAN SHOW IT ON A SIGN: TEN OF THE TWELVE GO RED ON THE ARM OF RECORD READ ON THE CONTROL'S COMB, AND THE CARRY RESTORES THEM**
+
+Before touching any of the twelve I asked all of them one question with one instrument: **what do you say
+on the arm of record, read with your OWN statistic?** `aor_probe.py` is in the findings directory; it
+redirects every cr-arm load to its `_leafrec1` counterpart and **reports its own redirect count**, saying
+so loudly when nothing was redirected. *Seven instruments this campaign have run without measuring; this
+one states what it touched.*
+
+## ⓵ ALL TWELVE MOVE, NONE IS SILENT, AND TEN GO RED — **35 FAILING ASSERTIONS**
+
+`no_statistic` **4**, `excess_decelerates` **6**, `held_period_estimator` **2**, `lowest_band_is_closed`
+**4**, `surviving_step_is_amplitude` **4**, `term_mix_has_the_shape` **4**, `two_channels_compose` **3**,
+`two_projection_widths` **1**, `two_readings_are_different` **2**, `windows_phase_spread` **5**. Two move
+without failing: `band_one_departure` and `likelihood_sees_the_step`.
+
+⚠ **But the number to report is NOT "ten receipts fail on the arm of record." It is "ten receipts need
+the carry."** Every one of these reads its bands on the control's comb — the contaminated reading your
+ruling names. *Reporting the first would be the raw-grid error of `r7637` again, where a statistic read on
+the wrong grid would have withdrawn a correct claim about the phase.*
+
+## ⓶ AND HERE IS THAT PROVED ON A SIGN RATHER THAN ARGUED
+
+`the_excess_decelerates_…` registers that **the excess's curvature in `q` is NEGATIVE** — that is the
+receipt's name and its claim. A quadratic through the seven band excesses:
+
+| reading | curvature | sign |
+|---|---|---|
+| namesake, shared comb | `−0.003265` | **NEGATIVE** ✓ the registered claim |
+| arm of record, **shared** comb | `+0.003424` | **POSITIVE** ✗ the claim would be withdrawn |
+| arm of record, **carried** | `−0.003085` | **NEGATIVE** ✓ stands, within six per cent of its namesake value |
+
+⇒ ** READ ON THE CONTROL'S COMB THE ARM OF RECORD FLIPS THE SIGN OF A REGISTERED CLAIM; CARRIED ONTO THE
+ARM'S OWN COMB THE CLAIM STANDS. ** The alternation in the shared row — band 6 collapsing to `+0.0141`
+between two bands near `+0.10` — is what the quadratic reads as upward curvature. *It is the beat and
+nothing else.*
+
+**So the carry is not polish. It is what stands between this family and ten false withdrawals.** Your
+ruling, confirmed on a sign and not on a smoothness impression.
+
+## ⓷ WHAT THIS SETS, WITHOUT NEEDING A RULING
+
+- **Every one of the remaining ten is re-pointed WITH the carry**, never pointer-first — because
+  pointer-first is exactly the state that produces the false withdrawal above.
+- **The two that move without failing get perturbed before they are reported**, and a pin added if
+  nothing fires. *Moving without failing is one step from not moving at all, which is the
+  `r7639+cc66.9` problem.*
+- **I will not report a bare red count on this family to anyone**, including in a commit message,
+  without the carried reading beside it.
+
+## ⓸ WHERE THE SEAT IS
+
+**2 of Set A's 21 landed** (`the_step_is_the_excesss_own_`, `the_coupling_is_measured_and_negative_`), the
+remaining 12 clear ones measured as above, and 7 still need their citing sentence read first. Still held on
+your word: the l.1120 split (`.1`), l.956 (`.2`), and the one ruling at `.7` ⓹ which I have since acted on
+as option ① at `.8`.

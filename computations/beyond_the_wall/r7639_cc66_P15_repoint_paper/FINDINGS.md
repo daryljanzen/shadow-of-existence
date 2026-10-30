@@ -491,3 +491,61 @@ Both misses are properties of **sub-period windows**, which the whole step/exces
 registered bands are `0.70` wide where the comb period is `≈1.0`. ⇒ *Every Set A receipt that slides a
 window narrower than one period, or varies its width while varying something else, is suspect in the same
 way, and is checked at fixed width before its result is read.*
+
+---
+
+# ⛔⛔ THE BEAT WAS ABOUT TO WITHDRAW A CORRECT CLAIM, AND THE CARRY RESTORES IT — MEASURED ON A SIGN
+
+Before touching any of the twelve, I asked each of them the same question with one instrument: **what do
+you say on the arm of record, read with your OWN statistic?** `aor_probe.py` (scratchpad) runs a receipt
+with every cr-arm `np.load` redirected to its `_leafrec1` counterpart, and **reports its own redirect
+count**, saying so loudly when nothing was redirected — because a probe that runs is not a probe that
+measures, and this campaign has produced seven instruments that ran without measuring.
+
+## All twelve move, none is silent, and **ten of the twelve go RED**
+
+| receipt | PASS base→aor | FAIL | redirected |
+|---|---|---|---|
+| `no_statistic_this_construction_can_build_…` | 22→18 | **4** | `r6941_fine_cr`, `r6959_eta_cr` |
+| `the_band_one_departure_…` | 21→21 | 0 | both |
+| `the_excess_decelerates_…` | 22→16 | **6** | both |
+| `the_held_period_estimator_…` | 23→21 | **2** | both + 1 |
+| `the_likelihood_sees_the_step_…` | 19→19 | 0 | both |
+| `the_lowest_band_is_closed_…` | 19→15 | **4** | both |
+| `the_surviving_step_is_amplitude_…` | 23→19 | **4** | both |
+| `the_term_mix_has_the_shape_…` | 28→24 | **4** | both |
+| `the_two_channels_compose_…` | 26→23 | **3** | both |
+| `the_two_projection_widths_…` | 18→17 | **1** | both |
+| `the_two_readings_are_different_…` | 15→13 | **2** | both |
+| `the_windows_phase_spread_…` | 45→40 | **5** | both |
+
+**35 failing assertions across ten receipts.** ⚠ *And this is the reading 69's ruling says is
+contaminated* — each receipt's own statistic cuts its bands on the control's comb. **So the number to
+report is not "ten receipts fail on the arm of record." It is "ten receipts need the carry."** Reporting
+the first would be the raw-grid-statistic error of `r7637` all over again, where a statistic read on the
+wrong grid would have withdrawn a correct claim about the phase.
+
+## And here is that proved on a SIGN, not argued
+
+`the_excess_decelerates_…` registers that **the excess's curvature in `q` is NEGATIVE** — the excess
+decelerates. That is the receipt's name and its claim. Fit a quadratic to the seven band excesses:
+
+| reading | bands | curvature | sign |
+|---|---|---|---|
+| namesake, shared comb | `+0.0215 +0.0574 +0.0519 +0.0606 +0.0748 +0.0659 +0.0762` | `−0.003265` | **NEGATIVE** ✓ |
+| arm of record, **shared** comb | `+0.0186 +0.0818 +0.0373 +0.0868 +0.1005 +0.0141 +0.1617` | `+0.003424` | **POSITIVE** ✗ |
+| arm of record, **carried** | `+0.0295 +0.0595 +0.0610 +0.0639 +0.0777 +0.0728 +0.0795` | `−0.003085` | **NEGATIVE** ✓ |
+
+⇒ ** READ ON THE CONTROL'S COMB, THE ARM OF RECORD FLIPS THE SIGN OF A REGISTERED CLAIM. CARRIED ONTO
+THE ARM'S OWN COMB, THE CLAIM STANDS, within six per cent of its namesake value. ** *The alternation in
+the shared row — band 6 collapsing to `+0.0141` between two bands near `+0.10` — is what the quadratic
+reads as upward curvature. It is the beat, and nothing else.*
+
+**So the carry is not polish. It is what stands between this family and ten false withdrawals.** That is
+69's ruling, confirmed on a sign rather than on a smoothness impression, and it is the reason each of the
+remaining ten is re-pointed WITH the carry rather than pointer-first.
+
+⌗ *Two of the twelve — `the_band_one_departure_…` and `the_likelihood_sees_the_step_…` — move without
+failing. Those are the ones to watch for the `r7639+cc66.9` problem instead: moving without failing is
+one step from not moving at all, so each gets perturbed before it is reported, and a pin added if nothing
+fires.*
