@@ -4,8 +4,24 @@ ENVELOPES AND ONE READING THAT NEEDS NONE; IT SITS AT THE SECOND ACOUSTIC PEAK T
 IS SHARPER THAN THE WINDOW THAT FOUND IT; AND ALL FOUR CANDIDATES CAN BE SCORED ON IT AND NONE OF THEM
 PRODUCES IT. **
 
-** PATH PROVENANCE. **  *** Every model number below is the HIERARCHY path *** -- `r6941_fine_{lcdm,cr}`,
-`r6915_pairs_{lcdm,cr}`, `r6897_fields` and `r6959_eta_cr`'s band edges.  ⛔ *** Nothing is SOLVED and
+** ⛔⛔ r7639 ⑴ -- RE-POINTED TO THE ARM OF RECORD AND READ ON THE ARM'S OWN COMB, AND TWO REGISTERED
+GATES MISS. **  69's ruling is that the alternation was a BEAT: a 0.70-wide band holds less than one comb
+period, so when the two arms' periods differ their bands cover different parts of the cycle.  Every arm
+read here is `_leafrec1`, and the arm is carried onto the control's comb coordinate before any band is
+cut, through `own_comb_kinds` -- `r7637+70`'s `band_excess_own` generalised to this receipt's four
+envelope kinds, verified against 70's row and by the `T_a = T_c` reduction.  *What survives: the step on
+all four readings, band 1 at zero on the envelope-free one, the location, and the second-peak match --
+which gets THREE TIMES BETTER, $0.9$ per cent to $0.3$.*  ** What misses, both reported and NEITHER
+re-toleranced: ** ① the size is a factor of $1.8$ where $1.9$ to $2.2$ was registered, because the beat
+was inflating it; ② ** the edge test is a CONFOUND and is withdrawn ON BOTH ARMS ** -- it narrowed its own
+window from $0.70$ to $0.40$ while raising the lower edge, and it is the narrowing that made the excess
+read higher.  *Its conclusion stands on the envelope-free reading, which uses no envelope and so cannot
+suffer envelope truncation at all.*
+
+** PATH PROVENANCE. **  *** Every model number below is the HIERARCHY path *** --
+`r6941_fine_{lcdm,cr_leafrec1}`, `r6915_pairs_{lcdm,cr_leafrec1}`, `r6897_fields` (control-only, so it
+does not move) and `r6959_eta_cr_leafrec1`'s band edges, asserted bit-identical to the namesake's
+because they are a DEFINITION and not a measurement.  ⛔ *** Nothing is SOLVED and
 nothing is RUN. ***
 
 ** AND THE PRE-REGISTRATION WAS WRITTEN BEFORE ANY OF THIS WAS COMPUTED, WHICH THE ORDER SEQUENCED IN
@@ -17,13 +33,22 @@ this one does not, and the difference is the order's sequencing.*
 ⛭⛭⛭ ** ⓵ THE STEP IS THE EXCESS'S. **  Four readings -- a running arithmetic mean, a running median, a
 local quadratic (Savitzky--Golay, *different in kind rather than in width*), and the peak-to-trough depth
 per acoustic cycle, *which needs no window at all* -- and the step ratio (band 1's excess over the mean of
-bands 2--7) reads $0.333$, $0.391$, $0.633$ and $-0.025$.  ⇒ ** Never near one on any of them. **
+bands 2--7) reads $0.427$, $0.486$, $0.654$ and $-0.035$.  ⇒ ** Never near one on any of them. **
 
-⌷ ** AND THE EDGE HAZARD IS RULED OUT THE RIGHT WAY ROUND, which is what makes it ruled out. **  The
-order's new guard is that a step at the edge band is where an edge artefact lives, and band 1's envelope
-comes within $0.018$ in $q$ of truncating.  *But moving the band's lower edge up from $0.85$ to $1.15$
-makes it read $+0.0215 \to +0.0361$* -- ** higher, where a truncation artefact would have to make it read
-lower. **
+⛔⛔ ** AND THE EDGE TEST THAT RULED THAT HAZARD OUT IS WITHDRAWN -- ON BOTH ARMS. **  The order's guard
+is that a step at the edge band is where an edge artefact lives, and band 1's envelope comes within
+$0.018$ in $q$ of truncating.  As registered the test raised the band's lower edge from $0.85$ to $1.15$
+with the ** upper edge fixed at $1.55$ **, read $+0.0215 \to +0.0361$, and concluded that a truncation
+artefact would have read lower.  *** But fixing the upper edge NARROWS the window from $0.70$ to $0.40$,
+and a narrower sub-period window reads a higher RMS ratio -- so the test varies two things and attributes
+the result to one of them. ***  ** Held at a fixed width the monotone rise is gone on the NAMESAKE arm
+too, where the registered test passes ** ($+0.0215$, $+0.0276$, $+0.0318$, $+0.0298$ at width $0.70$;
+$+0.0259$, $+0.0271$, $+0.0266$, $+0.0277$ at one comb period).  ⇒ *The defect is the test's and not the
+arm's, which is why it is withdrawn rather than reported as a miss on one side.*
+  ⌗ ** And the hazard is ruled out by a reading that cannot suffer it. **  The hazard is about the
+  ENVELOPE truncating; the envelope-free reading uses no envelope and no window at all, and its band 1 is
+  $-0.0024$ against a bands 2--7 mean of $+0.0685$.  *A reading with no envelope cannot be truncated by
+  one.*
 
 ⚠ ** ITS SIZE IS READING-DEPENDENT AND IS QUOTED AS A RANGE. **  Band 1 is a third of the rest on the
 arithmetic envelope, nearly two thirds on the Savitzky--Golay one, and *nothing at all* on the
@@ -32,14 +57,20 @@ envelope-free one -- whose band 1 carries only one acoustic cycle, so it is coar
 added, which is what the order asked.*
 
 ⛭⛭⛭ ** ⓶ AND IT SITS AT THE SECOND ACOUSTIC PEAK. **  The half-rise point of the excess, measured in
-sliding windows at three widths, is $q = 1.789,\,1.788,\,1.805$ -- ** $1.794 \pm 0.008$ ** -- against the
-second acoustic peak at $q = 1.7775$ on the control and $1.7760$ on the arm: *** A MATCH TO $0.9$ PER
-CENT, where the nearest other scale the construction fixes -- the monopole's second turning point at
-$1.915$ -- is seven per cent away, and $q=2$ is twelve. ***  ⌗ And the plateaux are $0.026$ below and
-$0.053$ above on all three widths: ** a factor of $2.0$, reached within about a tenth of a comb period,
-sharper than the narrowest window that found it. **
+sliding windows at three widths, is $q = 1.775,\,1.780,\,1.793$ -- ** $1.783 \pm 0.009$ ** -- against the
+second acoustic peak at $q = 1.7775$ on the control and $1.7693$ on the arm: *** A MATCH TO $0.3$ PER
+CENT -- three times closer than on the namesake arm -- where the nearest other scale the construction
+fixes, the monopole's second turning point at $1.915$, is seven per cent away and $q=2$ is twelve. ***
+⌗ And the plateaux are $0.031$ below and $0.056$ above on all three widths: ** a factor of $1.8$,
+reached within about a tenth of a comb period, sharper than the narrowest window that found it. **
+  ⛔ ** THAT FACTOR IS A MISS OF THE REGISTERED GATE ($1.9$ to $2.2$) AND IS NOT RE-TOLERANCED. **  Its
+  cause is measured rather than assumed: *the LOW-$q$ plateau comes up* ($0.026 \to 0.031$) where the high
+  one barely moves ($0.053 \to 0.056$) -- the beat leaving the statistic, the same effect as `r7637+70`'s
+  step shrinking from $-0.0430$ on the shared comb to $-0.0396$ on its own.  ** So the factor is smaller
+  because the step is smaller, for the reason the ruling names. **
 
-⇒ *** SO THE EXCESS IS ONE SIZE IN THE FIRST ACOUSTIC CYCLE AND TWICE THAT IN EVERY CYCLE ABOVE IT. ***
+⇒ *** SO THE EXCESS IS ONE SIZE IN THE FIRST ACOUSTIC CYCLE AND NEARLY TWICE THAT IN EVERY CYCLE
+ABOVE IT. ***
 ⛔ **Not claimed: that this is a mechanism.**  *A step at a scale is a signature to be explained, which is
 what the pre-registration said would not be claimed.*
 
@@ -48,8 +79,8 @@ what the pre-registration said would not be claimed.*
     -- and a flat candidate's step ratio is exactly one, by construction and without a new number;
   · the PROJECTION WIDTH (`cc66.52`), kernel-class and reachable at band 1, is fitted by a **straight
     line in $q$** to under three per cent of its own range -- *linear, so no step*;
-  · the DOPPLER, by the swap route that reaches band 1 (`cc66.56`), runs $-0.0016$ to $+0.0014$ in
-    sliding half-period windows with means $-0.0001$ below the step and $-0.0002$ above -- ** noise at
+  · the DOPPLER, by the swap route that reaches band 1 (`cc66.56`), runs $-0.0013$ to $+0.0026$ in
+    sliding half-period windows with means $+0.0006$ below the step and $+0.0010$ above -- ** noise at
     the resolution the step needs, and no transition at all. **
 ⇒ *** THIS IS NOT THE IDENTIFIABILITY FLOOR CLOSING OVER THE LIST -- every one of the four WAS
 evaluable -- IT IS THE LIST EXHAUSTED AGAINST THE RIGHT FEATURE, FOR THE FIRST TIME. ***  ⌗ *So the row's
@@ -57,6 +88,8 @@ question is now: what turns on at the second acoustic peak?  Narrower than the q
 asked for six revisions, and not a channel.*
 """
 import os
+
+import sys
 
 import numpy as np
 from scipy.signal import argrelextrema, savgol_filter
@@ -77,7 +110,19 @@ print(__doc__)
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 SP = os.path.join(ROOT, 'computations', 'beyond_the_wall', 'spectra')
 DIR = os.path.join(ROOT, 'computations', 'beyond_the_wall', 'r7009_directions')
-QE = np.asarray(np.load(os.path.join(SP, 'r6959_eta_cr.npz'))['q_edges'], float)
+sys.path.insert(0, os.path.join(ROOT, 'computations', 'beyond_the_wall',
+                                 'r7639_cc66_P15_repoint_paper'))
+import own_comb_kinds as OCK                                                           # noqa: E402
+
+# ** r7639 ⑴ -- THE ARM OF RECORD, AND THE CARRY. **  Every arm read below is `_leafrec1`.  And the
+#   band statistic is no longer cut on the control's comb: `r7637+70`'s ruling is that a 0.70-wide
+#   band holds less than one comb period, so when the two arms' periods differ their bands cover
+#   different parts of the cycle and the ratio BEATS.  The arm is carried onto the control's comb
+#   coordinate first, through `own_comb_kinds`, which generalises 70's `band_excess_own` to this
+#   receipt's four envelope kinds and is verified against 70's row and by the T_a = T_c reduction.
+AOR = {'lcdm': 'r6941_fine_lcdm', 'cr': 'r6941_fine_cr_leafrec1'}
+PAIRS = {'lcdm': 'r6915_pairs_lcdm', 'cr': 'r6915_pairs_cr_leafrec1'}
+QE = np.asarray(np.load(os.path.join(SP, 'r6959_eta_cr_leafrec1.npz'))['q_edges'], float)
 QC = 0.5 * (QE[:-1] + QE[1:])
 NM = ['sw*sw', 'sw*dp', 'sw*isw', 'sw*pol', 'dp*dp', 'dp*isw', 'dp*pol',
       'isw*isw', 'isw*pol', 'pol*pol']
@@ -91,7 +136,12 @@ LOSMARK = ('222', '538', '818', '1134', 'c54.17', 'c54.178_', 'L814_', 'r6784_')
 SOLVEMARK = ('ACOUSTIC_two_arm', 'subprocess', 'os.system')                               # noscan
 check("⛔ PATH PROVENANCE: no line-of-sight quartet value and no line-of-sight bank name occurs in the "
       "executable body", not any(m in BODY for m in LOSMARK),                             # noscan
-      "r6941_fine_*, r6915_pairs_*, r6897_fields and r6959_eta_cr's band edges only")
+      "r6941_fine_*, r6915_pairs_*, r6897_fields and r6959_eta_*'s band edges only")
+_qe_ns = np.asarray(np.load(os.path.join(SP, 'r6959_eta_cr.npz'))['q_edges'], float)
+check("and the band edges are a DEFINITION and not a measurement, so they do not move with the arm: "
+      "the namesake's `q_edges` and the arm of record's are bit-identical",
+      np.array_equal(_qe_ns, QE), f"{len(QE)} edges, {QE[0]:.2f} to {QE[-1]:.2f}, max |diff| "
+      f"{float(np.max(np.abs(_qe_ns - QE))):.1e}")
 check("and nothing is SOLVED and nothing is RUN",
       not any(m in BODY for m in SOLVEMARK), "banks on disk")                              # noscan
 
@@ -108,8 +158,16 @@ check("⛔⛭ THE ORDER SEQUENCED THIS AND THE SEQUENCING WAS HONOURED: the pre-
 
 
 def fine(t):
-    d = np.load(os.path.join(SP, f'r6941_fine_{t}.npz'))
+    d = np.load(os.path.join(SP, AOR[t] + '.npz'))
     return d['ls'].astype(float) / float(d['l_A']), d['Dl']
+
+
+BANKS = {t: fine(t) for t in ('lcdm', 'cr')}
+_Tc, _pc, _Ta, _pa, _dphi = OCK._combs(BANKS)
+check("⛭ THE TWO ARMS' COMBS ARE FITTED BEFORE ANY BAND IS CUT, and they DIFFER -- which is why the "
+      "bands are carried onto the control's coordinate rather than read on each arm's own q",
+      abs(_Ta - _Tc) > 1e-4 and abs(_dphi) < np.pi,
+      f"control T {_Tc:.4f} phi {_pc:.3f}; arm T {_Ta:.4f} phi {_pa:.3f}; dphi {_dphi:+.4f}")
 
 
 def env(x, y, win=1.0, kind='mean'):
@@ -124,13 +182,28 @@ def env(x, y, win=1.0, kind='mean'):
 
 
 def band_excess(kind='mean'):
-    C = {}
+    """the per-band excess, the arm CARRIED onto the control's comb coordinate (r7639 ⑴)"""
+    return OCK.band_excess_own_kind(BANKS, kind, QE)
+
+
+def band_excess_shared(kind='mean'):
+    """⛔ THE SHARED-COMB READING, KEPT AND KEPT SELF-CONTAINED, because another receipt LIFTS this
+    file's functions by AST and runs them in a namespace of its own making -- so a liftable function
+    may depend on NOTHING but what the lifter supplies (`np`, `QE`, `fine`, `env`).
+
+    *`r7639+cc66.25`: carrying `band_excess` at `.8` gave it a free variable `OCK` that no lifter
+    supplies, which crashed `the_phase_systematic_...`.  **And supplying `OCK` would have been the
+    worse repair**: that receipt's own check says "shared comb" and asserts the alternation
+    (+0.0186 at band 1, +0.0141 at band 6), so a lifted CARRIED row would have been a green
+    measuring the wrong quantity.  The crash is the only reason this was seen.*"""
+    out = {}
     for t in ('lcdm', 'cr'):
         x, y = fine(t)
         e = env(x, y, 1.0, kind)
-        C[t] = np.array([float(np.std(np.interp(np.linspace(a, b, 400), x, (y - e) / e)))
-                         for a, b in zip(QE[:-1], QE[1:])])
-    return C['cr'] / C['lcdm'] - 1.0
+        o = (y - e) / e
+        out[t] = np.array([float(np.std(np.interp(np.linspace(a, b, 400), x, o)))
+                           for a, b in zip(QE[:-1], QE[1:])])
+    return out['cr'] / out['lcdm'] - 1.0
 
 
 def depths(t):
@@ -141,12 +214,8 @@ def depths(t):
 
 
 def slide(a, b, kind='mean'):
-    out = []
-    for t in ('lcdm', 'cr'):
-        x, y = fine(t)
-        e = env(x, y, 1.0, kind)
-        out.append(float(np.std(np.interp(np.linspace(a, b, 400), x, (y - e) / e))))
-    return out[1] / out[0] - 1.0
+    """the excess on ONE interval, carried -- the same statistic `band_excess` cuts the bands with"""
+    return float(OCK.band_excess_own_kind(BANKS, kind, np.array([a, b]))[0])
 
 
 print("\n⛭⛭⛭ ⓵ IS THE STEP THE EXCESS'S OR THE ESTIMATOR'S\n")
@@ -155,10 +224,8 @@ for kind in ('mean', 'median', 'savgol'):
     T = band_excess(kind)
     STEP[kind] = float(T[0] / T[1:].mean())
     print(f"    {kind:8s} " + '  '.join(f'{v:+.4f}' for v in T) + f"   step {STEP[kind]:.3f}")
-qa, da = depths('cr')
-qc, dc = depths('lcdm')
-RA = np.array([da[(qa >= a) & (qa < b)].mean() / dc[(qc >= a) & (qc < b)].mean() - 1.0
-               for a, b in zip(QE[:-1], QE[1:])])
+# the envelope-free reading is carried too: the extrema's own q is mapped, nothing is windowed
+RA = OCK.band_excess_own_depths(BANKS, QE)
 STEP['none'] = float(RA[0] / RA[1:].mean())
 print(f"    {'no env.':8s} " + '  '.join(f'{v:+.4f}' for v in RA) + f"   step {STEP['none']:.3f}")
 check("⛭⛭⛭ THE STEP SURVIVES ALL FOUR READINGS -- three envelopes differing in KIND and one that needs "
@@ -167,18 +234,46 @@ check("⛭⛭⛭ THE STEP SURVIVES ALL FOUR READINGS -- three envelopes differin
       max(STEP.values()) < 0.7,
       "  ".join(f"{k} {v:.3f}" for k, v in STEP.items()))
 check("and the envelope-free reading is the sharpest of them: band 1's excess on the peak-to-trough depth "
-      "is indistinguishable from zero while bands 2-7 average six per cent",
+      "is indistinguishable from zero while bands 2-7 average nearly seven per cent",
       abs(RA[0]) < 0.01 and RA[1:].mean() > 0.04,
       f"band 1 {RA[0]:+.4f} against a bands 2-7 mean of {RA[1:].mean():+.4f}")
-EDGE = [(a, slide(a, 1.55)) for a in (0.85, 0.95, 1.05, 1.15)]
-check("⌷ AND THE EDGE HAZARD IS RULED OUT THE RIGHT WAY ROUND, which is what makes it ruled out: moving "
-      "band 1's lower edge UP, away from where the envelope nearly truncates, makes it read HIGHER -- "
-      "and a truncation artefact would have to make it read lower",
-      all(EDGE[i][1] < EDGE[i + 1][1] for i in range(len(EDGE) - 1)),
-      "  ".join(f"[{a:.2f},1.55] {v:+.4f}" for a, v in EDGE))
+# ================================================================================================
+# ⛔⛔ r7639 ⑤ -- THE REGISTERED EDGE TEST IS WITHDRAWN, AND IT IS WITHDRAWN ON BOTH ARMS.
+#
+#   As registered it raised band 1's lower edge with the UPPER EDGE FIXED at 1.55, read the excess
+#   higher each time, and concluded that an envelope-truncation artefact would have read lower.  But
+#   fixing the upper edge NARROWS the window from 0.70 to 0.40 as the lower edge rises, and a narrower
+#   SUB-PERIOD window reads a higher RMS ratio -- the pathology `own_comb.py`'s own note names.  The
+#   test therefore varies two things and attributes the result to one of them.
+#
+#   ** Measured rather than argued: hold the width fixed and the monotone rise is gone on the NAMESAKE
+#   arm too, where the registered test passes.  So this is the test's defect and not the arm's. **
+print("\n⛔ THE REGISTERED EDGE TEST, AND THE TWO FIXED-WIDTH SWEEPS THAT WITHDRAW IT\n")
+SWEEPS = {}
+for lab, upper in (('registered: upper edge FIXED at 1.55, so the width narrows 0.70 -> 0.40', None),
+                   ('fixed width 1.00, one comb period', 1.00),
+                   ('fixed width 0.70, the registered band width', 0.70)):
+    row = [(a, slide(a, 1.55 if upper is None else a + upper)) for a in (0.85, 0.95, 1.05, 1.15)]
+    SWEEPS[lab] = row
+    mono = all(row[i][1] < row[i + 1][1] for i in range(len(row) - 1))
+    print(f"    {'MONOTONE' if mono else 'NOT     '}  " + "  ".join(f"{v:+.4f}" for _, v in row)
+          + f"   {lab}")
+_mono = {k: all(r[i][1] < r[i + 1][1] for i in range(len(r) - 1)) for k, r in SWEEPS.items()}
+check("⛔⛔ THE REGISTERED EDGE TEST IS A CONFOUND AND IS WITHDRAWN: it raises the lower edge AND "
+      "narrows the window, and it is the NARROWING that makes the excess read higher -- held at one "
+      "comb period, and at the registered 0.70, the rise is not there.  ⇒ Registered as a miss and "
+      "not re-toleranced, and withdrawn for the namesake arm as well, where it still passes",
+      not any(v for k, v in _mono.items() if k.startswith('fixed width')),
+      "neither fixed-width sweep rises monotonically")
+check("⌷ AND THE HAZARD IT WAS MEANT TO RULE OUT IS RULED OUT BY A READING THAT CANNOT SUFFER IT: the "
+      "hazard is that band 1 reads low because the ENVELOPE truncates at the low-q edge, and the "
+      "envelope-free reading uses no envelope and no window at all -- its band 1 is indistinguishable "
+      "from zero against a bands 2-7 mean twenty-eight times its size",
+      abs(RA[0]) < 0.01 and RA[1:].mean() > 0.04,
+      f"band 1 {RA[0]:+.4f} with NO envelope, against {RA[1:].mean():+.4f}")
 
 print("\n⛭⛭ ⓶ LOCATING THE STEP\n")
-LOC, FAC = [], []
+LOC, FAC, PLO, PHI = [], [], [], []
 for half in (0.175, 0.25, 0.35):
     row = [(c, slide(c - half, c + half)) for c in np.arange(0.85 + half, 3.0, 0.05)]
     lo = np.mean([v for c, v in row if c < 1.4])
@@ -187,12 +282,31 @@ for half in (0.175, 0.25, 0.35):
     LOC.append(next(row[i - 1][0] + (mid - row[i - 1][1]) / (row[i][1] - row[i - 1][1]) * 0.05
                     for i in range(1, len(row)) if row[i - 1][1] < mid <= row[i][1]))
     FAC.append(hi / lo)
+    PLO.append(lo)
+    PHI.append(hi)
     print(f"    half {half:.3f}: plateaux {lo:.4f} -> {hi:.4f} (factor {hi / lo:.2f}), "
           f"half-rise q = {LOC[-1]:.3f}")
-check("⛭ THE STEP'S LOCATION IS STABLE ACROSS THREE WINDOW WIDTHS and its size is a clean factor of two "
-      "on all three, so it is a feature of the excess rather than of the window",
-      np.ptp(LOC) < 0.03 and 1.9 < min(FAC) and max(FAC) < 2.2,
-      f"q = {np.mean(LOC):.3f} +- {np.ptp(LOC) / 2:.3f}, factor {min(FAC):.2f} to {max(FAC):.2f}")
+check("⛭ THE STEP'S LOCATION IS STABLE ACROSS THREE WINDOW WIDTHS, so it is a feature of the excess "
+      "rather than of the window -- which is the half of this that the carry leaves standing",
+      np.ptp(LOC) < 0.03,
+      f"q = {np.mean(LOC):.3f} +- {np.ptp(LOC) / 2:.3f} across half-widths 0.175, 0.250 and 0.350")
+# ⛔ r7639 ⑤ -- AND THE SIZE MISSES ITS REGISTERED WINDOW, REPORTED AND NOT RE-TOLERANCED.
+#   Registered: 1.9 < factor < 2.2, "a clean factor of two on all three".  Carried onto the arm of
+#   record it is 1.77 to 1.83.  ** The cause is the LOW-q plateau coming UP, not the high one coming
+#   down ** -- which is the beat leaving the statistic, the same effect as `r7637+70`'s step shrinking
+#   from -0.0430 on the shared comb to -0.0396 on the own comb.  So the factor is smaller BECAUSE THE
+#   STEP IS SMALLER, for the reason 69's ruling names, and the registered window is recorded as missed
+#   rather than widened to admit the new value.
+print(f"\n    ⛔ REGISTERED 1.9 < factor < 2.2; MEASURED {min(FAC):.2f} to {max(FAC):.2f} "
+      f"-- a MISS of the registered gate, reported and NOT re-toleranced")
+check("⛔ AND THE MISS HAS ITS CAUSE MEASURED RATHER THAN ASSUMED: the factor falls because the LOW-q "
+      "plateau rises, not because the high one falls -- the beat leaving the statistic, which is the "
+      "same effect as `r7637+70`'s step shrinking from -0.0430 (shared comb) to -0.0396 (own comb).  "
+      "⇒ The size is a factor of 1.8 and not of two, and the excess is one size in the first acoustic "
+      "cycle and NEARLY twice that above it",
+      1.6 < min(FAC) and max(FAC) < 1.9 and all(lo > 0.029 for lo in PLO) and all(hi < 0.058 for hi in PHI),
+      f"plateaux {min(PLO):.4f}-{max(PLO):.4f} below and {min(PHI):.4f}-{max(PHI):.4f} above; "
+      f"factor {min(FAC):.2f} to {max(FAC):.2f}")
 PK = {}
 for t in ('lcdm', 'cr'):
     x, y = fine(t)
@@ -221,7 +335,7 @@ check("⛔ THE PROJECTION WIDTH is fitted by a STRAIGHT LINE in q to a few per c
       f"band-1 value of {WIDTH[0]:+.5f}")
 P = {}
 for t in ('lcdm', 'cr'):
-    d = np.load(os.path.join(SP, f'r6915_pairs_{t}.npz'), allow_pickle=True)
+    d = np.load(os.path.join(SP, PAIRS[t] + '.npz'), allow_pickle=True)
     P[t] = (d['ls'].astype(float) / float(d['l_A']), d['Dl'], d['Dl_pairs'])
 qa2, Da, Pa = P['cr']
 qc2, Dc, Pc = P['lcdm']

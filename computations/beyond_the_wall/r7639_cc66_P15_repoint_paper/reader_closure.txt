@@ -1,0 +1,29 @@
+1140 receipts in the tree.
+
+TEXT READERS of `P15_no_statistic_this_construction_can_build_resolve...` -- 3 receipt(s), and this part IS predictable:
+
+  hop 1  P15_the_resolution_table_eight_of_the_eleven_instruments_cannot_represent_the_comb_period_and_four_small
+  hop 1  S1_the_corpus_sweep_finds_no_headline_resting_on_an_overclaimed_sigma_and_three_in_one_paper_below_it
+  hop 2  C65_the_next_sixty_keys_are_all_source_and_none_is_a_repair_so_last_cycles_prediction_is_wrong_and_all_t
+
+⛔ AND THE PART THAT IS NOT: 99 receipt(s) EXECUTE a python path built from a
+   VARIABLE, so each decides its population at RUN TIME.  ** Every one of the 99 builds its
+   target from a variable and NONE spells it out, so text analysis cannot narrow this class
+   at all -- not by one receipt. **  `S5` classifies every receipt by source shape and runs
+   the EXPOSED ones; `S54` and `S55` then assert `S5` runs green.  The chain that reddened
+   three receipts on the `.17` push is seed -> S1 -> S5 -> S54/S55, and only its FIRST hop
+   is visible here.
+
+VALIDATION against the five reds CI named on the `r7639+cc66.17` push:
+  FOUND   as a text reader, hop 1  S1_the_corpus_sweep_finds_no_headline_resting_on_an_overclaimed_sigma_and_three_
+  FOUND   as a text reader, hop 1  P15_the_resolution_table_eight_of_the_eleven_instruments_cannot_represent_the_co
+  FOUND   in the computed-population class  S5_the_set_shaped_class_is_absent_from_the_gate_layer_and_two_thirds_of_what_rem
+  FOUND   in the computed-population class  S54_a_ledger_change_scopes_five_receipts_and_none_of_the_forty_four_that_read_th
+  FOUND   in the computed-population class  S55_the_previous_repairs_own_written_safety_argument_was_the_defect_because_a_sh
+
+⛭ Both text-reader reds are found by text, and all three deep reds fall in the class this
+  instrument declares unpredictable -- so it reproduces the known answer AND marks the part
+  it cannot predict instead of reporting a short list as if it were complete.
+
+⇒ THE REMEDY IS PROCEDURAL, NOT ANALYTICAL: before pushing a re-point, run the receipts
+  listed above AND the scoped plain suite, which is what actually measures the deep edge.

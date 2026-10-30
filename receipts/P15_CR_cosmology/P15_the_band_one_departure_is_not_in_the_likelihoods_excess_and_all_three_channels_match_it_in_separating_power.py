@@ -5,8 +5,9 @@ THE SHAPE REJECTION READ LOCALLY; `cc66.62` CALLED A SEPARATING-POWER DEPARTURE 
 AND THAT LABEL IS CORRECTED HERE; AND IN THE METRIC THE STEP DOES LIVE IN, ALL THREE CHANNELS DEPART THE
 ARM'S WAY. **
 
-** PATH PROVENANCE. **  *** Every model number below is the HIERARCHY path *** -- `r6941_fine_{lcdm,cr}`,
-`r6959_nswap_lcdm`, `r6975_mix_lcdm`, `r6983_joint_lcdm`, `r6959_eta_cr`'s band edges, and `plik_lite` TT
+** PATH PROVENANCE. **  *** Every model number below is the HIERARCHY path *** --
+`r6941_fine_{lcdm,cr_leafrec1}`, `r6959_nswap_lcdm`, `r6975_mix_lcdm`, `r6983_joint_lcdm`,
+`r6959_eta_cr_leafrec1`'s band edges, and `plik_lite` TT
 through the corpus's own `chi2_of_spectrum`.  ⛔ *** Nothing is SOLVED and nothing is RUN. ***
 
 ** THE ORDER'S DISTINCTION IS THIS RECEIPT'S VOCABULARY AND NOT AN ACKNOWLEDGEMENT. **
@@ -17,10 +18,21 @@ through the corpus's own `chi2_of_spectrum`.  ⛔ *** Nothing is SOLVED and noth
 ⛔⛭ ** ⓶ IS RUN FIRST THOUGH IT IS NUMBERED SECOND, BECAUSE IT DECIDES WHAT ⓵ MEANS -- and the
 pre-registration says so, so the file's structure carries it rather than a sentence. **
 
-⛔⛔ ** ⓶ AND THE ANSWER IS NEITHER OF THE TWO OUTCOMES THE ORDER TABLED. **  Band 1 contributes $2.6$ of the
-$287$ the seven bands sum to -- ** under one per cent ** -- against a total excess of $322$ over all covered
-bins.  Absorbing smooth global shape with $n = 1,2,3,4$ free coefficients in $\ln\ell$ it reads $+2.6$,
-$-0.5$, $+0.3$, $+6.6$: *** it changes sign ***, where bands 2--7 hold to within a few per cent.
+** ⛔ r7639 ⑴ -- RE-POINTED TO THE ARM OF RECORD, AND THE COMB CARRY DOES NOT APPLY HERE. **  69's
+ruling is about a band RMS cut on a comb coordinate; *** this receipt has no such statistic. ***  It works
+in BINNED multipole space against the Planck covariance -- every quantity below is a quadratic form in
+`COV_TT`, with no envelope, no oscillation and no comb anywhere in it.  So the re-point is a pointer
+change and nothing else, and carrying anything here would be a coordinate transformation applied to a
+statistic that does not live in that coordinate.  ⌗ *That is the third class this campaign has
+found: the carry APPLIES to an arm-vs-control comb-band ratio, is the IDENTITY for control against
+control, and DOES NOT APPLY where the statistic is not a comb-band ratio at all.*
+
+⛔⛔ ** ⓶ AND THE ANSWER IS NEITHER OF THE TWO OUTCOMES THE ORDER TABLED. **  Band 1 contributes $3.9$ of the
+$298.5$ the seven bands sum to -- ** a little over one per cent ** -- against a total excess of $336.5$ over
+all covered bins.  Absorbing smooth global shape with $n = 1,2,3,4$ free coefficients in $\ln\ell$ it reads
+$+3.9$, $-0.5$, $+0.5$, $+7.1$: *** it changes sign ***, where bands 2--7 hold to within a few per cent.
+  ⌗ *On the namesake arm those were $2.6$ of $287$ against $322$, and "under one per cent".  The
+sign change -- which is the claim -- is unmoved.*
 
 ⇒ *** SO BAND 1'S DEPARTURE IS NOT A DISTINCT FEATURE OF THE RESIDUAL, AND IT IS NOT THE SHAPE REJECTION
 READ LOCALLY EITHER -- THE SHAPE REJECTION IS BARELY PRESENT THERE AT ALL. ***  *It lives at bands 4--7,
@@ -82,7 +94,10 @@ DIR = os.path.join(ROOT, 'computations', 'beyond_the_wall', 'r7023_directions')
 sys.path.insert(0, os.path.join(ROOT, 'computations', 'planck_tt_likelihood'))
 import chi2_of_spectrum as CS                                             # noqa: E402
 
-QE = np.asarray(np.load(os.path.join(SP, 'r6959_eta_cr.npz'))['q_edges'], float)
+# r7639 ⑴: the arm of record.  The band edges are a DEFINITION and are asserted bit-identical below.
+AOR_FINE = 'r6941_fine_cr_leafrec1.npz'
+AOR_ETA = 'r6959_eta_cr_leafrec1.npz'
+QE = np.asarray(np.load(os.path.join(SP, AOR_ETA))['q_edges'], float)
 QCB = 0.5 * (QE[:-1] + QE[1:])
 BASES = (('v ~ q', 1, False), ('v ~ q2', 2, False), ('ln v ~ q', 1, True), ('ln v ~ q2', 2, True))
 LC, _F = CS.bin_center_and_fac()
@@ -97,7 +112,7 @@ check("⛔ PATH PROVENANCE: no line-of-sight bank name occurs in the executable 
 check("and nothing is SOLVED and nothing is RUN",
       not any(m in BODY for m in SOLVEMARK), "banks on disk")                              # noscan
 
-NEED = ('r6959_eta_cr.npz', 'r6941_fine_lcdm.npz', 'r6941_fine_cr.npz',
+NEED = (AOR_ETA, 'r6941_fine_lcdm.npz', AOR_FINE,
         'r6959_nswap_lcdm.npz', 'r6975_mix_lcdm.npz', 'r6983_joint_lcdm.npz')
 for _n in NEED:
     check(f"the bank this receipt reads is present: `spectra/{_n}`",
@@ -150,7 +165,16 @@ def dep4(v):
 
 
 LSC, DLC, AAC = load('r6941_fine_lcdm.npz')
-LSA, DLA, _ = load('r6941_fine_cr.npz')
+LSA, DLA, _ = load(AOR_FINE)
+_qe_ns = np.asarray(np.load(os.path.join(SP, 'r6959_eta_cr.npz'))['q_edges'], float)
+check("and the band edges are a DEFINITION and not a measurement, so they do not move with the arm: "
+      "the namesake's `q_edges` and the arm of record's are bit-identical.  ⛭ *This receipt reads the "
+      "eta bank for NOTHING ELSE, so reverting that pointer cannot move a figure here -- and this check "
+      "is what makes that a statement rather than an assumption.  It is why the eta leg's revert is "
+      "silent and why no pin on it would mean anything: the quantity it supplies is a definition, "
+      "proven identical, which is not the silent class of `r7637+cc66.1` at all*",
+      np.array_equal(_qe_ns, QE), f"{len(QE)} edges, {QE[0]:.2f} to {QE[-1]:.2f}, "
+      f"max |diff| {float(np.max(np.abs(_qe_ns - QE))):.1e}")
 MC, MA = CS.bin_spectrum(LSC, DLC), CS.bin_spectrum(LSA, DLA)
 KN = {}
 for nm, fn in (('window', 'r6959_nswap_lcdm.npz'), ('term mix', 'r6975_mix_lcdm.npz'),
@@ -221,8 +245,24 @@ SARM = np.array([band_q(A1 * (ma - mc), a, b) for a, b in zip(QE[:-1], QE[1:])])
 DARM = dep4(SARM)
 print(f"    band-1 SEPARATING POWER {SARM[0]:.1f} sigma, its bands 2--7 trend predicting "
       f"{min(SARM[0] / (1 + x[0]) for x in DARM):.0f}-{max(SARM[0] / (1 + x[0]) for x in DARM):.0f}"
-      f"   -- `cc66.62`'s number, unchanged")
+      f"   -- `cc66.62`'s figure was 36.4 on the NAMESAKE arm; on the arm of record it is this")
 print(f"    band-1 share of the EXCESS {B[0] / B.sum():.1%}   -- the quantity that sentence named")
+# ⛔ r7639 ⑴ -- THE HEADER'S OWN FIGURES ARE TIED TO THE COMPUTATION, so a number written into the
+#   docstring by hand cannot survive being wrong.  *I wrote 302 for the band sum on this re-point and it
+#   is 299; this check is what caught it and is left in so the next one is caught too.*
+check("⛔ THE HEADER'S THREE ARM-OF-RECORD FIGURES ARE THE COMPUTED ONES: band 1's contribution, the "
+      "seven-band sum, and the total excess, each read out of the header text and compared with what "
+      "this run measures",
+      f"${B[0]:.1f}$" in HDR and f"${B.sum():.1f}$" in HDR and f"${ROWS[0][2]:.1f}$" in HDR,
+      f"header carries ${B[0]:.1f}$ of ${B.sum():.1f}$ against a total excess of ${ROWS[0][2]:.1f}$")
+# ⛔ AND THE ARM IS PINNED: band 1's separating power separates the two arms cleanly -- 46.6 sigma on
+#   the arm of record against 36.4 on the namesake -- where every other claim here is a share or a sign
+#   with room, so without this the receipt would pass on either arm.
+check("⛔ THE ARM IS PINNED on band 1's separating power, which EXCLUDES the namesake arm -- without it "
+      "every claim here is a share or a sign with room and a green would say nothing about which arm "
+      "was read",
+      abs(SARM[0] - 46.6) < 0.3,
+      f"band-1 separating power {SARM[0]:.2f} sigma against the namesake arm's 36.4")
 check("⛔⛔ THE CORRECTION: `cc66.62` ⓵ⓑ CALLED A SEPARATING-POWER DEPARTURE A CONTRIBUTION TO THE "
       "LIKELIHOOD'S EXCESS.  ** The number was right and the label was wrong **, and this receipt says so "
       "in its own header rather than leaving it to the reply",

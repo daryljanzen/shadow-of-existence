@@ -4,8 +4,9 @@ EXCESS AND SEPARATES THE TWO CHANNELS AT BAND 1 AT TWENTY-FIVE SIGMA, SO `cc66.6
 THE STATISTIC FAMILY AND NOT THE INSTRUMENT THE PAPER RUNS BESIDE IT, AND `PO-56`'s AMENDED CLAUSE IS NOT
 MET. **
 
-** PATH PROVENANCE. **  *** Every model number below is the HIERARCHY path *** -- `r6941_fine_{lcdm,cr}`,
-`r6959_nswap_lcdm`, `r6975_mix_lcdm`, `r6983_joint_lcdm`, `r6959_eta_cr`'s band edges, and `plik_lite` TT
+** PATH PROVENANCE. **  *** Every model number below is the HIERARCHY path *** -- `r6941_fine_{lcdm,cr_leafrec1}`,
+`r6959_nswap_lcdm`, `r6975_mix_lcdm`, `r6983_joint_lcdm`, `r6959_eta_cr_leafrec1`'s band edges, and
+`plik_lite` TT
 through the corpus's own `chi2_of_spectrum`.  ⛔ *** Nothing is SOLVED and nothing is RUN. ***
 
 ** THE PRE-REGISTRATION IS ITS OWN COMMIT AHEAD OF THE WORKING SCRIPT **, and it opens by saying plainly
@@ -18,9 +19,18 @@ $0.0298$ in $q$ -- ** one thirty-fourth of a comb period ** -- with $24$ bins in
 bin-to-bin correlation is a flat $\approx 0.15$ floor rather than a coupling that grows over a period.
 *It bins; it does not **band**, in the sense that defeats every statistic in the demonstration.*
 
-⛭⛭⛭ ** ⓵ⓑ AND THE STEP IS A LOCALISED CONTRIBUTION TO ITS EXCESS. **  Band 1's bins carry $36.4\sigma$ of
-arm-versus-control separation **on their own**, where its own bands 2--7 trend predicts $53$--$71$: a
-departure of $-0.311$ to $-0.489$ across the four bases, at $2.5$--$3.2\sigma$ on its own residual.
+** ⛔ r7639 ⑴ -- RE-POINTED TO THE ARM OF RECORD, AND THE COMB CARRY DOES NOT APPLY. **  69's ruling is
+about a band RMS cut on a comb coordinate and *** this receipt has no such statistic ***: it is a
+likelihood in BINNED multipole space, every quantity a quadratic form in `COV_TT`, with no envelope and
+no comb in it.  So the re-point is a pointer change.  ⌗ *And the channel-separation figures below
+do not move at all, because both channels are `lcdm`: what moves is only what is read against the arm.*
+
+⛭⛭⛭ ** ⓵ⓑ AND THE STEP IS A LOCALISED CONTRIBUTION TO ITS EXCESS. **  Band 1's bins carry $46.6\sigma$ of
+arm-versus-control separation **on their own**, where its own bands 2--7 trend predicts $68$--$91$: a
+departure of $-0.312$ to $-0.490$ across the four bases, at $2.6$--$3.4\sigma$ on its own residual.
+  ⌗ *On the namesake arm those were $36.4\sigma$, $53$--$71$, $-0.311$ to $-0.489$ and
+  $2.5$--$3.2\sigma$.  The departure and its significance barely move; the SEPARATION rises by a quarter,
+  which is the arm of record sitting further from the control.*
 ⇒ ** The same sign as every other instrument in this row -- and the first per-band number in it that
 carries the INSTRUMENT'S own noise rather than an empirical scatter across a noiseless theory spectrum. **
 
@@ -77,7 +87,10 @@ DIR = os.path.join(ROOT, 'computations', 'beyond_the_wall', 'r7021_directions')
 sys.path.insert(0, os.path.join(ROOT, 'computations', 'planck_tt_likelihood'))
 import chi2_of_spectrum as CS                                             # noqa: E402
 
-QE = np.asarray(np.load(os.path.join(SP, 'r6959_eta_cr.npz'))['q_edges'], float)
+# r7639 ⑴: the arm of record.  The band edges are a DEFINITION and are asserted bit-identical below.
+AOR_FINE = 'r6941_fine_cr_leafrec1.npz'
+AOR_ETA = 'r6959_eta_cr_leafrec1.npz'
+QE = np.asarray(np.load(os.path.join(SP, AOR_ETA))['q_edges'], float)
 QCB = 0.5 * (QE[:-1] + QE[1:])
 BASES = (('v ~ q', 1, False), ('v ~ q2', 2, False), ('ln v ~ q', 1, True), ('ln v ~ q2', 2, True))
 PCOMB = 1.0
@@ -92,7 +105,7 @@ check("⛔ PATH PROVENANCE: no line-of-sight bank name occurs in the executable 
 check("and nothing is SOLVED and nothing is RUN",
       not any(m in BODY for m in SOLVEMARK), "banks on disk, likelihood read through the corpus module")
 
-NEED = ('r6959_eta_cr.npz', 'r6941_fine_lcdm.npz', 'r6941_fine_cr.npz',
+NEED = (AOR_ETA, 'r6941_fine_lcdm.npz', AOR_FINE,
         'r6959_nswap_lcdm.npz', 'r6975_mix_lcdm.npz', 'r6983_joint_lcdm.npz')
 for _n in NEED:
     check(f"the bank this receipt reads is present: `spectra/{_n}`",
@@ -145,7 +158,14 @@ def departure(v, p, lg):
 
 
 LSC, DLC, AAC = load('r6941_fine_lcdm.npz')
-LSA, DLA, _ = load('r6941_fine_cr.npz')
+LSA, DLA, _ = load(AOR_FINE)
+_qe_ns = np.asarray(np.load(os.path.join(SP, 'r6959_eta_cr.npz'))['q_edges'], float)
+check("the band edges are a DEFINITION and not a measurement, so they do not move with the arm: the "
+      "namesake's `q_edges` and the arm of record's are bit-identical.  ⛭ *This receipt reads the eta "
+      "bank for NOTHING ELSE, so reverting that pointer cannot move a figure here -- which is why its "
+      "revert is silent for a legitimate reason and no pin on it would mean anything*",
+      np.array_equal(_qe_ns, QE),
+      f"{len(QE)} edges, max |diff| {float(np.max(np.abs(_qe_ns - QE))):.1e}")
 MC, MA = CS.bin_spectrum(LSC, DLC), CS.bin_spectrum(LSA, DLA)
 KNOB = {}
 for nm, fn in (('window', 'r6959_nswap_lcdm.npz'), ('term mix', 'r6975_mix_lcdm.npz'),
@@ -198,6 +218,14 @@ def band_S(lo, hi, vec):
 S = np.array([band_S(a, b, r) for a, b in zip(QE[:-1], QE[1:])])
 D = [departure(S, p, lg) for _, p, lg in BASES]
 print("    arm vs control, sigma from each band alone:  " + '  '.join(f'{v:6.2f}' for v in S))
+# ⛔ r7639 ⑴ -- AND THE ARM IS PINNED, because every other claim here is a sign, a share or a
+#   separation between two CONTROL channels, none of which moves with the arm.  Band 1's own
+#   arm-versus-control separation does: 46.64 sigma on the arm of record against 36.37 on the namesake.
+check("⛔ THE ARM IS PINNED on band 1's arm-versus-control separation, which EXCLUDES the namesake arm -- "
+      "without it every claim here is a sign, a share, or a separation between two CONTROL channels, "
+      "none of which moves with the arm, and a green would say nothing about which arm was read",
+      abs(float(S[0]) - 46.64) < 0.3,
+      f"band 1 {float(S[0]):.2f} sigma against the namesake arm's 36.37")
 print("    band 1 against its own bands 2--7 trend:     "
       + '  '.join(f'{x[0]:+.3f}({x[0] / x[1]:+.2f}s)' for x in D))
 check("⓵ⓑ THE STEP IS A LOCALISED CONTRIBUTION TO THE LIKELIHOOD'S EXCESS, with the SAME SIGN as every "

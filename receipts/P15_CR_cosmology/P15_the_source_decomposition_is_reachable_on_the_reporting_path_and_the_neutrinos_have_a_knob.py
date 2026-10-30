@@ -52,6 +52,20 @@ phase before last scattering.  Deleting the Doppler term removes the dipole's co
 changes what the dipole is.  *Pointing the first at the second would have measured nothing, so it is
 two knobs and this receipt builds both.*
 
+** ⛔ r7639 ⑵ -- THE `DPSRC=0` BIT-IDENTITY BELOW IS HISTORICAL, AND IS PINNED HERE AS HISTORY. **
+It is a measurement of the instrument BEFORE `_SWSRC` and `_DPSRC` were wired into `_project` at
+`r6889+cc66.36` (`736f9399`), so it can only be read against the spectra that instrument made.  It is
+therefore loaded through `hist`, which reads the `LEAFREC=0` namesakes and RECORDS what it read, with a
+check that fails if either file carries the arm-of-record suffix.  *The pin is load-bearing and not
+decoration: in `max |dD_l|` the namesake pair reads exactly `0.0` on both legs, a per-arm re-point gives
+the cross-arm `2.529e-02`, which measures nothing, and the honest both-legs arm-of-record read is
+`9.467e-02` -- because the knob IS wired there.  A re-point would read as a repair having FAILED where
+what it records is a repair having SUCCEEDED, and it would read that way GREEN.*
+  ⌘ *The arm-of-record pair `r6885_dp0_cr_leafrec1` DOES exist, so this family is reachable on that arm.
+  What is not reachable there is the BIT-IDENTITY, because on that arm there is nothing bit-identical to
+  measure.  P15 cites this receipt for other claims and for none of this one -- classed in
+  `computations/beyond_the_wall/r7639_cc66_P15_repoint_paper/P15_SENTENCES_dpsrc.md`.*
+
 -------------------------------------------------------------------------------
 COMPUTES: scope.
   * ** EVERY COSMOLOGICAL PARAMETER IS BANKED, NOT CHOSEN HERE. **  Both arms are the verified 185-bin
@@ -132,6 +146,22 @@ RAT[_m] = _le[_m] / _un[_m]
 load = lambda f: (lambda d: (d['ls'].astype(float), d['Dl'].astype(float)))(
     np.load(os.path.join(SP, f)))
 base = lambda t: load(f'cc66_r185_verify_{t}.npz')
+# ** r7639 ⑵ -- THE NAMESAKE LOADER, WHICH DOES NOT MOVE WITH `base`. **  PART 1's `DPSRC=0`
+#   bit-identity and all of PART 2 are findings about the instrument BEFORE `_SWSRC`/`_DPSRC` were
+#   wired into `_project` at `r6889+cc66.36` (`736f9399`).  They are measurements of the r6885/r6889
+#   tree, read against the spectra THAT tree produced, so they are pinned to the `LEAFREC=0`
+#   namesakes and stay pinned if `base` is ever re-pointed to the arm of record.  *The alternative --
+#   letting them follow `base` -- compares an arm-of-record base against old-arm knob runs and goes
+#   GREEN while doing it, which is the silent class reported at `r7637+cc66.1`.*
+NAMESAKE = 'cc66_r185_verify_{}.npz'
+_HIST_READ = []
+
+
+def hist(t):
+    """the LEAFREC=0 namesake, RECORDING what it read so the guard below measures and not declares"""
+    f = NAMESAKE.format(t)
+    _HIST_READ.append(f)
+    return load(f)
 mb = lambda ls, Dl: CS.bin_spectrum(ls, Dl * np.interp(ls, LG, RAT))
 
 KEEP = np.isfinite(mb(*base('lcdm'))) & (LC >= 100) & (LC <= 1900)
@@ -213,7 +243,12 @@ check("** the monopole bracket is SPLIT so the switch multiplies g(Theta_0+Psi) 
       "the split bracket is in the source, with the factor INSIDE so the default sums in the "
       "original order")
 # the banked measurement of the shadow, from r6885
-_b1, _b2 = base('lcdm'), base('cr')
+_b1, _b2 = hist('lcdm'), hist('cr')
+check("** ⛔ AND THE WHOLE OF THE SHADOW RECORD BELOW IS HISTORICAL, SO IT IS PINNED TO THE `LEAFREC=0` NAMESAKES AND NOT "
+      "TO WHATEVER `base` POINTS AT **, because a measurement of the instrument before "
+      "`r6889+cc66.36` can only be read against the spectra that instrument made",
+      _HIST_READ == ['cc66_r185_verify_lcdm.npz', 'cc66_r185_verify_cr.npz'],
+      f"the two files actually read are {_HIST_READ}")
 _s1, _s2 = load('r6885_dp0_lcdm.npz'), load('r6885_dp0_cr.npz')
 check("⛔ AND THE MEASUREMENT IT WAS FOUND BY, kept and re-gated here: with the switch UNWIRED, "
       "`DPSRC=0` on the refit configuration returned a bit-identical spectrum on BOTH arms",

@@ -1,0 +1,27 @@
+
+  old arm (LEAFREC=0)
+    combs: lcdm D_l T 1.0092 ph +1.449 / source T 1.0170 ph +1.076, cr D_l T 1.0092 ph +1.459 / source T 1.0160 ph +1.084
+    shared comb: twelve-setting slope +0.01359 +- 0.00202
+    own comb   : twelve-setting slope +0.01002 +- 0.00142
+    own comb, 7 bands at window 1: 1.0329  1.0652  1.0627  1.0667  1.0833  1.0797  1.0775
+
+  arm of record (LEAFREC=1)
+    combs: lcdm D_l T 1.0092 ph +1.449 / source T 1.0170 ph +1.076, cr D_l T 1.0045 ph +1.454 / source T 1.0115 ph +1.082
+    shared comb: twelve-setting slope +0.02690 +- 0.01226
+    own comb   : twelve-setting slope +0.01034 +- 0.00137
+    own comb, 7 bands at window 1: 1.0364  1.0708  1.0659  1.0699  1.0858  1.0827  1.0832
+
+  Gr1 -- REPRODUCTION WHERE THE COMBS COINCIDE (each arm's comb parameters set to the control's)
+    [ok]  Gr1 (old arm (LEAFREC=0)): the own form equals cc66's `retained` on all twelve settings to 1e-12   4.4e-16
+    [ok]  Gr1 (arm of record (LEAFREC=1)): the own form equals cc66's `retained` on all twelve settings to 1e-12   1.8e-15
+    [ok]  and the shared form here IS the slope receipt's +0.01359 +- 0.00202   +0.01359 +- 0.00202
+
+  Gr2 -- THE NULL (both sides, identical amplitude, combs refitted inside the statistic)
+    old arm (LEAFREC=0)        A 0.5         : own slope +0.01002; null real +0.00212 (+0.21), worst 0.00212 (0.21); slope - null(real) +0.00790 against 2 x spread 0.00283
+    old arm (LEAFREC=0)        A own 0.232/0.930: own slope +0.01002; null real +0.00148 (+0.15), worst 0.00479 (0.48); slope - null(real) +0.00854 against 2 x spread 0.00283
+    arm of record (LEAFREC=1)  A 0.5         : own slope +0.01034; null real +0.00328 (+0.32), worst 0.00557 (0.54); slope - null(real) +0.00707 against 2 x spread 0.00274
+    [ok]  Gr2 (A 0.5): the null at the real phase is under a third of the own-comb slope   +0.00328 against +0.01034
+    arm of record (LEAFREC=1)  A own 0.231/0.937: own slope +0.01034; null real +0.00215 (+0.21), worst 0.00523 (0.51); slope - null(real) +0.00820 against 2 x spread 0.00274
+    [ok]  Gr2 (A own 0.231/0.937): the null at the real phase is under a third of the own-comb slope   +0.00215 against +0.01034
+
+GATES: ALL PASS

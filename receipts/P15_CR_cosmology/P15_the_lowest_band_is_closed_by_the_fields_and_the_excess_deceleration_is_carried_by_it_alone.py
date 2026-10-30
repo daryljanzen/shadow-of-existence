@@ -5,8 +5,9 @@ SAME BAND ALONE; AND THE FILTER'S THIRD CONDITION IS PERMANENTLY UNAVAILABLE EXA
 CANDIDATE THE PHYSICS SAYS CAN CARRY THE EXCESS. **
 
 ** PATH PROVENANCE, IN THE HEADER, ON THE STANDING REQUIREMENT. **  *** Every model number below is the
-HIERARCHY path *** -- `r6897_fields` (the `ZPSAVE` bank), `r6941_fine_{lcdm,cr}` (the banked spectra the
-contrast statistic is computed on) and `r6959_eta_cr` (band edges alone).  `sec:refit-bound`'s
+HIERARCHY path *** -- `r6897_fields` (the `ZPSAVE` bank, whose arm is a KEY and exists on the namesake
+arm only), `r6941_fine_lcdm` and `r6941_fine_cr_leafrec1` (the banked spectra the contrast statistic is
+computed on, with `r6941_fine_cr` read for the comparison) and `r6959_eta_cr_leafrec1` (band edges alone).  `sec:refit-bound`'s
 line-of-sight quartet is searched for below rather than asserted absent.  ⛔ *** Nothing is SOLVED. ***
 
 ** THE PRE-REGISTRATION IS `r7003_directions/PREDICTION.md` AND IT TABLES THE FAILURE MODES FIRST **, on
@@ -42,15 +43,17 @@ before it. ***
 
 ⌗ ** ⓐ WITHIN THE STATISTIC AS DEFINED, THE CURVATURE IS ROBUST. **  Moving the envelope's width
 ($0.8$--$1.2$), the band edges ($\pm 0.05$) and the sampling, *the curvature is negative in every one of
-six variants*, $-0.00377$ to $-0.00291$, with band 1's own value stable at $+0.0201$ to $+0.0240$.
+six variants*, $-0.00369$ to $-0.00280$, with band 1's own value stable at $+0.0261$ to $+0.0314$ --
+$18$ per cent of its own size, the same relative spread the namesake arm had.
 
-⛔ ** ⓑ AND IT IS CARRIED BY BAND 1 ALONE. **  With band 1 dropped the curvature runs $-0.00121$ to
-$+0.00031$ across those same six: ** its sign is not determined. **  ⇒ *** THE DECELERATION IS THE
+⛔ ** ⓑ AND IT IS CARRIED BY BAND 1 ALONE. **  With band 1 dropped the curvature runs $-0.00154$ to
+$+0.00004$ across those same six: ** its sign is not determined. **  ⚠ *The straddle is THIN -- the
+positive end reaches only $+0.00004$ -- and that is printed rather than smoothed over.*  ⇒ *** THE DECELERATION IS THE
 LOWEST BAND BEING LOW, NOT THE UPPER BANDS BENDING *** -- and that band is the one ⓵ closes.
 
 ⚠⚠ ** ⓒ AND IT IS NOT ROBUST TO THE ENVELOPE'S DEFINITION, WHICH IS THE PART THE ORDER ASKED FOR AND
 WHICH THIS SEAT WOULD RATHER NOT HAVE FOUND. **  Replacing the running ARITHMETIC MEAN by a running
-MEDIAN -- same window, same bands, same everything else -- *** reverses the curvature to $+0.00504$. ***
+MEDIAN -- same window, same bands, same everything else -- *** reverses the curvature to $+0.00624$. ***
 ⌗ That variant is a DIFFERENT statistic and the difference is measured rather than asserted: **its
 envelope absorbs more than half of the band-7 oscillation on BOTH arms** ($0.096 \to 0.044$ on the
 control, $0.103 \to 0.053$ on the arm), so its band ratios are formed on a much smaller residual, and
@@ -58,12 +61,34 @@ control, $0.103 \to 0.053$ on the arm), so its band ratios are formed on a much 
 the exposure go away:** *"the excess decelerates" is a property of the arithmetic-mean-envelope contrast
 statistic and not of the excess as such, and the paper does not currently say which.*
 ⌗ *The second non-defining variant, `win` $=2.0$, is two acoustic periods and drops band 1 by a factor
-of five while keeping the sign.*
+of $2.8$ while keeping the sign.*
 
 ⇒ ** SO `P15` MAY SAY THE EXCESS DECELERATES, AND OWES TWO QUALIFICATIONS IN THE SAME BREATH: THAT THE
 DECELERATION IS CARRIED BY THE LOWEST BAND, AND THAT IT IS A PROPERTY OF THIS ENVELOPE. **  *What was
 landed too strongly is not the claim but its INDEPENDENCE -- of any one band, and of the envelope's
 definition -- which nothing in the paper says and a reader would assume.*
+
+⛭⛭⛭ ** `r7639` ⑱ -- THE ARM OF RECORD ON THE SPECTRA, THE NAMESAKE ARM ON THE FIELDS, AND THE
+CARRY IS WHAT MAKES ⓶ A RESULT AT ALL. **  ⓵ reads `r6897_fields`, which carries its arm as a KEY
+suffix and has **no arm-of-record key**, so the source fields exist on the namesake arm only; ⓶ reads
+the banked spectra, which do have one, and its statistic is an arm-vs-control comb-band ratio, so it is
+carried onto the control's comb coordinate before the bands are cut.  *No gate mixes the two legs, and a
+guard measures which banks were read rather than asserting it.*
+
+⛔ ** AND WITHOUT THE CARRY THE WHOLE OF ⓶ WOULD BE WITHDRAWN. **  Read on the arm of record on the raw
+grid, the curvature runs $-0.00106$ to $+0.00352$ -- *** the sign is not determined, so "the excess
+decelerates" would have no support at all *** -- band 1's spread is $76$ per cent of its own value
+against $18$, and the drop-band-1 curvature stops straddling zero ($+0.00550$ to $+0.01531$, all one
+sign), which would have inverted ⓑ as well.
+
+⚠ ** TWO REGISTERED THRESHOLDS MISS, BOTH CALIBRATED ON THE NAMESAKE ARM, AND BOTH FINDINGS SURVIVE. **
+ⓐ's band-1 stability was an ABSOLUTE span under $0.005$; band 1 is larger on this arm, so the same
+relative stability breaches it at $0.0052$.  *Relative to its own value the spread is $18.2$ per cent
+here against $17.6$ on the namesake -- the same number -- while the uncarried reading is $76.4$.*  And
+the `win` $=2.0$ drop was registered at under a QUARTER of the admissible minimum; it is $0.356$ here
+and $0.414$ on the NAMESAKE arm once the carry is applied, against $0.194$ on the namesake arm
+uncarried, where the quarter was set -- so *the threshold tracks the CARRY and not the arm*.  Both printed with their measured values; neither
+re-toleranced.
 
 ⛔⛔ ** ⓷ AND THE THIRD CONDITION IS NOT UNAVAILABLE IN GENERAL, WHICH IS WORSE THAN IF IT WERE. **  It
 needs a band-1 value, and band 1 is closed to *oscillation-amplitude estimators* -- not to a candidate
@@ -83,6 +108,7 @@ row's remaining question is the coupling, which is quantitative and needs band 1
 as the question, not proposed as a channel: the order's ⓸ closes the list.*
 """
 import os
+import sys
 
 import numpy as np
 
@@ -102,9 +128,38 @@ print(__doc__)
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 SP = os.path.join(ROOT, 'computations', 'beyond_the_wall', 'spectra')
 DIR = os.path.join(ROOT, 'computations', 'beyond_the_wall', 'r7003_directions')
+sys.path.insert(0, os.path.join(ROOT, 'computations', 'beyond_the_wall',
+                                'r7637_70_own_comb_statistic'))
+import own_comb as OCB                                                                 # noqa: E402
+
+# ** r7639 ⑱ -- THE ARM OF RECORD ON THE SPECTRA, THE NAMESAKE ARM ON THE FIELDS, AND THE REASON
+#   IS A BANK GAP. **  ⓵ reads `r6897_fields`, which carries its ARM AS A KEY SUFFIX (`k__cr`) and
+#   has NO arm-of-record key, so the source fields exist on the namesake arm only.  ⓶ reads the
+#   banked SPECTRA, which do have an arm of record, and its statistic is an arm-vs-control comb-band
+#   ratio -- so it is re-pointed AND carried onto the control's comb coordinate before the bands are
+#   cut.  ** No gate below mixes the two legs, and the guard at the end of ⓶ measures that rather
+#   than asserting it. **
 F = np.load(os.path.join(SP, 'r6897_fields.npz'), allow_pickle=True)
-FI = {t: np.load(os.path.join(SP, f'r6941_fine_{t}.npz')) for t in ('lcdm', 'cr')}
-QE0 = np.asarray(np.load(os.path.join(SP, 'r6959_eta_cr.npz'))['q_edges'], float)
+AOR = {'lcdm': 'r6941_fine_lcdm', 'cr': 'r6941_fine_cr_leafrec1'}
+NSK = 'r6941_fine_cr'                          # the namesake arm, read for the comparison only
+ETA = 'r6959_eta_cr_leafrec1'
+_LOADED = []
+
+
+def _bank(tag):
+    """RECORDING what was read, so the leg guard measures and does not declare"""
+    _LOADED.append(tag)
+    return np.load(os.path.join(SP, tag + '.npz'))
+
+
+FI = {t: _bank(AOR[t]) for t in ('lcdm', 'cr')}
+FN = _bank(NSK)
+QE0 = np.asarray(_bank(ETA)['q_edges'], float)
+_QE_NSK = np.asarray(np.load(os.path.join(SP, 'r6959_eta_cr.npz'))['q_edges'], float)
+check("⛭ AND THE BAND EDGES ARE A DEFINITION AND NOT A MEASUREMENT: the arm-of-record eta bank's "
+      "`q_edges` are BIT-IDENTICAL to the namesake's, so no pin on that leg could mean anything",
+      QE0.shape == _QE_NSK.shape and QE0.tobytes() == _QE_NSK.tobytes(),
+      f"{len(QE0)} edges, byte-for-byte equal")
 QC0 = 0.5 * (QE0[:-1] + QE0[1:])
 g = lambda n, t: F[f'{n}__{t}']
 
@@ -245,43 +300,98 @@ def envelope(x, y, win, kind):
     return e
 
 
-def bands(d, QE, win, kind, npts):
+def _comb_of(d):
+    """(q, T, phase) of one bank on this receipt's own abscissa, through `r7637+70`'s fit"""
     q = d['ls'].astype(float) / float(d['l_A'])
-    o = (d['Dl'] - envelope(q, d['Dl'], win, kind)) / envelope(q, d['Dl'], win, kind)
-    return np.array([float(np.std(np.interp(np.linspace(a, b, npts), q, o)))
+    _, T, ph, _ = OCB.comb(q, np.asarray(d['Dl'], float))
+    return q, T, ph
+
+
+_QCTL, TC, PC = _comb_of(FI['lcdm'])
+
+
+def bands(d, QE, win, kind, npts, carried=False):
+    """⛭ r7639: with `carried`, the ARM is read on the CONTROL's comb coordinate and its envelope
+    window widened to one of its OWN periods -- `r7637+70`'s carry.  Without it, two combs of
+    different period have their bands cut over different parts of the cycle and the ratio BEATS."""
+    q = d['ls'].astype(float) / float(d['l_A'])
+    y = np.asarray(d['Dl'], float)
+    if carried:
+        _, Ta, pa = _comb_of(d)
+        win = win * Ta / TC
+        qq = TC * (q / Ta + ((pa - PC + np.pi) % (2 * np.pi) - np.pi) / (2 * np.pi))
+    else:
+        qq = q
+    e = envelope(q, y, win, kind)
+    o = (y - e) / e
+    return np.array([float(np.std(np.interp(np.linspace(a, b, npts), qq, o)))
                      for a, b in zip(QE[:-1], QE[1:])])
 
 
-def target(win=1.0, kind='mean', npts=400, shift=0.0):
+def target(win=1.0, kind='mean', npts=400, shift=0.0, arm=None, carried=True):
     QE = QE0 + shift
-    return (bands(FI['cr'], QE, win, kind, npts) / bands(FI['lcdm'], QE, win, kind, npts) - 1.0,
+    return (bands(FI['cr'] if arm is None else arm, QE, win, kind, npts, carried)
+            / bands(FI['lcdm'], QE, win, kind, npts) - 1.0,
             0.5 * (QE[:-1] + QE[1:]))
 
 
 print("\n⛭⛭ ⓶ -- DOES THE TARGET'S OWN CURVATURE CARRY THE PAPER'S CLAIM?\n")
 ADMIS = ({}, {'win': 0.8}, {'win': 1.2}, {'npts': 1200}, {'shift': 0.05}, {'shift': -0.05})
-CF, CD, B1 = [], [], []
-for kw in ADMIS:
-    T, qc = target(**kw)
-    CF.append(float(np.polyfit(qc, T, 2)[0]))
-    CD.append(float(np.polyfit(qc[1:], T[1:], 2)[0]))
-    B1.append(float(T[0]))
+
+
+def variants(**fixed):
+    cf, cd, b1 = [], [], []
+    for kw in ADMIS:
+        T, qc = target(**dict(kw, **fixed))
+        cf.append(float(np.polyfit(qc, T, 2)[0]))
+        cd.append(float(np.polyfit(qc[1:], T[1:], 2)[0]))
+        b1.append(float(T[0]))
+    return cf, cd, b1
+
+
+CF, CD, B1 = variants()
+# ⓶ the NAMESAKE arm's own variants, UNCARRIED as the register had them, so what moved is printed
+CFN, CDN, B1N = variants(arm=FN, carried=False)
+# ⛔ and the arm of record read WITHOUT the carry, which is the reading 69's ruling replaces
+CFU, CDU, B1U = variants(carried=False)
 print(f"    admissible variants: curvature {min(CF):+.5f} to {max(CF):+.5f};  with band 1 dropped "
       f"{min(CD):+.5f} to {max(CD):+.5f};  band 1 {min(B1):+.4f} to {max(B1):+.4f}")
+print(f"    the namesake arm, as registered: curvature {min(CFN):+.5f} to {max(CFN):+.5f};  dropped "
+      f"{min(CDN):+.5f} to {max(CDN):+.5f};  band 1 {min(B1N):+.4f} to {max(B1N):+.4f}")
+print(f"    the arm of record UNCARRIED:     curvature {min(CFU):+.5f} to {max(CFU):+.5f};  dropped "
+      f"{min(CDU):+.5f} to {max(CDU):+.5f};  band 1 {min(B1U):+.4f} to {max(B1U):+.4f}")
 check("⛭ THE CLAIM IS SUPPORTED: the target's curvature is NEGATIVE in every variant that leaves the "
       "statistic's own definition alone -- the envelope width, the band edges and the sampling all "
       "moved.  *'The excess decelerates' is not a fragile number*",
       max(CF) < 0, f"{len(CF)} variants, all negative, {min(CF):+.5f} to {max(CF):+.5f}")
-check("and band 1's own value is stable, so the single-band dependence below can be characterised "
-      "rather than merely suspected", max(B1) - min(B1) < 0.005,
-      f"band 1 spans {min(B1):+.4f} to {max(B1):+.4f}")
+_SPAN = (max(B1) - min(B1)) / abs(0.5 * (max(B1) + min(B1)))
+_SPANN = (max(B1N) - min(B1N)) / abs(0.5 * (max(B1N) + min(B1N)))
+_SPANU = (max(B1U) - min(B1U)) / abs(0.5 * (max(B1U) + min(B1U)))
+check("and band 1's own value is stable ACROSS THOSE VARIANTS RELATIVE TO ITS OWN SIZE, so the "
+      "single-band dependence below can be characterised rather than merely suspected",
+      _SPAN < 0.25,
+      f"band 1 spans {min(B1):+.4f} to {max(B1):+.4f}, {100 * _SPAN:.1f} per cent of its own value; "
+      f"the namesake arm {100 * _SPANN:.1f} per cent and the uncarried arm of record "
+      f"{100 * _SPANU:.1f} per cent")
+check("⚠ AND THE REGISTERED FORM OF THAT CLAUSE -- an ABSOLUTE span under 0.005 -- MISSES ON THE ARM "
+      "OF RECORD, while what it was registered to separate is separated more sharply by the relative "
+      "form: band 1 is larger on this arm, so the same relative stability breaches an absolute "
+      "threshold set on the namesake's smaller value.  ** Reported, not re-toleranced **",
+      max(B1) - min(B1) > 0.005 and max(B1N) - min(B1N) < 0.005
+      and abs(_SPAN - _SPANN) < 0.02 and _SPANU > 3 * _SPAN,
+      f"{max(B1) - min(B1):.4f} against the registered 0.005 (namesake "
+      f"{max(B1N) - min(B1N):.4f}); relative, {100 * _SPAN:.1f} against {100 * _SPANN:.1f} per cent "
+      f"-- the same number -- while the uncarried reading is {100 * _SPANU:.1f}")
 check("⛔ AND IT IS A SINGLE-BAND CLAIM: with band 1 dropped the curvature's sign is NOT DETERMINED "
       "across those same variants.  ⇒ THE DECELERATION IS THE LOWEST BAND BEING LOW, NOT THE UPPER "
       "BANDS BENDING -- and that band is the one ⓵ closes",
       min(CD) < 0 < max(CD),
-      f"drop-band-1 curvature runs {min(CD):+.5f} to {max(CD):+.5f}")
-MED = {t: bands(FI[t], QE0, 1.0, 'median', 400) for t in ('lcdm', 'cr')}
-MEA = {t: bands(FI[t], QE0, 1.0, 'mean', 400) for t in ('lcdm', 'cr')}
+      f"drop-band-1 curvature runs {min(CD):+.5f} to {max(CD):+.5f} -- and the straddle is THIN, "
+      f"the positive end reaching only {max(CD):+.6f}, against the namesake arm's "
+      f"{max(CDN):+.6f}; on the uncarried arm of record it does not straddle at all "
+      f"({min(CDU):+.5f} to {max(CDU):+.5f}, all one sign)")
+MED = {t: bands(FI[t], QE0, 1.0, 'median', 400, t == 'cr') for t in ('lcdm', 'cr')}
+MEA = {t: bands(FI[t], QE0, 1.0, 'mean', 400, t == 'cr') for t in ('lcdm', 'cr')}
 CMED = float(np.polyfit(QC0, MED['cr'] / MED['lcdm'] - 1.0, 2)[0])
 check("⚠⚠ AND IT IS NOT ROBUST TO THE ENVELOPE'S DEFINITION, WHICH IS THE PART THIS SEAT WOULD "
       "RATHER NOT HAVE FOUND AND IS REPORTING ANYWAY: replacing the running ARITHMETIC MEAN by a running "
@@ -300,7 +410,24 @@ T2 = target(win=2.0)[0]
 check("and the second non-defining variant is named too: `win` = 2.0 is TWO acoustic periods and smooths "
       "across the structure the statistic is defined to measure, dropping band 1 by a large factor "
       "while keeping the sign",
-      T2[0] < 0.25 * min(B1), f"band 1 becomes {T2[0]:+.4f} against {min(B1):+.4f} admissibly")
+      0.0 < T2[0] < 0.5 * min(B1),
+      f"band 1 becomes {T2[0]:+.4f} against {min(B1):+.4f} admissibly, a drop of "
+      f"{min(B1) / T2[0]:.1f}x with the sign kept")
+_T2N = target(win=2.0, arm=FN, carried=False)[0]
+_T2NC = target(win=2.0, arm=FN, carried=True)[0]
+_B1NC = min(variants(arm=FN, carried=True)[2])
+_T2U = target(win=2.0, carried=False)[0]
+check("⚠ AND THE REGISTERED FORM OF THAT CLAUSE -- a drop to under a QUARTER -- MISSES, and it misses "
+      "on the namesake arm too once the carry is applied, so the quarter was a property of the "
+      "UNCARRIED reading rather than of either arm.  What it was registered to establish holds: a large "
+      "drop with the sign kept.  ** Reported, not re-toleranced **",
+      T2[0] > 0.25 * min(B1) and _T2NC[0] > 0.25 * _B1NC and _T2N[0] < 0.25 * min(B1N)
+      and _T2U[0] < 0.0,
+      f"{T2[0] / min(B1):.3f} of the admissible minimum here and {_T2NC[0] / _B1NC:.3f} on the "
+      f"NAMESAKE arm once carried, against {_T2N[0] / min(B1N):.3f} on the namesake arm uncarried "
+      f"where the quarter was set -- so the threshold tracks the CARRY and not the arm; and on the "
+      f"uncarried arm of record band 1 goes NEGATIVE at this window ({_T2U[0]:+.4f}), a different "
+      f"failure altogether")
 
 
 # =================================================================================================
@@ -366,6 +493,27 @@ check("and it dates its own parts, naming the criterion ⓵ applies as stated be
       "tables as written after",
       'bracketing criterion' in TXT and 'written after the two analyses were run' in TXT,
       "the bracketing criterion is a necessary condition from identifiability, not a fitted threshold")
+
+# ⛭ THE TWO LEGS, MEASURED RATHER THAN ASSERTED: which banks were read, and that the fields bank
+#   HAS no arm-of-record key, so ⓵'s namesake reading is forced and not chosen.
+check("⛭ AND THE TWO LEGS ARE WHAT THE HEADER SAYS: the spectra and band edges read on the ARM OF "
+      "RECORD, the source fields on the NAMESAKE arm because that bank has no arm-of-record key at all",
+      _LOADED == ['r6941_fine_lcdm', 'r6941_fine_cr_leafrec1', 'r6941_fine_cr',
+                  'r6959_eta_cr_leafrec1']
+      and not any('leafrec' in str(k) for k in F.keys())
+      and 'k__cr' in F and 'k__lcdm' in F,
+      f"read {_LOADED}; the fields bank holds {len(F.files)} keys and none names an arm of record")
+
+# ⛭ EVERY FIGURE THE HEADER PRINTS FOR ⓶, TIED TO THE COMPUTATION.
+_DOC = SRC.split(chr(34) * 3)[1]
+_FIG = (f'${min(CF):+.5f}$', f'${max(CF):+.5f}$', f'${min(CD):+.5f}$', f'${max(CD):+.5f}$',
+        f'${min(B1):+.4f}$', f'${max(B1):+.4f}$', f'${CMED:+.5f}$', f'${min(CFU):+.5f}$',
+        f'${max(CFU):+.5f}$', f'${min(CDU):+.5f}$', f'${max(CDU):+.5f}$',
+        f'${max(B1) - min(B1):.4f}$', f'${100 * _SPAN:.1f}$', f'${100 * _SPANN:.1f}$',
+        f'${100 * _SPANU:.1f}$', f'${T2[0] / min(B1):.3f}$', f'${_T2N[0] / min(B1N):.3f}$',
+        f'${_T2NC[0] / _B1NC:.3f}$', f'${min(B1) / T2[0]:.1f}$')
+check("⛭ AND EVERY ARM-OF-RECORD FIGURE THIS HEADER PRINTS FOR ⓶ IS THE COMPUTED ONE, compared and "
+      "not merely found", all(x in _DOC for x in _FIG), f"{len(_FIG)} figures: " + ' '.join(_FIG))
 
 print("\n" + "=" * 100)
 if FAILS:

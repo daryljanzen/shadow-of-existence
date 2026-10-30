@@ -251,8 +251,12 @@ C49 = open(os.path.join(RCP, 'P15_the_two_channels_compose_multiplicatively_and_
 check("⓶ⓐ THE RANGE, ANSWERED FROM `cc66.49`'s OWN FILE RATHER THAN FROM MEMORY: its fit abscissa is the "
       "centres of ALL SEVEN bands, so band 1 IS in the flatness measurement.  ⇒ The disposal is NOT "
       "circular on range, and the order's first reading of the hazard does not fire",
+      # ⛭ r7639+cc66.25: the eta-bank line was re-pointed to the arm of record at this revision,
+      #   so the pin follows it.  The CLAUSE is unchanged -- the edges come from the eta bank and the
+      #   abscissa is all seven band centres -- and the arm is now named in the pin rather than
+      #   assumed.  *A pin on a source line follows that line when correct work moves it.*
       'Q2 = QC ** 2' in C49 and 'QC = 0.5 * (QE[:-1] + QE[1:])' in C49
-      and "QE = np.load(os.path.join(SP, 'r6959_eta_cr.npz'))['q_edges']" in C49
+      and "ETA = 'r6959_eta_cr_leafrec1'" in C49 and "QE = _bank(ETA)['q_edges']" in C49
       and len(QC) == 7,
       f"Q2 = QC ** 2 over {len(QC)} band centres, q = {QC[0]:.2f}..{QC[-1]:.2f}")
 CH = {}

@@ -1,0 +1,8 @@
+cr           carry=False identity 2.9e-13 | amp -0.243 both -0.220 ratio 1.106 | band1 amp 0.958 phase 0.284 | |phase| med 0.388 deg, |R-1| med 6.11%
+                             AMP signs [-0.231, -0.26, -0.227, -0.256]  BOTH signs [-0.208, -0.236, -0.204, -0.232]
+cr           carry=True  identity 1.8e-13 | amp -0.229 both -0.083 ratio 2.764 | band1 amp 0.834 phase 0.545 | |phase| med 0.204 deg, |R-1| med 6.16%
+                             AMP signs [-0.217, -0.246, -0.213, -0.241]  BOTH signs [-0.069, -0.102, -0.065, -0.097]
+cr_leafrec1  carry=False identity 8.0e-14 | amp -0.166 both -0.236 ratio 0.705 | band1 amp 0.814 phase 0.570 | |phase| med 5.550 deg, |R-1| med 7.56%
+                             AMP signs [-0.159, -0.179, -0.154, -0.174]  BOTH signs [-0.181, -0.274, -0.209, -0.28]
+cr_leafrec1  carry=True  identity 1.9e-13 | amp -0.224 both -0.119 ratio 1.879 | band1 amp 0.878 phase 0.472 | |phase| med 0.240 deg, |R-1| med 6.53%
+                             AMP signs [-0.213, -0.237, -0.21, -0.234]  BOTH signs [-0.108, -0.134, -0.104, -0.13]

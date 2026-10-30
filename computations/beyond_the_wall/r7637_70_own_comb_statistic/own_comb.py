@@ -107,3 +107,73 @@ def null(banks, QE, stat, A=0.5, nph=24):
         E = E[0] if isinstance(E, tuple) else E
         out.append((step(E), rise(E, QE)))
     return np.array(out)
+
+
+# ================================================================================================================
+# r7639+70: THE RETENTION STATISTIC'S OWN-COMB FORM (69's r7639).  cc66's `retained(win, nb, hi)` (the cross-term
+# receipt) reads, per band, the retention r = RMS(projected D_l oscillation) / RMS(source oscillation) on each arm,
+# and the arm/control ratio; its slope is averaged over twelve (window, bands) settings.  Both sides of that ratio
+# carry a comb, and on the arm of record both have parted (D_l 1.0045 / 1.0090, source 1.0115 / 1.0170).  So the
+# step statistic's rule is applied to BOTH sides: the arm's D_l carried onto the control's D_l comb coordinate,
+# the arm's source onto the control's source comb coordinate, each envelope window one of its own periods.
+#   banks = {'lcdm': {'QL', 'Dl', 'QK', 'S2'}, 'cr': {...}}   (S2 = S_i ** 2, the source's power per mode)
+# ================================================================================================================
+SETTINGS = [(w, nb, hi) for w in (0.75, 1.0, 1.25, 1.5) for nb, hi in ((7, 5.75), (10, 6.10), (5, 5.75))]
+_R = _lift(os.path.join(RC, 'P15_the_cross_term_is_not_the_channel_and_every_projected_term_carries_the_excess.py'),
+           ['env_a', 'osc', 'retained'], {'np': np})
+
+
+def retained_shared(banks, win, nb, hi):
+    """cc66's `retained`, lifted unchanged and fed these banks."""
+    _R.update(QL={t: b['QL'] for t, b in banks.items()}, QK={t: b['QK'] for t, b in banks.items()},
+              PR={t: {'Dl': b['Dl']} for t, b in banks.items()},
+              SO={t: {'S_i': np.sqrt(b['S2'])} for t, b in banks.items()})
+    x, y, _ = _R['retained'](win, nb, hi)
+    return x, y
+
+
+def retention_combs(banks):
+    """(T, phi) of every bank's D_l and source comb -- fitted once, shared by every setting."""
+    return {t: {'L': comb(b['QL'], b['Dl'])[1:3], 'K': comb(b['QK'], b['S2'])[1:3]} for t, b in banks.items()}
+
+
+def retained_own(banks, win, nb, hi, C=None):
+    """The own-comb retention: each side of the arm carried onto the control's comb coordinate on that side."""
+    C = C or retention_combs(banks)
+    lo = 0.35 + 0.5 * win + 1e-9
+    ed = np.linspace(lo, hi, nb + 1)
+    side = {}
+    for s, (qk, yk) in (('L', ('QL', 'Dl')), ('K', ('QK', 'S2'))):
+        Tc, pc = C['lcdm'][s]
+        Ta, pa = C['cr'][s]
+        dphi = (pa - pc + np.pi) % (2 * np.pi) - np.pi
+        b = banks['lcdm']
+        side[('lcdm', s)] = (b[qk], _R['osc'](b[qk], b[yk], win))          # cc66's own osc, as `retained` reads it
+        b = banks['cr']
+        side[('cr', s)] = (Tc * (b[qk] / Ta + dphi / (2 * np.pi)), _R['osc'](b[qk], b[yk], win * Ta / Tc))
+    xs, ys = [], []
+    for a, b_ in zip(ed[:-1], ed[1:]):
+        g = np.linspace(a, b_, 400)
+        r = {t: np.interp(g, *side[(t, 'L')]).std() / np.interp(g, *side[(t, 'K')]).std() for t in ('lcdm', 'cr')}
+        xs.append((a + b_) / 2)
+        ys.append(r['cr'] / r['lcdm'])
+    return np.array(xs), np.array(ys)
+
+
+def slope12(fn, banks, **kw):
+    """The twelve-setting slope: (mean, spread) of the per-setting OLS slopes, as the slope receipt reads it."""
+    s = [np.polyfit(*fn(banks, w, nb, hi, **kw), 1)[0] for w, nb, hi in SETTINGS]
+    return float(np.mean(s)), float(np.std(s))
+
+
+def retention_null(banks, A_L, A_K, p):
+    """r7055's retention injection: each bank's own envelope, IDENTICAL amplitude on both arms at each bank's own
+    fitted comb (D_l side A_L, source side A_K), a common phase p.  Returns banks of the same shape."""
+    out = {}
+    for t, b in banks.items():
+        eL, TL, pL, _ = comb(b['QL'], b['Dl'])
+        eK, TK, pK, _ = comb(b['QK'], b['S2'])
+        out[t] = dict(QL=b['QL'], QK=b['QK'],
+                      Dl=eL * (1 + A_L * np.cos(2 * np.pi * b['QL'] / TL + pL + p)),
+                      S2=np.maximum(eK * (1 + A_K * np.cos(2 * np.pi * b['QK'] / TK + pK + p)), 0.0))
+    return out

@@ -29,8 +29,9 @@ to the one paper that had a seat auditing it. ***
        receipt that propagated the covariance through the locator did so at the fourth peak and says in terms it
        does not re-open the intercept.  Honest form: "inside the locator's window-to-window spread".
   (ii) "the relative phase is determined ... at better than SEVEN STANDARD DEVIATIONS" (`sec:refit-bound`) --
-       the +-0.000974 rad is the standard error over disjoint stretches of the phase difference between two
-       COMPUTED spectra; no noise enters it.  Honest form: "to seven times its stretch-to-stretch standard error".
+       the +-0.015101 rad is the standard error over disjoint stretches of the phase difference between two
+       COMPUTED spectra; no noise enters it (+-0.000974 before r7639+cc66.17 moved its source onto the
+       arm of record -- the figure moved, the clause did not).  Honest form: "to seven times its stretch-to-stretch standard error".
   (ii) "a minority ... INDISTINGUISHABLE FROM ZERO at the lowest bands" (`sec:scope`, the struck row's frontier
        summary) -- from `P15_the_bank_already_existed...`, the source `r7033` gated as drawing no noise and whose
        body passage `r7035` corrected.  ⚑ *THIS ONE IS MY MISS: it was in the paper at the `r7033` audit base and
@@ -192,12 +193,19 @@ check("    and the receipt that DID propagate the covariance through the locator
       and "It is not the sky's uncertainty" in ' '.join(src(FP).split()))
 NS = 'P15_no_statistic_this_construction_can_build_resolves_the_two_channels_and_the_phase_step_dies_on_a_matched_width_control'
 t_ns = src(NS)
-check("(ii)2 \"better than seven standard deviations\": the +-0.000974 is the standard error over disjoint stretches of "
+# ⛭ r7639+cc66.18: the figure and the pinned LINE both moved with r7639+cc66.17's re-point of the
+#   source receipt onto the arm of record -- +-0.000974 rad on the namesake arm, +-0.015101 on the arm
+#   of record -- and the CLAUSE this asserts is unchanged: it is still a standard error over disjoint
+#   stretches of a phase difference between two COMPUTED spectra, with no noise anywhere in the source.
+#   ⌗ *Edited by cc66 rather than routed, because cc66's own re-point is what inverted this gate; the
+#   owning seat may revert or sharpen it.  A pin on a function's PARAMETER NAMES is fragile to any
+#   refactor that does not change what the line does -- that choice is the owning seat's to make.*
+check("(ii)2 \"better than seven standard deviations\": the +-0.015101 is the standard error over disjoint stretches of "
       "the phase difference between two COMPUTED spectra, with no noise anywhere in the source",
       not evidence(NS)
       and 'DU = np.array([delta_on(x, x + 1.0) for x in np.arange(QE0[1], QE0[-1] - 1.0 + 1e-9, 1.0)])' in t_ns
       and 'np.std(DU, ddof=1)' in t_ns
-      and 'pa, pc = phase_of(g, OA, a, b), phase_of(g, OC, a, b)' in t_ns, f"evidence {evidence(NS)}")
+      and 'pa, pc = phase_of(q, va, a, b), phase_of(q, vc, a, b)' in t_ns, f"evidence {evidence(NS)}")
 BK = 'P15_the_bank_already_existed_and_the_doppler_carries_a_growing_minority_of_the_excess'
 R7033 = 'P15_the_three_instruments_with_no_noise_model_one_can_be_given_a_floor_and_ten_passages_quote_a_significance_or_share_the_instrument_cannot_bear'
 check("(ii)3 \"indistinguishable from zero at the lowest bands\": its source is the one r7033 gated as drawing no "

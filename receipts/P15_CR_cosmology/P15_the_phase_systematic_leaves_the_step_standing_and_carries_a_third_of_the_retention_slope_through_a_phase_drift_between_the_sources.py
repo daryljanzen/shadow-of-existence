@@ -139,10 +139,14 @@ FB = {t: np.load(os.path.join(SP, n)) for t, n in (('lcdm', 'r6941_fine_lcdm.npz
 FQ = {t: FB[t]['ls'].astype(float) / float(FB[t]['l_A']) for t in FB}
 FY = {t: np.asarray(FB[t]['Dl'], float) for t in FB}
 INJ = {}
-NS = lift(STEPF, ['env', 'band_excess'], {'np': np, 'savgol_filter': savgol_filter, 'QE': QE,
-                                          'fine': lambda t: INJ[t]})
+# ⛔ r7639+cc66.25: this lifts the SHARED-comb reading by name.  `band_excess` in that file was
+#   CARRIED at r7639+cc66.8, which both gave it a free variable no lifter supplies AND changed the
+#   quantity -- and this receipt's checks below say "shared comb" and assert the alternation, so the
+#   carried row would have been the wrong object measured green.
+NS = lift(STEPF, ['env', 'band_excess_shared'], {'np': np, 'savgol_filter': savgol_filter,
+                                                 'QE': QE, 'fine': lambda t: INJ[t]})
 INJ.update({t: (FQ[t], FY[t]) for t in FB})
-T_real = NS['band_excess']('mean')
+T_real = NS['band_excess_shared']('mean')
 step_real = float(T_real[0] - T_real[1:].mean())
 check("the lifted statistic on the arm of record, shared comb: band 1 +0.0186, band 6 +0.0141 BELOW it, "
       "band 1 below the rest by 0.0617 -- the alternation the two arms' parted combs make",
@@ -159,7 +163,7 @@ def step_null(A):
         for t in FB:
             e, T, ph, _ = CPF[t]
             INJ[t] = (FQ[t], e * (1 + A * np.cos(2 * np.pi * FQ[t] / T + ph + p)))
-        E.append(NS['band_excess']('mean'))
+        E.append(NS['band_excess_shared']('mean'))   # r7639+cc66.25: the shared reading, as above
     return np.array(E)
 
 

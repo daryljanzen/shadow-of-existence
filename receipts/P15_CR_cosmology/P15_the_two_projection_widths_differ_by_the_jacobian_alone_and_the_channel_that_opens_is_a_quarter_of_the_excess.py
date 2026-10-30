@@ -4,7 +4,8 @@ WHICH MAKES THE DIFFERENCE A PREDICTION OF THE TWO-RATE ASSIGNMENT RATHER THAN A
 INSTRUMENT -- AND THE CONTRAST CHANNEL THAT DIFFERENCE OPENS IS AT MOST A QUARTER OF THE EXCESS. **
 
 ** PATH PROVENANCE, IN THE HEADER, ON THE STANDING REQUIREMENT. **  *** Every model number below is the
-HIERARCHY path *** -- `r6959_eta_{lcdm,cr}` (the eta-resolved bank) and `r6941_fine_{lcdm,cr}` (the
+HIERARCHY path *** -- `r6959_eta_{lcdm,cr_leafrec1}` (the eta-resolved bank) and
+`r6941_fine_{lcdm,cr_leafrec1}` (the
 banked spectra `cc66.40`'s contrast statistic is computed on).  `sec:refit-bound`'s quartet
 $222/538/818/1134$ is the LINE-OF-SIGHT path's and is not read -- searched for by grepping this file for
 each of the four values and for every line-of-sight bank name (`c54.17*`, `c54.178_*`, `L814_*`,
@@ -53,8 +54,20 @@ knob for the projection width, the instrument is right not to have one, and the 
 from the two-rate assignment.**  *Reported rather than substituted for, on the standing instruction.*
 
 ⛭⛭ ** ⓶ SO THE FILTER IS APPLIED IN THE KERNEL, WHICH IS THE PROJECTION SECTOR'S WHOLE CONTENT. **  The
-order's operation is done analytically on the control's own projection: hold the source's acoustic phase
-`cos(k rs_leaf)` and stretch ONLY the Bessel argument by the measured $s = 1.135$,
+order's operation is done analytically on the control's own projection:
+  ** ⛔ r7639 ⑴ -- RE-POINTED TO THE ARM OF RECORD, AND THE TARGET CARRIED ONTO THE CONTROL'S COMB. **
+  *** The carry is what makes this receipt's second tooth readable at all: read on the control's comb
+  the target's curvature is $+0.00342$ -- POSITIVE -- so "the channel ACCELERATES where the target
+  DECELERATES" has no direction to test against and the verdict cannot be reached.  Carried it is
+  $-0.00309$ and the verdict stands. ***  ⌗ *The carry does NOT apply to the other three rows:
+  `plane_wave` and `stretch` are eta-window integrals over the `r6959_eta` profiles, with no envelope
+  and no band statistic in them, so there is nothing to carry -- they move with the eta re-point and
+  not with the comb.*  ⛔ *And the pin that fixes the arm is on the carried BAND VECTOR, not on the
+  curvature: a curvature pin was tried first and passed on EITHER arm, because the namesake arm carried
+  the same way lands within $5\times10^{-4}$ of the arm of record.  Third time in four receipts that the
+  perturbation, and not the reasoning, found the pin that does not pin.*
+ hold the source's acoustic phase
+`cos(k rs_leaf)` and stretch ONLY the Bessel argument by the measured $s = 1.152$,
 
     I_l(k; s) = | INT g(eta) exp(i k rs_leaf) j_l( k (eta_0 - a - s (eta - a)) ) d eta |
 
@@ -68,18 +81,18 @@ local rate $\sqrt{1-l^2/x^2}$, which vanishes there. **  *The proxy gives $-29.7
 band; the instrument's own kernel gives $+2.0$.*
 
 ⚠ ** AND THE SIGN IS NOT DETERMINED ON PAPER, BECAUSE A STRETCH NEEDS A FIXED POINT. **  Anchored at the
-visibility's MEAN the departure runs $+0.0034 \to +0.0196$; anchored at its PEAK it runs $-0.0034 \to
-+0.0016$ and crosses zero, where $G$ is not a ratio of anything and is reported UNDEFINED.  *A stretch
+visibility's MEAN the departure runs $+0.0038 \to +0.0220$; anchored at its PEAK it runs $-0.0038 \to
++0.0018$ and crosses zero, where $G$ is not a ratio of anything and is reported UNDEFINED.  *A stretch
 about the wrong point is a stretch plus a displacement, and a displacement of the window moves the COMB
 rather than the contrast.*
 
 ⛔ ** THE VERDICT: IT FAILS THE CURVATURE TOOTH UNDER BOTH ANCHORINGS AND IS AT MOST A QUARTER OF THE
-EXCESS. **  Curvature $+0.00016$ and $+0.00037$ against the target's $-0.00327$: ** it ACCELERATES where
-the target decelerates. **  And at the top band it delivers $+1.96$ per cent against the $+7.62$ the
+EXCESS. **  Curvature $+0.00018$ and $+0.00041$ against the target's $-0.00309$: ** it ACCELERATES where
+the target decelerates. **  And at the top band it delivers $+2.20$ per cent against the $+7.95$ the
 measurement needs.  ⇒ *** NOT THE CARRIER.  NOT EXCLUDED AS A CONTRIBUTOR. ***
 
 ⚠ ** AND THE FILTER ITSELF NEEDED A THIRD TOOTH, WHICH THE SUPERSEDED PASS EXPOSED. **  Those
-plane-wave numbers run $-0.0332 \to -0.2968$: $G = 8.93$ and curvature $-0.0014$, ** passing both
+plane-wave numbers run $-0.0395 \to -0.3136$: $G = 7.94$ and curvature $-0.0015$, ** passing both
 pre-registered teeth while moving the contrast the WRONG WAY in every band. **  $G$ is a ratio of a
 departure to a departure and is blind to their common sign.  ⇒ *The filter's first tooth is now SIGN,
 and this is the second revision running in which this statistic returned a number outside its domain.*
@@ -117,8 +130,20 @@ print(__doc__)
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 SP = os.path.join(ROOT, 'computations', 'beyond_the_wall', 'spectra')
 DIR = os.path.join(ROOT, 'computations', 'beyond_the_wall', 'r6999_directions')
-A = {t: np.load(os.path.join(SP, f'r6959_eta_{t}.npz')) for t in ('lcdm', 'cr')}
-F = {t: np.load(os.path.join(SP, f'r6941_fine_{t}.npz')) for t in ('lcdm', 'cr')}
+# ** r7639 ⑴ -- THE ARM OF RECORD, AND THE CARRY WHERE IT APPLIES. **  Every arm read is `_leafrec1`.
+#   The TARGET -- the arm's band excess over the control's, from `r6941_fine_*` -- is carried onto the
+#   control's comb coordinate before the bands are cut, because a 0.70-wide band holds less than one
+#   comb period and the ratio beats when the periods differ.  ⛔ *That is the whole of this receipt's
+#   arm-of-record failure: read on the control's comb the target's curvature is +0.00342 and "the target
+#   DECELERATES" is false, so the second tooth's verdict cannot be read at all.  Carried it is -0.00309.*
+#   ⌗ **The carry does NOT apply to the other three rows.**  `plane_wave()` and `stretch()` are
+#   eta-window integrals over the `r6959_eta` profiles, not comb-band RMS of a spectrum -- there is no
+#   envelope and no band statistic in them, so there is nothing to carry.  They move with the eta
+#   re-point and not with the comb.
+AOR = {'lcdm': 'r6941_fine_lcdm', 'cr': 'r6941_fine_cr_leafrec1'}
+ETA = {'lcdm': 'r6959_eta_lcdm', 'cr': 'r6959_eta_cr_leafrec1'}
+A = {t: np.load(os.path.join(SP, ETA[t] + '.npz')) for t in ('lcdm', 'cr')}
+F = {t: np.load(os.path.join(SP, AOR[t] + '.npz')) for t in ('lcdm', 'cr')}
 QE = np.asarray(A['cr']['q_edges'], float)
 QC = 0.5 * (QE[:-1] + QE[1:])
 NL = 9
@@ -133,7 +158,7 @@ SOLVEMARK = ('ACOUSTIC_two_arm', 'subprocess', 'os.system')                     
 check("⛔ PATH PROVENANCE: no line-of-sight quartet value and no line-of-sight bank name occurs in the "
       "executable body -- every model number below is the HIERARCHY path's",
       not any(m in BODY for m in LOSMARK),                                                # noscan
-      "r6959_eta_{lcdm,cr} and r6941_fine_{lcdm,cr} only")
+      "r6959_eta_{lcdm,cr_leafrec1} and r6941_fine_{lcdm,cr_leafrec1} only")
 check("and nothing is SOLVED: the instrument is neither imported nor shelled out to, and no spectrum "
       "is generated here",
       not any(m in BODY for m in SOLVEMARK),                                              # noscan
@@ -289,12 +314,44 @@ def teeth(r):
 
 print("\n⛭⛭ ⓶ -- THE FILTER, APPLIED IN THE INSTRUMENT'S OWN PROJECTION KERNEL\n")
 S = W['cr']['chi-half'][0] / W['lcdm']['chi-half'][0]
-TGT, dT = bands(F['cr']) / bands(F['lcdm']), None
-dT, gT, cT = teeth(bands(F['cr']) / bands(F['lcdm']))
+sys.path.insert(0, os.path.join(ROOT, 'computations', 'beyond_the_wall',
+                                 'r7639_cc66_P15_repoint_paper'))
+import own_comb_kinds as OCK                                                           # noqa: E402
+
+_BANKS = {t: (F[t]['ls'].astype(float) / float(F[t]['l_A']), F[t]['Dl']) for t in ('lcdm', 'cr')}
+_Tc, _pc, _Ta, _pa, _dphi = OCK._combs(_BANKS)
+check("⛭ THE TWO ARMS' COMBS ARE FITTED BEFORE THE TARGET'S BANDS ARE CUT, and they DIFFER -- which is "
+      "why the target is carried onto the control's comb coordinate",
+      abs(_Ta - _Tc) > 1e-4,
+      f"control T {_Tc:.4f} phi {_pc:.3f}; arm T {_Ta:.4f} phi {_pa:.3f}; dphi {_dphi:+.4f}")
+TGT = 1.0 + OCK.band_excess_own_kind(_BANKS, 'mean', QE)
+dT, gT, cT = teeth(TGT)
+check("⛔ AND THE TARGET'S CURVATURE IS NEGATIVE ON THE ARM OF RECORD, which is what makes the second "
+      "tooth readable at all -- read on the CONTROL's comb it is +0.00342 and the tooth has no "
+      "direction to test against",
+      cT < 0, f"carried curvature {cT:+.5f} against the shared-comb reading's +0.00342")
+# ⛔ r7639 ⑴ -- AND THE ARM IS PINNED ON THE BAND VECTOR, NOT ON THE CURVATURE.
+#   A curvature pin was tried first and FAILED TO PIN: carried, the namesake arm's curvature sits
+#   within 5e-4 of the arm of record's, so the pin passed on either and said nothing about which was
+#   read.  ** The band vector separates them: the two carried readings differ by up to 0.0055, where a
+#   5e-4 half-width admits neither for the other. **  *Third time in four receipts that the
+#   perturbation, not the reasoning, found the pin that does not pin.*
+TGT_PINNED = np.array([0.02946, 0.05952, 0.06099, 0.06391, 0.07767, 0.07280, 0.07946])
+TGT_NAMESAKE = np.array([0.02832, 0.05445, 0.05632, 0.06056, 0.07342, 0.06990, 0.07399])
+check("⛔ THE TARGET IS PINNED TO THE ARM OF RECORD on its carried band vector, and the pin EXCLUDES "
+      "the namesake arm carried the same way -- which a pin on the curvature did NOT",
+      float(np.max(np.abs(dT - TGT_PINNED))) < 5e-4
+      and float(np.max(np.abs(TGT_NAMESAKE - TGT_PINNED))) > 3e-3,
+      f"max |target - pinned| = {float(np.max(np.abs(dT - TGT_PINNED))):.2e}; the namesake arm sits "
+      f"{float(np.max(np.abs(TGT_NAMESAKE - TGT_PINNED))):.4f} away")
 dW, gW, cW = teeth(plane_wave())
 dM, gM, cM = teeth(stretch(S, 'mean'))
 dP, gP, cP = teeth(stretch(S, 'peak'))
 print(f"    the measured conformal-width ratio s = {S:.5f}   (half-fall definition, named with it)")
+check("⛔ AND THE ETA BANK IS PINNED WITH IT: the conformal-width ratio separates the two banks, so "
+      "this receipt's eta half is fixed to the arm of record too and not only its spectrum half",
+      abs(S - 1.15196) < 1e-3,
+      f"s = {S:.5f} against the namesake bank's 1.13496")
 print("    target        " + "  ".join(f"{x:+.5f}" for x in dT))
 print("    mean-anchored " + "  ".join(f"{x:+.5f}" for x in dM))
 print("    peak-anchored " + "  ".join(f"{x:+.5f}" for x in dP))

@@ -1,0 +1,13 @@
+  namesake, uncarried -- `cc66.46`'s published reading 1.0215  1.0574  1.0519  1.0606  1.0748  1.0659  1.0762
+  arm of record, UNCARRIED -- beats                    1.0186  1.0818  1.0373  1.0868  1.1005  1.0141  1.1617
+  arm of record, CARRIED -- the target                 1.0295  1.0595  1.0610  1.0639  1.0777  1.0728  1.0795
+  namesake, carried -- for completeness                1.0283  1.0544  1.0563  1.0606  1.0734  1.0699  1.0740
+  `cc66.46`s published literals                        1.0215  1.0574  1.0519  1.0606  1.0748  1.0659  1.0762
+  `r7637+70`s own-comb row                             1.0295  1.0595  1.0610  1.0639  1.0777  1.0728  1.0795
+
+  VALIDATION ⓵ the namesake row reproduces the published literals to 3.9e-05 (the receipts assert 5e-4)
+  VALIDATION ⓶ the carried row reproduces 70's own-comb row to 3.8e-05
+
+  ⛔ AND THE UNCARRIED ARM-OF-RECORD ROW IS WHY THE CARRY IS NEEDED: band 6 reads 1.0141 between bands of 1.1005 and 1.1617 -- a collapse of 86 per cent in the excess between neighbours, which is the alternation and not a feature.
+
+⛭ Both reproductions hold, so the carried row is the target the three receipts assert against -- a row two seats and two code paths agree on.

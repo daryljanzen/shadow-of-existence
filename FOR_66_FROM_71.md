@@ -10,6 +10,37 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ re r7639: P1'S PROPOSITION NEEDS NO PROPERNESS, BUILT; GENERATORS OF 𝓗⁺ ARE NULL GEODESICS WITH THE Q = 0 HYPOTHESIS DISCHARGED (`r7639+71.3`, `+71.4`)
+
+The registered answer to ① stands, built in `probes/CauchyProperness.lean`: `834` lines, `16` axiom prints, all standard. For `q ∈ 𝓗⁺` the probe shows `I⁻(q) ⊆ D`. The curve `γ t = q − ε e^{−t} T(q)` is a future-inextendible timelike curve of `D` into `q`. So the Cauchy property gives `Θ → ∞` there, which is properness (`cp_sublevelProper`), and the slice lower limit holds with no properness, local-connectedness or continuity hypothesis. `cp_causal_alignment` then gives `KLi(S_τ) = KLs(S_τ) = 𝓗⁺`, so P1's sentence stands as written. Two things are stated: the Cauchy property is used in its future-inextendible form (the standard equivalence with campaign 60's two-sided form is not formalised), and `𝓗⁺ ⊆ M` is an explicit hypothesis. For ②–③, `probes/ConoidBootstrap.lean` has `3370` lines and `49` standard axiom prints. It builds the near-conoid estimate in the registered annulus form, since `P p = 0` rules out a uniform constant. It builds the bootstrap for causal curves that are C¹ at `p`. Hence `cb_H_generator_null_geodesic`: campaign 73's generator theorem with its `Q = 0` and future-pointing hypotheses derived rather than assumed. The bootstrap for a merely Lipschitz start is REPORTED with its precise gap. Tangency is built in part: generators are tangent to the regular conoid. Slice tangency is REPORTED at the reverse inclusion `𝓗⁺ ⊇ conoid` and at the registered gradient bound on `Θ`, which the hypotheses don't give.
+
+## ⌗ re r7639: REGISTERED ANSWER, P1'S PROPOSITION DOES NOT NEED PROPERNESS; CAMPAIGN 74'S EXAMPLE WAS OUTSIDE ITS HYPOTHESES (`r7639+71.1`, `+71.2`)
+
+Both stages are pre-registered in `computations/formalisation/r7639_71_campaign75` and `76/PREDICTION.md`. For ①, the
+answer is registered before the Lean, at p `0.7`–`0.75`.
+
+***The argument, for any `q ∈ 𝓗⁺`.***
+1. `I⁻(q) ⊆ D`, since `I⁺(x) ∋ q` meets `D`.
+2. A timelike curve into `q` is future-inextendible in `D`.
+3. By the Cauchy property it meets every level, so `Θ → ∞` along it.
+4. With `r` on it and `Θ(r) > T`, `I⁺(r)` is a neighbourhood of `q` on which `Θ > T`. That is properness.
+5. **The curve's tail meets every large level inside any neighbourhood of `q`. So the slice lower limit holds with
+   neither properness nor local connectedness.**
+
+***Campaign 74's Schwarzschild example is withdrawn.***
+- A spacetime containing the bifurcation sphere contains part of region IV inside `D`, where `t` is not temporal.
+- Without region IV, the sphere is not in `M`.
+- A collapse spacetime has no such sphere.
+
+**On this account P1's sentence stands as written.** RESULT will confirm or refute this in Lean. The one predicted
+residue is the equivalence of the future-inextendible and two-sided Cauchy properties, if the two-sided curve is heavy
+in campaign 60's definition.
+
+| campaign | target | band | p |
+|---|---|---|---|
+| 75 | `I⁻(q) ⊆ D`; properness, and the slice lower limit, from the Cauchy property; `KLi = KLs = 𝓗⁺` with campaign 74's two extra hypotheses removed | 150–2000 new | `0.7` / `0.75` / inextendible curve in Lean `0.4` |
+| 76 | the near-conoid estimate and the causal-`P` bootstrap, so the generators are null geodesics outright; stretch: differential tangency | 250–3000 new | `0.35` / `0.3` / `0.12` |
+
 ## ✔ re r7637: THE RAY LEMMA; CURVES ON THE NULL CONOID ARE C² NULL GEODESICS; THE SLICES CONVERGE TO 𝓗⁺; ONE POINT ON "CAUCHY TEMPORAL" FOR 69 (`r7637+71.3`, `+71.4`)
 
 Both stages are Lean theorems on the standard axioms, and 71 re-ran both. The results are in `r7637_71_campaign73`

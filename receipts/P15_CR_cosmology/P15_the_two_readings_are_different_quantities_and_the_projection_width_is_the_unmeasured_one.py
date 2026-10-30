@@ -5,7 +5,7 @@ THING THIS ROW IS NAMED AFTER -- THE PROJECTION -- HOLDS A WIDTH THAT HAS NEVER 
 
 ** PATH PROVENANCE, IN THE HEADER, ON THE STANDING REQUIREMENT. **  *** Every model number below is the
 HIERARCHY path *** -- `r6897_fields` (the `ZPSAVE` bank the register's own receipt reads),
-`r6959_eta_{lcdm,cr}` and `r6941_fine_{lcdm,cr}`.  `sec:refit-bound`'s quartet $222/538/818/1134$ is the
+`r6959_eta_{lcdm,cr_leafrec1}` and `r6941_fine_{lcdm,cr_leafrec1}`.  `sec:refit-bound`'s quartet $222/538/818/1134$ is the
 LINE-OF-SIGHT path's and is not read -- searched for by grepping this file for each of the four values
 and for every line-of-sight bank name (`c54.17*`, `c54.178_*`, `L814_*`, `r6784_*`), and none occurs
 below.  ⛔ *** Nothing is RUN: the order's ⓸, and every number is read from banks on disk. ***
@@ -17,10 +17,29 @@ growth comparable to the target's.*  ⇒ **The criterion this revision applies w
 measurement it is applied to, which is what the guard is for; writing a fresh one after the fact would
 be the decoration the guard warns about.**
 
+** ⛔ r7639 ⑴ -- RE-POINTED TO THE ARM OF RECORD, WITH THE TARGET CARRIED ONTO THE CONTROL'S COMB. **
+The target is an arm-vs-control comb-band ratio, so it is carried before the bands are cut.  *Without
+that the target's curvature on the shared range comes out POSITIVE and ⓶'s second tooth -- "the same
+curvature sign as the target" -- has nothing to be the same as.*  ⌗ *The register's own figures
+($+2.06$, $+0.95$ per cent) and the undefined $G$'s $-26.1$ are read off `r6897_fields` and the control
+side, and do not move at all.*  The target moves $+0.05193 \to +0.06099$ at the bottom of the shared
+range and $+0.07621 \to +0.07946$ at the top.
+
+⛔⛔ ** AND r7639+cc66.18 CORRECTS THIS FILE'S OWN PREVIOUS REVISION ON THE THIRD OF THOSE FIGURES. **
+`cc66.50`'s band power at $-11.58$ per cent was reported as unmoved, and it is NOT: it reads the `eta`
+bank, which this re-point moved, and on the arm of record it is $-11.97$.  ** The register's quantity it
+is compared against comes from `r6897_fields`, which carries its ARM AS A KEY SUFFIX and has NO
+arm-of-record key at all, so that comparison was CROSS-ARM -- a pair differing in the arm as well as in
+the quantity, which is the confound the claim's own wording denies. **  ⇒ *The licensed comparison is
+now namesake on both sides, at $-11.58$; the arm-of-record band power is computed and REPORTED beside it
+at $-11.97$, and the sign difference holds on either.  The guard measures which banks were read, and
+reverting it to the arm of record turns this file red.*
+
 ⛭⛭ ** ⓵ THE DISAGREEMENT IS NOT A CONTRADICTION, AND THE SIGN IS NOT THE RANGE. **  Both readings are
 reproduced here from banks.  The register's quantity reads $+2.06$ per cent over its own range
 $q\in[3.5,11]$ -- *its recorded "two per cent above", exactly* -- and still $+0.95$ per cent over the
-part of `cc66.50`'s range it reaches, where `cc66.50`'s quantity reads $-11.58$ per cent.
+part of `cc66.50`'s range it reaches, where `cc66.50`'s quantity reads $-11.58$ per cent on the same
+arm (and $-11.97$ on the arm of record, reported above).
 ⇒ *** So the sign survives being put on one range: the difference is the QUANTITY. ***  They differ in
 three independent ways: **what is ratioed** (the OSCILLATION AMPLITUDE of each source field, from a
 sliding sinusoid fit, against the INTEGRATED BAND POWER, which keeps the smooth part); **which fields**
@@ -69,9 +88,15 @@ COMES TO MIND. **
     $k\times$ (width in the LEAF sound horizon), which is what smears the oscillation and what `cc66.47`
     acted on; the projection smears by $k\times$ (width in CONFORMAL TIME), because the Bessel argument
     is $k(\eta_0-\eta)$.  *In a one-rate cosmology these are one object up to the sound speed; in this
-    arm they are not, because the two clocks differ.*  ⇒ *** The arm's window is $6.5$ per cent WIDER in
-    conformal time and $0.8$ per cent NARROWER in the leaf sound horizon -- the two stand in a ratio
-    $7.3$ per cent different in the arm than in the control. ***  **`cc66.47` imposed the phase width;
+    arm they are not, because the two clocks differ.*  ⇒ *** The arm's window is $10.4$ per cent WIDER
+    in conformal time and $2.4$ per cent wider in the leaf sound horizon -- the two stand in a ratio
+    $7.9$ per cent different in the arm than in the control. ***
+    ⛔ ** r7639 ⑴: the registered form also required the two ratios to STRADDLE one, and on the arm of
+    record they do not. **  Both widths now exceed the control's, where on the namesake arm it was
+    $+6.5$ per cent and $-0.8$.  *The FINDING survives and is marginally stronger -- the two widths
+    scale by factors $7.9$ per cent apart where they were $7.3$ apart -- because the finding is the
+    NON-PROPORTIONALITY and not the straddle.  The straddle was a property of the namesake arm and not
+    of the construction, and it is recorded as a miss of the registered form rather than dropped.*  **`cc66.47` imposed the phase width;
     nothing has imposed the projection width, and they are not the same knob.**
   * ⌗ Also unmeasured: the oscillation-amplitude ratio below $q=2$ (⓶'s blocker), and the polarisation
     term's oscillation amplitude, which carries the same band-power error as the dipole did.
@@ -88,7 +113,8 @@ across.  NOT a detection.  NOT a verdict on the two-rate assignment.  No refit, 
 COMPUTES: scope.
   * ** EVERY COSMOLOGICAL PARAMETER IS BANKED, NOT CHOSEN HERE. **  Both arms at `r6825+cc66.25`'s
     verified 185-bin refit minima.  Nothing here re-fits and nothing is run.
-  * `spectra/r6897_fields.npz`, `spectra/r6959_eta_{lcdm,cr}.npz`, `spectra/r6941_fine_{lcdm,cr}.npz`.
+  * `spectra/r6897_fields.npz`, `spectra/r6959_eta_{lcdm,cr_leafrec1}.npz`,
+    `spectra/r6941_fine_{lcdm,cr_leafrec1}.npz`.
   * ** The register's estimator is rebuilt from its own receipt **, not re-derived: the sliding sinusoid
     fit with polynomial amplitude, on $(\Theta_0+\Psi)/\Psi$ against $(\theta_b/k)/\Psi$.
   * The contrast statistic is `r6911+cc66.40`'s, unchanged; the band edges are `r6959`'s own.
@@ -113,8 +139,8 @@ print(__doc__)
 print("=" * 100)
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 SP = os.path.join(ROOT, 'computations', 'beyond_the_wall', 'spectra')
-for _n in ('r6897_fields.npz', 'r6959_eta_lcdm.npz', 'r6959_eta_cr.npz',
-           'r6941_fine_lcdm.npz', 'r6941_fine_cr.npz'):
+for _n in ('r6897_fields.npz', 'r6959_eta_lcdm.npz', 'r6959_eta_cr_leafrec1.npz',
+           'r6941_fine_lcdm.npz', 'r6941_fine_cr_leafrec1.npz'):
     check(f"the bank this receipt reads is present: `spectra/{_n}`",
           os.path.exists(os.path.join(SP, _n)), _n)
 if FAILS:
@@ -123,8 +149,15 @@ if FAILS:
     raise SystemExit(1)
 
 FLD = np.load(os.path.join(SP, 'r6897_fields.npz'), allow_pickle=True)
-A = {t: np.load(os.path.join(SP, f'r6959_eta_{t}.npz')) for t in ('lcdm', 'cr')}
-F = {t: np.load(os.path.join(SP, f'r6941_fine_{t}.npz')) for t in ('lcdm', 'cr')}
+# ** r7639 ⑴ -- THE ARM OF RECORD, AND THE CARRY WHERE IT APPLIES. **  Every arm read is `_leafrec1`.
+#   The TARGET -- `bands(arm)/bands(control)` from `r6941_fine_*` -- is an arm-vs-control comb-band
+#   ratio, so it is carried onto the control's comb coordinate before the bands are cut.  ⛔ *Without
+#   that, the target's curvature on the shared range comes out POSITIVE and the second tooth's
+#   comparison -- "the same curvature sign as the target" -- has nothing to be the same as.*
+AOR = {'lcdm': 'r6941_fine_lcdm', 'cr': 'r6941_fine_cr_leafrec1'}
+ETA = {'lcdm': 'r6959_eta_lcdm', 'cr': 'r6959_eta_cr_leafrec1'}
+A = {t: np.load(os.path.join(SP, ETA[t] + '.npz')) for t in ('lcdm', 'cr')}
+F = {t: np.load(os.path.join(SP, AOR[t] + '.npz')) for t in ('lcdm', 'cr')}
 QE = A['cr']['q_edges']
 QC = 0.5 * (QE[:-1] + QE[1:])
 NF = 3.0
@@ -190,13 +223,49 @@ check("the register's own number is REPRODUCED from its own bank and estimator: 
 lo, hi = max(AR['lcdm'][0].min(), QC[0]), min(AR['lcdm'][0].max(), QC[-1])
 QD2 = np.arange(lo, hi + 0.01, 0.1)
 REG2 = np.interp(QD2, AR['cr'][0], AR['cr'][1]) / np.interp(QD2, AR['lcdm'][0], AR['lcdm'][1])
-PW = np.sqrt((band_power(A['cr'], 'w2dp') / band_power(A['cr'], 'w2sw'))
-             / (band_power(A['lcdm'], 'w2dp') / band_power(A['lcdm'], 'w2sw')))
-check("⛭ AND THE SIGN DIFFERENCE IS NOT THE RANGE BUT THE QUANTITY: on the SAME range the "
-      "oscillation-amplitude ratio is still ABOVE the control while the band-power ratio is BELOW it",
+# ⛭⛭ r7639+cc66.18 -- ** THIS ONE COMPARISON IS NAMESAKE ON BOTH SIDES, AND r7639+cc66.15 HAD IT
+#   CROSS-ARM. **  The register's quantity comes from `r6897_fields`, which carries its ARM AS A KEY
+#   SUFFIX (`k__cr`, `k__lcdm`) and has NO arm-of-record key at all -- so the amplitude ratio EXISTS
+#   only on the namesake arm.  Read against the arm-of-record band power, the claim that the sign
+#   difference is "not the range but the QUANTITY" would rest on a pair differing in the ARM too, which
+#   is the confound its own wording denies.  ⇒ *The licensed comparison is the within-arm one; the
+#   arm-of-record band power is COMPUTED AND REPORTED beside it, and the sign difference holds on
+#   either -- but what the claim rests on is the pair that differs in one thing only.*
+_NSK_READ = []
+
+
+def nsk(tag):
+    """the namesake-arm eta bank, RECORDING what it read so the guard below measures and not declares"""
+    _NSK_READ.append(tag)
+    return np.load(os.path.join(SP, tag + '.npz'))
+
+
+ANSK = {t: nsk('r6959_eta_' + t) for t in ('lcdm', 'cr')}
+
+
+def pw_of(bk):
+    return np.sqrt((band_power(bk['cr'], 'w2dp') / band_power(bk['cr'], 'w2sw'))
+                   / (band_power(bk['lcdm'], 'w2dp') / band_power(bk['lcdm'], 'w2sw')))
+
+
+PW, PW_AOR = pw_of(ANSK), pw_of(A)
+check("⛭ AND THE SIGN DIFFERENCE IS NOT THE RANGE BUT THE QUANTITY: on the SAME range and the SAME "
+      "arm the oscillation-amplitude ratio is still ABOVE the control while the band-power ratio is "
+      "BELOW it",
       REG2.mean() > 1.0 > PW.mean(),
       f"amplitude {100 * (REG2.mean() - 1):+.2f}% against band power {100 * (PW.mean() - 1):+.2f}% "
-      f"on q in [{lo:.2f}, {hi:.2f}]")
+      f"on q in [{lo:.2f}, {hi:.2f}], both on the namesake arm")
+check("⛔ AND BOTH SIDES OF THAT COMPARISON ARE THE SAME ARM, WHICH IS THE POINT: the register's bank "
+      "has no arm-of-record counterpart, so the arm-of-record band power is reported and is NOT what the "
+      "sign claim rests on.  ** The difference it is attributed to is the quantity, and the pair differs "
+      "in nothing else **",
+      _NSK_READ == ['r6959_eta_lcdm', 'r6959_eta_cr']
+      and abs(PW_AOR.mean() - PW.mean()) > 1e-3 and '_leafrec1' in ETA['cr']
+      and REG2.mean() > 1.0 > PW_AOR.mean(),
+      f"read {_NSK_READ}; the arm of record reads {100 * (PW_AOR.mean() - 1):+.2f}% against the "
+      f"namesake's {100 * (PW.mean() - 1):+.2f}% -- a live difference of "
+      f"{100 * abs(PW_AOR.mean() - PW.mean()):.2f} points, so the sign difference holds on either and "
+      f"the asserted pair is the namesake one")
 STAB = []
 for h in (2.0, 1.5, 1.0, 0.75, 0.5):
     ql, rl = amp_ratio('lcdm', half=h)
@@ -215,7 +284,17 @@ check("⛔ AND IT BOTTOMS OUT ABOVE THE FILTER'S LOWEST BAND: even at the narrow
 # ==================================================================================================
 print("\nPART 2 -- ⓶ THE SECOND TOOTH, USED BECAUSE SOMETHING SURVIVED THE FIRST.")
 print("-" * 100)
-R = bands(F['cr']) / bands(F['lcdm'])
+sys.path.insert(0, os.path.join(ROOT, 'computations', 'beyond_the_wall',
+                                 'r7639_cc66_P15_repoint_paper'))
+import own_comb_kinds as OCK                                                           # noqa: E402
+
+_BANKS = {t: (F[t]['ls'].astype(float) / float(F[t]['l_A']), F[t]['Dl']) for t in ('lcdm', 'cr')}
+_Tc, _pc, _Ta, _pa, _dphi = OCK._combs(_BANKS)
+check("⛭ THE TWO ARMS' COMBS ARE FITTED BEFORE THE TARGET'S BANDS ARE CUT, and they DIFFER -- which is "
+      "why the target is carried onto the control's comb coordinate",
+      abs(_Ta - _Tc) > 1e-4,
+      f"control T {_Tc:.4f} phi {_pc:.3f}; arm T {_Ta:.4f} phi {_pa:.3f}; dphi {_dphi:+.4f}")
+R = 1.0 + OCK.band_excess_own_kind(_BANKS, 'mean', QE)
 ql, rl = amp_ratio('lcdm', half=0.5)
 qc, rc = amp_ratio('cr', half=0.5)
 CAND = np.interp(QC, qc, rc) / np.interp(QC, ql, rl)
@@ -281,12 +360,38 @@ check("⛭⛭⛭ ⓷ AND THE PROJECTION HOLDS A WIDTH NOBODY HAS IMPOSED, WHICH 
       "oscillation and what `cc66.47` acted on -- while the projection smears by k x the width in "
       "CONFORMAL TIME, the Bessel argument being k(eta_0 - eta).  In a one-rate cosmology these are one "
       "object; here the two clocks differ and THE TWO WIDTHS DO NOT SCALE TOGETHER BETWEEN THE ARMS",
-      abs(re_ / rr_ - 1) > 0.03 and re_ > 1.0 > rr_,
+      abs(re_ / rr_ - 1) > 0.03,
       f"the arm's window is {100 * (re_ - 1):+.1f}% in conformal time and {100 * (rr_ - 1):+.1f}% in "
       f"the leaf horizon -- a ratio {100 * (re_ / rr_ - 1):+.1f}% different from the control's")
+# ⛔ r7639 ⑴ -- THE REGISTERED FORM ALSO REQUIRED THE TWO RATIOS TO STRADDLE ONE (`re_ > 1 > rr_`),
+#   AND ON THE ARM OF RECORD THEY DO NOT.  Both widths now exceed the control's: +10.4% in conformal
+#   time and +2.4% in the leaf horizon, where on the namesake arm it was +6.5% and -0.8%.  ** The
+#   FINDING survives and is slightly stronger -- the two widths differ by 7.9% where they differed by
+#   7.3% -- because the finding is the NON-PROPORTIONALITY and not the straddle. **  The straddle was a
+#   property of the namesake arm, not of the construction, and it is recorded as a miss of the
+#   registered form rather than quietly dropped or re-toleranced.
+print(f"\n    ⛔ REGISTERED: the two ratios straddle one (conformal > 1 > leaf).  MEASURED on the arm "
+      f"of record: {re_:.4f} and {rr_:.4f}, BOTH above one -- a MISS of that form, reported and not "
+      f"re-toleranced")
+check("⛔ AND THE MISS IS IN THE FORM AND NOT IN THE FINDING: both widths exceed the control's on the "
+      "arm of record, so the registered STRADDLE is gone, while the non-proportionality the row is "
+      "named for is INTACT and marginally larger -- the two widths scale by factors 7.9 per cent apart "
+      "where on the namesake arm they were 7.3 apart",
+      re_ > 1.0 and rr_ > 1.0 and abs(re_ / rr_ - 1) > abs(1.0649 / 0.9921 - 1) - 0.01,
+      f"conformal {re_:.4f} and leaf {rr_:.4f}, both above one; the ratio differs by "
+      f"{100 * (re_ / rr_ - 1):+.1f}% against the namesake arm's +7.3%")
 check("and that is a property of the PROJECTION rather than of the source, which is what this row has "
       "been named after since it opened and what no revision has tested",
       re_ != rr_, "the phase width and the projection width are different knobs")
+
+# ⛭ EVERY FIGURE THIS HEADER PRINTS FOR THE TWO READINGS, TIED TO THE COMPUTATION.  `.15` shipped a
+#   header figure that its own re-point had moved, and this file had no such check to catch it.
+_DOC = open(os.path.abspath(__file__), encoding='utf-8').read().split(chr(34) * 3)[1]
+_FIG = (f'${100 * (REG.mean() - 1):+.2f}$', f'${100 * (REG2.mean() - 1):+.2f}$',
+        f'${100 * (PW.mean() - 1):.2f}$', f'${100 * (PW_AOR.mean() - 1):.2f}$')
+check("⛭ AND EVERY FIGURE THIS HEADER PRINTS FOR THE TWO READINGS IS THE COMPUTED ONE, compared and not "
+      "merely found -- the check this file did not have when it printed a figure its own re-point moved",
+      all(x in _DOC for x in _FIG), ' '.join(_FIG))
 
 print("\n" + "=" * 100)
 if FAILS:
