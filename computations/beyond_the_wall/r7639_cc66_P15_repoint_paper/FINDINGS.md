@@ -124,3 +124,112 @@ sentence is reported, not edited.*
 
 `1.044` is measured (`1.04403`) and pinned to `4e-4`; the `‖Δ‖²` clause is untouched and stays with the
 receipt that owns it. **On your word I land the receipt, the split and the PDF in one commit.**
+
+---
+
+# ⑶ IS APPLIED, AND THE BANK GAP IS MEASURED RATHER THAN DISCOVERED ONE RECEIPT AT A TIME
+
+## ⑶ — PART 3 of the 133-bin receipt is HISTORICAL, on a measurement
+
+The order's reason is the right one and it is now asserted in the file rather than taken on the word:
+
+| | `max |dD_l|`, 68.60 leg against 68.62 leg |
+|---|---|
+| the namesakes | `2.4067e-04` — two runs, and PART 3 reads them |
+| **the arm of record** | **`0.0000e+00` — one point** |
+
+`r7635+70`'s manifest records the 68.62 leg as banked from the h686 run for exactly this reason. So the
+`4.16`-against-`4.19` distinction is a property of the **superseded instrument state**. It stays recorded —
+the provenance defect it found was real and the hardcoded literal it names is still in the other receipt's
+source — and it is **not re-asserted** on the arm of record, because there is no second point there to
+assert it against. PART 3's banner, the docstring map, the closing summary and the INDEX row all say so.
+
+**The marking is itself a check, and it was perturbed until red.** The new assertion is that the pair is
+two points on the namesakes AND one point on the arm of record, each on one `ell` grid:
+
+```
+AOR_8662 = 'cc66_lcdm'        # same 133-bin grid, different spectrum
+  -> FAIL -- PART 3's historical marking rests on the pair being two points on the namesakes
+             (2.4067e-04) and one on the arm of record (9.4260e-02), and it is not
+```
+
+⌗ *A first perturbation — pointing the leg at `cc66_r185_verify_cr_leafrec1` — went red on the `ell`-grid
+guard instead, so it tested the wrong branch. Recorded because the weaker test is the one that would have
+looked like a pass of the stronger.*
+
+## AND THE REST OF THAT RECEIPT IS NOT RE-POINTED, FOR A STATED REASON
+
+**It is a provenance record of three named banked files, not a live score.** PART 2 identifies
+`cc66_cr_x_h686_pol` by reproducing the `556.7` `FOR_66` records for `cc66.7` — an identification of a
+*file*, which cannot move with an arm. So its reads stay on their namesakes and its figures stay as
+recorded, and what the arm of record says on the same bins is **reported**:
+
+| | control | arm, namesake | arm, arm of record |
+|---|---|---|---|
+| 133-bin `chi^2` | `279.4200` | `556.6858` | **`447.3733`** |
+| per bin | `2.100902` | `4.185607` | **`3.363709`** |
+| ratio to the control | `1` | `1.992290` | **`1.601078`** |
+| 185-bin `chi^2` | `695.9666` | `1169.8183` | **`938.3175`** |
+| 185-bin per bin | `3.761981` | `6.323342` | **`5.071986`** |
+
+**That changes what a sentence CLAIMS**, so under ⑴ it is reported and not edited. The sentence is
+`CR_cosmology.tex` l.956, `sec:refit-bound`, and this receipt is its only citation for that clause:
+
+> *current* — "…the same comparison unlensed over $133$ bins giving $279.4$ against $556.7$, a factor
+> $1.98$; lensing is worth proportionally more to a spectrum whose peaks are already in
+> place\rcpt{…133_bin_pair…}."
+
+**The control's $279.4$ does not move** — the control does not move. The arm's two figures do, and the
+factor with them. Three ways to land it, my recommendation first:
+
+1. **Keep the sentence as the historical reading it is**, and say so: *"…giving $279.4$ against $556.7$, a
+   factor $1.98$ on the configuration those spectra were banked in"*. Nothing moves, and the receipt that
+   pins it is already marked as a record of those files. This is the honest reading, because the lensed
+   `$550.5$` and `$2.57$` beside it at l.955 are **another receipt's** namesake figures and would still be
+   on the old arm — moving mine alone would put two arms in one paragraph, which is the defect PART 3 of
+   that very receipt exists to report.
+2. Move it to the arm of record — *"$279.4$ against $447.4$, a factor $1.60$"* — **but only together with
+   the lensed receipt**, so the paragraph stays on one arm.
+3. Drop the clause.
+
+⌗ *The other four citations of this receipt (l.922, l.955, l.962, l.1070) print figures that are either the
+control's or other receipts', so they are unaffected. `4.16` and `4.19` appear in the paper only inside a
+TeX comment at l.37.*
+
+## THE BANK GAP, MEASURED ACROSS ALL 44 — FOR 70, SO IT CAN BE BANKED IN ONE PASS
+
+`bank_gap_sweep.py` here, output in `bank_gap_sweep.txt`. **13 CR-arm bank spectra that my 44 read have no
+`_leafrec1` counterpart, touching 11 of the 44.** This **supersedes the "three unbanked CR spectra" I
+reported at `r7637`** — that count was what I had found by hand, receipt by receipt, and it was low.
+
+| spectrum | readers |
+|---|---|
+| `r6893_switch_screen_cr` | 6 |
+| `r6919_injected_cr` | 3 |
+| `r6929_scan_cr` | 3 |
+| `r6925_visleaf_cr` | 2 |
+| `r6941_fine_cr_visleaf` | 2 |
+| `r6885_ln24_cr`, `r6885_noisw_cr`, `r6885_dre0_cr`, `r6885_drc0_cr` | 1 each (`model_difference`) |
+| `r6889_noop_cr`, `r6889_hdp0_cr`, `r6889_hsw0_cr` | 1 each (`source_decomposition`) |
+| `r6893_fine_grid_cr` | 1 |
+
+**Separately, four response-grid directories have no arm-of-record counterpart at all** — `refit_grid`,
+`refit_grid185`, `r7093_directions/grid_oneclock`, `r7095_directions/grid_licensed` — read by
+`full_range_refit`, `refit_leaves`, `no_fit_confrontation`, `refit_bound_figures`, `phase_slope` and
+`de_tilted_peak_set`. That is the "response grids (6)" already on the list, now named by directory.
+
+**The instrument, and why the first two versions of it were not one.** A receipt need never name a spectrum:
+it loads `f'r6941_fine_{t}.npz'`. My first sweep read only literals and missed whole families. My second
+matched each TEMPLATE as a regex against the bank and credited `r6941_fine_cr_visleaf` with **23** readers
+where it has **2** — `r6941_fine_{t}` with `t` in `('lcdm','cr')` cannot produce that name, but a permissive
+placeholder matches it — and attributed sixteen `cc66_cr_*` spectra to one receipt that **does not mention
+any of them**. *That is the fifth time this campaign that an instrument which RUNS was not an instrument
+which MEASURES, and it was caught by reading its own rows against a count I had already made by hand.*
+
+So this sweep expands every template over the values its placeholder can actually take, and prints what it
+cannot resolve. **And it is validated by tracing `np.load` through all eleven gap-carrying receipts:
+24 of 24 (gap, reader) pairs are a real load, and the swept and traced sets agree exactly in nine of the
+eleven.** The two that differ are one declared over-match — a dict-keyed suffix (`{arm}{AOR[arm]}`) expanded
+as a cross product in `free_streaming`, naming two pairs the code never forms, both of which *do* have
+`_leafrec1` and so are not false gaps. **The sweep over-counts and never under-counts, which is the safe
+direction for a list someone else will work from.**

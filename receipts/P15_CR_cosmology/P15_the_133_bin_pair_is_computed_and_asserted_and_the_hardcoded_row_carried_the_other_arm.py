@@ -35,12 +35,37 @@ print -- it is the last live item on the thirteen-figure list."*
   PART 2  ** THE TWO FIGURES, COMPUTED. **  The control at 2.100902 per bin and the arm at 4.185607,
           through `chi2_of_spectrum.py` -- the corpus's own machinery, one amplitude fitted, the
           same route every other chi^2 in this sector is scored on.
-  PART 3  ** AND THE THIRD FIGURE, WHICH IS WHERE THE DEFECT IS: 4.157889 BELONGS TO 68.62. **  The
-          literal is read out of the other receipt's SOURCE, so the claim is about the file as it
-          stands and not about a memory of it.
+  PART 3  ** HISTORICAL -- AND THE THIRD FIGURE, WHICH IS WHERE THE DEFECT WAS: 4.157889 BELONGS
+          TO 68.62. **  The literal is read out of the other receipt's SOURCE, so the claim is about
+          the file as it stands and not about a memory of it.  ** On the arm of record the two runs
+          are ONE POINT, so the distinction this PART draws has nothing left to measure there, and
+          that is asserted rather than asserted away. **
   PART 4  ** WHAT DOES NOT MOVE, SAID AS PLAINLY AS WHAT DOES. **  Both ratios are 2.0 to the two
           figures the conclusion quotes, and the 185-bin rows are recomputed here so all three rows
           of that table are live numbers from named files.
+
+===================================================================================================
+** WHY PART 3 IS MARKED HISTORICAL, AND WHY THE REST IS NOT RE-POINTED (r7639 ⑶) **
+===================================================================================================
+
+`r7639` ⑶: *"mark PART 3 of the 133-bin receipt historical.  On the arm of record the pair is one
+point, so there is nothing left to measure."*  ** Measured here rather than taken on the word: **
+`cc66_cr_x_h686_pol_leafrec1` and `cc66_cr_x_h6862_pol_leafrec1` differ by `max |dD_l| = 0.0000e+00`,
+where the namesakes differ by `2.4067e-04`.  The two spectra ARE one file's content on the arm of
+record -- `r7635+70`'s manifest records the 68.62 leg as banked from the h686 run for exactly that
+reason -- so `4.16` against `4.19` is a distinction of the SUPERSEDED instrument state.  It stays
+recorded, because the provenance defect it found was real and the hardcoded literal it names is still
+in the other receipt's source; it is not re-asserted on the arm of record, because there is no second
+point there to assert it against.
+
+** AND THE WHOLE FILE IS A PROVENANCE RECORD OF THREE NAMED BANKED SPECTRA, NOT A LIVE SCORE. **
+PART 2 identifies `cc66_cr_x_h686_pol` by reproducing the `556.7` `FOR_66` records for `cc66.7`: that
+identification is of a file and cannot move with an arm.  So this receipt's reads stay on their
+namesakes and its figures stay as recorded.  *What the arm of record says about the same bins is a
+different measurement and is reported, not folded in: the arm goes to 447.3733, 3.363709 per bin and
+a factor 1.601078 against the same control, and the 185-bin arm to 938.3175, 5.071986 per bin.  That
+moves what `sec:refit-bound` CLAIMS -- "$279.4$ against $556.7$, a factor $1.98$" -- so under `r7639`
+⑴ it is reported to 69 with proposed wording and not edited here.*
 
 ===================================================================================================
 ** WHAT THIS DOES NOT CLAIM **
@@ -85,6 +110,9 @@ import chi2_of_spectrum as CS                                              # noq
 CONTROL = 'cc66_lcdm'
 ARM_8660 = 'cc66_cr_x_h686_pol'       # r6760+cc66.7's own arm: H0 = 68.60
 ARM_8662 = 'cc66_cr_x_h6862_pol'      # the ordered confirmation run: H0 = 68.62
+# the same two on the arm of record, read ONLY to show PART 3's distinction is spent there
+AOR_8660 = 'cc66_cr_x_h686_pol_leafrec1'
+AOR_8662 = 'cc66_cr_x_h6862_pol_leafrec1'
 L2000 = ('cc66_lcdm_L2000', 'cc66_cr_x_h686_L2000')
 LENSED_RECEIPT = os.path.join(
     HERE, 'P15_the_full_range_lensed_comparison_is_the_unfavourable_one_and_the_control_is_nearly_camb.py')
@@ -104,7 +132,8 @@ print("=" * 100)
 print("  PART 1 -- ** THE CONFIGURATION AND THE BIN COUNT, OFF THE SPECTRA **")
 print("=" * 100)
 
-INPUTS = [os.path.join(SP, t + '.npz') for t in (CONTROL, ARM_8660, ARM_8662) + L2000] \
+INPUTS = [os.path.join(SP, t + '.npz')
+          for t in (CONTROL, ARM_8660, ARM_8662, AOR_8660, AOR_8662) + L2000] \
     + [LENSED_RECEIPT, HANDOVER]
 try:
     subprocess.run(['git', '-C', ROOT, 'ls-files', '--error-unmatch'] + INPUTS,
@@ -174,7 +203,8 @@ else:
 # =====================================================================
 print()
 print("=" * 100)
-print("  PART 3 -- ** AND THE HARDCODED ROW IS THE OTHER ARM: 4.16 IS 68.62 **")
+print("  PART 3 (HISTORICAL) -- ** AND THE HARDCODED ROW IS THE OTHER ARM: 4.16 IS 68.62 -- A")
+print("                          DISTINCTION OF THE SUPERSEDED STATE, SPENT ON THE ARM OF RECORD **")
 print("=" * 100)
 ab2 = S[ARM_8662][0] / S[ARM_8662][1]
 print(f"  the arm at H0 = 68.62: chi^2 = {S[ARM_8662][0]:.4f} = {ab2:.6f} per bin  -> {ab2:.2f}")
@@ -215,6 +245,32 @@ else:
     else:
         fail.append(f"the hardcoded numerator {num} matches neither arm at two decimals "
                     f"({ab:.2f}, {ab2:.2f}) -- it is a third number with no file")
+
+# ---------------------------------------------------------------------
+# ** AND WHY THE ABOVE IS HISTORICAL, MEASURED HERE AND NOT ASSERTED AWAY (r7639 ⑶). **
+_zn = [np.load(os.path.join(SP, t + '.npz')) for t in (ARM_8660, ARM_8662)]
+_za = [np.load(os.path.join(SP, t + '.npz')) for t in (AOR_8660, AOR_8662)]
+if not (np.array_equal(_zn[0]['ls'], _zn[1]['ls']) and np.array_equal(_za[0]['ls'], _za[1]['ls'])):
+    fail.append("the 68.60/68.62 pair is not on one ell grid on one of the two arms -- "
+                "nothing below compares like with like")
+else:
+    _dn = float(np.max(np.abs(np.asarray(_zn[0]['Dl'], float) - np.asarray(_zn[1]['Dl'], float))))
+    _da = float(np.max(np.abs(np.asarray(_za[0]['Dl'], float) - np.asarray(_za[1]['Dl'], float))))
+    print()
+    print(f"  the namesakes differ by     max |dD_l| = {_dn:.4e}  -- two runs, and PART 3 reads them")
+    print(f"  the arm of record differs by max |dD_l| = {_da:.4e}"
+          + ("  -- ** ONE POINT **" if _da == 0.0 else "  -- ** AND THAT IS NOT ONE POINT **"))
+    check_hist = (_dn > 0.0 and _da == 0.0)
+    if not check_hist:
+        fail.append(f"PART 3's historical marking rests on the pair being two points on the "
+                    f"namesakes ({_dn:.4e}) and one on the arm of record ({_da:.4e}), and it is not")
+    else:
+        print("  ** SO PART 3 IS HISTORICAL. **  `r7635+70` banked the 68.62 leg from the h686 run")
+        print("   because on the arm of record the pair is one point, and that is what this reads:")
+        print("   the 4.16/4.19 distinction is a property of the SUPERSEDED instrument state.  It")
+        print("   stays recorded -- the provenance defect was real and the literal is still in the")
+        print("   other receipt's source -- and it is NOT re-asserted on the arm of record, because")
+        print("   there is no second point there to assert it against.")
 
 # =====================================================================
 print()
@@ -260,5 +316,7 @@ print(f"  on 133 bins is COMPUTED ({cb:.6f}) and ASSERTED, and so is the 4.16 be
 print(f"  ({ab2:.6f}) -- together with cc66.7's own 4.19 ({ab:.6f}), which is the figure the")
 print("  hardcoded row should have carried and does not.  ** The conclusion is untouched and the")
 print("  attribution is not, and only a computed row could have told the two apart. **")
+print("  ⌗ PART 3 is HISTORICAL as of `r7639` ⑶: on the arm of record the two runs are one point,")
+print("    so its distinction belongs to the superseded instrument state and is not re-asserted.")
 print("=" * 100)
 sys.exit(0)

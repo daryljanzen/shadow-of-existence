@@ -1,0 +1,54 @@
+THE BANK holds 214 spectra, 97 of them on the cr arm, and 61 of those have no `_leafrec1`.
+MY 44 RECEIPTS read 79 of them.  13 are cr-arm spectra with no arm-of-record counterpart:
+
+  r6893_switch_screen_cr   6 reader(s)
+        P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_the_visibility
+        P15_the_acoustic_contrast_is_not_in_the_source_and_the_projection_makes_it_without_the_distance
+        P15_the_cross_term_is_not_the_channel_and_every_projected_term_carries_the_excess
+        P15_the_free_streaming_knob_is_common_to_both_arms_and_the_switch_sweep_finds_no_further_shadow
+        P15_the_monopole_zero_point_is_not_the_channel_and_the_two_residuals_point_opposite_ways
+        P15_the_visibilitys_clock_is_the_one_the_kernel_reads_and_the_comb_votes_against_the_alternative
+  r6919_injected_cr        3 reader(s)
+        P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_the_visibility
+        P15_the_combs_resolution_is_four_multipoles_and_the_skys_own_value_lies_outside_the_family
+        P15_the_visibilitys_clock_is_the_one_the_kernel_reads_and_the_comb_votes_against_the_alternative
+  r6929_scan_cr            3 reader(s)
+        P15_the_combs_resolution_is_four_multipoles_and_the_skys_own_value_lies_outside_the_family
+        P15_the_contrast_excess_is_symmetric_about_the_envelope_and_the_troughs_are_where_the_sky_measures_it_best
+        P15_the_locator_is_good_to_three_hundredths_and_the_fourth_peaks_residual_is_the_controls_too
+  r6925_visleaf_cr         2 reader(s)
+        P15_the_combs_resolution_is_four_multipoles_and_the_skys_own_value_lies_outside_the_family
+        P15_the_visibilitys_clock_is_the_one_the_kernel_reads_and_the_comb_votes_against_the_alternative
+  r6941_fine_cr_visleaf    2 reader(s)
+        P15_the_contrast_excess_is_symmetric_about_the_envelope_and_the_troughs_are_where_the_sky_measures_it_best
+        P15_the_locator_is_good_to_three_hundredths_and_the_fourth_peaks_residual_is_the_controls_too
+  r6885_drc0_cr            1 reader(s)
+        P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck
+  r6885_dre0_cr            1 reader(s)
+        P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck
+  r6885_ln24_cr            1 reader(s)
+        P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck
+  r6885_noisw_cr           1 reader(s)
+        P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck
+  r6889_hdp0_cr            1 reader(s)
+        P15_the_source_decomposition_is_reachable_on_the_reporting_path_and_the_neutrinos_have_a_knob
+  r6889_hsw0_cr            1 reader(s)
+        P15_the_source_decomposition_is_reachable_on_the_reporting_path_and_the_neutrinos_have_a_knob
+  r6889_noop_cr            1 reader(s)
+        P15_the_source_decomposition_is_reachable_on_the_reporting_path_and_the_neutrinos_have_a_knob
+  r6893_fine_grid_cr       1 reader(s)
+        P15_the_free_streaming_knob_is_common_to_both_arms_and_the_switch_sweep_finds_no_further_shadow
+
+touching 11 of my 44 receipts.
+
+UNRESOLVED TEMPLATES (10) -- every one loads from a response grid, not from the bank:
+  P15_the_full_range_refit_holds_the_background_and_the_phase_re l.117   {·}_{·}p.npz               ['tag', 'k']
+  P15_the_full_range_refit_holds_the_background_and_the_phase_re l.118   {·}_{·}m.npz               ['tag', 'k']
+  P15_the_full_range_refit_holds_the_background_and_the_phase_re l.143   {·}.npz                    ['n']
+  P15_the_phase_slope_does_not_separate_the_loading_from_the_dri l.358   cr_{·}m.npz                ['par']
+  P15_the_phase_slope_does_not_separate_the_loading_from_the_dri l.359   cr_{·}p.npz                ['par']
+  P15_the_phase_slope_does_not_separate_the_loading_from_the_dri l.284   {·}_{·}m.npz               ['arm', 'par']
+  P15_the_phase_slope_does_not_separate_the_loading_from_the_dri l.285   {·}_{·}p.npz               ['arm', 'par']
+  P15_the_refit_leaves_the_background_where_the_distances_put_it l.110   {·}_base.npz               ["arm['tag']"]
+  P15_the_refit_leaves_the_background_where_the_distances_put_it l.118   {·}_{·}p.npz               ["arm['tag']", 'k']
+  P15_the_refit_leaves_the_background_where_the_distances_put_it l.119   {·}_{·}m.npz               ["arm['tag']", 'k']
