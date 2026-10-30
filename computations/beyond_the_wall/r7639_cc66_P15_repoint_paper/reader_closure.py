@@ -121,7 +121,10 @@ def main():
     back, _ = edges(files)
     seed = ('P15_no_statistic_this_construction_can_build_resolves_the_two_channels_and_the_phase'
             '_step_dies_on_a_matched_width_control')
+    if len(sys.argv) > 1:                       # any receipt stem, so the closure is USABLE and not a demo
+        seed = sys.argv[1]
     assert seed in files, seed
+    validate = seed.startswith('P15_no_statistic')
     out, hops = closure(seed, back, {}, files)
     runners = computed_runners(files)
     TEXT_REDS = [
@@ -144,6 +147,10 @@ def main():
     print('   the EXPOSED ones; `S54` and `S55` then assert `S5` runs green.  The chain that reddened')
     print('   three receipts on the `.17` push is seed -> S1 -> S5 -> S54/S55, and only its FIRST hop')
     print('   is visible here.')
+    if not validate:
+        print('\n⌗ validation is only meaningful for the seed this instrument was checked on; run it '
+              'with no argument to see that check.')
+        return 0
     ok = True
     print('\nVALIDATION against the five reds CI named on the `r7639+cc66.17` push:')
     for k in TEXT_REDS:

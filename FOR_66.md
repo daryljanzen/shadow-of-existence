@@ -27431,3 +27431,70 @@ a commit and never sees it. Verified green after committing rather than argued.
 
 **Set A still stands at 8 of 21 landed**, none withdrawn; no re-point is added here — this revision is
 the readers.
+
+---
+
+# r7639+cc66.21 — THE NINTH SET A RE-POINT: ONE LEG ON EACH ARM, AND THE CARRY IS THE WHOLE OF ⓶
+
+`P15_the_lowest_band_is_closed_by_the_fields_…` re-pointed. **Its two parts cannot sit on the same arm,
+and the reason is the bank gap `.18` measured:**
+
+| | reads | arm | why |
+|---|---|---|---|
+| ⓵ the band is closed by the fields | `r6897_fields` | **namesake** | that bank carries its arm as a KEY and has **no arm-of-record key at all** |
+| ⓶ the excess decelerates | `r6941_fine_*`, `r6959_eta_*` | **arm of record, carried** | an arm-vs-control comb-band ratio |
+
+**No gate mixes the two legs** — and a guard **records which banks were read** rather than asserting it,
+which also means the eta pointer is now pinned even though its content is bit-identical. *That is better
+than the "legitimately silent" leg I accepted at `.13`: the content cannot differ, but the POINTER can,
+and now a revert of it goes red.*
+
+## ⛔ ⓵ WITHOUT THE CARRY, THE WHOLE OF ⓶ WOULD BE WITHDRAWN
+
+| | carried (landed) | raw grid |
+|---|---|---|
+| curvature over six variants | `−0.00369..−0.00280` — **negative throughout** | `−0.00106..+0.00352` — ** sign not determined ** |
+| band 1's spread | `18%` of its own value | `76%` |
+| drop-band-1 curvature | `−0.00154..+0.00004` — straddles | `+0.00550..+0.01531` — all one sign |
+
+⇒ *** On the raw grid "the excess decelerates" has no support at all, and ⓑ's single-band finding
+inverts with it. *** Removing the carry fires **eight** gates; reverting the arm fires five; reverting
+the eta leg fires the read guard.
+
+⚠ *And the straddle that survives is THIN — its positive end reaches only `+0.00004`. That is printed in
+the receipt rather than smoothed over, because a hair-thin pass is not a clean one.*
+
+## ⚠ ⓶ TWO REGISTERED THRESHOLDS MISS, BOTH CALIBRATED ON THE NAMESAKE ARM
+
+⒜ **Band 1's stability** was registered as an ABSOLUTE span under `0.005`; it is `0.0052` here. But band 1
+is simply LARGER on this arm: **relative to its own value the spread is `18.2%` against the namesake's
+`17.6%` — the same number** — while the uncarried reading is `76.4%`. ⇒ *The relative form separates
+exactly what the absolute one was meant to, and discriminates the pathological reading by a factor of
+three; the absolute threshold was the namesake's own value times `0.18`.*
+
+⒝ **The `win = 2.0` drop** was registered at under a QUARTER of the admissible minimum. It is `0.356`
+here — and `0.414` on the **namesake** arm once the carry is applied, against `0.194` on the namesake
+uncarried, where the quarter was set. ⇒ *** So that threshold tracks the CARRY, not the arm *** — the
+first of these misses that is not about which arm at all. The finding it was registered for — a large
+drop with the sign kept — holds at a factor of `2.8`.
+
+Both printed with their measured values and both arms named; neither re-toleranced.
+
+## ⌗ AND THE HEADER CHECK CAUGHT ME A THIRD TIME
+
+I wrote `$0.414$` into the header as "the namesake arm once the carry is applied" while the receipt
+computed the namesake **uncarried** `0.194`. The check fired on exactly that figure. Both now computed
+and both printed, and the claim is sharper for it: the quarter holds only for the uncarried namesake
+reading. **Nineteen header figures are tied to the computation in this file.**
+
+## LANDED
+
+No sentence of `CR_cosmology.tex` edited — its citing passage at `l.1264`–`1269` is qualitative
+("a running median … reverses it", "about half the highest band's oscillation on both arms") and holds
+on the arm of record at `+0.00624` and `49%`/`54%`. INDEX row, both appendices, PDF rebuilt (327 pages,
+0 errors). The reader closure reports **0 text readers** for this receipt, and the deep class was run
+anyway.
+
+**9 of Set A's 21 landed.** Blocked at three (`combs_resolution`, `visibilitys_clock`,
+`held_period_estimator`). Still held on your word: the `l.1120` split (`.1`), `l.956` (`.2`), the
+`l.1106` margin wording, and `l.1635`–`1644` (`.17`).
