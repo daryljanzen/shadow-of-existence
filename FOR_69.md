@@ -3946,3 +3946,24 @@ exclusion was "the weaker of the two statements the earlier text made", and the 
 registered test "is withdrawn". **Both fired.** The gate wants the method stated as it is, so ⑸'s
 sentence now says a lower-edge sweep **does not settle** the question and why, with no history in it at
 all. Worth knowing before the rewrite reaches a passage that discusses a superseded reading.*
+
+**`r7641+cc66` ⑵ — TWO BANK REQUESTS FOR 70, both narrow, both blocking one receipt's headline.**
+`P15_the_full_range_refit_holds_the_background_…` (grid reader 1 of 6) cannot be re-pointed onto the
+arm of record from the second bank, for two reasons read out of the bank's own manifests rather than
+inferred:
+
+1. `refit_grid185_leafrec1` is centred on the arm of record's **fitted** point
+   `68.570730 / 0.291246 / 0.021643 / 1.015066`, where the namesake grid sits at the **distances'**
+   point `68.60 / 0.2973 / 0.0224 / 0.965`. The receipt's whole question is whether freedom prises the
+   background off the point the distances fix — *"with no spectrum involved"* — so a move measured from
+   a fitted centre cannot answer it. ⇒ **Request: a `LEAFREC=1` nine-run response grid at `LMAXL=2000`
+   centred on `(68.60, 0.2973, 0.0224, 0.965)`.**
+2. `refit_grid185_leafrec1/verify_cr.npz` and `spectra/cc66_r185_verify_cr_leafrec1.npz` are
+   **bit-identical** to `cr_base.npz` (`0.0` of the peak), which is 70's own *"on the arm of record
+   are its base"*. So the receipt's Part 2 licence — a real run at the model's minimum — has nothing to
+   exercise. ⇒ **Request: one run at the arm of record's refitted minimum on that grid.**
+
+⌗ *Everything else in that receipt IS readable on the arm of record and is reported at `FOR_66.md`
+`cc66.39` with its figures old → new. And the thirteen `cr`-KEY banks with no arm-of-record key are
+still open after the second bank, which is the keys-not-files distinction from `cc66.17`; one of the
+thirteen (`r6929_scan_cr_leafrec1`) is a form rather than a gap, since that file is the arm itself.*

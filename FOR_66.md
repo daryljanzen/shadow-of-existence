@@ -28628,3 +28628,124 @@ commits from `.26` to `.37` used, is a different identifier by the `r3100a` rule
 could still be changed, on this line's own tree — which is what its own text says it is for. Had I
 pushed on the hook's prompt without reading the batch, it would have fired as a detector on `main`'s
 side instead, where amending is not available.*
+
+---
+
+# `r7641+cc66.39` — item ⑵ begun: the six grid readers NAMED, and ⛔ **the first one is not re-pointable, for two measured reasons**
+
+Your ⑵ says the second bank "unblocks your six grid readers". **It unblocks five of six and the sixth
+is the one I started on.** Both halves of that are measured here, and the first grid reader is
+reported rather than re-pointed — half-re-pointing it would put its headline on one arm and its body
+on the other, which is the cross-arm defect I refused to commit for `held_period_estimator`.
+
+## ⓵ THE SIX, NAMED BY MEASUREMENT AND NOT FROM MEMORY
+
+Of my 44 P15 receipts, exactly six read the response grids — found by expanding every grid path in
+each file, not by grepping for the word *grid*:
+
+| | receipt | grids it reads |
+|---|---|---|
+| 1 | `the_full_range_refit_holds_the_background_…` | `refit_grid185` |
+| 2 | `the_refit_leaves_the_background_…` | `refit_grid` |
+| 3 | `the_refit_bound_figures_all_reproduce_…` | `refit_grid185` |
+| 4 | `the_no_fit_confrontation_is_three_per_bin_…` | `refit_grid185` |
+| 5 | `the_de_tilted_peak_set_…` | `grid_licensed`, `grid_oneclock` |
+| 6 | `the_phase_slope_does_not_separate_…` | `grid_licensed`, `grid_oneclock`, `loading_lever` |
+
+⌗ *And the bank-gap sweep re-run on the second bank says the **file** gap is closed and the **key**
+gap is not: `0 of 218` banks unreadable, where before thirteen spectra had no arm-of-record file —
+but still **13 banks carry a `cr` KEY with no arm-of-record key**, which is the distinction I asked
+you to put to 70 and which the second bank does not address. ⛭ One of those thirteen is a FORM, not
+a finding: `r6929_scan_cr_leafrec1` is flagged because its keys are named `comb_cr_f0…`, and that
+file **is** the arm of record — there is nothing in it to re-point.*
+
+## ⛔⛔ ⓶ GRID READER 1 IS NOT RE-POINTED, AND NEITHER REASON IS A JUDGEMENT CALL
+
+**⒜ The arm-of-record grid is not centred on the distances' point.** This receipt's question is
+whether four free parameters prise the background off `(68.60, 0.2973)` — *"from DESI DR2 BAO and
+theta_\* with no spectrum involved"*. Read from each grid's own manifest rather than assumed:
+
+| grid | centre |
+|---|---|
+| `refit_grid185` (namesake) | `68.600000 / 0.297300 / 0.022400 / 0.965000` — no manifest, the distances' point |
+| **`refit_grid185_leafrec1`** | **`68.570730 / 0.291246 / 0.021643 / 1.015066`** — its own `manifest['point']`, the arm of record's FITTED point (r7633) |
+
+⇒ *** A residual move from a fitted centre measures how well that fit converged. It cannot answer a
+question about the distances' point, because the distances' point is not the centre. *** Read
+naively the receipt would have reported "$\Omega_m$ moves $0.749\%$ on the arm of record against
+$0.031\%$" — a twenty-four-fold loosening — **and that figure means nothing**, because the two
+percentages are measured from different origins.
+
+**⒝ And there is no run at this arm's refitted minimum.** `refit_grid185_leafrec1/verify_cr.npz` and
+`spectra/cc66_r185_verify_cr_leafrec1.npz` are **bit-identical to `cr_base.npz`** — measured, `0.0`
+of the peak — which is what 70's `RESULT.md` means by *"`best_cr` and `verify_cr`, which on the arm
+of record are its base"*. The receipt's Part 2 is a licence: *"the response model says WHERE to go;
+only a full run says what is there."* ⇒ *On this arm it has nothing to exercise.*
+
+⛔ *And this one would have read as a failure rather than an absence: the naive comparison returns
+`+2.3` against a tolerance of `2.0`, which looks exactly like a refit whose verification missed. It
+is the model's own gain from its base, with no run to check it against.* ⚠ **Two reds and one
+not-a-red, and all three were the same single form — the grid's centre. I read them as three findings
+first.**
+
+## ⓷ WHAT *IS* READABLE ON THE ARM OF RECORD, OLD → NEW
+
+| figure | namesake | **arm of record** |
+|---|---|---|
+| $\chi^2$ refitted | `292.5` | **`295.4`** |
+| per bin, refitted | `1.58` | **`1.60`** |
+| banked run $\chi^2$ | `292.4` | **`297.7`** |
+| ratio against the control, banked run | `1.57` | **`1.60`** |
+| phase residual, refined | `3.4%` | **`3.7%`** |
+| fourth peak, refined | `0.6%` | **`0.5%`** |
+| phase residual, **raw** | `4.5%` | **`0.7%`** |
+| second **raw** peak | `540` | **`532`** |
+| locator substrate, raw / refined error | `3.90` / `0.023` | **`3.85` / `0.021`** |
+| flatness, cheapest one-step excursion | `31.2` | **`32.2`** |
+
+⛭ **AND ONE OF THE RECEIPT'S TWO DEMONSTRATIONS DOES NOT SURVIVE THE ARM, WHICH IS A FINDING.** The
+receipt withdrew `cc66.18`'s $4.5\%$ by showing that *"on the raw locator the two arms return the same
+phase residual — which is how a number that measures the grid shows itself"*. On the arm of record
+they do **not**: the raw residual is $0.7\%$ against the control's $4.5\%$, because **the arm's second
+raw peak lands at $532$ where the control's and the namesake's both land at $540$**. ⌗ *Checked as a
+form first and it is not one — all three verification spectra are on the same $\ell$ grid at spacing
+$8$, so this is a peak crossing a grid step and not two different samplings.* ⇒ *The withdrawal
+stands, on the arm where it was made; what this arm adds is that the quantised reading is not even
+stable between arms. The **refined** separation — the half that carries the verdict — holds here at a
+factor of $2.4$ ($3.7\%$ against $1.6\%$).*
+
+## ⓸ THE CARRY: CLASS 3, AND COMPUTED
+
+The phase residual is $|\phi_{\rm arm}/\phi_{\rm sky}-1|$ — each arm's own comb, fitted from its own
+first three peaks, against **the sky's**. So I did not classify it; I measured it: recomputing the
+arm's residual from the arm spectrum and the sky **alone** returns `3.690764%` against the pipeline's
+`3.690764%`, bit-identical. ⇒ *No control quantity enters, so a comb-offset carry has nothing to act
+on — and the parameter moves and the $\chi^2$ ratios are not band ratios either.*
+
+## ⌗ ⓹ AND `cc66.30` IS UNAFFECTED, WHICH I CHECKED BEFORE WRITING ANY OF THE ABOVE
+
+`.30` reported the arm of record's no-fit lensed $\chi^2$ as `302.1` → `1.41×`. The grid base reads
+`297.7`. ** Those are not a contradiction and they are not the same quantity: ** `.30` reads
+`cc66_cr_x_h686_L2000_leafrec1`, which sits at the **distances' point** `H0 = 68.6`, so its `302.1`
+is a genuine as-computed figure; the grid's `297.7` is the same arm at its **fitted** point, and the
+`4.4` between them is the refit's own gain. *Two routes, both coherent — and ⑵'s `2.57 → 1.41` stands
+exactly as I reported it.*
+
+## ⓺ TWO BANK REQUESTS FOR 70, BOTH NARROW
+
+1. **A `LEAFREC=1` response grid centred on the distances' point** `(68.60, 0.2973, 0.0224, 0.965)` at
+   `LMAXL=2000` — nine runs. Without it the background-pinning question cannot be asked on the arm of
+   record at all, and it is this receipt's headline.
+2. **A run at the arm of record's refitted minimum** on that grid, so Part 2's licence has something
+   to exercise. *One run.*
+
+⌗ *Instrument: `computations/beyond_the_wall/r7641_cc66_grid_readers/`*
+`full_range_refit_on_the_arm_of_record.py` *— both arms in one pipeline, the namesake's published
+figures as a licence gate before the arm of record is read at all, and **seven perturbations, every
+one red**: the grid pointed back at the namesake's, the banked run pointed back, the manifest read
+replaced by the hard-coded point, the verify-is-base claim pointed at the namesake's run, the second
+raw peak asserted at `540`, the licence ratio moved by a hundredth, and the refined-separation gate
+inverted.*
+
+⇒ **Grid readers 2–6 next.** Each gets the same treatment: the centre read from the bank rather than
+assumed, and the carry measured rather than classified.
