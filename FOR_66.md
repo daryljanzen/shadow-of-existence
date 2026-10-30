@@ -26958,3 +26958,47 @@ INDEX row, both appendices, `CR_cosmology.pdf` rebuilt (325 pages, 0 errors). No
 
 **3 of Set A's 21 landed.** Nine of the twelve measured-and-clear remain, then the seven whose citing
 sentence needs reading. Still held on your word: the l.1120 split (`.1`) and l.956 (`.2`).
+
+---
+
+## ⚑ `r7639+cc66.12` — **THE FOURTH SET A RE-POINT LANDED. THE CARRY IS AGAIN WHAT MAKES A VERDICT READABLE, AND A PIN I HAD ALREADY WRITTEN TURNED OUT NOT TO PIN — CAUGHT BY THE PERTURBATION, NOT BY THE REASONING**
+
+`P15_the_two_projection_widths_…`. `rc=0`.
+
+## ⓵ THE CARRY MAKES THE SECOND TOOTH READABLE AT ALL
+
+The verdict is *"the channel ACCELERATES where the target DECELERATES, so it fails the filter."* Read on
+the control's comb the target's curvature is **`+0.00342` — positive** — so there is no direction to test
+against and **the verdict cannot be reached.** Carried it is `−0.00309` and the verdict stands.
+
+⌗ **And the carry does not apply to the other three rows.** `plane_wave()` and `stretch()` are
+eta-window integrals over the `r6959_eta` profiles — no envelope, no band statistic — so there is nothing
+to carry. *They move with the eta re-point and not with the comb, and the receipt says so at the site.*
+
+**What moves:** `s = 1.135 → 1.152`; the target to `+0.0295 … +0.0795`; the mean-anchored departure
+`+0.0034–+0.0196 → +0.0038–+0.0220`; the verdict's curvatures `+0.00016`/`+0.00037 →
++0.00018`/`+0.00041`; the top-band delivery `+1.96% → +2.20%` against the `+7.95%` needed; the plane-wave
+row's `G = 8.93 → 7.94`. ** The verdict is unchanged. **
+
+## ⛔⛔ ⓶ AND A PIN I HAD ALREADY WRITTEN DID NOT PIN
+
+I pinned the arm on the target's **curvature** — the very quantity the carry rescues — and then
+perturbed. **Both legs still passed.** The reason, measured: carried, the *namesake* arm's curvature
+lands within `5e-4` of the arm of record's, so the pin admitted either and said nothing about which was
+read.
+
+⇒ *** A pin on a quantity the two arms agree on is not a pin on the arm, however load-bearing that
+quantity is to the claim. *** Re-cut on the carried **band vector**, where the two readings differ by up
+to `0.0055` against a `5e-4` half-width, and the eta leg pinned on the conformal-width ratio (`1.15196`
+against the namesake bank's `1.13496`). **Both legs now fire.**
+
+⌗ *Third time in four receipts that the perturbation and not the reasoning found the pin that does not
+pin. I am no longer treating "I wrote a pin" as evidence that the arm is pinned — only the revert is.*
+
+## ⓷ LANDED WITH IT, AND WHERE THE SEAT IS
+
+INDEX row, both appendices, `CR_cosmology.pdf` rebuilt (325 pages, 0 errors). No sentence of
+`CR_cosmology.tex` touched.
+
+**4 of Set A's 21 landed.** Eight of the twelve measured-and-clear remain, then the seven whose citing
+sentence needs reading. Still held on your word: the l.1120 split (`.1`) and l.956 (`.2`).
