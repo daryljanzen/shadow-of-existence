@@ -173,14 +173,21 @@ kn, KER = rtext('two_projection_widths_differ')
 check("⛔ THE KERNEL GETS NO NOISE MODEL: it is a ratio of theory projection integrals and reads no data -- no "
       "likelihood data, no covariance, no draw", not re.search(NOISE, KER) and 'X_DATA' not in KER
       and 'COV_TT' not in KER, kn[:60])
+# ⛭ r7639+cc66: THE THREE FIGURES BELOW MOVED, AND THIS RECEIPT WENT RED BEFORE ANY READER DID.
+#   The kernel receipt was re-pointed onto the ARM OF RECORD (`_leafrec1`) with 70's comb carry, so the two
+#   anchorings now read $+0.0220$ and $+0.0018$ at the top band and the band's need is $+7.95$ per cent.
+#   ** The CLAIM did not move: the share is still a quarter against a fiftieth, still twelvefold.**  0.277 and
+#   0.0226, against 0.257 and 0.021 on the namesake arm.  *This red is the pin working: the gates assert the
+#   figures are the KERNEL's own by reading its text, so an arm move on the kernel turns them red by design,
+#   and that is what named this receipt on `e78693064`.  Nothing here is chosen to agree.*
 check("and its ONLY uncertainty in the repository is systematic -- the two anchorings -- which at the top band "
-      "read +0.0196 and +0.0016", '+0.0196' in KER and '+0.0016$ and crosses zero, where $G$ is n' in KER, "mean- and peak-anchored, top band")
-TOP_NEED = 0.0762
-check("the top band's need, 0.0762, is the kernel receipt's own figure (+7.62 per cent), not a number chosen here",
-      '7.62' in KER, "quoted from the kernel's receipt")
+      "read +0.0220 and +0.0018", '+0.0220' in KER and '+0.0018$ and crosses zero, where $G$ is n' in KER, "mean- and peak-anchored, top band")
+TOP_NEED = 0.0795
+check("the top band's need, 0.0795, is the kernel receipt's own figure (+7.95 per cent), not a number chosen here",
+      '7.95' in KER, "quoted from the kernel's receipt")
 check("⚠ so the share it is quoted at is ANCHOR-DEPENDENT BY A FACTOR OF TWELVE: a quarter of what the top band "
-      "needs on one anchoring, a fiftieth on the other", 0.2 < 0.0196 / TOP_NEED < 0.3 and 0.0016 / TOP_NEED < 0.03,
-      f"{0.0196 / TOP_NEED:.2f} vs {0.0016 / TOP_NEED:.3f} of the {TOP_NEED} the top band needs")
+      "needs on one anchoring, a fiftieth on the other", 0.2 < 0.0220 / TOP_NEED < 0.3 and 0.0018 / TOP_NEED < 0.03,
+      f"{0.0220 / TOP_NEED:.2f} vs {0.0018 / TOP_NEED:.3f} of the {TOP_NEED} the top band needs")
 
 # ============================================================================== b) THE PASSAGES
 print("\n" + "=" * 110)

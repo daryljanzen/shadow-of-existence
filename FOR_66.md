@@ -27149,3 +27149,72 @@ Both pointer legs fire when reverted. INDEX row, both appendices, `CR_cosmology.
 `held_period_estimator`, `lowest_band_is_closed`, `surviving_step_is_amplitude`, `term_mix_has_the_shape`,
 `two_channels_compose`, `windows_phase_spread` — then the seven whose citing sentence needs reading.
 Still held on your word: the l.1120 split (`.1`) and l.956 (`.2`).
+
+---
+
+# r7639+cc66.16 — THE FIGURE THAT MOVED WAS IN ANOTHER RECEIPT, AND ITS GATE CAUGHT ME
+
+**CI named one red that is not a cancellation, and it is mine.** On `e78693064` the tolerance job
+reported `ran 35, 1 named red, 12 NEVER PROBED`. The three probe builds were all PARTIAL — stopped from
+outside by my own next push — and `0` sites were flagged, so the *perturbation* measured nothing. ⇒ **But
+`1 named red` is a different signature from the three failures before it, which all read `0 named red`:
+this one carries a receipt that exited `rc=1` IDENTICALLY on builds A and B.** A cancelled probe cannot
+file a verdict; a receipt that fails the same way on two independent builds already has one.
+
+⌗ *Reading rule, measured on this run: on a tolerance failure, `0 named red` with PARTIAL builds is the
+cancellation signature; `n named red` with the same output on two builds is a receipt failing, and the
+cancellation says nothing about it either way. I had three prior instances of the first and was one step
+from filing this as a fourth.*
+
+## ⓵ WHAT FAILED, AND WHY IT IS ORDER ⑴ ARRIVING FROM THE OUTSIDE
+
+`P15_the_three_instruments_with_no_noise_model_…` — the noise-model audit — failed two gates:
+
+```
+- and its ONLY uncertainty in the repository is systematic -- the two anchorings -- which at the
+  top band read +0.0196 and +0.0016
+- the top band's need, 0.0762, is the kernel receipt's own figure (+7.62 per cent), not a number
+  chosen here
+```
+
+Both gates assert those figures are **the projection-width kernel receipt's own**, by reading that
+receipt's text and requiring the literal to be present. `.12` re-pointed that kernel onto the arm of
+record with the carry, so its figures are now `+0.0220` (mean-anchored), `+0.0018` (peak-anchored) and
+`+7.95` per cent. ⇒ *** The gates went red because they were doing exactly their job: a figure quoted out
+of another receipt moved when that receipt's arm moved. ***
+
+**The claim did not move.** `0.0220/0.0795 = 0.277` and `0.0018/0.0795 = 0.0226` — still a quarter
+against a fiftieth, still twelvefold (`12.2`, against `12.2` on the namesake arm from `0.257` and
+`0.021`). So the three figures are re-pointed and **no sentence is restated**: `l.1696` of
+`CR_cosmology.tex` carries the share qualitatively ("about a quarter … about a fiftieth", "an order of
+magnitude") and its sign claim — *it accelerates where the excess decelerates* — holds on the arm of
+record with curvature `+0.00018` and `+0.00041` against the target's carried `−0.00309`.
+
+**Perturbed, all three:** `+0.0220 → +0.0219`, `+0.0018 → +0.0019` and `+7.95 → +7.96` in the kernel each
+turn the matching gate red on its own; the kernel was then restored and the tree shows only the one file.
+I left the gates' SHAPE alone deliberately — a substring read of the kernel's text is a pin I have now
+watched fire four times, and replacing it with something cleverer would trade a measured pin for one I
+would have to re-validate.
+
+## ⓶ THE CLASS, SWEPT RATHER THAN ASSUMED
+
+The reader is a fragment-keyed text read (`rtext`), and that helper is **defined in exactly one file in
+the repository** — so this class has one member and it is now closed. By full stem, two other receipts
+read receipts I re-pointed: the eleven-instrument resolution table and `S1`'s corpus sweep. **Both run
+green.** Appendices regenerate with no drift, so nothing is owed to the PDF.
+
+⌗ *What I had missed: my own sweep for "which figures move with the arm" looked at the re-pointed receipt
+and at the paper. It did not look at OTHER receipts whose gates quote the re-pointed receipt's printed
+text. Order ⑴ says the figures move with the arm — and a figure can be printed somewhere I did not re-point.*
+
+## ⓷ A CORRECTION TO `.15`
+
+`.15` says "Five of the twelve measured-and-clear remain" and then lists seven. **Seven is right** —
+`no_statistic`, `held_period_estimator`, `lowest_band_is_closed`, `surviving_step_is_amplitude`,
+`term_mix_has_the_shape`, `two_channels_compose`, `windows_phase_spread`. Set A stands at **7 of 21
+landed**; still held on your word: the `l.1120` split (`.1`), `l.956` (`.2`), and the `l.1106` margin
+wording.
+
+⚠ *And a flag for when `held_period_estimator` is re-pointed: the same audit receipt pins its text too —
+it requires `bounded its contrast effect at $2$` to still be there. If that re-point moves the bound, the
+audit goes red again, and it will again be the pin working rather than a defect.*
