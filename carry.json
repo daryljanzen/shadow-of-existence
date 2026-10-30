@@ -135,5 +135,24 @@
     "unmeasured": true
    }
   }
+ },
+ "claude/shadow-of-existence-setup-wgcmvt": {
+  "reads": {
+   "receipts/P15_CR_cosmology/C62_the_diffusion_signature_is_a_wash_and_the_isw_is_not_what_it_turned_on.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40993723852",
+    "since": "4aef9f557caaea5fdc454da8a02468093627ebfe",
+    "unmeasured": true
+   },
+   "receipts/P15_CR_cosmology/P15_the_free_streaming_knob_is_common_to_both_arms_and_the_switch_sweep_finds_no_further_shadow.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40993723852",
+    "since": "4aef9f557caaea5fdc454da8a02468093627ebfe",
+    "unmeasured": true
+   },
+   "receipts/P15_CR_cosmology/P15_the_signature_collapses_at_the_adjudicated_ratio_and_the_endpoint_sets_its_sign.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/40993723852",
+    "since": "4aef9f557caaea5fdc454da8a02468093627ebfe",
+    "unmeasured": true
+   }
+  }
  }
 }
