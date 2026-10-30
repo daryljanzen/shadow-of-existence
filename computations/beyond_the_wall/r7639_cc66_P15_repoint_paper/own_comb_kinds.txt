@@ -21,4 +21,6 @@ THE FOUR READINGS ON THE ARM OF RECORD, EVERY ONE CARRIED ONTO THE CONTROL'S COM
   median   max |band| = 2.220e-16
   savgol   max |band| = 2.220e-16
   none     max |band| = 0.000e+00
+  mean w=0.8  max |band| = 2.220e-16
+  mean w=1.2  max |band| = 0.000e+00
   -> REDUCES (worst 2.2e-16, floating-point and not a difference)

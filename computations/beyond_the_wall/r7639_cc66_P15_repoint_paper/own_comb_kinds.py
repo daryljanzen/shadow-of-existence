@@ -71,13 +71,19 @@ def _combs(banks):
     return Tc, pc, Ta, pa, (pa - pc + np.pi) % (2 * np.pi) - np.pi
 
 
-def band_excess_own_kind(banks, kind, QE=QE):
-    """70's carry with the step receipt's envelope KIND.  `kind='mean'` is 70's own function."""
+def band_excess_own_kind(banks, kind, QE=QE, win=1.0):
+    """70's carry with the step receipt's envelope KIND.  `kind='mean', win=1.0` is 70's own function.
+
+    `win` is the envelope window in units of the CONTROL's comb period, so the arm's window is
+    `win * Ta / Tc` -- one of the arm's own periods when `win=1`.  A receipt that sweeps the window to
+    show a result is window-independent needs this, because carrying at a fixed arm window would make
+    the sweep ask a different question on each arm.
+    """
     Tc, pc, Ta, pa, dphi = _combs(banks)
     xc, yc = banks['lcdm']
     xa, ya = banks['cr']
-    ec = envelope(xc, yc, 1.0, kind)
-    ea = envelope(xa, ya, Ta / Tc, kind)                   # one of the ARM's own periods
+    ec = envelope(xc, yc, win, kind)
+    ea = envelope(xa, ya, win * Ta / Tc, kind)             # `win` of the ARM's own periods
     oc, oa = (yc - ec) / ec, (ya - ea) / ea
     ua = Tc * (xa / Ta + dphi / (2 * np.pi))               # the arm on the control's comb coordinate
     Rc = np.array([_rms(xc, oc, a, b) for a, b in zip(QE[:-1], QE[1:])])
@@ -149,6 +155,10 @@ def main():
         m = float(np.max(np.abs(E)))
         worst = max(worst, m)
         print(f"  {k:8s} max |band| = {m:.3e}")
+    for w in (0.8, 1.2):                  # and at the swept windows a receipt may ask for
+        m = float(np.max(np.abs(band_excess_own_kind(same, 'mean', QE, win=w))))
+        worst = max(worst, m)
+        print(f"  mean w={w:<4} max |band| = {m:.3e}")
     print(f"  -> {'REDUCES' if worst < 1e-12 else 'DOES NOT REDUCE'} "
           f"(worst {worst:.1e}, floating-point and not a difference)")
     return 0 if (ok and worst < 1e-12) else 1

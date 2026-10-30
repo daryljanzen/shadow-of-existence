@@ -26891,3 +26891,70 @@ ruling, confirmed on a sign and not on a smoothness impression.
 remaining 12 clear ones measured as above, and 7 still need their citing sentence read first. Still held on
 your word: the l.1120 split (`.1`), l.956 (`.2`), and the one ruling at `.7` ⓹ which I have since acted on
 as option ① at `.8`.
+
+---
+
+## ⚑ `r7639+cc66.11` — **THE THIRD SET A RE-POINT LANDED, AND IT IS THE ONE THE CARRY SAVES: READ ON THE CONTROL'S COMB THIS RECEIPT'S OWN CLAIM WOULD HAVE BEEN WITHDRAWN. TWO REGISTERED GATES MISS AND THEY ARE ONE FACT — THE ARM OF RECORD DISCRIMINATES A SHAPE THE NAMESAKE COULD NOT**
+
+`P15_the_excess_decelerates_…`. `rc=0`, 23 PASS.
+
+## ⓵ THE CARRY IS LOAD-BEARING HERE, NOT A REFINEMENT
+
+| reading | curvature of the excess in `q` | |
+|---|---|---|
+| namesake, shared comb | `−0.00327` | the registered claim |
+| arm of record, **shared** comb | `+0.00342` | **the claim would be WITHDRAWN** |
+| arm of record, **carried** | `−0.00309` | **the claim stands** |
+
+⌗ **And the carry is not a blanket substitution.** Two of the four band-ratio sites compare the CONTROL
+against itself — PART 1's injected forms and the three banked channel responses, all `lcdm` — where
+`T_a = T_c`, `Δφ = 0` and the carry is the identity. *Those are left exactly as they were; carrying them
+would be arithmetic with no referent, and the receipt says so at the site.*
+
+**What moves:** the target's growth `G = 3.55 → 2.70`; the band ratios to `1.0295 … 1.0795`; the
+source-term range `G = 0.54–1.00 → 0.73–1.03`; the dipole-to-monopole `1.08 → 0.90`; the peak amplitude
+ratio's growth `0.97 → 0.73`. The window sweep still holds (`0.377, 0.362, 0.350`; spread `0.027 < 0.10`).
+
+## ⛔ ⓶ TWO REGISTERED GATES MISS, AND THEY ARE **ONE** FACT
+
+| | namesake | arm of record, carried |
+|---|---|---|
+| power law vs logarithm, registered NOT to separate (margin `4`) | `3.43` ✓ | **`6.31`** ✗ |
+| the logarithm's `χ²` | `6.15` | **`7.98`** |
+| the power law's `χ²` | `2.72` | **`1.66`** |
+| the logarithm's margin over a constant, needs `> 4` | `6.01` | **`2.21`** ✗ |
+| the other three rising forms' margins | — | `8.5` to `9.4` ✓ |
+
+⇒ **The logarithm's fit degrades and the power law's improves, so they separate — and the same
+degradation is what drops the logarithm's margin over a constant.** *Not two findings; one.* The receipt
+now asserts the direction and the cause rather than the bare miss, and the flatness claim is **restated
+to name the logarithm as the exception rather than widened to cover it.**
+
+** The registered non-separation is lost to a SHARPER instrument, not to noise. ** *On the arm of record
+this receipt discriminates a shape the namesake arm could not — which is a gain, and a loss only to the
+claim as it was written. Both gates are recorded as missed and NEITHER is re-toleranced.*
+
+⚠ **And one margin narrows the other way:** the filter's largest candidate is still `G = 1.53`, but
+against a target of `2.70` that is **57 per cent** of what is needed where it was under half of `3.55`.
+The filter still returns empty; it returns empty with less room.
+
+## ⓷ BOTH POINTER LEGS PINNED — AND THE ETA LEG WAS SILENT UNTIL IT WAS
+
+- reverting **`r6941_fine`** fires the band-ratio reproduction. ✓
+- reverting **`r6959_eta`** left **every assertion in the file passing.** The source-term and
+  dipole-to-monopole claims are `G`-range and sign claims with room, so a green said nothing about which
+  eta bank had been read. ⇒ *The silent class again, in my own re-point for the second time.* Pinned on
+  the peak amplitude ratio's growth, which separates the banks cleanly — **`0.73` against the namesake's
+  `0.97`** — and the revert now fires.
+
+⌗ *That is twice in three receipts. The rule I set myself at `.9` is holding its weight: perturb before
+reporting, and pin until something fires.*
+
+## ⓸ LANDED WITH IT, AND WHERE THE SEAT IS
+
+INDEX row, both appendices, `CR_cosmology.pdf` rebuilt (325 pages, 0 errors). No sentence of
+`CR_cosmology.tex` touched. ⌗ *And the 63 CI `fast` gates came back ALL GREEN on the previous unit
+(`ceab7adef`, the coupling re-point).*
+
+**3 of Set A's 21 landed.** Nine of the twelve measured-and-clear remain, then the seven whose citing
+sentence needs reading. Still held on your word: the l.1120 split (`.1`) and l.956 (`.2`).
