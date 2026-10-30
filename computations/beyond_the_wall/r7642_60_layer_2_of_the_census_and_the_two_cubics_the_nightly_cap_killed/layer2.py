@@ -160,11 +160,103 @@ def main():
           "rather than carved out of it, so its reading is taken here and not inherited",
           'r6885_dp0_cr' in cfg)
 
+    part3(cfg, have)
+
     print("\n" + "=" * 96)
     print(f"  {len(_fail)} failure(s)")
     for f in _fail:
         print("   [FAIL] " + f)
     sys.exit(1 if _fail else 0)
+
+
+DIAG = os.path.join(HERE, 'diagnostics')
+
+
+def rel_of(pa, pb):
+    """max |a-b|/|b| on D_l, and whether the two are bit-identical."""
+    a, b = load(pa), load(pb)
+    if not np.array_equal(a['ls'], b['ls']):
+        return float('inf'), False
+    x, y = np.asarray(a['Dl'], float), np.asarray(b['Dl'], float)
+    return float((np.abs(x - y) / np.maximum(np.abs(y), 1e-300)).max()), np.array_equal(x, y)
+
+
+def part3(cfg, have):
+    """** THE ORDER'S SECOND BRANCH: name the instrument change behind each difference. **
+
+    Both answers have the SAME SHAPE, and it is the shape the instrument's own source already names
+    for another switch: *a switch reached one path of three.*  A switch that was inert on the path a
+    file was banked on, and is live there now, makes the banked file a run of the command WITHOUT it
+    -- so the file's NAME claims a switch its contents do not carry, and the old -> new diff carries
+    the switch's whole effect on top of the arm's.
+    """
+    S, R = SPEC, REBUILT
+    print("\nPART 3 -- NAMING THE CHANGE BEHIND EACH DIFFERENCE, WHICH IS THE ORDER'S SECOND BRANCH")
+
+    print("\n  ⓐ r6885_dp0_cr -- THE DOPPLER-DIPOLE SWITCH DID NOT REACH THE HIERARCHY PATH.")
+    plain = 'cc66_r185_verify_cr'          # the identical command WITHOUT the switch
+    if plain in have and 'r6885_dp0_cr' in have:
+        r1, b1 = rel_of(os.path.join(S, 'r6885_dp0_cr.npz'), os.path.join(S, plain + '.npz'))
+        r2, b2 = rel_of(os.path.join(S, 'r6885_dp0_cr.npz'), os.path.join(R, plain + '.npz'))
+        r3, _ = rel_of(os.path.join(R, 'r6885_dp0_cr.npz'), os.path.join(R, plain + '.npz'))
+        check("the namesake is BIT-IDENTICAL to the namesake of the same command WITHOUT the "
+              "switch, so the switch did nothing at its build", b1)
+        check(f"and BIT-IDENTICAL to TODAY's run of that switch-free command, so what moved is the "
+              f"switch and not the rest of the instrument", b2)
+        check(f"while TODAY the switch changes that spectrum by {r3:.3e} -- the whole of the "
+              f"difference the census measured", r3 > 1e-3)
+        lo, _ = rel_of(os.path.join(S, 'r6885_losdp0_cr.npz'), os.path.join(S, 'r6885_los_cr.npz'))
+        ln, _ = rel_of(os.path.join(R, 'r6885_losdp0_cr.npz'), os.path.join(R, 'r6885_los_cr.npz'))
+        check(f"⛭ AND THE CONTROL SAYS IT IS THE PATH AND NOT THE SWITCH: on the LINE-OF-SIGHT path "
+              f"the same switch was already live at the build and is live now, to the same figure "
+              f"({lo:.3e} then, {ln:.3e} now)", abs(lo - ln) < 1e-6 and lo > 1e-3)
+    src = open(os.path.join(BTW, 'ACOUSTIC_two_arm.py')).read()
+    check("⇒ and the instrument's own source NAMES the commit: `_SWSRC` and `_DPSRC` wired on the "
+          "hierarchy path at r6889+cc66.36", '`_SWSRC` AND `_DPSRC` WIRED HERE AT r6889+cc66.36' in src)
+    check("⇒ and names the measurement this census just reproduced: DPSRC=0 on that path "
+          "'returned a BIT-IDENTICAL spectrum on both arms (r6885+cc66.35)'",
+          'returned a BIT-IDENTICAL spectrum on both arms (r6885+cc66.35)' in src)
+
+    print("\n  ⓑ r6784_cr_crossing_los -- THE INITIAL-CONDITION SWITCH DID NOT REACH THE "
+          "LINE-OF-SIGHT PATH.")
+    nd = os.path.join(DIAG, 'r6784_cr_crossing_los__noCRIC.npz')
+    if os.path.exists(nd) and 'r6784_cr_crossing_los' in have:
+        r1, b1 = rel_of(nd, os.path.join(S, 'r6784_cr_crossing_los.npz'))
+        r2, _ = rel_of(os.path.join(R, 'r6784_cr_crossing_los.npz'),
+                       os.path.join(S, 'r6784_cr_crossing_los.npz'))
+        check("the namesake is BIT-IDENTICAL to TODAY's run of its own command WITH THE SWITCH "
+              "REMOVED, so the switch did nothing on this path at its build", b1)
+        check(f"while its command WITH the switch misses the namesake by {r2:.3e}", r2 > 1e-3)
+        rh, _ = rel_of(os.path.join(R, 'r6784_cr_crossing_hier.npz'),
+                       os.path.join(S, 'r6784_cr_crossing_hier.npz'))
+        check(f"⛭ AND THE CONTROL IS THE SAME GROUP'S HIERARCHY MEMBER, which carries the SAME "
+              f"switch and reproduces at {rh:.3e}: so the switch was live THERE at the build",
+              rh < TOL)
+        ca, _ = rel_of(os.path.join(S, 'r6784_cr_crossing_hier.npz'),
+                       os.path.join(S, 'r6784_cr_crossing_hier_noCRIC.npz'))
+        cb, _ = rel_of(os.path.join(R, 'r6784_cr_crossing_hier.npz'),
+                       os.path.join(R, 'r6784_cr_crossing_hier_noCRIC.npz'))
+        check(f"⇒ and the switch's own ACTION did not change -- with against without, on the path "
+              f"that had it, is {ca:.3e} then and {cb:.3e} now. ** What changed is its REACH. **",
+              abs(ca - cb) < 1e-9 and ca > 1e-3)
+
+    print("\n  ⓒ WHAT IS MEASURED AND NOT NAMED, SAID RATHER THAN LEFT OUT")
+    print("  *Two differences remain, both on the hierarchy path, both small, and neither is named")
+    print("  to a commit here.  The search: the three switches the two named findings implicate were")
+    print("  each tested against their own controls above; the instrument's source carries no note")
+    print("  with a revision after r6784 describing a change to the hierarchy's CR handover; and the")
+    print("  clone is shallow, so history cannot be asked.  Reported as unlocated, with the files")
+    print("  and the figures, rather than attributed to the nearest story.*")
+    for stem in ('r6784_cr_crossing_hier_noCRIC', 'r6794_cr_crossing_kcont_summed'):
+        if stem in have:
+            r, _ = rel_of(os.path.join(R, stem + '.npz'), os.path.join(S, stem + '.npz'))
+            extra = NEEDS_PROCEDURE.get(stem, '')
+            print(f"      {stem:<32} {r:.3e}" + (f"\n        ⚠ {extra}" if extra else ""))
+    check("⌗ and both are on the hierarchy path with the initial-condition switch UNSET, which is "
+          "the one combination the two named findings do not cover",
+          cfg['r6784_cr_crossing_hier_noCRIC'].get('CRIC') is None
+          and cfg['r6794_cr_crossing_kcont_summed'].get('CRIC') is None
+          and cfg['r6784_cr_crossing_hier_noCRIC'].get('HIER') == '1')
 
 
 if __name__ == '__main__':
