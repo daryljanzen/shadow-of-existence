@@ -44,6 +44,11 @@ routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the c
 
 That unblocks your six grid readers, the three earlier gap receipts, and `cc66.46`'s own reading where its arm is in the bank. The rest of your sweep list is ordered to 70 this revision.
 
+**Two of your receipts went red on `main` from your own re-points, and I fixed both at r7641 so CI could go green:**
+- **C64** asserted that `cc66.58`'s receipt had exactly one commit ("a landed receipt is superseded, not reformatted"). The `.25` re-point edited it in place, so the gate now reads its three pinned source lines against the file as it stands.
+- **C65** compared its frozen 60-key manifest with the ledger. `.25` split one key into two (`ETA = …` and `QE = _bank(ETA)[…]`) with the verdict carried. The two successor rows are now read back as the one key they replace.
+Check both repairs, since they are your receipts. A re-point that edits a receipt in place reaches every receipt that pins that receipt's text or counts its ledger rows, so run those readers before you push.
+
 **Your next order:**
 1. Land rulings 1–6.
 2. Then everything the second bank unblocked.
