@@ -26555,3 +26555,69 @@ so until it is too late. ⌗ *Worth knowing for every seat whose pre-push set in
 CI's `fast` list and it is green locally for exactly as long as the change is unstaged.*
 
 All 63 of CI's `fast` gates are green on `305a4a276`.
+
+---
+
+## ⚑ `r7639+cc66.5` — **SET A, THE INSTRUMENT FIRST: `70`'s OWN-COMB CARRY GENERALISED TO ALL FOUR OF THE STEP RECEIPT'S READINGS, VERIFIED TWO WAYS BEFORE IT TOUCHES A RECEIPT — AND THE ALTERNATION IS THE BEAT IN EVERY ENVELOPE KIND, NOT JUST THE MEAN**
+
+`own_comb_kinds.py` / `.txt` in `…/r7639_cc66_P15_repoint_paper/`. Nothing in a receipt has moved yet.
+
+## ⓵ WHY A NEW INSTRUMENT WAS NEEDED, AND WHY IT IS A GENERALISATION AND NOT A REPLACEMENT
+
+`70`'s `band_excess_own` carries the arm onto the control's comb coordinate before the bands are cut — which
+is what removes the beat. **Its envelope is the retention law's running arithmetic MEAN**, lifted unchanged,
+**and that is exactly ONE of the step receipt's four readings.** The other three are a running median, a
+Savitzky-Golay fit, and a reading that needs no envelope at all (the peak-to-trough depths between
+consecutive extrema). Re-pointing only the mean reading would leave the receipt's headline claim — *the step
+survives all four readings, so it is the excess's and not the estimator's* — resting on three readings still
+cut on the control's bands and one on the arm's.
+
+⇒ **The carry is about the ABSCISSA and the WINDOW WIDTH, not about the kind of envelope.** It maps `x` to
+`u = T_c (x / T_a + Δφ/2π)` and widens the arm's window to one of *its own* periods, `T_a / T_c`. Neither
+step mentions how the envelope is estimated. *The generalisation is mine; the combs, the phase fit and the
+carry are `70`'s and are lifted unchanged.*
+
+## ⓶ VERIFIED TWO WAYS BEFORE IT IS USED — AND IT EXITS `1` IF EITHER FAILS
+
+- **REPRODUCTION.** The mean reading returns **your own-comb row on the arm of record to every digit that
+  result prints** — `+0.0295 +0.0595 +0.0610 +0.0639 +0.0777 +0.0728 +0.0795`, step `−0.0396`, rise
+  `+0.0061` — from an independent implementation. *An instrument that runs is not an instrument that
+  measures; this one is checked against a number computed elsewhere before it is trusted. Seven blind
+  instruments this campaign have earned that step.*
+- **REDUCTION.** With `T_a = T_c` and `Δφ = 0` the carry must **be** the shared statistic. Fed the control
+  against itself, all four readings return every band at zero: `0.0`, `2.2e-16`, `2.2e-16`, `0.0`. *That is
+  your own invariant, now checked for the three kinds you did not cover.*
+
+## ⓷ AND THE RULING HOLDS IN EVERY ENVELOPE KIND, WHICH IS MORE THAN WAS MEASURED
+
+| reading | arm of record, **carried** | ratio-step | your step | rise |
+|---|---|---|---|---|
+| mean | `+0.0295 +0.0595 +0.0610 +0.0639 +0.0777 +0.0728 +0.0795` | `0.427` | `−0.0396` | `+0.0061` |
+| median | `+0.0521 +0.0563 +0.0658 +0.1107 +0.1089 +0.1081 +0.1927` | `0.486` | `−0.0550` | `+0.0329` |
+| savgol | `+0.0464 +0.0454 +0.0646 +0.0766 +0.0753 +0.0737 +0.0904` | `0.654` | `−0.0246` | `+0.0103` |
+| no envelope | `−0.0024 +0.0602 +0.0669 +0.0508 +0.0539 +0.1235 +0.0554` | `−0.035` | — | — |
+
+**On the SHARED statistic on the arm of record the savgol reading has a NEGATIVE band 6 (`−0.0075`)** and
+the mean reading drops to `+0.0141` there. Carried, those become `+0.0737` and `+0.0728`. ⇒ *Your ruling —
+that the alternation was the beat — is now measured on three envelope kinds where it was measured on one.*
+
+## ⓸ WHAT THE STEP RECEIPT'S OWN ASSERTIONS DO, AND THE ONE MARGIN TO WATCH
+
+| its assertion | namesake | arm of record, carried |
+|---|---|---|
+| `max(ratio-step) < 0.7` over all four readings | `0.633` | **`0.654`** — passes |
+| envelope-free band 1, `\|·\| < 0.01` | `−0.0017` | **`−0.0024`** — passes |
+| envelope-free bands 2–7 mean, `> 0.04` | `+0.0654` | **`+0.0685`** — passes |
+
+⚠ **The `0.7` gate narrows.** The savgol reading goes `0.633 → 0.654`, so the margin falls from `0.067` to
+`0.046` — the narrowest in the family. It passes, and it passes on the reading your ruling says is the right
+one, **but I am recording it now rather than letting a later seat rediscover it as a surprise.** If you want
+that gate re-cut on the arm of record rather than inherited, say so and I will propose a value with the
+null's reach beside it; otherwise it stays exactly as registered.
+
+## ⓹ WHERE THE SEAT IS
+
+Of Set A's 23, **21 are clear of every bank gap** and 2 are blocked (`the_combs_resolution_…` and
+`the_visibilitys_clock_…`, on `r6919_injected_cr` / `r6925_visleaf_cr` / `r6929_scan_cr` /
+`r6893_switch_screen_cr` — all in the measured list at `r7639+cc66.2` ⓷). The instrument is in; the 21
+re-points follow, each with its printed figure checked against ⑴'s rule before anything is edited.
