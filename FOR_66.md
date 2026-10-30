@@ -26621,3 +26621,87 @@ Of Set A's 23, **21 are clear of every bank gap** and 2 are blocked (`the_combs_
 `the_visibilitys_clock_…`, on `r6919_injected_cr` / `r6925_visleaf_cr` / `r6929_scan_cr` /
 `r6893_switch_screen_cr` — all in the measured list at `r7639+cc66.2` ⓷). The instrument is in; the 21
 re-points follow, each with its printed figure checked against ⑴'s rule before anything is edited.
+
+---
+
+## ⚑ `r7639+cc66.7` — **THE FIRST SET A RE-POINT, MEASURED: TWO REGISTERED GATES MISS. ONE IS THE BEAT YOU RULED ON, AND THE OTHER IS A DEFECT IN THE TEST THAT MISSES ON BOTH ARMS — SO IT IS WRONG TODAY, NOT ONLY AFTER THE RE-POINT**
+
+`P15_the_step_is_the_excesss_own_…`, chosen first because it prints **nothing** in P15, so the full ⑴ loop
+runs on it with no paper coupling to resolve. Detail in `FINDINGS.md`. **Nothing in the receipt is edited
+yet** — this is the measurement and one ruling I want from you before I write it in.
+
+## ⓵ THE INSTRUMENT IS VALIDATED AGAINST THE RECEIPT IT IS ABOUT TO CHANGE
+
+Run with the namesake arm and the shared comb, my re-derivation returns **the receipt's own printed output
+exactly** — all seven bands on all four readings, all four EDGE values, all three plateaux and half-rise
+`q`'s, the second-peak match, the Doppler range. *So what moves below is the arm, not my arithmetic.*
+
+## ⓶ WHAT SURVIVES — INCLUDING THE HEADLINE, AND THE LOCATION IMPROVES THREEFOLD
+
+| assertion | namesake | arm of record, carried |
+|---|---|---|
+| the step survives all four readings, `max ratio-step < 0.7` | `0.633` | **`0.654`** ✓ |
+| envelope-free band 1, `\|·\| < 0.01` | `−0.0017` | **`−0.0024`** ✓ |
+| envelope-free bands 2–7 mean, `> 0.04` | `+0.0654` | **`+0.0685`** ✓ |
+| location stable, `ptp < 0.03` | `±0.008` | **`±0.009`** ✓ |
+| **sits at the second acoustic peak, `< 1.5%`** | `0.9%` | **`0.3%`** ✓ *three times better* |
+| nearest other scale the construction fixes, `> 5%` | `7%` | **`7%`** ✓ |
+| the Doppler is noise at the step's resolution | ✓ | ✓ |
+| projection width linear to `< 5%` of range | `2.6%` | `2.6%` ✓ |
+
+## ⛔ ⓷ MISS 1 — THE LOCALISATION FACTOR, AND IT IS THE BEAT
+
+Registered `1.9 < factor < 2.2`; measured **`1.77` to `1.83`**. **The low-`q` plateau comes UP** (`0.026 →
+0.031`) rather than the high one coming down (`0.053 → 0.056`) — the same effect as your step shrinking
+`−0.0430 → −0.0396`. *The shared statistic was inflating the step with the beat; the factor is smaller
+because the step is smaller, for exactly the reason you ruled.* **Reported as a miss of the registered
+gate, not re-toleranced**, as `70` reported their `Ga`. ⇒ *"A clean factor of two on all three" becomes a
+factor of 1.8 on all three.*
+
+## ⛔⛔ ⓸ MISS 2 — AND THIS ONE IS THE TEST'S OWN DEFECT, ON BOTH ARMS
+
+The EDGE hazard check raises band 1's lower edge **with the upper edge fixed at 1.55**, reads higher each
+time, and concludes a truncation artefact would have read lower. Carried, it is no longer monotone — and
+the reason is **not** the arm:
+
+| sweep | namesake, shared | arm of record, carried |
+|---|---|---|
+| **registered** — upper edge fixed, window narrows `0.70 → 0.40` | `+0.0215 +0.0239 +0.0282 +0.0361` **monotone** | `+0.0295 +0.0335 +0.0330 +0.0243` **not** |
+| fixed width **one comb period** | `+0.0259 +0.0271 +0.0266 +0.0277` **not** | `+0.0297 +0.0302 +0.0291 +0.0305` **not** |
+| fixed width **0.70**, the registered band width | `+0.0215 +0.0276 +0.0318 +0.0298` **not** | `+0.0295 +0.0313 +0.0300 +0.0305` **not** |
+
+⇒ ** THE MONOTONE RISE IS A PROPERTY OF THE WINDOW NARROWING, NOT OF MOVING THE LOWER EDGE UP. ** A
+narrower sub-period window reads a higher RMS ratio — the pathology `own_comb.py`'s own note names. **Hold
+the width fixed and the rise is gone on the namesake too, where the test passes today.** The test confounds
+the two things it varies. *My first guess was that the carry had exposed something about the arm; the
+fixed-width sweeps say it is the test. Measured rather than assumed, which is the only reason the
+difference showed up.*
+
+**And the claim it supports survives on support the receipt already computes.** The hazard is that band 1
+reads low because the **envelope** truncates at the low-`q` edge. The envelope-free reading answers that
+directly — peak-to-trough depths between consecutive extrema, **no envelope and no window at all**, band 1
+at `−0.0024` against a bands 2–7 mean of `+0.0685`. *A reading with no envelope cannot suffer envelope
+truncation.* So the conclusion stands and the test cited for it does not.
+
+## ⓹ THE ONE RULING I WANT, AND WHAT I WILL DO WITHOUT IT
+
+**Miss 2 withdraws a registered test's support on BOTH arms, so it is not a re-point question.** Three ways
+to land it, my recommendation first:
+
+1. **Replace the edge test with the fixed-width sweep and let the envelope-free reading carry the
+   conclusion.** The receipt reports the registered test as a confound, prints the three sweeps above so
+   the finding is on the record, and rests the no-truncation claim on the reading that needs no envelope.
+   *This is what I will write in if I hear nothing, because leaving a test that passes for the wrong reason
+   is worse than withdrawing it.*
+2. Keep the registered test, report it as a miss on the arm of record only, and say nothing about the
+   namesake. **I will not do this** — the fixed-width sweeps are already measured and it would be a
+   reported miss that hides the measured cause.
+3. Withdraw the edge paragraph outright.
+
+## ⓺ AND WHAT IT MEANS FOR THE OTHER 20
+
+Both misses are properties of **sub-period windows**, which the whole step/excess family uses — the
+registered bands are `0.70` wide where the comb period is `≈1.0`. ⇒ **Every Set A receipt that slides a
+window narrower than one period, or varies its width while varying something else, is suspect the same way,
+and I check each at fixed width before reading its result.** That is a consequence of your ruling that goes
+beyond the alternation, and I expect it to find more than this one.
