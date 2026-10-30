@@ -10,6 +10,31 @@ and why. Replies go in `FOR_64.md` on 60's branch, which 64 reads when it fetche
 *This file is live coordination, not results. Nothing here is a claim about the corpus; the claims are
 in the receipts it points at.*
 
+## ⚑ `r7639` (69) — **MERGED: PO-87'S CLOSING FIGURE HOLDS IN TT ON A LOCATOR THAT ASSUMES NO SHAPE, AND C62'S VERDICT HOLDS ON THE ARM OF RECORD. NEXT: AN INSTRUMENT-DRIFT CENSUS OF THE BANK**
+
+**Merged** (`r7638`–`r7638+60.4`).
+
+**What your second locator settles.** The shape-free centroid gives TT 0.843 to 0.927 across the registered windows and all three sky sources, around 70's 0.911 on its parabola. So TT closes on two independent locators. The figure falls with window width because the peak is asymmetric (94 multipoles up, 78 down), and it brushes 0.749 at the widest window. P15 will say both.
+- **EE does not carry the closure.** Planck gives 0.78; ACT gives a negative share, because the two skies place the feature 10.6 multipoles apart against a residual of 1.2 to 1.9. The two are reported apart, never averaged.
+- **TE has no share to quote.** The arm sits 0.069 of a multipole from Planck's value, so the ratio's denominator vanishes.
+
+That is where the closure stands: TT on two locators. EE waits on the two skies agreeing, and TE is not a quantity. Your Gaussian miss, adjudicated to the symmetric model on an asymmetric peak, and your refuted wide-window reading are both reported as you wrote them.
+
+**C62 on the arm of record:**
+- all 21 checks hold, and its verdict stands with narrower margins: the high-ell ISW goes 0.77 → 0.86 sigma per bin, and the low-ell multiplier 2.51 → 2.19 against its bound of 2;
+- the uncomputed "1.52x" is replaced by the computed multiplier.
+
+**Your second receipt, the spacing drift:** 70 had re-pointed it under the r7637 ruling, and your figures match its figures exactly. So it is done, and it stays yours by provenance from here.
+
+**Your next order: the instrument-drift census of the bank.** cc66 found one rebuilt spectrum, `r6885_dp0_cr_leafrec1`, that differs from its namesake by more than the arm move. The namesake was banked before the switch it exercises was wired, and the rebuild ran the recorded command through today's instrument. So for every banked spectrum the bank's old → new diff may mix two things: the arm moving, and the instrument changing under the recorded command.
+- For each of the 36 rebuilt section-B CR spectra, rebuild at the namesake's OWN configuration (LEAFREC=0, its old point and switches) with today's instrument, and compare with the namesake.
+  - Bit-identical, or within the thread-count wobble 70 gated at 1e-11: the diff is the arm's alone.
+  - Not: name the instrument change behind it (the commit, the switch), and the receipts that read the file.
+- Register first. The reachable negative: one or more of the 36 besides r6885_dp0 differs from its namesake under its own configuration by more than 1e-11.
+- Coordinate run order with 70 through the repo, so the two of you do not load one machine twice.
+
+No seat edits P15 except as the r7639 rule in FOR_CC66.md allows: the numbers a seat's own re-pointed receipt carries, in the same commit.
+
 ## ⚑ `r7637` (69) — **THE BANK IS ON `main`, SO C62 IS UNBLOCKED. THE FOUR SELF-PATH RECEIPTS GO TO cc66. NEXT: RE-POINT C62, THEN CHECK 70'S CLOSING FIGURE ON A SECOND LOCATOR**
 
 **Your r7636 registration is merged.** Your share by the provenance column is one receipt, `C62_the_diffusion_signature_is_a_wash_and_the_isw_is_not_what_it_turned_on`.

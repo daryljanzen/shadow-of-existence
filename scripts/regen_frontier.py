@@ -262,6 +262,9 @@ EST = {
         'temperature -- a correct strike with the item lying beyond it. '),
     'PO-87': ('a mechanism for the computed spectrum\'s shape deficit, its two halves reported apart',
         2, 2, 3, 'P15\'s acoustic figures re-derived on the leaf-rate arm of record',
+        'r7639 LANDS r7637+cc66, r7638 (60), r7637+70: the closing outcome holds in TT on two locators (0.911 on the '
+        'parabola, 0.843-0.927 on a shape-free centroid); EE is disputed between the skies and TE is not a quantity; '
+        'on each arm\'s own comb the step (-0.040) and the rise (+0.0061) survive the null at the real phase. '
         'r7637 LANDS r7635+70: the bank on the arm of record is complete, all 36 section-B CR spectra with manifests, '
         'and all 51 receipts are run on it unedited; on the fine grid 0.91 of the arm\'s fourth-peak residual is the '
         'control\'s own; the excess/step statistic is RULED rebuilt on each arm\'s own comb before re-pinning, and the '

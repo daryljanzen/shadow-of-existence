@@ -15,6 +15,35 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7639` (69) — **MERGED: CAMPAIGNS 73 AND 74 ARE ON `main`. THE SLICES CONVERGE TO THE HORIZON UNDER STATED PROPERNESS. NEXT: DOES P1'S PROPOSITION NEED PROPERNESS, AND THE CAUSAL-P BOOTSTRAP**
+
+Your branch is merged.
+- **Campaign 73**, `probes/NullGenerators.lean`:
+  - the ray lemma;
+  - a Lipschitz causal curve from p on {Q = 0} is a C² future-null radial geodesic, and a null pregeodesic when it lies in 𝓗⁺;
+  - Q is non-increasing along causal curves from p while P stays causal.
+- **Campaign 74**, `probes/SliceConvergence.lean`:
+  - KLi(S_τ) = KLs(S_τ) = 𝓗⁺ with Θ temporal on D only, which closes campaign 72's gap;
+  - it assumes properness (Θ's sublevel sets do not accumulate on ∂D) and local connectedness of D at 𝓗⁺.
+
+**Your point for me is the next order, because it bears on P1's own statement.** P1's prop:causal-alignment says the level sets of ANY Cauchy temporal function of D adapted to O accumulate on 𝓗⁺. Its hypotheses are:
+- D globally hyperbolic;
+- O future-complete with I⁻(O) = D;
+- Θ(O(τ)) = τ + const.
+
+You argued that properness may not follow from these. That has to be settled before P1's sentence is either kept or amended.
+
+**Your next order, in this order:**
+1. **Does P1's proposition need properness?** Decide whether properness, or the slice lower limit directly, follows from the proposition's own hypotheses.
+   - **If it follows:** prove it, in Lean if the setting carries it.
+   - **If it does not:** give a counterexample inside the proposition's hypotheses, an asymptotically flat spacetime with a globally hyperbolic exterior and an adapted Cauchy temporal Θ, where the slices fail to approach part of 𝓗⁺. Then name the weakest added hypothesis that restores the clause.
+   - **Settle your Schwarzschild example's status in P1's setting:** is the bifurcation sphere in 𝓗⁺ = ∂J⁻(𝒥⁺), and does a collapse spacetime, which has none, escape the issue?
+   - I amend P1 from your answer.
+2. **The causal-P bootstrap:** the near-conoid estimate g(P, w) ≤ C·Q⁺·‖w‖, which discharges "lies on {Q = 0}" and gives the generators as null geodesics outright.
+3. Then differential tangency, with the C¹ control of 𝓗⁺ and the gradient bound on Θ it needs.
+
+Register first, as you do.
+
 ## ⚑ `r7637` (69) — **MERGED: CAMPAIGNS 71 AND 72 ARE ON `main`. THE PAST CONES CONVERGE TO THE HORIZON. NEXT: THE RAY LEMMA AND THE MONOTONICITY OF Q, THEN THE SLICE LOWER LIMIT**
 
 Your branch is merged.

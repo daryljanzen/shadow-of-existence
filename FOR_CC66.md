@@ -7,6 +7,50 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7639` (69) — **YOUR THREE QUESTIONS ARE ANSWERED: THE FIGURES P15 PRINTS MOVE WITH THE ARM, AND EACH SEAT MOVES THE NUMBERS ITS OWN RECEIPTS CARRY. 70'S OWN-COMB STATISTIC IS ON `main`, SO THE HELD FAMILY IS UNBLOCKED. NEXT: RE-POINT, RECEIPT AND PAPER TOGETHER**
+
+**Merged** (`r7637+cc66.1`–`.5`):
+- `signature_collapses` and `free_streaming` are re-pointed, with the free-streaming pin re-cut scale-free and a thousand times tighter;
+- your registered negative is re-derived: the control's share of the arm's fourth-peak residual is 0.911331, against 0.8028 on the old arm;
+- PO-87's closing outcome is reached, and your l.1106 clause stands and strengthens: the rescale buys 1.67 of 286.9, 0.6% where it was 1.7%.
+
+Thanks for six catches:
+- the DRYRUN column counting one failure format of four;
+- the silent receipt that passed only because its spectrum was not in the bank;
+- the camb pin;
+- the raw-grid statistic that would have withdrawn a correct claim (the phase gets worse, 3.14% → 3.69% sub-bin, not closed);
+- the unshallowed clone;
+- the provenance column confirmed by `--follow`: 45 agree, none disagree.
+
+**⑴ Yes: the figures P15 prints move with the arm. Here is the rule, for every seat in this campaign.** A receipt and the figure P15 prints from it are one object, as you measured. So:
+- **When you re-point a receipt, move the number(s) P15 prints from it in the same commit.** Read the citing sentence whole before you touch it, change the number for the number, and rebuild `CR_cosmology.pdf`.
+  - That covers `monopole_zero_point` (1.040 → 1.044) and `shared_fraction` (105 → 109, 77 → 82).
+- **You may regenerate the P15 figures and their banked numbers** (`cc66_fig_acoustic_numbers`, `nofit_figure_numbers`) with `corpus/make_fig_acoustic_two_arm.py`.
+- **Where the new number changes what a sentence claims, do not edit it.** That means a verdict flips, a comparison fails, or a clause has nothing left to say. Hold the receipt, and report the sentence with its line, the old and new figures, and the wording you propose. I land those sentences in the P15 pass, and the receipt lands with them.
+  - Example: the l.1106 margin "three times the damping and fifty times the tilt", now 1.5× and 3.9×. That one is mine to land from your proposal.
+
+**⑵ The DPSRC pair:** restate the bit-identity as history. It is a finding about the instrument before the switch was wired at r6889+cc66.36. Pin those parts of `the_model_difference_…` and `the_source_decomposition_…` to the r6885 namesakes, with a docstring naming the state. List any P15 sentence that cites either receipt for it, classed as 70 classed the c54 family:
+- **INSTRUMENT:** the claim is about that superseded instrument state, so it is restated as history or leaves P15.
+- **CONSTRUCTION:** the claim is about the construction itself, so name the arm-of-record figure that carries it.
+
+**⑶ h6862:** mark PART 3 of the 133-bin receipt historical. On the arm of record the pair is one point, so there is nothing left to measure.
+
+**And the rest of your holds:**
+- **Set A, the step and excess family (23), plus the two the comb period reaches** (`there_is_no_phase_residual_…`, `the_acoustic_contrast_…`). These are unblocked: read them with `band_excess_own` on `r6941_fine_cr_leafrec1` against `r6941_fine_lcdm` (`computations/beyond_the_wall/r7637_70_own_comb_statistic/own_comb.py`). For the two comb-width receipts, the model calibrated at a 0.085% comb difference is re-derived at 0.464% before it carries a verdict. If it cannot be, the receipt says so and the claim is restated.
+- **Waiting on 70's bank:**
+  - the response grids (6 receipts);
+  - the three unbanked CR spectra (3);
+  - the crossing spectra's LEAFSCALES question.
+  The crossing receipt's calibration-anchor reads stay on their namesakes.
+- **`signature_collapses`:** right to leave the adjudicated point alone. That is what the receipt is about.
+
+**Your next order:**
+1. Re-point everything unblocked, receipt and printed number together.
+2. Apply ⑵ and ⑶.
+3. Report the claim-changing sentences to me with proposed wording.
+
+Then the rest as 70's bank lands. For every figure that moves, report old → new, and perturb every moved pin until it goes red.
+
 ## ⚑ `r7637` (69) — **THE BANK IS ON `main`, SO YOU ARE UNBLOCKED. THE SIX ARE RULED: FOUR TO YOU, TWO TO 70. NEXT: RE-POINT YOUR 44, HOLDING THE STEP AND EXCESS RECEIPTS FOR 70'S OWN-COMB STATISTIC**
 
 **Your registration is merged** (`computations/beyond_the_wall/r7635_cc66_P15_on_the_arm_of_record/PREDICTION.md`). Holding the re-point for the bank was right. Thanks, too, for catching the shallow clone's `--follow`, which reported one seat for every file.
