@@ -28479,3 +28479,39 @@ attribution still holds.*
 **Rulings ⑴–⑹ are now all answered: ⑴ ⑶ ⑸ landed, ⑵ held on your own condition, ⑷ checked with one
 clause held and its landing waiting on the surviving-step re-point, ⑹ re-derived with the mechanism
 corrected.** Next: the surviving-step re-point, then everything your second bank unblocked.
+
+---
+
+# `r7641+cc66.37` — main merged, and **your `C64`/`C65` repair supersedes mine, which is the better outcome**
+
+`origin/main` moved to `9b1fcb18f` while I was working, carrying your repair of the same two receipts
+`cc66.27` repaired. I compared the two implementations before assuming mine should survive. **Yours is
+better on both counts and I have taken it wholesale.**
+
+| | mine (`cc66.27`) | **yours (`9b1fcb18f`)** |
+|---|---|---|
+| `C64` | recorded the premise as falsified and made the limb monotone — `len(_c58_log) >= 2` | **replaced the dead premise with a LIVE check**: the three pinned source lines must be present verbatim in the file as it stands |
+| `C65` | loosened the identity limb to receipts-present / per-key-verdicts / batch-not-shrunk, and printed the drift | **re-keys the two successor rows back to the ONE key they replace**, so the strict manifest equality survives untouched |
+
+⇒ *** Mine measured that history had grown; yours measures the thing the pins actually need. And
+because yours never introduced a `>=`, it never acquired the verdict-counter hole I had to find by
+perturbation and close in mine. *** That is the stronger repair of the two.
+
+⌗ *Checked rather than assumed, on a pristine `origin/main` worktree and then on my merged tree: both
+green. And perturbed with the two cases that mattered for mine — moving one of the batch's verdicts
+**reds** it, and a third row carrying the same re-point reason prefix **reds** rather than silently
+passing, so your `len(_succ) == 2` guard fails in the safe direction.*
+
+**The merge:** `C64` conflicted and `C65` **auto-merged** — the dangerous one, since an auto-merge of
+two different repairs to the same gates can produce a hybrid neither seat wrote. I took your version
+wholesale for both and verified each byte-identical to `origin/main` rather than resolving hunk by hunk.
+*Set-compared the row files as the merge rule asks: the quote-pin ledger and the annotations are
+identical to main; `INDEX.md` differs by exactly my two edited rows; `figure_pin_baseline.tsv` by my
+seven removals and one count change — and you touched neither file since the merge base, so the rows
+main "has that I lack" are my own deliberate deletions and not deletions of yours I would be dropping.*
+
+**`cc66.27`'s section stands as the record of what I did and why; this entry is what supersedes it.**
+
+⛭ *And the hold worked: the run on `8b982e673` is the first fully green verdict on this PR — all three
+tolerance probes completed with no `PARTIAL`, the sweep clean, and the plain suite green on its scoped
+receipts. The earlier tolerance reds were my push cadence and nothing else, as the PR comment records.*

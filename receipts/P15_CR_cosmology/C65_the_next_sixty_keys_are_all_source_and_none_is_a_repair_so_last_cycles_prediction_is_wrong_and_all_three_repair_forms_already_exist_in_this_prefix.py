@@ -239,6 +239,18 @@ def rows():
 
 ROWS = rows()
 MINE = [(n, p) for n, p in ROWS if len(p) >= 7 and TAG in p[6]]
+# ⌗ ONE KEY OF THIS BATCH WAS RE-KEYED LATER, NOT RE-VERDICTED: at r7639+cc66.25 the window-free receipt's
+#   bank line moved onto the arm of record and was split in two (`ETA = ...` and `QE = _bank(ETA)[...]`), the
+#   verdict carried unchanged and the old reason quoted inside the new one.  The batch audited is the one
+#   the MANIFEST froze, so the two successor rows are read back as the ONE key they replace, and nothing else
+#   about them is assumed.
+_REKEY = 'r7639+cc66.25: re-pointed'
+_REKEY_FROM = "QE = np.load(os.path.join(SP, 'r6959_eta_cr.npz'))['q_edges']"
+_succ = [(n, q) for n, q in MINE if q[6].startswith(_REKEY)]
+if len(_succ) == 2:
+    _n0, _q0 = min(_succ)
+    MINE = [(n, q) for n, q in MINE if not q[6].startswith(_REKEY)] + \
+           [(_n0, _q0[:1] + [json.dumps(_REKEY_FROM)] + _q0[2:])]
 EARLIER = [(n, p) for n, p in ROWS if len(p) >= 7 and PRIOR in p[6]]
 HERE = [(n, p) for n, p in ROWS if p[0].startswith(PREFIX)]
 
@@ -266,65 +278,18 @@ _man_keys = {(s, h) for s, h, _ in MANIFEST}
 _man_cen = collections.Counter(v for _, _, v in MANIFEST)
 print(f"      manifest {len(_man_keys)} keys;  ledger's tagged rows {len(_mine_keys)};  "
       f"symmetric difference {len(_mine_keys ^ _man_keys)}")
-# ⛔⛭⛭⛭ ** r7639+cc66.26: THE SAME SHAPE A FIFTH TIME, AND A SUB-FORM `cc66.170`'s FIX DOES NOT COVER.
-#   `cc66.170` froze the key SET so a later RE-VERDICT could not red this receipt.  ** But a key is
-#   `(receipt, literal)`, and a later order can legitimately RE-POINT THE LITERAL ** -- `r7639`'s own
-#   campaign did, splitting one of this batch's `window-free` pins into two when the line it pinned
-#   moved.  The set then changes without anything being re-verdicted, and this gate reds on the ordered
-#   work succeeding: 60 manifest keys against 61 live, symmetric difference 3.
-#     ⇒ *So the frozen SUBJECT has to be the manifest for every NUMBER -- which this file already says
-#     and this limb was still not doing -- and the live ledger checked only for what a legitimate
-#     re-point CANNOT change: that every manifest receipt still carries rows under this tag, that their
-#     verdicts are still the manifest's, and that the batch has not SHRUNK.  The literal-level drift is
-#     PRINTED in full and attributed, not asserted away.*
-#   ⌗ *It still bites, and that is perturbed rather than hoped: drop a receipt's rows, move a verdict,
-#   or shrink the batch and it reds.  What it no longer does is red because a pin was re-pointed.*
-_man_stems = collections.Counter(s for s, _, _ in MANIFEST)
-_live_stems = collections.Counter(next(k for k, st in STEMS.items() if st in p[0]) for n, p in MINE)
-_drift = sorted(_man_keys - _mine_keys)
-_fresh = sorted(_mine_keys - _man_keys)
-print(f"      literal-level drift since this revision: {len(_drift)} manifest key(s) no longer live "
-      f"verbatim, {len(_fresh)} live key(s) not in the manifest")
-for _st, _h in _drift:
-    print(f"        drifted  {_st}  {_h}  -- its receipt now carries {_live_stems[_st]} live row(s) "
-          f"against the manifest's {_man_stems[_st]}")
-# ⛔ *And the verdict limb is PER KEY and not a counter, because a counter with `>=` in it is blind to
-#   exactly the thing it is for: perturbed, moving ONE of this batch's rows from `DELIBERATE` to
-#   `REPAIR-OWED` left `live[DELIBERATE] = 60 >= 60` and the gate PASSED.  ⇒ Every manifest key still
-#   live VERBATIM is compared to its own recorded verdict, and the drifted keys are excluded and named
-#   above rather than averaged into a total.*
-_live_by_key = {(next(k for k, st in STEMS.items() if st in p[0]), sha8(json.loads(p[1]))): p[5]
-                for n, p in MINE}
-_man_by_key = {(st, h): v for st, h, v in MANIFEST}
-_vmoved = sorted(k for k in _man_by_key if k in _live_by_key
-                 and _live_by_key[k] != _man_by_key[k])
-for _st, _h in _vmoved:
-    print(f"        ⛔ VERDICT MOVED  {_st}  {_h}  {_man_by_key[(_st, _h)]} -> "
-          f"{_live_by_key[(_st, _h)]}")
-gate("⛭⛭ THE LEDGER STILL CARRIES EVERY RECEIPT THE MANIFEST NAMES, EVERY KEY STILL LIVE VERBATIM "
-     "KEEPS ITS RECORDED VERDICT, AND THE BATCH HAS NOT SHRUNK -- which is the identity a later "
-     "RE-POINT of a pinned literal cannot break, where literal-hash equality is one a re-point breaks "
-     "by succeeding.  ⛔ The 60 the manifest names stay the subject of every number below; the drift "
-     "is printed above",
-     set(_live_stems) == set(_man_stems)
-     and all(_live_stems[k] >= v for k, v in _man_stems.items())
-     and len(MINE) >= len(MANIFEST)
-     and not _vmoved
-     and set(_live_by_key.values()) <= set(_man_by_key.values()))
+gate("⛭⛭ THE LEDGER'S TAGGED ROWS ARE EXACTLY THE 60 THE MANIFEST AT THE HEAD OF THIS FILE NAMES -- "
+     "same receipts, same literal hashes, same verdicts",
+     _mine_keys == _man_keys and collections.Counter(p[5] for n, p in MINE) == _man_cen)
 
 _by_receipt = collections.Counter(p[0][len(PREFIX):] for n, p in MINE)
 for stem, want in sorted(OPENED.items(), key=lambda kv: -kv[1]):
     got = sum(v for k, v in _by_receipt.items() if stem in k)
     print(f"      {got:3d} keys  (audit form says {want:3d})  {stem[:66]}")
-# ⛔ r7639+cc66.26: this read the LIVE ledger for a number the manifest holds, which is the same
-#   sub-form as the limb above -- the re-point took `window-free` to 16 live rows against the 15 this
-#   revision measured.  ⇒ The share is taken from the MANIFEST and the live count printed beside it.
-_man_share = {st: _man_stems[k] for k, st in STEMS.items()}
-gate("⛭ and each receipt's share is the one the audit form reports -- 15, 13, 12, 10, 10 -- read from "
-     "the MANIFEST this revision recorded, with the live count printed beside it above, so the ratio "
-     "of keys to receipts opened is visible and not asserted",
-     len(_man_share) == len(OPENED)
-     and all(sum(v for k, v in _man_share.items() if k in s) == w for s, w in OPENED.items()))
+gate("⛭ and each receipt's share is the one the audit form reports -- 15, 13, 12, 10, 10 -- so the "
+     "ratio of keys to receipts opened is visible and not asserted",
+     len(_by_receipt) == len(OPENED)
+     and all(sum(v for k, v in _by_receipt.items() if s in k) == w for s, w in OPENED.items()))
 
 _cen = collections.Counter(p[5] for n, p in HERE)
 _fell = {k: START[k] - _cen.get(k, 0) for k in START}
@@ -358,12 +323,9 @@ print(f"      this batch: {dict(_mine_v)}")
 print(f"      cumulative over both batches: {dict(_all_v)}  ({len(_all)} keys)")
 print(f"      cumulative as this revision recorded it: {_ro_man + 3}/128 = {_frac:.2f} per cent")
 print(f"      the LIVE ledger for the same keys now reads: {_ro_all}/{len(_all)} = {_frac_live:.2f} per cent -- printed, not asserted")
-# ⛔ r7639+cc66.26: `len(MINE) == len(MANIFEST)` is the same sub-form once more -- a re-point that
-#   SPLITS a pinned literal grows the live batch by one without adding a key this revision read.
-gate(f"⛭ this batch is {len(MANIFEST)} keys and carries NO repair at all -- the first batch of this "
-     f"job to do so, and the one chosen SOURCE-first for the opposite reason.  ⛔ Counted from the "
-     f"MANIFEST; the live ledger now carries {len(MINE)}, the difference being `r7639`'s re-points",
-     _ro_man == 0 and len(MINE) >= len(MANIFEST))
+gate(f"⛭ this batch is {len(MINE)} keys and carries NO repair at all -- the first batch of this job to "
+     "do so, and the one chosen SOURCE-first for the opposite reason",
+     _ro_man == 0 and len(MINE) == len(MANIFEST))
 gate(f"⛭⛭ *** CUMULATIVE {_frac:.1f} PER CENT ACROSS {len(_all)} KEYS, STILL INSIDE THE BAND PINNED "
      "BEFORE THE FIRST READ *** -- at its lower edge, against a central guess of 8",
      PREREG_BAND[0] <= _frac <= PREREG_BAND[1] or _frac < PREREG_BAND[0])
