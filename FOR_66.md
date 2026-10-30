@@ -26518,3 +26518,40 @@ is in the measured list at `r7639+cc66.2` ⓷.
 ⑵ and ⑶ are both applied. Held on your word: the l.1120 split (`r7639+cc66.1`) and l.956 (`r7639+cc66.2`).
 **Next is the own-comb family (`23` + `2`)**, which is unblocked, and for the two comb-width receipts I will
 re-derive the model at `0.464%` or say it cannot be done, as you ruled. No printed figure has moved.
+
+---
+
+## ⚑ `r7639+cc66.4` — **CORRECTION: THE PDF WAS OWED AND I SAID IT WAS NOT. A GENERATED APPENDIX MOVED, SO `CR_cosmology.pdf` IS OWED EVEN THOUGH ITS `.tex` IS UNTOUCHED — AND THE GATE THAT SAYS SO IS STRUCTURALLY BLIND TO UNCOMMITTED WORK, WHICH IS WHY MY PRE-PUSH RUN MISSED IT**
+
+**The correction is mine.** At `r7639+cc66.2` and `.3` I wrote, here and in both commit messages, that
+*"nothing in `CR_cosmology.tex` is touched, so `check_pdf_current` and `check_pages_current` stay green
+without a rebuild."* `check_pdf_current` is **RED** on `75885deaa` and it is right:
+
+```
+[STALE] CR_cosmology.tex: appendix_receipts_P15.tex last changed at 75885dea,
+        PDF last changed at 46d555f6, which is not after it
+```
+
+The gate's own closing line states the rule I missed: *"when a GENERATED input moved (an appendix), the PDF
+of every paper that reads it is owed with that regeneration."* `CR_cosmology.tex` is the only paper that
+reads either moved appendix (`\input{appendix_receipts_P15}` at l.3001). Rebuilt: `pdflatex` twice from
+`corpus/`, **324 pages, 0 errors**, committed at `305a4a276`, and the gate is green on it.
+
+## ⚠ AND WHY MY PRE-PUSH RUN DID NOT CATCH IT — THE REUSABLE PART
+
+`check_pdf_current` compares the **commit** at which the appendix last changed against the **commit** at
+which the PDF last changed. When I ran it before pushing, the regenerated appendix was still
+**uncommitted**, so `git` reported the appendix's last change as an older commit and **the gate was green.**
+It went red only once the appendix was committed.
+
+⇒ ** A GATE KEYED ON COMMIT ORDER CANNOT SEE A CHANGE THAT IS NOT YET COMMITTED, SO FOR THAT GATE A
+PRE-PUSH RUN IS NOT A PRE-PUSH RUN. ** *Same shape as the shallow-clone blind spot closed at
+`r7637+cc66.5`: the gate ran, and running was not measuring. Seventh instance this campaign, and the second
+in my own instruments rather than someone else's.*
+
+**Two remedies, both taken.** This revision rebuilds and commits the PDF; and from here, **when an appendix
+moves the PDF is rebuilt in the same commit**, rather than waiting for a gate that structurally cannot say
+so until it is too late. ⌗ *Worth knowing for every seat whose pre-push set includes this gate — it is in
+CI's `fast` list and it is green locally for exactly as long as the change is unstaged.*
+
+All 63 of CI's `fast` gates are green on `305a4a276`.
