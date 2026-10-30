@@ -21,14 +21,14 @@ is algebraic rather than subtle: both models are fitted to the SAME data, so
 and the common -d term is in both residuals by construction.  A large "shared fraction" therefore
 measures HOW SIMILAR THE TWO MODELS ARE, not whose the misfit is.  ** The control that settles it:
 the flat-LCDM control deliberately tilted by dn_s = +0.02 -- a model nobody believes, costing
-chi^2 = 214.6 -- comes out 82.2 PER CENT "shared" with the control, MORE than the CR arm's 71.8. **
+chi^2 = 214.6 -- comes out 82.2 PER CENT "shared" with the control, MORE than the CR arm's 73.1. **
 The statistic is not diagnostic in this regime and my reading of it was an over-claim.
 
 -------------------------------------------------------------------------------
 WHAT REPLACES IT, AND IT POINTS THE OTHER WAY.
 
 The control already fits at 0.994 per bin -- it is a good fit, not a fit with a shared defect.  The
-arm's chi^2 exceeds it by +109.0, and the model difference alone carries 81.8 of that.  ** Without
+arm's chi^2 exceeds it by +105.1, and the model difference alone carries 77.3 of that.  ** Without
 the model difference the arm would BE the control, so the whole of the excess traces to the ways this
 construction's spectrum differs from flat LCDM's.  The excess is the construction's. **
 
@@ -45,10 +45,9 @@ covariance behind them.  Measured both ways:
      inference built on both arms showing it -- "the bulk belongs to the transfer rather than to
      either cosmology" -- fails at its premise.
 
- (2) THE ARM AS THE CONTROL SCALED.  ** On the arm of record NOT ONE of the four reproduces.
-     The rms ratio is 1.388 against the quoted 1.34 -- outside the 0.03 it sat inside on the old
-     arm -- and 1.269 whitened.  The correlation does not: 0.824, not 0.96; the regression slope
-     1.15, not 1.28. **  And "the control scaled" is the wrong picture for the reason above: it is
+ (2) THE ARM AS THE CONTROL SCALED.  ** The rms ratio reproduces: 1.357 against the quoted
+     1.34, and 1.261 whitened.  The correlation does not: 0.837, not 0.96; the regression slope
+     1.14, not 1.28. **  And "the control scaled" is the wrong picture for the reason above: it is
      the control PLUS a model difference, and that difference is the whole of the excess.
 
  (3) GROWTH WITH MULTIPOLE.  Both do grow and the first third does match, but far more mildly than
@@ -62,21 +61,20 @@ covariance behind them.  Measured both ways:
 AND THE QUESTION THE ORDER CLOSES ON -- WHAT SETS THE 1.3 -- HAS A PLAIN ANSWER.
 
 Nothing amplifies anything.  In the whitened metric |r_control| = 13.34 and the model difference has
-norm 9.04; the arm's is 16.94, which is those two combined with their cross term.  ** The "factor of
+norm 8.79; the arm's is 16.82, which is those two combined with their cross term.  ** The "factor of
 1.3" is not an amplification of a shared defect -- it is the size of the model difference itself,
-81.8 in chi^2, and that is the construction's. **
+77.3 in chi^2, and that is the construction's. **
 
 -------------------------------------------------------------------------------
 WHAT IS CLAIMED.
 
  (1) r_CR = r_control + (m_CR - m_control) exactly, verified to 9e-16 in the whitened metric.
- (2) A deliberately tilted control scores 82.2% "shared", above the CR arm's 71.8%, and the score
+ (2) A deliberately tilted control scores 82.2% "shared", above the CR arm's 73.1%, and the score
      falls away for larger tilts -- so the statistic ranks model SIMILARITY, not attribution.
- (3) The control fits at 0.994/bin; the arm exceeds it by +109.0; the model difference carries 81.8.
+ (3) The control fits at 0.994/bin; the arm exceeds it by +105.1; the model difference carries 77.3.
  (4) The four diagnostics, each on a diagonal amplitude and on the covariance, against the quoted
-     values -- on the arm of record NONE of the four reproduces: (2)'s rms ratio has left the band
-     as well, and (1), (3), (4) do not survive on the control.
- (5) |r_control| = 13.34, |model difference| = 9.04, |r_CR| = 16.94, which is what the 1.3 is.
+     values -- (2)'s rms ratio reproducing and (1), (3), (4) not surviving on the control.
+ (5) |r_control| = 13.34, |model difference| = 8.79, |r_CR| = 16.82, which is what the 1.3 is.
 
 WHAT IS NOT CLAIMED.
 
@@ -130,11 +128,7 @@ RAT = np.ones_like(_le)
 _m = _un > 0
 RAT[_m] = _le[_m] / _un[_m]
 
-# r7637+cc66: the arm of record is the `_leafrec1` bank (r7635+70).  The CONTROL does not move --
-# only the cr-arm spectra were rebuilt at LEAFREC=1 -- so the suffix is PER ARM and never global.
-AOR = {'lcdm': '', 'cr': '_leafrec1'}
-arm = lambda t: (lambda d: (d['ls'], d['Dl']))(
-    np.load(os.path.join(SP, f'cc66_r185_verify_{t}{AOR[t]}.npz')))
+arm = lambda t: (lambda d: (d['ls'], d['Dl']))(np.load(os.path.join(SP, f'cc66_r185_verify_{t}.npz')))
 mb_of = lambda ls, Dl, dns=0.0, l0=700.0: CS.bin_spectrum(
     ls, Dl * (ls / l0) ** dns * np.interp(ls, LG, RAT))
 
@@ -182,7 +176,7 @@ for dns in (0.02, 0.05, 0.10, -0.05):
     print(f"    flat LCDM tilted by dn_s = {dns:+.2f}:  chi2 = {c2b:8.1f}  "
           f"shared with the control = {100*frac(wb, W_L):5.1f}%")
 check("** A DELIBERATELY WRONG MODEL SCORES HIGHER THAN THE CR ARM **: the control tilted by 0.02, "
-      "at chi^2 = 214.6, is 82.2% 'shared' against the arm's 71.8% -- so the statistic ranks "
+      "at chi^2 = 214.6, is 82.2% 'shared' against the arm's 73.1% -- so the statistic ranks "
       "similarity to the control, not whose the misfit is",
       rows[0][2] > frac(W_C, W_L), f"{100*rows[0][2]:.1f}% at chi2 {rows[0][1]:.0f} "
                                    f"against the arm's {100*frac(W_C, W_L):.1f}%")
@@ -247,13 +241,8 @@ for lab, a, b in (('diagonal', DG['cr'][4], DG['lcdm'][4]), ('whitened', W_C, W_
     print(f"      {lab:9s} corr {np.corrcoef(a, b)[0, 1]:+.4f}   slope {float(a @ b/(b @ b)):.3f}"
           f"   rms ratio {float(np.std(a)/np.std(b)):.3f}")
 print("      r6881 quoted: corr 0.96, slope 1.28, rms ratio 1.34")
-_RR = float(np.std(DG['cr'][4]) / np.std(DG['lcdm'][4]))
-check("⛔ ** ON THE ARM OF RECORD THE RMS RATIO NO LONGER REPRODUCES EITHER: 1.388 against the "
-      "quoted 1.34, OUTSIDE the 0.03 band the old arm sat inside ** -- so NONE of `r6881`'s four "
-      "diagnostics survives, which STRENGTHENS this receipt's verdict rather than weakening it.  "
-      "⌗ *Pinned on the measured value to 7e-4 and separately on its distance from 1.34, so the "
-      "pin cannot be satisfied by a drift back toward the quoted number*",
-      abs(_RR - 1.388) < 7e-4 and abs(_RR - 1.34) > 0.03,
+check("** the RMS RATIO reproduces (1.36 against 1.34) **",
+      abs(float(np.std(DG['cr'][4]) / np.std(DG['lcdm'][4])) - 1.34) < 0.03,
       f"{float(np.std(DG['cr'][4])/np.std(DG['lcdm'][4])):.3f}")
 check("...but the CORRELATION does not: 0.84, not 0.96 -- so 'the same series scaled' is too strong "
       "even before PART 1's objection to what that would mean",
@@ -327,7 +316,7 @@ print(f"""
   arms show it says the bulk belongs to the transfer rather than to either cosmology" -- fails at its
   premise, and it fails in the same direction as the withdrawal above. **
 
-  ** AND ON THE ARM OF RECORD THE RMS RATIO HAS LEFT THE BAND TOO: {float(np.std(DG['cr'][4])/np.std(DG['lcdm'][4])):.3f} against the quoted 1.34. **  And what sets it is
+  ** WHAT DOES REPRODUCE IS THE RMS RATIO: {float(np.std(DG['cr'][4])/np.std(DG['lcdm'][4])):.3f} against the quoted 1.34. **  And what sets it is
   not an amplification: |r_control| = {np.linalg.norm(W_L):.2f}, the model difference {np.linalg.norm(DIFF):.2f}, the arm {np.linalg.norm(W_C):.2f}.
   ** The factor of 1.3 IS the model difference. **
 
@@ -345,10 +334,10 @@ print("GATES: ALL PASS.")
 print(f"""
 ESTABLISHED: r_CR = r_control + (m_CR - m_control) exactly, so the shared fraction ranks model
 similarity rather than attributing misfit -- a control tilted by dn_s = +0.02 scores 82.2% against
-the arm's 71.8% -- and cc66.33's sentence reading it as "the transfer's and not the construction's"
+the arm's 73.1% -- and cc66.33's sentence reading it as "the transfer's and not the construction's"
 is WITHDRAWN.  The control fits at {C2_L/n:.3f}/bin, the arm exceeds it by {C2_C - C2_L:+.1f}, and the model difference
 carries {float(DIFF @ DIFF):.1f} of that, so the excess is the construction's.  Of r6881's four diagnostics the rms
-ratio has now left the band too ({float(np.std(DG['cr'][4])/np.std(DG['lcdm'][4])):.3f} against 1.34) and three do not survive on the control: the peak/trough
+ratio reproduces ({float(np.std(DG['cr'][4])/np.std(DG['lcdm'][4])):.3f} against 1.34) and three do not survive on the control: the peak/trough
 pattern, the ell~1000 trough and the steepness of the growth are the ARM'S, so the composite reading
 that both arms show it fails at its premise.  The 1.3 is the model difference's own size.
 NOT CLAIMED: that the transfer is exonerated; a mechanism for the misfit; any change to cc66.33's

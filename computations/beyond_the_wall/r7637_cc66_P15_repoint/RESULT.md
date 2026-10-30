@@ -278,3 +278,102 @@ the verdict** — which is what each of the four re-point attempts above went th
 ⌗ *Third blind instrument caught this revision, after the shallow-clone `--follow` at `r7635` and the
 dry-run `[FAIL]` column above. All three were caught the same way: by asking whether the answer **varied**
 where it should, not whether the thing ran.*
+
+---
+
+# ⛔ CORRECTION: `shared_fraction` IS REVERTED TOO. THE COMPLETED COUNT IS `2`, NOT `3`
+
+**I reported three receipts re-pointed green. It is two.** `shared_fraction` had to come back out, for the
+same reason as `monopole_zero_point`, and CI caught it where my pre-push set could not.
+
+**What failed.** `fast` → **`check_marker_transposition`** on head `fefb48bbe`, with **2 NEW
+TRANSPOSITION FLAG(S)** against a baseline of 61:
+
+```
+[FAIL] CR_cosmology.tex:1101  105 -- none of the group closing it carries it
+```
+
+**Why, read off the paper's own line.** `CR_cosmology.tex` l.1098–1101 says *"this arm exceeds it by
+$105$ in $\chi^{2}$ and the model difference alone carries $77$ of that … and the factor of $1.3$"* and
+closes that sentence with `\rcpt{P15_the_shared_fraction_…}` — **citing the very receipt I re-pointed.**
+The old receipt carried `105.1` twice; mine carried it **zero** times, because the arm of record moves the
+excess to `109.02` and the model difference to `81.8`. ⇒ **The paper's `105` was left computed nowhere**,
+which is precisely what that gate is for.
+
+⇒ Completing this re-point needs P15 to print `109` and `82`. *"No seat edits P15."* ⇒ **Reverted**, and it
+joins the figure-coupled hold.
+
+**So the cap is not an edge case: it blocked 3 of the 4 receipts I could otherwise have finished** —
+`monopole_zero_point` (caught by `check_figures_pinned`), `shared_fraction` (caught by
+`check_marker_transposition`), `three_quarters` (caught before editing). **Question ⑴ to `69` — may the
+figures P15 prints move with the arm — is the gate on this whole order, not a side request.**
+
+## ⚠ AND WHY MY PRE-PUSH SET DID NOT CATCH IT — THE REAL LESSON OF THIS REVISION
+
+**`check_marker_transposition` is LEAN-skipped by `turn_gates.sh`** (*"heavy, and CI's fast job asks it on
+every push"*) **and, run locally, it DECLINED outright:**
+
+```
+[FAIL] the calibration commits are not in this clone -- a gate that cannot re-find the
+       two errors that made it does not pass.  (CI checks out with fetch-depth 0.)
+```
+
+⇒ So the gate was invisible twice over: not in the lean batch, and unable to answer on a shallow clone.
+**My pre-push set held ~10 gates; CI's `fast` job runs 63.** That gap is the whole explanation.
+
+**Both halves are now fixed, not noted:**
+
+⓵ **The clone is unshallowed** — `git fetch --unshallow`, **612 → 6626 commits**. Every gate in the
+standing "known environment class, red locally and green in CI because this clone is shallow" now
+*answers* here: `check_marker_transposition`, `check_pdf_current`, `check_pins_adjudicated_on_mint`,
+`check_quote_pins`'s history seed.
+
+⓶ **The pre-push set is now CI's own list.** All **63** of `fast`'s gates run locally, each on its own exit
+code, as the workflow runs them (`NODE=ci`): **ran 63, ALL GREEN** on this head with the revert in.
+
+⌗ *`check_marker_transposition` re-measured after the revert: `rc=0`, **61 flags against 61 adjudicated** —
+baseline restored, and on a gate that could not previously be asked here at all.*
+
+## ⚑ AND THE AUTHORSHIP LIMITATION I FLAGGED TWICE IS NOW CLOSED
+
+At `r7635` and again at `r7637+cc66.1` I reported that `git log --follow` was **blind** in this container —
+it returned the seat `71` for all 66 receipts because the clone was shallow — and that the provenance
+column was therefore *"the only instrument that works here."* **With full history it works, and it
+agrees:**
+
+| | |
+|---|---|
+| census receipts cross-checked | **66** |
+| **AGREE** with the provenance column | **45** |
+| **DISAGREE** | **0** |
+| creating commit carries no `+seat` tag | 21 |
+
+Creating-commit tags: **`cc66` 42**, `70` 3, untagged 21. Of the untagged, I claim exactly **2** —
+`133_bin_pair` (`r7109`, added in a **merge** commit, which is why `--diff-filter=A` skipped it) and
+`crossing_spectrum` (`r6788`, and `r6788+cc66.17/.18` appears elsewhere in the corpus). ⇒ **42 + 2 = 44,
+with zero conflicts.** The share `69` ruled and I derived from the provenance column is confirmed by a
+second, independent instrument.
+
+⌗ **And my first run of that cross-check was itself a blind instrument**, which is worth recording because
+it nearly went into a reply: it tested `seat == 'cc66'` against strings like `cc66.42`, so it reported
+**42 disagreements** where there were none. Caught by reading the rows it printed — every "DISAGREE" line
+said `--follow=cc66.NN` beside `provenance=mine`, which is agreement. ⇒ *Fourth blind instrument this
+revision. A checking script is not exempt from the rule it is checking.*
+
+## ⚑ AND THE STANDING LOCAL "BASELINE" OF TWO FAILURES WAS NEVER A STATE — IT WAS THE CLONE
+
+Every revision this seat has reported `turn_gates` as **`PASS=121 FAIL=2`**, calling
+`check_branches` + `check_pins_adjudicated_on_mint` *"the shallow-clone pair"* and treating it as the
+tree's baseline. On the unshallowed clone, same tree, same head:
+
+```
+turn batch (lean): ran 123 of 123 expected
+PASS=123  FAIL=0  UNRUN=0
+```
+
+⇒ **Both were artefacts of the clone and neither was ever a real failure.** The lean batch is green for
+the first time, and the useful consequence is that **a FAILURE in it now means something**: the rule
+*"a third failure is new"* can be replaced with *"any failure is new."*
+
+⌗ *This is the cost of a declining gate being filed as a baseline rather than as an unanswered question.
+Two gates spent weeks counted as known-red when the honest reading was "this container cannot ask them."*

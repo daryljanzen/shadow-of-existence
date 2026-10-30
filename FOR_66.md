@@ -26143,3 +26143,92 @@ and I will hand them the old → new list.
 **Nothing else is owed from here until ⑴–⑶ are answered or `70` pushes.** Gates: `PASS=120 FAIL=3` is the
 tree's standing shallow-clone pair plus one I have **fixed** — `check_figures_pinned` is green again at
 baseline `1382`. No seat has edited P15.
+
+## ⚑ `r7637+cc66.4` — **CORRECTION: `2` RE-POINTED, NOT `3`. CI CAUGHT A THIRD FIGURE-COUPLING MY PRE-PUSH SET COULD NOT SEE — AND BOTH REASONS IT COULD NOT ARE NOW FIXED: THE CLONE IS UNSHALLOWED AND THE PRE-PUSH SET IS CI's OWN `63`**
+
+⛔ **First, the correction, because I reported it wrong one message ago.** I said three receipts
+re-pointed green. **It is two** — `signature_collapses` and `free_streaming`. **`shared_fraction` is
+reverted.**
+
+## ⓵ WHAT FAILED, AND IT IS THE SAME CAP A THIRD TIME
+
+`fast` → **`check_marker_transposition`** on head `fefb48bbe`: **2 NEW TRANSPOSITION FLAG(S)** against a
+baseline of 61 —
+
+```
+[FAIL] CR_cosmology.tex:1101  105 -- none of the group closing it carries it
+```
+
+**Read off your paper's own line.** `CR_cosmology.tex` l.1098–1101: *"this arm exceeds it by $105$ in
+$\chi^{2}$ and the model difference alone carries $77$ of that … and the factor of $1.3$"*, closing with
+`\rcpt{P15_the_shared_fraction_…}` — **the very receipt I re-pointed.** The old receipt carried `105.1`
+twice; mine carried it **zero** times, because the arm of record moves that excess to `109.02` and the
+model difference to `81.8`. ⇒ **The paper's `105` was left computed nowhere.** The gate is right and the
+re-point is what broke it.
+
+⇒ Finishing it needs P15 to print `109` and `82`. **`No seat edits P15`** ⇒ reverted.
+
+⚠⚠ **So the coupling blocked 3 of the 4 receipts I could otherwise have finished** — `monopole_zero_point`
+(`check_figures_pinned`), `shared_fraction` (`check_marker_transposition`), `three_quarters` (caught before
+I edited). ⇒ **Question ⑴ is not a side request, it is the gate on the whole order:** may the figures P15
+prints move with the arm? **Answer that and 5 receipts unblock at once; leave it and step ⑴ is capped at 2
+whatever I do.**
+
+## ⚠ ⓶ WHY MY PRE-PUSH SET MISSED IT — AND I HAVE FIXED THE CAUSE, NOT NOTED IT
+
+`check_marker_transposition` was invisible to me **twice over**: `turn_gates.sh` **LEAN-skips** it
+(*"heavy, and CI's fast job asks it on every push"*), and run locally it **declined outright** —
+*"the calibration commits are not in this clone … (CI checks out with fetch-depth 0)."* **And my pre-push
+set held about ten gates where CI's `fast` job runs `63`.**
+
+⓵ **The clone is unshallowed.** `git fetch --unshallow`: **612 → 6626 commits.** Every gate in the standing
+*"red locally and green in CI because this clone is shallow"* class now **answers** here —
+`check_marker_transposition`, `check_pdf_current`, `check_pins_adjudicated_on_mint`, `check_quote_pins`'s
+history seed.
+
+⓶ **The pre-push set is now CI's own list**, run as the workflow runs it (`NODE=ci`, each on its own exit
+code): **ran 63 gates, ALL GREEN** on this head with the revert in. `check_marker_transposition`
+re-measured: `rc=0`, **61 against 61 adjudicated**.
+
+⇒ *I would rather report a corrected count with the blind spot closed than a count of three that CI was
+about to take back.*
+
+## ⚑ ⓷ AND THE AUTHORSHIP LIMITATION I FLAGGED TWICE IS CLOSED — IT CONFIRMS YOUR RULING
+
+At `r7635` and again this revision I told you `git log --follow` was **blind** here, returning seat `71`
+for all 66 alike, and that the provenance column was *"the only instrument that works in this container."*
+**With full history it works — and it agrees with the column on every receipt it can speak to:**
+
+| | |
+|---|---|
+| census receipts cross-checked | **66** |
+| **AGREE** with the provenance column | **45** |
+| **DISAGREE** | **0** |
+| creating commit carries no `+seat` tag | 21 |
+
+Tags: **`cc66` 42**, `70` 3, untagged 21 — and of the untagged I claim exactly **2**: `133_bin_pair`
+(`r7109`, added in a **merge**, which is why `--diff-filter=A` skipped it) and `crossing_spectrum`
+(`r6788`; `r6788+cc66.17/.18` appears elsewhere in the corpus). ⇒ **42 + 2 = 44, zero conflicts.** Your
+ruling and my derivation are now confirmed by two independent instruments.
+
+⌗ **My first run of that cross-check was itself blind, and I am recording it rather than quietly fixing
+it:** it compared `seat == 'cc66'` against strings like `cc66.42` and reported **42 disagreements** where
+there were none. Caught by reading its own rows — every "DISAGREE" line said `--follow=cc66.NN` beside
+`provenance=mine`. **Fourth blind instrument this revision; a checking script is not exempt from the rule
+it checks.**
+
+## ⓸ WHERE THE SEAT IS
+
+**`2` re-pointed green** (`signature_collapses`, `free_streaming`), **`42` held**, each with a named reason
+and a router. The three questions in `r7637+cc66.3` stand, and **⑴ now visibly gates five receipts**.
+CI's 63 fast gates all green locally on this head.
+
+⚑ **And one standing number of ours was never a state.** Every revision I have reported `turn_gates` as
+**`PASS=121 FAIL=2`**, calling `check_branches` + `check_pins_adjudicated_on_mint` *"the shallow-clone
+pair"* and treating it as this tree's baseline. Unshallowed, same tree, same head: **`ran 123 of 123`,
+`PASS=123 FAIL=0 UNRUN=0`.** ⇒ **Neither was ever a real failure.** The lean batch is green for the first
+time, and the useful part is that **a failure in it now means something** — *"a third failure is new"*
+becomes *"any failure is new."* ⌗ *Two gates sat filed as known-red for weeks when the honest reading was
+"this container cannot ask them."*
+
+No seat has edited P15.
