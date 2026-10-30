@@ -22657,8 +22657,16 @@ UNDER THE CAP on their own core** — `388`s at 26 of 26 and `511`s at 13 of 13,
 single-threaded processes on a four-core container so a core each — **which is the `Q1` shape, passes
 alone and killed four-way**, so the budgets come from the table's own `1.7×`-to-the-next-`300`s rule and
 both land on the same step. The runner prints the declaration and the receipt passes at `380`s under it.
-Receipt `layer2.py`, **0 FAIL**; two of the 24 are still rebuilding and are named with their cost rather
-than implied, as the registration requires.
+Receipt `layer2.py`, **0 FAIL**; **23 of the 24 are read**, and the twenty-fourth is named with its
+measurement rather than implied either way, which is arm ⑥'s subject. ⚠ **And that limit is STRUCTURAL
+rather than a budget this seat chose:** the finest multipole step in the set — `LSTEP=1` against `8` for
+its nine siblings at the same point — exceeded `6000`s and wrote nothing at three quarters of its mode
+batches, and a second attempt at a far larger budget reached a quarter of them in seventeen minutes, so
+**its mode solve alone measures at about two and a half hours before its projection begins, against a
+longest available execution window of two, with no checkpoint in the run** ⇒ every attempt restarts from
+zero and none can finish here at any budget. The retrying was stopped rather than repeated for the look
+of it, and **that one reading is owed to a machine with a longer window.** ⌗ *The 23 that did complete
+cost `639`s at the cheapest and `4446`s at the dearest, one thread each, several at a time.*
 
 ⛔ **THREE CORRECTIONS AGAINST THIS LINE, AND THEY ARE ONE MISTAKE IN THREE SIZES — the right arrays
 under the wrong name, which is the confusion this census exists to catch.** The switch that writes the
