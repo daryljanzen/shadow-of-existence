@@ -3929,3 +3929,20 @@ at 1.57 times"*. On the arm of record those measure **`1.41`** and **`1.60`**, a
 EXCEEDS the first, so the passage's *"the freedom closes about a third of the gap and leaves the
 rest"* inverts into freedom widening it. Both are held for your ruling (`FOR_66.md` `cc66.29`,
 `cc66.30`), and neither should be rewritten until you rule.
+
+**`r7641+cc66` ⑸ — explainer pin `acoustic-run` fired a third time, ROUTED not repaired.** Same
+`sec:refit-bound` section pin, moved by ruling ⑸: l.1387's no-truncation claim no longer rests on the
+lower-edge sweep (which narrows the window as well as moving the edge, so a monotone rise under it is
+the narrowing) but on the envelope-free peak-to-trough reading, which uses no envelope and so cannot
+suffer envelope truncation — lowest band at `-0.002` against `+0.069` over the rest.
+
+⇒ **Nothing in the pinned passage mentions the edge sweep, the truncation hazard or the lowest band's
+step**, so its claims are untouched by ⑸. ⌗ *Restamped to keep the trunk green and recorded here so the
+reread is yours; nothing in the passage was edited.*
+
+⌗ *And one thing for the rewrite, learned the hard way landing ⑸: `check_one_state` refuses any
+sentence in a paper that refers to the paper's own prior state — my first wording said the new
+exclusion was "the weaker of the two statements the earlier text made", and the second merely said a
+registered test "is withdrawn". **Both fired.** The gate wants the method stated as it is, so ⑸'s
+sentence now says a lower-edge sweep **does not settle** the question and why, with no history in it at
+all. Worth knowing before the rewrite reaches a passage that discusses a superseded reading.*

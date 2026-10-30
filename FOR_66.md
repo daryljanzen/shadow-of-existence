@@ -28421,3 +28421,61 @@ returning `1`, because I ran it in the same command as the push instead of gatin
 `check_deferrals` green, 63 fast gates green on the repaired tree.
 
 **Rulings: ⑴ landed, ⑵ held, ⑶ landed, ⑷ checked with one clause held, ⑹ re-derived and held. ⑸ next.**
+
+---
+
+# `r7641+cc66.36` — ruling ⑸ **LANDED**, and two of its three parts were already in
+
+Your ⑸ took my option 1 and set three parts. **Two were already landed at `r7639+cc66.25`** — written
+in on my own statement that I would do it absent a ruling, because leaving a test that passes for the
+wrong reason is worse than withdrawing it — and your ruling confirms them. **The third, the paper
+sentence, is landed now.**
+
+| part | state |
+|---|---|
+| ⒜ replace the edge test with the fixed-width sweep | **landed `.25`** — the receipt prints all three sweeps |
+| ⒝ report the registered test as a confound on both arms | **landed `.25`** — gated, and the receipt runs green |
+| ⒞ let the envelope-free reading carry the no-truncation claim | **landed here** — l.1387 rewritten |
+
+## ⓵ WHAT THE PAPER SAID, AND WHAT IT SAYS NOW
+
+It rested the exclusion on the withdrawn test outright: *"moving the band's lower edge away from that
+truncation makes it read higher, where an artefact of truncation would have to make it read lower."*
+
+It now rests on the reading that cannot suffer the hazard: the peak-to-trough depth uses no envelope and
+no window, so envelope truncation cannot reach it, and on that reading the lowest band sits at
+**`-0.002`** against **`+0.069`** over the rest — *not the parity a truncation artefact would have to
+produce.* The withdrawal is stated in the paper, with its cause: raising the lower edge with the upper
+edge fixed **narrows the window as well as moving the edge**, and a narrower sub-period window reads a
+higher ratio by itself, so the monotone rise was the narrowing; at fixed width it is gone on both arms.
+
+## ⛭ ⓶ AND THE NEW SENTENCE SAYS IT IS THE WEAKER CLAIM, WHICH THE OLD ONE DID NOT
+
+This is the part I want you to look at, because it is a judgement I made rather than one you gave me.
+The envelope-free reading is **coarse in band 1** — it holds a single half-cycle, which the paper
+already says two sentences earlier makes that band *"unresolved rather than small"*. ⇒ *So the same
+reading cannot both be unresolved there and strongly exclude an artefact there.* What it can do is
+exclude truncation as the step's **cause**, since a truncation artefact would have to show band 1 at
+parity and it does not.
+
+**The sentence now says exactly that.** *An exclusion carried by a coarse reading is worth less than one
+carried by a sharp test, and the text should not keep the old confidence while changing the carrier.* If
+you want it stated more strongly, the stronger statement needs a sharp reading that is also
+envelope-free, and I do not have one.
+
+⛔ ⌗ *And landing it cost two tries, both refused by `check_one_state` — "a paper may not narrate its own
+construction". My first wording called the new exclusion "the weaker of the two statements the earlier
+text made"; my second merely said the registered test "is withdrawn on both arms". **Both are references
+to a prior state of the paper, and both fired.** The gate's own instruction is to state what the thing
+IS, not how it came to be — so the sentence now says a lower-edge sweep **does not settle** the question,
+and why, with no history in it. The withdrawal belongs in the receipt, which carries it. ⇒ **A receipt
+may record that a test was withdrawn; the paper may only stop relying on it.** That distinction is now
+in `FOR_69.md` as well, since the explainer rewrite will meet it.*
+
+⌗ *No figure moved: `-0.0024` and `+0.0685` were already gated in `the_step_is_the_excesss_own_…` and
+`check_figures_pinned` finds nothing new unpinned. `check_marker_transposition` green, so the passage's
+attribution still holds.*
+
+**Rulings ⑴–⑹ are now all answered: ⑴ ⑶ ⑸ landed, ⑵ held on your own condition, ⑷ checked with one
+clause held and its landing waiting on the surviving-step re-point, ⑹ re-derived with the mechanism
+corrected.** Next: the surviving-step re-point, then everything your second bank unblocked.
