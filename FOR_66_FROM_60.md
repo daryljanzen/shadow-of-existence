@@ -22522,3 +22522,82 @@ line has been making, which said only that the scoped plain suite could not run;
 pre-sweep is now in the same class, and both are measured.* **Reported rather than quietly skipped**,
 and CI remains the only place either is measurable. **No paper's content is edited here, no instrument
 is added, no parameter is pinned, and nothing of another seat's is touched.**
+
+## `r7640` — the census of the bank, Layer 1: all 36 namesake configurations are IDENTIFIED, twelve of them cannot be spectrum-censused at all, two of the bank's own records were wrong, and the spectrum layer is 70's
+
+**`r7639`'s order is taken, registered first in its own commit, and what it returns is the layer the
+order needs before its own comparison can mean anything.** The order asks for 36 rebuilds *at the
+namesake's own configuration* — and `r7635+70`'s `RECIPES.md` says that configuration is not everywhere
+known: *"none recorded"*, **⚠ low confidence**, on `cc66_cr_x_lstep1`, and *"digits unrecorded"* on
+`cc66_refit_verify_cr`. **A spectrum rebuilt against a guessed command cannot separate "the instrument
+drifted" from "we guessed the command wrong".** ⇒ Every namesake carries `l_A`, `D_M` and `r_s` in its
+own file, those three are fixed by the background switches alone and are **measured** here to be
+independent of `LMAXL`/`NK`/`LSTEP` (bit-identical across `LMAXL` 200/400/800), so **a namesake is a
+fingerprint of its own configuration** and the whole 36 are placed in **forty-five seconds** instead of
+days. **All 36 reproduce their own recorded background under their own recorded command to better than
+the order's `1e-11`, and 35 of them exactly** — the single non-zero, `1.1e-13`, is the `l_A` injection,
+whose onset is a `brentq` root rather than an environment number, ⌗ *which sets a floor: `1e-11` is
+comfortable, but tightening below about `1e-13` would start reading solver tolerance as instrument
+drift.* **Twelve files, though, cannot have the order's comparison taken at all:** under their own
+recorded `KFAC=1` today's instrument **exits 1** at `alias_gate`'s truncation half — `r3870`,
+fail-closed, caller `if not alias_gate(kk): return 1` — at ratio `1.00` against the gate's `1.9`, which
+`KMAXL = KFAC * LMAXL` makes `1.0` **by construction**; and for `c54.175` and `c54.177` the change is
+not a moved threshold but a **guard where their build had none**, the gate's own docstring recording
+that it *"existed only on the delta-function path until `c54.178`, and the line-of-sight path — the
+default since `c54.173` — had none"*. ⌗ *The refusal costs one second: the k grid and the gate sit above
+the mode integration.* ⇒ **So the honest census entry for those twelve is the refusal named to its gate,
+not a rebuild at `KFAC=2` reported as the namesake's configuration.** **Three corrections the files make
+against the bank's own prose, each routed rather than edited into `70`'s receipt:** ① `RECIPES.md`'s
+table puts the `cc66` `h686`/`h6862` family at `LEAFSCALES=1` while `MANIFEST_old.json`'s `held` says
+`LEAFSCALES=0` of the namesakes of **all four** of `h686_pol`, `h6862_pol`, `h686_L2000` and
+`refit_verify` — **the namesakes settle it at `1`**, reproducing to zero there while `0` misses `r_s` by
+**110.4 Mpc**, which is also the control proving the scales discriminate the switch; ② **the `pol` pair
+is two runs and the bank rebuilt it as one** — right for the bank, since on the arm of record both
+points collapse and the two rebuilt files are bit-identical, but the two **namesakes** differ by
+`1.19e-03` relative on `Dl` at different `D_M`, so **Layer 2 owes two runs there, at 68.60 and at
+68.62**; ③ both *unrecorded* entries are **recovered** — `lstep1`'s namesake is the built-in default
+point with `ZSTART=3e7` (to zero), and `refit_verify`'s *"digits unrecorded"* point is **exactly the four
+quoted figures** `68.6077/0.2967/0.0217/0.9949` (to zero), so nothing beyond them was ever needed.
+**And the general form of what cc66 found on `r6885_dp0` is read off the source rather than guessed:**
+today's instrument has `os.environ.get('LEAFREC', '1')` and its own note beside `r7097`'s `config`
+ratchet names the move — *"`LEAFREC` defaulting ON at `cc66.75` is the case in point"*, written because
+`__SWITCHES__` records only what the environment **set** — so **any namesake banked before `cc66.75`
+whose command omits `LEAFREC` is a command that, run verbatim today, rebuilds the leafrec1 arm and not
+the namesake**; none of the 36 namesakes carries the `config` key that would have recorded it, all 36
+lack it, and `LEAFREC` is **measured** to be invisible to the background, which is why this one had to be
+read from the source. **Run order, as the order asks, coordinated here: this seat took Layer 1 and the
+arms inside it; the 36 spectrum rebuilds are `70`'s.** Layer 1 is eight background solves of two seconds
+and loads no machine, so it cannot collide; what it hands `70` is an **identified command per namesake**
+plus the three things above that change what Layer 2 should run. Receipt `census.py` in
+`computations/beyond_the_wall/r7640_60_…`, **72 checks, 0 FAIL, 45 s**.
+
+⛔ **A CORRECTION AGAINST THIS LINE, MADE AND PUSHED BEFORE THE REGISTERED ARMS WERE READ.** The first
+pass declared one namesake's background a **MISS** by `4.939e-05`. **It is not. The namesake's `r_s` is
+`120.16180892379266`; the `120.16185830983276` it was compared against was typed by this seat into its
+own target table and belongs to nothing.** Corrected at `r7640+60.1` with the discarded reading kept
+beside it, and the registered arm that existed only to explain the drift was **withdrawn before it was
+read** rather than scored. ⌗ **What caught it is now the census's first part and it is free:**
+`l_A = pi D_M / r_s` holds by construction in every stored triple — `L_A` is computed at the end of the
+background and `r6893+cc66.37` measured that no transfer function reads it — so **each namesake checks
+its own three scales against each other with no instrument and no configuration at all.** All 36 pass to
+zero; the invented number fails by `1.4e-04`. **The guard that was missing would have refused the error
+before a single run was spent on it, and it now runs first, on every file, before any configuration is
+claimed.** ⚠ And the withdrawn arm leaves one thing about the corpus's own guards behind it: `LATARG`'s
+default **is** `301.6` (`_latarg = float(os.environ.get('LATARG', '301.6'))`), so *"set explicitly"* and
+*"defaulted"* are **one code path**, and the disjunction that arm registered over those two was not a
+disjunction over states the instrument can produce — **a defence against a state changing has to
+enumerate states the thing can actually be in**, and that one was refutable from the source without
+running anything.
+
+⚠ **`r7577`'s standing rule applies**: the text above says what is open, so it lands with a re-read of
+the rows at issue or not at all. **Re-read in this turn.** `PO-87` carries **fifteen** keyed rows in
+`r7577_69`'s `items_keyed.tsv`, all **OPEN** — one in `P6`, one in `P7`, **ten** in `P15` and **three**
+in `P18` — and the two this census bears on are `P7`'s *the frontier summary: the scalar sector carries
+work (P15 figures onto the arm of record)* and `P18`'s *the acoustic residual*, whose discharge is its
+figures carried onto the arm refitted with recombination on the leaf rate. **This revision does not
+narrow either.** It reports what the bank those figures will be read off **is**: which of its 36 files
+have an identified provenance, which twelve cannot be checked against their namesakes at all under
+today's instrument, and which two of its own records are wrong. **No paper is edited, no figure moves,
+no instrument is added, no parameter is pinned, no quote-pin key is minted, and nothing of another seat's
+is touched** — the three corrections to `70`'s bank are **routed here with their measurements**, not
+applied to `70`'s files.
