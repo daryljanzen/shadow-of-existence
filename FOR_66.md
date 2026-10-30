@@ -27851,3 +27851,104 @@ HEAD` — the artefact this seat established earlier in this cycle — so it is 
 not before.*
 
 **Set A unchanged: 10 landed, 2 held for ruling, 3 bank-blocked, 1 held on a re-run.**
+
+---
+
+# `r7641+cc66.28` — ruling ⑴ landed, and the mechanical split had a consequence worth naming
+
+**l.1120 is split and the figure moved: `1.040` → `1.044`**, with the contrast beside
+`monopole_zero_point` and the $\lVert\Delta\rVert^{2}$ clause beside `model_difference`, as you ruled.
+The receipt is re-pointed onto `cc66_r185_verify_cr_leafrec1`, and the same code reproduces
+`cc66.35`'s `1.0401` on the namesake arm — so what moved is the arm and not the statistic.
+
+## ⓵ THE CARRY IS MOOT HERE, AND THAT IS MEASURED RATHER THAN ARGUED
+
+This statistic is not a comb-band ratio: it is the projection of the arm's envelope-normalised
+oscillation onto a direction built from the **control alone, with nothing fitted**. No bands, so
+nothing for a period mismatch to straddle — *but an inner product is suppressed by a phase offset just
+the same, which is the beat in another dress.* ⇒ So rather than classify it, I measured it: **the
+projection is maximised over a rigid shift of the arm at `dl = +0.0`**, against a comb period of
+`315`. There is no offset for a carry to remove, and the figure is not a suppressed one. Gated.
+
+⌗ *And a new reason inside class 3, which the earlier class-3 cases did not have: carrying would cost
+the claim its own words. A direction remapped onto the arm's measured comb is no longer "built from
+the control alone, with nothing fitted" — so here the carry is not merely inapplicable, it would
+falsify the sentence it was meant to protect.*
+
+## ⛔⛔ ⓶ AND THE SPLIT, DONE MECHANICALLY, BROKE ELEVEN FIGURES' ATTRIBUTION
+
+This is the part worth passing to the other seats doing these splits. Executed literally — the contrast
+clause first, closing with `monopole_zero_point`, then the $\lVert\Delta\rVert^{2}$ clause closing with
+`model_difference` — the split **moved the citation group that closed the whole preceding paragraph**.
+`282.96 = 177.88 + 27.82 + 77.26`, the `1.43` per bin and $\Delta$'s `0.760` trough value all sit in
+earlier sentences and were closed by the group at the paragraph's end; after the split the first group
+after them was `monopole_zero_point`, which computes none of them.
+
+⇒ **`check_marker_transposition` named all eleven, in my own pre-push batch rather than in CI.** The
+fix is ordering, not wording: the $\lVert\Delta\rVert^{2}$ clause goes FIRST, so `model_difference`
+still closes the paragraph's run, and the contrast sentence follows closing with `monopole_zero_point`.
+Both halves of your ruling hold and nothing lost its receipt. ⌗ *Your ruling's intent was right; what
+had a consequence was the mechanical order of the two clauses, and a seat splitting a citation group at
+the end of a paragraph of figures should expect this.*
+
+## ⛔ ⓷ TWO OF MY OWN PINS WERE NOT PINS, AND THE CHECKERS WERE RIGHT TO REFUSE THEM
+
+* **Digits in a string are not a pin.** My header tie parsed `$2.134$` back out of the docstring and
+  compared it — so the literal `2.134` existed only inside a string, and `check_figures_pinned` flagged
+  it UNPINNED. Correctly: *that is the regex-finds-its-digits shape the standing rule warns about.*
+  Replaced with a real numeric comparison on both height ratios.
+* **And my gate's label attributed its own number to a paper.** It read "THE TWO HEIGHT RATIOS THE
+  INDEX ROW PRINTS", and `check_unread_figure` refused it — the receipt computes those ratios and never
+  opens the paper, so the label was claiming a provenance it did not have. Reworded to what this
+  receipt measures.
+
+## ⓸ SEVEN HEADER FIGURES MOVED AND ONLY ONE WAS GATED
+
+| figure | namesake | arm of record |
+|---|---|---|
+| the contrast | `1.04015` | **`1.04403`** |
+| its excess | `4.0%` | **`4.4%`** |
+| the alternation shortfall | `2.0%` | **`2.3%`** |
+| the contrast's effective $\omega_b$ | `+22.9%` | **`+25.2%`** |
+| the alternation's effective $\omega_b$ | `-1.4%` | **`-1.9%`** |
+| the two residuals' ratio | a factor of **sixteen** | a factor of **fourteen** |
+| the arm's $P_1/P_2$ | `2.141` | **`2.134`**, still LOWER than `2.191` |
+
+⇒ *Six of those seven were prose, and prose does not red.* All seven are now parsed back out of the
+header and compared with the computation, with the "factor of fourteen" computed as `|+25.15/-1.85| =
+13.6` rather than written as a word. **Perturbed: moving any one header literal reds the receipt.**
+
+⌗ *And `l.2041`'s `2.141 → 2.017` is NOT moved — the paper cites it to `combs_resolution`, which is one
+of the three your second bank has just unblocked. A clean first test of your amended rule: the same
+figure lives in two receipts' prose and the paper attributes it to one.*
+
+## ⛔ ⓹ THE RECEIPT CANNOT BE WHOLLY RE-POINTED, DECLARED AND GATED
+
+Three banks carry an arm here and only one has an arm-of-record sibling:
+`cc66_r185_verify_*` **is** banked `_leafrec1`, so the contrast, the alternation and $P_1/P_2$ are on
+the arm of record; **`r6897_fields.npz`** is one of the twelve banks `cc66.18` found whose **arm is a
+KEY and not a file** (`k__cr` against `k__lcdm`, no arm-of-record key); **`r6893_switch_screen_cr`** has
+no sibling at all. ⇒ *Both are named in the receipt's own output and nothing compares them with the
+verify space — except ONE inference, the saturation leg, which converts the arm-of-record contrast
+through the namesake fields' measured $\omega_b$ response. **That one is gated in the safe direction:**
+the arm of record's excess is the LARGER (`0.0440` against `0.0402`) and the response span it must
+exceed is unchanged at `0.0280`, so "beyond what the baryon density reaches" holds a fortiori rather
+than by luck. `cc66.15` is why this is said out loud.*
+
+## ⓺ PERTURBATION, INCLUDING ONE THAT DID NOT FIRE AND SHOULD NOT
+
+Pointing the bank back at the namesake reds it; a `0.4` per cent cosine at the comb period takes the
+contrast to `1.03929` and reds it. ⛭ *A global `1.004` rescale does NOT red it — and that is correct,
+not a hole: the space is amplitude-fitted by construction, so an overall scale is a null direction of
+this statistic. The pin bites on the oscillation at fixed envelope, which is the quantity the claim is
+about.*
+
+## ⓻ THE REST
+
+`figure_pin_baseline.tsv`: **2 deletions, 0 additions** — two sites newly pinned or gone, so the
+ratchet tightened rather than being widened to fit. Explainer pin `acoustic-run` fired on
+`sec:refit-bound` and is **routed to `FOR_69.md`, not repaired** (EXPLAINER.md is under your rewrite);
+the passage's "swings about *four* per cent wider" survives at `4.4`, and the restamp is recorded there
+as yours. 327 pages, 18 papers at 0 errors, 63 fast gates green.
+
+**Next: rulings ⑵–⑹, then the second bank's unblocks.**

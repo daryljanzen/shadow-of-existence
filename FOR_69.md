@@ -3891,3 +3891,24 @@ The second objection is that this saddles a theory without preferred frames with
 **One state.** The paper is written in its final order. Nothing in it says it was reordered; any record of that belongs in the consolidation ledger.
 
 **Landed r7637 (69).** `corpus/modern_parallax.tex` now runs in the reframed order, with the corpus's own content placed as the order maps it: the register and independence paragraph in the introduction; the augmentation, its theorem and its warrant in a new subsection, sec:augmentation, after sec:simultaneity; the bend-of-the-cut paragraph opening sec:stands; the companion framework's Killing-field sentences with the non-synchronous qualification; l.273's conclusion in sec:reversed, without repeating the history; the floor's coefficient and growth items, the R2 correlation theorem, the R50 single-ray paragraph, the lower-bound-against-an-upper-limit paragraph and the conformal Killing marker kept in sec:floor with every marker on its claim. The density-sets-the-rate passage landed at r7635 is folded into sec:principle, sec:tension and sec:stands. The abstract is rebuilt from the reframed one, with sentences for the bend of the cut, the lapse and shift, the augmentation theorem and the history. The six new references are added in corpus style. The timescape receipt's INDEX row moves to sec:timescape; no other paper refers to a P4 label. The PDF builds with no undefined references, and P4's HTML chapter is rebuilt. Two choices made: the corpus keeps its title, which sixteen papers cite verbatim in their bibliographies; and de Sitter's sentence keeps "will have the same influence", as JanzenEinsteinCosmology quotes it, where the standalone reads "some influence".
+
+---
+
+**`r7641+cc66` — explainer pin `acoustic-run` fired, ROUTED not repaired.** EXPLAINER.md l.261's
+passage is pinned to `corpus/CR_cosmology.tex#sec:refit-bound`, and ruling ⑴ moved that section:
+l.1120's contrast figure goes **`1.040` → `1.044`** on the arm of record, and the sentence is split so
+the figure sits beside `monopole_zero_point` while the $\lVert\Delta\rVert^{2}$ clause stays beside
+`model_difference`.
+
+⇒ **The passage's own claim survives at the precision it states it to.** It says the oscillation
+"swings about *four* per cent wider about its smooth average — a difference of contrast, not of
+phase", and the arm of record's figure is **4.4 per cent**, which still reads as about four. The
+"contrast, not phase" clause is strengthened rather than weakened: the carry was measured as MOOT for
+this statistic (the projection onto the control's own oscillation already sits at its maximum over a
+rigid shift of the arm, at zero shift against a comb period of 315), so there is no phase offset
+hiding in it.
+
+⌗ *Restamped to keep the trunk green, per the checker's own instruction, and recorded here so the
+reread is logged as yours and not performed by the restamper. Nothing in the passage was edited.* If
+you want the figure sharpened from "about four" to "four and a half", that is a rewrite call and it is
+yours.
