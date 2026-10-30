@@ -1,0 +1,19 @@
+                            bins   unlensed    /bin     lensed    /bin
+              control LCDM   185      696.0    3.76      214.1    1.16
+          the NAMESAKE arm   185     1169.8    6.32      550.5    2.98
+         the ARM OF RECORD   185      938.3    5.07      302.1    1.63
+
+  the arm of record's 185-bin unlensed chi^2 is 938.3175; `r7639+cc66.2` computes 938.3175 independently
+
+  ⒜ the PAPER's pairing -- 185-bin LENSED against 133-bin UNLENSED:
+       namesake      2.572 against 1.980  -> lensed is the UNFAVOURABLE one
+       arm of record 1.411 against 1.601  -> lensed is the FAVOURABLE one  ⛔ INVERTED
+  ⒝ the RECEIPT's gate -- lensed against unlensed on the SAME 185 bins:
+       namesake      2.572 against 1.681  -> the gap widens by 53 per cent
+       arm of record 1.411 against 1.348  -> the gap widens by 5 per cent  ⛭ the claim HOLDS, the margin collapses
+
+  and lensing's own gain: the control falls by 3.25x, the arm of record by 3.11x, the namesake by 2.13x
+
+  OK -- the namesake row is reproduced, the arm-of-record value matches a landed
+  receipt's independent computation, and the inversion is present in the paper's pairing
+  while the same-bins claim holds with a collapsed margin.

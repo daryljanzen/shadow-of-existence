@@ -27952,3 +27952,99 @@ the passage's "swings about *four* per cent wider" survives at `4.4`, and the re
 as yours. 327 pages, 18 papers at 0 errors, 63 fast gates green.
 
 **Next: rulings ⑵–⑹, then the second bank's unblocks.**
+
+---
+
+# `r7641+cc66.29` — ruling ⑵ measured and **HELD**, because your own condition fires
+
+Your ⑵ made the clause conditional: *"Keep it only if the lensed ratio still exceeds the unlensed one
+on the arm of record. If it does not, report and hold."* ⇒ **It does not, against the comparison the
+paper actually makes.** Measured, validated twice, and the receipt is **not** re-pointed.
+
+## ⓵ THE MEASUREMENT
+
+|  | bins | unlensed | /bin | lensed | /bin |
+|---|---|---|---|---|---|
+| control ΛCDM | 185 | `696.0` | `3.76` | `214.1` | `1.16` |
+| the namesake arm | 185 | `1169.8` | `6.32` | `550.5` | `2.98` |
+| **the arm of record** | 185 | `938.3` | `5.07` | **`302.1`** | **`1.63`** |
+
+⇒ **`550.5` → `302.1`, `2.98` → `1.63` per bin, and the ratio `2.57` → `1.41`.** The control does not
+move. *Validated before being believed: the namesake row is reproduced to a tenth of a $\chi^2$, and
+the arm-of-record 185-bin unlensed value comes out at `938.3175` against the `938.3175` that
+`r7639+cc66.2` — already landed — computes independently.*
+
+## ⛔⛔ ⓶ AND IT INVERTS, BUT ONLY IN ONE OF THE TWO COMPARISONS, WHICH IS THE WHOLE OF IT
+
+Your condition says "the unlensed one", and there are two:
+
+| pairing | namesake | arm of record |
+|---|---|---|
+| ⒜ **the paper's sentence**: 185-bin lensed vs **133-bin** unlensed | `2.572` vs `1.980` → lensed **UNFAVOURABLE** | `1.411` vs `1.601` → lensed **FAVOURABLE** ⛔ |
+| ⒝ **the receipt's gate**: lensed vs unlensed on the **same 185 bins** | `2.572` vs `1.681` → gap widens **53%** | `1.411` vs `1.348` → gap widens **5%** ⛭ |
+
+* **The claim's physics survives in ⒝.** The control still gains more from lensing than the arm does —
+  it falls by `3.25×` against the arm's `3.11×`. But the margin collapses from fifty-three per cent to
+  five.
+* **The paper's sentence inverts in ⒜.** *"That is the unfavourable of the two configurations and it is
+  the one quoted"* becomes false: on the arm of record the lensed configuration is the **favourable**
+  one.
+
+⌗ *And ⒜ was already a licence defect — it pairs numbers scored on two different bin sets, which
+**the receipt itself warns against in the same breath it makes it**: "a number scored on one may not be
+quoted against the other." So the inversion sits in a comparison that was never licensed, and ⒝ is the
+licensed form of the same claim. The receipt's TITLE survives in ⒝ and fails in ⒜.*
+
+## ⛔⛔ ⓷ AND ⑵ CANNOT BE LANDED ALONE, BECAUSE THE NEXT SENTENCE WOULD INVERT TOO
+
+This is the reason I am holding rather than landing with revised wording. The paragraph's next claim is
+that the no-fit figure `2.57` becomes `1.57` under refit, so *"freedom closes about a third of the
+gap"*. ⇒ **Move `2.57` → `1.41` and leave `1.57` standing, and the paper says refitting takes the arm
+from `1.41` to `1.57` — that refitting makes it WORSE, which a refit cannot do.** The incoherence
+would be visible on the page.
+
+Both refit receipts (`the_full_range_refit_holds_the_background`, `the_1p57_has_no_parameter_address`)
+read `refit_grid/`, the namesake grid, and neither is re-pointed. ⇒ *But **your second bank ships
+`refit_grid_leafrec1/`**, so they ARE now re-pointable.* **My recommendation: let me re-point those two
+next and bring the no-fit and refit figures to you as ONE unit** — which is your own ⑵ reasoning
+("they move together, so the paragraph stays on one arm") reaching one sentence further than you
+applied it.
+
+## ⚠ ⓸ AND `2.57` IS NOT IN ONE PLACE — IT IS IN SEVEN, ACROSS THREE PAPERS
+
+Before any of it moves you should know the blast radius:
+
+* `corpus/CR_cosmology.tex` **l.135** — the paper's own summary paragraph, *"is still rejected on
+  shape---at $2.57$ times the control's distance"*; **l.141**; **l.570**; **l.954** (⑵'s own site)
+* `corpus/CR_framework.tex` **l.1863** — a different paper
+* `corpus/CR_synthesis.tex` **l.1553** and **l.1853** — a different paper again
+* `corpus/appendix_receipts_P15.tex` l.951 — generated, follows the INDEX row
+* `EXPLAINER.md` l.258 — *"sits at 2.57 times the standard model's distance"*, under your rewrite
+
+⇒ *So this is a corpus-wide figure, not a `sec:refit-bound` figure, and `1.41` is a materially weaker
+rejection than `2.57`. That is a judgement about what the corpus claims and it is yours, not mine.*
+
+## ⓹ PROPOSED WORDING, FOR WHEN THE REFIT PAIR IS IN
+
+For l.952–957, stating the comparison on the same bins so the two are licensed against each other:
+
+> "On the full-range lensed configuration---$\ell=100$--$1996$, $185$ bins, the lensing carried by the
+> same derived operator on both arms---the control returns $\chi^{2}=214.1$, or $1.16$ per bin, and
+> this arm $302.1$, or $1.63$ per bin: *the arm sits at $1.41$ times the control's distance from the
+> data*. *Lensing is worth slightly more to the spectrum whose peaks are already in place, and the two
+> configurations are read on the same bins so that they may be compared*: unlensed over those same
+> $185$ bins the factor is $1.35$, so the lensed configuration is the marginally unfavourable one, by
+> five per cent rather than the fifty-three the construction's earlier leaf reconstruction showed."
+
+⌗ *The `279.4 / 556.7 / 1.98` trio drops out of the sentence entirely under this wording, which is the
+point — it is the 133-bin number whose pairing with a 185-bin number caused the inversion. Its own
+arm-of-record value is `279.4` against `447.4`, a factor `1.601`, from `r7639+cc66.2`.*
+
+## ⓺ THE INSTRUMENT
+
+`computations/beyond_the_wall/r7641_cc66_rulings/lensed_pair_on_the_arm_of_record.py` — exits 1 on four
+validations, each perturbed and each seen to fire: the namesake row against the receipt's own print,
+the arm-of-record value against `cc66.2`'s independent computation, the inversion's presence in ⒜, and
+the collapsed-margin survival in ⒝.
+
+**Rulings: ⑴ landed, ⑵ HELD on your own condition. ⑶–⑹ next.**
