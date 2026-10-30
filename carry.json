@@ -153,23 +153,5 @@
     "since": "e7869306400c6a8a17f4acd2f505be46e311fcff"
    }
   }
- },
- "claude/shadow-of-existence-setup-wgcmvt": {
-  "tolerance": {
-   "receipts/L_probability/S54_a_ledger_change_scopes_five_receipts_and_none_of_the_forty_four_that_read_the_ledger_because_the_read_index_is_a_list_of_spellings_without_tsv_on_it.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41024898554",
-    "since": "0d4fa203e0eb6ff7a50e1b5fe9b2737e243cf58e",
-    "unmeasured": true
-   },
-   "receipts/L_probability/S55_the_previous_repairs_own_written_safety_argument_was_the_defect_because_a_shrinking_population_is_safe_for_a_restraint_and_fatal_for_the_non_vacuity_read_off_the_same_range.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41024898554",
-    "since": "0d4fa203e0eb6ff7a50e1b5fe9b2737e243cf58e",
-    "unmeasured": true
-   },
-   "receipts/P15_CR_cosmology/P15_the_phase_slope_does_not_separate_the_loading_from_the_driving_because_a_primordial_tilt_moves_it_as_much_as_the_baryon_density_and_the_clean_lever_is_not_banked.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41024898554",
-    "since": "0d4fa203e0eb6ff7a50e1b5fe9b2737e243cf58e"
-   }
-  }
  }
 }
