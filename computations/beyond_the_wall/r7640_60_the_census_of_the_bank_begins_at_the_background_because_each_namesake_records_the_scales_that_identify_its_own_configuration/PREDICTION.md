@@ -66,18 +66,30 @@ as a reading taken first. The registered arms are in the next section and are **
 15+1+1+11+4+2+1+1 = 36.
 
 **Read, and declared as read:**
-- ⓐ **Thirty-four of the 36 namesake backgrounds reproduce EXACTLY** — zero absolute difference on all
-  three scales at the printed precision of the stored doubles, not merely within `1e-11` — under the
-  commands in the right-hand column. Rows 1, 3, 4, 5, 6, 7.
-- ⓑ **`c54.191_cr_lA340_L3000` MISSES.** Under its own recorded `LATARG=340`, today's instrument gives
+- ⓐ **Thirty-five of the 36 namesake backgrounds reproduce within `1e-11`, and thirty-four of them
+  EXACTLY** — zero absolute difference on all
+  three scales — not merely within `1e-11` — under the commands in the right-hand column: rows 1, 3,
+  4, 5, 6, 7. Row 2 (`c54.191_cr_lA340_L3000`) clears at 1.137e-13 rather than exactly, because its
+  onset is the root of a `brentq` solve rather than a number read from the environment. **The one file
+  not yet placed is row 8**, whose point digits are unrecorded — arm ① below.
+- ⓑ **WITHDRAWN AT `r7640+60.1`, AND THE DISCARDED READING IS KEPT HERE.** ⓑ said:
+  *"`c54.191_cr_lA340_L3000` MISSES. Under its own recorded `LATARG=340`, today's instrument gives
   `r_s = 120.161808923793` against the namesake's `120.16185830983276`: an absolute difference of
-  **4.939e-05 Mpc**, relative **4.11e-07**. `D_M` reproduces exactly and `l_A` is pinned to 340 by the
-  onset solve to 5.7e-14, so the whole drift lands in `r_s`. **This is above `1e-11` by four orders of
-  magnitude** and `r_s` sets the acoustic scale the projection combs at, so the old → new diff for this
-  file already contains an instrument change and cannot be the arm's alone.
-- ⓒ **The control on ⓑ holds.** The background is independent of the expensive half as claimed: the
-  `LATARG=340` solve returns bit-identical `l_A`, `D_M`, `r_s` at `LMAXL` = 200, 400 and 800. So ⓑ is
-  not an artefact of running the background cheaply.
+  4.939e-05 Mpc, relative 4.11e-07 ... above `1e-11` by four orders of magnitude."*
+  ⛔ **The namesake's `r_s` is `120.16180892379266`, not `120.16185830983276`. The second number was
+  typed by this seat into its own comparison table and belongs to nothing.** Re-read from the file,
+  the namesake's background reproduces at `l_A` 1.137e-13, `D_M` 0, `r_s` 4.263e-14 — **under
+  `1e-11`, so the file CLEARS Layer 1.**
+  ⌗ *What caught it was a consistency test the first pass had not run: `l_A` is `pi D_M / r_s` by
+  construction (`L_A` is computed at the end of the background, and `r6893+cc66.37` measured that no
+  transfer function reads it), so the three stored scales are checkable against each other with no
+  instrument at all. The invented `r_s` failed that test by 1.4e-04 while every one of the 36 real
+  triples passes it to better than `1e-11`. **That test is now part of the census** — it is free, it
+  is total, and it would have refused the error before it was written down.*
+- ⓒ **The control on the withdrawn ⓑ stands as a control and is reported, having lost its subject.**
+  The background is independent of the expensive half as claimed: the `LATARG=340` solve returns
+  bit-identical `l_A`, `D_M`, `r_s` at `LMAXL` = 200, 400 and 800. The claim ⓒ was run to protect was
+  wrong for a reason the control could not see.
 - ⓓ **`cc66_cr_x_lstep1`'s unrecorded command is RECOVERED.** `RECIPES.md` has "none recorded
   (`FOR_66_FROM_70.md`:6250)" and rebuilt it as a guess. Its namesake's own `l_A = 172.8407172847731`
   with the **default** `D_M` says the point was the built-in default **and the onset was not solved**:
@@ -112,15 +124,19 @@ them (`CRH0`, `CROM`, `WBH2`; `NS` does not enter the background). **PREDICTION:
 `1e-11` — in which case the namesake carries something those three switches cannot express, and the
 census owes a named fourth switch instead of a recovered point.
 
-**② The `lA340` drift of ⓑ is in the onset solve, and it is NOT specific to the 340 injection.**
-**PREDICTION:** re-running the onset solve at the *default* target reproduces exactly (row 1 already
-shows the 301.6 solve reproducing to zero), so the drift is specific to a solve whose target is **set**
-rather than defaulted, and it is nameable to the `LATARG` path — a switch and a commit, as the order
-requires.
-**THE REACHABLE NEGATIVE:** the drift is present with the target set explicitly to 301.6 as well — i.e.
-it is not the 340 injection but the act of setting the target at all; or it is in neither, and the
-4.939e-05 comes from somewhere the `LATARG` path does not reach, in which case arm ② is a MISS and the
-cause is reported as unlocated with the search named.
+**② WITHDRAWN AT `r7640+60.1`, BEFORE IT WAS READ, BECAUSE ITS SUBJECT DOES NOT EXIST.** ② registered
+that the `lA340` drift of ⓑ is in the onset solve and nameable to the `LATARG` path. ⓑ was this seat's
+own transcription error; there is no drift to locate, so the arm is withdrawn rather than scored. Two
+things are kept from it, because both are facts about the instrument and neither depends on ⓑ:
+- `LATARG`'s default **is** 301.6 (`_latarg = float(os.environ.get('LATARG', '301.6'))`), so "set
+  explicitly" and "defaulted" are **one code path** and the disjunction ② registered — *set* versus
+  *defaulted* — could not have been a disjunction over distinct states. ⚠ **A defence that enumerates
+  states must enumerate states the paper can actually produce; this one enumerated a distinction the
+  source does not make, and that was visible without running anything.**
+- The onset at a *set* target is a `brentq` root, so it lands at the solver's tolerance rather than
+  bit-exactly, and the census's threshold must be read with that in mind: `1e-11` is comfortable
+  against the 1.1e-13 the root actually delivers, but a tightening of the census threshold below
+  about `1e-13` would start reading solver tolerance as instrument drift.
 
 **③ The twelve `c54`/`item38` files cannot be spectrum-censused as the order specifies, and the
 refusal is itself the instrument drift the census is looking for.**
@@ -161,3 +177,16 @@ Routed to 70 through `FOR_66_FROM_60.md` with this registration's commit named.
   file can carry the right background under the wrong solver. Arm ③ is exactly such a case.
 - It does not touch `P15`. No figure in any paper moves on this registration, and nothing here edits a
   receipt belonging to another seat.
+
+## ⚑ `r7640+60.1` — THE AMENDMENT, APPENDED AND PUSHED BEFORE ARM ① WAS READ
+
+One reading declared in the already-read section was wrong, by this seat's own hand and not by the
+instrument's: ⓑ compared today's `r_s` against a number this seat had typed into its own target table
+rather than read from the namesake. The real stored value differs from the typed one in the sixth
+significant figure. Corrected above, with the discarded reading kept beside it; arm ②, which existed
+only to explain the error, is withdrawn before it was read and is not scored.
+
+**What replaces it is a cheaper guard than the arm was.** `l_A = pi D_M / r_s` holds by construction in
+every stored triple, so each namesake file checks its own three scales against each other with no
+instrument and no configuration. All 36 pass it to better than `1e-11`. The invented number failed it
+by 1.4e-04. ⇒ **The census runs that test first, on every file, before any configuration is claimed.**
