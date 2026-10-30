@@ -27218,3 +27218,82 @@ wording.
 ⚠ *And a flag for when `held_period_estimator` is re-pointed: the same audit receipt pins its text too —
 it requires `bounded its contrast effect at $2$` to still be there. If that re-point moves the bound, the
 audit goes red again, and it will again be the pin working rather than a defect.*
+
+---
+
+# r7639+cc66.17 — THE EIGHTH SET A RE-POINT: ONE RECEIPT WHERE THE CARRY APPLIES TO ONE HALF AND WOULD DELETE THE OTHER
+
+`P15_no_statistic_…` re-pointed to the arm of record. **This is the first receipt in the family where
+the carry splits INSIDE the file, and the split is measured rather than argued.**
+
+| | the reading | what the carry does |
+|---|---|---|
+| ⓵ the minimum resolvable share | how LARGE the arm-control difference is against its own scatter | **applies** — carried before a band is cut |
+| ⓶ the phase against the comb | what the arm-control PHASE IS | ⛔ **would delete it** — the carry's own parameter IS this statistic |
+| ⓷ the composition cancellation | control channel against control channel | identity — moves by `0.003` in the worst of eight readings |
+
+⇒ *** CARRIED, ⓶'s `6.8σ` DETERMINATION COLLAPSES TO `0.4σ` (`+0.102910` rad → `−0.000799`). *** That is
+the fourth case, and it is not class 3: the statistic *does* live in the comb coordinate — **it IS the
+coordinate's offset.** So ⓶ reads the arm uncarried, with the collapse printed beside it as the reason.
+
+## ⓵ AND THE CARRY IS LOAD-BEARING FOR THE HEADLINE
+
+Read on the arm of record **without** the carry, on the registered banding, the term mix's share is
+`0.505` against a floor of `0.43` — **above it** — and this receipt's headline verdict inverts. Carried,
+`0.533` against `0.91`. ⇒ *** The carry is what keeps "no statistic this construction can build resolves
+the two channels", and that is now a gate in the file rather than a remark. ***
+
+## ⓶ TWO REGISTERED FORMS MISS, BOTH FINDINGS SURVIVE — AND ONE OF THEM NEVER HELD
+
+⒜ **⓵'s "every route"** → every route that bands at or above the comb's own period: over those six the
+floor runs `0.91`–`1.11` (`1.23×`). The two twelve-band routes put the full spread at `3.87×` against the
+registered `1.35×` — and their cause is measured: those bands are `0.41` wide against a comb period of
+`1.01`, so **they do not band the comb at all.**
+
+⚠ ** AND THE NAMESAKE ARM PASSED THE REGISTERED FORM ONLY BECAUSE A FILTER DROPPED ITS OWN WORST ROUTE. **
+Its raw twelve-band route reads `f_min = 52.16`, and this receipt's own `f_min < 10` filter removed it. *So
+"every route" was never every route — the filter's threshold was calibrated on the arm being measured.* On
+the arm of record that route lands INSIDE the filter at `3.51`, which is why the miss is visible now.
+
+⒝ **⓶'s matched-width scatter at more than twice the full-period one** → `1.79×` on the arm of record
+against `3.73×` on the namesake. Still larger, and the verdict still turns on it (`1.62` scatters against
+`2.56`). Both misses printed with the measured value and the direction; **neither re-toleranced.**
+
+## ⓷ THREE CLAUSES OF `CR_cosmology.tex` l.1635–1644 ARE HELD FOR YOU
+
+Doubly held: they are cited to **two** receipts and only this one is re-pointed, which is the `.1`
+amendment I asked for. Proposed wording, for you to land:
+
+| as printed | on the arm of record |
+|---|---|
+| "the relative phase is a fraction of a degree" | **"a few degrees"** — `+5.90°` |
+| "determined to a few tenths of a degree, at seven times its stretch-to-stretch standard error" | **"to about nine tenths of a degree"**, at seven times — `±0.865°`, `6.8×` |
+| "sits inside one and a half scatters, where … it would have read five" | **"inside two scatters, where … it would have read two and a half"** — `1.62` against `2.56` |
+
+⚠ *And one thing beyond wording: the sentence leans on the CONTRAST between those two numbers, and the
+contrast weakens from `3.3×` to `1.6×`. The finding holds — the matched-width control still kills the
+step — but it is thinner than the prose implies.* ⌗ "An order of magnitude below the relative amplitude"
+in the same passage compares against a figure from `surviving_step_is_amplitude`, which is NOT re-pointed,
+so that comparison is cross-arm until it is; I have not touched it.
+
+## ⓸ PINNED, PERTURBED, AND WHAT LANDED
+
+**Reverting the arm fires six gates**, among them a pin cut for it: the long-stretch phase determination,
+`+0.102910` rad against the namesake's `+0.007368` — `14.0×`. **Reverting the eta leg is silent, and
+legitimately**: it supplies band EDGES, asserted byte-for-byte identical between the arms, so no pin there
+could mean anything — the `.13` distinction, not the silent class.
+
+Sixteen header figures are tied to the computation by a check, and it **fired on its first run** — on
+`$f_{\min} = 52.16$`, where the figure was right but not written in the form the check reads. Wording
+fixed; the check left strict.
+
+INDEX row, both appendices, `CR_cosmology.pdf` rebuilt (**327 pages**, 0 errors). No sentence of the paper
+edited.
+
+⌗ ** AND A CORRECTION TO MY OWN FIRST READING, WHICH I HELD FOR ABOUT TEN MINUTES. ** On two routes the
+carry appeared to rescue ⓵ outright (`2.80×` → `1.16×`). **On all eight it does not** (`4.48×` → `3.87×`),
+and the real structure is the banding width. *A partial route set is not the statistic, and "the carry
+fixes it" was the comfortable answer.*
+
+**8 of Set A's 21 landed.** Still held on your word: the `l.1120` split (`.1`), `l.956` (`.2`), the
+`l.1106` margin wording, and now `l.1635`–`1644`.
