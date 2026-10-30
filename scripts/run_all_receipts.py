@@ -129,6 +129,24 @@ SLOW = (
 #   The global cap stays where it is; this buys the one receipt that needs it the room to finish,
 #   and the number is the measurement plus headroom rather than a round figure chosen to feel safe.
 LONG = {
+    # ⛭ ADDED r7642 (60), on r7641's order: the nightly's 10-30 read found these two OVER the 600s cap, each
+    # KILLED MID-COMPUTATION rather than failing -- the second at m = 19 of its recoupling sums.  The order gave
+    # two exits, declare long with the measured cost or cut the level range, to be chosen BY WHAT THE CLAIM NEEDS.
+    #   ** THE CLAIM NEEDS THE LEVELS IN BOTH, so neither range is cut. **  `...dimension_six` computes nine levels
+    #   and fits its closed form on SIX while TESTING THREE HELD OUT, with its own gate asserting that test is not
+    #   vacuous precisely because six coefficients were fitted on exactly six levels -- and m = 19 is the only
+    #   held-out level in the eight-channel regime the fit was made in.  `...double_logarithmic` validates on
+    #   TWENTY-TWO named triples including its own boundary and points where the derivation's windows do not hold,
+    #   and says so in the claim.  *Dropping any of them removes a named part of a claim, which is not a cut.*
+    # ⚠ ** AND THE MEASUREMENT SAYS THE KILL IS CONTENTION AND NOT SIZE: both finish UNDER the 600s cap here. **
+    #   ONE THREAD each, on a four-core container with two other single-threaded processes running, so a core each
+    #   and no contention for it: `...dimension_six` 388s wall / 385s by its own clock, 26 of 26, exit 0; and
+    #   `...double_logarithmic` 511s wall / 510s, 13 of 13, exit 0.  *That is the Q1 shape -- a receipt that passes
+    #   standing alone and is killed four-way -- so the budget is set from the rule rather than from the raw figure.*
+    #   ⌗ The rule every entry below uses, and nothing else: measured x 1.7, rounded up to the next 300s step.
+    #     388 x 1.7 = 660 -> 900, and 511 x 1.7 = 869 -> 900.  Both at 900.
+    'P10_the_cubic_summand_is_odd_over_m_cubed_so_it_reaches_the_pole_and_the_ledger_pays_at_dimension_six.py': 900,  # measured 388s, one thread (r7642)
+    'P10_the_cubic_over_three_different_levels_is_derived_in_closed_form_and_its_low_level_region_carries_a_nested_logarithm_so_the_bare_sum_is_double_logarithmic.py': 900,  # measured 511s, one thread (r7642)
     # r7603 (69), on the carry ledger's signature for r7601's receipt (an empty gate list: a kill at the 600s cap).
     # MEASURED ALONE, ONE THREAD, NOTHING ELSE RUNNING: 834s, exit 0, 14 of 14 (836s in a two-job scoped run).
     # The rule the entries below use: 834 x 1.7 = 1418 -> 1500, the next 300s step.
