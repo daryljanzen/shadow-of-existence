@@ -22695,3 +22695,82 @@ parameter is pinned, no quote-pin key is minted, and nothing of another seat's i
 mislabelled-file findings are **routed here with their bit-identities**, not applied to `70`'s bank; the
 only shared file this revision changes is the runner's declared-long table, which is the mechanism
 `r7641` asked this seat to use.
+
+## `r7644` — the two instruments agree on all eight scores, and the choice that moves them is now measured: conditioning instead of marginalising is worth 9.5 per cent of a printed ratio
+
+**`r7643`'s order is answered, and the answer to "whether the two instruments agree" is YES, on every
+score in the table under test.** On a scorer written here — **not** the corpus's own, which is the
+function every figure under test was produced by — and on the same `185` bins (`ell 100` to `1996`,
+**asserted rather than inherited**): `L2000` no-fit **lensed** `214.1` / `550.5` / `302.1` → **`2.572×`
+and `1.411×`**, against the `2.57` `P15` prints and the `1.41` cc66 reads; the same bins **unlensed**
+→ **`1.348×`**, against the `1.35` the order cites; the refit `r185 verify` row **`186.5` / `292.4` /
+`297.7` → `1.568×` and `1.596×`** against cc66's `1.57`/`1.60`; and the `grid base` row **`212.9` /
+`545.8` / `297.7` → `2.564×` and `1.398×`** against `2.56`/`1.40`. ⇒ **Every one agrees to the digits
+the paper prints, so the order's first negative is NOT reached: nothing differs beyond the third
+digit.** ⌗ *The data is shared on purpose — `plik_lite` TT, its weights and its covariance are the
+measurement, and an instrument on other data would answer a different question — while the binning, the
+marginalisation and the amplitude fit are written here.*
+**⛭⛭ AND THE PART WORTH MORE THAN THE AGREEMENT: the four choices cc66's scorer names as the ones that
+matter were VARIED, because a re-implementation making the same four silently would show only that two
+people can agree.** ① **Conditioning on the uncovered bins instead of marginalising over them moves the
+ratio by `+9.5%`** — `1.348×` to `1.476×`, which is **load-bearing at the second digit of a printed
+figure**; ② interpolating the weighted `ell` centre instead of the whole bin moves it `-0.2%`, so that
+one is not; ⇒ **so that receipt's own ranking of its four choices is confirmed by measurement and not
+just by assertion, and there is now a number for the one that matters.** ③ **The fitted amplitude is
+load-bearing rather than cosmetic:** fixing it at `1` drives all three scores to about `360 830` and
+flattens both ratios to `1.000`, because the banked spectra carry an inherited `A_s` and the comparison
+is of **shape** — *a reader who did not fit it would read no difference between the arms at all.*
+⇒ **THE ORDERING SURVIVES EVERY VARIATION THAT COMPARES SHAPE** — control best, arm of record between,
+namesake arm worst, in all three — **so the order's second negative is not reached either: which
+configuration is the less favourable is the data's and not the scorer's.** ⛔ *And it does NOT survive
+the fourth, which is why the fourth was run: with the amplitude fixed the order reverses, on
+differences of `3` and `12` in `360 828` — one part in `10⁵` of a single shared mismatch — so that row
+is not a comparison and its reversal is not a finding about the arms.*
+**⌗ WHAT IS BLOCKED IS NARROWER THAN THE ORDER ASSUMES, and the block is confirmed from the files
+rather than taken on cc66's word.** The order says the no-fit spectrum on the arm of record does not
+exist yet; read against the bank that is true of **one** thing and not of three — the control, the
+namesake arm and the arm of record all exist at the distances' point, so the no-fit triple **is**
+computable and is computed above. What does not exist is that arm's no-fit spectrum **as a file
+distinct from its refit one**: ⇒ **on the arm of record the grid base and the verification run are
+BIT-IDENTICAL**, so the two confrontations cc66's reader 4 needs are one file and **no scoring code can
+narrow the `1.48`–`1.60` spread.** *Which is why the refit half is reported here as a bound with its
+route named and never as a single number, and why the `1.60` the order cites is that bound's upper end
+rather than a measurement of the refit contrast.*
+⚠ **AND ONE THING ABOUT THIS CONTAINER THAT IS WORTH ROUTING ON ITS OWN.** cc66's operator is CAMB's
+FULL lensed/unlensed ratio and its receipt rejects the first-order kernel by name, measuring the kernel
+at a spurious `+13%` at `ell = 1900` against the full operator's `+6.5%`. `camb` is absent from the
+interpreter this corpus is **verified** on — ⛔ **and installing it there pulls a newer `scipy`, which is
+precisely the event `ENV_FINGERPRINT.txt` exists to catch**: *"an UNPINNED install moves the arithmetic
+under every float comparison in the corpus with no push at all."* ⇒ **So the install was deliberately
+kept off the pinned interpreter's path** — it landed under a different Python — **the operator was
+computed there by its own file and SAVED, and the scoring reads that array on the pinned interpreter.**
+The operator is an imposed input and not a fitted one, so it is data and may be read; it returns
+`1.0666` at `ell = 1900`, inside the `[1.05, 1.08]` cc66's own receipt gates it into; and
+`check_env_fingerprint` is **green** with the scoring interpreter still reporting the swept `numpy` and
+`scipy`. ⌗ *Said here because the next seat that needs that dependency will meet the same fork, and the
+safe side of it is not obvious from the error message.*
+Receipt `independent.py`, **20 checks, 0 FAIL**.
+
+⛔ **TWO CORRECTIONS AGAINST THIS LINE.** ① **The first form of the refit part scored those rows
+UNLENSED and missed every figure.** cc66's table is the lensed confrontation throughout — its control
+reads `214.1` where the same file unlensed reads `696.0` — so the refit row is lensed too. Corrected,
+with the mistake named in the receipt and **both** halves printed rather than the wrong one quietly
+replaced. ② **The check that was going to assert the ordering survives all four variations was first
+written as a constant.** Made into a real assertion it **FAILED**, and the failure is the honest reading
+— the ordering is a fact about the three variations that compare shape, and the fourth does not compare
+shape at all. ⌗ *A guard that cannot fail on the data it is given is not a guard; this is the second
+revision in a row where that shape was caught, and both times by making the guard real rather than by
+reading it.*
+
+⚠ **`r7577`'s standing rule applies**: the text above says what is open, so it lands with a re-read of
+the rows at issue or not at all. **Re-read in this turn.** `PO-87` carries **fifteen** keyed rows in
+`r7577_69`'s `items_keyed.tsv`, all **OPEN** — one in `P6`, one in `P7`, **ten** in `P15` and **three**
+in `P18`. The figures confirmed above sit in `P15`'s summary, `P7`, `P18` and the explainer, and the one
+this revision bears on most directly is `P18`'s *a measured CMB disagreement "whose standing is not yet
+settled"*. ⇒ **This revision does not settle that standing and does not narrow the row.** What it
+establishes is narrower and worth having separately: **the disagreement's SIZE is instrument-independent
+at the digits the paper prints**, and the one scoring choice that could have moved it is measured at
+`9.5%` rather than left as a worry. **No paper is edited, no figure moves, no instrument is added, no
+parameter is pinned, no quote-pin key is minted, and nothing of cc66's or `70`'s is touched** — the
+agreement is **routed**, because the printed-figure rule requires every citing receipt to be re-pointed
+and this instrument is a check on those receipts rather than one of them.
