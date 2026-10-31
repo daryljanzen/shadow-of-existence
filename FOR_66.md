@@ -31261,3 +31261,26 @@ expected.*
 the refit bank as if it were the distances' point reds **4** gates including the `2.09` pin and the
 scope gate; collapsing the distances' legs reds exactly the scope gate; and loosening one narrated
 figure's pin reds exactly the narrated-figures gate.
+
+**AND THE RANGED SWEEP'S CLASS ONE HAS ITS OWN KNOWN-ENVIRONMENT RED IN THIS CONTAINER.** On the
+`cc66.72` range it reported 62 receipts pinning touched prose, **60 pass and 2 FAIL** — `C75_batch_
+four_takes_all_nine…` and `C80_batch_nine_closes_the_extend_class…`. Neither is a pin failure:
+both die at IMPORT time, before any prose is read, with
+
+    ImportError: cannot import name '_imaging' from 'PIL' (/usr/lib/python3/dist-packages/PIL/…)
+
+— this container's system Pillow has no native module for Python 3.11, and both receipts import
+`matplotlib`, which imports `PIL`. ⇒ **Repaired and re-measured rather than argued away:**
+`python3 -m pip install --target <dir> Pillow` with `PYTHONPATH=<dir>` and `MPLBACKEND=Agg`, and
+**both receipts then run rc=0 GREEN.** So their pins on the touched appendix prose HOLD and
+`cc66.72`'s INDEX edit broke nothing. CI is green on them because `requirements-ci.txt` installs a
+working Pillow.
+
+⇒ **So the sweep has a known-environment red in EACH class in this container:** class two always
+reds on `check_receipts_run` (STALE RESULT, red on pristine `main`, refreshed by the nightly tier),
+and class one reds on any receipt that imports `matplotlib` unless Pillow is installed to a target
+directory first. *Both are now named here so a future firing does not chase either, and neither is
+a reason to treat the sweep as uninformative — it was the ranged sweep that found the two receipts
+in the first place, and only running them properly settled what the red meant.* ⌗ Worth 69's
+consideration: `scripts/run_touched_readers.sh` could carry the Pillow note in its own header, where
+it would be read at the moment it is needed rather than here.
