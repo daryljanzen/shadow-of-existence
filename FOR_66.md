@@ -29072,3 +29072,85 @@ with itself — and I rewrote it rather than counting it. Eight perturbations, a
 captured from `sec:refit-bound` itself, so moving the arm moves it against the paper, and that is the
 amended P15 rule's situation rather than mine to land. ⌗ *Instrument:
 `r7641_cc66_grid_readers/phase_slope_on_the_arm_of_record.py`.*
+
+---
+
+# `r7641+cc66.43` — readers 3 and 4 measured, the six are CLOSED, and ⛭⛭ **⑵'s own precondition is MET for the no-fit pair**
+
+Item ⑵'s grid half is finished. These two read the same banks and come out differently, and neither is
+a repetition of readers 1 and 2.
+
+## ⛔⛭⛭ ⓵ READER 4 IS BLOCKED, AND ITS OWN GATE IS WHAT DETECTS IT
+
+`the_no_fit_confrontation_…` already carries a check written for exactly this contingency:
+
+> *"the two NO-FIT spectra are a different pair from the two refitted ones, **which is what makes this
+> a second confrontation rather than the same one replotted**"* — asserting
+> $|D_M(\text{no-fit}) - D_M(\text{refit})| > 1.0$ on each arm.
+
+| | no-fit $D_M$ | refit $D_M$ | \|diff\| |
+|---|---|---|---|
+| control | `13864.6627` | `13954.3535` | `89.6908` |
+| namesake arm | `14011.4567` | `14017.0386` | `5.5819` |
+| **arm of record** | `14133.9546` | `14133.9546` | **`0.0000`** |
+
+On the arm of record the receipt's two pointers resolve to **one file** —
+`refit_grid185_leafrec1/cr_base.npz` and `spectra/cc66_r185_verify_cr_leafrec1.npz` are bit-identical.
+⇒ *** The receipt's entire subject is the CONTRAST between the two confrontations, and this bank holds
+only one of them. I did not have to argue this block: the receipt states it, through a gate it already
+had. *** ⛭ *That is the cleanest form a block can take, and it is worth saying why: a receipt that
+gates the thing that makes it meaningful will refuse a re-point that destroys it, without anyone
+noticing in prose first.*
+
+## ⛭⛭ ⓶ READER 3 IS TWO-THIRDS BLOCKED AND ONE-THIRD READABLE — AND THE READABLE THIRD IS ⑵'s
+
+| configuration | control | namesake | **arm of record** | |
+|---|---|---|---|---|
+| `L2000` | `214.1` (`1.16`/bin) | `550.5` (`2.98`/bin) → `2.57×` | **`302.1` (`1.63`/bin) → `1.41×`** | ⛭ readable |
+| `grid base` | `212.9` (`1.15`) | `545.8` → `2.56×` | `297.7` → `1.40×` | ⛔ centre |
+| `r185 verify` | `186.5` (`1.01`) | `292.4` → `1.57×` | `297.7` → `1.60×` | ⛔ the same file as `grid base` |
+
+⇒ *** `L2000` sits at the DISTANCES' point on both arms, so the paper's `214.1 / 550.5 / 2.57` pair IS
+readable on the arm of record. *** And this reproduces `r7641+cc66.30`'s `302.1` and `1.41×`
+**independently** — from reader 3's own `score`, a different receipt's code, not the lensed-pair
+instrument.
+
+⛭⛭ **So the amended P15 rule's precondition for ⑵ is MET for the no-fit pair.** The rule you adopted
+says a printed figure moves only when *every* cited receipt that computes it is re-pointed. `2.57` is
+computed by two: `the_full_range_lensed_comparison_…` (`cc66.29`/`.30`) and
+`the_refit_bound_figures_…` (here). **Both can now be read on the arm of record, and both give
+`1.41×`.** ⌗ *The `1.57` half is a different matter: its receipts need the verify spectra, which on
+this arm are the grid base, so it remains the bound I reported at `cc66.41` — `1.48×` to `1.54×` by
+one route and `1.60×` by this one.*
+
+## ⓷ THE SIX GRID READERS, CLOSED
+
+| | receipt | verdict |
+|---|---|---|
+| 1 | `full_range_refit_holds_the_background_…` | ⛔ **not re-pointable** — centre, and no run at the minimum |
+| 2 | `refit_leaves_the_background_…` | ⛔ **not re-pointable** — same two; and it strengthens its own withdrawn `4.5%` |
+| 3 | `refit_bound_figures_all_reproduce_…` | ⛭ **one of three configurations readable**, and it is ⑵'s |
+| 4 | `no_fit_confrontation_…` | ⛔ **blocked by its own gate** — the two confrontations collapse to one |
+| 5 | `de_tilted_peak_set_…` | ⛭⛭ **re-points in full** — and `Ⓓ①` turns out namesake-specific |
+| 6 | `phase_slope_does_not_separate_…` | ⛭ **hardened**, not re-pointed — `Ⓐ①` is paper-bound |
+
+⇒ **Three distinct kinds of block, all measured rather than assumed:** the grid's centre (1, 2, 3's
+two configurations), the verification run that is its own base (1, 2, 3, 4), and a paper-bound
+comparison (6). *And one clean re-point (5), one hardening (6), and one figure pair unblocked for ⑵.*
+
+## ⓸ THE CARRY, ACROSS ALL SIX
+
+Not one of the six needed the carry, and in each case that was computed rather than classified:
+**class 3** for readers 1, 2, 3 and 4 (a lensed $\chi^2$ or a sky-referenced phase, with no
+comb-band ratio and no control quantity inside the arm's own score — each checked by recomputing the
+statistic from the arm's spectrum and the data alone), and **class 2 — an identity** for reader 5,
+where injecting a rigid comb-phase shift of `0.137` moved the worst derivative by `6.3e-15`. ⛭ *Reader
+6 is class 3 for a third reason: its statistic is a difference of two of the arm's own files, so the
+pipeline's derivative is reproduced bit-for-bit from them alone.*
+
+⌗ *Instrument: `r7641_cc66_grid_readers/nofit_and_refit_bound_on_the_arm_of_record.py`, readers 3 and
+4 in one file because they read the same two banks, with a licence gate on the receipt's own published
+pairs and **six perturbations, every one red**.*
+
+⇒ **Next: the three earlier gap receipts, then `cc66.46`'s own reading** — the rest of what your ⑵
+named.
