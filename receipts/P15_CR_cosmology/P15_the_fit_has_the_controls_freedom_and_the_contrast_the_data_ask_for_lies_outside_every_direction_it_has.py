@@ -89,6 +89,19 @@ sys.path.insert(0, os.path.join(ROOT, 'computations', 'planck_tt_likelihood'))
 import chi2_of_spectrum as CS                                            # noqa: E402
 
 GRID = os.path.join(ROOT, 'computations', 'beyond_the_wall', 'refit_grid185')
+# ⛭⛭⛭ `r7647` ⑴ -- THE ARM OF RECORD'S GRID IS ARM-ONLY, SO THE GRID IS RESOLVED PER ARM.
+#   `refit_grid185_leafrec1/` carries the nine `cr_*` legs and NOTHING ELSE: no `lcdm_*` leg and no
+#   `*.log`/`*.py` metadata.  So this receipt cannot be re-pointed by swapping one path -- doing that
+#   raises `FileNotFoundError: .../refit_grid185_leafrec1/lcdm_base.npz` -- and the control's legs
+#   must keep coming from the namesake grid, where they are the only copy that exists.
+#   ⇒ The control is the SAME control in both readings, which is what makes the comparison below
+#   like-for-like rather than two different fits.
+GRID_AOR = GRID + '_leafrec1'
+
+
+def _grid_for(tag):
+    # the arm of record's legs live in the sibling; the control's exist only in the namesake
+    return GRID_AOR if tag.startswith('cr') else GRID
 SPEC = os.path.join(ROOT, 'computations', 'beyond_the_wall', 'spectra')
 STEP = dict(H0=2.0, OM=0.0150, WB=0.0008, NS=0.020)       # the registered refit's own step sizes
 NMC = 2000
@@ -128,7 +141,7 @@ def binned(ls, Dl):
 
 
 def load(tag):
-    z = np.load(os.path.join(GRID, f'{tag}.npz'))
+    z = np.load(os.path.join(_grid_for(tag), f'{tag}.npz'))
     return np.asarray(z['ls'], float), np.asarray(z['Dl'], float), float(z['l_A'])
 
 
@@ -179,7 +192,24 @@ print(f"   grid files carrying the run configuration: {len(_meta)}")
 print(f"   ** ZSTART=3e7 appears in the grid's own configuration: {_zs} ** -- so the solved onset")
 print("      (Z_START = None, solved for the pinned acoustic scale) is OVERRIDDEN in this grid, and")
 print("      the directions measured below are the directions of the grid's model.")
-check('⓪ the grid states its own onset, and it is the fixed 3e7 rather than the solved pin', _zs)
+# ⛭ The arm of record's grid carries no `*.log` or `*.py`, so its onset cannot be read the way the
+#   namesake's is.  It carries something stronger instead: `cr_base.npz`'s RESOLVED `config`, which
+#   records what the run DID rather than what was typed.  Both are required.
+import json as _json                                                        # noqa: E402
+_zc = np.load(os.path.join(GRID_AOR, 'cr_base.npz'), allow_pickle=True)
+_zcfg = _json.loads(str(np.atleast_1d(_zc['config'])[0])) if 'config' in _zc.files else {}
+print(f"   the arm of record's grid states its own onset in its resolved config: "
+      f"ZSTART={_zcfg.get('ZSTART')} and LEAFREC={_zcfg.get('LEAFREC')}")
+check('⓪ BOTH grids state their own onset, and it is the fixed 3e7 rather than the solved pin -- '
+      "the namesake's in its logged configuration and the arm of record's in its `cr_base.npz` "
+      'RESOLVED config, which is the stronger record because it says what the run DID; and that '
+      'same config is what says LEAFREC is on, which no log line could say once the default moved',
+      _zs and float(_zcfg.get('ZSTART', 0)) == 3e7 and _zcfg.get('LEAFREC') is True)
+check('⓪ᵇ and the arm of record\'s grid is ARM-ONLY, so the per-arm resolution above is forced '
+      'rather than chosen: it carries nine `cr_*` legs and no `lcdm_*` leg at all',
+      os.path.exists(os.path.join(GRID_AOR, 'cr_base.npz'))
+      and not os.path.exists(os.path.join(GRID_AOR, 'lcdm_base.npz'))
+      and os.path.exists(os.path.join(GRID, 'lcdm_base.npz')))
 
 OUT = {}
 for arm, name in (('lcdm', 'CONTROL'), ('cr', 'CR, crossing')):
@@ -280,25 +310,45 @@ print(' ② the contrast response is small on BOTH arms -- so no declared parame
       ' on either background')
 check('② the control\'s 4x2 (shift, contrast) sv-ratio is 0.040 to three decimals',
       abs(L['ratio'] - 0.040) < 0.0015)
-check('② this arm\'s is 0.036 to three decimals', abs(R['ratio'] - 0.036) < 0.0015)
+check(f"② this arm's is {R['ratio']:.3f} to three decimals -- the arm of record's, against the "
+      "namesake arm's 0.036; it moves by a thousandth and stays far under the collinearity "
+      "threshold, so this part's finding is untouched by the re-point",
+      abs(R['ratio'] - 0.038) < 0.0015)
 check('② both sit under the 0.1 pre-registered as "collinear", so the coupling is NOT CR-specific',
       max(L['ratio'], R['ratio']) < 0.1)
 
 print(' ③ the reach, which is the one place the two arms part')
-check('③ the control leaves 186.0 at the GLS minimum', abs(L['tot'] - 186.0) < 1.0)
+check(f"③ the control leaves {L['tot']:.4f} at the GLS minimum -- ** UNCHANGED BY THE RE-POINT, "
+      "because its nine legs are the same nine files in both readings ** , which is what makes "
+      "the arm's move above a like-for-like comparison and not two different fits",
+      abs(L['tot'] - 186.0066) < 0.01)
 check('③ and that is within 1 sigma of n - 5 = 180: the control reaches the data', abs(L['sig']) < 1.0)
-check('③ this arm leaves 278.8', abs(R['tot'] - 278.8) < 1.5)
-check('③ at +5.2 sigma over n - 5, so about a hundred in chi2 is outside every direction it has',
-      abs(R['sig'] - 5.2) < 0.2)
+check(f"③ this arm leaves {R['tot']:.3f} -- ** AND THAT IS NOT THE 278.79 `r7647` QUOTES FROM "
+      "THIS SEAT'S OWN LINEARISED HARNESS. ** The harness figure was wrong for this quantity; "
+      "this receipt and `the_licensed_rebuild...` agree on it by two different routes, at "
+      f"{R['tot']:.3f} and 276.360.  *The gap over the control becomes "
+      f"{R['tot'] - L['tot']:.3f} rather than 92.8, so `about a hundred in chi^2 lies outside "
+      "every direction the model has` still stands -- but the figure beside it must not be "
+      "278.79.*",
+      abs(R['tot'] - 276.36) < 0.20)
+check(f"③ at {R['sig']:+.2f} sigma over n - 5, so about a hundred in chi2 is outside every "
+      "direction it has -- the namesake arm's was +5.2, and the claim survives the re-point in "
+      "the only form it is made in",
+      4.9 < R['sig'] < 5.2)
 
 print(' ④ and the missing direction is a UNIFORM contrast, at a size the data name')
-check('④ a free uniform contrast removes 56.4 of this arm\'s residual',
-      abs(R['drops']['contrast, uniform'] - 56.4) < 1.5)
+check(f"④ a free uniform contrast removes {R['drops']['contrast, uniform']:.1f} of this arm's "
+      f"residual ({R['drops']['contrast, uniform'] / R['tot'] * 100:.1f} per cent of it), against "
+      "the namesake arm's 56.4 and 20 per cent -- so the missing direction is MORE of the "
+      "residual on the arm of record, not less",
+      abs(R['drops']['contrast, uniform'] - 60.5) < 1.5)
 check('④ against 0.8 on the control, so the control asks for no contrast',
       L['drops']['contrast, uniform'] < 2.0)
-check('④ the fitted coefficient is c = -0.064 +- 0.009 on this arm',
-      abs(R['c'] + 0.0636) < 0.003 and abs(R['cerr'] - 0.0085) < 0.002)
-check('④ which is -7.5 sigma', abs(R['c'] / R['cerr'] + 7.5) < 0.5)
+check(f"④ the fitted coefficient is c = {R['c']:.4f} +- {R['cerr']:.4f} on this arm, against the "
+      "namesake arm's -0.0636 +- 0.0085 -- the same size and sign, slightly sharper",
+      abs(R['c'] + 0.0670) < 0.003 and abs(R['cerr'] - 0.0086) < 0.002)
+check(f"④ which is {R['c'] / R['cerr']:.1f} sigma, against the namesake arm's -7.5",
+      abs(R['c'] / R['cerr'] + 7.8) < 0.5)
 check('④ and -0.9 sigma on the control, which is nothing',
       abs(L['c'] / L['cerr']) < 1.5)
 check('④ an ell-MODULATED contrast buys under a tenth of what the uniform one does, so the request '

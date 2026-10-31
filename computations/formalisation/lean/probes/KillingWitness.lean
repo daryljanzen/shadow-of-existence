@@ -18,13 +18,12 @@ Base: campaign 59's `probes/KillingHorizon.lean`, copied verbatim (prefix `kh_` 
   of `kw_cor_stationary` for this `H`, and the concrete pair `(0,0), (1,0) ∈ H` metrically coincident
   under the chart that the corollary returns.
 
-**Nondegeneracy check (the witness is genuinely Lorentzian).** The structure `KillingChart` imposes
-only symmetry and `λ`-independence — no nondegeneracy and no signature. So the **zero metric satisfies
-every hypothesis trivially**: `kw_zero_rigidity` proves `Rigidity 1 Set.univ` from `g ≡ 0`, which is why
-a witness by itself proves nothing unless it is checked non-degenerate. Our witness is not the zero
-metric: `kw_lightCone_det` (`det = -1 ≠ 0`), `kw_timelike` (`ds²(1,-1) = -2 < 0`), `kw_spacelike`
-(`ds²(1,1) = 2 > 0`), `kw_orth` (those two are `g`-orthogonal), packaged as `kw_lorentzian`: an
-orthogonal basis with one negative and one positive square, i.e. signature `(−,+)`, and `χ` null.
+**Nondegeneracy (`r7647+71.1`, campaign 83).** Campaign 82 found that `KillingChart` imposed only
+symmetry and `λ`-independence, so the zero metric satisfied every hypothesis trivially. `KillingChart`
+now carries `nondeg` (an invertible component matrix at every point), and `kw_zero_excluded` proves no
+chart has `g ≡ 0`. The witness discharges `nondeg` from `det = -1`, and is moreover Lorentzian:
+`kw_timelike` (`ds²(1,-1) = -2 < 0`), `kw_spacelike` (`ds²(1,1) = 2 > 0`), `kw_orth`, packaged as
+`kw_lorentzian`: signature `(−,+)`, with `χ` null.
 This is flat space with a null translation — the paper's own example (P1: every null hyperplane of
 flat space is a metric singularity).
 
@@ -46,6 +45,9 @@ structure KillingChart (n : ℕ) (E : Type*) where
   g : ℝ × E → Comp n
   symm : ∀ p a b, g p a b = g p b a
   killing : ∀ (s : ℝ) (p : ℝ × E), g (p.1 + s, p.2) = g p
+  /-- Nondegeneracy (`r7647+71.1`): the component matrix is invertible at every point, so the zero
+  metric is excluded. Signature is not required; no theorem here uses it. -/
+  nondeg : ∀ p, (Matrix.of (g p)).det ≠ 0
 
 /-- The line element `ds²(v) = g_ab vᵃ vᵇ`. -/
 def interval (G : Comp n) (v : Fin (n + 1) → ℝ) : ℝ :=
@@ -278,6 +280,7 @@ def kw_chart : KillingChart 1 ℝ where
   g := fun _ => kw_lightCone
   symm := by intro _ a b; simp only [kw_lightCone, eq_comm]
   killing := by intro _ _; rfl
+  nondeg := by intro _; rw [Matrix.det_fin_two]; simp [kw_lightCone]
 
 /-- The bilinear form `g(v, w) = g_ab vᵃ wᵇ`. -/
 def bilin (G : Comp n) (v w : Fin (n + 1) → ℝ) : ℝ := ∑ a, ∑ b, G a b * v a * w b
@@ -323,14 +326,14 @@ theorem kw_lorentzian :
     constructor <;> linarith
   · have := kw_interval_orbit kw_lightCone 1; simp at this; rw [this]; simp [kw_lightCone]
 
-/-- **Caveat: the structure admits the zero metric.** `KillingChart` imposes no nondegeneracy, so
-`g ≡ 0` satisfies `Rigidity` for *every* union of orbits, here all of `ℝ × ℝ`. A witness must
-therefore be checked non-degenerate (`kw_lorentzian`); the zero chart is not our witness. -/
-theorem kw_zero_rigidity : Rigidity 1 (Set.univ : Set (ℝ × ℝ)) :=
-  ⟨{ K := { g := fun _ => 0, symm := fun _ _ _ => rfl, killing := fun _ _ => rfl }
-     X := Set.univ
-     union := by ext p; simp [unionOfOrbits]
-     null := fun _ _ => ⟨0, 1, one_ne_zero, by simp [interval]⟩ }⟩
+/-- **The zero metric is excluded** (`r7647+71.1`). Campaign 82 found that, without `nondeg`, `g ≡ 0`
+gave `Rigidity` for every union of orbits (`kw_zero_rigidity`, now unstatable). With the field, no
+`KillingChart` has a zero component matrix anywhere. -/
+theorem kw_zero_excluded (n : ℕ) (E : Type*) (K : KillingChart n E) (p : ℝ × E) : K.g p ≠ 0 := by
+  intro h
+  have := K.nondeg p
+  rw [h] at this
+  simp [Matrix.det_zero] at this
 
 /-- **Witness for `lem:killing`.** A concrete chart, `x₀ = 0`, `p = (0,0) ≠ q = (1,0)` on the orbit
 `x = 0`, metrically coincident; the chart's metric is the nondegenerate Lorentzian `kw_lightCone`. -/
@@ -402,7 +405,7 @@ end ShadowProbe.KillingWitnessProbe
 #print axioms ShadowProbe.KillingWitnessProbe.kw_spacelike
 #print axioms ShadowProbe.KillingWitnessProbe.kw_orth
 #print axioms ShadowProbe.KillingWitnessProbe.kw_lorentzian
-#print axioms ShadowProbe.KillingWitnessProbe.kw_zero_rigidity
+#print axioms ShadowProbe.KillingWitnessProbe.kw_zero_excluded
 #print axioms ShadowProbe.KillingWitnessProbe.kw_lemma_killing_witness
 #print axioms ShadowProbe.KillingWitnessProbe.kw_coincident_concrete
 #print axioms ShadowProbe.KillingWitnessProbe.kw_rigidity

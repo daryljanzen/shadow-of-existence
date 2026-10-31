@@ -37,6 +37,9 @@ structure KillingChart (n : ℕ) (E : Type*) where
   g : ℝ × E → Comp n
   symm : ∀ p a b, g p a b = g p b a
   killing : ∀ (s : ℝ) (p : ℝ × E), g (p.1 + s, p.2) = g p
+  /-- Nondegeneracy (`r7647+71.1`): the component matrix is invertible at every point, so the zero
+  metric is excluded. Signature is not required; no theorem here uses it. -/
+  nondeg : ∀ p, (Matrix.of (g p)).det ≠ 0
 
 /-- The line element `ds²(v) = g_ab vᵃ vᵇ`. -/
 def interval (G : Comp n) (v : Fin (n + 1) → ℝ) : ℝ :=

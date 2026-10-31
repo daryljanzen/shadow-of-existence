@@ -91,6 +91,7 @@ STATUS: OK
 rc=0 on success.  Run: python3 <this file>   (numpy, scipy; ~40 s -- reads the banked grid)
 """
 import os
+import re
 import sys
 
 import numpy as np
@@ -321,9 +322,77 @@ for i, k in enumerate(STEP):
         row.append(dd)
     print(f"  {k:>8} " + " ".join(f"{v:>22.1f}" for v in row))
 print("\n  (the cheaper of the two one-step excursions, in chi^2)")
-check("** every parameter is constrained on both arms: a one-step excursion costs chi^2 **",
-      all(v > 5.0 for v in FLAT.values()))
-check("and n_s is a live direction, which is what caught the knob shadow at cc66.17",
+# ⛭⛭⛭ `r7647` ⑶ -- THE QUARTET THE PAPER PRINTS, PINNED FOR THE FIRST TIME.  Until now this part
+#   computed all eight of these and gated them only as `all(v > 5.0)`, a floor no quartet of this
+#   size could ever fail, while `sec:refit-bound` printed four of them as `2527, 740, 141 and 31`
+#   and NO receipt asserted any of them.  They are captured from the paper and compared here.
+# ⌗ AND THE PAPER'S FOUR ARE THE NAMESAKE GRID'S, measured rather than assumed: pointing
+#   `GRIDS['cr']` at `refit_grid185` instead reproduces 2527.3900 / 739.6168 / 141.0245 / 31.2352,
+#   which round to exactly what the paper prints.  That is a one-line change anyone can repeat; it
+#   is recorded here in prose rather than pinned, because this file's business is the arm of record.
+_TEX = open(os.path.join(ROOT, 'corpus', 'CR_cosmology.tex'), encoding='utf-8').read()
+_mq = re.search(r"one-step excursions cost\s*\$([0-9]+)\$, \$([0-9]+)\$, \$([0-9]+)\$ and "
+                r"\$([0-9]+)\$", _TEX)
+check("⌗ `sec:refit-bound`'s printed quartet is still FOUND by this file's pattern -- a sentence "
+      "reworded past it must redden this part rather than leave it comparing against nothing",
+      _mq is not None)
+if _mq:
+    _PQ = dict(zip(('H0', 'OM', 'WB', 'NS'), (float(x) for x in _mq.groups())))
+    _A = {k: float(FLAT[('cr', k)]) for k in ('H0', 'OM', 'WB', 'NS')}
+    _C = {k: float(FLAT[('lcdm', k)]) for k in ('H0', 'OM', 'WB', 'NS')}
+    print(f"\n      {'':>6} {'paper':>10} {'arm of record':>16} {'control':>12} {'arm vs paper':>14}")
+    for k in ('H0', 'OM', 'WB', 'NS'):
+        print(f"      {k:>6} {_PQ[k]:>10.0f} {_A[k]:>16.4f} {_C[k]:>12.4f} "
+              f"{(_A[k] / _PQ[k] - 1) * 100:>+13.4f}%")
+    check("⛔⛔ ** THE QUARTET MOVES ON THE ARM OF RECORD AND THREE OF THE FOUR GET STIFFER: ** "
+          f"{_A['H0']:.1f}, {_A['OM']:.1f}, {_A['WB']:.1f} and {_A['NS']:.1f} against the printed "
+          f"{_PQ['H0']:.0f}, {_PQ['OM']:.0f}, {_PQ['WB']:.0f} and {_PQ['NS']:.0f} -- "
+          f"{(_A['H0'] / _PQ['H0'] - 1) * 100:+.2f}%, {(_A['OM'] / _PQ['OM'] - 1) * 100:+.2f}%, "
+          f"{(_A['WB'] / _PQ['WB'] - 1) * 100:+.2f}% and {(_A['NS'] / _PQ['NS'] - 1) * 100:+.2f}%",
+          2538.0 < _A['H0'] < 2540.5 and 812.0 < _A['OM'] < 814.0
+          and 149.3 < _A['WB'] < 150.4 and 25.7 < _A['NS'] < 26.3)
+    # ⛭⛭⛭ THIS CLAIM IS MADE AGAINST THE CONTROL AND NOT AGAINST THE PAPER'S PRINTED QUARTET, AND
+    #   THAT IS DELIBERATE.  `check_quote_pins` named the capture above as a new quote-pin key and
+    #   put the reason plainly: a gate that asserts another seat's sentence "fails on SUCCESS when
+    #   the sentence said something was open".  The first form of this gate compared the measured
+    #   quartet with the PRINTED one, so the day 69 lands the arm-of-record figures the comparison
+    #   would invert and this receipt would go red on a correct landing.  ⇒ The content -- three
+    #   directions stiffen, the tilt softens -- is control-relative, and the control does not move.
+    check("⛔ ** AND THE TILT IS THE ONE DIRECTION THAT SOFTENS: ** it is the only one of the four on "
+          f"which the arm of record is LESS constrained than the CONTROL ({_A['NS'] / _C['NS']:.4f} "
+          f"of it) while the other three are MORE ({_A['H0'] / _C['H0']:.2f}, "
+          f"{_A['OM'] / _C['OM']:.2f}, {_A['WB'] / _C['WB']:.2f} of it) ** -- so the re-point "
+          "stiffens the background and loosens the tilt, the same direction `cc66.68` found the "
+          "refit moving it in.  *Stated against the control because the control is the thing that "
+          "does not move; comparing with the paper's printed quartet would make this gate fail the "
+          "day 69 lands the new figures.*",
+          _A['NS'] < _C['NS'] and all(_A[k] > _C[k] for k in ('H0', 'OM', 'WB')))
+    _ns_pq = {k: _PQ[k] for k in ('H0', 'OM', 'WB', 'NS')}
+    _is_namesake = (_ns_pq == {'H0': 2527.0, 'OM': 740.0, 'WB': 141.0, 'NS': 31.0})
+    _is_aor = (_ns_pq == {'H0': 2539.0, 'OM': 813.0, 'WB': 150.0, 'NS': 26.0})
+    check("⌗ ** AND THE PAPER'S PRINTED QUARTET IS ONE OF EXACTLY TWO LEGITIMATE STATES: ** the "
+          "NAMESAKE grid's `2527 / 740 / 141 / 31`, which is what it carries now, or the arm of "
+          "record's `2539 / 813 / 150 / 26`, which is what `cc66.74` proposes and 69 lands.  "
+          f"*It currently reads {_PQ['H0']:.0f} / {_PQ['OM']:.0f} / {_PQ['WB']:.0f} / "
+          f"{_PQ['NS']:.0f}, the "
+          + ('NAMESAKE' if _is_namesake else 'ARM OF RECORD' if _is_aor else 'UNRECOGNISED')
+          + " state.*  This is the disjunction `check_quote_pins` asks for: the gate passes in "
+          "either state and fails only on a THIRD set, which would be a drift rather than a "
+          "landing.",
+          _is_namesake or _is_aor)
+    check("⌗ and the CONTROL's four are untouched by the re-point, pinned here so the comparison's "
+          f"other half is asserted too: {_C['H0']:.4f}, {_C['OM']:.4f}, {_C['WB']:.4f}, "
+          f"{_C['NS']:.4f}",
+          1774.0 < _C['H0'] < 1774.3 and 473.0 < _C['OM'] < 473.2
+          and 98.2 < _C['WB'] < 98.4 and 32.2 < _C['NS'] < 32.4)
+check("** every parameter is constrained on both arms: a one-step excursion costs chi^2 ** -- the "
+      f"cheapest of all eight is {min(float(v) for v in FLAT.values()):.2f}, so the claim that "
+      "these are sharp minima rather than unconstrained directions survives the re-point with room "
+      "to spare.  ⌗ The old floor here was 5.0, which no quartet of this size could fail; it is "
+      "raised to 20 and the four figures themselves are pinned above",
+      all(float(v) > 20.0 for v in FLAT.values()))
+check("and n_s is a live direction, which is what caught the knob shadow at cc66.17 -- still live "
+      "on both arms, and now the only one of the four that the re-point made cheaper",
       FLAT[('cr', 'NS')] > 5.0 and FLAT[('lcdm', 'NS')] > 5.0)
 
 # =================================================================================================

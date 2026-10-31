@@ -112,6 +112,10 @@ CTL = score('lcdm')
 CODED = score('cr_coded')
 X73 = score('cr_crossing')
 NEW = score('cr_x_h686_pol')
+# ⛭⛭⛭ `r7647` ❷ -- THE SAME ARM ON 70's DISTANCES' POINT.  Its `l_A`, `D_M` and `r_s` are
+#   bit-identical to the namesake's, so it is the like-for-like arm of record; the namesake row
+#   stays because this file's identity is a named banked file and cannot move with an arm.
+AORD = score('cr_x_h686_pol_leafrec1_distances')
 NEWF = score('cr_x_h686_fluid')
 PIN = score('cr_leafpin')
 PINF = score('cr_leafpin_fluid')
@@ -172,7 +176,7 @@ print(f"  {'configuration':>34} {'chi2':>9} {'/bin':>7} " +
       " ".join(f"{f'{lo}-{hi}':>10}" for lo, hi in BANDS))
 for nm, s in (('control (LCDM)', CTL), ('the arm as coded, H0 = 73.0', CODED),
               ('crossing, H0 = 73.0', X73), ('** crossing, H0 = 68.6 **', NEW),
-              ('run 1, the pin', PIN)):
+              ('** the same, ARM OF RECORD **', AORD), ('run 1, the pin', PIN)):
     print(f"  {nm:>34} {s['chi2']:>9.1f} {s['chi2'] / s['n']:>7.2f} " +
           " ".join(f"{s['bands'][b]:>10.2f}" for b in BANDS))
 print(f"""
@@ -186,6 +190,63 @@ if NEW['bands'][(700, 1000)] > 0.15 * X73['bands'][(700, 1000)]:
 for b in BANDS:
     if NEW['bands'][b] > 4.0 * CTL['bands'][b]:
         fail.append(f"band {b} is {NEW['bands'][b] / CTL['bands'][b]:.1f}x the control, not within 4x")
+
+# =====================================================================================
+# ⛭⛭⛭ `r7647` ⑵ -- THE QUARTERS ON THE ARM OF RECORD, AND THEY DO NOT SCALE: THEY MOVE AROUND.
+#   `sec:refit-bound` l.958-959 prints the arm at 1.70 / 2.22 / 4.23 / 9.29 against the control's
+#   0.77 / 1.44 / 2.62 / 3.73.  All eight are computed in this file already; none was pinned, and
+#   the only band gate here asked whether each was within FOUR TIMES the control's -- which the
+#   largest, at 2.75, was never going to fail.
+_pc = {b: (AORD['bands'][b] / NEW['bands'][b] - 1) * 100 for b in BANDS}
+_tot = (AORD['chi2'] / AORD['n']) / (NEW['chi2'] / NEW['n']) - 1
+print(f"\n  {'band':>12} {'control':>10} {'namesake':>10} {'arm of record':>14} {'change':>11}")
+for b in BANDS:
+    print(f"  {f'{b[0]}-{b[1]}':>12} {CTL['bands'][b]:>10.6f} {NEW['bands'][b]:>10.6f} "
+          f"{AORD['bands'][b]:>14.6f} {_pc[b]:>+10.4f}%")
+print(f"  {'TOTAL/bin':>12} {CTL['chi2'] / CTL['n']:>10.6f} {NEW['chi2'] / NEW['n']:>10.6f} "
+      f"{AORD['chi2'] / AORD['n']:>14.6f} {_tot * 100:>+10.4f}%")
+
+if not (abs(CTL['bands'][(100, 400)] - 0.765826) < 5e-6
+        and abs(CTL['bands'][(400, 700)] - 1.436731) < 5e-6
+        and abs(CTL['bands'][(700, 1000)] - 2.620049) < 5e-6
+        and abs(CTL['bands'][(1000, 1300)] - 3.725004) < 5e-6):
+    fail.append("the CONTROL's four quarters are not the ones the paper prints (0.77/1.44/2.62/3.73)")
+if not (abs(NEW['bands'][(100, 400)] - 1.700203) < 5e-6
+        and abs(NEW['bands'][(400, 700)] - 2.222014) < 5e-6
+        and abs(NEW['bands'][(700, 1000)] - 4.228463) < 5e-6
+        and abs(NEW['bands'][(1000, 1300)] - 9.293875) < 5e-6):
+    fail.append("the NAMESAKE arm's four quarters are not the ones the paper prints")
+if not (abs(AORD['bands'][(100, 400)] - 2.105510) < 5e-6
+        and abs(AORD['bands'][(400, 700)] - 1.904985) < 5e-6
+        and abs(AORD['bands'][(700, 1000)] - 6.702414) < 5e-6
+        and abs(AORD['bands'][(1000, 1300)] - 8.736422) < 5e-6):
+    fail.append("the ARM OF RECORD's four quarters are not where this part pins them")
+else:
+    print("\n  ⛔⛔ ** AND THE RE-POINT REDISTRIBUTES THE COMB RATHER THAN SCALING IT. **  The TOTAL "
+          f"moves {_tot * 100:+.2f} per cent")
+    print(f"     while the four quarters move {_pc[(100, 400)]:+.2f}, {_pc[(400, 700)]:+.2f}, "
+          f"{_pc[(700, 1000)]:+.2f} and {_pc[(1000, 1300)]:+.2f} per cent --")
+    print("     UP, DOWN, UP, DOWN.  *So \"the arm of record is about five per cent worse over these "
+          "bins\" hides a")
+    print("     reorganisation an order of magnitude larger than itself, and the band that moves "
+          "most is the")
+    print("     700-1000 one -- the band that survived the crossing handover, the equality scan and "
+          "the pin alike.*")
+
+_signs = [AORD['bands'][b] > NEW['bands'][b] for b in BANDS]
+if _signs != [True, False, True, False]:
+    fail.append(f"the quarters' signs are {_signs}, not the up/down/up/down this part asserts -- "
+                "the redistribution finding has changed shape")
+if not (0.048 < _tot < 0.050):
+    fail.append(f"the total moves {_tot * 100:.4f} per cent, not the +4.90 this part pins")
+if not (max(abs(v) for v in _pc.values()) > 10.0 * abs(_tot * 100)):
+    fail.append("the largest quarter move is no longer an order of magnitude above the total's, "
+                "so the redistribution claim does not hold as stated")
+if not (56.0 < _pc[(700, 1000)] < 61.0 and -16.0 < _pc[(400, 700)] < -12.5
+        and 22.0 < _pc[(100, 400)] < 25.5 and -7.5 < _pc[(1000, 1300)] < -4.5):
+    fail.append("the four per-cent moves are not where this part pins them two-sided")
+if not (2.70 < max(AORD['bands'][b] / CTL['bands'][b] for b in BANDS) < 2.80):
+    fail.append("the arm of record's worst band ratio is not the 2.75 this part pins")
 
 print()
 print("=" * 112)

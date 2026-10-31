@@ -4935,3 +4935,83 @@ what looks like one quantity. Stated here so it is not read as a contradiction.
 `…_sits_on_its_own_bao_minimum_…` is **false of the arm of record**. The second half,
 `…_while_the_controls_pays_fifteen_in_chi2_to_leave_planck`, holds **exactly**, at `$+15.058$`. A
 registered receipt's name is not this seat's to change; the docstring carries a note saying so.
+
+---
+
+## `r7647` — THE THREE HELD ROWS, CLEARED
+
+All three measured, all gated, and **one of the two figures the order quotes back to me is wrong**.
+
+### ⓵ THE ONE-CLOCK AND LINEARISED MINIMA — five sites, and the second figure does not hold
+
+Both receipts re-pointed onto the arm-of-record grids. **The grid family matters and is not the one
+`r7645` used:** `grid_oneclock_leafrec1`, `grid_licensed_leafrec1` and `refit_grid185_leafrec1` all
+sit at the **refit** point (68.57073 / 0.291246 / 0.021643 / 1.015066); only
+`refit_grid185_leafrec1_distances` is at the distances' point. Pairing that one with
+`grid_oneclock_leafrec1` would compare two backgrounds — the `cc66.72` error — so these readings use
+the refit-point family throughout, and the **control is the same nine files in every reading**, which
+is what makes the comparison like-for-like.
+
+| # | site | as printed | arm of record | verdict + proposal |
+|---|------|-----------|---------------|--------------------|
+| 1a | P15 l.135, l.992 | *"the arm's unreachable `$\chi^{2}$` falls from `$278.8$`"* / *"this arm leaves `$278.8$`"* | **276.360** | ⛔ **NOT `278.79`.** `r7647` quotes 278.79 back to me from my own linearised harness; **the harness's figure is the LICENSED NAMESAKE arm's.** Measured: the licensed namesake grid gives `278.7884238505085` and the banked namesake `278.795150010593` — so my note's `banked+LEAFREC 278.7884` was neither banked nor LEAFREC, a mislabelled row caught only because the re-point forced both numbers to be computed side by side. Two receipts agree on **276.360** by different routes (`the_licensed_rebuild…` 276.359717, `the_fit_has_the_controls_freedom…` 276.4). **Proposed: `$276.4$`.** |
+| 1b | P15 l.135, l.1984 | *"to `$184.989$`, below the control's own `$186.007$`"* | **186.135046** against the control's **186.006575** | ⛔ **THE SIGN INVERTS: it lands just ABOVE, not below** — `+0.128471` on n−5 = 180, which is **+0.0068σ**. **Proposed, as you anticipated: "level with the control's own", `$186.135$` against `$186.007$`.** The control's `186.007` is exact and unmoved. |
+| 1c | P15 l.570 | *"built with that distance on the leaf rate the arm falls below the control's own"* | — | ⛔ **Same inversion in words.** **Proposed: "draws level with the control's own".** |
+| 1d | P15 l.1984 | *"`$91$` sign changes against the control's `$87$`"* | **87 against 87** | ⛔ **They land EXACTLY on the control's.** *And the gate beside this printed 91 while passing on a condition that only asked for `> 85` — the stale-label class, now pinned.* **Proposed: "sign changes land on the control's own `$87$`".** |
+| 1e | P15 l.1981 | *"`$0.007$ per cent of a gap of `$92.8$`"* | gap **90.353**; the licensed rebuild moves the arm by **exactly 0** | ⛔ **The licensed-versus-banked distinction is SPENT on the arm of record.** `refit_grid185_leafrec1` and `grid_licensed_leafrec1` hold **bit-identical spectra** (`max|dD_l| = 0` on every leg; identical resolved configs — only their metadata differs), so "the rebuild supplies 0.007 per cent of the gap" has nothing to measure there. *Marked as spent rather than re-asserted, exactly as `r7639` ⑶ handled the 133-bin pair.* **Proposed: a gap of `$90.4$`, and the rebuild's contribution stated as unmeasurable on this arm rather than as a number.** |
+
+⚠ **AND THE TILT STORY IN THAT RECEIPT INVERTS THREE WAYS**, which is beyond what the row asked for
+but follows from the ordered re-point and so is reported:
+- the two-direction tilt and the four-parameter refit's own `n_s` shift agreed to better than `0.004`
+  on the namesake arm, which is what **licensed** reading one as the other. On the arm of record they
+  are `0.065`, `0.078` and `0.063` apart on the three grids — fifteen to twenty times that. **The
+  licence is withdrawn rather than loosened.**
+- the one-clock rebuild needed *"essentially no tilt"* (`−0.0035`); on the arm of record it needs
+  **`−0.0643`**, eighteen times it, and **more** than the other two grids.
+- the banked and licensed grids wanted `+0.03`–`+0.04`; on the arm of record both want **`−0.0385`**.
+  **The sign flips, and all three now want a red tilt with the rebuild wanting the most** — so *"the
+  tilt the fit reaches for is a property of the two-clock geometry and not of the rebuild"* does not
+  survive.
+
+### ⓶ THE QUARTERS AT l.958–959
+
+| band | control | as printed (namesake) | arm of record | change |
+|---|---|---|---|---|
+| 100–400 | 0.765826 | 1.70 | **2.105510** | **+23.84%** |
+| 400–700 | 1.436731 | 2.22 | **1.904985** | **−14.27%** |
+| 700–1000 | 2.620049 | 4.23 | **6.702414** | **+58.51%** |
+| 1000–1300 | 3.725004 | 9.29 | **8.736422** | **−5.998%** |
+| total/bin | 2.100902 | 4.19 | **4.390895** | **+4.90%** |
+
+⇒ **THE RE-POINT REDISTRIBUTES THE COMB RATHER THAN SCALING IT.** The total moves `+4.90` per cent
+while the quarters move from `−14.27` to `+58.51` — a reorganisation an order of magnitude larger
+than itself, sign alternating up/down/up/down, and the largest mover is the `700–1000` band, the one
+that survived the crossing handover, the equality scan and the pin alike. *"About five per cent worse
+over these bins" would have hidden all of it.* The control's four reproduce the printed
+`0.77 / 1.44 / 2.62 / 3.73` **exactly**, so the re-point does not reach the control.
+**Proposed: `$2.11$`, `$1.90$`, `$6.70$` and `$8.74$` against the control's four unchanged, with the
+redistribution stated — it is the more interesting fact than the total.**
+
+### ⓷ THE STENCIL CURVATURES AT l.976–979
+
+| | printed | arm of record | control | vs printed |
+|---|---|---|---|---|
+| H0 | 2527 | **2539.2609** | 1774.1123 | +0.49% |
+| Ω_m | 740 | **813.0525** | 473.0735 | +9.87% |
+| ω_b | 141 | **149.8416** | 98.3014 | +6.27% |
+| n_s | 31 | **25.9805** | 32.3186 | **−16.19%** |
+
+⌗ **Established first: the quartet was in the paper and in NO receipt.** The receipt that computes
+one-step excursions already read the arm-of-record grid and gated all eight as `all(v > 5.0)` — a
+floor no quartet of this size could fail. **The paper's four are the NAMESAKE grid's own output**,
+proved by measurement: pointing `GRIDS['cr']` at `refit_grid185` returns
+`2527.3900 / 739.6168 / 141.0245 / 31.2352`.
+⇒ **THREE DIRECTIONS STIFFEN AND THE TILT SOFTENS BY A SIXTH** — and `n_s` is the only one of the
+four on which the arm of record is **less** constrained than the control (`0.804` of it). The claim
+*"they are at a sharp minimum rather than unconstrained"* survives with room to spare (the cheapest
+of all eight is `25.98`). **Proposed: `$2539$`, `$813$`, `$150$` and `$26$`, with the tilt's
+softening named, since it is the one that moves against the others.**
+
+⌗ *The period/drift pair (309.25, −78.3) and the l.2178 control-side figures are measured as they
+stand, per your note. Nothing else is touched: no INDEX row quotes a figure this pass moves, so the
+generated appendices and the PDF are deliberately unchanged.*

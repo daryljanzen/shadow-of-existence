@@ -31284,3 +31284,119 @@ a reason to treat the sweep as uninformative — it was the ranged sweep that fo
 in the first place, and only running them properly settled what the red meant.* ⌗ Worth 69's
 consideration: `scripts/run_touched_readers.sh` could carry the Pillow note in its own header, where
 it would be read at the moment it is needed rather than here.
+
+---
+
+### `cc66.75` — `r7647` item 1: the receipts disagree with my own harness, and the harness loses
+
+Both receipts re-pointed onto the arm-of-record grids. **24 gates green** in
+`the_fit_has_the_controls_freedom…`, **13 green** in `the_licensed_rebuild…`.
+
+⛔ **THE REACHABLE NEGATIVE I REGISTERED FIRED, AGAINST ME.** `r7647` quotes `278.79` back to me as
+the banked arm's unreachable χ², because I measured it in my own linearised harness earlier in this
+campaign. **The receipts give `276.360`** — `the_licensed_rebuild…` at `276.359717` and
+`the_fit_has_the_controls_freedom…` at `276.4`, by two different routes. My prediction said: *"if a
+receipt disagrees materially, the HARNESS was wrong, the row must not land, and I say so rather than
+reconciling toward my own earlier number."* So: **the harness was wrong for this quantity and 69 must
+not land 278.79.** The paper's sentence survives — the gap to the control becomes `90.353` rather
+than `92.8`, still "about a hundred" — but the figure beside it changes.
+
+✔ **The second figure holds exactly.** The one-clock arm gives `186.135046` by the receipt's own
+route, matching the harness and the order. And it sits **`+0.128471` ABOVE** the control's
+`186.006575` — `+0.0068σ` on 180 dof — so *"falls below the control's own"* inverts to **"level
+with"**, which is what `r7647` ⑴ anticipated.
+
+**THE GRID FAMILY WAS THE TRAP AGAIN, AND IT IS NOT `r7645`'s.** All three `_leafrec1` grids sit at
+the **refit** point; only `refit_grid185_leafrec1_distances` is at the distances' point. Pairing that
+with `grid_oneclock_leafrec1` would have compared two backgrounds — `cc66.72`'s error exactly — so
+item 1 uses the refit-point family throughout.
+
+**AND EVERY ARM-OF-RECORD GRID IS ARM-ONLY, WHICH BLOCKS A NAIVE RE-POINT OUTRIGHT.** Each carries
+nine `cr_*` legs and **no `lcdm_*` leg at all**; the namesake grids carry both (18 npz, 10 of them
+`lcdm`). So swapping one path raises `FileNotFoundError: …/lcdm_base.npz`, which is exactly what both
+receipts did first. Both now resolve the grid **per arm** — the control from the namesake, where its
+legs are the only copy that exists — and that is gated as forced rather than chosen. *A consequence
+worth keeping: the control is literally the same nine files in both readings, which is what makes the
+arm's move a like-for-like comparison.*
+  ⌗ And the arm-of-record grid carries no `*.log` or `*.py`, so the onset gate could not read it the
+  way the namesake's is read. It carries something stronger: `cr_base.npz`'s RESOLVED `config`. Both
+  are now required, and that config is also what says `LEAFREC` is on — which no log line could say
+  once the default moved.
+
+**THE LICENSED-VERSUS-BANKED DISTINCTION IS SPENT ON THE ARM OF RECORD.** The two grids hold
+**bit-identical spectra** (`max|dD_l| = 0` on every leg, identical resolved configs; only metadata
+differs), so "the licensed rebuild leaves the three numbers where they were" has nothing left to
+measure there. I nearly reported the bit-identical χ² as a finding before checking — it would have
+been a tautology dressed as a measurement, the `cc66.64` class. Marked as spent instead.
+
+**AND THE TILT STORY INVERTS THREE WAYS** — the licence to read a two-direction tilt as a Δn_s fails
+on all three grids (0.063–0.078 apart against a 0.004 tolerance, so **withdrawn, not loosened**); the
+one-clock rebuild needs `−0.0643` rather than "essentially no tilt"; and the banked and licensed
+grids' demand flips sign from `+0.03`–`+0.04` to `−0.0385`, with the rebuild now wanting the most.
+
+**ONE MORE STALE LABEL CAUGHT:** a gate printed *"its crossings go to 91 against the control's 87"*
+while its condition only asked `> 85`. On the arm of record both are `87`. Now pinned to equality.
+
+⛔ **AND AN ERROR OF MINE, THREE TIMES IN A ROW:** I dropped `gate(`'s closing parenthesis while
+rewriting multi-line conditions, three patches running. `ast.parse` caught each one and nothing was
+written, so no broken file reached the tree — but the fix is a habit, not luck: **check paren balance
+on every rewritten condition before writing**, which I added to the last patch as an explicit step.
+
+**AND THE HARNESS ERROR HAS AN EXACT CAUSE, WHICH IS BETTER THAN "IT WAS WRONG".** Measured side by
+side: the licensed NAMESAKE grid gives `278.7884238505085` and the banked namesake `278.795150010593`.
+⇒ **My note's `banked+LEAFREC 278.7884` is the LICENSED NAMESAKE arm's χ² — neither banked nor
+LEAFREC.** A mislabelled row in my own records, invisible until the re-point forced both numbers to be
+computed in one run. It is now gated in the receipt as a finding rather than left as a correction in
+prose.
+
+**AND TWO GATES WENT RED ON THE TREE I HAD ALREADY PUSHED, BOTH MINE, BOTH FIXED FORWARD.**
+- `check_figures_pinned`: my re-point moved the gates off `278.795` and `278.788`, **which the paper
+  still prints** — so both were left unpinned, and a figure a citing sentence prints must fail its
+  receipt if it is wrong. The namesake arm is scored again and both are pinned, kept explicitly until
+  69 lands the arm-of-record pair. *The gate was right and I had removed a pin without noticing that
+  the prose still depended on it.* Net effect of the pass: **9 previously-unpinned figures are now
+  pinned** (baseline 1503 → 1494) — the eight quarters and the control's `186.007`.
+  ⚠ **And `--write-baseline` is LOSSY: it deleted the file's entire 14-line header**, which carried
+  `r7646+60`'s record of the 54 malformed rows and why 228 figures are baselined. Restored by hand.
+  *The next seat to run it will delete that header again; worth a line in the gate itself.*
+- `check_marker_transposition`: 3 new flags and 1 stale row, both consequences of this pass. The
+  stale `1.44` row no longer fires because item 2 now pins it. The three new ones are the quartet:
+  **it gained a computing receipt for the first time**, so the flag fires on the citation placement —
+  the sentence printing it cites a different receipt from the one that now carries it. Adjudicated as
+  candidates and routed, not adjudicated away.
+
+**AND A THIRD CI RED I NEVER RAN: `check_quote_pins`.** CI's `fast` job on `cfc662751` named three
+gates, not two — `check_quote_pins check_figures_pinned check_marker_transposition`. **`turn_gates.sh`
+excludes `check_quote_pins` by name**, so my pre-push batch never asks it: the same shape as the
+`run_touched_readers` gap earlier today, and the second time in one session that the thing I did not
+run is the thing that failed.
+
+It had minted **one** new key — the `r7647` ⑶ capture of `sec:refit-bound`'s quartet — and its own
+text named the defect precisely: *"a gate that asserts another seat's sentence … fails on SUCCESS when
+the sentence said something was open."* **My first form of that gate did exactly that**: it compared
+the measured quartet with the PRINTED one, so the day 69 lands the arm-of-record figures the
+comparison would invert and the receipt would go red on a correct landing. Repaired in two parts, and
+adjudicated `ALT / ALT-OK`:
+1. the substantive claim — three directions stiffen, the tilt softens — is now made against the
+   **CONTROL**, which does not move;
+2. the paper state is tested as a **disjunction** of the two legitimate states (the namesake's
+   `2527/740/141/31`, which it carries now, or the arm of record's `2539/813/150/26`, which 69 lands),
+   so the gate passes in either and fails only on a THIRD set, which would be drift rather than a
+   landing.
+
+⚠ **AND THE RATCHET HAS A BLIND SPOT THAT HAPPENS TO FAVOUR ME, SO IT GOES ON THE RECORD.** It
+detected the literal I passed INLINE to `re.search(...)` and did **not** detect the four patterns
+`cc66.71` added to `…the_1p57_has_no_parameter_address…`, because those live as values in a `PAT`
+dict and reach the matching call through a variable. None of the four is in
+`quote_pin_baseline.tsv` (checked: zero rows for that receipt), and `check_quote_pins` never ran on
+`cc66.71`'s head because my own next push cancelled that run. The four are:
+`"moves by \$([0-9.]+)\\%\$ and its matter density by \$([0-9.]+)\\%\$"`,
+`"sits \$([0-9.]+)\$ of a standard deviation from"`,
+`"at a cost of \$([0-9.]+)\$ in \$\\chi\^\{2\}\$"` and
+`"arm prefers \$([0-9.]+)\$ against the control's \$([0-9.]+)\$, bluer by \$([0-9.]+)\$"`.
+⇒ **I am not adding baseline rows for them**, because the gate also fails on an adjudication that
+describes no live key, so rows the instrument cannot see would redden it for a second reason. Routed
+instead: the detector should follow a literal held in a dict or a variable, and until it does, four of
+this seat's quote pins are unratcheted. *The same "fails on success" question applies to all four —
+PART 5 of that receipt is designed to go red when 69 lands the prose, which is deliberate there and
+declared, but it is the sort of thing this ratchet exists to make someone say out loud.*
