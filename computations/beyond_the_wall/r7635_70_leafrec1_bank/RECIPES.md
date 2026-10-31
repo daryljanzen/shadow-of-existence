@@ -14,8 +14,8 @@ and `corpus/banked_config_manifest.json`.
 | r4494 leaf/stack × ISW on/off | `ARM=cr LMAXL=1300 LSTEP=4` line of sight, `STACKPERT=1`, `NOISW=1` | the files' own keys; C62 receipt | same |
 | r6784 hier / noCRIC / los, r6794 | F178 + `CRH0=68.62 CROM=0.2973 ZSTART=3e7` (± `CRIC=branchpoint`; los drops HIER); r6794 `NK=900 KBATCH=150 KCONT=1`, six `KSLICE` of 450 summed | README:47-50 | same, on the arm of record |
 | cc66_cr_x_h686/h6862_pol, h686_L2000 | `HIER=1 LSTEP=2 LMAXL=1300` (2000) at CRH0 68.60 / 68.62, CROM 0.2973, `ZSTART=3e7 LEAFSCALES=1` | the anomalous-driving receipt:37-38; the 133-bin receipt | one run for both pol names: they differed only in CRH0 |
-| cc66_refit_verify | `HIER=1 LSTEP=8 LMAXL=1300` at the cc66 refit minimum | `refit_grid/launch.sh` | same |
-| cc66_cr_x_lstep1 | **none recorded** (FOR_66_FROM_70.md:6250); default background, `LMAXL=1300 LSTEP=1` | — | ⚠ low confidence: `HIER=1 LSTEP=1 LMAXL=1300` |
+| cc66_refit_verify | `HIER=1 LSTEP=8 LMAXL=1300 ZSTART=3e7 LEAFSCALES=1` at EXACTLY `CRH0=68.6077 CROM=0.2967 WBH2=0.0217 NS=0.9949` (60, r7640: the quoted digits are the point) | `refit_grid/launch.sh` | same, on the arm of record |
+| cc66_cr_x_lstep1 | **recovered by 60 (r7640):** the built-in default point with `ZSTART=3e7`, onset not solved, `LMAXL=1300 LSTEP=1` (its three scales reproduce to zero); the path switches remain unrecorded | r7640_60 RESULT.md | `HIER=1 LSTEP=1 LMAXL=1300` on the arm of record |
 
 **What could not be held.** The c54/item38 files were made at `KFAC=1` (k_max = LMAXL/D_M), which today's alias gate
 refuses; they are rebuilt at the default `KFAC=2`. Their point was the built-in default with the onset solved to
@@ -34,3 +34,13 @@ solved from the arm.  Per-file map:
 | `r6911_source_lcdm` | `r6911_source_lcdm_leafrec1` | `Dl_swap` and `xswap` only (`SRCXS` 1.004492152 → 1.012870613); the control's own `D_l` identical to 0 |
 
 The same holds for r6919's control `viswap` (the arm's visibility width, 43.591 → 43.957), banked at r7639.
+
+**⚠ THE LEAFREC DEFAULT MOVED (60, r7640).** The instrument's `LEAFREC` defaults to 1 since `cc66.75`, and
+`__SWITCHES__` records only what the environment set.  So **every command in this table banked before cc66.75
+that omits `LEAFREC` — all of them: the c54/item38/r4494 rows, r6784/r6794, cc66_cr_x_*, cc66_refit_verify, and
+r6885–r6959 — run verbatim today rebuilds the leafrec1 arm and not its namesake.** To rebuild a namesake, add
+`LEAFREC=0`.  (`LEAFREC` is invisible to the background, so the three scales cannot tell; only the source can.)
+None of the 36 namesakes carries the `config` key that would have recorded it; every `_leafrec1` file does.
+
+**h686 / h6862 / h686_L2000 / refit_verify sat at `LEAFSCALES=1` (60, r7640).**  This table had it right;
+MANIFEST_old.json's `held` said 0 and is corrected (and the four files' `manifest` keys with it).

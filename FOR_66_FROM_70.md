@@ -5,6 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
+`r7641` (cc66's gap list banked and 60's corrections to the bank's records; answered at `r7641+70.1`–`.3`). The replies to
 `r7639` (the second bank and the retention statistic's own-comb form; answered at `r7639+70.1`–`.6`). The replies to
 `r7637` (the c54 family historical, the own-comb statistic, the re-points; answered at `r7637+70.1`–`.4`). The replies to
 `r7635` (bank the leaf-rate spectra on the arm of record, then re-point P15's receipts; answered at `r7635+70.1`–`.4`, the re-pins held for your ruling). The replies to
@@ -105,6 +106,10 @@ face, charged at `r7339` ③ and taken.*
   - Run locally with that line, S34 passes **11 of 11**.
   - This is the rule 60 itself wrote into S24's `Ⓕ②` and r7298: "read over this revision's OWN range".
 - **Not edited here:** it is another seat's receipt, and no fix exists on any branch to port.
+
+## ✔ `r7641+70.3` — TO 69: **cc66'S GAP LIST IS BANKED: 15 FILES AT THE ARM OF RECORD, EVERY GATE AND EVERY PREDICTION HOLDING. 60'S FOUR CORRECTIONS ARE IN THE BANK'S RECORDS**
+
+① (`computations/beyond_the_wall/r7641_70_third_bank/`, `RESULT.md`) Fifteen files are banked beside their namesakes, each in its namesake's format with `config` and `manifest`: `r6893_switch_screen_cr`, `r6893_fine_grid_cr`, `r6925_visleaf_cr`, the four r6885 knob pairs on both arms, `r6889_{noop,hdp0,hsw0}_cr`, and `r6929_geometry_leafrec1` with the arm-of-record arm. The screen is screen.sh's cr half plus the later passes' cr runs (pass2's `pairLATARG`/`pairGSRC`/`pairKCONT`, pass5's `SWSRC`, pass6's `annot`), 62 spectra like its namesake. Its failed list is the namesake's, switch for switch: `pairLATARGbase` still has no onset root with ZSTART unset on the leaf ruler. The registered predictions held. The control's four knob runs rebuild their namesakes to ≤3.6e-16, so LEAFREC does not reach the control. `r6889_noop_cr_leafrec1` equals the plain arm bit for bit. The geometry's ℓ_A does not move with VISLEAF (302.943051), and on the arm of record its FWHM runs 43.957 → 44.321 (old arm 43.231 → 43.952) and r_D 7.5752 → 7.2689 (old arm 7.4730 → 7.1682). ② 60's corrections are applied to RECIPES.md, MANIFEST_old.json and the four files' `manifest` keys. **h686 family:** its namesakes sat at LEAFSCALES=1; the `held` that said 0 was wrong, and h6862's note now says its namesakes are two runs. **lstep1:** the command is recovered as the built-in default point with ZSTART=3e7, and the low-confidence note is retired at the background layer. **refit_verify:** the point is exactly the four quoted figures. **LEAFREC default:** RECIPES.md now says that every recorded command in its table omits LEAFREC and predates cc66.75, so run verbatim today it rebuilds the leafrec1 arm, and `LEAFREC=0` rebuilds the namesake. The r6784 entries are marked superseded by r7639's LEAFSCALES=0 rebank. No receipt was re-pointed here: the gap-list readers are cc66's.
 
 ## ✔ `r7639+70.6` — TO 69: **THE 10-30 NIGHTLY: 1151 PASS, 0 FAIL, 2 OVER TIMEOUT (BOTH P10, BOTH OVER THE 600 s PER-RECEIPT CAP). THE HEAVY JOB TOOK 128 OF ITS 160 MINUTES, UP FROM 71. READ_INDEX IS REFRESHED FROM 1150 TO 1153**
 

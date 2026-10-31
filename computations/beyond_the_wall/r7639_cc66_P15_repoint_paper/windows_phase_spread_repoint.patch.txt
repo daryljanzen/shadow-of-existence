@@ -1,0 +1,99 @@
+diff --git a/receipts/P15_CR_cosmology/P15_the_windows_phase_spread_is_nearly_equal_because_the_visibility_widens_as_the_leaf_clock_slows.py b/receipts/P15_CR_cosmology/P15_the_windows_phase_spread_is_nearly_equal_because_the_visibility_widens_as_the_leaf_clock_slows.py
+index b275ac443..1b9fa0b77 100644
+--- a/receipts/P15_CR_cosmology/P15_the_windows_phase_spread_is_nearly_equal_because_the_visibility_widens_as_the_leaf_clock_slows.py
++++ b/receipts/P15_CR_cosmology/P15_the_windows_phase_spread_is_nearly_equal_because_the_visibility_widens_as_the_leaf_clock_slows.py
+@@ -167,8 +167,30 @@ if FAILS:
+         print(f"  - {f}")
+     raise SystemExit(1)
+ 
+-A = {t: np.load(os.path.join(SP, f'r6959_eta_{t}.npz')) for t in ('lcdm', 'cr')}
+-F = {t: np.load(os.path.join(SP, f'r6941_fine_{t}.npz')) for t in ('lcdm', 'cr')}
++sys.path.insert(0, os.path.join(ROOT, 'computations', 'beyond_the_wall',
++                                'r7637_70_own_comb_statistic'))
++import own_comb as OCB                                                                 # noqa: E402
++
++# ** r7639 ⑴ -- THE ARM OF RECORD, AND THE CARRY. **  The measured excess is
++#   `band_std(arm)/band_std(control)`, an arm-vs-control comb-band ratio, so the arm is carried onto
++#   the control's comb coordinate before the bands are cut.  ⛔ *Uncarried on this arm the row BEATS,
++#   and every share below is divided by it -- the per-band closures read 24, 53, 15, 17 and 101 per
++#   cent on the raw grid, which is the alternation and not a channel changing its mind.*
++AOR = {'lcdm': 'r6941_fine_lcdm', 'cr': 'r6941_fine_cr_leafrec1'}
++AETA = {'lcdm': 'r6959_eta_lcdm', 'cr': 'r6959_eta_cr_leafrec1'}
++NSKF = 'r6941_fine_cr'                         # the namesake arm, read for the comparison only
++_LOADED = []
++
++
++def _bank(tag):
++    _LOADED.append(tag)
++    return np.load(os.path.join(SP, tag + '.npz'))
++
++
++A = {t: _bank(AETA[t]) for t in ('lcdm', 'cr')}
++F = {t: _bank(AOR[t]) for t in ('lcdm', 'cr')}
++FN = _bank(NSKF)
++_QE_NSK = np.load(os.path.join(SP, 'r6959_eta_cr.npz'))['q_edges']
+ T = {t: np.load(os.path.join(SP, f'r6959_{t}_lcdm.npz')) for t in TAP}
+ 
+ QE = A['cr']['q_edges']
+@@ -333,18 +355,57 @@ check("the ISW is under one per cent of the window's power on both arms, so the
+ # ==================================================================================================
+ print("\nPART 2 -- ⓵ᵇ THE PREDICTION, AND ⓵ᶜ's REFUTATION CONDITIONS APPLIED TO IT.")
+ print("-" * 100)
++def _comb(d):
++    q = d['ls'].astype(float) / float(d['l_A'])
++    T, ph, _amp = OCB.comb(q, np.asarray(d['Dl'], float))[1:]   # (env, T, phase, amp)
++    return q, T, ph
++
++
++def _carried(d, Tc, Pc):
++    """⛭ r7639: the arm on the CONTROL's comb coordinate, its envelope window widened to one of its
++    OWN periods -- `r7637+70`'s carry"""
++    q, Ta, pa = _comb(d)
++    o = osc(q, np.asarray(d['Dl'], float), Ta / Tc)
++    return Tc * (q / Ta + ((pa - Pc + np.pi) % (2 * np.pi) - np.pi) / (2 * np.pi)), o
++
++
+ Q = {t: F[t]['ls'].astype(float) / float(F[t]['l_A']) for t in F}
+-O = {t: osc(Q[t], F[t]['Dl']) for t in F}
+-C0 = {t: band_std(Q[t], O[t]) for t in F}
++_, _TC, _PC = _comb(F['lcdm'])
++O = {'lcdm': osc(Q['lcdm'], np.asarray(F['lcdm']['Dl'], float))}
++_QA, O['cr'] = _carried(F['cr'], _TC, _PC)
++C0 = {'lcdm': band_std(Q['lcdm'], O['lcdm']), 'cr': band_std(_QA, O['cr'])}
+ MEAS = C0['cr'] / C0['lcdm']
++_QN, _ON = _comb(FN)[0], osc(_comb(FN)[0], np.asarray(FN['Dl'], float))
++MEAS_NSK = band_std(_QN, _ON) / C0['lcdm']     # the namesake arm, uncarried, as `cc66.46` read it
++MEAS_RAW = band_std(Q['cr'], osc(Q['cr'], np.asarray(F['cr']['Dl'], float))) / C0['lcdm']
++check("⛭ AND THE BAND EDGES ARE A DEFINITION AND NOT A MEASUREMENT: the arm-of-record eta bank's "
++      "`q_edges` are BIT-IDENTICAL to the namesake's, and the banks read are the ones the header names",
++      np.asarray(QE).shape == np.asarray(_QE_NSK).shape
++      and np.asarray(QE).tobytes() == np.asarray(_QE_NSK).tobytes()
++      and _LOADED == ['r6959_eta_lcdm', 'r6959_eta_cr_leafrec1', 'r6941_fine_lcdm',
++                      'r6941_fine_cr_leafrec1', 'r6941_fine_cr'],
++      f"{len(QE)} edges byte-for-byte equal; read {_LOADED}")
++check("⛭ AND THE SAME CODE REPRODUCES `cc66.46`'s PUBLISHED ROW ON THE NAMESAKE ARM, which is what "
++      "shows the re-point moved the ARM and not the statistic.  *`cc66.46` cannot be re-pointed -- it "
++      "reads two gap banks and one whose arm is a KEY -- so its published row stays that arm's*",
++      np.allclose(MEAS_NSK, [1.0215, 1.0574, 1.0519, 1.0606, 1.0748, 1.0659, 1.0762], atol=5e-4),
++      "  ".join(f"{x:.4f}" for x in MEAS_NSK))
++check("⛔ AND THE CARRY IS WHY EVERY SHARE BELOW IS READABLE: on the raw grid the same arm BEATS -- "
++      "band 6's excess collapses against band 5's between two bands above 1.10 -- and every closure "
++      "below is a share OF that row",
++      (MEAS_RAW[5] - 1) < 0.3 * (MEAS_RAW[4] - 1) and (MEAS[5] - 1) > 0.8 * (MEAS[4] - 1),
++      "raw " + "  ".join(f"{x:.4f}" for x in MEAS_RAW)
++      + f"; band 6 at {100 * (1 - (MEAS_RAW[5] - 1) / (MEAS_RAW[4] - 1)):.0f} per cent below band 5 "
++      f"raw against {100 * (1 - (MEAS[5] - 1) / (MEAS[4] - 1)):.0f} carried")
+ R1 = DD['cr'] / DD['lcdm']
+ print("  band    predicted R1 = D_cr/D_lcdm    [R1, R1^2]           measured excess")
+ for b in range(len(QC)):
+     lo, hi = sorted((R1[b], R1[b] ** 2))
+     print(f"  q={QC[b]:.2f}        {R1[b]:.5f}              [{lo:.5f}, {hi:.5f}]      {MEAS[b]:.5f}")
+ check("the measured excess is this campaign's own, recomputed here from `r6941_fine_*` rather than "
+-      "quoted -- and it reproduces `cc66.46`'s seven band ratios",
+-      np.allclose(MEAS, [1.0215, 1.0574, 1.0519, 1.0606, 1.0748, 1.0659, 1.0762], atol=5e-4),
++      "quoted -- and it reproduces the ARM-OF-RECORD row that `r7639+cc66.23` measured and that "
++      "`r7637+70` independently computed",
++      np.allclose(MEAS, [1.0295, 1.0595, 1.0610, 1.0639, 1.0777, 1.0728, 1.0795], atol=5e-4),
+       "  ".join(f"{x:.4f}" for x in MEAS))
+ 
+ # ---- R5, the sign -------------------------------------------------------------------------------

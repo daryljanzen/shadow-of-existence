@@ -19,9 +19,9 @@ OBJECT UNDER TEST -- `PO-47`'s successor, routed at `r6879` alongside the figure
 WHAT THIS PROBE FINDS.
 
 ** THE SWING IS REAL AND IT IS MOSTLY THE CONTROL'S. **  Whitened against the full covariance, the
-cosine between this arm's residual vector and the control's is +0.855, and ** 73.1 per cent of the
+cosine between this arm's residual vector and the control's is +0.8476, and ** 71.8 per cent of the
 arm's chi^2 lies along the control's own residual direction **.  Projecting that direction out
-leaves 76.2 of 282.96.  On the order's own criterion that part is the TRANSFER'S and not the
+leaves 80.8 of 286.89.  On the order's own criterion that part is the TRANSFER'S and not the
 construction's -- the same distinction that has decided four questions in this sector.
 
 ** AND THE BAND MEANS ARE A THIRD OF THE QUICK RENDER'S, WITH HALF OF THE DIFFERENCE DEMONSTRABLE. **
@@ -35,15 +35,15 @@ accounts for about half the inflation **, and the rest is in the render rather t
 ** AND WHAT IS LEFT IS POSITION, NOT AMPLITUDE AND NOT TILT -- BUT IT IS SMALL. **  Against the same
 bins, fitting one further parameter on top of the amplitude:
 
-      peak-position rescale    best eps = -7.5e-4   dchi^2 = +4.68    <- the largest
-      damping-shape change     best fac = +1.7e-2   dchi^2 = +1.36
-      tilt  dn_s               best     = -1.3e-3   dchi^2 = +0.09    <- nothing
+      peak-position rescale    best eps = +5.0e-4   dchi^2 = +1.67    <- the largest, but only just
+      damping-shape change     best fac = +1.5e-2   dchi^2 = +1.12
+      tilt  dn_s               best     = -2.5e-3   dchi^2 = +0.43
 
 and on the CONTROL the position direction buys +0.00 while the damping buys +0.30.  ** So the
 position/spacing direction is the only one of the three that is the construction's, and the tilt is
-exhausted -- the refit already spent it, a 1% tilt costing +8.6 in chi^2. **  But eps = -7.5e-4 is
-0.075 per cent in ell, about 0.8 multipoles at the fourth peak, consistent with the +2.0 measured
-there at `r6875+cc66.32`; and dchi^2 = 4.7 of 283 is ** under two per cent of the misfit **.
+exhausted -- the refit already spent it, a 1% tilt costing +13.4 in chi^2. **  But eps = +5.0e-4 is
+0.05 per cent in ell, about 0.6 multipoles at the fourth peak, consistent with the +2.0 measured
+there at `r6875+cc66.32`; and dchi^2 = 1.67 of 286.89 is ** under ONE per cent of the misfit **.
 
 ** SO THE HONEST DECOMPOSITION IS: three quarters shared with the control and therefore the
 transfer's; of the remaining quarter, a position/spacing mismatch that is the construction's but
@@ -57,7 +57,7 @@ WHAT IS CLAIMED.
      reproduce the refit's own chi^2 exactly: 186.51 (1.008/bin) and 292.42 (1.581/bin) over the
      full 185 bins -- so the pipeline here is the refit's and not a new one.
  (2) On the figure's 179-bin set (ell <= 1900, the cut the shifted-model tests need), 177.88
-     (0.994/bin) and 282.96 (1.581/bin).
+     (0.994/bin) and 286.89 (1.603/bin).
  (3) Band means in sixths, on diagonal errors and whitened, for both arms, with the rms growing
      with ell as the order reports.
  (4) The whitened cosine is +0.855 and the shared fraction 73.1%, leaving 76.2 of 282.96.
@@ -119,7 +119,12 @@ RATIO = np.ones_like(_le)
 _m = _un > 0
 RATIO[_m] = _le[_m] / _un[_m]
 
-arm = lambda t: (lambda d: (d['ls'], d['Dl']))(np.load(os.path.join(SP, f'cc66_r185_verify_{t}.npz')))
+# ** r7641 ⑶ -- THE ARM OF RECORD.  The statistic is a chi^2 improvement from admitting one
+#   parameter -- a likelihood quadratic form -- so `r7637+70`'s carry DOES NOT APPLY (class 3, as at
+#   `r7639+cc66.17`): there is no comb-band ratio for a period mismatch to straddle.  The arm's verify
+#   bank is at its OWN refit minimum (68.57073/0.291246/0.021643/1.015066), not the namesake's re-run.
+_AOR = {'lcdm': 'cc66_r185_verify_lcdm', 'cr': 'cc66_r185_verify_cr_leafrec1'}
+arm = lambda t: (lambda d: (d['ls'], d['Dl']))(np.load(os.path.join(SP, _AOR[t] + '.npz')))
 
 
 def mb_of(ls, Dl, eps=0.0, dns=0.0, fac=0.0, lD=2094.2, l0=700.0):
@@ -137,7 +142,10 @@ C185 = COV[np.ix_(K185, K185)]
 F185 = np.linalg.inv(C185)
 D185 = X_DATA[K185]
 full = {}
-for t, want in (('lcdm', 186.51), ('cr', 292.42)):
+# ⛭ r7641 ⑶: the arm's figure is the ARM OF RECORD's refit chi^2, independently reproduced by
+#   `r7641_cc66_rulings/lensed_pair_on_the_arm_of_record.py`; the namesake's 292.42 is printed beside
+#   it so the move is visible as the ARM moving and not the pipeline changing.
+for t, want in (('lcdm', 186.51), ('cr', 297.67)):
     mb = mb_of(*arm(t))[K185]
     A = float(mb @ F185 @ D185 / (mb @ F185 @ mb))
     r = A * mb - D185
@@ -145,9 +153,18 @@ for t, want in (('lcdm', 186.51), ('cr', 292.42)):
     full[t] = c2
     print(f"    {t:5s}  chi2 = {c2:8.2f} over {int(K185.sum())} bins = {c2/int(K185.sum()):.3f}/bin "
           f"  (refit reported {want})")
+_nsk_mb = CS.bin_spectrum(*(lambda d: (d['ls'], d['Dl'] * np.interp(d['ls'], LG, RATIO)))(
+    np.load(os.path.join(SP, 'cc66_r185_verify_cr.npz'))))[K185]
+_nsk_A = float(_nsk_mb @ F185 @ D185 / (_nsk_mb @ F185 @ _nsk_mb))
+_nsk_c2 = float((lambda r: r @ F185 @ r)(_nsk_A * _nsk_mb - D185))
+print(f"    and the NAMESAKE arm in the same pipeline: chi2 = {_nsk_c2:8.2f} = "
+      f"{_nsk_c2 / int(K185.sum()):.3f}/bin  (the refit reported 292.42)")
 check("the banked spectra reproduce the refit's own chi^2 to 0.05 -- so this is the refit's "
-      "pipeline and not a new one",
-      abs(full['lcdm'] - 186.51) < 0.05 and abs(full['cr'] - 292.42) < 0.05 and int(K185.sum()) == 185)
+      "pipeline and not a new one.  ⛭ r7641 ⑶: the arm's figure is the ARM OF RECORD's own refit "
+      "minimum at 297.67, and the SAME pipeline still returns the namesake arm's 292.42, so what "
+      "moved is the arm and not the pipeline",
+      abs(full['lcdm'] - 186.51) < 0.05 and abs(full['cr'] - 297.67) < 0.05
+      and abs(_nsk_c2 - 292.42) < 0.05 and int(K185.sum()) == 185)
 
 # ---------------------------------------------------------------------------------
 print("\nPART 2 -- THE BAND MEANS, THREE WAYS.")
@@ -216,6 +233,7 @@ print(f"    what is left once that direction is projected out : {rem:.1f} of {wc
 check("** THREE QUARTERS OF THE ARM'S RESIDUAL LIES ALONG THE CONTROL'S **, so on the order's own "
       "criterion it is the transfer's and not the construction's",
       frac > 0.70 and cosv > 0.84, f"{100*frac:.1f}% at cos {cosv:+.3f}")
+CUTS = []
 for lo, hi in ((100, 1996), (100, 1500), (200, 1900)):
     k = np.isfinite(mb_of(*arm('lcdm'))) & (LC >= lo) & (LC <= hi)
     cv = COV[np.ix_(k, k)]
@@ -228,6 +246,7 @@ for lo, hi in ((100, 1996), (100, 1500), (200, 1900)):
         a = float(m @ fi @ dd / (m @ fi @ m))
         ws.append(li @ (a * m - dd))
     f2 = float((ws[1] @ ws[0]) ** 2 / ((ws[0] @ ws[0]) * (ws[1] @ ws[1])))
+    CUTS.append(100 * f2)
     print(f"    bin cut {lo}-{hi}: shared fraction {100*f2:.1f}%")
 k2 = np.isfinite(mb_of(*arm('lcdm'))) & (LC >= 200) & (LC <= 1900)
 cv2 = COV[np.ix_(k2, k2)]
@@ -269,24 +288,85 @@ for t in ('lcdm', 'cr'):
         i = int(np.nanargmin(v))
         best[t][key] = (float(g[i]), float(base - v[i]))
         print(f"    + {lab:26s} best {g[i]:+10.5f}   dchi2 = {base - v[i]:+7.2f}")
-check("** ON THE ARM THE POSITION DIRECTION IS THE LARGEST OF THE THREE **, three times the damping "
-      "and fifty times the tilt",
-      best['cr']['eps'][1] > 2 * best['cr']['fac'][1] and best['cr']['eps'][1] > 10 * best['cr']['dns'][1],
-      f"eps {best['cr']['eps'][1]:+.2f}, fac {best['cr']['fac'][1]:+.2f}, dns {best['cr']['dns'][1]:+.2f}")
+# ⛔ r7641 ⑶: as written this said the position direction is "three times the damping and fifty
+#   times the tilt" -- multiples read off the NAMESAKE arm's 4.68/1.36/0.09.  On the arm of record it
+#   is 1.67/1.12/0.43, so position still LEADS but by 1.5 and 3.9 rather than 3 and 50.  ⇒ *The claim
+#   that survives is the ORDER of the three and not the size of the lead, which is what `r7641` ⑶'s
+#   own wording says: "position leads amplitude, tilt and damping, though not by much".*
+check("** ON THE ARM THE POSITION DIRECTION LEADS THE OTHER TWO, THOUGH NOT BY MUCH **: it is the "
+      "largest of the three on the arm of record at 1.5 times the damping and 3.9 times the tilt, "
+      "where on the namesake arm it led by 3 and 50 -- so the ORDER is the durable claim and the "
+      "size of the lead is the arm's",
+      best['cr']['eps'][1] > best['cr']['fac'][1] > best['cr']['dns'][1] > 0
+      and best['cr']['eps'][1] / best['cr']['fac'][1] < 2.0,
+      f"eps {best['cr']['eps'][1]:+.2f}, fac {best['cr']['fac'][1]:+.2f}, dns "
+      f"{best['cr']['dns'][1]:+.2f} -- lead of {best['cr']['eps'][1]/best['cr']['fac'][1]:.1f}x "
+      f"and {best['cr']['eps'][1]/best['cr']['dns'][1]:.1f}x")
 check("** AND ON THE CONTROL IT BUYS NOTHING **, so the position piece is the construction's rather "
       "than shared",
-      best['lcdm']['eps'][1] < 0.2 and best['cr']['eps'][1] > 3.0,
+      # ⛔ r7641 ⑶: the arm limb was `> 3.0`, calibrated to the namesake's 4.68, and it FAILED at
+      # 1.67 while the clause it states -- that the CONTROL buys nothing -- stayed true.  That is the
+      # `cc66.21` class: a true claim in a form that is an accident of the arm it was measured on.
+      # ⇒ The form is restated as the thing the claim is about -- the control's gain against the
+      # arm's -- and not as an absolute size the arm happens to have.
+      best['lcdm']['eps'][1] < 0.2 and best['cr']['eps'][1] > 10 * max(best['lcdm']['eps'][1], 0.05),
       f"control {best['lcdm']['eps'][1]:+.2f} against the arm's {best['cr']['eps'][1]:+.2f}")
 check("the TILT is exhausted -- the refit already spent it, and a one-per-cent tilt costs chi^2 "
       "rather than buying it",
       best['cr']['dns'][1] < 0.5 and chi2_mod('cr', dns=0.01) - chi2_mod('cr') > 5,
       f"best dchi2 {best['cr']['dns'][1]:+.2f}; dn_s = +0.01 costs "
       f"{chi2_mod('cr', dns=0.01) - chi2_mod('cr'):+.1f}")
-check("** but the position piece is SMALL **: eps = -7.5e-4 is 0.075 per cent in ell, and dchi^2 = "
-      "4.7 of 283 is under two per cent of the misfit -- so it is not the explanation either",
-      best['cr']['eps'][1] / store['cr']['c2'] < 0.02,
+check("** but the position piece is SMALL **: on the arm of record eps = +5.0e-4 is 0.05 per cent "
+      "in ell, under a multipole at the fourth peak, and dchi^2 = 1.7 of 287 is under ONE per cent of "
+      "the misfit -- where on the namesake arm it was 4.7 of 283, under two -- so it is not the "
+      "explanation either",
+      best['cr']['eps'][1] / store['cr']['c2'] < 0.01
+      and abs(best['cr']['eps'][0]) * 1130 < 1.0,
       f"{100*best['cr']['eps'][1]/store['cr']['c2']:.1f}% of the misfit; "
       f"eps = {best['cr']['eps'][0]:.2e} is {abs(best['cr']['eps'][0])*1130:.1f} in ell at the fourth peak")
+
+# ⛔ r7641 ⑶: AND THE SIX FIGURES THE INDEX ROW PRINTS GET A REAL NUMERIC COMPARISON, not a literal
+#   inside a string.  Baselining them instead would have taken the unpinned ratchet from 1380 to 1381
+#   -- widening it to fit the work, which is the opposite of what it is for.
+_P_FRAC, _P_REM, _P_C2 = 100 * frac, rem, float(wc @ wc)
+_P_PCT = 100 * best['cr']['eps'][1] / store['cr']['c2']
+check("⛭ AND EVERY FIGURE THIS RECEIPT'S INDEX ROW PRINTS IS PINNED AS A NUMBER: the shared fraction "
+      "71.8 per cent, what the projection leaves at 80.8 of 286.9, the bin-cut range 70.9 to 72.7, "
+      "and the position piece at 0.58 per cent of the misfit -- each within half a printed digit",
+      abs(_P_FRAC - 71.8) < 0.05 and abs(_P_REM - 80.8) < 0.05 and abs(_P_C2 - 286.9) < 0.05
+      and abs(min(CUTS) - 70.9) < 0.05 and abs(max(CUTS) - 72.7) < 0.05
+      and abs(_P_PCT - 0.58) < 0.005,
+      f"frac {_P_FRAC:.1f}%, leaves {_P_REM:.1f} of {_P_C2:.1f}, cuts "
+      f"{min(CUTS):.1f}-{max(CUTS):.1f}%, position {_P_PCT:.2f}% of the misfit")
+
+# ⛭⛭ ** r7641 ⑶: THE HEADER'S FIGURES ARE TIED TO THE COMPUTATION, because re-pointing moved NINE
+#   of them and NOT ONE was gated -- they were prose, and prose does not red.  The same shape
+#   `r7641+cc66.28` found in `the_monopole_zero_point` an hour earlier; it is not a one-off. **
+_DOC = open(os.path.abspath(__file__), encoding='utf-8').read().split(chr(34) * 3)[1]
+_TIED = [
+    ("the whitened cosine", "+0.8476", cosv, 5e-5),
+    ("the shared fraction", "71.8 per cent", 100 * frac, 5e-2),
+    ("what the projection leaves", "80.8 of 286.89", rem, 5e-2),
+    ("the arm's amplitude-only chi^2", "286.89 (1.603/bin)", float(wc @ wc), 5e-3),
+    ("the position rescale's dchi^2", "+1.67", best['cr']['eps'][1], 5e-3),
+    ("the damping's dchi^2", "+1.12", best['cr']['fac'][1], 5e-3),
+    ("the tilt's dchi^2", "+0.43", best['cr']['dns'][1], 5e-3),
+    ("what a one-per-cent tilt costs", "+13.4", chi2_mod('cr', dns=0.01) - chi2_mod('cr'), 5e-2),
+    ("the rescale in multipoles at the fourth peak", "0.6 multipoles",
+     abs(best['cr']['eps'][0]) * 1130, 5e-2),
+]
+_BAD = []
+for _what, _lit, _val, _tol in _TIED:
+    _num = float(_lit.replace('+', '').split(' ')[0].split('(')[0])
+    if _lit not in _DOC or abs(abs(_val) - abs(_num)) > _tol:
+        _BAD.append(f"{_what}: header {_lit!r} against computed {_val:.4f}"
+                    + ("" if _lit in _DOC else " [LITERAL ABSENT]"))
+check("⛭⛭ AND EVERY FIGURE THIS FILE'S HEADER STATES IS COMPARED WITH THE COMPUTATION RATHER THAN "
+      "PRINTED BESIDE IT -- the cosine, the shared fraction, what the projection leaves, the arm's "
+      "own chi^2, all three single-parameter gains, the tilt's cost and the rescale in multipoles.  "
+      "⛔ *Re-pointing moved nine of them and none was gated: a figure a receipt prints but does not "
+      "COMPARE is not pinned*",
+      not _BAD, "; ".join(_BAD) if _BAD else "9 header figures tied to the computation")
 
 # ---------------------------------------------------------------------------------
 print("\nPART 5 -- THE FIGURE'S OWN NUMBERS, RECOMPUTED AND GATED SO THE TWO CANNOT DRIFT.")

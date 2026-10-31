@@ -19,17 +19,22 @@ whose amplitude-only limit ($\Delta=0$) is $\tfrac{A_c}{\sqrt2}\lvert r-1\rvert$
 ($r=1$) is $\tfrac{A_c}{\sqrt2}\,2\lvert\sin(\Delta/2)\rvert$.  ** The closed form reproduces the
 difference's own measured comb amplitude to $0.00\%$ pointwise, so the gate passes exactly. **
 
-⇒ *** AND THE ANSWER IS AMPLITUDE. ***  The amplitude-only term keeps its sign at **every** window
-half-width and tracks the full statistic ($-0.227$ to $-0.260$ against BOTH's $-0.204$ to $-0.236$); at
-band 1 it supplies $0.958$ of the statistic against phase's $0.284$.  ** So the surviving step is a
-WEAKENING of the first acoustic cycle, not a DISPLACEMENT of it, and the row is not reframed. **
+⇒ *** AND THE ANSWER IS AMPLITUDE ON THE SIGN. ***  The amplitude-only term keeps its sign at
+**every** window half-width ($-0.154$ to $-0.179$ against BOTH's $-0.181$ to $-0.280$) -- but it
+supplies only $0.705$ of the statistic, so the SHARE does not separate; at band 1 it supplies $0.814$
+against phase's $0.570$, a lead of $1.43$.  ** So the surviving step is a WEAKENING of the first
+acoustic cycle rather than a DISPLACEMENT of it, and the row is not reframed -- and the share is
+reported rather than claimed, which is `r7641` ⑷'s ruling. **
 
-⚠ ** BUT THE PHASE CHANNEL IS NOT MERELY SMALL -- IT IS UNRESOLVED, AND THE PRE-REGISTERED TRADE-OFF
-FIRES. **  Its departure runs $+3.54$, $+0.66$, $-0.46$ across three window half-widths and **changes
-sign**, where the amplitude term's sign does not move.  *The reason is size: the relative phase is
-$0.0068$ rad -- $0.39$ degrees -- against a relative amplitude of $0.0554$.*  ⇒ *** AMPLITUDE ON THE SIGN,
-INSEPARABLE ON THE SHARE; and what would separate them is a phase read against the comb itself over a
-longer lever arm in $q$, not a local fit in a window one period wide. ***
+⚠⚠ ** AND ON THE ARM OF RECORD THE PHASE CHANNEL IS NEITHER SMALL NOR UNRESOLVED, SO THE
+PRE-REGISTERED TRADE-OFF DOES **NOT** FIRE -- WHICH IS A RESULT AND NOT A REPAIR. **  Both terms keep
+ONE sign across all three window half-widths, where on the namesake arm the phase term changed sign and
+that instability was the stated reason the share was inseparable.  *The relative phase here is $5.55$
+degrees against a relative amplitude of $0.0756$ -- resolved, substantial, and pointing the SAME way as
+the amplitude, so its own step ($-0.360$) exceeds the composite's ($-0.236$) and the two partly cancel.*
+⇒ *** AMPLITUDE ON THE SIGN, INSEPARABLE ON THE SHARE -- on this arm because the phase channel is large
+and steady, not because it is small and unstable; and what would separate them is a phase read against
+the comb itself over a longer lever arm in $q$, not a local fit in a window one period wide. ***
 
 ⚠⚠ ** AND A CORRECTION TO `cc66.59` THAT THE DECOMPOSITION FORCED. **  A band spans $0.70$ in $q$ against a
 comb period of $1.00$, so ** a raw band `std` samples less than one full cycle and is phase-dependent by
@@ -58,6 +63,7 @@ measurement would be meaningless.*
 first acoustic cycle is weaker in this cosmology" is a signature, not a cause.  No corpus edits.*
 """
 import os
+import sys
 
 import numpy as np
 
@@ -123,8 +129,24 @@ check("⛭ AND IT NAMES THE AMPLITUDE/PHASE TRADE-OFF HAZARD BEFORE IT WAS MET -
       "the hazard that actually fired was pre-registered")
 
 
-def fine(t):
-    d = np.load(os.path.join(SP, f'r6941_fine_{t}.npz'))
+# ** r7641 ⑷ -- THE ARM OF RECORD, READ **UNCARRIED**, AND THE REASON IS CLASS 4. **
+#   `r7637+70`'s carry maps the arm onto the control's comb coordinate using the measured phase offset
+#   Dphi.  ⛔ *But Dphi IS the quantity this receipt measures* -- the whole decomposition is into an
+#   amplitude ratio R and a phase difference DEL, and the carry's own parameter is that difference.
+#   Carrying would therefore not correct this statistic, it would DELETE it: the phase determination
+#   collapses from 6.8 sigma to 0.4, and "amplitude and not phase" would be true by construction
+#   rather than by measurement.  ⇒ *So this receipt reads the arm of record UNCARRIED, and the
+#   collapse is printed below as the reason rather than left as an assertion.  `r7641` ⑷ rules this
+#   reading, and `r7639+cc66.22` is where the class was established.*
+_AOR = {'lcdm': 'r6941_fine_lcdm', 'cr': 'r6941_fine_cr_leafrec1'}
+_NSK_ARM = 'r6941_fine_cr'          # the namesake arm, read once for the reproduction check only
+_LOADED = []
+
+
+def fine(t, bank=None):
+    tag = bank if bank is not None else _AOR[t]
+    _LOADED.append(tag)
+    d = np.load(os.path.join(SP, tag + '.npz'))
     return d['ls'].astype(float) / float(d['l_A']), d['Dl']
 
 
@@ -201,6 +223,88 @@ def brms(v):
 print("\nPART 1 -- ⓵ THE DECOMPOSITION IS AN IDENTITY, AND THE ANSWER IS AMPLITUDE.")
 print("-" * 100)
 R, DEL, AC, AD = measure(0.75)
+
+# ⛭⛭⛭ ** r7641 ⑷: THE COLLAPSE, PRINTED AS THE REASON THIS RECEIPT READS UNCARRIED. **
+#   `r7641` ⑷ rules that this receipt reads uncarried "with the collapse printed as the reason".  So it
+#   is COMPUTED here rather than cited: the same decomposition is run with the arm first mapped onto
+#   the control's comb coordinate by `r7637+70`'s carry, and the phase determination is read on both.
+#   ⛔ *The carry's own parameter is the phase offset.  Carrying therefore removes, by construction,
+#   the very quantity `DEL` measures -- so "amplitude and not phase" would become true by arithmetic.
+#   That is the FOURTH class of the carry, established at `r7639+cc66.22`: not APPLIES, not IDENTITY,
+#   not DOES-NOT-APPLY, but WOULD DELETE THE STATISTIC.*
+sys.path.insert(0, os.path.join(ROOT, 'computations', 'beyond_the_wall',
+                                'r7637_70_own_comb_statistic'))
+import own_comb as OCB                                                                 # noqa: E402
+
+
+def _phase_sigma(dl):
+    # the phase determination: its mean against the standard error of that mean
+    v = np.asarray(dl, float)
+    v = v[np.isfinite(v)]
+    return float(np.degrees(np.mean(v))), float(abs(np.mean(v))
+                                                / (np.std(v, ddof=1) / np.sqrt(len(v))))
+
+
+_Tc, _pc, _ = OCB.comb(QC_, np.asarray(DC, float))[1:]
+_Ta, _pa, _ = OCB.comb(QA_, np.asarray(DA, float))[1:]
+_dphi = (_pa - _pc + np.pi) % (2 * np.pi) - np.pi
+_QA_C = _Tc * (QA_ / _Ta + _dphi / (2 * np.pi))
+_OA_C = np.interp(g, _QA_C, osc(QA_, DA))
+_DEL_C = []
+for x in GRID:
+    _fa, _fc = loc_fit(g, _OA_C, x, 0.75), loc_fit(g, OC, x, 0.75)
+    _DEL_C.append(np.nan if _fa is None or _fc is None
+                  else np.arctan2(np.sin(_fa[1] - _fc[1]), np.cos(_fa[1] - _fc[1])))
+_DEG_U, _SIG_U = _phase_sigma(DEL)
+_DEG_C, _SIG_C = _phase_sigma(_DEL_C)
+print("\n  ⛔ WHY THIS RECEIPT READS UNCARRIED, COMPUTED AND NOT CITED:")
+print(f"       uncarried   the phase determination is {_DEG_U:+.3f} degrees at {_SIG_U:.1f} sigma")
+print(f"       CARRIED     it is {_DEG_C:+.3f} degrees at {_SIG_C:.1f} sigma -- the carry's own "
+      f"parameter IS this quantity, so carrying deletes it")
+# ⌗ *And the honest measure of the collapse is the MAGNITUDE, not the significance: carried, the
+#   phase is still resolved (7.8 sigma) -- what has gone is the quantity.  It falls from +5.43 degrees
+#   to -0.21, a factor of twenty-six, AND CHANGES SIGN.  That is exactly what it means for the carry's
+#   own parameter to be the measurand: the map sets the offset to zero by construction and what is
+#   left is residual, so a reading taken after it is not a smaller measurement of the same thing.*
+check("⛭⛭⛭ AND THE CARRY WOULD REPLACE THIS STATISTIC RATHER THAN CORRECT IT, WHICH IS COMPUTED HERE "
+      "AND NOT ASSERTED: mapping the arm onto the control's comb first takes the measured phase from "
+      "+5.43 degrees to -0.21 -- a factor of twenty-six AND a change of sign -- because the map's own "
+      "parameter IS the phase offset being measured, so it sets it to zero by construction.  ⇒ ** "
+      "That is why `r7641` ⑷ reads this receipt uncarried, and it is the carry's FOURTH class "
+      "(`r7639+cc66.22`): not APPLIES, not IDENTITY, not DOES-NOT-APPLY, but WOULD DELETE THE "
+      "STATISTIC **",
+      _SIG_U > 3.0 and abs(_DEG_U) > 10 * abs(_DEG_C) and _DEG_U * _DEG_C < 0
+      and abs(_DEG_U - 5.432) < 0.05,
+      f"{_DEG_U:+.3f} degrees at {_SIG_U:.1f} sigma uncarried against {_DEG_C:+.3f} at "
+      f"{_SIG_C:.1f} carried -- a factor {abs(_DEG_U / _DEG_C):.0f} and a sign change")
+
+# ⛭ AND THE SAME CODE ON THE NAMESAKE ARM RETURNS ITS PUBLISHED ROW, so what moved is the ARM.
+_QN, _DN = fine('cr', bank=_NSK_ARM)
+_gN = np.linspace(max(QC_.min(), _QN.min()), min(QC_.max(), _QN.max()), len(QC_))
+_OCN, _OAN = np.interp(_gN, QC_, osc(QC_, DC)), np.interp(_gN, _QN, osc(_QN, _DN))
+_RN, _DELN, _ACN = [], [], []
+for x in GRID:
+    _fa, _fc = loc_fit(_gN, _OAN, x, 0.75), loc_fit(_gN, _OCN, x, 0.75)
+    if _fa is None or _fc is None:
+        _RN.append(np.nan)
+        _DELN.append(np.nan)
+        _ACN.append(np.nan)
+        continue
+    _ACN.append(_fc[0])
+    _RN.append(_fa[0] / _fc[0])
+    _DELN.append(np.arctan2(np.sin(_fa[1] - _fc[1]), np.cos(_fa[1] - _fc[1])))
+_RN, _DELN, _ACN = map(np.array, (_RN, _DELN, _ACN))
+_AMPN = dep4(brms(_ACN * np.abs(_RN - 1.0)) / np.sqrt(2))
+_BOTHN = dep4(brms(_ACN * np.sqrt(_RN ** 2 - 2 * _RN * np.cos(_DELN) + 1)) / np.sqrt(2))
+_AN, _BN = np.mean([d[0] for d in _AMPN]), np.mean([d[0] for d in _BOTHN])
+print(f"    the namesake arm in the same code: amplitude {_AN:+.3f}, statistic {_BN:+.3f}, "
+      f"share {_AN / _BN:.3f}")
+check("⛭ AND THE SAME CODE REPRODUCES THIS RECEIPT'S PUBLISHED NAMESAKE ROW -- amplitude -0.243 "
+      "against the statistic's -0.220, a share of 1.106 -- so what moved is the ARM and not the "
+      "decomposition, and the banks read are the ones the header names",
+      abs(_AN + 0.243) < 5e-3 and abs(_BN + 0.220) < 5e-3 and abs(_AN / _BN - 1.106) < 5e-3
+      and _LOADED == ['r6941_fine_lcdm', 'r6941_fine_cr_leafrec1', 'r6941_fine_cr'],
+      f"namesake {_AN:+.3f}/{_BN:+.3f} = {_AN / _BN:.3f}; read {_LOADED}")
 BOTH = AC * np.sqrt(R ** 2 - 2 * R * np.cos(DEL) + 1)
 AMP = AC * np.abs(R - 1.0)
 PH = AC * 2 * np.abs(np.sin(DEL / 2))
@@ -214,17 +318,32 @@ DB, DAMP, DPH, DRAW = dep4(brms(BOTH) / np.sqrt(2)), dep4(brms(AMP) / np.sqrt(2)
     dep4(brms(PH) / np.sqrt(2)), dep4(DIRECT)
 for nm, D in (('BOTH', DB), ('AMPLITUDE only', DAMP), ('PHASE only', DPH), ('raw std (cc66.59)', DRAW)):
     print(f"    {nm:20s} " + "  ".join(f"{d[0]:+.3f}({d[2]:+.2f}s)" for d in D))
-check("⓵ THE AMPLITUDE-ONLY TERM CARRIES THE STEP: it has the same sign as the full statistic on all four "
-      "bases and is close to it in size, where a phase-carried step would leave the amplitude term flat",
+# ⛔ r7641 ⑷: as registered this gate asserted the SIGN **and** the SIZE -- "close to it in size",
+#   at 25 per cent.  On the arm of record the amplitude term supplies 0.705 of the statistic, so the
+#   size limb misses while the sign limb holds on all four bases.  ⇒ *`r7641` ⑷ rules the restatement:
+#   "the step's sign is the amplitude's ... the honest statement is the sign without the share".  The
+#   SIGN is gated; the share is PRINTED, because it is the thing that is not separable.*
+_SHARE = np.mean([d[0] for d in DAMP]) / np.mean([d[0] for d in DB])
+print(f"    the amplitude term's share of the statistic: {_SHARE:.3f}  -- printed, not gated")
+check("⓵ THE AMPLITUDE-ONLY TERM CARRIES THE STEP'S SIGN: it has the same sign as the full statistic "
+      "on all four bases, where a phase-carried step would leave the amplitude term flat.  ⛔ *The "
+      "SHARE is not gated and not separable on this arm -- it is printed above at 0.705, and "
+      "`r7641` ⑷'s ruling is the sign without the share*",
       all(d[0] < 0 for d in DAMP) and all(d[0] < 0 for d in DB)
-      and abs(np.mean([d[0] for d in DAMP]) / np.mean([d[0] for d in DB]) - 1) < 0.25,
+      and abs(_SHARE - 0.705) < 5e-3,
       f"amplitude {np.mean([d[0] for d in DAMP]):+.3f} against the full statistic's "
-      f"{np.mean([d[0] for d in DB]):+.3f}")
-check("AND AT BAND 1 THE AMPLITUDE LIMIT SUPPLIES ALMOST ALL OF THE STATISTIC WHERE THE PHASE LIMIT "
-      "SUPPLIES LITTLE.  ⇒ *** THE SURVIVING STEP IS A WEAKENING OF THE FIRST ACOUSTIC CYCLE, NOT A "
-      "DISPLACEMENT OF IT, SO THE ROW IS NOT REFRAMED ***",
-      brms(AMP)[0] / brms(BOTH)[0] > 3 * (brms(PH)[0] / brms(BOTH)[0]),
-      f"amplitude {brms(AMP)[0] / brms(BOTH)[0]:.3f}, phase {brms(PH)[0] / brms(BOTH)[0]:.3f}")
+      f"{np.mean([d[0] for d in DB]):+.3f}, a share of {_SHARE:.3f}")
+# ⛔ r7641 ⑷: registered as "almost all" against "little" -- a factor of three.  On the arm of record
+#   band 1 reads amplitude 0.814 against phase 0.570, so the amplitude still LEADS but by 1.43 and not
+#   by 3.  ⇒ *The durable claim is which of the two leads at band 1, and that is what is gated; the
+#   margin is printed.*
+_B1A, _B1P = brms(AMP)[0] / brms(BOTH)[0], brms(PH)[0] / brms(BOTH)[0]
+check("AND AT BAND 1 THE AMPLITUDE LIMIT LEADS THE PHASE LIMIT, THOUGH NOT BY MUCH ON THIS ARM: 0.814 "
+      "against 0.570, a lead of 1.43 where the namesake arm's was more than three.  ⇒ *** THE "
+      "SURVIVING STEP IS A WEAKENING OF THE FIRST ACOUSTIC CYCLE RATHER THAN A DISPLACEMENT OF IT, "
+      "AND THE ROW IS NOT REFRAMED -- but the margin is the arm's and is printed, not asserted ***",
+      _B1A > _B1P and abs(_B1A - 0.814) < 5e-3 and abs(_B1P - 0.570) < 5e-3,
+      f"amplitude {_B1A:.3f}, phase {_B1P:.3f} -- a lead of {_B1A / _B1P:.2f}x")
 ST = []
 for h in (0.55, 0.75, 0.95):
     r_, d_, ac_, _ = measure(h)
@@ -234,18 +353,44 @@ for h in (0.55, 0.75, 0.95):
           f"   phase {min(x[0] for x in ST[-1][1]):+.3f}..{max(x[0] for x in ST[-1][1]):+.3f}")
 ASGN = {np.sign(x[0]) for s in ST for x in s[0]}
 PSGN = {np.sign(x[0]) for s in ST for x in s[1]}
-check("⚠ AND THE PRE-REGISTERED TRADE-OFF FIRES, WHICH IS REPORTED AND NOT BURIED: the phase term's "
-      "departure CHANGES SIGN across three window half-widths while the amplitude term's does not.  ⇒ "
-      "** AMPLITUDE ON THE SIGN, INSEPARABLE ON THE SHARE **",
-      len(ASGN) == 1 and len(PSGN) > 1,
-      f"amplitude keeps {len(ASGN)} sign; phase takes {len(PSGN)}, running "
+# ⛔⛭⛭ ** r7641 ⑷: THE PRE-REGISTERED TRADE-OFF DOES **NOT** FIRE ON THE ARM OF RECORD, AND THAT IS
+#   A RESULT AND NOT A REPAIR. **  On the namesake arm the phase term's departure CHANGED SIGN across
+#   the three half-widths, and that instability was the reason the share was called inseparable.  ⇒
+#   *On the arm of record the phase term keeps ONE sign at every half-width -- so the hazard that was
+#   pre-registered, and that fired there, does not fire here.*  ** The conclusion is unchanged and its
+#   REASON is not: the share is inseparable on this arm because the phase channel is LARGE and
+#   same-signed (its own step exceeds the composite's), not because it is small and unstable. **
+#   ⌗ *`r7641` ⑷ asked for exactly this clause to be checked before its wording landed, and reported
+#   at `r7639+cc66.32`: it fails, so it stays out of the paper.*
+check("⛔ AND THE PRE-REGISTERED TRADE-OFF DOES NOT FIRE ON THE ARM OF RECORD, WHICH IS REPORTED AND "
+      "NOT BURIED: BOTH terms keep one sign across the three window half-widths, where on the "
+      "namesake arm the phase term changed sign and that instability was the stated reason the share "
+      "was inseparable.  ⇒ ** AMPLITUDE ON THE SIGN, INSEPARABLE ON THE SHARE -- and on THIS arm "
+      "because the phase channel is large and steady, not because it is small and unstable **",
+      len(ASGN) == 1 and len(PSGN) == 1,
+      f"amplitude keeps {len(ASGN)} sign and phase keeps {len(PSGN)}, the phase running "
       f"{min(x[0] for s in ST for x in s[1]):+.2f} to {max(x[0] for s in ST for x in s[1]):+.2f}")
-check("⌗ AND THE REASON IS SIZE RATHER THAN STATISTICS: the relative phase is a fraction of a degree where "
-      "the relative amplitude is several per cent, so the phase channel sits at the estimator's own "
-      "resolution and the amplitude channel does not",
-      np.degrees(np.nanmean(np.abs(DEL))) < 1.0 and np.nanmean(np.abs(R - 1)) > 0.02,
-      f"{np.degrees(np.nanmean(np.abs(DEL))):.2f} degrees against "
-      f"{np.nanmean(np.abs(R - 1)):.4f} in relative amplitude")
+# ⛔ r7641 ⑷: registered as "a fraction of a degree" against "several per cent" -- the namesake arm's
+#   0.39 degrees.  On the arm of record the relative phase is some five and a half degrees against a
+#   relative amplitude near eight per cent, which is `r7641` ⑷'s own wording.  ⇒ *The phase channel is
+#   NOT at the estimator's resolution here.  It is resolved, substantial, and pointing the same way as
+#   the amplitude -- which is why the two partly cancel in the composite and the share will not
+#   separate.*
+_DEG, _RELA = np.degrees(np.nanmedian(np.abs(DEL))), np.nanmedian(np.abs(R - 1))
+# ⌗ *And the clause that the phase channel's OWN step exceeds the composite's is gated numerically
+#   rather than left as a literal in the header: the two figures the header and the INDEX row print
+#   are compared here, because digits inside a docstring are not a pin.*
+_PHS, _FULLM = np.mean([d[0] for d in DPH]), np.mean([d[0] for d in DB])
+check("⌗ AND THE REASON THE SHARE WILL NOT SEPARATE IS SIZE, BUT NOT THE SIZE THE NAMESAKE ARM GAVE: "
+      "the relative phase is about five and a half degrees against a relative amplitude near eight "
+      "per cent, where on the namesake arm it was a fraction of a degree, and the phase channel's own "
+      "step -0.360 EXCEEDS the composite's -0.236 so the two partly cancel.  ⛔ *So the phase channel "
+      "is RESOLVED on this arm rather than sitting at the estimator's floor, and that is why it "
+      "cannot be set aside as a remainder*",
+      abs(_DEG - 5.55) < 0.05 and abs(_RELA - 0.0756) < 5e-4 and _DEG > 1.0
+      and abs(_PHS + 0.360) < 5e-3 and abs(_FULLM + 0.236) < 5e-3 and abs(_PHS) > abs(_FULLM),
+      f"{_DEG:.2f} degrees against {_RELA:.4f} in relative amplitude, the phase-only step "
+      f"{_PHS:+.3f} against the composite's {_FULLM:+.3f}")
 check("⚠⚠ AND THE CORRECTION TO `cc66.59` IS CARRIED RATHER THAN QUIETLY DROPPED: a band is narrower than "
       "one comb period, so a raw band `std` samples an incomplete cycle and is phase-dependent by "
       "construction.  ** The step SURVIVES on both aggregations and neither is chosen **",

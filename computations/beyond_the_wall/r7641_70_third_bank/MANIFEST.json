@@ -1,0 +1,194 @@
+{
+ "r6885_ln24_cr_leafrec1": {
+  "file": "spectra/r6885_ln24_cr_leafrec1.npz",
+  "namesake": "spectra/r6885_ln24_cr.npz",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0,
+   "LEAFSCALES": 1
+  },
+  "switches": "ARM=cr CRH0=68.570730 CROM=0.291246 HIER=1 LEAFSCALES=1 LMAXL=2000 LN=24 LSTEP=8 NS=1.015066 WBH2=0.021643 ZSTART=3e7",
+  "held": "r6885_directions/launch.sh (HIER=1 LSTEP=8 LMAXL=2000)"
+ },
+ "r6885_ln24_lcdm_leafrec1": {
+  "file": "spectra/r6885_ln24_lcdm_leafrec1.npz",
+  "namesake": "spectra/r6885_ln24_lcdm.npz",
+  "LEAFREC": 1,
+  "point": "the control, unchanged",
+  "switches": "ARM=lcdm HIER=1 LH0=67.410309 LMAXL=2000 LN=24 LOM=0.309826 LSTEP=8 NS=0.954248 WBH2=0.021966",
+  "held": "r6885_directions/launch.sh (HIER=1 LSTEP=8 LMAXL=2000); the CONTROL, rebuilt because the knob is switched on both arms"
+ },
+ "r6885_noisw_cr_leafrec1": {
+  "file": "spectra/r6885_noisw_cr_leafrec1.npz",
+  "namesake": "spectra/r6885_noisw_cr.npz",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0,
+   "LEAFSCALES": 1
+  },
+  "switches": "ARM=cr CRH0=68.570730 CROM=0.291246 HIER=1 LEAFSCALES=1 LMAXL=2000 LSTEP=8 NOISW=1 NS=1.015066 WBH2=0.021643 ZSTART=3e7",
+  "held": "r6885_directions/launch.sh (HIER=1 LSTEP=8 LMAXL=2000)"
+ },
+ "r6885_noisw_lcdm_leafrec1": {
+  "file": "spectra/r6885_noisw_lcdm_leafrec1.npz",
+  "namesake": "spectra/r6885_noisw_lcdm.npz",
+  "LEAFREC": 1,
+  "point": "the control, unchanged",
+  "switches": "ARM=lcdm HIER=1 LH0=67.410309 LMAXL=2000 LOM=0.309826 LSTEP=8 NOISW=1 NS=0.954248 WBH2=0.021966",
+  "held": "r6885_directions/launch.sh (HIER=1 LSTEP=8 LMAXL=2000); the CONTROL, rebuilt because the knob is switched on both arms"
+ },
+ "r6885_dre0_cr_leafrec1": {
+  "file": "spectra/r6885_dre0_cr_leafrec1.npz",
+  "namesake": "spectra/r6885_dre0_cr.npz",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0,
+   "LEAFSCALES": 1
+  },
+  "switches": "ARM=cr CRH0=68.570730 CROM=0.291246 DRE=0 HIER=1 LEAFSCALES=1 LMAXL=2000 LSTEP=8 NS=1.015066 WBH2=0.021643 ZSTART=3e7",
+  "held": "r6885_directions/launch.sh (HIER=1 LSTEP=8 LMAXL=2000)"
+ },
+ "r6885_dre0_lcdm_leafrec1": {
+  "file": "spectra/r6885_dre0_lcdm_leafrec1.npz",
+  "namesake": "spectra/r6885_dre0_lcdm.npz",
+  "LEAFREC": 1,
+  "point": "the control, unchanged",
+  "switches": "ARM=lcdm DRE=0 HIER=1 LH0=67.410309 LMAXL=2000 LOM=0.309826 LSTEP=8 NS=0.954248 WBH2=0.021966",
+  "held": "r6885_directions/launch.sh (HIER=1 LSTEP=8 LMAXL=2000); the CONTROL, rebuilt because the knob is switched on both arms"
+ },
+ "r6885_drc0_cr_leafrec1": {
+  "file": "spectra/r6885_drc0_cr_leafrec1.npz",
+  "namesake": "spectra/r6885_drc0_cr.npz",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0,
+   "LEAFSCALES": 1
+  },
+  "switches": "ARM=cr CRH0=68.570730 CROM=0.291246 DRC=0 HIER=1 LEAFSCALES=1 LMAXL=2000 LSTEP=8 NS=1.015066 WBH2=0.021643 ZSTART=3e7",
+  "held": "r6885_directions/launch.sh (HIER=1 LSTEP=8 LMAXL=2000)"
+ },
+ "r6885_drc0_lcdm_leafrec1": {
+  "file": "spectra/r6885_drc0_lcdm_leafrec1.npz",
+  "namesake": "spectra/r6885_drc0_lcdm.npz",
+  "LEAFREC": 1,
+  "point": "the control, unchanged",
+  "switches": "ARM=lcdm DRC=0 HIER=1 LH0=67.410309 LMAXL=2000 LOM=0.309826 LSTEP=8 NS=0.954248 WBH2=0.021966",
+  "held": "r6885_directions/launch.sh (HIER=1 LSTEP=8 LMAXL=2000); the CONTROL, rebuilt because the knob is switched on both arms"
+ },
+ "r6889_noop_cr_leafrec1": {
+  "file": "spectra/r6889_noop_cr_leafrec1.npz",
+  "namesake": "spectra/r6889_noop_cr.npz",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0,
+   "LEAFSCALES": 1
+  },
+  "switches": "ARM=cr CRH0=68.570730 CROM=0.291246 HIER=1 LEAFSCALES=1 LMAXL=2000 LSTEP=8 NS=1.015066 WBH2=0.021643 ZSTART=3e7",
+  "held": "r6889_directions/launch.sh (HIER=1 LSTEP=8 LMAXL=2000)"
+ },
+ "r6889_hdp0_cr_leafrec1": {
+  "file": "spectra/r6889_hdp0_cr_leafrec1.npz",
+  "namesake": "spectra/r6889_hdp0_cr.npz",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0,
+   "LEAFSCALES": 1
+  },
+  "switches": "ARM=cr CRH0=68.570730 CROM=0.291246 DPSRC=0 HIER=1 LEAFSCALES=1 LMAXL=2000 LSTEP=8 NS=1.015066 WBH2=0.021643 ZSTART=3e7",
+  "held": "r6889_directions/launch.sh (HIER=1 LSTEP=8 LMAXL=2000)"
+ },
+ "r6889_hsw0_cr_leafrec1": {
+  "file": "spectra/r6889_hsw0_cr_leafrec1.npz",
+  "namesake": "spectra/r6889_hsw0_cr.npz",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0,
+   "LEAFSCALES": 1
+  },
+  "switches": "ARM=cr CRH0=68.570730 CROM=0.291246 HIER=1 LEAFSCALES=1 LMAXL=2000 LSTEP=8 NS=1.015066 SWSRC=0 WBH2=0.021643 ZSTART=3e7",
+  "held": "r6889_directions/launch.sh (HIER=1 LSTEP=8 LMAXL=2000)"
+ },
+ "r6893_fine_grid_cr_leafrec1": {
+  "file": "spectra/r6893_fine_grid_cr_leafrec1.npz",
+  "namesake": "spectra/r6893_fine_grid_cr.npz",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0,
+   "LEAFSCALES": 1
+  },
+  "switches": "ARM=cr CRH0=68.570730 CROM=0.291246 HIER=1 LEAFSCALES=1 LMAXL=900 LSTEP=2 NS=1.015066 NUFS=0 WBH2=0.021643 ZSTART=3e7",
+  "held": "r6893_directions/fine2.sh: A LSTEP=2 LMAXL=900 whole, B LSTEP=4 LMAXL=2000 in six slices of 250, base and NUFS=0; the slice-sum pair at the screen grid"
+ },
+ "r6925_visleaf_cr_leafrec1": {
+  "file": "spectra/r6925_visleaf_cr_leafrec1.npz",
+  "namesake": "spectra/r6925_visleaf_cr.npz",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0,
+   "LEAFSCALES": 1
+  },
+  "switches": "ARM=cr CRH0=68.570730 CROM=0.291246 HIER=1 LEAFSCALES=1 LMAXL=2000 LSTEP=8 NS=1.015066 VISLEAF=1 WBH2=0.021643 ZSTART=3e7",
+  "held": "r6925_directions/launch.sh: VISLEAF=1, the injection and the comb, six slices each"
+ },
+ "r6893_switch_screen_cr_leafrec1": {
+  "file": "spectra/r6893_switch_screen_cr_leafrec1.npz",
+  "namesake": "spectra/r6893_switch_screen_cr.npz",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.57073,
+   "CROM": 0.291246,
+   "WBH2": 0.021643,
+   "NS": 1.015066,
+   "LEAFREC": 1,
+   "ZSTART": 30000000.0,
+   "LEAFSCALES": 1
+  },
+  "switches": "ARM=cr CRH0=68.570730 CROM=0.291246 HIER=1 LEAFSCALES=1 LMAXL=500 LSTEP=16 NS=1.015066 WBH2=0.021643 ZSTART=3e7",
+  "held": "r6893_directions/screen.sh, the cr half: HIER=1 LSTEP=16 LMAXL=500, its own absolute switch values; its LEAFSCALES variant at 0 as recorded"
+ }
+}

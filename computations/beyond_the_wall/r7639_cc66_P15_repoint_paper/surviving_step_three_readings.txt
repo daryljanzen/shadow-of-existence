@@ -1,8 +1,34 @@
 cr           carry=False identity 2.9e-13 | amp -0.243 both -0.220 ratio 1.106 | band1 amp 0.958 phase 0.284 | |phase| med 0.388 deg, |R-1| med 6.11%
                              AMP signs [-0.231, -0.26, -0.227, -0.256]  BOTH signs [-0.208, -0.236, -0.204, -0.232]
+                             PH  signs [0.57, 0.66, 0.727, 0.796]   mean +0.688
 cr           carry=True  identity 1.8e-13 | amp -0.229 both -0.083 ratio 2.764 | band1 amp 0.834 phase 0.545 | |phase| med 0.204 deg, |R-1| med 6.16%
                              AMP signs [-0.217, -0.246, -0.213, -0.241]  BOTH signs [-0.069, -0.102, -0.065, -0.097]
+                             PH  signs [2.873, 3.574, 2.467, 4.012]   mean +3.232
 cr_leafrec1  carry=False identity 8.0e-14 | amp -0.166 both -0.236 ratio 0.705 | band1 amp 0.814 phase 0.570 | |phase| med 5.550 deg, |R-1| med 7.56%
                              AMP signs [-0.159, -0.179, -0.154, -0.174]  BOTH signs [-0.181, -0.274, -0.209, -0.28]
+                             PH  signs [-0.277, -0.402, -0.341, -0.419]   mean -0.360
 cr_leafrec1  carry=True  identity 1.9e-13 | amp -0.224 both -0.119 ratio 1.879 | band1 amp 0.878 phase 0.472 | |phase| med 0.240 deg, |R-1| med 6.53%
                              AMP signs [-0.213, -0.237, -0.21, -0.234]  BOTH signs [-0.108, -0.134, -0.104, -0.13]
+                             PH  signs [3.837, 4.431, 3.896, 5.077]   mean +4.310
+
+====================================================================================================
+  ⑷'s TWO DROPPED CLAUSES, ON THE READING THE RULING ADOPTS (arm of record, UNCARRIED)
+====================================================================================================
+  ⒜ the namesake arm   AMP [-0.231, -0.26, -0.227, -0.256]  PH [0.57, 0.66, 0.727, 0.796]  -> phase steps the OTHER way on every basis
+  ⒜ the ARM OF RECORD  AMP [-0.159, -0.179, -0.154, -0.174]  PH [-0.277, -0.402, -0.341, -0.419]  -> phase steps the SAME way somewhere
+  ⒝ the phase step against the local-fit half-window, on the arm of record, uncarried:
+       half=0.50   phase step -0.2908   amp step -0.0065
+       half=0.75   phase step -0.3597   amp step -0.1663
+       half=1.00   phase step -0.2549   amp step -0.2442
+       half=1.50   phase step -0.1357   amp step -0.2009
+       half=2.00   phase step -0.1177   amp step -0.1187
+     -> the phase step keeps one sign across the sweep (-0.3597 to -0.1177)
+
+  ⒞ the three series' OWN band-1 steps on the arm of record: AMP -0.166, BOTH -0.236, PH -0.360
+       -> AMP is 0.705 of the composite and PH is 1.524 of it, so the phase-only term is the LARGER and not a minority
+       -> and PH's sign flips between arms: +0.688 on the namesake against -0.360 on the arm of record
+
+  ⇒ VERDICT for ⑷: clause ⒜ (the phase-only term steps the other way) FAILS on the arm of record; clause ⒝ (the phase step reverses as the window widens) FAILS.
+
+  OK -- the namesake row is reproduced, the decomposition identity holds, and the two figures
+  the ruling's wording states are the measured ones.

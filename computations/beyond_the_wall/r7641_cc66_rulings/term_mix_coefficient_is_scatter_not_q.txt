@@ -1,0 +1,14 @@
+  the namesake arm   0.8974  0.8600  0.8824  0.8791  0.8753  0.8708  0.8908
+                     spread 4.3 per cent;  mean 0.8794;  sd 1.4 per cent of the mean
+  the ARM OF RECORD  0.8943  0.8619  0.8577  0.8925  0.8767  0.8377  0.9071
+                     spread 8.3 per cent;  mean 0.8754;  sd 2.8 per cent of the mean
+
+  ⛔ AND THE SPREAD HAS NO TREND IN WAVENUMBER, which is what the registered condition's
+     claim was about:
+       against q     slope +0.00045 +- 0.00722  -> 0.06 sigma;  the fit spans 0.0019 across the range against a spread of 0.0694 (3 per cent of it)
+       against q^2   slope +0.00025 +- 0.00107  -> 0.23 sigma;  the fit spans 0.0070 across the range against a spread of 0.0694 (10 per cent of it)
+       successive differences [np.int64(-1), np.int64(-1), np.int64(1), np.int64(-1), np.int64(-1), np.int64(1)] -- alternating, so scatter and not a reshaping
+
+  OK -- the namesake spread is reproduced, the arm of record's is the 8.3 per cent the
+  ruling quotes, and neither trend reaches one sigma: the condition fails on SCATTER and
+  the 'not a q-dependent reshaping' claim it protected survives.

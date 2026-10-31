@@ -48,7 +48,11 @@ COMPUTES: scope.
   * ** THE NEW SWITCH'S DEFAULT IS PROVED AND NOT ASSERTED **: both arms' bases are re-run against the
     edited file and gated BIT-IDENTICAL against the banked screen, before any other number is read.
   * The alternation and contrast statistics are computed in the binned, lensed, amplitude-fitted space
-    `cc66.35` defined them in, and the contrast reproduces its $1.0401$ as a check on the machinery.
+    `cc66.35` defined them in.  ** r7641 ⑴: read on the ARM OF RECORD the contrast is $1.04403$ **, and
+    the same code reproduces `cc66.35`'s $1.0401$ on the NAMESAKE arm as the check on the machinery --
+    so what moved is the arm and not the statistic.  ⌗ *`r7637+70`'s carry is MOOT here and that is
+    measured: the projection onto the control's own oscillation is already at its maximum over a rigid
+    shift of the arm, at zero shift against a comb period of $315$.*
   * ** NOT CLAIMED: a mechanism for the contrast imbalance. **  `r6897` says this is an order to
     measure a displacement and check whether two residuals are one, and that no mechanism is being
     asked for and none should be claimed.
@@ -71,11 +75,11 @@ WHAT IS CLAIMED.
      unaccounted part is an effective $\\Delta\\omega_b$ of about $-2.5$ per cent -- a further DEFICIT
      on top of the $2.0$ per cent the arm's $\\omega_b$ already is.  *Too much loading is what would
      deepen the troughs; the arm's monopole behaves as though it had too little.*
- (6) ⚑⚑ (c) ** AND THE TWO RESIDUALS DO NOT POINT THE SAME WAY -- THEY DIFFER BY A FACTOR OF SIXTEEN
-     AND IN SIGN. **  Against the control -- which is the reference $\\Delta$ is built on -- the arm's
-     CONTRAST is $4.0$ per cent higher and its ALTERNATION about $2$ per cent LOWER.  Converted through
-     the control's own measured responses, the contrast asks for an effective $\\omega_b$ of $+22.9$
-     per cent and the alternation for $-1.4$.  ⇒ *They are not one number; the search splits.*
+ (6) ⚑⚑ (c) ** AND THE TWO RESIDUALS DO NOT POINT THE SAME WAY -- THEY DIFFER BY A FACTOR OF FOURTEEN
+     AND IN SIGN. **  Against the control -- which is the reference $\\Delta$ is built on -- the arm of
+     record's CONTRAST is $4.4$ per cent higher and its ALTERNATION about $2.3$ per cent LOWER.  Converted through
+     the control's own measured responses, the contrast asks for an effective $\\omega_b$ of $+25.2$
+     per cent and the alternation for $-1.9$.  ⇒ *They are not one number; the search splits.*
  (6b) ⚑⚑ ** AND THE $+22.9$ IS A LOWER BOUND, BECAUSE THE CONTRAST RESPONSE SATURATES. **  Over the
      whole $\pm8$ per cent range the contrast spans only $0.028$ and its increments FALL monotonically,
      so a straight line overstates what $\\omega_b$ can deliver.  *** A four per cent contrast excess
@@ -85,8 +89,9 @@ WHAT IS CLAIMED.
      the contrast that stands apart.*
  (7) ⚠ ** AND THAT IS PARTLY A CORRECTION TO THE ORDER'S PREMISE, WHICH MIXED TWO REFERENCES. **
      `r6897` reads the alternation excess off $P_1/P_2 = 2.264$ against the SKY's $2.217$, and the
-     contrast ratio $1.040$ against the CONTROL.  *Against the control, on the banked spectra, the
-     arm's $P_1/P_2$ is $2.141$ against $2.191$ -- LOWER, not higher.*
+     contrast ratio $1.040$ against the CONTROL -- both quoted as the ORDER stated them and neither
+     re-pointed here.  *Against the control, on the banked spectra, the arm of record's $P_1/P_2$ is
+     $2.134$ against $2.191$ -- LOWER, not higher, as it was on the namesake's $2.141$.*
  (8) And one positive localisation, measured and not inferred: the arm's DIPOLE-to-monopole amplitude
      ratio at the visibility peak is $1.8$ per cent higher than the control's and GROWS with
      wavenumber.  ⚠ *Its naive sign is opposite to the contrast excess -- more Doppler fills troughs
@@ -413,17 +418,74 @@ def alternation(m, deg=2):
     return float(b[-1]), pk
 
 
-M_ARM = fit_amp(*sp('cc66_r185_verify_cr.npz'))
+# ** r7641 ⑴ -- THE ARM OF RECORD, AND WHY `r7637+70`'s CARRY IS MOOT HERE RATHER THAN DECLINED. **
+#   This statistic is not a comb-band ratio: it is the projection of the arm's envelope-normalised
+#   oscillation onto a direction built from the CONTROL alone, with nothing fitted.  So there are no
+#   bands for a period mismatch to straddle -- but the inner product is suppressed by any phase offset
+#   just the same, which is the beat in another dress.  ⇒ *Rather than argue the class, it is MEASURED:
+#   the projection is maximised over a rigid shift of the arm, and the maximum sits at ZERO shift, so
+#   there is no offset for a carry to remove.  Gated below.*  ⌗ And carrying would cost the claim its
+#   own words: a direction remapped onto the arm's measured comb is no longer built from the control
+#   alone with nothing fitted.
+ARM_BANK, NSK_BANK = 'cc66_r185_verify_cr_leafrec1.npz', 'cc66_r185_verify_cr.npz'
+M_ARM = fit_amp(*sp(ARM_BANK))
 A_L, _pk = alternation(REF)
 A_C, _ = alternation(M_ARM)
 C_C = contrast(M_ARM)
 print(f"    the acoustic peaks the statistics are read at: l = {[round(LCK[j]) for j in _pk]}")
 print(f"    control: contrast {contrast(REF):.5f}   alternation a = {A_L:+.6f}")
 print(f"    arm    : contrast {C_C:.5f}   alternation a = {A_C:+.6f}")
-check("the contrast statistic reproduces `cc66.35`'s 1.0401 for the arm against the control, so the "
-      "space these two statistics live in is that receipt's space and not a new one",
-      abs(C_C - 1.0401) < 0.0005 and abs(contrast(REF) - 1.0) < 1e-12,
-      f"arm {C_C:.5f} against cc66.35's 1.0401; the control against itself {contrast(REF):.5f}")
+C_NSK = contrast(fit_amp(*sp(NSK_BANK)))
+_oA, _den = osc(M_ARM), float(np.sum(OREF * OREF))
+_SHIFT, _SMAX = max(((float(sh),
+                      float(np.sum(np.interp(LCK, LCK + sh, _oA) * OREF) / _den))
+                     for sh in np.arange(-40.0, 40.01, 0.5)), key=lambda kv: kv[1])
+print(f"    the namesake arm in the same space: contrast {C_NSK:.5f}")
+print(f"    the projection maximised over a rigid shift of the arm: {_SMAX:.5f} at "
+      f"dl = {_SHIFT:+.1f}, against a comb period of {PERIOD:.0f}")
+check("⛭ THE CONTRAST STATISTIC IS THIS RECEIPT'S OWN, ON THE ARM OF RECORD, and it reproduces "
+      "`cc66.35`'s machinery on the NAMESAKE arm to a part in ten thousand -- so the space these two "
+      "statistics live in is that receipt's space and not a new one, and what moved is the ARM",
+      abs(C_C - 1.04403) < 0.0005 and abs(C_NSK - 1.0401) < 0.0005
+      and abs(contrast(REF) - 1.0) < 1e-12,
+      f"arm of record {C_C:.5f}, namesake {C_NSK:.5f} against `cc66.35`'s 1.0401; the control "
+      f"against itself {contrast(REF):.5f}")
+check("⛭⛭ AND `r7637+70`'s CARRY IS MOOT HERE AND THAT IS MEASURED RATHER THAN ARGUED: the projection "
+      "onto the control's own oscillation is ALREADY at its maximum over a rigid shift of the arm, at "
+      "zero shift against a comb period of 315 -- so there is no phase offset for a carry to remove, "
+      "and the figure is not a suppressed one.  ⛔ *Carrying would also cost the claim its own words: "
+      "a direction remapped onto the arm's measured comb is not built from the control alone with "
+      "nothing fitted*",
+      abs(_SHIFT) < 1.0 and abs(_SMAX - C_C) < 1e-4,
+      f"maximum {_SMAX:.5f} at dl = {_SHIFT:+.1f} against the unshifted {C_C:.5f}")
+# ⛔⛭⛭ ** r7641 ⑴: THIS RECEIPT CANNOT BE WHOLLY RE-POINTED, AND THAT IS DECLARED AND GATED RATHER
+#   THAN LEFT FOR A READER TO NOTICE. **  Three banks carry an arm here and only one has an
+#   arm-of-record sibling:
+#     ⒜ `cc66_r185_verify_{lcdm,cr}` -- the verify space the contrast, the alternation and $P_1/P_2$
+#        are read in.  `_leafrec1` IS banked, so this block is ON the arm of record.
+#     ⒝ `r6897_fields.npz` -- the loading fields.  ** Its arm is a KEY and not a file ** (`k__cr`
+#        against `k__lcdm`, no arm-of-record key): one of the twelve such banks `r7639+cc66.18`
+#        found. NAMESAKE, bank-blocked.
+#     ⒞ `r6893_switch_screen_cr.npz` -- the default screen. No `_leafrec1` sibling. NAMESAKE.
+#   ⇒ *The verdicts of ⒝ and ⒞ are REPORTED on their own arm and nothing compares them with ⒜ --
+#   except ONE inference, the saturation leg, which converts ⒜'s contrast through ⒝'s measured
+#   omega_b response.  ** That one is gated below in the SAFE direction: the arm of record's excess is
+#   LARGER than the namesake's, and the response span it has to exceed is unchanged, so the leg's
+#   conclusion holds a fortiori rather than by luck. **  `r7639+cc66.15` is why this is said out loud:
+#   a cross-arm comparison is a licence defect regardless of which way it comes out.*
+_ARM_OF_RECORD = ('contrast', 'alternation', 'P1/P2')
+_NAMESAKE_LEGS = ('r6897_fields (arm is a KEY, no arm-of-record key)',
+                  'r6893_switch_screen_cr (no arm-of-record sibling)')
+print(f"    ⛔ on the arm of record: {', '.join(_ARM_OF_RECORD)};  still the namesake, bank-blocked: "
+      f"{'; '.join(_NAMESAKE_LEGS)}")
+check("⛔⛭ AND THE ONE INFERENCE THAT CROSSES THE TWO BANKS IS ROBUST IN THE SAFE DIRECTION, WHICH IS "
+      "GATED AND NOT ASSERTED: the saturation leg converts the ARM-OF-RECORD contrast through the "
+      "NAMESAKE fields' measured omega_b response, and the arm of record's excess is the LARGER of "
+      "the two, against an unchanged response span -- so 'beyond what the baryon density reaches' "
+      "holds a fortiori.  ⌗ *`r7639+cc66.15` is why this is declared: a cross-arm comparison is a "
+      "licence defect whichever way it comes out*",
+      (C_C - 1.0) > (C_NSK - 1.0) > 0,
+      f"arm of record {C_C - 1.0:.5f} against the namesake's {C_NSK - 1.0:.5f}")
 check("⚑⚑ ** AND AGAINST THE CONTROL THE TWO RESIDUALS POINT OPPOSITE WAYS: the arm's CONTRAST is four "
       "per cent HIGHER and its ALTERNATION is about two per cent LOWER. **",
       C_C > 1.02 and A_C < A_L,
@@ -487,7 +549,7 @@ check("⚑⚑⚑ ** AND THE ANSWER TO r6897's SINGLE MOST INFORMATIVE NUMBER IS 
       f"contrast {EFF_C/W_L*100:+.2f}% against alternation {EFF_A/W_L*100:+.2f}% of the control's "
       f"omega_b -- opposite signs")
 _inc = np.diff(CR_)
-check("⚑⚑ ** AND THE +23 PER CENT IS A LOWER BOUND, BECAUSE THE CONTRAST RESPONSE SATURATES. **  Over "
+check("⚑⚑ ** AND THE +25 PER CENT IS A LOWER BOUND, BECAUSE THE CONTRAST RESPONSE SATURATES. **  Over "
       "the whole 16 per cent range the contrast spans only 0.028, and its successive increments FALL "
       "monotonically -- 0.0119, 0.0087, 0.0054, 0.0020 -- so a straight line OVERSTATES what omega_b "
       "can deliver above the control.  *** A four per cent contrast excess is therefore beyond what "
@@ -526,7 +588,7 @@ def three_peaks(f):
 
 
 PK = {t: three_peaks(f) for t, f in (('control', 'cc66_r185_verify_lcdm.npz'),
-                                     ('arm', 'cc66_r185_verify_cr.npz'))}
+                                     ('arm', ARM_BANK), ('namesake', NSK_BANK))}
 for t, v in PK.items():
     print(f"    {t:8s} peaks at l = {[round(a) for a, _ in v]}   heights "
           f"{[round(b, 4) for _, b in v]}   P1/P2 = {v[0][1]/v[1][1]:.4f}   "
@@ -648,9 +710,10 @@ WHAT THIS REVISION ESTABLISHES.
 
   ⚠ ** AND PART OF THAT IS A CORRECTION TO THE ORDER'S PREMISE, WHICH MIXED TWO REFERENCES. **  `r6897`
   pairs an alternation excess read against the SKY (P1/P2 = 2.264 against 2.217) with a contrast excess
-  read against the CONTROL (1.040).  *Against the control, on the banked spectra, the arm's P1/P2 is
+  read against the CONTROL (1.040) -- the order's own two figures, quoted and not re-pointed.
+  *Against the control, on the banked spectra, the arm of record's P1/P2 is
   {PK['arm'][0][1]/PK['arm'][1][1]:.4f} against {PK['control'][0][1]/PK['control'][1][1]:.4f} --
-  LOWER.*  ⇒ ** The two were never pointing the same way, and the appearance that they were is the two
+  LOWER, as it was on the namesake's {PK['namesake'][0][1]/PK['namesake'][1][1]:.4f}.*  ⇒ ** The two were never pointing the same way, and the appearance that they were is the two
   references. **
 
   ⚑ ** ONE POSITIVE LOCALISATION, AND ITS SIGN PROBLEM WITH IT. **  The arm's dipole-to-monopole
@@ -680,6 +743,52 @@ WHAT THIS REVISION ESTABLISHES.
   the width story `r6897` withdrew before sending is not reinstated here -- nothing in these numbers
   attacks its reasoning.
 """)
+# ⛭⛭ ** r7641 ⑴: THE HEADER'S FIGURES ARE TIED TO THE COMPUTATION, BECAUSE THEY WENT STALE ONCE. **
+#   Re-pointing the verify-space block moved SEVEN figures the header states, and only one of them was
+#   gated -- the rest were prose, and prose does not red.  *That is the same shape `r7639+cc66.16`
+#   found in the paper and `.21` fixed inside a receipt: a figure a receipt PRINTS but does not
+#   COMPARE is not pinned.*  ⇒ Each is parsed back out of this file's own header and compared with the
+#   value computed above, to the precision the header prints it at.
+_DOC = open(os.path.abspath(__file__), encoding='utf-8').read().split(chr(34) * 3)[1]
+_TIED = [
+    ("the arm-of-record contrast", "$1.04403$", C_C, 1e-5),
+    ("the contrast excess in per cent", "$4.4$ per cent higher", (C_C - 1.0) * 100, 5e-2),
+    ("the alternation shortfall in per cent", "about $2.3$ per cent LOWER",
+     abs(A_C / A_L - 1.0) * 100, 5e-2),
+    ("the contrast's effective omega_b", "$+25.2$", EFF_C / W_L * 100, 5e-2),
+    ("the alternation's effective omega_b", "$-1.9$", EFF_A / W_L * 100, 5e-2),
+    ("the arm of record's P1/P2", "$2.134$", PK['arm'][0][1] / PK['arm'][1][1], 5e-4),
+    ("the control's P1/P2", "$2.191$", PK['control'][0][1] / PK['control'][1][1], 5e-4),
+]
+_BAD = []
+for _what, _lit, _val, _tol in _TIED:
+    _num = float(_lit.split('$')[1].replace('+', ''))
+    if _lit not in _DOC or abs(abs(_val) - abs(_num)) > _tol:
+        _BAD.append(f"{_what}: header {_lit} against computed {_val:.5f}"
+                    + ("" if _lit in _DOC else " [LITERAL ABSENT]"))
+_FACT = abs(EFF_C / EFF_A)
+check("⛭⛭ AND EVERY FIGURE THIS FILE'S HEADER STATES IS COMPARED WITH THE COMPUTATION RATHER THAN "
+      "MERELY PRINTED BESIDE IT -- the contrast, its excess, the alternation shortfall, both effective "
+      "baryon densities and both height ratios -- because re-pointing moved seven of them and only "
+      "one was gated.  ⛔ *A figure a receipt prints but does not COMPARE is not pinned*",
+      not _BAD, "; ".join(_BAD) if _BAD else "7 header figures tied to the computation")
+check("⛭ and the header's 'A FACTOR OF FOURTEEN' is the measured ratio of the two effective baryon "
+      "densities and not a word: it is computed here and rounds to it",
+      'FACTOR OF FOURTEEN' in _DOC and 13.0 <= _FACT < 15.0,
+      f"|{EFF_C / W_L * 100:+.2f} / {EFF_A / W_L * 100:+.2f}| = {_FACT:.1f}")
+
+# ⛔ r7641 ⑴: and the two height ratios get a REAL numeric comparison and not a literal inside a
+#   string.  The tie above parses `$2.134$` out of the header, which `check_figures_pinned` is right to
+#   refuse: digits found by a regex are not a pin.  ⇒ Pinned here as numbers.
+_P12_ARM = PK['arm'][0][1] / PK['arm'][1][1]
+_P12_CTL = PK['control'][0][1] / PK['control'][1][1]
+check("⛭ AND THE TWO HEIGHT RATIOS THIS RECEIPT MEASURES ARE PINNED AS NUMBERS AND NOT AS DIGITS IN A "
+      "STRING: it computes P1/P2 = 2.134 on the arm of record against 2.191 on the control, each "
+      "within half a printed digit, and the arm's is the LOWER -- which is the clause this receipt's "
+      "own argument turns on",
+      abs(_P12_ARM - 2.134) < 0.0005 and abs(_P12_CTL - 2.191) < 0.0005 and _P12_ARM < _P12_CTL,
+      f"arm of record {_P12_ARM:.4f} against the control's {_P12_CTL:.4f}")
+
 print("=" * 100)
 if FAILS:
     print(f"GATES: {len(FAILS)} FAILED:")

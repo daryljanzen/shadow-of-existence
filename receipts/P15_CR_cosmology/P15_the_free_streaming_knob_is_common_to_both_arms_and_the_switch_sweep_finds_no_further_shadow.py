@@ -1228,6 +1228,16 @@ check("⚑⚑ ** AND AT STAGE B's OWN SLICING THE SUM IS EXACT TO MACHINE EPSILO
       "cannot enter, because no batch's own measure changes. ***  ⌗ *Measured at `LSTEP=64 LMAXL=2000`, "
       "the l sampling made coarse so the whole run is affordable, since the projection is what `LSTEP` "
       "costs and the k-sum is what is under test.*",
+      # ⛭ r7641+cc66.47: ** THE `__cr` KEY READ HERE IS DECLARED, which it was not before. **
+      # `r6893_slice_check` carries its arm as a KEY SUFFIX (`rmax__cr`, `rmax__lcdm`) and has NO
+      # arm-of-record key, so this receipt -- which IS on the arm of record, `AOR` at l.989 -- reads
+      # the namesake's entry here.  *** That is admissible and the reason is the quantity: `rmax` is
+      # the residual between a sliced k-sum and a whole one, a statement about the INSTRUMENT's
+      # summation order and not about either arm's cosmology, and the bound it is checked against
+      # (1e-14) is machine precision rather than a measurement. ***  ⌗ *Found by the partition check
+      # at `r7641+cc66.47`, which flagged this receipt as re-pointed AND reading a bank it cannot
+      # reach -- the cross-arm shape -- with no declaration beside it.  The read is unchanged; what
+      # was missing was this note.*
       float(_s2['rmax__lcdm']) < 1e-14 and float(_s2['rmax__cr']) < 1e-14,
       f"lcdm {float(_s2['rmax__lcdm']):.3e} over {int(_s2['nsl__lcdm'])} slices, "
       f"cr {float(_s2['rmax__cr']):.3e} over {int(_s2['nsl__cr'])} -- against 1e-8 when the boundary "

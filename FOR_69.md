@@ -3891,3 +3891,170 @@ The second objection is that this saddles a theory without preferred frames with
 **One state.** The paper is written in its final order. Nothing in it says it was reordered; any record of that belongs in the consolidation ledger.
 
 **Landed r7637 (69).** `corpus/modern_parallax.tex` now runs in the reframed order, with the corpus's own content placed as the order maps it: the register and independence paragraph in the introduction; the augmentation, its theorem and its warrant in a new subsection, sec:augmentation, after sec:simultaneity; the bend-of-the-cut paragraph opening sec:stands; the companion framework's Killing-field sentences with the non-synchronous qualification; l.273's conclusion in sec:reversed, without repeating the history; the floor's coefficient and growth items, the R2 correlation theorem, the R50 single-ray paragraph, the lower-bound-against-an-upper-limit paragraph and the conformal Killing marker kept in sec:floor with every marker on its claim. The density-sets-the-rate passage landed at r7635 is folded into sec:principle, sec:tension and sec:stands. The abstract is rebuilt from the reframed one, with sentences for the bend of the cut, the lapse and shift, the augmentation theorem and the history. The six new references are added in corpus style. The timescape receipt's INDEX row moves to sec:timescape; no other paper refers to a P4 label. The PDF builds with no undefined references, and P4's HTML chapter is rebuilt. Two choices made: the corpus keeps its title, which sixteen papers cite verbatim in their bibliographies; and de Sitter's sentence keeps "will have the same influence", as JanzenEinsteinCosmology quotes it, where the standalone reads "some influence".
+
+---
+
+**`r7641+cc66` — explainer pin `acoustic-run` fired, ROUTED not repaired.** EXPLAINER.md l.261's
+passage is pinned to `corpus/CR_cosmology.tex#sec:refit-bound`, and ruling ⑴ moved that section:
+l.1120's contrast figure goes **`1.040` → `1.044`** on the arm of record, and the sentence is split so
+the figure sits beside `monopole_zero_point` while the $\lVert\Delta\rVert^{2}$ clause stays beside
+`model_difference`.
+
+⇒ **The passage's own claim survives at the precision it states it to.** It says the oscillation
+"swings about *four* per cent wider about its smooth average — a difference of contrast, not of
+phase", and the arm of record's figure is **4.4 per cent**, which still reads as about four. The
+"contrast, not phase" clause is strengthened rather than weakened: the carry was measured as MOOT for
+this statistic (the projection onto the control's own oscillation already sits at its maximum over a
+rigid shift of the arm, at zero shift against a comb period of 315), so there is no phase offset
+hiding in it.
+
+⌗ *Restamped to keep the trunk green, per the checker's own instruction, and recorded here so the
+reread is logged as yours and not performed by the restamper. Nothing in the passage was edited.* If
+you want the figure sharpened from "about four" to "four and a half", that is a rewrite call and it is
+yours.
+
+**`r7641+cc66` ⑶ — explainer pin `acoustic-run` fired again, ROUTED not repaired.** The same
+`sec:refit-bound` section pin, moved by ruling ⑶: l.1103–1106 now reads *"position leads amplitude,
+tilt and damping, though not by much"* with the rescale at `$1.7$`, the damping `$1.1$` and the tilt
+`$0.4$` against `$287$`, replacing `$4.7$ / $1.4$ / $0.1$` against `$283$`.
+
+⇒ **Nothing in the pinned passage states any of those figures**, so its claims are untouched: it
+speaks of the contrast excess, the source-side agreement, the projection and the rate the distance is
+built on, none of which ⑶ moves. ⌗ *Restamped to keep the trunk green, recorded here so the reread is
+yours. Nothing in the passage was edited.*
+
+⚠ **But two figures the passage DOES state are in play and are NOT settled by ⑶** — flagged here so
+the rewrite does not bake them in: *"sits at 2.57 times the standard model's distance"* and *"it sits
+at 1.57 times"*. On the arm of record those measure **`1.41`** and **`1.60`**, and the second now
+EXCEEDS the first, so the passage's *"the freedom closes about a third of the gap and leaves the
+rest"* inverts into freedom widening it. Both are held for your ruling (`FOR_66.md` `cc66.29`,
+`cc66.30`), and neither should be rewritten until you rule.
+
+**`r7641+cc66` ⑸ — explainer pin `acoustic-run` fired a third time, ROUTED not repaired.** Same
+`sec:refit-bound` section pin, moved by ruling ⑸: l.1387's no-truncation claim no longer rests on the
+lower-edge sweep (which narrows the window as well as moving the edge, so a monotone rise under it is
+the narrowing) but on the envelope-free peak-to-trough reading, which uses no envelope and so cannot
+suffer envelope truncation — lowest band at `-0.002` against `+0.069` over the rest.
+
+⇒ **Nothing in the pinned passage mentions the edge sweep, the truncation hazard or the lowest band's
+step**, so its claims are untouched by ⑸. ⌗ *Restamped to keep the trunk green and recorded here so the
+reread is yours; nothing in the passage was edited.*
+
+⌗ *And one thing for the rewrite, learned the hard way landing ⑸: `check_one_state` refuses any
+sentence in a paper that refers to the paper's own prior state — my first wording said the new
+exclusion was "the weaker of the two statements the earlier text made", and the second merely said a
+registered test "is withdrawn". **Both fired.** The gate wants the method stated as it is, so ⑸'s
+sentence now says a lower-edge sweep **does not settle** the question and why, with no history in it at
+all. Worth knowing before the rewrite reaches a passage that discusses a superseded reading.*
+
+**`r7641+cc66` ⑵ — TWO BANK REQUESTS FOR 70, both narrow, both blocking one receipt's headline.**
+`P15_the_full_range_refit_holds_the_background_…` (grid reader 1 of 6) cannot be re-pointed onto the
+arm of record from the second bank, for two reasons read out of the bank's own manifests rather than
+inferred:
+
+1. `refit_grid185_leafrec1` is centred on the arm of record's **fitted** point
+   `68.570730 / 0.291246 / 0.021643 / 1.015066`, where the namesake grid sits at the **distances'**
+   point `68.60 / 0.2973 / 0.0224 / 0.965`. The receipt's whole question is whether freedom prises the
+   background off the point the distances fix — *"with no spectrum involved"* — so a move measured from
+   a fitted centre cannot answer it. ⇒ **Request: a `LEAFREC=1` nine-run response grid at `LMAXL=2000`
+   centred on `(68.60, 0.2973, 0.0224, 0.965)`.**
+2. `refit_grid185_leafrec1/verify_cr.npz` and `spectra/cc66_r185_verify_cr_leafrec1.npz` are
+   **bit-identical** to `cr_base.npz` (`0.0` of the peak), which is 70's own *"on the arm of record
+   are its base"*. So the receipt's Part 2 licence — a real run at the model's minimum — has nothing to
+   exercise. ⇒ **Request: one run at the arm of record's refitted minimum on that grid.**
+
+⌗ *Everything else in that receipt IS readable on the arm of record and is reported at `FOR_66.md`
+`cc66.39` with its figures old → new. And the thirteen `cr`-KEY banks with no arm-of-record key are
+still open after the second bank, which is the keys-not-files distinction from `cc66.17`; one of the
+thirteen (`r6929_scan_cr_leafrec1`) is a form rather than a gap, since that file is the arm itself.*
+
+**`r7641+cc66` ⑵ — the two bank requests WIDEN, and one of 70's manifests disagrees with itself.**
+
+⒜ and ⒝ from the note above are not grid reader 1's bad luck — they are the shape of the second
+bank's grid half, measured across all five: `refit_grid`, `refit_grid185`, `grid_licensed`,
+`grid_oneclock` and `r7201_cc66_loading_lever` all sit at the arm of record's fitted point
+`68.570730 / 0.291246 / 0.021643 / 1.015066`, and all five namesake grids at the distances' point.
+
+⇒ **The request is therefore two grids, and one of them unblocks two receipts:**
+1. a `LEAFREC=1` nine-run response grid at `LMAXL=2000` centred on `(68.60, 0.2973, 0.0224, 0.965)` —
+   grid readers 1 and 3 share it;
+2. the same at `LMAXL=1300` — grid reader 2;
+3. one verification run at each arm's refitted minimum on them.
+
+⛔ **And a bank-record fix that is one line of prose.** `spectra/cc66_refit_verify_cr_leafrec1.npz`
+carries a `held` note saying *"here the arm of record (the cc66 refit minimum, ~68.6077/0.2967/0.0217/
+0.9949, digits unrecorded)"*, while its own `point` and `switches` say `CRH0=68.570730 CROM=0.291246
+WBH2=0.021643 NS=1.015066`. The DATA agrees with the switches — the file is bit-identical to
+`refit_grid_leafrec1/cr_base.npz`. *So the machine-readable half is right and the prose would tell a
+reader there is a verification run at the 132-bin refit minimum when there is none.* ⌗ *Left for 70
+rather than edited, since it is 70's record; the measurement is at `FOR_66.md` `cc66.41`.*
+
+**`r7641+cc66` ⑵ — 70's crossing rebank is CONFIRMED and it rescues a title of mine; one more narrow
+run would unblock the receipt.** Measured independently from the files, not taken from `RESULT.md`:
+the radiation-free ruler reads `171.554` on the arm of record against the namesake's `172.324`, so
+`the_172_is_the_radiation_free_ruler` keeps its title — where r7635's `LEAFSCALES=1` rebuild's `302.9`
+would have collapsed the ruler onto the body's comb. All three crossing paths agree on it to the last
+digit, and all four of the receipt's PART 7 gates hold on the arm of record.
+
+⛔ **But the receipt's other half has no subject there.** It compares the crossing configuration against
+`c54.178_cr`, which its header defines as the same command with `CRH0`, `CROM` and `ZSTART` changed and
+nothing else. On the arm of record both are re-run at the arm of record's point, so comparing the two
+files' own `switches` token by token the ONLY difference in fourteen tokens is `LEAFSCALES`. ⇒ *A
+contrast whose two sides meet once both are moved to the same arm — a fourth kind of block.*
+**Request for 70: a `c54.178_cr` re-run at ITS OWN `CRH0 = 68.62 / CROM = 0.2973` with `LEAFREC = 1`.**
+One run, and it restores the comparison the receipt is about.
+
+⚠ *And one line for `RECIPES.md`: the banks store `manifest` as a Python repr and `config` as JSON, so
+`ast.literal_eval` reads one and fails on the other and `json.loads` the reverse. It cost me two
+crashes; a reader that picks one parser sees half the metadata.*
+
+**`r7641+cc66` ⑵ — THE KEY-GAP ASK IS NOW PRICED, and `cc66.45`'s "one receipt" was my own
+undercount.** The per-receipt key check `bank_gap_sweep.py` left owed is made (`FOR_66.md`
+`cc66.46`). Of the 13 readers of a key-arm bank: **7 BLOCKED, 3 DECLARED** (they read the `cr` key
+knowingly, declare it and gate it — these landed), **3 CLEAR**.
+
+⇒ **One ask clears five**: the `{geometry,noop}` family — `r6897_noop`, `r6911_noop`, `r6915_noop`,
+`r6919_geometry`, `r6919_noop`, `r6925_geometry`, `r6925_noop`, `r6929_geometry`, `r6929_noop` —
+re-run with `__cr_leafrec1` entries unblocks:
+- `the_contrast_excess_…` (**`cc66.46`** itself, the keystone);
+- `the_combs_resolution_…` and `the_visibilitys_clock_…` (**two of Set A's three bank-blocked**);
+- `the_locator_is_good_to_three_hundredths_…`;
+- `a_source_with_no_physics_…`.
+
+The remaining two are separate and name one receipt each: `r6893_slice_check`
+(`the_free_streaming_knob_…`) and `r6897_fields` (`the_held_period_estimator_…`, Set A's third).
+
+⛔ *Worth knowing how the count was reached: the instrument gave three different plausible answers
+first — 5/8, then 10/3, then 10/3 again — and the first scored `held_period_estimator` CLEAR when
+`cc66.17` had measured it blocked, because its keys are built `f'{n}__{t}'` and no literal `__cr`
+exists in the file. The three counts are pinned now. **A file bank cannot reach any of these: the arm
+is a key.**
+
+**`r7641+cc66` ⑵ — CLOSED, with a PARTITION of all 44 and the complete bank inventory** (`FOR_66.md`
+`cc66.47`). The buckets: **20 re-pointed, 6 key-blocked, 2 file-blocked, 16 with no cr read = 44, none
+unaccounted and no overlap.**
+
+**The inventory, priced:**
+
+| ask | releases |
+|---|---|
+| `{geometry,noop}` family with `__cr_leafrec1` keys | 5, incl. `cc66.46` and two of Set A's three |
+| `r6893_switch_screen_cr` (one FILE, no sibling) | **2 outright**; 2 more read it but also need keys |
+| `r6925_visleaf_cr` (one FILE, no sibling) | contributes to 2 — *a gap no earlier entry of mine had catalogued* |
+| `r6897_fields` keys | 1 — `the_held_period_estimator_…`, Set A's third |
+| a `LEAFREC=1` grid at the distances' point, `LMAXL=2000` and `1300` | grid readers 1, 2, 3 |
+| `c54.178_cr` at its own `68.62 / 0.2973` with `LEAFREC=1` | the crossing receipt's second half |
+
+⛔ *And the partition caught a landed receipt of mine — `the_free_streaming_knob_…` — reading
+`r6893_slice_check`'s `rmax__cr` key UNDECLARED while itself on the arm of record. Investigated before
+calling it a defect: `rmax` is a sliced-versus-whole k-sum residual checked against `1e-14`, a
+statement about the instrument's summation order and not about either arm, so the read stays and the
+declaration is now in the receipt.*
+
+⛭⛭ **A RULE FOR YOU TO CONSIDER, from a measured asymmetry.** Expanding file-name templates changes no
+verdict, because the corpus requires a presence check naming each bank FILE, so every templated file
+also appears as a literal. **There is no such requirement for KEYS** — which is exactly why
+`the_held_period_estimator_…` could build every key as `f'{n}__{t}'`, name none of them, and defeat a
+literal search that `cc66.17` had already contradicted. ⇒ *A receipt reading a two-arm bank should name
+the arm keys it reads, the way it already names the files. One line per receipt, and this class of
+defect becomes greppable instead of inferrable. Not written into any gate — yours to rule on.*

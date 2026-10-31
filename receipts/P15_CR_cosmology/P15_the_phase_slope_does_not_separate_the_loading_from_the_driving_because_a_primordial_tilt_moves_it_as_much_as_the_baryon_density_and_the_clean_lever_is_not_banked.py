@@ -229,13 +229,32 @@ for _f in _gridnpz:
     _z = np.load(_f, allow_pickle=True)
     if 'switches' in set(_z.files) and 'RBFAC' in str(_z['switches']):
         _nrb_grid += 1
-_ASKDIR = os.path.join(BW, 'r7201_cc66_loading_lever')
-_rb_outside = [f for f in _rbfiles if not os.path.abspath(f).startswith(os.path.abspath(_ASKDIR))]
+# ⛔⛭⛭ r7641+cc66.42: ** THIS LIMB WAS GREEN BY A PATH-PREFIX ACCIDENT AND IS NOW GREEN ON PURPOSE. **
+#   It named one directory and tested it with a RAW string prefix -- `startswith(abspath(ASKDIR))`,
+#   no separator.  70's second bank added three more `RBFAC` spectra in
+#   `r7201_cc66_loading_lever_leafrec1/`, and that name HAPPENS to begin with the old one, so the
+#   test went on passing.  *Measured at `r7641_cc66_grid_readers/phase_slope_on_the_arm_of_record.py`:
+#   separator-aware, three files fell outside and this limb would have been RED on `main`, for a
+#   reason unconnected to what it checks.  Had the bank called that directory anything else, it
+#   would have been red.*
+#   ⇒ *** The ask's runs now live in TWO directories -- the original and its arm-of-record re-run --
+#       so both are NAMED and the test is separator-aware.  The claim is unchanged; what is gone is
+#       its dependence on one sibling's name sharing a prefix with another. ***
+_ASKDIRS = (os.path.join(BW, 'r7201_cc66_loading_lever'),
+            os.path.join(BW, 'r7201_cc66_loading_lever_leafrec1'))
+_ASKDIR = _ASKDIRS[0]
+_rb_outside = [f for f in _rbfiles
+               if not any(os.path.abspath(f).startswith(os.path.abspath(d) + os.sep)
+                          for d in _ASKDIRS)]
 print(f"      of the {_nsw} that record their switches, {_nrb} name `RBFAC` and {_nnd} name "
       f"`NODRIVE`")
 print(f"      of the {len(_gridnpz)} spectra in the two nine-run grids, {_nrb_grid} name `RBFAC`")
 print(f"      and of the {_nrb} that do, {_nrb - len(_rb_outside)} sit under "
-      f"`{os.path.basename(_ASKDIR)}/` -- the runs THIS receipt's ask produced")
+      + " or ".join(f"`{os.path.basename(d)}/`" for d in _ASKDIRS)
+      + " -- the runs THIS receipt's ask produced, and their arm-of-record re-run")
+for _d in _ASKDIRS:
+    print(f"        {len([f for f in _rbfiles if os.path.abspath(f).startswith(os.path.abspath(_d) + os.sep)])}"
+          f" in `{os.path.basename(_d)}/`")
 print("      ⌗ At `cc66.155`, when this was first run, that last number was 0 of 0: the lever was")
 print("        nowhere in tree.  `r7201` granted the runs and `r7203` settled them, so the count")
 print("        rising is this receipt's ask being MET and not its premise failing.  What the")
@@ -246,7 +265,10 @@ check("Ⓑ①  ** `RBFAC` -- the lever that scales the baryon LOADING alone -- a
       "claim is grid-scoped rather than tree-scoped BECAUSE THIS RECEIPT'S OWN ASK HAS SINCE BEEN "
       "GRANTED AND RUN: every `RBFAC` spectrum now in tree is one of those runs, which is the ask "
       "discharged and not a counterexample to it.  Tree-scoped it would have to fail the moment it "
-      "succeeded",
+      "succeeded.  ⛭ *And the ask's runs are now in TWO directories -- the original and 70's "
+      "arm-of-record re-run -- both NAMED here with a separator-aware test, because a raw prefix "
+      "kept this limb green only by the second directory's name happening to begin with the "
+      "first's (`r7641+cc66.42`)*",
       _nrb_grid == 0 and _nsw >= 18 and _rb_outside == [])
 
 _sw = {}

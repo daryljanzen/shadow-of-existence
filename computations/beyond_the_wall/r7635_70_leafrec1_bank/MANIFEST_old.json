@@ -269,7 +269,8 @@
    "LEAFSCALES": 1
   },
   "switches": "ARM=cr BSPLIT=1 CRH0=68.570730 CRIC=branchpoint CROM=0.291246 ETAEND=4000 HIER=1 KBATCH=300 LEAFREC=1 LEAFSCALES=1 LMAXL=2000 NK=600 NS=1.015066 WBH2=0.021643 ZSTART=3e7",
-  "held": "the point: the namesake sat at its own CRH0/CROM with ZSTART=3e7 and LEAFSCALES=0; here the arm of record (68.62, 0.2973); CRIC=branchpoint kept"
+  "held": "the point: the namesake sat at its own CRH0/CROM with ZSTART=3e7 and LEAFSCALES=0; here the arm of record (68.62, 0.2973); CRIC=branchpoint kept",
+  "superseded": "r7639+70: rebanked at the crossing set's recorded LEAFSCALES=0; see r7639_70_second_bank/MANIFEST.json"
  },
  "r6784_cr_crossing_hier_noCRIC_leafrec1": {
   "stem": "r6784_cr_crossing_hier_noCRIC_leafrec1",
@@ -285,7 +286,8 @@
    "LEAFSCALES": 1
   },
   "switches": "ARM=cr BSPLIT=1 CRH0=68.570730 CROM=0.291246 ETAEND=4000 HIER=1 KBATCH=300 LEAFREC=1 LEAFSCALES=1 LMAXL=2000 NK=600 NS=1.015066 WBH2=0.021643 ZSTART=3e7",
-  "held": "the point: the namesake sat at its own CRH0/CROM with ZSTART=3e7 and LEAFSCALES=0; here the arm of record (68.62, 0.2973)"
+  "held": "the point: the namesake sat at its own CRH0/CROM with ZSTART=3e7 and LEAFSCALES=0; here the arm of record (68.62, 0.2973)",
+  "superseded": "r7639+70: rebanked at the crossing set's recorded LEAFSCALES=0; see r7639_70_second_bank/MANIFEST.json"
  },
  "r6784_cr_crossing_los_leafrec1": {
   "stem": "r6784_cr_crossing_los_leafrec1",
@@ -301,7 +303,8 @@
    "LEAFSCALES": 1
   },
   "switches": "ARM=cr BSPLIT=1 CRH0=68.570730 CRIC=branchpoint CROM=0.291246 ETAEND=4000 KBATCH=300 LEAFREC=1 LEAFSCALES=1 LMAXL=2000 NK=600 NS=1.015066 WBH2=0.021643 ZSTART=3e7",
-  "held": "the point: the namesake sat at its own CRH0/CROM with ZSTART=3e7 and LEAFSCALES=0; here the arm of record (68.62, 0.2973); line-of-sight, CRIC=branchpoint kept (README: drop HIER, change nothing else)"
+  "held": "the point: the namesake sat at its own CRH0/CROM with ZSTART=3e7 and LEAFSCALES=0; here the arm of record (68.62, 0.2973); line-of-sight, CRIC=branchpoint kept (README: drop HIER, change nothing else)",
+  "superseded": "r7639+70: rebanked at the crossing set's recorded LEAFSCALES=0; see r7639_70_second_bank/MANIFEST.json"
  },
  "cc66_cr_x_h686_pol_leafrec1": {
   "stem": "cc66_cr_x_h686_pol_leafrec1",
@@ -317,7 +320,7 @@
    "LEAFSCALES": 1
   },
   "switches": "ARM=cr CRH0=68.570730 CROM=0.291246 HIER=1 LEAFREC=1 LEAFSCALES=1 LMAXL=1300 LSTEP=2 NS=1.015066 WBH2=0.021643 ZSTART=3e7",
-  "held": "the point: the namesake sat at its own CRH0/CROM with ZSTART=3e7 and LEAFSCALES=0; here the arm of record (68.60, 0.2973)"
+  "held": "the point: the namesake sat at its own CRH0/CROM with ZSTART=3e7 and LEAFSCALES=1 (r7640, 60: the namesakes reproduce at LEAFSCALES=1 to zero, and LEAFSCALES=0 misses r_s by 110.4 Mpc; the earlier note here said 0 and was wrong); here the arm of record (namesake 68.60, 0.2973)"
  },
  "cc66_cr_x_h6862_pol_leafrec1": {
   "stem": "cc66_cr_x_h6862_pol_leafrec1",
@@ -333,7 +336,7 @@
    "LEAFSCALES": 1
   },
   "switches": "ARM=cr CRH0=68.570730 CROM=0.291246 HIER=1 LEAFREC=1 LEAFSCALES=1 LMAXL=1300 LSTEP=2 NS=1.015066 WBH2=0.021643 ZSTART=3e7",
-  "held": "the cc66_cr_x_h686_pol run: the pair differed ONLY in CRH0 (68.60 vs 68.62), and on the arm of record both are the one point; the point: the namesake sat at its own CRH0/CROM with ZSTART=3e7 and LEAFSCALES=0; here the arm of record"
+  "held": "the cc66_cr_x_h686_pol run: on the arm of record the pair is one point. Its NAMESAKES are two runs (68.60 and 68.62, Dl 1.19e-3 apart, r7640) and one rebuild cannot be compared with both. the point: the namesake sat at its own CRH0/CROM with ZSTART=3e7 and LEAFSCALES=1 (r7640, 60: the namesakes reproduce at LEAFSCALES=1 to zero, and LEAFSCALES=0 misses r_s by 110.4 Mpc; the earlier note here said 0 and was wrong); here the arm of record"
  },
  "cc66_cr_x_h686_L2000_leafrec1": {
   "stem": "cc66_cr_x_h686_L2000_leafrec1",
@@ -349,7 +352,7 @@
    "LEAFSCALES": 1
   },
   "switches": "ARM=cr CRH0=68.570730 CROM=0.291246 HIER=1 LEAFREC=1 LEAFSCALES=1 LMAXL=2000 LSTEP=2 NS=1.015066 WBH2=0.021643 ZSTART=3e7",
-  "held": "the point: the namesake sat at its own CRH0/CROM with ZSTART=3e7 and LEAFSCALES=0; here the arm of record (68.60, 0.2973)"
+  "held": "the point: the namesake sat at its own CRH0/CROM with ZSTART=3e7 and LEAFSCALES=1 (r7640, 60: the namesakes reproduce at LEAFSCALES=1 to zero, and LEAFSCALES=0 misses r_s by 110.4 Mpc; the earlier note here said 0 and was wrong); here the arm of record (namesake 68.60, 0.2973)"
  },
  "cc66_refit_verify_cr_leafrec1": {
   "stem": "cc66_refit_verify_cr_leafrec1",
@@ -365,7 +368,7 @@
    "LEAFSCALES": 1
   },
   "switches": "ARM=cr CRH0=68.570730 CROM=0.291246 HIER=1 LEAFREC=1 LEAFSCALES=1 LMAXL=1300 LSTEP=8 NS=1.015066 WBH2=0.021643 ZSTART=3e7",
-  "held": "the point: the namesake sat at its own CRH0/CROM with ZSTART=3e7 and LEAFSCALES=0; here the arm of record (the cc66 refit minimum, ~68.6077/0.2967/0.0217/0.9949, digits unrecorded)"
+  "held": "the point: the namesake sat at its own CRH0/CROM with ZSTART=3e7 and LEAFSCALES=1 (r7640, 60: the namesakes reproduce at LEAFSCALES=1 to zero, and LEAFSCALES=0 misses r_s by 110.4 Mpc; the earlier note here said 0 and was wrong); here the arm of record (namesake: EXACTLY CRH0=68.6077 CROM=0.2967 WBH2=0.0217 NS=0.9949, the four quoted figures, r7640)"
  },
  "cc66_cr_x_lstep1_leafrec1": {
   "stem": "cc66_cr_x_lstep1_leafrec1",
@@ -381,7 +384,7 @@
    "LEAFSCALES": 1
   },
   "switches": "ARM=cr CRH0=68.570730 CROM=0.291246 HIER=1 LEAFREC=1 LEAFSCALES=1 LMAXL=1300 LSTEP=1 NS=1.015066 WBH2=0.021643 ZSTART=3e7",
-  "held": "\u26a0 LOW CONFIDENCE: no command was recorded for the namesake (default background, LMAXL=1300, LSTEP=1); rebuilt as HIER=1 LSTEP=1 LMAXL=1300 on the arm of record"
+  "held": "RECOVERED (r7640, 60): the namesake sat at the BUILT-IN DEFAULT point (H0 73, Om 0.3066) with ZSTART=3e7, the onset NOT solved (its l_A 172.8407 at the default D_M; the defaults with ZSTART=3e7 reproduce all three scales to zero). The low-confidence note is retired at the background layer; its path switches (HIER) are still unrecorded. Rebuilt here as HIER=1 LSTEP=1 LMAXL=1300 on the arm of record"
  },
  "r6794_cr_crossing_kcont_summed_leafrec1": {
   "stem": "r6794_cr_crossing_kcont_summed_leafrec1",
@@ -397,6 +400,7 @@
    "LEAFSCALES": 1
   },
   "switches": "ARM=cr BSPLIT=1 CRH0=68.570730 CROM=0.291246 ETAEND=4000 HIER=1 KBATCH=150 KCONT=1 LEAFREC=1 LEAFSCALES=1 LMAXL=2000 NK=900 NS=1.015066 WBH2=0.021643 ZSTART=3e7",
-  "held": "six KSLICE pieces of 450 summed (2700 continuum modes), as r6794; the point: the namesake sat at its own CRH0/CROM with ZSTART=3e7 and LEAFSCALES=0; here the arm of record (68.62, 0.2973)"
+  "held": "six KSLICE pieces of 450 summed (2700 continuum modes), as r6794; the point: the namesake sat at its own CRH0/CROM with ZSTART=3e7 and LEAFSCALES=0; here the arm of record (68.62, 0.2973)",
+  "superseded": "r7639+70: rebanked at the crossing set's recorded LEAFSCALES=0; see r7639_70_second_bank/MANIFEST.json"
  }
 }
