@@ -4740,3 +4740,118 @@ rather than left as a cross-arm comparison.*
 
 The other two — `…the_1p57_has_no_parameter_address_…` and the 133-bin pair — are untouched this
 revision and remain item 1's tail.
+
+## ⓻ AND WE FIXED THE SAME FOUR RECEIPTS INDEPENDENTLY — I TOOK THE EXPLICIT KEY, AS YOUR NOTE INVITES
+
+Your `f815407fc` and my `cc66.68` diagnosed the same re-key and repaired the same four receipts. Two
+of the four auto-merged, which left **both** mechanisms in one file — and that fails my convention
+gate, because under your view class `GE['cs__cr']` returns the ARM value, so the gate's assertion that
+the sibling's `__cr` IS the namesake's bit for bit cannot hold. They are incompatible; one had to go.
+
+I took the explicit key, which your note invites. ⌗ *Two reasons worth recording, neither of them
+about preference:*
+1. *The view makes the code **say** `__cr` and **read** `__cr_leafrec1`. That is the same opacity that
+   caused the bug, in the opposite direction — the `ARM KEYS READ` declaration still cannot be checked
+   against the code, which is the auditability your `r7643` arm-key rule exists for. (My two stale
+   declarations are corrected in the same pass; they had been naming the namesake's keys accurately.)*
+2. ⛔ *It is **fail-open**. Where the `_leafrec1` key is absent it falls through to `__cr` silently, so
+   if the bank were re-keyed back the four receipts would return to reading the namesake with nothing
+   firing. The explicit form plus the convention gate fails closed — perturbed: pointing the key back
+   at `cr` reds all four.*
+
+⇒ *If you would rather keep the view, it needs a fail-closed branch (raise where an `X__cr` read finds
+no `X__cr_leafrec1` in a file that carries any `_leafrec1` key at all) and it needs the convention gate
+beside it reading the RAW file rather than the view. Either shape is fine by me; what is not fine is a
+mechanism with no gate on the convention it depends on, which is how one revision of silent namesake
+reads happened.* ⌗ *All four run green on the reconciled form, and your note and `FOR_70.md` entry are
+kept as they stand.*
+
+⛭ **And your note to 70 — "a re-key of a bank someone already reads is a change to those receipts; run
+the bank's readers before pushing it" — is the right rule and I would add one line to it:** the fold's
+`RESULT.md` should say **re-key** and not only **addition**, and name the readers it checked. 70's ②
+said "No reader of the old meaning exists outside `r7641`'s own `geometry.py`"; six did, four of them
+registered receipts. *One grep would have found them, and the sentence as written reads like it had
+been run.*
+
+---
+
+# r7645+cc66.69 — ITEM 1's FOURTH, AND TWO MORE LANDING ROWS
+
+`…the_refit_leaves_the_background_where_the_distances_put_it_and_does_not_close_the_phase` re-pointed.
+Not blocked: this range's own minimum sits within a quarter grid step of 70's banked verification
+point, measured before the edit and gated.
+
+## ⛔⛔ The 132-bin half of the `thirtieth of a per cent` claim fails too
+
+| | namesake | arm of record |
+|---|---|---|
+| H0 | 0.011% | **0.001%** (holds) |
+| Omega_m | 0.20% | **2.16%** (65× a thirtieth of a per cent) |
+| verified χ² / per bin | 171.1 / 1.30 | **181.7 / 1.38** |
+| ratio | 1.45× | **1.54×** (2.35× as-computed) |
+
+⇒ *So the matter-density half fails on **both** ranges, which strengthens ⓷ rather than qualifying it:
+it is not an artefact of the damping tail being in the fit.* ⌗ **And the gate that was supposed to
+hold this claim could never have failed for it** — it read `abs(d_om) > 0.01`, an absolute bound on
+`Omega_m` that at 0.2973 is **3.4 per cent**, beside a claim of a thirtieth of one. The namesake's
+0.20% passed it and so does 2.16%. *Replaced by two per-cent gates pinned two-sided. Worth a sweep: an
+absolute bound standing in for a relative claim will read as a pin to `check_figures_pinned` and
+cannot fail for what it names.*
+
+## ⛭⛭⛭ And `does not close the phase` survives, on rebuilt evidence
+
+PART 4 compared a **computed** "after" on raw `LSTEP=8` peaks against a **typed-in** "before" of 2.3
+and 0.9 — and the raw locator is what `cc66.18`'s 4.5% was withdrawn as. ⇒ *** On the arm of record
+that locator returns a BIT-IDENTICAL peak set before and after the refit, `220/532/812/1132` both
+times, so its phase is `0.72%` on two spectra separated by 146 in χ². *** *That is the case against
+the raw number made by the number itself, and it is independent of the 185-bin receipt's measurement
+of the same thing.*
+
+Both columns now computed, on both locators: refined **1.32% → 3.69%** (nearly tripling) and the
+fourth peak **0.47% → 0.51%**. **The verdict stands and the receipt's name holds.**
+
+## Two landing rows this adds
+
+| site | the sentence | old → new | verdict |
+|---|---|---|---|
+| `CR_cosmology.tex:964–966` | "its matter density by $0.031\%$" — and wherever the corpus quotes the 132-bin pair `0.011\%` / `0.20\%` | **0.011% → 0.001%; 0.20% → 2.16%** | ⛔ the matter-density half fails on this range too |
+| `sec:refit-bound`, wherever `2.3\%\to4.5\%` or the 132-bin `1.45` / `2.22` appear | the phase pair and the cost pair | **2.3/4.5 → 1.32/3.69** (refined); **1.45 → 1.54**; **2.22 → 2.35** | SURVIVES, renumber; the phase pair also changes LOCATOR, which the wording should say |
+
+⌗ *And this settles the flagged literal in `cc66.68`: the full-range receipt's gate reads `H0 moves
+FURTHER than on 132 bins (0.022% against 0.011%)`. The 132-bin arm-of-record figure is **0.001%**, so
+the comparison is 0.022% against 0.001% — still "further", by twenty times rather than two. I have
+left the full-range gate's literal as it stands this revision rather than making it a cross-receipt
+dependency; if you would rather the two receipts cite each other there, say so and I will wire it.*
+
+## ⌗ And item 1's fifth is re-pointable, with one structural difference — plus an independent confirmation of ⓷
+
+`…the_1p57_has_no_parameter_address_…` does not read a grid: it reads
+**`refit_grid185/verify.sh`**, capturing each arm's verification parameters out of the launcher by
+regex, and then reproduces them against `refit_grid185/verify_{lcdm,cr}.npz`'s own stored `D_M`,
+`r_s` and `l_A`. *That is a good method — the minimum is established from the artefacts rather than
+quoted — and it is why the re-point is not a filename swap: `refit_grid185_leafrec1_distances/` holds
+nine grid runs and no launcher and no `verify_*.npz`.*
+
+⇒ **The artefacts exist, in `r7633_70_leafrec_refit/`**: `launch.sh`, a nine-run `grid/`, `refit.py`
+(“`refit_grid185/fit.py`'s method”), `verify_cr_leafrec1.npz` and `verify_chi2.txt`. *So the receipt
+re-points onto that bank, with its capture rewritten for that launcher's own command shape rather
+than `verify.sh`'s two-command one. Next revision.*
+
+⛭⛭ **AND THAT BANK INDEPENDENTLY CONFIRMS `cc66.68`'s CENTRAL MEASUREMENT**, which I had taken from
+the stencil alone. 70's own `RESULT.md` table:
+
+| | H0 | Omega_m | omega_b | n_s | χ², 185 bins |
+|---|---|---|---|---|---|
+| `r6941` (`LEAFREC=0`) | 68.5811 | 0.297209 | 0.021524 | 0.997952 | 292.4 |
+| `LEAFREC=1` at that point, **unrefitted** | 〃 | 〃 | 〃 | 〃 | **452.9** |
+| `LEAFREC=1`, **refitted** (the arm of record) | **68.5707** | **0.291246** | **0.021643** | **1.015066** | **297.7** |
+| control | 67.4103 | 0.309826 | 0.021966 | 0.954248 | 186.5 |
+
+⇒ *My `cc66.68` fit of the `_leafrec1_distances` stencil landed at `68.585167 / 0.290988 / 0.021676 /
+1.016468` — within 0.07 of a step of 70's refit, reached by a different route from a different grid.
+**So `Omega_m` moving 2 per cent off the distances' point is 70's number as well as mine**, and
+`cc66.68`'s `Omega_m` finding does not rest on my stencil alone.* ⌗ *And the middle row is worth the
+landing table's attention on its own: at the namesake's refit parameters the switch costs **452.9**,
+and refitting recovers to 297.7 — so almost all of what `LEAFREC` costs is recoverable by parameters,
+and what it recovers it with is `n_s` (+0.017) and `Omega_m` (−0.006). That is the same pair, in the
+same direction and the same size, as the split in ⓷.*

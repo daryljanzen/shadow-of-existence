@@ -30994,3 +30994,66 @@ points"; at the stencil's own resolution they are one point. That reading nearly
 was not needed.* ⌗ *What DOES move: `Omega_m` goes −2.164 per cent on the 132 bins against the
 namesake's −0.20, so the matter-density half of the `thirtieth of a per cent` claim fails on BOTH
 ranges, not only the full one.*
+
+---
+
+# r7645+cc66.69 — THE 132-BIN REFIT RE-POINTED, AND BOTH HALVES OF ITS TITLE HAD TO BE RE-EARNED
+
+`…the_refit_leaves_the_background_where_the_distances_put_it_and_does_not_close_the_phase`, item 1's
+fourth. The arm's grid moves to `refit_grid_leafrec1_distances/`; the control's does not.
+
+## ⛭ ⓵ THE VERIFICATION POINT CHECKED BEFORE THE RE-POINT WAS MADE
+
+70 banked `cc66_refit_verify_cr_leafrec1` at the **full-range** minimum. **Measured first**, because a
+verification at the wrong point is invisible: this range's own minimum is `68.599120 / 0.290866 /
+0.021839 / 1.012701`, within `0.014 / 0.025 / 0.245 / 0.118` of a grid step of the banked point. *Not
+blocked, and gated.*
+
+## ⛔⛔ ⓶ "LEAVES THE BACKGROUND WHERE THE DISTANCES PUT IT" SPLITS
+
+H0 moves **0.001%** and holds; `Omega_m` moves **2.16%**, 65 times a thirtieth of a per cent. *On the
+namesake both were inside, at 0.011% and 0.20%. The 185-bin range says the same with 0.022% and
+2.123% (`cc66.68`), so it is not a property of this range.*
+
+⛔ **AND THE GATE THAT WAS SUPPOSED TO HOLD IT COULD NEVER HAVE FAILED FOR IT.** It read
+`abs(d_om) > 0.01` — an ABSOLUTE bound on `Omega_m`, which at 0.2973 is **3.4 per cent**, beside a
+claim of a thirtieth of one. *The namesake's 0.20% passed it and so does 2.16%: sixteen times the
+arm's actual move and a hundred times the claim.* ⇒ *Replaced by two per-cent gates, pinned two-sided,
+so H0's half asserts that it holds and `Omega_m`'s asserts that it does not.*
+
+## ⛭⛭⛭ ⓷ "DOES NOT CLOSE THE PHASE" SURVIVES, BUT ITS EVIDENCE HAD TO BE REBUILT
+
+PART 4's table compared a **computed** "after" on raw `argrelextrema` peaks against a **typed-in**
+"before" of `2.3` and `0.9`. *And the raw locator is the one `cc66.18`'s `4.5%` was withdrawn as.*
+
+⇒ *** AND THE RE-POINT SETTLES IT WITHOUT AN ARGUMENT: on the arm of record the raw locator returns
+a BIT-IDENTICAL peak set before and after the refit — `220/532/812/1132` both times, so its phase is
+`0.72%` on two spectra separated by `146` in χ². *** *A locator that reports the same number for two
+different spectra is not measuring the spectra.*
+
+Both columns are now computed, on both locators, from the two spectra the receipt already reads:
+
+| | peaks | phase % out | 4th peak % |
+|---|---|---|---|
+| before, raw | 220 / 532 / 812 / 1132 | 0.72 | 0.72 |
+| before, refined | 220.28 / 535.64 / 814.06 / 1129.13 | **1.32** | 0.47 |
+| after, raw | 220 / 532 / 812 / 1132 | 0.72 | 0.72 |
+| after, refined | 222.04 / 535.85 / 815.00 / 1129.68 | **3.69** | 0.51 |
+
+⇒ **On the refined locator the verdict STANDS: the phase nearly triples, `1.32% → 3.69%`, and the
+fourth peak barely moves, `0.47% → 0.51%`.** *So this file's name holds. What changed is that the
+evidence is now a locator validated to 0.02 in `ell` instead of one quantised to 8.*
+
+⌗ *I first read the raw `0.7%` against the typed-in `2.3` as an INVERSION — "the refit closes the
+phase" — and the receipt's own guard fired on it. Computing the `before` is what showed the `0.7%` is
+the same number on both sides. The guard caught a reading I had not finished making.*
+
+## ⌗ ⓸ AND THE REST
+
+`+10.9` miss on the arm's verified run against the control's `+0.2` — same mechanism as the full range
+(`n_s` 2.39 steps here, 2.57 there, the quadratic built on one). Gate kept and inverted. PART 5's
+`1.45x`/`2.22x` prose was also hardcoded while its own table computed the ratio; now computed and
+pinned, `1.54x` verified against `2.35x` as-computed, freedom closing 60 per cent of the excess over
+one. Both re-points perturbed: each reds several gates.
+
+**Remaining in item 1:** `the_1p57_has_no_parameter_address` and the 133-bin pair.
