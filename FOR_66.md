@@ -30717,3 +30717,77 @@ a bank that does not exist**: `a_source_with_no_physics_…` (`r6919_geometry`, 
 `the_held_period_estimator_…` (`r6897_fields`) — both re-checked by `cc66.64`'s substitution test and
 neither unblocked. ⌗ *Every one of the eight found a statistic that does not survive the move, and
 `cc66.60`'s single number is why all eight did.*
+
+---
+
+# `r7645+cc66.66` — the headline receipt re-pointed, and ⛭⛭ **I reproduce 70's number instead of quoting it, which is the check that catches a pointer error**
+
+First of the six headline re-points. `cc66_cr_x_h686_L2000` → `cc66_cr_x_h686_L2000_leafrec1_distances`
+— 70's `r7643` bank, the original recipe run verbatim with `LEAFREC=1` at the distances' point. ⇒
+**One red, predicted with certainty before measuring; `exit=0`; six perturbations all on target;
+`figure_pin_baseline.tsv` −3.**
+
+## ⛭⛭ ⓵ THE AGREEMENT WITH 70, AND WHY IT IS THE POINT
+
+70 banked and scored this configuration with **this receipt's own** operator and bins. Scored here:
+
+| | 70's bank | this receipt |
+|---|---|---|
+| arm lensed χ² | 502.1 | **502.09** |
+| arm per bin | 2.71 | **2.714** |
+| lensed ratio | 2.346× | **2.3456×** |
+
+⇒ *** That agreement is not a formality. The one error in this pass was a **pointer** error — my 1.41
+was the REFITTED file read through the no-fit pointer — and the only thing that catches that class is
+scoring the same file two ways and requiring them to agree. So the agreement is **gated**, not
+noted. ***
+
+⛔ **And the perturbation proves it.** Pointing the arm at the refitted file (`..._leafrec1`, no
+`_distances`) reproduces **1.4113** — my wrong figure, exactly — and the receipt now reddens **three**
+ways: the ratio pin, the 70-agreement gate, and the background check, which reads `l_A` 302.9431 where
+the no-fit configuration carries 302.8891. ⌗ *The third one is the diagnostic: it says the file is the
+wrong **configuration**, not merely the wrong number.*
+
+## ⇒ ⓶ THE HEADLINE, OLD → NEW
+
+| | namesake | arm of record |
+|---|---|---|
+| arm lensed / per bin | 550.47 / 2.976 | **502.09 / 2.714** |
+| arm unlensed | 1169.82 | **1129.76** |
+| **lensed ratio** | **2.5716×** | **2.3456×** |
+| unlensed ratio | 1.6809× | **1.6233×** |
+| lensing's reduction, arm | ×2.125 | **×2.250** |
+| control (unmoved) | 696.0 / 214.06, ×3.251 | *identical* |
+
+⌗ *The arm's `l_A` is **bit-identical** across the move at 302.8891, because `LEAFREC` does not touch
+the background. **So this is a recombination result and not a distances one** — which is worth gating,
+and is what made the pointer error visible.*
+
+⇒ **The claim survives and is not weakened**: 2.35× is still worse than the 133-bin unlensed 1.98×,
+still the unfavourable comparison, and still the one `sec:SR-15` must quote. The 8.8 per cent
+improvement does not change which comparison the paper quotes.
+
+## ⛔ ⓷ AND THE TOLERANCE IT REPLACES WAS SIX PER CENT WIDE
+
+The old gate was `abs(ratio − 2.57) > 0.15` — **six per cent of the figure**, wide enough to admit a
+value from a different arm. ⇒ *Re-pinned at 2.3456 with a tolerance of 0.01, which is inside
+`check_figures_pinned`'s own allowance and would not have admitted 2.57.*
+
+## ⌗ ⓸ AND A LIMITATION OF THE FIGURE GUARD, NAMED RATHER THAN WORKED AROUND
+
+This receipt's gates are written `if abs(x − c) > tol: fail.append(...)` — a two-sided pin in
+substance. **`check_figures_pinned` looks for `abs(.. c ..) < t` and does not recognise the
+`> tol`-and-fail form**, so every figure the row printed read as unpinned. ⇒ *Rather than rewrite the
+receipt's style I added the row's guarantee in the form the guard verifies, and left the receipt's own
+gates as they are. Three baselined figures — including **two paper sites**, `1.16` and `214.1` in
+`CR_cosmology.tex` — are now genuinely pinned and leave the baseline.*
+
+## ⚠ ⓹ AND THE PAPER IS NOW STALE AT FOUR SITES, WHICH IS ITEM 2's JOB
+
+`2.57` is printed at **l.135, l.141, l.570** and **l.954** (with `550.5` and `2.98 per bin` at l.954)
+— four of the sites your landing set already names. ⌗ *I have not touched one of them. They go in the
+single landing table with every figure old → new, which is what I do next after the remaining five
+re-points.*
+
+**Remaining in item 1:** the no-fit confrontation, the full-range refit,
+`the_1p57_has_no_parameter_address`, `the_refit_leaves_the_background`, the 133-bin pair.
