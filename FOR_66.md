@@ -29573,3 +29573,123 @@ patch changed the file; nothing yet verifies it reached the branch it meant to.*
 
 ⇒ **Six perturbations red, every patch verified applied.** Next: ⑷ and ⑹ with their receipts, then
 `.40`, then the thirteen the bank actually released.
+
+---
+
+# `r7643+cc66.49` — ⑷ and ⑹ landed, the `.40` receipt re-pointed, and ⛭⛭ **its title's obstruction turns out to be the namesake arm's**
+
+Order item 1, complete. ⑷ and ⑹ are in the paper, the `.40` receipt is on the arm of record, and the
+one thing I did not expect is that re-pointing it **inverted its headline caveat**: the driving half it
+says cannot be read reads here.
+
+## ⛭ ⓵ ⑷ AND ⑹, LANDED — AND BOTH VERIFIED AGAINST THE COMPUTING RECEIPT BEFORE THE PAPER
+
+**⑷, the `Split that way` passage.** Landed with my `.32` clause replacing yours, per your ruling: the
+step's *sign* is the amplitude's, the amplitude-only term supplies about seven tenths of the statistic,
+the phase-only term's own step is half again the statistic's and points the same way, so **the two
+channels partly cancel in the composite rather than one being a remainder of the other**. The old text
+read the phase channel as an order of magnitude below the amplitude's and reversing with the window;
+neither is true on the re-derivation, and the passage no longer says either.
+
+**⑹, at both sites, with both wordings as you accepted them.** `one constant to eight per cent across
+the bands, scattered rather than sloped, with no trend in wavenumber at either first or second order`,
+and `it over-delivers the whole excess by up to twice and falls a hair short of it in the top band`.
+Reflowed after.
+
+## ⛭⛭ ⓶ THE `.40` RECEIPT: YOUR OPTION 1, AND THE RE-POINT TURNED ITS OWN CAVEAT OVER
+
+Re-pointed as ruled — the CR side of both nine-run grids and both CR driving spectra onto their
+arm-of-record siblings, the control left where it is because the bank says it does not move, and
+**`BASEVAL`'s `cr` row read out of the grid's own manifest rather than typed**, because every gated
+quantity here is a logarithmic derivative and the base value is its divisor. *Left at the distances'
+point it would have divided the tilt direction by a base `5.2` per cent wrong and the baryon direction
+`3.4` per cent wrong — the two the headline ratio is built from.*
+
+**⛔⛭⛭ And then `Ⓓ①` inverted.** As registered it asserted that the CR banked driving-ON spectrum has
+**no** integer-spaced peak series, so the common-offset statistic could not read it — its gaps missing
+`1` by `0.275` against the grid's `0.105`. *On the arm of record the same spectrum reads `0.103`
+against the grid's own `0.102`: a factor of `1.0`.*
+
+⇒ *** So the obstruction the receipt's title names is the NAMESAKE arm's clause, not this arm's, and
+the step it blocked is now measured: `Δφ = +0.12611`, `Δalt = −0.02201`, against the control's
+same-vintage `+0.12649` and `−0.02469`. Both oppose this arm's own baryon direction (`−0.0287`,
+`+0.0131`) on **both** components — so the orthogonality the whole ask rested on holds **on the arm
+itself** and not only on the control. *** That is `Ⓓ③`, new.
+
+**And what does not change: the ask.** `Ⓔ②` still asks ten runs, not eight — *its justification is
+what moved.* The pair is wanted for **vintage** now (it was run at `L3000`, the grids were not), and
+no longer because the statistic cannot read the banked one. Size unchanged.
+
+**`Ⓐ②`'s third limb went the other way and is stated as the namesake's.** It asserted three things:
+the de-tilt collapses the control violation by ten or more, the de-tilted reading is
+window-independent, and **the raw reading is not** — that last being the evidence that the de-tilt is a
+repair and not a tuning. The first two hold here (a factor of `21`, de-tilted spread `6` per cent).
+The third does not: *this arm's raw reading is already window-independent, at a spread of `1.4` per
+cent against the namesake's `21`.* ⇒ *The de-tilt is still **forced** — `Ⓐ①` fires on this arm too —
+and still removes the violation; what is absent is the drift. So the repair-not-tuning argument is
+marked as resting on the namesake arm, and `Ⓐ②ᵇ` **measures** the absent drift rather than passing
+over it.*
+
+| | namesake arm | arm of record |
+|---|---|---|
+| separation, common offset | `11.3×` | `11.7×` |
+| separation, alternation | `21.4×` | `18.3×` |
+| de-tilt factor on the control violation | `20` | `21` |
+| raw reading's window spread | `21%` | `1.4%` |
+| CR driving-ON gap error vs its grid | `0.275 / 0.105` | `0.103 / 0.102` |
+| CR driving step | *not claimed* | ⛭⛭ `+0.12611 / −0.02201` |
+
+**11 checks, all pass, `exit=0`.** INDEX row, appendices, PDF and HTML regenerated.
+
+## ⛔ ⓷ ONE DEFECT IN MY OWN RE-POINT, CAUGHT BY READING THE OUTPUT AND NOT THE DIFF
+
+The gap table in section D **hard-coded its own four paths**. I re-pointed `_pairs` and the table kept
+reading the namesake's driving pair, so the gap errors it printed were the other arm's *while the
+section above them had moved*. Two lists that have to agree and nothing making them agree. ⇒ *The
+table now takes all four paths **from `_pairs`**, so there is one list.* **A pointer-first re-point
+would have published the namesake's numbers under an arm-of-record heading and passed every gate.**
+
+## ⛭ ⓸ THE FOUR MOVED PINS, PERTURBED — AND THE HELPER NOW CHECKS IT HIT WHAT IT AIMED AT
+
+My standing gap was that a perturbation could redden *something* and be counted. It now requires the
+**targeted** gate to be among the reds.
+
+| perturbation | target | result |
+|---|---|---|
+| the driving pair back to the namesake files | `Ⓓ①` | ⛭ RED, on target |
+| the driving step's sign reversed | `Ⓓ③` | ⛭ RED, on target |
+| the de-tilt taken out of the sweep's de-tilted row | `Ⓐ②` | ⛭ RED, on target |
+| the oneclock grid's CR side back to the namesake directory | `Ⓐ②ᵇ` | ⛔ **red, but NOT on target** |
+
+⌗ *The fourth is a result in its own right rather than a failure: the namesake grid carries **no
+manifest**, so the receipt hit my own refusal — `the arm-of-record grid carries no manifest, so its
+centre cannot be read and no logarithmic derivative below may be normalised` — and asserted nothing.
+**The base value cannot silently come from the wrong grid.** Re-aimed so the sweep alone reads the
+namesake with the base left where it is: `Ⓐ②ᵇ` red, on target.*
+
+## ⛭ ⓹ THE ARM-KEY NAMING RULE, APPLIED — AND HERE IT HAS NOTHING TO LIST, WHICH IS THE LINE
+
+Your ruling was to apply it to each receipt as I re-point it. This one reads **no arm-suffixed keys at
+all**: it separates the arms by *file* and by *directory*, and out of each archive reads only `ls`,
+`Dl`, `l_A` and `manifest`. ⇒ *Stated in the receipt as `ARM KEYS READ: NONE`, with the reason, so a
+reader hunting a hidden `__cr` read is **told** there is none instead of inferring it from silence.
+An absent line and a line saying `none` look the same to a grep only if nobody writes the second one.*
+
+## ⛔ ⓺ ONE FLAG ON ⑹, AND IT IS MINE TO CLEAR UNDER ITEM 2 RATHER THAN YOURS
+
+⑹'s paragraph now carries **two arms in four lines**: `one constant to eight per cent across the
+bands` is my arm-of-record re-derivation, and three lines later `an intercept against a slope worth
+three per cent of it` is `the_term_mix_…`'s namesake figure (`|slope×⟨q²⟩|/|intercept| = 0.031`).
+
+⌗ *Correcting my own earlier note: I wrote that this receipt was in the third bank's released set. It
+is not — it reads `r6959_eta_cr` and `r6941_fine_cr`, neither of which the third bank touched. **Both
+already have `_leafrec1` siblings on disk**, so the receipt is re-pointable now and sits in the
+thirteen I called genuinely available.* ⇒ *So the three per cent moves when I re-point it under item
+2, and I will bring that clause with it in the same pass unless you want it held. Flagged rather than
+left to surface as a mixed-arm paragraph with my name on it.*
+
+## ⇒ ⓻ WHAT I AM ON NEXT
+
+Item 2, re-pointing what the third bank released — `r6893_switch_screen_cr` and `r6925_visleaf_cr`,
+and `r6929_geometry`, which your order does not name but the bank closed. `the_term_mix_…` with them,
+for ⓺. **⑵'s corpus sites stay untouched: you land them all at once.**
