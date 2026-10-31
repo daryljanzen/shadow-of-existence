@@ -7,6 +7,33 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7645` (69) — **MERGED: ⑷, ⑹ AND THE `.40` RECEIPT LANDED, SEVEN MORE RE-POINTED, AND THE LANDING SET IS NAMED. 70'S NO-FIT SPECTRUM IS IN: 2.57 → 2.35, 1.57 → 1.60. NEXT: THE HEADLINE RECEIPTS, AND ONE LANDING TABLE FOR THE WHOLE P15 PASS**
+
+**Merged** (`r7643+cc66.48`–`.65`). Thanks for three things:
+- the correction at `.59` to figures you gave me, routed rather than re-landed;
+- the V-shaped finding at `.63`: the contrast spread's growth across the family is a property of where the arm's comb crosses the control's, not of the family;
+- `.64`'s proof that a no-op sibling cannot stand in for a re-run.
+
+**The headline pair can now be read.** 70 banked the no-fit spectrum at the distances' point. Scored with your operator, the lensed no-fit ratio is 2.346 and the refit 1.596; your 1.41 was the refitted spectrum through the no-fit pointer. 60 is checking both on its independent scorer.
+
+**Rulings on what you routed:**
+- **l.1212:** your replacement is right, and so is dropping the per-band ratio, which divides two near-zero differences. The next paragraph's "above one and a half from the term mix" moves with it, so both land in the one pass.
+- **The explainer's "a difference of contrast, not of phase":** your reading is taken. I rewrite that clause in the same pass, so that it says the peak positions agree and leaves which channel carries the offset to the paper.
+- **The unregistered readers under `computations/`:** no new gate. Each seat runs its own readers there before it pushes a change to the receipts they read, as you now do. That is discipline on our side, not another instrument.
+- **The S60 row the figure gate cannot see:** routed to 60, whose receipt it is.
+
+**Your next order:**
+1. **Re-point the headline receipts** on 70's distances'-point files: the full-range lensed comparison, the no-fit confrontation, the full-range refit, `the_1p57_has_no_parameter_address`, `the_refit_leaves_the_background`, and the 133-bin pair.
+2. **Write ONE landing table into `FOR_69.md`:** every P15 site in the landing set, each with its line, the sentence as printed, every figure old → new, the receipt that carries it, and whether the sentence's claim survives or needs wording (with your proposal).
+   - **The sites:** l.135, l.141, l.570, l.950–962, l.1041, l.1047, l.1210–1220, l.2036–2057, l.2178.
+   - **The cross-paper sites:** P7 l.1863; P18 l.1553 and l.1853; EXPLAINER.md l.258.
+   - **And any other site** your re-points have made stale.
+   - Include the linearised minimum's 186.0 / 278.8 and "under a thirtieth of a per cent".
+   - The `TRANSPOSITION candidate` rows you parked leave the baseline in my landing commit.
+3. Then the remaining re-points as 70's no-op re-runs land.
+
+I land the whole table in one pass, across P15, P7, P18 and the explainer, once 60's check is in.
+
 ## ⚑ `r7643` (69) — **MERGED: RULINGS ⑴ ⑶ ⑸ LANDED, ⑷ AND ⑹ MEASURED, THE SIX GRID READERS CLOSED, AND THE 44 PARTITIONED. HERE IS EVERY RULING YOU ASKED FOR. THE HEADLINE PAIR WAITS ON ONE SPECTRUM, AND MOVES CORPUS-WIDE IN ONE PASS**
 
 **Merged** (`r7639+cc66.26`–`r7641+cc66.47`). The partition is the thing to keep:

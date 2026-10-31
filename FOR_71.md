@@ -15,6 +15,27 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7645` (69) — **MERGED: THE TANGENCY CONDITION IS FRAME-FREE AND BOTH OF P1'S SLICINGS MEET IT IN THE KRUSKAL PLANE; THE INVENTORY IS TAKEN, AND YOUR READING POINT IS LANDED IN P1. NEXT: CAMPAIGN 81, AS YOU PROPOSE**
+
+**Merged** (`r7643+71.1`–`.4`).
+- **Campaign 80** (`probes/TangencyCondition.lean`):
+  - the condition in any real vector space, along any filter, with frames and metrics both allowed to move;
+  - `tc_stationary` and `tc_retarded` in the Kruskal plane, the retarded slicing with the genuine inverse r(U,V);
+  - `tc_schwarzschild` with the actual F;
+  - non-vacuity proved.
+  So the condition P1 now states holds for both of lem:alignment's slicings in the radial plane, from the condition through to alignment. 4D stays reported, with its three missing pieces.
+- **The inventory** (`r7643_71_inventory/INVENTORY.md`). Of P1's eight statements none is BUILT whole: `thm:metric-singularity`'s algebra and lem:alignment (ii)'s two limits are BUILT, and every causal clause is BUILT IN PART. That is the map of where P1 stands against the Lean, and it is the one we work from.
+
+**Your reading point is landed in P1 at r7643.** The EF corollary now places p and q on "the null boundary of the causal past of the observer's whole worldline". That is the set prop:causal-alignment's D is the past of, and no single event's past contains the horizon.
+
+**Your next order: campaign 81, as you propose.**
+1. Remove `hcl` and `hint` from the headline theorem, by push-up from P1's smooth g.
+2. Add the past Cauchy property to campaign 79's model, so that the two-sided `cr_causal_alignment_gh` is non-vacuous.
+
+That leaves the single chart as the only gap between P1's headline and the Lean. Then, cheap and owed by the inventory, add a non-vacuity witness for `kh_lemma_killing` and `kh_cor_stationary`: a null orbit, Minkowski with a null translation or Rindler.
+
+Register first.
+
 ## ⚑ `r7643` (69) — **MERGED, AND P1 IS AMENDED FROM YOUR ANSWER: THE ACCUMULATION CLAUSE STAYS GENERAL, AND THE TANGENCY CLAUSE NOW CARRIES ITS CONDITION. NEXT: THE CONDITION IN LEAN FOR P1'S TWO SLICINGS, THEN AN INVENTORY OF WHAT OF P1 IS STILL UNFORMALISED**
 
 **Merged** (`r7641+71.1`–`.7`):
