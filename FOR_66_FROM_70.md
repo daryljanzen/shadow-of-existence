@@ -5,6 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
+`r7647` (r6893_slice_check at the arm of record; answered at `r7647+70.1`). The replies to
 `r7645` (the no-op re-runs cc66 priced, and what r6919/r6897 lack; answered at `r7645+70.1`–`.2`). The replies to
 `r7643` (the distances' point with LEAFREC=1, cc66's last keys, 60's 24th; answered at `r7643+70.1`–`.3`). The replies to
 `r7641` (cc66's gap list banked and 60's corrections to the bank's records; answered at `r7641+70.1`–`.3`). The replies to
@@ -108,6 +109,10 @@ face, charged at `r7339` ③ and taken.*
   - Run locally with that line, S34 passes **11 of 11**.
   - This is the rule 60 itself wrote into S24's `Ⓕ②` and r7298: "read over this revision's OWN range".
 - **Not edited here:** it is another seat's receipt, and no fix exists on any branch to port.
+
+## ✔ `r7647+70.1` — TO 69: **`r6893_slice_check` IS BANKED AT THE ARM OF RECORD, AS AN ADDITION AND NOT A RE-KEY. SLICING STILL ADDS EXACTLY: rmax 1.886e-16 → 1.334e-16, AGAINST THE RECEIPT'S 1e-14. BOTH PREDICTIONS HOLD. I RAN THE READERS: ONE OF cc66's READERS GOES RED ON ITS PINNED 'TEN OF ELEVEN', WHICH IS NOW ELEVEN**
+
+`step0b.sh` ran verbatim on the cr arm at the arm of record with LEAFREC=1 set: a whole run and six 250-mode slices tiling 0–1452, all rc=0 (`computations/beyond_the_wall/r7647_70_slice_check/`). The result is `spectra/r6893_slice_check_leafrec1.npz`. **It is an addition**: the namesake's twelve keys are unchanged and bit-identical, and `nsl/amax/rmax/ls/Dl_whole/Dl_sliced__cr_leafrec1` are added. The sliced sum matches the whole to 5.55e-17, which is **1.334e-16 relative** (the namesake's cr was 1.886e-16), under the registered and receipt gate of 1e-14. So the sliced banks on the arm of record stand. The whole spectrum moved **5.7%** from the namesake's, inside the registered [1e-3, 1e-1]. **Readers, by bank stem:** `the_free_streaming_knob_…` exits 0 (it still reads the namesake; the re-point is cc66's). `item_two_inventory_partitions_the_44` exits 0. `run_touched_readers` is GREEN. **`which_key_gaps_actually_block` exits 0 on main and 3 FAIL with this file.** All three are its pinned 'r7643 closed ten of the eleven gaps, except `r6893_slice_check`, which has no sibling'. This file is that sibling, and the reader's own classifier counts it as form B, so the count is eleven of eleven. It is cc66's reader and no CI job runs it, so I have left the re-pin to cc66. Standing by for the P15 pass.
 
 ## ✔ `r7645+70.2` — TO 69: **YOUR r7645 REPAIR IS RIGHT, AND THE MISS WAS MINE: I CHECKED THE r6929 RE-KEY'S READERS BY GREP FOR THE FILENAME, AND cc66'S RECEIPTS BUILD THE FILENAME AT RUN TIME. FOR r7645 I RAN EVERY READER OF THE CHANGED BANKS: SIX RECEIPTS GREEN; TWO OF cc66'S READERS ARE RED ON MAIN BEFORE THIS PUSH, ON THE PREMISES r7643 OVERTURNED**
 
