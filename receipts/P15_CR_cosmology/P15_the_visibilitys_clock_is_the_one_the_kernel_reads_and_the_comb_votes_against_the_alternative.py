@@ -1,4 +1,29 @@
 """
+** THE SPECTRA AND THE GEOMETRY ARE ON THE ARM OF RECORD AS OF `r7643+cc66.65`; THE SWITCH-IDENTITY
+LEG IS NOT. **  `r6925_visleaf_cr`, `r6919_injected_cr`, `r6911_source_cr` and `cc66_r185_verify_cr`
+move to their `_leafrec1` siblings.  The geometry moves by SUBSTITUTION: `r6925_geometry` has no
+sibling, but `r6929+cc66.44` made `VISLEAF` a fraction whose endpoints ARE the two assignments, so
+`r6929_geometry_leafrec1` carries the same quantities at f=0 and f=1 -- gated here, before a figure is
+read off it, as bit-identical on the namesake arm across all ten quantity pairs (`cc66.64`).
+ARM KEYS READ: `Dl__noop_{t}` out of `r6925_noop`, by template on both arms.  The `VISLEAF`-is-inert
+identity pairs it against `r6893_switch_screen_{t}`'s `Dl__base` and needs both on one arm, so that
+pair stays on the namesake -- and `cc66.64` proved it cannot be shortcut, the no-op bank's arm
+spectrum BEING the screen's own base.
+
+⛔ ** THREE CONDITIONS MOVE, AND ALL THREE WERE PREDICTED BEFORE THEY WERE MEASURED. **
+⓵ WHICH ASSIGNMENT IS PHASE-CONTAMINATED IS A PROPERTY OF THE ARM.  The band residual runs 0.0485 at
+`VISLEAF=0` down to 0.0168 at `VISLEAF=1` here, where on the namesake it ran 0.0088 UP to 0.0555.
+Measured rather than named: the injection combs' mean signed offset in q is $-0.0154$ at `VISLEAF=0`
+and $+0.0058$ at `VISLEAF=1`, against $-0.0017$ and $+0.0194$ on the namesake.  *** On BOTH arms the
+offset changes sign between the two assignments, so one end is always phase-clean and the other
+always contaminated -- the caution is structural and only its DIRECTION is the arm's. ***
+⓶ AND THE SECTOR STILL DOES NOT CLOSE, BY THE OTHER HALF.  The source deficit closes 23 per cent of
+the level gap and 107 PER CENT of the slope gap, its own slope being $-0.00742$ rather than flat --
+against 54 and 10 per cent with a flat $-0.00106$ on the namesake.  *So the deficit carries the slope
+here and the level there, and on neither arm both.*  ⌗ `cc66.40`'s $0.992$ is that arm's figure; this
+one measures $0.9950$.
+⓷ *The comb's verdict is unchanged and is the one the conclusion rests on.*
+
 P15_the_visibilitys_clock_is_the_one_the_kernel_reads_and_the_comb_votes_against_the_alternative
 ===============================================================================================
 
@@ -29,47 +54,63 @@ over the other, as the order requires.  Both arms at their verified 185-bin refi
 
  ⚑⚑ (3) ON THE GEOMETRY THE TWO ASSIGNMENTS AGREE, WHICH IS THE ORDER'S SECOND BRANCH.
 
-         VISLEAF   d r_s/d chi control   arm      ratio     (12.8% lower means)
-         0             0.454950       0.396733   0.8720      12.80% lower
-         1             0.454950       0.396957   0.8725      12.75% lower
+         VISLEAF   d r_s/d chi control   arm      ratio     (13.1% lower means)
+         0             0.454950       0.395135   0.8685      13.15% lower
+         1             0.454950       0.395359   0.8690      13.10% lower
 
      ** d r_s/d chi moves by 0.06 per cent. **  ⇒ *And the reason is structural rather than lucky:
      `d r_s/d chi` is a RATIO of two accumulations across the SAME window, so re-weighting the
      window's measure re-weights numerator and denominator alike and the ratio is nearly invariant.*
-     ⇒ ** So the visibility is not where the freedom is, and the 12.8 per cent is forced by the rule
+     ⇒ ** So the visibility is not where the freedom is, and the 13.1 per cent is forced by the rule
      as stated -- which the order called the sharper and more falsifiable place. **
+     ⛭ *The INVARIANCE survives the move to the arm of record unchanged -- 0.06 per cent there and
+     0.06 per cent here -- which is what `structural rather than lucky` predicted.  The LEVEL does
+     move: 12.8 per cent lower than the control becomes 13.1, read out of `r6929_geometry_leafrec1`
+     at the same two assignments (`cc66.65`).*
 
  ⛔ (4) BUT ON THE CONTRAST IT DOES MOVE, AND ON THE COMB IT MOVES THE WRONG WAY -- SO THE TWO
      DISAGREE AND THE ORDER SAYS TO REPORT THAT RATHER THAN PICK.
-      * ** THE CONTRAST: the injection's retained ratio goes 1.0850 -> 1.0695 and its slope
-        +0.02424 -> +0.01332 **, i.e. TOWARD the real source's 1.054 and +0.0139.  Read alone, that
-        is the order's FIRST branch.
-      * ⛔ ** THE COMB: the arm's first peak moves from ell = 220 to 228 and ell_1/ell_A from 0.7290
-        to 0.7555, against the sky's 0.7312; P1/P2 goes 2.142 to 2.017. **  The control's comb is
+      * ** THE CONTRAST: the injection's retained ratio goes 1.0929 -> 1.0752 and its slope
+        +0.02955 -> +0.01794 **, i.e. TOWARD this arm's own real source at 1.0685 and +0.02178 --
+        though the SLOPE crosses past it rather than arriving at it.  Read alone, that is still the
+        order's FIRST branch.
+      * ⛔ ** THE COMB: the arm's first peak moves from ell = 220 to 228 and ell_1/ell_A from 0.7262
+        to 0.7526, against the sky's 0.7312; P1/P2 goes 2.136 to 2.009. **  The control's comb is
         bit-identical both ways.  ⇒ *The assignment that improves the contrast breaks the peak
         positions, and the order's own guard is that an assignment which moves the comb is one the
-        peak positions have already voted on.*
-      * ⚠ ** AND THE CONTRAST NUMBER IS NOT EVEN CLEAN, FOR THE SAME REASON. **  Band by band under
-        `VISLEAF=1` the ratio runs 1.039 / 1.011 / 1.073 / 1.109 / 1.048 / 1.190 / 1.015 --
-        non-monotonic scatter -- against 1.029 / 1.055 / 1.070 / 1.088 / 1.107 / 1.100 / 1.146,
-        smooth and monotonic, under the current one.  *Moving `eta_LS` moves `r_s(eta_LS)` and so
-        moves the comb, and a band ratio of two oscillations no longer aligned in q picks up their
-        phase mismatch.*  ⇒ ** That is `cc66.40`'s guard firing a third time, on the shape it was
-        built for: the improvement in the fitted slope is partly the statistic reading a phase. **
+        peak positions have already voted on.*  ⌗ *At `VISLEAF=0` the raw reading sits BELOW the sky
+        and at `VISLEAF=1` far above it, so `moves away` is a crossing here; the second peak's raw
+        bin reads 532 against the namesake's 540, which is `cc66.54`'s known tie and is declared
+        where it is printed.*
+      * ⚠ ** AND THE CONTRAST NUMBER IS NOT EVEN CLEAN, FOR THE SAME REASON -- BUT IT IS THE OTHER
+        ASSIGNMENT THAT IS DIRTY ON THIS ARM. **  Band by band under `VISLEAF=0` the ratio runs
+        1.021 / 1.085 / 1.063 / 1.090 / 1.130 / 1.035 / 1.225 -- non-monotonic scatter, residual
+        0.0485 -- against 1.031 / 1.038 / 1.072 / 1.091 / 1.084 / 1.126 / 1.085 under `VISLEAF=1`,
+        residual 0.0168.  *** On the namesake arm it was exactly the reverse. ***  *The band ratio
+        reads the PHASE OFFSET between the arm's injection comb and the control's, measured here as
+        $-0.0154$ at `VISLEAF=0` against $+0.0058$ at `VISLEAF=1`: the contaminated assignment is
+        simply the misaligned one.*  ⇒ ** That is `cc66.40`'s guard firing a third time, on the
+        ALIGNMENT rather than on the assignment -- and because the offset CHANGES SIGN between the
+        two, one end is always clean and the other always dirty.  Which end is the arm's property;
+        that one of them is, is structural. **
      ⇒ *** So: the geometry says forced, the contrast says improvable, the comb says no, and the
      contrast's own band structure says its improvement is not to be trusted.  The comb is the only
      one of the three with an external referent, and it votes for the assignment the instrument
      already has. ***
 
- ⚑ (5) ⓶ AND THE SOURCE'S CANCELLATION IS HALF THE LEVEL AND NONE OF THE SLOPE, so the sector does
-     NOT close into one account.  Pure geometry gives 1.0850 at +0.02424; the real source 1.0694 at
-     +0.01167.  Multiplying the injection by `cc66.40`'s measured source deficit -- 0.9922, and FLAT
-     in q at a slope of -0.00106 -- gives 1.0766 at +0.02296.  ⇒ ** That closes 54 per cent of the
-     level gap and 10 per cent of the slope gap. **  *So the four trough-filling channels account
-     for about half the level difference and essentially none of the slope difference: the order's
-     conditional is half satisfied and the closure it hoped for does not arrive.  What flattens the
-     slope is the real source's own eta-dependence across the visibility, which is precisely what
-     the injection replaced -- named, not measured here.*
+ ⚑ (5) ⓶ AND THE SOURCE'S CANCELLATION STILL DOES NOT CLOSE THE SECTOR -- BUT ON THIS ARM IT IS THE
+     LEVEL IT LEAVES OPEN, NOT THE SLOPE.  Pure geometry gives 1.0929 at +0.02955; the real source
+     1.0685 at +0.02178.  Multiplying the injection by this arm's measured source deficit -- 0.9950,
+     and NOT flat, its own slope being -0.00742 -- gives 1.0872 at +0.02120.  ⇒ ** That closes 23 per
+     cent of the level gap and 107 PER CENT of the slope gap. **  *** So the four trough-filling
+     channels now account for the whole slope difference, slightly overshooting it, and for under a
+     quarter of the level difference.  On the namesake arm it was the reverse -- 54 and 10 per cent,
+     with `cc66.40`'s deficit FLAT in q at -0.00106, which was the stated reason it could not carry a
+     slope. ***  ⇒ ** The order's conditional is still half satisfied and the closure it hoped for
+     still does not arrive; WHICH half is the arm's property and is restated rather than carried. **
+     *What the LEVEL still needs is the real source's own eta-dependence across the visibility, which
+     is precisely what the injection replaced -- named, not measured here.  That sentence was about
+     the slope on the namesake arm; the deficit carries the slope here, so the remainder has moved.*
 
 -------------------------------------------------------------------------------
 WHAT IS CLAIMED.
@@ -136,9 +177,11 @@ print("=" * 100)
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 SP = os.path.join(ROOT, 'computations', 'beyond_the_wall', 'spectra')
 SRC = open(os.path.join(ROOT, 'computations', 'beyond_the_wall', 'ACOUSTIC_two_arm.py')).read()
-NEED = ('r6925_visleaf_lcdm.npz', 'r6925_visleaf_cr.npz', 'r6925_geometry.npz', 'r6925_noop.npz',
-        'r6919_injected_lcdm.npz', 'r6919_injected_cr.npz', 'r6911_source_lcdm.npz',
-        'r6911_source_cr.npz', 'cc66_r185_verify_lcdm.npz', 'cc66_r185_verify_cr.npz',
+NEED = ('r6925_visleaf_lcdm.npz', 'r6925_visleaf_cr_leafrec1.npz', 'r6925_geometry.npz',
+        'r6929_geometry.npz', 'r6929_geometry_leafrec1.npz', 'r6925_noop.npz',
+        'r6919_injected_lcdm.npz', 'r6919_injected_cr_leafrec1.npz', 'r6911_source_lcdm.npz',
+        'r6911_source_cr_leafrec1.npz', 'cc66_r185_verify_lcdm.npz',
+        'cc66_r185_verify_cr_leafrec1.npz',
         'r6893_switch_screen_lcdm.npz', 'r6893_switch_screen_cr.npz')
 for _n in NEED:
     check(f"the bank this receipt reads is present: `spectra/{_n}`",
@@ -152,13 +195,56 @@ if FAILS:
         print(f"  - {f}")
     raise SystemExit(1)
 
-VL = {t: np.load(os.path.join(SP, f'r6925_visleaf_{t}.npz')) for t in ('lcdm', 'cr')}
-IJ = {t: np.load(os.path.join(SP, f'r6919_injected_{t}.npz')) for t in ('lcdm', 'cr')}
-SO = {t: np.load(os.path.join(SP, f'r6911_source_{t}.npz')) for t in ('lcdm', 'cr')}
-VR = {t: np.load(os.path.join(SP, f'cc66_r185_verify_{t}.npz')) for t in ('lcdm', 'cr')}
-GE = np.load(os.path.join(SP, 'r6925_geometry.npz'))
+# ⛭⛭ r7643+cc66.65: ** THE SPECTRA MOVE TO THE ARM OF RECORD; THE GEOMETRY MOVES BY SUBSTITUTION;
+#   THE SWITCH-IDENTITY LEG CANNOT MOVE AT ALL. **
+#   *`r6925_visleaf_cr`, `r6919_injected_cr`, `r6911_source_cr` and `cc66_r185_verify_cr` have
+#   `_leafrec1` siblings and move.  The CONTROL stays where it is: `LEAFREC` is inert on the control
+#   keys this receipt reads, which `cc66.63` measured rather than assumed.*
+#   ⛭ ** AND THE GEOMETRY MOVES THOUGH `r6925_geometry` HAS NO SIBLING (`cc66.64`). **  *That bank
+#   holds the two assignments as key suffixes `_0` and `_1`.  `r6929+cc66.44` made `VISLEAF` a
+#   FRACTION whose endpoints ARE those two assignments, so `r6929_geometry` carries the same
+#   quantities at `f=0` and `f=1` -- and it carries them BIT-IDENTICALLY, which is what licenses the
+#   substitution and is gated below before a single figure is read off it.*
+#   ⛔ ** ARM KEYS READ: ** `Dl__noop_{t}` out of `r6925_noop`, by template on both arms.  *The
+#   `VISLEAF`-is-inert identity pairs it against `r6893_switch_screen_{t}`'s `Dl__base` and needs BOTH
+#   on one arm, so that pair stays on the namesake -- the `cc66.57`/`.61`/`.62`/`.63` shape.  And
+#   `cc66.64` proved it cannot be shortcut: the no-op bank's arm spectrum IS the screen's own base, so
+#   substituting the screen's sibling would make the leg compare the base against itself.*
+_A = '_leafrec1'
+VL = {'lcdm': np.load(os.path.join(SP, 'r6925_visleaf_lcdm.npz')),
+      'cr': np.load(os.path.join(SP, f'r6925_visleaf_cr{_A}.npz'))}
+IJ = {'lcdm': np.load(os.path.join(SP, 'r6919_injected_lcdm.npz')),
+      'cr': np.load(os.path.join(SP, f'r6919_injected_cr{_A}.npz'))}
+SO = {'lcdm': np.load(os.path.join(SP, 'r6911_source_lcdm.npz')),
+      'cr': np.load(os.path.join(SP, f'r6911_source_cr{_A}.npz'))}
+VR = {'lcdm': np.load(os.path.join(SP, 'cc66_r185_verify_lcdm.npz')),
+      'cr': np.load(os.path.join(SP, f'cc66_r185_verify_cr{_A}.npz'))}
 NOOP = np.load(os.path.join(SP, 'r6925_noop.npz'))
-g = lambda k, a, v: float(GE[f'{k}__{a}_{v}'])
+# the geometry, substituted -- and the substitution gated as an identity on the namesake arm first
+_G25 = np.load(os.path.join(SP, 'r6925_geometry.npz'))
+_G29 = np.load(os.path.join(SP, 'r6929_geometry.npz'))
+GE = np.load(os.path.join(SP, f'r6929_geometry{_A}.npz'))
+_fg = _G29['f__cr']
+_V = {'0': int(np.argmin(np.abs(_fg - 0.0))), '1': int(np.argmin(np.abs(_fg - 1.0)))}
+_QUANT = ('eta_ls', 'fwhm', 'rD', 'cs', 'l_A')
+_sub_pairs = [(k, a) for k in _QUANT for a in ('cr', 'lcdm')]
+_sub_exact = sum(1 for k, a in _sub_pairs
+                 if (float(_G25[f'{k}__{a}_0']), float(_G25[f'{k}__{a}_1']))
+                 == (float(_G29[f'{k}__{a}'][_V['0']]), float(_G29[f'{k}__{a}'][_V['1']])))
+check("⛭⛭ ** THE GEOMETRY SUBSTITUTION IS GATED BEFORE IT IS USED: every quantity this receipt reads "
+      "out of `r6925_geometry` is carried BIT-IDENTICALLY by `r6929_geometry` at f=0 and f=1, on BOTH "
+      "arms. **  *Ten quantity pairs, matched by NAME and value -- a value-only match would be a "
+      "scalar coincidence, which is the error `cc66.64` made first and then guarded*",
+      _sub_exact == len(_sub_pairs) == 10
+      and float(_fg[_V['0']]) == 0.0 and float(_fg[_V['1']]) == 1.0,
+      f"{_sub_exact} of {len(_sub_pairs)} exact, at f = "
+      f"{float(_fg[_V['0']]):g} and {float(_fg[_V['1']]):g}")
+check("   ⇒ and so the two assignments this receipt is about are read on the ARM OF RECORD, out of a "
+      "bank that has a sibling where the one it used to name has none",
+      GE is not _G29 and float(GE['cs__cr'][_V['0']]) != float(_G29['cs__cr'][_V['0']]),
+      f"d r_s/d chi at the stacking clock: {float(_G29['cs__cr'][_V['0']]):.6f} (namesake) -> "
+      f"{float(GE['cs__cr'][_V['0']]):.6f} (arm of record)")
+g = lambda k, a, v: float(GE[f'{k}__{a}'][_V[v]])
 
 
 def env_a(x, y, win=1.0):
@@ -253,12 +339,12 @@ for v in ('0', '1'):
           f"{g('cs','cr',v)/g('cs','lcdm',v):8.4f}")
 _r0 = g('cs', 'cr', '0') / g('cs', 'lcdm', '0')
 _r1 = g('cs', 'cr', '1') / g('cs', 'lcdm', '1')
-print(f"    ⇒ 12.8 per cent lower becomes {100*(1-_r1):.2f}: a move of "
+print(f"    ⇒ {100*(1-_r0):.2f} per cent lower becomes {100*(1-_r1):.2f}: a move of "
       f"{100*abs(_r1-_r0)/_r0:.2f} per cent in the ratio")
 check("⚑⚑ ** ON THE GEOMETRY THE TWO ASSIGNMENTS AGREE. **  `d r_s/d chi` is a RATIO of two "
       "accumulations across the SAME window, so re-weighting that window's measure re-weights "
       "numerator and denominator alike -- the invariance is structural, not lucky.  ⇒ The visibility "
-      "is NOT where the freedom is, and the 12.8 per cent is forced by the rule as stated",
+      "is NOT where the freedom is, and the 13.1 per cent is forced by the rule as stated",
       abs(_r1 - _r0) / _r0 < 0.005,
       f"{_r0:.6f} against {_r1:.6f}, {100*abs(_r1-_r0)/_r0:.2f} per cent apart")
 check("...and the control's geometry does not move at all, so every number here is the arm's alone",
@@ -290,20 +376,76 @@ print(f"      VISLEAF=0: mean {Y0.mean():.4f}  slope {S0:+.5f}  residual rms "
       f"{np.std(Y0 - np.polyval([S0, I0], CTR)):.4f}")
 print(f"      VISLEAF=1: mean {Y1.mean():.4f}  slope {S1:+.5f}  residual rms "
       f"{np.std(Y1 - np.polyval([S1, I1], CTR)):.4f}")
-print(f"      the real source (cc66.41/42): mean 1.0694  slope +0.01167")
+# ⌗ r7643+cc66.65: `cc66.41/42`'s 1.0694 / +0.01167 are the NAMESAKE arm's and are labelled so.
+#   This arm's own real source is measured in PART 4 below -- mean 1.0685, slope +0.02178 -- and the
+#   gate above compares the two assignments against each other, not against either reference.
+print(f"      the real source, cc66.41/42 on the NAMESAKE arm: mean 1.0694  slope +0.01167")
+print(f"      ⇒ this arm's own real source is measured in PART 4: mean 1.0685  slope +0.02178")
 check("⌗ read ALONE the other assignment moves the contrast TOWARD the real source -- which is the "
       "order's FIRST branch, and is why it cannot be dismissed on the geometry alone",
       Y1.mean() < Y0.mean() and S1 < S0,
       f"mean {Y0.mean():.4f} -> {Y1.mean():.4f}, slope {S0:+.5f} -> {S1:+.5f}, against the real "
       f"1.0694 / +0.01167")
-check("⚠ ** BUT THE `VISLEAF=1` BAND STRUCTURE IS NON-MONOTONIC SCATTER where the current one is "
-      "smooth, so that slope is contaminated. **  Moving `eta_LS` moves `r_s(eta_LS)` and so moves "
-      "the comb, and a band ratio of two oscillations no longer aligned in q reads their phase "
-      "mismatch -- `cc66.40`'s guard firing a third time on the shape it was built for",
-      np.std(Y1 - np.polyval([S1, I1], CTR)) > 3 * np.std(Y0 - np.polyval([S0, I0], CTR)),
-      f"residual rms {np.std(Y0 - np.polyval([S0,I0],CTR)):.4f} -> "
-      f"{np.std(Y1 - np.polyval([S1,I1],CTR)):.4f}, a factor "
-      f"{np.std(Y1-np.polyval([S1,I1],CTR))/np.std(Y0-np.polyval([S0,I0],CTR)):.1f}")
+# ⛔⛭⛭⛭ r7643+cc66.65: ** WHICH ASSIGNMENT IS CONTAMINATED IS A PROPERTY OF THE ARM, AND THE
+#   MECHANISM IS MEASURED HERE RATHER THAN NAMED. **
+#   *The old form asserted that `VISLEAF=1` is the scattered one and `VISLEAF=0` the smooth one, and
+#   read a factor-3 residual as fixed to that direction.  On the arm of record it is the OTHER WAY
+#   ROUND: the residual runs 0.0485 at `VISLEAF=0` down to 0.0168 at `VISLEAF=1`, where on the
+#   namesake it ran 0.0088 up to 0.0555.*
+#   ⇒ *** The band ratio reads the PHASE OFFSET between the arm's injection comb and the control's
+#       over the band range, so the contaminated assignment is simply the MISALIGNED one -- and which
+#       of the two that is depends on the arm.  Measured below rather than cited: the mean signed
+#       offset in q is -0.0154 at `VISLEAF=0` and +0.0058 at `VISLEAF=1` here, against -0.0017 and
+#       +0.0194 on the namesake. ***
+#   ⛭ ** AND THE PART THAT IS ARM-INDEPENDENT IS THE STRUCTURE: on BOTH arms the offset CHANGES SIGN
+#   between the two assignments, so one of them is always the phase-clean end and the other always the
+#   contaminated one.  The caution the receipt needs is therefore structural, and only its direction
+#   is this arm's. **  *`cc66.40`'s guard firing a third time -- on the ALIGNMENT, as `cc66.63` found
+#   for the same statistic on the scan banks, which these injection banks now confirm independently.*
+_R0 = float(np.std(Y0 - np.polyval([S0, I0], CTR)))
+_R1 = float(np.std(Y1 - np.polyval([S1, I1], CTR)))
+
+
+def _qpk(z, kls, klA, kDl, n=8):
+    """the comb in q, sub-bin, of one banked spectrum -- its own l_A, never the other arm's"""
+    ls, Dl = z[kls].astype(float), z[kDl]
+    out = []
+    for i in argrelextrema(Dl, np.greater, order=3)[0][:n]:
+        y0, y1, y2 = Dl[i - 1], Dl[i], Dl[i + 1]
+        den = y0 - 2 * y1 + y2
+        off = 0.5 * (y0 - y2) / den if den != 0 else 0.0
+        out.append(float(ls[i] + off * (ls[i + 1] - ls[i])))
+    return np.array(out) / float(z[klA])
+
+
+def _offset(A, kls, klA, kDl):
+    """the MEAN SIGNED offset, in q, between the arm's comb and the control's, over the band range"""
+    qa, qc = (_qpk(A[t], kls, klA, kDl) for t in ('cr', 'lcdm'))
+    n = min(qa.size, qc.size)
+    m = (qc[:n] >= ED[0]) & (qc[:n] <= ED[-1])
+    return float(np.mean(qa[:n][m] - qc[:n][m])), int(m.sum())
+
+
+_D0, _n0 = _offset(IJ, 'ls__sweepown', 'l_A__sweepown', 'Dl__sweepown')
+_D1, _n1 = _offset(VL, 'ls__injvl', 'l_A__injvl', 'Dl__injvl')
+print(f"      the injection comb against the CONTROL's, mean signed offset in q over the band range:")
+print(f"        VISLEAF=0 {_D0:+.6f}   VISLEAF=1 {_D1:+.6f}   over {_n0} and {_n1} in-band peaks")
+print(f"        ⇒ the MISALIGNED assignment here is VISLEAF={'0' if abs(_D0) > abs(_D1) else '1'}, "
+      f"and it is the one carrying the scatter")
+check("⚠⛭⛭ ** AND ONE OF THE TWO ASSIGNMENTS IS ALWAYS PHASE-CONTAMINATED, SO THE SLOPE CANNOT BE "
+      "READ AS PHYSICS WITHOUT NAMING WHICH END IS CLEAN -- AND ON THIS ARM IT IS `VISLEAF=1` THAT IS "
+      "CLEAN, NOT `VISLEAF=0`. **  The band ratio reads the phase offset between the arm's injection "
+      "comb and the control's: that offset CHANGES SIGN between the two assignments, so one end is "
+      "always the aligned one, and the residual follows it.  ⛔ *On the namesake arm the clean end "
+      "was `VISLEAF=0` and this receipt said so; the direction is the arm's property and is restated "
+      "rather than carried*",
+      (abs(_D0) > abs(_D1)) == (_R0 > _R1)
+      and _D0 * _D1 < 0
+      and max(_R0, _R1) / min(_R0, _R1) > 2.5
+      and abs(_D0 + 0.015437) < 1e-5 and abs(_D1 - 0.005823) < 1e-5
+      and abs(_R0 - 0.04851) < 5e-6 and abs(_R1 - 0.01677) < 5e-6,
+      f"offset {_D0:+.6f} / {_D1:+.6f} (sign change), residual {_R0:.4f} / {_R1:.4f} "
+      f"(factor {max(_R0,_R1)/min(_R0,_R1):.2f}), and the larger offset carries the larger residual")
 
 print("\n  (b) THE COMB -- which the order asks for beside the contrast, and which has an external referent")
 SKY = 0.7312
@@ -318,6 +460,20 @@ for t in ('lcdm', 'cr'):
         print(f"      {t:5s} VISLEAF={v}  peaks at l = {str(COMB[(t,v)]['pk']):26s} "
               f"l_1/l_A = {COMB[(t,v)]['r']:.4f}   P1/P2 = {COMB[(t,v)]['p12']:.3f}")
 print(f"      the sky: l_1/l_A = {SKY:.4f}")
+# ⚠⌗ r7643+cc66.65: ** THE SECOND PEAK'S RAW READING IS A KNOWN BIN TIE AND IT LANDS THE OTHER WAY
+#   HERE. **  *At `VISLEAF=0` the printed quartet reads 532 where the namesake arm read 540.  That is
+#   `cc66.54`'s coin flip, not a motion: the two bins tie to about 0.011 per cent on the `LSTEP=8`
+#   grid, and `cc66.60`'s 0.464 per cent comb offset is enough to land it the other side.  The sub-bin
+#   locator does not move with it (`cc66.63` measures l_2 at 535.85 on this arm).*
+#   ⇒ ** Nothing in this receipt turns on the second peak -- every gate reads `pk[0]` -- so this is
+#   DECLARED rather than repaired, and gated so a THIRD value would be caught. **
+check("⚠ ⌗ the second peak's raw reading is one of the two tied bins and not a third value, so the "
+      "printed quartet carries `cc66.54`'s known coin flip and nothing new",
+      COMB[('cr', '0')]['pk'][1] in (532, 540) and COMB[('cr', '1')]['pk'][1] in (532, 540)
+      and COMB[('lcdm', '0')]['pk'][1] == COMB[('lcdm', '1')]['pk'][1] == 540,
+      f"the arm reads {COMB[('cr','0')]['pk'][1]} at VISLEAF=0 and "
+      f"{COMB[('cr','1')]['pk'][1]} at VISLEAF=1; the control reads "
+      f"{COMB[('lcdm','0')]['pk'][1]} both ways")
 check("⛔ ** THE COMB VOTES AGAINST THE OTHER ASSIGNMENT. **  The arm's first peak moves and its "
       "`l_1/l_A` moves AWAY from the sky, while the control's comb is bit-identical -- and the "
       "order's own guard is that an assignment which moves the comb is one the peak positions have "
@@ -362,19 +518,97 @@ _lev = (Y0.mean() - PROD.mean()) / (Y0.mean() - REAL.mean())
 _slp = (S0 - SX) / (S0 - SR)
 print(f"      ⇒ the source deficit closes {100*_lev:.0f} per cent of the level gap and "
       f"{100*_slp:.0f} per cent of the slope gap")
-check("⚑ ** THE SOURCE DEFICIT IS HALF THE LEVEL AND NONE OF THE SLOPE, so the sector does NOT close "
-      "into one account. **  `cc66.40`'s 0.992 is FLAT in q, so it cannot carry a slope difference "
-      "however well it carries a level one -- the order's conditional is half satisfied",
-      0.3 < _lev < 0.8 and _slp < 0.25 and abs(SS) < 0.003,
-      f"level {100*_lev:.0f} per cent, slope {100*_slp:.0f} per cent, the deficit's own slope "
-      f"{SS:+.5f}")
-check("...so what flattens the slope is the real source's own eta-dependence across the visibility, "
-      "which is exactly what the injection replaced -- NAMED and not measured here",
-      abs(S0 - SR) > 3 * abs(S0 - SX),
-      f"the injection {S0:+.5f} against the real {SR:+.5f}, and the deficit moves it only to "
-      f"{SX:+.5f}")
+# ⛔⛭⛭⛭ r7643+cc66.65: ** THE SECTOR STILL DOES NOT CLOSE INTO ONE ACCOUNT, AND IT IS THE OTHER
+#   HALF THAT FAILS. **
+#   *On the namesake arm the deficit closed 54 per cent of the LEVEL gap and 10 per cent of the SLOPE
+#   gap, and `cc66.40`'s 0.992 was FLAT in q (slope -0.00106) -- which was the reason it could not
+#   carry a slope difference.  On the arm of record the deficit is 0.9950 with slope -0.00742, SEVEN
+#   TIMES steeper and not flat at all, and it closes 23 per cent of the level gap and 107 PER CENT of
+#   the slope gap.*
+#   ⇒ *** So the conclusion survives on both arms and its mechanism INVERTS: the deficit carries the
+#       slope here and the level there, and on neither arm does it carry both.  `the order's
+#       conditional is half satisfied` is still right; WHICH half is the arm's property. ***
+#   ⛭ *And the companion claim inverts with it.  The old form said the deficit `moves the slope only`
+#   a little, so what flattens the slope must be the real source's own eta-dependence.  Here the
+#   deficit accounts for the whole slope gap and slightly overshoots it, so what is left unexplained
+#   is the LEVEL -- and the eta-dependence that was named for the slope is what the LEVEL now needs.
+#   Named, as before, and not measured here either.*
+#   ⌗ *`cc66.40`'s 0.992 is that arm's figure and is not restated: this receipt measures 0.9950.*
+check("⚑⛭⛭ ** THE SOURCE DEFICIT CARRIES ONE OF THE TWO GAPS AND NOT THE OTHER, so the sector does "
+      "NOT close into one account -- AND ON THIS ARM IT IS THE SLOPE IT CARRIES, NOT THE LEVEL. **  "
+      "It closes 23 per cent of the level gap and 107 per cent of the slope gap, its own slope being "
+      "-0.00742 rather than flat.  ⛔ *On the namesake arm it was the reverse -- 54 and 10 per cent, "
+      "with the deficit FLAT in q at `cc66.40`'s 0.992 -- so the half that fails is the arm's "
+      "property and is restated rather than carried*",
+      max(_lev, _slp) / min(_lev, _slp) > 3.0
+      and min(_lev, _slp) < 0.3 and max(_lev, _slp) > 0.8
+      and abs(_lev - 0.2334) < 5e-4 and abs(_slp - 1.0737) < 5e-4
+      and abs(SS + 0.007424) < 5e-7 and abs(SRC_.mean() - 0.9950) < 5e-5,
+      f"level {100*_lev:.1f} per cent, slope {100*_slp:.1f} per cent, the deficit {SRC_.mean():.4f} "
+      f"with its own slope {SS:+.5f} -- a factor {max(_lev,_slp)/min(_lev,_slp):.1f} between the two")
+check("...so what the LEVEL still needs is the real source's own eta-dependence across the "
+      "visibility, which is exactly what the injection replaced -- NAMED and not measured here.  "
+      "⛔ *On the namesake arm this sentence was about the SLOPE; the deficit carries the slope on "
+      "this arm, so the unexplained remainder has moved to the level*",
+      # ⌗ the first form of this condition had the inequality BACKWARDS -- it asked for the level
+      #   REMAINDER to be small when the finding is that it is LARGE (77 per cent still open), and the
+      #   gate caught it on the first run.  Stated on the two closure fractions themselves, which the
+      #   gate above pins: the slope is carried PAST the mark and the level is left mostly open.
+      _slp > 1.0 > _lev
+      and abs(S0 - SX) > abs(S0 - SR),
+      f"the injection's level {Y0.mean():.4f} against the real {REAL.mean():.4f}, and the deficit "
+      f"moves it only to {PROD.mean():.4f}; on the slope it moves {S0:+.5f} to {SX:+.5f} against the "
+      f"real {SR:+.5f}, which is past it")
 
 # ===================================================================================================
+# ===================================================================================================
+# ⛭⛭ r7643+cc66.65: ** EVERY COMPUTED FIGURE THIS RECEIPT'S `INDEX.md` ROW PRINTS IS PINNED HERE,
+#   TWO-SIDED, AT THE DIGITS THE ROW PRINTS -- AND INSIDE `check_figures_pinned`'s OWN ALLOWANCE,
+#   which is the coarser of half a last digit and 0.05 per cent, so a figure near one needs 1e-4
+#   rather than 5e-4 (`cc66.61`).  *Figures already held two-sided by a gate above are not repeated.*
+#   ⌗ *Figures kept OUT of this block rather than pinned or baselined, because this receipt no longer
+#   computes them: `cc66.40`'s 0.992 and its -0.00106 slope, the namesake arm's 54 and 10 per cent,
+#   and the namesake residual pair 0.0088 / 0.0555.  They are in this file's head in words, and a pin
+#   on a figure the receipt does not compute is a false assurance.*
+print("\n" + "-" * 100)
+_INDEXPINS_OK = (
+    # the geometry, under both assignments, on both arms
+    abs(g('cs', 'cr', '0') - 0.395135) < 5e-7 and abs(g('cs', 'cr', '1') - 0.395359) < 5e-7
+    and abs(g('cs', 'lcdm', '0') - 0.454950) < 5e-7
+    and abs(100 * (1 - _r0) - 13.15) < 5e-3 and abs(100 * (1 - _r1) - 13.10) < 5e-3
+    and abs(100 * abs(_r1 - _r0) / _r0 - 0.057) < 5e-4
+    and abs(g('eta_ls', 'cr', '0') - 492.7919) < 5e-5
+    and abs(g('eta_ls', 'cr', '1') - 490.6122) < 5e-5
+    and abs(g('rD', 'cr', '0') - 7.5752) < 5e-5 and abs(g('rD', 'cr', '1') - 7.2689) < 5e-5
+    # the contrast, its two assignments and this arm's own real source
+    and abs(Y0.mean() - 1.0929) < 1e-4 and abs(Y1.mean() - 1.0752) < 1e-4
+    and abs(S0 - 0.02955) < 5e-6 and abs(S1 - 0.01794) < 5e-6
+    and abs(REAL.mean() - 1.0685) < 1e-4 and abs(SR - 0.02178) < 5e-6
+    # the comb, both assignments, and the second referent
+    and COMB[('cr', '0')]['pk'][0] == 220 and COMB[('cr', '1')]['pk'][0] == 228
+    and abs(COMB[('cr', '0')]['r'] - 0.72621) < 5e-6
+    and abs(COMB[('cr', '1')]['r'] - 0.75262) < 5e-6
+    and abs(COMB[('cr', '0')]['p12'] - 2.136) < 5e-4
+    and abs(COMB[('cr', '1')]['p12'] - 2.009) < 5e-4
+    # the source deficit's ledger
+    and abs(PROD.mean() - 1.0872) < 1e-4 and abs(SX - 0.02120) < 5e-6
+)
+print(f"  THE FIGURES THE `INDEX.md` ROW PRINTS, PINNED TWO-SIDED:")
+print(f"    geometry  d r_s/d chi {g('cs','cr','0'):.6f} -> {g('cs','cr','1'):.6f}, "
+      f"{100*(1-_r0):.2f}% -> {100*(1-_r1):.2f}% lower, a move of "
+      f"{100*abs(_r1-_r0)/_r0:.3f}%;  eta_LS {g('eta_ls','cr','0'):.4f} -> "
+      f"{g('eta_ls','cr','1'):.4f};  r_D {g('rD','cr','0'):.4f} -> {g('rD','cr','1'):.4f}")
+print(f"    contrast  {Y0.mean():.4f} -> {Y1.mean():.4f}, slope {S0:+.5f} -> {S1:+.5f};  this arm's "
+      f"real source {REAL.mean():.4f} / {SR:+.5f};  residual {_R0:.4f} / {_R1:.4f}")
+print(f"    comb      l_1 {COMB[('cr','0')]['pk'][0]} -> {COMB[('cr','1')]['pk'][0]}, l_1/l_A "
+      f"{COMB[('cr','0')]['r']:.5f} -> {COMB[('cr','1')]['r']:.5f};  P1/P2 "
+      f"{COMB[('cr','0')]['p12']:.3f} -> {COMB[('cr','1')]['p12']:.3f}")
+print(f"    deficit   {SRC_.mean():.4f} at {SS:+.5f};  product {PROD.mean():.4f} at {SX:+.5f};  "
+      f"closes {100*_lev:.1f}% of the level and {100*_slp:.1f}% of the slope")
+check("⛭⛭ every computed figure the `INDEX.md` row prints is held two-sided to the digits it prints, "
+      "so the row's numbers fail this receipt when they are wrong", _INDEXPINS_OK,
+      "all of them, each inside half a last printed digit")
+
 print("\n" + "=" * 100)
 print(f"""
 WHAT `r6925` ASKED AND WHAT THE THREE READINGS SAY.

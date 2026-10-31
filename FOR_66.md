@@ -30622,3 +30622,98 @@ substitution test and *not* unblocked, because no moving bank carries `d_rs_own`
 
 New reader: `computations/beyond_the_wall/r7641_cc66_grid_readers/a_quantity_can_move_when_its_bank_cannot.py`
 — 13 gates, `exit=0`, **eight perturbations all on target**.
+
+---
+
+# `r7643+cc66.65` — `the_visibilitys_clock_…` re-pointed, and ⛭⛭ **all three reds were written down before they were measured**
+
+Eighth receipt, and the first that moves a bank **by substitution**: `r6925_geometry` has no sibling,
+but `cc66.64` established that `r6929_geometry` carries the same ten quantities at `f=0`/`f=1` — and
+the receipt gates that bit-identity on the namesake arm **before** reading a figure off the
+substituted bank. The `VISLEAF`-is-inert identity leg stays namesake, declared; `cc66.64` proved it
+cannot be shortcut. ⇒ **36 gates, `exit=0`, eight perturbations all on target, `figure_pin_baseline.tsv` −12.**
+
+## ⛭⛭ ⓵ I REGISTERED THE PREDICTION FIRST, AND IT SCORED FOUR OF FIVE
+
+Before touching the file I wrote five predictions from `cc66.60`'s predictor and `cc66.63`'s
+mechanism. ⇒ **The run produced exactly three reds, and all three were on the list.**
+
+| | predicted | measured |
+|---|---|---|
+| **A** the factor-3 residual gate | *will fail **and reverse*** | ✔ ratio 6.32 → **0.346** |
+| **B** the comb gate | will hold | ✔ holds |
+| **C** Part 4's deficit ledger | will move | ✔ all three limbs + companion |
+| **D** the geometry's agreement | survives, level restated | ✔ 0.057% against 0.06% |
+| **E** the borrowed `1.0694`/`+0.01167` | needs restating | ✔ restated |
+
+⌗ *The one I got wrong is **B**'s detail: I expected the sky margin to thin as it did at `.63`, and it
+**widened**, 0.68 → 1.51 multipoles. The cause is nameable — this receipt reads the comb on the RAW
+`LSTEP=8` grid where `.63` reads it sub-bin, and `.63` itself measured that the raw reading sits
+**below** the sky where the sub-bin one sits above. Different statistic, different margin; I conflated
+them.*
+
+## ⛭⛭⛭ ⓶ WHICH ASSIGNMENT IS CONTAMINATED IS A PROPERTY OF THE ARM — AND THE MECHANISM IS NOW MEASURED HERE
+
+The old gate asserted `VISLEAF=1` is the scattered assignment and `VISLEAF=0` the smooth one, reading
+a factor-3 residual as fixed to that direction. ⇒ *** On the arm of record it is **the other way
+round**: `0.04851` at `VISLEAF=0` down to `0.01677` at `VISLEAF=1`, where the namesake ran `0.0088`
+up to `0.0555`. ***
+
+⛭ **I did not cite `.63` for this — I measured it in the receipt**, on *different banks*: the
+injection combs' mean signed offset in q against the control's is **−0.0154** at `VISLEAF=0` and
+**+0.0058** at `VISLEAF=1`, against **−0.0017** and **+0.0194** on the namesake. ⇒ *** And here is the
+part that is arm-independent: **on both arms the offset changes SIGN between the two assignments**, so
+one end is always phase-clean and the other always contaminated. The caution the receipt needs is
+**structural**; only its direction is the arm's. ***
+
+⌗ *`cc66.63` found this V on the scan banks; the injection banks confirm it independently, which is
+what makes it a mechanism and not a coincidence of one bank family.*
+
+## ⛔ ⓷ AND THE SECTOR STILL DOES NOT CLOSE — BY THE OTHER HALF
+
+| | namesake | arm of record |
+|---|---|---|
+| level gap closed | 54% | **23%** |
+| slope gap closed | 10% | **107%** |
+| the deficit itself | 0.9922, **flat**, slope −0.00106 | 0.9950, slope **−0.00742** |
+
+⇒ *** The conclusion survives on both arms and its mechanism **inverts**: the deficit carries the
+slope here and the level there, and on neither arm both. `the order's conditional is half satisfied`
+is still right; **which** half is the arm's property. *** ⌗ *`cc66.40`'s "0.992 is FLAT in q" was the
+stated reason it could not carry a slope — and that flatness was the namesake's property, not the
+statistic's.*
+
+## ⛔ ⓸ AND THE GATE CAUGHT ME WRITING AN INEQUALITY BACKWARDS
+
+My restated companion gate asked `|Y0−REAL| > 3|PROD−REAL|` — i.e. that the level **remainder** be
+small, when the whole finding is that it is **large** (77 per cent still open). ⇒ *It failed on the
+first run and I fixed it to read on the two closure fractions directly (`_slp > 1.0 > _lev`).* ⌗ *The
+gate doing its job on its author, which is the only reason to write them this way.*
+
+## ⌗ ⓹ TWO MORE THINGS DECLARED RATHER THAN REPAIRED
+
+- **`cc66.54`'s coin flip, live in the printed quartet.** At `VISLEAF=0` the second peak's raw bin
+  reads **532** where the namesake read **540** — the known tie at 0.011%, which `cc66.60`'s 0.464%
+  offset is enough to land the other side. *No gate turns on it (every gate reads `pk[0]`), so it is
+  declared where it is printed and gated so a **third** value would be caught.*
+- **The slope now crosses past the real source rather than arriving at it** (`+0.02955 → +0.01794`
+  against `+0.02178`), so `toward the real source` is true of the level and an overshoot on the slope.
+  Said that way rather than as `toward`.
+
+## ⇒ ⓺ AND THE PDF WENT IN WITH THE REGENERATION THIS TIME
+
+⌗ *`cc66.64b` owed `CR_cosmology.pdf` because I regenerated the appendices and did not recompile the
+paper that reads them, and CI told me rather than my own batch. **This pass compiled it before
+pushing** — two `pdflatex` passes, 330 pages, zero undefined references — and ran the **six** heavies the
+lean batch excludes -- `check_marker_transposition`, `check_deferrals`, `check_pdf_current`,
+`check_withdrawn`, `check_prose_pins`, `check_cross_row_dupes` -- rather than meeting any of them in
+CI. **`check_pdf_current` and `check_deferrals` are both in that excluded set, which is exactly why
+`.64b` met them as a CI red: the lean batch cannot see them.**
+
+## ⇒ ⓻ ITEM 2: EIGHT RE-POINTED, TWO BLOCKED
+
+`.52`, `.54`, `.57`, `.59`, `.61`, `.62`, `.63`, `.65`. ⇒ **The remainder is exactly the two that need
+a bank that does not exist**: `a_source_with_no_physics_…` (`r6919_geometry`, `r6919_noop`) and
+`the_held_period_estimator_…` (`r6897_fields`) — both re-checked by `cc66.64`'s substitution test and
+neither unblocked. ⌗ *Every one of the eight found a statistic that does not survive the move, and
+`cc66.60`'s single number is why all eight did.*
