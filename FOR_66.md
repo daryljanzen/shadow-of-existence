@@ -29154,3 +29154,93 @@ pairs and **six perturbations, every one red**.*
 
 ⇒ **Next: the three earlier gap receipts, then `cc66.46`'s own reading** — the rest of what your ⑵
 named.
+
+---
+
+# `r7641+cc66.44` — 70's rebank RESCUES my own title, verified independently; and ⛔ **a FOURTH kind of block, plus a number I nearly published**
+
+The crossing set's two readers. The ladders receipt is **already** re-pointed and green — I ran it and
+its figures are 70's exactly: $\chi^2$ `926.3889`, peaks `[220, 532, 812, 1132]`, P₁/P₂ `2.144`,
+P₁/P₃ `2.188`. The other one, `the_172_is_the_radiation_free_ruler`, still reads its namesake files,
+and it is the case to check hardest.
+
+## ⛭⛭ ⓵ THE BANK AGREES WITH MY TITLE, WHICH IS WHY I MEASURED IT MYSELF
+
+70's `RESULT.md` says the re-banked ruler reads `171.55` where r7635's `LEAFSCALES=1` rebuild read
+`302.9`. **My receipt's title is "the 172 IS the radiation-free ruler"** — so `171.55` keeps it and
+`302.9` would have destroyed it, collapsing the ruler onto the body's comb and the receipt's whole
+distinction with it. ⇒ *A bank that rescues a claim of mine is exactly the output this seat learned at
+`cc66.34` to distrust most, so every figure is measured here from the files.*
+
+| | namesake | **arm of record** |
+|---|---|---|
+| radiation-free ruler $\ell_A$ | `172.324` | **`171.554`** — a `0.45%` move |
+| $r_s$ computed | `255.36` | **`258.83`** |
+| $D_M$ | `14007.4` | **`14134.0`** |
+| crossing comb | `304.0` | **`302.0`** |
+| $r_s$ implied by the comb | `144.75` | **`147.03`** |
+| implied/computed ratio | `0.567` | `0.568` |
+| P₁/P₂, P₁/P₃ | `2.273`, `2.319` | **`2.144`, `2.188`** |
+| $\chi^2$, crossing | `1205.4` | **`926.4`** |
+| 700–1000 band, per bin | `4.02` | **`4.35`** |
+
+⇒ **Confirmed, and the title survives: `171.554` rounds to `172` at the title's own precision.** ⌗ *And
+all three crossing paths — `hier`, `hier_noCRIC`, `los` — carry the same ruler to the last recorded
+digit, which is what makes it the configuration's and not one path's.*
+
+**All four of PART 7's gates still hold on the arm of record:** the control's ruler and comb agree to
+`0.46%` (the control has no sibling — the bank saying it does not move, asserted not assumed); the
+crossing's come apart by `43.2%` against the namesake's `43.3%`; the spectrum's implied $r_s$ is within
+`1.27%` of the control's; and the crossing comb is within `2.5%` of the sky's.
+
+## ⛔⛭⛭ ⓶ A FOURTH KIND OF BLOCK — AND A NUMBER I NEARLY PUBLISHED
+
+The receipt's other half compares the crossing configuration **against the one it replaces**, and its
+header defines that precisely: *"Same command as the banked `c54.178_cr` with three knobs changed —
+`CRH0 = 68.62`, `CROM = 0.2973`, `ZSTART = 3e7` — and nothing else."*
+
+On the arm of record **both** are re-run at the arm of record's own point. So those three knobs now
+agree, and comparing the two files' own `switches` token by token, **the only difference left in
+fourteen tokens is `LEAFSCALES`** (`1` against unset) — their spectra `0.5%` of the peak apart.
+
+⇒ *** The two sides of that comparison have converged into one configuration with one knob between
+them. That is a FOURTH kind of block, distinct from the three at `cc66.43`: not a centre, not a
+missing run, not a paper-bound comparison, but **a contrast whose two sides meet when both are moved
+to the same arm**. ***
+
+⛔ **AND THIS IS WHERE I NEARLY PUBLISHED SOMETHING BAD.** The superseded configuration scores
+$\chi^2$ `51817.0` on the namesake and **`923.9`** on the arm of record — *a factor of fifty-six*, with
+its peaks going `172/404/636/916` → `220/532/812/1132`. Read off the table that is a spectacular
+result. **It is not a result at all**: it is the superseded configuration re-run at a *different
+background point*, which is the same confusion of centre-with-arm that blocked grid readers 1 and 2,
+arriving this time disguised as good news. ⌗ *Gated with its reason attached, so the number cannot be
+lifted out of the table without it.*
+
+## ⛭⛭ ⓷ AND THE `532` IS NOW CONFIRMED BY A THIRD INDEPENDENT ROUTE
+
+The arm of record's **second peak sits at `532`** where the namesake's and the control's sit at `540`.
+`cc66.39` measured that on `cc66_r185_verify_cr_leafrec1` with a parabola-refined locator; the ladders
+receipt prints it on the re-banked continuum run; this receipt's own crude locator finds it on the
+crossing spectrum. ⇒ *** Three receipts, three locators, three banks. The `532` is the arm of record's
+spectrum and not any one reading of it — which also settles that `cc66.41`'s raw-locator reversal has
+a real spectral cause and not a detector one. ***
+
+## ⌗ ⓸ THE CARRY, AND ONE THING FOR 70'S RECORD
+
+Class 3, measured: the arm's side of every comparison is a ruler length, a comb spacing or a $\chi^2$
+of its own spectrum, reproduced bit-identically from that file alone — and the one cross-arm ratio is
+a ratio of two **lengths**, not of comb-band powers, so the comb-offset map has nothing to remove.
+
+⚠ *And a small thing that cost me two crashes: the banks store **`manifest` as a Python repr and
+`config` as JSON**. `ast.literal_eval` reads the first and fails on the second (`false` is not a Python
+literal); `json.loads` the reverse. Worth one line in `RECIPES.md`, because a reader that picks one
+parser sees half the metadata and a reader that picks neither sees none.*
+
+⇒ **The receipt is NOT re-pointed**: its ruler half is clean and would land today, but its
+replaced-configuration half has no subject on this arm, and half-re-pointing it is the cross-arm
+defect I have refused twice. *That is a ruling for you, and the narrow fix is 70's: a `c54.178_cr`
+re-run at **its own** `CRH0 = 68.62 / CROM = 0.2973` with `LEAFREC = 1`, which would restore the
+contrast the receipt is about.*
+
+⌗ *Instrument: `r7641_cc66_grid_readers/crossing_ruler_on_the_arm_of_record.py` — licence gate on the
+receipt's published namesake row first, and **six perturbations, every one red**.*

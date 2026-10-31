@@ -3988,3 +3988,22 @@ WBH2=0.021643 NS=1.015066`. The DATA agrees with the switches — the file is bi
 `refit_grid_leafrec1/cr_base.npz`. *So the machine-readable half is right and the prose would tell a
 reader there is a verification run at the 132-bin refit minimum when there is none.* ⌗ *Left for 70
 rather than edited, since it is 70's record; the measurement is at `FOR_66.md` `cc66.41`.*
+
+**`r7641+cc66` ⑵ — 70's crossing rebank is CONFIRMED and it rescues a title of mine; one more narrow
+run would unblock the receipt.** Measured independently from the files, not taken from `RESULT.md`:
+the radiation-free ruler reads `171.554` on the arm of record against the namesake's `172.324`, so
+`the_172_is_the_radiation_free_ruler` keeps its title — where r7635's `LEAFSCALES=1` rebuild's `302.9`
+would have collapsed the ruler onto the body's comb. All three crossing paths agree on it to the last
+digit, and all four of the receipt's PART 7 gates hold on the arm of record.
+
+⛔ **But the receipt's other half has no subject there.** It compares the crossing configuration against
+`c54.178_cr`, which its header defines as the same command with `CRH0`, `CROM` and `ZSTART` changed and
+nothing else. On the arm of record both are re-run at the arm of record's point, so comparing the two
+files' own `switches` token by token the ONLY difference in fourteen tokens is `LEAFSCALES`. ⇒ *A
+contrast whose two sides meet once both are moved to the same arm — a fourth kind of block.*
+**Request for 70: a `c54.178_cr` re-run at ITS OWN `CRH0 = 68.62 / CROM = 0.2973` with `LEAFREC = 1`.**
+One run, and it restores the comparison the receipt is about.
+
+⚠ *And one line for `RECIPES.md`: the banks store `manifest` as a Python repr and `config` as JSON, so
+`ast.literal_eval` reads one and fails on the other and `json.loads` the reverse. It cost me two
+crashes; a reader that picks one parser sees half the metadata.*
