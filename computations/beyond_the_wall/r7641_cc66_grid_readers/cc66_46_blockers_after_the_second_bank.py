@@ -77,10 +77,23 @@ check("⛭ TWO OF THE THREE BLOCKERS ARE CLEARED BY FILE: `r6941_fine_cr_visleaf
       "the obstruction",
       all(r[2] for r in ROWS if r[1] == 'gap bank'),
       ", ".join(f"{r[0]} {r[2]}" for r in ROWS if r[1] == 'gap bank'))
-check("⛔ AND THE THIRD IS NOT, WHICH IS THE KEYS-NOT-FILES DISTINCTION `cc66.17` ASKED FOR: "
-      "`r6929_geometry` has no arm-of-record sibling file AND no arm-of-record key -- its arm lives "
-      "as the key suffix `__cr`, so a file-level bank cannot reach it",
-      not [r for r in ROWS if r[0] == 'r6929_geometry'][0][2]
+# ⛔⛭⛭ r7643+cc66.58: ** THIS GATE WAS FAIL-ON-SUCCESS AND IT HAD BEEN RED SINCE 70's THIRD BANK
+#   WITHOUT ANYONE READING IT. **  As registered it asserted that `r6929_geometry` has NO arm-of-record
+#   sibling file -- an assertion that a bank is MISSING, which the ordered work could close, and did.
+#   *`cc66.48` re-ran the other two instruments from `cc66.46`-`.47` against the third bank and not
+#   this one, so the red sat unread: an instrument under `computations/` is in no gate's reader set,
+#   which is exactly how a fail-on-success statement survives being falsified.*
+#   ⇒ *** It is the FOURTH of mine this bank has fired, and the only one that went unnoticed.  The
+#       restatement keeps what the gate was really for -- the keys-not-files distinction -- and reads
+#       the closure the way the sibling actually supplies it: a sibling FILE that keeps the key names
+#       and moves the `__cr` values, which is better than the `__cr_leafrec1` entries I asked for. ***
+check("⛭⛭ AND THE THIRD WAS NOT CLEARED BY A FILE-LEVEL BANK EITHER, WHICH IS THE KEYS-NOT-FILES "
+      "DISTINCTION `cc66.17` ASKED FOR -- AND 70's THIRD BANK CLOSED IT IN A BETTER FORM THAN THE ASK: "
+      "`r6929_geometry`'s arm lives as the key suffix `__cr`, so no file-level bank could reach it, and "
+      "what reached it is a sibling FILE that keeps the same key NAMES and moves the `__cr` values.  "
+      "⛔ *This gate asserted the sibling was ABSENT until `cc66.58`, which made it fail-on-success, "
+      "and it had been red since the bank landed because an instrument is in no reader set*",
+      [r for r in ROWS if r[0] == 'r6929_geometry'][0][2]
       and [r for r in ROWS if r[0] == 'r6929_geometry'][0][3]
       and not [r for r in ROWS if r[0] == 'r6929_geometry'][0][4],
       f"sibling {[r for r in ROWS if r[0] == 'r6929_geometry'][0][2]}, "

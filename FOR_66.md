@@ -30003,3 +30003,84 @@ moving one side is the defect, not the repair.*
 ⌗ *Each of the first three is sharper than it was an hour ago: the noop asks are now named as the
 blockers rather than inferred, and `r6925_geometry`'s is named by the four key families the receipt
 actually reads.*
+
+---
+
+# `r7643+cc66.58` — ⛔⛭⛭ **the same blind spot again, in the mechanism built to catch what literals miss — and this time it MOVED VERDICTS**
+
+`cc66.56` widened this file's arm-key test and found the defect latent. **Looking at the receipts
+rather than at the instrument's verdict found a second one of the same family in the same file, and it
+is not latent.**
+
+## ⛔ ⓵ THE TEMPLATE TEST REQUIRED THE PLACEHOLDER TO FOLLOW `__` IMMEDIATELY
+
+| indexed key string | the `__{` form | carries `__` and `{` |
+|---|---|---|
+| `{n}__{t}` | True | True |
+| `Dl__noop_{t}` | **False** | True |
+| `Dl__xsonly_{t}` | **False** | True |
+| `ls__noop_{t}` | **False** | True |
+| `Dl__base` | False | False *(control)* |
+| `{t}` | False | False *(control)* |
+
+⇒ *** Three of four sampled templates invisible — and they are the ones two receipts use to read
+`r6911_noop` and `r6915_noop`'s cr side, undeclared, from banks with no sibling. ***
+
+## ⛔⛭ ⓶ THE PARTITION I HAVE BEEN REPORTING SINCE `cc66.46` IS WRONG
+
+| | reported | measured |
+|---|---|---|
+| readers of a key-gap bank | 11 | **11** |
+| BLOCKED | 5 | ⛔ **7** |
+| DECLARED | 3 | 3 |
+| CLEAR | 3 | ⛔ **1** |
+| by the `{geometry,noop}` family / needing more | 3 / 4 *(guessed)* | ⛔ **5 / 2** |
+| inventory's NO-BANK-GAP bucket | 16 | ⛔ **14** |
+| of which genuinely available | 11 | ⛔ **9** |
+
+**`the_acoustic_contrast_…`** (`r6911_noop`) and **`the_cross_term_…`** (`r6915_noop`) move CLEAR →
+BLOCKED. ⌗ *And `7 / 3 / 3 of 13` before the bank was measured the same way, so it is not a baseline
+either. The only receipt still genuinely CLEAR is `the_step_is_the_excesss_own_…`.*
+
+⛔ **The `CLEAR` verdicts' own second check used the same narrow rule.** *A second way built from the
+first way's regex family is not an independent read, and that is why it passed for twelve revisions.*
+
+## ⛔⛭⛭ ⓷ AND FOUR MORE OF MY OWN, EACH FOUND BY A PERTURBATION RATHER THAN BY READING
+
+| what the perturbation showed | the repair |
+|---|---|
+| **the rule was implemented TWICE** — in the verdict loop and in `_tmplkeys_in` — so reverting the verdict path left the detector gate GREEN and only the counts moved | both now call one `_is_keytmpl` |
+| **loosening the rule to "any placeholder" was GREEN** — the gate's negative controls were constants the loosening could not touch | controls the loosened rule WOULD take: `z[f'{t}']` must read as no key template |
+| **reverting the bank-presence test was GREEN** — `g in src` is satisfied by `g + '_leafrec1'`, latent today, live the moment a gap gets a sibling and a reader moves onto it | boundary-anchored, and pinned SYNTHETICALLY because a latent defect with no gate is the one that comes back |
+| I **guessed** `3 / 4` for the family split and it is `5 / 2` | read the run; it is the third time this file records that error and the second on itself |
+
+⇒ *** A gate that pins a COPY of the rule does not pin the rule, and a negative control that cannot
+move is not a control. Both of those were in gates I wrote an hour ago to stop exactly this class of
+thing. *** All four perturbations now redden their own target.
+
+## ⛔ ⓸ A FOURTH FAIL-ON-SUCCESS OF MINE, AND THE ONLY ONE THAT WENT UNREAD
+
+`cc66_46_blockers_after_the_second_bank.py` asserted *"`r6929_geometry` has no arm-of-record sibling
+file"* — and has been **red since the third bank landed**, unnoticed. ⌗ *`cc66.48` re-ran the two
+instruments from `cc66.46`–`.47` against that bank and not this third one.* ⇒ *** An instrument under
+`computations/` is in no gate's reader set, which is exactly how a fail-on-success statement survives
+being falsified. *** *Restated to keep what the gate was for — the keys-not-files distinction — and to
+read the closure the way the sibling actually supplies it.*
+
+## ⇒ ⓹ THE BANK ASKS, AND WHAT ITEM 2 ACTUALLY HAS LEFT
+
+| ask | releases |
+|---|---|
+| **`r6911_noop`** | ⛭ `the_acoustic_contrast_…` (new to this list) |
+| **`r6915_noop`** | ⛭ `the_cross_term_…` (new to this list) |
+| **`r6897_noop`** | the `ZPSAVE` identity leg, `cc66.57`'s measurement |
+| **`r6929_noop` + `r6925_noop`** | `the_combs_resolution_…`'s switch identities |
+| **`r6925_geometry`** | `the_visibilitys_clock_…` |
+| **`r6897_fields`** | the loading-field legs in four receipts |
+| **`r6893_slice_check`**, **`r6919_geometry`**, **`r6919_noop`** | the remaining blocked readers |
+
+⛔ *So the two receipts I called "clean re-points, next up" an hour ago are partials with declarations,
+and the nine-receipt set I said the third bank released is **two** fully re-pointable receipts plus
+partials.* ⌗ *The `noop` family is now the single largest ask: five banks, six readers, and every one
+of them an instrument-identity check — so what the siblings buy is whether the switch identities still
+hold on the arm of record, which is a different question from any figure moving.*

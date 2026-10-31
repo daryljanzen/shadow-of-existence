@@ -116,16 +116,29 @@ for r in MINE44:
     # KEY test, localised to each bank's own variable -- `cc66.46`'s settled method
     keyb = []
     for g in KEYGAPS:
-        if g not in src:
+        #: ⛔ r7643+cc66.58: boundary-anchored, not a substring -- `g in src` is satisfied by
+        #: `g + '_leafrec1'`, so a receipt re-pointed onto a gap bank's SIBLING would still score as
+        #: reading the gap.  *Latent while no gap in this list has a sibling, live the moment one does,
+        #: which is the ask.*
+        if not re.search(re.escape(g) + r'(?![A-Za-z0-9_])', src):
             continue
         m = re.search(r'(\w+)\s*=\s*np\.load\([^\n]*' + re.escape(g), code)
         var = m.group(1) if m else None
         lit = any((f"'{k}'" in code) for k in (g,)) and False
-        tm = bool(var and re.search(re.escape(var) + r"\[f?['\"][^'\"]*__\{", code))
-        lam = bool(var and re.search(r"lambda[^\n]*:\s*" + re.escape(var) + r"\[f['\"][^'\"]*__\{",
-                                     code))
-        cr_lit = bool(re.search(re.escape(g) + r"[^\n]*", code)) and bool(
-            re.search(r"'[A-Za-z0-9_]*__cr'", code))
+        #: ⛔⛭⛭ r7643+cc66.58: a key TEMPLATE is an indexed f-string carrying BOTH a separator `__`
+        #: and a placeholder `{`, wherever the placeholder sits.  *The `__\{` form missed
+        #: `f'Dl__noop_{t}'` and its kin, and that MOVED VERDICTS in the sibling instrument.*
+        _tks = (re.findall(re.escape(var) + r"\[f['\"]([^'\"]*)['\"]\]", code) if var else [])
+        _lks = (re.findall(r"lambda[^\n]*:\s*" + re.escape(var) + r"\[f['\"]([^'\"]*)['\"]\]",
+                           code) if var else [])
+        tm = any('__' in s and '{' in s for s in _tks)
+        lam = any('__' in s and '{' in s for s in _lks)
+        #: ⛔ and the LITERAL arm-key test is boundary-anchored for the same reason the sibling
+        #: instrument's is: `'[A-Za-z0-9_]*__cr'` sees `rD__cr` and misses `Dl__unset_cr`,
+        #: `Dl__noop_cr`, `Dl__comb_cr_f0` -- most arm keys.
+        _armlits = [k for k in re.findall(r"['\"]([A-Za-z_][A-Za-z0-9_]*__[A-Za-z0-9_]+)['\"]", code)
+                    if re.search(r'(^|_)cr($|_)', k)]
+        cr_lit = bool(re.search(re.escape(g) + r"[^\n]*", code)) and bool(_armlits)
         if tm or lam or cr_lit or lit:
             keyb.append(g)
     # FILE test, with templates expanded over the arms
