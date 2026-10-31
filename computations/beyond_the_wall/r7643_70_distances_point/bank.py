@@ -106,7 +106,7 @@ def geometry():
     out = {k: old[k] for k in old.files}
     for k in old.files:
         if k.endswith('__cr'):
-            out[relabel(k)] = prev[k]
+            out[relabel(k)] = prev[relabel(k)] if relabel(k) in prev.files else prev[k]   # idempotent on a re-run
     out['config'] = prev['config']
     save(os.path.join(SP, 'r6929_geometry_leafrec1.npz'), out,
          manifest(os.path.join(SP, 'r6929_geometry_leafrec1.npz'), os.path.join(SP, 'r6929_geometry.npz'),
@@ -202,7 +202,7 @@ if __name__ == '__main__':
         L2 = os.path.join(BW, [x for x in os.listdir(BW) if x.startswith('r7642_60_')][0], 'layer2.py')
         ns = {'np': np}
         tree = ast.parse(open(L2).read())
-        exec(compile(ast.Module(body=[n for n in tree.body if isinstance(n, ast.FunctionDef) and n.name == 'rel_of'],
+        exec(compile(ast.Module(body=[n for n in tree.body if isinstance(n, ast.FunctionDef) and n.name in ('rel_of', 'load')],
                                 type_ignores=[]), L2, 'exec'), ns)
         old = np.load(os.path.join(SP, 'r6941_fine_cr.npz'))
         same_ls = np.array_equal(old['ls'], reb['ls'])

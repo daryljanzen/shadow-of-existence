@@ -1,0 +1,522 @@
+{
+ "spectra/r6919_geometry_leafrec1.npz": {
+  "file": "spectra/r6919_geometry_leafrec1.npz",
+  "namesake": "spectra/r6919_geometry.npz",
+  "LEAFREC": 1,
+  "point": {
+   "ARM": "cr",
+   "CRH0": "68.570730",
+   "CROM": "0.291246",
+   "ZSTART": "3e7",
+   "LEAFSCALES": "1",
+   "LEAFREC": "1",
+   "WBH2": "0.021643",
+   "NS": "1.015066"
+  },
+  "switches": "ARM=cr CRH0=68.570730 CROM=0.291246 ZSTART=3e7 LEAFSCALES=1 LEAFREC=1 WBH2=0.021643 NS=1.015066",
+  "held": "r6919 geom.py's probe unchanged; `__cr` keys are the namesake's, `__cr_leafrec1` the arm of record's"
+ },
+ "spectra/r6925_geometry_leafrec1.npz": {
+  "file": "spectra/r6925_geometry_leafrec1.npz",
+  "namesake": "spectra/r6925_geometry.npz",
+  "LEAFREC": 1,
+  "point": {
+   "ARM": "cr",
+   "CRH0": "68.570730",
+   "CROM": "0.291246",
+   "ZSTART": "3e7",
+   "LEAFSCALES": "1",
+   "LEAFREC": "1",
+   "WBH2": "0.021643",
+   "NS": "1.015066"
+  },
+  "switches": "ARM=cr CRH0=68.570730 CROM=0.291246 ZSTART=3e7 LEAFSCALES=1 LEAFREC=1 WBH2=0.021643 NS=1.015066 VISLEAF=0,1",
+  "held": "r6925 bank.py's probe unchanged; `__cr_0/1` the namesake's, `__cr_leafrec1_0/1` the arm of record's"
+ },
+ "spectra/r6929_geometry_leafrec1.npz": {
+  "file": "spectra/r6929_geometry_leafrec1.npz",
+  "namesake": "spectra/r6929_geometry.npz",
+  "LEAFREC": 1,
+  "point": {
+   "ARM": "cr",
+   "CRH0": "68.570730",
+   "CROM": "0.291246",
+   "ZSTART": "3e7",
+   "LEAFSCALES": "1",
+   "LEAFREC": "1",
+   "WBH2": "0.021643",
+   "NS": "1.015066"
+  },
+  "switches": "ARM=cr CRH0=68.570730 CROM=0.291246 ZSTART=3e7 LEAFSCALES=1 LEAFREC=1 WBH2=0.021643 NS=1.015066 VISLEAF=<15 values>",
+  "held": "r6929 geom.py's probe unchanged (r7641); RE-KEYED r7643: `__cr` keys are now the namesake's, `__cr_leafrec1` the arm of record's"
+ },
+ "spectra/r6897_noop_leafrec1.npz": {
+  "file": "spectra/r6897_noop_leafrec1.npz",
+  "namesake": "spectra/r6897_noop.npz",
+  "LEAFREC": 1,
+  "point": {
+   "ARM": "cr",
+   "CRH0": "68.570730",
+   "CROM": "0.291246",
+   "ZSTART": "3e7",
+   "LEAFSCALES": "1",
+   "LEAFREC": "1",
+   "WBH2": "0.021643",
+   "NS": "1.015066"
+  },
+  "switches": "ARM=cr CRH0=68.570730 CROM=0.291246 HIER=1 LEAFSCALES=1 LMAXL=500 LSTEP=16 NS=1.015066 WBH2=0.021643 ZSTART=3e7",
+  "held": "the namesake launcher's noop runs (HIER=1 LSTEP=16 LMAXL=500) at the arm of record; `__..._cr` keys the namesake's, `__..._cr_leafrec1` the arm of record's"
+ },
+ "spectra/r6911_noop_leafrec1.npz": {
+  "file": "spectra/r6911_noop_leafrec1.npz",
+  "namesake": "spectra/r6911_noop.npz",
+  "LEAFREC": 1,
+  "point": {
+   "ARM": "cr",
+   "CRH0": "68.570730",
+   "CROM": "0.291246",
+   "ZSTART": "3e7",
+   "LEAFSCALES": "1",
+   "LEAFREC": "1",
+   "WBH2": "0.021643",
+   "NS": "1.015066"
+  },
+  "switches": "ARM=cr CRH0=68.570730 CROM=0.291246 HIER=1 LEAFSCALES=1 LMAXL=500 LSTEP=16 NS=1.015066 SRCXS=1.5 WBH2=0.021643 ZSTART=3e7",
+  "held": "the namesake launcher's noop runs (HIER=1 LSTEP=16 LMAXL=500) at the arm of record; `__..._cr` keys the namesake's, `__..._cr_leafrec1` the arm of record's"
+ },
+ "spectra/r6915_noop_leafrec1.npz": {
+  "file": "spectra/r6915_noop_leafrec1.npz",
+  "namesake": "spectra/r6915_noop.npz",
+  "LEAFREC": 1,
+  "point": {
+   "ARM": "cr",
+   "CRH0": "68.570730",
+   "CROM": "0.291246",
+   "ZSTART": "3e7",
+   "LEAFSCALES": "1",
+   "LEAFREC": "1",
+   "WBH2": "0.021643",
+   "NS": "1.015066"
+  },
+  "switches": "ARM=cr CRH0=68.570730 CROM=0.291246 HIER=1 LEAFSCALES=1 LMAXL=500 LSTEP=16 NS=1.015066 WBH2=0.021643 ZSTART=3e7",
+  "held": "the namesake launcher's noop runs (HIER=1 LSTEP=16 LMAXL=500) at the arm of record; `__..._cr` keys the namesake's, `__..._cr_leafrec1` the arm of record's"
+ },
+ "spectra/r6919_noop_leafrec1.npz": {
+  "file": "spectra/r6919_noop_leafrec1.npz",
+  "namesake": "spectra/r6919_noop.npz",
+  "LEAFREC": 1,
+  "point": {
+   "ARM": "cr",
+   "CRH0": "68.570730",
+   "CROM": "0.291246",
+   "ZSTART": "3e7",
+   "LEAFSCALES": "1",
+   "LEAFREC": "1",
+   "WBH2": "0.021643",
+   "NS": "1.015066"
+  },
+  "switches": "ARM=cr CRH0=68.570730 CROM=0.291246 HIER=1 LEAFSCALES=1 LMAXL=500 LSTEP=16 NS=1.015066 WBH2=0.021643 ZSTART=3e7",
+  "held": "the namesake launcher's noop runs (HIER=1 LSTEP=16 LMAXL=500) at the arm of record; `__..._cr` keys the namesake's, `__..._cr_leafrec1` the arm of record's"
+ },
+ "spectra/r6925_noop_leafrec1.npz": {
+  "file": "spectra/r6925_noop_leafrec1.npz",
+  "namesake": "spectra/r6925_noop.npz",
+  "LEAFREC": 1,
+  "point": {
+   "ARM": "cr",
+   "CRH0": "68.570730",
+   "CROM": "0.291246",
+   "ZSTART": "3e7",
+   "LEAFSCALES": "1",
+   "LEAFREC": "1",
+   "WBH2": "0.021643",
+   "NS": "1.015066"
+  },
+  "switches": "ARM=cr CRH0=68.570730 CROM=0.291246 HIER=1 LEAFSCALES=1 LMAXL=500 LSTEP=16 NS=1.015066 WBH2=0.021643 ZSTART=3e7",
+  "held": "the namesake launcher's noop runs (HIER=1 LSTEP=16 LMAXL=500) at the arm of record; `__..._cr` keys the namesake's, `__..._cr_leafrec1` the arm of record's"
+ },
+ "spectra/r6929_noop_leafrec1.npz": {
+  "file": "spectra/r6929_noop_leafrec1.npz",
+  "namesake": "spectra/r6929_noop.npz",
+  "LEAFREC": 1,
+  "point": {
+   "ARM": "cr",
+   "CRH0": "68.570730",
+   "CROM": "0.291246",
+   "ZSTART": "3e7",
+   "LEAFSCALES": "1",
+   "LEAFREC": "1",
+   "WBH2": "0.021643",
+   "NS": "1.015066"
+  },
+  "switches": "ARM=cr CRH0=68.570730 CROM=0.291246 HIER=1 LEAFSCALES=1 LMAXL=500 LSTEP=16 NS=1.015066 VISLEAF=0 WBH2=0.021643 ZSTART=3e7",
+  "held": "the namesake launcher's noop runs (HIER=1 LSTEP=16 LMAXL=500) at the arm of record; `__..._cr` keys the namesake's, `__..._cr_leafrec1` the arm of record's"
+ },
+ "spectra/r6897_fields_leafrec1.npz": {
+  "file": "spectra/r6897_fields_leafrec1.npz",
+  "namesake": "spectra/r6897_fields.npz",
+  "LEAFREC": 1,
+  "point": {
+   "ARM": "cr",
+   "CRH0": "68.570730",
+   "CROM": "0.291246",
+   "ZSTART": "3e7",
+   "LEAFSCALES": "1",
+   "LEAFREC": "1",
+   "WBH2": "0.021643",
+   "NS": "1.015066"
+  },
+  "switches": "ARM=cr CRH0=68.570730 CROM=0.291246 HIER=1 LEAFSCALES=1 LMAXL=2000 LSTEP=64 NS=1.015066 WBH2=0.021643 ZSTART=3e7",
+  "held": "r6897 launch.sh: ZPSAVE at LSTEP=64 LMAXL=2000, the arm of record; `__cr` the namesake's, `__cr_leafrec1` the arm of record's"
+ },
+ "spectra/c54.178_cr_leafrec1_distances.npz": {
+  "file": "spectra/c54.178_cr_leafrec1_distances.npz",
+  "namesake": "spectra/c54.178_cr.npz",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.62,
+   "CROM": 0.2973,
+   "ZSTART": 30000000.0,
+   "LEAFREC": 1,
+   "LEAFSCALES": "unset (0)"
+  },
+  "switches": "ARM=cr BSPLIT=1 CRH0=68.62 CROM=0.2973 ETAEND=4000 HIER=1 KBATCH=300 LEAFREC=1 LMAXL=2000 NK=600 ZSTART=3e7",
+  "held": "the crossing receipt's own definition: the c54.178 command with CRH0=68.62, CROM=0.2973, ZSTART=3e7 and nothing else -- LEAFSCALES unset -- with LEAFREC=1"
+ },
+ "refit_grid185_leafrec1_distances/cr_base.npz": {
+  "file": "refit_grid185_leafrec1_distances/cr_base.npz",
+  "namesake": "refit_grid185/cr_base.npz",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.6,
+   "CROM": 0.2973,
+   "WBH2": "built-in",
+   "NS": "built-in",
+   "ZSTART": 30000000.0,
+   "LEAFSCALES": 1,
+   "LEAFREC": 1
+  },
+  "switches": "ARM=cr CRH0=68.60 CROM=0.2973 HIER=1 LEAFREC=1 LEAFSCALES=1 LMAXL=2000 LSTEP=8 ZSTART=3e7",
+  "held": "refit_grid185/launch.sh verbatim with LEAFREC=1: the NO-FIT configuration on the arm of record (the distances' point, the built-in omega_b and n_s)"
+ },
+ "refit_grid185_leafrec1_distances/cr_H0p.npz": {
+  "file": "refit_grid185_leafrec1_distances/cr_H0p.npz",
+  "namesake": "refit_grid185/cr_H0p.npz",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.6,
+   "CROM": 0.2973,
+   "WBH2": "built-in",
+   "NS": "built-in",
+   "ZSTART": 30000000.0,
+   "LEAFSCALES": 1,
+   "LEAFREC": 1
+  },
+  "switches": "ARM=cr CRH0=70.60 CROM=0.2973 HIER=1 LEAFREC=1 LEAFSCALES=1 LMAXL=2000 LSTEP=8 ZSTART=3e7",
+  "held": "refit_grid185/launch.sh verbatim with LEAFREC=1: the NO-FIT configuration on the arm of record (the distances' point, the built-in omega_b and n_s)"
+ },
+ "refit_grid185_leafrec1_distances/cr_H0m.npz": {
+  "file": "refit_grid185_leafrec1_distances/cr_H0m.npz",
+  "namesake": "refit_grid185/cr_H0m.npz",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.6,
+   "CROM": 0.2973,
+   "WBH2": "built-in",
+   "NS": "built-in",
+   "ZSTART": 30000000.0,
+   "LEAFSCALES": 1,
+   "LEAFREC": 1
+  },
+  "switches": "ARM=cr CRH0=66.60 CROM=0.2973 HIER=1 LEAFREC=1 LEAFSCALES=1 LMAXL=2000 LSTEP=8 ZSTART=3e7",
+  "held": "refit_grid185/launch.sh verbatim with LEAFREC=1: the NO-FIT configuration on the arm of record (the distances' point, the built-in omega_b and n_s)"
+ },
+ "refit_grid185_leafrec1_distances/cr_OMp.npz": {
+  "file": "refit_grid185_leafrec1_distances/cr_OMp.npz",
+  "namesake": "refit_grid185/cr_OMp.npz",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.6,
+   "CROM": 0.2973,
+   "WBH2": "built-in",
+   "NS": "built-in",
+   "ZSTART": 30000000.0,
+   "LEAFSCALES": 1,
+   "LEAFREC": 1
+  },
+  "switches": "ARM=cr CRH0=68.60 CROM=0.3123 HIER=1 LEAFREC=1 LEAFSCALES=1 LMAXL=2000 LSTEP=8 ZSTART=3e7",
+  "held": "refit_grid185/launch.sh verbatim with LEAFREC=1: the NO-FIT configuration on the arm of record (the distances' point, the built-in omega_b and n_s)"
+ },
+ "refit_grid185_leafrec1_distances/cr_OMm.npz": {
+  "file": "refit_grid185_leafrec1_distances/cr_OMm.npz",
+  "namesake": "refit_grid185/cr_OMm.npz",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.6,
+   "CROM": 0.2973,
+   "WBH2": "built-in",
+   "NS": "built-in",
+   "ZSTART": 30000000.0,
+   "LEAFSCALES": 1,
+   "LEAFREC": 1
+  },
+  "switches": "ARM=cr CRH0=68.60 CROM=0.2823 HIER=1 LEAFREC=1 LEAFSCALES=1 LMAXL=2000 LSTEP=8 ZSTART=3e7",
+  "held": "refit_grid185/launch.sh verbatim with LEAFREC=1: the NO-FIT configuration on the arm of record (the distances' point, the built-in omega_b and n_s)"
+ },
+ "refit_grid185_leafrec1_distances/cr_WBp.npz": {
+  "file": "refit_grid185_leafrec1_distances/cr_WBp.npz",
+  "namesake": "refit_grid185/cr_WBp.npz",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.6,
+   "CROM": 0.2973,
+   "WBH2": "built-in",
+   "NS": "built-in",
+   "ZSTART": 30000000.0,
+   "LEAFSCALES": 1,
+   "LEAFREC": 1
+  },
+  "switches": "ARM=cr CRH0=68.60 CROM=0.2973 HIER=1 LEAFREC=1 LEAFSCALES=1 LMAXL=2000 LSTEP=8 WBH2=0.0232 ZSTART=3e7",
+  "held": "refit_grid185/launch.sh verbatim with LEAFREC=1: the NO-FIT configuration on the arm of record (the distances' point, the built-in omega_b and n_s)"
+ },
+ "refit_grid185_leafrec1_distances/cr_WBm.npz": {
+  "file": "refit_grid185_leafrec1_distances/cr_WBm.npz",
+  "namesake": "refit_grid185/cr_WBm.npz",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.6,
+   "CROM": 0.2973,
+   "WBH2": "built-in",
+   "NS": "built-in",
+   "ZSTART": 30000000.0,
+   "LEAFSCALES": 1,
+   "LEAFREC": 1
+  },
+  "switches": "ARM=cr CRH0=68.60 CROM=0.2973 HIER=1 LEAFREC=1 LEAFSCALES=1 LMAXL=2000 LSTEP=8 WBH2=0.0216 ZSTART=3e7",
+  "held": "refit_grid185/launch.sh verbatim with LEAFREC=1: the NO-FIT configuration on the arm of record (the distances' point, the built-in omega_b and n_s)"
+ },
+ "refit_grid185_leafrec1_distances/cr_NSp.npz": {
+  "file": "refit_grid185_leafrec1_distances/cr_NSp.npz",
+  "namesake": "refit_grid185/cr_NSp.npz",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.6,
+   "CROM": 0.2973,
+   "WBH2": "built-in",
+   "NS": "built-in",
+   "ZSTART": 30000000.0,
+   "LEAFSCALES": 1,
+   "LEAFREC": 1
+  },
+  "switches": "ARM=cr CRH0=68.60 CROM=0.2973 HIER=1 LEAFREC=1 LEAFSCALES=1 LMAXL=2000 LSTEP=8 NS=0.985 ZSTART=3e7",
+  "held": "refit_grid185/launch.sh verbatim with LEAFREC=1: the NO-FIT configuration on the arm of record (the distances' point, the built-in omega_b and n_s)"
+ },
+ "refit_grid185_leafrec1_distances/cr_NSm.npz": {
+  "file": "refit_grid185_leafrec1_distances/cr_NSm.npz",
+  "namesake": "refit_grid185/cr_NSm.npz",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.6,
+   "CROM": 0.2973,
+   "WBH2": "built-in",
+   "NS": "built-in",
+   "ZSTART": 30000000.0,
+   "LEAFSCALES": 1,
+   "LEAFREC": 1
+  },
+  "switches": "ARM=cr CRH0=68.60 CROM=0.2973 HIER=1 LEAFREC=1 LEAFSCALES=1 LMAXL=2000 LSTEP=8 NS=0.945 ZSTART=3e7",
+  "held": "refit_grid185/launch.sh verbatim with LEAFREC=1: the NO-FIT configuration on the arm of record (the distances' point, the built-in omega_b and n_s)"
+ },
+ "refit_grid_leafrec1_distances/cr_base.npz": {
+  "file": "refit_grid_leafrec1_distances/cr_base.npz",
+  "namesake": "refit_grid/cr_base.npz",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.6,
+   "CROM": 0.2973,
+   "WBH2": "built-in",
+   "NS": "built-in",
+   "ZSTART": 30000000.0,
+   "LEAFSCALES": 1,
+   "LEAFREC": 1
+  },
+  "switches": "ARM=cr CRH0=68.60 CROM=0.2973 HIER=1 LEAFREC=1 LEAFSCALES=1 LMAXL=1300 LSTEP=8 ZSTART=3e7",
+  "held": "refit_grid/launch.sh verbatim with LEAFREC=1: the NO-FIT configuration on the arm of record (the distances' point, the built-in omega_b and n_s)"
+ },
+ "refit_grid_leafrec1_distances/cr_H0p.npz": {
+  "file": "refit_grid_leafrec1_distances/cr_H0p.npz",
+  "namesake": "refit_grid/cr_H0p.npz",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.6,
+   "CROM": 0.2973,
+   "WBH2": "built-in",
+   "NS": "built-in",
+   "ZSTART": 30000000.0,
+   "LEAFSCALES": 1,
+   "LEAFREC": 1
+  },
+  "switches": "ARM=cr CRH0=70.60 CROM=0.2973 HIER=1 LEAFREC=1 LEAFSCALES=1 LMAXL=1300 LSTEP=8 ZSTART=3e7",
+  "held": "refit_grid/launch.sh verbatim with LEAFREC=1: the NO-FIT configuration on the arm of record (the distances' point, the built-in omega_b and n_s)"
+ },
+ "refit_grid_leafrec1_distances/cr_H0m.npz": {
+  "file": "refit_grid_leafrec1_distances/cr_H0m.npz",
+  "namesake": "refit_grid/cr_H0m.npz",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.6,
+   "CROM": 0.2973,
+   "WBH2": "built-in",
+   "NS": "built-in",
+   "ZSTART": 30000000.0,
+   "LEAFSCALES": 1,
+   "LEAFREC": 1
+  },
+  "switches": "ARM=cr CRH0=66.60 CROM=0.2973 HIER=1 LEAFREC=1 LEAFSCALES=1 LMAXL=1300 LSTEP=8 ZSTART=3e7",
+  "held": "refit_grid/launch.sh verbatim with LEAFREC=1: the NO-FIT configuration on the arm of record (the distances' point, the built-in omega_b and n_s)"
+ },
+ "refit_grid_leafrec1_distances/cr_OMp.npz": {
+  "file": "refit_grid_leafrec1_distances/cr_OMp.npz",
+  "namesake": "refit_grid/cr_OMp.npz",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.6,
+   "CROM": 0.2973,
+   "WBH2": "built-in",
+   "NS": "built-in",
+   "ZSTART": 30000000.0,
+   "LEAFSCALES": 1,
+   "LEAFREC": 1
+  },
+  "switches": "ARM=cr CRH0=68.60 CROM=0.3123 HIER=1 LEAFREC=1 LEAFSCALES=1 LMAXL=1300 LSTEP=8 ZSTART=3e7",
+  "held": "refit_grid/launch.sh verbatim with LEAFREC=1: the NO-FIT configuration on the arm of record (the distances' point, the built-in omega_b and n_s)"
+ },
+ "refit_grid_leafrec1_distances/cr_OMm.npz": {
+  "file": "refit_grid_leafrec1_distances/cr_OMm.npz",
+  "namesake": "refit_grid/cr_OMm.npz",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.6,
+   "CROM": 0.2973,
+   "WBH2": "built-in",
+   "NS": "built-in",
+   "ZSTART": 30000000.0,
+   "LEAFSCALES": 1,
+   "LEAFREC": 1
+  },
+  "switches": "ARM=cr CRH0=68.60 CROM=0.2823 HIER=1 LEAFREC=1 LEAFSCALES=1 LMAXL=1300 LSTEP=8 ZSTART=3e7",
+  "held": "refit_grid/launch.sh verbatim with LEAFREC=1: the NO-FIT configuration on the arm of record (the distances' point, the built-in omega_b and n_s)"
+ },
+ "refit_grid_leafrec1_distances/cr_WBp.npz": {
+  "file": "refit_grid_leafrec1_distances/cr_WBp.npz",
+  "namesake": "refit_grid/cr_WBp.npz",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.6,
+   "CROM": 0.2973,
+   "WBH2": "built-in",
+   "NS": "built-in",
+   "ZSTART": 30000000.0,
+   "LEAFSCALES": 1,
+   "LEAFREC": 1
+  },
+  "switches": "ARM=cr CRH0=68.60 CROM=0.2973 HIER=1 LEAFREC=1 LEAFSCALES=1 LMAXL=1300 LSTEP=8 WBH2=0.0232 ZSTART=3e7",
+  "held": "refit_grid/launch.sh verbatim with LEAFREC=1: the NO-FIT configuration on the arm of record (the distances' point, the built-in omega_b and n_s)"
+ },
+ "refit_grid_leafrec1_distances/cr_WBm.npz": {
+  "file": "refit_grid_leafrec1_distances/cr_WBm.npz",
+  "namesake": "refit_grid/cr_WBm.npz",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.6,
+   "CROM": 0.2973,
+   "WBH2": "built-in",
+   "NS": "built-in",
+   "ZSTART": 30000000.0,
+   "LEAFSCALES": 1,
+   "LEAFREC": 1
+  },
+  "switches": "ARM=cr CRH0=68.60 CROM=0.2973 HIER=1 LEAFREC=1 LEAFSCALES=1 LMAXL=1300 LSTEP=8 WBH2=0.0216 ZSTART=3e7",
+  "held": "refit_grid/launch.sh verbatim with LEAFREC=1: the NO-FIT configuration on the arm of record (the distances' point, the built-in omega_b and n_s)"
+ },
+ "refit_grid_leafrec1_distances/cr_NSp.npz": {
+  "file": "refit_grid_leafrec1_distances/cr_NSp.npz",
+  "namesake": "refit_grid/cr_NSp.npz",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.6,
+   "CROM": 0.2973,
+   "WBH2": "built-in",
+   "NS": "built-in",
+   "ZSTART": 30000000.0,
+   "LEAFSCALES": 1,
+   "LEAFREC": 1
+  },
+  "switches": "ARM=cr CRH0=68.60 CROM=0.2973 HIER=1 LEAFREC=1 LEAFSCALES=1 LMAXL=1300 LSTEP=8 NS=0.985 ZSTART=3e7",
+  "held": "refit_grid/launch.sh verbatim with LEAFREC=1: the NO-FIT configuration on the arm of record (the distances' point, the built-in omega_b and n_s)"
+ },
+ "refit_grid_leafrec1_distances/cr_NSm.npz": {
+  "file": "refit_grid_leafrec1_distances/cr_NSm.npz",
+  "namesake": "refit_grid/cr_NSm.npz",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.6,
+   "CROM": 0.2973,
+   "WBH2": "built-in",
+   "NS": "built-in",
+   "ZSTART": 30000000.0,
+   "LEAFSCALES": 1,
+   "LEAFREC": 1
+  },
+  "switches": "ARM=cr CRH0=68.60 CROM=0.2973 HIER=1 LEAFREC=1 LEAFSCALES=1 LMAXL=1300 LSTEP=8 NS=0.945 ZSTART=3e7",
+  "held": "refit_grid/launch.sh verbatim with LEAFREC=1: the NO-FIT configuration on the arm of record (the distances' point, the built-in omega_b and n_s)"
+ },
+ "spectra/cc66_cr_x_h686_L2000_leafrec1_distances.npz": {
+  "file": "spectra/cc66_cr_x_h686_L2000_leafrec1_distances.npz",
+  "namesake": "spectra/cc66_cr_x_h686_L2000.npz",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.6,
+   "CROM": 0.2973,
+   "WBH2": "built-in",
+   "NS": "built-in",
+   "ZSTART": 30000000.0,
+   "LEAFSCALES": 1,
+   "LEAFREC": 1
+  },
+  "switches": "ARM=cr CRH0=68.60 CROM=0.2973 HIER=1 LEAFREC=1 LEAFSCALES=1 LMAXL=2000 LSTEP=2 ZSTART=3e7",
+  "held": "the namesake's own point (CRH0=68.6) with LEAFREC=1"
+ },
+ "spectra/cc66_cr_x_h686_pol_leafrec1_distances.npz": {
+  "file": "spectra/cc66_cr_x_h686_pol_leafrec1_distances.npz",
+  "namesake": "spectra/cc66_cr_x_h686_pol.npz",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.6,
+   "CROM": 0.2973,
+   "WBH2": "built-in",
+   "NS": "built-in",
+   "ZSTART": 30000000.0,
+   "LEAFSCALES": 1,
+   "LEAFREC": 1
+  },
+  "switches": "ARM=cr CRH0=68.60 CROM=0.2973 HIER=1 LEAFREC=1 LEAFSCALES=1 LMAXL=1300 LSTEP=2 ZSTART=3e7",
+  "held": "the namesake's own point (CRH0=68.6) with LEAFREC=1"
+ },
+ "spectra/cc66_cr_x_h6862_pol_leafrec1_distances.npz": {
+  "file": "spectra/cc66_cr_x_h6862_pol_leafrec1_distances.npz",
+  "namesake": "spectra/cc66_cr_x_h6862_pol.npz",
+  "LEAFREC": 1,
+  "point": {
+   "CRH0": 68.62,
+   "CROM": 0.2973,
+   "WBH2": "built-in",
+   "NS": "built-in",
+   "ZSTART": 30000000.0,
+   "LEAFSCALES": 1,
+   "LEAFREC": 1
+  },
+  "switches": "ARM=cr CRH0=68.62 CROM=0.2973 HIER=1 LEAFREC=1 LEAFSCALES=1 LMAXL=1300 LSTEP=2 ZSTART=3e7",
+  "held": "the namesake's own point (CRH0=68.62) with LEAFREC=1"
+ }
+}
