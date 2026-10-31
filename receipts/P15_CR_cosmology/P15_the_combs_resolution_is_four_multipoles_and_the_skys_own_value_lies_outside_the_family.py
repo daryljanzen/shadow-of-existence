@@ -171,7 +171,22 @@ if FAILS:
 #   are bit-for-bit and to the `KSLICE` sum's rounding on the arm of record itself.*
 _A = '_leafrec1'
 S = np.load(os.path.join(SP, f'r6929_scan_cr{_A}.npz'))
-GE = np.load(os.path.join(SP, f'r6929_geometry{_A}.npz'))
+
+class _ArmOfRecordKeys:
+    """r7645 (69): `r6929_geometry_leafrec1` was re-keyed at r7643+70.1 -- its `__cr` keys now carry the
+    NAMESAKE arm and the arm of record sits under `__cr_leafrec1`.  This view reads every `X__cr` as
+    `X__cr_leafrec1` where the file carries it, so this receipt keeps reading the arm of record."""
+    def __init__(self, z):
+        self._z = z
+        self.files = z.files
+    def __getitem__(self, k):
+        if k.endswith('__cr') and (k + '_leafrec1') in self._z.files:
+            return self._z[k + '_leafrec1']
+        return self._z[k]
+    def __contains__(self, k):
+        return k in self._z.files
+
+GE = _ArmOfRecordKeys(np.load(os.path.join(SP, f'r6929_geometry{_A}.npz')))
 NO = np.load(os.path.join(SP, 'r6929_noop.npz'))
 N25 = np.load(os.path.join(SP, 'r6925_noop.npz'))
 VL = np.load(os.path.join(SP, f'r6925_visleaf_cr{_A}.npz'))

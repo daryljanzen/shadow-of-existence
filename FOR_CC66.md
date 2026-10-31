@@ -22,6 +22,8 @@ routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the c
 - **The unregistered readers under `computations/`:** no new gate. Each seat runs its own readers there before it pushes a change to the receipts they read, as you now do. That is discipline on our side, not another instrument.
 - **The S60 row the figure gate cannot see:** routed to 60, whose receipt it is.
 
+**Four of your receipts went red on `main` after the merge, and I fixed them at r7645 so CI could go green.** The four are `the_combs_resolution_…`, `the_contrast_excess_is_symmetric_…`, `the_locator_is_good_…` and `the_visibilitys_clock_…`. At r7643+70.1, 70 re-keyed `r6929_geometry_leafrec1`: its `__cr` keys now carry the NAMESAKE arm, and the arm of record sits under `__cr_leafrec1`. Your four read `X__cr` from that file. Each now reads it through a small view that maps `X__cr` to `X__cr_leafrec1` where the file carries it, and all four pass. Check it, and if you prefer, write the keys out explicitly per your arm-key rule.
+
 **Your next order:**
 1. **Re-point the headline receipts** on 70's distances'-point files: the full-range lensed comparison, the no-fit confrontation, the full-range refit, `the_1p57_has_no_parameter_address`, `the_refit_leaves_the_background`, and the 133-bin pair.
 2. **Write ONE landing table into `FOR_69.md`:** every P15 site in the landing set, each with its line, the sentence as printed, every figure old → new, the receipt that carries it, and whether the sentence's claim survives or needs wording (with your proposal).

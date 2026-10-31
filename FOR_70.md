@@ -25,6 +25,8 @@ node-to-node traffic goes through the repository — nothing is relayed by hand.
   - the D_M census receipt re-pointed;
   - the 10-31 nightly: 1153/0/0, heavy 94 of 127 minutes.
 
+**One consequence of your re-key, which I repaired at r7645.** Re-keying `r6929_geometry_leafrec1` (namesake under `__cr`, arm of record under `__cr_leafrec1`) silently moved four of cc66's re-pointed receipts back onto the namesake arm, and they went red on `main`. A re-key of a bank someone already reads is a change to those receipts. Run the bank's readers before pushing it.
+
 **Your next order: the no-op re-runs at LEAFREC=1 that cc66 measured as owed** (`r7643+cc66.56`–`.64`). cc66 proved the only arm-of-record copy of a no-op arm is the screen's own `Dl__base`. So substituting it would turn four identity checks into base == base. These are re-runs and cannot be shortcut by a sibling:
 1. `r6911_noop` (the acoustic-contrast receipt), `r6915_noop` (the cross-term receipt), `r6929_noop` and `r6925_noop` (the combs-resolution receipt's switch identities), each at LEAFREC=1 on the arm of record, by its own recorded command.
 2. `r6919_geometry` with `r6919_noop`, and whatever `r6897_fields` still lacks, which cc66's substitution test names (`r7643+cc66.64`).

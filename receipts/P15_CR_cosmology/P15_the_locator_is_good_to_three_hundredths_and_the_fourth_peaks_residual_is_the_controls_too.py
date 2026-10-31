@@ -165,7 +165,22 @@ F = {t: np.load(os.path.join(SP, _FINE[t])) for t in ('lcdm', 'cr')}
 V = np.load(os.path.join(SP, 'r6941_fine_cr_visleaf_leafrec1.npz'))
 C = {t: np.load(os.path.join(SP, _VER[t])) for t in ('lcdm', 'cr')}
 S = np.load(os.path.join(SP, 'r6929_scan_cr_leafrec1.npz'))
-GE = np.load(os.path.join(SP, 'r6929_geometry_leafrec1.npz'))
+
+class _ArmOfRecordKeys:
+    """r7645 (69): `r6929_geometry_leafrec1` was re-keyed at r7643+70.1 -- its `__cr` keys now carry the
+    NAMESAKE arm and the arm of record sits under `__cr_leafrec1`.  This view reads every `X__cr` as
+    `X__cr_leafrec1` where the file carries it, so this receipt keeps reading the arm of record."""
+    def __init__(self, z):
+        self._z = z
+        self.files = z.files
+    def __getitem__(self, k):
+        if k.endswith('__cr') and (k + '_leafrec1') in self._z.files:
+            return self._z[k + '_leafrec1']
+        return self._z[k]
+    def __contains__(self, k):
+        return k in self._z.files
+
+GE = _ArmOfRecordKeys(np.load(os.path.join(SP, 'r6929_geometry_leafrec1.npz')))
 
 SKY = np.array([220.4, 537.7, 817.3, 1123.9])   # P15 sec:intro's own locator on plik_lite TT
 SKY_SIG4 = 2.36                                 # PO-47: the sky's fourth peak, 1121.9 +- 2.36
