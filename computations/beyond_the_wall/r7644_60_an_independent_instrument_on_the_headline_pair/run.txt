@@ -1,0 +1,111 @@
+r7644 (60) -- AN INDEPENDENT SCORER FOR THE HEADLINE PAIR, ON THE SAME 185 BINS.
+
+** THE ORDER (`r7643`, 69) asks for the same 185 bins AND an instrument independent of cc66's. **
+Those pull against each other unless the line between data and code is drawn first, so it is drawn
+here and in `PREDICTION.md`:
+
+  ⌗ ** THE DATA IS SHARED ON PURPOSE. **  `plik_lite` TT, its binning weights and its covariance are
+    the MEASUREMENT.  An instrument on different data would not be checking cc66's arithmetic; it
+    would be answering a different question.  `planck_lite_py.py` is the third-party reference
+    implementation named in `PROVENANCE.md` (`heatherprince/planck-lite-py`), so reading the arrays
+    through it is reading the data.
+  ⛔ ** THE CODE IS NOT SHARED. **  This file does NOT import `chi2_of_spectrum`, which is the
+    corpus's own scorer (built `r2376+c54.176`) and the function every figure under test was produced
+    by.  The binning, the marginalisation and the amplitude fit below are written here.
+
+** AND THE POINT OF A SECOND HAND IS NOT TO RE-TYPE THE FIRST ONE. **  cc66's scorer names FOUR
+choices as the ones that matter -- restricting the covariance rather than its inverse, fitting the
+amplitude exactly rather than searching it, interpolating before binning rather than after, and
+dropping partially covered bins.  *A re-implementation that silently made the same four would show
+only that two people can agree.*  ⇒ So PART 3 VARIES EACH ONE and reports what the printed figure
+does, which turns "independent" from a claim about authorship into a measurement.
+
+⚠ ** WHAT THIS FILE CANNOT DO IN THIS CONTAINER, SAID HERE RATHER THAN DISCOVERED BELOW. **  cc66's
+lensing operator is CAMB's full lensed/unlensed ratio, deliberately NOT the first-order kernel, and
+`camb` is absent here.  The unlensed half needs no operator and is read; the lensed half is read only
+if the operator can be obtained, and otherwise is reported as blocked WITH the reason, never
+approximated by the kernel cc66's own receipt rejects.
+
+========================================================================================================
+  r7644 (60) -- the headline pair on an independent scorer, same 185 bins
+========================================================================================================
+
+PART 1 -- THE BINS, ASSERTED AND NOT INHERITED
+      control        (LCDM)  ell 100-1998   bins covered 185
+      namesake arm           ell 100-1998   bins covered 185
+      arm of record          ell 100-1998   bins covered 185
+  [PASS] the three spectra cover the SAME bins, so the comparison is matched
+  [PASS] and that count is 185, ell 100 to 1996, as the corpus calls it (185)
+  [PASS] ⌗ and this file does not import the corpus's own scorer, which is what makes the reading a second one
+
+PART 2 -- THE UNLENSED SCORES ON THOSE BINS, AND THE RATIO
+                                  chi2    /bin         amp
+      control        (LCDM)      696.0    3.76  1.1051e+04
+      namesake arm              1169.8    6.32  1.1608e+04
+      arm of record              938.3    5.07  1.3504e+04
+
+      namesake arm / control  = 1.681x
+      arm of record / control = 1.348x
+  [PASS] the control is the least unfavourable of the three, which is the configuration the paper calls the unfavourable one
+  [PASS] and the arm of record is LESS unfavourable than the namesake arm, which is the direction cc66 reports
+
+PART 3 -- ** THE FOUR CHOICES, VARIED ONE AT A TIME: IS THE PRINTED FIGURE THE
+          INSTRUMENT'S OR THE DATA'S? **
+  *cc66's scorer names these as the choices that matter.  A second hand that made the same
+  four silently would show only that two people can agree; varying them measures instead.*
+
+      variation                                          control  namesake    record     n/c     r/c
+      as cc66 chose  (marginalise, fit A, interp first)     696.0    1169.8     938.3   1.681   1.348
+      CONDITION on the uncovered bins instead              709.8    1302.1    1047.9   1.834   1.476
+      amplitude FIXED at 1 instead of fitted            360828.0  360831.3  360839.9   1.000   1.000
+      bin the weighted ell CENTRE instead                  708.8    1181.9     954.2   1.668   1.346
+  [PASS] ⛭ THE ORDERING SURVIVES EVERY VARIATION THAT IS A COMPARISON OF SHAPE -- control best, arm of record between, namesake arm worst, in all three -- so WHICH configuration is the less favourable is the data's and not the scorer's
+  [PASS] ⛔ AND IT DOES NOT SURVIVE THE FOURTH, WHICH IS THE POINT OF HAVING RUN IT: with the amplitude fixed the order REVERSES -- but on differences of 3 and 12 in 360828, one part in 10^5 of a single shared mismatch, so that row is not a comparison and its reversal is not a finding about the arms
+  ⌗ *This is what the registration meant by varying the choices rather than re-typing them.
+  The first form of this check asserted the survival of all four and was written as a
+  constant; made into a real assertion it FAILED, and the failure is the honest reading --
+  the ordering is a fact about three scorers and the fourth does not score shape at all.*
+
+      ⇒ the ratio moves +9.5% if the uncovered bins are CONDITIONED on
+        rather than marginalised over, and -0.2% if the bin centre is
+        interpolated rather than the whole bin.  ** So the first choice is load-bearing at
+        the second digit of a printed figure and the third is not. **
+  [PASS] ⌗ and the marginalise-against-condition choice moves the ratio by MORE than the interp-first choice, so cc66's receipt is right about which of its four matters most
+  [PASS] ⚠ and the fitted amplitude is LOAD-BEARING rather than cosmetic: fixing it at 1 drives every score to the same order of magnitude and flattens both ratios to 1.000, because the banked spectra carry an inherited A_s and the comparison is of SHAPE
+  ⌗ *So the ordering's survival in that row is TRIVIAL and is not evidence: with the amplitude
+  fixed, all three scores are a single large mismatch and their differences are noise on it.
+  The row is kept because the flattening is the finding -- a reader who did not fit the
+  amplitude would read no difference between the arms at all.*
+
+PART 4 -- THE LENSED HALF, ON AN OPERATOR COMPUTED ELSEWHERE AND READ HERE AS DATA
+  *cc66 imposes CAMB's FULL lensed/unlensed ratio and its receipt rejects the first-order
+  kernel by name.  `camb` is absent from the interpreter this corpus is VERIFIED on, and
+  installing it there pulls a newer scipy -- which is the one event `ENV_FINGERPRINT.txt`
+  exists for: an unpinned install moving the arithmetic under every float in the corpus with
+  no push at all.  ⇒ So the operator was computed by `make_lensing_operator.py` under the
+  other interpreter and SAVED; the scoring below reads that array on the pinned one.  The
+  operator is an imposed input, not a fitted one, so it is data and may be read.*
+
+      the operator at ell = 1900: 1.0666   (camb 2.0.5)
+  [PASS] the operator is the FULL one, inside the [1.05, 1.08] its own receipt gates it into, and not the first-order kernel's spurious ~1.13
+
+                              unlensed    lensed    /bin   d(chi2)
+      control        (LCDM)      696.0     214.1    1.16    -481.9
+      namesake arm              1169.8     550.5    2.98    -619.3
+      arm of record              938.3     302.1    1.63    -636.2
+  [PASS] lensing REDUCES chi2 on all three, so the operator is wired the right way round
+
+      LENSED   namesake arm / control  = 2.572x      (P15 prints 2.57)
+      LENSED   arm of record / control = 1.411x      (cc66 reads 1.41)
+      UNLENSED namesake arm / control  = 1.681x
+      UNLENSED arm of record / control = 1.348x      (the order cites 1.35)
+
+  [PASS] ⛭ ARM ⓐ -- the control's lensed score agrees with cc66's printed 214.1 to the digits the paper prints (214.1)
+  [PASS] ⛭ and the namesake arm's with 550.5 (550.5)
+  [PASS] ⛭ and the arm of record's with 302.1 (302.1)
+  [PASS] ⛭⛭ so the printed ratio 2.57 reproduces on a second scorer (2.572x)
+  [PASS] ⛭⛭ and cc66's 1.41 on the arm of record reproduces too (1.411x)
+  [PASS] ⌗ and the unlensed arm-of-record ratio the order cites as 1.35 (1.348x)
+
+========================================================================================================
+  0 failure(s)
