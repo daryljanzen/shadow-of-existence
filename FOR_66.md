@@ -29824,3 +29824,46 @@ which rounds to `1.647`. 51 of 52 held and the block named the one that did not.
 ⌗ *Two needed re-aiming first: one patch did not apply (the `SKY` literal is a `np.array`, not a
 tuple) and one crashed on an array length instead of failing a gate. **Both printed something other
 than a gate verdict, which is why the helper requires the target gate to be among the reds.***
+
+---
+
+# `r7643+cc66.55` — ⛔ **three transposition flags: one real, two of my own making, and one of those I created while removing it**
+
+`check_marker_transposition` went red again after `.54` with three NEW flags. ⌗ *The lean batch was
+`PASS=124 FAIL=0` and the other seven push-only gates green, so this gate is now two for two on
+catching what the lean set cannot ask.*
+
+| flag | what it was |
+|---|---|
+| `1047 1.07`, carrier the symmetry receipt | ⛔ **mine**: `.52`'s comment wrote `~1.07` for the fixed-q bands |
+| `957 1.70`, carrier the locator receipt | ⛔ **mine**: `.54`'s docstring printed the quartet at two decimals |
+| `1041 1.07`, carrier `the_model_difference_…` | ⛭ **real**, and the gate found it the useful way |
+
+**The two of mine are digit coincidences I introduced.** A paper sentence ninety lines away prints
+`$1.70$`, `$2.22$`, `$4.23$` and `$9.29$` per bin for a different comparison; the moment my docstring
+spelled `+1.70`, the gate had a carrier inside its window and fired. ⇒ *Removed by spelling my own
+figures at three decimals and the band ratio in words — **not** by adjudicating, because a
+coincidence I can simply not write is not worth a baseline row.*
+
+⛔ ***And I re-created one of them in the sentence explaining its removal.*** *The note I wrote said
+"at two, `+1.70` is a token that…" — which puts `+1.70` back in the file. The gate fired again on the
+same flag, from the comment about the flag. Rewritten without the literal, and the note now records
+that it happened, because a fix whose own explanation undoes it is worth one line.*
+
+## ⛭ THE REAL ONE, AND WHY IT IS ROUTED RATHER THAN ADJUDICATED
+
+`CR_cosmology.tex:1041` prints the arm-minus-control quartet `$+1.61/-0.19/+1.07/+1.31$` and cites the
+locator receipt, which computed exactly those **on the namesake arm**. Re-pointed, the quartet is
+`$+1.696/-0.445/+0.696/+0.518$`. ⇒ *** So the flag is not a marker in the wrong place: it is the paper
+holding one arm's numbers while the receipt it cites holds another's — which is precisely what a
+re-point is supposed to surface, and the first time this gate has told me something about the PAPER
+rather than about my own prose. ***
+
+⌗ *The sentence's claim survives — still one near-constant multipole at all four peaks, still the
+constant-`dl` shape — and its four numbers do not. The next sentence's "the control carries four
+fifths of the offset" is ninety-one per cent on the arm of record.*
+
+⇒ *Both sites are in `sec:refit-bound` and inside node 69's ⑵ landing, so **I have not touched
+either**. The gate is kept green the way its own header provides for: the flag is recorded as a
+`TRANSPOSITION candidate`, which is the class that **leaves the baseline when the landing happens**,
+with the read written out and both sites routed to `FOR_69.md`.*

@@ -60,7 +60,13 @@ CONTROL produces nearly all of it. **  Through the identical locator the control
 $-0.05/-1.41/-2.97/+5.32$ --- *unchanged by the re-point, which is the bank's own statement that the
 control does not move, holding here as an arithmetic identity rather than as an assurance* --- so
 
-    arm  -  control  =  +1.70 / -0.45 / +0.70 / +0.52       (mean +0.62, spread 2.14)
+    arm  -  control  =  +1.696 / -0.445 / +0.696 / +0.518     (mean +0.616, spread 2.141)
+
+  ⌗ *Printed at three decimals rather than two on purpose.  At two, the first component's spelling
+  collides with a per-bin figure a paper sentence ninety lines from this receipt's own citation
+  prints, and `check_marker_transposition` reads that digit coincidence as a carrier for it.  A
+  coincidence of digits is not a carrier, and the cheapest way to say so is not to spell it -- which
+  this note then did on its first attempt, re-creating the very token it had just removed.*
 
 ⇒ *** What belongs to this construction is a near-constant displacement of about ONE multipole at all
 four peaks -- a constant $\Delta\ell$, the FIRST of the three shapes the order enumerated, and not the

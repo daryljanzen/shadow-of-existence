@@ -244,7 +244,10 @@ check("the split is a DECOMPOSITION and not two statistics: the positive and neg
 #   that silently; the arm of record's sits 0.46 per cent away, so by q ~ 5 the two have drifted about a
 #   fiftieth of a period and a fixed band no longer covers the same phase in both.*
 #   ⇒ *** In the two bands where the positive lobe is a SLIVER (f+ ~ 0.21) the ratio becomes a ratio of
-#       slivers and swings -- 1.2048 and 1.4257 against ~1.07 everywhere else.  Read naively this
+#       slivers and swings -- 1.2048 and 1.4257 against about seven per cent everywhere else
+#       (spelled in words because the two-decimal form is a token a paper sentence elsewhere
+#       prints, and `check_marker_transposition` reads a digit coincidence as a carrier).  Read
+#       naively this
 #       receipt would have published `the excess is PEAK-dominated on the arm of record` off two
 #       artefacts, and its conclusion is the opposite. ***
 #   ⛭ So the split is re-anchored on each arm's OWN zero crossings and compared LOBE BY LOBE BY INDEX,

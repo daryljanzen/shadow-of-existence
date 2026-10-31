@@ -4123,3 +4123,27 @@ five. `+0.12649` and `-0.02469` round to exactly the paper's `0.126` and `0.0247
 broke and the quantity did not. Both flags are adjudicated in
 `corpus/marker_transposition_baseline.tsv` under the existing `the own group carries the UNROUNDED
 value and the paper rounds` verdict, with the read written out.*
+
+## ⛔ `r7643+cc66.55` — TWO PAPER SITES MY RE-POINTS HAVE MADE STALE, IN YOUR LANDING AND NOT MINE
+
+`check_marker_transposition` found a real one rather than a token accident, and it found it the useful
+way: **the receipt moved, so the paper's figure is now the namesake arm's.**
+
+**`CR_cosmology.tex:1041`** prints the arm-minus-control quartet as `$+1.61$, $-0.19$, $+1.07$ and
+`$+1.31$` and cites `the_locator_is_good_to_three_hundredths_…`, which computed exactly those on the
+namesake arm. ⇒ *Re-pointed at `cc66.54`, the same quartet is `$+1.696$, $-0.445$, $+0.696$,
+`$+0.518$` — still one near-constant multipole at all four peaks, still the constant-`$\Delta\ell$`
+shape, so **the sentence's claim survives and its four numbers do not**.*
+
+**`CR_cosmology.tex:1047`**, the next sentence, says *"at the fourth the control carries **four
+fifths** of the offset"*. ⇒ *On the arm of record the control carries **ninety-one per cent**. The
+reading is unchanged and strengthened; the fraction is not.*
+
+⌗ *Both are yours: your `r7643` ⑵ instruction is that the arm-of-record sites in `sec:refit-bound`
+land as one unit rather than seat by seat, and these two sit inside it. **I have not touched either.***
+
+⌗ *So the gate is kept green the way its own header provides for rather than by adjudicating the
+finding away: the flag is recorded as a `TRANSPOSITION candidate` in
+`corpus/marker_transposition_baseline.tsv`, with the read written out and the note that **the row
+leaves that file when the landing happens.** If you would rather I land these two with the rest of my
+item-2 re-points, say so and I will — I read your instruction as covering them.*
