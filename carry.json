@@ -553,6 +553,128 @@
     "since": "24977050e9e55b3f4de710f4d5aa34dbf2a5cfe7",
     "unmeasured": true
    }
+  },
+  "tolerance": {
+   "receipts/L248_the_strike_broke_its_readers/R1_r3001_struck_fourteen_rows_and_twelve_receipts_read_them_by_prefix.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41174586758",
+    "since": "24977050e9e55b3f4de710f4d5aa34dbf2a5cfe7",
+    "unmeasured": true
+   },
+   "receipts/L253_the_seed_that_stopped_seeding/S1_a_seed_that_stops_constructing_its_defect_accuses_the_gate_it_defends.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41174586758",
+    "since": "24977050e9e55b3f4de710f4d5aa34dbf2a5cfe7",
+    "unmeasured": true
+   },
+   "receipts/L255_the_exemption_was_a_claim/E1_an_exemption_is_a_claim_and_all_three_were_false.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41174586758",
+    "since": "24977050e9e55b3f4de710f4d5aa34dbf2a5cfe7",
+    "unmeasured": true
+   },
+   "receipts/L270_the_table_that_carried_its_next_failure/V1_a_translation_table_validated_only_against_what_it_was_asked_to_render.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41174586758",
+    "since": "24977050e9e55b3f4de710f4d5aa34dbf2a5cfe7",
+    "unmeasured": true
+   },
+   "receipts/L281_the_prior_art_hole/P1_a_bake_that_asks_the_papers_and_not_the_receipts_walks_into_a_settled_question.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41174586758",
+    "since": "24977050e9e55b3f4de710f4d5aa34dbf2a5cfe7",
+    "unmeasured": true
+   },
+   "receipts/L282_the_scope_that_five_papers_carry/Q1_the_corpus_has_the_qualifier_as_a_labelled_proposition_and_P13_states_the_claim_without_it.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41174586758",
+    "since": "24977050e9e55b3f4de710f4d5aa34dbf2a5cfe7",
+    "unmeasured": true
+   },
+   "receipts/L283_the_third_source_class/T1_the_papers_cite_the_receipts_decide_and_resources_is_where_the_proofs_live.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41174586758",
+    "since": "24977050e9e55b3f4de710f4d5aa34dbf2a5cfe7",
+    "unmeasured": true
+   },
+   "receipts/L556_registry_from_rows/R1_the_registry_was_checked_from_citations_inward_so_twenty_rows_were_read_by_nothing.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41174586758",
+    "since": "24977050e9e55b3f4de710f4d5aa34dbf2a5cfe7",
+    "unmeasured": true
+   },
+   "receipts/L_numerics/Q1_a_stated_tolerance_is_a_request_and_the_corpus_answers_it.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41174586758",
+    "since": "24977050e9e55b3f4de710f4d5aa34dbf2a5cfe7",
+    "unmeasured": true
+   },
+   "receipts/L_probability/S11_a_sweep_can_contain_its_own_gates_by_scoping_the_assertion_to_its_own_push_and_the_population_it_would_have_swept_is_mostly_another_seats.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41174586758",
+    "since": "24977050e9e55b3f4de710f4d5aa34dbf2a5cfe7",
+    "unmeasured": true
+   },
+   "receipts/L_probability/S13_the_thirty_are_read_and_the_fifth_bucket_is_an_absence_guard_with_no_positive_control.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41174586758",
+    "since": "24977050e9e55b3f4de710f4d5aa34dbf2a5cfe7",
+    "unmeasured": true
+   },
+   "receipts/L_probability/S1_the_corpus_sweep_finds_no_headline_resting_on_an_overclaimed_sigma_and_three_in_one_paper_below_it.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41174586758",
+    "since": "24977050e9e55b3f4de710f4d5aa34dbf2a5cfe7",
+    "unmeasured": true
+   },
+   "receipts/L_probability/S54_a_ledger_change_scopes_five_receipts_and_none_of_the_forty_four_that_read_the_ledger_because_the_read_index_is_a_list_of_spellings_without_tsv_on_it.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41174586758",
+    "since": "24977050e9e55b3f4de710f4d5aa34dbf2a5cfe7",
+    "unmeasured": true
+   },
+   "receipts/L_probability/S55_the_previous_repairs_own_written_safety_argument_was_the_defect_because_a_shrinking_population_is_safe_for_a_restraint_and_fatal_for_the_non_vacuity_read_off_the_same_range.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41174586758",
+    "since": "24977050e9e55b3f4de710f4d5aa34dbf2a5cfe7",
+    "unmeasured": true
+   },
+   "receipts/L_probability/S56_a_pin_is_only_as_good_as_what_resolves_it_and_one_reference_over_resolved_while_the_other_under_resolved_so_both_wanted_the_fact_committed_beside_the_measurement.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41174586758",
+    "since": "24977050e9e55b3f4de710f4d5aa34dbf2a5cfe7",
+    "unmeasured": true
+   },
+   "receipts/L_probability/S58_the_repair_was_right_and_the_reason_written_beside_it_was_false_because_a_pin_keyed_by_an_abbreviation_is_keyed_by_a_length_the_environment_picks.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41174586758",
+    "since": "24977050e9e55b3f4de710f4d5aa34dbf2a5cfe7",
+    "unmeasured": true
+   },
+   "receipts/L_probability/S59_the_census_of_a_shape_inside_one_file_missed_the_clause_four_lines_from_the_pin_that_fixes_it.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41174586758",
+    "since": "24977050e9e55b3f4de710f4d5aa34dbf2a5cfe7",
+    "unmeasured": true
+   },
+   "receipts/L_probability/S60_the_test_that_asks_whether_a_literal_is_anywhere_in_the_repo_cannot_see_a_dead_pin_in_its_own_container.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41174586758",
+    "since": "24977050e9e55b3f4de710f4d5aa34dbf2a5cfe7",
+    "unmeasured": true
+   },
+   "receipts/L_probability/S8_the_source_half_is_the_blinder_one_and_the_class_is_mostly_a_receipt_pinning_a_ledger_not_another_receipt.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41174586758",
+    "since": "24977050e9e55b3f4de710f4d5aa34dbf2a5cfe7",
+    "unmeasured": true
+   },
+   "receipts/L_probability/S9_the_exposure_is_zero_so_the_count_judgement_was_right_and_the_class_was_already_registered_before_it.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41174586758",
+    "since": "24977050e9e55b3f4de710f4d5aa34dbf2a5cfe7",
+    "unmeasured": true
+   },
+   "receipts/P15_CR_cosmology/P15_the_background_returns_the_larger_stretch_so_2774_is_the_constructions_and_the_stale_trio_is_a_configuration_not_a_slip_but_the_figures_name_two_of_them.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41174586758",
+    "since": "24977050e9e55b3f4de710f4d5aa34dbf2a5cfe7",
+    "unmeasured": true
+   },
+   "receipts/P15_CR_cosmology/P15_the_budget_declaration_rests_on_a_lower_bound_and_the_receipt_that_says_so_measures_the_three_figures_it_rests_on.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41174586758",
+    "since": "24977050e9e55b3f4de710f4d5aa34dbf2a5cfe7",
+    "unmeasured": true
+   },
+   "receipts/P15_CR_cosmology/P15_the_onset_bracket_family_is_latent_everywhere_and_was_live_in_one_place.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41174586758",
+    "since": "24977050e9e55b3f4de710f4d5aa34dbf2a5cfe7",
+    "unmeasured": true
+   },
+   "receipts/P15_CR_cosmology/P15_the_term_mix_has_the_shape_the_offset_needs_and_over_delivers_its_size.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41174586758",
+    "since": "24977050e9e55b3f4de710f4d5aa34dbf2a5cfe7",
+    "unmeasured": true
+   }
   }
  },
  "claude/shadow-of-existence-setup-6awafl": {
