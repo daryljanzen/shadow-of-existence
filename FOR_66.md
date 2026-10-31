@@ -30214,3 +30214,82 @@ It is the next piece of ordered work, and its cost is now known: nine gates, eac
 read for whether the `0.464%` moved the STATISTIC or the FINDING -- which is the distinction the three
 repairs above turned on, and getting it wrong in either direction is how a re-point publishes the
 wrong thing.*
+
+---
+
+# `r7643+cc66.61` — `the_acoustic_contrast_…` re-pointed: ⛭⛭ **nine namesake conditions, and the two that looked like findings are one window**
+
+The receipt `cc66.60` costed. Physics side on the arm of record (`r6911_source_cr`,
+`r6911_source_cr_kcont`, `cc66_r185_verify_cr`); the `SRCSAVE`-is-inert identity stays on the namesake
+pair, declared, because `r6911_noop` has no arm-of-record key.
+
+## ⛭ ⓵ SEVEN TOLERANCES WERE THE NAMESAKE ARM'S, AND `cc66.60`'s NUMBER IS WHY
+
+| | namesake | arm of record |
+|---|---|---|
+| comoving distances | `+0.449%` | `+1.287%` *(arm still the LARGER, against the order's `−6.2`)* |
+| acoustic angles agree to | `0.085%` | `0.464%` |
+| period, both source rungs | `0.9978 / 0.9973` | `0.9941 / 0.9935` |
+| resampling round trip | `0.99965` | `0.99190` |
+| `eta`-integration step | `−0.37%` | `−1.39%` |
+
+*Each re-pinned at what is measured here or restated; **none widened to admit its own failure.*** ⌗ *The
+resampling bound is the one worth naming: the round trip through the OTHER arm's abscissa is exact to
+the extent the two abscissae coincide, so **its error is bounded by the comb offset itself** rather
+than independent of it. That is the bound's own justification, not a number fitted to the failure.*
+
+## ⛭⛭ ⓶ AND THE TWO THAT LOOKED LIKE FINDINGS ARE THE SAME SINGLE WINDOW
+
+`the source ratio is if anything BELOW one` and `the gap is not a definition` both break here — the
+last-scattering rung reads `1.0112` and the source span reaches `1.0430`, **overlapping the ell band by
+`0.0030`**. ⇒ *** Both are rung 1 at `w=1.00`, whose own window neighbours read `1.0165` and `0.9995`.
+A `4.4` per cent swing between adjacent windows is not what a source excess looks like — and the ELL
+rung's worst swing over the same four windows is `0.34` per cent, **more stable here than on the
+namesake.** ***
+
+| | worst window swing |
+|---|---|
+| ell rung, namesake | `0.0056` |
+| ell rung, arm of record | `0.0034` |
+| source rungs, namesake | `0.0213` |
+| source rungs, arm of record | `0.0527` |
+
+*So the separation is tested on what is stable, the instability is measured rather than averaged away,
+and `BELOW one` is reported as the namesake arm's window-level reading rather than restated.* ⛭ **What
+survives is what the argument rests on: the source rungs sit within about one per cent of unity —
+fifteen of sixteen readings below `1.02` — where the ell rung sits at four.**
+
+⛔ *And the four-for-four passage loses its SIGN but not its conclusion: on the namesake, upstream read
+`0.996`, shallower, "the direction all four channels point". Here the two rungs sit on opposite sides
+of unity. **The dissolution never rested on the sign — it rests on the upstream ratio being small
+either way** — and the docstring now says so instead of carrying the old direction.*
+
+## ⛔ ⓷ TWO OF MY OWN PINS DID NOT HOLD, AND THE PERTURBATION IS WHAT SAID SO
+
+| pin as written | what perturbing it showed |
+|---|---|
+| `_SWING_S > 3 * _SWING_E` | ⛔ loosening the factor to `0.3` left it **GREEN** — the measured ratio is `15.5`, so the threshold had enormous slack |
+| `abs(SRCR - 1) < 0.02` | ⛔ loosening to `0.05` left it **GREEN** — `1.0112` clears both |
+
+⇒ *** **A bound the measurement clears by a wide margin is not a pin.** Third time today. Both are now
+two-sided at the measured values, with `within about one per cent` kept as the CLAIM in the label where
+it belongs. *** ⌗ *And a third: `5e-4` on a figure near one is marginally WIDER than
+`check_figures_pinned`'s own allowance, so four pins read as unpinned until I tightened them to `1e-4`.
+The gate's allowance is the coarser of half a last digit and 0.05 per cent — on `0.9734` that is
+`0.000487`, and `0.0005` does not fit inside it.*
+
+## ⛭ ⓸ AND THE RECEIPT ALREADY ENFORCED THAT THE BANKS MOVE TOGETHER
+
+*Reverting the source banks alone did not redden my target — it reddened `[cr] THE SLICED SOURCE RUN
+REPRODUCES THE BANKED 185-BIN REFIT SPECTRUM`.* ⇒ *** A cross-bank consistency gate that was already
+there, and it makes a half-moved re-point impossible rather than merely detectable. A better answer
+than the one I was looking for. ***
+
+**18 pins, four perturbations on target, `exit=0`.** `figure_pin_baseline.tsv` shrinks by 17 rows
+across two writes, all this receipt's.
+
+## ⇒ ⓹ ITEM 2: FOUR FULLY OR LARGELY RE-POINTED, SIX BANK-BLOCKED
+
+`the_contrast_excess_…` `.52`, `the_locator_…` `.54`, `the_term_mix_…` `.59`, and this one `.61` with
+its identity leg declared — plus `the_monopole_zero_point_…` `.57`. ⌗ *Every one of the four found a
+statistic that does not survive the move, and `cc66.60`'s single number is why all four did.*
