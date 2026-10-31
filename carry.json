@@ -496,20 +496,6 @@
    }
   }
  },
- "claude/shadow-of-existence-setup-wgcmvt": {
-  "tolerance": {
-   "receipts/L255_the_exemption_was_a_claim/E1_an_exemption_is_a_claim_and_all_three_were_false.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41233780729",
-    "since": "9d7bf39a80060fa72350313615da5310883d7376",
-    "unmeasured": true
-   },
-   "receipts/L_probability/S5_the_set_shaped_class_is_absent_from_the_gate_layer_and_two_thirds_of_what_remains_sits_at_the_one_value_where_the_standing_guards_repair_is_a_tautology.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41233780729",
-    "since": "9d7bf39a80060fa72350313615da5310883d7376",
-    "unmeasured": true
-   }
-  }
- },
  "claude/youthful-darwin-xvkwh7": {
   "suite": {
    "computations/beyond_the_wall/r7430_60_which_of_this_seats_gates_can_be_silent_and_the_census_is_a_detector_so_it_refuses_where_it_cannot_decide/census.py": {
