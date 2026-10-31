@@ -30791,3 +30791,83 @@ re-points.*
 
 **Remaining in item 1:** the no-fit confrontation, the full-range refit,
 `the_1p57_has_no_parameter_address`, `the_refit_leaves_the_background`, the 133-bin pair.
+
+---
+
+# `r7645+cc66.67` — the no-fit confrontation re-pointed, and ⛔⛔ **a crashed figure generator left a state every check called good**
+
+Second of the six. Both arms move (the no-fit arm to 70's distances'-point bank, the refitted arm to
+its `_leafrec1` sibling); both controls stay. ⇒ **Seven reds, six of them predicted in writing before
+measuring; `exit=0`; seven perturbations all on target.**
+
+## ⛔⛔ ⓵ THE NEAR-MISS, FIRST, BECAUSE IT IS THE WORST THING HERE
+
+`corpus/make_fig_acoustic_nofit.py` wrote its summary `.npz` **before** importing `matplotlib`. The
+import failed — a broken system Pillow in this container — so it **exited 1 having already rewritten
+the figure's numbers**. ⇒ *** The figure's NUMBERS were current and the figure itself was STALE, and
+the receipt that guards the figure passed, because it compares the numbers against its own. I caught
+it on the file timestamps, not from any gate. ***
+
+⛭ **Two fixes, both landed:**
+- **The generator now fails CLOSED** — the numbers are written only after `savefig` succeeds. *A
+  generator that writes its summary before its artefact fails open by construction: a crash leaves a
+  state every check calls good. Now the receipt stays red until the figure is really regenerated.*
+- **The container cause, for the record:** `pip` is bound to Python **3.13** while `python3` is
+  **3.11**, so `pip install Pillow` fetches a 3.13 wheel whose `_imaging` extension is invisible to
+  3.11 — the error says `cannot import name '_imaging'` and looks like a broken package.
+  `python3 -m pip install --target <dir> Pillow` gets the right wheel. ⌗ *Three attempts failed
+  before I read the `.so` name and saw `cpython-313` against a 3.11 interpreter.*
+
+## ⛭⛭ ⓶ SIX OF SEVEN REDS PREDICTED, AND THE SEVENTH IS THE FINDING
+
+| | predicted | measured |
+|---|---|---|
+| no-fit arm's `D_M` gate | **survives** (background untouched) | ✔ bit-identical, `14011.4567` |
+| refit arm's `D_M` | moves, re-pin | ✔ `14017.0386` → `14133.9546` |
+| both per-bin pins | fail; no-fit falls ~9%, refit rises to ~1.61 | ✔ `2.64869` (−11.8%), `1.60276` |
+| both ratio windows | fail | ✔ |
+| **the 9.08σ modulation** | *"survives at about 8.3σ — lowest confidence; if it fails I will say so rather than widen it"* | ✘ **6.0429σ** |
+| the figure's numbers | disagree, regenerate | ✔ |
+
+⇒ **I got the modulation wrong and said in advance that I might.** It fell by a third, not a tenth.
+
+## ⛔ ⓷ AND `REFITTING HALVES IT` INVERTS IN ITS SIGNIFICANCE LIMB
+
+| | namesake | arm of record |
+|---|---|---|
+| no-fit amplitude / σ | 1.3729 / **9.08** | 0.95218 / **6.0429** |
+| refit amplitude / σ | 0.8128 / **6.89** | 0.83305 / **7.0194** |
+| amplitude falls by | 41% | **12.5%** |
+| significance | **falls** | **RISES** |
+
+*** On this arm refitting absorbs an eighth of the amplitude and **none of the detection** — the
+significance goes up, because the no-fit arm's harmonic error is the larger of the two. *** ⌗ *What
+survives: the modulation is still at the comb's own period, still 6σ against the control's ~1.8, so
+the rejection is still shaped at the acoustic period and the shape is still the arm's. **But `nine
+sigma` is in this receipt's own filename and is the namesake arm's figure** — attributed in the
+docstring rather than renamed, as at `.63`.*
+
+## ⛭⛭⛭ ⓸ AND A CROSS-CHECK NEITHER RECEIPT COULD MAKE ALONE
+
+This receipt's no-fit ratio on **179** of `fig:acoustic`'s own bins with the figure's operator:
+**2.3469**. `cc66.66`'s on **185** full-range **lensed** bins with CAMB's: **2.3456**. ⇒ *** No shared
+bin set, operator or code path — agreeing to six parts in ten thousand. Now gated: a pointer error on
+either side would not survive it. *** ⌗ *And the perturbation confirms the teeth — reverting the
+no-fit arm makes it 2.6601 and the gate fires.*
+
+## ⌗ ⓹ AND A SECOND INSTANCE OF THE FIGURE GUARD'S COLUMN SENSITIVITY
+
+`check_figures_pinned` reads each `INDEX.md` row's claim from **`c[3]`**. This row carries its reading
+in **`c[2]`** and its order in `c[3]`. ⇒ *Measured: the guard checks a cell with **0** figures while
+the claim cell carries **18**.* ⌗ *I have **not** swapped the columns — the row schema is 69's, and
+swapping one row would redden it with eighteen figures I would then have to pin or baseline against a
+ratchet that only shrinks. Instead the receipt itself now pins every one of them two-sided at exact
+values, so the row fails the receipt when it is wrong whichever cell the guard reads.* ⚠ *Same family
+as the unescaped-pipe case at `cc66.63`: the guard keys on a fixed column index while rows vary.*
+
+⛔ *And I over-tightened those pins first — pinning against the **printed, rounded** values, which the
+exact ones miss by more than the tolerance. Three gates went red until I dumped the exact figures.
+Same lesson as the proxies at `.64`: read the value, do not infer it from a rounded print.*
+
+**Remaining in item 1:** the full-range refit, `the_1p57_has_no_parameter_address`,
+`the_refit_leaves_the_background`, the 133-bin pair.

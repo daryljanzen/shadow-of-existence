@@ -96,15 +96,27 @@ import chi2_of_spectrum as CS                                              # noq
 
 SP = os.path.join(ROOT, 'computations', 'beyond_the_wall', 'spectra')
 G185 = os.path.join(ROOT, 'computations', 'beyond_the_wall', 'refit_grid185')
+G185L = os.path.join(ROOT, 'computations', 'beyond_the_wall',
+                     'refit_grid185_leafrec1_distances')
 GEN = os.path.join(ROOT, 'corpus', 'make_fig_acoustic_nofit.py')
 PDF = os.path.join(ROOT, 'corpus', 'fig_acoustic_nofit.pdf')
 NPZ = os.path.join(ROOT, 'computations', 'beyond_the_wall', 'r7183_nofit_figure',
                    'nofit_figure_numbers.npz')
 
+# ⛭⛭ r7645+cc66.67: ** BOTH ARMS MOVE TO THE ARM OF RECORD; BOTH CONTROLS STAY. **
+#   *The NO-FIT arm goes to 70's `r7643` distances'-point bank, which ran the original recipe
+#   verbatim with `LEAFREC=1`; the REFITTED arm goes to its `_leafrec1` sibling.  `LEAFREC` does not
+#   reach the controls (3.6e-16, `r7641`), so `lcdm_base` and `cc66_r185_verify_lcdm` are unchanged.*
+#   ⛭ ** AND THE TWO ARMS' BACKGROUNDS BEHAVE DIFFERENTLY ACROSS THE MOVE, WHICH IS THE WHOLE
+#   DISTINCTION THIS RECEIPT RESTS ON: ** *the no-fit arm's `D_M` is BIT-IDENTICAL at 14011.4567
+#   (`LEAFREC` does not touch the background), while the refitted arm's moves 14017.0386 ->
+#   14133.9546 because the MINIMUM itself moves on the arm of record.  ⌗ That asymmetry is what
+#   makes the `different pair` gate below stronger after the move, not weaker -- and reading the
+#   refitted file as the no-fit one is exactly the pointer error 70 caught in `cc66`'s 1.41.*
 SPEC = {'nofit_lcdm': (os.path.join(G185, 'lcdm_base.npz'), 13864.6627),
-        'nofit_cr': (os.path.join(G185, 'cr_base.npz'), 14011.4567),
+        'nofit_cr': (os.path.join(G185L, 'cr_base.npz'), 14011.4567),
         'refit_lcdm': (os.path.join(SP, 'cc66_r185_verify_lcdm.npz'), 13954.3535),
-        'refit_cr': (os.path.join(SP, 'cc66_r185_verify_cr.npz'), 14017.0386)}
+        'refit_cr': (os.path.join(SP, 'cc66_r185_verify_cr_leafrec1.npz'), 14133.9546)}
 L_A, PEAK1 = 298.0, 222.0
 
 # =================================================================================================
@@ -159,15 +171,28 @@ for t in SPEC:
     R[t] = dict(c2=float(res @ FISH @ res), w=LINV @ res)
     print(f"      {t:11s} chi2 = {R[t]['c2']:8.2f}   {R[t]['c2'] / NB:6.3f} per bin")
 print(f"      {NB} bins, ell {LCK[0]:.0f}-{LCK[-1]:.0f}")
-check("⛭⛭ ** WITH NOTHING FITTED THE ARM IS AT `3.00` PER BIN AND THE CONTROL AT `1.13` ** -- the "
+check("⛭⛭ ** WITH NOTHING FITTED THE ARM IS AT `2.65` PER BIN AND THE CONTROL AT `1.13` ** -- the "
       "confrontation the paper has never carried, and the stronger of the two because the "
-      "background is the distance data's own",
-      abs(R['nofit_cr']['c2'] / NB - 3.002) < 0.02 and abs(R['nofit_lcdm']['c2'] / NB - 1.129) < 0.02)
-check("⌗ and refitted they are `1.58` and `0.99`, so four parameters close about a third of the gap "
-      "-- `2.66x` becomes `1.59x`",
-      abs(R['refit_cr']['c2'] / NB - 1.581) < 0.02 and abs(R['refit_lcdm']['c2'] / NB - 0.994) < 0.02
-      and 2.6 < R['nofit_cr']['c2'] / R['nofit_lcdm']['c2'] < 2.72
-      and 1.55 < R['refit_cr']['c2'] / R['refit_lcdm']['c2'] < 1.64)
+      "background is the distance data's own.  ⛔ *`3.00` was the namesake arm's; the arm of record "
+      "costs the arm less and the ratio narrows*",
+      abs(R['nofit_cr']['c2'] / NB - 2.64869) < 5e-6
+      and abs(R['nofit_lcdm']['c2'] / NB - 1.12858) < 5e-6)
+check("⌗ and refitted they are `1.60` and `0.99`, so four parameters close about a third of the gap "
+      "-- `2.3469x` becomes `1.6128x`",
+      abs(R['refit_cr']['c2'] / NB - 1.60276) < 5e-6
+      and abs(R['refit_lcdm']['c2'] / NB - 0.99373) < 5e-6
+      and abs(R['nofit_cr']['c2'] / R['nofit_lcdm']['c2'] - 2.3469) < 0.005
+      and abs(R['refit_cr']['c2'] / R['refit_lcdm']['c2'] - 1.6128) < 0.005)
+# ⛭⛭⛭ r7645+cc66.67: ** AND THE NO-FIT RATIO AGREES WITH `cc66.66`'s ACROSS A DIFFERENT BIN SET AND
+#   A DIFFERENT OPERATOR, WHICH IS A CHECK NEITHER RECEIPT COULD MAKE ALONE. **  *This receipt scores
+#   179 of `fig:acoustic`'s own bins (ell 104-1886) with the figure's operator; `cc66.66` scores 185
+#   full-range LENSED bins with CAMB's.  They have no bin set, no operator and no code path in common
+#   -- and they return 2.3469 and 2.3456.*  ⇒ ** Two independent roads to the same headline, agreeing
+#   to six parts in ten thousand.  A pointer error on either side would not survive this. **
+if abs(R['nofit_cr']['c2'] / R['nofit_lcdm']['c2'] - 2.3456) > 0.01:
+    fail.append(f"this receipt's no-fit ratio {R['nofit_cr']['c2'] / R['nofit_lcdm']['c2']:.4f} and "
+                f"cc66.66's 2.3456 differ by more than a per cent -- two independent scorings of the "
+                f"same configuration must agree")
 
 # =================================================================================================
 print()
@@ -201,19 +226,60 @@ for t in SPEC:
     H[t] = (amp, err, amp / err)
     print(f"      folded: {t:11s} one harmonic at l_A = {amp:.4f} +- {err:.4f}  ({amp / err:.2f} sigma)")
 
-check("⛭⛭⛭ ** THE ARM'S NO-FIT RESIDUAL CARRIES A MODULATION AT THE COMB'S OWN PERIOD AT `9.1` "
+# ⛔⛭⛭⛭ r7645+cc66.67: ** THE MODULATION WEAKENS MATERIALLY AND THE `REFITTING HALVES IT` READING
+#   INVERTS IN ITS SIGNIFICANCE LIMB.  I PREDICTED THE FIRST WRONG AND SAID SO. **
+#   *Registered before measuring: `the 9.08-sigma modulation survives in kind, and I am not sure of
+#   its margin -- if the amplitude falls with the chi^2, about 8.3 sigma, which still clears the gate
+#   but not by much.  Lowest-confidence prediction here; if it fails I will say so rather than widen
+#   it.'  It fell to 6.04, and the gate failed.*
+#   ⇒ *** WHAT SURVIVES: the arm's no-fit residual still carries a modulation AT THE COMB'S OWN
+#       PERIOD at 6.0 sigma against the control's 1.80, so the rejection is still shaped at the
+#       acoustic period and the shape is still the arm's.  The claim is intact in kind and the
+#       `9.1 sigma` in this file's own NAME is the namesake arm's figure. ***
+#   ⛔ *** AND THE SECOND LIMB INVERTS.  On the namesake, refitting took the amplitude 1.3729 ->
+#       0.8128 (down 41 per cent) AND the significance 9.08 -> 6.89 (down).  On the arm of record the
+#       amplitude falls only 12.5 per cent, 0.9522 -> 0.8331, while the significance RISES, 6.04 ->
+#       7.02 -- because the NO-FIT arm's harmonic error is the larger of the two (0.1576 against
+#       0.1187).  So on this arm refitting does not halve the modulation and does not reduce its
+#       significance at all: it leaves MORE of it, read as a detection. ***
+#   ⌗ *That is a real change to what the four parameters are doing, not a renumbering, and it is
+#   stated rather than smoothed: `absorb part of the modulation and not its cause` was the namesake's
+#   reading of a fall in both; here only the amplitude falls.*
+check("⛭⛭⛭ ** THE ARM'S NO-FIT RESIDUAL CARRIES A MODULATION AT THE COMB'S OWN PERIOD AT `6.0` "
       "SIGMA, AGAINST THE CONTROL'S `1.8` ** -- so the rejection is shaped at the acoustic period "
-      "and that shape is the arm's, not the data's",
-      H['nofit_cr'][2] > 8.0 and H['nofit_lcdm'][2] < 2.5)
-check("⌗ and refitting halves the amplitude without removing it -- `1.373` to `0.813`, still `6.9` "
-      "sigma -- so the four parameters absorb part of the modulation and not its cause",
-      0.45 < H['refit_cr'][0] / H['nofit_cr'][0] < 0.72 and H['refit_cr'][2] > 5.0)
+      "and that shape is the arm's, not the data's.  ⛔ *`9.1` was the namesake arm's, and this "
+      "file's own name carries it; on the arm of record the modulation is a third weaker*",
+      H['nofit_cr'][2] > 5.0 and H['nofit_lcdm'][2] < 2.5
+      and abs(H['nofit_cr'][2] - 6.0429) < 5e-4 and abs(H['nofit_cr'][0] - 0.95218) < 5e-6)
+check("⛔⛔ ** AND REFITTING NO LONGER HALVES IT: the amplitude falls only an eighth, `0.952` to "
+      "`0.833`, and the SIGNIFICANCE RISES, `6.0` to `7.0`, because the no-fit arm's harmonic error "
+      "is the larger of the two. **  ⇒ *On the namesake arm both fell -- 1.373 to 0.813 and 9.08 to "
+      "6.89 -- so `the four parameters absorb part of the modulation` was that arm's reading.  Here "
+      "they absorb an eighth of the amplitude and none of the detection*",
+      0.80 < H['refit_cr'][0] / H['nofit_cr'][0] < 0.92
+      and H['refit_cr'][2] > H['nofit_cr'][2]
+      and abs(H['refit_cr'][2] - 7.0194) < 5e-4 and abs(H['refit_cr'][0] - 0.83305) < 5e-6
+      and H['nofit_cr'][1] > H['refit_cr'][1])
+# ⛔⛭ r7645+cc66.67: ** THE ARITHMETIC IS UNCHANGED AND THE CONTRAST IT PRODUCES IS HALVED. **
+#   *The old second limb asked `fold sigma / largest band mean > 5.0`, which read 7.13 on the
+#   namesake arm (9.08 over 1.273).  On the arm of record it reads 3.40: the fold weakened to 6.04
+#   AND the band means grew, the largest going 1.273 -> 1.776.*
+#   ⇒ *** The CLAIM is untouched, because it is arithmetic: a bin one period wide averages a full
+#       cycle of a modulation at that period, on any arm.  And it still shows: the bands change sign
+#       twice across six -- a slow swing, no period-scale signal -- where the fold at that same
+#       period returns 6.04 sigma.  What is re-pinned is the SIZE of that contrast, at its measured
+#       value, with the bands' own bound stated separately rather than folded into a ratio. ***
+_CONTRAST = H['nofit_cr'][2] / max(abs(bm['nofit_cr']).max(), 1e-9)
 check("⛔⛔ ** AND BINNING AT THE PERIOD CANCELS IT, WHICH IS ARITHMETIC AND NOT TASTE: a bin one "
       "period wide averages a full cycle of any modulation at that period. **  The arm's band means "
-      f"change sign {sgn} times across {len(BANDS)} bands -- a slow swing, where the fold at the "
-      "same period gives 9 sigma",
-      sgn <= 3 and H['nofit_cr'][2] / max(abs(bm['nofit_cr']).max(), 1e-9) > 5.0)
-check("⌗ the control's fold is consistent with no modulation at either setting, so the `9.1` sigma "
+      f"change sign {sgn} times across {len(BANDS)} bands and never exceed 1.78 in the whitened "
+      "residual's own units -- a slow swing -- where the fold at the SAME period returns 6.0 sigma.  "
+      "⛔ *The contrast is 3.40 against 7.13 on the namesake arm: halved, because the fold weakened "
+      "and the band means grew.  The arithmetic does not depend on the arm; its margin does*",
+      sgn <= 3 and H['nofit_cr'][2] > 5.0
+      and abs(bm['nofit_cr']).max() < 2.0
+      and abs(_CONTRAST - 3.4025) < 5e-4)
+check("⌗ the control's fold is consistent with no modulation at either setting, so the `6.0` sigma "
       "is not an artefact of the fold, the binning or the likelihood",
       H['nofit_lcdm'][2] < 2.5 and H['refit_lcdm'][2] < 2.5)
 
