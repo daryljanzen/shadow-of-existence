@@ -69,8 +69,13 @@ def _key_gap_closed(g):
         except (ValueError, TypeError):
             return False
 
-    cr = [k for k in a.files if '__cr' in k and k in b.files and _num(a, k) and _num(b, k)]
-    lc = [k for k in a.files if '__lcdm' in k and k in b.files and _num(a, k) and _num(b, k)]
+    #: ⛔ r7643+cc66.56: boundary-anchored, not a substring -- `'__cr' in k` misses `Dl__unset_cr`,
+    #: `Dl__zero_cr`, `Dl__noop_cr`, `Dl__comb_cr_f0`, `Dl__inj_cr_f1`, which is most arm keys.  *The
+    #: same defect as in `which_key_gaps_actually_block.py`, carried here by the copy.*
+    _arm = re.compile(r'(^|_)cr($|_)')
+    _ctl = re.compile(r'(^|_)lcdm($|_)')
+    cr = [k for k in a.files if _arm.search(k) and k in b.files and _num(a, k) and _num(b, k)]
+    lc = [k for k in a.files if _ctl.search(k) and k in b.files and _num(a, k) and _num(b, k)]
     if not cr or not lc:
         return False
     moved = any(not _np.allclose(_np.atleast_1d(a[k]).astype(float),

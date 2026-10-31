@@ -29867,3 +29867,85 @@ fifths of the offset" is ninety-one per cent on the arm of record.*
 either**. The gate is kept green the way its own header provides for: the flag is recorded as a
 `TRANSPOSITION candidate`, which is the class that **leaves the baseline when the landing happens**,
 with the read written out and both sites routed to `FOR_69.md`.*
+
+---
+
+# `r7643+cc66.56` — ⛔ **I corrected a claim of mine with a test that had the same defect, and the instrument had been right all along**
+
+Preparing `the_combs_resolution_…` I checked whether the two `noop` banks block it, with a one-line
+`'__cr' in k` test. **That test is wrong, and so was the claim I pushed on the strength of it.**
+
+## ⛔ ⓵ THE DEFECT: AN ARM-KEY TEST THAT MISSES MOST ARM KEYS
+
+| key | `'__cr' in k` | `(^\|_)cr($\|_)` |
+|---|---|---|
+| `Dl__unset_cr` | **False** | True |
+| `Dl__zero_cr` | **False** | True |
+| `Dl__noop_cr` | **False** | True |
+| `Dl__comb_cr_f0` | **False** | True |
+| `Dl__inj_cr_f1` | **False** | True |
+| `rD__cr` | True | True |
+| `eta_ls__cr_0` | True | True |
+| `Dl__combvl` | False | False *(the negative control)* |
+
+**Five of the eight sampled arm keys are invisible to the substring form** — every one whose arm tag
+sits after another token.
+
+## ⛔⛭ ⓶ WHAT I GOT WRONG, AND WHAT I DID NOT
+
+At `cc66.53` I wrote that `r6929_noop` and `r6925_noop` *"carry no `__cr` keys at all, so they never
+blocked"*, and concluded `the_combs_resolution_…` was fully re-pointable. ⇒ **Both false. They carry
+`Dl__zero_cr`, `Dl__unset_cr` and `Dl__noop_cr`, and that receipt is BLOCKED on them.**
+
+⛭⛭ *** And here is the part worth more than the fix: `which_key_gaps_actually_block.py` ALREADY SAID
+SO. *** *Both banks are in its `GAPS_ALL`, and it has scored `the_combs_resolution_…` as
+`BLOCKED: r6925_noop, r6929_noop [literal]` since `cc66.46`.* ⇒ *I built an instrument to answer
+exactly this question, then answered it at the terminal with a one-liner that had the defect the
+instrument was built to avoid, and **believed the one-liner over the instrument.***
+
+## ⛭ ⓷ AND THE VERDICTS DO NOT MOVE — WHICH I MEASURED RATHER THAN HOPED
+
+Both instruments' key filters are now boundary-anchored, in `which_key_gaps_actually_block.py` and in
+the copy that `item_two_inventory_partitions_the_44.py` carries. **Run before and after, the
+membership is byte-identical** — `11` of the `44`, `5` BLOCKED, `3` DECLARED, `3` CLEAR, every row the
+same — and the inventory's whole output is unchanged. ⇒ *The reason is measurable: the only key gap
+with a sibling is `r6929_geometry`, whose keys are all of the `X__cr` shape, so **the defect was
+LATENT and not live.** It would have gone live the moment 70 banked a sibling for `r6925_noop` or any
+bank with `X__<tag>_cr` keys — which is on the ask list.* ⌗ *Stated as a latent defect rather than
+dressed up as a correction of results, because no result moved.*
+
+## ⛔ ⓸ AND THE WIDENING ITSELF CREATED A FALSE ALARM, ON ITS FIRST RUN
+
+The `CLEAR` verdicts carry a second check: no receipt scored clear may contain an arm key in its
+code. I pointed the new boundary regex at the whole source — and it scored **2 of 3** clear receipts
+as carrying one. *None of them reads an arm key.* ⇒ *** `(^|_)cr($|_)` over whole source matches the
+BANK NAMES and arm labels a receipt is full of — `r6893_switch_screen_cr`, `cc66_cr_x_h686_pol`,
+`F['cr']`. **A looser test is not a safer test.** *** *Fixed by extracting key-shaped literals first
+and matching those; the receipts score clear again, and the episode is written into the file beside
+the regex.*
+
+## ⛭ ⓹ PINNED AND PERTURBED
+
+The difference between the two forms is now a gate — five of eight sampled keys invisible to the
+substring form, both negative controls rejected — so the narrow form cannot come back silently.
+
+| perturbation | target | result |
+|---|---|---|
+| the regex reverted to `__cr` | the detector gate | ⛭ RED, on target |
+| the regex loosened to bare `cr` | the detector gate | ⛭ RED, on target |
+| the `CLEAR` cross-check back to whole-source | the `CLEAR` second check | ⛭ RED, on target |
+
+⌗ *And one more of my own: the perturbation helper reported all three as `RED, NOT ON TARGET` on its
+first run, because this instrument prints `[FAIL] <label>` where the receipts print `- <label>` and my
+extractor only knew the second form. **A helper that cannot read the output is indistinguishable from
+a perturbation that missed**, which is the fourth time this session a tool of mine has produced
+something other than a verdict and had to be re-aimed.*
+
+## ⇒ ⓺ CONSEQUENCE FOR ITEM 2
+
+`the_combs_resolution_is_four_multipoles_…` is **not** fully re-pointable: `r6929_noop` and
+`r6925_noop` have no arm-of-record sibling, and it reads `Dl__zero_cr` / `Dl__unset_cr` /
+`Dl__noop_cr` out of them. ⇒ *It joins `the_visibilitys_clock_…` as a PARTIAL re-point with a
+declaration. **A new bank ask, priced: siblings for `r6929_noop` and `r6925_noop`** — and the keys
+those receipts read from them are switch-identity checks, so what the siblings would settle is whether
+the identity still holds on the arm of record.*

@@ -65,6 +65,34 @@ def check(label, ok, witness=''):
 GAPS_ALL = ('r6893_slice_check', 'r6897_fields', 'r6897_noop', 'r6911_noop', 'r6915_noop',
             'r6919_geometry', 'r6919_noop', 'r6925_geometry', 'r6925_noop', 'r6929_geometry',
             'r6929_noop')
+#: ⛔⛭⛭ r7643+cc66.56: ** THE ARM-KEY TEST WAS A SUBSTRING, AND IT MISSED MOST ARM KEYS. **
+#:   `'__cr' in k` matches `rD__cr`, `arm__cr` and `eta_ls__cr_0` -- and silently misses every key
+#:   whose arm tag sits AFTER another token: `Dl__unset_cr`, `Dl__zero_cr`, `Dl__noop_cr`,
+#:   `Dl__comb_cr_f0`, `Dl__inj_cr_f1`.  *Five of the nine arm keys in the first sample measured.*
+#:   ⇒ *** So the closure test below verified that `X__cr` keys MOVED and never looked at
+#:       `X__<tag>_cr` keys at all; and a claim of mine at `cc66.53` -- that `r6929_noop` and
+#:       `r6925_noop` "carry no `__cr` keys at all, so they never blocked" -- was made with the same
+#:       narrow test and is FALSE: both carry `Dl__zero_cr`, `Dl__unset_cr` or `Dl__noop_cr`.
+#:       This file's own `GAPS_ALL` had them right all along and I believed the ad-hoc test over the
+#:       instrument, which is the lesson worth more than the fix. ***
+#:   ⛭ *The replacement is boundary-anchored rather than longer: `cr` must start the key or follow an
+#:   underscore, and must end the key or precede one.  `Dl__combvl` and `Dl__crust` are the negative
+#:   controls -- neither is an arm key and a looser `'cr' in k` would take both.*
+ARM_RE = re.compile(r'(^|_)cr($|_)')
+#: ⛔ *And the boundary regex must be applied to KEY LITERALS and not to whole source, which the first
+#: version of this widening got wrong: `(^|_)cr($|_)` matches the BANK NAMES and arm labels a receipt
+#: is full of -- `r6893_switch_screen_cr`, `cc66_cr_x_h686_pol`, `F['cr']` -- so run over `_code_of`
+#: it scored 2 of the 3 CLEAR receipts as carrying an arm key when none of them reads one.*
+#:   ⇒ *A looser test is not a safer test.  The key-shaped literals are extracted first.*
+KEYLIT_RE = re.compile(r"['\"]([A-Za-z_][A-Za-z0-9_]*__[A-Za-z0-9_]+)['\"]")
+
+
+def _armkeys_in(code):
+    return [k for k in KEYLIT_RE.findall(code) if ARM_RE.search(k)]
+
+CTL_RE = re.compile(r'(^|_)lcdm($|_)')
+_ARM_SEEN = ('Dl__unset_cr', 'Dl__zero_cr', 'Dl__noop_cr', 'Dl__comb_cr_f0', 'Dl__inj_cr_f1',
+             'rD__cr', 'eta_ls__cr_0', 'arm__cr')
 NOT_A_GAP = 'r6929_scan_cr'
 #: ** A KEY GAP IS CLOSED BY A SIBLING FILE THAT KEEPS THE KEY NAMES AND MOVES THE `__cr` VALUES. **
 #: Tested, not assumed: the sibling must exist, carry the same `__cr` key names, hold DIFFERENT
@@ -96,8 +124,8 @@ def _closed(g):
         except (ValueError, TypeError):
             return False
 
-    cr = [k for k in a.files if '__cr' in k and k in b.files and _num(a, k) and _num(b, k)]
-    lc = [k for k in a.files if '__lcdm' in k and k in b.files and _num(a, k) and _num(b, k)]
+    cr = [k for k in a.files if ARM_RE.search(k) and k in b.files and _num(a, k) and _num(b, k)]
+    lc = [k for k in a.files if CTL_RE.search(k) and k in b.files and _num(a, k) and _num(b, k)]
     if not cr or not lc:
         return False
     moved = any(not _np.allclose(_np.atleast_1d(a[k]).astype(float),
@@ -251,9 +279,21 @@ check("⌗ AND THE CLEAR VERDICTS ARE CHECKED A SECOND WAY: no receipt scored cl
       "a `__{` key template in its CODE.  ⛔ *Comment lines are stripped, because the first version "
       "flagged two receipts whose only `__cr` is in a comment of mine saying the bank's arm is a "
       "key -- a false alarm in a register costs more than the error*",
-      all('__cr' not in _code_of(r) and not TMPL_RE.search(_code_of(r)) for r in CLEAR),
-      f"{sum(1 for r in CLEAR if '__cr' in _code_of(r) or TMPL_RE.search(_code_of(r)))}"
+      all(not _armkeys_in(_code_of(r)) and not TMPL_RE.search(_code_of(r)) for r in CLEAR),
+      f"{sum(1 for r in CLEAR if _armkeys_in(_code_of(r)) or TMPL_RE.search(_code_of(r)))}"
       f" of {len(CLEAR)} clear receipts carry it in code")
+check("⛔⛭⛭ the arm-key test is BOUNDARY-ANCHORED, and the substring form it replaces is measurably "
+      "wrong rather than merely narrower: `'__cr' in k` misses every key whose arm tag follows another "
+      "token, which is five of the eight real arm keys sampled here -- and the boundary form still "
+      "rejects the two negative controls a looser `'cr' in k` would take.  ⌗ *No verdict in this file "
+      "moves: the one bank with a sibling carries only `X__cr` keys, so the defect was LATENT and not "
+      "live, which is stated rather than dressed up as a correction*",
+      all(ARM_RE.search(k) for k in _ARM_SEEN)
+      and sum(1 for k in _ARM_SEEN if '__cr' not in k) == 5
+      and not ARM_RE.search('Dl__combvl') and not ARM_RE.search('Dl__crust')
+      and not _armkeys_in("z['Dl__combvl']") and _armkeys_in("z['Dl__unset_cr']") == ['Dl__unset_cr'],
+      f"{sum(1 for k in _ARM_SEEN if '__cr' not in k)} of {len(_ARM_SEEN)} sampled arm keys are "
+      f"invisible to the substring form")
 check("⛔⛭ AND BOTH KNOWN CASES ARE SCORED CORRECTLY NOW, which is what settles the method: "
       "`the_held_period_estimator_…` is BLOCKED -- `cc66.17` measured that independently, and the "
       "literal-only matcher got it wrong because its keys are `f'{n}__{t}'` -- while "
