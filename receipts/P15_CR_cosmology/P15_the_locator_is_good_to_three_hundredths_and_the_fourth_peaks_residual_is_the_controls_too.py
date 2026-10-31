@@ -2,6 +2,20 @@
 r"""P15 sec:refit-bound -- ** THE LOCATOR IS GOOD TO THREE HUNDREDTHS OF A MULTIPOLE AT EVERY PEAK,
 INCLUDING THE FOURTH -- AND THE RESIDUAL IT MEASURES THERE IS THE CONTROL'S TOO. **
 
+⛭⛭ ** ON THE ARM OF RECORD AS OF `r7643+cc66.54` (`LEAFREC=1`, 70's second and third banks). **  *The
+CR side of every bank read here moves to its `_leafrec1` sibling -- `r6941_fine_cr`,
+`r6941_fine_cr_visleaf`, `r6929_scan_cr`, `r6929_geometry`, `cc66_r185_verify_cr` -- and the control's
+does not, which is the bank's own statement.*  ⛭ ** AND THE CONTROL SIDE READS BIT-FOR-BIT WHAT IT READ
+BEFORE: ** *the control's locator errors are still `$0.0007/0.0126/0.0283/0.0176$`, its window spreads
+still `$0.11/2.98/4.97/6.49$`, and its sky residual still `$-0.05/-1.41/-2.97/+5.32$` -- so "the control
+does not move" holds here as an arithmetic identity in a receipt that reads both arms, rather than as an
+assurance taken from the bank's manifest.*
+
+⛭ ** ARM KEYS READ: ** `f__cr` and `rs_leaf__cr` out of `r6929_geometry_leafrec1`, and
+`ls__comb_cr_f0` / `ls__comb_cr_f1` / `Dl__comb_cr_f0` / `Dl__comb_cr_f1` out of
+`r6929_scan_cr_leafrec1`.  *Named under node 69's `r7643` arm-key rule: a receipt reading a two-arm
+bank by key suffix cannot otherwise be audited for which arm it read.*
+
 ** WHY IT EXISTS. **  `r6941`'s order: `cc66.44` closed the clock route, so what is left undecomposed
 is the fourth peak -- the decisive run reporting $222/538/818/1134$ against the sky's
 $220.4/537.7/817.3/1123.9$, peaks one to three landing within a grid step while peak four is $10.1$
@@ -15,14 +29,14 @@ step one, and that outcome is worth as much as the decomposition.*
 ⛭⛭ ** THE STOPPING RULE DOES NOT FIRE, AND IT MISSES BY A FACTOR OF FOUR HUNDRED. **  Run again at
 `LSTEP=1 LMAXL=2000` -- eight times the multipole sampling, $1900$ multipoles against the reported
 $238$, on BOTH arms -- the coarse grid's locator recovers the fine-grid position to
-$0.0007/0.0126/0.0283/0.0176$ of a multipole on the control and $0.0035/0.0089/0.0167/0.0229$ on the
+$0.0007/0.0126/0.0283/0.0176$ of a multipole on the control and $0.0034/0.0078/0.0206/0.0175$ on the
 arm.  *** At $\ell_4$ it is two hundredths of a multipole against a bar of ten. ***  ⌗ *And the
 extremum search is insensitive to its own width: order $3$ through $40$ on the fine grid return the
 same four peaks to every printed digit, so the peaks are cleanly isolated and the flattening does not
 cost precision.*
 
 ⛔ ** WHAT IS NOT PRECISE IS THE PARABOLA'S WINDOW, AND IT IS A BIAS RATHER THAN A NOISE. **  Swept over
-`PO-47`'s admissible range $W=15\ldots110$ the located peak moves $0.08/2.77/4.73/5.82$ on the arm and
+`PO-47`'s admissible range $W=15\ldots110$ the located peak moves $0.07/2.60/4.65/5.86$ on the arm and
 $0.11/2.98/4.97/6.49$ on the control -- *growing steeply with peak index, because a wider fit on an
 increasingly asymmetric, damping-suppressed hump pulls its apex down the envelope's slope.*  ⇒ ** So
 the fourth peak's window bias is comparable to the residual being read there -- but it displaces the
@@ -35,17 +49,22 @@ quartet: $222/538/818/1134$ is `sec:refit-bound`'s LINE-OF-SIGHT path, while eve
 is the HIERARCHY path, whose raw grid reading is $220/540/812/1132$ --- and ** at $\ell_3$ the two
 bracketing `LSTEP=8` bins differ by four parts in TEN THOUSAND, so which of them is called the peak is a
 coin flip: the paper quotes $820$ on this path, this run's locator picks $812$, and the sub-bin apex is
-$815.40$ with the fine grid's own maximum at $815$. **  Sub-bin the arm is
-$221.96/536.11/815.40/1130.53$, so the residual is $+1.56/-1.60/-1.90/+6.63$ --- peaks two and three are
-not "on", they are each about $1.7$ LOW, and peak four is $6.6$ out rather than $10.1$.*  ** Second, and decisive: the
+$815.03$ with the fine grid's own maximum at $815$. **  ⛭⛭ *And $\ell_2$ is the TIGHTER tie of the
+two --- its bracketing bins agree to $0.011$ per cent against $\ell_3$'s $0.066$ --- which is why the
+raw reading there is $532$ on the arm of record where the namesake's was $540$, a whole bin, while
+the sub-bin apex moves a quarter of a multipole.  So the raw grid was never a measurement at
+$\ell_2$ either, and that eight-multipole jump is the same coin landing the other way.*  Sub-bin the
+arm is $222.05/535.85/815.03/1129.74$, so the residual is $+1.65/-1.85/-2.27/+5.84$ --- peaks two and
+three are not "on", they are each about two LOW, and peak four is $5.8$ out rather than $10.1$.*  ** Second, and decisive: the
 CONTROL produces nearly all of it. **  Through the identical locator the control's residual is
-$-0.05/-1.41/-2.97/+5.32$, so
+$-0.05/-1.41/-2.97/+5.32$ --- *unchanged by the re-point, which is the bank's own statement that the
+control does not move, holding here as an arithmetic identity rather than as an assurance* --- so
 
-    arm  -  control  =  +1.61 / -0.19 / +1.07 / +1.31       (mean +0.95, spread 1.79)
+    arm  -  control  =  +1.70 / -0.45 / +0.70 / +0.52       (mean +0.62, spread 2.14)
 
 ⇒ *** What belongs to this construction is a near-constant displacement of about ONE multipole at all
 four peaks -- a constant $\Delta\ell$, the FIRST of the three shapes the order enumerated, and not the
-ruler's constant $\Delta\ell/\ell$ (which would need $0.52/1.25/1.91/2.65$) nor a driving error growing
+ruler's constant $\Delta\ell/\ell$ (which would need $0.45/1.09/1.65/2.29$) nor a driving error growing
 with $\ell$. ***  ⇒ ** So the pattern needs ONE systematic and not two, and the "one-off,
 two-and-three-on, four-off" shape that fitted none of the three candidates was the raw grid plus an
 undifferenced sky comparison. **  ⌗ *And `PO-47` already measured what the sky can say about that one
@@ -119,9 +138,10 @@ print("=" * 100)
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 SP = os.path.join(ROOT, 'computations', 'beyond_the_wall', 'spectra')
-NEED = ('r6941_fine_lcdm.npz', 'r6941_fine_cr.npz', 'r6941_fine_cr_visleaf.npz',
-        'r6929_scan_cr.npz', 'r6929_geometry.npz', 'cc66_r185_verify_lcdm.npz',
-        'cc66_r185_verify_cr.npz')
+NEED = ('r6941_fine_lcdm.npz', 'r6941_fine_cr_leafrec1.npz',
+        'r6941_fine_cr_visleaf_leafrec1.npz', 'r6929_scan_cr_leafrec1.npz',
+        'r6929_geometry_leafrec1.npz', 'cc66_r185_verify_lcdm.npz',
+        'cc66_r185_verify_cr_leafrec1.npz')
 for _n in NEED:
     check(f"the bank this receipt reads is present: `spectra/{_n}`",
           os.path.exists(os.path.join(SP, _n)), _n)
@@ -133,11 +153,13 @@ if FAILS:
         print(f"  - {f}")
     raise SystemExit(1)
 
-F = {t: np.load(os.path.join(SP, f'r6941_fine_{t}.npz')) for t in ('lcdm', 'cr')}
-V = np.load(os.path.join(SP, 'r6941_fine_cr_visleaf.npz'))
-C = {t: np.load(os.path.join(SP, f'cc66_r185_verify_{t}.npz')) for t in ('lcdm', 'cr')}
-S = np.load(os.path.join(SP, 'r6929_scan_cr.npz'))
-GE = np.load(os.path.join(SP, 'r6929_geometry.npz'))
+_FINE = {'lcdm': 'r6941_fine_lcdm.npz', 'cr': 'r6941_fine_cr_leafrec1.npz'}
+_VER = {'lcdm': 'cc66_r185_verify_lcdm.npz', 'cr': 'cc66_r185_verify_cr_leafrec1.npz'}
+F = {t: np.load(os.path.join(SP, _FINE[t])) for t in ('lcdm', 'cr')}
+V = np.load(os.path.join(SP, 'r6941_fine_cr_visleaf_leafrec1.npz'))
+C = {t: np.load(os.path.join(SP, _VER[t])) for t in ('lcdm', 'cr')}
+S = np.load(os.path.join(SP, 'r6929_scan_cr_leafrec1.npz'))
+GE = np.load(os.path.join(SP, 'r6929_geometry_leafrec1.npz'))
 
 SKY = np.array([220.4, 537.7, 817.3, 1123.9])   # P15 sec:intro's own locator on plik_lite TT
 SKY_SIG4 = 2.36                                 # PO-47: the sky's fourth peak, 1121.9 +- 2.36
@@ -256,16 +278,39 @@ print(f"    here is the HIERARCHY path, whose raw grid reading is "
       f"{[int(x) for x in RAW['cr']]} -- and at l_3 the two bracketing bins differ by "
       f"{100*_tie:.3f} per cent")
 check("⛔ ** AND THE RAW GRID READING IS NOT A MEASUREMENT AT l_3 AT ALL: the two bracketing `LSTEP=8` "
-      "bins differ by four parts in TEN THOUSAND, so which one is called the peak is a coin flip -- "
+      "bins differ by seven parts in TEN THOUSAND, so which one is called the peak is a coin flip -- "
       "the paper quotes 820 on this path, this run's locator picks 812, and the sub-bin apex is "
-      "815.40, with the fine grid's own maximum at 815 **",
-      _tie < 1e-3 and set(RAW['cr'][2:3]) <= {812.0, 820.0} and abs(FINE['cr'][2] - 815.40) < 0.05,
+      "815.03, with the fine grid's own maximum at 815 **",
+      _tie < 1e-3 and set(RAW['cr'][2:3]) <= {812.0, 820.0} and abs(FINE['cr'][2] - 815.03) < 0.05,
       f"the l_3 bins differ by {100*_tie:.3f} per cent; raw {int(RAW['cr'][2])}, sub-bin "
       f"{FINE['cr'][2]:.2f}")
-check("⇒ and sub-bin the arm's quartet is 221.96/536.11/815.40/1130.53, so the residual against the "
-      "sky is +1.56 / -1.60 / -1.90 / +6.63: ** peaks two and three are not 'on', they are each about "
-      "1.7 LOW, and peak four is 6.6 out rather than the order's 10.1 **",
-      abs((FINE['cr'][3] - SKY[3]) - 6.6) < 0.2 and abs(FINE['cr'][1] - SKY[1]) > 1.0
+# ⛭⛭ r7643+cc66.54: ** AND THE RE-POINT FOUND THAT l_2 IS THE TIGHTER COIN FLIP OF THE TWO, which
+#   nothing had looked at. **  *The arm of record's raw grid reading at `l_2` is `532` where the
+#   namesake's was `540` -- a whole `LSTEP=8` bin.  Read as a peak moving, that is eight multipoles and
+#   would be the largest single change the re-point produces anywhere.  It is not: the two bracketing
+#   bins at `l_2` agree to 0.011 per cent on this arm and 0.008 on the namesake, TIGHTER than the
+#   `l_3` tie this receipt was already built around, and the SUB-BIN apex moves 0.26 of a multipole
+#   (536.11 to 535.85) while the raw reading jumps 8.*
+#   ⇒ *** So the raw grid reading was never a measurement at `l_2` either, and the 540-to-532 change is
+#       the same coin landing the other way.  Measured here rather than left as an eight-multipole
+#       surprise in a table. ***
+_i2a, _i2b = int(np.argmin(np.abs(C['cr']['ls'] - 532.0))), int(np.argmin(np.abs(C['cr']['ls'] - 540.0)))
+_tie2 = abs(float(C['cr']['Dl'][_i2a] - C['cr']['Dl'][_i2b])) / float(C['cr']['Dl'][_i2a])
+print(f"    and at l_2 the two bracketing bins differ by {100*_tie2:.3f} per cent -- TIGHTER than "
+      f"l_3's {100*_tie:.3f}, which is why the raw reading there is 532 on this arm and 540 on the "
+      f"namesake while the sub-bin apex moves a quarter of a multipole")
+check("⛭⛭ ** AND l_2 IS THE TIGHTER COIN FLIP OF THE TWO, so the raw grid reading was never a "
+      "measurement there either: ** the bracketing bins agree more closely at `l_2` than at `l_3`, "
+      "which is why the arm of record's raw reading is 532 where the namesake's was 540 -- a whole "
+      "bin -- while the SUB-BIN apex sits within half a multipole of the namesake's",
+      _tie2 < _tie and _tie2 < 1e-3 and set(RAW['cr'][1:2]) <= {532.0, 540.0}
+      and abs(FINE['cr'][1] - 536.11) < 0.5,
+      f"l_2 tie {100*_tie2:.3f} per cent against l_3's {100*_tie:.3f}; raw {int(RAW['cr'][1])}, "
+      f"sub-bin {FINE['cr'][1]:.2f} against the namesake's 536.11")
+check("⇒ and sub-bin the arm's quartet is 222.05/535.85/815.03/1129.74, so the residual against the "
+      "sky is +1.65 / -1.85 / -2.27 / +5.84: ** peaks two and three are not 'on', they are each about "
+      "two LOW, and peak four is 5.8 out rather than the order's 10.1 **",
+      abs((FINE['cr'][3] - SKY[3]) - 5.84) < 0.2 and abs(FINE['cr'][1] - SKY[1]) > 1.0
       and abs(FINE['cr'][2] - SKY[2]) > 1.0,
       f"sub-bin residual {['%+.2f' % (FINE['cr'][n]-SKY[n]) for n in range(4)]} against the order's "
       f"+1.6 / +0.3 / +0.7 / +10.1")
@@ -341,9 +386,83 @@ check("⚠ ** BUT THE THIRD READING IS THE ONE THAT APPLIES: the shares are not 
       "is a statement about the guard's coverage rather than a failure of the run",
       all(SH[n][0] > 0 for n in range(4))
       and not all(np.sign(FINE['cr'][n] - SKY[n]) == np.sign(SH[n][0]) for n in range(4)),
-      "the motion is positive at every peak; the residual is +1.56 / -1.60 / -1.90 / +6.63")
+      "the motion is positive at every peak; the residual is +1.65 / -1.85 / -2.27 / +5.84")
 
 # ===================================================================================================
+# ⛭⛭ r7643+cc66.54: ** EVERY COMPUTED FIGURE THIS RECEIPT'S `INDEX.md` ROW PRINTS IS PINNED HERE,
+#   TWO-SIDED, AT THE DIGITS THE ROW PRINTS. **  *Thirty-nine of this row's figures were carried in
+#   `figure_pin_baseline.tsv` as UNPINNED -- printed beside a citation and held by nothing -- and the
+#   re-point moved most of them.  A moved figure that nothing holds reads as current, which is worse
+#   than a stale one.*  ⇒ *Each is an explicit comparison against the literal the row prints, because
+#   `check_figures_pinned` parses the SOURCE for a comparison carrying the figure: a table of
+#   `(value, want, tol)` triples pins nothing, which `cc66.52` established by trying it.*
+#   ⌗ *The figures this receipt TAKES AS GIVEN stay baselined and are not pinned here -- the sky's
+#   quartet, `PO-47`'s `$1121.9\pm2.36$` and its `$0.83\sigma$`, and the order's `$10.1$` -- because
+#   this receipt does not compute them and a pin on a borrowed number would be a false assurance.*
+_INDEXPINS = (
+    abs(ERR['lcdm'][0] - (0.0007)) < 5e-5,
+    abs(ERR['lcdm'][1] - (0.0126)) < 5e-5,
+    abs(ERR['lcdm'][2] - (0.0283)) < 5e-5,
+    abs(ERR['lcdm'][3] - (0.0176)) < 5e-5,
+    abs(ERR['cr'][0] - (0.0034)) < 5e-5,
+    abs(ERR['cr'][1] - (0.0078)) < 5e-5,
+    abs(ERR['cr'][2] - (0.0206)) < 5e-5,
+    abs(ERR['cr'][3] - (0.0175)) < 5e-5,
+    abs(SPREAD['lcdm'][0] - (0.106)) < 5e-4,
+    abs(SPREAD['lcdm'][1] - (2.975)) < 5e-4,
+    abs(SPREAD['lcdm'][2] - (4.971)) < 5e-4,
+    abs(SPREAD['lcdm'][3] - (6.492)) < 5e-4,
+    abs(SPREAD['cr'][0] - (0.069)) < 5e-4,
+    abs(SPREAD['cr'][1] - (2.596)) < 5e-4,
+    abs(SPREAD['cr'][2] - (4.646)) < 5e-4,
+    abs(SPREAD['cr'][3] - (5.86)) < 5e-4,
+    abs(100 * _tie - (0.066)) < 5e-4,
+    abs(100 * _tie2 - (0.011)) < 5e-4,
+    abs(FINE['cr'][0] - (222.047)) < 5e-4,
+    abs(FINE['cr'][1] - (535.846)) < 5e-4,
+    abs(FINE['cr'][2] - (815.027)) < 5e-4,
+    abs(FINE['cr'][3] - (1129.742)) < 5e-4,
+    abs(FINE['cr'][0] - SKY[0] - (1.647)) < 5e-4,
+    abs(FINE['cr'][1] - SKY[1] - (-1.854)) < 5e-4,
+    abs(FINE['cr'][2] - SKY[2] - (-2.273)) < 5e-4,
+    abs(FINE['cr'][3] - SKY[3] - (5.842)) < 5e-4,
+    abs(FINE['lcdm'][0] - SKY[0] - (-0.049)) < 5e-4,
+    abs(FINE['lcdm'][1] - SKY[1] - (-1.409)) < 5e-4,
+    abs(FINE['lcdm'][2] - SKY[2] - (-2.969)) < 5e-4,
+    abs(FINE['lcdm'][3] - SKY[3] - (5.324)) < 5e-4,
+    abs(D_AC[0] - (1.696)) < 5e-4,
+    abs(D_AC[1] - (-0.445)) < 5e-4,
+    abs(D_AC[2] - (0.696)) < 5e-4,
+    abs(D_AC[3] - (0.518)) < 5e-4,
+    abs(_r_const - (0.76)) < 5e-4,
+    abs(_r_ruler - (1.192)) < 5e-4,
+    abs(_pred_ruler[0] - (0.451)) < 5e-4,
+    abs(_pred_ruler[1] - (1.087)) < 5e-4,
+    abs(_pred_ruler[2] - (1.654)) < 5e-4,
+    abs(_pred_ruler[3] - (2.293)) < 5e-4,
+    abs(100 * SH[0][1] - (30.67)) < 5e-3,
+    abs(100 * SH[1][1] - (92.28)) < 5e-3,
+    abs(100 * SH[2][1] - (81.98)) < 5e-3,
+    abs(100 * SH[3][1] - (87.71)) < 5e-3,
+    abs(100 * SH[0][2] - (10.0)) < 5e-3,
+    abs(100 * SH[1][2] - (28.34)) < 5e-3,
+    abs(100 * SH[2][2] - (24.38)) < 5e-3,
+    abs(100 * SH[3][2] - (25.26)) < 5e-3,
+    abs(100 * SH[0][3] - (59.32)) < 5e-3,
+    abs(100 * SH[1][3] - (-20.62)) < 5e-3,
+    abs(100 * SH[2][3] - (-6.36)) < 5e-3,
+    abs(100 * SH[3][3] - (-12.97)) < 5e-3,
+)
+print("\nPART 5 -- THE FIGURES THE `INDEX.md` ROW PRINTS, PINNED TWO-SIDED AT THEIR PRINTED DIGITS.")
+print("-" * 100)
+print(f"    {sum(_INDEXPINS)} of {len(_INDEXPINS)} hold")
+check("⛭⛭ every COMPUTED figure the `INDEX.md` row prints is held to the digits it prints, each "
+      "tolerance at or inside `check_figures_pinned`'s own allowance, so the row's numbers fail this "
+      "receipt when they are wrong -- where before the re-point thirty-nine of them were baselined as "
+      "unpinned and the re-point moved most of them",
+      all(_INDEXPINS),
+      f"{sum(_INDEXPINS)} of {len(_INDEXPINS)} pins hold")
+
 print("\n" + "=" * 100)
 if FAILS:
     print(f"GATES: {len(FAILS)} FAILED:")
@@ -361,7 +480,8 @@ print(f"""
 
   ⛭⛭⛭ AND THE PATTERN THE ORDER ASKED ABOUT IS TWO ARTEFACTS.  222/538/818/1134 is the raw grid:
   sub-bin the arm is {FINE['cr'][0]:.2f}/{FINE['cr'][1]:.2f}/{FINE['cr'][2]:.2f}/{FINE['cr'][3]:.2f},
-  so the residual is +1.56 / -1.60 / -1.90 / +6.63 and peaks two and three were never 'on'.  And the
+  so the residual is +1.65 / -1.85 / -2.27 / +5.84 and peaks two and three were never 'on' -- nor was
+  the raw reading a measurement at l_2, whose bracketing bins tie more tightly than l_3's.  And the
   CONTROL carries {100*(FINE['lcdm'][3]-SKY[3])/(FINE['cr'][3]-SKY[3]):.0f} per cent of the fourth
   peak's residual, so what is the construction's is {D_AC.mean():+.2f} of a multipole at all four --
   ONE systematic, of the constant-dl shape, fitting half again better than the ruler's constant dl/l,

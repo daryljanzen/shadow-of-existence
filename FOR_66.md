@@ -29754,3 +29754,73 @@ promise, on an arm where no CR driving number could be taken. ⇒ *On the arm of
 is `+0.12611` / `−0.02201`, the control's is `+0.12649` / `−0.02469`, and the two agree to `0.3` per
 cent on the common offset. Routed to `FOR_69.md` as something ⑵'s landing can now say, with the note
 that the same passage's `11.3` / `21.4` are the namesake arm's and that I have not touched it.*
+
+---
+
+# `r7643+cc66.54` — the locator receipt on the arm of record, and ⛭⛭ **the second peak's grid reading was never a measurement either**
+
+Item 2, second receipt. `the_locator_is_good_to_three_hundredths_…` re-pointed: the CR side of all
+five banks it reads moves to its `_leafrec1` sibling, the control's does not.
+
+## ⛭ ⓵ THE CONCLUSION HOLDS, AND THE CONTROL SIDE IS AN ARITHMETIC IDENTITY RATHER THAN AN ASSURANCE
+
+The stopping rule still misses by a factor of four hundred: the coarse locator recovers the fine-grid
+position to `0.0034/0.0078/0.0206/0.0175` of a multipole on the arm — **two hundredths at `l_4`
+against a bar of ten**. And the control's numbers come back *bit for bit*: errors
+`0.0007/0.0126/0.0283/0.0176`, window spreads `0.106/2.975/4.971/6.492`, sky residual
+`−0.049/−1.409/−2.969/+5.324`. ⇒ *So `the control does not move` is checked here inside a receipt that
+reads both arms, instead of being taken from the bank's manifest.*
+
+## ⛭⛭ ⓶ AND THE FINDING: `l_2`'s RAW GRID READING IS THE TIGHTER COIN FLIP OF THE TWO
+
+The arm of record's raw `LSTEP=8` reading at `l_2` is **`532` where the namesake's was `540`** — a
+whole bin, eight multipoles, and the largest single change the re-point produces anywhere in this
+receipt. **Read as a peak moving it would be a finding. It is not one.**
+
+| | `l_2` | `l_3` |
+|---|---|---|
+| bracketing bins differ by, namesake arm | `0.008%` | `0.041%` |
+| bracketing bins differ by, arm of record | `0.011%` | `0.066%` |
+| raw reading, namesake → arm of record | `540 → 532` | `812 → 812` |
+| **sub-bin apex**, namesake → arm of record | `536.11 → 535.85` | `815.40 → 815.03` |
+
+⇒ *** `l_2`'s two bracketing bins tie MORE tightly than `l_3`'s, on both arms — and this receipt was
+already built around the `l_3` tie being a coin flip. So the raw grid was never a measurement at `l_2`
+either, and the eight-multipole jump is the same coin landing the other way while the apex moves a
+quarter of a multipole. *** **Gated, not narrated:** the new check asserts `l_2`'s tie is tighter than
+`l_3`'s, that the raw reading is one of the two bins, and that the apex stays within half a multipole
+of the namesake's.
+
+## ⛭ ⓷ WHAT MOVED, RESTATED
+
+Sub-bin quartet `222.047/535.846/815.027/1129.742`; residual `+1.647/−1.854/−2.273/+5.842` — *peak
+four is `5.8` out rather than the order's `10.1`, and peaks two and three are each about **two** low
+rather than `1.7`*. The control now carries **ninety-one** per cent of the fourth peak's residual
+(was four fifths), so what is the construction's is `+1.696/−0.445/+0.696/+0.518` — still a
+near-constant one multipole at all four peaks, still the constant-`dl` shape, still fitting half again
+better than the ruler (`rms 0.760` against `1.192`).
+
+## ⛭⛭ ⓸ AND FIFTY-TWO PINS, BECAUSE THIRTY-NINE OF THIS ROW'S FIGURES WERE HELD BY NOTHING
+
+`figure_pin_baseline.tsv` carried **39** figures for this receipt as UNPINNED, and the re-point moved
+most of them. ⇒ *Every COMPUTED figure the row prints is now an explicit two-sided comparison against
+the literal the row prints — 52 of them, each tolerance inside the gate's own allowance — and the
+baseline shrinks by 36, all of them this receipt's, with no additions.* ⌗ *The three that stay are the
+figures this receipt TAKES AS GIVEN: `PO-47`'s `1121.9 ± 2.36` and its `0.83σ`, and the order's
+`10.1`. **A pin on a borrowed number would be a false assurance**, so they stay baselined.*
+
+⌗ *One slip caught by the pins themselves: I wrote `1.646` for a residual whose value is `1.64655`,
+which rounds to `1.647`. 51 of 52 held and the block named the one that did not.*
+
+## ⛭ ⓹ FOUR PERTURBATIONS, EACH RED ON ITS OWN GATE
+
+| perturbation | target | result |
+|---|---|---|
+| the fine CR reference back to the namesake | the 52-pin block | ⛭ RED, on target |
+| `l_2`'s bracketing pair taken as `532/548` | the new `l_2` gate | ⛭ RED, on target |
+| the sky's fourth peak moved two multipoles | the quartet gate | ⛭ RED, on target |
+| the window sweep collapsed to one width | the window-bias gate | ⛭ RED, on target |
+
+⌗ *Two needed re-aiming first: one patch did not apply (the `SKY` literal is a `np.array`, not a
+tuple) and one crashed on an array length instead of failing a gate. **Both printed something other
+than a gate verdict, which is why the helper requires the target gate to be among the reds.***
