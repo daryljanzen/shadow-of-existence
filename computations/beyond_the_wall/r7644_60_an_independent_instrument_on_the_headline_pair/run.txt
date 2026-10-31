@@ -107,5 +107,30 @@ PART 4 -- THE LENSED HALF, ON AN OPERATOR COMPUTED ELSEWHERE AND READ HERE AS DA
   [PASS] ⛭⛭ and cc66's 1.41 on the arm of record reproduces too (1.411x)
   [PASS] ⌗ and the unlensed arm-of-record ratio the order cites as 1.35 (1.348x)
 
+PART 5 -- ARM ⓒ: THE REFIT HALF IS A BOUND, AND IT IS A BOUND FOR A REASON THE SCORER
+          CANNOT TOUCH
+  *cc66 reports the refit half as `1.60` by one route and `1.48`-`1.54` by another, because on
+  the arm of record the verification spectra ARE the grid base: its reader 4 is blocked by its
+  own gate, which asserts the two confrontations are a different pair and finds them one file.
+  ⇒ So the spread is a property of WHICH FILE the verification run is, and no scoring code can
+  narrow it.  What a second scorer can do is confirm the end that IS readable.*
+  ⚠ ** AND THE FIRST FORM OF THIS PART SCORED THEM UNLENSED AND MISSED EVERY FIGURE. **  cc66's
+  table is the LENSED confrontation throughout -- its control reads 214.1 where the same file
+  unlensed reads 696.0 -- so the refit row is lensed too.  *Corrected; BOTH halves are now
+  printed, because the order asks for the lensed and the unlensed pair.*
+
+      configuration  half        control  namesake    record     n/c     r/c   cc66
+      r185 verify    unlensed      592.8     910.1     924.2   1.535   1.559
+      r185 verify    LENSED        186.5     292.4     297.7   1.568   1.596   1.57/1.6
+      grid base      unlensed      685.7    1155.5     924.2   1.685   1.348
+      grid base      LENSED        212.9     545.8     297.7   2.564   1.398   2.56/1.4
+  [PASS] ⛭ the readable end of the refit bound reproduces: the arm of record against the control on the verification run is cc66's 1.60 (1.596x)
+  [PASS] ⛭ and the namesake arm's 1.57 with it (1.568x)
+  [PASS] ⛭ and the grid base row, 2.56 and 1.40 (2.564x, 1.398x)
+  [PASS] ⛔ AND THE BLOCK IS CONFIRMED FROM THE FILES RATHER THAN TAKEN ON cc66's WORD: on the arm of record the grid base and the verification run are BIT-IDENTICAL, so the two confrontations are one and the spread cannot be narrowed by any scorer
+  ⌗ *Which is why this revision reports the refit half as a bound with its route named and
+  never as a single number -- and why the figure the order cites as `1.60` is the upper end
+  of that bound rather than a measurement of the refit contrast.*
+
 ========================================================================================================
   0 failure(s)

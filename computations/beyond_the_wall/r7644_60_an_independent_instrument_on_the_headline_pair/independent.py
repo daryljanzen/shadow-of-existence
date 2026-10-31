@@ -262,6 +262,58 @@ else:
     check(f"⌗ and the unlensed arm-of-record ratio the order cites as 1.35 ({r_rec:.3f}x)",
           abs(r_rec - 1.35) < 0.005)
 
+# ---------------------------------------------------------------- PART 5
+print("\nPART 5 -- ARM ⓒ: THE REFIT HALF IS A BOUND, AND IT IS A BOUND FOR A REASON THE SCORER")
+print("          CANNOT TOUCH")
+print("  *cc66 reports the refit half as `1.60` by one route and `1.48`-`1.54` by another, because on")
+print("  the arm of record the verification spectra ARE the grid base: its reader 4 is blocked by its")
+print("  own gate, which asserts the two confrontations are a different pair and finds them one file.")
+print("  ⇒ So the spread is a property of WHICH FILE the verification run is, and no scoring code can")
+print("  narrow it.  What a second scorer can do is confirm the end that IS readable.*")
+GB = os.path.join(ROOT, 'computations', 'beyond_the_wall')
+ROWS = [('r185 verify', 'refit_grid185/verify_lcdm.npz', 'refit_grid185/verify_cr.npz',
+         'refit_grid185_leafrec1/verify_cr.npz', 1.57, 1.60),
+        ('grid base',   'refit_grid185/lcdm_base.npz',   'refit_grid185/cr_base.npz',
+         'refit_grid185_leafrec1/cr_base.npz',   2.56, 1.40)]
+print("  ⚠ ** AND THE FIRST FORM OF THIS PART SCORED THEM UNLENSED AND MISSED EVERY FIGURE. **  cc66's")
+print("  table is the LENSED confrontation throughout -- its control reads 214.1 where the same file")
+print("  unlensed reads 696.0 -- so the refit row is lensed too.  *Corrected; BOTH halves are now")
+print("  printed, because the order asks for the lensed and the unlensed pair.*")
+print(f"\n      {'configuration':<14} {'half':<9} {'control':>9} {'namesake':>9} {'record':>9}"
+      f" {'n/c':>7} {'r/c':>7}   cc66")
+_rec = {}
+for _r in ROWS:
+    _lab, _pc, _pn, _pr, _en, _er = _r
+    for _half, _lens in (('unlensed', False), ('LENSED', True)):
+        _sc = []
+        for _rel in (_pc, _pn, _pr):
+            _z = np.load(os.path.join(GB, _rel), allow_pickle=True)
+            _ls, _Dl = np.asarray(_z['ls'], float), np.asarray(_z['Dl'], float)
+            if _lens:
+                _Dl = _Dl * np.interp(_ls, LG, RATIO)
+            _sc.append(my_chi2(_ls, _Dl, keep=KEEP)[0])
+        if _lens:
+            _rec[_lab] = (_sc, _sc[1] / _sc[0], _sc[2] / _sc[0])
+        print(f"      {_lab:<14} {_half:<9} {_sc[0]:>9.1f} {_sc[1]:>9.1f} {_sc[2]:>9.1f}"
+              f" {_sc[1]/_sc[0]:>7.3f} {_sc[2]/_sc[0]:>7.3f}"
+              + (f"   {_en}/{_er}" if _lens else ""))
+check(f"⛭ the readable end of the refit bound reproduces: the arm of record against the control on "
+      f"the verification run is cc66's 1.60 ({_rec['r185 verify'][2]:.3f}x)",
+      abs(_rec['r185 verify'][2] - 1.60) < 0.005)
+check(f"⛭ and the namesake arm's 1.57 with it ({_rec['r185 verify'][1]:.3f}x)",
+      abs(_rec['r185 verify'][1] - 1.57) < 0.005)
+check(f"⛭ and the grid base row, 2.56 and 1.40 ({_rec['grid base'][1]:.3f}x, "
+      f"{_rec['grid base'][2]:.3f}x)",
+      abs(_rec['grid base'][1] - 2.56) < 0.005 and abs(_rec['grid base'][2] - 1.40) < 0.005)
+_same = np.array_equal(np.load(os.path.join(GB, 'refit_grid185_leafrec1/cr_base.npz'))['Dl'],
+                       np.load(os.path.join(GB, 'refit_grid185_leafrec1/verify_cr.npz'))['Dl'])
+check("⛔ AND THE BLOCK IS CONFIRMED FROM THE FILES RATHER THAN TAKEN ON cc66's WORD: on the arm of "
+      "record the grid base and the verification run are BIT-IDENTICAL, so the two confrontations "
+      "are one and the spread cannot be narrowed by any scorer", _same)
+print("  ⌗ *Which is why this revision reports the refit half as a bound with its route named and")
+print("  never as a single number -- and why the figure the order cites as `1.60` is the upper end")
+print("  of that bound rather than a measurement of the refit contrast.*")
+
 print("\n" + "=" * 104)
 print(f"  {len(_fail)} failure(s)")
 for f in _fail:
