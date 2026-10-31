@@ -434,8 +434,8 @@ for b in BANKS:
     if not os.path.isdir(b):
         continue
     for f in sorted(os.listdir(b)):
-        if not f.endswith('.npz'):
-            continue
+        if not f.endswith('.npz') or '_leafrec1' in f:     # r7643+70: the LEAFREC=1 siblings are a second
+            continue                                          # bank, not the transfer's own record counted here
         z = np.load(os.path.join(b, f), allow_pickle=True)
         if 'D_M' not in z.files:
             continue
