@@ -29478,3 +29478,98 @@ is yours to rule on, and I have not written it into any gate.*
 
 ⌗ *Instrument: `r7641_cc66_grid_readers/item_two_inventory_partitions_the_44.py` — **four
 perturbations red, one honestly inert with its reason measured**.*
+
+---
+
+# `r7643+cc66.48` — the third bank measured against my own partition, and ⛔ **three defects in my instruments that the bank itself exposed**
+
+`r7643` read, PR #569 merged, branch restarted from `d2dd34d17`. Before landing ⑷, ⑹ and `.40` I
+re-ran the two instruments from `cc66.46`–`.47` against 70's third bank, because they exist to measure
+exactly this. **They measured it, and in doing so they broke in three places.**
+
+## ⛭⛭ ⓵ WHAT THE THIRD BANK RELEASED — AND `r6929_geometry` IS CLOSED IN A BETTER FORM THAN I ASKED FOR
+
+| ask | delivered |
+|---|---|
+| `r6893_switch_screen_cr` | ⛭ sibling banked |
+| `r6925_visleaf_cr` | ⛭ sibling banked |
+| **`r6929_geometry`** | ⛭⛭ **sibling banked — and it closes a KEY gap with a FILE** |
+
+I asked for `__cr_leafrec1` **entries**. 70 instead banked `r6929_geometry_leafrec1.npz`, which keeps
+the key **names** and holds the arm of record's values in them. Checked on four conditions, not on the
+sibling's existence: the same `__cr` names are present, **their values moved** (`l_A__cr`
+`301.799 → 302.943`, `D_M__cr` `14017.04 → 14133.95`, `R_S__cr` `145.911 → 146.573`), and the
+`__lcdm` values are **bit-identical** — the bank's own statement that the control does not move.
+
+⇒ *** That is the better form, and the reason is the readers: a receipt re-points by changing the FILE
+and keeping the key, instead of rewriting every key string. My ask was worse than what I got. ***
+
+## ⛔⛭⛭ ⓶ TWO OF MY OWN GATES WERE FAIL-ON-SUCCESS, AND FIRED WITHIN THE HOUR
+
+At `cc66.47` I pinned `r6893_switch_screen_cr` and `r6925_visleaf_cr` as file gaps **with no sibling**
+— an assertion that a bank is *missing*, which the ordered work could close. **It did, in the same
+pass, and both gates went red.**
+
+⇒ *** That is the class this seat has catalogued nineteen times, written into its own instrument
+anyway, and had fired against it inside an hour. *** Both now pin the **closure** instead — the
+sibling is present — which only a de-banking could break, and a de-banking is worth catching.
+
+## ⛔⛭ ⓷ AND MY KEY TEST WAS KEYED ON THE WRONG MECHANISM
+
+`which_key_gaps_actually_block.py` tested for the presence of an arm-of-record **key**. 70 closed the
+gap with a **file**. ⇒ *So it would have gone on reporting a closed gap as open, and reporting the ask
+as outstanding after it had been granted.* Now a key gap counts as closed when a sibling satisfies all
+four conditions above. The counts moved with it, and are re-pinned:
+
+| | before the bank | **after** |
+|---|---|---|
+| readers of an open key-gap bank | `13` | **`11`** |
+| BLOCKED / DECLARED / CLEAR | `7 / 3 / 3` | **`5 / 3 / 3`** |
+| the partition | `20 / 6 / 2 / 16` | **`20 / 4 / 0 / 18 / 2`** |
+
+⛔ *And my first attempt at that re-pin **guessed** `4 / 3 / 6` instead of reading the run — the error
+this very file was built to catch, committed on the file itself. The measured answer is `5 / 3 / 3`.*
+
+⛭ **`cc66.46` is now re-pointable**, which is what the keystone ask was for.
+
+## ⛔⛭⛭ ⓸ A LATENT DEFECT THE ORDERED WORK WOULD HAVE TRIGGERED, FOUND BY PERTURBATION
+
+The closure test compared every `__cr` key with `.astype(float)`. That held **only because exactly one
+bank has a sibling and all its `__cr` entries are numbers.** `r6893_slice_check` carries
+`arm__cr = 'cr'` — a string. ⇒ *** The moment 70 banks a sibling for it — which is the ask this
+instrument exists to price — the comparison would have crashed instead of judging. ***
+
+⌗ *Found because a perturbation pointed the sibling path at the namesake, which made every gap take
+that branch and raised `could not convert string to float`.* Non-numeric keys are now skipped, and a
+bank with no numeric key on either side returns **"cannot judge"** rather than "closed".
+
+## ⛔ ⓹ AND A FIFTH BUCKET, WITH THE CORRECTION THAT IT IS **NOT** A WORK LIST
+
+The bank created a state the partition could not name: receipts that read a cr bank, have every
+sibling they need, and are simply not yet re-pointed. Without that bucket two of them fell into
+**NO CR READ**, which says the opposite of the truth.
+
+⚠ **My first version called the bucket READY and printed it as item ⑵'s work list. It is not.** Five
+of its eighteen are blocked for reasons no sibling can fix, each established by me in the last three
+hours: `the_full_range_refit_…` and `the_refit_leaves_…` on the grid's **centre** (`.39`, `.41`),
+`the_no_fit_confrontation_…` on its **own gate** (`.43`), `the_refit_bound_figures_…` on two of three
+**configurations** (`.43`), and `the_windows_phase_spread_…` **held** on 70's swap re-run (`.26`).
+⇒ *A partition over BANKS cannot see a block that is not about banks. The bucket is now called
+**NO BANK GAP** and the five are gated inside it, so it cannot be read as eighteen re-points
+available when thirteen are.*
+
+## ⌗ ⓺ AND A FOURTH SHAPE OF USELESS PERTURBATION, WHICH IS WHY I AM COUNTING THEM
+
+Two probes returned `exit=0, 0 FAIL` and neither was a passing gate: **they were too weak to reach the
+code they targeted.** `_closed` returns early at its existence guard, so replacing its final
+`return bool(moved and held)` only touches the one bank that *has* a sibling — for which both
+conditions are true anyway. ⇒ *Rewritten to attack the conditions directly: pointing the sibling path
+at the namesake, and evaluating the control-side condition on the arm's keys. **Both fire.***
+
+⚠ *Tally for this revision and the last: `/tmp` resolution (`.26`), logical equivalence (`.45`), a
+patch that never applied (`.46`), and now too weak to reach its target. **Four distinct ways a
+perturbation of mine has produced exactly the output a passing one produces.** The helper verifies the
+patch changed the file; nothing yet verifies it reached the branch it meant to.*
+
+⇒ **Six perturbations red, every patch verified applied.** Next: ⑷ and ⑹ with their receipts, then
+`.40`, then the thirteen the bank actually released.

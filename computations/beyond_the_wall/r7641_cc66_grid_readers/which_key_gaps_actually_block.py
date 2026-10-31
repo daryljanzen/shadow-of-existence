@@ -62,25 +62,95 @@ def check(label, ok, witness=''):
 #: and it HAS an arm-of-record sibling.  *So it is a FORM and not a gap, as `cc66.39` reported, and
 #: including it would have scored two receipts blocked by a bank the second bank already cleared.*
 #: PART 1 gates that distinction rather than leaving it to this comment.
-GAPS = ('r6893_slice_check', 'r6897_fields', 'r6897_noop', 'r6911_noop', 'r6915_noop',
-        'r6919_geometry', 'r6919_noop', 'r6925_geometry', 'r6925_noop', 'r6929_geometry',
-        'r6929_noop')
+GAPS_ALL = ('r6893_slice_check', 'r6897_fields', 'r6897_noop', 'r6911_noop', 'r6915_noop',
+            'r6919_geometry', 'r6919_noop', 'r6925_geometry', 'r6925_noop', 'r6929_geometry',
+            'r6929_noop')
 NOT_A_GAP = 'r6929_scan_cr'
+#: ** A KEY GAP IS CLOSED BY A SIBLING FILE THAT KEEPS THE KEY NAMES AND MOVES THE `__cr` VALUES. **
+#: Tested, not assumed: the sibling must exist, carry the same `__cr` key names, hold DIFFERENT
+#: values in them, and hold IDENTICAL `__lcdm` values -- the last being the bank's own statement that
+#: the control does not move.  *All four, or it is not a closure.*
+CLOSED_BY_SIBLING = []
+
+
+def _closed(g):
+    import numpy as _np
+    sp = os.path.join(SPEC, g + '_leafrec1.npz')
+    if not os.path.exists(sp):
+        return False
+    a = _np.load(os.path.join(SPEC, g + '.npz'), allow_pickle=True)
+    b = _np.load(sp, allow_pickle=True)
+    #: ⛔⛭⛭ ** NUMERIC KEYS ONLY, AND THIS WAS A LATENT DEFECT THE ORDERED WORK WOULD HAVE
+    #: TRIGGERED. **  The first version compared every `__cr` key with `.astype(float)`.  That held
+    #: only because exactly ONE bank has a sibling and all of its `__cr` entries are numbers:
+    #: `r6893_slice_check` carries `arm__cr = 'cr'`, a STRING, and the moment 70 banks a sibling for
+    #: it -- which is the ask this file exists to price -- the comparison would have crashed rather
+    #: than judged.  *Found by a perturbation that pointed the sibling path at the namesake, which
+    #: made every gap take this branch and raised `could not convert string to float`.*
+    #:   ⇒ *** Non-numeric keys are skipped, and a bank with no numeric key on either side returns
+    #:       False -- "cannot judge" rather than "closed", which is the safe direction. ***
+    def _num(z, k):
+        try:
+            _np.atleast_1d(z[k]).astype(float)
+            return True
+        except (ValueError, TypeError):
+            return False
+
+    cr = [k for k in a.files if '__cr' in k and k in b.files and _num(a, k) and _num(b, k)]
+    lc = [k for k in a.files if '__lcdm' in k and k in b.files and _num(a, k) and _num(b, k)]
+    if not cr or not lc:
+        return False
+    moved = any(not _np.allclose(_np.atleast_1d(a[k]).astype(float),
+                                 _np.atleast_1d(b[k]).astype(float)) for k in cr)
+    held = all(_np.allclose(_np.atleast_1d(a[k]).astype(float),
+                            _np.atleast_1d(b[k]).astype(float)) for k in lc)
+    return bool(moved and held)
+
+
+for _g in GAPS_ALL:
+    if _closed(_g):
+        CLOSED_BY_SIBLING.append(_g)
+GAPS = tuple(g for g in GAPS_ALL if g not in CLOSED_BY_SIBLING)
 MINE44 = [ln.strip() for ln in open(MINE, encoding='utf-8') if ln.strip()]
 #: hoisted because an f-string expression may not contain a backslash (py3.11)
 TMPL_RE = re.compile(r'__\{')
 
 KEYS = {}
-for g in GAPS + (NOT_A_GAP,):
+for g in GAPS_ALL + (NOT_A_GAP,):
     z = np.load(os.path.join(SPEC, g + '.npz'), allow_pickle=True)
     KEYS[g] = sorted(z.files)
 
 print(__doc__)
 print(BAR)
+print("  PART 0 -- WHICH KEY GAPS 70's THIRD BANK CLOSED, AND BY WHICH MECHANISM")
+print(BAR)
+for g in GAPS_ALL:
+    sib = os.path.exists(os.path.join(SPEC, g + '_leafrec1.npz'))
+    print(f"    {g:20s} sibling file: {str(sib):5s}  closed by it: {g in CLOSED_BY_SIBLING}")
+check("⛭⛭ `r6929_geometry` IS CLOSED BY A SIBLING FILE, on all four conditions and not on its "
+      "existence alone: the sibling keeps the same `__cr` key names, its `__cr` values MOVED, and "
+      "its `__lcdm` values are IDENTICAL -- the bank's own statement that the control does not "
+      "move.  ⇒ ** A better form than the `__cr_leafrec1` entries I asked for, because a reader "
+      "re-points by changing the FILE and keeping the key **",
+      'r6929_geometry' in CLOSED_BY_SIBLING,
+      f"closed: {CLOSED_BY_SIBLING or 'none'}")
+check("⛔ AND THE REST ARE STILL OPEN, so the ask narrows rather than disappearing",
+      len(GAPS) == len(GAPS_ALL) - len(CLOSED_BY_SIBLING) and len(GAPS) > 0,
+      f"{len(GAPS)} still open of {len(GAPS_ALL)}")
+
+print()
+print(BAR)
 print("  PART 1 -- EACH GAP BANK'S OWN KEYS, SPLIT BY ARM")
 print(BAR)
 for g in GAPS:
     cr = [k for k in KEYS[g] if re.search(r'(^|_)cr(_|$)|__cr$|_cr_', k) and 'lcdm' not in k]
+    #: ⛭⛭ r7643: ** 70's THIRD BANK CLOSED A KEY GAP WITH A SIBLING FILE, WHICH IS A BETTER FORM THAN
+    #: THE ONE I ASKED FOR AND WHICH THIS TEST DID NOT ANTICIPATE. **  I asked for `__cr_leafrec1`
+    #: ENTRIES; `r6929_geometry_leafrec1.npz` instead keeps the key NAMES and holds the arm of
+    #: record's values in them (l_A__cr 301.799 -> 302.943, D_M__cr 14017.04 -> 14133.95), with the
+    #: `__lcdm` side bit-identical.  *A reader re-points by changing the FILE and keeping the key,
+    #: rather than changing every key string -- so the gap is closed and this test, keyed on the
+    #: presence of an arm-of-record KEY, would have gone on calling it open.*
     lc = [k for k in KEYS[g] if 'lcdm' in k]
     sib = os.path.exists(os.path.join(SPEC, g + '_leafrec1.npz'))
     print(f"    {g:20s} {len(KEYS[g]):3d} keys: {len(cr):2d} cr-side, {len(lc):2d} control-side"
@@ -216,11 +286,15 @@ for r in sorted(_needs_more):
 #: DECLARED category gave 10 / 3 again with two landed receipts among the blocked.  *A count that
 #: moves with the method and is not pinned is a number nobody can audit, and this one is going into a
 #: bank ask.*
-check("⛔⛭ THE VERDICT COUNTS ARE PINNED: 7 BLOCKED, 3 DECLARED, 3 CLEAR of the 13 readers, and 5 of "
-      "the 7 cleared by the one family ask.  ⇒ ** Pinned because three earlier versions of this file "
-      "each gave a different plausible count, and the number is going into a bank ask **",
-      len(BLOCKED) == 7 and len(DECLARED) == 3 and len(CLEAR) == 3
-      and len(_by_family) == 5 and len(_needs_more) == 2,
+check("⛔⛭ THE VERDICT COUNTS ARE PINNED, AND THEY MOVED WHEN 70's THIRD BANK LANDED: 5 BLOCKED, 3 "
+      "DECLARED, 3 CLEAR of **11** readers, where before the bank it was 7 / 3 / 3 of 13.  ⛔ *And "
+      "the first attempt at this re-pin GUESSED 4 / 3 / 6 of 13 instead of reading the run -- the "
+      "same error this file was built to catch, committed on the file itself.*  ⇒ ** The pin is what "
+      "made the release measurable rather than asserted: `r6929_geometry` closing drops two receipts "
+      "out of the reader set entirely and takes `the_contrast_excess_…` and "
+      "`the_locator_is_good_…` out of BLOCKED **",
+      len(VERDICT) == 11 and len(BLOCKED) == 5 and len(DECLARED) == 3 and len(CLEAR) == 3
+      and len(_by_family) == 3 and len(_needs_more) == 2,
       f"{len(BLOCKED)} blocked, {len(DECLARED)} declared, {len(CLEAR)} clear; "
       f"{len(_by_family)} by the family, {len(_needs_more)} needing more")
 #: ⛔⛭⛭ ** AND TWO OF THIS FILE'S OWN REFINEMENTS TURN OUT TO BE INERT, WHICH PERTURBATION FOUND AND
