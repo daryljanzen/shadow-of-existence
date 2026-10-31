@@ -31151,3 +31151,61 @@ the heavy tier, the compile job and every scoped job all report `skipped`. ⇒ *
 is NEVER a receipt verdict**, which is exactly why the three figure-bank readers stayed invisible on
 `2f742607b` while that PR run concluded success. Only the push-event run whose scope contains a
 receipt can give it a verdict.
+
+**`cc66.68`'S MISSING CI VERDICT, RECOVERED — AND WHAT THE RECOVERY COSTS.** Run `41214223209`
+attempt 2 (head `3219aa870`) was re-run once, deliberately, because my own `cc66.69` push had
+cancelled attempt 1's plain suite, its `fast` job and its three tolerance probes, leaving
+`cc66.68`'s four re-pointed receipts with no verdict at all and its probe-comparison job failing on
+probes recorded unmeasured.
+
+**What it returned: `98 pass, 3 fail` over 101 receipts in scope, and none of `cc66.68`'s receipts
+is among the failures.** `fast` green, the runner-read sweep green, the tolerance sweep flagging NO
+site (`VERDICT: NOT A SWEEP -- no site flagged`, exit 2 being the unmeasured bit), and build B
+returning "the same output as the build above" — so the probes measured this time.
+
+⇒ **The three failures are the figure-bank readers on their PRE-`cc66.70` gate text** — `THE
+ARM-TO-CONTROL RATIO IS FLAT: 3.58, 3.65, 3.32` and `ell_A = 298 is EXCLUDED at delta chi2 = 15.0`
+— i.e. exactly the gates `cc66.70` rewrote. The head's own run on `9be0e8dcd` concluded SUCCESS, so
+nothing needed porting, and CI's `rerun_guard.py` independently declined to file either job:
+*"attempt 2 of 3219aa870; the tip is 169b9762e -- STALE RE-RUN, DECLINED"*. One standing-down
+comment on PR #577, edited to cover both jobs rather than duplicated.
+
+⚠ **THE STRUCTURAL COST, WORTH WRITING DOWN BECAUSE IT WILL RECUR.** A re-run checks out the
+ORIGINAL commit. So re-running an old run to recover a cancelled verdict necessarily re-reports
+every red the later commits fixed, and each such red arrives as a fresh CI failure event that has to
+be read against the tree it ran on rather than against the head. The verdict is still worth the
+re-run — it is the only way to get one for a scope a push cancelled — but it is not free, and with
+`cancel-in-progress` every rapid push trades a verdict for a cancellation. That trade is what cost
+`cc66.68` its verdict in the first place.
+
+⛔ **AND MY OWN PRE-PUSH SWEEP RAN VACUOUS, WHICH IS THE DEFECT CLASS I HAVE BEEN CATCHING IN OTHER
+PEOPLE'S GATES ALL DAY.** `scripts/run_touched_readers.sh` diffs the WORKING TREE against `HEAD`. I
+ran it after committing, so it found *"no corpus file changed; nothing can be affected by this
+class"* and printed GREEN — **a green that asked nothing.** On the `cc66.70` tree the same script
+had named two changed appendices and 55 receipts, because that tree was still dirty. ⇒ **The script
+takes the ref as its second positional argument** (`run_touched_readers.sh --both HEAD~1`), so the
+real question is askable on a committed tree and that is how it must be run from now on. *A gate
+that passes because its set emptied is worse than one that fails — `which_key_gaps_actually_block`
+was fixed for exactly this at `cc66.69b`, and I then did it to myself.*
+
+**AND RUNNING IT PROPERLY IMMEDIATELY FOUND SOMETHING — WHICH IS THE POINT.** Against `HEAD~1`:
+class one **55/55 pass** (the receipts that pin prose in the two changed appendices), and class two
+**rc=1** on `corpus/check_receipts_run.py`. Worked through the "before any not-mine" sequence rather
+than assumed:
+  ⒜ **Its own text:** the gate has two halves. The HOLLOW-ASSERTION LINT **passes** — 1140 receipts,
+    522 carrying assertions and *"none of them hollow"* — so `cc66.71`'s new gates are not
+    tautologies, which is the half that could have been mine. The failing half is
+    `⛔ [FAIL] STALE RESULT. The cached run is against tree c45c0984781013fe; the tree is now
+    cdcd048734c0a43d.`
+  ⒝ **Pristine `origin/main`:** main's own `receipts/RUN_RESULT.txt` carries
+    `TREE-DIGEST: c45c0984781013fe` while main's tree is `37b92168b618df34…`. ⇒ **It is red on main,
+    by the same assertion, and no commit in the last twelve carries that digest.**
+  ⒞ **A fix to port:** none, and none is wanted. `scripts/turn_gates.sh` EXCLUDES this gate by name
+    with its reason written out — *"a TRIGGER, not a cost: red whenever the tree digest moves"* —
+    and the gate sits in the SCHEDULE-driven nightly heavy tier (right after the `refs/ci/nightly`
+    push step), which is what re-measures all 868 receipts and refreshes the cache. It is a CI job,
+    in the same category as `run_fast_job.sh` and the two sweeps this seat is told not to run
+    locally.
+⇒ **So class two of the touched-readers sweep will report this red on EVERY tree change.** Recorded
+here so it is not chased once a push: the signal to read in class two is any gate OTHER than this
+one, and this one is answered by the nightly tier rather than by a seat.
