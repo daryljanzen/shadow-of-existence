@@ -4,7 +4,24 @@ WHERE THE SKY MEASURES IT BEST -- WHICH IS NOT THE REASON THE ORDER GAVE. **
 
 ** PATH PROVENANCE, IN THE HEADER, AT 66's REQUEST AFTER `cc66.45`. **  *** Every model number below is
 the HIERARCHY path: *** the reported spectra `cc66_r185_verify_{lcdm,cr}`, the `LSTEP=1` fine references
-`r6941_fine_{lcdm,cr}`, and the `VISLEAF` family `r6929_scan_cr` / `r6941_fine_cr_visleaf`.
+`r6941_fine_lcdm` / `r6941_fine_cr_leafrec1`, and the `VISLEAF` family `r6929_scan_cr_leafrec1` /
+`r6941_fine_cr_visleaf_leafrec1`.
+
+⛭⛭ ** ON THE ARM OF RECORD AS OF `r7643+cc66.52` (`LEAFREC=1`, 70's second and third banks). **  *The
+CR side of every bank read here moves to its `_leafrec1` sibling; the control's does not, which is the
+bank's own statement -- `r6929_geometry_leafrec1` holds `__lcdm` values bit-identical to its namesake's
+and `__cr` values that moved.*  ⛔ ** AND THE RE-POINT FOUND A DEFECT IN THIS RECEIPT'S OWN STATISTIC,
+not in the arm: the fixed-q band-variance split silently required the two combs to be PHASE-MATCHED.
+The namesake arm's `$\ell_A$` sat 0.08 per cent from the control's and met that condition by accident;
+the arm of record's sits 0.46 per cent away and does not. **  *Read naively it would have published
+`the excess is peak-dominated` off two bands whose positive lobe is a sliver.  The split is re-anchored
+on each arm's own zero crossings and compared lobe by lobe, and the fixed-q table stays printed as the
+diagnostic that exposed it.*
+
+⛭ ** ARM KEYS READ: ** `f__cr`, `rD__cr`, `R_S__cr` out of `r6929_geometry_leafrec1`, and
+`ls__comb_cr_f*` / `Dl__comb_cr_f*` / `l_A__comb_cr_f*` out of `r6929_scan_cr_leafrec1`; `__lcdm` keys
+are read from the same files and do not move.  *Named here under node 69's `r7643` arm-key rule, because
+a receipt reading a two-arm bank by key suffix cannot otherwise be audited for which arm it read.*
 `sec:refit-bound`'s quartet $222/538/818/1134$ is the LINE-OF-SIGHT path's and is not read here at all
 -- searched for by grepping this file for each of the four values and for every line-of-sight bank name
 (`c54.17*`, `c54.178_*`, `L814_*`, `r6784_*`), and none of them occurs in the code below.  *** The sky side is `plik_lite` TT through the likelihood's OWN binning *** --
@@ -21,10 +38,11 @@ whichever carries it, against $\mathrm d(\theta_D/\theta_*)/\mathrm df$; ⓶ᶜ 
 it, the way `PO-47` did for the fourth peak.
 
 ⛭⛭ ** ⓶ᵃ THE EXCESS IS SYMMETRIC ABOUT THE ENVELOPE, SO IT IS NEITHER TROUGH-DOMINATED NOR
-PEAK-DOMINATED. **  Splitting the band variance of the envelope-normalised oscillation at its own zero
--- which is a decomposition, the two parts adding to the whole -- the arm/control ratio is $1.0668$ on
-the positive side and $1.0561$ on the negative.  Read instead at the literal extrema, the arm's
-excursion exceeds the control's by $5.7$ per cent at the maxima and $5.3$ at the minima.  ⇒ *** The
+PEAK-DOMINATED. **  Splitting the variance of the envelope-normalised oscillation at its own zero
+-- which is a decomposition, the two parts adding to the whole -- and anchoring each band on the
+spectrum's OWN zero crossings so the two arms are compared lobe by lobe, the arm/control ratio is
+$1.0736$ on the positive side and $1.0621$ on the negative.  Read instead at the literal extrema, the
+arm's excursion exceeds the control's by $6.9$ per cent at the maxima and $6.2$ at the minima.  ⇒ *** The
 contrast is an AMPLITUDE excess about the envelope, carried equally by peak heights and trough depths. ***
 ⌗ *So $\Delta$'s trough dominance is a statement about the whitened residual and does NOT transfer to
 the contrast's own decomposition -- which the order explicitly declined to assume, and the answer is that
@@ -33,8 +51,8 @@ peaks, so the row is not pushed back onto the driving.*
 
 ⛔ ** ⓶ᵇ THE DEPTHS ARE THE MORE CLOCK-SENSITIVE OF THE TWO -- BUT $\theta_D/\theta_*$ IS MORE SENSITIVE
 THAN EITHER, WHICH REFUTES THE ORDER'S BRANCH. **  Across the `VISLEAF` family the mean trough depth
-moves $-2.58$ per cent and the mean peak height only $-0.77$, so the depths are $3.4\times$ the more
-responsive -- *that half of the reading holds.*  But $\theta_D/\theta_* = r_D/r_s$ moves $-4.08$ per
+moves $-2.59$ per cent and the mean peak height only $-0.78$, so the depths are $3.3\times$ the more
+responsive -- *that half of the reading holds.*  But $\theta_D/\theta_* = r_D/r_s$ moves $-4.04$ per
 cent over the same family, because $r_D$ is itself `Jac`-weighted under `LEAFSCALES` and the $\tau$
 re-weighting moves it directly.  ⇒ *** The paper's discriminant of principle is not the insensitive one:
 it is the MOST sensitive of the three, and by the order's own rule -- both move together -- the depths
@@ -44,14 +62,16 @@ are not a new handle on the clock. ***
 NAMED: THE SKY MEASURES DEPTHS TWICE AS WELL AS HEIGHTS. **  On the matched binned statistic, with
 `COV_TT` propagated by Monte Carlo through the identical anchored locator, the sky's own spread is
 $0.0059$ on the trough depth and $0.0114$ on the peak height.  The arm-minus-control excess is the same
-size in both -- $+0.0106$ and $+0.0103$ -- so in the sky's own units it reads
+size in both -- $+0.0128$ and $+0.0135$, equal to within six per cent -- so in the sky's own units it
+reads
 
-    trough depths :  arm - control = +1.81 sigma      control - sky = -0.05 sigma
-    peak heights  :  arm - control = +0.91 sigma      control - sky = -0.59 sigma
+    trough depths :  arm - control = +2.17 sigma      control - sky = -0.05 sigma
+    peak heights  :  arm - control = +1.19 sigma      control - sky = -0.59 sigma
 
-*** The control lands on the sky's trough depths to a twentieth of a sigma and the arm sits $1.76\sigma$
+*** The control lands on the sky's trough depths to a twentieth of a sigma and the arm sits $2.12\sigma$
 above the sky.  This is the first statistic in this sector whose residual is NOT shared with the
-control *** -- against the fourth peak, where the arm-minus-control displacement was $0.83\sigma$ and
+control *** -- against the fourth peak, where the NAMESAKE arm's arm-minus-control displacement was
+$0.83\sigma$ (`PO-47`'s own figure, on that arm, and not re-pointed here) and
 both models sat high of the sky.  ⇒ ** So the order's conclusion stands and its argument does not: the
 trough depths are the sharpest CR-specific observable this campaign has measured, because of how well
 the SKY measures them rather than because of how they mix the clocks. **
@@ -113,8 +133,9 @@ SP = os.path.join(ROOT, 'computations', 'beyond_the_wall', 'spectra')
 sys.path.insert(0, os.path.join(ROOT, 'computations', 'planck_tt_likelihood'))
 import chi2_of_spectrum as CS                                             # noqa: E402
 
-NEED = ('r6941_fine_lcdm.npz', 'r6941_fine_cr.npz', 'r6941_fine_cr_visleaf.npz',
-        'r6929_scan_cr.npz', 'r6929_geometry.npz')
+NEED = ('r6941_fine_lcdm.npz', 'r6941_fine_cr_leafrec1.npz',
+        'r6941_fine_cr_visleaf_leafrec1.npz',
+        'r6929_scan_cr_leafrec1.npz', 'r6929_geometry_leafrec1.npz')
 for _n in NEED:
     check(f"the bank this receipt reads is present: `spectra/{_n}`",
           os.path.exists(os.path.join(SP, _n)), _n)
@@ -126,10 +147,11 @@ if FAILS:
         print(f"  - {f}")
     raise SystemExit(1)
 
-F = {t: np.load(os.path.join(SP, f'r6941_fine_{t}.npz')) for t in ('lcdm', 'cr')}
-V = np.load(os.path.join(SP, 'r6941_fine_cr_visleaf.npz'))
-S = np.load(os.path.join(SP, 'r6929_scan_cr.npz'))
-GE = np.load(os.path.join(SP, 'r6929_geometry.npz'))
+_FINE = {'lcdm': 'r6941_fine_lcdm.npz', 'cr': 'r6941_fine_cr_leafrec1.npz'}
+F = {t: np.load(os.path.join(SP, _FINE[t])) for t in ('lcdm', 'cr')}
+V = np.load(os.path.join(SP, 'r6941_fine_cr_visleaf_leafrec1.npz'))
+S = np.load(os.path.join(SP, 'r6929_scan_cr_leafrec1.npz'))
+GE = np.load(os.path.join(SP, 'r6929_geometry_leafrec1.npz'))
 
 LC, FAC = CS.bin_center_and_fac()
 X, COV = CS.X_DATA, CS.COV_TT
@@ -214,6 +236,66 @@ check("the split is a DECOMPOSITION and not two statistics: the positive and neg
               - three(Q['cr'], O['cr'], a, b)[1] - three(Q['cr'], O['cr'], a, b)[2])
           for a, b in zip(ED[:-1], ED[1:])) < 1e-15,
       "var = var+ + var- to machine precision in every band")
+
+# ⛔⛭⛭ r7643+cc66.52: ** THE FIXED-q BAND SPLIT ABOVE IS NOT ARM-OF-RECORD-SAFE, AND THE RE-POINT IS
+#   WHAT SHOWED IT. **  It compares the arm's `o^2` on its POSITIVE side against the control's over THE
+#   SAME FIXED q-WINDOW -- a phase-matched comparison, and the two combs are phase-matched only while
+#   their `l_A` agree.  *The namesake arm's `l_A` sat 0.08 per cent from the control's and satisfied
+#   that silently; the arm of record's sits 0.46 per cent away, so by q ~ 5 the two have drifted about a
+#   fiftieth of a period and a fixed band no longer covers the same phase in both.*
+#   ⇒ *** In the two bands where the positive lobe is a SLIVER (f+ ~ 0.21) the ratio becomes a ratio of
+#       slivers and swings -- 1.2048 and 1.4257 against ~1.07 everywhere else.  Read naively this
+#       receipt would have published `the excess is PEAK-dominated on the arm of record` off two
+#       artefacts, and its conclusion is the opposite. ***
+#   ⛭ So the split is re-anchored on each arm's OWN zero crossings and compared LOBE BY LOBE BY INDEX,
+#   which is phase-matched by construction.  The fixed-q table stays printed as the diagnostic that
+#   exposed the fragility; the gates read the anchored one.  ⌗ *The validity condition was never stated
+#   and the namesake happened to meet it -- which is why this is a form and not a finding about the arm.*
+_DF = []
+for a, b in zip(ED[:-1], ED[1:]):
+    _x = np.linspace(a, b, 400)
+    _DF.append(abs(float(np.mean(np.interp(_x, Q['cr'], O['cr']) > 0))
+                   - float(np.mean(np.interp(_x, Q['lcdm'], O['lcdm']) > 0))))
+
+
+def lobes(q, o, qlo=0.85, qhi=5.75):
+    """each WHOLE lobe between consecutive zero crossings, as (mean o^2, sign)"""
+    m = (q >= qlo) & (q <= qhi)
+    q, o = q[m], o[m]
+    s = np.sign(o)
+    cut = np.where(s[:-1] != s[1:])[0]
+    out = []
+    for i, j in zip(cut[:-1], cut[1:]):
+        seg = o[i + 1:j + 1]
+        if seg.size >= 4:
+            out.append((float(np.mean(seg ** 2)), int(np.sign(np.mean(seg)))))
+    return out
+
+
+_LA, _LC = lobes(Q['cr'], O['cr']), lobes(Q['lcdm'], O['lcdm'])
+_NL = min(len(_LA), len(_LC))
+_MIX = sum(1 for i in range(_NL) if _LA[i][1] != _LC[i][1])
+LPKS = np.array([np.sqrt(_LA[i][0] / _LC[i][0]) for i in range(_NL)
+                 if _LA[i][1] > 0 and _LC[i][1] > 0])
+LTRS = np.array([np.sqrt(_LA[i][0] / _LC[i][0]) for i in range(_NL)
+                 if _LA[i][1] < 0 and _LC[i][1] < 0])
+print(f"    the drift the fixed-q split cannot see: |f+ arm - f+ control| runs {min(_DF):.3f} to "
+      f"{max(_DF):.3f} across the bands, on l_A {float(F['cr']['l_A']):.3f} against the control's "
+      f"{float(F['lcdm']['l_A']):.3f}")
+print(f"    ANCHORED lobe by lobe on each arm's own crossings: {len(LPKS)} peak lobes "
+      f"{LPKS.mean():.4f} ({LPKS.min():.4f}-{LPKS.max():.4f}), {len(LTRS)} trough lobes "
+      f"{LTRS.mean():.4f} ({LTRS.min():.4f}-{LTRS.max():.4f})")
+check("⛔⛭ the fixed-q split is the fragile one and the anchored split is not, MEASURED rather than "
+      "asserted: the fixed-q table's worst band sits more than three times as far from one as the "
+      "anchored split's worst lobe, and the bands that carry it are the ones whose positive lobe is a "
+      "sliver", max(abs(PKS.max() - 1), abs(TRS.max() - 1))
+      > 3 * max(abs(LPKS.max() - 1), abs(LTRS.max() - 1)),
+      f"fixed-q worst {max(PKS.max(), TRS.max()):.4f}, anchored worst "
+      f"{max(LPKS.max(), LTRS.max()):.4f}")
+check("and the anchored split compares like with like: every matched lobe pair carries the same sign, "
+      "so no ratio above is a positive lobe divided by a negative one",
+      _MIX == 0 and len(LPKS) >= 4 and len(LTRS) >= 4,
+      f"{_NL} matched lobe pairs, {_MIX} sign-mismatched")
 EX = {}
 for t in ('lcdm', 'cr'):
     mx = argrelextrema(O[t], np.greater, order=20)[0][:6]
@@ -225,16 +307,18 @@ print(f"    at the literal extrema, arm/control: maxima {r_max:.4f}, minima {r_m
       f"(six of each, fine grid)")
 check("⛭⛭ ** THE EXCESS IS SYMMETRIC ABOUT THE ENVELOPE. **  The two sides of the decomposition carry "
       "it within about one per cent of each other, and at the literal extrema the arm exceeds the "
-      "control by 5.7 per cent at the maxima against 5.3 at the minima",
-      abs(PKS.mean() - TRS.mean()) < 0.02 and abs(r_max - r_min) < 0.01,
-      f"band split {PKS.mean():.4f} / {TRS.mean():.4f}; extrema {r_max:.4f} / {r_min:.4f}")
+      "control by 6.9 per cent at the maxima against 6.2 at the minima.  ⛭ *Both readings are "
+      "phase-anchored: the lobe split by construction, the extrema because an extremum is located in "
+      "each arm separately*",
+      abs(LPKS.mean() - LTRS.mean()) < 0.02 and abs(r_max - r_min) < 0.01,
+      f"anchored split {LPKS.mean():.4f} / {LTRS.mean():.4f}; extrema {r_max:.4f} / {r_min:.4f}")
 check("⇒ so it is an AMPLITUDE excess and neither trough- nor peak-dominated: Delta's trough dominance "
       "is a statement about the WHITENED residual and does not transfer to the contrast's own "
-      "decomposition", TRS.mean() / PKS.mean() < 1.02 and TRS.mean() / PKS.mean() > 0.98,
-      f"trough side / peak side = {TRS.mean()/PKS.mean():.4f}")
+      "decomposition", LTRS.mean() / LPKS.mean() < 1.02 and LTRS.mean() / LPKS.mean() > 0.98,
+      f"trough side / peak side = {LTRS.mean()/LPKS.mean():.4f}")
 check("⚠ and the order's STOP condition does not fire -- the excess is not in the peaks either, so the "
-      "row is not pushed back onto the driving", PKS.mean() / TRS.mean() < 1.05,
-      f"peak side exceeds the trough side by only {100*(PKS.mean()/TRS.mean()-1):.1f} per cent")
+      "row is not pushed back onto the driving", LPKS.mean() / LTRS.mean() < 1.05,
+      f"peak side exceeds the trough side by only {100*(LPKS.mean()/LTRS.mean()-1):.1f} per cent")
 
 # ===================================================================================================
 print("\nPART 2 -- ⓶ᵇ THE CLOCK SENSITIVITY: THE DEPTHS, THE HEIGHTS, AND theta_D/theta_*.")
@@ -320,10 +404,14 @@ print(f"    ⇒ in the sky's own units:  depths  arm-control {(da-dc)/sd:+.2f} s
       f"control-sky {(dc-ds)/sd:+.2f} sigma, arm-sky {(da-ds)/sd:+.2f} sigma")
 print(f"                               heights arm-control {(ha-hc)/sh:+.2f} sigma, "
       f"control-sky {(hc-hs)/sh:+.2f} sigma, arm-sky {(ha-hs)/sh:+.2f} sigma")
-check("⇒ *** SO THE SAME EXCESS READS 1.8 SIGMA IN THE DEPTHS AND 0.9 IN THE HEIGHTS -- the order's "
+check("⇒ *** SO THE SAME EXCESS READS 2.2 SIGMA IN THE DEPTHS AND 1.2 IN THE HEIGHTS -- the order's "
       "conclusion stands and its argument does not: the troughs are where the assignment becomes "
-      "observable because of how well the SKY measures them, not because of how they mix the clocks ***",
-      (da - dc) / sd > 1.5 and (ha - hc) / sh < 1.1
+      "observable because of how well the SKY measures them, not because of how they mix the clocks "
+      "***.  ⛭ *The pin is the RATIO and not a bare ceiling on the heights: what the statement rests "
+      "on is one excess read through two spreads, so the excesses are held equal and the sigmas are "
+      "held apart by the factor the spreads differ by*",
+      (da - dc) / sd > 2.0 and (ha - hc) / sh < 1.5
+      and ((da - dc) / sd) / ((ha - hc) / sh) > 1.6
       and abs((da - dc) - (ha - hc)) < 0.15 * (da - dc),
       f"{(da-dc)/sd:+.2f} sigma against {(ha-hc)/sh:+.2f} sigma, on excesses of {da-dc:+.5f} and "
       f"{ha-hc:+.5f}")
@@ -332,6 +420,62 @@ check("⛭ ** AND THE CONTROL LANDS ON THE SKY'S TROUGH DEPTHS TO A TWENTIETH OF
       f"fourth peak, where arm-minus-control was {PO47_AC} sigma and both models sat high of the sky",
       abs((dc - ds) / sd) < 0.2 and (da - ds) / sd > 1.5,
       f"control-sky {(dc-ds)/sd:+.2f} sigma, arm-sky {(da-ds)/sd:+.2f} sigma")
+
+# ===================================================================================================
+# ⛭⛭ r7643+cc66.52: ** EVERY FIGURE THIS RECEIPT'S `INDEX.md` ROW PRINTS IS PINNED HERE, TWO-SIDED, AT
+#   THE DIGITS THE ROW PRINTS. **  *Before the re-point they were carried in `figure_pin_baseline.tsv`
+#   as nine unpinned figures -- printed beside a citation and held by nothing.  The re-point moved every
+#   one of them, and a moved figure that nothing holds is worse than a stale one: it reads as current.*
+#   ⇒ *So the baseline SHRINKS by nine rather than being rewritten with new values, which is the only
+#   direction that ratchet is allowed to move.*  ⛔ *Each tolerance is at or inside the gate's own
+#   allowance -- the coarser of half a unit in the last printed digit and 0.05 per cent -- so a pin that
+#   passes here is a pin the gate counts, and perturbing the computation reddens it.*
+#   ⌗ *Each pin is written as an explicit comparison against the literal the row prints, not read out
+#   of a table: `check_figures_pinned` parses the receipt's SOURCE for a comparison carrying the
+#   figure, so a data-driven loop over `(value, want, tol)` triples pins nothing -- measured, after the
+#   first attempt here did exactly that and the gate still reported all eleven unpinned.*
+_LA_OFF = 100 * (float(F['cr']['l_A']) / float(F['lcdm']['l_A']) - 1)
+_P2 = float(np.sort(PKS)[-2])
+print("\nPART 5 -- THE FIGURES THE `INDEX.md` ROW PRINTS, PINNED TWO-SIDED AT THEIR PRINTED DIGITS.")
+print("-" * 100)
+for _lab, _got in (('anchored split, peak side', LPKS.mean()),
+                   ('anchored split, trough side', LTRS.mean()),
+                   ('extrema, maxima excess per cent', 100 * (r_max - 1)),
+                   ('extrema, minima excess per cent', 100 * (r_min - 1)),
+                   ('VISLEAF mean height per cent', 100 * dH),
+                   ('VISLEAF mean depth per cent', 100 * dD),
+                   ('VISLEAF theta_D/theta_* per cent', 100 * dR),
+                   ("the sky's spread, depth", sd), ("the sky's spread, height", sh),
+                   ('arm minus control, depth', da - dc), ('arm minus control, height', ha - hc),
+                   ("depths, arm-control in sky units", (da - dc) / sd),
+                   ("heights, arm-control in sky units", (ha - hc) / sh),
+                   ("depths, arm-sky in sky units", (da - ds) / sd),
+                   ("l_A offset from the control, per cent", _LA_OFF),
+                   ('the worst fixed-q band', PKS.max()),
+                   ('the second worst fixed-q band', _P2)):
+    print(f"    {_lab:40s} {_got:14.8f}")
+check("⛭⛭ every figure the `INDEX.md` row prints is held two-sided to the digits it prints, each "
+      "tolerance at or inside `check_figures_pinned`'s own allowance -- so the row's numbers fail this "
+      "receipt when they are wrong, where before the re-point nine of them were baselined as unpinned "
+      "and the re-point moved every one",
+      abs(LPKS.mean() - 1.0736) < 5e-5
+      and abs(LTRS.mean() - 1.0621) < 5e-5
+      and abs(100 * (r_max - 1) - 6.86) < 5e-3
+      and abs(100 * (r_min - 1) - 6.17) < 5e-3
+      and abs(100 * dH - -0.781) < 5e-4
+      and abs(100 * dD - -2.594) < 5e-4
+      and abs(100 * dR - -4.043) < 5e-4
+      and abs(sd - 0.00588) < 5e-6
+      and abs(sh - 0.01135) < 5e-6
+      and abs((da - dc) - 0.01276) < 5e-6
+      and abs((ha - hc) - 0.01354) < 5e-6
+      and abs((da - dc) / sd - 2.17) < 5e-3
+      and abs((ha - hc) / sh - 1.19) < 5e-3
+      and abs((da - ds) / sd - 2.12) < 5e-3
+      and abs(_LA_OFF - 0.464) < 5e-4
+      and abs(PKS.max() - 1.4257) < 5e-5
+      and abs(_P2 - 1.2048) < 5e-5,
+      f"l_A offset {_LA_OFF:.6f} per cent; worst fixed-q bands {PKS.max():.6f} and {_P2:.6f}")
 
 # ===================================================================================================
 print("\nPART 4 -- THE GUARDS THE ORDER ASKED FOR: THE WINDOW, THE FREE SEARCH, AND THE ABSCISSA.")
@@ -378,8 +522,9 @@ if FAILS:
     sys.exit(1)
 print("GATES: ALL PASS.")
 print(f"""
-  ⛭⛭ ⓶ᵃ THE EXCESS IS SYMMETRIC ABOUT THE ENVELOPE: the band-variance split gives {PKS.mean():.4f} on
-  the peak side against {TRS.mean():.4f} on the trough side, and at the literal extrema the arm exceeds
+  ⛭⛭ ⓶ᵃ THE EXCESS IS SYMMETRIC ABOUT THE ENVELOPE: the phase-anchored lobe split gives
+  {LPKS.mean():.4f} on the peak side against {LTRS.mean():.4f} on the trough side, and at the literal
+  extrema -- a second, independently anchored reading -- the arm exceeds
   the control by {100*(r_max-1):.1f} per cent at the maxima against {100*(r_min-1):.1f} at the minima.
   So it is an AMPLITUDE excess; Delta's trough dominance does not transfer to the contrast's own
   decomposition, and the order's stop condition does not fire either.
