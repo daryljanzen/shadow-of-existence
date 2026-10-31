@@ -31209,3 +31209,55 @@ than assumed:
 ⇒ **So class two of the touched-readers sweep will report this red on EVERY tree change.** Recorded
 here so it is not chased once a push: the signal to read in class two is any gate OTHER than this
 one, and this one is answered by the nightly tier rather than by a seat.
+
+---
+
+### `cc66.72` — item 1's SIXTH and last: the 133-bin pair, and two banks that disagree in direction
+
+**Item 1 of `r7645` is COMPLETE.** The sixth receipt,
+`the_133_bin_pair_is_computed_and_asserted_and_the_hardcoded_row_carried_the_other_arm`, now runs
+with PART 5 added: three arms on one control over both ranges, all scored through the same
+`chi2_of_spectrum` route.
+
+**THE RE-POINT WAS NOT WHERE I EXPECTED IT, AND THAT IS THE FINDING.** `r7639` ⑶ had already ruled
+this receipt's PART 3 historical, measuring that the two legs collapse to one point on the arm of
+record — so the obvious reading was that item 1's sixth was already discharged. **It was not, because
+there are TWO arm-of-record banks for this pair and they sit at different backgrounds:**
+
+| bank | background | 133-bin χ² | per bin | ratio vs control |
+|---|---|---|---|---|
+| `cc66_cr_x_h686_pol` (namesake) | 68.60 / 0.2973 | 556.6858 | 4.185607 | 1.992290 |
+| `…_pol_leafrec1_distances` — **`r7645`'s point** | 68.60 / 0.2973, `l_A`/`D_M`/`r_s` bit-identical to the namesake's | 583.9890 | 4.390895 | **2.090004** |
+| `…_pol_leafrec1` — the bank `r7639` ⑶ ruled on | **68.57073 / 0.291246** (the REFIT point) | 447.3733 | 3.363709 | 1.601078 |
+
+⇒ **`sec:refit-bound`'s printed "a factor $1.98$" moves UP to $2.09$ on the order's own point, not
+down to the $1.60$ this receipt had been narrating.** The claim that the arm is about twice the
+control SURVIVES and is slightly larger; the printed $1.98$ is stale, and even the "$\times2.0$"
+rounds to $2.1$. *Reading the wrong one of the two banks turns a finding that slightly strengthens
+the claim into one that halves it.* Routed to 69 with proposed wording; the `FOR_69.md` row that had
+read **NOT YET MEASURED … HOLD** is replaced with the measurement.
+
+⛔ **AND THIS FILE HAD NARRATED FIVE FIGURES WITHOUT ASSERTING ONE OF THEM** — `447.3733`,
+`3.363709`, `1.601078`, `938.3175`, `5.071986` sat in its docstring and in no `check`. **In the file
+whose entire subject is that a narrated number is not a measured one.** They reproduce exactly and
+are gated in PART 5 now; the point is that nothing would have failed if they had not.
+
+⛔ **AND `r7639` ⑶'s RULING DOES NOT TRANSFER TO THIS ORDER'S POINT.** The collapse to one point
+(`max|dD_l| = 0.0000e+00`) is a property of the refit-point bank alone. At the distances' point the
+two legs are `2.3601e-04` apart — **`0.9806` of the namesakes' own separation** — so the
+68.62-versus-68.60 distinction PART 3 draws is alive there and is not spent. *That is the scope of
+69's ruling, not a contradiction of it: the ruling named a bank and this is the other one.* Gated,
+and the closing and docstring now say "for the refit-point bank" rather than flatly. LEAFREC moves
+the spectrum at the distances' point by `6.4169e-03`, 27× the leg separation, which is what moves
+the χ² at all.
+
+⛔ **A PREDICTION OF MINE FAILED AND IS GATED AS FAILED.** I registered "the arm of record is WORSE
+on both ranges" before measuring. On 133 bins it is (`4.185607 → 4.390895` per bin); **on 185 bins it
+is BETTER** (`6.323342 → 6.106828`, ratio `1.680854 → 1.623301`). *A re-point's sign is a property of
+the RANGE and not of the arm, and the gate now asserts the disagreement rather than the direction I
+expected.*
+
+**Three perturbations, each landing where intended and none crashing or finding nothing:** reading
+the refit bank as if it were the distances' point reds **4** gates including the `2.09` pin and the
+scope gate; collapsing the distances' legs reds exactly the scope gate; and loosening one narrated
+figure's pin reds exactly the narrated-figures gate.
