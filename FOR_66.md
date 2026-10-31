@@ -30293,3 +30293,68 @@ across two writes, all this receipt's.
 `the_contrast_excess_…` `.52`, `the_locator_…` `.54`, `the_term_mix_…` `.59`, and this one `.61` with
 its identity leg declared — plus `the_monopole_zero_point_…` `.57`. ⌗ *Every one of the four found a
 statistic that does not survive the move, and `cc66.60`'s single number is why all four did.*
+
+---
+
+# `r7643+cc66.62` — `the_cross_term_…` re-pointed, and ⛭ **`cc66.60`'s predictor earned its keep: two reds, both expected**
+
+Sixth receipt. Physics side on the arm of record (`r6915_pairs_cr`, `r6911_source_cr`); the
+`PAIRSAVE`-is-inert identity stays on the namesake pair, declared, because `r6915_noop` has no
+arm-of-record key — the third receipt with that exact shape after `.57` and `.61`.
+
+## ⛭⛭ ⓵ THE PREDICTOR WORKED, WHICH IS THE POINT OF HAVING NAMED IT
+
+`cc66.60` said: look first for statistics comparing arm against control over a fixed abscissa, and
+expect the source rungs to cross unity. ⇒ *** **Two reds, and I knew what both would be before
+reading them.** Nine on the receipt I went into blind at `.60`; two here. ***
+
+| | namesake | arm of record |
+|---|---|---|
+| monopole source → projected | `0.9920 → 1.0343` | `1.0003 → 1.0289` |
+| Doppler | `0.9726 → 1.0988` | `1.0202 → 1.1018` |
+| ISW | `0.9723 → 0.9889` | ⛔ `1.0104 → 0.9939` |
+| polarisation | `0.9904 → 1.0578` | `1.0012 → 1.0539` |
+| the whole source | `0.9923 → 1.0452` | `0.9973 → 1.0415` |
+
+**Fourth receipt in which the `0.464` per cent comb offset carries a source rung across unity.** *The
+whole-source pair is the same quantity `cc66.61` re-pinned, which is the consistency check on all of
+it: `0.9973 → 1.0415` there and here.*
+
+## ⛔ ⓶ AND ONE LIMB GENUINELY MOVES, FOR ONE TERM
+
+`every term's PROJECTED ratio is HIGHER than its source ratio` holds for **three of the four**: the
+ISW falls, `1.0104 → 0.9939`, where on the namesake it rose. ⇒ *** The conclusion never rested on the
+ISW — `no single term can be the channel` rests on the projection raising the LARGE terms, and the
+Doppler still goes `1.0202 → 1.1018`. So the claim is re-stated term by term, with the exception
+named, rather than carried on a universal that is no longer universal. *** ⌗ *And the gate now admits
+exactly one exception and pins the Doppler's floor, so `three of four` is a measurement and not a
+loophole.*
+
+## ⛭ ⓷ THE SECOND RED IS A SIGNIFICANCE, NOT A SIGN
+
+The retained-fraction slope is `+0.02690 ± 0.01226` against the namesake's `+0.01359 ± 0.00202`:
+**twice as steep and six times as scattered**, so `2.2` sigma here against `6.7` there. ⇒ *The bound
+goes `3` sigma → `2`, and **both figures are pinned two-sided so the relaxation cannot hide in the
+margin** — the lesson `cc66.61` paid for twice. What the gate asserts, that the ratio is not flat and
+the order's second branch is excluded, rests on the slope being positive in all twelve settings, which
+it still is.*
+
+## ⛭ ⓸ AND THE RECEIPT CAUGHT THE HALF-MOVE ITSELF, AGAIN
+
+*Reverting the pairs bank alone reddened `[cr] this run's `D_l` is `r6911+cc66.40`'s, so the two
+receipts read one configuration` — a cross-RECEIPT consistency gate, not my target.* ⇒ ** Second time
+in two receipts that the existing machinery makes a half-moved re-point impossible rather than merely
+detectable. ** *That is worth more than the perturbation I was aiming.*
+
+**Nine pins, four perturbations (three on target, one better), `exit=0`.** `figure_pin_baseline.tsv`
+shrinks by seven. ⌗ *Two figures stayed out of the row rather than being pinned or baselined: the
+namesake arm's source range. **This receipt no longer computes them, so a pin would be a false
+assurance and a baseline row would grow the ratchet** — so the contrast is in words and the numbers
+live in the history and in this file.*
+
+## ⇒ ⓹ ITEM 2: SIX RE-POINTED, FOUR BANK-BLOCKED, AND THE THREE NOOP ASKS ARE NOW THE WHOLE REMAINDER
+
+`.52`, `.54`, `.57`, `.59`, `.61`, `.62`. ⌗ *Of the four left, `the_combs_resolution_…` and
+`the_visibilitys_clock_…` have partials available and `a_source_with_no_physics_…` and
+`the_held_period_estimator_…` do not. **Every one of the six so far found a statistic that does not
+survive the move, and one number explains all of them.***
