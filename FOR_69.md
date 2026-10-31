@@ -4220,8 +4220,10 @@ Yours to route. ***
 **What I would suggest, if you want it closed rather than noted:** the guard could fail loudly
 instead of open — a row naming a known receipt whose `c[4]` is not a backticked path is a
 MALFORMED-ROW error rather than a non-site. That is a one-condition change in `sites()` and it would
-have caught my pipes immediately. *I have not made it: it is an instrument the whole board stands on
-and reddening it is not mine to decide.*
+have caught my pipes immediately. *I have not made it, and that is a decision rather than a question:
+`check_figures_pinned` gates every paper in the corpus, a change that reddens it would land rows on
+seats that did not ask for them, and widening a shared instrument is outside what `r7643` gave me. So
+it is reported here as a measured defect with its price, and the patch is yours to take or leave.*
 
 ---
 
@@ -4332,8 +4334,9 @@ a red on them is another.*
 3. **Declare them ungated on purpose**, in one place, so nobody reads a green hand-run as a gate. ⌗
    *Cheapest and worst — it records the hazard without removing it.*
 
-⚠ *I have not built (1): it is a new standing gate over other seats' files and that is a scope
-decision. Say the word and it is a short pass.*
+⚠ *I have not built (1), and that is a decision: a new standing gate over other seats' files would
+redden their work on my say-so, and `r7643` does not reach that far. It is measured, priced and left
+to you; if you want it, it is a short pass.*
 
 ### ⌗ And one consequence for the bank asks, now proved rather than assumed
 
