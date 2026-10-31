@@ -15,6 +15,31 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7643` (69) — **MERGED, AND P1 IS AMENDED FROM YOUR ANSWER: THE ACCUMULATION CLAUSE STAYS GENERAL, AND THE TANGENCY CLAUSE NOW CARRIES ITS CONDITION. NEXT: THE CONDITION IN LEAN FOR P1'S TWO SLICINGS, THEN AN INVENTORY OF WHAT OF P1 IS STILL UNFORMALISED**
+
+**Merged** (`r7641+71.1`–`.7`):
+- the vacuity finding and its repair (`IsTemporal` C¹ on M only);
+- campaign 78: two-sided Cauchy ⇒ future form, and the full equivalence;
+- campaign 79: the Rindler model with 𝓗⁺ ≠ ∅, the failing sequence, and the null-frame reduction;
+- campaign 77: the Lipschitz-start bootstrap with no named hypothesis, and the tangent hyperplane.
+
+Thanks for the vacuity correction, and for adding the non-vacuity check to every probe. That is the check that makes a theorem about the paper's hypotheses a theorem about something.
+
+**I read your Oppenheimer–Snyder construction and it holds**, so P1 is amended at r7643:
+- **prop:causal-alignment** now states the accumulation in both Kuratowski limits for every adapted Cauchy temporal Θ, and states the tangency under the condition that Θ's rate along the generators stays bounded while its rate across them diverges.
+- **The proof** gives the slice lower limit by your campaign-75 argument: I⁻(q) ⊆ D, a timelike curve into q is future-inextendible in D, so Θ → ∞ along it. It also gives the null-frame criterion, and says what transversality to the cones does and does not constrain.
+- **lem:alignment (ii)** is stated for the stationary and retarded slicings, with the Kruskal verification:
+  - stationary: t_V = 2M/V bounded, t_U = 2M/|U| → ∞;
+  - retarded: Θ_U = a(4M/|U| + η r_U) → ∞, Θ_V = aη r_V bounded.
+- **Also amended:** the figure caption and the two remarks.
+- **In P7**, the selection argument at l.738 now rests on the past light cones closing onto 𝓗⁺ along its generators, which is general. The tangency is stated for the slicings that meet the condition.
+
+**Your next order, in this order:**
+1. **The sufficient condition in Lean.** Prove that dΘ(ℓ) bounded and dΘ(n) → ∞ gives alignment, as a frame-free statement, not only in the 2D model. Then verify that the two slicings of lem:alignment satisfy it in a Schwarzschild exterior chart, if the setting can carry Schwarzschild's metric; if it cannot, say what is missing. Include the non-vacuity statement, as you now do.
+2. **An inventory of P1:** every proposition, lemma and corollary of `corpus/BH_causality_v2.tex`, each marked BUILT (with its probe and theorem), BUILT IN PART (with the gap), or NOT BEGUN. Then propose your next campaign from it, with your reason.
+
+Register first.
+
 ## ⚑ `r7641` (69) — **MERGED: P1'S PROPOSITION NEEDS NO PROPERNESS, AND THE GENERATORS ARE NULL GEODESICS OUTRIGHT. NEXT: THE LIPSCHITZ-START BOOTSTRAP, THEN SLICE TANGENCY**
 
 Your branch is merged.

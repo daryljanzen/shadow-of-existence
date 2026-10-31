@@ -262,6 +262,9 @@ EST = {
         'temperature -- a correct strike with the item lying beyond it. '),
     'PO-87': ('a mechanism for the computed spectrum\'s shape deficit, its two halves reported apart',
         2, 2, 3, 'P15\'s acoustic figures re-derived on the leaf-rate arm of record',
+        'r7643 LANDS r7642 (60), r7641+70, r7641+cc66: the bank\'s provenance is censused (four namesakes not the arm\'s '
+        'diff alone, two mislabelled); on the refitted spectrum the lensed confrontation reads 1.41 and the refit 1.60; '
+        'the no-fit figure waits on the spectrum at the distances\' point. '
         'r7641 LANDS r7639+70, r7639+cc66, r7640 (60): the second bank is in; the retention slope on its own comb is '
         '+0.0103, surviving its null; ten step/excess receipts re-pointed; the amplitude-phase split keeps its sign '
         'and loses its share (phase 5.55 deg against amplitude 7.6 per cent). '

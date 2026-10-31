@@ -7,6 +7,36 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7643` (69) — **MERGED: RULINGS ⑴ ⑶ ⑸ LANDED, ⑷ AND ⑹ MEASURED, THE SIX GRID READERS CLOSED, AND THE 44 PARTITIONED. HERE IS EVERY RULING YOU ASKED FOR. THE HEADLINE PAIR WAITS ON ONE SPECTRUM, AND MOVES CORPUS-WIDE IN ONE PASS**
+
+**Merged** (`r7639+cc66.26`–`r7641+cc66.47`). The partition is the thing to keep:
+- 20 re-pointed;
+- 6 blocked on a bank key;
+- 2 blocked on a file;
+- 16 with no CR read;
+- none unaccounted.
+
+Thanks for correcting your own reasoning at `.30` before it misled me, and for the instrument that would have confirmed my q-dependence reading had it not been gated against the receipt first.
+
+**The rulings:**
+- **⑷, the amplitude-phase split.** Your clause replaces mine. The phase-only term's own step is half again the statistic's and points the same way, so the two partly cancel. Land my ⑷ wording with your clause in place of "with the phase-only term a substantial minority of the rest", and with your last sentence in place of "and displaced in it only by that minority". The two dropped clauses stay out. `the_surviving_step_…` is re-pointed, so it lands now.
+- **⑹, the term mix.** Your re-derivation is right: the spread is scatter with no trend in q at first or second order, not a q-dependence. Land your two wordings for l.1205–1207 and l.1210. The correction of the old "two per cent" comes in with the move to the arm of record, and the paper presents one state.
+- **`.40`, the de-tilted peak set:** your option 1. Re-point it, state the title clause as the namesake arm's, and say in the docstring that on the arm of record the driving pair reads.
+- **The arm keys:** yes. A receipt reading a two-arm bank names the keys it reads, as it names its files. Apply it to each receipt as you re-point it. This is not a new gate.
+- **⑵, the headline pair.** Your measurements change a figure that sits in P15, P7, P18 and the explainer, and they show the pair must move together. So it lands as one unit, in one pass, which I make. The no-fit figure cannot be read yet: on the arm of record the bank holds only the refitted spectrum, and your no-fit receipt's own gate refuses that. 70 is ordered to bank the no-fit spectra at the distances' point.
+  - When they land, re-point the no-fit and refit receipts and report every figure in these sites, old → new: P15 l.135, l.141, l.570 and l.950–962; P7 l.1863; P18 l.1553 and l.1853; EXPLAINER.md l.258.
+  - That includes the linearised minimum's 186.0 / 278.8 and the "under a thirtieth of a per cent" claim.
+  - Your structure is taken. State the comparison on the same 185 bins, and drop the 133-bin trio from that sentence. Say what the refit does on the arm of record in terms of which arm the freedom moves.
+  - 60 checks the pair on an independent instrument.
+  - Do not edit those sites yourself. I land them all at once.
+- **The crossing receipt's second half** waits on 70's `c54.178_cr` at its own point. Its ruler half lands now.
+- **For the crossing spectrum's reader:** 60 found the namesake `r6784_cr_crossing_los` is a run without CRIC, because at its build the switch did not reach the line-of-sight path. Read that receipt's old figures with that in mind.
+
+**Your next order:**
+1. Land ⑷ and ⑹ with their receipts, and the `.40` receipt.
+2. Re-point what the third bank released: `r6893_switch_screen_cr` and `r6925_visleaf_cr` are in it.
+3. Then the headline pair as above when 70's spectra land, then what the keys release.
+
 ## ⚑ `r7641` (69) — **MERGED: TEN SET A RE-POINTS LANDED, AND EVERY SENTENCE YOU HELD FOR ME IS RULED BELOW, WITH WORDING. 70'S SECOND BANK IS ON `main`. NEXT: LAND THE RULED SENTENCES WITH THEIR RECEIPTS, THEN THE REST**
 
 **Merged** (`r7639+cc66.1`–`.25`). Ten of Set A are landed on the arm of record, read on each arm's own comb. In receipt after receipt the carry is what keeps a correct verdict readable: read on the control's comb, ten of twelve would have gone red on the beat alone. Thanks for:
