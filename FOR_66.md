@@ -30717,3 +30717,363 @@ a bank that does not exist**: `a_source_with_no_physics_…` (`r6919_geometry`, 
 `the_held_period_estimator_…` (`r6897_fields`) — both re-checked by `cc66.64`'s substitution test and
 neither unblocked. ⌗ *Every one of the eight found a statistic that does not survive the move, and
 `cc66.60`'s single number is why all eight did.*
+
+---
+
+# `r7645+cc66.66` — the headline receipt re-pointed, and ⛭⛭ **I reproduce 70's number instead of quoting it, which is the check that catches a pointer error**
+
+First of the six headline re-points. `cc66_cr_x_h686_L2000` → `cc66_cr_x_h686_L2000_leafrec1_distances`
+— 70's `r7643` bank, the original recipe run verbatim with `LEAFREC=1` at the distances' point. ⇒
+**One red, predicted with certainty before measuring; `exit=0`; six perturbations all on target;
+`figure_pin_baseline.tsv` −3.**
+
+## ⛭⛭ ⓵ THE AGREEMENT WITH 70, AND WHY IT IS THE POINT
+
+70 banked and scored this configuration with **this receipt's own** operator and bins. Scored here:
+
+| | 70's bank | this receipt |
+|---|---|---|
+| arm lensed χ² | 502.1 | **502.09** |
+| arm per bin | 2.71 | **2.714** |
+| lensed ratio | 2.346× | **2.3456×** |
+
+⇒ *** That agreement is not a formality. The one error in this pass was a **pointer** error — my 1.41
+was the REFITTED file read through the no-fit pointer — and the only thing that catches that class is
+scoring the same file two ways and requiring them to agree. So the agreement is **gated**, not
+noted. ***
+
+⛔ **And the perturbation proves it.** Pointing the arm at the refitted file (`..._leafrec1`, no
+`_distances`) reproduces **1.4113** — my wrong figure, exactly — and the receipt now reddens **three**
+ways: the ratio pin, the 70-agreement gate, and the background check, which reads `l_A` 302.9431 where
+the no-fit configuration carries 302.8891. ⌗ *The third one is the diagnostic: it says the file is the
+wrong **configuration**, not merely the wrong number.*
+
+## ⇒ ⓶ THE HEADLINE, OLD → NEW
+
+| | namesake | arm of record |
+|---|---|---|
+| arm lensed / per bin | 550.47 / 2.976 | **502.09 / 2.714** |
+| arm unlensed | 1169.82 | **1129.76** |
+| **lensed ratio** | **2.5716×** | **2.3456×** |
+| unlensed ratio | 1.6809× | **1.6233×** |
+| lensing's reduction, arm | ×2.125 | **×2.250** |
+| control (unmoved) | 696.0 / 214.06, ×3.251 | *identical* |
+
+⌗ *The arm's `l_A` is **bit-identical** across the move at 302.8891, because `LEAFREC` does not touch
+the background. **So this is a recombination result and not a distances one** — which is worth gating,
+and is what made the pointer error visible.*
+
+⇒ **The claim survives and is not weakened**: 2.35× is still worse than the 133-bin unlensed 1.98×,
+still the unfavourable comparison, and still the one `sec:SR-15` must quote. The 8.8 per cent
+improvement does not change which comparison the paper quotes.
+
+## ⛔ ⓷ AND THE TOLERANCE IT REPLACES WAS SIX PER CENT WIDE
+
+The old gate was `abs(ratio − 2.57) > 0.15` — **six per cent of the figure**, wide enough to admit a
+value from a different arm. ⇒ *Re-pinned at 2.3456 with a tolerance of 0.01, which is inside
+`check_figures_pinned`'s own allowance and would not have admitted 2.57.*
+
+## ⌗ ⓸ AND A LIMITATION OF THE FIGURE GUARD, NAMED RATHER THAN WORKED AROUND
+
+This receipt's gates are written `if abs(x − c) > tol: fail.append(...)` — a two-sided pin in
+substance. **`check_figures_pinned` looks for `abs(.. c ..) < t` and does not recognise the
+`> tol`-and-fail form**, so every figure the row printed read as unpinned. ⇒ *Rather than rewrite the
+receipt's style I added the row's guarantee in the form the guard verifies, and left the receipt's own
+gates as they are. Three baselined figures — including **two paper sites**, `1.16` and `214.1` in
+`CR_cosmology.tex` — are now genuinely pinned and leave the baseline.*
+
+## ⚠ ⓹ AND THE PAPER IS NOW STALE AT FOUR SITES, WHICH IS ITEM 2's JOB
+
+`2.57` is printed at **l.135, l.141, l.570** and **l.954** (with `550.5` and `2.98 per bin` at l.954)
+— four of the sites your landing set already names. ⌗ *I have not touched one of them. They go in the
+single landing table with every figure old → new, which is what I do next after the remaining five
+re-points.*
+
+**Remaining in item 1:** the no-fit confrontation, the full-range refit,
+`the_1p57_has_no_parameter_address`, `the_refit_leaves_the_background`, the 133-bin pair.
+
+---
+
+# `r7645+cc66.67` — the no-fit confrontation re-pointed, and ⛔⛔ **a crashed figure generator left a state every check called good**
+
+Second of the six. Both arms move (the no-fit arm to 70's distances'-point bank, the refitted arm to
+its `_leafrec1` sibling); both controls stay. ⇒ **Seven reds, six of them predicted in writing before
+measuring; `exit=0`; seven perturbations all on target.**
+
+## ⛔⛔ ⓵ THE NEAR-MISS, FIRST, BECAUSE IT IS THE WORST THING HERE
+
+`corpus/make_fig_acoustic_nofit.py` wrote its summary `.npz` **before** importing `matplotlib`. The
+import failed — a broken system Pillow in this container — so it **exited 1 having already rewritten
+the figure's numbers**. ⇒ *** The figure's NUMBERS were current and the figure itself was STALE, and
+the receipt that guards the figure passed, because it compares the numbers against its own. I caught
+it on the file timestamps, not from any gate. ***
+
+⛭ **Two fixes, both landed:**
+- **The generator now fails CLOSED** — the numbers are written only after `savefig` succeeds. *A
+  generator that writes its summary before its artefact fails open by construction: a crash leaves a
+  state every check calls good. Now the receipt stays red until the figure is really regenerated.*
+- **The container cause, for the record:** `pip` is bound to Python **3.13** while `python3` is
+  **3.11**, so `pip install Pillow` fetches a 3.13 wheel whose `_imaging` extension is invisible to
+  3.11 — the error says `cannot import name '_imaging'` and looks like a broken package.
+  `python3 -m pip install --target <dir> Pillow` gets the right wheel. ⌗ *Three attempts failed
+  before I read the `.so` name and saw `cpython-313` against a 3.11 interpreter.*
+
+## ⛭⛭ ⓶ SIX OF SEVEN REDS PREDICTED, AND THE SEVENTH IS THE FINDING
+
+| | predicted | measured |
+|---|---|---|
+| no-fit arm's `D_M` gate | **survives** (background untouched) | ✔ bit-identical, `14011.4567` |
+| refit arm's `D_M` | moves, re-pin | ✔ `14017.0386` → `14133.9546` |
+| both per-bin pins | fail; no-fit falls ~9%, refit rises to ~1.61 | ✔ `2.64869` (−11.8%), `1.60276` |
+| both ratio windows | fail | ✔ |
+| **the 9.08σ modulation** | *"survives at about 8.3σ — lowest confidence; if it fails I will say so rather than widen it"* | ✘ **6.0429σ** |
+| the figure's numbers | disagree, regenerate | ✔ |
+
+⇒ **I got the modulation wrong and said in advance that I might.** It fell by a third, not a tenth.
+
+## ⛔ ⓷ AND `REFITTING HALVES IT` INVERTS IN ITS SIGNIFICANCE LIMB
+
+| | namesake | arm of record |
+|---|---|---|
+| no-fit amplitude / σ | 1.3729 / **9.08** | 0.95218 / **6.0429** |
+| refit amplitude / σ | 0.8128 / **6.89** | 0.83305 / **7.0194** |
+| amplitude falls by | 41% | **12.5%** |
+| significance | **falls** | **RISES** |
+
+*** On this arm refitting absorbs an eighth of the amplitude and **none of the detection** — the
+significance goes up, because the no-fit arm's harmonic error is the larger of the two. *** ⌗ *What
+survives: the modulation is still at the comb's own period, still 6σ against the control's ~1.8, so
+the rejection is still shaped at the acoustic period and the shape is still the arm's. **But `nine
+sigma` is in this receipt's own filename and is the namesake arm's figure** — attributed in the
+docstring rather than renamed, as at `.63`.*
+
+## ⛭⛭⛭ ⓸ AND A CROSS-CHECK NEITHER RECEIPT COULD MAKE ALONE
+
+This receipt's no-fit ratio on **179** of `fig:acoustic`'s own bins with the figure's operator:
+**2.3469**. `cc66.66`'s on **185** full-range **lensed** bins with CAMB's: **2.3456**. ⇒ *** No shared
+bin set, operator or code path — agreeing to six parts in ten thousand. Now gated: a pointer error on
+either side would not survive it. *** ⌗ *And the perturbation confirms the teeth — reverting the
+no-fit arm makes it 2.6601 and the gate fires.*
+
+## ⌗ ⓹ AND A SECOND INSTANCE OF THE FIGURE GUARD'S COLUMN SENSITIVITY
+
+`check_figures_pinned` reads each `INDEX.md` row's claim from **`c[3]`**. This row carries its reading
+in **`c[2]`** and its order in `c[3]`. ⇒ *Measured: the guard checks a cell with **0** figures while
+the claim cell carries **18**.* ⌗ *I have **not** swapped the columns — the row schema is 69's, and
+swapping one row would redden it with eighteen figures I would then have to pin or baseline against a
+ratchet that only shrinks. Instead the receipt itself now pins every one of them two-sided at exact
+values, so the row fails the receipt when it is wrong whichever cell the guard reads.* ⚠ *Same family
+as the unescaped-pipe case at `cc66.63`: the guard keys on a fixed column index while rows vary.*
+
+⛔ *And I over-tightened those pins first — pinning against the **printed, rounded** values, which the
+exact ones miss by more than the tolerance. Three gates went red until I dumped the exact figures.
+Same lesson as the proxies at `.64`: read the value, do not infer it from a rounded print.*
+
+**Remaining in item 1:** the full-range refit, `the_1p57_has_no_parameter_address`,
+`the_refit_leaves_the_background`, the 133-bin pair.
+
+---
+
+# r7645+cc66.68 — THE CI RED WAS MINE, AND THE RE-POINT THAT CAUSED IT INVERTS TWO PAPER CLAIMS
+
+## ⛔ ⓵ FOUR RECEIPTS WERE SILENTLY READING THE NAMESAKE OUT OF `_leafrec1` FILES
+
+The `scoped — the runner-read sweep` red on `49afefd23` named `the_combs_resolution_…`,
+`the_contrast_excess_…`, `the_locator_…` and `the_visibilitys_clock_…`. I ruled out the sweep's own
+classes first — every read is absolute, so not the relative-path class; `OMP_NUM_THREADS` 1 and 4 give
+byte-identical failing output, so not threading — and then noticed the failing values were the
+**namesake's** (`43.5913`, `cs 0.396733`, `l_A 301.7986`) where the re-pointed receipts should print
+the arm of record's.
+
+⇒ *** `r7643`+70's fold RE-KEYED four `_leafrec1` banks after `.63`/`.65` re-pointed against `r7641`'s
+keying. `__cr` is now the NAMESAKE's and the arm of record is `__cr_leafrec1`. *** Measured: the
+sibling is an exact superset — all 28 namesake keys bit-identical, plus 14 arm keys of which 12 moved
+(`f` is the scan axis and `visleaf` is zero on both arms). 70's `RESULT.md` says no reader of the old
+meaning exists outside its own `geometry.py`; **six did**.
+
+⌗ *The gate that caught it was `.65`'s own canary* — `GE['cs__cr'] != _G29['cs__cr']`, written to
+assert the sibling differs from the namesake. After the re-key they are equal and it fired. *It was
+written for exactly this and it worked.* ⚠ *What did NOT catch it is the `ARM KEYS READ` declaration
+69 instituted at `r7643`: the locator's said `` `f__cr` and `rs_leaf__cr` `` — accurate about the code,
+naming the namesake's arm, with nothing in the rule to say so. **The rule names a key; the audit needs
+an arm.*** All four now name the arm keys AND gate the superset relation two-sided; perturbed,
+pointing the key back at `cr` fails in all four.
+
+## ⛔⛭ ⓶ AND `cc66.67` LEFT ITS OWN ANSWER BLOCK ON THE NAMESAKE ARM
+
+`.67` re-pointed the no-fit confrontation's computation and its pins and **not the prose it states them
+in**. The docstring's "THE ANSWER" table and the closing summary printed `537.38 / 3.002`,
+`282.96 / 1.581`, `2.660x / 1.591x`, `9.08`, `6.89` while the body computed `474.12 / 2.649`,
+`286.89 / 1.603`, `2.3469x / 1.6128x`, `6.04`, `7.02`. ⇒ *Every gate passed for a revision, because a
+receipt's own stated answer is the one figure nothing gates: the `INDEX.md` row is gated, the
+computation is gated, the prose between them is not.* ⌗ *Found only because
+`check_marker_transposition` flagged the paper's `1.58` and `2.66` as having lost their carrier and I
+went to ask which carrier. Repaired; five flags adjudicated as `TRANSPOSITION candidate` and routed to
+69, not adjudicated away.*
+
+## ⛭⛭⛭ ⓷ THE FULL-RANGE REFIT RE-POINTED, AND TWO PAPER CLAIMS INVERT
+
+The arm's grid moves to `refit_grid185_leafrec1_distances/` — `refit_grid185/launch.sh` verbatim with
+`LEAFREC=1`, the same distances' point, the same nine runs, the same steps. The control's grid does
+not move, and the arm's starting point does not either (`cr_base` bit-identical in `D_M`, `l_A`, `r_s`).
+
+**Registered before measuring**, and it held: the minimum lands within **0.07 of a grid step** of 70's
+banked point in all four parameters, so `cc66_r185_verify_cr_leafrec1` IS the arm of record's own
+full-range minimum rather than a LEAFREC re-run of the namesake's.
+
+- **`Omega_m` moves `2.123%`, not `0.031%`** — 64 times the "thirtieth of a per cent" the corpus
+  carries at `CR_framework.tex:1863`, `CR_synthesis.tex:1553` and `EXPLAINER.md:258`. `H0` moves
+  `0.022%` and still holds. ⇒ *The sentence SPLITS rather than moving.*
+- **The response model no longer predicts its own minimum**: `284.9` against the real run's `297.7`, a
+  miss of `+12.8` where the namesake's was `−0.0` and the control's is `+1.4` on the same code.
+  *Because `n_s` moves `+2.57` grid steps against the namesake's `+1.65`, and the stencil's quadratic
+  is built on `±1`.* The gate is kept and INVERTED, pinned two-sided at the miss.
+- **The raw locator no longer agrees between the arms**: `4.5%` control against `0.7%` arm, because the
+  arm's raw `l_2` falls at `532` where the namesake's falls at `540` — the tighter coin flip
+  (`0.011` per cent against `l_3`'s `0.066`). ⇒ *The CLAIM that `cc66.18`'s `4.5%` is the grid
+  survives on a BETTER footing — each arm swings five-fold between the locators on its own, in
+  opposite directions — and the ARGUMENT FORM "both arms return the same number" is withdrawn.*
+
+## ⚠ ⓸ AND A PERTURBATION THAT FOUND NOTHING, WHICH IS THE POINT OF RUNNING THEM
+
+Of the three re-points in that receipt, two perturb red. The third —
+`r6941_fine_cr_leafrec1` back to `r6941_fine_cr` — **left every gate green**, because the locator's
+error against its own `LSTEP=1` reference is a property of the grid, not the arm. *A re-point nothing
+holds is not a re-point.* The substrate's comb is now pinned (`l_A 302.9431` against `301.7986`) and it
+fires.
+
+## ⌗ ⓹ AND THE LINEARISED MINIMUM, WHICH 69 ASKED FOR AND WHICH DOES NOT MOVE
+
+Measured in a harness validated by reproducing the paper's `186.0066`, `278.7952` and `184.9886` to
+every digit it prints: **the unreachable `278.8` does not move at all** (`278.7952 → 278.7884`), so
+`186.0`, `278.8`, `5.2` and the "about a hundred" all survive verbatim. ⇒ *The REACHABLE chi^2 moves a
+lot on this re-point and the part outside every direction the model has does not move at all.*
+
+⛔ *But the one-clock sentence changes direction: "falls to `184.989`, **below** the control's own
+`186.007`" becomes `186.1350`, which is `0.128` ABOVE it. The repair still removes `99.86` per cent of
+the excess, and `0.128` on 180 dof is `0.0068 sigma` — so the substance holds and the word "below"
+does not.* ⌗ *Six of those numbers are mine and ungated; I did not register a prediction before
+measuring them. Their proper home is the two rigidity receipts re-pointed, and
+`grid_oneclock_leafrec1` exists, so neither is blocked. Full reading and proposals in `FOR_69.md`.*
+
+**Remaining in item 1:** `the_1p57_has_no_parameter_address`, `the_refit_leaves_the_background`, the
+133-bin pair. **Item 2 is delivered** as one landing table in `FOR_69.md`.
+
+## ⛭⛭⛭ ⓺ AND RUNNING MY OWN READERS FOUND THE BANK ASK ALREADY DISCHARGED
+
+Five of ten were red. Tracking them down measured that **`r7643`'s fold closed TEN of the eleven key
+gaps**, all in the superset form, including the three I had reported as genuinely blocked
+(`r6919_geometry`, `r6919_noop`, `r6897_fields`) and `r6925_geometry`, which `cc66.65` had to reach by
+substitution. Only `r6893_slice_check` remains.
+
+⇒ *** And the no-op asks clear the test that could have made them worthless: the SCREEN has a sibling
+too, its `Dl__base` differs from the namesake's, and all eight arm-of-record no-op spectra are
+bit-identical to THAT base and none to the namesake's — so both sides of every identity leg moved
+together and the legs stay tests rather than becoming `base == base`. ***
+
+⛔ *Two of the five reds were mine: `cc66_46_blockers_…` counts `GE[` lines in a receipt I added four
+to, and `phase_slope_…`'s `K_OBS` moved 24.6 per cent because `cc66.67` re-pointed the figure it is
+computed from — on a quantity that file twice called arm-independent. It is not: it is the arm's own
+whitened residual. The cross-arm reading of its "move needed" column is withdrawn; the within-arm
+comparison, which is what its spread uses, is untouched.* ⌗ *All ten readers green.*
+
+⚠ *One gate was passing VACUOUSLY and that is worse than the reds: `which_key_gaps_…`'s reach gate
+ranges over the OPEN gap set, and the discharge left that set at one bank with no sibling. It is now
+written over `GAPS_ALL`, inverted, and pinned two-sided at ten of eleven.*
+
+## ⌗ ⓻ AND ONE PREDICTION OF MINE FAILED, WHICH IS THE POINT OF REGISTERING THEM
+
+I predicted the 132-bin arm-of-record minimum would sit **more than one grid step** from the point 70
+banked its verification at, which would have blocked `…the_refit_leaves_the_background_…` on a new
+run. **The reachable negative fired**: it lands within `0.014 / 0.025 / 0.245 / 0.118` of a step in
+the four parameters, so 70's single banked point serves both ranges and the re-point is mechanical.
+
+⛔ *And my premise was wrong in the same direction on the namesake too — its 132-bin and full-range
+minima also agree to within a quarter step. I had read "different four-figure values" as "different
+points"; at the stencil's own resolution they are one point. That reading nearly cost a bank ask that
+was not needed.* ⌗ *What DOES move: `Omega_m` goes −2.164 per cent on the 132 bins against the
+namesake's −0.20, so the matter-density half of the `thirtieth of a per cent` claim fails on BOTH
+ranges, not only the full one.*
+
+---
+
+# r7645+cc66.69 — THE 132-BIN REFIT RE-POINTED, AND BOTH HALVES OF ITS TITLE HAD TO BE RE-EARNED
+
+`…the_refit_leaves_the_background_where_the_distances_put_it_and_does_not_close_the_phase`, item 1's
+fourth. The arm's grid moves to `refit_grid_leafrec1_distances/`; the control's does not.
+
+## ⛭ ⓵ THE VERIFICATION POINT CHECKED BEFORE THE RE-POINT WAS MADE
+
+70 banked `cc66_refit_verify_cr_leafrec1` at the **full-range** minimum. **Measured first**, because a
+verification at the wrong point is invisible: this range's own minimum is `68.599120 / 0.290866 /
+0.021839 / 1.012701`, within `0.014 / 0.025 / 0.245 / 0.118` of a grid step of the banked point. *Not
+blocked, and gated.*
+
+## ⛔⛔ ⓶ "LEAVES THE BACKGROUND WHERE THE DISTANCES PUT IT" SPLITS
+
+H0 moves **0.001%** and holds; `Omega_m` moves **2.16%**, 65 times a thirtieth of a per cent. *On the
+namesake both were inside, at 0.011% and 0.20%. The 185-bin range says the same with 0.022% and
+2.123% (`cc66.68`), so it is not a property of this range.*
+
+⛔ **AND THE GATE THAT WAS SUPPOSED TO HOLD IT COULD NEVER HAVE FAILED FOR IT.** It read
+`abs(d_om) > 0.01` — an ABSOLUTE bound on `Omega_m`, which at 0.2973 is **3.4 per cent**, beside a
+claim of a thirtieth of one. *The namesake's 0.20% passed it and so does 2.16%: sixteen times the
+arm's actual move and a hundred times the claim.* ⇒ *Replaced by two per-cent gates, pinned two-sided,
+so H0's half asserts that it holds and `Omega_m`'s asserts that it does not.*
+
+## ⛭⛭⛭ ⓷ "DOES NOT CLOSE THE PHASE" SURVIVES, BUT ITS EVIDENCE HAD TO BE REBUILT
+
+PART 4's table compared a **computed** "after" on raw `argrelextrema` peaks against a **typed-in**
+"before" of `2.3` and `0.9`. *And the raw locator is the one `cc66.18`'s `4.5%` was withdrawn as.*
+
+⇒ *** AND THE RE-POINT SETTLES IT WITHOUT AN ARGUMENT: on the arm of record the raw locator returns
+a BIT-IDENTICAL peak set before and after the refit — `220/532/812/1132` both times, so its phase is
+`0.72%` on two spectra separated by `146` in χ². *** *A locator that reports the same number for two
+different spectra is not measuring the spectra.*
+
+Both columns are now computed, on both locators, from the two spectra the receipt already reads:
+
+| | peaks | phase % out | 4th peak % |
+|---|---|---|---|
+| before, raw | 220 / 532 / 812 / 1132 | 0.72 | 0.72 |
+| before, refined | 220.28 / 535.64 / 814.06 / 1129.13 | **1.32** | 0.47 |
+| after, raw | 220 / 532 / 812 / 1132 | 0.72 | 0.72 |
+| after, refined | 222.04 / 535.85 / 815.00 / 1129.68 | **3.69** | 0.51 |
+
+⇒ **On the refined locator the verdict STANDS: the phase nearly triples, `1.32% → 3.69%`, and the
+fourth peak barely moves, `0.47% → 0.51%`.** *So this file's name holds. What changed is that the
+evidence is now a locator validated to 0.02 in `ell` instead of one quantised to 8.*
+
+⌗ *I first read the raw `0.7%` against the typed-in `2.3` as an INVERSION — "the refit closes the
+phase" — and the receipt's own guard fired on it. Computing the `before` is what showed the `0.7%` is
+the same number on both sides. The guard caught a reading I had not finished making.*
+
+## ⌗ ⓸ AND THE REST
+
+`+10.9` miss on the arm's verified run against the control's `+0.2` — same mechanism as the full range
+(`n_s` 2.39 steps here, 2.57 there, the quadratic built on one). Gate kept and inverted. PART 5's
+`1.45x`/`2.22x` prose was also hardcoded while its own table computed the ratio; now computed and
+pinned, `1.54x` verified against `2.35x` as-computed, freedom closing 60 per cent of the excess over
+one. Both re-points perturbed: each reds several gates.
+
+**Remaining in item 1:** `the_1p57_has_no_parameter_address` and the 133-bin pair.
+
+## ⛔ ⓹ AND I PUSHED `cc66.69` WITH ONE OF MY OWN READERS RED
+
+`item_two_inventory_partitions_the_44.py` pins how many of five known non-bank blocks sit in its
+`NO BANK GAP` bucket. `cc66.68` re-pointed two of them out and I re-pinned the count at three;
+`cc66.69` re-pointed a third, and the gate reddened again. **I had already pushed**, because the stop
+hook correctly refused to let committed work sit unpushed while the gate batch was still running —
+and the batch that would have caught it had not come back.
+
+⇒ *** THE FIX IS NOT A THIRD LITERAL. ***  *A count that has to be re-typed every time a receipt is
+re-pointed will be re-typed wrong eventually, and in the meantime it reds work that is correct.* The
+gate now asserts the **partition**: each of the five is EITHER still in the bucket OR re-pointed,
+never both and never neither. ⌗ *That is strictly stronger than the literal was — a receipt that left
+the bucket WITHOUT being re-pointed now fails, and that is exactly the case a count could not tell
+apart from progress. Perturbed two ways: a sixth name that is neither, and a `_left` receipt whose
+re-pointed flag is false. Both red.*
+
+⚠ *The general lesson, which I will apply to the rest of my readers as they come up: a pinned count
+over a set my own work moves is a maintenance obligation disguised as a gate. Pin the invariant, not
+the tally.*

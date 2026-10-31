@@ -223,22 +223,7 @@ NOOP = np.load(os.path.join(SP, 'r6925_noop.npz'))
 # the geometry, substituted -- and the substitution gated as an identity on the namesake arm first
 _G25 = np.load(os.path.join(SP, 'r6925_geometry.npz'))
 _G29 = np.load(os.path.join(SP, 'r6929_geometry.npz'))
-
-class _ArmOfRecordKeys:
-    """r7645 (69): `r6929_geometry_leafrec1` was re-keyed at r7643+70.1 -- its `__cr` keys now carry the
-    NAMESAKE arm and the arm of record sits under `__cr_leafrec1`.  This view reads every `X__cr` as
-    `X__cr_leafrec1` where the file carries it, so this receipt keeps reading the arm of record."""
-    def __init__(self, z):
-        self._z = z
-        self.files = z.files
-    def __getitem__(self, k):
-        if k.endswith('__cr') and (k + '_leafrec1') in self._z.files:
-            return self._z[k + '_leafrec1']
-        return self._z[k]
-    def __contains__(self, k):
-        return k in self._z.files
-
-GE = _ArmOfRecordKeys(np.load(os.path.join(SP, f'r6929_geometry{_A}.npz')))
+GE = np.load(os.path.join(SP, f'r6929_geometry{_A}.npz'))
 _fg = _G29['f__cr']
 _V = {'0': int(np.argmin(np.abs(_fg - 0.0))), '1': int(np.argmin(np.abs(_fg - 1.0)))}
 _QUANT = ('eta_ls', 'fwhm', 'rD', 'cs', 'l_A')
@@ -254,12 +239,28 @@ check("⛭⛭ ** THE GEOMETRY SUBSTITUTION IS GATED BEFORE IT IS USED: every qua
       and float(_fg[_V['0']]) == 0.0 and float(_fg[_V['1']]) == 1.0,
       f"{_sub_exact} of {len(_sub_pairs)} exact, at f = "
       f"{float(_fg[_V['0']]):g} and {float(_fg[_V['1']]):g}")
+#   ⚭⚭ r7645+cc66.68: ** AND THE SIBLING IS A SUPERSET, SO `__cr` IN IT IS THE NAMESAKE'S. **
+#   *r7643+70's fold re-keyed `r6929_geometry_leafrec1` AFTER cc66.65 re-pointed this receipt against
+#   r7641's keying, where `__cr` DID hold the arm of record.  The arm of record moved to
+#   `__cr_leafrec1`, and `__cr` now carries the namesake's values BIT-IDENTICALLY -- so the key this
+#   gate was written to defend became the namesake's own, and the gate below is the one that caught it:
+#   it asserted GE's `cs__cr` DIFFERS from the namesake's, and after the re-key the two are equal.  It
+#   is kept in its strengthened form: the sibling must be a superset, 28 namesake keys bit-identical
+#   and 12 of 14 arm keys moved, with the arm read under `_GARM`.  Point `_GARM` back at `cr` and this
+#   fails.*
+_GARM = 'cr_leafrec1'                                   # the arm of record's key IN THE GEOMETRY BANK
+_gsup = sum(1 for k in _G29.files if k in GE.files and np.array_equal(_G29[k], GE[k]))
+_gmov = sum(1 for k in _G29.files if k.endswith('__cr') and f'{k}_leafrec1' in GE.files
+            and not np.array_equal(_G29[k], GE[f'{k}_leafrec1']))
 check("   ⇒ and so the two assignments this receipt is about are read on the ARM OF RECORD, out of a "
-      "bank that has a sibling where the one it used to name has none",
-      GE is not _G29 and float(GE['cs__cr'][_V['0']]) != float(_G29['cs__cr'][_V['0']]),
+      "bank that is a SUPERSET of the namesake -- `__cr` in it IS the namesake's, bit for bit",
+      GE is not _G29 and _gsup == len(_G29.files) == 28 and _gmov == 12
+      and float(GE[f'cs__{_GARM}'][_V['0']]) != float(_G29['cs__cr'][_V['0']])
+      and abs(float(GE[f'cs__{_GARM}'][_V['0']]) - 0.3951353109255077) < 1e-12,
+      f"{_gsup} of {len(_G29.files)} namesake keys bit-identical, {_gmov} of 14 arm keys moved; "
       f"d r_s/d chi at the stacking clock: {float(_G29['cs__cr'][_V['0']]):.6f} (namesake) -> "
-      f"{float(GE['cs__cr'][_V['0']]):.6f} (arm of record)")
-g = lambda k, a, v: float(GE[f'{k}__{a}'][_V[v]])
+      f"{float(GE[f'cs__{_GARM}'][_V['0']]):.6f} (arm of record)")
+g = lambda k, a, v: float(GE[f'{k}__{_GARM if a == "cr" else a}'][_V[v]])
 
 
 def env_a(x, y, win=1.0):

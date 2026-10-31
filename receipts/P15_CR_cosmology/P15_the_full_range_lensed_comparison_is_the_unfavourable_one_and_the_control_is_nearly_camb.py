@@ -1,13 +1,29 @@
 #!/usr/bin/env python3
 """
+** THE ARM IS THE NO-FIT CONFIGURATION ON THE ARM OF RECORD AS OF `r7645+cc66.66`. **  70's
+`r7643_70_distances_point` ran the original recipe verbatim with `LEAFREC=1` at the DISTANCES' point
+-- CRH0 68.60, CROM 0.2973, built-in omega_b and n_s -- and banked it as
+`cc66_cr_x_h686_L2000_leafrec1_distances`.  The CONTROL does not move: `LEAFREC` does not reach it
+(3.6e-16, `r7641`), and 70 scored the same control for both rows of its own headline table.
+⛭ ** AND THIS RECEIPT REPRODUCES 70's BANK FIGURE RATHER THAN QUOTING IT: ** scored here with this
+receipt's own operator and bins, the arm comes in at 502.09 lensed, 2.71 per bin, x2.3456 -- against
+70's 502.1, 2.71 and 2.346x.  *That agreement is the check that matters, because the one error in
+this pass was a POINTER error: `cc66`'s earlier 1.41 read the REFITTED file through the no-fit
+pointer, and only scoring the same file two ways catches that.*
+⌗ *The arm's `l_A` is bit-identical across the move, 302.8891 both ways, because `LEAFREC` does not
+touch the background -- so what moves the spectrum here is the recombination treatment alone and not
+the distances.*
+
 RECEIPT -- P15: ** THE 185-BIN FULL-RANGE LENSED COMPARISON -- THE CONFIGURATION THE CORPUS'S OWN
-chi^2 VALUES ARE QUOTED ON -- PUTS THE CROSSING ARM AT 2.98 PER BIN AGAINST THE CONTROL'S 1.16.
-** THAT IS x2.57, AND IT IS WORSE THAN THE x2.0 THE 133-BIN UNLENSED COMPARISON SHOWED. **
+chi^2 VALUES ARE QUOTED ON -- PUTS THE CROSSING ARM AT 2.71 PER BIN AGAINST THE CONTROL'S 1.16.
+** THAT IS x2.35, AND IT IS STILL WORSE THAN THE x2.0 THE 133-BIN UNLENSED COMPARISON SHOWED. **
 
 ** ⇒ SO THE NUMBER r6760+cc66.7 REPORTED WAS THE MORE FAVOURABLE OF THE TWO, AND THIS ONE IS THE
 ONE THE PAPER MUST QUOTE. **  The ratio moves because lensing is worth proportionally MORE to the
-control (a factor 3.25 reduction) than to the arm (2.13), which widens the gap rather than closing
-it.
+control (a factor 3.25 reduction) than to the arm (2.25), which widens the gap rather than closing
+it.  ⛔ *On the namesake arm the arm's reduction was 2.13 and the ratio x2.57; the arm of record
+costs the arm less in absolute chi^2 and so narrows the ratio to x2.35, an 8.8 per cent improvement
+that does NOT change which comparison the paper must quote.*
 
 *** AND THE CAVEAT THIS RECEIPT WAS COMMISSIONED WITH DOES NOT BITE, WHICH IS SAID HERE BECAUSE IT
 WAS SAID IN ADVANCE. ***  `P15_derived_lensing_on_the_lcdm_arm` measured the instrument's LCDM arm
@@ -71,7 +87,16 @@ def load(tag):
 print("=" * 104)
 print("  PART 1 -- ** THE BIN COUNT AND THE OPERATOR **")
 print("=" * 104)
-ls_a, Dl_a, lA_a = load('cr_x_h686_L2000')
+# ⛭⛭ r7645+cc66.66: ** THE ARM MOVES TO THE NO-FIT CONFIGURATION ON THE ARM OF RECORD. **
+#   *70's `r7643_70_distances_point` banked the original recipe run verbatim with `LEAFREC=1` at the
+#   DISTANCES' point -- CRH0 68.60, CROM 0.2973, the built-in omega_b and n_s -- as
+#   `cc66_cr_x_h686_L2000_leafrec1_distances`.  That is the no-fit configuration this receipt is
+#   about, now on the arm of record.*
+#   ⌗ ** THE CONTROL DOES NOT MOVE, and that is measured rather than assumed: ** `LEAFREC` does not
+#   reach the control (3.6e-16, `r7641`), and 70 scored the SAME control for both rows of its
+#   headline table.  *A move in PART 4 would mean I had re-pointed the control by mistake.*
+_ARM = 'cr_x_h686_L2000_leafrec1_distances'
+ls_a, Dl_a, lA_a = load(_ARM)
 ls_c, Dl_c, lA_c = load('lcdm_L2000')
 mb = CS.bin_spectrum(ls_a, Dl_a)
 ok = np.isfinite(mb)
@@ -142,8 +167,22 @@ print(f"""
   other. ***  *Both are stated here so neither can be picked for being the kinder.*""")
 if aL / cL <= au / cu:
     fail.append("the lensed ratio is not worse than the unlensed one -- PART 3's claim is wrong")
-if abs(aL / cL - 2.57) > 0.15:
-    fail.append(f"the lensed ratio is {aL / cL:.2f}x, not the ~2.57 claimed")
+# ⛔⛭ r7645+cc66.66: ** RE-PINNED AT THE NO-FIT CONFIGURATION'S OWN VALUE ON THE ARM OF RECORD. **
+#   *The 2.57 was the namesake arm's and this gate was set on it.  70 measured 2.346 for this
+#   configuration with this receipt's own operator; scored here it is 2.3456.*  ⇒ ** The tolerance
+#   goes from 0.15 -- which was six per cent of the figure and would have admitted the namesake's
+#   value -- to 0.01, which is inside `check_figures_pinned`'s own allowance and would not. **
+if abs(aL / cL - 2.3456) > 0.01:
+    fail.append(f"the lensed ratio is {aL / cL:.4f}x, not the 2.3456 this configuration gives")
+# ⛭ ** AND 70's BANK FIGURE IS REPRODUCED RATHER THAN TAKEN, which is the check that would have
+#   caught the one pointer error in this pass (`cc66`'s 1.41 on the refitted file). **
+if abs(aL - 502.1) > 0.5 or abs(aL / an - 2.71) > 0.005:
+    fail.append(f"the arm scores {aL:.2f} ({aL / an:.3f} per bin), not 70's 502.1 and 2.71 -- "
+                f"the same file scored two ways must agree")
+# ⌗ *and the background is unchanged across the move, which is why this is a recombination result*
+if abs(lA_a - 302.8891) > 5e-4:
+    fail.append(f"the arm's l_A is {lA_a:.4f}, not the 302.8891 the namesake also carries -- "
+                f"LEAFREC must not touch the background")
 
 print()
 print("=" * 104)
@@ -169,6 +208,34 @@ print(f"""
 if cu / CAMB_U > 1.5:
     fail.append(f"the control is {cu / CAMB_U:.2f}x CAMB unlensed -- the caveat DOES bite and "
                 "PART 4 may not withdraw it")
+
+# ===================================================================================================
+# ⛭⛭ r7645+cc66.66: ** EVERY COMPUTED FIGURE THIS RECEIPT'S `INDEX.md` ROW PRINTS IS PINNED HERE,
+#   TWO-SIDED, IN THE `abs(x - c) < t` FORM. **
+#   ⛔ *This receipt's own gates are written `if abs(x - c) > tol: fail.append(...)`, which is a
+#   two-sided pin in substance -- but `check_figures_pinned` looks for `abs(.. c ..) < t` and does
+#   NOT recognise the `> tol`-and-fail form, so every figure the row printed read as unpinned.  That
+#   is a real limitation of the detector and not of the gates; rather than rewrite this receipt's
+#   style I state the row's guarantee in the form the guard verifies.*
+print()
+print("  THE FIGURES THE `INDEX.md` ROW PRINTS, PINNED TWO-SIDED:")
+print(f"    arm (no-fit, arm of record): unlensed {au:.2f}, lensed {aL:.2f}, {aL / an:.3f} per bin, "
+      f"ratio {aL / cL:.4f};  l_A {lA_a:.4f}")
+print(f"    control (unmoved): unlensed {cu:.1f}, lensed {cL:.2f}, {cL / cn:.2f} per bin")
+print(f"    lensing's reduction: control x{cu / cL:.2f}, arm x{au / aL:.2f};  "
+      f"unlensed ratio {au / cu:.4f}")
+_PIN = (
+    abs(aL / cL - 2.3456) < 1e-4
+    and abs(aL - 502.09) < 5e-3 and abs(aL / an - 2.714) < 5e-4
+    and abs(au - 1129.76) < 5e-3 and abs(au / cu - 1.6233) < 1e-4
+    and abs(cu - 695.97) < 5e-3 and abs(cL - 214.06) < 5e-3
+    and abs(cL / cn - 1.157) < 5e-4
+    and abs(cu / cL - 3.2513) < 1e-4 and abs(au / aL - 2.2501) < 1e-4
+    and abs(lA_a - 302.8891) < 5e-5
+)
+if not _PIN:
+    fail.append("a figure the `INDEX.md` row prints is not what this receipt computes -- the row's "
+                "numbers must fail this receipt when they are wrong")
 
 print()
 print("=" * 104)

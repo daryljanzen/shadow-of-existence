@@ -11,10 +11,16 @@ still `$0.11/2.98/4.97/6.49$`, and its sky residual still `$-0.05/-1.41/-2.97/+5
 does not move" holds here as an arithmetic identity in a receipt that reads both arms, rather than as an
 assurance taken from the bank's manifest.*
 
-⛭ ** ARM KEYS READ: ** `f__cr` and `rs_leaf__cr` out of `r6929_geometry_leafrec1`, and
-`ls__comb_cr_f0` / `ls__comb_cr_f1` / `Dl__comb_cr_f0` / `Dl__comb_cr_f1` out of
-`r6929_scan_cr_leafrec1`.  *Named under node 69's `r7643` arm-key rule: a receipt reading a two-arm
-bank by key suffix cannot otherwise be audited for which arm it read.*
+⛭ ** ARM KEYS READ: ** `f__cr_leafrec1` and `rs_leaf__cr_leafrec1` out of
+`r6929_geometry_leafrec1`, and `ls__comb_cr_f0` / `ls__comb_cr_f1` / `Dl__comb_cr_f0` /
+`Dl__comb_cr_f1` out of `r6929_scan_cr_leafrec1`.  *Named under node 69's `r7643` arm-key rule: a
+receipt reading a two-arm bank by key suffix cannot otherwise be audited for which arm it read.*
+⛭⛭ ** AND THE RULE NAMES A KEY, NOT AN ARM, WHICH IS HOW THIS RECEIPT STILL WENT WRONG
+(`cc66.68`). **  *`r7643`+70's fold re-keyed the geometry sibling so that `__cr` became the
+NAMESAKE's and the arm of record moved to `__cr_leafrec1`.  This declaration then read `f__cr` and
+`rs_leaf__cr` -- accurate about the code, and naming the namesake's arm, with nothing in the rule to
+say so.  The keys above are the arm of record's AT THE BANK AS IT NOW STANDS, and gate ⒪ reads the
+namesake file alongside to hold that correspondence rather than restate it.*
 
 ** WHY IT EXISTS. **  `r6941`'s order: `cc66.44` closed the clock route, so what is left undecomposed
 is the fourth peak -- the decisive run reporting $222/538/818/1134$ against the sky's
@@ -146,7 +152,8 @@ ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)
 SP = os.path.join(ROOT, 'computations', 'beyond_the_wall', 'spectra')
 NEED = ('r6941_fine_lcdm.npz', 'r6941_fine_cr_leafrec1.npz',
         'r6941_fine_cr_visleaf_leafrec1.npz', 'r6929_scan_cr_leafrec1.npz',
-        'r6929_geometry_leafrec1.npz', 'cc66_r185_verify_lcdm.npz',
+        'r6929_geometry_leafrec1.npz', 'r6929_geometry.npz',
+        'cc66_r185_verify_lcdm.npz',
         'cc66_r185_verify_cr_leafrec1.npz')
 for _n in NEED:
     check(f"the bank this receipt reads is present: `spectra/{_n}`",
@@ -165,22 +172,30 @@ F = {t: np.load(os.path.join(SP, _FINE[t])) for t in ('lcdm', 'cr')}
 V = np.load(os.path.join(SP, 'r6941_fine_cr_visleaf_leafrec1.npz'))
 C = {t: np.load(os.path.join(SP, _VER[t])) for t in ('lcdm', 'cr')}
 S = np.load(os.path.join(SP, 'r6929_scan_cr_leafrec1.npz'))
-
-class _ArmOfRecordKeys:
-    """r7645 (69): `r6929_geometry_leafrec1` was re-keyed at r7643+70.1 -- its `__cr` keys now carry the
-    NAMESAKE arm and the arm of record sits under `__cr_leafrec1`.  This view reads every `X__cr` as
-    `X__cr_leafrec1` where the file carries it, so this receipt keeps reading the arm of record."""
-    def __init__(self, z):
-        self._z = z
-        self.files = z.files
-    def __getitem__(self, k):
-        if k.endswith('__cr') and (k + '_leafrec1') in self._z.files:
-            return self._z[k + '_leafrec1']
-        return self._z[k]
-    def __contains__(self, k):
-        return k in self._z.files
-
-GE = _ArmOfRecordKeys(np.load(os.path.join(SP, 'r6929_geometry_leafrec1.npz')))
+GE = np.load(os.path.join(SP, 'r6929_geometry_leafrec1.npz'))
+# ---------------------------------------------------------------------------------------------------
+#   ⚭⚭ r7645+cc66.68: ** AND THE GEOMETRY SIBLING IS A SUPERSET OF ITS NAMESAKE, SO `__cr` IS THE
+#   NAMESAKE'S. **  *r7643+70's fold re-keyed `r6929_geometry_leafrec1` AFTER this receipt was
+#   re-pointed against r7641's keying, where `__cr` DID hold the arm of record.  The arm of record now
+#   lives under `__cr_leafrec1`, and `__cr` carries the namesake's values BIT-IDENTICALLY -- so reading
+#   `__cr` out of the sibling returns the NAMESAKE, silently, on numbers that are internally
+#   consistent.  That is what it did, on four receipts, for one revision; only the pins written against
+#   the arm's own values caught it.  The geometry arm key is therefore named ONCE, below, and the
+#   convention is GATED rather than assumed -- point it back at `cr` and gate ⒪ fails.*
+# ---------------------------------------------------------------------------------------------------
+_GN = np.load(os.path.join(SP, 'r6929_geometry.npz'))   # the namesake, read ONLY to gate the convention
+_GARM = 'cr_leafrec1'                                   # the arm of record's key IN THE GEOMETRY BANK
+_gsup = sum(1 for k in _GN.files if k in GE.files and np.array_equal(_GN[k], GE[k]))
+_gmov = sum(1 for k in _GN.files if k.endswith('__cr') and f'{k}_leafrec1' in GE.files
+            and not np.array_equal(_GN[k], GE[f'{k}_leafrec1']))
+check("⒪ the geometry sibling is a SUPERSET of its namesake -- `__cr` IS the namesake's, bit for bit, "
+      "and the arm of record is `__cr_leafrec1`; read the wrong key and the namesake comes back silently",
+      _gsup == len(_GN.files) == 28 and _gmov == 12
+      and abs(float(_GN['cs__cr'][0]) - 0.3967327262904088) < 1e-12
+      and abs(float(GE[f'cs__{_GARM}'][0]) - 0.3951353109255077) < 1e-12,
+      f"{_gsup} of {len(_GN.files)} namesake keys bit-identical, {_gmov} of 14 arm keys moved; "
+      f"dr_s/dchi at f=0 {float(_GN['cs__cr'][0]):.7f} (namesake) -> "
+      f"{float(GE[f'cs__{_GARM}'][0]):.7f} (arm of record)")
 
 SKY = np.array([220.4, 537.7, 817.3, 1123.9])   # P15 sec:intro's own locator on plik_lite TT
 SKY_SIG4 = 2.36                                 # PO-47: the sky's fourth peak, 1121.9 +- 2.36
@@ -374,8 +389,8 @@ P0 = FINE['cr']
 P1 = peaks_sub(V['ls__comb_f1'].astype(float), V['Dl__comb_f1'])
 I0 = peaks_sub(V['ls__inj_f0'].astype(float), V['Dl__inj_f0'])
 I1 = peaks_sub(V['ls__inj_f1'].astype(float), V['Dl__inj_f1'])
-_rs = GE['rs_leaf__cr']
-REL = float(_rs[0] / _rs[int(np.argmin(np.abs(GE['f__cr'] - 1.0)))] - 1.0)
+_rs = GE[f'rs_leaf__{_GARM}']
+REL = float(_rs[0] / _rs[int(np.argmin(np.abs(GE[f'f__{_GARM}'] - 1.0)))] - 1.0)
 print(f"    the relocation through r_s(ETA_LS), common to every n: {100*REL:+.4f}%")
 print(f"    {'n':>2} {'total %':>9} {'reloc':>8} {'vis':>8} {'plasma':>9}")
 SH = []

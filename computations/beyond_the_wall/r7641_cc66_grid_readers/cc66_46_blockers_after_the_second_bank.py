@@ -87,15 +87,29 @@ check("⛭ TWO OF THE THREE BLOCKERS ARE CLEARED BY FILE: `r6941_fine_cr_visleaf
 #       restatement keeps what the gate was really for -- the keys-not-files distinction -- and reads
 #       the closure the way the sibling actually supplies it: a sibling FILE that keeps the key names
 #       and moves the `__cr` values, which is better than the `__cr_leafrec1` entries I asked for. ***
+_G29R = [r for r in ROWS if r[0] == 'r6929_geometry'][0]
+_SIB29 = np.load(os.path.join(SPEC, 'r6929_geometry_leafrec1.npz'), allow_pickle=True)
+_NAM29 = np.load(os.path.join(SPEC, 'r6929_geometry.npz'), allow_pickle=True)
+_HELD29 = all(np.array_equal(_NAM29[k], _SIB29[k]) for k in _NAM29.files if k in _SIB29.files)
+_AOR29 = [k for k in _SIB29.files if 'leafrec1' in k]
+# ⛭⛭⛭ r7645+cc66.68: ** AND THE CLOSURE FORM CHANGED UNDER THIS GATE'S PROSE AT r7643's FOLD. **
+#   *The restatement at `cc66.58` read the closure as "a sibling FILE that keeps the key names and
+#   moves the `__cr` values" -- form A, which was true of `r7641`'s file.  `r7643`'s fold replaced it
+#   with a SUPERSET: `__cr` and `__lcdm` both bit-identical to the namesake's, plus `__cr_leafrec1`
+#   keys carrying the arm.  The gate's CONDITION survived the change only because `arm_keys` reads the
+#   NAMESAKE file, where no `leafrec1` key ever appears -- so `not r[4]` stayed true for a reason
+#   unconnected to what the gate says.*  ⇒ *** So it was green on a stale premise, which is the
+#       quieter cousin of the fail-on-success this same gate carried until `.58`: the condition held
+#       while the sentence beside it became false.  It now reads the SIBLING and asserts form B. ***
 check("⛭⛭ AND THE THIRD WAS NOT CLEARED BY A FILE-LEVEL BANK EITHER, WHICH IS THE KEYS-NOT-FILES "
-      "DISTINCTION `cc66.17` ASKED FOR -- AND 70's THIRD BANK CLOSED IT IN A BETTER FORM THAN THE ASK: "
+      "DISTINCTION `cc66.17` ASKED FOR -- AND r7643's FOLD CLOSED IT AS A SUPERSET (form B): "
       "`r6929_geometry`'s arm lives as the key suffix `__cr`, so no file-level bank could reach it, and "
-      "what reached it is a sibling FILE that keeps the same key NAMES and moves the `__cr` values.  "
-      "⛔ *This gate asserted the sibling was ABSENT until `cc66.58`, which made it fail-on-success, "
-      "and it had been red since the bank landed because an instrument is in no reader set*",
-      [r for r in ROWS if r[0] == 'r6929_geometry'][0][2]
-      and [r for r in ROWS if r[0] == 'r6929_geometry'][0][3]
-      and not [r for r in ROWS if r[0] == 'r6929_geometry'][0][4],
+      "what reached it is a sibling that keeps `__cr` and `__lcdm` BIT-IDENTICAL and ADDS "
+      f"{len(_AOR29)} `__cr_leafrec1` keys.  "
+      "⛔ *This gate asserted the sibling was ABSENT until `cc66.58` -- fail-on-success, red since "
+      "the bank landed because an instrument is in no reader set -- and from `.58` to `.67` it "
+      "asserted form A, staying green only because `arm_keys` reads the namesake file*",
+      _G29R[2] and _G29R[3] and not _G29R[4] and _HELD29 and len(_AOR29) == 14,
       f"sibling {[r for r in ROWS if r[0] == 'r6929_geometry'][0][2]}, "
       f"{len([r for r in ROWS if r[0] == 'r6929_geometry'][0][3])} cr keys, "
       f"{len([r for r in ROWS if r[0] == 'r6929_geometry'][0][4])} of them arm-of-record")
@@ -108,13 +122,34 @@ _src = open(CC46, encoding='utf-8').read()
 _lines = [(i + 1, ln.strip()) for i, ln in enumerate(_src.splitlines()) if "GE[" in ln]
 for n, ln in _lines:
     print(f"    l.{n}: {ln[:92]}")
-check("⛭ `r6929_geometry` IS READ IN EXACTLY TWO ADJACENT LINES, both inside the theta_D/theta_* "
-      "clock sensitivity of ⓶ᵃ's successor -- so the receipt SPLITS rather than being wholly "
-      "blocked: ⓶ᵃ's symmetry and seven band ratios and ⓶ᶜ's sky spread read banks that have moved",
-      len(_lines) == 2 and all('GE[' in ln for _, ln in _lines)
-      and _lines[1][0] - _lines[0][0] == 1
-      and any('rD__cr' in ln for _, ln in _lines),
-      f"{len(_lines)} lines: {[n for n, _ in _lines]}")
+# ⛭⛭ r7645+cc66.68: ** RE-PINNED, BECAUSE THE RECEIPT GAINED FOUR MORE `GE[` LINES AND NONE OF
+#   THEM IS A READING. **  *`cc66.68` added a convention gate to that receipt which loads BOTH the
+#   sibling and its namesake and asserts the superset relation, so `GE[` now appears on six lines.
+#   Four are the gate; two are the reading.  The content of this gate is unchanged and is now stated
+#   over the ARM-SIDE reads alone: they must still be exactly two, still adjacent, and still the
+#   `rD`/`R_S` pair of the theta_D/theta_* clock sensitivity.*
+#: the partition is on PURPOSE and is asserted in both directions rather than assumed: a line either
+#: reads one of the three background quantities this receipt computes with -- `f`, `rD`, `R_S` -- or
+#: belongs to `cc66.68`'s superset gate, which is recognisable because it names the namesake handle
+#: `_GN` or reads `cs`, the quantity it uses to show the arm moved.  *Both counts are pinned and so is
+#: their sum, so a line that is neither, or one that drifts from one class to the other, fails here.*
+_READ = ('f__', 'rD__', 'R_S__')
+_GATE = ('_GN', 'cs__')
+_armlines = [(n, ln) for n, ln in _lines
+             if any(k in ln for k in _READ) and not any(k in ln for k in _GATE)]
+_gatelines = [(n, ln) for n, ln in _lines if any(k in ln for k in _GATE)]
+check("⛭ `r6929_geometry` IS STILL READ FOR THE ARM IN EXACTLY TWO ADJACENT LINES, both inside "
+      "the theta_D/theta_* clock sensitivity of ⓶ᵃ's successor -- so the receipt SPLITS rather than "
+      "being wholly blocked: ⓶ᵃ's symmetry and seven band ratios and ⓶ᶜ's sky spread read banks that "
+      f"have moved.  "'⌗'" *The other {len(_gatelines)} `GE[` lines are cc66.68's superset "
+      "gate, which reads the namesake on purpose and is not a reading of the arm*",
+      len(_armlines) == 2 and _armlines[1][0] - _armlines[0][0] == 1
+      and any('rD__' in ln for _, ln in _armlines)
+      and any('R_S__' in ln for _, ln in _armlines)
+      and len(_gatelines) == 4 and len(_lines) == 6
+      and len(_armlines) + len(_gatelines) == len(_lines),
+      f"{len(_armlines)} arm lines {[n for n, _ in _armlines]}; "
+      f"{len(_gatelines)} gate lines {[n for n, _ in _gatelines]}")
 check("⌗ and the receipt does name all five of its banks in a presence check, so a missing one is "
       "refused rather than silently skipped -- which is why a half re-point would announce itself",
       "the bank this receipt reads is present" in _src

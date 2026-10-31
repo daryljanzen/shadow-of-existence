@@ -142,7 +142,8 @@ SP = os.path.join(BTW, 'spectra')
 SRC = open(os.path.join(BTW, 'ACOUSTIC_two_arm.py')).read()
 SMOKE = os.path.join(BTW, 'switch_smoke.sh')
 LAUNCH = os.path.join(BTW, 'r6929_directions', 'launch.sh')
-NEED = ('r6929_scan_cr_leafrec1.npz', 'r6929_geometry_leafrec1.npz', 'r6929_noop.npz',
+NEED = ('r6929_scan_cr_leafrec1.npz', 'r6929_geometry_leafrec1.npz', 'r6929_geometry.npz',
+        'r6929_noop.npz',
         'r6925_visleaf_cr_leafrec1.npz', 'r6925_noop.npz', 'r6919_injected_lcdm.npz',
         'r6919_injected_lcdm_leafrec1.npz', 'cc66_r185_verify_lcdm.npz',
         'cc66_r185_verify_cr_leafrec1.npz', 'r6941_fine_cr_leafrec1.npz')
@@ -171,22 +172,7 @@ if FAILS:
 #   are bit-for-bit and to the `KSLICE` sum's rounding on the arm of record itself.*
 _A = '_leafrec1'
 S = np.load(os.path.join(SP, f'r6929_scan_cr{_A}.npz'))
-
-class _ArmOfRecordKeys:
-    """r7645 (69): `r6929_geometry_leafrec1` was re-keyed at r7643+70.1 -- its `__cr` keys now carry the
-    NAMESAKE arm and the arm of record sits under `__cr_leafrec1`.  This view reads every `X__cr` as
-    `X__cr_leafrec1` where the file carries it, so this receipt keeps reading the arm of record."""
-    def __init__(self, z):
-        self._z = z
-        self.files = z.files
-    def __getitem__(self, k):
-        if k.endswith('__cr') and (k + '_leafrec1') in self._z.files:
-            return self._z[k + '_leafrec1']
-        return self._z[k]
-    def __contains__(self, k):
-        return k in self._z.files
-
-GE = _ArmOfRecordKeys(np.load(os.path.join(SP, f'r6929_geometry{_A}.npz')))
+GE = np.load(os.path.join(SP, f'r6929_geometry{_A}.npz'))
 NO = np.load(os.path.join(SP, 'r6929_noop.npz'))
 N25 = np.load(os.path.join(SP, 'r6925_noop.npz'))
 VL = np.load(os.path.join(SP, f'r6925_visleaf_cr{_A}.npz'))
@@ -371,8 +357,31 @@ check("⛭⛭ ** AND THE CONTROL SIDE OF EVERY BAND RATIO IS NOT A CHOICE. **  T
 # ===================================================================================================
 print("\nPART 2 -- ⓵ THE BACKGROUND OVER THE FAMILY, AND WHICH OF ITS MOTIONS ARE RESOLVED.")
 print("-" * 100)
-fg = GE['f__cr']
-G = lambda k, a: GE[f'{k}__{a}']
+# ---------------------------------------------------------------------------------------------------
+#   ⚭⚭ r7645+cc66.68: ** AND THE GEOMETRY SIBLING IS A SUPERSET OF ITS NAMESAKE, SO `__cr` IS THE
+#   NAMESAKE'S. **  *r7643+70's fold re-keyed `r6929_geometry_leafrec1` AFTER this receipt was
+#   re-pointed against r7641's keying, where `__cr` DID hold the arm of record.  The arm of record now
+#   lives under `__cr_leafrec1`, and `__cr` carries the namesake's values BIT-IDENTICALLY -- so reading
+#   `__cr` out of the sibling returns the NAMESAKE, silently, on numbers that are internally
+#   consistent.  That is what it did, on four receipts, for one revision; only the pins written against
+#   the arm's own values caught it.  The geometry arm key is therefore named ONCE, below, and the
+#   convention is GATED rather than assumed -- point it back at `cr` and gate ⒪ fails.*
+# ---------------------------------------------------------------------------------------------------
+_GN = np.load(os.path.join(SP, 'r6929_geometry.npz'))   # the namesake, read ONLY to gate the convention
+_GARM = 'cr_leafrec1'                                   # the arm of record's key IN THE GEOMETRY BANK
+_gsup = sum(1 for k in _GN.files if k in GE.files and np.array_equal(_GN[k], GE[k]))
+_gmov = sum(1 for k in _GN.files if k.endswith('__cr') and f'{k}_leafrec1' in GE.files
+            and not np.array_equal(_GN[k], GE[f'{k}_leafrec1']))
+check("⒪ the geometry sibling is a SUPERSET of its namesake -- `__cr` IS the namesake's, bit for bit, "
+      "and the arm of record is `__cr_leafrec1`; read the wrong key and the namesake comes back silently",
+      _gsup == len(_GN.files) == 28 and _gmov == 12
+      and abs(float(_GN['cs__cr'][0]) - 0.3967327262904088) < 1e-12
+      and abs(float(GE[f'cs__{_GARM}'][0]) - 0.3951353109255077) < 1e-12,
+      f"{_gsup} of {len(_GN.files)} namesake keys bit-identical, {_gmov} of 14 arm keys moved; "
+      f"dr_s/dchi at f=0 {float(_GN['cs__cr'][0]):.7f} (namesake) -> "
+      f"{float(GE[f'cs__{_GARM}'][0]):.7f} (arm of record)")
+fg = GE[f'f__{_GARM}']
+G = lambda k, a: GE[f'{k}__{_GARM if a == "cr" else a}']
 print(f"    {'f':>6} {'eta_LS':>10} {'FWHM':>9} {'r_D':>8} {'l_A':>10} {'r_s(eta_LS)':>12} "
       f"{'dr_s/dchi':>10}   ctl dr_s/dchi")
 for i, f in enumerate(fg):

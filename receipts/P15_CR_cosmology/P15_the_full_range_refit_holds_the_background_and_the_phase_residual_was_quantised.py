@@ -1,17 +1,51 @@
 #!/usr/bin/env python3
 r"""
-RECEIPT -- P15 / `sec:refit-bound`: ** THE $185$-BIN FULL-RANGE REFIT.  WITH THE DAMPING TAIL INSIDE
-THE FIT THE CROSSING ARM'S BACKGROUND STAYS PINNED: $H_0$ MOVES $0.028\%$ AND $\Omega_m$ $0.031\%$,
-AGAINST $0.011\%$ AND $0.20\%$ ON $132$ BINS -- SO $\Omega_m$ IS HELD SIX TIMES TIGHTER AND $H_0$
-TWICE AS LOOSELY, BOTH STILL INSIDE A THIRTIETH OF A PER CENT. **
+RECEIPT -- P15 / `sec:refit-bound`: ** THE $185$-BIN FULL-RANGE REFIT, ON THE ARM OF RECORD -- AND
+THE FINDING HALF INVERTS.  $H_0$ STILL HOLDS, MOVING $0.022\%$; BUT $\Omega_m$ MOVES $2.123\%$,
+SIXTY-FOUR TIMES THE "THIRTIETH OF A PER CENT" THE CORPUS CARRIES, WHERE ON THE NAMESAKE ARM IT MOVED
+$0.031\%$. **
+
+** THIS FILE'S OWN NAME SAYS THE REFIT HOLDS THE BACKGROUND.  THE NAME IS LEFT AS IT STANDS BECAUSE
+THE PAPER CITES IT, AND IT IS THE NAMESAKE ARM'S READING. **  *`r7645`+`cc66.68` re-pointed the ARM's
+grid onto `refit_grid185_leafrec1_distances/` -- `refit_grid185/launch.sh` verbatim with `LEAFREC=1`:
+the same distances' point $(68.60, 0.2973)$ with the built-in $\omega_b$ and $n_s$, the same nine runs,
+the same launcher steps.  The CONTROL's grid does not move, and does not need to: r7641 measured
+`LEAFREC`'s reach into the control at $3.6\times10^{-16}$.  The arm's own starting point does not move
+either -- `refit_grid185_leafrec1_distances/cr_base` carries $D_M = 14011.4567$, $\ell_A = 302.8891$
+and $r_s = 145.3281$ BIT-IDENTICALLY to the namesake's, because `LEAFREC` does not touch the
+background.  What moves is the spectrum the fit is run on, and the minimum it finds.*
+  ⇒ *So the half of the corpus sentence that is about $H_0$ survives and the half about $\Omega_m$
+  fails.  `CR_framework.tex:1863` and `CR_synthesis.tex:1553` both say the arm's "expansion rate and
+  matter density stay where the baryon-acoustic distances put them, to under a thirtieth of a per
+  cent"; on the arm of record the expansion rate does and the matter density does not.  Routed to
+  node 69 in `FOR_69.md` with the replacement figures, because the landing set is 69's to land as one
+  unit.*
+
+** ⇒ AND TWO FURTHER GATES OF THIS RECEIPT TURN, EACH A MEASUREMENT RATHER THAN A TOLERANCE. **
+  ⓵ ** THE RESPONSE MODEL NO LONGER PREDICTS ITS OWN MINIMUM. **  It says $284.9$ and the real run at
+  those parameters returns $297.7$ -- a miss of $+12.1$ where the namesake's was $-0.0$.  *The reason
+  is nameable rather than mysterious: $n_s$ moves $+2.57$ grid steps on the arm of record against
+  $+1.65$ on the namesake, and the stencil's quadratic is built on $\pm1$.  The gate is kept and
+  INVERTED -- it now asserts the miss, two-sided, and asserts the step count that explains it, so a
+  stencil rebuilt wide enough to recover agreement fails here and has to be read.*
+  ⓶ ** AND ON THE RAW LOCATOR THE TWO ARMS NO LONGER RETURN THE SAME PHASE RESIDUAL **, the control's
+  $4.5\%$ against the arm's $0.7\%$, because the arm of record's raw second peak falls in the $532$
+  bin where the namesake's fell in $540$ -- the bracketing-bin coin flip measured at `cc66.68` in
+  `P15_the_locator_is_good_to_three_hundredths_and_the_fourth_peaks_residual_is_the_controls_too`,
+  where the $\ell_2$ bins agree to $0.011$ per cent against $\ell_3$'s $0.066$.  *** THE CLAIM
+  SURVIVES AND THE ARGUMENT FORM DOES NOT. ***  *That `cc66.18`'s $4.5\%$ is the grid is now carried
+  by the CONTROL alone, which goes $4.5\%$ raw to $1.6\%$ refined on one spectrum, and by the arm's
+  own swing in the other direction, $0.7\%$ to $3.7\%$.  Two spectra each moving five-fold under a
+  change of locator is the same evidence as two spectra agreeing; what is withdrawn is "both arms
+  return the same number", not "the number measures the grid".*
 
 ** ⇒ AND ONE NUMBER THIS LINE LANDED AT `cc66.18` IS CORRECTED HERE. **  The $132$-bin receipt
 reported the acoustic phase going "$2.3\%\to4.5\%$ out, WORSE".  *That $4.5\%$ was read from a peak
 locator quantised to the spectrum's own $\ell$ sampling -- `LSTEP=8` -- and at that resolution ** the
 CONTROL returns the same $4.5\%$ **, so the number could not distinguish the arms, the ranges, or
 anything else.*  With the peaks refined sub-grid (validated below against an `LSTEP=1` spectrum to
-$0.13$ in $\ell$) the crossing arm sits at ** $3.4\%$ on $185$ bins and $3.1\%$ on $132$ ** against
-** the control's $1.6\%$ **.  *** The verdict survives -- freedom does not close the phase and the arm
+$0.13$ in $\ell$) the crossing arm sits at ** $3.7\%$ on $185$ bins on the arm of record ($3.4\%$ on
+the namesake) and $3.1\%$ on $132$ ** against ** the control's $1.6\%$ **.  *** The verdict survives -- freedom does not close the phase and the arm
 carries about twice the control's residual -- but it survives on different numbers, and the ones the
 corpus is carrying are quantisation. ***
 
@@ -29,8 +63,14 @@ diagonal curvature, with the amplitude closed-form at every evaluation.  ** Each
 $k$-modes against the $132$-bin grid's $1656$ ** -- four hours of wall clock at four at a time.
 
   ** THE GRID AND THE VERIFICATION SPECTRA ARE READ, NOT PRODUCED. **  They are banked at
-  `computations/beyond_the_wall/refit_grid185/` (with the launcher, the fit driver and the
-  verification script beside them) and at `spectra/cc66_r185_verify_{lcdm,cr}.npz`.  *Every
+  `computations/beyond_the_wall/refit_grid185/` for the control (with the launcher, the fit driver
+  and the verification script beside them), `computations/beyond_the_wall/
+  refit_grid185_leafrec1_distances/` for the arm, and at `spectra/cc66_r185_verify_lcdm.npz` and
+  `spectra/cc66_r185_verify_cr_leafrec1.npz`.
+  ⛭ ** ARM KEYS READ: ** no key suffix is involved here -- the arm is selected by DIRECTORY and by
+  FILE STEM, and both are named in `GRIDS` and `_VER` below, once each.  *The sibling banks that
+  carry `__cr` and `__cr_leafrec1` side by side are the geometry family, not this one; `cc66.68`
+  found that reading `__cr` out of one of those returns the namesake silently.*  *Every
   parameter is inside the `.npz`; this file re-does the fit, the scoring and the peak analysis on
   them, and asserts the numbers rather than quoting them.*
 
@@ -70,7 +110,17 @@ def check(label, ok):
 
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-GRID = os.path.join(ROOT, 'computations', 'beyond_the_wall', 'refit_grid185')
+_BW = os.path.join(ROOT, 'computations', 'beyond_the_wall')
+# ** THE ARM'S GRID MOVES TO THE ARM OF RECORD; THE CONTROL'S DOES NOT MOVE (r7645+cc66.68). **
+#   *`refit_grid185_leafrec1_distances/` is `refit_grid185/launch.sh` verbatim with `LEAFREC=1`: the
+#   same distances' point (68.60, 0.2973, built-in omega_b and n_s), the same nine runs, the same
+#   launcher steps.  Its `cr_base` carries D_M 14011.4567, l_A 302.8891 and r_s 145.3281 BIT-IDENTICALLY
+#   to the namesake's, because LEAFREC does not reach the background -- so what moves here is the
+#   spectrum, not the point the fit starts from.  The control stays in the namesake directory, which is
+#   70's `r7639` rule and which r7641 measured at 3.6e-16.*
+GRIDS = {'lcdm': os.path.join(_BW, 'refit_grid185'),
+         'cr': os.path.join(_BW, 'refit_grid185_leafrec1_distances')}
+GRID = GRIDS['lcdm']                      # kept for the control-side reads only
 SPEC = os.path.join(ROOT, 'computations', 'beyond_the_wall', 'spectra')
 sys.path.insert(0, os.path.join(ROOT, 'computations', 'planck_tt_likelihood'))
 import chi2_of_spectrum as CS                                              # noqa: E402
@@ -104,7 +154,7 @@ def binned(ls, Dl, lens=True):
 
 
 def build(tag, lens=True):
-    z = np.load(os.path.join(GRID, f'{tag}_base.npz'))
+    z = np.load(os.path.join(GRIDS[tag], f'{tag}_base.npz'))
     ls = np.asarray(z['ls'], float)
     m0 = binned(ls, np.asarray(z['Dl'], float), lens)
     ok = np.isfinite(m0)
@@ -114,8 +164,8 @@ def build(tag, lens=True):
     mb = m0[ok]
     g, h = {}, {}
     for k in STEP:
-        zp = np.load(os.path.join(GRID, f'{tag}_{k}p.npz'))
-        zm = np.load(os.path.join(GRID, f'{tag}_{k}m.npz'))
+        zp = np.load(os.path.join(GRIDS[tag], f'{tag}_{k}p.npz'))
+        zm = np.load(os.path.join(GRIDS[tag], f'{tag}_{k}m.npz'))
         mp = binned(np.asarray(zp['ls'], float), np.asarray(zp['Dl'], float), lens)[ok]
         mm = binned(np.asarray(zm['ls'], float), np.asarray(zm['Dl'], float), lens)[ok]
         g[k] = (mp - mm) / (2 * STEP[k])
@@ -140,9 +190,9 @@ print("  PART 1 -- ** THE GRID, AND THE FIT ON IT **")
 print(BAR)
 need = [f'{t}_{s}' for t in ('lcdm', 'cr')
         for s in ['base'] + [f'{k}{sg}' for k in STEP for sg in 'pm']]
-have = [n for n in need if os.path.exists(os.path.join(GRID, f'{n}.npz'))]
+have = [n for n in need if os.path.exists(os.path.join(GRIDS[n.split('_')[0]], f'{n}.npz'))]
 check(f"all 18 grid runs are banked ({len(have)} of {len(need)})", len(have) == len(need))
-_z = np.load(os.path.join(GRID, 'cr_base.npz'))
+_z = np.load(os.path.join(GRIDS['cr'], 'cr_base.npz'))
 _ls = np.asarray(_z['ls'], float)
 _nb = int(np.isfinite(CS.bin_spectrum(_ls, np.asarray(_z['Dl'], float))).sum())
 print(f"  the grid reaches ell = {_ls[0]:.0f} to {_ls[-1]:.0f} and covers {_nb} bins, "
@@ -175,16 +225,36 @@ print("  The response model says WHERE to go; only a full run says what is there
 print("  best-fit parameters, at the same LMAXL, LSTEP and k-reach as the grid.")
 print()
 print(f"  {'':>24} {'bins':>5} {'predicted':>10} {'measured':>10} {'d':>8}")
+_VER = {'lcdm': 'cc66_r185_verify_lcdm.npz',
+        'cr': 'cc66_r185_verify_cr_leafrec1.npz'}
 VER = {}
 for tag in ('lcdm', 'cr'):
-    z = np.load(os.path.join(SPEC, f'cc66_r185_verify_{tag}.npz'))
+    z = np.load(os.path.join(SPEC, _VER[tag]))
     ls = np.asarray(z['ls'], float)
     Dl = np.asarray(z['Dl'], float)
     c, nb, _A, _lo, _hi = CS.chi2_of(ls, Dl * np.interp(ls, LG, RATIO))
     VER[tag] = (c, nb, ls, Dl, z)
     print(f"  {NAME[tag]:>24} {nb:>5d} {R[tag][1].fun:>10.1f} {c:>10.1f} {c - R[tag][1].fun:>+8.1f}")
-    check(f"{NAME[tag]}: the real run lands within 2 in chi^2 of the model's prediction",
-          abs(c - R[tag][1].fun) < 2.0)
+_MISS = {t: VER[t][0] - R[t][1].fun for t in ('lcdm', 'cr')}
+_NSTEP = R['cr'][1].x[3] / STEP['NS']
+check(f"control (LCDM): the real run lands within 2 in chi^2 of the model's prediction "
+      f"({_MISS['lcdm']:+.2f})", abs(_MISS['lcdm']) < 2.0)
+# ⛭⛭ r7645+cc66.68: ** AND ON THE ARM OF RECORD IT DOES NOT, WHICH IS THE READING AND NOT A
+#   TOLERANCE. **  *The namesake's miss was -0.0 on the same gate.  Held two-sided at the measured
+#   values, so a stencil rebuilt wide enough to recover agreement FAILS here and has to be read.*
+check("\u26d4 ** AND THE ARM OF RECORD's REAL RUN DOES NOT: the model says "
+      f"{R['cr'][1].fun:.1f} and the run returns {VER['cr'][0]:.1f}, a miss of {_MISS['cr']:+.1f} "
+      "where the namesake's was -0.0 ** -- because n_s moves "
+      f"{_NSTEP:+.2f} grid steps here against +1.65 on the namesake, and the stencil's quadratic is "
+      "built on +-1",
+      abs(VER['cr'][0] - 297.6683186940551) < 5e-3
+      and abs(R['cr'][1].fun - 284.8548182477841) < 0.02
+      and abs(_MISS['cr'] - 12.813500446271) < 0.02
+      and abs(_NSTEP - 2.573397320610702) < 5e-4)
+check("   \u2317 and the control's stencil is still good to 1.4, so the failure is the ARM's "
+      "excursion and not the method: the two arms run the same code on the same steps",
+      abs(_MISS['lcdm'] - 1.3815090359693545) < 0.02
+      and abs(R['lcdm'][1].x[3] / STEP['NS']) < 1.0)
 print()
 print(f"  ** RATIO AT THE VERIFIED MINIMUM: {VER['cr'][0] / VER['lcdm'][0]:.2f}x ** "
       f"against {R['cr'][3] / R['lcdm'][3]:.2f}x as-computed on the same bins.")
@@ -205,20 +275,33 @@ print(f"      Omega_m  {d_om:+.4f}   ({100 * d_om / 0.2973:+.3f}%)   against  0.
 print(f"      omega_b  {R['cr'][1].x[2]:+.4f}   ({100 * R['cr'][1].x[2] / 0.0224:+.2f}%)")
 print(f"      n_s      {R['cr'][1].x[3]:+.4f}   ({100 * R['cr'][1].x[3] / 0.965:+.2f}%)")
 print()
-print("  ⇒ ** WITH THE DAMPING TAIL INSIDE THE FIT THE BACKGROUND STAYS PINNED. **  Omega_m is held")
-print("  SIX TIMES TIGHTER (0.031% against 0.20%); H0 moves TWICE AS FAR (0.028% against 0.011%),")
-print("  and both are inside a thirtieth of a per cent.")
-print("  *So the answer is not 'uniformly tighter', and it is not the worry the order names either:")
-print("  the tail's leverage lands on omega_b and n_s, which move further here than on the short")
-print("  range, and the two parameters the baryon-acoustic data fix are not prised off them.*")
-check("** the crossing arm's H0 moves by under 0.05% on the full range **",
-      abs(100 * d_h0 / 68.60) < 0.05)
-check("** and Omega_m by under 0.05%, six times tighter than the 132-bin run's 0.20% **",
-      abs(100 * d_om / 0.2973) < 0.20 / 3)
-check("H0 moves FURTHER than on 132 bins, which is stated rather than smoothed over",
-      abs(100 * d_h0 / 68.60) > 0.011)
+_PH0, _POM = 100 * d_h0 / 68.60, 100 * d_om / 0.2973
+print("  \u21d2 \u26d4 ** THE EXPANSION RATE STAYS PINNED AND THE MATTER DENSITY DOES NOT. **  H0 "
+      f"moves {abs(_PH0):.3f}%,")
+print(f"  inside a thirtieth of a per cent; Omega_m moves {abs(_POM):.3f}%, which is "
+      f"{abs(_POM) / (1 / 30.):.0f} times it.")
+print("  *On the NAMESAKE arm both were inside: 0.028% and 0.031%.  So `the background stays pinned`")
+print("  -- this file's own name, and the corpus sentence at CR_framework.tex:1863 and")
+print("  CR_synthesis.tex:1553 -- is HALF the namesake arm's reading and half still true.  What the")
+print("  two arms share is where the leverage lands: omega_b and n_s move further than on 132 bins")
+print("  on both, and further still here, n_s by 2.57 steps against the namesake's 1.65.*")
+check(f"** the crossing arm's H0 still moves by under 0.05% on the full range: {abs(_PH0):.3f}% **",
+      abs(_PH0) < 0.05 and abs(_PH0 + 0.02162229341132475) < 5e-5)
+# ⛭⛭⛭ r7645+cc66.68: ** THE GATE THAT SAID Omega_m IS HELD NOW ASSERTS THAT IT IS NOT. **
+#   *Pinned two-sided at the measured per cent, not bounded, so BOTH directions fail it: a run that
+#   returns the namesake's 0.031% fails, and so does one that returns something larger again.*
+check("\u26d4 ** BUT Omega_m DOES NOT: it moves "
+      f"{abs(_POM):.3f}%, {abs(_POM) / (1 / 30.):.0f} times the `thirtieth of a per cent` the corpus "
+      "carries, where the namesake moved 0.031% **",
+      abs(_POM + 2.123134312535325) < 5e-4)
+check("   \u2317 and so the sentence splits rather than simply moving: the expansion rate half of it "
+      "survives verbatim and the matter density half is withdrawn",
+      abs(_PH0) < 1 / 30. < abs(_POM))
+check(f"H0 moves FURTHER than on 132 bins ({abs(_PH0):.3f}% against 0.011%), stated not smoothed over",
+      abs(_PH0) > 0.011)
 check("omega_b and n_s move further than on 132 bins -- the tail's leverage, where predicted",
-      abs(R['cr'][1].x[2]) > 0.0007 and abs(R['cr'][1].x[3]) > 0.0299)
+      abs(R['cr'][1].x[2] + 0.0007242802155514605) < 5e-7
+      and abs(R['cr'][1].x[3] - 0.05146794641221404) < 5e-7)
 
 # =================================================================================================
 print()
@@ -292,7 +375,7 @@ def peaks_sub(ls, Dl, n=4, order=3):
 #   READS changes its subject and that is reserved to the receipt's author.  The threshold is unchanged.*
 print("  (a) ** THE REFINEMENT IS VALIDATED BEFORE IT IS USED, on a banked LSTEP=1 spectrum that has "
       "a launcher and this cosmology's own comb. **")
-_z1 = np.load(os.path.join(SPEC, 'r6941_fine_cr.npz'))
+_z1 = np.load(os.path.join(SPEC, 'r6941_fine_cr_leafrec1.npz'))
 _l1 = np.asarray(_z1['ls'], float)
 _D1 = np.asarray(_z1['Dl'], float)
 _native = peaks_sub(_l1, _D1, order=20)
@@ -312,6 +395,18 @@ for st in (2, 4, 8):
 check("** at the grid the refit runs on, the RAW locator errs by 3 in ell and the refined one by "
       "0.15 **", _err_raw > 2.0 and _err_sub < 0.2)
 print("      ⇒ *so a phase residual of a few per cent read from raw peaks is reading the grid.*")
+# ⛭⛭ r7645+cc66.68: ** AND THE SUBSTRATE'S IDENTITY IS GATED, BECAUSE THE RESOLUTION TEST
+#   CANNOT SEE IT. **  *I perturbed this re-point back to `r6941_fine_cr` and EVERY gate in the file
+#   stayed green: the locator's error against its own LSTEP=1 reference is a property of the GRID,
+#   not of the arm, so the test is blind to which spectrum it runs on.  A re-point nothing holds is
+#   not a re-point, so the arm is pinned here by the substrate's own comb.*
+check("\u26ed ** and the substrate is the ARM OF RECORD's, which the resolution test above cannot "
+      f"see: l_A = {float(_z1['l_A']):.4f} against the namesake's 301.7986, peaks "
+      f"{' / '.join(f'{v:.2f}' for v in _native)} against 221.96 / 536.10 / 815.40 / 1130.53 **",
+      abs(float(_z1['l_A']) - 302.9430505935752) < 5e-7
+      and abs(_native[0] - 222.04654943740528) < 5e-7
+      and abs(_native[1] - 535.8455230993328) < 5e-7
+      and abs(_native[3] - 1129.7415107014076) < 5e-7)
 
 print()
 print("  (b) ** THE FOLLOW-UPS, ON BOTH LOCATORS AND BOTH ARMS. **")
@@ -327,10 +422,43 @@ for tag in ('lcdm', 'cr'):
         print(f"      {NAME[tag] + ', ' + lab:>26} {' / '.join(f'{v:.1f}' for v in P):>34} "
               f"{PH[(tag, lab)][0]:>11.1f}% {PH[(tag, lab)][1]:>10.1f}%")
 print()
-check("** ON THE RAW LOCATOR THE TWO ARMS RETURN THE SAME PHASE RESIDUAL -- which is how a number "
-      "that measures the grid shows itself **",
-      abs(PH[('cr', 'raw (as cc66.18 read it)')][0]
-          - PH[('lcdm', 'raw (as cc66.18 read it)')][0]) < 0.05)
+_RAW = 'raw (as cc66.18 read it)'
+_P2 = {t: peaks_raw(VER[t][2], VER[t][3])[1] for t in ('lcdm', 'cr')}
+# ⛭⛭⛭ r7645+cc66.68: ** THE ARGUMENT FORM IS WITHDRAWN AND THE CLAIM IS NOT. **
+#   *On the namesake arm both arms returned 4.5% raw, and that agreement WAS the evidence that the
+#   number measures the grid.  On the arm of record the raw second peak falls in the 532 bin where
+#   the namesake's fell in 540 -- the bracketing-bin coin flip measured at cc66.68 in the locator
+#   receipt, where the l_2 bins agree to 0.011 per cent against l_3's 0.066 -- so the raw readings
+#   separate, 4.5% against 0.7%.  The claim is now carried TWICE OVER instead: each arm on its own
+#   swings about five-fold between the two locators, in OPPOSITE directions, which cannot be a
+#   property of either spectrum and can only be the locator.*
+check("\u26d4 ** THE RAW LOCATOR NO LONGER AGREES BETWEEN THE ARMS: the control's "
+      f"{PH[('lcdm', _RAW)][0]:.1f}% against the arm of record's {PH[('cr', _RAW)][0]:.1f}% ** -- "
+      f"because the arm's raw l_2 falls at {_P2['cr']:.0f} where the namesake's and the control's "
+      f"fall at {_P2['lcdm']:.0f}, a whole bin",
+      #: ⛔ r7645+cc66.68: the CONTROL's raw figure is pinned by its PEAK SET and not by a float.
+      #: *`check_tilt_pins` flagged `abs(PH[('lcdm', _RAW)][0] - 4.4642...) < 5e-4` as DETACHED, and
+      #: it is right: `peaks_raw` returns abscissa values straight off the `LSTEP=8` grid, so the
+      #: control's raw residual is quantised at a quantum of 8 in ell and a smooth 5 per cent tilt
+      #: cannot move it.  The float added nothing -- `comb()` is deterministic in the peak set, which
+      #: this gate already pins -- so it is removed rather than adjudicated into a baseline.*
+      #:   ⇒ *The ARM's raw float is NOT flagged, and that is the finding rather than an accident:
+      #:   its `l_2` sits on the 0.011-per-cent coin flip, so the tilt DOES move it where it cannot
+      #:   move the control's.  It stays pinned.  The refined floats below are parabola-refined and
+      #:   tilt-reachable, which is the grid-free assertion standing beside the quantised set.*
+      abs(PH[('cr', _RAW)][0] - 0.7177288761125111) < 5e-4
+      and peaks_raw(VER['lcdm'][2], VER['lcdm'][3]) == [220.0, 540.0, 812.0, 1132.0]
+      and peaks_raw(VER['cr'][2], VER['cr'][3]) == [220.0, 532.0, 812.0, 1132.0]
+      and (_P2['cr'], _P2['lcdm']) == (532.0, 540.0))
+check("   \u21d2 ** AND THE CLAIM SURVIVES ON A STRONGER FOOTING: each arm SEPARATELY swings about "
+      f"five-fold between the two locators -- the control {PH[('lcdm', _RAW)][0]:.1f}% -> "
+      f"{PH[('lcdm', 'refined')][0]:.1f}% and the arm {PH[('cr', _RAW)][0]:.1f}% -> "
+      f"{PH[('cr', 'refined')][0]:.1f}%, in OPPOSITE directions ** -- so the number cannot be a "
+      "property of either spectrum and is the locator's",
+      PH[('lcdm', _RAW)][0] / PH[('lcdm', 'refined')][0] > 2.5
+      and PH[('cr', 'refined')][0] / PH[('cr', _RAW)][0] > 2.5
+      and abs(PH[('cr', 'refined')][0] - 3.6907637485920186) < 5e-4
+      and abs(PH[('lcdm', 'refined')][0] - 1.5572746731141507) < 5e-4)
 check("** and refined they separate: the arm carries about twice the control's **",
       PH[('cr', 'refined')][0] > 1.5 * PH[('lcdm', 'refined')][0])
 print(f"  ⇒ *** THE VERDICT SURVIVES ON DIFFERENT NUMBERS. ***  The crossing arm's phase residual is")
@@ -346,13 +474,15 @@ print(BAR)
 print("  WHAT THIS SETTLES")
 print(BAR)
 print(f"""
-  ** THE ORDER'S QUESTION IS ANSWERED. **  With the
-  damping tail inside the fit the crossing arm's background moves {abs(100 * d_h0 / 68.60):.3f}% in $H_0$ and
-  {abs(100 * d_om / 0.2973):.3f}% in $\\Omega_m$, against 0.011% and 0.20% on 132 bins:
-  ** $\\Omega_m$ six times tighter, $H_0$ twice as loose, both inside a thirtieth of a per cent. **
-  *Not uniformly tighter, and not the worry the order names either -- the background the distances
-  fix is not prised off by a spectrum that now sees the tail, and the tail's leverage lands on
-  omega_b and n_s, exactly where the 132-bin receipt said it would.*
+  ** THE ORDER'S QUESTION IS ANSWERED, AND ON THE ARM OF RECORD THE ANSWER IS HALF THE OTHER WAY. **
+  With the damping tail inside the fit the crossing arm's background moves {abs(_PH0):.3f}% in $H_0$
+  -- inside a thirtieth of a per cent, as the corpus says -- and {abs(_POM):.3f}% in
+  $\\Omega_m$, which is {abs(_POM) / (1 / 30.):.0f} times it.  ** So the expansion rate stays where the
+  distances put it and the matter density does not. **  *On the NAMESAKE arm both were inside, at
+  0.028% and 0.031%, and that is the reading the corpus carries.  What the two arms share is where
+  the leverage lands: omega_b and n_s move further than on 132 bins on both, and further still here.
+  The worry the order named -- that the tail would prise the background off -- turns out to be half
+  right, and the half it is right about is the one the baryon-acoustic data constrain least.*
 
   ** AND IT COSTS {VER['cr'][0] / VER['lcdm'][0]:.2f}x THE CONTROL ** ({VER['cr'][0] / VER['cr'][1]:.2f} per bin against {VER['lcdm'][0] / VER['lcdm'][1]:.2f}), against
   {R['cr'][3] / R['lcdm'][3]:.2f}x as-computed.  *Freedom closes about a third of the gap and leaves the rest; the arm is
@@ -363,6 +493,10 @@ print(f"""
   be seen and I did not look for it: the CONTROL returns the same 4.5%.*  Refined -- with the
   refinement validated against an LSTEP=1 spectrum to 0.13 in ell before use -- the arm sits at
   {PH[('cr', 'refined')][0]:.1f}% against the control's {PH[('lcdm', 'refined')][0]:.1f}%.  ** The verdict does not change and the numbers do. **
+  \u26d4 *And on the arm of record the EVIDENCE changes too: the two arms no longer return the same
+  raw number ({PH[('lcdm', _RAW)][0]:.1f}% against {PH[('cr', _RAW)][0]:.1f}%, the arm's raw l_2 falling a
+  whole bin lower), so `both arms return 4.5%` is withdrawn as an argument.  Each arm swings about
+  five-fold between the locators on its own, in opposite directions, which carries it further.*
 """)
 
 print(BAR)
