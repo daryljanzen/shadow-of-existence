@@ -22838,3 +22838,58 @@ does not narrow the row**: what it adds is that the disagreement's **size** surv
 instrument at the digits the papers print, now on the distances'-point figures as well as the old
 ones. **No paper is edited, no figure moves, no parameter is pinned, no quote-pin key is minted, no
 new instrument is added, and no receipt of `70`'s or cc66's is touched.**
+
+## `r7648` (60) — **THE ORDER'S NEGATIVE IS REACHED: THE CLASS IS cc66'S ONE INSTANCE. BUT IT WAS NAMED BY THE WRONG PROPERTY — THE DISCRIMINATOR IS PINNED AGAINST UNPINNED, NOT ABSOLUTE AGAINST RELATIVE**
+
+⛔ **Your reachable negative fires.** Three nets, each registered before it ran, each seeded on cc66's
+defect in both directions: on the tree as it stands there is **no adjudicated instance outside
+`r7645+cc66.69`'s**. `1140` receipts parsed; pass 1 (raw bound + the receipt's own normaliser) gave
+**2** candidates and both read as sound; pass 3 (the right net, below) gives **0** hits while its seed
+proves the net is live — cc66's `abs(d_om) > 0.01` **is** a hit and the repaired form is not.
+
+⚑⚑ **AND THE FINDING THAT MATTERS MORE THAN THE COUNT: the label is many-to-one and almost everything
+it covers is sound.** All **93** of pass 2's candidates — all **30** on a real scale — are **pinned at
+a measured value**, which makes an absolute bound two-sided and failable. `abs(dlnob + 0.305) < 0.005`
+is *exactly half a printed digit* of the paper's `ω_b^{−0.31}`, with the per-cent claim held by its own
+gate on the next line; `abs(Om_b − 0.1954) < 0.005` has its relative claim held separately at
+`±1.0` points of `−36.35%`; `abs(ratio − 1.72) < 0.05` fails on any wrong run. cc66's was **one-sided,
+pinned at nothing**. ⇒ ***The property that makes a bound unable to fail for its claim is being
+UNPINNED; `absolute` is only how the one instance happened to present.*** *Before two shapes are
+identified by a label, check how many-to-one the label is on the object.* ⌗ **Consequence for you:**
+the corpus holds **1877** unpinned absolute bounds, of which **1749** are never named relatively by
+their receipt and **128** carry no scale — **so a static rule can judge essentially none of them**, and
+the forward protection against this defect is not a sweep at all but the convention cc66 repaired to,
+a bound pinned two-sided at its measured value, which `check_figures_pinned` already enforces wherever
+the figure is printed. **Recommendation: take that as the rule and do not commission a gate for the
+class** — it would be an instrument that cannot see its own subject.
+
+⛔ **THREE OF THIS REVISION'S OWN RULE CONDITIONS WERE WITHDRAWN, EVERY ONE CAUGHT BY AN ARM REGISTERED
+BEFORE ITS PASS RAN, AND ALL THREE ARE KEPT BESIDE THEIR CORRECTIONS.** ① The first net's own declared
+limit turned out to **be** the net: it saw 2 of 4568 absolute bounds, `0.04%`, so its silence measured
+its reach and not the corpus — reported, then widened under `r7648+60.1`. ② **Arm ⑦ MISSED**: the
+amendment tried to automate the claim side from the receipt's printed per-cent and read a field's
+*scale constant* as the printed figure — `P = 0.31` where the field prints `−36.35` — because *a
+printed field is an EXPRESSION, not a number*. There is no static reading of a printed value, which is
+what the first registration said when it put the claim side in a human reading. ③ **Arm ⑪ MISSED**:
+the third pass first admitted no-scale cases as hits and returned `128`, nearly all of them bounds like
+`abs(_rate_a) < 1e-12`, tight and plainly not fail-open — *a bound whose relative size is unknown has
+not been judged*, so they are blind; the correction can only remove hits, never manufacture one.
+⌗ *Three failures rather than one clean sweep, which is what registering them was for.*
+
+⌗ **ARM ⑤ IS REPORTED VACUOUS AND NOT AS A PASS.** It registered that every hit in this seat's own
+receipts would be repaired here and made to fail on what the old bound let through. The 93 candidates
+sit in 40 receipts — **89 in `P15_CR_cosmology`, 4 in `L557/R1_…`, none in this seat's `S`-band** — and
+pass 3's hit set is empty, so **there is no instance to score**. *An arm with no instance is not a
+pass*, which is the same rule as a guard that cannot fail on the data it is given. ⇒ Arm ④ held: the
+deliverable is the routed list, which is in `candidates.json` whole, all three passes, so the
+adjudication can be checked rather than taken. **Nothing of cc66's or `70`'s is touched** and cc66's
+own receipt is left to cc66.
+
+⚠ **`r7577`'s standing rule applies**: the text above says what is open, so it lands with a re-read of
+the rows at issue or not at all. **Re-read in this turn.** `PO-87` carries **nineteen** keyed rows in
+`r7577_69`'s `items_keyed.tsv`, all **OPEN** — **two** in `P6`, one in `P7`, **eleven** in `P15` and
+**five** in `P18`, unchanged in count since `r7646`. This revision **does not narrow any of them**: it
+bears on whether the figures those rows carry are *held*, not on what they say, and its answer there is
+that the shape you asked about is already governed by a convention rather than needing a new gate.
+**No paper is edited, no figure moves, no parameter is pinned, no quote-pin key is minted, no gate,
+ledger or census is added, and no receipt of `70`'s or cc66's is touched.**

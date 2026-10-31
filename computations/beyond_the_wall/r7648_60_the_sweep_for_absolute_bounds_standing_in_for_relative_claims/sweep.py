@@ -341,6 +341,141 @@ json.dump(dict(pass1=[dict(receipt=r, var=v, bound=t, pct=p, scale=s, line=l)
                reach=reach, blind_pass1=blind_total, blind_pass2=blind2),
           open(os.path.join(HERE, 'candidates.json'), 'w'), indent=1)
 
+
+# ---------------------------------------------------------------- PART 3, the third pass (r7648+60.2)
+print("\nPART 3 -- ⚑⚑ THE CLASS'S DISCRIMINATOR IS **PINNED AGAINST UNPINNED**, NOT ABSOLUTE")
+print("          AGAINST RELATIVE -- registered as `r7648+60.2` before being run")
+print("  *Every candidate read above is PINNED AT A MEASURED VALUE, which makes an absolute bound")
+print("  two-sided and failable: one is exactly half a printed digit of its claim, one has its")
+print("  relative claim held by its own per-cent gate on the next line, one fails on any wrong run.")
+print("  cc66's was `abs(d_om) > 0.01` -- ONE-SIDED, pinned at nothing.  ⇒ `absolute bound` is a")
+print("  many-to-one label on this object and almost everything it covers is sound; what cannot fail")
+print("  for its claim is the UNPINNED bound.  Before two shapes are identified by a label, check how")
+print("  many-to-one the label is on the object.*")
+
+
+def unpinned_bounds(tree, consts):
+    """[(V, t, line)] -- abs(V) <|> t with NO additive constant inside the abs"""
+    out = []
+    for n in ast.walk(tree):
+        if not isinstance(n, ast.Compare) or len(n.comparators) != 1:
+            continue
+        if not isinstance(n.ops[0], (ast.Lt, ast.LtE, ast.Gt, ast.GtE)):
+            continue
+        for a, b in ((n.left, n.comparators[0]), (n.comparators[0], n.left)):
+            if not (isinstance(a, ast.Call) and _fname(a) in ('abs', 'fabs') and a.args):
+                continue
+            t = _lit(b, consts)
+            if t is None or t <= 0.0:
+                continue
+            inner = a.args[0]
+            if _has_div_or_100(inner, consts):
+                continue
+            pinned = any(isinstance(m, ast.BinOp) and isinstance(m.op, (ast.Sub, ast.Add))
+                         and (_lit(m.left, consts) is not None or _lit(m.right, consts) is not None)
+                         for m in ast.walk(inner))
+            if pinned:
+                continue
+            for v in _names(inner):
+                out.append((v, t, getattr(n, 'lineno', 0)))
+    return out
+
+
+def third_pass(src):
+    try:
+        tree = ast.parse(src)
+    except SyntaxError:
+        return [], 0
+    consts = {}
+    for n in ast.walk(tree):
+        if isinstance(n, ast.Assign) and len(n.targets) == 1 and isinstance(n.targets[0], ast.Name):
+            vv = _lit(n.value, {})
+            if vv is not None:
+                consts[n.targets[0].id] = vv
+    norm, pcts = normalisers(tree, consts), printed_pcts(tree)
+    hits, seen, noscale = [], 0, 0
+    for v, t, line in unpinned_bounds(tree, consts):
+        seen += 1
+        if not (v in norm or v in pcts):          # ii'' -- the receipt never names it relatively
+            continue
+        if v not in norm:
+            # ⛔ NAMED RELATIVELY BUT WITH NO SCALE, so iii'' CANNOT BE APPLIED.  The first form of
+            # this pass admitted these as hits and arm (11) caught it: 128 came back, nearly all of
+            # them bounds like `abs(_rate_a) < 1e-12`, which are TIGHT and obviously not fail-open.
+            # A bound whose relative size is unknown has not been judged, so it is BLIND, not a hit.
+            # The correction is restrictive -- it can only remove hits -- and it is what iii''
+            # already said by `where a scale is available`.
+            noscale += 1
+            continue
+        S = min(norm[v])
+        pct = 100.0 * t / S
+        if pct <= PCT_FLOOR:
+            continue
+        hits.append((v, t, pct, S, line))
+    return hits, seen, noscale
+
+
+H, seen_total, noscale_total = [], 0, 0
+for p in files:
+    src = open(p, encoding='utf-8', errors='replace').read()
+    h, sn, ns = third_pass(src)
+    seen_total += sn
+    noscale_total += ns
+    for v, t, pct, S, line in h:
+        H.append((os.path.relpath(p, ROOT), v, t, pct, S, line))
+print(f"\n      UNPINNED absolute bounds in the corpus            : {seen_total}")
+print(f"      of those, named relatively but with NO scale, so")
+print(f"      ⅲ″ could not be applied -- BLIND, not judged       : {noscale_total}")
+print(f"      ** THE HITS: named relatively, scale known, over one per cent ** : {len(H)}")
+print()
+print("  ⛔ ** ARM ⑪ FAILED FIRST AND THAT IS WHY THE BLIND ROW ABOVE EXISTS. **  The first form of")
+print("  this pass admitted the no-scale cases as hits and returned 128, nearly all of them bounds")
+print("  like `abs(_rate_a) < 1e-12` -- TIGHT, and obviously not fail-open.  *A bound whose relative")
+print("  size is unknown has not been judged.*  ⇒ They are blind, which is what ⅲ″ already said by")
+print("  `where a scale is available`; the correction can only REMOVE hits, never manufacture one.")
+_sb, _, _ = third_pass(_BEFORE)
+_sa, _, _ = third_pass(_AFTER)
+check("⛭ ARM ⑩ -- the seed: cc66's pre-repair `abs(d_om) > 0.01` is a HIT and the repaired form is "
+      "not", any(v == 'd_om' for v, _t, _p, _s, _l in _sb) and not _sa)
+_READ = {('receipts/P15_CR_cosmology/P15_damping_reabsorption.py', 'dlnob'),
+         ('receipts/P15_CR_cosmology/M2_reabsorption_minimization.py', 'Om_b'),
+         ('receipts/P15_CR_cosmology/P15_the_ratio_is_the_onset_in_imported_units.py', 'rows')}
+_hits = {(r, v) for r, v, _t, _p, _s, _l in H}
+check("⛭ and the three candidates READ by hand come back as NON-hits, each being pinned at a "
+      "measured value -- so the adjudication is reproduced by the rule rather than asserted, which "
+      "is the lesson arm ⑦ paid for", not (_READ & _hits))
+check(f"⛭ ARM ⑪ -- the hit count is under 20 ({len(H)})", len(H) < 20)
+print(f"\n      {'per cent':>9}  {'bound':>11}  {'scale':>11}  {'variable':<16} line  receipt")
+for rel, v, t, pct, S, line in sorted(H, key=lambda r: (-(r[3] if r[3] == r[3] else 0))):
+    _p = f"{pct:>9.2f}" if pct == pct else "        —"
+    _s = f"{S:>11.6g}" if S == S else "          —"
+    print(f"      {_p}  {t:>11.5g}  {_s}  {v:<16} {line:>4}  {rel[9:][:58]}")
+
+# ---------------------------------------------------------------- PART 4, ownership
+print("\nPART 4 -- ⌗ WHOSE RECEIPTS, AND WHAT IS OWED HERE")
+import collections
+own = collections.Counter(os.path.dirname(r)[9:] for r, *_ in H)
+for k, n in own.most_common():
+    print(f"      {n:>4}  {k}")
+mine = [h for h in H if '/L_probability/S' in h[0]]
+print(f"\n      hits in this seat's own `S`-band receipts          : {len(mine)}")
+check("⛔ ARM ⑤ IS VACUOUS AND IS REPORTED AS VACUOUS, NOT AS A PASS: it registered that every hit "
+      "in this seat's own receipts would be repaired here and there is NO hit in them to repair -- "
+      "an arm with no instance to score is not a pass, which is the same shape as a guard that "
+      "cannot fail on the data it is given", len(mine) == 0)
+check("⛭ ARM ④ -- and that is the arm that predicted it: the hits are not this seat's, so the "
+      "deliverable is a ROUTED LIST and not a repair",
+      len(mine) == 0 and len(H) > 0 or len(H) == 0)
+json.dump(dict(pass1=[dict(receipt=r, var=v, bound=t, pct=p, scale=s, line=l)
+                      for r, v, t, p, s, l in sorted(ALL, key=lambda r: -r[3])],
+               pass2=[dict(receipt=r, var=v, bound=t, pin=c, bound_pct=B, printed_pct_withdrawn=P,
+                           line=l) for r, v, t, c, B, P, l in sorted(W, key=lambda r: -r[4])],
+               pass3_hits=[dict(receipt=r, var=v, bound=t, pct=p, scale=s, line=l)
+                           for r, v, t, p, s, l in H],
+               unpinned_seen=seen_total, reach_pass2=reach,
+               blind_pass1=blind_total, blind_pass2=blind2),
+          open(os.path.join(HERE, 'candidates.json'), 'w'), indent=1)
+
 print("\n" + "=" * 108)
 print(f"  {len(_fail)} failure(s)")
 for f in _fail:
