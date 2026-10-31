@@ -30158,3 +30158,59 @@ reproduces the full re-point. **The whole change is the fine reference's.***
 by measurement. **The other seven are bank-blocked**, and the asks are as `cc66.58` prices them.
 ⌗ *So what the third bank actually released is three receipts, not nine — and the two re-points that
 looked mechanical each found a statistic that does not survive the move.*
+
+---
+
+# `r7643+cc66.60` — ⛭⛭⛭ **ONE NUMBER EXPLAINS EVERY FRAGILITY THIS RE-POINT HAS FOUND, AND IT PREDICTS THE REST**
+
+I started the fourth receipt, hit nine reds at once, and stopped to ask what they had in common. They
+have a single cause, and it is measurable in one line.
+
+## ⛭⛭⛭ ⓵ THE ARM-TO-CONTROL ACOUSTIC-SCALE OFFSET IS FIVE AND A HALF TIMES LARGER ON THE ARM OF RECORD
+
+| bank family | control `l_A` | arm `l_A` | offset |
+|---|---|---|---|
+| namesake, `verify` / `fine` / `source` | `301.543` | `301.799` | **`+0.085%`** |
+| arm of record, same three | `301.543` | `302.943` | **`+0.464%`** |
+
+*Identical in all three families, so it is the arm's and not one bank's.* ⇒ *** **A factor of 5.5.**
+The namesake arm sat almost on top of the control's comb; the arm of record does not. ***
+
+## ⛭⛭ ⓶ AND THAT IS THE COMMON CAUSE OF EVERY FRAGILITY FOUND TODAY
+
+| found at | the statistic | why `0.464%` breaks it |
+|---|---|---|
+| `cc66.52` | the fixed-`$q$` variance split | compares the two arms over the same band, so it needs the combs phase-matched; at `0.464%` they drift a fiftieth of a period by `q~5` and lopsided bands become ratios of slivers |
+| `cc66.54` | the raw `LSTEP=8` reading at `l_2` | the bracketing bins tie to `0.011%`, so a `0.464%` shift lands the coin the other way — `540` becomes `532` while the apex moves a quarter of a multipole |
+| `cc66.59` | the per-band over-delivery ratio | the arm's per-band excess scatters more, passes near zero in one band, and a ratio of two small differences swings `0.56` to `5.14` |
+| **`cc66.60`, here** | the four-rung ladder's distance and period gates | nine of them assume *"the two arms' acoustic angles agree"*, with tolerances set where they agreed to `0.085%` |
+
+⇒ *** So these were not four coincidences and not four defects. **They are one fact about the arm
+meeting four statistics that were calibrated, without saying so, on an arm whose comb nearly
+coincided with the control's.** *** ⌗ *Three of the four were repaired by re-anchoring the statistic on
+each arm's OWN `l_A` -- the lobe split, the sub-bin apex, the band mean. That is the general form of
+the repair, and it was found three times before it was named once.*
+
+## ⇒ ⓷ WHAT IT PREDICTS, WHICH IS THE POINT OF NAMING IT
+
+**Any statistic that compares arm against control at fixed `$q$` or fixed `$\ell$` without
+re-anchoring on each arm's own `l_A` will move on this re-point, and the ones with a tolerance set on
+the namesake arm will fail it.** *That is a testable class, not an intuition: it is the reason to read
+a re-pointed receipt's reds as a form before reading them as findings, and it tells me what to look for
+first in each remaining receipt rather than discovering it nine gates at a time.*
+
+## ⛔ ⓸ AND WHAT I DID WITH THE RECEIPT THAT FOUND IT
+
+`the_acoustic_contrast_…`'s physics side re-points cleanly -- source, kcont and verify all have
+siblings -- and its `SRCSAVE`-is-inert identity cannot, pairing `r6911_noop` against
+`r6893_switch_screen_{t}` exactly as `cc66.57`'s did. ⛔ *But the nine reds are its four-rung ladder,
+and that is a re-derivation rather than a re-point: the distances, both acoustic periods, the
+resampling control, the source-ratio direction, the eta-integration step and the gap-is-not-a-
+definition sweep all read arm against control at fixed abscissa.*
+
+⇒ *** **I reverted it rather than leave it re-pointed and red, or re-pin nine tolerances in one pass
+without reading each.** *** *The file is back to its namesake state and green; nothing is half-moved.
+It is the next piece of ordered work, and its cost is now known: nine gates, each of which has to be
+read for whether the `0.464%` moved the STATISTIC or the FINDING -- which is the distinction the three
+repairs above turned on, and getting it wrong in either direction is how a re-point publishes the
+wrong thing.*
