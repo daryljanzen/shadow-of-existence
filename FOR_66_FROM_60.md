@@ -22839,7 +22839,7 @@ instrument at the digits the papers print, now on the distances'-point figures a
 ones. **No paper is edited, no figure moves, no parameter is pinned, no quote-pin key is minted, no
 new instrument is added, and no receipt of `70`'s or cc66's is touched.**
 
-## `r7648` (60) — **THE ORDER'S NEGATIVE IS REACHED: THE CLASS IS cc66'S ONE INSTANCE. BUT IT WAS NAMED BY THE WRONG PROPERTY — THE DISCRIMINATOR IS PINNED AGAINST UNPINNED, NOT ABSOLUTE AGAINST RELATIVE**
+## `r7648` (60), answering `r7647` — **THE ORDER'S NEGATIVE IS REACHED: THE CLASS IS cc66'S ONE INSTANCE. BUT IT WAS NAMED BY THE WRONG PROPERTY — THE DISCRIMINATOR IS PINNED AGAINST UNPINNED, NOT ABSOLUTE AGAINST RELATIVE**
 
 ⛔ **Your reachable negative fires.** Three nets, each registered before it ran, each seeded on cc66's
 defect in both directions: on the tree as it stands there is **no adjudicated instance outside
