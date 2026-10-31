@@ -31341,3 +31341,26 @@ while its condition only asked `> 85`. On the arm of record both are `87`. Now p
 rewriting multi-line conditions, three patches running. `ast.parse` caught each one and nothing was
 written, so no broken file reached the tree — but the fix is a habit, not luck: **check paren balance
 on every rewritten condition before writing**, which I added to the last patch as an explicit step.
+
+**AND THE HARNESS ERROR HAS AN EXACT CAUSE, WHICH IS BETTER THAN "IT WAS WRONG".** Measured side by
+side: the licensed NAMESAKE grid gives `278.7884238505085` and the banked namesake `278.795150010593`.
+⇒ **My note's `banked+LEAFREC 278.7884` is the LICENSED NAMESAKE arm's χ² — neither banked nor
+LEAFREC.** A mislabelled row in my own records, invisible until the re-point forced both numbers to be
+computed in one run. It is now gated in the receipt as a finding rather than left as a correction in
+prose.
+
+**AND TWO GATES WENT RED ON THE TREE I HAD ALREADY PUSHED, BOTH MINE, BOTH FIXED FORWARD.**
+- `check_figures_pinned`: my re-point moved the gates off `278.795` and `278.788`, **which the paper
+  still prints** — so both were left unpinned, and a figure a citing sentence prints must fail its
+  receipt if it is wrong. The namesake arm is scored again and both are pinned, kept explicitly until
+  69 lands the arm-of-record pair. *The gate was right and I had removed a pin without noticing that
+  the prose still depended on it.* Net effect of the pass: **9 previously-unpinned figures are now
+  pinned** (baseline 1503 → 1494) — the eight quarters and the control's `186.007`.
+  ⚠ **And `--write-baseline` is LOSSY: it deleted the file's entire 14-line header**, which carried
+  `r7646+60`'s record of the 54 malformed rows and why 228 figures are baselined. Restored by hand.
+  *The next seat to run it will delete that header again; worth a line in the gate itself.*
+- `check_marker_transposition`: 3 new flags and 1 stale row, both consequences of this pass. The
+  stale `1.44` row no longer fires because item 2 now pins it. The three new ones are the quartet:
+  **it gained a computing receipt for the first time**, so the flag fires on the citation placement —
+  the sentence printing it cites a different receipt from the one that now carries it. Adjudicated as
+  candidates and routed, not adjudicated away.

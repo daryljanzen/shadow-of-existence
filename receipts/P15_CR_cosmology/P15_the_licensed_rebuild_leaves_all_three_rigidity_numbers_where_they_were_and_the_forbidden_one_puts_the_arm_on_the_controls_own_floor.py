@@ -113,6 +113,28 @@ head("A.  r7097's THREE NAMED NUMBERS, ON THE BANKED GRID, BEFORE ANYTHING IS CO
 
 V = {(nm, arm): reach(grid_for(nm, g, arm), arm)
      for nm, g in GRIDS for arm in ('lcdm', 'cr')}
+# ⛭⛭⛭ AND THE NAMESAKE ARM IS STILL SCORED, BECAUSE THE PAPER STILL PRINTS ITS TWO FIGURES.
+#   `sec:refit-bound` carries 278.795 and 278.788, and re-pointing the gates above onto the arm of
+#   record left BOTH of them unpinned -- a figure a citing sentence prints must fail this receipt if
+#   it is wrong, and `check_figures_pinned` said so.  They stay pinned here until 69 lands the
+#   arm-of-record pair, and the comparison below is then paper-against-measured on both arms.
+V_NS = {nm: reach(g, 'cr') for nm, g in GRIDS if nm in ('banked', 'licensed')}
+gate("⛭⛭ the NAMESAKE arm's two printed figures are still reproduced and still pinned -- "
+     f"{V_NS['banked']['chi2']:.6f} on the banked grid and {V_NS['licensed']['chi2']:.6f} on the "
+     "licensed one, which are the 278.795 and 278.788 `sec:refit-bound` prints.  *They are kept "
+     "because the paper prints them; the arm-of-record pair above is what replaces them when 69 "
+     "lands it.*",
+     abs(V_NS['banked']['chi2'] - 278.795150) < 1e-3
+     and abs(V_NS['licensed']['chi2'] - 278.788424) < 1e-3)
+gate("⛔⛭ ** AND THIS IS WHERE THIS SEAT'S OWN 278.79 CAME FROM: it is the LICENSED NAMESAKE arm's "
+     f"{V_NS['licensed']['chi2']:.4f}, not the banked arm of record's "
+     f"{V[('banked', 'cr')]['chi2']:.4f}. ** `r7647` quotes 278.79 back from this seat's linearised "
+     "harness, where it was recorded as `banked+LEAFREC`; it is neither banked nor LEAFREC.  *A "
+     "mislabelled row in my own notes, caught only because the re-point forced both numbers to be "
+     "computed side by side.*",
+     abs(V_NS['licensed']['chi2'] - 278.7884) < 1e-3
+     and abs(V[('banked', 'cr')]['chi2'] - 276.3597) < 1e-3
+     and V_NS['licensed']['chi2'] - V[('banked', 'cr')]['chi2'] > 2.0)
 print(f"      {'grid':10s} {'arm':5s} {'unreachable chi2':>18s} {'n-5':>5s} {'crossings':>10s} {'longest':>8s}")
 for nm, _ in GRIDS:
     for arm in ('lcdm', 'cr'):
