@@ -154,6 +154,39 @@
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41207905595",
     "since": "49afefd23afbb087e47ab22fc6dc0a845706a603"
    }
+  },
+  "suite": {
+   "receipts/P15_CR_cosmology/P15_the_combs_resolution_is_four_multipoles_and_the_skys_own_value_lies_outside_the_family.py": {
+    "gates": [
+     "\u24f5",
+     "\u26a0 ** BUT THE FWHM'S MOTION IS NOT RESOLV",
+     "\u26ed\u26ed every computed figure the `INDEX.md`"
+    ],
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41207905595",
+    "since": "49afefd23afbb087e47ab22fc6dc0a845706a603"
+   },
+   "receipts/P15_CR_cosmology/P15_the_contrast_excess_is_symmetric_about_the_envelope_and_the_troughs_are_where_the_sky_measures_it_best.py": {
+    "gates": [
+     "\u26ed\u26ed every figure the `INDEX.md` row print"
+    ],
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41207905595",
+    "since": "49afefd23afbb087e47ab22fc6dc0a845706a603"
+   },
+   "receipts/P15_CR_cosmology/P15_the_locator_is_good_to_three_hundredths_and_the_fourth_peaks_residual_is_the_controls_too.py": {
+    "gates": [
+     "\u26ed\u26ed every COMPUTED figure the `INDEX.md`"
+    ],
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41207905595",
+    "since": "49afefd23afbb087e47ab22fc6dc0a845706a603"
+   },
+   "receipts/P15_CR_cosmology/P15_the_visibilitys_clock_is_the_one_the_kernel_reads_and_the_comb_votes_against_the_alternative.py": {
+    "gates": [
+     "\u21d2 and so the two assignments this receip",
+     "\u26ed\u26ed every computed figure the `INDEX.md`"
+    ],
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41207905595",
+    "since": "49afefd23afbb087e47ab22fc6dc0a845706a603"
+   }
   }
  },
  "claude/shadow-of-existence-setup-6awafl": {
