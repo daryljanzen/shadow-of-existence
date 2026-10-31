@@ -91,6 +91,7 @@ STATUS: OK
 rc=0 on success.  Run: python3 <this file>   (numpy, scipy; ~40 s -- reads the banked grid)
 """
 import os
+import re
 import sys
 
 import numpy as np
@@ -321,9 +322,55 @@ for i, k in enumerate(STEP):
         row.append(dd)
     print(f"  {k:>8} " + " ".join(f"{v:>22.1f}" for v in row))
 print("\n  (the cheaper of the two one-step excursions, in chi^2)")
-check("** every parameter is constrained on both arms: a one-step excursion costs chi^2 **",
-      all(v > 5.0 for v in FLAT.values()))
-check("and n_s is a live direction, which is what caught the knob shadow at cc66.17",
+# ⛭⛭⛭ `r7647` ⑶ -- THE QUARTET THE PAPER PRINTS, PINNED FOR THE FIRST TIME.  Until now this part
+#   computed all eight of these and gated them only as `all(v > 5.0)`, a floor no quartet of this
+#   size could ever fail, while `sec:refit-bound` printed four of them as `2527, 740, 141 and 31`
+#   and NO receipt asserted any of them.  They are captured from the paper and compared here.
+# ⌗ AND THE PAPER'S FOUR ARE THE NAMESAKE GRID'S, measured rather than assumed: pointing
+#   `GRIDS['cr']` at `refit_grid185` instead reproduces 2527.3900 / 739.6168 / 141.0245 / 31.2352,
+#   which round to exactly what the paper prints.  That is a one-line change anyone can repeat; it
+#   is recorded here in prose rather than pinned, because this file's business is the arm of record.
+_TEX = open(os.path.join(ROOT, 'corpus', 'CR_cosmology.tex'), encoding='utf-8').read()
+_mq = re.search(r"one-step excursions cost\s*\$([0-9]+)\$, \$([0-9]+)\$, \$([0-9]+)\$ and "
+                r"\$([0-9]+)\$", _TEX)
+check("⌗ `sec:refit-bound`'s printed quartet is still FOUND by this file's pattern -- a sentence "
+      "reworded past it must redden this part rather than leave it comparing against nothing",
+      _mq is not None)
+if _mq:
+    _PQ = dict(zip(('H0', 'OM', 'WB', 'NS'), (float(x) for x in _mq.groups())))
+    _A = {k: float(FLAT[('cr', k)]) for k in ('H0', 'OM', 'WB', 'NS')}
+    _C = {k: float(FLAT[('lcdm', k)]) for k in ('H0', 'OM', 'WB', 'NS')}
+    print(f"\n      {'':>6} {'paper':>10} {'arm of record':>16} {'control':>12} {'arm vs paper':>14}")
+    for k in ('H0', 'OM', 'WB', 'NS'):
+        print(f"      {k:>6} {_PQ[k]:>10.0f} {_A[k]:>16.4f} {_C[k]:>12.4f} "
+              f"{(_A[k] / _PQ[k] - 1) * 100:>+13.4f}%")
+    check("⛔⛔ ** THE QUARTET MOVES ON THE ARM OF RECORD AND THREE OF THE FOUR GET STIFFER: ** "
+          f"{_A['H0']:.1f}, {_A['OM']:.1f}, {_A['WB']:.1f} and {_A['NS']:.1f} against the printed "
+          f"{_PQ['H0']:.0f}, {_PQ['OM']:.0f}, {_PQ['WB']:.0f} and {_PQ['NS']:.0f} -- "
+          f"{(_A['H0'] / _PQ['H0'] - 1) * 100:+.2f}%, {(_A['OM'] / _PQ['OM'] - 1) * 100:+.2f}%, "
+          f"{(_A['WB'] / _PQ['WB'] - 1) * 100:+.2f}% and {(_A['NS'] / _PQ['NS'] - 1) * 100:+.2f}%",
+          2538.0 < _A['H0'] < 2540.5 and 812.0 < _A['OM'] < 814.0
+          and 149.3 < _A['WB'] < 150.4 and 25.7 < _A['NS'] < 26.3)
+    check("⛔ ** AND THE TILT IS THE ONE DIRECTION THAT SOFTENS -- the only one of the four that "
+          f"gets CHEAPER to leave ({_A['NS'] / _PQ['NS'] - 1:+.4%}) while the other three get "
+          "dearer, and the only one on which the arm of record is LESS constrained than the "
+          f"CONTROL ({_A['NS'] / _C['NS']:.4f} of it) ** -- so the re-point stiffens the background "
+          "and loosens the tilt, which is the same direction `cc66.68` found the refit moving it in",
+          _A['NS'] < _PQ['NS'] and all(_A[k] > _PQ[k] for k in ('H0', 'OM', 'WB'))
+          and _A['NS'] < _C['NS'] and all(_A[k] > _C[k] for k in ('H0', 'OM', 'WB')))
+    check("⌗ and the CONTROL's four are untouched by the re-point, pinned here so the comparison's "
+          f"other half is asserted too: {_C['H0']:.4f}, {_C['OM']:.4f}, {_C['WB']:.4f}, "
+          f"{_C['NS']:.4f}",
+          1774.0 < _C['H0'] < 1774.3 and 473.0 < _C['OM'] < 473.2
+          and 98.2 < _C['WB'] < 98.4 and 32.2 < _C['NS'] < 32.4)
+check("** every parameter is constrained on both arms: a one-step excursion costs chi^2 ** -- the "
+      f"cheapest of all eight is {min(float(v) for v in FLAT.values()):.2f}, so the claim that "
+      "these are sharp minima rather than unconstrained directions survives the re-point with room "
+      "to spare.  ⌗ The old floor here was 5.0, which no quartet of this size could fail; it is "
+      "raised to 20 and the four figures themselves are pinned above",
+      all(float(v) > 20.0 for v in FLAT.values()))
+check("and n_s is a live direction, which is what caught the knob shadow at cc66.17 -- still live "
+      "on both arms, and now the only one of the four that the re-point made cheaper",
       FLAT[('cr', 'NS')] > 5.0 and FLAT[('lcdm', 'NS')] > 5.0)
 
 # =================================================================================================
