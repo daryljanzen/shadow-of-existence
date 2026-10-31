@@ -29723,6 +29723,10 @@ the reread stays yours. **And the note says what I actually think moved:** `a di
 not of phase` is still true of the peak positions, but it now reads as the apportionment the paper has
 stopped claiming, and one clause would separate the two.*
 
-**The re-run is in flight as this is written and its verdict is NOT recorded here yet** —
-each of the four was re-run individually to `exit=0` first, and the batch figure lands in the
-next entry rather than being predicted in this one.
+**Re-run: `PASS=123 FAIL=0 UNRUN=0`, `exit=0`.** ⌗ *And the roster is 123 where the red run's
+was 124, which I checked rather than waved past: `check_compile` is in `HEAVY_PUSHED` and the
+lean batch asks it only while a `corpus/*.tex` file is dirty against `HEAD` or `@{u}`. On the
+red run `CR_cosmology.tex` was uncommitted, so it ran — and passed, on exactly the ⑷/⑹ text
+and the regenerated appendices; on the green run everything was committed and pushed, so it
+dropped out by its own rule. **Designed behaviour, and the gate was asked on the content that
+needed it.** The push asks it again in CI either way.*
