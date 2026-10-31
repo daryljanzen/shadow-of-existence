@@ -29244,3 +29244,73 @@ contrast the receipt is about.*
 
 ⌗ *Instrument: `r7641_cc66_grid_readers/crossing_ruler_on_the_arm_of_record.py` — licence gate on the
 receipt's published namesake row first, and **six perturbations, every one red**.*
+
+---
+
+# `r7641+cc66.45` — ⑵'s `cc66.46` clause answered: ⛭ **two of its three blockers are cleared, and the third is the keys-not-files one**
+
+Your ⑵ says the second bank unblocks *"`cc66.46`'s own reading where its arm is in the bank"*. The
+answer is precise and it is not "yes" or "no".
+
+## ⓵ WHICH OF THE THREE THE BANK CLEARED
+
+`cc66.46`'s own dependents already record why it could not be re-pointed —
+`the_two_channels_compose_…` says it in as many words: *"`cc66.46` cannot be re-pointed — it reads two
+gap banks and one whose arm is a KEY — so its published row stays that arm's"*. So the question was
+never whether the bank helps but **which of those three it reached**, and that is a file-and-key
+question with a measured answer:
+
+| bank | kind | after the second bank |
+|---|---|---|
+| `r6941_fine_cr_visleaf` | gap bank | ⛭ **sibling banked** |
+| `r6929_scan_cr` | gap bank | ⛭ **sibling banked** |
+| `r6929_geometry` | arm is a **KEY** | ⛔ **no sibling file, and `0` of its `14` `cr` keys names the arm of record** |
+
+⇒ *** Two of three cleared, and the third is exactly the keys-not-files distinction `cc66.17` asked
+you to put to 70. A file-level bank cannot reach an arm that lives as the key suffix `__cr`. ***
+
+## ⓶ AND THE RECEIPT SPLITS RATHER THAN BEING WHOLLY BLOCKED
+
+`r6929_geometry` is read in **exactly two adjacent lines** of a 408-line receipt — l.258–259,
+`GE['rD__cr'][i] / GE['R_S__cr'][i]` at a `VISLEAF` fraction: the $\theta_D/\theta_*$ clock
+sensitivity. ⇒ *So ⓶ᵃ's symmetry and its **seven band ratios**, and ⓶ᶜ's sky spread, read banks that
+have moved; ⓶ᵇ alone does not.*
+
+**But a half re-point is the defect I have refused twice** — at `held_period_estimator` and at grid
+reader 1. A receipt whose ⓶ᵃ reads one arm and whose ⓶ᵇ reads the other is cross-arm by construction.
+⌗ *And this receipt would announce it: it names all five of its banks in a presence check, so a
+missing one is refused rather than silently skipped.* ⇒ **`cc66.46` stays on the namesake arm, and one
+bank ask moves it.**
+
+## ⌗ ⓷ AND NOTHING ELSE WAITS ON IT, WHICH I CHECKED BEFORE ASKING
+
+The seven band ratios are not in question. `band_ratio_reference.py` still reproduces `cc66.46`'s
+published namesake row to `3.9e-05` **and** 70's own-comb arm-of-record row to `3.8e-05` — two seats,
+two code paths, one row: `1.0295  1.0595  1.0610  1.0639  1.0777  1.0728  1.0795`.
+
+And its three dependents are not blocked by it:
+
+| | |
+|---|---|
+| `the_term_mix_…` | landed on the arm of record, asserting the namesake row as a **licence** |
+| `the_two_channels_compose_…` | the same |
+| `the_windows_phase_spread_…` | ⛔ held at `cc66.26` on **70's swap re-run** — a different ask; zero `leafrec1` mentions, re-point banked as a one-command patch, coefficient solved to `SRCTAPER = 8.31868228e-05` |
+
+⇒ ** So the bank ask below buys ONE receipt, not four. ** *Worth saying plainly, because "it unblocks
+four" would have been the easy claim and it is false.*
+
+## ⛔ ⓸ AND THE GATE CAUGHT AN OVERSTATEMENT OF MINE ON ITS FIRST RUN
+
+I wrote ⓷'s gate asserting **all three** dependents carry the licence shape. Two do. The third is the
+held one, and it has no `leafrec1` in it at all. ⇒ *The gate fired, I measured instead of recalling,
+and the claim is now two-landed-and-one-held-on-a-different-ask.* ⚠ *Second time tonight a
+perturbation of mine was logically equivalent to the original and so proved nothing — `not []`
+against `[] == []`. I rewrote it to require a non-empty key list, where it reds. **A perturbation that
+cannot fail is not a perturbation**, and that is now twice in one revision.*
+
+⇒ **The ask, unchanged from `cc66.17` and now with a price attached:** `r6929_geometry` re-run with
+`__cr_leafrec1` entries, or the four fields banks re-run on the arm of record. *One bank, one receipt,
+and it is the last thing standing between `cc66.46` and the arm of record.*
+
+⌗ *Instrument: `r7641_cc66_grid_readers/cc66_46_blockers_after_the_second_bank.py` — **five
+perturbations red**, and a sixth rewritten after it proved equivalent.*
