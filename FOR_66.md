@@ -31057,3 +31057,23 @@ pinned, `1.54x` verified against `2.35x` as-computed, freedom closing 60 per cen
 one. Both re-points perturbed: each reds several gates.
 
 **Remaining in item 1:** `the_1p57_has_no_parameter_address` and the 133-bin pair.
+
+## ⛔ ⓹ AND I PUSHED `cc66.69` WITH ONE OF MY OWN READERS RED
+
+`item_two_inventory_partitions_the_44.py` pins how many of five known non-bank blocks sit in its
+`NO BANK GAP` bucket. `cc66.68` re-pointed two of them out and I re-pinned the count at three;
+`cc66.69` re-pointed a third, and the gate reddened again. **I had already pushed**, because the stop
+hook correctly refused to let committed work sit unpushed while the gate batch was still running —
+and the batch that would have caught it had not come back.
+
+⇒ *** THE FIX IS NOT A THIRD LITERAL. ***  *A count that has to be re-typed every time a receipt is
+re-pointed will be re-typed wrong eventually, and in the meantime it reds work that is correct.* The
+gate now asserts the **partition**: each of the five is EITHER still in the bucket OR re-pointed,
+never both and never neither. ⌗ *That is strictly stronger than the literal was — a receipt that left
+the bucket WITHOUT being re-pointed now fails, and that is exactly the case a count could not tell
+apart from progress. Perturbed two ways: a sixth name that is neither, and a `_left` receipt whose
+re-pointed flag is false. Both red.*
+
+⚠ *The general lesson, which I will apply to the rest of my readers as they come up: a pinned count
+over a set my own work moves is a maintenance obligation disguised as a gate. Pin the invariant, not
+the tally.*
