@@ -101,16 +101,40 @@ check("⛭⛭ ** EVERY GEOMETRY QUANTITY THE VISIBILITY-CLOCK RECEIPT READS OUT 
       "CARRIED BIT-IDENTICALLY BY `r6929_geometry` AT f=0 AND f=1, ON BOTH ARMS. **  Matched by NAME "
       "and value, not by value alone, so no scalar coincidence can produce it",
       _exact == _pairs and _pairs == 10, f"{_exact} of {_pairs} quantity pairs exact")
-check("⇒ and THAT bank has an arm-of-record sibling where `r6925_geometry` has none, so the "
-      "quantity moves although the bank that names it cannot",
-      HAS('r6929_geometry_leafrec1') and not HAS('r6925_geometry_leafrec1'),
-      "r6929_geometry_leafrec1 present; r6925_geometry_leafrec1 absent")
+# ⛔⛔⛔ r7645+cc66.68: ** AND THIS FILE'S TITLE CLAIM IS NOW SUPERSEDED: THE BANK CAN MOVE. **
+#   *`r7643`'s fold banked `r6925_geometry_leafrec1` (68 keys, 22 of them `__cr_leafrec1`, the
+#   namesake's 44 bit-identical) along with a sibling for TEN of the eleven gap banks.  So the
+#   substitution this file justified -- reading `r6925_geometry`'s quantities out of `r6929_geometry`
+#   because only the latter had a sibling -- is no longer NECESSARY, though it is still SOUND: the
+#   bit-identity it rests on is measured above and unaffected.*
+#   ⇒ *** The finding stands as a finding about QUANTITIES vs BANKS, which is what it was for, and
+#       the premise it was reached under is gone.  The gate is restated to assert the new state in
+#       both directions rather than quietly dropped, so the history is readable. ***
+check("⛔⛔⛔ ** AND THE PREMISE IS GONE: `r6925_geometry` NOW HAS A SIBLING TOO, so the "
+      "substitution is no longer necessary -- only still sound ** -- r7643's fold reaching ten of "
+      f"the eleven gap banks.  ⌗  *The quantity/bank distinction this file was written for is "
+      "unaffected; what is withdrawn is `the bank that names it cannot move`, which was true at "
+      "r7641 and is false at r7643*",
+      HAS('r6929_geometry_leafrec1') and HAS('r6925_geometry_leafrec1')
+      and len([k for k in np.load(os.path.join(SP, 'r6925_geometry_leafrec1.npz'),
+                                  allow_pickle=True).files if 'leafrec1' in k]) == 22,
+      "both siblings now present; r6925_geometry_leafrec1 carries 22 arm-of-record keys")
+# ⛔⛔ r7645+cc66.68: ** AND THE KEY THIS GATE READ CHANGED MEANING UNDER IT. **  *`r7643`'s
+#   fold made the sibling a SUPERSET: `__cr` is now the NAMESAKE's, bit-identical, and the arm of
+#   record moved to `__cr_leafrec1`.  So `G29L['cs__cr'] != G29['cs__cr']` -- which asserted the
+#   substitution moves the reading -- became FALSE while the substitution still moves the reading,
+#   just under a different key.  This is the same defect that silently reddened four registered
+#   receipts; here it reddened a gate, which is the better outcome.*
 check("   and the substitution is not vacuous: on the arm of record those quantities DIFFER from the "
-      "namesake arm's, so this moves the reading rather than relabelling it",
-      float(G29L['cs__cr'][_i0]) != float(G29['cs__cr'][_i0])
-      and float(G29L['l_A__cr'][_i0]) != float(G29['l_A__cr'][_i0]),
-      f"d r_s/d chi {float(G29['cs__cr'][_i0]):.6f} -> {float(G29L['cs__cr'][_i0]):.6f}, "
-      f"l_A {float(G29['l_A__cr'][_i0]):.4f} -> {float(G29L['l_A__cr'][_i0]):.4f}")
+      "namesake arm's, so this moves the reading rather than relabelling it -- read now under "
+      "`__cr_leafrec1`, the sibling's `__cr` being the namesake's since r7643's re-key",
+      float(G29L['cs__cr_leafrec1'][_i0]) != float(G29['cs__cr'][_i0])
+      and float(G29L['l_A__cr_leafrec1'][_i0]) != float(G29['l_A__cr'][_i0])
+      and float(G29L['cs__cr'][_i0]) == float(G29['cs__cr'][_i0]),
+      f"d r_s/d chi {float(G29['cs__cr'][_i0]):.6f} -> "
+      f"{float(G29L['cs__cr_leafrec1'][_i0]):.6f}, "
+      f"l_A {float(G29['l_A__cr'][_i0]):.4f} -> {float(G29L['l_A__cr_leafrec1'][_i0]):.4f}; "
+      f"and the sibling's own `__cr` is the namesake's, bit for bit")
 check("   ⌗ and the CONTROL's geometry does not move with it, which is what makes the control a "
       "control under this substitution too",
       float(G29L['cs__lcdm'][_i0]) == float(G29['cs__lcdm'][_i0])
@@ -156,18 +180,59 @@ print(f"    arm-of-record arrays bit-identical to the screen's own base, across 
       f"{len(_sibs)} sibling bank(s): {len(_copies)}")
 for _c in _copies:
     print(f"      {_c[0]}:{_c[1]}")
-check("⇒ *** SO THE SHORTCUT IS A TAUTOLOGY. ***  Every arm-of-record copy of that spectrum lives in "
-      "`r6893_switch_screen_cr_leafrec1` itself -- the bank the leg already compares against -- so "
-      "substituting one makes the leg compare the base against itself.  It would pass while testing "
-      "nothing, on four receipts at once.  *Falsifiable: a copy in any OTHER sibling bank would be a "
-      "legitimate stand-in and would fail this gate*",
-      len(_copies) > 0
-      and all(n == 'r6893_switch_screen_cr_leafrec1' for n, _ in _copies),
-      f"{len(_copies)} copies, all in the screen's own sibling")
-check("   and the legs are not merely unmoved but UNMOVABLE without a new run: no bank anywhere "
-      "carries the arm-of-record no-op spectrum, because no such run exists",
-      not any(HAS(b + '_leafrec1') for b, _ in NOOPS),
-      "no `_leafrec1` sibling for any no-op bank, and no other bank holds that spectrum")
+check("⇒ *** SO THE SHORTCUT WAS A TAUTOLOGY, AT r7641. ***  Every arm-of-record copy of that "
+      "spectrum lived in `r6893_switch_screen_cr_leafrec1` itself -- the bank the leg already "
+      "compares against -- so substituting one made the leg compare the base against itself: it "
+      "would have passed while testing nothing, on four receipts at once.  *Falsifiable: a copy in "
+      "any OTHER sibling bank would have been a legitimate stand-in and would fail this gate*",
+      #: ⛭⛭ r7645+cc66.68: re-pinned, and the re-pin IS the discharge.  *At r7641 every copy of
+      #: the arm-of-record base lived in the screen's own sibling, which is what made the shortcut a
+      #: tautology.  At r7643 there are 27: nineteen still in the screen's own sibling -- the inert
+      #: switches of PART 3's arm-independent set -- and EIGHT in the no-op siblings, one per no-op
+      #: arm spectrum, each an independently banked run.  So the leg now compares two separately
+      #: banked runs and its equality is a finding rather than an identity, which is exactly the
+      #: condition the tautology gate said was missing.*
+      len(_copies) == 27
+      and len([n for n, _ in _copies if n == 'r6893_switch_screen_cr_leafrec1']) == 19
+      and sorted(set(n for n, _ in _copies if n != 'r6893_switch_screen_cr_leafrec1')) == [
+          'r6897_noop_leafrec1', 'r6911_noop_leafrec1', 'r6915_noop_leafrec1',
+          'r6919_noop_leafrec1', 'r6925_noop_leafrec1', 'r6929_noop_leafrec1']
+      and len([n for n, _ in _copies if n != 'r6893_switch_screen_cr_leafrec1']) == 8,
+      f"{len(_copies)} copies: "
+      f"{len([n for n, _ in _copies if n == 'r6893_switch_screen_cr_leafrec1'])} in the screen's "
+      f"own sibling, {len([n for n, _ in _copies if n != 'r6893_switch_screen_cr_leafrec1'])} in "
+      "the no-op siblings")
+# ⛭⛭⛭ r7645+cc66.68: ** AND r7643's FOLD DISCHARGED THE ASK IN THE ONE FORM THAT ESCAPES THAT
+#   TAUTOLOGY, WHICH IS WORTH STATING PRECISELY BECAUSE IT IS NOT THE FORM I ASKED FOR. **
+#   *The ask was for a RE-RUN of each no-op bank at `LEAFREC=1`.  What landed is each no-op bank's
+#   sibling carrying `Dl__..._cr_leafrec1` keys -- AND a sibling for the SCREEN,
+#   `r6893_switch_screen_cr_leafrec1`, whose own `Dl__base` differs from the namesake's.  So BOTH
+#   SIDES of every identity leg moved together: the arm-of-record no-op spectra are bit-identical to
+#   the ARM-OF-RECORD screen's base and to NONE of the namesake's.*
+#   ⇒ *** The leg stays a test rather than becoming `base == base`, which is exactly what the
+#       tautology finding said was needed, and the eight no-op asks are discharged. ***
+_sn = np.load(os.path.join(SP, 'r6893_switch_screen_cr.npz'), allow_pickle=True)['Dl__base']
+_sa = np.load(os.path.join(SP, 'r6893_switch_screen_cr_leafrec1.npz'), allow_pickle=True)['Dl__base']
+_na = _nn = _nt = 0
+for _b in ('r6897_noop', 'r6911_noop', 'r6915_noop', 'r6919_noop', 'r6925_noop', 'r6929_noop'):
+    _p = os.path.join(SP, _b + '_leafrec1.npz')
+    if not os.path.exists(_p):
+        continue
+    _z = np.load(_p, allow_pickle=True)
+    for _k in _z.files:
+        if _k.startswith('Dl__') and 'leafrec1' in _k:
+            _nt += 1
+            _na += int(_z[_k].shape == _sa.shape and np.array_equal(_z[_k], _sa))
+            _nn += int(_z[_k].shape == _sn.shape and np.array_equal(_z[_k], _sn))
+check("⛭⛭⛭ ** AND AT r7643 THE LEGS BECAME MOVABLE WITHOUT THE TAUTOLOGY: every no-op bank now "
+      f"has a sibling, and so does the SCREEN, so BOTH sides moved together ** -- all {_nt} "
+      "arm-of-record no-op spectra are bit-identical to `r6893_switch_screen_cr_leafrec1`'s own "
+      f"`Dl__base` and NONE to the namesake screen's.  ⇒  *So the eight no-op asks are "
+      "DISCHARGED and the identity legs stay tests rather than becoming `base == base`*",
+      all(HAS(b + '_leafrec1') for b, _ in NOOPS)
+      and _nt == 8 and _na == _nt and _nn == 0
+      and not np.array_equal(_sn, _sa),
+      f"{_na} of {_nt} match the ARM screen's base, {_nn} the namesake's")
 _d = float(np.max(np.abs(_base - _baseL)) / np.max(np.abs(_base)))
 check("   ⌗ and the two arms' bases DO differ, so the identity being checked is a real constraint "
       "on each arm separately rather than one spectrum seen twice",
@@ -229,14 +294,22 @@ STILL = (('a_source_with_no_physics_…', ('r6919_geometry', 'r6919_noop')),
 for nm, banks in STILL:
     for b in banks:
         print(f"    {nm:34s} needs {b:18s} sibling: {HAS(b + '_leafrec1')}")
-check("⌗ and the correction does NOT extend to the other two: neither `r6919_geometry` nor "
-      "`r6897_fields` has a sibling, and neither holds quantities `r6929_geometry` carries at an "
-      "endpoint -- `r6919_geometry`'s own are `d_rs_own`, `jac_hi/lo/pk`, `rs_ls_own` and `d_chi`, "
-      "and `r6897_fields` is per-k fields at two baryon densities",
-      not any(HAS(b + '_leafrec1') for _, bs in STILL for b in bs)
+# ⛔⛔ r7645+cc66.68: ** AND THE REASON THEY WERE STILL BLOCKED IS GONE TOO. **  *This gate
+#   asserted that neither `r6919_geometry` nor `r6897_fields` has a sibling AND that `r6929_geometry`
+#   does not carry their quantities, i.e. neither route was open.  `r7643`'s fold banked both
+#   siblings -- `r6919_geometry_leafrec1` with 15 arm keys and `r6897_fields_leafrec1` with 19 -- so
+#   the FIRST route is now open and the second is still shut.*  ⇒ *The half of this gate that was
+#   about quantities is the half worth keeping, and it is asserted unchanged; the half about siblings
+#   is inverted.*
+check("⛔⛔ ** AND THE OTHER TWO ARE NO LONGER BLOCKED EITHER: r7643's fold banked siblings for "
+      "BOTH `r6919_geometry` and `r6897_fields` ** -- so they are reachable by FILE even though "
+      "`r6929_geometry` still does not carry their quantities, which is the half of this gate that "
+      "survives: `r6919_geometry`'s own are `d_rs_own`, `jac_hi/lo/pk`, `rs_ls_own` and `d_chi`, and "
+      "`r6897_fields` is per-k fields at two baryon densities, and no moving bank carries either set",
+      all(HAS(b + '_leafrec1') for _, bs in STILL for b in bs)
       and not {'d_rs_own__cr', 'jac_pk__cr', 'rs_ls_own__cr'} & set(G29L.files)
       and not {'phi__cr', 'psi__cr', 'tb__cr'} & set(G29L.files),
-      "both still blocked, and for quantities no moving bank carries")
+      "both now reachable by sibling; neither reachable by quantity, which is unchanged")
 
 print("\n" + "=" * 100)
 if FAILS:

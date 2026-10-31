@@ -30871,3 +30871,126 @@ Same lesson as the proxies at `.64`: read the value, do not infer it from a roun
 
 **Remaining in item 1:** the full-range refit, `the_1p57_has_no_parameter_address`,
 `the_refit_leaves_the_background`, the 133-bin pair.
+
+---
+
+# r7645+cc66.68 — THE CI RED WAS MINE, AND THE RE-POINT THAT CAUSED IT INVERTS TWO PAPER CLAIMS
+
+## ⛔ ⓵ FOUR RECEIPTS WERE SILENTLY READING THE NAMESAKE OUT OF `_leafrec1` FILES
+
+The `scoped — the runner-read sweep` red on `49afefd23` named `the_combs_resolution_…`,
+`the_contrast_excess_…`, `the_locator_…` and `the_visibilitys_clock_…`. I ruled out the sweep's own
+classes first — every read is absolute, so not the relative-path class; `OMP_NUM_THREADS` 1 and 4 give
+byte-identical failing output, so not threading — and then noticed the failing values were the
+**namesake's** (`43.5913`, `cs 0.396733`, `l_A 301.7986`) where the re-pointed receipts should print
+the arm of record's.
+
+⇒ *** `r7643`+70's fold RE-KEYED four `_leafrec1` banks after `.63`/`.65` re-pointed against `r7641`'s
+keying. `__cr` is now the NAMESAKE's and the arm of record is `__cr_leafrec1`. *** Measured: the
+sibling is an exact superset — all 28 namesake keys bit-identical, plus 14 arm keys of which 12 moved
+(`f` is the scan axis and `visleaf` is zero on both arms). 70's `RESULT.md` says no reader of the old
+meaning exists outside its own `geometry.py`; **six did**.
+
+⌗ *The gate that caught it was `.65`'s own canary* — `GE['cs__cr'] != _G29['cs__cr']`, written to
+assert the sibling differs from the namesake. After the re-key they are equal and it fired. *It was
+written for exactly this and it worked.* ⚠ *What did NOT catch it is the `ARM KEYS READ` declaration
+69 instituted at `r7643`: the locator's said `` `f__cr` and `rs_leaf__cr` `` — accurate about the code,
+naming the namesake's arm, with nothing in the rule to say so. **The rule names a key; the audit needs
+an arm.*** All four now name the arm keys AND gate the superset relation two-sided; perturbed,
+pointing the key back at `cr` fails in all four.
+
+## ⛔⛭ ⓶ AND `cc66.67` LEFT ITS OWN ANSWER BLOCK ON THE NAMESAKE ARM
+
+`.67` re-pointed the no-fit confrontation's computation and its pins and **not the prose it states them
+in**. The docstring's "THE ANSWER" table and the closing summary printed `537.38 / 3.002`,
+`282.96 / 1.581`, `2.660x / 1.591x`, `9.08`, `6.89` while the body computed `474.12 / 2.649`,
+`286.89 / 1.603`, `2.3469x / 1.6128x`, `6.04`, `7.02`. ⇒ *Every gate passed for a revision, because a
+receipt's own stated answer is the one figure nothing gates: the `INDEX.md` row is gated, the
+computation is gated, the prose between them is not.* ⌗ *Found only because
+`check_marker_transposition` flagged the paper's `1.58` and `2.66` as having lost their carrier and I
+went to ask which carrier. Repaired; five flags adjudicated as `TRANSPOSITION candidate` and routed to
+69, not adjudicated away.*
+
+## ⛭⛭⛭ ⓷ THE FULL-RANGE REFIT RE-POINTED, AND TWO PAPER CLAIMS INVERT
+
+The arm's grid moves to `refit_grid185_leafrec1_distances/` — `refit_grid185/launch.sh` verbatim with
+`LEAFREC=1`, the same distances' point, the same nine runs, the same steps. The control's grid does
+not move, and the arm's starting point does not either (`cr_base` bit-identical in `D_M`, `l_A`, `r_s`).
+
+**Registered before measuring**, and it held: the minimum lands within **0.07 of a grid step** of 70's
+banked point in all four parameters, so `cc66_r185_verify_cr_leafrec1` IS the arm of record's own
+full-range minimum rather than a LEAFREC re-run of the namesake's.
+
+- **`Omega_m` moves `2.123%`, not `0.031%`** — 64 times the "thirtieth of a per cent" the corpus
+  carries at `CR_framework.tex:1863`, `CR_synthesis.tex:1553` and `EXPLAINER.md:258`. `H0` moves
+  `0.022%` and still holds. ⇒ *The sentence SPLITS rather than moving.*
+- **The response model no longer predicts its own minimum**: `284.9` against the real run's `297.7`, a
+  miss of `+12.8` where the namesake's was `−0.0` and the control's is `+1.4` on the same code.
+  *Because `n_s` moves `+2.57` grid steps against the namesake's `+1.65`, and the stencil's quadratic
+  is built on `±1`.* The gate is kept and INVERTED, pinned two-sided at the miss.
+- **The raw locator no longer agrees between the arms**: `4.5%` control against `0.7%` arm, because the
+  arm's raw `l_2` falls at `532` where the namesake's falls at `540` — the tighter coin flip
+  (`0.011` per cent against `l_3`'s `0.066`). ⇒ *The CLAIM that `cc66.18`'s `4.5%` is the grid
+  survives on a BETTER footing — each arm swings five-fold between the locators on its own, in
+  opposite directions — and the ARGUMENT FORM "both arms return the same number" is withdrawn.*
+
+## ⚠ ⓸ AND A PERTURBATION THAT FOUND NOTHING, WHICH IS THE POINT OF RUNNING THEM
+
+Of the three re-points in that receipt, two perturb red. The third —
+`r6941_fine_cr_leafrec1` back to `r6941_fine_cr` — **left every gate green**, because the locator's
+error against its own `LSTEP=1` reference is a property of the grid, not the arm. *A re-point nothing
+holds is not a re-point.* The substrate's comb is now pinned (`l_A 302.9431` against `301.7986`) and it
+fires.
+
+## ⌗ ⓹ AND THE LINEARISED MINIMUM, WHICH 69 ASKED FOR AND WHICH DOES NOT MOVE
+
+Measured in a harness validated by reproducing the paper's `186.0066`, `278.7952` and `184.9886` to
+every digit it prints: **the unreachable `278.8` does not move at all** (`278.7952 → 278.7884`), so
+`186.0`, `278.8`, `5.2` and the "about a hundred" all survive verbatim. ⇒ *The REACHABLE chi^2 moves a
+lot on this re-point and the part outside every direction the model has does not move at all.*
+
+⛔ *But the one-clock sentence changes direction: "falls to `184.989`, **below** the control's own
+`186.007`" becomes `186.1350`, which is `0.128` ABOVE it. The repair still removes `99.86` per cent of
+the excess, and `0.128` on 180 dof is `0.0068 sigma` — so the substance holds and the word "below"
+does not.* ⌗ *Six of those numbers are mine and ungated; I did not register a prediction before
+measuring them. Their proper home is the two rigidity receipts re-pointed, and
+`grid_oneclock_leafrec1` exists, so neither is blocked. Full reading and proposals in `FOR_69.md`.*
+
+**Remaining in item 1:** `the_1p57_has_no_parameter_address`, `the_refit_leaves_the_background`, the
+133-bin pair. **Item 2 is delivered** as one landing table in `FOR_69.md`.
+
+## ⛭⛭⛭ ⓺ AND RUNNING MY OWN READERS FOUND THE BANK ASK ALREADY DISCHARGED
+
+Five of ten were red. Tracking them down measured that **`r7643`'s fold closed TEN of the eleven key
+gaps**, all in the superset form, including the three I had reported as genuinely blocked
+(`r6919_geometry`, `r6919_noop`, `r6897_fields`) and `r6925_geometry`, which `cc66.65` had to reach by
+substitution. Only `r6893_slice_check` remains.
+
+⇒ *** And the no-op asks clear the test that could have made them worthless: the SCREEN has a sibling
+too, its `Dl__base` differs from the namesake's, and all eight arm-of-record no-op spectra are
+bit-identical to THAT base and none to the namesake's — so both sides of every identity leg moved
+together and the legs stay tests rather than becoming `base == base`. ***
+
+⛔ *Two of the five reds were mine: `cc66_46_blockers_…` counts `GE[` lines in a receipt I added four
+to, and `phase_slope_…`'s `K_OBS` moved 24.6 per cent because `cc66.67` re-pointed the figure it is
+computed from — on a quantity that file twice called arm-independent. It is not: it is the arm's own
+whitened residual. The cross-arm reading of its "move needed" column is withdrawn; the within-arm
+comparison, which is what its spread uses, is untouched.* ⌗ *All ten readers green.*
+
+⚠ *One gate was passing VACUOUSLY and that is worse than the reds: `which_key_gaps_…`'s reach gate
+ranges over the OPEN gap set, and the discharge left that set at one bank with no sibling. It is now
+written over `GAPS_ALL`, inverted, and pinned two-sided at ten of eleven.*
+
+## ⌗ ⓻ AND ONE PREDICTION OF MINE FAILED, WHICH IS THE POINT OF REGISTERING THEM
+
+I predicted the 132-bin arm-of-record minimum would sit **more than one grid step** from the point 70
+banked its verification at, which would have blocked `…the_refit_leaves_the_background_…` on a new
+run. **The reachable negative fired**: it lands within `0.014 / 0.025 / 0.245 / 0.118` of a step in
+the four parameters, so 70's single banked point serves both ranges and the re-point is mechanical.
+
+⛔ *And my premise was wrong in the same direction on the namesake too — its 132-bin and full-range
+minima also agree to within a quarter step. I had read "different four-figure values" as "different
+points"; at the stencil's own resolution they are one point. That reading nearly cost a bank ask that
+was not needed.* ⌗ *What DOES move: `Omega_m` goes −2.164 per cent on the 132 bins against the
+namesake's −0.20, so the matter-density half of the `thirtieth of a per cent` claim fails on BOTH
+ranges, not only the full one.*

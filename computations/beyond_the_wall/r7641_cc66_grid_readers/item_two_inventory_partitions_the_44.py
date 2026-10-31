@@ -212,13 +212,28 @@ _KNOWN_NONBANK = ('the_full_range_refit', 'the_refit_leaves_the_background',
 for x in sorted(READY, key=lambda y: y['r']):
     _nb = any(k in x['r'] for k in _KNOWN_NONBANK)
     print(f"      {'⛔' if _nb else '  '} {x['r'][4:74]}")
+_LEFT = ('the_full_range_refit', 'the_no_fit_confrontation')
+_in_bucket = sorted(k for k in _KNOWN_NONBANK if any(k in x['r'] for x in READY))
+_left_rows = [x for x in ROWS if any(k in x['r'] for k in _LEFT)]
 check("⛔⛭ AND THE FIVE KNOWN NON-BANK BLOCKS ARE INSIDE THIS BUCKET, which is why it is not a work "
       "list: a partition over banks cannot see the grid's centre, a collapsed verification run, a "
       "paper-bound comparison or a held re-run.  ⇒ ** Gated so the bucket cannot be read as "
       "'sixteen re-points available' when five of them are not **",
-      sum(1 for x in READY if any(k in x['r'] for k in _KNOWN_NONBANK)) == 5,
+      #: ⛭⛭ r7645+cc66.68: ** TWO OF THE FIVE HAVE LEFT THIS BUCKET BY BEING RE-POINTED, which
+      #: is the one way out of it that is not a defect. **  *`the_no_fit_confrontation_…` landed at
+      #: `r7645+cc66.67` and `the_full_range_refit_…` at `cc66.68`, so neither is "no bank gap and
+      #: blocked" any more -- they are done.  The gate is re-pinned at THREE in the bucket and
+      #: asserts, for the two that left, that they left because they are RE-POINTED and not because
+      #: the detector stopped seeing them.*  ⇒ *That second half is the part worth having: a bucket
+      #: count that falls is indistinguishable from a detector that went blind, and this one says
+      #: which.*
+      sum(1 for x in READY if any(k in x['r'] for k in _KNOWN_NONBANK)) == 3
+      and _in_bucket == sorted(set(_KNOWN_NONBANK) - set(_LEFT))
+      and len(_left_rows) == 2 and all(x['repointed'] for x in _left_rows),
       f"{sum(1 for x in READY if any(k in x['r'] for k in _KNOWN_NONBANK))} of "
-      f"{len(READY)} are known non-bank blocks")
+      f"{len(READY)} are known non-bank blocks; the two that left "
+      f"({', '.join(sorted(_LEFT))}) are re-pointed: "
+      f"{[x['repointed'] for x in _left_rows]}")
 check("⛔ AND NO RECEIPT IS BOTH RE-POINTED AND BLOCKED BY A BANK IT CANNOT REACH, which would be "
       "the cross-arm defect this seat has refused three times -- except where it DECLARES the key "
       "read and gates it, which is `cc66.46`'s third verdict",

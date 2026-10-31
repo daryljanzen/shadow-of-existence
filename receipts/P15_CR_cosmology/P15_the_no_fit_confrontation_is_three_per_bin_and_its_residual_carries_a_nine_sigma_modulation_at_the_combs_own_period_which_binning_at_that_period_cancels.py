@@ -1,8 +1,14 @@
 #!/usr/bin/env python3
 r"""
 RECEIPT -- P15 / `sec:refit-bound`, `fig:acoustic`: ** THE CONFRONTATION THE PAPER HAS NEVER CARRIED,
-SCORED: $3.00$ PER BIN WITH NOTHING FITTED AGAINST THE CONTROL'S $1.13$, AND ITS RESIDUAL CARRIES A
-$9.1\sigma$ MODULATION AT THE COMB'S OWN PERIOD. **
+SCORED: $2.65$ PER BIN WITH NOTHING FITTED AGAINST THE CONTROL'S $1.13$, AND ITS RESIDUAL CARRIES A
+$6.0\sigma$ MODULATION AT THE COMB'S OWN PERIOD. **
+
+** THIS FILE'S OWN NAME CARRIES THE NAMESAKE ARM'S FIGURES ($3.00$ PER BIN, NINE SIGMA) AND IS LEFT
+AS IT STANDS, BECAUSE THE PAPER CITES IT BY NAME. **  *The answer block below was ALSO left on the
+namesake arm at `r7645`+`cc66.67`, which re-pointed the computation and its pins and not the prose it
+states them in -- so for one revision this receipt's stated answer contradicted its own output while
+every gate passed.  Repaired at `r7645`+`cc66.68`; the figures below are this file's own, as run.*
 
 *** AND THE OPERATION THE ORDER ASKED FOR IS THE ONE THAT CANCELS WHAT IT WAS ASKED TO SHOW:
 AVERAGING IN BINS ONE PERIOD WIDE INTEGRATES EACH CYCLE TO ITS OWN MEAN.  THE FOLD IS DRAWN BESIDE
@@ -20,27 +26,34 @@ scatter; and both confrontations' $\chi^2$ per bin on the figure itself."*
 
                                   chi^2      per bin      D_M of the banked spectrum
       control, nothing fitted     202.02      1.129            13864.6627
-      CR arm,  nothing fitted     537.38      3.002            14011.4567
+      CR arm,  nothing fitted     474.12      2.649            14011.4567
       control, refitted           177.88      0.994            13954.3535
-      CR arm,  refitted           282.96      1.581            14017.0386
+      CR arm,  refitted           286.89      1.603            14133.9546
 
-  arm/control:  nothing fitted  2.660x        refitted  1.591x       (179 bins, 100 <= l <= 1900)
+  arm/control:  nothing fitted  2.3469x       refitted  1.6128x      (179 bins, 100 <= l <= 1900)
+
+  *On the NAMESAKE arm these were 537.38 / 3.002 and 282.96 / 1.581, i.e. 2.660x and 1.591x, and the
+  paper still quotes those at `CR_cosmology.tex:962` and `:1085`.  Both controls are unchanged: the
+  re-point does not reach them.*
 
 ** AND THE RESIDUAL, TWO WAYS. **
 
       binned AT the period l_A = 298, six bands:
-          the arm's band means change sign TWICE across six bands, +1.273 to -0.808
-          -- a slow swing, NOT a per-period alternation
+          the arm's band means change sign TWICE across six bands, +1.468 to +1.776 through
+          -1.048 -- a slow swing, NOT a per-period alternation
 
       FOLDED by phase within the period, anchored on the arm's own first peak at l = 222:
           one harmonic at l_A      amplitude         sigma
-          CR arm, nothing fitted   1.3729 +- 0.1512   9.08
-          CR arm, refitted         0.8128 +- 0.1180   6.89
+          CR arm, nothing fitted   0.9522 +- 0.1576   6.04
+          CR arm, refitted         0.8331 +- 0.1187   7.02
           control, nothing fitted  0.2028 +- 0.1126   1.80
           control, refitted        0.1051 +- 0.1049   1.00
 
-⇒ *** THE MODULATION IS REAL AND IT IS THE ARM'S: `9.1` sigma with nothing fitted, against the
-control's `1.8`.  Giving the arm four parameters halves the amplitude and leaves `6.9` sigma. ***
+⇒ *** THE MODULATION IS REAL AND IT IS THE ARM'S: `6.0` sigma with nothing fitted, against the
+control's `1.8`.  AND GIVING THE ARM FOUR PARAMETERS NO LONGER HALVES IT: the amplitude falls an
+eighth, 0.952 to 0.833, and the significance RISES to `7.0`, because the no-fit arm's harmonic error
+is the larger of the two.  On the namesake arm both fell -- 1.373 to 0.813, 9.08 to 6.89 -- so `the
+four parameters absorb part of the modulation` was that arm's reading, not this one's. ***
 
 ⛔ ** AND THE ORDER'S CHOSEN OPERATION HIDES IT, FOR A REASON THAT IS ARITHMETIC RATHER THAN A
 MATTER OF TASTE. **  *A bin one period wide averages a full cycle of any modulation whose period is
@@ -319,9 +332,10 @@ if fail:
         print(f"      - {f}")
     print(BAR)
     sys.exit(1)
-print("  ✔ ** THE NO-FIT CONFRONTATION IS `3.00` PER BIN AGAINST THE CONTROL'S `1.13`, AND ITS")
-print("    RESIDUAL CARRIES A `9.1` SIGMA MODULATION AT THE COMB'S OWN PERIOD ** -- against the")
-print("    control's `1.8`, with refitting halving the amplitude and leaving `6.9`.")
+print("  ✔ ** THE NO-FIT CONFRONTATION IS `2.65` PER BIN AGAINST THE CONTROL'S `1.13`, AND ITS")
+print("    RESIDUAL CARRIES A `6.0` SIGMA MODULATION AT THE COMB'S OWN PERIOD ** -- against the")
+print("    control's `1.8`.  ⛔ *`3.00` and `9.1` are the NAMESAKE arm's and are this file's own")
+print("    NAME; refitting now raises the significance to `7.0` rather than halving it.*")
 print("  ⛔ And the ordered operation -- binning AT the period -- is the one that cancels it, because")
 print("    a bin one period wide averages a full cycle of a modulation at that period.  *Both are")
 print("    drawn: the period bins because a reader will look for them, the fold because it answers.*")

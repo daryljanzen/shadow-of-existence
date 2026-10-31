@@ -99,6 +99,16 @@ NOT_A_GAP = 'r6929_scan_cr'
 #: values in them, and hold IDENTICAL `__lcdm` values -- the last being the bank's own statement that
 #: the control does not move.  *All four, or it is not a closure.*
 CLOSED_BY_SIBLING = []
+#: ⛭⛭⛭ r7645+cc66.68: ** AND THERE ARE NOW TWO CLOSURE FORMS, NOT ONE. **
+#:   *`r7641`'s sibling kept the `__cr` key NAMES and moved their values -- form **A**.  `r7643`'s
+#:   fold REPLACED that with a SUPERSET -- form **B**: `__cr` and `__lcdm` both bit-identical to the
+#:   namesake's, plus new `__cr_leafrec1` keys carrying the arm of record.  Form B is the better form
+#:   for auditing, because one file answers "what did each arm do"; and it is the form that broke
+#:   four registered receipts silently, because a reader that re-points by changing the FILE and
+#:   keeping the key gets the NAMESAKE back with every gate passing.*
+#:   ⇒ *** So `_closed` must recognise both and SAY WHICH, and this file's PART 0 reading -- that
+#:       one gap was closed and the rest were open -- is superseded by measurement below. ***
+FORM = {}
 
 
 def _closed(g):
@@ -124,21 +134,92 @@ def _closed(g):
         except (ValueError, TypeError):
             return False
 
+    def _eq(k, k2=None):
+        return _np.allclose(_np.atleast_1d(a[k]).astype(float),
+                            _np.atleast_1d(b[k2 or k]).astype(float))
+
     cr = [k for k in a.files if ARM_RE.search(k) and k in b.files and _num(a, k) and _num(b, k)]
     lc = [k for k in a.files if CTL_RE.search(k) and k in b.files and _num(a, k) and _num(b, k)]
     if not cr or not lc:
         return False
-    moved = any(not _np.allclose(_np.atleast_1d(a[k]).astype(float),
-                                 _np.atleast_1d(b[k]).astype(float)) for k in cr)
-    held = all(_np.allclose(_np.atleast_1d(a[k]).astype(float),
-                            _np.atleast_1d(b[k]).astype(float)) for k in lc)
-    return bool(moved and held)
+    held = all(_eq(k) for k in lc)
+    if not held:
+        return False
+    #: form A -- the key names stay and the arm's values move
+    if any(not _eq(k) for k in cr):
+        FORM[g] = 'A'
+        return True
+    #: form B -- a SUPERSET: `__cr` held too, and new `__cr_leafrec1` keys carry the arm of record
+    ins = [k for k in b.files if 'leafrec1' in k and _num(b, k)]
+    if ins:
+        #: and the inserted keys must actually DIFFER from the namesake entries they shadow, or the
+        #: sibling has added names and no information.  *Keys with no namesake counterpart (the
+        #: `_0`/`_1` geometry pairs) count as inserted and are not required to differ from anything.*
+        pairs = [(k.replace('_leafrec1', ''), k) for k in ins]
+        shadow = [(n, k) for n, k in pairs if n in a.files and _num(a, n)]
+        if not shadow or any(not _eq(n, k) for n, k in shadow):
+            FORM[g] = 'B'
+            return True
+    return False
 
 
 for _g in GAPS_ALL:
     if _closed(_g):
         CLOSED_BY_SIBLING.append(_g)
-GAPS = tuple(g for g in GAPS_ALL if g not in CLOSED_BY_SIBLING)
+#: ⛭⛭ r7645+cc66.68: ** THE DETECTOR'S SUBJECT AND THE ASK'S PRICE ARE NOW TWO DIFFERENT SETS. **
+#:   *Until `r7643` they were one set, because one bank had closed and ten were open.  `r7643`'s fold
+#:   closed TEN of the eleven, and keeping `GAPS` as the OPEN set made the detector score only the
+#:   one bank still open: the verdict map collapsed from eleven readers to one, both
+#:   independently-known cases dropped out of it, and the reach gate at the end of this file -- which
+#:   ranges over `GAPS` -- passed VACUOUSLY over a single bank that has no sibling.*
+#:   ⇒ *** A gate that passes because its set emptied is worse than one that fails, and this is the
+#:       second time this file has had to record that its own set definition moved under a gate. ***
+#:   So the DETECTOR scores `GAPS_ALL` -- which bank a receipt reads by key does not change when a
+#:   sibling lands -- and `GAPS_OPEN` carries the shrinking ask.
+GAPS = GAPS_ALL
+GAPS_OPEN = tuple(g for g in GAPS_ALL if g not in CLOSED_BY_SIBLING)
+
+
+#: ⛭ r7645+cc66.68: the readings the form-B gates below need, kept as functions so each gate
+#: reads a measurement rather than a literal.
+def _scalar(stem, key):
+    z = np.load(os.path.join(SPEC, stem + '.npz'), allow_pickle=True)
+    return float(np.atleast_1d(z[key]).astype(float)[0])
+
+
+def _eq_cr_identical(g):
+    """every `__cr`-side key of the namesake is bit-identical in the sibling -- form B's signature"""
+    a = np.load(os.path.join(SPEC, g + '.npz'), allow_pickle=True)
+    b = np.load(os.path.join(SPEC, g + '_leafrec1.npz'), allow_pickle=True)
+    ks = [k for k in a.files if ARM_RE.search(k) and k in b.files]
+    return bool(ks) and all(np.array_equal(a[k], b[k]) for k in ks)
+
+
+def _noop_identity():
+    """⛭⛭⛭ ** THE TEST THAT DECIDES WHETHER THE NO-OP ASKS ARE REALLY DISCHARGED. **
+
+    *`cc66.64` proved every no-op bank's arm spectrum is BIT-IDENTICAL to `r6893_switch_screen_cr`'s
+    own `Dl__base`, so substituting a sibling into those receipts' identity legs would have turned
+    `base == base` into a tautology that passes while testing nothing.  What form B raises is whether
+    BOTH SIDES moved together: if the arm-of-record no-op keys match the ARM-OF-RECORD screen's base
+    and not the namesake's, the identity is reproduced on the new arm and the leg is still a test.*
+    Returns (matched_arm, matched_namesake, total).
+    """
+    sn = np.load(os.path.join(SPEC, 'r6893_switch_screen_cr.npz'), allow_pickle=True)
+    sa = np.load(os.path.join(SPEC, 'r6893_switch_screen_cr_leafrec1.npz'), allow_pickle=True)
+    bn, ba = sn['Dl__base'], sa['Dl__base']
+    ma = mn = tot = 0
+    for g in ('r6897_noop', 'r6911_noop', 'r6915_noop', 'r6919_noop', 'r6925_noop', 'r6929_noop'):
+        p = os.path.join(SPEC, g + '_leafrec1.npz')
+        if not os.path.exists(p):
+            continue
+        z = np.load(p, allow_pickle=True)
+        for k in z.files:
+            if k.startswith('Dl__') and 'leafrec1' in k:
+                tot += 1
+                ma += int(z[k].shape == ba.shape and np.array_equal(z[k], ba))
+                mn += int(z[k].shape == bn.shape and np.array_equal(z[k], bn))
+    return ma, mn, tot
 MINE44 = [ln.strip() for ln in open(MINE, encoding='utf-8') if ln.strip()]
 #: hoisted because an f-string expression may not contain a backslash (py3.11)
 TMPL_RE = re.compile(r'__\{')
@@ -181,17 +262,44 @@ print("  PART 0 -- WHICH KEY GAPS 70's THIRD BANK CLOSED, AND BY WHICH MECHANISM
 print(BAR)
 for g in GAPS_ALL:
     sib = os.path.exists(os.path.join(SPEC, g + '_leafrec1.npz'))
-    print(f"    {g:20s} sibling file: {str(sib):5s}  closed by it: {g in CLOSED_BY_SIBLING}")
-check("⛭⛭ `r6929_geometry` IS CLOSED BY A SIBLING FILE, on all four conditions and not on its "
-      "existence alone: the sibling keeps the same `__cr` key names, its `__cr` values MOVED, and "
-      "its `__lcdm` values are IDENTICAL -- the bank's own statement that the control does not "
-      "move.  ⇒ ** A better form than the `__cr_leafrec1` entries I asked for, because a reader "
-      "re-points by changing the FILE and keeping the key **",
-      'r6929_geometry' in CLOSED_BY_SIBLING,
-      f"closed: {CLOSED_BY_SIBLING or 'none'}")
-check("⛔ AND THE REST ARE STILL OPEN, so the ask narrows rather than disappearing",
-      len(GAPS) == len(GAPS_ALL) - len(CLOSED_BY_SIBLING) and len(GAPS) > 0,
-      f"{len(GAPS)} still open of {len(GAPS_ALL)}")
+    print(f"    {g:20s} sibling file: {str(sib):5s}  closed by it: "
+          f"{g in CLOSED_BY_SIBLING}{'  form ' + FORM[g] if g in FORM else ''}")
+_FB = sorted(g for g in CLOSED_BY_SIBLING if FORM.get(g) == 'B')
+_FA = sorted(g for g in CLOSED_BY_SIBLING if FORM.get(g) == 'A')
+check("⛭⛭⛭ ** r7643's FOLD CLOSED TEN OF THE ELEVEN KEY GAPS, ALL IN FORM B (a SUPERSET), "
+      "AND NOT ONE IN THE FORM r7641 USED **: `__cr` and `__lcdm` both bit-identical to the "
+      "namesake's, plus `__cr_leafrec1` keys that carry the arm of record.  ⇒ ** So the ask this "
+      "file exists to price is DISCHARGED except for `r6893_slice_check`, which has no sibling **",
+      len(_FB) == 10 and _FA == [] and sorted(GAPS_ALL) == sorted(_FB + ['r6893_slice_check']),
+      f"form B: {len(_FB)}; form A: {len(_FA)}; open: "
+      f"{sorted(set(GAPS_ALL) - set(CLOSED_BY_SIBLING))}")
+check("⛔ ** AND FORM B IS THE ONE THAT BROKE FOUR REGISTERED RECEIPTS SILENTLY **, because a "
+      "reader that re-points by changing the FILE and keeping the key gets the NAMESAKE back with "
+      "every gate passing: `r6929_geometry_leafrec1`'s `l_A__cr` is 301.7986, the namesake's, where "
+      "`r7641`'s file held 302.9431 there.  *Measured, not recalled: the re-keyed sibling's `__cr` "
+      "is bit-identical to its namesake's on every key*",
+      _eq_cr_identical('r6929_geometry')
+      and abs(_scalar('r6929_geometry_leafrec1', 'l_A__cr') - 301.7986427684055) < 5e-7
+      and abs(_scalar('r6929_geometry_leafrec1', 'l_A__cr_leafrec1') - 302.9430505935752) < 5e-7,
+      "`__cr` held, `__cr_leafrec1` moved")
+check("⌗ and the one still open is open for a DIFFERENT reason -- no sibling file at all, rather "
+      "than a sibling that cannot be read for the arm",
+      not os.path.exists(os.path.join(SPEC, 'r6893_slice_check_leafrec1.npz')),
+      "r6893_slice_check has no `_leafrec1` file")
+_NA, _NN, _NT = _noop_identity()
+check("⛭⛭⛭ ** AND THE NO-OP IDENTITY IS REPRODUCED ON THE ARM OF RECORD, so those legs are "
+      "still TESTS and not tautologies **: all "
+      f"{_NT} arm-of-record no-op spectra are bit-identical to `r6893_switch_screen_cr_leafrec1`'s "
+      f"own `Dl__base` and NONE to the namesake screen's, whose base differs.  ⇒ *cc66.64 proved "
+      "substituting a sibling would make `base == base` a tautology; form B moved BOTH sides "
+      "together, so the pairing survives the move*",
+      _NT == 8 and _NA == _NT and _NN == 0
+      and not np.array_equal(
+          np.load(os.path.join(SPEC, 'r6893_switch_screen_cr.npz'),
+                  allow_pickle=True)['Dl__base'],
+          np.load(os.path.join(SPEC, 'r6893_switch_screen_cr_leafrec1.npz'),
+                  allow_pickle=True)['Dl__base']),
+      f"{_NA} of {_NT} match the ARM screen's base, {_NN} the namesake's")
 
 print()
 print(BAR)
@@ -398,9 +506,18 @@ check("⛔⛭⛭ THE VERDICT COUNTS ARE PINNED, AND THEY MOVED TWICE -- ONCE WHE
       "it cannot catch is a METHOD that is wrong in the same way on both sides of the pin, which is "
       "why the detector itself is now gated below **.  ⛔⛭ *And the family split in this same pin was "
       "GUESSED at 3 / 4 on the first attempt and is 5 / 2 -- the third time this file has recorded "
-      "that error and the second time on itself.  The run says it; I did not read the run.*",
-      len(VERDICT) == 11 and len(BLOCKED) == 7 and len(DECLARED) == 3 and len(CLEAR) == 1
-      and len(_by_family) == 5 and len(_needs_more) == 2,
+      "that error and the second time on itself.  The run says it; I did not read the run.*  "
+      "⛔⛔ ** AND THEY MOVED A THIRD TIME AT r7645+cc66.68, TO 9 / 3 / 1 OF 13 WITH THE FAMILY "
+      "SPLIT 7 / 2 -- and this time NOTHING IN THE CORPUS MOVED: the detector's SUBJECT did. **  "
+      "*`GAPS` used to be the OPEN gaps, so a bank closing silently removed it, and every receipt "
+      "that read only it, from the count -- a count that shrinks when the problem is SOLVED and also "
+      "when it is merely RENAMED, and cannot tell those apart.  r7643's fold closed ten of eleven "
+      "and would have taken this count to 1 / 0 / 0 of 1.  The detector now scores `GAPS_ALL` and "
+      "`GAPS_OPEN` carries the ask, so this count measures READERS and PART 0 measures CLOSURE.*  "
+      "⇒ *** A pinned count caught the move all three times; what it could not catch was its own "
+      "set definition drifting under it. ***",
+      len(VERDICT) == 13 and len(BLOCKED) == 9 and len(DECLARED) == 3 and len(CLEAR) == 1
+      and len(_by_family) == 7 and len(_needs_more) == 2,
       f"{len(BLOCKED)} blocked, {len(DECLARED)} declared, {len(CLEAR)} clear; "
       f"{len(_by_family)} by the family, {len(_needs_more)} needing more")
 #: ⛔⛭⛭ ** AND TWO OF THIS FILE'S OWN REFINEMENTS TURN OUT TO BE INERT, WHICH PERTURBATION FOUND AND
@@ -438,7 +555,15 @@ if _comb:
           "reach the right banks by the wrong mechanism and label the ask `[both]` where it is "
           "`[literal]`.  ⛔ *The example this gate carried until `cc66.58` was an artefact of the "
           "narrow template test and is recorded as one above*",
-          _ctm == [] and _clit == ['r6925_noop', 'r6929_noop'],
+          #: ⛭⛭ r7645+cc66.68: re-pinned with the set split.  *`r6929_geometry` is back in
+          #: the scored set and this receipt DOES read it by template, so localisation now attributes
+          #: exactly that one bank that way.  The gate's content is unchanged and is now stated as the
+          #: EXCLUSION rather than as an empty list: the two NOOP banks must be ABSENT from the
+          #: template attribution and PRESENT in the literal one, because a file-wide search would
+          #: name them by template and label the ask `[both]` where it is `[literal]`.*
+          _ctm == ['r6929_geometry']
+          and set(_clit) == {'r6925_noop', 'r6929_geometry', 'r6929_noop'}
+          and not ({'r6925_noop', 'r6929_noop'} & set(_ctm)),
           f"template {_ctm}; literal {_clit}")
 
 check("⛭ THE ASK HAS A COUNT: re-running the `{geometry,noop}` family with `__cr_leafrec1` entries "
@@ -446,14 +571,23 @@ check("⛭ THE ASK HAS A COUNT: re-running the `{geometry,noop}` family with `__
       "** That is the whole of item ⑵'s remaining key-gap half, priced **",
       len(_by_family) + len(_needs_more) == len(BLOCKED) and len(BLOCKED) > 0,
       f"{len(_by_family)} + {len(_needs_more)} against {len(BLOCKED)} blocked")
-check("⛔ AND NONE OF THEM WAS REACHED BY THE SECOND BANK, which is the point: it is a FILE bank, "
-      "and not one of these gaps has an arm-of-record SIBLING that would help, nor an "
-      "arm-of-record KEY",
-      not any(os.path.exists(os.path.join(SPEC, g + '_leafrec1.npz'))
-              and any('leafrec1' in k for k in
-                      np.load(os.path.join(SPEC, g + '_leafrec1.npz'), allow_pickle=True).files)
-              for g in GAPS),
-      "no gap bank gained an arm-of-record key")
+_REACHED = [g for g in GAPS_ALL
+            if os.path.exists(os.path.join(SPEC, g + '_leafrec1.npz'))
+            and any('leafrec1' in k for k in
+                    np.load(os.path.join(SPEC, g + '_leafrec1.npz'), allow_pickle=True).files)]
+#: ⛭⛭⛭ r7645+cc66.68: ** AND THIS GATE IS THE EXACT INVERSE OF WHAT IT SAID, which is the whole
+#:   point of having pinned it. **  *From `cc66.46` to `cc66.67` it asserted that NONE of these gaps
+#:   had been reached by a second bank -- true then, and the reason item ⑵ still had a key-gap half.
+#:   `r7643`'s fold reached TEN of the eleven.  It is written over `GAPS_ALL` rather than the open
+#:   set so that it cannot pass by the set emptying, and it is two-sided on the count.*
+check("⛭⛭⛭ ** r7643's FOLD REACHED TEN OF THE ELEVEN GAPS WITH AN ARM-OF-RECORD KEY, which is the "
+      "exact inverse of what this gate asserted from cc66.46 to cc66.67 ** -- the one it did not "
+      "reach, `r6893_slice_check`, having no sibling file at all.  ⇒ *Written over GAPS_ALL so it "
+      "cannot pass by the open set emptying, which is how it passed vacuously once this revision "
+      "before the set split*",
+      sorted(_REACHED) == sorted(set(GAPS_ALL) - {'r6893_slice_check'}) and len(_REACHED) == 10,
+      f"{len(_REACHED)} of {len(GAPS_ALL)} reached; not reached: "
+      f"{sorted(set(GAPS_ALL) - set(_REACHED))}")
 
 print()
 print(BAR)
