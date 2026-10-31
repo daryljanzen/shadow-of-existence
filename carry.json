@@ -2026,24 +2026,6 @@
   }
  },
  "claude/shadow-of-existence-setup-wgcmvt": {
-  "reads": {
-   "receipts/P15_CR_cosmology/P15_the_combs_resolution_is_four_multipoles_and_the_skys_own_value_lies_outside_the_family.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41206841661",
-    "since": "53816139f8f75aec1da496ff77789384b3502d80"
-   },
-   "receipts/P15_CR_cosmology/P15_the_contrast_excess_is_symmetric_about_the_envelope_and_the_troughs_are_where_the_sky_measures_it_best.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41206841661",
-    "since": "53816139f8f75aec1da496ff77789384b3502d80"
-   },
-   "receipts/P15_CR_cosmology/P15_the_locator_is_good_to_three_hundredths_and_the_fourth_peaks_residual_is_the_controls_too.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41206841661",
-    "since": "53816139f8f75aec1da496ff77789384b3502d80"
-   },
-   "receipts/P15_CR_cosmology/P15_the_visibilitys_clock_is_the_one_the_kernel_reads_and_the_comb_votes_against_the_alternative.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41206841661",
-    "since": "53816139f8f75aec1da496ff77789384b3502d80"
-   }
-  },
   "suite": {
    "computations/beyond_the_wall/r7430_60_which_of_this_seats_gates_can_be_silent_and_the_census_is_a_detector_so_it_refuses_where_it_cannot_decide/census.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41206841661",
