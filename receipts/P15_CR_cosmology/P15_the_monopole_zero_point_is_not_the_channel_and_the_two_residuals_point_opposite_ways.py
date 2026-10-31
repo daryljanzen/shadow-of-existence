@@ -166,6 +166,37 @@ for arm in ('lcdm', 'cr'):
     a = np.load(os.path.join(SP, 'r6897_noop.npz'), allow_pickle=True)
     _noop[arm] = (bool(np.array_equal(a[f'Dl__{arm}'], d['Dl__base'])),
                   float(np.max(np.abs(a[f'Dl__{arm}'] - d['Dl__base']))))
+# ⛭⛭ r7643+cc66.57: ** THE SCREEN BANK'S ARM-OF-RECORD SIBLING IS NOW BANKED, AND IT DOES NOT MOVE
+#   THIS IDENTITY -- WHICH IS MEASURED HERE RATHER THAN ASSERTED EITHER WAY. **  The identity below
+#   pairs `r6897_noop`'s `Dl__cr` against `r6893_switch_screen_cr`'s `Dl__base`, and it needs BOTH on
+#   the same arm.  70's third bank supplies `r6893_switch_screen_cr_leafrec1`; `r6897_noop` still has
+#   no arm-of-record key.  *So the pair cannot be moved, and re-pointing one side alone would make the
+#   identity a CROSS-ARM comparison -- the licence defect `r7639+cc66.15` named.*
+#   ⇒ *** And the new sibling settles WHICH bank is the blocker, which was previously a presumption:
+#       the arm-of-record base differs from the namesake's by 0.0251, `r6897_noop`'s `Dl__cr` matches
+#       the namesake base EXACTLY, and it misses the arm-of-record base by that same 0.0251.  So the
+#       noop bank is a namesake-arm run and the screen is not what blocks the leg. ***
+_AOR_SCREEN = np.load(os.path.join(SP, 'r6893_switch_screen_cr_leafrec1.npz'), allow_pickle=True)
+_NSK_SCREEN = np.load(os.path.join(SP, 'r6893_switch_screen_cr.npz'), allow_pickle=True)
+_b_aor = np.asarray(_AOR_SCREEN['Dl__base'], float)
+_b_nsk = np.asarray(_NSK_SCREEN['Dl__base'], float)
+_noop_cr = np.asarray(np.load(os.path.join(SP, 'r6897_noop.npz'), allow_pickle=True)['Dl__cr'], float)
+_d_screen = float(np.max(np.abs(_b_aor - _b_nsk)))
+_d_noop_nsk = float(np.max(np.abs(_noop_cr - _b_nsk)))
+_d_noop_aor = float(np.max(np.abs(_noop_cr - _b_aor)))
+print(f"    the screen bank's two arms differ by max |dD_l| = {_d_screen:.4f}; `r6897_noop`'s own "
+      f"`Dl__cr` sits at {_d_noop_nsk:.4f} from the namesake base and {_d_noop_aor:.4f} from the "
+      f"arm-of-record one")
+check("⛭⛭ ** AND THE BLOCKER ON THIS LEG IS `r6897_noop` AND NOT THE SCREEN, WHICH THE THIRD BANK "
+      "MAKES MEASURABLE RATHER THAN PRESUMED: ** the arm-of-record screen base differs from the "
+      "namesake's, `r6897_noop`'s `Dl__cr` matches the NAMESAKE base exactly, and it misses the "
+      "arm-of-record base by precisely that same difference -- so the noop bank is a namesake-arm run "
+      "and the pair cannot be moved until it has an arm-of-record key.  ⛔ *Re-pointing the screen "
+      "alone would turn the identity below into a CROSS-ARM comparison, which `r7639+cc66.15` named a "
+      "licence defect whichever way it came out*",
+      _d_screen > 1e-6 and _d_noop_nsk == 0.0 and abs(_d_noop_aor - _d_screen) < 1e-12,
+      f"screen arms apart {_d_screen:.6f}; noop to namesake {_d_noop_nsk:.1f}, to arm of record "
+      f"{_d_noop_aor:.6f}")
 check("⚑ ** AND `ZPSAVE` IS ADDITIVE, WHICH IS MEASURED AND NOT ASSERTED. **  It adds a branch inside "
       "`hier_run`'s own batch loop, so the default path gains a test per batch -- and both arms come "
       "back BIT-IDENTICAL against the banked screen base.  *`cc66.36` is why this seat no longer says "
@@ -466,7 +497,11 @@ check("⛭⛭ AND `r7637+70`'s CARRY IS MOOT HERE AND THAT IS MEASURED RATHER TH
 #     ⒝ `r6897_fields.npz` -- the loading fields.  ** Its arm is a KEY and not a file ** (`k__cr`
 #        against `k__lcdm`, no arm-of-record key): one of the twelve such banks `r7639+cc66.18`
 #        found. NAMESAKE, bank-blocked.
-#     ⒞ `r6893_switch_screen_cr.npz` -- the default screen. No `_leafrec1` sibling. NAMESAKE.
+#     ⒞ `r6893_switch_screen_cr.npz` -- the default screen.  ⛭⛭ *As of 70's third bank its
+#        `_leafrec1` sibling IS banked, and `r7643+cc66.57` measures that it does not release this
+#        leg: the identity it enters is PAIRED with `r6897_noop`, which has no arm-of-record key, so
+#        the pair stays on the namesake and the blocking ask is `r6897_noop` alone.*  NAMESAKE, and
+#        blocked by its PARTNER rather than by itself.
 #   ⇒ *The verdicts of ⒝ and ⒞ are REPORTED on their own arm and nothing compares them with ⒜ --
 #   except ONE inference, the saturation leg, which converts ⒜'s contrast through ⒝'s measured
 #   omega_b response.  ** That one is gated below in the SAFE direction: the arm of record's excess is
@@ -475,7 +510,8 @@ check("⛭⛭ AND `r7637+70`'s CARRY IS MOOT HERE AND THAT IS MEASURED RATHER TH
 #   a cross-arm comparison is a licence defect regardless of which way it comes out.*
 _ARM_OF_RECORD = ('contrast', 'alternation', 'P1/P2')
 _NAMESAKE_LEGS = ('r6897_fields (arm is a KEY, no arm-of-record key)',
-                  'r6893_switch_screen_cr (no arm-of-record sibling)')
+                  'the ZPSAVE identity, paired with r6897_noop, which has no arm-of-record key -- '
+                  'the screen\'s own sibling IS banked and does not release it')
 print(f"    ⛔ on the arm of record: {', '.join(_ARM_OF_RECORD)};  still the namesake, bank-blocked: "
       f"{'; '.join(_NAMESAKE_LEGS)}")
 check("⛔⛭ AND THE ONE INFERENCE THAT CROSSES THE TWO BANKS IS ROBUST IN THE SAFE DIRECTION, WHICH IS "

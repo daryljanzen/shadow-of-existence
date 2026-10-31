@@ -29949,3 +29949,57 @@ something other than a verdict and had to be re-aimed.*
 declaration. **A new bank ask, priced: siblings for `r6929_noop` and `r6925_noop`** — and the keys
 those receipts read from them are switch-identity checks, so what the siblings would settle is whether
 the identity still holds on the arm of record.*
+
+---
+
+# `r7643+cc66.57` — the monopole receipt's stale declaration repaired, and ⛭⛭ **the third bank settles WHICH bank blocks the leg**
+
+`the_monopole_zero_point_…` carried a line of mine that the third bank has falsified: *"⒞
+`r6893_switch_screen_cr.npz` — the default screen. **No `_leafrec1` sibling.** NAMESAKE."* The sibling
+is banked. ⌗ *That is the third fail-on-success statement of mine this bank has fired, after the two
+at `cc66.48`.*
+
+## ⛭⛭ ⓵ BUT THE SIBLING DOES NOT RELEASE THE LEG, AND NOW THAT IS MEASURED RATHER THAN PRESUMED
+
+The identity it enters — `ZPSAVE` is additive — pairs **`r6897_noop`'s `Dl__cr`** against
+**`r6893_switch_screen_cr`'s `Dl__base`**, and needs both on one arm. `r6897_noop` still has no
+arm-of-record key. ⇒ *So the pair cannot move, and re-pointing the screen alone would turn the
+identity into a **cross-arm comparison** — the licence defect `r7639+cc66.15` named, whichever way it
+came out.*
+
+| | max `|dD_l|` |
+|---|---|
+| screen base, namesake against arm of record | `0.0251` |
+| `r6897_noop`'s `Dl__cr` against the **namesake** base | `0.0000` exactly |
+| `r6897_noop`'s `Dl__cr` against the **arm-of-record** base | `0.0251` |
+
+⇒ *** The noop bank's arm key matches the namesake base bit for bit and misses the arm-of-record base
+by *precisely* the amount the two bases differ. So `r6897_noop` is a namesake-arm run, and the
+blocking ask on this leg is **`r6897_noop` alone** — the screen is not what blocks it. *** ⌗ *Before
+the third bank that was a presumption; the sibling makes it a measurement, which is the second thing
+a bank buys after the re-point itself.*
+
+## ⛭ ⓶ WHAT CHANGED IN THE RECEIPT
+
+The declaration's ⒞ now says the sibling is banked and is blocked by its **partner** rather than by
+itself; `_NAMESAKE_LEGS` names the pairing instead of a missing file; the measurement above is a new
+gate. ⛔ *The identity itself is left reading the namesake pair on both arms, unchanged — because
+moving one side is the defect, not the repair.*
+
+| perturbation | target | result |
+|---|---|---|
+| the arm-of-record screen replaced by the namesake | the blocker gate | ⛭ RED, on target |
+| the noop compared on the control key instead of the arm's | the blocker gate | ⛭ RED, on target |
+
+## ⇒ ⓷ THE BANK ASKS, RE-PRICED AFTER THIS AND `cc66.56`
+
+| ask | what it releases |
+|---|---|
+| **`r6897_noop`** arm-of-record key | ⛭ the `ZPSAVE` identity leg in `the_monopole_zero_point_…`, now shown to be the only thing holding it |
+| **`r6929_noop` + `r6925_noop`** siblings | ⛭ `the_combs_resolution_…`'s switch-identity checks — whether the identities still hold on the arm of record |
+| **`r6925_geometry`** arm-of-record keys | ⛭ `the_visibilitys_clock_…`, which reads `eta_ls__cr_*`, `fwhm__cr_*`, `rD__cr_*`, `cs__cr_*` out of it |
+| **`r6897_fields`** arm-of-record key | the loading-field legs in four receipts, unchanged from `cc66.47` |
+
+⌗ *Each of the first three is sharper than it was an hour ago: the noop asks are now named as the
+blockers rather than inferred, and `r6925_geometry`'s is named by the four key families the receipt
+actually reads.*
