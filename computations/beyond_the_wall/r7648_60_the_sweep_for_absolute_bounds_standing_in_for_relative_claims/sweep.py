@@ -211,6 +211,136 @@ json.dump([dict(receipt=r, var=v, bound=t, pct=p, scale=s, line=l)
 print(f"\n      the whole candidate list is written to `candidates.json` beside this receipt, so the")
 print(f"      adjudication below can be checked rather than taken.")
 
+
+# ---------------------------------------------------------------- PART 2, the widened net (r7648+60.1)
+print("\nPART 2 -- ⛔ THE SECOND PASS, BECAUSE THE FIRST NET SAW 2 OF 4568")
+print("  *Registered as `r7648+60.1` BEFORE being run.  A sweep with 0.04 per cent visibility that")
+print("  returns nothing has measured its own reach, not the corpus -- the same shape as a guard that")
+print("  cannot fail on the data it is given.  ⇒ The scale now comes from the bound's OWN pin: in")
+print("  `abs(V - c) < t`, `c` is the value it is pinned at, so `100*t/|c|` is its size in per cent")
+print("  with no normaliser needed.  And the claim side becomes the receipt's OWN printed per-cent")
+print("  for the same variable.  Nothing was relaxed: the new test is strictly sharper, comparing")
+print("  against a printed figure rather than against a fixed floor.*")
+
+
+def pinned_bounds(tree, consts):
+    """[(V, t, c, line)] -- abs(V - c) <|> t with both numeric, the inside not already normalised"""
+    out = []
+    for n in ast.walk(tree):
+        if not isinstance(n, ast.Compare) or len(n.comparators) != 1:
+            continue
+        if not isinstance(n.ops[0], (ast.Lt, ast.LtE, ast.Gt, ast.GtE)):
+            continue
+        for a, b in ((n.left, n.comparators[0]), (n.comparators[0], n.left)):
+            if not (isinstance(a, ast.Call) and _fname(a) in ('abs', 'fabs') and a.args):
+                continue
+            t = _lit(b, consts)
+            if t is None or t <= 0.0:
+                continue
+            inner = a.args[0]
+            if _has_div_or_100(inner, consts):
+                continue
+            if not (isinstance(inner, ast.BinOp) and isinstance(inner.op, (ast.Sub, ast.Add))):
+                continue
+            for lhs, rhs in ((inner.left, inner.right), (inner.right, inner.left)):
+                c = _lit(rhs, consts)
+                if c is None or c == 0.0:
+                    continue
+                for v in _names(lhs):
+                    out.append((v, t, abs(c), getattr(n, 'lineno', 0)))
+    return out
+
+
+def printed_pcts(tree):
+    """{V: [P]} -- an f-string field carrying V whose following text begins with % or 'per cent'"""
+    out = {}
+    for n in ast.walk(tree):
+        if not isinstance(n, ast.JoinedStr):
+            continue
+        vals = n.values
+        for i, part in enumerate(vals):
+            if not isinstance(part, ast.FormattedValue):
+                continue
+            nxt = vals[i + 1] if i + 1 < len(vals) else None
+            txt = nxt.value if isinstance(nxt, ast.Constant) and isinstance(nxt.value, str) else ''
+            if not (txt.lstrip().startswith('%') or txt.lstrip().lower().startswith('per cent')):
+                continue
+            for v in _names(part.value):
+                out.setdefault(v, []).append(part.value)
+    return out
+
+
+W, reach, blind2 = [], 0, 0
+for p in files:
+    src = open(p, encoding='utf-8', errors='replace').read()
+    try:
+        tree = ast.parse(src)
+    except SyntaxError:
+        continue
+    consts = {}
+    for n in ast.walk(tree):
+        if isinstance(n, ast.Assign) and len(n.targets) == 1 and isinstance(n.targets[0], ast.Name):
+            vv = _lit(n.value, {})
+            if vv is not None:
+                consts[n.targets[0].id] = vv
+    pcts = printed_pcts(tree)
+    pb = pinned_bounds(tree, consts)
+    reach += len(pb)
+    for v, t, c, line in pb:
+        B = 100.0 * t / c
+        if v not in pcts:
+            blind2 += 1
+            continue
+        if B <= PCT_FLOOR:                      # condition iii, the ONE registered threshold
+            continue
+        # ⛔ `P` BELOW IS THE WITHDRAWN READING, KEPT BESIDE THE CORRECTION (see `r7648+60.2`).
+        # Condition iii' wanted the receipt's own PRINTED per-cent for `V` and tried to read it
+        # off the literals inside the printed expression.  A printed field is an EXPRESSION, not
+        # a number: `{100*(Om_b/Om_fid-1):+.2f}%` carries the SCALE `Om_fid = 0.307`, so `P` came
+        # back `0.31` where the field prints `-36.35`.  Arm (7) caught it.  No static reading of
+        # the claim side exists, which is what the first registration said when it put the claim
+        # side in a human reading.  ⇒ iii' is WITHDRAWN; the net is iii on the widened reach, and
+        # `P` is printed only so the withdrawn reading can be seen rather than described.
+        lits = [abs(x) for e in pcts[v] for x in (_lit(m, consts) for m in ast.walk(e))
+                if x is not None and 0.0 < abs(x) < 100.0]
+        P = min(lits) if lits else float('nan')
+        W.append((os.path.relpath(p, ROOT), v, t, c, B, P, line))
+print(f"\n      pinned absolute bounds reached by the widened net : {reach}")
+print(f"      of those, no printed per-cent for the variable    : {blind2}")
+print(f"      CANDIDATE pairs under the widened rule            : {len(W)}")
+check(f"⛭ ARM ⑧ -- the widened net reaches more than ten times the first pass's 2 bounds, which was "
+      f"the first pass's actual failure ({reach} pinned bounds reached, {len(W)} candidates)",
+      reach > 20)
+_sb, _ = sweep_source(_BEFORE)
+check("⛭ ARM ⑥ -- the seed still holds on the widened rule: cc66's pre-repair form is reached and "
+      "flagged, and its repaired form is not", bool(_sb) and not sweep_source(_AFTER)[0])
+_first = {(r, v) for r, v, _t, _p, _s, _l in ALL}
+_wide = {(r, v) for r, v, _t, _c, _B, _P, _l in W}
+print()
+print("  ⛔ ** ARM ⑦ IS A FAIL AND IT IS THE USEFUL ONE. **  It predicted that neither first-pass")
+print("  candidate would flag, because each receipt prints a per-cent for its variable LARGER than")
+print("  its bound.  `M2_reabsorption_minimization`'s `Om_b` flagged anyway, at a claimed `P = 0.31`")
+print("  where the field actually prints `-36.35`.  *A printed field is an EXPRESSION, not a number:")
+print("  `{100*(Om_b/Om_fid-1):+.2f}%` carries the SCALE `Om_fid = 0.307`, and the rule read that")
+print("  constant as the printed figure.*  ⇒ Condition ⅲ′ is WITHDRAWN as defective, the net falls")
+print("  back to the already-registered ⅲ, and the claim side returns to the human reading the FIRST")
+print("  registration put it in.  The withdrawn `P` is printed below rather than described.")
+check("⛔ ARM ⑦ -- registered that neither first-pass candidate would flag under ⅲ′; one did, and "
+      "the reason is that no static reading of a printed field's VALUE exists -- the arm caught a "
+      "defect in the rule rather than in the corpus, which is why it was registered",
+      bool(_first & _wide))
+print(f"\n      {'B %':>8} {'P %':>8}  {'bound':>11}  {'pin':>12}  {'variable':<16} line  receipt")
+for rel, v, t, c, B, P, line in sorted(W, key=lambda r: -(r[4] / r[5]))[:40]:
+    print(f"      {B:>8.2f} {P:>8.2f}  {t:>11.5g}  {c:>12.6g}  {v:<16} {line:>4}  {rel[9:][:58]}")
+if len(W) > 40:
+    print(f"      ... and {len(W) - 40} more, all in `candidates.json`")
+json.dump(dict(pass1=[dict(receipt=r, var=v, bound=t, pct=p, scale=s, line=l)
+                      for r, v, t, p, s, l in sorted(ALL, key=lambda r: -r[3])],
+               pass2=[dict(receipt=r, var=v, bound=t, pin=c, bound_pct=B, printed_pct=P, line=l)
+                      for r, v, t, c, B, P, l in sorted(W, key=lambda r: -(r[4] / r[5]))],
+               reach=reach, blind_pass1=blind_total, blind_pass2=blind2),
+          open(os.path.join(HERE, 'candidates.json'), 'w'), indent=1)
+
 print("\n" + "=" * 108)
 print(f"  {len(_fail)} failure(s)")
 for f in _fail:

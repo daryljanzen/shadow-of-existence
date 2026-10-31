@@ -1,18 +1,862 @@
-[
- {
-  "receipt": "receipts/P15_CR_cosmology/P15_the_ratio_is_the_onset_in_imported_units.py",
-  "var": "rows",
-  "bound": 0.05,
-  "pct": 2.5,
-  "scale": 2.0,
-  "line": 169
- },
- {
-  "receipt": "receipts/P15_CR_cosmology/M2_reabsorption_minimization.py",
-  "var": "Om_b",
-  "bound": 0.005,
-  "pct": 1.6286644951140066,
-  "scale": 0.307,
-  "line": 73
- }
-]
+{
+ "pass1": [
+  {
+   "receipt": "receipts/P15_CR_cosmology/P15_the_ratio_is_the_onset_in_imported_units.py",
+   "var": "rows",
+   "bound": 0.05,
+   "pct": 2.5,
+   "scale": 2.0,
+   "line": 169
+  },
+  {
+   "receipt": "receipts/P15_CR_cosmology/M2_reabsorption_minimization.py",
+   "var": "Om_b",
+   "bound": 0.005,
+   "pct": 1.6286644951140066,
+   "scale": 0.307,
+   "line": 73
+  }
+ ],
+ "pass2": [
+  {
+   "receipt": "receipts/P15_CR_cosmology/P15_damping_reabsorption.py",
+   "var": "dlnoc",
+   "bound": 0.005,
+   "pin": 0.295,
+   "bound_pct": 1.6949152542372883,
+   "printed_pct": 0.01,
+   "line": 112
+  },
+  {
+   "receipt": "receipts/P15_CR_cosmology/P15_damping_reabsorption.py",
+   "var": "dlnob",
+   "bound": 0.005,
+   "pin": 0.305,
+   "bound_pct": 1.639344262295082,
+   "printed_pct": 0.01,
+   "line": 111
+  },
+  {
+   "receipt": "receipts/P15_CR_cosmology/P15_the_crossing_spectrum_reproduces_on_a_second_instrument_and_the_172_is_the_radiation_free_ruler.py",
+   "var": "D",
+   "bound": 0.4,
+   "pin": 1.0,
+   "bound_pct": 40.0,
+   "printed_pct": 1.0,
+   "line": 413
+  },
+  {
+   "receipt": "receipts/P15_CR_cosmology/C4_driving_envelope.py",
+   "var": "_x_lim",
+   "bound": 0.3,
+   "pin": 1.0,
+   "bound_pct": 30.0,
+   "printed_pct": 1.0,
+   "line": 174
+  },
+  {
+   "receipt": "receipts/P15_CR_cosmology/C4_driving_envelope.py",
+   "var": "_x_entry",
+   "bound": 0.3,
+   "pin": 1.0,
+   "bound_pct": 30.0,
+   "printed_pct": 1.0,
+   "line": 174
+  },
+  {
+   "receipt": "receipts/P15_CR_cosmology/P15_the_held_period_estimator_reaches_below_the_floor_and_the_tooth_that_would_decide_cannot_be_applied.py",
+   "var": "WIN",
+   "bound": 0.2,
+   "pin": 1.0,
+   "bound_pct": 20.0,
+   "printed_pct": 1.0,
+   "line": 395
+  },
+  {
+   "receipt": "receipts/L557_the_correction_stopped_at_the_sentence/R1_the_correction_stopped_at_the_sentence_and_the_number_it_defines_was_left_behind.py",
+   "var": "env",
+   "bound": 0.5,
+   "pin": 3.0,
+   "bound_pct": 16.666666666666668,
+   "printed_pct": 1.0,
+   "line": 235
+  },
+  {
+   "receipt": "receipts/P15_CR_cosmology/C57_the_cr_peaks_are_not_at_its_own_la.py",
+   "var": "sc",
+   "bound": 0.1,
+   "pin": 1.0,
+   "bound_pct": 10.0,
+   "printed_pct": 1.0,
+   "line": 86
+  },
+  {
+   "receipt": "receipts/P15_CR_cosmology/C57_the_cr_peaks_are_not_at_its_own_la.py",
+   "var": "sl",
+   "bound": 0.1,
+   "pin": 1.0,
+   "bound_pct": 10.0,
+   "printed_pct": 1.0,
+   "line": 86
+  },
+  {
+   "receipt": "receipts/P15_CR_cosmology/C57_the_cr_peaks_are_not_at_its_own_la.py",
+   "var": "sc",
+   "bound": 0.1,
+   "pin": 1.0,
+   "bound_pct": 10.0,
+   "printed_pct": 1.0,
+   "line": 91
+  },
+  {
+   "receipt": "receipts/P15_CR_cosmology/P15_the_damping_to_comb_ratio_picks_the_crossing_and_the_leaf_clock_out_of_four.py",
+   "var": "ratios",
+   "bound": 0.1,
+   "pin": 1.0,
+   "bound_pct": 10.0,
+   "printed_pct": 1.0,
+   "line": 208
+  },
+  {
+   "receipt": "receipts/P15_CR_cosmology/M2_reabsorption_minimization.py",
+   "var": "Om_b",
+   "bound": 0.005,
+   "pin": 0.1954,
+   "bound_pct": 2.5588536335721597,
+   "printed_pct": 0.307,
+   "line": 73
+  },
+  {
+   "receipt": "receipts/L557_the_correction_stopped_at_the_sentence/R1_the_correction_stopped_at_the_sentence_and_the_number_it_defines_was_left_behind.py",
+   "var": "env",
+   "bound": 0.5,
+   "pin": 6.0,
+   "bound_pct": 8.333333333333334,
+   "printed_pct": 1.0,
+   "line": 235
+  },
+  {
+   "receipt": "receipts/P15_CR_cosmology/P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number.py",
+   "var": "arm",
+   "bound": 0.08,
+   "pin": 1.0,
+   "bound_pct": 8.0,
+   "printed_pct": 1.0,
+   "line": 234
+  },
+  {
+   "receipt": "receipts/P15_CR_cosmology/P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number.py",
+   "var": "ctl",
+   "bound": 0.08,
+   "pin": 1.0,
+   "bound_pct": 8.0,
+   "printed_pct": 1.0,
+   "line": 234
+  },
+  {
+   "receipt": "receipts/L557_the_correction_stopped_at_the_sentence/R1_the_correction_stopped_at_the_sentence_and_the_number_it_defines_was_left_behind.py",
+   "var": "env",
+   "bound": 0.5,
+   "pin": 8.0,
+   "bound_pct": 6.25,
+   "printed_pct": 1.0,
+   "line": 236
+  },
+  {
+   "receipt": "receipts/P15_CR_cosmology/P15_the_crossing_spectrum_reproduces_on_a_second_instrument_and_the_172_is_the_radiation_free_ruler.py",
+   "var": "D",
+   "bound": 0.05,
+   "pin": 1.0,
+   "bound_pct": 5.0,
+   "printed_pct": 1.0,
+   "line": 247
+  },
+  {
+   "receipt": "receipts/L557_the_correction_stopped_at_the_sentence/R1_the_correction_stopped_at_the_sentence_and_the_number_it_defines_was_left_behind.py",
+   "var": "env",
+   "bound": 0.5,
+   "pin": 16.0,
+   "bound_pct": 3.125,
+   "printed_pct": 1.0,
+   "line": 236
+  },
+  {
+   "receipt": "receipts/P15_CR_cosmology/C40_the_pair_was_quoted_against_a_rounding.py",
+   "var": "d_meas",
+   "bound": 0.01,
+   "pin": 0.44,
+   "bound_pct": 2.272727272727273,
+   "printed_pct": NaN,
+   "line": 118
+  },
+  {
+   "receipt": "receipts/P15_CR_cosmology/P15_the_acceptance_does_not_move_under_refinement_and_three_of_the_twelve_axes_could_not_have_moved_it.py",
+   "var": "nar",
+   "bound": 0.01,
+   "pin": 0.128,
+   "bound_pct": 7.8125,
+   "printed_pct": 1.0,
+   "line": 213
+  },
+  {
+   "receipt": "receipts/P15_CR_cosmology/P15_the_damping_to_comb_ratio_picks_the_crossing_and_the_leaf_clock_out_of_four.py",
+   "var": "ratios",
+   "bound": 0.05,
+   "pin": 1.0,
+   "bound_pct": 5.0,
+   "printed_pct": 1.0,
+   "line": 205
+  },
+  {
+   "receipt": "receipts/P15_CR_cosmology/P15_the_damping_to_comb_ratio_picks_the_crossing_and_the_leaf_clock_out_of_four.py",
+   "var": "WIN",
+   "bound": 0.05,
+   "pin": 1.0,
+   "bound_pct": 5.0,
+   "printed_pct": 1.0,
+   "line": 205
+  },
+  {
+   "receipt": "receipts/P15_CR_cosmology/P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number.py",
+   "var": "NEW",
+   "bound": 0.04,
+   "pin": 1.0,
+   "bound_pct": 4.0,
+   "printed_pct": 1.0,
+   "line": 142
+  },
+  {
+   "receipt": "receipts/P15_CR_cosmology/C57_the_cr_peaks_are_not_at_its_own_la.py",
+   "var": "sl",
+   "bound": 0.03,
+   "pin": 1.0,
+   "bound_pct": 3.0,
+   "printed_pct": 1.0,
+   "line": 89
+  },
+  {
+   "receipt": "receipts/P15_CR_cosmology/C4_driving_envelope.py",
+   "var": "_x_lim",
+   "bound": 0.02,
+   "pin": 1.0,
+   "bound_pct": 2.0,
+   "printed_pct": 1.0,
+   "line": 173
+  },
+  {
+   "receipt": "receipts/P15_CR_cosmology/C4_driving_envelope.py",
+   "var": "_x_entry",
+   "bound": 0.02,
+   "pin": 1.0,
+   "bound_pct": 2.0,
+   "printed_pct": 1.0,
+   "line": 173
+  },
+  {
+   "receipt": "receipts/P15_CR_cosmology/C67_the_hundred_and_forty_eight_are_re_stated_and_the_grain_clause_decides_twenty_three_so_the_negative_does_not_fire_but_the_paper_half_is_held_and_not_owed_so_cc66_170s_split_inverts.py",
+   "var": "_pap_mh",
+   "bound": 5.0,
+   "pin": 56.5,
+   "bound_pct": 8.849557522123893,
+   "printed_pct": NaN,
+   "line": 424
+  },
+  {
+   "receipt": "receipts/P15_CR_cosmology/M2_reabsorption_minimization.py",
+   "var": "r",
+   "bound": 0.15,
+   "pin": 8.41,
+   "bound_pct": 1.78359096313912,
+   "printed_pct": NaN,
+   "line": 107
+  },
+  {
+   "receipt": "receipts/P15_CR_cosmology/M2_reabsorption_minimization.py",
+   "var": "r",
+   "bound": 0.15,
+   "pin": 7.54,
+   "bound_pct": 1.9893899204244032,
+   "printed_pct": NaN,
+   "line": 109
+  },
+  {
+   "receipt": "receipts/P15_CR_cosmology/P15_the_acceptance_does_not_move_under_refinement_and_three_of_the_twelve_axes_could_not_have_moved_it.py",
+   "var": "np",
+   "bound": 0.01,
+   "pin": 0.128,
+   "bound_pct": 7.8125,
+   "printed_pct": NaN,
+   "line": 213
+  },
+  {
+   "receipt": "receipts/P15_CR_cosmology/P15_the_acoustic_contrast_is_not_in_the_source_and_the_projection_makes_it_without_the_distance.py",
+   "var": "_SWING_PC",
+   "bound": 0.005,
+   "pin": 0.34,
+   "bound_pct": 1.4705882352941175,
+   "printed_pct": NaN,
+   "line": 688
+  },
+  {
+   "receipt": "receipts/P15_CR_cosmology/P15_the_crossing_spectrum_reproduces_on_a_second_instrument_and_the_172_is_the_radiation_free_ruler.py",
+   "var": "SKY_R12",
+   "bound": 0.03,
+   "pin": 1.0,
+   "bound_pct": 3.0,
+   "printed_pct": 1.0,
+   "line": 456
+  },
+  {
+   "receipt": "receipts/P15_CR_cosmology/P15_the_crossing_spectrum_reproduces_on_a_second_instrument_and_the_172_is_the_radiation_free_ruler.py",
+   "var": "D",
+   "bound": 0.03,
+   "pin": 1.0,
+   "bound_pct": 3.0,
+   "printed_pct": 1.0,
+   "line": 456
+  },
+  {
+   "receipt": "receipts/P15_CR_cosmology/P15_the_crossing_spectrum_reproduces_on_a_second_instrument_and_the_172_is_the_radiation_free_ruler.py",
+   "var": "SKY_R13",
+   "bound": 0.03,
+   "pin": 1.0,
+   "bound_pct": 3.0,
+   "printed_pct": 1.0,
+   "line": 457
+  },
+  {
+   "receipt": "receipts/P15_CR_cosmology/P15_the_crossing_spectrum_reproduces_on_a_second_instrument_and_the_172_is_the_radiation_free_ruler.py",
+   "var": "D",
+   "bound": 0.03,
+   "pin": 1.0,
+   "bound_pct": 3.0,
+   "printed_pct": 1.0,
+   "line": 457
+  },
+  {
+   "receipt": "receipts/P15_CR_cosmology/P15_the_envelope_turnover_is_stated_on_a_third_equality_and_the_leaf_background_moves_it.py",
+   "var": "Z_EQ_ENV",
+   "bound": 0.03,
+   "pin": 1.0,
+   "bound_pct": 3.0,
+   "printed_pct": 1.0,
+   "line": 126
+  },
+  {
+   "receipt": "receipts/P15_CR_cosmology/P15_the_envelope_turnover_is_stated_on_a_third_equality_and_the_leaf_background_moves_it.py",
+   "var": "CTL",
+   "bound": 0.03,
+   "pin": 1.0,
+   "bound_pct": 3.0,
+   "printed_pct": 1.0,
+   "line": 126
+  },
+  {
+   "receipt": "receipts/P15_CR_cosmology/P15_the_carrier_separation_on_L_p_is_the_combs_peak_count_not_the_carrier_and_the_closure_has_no_number_because_the_degeneracy_is_sampling_invariant.py",
+   "var": "_dc0_load",
+   "bound": 0.02,
+   "pin": 1.0,
+   "bound_pct": 2.0,
+   "printed_pct": 1.0,
+   "line": 355
+  },
+  {
+   "receipt": "receipts/P15_CR_cosmology/P15_the_carrier_separation_on_L_p_is_the_combs_peak_count_not_the_carrier_and_the_closure_has_no_number_because_the_degeneracy_is_sampling_invariant.py",
+   "var": "_dla_load",
+   "bound": 0.02,
+   "pin": 1.0,
+   "bound_pct": 2.0,
+   "printed_pct": 1.0,
+   "line": 355
+  },
+  {
+   "receipt": "receipts/P15_CR_cosmology/P15_the_envelope_turnover_is_stated_on_a_third_equality_and_the_leaf_background_moves_it.py",
+   "var": "ARM",
+   "bound": 0.02,
+   "pin": 1.0,
+   "bound_pct": 2.0,
+   "printed_pct": 1.0,
+   "line": 145
+  },
+  {
+   "receipt": "receipts/P15_CR_cosmology/P15_the_envelope_turnover_is_stated_on_a_third_equality_and_the_leaf_background_moves_it.py",
+   "var": "CTL",
+   "bound": 0.02,
+   "pin": 1.0,
+   "bound_pct": 2.0,
+   "printed_pct": 1.0,
+   "line": 145
+  },
+  {
+   "receipt": "receipts/P15_CR_cosmology/P15_the_free_streaming_knob_is_common_to_both_arms_and_the_switch_sweep_finds_no_further_shadow.py",
+   "var": "_L",
+   "bound": 0.02,
+   "pin": 1.0,
+   "bound_pct": 2.0,
+   "printed_pct": 1.0,
+   "line": 1057
+  },
+  {
+   "receipt": "receipts/P15_CR_cosmology/P15_the_crossing_spectrum_reproduces_on_a_second_instrument_and_the_172_is_the_radiation_free_ruler.py",
+   "var": "i",
+   "bound": 0.015,
+   "pin": 1.0,
+   "bound_pct": 1.5,
+   "printed_pct": 1.0,
+   "line": 239
+  },
+  {
+   "receipt": "receipts/P15_CR_cosmology/P15_the_crossing_spectrum_reproduces_on_a_second_instrument_and_the_172_is_the_radiation_free_ruler.py",
+   "var": "e",
+   "bound": 0.015,
+   "pin": 1.0,
+   "bound_pct": 1.5,
+   "printed_pct": 1.0,
+   "line": 239
+  },
+  {
+   "receipt": "receipts/P15_CR_cosmology/P15_the_crossing_spectrum_reproduces_on_a_second_instrument_and_the_172_is_the_radiation_free_ruler.py",
+   "var": "i",
+   "bound": 0.015,
+   "pin": 1.0,
+   "bound_pct": 1.5,
+   "printed_pct": 1.0,
+   "line": 340
+  },
+  {
+   "receipt": "receipts/P15_CR_cosmology/P15_the_crossing_spectrum_reproduces_on_a_second_instrument_and_the_172_is_the_radiation_free_ruler.py",
+   "var": "l",
+   "bound": 0.015,
+   "pin": 1.0,
+   "bound_pct": 1.5,
+   "printed_pct": 1.0,
+   "line": 340
+  },
+  {
+   "receipt": "receipts/P15_CR_cosmology/P15_the_expansion_in_the_de_sitter_presentation_is_not_bounded_either_because_the_sphere_lives_at_zero_mass_and_the_observer_at_the_nariai_one_and_both_closed_kernels_are_excluded_by_the_comb.py",
+   "var": "rows",
+   "bound": 1.0,
+   "pin": 49.4,
+   "bound_pct": 2.0242914979757085,
+   "printed_pct": NaN,
+   "line": 253
+  },
+  {
+   "receipt": "receipts/P15_CR_cosmology/P15_the_held_period_estimator_reaches_below_the_floor_and_the_tooth_that_would_decide_cannot_be_applied.py",
+   "var": "CUM",
+   "bound": 0.2,
+   "pin": 1.0,
+   "bound_pct": 20.0,
+   "printed_pct": 1.0,
+   "line": 395
+  },
+  {
+   "receipt": "receipts/P15_CR_cosmology/P15_the_held_period_estimator_reaches_below_the_floor_and_the_tooth_that_would_decide_cannot_be_applied.py",
+   "var": "WEc",
+   "bound": 0.1,
+   "pin": 1.0,
+   "bound_pct": 10.0,
+   "printed_pct": 1.0,
+   "line": 405
+  },
+  {
+   "receipt": "receipts/P15_CR_cosmology/P15_the_kernel_carries_no_sound_speed_so_the_fork_had_no_subject_and_r7108s_equation_is_the_c_s_equals_one_member_which_is_exactly_the_tensor_equation.py",
+   "var": "_gap",
+   "bound": 0.05,
+   "pin": 3.24,
+   "bound_pct": 1.5432098765432098,
+   "printed_pct": NaN,
+   "line": 201
+  },
+  {
+   "receipt": "receipts/P15_CR_cosmology/P15_the_laws_six_of_seven_is_five_at_the_quoted_floor_which_is_one_phases_and_with_the_instruments_own_error_divided_out_all_seven_hold.py",
+   "var": "t",
+   "bound": 0.0374,
+   "pin": 1.0,
+   "bound_pct": 3.74,
+   "printed_pct": NaN,
+   "line": 156
+  },
+  {
+   "receipt": "receipts/P15_CR_cosmology/P15_the_laws_six_of_seven_is_five_at_the_quoted_floor_which_is_one_phases_and_with_the_instruments_own_error_divided_out_all_seven_hold.py",
+   "var": "t",
+   "bound": 0.05,
+   "pin": 1.0,
+   "bound_pct": 5.0,
+   "printed_pct": NaN,
+   "line": 157
+  },
+  {
+   "receipt": "receipts/P15_CR_cosmology/P15_the_laws_six_of_seven_is_five_at_the_quoted_floor_which_is_one_phases_and_with_the_instruments_own_error_divided_out_all_seven_hold.py",
+   "var": "t",
+   "bound": 0.0374,
+   "pin": 1.0,
+   "bound_pct": 3.74,
+   "printed_pct": NaN,
+   "line": 201
+  },
+  {
+   "receipt": "receipts/P15_CR_cosmology/P15_the_peak_plane_survives_the_merge_the_sky_lands_within_one_sigma_of_the_control_and_a_full_driving_unit_is_thirteen_but_half_the_draws_lose_the_fourth_peak.py",
+   "var": "SPH",
+   "bound": 1.5,
+   "pin": 5.8,
+   "bound_pct": 25.862068965517242,
+   "printed_pct": 0.01,
+   "line": 486
+  },
+  {
+   "receipt": "receipts/P15_CR_cosmology/P15_the_term_mix_has_the_shape_the_offset_needs_and_over_delivers_its_size.py",
+   "var": "RAT",
+   "bound": 0.25,
+   "pin": 1.0,
+   "bound_pct": 25.0,
+   "printed_pct": 1.0,
+   "line": 334
+  },
+  {
+   "receipt": "receipts/P15_CR_cosmology/P15_the_term_mix_has_the_shape_the_offset_needs_and_over_delivers_its_size.py",
+   "var": "R_ALL",
+   "bound": 0.25,
+   "pin": 1.0,
+   "bound_pct": 25.0,
+   "printed_pct": 1.0,
+   "line": 334
+  },
+  {
+   "receipt": "receipts/P15_CR_cosmology/P15_the_signature_collapses_at_the_adjudicated_ratio_and_the_endpoint_sets_its_sign.py",
+   "var": "c1",
+   "bound": 0.1,
+   "pin": 1.0,
+   "bound_pct": 10.0,
+   "printed_pct": 1.0,
+   "line": 409
+  },
+  {
+   "receipt": "receipts/P15_CR_cosmology/P15_the_step_survives_a_differential_estimator_and_no_single_bilinear_term_carries_the_shared_step_though_the_doppler_leads_it.py",
+   "var": "dA",
+   "bound": 0.1,
+   "pin": 1.0,
+   "bound_pct": 10.0,
+   "printed_pct": 1.0,
+   "line": 324
+  },
+  {
+   "receipt": "receipts/P15_CR_cosmology/P15_the_step_survives_a_differential_estimator_and_no_single_bilinear_term_carries_the_shared_step_though_the_doppler_leads_it.py",
+   "var": "absdep",
+   "bound": 0.1,
+   "pin": 1.0,
+   "bound_pct": 10.0,
+   "printed_pct": 1.0,
+   "line": 324
+  },
+  {
+   "receipt": "receipts/P15_CR_cosmology/P15_the_step_survives_a_differential_estimator_and_no_single_bilinear_term_carries_the_shared_step_though_the_doppler_leads_it.py",
+   "var": "dC",
+   "bound": 0.1,
+   "pin": 1.0,
+   "bound_pct": 10.0,
+   "printed_pct": 1.0,
+   "line": 324
+  },
+  {
+   "receipt": "receipts/P15_CR_cosmology/P15_the_phase_is_the_driving_and_the_undriven_arms_agree.py",
+   "var": "ON",
+   "bound": 0.05,
+   "pin": 0.615,
+   "bound_pct": 8.130081300813009,
+   "printed_pct": 1.0,
+   "line": 208
+  },
+  {
+   "receipt": "receipts/P15_CR_cosmology/P15_the_phase_is_the_driving_and_the_undriven_arms_agree.py",
+   "var": "abs",
+   "bound": 0.05,
+   "pin": 0.615,
+   "bound_pct": 8.130081300813009,
+   "printed_pct": 1.0,
+   "line": 208
+  },
+  {
+   "receipt": "receipts/P15_CR_cosmology/P15_the_selection_does_not_truncate_so_the_thirteen_sigma_stands_at_twelve_point_nine_and_the_peak_that_goes_missing_is_the_third_not_the_fourth.py",
+   "var": "N_CORR",
+   "bound": 0.08,
+   "pin": 1.0,
+   "bound_pct": 8.0,
+   "printed_pct": 1.0,
+   "line": 493
+  },
+  {
+   "receipt": "receipts/P15_CR_cosmology/P15_the_selection_does_not_truncate_so_the_thirteen_sigma_stands_at_twelve_point_nine_and_the_peak_that_goes_missing_is_the_third_not_the_fourth.py",
+   "var": "NSKY_CORR",
+   "bound": 0.08,
+   "pin": 1.0,
+   "bound_pct": 8.0,
+   "printed_pct": 1.0,
+   "line": 494
+  },
+  {
+   "receipt": "receipts/P15_CR_cosmology/P15_the_licensed_configuration_moves_neither_statistic_and_the_swing_was_read_above_where_it_converges.py",
+   "var": "C",
+   "bound": 0.0005,
+   "pin": 0.0075,
+   "bound_pct": 6.666666666666667,
+   "printed_pct": 1.0,
+   "line": 282
+  },
+  {
+   "receipt": "receipts/P15_CR_cosmology/P15_the_selection_does_not_truncate_so_the_thirteen_sigma_stands_at_twelve_point_nine_and_the_peak_that_goes_missing_is_the_third_not_the_fourth.py",
+   "var": "S4",
+   "bound": 0.05,
+   "pin": 1.0,
+   "bound_pct": 5.0,
+   "printed_pct": 1.0,
+   "line": 290
+  },
+  {
+   "receipt": "receipts/P15_CR_cosmology/P15_the_spacing_is_right_and_the_acoustic_phase_is_wrong.py",
+   "var": "ASY_C",
+   "bound": 0.03,
+   "pin": 0.975,
+   "bound_pct": 3.076923076923077,
+   "printed_pct": 1.0,
+   "line": 224
+  },
+  {
+   "receipt": "receipts/P15_CR_cosmology/P15_the_selection_does_not_truncate_so_the_thirteen_sigma_stands_at_twelve_point_nine_and_the_peak_that_goes_missing_is_the_third_not_the_fourth.py",
+   "var": "S4",
+   "bound": 0.03,
+   "pin": 1.0,
+   "bound_pct": 3.0,
+   "printed_pct": 1.0,
+   "line": 287
+  },
+  {
+   "receipt": "receipts/P15_CR_cosmology/P15_the_selection_does_not_truncate_so_the_thirteen_sigma_stands_at_twelve_point_nine_and_the_peak_that_goes_missing_is_the_third_not_the_fourth.py",
+   "var": "S4",
+   "bound": 0.03,
+   "pin": 1.0,
+   "bound_pct": 3.0,
+   "printed_pct": 1.0,
+   "line": 288
+  },
+  {
+   "receipt": "receipts/P15_CR_cosmology/P15_the_two_readings_are_different_quantities_and_the_projection_width_is_the_unmeasured_one.py",
+   "var": "rr_",
+   "bound": 0.03,
+   "pin": 1.0,
+   "bound_pct": 3.0,
+   "printed_pct": 1.0,
+   "line": 363
+  },
+  {
+   "receipt": "receipts/P15_CR_cosmology/P15_the_two_readings_are_different_quantities_and_the_projection_width_is_the_unmeasured_one.py",
+   "var": "re_",
+   "bound": 0.03,
+   "pin": 1.0,
+   "bound_pct": 3.0,
+   "printed_pct": 1.0,
+   "line": 363
+  },
+  {
+   "receipt": "receipts/P15_CR_cosmology/P15_the_ratio_is_the_onset_in_imported_units.py",
+   "var": "rows",
+   "bound": 0.05,
+   "pin": 1.72,
+   "bound_pct": 2.9069767441860463,
+   "printed_pct": 1.0,
+   "line": 169
+  },
+  {
+   "receipt": "receipts/P15_CR_cosmology/P15_the_low_multipole_floor_moves_with_no_background_and_the_factor_two_is_the_late_isw.py",
+   "var": "FAC",
+   "bound": 0.02,
+   "pin": 1.0,
+   "bound_pct": 2.0,
+   "printed_pct": 1.0,
+   "line": 331
+  },
+  {
+   "receipt": "receipts/P15_CR_cosmology/P15_the_low_multipole_floor_moves_with_no_background_and_the_factor_two_is_the_late_isw.py",
+   "var": "FAC",
+   "bound": 0.02,
+   "pin": 1.0,
+   "bound_pct": 2.0,
+   "printed_pct": 1.0,
+   "line": 331
+  },
+  {
+   "receipt": "receipts/P15_CR_cosmology/P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck.py",
+   "var": "v",
+   "bound": 0.02,
+   "pin": 1.0,
+   "bound_pct": 2.0,
+   "printed_pct": 1.0,
+   "line": 675
+  },
+  {
+   "receipt": "receipts/P15_CR_cosmology/P15_the_optical_depth_is_a_photon_path_observable_so_it_takes_the_stacking_rate_and_the_visibility_ruling_is_withdrawn.py",
+   "var": "AS_IS",
+   "bound": 0.02,
+   "pin": 1.0,
+   "bound_pct": 2.0,
+   "printed_pct": 1.0,
+   "line": 371
+  },
+  {
+   "receipt": "receipts/P15_CR_cosmology/P15_the_optical_depth_is_a_photon_path_observable_so_it_takes_the_stacking_rate_and_the_visibility_ruling_is_withdrawn.py",
+   "var": "RULED",
+   "bound": 0.02,
+   "pin": 1.0,
+   "bound_pct": 2.0,
+   "printed_pct": 1.0,
+   "line": 371
+  },
+  {
+   "receipt": "receipts/P15_CR_cosmology/P15_the_visibilitys_clock_is_the_one_the_kernel_reads_and_the_comb_votes_against_the_alternative.py",
+   "var": "g",
+   "bound": 0.02,
+   "pin": 1.0,
+   "bound_pct": 2.0,
+   "printed_pct": 1.0,
+   "line": 372
+  },
+  {
+   "receipt": "receipts/P15_CR_cosmology/P15_the_windows_phase_spread_is_nearly_equal_because_the_visibility_widens_as_the_leaf_clock_slows.py",
+   "var": "FW",
+   "bound": 0.02,
+   "pin": 1.0,
+   "bound_pct": 2.0,
+   "printed_pct": 1.0,
+   "line": 316
+  },
+  {
+   "receipt": "receipts/P15_CR_cosmology/P15_the_windows_phase_spread_is_nearly_equal_because_the_visibility_widens_as_the_leaf_clock_slows.py",
+   "var": "DR",
+   "bound": 0.02,
+   "pin": 1.0,
+   "bound_pct": 2.0,
+   "printed_pct": 1.0,
+   "line": 316
+  },
+  {
+   "receipt": "receipts/P15_CR_cosmology/P15_the_step_is_the_excesss_own_and_it_sits_at_the_second_acoustic_peak_and_none_of_the_four_produces_it.py",
+   "var": "np",
+   "bound": 0.015,
+   "pin": 1.0,
+   "bound_pct": 1.5,
+   "printed_pct": 1.0,
+   "line": 323
+  },
+  {
+   "receipt": "receipts/P15_CR_cosmology/P15_the_step_is_the_excesss_own_and_it_sits_at_the_second_acoustic_peak_and_none_of_the_four_produces_it.py",
+   "var": "LOC",
+   "bound": 0.015,
+   "pin": 1.0,
+   "bound_pct": 1.5,
+   "printed_pct": 1.0,
+   "line": 323
+  },
+  {
+   "receipt": "receipts/P15_CR_cosmology/P15_the_step_is_the_excesss_own_and_it_sits_at_the_second_acoustic_peak_and_none_of_the_four_produces_it.py",
+   "var": "PK",
+   "bound": 0.015,
+   "pin": 1.0,
+   "bound_pct": 1.5,
+   "printed_pct": 1.0,
+   "line": 323
+  },
+  {
+   "receipt": "receipts/P15_CR_cosmology/P15_the_locator_is_good_to_three_hundredths_and_the_fourth_peaks_residual_is_the_controls_too.py",
+   "var": "SKY",
+   "bound": 0.2,
+   "pin": 5.84,
+   "bound_pct": 3.4246575342465753,
+   "printed_pct": 3.0,
+   "line": 349
+  },
+  {
+   "receipt": "receipts/P15_CR_cosmology/P15_the_locator_is_good_to_three_hundredths_and_the_fourth_peaks_residual_is_the_controls_too.py",
+   "var": "FINE",
+   "bound": 0.2,
+   "pin": 5.84,
+   "bound_pct": 3.4246575342465753,
+   "printed_pct": 3.0,
+   "line": 349
+  },
+  {
+   "receipt": "receipts/P15_CR_cosmology/P15_the_optical_depth_is_a_photon_path_observable_so_it_takes_the_stacking_rate_and_the_visibility_ruling_is_withdrawn.py",
+   "var": "AS_IS",
+   "bound": 12.0,
+   "pin": 1089.0,
+   "bound_pct": 1.1019283746556474,
+   "printed_pct": 1.0,
+   "line": 413
+  },
+  {
+   "receipt": "receipts/P15_CR_cosmology/P15_the_locator_is_good_to_three_hundredths_and_the_fourth_peaks_residual_is_the_controls_too.py",
+   "var": "SKY",
+   "bound": 0.0005,
+   "pin": 0.049,
+   "bound_pct": 1.0204081632653061,
+   "printed_pct": 3.0,
+   "line": 465
+  },
+  {
+   "receipt": "receipts/P15_CR_cosmology/P15_the_locator_is_good_to_three_hundredths_and_the_fourth_peaks_residual_is_the_controls_too.py",
+   "var": "FINE",
+   "bound": 0.0005,
+   "pin": 0.049,
+   "bound_pct": 1.0204081632653061,
+   "printed_pct": 3.0,
+   "line": 465
+  },
+  {
+   "receipt": "receipts/P15_CR_cosmology/P15_the_period_difference_null_is_not_significant_because_the_control_has_no_measurable_period_and_the_offset_is_exactly_a_phase_drift_at_fixed_ell_A.py",
+   "var": "_p",
+   "bound": 0.02,
+   "pin": 0.54,
+   "bound_pct": 3.7037037037037033,
+   "printed_pct": NaN,
+   "line": 226
+  },
+  {
+   "receipt": "receipts/P15_CR_cosmology/P15_the_retention_is_the_combs_average_over_the_kernels_own_k_acceptance_and_the_law_has_no_fitted_coefficient.py",
+   "var": "narrow",
+   "bound": 5.0,
+   "pin": 12.8,
+   "bound_pct": 39.0625,
+   "printed_pct": NaN,
+   "line": 215
+  },
+  {
+   "receipt": "receipts/P15_CR_cosmology/P15_the_two_channels_compose_multiplicatively_and_the_pair_is_flat_where_the_excess_grows.py",
+   "var": "JMEAN",
+   "bound": 0.05,
+   "pin": 1.0,
+   "bound_pct": 5.0,
+   "printed_pct": NaN,
+   "line": 418
+  },
+  {
+   "receipt": "receipts/P15_CR_cosmology/P15_the_two_channels_compose_multiplicatively_and_the_pair_is_flat_where_the_excess_grows.py",
+   "var": "SUM48",
+   "bound": 0.05,
+   "pin": 1.0,
+   "bound_pct": 5.0,
+   "printed_pct": NaN,
+   "line": 418
+  },
+  {
+   "receipt": "receipts/P15_CR_cosmology/PEEB_peebles_on_the_set_rate.py",
+   "var": "_pct",
+   "bound": 0.005,
+   "pin": 0.107,
+   "bound_pct": 4.672897196261682,
+   "printed_pct": NaN,
+   "line": 82
+  }
+ ],
+ "reach": 2585,
+ "blind_pass1": 4566,
+ "blind_pass2": 2285
+}

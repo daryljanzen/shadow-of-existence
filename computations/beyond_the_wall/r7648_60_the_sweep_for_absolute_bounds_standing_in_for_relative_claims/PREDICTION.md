@@ -148,3 +148,58 @@ pinned population, which is most of the 4566.
 per cent and ⅲ′ is strictly sharper than ⅲ, since it compares against the receipt's own printed
 figure rather than against a fixed floor. The amendment widens WHERE the scale comes from, which is
 the limit the first registration had already named.*
+
+---
+
+# ⛔ AMENDMENT `r7648+60.2` — THE ADJUDICATION FOUND A SHARPER RULE THAN THE ORDER'S, AND IT IS REGISTERED HERE BEFORE IT IS RUN
+
+**Two things happened on the widened net and both are kept.**
+
+**ⅰ. Condition ⅲ′ is WITHDRAWN as defective, caught by its own registered arm ⑦.** It wanted the
+receipt's own printed per-cent for `V` and tried to read it off the literals inside the printed
+expression. *A printed field is an EXPRESSION, not a number:*
+`{100*(Om_b/Om_fid-1):+.2f}%` carries the scale `Om_fid = 0.307`, so the rule returned `P = 0.31`
+where the field prints `−36.35`. ⇒ **No static reading of a printed field's value exists**, which is
+what the first registration said when it put the claim side in a human reading. The net falls back
+to the already-registered ⅲ (`B > 1` per cent); the withdrawn `P` is printed beside each candidate
+rather than described.
+
+**ⅱ. AND THE READING OF THE CANDIDATES FOUND THE CLASS'S REAL DISCRIMINATOR, WHICH IS NOT
+"ABSOLUTE".** The widened net returned **93** candidates in **40** receipts, **30** of them on a
+real (non-unity) scale. Reading them:
+
+- `P15_damping_reabsorption:111` — `abs(dlnob + 0.305) < 0.005` beside the paper's `ω_b^{−0.31}`.
+  The bound is **exactly half a printed digit** of the claim, and the per-cent claim beside it
+  (*"a percent-level ω_b shifts it well under a percent"*) has its **own** gate on the next line.
+- `M2_reabsorption_minimization:73` — `abs(Om_b − 0.1954) < 0.005` with the relative claim held
+  separately by `abs(100*(Om_b/Om_fid − 1) + 36.35) < 1.0`.
+- `P15_the_ratio_is_the_onset_in_imported_units:169` — `abs(ratio − 1.72) < 0.05`, two-sided at the
+  printed value, and a wrong run fails it.
+
+⇒ ***Every one of them is PINNED AT A MEASURED VALUE, which makes an absolute bound two-sided and
+failable — and that is the healthy shape, not the defect.*** cc66's was `abs(d_om) > 0.01`:
+**one-sided, pinned at nothing.** So the discriminator the order reaches for is not *absolute versus
+relative* at all; **it is PINNED versus UNPINNED**, and "absolute" is how the one instance happened
+to present. *Before two shapes are identified by a label, check how many-to-one the label is on the
+object — the label "absolute bound" is many-to-one here, and almost all of what it covers is sound.*
+
+**THE THIRD PASS, fixed here before it is run.** A `(receipt, variable)` pair is a HIT when:
+
+- ⅰ″ **the bound is UNPINNED**: `abs(V) < t` or `abs(V) > t` — `abs` of an expression carrying `V`
+  with **no additive constant** inside it, `t` numeric, and no division or factor of 100 inside;
+- ⅱ″ the receipt **names a relative size for that same `V`** — either a normaliser `V/S` in a
+  per-cent context (pass 1's ⅱ) or a printed field carrying `V` followed by `%` (pass 2's ⅱ′);
+- ⅲ″ and, where a scale is available, the bound in per-cent terms exceeds one per cent.
+
+**Registered arms:**
+
+- ⑩ **THE SEED:** cc66's pre-repair `abs(d_om) > 0.01` is a HIT and its repaired form is not — and
+  **the three candidates read above are NOT hits**, because each is pinned. *The reading is
+  reproduced by the rule and not asserted; the arm that caught ⅲ′ is the reason this is checked.*
+- ⑪ **The hit count is small: under 20.** *A direction with a ceiling, not a guess at the answer —
+  and deliberately not scaled from cc66's one, which is `r7646`'s arm ⑦ mistake and is refused again.*
+- ⑫ **Arm ④ is already decided and is reported as it stands: NONE of the 93 candidates is in this
+  seat's own receipts** — 89 are in `P15_CR_cosmology` and 4 in `L557/R1_…`, none in this seat's
+  `S`-band. ⇒ **Arm ⑤ is therefore VACUOUS and is reported as vacuous, not as satisfied.** *A guard
+  that cannot fail on the data it is given is not a guard; an arm with no instance to score is not
+  a pass. The deliverable is a routed list, which is what arm ④ predicted.*
