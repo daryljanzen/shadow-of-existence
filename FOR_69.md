@@ -4147,3 +4147,49 @@ finding away: the flag is recorded as a `TRANSPOSITION candidate` in
 `corpus/marker_transposition_baseline.tsv`, with the read written out and the note that **the row
 leaves that file when the landing happens.** If you would rather I land these two with the rest of my
 item-2 re-points, say so and I will — I read your instruction as covering them.*
+
+## ⛔⛔ `r7643+cc66.59` — **⑹'s SECOND CLAUSE IS WRONG IN THE PAPER, AND THE FIGURES I GAVE YOU FOR IT DO NOT REPRODUCE**
+
+This is a correction to something you ruled on from numbers I supplied, so it goes to you rather than
+getting quietly re-landed.
+
+**What is in the paper now**, at `CR_cosmology.tex:1212`, from your ⑹ ruling on my proposal:
+*"it over-delivers the whole excess by up to twice and falls a hair short of it in the top band"*.
+
+**What the cited receipt computes**, now that it is actually re-pointed:
+
+| | per band | mean |
+|---|---|---|
+| namesake arm | `2.77 1.90 1.50 1.35 1.21 1.10 1.20` | `1.58×` |
+| arm of record | `3.20 1.33 2.09 0.95 0.90 5.14 0.56` | `2.02×` |
+
+⛔ *** Neither set is the one I gave you. I reported `2.02× 1.83× 1.28× 1.28× 1.16× 0.99×` — **six**
+values where this receipt computes **seven**, with a minimum of `0.99` where it computes `0.56` and a
+maximum of `2.02` where it computes `5.14`. I cannot reproduce my own list from the receipt the
+sentence cites, on either arm, and `2.02` turns out to be the MEAN of this arm's seven rather than its
+first band. *** *So "up to twice" was the mean read as a maximum, and "a hair short in the top band"
+was `0.99` read off a list that is not this receipt's.*
+
+## ⛭ AND THE PER-BAND RATIO SHOULD NOT BE IN THE SENTENCE AT ALL
+
+`OVER = (RM-1)/(MEAS-1)` divides two small differences band by band. On the arm of record the arm's own
+per-band excess passes close to zero in one band (`0.0141` against the term mix's `0.072`) and runs
+large in another (`0.162`), so the ratio swings `0.56` to `5.14`. ⇒ *** The same fragility class
+`cc66.52` measured in the fixed-q variance split — a ratio of two near-zero quantities — and read
+naively it says the channel both over- and under-delivers. *** *The BAND MEAN is the form that
+survives: `8.32` per cent imposed against a measured `7.15`, so it over-delivers the whole excess by
+about a sixth here, where on the namesake arm it was about two fifths.*
+
+## ⇒ PROPOSED REPLACEMENT, for `l.1212`
+
+> replace *"it over-delivers the whole excess by up to twice and falls a hair short of it in the top
+> band"* with *"it over-delivers the whole excess by about a sixth"*
+
+⌗ *Nothing else in the sentence moves: peak-weighted against the window's trough-weighting still
+holds, and the first-two-peaks clause is unchanged. **I have not edited the paper** — the clause is
+yours twice over, once by the ⑹ ruling and once because the correction is to a figure I gave you.*
+
+⌗ *And the neighbouring clause I flagged at `cc66.49` ⓺ is NOT a mixed-arm problem, which I also got
+wrong: `an intercept against a slope worth three per cent of it` reads `0.031` on both arms, measured
+by running the receipt each way. It is built from `r6975_mix{,b}_lcdm` against the control's own band
+std — control-side throughout — so the arm never enters it. **The flag was mine and it was false.***

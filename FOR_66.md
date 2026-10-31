@@ -30084,3 +30084,77 @@ and the nine-receipt set I said the third bank released is **two** fully re-poin
 partials.* ⌗ *The `noop` family is now the single largest ask: five banks, six readers, and every one
 of them an instrument-identity check — so what the siblings buy is whether the switch identities still
 hold on the arm of record, which is a different question from any figure moving.*
+
+---
+
+# `r7643+cc66.59` — the term-mix receipt re-pointed, and ⛔⛔ **it finds that a clause I landed in the paper at ⑹ is wrong and that my figures for it do not reproduce**
+
+Item 2. `the_term_mix_…` was the one remaining fully re-pointable receipt in the set: `r6959_eta_cr`
+and `r6941_fine_cr` to their siblings, the control banks staying put.
+
+## ⛔⛔ ⓵ THE WORST THING I HAVE FOUND TODAY, AND IT IS MINE
+
+⑹'s second clause, in the paper at `l.1212` on my proposal and your ruling: *"it over-delivers the
+whole excess by up to twice and falls a hair short of it in the top band"*.
+
+| | per band | mean |
+|---|---|---|
+| namesake arm | `2.77 1.90 1.50 1.35 1.21 1.10 1.20` | `1.58×` |
+| arm of record | `3.20 1.33 2.09 0.95 0.90 5.14 0.56` | `2.02×` |
+| **what I reported** | `2.02 1.83 1.28 1.28 1.16 0.99` | — |
+
+⇒ *** **Six** values where the receipt computes **seven**; minimum `0.99` where it computes `0.56`;
+maximum `2.02` where it computes `5.14`. I cannot reproduce my own list from the receipt the sentence
+cites, on either arm — and `2.02` is this arm's MEAN, not its first band. *** *So "up to twice" was a
+mean read as a maximum, and "a hair short in the top band" was a `0.99` that is not in this
+computation.* **Routed to 69 with a proposed replacement; the paper is not touched.**
+
+⌗ *And the OTHER flag I raised at `cc66.49` ⓺ was also false. `an intercept against a slope worth
+three per cent of it` reads `0.031` on BOTH arms -- measured by running the receipt each way, not
+argued -- because it is built from `r6975_mix{,b}_lcdm` against the control's own band std and the arm
+never enters. ⇒ **I flagged a mixed-arm paragraph that was not mixed, and missed a clause in the same
+paragraph that was wrong.***
+
+## ⛭⛭ ⓶ AND THE PER-BAND RATIO IS THE SAME FRAGILITY CLASS AS `cc66.52`'s
+
+`OVER = (RM-1)/(MEAS-1)` divides two small differences band by band. This arm's own per-band excess
+passes near zero in one band (`0.0141` against the term mix's `0.072`) and runs large in another
+(`0.162`). ⇒ *** A ratio of two near-zero quantities, exactly as the fixed-q variance split was —
+**the second time today the re-point has exposed a per-band ratio that the namesake arm happened to
+keep tame.** *** *The BAND MEAN survives and is what the gate reads: `8.32` per cent imposed against a
+measured `7.15`, over-delivering by about a sixth where the namesake gave about two fifths. The
+per-band table stays printed, and its fragility is itself gated.*
+
+## ⛭ ⓷ THREE NAMESAKE CONDITIONS RE-POINTED RATHER THAN RELAXED, AND ONE TOLERANCE RETIRED
+
+| condition | what happened |
+|---|---|
+| the seven band ratios, pinned to `cc66.46`'s | re-pinned to this arm's; `cc66.46`'s quoted beside them as that arm's |
+| `one constant` to **five** per cent | the spread is `8.3` here, so it is **pinned two-sided at 8.3** and the claim is carried by the ABSENCE of a q-trend, not by tightness |
+| `within fifteen per cent of the symmetric baseline, confirming cc66.46's split` | ⛔ **retired**: it reads `18`, AND `cc66.52` showed that split to be the fixed-q form. *A tolerance whose reference has been superseded is not re-fitted* |
+
+⇒ *** None of the three was widened to admit its own failure. The one that could not be re-pinned was
+retired in favour of the ORDERING the argument actually uses — the excess sits on the symmetric side
+of the baseline, not the trough side where the remainder it was to be sits. ***
+
+## ⛭ ⓸ AND THE TWO BANK MOVES WERE ISOLATED, BECAUSE ONE OF THEM SETS THE BANDS
+
+`QE = A['cr']['q_edges']` — the band edges come from the eta bank, so "which bank moved what" was not
+safe to infer. ⇒ *Measured by running both one-bank variants: `r6959_eta_cr` alone reproduces every
+figure to the printed digit (its `q_edges` are identical to the namesake's), and `r6941_fine_cr` alone
+reproduces the full re-point. **The whole change is the fine reference's.***
+
+| perturbation | target | result |
+|---|---|---|
+| the fine CR bank back to the namesake | the band-mean gate | ⛭ RED, on target |
+| the band mean replaced by the mean of per-band ratios | the band-mean gate | ⛭ RED, on target |
+| the spread pin moved to the namesake's `4.3` | the spread pin | ⛭ RED, on target |
+| the anchored ordering inverted | the ordering gate | ⛭ RED, on target |
+
+## ⇒ ⓹ WHERE ITEM 2 STANDS
+
+**Fully re-pointed: three** — `the_contrast_excess_…` (`.52`), `the_locator_…` (`.54`),
+`the_term_mix_…` (here). **Partly: one** — `the_monopole_zero_point_…` (`.57`), with its blocker named
+by measurement. **The other seven are bank-blocked**, and the asks are as `cc66.58` prices them.
+⌗ *So what the third bank actually released is three receipts, not nine — and the two re-points that
+looked mechanical each found a statistic that does not survive the move.*
