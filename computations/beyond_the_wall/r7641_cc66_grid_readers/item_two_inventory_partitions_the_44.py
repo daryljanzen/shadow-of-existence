@@ -90,7 +90,20 @@ KEY_CLOSED = tuple(g for g in KEYGAPS_ALL if _key_gap_closed(g))
 TMPL_RE = re.compile(r'__\{')
 LIT_CR = re.compile(r"'([A-Za-z0-9_.]+_cr)\.npz'")
 TMPL_CR = re.compile(r"f'([A-Za-z0-9_.]+)_\{\w+\}\.npz'")
-DECLARE = ('arm is a KEY', 'ARM AS A KEY', 'arm as a key', 'KEY SUFFIX', 'key suffix')
+# ⛔⛭⛭ r7643+cc66.64: ** THIS LIST WAS A PHRASE LIST AND IT MISSED MY OWN LATER DECLARATIONS FOR
+#   TWO REVISIONS. **  *`cc66.57` worded its declaration `the arm is a KEY`, which is here.  `.61`,
+#   `.62` and `.63` worded theirs `ARM KEYS READ:`, which was not -- so this file's cross-arm gate
+#   went RED at `.61` and stayed red through `.63`, naming three receipts that HAD declared.*
+#   ⇒ *** And nothing said so: this reader has no `INDEX.md` row, so the 868-receipt suite does not
+#       run it.  I had been reading `it passes when I run it` as `it is gated`.  Both halves are
+#       reported in `FOR_66.md` and the coverage gap is priced to 69. ***
+#   ⌗ *Fourth blind spot of one family in this order -- after `'__cr' in k`, the `var['...__{`
+#   template regex and the `g in src` bank test -- and the first I inflicted on my own instrument by
+#   changing my own wording.  The canonical token is added, the legacy phrasings are kept, and the
+#   miss is GATED below so this file carries the defect it had.*
+_DECLARE_LEGACY = ('arm is a KEY', 'ARM AS A KEY', 'arm as a key', 'KEY SUFFIX', 'key suffix')
+_DECLARE_CANON = ('ARM KEYS READ',)
+DECLARE = _DECLARE_LEGACY + _DECLARE_CANON
 
 
 def check(label, ok, witness=''):
@@ -147,7 +160,7 @@ for r in MINE44:
                    if os.path.exists(os.path.join(SPEC, s + '.npz'))
                    and not os.path.exists(os.path.join(SPEC, s + '_leafrec1.npz')))
     ROWS.append(dict(r=r, repointed=repointed, declared=declared, keyb=sorted(keyb), fileb=fileb,
-                     any_cr=bool(stems or keyb)))
+                     any_cr=bool(stems or keyb), src=src))
 
 print(__doc__)
 print(BAR)
@@ -213,6 +226,29 @@ check("⛔ AND NO RECEIPT IS BOTH RE-POINTED AND BLOCKED BY A BANK IT CANNOT REA
       ", ".join(x['r'][4:40] for x in ROWS
                 if x['repointed'] and (x['keyb'] or x['fileb']) and not x['declared'])
       or "none undeclared")
+# ⛔⛭⛭ r7643+cc66.64: ** AND THE MISS IS GATED, so this file cannot lose the defect it had. **
+#   *The gate above was RED from `cc66.61` to `.63` because `DECLARE` held only the legacy phrasings.
+#   This asserts that the legacy list ALONE still misses receipts the full list catches -- so if anyone
+#   trims `DECLARE` back, or a later receipt invents a third wording, it fails here rather than
+#   silently reporting a cross-arm defect that is not there.*
+_legacy_only = [x['r'][4:40] for x in ROWS
+                if x['repointed'] and (x['keyb'] or x['fileb'])
+                and not any(p in x['src'] for p in _DECLARE_LEGACY)]
+_canon_saves = [x['r'][4:40] for x in ROWS
+                if x['repointed'] and (x['keyb'] or x['fileb'])
+                and any(p in x['src'] for p in _DECLARE_CANON)]
+print()
+print(f"    re-pointed-and-blocked receipts that the LEGACY phrase list alone would MISS: "
+      f"{len(_legacy_only)} (every one rescued by the canonical token)")
+for _r in _legacy_only:
+    print(f"      {_r}")
+check("⛔⛭⛭ ** AND THE BLIND SPOT THIS FILE HAD IS GATED RATHER THAN QUIETLY FIXED. **  The legacy "
+      "phrase list alone still misses receipts the canonical token catches, which is exactly why the "
+      "gate above was red from `cc66.61` to `.63`.  ⇒ *Trim `DECLARE` back, or invent a fourth "
+      "wording, and this fails -- instead of reporting a cross-arm defect that is not there*",
+      len(_legacy_only) >= 3 and all(r in _canon_saves for r in _legacy_only),
+      f"{len(_legacy_only)} would be missed by the legacy list, every one of them rescued by the "
+      f"canonical token")
 
 print()
 print(BAR)

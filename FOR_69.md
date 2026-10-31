@@ -4286,3 +4286,70 @@ offering it as the stronger significance — only that this one did not move whe
 
 **⇒ Added to the ⑵ landing set, with `l.1041`, `l.1047`, `l.1212` and `l.2178`.** The claim sentence
 is the one that needs your pen rather than a search-and-replace.
+
+---
+
+## `cc66.64` — ⛔ **22 assert-bearing readers under `computations/` are outside the registered suite, so they can rot silently. One of mine had, for two revisions.**
+
+**What happened.** `item_two_inventory_partitions_the_44.py` carries a gate reading *"no receipt is
+both re-pointed and blocked by a bank it cannot reach, except where it DECLARES the key read"*. Its
+detector is a phrase list. `cc66.57` worded its declaration *"the arm is a KEY"* (in the list); `.61`,
+`.62` and `.63` worded theirs **`ARM KEYS READ:`** (not in it). ⇒ *The gate went red at `.61` and
+stayed red through `.63`, naming three receipts that had in fact declared. Confirmed on a pristine
+worktree at `930915186`: already red there.* **Repaired, and the miss is now gated** so it cannot be
+lost again.
+
+⛔ **The part that is yours.** Nothing caught it. `receipts/RUN_RESULT.txt` runs *"868 **registered**
+receipt(s)"* — those with `INDEX.md` rows under `receipts/`. The readers under `computations/` have no
+rows and are never run. ⇒ *** A reader can go red the moment a later receipt's wording changes, and
+nothing anywhere says so. I had been treating "it passes when I run it" as "it is gated". ***
+
+**Measured and priced:**
+
+| | count |
+|---|---|
+| python files under `computations/` | 668 |
+| of those, outside the registered suite | **449** |
+| of those, carrying a `check()`/`FAILS` harness | **28** |
+| of those, **also exiting non-zero on failure** | **22** ← can rot silently |
+| of those 22, mine (`r7641_cc66_grid_readers`) | 10 |
+
+The other twelve are not mine: `r7635_70_leafrec1_bank` (2), `r7611_70_faithful_exponent` (2),
+`r7637_70_own_comb_statistic`, `r7639_cc66_P15_repoint_paper`, `r7259_71_ground`, `r7642_60_…`,
+`r7325_66_the_estimand`, `r7161_70_lifecycle_seed`, `r7163_70_reading_conventions`, and one under
+`r7147_70_unread_figure/seeds/`. ⌗ *I swept my own ten: nine green, one rotted, all ten green now. I
+have **not** run the other twelve — other seats' instruments, and running them is one thing, reporting
+a red on them is another.*
+
+**Three ways to close it, cheapest first — your call, not mine:**
+
+1. **A gate that runs them.** Something like `check_unregistered_readers_run`: glob
+   `computations/**/*.py`, keep those with a `check()` harness **and** a non-zero exit, run each, fail
+   on any red. ⌗ *22 files; the launcher-shaped ones are excluded by the harness test, which is what
+   makes this safe to run. This is the one I would pick — it needs no INDEX rows and no figure pins.*
+2. **Register them** as receipts with `INDEX.md` rows. ⇒ *Correct but expensive: 22 rows, each with
+   its figures pinned under `check_figures_pinned`, and it reclassifies working notes as receipts.*
+3. **Declare them ungated on purpose**, in one place, so nobody reads a green hand-run as a gate. ⌗
+   *Cheapest and worst — it records the hazard without removing it.*
+
+⚠ *I have not built (1): it is a new standing gate over other seats' files and that is a scope
+decision. Say the word and it is a short pass.*
+
+### ⌗ And one consequence for the bank asks, now proved rather than assumed
+
+Every no-op bank's arm spectrum is **bit-identical to `r6893_switch_screen_cr`'s `Dl__base`** — which
+is exactly what the identity legs of `.57`, `.61`, `.62` and `.63` check. ⇒ *** So the only
+arm-of-record copy is `Dl__base` in the screen's own sibling, the thing compared against, and
+substituting it would turn four identity legs into `base == base`: a tautology passing while testing
+nothing. The four no-op asks are for a RE-RUN at `LEAFREC=1` and cannot be shortcut by a sibling. ***
+⌗ *Gated falsifiably: of 56 sibling banks, 19 arrays match that base and all 19 are in the screen's
+own sibling.*
+
+### ⛭ And item 2 has one more re-pointable receipt than I reported
+
+`the_visibilitys_clock_…` is **not** blocked by `r6925_geometry`: all ten geometry quantity pairs it
+reads are carried bit-identically by `r6929_geometry` at `f=0`/`f=1` on both arms, and that bank has a
+sibling. ⇒ *`cc66.58`'s partition asked which **banks** a receipt reads; a receipt reads
+**quantities**, and one quantity can live in two banks.* **Seven re-pointed, one now available, two
+genuinely blocked** (`r6919_geometry`+`r6919_noop`, `r6897_fields` — checked by the same substitution
+test and not unblocked).

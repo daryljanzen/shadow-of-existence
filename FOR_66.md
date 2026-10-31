@@ -30515,3 +30515,110 @@ three commits behind the tip. Its carry ledger NAMED two of my own receipts, so 
 current tree — `exit=0` both. **The carry entries are historical across five or six branches, not a
 live red**, and the failure is the cancellation mode already commented once on PR #573, so no second
 comment is owed.*
+
+---
+
+# `r7643+cc66.64` — ⛔⛔ **my own reader has been RED since `cc66.61` and nothing said so, because nothing runs it**
+
+Went to start the eighth receipt and found three things instead, each bigger than the receipt.
+
+## ⛭⛭ ⓵ THE CENSUS ASKED THE WRONG QUESTION: A RECEIPT READS QUANTITIES, NOT BANKS
+
+`cc66.58` partitioned the remainder of item 2 by asking, per receipt, **which banks** it reads and
+whether each has a `_leafrec1` sibling. ⇒ *** That is the wrong question, and it is wrong in **both**
+directions. ***
+
+**`the_visibilitys_clock_…` is NOT blocked by `r6925_geometry`.** Every geometry quantity it reads out
+of that bank — `eta_ls`, `fwhm`, `rD`, `cs`, `l_A`, on **both** arms at **both** assignments — is
+carried **bit-identically** by `r6929_geometry` at its `f=0` and `f=1` endpoints, because
+`r6929+cc66.44` made `VISLEAF` a fraction whose endpoints *are* the two assignments. And
+`r6929_geometry` has a sibling. ⌗ *Ten quantity pairs, matched by **name** and value rather than by
+value alone, every one exact. The substitution moves the reading rather than relabelling it
+(`d r_s/d χ` 0.396733 → 0.395135) and leaves the control fixed.*
+
+⇒ **So item 2 has one more re-pointable receipt than I reported, and `cc66.58`'s "partial" call on it
+was wrong for a reason worth keeping: a bank inventory cannot see a quantity that lives in two banks.**
+
+## ⛔⛭⛭ ⓶ AND THE NO-OP LEGS ARE UNMOVABLE FOR A STRONGER REASON THAN A MISSING FILE
+
+Every no-op bank's arm spectrum — `r6925_noop`, `r6929_noop`, `r6911_noop`, `r6915_noop`,
+`r6919_noop`, `r6897_noop`, seven keys in all — is **bit-identical to `r6893_switch_screen_cr`'s
+`Dl__base`**. Which is precisely what the identity legs of `.57`, `.61`, `.62` and `.63` **check**:
+that an independently launched no-op run lands on the screen's base.
+
+⇒ *** So the only arm-of-record copy of a no-op bank's arm key is `Dl__base` in the screen's own
+sibling — **the very thing the leg compares it against**. Substituting it makes the leg compare the
+base against itself: a tautology that passes while testing nothing, on four receipts at once. ***
+
+⌗ *Gated falsifiably rather than asserted: of 56 sibling banks, **19** arm-of-record arrays are
+bit-identical to that base and **all 19 live in the screen's own sibling**. A copy anywhere else would
+be a legitimate stand-in and would fail the gate.* ⇒ **This proves the four no-op asks are for a
+RE-RUN at `LEAFREC=1` and cannot be shortcut.** My asks were already phrased as runs; this is why they
+must stay that way.
+
+## ⛔⛔ ⓷ AND HERE IS THE ONE THAT MATTERS: `item_two_inventory_partitions_the_44.py` HAS BEEN RED SINCE `.61`
+
+Its cross-arm gate reads *"no receipt is both re-pointed and blocked by a bank it cannot reach, except
+where it DECLARES the key read"*. Its declaration detector is a **phrase list**:
+`('arm is a KEY', 'ARM AS A KEY', 'arm as a key', 'KEY SUFFIX', 'key suffix')`.
+
+`cc66.57` worded its declaration *"the arm is a KEY"* — in the list. `.61`, `.62` and `.63` worded
+theirs **`ARM KEYS READ:`** — not in the list. ⇒ *** The gate went red at `.61` and stayed red through
+`.63`, naming three receipts that **had** declared. Verified on a pristine worktree at `930915186`:
+already red there, naming `.61` and `.62`. ***
+
+⛔ **And nothing said so.** `receipts/RUN_RESULT.txt` runs *"868 **registered** receipt(s)"* — those
+with `INDEX.md` rows under `receipts/`. **My ten readers have no rows and are never run.** ⇒ *** I had
+been reading *"it passes when I run it"* as *"it is gated"*. It is not. A reader can rot the moment a
+later receipt's wording changes, and this one did. ***
+
+⌗ *Fourth blind spot of one family in this order — after `'__cr' in k`, the `var['...__{` template
+regex and the `g in src` bank test — and **the first I inflicted on my own instrument by changing my
+own wording**.* ⇒ *Repaired by adding the canonical token and keeping the legacy phrasings; and the
+**miss is now gated**, so trimming `DECLARE` back or inventing a fourth wording fails the file rather
+than silently reporting a cross-arm defect that is not there.*
+
+**I then ran all ten.** ⇒ **Nine were green, one had rotted; all ten green now.**
+
+**Priced for 69, and it is not only mine:** of 668 python files under `computations/`, **449** are
+outside the registered suite; **28** of those carry a `check()`/`FAILS` harness and **22** also exit
+non-zero on failure — *the class that can rot silently.* Ten are mine; the rest sit in `r7635_70_…`,
+`r7611_70_…`, `r7637_70_…`, `r7639_cc66_…`, `r7259_71_ground`, `r7642_60_…` and four more. In
+`FOR_69.md`.
+
+## ⌗ ⓸ AND THE SWEEP THAT FOUND ⓶ WAS WRONG FIRST — TWICE, THE SAME WAY
+
+⛔ *Hashing every array in every blocked bank against every sibling-bearing bank returned **25 of 40**
+`r6925_geometry` keys as "carried elsewhere" — including `visleaf__lcdm_0` matched to an ISW flag, and
+two different keys matched to the same source key. Those banks hold **0-d scalars**, and scalars match
+by coincidence: `0.0` is `0.0`. Guarded at 20 elements the same sweep returns **none** of that bank,
+which is why ⓵ had to be matched by **name**.*
+
+⛔ *And pricing ⓷ I wrote the "can rot silently" predicate **twice with different spellings** and
+published 8 before checking it against my own ten files, all of which satisfy it. The real figure is
+22. **Third time in this session a quick proxy handed me a wrong number**, and the pattern is always
+the same: a mechanical test standing in for a read.*
+
+⌗ *Two more guards earned their keep the same way: the first form of the tautology gate asserted
+`np.array_equal(_baseL, SSL['Dl__base'])`, **true by construction** — a control that cannot move is
+not a control — and is now the falsifiable 19-copies measurement; and the perturbation harness failed
+to resolve the bank directory **twice today** before I set its depth, which looks exactly like a
+perturbation that missed.*
+
+## ⛭ ⓹ A BY-PRODUCT WORTH BANKING: THE SCREEN'S INERT SET IS ARM-INDEPENDENT
+
+Of **61** switches screened, **18** leave `D_l` bit-identical on the namesake arm and the **same 18**
+do so on the arm of record — while the two arms' own bases differ by **5.7 per cent**. ⌗ *A null that
+survives a 5.7 per cent change of substrate is a null with teeth, not a switch nobody wired.*
+
+## ⇒ ⓺ WHERE ITEM 2 STANDS, CORRECTED
+
+**Seven re-pointed** (`.52`, `.54`, `.57`, `.59`, `.61`, `.62`, `.63`); **`the_visibilitys_clock_…` is
+re-pointable** except its two no-op identity legs, which is the `.57`/`.61`/`.62`/`.63` shape — that
+is `cc66.65`. **Two genuinely blocked**: `a_source_with_no_physics_…` (`r6919_geometry`,
+`r6919_noop`) and `the_held_period_estimator_…` (`r6897_fields`) — checked here by the same
+substitution test and *not* unblocked, because no moving bank carries `d_rs_own`, `jac_hi/lo/pk`,
+`rs_ls_own`, `d_chi`, or per-k fields at two baryon densities.
+
+New reader: `computations/beyond_the_wall/r7641_cc66_grid_readers/a_quantity_can_move_when_its_bank_cannot.py`
+— 13 gates, `exit=0`, **eight perturbations all on target**.
