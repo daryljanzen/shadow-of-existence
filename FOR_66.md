@@ -29399,3 +29399,82 @@ banks — clears five receipts including `cc66.46` and two of Set A's three. `r6
 ⌗ *Instrument: `r7641_cc66_grid_readers/which_key_gaps_actually_block.py` — **four perturbations red**
 (the template test removed, the DECLARED category removed, the localisation de-localised, the
 non-gap bank re-included), **one honestly inert**, and two re-run after the patch-verification fix.*
+
+---
+
+# `r7641+cc66.47` — item ⑵ closed with a PARTITION of all 44, two of my own gates corrected by it, and ⛭ **a structural asymmetry worth a rule**
+
+Five instruments measured parts of ⑵. This one asks the question none of them does: **do the parts
+cover the whole?** The claim under test is a partition, which is the only kind of inventory worth
+handing over.
+
+## ⓵ THE PARTITION HOLDS
+
+| bucket | | |
+|---|---:|---|
+| **RE-POINTED** | `20` | names `_leafrec1`, so it has been moved |
+| **KEY-BLOCKED** | `6` | reads a two-arm bank's `cr` **key**, which no file bank can reach |
+| **FILE-BLOCKED** | `2` | reads a `*_cr.npz` spectrum with no `_leafrec1` sibling |
+| **NO CR READ** | `16` | reads no cr-side bank, so there is nothing to move |
+| | **`44`** | of `44`, **`0` unaccounted, no overlap** |
+
+⇒ *A receipt in no bucket is one the inventory forgot, and a receipt in two is a cross-arm defect.
+Both are gated, and that is the one claim here that cannot be checked receipt by receipt.*
+
+## ⛔ ⓶ AND THE PARTITION CAUGHT A LANDED RECEIPT OF MINE READING A NAMESAKE KEY UNDECLARED
+
+`the_free_streaming_knob_…` is **re-pointed** (`AOR = {'lcdm': '', 'cr': '_leafrec1'}` at l.989) **and**
+reads `r6893_slice_check`'s `rmax__cr` — a bank whose arm is a key, with no arm-of-record key to move
+to. That is exactly the cross-arm shape, in landed work, with **no declaration beside it**.
+
+⌗ *Investigated before reporting it as a defect, and it is not one: `rmax` is the residual between a
+sliced k-sum and a whole one, checked against `1e-14`. It is a statement about the **instrument's
+summation order**, not about either arm's cosmology, and machine precision is not a measurement.*
+⇒ ** So the read is admissible and stays; what was missing was the note saying so, and that is now in
+the receipt. ** *Every other receipt in that position already carried one — which is why the gate
+found this one.*
+
+## ⛔ ⓷ AND TWO OF MY OWN GATES IN THIS FILE WERE WRONG, BOTH CORRECTED BY THE MEASUREMENT
+
+| I asserted | it is |
+|---|---|
+| `r6893_switch_screen_cr` blocks **two** receipts "and they are the only two in that position" | read by **four**, of which **two** are clear of every key gap |
+| the declaration list covered every form | it missed `KEY SUFFIX`, the wording the free-streaming receipt now carries |
+
+⇒ *The two-of-four is the number that matters — those two are released by one **file** — and the four
+is the one I would have published wrong.*
+
+## ⛭ ⓸ AND IT TURNED UP A FILE GAP NO EARLIER ENTRY OF MINE HAD CATALOGUED
+
+**`r6925_visleaf_cr`** is banked with no `_leafrec1` sibling and blocks two receipts
+(`the_combs_resolution_…`, `the_visibilitys_clock_…`). ⇒ *Which is the use of a partition: it names
+what a receipt-by-receipt walk had missed, and I had walked these receipts twice tonight.*
+
+## ⓹ SO ITEM ⑵'s BANK INVENTORY, COMPLETE AND PRICED
+
+| ask | releases |
+|---|---|
+| the `{geometry,noop}` family with `__cr_leafrec1` keys | `5`, incl. **`cc66.46`** and two of Set A's three |
+| **`r6893_switch_screen_cr`** (one file) | **`2` outright**, and is read by 2 more that also need keys |
+| **`r6925_visleaf_cr`** (one file) | contributes to `2` |
+| `r6897_fields` keys | `1` — `the_held_period_estimator_…`, Set A's third |
+| `r6893_slice_check` keys | `0` now — the one receipt reading it is declared and landed |
+| a `LEAFREC=1` grid at the distances' point, `LMAXL=2000` and `1300` | grid readers 1, 2, 3 |
+| `c54.178_cr` at its own `68.62 / 0.2973` with `LEAFREC=1` | the crossing receipt's second half |
+
+## ⛭⛭ ⓺ AND ONE STRUCTURAL ASYMMETRY, WHICH IS WORTH A RULE RATHER THAN A FIX
+
+Perturbing this file showed that **expanding file-name templates changes nothing** — and the reason is
+measured, not guessed: every bank read by an `f'…_{t}.npz'` template **also appears as a literal**,
+because the corpus requires a presence check naming each bank file. *There is no equivalent
+requirement for KEYS.*
+
+⇒ *** That is exactly why the key-template case defeated me at `cc66.46` and the file case cannot:
+`the_held_period_estimator_…` builds every key as `f'{n}__{t}'` and names none of them anywhere, where
+no receipt can hide a FILE it reads. *** ⛭ **The rule that falls out: a receipt reading a two-arm bank
+should name the arm keys it reads, the way it already names the files.** *One line per receipt, and
+the class of defect I have spent this revision hunting becomes greppable instead of inferrable. That
+is yours to rule on, and I have not written it into any gate.*
+
+⌗ *Instrument: `r7641_cc66_grid_readers/item_two_inventory_partitions_the_44.py` — **four
+perturbations red, one honestly inert with its reason measured**.*

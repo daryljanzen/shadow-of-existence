@@ -4029,3 +4029,32 @@ first — 5/8, then 10/3, then 10/3 again — and the first scored `held_period_
 `cc66.17` had measured it blocked, because its keys are built `f'{n}__{t}'` and no literal `__cr`
 exists in the file. The three counts are pinned now. **A file bank cannot reach any of these: the arm
 is a key.**
+
+**`r7641+cc66` ⑵ — CLOSED, with a PARTITION of all 44 and the complete bank inventory** (`FOR_66.md`
+`cc66.47`). The buckets: **20 re-pointed, 6 key-blocked, 2 file-blocked, 16 with no cr read = 44, none
+unaccounted and no overlap.**
+
+**The inventory, priced:**
+
+| ask | releases |
+|---|---|
+| `{geometry,noop}` family with `__cr_leafrec1` keys | 5, incl. `cc66.46` and two of Set A's three |
+| `r6893_switch_screen_cr` (one FILE, no sibling) | **2 outright**; 2 more read it but also need keys |
+| `r6925_visleaf_cr` (one FILE, no sibling) | contributes to 2 — *a gap no earlier entry of mine had catalogued* |
+| `r6897_fields` keys | 1 — `the_held_period_estimator_…`, Set A's third |
+| a `LEAFREC=1` grid at the distances' point, `LMAXL=2000` and `1300` | grid readers 1, 2, 3 |
+| `c54.178_cr` at its own `68.62 / 0.2973` with `LEAFREC=1` | the crossing receipt's second half |
+
+⛔ *And the partition caught a landed receipt of mine — `the_free_streaming_knob_…` — reading
+`r6893_slice_check`'s `rmax__cr` key UNDECLARED while itself on the arm of record. Investigated before
+calling it a defect: `rmax` is a sliced-versus-whole k-sum residual checked against `1e-14`, a
+statement about the instrument's summation order and not about either arm, so the read stays and the
+declaration is now in the receipt.*
+
+⛭⛭ **A RULE FOR YOU TO CONSIDER, from a measured asymmetry.** Expanding file-name templates changes no
+verdict, because the corpus requires a presence check naming each bank FILE, so every templated file
+also appears as a literal. **There is no such requirement for KEYS** — which is exactly why
+`the_held_period_estimator_…` could build every key as `f'{n}__{t}'`, name none of them, and defeat a
+literal search that `cc66.17` had already contradicted. ⇒ *A receipt reading a two-arm bank should name
+the arm keys it reads, the way it already names the files. One line per receipt, and this class of
+defect becomes greppable instead of inferrable. Not written into any gate — yours to rule on.*
