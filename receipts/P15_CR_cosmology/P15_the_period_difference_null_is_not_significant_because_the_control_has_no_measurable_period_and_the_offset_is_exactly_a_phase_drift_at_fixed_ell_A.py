@@ -1,12 +1,28 @@
 #!/usr/bin/env python3
 """
-RECEIPT -- P15: ** `r7197`'s ORDERED NULL, RUN ON THE BANKED RESIDUAL WITH NO NEW SPECTRUM.  THE
-DIFFERENCE IS `$0.97\\sigma$` -- NOT SIGNIFICANT -- AND THE REASON IS THE WHOLE RESULT: THE ERROR ON
-IT IS `$36.3$`, OF WHICH THE CONTROL CONTRIBUTES `$35.5$` AND THE ARM `$3.0$`.  ** THE CONTROL HAS NO
-MEASURABLE PERIOD, SO IT CANNOT SERVE AS A NULL. **  AGAINST `$\\ell_A$`, WHICH IS KNOWN TO `$0.15$`
-PER CENT WHERE THE CONTROL'S PERIOD IS KNOWN TO `$11$`, THE ARM'S PERIOD IS `$+14.00$` HIGH AT
-`$4.69\\sigma$` -- AND THAT OFFSET IS *EXACTLY* A LINEAR PHASE DRIFT OF `$-96.6^\\circ$` AT FIXED
-`$\\ell_A$`, WHICH IS AN IDENTITY AND NOT A FIT PREFERENCE. **
+RECEIPT -- P15: ** `r7197`'s ORDERED NULL, ON THE ARM OF RECORD, RUN ON THE BANKED RESIDUAL WITH NO
+NEW SPECTRUM.  THE DIFFERENCE IS `$1.07\\sigma$` -- NOT SIGNIFICANT -- AND THE REASON IS THE WHOLE
+RESULT: THE ERROR ON IT IS `$35.65$`, OF WHICH THE CONTROL CONTRIBUTES `$35.52$` AND THE ARM
+`$3.35$`.  ** THE CONTROL HAS NO MEASURABLE PERIOD, SO IT CANNOT SERVE AS A NULL. **  AGAINST
+`$\\ell_A$`, WHICH IS KNOWN TO `$0.15$` PER CENT WHERE THE CONTROL'S PERIOD IS KNOWN TO `$10.6$`, THE
+ARM'S PERIOD IS `$+11.25$` HIGH AT `$3.36\\sigma$` -- AND THAT OFFSET IS *EXACTLY* A LINEAR PHASE
+DRIFT OF `$-78.3^\\circ$` AT FIXED `$\\ell_A$`, WHICH IS AN IDENTITY AND NOT A FIT PREFERENCE. **
+
+** ⛔⛔ EVERY FIGURE ABOVE MOVED AT `r7645`+`cc66.70`, AND THE CONTROL'S DID NOT. **  *`cc66.67`
+re-pointed `fig:acoustic-nofit` onto the arm of record and this receipt reads its banked residual.
+The namesake arm gave `$0.97\sigma$`, an error of `$36.3$` split `$35.5$`/`$3.0$`, and `$+14.00$` at
+`$4.69\sigma$` with a `$-96.6^\circ$` drift.  The CONTROL's own error is unchanged at `$35.52$` --
+the re-point does not reach it -- so the factor between them falls from `$12$` to `$10.6$` because
+the ARM's error grew, from `$2.99$` to `$3.35$`.*
+  ⇒ *** WHAT SURVIVES AND WHAT WEAKENS: the null is still not significant and still not
+      significant FOR THE CONTROL'S REASON, which is the result the order asked for in that form.
+      The offset against `$\ell_A$` survives and loses a third of its strength, `$4.69\sigma$` to
+      `$3.36$`.  The drift IDENTITY is arm-independent -- the two models still have the same residual
+      sum of squares to `$1.1\times10^{-13}$` -- and only the drift's size moves. ***
+  ⛔ *AND FOUR OF THIS FILE'S GATES PASSED ON STALE LABELS, their inequalities surviving the
+  re-point while the figures printed beside them were the namesake arm's.  That is the same class as
+  `cc66.67`'s own answer block, found here by reading the run rather than by a gate: a condition that
+  survives a re-point does not make the prose beside it true.  All four now pin their own figures.*
 
 Built r7197+cc66.153 (node 66, code seat), on `PO-13`.
 
@@ -21,11 +37,11 @@ either period alone; what a `$+4.7$` per cent offset would MEAN given `$\\ell_A$
 want it in that form."*
 
 ** IT IS NOT SIGNIFICANT, AND THE FORM THE ORDER ASKED FOR TURNS OUT TO CARRY MORE THAN A NULL. **
-The difference is `$-35.25$` against an error of `$36.3$`: `$0.97\\sigma$`, with `$56$` per cent of
-draws at least as extreme.  ** But the error decomposes, and it is not shared: `$35.5$` of it is the
-control and `$3.0$` is the arm. **  ⇒ *The test as specified cannot discriminate -- not because the
+The difference is `$-38.00$` observed against an error of `$35.65$`: `$1.07\\sigma$`, with `$54$` per
+cent of draws at least as extreme.  ** But the error decomposes, and it is not shared: `$35.52$` of it
+is the control and `$3.35$` is the arm. **  ⇒ *The test as specified cannot discriminate -- not because the
 arm's period is uncertain, but because the control's is.  A null needs a null hypothesis the data can
-measure, and the control's period is measured to `$\\pm11$` per cent.*
+measure, and the control's period is measured to `$\\pm10.6$` per cent.*
 
   PART A  ** THE FORWARD MODEL, VERIFIED EXACTLY, WHICH IS WHAT LICENSES THE REST. **  The figure
           whitens with the inverse Cholesky of the FULL bandpower covariance, not the diagonal;
@@ -35,12 +51,12 @@ measure, and the control's period is measured to `$\\pm11$` per cent.*
           Monte Carlo is exact in one line: perturbing the data by its own
           covariance perturbs the whitened residual by `$-z$` with `$z\\sim N(0,I)$`, the SAME draw
           in both arms, so their correlation is preserved rather than assumed away.
-  PART B  ** THE ORDERED STATISTIC. **  `$\\Delta=-35.25$`, `$0.97\\sigma$`, `$p=0.56$`.
-  PART C  ** AND THE DECOMPOSITION THAT IS THE RESULT. **  Arm `$311.79\\pm2.99$`, control
-          `$334.65\\pm35.52$` -- an error `$12\\times$` larger, because its amplitude is
-          `$6.8\\times$` smaller.
+  PART B  ** THE ORDERED STATISTIC. **  `$\\Delta=-38.00$` observed, `$1.07\\sigma$`, `$p=0.54$`.
+  PART C  ** AND THE DECOMPOSITION THAT IS THE RESULT. **  Arm `$309.17\\pm3.35$`, control
+          `$334.65\\pm35.52$` -- an error `$10.6\\times$` larger, because its amplitude is
+          `$4.7\\times$` smaller.  *The control's half of this line is unchanged.*
   PART D  ** THE COMPARISON THAT IS INFORMATIVE, AND IT IS NOT THE ORDERED ONE. **  Against
-          `$\\ell_A=298$`: `$+14.00$`, `$4.69\\sigma$`, `$P(p\\le\\ell_A)<10^{-3}$`.
+          `$\\ell_A=298$`: `$+11.25$`, `$3.36\\sigma$`, `$P(p\\le\\ell_A)=0.0015$`.
   PART E  ** THE ARTEFACT CHECK. **  Giving the second harmonic its own freedom moves the
           fundamental by `$+0.25$` and leaves the offset at `$4.90\\sigma$`, so it is not a
           single-harmonic fit absorbing harmonic structure.
@@ -200,10 +216,14 @@ _sig = abs(OBSD) / DIFF.std()
 _p = float(np.mean(np.abs(DIFF) >= abs(OBSD)))
 print(f"      ⇒ {_sig:.2f} sigma from zero, and {100 * _p:.0f} per cent of draws are at least as "
       f"extreme")
-check("Ⓑ①  ** THE ORDERED DIFFERENCE IS NOT SIGNIFICANT: 0.97 sigma, with 56 per cent of draws at "
+# ⛔ r7645+cc66.70: this gate PASSED on a stale label -- its inequalities still held while the
+#   figures beside them were the namesake arm's.  *That is the same class as cc66.67's answer block:
+#   a condition that survives a re-point does not make the prose beside it true.*
+check("Ⓑ①  ** THE ORDERED DIFFERENCE IS NOT SIGNIFICANT: 1.07 sigma, with 54 per cent of draws at "
       "least as extreme. **  That is the order's third branch and it is reported as the complete "
-      "result it asked for, not as a failure to find something",
-      _sig < 2.0 and _p > 0.2)
+      "result it asked for, not as a failure to find something.  ⌗ *The namesake arm gave 0.97 "
+      "sigma and 56 per cent; the conclusion is unchanged and the figures are this arm's*",
+      _sig < 2.0 and _p > 0.2 and abs(_sig - 1.0706) < 0.02 and abs(_p - 0.54) < 0.02)
 
 
 # ============================================================ C. the decomposition
@@ -215,11 +235,15 @@ for t in ARMS:
 _qa, _qc = MC['nofit_cr'].std(), MC['nofit_lcdm'].std()
 print(f"      error on the difference {DIFF.std():.2f};  control {_qc:.2f}, arm {_qa:.2f}  "
       f"-- the control is {_qc / _qa:.1f}x the arm")
-check("Ⓒ①  ** the error on the ordered difference is 36.3, of which the control contributes 35.5 "
-      "and the arm 3.0.  So the test cannot discriminate because of the CONTROL, not the arm. **  "
-      "The arm's period is measured to 1 per cent; the control's to 11",
+check("Ⓒ①  ** the error on the ordered difference is 35.65, of which the control contributes "
+      "35.52 and the arm 3.35.  So the test cannot discriminate because of the CONTROL, not the "
+      "arm. **  The arm's period is measured to 1.1 per cent; the control's to 10.6.  ⌗ *The "
+      "namesake arm gave 36.3 / 35.5 / 3.0 and a factor 12; here the factor is 10.6, because the "
+      "ARM's error grew from 2.99 to 3.35 while the control's did not move -- the re-point does not "
+      "reach the control*",
       _qc / _qa > 8.0 and _qa / MC['nofit_cr'].mean() < 0.02
-      and abs(DIFF.std() - _qc) < 0.3 * _qa)
+      and abs(DIFF.std() - _qc) < 0.3 * _qa
+      and abs(_qc - 35.52) < 0.05 and abs(_qa - 3.35) < 0.02)
 check("Ⓒ②  ⇒ so `the difference, not either period alone` is right as a principle and empty as a "
       "statistic here: a null needs a null hypothesis the data can measure, and the control's "
       "preference for a long period is noise.  ** This is the trap the order's own item 1 named, "
@@ -239,15 +263,22 @@ print(f"      arm, nothing fitted:  {OBS['nofit_cr']:.2f} against l_A = {L_A:.0f
 _roff = OBS['refit_cr'] - L_A
 print(f"      arm, refitted:        {OBS['refit_cr']:.2f}   offset {_roff:+.2f}   "
       f"{_roff / MC['refit_cr'].std():.2f} sigma   (MC +- {MC['refit_cr'].std():.2f})")
-check("Ⓓ①  ** against ell_A the unfitted arm's period is +14.00 high at 4.69 sigma, with fewer than "
-      "one draw in a thousand at or below ell_A. **  That is the comparison the data can make: "
-      "ell_A is known to 0.15 per cent where the control's period is known to 11",
-      _osig > 3.0 and _ple < 0.005 and _off > 10.0)
-check("Ⓓ②  and refitting pulls it toward ell_A AND widens its determination threefold -- 307.25 at "
-      "1.05 sigma against 312.00 at 4.69 -- the same pattern the amplitude shows at `cc66.145`, now "
-      "in the one quantity that figure does not report",
+check("Ⓓ①  ** against ell_A the unfitted arm's period is +11.25 high at 3.36 sigma, with fewer "
+      "than two draws in a thousand at or below ell_A. **  That is the comparison the data can make: "
+      "ell_A is known to 0.15 per cent where the control's period is known to 10.6.  ⛔ *The "
+      "namesake arm gave +14.00 at 4.69 sigma; the offset survives and WEAKENS by a third, which is "
+      "the same direction as the amplitude and the delta chi^2 at cc66.70*",
+      _osig > 3.0 and _ple < 0.005 and _off > 10.0
+      and abs(_off - 11.25) < 1e-9 and abs(_osig - 3.36) < 0.03)
+check("Ⓓ②  and refitting pulls it toward ell_A AND widens its determination -- 304.50 at 0.77 "
+      "sigma against 309.25 at 3.36, the error going 3.35 to 8.42 -- the same pattern the amplitude "
+      "shows, now in the one quantity that figure does not report.  ⌗ *The namesake arm gave "
+      "307.25 at 1.05 against 312.00 at 4.69.  ⛔ And the AMPLITUDE half of that comparison no "
+      "longer holds on this arm: cc66.67 measured the refit falling only an eighth with its "
+      "significance RISING, so the `same pattern` is now the PERIOD's alone*",
       OBS['refit_cr'] < OBS['nofit_cr'] and MC['refit_cr'].std() > 2.0 * _qa
-      and _roff / MC['refit_cr'].std() < 2.0)
+      and _roff / MC['refit_cr'].std() < 2.0
+      and abs(OBS['refit_cr'] - 304.5) < 1e-9 and abs(_roff - 6.5) < 1e-9)
 
 
 # ============================================================ E. the artefact check
@@ -257,11 +288,22 @@ print(f"      one harmonic   {OBS['nofit_cr']:.2f}   MC +- {_qa:.2f}   offset "
       f"{_osig:.2f} sigma")
 print(f"      two harmonics  {OBS2:.2f}   MC +- {MC2.std():.2f}   offset "
       f"{(OBS2 - L_A) / MC2.std():.2f} sigma   -- the fundamental moves {OBS2 - OBS['nofit_cr']:+.2f}")
+# ⛔⛔ r7645+cc66.70: ** THE ARTEFACT CHECK STILL PASSES ITS OWN TEST AND NO LONGER CLEARS THREE
+#   SIGMA. **  *The fundamental still barely moves when the second harmonic is freed -- +0.25, which is
+#   the whole point: a biased single-harmonic fit would have been pulled back toward ell_A and is not.
+#   But the offset it leaves is 2.90 sigma, against 4.90 on the namesake arm, so the old condition's
+#   `> 3.0` threshold is no longer met.*
+#   ⇒ *** The conclusion `the offset is not the fit's` rests on the MOVEMENT, +0.25, and that is
+#       what is pinned.  The significance is reported and pinned as the weaker number it is, rather
+#       than the threshold being lowered to keep a pass. ***
 check("Ⓔ①  ⛔ MUST-COME-BACK-WRONG: a single-harmonic fit to a residual with harmonic structure "
       "returns a BIASED period, so if the offset were that artefact, giving the second harmonic its "
       "own freedom would pull the fundamental back toward ell_A.  ** It moves it by +0.25 and leaves "
-      "the offset at 4.90 sigma.  The offset is not the fit's. **",
-      abs(OBS2 - OBS['nofit_cr']) < 1.0 and (OBS2 - L_A) / MC2.std() > 3.0)
+      "the offset at 2.90 sigma -- under three, where the namesake arm left 4.90.  The offset is "
+      "still not the fit's, and the margin it is not the fit's by has halved. **",
+      abs(OBS2 - OBS['nofit_cr'] - 0.25) < 1e-9
+      and abs(float((OBS2 - L_A) / MC2.std()) - 2.9002) < 0.01
+      and 2.0 < float((OBS2 - L_A) / MC2.std()) < 3.0)
 
 
 # ============================================================ F. what the offset IS
@@ -287,11 +329,13 @@ print(f"      RSS, l_A fixed + linear phase run = {_rss(_drift):.9f}")
 print(f"      ⇒ the two are the SAME model, to {abs(_rss(_free) - _rss(_drift)):.1e}")
 print(f"      and the drift it is: {_dd:+.1f} deg across ell {L.min():.0f}-{L.max():.0f} = "
       f"{abs(_dd) / 360:.3f} of a period over the {(L.max() - L.min()) / L_A:.2f} the range spans")
-check("Ⓕ①  ** a period of 312 and ell_A with a phase running linearly in ell are the SAME "
-      "two-dimensional model -- identical residual sum of squares, to zero. **  So the offset is "
-      "not a competing period: it IS a drift of -96.6 degrees across the range, and that is an "
-      "identity rather than a fit preference",
-      abs(_rss(_free) - _rss(_drift)) < 1e-9 and abs(abs(_dd) - 96.6) < 1.0)
+check("Ⓕ①  ** a period of 309.25 and ell_A with a phase running linearly in ell are the SAME "
+      "two-dimensional model -- identical residual sum of squares, to 1.1e-13. **  So the offset is "
+      "not a competing period: it IS a drift of -78.3 degrees across ell 104-1886, 0.218 of a "
+      "period over the 5.98 the range spans, and that is an identity rather than a fit preference.  "
+      "⌗ *The namesake arm's drift was -96.6 degrees at a period of 312; the IDENTITY is "
+      "arm-independent and only its size moves*",
+      abs(_rss(_free) - _rss(_drift)) < 1e-9 and abs(abs(_dd) - 78.309) < 0.05)
 check("Ⓕ②  ⇒ ** so the order's item 2 does not answer `r_s/D_M`. **  ell_A sets the comb's SPACING "
       "and the construction reproduces it to 0.15 per cent, while the offset is 31 times that "
       "error; what the residual carries is a drift of the acoustic PHASE at the correct spacing.  "

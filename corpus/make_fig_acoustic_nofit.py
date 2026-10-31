@@ -33,9 +33,10 @@ the spectrum against it is out of sample in the strong sense.
    plotting someone else's arm:
 
      nothing fitted   refit_grid185/lcdm_base.npz          D_M = 13864.6627   (67.40, 0.3150)
-                      refit_grid185/cr_base.npz            D_M = 14011.4567   (68.60, 0.2973)
+                      refit_grid185_leafrec1_distances/
+                        cr_base.npz                        D_M = 14011.4567   (68.60, 0.2973)
      refitted         spectra/cc66_r185_verify_lcdm.npz    D_M = 13954.3535
-                      spectra/cc66_r185_verify_cr.npz      D_M = 14017.0386
+                      spectra/cc66_r185_verify_cr_leafrec1  D_M = 14133.9546
 
 ** SCORING IS THE EXISTING FIGURE'S, UNCHANGED, SO THE TWO FIGURES ARE COMPARABLE. **  Planck
 plik_lite TT with its full covariance, `P15`'s own derived CAMB lensing operator imposed on both arms
@@ -58,6 +59,8 @@ import chi2_of_spectrum as CS                                              # noq
 
 SP = os.path.join(ROOT, 'computations', 'beyond_the_wall', 'spectra')
 G185 = os.path.join(ROOT, 'computations', 'beyond_the_wall', 'refit_grid185')
+G185L = os.path.join(ROOT, 'computations', 'beyond_the_wall',
+                     'refit_grid185_leafrec1_distances')
 # ⛭ The figure's derived numbers are NOT a banked spectrum and do not belong in a bank:
 #   `check_banked_config` scans `spectra/`, `refit_grid/` and `refit_grid185/` and requires a
 #   resolved instrument `config` on everything in them.  *This file is a figure's own
@@ -69,11 +72,19 @@ LC, FACB = CS.bin_center_and_fac()
 X_DATA, COV = CS.X_DATA, CS.COV_TT
 
 # ** the four spectra, each with the `D_M` its own `.npz` must carry -- the identity check. **
+# ⛭⛭ r7645+cc66.67: ** BOTH ARMS MOVE TO THE ARM OF RECORD, so this figure and the receipt that
+#   checks it move together. **  *The receipt
+#   `P15_the_no_fit_confrontation_...` asserts these four chi^2 and the four harmonics against this
+#   file's own output, so a drift between them fails there -- which is why this file is re-pointed in
+#   the same pass and re-run rather than left to disagree.*
+#   ⌗ *The no-fit arm's `D_M` is BIT-IDENTICAL across the move (`LEAFREC` does not touch the
+#   background); the refitted arm's moves, because the MINIMUM moves on the arm of record.*
 SPECTRA = {
     'nofit_lcdm': (os.path.join(G185, 'lcdm_base.npz'), 13864.6627, 'control, nothing fitted'),
-    'nofit_cr': (os.path.join(G185, 'cr_base.npz'), 14011.4567, 'CR arm, nothing fitted'),
+    'nofit_cr': (os.path.join(G185L, 'cr_base.npz'), 14011.4567, 'CR arm, nothing fitted'),
     'refit_lcdm': (os.path.join(SP, 'cc66_r185_verify_lcdm.npz'), 13954.3535, 'control, refitted'),
-    'refit_cr': (os.path.join(SP, 'cc66_r185_verify_cr.npz'), 14017.0386, 'CR arm, refitted'),
+    'refit_cr': (os.path.join(SP, 'cc66_r185_verify_cr_leafrec1.npz'), 14133.9546,
+                 'CR arm, refitted'),
 }
 L_A = 298.0          # the comb's own period, as the arm's own fit returns it (r6760+cc66.2)
 
@@ -212,10 +223,23 @@ def main(numbers_only=False):
         print(f"    {SPECTRA[t_][2]:26s} " + " ".join(f"{m:+.3f}" for m in mu)
               + f"   |  one harmonic at l_A: {amp:.4f} +- {eamp:.4f}  ({amp / eamp:.2f} sigma)")
 
-    os.makedirs(OUTDIR, exist_ok=True)
-    np.savez(os.path.join(OUTDIR, 'nofit_figure_numbers.npz'), **out)
-    print(f"  banked -> {os.path.relpath(OUTDIR, ROOT)}/nofit_figure_numbers.npz")
+    # ⛔⛭⛭ r7645+cc66.67: ** THE NUMBERS ARE NOW WRITTEN AFTER THE FIGURE, NOT BEFORE IT. **
+    #   *They were written here, before the `matplotlib` import below.  When that import FAILED in
+    #   cc66's container -- a broken system Pillow -- this file exited 1 having already rewritten
+    #   `nofit_figure_numbers.npz`, leaving the figure's NUMBERS current and the figure itself STALE.
+    #   The receipt that guards this figure checks the numbers against its own and so PASSED, with
+    #   the PDF in the paper no longer matching them.*
+    #   ⇒ *** A generator that writes its summary before its artefact fails OPEN: a crash leaves a
+    #       state that every check calls good.  Writing the numbers only once the figure is on disk
+    #       makes that state unreachable -- the receipt stays red until the figure is really
+    #       regenerated, which is what a reader needs it to do. ***
+    def _bank():
+        os.makedirs(OUTDIR, exist_ok=True)
+        np.savez(os.path.join(OUTDIR, 'nofit_figure_numbers.npz'), **out)
+        print(f"  banked -> {os.path.relpath(OUTDIR, ROOT)}/nofit_figure_numbers.npz")
+
     if numbers_only:
+        _bank()
         return 0
 
     import matplotlib
@@ -298,6 +322,7 @@ def main(numbers_only=False):
     pdf = os.path.join(HERE, 'fig_acoustic_nofit.pdf')
     fig.savefig(pdf, bbox_inches='tight')
     print(f"  wrote -> {os.path.relpath(pdf, ROOT)}")
+    _bank()          # ⛔ only now: see the note above the definition
     return 0
 
 

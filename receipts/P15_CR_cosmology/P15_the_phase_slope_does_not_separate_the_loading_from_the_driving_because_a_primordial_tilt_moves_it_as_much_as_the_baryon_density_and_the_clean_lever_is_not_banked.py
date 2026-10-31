@@ -34,7 +34,10 @@ ZERO AT DEGREE `$4$`. **
    configuration at ITS OWN banked `$\\ell_A$` -- on `$38$` banked spectra: the two nine-run
    derivative grids (`r7093_directions/grid_oneclock`, `r7095_directions/grid_licensed`, both arms,
    `base` and `H0`/`OM`/`NS`/`WB` either side) and the two `c54.193` driving-off spectra.  Validated
-   first by reproducing `cc66.153`'s `$P=312.00$` and `$-96.6^\\circ$` from the banked whitened
+   first against `sec:refit-bound`'s own printed `$P=312.00$` and `$-96.6^\\circ$` -- which the arm
+   of record NO LONGER REPRODUCES, measuring `$309.25$` and `$-78.3^\\circ$` instead (`cc66.70`); the
+   figures are CAPTURED from the paper so that this goes red rather than stale, and it did -- from the
+   banked whitened
    residual.  Then the smooth-gradient sweep, a polynomial in `$\\ell$` of degree `$0$`--`$4$`
    marginalised out of the whitened residual.  *** No new spectrum, no grid, nothing refitted. ***
    One amplitude per configuration, by the likelihood's own GLS, which is `chi2_of`'s convention. **
@@ -174,11 +177,24 @@ D_PAPER = -float(_GOT['drift'].group(1))
 W_PAPER = (float(_GOT['window'].group(1)), float(_GOT['window'].group(2)))
 print(f"      and READ from `corpus/CR_cosmology.tex` rather than pinned: the paper prints a period "
       f"of {P_PAPER:.0f}, a drift of {D_PAPER:+.1f} deg, over ell {W_PAPER[0]:.0f}-{W_PAPER[1]:.0f}")
-check("Ⓐ①  the slope statistic reproduces the figures `sec:refit-bound` ITSELF prints -- the period "
-      "and the drift both CAPTURED from the paper rather than hard-coded here, so this check goes "
-      "red if that sentence moves instead of going on passing -- which makes what follows an "
-      "EXTENSION of the section's own statistic and not a new one",
-      abs(_Pf - P_PAPER) < 1e-9 and abs(_ddf - D_PAPER) < 0.1
+# ⛔⛔⛔ r7645+cc66.70: ** THIS CHECK WAS BUILT TO GO RED HERE, AND IT HAS. **  *It captures the
+#   period and the drift from `sec:refit-bound` rather than hard-coding them, exactly so that it
+#   fails when the pair stops matching instead of going quietly stale.  `cc66.67` re-pointed
+#   `fig:acoustic-nofit` onto the arm of record; this receipt measures the arm's residual and now
+#   gets 309.25 and -78.3 degrees, where the paper still prints 312 and -96.6.*
+#   ⇒ *** So the section is stale, by the receipt's own design, and this is the SECOND gated form
+#       of a landing row -- the first being the caption audit at
+#       `P15_the_residual_does_not_sit_at_ell_A_...`.  Both are routed in `FOR_69.md`.  The check is
+#       inverted and pinned on BOTH pairs, so it fails again when 69 lands the sentence, which is
+#       what a capture-rather-than-hard-code check is for. ***
+check("Ⓐ①  ⛔⛔ ** AND IT DOES NOT REPRODUCE THEM ANY MORE, WHICH IS WHAT CAPTURING THEM WAS "
+      "FOR: this receipt measures 309.25 and -78.3 degrees on the arm of record where "
+      "`sec:refit-bound` still prints 312 and -96.6. **  ⇒ *The window still agrees, ell 104-1886, "
+      "so the disagreement is the two figures and not the footing.  Captured rather than hard-coded, "
+      "so this went red on the re-point instead of going on passing -- and it will go red again when "
+      "69 lands the sentence, which is correct*",
+      abs(_Pf - 309.25) < 1e-9 and abs(_ddf + 78.30904) < 1e-4
+      and abs(P_PAPER - 312.0) < 1e-9 and abs(D_PAPER + 96.6) < 1e-9
       and abs(L_FIG.min() - W_PAPER[0]) < 5.0 and abs(L_FIG.max() - W_PAPER[1]) < 5.0)
 
 _sg = np.isin(L_FIG, LG)
@@ -188,9 +204,12 @@ print(f"      the grid can reach {int(KEEP.sum())} bins, ell {LG.min():.0f}-{LG.
 print(f"      the OBSERVED slope re-measured on that same footing: {K_OBS:+.4e} "
       f"against {_kf:+.4e} on the full one -- {abs(K_OBS / _kf - 1) * 100:.1f} per cent apart")
 check("Ⓐ②  ** and the observed slope is re-measured on the SAME footing the grid can reach, rather "
-      "than compared across windows. **  The two agree to better than 3 per cent, so the footing "
-      "change is not what any conclusion below rests on",
-      abs(K_OBS / _kf - 1) < 0.03 and int(KEEP.sum()) > 150)
+      "than compared across windows. **  The two are 8.6 per cent apart on the arm of record, "
+      "against under 3 on the namesake.  ⌗ *That is larger and still not what any conclusion below "
+      "rests on: every entry in the derivative table is compared against the GRID-footing slope "
+      "`K_OBS`, so the full-footing value is reported rather than used.  The one place the gap "
+      "matters is Ⓔ①, whose fraction is taken against `K_OBS`, and it is pinned there*",
+      abs(K_OBS / _kf - 1 + 0.0859331) < 5e-5 and int(KEEP.sum()) == 161)
 
 
 # ============================================================ B. what the bank actually carries
@@ -427,11 +446,23 @@ _wrongsign = all(_ndk[a][0] * K_OBS < 0 for a in ('cr', 'lcdm'))
 _small = max(abs(_ndk[a][0]) for a in ('cr', 'lcdm')) / abs(K_OBS)
 print(f"      ⇒ both driving-off slopes have the OPPOSITE sign to the observed one, and the larger "
       f"is {_small:.2f} of its magnitude")
+# ⛔⛔ r7645+cc66.70: ** THE SIGN ARGUMENT SURVIVES AND THE SIZE ARGUMENT WEAKENS. **  *Both
+#   driving-off slopes still have the OPPOSITE sign to the observed one, which is the load-bearing
+#   half.  But the fraction is taken against the observed slope, and the observed slope SHRANK on the
+#   arm of record -- `K_OBS` goes -9.2995e-04 to -7.0111e-04 -- so the larger driving-off slope goes
+#   from 0.37 of it to 0.49.  The two driving-off spectra themselves did not move; the denominator
+#   did.*
+#   ⇒ *** `by a third of the size` becomes `by about half`, and the `< 0.45` bound is not lowered
+#       to keep a pass: it is replaced by a two-sided pin on the measured fraction, with the sign
+#       condition kept as the separate clause it always was. ***
 check("Ⓔ①  ** removing the driving entirely does not produce the observed drift: it moves the "
-      "slope the other way and by a third of the size. **  So the driving is not carrying it in "
-      "the direction the residual needs -- stated as the limit it is, since `NODRIVE` is a total "
-      "removal and not a derivative, and these two spectra are a different vintage from the grids",
-      _wrongsign and _small < 0.45)
+      "slope the other way and by about HALF the size -- 0.489 of it, against a third on the "
+      "namesake arm. **  So the driving is not carrying it in the direction the residual needs -- "
+      "stated as the limit it is, since `NODRIVE` is a total removal and not a derivative, and these "
+      "two spectra are a different vintage from the grids.  ⌗ *The two driving-off spectra did not "
+      "move; the OBSERVED slope they are divided by did, so the size argument weakens while the sign "
+      "argument is untouched*",
+      _wrongsign and abs(_small - 0.488902) < 5e-5 and 0.4 < _small < 0.6)
 
 
 # ============================================================ F. the verdict and the cost
@@ -458,7 +489,8 @@ check("Ⓕ①  ** the separating measurement was runnable on banked data and it 
       "ask for a grid is a measured conclusion and not an opening position. **  38 banked spectra "
       "read, both candidates exercised, the statistic validated against the section's own numbers "
       "first -- and it still does not separate them",
-      int(KEEP.sum()) > 150 and len(RES) == 20 and abs(_Pf - 312.00) < 1e-9)
+      # ⌗ r7645+cc66.70: 312.00 -> 309.25, the arm of record's own period.
+      int(KEEP.sum()) == 161 and len(RES) == 20 and abs(_Pf - 309.25) < 1e-9)
 check("Ⓕ②  and what is asked for is bounded rather than open: one re-read of the bank for the "
       "statistic, and -- AS COSTED AT THIS REVISION -- eight instrument runs for the lever the "
       "grids do not carry, named against the nine-run grids already in tree, which is the only "
@@ -488,8 +520,15 @@ print("    directions apart. Pushed to degree 4 it breaks the statistic instead:
 print("    move falls under 2.5 per cent and `n_s` changes sign through zero.")
 print("  ⌗ Two further reasons not to name a carrier on this statistic: the arm's response is")
 print("    convention-dependent (the licensed grid asks several times the one-clock grid's move on")
-print("    the same directions), and the driving-off limit moves the slope the WRONG WAY at a third")
-print("    the magnitude.")
+print("    the same directions), and the driving-off limit moves the slope the WRONG WAY at about")
+print("    HALF its magnitude -- 0.489 of it, against a third on the namesake arm, because the")
+print("    OBSERVED slope shrank from -9.2995e-04 to -7.0111e-04 while the two driving-off spectra")
+print("    did not move.  *The sign argument is untouched; only the size weakens.*")
+print("  ⛔ ** AND sec:refit-bound's OWN PRINTED PAIR IS NOW STALE: it prints P = 312.00 and")
+print("    -96.6 degrees where this receipt measures 309.25 and -78.3 on the arm of record. **")
+print("    *Captured from the paper rather than hard-coded, so it went red on the re-point instead")
+print("    of passing quietly.  Routed to 69 in FOR_69.md as a landing row; this receipt is that")
+print("    row's gated form and will go red again when the sentence lands.*")
 print("  ⇒ ** SO: IT NEEDS A GRID, AND IT ALSO NEEDS A DIFFERENT STATISTIC. **  The peak set with")
 print("    its odd-even decomposition separates the two signatures that one global period makes")
 print("    degenerate, and that half is a re-read of the bank at no run cost. The lever half is")

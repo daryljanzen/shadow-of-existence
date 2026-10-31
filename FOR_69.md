@@ -4356,3 +4356,582 @@ sibling. ⇒ *`cc66.58`'s partition asked which **banks** a receipt reads; a rec
 **quantities**, and one quantity can live in two banks.* **Seven re-pointed, one now available, two
 genuinely blocked** (`r6919_geometry`+`r6919_noop`, `r6897_fields` — checked by the same substitution
 test and not unblocked).
+
+---
+
+# r7645+cc66.68 — ⓶ THE LANDING TABLE, AND TWO FINDINGS THAT ARE NOT RENUMBERINGS
+
+**Every P15 site in the landing set, with the sentence as printed, every figure old → new, the receipt
+that carries it, and whether the claim survives.** ⛔ *Two of its rows are not renumberings: the
+`thirtieth of a per cent` claim **splits**, and `fig:acoustic-nofit`'s `halves it` **inverts**. Both
+are measured below, not inferred.*
+
+## ⓪ First, the thing that invalidated my own first pass, because it bears on how you read the rest
+
+`r7643`+70's fold **re-keyed four `_leafrec1` banks** after `cc66.63`/`.65` re-pointed against
+`r7641`'s keying. In `r6929_geometry_leafrec1`, `r6919_geometry_leafrec1`, `r6897_fields_leafrec1` and
+`r6897_noop_leafrec1`, **`__cr` is now the NAMESAKE's and the arm of record moved to
+`__cr_leafrec1`** — the file is an exact superset of its namesake (measured: all 28 namesake keys
+bit-identical, plus 14 arm keys of which 12 moved; the two that do not are `f` the scan axis and
+`visleaf`, zero on both arms).
+
+70's `RESULT.md` ② says *"No reader of the old meaning exists outside `r7641`'s own `geometry.py`."*
+⇒ **Six readers existed**: four registered P15 receipts (`the_combs_resolution_…`,
+`the_contrast_excess_…`, `the_locator_…`, `the_visibilitys_clock_…`) and two of my own readers under
+`r7641_cc66_grid_readers/`. All four receipts went red in CI on `49afefd23` — the
+`scoped — the runner-read sweep` job — and **the reds were mine, not the sweep's**: I first ruled out
+the relative-path class (every read absolute) and threading (`OMP_NUM_THREADS` 1 and 4 byte-identical),
+then found the four were silently reading **namesake** values out of `_leafrec1` files.
+
+⛭ **AND THE ARM-KEY RULE DID NOT CATCH IT, FOR A REASON WORTH FIXING IN THE RULE.** Your `r7643`
+instruction was that a receipt reading a two-arm bank by key suffix must declare the keys, *"because a
+receipt reading a two-arm bank by key suffix cannot otherwise be audited for which arm it read."* The
+locator's declaration said `` `f__cr` and `rs_leaf__cr` out of `r6929_geometry_leafrec1` `` — **accurate
+about the code, and naming the namesake's arm, with nothing in the rule to say so**. *The rule names a
+KEY; what needs auditing is an ARM, and the correspondence between them lives in the bank and can be
+changed by whoever folds it.* ⇒ My four now name the arm-of-record keys **and** gate the
+correspondence: each loads `r6929_geometry.npz` alongside and asserts the superset relation two-sided
+(28 bit-identical, 12 moved, `dr_s/dchi` 0.3967327 namesake → 0.3951353 arm). **Perturbed: pointing
+the key back at `cr` fails that gate in all four.** ⌗ *A rule you may want corpus-wide: a declaration
+that names a key should be gated against the bank, or it records the code rather than the reading.*
+
+## ⓵ THE LANDING TABLE
+
+Scoring conventions throughout: **185 full-range lensed bins, `ell` 100–1996**, P15's own derived CAMB
+lensing operator on both arms, amplitude closed-form — except `fig:acoustic-nofit`, which is on **179
+bins, `ell` 104–1886** with the figure's own operator. Exact values are given where a pin needs them.
+
+### CR_cosmology.tex
+
+| line | the sentence as printed | figure | old → new | carrying receipt | verdict |
+|---|---|---|---|---|---|
+| 135 | "reproduces the comb to a part in six hundred and is still rejected on shape---at $2.57$ times the control's distance from the data as computed, and $1.57$ times once both arms' parameters are refitted" | 2.57 | **2.57 → 2.3456** (exact 2.345610520803341) | `…the_full_range_lensed_comparison_is_the_unfavourable_one_and_the_control_is_nearly_camb` (`cc66.66`) | SURVIVES, renumber |
+| 135 | (same sentence) | 1.57 | **1.57 → 1.596** (297.668/186.510 = 1.5960) | `…the_full_range_refit_holds_the_background_and_the_phase_residual_was_quantised` (`cc66.68`) | SURVIVES, renumber |
+| 135 | "the arm's unreachable $\chi^{2}$ falls from $278.8$ to $184.989$, below the control's own $186.007$" | 278.8 / 186.007 / 184.989 | **NOT YET MEASURED on the arm of record** | `…the_fit_has_the_controls_freedom_and_the_contrast_the_data_ask_for_lies_outside_every_direction_it_has`; `…the_licensed_rebuild_leaves_all_three_rigidity_numbers_where_they_were…` | HOLD — see ⓶ below |
+| 141 | "this arm sits at $2.57$ times the control's distance from the data (\S\ref{sec:refit-bound})" | 2.57 | **2.57 → 2.3456** | as l.135 | SURVIVES, renumber |
+| 570 | "sits at $2.57$ times the control's distance from the data" / "*leaves it at $1.57$ times*" | 2.57, 1.57 | **2.3456**, **1.596** | as l.135 | SURVIVES, renumber |
+| 952–954 | "the control returns $\chi^{2}=214.1$, or $1.16$ per bin, and this arm $550.5$, or $2.98$ per bin: *the arm sits at $2.57$ times the control's distance*" | 214.1, 1.16 | **UNCHANGED** (214.05665004029697; 1.1571) | `cc66.66` | SURVIVES verbatim |
+| 952–954 | (same) | 550.5, 2.98, 2.57 | **550.5 → 502.09** (502.0935303824395); **2.98 → 2.714**; **2.57 → 2.3456** | `cc66.66` | SURVIVES, renumber |
+| 956–957 | "the same comparison unlensed over $133$ bins giving $279.4$ against $556.7$, a factor $1.98$" | 279.4 / 556.7 / 1.98 → **279.4 / 583.99 / 2.09** | **MEASURED (`cc66.72`).** The control is unmoved at $279.4200$. On 70's DISTANCES' point the arm is $583.9890$, $4.390895$ per bin, **a factor $2.0900$** — so the claim that the arm is about twice the control SURVIVES and is slightly LARGER, while the printed $1.98$ is stale and even the "$\times2.0$" rounds to $2.1$. ⛔ **Two arm-of-record banks exist for this pair** and they disagree in DIRECTION: the REFIT-point one gives $447.3733$ and $1.6011$, which this receipt had been narrating in its own docstring without asserting, and reading it in place of the distances' one turns a finding that slightly strengthens the claim into one that halves it. ⌗ On 185 bins the same re-point goes the OTHER way ($6.323342$ → $6.106828$ per bin), so the sign is a property of the range. **Proposed: "$279.4$ against $584.0$, a factor $2.09$".** | `…the_133_bin_pair_is_computed_and_asserted_and_the_hardcoded_row_carried_the_other_arm` | NEEDS WORDING |
+| 958–959 | "$1.70$, $2.22$, $4.23$ and $9.29$ per bin against the control's $0.77$, $1.44$, $2.62$ and $3.73$ over the four quarters" | the eight | **NOT RE-POINTED** — its receipt is not in the r7645 set | `…at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number` | HOLD |
+| 961–962 | "the control settles at $1.01$ in $\chi^{2}$ per bin and this arm at $1.58$: *the arm at $1.57$ times the control's distance, where the computed spectrum sits at $2.56$ times it on the same bins*---so *freedom closes about a third of the gap and leaves the rest*" | 1.01 | **UNCHANGED** (186.510/185 = 1.0082) | `cc66.68` | SURVIVES verbatim |
+| 961–962 | (same) | 1.58, 1.57, 2.56 | **1.58 → 1.61** (1.6090); **1.57 → 1.60** (1.5960); **2.56 → 2.33** (2.3320) | `cc66.68` | SURVIVES, renumber. ⌗ *`2.56` is a RATIO in a per-bin sentence — INDEX.md:1064 already flags that; its replacement `2.33` inherits the same ambiguity and the `x` should land with it* |
+| 961–962 | "*freedom closes about a third of the gap and leaves the rest*" | — | **2.3456 → 1.596 closes 58 per cent of the excess over one** | `cc66.68` | ⛔ **NEEDS WORDING**: on the namesake, 2.57→1.57 closed about a third of the *ratio*; on the arm of record 2.3456→1.596 closes **55 per cent of the ratio's excess**. *"About a third" was the namesake's arithmetic. Proposal: "freedom closes more than half of the excess and leaves the rest."* |
+| 964–966 | "this arm's expansion rate moves by $0.028\%$ and its matter density by $0.031\%$ from the values the baryon-acoustic distances and the [spectrum] put it" | 0.028% | **0.028% → 0.022%** | `cc66.68` | SURVIVES, renumber |
+| 964–966 | (same) | 0.031% | **0.031% → 2.123%** | `cc66.68` | ⛔⛔ **DOES NOT SURVIVE** — see ⓷ |
+| 991–992 | "the control leaves $186.0$ in $\chi^2$ against $n-5=180$ … *and this arm leaves $278.8$, at $5.2$*: about a hundred in $\chi^{2}$ lies outside every direction the model has" | 186.0 / 278.8 / 5.2 / "about a hundred" | **NOT YET MEASURED** | as l.135's third row | HOLD — see ⓶ |
+| 1041 | "the offsets are one near-constant multipole at all four peaks: $+1.61$, $-0.19$, $+1.07$ and $+1.31$" | the quartet | **+1.61, −0.19, +1.07, +1.31 → +1.696, −0.445, +0.696, +0.518** | `…the_locator_is_good_to_three_hundredths…` (`cc66.54`, re-gated `.68`) | SURVIVES as "about one multipole"; already in this file from `.55` |
+| 1046–1047 | "at the fourth the control carries four fifths of the offset" | four fifths | **four fifths → ninety-one per cent** | same | SURVIVES, reword; already in this file from `.55` |
+| 1047–1048 | "*At the spread the sky's own locating carries, one multipole is not distinguishable from none*" | — | largest offset **+1.31 → +1.696** | same | SURVIVES: the sky's locating spread is one-to-two multipoles and +1.696 is still inside it. ⌗ *But it is now at the top of that range rather than the middle, so "not distinguishable" is doing more work than it was* |
+| 1073–1075 | `fig:acoustic-nofit` caption: "Over $179$ bins on $100\le\ell\le1900$ the control stands at $1.13$ per bin and this arm at $3.00$, a factor $2.66$, against $0.99$ and $1.58$ when four parameters are freed" | 1.13, 0.99 | **UNCHANGED** (1.129, 0.994) | `…the_no_fit_confrontation_is_three_per_bin…` (`cc66.67`, prose repaired `.68`) | SURVIVES verbatim |
+| 1073–1075 | (same) | 3.00, 2.66, 1.58 | **3.00 → 2.65** (2.649); **2.66 → 2.35** (2.3469); **1.58 → 1.60** (1.603) | same | SURVIVES, renumber |
+| 1080–1083 | "One harmonic at $\ell_{A}$ has amplitude $1.37\pm0.15$ for the unfitted arm---$9.1\sigma$---against the control's $0.20\pm0.11$ … freeing the four parameters *halves it* to $0.81\pm0.12$ and leaves $6.9\sigma$" | 1.37±0.15, 9.1σ | **→ 0.9522±0.1576, 6.04σ** | same | SURVIVES as a detection, renumber |
+| 1080–1083 | (same) | 0.20±0.11 (control) | **UNCHANGED** (0.2028±0.1126, 1.80σ) | same | SURVIVES verbatim |
+| 1080–1083 | (same) | 0.81±0.12, 6.9σ, "halves it" | **→ 0.8331±0.1187, 7.02σ** | same | ⛔⛔ **"HALVES IT" INVERTS** — see ⓸ |
+| 1083–1085 | "*the free parameters absorb part of it without reaching its cause*" | — | — | same | ⛔ **NEEDS WORDING**, same cause as ⓸ |
+| 1210–1220 | "a third from the window and *above one and a half* from the term mix make more than one and a half times the excess" | the per-band ratio | **dropped**, per your `r7645` ruling; "above one and a half from the term mix" moves with it | `…the_term_mix_has_the_shape_the_offset_needs_and_over_delivers_its_size` | your ruling at `r7645`, recorded here only so the table is complete |
+| 2036–2057 | the whole `sec:refit-bound` passage | 221.93+4.21f; 1.75/3.80σ; f_sky −0.304; P1/P2 2.141→2.017; "fivefold"; "outside the family" | **→ 222.02+4.26f; 2.23/5.14σ; −0.1246; 2.1345→2.0093; the growth is one side of a V whose vertex is INSIDE this arm's family; outside by 0.531 multipoles against 1.28** | `…the_combs_resolution_is_four_multipoles…` (`cc66.63`, re-gated `.68`) | three rows are `TRANSPOSITION candidate` in the baseline; full reading already in this file from `.63` |
+| 2178–2180 | "on the control the driving gives $\Delta\varphi=+0.126$ with $\Delta\mathrm{alt}=-0.0247$ while the baryon direction gives $-0.0278$ and $+0.0108$" | the four | **NOT RE-POINTED** — its receipt is not in the r7645 set, and the figures quoted are the CONTROL's, which does not move | `…the_de_tilted_peak_set_is_the_phase_observable…` | LIKELY SURVIVES: the sentence's figures are control-side and `LEAFREC` does not reach the control (3.6e-16, r7641). ⌗ *Not asserted — the receipt has not been run on the arm* |
+
+### Cross-paper
+
+| site | the sentence as printed | figure | old → new | verdict |
+|---|---|---|---|---|
+| `CR_framework.tex:1863` | "the control returns $1.16$ in $\chi^{2}$ per bin and this arm $2.98$, the arm at $2.57$ times … refitting both arms' own parameters on the full range leaves it at $1.57$ times" | 1.16; 2.98; 2.57; 1.57 | **1.16 unchanged**; **2.98 → 2.714**; **2.57 → 2.3456**; **1.57 → 1.596** | SURVIVES, renumber |
+| `CR_framework.tex:1863` | "moves this arm's expansion rate and matter density by **under a thirtieth of a per cent** from where the baryon-acoustic distances put them" | the claim | **H0 0.022% (holds); Omega_m 2.123% (fails, 64× the claim)** | ⛔⛔ **SPLITS** — see ⓷ |
+| `CR_framework.tex:1863` | "At the exact least-squares minimum of the linearised fit the control leaves $186.0$ … and this arm $278.8$, about a hundred lying outside every direction the model has" | 186.0 / 278.8 | **NOT YET MEASURED** | HOLD — see ⓶ |
+| `CR_framework.tex:1863` | "built on the leaf rate, radiation restored, the arm's unreachable $\chi^{2}$ falls to $184.989$, below the control's $186.007$" | 184.989 / 186.007 | **NOT YET MEASURED** | HOLD — see ⓶ |
+| `CR_synthesis.tex:1553` | "the control returns $1.16$ … against this construction's $2.98$ … the arm at $2.57$ times … *the refit … leaves it at $1.57$ times* --- with this arm's expansion rate and matter density staying where the baryon-acoustic distances put them, **to under a thirtieth of a per cent**" | as above | **2.98 → 2.714; 2.57 → 2.3456; 1.57 → 1.596**; and the thirtieth claim **SPLITS** | ⛔⛔ same as `CR_framework.tex:1863` |
+| `CR_synthesis.tex:1853` | "this construction's spectrum sits at $2.57$ times the standard model's distance from the data" | 2.57 | **2.57 → 2.3456** | SURVIVES, renumber |
+| `EXPLAINER.md:258` | "this cosmology's spectrum sits at 2.57 times the standard model's distance from them … and it sits at 1.57 times: the freedom closes about a third of the gap and leaves the rest" | 2.57; 1.57; "about a third" | **2.3456; 1.596**; and "about a third" becomes **more than half of the excess** | SURVIVES, renumber + reword |
+| `EXPLAINER.md:258` | "Given its head, this spectrum settles **within a twentieth of a standard deviation of the background the distance measurements had already fixed**, at a cost of one part in a hundred. *The sky is not pulling it anywhere.*" | the claim | **Omega_m moves 2.123%, 0.42 of a grid step** | ⛔⛔ **NEEDS REWRITING, not renumbering** — this is the prose form of ⓷. *The expansion rate is not pulled; the matter density is. "The sky is not pulling it anywhere" is the namesake arm's sentence.* |
+
+## ⓶ THE LINEARISED MINIMUM — MEASURED, AND ONE DECISIVE SENTENCE CHANGES DIRECTION
+
+You asked for the linearised minimum's **186.0 / 278.8** in the table. It is not carried by any receipt
+in the `r7645` set, so I measured it, in a harness whose validation is that **it reproduces three of
+the paper's own printed figures before the new one is read**:
+
+| configuration | linearised minimum chi^2 | n-5 = 180 | the paper |
+|---|---|---|---|
+| control, banked grid | **186.0066** | +0.32 sigma | `186.0`, "within a third of a standard deviation" ✓, and `186.007` at l.1981 ✓ |
+| arm, banked grid (namesake) | **278.7952** | +5.21 sigma | `278.8`, "at $5.2$" ✓ |
+| arm, one-clock grid (namesake) | **184.9886** | +0.26 sigma | `184.989` ✓ |
+| control, one-clock grid | **186.0066** | +0.32 sigma | identical to the banked control, as it must be |
+| **arm, banked grid + `LEAFREC=1`** | **278.7884** | +5.21 sigma | NEW |
+| **arm, one-clock grid + `LEAFREC=1`** | **186.1350** | +0.32 sigma | NEW |
+
+*Definition: the exact least-squares minimum of the model linearised about its base — `d` projected
+orthogonally, in the inverse-covariance metric, out of the five-dimensional span of the base spectrum
+and the four scaled parameter gradients. 185 bins, P15's own lensing operator on both arms. The
+control for the one-clock rows comes from `grid_oneclock` because
+`grid_oneclock_leafrec1` holds the arm's nine runs only, which is 70's `r7639` rule.*
+
+⛭⛭ **⓵ THE UNREACHABLE EXCESS DOES NOT MOVE AT ALL: `278.8` AND `186.0` AND `5.2` AND THE "ABOUT A
+HUNDRED" ALL SURVIVE VERBATIM.** *278.7952 → 278.7884, a change of 0.007 in chi^2, 2.4e-5 relative.
+The gap over the control goes 92.789 → 92.653. So every figure in `CR_cosmology.tex:991-992`, in the
+l.135 clause, and in `CR_framework.tex:1863`'s linearised sentence stands as printed.* ⇒ *** And that
+is worth more than a renumbering avoided: the REACHABLE chi^2 moves a lot on this re-point (550.5 →
+502.1 unfitted, 292.4 → 297.7 refitted) while the part that lies outside every direction the model has
+does not move at all. The ~93 in chi^2 that no parameter reaches is the same object on both arms. ***
+
+⛔⛔ **⓶ BUT THE ONE-CLOCK SENTENCE CHANGES DIRECTION.** The corpus says, at `CR_cosmology.tex:135`,
+`:141` and `CR_framework.tex:1863`: *"built on the leaf rate, radiation restored, the arm's
+unreachable $\chi^{2}$ falls from $278.8$ to $184.989$, **below the control's own $186.007$**"*.
+On the arm of record it falls to **186.1350**, which is **$0.128$ ABOVE** the control's `186.0066`,
+not below it.
+
+⌗ *What that does and does not cost, stated both ways:*
+- *It does not cost the substance. The repair still removes **99.86 per cent** of the unreachable
+  excess (92.653 of 92.782), against 101.1 per cent on the namesake. And `0.128` in chi^2 on 180
+  degrees of freedom is **0.0068 sigma** of the noise expectation — far inside any resolution the
+  statistic has.*
+- *It does cost the WORD. "Below the control's own" is a strict inequality carrying the paper's
+  sharpest rhetorical weight — the arm beating the control on the control's own statistic — and on the
+  arm of record it is false. "Level with" is true and `below` is not.*
+
+⇒ **PROPOSAL**: *"built on the leaf rate, radiation restored, the arm's unreachable $\chi^{2}$ falls
+from $278.8$ to $186.135$, level with the control's own $186.007$ — the repair removing all but a
+tenth of a $\chi^{2}$ of an excess of ninety-three."* ⌗ *That keeps what the sentence is for, which is
+that ONE assignment accounts for the whole unreachable part, and drops a strict inequality the arm of
+record does not support. Note the namesake's `184.989` cleared the control by `1.02`, which is itself
+only `0.054 sigma`, so the namesake's "below" was never a resolved margin either — it is `0.0068
+sigma` the other way now. If you would rather keep the inequality's spirit, the honest form is
+"indistinguishable from the control's own", which is true on both arms.*
+
+⚠ **PROVENANCE, STATED PLAINLY**: *these six numbers are mine, from the harness above, and are NOT
+yet gated by any receipt. I did not register a prediction before measuring them — the measurement was
+exploratory, prompted by your asking for `186.0 / 278.8`, and its only warrant is that the same code
+returns the paper's `186.0066`, `278.7952` and `184.9886` to every digit the paper prints.* ⇒ *The
+proper home for them is `…the_fit_has_the_controls_freedom…` and
+`…the_licensed_rebuild_leaves_all_three_rigidity_numbers_where_they_were_and_the_forbidden_one_puts_the_arm_on_the_controls_own_floor`,
+re-pointed. **Neither is in your `r7645` item 1 list, and `grid_oneclock_leafrec1` exists**, so both
+are re-pointable now rather than blocked. I have not re-pointed them in this revision: it would put
+six figures and a direction change into the corpus on an ungated harness, and the right order is the
+receipts first. I will take them next unless you route them elsewhere.*
+
+## ⓷ THE `THIRTIETH OF A PER CENT` SPLITS — MEASURED, GATED, PERTURBED
+
+`…the_full_range_refit_holds_the_background_and_the_phase_residual_was_quantised` re-pointed at
+`cc66.68`: the ARM's grid moves to `refit_grid185_leafrec1_distances/` (`refit_grid185/launch.sh`
+verbatim with `LEAFREC=1` — the same distances' point, the same nine runs, the same launcher steps),
+the control's grid does not move, and the arm's starting point does not move either
+(`cr_base` carries `D_M 14011.4567`, `l_A 302.8891`, `r_s 145.3281` **bit-identically** to the
+namesake's).
+
+| | namesake | arm of record | the claim |
+|---|---|---|---|
+| H0 | −0.028% | **−0.022%** | inside a thirtieth of a per cent ✓ |
+| Omega_m | −0.031% | **−2.123%** | ⛔ **64 times it** |
+| omega_b | −3.910% | −3.233% | — |
+| n_s | +3.415% | **+5.333%** (+2.57 steps) | — |
+
+⇒ *** SO THE SENTENCE DOES NOT MOVE, IT SPLITS. *** *`CR_framework.tex:1863` and
+`CR_synthesis.tex:1553` both say the arm's "expansion rate **and** matter density stay where the
+baryon-acoustic distances put them, to under a thirtieth of a per cent". On the arm of record the
+expansion rate does and the matter density does not.* ⌗ *`EXPLAINER.md:258` carries the same claim in
+prose — "settles within a twentieth of a standard deviation of the background the distance
+measurements had already fixed … **The sky is not pulling it anywhere**" — and that sentence needs
+rewriting rather than renumbering.*
+
+⇒ **PROPOSAL** for the two `.tex` sites: *"and moves this arm's expansion rate by under a thirtieth of
+a per cent from where the baryon-acoustic distances put it, while pulling its matter density two per
+cent off them — four tenths of one grid step, and the only one of the four parameters the distance data
+themselves constrain."* ⌗ *Stated that way it is still a result and not a retreat: the geometric
+degeneracy at $\lvert\cos\rvert=0.99$ that l.985-988 measures is exactly the direction Omega\_m moves
+along, so a two per cent Omega\_m move at a 0.022 per cent H0 move is the degeneracy being used, not
+the background being broken. That reading is available and I have not asserted it — it would need the
+BAO likelihood run at the moved Omega\_m, which no receipt of mine does.*
+
+### ⌗ And two further gates of that receipt turned, both kept and inverted rather than loosened
+
+**(a) The response model no longer predicts its own minimum.** It says `284.9` and the real run at
+those parameters returns `297.7` — a miss of **+12.8**, where the namesake's was **−0.0** and the
+control's is **+1.4** on the same code. *The reason is nameable: `n_s` moves `+2.57` grid steps on the
+arm of record against `+1.65` on the namesake, and the stencil's quadratic is built on `±1`.* ⇒ *The
+gate is kept and INVERTED — it now asserts the miss two-sided at the measured value and asserts the
+step count that explains it, so a stencil rebuilt wide enough to recover agreement fails it and has to
+be read.* ⚠ **This is the one place where `cc66.67`'s refit column needs reading alongside**: the
+`1.603` per bin it pins is the real run's, which is the right number; the model's `1.540` is not, and
+nothing should quote it.
+
+**(b) On the RAW locator the two arms no longer return the same phase residual** — the control's
+`4.5%` against the arm's `0.7%` — because the arm of record's raw second peak falls in the `532` bin
+where the namesake's and the control's fall in `540`. *That is the bracketing-bin coin flip measured
+at `cc66.68` in the locator receipt: the `l_2` bins agree to `0.011` per cent against `l_3`'s `0.066`,
+so `l_2` is the TIGHTER flip of the two and the raw reading there was never a measurement.* ⇒ ***THE
+CLAIM SURVIVES AND THE ARGUMENT FORM DOES NOT.*** *That `cc66.18`'s `4.5%` is the grid was carried by
+"both arms return the same number". It is now carried by each arm's own five-fold swing between the
+two locators — the control `4.5% → 1.6%`, the arm `0.7% → 3.7%` — **in opposite directions**, which
+cannot be a property of either spectrum. Two spectra each moving five-fold under a change of locator
+is the same evidence as two spectra agreeing, and arguably better.* ⌗ *The withdrawal of `4.5%` stands
+either way; `cc66.18` is not reinstated.*
+
+### ⚠ And one perturbation found nothing until I gated it
+
+I perturbed the three re-points in that receipt. Two fire (the arm's grid, the verified spectrum).
+The third — `r6941_fine_cr_leafrec1` back to `r6941_fine_cr` — **left every gate in the file green**,
+because the locator's error against its own `LSTEP=1` reference is a property of the GRID, not of the
+arm. ⇒ *A re-point nothing holds is not a re-point. The substrate's own comb is now pinned —
+`l_A 302.9431` against the namesake's `301.7986`, peaks `222.05 / 535.85 / 815.03 / 1129.74` against
+`221.96 / 536.10 / 815.40 / 1130.53` — and the perturbation fires.*
+
+## ⓸ `fig:acoustic-nofit`'s "HALVES IT" INVERTS
+
+`CR_cosmology.tex:1080-1083` says the no-fit harmonic is `1.37±0.15` at `9.1 sigma` and that *"freeing
+the four parameters **halves it** to $0.81\pm0.12$ and leaves $6.9\sigma$"*, closing *"the free
+parameters absorb part of it without reaching its cause"*.
+
+| | namesake | arm of record |
+|---|---|---|
+| no-fit amplitude | 1.3729 ± 0.1512 | **0.9522 ± 0.1576** |
+| no-fit significance | 9.08 sigma | **6.04 sigma** |
+| refit amplitude | 0.8128 ± 0.1180 | **0.8331 ± 0.1187** |
+| refit significance | 6.89 sigma | **7.02 sigma** |
+| control, both settings | 0.2028 (1.80) / 0.1051 (1.00) | **unchanged** |
+
+⇒ *** REFITTING NO LONGER HALVES IT. The amplitude falls an EIGHTH, `0.952 → 0.833`, and the
+SIGNIFICANCE RISES, `6.04 → 7.02` — because the no-fit arm's harmonic error is the larger of the
+two. *** *On the namesake both fell. So "the free parameters absorb part of it" was that arm's
+reading: here they absorb an eighth of the amplitude and none of the detection.*
+
+⌗ *What survives untouched: the modulation is still at the comb's own period, still the ARM's
+(`6.04 sigma` against the control's `1.80`), still uncancelled by the fold and still cancelled by
+binning at the period, and the contrast between the two operations is `3.40` against `7.13` on the
+namesake — halved, because the fold weakened and the band means grew, with the arithmetic unchanged.*
+
+⇒ **PROPOSAL** for the caption: *"One harmonic at $\ell_{A}$ has amplitude $0.95\pm0.16$ for the
+unfitted arm---$6.0\sigma$---against the control's $0.20\pm0.11$, consistent with none; freeing the
+four parameters leaves the amplitude almost where it was, $0.83\pm0.12$, and the detection slightly
+firmer at $7.0\sigma$. So the rejection is shaped at the acoustic period, the shape survives the
+refit, and the free parameters do not reach it at all."* ⌗ *The last clause is STRONGER than the one
+it replaces, and it is what the numbers now say.*
+
+### ⛔ And a defect of my own that `cc66.67` left in the tree for one revision
+
+`cc66.67` re-pointed that receipt's computation and its pins **and not the prose it states them in**.
+Its whole "THE ANSWER" docstring block and its closing summary still printed the namesake's
+`537.38 / 3.002`, `282.96 / 1.581`, `2.660x / 1.591x`, `9.08` and `6.89` while the body computed and
+gated `474.12 / 2.649`, `286.89 / 1.603`, `2.3469x / 1.6128x`, `6.04` and `7.02`. **Every gate
+passed**: the figures were in prose, and `check_prose_pins` does not reach a receipt's own answer
+block. ⇒ *Found at `cc66.68` only because `check_marker_transposition` flagged the paper's `1.58` and
+`2.66` as having lost their carrier, and I went to ask which carrier. Repaired. The five flags are in
+`corpus/marker_transposition_baseline.tsv` as `TRANSPOSITION candidate`, routed here, not adjudicated
+away.* ⚠ *The general shape is one for the corpus: a receipt's own stated answer is the one figure
+nothing gates. The `INDEX.md` row is gated, the computation is gated, the prose between them is not.*
+
+## ⓹ AND THE WHOLE BANK ASK IS DISCHARGED — IN A FORM I DID NOT ASK FOR AND WOULD NOW PREFER
+
+Running my own readers before pushing (your `r7643` rule) turned up five reds, and tracking them down
+measured something larger than the reds: **`r7643`'s fold closed TEN of the eleven key gaps**, all at
+`13:43` today, all in the superset form. Only `r6893_slice_check` has no sibling.
+
+| bank | sibling | arm keys added | namesake side |
+|---|---|---|---|
+| `r6893_slice_check` | **none** | — | — |
+| `r6897_fields` | yes | 19 | 18 of 18 bit-identical |
+| `r6897_noop` | yes | 3 | bit-identical |
+| `r6911_noop` | yes | 4 | 8 of 8 bit-identical |
+| `r6915_noop` | yes | 2 | 4 of 4 bit-identical |
+| `r6919_geometry` | yes | 15 | 15 of 15 bit-identical |
+| `r6919_noop` | yes | 2 | 4 of 4 bit-identical |
+| `r6925_geometry` | yes | 22 | 44 of 44 bit-identical |
+| `r6925_noop` | yes | 2 | 6 of 6 bit-identical |
+| `r6929_geometry` | yes | 14 | 14 of 14 bit-identical |
+| `r6929_noop` | yes | 4 | 8 of 8 bit-identical |
+
+⇒ *** SO THE TWO I REPORTED AS GENUINELY BLOCKED — `r6919_geometry`+`r6919_noop` AND `r6897_fields` —
+ARE NOT, AND NEITHER IS `r6925_geometry`, WHICH `cc66.65` HAD TO REACH BY SUBSTITUTION. *** *That
+substitution is still sound — the bit-identity it rests on is measured and unaffected — but it is no
+longer necessary.*
+
+### ⛭⛭⛭ And the no-op asks clear the one test that could have made them worthless
+
+`cc66.64` proved every no-op bank's arm spectrum is **bit-identical to `r6893_switch_screen_cr`'s own
+`Dl__base`**, which is what four receipts' identity legs check — so substituting a sibling would have
+turned `base == base` into a tautology passing while testing nothing. **The question form B raises is
+whether both sides moved together, and they did**: `r6893_switch_screen_cr_leafrec1` exists, its
+`Dl__base` differs from the namesake's, and **all eight arm-of-record no-op spectra are bit-identical
+to THAT base and to none of the namesake's**. ⇒ *The legs stay tests. Measured and gated in
+`which_key_gaps_actually_block.py` and `a_quantity_can_move_when_its_bank_cannot.py`.*
+
+⌗ *What that leaves of the asks I have been carrying: `r6897_noop`, `r6911_noop`, `r6915_noop`,
+`r6919_noop`, `r6925_noop`, `r6929_noop`, `r6897_fields`, `r6919_geometry`, `r6925_geometry`,
+`r6929_geometry` — **all ten discharged**. `r6893_slice_check` alone remains, and it blocks exactly
+one receipt, `the_free_streaming_knob_is_common_to_both_arms_…`.*
+
+### ⚠ But the form has a cost, and I would ask for the other one next time
+
+Form B — `__cr` held at the namesake's and the arm added as `__cr_leafrec1` — makes one file answer
+"what did each arm do", which is better for auditing than the two-file form. **Its cost is that a
+reader re-points by changing the FILE and keeping the KEY, which is the natural move, and that move
+now returns the NAMESAKE with every gate passing.** It did exactly that to four registered receipts
+for one revision. ⇒ **PROPOSAL, as a convention rather than a gate** (you ruled at `r7645` that the
+unregistered readers get no new gate, and this is the same shape): *a fold that re-keys a bank states
+it in `RESULT.md` as a re-key and not only as an addition, and names the readers it checked. 70's
+`RESULT.md` ② said "No reader of the old meaning exists outside `r7641`'s own `geometry.py`"; six did,
+four of them registered receipts. The fold could not have known without looking, and looking is one
+grep.*
+
+### ⌗ And five of my own readers were red, four of them from the fold and one from me
+
+| reader | red because | state |
+|---|---|---|
+| `which_key_gaps_actually_block` | its closure test knew only form A; and `GAPS` was the OPEN set, so the discharge collapsed the verdict map from 11 readers to 1 and left the reach gate **passing vacuously** over one bank | repaired: both forms recognised, detector scores `GAPS_ALL`, `GAPS_OPEN` carries the ask, reach gate inverted and pinned two-sided at ten of eleven |
+| `a_quantity_can_move_when_its_bank_cannot` | its title claim is superseded — the bank CAN move now; and its "substitution is not vacuous" gate read `__cr`, which the re-key turned into the namesake's | repaired: all four gates restated against the new state, the tautology gate re-pinned at 27 copies (19 the screen's own inert switches, 8 the no-op arm runs) |
+| `cc66_46_blockers_after_the_second_bank` | **mine** — `cc66.68`'s convention gate added four `GE[` lines to a receipt whose reads this file counts; and a second gate had been green since `.58` on form-A prose, its condition holding only because `arm_keys` reads the namesake file | repaired: lines partitioned on purpose with both sides counted, the form-A gate restated as form B |
+| `phase_slope_on_the_arm_of_record` | **mine** — `K_OBS` is computed from the ARM's whitened residual, which `cc66.67` re-pointed | see below |
+| `item_two_inventory_partitions_the_44` | the READY bucket shrank as receipts were re-pointed out of it | repaired: re-pinned at three, and it now asserts the two that LEFT are re-pointed, so a falling count cannot be confused with a blinded detector |
+
+⛔⛭ **AND THE `K_OBS` ONE IS A FINDING, NOT A MAINTENANCE RED.** That file asserted twice that `K_OBS`
+"is a SKY quantity and so is common to both arms — which is exactly what makes the `move needed`
+column comparable between them". It is computed from `nofit_cr_whitened`, the **arm's** own whitened
+residual. `cc66.67`'s re-point moved it from `-9.2995e-04` to `-7.0111e-04`, **24.6 per cent, on a
+quantity declared arm-independent**. ⇒ *The cross-arm reading of that column is withdrawn. What
+survives untouched is the within-arm comparison, which is what the spread uses — and the spread is
+exactly `K_OBS`-independent by construction, as the pin's own note already said, so nothing the file
+CONCLUDES rested on the false premise.* ⌗ *It was caught only because that value carries a direct pin,
+put there at `cc66.50` precisely because perturbation showed nothing else in the file could see it. A
+pin on a number nothing else can see is the only reason this was ever read.*
+
+## ⓺ AND ITEM 1's REMAINING THREE — ONE OF THEM MEASURED, AND NOT BLOCKED
+
+**`…the_refit_leaves_the_background_where_the_distances_put_it_and_does_not_close_the_phase`** — the
+132-bin receipt — reads `refit_grid/` and `spectra/cc66_refit_verify_{lcdm,cr}.npz`. Both siblings
+exist: `refit_grid_leafrec1_distances/` (nine runs, LMAXL 1300) and
+`spectra/cc66_refit_verify_cr_leafrec1.npz`.
+
+⛔ *The worry I started with was that the verification file is banked at the **FULL-RANGE** minimum —
+its manifest gives `68.57073 / 0.291246 / 0.021643 / 1.015066`, the same point as
+`cc66_r185_verify_cr_leafrec1` — while the namesake 132-bin receipt verifies at its own 132-bin
+minimum, `68.6077 / 0.2967 / 0.0217 / 0.9949`. If the two ranges choose different points, the banked
+file verifies the wrong one and the re-point is blocked on a new run.*
+
+⇒ **I registered that as a prediction and MEASURED it, and the reachable negative fired.** Fitting
+`refit_grid_leafrec1_distances/` on the 132 bins lands at:
+
+| | start | 132-bin minimum | steps | 70's banked point | distance |
+|---|---|---|---|---|---|
+| H0 | 68.60 | **68.599120** | −0.00 | 68.570730 | **+0.014 step** |
+| Omega_m | 0.2973 | **0.290866** | −0.43 | 0.291246 | **−0.025 step** |
+| omega_b | 0.0224 | **0.021839** | −0.70 | 0.021643 | **+0.245 step** |
+| n_s | 0.965 | **1.012701** | +2.39 | 1.015066 | **−0.118 step** |
+
+*** SO THE TWO RANGES CHOOSE THE SAME POINT TO WITHIN A QUARTER OF A GRID STEP, AND 70's SINGLE
+BANKED VERIFICATION SERVES BOTH. THE RE-POINT IS MECHANICAL AND THERE IS NO NEW BANK ASK. *** ⌗ *And
+my premise was wrong in the same direction on the namesake: its 132-bin and full-range minima
+(`68.6077 / 0.2967 / 0.0217 / 0.9949` against `68.5811 / 0.2972 / 0.0215 / 0.9980`) also agree to
+within a quarter step — 0.013, 0.033, 0.25 and 0.155. I had read "different four-figure values" as
+"different points"; at the stencil's own resolution they are one point. Recorded because the reading
+that nearly cost a bank ask was mine.*
+
+⛭ *What DOES move on the 132 bins: as-computed `316.7` (`2.399` per bin) and the model's refitted
+minimum `170.8` (`1.294` per bin). `Omega_m` moves **−2.164 per cent** here against the namesake's
+−0.20, so the matter-density half of the `thirtieth of a per cent` claim fails on BOTH ranges and not
+only on the full one — which strengthens ⓷ rather than qualifying it. The verified χ² must be scored
+by the receipt itself and I have not re-pointed it yet.*
+
+⌗ **AND IT SETTLES A LITERAL `cc66.68` PINNED.** The full-range receipt's gate reads
+`H0 moves FURTHER than on 132 bins (0.022% against 0.011%)`. On the arm of record the 132-bin H0 move
+is **−0.001%**, not +0.011%, so `0.022% > 0.011%` stays true but for the namesake's reason.
+⇒ *When I re-point the 132-bin receipt the comparison becomes `0.022%` against `0.001%` — still
+"further", by twenty times rather than two. Flagged now; it will be restated with the measurement
+rather than left as a cross-arm comparison.*
+
+The other two — `…the_1p57_has_no_parameter_address_…` and the 133-bin pair — are untouched this
+revision and remain item 1's tail.
+
+## ⓻ AND WE FIXED THE SAME FOUR RECEIPTS INDEPENDENTLY — I TOOK THE EXPLICIT KEY, AS YOUR NOTE INVITES
+
+Your `f815407fc` and my `cc66.68` diagnosed the same re-key and repaired the same four receipts. Two
+of the four auto-merged, which left **both** mechanisms in one file — and that fails my convention
+gate, because under your view class `GE['cs__cr']` returns the ARM value, so the gate's assertion that
+the sibling's `__cr` IS the namesake's bit for bit cannot hold. They are incompatible; one had to go.
+
+I took the explicit key, which your note invites. ⌗ *Two reasons worth recording, neither of them
+about preference:*
+1. *The view makes the code **say** `__cr` and **read** `__cr_leafrec1`. That is the same opacity that
+   caused the bug, in the opposite direction — the `ARM KEYS READ` declaration still cannot be checked
+   against the code, which is the auditability your `r7643` arm-key rule exists for. (My two stale
+   declarations are corrected in the same pass; they had been naming the namesake's keys accurately.)*
+2. ⛔ *It is **fail-open**. Where the `_leafrec1` key is absent it falls through to `__cr` silently, so
+   if the bank were re-keyed back the four receipts would return to reading the namesake with nothing
+   firing. The explicit form plus the convention gate fails closed — perturbed: pointing the key back
+   at `cr` reds all four.*
+
+⇒ *If you would rather keep the view, it needs a fail-closed branch (raise where an `X__cr` read finds
+no `X__cr_leafrec1` in a file that carries any `_leafrec1` key at all) and it needs the convention gate
+beside it reading the RAW file rather than the view. Either shape is fine by me; what is not fine is a
+mechanism with no gate on the convention it depends on, which is how one revision of silent namesake
+reads happened.* ⌗ *All four run green on the reconciled form, and your note and `FOR_70.md` entry are
+kept as they stand.*
+
+⛭ **And your note to 70 — "a re-key of a bank someone already reads is a change to those receipts; run
+the bank's readers before pushing it" — is the right rule and I would add one line to it:** the fold's
+`RESULT.md` should say **re-key** and not only **addition**, and name the readers it checked. 70's ②
+said "No reader of the old meaning exists outside `r7641`'s own `geometry.py`"; six did, four of them
+registered receipts. *One grep would have found them, and the sentence as written reads like it had
+been run.*
+
+---
+
+# r7645+cc66.69 — ITEM 1's FOURTH, AND TWO MORE LANDING ROWS
+
+`…the_refit_leaves_the_background_where_the_distances_put_it_and_does_not_close_the_phase` re-pointed.
+Not blocked: this range's own minimum sits within a quarter grid step of 70's banked verification
+point, measured before the edit and gated.
+
+## ⛔⛔ The 132-bin half of the `thirtieth of a per cent` claim fails too
+
+| | namesake | arm of record |
+|---|---|---|
+| H0 | 0.011% | **0.001%** (holds) |
+| Omega_m | 0.20% | **2.16%** (65× a thirtieth of a per cent) |
+| verified χ² / per bin | 171.1 / 1.30 | **181.7 / 1.38** |
+| ratio | 1.45× | **1.54×** (2.35× as-computed) |
+
+⇒ *So the matter-density half fails on **both** ranges, which strengthens ⓷ rather than qualifying it:
+it is not an artefact of the damping tail being in the fit.* ⌗ **And the gate that was supposed to
+hold this claim could never have failed for it** — it read `abs(d_om) > 0.01`, an absolute bound on
+`Omega_m` that at 0.2973 is **3.4 per cent**, beside a claim of a thirtieth of one. The namesake's
+0.20% passed it and so does 2.16%. *Replaced by two per-cent gates pinned two-sided. Worth a sweep: an
+absolute bound standing in for a relative claim will read as a pin to `check_figures_pinned` and
+cannot fail for what it names.*
+
+## ⛭⛭⛭ And `does not close the phase` survives, on rebuilt evidence
+
+PART 4 compared a **computed** "after" on raw `LSTEP=8` peaks against a **typed-in** "before" of 2.3
+and 0.9 — and the raw locator is what `cc66.18`'s 4.5% was withdrawn as. ⇒ *** On the arm of record
+that locator returns a BIT-IDENTICAL peak set before and after the refit, `220/532/812/1132` both
+times, so its phase is `0.72%` on two spectra separated by 146 in χ². *** *That is the case against
+the raw number made by the number itself, and it is independent of the 185-bin receipt's measurement
+of the same thing.*
+
+Both columns now computed, on both locators: refined **1.32% → 3.69%** (nearly tripling) and the
+fourth peak **0.47% → 0.51%**. **The verdict stands and the receipt's name holds.**
+
+## Two landing rows this adds
+
+| site | the sentence | old → new | verdict |
+|---|---|---|---|
+| `CR_cosmology.tex:964–966` | "its matter density by $0.031\%$" — and wherever the corpus quotes the 132-bin pair `0.011\%` / `0.20\%` | **0.011% → 0.001%; 0.20% → 2.16%** | ⛔ the matter-density half fails on this range too |
+| `sec:refit-bound`, wherever `2.3\%\to4.5\%` or the 132-bin `1.45` / `2.22` appear | the phase pair and the cost pair | **2.3/4.5 → 1.32/3.69** (refined); **1.45 → 1.54**; **2.22 → 2.35** | SURVIVES, renumber; the phase pair also changes LOCATOR, which the wording should say |
+
+⌗ *And this settles the flagged literal in `cc66.68`: the full-range receipt's gate reads `H0 moves
+FURTHER than on 132 bins (0.022% against 0.011%)`. The 132-bin arm-of-record figure is **0.001%**, so
+the comparison is 0.022% against 0.001% — still "further", by twenty times rather than two. I have
+left the full-range gate's literal as it stands this revision rather than making it a cross-receipt
+dependency; if you would rather the two receipts cite each other there, say so and I will wire it.*
+
+## ⌗ And item 1's fifth is re-pointable, with one structural difference — plus an independent confirmation of ⓷
+
+`…the_1p57_has_no_parameter_address_…` does not read a grid: it reads
+**`refit_grid185/verify.sh`**, capturing each arm's verification parameters out of the launcher by
+regex, and then reproduces them against `refit_grid185/verify_{lcdm,cr}.npz`'s own stored `D_M`,
+`r_s` and `l_A`. *That is a good method — the minimum is established from the artefacts rather than
+quoted — and it is why the re-point is not a filename swap: `refit_grid185_leafrec1_distances/` holds
+nine grid runs and no launcher and no `verify_*.npz`.*
+
+⇒ **The artefacts exist, in `r7633_70_leafrec_refit/`**: `launch.sh`, a nine-run `grid/`, `refit.py`
+(“`refit_grid185/fit.py`'s method”), `verify_cr_leafrec1.npz` and `verify_chi2.txt`. *So the receipt
+re-points onto that bank, with its capture rewritten for that launcher's own command shape rather
+than `verify.sh`'s two-command one. Next revision.*
+
+⛭⛭ **AND THAT BANK INDEPENDENTLY CONFIRMS `cc66.68`'s CENTRAL MEASUREMENT**, which I had taken from
+the stencil alone. 70's own `RESULT.md` table:
+
+| | H0 | Omega_m | omega_b | n_s | χ², 185 bins |
+|---|---|---|---|---|---|
+| `r6941` (`LEAFREC=0`) | 68.5811 | 0.297209 | 0.021524 | 0.997952 | 292.4 |
+| `LEAFREC=1` at that point, **unrefitted** | 〃 | 〃 | 〃 | 〃 | **452.9** |
+| `LEAFREC=1`, **refitted** (the arm of record) | **68.5707** | **0.291246** | **0.021643** | **1.015066** | **297.7** |
+| control | 67.4103 | 0.309826 | 0.021966 | 0.954248 | 186.5 |
+
+⇒ *My `cc66.68` fit of the `_leafrec1_distances` stencil landed at `68.585167 / 0.290988 / 0.021676 /
+1.016468` — within 0.07 of a step of 70's refit, reached by a different route from a different grid.
+**So `Omega_m` moving 2 per cent off the distances' point is 70's number as well as mine**, and
+`cc66.68`'s `Omega_m` finding does not rest on my stencil alone.* ⌗ *And the middle row is worth the
+landing table's attention on its own: at the namesake's refit parameters the switch costs **452.9**,
+and refitting recovers to 297.7 — so almost all of what `LEAFREC` costs is recoverable by parameters,
+and what it recovers it with is `n_s` (+0.017) and `Omega_m` (−0.006). That is the same pair, in the
+same direction and the same size, as the split in ⓷.*
+
+---
+
+## `cc66.71` — item 1's FIFTH: `the_1p57_has_no_parameter_address` on 70's distances' point
+
+**The title's REASON fails and its CONCLUSION survives.** On the arm of record the TT-preferred
+`$\omega_m$` sits **`$-0.6728\sigma$`** from its own BAO minimum and the BAO fit pays **`$+0.5244$`**
+in `$\chi^2$` at it — against the namesake arm's `$-0.046\sigma$` and the `$+0.010$` the paper
+prints, so about **fifteen** and **fifty-two** times. `$-0.67\sigma$` is still INSIDE the
+constraint's own width and half a unit of `$\chi^2$` on thirteen measurements, so *the `$1.57\times$`
+is still not a displacement of the matter density*. What fails is **"sits ON its own BAO minimum"**,
+which is the reason the title gives and the clause the file's NAME carries.
+
+### ⓵ THE LANDING ROWS — eight sites, the first six gated
+
+| # | site | line | as printed | arm of record | verdict + proposal |
+|---|------|------|-----------|---------------|--------------------|
+| 1 | P15 `sec:refit-bound` | l.964–966 | *"this arm's expansion rate moves by `$0.028\%$` and its matter density by `$0.031\%$` from the values the baryon-acoustic distances and the acoustic angle fix"* | `$0.0427\%$` and `$2.0363\%$` | **SPLITS.** `H0` holds; `$\Omega_m$` fails by 66×. Proposal: *"moves by `$0.043\%$` and its matter density by `$2.04\%$`"* — and the clause that follows, *"the background the distances fix is the background the spectrum wants"*, is then true of the expansion rate and **false of the matter density**, so it needs the split in words. |
+| 2 | P15 `sec:refit-bound` | l.968–970 | *"sits `$0.046$` of a standard deviation from the distance fit's, at a cost of `$0.010$` in `$\chi^{2}$` to the distance data—one part in a hundred"* | `$0.6728\sigma$` and `$+0.5244$` | **FAILS.** Proposal: *"sits `$0.67$` of a standard deviation from the distance fit's, at a cost of `$0.52$` in `$\chi^{2}$` — half a unit on thirteen measurements"*, and **drop "one part in a hundred"**: it is now about half of one. |
+| 3 | P15 `sec:refit-bound` | l.971–973 | *"So the spectrum is not pulling the background anywhere"* | pulled from `$-0.0199\sigma$` to `$-0.6728\sigma$`, a factor of `$33.8$` | **NEEDS WEAKENING.** It IS pulling it, just not out of the width. Proposal: *"So the spectrum is not pulling the background out of the distance data's own width"*. |
+| 4 | P15 `sec:refit-bound` | l.973–975 | *"The control's own displacement is larger and is not a comparison of the same kind"* | control larger in `$\Omega_m$` (`$2.09\times$`) and in `$\chi^2$` (`$28.7\times$`); **ARM** larger in `$\omega_m$` (`$2.96\times$`) | **TRUE ONLY WITH THE VARIABLE NAMED.** Proposal: *"larger in `$\Omega_m$` and in `$\chi^{2}$`"*. The second half (*"not a comparison of the same kind"*) stands untouched — `$0.3150$` is still a microwave fit. |
+| 5 | P15 `sec:refit-bound` | l.980–982 | *"this arm prefers `$0.998$` against the control's `$0.954$`, bluer by `$0.044$`"* | `$1.015066$` against `$0.954248$`, bluer by `$0.060818$` | **FAILS on the arm's half; the control's `$0.954$` is EXACT.** Proposal: *"prefers `$1.015$` against the control's `$0.954$`, bluer by `$0.061$`"`. |
+| 6 | P15 frontier passage | l.2818 | *"prefers a tilt of `$0.998$` here against `$0.954$` on the standard one … so a derivation has to land near the bluer value"* | `$1.015$` | **FAILS, and the ARGUMENT STRENGTHENS:** the gap a derivation must reach widens from `$0.044$` to `$0.061$`. |
+| 7 | P15 `sec:refit-bound` | l.976–979 | *"one-step excursions cost `$2527$`, `$740$`, `$141$` and `$31$` in `$\chi^{2}$` on the four parameters"* | **NOT MEASURED BY ME** | ⚠ These are the NAMESAKE stencil's curvatures. `cc66.68`'s `refit_grid185_leafrec1_distances/` carries the arm-of-record stencil, so they are computable; I did not compute them and do not assert them. **Flagged, not landed.** |
+| 8 | `receipts/INDEX.md` row | l.1147 (`C71`) | *"the `1p57` receipt's instrument run gives `$0.9980$`/`$0.9542$`"* | `$1.015066$`/`$0.954248$` | **STALE IN THE PRESENT TENSE.** It is a correct record of a NAMESAKE-arm reconciliation; it needs *"the namesake arm's"* inserted. **I did not edit it** — it is another receipt's row. |
+
+### ⓶ WHAT IS GATED AND WILL GO RED BY DESIGN WHEN YOU LAND IT
+
+**New this pass.** The receipt's **PART 5** now CAPTURES four figure groups from `CR_cosmology.tex`
+and asserts the partition — six arm-side figures OUT, **only the control's tilt agreeing** (out by
+`$0.000248$`, inside half a last digit). Rows 1, 2 and 5 above are its captures; landing any of them
+reddens it, which is the signal that the landing happened. *A missing pattern FAILS rather than
+emptying the set — the vacuity trap.*
+
+**Still outstanding from `cc66.70`, both gated, both red on landing:**
+- `fig:acoustic-nofit`'s **caption audit** (`…the_residual_does_not_sit_at_ell_A…`, Ⓐ②): `nbins` (179)
+  and `ctrl_fold` (`$0.20\pm0.11$` against `$0.202824\pm0.112577$`) still AGREE; `per_bin`,
+  `refit_pb`, `arm_fold` and `refit_fold` are OUT, worst `arm_fold` by `$3.007099$`.
+- `sec:refit-bound`'s **printed period/drift pair** (`…the_phase_slope_does_not_separate…`, Ⓐ①):
+  the paper's `$312$` and `$-96.6^\circ$` against a measured `$309.25$` and `$-78.30904$`, pinned
+  both ways. *Perturbed by pretending you had already landed the pair: it reds, so "it notices the
+  landing" is proven rather than asserted.*
+
+### ⓷ TWO ASKS, BOTH ABOUT BANKS RATHER THAN PROSE
+
+**⒜ The banked background CANNOT SEE the arm, and this is measured, not argued.** Run at the arm's
+own TT point with `LEAFREC=0`, the instrument returns `$D_M$`, `$r_s$` and `$l_A$` **bit-identical**
+to the `LEAFREC=1` run — the leaf record acts on recombination's rate, not on the expansion history
+the ruler is built from. *So an identity check against a banked background establishes the
+PARAMETERS and is blind to the ARM, which is the re-key's own failure mode: read the wrong key and
+the namesake comes back silently.* The receipt therefore rests the arm's identity on the
+instrument's **resolved switch snapshot**, which agrees with the bank's stored `config` on all seven
+model-defining switches and on the instrument's source hash, and differs from the `LEAFREC=0` run on
+exactly `LEAFREC`. ⇒ **But the CONTROL's banks (`refit_grid185/verify_{lcdm,cr}.npz`) predate that
+ratchet and carry no `config` at all**, so the control's arm identity is not checkable from its own
+artefact. Either re-bank them with a config or record that it cannot be checked; I have recorded the
+asymmetry in the receipt rather than smoothed it over.
+
+**⒝ The arm-of-record grid has no launcher.** `refit_grid185_leafrec1_distances/` carries eight
+stencil spectra and a base, and no `verify.sh` and no `verify_*.npz`. I read the verification point
+from the `switches` field of `spectra/cc66_r185_verify_cr_leafrec1.npz`'s manifest, cross-checked
+against the structured `point` the same manifest carries — **two independent records, required to
+agree before either is used**, which is a check the namesake's single launcher file cannot be given.
+A launcher in the grid directory would make the two arms symmetric.
+
+### ⓸ TWO ARM-OF-RECORD MINIMA ARE IN PLAY AND THEY AGREE — but they print differently
+
+70's banked point is `$(68.570730,\,0.291246,\,0.021643,\,1.015066)$`; my `cc66.68` stencil minimum
+is `$(68.585167,\,0.290988,\,0.021676,\,1.016468)$`. **This receipt uses the BANKED point, because
+the bank is the artefact its gate reproduces.** They differ by `$0.014$` in `$H_0$` and `$0.00026$`
+in `$\Omega_m$` — a fraction of a grid step — and both move `$\Omega_m$` by about `$2.0$`–`$2.1$`
+per cent, so no finding turns on the choice. ⚠ **But the `$H_0$` per-cent move is `$0.0427\%$` here
+against `$0.0216\%$` at `cc66.68`**, so a reader comparing the two receipts sees two numbers for
+what looks like one quantity. Stated here so it is not read as a contradiction.
+
+### ⓹ THE NAME
+
+`…_sits_on_its_own_bao_minimum_…` is **false of the arm of record**. The second half,
+`…_while_the_controls_pays_fifteen_in_chi2_to_leave_planck`, holds **exactly**, at `$+15.058$`. A
+registered receipt's name is not this seat's to change; the docstring carries a note saying so.

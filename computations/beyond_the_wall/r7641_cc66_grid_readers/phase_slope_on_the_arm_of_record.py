@@ -79,9 +79,20 @@ CTL = dict(go=os.path.join(BW, 'r7093_directions', 'grid_oneclock'),
            gl=os.path.join(BW, 'r7095_directions', 'grid_licensed'),
            nd=os.path.join(SP, 'c54.193_lcdm_nodrive_L3000.npz'))
 
-#: K_OBS, the OBSERVED drift, is a SKY quantity and so is common to both arms -- which is why the
-#: "move needed" column is readable on the arm of record at all.  Read from the receipt's own
-#: validated route rather than retyped: the whitened no-fit residual's own best period against l_A.
+#: K_OBS, the OBSERVED drift.  Read from the receipt's own validated route rather than retyped: the
+#: whitened no-fit residual's own best period against l_A.
+#: ⛔⛔⛔ r7645+cc66.68: ** AND IT IS NOT A SKY QUANTITY, WHICH THIS FILE ASSERTED TWICE AND THE
+#:   RE-POINT DISPROVED. **  *Both this comment and PART 1's said K_OBS "is a SKY quantity and so is
+#:   common to both arms -- which is exactly what makes the `move needed` column comparable between
+#:   them".  It is computed from `nofit_cr_whitened`, the ARM's own whitened residual, so it is a
+#:   property of the data AND the model.  `cc66.67` re-pointed the no-fit figure onto the arm of
+#:   record and K_OBS moved from -9.2995e-04 to -7.0111e-04 -- 24.6 per cent, on a quantity declared
+#:   arm-independent.*  ⇒ *** So the "move needed" column is NOT comparable between the arms as
+#:       this file claimed, and the pinned value below is the ARM OF RECORD's.  What survives is the
+#:       comparison WITHIN each arm, which is what the spread actually uses -- and the spread is
+#:       exactly K_OBS-independent by construction, as the pin's own note says, so nothing this file
+#:       CONCLUDES rested on the false premise.  The premise was load-bearing only for the column's
+#:       cross-arm reading, and that reading is withdrawn. ***
 _z0 = np.load(os.path.join(CTL['gl'], 'cr_base.npz'), allow_pickle=True)
 KEEP = (np.isfinite(CS.bin_spectrum(_z0['ls'], _z0['Dl']))
         & (CS.BIN_HI <= LMAX_CUT) & np.isin(LC, L_FIG))
@@ -144,8 +155,10 @@ print("  PART 1 -- K_OBS, THE SKY'S OWN DRIFT, AND THE MASK BOTH ARMS SHARE")
 print(BAR)
 #: ** K_OBS IS THE RECEIPT'S OWN, LIFTED VERBATIM AND NOT RE-DERIVED. **  It is the OBSERVED drift:
 #: the best period of the banked no-fit WHITENED residual on the bins the grid can reach, against the
-#: figure bank's own `l_A`.  It is a SKY quantity, so it is common to both arms -- which is exactly
-#: what makes the "move needed" column comparable between them.
+#: figure bank's own `l_A`.  ⛔ *It is NOT a sky quantity and so is NOT common to both arms --
+#: see the note at the head of this file: it is the ARM's whitened residual, it moved 24.6 per cent
+#: when `cc66.67` re-pointed the figure, and the cross-arm reading of the "move needed" column is
+#: withdrawn at `cc66.68`.  The within-arm comparison, which is what the spread uses, is untouched.*
 #:   ⛔ *A first version of this file invented a K_OBS expression instead of lifting this one, and it
 #:   crashed on a dimension mismatch rather than returning a plausible wrong number.  The crash was
 #:   luck; the lift is the rule.*
@@ -260,13 +273,19 @@ print(f"    K_OBS, the sky's own drift, scored against both arms alike: {K_OBS:+
 #   directions, so the ratio is the ratio of derivatives alone; and the move RANGE shifts by only
 #   the same 3 per cent.*  ⇒ ** So a wrong lift would have been invisible, and the only thing that
 #   can catch it is a direct pin against the receipt's own printed value. **
-check("⛔⛭ K_OBS IS THE RECEIPT'S OWN PUBLISHED VALUE, pinned directly -- because perturbation "
-      "showed that replacing it with a plausible constant 3 per cent away leaves every other gate "
-      "in this file green.  ⇒ ** The spread is exactly K_OBS-independent by construction and the "
-      "move range nearly so, so nothing downstream can detect a wrong lift: this pin is the only "
-      "thing that can **",
-      abs(K_OBS + 9.2995e-04) < 5e-8,
-      f"{K_OBS:+.6e} against the receipt's -9.2995e-04")
+check("⛔⛭ K_OBS IS THE RECEIPT'S OWN VALUE ON THE ARM OF RECORD, pinned directly -- because "
+      "perturbation showed that replacing it with a plausible constant 3 per cent away leaves every "
+      "other gate in this file green.  ⇒ ** The spread is exactly K_OBS-independent by "
+      "construction and the move range nearly so, so nothing downstream can detect a wrong lift: "
+      "this pin is the only thing that can **  ⛔⛔ *AND THE PIN IS WHAT CAUGHT THE PREMISE: it "
+      "held -9.2995e-04 from cc66.50 to cc66.67, and cc66.67's re-point of the no-fit figure moved "
+      "the value to -7.011071e-04 -- 24.6 per cent, on a quantity this file twice called "
+      "arm-independent.  A pin on a number nothing else can see is the only reason that was ever "
+      "read.*",
+      abs(K_OBS + 7.011071e-04) < 5e-8
+      and abs(abs(K_OBS / -9.2995e-04) - 1) > 0.20,
+      f"{K_OBS:+.6e} against the namesake figure's -9.2995e-04, "
+      f"{100 * (K_OBS / -9.2995e-04 - 1):+.1f} per cent")
 RES = {}
 print(f"    {'arm':>9} {'grid':9s} {'par':3s} {'dk/dln(th)':>12s} {'move for k_obs':>15s}")
 for arm in ('namesake', 'aor'):

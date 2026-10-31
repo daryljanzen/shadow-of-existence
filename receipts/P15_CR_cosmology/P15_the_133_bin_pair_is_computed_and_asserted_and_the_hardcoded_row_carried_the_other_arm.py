@@ -12,6 +12,16 @@ PRINTED BESIDE IT ARE COMPUTED FROM.  cc66.7's OWN FIGURE IS 4.19. ***
 rests on. **  *This is a provenance defect and is reported as one -- but it is a provenance defect
 inside a table whose entire purpose is a LIKE-FOR-LIKE ratio, and a computed row is what caught it.*
 
+*** AND ON `r7645`'s POINT THE PAPER'S `a factor 1.98` GOES UP RATHER THAN DOWN: $2.09$ AT 70's
+DISTANCES' POINT. TWO BANKS CARRY THE ARM OF RECORD -- ONE AT THE DISTANCES' BACKGROUND AND ONE AT
+THE REFIT POINT -- AND THIS FILE NARRATED THE REFIT ONE'S $1.60$. READING THE WRONG ONE TURNS A
+FINDING THAT SLIGHTLY STRENGTHENS THE CLAIM INTO ONE THAT HALVES IT. ***
+
+⌗ ** AND FIVE FIGURES THIS FILE REPORTED WERE NARRATED AND NOT ASSERTED -- IN THE FILE WHOSE WHOLE
+SUBJECT IS THAT A NARRATED NUMBER IS NOT A MEASURED ONE. **  `447.3733`, `3.363709`, `1.601078`,
+`938.3175` and `5.071986` sat in this docstring and in no check.  *They reproduce exactly and are
+gated in PART 5; the point is that nothing would have failed if they had not.*
+
 Built r7109+cc66.85 (node 66, code seat), answering the first half of `r7109` ⓷ (= `r7101` Q1).
 
 ===================================================================================================
@@ -43,6 +53,12 @@ print -- it is the last live item on the thirteen-figure list."*
   PART 4  ** WHAT DOES NOT MOVE, SAID AS PLAINLY AS WHAT DOES. **  Both ratios are 2.0 to the two
           figures the conclusion quotes, and the 185-bin rows are recomputed here so all three rows
           of that table are live numbers from named files.
+  PART 5  ** `r7645`'s ARM, SCORED RATHER THAN NARRATED. **  Three arms on one control over both
+          ranges: the namesake, the arm of record at 70's DISTANCES' point (whose `l_A`, `D_M` and
+          `r_s` are bit-identical to the namesake's, so it alone is like-for-like), and the arm of
+          record at its REFIT point.  The five figures this file used to narrate are asserted here,
+          the paper's `1.98` is shown to move UP to `2.09`, and the direction of the re-point is
+          shown NOT to be common to the two ranges.
 
 ===================================================================================================
 ** WHY PART 3 IS MARKED HISTORICAL, AND WHY THE REST IS NOT RE-POINTED (r7639 ⑶) **
@@ -58,14 +74,36 @@ recorded, because the provenance defect it found was real and the hardcoded lite
 in the other receipt's source; it is not re-asserted on the arm of record, because there is no second
 point there to assert it against.
 
+⛔ ** AND THAT RULING'S SCOPE IS THE BANK IT NAMED, WHICH IS NOT `r7645`'s POINT. **  There are TWO
+arm-of-record banks for this pair.  The one `r7639` ⑶ ruled on sits at the arm's REFIT point
+(`CRH0=68.57073`, `CROM=0.291246`) and its two legs ARE one file's content.  **70's DISTANCES'-point
+bank is a different bank** (`CRH0=68.60`, `CROM=0.2973`, and `l_A`/`D_M`/`r_s` bit-identical to the
+namesakes'), and there the two legs are `2.3601e-04` apart -- `0.9806` of the namesakes' own
+separation -- so the 68.62-versus-68.60 distinction PART 3 draws is ALIVE on `r7645`'s point and is
+not spent. *That is a statement about the scope of 69's ruling and not a contradiction of it: the
+ruling named a bank, and this is the other one.*  ⌗ LEAFREC moves the spectrum at the distances'
+point by `6.4169e-03`, 27 times the leg separation, which is what moves the $\chi^2$ at all.
+
 ** AND THE WHOLE FILE IS A PROVENANCE RECORD OF THREE NAMED BANKED SPECTRA, NOT A LIVE SCORE. **
 PART 2 identifies `cc66_cr_x_h686_pol` by reproducing the `556.7` `FOR_66` records for `cc66.7`: that
 identification is of a file and cannot move with an arm.  So this receipt's reads stay on their
 namesakes and its figures stay as recorded.  *What the arm of record says about the same bins is a
-different measurement and is reported, not folded in: the arm goes to 447.3733, 3.363709 per bin and
-a factor 1.601078 against the same control, and the 185-bin arm to 938.3175, 5.071986 per bin.  That
-moves what `sec:refit-bound` CLAIMS -- "$279.4$ against $556.7$, a factor $1.98$" -- so under `r7639`
-⑴ it is reported to 69 with proposed wording and not edited here.*
+different measurement, and PART 5 now SCORES it on both banks instead of narrating one:*
+
+      arm                        bins        chi^2    per bin   ratio vs control
+      namesake                    133     556.6858   4.185607           1.992290
+      arm of record, distances    133     583.9890   4.390895         ** 2.090004 **
+      arm of record, refit        133     447.3733   3.363709           1.601078
+      namesake                    185    1169.8183   6.323342           1.680854
+      arm of record, distances    185    1129.7632   6.106828           1.623301
+      arm of record, refit        185     938.3175   5.071986           1.348222
+
+*So `sec:refit-bound`'s "$279.4$ against $556.7$, a factor $1.98$" moves to $583.99$ and $2.09$ on
+`r7645`'s point -- the claim that the arm is about twice the control SURVIVES and is slightly larger,
+while the printed $1.98$ is stale and even the "$\times2.0$" rounds to $2.1$.*  ⇒ Under `r7639` ⑴ it
+is reported to 69 with proposed wording and not edited here.  ⚠ **And the direction is not common to
+the two ranges:** on 133 bins the arm of record is WORSE than its namesake and on 185 bins BETTER,
+which this seat had registered as "worse on both" before measuring and got wrong.
 
 ===================================================================================================
 ** WHAT THIS DOES NOT CLAIM **
@@ -110,9 +148,18 @@ import chi2_of_spectrum as CS                                              # noq
 CONTROL = 'cc66_lcdm'
 ARM_8660 = 'cc66_cr_x_h686_pol'       # r6760+cc66.7's own arm: H0 = 68.60
 ARM_8662 = 'cc66_cr_x_h6862_pol'      # the ordered confirmation run: H0 = 68.62
-# the same two on the arm of record, read ONLY to show PART 3's distinction is spent there
+# the same two on the arm of record AT ITS REFIT POINT (CRH0=68.57073, CROM=0.291246), which is
+# the pair `r7639` ⑶ ruled on: there the two legs are one file's content.
 AOR_8660 = 'cc66_cr_x_h686_pol_leafrec1'
 AOR_8662 = 'cc66_cr_x_h6862_pol_leafrec1'
+# ⛭⛭⛭ AND THE SAME TWO AT 70's DISTANCES' POINT (CRH0=68.60, CROM=0.2973) -- `r7645`'s point, and
+#   a DIFFERENT BANK.  Their `l_A`, `D_M` and `r_s` are bit-identical to the NAMESAKES', so this is
+#   the arm of record on the background the distances fix, which is what makes it like-for-like
+#   against the control.  PART 5 scores it; PART 3 records that its two legs do NOT collapse.
+AORD_8660 = 'cc66_cr_x_h686_pol_leafrec1_distances'
+AORD_8662 = 'cc66_cr_x_h6862_pol_leafrec1_distances'
+L2000_AOR = 'cc66_cr_x_h686_L2000_leafrec1'                 # 185 bins, the refit point
+L2000_AORD = 'cc66_cr_x_h686_L2000_leafrec1_distances'      # 185 bins, the distances' point
 L2000 = ('cc66_lcdm_L2000', 'cc66_cr_x_h686_L2000')
 LENSED_RECEIPT = os.path.join(
     HERE, 'P15_the_full_range_lensed_comparison_is_the_unfavourable_one_and_the_control_is_nearly_camb.py')
@@ -133,7 +180,8 @@ print("  PART 1 -- ** THE CONFIGURATION AND THE BIN COUNT, OFF THE SPECTRA **")
 print("=" * 100)
 
 INPUTS = [os.path.join(SP, t + '.npz')
-          for t in (CONTROL, ARM_8660, ARM_8662, AOR_8660, AOR_8662) + L2000] \
+          for t in (CONTROL, ARM_8660, ARM_8662, AOR_8660, AOR_8662, AORD_8660, AORD_8662,
+                    L2000_AOR, L2000_AORD) + L2000] \
     + [LENSED_RECEIPT, HANDOVER]
 try:
     subprocess.run(['git', '-C', ROOT, 'ls-files', '--error-unmatch'] + INPUTS,
@@ -260,11 +308,36 @@ else:
     print(f"  the namesakes differ by     max |dD_l| = {_dn:.4e}  -- two runs, and PART 3 reads them")
     print(f"  the arm of record differs by max |dD_l| = {_da:.4e}"
           + ("  -- ** ONE POINT **" if _da == 0.0 else "  -- ** AND THAT IS NOT ONE POINT **"))
+    _zd = [np.load(os.path.join(SP, t + '.npz')) for t in (AORD_8660, AORD_8662)]
+    _dd = float(np.max(np.abs(np.asarray(_zd[0]['Dl'], float) - np.asarray(_zd[1]['Dl'], float))))
+    _dl = float(np.max(np.abs(np.asarray(_zn[0]['Dl'], float)
+                              - np.asarray(_zd[0]['Dl'], float))))
+    print(f"  at 70's DISTANCES' point it differs by max |dD_l| = {_dd:.4e}  -- ** TWO POINTS, "
+          f"{_dd / _dn:.4f} of the namesakes' separation **")
     check_hist = (_dn > 0.0 and _da == 0.0)
     if not check_hist:
         fail.append(f"PART 3's historical marking rests on the pair being two points on the "
                     f"namesakes ({_dn:.4e}) and one on the arm of record ({_da:.4e}), and it is not")
+    if not (_dd > 0.0 and 0.97 < _dd / _dn < 0.99 and _dl > 20 * _dd):
+        fail.append(f"⛔ the SCOPE of `r7639` ⑶'s ruling: the legs must still be TWO points at the "
+                    f"distances' point ({_dd:.4e}, {_dd / _dn:.4f} of the namesakes') while LEAFREC "
+                    f"moves the spectrum there by {_dl:.4e}, and they are not")
     else:
+        print("  ⛔ ** AND `r7639` ⑶'s RULING DOES NOT TRANSFER TO `r7645`'s POINT. **  The collapse "
+              "to one")
+        print("     point is a property of the REFIT-point bank alone.  At the DISTANCES' point the "
+              f"two legs")
+        print(f"     are {_dd:.4e} apart -- {_dd / _dn:.4f} of the namesakes' own separation, so the "
+              "68.62-versus-68.60")
+        print("     distinction PART 3 draws is ALIVE there and is not spent.  *That is a statement "
+              "about")
+        print("     the scope of 69's ruling and not a contradiction of it: the ruling named the "
+              "bank it named,")
+        print(f"     and this is a different bank.*  ⌗ LEAFREC moves the spectrum at the distances' "
+              f"point by")
+        print(f"     {_dl:.4e}, {_dl / _dd:.0f} times the leg separation, which is why PART 5's "
+              "chi^2 moves at all.")
+    if check_hist:
         print("  ** SO PART 3 IS HISTORICAL. **  `r7635+70` banked the 68.62 leg from the h686 run")
         print("   because on the arm of record the pair is one point, and that is what this reads:")
         print("   the 4.16/4.19 distinction is a property of the SUPERSEDED instrument state.  It")
@@ -305,6 +378,90 @@ print("   that validates it.*")
 # =====================================================================
 print()
 print("=" * 100)
+print("  PART 5 -- ** THE SAME BINS ON 70's DISTANCES' POINT: `r7645`'s ARM, SCORED NOT NARRATED **")
+print("=" * 100)
+
+# ⛭⛭⛭ THREE ARMS ON ONE CONTROL, all scored through the same `chi2_of_spectrum` route:
+#   ⒜ the NAMESAKE (LEAFREC=0) on the distances' background;
+#   ⒝ the ARM OF RECORD at 70's DISTANCES' point -- `r7645`'s arm, whose `l_A`, `D_M` and `r_s` are
+#      bit-identical to the namesake's, so it is the only one of the two that is like-for-like;
+#   ⒞ the ARM OF RECORD at its REFIT point -- a DIFFERENT background (68.57073 / 0.291246), and the
+#      bank this file used to NARRATE in its own prose without asserting.
+# ⚠ ** THAT NARRATION IS THE DEFECT THIS FILE EXISTS TO NAME, COMMITTED BY THIS FILE. **  Five
+#   figures -- 447.3733, 3.363709, 1.601078, 938.3175, 5.071986 -- sat in the docstring above and in
+#   NO check.  A narrated number is not a measured one; they are asserted here.
+CTL = {133: S[CONTROL][0], 185: lc[1]}
+ROWS = (('namesake', 133, ARM_8660), ('arm of record, distances', 133, AORD_8660),
+        ('arm of record, refit', 133, AOR_8660), ('namesake', 185, L2000[1]),
+        ('arm of record, distances', 185, L2000_AORD), ('arm of record, refit', 185, L2000_AOR))
+P5 = {}
+print(f"  {'arm':>26} {'bins':>5} {'chi2':>12} {'per bin':>10} {'ratio vs control':>18}")
+for _lab, _nb, _tag in ROWS:
+    _ls, _c, _n = score(_tag)
+    if _n != _nb:
+        fail.append(f"{_tag} covers {_n} bins, not the {_nb} its row is named for")
+    P5[(_lab, _nb)] = (_c, _c / _n, _c / CTL[_nb])
+    print(f"  {_lab:>26} {_nb:>5d} {_c:>12.4f} {_c / _n:>10.6f} {_c / CTL[_nb]:>18.6f}")
+
+_rf, _rf185 = P5[('arm of record, refit', 133)], P5[('arm of record, refit', 185)]
+if not (abs(_rf[0] - 447.3733214661322) < 1e-6 and abs(_rf[1] - 3.3637091839558813) < 1e-9
+        and abs(_rf[2] - 1.6010782480251757) < 1e-9
+        and abs(_rf185[0] - 938.3174809880677) < 1e-6
+        and abs(_rf185[1] - 5.071986383719285) < 1e-9):
+    fail.append("the five figures this file NARRATED are not reproduced where it narrated them -- "
+                f"{_rf[0]:.4f}/{_rf[1]:.6f}/{_rf[2]:.6f} and {_rf185[0]:.4f}/{_rf185[1]:.6f}")
+else:
+    print(f"\n  ⛭ the five formerly-narrated figures reproduce EXACTLY and are now asserted: "
+          f"{_rf[0]:.4f}, {_rf[1]:.6f} per bin,")
+    print(f"    a factor {_rf[2]:.6f} on 133 bins, and {_rf185[0]:.4f} at {_rf185[1]:.6f} per bin "
+          "on 185 -- all at the REFIT point.")
+
+_nm, _ad = P5[('namesake', 133)][2], P5[('arm of record, distances', 133)][2]
+if not (1.9920 < _nm < 1.9926 and 2.0897 < _ad < 2.0903):
+    fail.append(f"the 133-bin ratio is {_nm:.6f} on the namesake and {_ad:.6f} at the distances' "
+                "point, not the pair this part pins")
+else:
+    print(f"\n  ⛔⛔ ** AND `sec:refit-bound`'s PRINTED `a factor 1.98` MOVES TO {_ad:.2f} ON "
+          f"`r7645`'s POINT, NOT DOWN TO THE {_rf[2]:.2f}")
+    print(f"     THIS FILE NARRATES. **  The namesake is {_nm:.4f} and the arm of record at the "
+          f"distances' point is {_ad:.4f}:")
+    print(f"     *the conclusion that the arm is about twice the control SURVIVES and is slightly "
+          "LARGER, while the")
+    print(f"     printed `1.98` is stale and even the `x2.0` rounds to {round(_ad, 1)} rather than "
+          f"{round(_nm, 1)}.*  ⇒ The {_rf[2]:.2f} is the")
+    print("     REFIT point's, where the arm has four parameters the control does not, so it is not "
+          "the figure")
+    print("     `sec:refit-bound`'s sentence is about.  ⌗ Reading the wrong one of these two banks "
+          "turns a")
+    print("     finding that strengthens the claim into one that halves it.")
+
+_n1, _a1 = P5[('namesake', 133)][1], P5[('arm of record, distances', 133)][1]
+_n2, _a2 = P5[('namesake', 185)][1], P5[('arm of record, distances', 185)][1]
+if not (_a1 > _n1 and _a2 < _n2):
+    fail.append(f"the re-point's DIRECTION is asserted to differ between the ranges and does not: "
+                f"133 {_n1:.6f}->{_a1:.6f}, 185 {_n2:.6f}->{_a2:.6f}")
+else:
+    print(f"\n  ⛔ ** AND THE DIRECTION IS NOT COMMON TO THE TWO RANGES, WHICH THIS SEAT PREDICTED "
+          "IT WOULD BE. **")
+    print(f"     On 133 bins the arm of record is WORSE than its namesake ({_n1:.6f} -> {_a1:.6f} "
+          "per bin); on 185")
+    print(f"     bins it is BETTER ({_n2:.6f} -> {_a2:.6f}).  *Registered before measuring as "
+          "`worse on both`,")
+    print("     and the reachable negative fired.  A re-point's sign is a property of the RANGE and "
+          "not of the arm.*")
+
+if not (_rf[1] < _n1 and _rf[1] < _a1 and _rf185[1] < _n2 and _rf185[1] < _a2):
+    fail.append("the refit point is asserted to beat both unrefit arms on both ranges and does not")
+else:
+    print(f"\n  ⌗ the refit point beats both unrefit arms on both ranges ({_rf[1]:.4f} against "
+          f"{_n1:.4f} and {_a1:.4f};")
+    print(f"    {_rf185[1]:.4f} against {_n2:.4f} and {_a2:.4f}), which is what four fitted "
+          "parameters buy and is why it")
+    print("    cannot stand in for an unrefit comparison.")
+
+# =====================================================================
+print()
+print("=" * 100)
 if fail:
     print(f"  FAIL -- {len(fail)} check(s) did not hold")
     for f in fail:
@@ -316,7 +473,10 @@ print(f"  on 133 bins is COMPUTED ({cb:.6f}) and ASSERTED, and so is the 4.16 be
 print(f"  ({ab2:.6f}) -- together with cc66.7's own 4.19 ({ab:.6f}), which is the figure the")
 print("  hardcoded row should have carried and does not.  ** The conclusion is untouched and the")
 print("  attribution is not, and only a computed row could have told the two apart. **")
-print("  ⌗ PART 3 is HISTORICAL as of `r7639` ⑶: on the arm of record the two runs are one point,")
-print("    so its distinction belongs to the superseded instrument state and is not re-asserted.")
+print("  ⌗ PART 3 is HISTORICAL as of `r7639` ⑶ FOR THE REFIT-POINT BANK, where the two runs are")
+print("    one point.  ⛔ At 70's DISTANCES' point -- `r7645`'s -- they are two points again, 0.9806")
+print("    of the namesakes' own separation, so that ruling's scope is the bank it named.")
+print(f"  ⛔ And `sec:refit-bound`'s printed `a factor 1.98` moves UP to {_ad:.2f} there, not down to")
+print(f"    the {_rf[2]:.2f} this file used to narrate from the other bank.")
 print("=" * 100)
 sys.exit(0)
