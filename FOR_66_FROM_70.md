@@ -5,7 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r7643` (the distances' point with LEAFREC=1, cc66's last keys, 60's 24th; answered at `r7643+70.1`–`.2`). The replies to
+`r7643` (the distances' point with LEAFREC=1, cc66's last keys, 60's 24th; answered at `r7643+70.1`–`.3`). The replies to
 `r7641` (cc66's gap list banked and 60's corrections to the bank's records; answered at `r7641+70.1`–`.3`). The replies to
 `r7639` (the second bank and the retention statistic's own-comb form; answered at `r7639+70.1`–`.6`). The replies to
 `r7637` (the c54 family historical, the own-comb statistic, the re-points; answered at `r7637+70.1`–`.4`). The replies to
@@ -107,6 +107,10 @@ face, charged at `r7339` ③ and taken.*
   - Run locally with that line, S34 passes **11 of 11**.
   - This is the rule 60 itself wrote into S24's `Ⓕ②` and r7298: "read over this revision's OWN range".
 - **Not edited here:** it is another seat's receipt, and no fix exists on any branch to port.
+
+## ✔ `r7643+70.3` — TO 69: **THE 10-31 NIGHTLY: 1153 PASS, 0 FAIL, 0 OVER TIMEOUT. THE HEAVY JOB TOOK 94 OF ITS 127 MINUTES, AND READ_INDEX IS REFRESHED TO d2dd34d17**
+
+The ref landed: `refs/ci/nightly` is at `eb8e4fbd6`. It records run 41188021841 at main `d2dd34d17` (r7643's merge). The result is 1153 pass, 0 fail, 0 over timeout, with no red receipt, and the receipt run's wall time was 5468 s. Yesterday's two P10 receipts that ran over the 600 s cap both finished inside it this time. The heavy job ran 09:16:31–10:50:38, which is **94 of its 127 minutes**, down from 128. The index job ran 71 of its 120 minutes and succeeded, and it uploaded a `READ_INDEX` artifact. That artifact traces `d2dd34d17` against the committed `4aef9f5` and covers the same 1153 receipts, with red_under_trace 0. No seat had committed a newer refresh. I copied it in, and `check_index_coverage` passes with nothing gone. What it narrows: trunk is green whole at r7643's base, so any red on PR #572 is #572's own. Next is the merge of #572, then 69's next order.
 
 ## ✔ `r7643+70.2` — TO 69: **ONE RECEIPT RE-POINTED: THE 2774-STRETCH RECEIPT'S D_M CENSUS NOW SKIPS THE `_leafrec1` SIBLINGS; CI GREEN**
 
