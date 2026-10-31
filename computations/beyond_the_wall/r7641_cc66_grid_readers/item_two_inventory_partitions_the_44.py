@@ -34,13 +34,76 @@ MINE = os.path.join(ROOT, 'computations', 'beyond_the_wall', 'r7639_cc66_P15_rep
 MINE44 = [ln.strip() for ln in open(MINE, encoding='utf-8') if ln.strip()]
 
 #: the key-gap banks, and the one excluded as a form (`cc66.46`)
-KEYGAPS = ('r6893_slice_check', 'r6897_fields', 'r6897_noop', 'r6911_noop', 'r6915_noop',
-           'r6919_geometry', 'r6919_noop', 'r6925_geometry', 'r6925_noop', 'r6929_geometry',
-           'r6929_noop')
+KEYGAPS_ALL = ('r6893_slice_check', 'r6897_fields', 'r6897_noop', 'r6911_noop', 'r6915_noop',
+               'r6919_geometry', 'r6919_noop', 'r6925_geometry', 'r6925_noop', 'r6929_geometry',
+               'r6929_noop')
+
+
+def _key_gap_closed(g):
+    """⛭ r7643: a key gap is CLOSED by a sibling file that keeps the key names and moves `__cr`.
+
+    Four conditions, all required: the sibling exists, it carries the same `__cr` key names, those
+    values MOVED, and the `__lcdm` values are IDENTICAL -- the bank's own statement that the control
+    does not move.  *70's third bank closed `r6929_geometry` this way, which is a better form than
+    the `__cr_leafrec1` entries I asked for, and which this file's first version could not see.*
+    """
+    import numpy as _np
+    sp = os.path.join(SPEC, g + '_leafrec1.npz')
+    if not os.path.exists(sp):
+        return False
+    a = _np.load(os.path.join(SPEC, g + '.npz'), allow_pickle=True)
+    b = _np.load(sp, allow_pickle=True)
+    #: ⛔⛭⛭ ** NUMERIC KEYS ONLY, AND THIS WAS A LATENT DEFECT THE ORDERED WORK WOULD HAVE
+    #: TRIGGERED. **  The first version compared every `__cr` key with `.astype(float)`.  That held
+    #: only because exactly ONE bank has a sibling and all of its `__cr` entries are numbers:
+    #: `r6893_slice_check` carries `arm__cr = 'cr'`, a STRING, and the moment 70 banks a sibling for
+    #: it -- which is the ask this file exists to price -- the comparison would have crashed rather
+    #: than judged.  *Found by a perturbation that pointed the sibling path at the namesake, which
+    #: made every gap take this branch and raised `could not convert string to float`.*
+    #:   ⇒ *** Non-numeric keys are skipped, and a bank with no numeric key on either side returns
+    #:       False -- "cannot judge" rather than "closed", which is the safe direction. ***
+    def _num(z, k):
+        try:
+            _np.atleast_1d(z[k]).astype(float)
+            return True
+        except (ValueError, TypeError):
+            return False
+
+    #: ⛔ r7643+cc66.56: boundary-anchored, not a substring -- `'__cr' in k` misses `Dl__unset_cr`,
+    #: `Dl__zero_cr`, `Dl__noop_cr`, `Dl__comb_cr_f0`, `Dl__inj_cr_f1`, which is most arm keys.  *The
+    #: same defect as in `which_key_gaps_actually_block.py`, carried here by the copy.*
+    _arm = re.compile(r'(^|_)cr($|_)')
+    _ctl = re.compile(r'(^|_)lcdm($|_)')
+    cr = [k for k in a.files if _arm.search(k) and k in b.files and _num(a, k) and _num(b, k)]
+    lc = [k for k in a.files if _ctl.search(k) and k in b.files and _num(a, k) and _num(b, k)]
+    if not cr or not lc:
+        return False
+    moved = any(not _np.allclose(_np.atleast_1d(a[k]).astype(float),
+                                 _np.atleast_1d(b[k]).astype(float)) for k in cr)
+    held = all(_np.allclose(_np.atleast_1d(a[k]).astype(float),
+                            _np.atleast_1d(b[k]).astype(float)) for k in lc)
+    return bool(moved and held)
+
+
+KEYGAPS = tuple(g for g in KEYGAPS_ALL if not _key_gap_closed(g))
+KEY_CLOSED = tuple(g for g in KEYGAPS_ALL if _key_gap_closed(g))
 TMPL_RE = re.compile(r'__\{')
 LIT_CR = re.compile(r"'([A-Za-z0-9_.]+_cr)\.npz'")
 TMPL_CR = re.compile(r"f'([A-Za-z0-9_.]+)_\{\w+\}\.npz'")
-DECLARE = ('arm is a KEY', 'ARM AS A KEY', 'arm as a key', 'KEY SUFFIX', 'key suffix')
+# ⛔⛭⛭ r7643+cc66.64: ** THIS LIST WAS A PHRASE LIST AND IT MISSED MY OWN LATER DECLARATIONS FOR
+#   TWO REVISIONS. **  *`cc66.57` worded its declaration `the arm is a KEY`, which is here.  `.61`,
+#   `.62` and `.63` worded theirs `ARM KEYS READ:`, which was not -- so this file's cross-arm gate
+#   went RED at `.61` and stayed red through `.63`, naming three receipts that HAD declared.*
+#   ⇒ *** And nothing said so: this reader has no `INDEX.md` row, so the 868-receipt suite does not
+#       run it.  I had been reading `it passes when I run it` as `it is gated`.  Both halves are
+#       reported in `FOR_66.md` and the coverage gap is priced to 69. ***
+#   ⌗ *Fourth blind spot of one family in this order -- after `'__cr' in k`, the `var['...__{`
+#   template regex and the `g in src` bank test -- and the first I inflicted on my own instrument by
+#   changing my own wording.  The canonical token is added, the legacy phrasings are kept, and the
+#   miss is GATED below so this file carries the defect it had.*
+_DECLARE_LEGACY = ('arm is a KEY', 'ARM AS A KEY', 'arm as a key', 'KEY SUFFIX', 'key suffix')
+_DECLARE_CANON = ('ARM KEYS READ',)
+DECLARE = _DECLARE_LEGACY + _DECLARE_CANON
 
 
 def check(label, ok, witness=''):
@@ -66,16 +129,29 @@ for r in MINE44:
     # KEY test, localised to each bank's own variable -- `cc66.46`'s settled method
     keyb = []
     for g in KEYGAPS:
-        if g not in src:
+        #: ⛔ r7643+cc66.58: boundary-anchored, not a substring -- `g in src` is satisfied by
+        #: `g + '_leafrec1'`, so a receipt re-pointed onto a gap bank's SIBLING would still score as
+        #: reading the gap.  *Latent while no gap in this list has a sibling, live the moment one does,
+        #: which is the ask.*
+        if not re.search(re.escape(g) + r'(?![A-Za-z0-9_])', src):
             continue
         m = re.search(r'(\w+)\s*=\s*np\.load\([^\n]*' + re.escape(g), code)
         var = m.group(1) if m else None
         lit = any((f"'{k}'" in code) for k in (g,)) and False
-        tm = bool(var and re.search(re.escape(var) + r"\[f?['\"][^'\"]*__\{", code))
-        lam = bool(var and re.search(r"lambda[^\n]*:\s*" + re.escape(var) + r"\[f['\"][^'\"]*__\{",
-                                     code))
-        cr_lit = bool(re.search(re.escape(g) + r"[^\n]*", code)) and bool(
-            re.search(r"'[A-Za-z0-9_]*__cr'", code))
+        #: ⛔⛭⛭ r7643+cc66.58: a key TEMPLATE is an indexed f-string carrying BOTH a separator `__`
+        #: and a placeholder `{`, wherever the placeholder sits.  *The `__\{` form missed
+        #: `f'Dl__noop_{t}'` and its kin, and that MOVED VERDICTS in the sibling instrument.*
+        _tks = (re.findall(re.escape(var) + r"\[f['\"]([^'\"]*)['\"]\]", code) if var else [])
+        _lks = (re.findall(r"lambda[^\n]*:\s*" + re.escape(var) + r"\[f['\"]([^'\"]*)['\"]\]",
+                           code) if var else [])
+        tm = any('__' in s and '{' in s for s in _tks)
+        lam = any('__' in s and '{' in s for s in _lks)
+        #: ⛔ and the LITERAL arm-key test is boundary-anchored for the same reason the sibling
+        #: instrument's is: `'[A-Za-z0-9_]*__cr'` sees `rD__cr` and misses `Dl__unset_cr`,
+        #: `Dl__noop_cr`, `Dl__comb_cr_f0` -- most arm keys.
+        _armlits = [k for k in re.findall(r"['\"]([A-Za-z_][A-Za-z0-9_]*__[A-Za-z0-9_]+)['\"]", code)
+                    if re.search(r'(^|_)cr($|_)', k)]
+        cr_lit = bool(re.search(re.escape(g) + r"[^\n]*", code)) and bool(_armlits)
         if tm or lam or cr_lit or lit:
             keyb.append(g)
     # FILE test, with templates expanded over the arms
@@ -84,29 +160,65 @@ for r in MINE44:
                    if os.path.exists(os.path.join(SPEC, s + '.npz'))
                    and not os.path.exists(os.path.join(SPEC, s + '_leafrec1.npz')))
     ROWS.append(dict(r=r, repointed=repointed, declared=declared, keyb=sorted(keyb), fileb=fileb,
-                     any_cr=bool(stems or keyb)))
+                     any_cr=bool(stems or keyb), src=src))
 
 print(__doc__)
 print(BAR)
 print("  PART 1 -- THE FOUR BUCKETS")
 print(BAR)
+#: ⛭⛭ r7643: ** A FIFTH BUCKET, BECAUSE 70's THIRD BANK CREATED A STATE THIS FILE COULD NOT NAME. **
+#: At `cc66.47` every receipt that read a cr bank was either re-pointed or blocked.  The third bank
+#: closed `r6893_switch_screen_cr`, `r6925_visleaf_cr` and -- by a sibling file keeping the key names
+#: -- `r6929_geometry`.  *So there are now receipts that read a cr bank, have every sibling they need,
+#: and are simply NOT YET RE-POINTED.*  ⛔ *Without this bucket they fell into `NO CR READ`, which
+#: said the opposite of the truth: the first run after the bank put two of them there.*
+#:   ⇒ *** READY is the actionable list for `r7643`'s order item 2, and it is derived rather than
+#:       typed: reads a cr stem, every stem has a sibling, no key gap, not re-pointed. ***
 RE_P = [x for x in ROWS if x['repointed']]
 KEY_B = [x for x in ROWS if not x['repointed'] and x['keyb'] and not x['declared']]
 FILE_B = [x for x in ROWS if not x['repointed'] and x['fileb'] and not x['keyb']]
-NO_CR = [x for x in ROWS if not x['repointed'] and not x['keyb'] and not x['fileb']]
-OTHER = [x for x in ROWS if x not in RE_P + KEY_B + FILE_B + NO_CR]
+READY = [x for x in ROWS if not x['repointed'] and not x['keyb'] and not x['fileb'] and x['any_cr']]
+NO_CR = [x for x in ROWS if not x['repointed'] and not x['keyb'] and not x['fileb']
+         and not x['any_cr']]
+OTHER = [x for x in ROWS if x not in RE_P + KEY_B + FILE_B + READY + NO_CR]
 for nm, b in (('RE-POINTED', RE_P), ('KEY-BLOCKED', KEY_B), ('FILE-BLOCKED', FILE_B),
-              ('NO CR READ', NO_CR), ('UNACCOUNTED', OTHER)):
+              ('NO BANK GAP', READY), ('NO CR READ', NO_CR), ('UNACCOUNTED', OTHER)):
     print(f"    {nm:14s} {len(b):3d}")
 print(f"    {'TOTAL':14s} {len(ROWS):3d} of {len(MINE44)} named in mine44.txt")
 check("⛭ THE BUCKETS PARTITION THE SET: every one of the 44 falls into exactly one, with no overlap "
       "and no remainder.  ⇒ ** An inventory that does not partition is one that has forgotten a "
       "receipt, and this is the only claim in it that cannot be checked receipt by receipt **",
-      len(RE_P) + len(KEY_B) + len(FILE_B) + len(NO_CR) == len(ROWS) == len(MINE44)
+      len(RE_P) + len(KEY_B) + len(FILE_B) + len(READY) + len(NO_CR) == len(ROWS) == len(MINE44)
       and not OTHER,
-      f"{len(RE_P)}+{len(KEY_B)}+{len(FILE_B)}+{len(NO_CR)} = "
-      f"{len(RE_P) + len(KEY_B) + len(FILE_B) + len(NO_CR)} against {len(ROWS)} rows and "
-      f"{len(MINE44)} named; {len(OTHER)} unaccounted")
+      f"{len(RE_P)}+{len(KEY_B)}+{len(FILE_B)}+{len(READY)}+{len(NO_CR)} = "
+      f"{len(RE_P) + len(KEY_B) + len(FILE_B) + len(READY) + len(NO_CR)} against {len(ROWS)} rows "
+      f"and {len(MINE44)} named; {len(OTHER)} unaccounted")
+#: ⛔⛭⛭ ** AND THIS BUCKET IS NAMED FOR WHAT IT MEASURES, WHICH IS NOT "READY". **  My first version
+#: called it READY and printed it as `r7643` item 2's work list.  *It is not: it means only that no
+#: BANK gap stands in the way, and four of the sixteen are ones I established blocked for reasons no
+#: sibling can fix --* `the_full_range_refit_…` and `the_refit_leaves_…` *on the grid's CENTRE
+#: (`cc66.39`, `.41`),* `the_no_fit_confrontation_…` *on its own gate, the two confrontations having
+#: collapsed to one file (`cc66.43`),* `the_refit_bound_figures_…` *on two of three configurations
+#: (`cc66.43`), and* `the_windows_phase_spread_…` *held on 70's swap re-run (`cc66.26`).*
+#:   ⇒ *** A partition over BANKS cannot see a block that is not about banks.  Printing this as a
+#:       work list would have claimed sixteen re-points available when five are not. ***
+print()
+print("    NO BANK GAP -- no sibling is missing.  ⛔ NOT the same as ready: a non-bank block")
+print("    (the grid's centre, a collapsed verification run, a paper-bound comparison, a held")
+print("    re-run) is invisible to a partition over banks.  Five of these are known blocked:")
+_KNOWN_NONBANK = ('the_full_range_refit', 'the_refit_leaves_the_background',
+                  'the_no_fit_confrontation', 'the_refit_bound_figures',
+                  'the_windows_phase_spread')
+for x in sorted(READY, key=lambda y: y['r']):
+    _nb = any(k in x['r'] for k in _KNOWN_NONBANK)
+    print(f"      {'⛔' if _nb else '  '} {x['r'][4:74]}")
+check("⛔⛭ AND THE FIVE KNOWN NON-BANK BLOCKS ARE INSIDE THIS BUCKET, which is why it is not a work "
+      "list: a partition over banks cannot see the grid's centre, a collapsed verification run, a "
+      "paper-bound comparison or a held re-run.  ⇒ ** Gated so the bucket cannot be read as "
+      "'sixteen re-points available' when five of them are not **",
+      sum(1 for x in READY if any(k in x['r'] for k in _KNOWN_NONBANK)) == 5,
+      f"{sum(1 for x in READY if any(k in x['r'] for k in _KNOWN_NONBANK))} of "
+      f"{len(READY)} are known non-bank blocks")
 check("⛔ AND NO RECEIPT IS BOTH RE-POINTED AND BLOCKED BY A BANK IT CANNOT REACH, which would be "
       "the cross-arm defect this seat has refused three times -- except where it DECLARES the key "
       "read and gates it, which is `cc66.46`'s third verdict",
@@ -114,6 +226,29 @@ check("⛔ AND NO RECEIPT IS BOTH RE-POINTED AND BLOCKED BY A BANK IT CANNOT REA
       ", ".join(x['r'][4:40] for x in ROWS
                 if x['repointed'] and (x['keyb'] or x['fileb']) and not x['declared'])
       or "none undeclared")
+# ⛔⛭⛭ r7643+cc66.64: ** AND THE MISS IS GATED, so this file cannot lose the defect it had. **
+#   *The gate above was RED from `cc66.61` to `.63` because `DECLARE` held only the legacy phrasings.
+#   This asserts that the legacy list ALONE still misses receipts the full list catches -- so if anyone
+#   trims `DECLARE` back, or a later receipt invents a third wording, it fails here rather than
+#   silently reporting a cross-arm defect that is not there.*
+_legacy_only = [x['r'][4:40] for x in ROWS
+                if x['repointed'] and (x['keyb'] or x['fileb'])
+                and not any(p in x['src'] for p in _DECLARE_LEGACY)]
+_canon_saves = [x['r'][4:40] for x in ROWS
+                if x['repointed'] and (x['keyb'] or x['fileb'])
+                and any(p in x['src'] for p in _DECLARE_CANON)]
+print()
+print(f"    re-pointed-and-blocked receipts that the LEGACY phrase list alone would MISS: "
+      f"{len(_legacy_only)} (every one rescued by the canonical token)")
+for _r in _legacy_only:
+    print(f"      {_r}")
+check("⛔⛭⛭ ** AND THE BLIND SPOT THIS FILE HAD IS GATED RATHER THAN QUIETLY FIXED. **  The legacy "
+      "phrase list alone still misses receipts the canonical token catches, which is exactly why the "
+      "gate above was red from `cc66.61` to `.63`.  ⇒ *Trim `DECLARE` back, or invent a fourth "
+      "wording, and this fails -- instead of reporting a cross-arm defect that is not there*",
+      len(_legacy_only) >= 3 and all(r in _canon_saves for r in _legacy_only),
+      f"{len(_legacy_only)} would be missed by the legacy list, every one of them rescued by the "
+      f"canonical token")
 
 print()
 print(BAR)
@@ -145,21 +280,30 @@ print(f"    `r6893_switch_screen_cr` is read by {len(_ss)} blocked receipts, of 
       f"{len(_ss_only)} are clear of every key gap:")
 for r in sorted(_ss_only):
     print(f"      {r[4:76]}")
-check("⛔ AND `r6893_switch_screen_cr` IS A FILE GAP NEITHER BANK CLOSED: four blocked receipts read "
-      "it, and TWO of them are clear of every key gap -- so one file releases those two outright, "
-      "while the other two also need their key banks.  ⇒ ** Measured after the first version of this "
-      "gate asserted two and was wrong **",
-      len(_ss) == 4 and len(_ss_only) == 2
-      and not os.path.exists(os.path.join(SPEC, 'r6893_switch_screen_cr_leafrec1.npz')),
-      f"{len(_ss)} read it, {len(_ss_only)} clear of key gaps")
+#: ⛔⛭⛭ ** AND THESE TWO GATES WERE FAIL-ON-SUCCESS, WHICH IS THE CLASS THIS SEAT HAS CATALOGUED
+#: NINETEEN TIMES AND WROTE INTO ITS OWN INSTRUMENT ANYWAY. **  At `cc66.47` they pinned
+#: `r6893_switch_screen_cr` and `r6925_visleaf_cr` as file gaps with NO sibling -- an assertion that
+#: a bank is MISSING, which the ordered work could close and did, within the hour.  *Both went red on
+#: 70's third bank for the best possible reason.*
+#:   ⇒ *** Restated to pin the CLOSURE instead: the sibling is present, which only a de-banking could
+#:       break -- and a de-banking is a thing worth catching. ***
+check("⛭⛭ `r6893_switch_screen_cr` IS CLOSED BY 70's THIRD BANK.  ⛔ *At `cc66.47` this gate pinned "
+      "it as a gap with no sibling -- fail-on-success, in the class this seat has catalogued "
+      "nineteen times, written into its own instrument and fired within the hour.*  ⇒ ** Now it "
+      "pins the closure, which only a de-banking could break **",
+      os.path.exists(os.path.join(SPEC, 'r6893_switch_screen_cr_leafrec1.npz')),
+      "sibling present")
+check("⛭ AND SO IS `r6925_visleaf_cr`, the gap this partition itself turned up at `cc66.47` and "
+      "which the third bank closed in the same pass -- same restatement, same reason",
+      os.path.exists(os.path.join(SPEC, 'r6925_visleaf_cr_leafrec1.npz')),
+      "sibling present")
 #: ⛭ *and one file gap this inventory found that no earlier entry of mine had catalogued*
-check("⛭ AND THE INVENTORY TURNED UP A FILE GAP I HAD NOT CATALOGUED: `r6925_visleaf_cr` is banked "
-      "with no `_leafrec1` sibling and blocks two receipts.  ⇒ ** Which is the use of a partition: "
-      "it names what a receipt-by-receipt walk had missed **",
-      'r6925_visleaf_cr' in NEED and len(NEED['r6925_visleaf_cr']) == 2
-      and os.path.exists(os.path.join(SPEC, 'r6925_visleaf_cr.npz'))
-      and not os.path.exists(os.path.join(SPEC, 'r6925_visleaf_cr_leafrec1.npz')),
-      f"{len(NEED.get('r6925_visleaf_cr', []))} receipts")
+check("⛭ AND NO FILE GAP REMAINS: every `*_cr.npz` stem any of the 44 reads now has a `_leafrec1` "
+      "sibling, so FILE-BLOCKED is empty and what is left is keys alone.  ⇒ ** Which is the use of "
+      "a partition twice over: it found `r6925_visleaf_cr` at `cc66.47` and it is what measures the "
+      "release now **",
+      len(FILE_B) == 0,
+      f"{len(FILE_B)} file-blocked")
 
 print()
 print(BAR)

@@ -62,25 +62,150 @@ def check(label, ok, witness=''):
 #: and it HAS an arm-of-record sibling.  *So it is a FORM and not a gap, as `cc66.39` reported, and
 #: including it would have scored two receipts blocked by a bank the second bank already cleared.*
 #: PART 1 gates that distinction rather than leaving it to this comment.
-GAPS = ('r6893_slice_check', 'r6897_fields', 'r6897_noop', 'r6911_noop', 'r6915_noop',
-        'r6919_geometry', 'r6919_noop', 'r6925_geometry', 'r6925_noop', 'r6929_geometry',
-        'r6929_noop')
+GAPS_ALL = ('r6893_slice_check', 'r6897_fields', 'r6897_noop', 'r6911_noop', 'r6915_noop',
+            'r6919_geometry', 'r6919_noop', 'r6925_geometry', 'r6925_noop', 'r6929_geometry',
+            'r6929_noop')
+#: ⛔⛭⛭ r7643+cc66.56: ** THE ARM-KEY TEST WAS A SUBSTRING, AND IT MISSED MOST ARM KEYS. **
+#:   `'__cr' in k` matches `rD__cr`, `arm__cr` and `eta_ls__cr_0` -- and silently misses every key
+#:   whose arm tag sits AFTER another token: `Dl__unset_cr`, `Dl__zero_cr`, `Dl__noop_cr`,
+#:   `Dl__comb_cr_f0`, `Dl__inj_cr_f1`.  *Five of the nine arm keys in the first sample measured.*
+#:   ⇒ *** So the closure test below verified that `X__cr` keys MOVED and never looked at
+#:       `X__<tag>_cr` keys at all; and a claim of mine at `cc66.53` -- that `r6929_noop` and
+#:       `r6925_noop` "carry no `__cr` keys at all, so they never blocked" -- was made with the same
+#:       narrow test and is FALSE: both carry `Dl__zero_cr`, `Dl__unset_cr` or `Dl__noop_cr`.
+#:       This file's own `GAPS_ALL` had them right all along and I believed the ad-hoc test over the
+#:       instrument, which is the lesson worth more than the fix. ***
+#:   ⛭ *The replacement is boundary-anchored rather than longer: `cr` must start the key or follow an
+#:   underscore, and must end the key or precede one.  `Dl__combvl` and `Dl__crust` are the negative
+#:   controls -- neither is an arm key and a looser `'cr' in k` would take both.*
+ARM_RE = re.compile(r'(^|_)cr($|_)')
+#: ⛔ *And the boundary regex must be applied to KEY LITERALS and not to whole source, which the first
+#: version of this widening got wrong: `(^|_)cr($|_)` matches the BANK NAMES and arm labels a receipt
+#: is full of -- `r6893_switch_screen_cr`, `cc66_cr_x_h686_pol`, `F['cr']` -- so run over `_code_of`
+#: it scored 2 of the 3 CLEAR receipts as carrying an arm key when none of them reads one.*
+#:   ⇒ *A looser test is not a safer test.  The key-shaped literals are extracted first.*
+KEYLIT_RE = re.compile(r"['\"]([A-Za-z_][A-Za-z0-9_]*__[A-Za-z0-9_]+)['\"]")
+
+
+def _armkeys_in(code):
+    return [k for k in KEYLIT_RE.findall(code) if ARM_RE.search(k)]
+
+CTL_RE = re.compile(r'(^|_)lcdm($|_)')
+_ARM_SEEN = ('Dl__unset_cr', 'Dl__zero_cr', 'Dl__noop_cr', 'Dl__comb_cr_f0', 'Dl__inj_cr_f1',
+             'rD__cr', 'eta_ls__cr_0', 'arm__cr')
 NOT_A_GAP = 'r6929_scan_cr'
+#: ** A KEY GAP IS CLOSED BY A SIBLING FILE THAT KEEPS THE KEY NAMES AND MOVES THE `__cr` VALUES. **
+#: Tested, not assumed: the sibling must exist, carry the same `__cr` key names, hold DIFFERENT
+#: values in them, and hold IDENTICAL `__lcdm` values -- the last being the bank's own statement that
+#: the control does not move.  *All four, or it is not a closure.*
+CLOSED_BY_SIBLING = []
+
+
+def _closed(g):
+    import numpy as _np
+    sp = os.path.join(SPEC, g + '_leafrec1.npz')
+    if not os.path.exists(sp):
+        return False
+    a = _np.load(os.path.join(SPEC, g + '.npz'), allow_pickle=True)
+    b = _np.load(sp, allow_pickle=True)
+    #: ⛔⛭⛭ ** NUMERIC KEYS ONLY, AND THIS WAS A LATENT DEFECT THE ORDERED WORK WOULD HAVE
+    #: TRIGGERED. **  The first version compared every `__cr` key with `.astype(float)`.  That held
+    #: only because exactly ONE bank has a sibling and all of its `__cr` entries are numbers:
+    #: `r6893_slice_check` carries `arm__cr = 'cr'`, a STRING, and the moment 70 banks a sibling for
+    #: it -- which is the ask this file exists to price -- the comparison would have crashed rather
+    #: than judged.  *Found by a perturbation that pointed the sibling path at the namesake, which
+    #: made every gap take this branch and raised `could not convert string to float`.*
+    #:   ⇒ *** Non-numeric keys are skipped, and a bank with no numeric key on either side returns
+    #:       False -- "cannot judge" rather than "closed", which is the safe direction. ***
+    def _num(z, k):
+        try:
+            _np.atleast_1d(z[k]).astype(float)
+            return True
+        except (ValueError, TypeError):
+            return False
+
+    cr = [k for k in a.files if ARM_RE.search(k) and k in b.files and _num(a, k) and _num(b, k)]
+    lc = [k for k in a.files if CTL_RE.search(k) and k in b.files and _num(a, k) and _num(b, k)]
+    if not cr or not lc:
+        return False
+    moved = any(not _np.allclose(_np.atleast_1d(a[k]).astype(float),
+                                 _np.atleast_1d(b[k]).astype(float)) for k in cr)
+    held = all(_np.allclose(_np.atleast_1d(a[k]).astype(float),
+                            _np.atleast_1d(b[k]).astype(float)) for k in lc)
+    return bool(moved and held)
+
+
+for _g in GAPS_ALL:
+    if _closed(_g):
+        CLOSED_BY_SIBLING.append(_g)
+GAPS = tuple(g for g in GAPS_ALL if g not in CLOSED_BY_SIBLING)
 MINE44 = [ln.strip() for ln in open(MINE, encoding='utf-8') if ln.strip()]
 #: hoisted because an f-string expression may not contain a backslash (py3.11)
 TMPL_RE = re.compile(r'__\{')
+#: ⛭ *and the widened form, used everywhere the narrow one was: a key TEMPLATE is an indexed f-string
+#: carrying both a separator and a placeholder, wherever in the string the placeholder sits.*
+TMPLKEY_RE = re.compile(r'\[f[\'\"]([^\'\"]*)[\'\"]\]')
+_TMPL_SEEN = ('{n}__{t}', 'Dl__noop_{t}', 'Dl__xsonly_{t}', 'ls__noop_{t}')
+
+
+def _is_keytmpl(s):
+    """a key TEMPLATE carries both a separator and a placeholder, wherever the placeholder sits"""
+    return '__' in s and '{' in s
+
+
+def _tmplkeys_in(code):
+    return [s for s in TMPLKEY_RE.findall(code) if _is_keytmpl(s)]
+
+
+#: ⛔⛭ r7643+cc66.58, found by perturbing this file's own new gate: ** THE RULE WAS IMPLEMENTED TWICE
+#:   -- once in the verdict loop and once in `_tmplkeys_in` -- so reverting the verdict path left the
+#:   gate green and only the COUNTS moved. **  *A gate that pins a copy of the rule does not pin the
+#:   rule.*  ⇒ *Both now call `_is_keytmpl`, so a revert reddens the detector gate itself.*
+#: ⛔ *And the bank-presence boundary is pinned SYNTHETICALLY below, because reverting it changes no
+#:   verdict today -- which is what latent means, and a latent defect with no gate is the one that
+#:   comes back.*
+_PRESENT_RE = (lambda g, s: bool(_re_present(g, s)))
+
+
+def _re_present(g, s):
+    return re.search(re.escape(g) + r'(?![A-Za-z0-9_])', s)
 
 KEYS = {}
-for g in GAPS + (NOT_A_GAP,):
+for g in GAPS_ALL + (NOT_A_GAP,):
     z = np.load(os.path.join(SPEC, g + '.npz'), allow_pickle=True)
     KEYS[g] = sorted(z.files)
 
 print(__doc__)
 print(BAR)
+print("  PART 0 -- WHICH KEY GAPS 70's THIRD BANK CLOSED, AND BY WHICH MECHANISM")
+print(BAR)
+for g in GAPS_ALL:
+    sib = os.path.exists(os.path.join(SPEC, g + '_leafrec1.npz'))
+    print(f"    {g:20s} sibling file: {str(sib):5s}  closed by it: {g in CLOSED_BY_SIBLING}")
+check("⛭⛭ `r6929_geometry` IS CLOSED BY A SIBLING FILE, on all four conditions and not on its "
+      "existence alone: the sibling keeps the same `__cr` key names, its `__cr` values MOVED, and "
+      "its `__lcdm` values are IDENTICAL -- the bank's own statement that the control does not "
+      "move.  ⇒ ** A better form than the `__cr_leafrec1` entries I asked for, because a reader "
+      "re-points by changing the FILE and keeping the key **",
+      'r6929_geometry' in CLOSED_BY_SIBLING,
+      f"closed: {CLOSED_BY_SIBLING or 'none'}")
+check("⛔ AND THE REST ARE STILL OPEN, so the ask narrows rather than disappearing",
+      len(GAPS) == len(GAPS_ALL) - len(CLOSED_BY_SIBLING) and len(GAPS) > 0,
+      f"{len(GAPS)} still open of {len(GAPS_ALL)}")
+
+print()
+print(BAR)
 print("  PART 1 -- EACH GAP BANK'S OWN KEYS, SPLIT BY ARM")
 print(BAR)
 for g in GAPS:
     cr = [k for k in KEYS[g] if re.search(r'(^|_)cr(_|$)|__cr$|_cr_', k) and 'lcdm' not in k]
+    #: ⛭⛭ r7643: ** 70's THIRD BANK CLOSED A KEY GAP WITH A SIBLING FILE, WHICH IS A BETTER FORM THAN
+    #: THE ONE I ASKED FOR AND WHICH THIS TEST DID NOT ANTICIPATE. **  I asked for `__cr_leafrec1`
+    #: ENTRIES; `r6929_geometry_leafrec1.npz` instead keeps the key NAMES and holds the arm of
+    #: record's values in them (l_A__cr 301.799 -> 302.943, D_M__cr 14017.04 -> 14133.95), with the
+    #: `__lcdm` side bit-identical.  *A reader re-points by changing the FILE and keeping the key,
+    #: rather than changing every key string -- so the gap is closed and this test, keyed on the
+    #: presence of an arm-of-record KEY, would have gone on calling it open.*
     lc = [k for k in KEYS[g] if 'lcdm' in k]
     sib = os.path.exists(os.path.join(SPEC, g + '_leafrec1.npz'))
     print(f"    {g:20s} {len(KEYS[g]):3d} keys: {len(cr):2d} cr-side, {len(lc):2d} control-side"
@@ -123,7 +248,12 @@ for r in MINE44:
     #: bank is found from its own `np.load` and the template is looked for on THAT name.*
     hits = {}
     for g in GAPS:
-        if g not in src:
+        #: ⛔ r7643+cc66.58: boundary-anchored, not a substring -- `g in src` is satisfied by
+        #: `g + '_leafrec1'`, so a receipt RE-POINTED onto a gap bank's sibling would still score as
+        #: reading the gap.  *Latent while no bank in `GAPS` has a sibling -- by construction, since a
+        #: sibling is what takes it out of `GAPS` -- and live the moment one is banked and a reader is
+        #: moved onto it, which is the whole of the ask.*
+        if not _re_present(g, src):
             continue
         var = None
         m = re.search(r'(\w+)\s*=\s*np\.load\([^\n]*' + re.escape(g), code)
@@ -134,11 +264,23 @@ for r in MINE44:
         lc = [k for k in KEYS[g] if 'lcdm' in k and (f"'{k}'" in code or f'"{k}"' in code)]
         #: a template counts only where it indexes THIS bank's variable -- `VAR[f'…__{…}']` -- or
         #: where a one-line lambda over that variable does, which is how `cc66.52` writes it.
+        #: ⛔⛭⛭ r7643+cc66.58: ** THE TEMPLATE TEST REQUIRED THE PLACEHOLDER TO FOLLOW `__`
+        #: IMMEDIATELY, AND THAT IS THE SAME BLIND SPOT AS THE KEY TEST'S, IN THE MECHANISM BUILT TO
+        #: CATCH WHAT LITERALS MISS. **  `var[f'...__{...}']` saw `f'{n}__{t}'` and MISSED
+        #: `f'Dl__noop_{t}'`, `f'Dl__xsonly_{t}'`, `f'ls__noop_{t}'` -- every template whose
+        #: placeholder sits after another token.
+        #:   ⇒ *** And unlike `cc66.56`'s widening this one MOVES VERDICTS: two receipts scored CLEAR
+        #:       read `r6911_noop` and `r6915_noop`'s cr side by exactly that form, undeclared, from
+        #:       banks with no sibling.  5/3/3 becomes 7/3/1. ***
+        #:   ⛭ *The rule is now what it always should have been: the indexed key string carries BOTH a
+        #:   key separator `__` and a placeholder `{`.  `Dl__base` has no placeholder and `{x}` has no
+        #:   separator, so neither is a key template.*
         tmpl = False
         if var:
-            tmpl = bool(re.search(re.escape(var) + r'\[f?[\'\"][^\'\"]*__\{', code)) or \
-                bool(re.search(r'lambda[^\n]*:\s*' + re.escape(var) + r'\[f[\'\"][^\'\"]*__\{',
-                               code))
+            _ks = (re.findall(re.escape(var) + r'\[f[\'\"]([^\'\"]*)[\'\"]\]', code)
+                   + re.findall(r'lambda[^\n]*:\s*' + re.escape(var)
+                                + r'\[f[\'\"]([^\'\"]*)[\'\"]\]', code))
+            tmpl = any(_is_keytmpl(s) for s in _ks)
         hits[g] = (cr, lc, tmpl)
     #: ⛭⛭ ** AND THERE ARE THREE VERDICTS, NOT TWO, WHICH THE FIRST TWO VERSIONS OF THIS FILE BOTH
     #: GOT WRONG. **  A receipt can read a key-gap bank's `cr` side KNOWINGLY -- saying so in its own
@@ -181,9 +323,39 @@ check("⌗ AND THE CLEAR VERDICTS ARE CHECKED A SECOND WAY: no receipt scored cl
       "a `__{` key template in its CODE.  ⛔ *Comment lines are stripped, because the first version "
       "flagged two receipts whose only `__cr` is in a comment of mine saying the bank's arm is a "
       "key -- a false alarm in a register costs more than the error*",
-      all('__cr' not in _code_of(r) and not TMPL_RE.search(_code_of(r)) for r in CLEAR),
-      f"{sum(1 for r in CLEAR if '__cr' in _code_of(r) or TMPL_RE.search(_code_of(r)))}"
+      all(not _armkeys_in(_code_of(r)) and not _tmplkeys_in(_code_of(r)) for r in CLEAR),
+      f"{sum(1 for r in CLEAR if _armkeys_in(_code_of(r)) or _tmplkeys_in(_code_of(r)))}"
       f" of {len(CLEAR)} clear receipts carry it in code")
+check("⛔⛭⛭ the arm-key test is BOUNDARY-ANCHORED, and the substring form it replaces is measurably "
+      "wrong rather than merely narrower: `'__cr' in k` misses every key whose arm tag follows another "
+      "token, which is five of the eight real arm keys sampled here -- and the boundary form still "
+      "rejects the two negative controls a looser `'cr' in k` would take.  ⌗ *No verdict in this file "
+      "moves: the one bank with a sibling carries only `X__cr` keys, so the defect was LATENT and not "
+      "live, which is stated rather than dressed up as a correction*",
+      all(ARM_RE.search(k) for k in _ARM_SEEN)
+      and sum(1 for k in _ARM_SEEN if '__cr' not in k) == 5
+      and not ARM_RE.search('Dl__combvl') and not ARM_RE.search('Dl__crust')
+      and not _armkeys_in("z['Dl__combvl']") and _armkeys_in("z['Dl__unset_cr']") == ['Dl__unset_cr'],
+      f"{sum(1 for k in _ARM_SEEN if '__cr' not in k)} of {len(_ARM_SEEN)} sampled arm keys are "
+      f"invisible to the substring form")
+check("⛔⛭⛭ the KEY-TEMPLATE test is placeholder-anywhere, and the `__{` form it replaces is "
+      "measurably wrong rather than merely narrower: three of the four sampled templates are "
+      "invisible to it, and they are the ones two CLEAR-scored receipts used to read `r6911_noop` and "
+      "`r6915_noop`'s cr side.  ⇒ ** This is the SECOND defect of this family in this file, after the "
+      "arm-key substring at `cc66.56` -- and unlike that one it MOVED VERDICTS, 5/3/3 to 7/3/1. **  "
+      "⛔ *The `CLEAR` verdicts' second check used the same narrow rule, so a second way built from "
+      "the first way's regex family is not an independent read*",
+      all('__' in s and '{' in s for s in _TMPL_SEEN)
+      and sum(1 for s in _TMPL_SEEN if not TMPL_RE.search(s)) == 3
+      and not _is_keytmpl('Dl__base') and not _is_keytmpl('{t}')
+      and not _is_keytmpl('{n}_{t}')
+      and _tmplkeys_in("NOOP[f'Dl__noop_{t}']") == ['Dl__noop_{t}']
+      and _tmplkeys_in("z[f'Dl__base']") == []
+      and _tmplkeys_in("z[f'{t}']") == []
+      and _re_present('r6929_noop', "np.load('r6929_noop.npz')") is not None
+      and _re_present('r6929_noop', "np.load('r6929_noop_leafrec1.npz')") is None,
+      f"{sum(1 for s in _TMPL_SEEN if not TMPL_RE.search(s))} of {len(_TMPL_SEEN)} sampled key "
+      f"templates are invisible to the `__{{` form")
 check("⛔⛭ AND BOTH KNOWN CASES ARE SCORED CORRECTLY NOW, which is what settles the method: "
       "`the_held_period_estimator_…` is BLOCKED -- `cc66.17` measured that independently, and the "
       "literal-only matcher got it wrong because its keys are `f'{n}__{t}'` -- while "
@@ -216,10 +388,18 @@ for r in sorted(_needs_more):
 #: DECLARED category gave 10 / 3 again with two landed receipts among the blocked.  *A count that
 #: moves with the method and is not pinned is a number nobody can audit, and this one is going into a
 #: bank ask.*
-check("⛔⛭ THE VERDICT COUNTS ARE PINNED: 7 BLOCKED, 3 DECLARED, 3 CLEAR of the 13 readers, and 5 of "
-      "the 7 cleared by the one family ask.  ⇒ ** Pinned because three earlier versions of this file "
-      "each gave a different plausible count, and the number is going into a bank ask **",
-      len(BLOCKED) == 7 and len(DECLARED) == 3 and len(CLEAR) == 3
+check("⛔⛭⛭ THE VERDICT COUNTS ARE PINNED, AND THEY MOVED TWICE -- ONCE WHEN 70's THIRD BANK LANDED "
+      "AND ONCE WHEN THIS FILE'S OWN TEMPLATE TEST WAS REPAIRED: 7 BLOCKED, 3 DECLARED, 1 CLEAR of "
+      "**11** readers.  ⛔ *The 5 / 3 / 3 this gate pinned from `cc66.46` to `cc66.57` was measured "
+      "with a template test that required the placeholder to follow `__` immediately, so it could not "
+      "see `f'Dl__noop_{t}'` -- and two receipts reading `r6911_noop` and `r6915_noop`'s cr side by "
+      "that form were scored CLEAR.  The counts before the bank, 7 / 3 / 3 of 13, were measured the "
+      "same way and are not a baseline either.*  ⇒ ** A pinned count caught the move both times; what "
+      "it cannot catch is a METHOD that is wrong in the same way on both sides of the pin, which is "
+      "why the detector itself is now gated below **.  ⛔⛭ *And the family split in this same pin was "
+      "GUESSED at 3 / 4 on the first attempt and is 5 / 2 -- the third time this file has recorded "
+      "that error and the second time on itself.  The run says it; I did not read the run.*",
+      len(VERDICT) == 11 and len(BLOCKED) == 7 and len(DECLARED) == 3 and len(CLEAR) == 1
       and len(_by_family) == 5 and len(_needs_more) == 2,
       f"{len(BLOCKED)} blocked, {len(DECLARED)} declared, {len(CLEAR)} clear; "
       f"{len(_by_family)} by the family, {len(_needs_more)} needing more")
@@ -233,16 +413,33 @@ check("⛔⛭ THE VERDICT COUNTS ARE PINNED: 7 BLOCKED, 3 DECLARED, 3 CLEAR of t
 #:       is pinned here so the refinement is not merely decorative: file-wide, `a_source_with_no_
 #:       physics_…` is attributed to `r6919_geometry` AND `r6919_noop`; localised, only to
 #:       `r6919_geometry`, because `r6919_noop` is never indexed by a template on its own variable. ***
-_asrc = [r for r in VERDICT if r.startswith('P15_a_source_with_no_physics')]
-if _asrc:
-    _ab = VERDICT[_asrc[0]][2]
-    print(f"    bank attribution for `a_source_with_no_physics_…`: {', '.join(_ab)}")
-    check("⛭ AND THE LOCALISATION IS LOAD-BEARING FOR THE BANK ATTRIBUTION, pinned so the refinement "
-          "is not decorative: `a_source_with_no_physics_…` is attributed to `r6919_geometry` ALONE, "
-          "where a file-wide template search also names `r6919_noop` -- which it never indexes by a "
-          "template on its own variable.  ⇒ ** This is what a bank ask is costed from, so the "
-          "attribution has to be right and not merely conservative **",
-          _ab == ['r6919_geometry'], ", ".join(_ab))
+#: ⛔⛭ r7643+cc66.58: ** THE EXAMPLE THIS GATE PINNED WAS AN ARTEFACT OF THE NARROW TEMPLATE TEST. **
+#:   It asserted that `a_source_with_no_physics_…` is attributed to `r6919_geometry` ALONE where a
+#:   file-wide search also names `r6919_noop`.  *Under the repaired test the LOCALISED search names
+#:   both, because `r6919_noop` IS indexed by a template on its own variable -- in the
+#:   `f'Dl__noop_{t}'` form the narrow rule could not see.  So the distinction was the defect's, not
+#:   the localisation's.*
+#:   ⇒ *** The localisation is still load-bearing, and the gate is re-pinned on the case where it
+#:       actually bites: `the_combs_resolution_…` has NO template attribution at all once localised,
+#:       where a file-wide search would name `r6925_noop` and `r6929_noop` by template.  Those two do
+#:       block it -- by LITERAL -- so the file-wide rule would get the right banks for the wrong
+#:       reason and label the mechanism `[both]` where it is `[literal]`.  An ask is priced on what
+#:       the receipt does, so the mechanism has to be right too. ***
+_comb = [r for r in VERDICT if 'combs_resolution' in r]
+if _comb:
+    _ch = VERDICT[_comb[0]][0]
+    _ctm = sorted(g for g, (_c, _l, tm) in _ch.items() if tm)
+    _clit = sorted(g for g, (c, _l, _t) in _ch.items() if c)
+    print(f"    `the_combs_resolution_…`: template attribution {_ctm or 'none'}; literal {_clit}")
+    check("⛭ AND THE LOCALISATION IS LOAD-BEARING FOR THE MECHANISM, re-pinned on the case where it "
+          "bites: `the_combs_resolution_…` has NO template attribution once the search is localised "
+          "to each bank's own variable, where a file-wide one would name `r6925_noop` and "
+          "`r6929_noop` by template.  Both DO block it, by literal -- so the file-wide rule would "
+          "reach the right banks by the wrong mechanism and label the ask `[both]` where it is "
+          "`[literal]`.  ⛔ *The example this gate carried until `cc66.58` was an artefact of the "
+          "narrow template test and is recorded as one above*",
+          _ctm == [] and _clit == ['r6925_noop', 'r6929_noop'],
+          f"template {_ctm}; literal {_clit}")
 
 check("⛭ THE ASK HAS A COUNT: re-running the `{geometry,noop}` family with `__cr_leafrec1` entries "
       "clears every receipt blocked only by it, and the rest name exactly what else they need.  ⇒ "

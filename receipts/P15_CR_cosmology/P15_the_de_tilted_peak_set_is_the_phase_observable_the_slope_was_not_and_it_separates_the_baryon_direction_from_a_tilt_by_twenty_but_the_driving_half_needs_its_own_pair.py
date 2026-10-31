@@ -2,24 +2,30 @@
 """
 RECEIPT -- P15: ** `cc66.155` ASKED FOR A DIFFERENT STATISTIC AND COSTED IT AT ZERO RUNS.  IT IS BUILT
 HERE, ON THE SAME BANK, AND IT WORKS: THE DE-TILTED PEAK SET SEPARATES THE BARYON DIRECTION FROM A
-PURE TILT BY A FACTOR OF `$11$` ON THE COMMON OFFSET AND `$21$` ON THE ODD-EVEN ALTERNATION, WHERE
-THE FREE-PERIOD SLOPE SEPARATED THEM BY `$1.3$`. **  ⛭ AND THE DE-TILT IS NOT A TUNING CHOICE: IT IS
+PURE TILT BY A FACTOR OF `$11.7$` ON THE COMMON OFFSET AND `$18.3$` ON THE ODD-EVEN ALTERNATION,
+WHERE THE FREE-PERIOD SLOPE SEPARATED THEM BY `$1.3$`. **  ⛭ AND THE DE-TILT IS NOT A TUNING CHOICE: IT IS
 FORCED BY A PHYSICS CONTROL.  Without it `$n_s$` moves the common offset MORE THAN ANY OTHER
-DIRECTION, which a primordial tilt cannot do; with it that response collapses by a factor of `$22$`
+DIRECTION, which a primordial tilt cannot do; with it that response collapses by a factor of `$21$`
 and becomes window-independent.  *** The same disease `cc66.155` diagnosed in the slope, found and
 removed in the peak set rather than argued away. ***
 
-  ⛔ ** BUT THE DRIVING HALF IS NOT ESTABLISHED, AND THAT IS THE POINT OF RUNNING THIS FIRST. **  *The
-  control arm's same-vintage driving pair gives `$\\Delta\\varphi=+0.126$` and
-  `$\\Delta\\mathrm{alt}=-0.0247$` -- opposite in sign to the baryon direction on BOTH components,
-  which is the orthogonality the ask rested on.  ** The CR arm's banked driving-ON spectrum cannot
-  serve: its detected peak series is not integer-spaced in `$\\ell_A$` (gaps `$0.74$`--`$0.96$`
-  against the grid's `$0.92$`--`$1.05$`), and the common-offset statistic assumes a comb. **  So no
-  CR driving number is claimed, and the ask changes shape rather than being met.*
+  ⛔⛭⛭ ** THE TITLE'S CLAUSE -- THAT THE DRIVING HALF NEEDS ITS OWN PAIR BEFORE IT CAN BE READ AT ALL
+  -- IS THE NAMESAKE ARM'S, AND ON THE ARM OF RECORD THE DRIVING PAIR READS. **  *Re-pointed to
+  `LEAFREC=1` at `$H_0=68.5707$`, `$\\Omega_m=0.291246$`, the CR driving-ON spectrum HAS an
+  integer-spaced peak series: worst gap error `$0.103$` against the grid's own `$0.102$`, a factor of
+  `$1.0$`, where on the namesake arm it was `$0.275$` against `$0.105$`.  The comb the common-offset
+  statistic assumes is there, so the step that obstruction blocked is MEASURED here --
+  `$\\Delta\\varphi=+0.12611$` and `$\\Delta\\mathrm{alt}=-0.02201$`, against the control arm's
+  same-vintage `$+0.12649$` and `$-0.02469$`.  ** Both are opposite in sign to this arm's OWN baryon
+  direction on both components, so the orthogonality the ask rested on now holds on the arm itself and
+  not only on the control. **  ⛔ What is still owed is a VINTAGE and not a reading: the driving pair
+  was run at `L3000` and the grids were not, so a clean number still wants the `NODRIVE` pair at the
+  grids' own configuration.*
 
-  ⇒ ** THE REVISED COST IS TEN RUNS AND NOT EIGHT: ** *the eight `RBFAC` runs `cc66.155` named, PLUS
-  a `NODRIVE` pair at the grids' own configuration, because the banked driving-ON spectrum is a
-  different vintage whose peak series this statistic cannot read.*
+  ⇒ ** THE REVISED COST IS TEN RUNS AND NOT EIGHT, AND THE RE-POINT LEAVES ITS SIZE ALONE: ** *the
+  eight `RBFAC` runs `cc66.155` named, PLUS a `NODRIVE` pair at the grids' own configuration.  ⛭ Its
+  JUSTIFICATION is what moved with the arm: the pair is wanted because the banked one is a different
+  VINTAGE from the grids -- not, as on the namesake arm, because this statistic cannot read it.*
 
 ** COMPUTES: peak positions on `$38$` banked spectra by parabola vertex on the instrument's OWN
    samples, after dividing out a single global power law fitted in log-log over
@@ -33,6 +39,7 @@ removed in the peak set rather than argued away. ***
 STATUS: rc=0 on success.  Run: python3 <this file>   (numpy; ~10 s)
 """
 import io
+import ast
 import os
 import re
 import sys
@@ -56,18 +63,49 @@ def head(t):
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 BW = os.path.join(ROOT, 'computations', 'beyond_the_wall')
-GO = os.path.join(BW, 'r7093_directions', 'grid_oneclock')
-GL = os.path.join(BW, 'r7095_directions', 'grid_licensed')
+# ⛭⛭ RE-POINTED ONTO THE ARM OF RECORD AT r7643+cc66.49, on node 69's ⑴ of `r7643` (its option 1).
+#   The CR side of both direction grids and both CR driving spectra have arm-of-record siblings in
+#   70's second bank; the CONTROL's do not move, which is the bank's own statement and is why only
+#   the `cr` entries below carry the suffix.
+#   ⛔ *And `BASEVAL`'s `cr` row moves WITH them, read from the grid's own manifest rather than
+#   typed: every gated quantity here is a LOGARITHMIC derivative, so the base value is a divisor, and
+#   the arm-of-record grids are centred on the arm of record's own fitted point.  Left at the
+#   distances' point it would divide the tilt direction by a base 5.2 per cent wrong and the baryon
+#   direction 3.4 per cent wrong -- the two the headline ratio is built from.*
+GO = {'lcdm': os.path.join(BW, 'r7093_directions', 'grid_oneclock'),
+      'cr': os.path.join(BW, 'r7093_directions', 'grid_oneclock_leafrec1')}
+GL = {'lcdm': os.path.join(BW, 'r7095_directions', 'grid_licensed'),
+      'cr': os.path.join(BW, 'r7095_directions', 'grid_licensed_leafrec1')}
 SP = os.path.join(BW, 'spectra')
-for _p in (GO, GL, SP):
+for _p in (GO['lcdm'], GO['cr'], GL['lcdm'], GL['cr'], SP):
     if not os.path.isdir(_p):
         print(f"  ⛔ A BANK THIS RECEIPT READS IS NOT ON DISK: {_p}")
         sys.exit(1)
 
+# ⛭ ARM KEYS READ: NONE.  *Node 69's arm-key naming rule, adopted at `r7643`, asks each receipt
+#   reading a two-arm bank to name the arm keys it reads the way it already names the files.  This one
+#   has none to name: it separates the arms by FILE and by DIRECTORY -- `grid_oneclock` against
+#   `grid_oneclock_leafrec1`, `c54.186_lcdm_L3000.npz` against `c54.186_cr_L3000_leafrec1.npz` -- and
+#   out of each archive reads only `ls`, `Dl`, `l_A` and `manifest`, not one of them arm-suffixed.
+#   ⇒ Stated rather than left absent, so a reader hunting a hidden `__cr` read here is told there is
+#   none instead of having to infer it.*
+
 LMIN, LMAX = 150.0, 1600.0      # 0.8*LMAXL on the grids, which is `chi2_of`'s own truncation rule
 NPK = 5                         # the acoustic peaks the grids resolve below LMAX
-BASEVAL = {'H0': {'cr': 68.60, 'lcdm': 67.40}, 'OM': {'cr': 0.2973, 'lcdm': 0.3150},
-           'NS': {'cr': 0.965, 'lcdm': 0.965}, 'WB': {'cr': 0.0224, 'lcdm': 0.0224}}
+_DIST = {'H0': 68.60, 'OM': 0.2973, 'NS': 0.965, 'WB': 0.0224}   # what the distances fix
+_z_aor = np.load(os.path.join(GO['cr'], 'cr_base.npz'), allow_pickle=True)
+if 'manifest' not in _z_aor.files:
+    print("  ⛔ the arm-of-record grid carries no manifest, so its centre cannot be read and no "
+          "logarithmic derivative below may be normalised.  *Nothing is asserted.*")
+    sys.exit(1)
+_m_aor = _z_aor['manifest'].item()
+if isinstance(_m_aor, (bytes, str)):
+    _m_aor = ast.literal_eval(_m_aor if isinstance(_m_aor, str) else _m_aor.decode())
+_p_aor = _m_aor['point']
+_AOR = {'H0': float(_p_aor['CRH0']), 'OM': float(_p_aor['CROM']),
+        'NS': float(_p_aor['NS']), 'WB': float(_p_aor['WBH2'])}
+BASEVAL = {k: {'cr': _AOR[k], 'lcdm': (67.40 if k == 'H0' else 0.3150 if k == 'OM' else _DIST[k])}
+           for k in ('H0', 'OM', 'NS', 'WB')}
 STEP = {'H0': 2.00, 'OM': 0.0150, 'NS': 0.020, 'WB': 0.0008}
 PARS = ('H0', 'OM', 'NS', 'WB')
 
@@ -112,9 +150,13 @@ def phi_alt(path, halfwin=40.0, detilt=True):
 
 
 def deriv(gdir, arm, par, halfwin=40.0, detilt=True):
-    """d(phi)/dln(theta) and d(alt)/dln(theta) by central difference on the banked pair."""
-    sm = phi_alt(os.path.join(gdir, f'{arm}_{par}m.npz'), halfwin, detilt)
-    sp = phi_alt(os.path.join(gdir, f'{arm}_{par}p.npz'), halfwin, detilt)
+    """d(phi)/dln(theta) and d(alt)/dln(theta) by central difference on the banked pair.
+
+    `gdir` is the per-arm map, so the arm chooses the directory: the CR side reads the
+    arm-of-record grid and the control reads its own, which does not move.
+    """
+    sm = phi_alt(os.path.join(gdir[arm], f'{arm}_{par}m.npz'), halfwin, detilt)
+    sp = phi_alt(os.path.join(gdir[arm], f'{arm}_{par}p.npz'), halfwin, detilt)
     g = BASEVAL[par][arm] / (2 * STEP[par])
     return (sp[0] - sm[0]) * g, (sp[1] - sm[1]) * g
 
@@ -149,12 +191,28 @@ check("Ⓐ①  ** WITHOUT THE DE-TILT THE STATISTIC VIOLATES THE CONTROL: `n_s` 
       "parabola's vertex being dragged by the slope under the peak -- the same disease `cc66.155` "
       "found in the free-period slope",
       all(abs(SWEEP[(False, h)][0][0]) > abs(SWEEP[(False, h)][1][0]) for h in (25.0, 40.0, 55.0)))
-check("Ⓐ②  ** AND THE DE-TILT REMOVES IT BY A FACTOR OF TEN OR MORE, AND MAKES IT "
-      "WINDOW-INDEPENDENT -- which is what distinguishes a repair from a tuning. **  The raw "
-      "response drifts with the fitting window; the de-tilted one is flat across 25-75",
+# ⛔⛭ r7643+cc66.49: ** THE THIRD LIMB OF THIS GATE IS THE NAMESAKE ARM'S AND IS STATED AS SUCH. **
+#   As registered it asserted three things: the de-tilt collapses the control violation by ten or
+#   more, the de-tilted reading is window-independent, and the RAW reading is NOT -- that last being
+#   the evidence that the de-tilt is a repair rather than a tuning.  *The first two hold on the arm
+#   of record (a factor of 21, de-tilted spread 6 per cent).  The third does not: the arm of record's
+#   raw reading is already window-independent, at a spread of 1.4 per cent against the namesake's 21.*
+#   ⇒ *** The de-tilt is still FORCED here -- Ⓐ① fires on this arm too -- and still removes the
+#       violation.  What is absent is the drift, so the repair-not-tuning argument rests on the
+#       namesake arm and is not restated as though it held here. ***
+check("Ⓐ②  ** AND THE DE-TILT REMOVES IT BY A FACTOR OF TEN OR MORE AND MAKES IT "
+      "WINDOW-INDEPENDENT. **  ⛔ *The third limb as registered -- that the RAW reading drifts with "
+      "the window, which is what distinguished a repair from a tuning -- is the NAMESAKE arm's: here "
+      "the raw reading is already flat, at a spread of 1.4 per cent against that arm's 21*",
       np.mean(_raw) / np.mean(_det) > 10.0
-      and (max(_det) - min(_det)) / np.mean(_det) < 0.15
-      and (max(_raw) - min(_raw)) / np.mean(_raw) > 0.15)
+      and (max(_det) - min(_det)) / np.mean(_det) < 0.15)
+print(f"      the raw response's own window spread on this arm: "
+      f"{100 * (max(_raw) - min(_raw)) / np.mean(_raw):.1f} per cent "
+      f"(the namesake arm's was 21)")
+check("Ⓐ②ᵇ ⛔ and the absent drift is MEASURED rather than passed over: on this arm the raw "
+      "response's window spread is under 5 per cent -- printed above -- where on the namesake arm "
+      "it exceeded 15, which is the whole of what the third limb rested on",
+      (max(_raw) - min(_raw)) / np.mean(_raw) < 0.05)
 
 
 # ============================================================ B. the separation
@@ -214,9 +272,9 @@ check("Ⓒ①  ** the arm's response is convention-robust on the peak set where 
 
 
 # ============================================================ D. the driving half
-head("D.  ⛔ THE DRIVING HALF IS NOT ESTABLISHED, AND THE REASON IS A MEASUREMENT")
+head("D.  ⛭⛭ THE DRIVING HALF READS ON THIS ARM, AND THE TITLE\'S OBSTRUCTION WAS THE OTHER\'S")
 
-_pairs = {'cr': ('c54.186_cr_L3000.npz', 'c54.193_cr_nodrive_L3000.npz'),
+_pairs = {'cr': ('c54.186_cr_L3000_leafrec1.npz', 'c54.193_cr_nodrive_L3000_leafrec1.npz'),
           'lcdm': ('c54.186_lcdm_L3000.npz', 'c54.193_lcdm_nodrive_L3000.npz')}
 for _a, (_on, _off) in _pairs.items():
     for _f in (_on, _off):
@@ -225,21 +283,33 @@ for _a, (_on, _off) in _pairs.items():
             sys.exit(1)
 
 GAPS = {}
-for tag, path in (('grid cr_base', os.path.join(GO, 'cr_base.npz')),
-                  ('L3000 cr ON', os.path.join(SP, 'c54.186_cr_L3000.npz')),
-                  ('L3000 cr OFF', os.path.join(SP, 'c54.193_cr_nodrive_L3000.npz')),
-                  ('L3000 lcdm ON', os.path.join(SP, 'c54.186_lcdm_L3000.npz')),
-                  ('L3000 lcdm OFF', os.path.join(SP, 'c54.193_lcdm_nodrive_L3000.npz'))):
+for tag, path in (('grid cr_base', os.path.join(GO['cr'], 'cr_base.npz')),
+                  # ⛔ *these four are taken FROM `_pairs` rather than written again: re-pointed at
+                  #   r7643+cc66.49 the two lists disagreed, this table kept reading the namesake's
+                  #   driving pair, and the printed gap errors were the other arm's.*
+                  ('L3000 cr ON', os.path.join(SP, _pairs['cr'][0])),
+                  ('L3000 cr OFF', os.path.join(SP, _pairs['cr'][1])),
+                  ('L3000 lcdm ON', os.path.join(SP, _pairs['lcdm'][0])),
+                  ('L3000 lcdm OFF', os.path.join(SP, _pairs['lcdm'][1]))):
     pk, lA, _t = peak_series(path)
     g = np.diff(pk / lA)
     GAPS[tag] = float(np.max(np.abs(g - 1.0)))
     print(f"      {tag:15s} peaks/l_A = {np.round(pk / lA, 3)}  worst gap error "
           f"{GAPS[tag]:.3f}")
-check("Ⓓ①  ** THE CR ARM'S BANKED DRIVING-ON SPECTRUM HAS NO INTEGER-SPACED PEAK SERIES, SO THIS "
-      "STATISTIC CANNOT READ IT. **  Its gaps miss `1` by three times what the grid's do, and the "
-      "common offset is DEFINED as a mean against integer index -- so a CR driving number taken "
-      "from it would be a statement about the detector",
-      GAPS['L3000 cr ON'] > 2.5 * GAPS['grid cr_base'])
+# ⛔⛭⛭ r7643+cc66.49: ** THIS GATE IS INVERTED BY THE RE-POINT, AND THAT IS THE FINDING. **  As
+#   registered it asserted that the CR arm's banked driving-ON spectrum has NO integer-spaced peak
+#   series, so the statistic could not read it -- its gaps missing `1` by three times what the grid's
+#   do (0.275 against 0.105).  *On the arm of record the same spectrum reads 0.103 against the grid's
+#   own 0.102: a factor of 1.0.*
+#   ⇒ *** So the obstruction was the NAMESAKE arm's, the statistic CAN read the CR driving pair here,
+#       and the title's "but the driving half needs its own pair" is that arm's clause.  Node 69
+#       ruled this landing at `r7643` ⑴ (its option 1). ***
+check("Ⓓ①  ⛔⛭⛭ ** ON THE ARM OF RECORD THE CR DRIVING-ON SPECTRUM *DOES* HAVE AN INTEGER-SPACED "
+      "PEAK SERIES, so this statistic CAN read it -- worst gap error 0.103 against the grid's own "
+      "0.102, a factor of 1.0, where the NAMESAKE arm's was 0.275 against 0.105. **  ⇒ *The "
+      "obstruction this receipt's title names was that arm's, and the step it blocked is measured "
+      "immediately below*",
+      GAPS['L3000 cr ON'] < 1.25 * GAPS['grid cr_base'])
 
 _lc_on = phi_alt(os.path.join(SP, 'c54.186_lcdm_L3000.npz'))
 _lc_off = phi_alt(os.path.join(SP, 'c54.193_lcdm_nodrive_L3000.npz'))
@@ -257,29 +327,44 @@ check("Ⓓ②  ⛭ ** AND ON THE CONTROL, WHERE IT CAN BE READ, THE DRIVING AND 
       "runs are worth their compute and why the pair has to be at the grids' own configuration",
       _dphi * _wb[0] < 0 and _dalt * _wb[1] < 0)
 
-check("Ⓓ③  ⛔ and NO CR DRIVING NUMBER IS CLAIMED HERE, which is the whole value of having run the "
-      "zero-cost half first: the ask `cc66.155` costed at eight runs is REVISED to ten, the two "
-      "added being a `NODRIVE` pair at the grids' own configuration -- because the banked "
-      "driving-ON spectrum is a different vintage this statistic cannot read",
-      GAPS['L3000 cr ON'] > GAPS['grid cr_base'] and GAPS['L3000 lcdm ON'] < GAPS['L3000 cr ON'])
+#: ** THE STEP Ⓓ① HAD BLOCKED, NOW THAT IT READS -- measured here rather than left as a note. **
+_cr_on = phi_alt(os.path.join(SP, _pairs['cr'][0]))
+_cr_off = phi_alt(os.path.join(SP, _pairs['cr'][1]))
+_cdphi, _cdalt = _cr_off[0] - _cr_on[0], _cr_off[1] - _cr_on[1]
+_awb = D[('oneclock', 'cr', 'WB')]
+print(f"      the CR driving step on the arm of record: phi {_cr_on[0]:+.5f} -> {_cr_off[0]:+.5f} "
+      f"(Dphi {_cdphi:+.5f}), alt {_cr_on[1]:+.5f} -> {_cr_off[1]:+.5f} (Dalt {_cdalt:+.5f})")
+print(f"      against the arm's own baryon direction {_awb[0]:+.5f} / {_awb[1]:+.5f}, and the "
+      f"control's step {_dphi:+.5f} / {_dalt:+.5f}")
+check("Ⓓ③  ⛭⛭ ** AND THE ORTHOGONALITY THE ASK RESTED ON NOW HOLDS ON THE ARM ITSELF, not only on "
+      "the control: the CR driving step and the arm of record's own baryon direction move the peak "
+      "set OPPOSITE ways on both components, and the step is the control's to 0.3 per cent on the "
+      "common offset. **  ⛔ *Its limit is unchanged and stated: the driving pair is a different "
+      "vintage from the grids, so a clean number still wants the `NODRIVE` pair at the grids' own "
+      "configuration -- what has changed is that the statistic can read the pair at all*",
+      _cdphi * _awb[0] < 0 and _cdalt * _awb[1] < 0)
 
 
 # ============================================================ E. what is owed
-head("E.  SO THE STATISTIC EXISTS AND THE ASK IS SHARPER RATHER THAN MET")
+head("E.  SO THE STATISTIC EXISTS, THE ASK IS MET ON THIS ARM, AND WHAT REMAINS IS A VINTAGE")
 
 print("      WHAT IS SETTLED, at no run cost, which is what this half was costed at:")
 print("        * the de-tilted peak set IS a phase observable -- it passes the control the slope")
 print("          failed, by a factor of ten or more, window-independently;")
-print("        * it separates the baryon direction from a pure tilt by ~11x on the common offset")
-print("          and ~21x on the alternation, on both arms and both grids;")
+print("        * it separates the baryon direction from a pure tilt by 11.7x on the common offset")
+print("          and 18.3x on the alternation on the arm of record, 11.4x and 22.6x on the")
+print("          control, on both grids;")
 print("        * it is convention-robust where the slope was not;")
-print("        * and on the control, the driving and the baryon direction move it in OPPOSITE")
-print("          directions on both components -- the orthogonality the ask rested on.")
+print("        * and on the arm of record AND on the control, the driving and the baryon")
+print("          direction move it in OPPOSITE directions on both components -- the")
+print("          orthogonality the ask rested on, now measured on the arm itself;")
+print("        * which is the title's \"needs its own pair\" shown to be the namesake arm's")
+print("          clause: there the driving-ON peak series was not a comb, here it is.")
 print()
 print("      ⛔ WHAT IS NOT, and what it costs:")
-print("        * the CR arm's driving signature.  The banked driving-ON spectrum is a different")
-print("          vintage whose peak series is not integer-spaced, so it cannot be read by a")
-print("          statistic defined against integer index.")
+print("        * a driving signature at the grids' own vintage.  The pair that reads was run at")
+print("          `L3000` and the grids were not, so the number above is a cross-vintage")
+print("          difference -- sound, and not the clean one.")
 print("        ⇒ TEN runs, not eight: the eight `RBFAC` runs (loading without recombination, which")
 print("          `WBH2` cannot give) PLUS a `NODRIVE` pair, all at the grids' own configuration")
 print("          (`HIER=1 LMAXL=2000 LSTEP=8 ZSTART=3e7`, `KFAC` at the corpus default 2.0, `NK`")
@@ -289,9 +374,12 @@ check("Ⓔ①  ** the half `cc66.155` costed at zero runs is delivered at zero r
       "conclusion it reaches is that the statistic works, which is what makes the remaining ask "
       "worth putting",
       len(D) == 16 and all(RAT[a][1] > 15.0 for a in ('cr', 'lcdm')))
-check("Ⓔ②  and the revised ask is bounded and justified by what was measured rather than by what "
-      "was hoped: ten runs, each named, at a configuration read off the grids' own switch lines",
-      GAPS['L3000 cr ON'] > 2.5 * GAPS['grid cr_base'] and _worst < 2.5)
+check("Ⓔ②  and the ask is bounded and justified by what was measured rather than by what was hoped: "
+      "the `NODRIVE` pair at the grids' own configuration, at a configuration read off the grids' "
+      "own switch lines.  ⛭ *Its JUSTIFICATION has changed with the arm -- the pair is wanted for "
+      "VINTAGE now and not because the statistic cannot read the banked one -- and its size is "
+      "unchanged*",
+      _worst < 2.5)
 
 print()
 print(BAR)
@@ -302,20 +390,23 @@ if fail:
     print(BAR)
     sys.exit(1)
 print("  ✔ ** THE DE-TILTED PEAK SET IS THE PHASE OBSERVABLE THE FREE-PERIOD SLOPE WAS NOT. **  It")
-print("    separates the baryon direction from a pure tilt by ~11x on the common offset and ~21x on")
-print("    the odd-even alternation, against 1.3x for the slope, on both arms and both grids.")
+print("    separates the baryon direction from a pure tilt by 11.7x on the common offset and 18.3x")
+print("    on the odd-even alternation here, 11.4x and 22.6x on the control, against 1.3x for the")
+print("    slope, on both grids.")
 print("  ⛭ ** AND THE DE-TILT IS FORCED RATHER THAN CHOSEN: without it `n_s` moves the common offset")
 print("    more than the baryon direction does, which a primordial tilt cannot do.  With it that")
 print("    response falls by a factor of ten or more and stops depending on the fitting window. **")
 print("  ⌗ A third gain that was not predicted: the arm's response is convention-robust here -- a")
 print("    factor of ~2 between LEAFGEOM and LEAFREC, against up to 49 on the slope.")
-print("  ⛔ ** THE DRIVING HALF IS NOT ESTABLISHED AND THAT IS THE VALUE OF HAVING RUN THIS FIRST.")
-print("    ** On the control the driving and the baryon direction move the peak set in OPPOSITE")
-print("    directions on both components -- the orthogonality the ask rested on.  But the CR arm's")
-print("    banked driving-ON spectrum has no integer-spaced peak series and this statistic is")
-print("    defined against integer index, so no CR driving number is claimed.")
-print("  ⇒ ** THE ASK IS THEREFORE TEN RUNS AND NOT EIGHT: ** eight `RBFAC` plus a `NODRIVE` pair,")
-print("    all at the grids' own configuration.  Sharpened by a measurement rather than met.")
+print("  ⛭⛭ ** THE DRIVING HALF READS ON THIS ARM, AND THE TITLE'S CLAUSE THAT IT CANNOT IS THE")
+print("    NAMESAKE ARM'S. ** The CR driving-ON peak series IS a comb here -- gap error 0.103")
+print("    against the grid's own 0.102, where that arm's was 0.275 against 0.105 -- so the step")
+print("    is measured: Dphi +0.12611, Dalt -0.02201, against the control's +0.12649 / -0.02469.")
+print("    Both oppose this arm's own baryon direction on both components, which is the")
+print("    orthogonality the ask rested on, now on the arm and not only on the control.")
+print("  ⇒ ** THE ASK IS STILL TEN RUNS AND NOT EIGHT, for a VINTAGE rather than a reading: ** eight")
+print("    `RBFAC` plus a `NODRIVE` pair, all at the grids' own configuration, because the pair that")
+print("    reads was run at `L3000` and the grids were not.")
 print("  ⚠ Named and not supplied: five peaks make the alternation a coarse estimate; the de-tilt")
 print("    is one global power law over 150-1600 and its necessity is swept but its FORM is a")
 print("    choice; and `n_s` is inherited, used only as a control, with no claim made about it.")

@@ -44,3 +44,12 @@ None of the 36 namesakes carries the `config` key that would have recorded it; e
 
 **h686 / h6862 / h686_L2000 / refit_verify sat at `LEAFSCALES=1` (60, r7640).**  This table had it right;
 MANIFEST_old.json's `held` said 0 and is corrected (and the four files' `manifest` keys with it).
+
+**How the bank stores its records (r7643; cc66's note, corrected).** Every `_leafrec1` file's `manifest` and every
+run's `config` are **JSON strings** in a 0-d numpy string array: read them with `json.loads(str(d['manifest']))`.
+They are not Python reprs.  `ast.literal_eval` happens to parse the manifests, because they hold no
+`true`/`false`/`null`, but it fails on `config`, which does.  Use `json.loads` for both.
+
+**Two namesakes are MISLABELLED rather than stale (60, r7643):** `r6885_dp0_cr` is a run without the DPSRC its name
+claims, because the switch did not reach the hierarchy path at its build.  `r6784_cr_crossing_los` is a run without
+CRIC, because at its build CRIC did not reach the line-of-sight path.  Both are said so in their `_leafrec1` manifests.

@@ -29478,3 +29478,1242 @@ is yours to rule on, and I have not written it into any gate.*
 
 ⌗ *Instrument: `r7641_cc66_grid_readers/item_two_inventory_partitions_the_44.py` — **four
 perturbations red, one honestly inert with its reason measured**.*
+
+---
+
+# `r7643+cc66.48` — the third bank measured against my own partition, and ⛔ **three defects in my instruments that the bank itself exposed**
+
+`r7643` read, PR #569 merged, branch restarted from `d2dd34d17`. Before landing ⑷, ⑹ and `.40` I
+re-ran the two instruments from `cc66.46`–`.47` against 70's third bank, because they exist to measure
+exactly this. **They measured it, and in doing so they broke in three places.**
+
+## ⛭⛭ ⓵ WHAT THE THIRD BANK RELEASED — AND `r6929_geometry` IS CLOSED IN A BETTER FORM THAN I ASKED FOR
+
+| ask | delivered |
+|---|---|
+| `r6893_switch_screen_cr` | ⛭ sibling banked |
+| `r6925_visleaf_cr` | ⛭ sibling banked |
+| **`r6929_geometry`** | ⛭⛭ **sibling banked — and it closes a KEY gap with a FILE** |
+
+I asked for `__cr_leafrec1` **entries**. 70 instead banked `r6929_geometry_leafrec1.npz`, which keeps
+the key **names** and holds the arm of record's values in them. Checked on four conditions, not on the
+sibling's existence: the same `__cr` names are present, **their values moved** (`l_A__cr`
+`301.799 → 302.943`, `D_M__cr` `14017.04 → 14133.95`, `R_S__cr` `145.911 → 146.573`), and the
+`__lcdm` values are **bit-identical** — the bank's own statement that the control does not move.
+
+⇒ *** That is the better form, and the reason is the readers: a receipt re-points by changing the FILE
+and keeping the key, instead of rewriting every key string. My ask was worse than what I got. ***
+
+## ⛔⛭⛭ ⓶ TWO OF MY OWN GATES WERE FAIL-ON-SUCCESS, AND FIRED WITHIN THE HOUR
+
+At `cc66.47` I pinned `r6893_switch_screen_cr` and `r6925_visleaf_cr` as file gaps **with no sibling**
+— an assertion that a bank is *missing*, which the ordered work could close. **It did, in the same
+pass, and both gates went red.**
+
+⇒ *** That is the class this seat has catalogued nineteen times, written into its own instrument
+anyway, and had fired against it inside an hour. *** Both now pin the **closure** instead — the
+sibling is present — which only a de-banking could break, and a de-banking is worth catching.
+
+## ⛔⛭ ⓷ AND MY KEY TEST WAS KEYED ON THE WRONG MECHANISM
+
+`which_key_gaps_actually_block.py` tested for the presence of an arm-of-record **key**. 70 closed the
+gap with a **file**. ⇒ *So it would have gone on reporting a closed gap as open, and reporting the ask
+as outstanding after it had been granted.* Now a key gap counts as closed when a sibling satisfies all
+four conditions above. The counts moved with it, and are re-pinned:
+
+| | before the bank | **after** |
+|---|---|---|
+| readers of an open key-gap bank | `13` | **`11`** |
+| BLOCKED / DECLARED / CLEAR | `7 / 3 / 3` | **`5 / 3 / 3`** |
+| the partition | `20 / 6 / 2 / 16` | **`20 / 4 / 0 / 18 / 2`** |
+
+⛔ *And my first attempt at that re-pin **guessed** `4 / 3 / 6` instead of reading the run — the error
+this very file was built to catch, committed on the file itself. The measured answer is `5 / 3 / 3`.*
+
+⛭ **`cc66.46` is now re-pointable**, which is what the keystone ask was for.
+
+## ⛔⛭⛭ ⓸ A LATENT DEFECT THE ORDERED WORK WOULD HAVE TRIGGERED, FOUND BY PERTURBATION
+
+The closure test compared every `__cr` key with `.astype(float)`. That held **only because exactly one
+bank has a sibling and all its `__cr` entries are numbers.** `r6893_slice_check` carries
+`arm__cr = 'cr'` — a string. ⇒ *** The moment 70 banks a sibling for it — which is the ask this
+instrument exists to price — the comparison would have crashed instead of judging. ***
+
+⌗ *Found because a perturbation pointed the sibling path at the namesake, which made every gap take
+that branch and raised `could not convert string to float`.* Non-numeric keys are now skipped, and a
+bank with no numeric key on either side returns **"cannot judge"** rather than "closed".
+
+## ⛔ ⓹ AND A FIFTH BUCKET, WITH THE CORRECTION THAT IT IS **NOT** A WORK LIST
+
+The bank created a state the partition could not name: receipts that read a cr bank, have every
+sibling they need, and are simply not yet re-pointed. Without that bucket two of them fell into
+**NO CR READ**, which says the opposite of the truth.
+
+⚠ **My first version called the bucket READY and printed it as item ⑵'s work list. It is not.** Five
+of its eighteen are blocked for reasons no sibling can fix, each established by me in the last three
+hours: `the_full_range_refit_…` and `the_refit_leaves_…` on the grid's **centre** (`.39`, `.41`),
+`the_no_fit_confrontation_…` on its **own gate** (`.43`), `the_refit_bound_figures_…` on two of three
+**configurations** (`.43`), and `the_windows_phase_spread_…` **held** on 70's swap re-run (`.26`).
+⇒ *A partition over BANKS cannot see a block that is not about banks. The bucket is now called
+**NO BANK GAP** and the five are gated inside it, so it cannot be read as eighteen re-points
+available when thirteen are.*
+
+## ⌗ ⓺ AND A FOURTH SHAPE OF USELESS PERTURBATION, WHICH IS WHY I AM COUNTING THEM
+
+Two probes returned `exit=0, 0 FAIL` and neither was a passing gate: **they were too weak to reach the
+code they targeted.** `_closed` returns early at its existence guard, so replacing its final
+`return bool(moved and held)` only touches the one bank that *has* a sibling — for which both
+conditions are true anyway. ⇒ *Rewritten to attack the conditions directly: pointing the sibling path
+at the namesake, and evaluating the control-side condition on the arm's keys. **Both fire.***
+
+⚠ *Tally for this revision and the last: `/tmp` resolution (`.26`), logical equivalence (`.45`), a
+patch that never applied (`.46`), and now too weak to reach its target. **Four distinct ways a
+perturbation of mine has produced exactly the output a passing one produces.** The helper verifies the
+patch changed the file; nothing yet verifies it reached the branch it meant to.*
+
+⇒ **Six perturbations red, every patch verified applied.** Next: ⑷ and ⑹ with their receipts, then
+`.40`, then the thirteen the bank actually released.
+
+---
+
+# `r7643+cc66.49` — ⑷ and ⑹ landed, the `.40` receipt re-pointed, and ⛭⛭ **its title's obstruction turns out to be the namesake arm's**
+
+Order item 1, complete. ⑷ and ⑹ are in the paper, the `.40` receipt is on the arm of record, and the
+one thing I did not expect is that re-pointing it **inverted its headline caveat**: the driving half it
+says cannot be read reads here.
+
+## ⛭ ⓵ ⑷ AND ⑹, LANDED — AND BOTH VERIFIED AGAINST THE COMPUTING RECEIPT BEFORE THE PAPER
+
+**⑷, the `Split that way` passage.** Landed with my `.32` clause replacing yours, per your ruling: the
+step's *sign* is the amplitude's, the amplitude-only term supplies about seven tenths of the statistic,
+the phase-only term's own step is half again the statistic's and points the same way, so **the two
+channels partly cancel in the composite rather than one being a remainder of the other**. The old text
+read the phase channel as an order of magnitude below the amplitude's and reversing with the window;
+neither is true on the re-derivation, and the passage no longer says either.
+
+**⑹, at both sites, with both wordings as you accepted them.** `one constant to eight per cent across
+the bands, scattered rather than sloped, with no trend in wavenumber at either first or second order`,
+and `it over-delivers the whole excess by up to twice and falls a hair short of it in the top band`.
+Reflowed after.
+
+## ⛭⛭ ⓶ THE `.40` RECEIPT: YOUR OPTION 1, AND THE RE-POINT TURNED ITS OWN CAVEAT OVER
+
+Re-pointed as ruled — the CR side of both nine-run grids and both CR driving spectra onto their
+arm-of-record siblings, the control left where it is because the bank says it does not move, and
+**`BASEVAL`'s `cr` row read out of the grid's own manifest rather than typed**, because every gated
+quantity here is a logarithmic derivative and the base value is its divisor. *Left at the distances'
+point it would have divided the tilt direction by a base `5.2` per cent wrong and the baryon direction
+`3.4` per cent wrong — the two the headline ratio is built from.*
+
+**⛔⛭⛭ And then `Ⓓ①` inverted.** As registered it asserted that the CR banked driving-ON spectrum has
+**no** integer-spaced peak series, so the common-offset statistic could not read it — its gaps missing
+`1` by `0.275` against the grid's `0.105`. *On the arm of record the same spectrum reads `0.103`
+against the grid's own `0.102`: a factor of `1.0`.*
+
+⇒ *** So the obstruction the receipt's title names is the NAMESAKE arm's clause, not this arm's, and
+the step it blocked is now measured: `Δφ = +0.12611`, `Δalt = −0.02201`, against the control's
+same-vintage `+0.12649` and `−0.02469`. Both oppose this arm's own baryon direction (`−0.0287`,
+`+0.0131`) on **both** components — so the orthogonality the whole ask rested on holds **on the arm
+itself** and not only on the control. *** That is `Ⓓ③`, new.
+
+**And what does not change: the ask.** `Ⓔ②` still asks ten runs, not eight — *its justification is
+what moved.* The pair is wanted for **vintage** now (it was run at `L3000`, the grids were not), and
+no longer because the statistic cannot read the banked one. Size unchanged.
+
+**`Ⓐ②`'s third limb went the other way and is stated as the namesake's.** It asserted three things:
+the de-tilt collapses the control violation by ten or more, the de-tilted reading is
+window-independent, and **the raw reading is not** — that last being the evidence that the de-tilt is a
+repair and not a tuning. The first two hold here (a factor of `21`, de-tilted spread `6` per cent).
+The third does not: *this arm's raw reading is already window-independent, at a spread of `1.4` per
+cent against the namesake's `21`.* ⇒ *The de-tilt is still **forced** — `Ⓐ①` fires on this arm too —
+and still removes the violation; what is absent is the drift. So the repair-not-tuning argument is
+marked as resting on the namesake arm, and `Ⓐ②ᵇ` **measures** the absent drift rather than passing
+over it.*
+
+| | namesake arm | arm of record |
+|---|---|---|
+| separation, common offset | `11.3×` | `11.7×` |
+| separation, alternation | `21.4×` | `18.3×` |
+| de-tilt factor on the control violation | `20` | `21` |
+| raw reading's window spread | `21%` | `1.4%` |
+| CR driving-ON gap error vs its grid | `0.275 / 0.105` | `0.103 / 0.102` |
+| CR driving step | *not claimed* | ⛭⛭ `+0.12611 / −0.02201` |
+
+**11 checks, all pass, `exit=0`.** INDEX row, appendices, PDF and HTML regenerated.
+
+## ⛔ ⓷ ONE DEFECT IN MY OWN RE-POINT, CAUGHT BY READING THE OUTPUT AND NOT THE DIFF
+
+The gap table in section D **hard-coded its own four paths**. I re-pointed `_pairs` and the table kept
+reading the namesake's driving pair, so the gap errors it printed were the other arm's *while the
+section above them had moved*. Two lists that have to agree and nothing making them agree. ⇒ *The
+table now takes all four paths **from `_pairs`**, so there is one list.* **A pointer-first re-point
+would have published the namesake's numbers under an arm-of-record heading and passed every gate.**
+
+## ⛭ ⓸ THE FOUR MOVED PINS, PERTURBED — AND THE HELPER NOW CHECKS IT HIT WHAT IT AIMED AT
+
+My standing gap was that a perturbation could redden *something* and be counted. It now requires the
+**targeted** gate to be among the reds.
+
+| perturbation | target | result |
+|---|---|---|
+| the driving pair back to the namesake files | `Ⓓ①` | ⛭ RED, on target |
+| the driving step's sign reversed | `Ⓓ③` | ⛭ RED, on target |
+| the de-tilt taken out of the sweep's de-tilted row | `Ⓐ②` | ⛭ RED, on target |
+| the oneclock grid's CR side back to the namesake directory | `Ⓐ②ᵇ` | ⛔ **red, but NOT on target** |
+
+⌗ *The fourth is a result in its own right rather than a failure: the namesake grid carries **no
+manifest**, so the receipt hit my own refusal — `the arm-of-record grid carries no manifest, so its
+centre cannot be read and no logarithmic derivative below may be normalised` — and asserted nothing.
+**The base value cannot silently come from the wrong grid.** Re-aimed so the sweep alone reads the
+namesake with the base left where it is: `Ⓐ②ᵇ` red, on target.*
+
+## ⛭ ⓹ THE ARM-KEY NAMING RULE, APPLIED — AND HERE IT HAS NOTHING TO LIST, WHICH IS THE LINE
+
+Your ruling was to apply it to each receipt as I re-point it. This one reads **no arm-suffixed keys at
+all**: it separates the arms by *file* and by *directory*, and out of each archive reads only `ls`,
+`Dl`, `l_A` and `manifest`. ⇒ *Stated in the receipt as `ARM KEYS READ: NONE`, with the reason, so a
+reader hunting a hidden `__cr` read is **told** there is none instead of inferring it from silence.
+An absent line and a line saying `none` look the same to a grep only if nobody writes the second one.*
+
+## ⛔ ⓺ ONE FLAG ON ⑹, AND IT IS MINE TO CLEAR UNDER ITEM 2 RATHER THAN YOURS
+
+⑹'s paragraph now carries **two arms in four lines**: `one constant to eight per cent across the
+bands` is my arm-of-record re-derivation, and three lines later `an intercept against a slope worth
+three per cent of it` is `the_term_mix_…`'s namesake figure (`|slope×⟨q²⟩|/|intercept| = 0.031`).
+
+⌗ *Correcting my own earlier note: I wrote that this receipt was in the third bank's released set. It
+is not — it reads `r6959_eta_cr` and `r6941_fine_cr`, neither of which the third bank touched. **Both
+already have `_leafrec1` siblings on disk**, so the receipt is re-pointable now and sits in the
+thirteen I called genuinely available.* ⇒ *So the three per cent moves when I re-point it under item
+2, and I will bring that clause with it in the same pass unless you want it held. Flagged rather than
+left to surface as a mixed-arm paragraph with my name on it.*
+
+## ⇒ ⓻ WHAT I AM ON NEXT
+
+Item 2, re-pointing what the third bank released — `r6893_switch_screen_cr` and `r6925_visleaf_cr`,
+and `r6929_geometry`, which your order does not name but the bank closed. `the_term_mix_…` with them,
+for ⓺. **⑵'s corpus sites stay untouched: you land them all at once.**
+
+## ⛔⛭ ⓼ AND THE PRE-PUSH BATCH FOUND FOUR REDS, ALL MINE, AND THREE OF THEM ONE SENTENCE
+
+`PASS=120 FAIL=4` on `turn_gates.sh`. **Every one traces to ⑷'s landing, and three to the same
+clause** — `whether it is also displaced in it is not settled by this split, because neither channel
+is small`.
+
+| gate | what it said | what it got |
+|---|---|---|
+| `check_open_references` | 2 NEW open-language keys with no baseline row | `REFERENCED`, mechanism `rcpt` |
+| `check_open_ledger` | `3e1dc1846c` is a qualification with NO VERDICT | `DO-NOT-ASSERT`, with the reasoning in its `##` note |
+| `check_open_item_coherence` | 1 candidate the census has not read | a `LIMIT` row in `items_keyed.tsv` |
+| `check_explainer_pins` | `acoustic-run` `MOVED` on `sec:refit-bound` | ⛭ routed to `FOR_69.md` and restamped, per the gate's own notice |
+
+⛭⛭ **And the finding inside it is worth more than the repair: the paragraph has been carrying an
+UNREGISTERED decline.** *The old wording said the same thing — `what the split does not settle is the
+share` — and that phrasing is **not in the open-language vocabulary**, so no register held it. My
+rewording used `is not settled`, which is, and all three nets fired at once.* ⇒ *** So the honest
+reading is not "my sentence minted three register rows"; it is that **the limit was always there and
+the net could not see it**, and the paragraph now carries a verdict where it carried none. ***
+
+⌗ *I considered rewording to dodge the three gates and did not: a wording chosen to stay out of the
+net is exactly what the net exists to catch, and the sentence is a real stated limit.*
+
+⛔ *The explainer pin is the one I did NOT repair. `EXPLAINER.md` is under your rewrite and the gate
+forbids repairing in place, so it is a `FOR_69.md` note plus a restamp, with the restamp declared so
+the reread stays yours. **And the note says what I actually think moved:** `a difference of contrast,
+not of phase` is still true of the peak positions, but it now reads as the apportionment the paper has
+stopped claiming, and one clause would separate the two.*
+
+**Re-run: `PASS=123 FAIL=0 UNRUN=0`, `exit=0`.** ⌗ *And the roster is 123 where the red run's
+was 124, which I checked rather than waved past: `check_compile` is in `HEAVY_PUSHED` and the
+lean batch asks it only while a `corpus/*.tex` file is dirty against `HEAD` or `@{u}`. On the
+red run `CR_cosmology.tex` was uncommitted, so it ran — and passed, on exactly the ⑷/⑹ text
+and the regenerated appendices; on the green run everything was committed and pushed, so it
+dropped out by its own rule. **Designed behaviour, and the gate was asked on the content that
+needed it.** The push asks it again in CI either way.*
+
+## ⛔⛭ ⓽ AND CI CAUGHT ONE MORE, WHICH THE LEAN BATCH CANNOT ASK
+
+`fast — registers, views, IDs` went red on `28de2e5c4`: **`check_marker_transposition`**, one of the
+twelve the lean batch leaves to the push. ⌗ *It is also on the known list of gates that read red
+locally and green in CI on a shallow clone — so I ran it rather than assuming either way, and it is
+red here too and the finding is real and mine.*
+
+**What it said:** `CR_cosmology.tex:2178` prints `0.0247` and `0.126` beside a receipt group that no
+longer carries them.
+
+**What it is:** *the `.40` re-point rewrote that receipt's docstring from three and four figures to
+five.* `+0.12649` and `-0.02469` round to exactly the paper's `0.126` and `0.0247` — **the token match
+broke and the quantity did not**, and the control does not move with the arm of record, which the bank
+states and the receipt measures. ⇒ *Adjudicated as `not a transposition -- the own group carries the
+UNROUNDED value and the paper rounds`, which is an existing verdict in that baseline with a precedent
+at `r7109`, and the read is written into the row.*
+
+⛭⛭ **And the gate earned its keep twice over, because it sent me to read a passage I would not have
+opened.** `2178` says *"the arm's own driving signature is read on it rather than borrowed"* — a
+promise, on an arm where no CR driving number could be taken. ⇒ *On the arm of record it CAN: the step
+is `+0.12611` / `−0.02201`, the control's is `+0.12649` / `−0.02469`, and the two agree to `0.3` per
+cent on the common offset. Routed to `FOR_69.md` as something ⑵'s landing can now say, with the note
+that the same passage's `11.3` / `21.4` are the namesake arm's and that I have not touched it.*
+
+---
+
+# `r7643+cc66.54` — the locator receipt on the arm of record, and ⛭⛭ **the second peak's grid reading was never a measurement either**
+
+Item 2, second receipt. `the_locator_is_good_to_three_hundredths_…` re-pointed: the CR side of all
+five banks it reads moves to its `_leafrec1` sibling, the control's does not.
+
+## ⛭ ⓵ THE CONCLUSION HOLDS, AND THE CONTROL SIDE IS AN ARITHMETIC IDENTITY RATHER THAN AN ASSURANCE
+
+The stopping rule still misses by a factor of four hundred: the coarse locator recovers the fine-grid
+position to `0.0034/0.0078/0.0206/0.0175` of a multipole on the arm — **two hundredths at `l_4`
+against a bar of ten**. And the control's numbers come back *bit for bit*: errors
+`0.0007/0.0126/0.0283/0.0176`, window spreads `0.106/2.975/4.971/6.492`, sky residual
+`−0.049/−1.409/−2.969/+5.324`. ⇒ *So `the control does not move` is checked here inside a receipt that
+reads both arms, instead of being taken from the bank's manifest.*
+
+## ⛭⛭ ⓶ AND THE FINDING: `l_2`'s RAW GRID READING IS THE TIGHTER COIN FLIP OF THE TWO
+
+The arm of record's raw `LSTEP=8` reading at `l_2` is **`532` where the namesake's was `540`** — a
+whole bin, eight multipoles, and the largest single change the re-point produces anywhere in this
+receipt. **Read as a peak moving it would be a finding. It is not one.**
+
+| | `l_2` | `l_3` |
+|---|---|---|
+| bracketing bins differ by, namesake arm | `0.008%` | `0.041%` |
+| bracketing bins differ by, arm of record | `0.011%` | `0.066%` |
+| raw reading, namesake → arm of record | `540 → 532` | `812 → 812` |
+| **sub-bin apex**, namesake → arm of record | `536.11 → 535.85` | `815.40 → 815.03` |
+
+⇒ *** `l_2`'s two bracketing bins tie MORE tightly than `l_3`'s, on both arms — and this receipt was
+already built around the `l_3` tie being a coin flip. So the raw grid was never a measurement at `l_2`
+either, and the eight-multipole jump is the same coin landing the other way while the apex moves a
+quarter of a multipole. *** **Gated, not narrated:** the new check asserts `l_2`'s tie is tighter than
+`l_3`'s, that the raw reading is one of the two bins, and that the apex stays within half a multipole
+of the namesake's.
+
+## ⛭ ⓷ WHAT MOVED, RESTATED
+
+Sub-bin quartet `222.047/535.846/815.027/1129.742`; residual `+1.647/−1.854/−2.273/+5.842` — *peak
+four is `5.8` out rather than the order's `10.1`, and peaks two and three are each about **two** low
+rather than `1.7`*. The control now carries **ninety-one** per cent of the fourth peak's residual
+(was four fifths), so what is the construction's is `+1.696/−0.445/+0.696/+0.518` — still a
+near-constant one multipole at all four peaks, still the constant-`dl` shape, still fitting half again
+better than the ruler (`rms 0.760` against `1.192`).
+
+## ⛭⛭ ⓸ AND FIFTY-TWO PINS, BECAUSE THIRTY-NINE OF THIS ROW'S FIGURES WERE HELD BY NOTHING
+
+`figure_pin_baseline.tsv` carried **39** figures for this receipt as UNPINNED, and the re-point moved
+most of them. ⇒ *Every COMPUTED figure the row prints is now an explicit two-sided comparison against
+the literal the row prints — 52 of them, each tolerance inside the gate's own allowance — and the
+baseline shrinks by 36, all of them this receipt's, with no additions.* ⌗ *The three that stay are the
+figures this receipt TAKES AS GIVEN: `PO-47`'s `1121.9 ± 2.36` and its `0.83σ`, and the order's
+`10.1`. **A pin on a borrowed number would be a false assurance**, so they stay baselined.*
+
+⌗ *One slip caught by the pins themselves: I wrote `1.646` for a residual whose value is `1.64655`,
+which rounds to `1.647`. 51 of 52 held and the block named the one that did not.*
+
+## ⛭ ⓹ FOUR PERTURBATIONS, EACH RED ON ITS OWN GATE
+
+| perturbation | target | result |
+|---|---|---|
+| the fine CR reference back to the namesake | the 52-pin block | ⛭ RED, on target |
+| `l_2`'s bracketing pair taken as `532/548` | the new `l_2` gate | ⛭ RED, on target |
+| the sky's fourth peak moved two multipoles | the quartet gate | ⛭ RED, on target |
+| the window sweep collapsed to one width | the window-bias gate | ⛭ RED, on target |
+
+⌗ *Two needed re-aiming first: one patch did not apply (the `SKY` literal is a `np.array`, not a
+tuple) and one crashed on an array length instead of failing a gate. **Both printed something other
+than a gate verdict, which is why the helper requires the target gate to be among the reds.***
+
+---
+
+# `r7643+cc66.55` — ⛔ **three transposition flags: one real, two of my own making, and one of those I created while removing it**
+
+`check_marker_transposition` went red again after `.54` with three NEW flags. ⌗ *The lean batch was
+`PASS=124 FAIL=0` and the other seven push-only gates green, so this gate is now two for two on
+catching what the lean set cannot ask.*
+
+| flag | what it was |
+|---|---|
+| `1047 1.07`, carrier the symmetry receipt | ⛔ **mine**: `.52`'s comment wrote `~1.07` for the fixed-q bands |
+| `957 1.70`, carrier the locator receipt | ⛔ **mine**: `.54`'s docstring printed the quartet at two decimals |
+| `1041 1.07`, carrier `the_model_difference_…` | ⛭ **real**, and the gate found it the useful way |
+
+**The two of mine are digit coincidences I introduced.** A paper sentence ninety lines away prints
+`$1.70$`, `$2.22$`, `$4.23$` and `$9.29$` per bin for a different comparison; the moment my docstring
+spelled `+1.70`, the gate had a carrier inside its window and fired. ⇒ *Removed by spelling my own
+figures at three decimals and the band ratio in words — **not** by adjudicating, because a
+coincidence I can simply not write is not worth a baseline row.*
+
+⛔ ***And I re-created one of them in the sentence explaining its removal.*** *The note I wrote said
+"at two, `+1.70` is a token that…" — which puts `+1.70` back in the file. The gate fired again on the
+same flag, from the comment about the flag. Rewritten without the literal, and the note now records
+that it happened, because a fix whose own explanation undoes it is worth one line.*
+
+## ⛭ THE REAL ONE, AND WHY IT IS ROUTED RATHER THAN ADJUDICATED
+
+`CR_cosmology.tex:1041` prints the arm-minus-control quartet `$+1.61/-0.19/+1.07/+1.31$` and cites the
+locator receipt, which computed exactly those **on the namesake arm**. Re-pointed, the quartet is
+`$+1.696/-0.445/+0.696/+0.518$`. ⇒ *** So the flag is not a marker in the wrong place: it is the paper
+holding one arm's numbers while the receipt it cites holds another's — which is precisely what a
+re-point is supposed to surface, and the first time this gate has told me something about the PAPER
+rather than about my own prose. ***
+
+⌗ *The sentence's claim survives — still one near-constant multipole at all four peaks, still the
+constant-`dl` shape — and its four numbers do not. The next sentence's "the control carries four
+fifths of the offset" is ninety-one per cent on the arm of record.*
+
+⇒ *Both sites are in `sec:refit-bound` and inside node 69's ⑵ landing, so **I have not touched
+either**. The gate is kept green the way its own header provides for: the flag is recorded as a
+`TRANSPOSITION candidate`, which is the class that **leaves the baseline when the landing happens**,
+with the read written out and both sites routed to `FOR_69.md`.*
+
+---
+
+# `r7643+cc66.56` — ⛔ **I corrected a claim of mine with a test that had the same defect, and the instrument had been right all along**
+
+Preparing `the_combs_resolution_…` I checked whether the two `noop` banks block it, with a one-line
+`'__cr' in k` test. **That test is wrong, and so was the claim I pushed on the strength of it.**
+
+## ⛔ ⓵ THE DEFECT: AN ARM-KEY TEST THAT MISSES MOST ARM KEYS
+
+| key | `'__cr' in k` | `(^\|_)cr($\|_)` |
+|---|---|---|
+| `Dl__unset_cr` | **False** | True |
+| `Dl__zero_cr` | **False** | True |
+| `Dl__noop_cr` | **False** | True |
+| `Dl__comb_cr_f0` | **False** | True |
+| `Dl__inj_cr_f1` | **False** | True |
+| `rD__cr` | True | True |
+| `eta_ls__cr_0` | True | True |
+| `Dl__combvl` | False | False *(the negative control)* |
+
+**Five of the eight sampled arm keys are invisible to the substring form** — every one whose arm tag
+sits after another token.
+
+## ⛔⛭ ⓶ WHAT I GOT WRONG, AND WHAT I DID NOT
+
+At `cc66.53` I wrote that `r6929_noop` and `r6925_noop` *"carry no `__cr` keys at all, so they never
+blocked"*, and concluded `the_combs_resolution_…` was fully re-pointable. ⇒ **Both false. They carry
+`Dl__zero_cr`, `Dl__unset_cr` and `Dl__noop_cr`, and that receipt is BLOCKED on them.**
+
+⛭⛭ *** And here is the part worth more than the fix: `which_key_gaps_actually_block.py` ALREADY SAID
+SO. *** *Both banks are in its `GAPS_ALL`, and it has scored `the_combs_resolution_…` as
+`BLOCKED: r6925_noop, r6929_noop [literal]` since `cc66.46`.* ⇒ *I built an instrument to answer
+exactly this question, then answered it at the terminal with a one-liner that had the defect the
+instrument was built to avoid, and **believed the one-liner over the instrument.***
+
+## ⛭ ⓷ AND THE VERDICTS DO NOT MOVE — WHICH I MEASURED RATHER THAN HOPED
+
+Both instruments' key filters are now boundary-anchored, in `which_key_gaps_actually_block.py` and in
+the copy that `item_two_inventory_partitions_the_44.py` carries. **Run before and after, the
+membership is byte-identical** — `11` of the `44`, `5` BLOCKED, `3` DECLARED, `3` CLEAR, every row the
+same — and the inventory's whole output is unchanged. ⇒ *The reason is measurable: the only key gap
+with a sibling is `r6929_geometry`, whose keys are all of the `X__cr` shape, so **the defect was
+LATENT and not live.** It would have gone live the moment 70 banked a sibling for `r6925_noop` or any
+bank with `X__<tag>_cr` keys — which is on the ask list.* ⌗ *Stated as a latent defect rather than
+dressed up as a correction of results, because no result moved.*
+
+## ⛔ ⓸ AND THE WIDENING ITSELF CREATED A FALSE ALARM, ON ITS FIRST RUN
+
+The `CLEAR` verdicts carry a second check: no receipt scored clear may contain an arm key in its
+code. I pointed the new boundary regex at the whole source — and it scored **2 of 3** clear receipts
+as carrying one. *None of them reads an arm key.* ⇒ *** `(^|_)cr($|_)` over whole source matches the
+BANK NAMES and arm labels a receipt is full of — `r6893_switch_screen_cr`, `cc66_cr_x_h686_pol`,
+`F['cr']`. **A looser test is not a safer test.** *** *Fixed by extracting key-shaped literals first
+and matching those; the receipts score clear again, and the episode is written into the file beside
+the regex.*
+
+## ⛭ ⓹ PINNED AND PERTURBED
+
+The difference between the two forms is now a gate — five of eight sampled keys invisible to the
+substring form, both negative controls rejected — so the narrow form cannot come back silently.
+
+| perturbation | target | result |
+|---|---|---|
+| the regex reverted to `__cr` | the detector gate | ⛭ RED, on target |
+| the regex loosened to bare `cr` | the detector gate | ⛭ RED, on target |
+| the `CLEAR` cross-check back to whole-source | the `CLEAR` second check | ⛭ RED, on target |
+
+⌗ *And one more of my own: the perturbation helper reported all three as `RED, NOT ON TARGET` on its
+first run, because this instrument prints `[FAIL] <label>` where the receipts print `- <label>` and my
+extractor only knew the second form. **A helper that cannot read the output is indistinguishable from
+a perturbation that missed**, which is the fourth time this session a tool of mine has produced
+something other than a verdict and had to be re-aimed.*
+
+## ⇒ ⓺ CONSEQUENCE FOR ITEM 2
+
+`the_combs_resolution_is_four_multipoles_…` is **not** fully re-pointable: `r6929_noop` and
+`r6925_noop` have no arm-of-record sibling, and it reads `Dl__zero_cr` / `Dl__unset_cr` /
+`Dl__noop_cr` out of them. ⇒ *It joins `the_visibilitys_clock_…` as a PARTIAL re-point with a
+declaration. **A new bank ask, priced: siblings for `r6929_noop` and `r6925_noop`** — and the keys
+those receipts read from them are switch-identity checks, so what the siblings would settle is whether
+the identity still holds on the arm of record.*
+
+---
+
+# `r7643+cc66.57` — the monopole receipt's stale declaration repaired, and ⛭⛭ **the third bank settles WHICH bank blocks the leg**
+
+`the_monopole_zero_point_…` carried a line of mine that the third bank has falsified: *"⒞
+`r6893_switch_screen_cr.npz` — the default screen. **No `_leafrec1` sibling.** NAMESAKE."* The sibling
+is banked. ⌗ *That is the third fail-on-success statement of mine this bank has fired, after the two
+at `cc66.48`.*
+
+## ⛭⛭ ⓵ BUT THE SIBLING DOES NOT RELEASE THE LEG, AND NOW THAT IS MEASURED RATHER THAN PRESUMED
+
+The identity it enters — `ZPSAVE` is additive — pairs **`r6897_noop`'s `Dl__cr`** against
+**`r6893_switch_screen_cr`'s `Dl__base`**, and needs both on one arm. `r6897_noop` still has no
+arm-of-record key. ⇒ *So the pair cannot move, and re-pointing the screen alone would turn the
+identity into a **cross-arm comparison** — the licence defect `r7639+cc66.15` named, whichever way it
+came out.*
+
+| | max `|dD_l|` |
+|---|---|
+| screen base, namesake against arm of record | `0.0251` |
+| `r6897_noop`'s `Dl__cr` against the **namesake** base | `0.0000` exactly |
+| `r6897_noop`'s `Dl__cr` against the **arm-of-record** base | `0.0251` |
+
+⇒ *** The noop bank's arm key matches the namesake base bit for bit and misses the arm-of-record base
+by *precisely* the amount the two bases differ. So `r6897_noop` is a namesake-arm run, and the
+blocking ask on this leg is **`r6897_noop` alone** — the screen is not what blocks it. *** ⌗ *Before
+the third bank that was a presumption; the sibling makes it a measurement, which is the second thing
+a bank buys after the re-point itself.*
+
+## ⛭ ⓶ WHAT CHANGED IN THE RECEIPT
+
+The declaration's ⒞ now says the sibling is banked and is blocked by its **partner** rather than by
+itself; `_NAMESAKE_LEGS` names the pairing instead of a missing file; the measurement above is a new
+gate. ⛔ *The identity itself is left reading the namesake pair on both arms, unchanged — because
+moving one side is the defect, not the repair.*
+
+| perturbation | target | result |
+|---|---|---|
+| the arm-of-record screen replaced by the namesake | the blocker gate | ⛭ RED, on target |
+| the noop compared on the control key instead of the arm's | the blocker gate | ⛭ RED, on target |
+
+## ⇒ ⓷ THE BANK ASKS, RE-PRICED AFTER THIS AND `cc66.56`
+
+| ask | what it releases |
+|---|---|
+| **`r6897_noop`** arm-of-record key | ⛭ the `ZPSAVE` identity leg in `the_monopole_zero_point_…`, now shown to be the only thing holding it |
+| **`r6929_noop` + `r6925_noop`** siblings | ⛭ `the_combs_resolution_…`'s switch-identity checks — whether the identities still hold on the arm of record |
+| **`r6925_geometry`** arm-of-record keys | ⛭ `the_visibilitys_clock_…`, which reads `eta_ls__cr_*`, `fwhm__cr_*`, `rD__cr_*`, `cs__cr_*` out of it |
+| **`r6897_fields`** arm-of-record key | the loading-field legs in four receipts, unchanged from `cc66.47` |
+
+⌗ *Each of the first three is sharper than it was an hour ago: the noop asks are now named as the
+blockers rather than inferred, and `r6925_geometry`'s is named by the four key families the receipt
+actually reads.*
+
+---
+
+# `r7643+cc66.58` — ⛔⛭⛭ **the same blind spot again, in the mechanism built to catch what literals miss — and this time it MOVED VERDICTS**
+
+`cc66.56` widened this file's arm-key test and found the defect latent. **Looking at the receipts
+rather than at the instrument's verdict found a second one of the same family in the same file, and it
+is not latent.**
+
+## ⛔ ⓵ THE TEMPLATE TEST REQUIRED THE PLACEHOLDER TO FOLLOW `__` IMMEDIATELY
+
+| indexed key string | the `__{` form | carries `__` and `{` |
+|---|---|---|
+| `{n}__{t}` | True | True |
+| `Dl__noop_{t}` | **False** | True |
+| `Dl__xsonly_{t}` | **False** | True |
+| `ls__noop_{t}` | **False** | True |
+| `Dl__base` | False | False *(control)* |
+| `{t}` | False | False *(control)* |
+
+⇒ *** Three of four sampled templates invisible — and they are the ones two receipts use to read
+`r6911_noop` and `r6915_noop`'s cr side, undeclared, from banks with no sibling. ***
+
+## ⛔⛭ ⓶ THE PARTITION I HAVE BEEN REPORTING SINCE `cc66.46` IS WRONG
+
+| | reported | measured |
+|---|---|---|
+| readers of a key-gap bank | 11 | **11** |
+| BLOCKED | 5 | ⛔ **7** |
+| DECLARED | 3 | 3 |
+| CLEAR | 3 | ⛔ **1** |
+| by the `{geometry,noop}` family / needing more | 3 / 4 *(guessed)* | ⛔ **5 / 2** |
+| inventory's NO-BANK-GAP bucket | 16 | ⛔ **14** |
+| of which genuinely available | 11 | ⛔ **9** |
+
+**`the_acoustic_contrast_…`** (`r6911_noop`) and **`the_cross_term_…`** (`r6915_noop`) move CLEAR →
+BLOCKED. ⌗ *And `7 / 3 / 3 of 13` before the bank was measured the same way, so it is not a baseline
+either. The only receipt still genuinely CLEAR is `the_step_is_the_excesss_own_…`.*
+
+⛔ **The `CLEAR` verdicts' own second check used the same narrow rule.** *A second way built from the
+first way's regex family is not an independent read, and that is why it passed for twelve revisions.*
+
+## ⛔⛭⛭ ⓷ AND FOUR MORE OF MY OWN, EACH FOUND BY A PERTURBATION RATHER THAN BY READING
+
+| what the perturbation showed | the repair |
+|---|---|
+| **the rule was implemented TWICE** — in the verdict loop and in `_tmplkeys_in` — so reverting the verdict path left the detector gate GREEN and only the counts moved | both now call one `_is_keytmpl` |
+| **loosening the rule to "any placeholder" was GREEN** — the gate's negative controls were constants the loosening could not touch | controls the loosened rule WOULD take: `z[f'{t}']` must read as no key template |
+| **reverting the bank-presence test was GREEN** — `g in src` is satisfied by `g + '_leafrec1'`, latent today, live the moment a gap gets a sibling and a reader moves onto it | boundary-anchored, and pinned SYNTHETICALLY because a latent defect with no gate is the one that comes back |
+| I **guessed** `3 / 4` for the family split and it is `5 / 2` | read the run; it is the third time this file records that error and the second on itself |
+
+⇒ *** A gate that pins a COPY of the rule does not pin the rule, and a negative control that cannot
+move is not a control. Both of those were in gates I wrote an hour ago to stop exactly this class of
+thing. *** All four perturbations now redden their own target.
+
+## ⛔ ⓸ A FOURTH FAIL-ON-SUCCESS OF MINE, AND THE ONLY ONE THAT WENT UNREAD
+
+`cc66_46_blockers_after_the_second_bank.py` asserted *"`r6929_geometry` has no arm-of-record sibling
+file"* — and has been **red since the third bank landed**, unnoticed. ⌗ *`cc66.48` re-ran the two
+instruments from `cc66.46`–`.47` against that bank and not this third one.* ⇒ *** An instrument under
+`computations/` is in no gate's reader set, which is exactly how a fail-on-success statement survives
+being falsified. *** *Restated to keep what the gate was for — the keys-not-files distinction — and to
+read the closure the way the sibling actually supplies it.*
+
+## ⇒ ⓹ THE BANK ASKS, AND WHAT ITEM 2 ACTUALLY HAS LEFT
+
+| ask | releases |
+|---|---|
+| **`r6911_noop`** | ⛭ `the_acoustic_contrast_…` (new to this list) |
+| **`r6915_noop`** | ⛭ `the_cross_term_…` (new to this list) |
+| **`r6897_noop`** | the `ZPSAVE` identity leg, `cc66.57`'s measurement |
+| **`r6929_noop` + `r6925_noop`** | `the_combs_resolution_…`'s switch identities |
+| **`r6925_geometry`** | `the_visibilitys_clock_…` |
+| **`r6897_fields`** | the loading-field legs in four receipts |
+| **`r6893_slice_check`**, **`r6919_geometry`**, **`r6919_noop`** | the remaining blocked readers |
+
+⛔ *So the two receipts I called "clean re-points, next up" an hour ago are partials with declarations,
+and the nine-receipt set I said the third bank released is **two** fully re-pointable receipts plus
+partials.* ⌗ *The `noop` family is now the single largest ask: five banks, six readers, and every one
+of them an instrument-identity check — so what the siblings buy is whether the switch identities still
+hold on the arm of record, which is a different question from any figure moving.*
+
+---
+
+# `r7643+cc66.59` — the term-mix receipt re-pointed, and ⛔⛔ **it finds that a clause I landed in the paper at ⑹ is wrong and that my figures for it do not reproduce**
+
+Item 2. `the_term_mix_…` was the one remaining fully re-pointable receipt in the set: `r6959_eta_cr`
+and `r6941_fine_cr` to their siblings, the control banks staying put.
+
+## ⛔⛔ ⓵ THE WORST THING I HAVE FOUND TODAY, AND IT IS MINE
+
+⑹'s second clause, in the paper at `l.1212` on my proposal and your ruling: *"it over-delivers the
+whole excess by up to twice and falls a hair short of it in the top band"*.
+
+| | per band | mean |
+|---|---|---|
+| namesake arm | `2.77 1.90 1.50 1.35 1.21 1.10 1.20` | `1.58×` |
+| arm of record | `3.20 1.33 2.09 0.95 0.90 5.14 0.56` | `2.02×` |
+| **what I reported** | `2.02 1.83 1.28 1.28 1.16 0.99` | — |
+
+⇒ *** **Six** values where the receipt computes **seven**; minimum `0.99` where it computes `0.56`;
+maximum `2.02` where it computes `5.14`. I cannot reproduce my own list from the receipt the sentence
+cites, on either arm — and `2.02` is this arm's MEAN, not its first band. *** *So "up to twice" was a
+mean read as a maximum, and "a hair short in the top band" was a `0.99` that is not in this
+computation.* **Routed to 69 with a proposed replacement; the paper is not touched.**
+
+⌗ *And the OTHER flag I raised at `cc66.49` ⓺ was also false. `an intercept against a slope worth
+three per cent of it` reads `0.031` on BOTH arms -- measured by running the receipt each way, not
+argued -- because it is built from `r6975_mix{,b}_lcdm` against the control's own band std and the arm
+never enters. ⇒ **I flagged a mixed-arm paragraph that was not mixed, and missed a clause in the same
+paragraph that was wrong.***
+
+## ⛭⛭ ⓶ AND THE PER-BAND RATIO IS THE SAME FRAGILITY CLASS AS `cc66.52`'s
+
+`OVER = (RM-1)/(MEAS-1)` divides two small differences band by band. This arm's own per-band excess
+passes near zero in one band (`0.0141` against the term mix's `0.072`) and runs large in another
+(`0.162`). ⇒ *** A ratio of two near-zero quantities, exactly as the fixed-q variance split was —
+**the second time today the re-point has exposed a per-band ratio that the namesake arm happened to
+keep tame.** *** *The BAND MEAN survives and is what the gate reads: `8.32` per cent imposed against a
+measured `7.15`, over-delivering by about a sixth where the namesake gave about two fifths. The
+per-band table stays printed, and its fragility is itself gated.*
+
+## ⛭ ⓷ THREE NAMESAKE CONDITIONS RE-POINTED RATHER THAN RELAXED, AND ONE TOLERANCE RETIRED
+
+| condition | what happened |
+|---|---|
+| the seven band ratios, pinned to `cc66.46`'s | re-pinned to this arm's; `cc66.46`'s quoted beside them as that arm's |
+| `one constant` to **five** per cent | the spread is `8.3` here, so it is **pinned two-sided at 8.3** and the claim is carried by the ABSENCE of a q-trend, not by tightness |
+| `within fifteen per cent of the symmetric baseline, confirming cc66.46's split` | ⛔ **retired**: it reads `18`, AND `cc66.52` showed that split to be the fixed-q form. *A tolerance whose reference has been superseded is not re-fitted* |
+
+⇒ *** None of the three was widened to admit its own failure. The one that could not be re-pinned was
+retired in favour of the ORDERING the argument actually uses — the excess sits on the symmetric side
+of the baseline, not the trough side where the remainder it was to be sits. ***
+
+## ⛭ ⓸ AND THE TWO BANK MOVES WERE ISOLATED, BECAUSE ONE OF THEM SETS THE BANDS
+
+`QE = A['cr']['q_edges']` — the band edges come from the eta bank, so "which bank moved what" was not
+safe to infer. ⇒ *Measured by running both one-bank variants: `r6959_eta_cr` alone reproduces every
+figure to the printed digit (its `q_edges` are identical to the namesake's), and `r6941_fine_cr` alone
+reproduces the full re-point. **The whole change is the fine reference's.***
+
+| perturbation | target | result |
+|---|---|---|
+| the fine CR bank back to the namesake | the band-mean gate | ⛭ RED, on target |
+| the band mean replaced by the mean of per-band ratios | the band-mean gate | ⛭ RED, on target |
+| the spread pin moved to the namesake's `4.3` | the spread pin | ⛭ RED, on target |
+| the anchored ordering inverted | the ordering gate | ⛭ RED, on target |
+
+## ⇒ ⓹ WHERE ITEM 2 STANDS
+
+**Fully re-pointed: three** — `the_contrast_excess_…` (`.52`), `the_locator_…` (`.54`),
+`the_term_mix_…` (here). **Partly: one** — `the_monopole_zero_point_…` (`.57`), with its blocker named
+by measurement. **The other seven are bank-blocked**, and the asks are as `cc66.58` prices them.
+⌗ *So what the third bank actually released is three receipts, not nine — and the two re-points that
+looked mechanical each found a statistic that does not survive the move.*
+
+---
+
+# `r7643+cc66.60` — ⛭⛭⛭ **ONE NUMBER EXPLAINS EVERY FRAGILITY THIS RE-POINT HAS FOUND, AND IT PREDICTS THE REST**
+
+I started the fourth receipt, hit nine reds at once, and stopped to ask what they had in common. They
+have a single cause, and it is measurable in one line.
+
+## ⛭⛭⛭ ⓵ THE ARM-TO-CONTROL ACOUSTIC-SCALE OFFSET IS FIVE AND A HALF TIMES LARGER ON THE ARM OF RECORD
+
+| bank family | control `l_A` | arm `l_A` | offset |
+|---|---|---|---|
+| namesake, `verify` / `fine` / `source` | `301.543` | `301.799` | **`+0.085%`** |
+| arm of record, same three | `301.543` | `302.943` | **`+0.464%`** |
+
+*Identical in all three families, so it is the arm's and not one bank's.* ⇒ *** **A factor of 5.5.**
+The namesake arm sat almost on top of the control's comb; the arm of record does not. ***
+
+## ⛭⛭ ⓶ AND THAT IS THE COMMON CAUSE OF EVERY FRAGILITY FOUND TODAY
+
+| found at | the statistic | why `0.464%` breaks it |
+|---|---|---|
+| `cc66.52` | the fixed-`$q$` variance split | compares the two arms over the same band, so it needs the combs phase-matched; at `0.464%` they drift a fiftieth of a period by `q~5` and lopsided bands become ratios of slivers |
+| `cc66.54` | the raw `LSTEP=8` reading at `l_2` | the bracketing bins tie to `0.011%`, so a `0.464%` shift lands the coin the other way — `540` becomes `532` while the apex moves a quarter of a multipole |
+| `cc66.59` | the per-band over-delivery ratio | the arm's per-band excess scatters more, passes near zero in one band, and a ratio of two small differences swings `0.56` to `5.14` |
+| **`cc66.60`, here** | the four-rung ladder's distance and period gates | nine of them assume *"the two arms' acoustic angles agree"*, with tolerances set where they agreed to `0.085%` |
+
+⇒ *** So these were not four coincidences and not four defects. **They are one fact about the arm
+meeting four statistics that were calibrated, without saying so, on an arm whose comb nearly
+coincided with the control's.** *** ⌗ *Three of the four were repaired by re-anchoring the statistic on
+each arm's OWN `l_A` -- the lobe split, the sub-bin apex, the band mean. That is the general form of
+the repair, and it was found three times before it was named once.*
+
+## ⇒ ⓷ WHAT IT PREDICTS, WHICH IS THE POINT OF NAMING IT
+
+**Any statistic that compares arm against control at fixed `$q$` or fixed `$\ell$` without
+re-anchoring on each arm's own `l_A` will move on this re-point, and the ones with a tolerance set on
+the namesake arm will fail it.** *That is a testable class, not an intuition: it is the reason to read
+a re-pointed receipt's reds as a form before reading them as findings, and it tells me what to look for
+first in each remaining receipt rather than discovering it nine gates at a time.*
+
+## ⛔ ⓸ AND WHAT I DID WITH THE RECEIPT THAT FOUND IT
+
+`the_acoustic_contrast_…`'s physics side re-points cleanly -- source, kcont and verify all have
+siblings -- and its `SRCSAVE`-is-inert identity cannot, pairing `r6911_noop` against
+`r6893_switch_screen_{t}` exactly as `cc66.57`'s did. ⛔ *But the nine reds are its four-rung ladder,
+and that is a re-derivation rather than a re-point: the distances, both acoustic periods, the
+resampling control, the source-ratio direction, the eta-integration step and the gap-is-not-a-
+definition sweep all read arm against control at fixed abscissa.*
+
+⇒ *** **I reverted it rather than leave it re-pointed and red, or re-pin nine tolerances in one pass
+without reading each.** *** *The file is back to its namesake state and green; nothing is half-moved.
+It is the next piece of ordered work, and its cost is now known: nine gates, each of which has to be
+read for whether the `0.464%` moved the STATISTIC or the FINDING -- which is the distinction the three
+repairs above turned on, and getting it wrong in either direction is how a re-point publishes the
+wrong thing.*
+
+---
+
+# `r7643+cc66.61` — `the_acoustic_contrast_…` re-pointed: ⛭⛭ **nine namesake conditions, and the two that looked like findings are one window**
+
+The receipt `cc66.60` costed. Physics side on the arm of record (`r6911_source_cr`,
+`r6911_source_cr_kcont`, `cc66_r185_verify_cr`); the `SRCSAVE`-is-inert identity stays on the namesake
+pair, declared, because `r6911_noop` has no arm-of-record key.
+
+## ⛭ ⓵ SEVEN TOLERANCES WERE THE NAMESAKE ARM'S, AND `cc66.60`'s NUMBER IS WHY
+
+| | namesake | arm of record |
+|---|---|---|
+| comoving distances | `+0.449%` | `+1.287%` *(arm still the LARGER, against the order's `−6.2`)* |
+| acoustic angles agree to | `0.085%` | `0.464%` |
+| period, both source rungs | `0.9978 / 0.9973` | `0.9941 / 0.9935` |
+| resampling round trip | `0.99965` | `0.99190` |
+| `eta`-integration step | `−0.37%` | `−1.39%` |
+
+*Each re-pinned at what is measured here or restated; **none widened to admit its own failure.*** ⌗ *The
+resampling bound is the one worth naming: the round trip through the OTHER arm's abscissa is exact to
+the extent the two abscissae coincide, so **its error is bounded by the comb offset itself** rather
+than independent of it. That is the bound's own justification, not a number fitted to the failure.*
+
+## ⛭⛭ ⓶ AND THE TWO THAT LOOKED LIKE FINDINGS ARE THE SAME SINGLE WINDOW
+
+`the source ratio is if anything BELOW one` and `the gap is not a definition` both break here — the
+last-scattering rung reads `1.0112` and the source span reaches `1.0430`, **overlapping the ell band by
+`0.0030`**. ⇒ *** Both are rung 1 at `w=1.00`, whose own window neighbours read `1.0165` and `0.9995`.
+A `4.4` per cent swing between adjacent windows is not what a source excess looks like — and the ELL
+rung's worst swing over the same four windows is `0.34` per cent, **more stable here than on the
+namesake.** ***
+
+| | worst window swing |
+|---|---|
+| ell rung, namesake | `0.0056` |
+| ell rung, arm of record | `0.0034` |
+| source rungs, namesake | `0.0213` |
+| source rungs, arm of record | `0.0527` |
+
+*So the separation is tested on what is stable, the instability is measured rather than averaged away,
+and `BELOW one` is reported as the namesake arm's window-level reading rather than restated.* ⛭ **What
+survives is what the argument rests on: the source rungs sit within about one per cent of unity —
+fifteen of sixteen readings below `1.02` — where the ell rung sits at four.**
+
+⛔ *And the four-for-four passage loses its SIGN but not its conclusion: on the namesake, upstream read
+`0.996`, shallower, "the direction all four channels point". Here the two rungs sit on opposite sides
+of unity. **The dissolution never rested on the sign — it rests on the upstream ratio being small
+either way** — and the docstring now says so instead of carrying the old direction.*
+
+## ⛔ ⓷ TWO OF MY OWN PINS DID NOT HOLD, AND THE PERTURBATION IS WHAT SAID SO
+
+| pin as written | what perturbing it showed |
+|---|---|
+| `_SWING_S > 3 * _SWING_E` | ⛔ loosening the factor to `0.3` left it **GREEN** — the measured ratio is `15.5`, so the threshold had enormous slack |
+| `abs(SRCR - 1) < 0.02` | ⛔ loosening to `0.05` left it **GREEN** — `1.0112` clears both |
+
+⇒ *** **A bound the measurement clears by a wide margin is not a pin.** Third time today. Both are now
+two-sided at the measured values, with `within about one per cent` kept as the CLAIM in the label where
+it belongs. *** ⌗ *And a third: `5e-4` on a figure near one is marginally WIDER than
+`check_figures_pinned`'s own allowance, so four pins read as unpinned until I tightened them to `1e-4`.
+The gate's allowance is the coarser of half a last digit and 0.05 per cent — on `0.9734` that is
+`0.000487`, and `0.0005` does not fit inside it.*
+
+## ⛭ ⓸ AND THE RECEIPT ALREADY ENFORCED THAT THE BANKS MOVE TOGETHER
+
+*Reverting the source banks alone did not redden my target — it reddened `[cr] THE SLICED SOURCE RUN
+REPRODUCES THE BANKED 185-BIN REFIT SPECTRUM`.* ⇒ *** A cross-bank consistency gate that was already
+there, and it makes a half-moved re-point impossible rather than merely detectable. A better answer
+than the one I was looking for. ***
+
+**18 pins, four perturbations on target, `exit=0`.** `figure_pin_baseline.tsv` shrinks by 17 rows
+across two writes, all this receipt's.
+
+## ⇒ ⓹ ITEM 2: FOUR FULLY OR LARGELY RE-POINTED, SIX BANK-BLOCKED
+
+`the_contrast_excess_…` `.52`, `the_locator_…` `.54`, `the_term_mix_…` `.59`, and this one `.61` with
+its identity leg declared — plus `the_monopole_zero_point_…` `.57`. ⌗ *Every one of the four found a
+statistic that does not survive the move, and `cc66.60`'s single number is why all four did.*
+
+---
+
+# `r7643+cc66.62` — `the_cross_term_…` re-pointed, and ⛭ **`cc66.60`'s predictor earned its keep: two reds, both expected**
+
+Sixth receipt. Physics side on the arm of record (`r6915_pairs_cr`, `r6911_source_cr`); the
+`PAIRSAVE`-is-inert identity stays on the namesake pair, declared, because `r6915_noop` has no
+arm-of-record key — the third receipt with that exact shape after `.57` and `.61`.
+
+## ⛭⛭ ⓵ THE PREDICTOR WORKED, WHICH IS THE POINT OF HAVING NAMED IT
+
+`cc66.60` said: look first for statistics comparing arm against control over a fixed abscissa, and
+expect the source rungs to cross unity. ⇒ *** **Two reds, and I knew what both would be before
+reading them.** Nine on the receipt I went into blind at `.60`; two here. ***
+
+| | namesake | arm of record |
+|---|---|---|
+| monopole source → projected | `0.9920 → 1.0343` | `1.0003 → 1.0289` |
+| Doppler | `0.9726 → 1.0988` | `1.0202 → 1.1018` |
+| ISW | `0.9723 → 0.9889` | ⛔ `1.0104 → 0.9939` |
+| polarisation | `0.9904 → 1.0578` | `1.0012 → 1.0539` |
+| the whole source | `0.9923 → 1.0452` | `0.9973 → 1.0415` |
+
+**Fourth receipt in which the `0.464` per cent comb offset carries a source rung across unity.** *The
+whole-source pair is the same quantity `cc66.61` re-pinned, which is the consistency check on all of
+it: `0.9973 → 1.0415` there and here.*
+
+## ⛔ ⓶ AND ONE LIMB GENUINELY MOVES, FOR ONE TERM
+
+`every term's PROJECTED ratio is HIGHER than its source ratio` holds for **three of the four**: the
+ISW falls, `1.0104 → 0.9939`, where on the namesake it rose. ⇒ *** The conclusion never rested on the
+ISW — `no single term can be the channel` rests on the projection raising the LARGE terms, and the
+Doppler still goes `1.0202 → 1.1018`. So the claim is re-stated term by term, with the exception
+named, rather than carried on a universal that is no longer universal. *** ⌗ *And the gate now admits
+exactly one exception and pins the Doppler's floor, so `three of four` is a measurement and not a
+loophole.*
+
+## ⛭ ⓷ THE SECOND RED IS A SIGNIFICANCE, NOT A SIGN
+
+The retained-fraction slope is `+0.02690 ± 0.01226` against the namesake's `+0.01359 ± 0.00202`:
+**twice as steep and six times as scattered**, so `2.2` sigma here against `6.7` there. ⇒ *The bound
+goes `3` sigma → `2`, and **both figures are pinned two-sided so the relaxation cannot hide in the
+margin** — the lesson `cc66.61` paid for twice. What the gate asserts, that the ratio is not flat and
+the order's second branch is excluded, rests on the slope being positive in all twelve settings, which
+it still is.*
+
+## ⛭ ⓸ AND THE RECEIPT CAUGHT THE HALF-MOVE ITSELF, AGAIN
+
+*Reverting the pairs bank alone reddened `[cr] this run's `D_l` is `r6911+cc66.40`'s, so the two
+receipts read one configuration` — a cross-RECEIPT consistency gate, not my target.* ⇒ ** Second time
+in two receipts that the existing machinery makes a half-moved re-point impossible rather than merely
+detectable. ** *That is worth more than the perturbation I was aiming.*
+
+**Nine pins, four perturbations (three on target, one better), `exit=0`.** `figure_pin_baseline.tsv`
+shrinks by seven. ⌗ *Two figures stayed out of the row rather than being pinned or baselined: the
+namesake arm's source range. **This receipt no longer computes them, so a pin would be a false
+assurance and a baseline row would grow the ratchet** — so the contrast is in words and the numbers
+live in the history and in this file.*
+
+## ⇒ ⓹ ITEM 2: SIX RE-POINTED, FOUR BANK-BLOCKED, AND THE THREE NOOP ASKS ARE NOW THE WHOLE REMAINDER
+
+`.52`, `.54`, `.57`, `.59`, `.61`, `.62`. ⌗ *Of the four left, `the_combs_resolution_…` and
+`the_visibilitys_clock_…` have partials available and `a_source_with_no_physics_…` and
+`the_held_period_estimator_…` do not. **Every one of the six so far found a statistic that does not
+survive the move, and one number explains all of them.***
+
+---
+
+# `r7643+cc66.63` — `the_combs_resolution_…` re-pointed, and ⛔⛔ **a tolerance that PASSED is the worst thing in it**
+
+Seventh receipt, and the fullest move yet: six banks go to the arm of record together — the scan,
+its geometry, the endpoint identity, the base identity, the band ratios' arm side and the
+**locator's own validation substrate**. The two no-op legs stay on the namesake arm, declared.
+⌗ *And for the first time the blocked legs do **not** straddle: ⓵ is internal to `r6929_noop` and ⓶
+pairs `r6929_noop` against `r6925_noop`, so both stay wholly on one arm and neither becomes the
+cross-arm comparison `r7639+cc66.15` named. The provenance chain the arm of record needs is intact
+without them — ⓸ and ⓹ are bit-for-bit and to the `KSLICE` sum's rounding on the arm itself.*
+⇒ **44 gates, `exit=0`, eleven perturbations all on target, `figure_pin_baseline.tsv` −13.**
+
+## ⛔⛔ ⓵ THE WORST FINDING: A NAMESAKE TOLERANCE THAT CLEARED ON THIS ARM BY A TWENTIETH OF THE SPAN
+
+The headline gate was `f_sky < -0.1`, set when `f_sky` was **−0.304** on the namesake arm. On the arm
+of record `f_sky` is **−0.1246**. ⇒ *** **It PASSED. By 0.0246.** *** ⌗ *That is worse than failing:
+a bound set on one arm clearing on another by a fortieth of the family is exactly what
+`check_figures_pinned` would have called pinned and a reader would have read as a resolved exclusion,
+and **nothing in the machinery would have said a word**.*
+
+In multipoles the margin halves and more: the sky sits **0.531** multipoles below the arm at f=0,
+against **1.28** on the namesake. The sky's own locating width is one to two multipoles, P15's, taken
+as given. ⇒ *** So on this arm the sky is **less than one locating width** outside the family:
+`lies outside the family` — the receipt's own title clause — is no longer a resolved exclusion. ***
+
+⛭ **What survives with full force is the half that needs no margin**: `l_1/l_A` is monotone in f and
+already above the sky at f=0, so no f>0 is closer, the order's third branch still does not arise,
+and the direction the disagreement would need is still inadmissible. *The claim is restated to say
+the direction and the absence of an interior fit, with the margin named; `f_sky` and the margin are
+both pinned two-sided, and so is the 0.0246 by which the old bound cleared.* ⌗ *And `P1/P2`, the
+second external referent, is the one that did **not** thin: its gap to the sky is `0.0825` at f=0,
+slightly wider than the same gap on the namesake arm rather than narrower. **I first wrote that it
+carries `the wider margin of the two` — that was wrong and I cut it**: `0.0825` in a peak-height
+ratio and `0.00175` in `l_1/l_A` are different units, and without an uncertainty on the sky's
+`P1/P2` neither is a significance. What is said now is only the same-units, arm-to-arm comparison:
+this referent's margin did not move where the other's halved.*
+
+## ⛭⛭⛭ ⓶ AND ONE CLAIM WAS NEVER A LAW: `THE CONTRAST'S ERROR GROWS WITH THE PARAMETER`
+
+This is the best thing in the receipt. The old reading — band residual `0.0089 → 0.0441`, slope s.e.
+`0.00284 → 0.01410`, *a factor five each* — was read as a property of **f**. It is not.
+
+That error is set by the **phase offset between the arm's comb and the control's over the band
+range**, and f enters only through it. So it is **V-shaped in f**, and which side of the vertex the
+family sits on is a property of the **arm**. ⇒ *Measured directly rather than inferred: the mean
+signed offset in q is a straight line in f, and it crosses **zero at f = +0.632 — inside the
+family**. The band residual (`0.04252 → 0.00949 → 0.01538`), the slope's s.e.
+(`0.01358 → 0.00303 → 0.00491`) and the **injection's** residual all bottom out at the same interior
+point and rise again.*
+
+⛭ **And the two arms' lines differ only in intercept** — their slopes agree to under one per cent.
+The namesake's zero sits at f ≈ −0.03, just *outside*, with the whole family on the rising side:
+**that is the five-fold growth the old gate read as a law.** The intercept difference is −0.0143 in
+q, of which the arm of record's `l_A` being 0.38% larger accounts for −0.0123 at the band range's
+mean q. ⇒ *** `cc66.60`'s number, doing the work a fifth time. ***
+
+⌗ *What survives the move as an arm-independent statement is the **fold-range**: about four and a
+half on the residual and the s.e. alike, nine on the injection's — the namesake's five-fold, read
+between the vertex and the far end instead of between the ends. That is what is pinned.*
+
+⇒ **And it answers the order better than the thing it replaces.** What separates the comb from the
+contrast is not that one degrades and the other doesn't — it is that `l_1` is read off the arm's own
+spectrum and **never involves the control at all**, so the alignment cannot touch it, while the band
+ratio's error is *entirely* set by that alignment and vanishes where the combs cross.
+
+## ⛭ ⓷ THE SAME RE-ANCHORING REPAIRED THREE MORE, AND TWO OF THEM SHARPENED
+
+`cc66.60`'s repair form — re-anchor on each arm's own scale — for the fourth, fifth and sixth time:
+
+| what | namesake form | arm of record, re-anchored |
+|---|---|---|
+| the two σ denominators | the error **at f=0** | the error at the family's own **aligned point** |
+| the FWHM quantisation | three widths; `r6925`'s pair vs this arm's η step, to `1e-3` | **two** widths; this arm's own pair, one η step **to machine zero** |
+| `d r_s/d χ` monotonicity | allowance `−2e-6`, for the namesake η grid's sixth-decimal jitter | monotone to **machine precision**, worst step `−1e-15` |
+
+⇒ *** Two of the three came out **stricter**, not looser: a tolerance of `1e-3` became exact, and an
+allowance of `2e-6` tightened by nine orders. The jitter the old allowance was written for was the
+namesake arm's own. *** ⌗ *And the σ re-anchoring is load-bearing, not cosmetic: putting the
+denominators back to f=0 reddens the level/slope gate (perturbation P5). The level goes 2.23σ and the
+slope 5.14σ against the comb's 4.26 — so the order's branch is still half right, but `under two
+sigma` was the namesake's phrase and is not restated.*
+
+## ⛔ ⓸ I MISSED A SIXTH BANK, AND THE FIGURE-PIN BLOCK CAUGHT IT
+
+The locator's validation substrate `r6941_fine_cr` loads **apart from the others**, under its own
+`r7097` note, and I left it on the namesake arm — validating the abscissa of an arm the receipt no
+longer reads. ⇒ *The `INDEX.md` figure-pin block **failed on the locator's two numbers** and that is
+how I found it.* ⌗ *A pin block written for the row's figures earned its keep as a re-point check. It
+is stricter again on the arm of record: `0.00336` and `0.0206`, against `0.00351` and `0.0229`.*
+
+## ⛔⛔ ⓹ AND A BLIND SPOT IN `check_figures_pinned` — WHICH I CREATED, THEN MEASURED
+
+Writing the row I put `$|43.9516-43.5913|$` in the claim cell. **Two unescaped pipes.** The guard
+splits each `INDEX.md` row on unescaped `|` and requires `c[4]` to start with a backtick; with the
+columns shifted, `c[4]` was `43.9516-43.5913`, so **the entire row dropped out of the guard**.
+
+⇒ *** It does not complain. It goes **silent**. *** ⌗ *I found it only because the stale count was
+implausible — 17 rows stale with **zero** live for the receipt. A row with dozens of figures printing
+none is not a pass, and the arithmetic is the only thing that says so.*
+
+**So I measured the whole file.** Of **1086** `INDEX.md` rows naming a known receipt, **1085** are
+picked up and **one is silently outside the guard**: `receipts/INDEX.md:1210`, whose path cell is not
+backticked (`S60_the_test_that_asks_whether_a_literal_…`). ⇒ **Priced: backticking it brings 63
+unpinned figures live.** The ratchet forbids baselining them, so this is **not mine to fix** — it is
+60's receipt and a 63-figure bill. ⌗ *Routed to 69, with the price, rather than touched.*
+
+## ⇒ ⓺ ELEVEN PERTURBATIONS, AND THE HALF-MOVE IS IMPOSSIBLE FOR A THIRD TIME
+
+Every moved pin perturbed before this was written; **eleven on target, none off**. Two worth naming:
+
+- **P11, the half-move**: reverting the scan alone and leaving geometry and visleaf on the arm of
+  record reddens ⓸ **and** ⓹ — both bit-identity gates. ⇒ *** Third receipt in three where existing
+  machinery makes a half-moved re-point impossible rather than merely detectable. ***
+- **P10, the whole arm reverted**: ten reds including the pin block. *The receipt cannot be run on
+  the wrong arm quietly.*
+
+⌗ *And the control side is **measured** immaterial rather than assumed: the injection control key
+read here is bit-identical between the control's two recombination treatments, while a key in the
+same file that swaps the arm's visibility in differs by `2.8e-3` — so `LEAFREC` is live in that bank
+and inert only on the key read. **A control that cannot move is not a control**, so the gate asserts
+both halves.* (`cc66_r185_verify_lcdm` has no sibling at all; for that one the statement cannot be
+made and is not made.)
+
+## ⛔ ⓻ AND THE RE-POINT MADE A PAPER PARAGRAPH STALE — WITH ONE SENTENCE THAT IS A CLAIM, NOT A FIGURE
+
+`check_marker_transposition` is excluded from the lean batch for cost, so I ran it directly before
+pushing rather than finding it in CI. ⇒ **Three new flags, all at `CR_cosmology.tex:2057`** —
+`221.93`, `4.21` and `2.141`, figures this receipt computed on the namesake arm and no longer carries.
+
+⌗ *Adjudicated as `TRANSPOSITION candidate` in `marker_transposition_baseline.tsv` — **routed, not
+adjudicated away**, the class `cc66.55` opened for exactly this. Gate green; the rows leave that file
+when 69 lands the set.*
+
+⛔ **But it is not a renumbering.** The same paragraph **asserts** *"the contrast's spread grows about
+fivefold across the family while the comb's locating width does not move at all"* — ⇒ *** which is
+precisely the thing ⓶ shows is a property of the **arm** and not of the family. *** And the decisive
+sentence weakens: still outside, still inadmissible in direction, but by 0.531 multipoles against
+1.28, under the sky's own locating width — which that same paragraph already flags as *assumed rather
+than measured*. ⌗ *Both are in `FOR_69.md` with the full replacement table and the note that the claim
+sentence needs 69's pen and not a search-and-replace. **The three shares survive** (30.62 / 10.05 /
+59.33).*
+
+## ⇒ ⓼ ITEM 2: SEVEN RE-POINTED, THREE BANK-BLOCKED
+
+`.52`, `.54`, `.57`, `.59`, `.61`, `.62`, `.63`. ⌗ *Of the three left,
+`the_visibilitys_clock_…` has a partial available (blocked on `r6925_geometry` — 22 arm keys — and
+`r6925_noop`); `a_source_with_no_physics_…` (`r6919_geometry`, `r6919_noop`) and
+`the_held_period_estimator_…` (`r6897_fields`) have none.* ⇒ **Every one of the seven found a
+statistic that does not survive the move, and `cc66.60`'s single number is why all seven did.**
+
+⌗ *Also for the record: the `scoped — the tolerance perturbation` red recurred on head `24977050e`,
+three commits behind the tip. Its carry ledger NAMED two of my own receipts, so I ran both on the
+current tree — `exit=0` both. **The carry entries are historical across five or six branches, not a
+live red**, and the failure is the cancellation mode already commented once on PR #573, so no second
+comment is owed.*
+
+---
+
+# `r7643+cc66.64` — ⛔⛔ **my own reader has been RED since `cc66.61` and nothing said so, because nothing runs it**
+
+Went to start the eighth receipt and found three things instead, each bigger than the receipt.
+
+## ⛭⛭ ⓵ THE CENSUS ASKED THE WRONG QUESTION: A RECEIPT READS QUANTITIES, NOT BANKS
+
+`cc66.58` partitioned the remainder of item 2 by asking, per receipt, **which banks** it reads and
+whether each has a `_leafrec1` sibling. ⇒ *** That is the wrong question, and it is wrong in **both**
+directions. ***
+
+**`the_visibilitys_clock_…` is NOT blocked by `r6925_geometry`.** Every geometry quantity it reads out
+of that bank — `eta_ls`, `fwhm`, `rD`, `cs`, `l_A`, on **both** arms at **both** assignments — is
+carried **bit-identically** by `r6929_geometry` at its `f=0` and `f=1` endpoints, because
+`r6929+cc66.44` made `VISLEAF` a fraction whose endpoints *are* the two assignments. And
+`r6929_geometry` has a sibling. ⌗ *Ten quantity pairs, matched by **name** and value rather than by
+value alone, every one exact. The substitution moves the reading rather than relabelling it
+(`d r_s/d χ` 0.396733 → 0.395135) and leaves the control fixed.*
+
+⇒ **So item 2 has one more re-pointable receipt than I reported, and `cc66.58`'s "partial" call on it
+was wrong for a reason worth keeping: a bank inventory cannot see a quantity that lives in two banks.**
+
+## ⛔⛭⛭ ⓶ AND THE NO-OP LEGS ARE UNMOVABLE FOR A STRONGER REASON THAN A MISSING FILE
+
+Every no-op bank's arm spectrum — `r6925_noop`, `r6929_noop`, `r6911_noop`, `r6915_noop`,
+`r6919_noop`, `r6897_noop`, seven keys in all — is **bit-identical to `r6893_switch_screen_cr`'s
+`Dl__base`**. Which is precisely what the identity legs of `.57`, `.61`, `.62` and `.63` **check**:
+that an independently launched no-op run lands on the screen's base.
+
+⇒ *** So the only arm-of-record copy of a no-op bank's arm key is `Dl__base` in the screen's own
+sibling — **the very thing the leg compares it against**. Substituting it makes the leg compare the
+base against itself: a tautology that passes while testing nothing, on four receipts at once. ***
+
+⌗ *Gated falsifiably rather than asserted: of 56 sibling banks, **19** arm-of-record arrays are
+bit-identical to that base and **all 19 live in the screen's own sibling**. A copy anywhere else would
+be a legitimate stand-in and would fail the gate.* ⇒ **This proves the four no-op asks are for a
+RE-RUN at `LEAFREC=1` and cannot be shortcut.** My asks were already phrased as runs; this is why they
+must stay that way.
+
+## ⛔⛔ ⓷ AND HERE IS THE ONE THAT MATTERS: `item_two_inventory_partitions_the_44.py` HAS BEEN RED SINCE `.61`
+
+Its cross-arm gate reads *"no receipt is both re-pointed and blocked by a bank it cannot reach, except
+where it DECLARES the key read"*. Its declaration detector is a **phrase list**:
+`('arm is a KEY', 'ARM AS A KEY', 'arm as a key', 'KEY SUFFIX', 'key suffix')`.
+
+`cc66.57` worded its declaration *"the arm is a KEY"* — in the list. `.61`, `.62` and `.63` worded
+theirs **`ARM KEYS READ:`** — not in the list. ⇒ *** The gate went red at `.61` and stayed red through
+`.63`, naming three receipts that **had** declared. Verified on a pristine worktree at `930915186`:
+already red there, naming `.61` and `.62`. ***
+
+⛔ **And nothing said so.** `receipts/RUN_RESULT.txt` runs *"868 **registered** receipt(s)"* — those
+with `INDEX.md` rows under `receipts/`. **My ten readers have no rows and are never run.** ⇒ *** I had
+been reading *"it passes when I run it"* as *"it is gated"*. It is not. A reader can rot the moment a
+later receipt's wording changes, and this one did. ***
+
+⌗ *Fourth blind spot of one family in this order — after `'__cr' in k`, the `var['...__{` template
+regex and the `g in src` bank test — and **the first I inflicted on my own instrument by changing my
+own wording**.* ⇒ *Repaired by adding the canonical token and keeping the legacy phrasings; and the
+**miss is now gated**, so trimming `DECLARE` back or inventing a fourth wording fails the file rather
+than silently reporting a cross-arm defect that is not there.*
+
+**I then ran all ten.** ⇒ **Nine were green, one had rotted; all ten green now.**
+
+**Priced for 69, and it is not only mine:** of 668 python files under `computations/`, **449** are
+outside the registered suite; **28** of those carry a `check()`/`FAILS` harness and **22** also exit
+non-zero on failure — *the class that can rot silently.* Ten are mine; the rest sit in `r7635_70_…`,
+`r7611_70_…`, `r7637_70_…`, `r7639_cc66_…`, `r7259_71_ground`, `r7642_60_…` and four more. In
+`FOR_69.md`.
+
+## ⌗ ⓸ AND THE SWEEP THAT FOUND ⓶ WAS WRONG FIRST — TWICE, THE SAME WAY
+
+⛔ *Hashing every array in every blocked bank against every sibling-bearing bank returned **25 of 40**
+`r6925_geometry` keys as "carried elsewhere" — including `visleaf__lcdm_0` matched to an ISW flag, and
+two different keys matched to the same source key. Those banks hold **0-d scalars**, and scalars match
+by coincidence: `0.0` is `0.0`. Guarded at 20 elements the same sweep returns **none** of that bank,
+which is why ⓵ had to be matched by **name**.*
+
+⛔ *And pricing ⓷ I wrote the "can rot silently" predicate **twice with different spellings** and
+published 8 before checking it against my own ten files, all of which satisfy it. The real figure is
+22. **Third time in this session a quick proxy handed me a wrong number**, and the pattern is always
+the same: a mechanical test standing in for a read.*
+
+⌗ *Two more guards earned their keep the same way: the first form of the tautology gate asserted
+`np.array_equal(_baseL, SSL['Dl__base'])`, **true by construction** — a control that cannot move is
+not a control — and is now the falsifiable 19-copies measurement; and the perturbation harness failed
+to resolve the bank directory **twice today** before I set its depth, which looks exactly like a
+perturbation that missed.*
+
+## ⛭ ⓹ A BY-PRODUCT WORTH BANKING: THE SCREEN'S INERT SET IS ARM-INDEPENDENT
+
+Of **61** switches screened, **18** leave `D_l` bit-identical on the namesake arm and the **same 18**
+do so on the arm of record — while the two arms' own bases differ by **5.7 per cent**. ⌗ *A null that
+survives a 5.7 per cent change of substrate is a null with teeth, not a switch nobody wired.*
+
+## ⇒ ⓺ WHERE ITEM 2 STANDS, CORRECTED
+
+**Seven re-pointed** (`.52`, `.54`, `.57`, `.59`, `.61`, `.62`, `.63`); **`the_visibilitys_clock_…` is
+re-pointable** except its two no-op identity legs, which is the `.57`/`.61`/`.62`/`.63` shape — that
+is `cc66.65`. **Two genuinely blocked**: `a_source_with_no_physics_…` (`r6919_geometry`,
+`r6919_noop`) and `the_held_period_estimator_…` (`r6897_fields`) — checked here by the same
+substitution test and *not* unblocked, because no moving bank carries `d_rs_own`, `jac_hi/lo/pk`,
+`rs_ls_own`, `d_chi`, or per-k fields at two baryon densities.
+
+New reader: `computations/beyond_the_wall/r7641_cc66_grid_readers/a_quantity_can_move_when_its_bank_cannot.py`
+— 13 gates, `exit=0`, **eight perturbations all on target**.
+
+---
+
+# `r7643+cc66.65` — `the_visibilitys_clock_…` re-pointed, and ⛭⛭ **all three reds were written down before they were measured**
+
+Eighth receipt, and the first that moves a bank **by substitution**: `r6925_geometry` has no sibling,
+but `cc66.64` established that `r6929_geometry` carries the same ten quantities at `f=0`/`f=1` — and
+the receipt gates that bit-identity on the namesake arm **before** reading a figure off the
+substituted bank. The `VISLEAF`-is-inert identity leg stays namesake, declared; `cc66.64` proved it
+cannot be shortcut. ⇒ **36 gates, `exit=0`, eight perturbations all on target, `figure_pin_baseline.tsv` −12.**
+
+## ⛭⛭ ⓵ I REGISTERED THE PREDICTION FIRST, AND IT SCORED FOUR OF FIVE
+
+Before touching the file I wrote five predictions from `cc66.60`'s predictor and `cc66.63`'s
+mechanism. ⇒ **The run produced exactly three reds, and all three were on the list.**
+
+| | predicted | measured |
+|---|---|---|
+| **A** the factor-3 residual gate | *will fail **and reverse*** | ✔ ratio 6.32 → **0.346** |
+| **B** the comb gate | will hold | ✔ holds |
+| **C** Part 4's deficit ledger | will move | ✔ all three limbs + companion |
+| **D** the geometry's agreement | survives, level restated | ✔ 0.057% against 0.06% |
+| **E** the borrowed `1.0694`/`+0.01167` | needs restating | ✔ restated |
+
+⌗ *The one I got wrong is **B**'s detail: I expected the sky margin to thin as it did at `.63`, and it
+**widened**, 0.68 → 1.51 multipoles. The cause is nameable — this receipt reads the comb on the RAW
+`LSTEP=8` grid where `.63` reads it sub-bin, and `.63` itself measured that the raw reading sits
+**below** the sky where the sub-bin one sits above. Different statistic, different margin; I conflated
+them.*
+
+## ⛭⛭⛭ ⓶ WHICH ASSIGNMENT IS CONTAMINATED IS A PROPERTY OF THE ARM — AND THE MECHANISM IS NOW MEASURED HERE
+
+The old gate asserted `VISLEAF=1` is the scattered assignment and `VISLEAF=0` the smooth one, reading
+a factor-3 residual as fixed to that direction. ⇒ *** On the arm of record it is **the other way
+round**: `0.04851` at `VISLEAF=0` down to `0.01677` at `VISLEAF=1`, where the namesake ran `0.0088`
+up to `0.0555`. ***
+
+⛭ **I did not cite `.63` for this — I measured it in the receipt**, on *different banks*: the
+injection combs' mean signed offset in q against the control's is **−0.0154** at `VISLEAF=0` and
+**+0.0058** at `VISLEAF=1`, against **−0.0017** and **+0.0194** on the namesake. ⇒ *** And here is the
+part that is arm-independent: **on both arms the offset changes SIGN between the two assignments**, so
+one end is always phase-clean and the other always contaminated. The caution the receipt needs is
+**structural**; only its direction is the arm's. ***
+
+⌗ *`cc66.63` found this V on the scan banks; the injection banks confirm it independently, which is
+what makes it a mechanism and not a coincidence of one bank family.*
+
+## ⛔ ⓷ AND THE SECTOR STILL DOES NOT CLOSE — BY THE OTHER HALF
+
+| | namesake | arm of record |
+|---|---|---|
+| level gap closed | 54% | **23%** |
+| slope gap closed | 10% | **107%** |
+| the deficit itself | 0.9922, **flat**, slope −0.00106 | 0.9950, slope **−0.00742** |
+
+⇒ *** The conclusion survives on both arms and its mechanism **inverts**: the deficit carries the
+slope here and the level there, and on neither arm both. `the order's conditional is half satisfied`
+is still right; **which** half is the arm's property. *** ⌗ *`cc66.40`'s "0.992 is FLAT in q" was the
+stated reason it could not carry a slope — and that flatness was the namesake's property, not the
+statistic's.*
+
+## ⛔ ⓸ AND THE GATE CAUGHT ME WRITING AN INEQUALITY BACKWARDS
+
+My restated companion gate asked `|Y0−REAL| > 3|PROD−REAL|` — i.e. that the level **remainder** be
+small, when the whole finding is that it is **large** (77 per cent still open). ⇒ *It failed on the
+first run and I fixed it to read on the two closure fractions directly (`_slp > 1.0 > _lev`).* ⌗ *The
+gate doing its job on its author, which is the only reason to write them this way.*
+
+## ⌗ ⓹ TWO MORE THINGS DECLARED RATHER THAN REPAIRED
+
+- **`cc66.54`'s coin flip, live in the printed quartet.** At `VISLEAF=0` the second peak's raw bin
+  reads **532** where the namesake read **540** — the known tie at 0.011%, which `cc66.60`'s 0.464%
+  offset is enough to land the other side. *No gate turns on it (every gate reads `pk[0]`), so it is
+  declared where it is printed and gated so a **third** value would be caught.*
+- **The slope now crosses past the real source rather than arriving at it** (`+0.02955 → +0.01794`
+  against `+0.02178`), so `toward the real source` is true of the level and an overshoot on the slope.
+  Said that way rather than as `toward`.
+
+## ⇒ ⓺ AND THE PDF WENT IN WITH THE REGENERATION THIS TIME
+
+⌗ *`cc66.64b` owed `CR_cosmology.pdf` because I regenerated the appendices and did not recompile the
+paper that reads them, and CI told me rather than my own batch. **This pass compiled it before
+pushing** — two `pdflatex` passes, 330 pages, zero undefined references — and ran the **six** heavies the
+lean batch excludes -- `check_marker_transposition`, `check_deferrals`, `check_pdf_current`,
+`check_withdrawn`, `check_prose_pins`, `check_cross_row_dupes` -- rather than meeting any of them in
+CI. **`check_pdf_current` and `check_deferrals` are both in that excluded set, which is exactly why
+`.64b` met them as a CI red: the lean batch cannot see them.**
+
+## ⇒ ⓻ ITEM 2: EIGHT RE-POINTED, TWO BLOCKED
+
+`.52`, `.54`, `.57`, `.59`, `.61`, `.62`, `.63`, `.65`. ⇒ **The remainder is exactly the two that need
+a bank that does not exist**: `a_source_with_no_physics_…` (`r6919_geometry`, `r6919_noop`) and
+`the_held_period_estimator_…` (`r6897_fields`) — both re-checked by `cc66.64`'s substitution test and
+neither unblocked. ⌗ *Every one of the eight found a statistic that does not survive the move, and
+`cc66.60`'s single number is why all eight did.*

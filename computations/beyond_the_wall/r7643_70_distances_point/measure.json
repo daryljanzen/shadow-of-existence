@@ -1,0 +1,38 @@
+{
+ "no-fit L2000, LEAFREC=0 (namesake, the paper)": {
+  "control": 214.05665004029697,
+  "arm": 550.4748032898333,
+  "bins": 185,
+  "ratio": 2.5716314031178396
+ },
+ "no-fit L2000, LEAFREC=1, distances' point": {
+  "control": 214.05665004029697,
+  "arm": 502.0935303824395,
+  "bins": 185,
+  "ratio": 2.345610520803341
+ },
+ "grid base (LSTEP 8), LEAFREC=0 (namesake)": {
+  "control": 212.90178985752462,
+  "arm": 545.8008766319338,
+  "bins": 185,
+  "ratio": 2.563627468783553
+ },
+ "grid base (LSTEP 8), LEAFREC=1, distances' point": {
+  "control": 212.90178985752462,
+  "arm": 496.4769455334334,
+  "bins": 185,
+  "ratio": 2.331952896524164
+ },
+ "refit verified minimum, LEAFREC=0 (namesake)": {
+  "control": 186.50973619880352,
+  "arm": 292.4165459437525,
+  "bins": 185,
+  "ratio": 1.5678352878696977
+ },
+ "refit, LEAFREC=1, arm of record": {
+  "control": 186.50973619880352,
+  "arm": 297.668318694055,
+  "bins": 185,
+  "ratio": 1.5959934572893604
+ }
+}
