@@ -71,6 +71,21 @@ def head(t):
 GRIDS = (('banked', os.path.join(BW, 'refit_grid185')),
          ('licensed', os.path.join(BW, 'r7095_directions', 'grid_licensed')),
          ('forbidden', os.path.join(BW, 'r7093_directions', 'grid_oneclock')))
+# ⛭⛭⛭ `r7647` ⑴ -- THE THREE ARM-OF-RECORD SIBLINGS, AND THEY ARE ALL ARM-ONLY.  Each carries the
+#   nine `cr_*` legs and no `lcdm_*` leg, so the grid has to be resolved PER ARM: the control keeps
+#   coming from the namesake grid, where its legs are the only copy that exists, and swapping one
+#   path instead raises `FileNotFoundError: .../lcdm_base.npz`.
+#   ⇒ All three siblings sit at the SAME point -- CRH0 68.57073, CROM 0.291246, WBH2 0.021643,
+#   NS 1.015066 -- so the three readings stay comparable with each other.  *`refit_grid185_leafrec1_
+#   distances/` is a DIFFERENT point (68.60 / 0.2973) and is deliberately NOT used here: pairing it
+#   with `grid_oneclock_leafrec1` would compare two backgrounds, which is the error `cc66.72` found.*
+AOR = {'banked': os.path.join(BW, 'refit_grid185_leafrec1'),
+       'licensed': os.path.join(BW, 'r7095_directions', 'grid_licensed_leafrec1'),
+       'forbidden': os.path.join(BW, 'r7093_directions', 'grid_oneclock_leafrec1')}
+
+
+def grid_for(nm, g, arm):
+    return AOR[nm] if arm == 'cr' else g
 
 
 def reach(grid, arm):
@@ -96,7 +111,8 @@ print(__doc__)
 # =====================================================================================
 head("A.  r7097's THREE NAMED NUMBERS, ON THE BANKED GRID, BEFORE ANYTHING IS COMPARED")
 
-V = {(nm, arm): reach(g, arm) for nm, g in GRIDS for arm in ('lcdm', 'cr')}
+V = {(nm, arm): reach(grid_for(nm, g, arm), arm)
+     for nm, g in GRIDS for arm in ('lcdm', 'cr')}
 print(f"      {'grid':10s} {'arm':5s} {'unreachable chi2':>18s} {'n-5':>5s} {'crossings':>10s} {'longest':>8s}")
 for nm, _ in GRIDS:
     for arm in ('lcdm', 'cr'):
@@ -104,11 +120,13 @@ for nm, _ in GRIDS:
         print(f"      {nm:10s} {arm:5s} {v['chi2']:18.6f} {v['nbins']-5:>5d} "
               f"{v['crossings']:10d} {v['longest']:8d}")
 
-gate("the banked grid returns r7097's own three figures -- unreachable chi^2 278.8 on the arm against "
-     "the control's 186.0 at n-5 = 180, and 54 crossings -- so the instrument is the one the order "
-     "named and not a re-derivation of it",
-     abs(V[('banked', 'cr')]['chi2'] - 278.8) < 0.1
-     and abs(V[('banked', 'lcdm')]['chi2'] - 186.0) < 0.1
+gate("⛔ the banked grid on the ARM OF RECORD returns 276.360, NOT the 278.8 the namesake arm gives "
+     "and NOT the 278.79 `r7647` quotes from this seat's own linearised harness -- the harness was "
+     "wrong for this quantity, and `the_fit_has_the_controls_freedom...` agrees on 276.36 by a "
+     "different route.  The control's 186.0066 at n-5 = 180 and the arm's 54 crossings are "
+     "unchanged, so the instrument is still the one the order named",
+     abs(V[('banked', 'cr')]['chi2'] - 276.360) < 0.10
+     and abs(V[('banked', 'lcdm')]['chi2'] - 186.0066) < 0.01
      and V[('banked', 'cr')]['crossings'] == 54
      and V[('banked', 'cr')]['nbins'] - 5 == 180)
 gate("⌗ THE CONSISTENCY CHECK: the CONTROL's three numbers are IDENTICAL across all three grids, "
@@ -145,14 +163,24 @@ _c = V[('banked', 'lcdm')]
 print(f"      forbidden arm chi^2 {_f['chi2']:.6f}   against the CONTROL's own {_c['chi2']:.6f}")
 print(f"      crossings {_f['crossings']} (control {_c['crossings']}, noise about 88)      "
       f"longest run {_f['longest']} (control {_c['longest']})")
-gate("⛭⛭ the forbidden repair takes the arm's unreachable chi^2 BELOW the control's own value -- "
-     "184.99 against 186.01 -- so on this statistic the arm stops being the worse of the two",
-     _f['chi2'] < _c['chi2'])
+gate("⛔⛭⛭ ** ON THE ARM OF RECORD THE FORBIDDEN REPAIR DOES NOT GO BELOW THE CONTROL'S OWN VALUE "
+     f"-- IT LANDS LEVEL WITH IT: ** {_f['chi2']:.4f} against {_c['chi2']:.4f}, "
+     f"{_f['chi2'] - _c['chi2']:+.4f} on n-5 = {_f['nbins'] - 5}, which is "
+     f"{(_f['chi2'] - _c['chi2']) / (2 * (_f['nbins'] - 5)) ** 0.5:+.4f} sigma.  *The namesake arm's "
+     "184.99 against 186.01 put it BELOW; the arm of record's is a hair above, so `falls below the "
+     "control's own` lands as `level with the control's own` -- which is what `r7647` ⑴ anticipated "
+     "and this measures.*",
+     _f['chi2'] > _c['chi2']
+     and abs(_f['chi2'] - _c['chi2']) < 0.5
+     and abs(_f['chi2'] - 186.135) < 0.01 and abs(_c['chi2'] - 186.0066) < 0.01)
 gate("⛭ and its longest run of one sign lands on the control's exactly, 8 bins against 33 before",
      _f['longest'] == _c['longest'] and V[('banked', 'cr')]['longest'] == 33)
-gate("⛭ and its crossings go to 91 against the control's 87 and noise's roughly 88, from 54 -- the "
-     "arm becoming noise-consistent where it was 4.6 sigma away",
-     _f['crossings'] > 85 and V[('banked', 'cr')]['crossings'] == 54)
+gate(f"⛭ and its crossings go to {_f['crossings']} against the control's {_c['crossings']} and "
+     "noise's roughly 88, from 54 -- the arm becoming noise-consistent where it was 4.6 sigma away. "
+     "** On the arm of record they land EXACTLY on the control's, where the namesake arm's went to "
+     "91 against 87 ** -- so the figure printed beside this gate was the namesake's and the gate "
+     "passed on it, which is the stale-label class and is why it is pinned here",
+     _f['crossings'] == _c['crossings'] == 87 and V[('banked', 'cr')]['crossings'] == 54)
 
 # =====================================================================================
 head("D.  ⌗ THE REFIT r7097 ASKED FOR, AND THE TILT PREDICTION IT PUT ON THE RECORD")
@@ -172,18 +200,29 @@ print(f"      the two-direction tilt (shape.py, ell<=1040, LMAXL=2000): "
       + ', '.join(f'{k} {v:+.4f}' for k, v in TILT_2DIR.items()))
 print(f"      cc66.73's own LMAXL=1300 pair:                            "
       + ', '.join(f'{k} {v:+.4f}' for k, v in TILT_1300.items()))
-gate("⌗ the two-direction tilt and the four-parameter refit's own n_s shift AGREE to better than "
-     "0.004 on all three grids at matched resolution, which is what licenses reading one as the other "
-     "-- a power-law tilt in ell is a delta-n_s to first order and is checked rather than assumed",
-     all(abs(TILT_2DIR[nm] - V[(nm, 'cr')]['fit']['NS']) < 0.004 for nm, _ in GRIDS))
-gate("⛔ ⇒ AND THE PREDICTION DOES NOT SURVIVE THE RESOLUTION: `cc66.73`'s -0.0324 is its own "
-     "`LMAXL=1300` pair's value, and at `LMAXL=2000` the one-clock rebuild needs essentially NO tilt "
-     "-- -0.0035 on the refit, an order of magnitude smaller",
-     abs(V[('forbidden', 'cr')]['fit']['NS']) < 0.01
-     and abs(TILT_1300['oneclock']) > 3 * abs(V[('forbidden', 'cr')]['fit']['NS']))
-gate("⌗ and the banked default and the licensed configuration BOTH want about +0.03 to +0.04 of tilt, "
-     "so the tilt the fit reaches for is a property of the two-clock geometry and not of the rebuild",
-     V[('banked', 'cr')]['fit']['NS'] > 0.02 and V[('licensed', 'cr')]['fit']['NS'] > 0.02)
+_gap = {nm: abs(TILT_2DIR[nm] - V[(nm, 'cr')]['fit']['NS']) for nm, _ in GRIDS}
+gate("⛔⛔ ** AND ON THE ARM OF RECORD THAT LICENCE FAILS ON ALL THREE GRIDS. ** The two-direction "
+     "tilt and the four-parameter refit's own n_s shift agreed to better than 0.004 on the namesake "
+     f"arm, which is what licensed reading one as the other.  Here they are {_gap['banked']:.4f}, "
+     f"{_gap['licensed']:.4f} and {_gap['forbidden']:.4f} apart -- fifteen to twenty times that.  "
+     "*So `a power-law tilt in ell is a delta-n_s to first order` is not a licence this arm supports, "
+     "and it is WITHDRAWN here rather than loosened: the tolerance is not widened to admit it.*",
+     all(_gap[nm] > 0.04 for nm, _ in GRIDS))
+gate("⛔ ⇒ AND ON THE ARM OF RECORD THE ONE-CLOCK REBUILD DOES NOT NEED `essentially NO tilt` "
+     f"EITHER: it needs {V[('forbidden', 'cr')]['fit']['NS']:+.4f}, against the namesake arm's "
+     "-0.0035 at the same resolution -- eighteen times it, and MORE than the banked and licensed "
+     f"grids' {V[('banked', 'cr')]['fit']['NS']:+.4f}.  *So the reading that the rebuild removes the "
+     "tilt demand inverts: on this arm the rebuild asks for the MOST tilt of the three.*",
+     V[('forbidden', 'cr')]['fit']['NS'] < -0.05
+     and abs(V[('forbidden', 'cr')]['fit']['NS'])
+     > abs(V[('banked', 'cr')]['fit']['NS']))
+gate("⛔ and the SIGN FLIPS: the banked default and the licensed configuration wanted about +0.03 to "
+     f"+0.04 of tilt on the namesake arm and want {V[('banked', 'cr')]['fit']['NS']:+.4f} on the arm "
+     "of record -- NEGATIVE, and the same on both.  *So all three grids now want a RED tilt and the "
+     "one-clock rebuild wants the most; `the tilt the fit reaches for is a property of the two-clock "
+     "geometry and not of the rebuild` does not survive, because the rebuild changes it most.*",
+     V[('banked', 'cr')]['fit']['NS'] < -0.02
+     and abs(V[('banked', 'cr')]['fit']['NS'] - V[('licensed', 'cr')]['fit']['NS']) < 1e-9)
 
 # =====================================================================================
 head("E.  ⚠ THE SCOPE")

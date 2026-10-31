@@ -31284,3 +31284,60 @@ a reason to treat the sweep as uninformative — it was the ranged sweep that fo
 in the first place, and only running them properly settled what the red meant.* ⌗ Worth 69's
 consideration: `scripts/run_touched_readers.sh` could carry the Pillow note in its own header, where
 it would be read at the moment it is needed rather than here.
+
+---
+
+### `cc66.75` — `r7647` item 1: the receipts disagree with my own harness, and the harness loses
+
+Both receipts re-pointed onto the arm-of-record grids. **24 gates green** in
+`the_fit_has_the_controls_freedom…`, **13 green** in `the_licensed_rebuild…`.
+
+⛔ **THE REACHABLE NEGATIVE I REGISTERED FIRED, AGAINST ME.** `r7647` quotes `278.79` back to me as
+the banked arm's unreachable χ², because I measured it in my own linearised harness earlier in this
+campaign. **The receipts give `276.360`** — `the_licensed_rebuild…` at `276.359717` and
+`the_fit_has_the_controls_freedom…` at `276.4`, by two different routes. My prediction said: *"if a
+receipt disagrees materially, the HARNESS was wrong, the row must not land, and I say so rather than
+reconciling toward my own earlier number."* So: **the harness was wrong for this quantity and 69 must
+not land 278.79.** The paper's sentence survives — the gap to the control becomes `90.353` rather
+than `92.8`, still "about a hundred" — but the figure beside it changes.
+
+✔ **The second figure holds exactly.** The one-clock arm gives `186.135046` by the receipt's own
+route, matching the harness and the order. And it sits **`+0.128471` ABOVE** the control's
+`186.006575` — `+0.0068σ` on 180 dof — so *"falls below the control's own"* inverts to **"level
+with"**, which is what `r7647` ⑴ anticipated.
+
+**THE GRID FAMILY WAS THE TRAP AGAIN, AND IT IS NOT `r7645`'s.** All three `_leafrec1` grids sit at
+the **refit** point; only `refit_grid185_leafrec1_distances` is at the distances' point. Pairing that
+with `grid_oneclock_leafrec1` would have compared two backgrounds — `cc66.72`'s error exactly — so
+item 1 uses the refit-point family throughout.
+
+**AND EVERY ARM-OF-RECORD GRID IS ARM-ONLY, WHICH BLOCKS A NAIVE RE-POINT OUTRIGHT.** Each carries
+nine `cr_*` legs and **no `lcdm_*` leg at all**; the namesake grids carry both (18 npz, 10 of them
+`lcdm`). So swapping one path raises `FileNotFoundError: …/lcdm_base.npz`, which is exactly what both
+receipts did first. Both now resolve the grid **per arm** — the control from the namesake, where its
+legs are the only copy that exists — and that is gated as forced rather than chosen. *A consequence
+worth keeping: the control is literally the same nine files in both readings, which is what makes the
+arm's move a like-for-like comparison.*
+  ⌗ And the arm-of-record grid carries no `*.log` or `*.py`, so the onset gate could not read it the
+  way the namesake's is read. It carries something stronger: `cr_base.npz`'s RESOLVED `config`. Both
+  are now required, and that config is also what says `LEAFREC` is on — which no log line could say
+  once the default moved.
+
+**THE LICENSED-VERSUS-BANKED DISTINCTION IS SPENT ON THE ARM OF RECORD.** The two grids hold
+**bit-identical spectra** (`max|dD_l| = 0` on every leg, identical resolved configs; only metadata
+differs), so "the licensed rebuild leaves the three numbers where they were" has nothing left to
+measure there. I nearly reported the bit-identical χ² as a finding before checking — it would have
+been a tautology dressed as a measurement, the `cc66.64` class. Marked as spent instead.
+
+**AND THE TILT STORY INVERTS THREE WAYS** — the licence to read a two-direction tilt as a Δn_s fails
+on all three grids (0.063–0.078 apart against a 0.004 tolerance, so **withdrawn, not loosened**); the
+one-clock rebuild needs `−0.0643` rather than "essentially no tilt"; and the banked and licensed
+grids' demand flips sign from `+0.03`–`+0.04` to `−0.0385`, with the rebuild now wanting the most.
+
+**ONE MORE STALE LABEL CAUGHT:** a gate printed *"its crossings go to 91 against the control's 87"*
+while its condition only asked `> 85`. On the arm of record both are `87`. Now pinned to equality.
+
+⛔ **AND AN ERROR OF MINE, THREE TIMES IN A ROW:** I dropped `gate(`'s closing parenthesis while
+rewriting multi-line conditions, three patches running. `ast.parse` caught each one and nothing was
+written, so no broken file reached the tree — but the fix is a habit, not luck: **check paren balance
+on every rewritten condition before writing**, which I added to the last patch as an explicit step.
