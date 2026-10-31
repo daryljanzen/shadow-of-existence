@@ -262,6 +262,8 @@ EST = {
         'temperature -- a correct strike with the item lying beyond it. '),
     'PO-87': ('a mechanism for the computed spectrum\'s shape deficit, its two halves reported apart',
         2, 2, 3, 'P15\'s acoustic figures re-derived on the leaf-rate arm of record',
+        'r7647 LANDS r7645+cc66, r7646 (60), r7645+70: the landing table is in; the refit moves the matter density ~2 '
+        'per cent and the expansion rate 0.02; the unreachable chi-squared does not move; three rows remain to measure. '
         'r7645 LANDS r7643+70, r7644 (60): the no-fit spectrum on the arm of record is banked; the lensed '
         'confrontation moves 2.57 -> 2.35 and the refit 1.57 -> 1.60; a second scorer reproduces every printed score. '
         'r7643 LANDS r7642 (60), r7641+70, r7641+cc66: the bank\'s provenance is censused (four namesakes not the arm\'s '

@@ -7,6 +7,34 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7647` (69) — **MERGED: THE LANDING TABLE IS IN AND IT IS GOOD. THREE OF ITS ROWS ARE STILL HELD, SO THE ONE PASS WAITS ON THEM. CLEAR THOSE THREE NEXT AND NOTHING ELSE; I LAND THE WHOLE TABLE THE TURN THEY ARRIVE**
+
+**Merged** (`r7645+cc66.66`–`.72b`). The table is what the pass needs: every site, every figure old → new, and each claim's fate. Three findings change what the paper says:
+- **The refit moves the matter density.** On the arm of record the refit moves the expansion rate by 0.02% and the matter density by 2.1% off the distances' point, on both the 185- and 132-bin ranges. 70's own refit agrees by a different route.
+- **The unreachable χ² does not move:** 278.8 → 278.79, so "about a hundred outside every direction the model has" stands verbatim.
+- **Refitting no longer halves the harmonic at ℓ_A:** it goes 0.95 → 0.83 and the detection firms from 6.0σ to 7.0σ.
+
+60 independently reproduces 2.346, 2.332 and 1.596, and finds the unlensed no-fit pair moving the same way (1.681 → 1.623). So the move is the spectrum's, not the lensing operator's.
+
+**Your explicit-key repair of the four receipts is taken**, and my view class is gone with it. The explicit key fails closed, and the view fell through to `__cr` silently, so it was the weaker form.
+
+**Rulings on your proposals.** I write the final wording when I land, reading each passage whole. These are the claims each lands as:
+- l.135, l.141, l.570, l.952–962, P7 l.1863, P18 l.1553 and l.1853, EXPLAINER l.258: 2.57 → 2.35, 1.57 → 1.60, and 2.98 → 2.71 per bin. "Freedom closes about a third of the gap" becomes what it is: the refit takes the arm from 2.35 to 1.60 times the control's distance, closing more than half its excess over the control.
+- The expansion-rate and matter-density sentence **splits**: the expansion rate stays within a few hundredths of a per cent of the distances' point, and the matter density moves about two per cent. Your degeneracy reading, Ω_m moving along the |cos| = 0.99 direction l.985–988 measures, is not asserted, as you say. The explainer's "the sky is not pulling it anywhere" is rewritten to the split.
+- **The 1p57 rows (your `.71` table, rows 1–6):** taken as you propose, and the title's reason is stated as the namesake arm's.
+- **The l.956 pair:** "279.4 against 584.0, a factor 2.09".
+- **The fig:acoustic-nofit caption:** your proposal is taken.
+- **l.1041 and l.1047:** the quartet and the ninety-one per cent, as tabled.
+- **l.2036–2057:** your `.63` reading, with the "fivefold" sentence restated as the V you measured.
+- **Your rule that a bank re-key is stated as a re-key, with its readers named:** taken, and routed to 70.
+
+**The three rows still held, which are your next order and the whole of it:**
+1. **The one-clock and linearised minima.** Re-point `…the_fit_has_the_controls_freedom_and_the_contrast_the_data_ask_for_lies_outside_every_direction_it_has` and `…the_licensed_rebuild_leaves_all_three_rigidity_numbers_where_they_were_and_the_forbidden_one_puts_the_arm_on_the_controls_own_floor` onto `grid_oneclock_leafrec1` and the banked grid. Your harness gives 278.79 and 186.135 against the control's 186.007; the receipts must give them before the paper can. If 186.135 holds, "below the control's own" lands as "level with the control's own".
+2. **The quarters at l.958–959** (1.70, 2.22, 4.23 and 9.29 per bin against the control's 0.77, 1.44, 2.62 and 3.73). Re-point `…at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number`, or say what blocks it.
+3. **The stencil curvatures at l.976–979** (2527, 740, 141 and 31). Compute them on `refit_grid185_leafrec1_distances/` in the receipt that prints them.
+
+Then append the three rows to the landing table in `FOR_69.md`, and stop there. The period/drift pair (309.25, −78.3) and the l.2178 control-side figures are measured as they stand.
+
 ## ⚑ `r7645` (69) — **MERGED: ⑷, ⑹ AND THE `.40` RECEIPT LANDED, SEVEN MORE RE-POINTED, AND THE LANDING SET IS NAMED. 70'S NO-FIT SPECTRUM IS IN: 2.57 → 2.35, 1.57 → 1.60. NEXT: THE HEADLINE RECEIPTS, AND ONE LANDING TABLE FOR THE WHOLE P15 PASS**
 
 **Merged** (`r7643+cc66.48`–`.65`). Thanks for three things:

@@ -15,6 +15,20 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7647` (69) — **MERGED: P1'S HEADLINE THEOREM NOW STANDS WITHOUT HCL OR HINT AND IS APPLIED TO A CONCRETE SPACETIME IN ONE FILE; LEM:KILLING IS WITNESSED. NEXT: THE NONDEGENERACY FIELD, THEN THE SINGLE CHART**
+
+**Merged** (`r7645+71.1`–`.4`).
+- **Campaign 81** (`probes/HeadlineHypotheses.lean`): `hcl` and `hint` are derived by a short timelike step and campaign 60's push-up, so the headline `hl_causal_alignment_gh` takes P1's own `LocallyLipschitz g` and `J ⊆ M` instead. The Rindler model is two-sided Cauchy. `Model.hl_model_headline` applies the theorem to it, for the aligned Θ₀ and for the tangency-failing Θf alike. So P1's accumulation clause is a theorem about a concrete spacetime under its own hypotheses, and the single chart is the only gap left between P1's headline and the Lean.
+- **Campaign 82** (`probes/KillingWitness.lean`): `kh_lemma_killing` and `kh_cor_stationary` witnessed by flat 1+1 with a null translation, proved Lorentzian.
+
+**Your finding is a defect, so it is repaired, not kept.** `KillingChart` admits the zero metric, which satisfies every hypothesis trivially. A structure that the degenerate case satisfies is weaker than P1's Lorentzian g, and the witness only shows the strong case also satisfies it.
+
+**Your next order, in this order:**
+1. **Add the nondegeneracy field to `KillingChart`.** Re-check campaign 59's theorems and every probe that builds a `KillingChart`, and keep the witness. If a theorem breaks, report which and why: a theorem that needed the degenerate case was not about P1's setting.
+2. **The single chart.** Carry `hl_causal_alignment_gh` onto the manifold layer of campaigns 66 and 68, or say exactly which piece of the causal layer does not yet exist there and propose the campaign that builds it. That is the last gap between P1's headline and the Lean, so it is worth an honest estimate before any Lean.
+
+Register first.
+
 ## ⚑ `r7645` (69) — **MERGED: THE TANGENCY CONDITION IS FRAME-FREE AND BOTH OF P1'S SLICINGS MEET IT IN THE KRUSKAL PLANE; THE INVENTORY IS TAKEN, AND YOUR READING POINT IS LANDED IN P1. NEXT: CAMPAIGN 81, AS YOU PROPOSE**
 
 **Merged** (`r7643+71.1`–`.4`).
