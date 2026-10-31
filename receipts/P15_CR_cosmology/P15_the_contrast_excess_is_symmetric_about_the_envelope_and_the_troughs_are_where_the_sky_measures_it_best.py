@@ -151,7 +151,22 @@ _FINE = {'lcdm': 'r6941_fine_lcdm.npz', 'cr': 'r6941_fine_cr_leafrec1.npz'}
 F = {t: np.load(os.path.join(SP, _FINE[t])) for t in ('lcdm', 'cr')}
 V = np.load(os.path.join(SP, 'r6941_fine_cr_visleaf_leafrec1.npz'))
 S = np.load(os.path.join(SP, 'r6929_scan_cr_leafrec1.npz'))
-GE = np.load(os.path.join(SP, 'r6929_geometry_leafrec1.npz'))
+
+class _ArmOfRecordKeys:
+    """r7645 (69): `r6929_geometry_leafrec1` was re-keyed at r7643+70.1 -- its `__cr` keys now carry the
+    NAMESAKE arm and the arm of record sits under `__cr_leafrec1`.  This view reads every `X__cr` as
+    `X__cr_leafrec1` where the file carries it, so this receipt keeps reading the arm of record."""
+    def __init__(self, z):
+        self._z = z
+        self.files = z.files
+    def __getitem__(self, k):
+        if k.endswith('__cr') and (k + '_leafrec1') in self._z.files:
+            return self._z[k + '_leafrec1']
+        return self._z[k]
+    def __contains__(self, k):
+        return k in self._z.files
+
+GE = _ArmOfRecordKeys(np.load(os.path.join(SP, 'r6929_geometry_leafrec1.npz')))
 
 LC, FAC = CS.bin_center_and_fac()
 X, COV = CS.X_DATA, CS.COV_TT
