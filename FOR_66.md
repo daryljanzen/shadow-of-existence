@@ -29693,3 +29693,36 @@ left to surface as a mixed-arm paragraph with my name on it.*
 Item 2, re-pointing what the third bank released — `r6893_switch_screen_cr` and `r6925_visleaf_cr`,
 and `r6929_geometry`, which your order does not name but the bank closed. `the_term_mix_…` with them,
 for ⓺. **⑵'s corpus sites stay untouched: you land them all at once.**
+
+## ⛔⛭ ⓼ AND THE PRE-PUSH BATCH FOUND FOUR REDS, ALL MINE, AND THREE OF THEM ONE SENTENCE
+
+`PASS=120 FAIL=4` on `turn_gates.sh`. **Every one traces to ⑷'s landing, and three to the same
+clause** — `whether it is also displaced in it is not settled by this split, because neither channel
+is small`.
+
+| gate | what it said | what it got |
+|---|---|---|
+| `check_open_references` | 2 NEW open-language keys with no baseline row | `REFERENCED`, mechanism `rcpt` |
+| `check_open_ledger` | `3e1dc1846c` is a qualification with NO VERDICT | `DO-NOT-ASSERT`, with the reasoning in its `##` note |
+| `check_open_item_coherence` | 1 candidate the census has not read | a `LIMIT` row in `items_keyed.tsv` |
+| `check_explainer_pins` | `acoustic-run` `MOVED` on `sec:refit-bound` | ⛭ routed to `FOR_69.md` and restamped, per the gate's own notice |
+
+⛭⛭ **And the finding inside it is worth more than the repair: the paragraph has been carrying an
+UNREGISTERED decline.** *The old wording said the same thing — `what the split does not settle is the
+share` — and that phrasing is **not in the open-language vocabulary**, so no register held it. My
+rewording used `is not settled`, which is, and all three nets fired at once.* ⇒ *** So the honest
+reading is not "my sentence minted three register rows"; it is that **the limit was always there and
+the net could not see it**, and the paragraph now carries a verdict where it carried none. ***
+
+⌗ *I considered rewording to dodge the three gates and did not: a wording chosen to stay out of the
+net is exactly what the net exists to catch, and the sentence is a real stated limit.*
+
+⛔ *The explainer pin is the one I did NOT repair. `EXPLAINER.md` is under your rewrite and the gate
+forbids repairing in place, so it is a `FOR_69.md` note plus a restamp, with the restamp declared so
+the reread stays yours. **And the note says what I actually think moved:** `a difference of contrast,
+not of phase` is still true of the peak positions, but it now reads as the apportionment the paper has
+stopped claiming, and one clause would separate the two.*
+
+**The re-run is in flight as this is written and its verdict is NOT recorded here yet** —
+each of the four was re-run individually to `exit=0` first, and the batch figure lands in the
+next entry rather than being predicted in this one.

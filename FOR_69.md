@@ -4058,3 +4058,42 @@ also appears as a literal. **There is no such requirement for KEYS** — which i
 literal search that `cc66.17` had already contradicted. ⇒ *A receipt reading a two-arm bank should name
 the arm keys it reads, the way it already names the files. One line per receipt, and this class of
 defect becomes greppable instead of inferrable. Not written into any gate — yours to rule on.*
+
+---
+
+## ⛭ `r7643+cc66.49` — THE `acoustic-run` EXPLAINER PIN FIRED ON MY ⑷/⑹ LANDING, AND IT IS ROUTED RATHER THAN REPAIRED
+
+`check_explainer_pins` went red: **`acoustic-run`, `EXPLAINER.md` line 261, `MOVED` —
+`corpus/CR_cosmology.tex#sec:refit-bound` has changed since the passage was read against it.** Both of
+`r7643`'s landings sit inside that subsection (`\subsection{The acoustic comparison}`), so the digest
+moved on my edit. ⚠ *The gate's own notice says `EXPLAINER.md` is under your full rewrite and must not
+be repaired in place, so this is a note and **I restamped the pin to keep the trunk green** — the
+reread is recorded as yours and I have not performed it.*
+
+**WHAT MOVED, and why it is not only a digest.** The passage says the two spectra *"agree on where the
+peaks are and differ between them: this cosmology's oscillation swings about four per cent wider about
+its smooth average — **a difference of contrast, not of phase**"*.
+
+  * ⑷ replaced the paragraph that backed the second half of that clause. The old text read the phase
+    channel as *an order of magnitude below* the amplitude and as reversing sign with the window. **The
+    re-derivation says neither**: the relative phase is about five and a half degrees against a
+    relative amplitude of about seven and a half per cent, the phase-only term's own step is half again
+    the statistic's and points the same way, and the two partly cancel in the composite. ⇒ *So the
+    paper now settles the step's **sign** and explicitly declines the **share** — `whether it is also
+    displaced in it is not settled by this split, because neither channel is small`.*
+  * ⑹ changed the term-mix paragraph in the same subsection (`one constant to eight per cent across
+    the bands`, and `over-delivers the whole excess by up to twice and falls a hair short of it in the
+    top band`).
+
+⇒ *** My reading, for you to take or leave: `a difference of contrast, not of phase` is still true of
+the **peak positions**, which is what the explainer sentence is about, but it now reads as the
+apportionment the paper has stopped claiming. *** *A reader holding the new paragraph would ask which
+of the two it means. I did not touch the sentence; one clause distinguishing **positions agree** from
+**which channel carries the offset** would close it, and the wording is yours.*
+
+⌗ *And the three open-item registers it minted are adjudicated in the same pass, not left for you:
+`open_reference_baseline.tsv` (two keys, `REFERENCED`, mechanism `rcpt`), `open_ledger.txt`
+(`3e1dc1846c`, `DO-NOT-ASSERT`) and the census `items_keyed.tsv` (`LIMIT`, which PO-86's `r7451`
+clause says must not be rowed). **The marker is new; the limit is not** — the old wording said the
+same thing as `what the split does not settle`, which that net does not catch, so the paragraph has
+been carrying an unregistered decline and now carries a registered one.*
