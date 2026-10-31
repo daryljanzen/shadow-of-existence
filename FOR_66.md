@@ -29314,3 +29314,88 @@ and it is the last thing standing between `cc66.46` and the arm of record.*
 
 ⌗ *Instrument: `r7641_cc66_grid_readers/cc66_46_blockers_after_the_second_bank.py` — **five
 perturbations red**, and a sixth rewritten after it proved equivalent.*
+
+---
+
+# `r7641+cc66.46` — the per-receipt key check the sweep left owed, made — and ⛔ **my instrument was wrong three times before it was right, each time with a plausible number**
+
+`bank_gap_sweep.py` ended on the check it could not make: *"A READER IS NOT AUTOMATICALLY BLOCKED …
+up to 13 need the per-receipt key check before they can be called clear."* That check is now made, and
+**the answer prices item ⑵'s remaining half**.
+
+## ⓵ THE ANSWER, AND WHAT ONE ASK BUYS
+
+Of the 13 of my 44 that read a key-arm bank: **7 BLOCKED, 3 DECLARED, 3 CLEAR.**
+
+⇒ *** Re-running the `{geometry,noop}` family with `__cr_leafrec1` entries clears FIVE of the seven: ***
+
+| | |
+|---|---|
+| `the_contrast_excess_…` | **`cc66.46` itself** — the keystone of `cc66.45` |
+| `the_combs_resolution_…` | one of Set A's three bank-blocked |
+| `the_visibilitys_clock_…` | the second of Set A's three |
+| `the_locator_is_good_to_three_hundredths_…` | |
+| `a_source_with_no_physics_…` | |
+
+And the other two name exactly what else they need: `the_free_streaming_knob_…` also wants
+`r6893_slice_check`, and `the_held_period_estimator_…` — Set A's third — also wants `r6897_fields`.
+
+⛭ **So `cc66.45`'s "one receipt" was an undercount, and the undercount was mine.** With the key check
+actually made, the same family ask buys five, including two of the three Set A receipts I have been
+reporting as bank-blocked since `cc66.17`.
+
+## ⛔⛭⛭ ⓶ AND THE INSTRUMENT PRODUCED THREE DIFFERENT PLAUSIBLE ANSWERS BEFORE THIS ONE
+
+| version | verdict | why it was wrong |
+|---|---|---|
+| literal key names only | `5` blocked, `8` clear | `the_held_period_estimator_…` scored **CLEAR**, and `cc66.17` had already measured it BLOCKED: its keys are `g = lambda n, t: FLD[f'{n}__{t}']`, so **no literal `__cr` exists anywhere in the file** |
+| file-wide `__{` template search | `10` blocked, `3` clear | flagged `the_monopole_zero_point_…` and `the_two_readings_…` — **both already LANDED on the arm of record** |
+| template localised to each bank's variable | `10`, `3` | same: it had only two verdicts where the tree needs three |
+| **+ the DECLARED category** | **`7`, `3`, `3`** | — |
+
+⇒ *** Each wrong version returned a number a reader would have accepted. The only thing that caught
+the first was that I had an independent measurement of one case; the only thing that caught the second
+was knowing which receipts had landed. *** ⌗ *So the three counts are now **pinned**, because a count
+that moves with the method and is not pinned is a number nobody can audit — and this one goes into a
+bank ask.*
+
+## ⓷ WHY THERE ARE THREE VERDICTS AND NOT TWO
+
+A receipt can read a key-gap bank's `cr` side **knowingly** — saying so in its own header and gating
+the inference in the safe direction — and such a receipt is not blocked. `the_monopole_zero_point_…`
+calls `g('eta_ls_w','cr')` explicitly **and landed on the arm of record at `cc66.28`** with
+`r6897_fields` named bank-blocked beside it. ⇒ *The defect being hunted is an **undeclared** cross-arm
+read; a declared one is a priced caveat. Scoring the two the same would have called three landed
+receipts broken.*
+
+## ⛔⛭ ⓸ A NEW DISGUISE FOR THE PERTURBATION LESSON, AND IT IS THE THIRD TONIGHT
+
+Two perturbations came back `exit=0, 0 FAIL`. They had not failed to fire — **they had failed to
+apply**: my helper asserted on a non-matching string, raised, and the shell then ran the *unperturbed*
+file. ⇒ *** A patch that does not apply looks exactly like a gate that does not fire. *** ⌗ *The
+helper now verifies the file actually changed before running, and prints `PATCH FAILED, NOT A RESULT`
+otherwise. Re-run that way, one of the two fired and one genuinely did not.*
+
+⚠ **Three times in one revision a perturbation of mine proved nothing** — run from `/tmp` where ROOT
+resolved wrongly (`cc66.26`), logically equivalent to the original (`cc66.45`), and now failing to
+apply. *The common shape is that all three produced the output a passing perturbation produces.*
+
+## ⌗ ⓹ AND TWO OF MY OWN REFINEMENTS ARE INERT, WHICH I REPORT RATHER THAN BANK
+
+Perturbing the finished instrument showed that **de-localising the template test changes no receipt's
+verdict** (every receipt carrying a `__{` template uses it on the gap bank in question) and **not
+stripping comment lines changes none either** (the two receipts whose only `__cr` is a comment read
+the `cr` side anyway, so they are DECLARED). *Both refinements are right in principle and currently
+make no difference.* ⇒ *The localisation IS load-bearing for one thing — which bank gets **named** —
+so that is pinned: localised, `a_source_with_no_physics_…` is attributed to `r6919_geometry` alone,
+where a file-wide search also names `r6919_noop`, which it never indexes by a template on its own
+variable. **A bank ask is costed from the attribution, so it has to be right and not merely
+conservative.**
+
+⇒ **The ask, now priced:** the `{geometry,noop}` family re-run with `__cr_leafrec1` entries — nine
+banks — clears five receipts including `cc66.46` and two of Set A's three. `r6893_slice_check` and
+`r6897_fields` are separate and name one receipt each.
+
+⌗ *Instrument: `r7641_cc66_grid_readers/which_key_gaps_actually_block.py` — **four perturbations red**
+(the template test removed, the DECLARED category removed, the localisation de-localised, the
+non-gap bank re-included), **one honestly inert**, and two re-run after the patch-verification fix.*

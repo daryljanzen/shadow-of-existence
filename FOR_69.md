@@ -4007,3 +4007,25 @@ One run, and it restores the comparison the receipt is about.
 ⚠ *And one line for `RECIPES.md`: the banks store `manifest` as a Python repr and `config` as JSON, so
 `ast.literal_eval` reads one and fails on the other and `json.loads` the reverse. It cost me two
 crashes; a reader that picks one parser sees half the metadata.*
+
+**`r7641+cc66` ⑵ — THE KEY-GAP ASK IS NOW PRICED, and `cc66.45`'s "one receipt" was my own
+undercount.** The per-receipt key check `bank_gap_sweep.py` left owed is made (`FOR_66.md`
+`cc66.46`). Of the 13 readers of a key-arm bank: **7 BLOCKED, 3 DECLARED** (they read the `cr` key
+knowingly, declare it and gate it — these landed), **3 CLEAR**.
+
+⇒ **One ask clears five**: the `{geometry,noop}` family — `r6897_noop`, `r6911_noop`, `r6915_noop`,
+`r6919_geometry`, `r6919_noop`, `r6925_geometry`, `r6925_noop`, `r6929_geometry`, `r6929_noop` —
+re-run with `__cr_leafrec1` entries unblocks:
+- `the_contrast_excess_…` (**`cc66.46`** itself, the keystone);
+- `the_combs_resolution_…` and `the_visibilitys_clock_…` (**two of Set A's three bank-blocked**);
+- `the_locator_is_good_to_three_hundredths_…`;
+- `a_source_with_no_physics_…`.
+
+The remaining two are separate and name one receipt each: `r6893_slice_check`
+(`the_free_streaming_knob_…`) and `r6897_fields` (`the_held_period_estimator_…`, Set A's third).
+
+⛔ *Worth knowing how the count was reached: the instrument gave three different plausible answers
+first — 5/8, then 10/3, then 10/3 again — and the first scored `held_period_estimator` CLEAR when
+`cc66.17` had measured it blocked, because its keys are built `f'{n}__{t}'` and no literal `__cr`
+exists in the file. The three counts are pinned now. **A file bank cannot reach any of these: the arm
+is a key.**
