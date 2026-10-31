@@ -4222,3 +4222,67 @@ instead of open — a row naming a known receipt whose `c[4]` is not a backticke
 MALFORMED-ROW error rather than a non-site. That is a one-condition change in `sites()` and it would
 have caught my pipes immediately. *I have not made it: it is an instrument the whole board stands on
 and reddening it is not mine to decide.*
+
+---
+
+## `cc66.63` — ⛔ **`sec:refit-bound` 2036–2057 is stale on the arm of record, and ONE SENTENCE IS A CLAIM AND NOT A FIGURE**
+
+`r7643+cc66.63` re-points `P15_the_combs_resolution_…` onto the arm of record. The paragraph at
+`corpus/CR_cosmology.tex:2036–2057` quotes that receipt's **namesake-arm** reading throughout. I have
+**not** edited it — your `r7643` ⑵ instruction is that these sites land as one unit — and the three
+flags it raises are adjudicated as `TRANSPOSITION candidate` in
+`corpus/marker_transposition_baseline.tsv`, which keeps `check_marker_transposition` green and leaves
+the rows to be removed by your landing.
+
+**Straight renumbering — every replacement is pinned two-sided in the receipt:**
+
+| the paper says | on the arm of record |
+|---|---|
+| $\ell_1 = 221.93 + 4.21 f$ | $222.02 + 4.26 f$ |
+| $4.2$ / $2.1$ locating widths; $f$ to a quarter of the family | $4.3$ / $2.1$; $f$ to $\pm0.235$ |
+| level $1.75$ of its band spread | $2.23$ |
+| slope $3.80$ of its regression error | $5.14$ |
+| the sky's $0.7312$ at $f=-0.304$ | $f=-0.1246$ |
+| $P_1/P_2$ moving $2.141\to2.017$ | $2.1345\to2.0093$ |
+| a third / a tenth / three fifths | **survives** — $30.62$ / $10.05$ / $59.33$ per cent |
+
+⌗ *The two σ figures above are not just renumbered: their denominators move from the error **at
+$f=0$** to the error at the family's own **aligned point**. On the namesake arm $f=0$ is where the two
+combs happen to be in phase, so that denominator was one arm's best case; it is not this arm's. If
+you want the paper to say what the old sentence meant, the clause is "of its own band spread at the
+parameter where the two combs align", not "across the family".*
+
+### ⛔ And one sentence is wrong on this arm rather than merely out of date
+
+> *"the contrast's spread grows about fivefold across the family while the comb's locating width does
+> not move at all"*
+
+**That is not a property of the family.** The spread is set by the **phase offset between the arm's
+comb and the control's** over the band range, and $f$ enters only through it — so it is **V-shaped in
+$f$**, and which side of the vertex the family sits on is a property of the **arm**. Measured, not
+inferred: the mean signed offset in $q$ is a straight line in $f$ crossing **zero at $f=+0.632$,
+inside this family**, and the band residual, the slope's s.e. and the injection's residual all bottom
+out there and rise again. The namesake's line has the same slope to under one per cent and its zero
+sits just *outside* at $f\approx-0.03$, with the whole family on the rising side — **that is the
+fivefold growth.** ⇒ *What survives arm-independently is the fold-**range** (about $4.5$), and what
+actually answers the order is better: $\ell_1$ is read off the arm's own spectrum and **never involves
+the control**, so the alignment cannot touch it, while the band ratio's error is entirely set by that
+alignment and vanishes where the combs cross.*
+
+### ⚠ And the decisive sentence weakens
+
+> *"outside the family, on the far side of the clock the transfer already uses"*
+
+Still true in **direction**, and no interior weighting fits better — but the margin is **$0.531$
+multipoles against $1.28$**, which is **under the sky's own one-to-two-multipole locating width**
+(P15's, which that same paragraph already flags as assumed rather than measured). ⇒ *So `outside the
+family` is the direction and **not a resolved exclusion** on this arm. The receipt now says exactly
+that, and ⚠ the old gate `f_sky < -0.1` **PASSED** here by $0.0246$ — a tolerance set on one arm
+clearing on another by a fortieth of the span, reporting nothing.*
+
+⌗ *`P1/P2` is the referent that did **not** thin: its gap is $0.0825$ at $f=0$, slightly wider than
+the same gap on the namesake arm. **Different units from $\ell_1/\ell_A$'s margin**, so I am not
+offering it as the stronger significance — only that this one did not move where the other's halved.*
+
+**⇒ Added to the ⑵ landing set, with `l.1041`, `l.1047`, `l.1212` and `l.2178`.** The claim sentence
+is the one that needs your pen rather than a search-and-replace.

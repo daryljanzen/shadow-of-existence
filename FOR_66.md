@@ -30483,7 +30483,26 @@ and inert only on the key read. **A control that cannot move is not a control**,
 both halves.* (`cc66_r185_verify_lcdm` has no sibling at all; for that one the statement cannot be
 made and is not made.)
 
-## ⇒ ⓻ ITEM 2: SEVEN RE-POINTED, THREE BANK-BLOCKED
+## ⛔ ⓻ AND THE RE-POINT MADE A PAPER PARAGRAPH STALE — WITH ONE SENTENCE THAT IS A CLAIM, NOT A FIGURE
+
+`check_marker_transposition` is excluded from the lean batch for cost, so I ran it directly before
+pushing rather than finding it in CI. ⇒ **Three new flags, all at `CR_cosmology.tex:2057`** —
+`221.93`, `4.21` and `2.141`, figures this receipt computed on the namesake arm and no longer carries.
+
+⌗ *Adjudicated as `TRANSPOSITION candidate` in `marker_transposition_baseline.tsv` — **routed, not
+adjudicated away**, the class `cc66.55` opened for exactly this. Gate green; the rows leave that file
+when 69 lands the set.*
+
+⛔ **But it is not a renumbering.** The same paragraph **asserts** *"the contrast's spread grows about
+fivefold across the family while the comb's locating width does not move at all"* — ⇒ *** which is
+precisely the thing ⓶ shows is a property of the **arm** and not of the family. *** And the decisive
+sentence weakens: still outside, still inadmissible in direction, but by 0.531 multipoles against
+1.28, under the sky's own locating width — which that same paragraph already flags as *assumed rather
+than measured*. ⌗ *Both are in `FOR_69.md` with the full replacement table and the note that the claim
+sentence needs 69's pen and not a search-and-replace. **The three shares survive** (30.62 / 10.05 /
+59.33).*
+
+## ⇒ ⓼ ITEM 2: SEVEN RE-POINTED, THREE BANK-BLOCKED
 
 `.52`, `.54`, `.57`, `.59`, `.61`, `.62`, `.63`. ⌗ *Of the three left,
 `the_visibilitys_clock_…` has a partial available (blocked on `r6925_geometry` — 22 arm keys — and
