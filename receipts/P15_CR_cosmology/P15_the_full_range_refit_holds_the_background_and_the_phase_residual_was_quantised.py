@@ -351,13 +351,35 @@ if _mq:
           f"{(_A['WB'] / _PQ['WB'] - 1) * 100:+.2f}% and {(_A['NS'] / _PQ['NS'] - 1) * 100:+.2f}%",
           2538.0 < _A['H0'] < 2540.5 and 812.0 < _A['OM'] < 814.0
           and 149.3 < _A['WB'] < 150.4 and 25.7 < _A['NS'] < 26.3)
-    check("⛔ ** AND THE TILT IS THE ONE DIRECTION THAT SOFTENS -- the only one of the four that "
-          f"gets CHEAPER to leave ({_A['NS'] / _PQ['NS'] - 1:+.4%}) while the other three get "
-          "dearer, and the only one on which the arm of record is LESS constrained than the "
-          f"CONTROL ({_A['NS'] / _C['NS']:.4f} of it) ** -- so the re-point stiffens the background "
-          "and loosens the tilt, which is the same direction `cc66.68` found the refit moving it in",
-          _A['NS'] < _PQ['NS'] and all(_A[k] > _PQ[k] for k in ('H0', 'OM', 'WB'))
-          and _A['NS'] < _C['NS'] and all(_A[k] > _C[k] for k in ('H0', 'OM', 'WB')))
+    # ⛭⛭⛭ THIS CLAIM IS MADE AGAINST THE CONTROL AND NOT AGAINST THE PAPER'S PRINTED QUARTET, AND
+    #   THAT IS DELIBERATE.  `check_quote_pins` named the capture above as a new quote-pin key and
+    #   put the reason plainly: a gate that asserts another seat's sentence "fails on SUCCESS when
+    #   the sentence said something was open".  The first form of this gate compared the measured
+    #   quartet with the PRINTED one, so the day 69 lands the arm-of-record figures the comparison
+    #   would invert and this receipt would go red on a correct landing.  ⇒ The content -- three
+    #   directions stiffen, the tilt softens -- is control-relative, and the control does not move.
+    check("⛔ ** AND THE TILT IS THE ONE DIRECTION THAT SOFTENS: ** it is the only one of the four on "
+          f"which the arm of record is LESS constrained than the CONTROL ({_A['NS'] / _C['NS']:.4f} "
+          f"of it) while the other three are MORE ({_A['H0'] / _C['H0']:.2f}, "
+          f"{_A['OM'] / _C['OM']:.2f}, {_A['WB'] / _C['WB']:.2f} of it) ** -- so the re-point "
+          "stiffens the background and loosens the tilt, the same direction `cc66.68` found the "
+          "refit moving it in.  *Stated against the control because the control is the thing that "
+          "does not move; comparing with the paper's printed quartet would make this gate fail the "
+          "day 69 lands the new figures.*",
+          _A['NS'] < _C['NS'] and all(_A[k] > _C[k] for k in ('H0', 'OM', 'WB')))
+    _ns_pq = {k: _PQ[k] for k in ('H0', 'OM', 'WB', 'NS')}
+    _is_namesake = (_ns_pq == {'H0': 2527.0, 'OM': 740.0, 'WB': 141.0, 'NS': 31.0})
+    _is_aor = (_ns_pq == {'H0': 2539.0, 'OM': 813.0, 'WB': 150.0, 'NS': 26.0})
+    check("⌗ ** AND THE PAPER'S PRINTED QUARTET IS ONE OF EXACTLY TWO LEGITIMATE STATES: ** the "
+          "NAMESAKE grid's `2527 / 740 / 141 / 31`, which is what it carries now, or the arm of "
+          "record's `2539 / 813 / 150 / 26`, which is what `cc66.74` proposes and 69 lands.  "
+          f"*It currently reads {_PQ['H0']:.0f} / {_PQ['OM']:.0f} / {_PQ['WB']:.0f} / "
+          f"{_PQ['NS']:.0f}, the "
+          + ('NAMESAKE' if _is_namesake else 'ARM OF RECORD' if _is_aor else 'UNRECOGNISED')
+          + " state.*  This is the disjunction `check_quote_pins` asks for: the gate passes in "
+          "either state and fails only on a THIRD set, which would be a drift rather than a "
+          "landing.",
+          _is_namesake or _is_aor)
     check("⌗ and the CONTROL's four are untouched by the re-point, pinned here so the comparison's "
           f"other half is asserted too: {_C['H0']:.4f}, {_C['OM']:.4f}, {_C['WB']:.4f}, "
           f"{_C['NS']:.4f}",

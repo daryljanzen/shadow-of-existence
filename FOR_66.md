@@ -31364,3 +31364,39 @@ prose.
   **it gained a computing receipt for the first time**, so the flag fires on the citation placement —
   the sentence printing it cites a different receipt from the one that now carries it. Adjudicated as
   candidates and routed, not adjudicated away.
+
+**AND A THIRD CI RED I NEVER RAN: `check_quote_pins`.** CI's `fast` job on `cfc662751` named three
+gates, not two — `check_quote_pins check_figures_pinned check_marker_transposition`. **`turn_gates.sh`
+excludes `check_quote_pins` by name**, so my pre-push batch never asks it: the same shape as the
+`run_touched_readers` gap earlier today, and the second time in one session that the thing I did not
+run is the thing that failed.
+
+It had minted **one** new key — the `r7647` ⑶ capture of `sec:refit-bound`'s quartet — and its own
+text named the defect precisely: *"a gate that asserts another seat's sentence … fails on SUCCESS when
+the sentence said something was open."* **My first form of that gate did exactly that**: it compared
+the measured quartet with the PRINTED one, so the day 69 lands the arm-of-record figures the
+comparison would invert and the receipt would go red on a correct landing. Repaired in two parts, and
+adjudicated `ALT / ALT-OK`:
+1. the substantive claim — three directions stiffen, the tilt softens — is now made against the
+   **CONTROL**, which does not move;
+2. the paper state is tested as a **disjunction** of the two legitimate states (the namesake's
+   `2527/740/141/31`, which it carries now, or the arm of record's `2539/813/150/26`, which 69 lands),
+   so the gate passes in either and fails only on a THIRD set, which would be drift rather than a
+   landing.
+
+⚠ **AND THE RATCHET HAS A BLIND SPOT THAT HAPPENS TO FAVOUR ME, SO IT GOES ON THE RECORD.** It
+detected the literal I passed INLINE to `re.search(...)` and did **not** detect the four patterns
+`cc66.71` added to `…the_1p57_has_no_parameter_address…`, because those live as values in a `PAT`
+dict and reach the matching call through a variable. None of the four is in
+`quote_pin_baseline.tsv` (checked: zero rows for that receipt), and `check_quote_pins` never ran on
+`cc66.71`'s head because my own next push cancelled that run. The four are:
+`"moves by \$([0-9.]+)\\%\$ and its matter density by \$([0-9.]+)\\%\$"`,
+`"sits \$([0-9.]+)\$ of a standard deviation from"`,
+`"at a cost of \$([0-9.]+)\$ in \$\\chi\^\{2\}\$"` and
+`"arm prefers \$([0-9.]+)\$ against the control's \$([0-9.]+)\$, bluer by \$([0-9.]+)\$"`.
+⇒ **I am not adding baseline rows for them**, because the gate also fails on an adjudication that
+describes no live key, so rows the instrument cannot see would redden it for a second reason. Routed
+instead: the detector should follow a literal held in a dict or a variable, and until it does, four of
+this seat's quote pins are unratcheted. *The same "fails on success" question applies to all four —
+PART 5 of that receipt is designed to go red when 69 lands the prose, which is deliberate there and
+declared, but it is the sort of thing this ratchet exists to make someone say out loud.*
