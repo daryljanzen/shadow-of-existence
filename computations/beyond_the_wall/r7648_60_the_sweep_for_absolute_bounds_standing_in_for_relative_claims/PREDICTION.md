@@ -94,3 +94,57 @@ at the answer.
 ⌗ **And one scope rule, from the standing list:** receipts belonging to `70` or to cc66, and the
 named do-not-edit files, are **routed with a patch and never edited** — including any hit found in
 them. cc66's own receipt is already repaired by cc66 and is not touched here.
+
+---
+
+# ⛔ AMENDMENT `r7648+60.1` — REGISTERED BEFORE THE SECOND PASS IS RUN, AND BEFORE ITS OUTPUT IS SEEN
+
+**The first pass ran as registered and its result is kept below in full. It must not be reported as
+the answer, and the reason is the net and not the corpus.**
+
+**What the registered detector returned:** `1140` receipts parsed, `517` carrying an absolute bound,
+**2** candidate pairs — and **4566** absolute bounds whose receipt never normalises the same
+variable, so condition ⅱ could not be evaluated on them. Both candidates were adjudicated by
+reading and **neither is the class**: each is a two-sided pin at a measured value that a wrong run
+would fail, with the relative claim separately held by its own per-cent gate. ⇒ **Arm ② FIRES** on
+the registered detector: no adjudicated hit outside cc66's one.
+
+⛔ **AND THAT VERDICT IS NOT REPORTABLE AS "THE CLASS IS EMPTY", BECAUSE THE NET SAW 2 OF 4568.**
+*A sweep with 0.04 per cent visibility that returns nothing has measured its own reach and not the
+corpus — which is the same shape this seat has twice caught as a guard that cannot fail on the data
+it is given. The registered limit ⅱ was declared as a limit; it turns out to be the whole net.*
+
+**The second pass therefore replaces how the SCALE is obtained, and nothing else.** The flaw in ⅱ
+was requiring the receipt to normalise the variable somewhere else in the file. But an absolute bound
+in the pinned form `abs(V − c) < t` **carries its own scale**: `c` is the value the bound is pinned
+at, so `100·t/|c|` is the bound's size in per cent with no normaliser needed. That reaches the
+pinned population, which is most of the 4566.
+
+**The widened rule, fixed here before it is run:** a `(receipt, variable)` pair is a CANDIDATE when
+
+- ⅰ′ an absolute bound `abs(V − c) <|> t` with `t` and `c` numeric and `c ≠ 0` — relative size
+  `B = 100·t/|c|` — or the first pass's form, a raw bound plus a normaliser;
+- ⅱ′ **the receipt itself names a PER CENT for that same variable**: an f-string field whose
+  expression contains `V` and whose following literal text begins with `%` or `per cent`. *This is
+  the claim side made objective — the receipt's own printed relative size for the quantity it is
+  bounding — and it needs no prose parsing, which the first registration named as a limit.*
+- ⅲ′ `B > P`, where `P` is the **smallest** such printed per-cent magnitude the receipt names for
+  `V`: **the bound, in per-cent terms, is looser than the per-cent the receipt itself prints.**
+
+**Registered arms for the second pass:**
+
+- ⑥ **The seed holds on the widened rule too**: cc66's pre-repair form flags (bound `3.36%` against
+  its own printed `2.16%`), and the repaired form does not.
+- ⑦ **And the two first-pass candidates do NOT flag under ⅱ′/ⅲ′**, because each prints a per-cent
+  for its variable that is *larger* than its bound — `36.35%` against `2.56%` in one — which is the
+  adjudication above, reproduced by the rule rather than asserted.
+- ⑧ **The widened net reaches at least ten times as many bounds as the first**, i.e. over `20`
+  candidate pairs. *Registered as a floor on REACH, not on hits: the first pass's failure was reach.*
+- ⑨ **Arm ② is re-read on the widened net.** If it still finds no adjudicated hit outside cc66's,
+  *then* the order's reachable negative is reported as reached — and the blind count is reported
+  beside it either way, because a sweep's verdict is only as wide as its net.
+
+⌗ *No threshold was moved and no bound was relaxed to make a hit appear: `PCT_FLOOR` stays at one
+per cent and ⅲ′ is strictly sharper than ⅲ, since it compares against the receipt's own printed
+figure rather than against a fixed floor. The amendment widens WHERE the scale comes from, which is
+the limit the first registration had already named.*

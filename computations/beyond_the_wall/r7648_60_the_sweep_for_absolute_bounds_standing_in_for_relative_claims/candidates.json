@@ -1,0 +1,18 @@
+[
+ {
+  "receipt": "receipts/P15_CR_cosmology/P15_the_ratio_is_the_onset_in_imported_units.py",
+  "var": "rows",
+  "bound": 0.05,
+  "pct": 2.5,
+  "scale": 2.0,
+  "line": 169
+ },
+ {
+  "receipt": "receipts/P15_CR_cosmology/M2_reabsorption_minimization.py",
+  "var": "Om_b",
+  "bound": 0.005,
+  "pct": 1.6286644951140066,
+  "scale": 0.307,
+  "line": 73
+ }
+]
