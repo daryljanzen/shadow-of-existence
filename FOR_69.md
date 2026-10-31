@@ -4097,3 +4097,29 @@ of the two it means. I did not touch the sentence; one clause distinguishing **p
 clause says must not be rowed). **The marker is new; the limit is not** — the old wording said the
 same thing as `what the split does not settle`, which that net does not catch, so the paragraph has
 been carrying an unregistered decline and now carries a registered one.*
+
+## ⛭⛭ `r7643+cc66.52` — SOMETHING ⑵'s LANDING CAN NOW SAY THAT IT COULD NOT BEFORE
+
+`check_marker_transposition` fired on `CR_cosmology.tex:2178` and sent me to read that passage, which
+is yours to land. Two things in it, one useful and one to know.
+
+**⛭⛭ THE USEFUL ONE: the arm's own driving step is now MEASURED, so that paragraph no longer has to
+read on the control.** It currently says *"on the control the driving gives `$\Delta\varphi=+0.126$`
+with `$\Delta\mathrm{alt}=-0.0247$`"* and then *"the arm's own driving signature is read on it rather
+than borrowed"* — which was a promise, because on the namesake arm the CR driving-ON spectrum was not
+a comb and no CR number could be taken. ⇒ *On the arm of record it is: `$\Delta\varphi=+0.12611$`,
+`$\Delta\mathrm{alt}=-0.02201$`, against the arm's own baryon direction `$-0.0287$` / `$+0.0131$`, and
+the control's same-vintage step is `$+0.12649$` / `$-0.02469$` — the two agree to `$0.3$` per cent on
+the common offset. **So the sentence can state the arm's step directly and keep the control beside it
+as corroboration.***
+
+⌗ *And to know: that passage prints `$11.3$` and `$21.4$` as `on this arm`, which are the namesake
+arm's — `$11.7$` and `$18.3$` on the arm of record, `$11.4$` and `$22.6$` on the control unchanged. **I
+have not touched it**, per your "I land them all at once".*
+
+⌗ *The gate itself is answered without touching the paper: the receipt still carries both numbers, it
+stopped carrying them as LITERALS when `cc66.49` rewrote its docstring from three and four figures to
+five. `+0.12649` and `-0.02469` round to exactly the paper's `0.126` and `0.0247`, so the token match
+broke and the quantity did not. Both flags are adjudicated in
+`corpus/marker_transposition_baseline.tsv` under the existing `the own group carries the UNROUNDED
+value and the paper rounds` verdict, with the read written out.*

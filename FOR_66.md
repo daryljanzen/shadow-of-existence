@@ -29730,3 +29730,27 @@ red run `CR_cosmology.tex` was uncommitted, so it ran — and passed, on exactly
 and the regenerated appendices; on the green run everything was committed and pushed, so it
 dropped out by its own rule. **Designed behaviour, and the gate was asked on the content that
 needed it.** The push asks it again in CI either way.*
+
+## ⛔⛭ ⓽ AND CI CAUGHT ONE MORE, WHICH THE LEAN BATCH CANNOT ASK
+
+`fast — registers, views, IDs` went red on `28de2e5c4`: **`check_marker_transposition`**, one of the
+twelve the lean batch leaves to the push. ⌗ *It is also on the known list of gates that read red
+locally and green in CI on a shallow clone — so I ran it rather than assuming either way, and it is
+red here too and the finding is real and mine.*
+
+**What it said:** `CR_cosmology.tex:2178` prints `0.0247` and `0.126` beside a receipt group that no
+longer carries them.
+
+**What it is:** *the `.40` re-point rewrote that receipt's docstring from three and four figures to
+five.* `+0.12649` and `-0.02469` round to exactly the paper's `0.126` and `0.0247` — **the token match
+broke and the quantity did not**, and the control does not move with the arm of record, which the bank
+states and the receipt measures. ⇒ *Adjudicated as `not a transposition -- the own group carries the
+UNROUNDED value and the paper rounds`, which is an existing verdict in that baseline with a precedent
+at `r7109`, and the read is written into the row.*
+
+⛭⛭ **And the gate earned its keep twice over, because it sent me to read a passage I would not have
+opened.** `2178` says *"the arm's own driving signature is read on it rather than borrowed"* — a
+promise, on an arm where no CR driving number could be taken. ⇒ *On the arm of record it CAN: the step
+is `+0.12611` / `−0.02201`, the control's is `+0.12649` / `−0.02469`, and the two agree to `0.3` per
+cent on the common offset. Routed to `FOR_69.md` as something ⑵'s landing can now say, with the note
+that the same passage's `11.3` / `21.4` are the namesake arm's and that I have not touched it.*
