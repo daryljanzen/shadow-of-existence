@@ -30358,3 +30358,141 @@ live in the history and in this file.*
 `the_visibilitys_clock_…` have partials available and `a_source_with_no_physics_…` and
 `the_held_period_estimator_…` do not. **Every one of the six so far found a statistic that does not
 survive the move, and one number explains all of them.***
+
+---
+
+# `r7643+cc66.63` — `the_combs_resolution_…` re-pointed, and ⛔⛔ **a tolerance that PASSED is the worst thing in it**
+
+Seventh receipt, and the fullest move yet: six banks go to the arm of record together — the scan,
+its geometry, the endpoint identity, the base identity, the band ratios' arm side and the
+**locator's own validation substrate**. The two no-op legs stay on the namesake arm, declared.
+⌗ *And for the first time the blocked legs do **not** straddle: ⓵ is internal to `r6929_noop` and ⓶
+pairs `r6929_noop` against `r6925_noop`, so both stay wholly on one arm and neither becomes the
+cross-arm comparison `r7639+cc66.15` named. The provenance chain the arm of record needs is intact
+without them — ⓸ and ⓹ are bit-for-bit and to the `KSLICE` sum's rounding on the arm itself.*
+⇒ **44 gates, `exit=0`, eleven perturbations all on target, `figure_pin_baseline.tsv` −13.**
+
+## ⛔⛔ ⓵ THE WORST FINDING: A NAMESAKE TOLERANCE THAT CLEARED ON THIS ARM BY A TWENTIETH OF THE SPAN
+
+The headline gate was `f_sky < -0.1`, set when `f_sky` was **−0.304** on the namesake arm. On the arm
+of record `f_sky` is **−0.1246**. ⇒ *** **It PASSED. By 0.0246.** *** ⌗ *That is worse than failing:
+a bound set on one arm clearing on another by a fortieth of the family is exactly what
+`check_figures_pinned` would have called pinned and a reader would have read as a resolved exclusion,
+and **nothing in the machinery would have said a word**.*
+
+In multipoles the margin halves and more: the sky sits **0.531** multipoles below the arm at f=0,
+against **1.28** on the namesake. The sky's own locating width is one to two multipoles, P15's, taken
+as given. ⇒ *** So on this arm the sky is **less than one locating width** outside the family:
+`lies outside the family` — the receipt's own title clause — is no longer a resolved exclusion. ***
+
+⛭ **What survives with full force is the half that needs no margin**: `l_1/l_A` is monotone in f and
+already above the sky at f=0, so no f>0 is closer, the order's third branch still does not arise,
+and the direction the disagreement would need is still inadmissible. *The claim is restated to say
+the direction and the absence of an interior fit, with the margin named; `f_sky` and the margin are
+both pinned two-sided, and so is the 0.0246 by which the old bound cleared.* ⌗ *And `P1/P2`, the
+second external referent, is the one that did **not** thin: its gap to the sky is `0.0825` at f=0,
+slightly wider than the same gap on the namesake arm rather than narrower. **I first wrote that it
+carries `the wider margin of the two` — that was wrong and I cut it**: `0.0825` in a peak-height
+ratio and `0.00175` in `l_1/l_A` are different units, and without an uncertainty on the sky's
+`P1/P2` neither is a significance. What is said now is only the same-units, arm-to-arm comparison:
+this referent's margin did not move where the other's halved.*
+
+## ⛭⛭⛭ ⓶ AND ONE CLAIM WAS NEVER A LAW: `THE CONTRAST'S ERROR GROWS WITH THE PARAMETER`
+
+This is the best thing in the receipt. The old reading — band residual `0.0089 → 0.0441`, slope s.e.
+`0.00284 → 0.01410`, *a factor five each* — was read as a property of **f**. It is not.
+
+That error is set by the **phase offset between the arm's comb and the control's over the band
+range**, and f enters only through it. So it is **V-shaped in f**, and which side of the vertex the
+family sits on is a property of the **arm**. ⇒ *Measured directly rather than inferred: the mean
+signed offset in q is a straight line in f, and it crosses **zero at f = +0.632 — inside the
+family**. The band residual (`0.04252 → 0.00949 → 0.01538`), the slope's s.e.
+(`0.01358 → 0.00303 → 0.00491`) and the **injection's** residual all bottom out at the same interior
+point and rise again.*
+
+⛭ **And the two arms' lines differ only in intercept** — their slopes agree to under one per cent.
+The namesake's zero sits at f ≈ −0.03, just *outside*, with the whole family on the rising side:
+**that is the five-fold growth the old gate read as a law.** The intercept difference is −0.0143 in
+q, of which the arm of record's `l_A` being 0.38% larger accounts for −0.0123 at the band range's
+mean q. ⇒ *** `cc66.60`'s number, doing the work a fifth time. ***
+
+⌗ *What survives the move as an arm-independent statement is the **fold-range**: about four and a
+half on the residual and the s.e. alike, nine on the injection's — the namesake's five-fold, read
+between the vertex and the far end instead of between the ends. That is what is pinned.*
+
+⇒ **And it answers the order better than the thing it replaces.** What separates the comb from the
+contrast is not that one degrades and the other doesn't — it is that `l_1` is read off the arm's own
+spectrum and **never involves the control at all**, so the alignment cannot touch it, while the band
+ratio's error is *entirely* set by that alignment and vanishes where the combs cross.
+
+## ⛭ ⓷ THE SAME RE-ANCHORING REPAIRED THREE MORE, AND TWO OF THEM SHARPENED
+
+`cc66.60`'s repair form — re-anchor on each arm's own scale — for the fourth, fifth and sixth time:
+
+| what | namesake form | arm of record, re-anchored |
+|---|---|---|
+| the two σ denominators | the error **at f=0** | the error at the family's own **aligned point** |
+| the FWHM quantisation | three widths; `r6925`'s pair vs this arm's η step, to `1e-3` | **two** widths; this arm's own pair, one η step **to machine zero** |
+| `d r_s/d χ` monotonicity | allowance `−2e-6`, for the namesake η grid's sixth-decimal jitter | monotone to **machine precision**, worst step `−1e-15` |
+
+⇒ *** Two of the three came out **stricter**, not looser: a tolerance of `1e-3` became exact, and an
+allowance of `2e-6` tightened by nine orders. The jitter the old allowance was written for was the
+namesake arm's own. *** ⌗ *And the σ re-anchoring is load-bearing, not cosmetic: putting the
+denominators back to f=0 reddens the level/slope gate (perturbation P5). The level goes 2.23σ and the
+slope 5.14σ against the comb's 4.26 — so the order's branch is still half right, but `under two
+sigma` was the namesake's phrase and is not restated.*
+
+## ⛔ ⓸ I MISSED A SIXTH BANK, AND THE FIGURE-PIN BLOCK CAUGHT IT
+
+The locator's validation substrate `r6941_fine_cr` loads **apart from the others**, under its own
+`r7097` note, and I left it on the namesake arm — validating the abscissa of an arm the receipt no
+longer reads. ⇒ *The `INDEX.md` figure-pin block **failed on the locator's two numbers** and that is
+how I found it.* ⌗ *A pin block written for the row's figures earned its keep as a re-point check. It
+is stricter again on the arm of record: `0.00336` and `0.0206`, against `0.00351` and `0.0229`.*
+
+## ⛔⛔ ⓹ AND A BLIND SPOT IN `check_figures_pinned` — WHICH I CREATED, THEN MEASURED
+
+Writing the row I put `$|43.9516-43.5913|$` in the claim cell. **Two unescaped pipes.** The guard
+splits each `INDEX.md` row on unescaped `|` and requires `c[4]` to start with a backtick; with the
+columns shifted, `c[4]` was `43.9516-43.5913`, so **the entire row dropped out of the guard**.
+
+⇒ *** It does not complain. It goes **silent**. *** ⌗ *I found it only because the stale count was
+implausible — 17 rows stale with **zero** live for the receipt. A row with dozens of figures printing
+none is not a pass, and the arithmetic is the only thing that says so.*
+
+**So I measured the whole file.** Of **1086** `INDEX.md` rows naming a known receipt, **1085** are
+picked up and **one is silently outside the guard**: `receipts/INDEX.md:1210`, whose path cell is not
+backticked (`S60_the_test_that_asks_whether_a_literal_…`). ⇒ **Priced: backticking it brings 63
+unpinned figures live.** The ratchet forbids baselining them, so this is **not mine to fix** — it is
+60's receipt and a 63-figure bill. ⌗ *Routed to 69, with the price, rather than touched.*
+
+## ⇒ ⓺ ELEVEN PERTURBATIONS, AND THE HALF-MOVE IS IMPOSSIBLE FOR A THIRD TIME
+
+Every moved pin perturbed before this was written; **eleven on target, none off**. Two worth naming:
+
+- **P11, the half-move**: reverting the scan alone and leaving geometry and visleaf on the arm of
+  record reddens ⓸ **and** ⓹ — both bit-identity gates. ⇒ *** Third receipt in three where existing
+  machinery makes a half-moved re-point impossible rather than merely detectable. ***
+- **P10, the whole arm reverted**: ten reds including the pin block. *The receipt cannot be run on
+  the wrong arm quietly.*
+
+⌗ *And the control side is **measured** immaterial rather than assumed: the injection control key
+read here is bit-identical between the control's two recombination treatments, while a key in the
+same file that swaps the arm's visibility in differs by `2.8e-3` — so `LEAFREC` is live in that bank
+and inert only on the key read. **A control that cannot move is not a control**, so the gate asserts
+both halves.* (`cc66_r185_verify_lcdm` has no sibling at all; for that one the statement cannot be
+made and is not made.)
+
+## ⇒ ⓻ ITEM 2: SEVEN RE-POINTED, THREE BANK-BLOCKED
+
+`.52`, `.54`, `.57`, `.59`, `.61`, `.62`, `.63`. ⌗ *Of the three left,
+`the_visibilitys_clock_…` has a partial available (blocked on `r6925_geometry` — 22 arm keys — and
+`r6925_noop`); `a_source_with_no_physics_…` (`r6919_geometry`, `r6919_noop`) and
+`the_held_period_estimator_…` (`r6897_fields`) have none.* ⇒ **Every one of the seven found a
+statistic that does not survive the move, and `cc66.60`'s single number is why all seven did.**
+
+⌗ *Also for the record: the `scoped — the tolerance perturbation` red recurred on head `24977050e`,
+three commits behind the tip. Its carry ledger NAMED two of my own receipts, so I ran both on the
+current tree — `exit=0` both. **The carry entries are historical across five or six branches, not a
+live red**, and the failure is the cancellation mode already commented once on PR #573, so no second
+comment is owed.*

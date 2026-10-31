@@ -4193,3 +4193,32 @@ yours twice over, once by the ⑹ ruling and once because the correction is to a
 wrong: `an intercept against a slope worth three per cent of it` reads `0.031` on both arms, measured
 by running the receipt each way. It is built from `r6975_mix{,b}_lcdm` against the control's own band
 std — control-side throughout — so the arm never enters it. **The flag was mine and it was false.***
+
+---
+
+## `cc66.63` — ⛔ **`check_figures_pinned` fails OPEN on a malformed `INDEX.md` row, and one row is out right now**
+
+**The mechanism.** The guard gathers `INDEX.md` sites by splitting each row on unescaped `|` and
+requiring `c[4]` to start with a backtick (the receipt-path cell), taking `c[3]` as the claim cell.
+⇒ *If anything shifts or un-backticks that cell, the row is not flagged — it is **dropped**. The
+guard reports nothing at all for it.*
+
+**I did it to myself first.** Writing `cc66.63`'s row I put `$|43.9516-43.5913|$` in the claim cell.
+Two unescaped pipes shifted the columns and the entire row — dozens of figures — left the guard
+silently. ⌗ *I caught it only on the arithmetic: 17 baselined rows stale with **zero** live for the
+receipt. Fixed with `\lvert … \rvert`.*
+
+**Measured across the file.** Of **1086** rows naming a known receipt, **1085** are picked up and
+**one is silently outside**: `receipts/INDEX.md:1210`, whose path cell is not backticked —
+`receipts/L_probability/S60_the_test_that_asks_whether_a_literal_is_anywhere_in_the_repo_canno…`.
+
+**Priced.** Backticking that cell brings **63 unpinned figures** live under that key. The baseline
+may only shrink, so they cannot be baselined, and the gate would redden until they are pinned or the
+row prints fewer digits. ⇒ *** It is 60's receipt and a 63-figure bill, so I have **not** touched it.
+Yours to route. ***
+
+**What I would suggest, if you want it closed rather than noted:** the guard could fail loudly
+instead of open — a row naming a known receipt whose `c[4]` is not a backticked path is a
+MALFORMED-ROW error rather than a non-site. That is a one-condition change in `sites()` and it would
+have caught my pipes immediately. *I have not made it: it is an instrument the whole board stands on
+and reddening it is not mine to decide.*
