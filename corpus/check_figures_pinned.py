@@ -180,6 +180,32 @@ def _sentence(text, i):
     return text[a:b + 1 if b >= 0 else len(text)]
 
 
+MALFORMED = []     # rows that NAME a receipt in the tree without backticking its path cell
+
+
+def _index_row(ln):
+    """((population, paper, receipt, claim), markup_ok) for an INDEX row that names a receipt in the
+    tree; None for every other line.
+
+    ** r7646+60.1 -- THE ONE CONDITION THAT MOVED, AND WHY. **  `c[4].startswith('`')` used to GATE
+    the row: a path cell whose receipt path was not in backticks made the whole row a NON-SITE,
+    silently, however many figures its claim cell printed.  It now ROUTES the row into `MALFORMED`
+    instead, so a malformed row is an ERROR rather than an absence -- which is the only reason the
+    blind spot was findable at all.
+      ⌗ *cc66 found it on ONE row (`S60`'s, `r7643+cc66.63`).  `r7646` counted the class: 54 rows,
+      against 1085 backticked ones, carrying 228 unpinned figures the gate had never read --
+      `INDEX.md:309`, `310`, `637`, and a contiguous `S10`..`S60` block.  A gate that is quietly not
+      checking reports the same green as one that is.*
+    """
+    c = [x.strip() for x in re.split(r'(?<!\\)\|', ln)]
+    if len(c) < 6 or not c[4].strip('`').endswith('.py'):
+        return None
+    name = os.path.basename(c[4].strip('`'))[:-3]
+    if name not in FILES:
+        return None
+    return ('APPENDIX', c[1], name, c[3]), c[4].startswith('`')
+
+
 def sites():
     """[(population, paper, receipt, claim)] -- r7267's census populations"""
     out = []
@@ -193,12 +219,11 @@ def sites():
             if name in FILES:
                 claim = Q._unmark(re.sub(r'\\(?:rcpt|ldg)\{[^}]*\}', ' ', _sentence(flat, m.start())))
                 out.append(('PROSE', paper, name, claim))
+    MALFORMED.clear()
     for ln in open(os.path.join(ROOT, 'receipts', 'INDEX.md'), encoding='utf-8', errors='replace'):
-        c = [x.strip() for x in re.split(r'(?<!\\)\|', ln)]
-        if len(c) >= 6 and c[4].startswith('`'):
-            name = os.path.basename(c[4].strip('`'))[:-3]
-            if name in FILES:
-                out.append(('APPENDIX', c[1], name, c[3]))
+        r = _index_row(ln)
+        if r is not None:
+            (out if r[1] else MALFORMED).append(r[0])
     return out
 
 
@@ -241,6 +266,20 @@ def _seeds():
            for lab, claim, want in cases if bool(unpinned(claim, ps)) != want]
     if unpinned('a shift of 0.065\\%', pins('assert abs(r - 0.00065) < 1e-7\n')):
         bad.append('a percent figure pinned as its fraction: expected pass, got flag')
+    # ** r7646+60.1 -- THE SEED FOR THE CONDITION THAT MOVED. **  A guard that cannot fail on the
+    # data it is given is not a guard, so the row router is tested in BOTH directions here rather
+    # than only on the tree that happens to be checked out.
+    _n = sorted(FILES)[0]
+    _row = lambda q: f'| n/a | x | the value 46.53 | {q} | ✔ | g | v | s |\n'   # noqa: E731
+    _ok = _index_row(_row(f'`receipts/x/{_n}.py`'))
+    _no = _index_row(_row(f'receipts/x/{_n}.py'))
+    if not (_ok is not None and _ok[1] and _ok[0][2] == _n and '46.53' in _ok[0][3]):
+        bad.append('a backticked path cell naming a receipt in the tree: expected a SITE, got none')
+    if not (_no is not None and not _no[1]):
+        bad.append('an UNBACKTICKED path cell naming a receipt in the tree: expected a MALFORMED '
+                   'row, got a silent non-site')
+    if _index_row(_row('`receipts/x/no_such_receipt_lives_in_this_tree.py`')) is not None:
+        bad.append('a path cell naming no receipt in the tree: expected None, got a row')
     return bad
 
 
@@ -257,6 +296,17 @@ def main():
     print('    seeds hold: slack, one-sided and absent pins flag; tight, rounded, bracketed, isclose and percent pins '
           'pass; a revision tag is not a figure')
     now = live()
+    if MALFORMED:
+        print()
+        for _pop, _paper, _name, _ in MALFORMED:
+            print(f'    [MALFORMED ROW] {_paper}  names {_name[:66]}')
+        print()
+        print('  ⛔ AN INDEX ROW NAMES A RECEIPT IN THE TREE AND ITS PATH CELL IS NOT IN BACKTICKS.')
+        print('     This gate cannot read such a row at all: every figure its claim cell prints is')
+        print('     INVISIBLE rather than pinned or flagged, and the gate still reports green.  Put')
+        print('     the path in backticks, as the other rows have it.  (r7646+60: cc66 found this on')
+        print('     one row and the class was 54, carrying 228 unpinned figures.)')
+        return 1
     if '--write-baseline' in sys.argv:
         with open(BASELINE, 'w', encoding='utf-8') as f:
             f.write(open(BASELINE, encoding='utf-8').read().split('\n# ---\n')[0] + '\n# ---\n'

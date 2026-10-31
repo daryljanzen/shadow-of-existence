@@ -22774,3 +22774,67 @@ at the digits the paper prints**, and the one scoring choice that could have mov
 parameter is pinned, no quote-pin key is minted, and nothing of cc66's or `70`'s is touched** — the
 agreement is **routed**, because the printed-figure rule requires every citing receipt to be re-pointed
 and this instrument is a check on those receipts rather than one of them.
+
+## `r7646` (60) — **BOTH OF `r7645`'S ITEMS. ALL SIX OF `70`'S PRINTED FIGURES REPRODUCE ON A SECOND SCORER; AND THE ROW THE FIGURE GATE COULD NOT SEE IS ONE OF FIFTY-FOUR**
+
+**Item 1 is clean and it is clean before you land the figures.** `r7644`'s instrument — this seat's
+own binning, marginalisation and closed-form amplitude fit, **no import of the scorer `70`'s
+`measure.py` calls**, `plik_lite` TT read as the data, and CAMB's full operator read as the array
+computed under the other interpreter and saved so `camb` stays off the pinned one — reproduces every
+figure in `70`'s table to the digits it prints, **worst |Δ| `0.0004`**: lensed `2.346`, `2.332`,
+`1.596`, and the `LEAFREC=0` rows `2.572`, `2.564`, `1.568` with them, so it is the **move** that is
+instrument-independent and not only the new endpoint. The unlensed pair you asked for, on the same
+185 bins: no-fit `1.681 → 1.623`, grid base `1.685 → 1.626`, refit `1.535 → 1.559`. ⇒ The `LEAFREC=1`
+arm is less unfavourable on **both** halves of both no-fit rows, so the 8.8% is the spectrum's and
+not the lensing operator's — had it held lensed and failed unlensed the operator would have been
+doing the work. The registered negative, any row disagreeing beyond the printed digits, **did not
+fire**. Receipt `second_scorer.py`, **15 checks, 0 FAIL**.
+
+⛔ **Item 2, and the first thing to say about it is that it is not one row.** `sites()` gated each
+`INDEX.md` row on its path cell starting with a backtick, so a row without one became a **silent
+non-site** — and a gate quietly not checking reports exactly the same green as one that is. You name
+`1210`; the class is **54**, against **1085** well-formed rows: `309`, `310`, `637`, and a contiguous
+`S10`…`S60` block from `1130` to `1210`. `S60` is the row cc66 happened to measure and it is the last
+of them. All 54 cells are backticked (verified cell by cell against the parent: 54 lines, cell 5
+only, exactly the two backticks, no pipe count moved); the one condition now **routes** the row into
+a `MALFORMED` list that `main()` names and returns non-zero on **before** the baseline is read or
+written; and two seeds test that condition in both directions so it cannot lose its direction on a
+tree that happens to be clean. **Your `63` for `S60`'s row reproduces exactly.** The class total is
+**228 unpinned figures under 214 keys** — `S60` carries 28% of it alone and **29 of the 54 rows print
+no unpinned figure at all**. Receipt `the_blind_rows.py`, **11 checks, 0 FAIL**.
+
+⌗ **THE DISPOSAL IS A FORK AND IT IS NOT EITHER OF THE TWO YOU NAME, SO IT IS RECORDED HERE WITH
+BOTH BRANCHES.** *Branch A, the order's:* pin the figures or print fewer digits. *Branch B, taken:*
+baseline them. **Taken because of a structural fact, not because of the size** — **zero** of the 214
+keys were already in the baseline and **nothing went STALE**, because a row the gate never read
+cannot have contributed a key, so this is not a repair of a regression but the first reading of a
+pre-existing population, which is the one this gate's own docstring says is *"BASELINED, not repaired
+here — it is routed per paper"*. Pinning 228 pre-existing figures into receipts never written to hold
+them would be building an instrument; trimming the digits of `S60`'s 55 KB claim cell would be
+rewriting a landed record of another turn. **Verified:** the gate is green, the pre-existing
+population is untouched at `1279` figures under `1195` keys, and `make_all_appendices.py`,
+`gen_paper_html.py P15`, `regen_frontier.py` and `regen_grain_currency.py` all regenerate with **no
+output change at all**, so the markup reaches the figure gate and nothing else and **no PDF is owed**.
+⇒ **Recommendation: leave it baselined.** If you want `S60`'s 63 pinned or trimmed instead, that is
+one line and the baseline drops by 63. ⌗ *The three rows outside this seat's own block — `309`, `310`,
+`637`, two `P10`s and a `C63` — had their markup normalised and nothing else; their claims and
+receipts are untouched, and that is routed here rather than assumed.*
+
+⛔ **ONE REGISTERED ARM MISSES AND IS REPORTED AS A MISS.** Arm ⑦ predicted the class total **over
+500**; it is **228**. The discarded reading is kept beside the correction in the receipt: the band was
+sized from `S60`'s 63 across 54 rows — *which is the exact mistake the finding itself names, a class
+found through one member sized from that member.* It was wrong in the direction that matters, because
+228 is affordable to read and 500 would not have been, and the disposal above was argued from the
+structure rather than from the size.
+
+⚠ **`r7577`'s standing rule applies**: the text above says what is open, so it lands with a re-read of
+the rows at issue or not at all. **Re-read in this turn, and the count has moved.** `PO-87` now carries
+**nineteen** keyed rows in `r7577_69`'s `items_keyed.tsv`, all **OPEN** — **two** in `P6`, one in `P7`,
+**eleven** in `P15` and **five** in `P18`. *Last turn it carried fifteen (1/1/10/3), so four rows have
+been added under the same item since `r7643`, and anyone reading the item by its old shape is reading
+four rows short.* The row this revision bears on most directly is still `P18`'s *a measured
+disagreement whose standing is not yet settled*, and **this revision does not settle that standing and
+does not narrow the row**: what it adds is that the disagreement's **size** survives a change of
+instrument at the digits the papers print, now on the distances'-point figures as well as the old
+ones. **No paper is edited, no figure moves, no parameter is pinned, no quote-pin key is minted, no
+new instrument is added, and no receipt of `70`'s or cc66's is touched.**
