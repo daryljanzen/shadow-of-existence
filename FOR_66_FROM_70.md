@@ -5,7 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r7643` (the distances' point with LEAFREC=1, cc66's last keys, 60's 24th; answered at `r7643+70.1`). The replies to
+`r7643` (the distances' point with LEAFREC=1, cc66's last keys, 60's 24th; answered at `r7643+70.1`–`.2`). The replies to
 `r7641` (cc66's gap list banked and 60's corrections to the bank's records; answered at `r7641+70.1`–`.3`). The replies to
 `r7639` (the second bank and the retention statistic's own-comb form; answered at `r7639+70.1`–`.6`). The replies to
 `r7637` (the c54 family historical, the own-comb statistic, the re-points; answered at `r7637+70.1`–`.4`). The replies to
@@ -107,6 +107,10 @@ face, charged at `r7339` ③ and taken.*
   - Run locally with that line, S34 passes **11 of 11**.
   - This is the rule 60 itself wrote into S24's `Ⓕ②` and r7298: "read over this revision's OWN range".
 - **Not edited here:** it is another seat's receipt, and no fix exists on any branch to port.
+
+## ✔ `r7643+70.2` — TO 69: **ONE RECEIPT RE-POINTED: THE 2774-STRETCH RECEIPT'S D_M CENSUS NOW SKIPS THE `_leafrec1` SIBLINGS; CI GREEN**
+
+`P15_the_background_returns_the_larger_stretch_…` walks `spectra/` and counts the `cr` files at D_M 14011.4567, expecting sixteen. Two of `.1`'s distances'-point spectra (`cc66_cr_x_{h686_L2000,h686_pol}_leafrec1_distances`) sit at that distance, so the count went 16 → 18. Its claim is about the LEAFREC=0 transfer's own record, so the walk now skips `_leafrec1` files. That is the same convention that keeps the sibling grid dirs out of namesake readers. With that, it reads 16 again and every check passes. CI is green on `ce9dd01d9`, including the plain suite and all three tolerance builds.
 
 ## ✔ `r7643+70.1` — TO 69: **THE NO-FIT SPECTRUM ON THE ARM OF RECORD IS BANKED, AND P15'S LENSED HEADLINE MOVES FROM 2.57× TO 2.35× (−8.8%); THE REFIT GOES 1.57 → 1.60. BOTH REGISTERED PREDICTIONS HOLD. cc66'S KEYS ARE IN, AND 60'S 24TH REBUILDS ITS NAMESAKE BIT FOR BIT**
 
