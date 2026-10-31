@@ -31077,3 +31077,77 @@ re-pointed flag is false. Both red.*
 ⚠ *The general lesson, which I will apply to the rest of my readers as they come up: a pinned count
 over a set my own work moves is a maintenance obligation disguised as a gate. Pin the invariant, not
 the tally.*
+
+---
+
+### `cc66.71` — item 1's fifth, and the perturbation that perturbed nothing
+
+`the_1p57_has_no_parameter_address` re-pointed onto 70's distances' point. **19 gates, all pass,
+4.8 s measured** (the docstring had claimed `~30 s`; corrected to the measurement).
+
+**Prediction registered in writing before measuring** (`cc66.71_prediction.txt`, six points) and all
+six held: the arm's TT-preferred `w_m` sits −0.6728σ from its BAO minimum (predicted ≈ −0.65),
+Δχ²_BAO +0.5244 (predicted 0.2–0.6), Ω_m displacement −0.7156σ (predicted ≈ −0.7), the per-cent
+gate fails at 2.036% (predicted ≈ 2.04), the σ and χ² halves of the comparison DISAGREE on which arm
+is displaced (predicted), and the refuse branch fires (predicted).
+
+**FIVE SUBSTANTIVE MOVES, each restated rather than loosened.**
+1. The title's REASON fails, its CONCLUSION survives: still admissible (inside the width, half a
+   unit of χ² on 13 measurements), no longer coincident. 15× and 52× the namesake arm's.
+2. The headline comparison **SPLITS BY VARIABLE** — ω_m says the ARM is 2.96× further out, Ω_m says
+   the CONTROL is 2.09×, χ² says the control pays 28.7×. The namesake's "five times and 1700 times"
+   is a statement about the namesake arm alone. *This is visible only because the receipt reports
+   both variables — a safeguard put in against the order's choice of variable, which is what caught
+   it. In ω_m alone it would have read as a clean inversion of the file's own headline.*
+3. "Under a thirtieth of a per cent" splits for the **third** independent time (cc66.68 2.123%,
+   cc66.69 2.16%, here 2.036%) — and here it was the receipt's OPENING asymmetry, gated as
+   "the arm moves Ω_m by under a thirtieth of a per cent while the control's moves it by 1.64%".
+   That asymmetry is **gone**: 2.036% against 1.643%, a factor of 1.24 with the ARM the larger.
+4. **The constraint does not move with the arm.** PARTS 2 and 3 return the same BAO minima and the
+   same widths, because the BAO likelihood never imports the instrument and so cannot see `LEAFREC`.
+   So the whole of the displacement is in the TT fit and none of it is in what it is measured
+   against — stated as structure rather than dressed up as a gate, since a gate over code that
+   cannot read the switch would be a tautology (the cc66.64 class).
+5. **A gate that passed while the second number it printed refuted its own sentence**: *"the arm's
+   START is already its own BAO minimum, so its refit had nowhere to be pulled to: −0.020σ before
+   the fit and −0.673σ after"* — the condition tested only the START. Split in two: the start IS the
+   minimum, AND the refit pulls it off by a factor of 33.8. **Fifth instance of the stale-label
+   class, found by reading a run rather than by any gate.**
+
+**AND A MEASURED FACT THAT CHANGES WHAT AN IDENTITY CHECK CAN DO.** The banked background cannot see
+the arm: at the arm's own point `D_M`, `r_s` and `l_A` are **bit-identical** with `LEAFREC` on and
+off. So the D_M identity gate establishes the PARAMETERS and is blind to the ARM — which is the
+re-key's own failure mode. Rested the arm's identity instead on the instrument's **resolved switch
+snapshot** against the bank's stored `config` (7/7 model switches + the instrument's source hash),
+and gated the blindness itself by running the arm a third time at `LEAFREC=0`. Perturbed: running
+the arm at `LEAFREC=0` while its records claim `1` reds both identity gates and leaves the
+background gate green — blind exactly as measured.
+
+**TWO ERRORS OF MY OWN THIS PASS.**
+- ⛔ **My first perturbation perturbed NOTHING and I nearly read it as a finding.** I "turned
+  `LEAFREC` off" by REMOVING the key from the environment — and `LEAFREC` **defaults to `1`**
+  (`os.environ.get('LEAFREC', '1') == '1'`). So the leaf record stayed on, only gate ⓪ reddened (it
+  checks the env string), and I briefly read the surviving D_M gate as the gate being blind. It IS
+  blind, but that is a separate fact I then had to establish properly with `LEAFREC='0'`. **The
+  instrument's own comment names this exact trap**: the `__SWITCHES__` line records only what the
+  environment SET, "which is exactly the record that cannot survive a default moving — `LEAFREC`
+  defaulting ON is the case in point". ⇒ **Rule: to perturb a DEFAULTED switch, set the opposite
+  value; never unset the key.** A perturbation that changes nothing is worse than one that crashes,
+  because it looks like evidence.
+- ⛔ **I quoted a factor against the wrong printed denominator.** Wrote "about sixty times" for the
+  χ² factor using the old docstring's `+0.009`, where the paper prints `+0.010` and the measured
+  namesake value is `+0.0096` — the factor is **52×**, not 60×. Caught by recomputing before the
+  push. Same family as the rounded-value class (third appearance today), with a new wrinkle: there
+  were TWO printed roundings of one quantity and I took the one that flattered the finding.
+
+**THE DISCIPLINE GAP FROM `cc66.70` IS CLOSED THIS PASS:** `run_touched_readers.sh` ran **before**
+this push, not after it. (On the `.70` tree it came back green — 55 receipts pin prose that tree
+touched, all 55 pass, no data file changed — so the ordering defect cost nothing that time. It was
+still a defect.)
+
+**AND A CI READING OF MINE WAS WRONG.** A `pull_request` run executes **only the `fast` tier** —
+registers, views, text gates, the hollow-assertion lint and the vacuous-pin sweep. The plain suite,
+the heavy tier, the compile job and every scoped job all report `skipped`. ⇒ **"The PR run is green"
+is NEVER a receipt verdict**, which is exactly why the three figure-bank readers stayed invisible on
+`2f742607b` while that PR run concluded success. Only the push-event run whose scope contains a
+receipt can give it a verdict.

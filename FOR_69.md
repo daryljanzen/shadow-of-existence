@@ -4855,3 +4855,83 @@ landing table's attention on its own: at the namesake's refit parameters the swi
 and refitting recovers to 297.7 — so almost all of what `LEAFREC` costs is recoverable by parameters,
 and what it recovers it with is `n_s` (+0.017) and `Omega_m` (−0.006). That is the same pair, in the
 same direction and the same size, as the split in ⓷.*
+
+---
+
+## `cc66.71` — item 1's FIFTH: `the_1p57_has_no_parameter_address` on 70's distances' point
+
+**The title's REASON fails and its CONCLUSION survives.** On the arm of record the TT-preferred
+`$\omega_m$` sits **`$-0.6728\sigma$`** from its own BAO minimum and the BAO fit pays **`$+0.5244$`**
+in `$\chi^2$` at it — against the namesake arm's `$-0.046\sigma$` and the `$+0.010$` the paper
+prints, so about **fifteen** and **fifty-two** times. `$-0.67\sigma$` is still INSIDE the
+constraint's own width and half a unit of `$\chi^2$` on thirteen measurements, so *the `$1.57\times$`
+is still not a displacement of the matter density*. What fails is **"sits ON its own BAO minimum"**,
+which is the reason the title gives and the clause the file's NAME carries.
+
+### ⓵ THE LANDING ROWS — eight sites, the first six gated
+
+| # | site | line | as printed | arm of record | verdict + proposal |
+|---|------|------|-----------|---------------|--------------------|
+| 1 | P15 `sec:refit-bound` | l.964–966 | *"this arm's expansion rate moves by `$0.028\%$` and its matter density by `$0.031\%$` from the values the baryon-acoustic distances and the acoustic angle fix"* | `$0.0427\%$` and `$2.0363\%$` | **SPLITS.** `H0` holds; `$\Omega_m$` fails by 66×. Proposal: *"moves by `$0.043\%$` and its matter density by `$2.04\%$`"* — and the clause that follows, *"the background the distances fix is the background the spectrum wants"*, is then true of the expansion rate and **false of the matter density**, so it needs the split in words. |
+| 2 | P15 `sec:refit-bound` | l.968–970 | *"sits `$0.046$` of a standard deviation from the distance fit's, at a cost of `$0.010$` in `$\chi^{2}$` to the distance data—one part in a hundred"* | `$0.6728\sigma$` and `$+0.5244$` | **FAILS.** Proposal: *"sits `$0.67$` of a standard deviation from the distance fit's, at a cost of `$0.52$` in `$\chi^{2}$` — half a unit on thirteen measurements"*, and **drop "one part in a hundred"**: it is now about half of one. |
+| 3 | P15 `sec:refit-bound` | l.971–973 | *"So the spectrum is not pulling the background anywhere"* | pulled from `$-0.0199\sigma$` to `$-0.6728\sigma$`, a factor of `$33.8$` | **NEEDS WEAKENING.** It IS pulling it, just not out of the width. Proposal: *"So the spectrum is not pulling the background out of the distance data's own width"*. |
+| 4 | P15 `sec:refit-bound` | l.973–975 | *"The control's own displacement is larger and is not a comparison of the same kind"* | control larger in `$\Omega_m$` (`$2.09\times$`) and in `$\chi^2$` (`$28.7\times$`); **ARM** larger in `$\omega_m$` (`$2.96\times$`) | **TRUE ONLY WITH THE VARIABLE NAMED.** Proposal: *"larger in `$\Omega_m$` and in `$\chi^{2}$`"*. The second half (*"not a comparison of the same kind"*) stands untouched — `$0.3150$` is still a microwave fit. |
+| 5 | P15 `sec:refit-bound` | l.980–982 | *"this arm prefers `$0.998$` against the control's `$0.954$`, bluer by `$0.044$`"* | `$1.015066$` against `$0.954248$`, bluer by `$0.060818$` | **FAILS on the arm's half; the control's `$0.954$` is EXACT.** Proposal: *"prefers `$1.015$` against the control's `$0.954$`, bluer by `$0.061$`"`. |
+| 6 | P15 frontier passage | l.2818 | *"prefers a tilt of `$0.998$` here against `$0.954$` on the standard one … so a derivation has to land near the bluer value"* | `$1.015$` | **FAILS, and the ARGUMENT STRENGTHENS:** the gap a derivation must reach widens from `$0.044$` to `$0.061$`. |
+| 7 | P15 `sec:refit-bound` | l.976–979 | *"one-step excursions cost `$2527$`, `$740$`, `$141$` and `$31$` in `$\chi^{2}$` on the four parameters"* | **NOT MEASURED BY ME** | ⚠ These are the NAMESAKE stencil's curvatures. `cc66.68`'s `refit_grid185_leafrec1_distances/` carries the arm-of-record stencil, so they are computable; I did not compute them and do not assert them. **Flagged, not landed.** |
+| 8 | `receipts/INDEX.md` row | l.1147 (`C71`) | *"the `1p57` receipt's instrument run gives `$0.9980$`/`$0.9542$`"* | `$1.015066$`/`$0.954248$` | **STALE IN THE PRESENT TENSE.** It is a correct record of a NAMESAKE-arm reconciliation; it needs *"the namesake arm's"* inserted. **I did not edit it** — it is another receipt's row. |
+
+### ⓶ WHAT IS GATED AND WILL GO RED BY DESIGN WHEN YOU LAND IT
+
+**New this pass.** The receipt's **PART 5** now CAPTURES four figure groups from `CR_cosmology.tex`
+and asserts the partition — six arm-side figures OUT, **only the control's tilt agreeing** (out by
+`$0.000248$`, inside half a last digit). Rows 1, 2 and 5 above are its captures; landing any of them
+reddens it, which is the signal that the landing happened. *A missing pattern FAILS rather than
+emptying the set — the vacuity trap.*
+
+**Still outstanding from `cc66.70`, both gated, both red on landing:**
+- `fig:acoustic-nofit`'s **caption audit** (`…the_residual_does_not_sit_at_ell_A…`, Ⓐ②): `nbins` (179)
+  and `ctrl_fold` (`$0.20\pm0.11$` against `$0.202824\pm0.112577$`) still AGREE; `per_bin`,
+  `refit_pb`, `arm_fold` and `refit_fold` are OUT, worst `arm_fold` by `$3.007099$`.
+- `sec:refit-bound`'s **printed period/drift pair** (`…the_phase_slope_does_not_separate…`, Ⓐ①):
+  the paper's `$312$` and `$-96.6^\circ$` against a measured `$309.25$` and `$-78.30904$`, pinned
+  both ways. *Perturbed by pretending you had already landed the pair: it reds, so "it notices the
+  landing" is proven rather than asserted.*
+
+### ⓷ TWO ASKS, BOTH ABOUT BANKS RATHER THAN PROSE
+
+**⒜ The banked background CANNOT SEE the arm, and this is measured, not argued.** Run at the arm's
+own TT point with `LEAFREC=0`, the instrument returns `$D_M$`, `$r_s$` and `$l_A$` **bit-identical**
+to the `LEAFREC=1` run — the leaf record acts on recombination's rate, not on the expansion history
+the ruler is built from. *So an identity check against a banked background establishes the
+PARAMETERS and is blind to the ARM, which is the re-key's own failure mode: read the wrong key and
+the namesake comes back silently.* The receipt therefore rests the arm's identity on the
+instrument's **resolved switch snapshot**, which agrees with the bank's stored `config` on all seven
+model-defining switches and on the instrument's source hash, and differs from the `LEAFREC=0` run on
+exactly `LEAFREC`. ⇒ **But the CONTROL's banks (`refit_grid185/verify_{lcdm,cr}.npz`) predate that
+ratchet and carry no `config` at all**, so the control's arm identity is not checkable from its own
+artefact. Either re-bank them with a config or record that it cannot be checked; I have recorded the
+asymmetry in the receipt rather than smoothed it over.
+
+**⒝ The arm-of-record grid has no launcher.** `refit_grid185_leafrec1_distances/` carries eight
+stencil spectra and a base, and no `verify.sh` and no `verify_*.npz`. I read the verification point
+from the `switches` field of `spectra/cc66_r185_verify_cr_leafrec1.npz`'s manifest, cross-checked
+against the structured `point` the same manifest carries — **two independent records, required to
+agree before either is used**, which is a check the namesake's single launcher file cannot be given.
+A launcher in the grid directory would make the two arms symmetric.
+
+### ⓸ TWO ARM-OF-RECORD MINIMA ARE IN PLAY AND THEY AGREE — but they print differently
+
+70's banked point is `$(68.570730,\,0.291246,\,0.021643,\,1.015066)$`; my `cc66.68` stencil minimum
+is `$(68.585167,\,0.290988,\,0.021676,\,1.016468)$`. **This receipt uses the BANKED point, because
+the bank is the artefact its gate reproduces.** They differ by `$0.014$` in `$H_0$` and `$0.00026$`
+in `$\Omega_m$` — a fraction of a grid step — and both move `$\Omega_m$` by about `$2.0$`–`$2.1$`
+per cent, so no finding turns on the choice. ⚠ **But the `$H_0$` per-cent move is `$0.0427\%$` here
+against `$0.0216\%$` at `cc66.68`**, so a reader comparing the two receipts sees two numbers for
+what looks like one quantity. Stated here so it is not read as a contradiction.
+
+### ⓹ THE NAME
+
+`…_sits_on_its_own_bao_minimum_…` is **false of the arm of record**. The second half,
+`…_while_the_controls_pays_fifteen_in_chi2_to_leave_planck`, holds **exactly**, at `$+15.058$`. A
+registered receipt's name is not this seat's to change; the docstring carries a note saying so.
