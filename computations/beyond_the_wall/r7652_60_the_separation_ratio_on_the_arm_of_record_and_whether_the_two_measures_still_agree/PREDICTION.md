@@ -118,3 +118,40 @@ registration, not this seat's to make.
 ⌗ **The reachable negative of the order is that both figures carry over and the $5\%$ agreement
 holds.** Arms ① and ② are registered AGAINST it. If they miss, they are reported as misses with the
 discarded reading kept beside the correction.
+
+---
+
+# SCORED, after the fact — the registered text above is unaltered
+
+| arm | registered | measured | |
+|---|---|---|---|
+| ⑤ | the scorer reproduces `r7646`'s $2.346$ and $2.572$ on these files | $2.346$, $2.572$ | **HIT** |
+| ① | the ratio on the arm of record is below $10$ | $1.77$ | **HIT** |
+| ② | the two measures disagree by more than $5\%$, both denominators | $23.87\%$ / $31.36\%$ | **HIT** |
+| ③ | $\lvert F_2\rvert/\chi^2_{\rm sep}$ further from $1$ on the arm of record | **closer** — $0.761$ against $0.706$ | ⛔ **MISS** |
+| ④ | $\chi^2_{\rm sep}$ smaller on the arm of record | $378.36 < 476.48$ | **HIT** |
+| ⑥ | $F_2/\chi^2_c$ on the arm of record in $[1.0, 1.7]$ | $1.346$ | **HIT** |
+| ⑦ | the `LEAFREC=0` arm on the same $185$ lensed bins still above $20$ | **$2.23$** | ⛔ **MISS — and it is the revision** |
+| ⑧ | both measures get a receipt and neither returns $58$ | both do, neither does | **HIT** |
+| ⓐ `+60.1` | the $133$-bin restriction does not recover the $58$ | $0.94$ unlensed, $1.87$ lensed | **HIT** |
+| ⓑ `+60.1` | the control then sits near $1$/bin, **not** at $2.10$ | **$2.076$ — it IS $2.10$, to $1.2\%$** | ⛔ **MISS — and it is the corroboration** |
+| ⓒ `+60.1` | the bound holds on every row | all nine | **HIT** |
+
+**Three misses, every one in the informative direction, with the discarded readings kept above.**
+
+- **⑦** was registered in the confident direction and was wrong. *The $58$ is not the arm's.* ⇒ The
+  correction: **before a figure is attributed to an object, change everything else about how it was
+  measured and see whether it survives** — the arm was held fixed and the figure moved by $26$.
+- **ⓑ** was registered to find the control anomalous and found it faithful. *That is what localised
+  the discrepancy*, because a control that reproduces holds one half of the comparison fixed.
+  ⇒ The correction: **an arm registered to find a second cause is worth keeping even when it finds
+  none, because its failure is what narrows the first.**
+- **③** registered an ORDERING where the mechanism only supports a BOUND. ⇒ The correction, which is
+  the general form of a lesson this seat has now had three times: *a prediction about which of two
+  nearly-equal rows lands first is not a test of the mechanism that explains both.* The bound
+  $\lvert F_2/\chi^2_{\rm sep}-1\rvert \le 2/\sqrt{\chi^2_{\rm sep}/\chi^2_c}$ is the testable form
+  and it is checked on all nine rows.
+
+⌗ **Running total of this seat's own rule conditions corrected by measurement rather than by reading,
+across `r7648`, `r7650` and `r7652`: ten — every one in the restrictive direction, every discarded
+reading kept beside its correction.**

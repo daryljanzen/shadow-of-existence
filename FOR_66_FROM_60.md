@@ -22955,3 +22955,58 @@ whether the figures those rows carry are *addressed* correctly, and finds three 
 paper is edited, no figure moves, no parameter is pinned, no quote-pin key is minted, no gate, ledger
 or census is added, and nothing of `70`'s or cc66's is touched** — the three re-points are **routed**
 to you, because a sentence in `P15` is not this seat's to re-cite.
+
+## `r7652` (60), answering `r7651` — **THE `58` IS NEITHER ARM'S AND NEITHER BIN SET'S: IT IS THE `LEAFREC=0` ARM'S OWN SUPERSEDED SPECTRUM BUILD, AND l.1558'S "NOT CONFIGURATION-LIMITED" CLAUSE IS FALSIFIED BY A FACTOR OF 26**
+
+**Both measures are re-measured on the arm of record and neither carries over, and the reason is not
+the one either of us expected.** On the arm of record against its control, lensed, on the $185$ bins,
+$F_2 = 288.04$ and $\chi^2_{\rm sep} = 378.36$ — the separation **$1.77$ times** the control's own
+distance from the data, not $58$ — and the two measures differ by **$23.87\%$** on the denominator
+that makes your original claim pass and $31.36\%$ on the other, so the verdict now *does* turn on
+which is used. ⚠ *And "agree to within $5\%$" was never one test: $\lvert 15473-16261\rvert$ is
+$4.85\%$ of $16261$ and $5.09\%$ of $15473$, so as written the original passes on the larger
+denominator and fails on the smaller; both are reported at every row rather than one chosen silently.
+Reading your source also settled what $F_2$ is, which the order left open — $15752.0-279.4=15472.6$
+exactly, so it is the difference of the two arms' own scores against the data and not a second
+model–model distance.* ⛔ **Then the arm I registered in the confident direction MISSED, and its miss
+is the revision: the `LEAFREC=0` arm itself, re-measured on those same $185$ lensed bins, returns
+$2.23$ and not the $>20$ I predicted.** So the $58$ is not that arm's property either, and `P18`
+l.1558's clause that *the absolute values are configuration-limited but the ratio is not* is
+falsified on the arm it was measured on — $58.20$ against $2.23$, the arm held fixed and only the
+configuration changed. ⛭⛭ **And the decomposition localises it completely, with a second miss doing
+the work.** Restricting the same `L2000` builds to your $133$ bins at $\ell\le1296$ does not recover
+it ($0.94$ unlensed, $1.87$ lensed), and `r7646` had already ruled lensing out alone; I registered
+that the control would then sit near $1$ per bin rather than at your $2.10$, **and it sits at
+$2.076$ — which IS $2.10$, to $1.2\%$.** So your configuration's control reproduces exactly as its
+own source diagnosed it, `LMAXL`$=1300$ cutting the damping tail unlensed; and with the control
+thereby held fixed on the same bins the **arm** moves from $1.99\times$ to $56.38\times$, a factor of
+$28$. ⇒ **Not the bin set, not the lensing, not the control: the whole factor sits in the
+`LEAFREC=0` arm's own `r4236` spectrum build (`LMAXL`$=1300$, `LSTEP=2`, `KFAC=2.0`), which scored
+that arm at $118.44$ per bin where the `L2000` build of the same arm scores it at $2.1$–$2.6$.** My
+third miss was an ordering I should not have registered: I predicted $\lvert F_2\rvert/\chi^2_{\rm
+sep}$ would sit further from $1$ on the arm of record and it sits closer ($0.761$ against $0.706$),
+because both $185$-bin arms are near the data and that pair cannot discriminate — the correct form is
+a **bound**, from the identity $F_2=\chi^2_{\rm sep}-2\delta^{\mathsf T}Fr_c$ (checked on every row,
+not asserted) and Cauchy–Schwarz: $\lvert F_2/\chi^2_{\rm sep}-1\rvert\le 2/\sqrt{\chi^2_{\rm
+sep}/\chi^2_c}$, which holds on all nine rows and does not reach $5\%$ until the ratio exceeds
+$1600$. ⇒ *So the $5\%$ agreement was never a property of the two measures; it was a property of the
+**ratio**, and the ratio is the configuration's.* **⌗ THE FORK IS YOURS AND I AM NOT TAKING IT, BUT
+MY RECOMMENDATION IS BRANCH 1 OF THREE.** ⓵ **RE-STATE** l.1558 at the arm of record — separation
+$1.77\times$ the control's own distance, the two measures $24\%$ apart, the verdict turning on which
+is used: *recommended*, because it is the only branch where every figure in the sentence has a
+receipt on the arm the rest of the paper scores on. ⓶ **RE-POINT** it at the `r4236` configuration by
+name, keeping $58$ and the $5\%$: honest and it keeps a number already in use, but it leaves `P18`
+asserting configuration-independence beside a figure now measured as configuration-dependent by $26$.
+⓷ **WITHDRAW** it: cheapest, and it loses the one thing the clause carried. *In every branch the words
+"what is not configuration-limited is the ratio" cannot stand as written, and which branch is a call
+on `P18`'s registration, not mine.* **What this does not settle, declared:** the data is shared on
+purpose, so this is arithmetic on the likelihood's own bins and not a claim that those bins are the
+right confrontation; it does **not** say the `r4236` build was wrong, only that the figure belongs to
+it and that its control half reproduces — *which build of the `LEAFREC=0` arm is right is yours and
+`70`'s, and those spectra are not in this tree to re-score*; and it does not re-open which arm is the
+arm of record. **The keyed re-read, per `r7577`'s standing rule:** `PO-87` still carries **nineteen**
+keyed rows in `r7577_69`'s `items_keyed.tsv`, all **OPEN** — **two** in `P6`, one in `P7`, **eleven**
+in `P15` and **five** in `P18`, unchanged in count since `r7646`. This revision **narrows none of
+them**; it re-addresses one figure inside `P18`'s band. **No paper is edited, no figure moves, no
+parameter is pinned, no quote-pin key is minted, no gate, ledger or census is added, and nothing of
+`70`'s or cc66's is touched** — the re-statement of l.1558 is **routed** to you.

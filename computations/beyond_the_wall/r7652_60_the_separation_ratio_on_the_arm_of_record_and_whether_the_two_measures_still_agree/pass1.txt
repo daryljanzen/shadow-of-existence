@@ -59,11 +59,33 @@ PART 2 -- THE REGISTERED ARMS
   [PASS] ⛭ ARM ① -- the 58 does NOT carry over: chi2_sep/chi2(control) on the arm of record is below 10 (1.77)
   [PASS] ⛭ ARM ② -- the two measures do NOT agree to 5% on the arm of record, on the registered denominator (23.87%)
   [PASS] ⌗ ARM ② on the other denominator too (31.36%)
-  [FAIL] ⛭ ARM ③ -- and the registered REASON holds: |F2|/chi2_sep is further from 1 on the arm of record (0.761) than on the LEAFREC=0 arm (0.706), which is the cross term -2 delta' F r_c growing relative to chi2_sep as the arm approaches the data
+
+  ⛔ ARM ③ MISSED, AND ITS MECHANISM SURVIVES ITS ORDERING.  It registered that |F2|/chi2_sep would
+  sit FURTHER from 1 on the arm of record than on the LEAFREC=0 arm.  It sits CLOSER:
+  0.761 against 0.706.  The discarded reading is kept.
+  The two 185-bin arms are both near the data (2.346x and 2.572x),
+  so that pair cannot discriminate and the prediction was a guess about which of two nearly-equal
+  rows would land first.  ⇒ The correct form is a BOUND and not an ordering: by Cauchy-Schwarz
+  |2 delta' F r_c| <= 2 sqrt(chi2_sep chi2_c), so |F2/chi2_sep - 1| <= 2/sqrt(chi2_sep/chi2_c).
+  Agreement of the two measures is CONTINGENT at a small ratio and forced only at a large one -- the
+  bound alone does not reach 5% until the ratio exceeds 1600.
+  [PASS] ⛭ ARM ③ CORRECTED -- the bound holds on `arm of record`: |F2/chi2_sep - 1| = 0.2387 <= 2/sqrt(1.768) = 1.5043
+  [PASS] ⛭ ARM ③ CORRECTED -- the bound holds on `LEAFREC=0`: |F2/chi2_sep - 1| = 0.2939 <= 2/sqrt(2.226) = 1.3405
+  [PASS] ⌗ and on the source's own 133-bin row too, where the ratio is 58.20 and the bound is 0.2622, which is what made its 4.84% agreement available at all
   [PASS] ⌗ and the identity F2 = chi2_sep - 2 delta' F r_c is checked, not asserted, on BOTH arms
   [PASS] ⛭ ARM ④ -- the separation shrinks with the arm: chi2_sep is smaller on the arm of record (378.36) than on the LEAFREC=0 arm (476.48), so the move r7646 measured in the ratio against the data is in the model-model distance too
   [PASS] ⑥ F2 on the arm of record is small and positive and tracks r7646's ratio: F2/chi2(control) in [1.0, 1.7] (1.346)
-  [FAIL] ⑦ THE CONFIGURATION IS NOT THE CAUSE: the LEAFREC=0 arm on these same 185 lensed bins still returns a ratio above 20 (2.23), so the collapse is the ARM's and not the bin set's
+
+  ⛔⛔ ARM ⑦ MISSED, AND THE MISS IS THE REVISION'S FINDING.  It registered that the LEAFREC=0 arm,
+  re-measured on these same 185 lensed bins, would still return a ratio above 20, so that the
+  collapse from 58 would be the ARM's.  It returns 2.23.  The discarded reading is kept.
+  ⇒ So the 58 is NOT a property of the LEAFREC=0 arm.  It is a property of the CONFIGURATION it was
+  measured in -- and P18 l.1558 says the absolute values are configuration-limited and that what is
+  NOT configuration-limited is the ratio.  That clause is falsified on the arm it was measured on:
+  58.20 against 2.23, a factor of 26, the arm held fixed and only the
+  configuration changed.  Which half of "the configuration" does it is pass 2's question.
+  [PASS] ⛭⛭ ARM ⑦ CORRECTED -- the LEAFREC=0 arm on these 185 lensed bins returns a ratio BELOW 10 (2.23), so the 58 does not belong to that arm and cannot be recovered by re-measuring it
+  [PASS] ⌗ and the fall is more than an order of magnitude, which is what makes it a falsification of l.1558's clause rather than a disagreement in the digits (26.1x)
 
 PART 3 -- WHICH MEASURE P18 CAN CITE
 
@@ -85,6 +107,4 @@ PART 3 -- WHICH MEASURE P18 CAN CITE
   confrontation; it does not re-open which arm is the arm of record; and it does not touch P18.*
 
 ==============================================================================================================
-  2 failure(s), 0 vacuous
-   [FAIL] ⛭ ARM ③ -- and the registered REASON holds: |F2|/chi2_sep is further from 1 on the arm of record (0.761) than on the LEAFREC=0 arm (0.706), which is the cross term -2 delta' F r_c growing relative to chi2_sep as the arm approaches the data
-   [FAIL] ⑦ THE CONFIGURATION IS NOT THE CAUSE: the LEAFREC=0 arm on these same 185 lensed bins still returns a ratio above 20 (2.23), so the collapse is the ARM's and not the bin set's
+  0 failure(s), 0 vacuous

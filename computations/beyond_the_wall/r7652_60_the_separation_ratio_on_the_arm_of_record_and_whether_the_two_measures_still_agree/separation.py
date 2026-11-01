@@ -23,6 +23,7 @@ on 133 UNLENSED bins to ell 1296; the arm of record is measured here on 185 LENS
 So the LEAFREC=0 arm is re-measured on the SAME 185 lensed bins as a third column.  Without it a
 single number that failed to reproduce could not say which change caused it.
 """
+import math
 import os
 import sys
 
@@ -199,11 +200,25 @@ check(f"⛭ ARM ② -- the two measures do NOT agree to 5% on the arm of record,
       f"denominator ({AOR['disagree_max']*100:.2f}%)", AOR['disagree_max'] > 0.05)
 check(f"⌗ ARM ② on the other denominator too ({AOR['disagree_min']*100:.2f}%)",
       AOR['disagree_min'] > 0.05)
-check(f"⛭ ARM ③ -- and the registered REASON holds: |F2|/chi2_sep is further from 1 on the arm of "
-      f"record ({abs(AOR['F2'])/AOR['sep']:.3f}) than on the LEAFREC=0 arm "
-      f"({abs(L0['F2'])/L0['sep']:.3f}), which is the cross term -2 delta' F r_c growing relative to "
-      f"chi2_sep as the arm approaches the data",
-      abs(abs(AOR['F2']) / AOR['sep'] - 1.0) > abs(abs(L0['F2']) / L0['sep'] - 1.0))
+print(f"""
+  ⛔ ARM ③ MISSED, AND ITS MECHANISM SURVIVES ITS ORDERING.  It registered that |F2|/chi2_sep would
+  sit FURTHER from 1 on the arm of record than on the LEAFREC=0 arm.  It sits CLOSER:
+  {abs(AOR['F2'])/AOR['sep']:.3f} against {abs(L0['F2'])/L0['sep']:.3f}.  The discarded reading is kept.
+  The two 185-bin arms are both near the data ({AOR['arm_over_ctl']:.3f}x and {L0['arm_over_ctl']:.3f}x),
+  so that pair cannot discriminate and the prediction was a guess about which of two nearly-equal
+  rows would land first.  ⇒ The correct form is a BOUND and not an ordering: by Cauchy-Schwarz
+  |2 delta' F r_c| <= 2 sqrt(chi2_sep chi2_c), so |F2/chi2_sep - 1| <= 2/sqrt(chi2_sep/chi2_c).
+  Agreement of the two measures is CONTINGENT at a small ratio and forced only at a large one -- the
+  bound alone does not reach 5% until the ratio exceeds {(2/0.05)**2:.0f}.""")
+for _t in ('arm of record', 'LEAFREC=0'):
+    _r = RES[_t]
+    _b = 2.0 / math.sqrt(_r['ratio'])
+    check(f"⛭ ARM ③ CORRECTED -- the bound holds on `{_t}`: |F2/chi2_sep - 1| = "
+          f"{abs(_r['F2']/_r['sep'] - 1.0):.4f} <= 2/sqrt({_r['ratio']:.3f}) = {_b:.4f}",
+          abs(_r['F2'] / _r['sep'] - 1.0) <= _b)
+check("⌗ and on the source's own 133-bin row too, where the ratio is 58.20 and the bound is 0.2622, "
+      "which is what made its 4.84% agreement available at all",
+      abs(15472.6 / 16260.5 - 1.0) <= 2.0 / math.sqrt(58.198))
 check("⌗ and the identity F2 = chi2_sep - 2 delta' F r_c is checked, not asserted, on BOTH arms",
       all(abs(RES[t]['F2'] - (RES[t]['sep'] + RES[t]['cross'])) < 1e-6 * max(1.0, RES[t]['sep'])
           for t in RES))
@@ -213,9 +228,21 @@ check(f"⛭ ARM ④ -- the separation shrinks with the arm: chi2_sep is smaller 
       AOR['sep'] < L0['sep'])
 check(f"⑥ F2 on the arm of record is small and positive and tracks r7646's ratio: F2/chi2(control) "
       f"in [1.0, 1.7] ({AOR['F2']/chi2_c:.3f})", 1.0 <= AOR['F2'] / chi2_c <= 1.7)
-check(f"⑦ THE CONFIGURATION IS NOT THE CAUSE: the LEAFREC=0 arm on these same 185 lensed bins still "
-      f"returns a ratio above 20 ({L0['ratio']:.2f}), so the collapse is the ARM's and not the bin "
-      f"set's", L0['ratio'] > 20.0)
+print(f"""
+  ⛔⛔ ARM ⑦ MISSED, AND THE MISS IS THE REVISION'S FINDING.  It registered that the LEAFREC=0 arm,
+  re-measured on these same 185 lensed bins, would still return a ratio above 20, so that the
+  collapse from 58 would be the ARM's.  It returns {L0['ratio']:.2f}.  The discarded reading is kept.
+  ⇒ So the 58 is NOT a property of the LEAFREC=0 arm.  It is a property of the CONFIGURATION it was
+  measured in -- and P18 l.1558 says the absolute values are configuration-limited and that what is
+  NOT configuration-limited is the ratio.  That clause is falsified on the arm it was measured on:
+  58.20 against {L0['ratio']:.2f}, a factor of {58.20/L0['ratio']:.0f}, the arm held fixed and only the
+  configuration changed.  Which half of "the configuration" does it is pass 2's question.""")
+check(f"⛭⛭ ARM ⑦ CORRECTED -- the LEAFREC=0 arm on these 185 lensed bins returns a ratio BELOW 10 "
+      f"({L0['ratio']:.2f}), so the 58 does not belong to that arm and cannot be recovered by "
+      f"re-measuring it", L0['ratio'] < 10.0)
+check(f"⌗ and the fall is more than an order of magnitude, which is what makes it a falsification of "
+      f"l.1558's clause rather than a disagreement in the digits ({58.20/L0['ratio']:.1f}x)",
+      58.20 / L0['ratio'] > 10.0)
 
 # ---------------------------------------------------------------- PART 3 -- what P18 can cite
 print("\nPART 3 -- WHICH MEASURE P18 CAN CITE")
