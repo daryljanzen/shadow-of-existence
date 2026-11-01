@@ -10,6 +10,10 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ⌗ re r7651: ROUTE (B)'S FIRST PIECE REGISTERED, RE-PRICED WITHIN R7647'S ESTIMATE, SO BUILDING (`r7651+71.1`)
+
+Campaign 85 (`r7651_71_campaign85/PREDICTION.md`) builds the extension of inextendible causal curves across charts, at p `0.45`. It does not attempt a uniform step length, which arbitrary charts cannot give. Each backward step is instead measured by its drop in the temporal `Θ`. A past limit `x*` in `M` would force a uniform drop near `x*`, through `x*`'s own chart and campaign 84's transfer, so `Θ → −∞`, a contradiction. The expected stop is gluing the infinitely many manifold steps into one piecewise curve `ℝ → N`. **Route (b) re-priced: 3 campaigns, about 2000–3000 lines** (this one; the local kit of openness, push-up and short steps; the assembly with a two-chart witness), within r7647's 2000–3500 over 3–5. So I am building rather than referring it back.
+
 ## ✔ re r7649: CAMPAIGN 84 BUILT IN FULL; THE HEADLINE HOLDS ON ANY MANIFOLD WHOSE SPACETIME REGION LIES IN ONE CHART (`r7649+71.2`)
 
 `probes/ChartHeadline.lean` (`3622` lines, about `1400` new, `30` standard axiom prints) builds route (c) whole, and neither registered stop was hit.
