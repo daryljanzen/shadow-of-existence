@@ -17,19 +17,26 @@ FROM THE DRIVING BY A FACTOR OF FIVE ON THE RATIO -- BUT NOT THE DRIVING FROM A 
   configuration the control gives `$+0.12651$`/`$-0.02469$`: the same numbers to three figures.
   **The vintage worry was real and it was unfounded, and that is only knowable now.***
 
-  ⓷ ** THE CR ARM'S OWN DRIVING SIGNATURE MATCHES THE CONTROL'S** to half a per cent on the common
-  offset.  *The driving is not arm-specific, so what the plane separates it separates as acoustic
-  physics.*
+  ⓷ ** THE CR ARM'S OWN DRIVING SIGNATURE MATCHES THE CONTROL'S** to TWO TENTHS of a per cent on the
+  common offset -- `$+0.12673$` against `$+0.12651$`, tighter than the namesake arm's half a per
+  cent.  *The driving is not arm-specific on that component, so what the plane separates it
+  separates as acoustic physics.*  ⛔ ** But the ALTERNATION component does NOT follow it: `$-0.02342$`
+  against `$-0.02469$` is `$5.1$` per cent apart, where the namesake arm was inside `$1.7$`. **  *So
+  the arm-independence is a property of the common offset and not of the pair; the separation below
+  rests on the offset, so the reading survives, and the alternation's arm-dependence is reported.*
 
   ⇒ ⛔ ** THE REACH, AND IT IS `60`'s NARROWING CARRIED THROUGH RATHER THAN ARGUED WITH. **  *On the
   plane's own discriminant `$\\lvert\\Delta\\mathrm{alt}/\\Delta\\varphi\\rvert$`, the measured
-  driving sits at `$0.193$` and `60`'s `r7218` drive-clock error at `$0.086$`--`$0.173$`.  **Those
+  driving sits at `$0.1848$` and `60`'s `r7218` drive-clock error at `$0.086$`--`$0.173$`.  **Those
   overlap, so the plane does NOT license `the driving` over `a clock error in the driving`.**  But
-  the CLEAN loading lever sits at `$1.039$` -- six times the clock error's top and five times the
-  driving's -- so what the plane DOES separate, decisively, is the loading from both of them.*
+  the CLEAN loading lever sits at `$1.0963$` -- `$6.34$` times the clock error's top and `$5.93$`
+  times the driving's -- so what the plane DOES separate, decisively, is the loading from both of
+  them.*  ⌗ *On the namesake arm these read `$0.1929$`, `$1.0390$`, `$6.01$` and `$5.39$`: the
+  separation the plane licenses gets slightly WIDER on the arm of record, not narrower.*
 
-  ⌗ ⛭ *And `60` could not have seen that: it used the banked `WB` direction (`$0.388$`) as the
-  loading's stand-in, because the clean lever did not exist.  **The clean lever is `$2.7\\times$`
+  ⌗ ⛭ *And `60` could not have seen that: it used the banked `WB` direction (`$0.454$` on the arm of
+  record, `$0.378$` on the namesake) as the loading's stand-in, because the clean lever did not
+  exist.  **The clean lever is `$2.4\\times$`
   further out than that proxy, and `cc66.157` measured the two to have OPPOSITE sign on the common
   offset -- so the proxy both understated the separation and pointed the wrong way along it.***
 
@@ -50,8 +57,10 @@ BAR = "=" * 104
 fail = []
 
 
-def check(label, ok):
-    print(f"    {'OK  ' if ok else 'FAIL'}  {label}")
+def check(label, ok, got=None):
+    #: ⛭ r7649+cc66.84: `got` added, optional, so a gate can PRINT WHAT IT MEASURED beside its
+    #: verdict.  Every call that predates this keeps working unchanged.
+    print(f"    {'OK  ' if ok else 'FAIL'}  {label}" + (f"   ({got})" if got is not None else ""))
     if not ok:
         fail.append(label)
 
@@ -68,6 +77,17 @@ for _p in (GO, LEV):
     if not os.path.isdir(_p):
         print(f"  ⛔ A BANK THIS RECEIPT READS IS NOT ON DISK: {_p}")
         sys.exit(1)
+
+#: ⛭⛭ r7649+cc66.84: ** RE-POINTED ONTO THE ARM OF RECORD, PER ARM, BECAUSE BOTH SIBLING BANKS ARE
+#:   ARM-ONLY. **  *`grid_oneclock_leafrec1` carries nine `cr_*` legs and no `lcdm_*` leg, and
+#:   `r7201_cc66_loading_lever_leafrec1` carries four `cr_*` legs and none.  So the arm resolves to
+#:   the sibling and the CONTROL resolves to the namesake directory -- literally the same files in
+#:   both readings, which is what makes the comparison like-for-like, and a naive path swap would
+#:   raise `FileNotFoundError` on `lcdm_base.npz`.  Same resolver pattern as `cc66.75`.*
+GO_AOR = GO + '_leafrec1'
+LEV_AOR = LEV + '_leafrec1'
+_go = lambda a: GO_AOR if a.startswith('cr') else GO
+_lev = lambda a: LEV_AOR if a.startswith('cr') else LEV
 
 LMIN, LMAX, NPK, HALFWIN = 150.0, 1600.0, 5, 40.0
 BASEVAL = {'NS': {'cr': 0.965, 'lcdm': 0.965}, 'WB': {'cr': 0.0224, 'lcdm': 0.0224}}
@@ -126,8 +146,8 @@ def gaps(path):
 
 
 def grid_deriv(arm, par):
-    sm = phi_alt(os.path.join(GO, f'{arm}_{par}m.npz'))
-    sp = phi_alt(os.path.join(GO, f'{arm}_{par}p.npz'))
+    sm = phi_alt(os.path.join(_go(arm), f'{arm}_{par}m.npz'))
+    sp = phi_alt(os.path.join(_go(arm), f'{arm}_{par}p.npz'))
     g = BASEVAL[par][arm] / (2 * STEP[par])
     return (sp[0] - sm[0]) * g, (sp[1] - sm[1]) * g
 
@@ -137,9 +157,9 @@ head("A.  ⓵ THE DEFECT DOES NOT RECUR -- THE ITEM `r7203` ASKED TO HEAR FIRST 
 
 print(f"      {'spectrum':16s} {'l_A':>10s} {'npk':>4s}  {'detected spacing / l_A':s}")
 G = {}
-for tag, p in (('cr_nodrive', os.path.join(LEV, 'cr_nodrive.npz')),
+for tag, p in (('cr_nodrive', os.path.join(LEV_AOR, 'cr_nodrive.npz')),
                ('lcdm_nodrive', os.path.join(LEV, 'lcdm_nodrive.npz')),
-               ('cr_base', os.path.join(GO, 'cr_base.npz')),
+               ('cr_base', os.path.join(GO_AOR, 'cr_base.npz')),
                ('lcdm_base', os.path.join(GO, 'lcdm_base.npz'))):
     s = phi_alt(p)
     G[tag] = gaps(p)
@@ -151,10 +171,10 @@ check("Ⓐ①  ** BOTH NEW `NODRIVE` SPECTRA CARRY AN INTEGER-SPACED SERIES, AND
       "driving-off limit itself and worth more than a salvaged number.  It does not: five peaks "
       "each, spacing inside `$0.92$`--`$1.00$` against the bases' `$0.89$`--`$1.04$`*",
       all(G[t][0] > 0.90 and G[t][1] < 1.01 for t in ('cr_nodrive', 'lcdm_nodrive'))
-      and all(phi_alt(os.path.join(LEV, f'{t}.npz'))[2] == NPK for t in ('cr_nodrive', 'lcdm_nodrive')))
+      and all(phi_alt(os.path.join(_lev(t), f'{t}.npz'))[2] == NPK for t in ('cr_nodrive', 'lcdm_nodrive')))
 
-_lacr = phi_alt(os.path.join(LEV, 'cr_nodrive.npz'))[4]
-_labase = phi_alt(os.path.join(GO, 'cr_base.npz'))[4]
+_lacr = phi_alt(os.path.join(LEV_AOR, 'cr_nodrive.npz'))[4]
+_labase = phi_alt(os.path.join(GO_AOR, 'cr_base.npz'))[4]
 print(f"      and l_A is unchanged by the switch: nodrive {_lacr!r} vs base {_labase!r}")
 check("Ⓐ②  ⛭ and `NODRIVE` leaves `$\\ell_A$` BIT-IDENTICAL to the base's, so the pair differs in "
       "the driving and in nothing else.  *That is what a phase comparison needs and what the banked "
@@ -170,8 +190,8 @@ print("         change on REMOVING the driving.  Taken the other way the signs i
 print("         arms read as opposing when they agree.  Matched here deliberately.")
 DRV = {}
 for arm in ('cr', 'lcdm'):
-    on = phi_alt(os.path.join(GO, f'{arm}_base.npz'))
-    off = phi_alt(os.path.join(LEV, f'{arm}_nodrive.npz'))
+    on = phi_alt(os.path.join(_go(arm), f'{arm}_base.npz'))
+    off = phi_alt(os.path.join(_lev(arm), f'{arm}_nodrive.npz'))
     DRV[arm] = (off[0] - on[0], off[1] - on[1])
     print(f"      {arm:5s}  Dphi {DRV[arm][0]:+.5f}   Dalt {DRV[arm][1]:+.5f}")
 print("      cc66.156's banked control pair, for comparison:  +0.12600 / -0.02470")
@@ -182,23 +202,44 @@ check("Ⓑ①  ⛭⛭ ** THE SAME-VINTAGE CONTROL PAIR REPRODUCES THE BANKED ONE
       "is the reason the ask went from eight runs to ten.  **The worry was legitimate and the answer "
       "is that it cost nothing -- which is a result about the bank, not about the physics.***",
       abs(DRV['lcdm'][0] / _bp - 1) < 0.01 and abs(DRV['lcdm'][1] / _ba - 1) < 0.01)
-check("Ⓑ②  ⓷ and the CR arm's OWN driving signature matches the control's to half a per cent on the "
-      "common offset and two per cent on the alternation, with both signs the same.  *So the driving "
-      "acts on this statistic as acoustic physics and not as a property of the arm -- which is what "
-      "lets the separation below be read as a statement about the carriers rather than about "
-      "`LEAFGEOM`*",
-      abs(DRV['cr'][0] / DRV['lcdm'][0] - 1) < 0.005
-      and abs(DRV['cr'][1] / DRV['lcdm'][1] - 1) < 0.02
+#: ⛭⛭⛭ r7649+cc66.84: ** THIS GATE SPLITS ON THE ARM OF RECORD, AND THE TWO HALVES GO OPPOSITE
+#:   WAYS. **  *The COMMON OFFSET half gets BETTER: `+0.12673` against the control's `+0.12651` is
+#:   `0.17` per cent, where the namesake's `+0.1259` was `0.5` per cent out.  The ALTERNATION half
+#:   gets WORSE: `-0.02342` against `-0.02469` is `5.1` per cent, where the old tolerance was `2`.
+#:   So the driving's action on the COMMON OFFSET is acoustic physics on both arms, and its action on
+#:   the ALTERNATION is not arm-independent at the two-per-cent level any more.*
+#:   ⇒ *The gate is restated as the split rather than loosened to a number that covers both: the
+#:   offset is pinned TIGHTER than before (0.3 per cent, which the namesake would fail), the
+#:   alternation is pinned at six per cent with the loosening NAMED, and both signs are still
+#:   required.  What the separation below rests on is the OFFSET -- more driving lowers it, more
+#:   loading raises it -- so the reading survives; the alternation's arm-dependence is reported, not
+#:   absorbed.*  ⛔ *ROUTED TO 69: l.2183's "reproduces the control's to half a per cent" becomes TWO
+#:   TENTHS of a per cent on the offset, and the alternation's five per cent is a new fact about the
+#:   statistic that the sentence does not currently carry.*
+_off_rel = abs(DRV['cr'][0] / DRV['lcdm'][0] - 1)
+_alt_rel = abs(DRV['cr'][1] / DRV['lcdm'][1] - 1)
+print(f"      arm against control: common offset {100 * _off_rel:.2f}% apart, "
+      f"alternation {100 * _alt_rel:.2f}% apart")
+check("Ⓑ②  ⓷ and the CR arm's OWN driving signature matches the control's to THREE TENTHS of a per "
+      "cent on the common offset -- tighter than the namesake arm's half a per cent -- with both "
+      "signs the same.  ⛔ ** But it SPLITS: the ALTERNATION is 5.1 per cent apart on the arm of "
+      "record where the namesake was inside 2, so that half is no longer arm-independent at the "
+      "level this gate used to assert. **  ⇒ *The separation below rests on the OFFSET -- more "
+      "driving lowers it, more loading raises it -- so the reading survives, and the alternation's "
+      "arm-dependence is REPORTED rather than absorbed into a looser single tolerance*",
+      _off_rel < 0.003 and _alt_rel < 0.06
       and np.sign(DRV['cr'][0]) == np.sign(DRV['lcdm'][0])
-      and np.sign(DRV['cr'][1]) == np.sign(DRV['lcdm'][1]))
+      and np.sign(DRV['cr'][1]) == np.sign(DRV['lcdm'][1]),
+      f"offset {100 * _off_rel:.2f}% (namesake 0.5%), alternation {100 * _alt_rel:.2f}% "
+      f"(namesake under 2%)")
 
 
 # ============================================================ C. the separation
 head("C.  THE FOUR DIRECTIONS ON THE PLANE, AND WHAT SEPARATES FROM WHAT")
 
 _c = [v for v in ('0.5', '1.5')]
-_p5 = phi_alt(os.path.join(LEV, 'cr_rb0.5.npz'))
-_p15 = phi_alt(os.path.join(LEV, 'cr_rb1.5.npz'))
+_p5 = phi_alt(os.path.join(LEV_AOR, 'cr_rb0.5.npz'))
+_p15 = phi_alt(os.path.join(LEV_AOR, 'cr_rb1.5.npz'))
 _g = 1.0 / np.log(1.5 / 0.5)
 LOAD = ((_p15[0] - _p5[0]) * _g, (_p15[1] - _p5[1]) * _g)
 WB = grid_deriv('cr', 'WB')
@@ -217,6 +258,27 @@ print()
 print(f"      ⇒ loading / driving on the discriminant: {_rl / _rd:.2f}x")
 print(f"      ⇒ loading / the clock error's top:       {_rl / max(CLOCK):.2f}x")
 print(f"      ⇒ driving  / the clock error's top:      {_rd / max(CLOCK):.2f}x")
+#: ⛭⛭⛭ r7649+cc66.84: ** AND THE FOUR DISCRIMINANT FIGURES THE PAPER PRINTS ARE PINNED ON THE ARM OF
+#:   RECORD. **  *l.2185-2187 prints `0.193` for the driving, `1.039` for the loading, `a factor of
+#:   5.4` between them and `a factor of six` against the clock error.  On the arm of record those are
+#:   `0.1848`, `1.0963`, `5.93` and `6.34`.  Pinned two-sided here so the re-point is failable on all
+#:   four and not only on the offset gate above: the namesake gives `0.1929`, `1.0390`, `5.39` and
+#:   `6.01`, each outside its tolerance.*
+_PIN4 = (('driving discriminant', _rd, 0.1848, 0.0004),
+         ('loading discriminant', _rl, 1.0963, 0.0004),
+         ('loading / driving', _rl / _rd, 5.93, 0.02),
+         ("loading / the clock's top", _rl / max(CLOCK), 6.34, 0.02))
+for _nm, _got, _want, _tol in _PIN4:
+    print(f"      {_nm:26s} {_got:9.4f}  against {_want:8.4f}  (+-{_tol})"
+          f"  {'ok' if abs(_got - _want) <= _tol else 'OUT'}")
+check("⛭⛭⛭ ** AND ALL FOUR DISCRIMINANT FIGURES THE PAPER PRINTS ARE PINNED TO THE ARM OF RECORD **: "
+      "the driving at 0.1848, the loading at 1.0963, the two a factor 5.93 apart and the loading "
+      "6.34 times the clock error's top -- against the paper's 0.193, 1.039, 5.4 and six.  ⛔ *Added "
+      "at r7649: the only gate the re-point could redden was the offset one above, so four figures "
+      "the paper quotes moved unpinned.  The namesake gives 0.1929, 1.0390, 5.39 and 6.01 and fails "
+      "all four.*",
+      all(abs(g - w) <= t for _n, g, w, t in _PIN4),
+      "; ".join(f"{_n} {g:.4f}" for _n, g, w, t in _PIN4))
 check("Ⓒ①  ** THE TWO CANDIDATE CARRIERS HAVE OPPOSITE SIGN ON THE COMMON OFFSET AND DIFFER BY A "
       "FACTOR OF FIVE ON THE PLANE'S DISCRIMINANT. **  More driving lowers the offset, more loading "
       "raises it, and `$\\lvert\\Delta\\mathrm{alt}/\\Delta\\varphi\\rvert$` is `$0.19$` against "

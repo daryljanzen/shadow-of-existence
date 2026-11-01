@@ -51,8 +51,10 @@ BAR = "=" * 104
 fail = []
 
 
-def check(label, ok):
-    print(f"    {'OK  ' if ok else 'FAIL'}  {label}")
+def check(label, ok, got=None):
+    #: ⛭ r7649+cc66.87: `got` added, optional, so a gate can PRINT WHAT IT MEASURED beside its
+    #: verdict.  Every call that predates this keeps working unchanged.
+    print(f"    {'OK  ' if ok else 'FAIL'}  {label}" + (f"   ({got})" if got is not None else ""))
     if not ok:
         fail.append(label)
 
@@ -238,6 +240,69 @@ check("Ⓑ①  ** THE PEAK SET SEPARATES THE BARYON DIRECTION FROM A PURE TILT B
       "slope separating the same two directions by 1.3. **  That is the difference between a "
       "statistic that reads phase and one that reads gradient",
       all(RAT[a][0] > 8.0 and RAT[a][1] > 15.0 for a in ('cr', 'lcdm')))
+#: ⛭⛭⛭ r7649+cc66.87: ** AND THE FOUR FACTORS ARE PINNED TO THEIR PRINTED DIGIT, which `r7649` asks
+#:   for and which the gate above does not give. **  *`11.7` and `18.3` are this receipt's own
+#:   headline and they are what `CR_cosmology.tex` l.2175 prints, beside the control's `11.4` and
+#:   `22.6`.  The gate above is ONE-SIDED -- `> 8.0` and `> 15.0` -- so the four could drift to any
+#:   larger value with the paper's digits unchanged and nothing would redden.  That is exactly what
+#:   the standing rule means by "a figure the INDEX row prints is pinned only by a COMPARISON": an
+#:   inequality that the figure happens to satisfy is not a pin on the figure.*
+#:   ⌗ *Pinned as `round(x, 1) == want`, which is the paper's own precision and not a tolerance I
+#:   chose: it fails the moment the printed digit would change, and it cannot pass by being
+#:   satisfied from above.  The control's pair is pinned with the arm's because l.2175 prints all
+#:   four in one sentence and a pin on half of it would leave the other half free.*
+#: ⛭⛭⛭ r7649+cc66.89: ** AND THE FOUR ARE READ OUT OF THE PAPER RATHER THAN RETYPED FROM IT. **
+#:   *`check_unread_figure` reddened on the first form of this pin and it was right to: the label
+#:   said the figures are what l.2175 PRINTS, and nothing in the receipt opened the paper -- so if
+#:   `CR_cosmology.tex` moved, the pin would stay green while the attribution went false.  The gate
+#:   offered three remedies and this is the strongest of them: READ the sentence.*
+#:   ⌗ *This is the same form as `...the_refit_bound_figures_all_reproduce...`'s, which reads each
+#:   figure out of the paper and compares -- the strongest pin in the corpus and, by the blind spot
+#:   recorded in `figure_pin_baseline.tsv`, one `check_figures_pinned` cannot see.  So the four
+#:   LITERAL comparisons below stay as well, and the two together are belt and braces: the literals
+#:   are what that gate reads, the paper read is what makes the attribution true.*
+#:   ⇒ ⛔ ** AND IT IS A PIN ON A SENTENCE OF 69's, SO IT IS WRITTEN NOT TO FAIL ON SUCCESS. **  *If
+#:   69 re-words l.2175 while keeping the four figures, a bare `re.search` would go red the day the
+#:   paper landed correctly.  So the locator is a DISJUNCTION: when the sentence is found, the
+#:   paper's own four numbers must agree with the computation; when it is not found, the ALT arm
+#:   holds the computation against the four values and the label says the sentence was not locatable
+#:   in that form.  Adjudicated `ALT` in `corpus/quote_pin_baseline.tsv` in this same pass.*
+PRINTED = {('cr', 0): 11.7, ('cr', 1): 18.3, ('lcdm', 0): 11.4, ('lcdm', 1): 22.6}
+_TEX = open(os.path.join(ROOT, 'corpus', 'CR_cosmology.tex'), encoding='utf-8').read()
+_M2175 = re.search(r"by factors of \$([0-9.]+)\$ and \$([0-9.]+)\$ on this arm and "
+                   r"\$([0-9.]+)\$ and \$([0-9.]+)\$ on the control", _TEX)
+PAPER4 = tuple(float(g) for g in _M2175.groups()) if _M2175 else None
+print(f"      l.2175 as the paper carries it: "
+      f"{'found -> ' + str(PAPER4) if PAPER4 else 'NOT LOCATABLE in this form -- ALT arm'}")
+for (_a, _i), _want in sorted(PRINTED.items()):
+    _got = RAT[_a][_i]
+    print(f"      l.2175's {_want:5.1f}x  {_a:5s} {'offset' if _i == 0 else 'alternation':11s} "
+          f"computed {_got:8.4f}  rounds to {round(_got, 1):5.1f}  "
+          f"{'ok' if round(_got, 1) == _want else 'OUT'}")
+check("⛭⛭⛭ ** AND ALL FOUR FACTORS l.2175 PRINTS ARE PINNED TO THEIR PRINTED DIGIT, READ OUT OF THE PAPER AND NOT RETYPED FROM IT: 11.7 and 18.3 "
+      "on the arm of record, 11.4 and 22.6 on the control. **  ⛔ *The gate above is one-sided "
+      "(`> 8.0`, `> 15.0`), so until r7649 all four could have drifted upward with the paper's "
+      "digits unchanged and nothing would have reddened.  Pinned as `round(x, 1) == want`, which is "
+      "the paper's own precision rather than a tolerance chosen here*",
+      #: ⛔⛭⛭ r7649+cc66.87: ** WRITTEN OUT AS FOUR LITERAL COMPARISONS, AND THE FIRST FORM OF
+      #:   THIS PIN WAS INVISIBLE TO THE GATE IT WAS WRITTEN FOR. **  *I first wrote it as
+      #:   `all(round(RAT[a][i], 1) == w for (a, i), w in PRINTED.items())`, which is the same
+      #:   test and reads better.  `check_figures_pinned` still reported both figures UNPINNED,
+      #:   because its `pins()` walks the AST for `ast.Compare` nodes and reads the CONSTANT out
+      #:   of the comparison -- and in the comprehension the constant is a loop variable, not a
+      #:   literal.  So a pin held in a dict does not exist as far as that gate is concerned.*
+      #:   ⇒ *That is the SECOND instrument with this blind spot: `check_quote_pins` has it too,
+      #:   reported at `cc66.71` -- it sees literals passed inline to `re.search` and not literals
+      #:   held in a dict.  Both are routed; this receipt simply does not rely on it.  The dict
+      #:   above is kept for the PRINTED TABLE, which is what it is good for.*
+      round(RAT['cr'][0], 1) == 11.7 and round(RAT['cr'][1], 1) == 18.3
+      and round(RAT['lcdm'][0], 1) == 11.4 and round(RAT['lcdm'][1], 1) == 22.6
+      and (PAPER4 is None
+           or PAPER4 == (round(RAT['cr'][0], 1), round(RAT['cr'][1], 1),
+                         round(RAT['lcdm'][0], 1), round(RAT['lcdm'][1], 1))),
+      ("paper " + str(PAPER4) if PAPER4 else "paper sentence NOT LOCATABLE -- ALT arm") + "; "
+      + "; ".join(f"{a}[{i}] {RAT[a][i]:.4f}->{round(RAT[a][i], 1):.1f} want {w:.1f}"
+                  for (a, i), w in sorted(PRINTED.items())))
 
 _nsconsist = [abs(D[(g, a, 'NS')][0]) for g in ('oneclock', 'licensed') for a in ('cr', 'lcdm')]
 print(f"      and `n_s`'s own residual response is STABLE rather than merely small: "
