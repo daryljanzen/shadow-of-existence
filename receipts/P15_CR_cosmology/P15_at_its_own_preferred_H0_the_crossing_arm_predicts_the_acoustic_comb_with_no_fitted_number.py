@@ -709,9 +709,16 @@ print(f"""
     own cells, so its raw phase comes out bit-identical to the control's.  By the matched locator of
     PART 4B, which is the procedure l.813's sentence names, the pair is {_MAOR['f4'] / np.pi:.4f} pi
     against the sky's {_MSKY['f4'] / np.pi:.4f} pi on the four-peak fit, and {_MAOR['f3'] / np.pi:.4f}
-    against {_MSKY['f3'] / np.pi:.4f} on the three-peak one.*  ⇒ ** l.2147's intercept pair, -0.2349
-    against the sky's -0.2405, is the NAMESAKE's raw-grid three-peak fit; the pair that goes with a
-    landed comb of 299.1 is the matched four-peak one. **
+    against {_MSKY['f3'] / np.pi:.4f} on the three-peak one.*  ⇒ ** l.2147's intercept pair,
+    {NEW['phi'] / np.pi:.4f} against the sky's {phi_sky / np.pi:.4f}, is the NAMESAKE's raw-grid
+    three-peak fit; the pair that goes with a landed comb of {_MAOR['a4']:.1f} is the matched
+    four-peak one. **
+    ⌗ *Those two are INTERPOLATED and not typed, deliberately: `marker_transposition_baseline.tsv`
+    adjudicates l.2147's sky intercept as "the own group prints it at run time", and hard-coding the
+    figure here makes that adjudication STALE -- which is what it did at `r7653+cc66.110` and what the
+    CI `fast` tier then reddened on.  ** And this sentence may not spell the figure either: naming it in
+    the comment that explains the interpolation carries it just as surely as typing it in the gate, and
+    that is the second half of the same red. **  The marker gate reads the SOURCE.*
 
   ⌗ ** AND THE CONFIGURATION IS THE 133-BIN UNLENSED ONE AT LMAXL = 1300. **  The corpus's own
   185-bin full-range lensed comparison needs ell ~ 2000 and is not run here.  *A number scored on
