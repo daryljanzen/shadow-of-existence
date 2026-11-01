@@ -1,0 +1,78 @@
+
+  RUN-ALL-RECEIPTS -- 1153 registered receipt(s), 4 at a time, 600s each, each from ITS OWN DIRECTORY
+  DECLARED LONG: C59_the_control_reproduces_camb_and_the_height_defect_was_k_truncation.py runs on 2100s, not 600s -- named, with its measured cost in the source
+  DECLARED LONG: C63_no_single_source_term_carries_the_undriven_split_and_the_first_probe_read_an_unwired_knob.py runs on 900s, not 600s -- named, with its measured cost in the source
+  DECLARED LONG: P10_the_algebraic_quartic_is_settled_by_the_frame_constant_level_at_every_level_and_the_remainder_is_the_derivative_sectors_eight.py runs on 900s, not 600s -- named, with its measured cost in the source
+  DECLARED LONG: P10_the_complete_second_orders_double_logarithm_is_not_covariant_up_to_the_scale_factors_equation_so_the_invariant_is_a_stated_limit.py runs on 2100s, not 600s -- named, with its measured cost in the source
+  DECLARED LONG: P10_the_covariant_quartic_is_seven_rationals_carried_by_an_identity_and_no_measurement_route_reaches_them.py runs on 1500s, not 600s -- named, with its measured cost in the source
+  DECLARED LONG: P10_the_cubic_over_three_different_levels_is_derived_in_closed_form_and_its_low_level_region_carries_a_nested_logarithm_so_the_bare_sum_is_double_logarithmic.py runs on 900s, not 600s -- named, with its measured cost in the source
+  DECLARED LONG: P10_the_cubic_summand_is_odd_over_m_cubed_so_it_reaches_the_pole_and_the_ledger_pays_at_dimension_six.py runs on 900s, not 600s -- named, with its measured cost in the source
+  DECLARED LONG: P14_the_constituent_count_is_conserved_on_every_static_member_and_the_twist_alone_violates_it.py runs on 900s, not 600s -- named, with its measured cost in the source
+  DECLARED LONG: P15_a_drive_clock_error_cannot_move_the_spacing_so_it_is_a_running_phase_but_its_direction_on_the_peak_plane_depends_on_which_pair_of_stretches_is_read_and_the_two_clocks_disagree_about_which_is_longer.py runs on 900s, not 600s -- named, with its measured cost in the source
+  DECLARED LONG: P15_the_carrier_separation_on_L_p_is_the_combs_peak_count_not_the_carrier_and_the_closure_has_no_number_because_the_degeneracy_is_sampling_invariant.py runs on 900s, not 600s -- named, with its measured cost in the source
+  DECLARED LONG: P15_the_four_dimensional_treatment_keeps_the_economy_and_keeps_more_of_it_but_in_the_sphere_label_so_the_bridge_exists_only_on_the_squashing_free_sector.py runs on 900s, not 600s -- named, with its measured cost in the source
+  DECLARED LONG: P15_the_fourth_parameter_recovers_the_drift_the_gaps_show_but_the_spacing_and_the_drift_are_not_separable_so_the_data_half_still_does_not_happen.py runs on 1500s, not 600s -- named, with its measured cost in the source
+  DECLARED LONG: P15_the_low_multipole_depth_gap_closes_and_two_defects_were_cancelling.py runs on 900s, not 600s -- named, with its measured cost in the source
+  DECLARED LONG: P15_the_low_multipole_floor_moves_with_no_background_and_the_factor_two_is_the_late_isw.py runs on 1800s, not 600s -- named, with its measured cost in the source
+  DECLARED LONG: P15_the_one_fitted_number_moves_the_scale_and_not_the_peak.py runs on 1500s, not 600s -- named, with its measured cost in the source
+  DECLARED LONG: P15_the_symmetric_comparison_was_never_runnable_and_the_quarter_was_two_fifths.py runs on 900s, not 600s -- named, with its measured cost in the source
+  DECLARED LONG: Q1_a_stated_tolerance_is_a_request_and_the_corpus_answers_it.py runs on 900s, not 600s -- named, with its measured cost in the source
+  DECLARED LONG: S36_two_more_faces_of_the_live_subject_family_and_each_needed_a_different_widening_of_what_gets_run.py runs on 1200s, not 600s -- named, with its measured cost in the source
+  DECLARED LONG: S47_the_cheap_tail_closes_whole_and_nine_of_its_fourteen_rows_needed_an_instrument_or_a_normalised_reader_rather_than_a_widening.py runs on 900s, not 600s -- named, with its measured cost in the source
+  DECLARED LONG: S54_a_ledger_change_scopes_five_receipts_and_none_of_the_forty_four_that_read_the_ledger_because_the_read_index_is_a_list_of_spellings_without_tsv_on_it.py runs on 1800s, not 600s -- named, with its measured cost in the source
+  DECLARED LONG: S55_the_previous_repairs_own_written_safety_argument_was_the_defect_because_a_shrinking_population_is_safe_for_a_restraint_and_fatal_for_the_non_vacuity_read_off_the_same_range.py runs on 2100s, not 600s -- named, with its measured cost in the source
+  TREE-DIGEST: 24bc257ffff42405
+
+  ORDER: longest first by READ_INDEX.json
+  EXCLUSIVE: receipts/L237_gates_check_declarations/G51_the_twelve_can_all_exit_non_zero_and_the_backlog_is_an_artefact.py mutates a tracked file -- run alone, nothing else in flight
+    [slow] receipts/P15_CR_cosmology/P15_the_runtime_tail_in_r7170_is_not_localised_to_a_call_so_the_free_reduction_lands_and_the_pre_registered_fix_does_not_and_the_margin_to_the_cap_is_the_gates_to_set.py  -- exceeded 600s
+        FAIL  | ⛔ ** So the receipt fails only by exceeding a timeout, never by a gate: ZERO `FAIL` lines in every run
+        FAIL  |     OK    Ⓒ② ⛔ AND THE PRE-REGISTERED PASS CONDITION IS NOT MET, WHICH IS SAID AS A FAILURE OF THE FIX RATHER THAN SMOOTHED.  `r7220` filed THIRTY consecutive runs at or under budget with none over three times it.  Twenty post-repair runs gave ONE killed at the cap and a `99` s excursion besides, so
+        FAIL  |   D.  LIVE ON THIS TREE: THE CACHE RETURNS WHAT RECOMPUTATION RETURNS, AND STILL FAILS A FAKE
+        FAIL  |     OK    Ⓓ② ⛔ THE MUST-COME-BACK-WRONG CONTROL: a perturbed operator carrying an angular term still FAILS the separation test, so the test the cache feeds is not vacuous and a cached answer cannot smuggle a false pass
+        stdout| inside, and this is not a `46`th.
+        stdout| 
+        stdout| ⛔ ** AND NO ASSERTION WAS WEAKENED TO MAKE A RUNTIME PROBLEM GO AWAY**, *which is the one thing
+        stdout| `r7220`'s pre-registration put out of scope.  The cheaper-normalisation branch was never applied,
+        stdout| because the measurement that would have justified it never arrived.*
+        stdout| 
+        stdout| ========================================================================================================
+        stdout|   A.  THE DEFECT IS REAL AND IT IS A TIMEOUT, NEVER A GATE
+        stdout| ========================================================================================================
+        stdout|       PRE   20 runs, 3 killed at the cap, the rest 17-22 s, mean 18.2 s
+        stdout|       POST  20 runs, 1 killed at the cap, the rest 15-99 s, mean 20.5 s
+        stdout|     OK    Ⓐ① the pre-repair batch is twenty plain runs on an idle box with THREE killed at the cap and the other seventeen between `17` and `22` s --- so the receipt's registered `13` s describes its typical run and nothing about its worst
+        stdout|     OK    Ⓐ② and ⛔ EVERY run that finished finished GREEN --- the receipt has no failing gate in any batch of this revision, so what is wrong with it is its runtime and not its content
+        stdout| 
+        stdout| ========================================================================================================
+        stdout|   B.  AND IT IS NOT LOCALISED TO A CALL, WHICH IS WHAT KILLS THE PRE-REGISTERED FIX
+        stdout| ========================================================================================================
+        stdout|       runpy-dump        12 runs, 0 blown, cap 140 s
+        stdout|       simplify-timed    10 runs, 0 blown, cap 420 s
+        stdout|       stderr-marked     15 runs, 0 blown, cap 300 s
+        stdout|       ⇒ 37 instrumented runs, 0 blown, against 5.5 expected at the plain rate of 3/20
+        stdout|     OK    Ⓑ① ⛭⛭⛭ THIRTY-SEVEN RUNS WITH INSTRUMENTATION ADDED PRODUCED NOT ONE BLOW-UP, where the plain rate predicts about five.  ***A defect that disappears whenever it is watched is not a slow call***, so replacing any one call could not have removed it and the filed branch ⓐ is refuted by its ow
+        stdout|       the dominant call sums to 12.53-15.66 s over 11 calls, worst single 3.26 s;  worst single call anywhere 3.26 s
+        stdout|     OK    Ⓑ② and the per-call timing says the same thing from the other side: the dominant call's WORST single invocation is `3.3` s and the whole run's simplify time is under `20` s, so no call in the measured profile is within two orders of magnitude of a `420` s run
+        stdout|     OK    Ⓑ③ ⚠ and the limit on all of it is stated rather than buried: two of the three blown runs were ADJACENT in one batch, which points at a burst rather than an independent per-run draw, so THREE accounts remain live --- an intrinsic excursion, an environmental burst, and a perturbation introd
+        stdout| 
+        stdout| ========================================================================================================
+        stdout|   C.  THE FREE HALF LANDS, AND IS REPORTED AS A TENTH RATHER THAN AS THE FIX
+        stdout| ========================================================================================================
+        stdout|     OK    Ⓒ① the memoisation is on the reduction in `r7170` and nothing else in that receipt changed: one decorator and a docstring that says what it is and what it is not
+        stdout|       typical run by MEDIAN 18 s -> 16 s, a factor of 1.125
+        stdout|       and by MEAN 18.2 s -> 20.5 s, the other way, because one 99 s excursion dominates nineteen runs of 15-17 s
+        stdout|     OK    Ⓒ② ⛔ AND THE PRE-REGISTERED PASS CONDITION IS NOT MET, WHICH IS SAID AS A FAILURE OF THE FIX RATHER THAN SMOOTHED.  `r7220` filed THIRTY consecutive runs at or under budget with none over three times it.  Twenty post-repair runs gave ONE killed at the cap and a `99` s excursion besides, so
+        stdout| 
+        stdout| ========================================================================================================
+        stdout|   D.  LIVE ON THIS TREE: THE CACHE RETURNS WHAT RECOMPUTATION RETURNS, AND STILL FAILS A FAKE
+        stdout| ========================================================================================================
+        stdout|       two reductions recomputed here in 3.1 s
+        stdout|     OK    Ⓓ① the reduction is a pure function of its two integers, which is what makes the cache sound: the `m = 0` and `m = 1` operators at `ell = 1` are the SAME object, so a hit returns what the recomputation would have built
+        stdout|     OK    Ⓓ② ⛔ THE MUST-COME-BACK-WRONG CONTROL: a perturbed operator carrying an angular term still FAILS the separation test, so the test the cache feeds is not vacuous and a cached answer cannot smuggle a false pass
+
+  1152 pass, 0 fail, 1 over timeout, in 8165s wall
+  slowest that passed: P10_the_complete_second_orders_double_logarithm_is_not_covariant_up_to_the_scale_factors_equation_so_the_invariant_is_a_stated_limit.py 1837s, C59_the_control_reproduces_camb_and_the_height_defect_was_k_truncation.py 1549s, S55_the_previous_repairs_own_written_safety_argument_was_the_defect_because_a_shrinking_population_is_safe_for_a_restraint_and_fatal_for_the_non_vacuity_read_off_the_same_range.py 1307s, P10_the_covariant_quartic_is_seven_rationals_carried_by_an_identity_and_no_measurement_route_reaches_them.py 1183s, P15_the_low_multipole_floor_moves_with_no_background_and_the_factor_two_is_the_late_isw.py 1061s
+
+  Every registered receipt runs, in place, and exits 0 -- so every assertion in the
+  reproducibility layer was actually evaluated.
