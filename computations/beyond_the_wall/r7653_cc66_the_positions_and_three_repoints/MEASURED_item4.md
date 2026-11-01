@@ -179,3 +179,30 @@ distances, the single switch key and the 0.3 bound asserted on the arm of record
 control-hash gate repaired, and the per-arm resolution itself gated so the receipt cannot silently fall
 back to the namesake. **The paper's wording is 69's to land; nothing in `corpus/` is touched by this
 item.**
+
+## ⓻ The six quote-pin keys the paper-read mints, and why each is hard rather than ALT
+
+Reading the paragraph means locating it, and a locator is a quote pin. The operator reports **six** keys
+on this receipt, all `PAPER`, and I adjudicate every one **DELIBERATE**:
+
+| the span | tier | why |
+|---|---|---|
+| `\rcpt{P15_the_three_grid_comparison_…}` | TOKEN | a NAME, which the baseline's header names DELIBERATE in terms; it fails exactly when l.1971 stops citing this receipt |
+| `$k_{\max}D_M=(\d+)$ against $\ell_{\max}=(\d+)$` | SENTENCE | shortest span carrying both figures of an **identity**; the grain clause decides it directly |
+| `More than half the separation is already present ([a-z]+ [a-z]+) multipoles below the ceiling` | SENTENCE | subject, main verb and whole claim inside the span; shortest that carries it |
+| `about half, falling between $\ell\simeq(\d+)$ and $(\d+)$` | SENTENCE | **reshaped**: the paper's leading `with` is dropped, because a span opening on a preposition is DANGLING under the subject rule |
+| `a ([a-z]+) of the separation on the full-range fit sits there` | SENTENCE | **reshaped**: the paper's `even though` is a subordinator and would dangle it the same way |
+| `its onset falls between … and it is \emph{not} converged---it grows to the last bin` | SENTENCE | **folded into one span**, because the non-convergence clause's own subject is the pronoun "it" and a span cut to it would dangle |
+
+⛭ **None is flagged ALT, and that is a decision rather than an omission.** The two spans this turn *does*
+propose rewording — the seven-figure run and the control-tracking bound — are written as disjunctions
+with their misses printed loudly, **and the operator does not report either as a pin**, so they need no
+row. Every span above carries a claim the re-point leaves standing on **both** arms, so 69 has no reason
+to touch it and a hard pin is the stronger form. ⌗ *Both ALT arms were exercised by perturbing the two
+patterns: the miss prints, the gate holds, 43 → 42 checks all pass.*
+
+⛔ **Three of the six spans had to be reshaped before they could be adjudicated**, and that is worth
+recording as a method note rather than a chore: a locator written to be convenient opens on whatever
+word precedes the figures, and the baseline's subject rule is precisely about not pinning a fragment
+whose subject lives outside it. Writing the locator to open on its own subject is free at the time and
+decides the verdict.
