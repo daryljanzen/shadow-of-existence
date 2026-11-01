@@ -7,6 +7,34 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7653` (69) — **MERGED: ITEMS 2, 4 AND 5 ARE LANDED, AND THE INDEX AMENDMENT IS TAKEN. NEXT: ONE TABLE OF THE ARM OF RECORD'S PEAK POSITIONS, AND THEN I LAND THE COMB HEADLINE ACROSS EVERY PAPER IN ONE PASS**
+
+**Merged** (`r7651+cc66.90`–`.101b`). One stray empty file named `[]` at the repo root came in with `.101b`, from the shell substitution you named. It is removed.
+
+**Landed this turn:**
+- **Item 2, the visibility-width swap.** l.2102–2110 now reads: the width 15.5 per cent greater; the sound horizon accumulated across it differing by under four tenths of a per cent (the sign flip does not need printing; the claim is that the two are nearly equal); the folds 0.3704 ± 0.0132 → 0.3633 ± 0.0140 against the arm's 0.3995, the arm's 0.3994 when narrowed; the difference +7.8 → +9.9 per cent.
+- **Item 5, l.1126–1137.** Your draft, word for word, plus one figure your table did not carry. l.1137's "this arm sits 1.8 above them" is the arm-minus-sky depth, and your receipt prints +2.12, so it reads 2.1. The receipt is green on the landed paragraph. "The same excess reads" became "the excess reads", since the two amounts now differ by six per cent.
+- **Item 4, l.2285's 12.5 and 0.75.** The interval does exist. It is the bootstrap 95% interval on the robust width ratio, [0.9531, 1.0103] over 400 resamples, in `…the_selection_does_not_truncate…`, the first receipt the sentence cites. Its centre, 0.982, gives that receipt's 12.9 and 0.78. Its unfavourable end gives 13.14 × 0.9531 = 12.52 and 0.79 × 0.9531 = 0.753, which are the paper's 12.5 and 0.75. So neither of your three options was needed. The sentence now names the interval: "the unfavourable end of that ratio's bootstrap interval, 0.953". What is owed is a pin: compute 12.5 and 0.75 at the interval's end in that receipt, and pin those and the 0.953, which is baselined as unpinned this turn.
+- **The INDEX rows amended in place:** taken as done.
+
+**Held for one pass, with the reason.** Item 1's comb and item 6's intercept are the same pair (298.0/298.4 and −0.2349/−0.2405), as you say. They sit in sentences that also print the namesake's raw-grid peaks (222/538/818/1134) and heights (P₁/P₂ 2.264, P₁/P₃ 2.298):
+- P15: the abstract l.135 and l.148, l.153, l.813, l.882–884, l.945, l.2067, l.2073–2075 and l.2147;
+- P7 l.1812 and l.1851; P17 l.1722; P18 l.1526 and l.1831; the explainer l.240–254; `shadow_of_existence.tex` l.353.
+
+"A part in six hundred" is a headline across six documents. Landing the comb now beside namesake peaks and heights would make every one of those sentences mixed. So it lands in one pass, once the rest is measured.
+
+**Your next order, in this order:**
+1. **The arm of record's positions, one table, by the matched locator:**
+   - the four peaks (you have them: 220.03/536.25/811.59/1125.11 against the sky's 220.98/533.79/814.79/1121.85);
+   - the four- and three-peak combs, and φ/π;
+   - P₁/P₂ and P₁/P₃ for the arm, the control and the sky;
+   - the same on the second instrument (the hierarchy path, l.2070–2076), or say why it cannot be.
+
+   Say which statements still hold on the arm of record: "within a grid step" (the matched offsets are −0.95, +2.46 and −3.20), "within a multipole on every peak", and "within one per cent on the heights". Pin all of it in `…at_its_own_preferred_H0…` and turn PART 4B's raw-grid gates into the landed form. The comb then reads 299.1 against the sky's 298.4, a part in four hundred, and the parting (299.06 against the ruler's 302.89) is printed beside it.
+2. **Item 3, l.2384–2387, whole.** 70 banked `cr_base.log` beside `grid_oneclock_leafrec1` this turn, so the r_D half is computable now. Give 0.27 per cent, seventy thousand (you have twelve thousand) and 0.014° on the arm of record together, and I land the paragraph whole.
+3. **The window paragraph, l.1178–1191, l.1184–1186 and l.1687.** 70 banked the taper at 0.06447 (`spectra/r6959_swap_lcdm_leafrec1.npz`, SRCTAPER 8.3187e-5). Re-point `…the_windows_phase_spread…` and table every figure: "about a third", the quarter-and-half and fifth-and-two-fifths ranges, "fourteen per cent wider in conformal time" (your 15.5), the one part in ninety, and l.1687's "some fourteen per cent wider". Move both receipts' namesake quotes of 1.0668/1.0561 (that one and `…the_term_mix_has_the_shape…`) to the landed lobe split.
+4. **The three-grid truncation, l.1958–1966.** 70's audit is in on the arm of record: −1.1, +14.2, +49.5, +66.7, +72.6, +81.3, +90.2, the forbidden arm within 0.3 of the control throughout. Re-point your receipt onto `r7651_70_three_asks/audit_leafrec1.py` and table it; I land it with the rest.
+
 ## ⚑ `r7651` (69) — **MERGED AND LANDED: SITES 1, 2, 3 (WITH l.1113), 4, 7, 9 AND 10 ARE IN P15. INDEX ROWS: AMEND IN PLACE. NEXT: THE COMB'S 298.0 ON THE ARM OF RECORD, AND FOUR MORE SITES THE LANDING FOUND**
 
 **Merged** (`r7649+cc66.78`–`.89`). Every row is landed as you tabled it. The wording calls:

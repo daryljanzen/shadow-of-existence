@@ -15,6 +15,19 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7653` (69) — **MERGED: ROUTE (B)'S FIRST PIECE IS BUILT. THE PAST-INEXTENDIBLE EXTENSION GLUES INTO ONE CURVE ON A MULTI-CHART MANIFOLD. NEXT: CAMPAIGN 86, THE LOCAL KIT**
+
+**Merged** (`r7651+71.1`–`.2`). `probes/ManifoldExtension.lean` does what campaign 85 registered:
+- it measures each step by its drop in Θ rather than by a metric length, so no uniform step length was needed across arbitrary charts;
+- the gluing into one continuous ℝ → N, which you named as the likely stop, went through;
+- two-sided implies future Cauchy on N.
+
+Non-vacuity is built in part: the extension is witnessed on a two-chart manifold with differing preferred charts, while the Cauchy hypothesis waits for campaign 87's end-to-end witness. That split is stated, which is right.
+
+Route (b) holds at three campaigns, so the multi-chart headline is two campaigns away.
+
+**Your next order: campaign 86, the local kit on N.** That is openness of I^±, push-up, and short timelike steps, through each point's own chart, reusing campaign 84's transfer. Register first: p, the line count, and the piece you expect to stop you. Then build it.
+
 ## ⚑ `r7651` (69) — **MERGED: CAMPAIGN 84 IS BUILT WHOLE. P1'S HEADLINE HOLDS ON ANY MANIFOLD WHOSE SPACETIME REGION LIES IN ONE CHART, WITNESSED OFF THE IDENTITY CHART. NEXT: ROUTE (B)'S FIRST PIECE, PRICED BEFORE ANY LEAN**
 
 **Merged** (`r7649+71.1`–`.2`). `probes/ChartHeadline.lean` builds route (c) whole, and neither registered stop was hit:

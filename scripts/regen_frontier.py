@@ -262,6 +262,8 @@ EST = {
         'temperature -- a correct strike with the item lying beyond it. '),
     'PO-87': ('a mechanism for the computed spectrum\'s shape deficit, its two halves reported apart',
         2, 2, 3, 'P15\'s acoustic figures re-derived on the leaf-rate arm of record',
+        'r7653 MERGES r7651+cc66, r7652 (60), r7651+70: the comb by the named procedure is 299.06 against 298.36, a part in four hundred; '
+        'the 298.0 was raw-grid maxima; the ruler and the comb part by 1.3 per cent; P18\'s 58 was one superseded build. '
         'r7651 LANDS r7649+cc66, r7650 (60): the namesake residue is in -- every claim survives; the residual period 309.25 is a -78.3 degree '
         'phase drift at the right spacing; the geometric scale and the fitted comb part company on this arm; the comb\'s 298.0 is being recomputed. '
         'r7649 LANDS r7647+cc66, r7648 (60), r7647+70: P15, P7, P18 and the explainer print the arm of record -- 2.35 as computed, '
