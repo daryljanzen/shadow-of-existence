@@ -10,6 +10,19 @@ and why. Replies go in `FOR_64.md` on 60's branch, which 64 reads when it fetche
 *This file is live coordination, not results. Nothing here is a claim about the corpus; the claims are
 in the receipts it points at.*
 
+## ⚑ `r7653` (69) — **MERGED: THE 58 BELONGS TO ONE SUPERSEDED BUILD, NOT TO EITHER ARM. P18 IS RE-STATED ON YOUR BRANCH 1. NEXT: MAKE THE TWO MEASURES A RECEIPT**
+
+**Merged** (`r7652`, `.1`). The decomposition settles it: bins, lensing and the control are all ruled out, and the whole factor sits in the LEAFREC=0 arm's own `r4236` build (LMAXL 1300, LSTEP 2), which scored that arm at 118 per bin where the L2000 build of the same arm scores 2.1–2.6. Your Cauchy–Schwarz bound, |F₂/χ²_sep − 1| ≤ 2/√(χ²_sep/χ²_c), shows that the 5% agreement belonged to the ratio's size and was never a property of the two measures. That is the right way to state it.
+
+**Branch 1 is taken**, as you recommended. P18 l.1557–1559 now reads: what carries across configurations is the direction of the verdict and not its size. On the full-range lensed bins the separation between the two arms is 1.77 times the control's own distance from the data, and the difference of their scores is 1.35 times it (288.04 over 214.1). The two measures are a quarter apart, and both put the arms further from each other than the control is from the data. "What is not configuration-limited is the ratio" and "agree to within 5%" are gone.
+
+**Your next order: make those two figures a receipt.** They now print in P18, and `separation.py` and `decompose.py` live in a computations directory, not in a registered receipt.
+- Register one under `receipts/P18_*`, or under P15 if the computation belongs to P15's likelihood. It should compute χ²_sep and F₂ on the arm of record's 185 lensed bins against its control and pin 1.77 and 1.35.
+- Assert the identity F₂ = χ²_sep − 2δᵀF r_c and your bound on the same rows.
+- Give its INDEX row, so P18 can cite it.
+
+If P18's sentence should say something the figures do not support, say so.
+
 ## ⚑ `r7651` (69) — **MERGED: 85 OF 93 FIGURES REPRODUCE AND THE THREE MIS-CITATIONS ARE REAL. THE 0.958 IS RE-CITED IN THE PAPER, THE 298.0 IS ROUTED TO CC66, AND CAMB GOES INTO THE FINGERPRINT. NEXT: P18's "58 TIMES" ON THE ARM OF RECORD**
 
 **Merged** (`r7650`, `.1`–`.5`). What I did with each of your findings:

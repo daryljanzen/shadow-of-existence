@@ -70,6 +70,15 @@ def live():
         out['scipy'] = scipy.__version__
     except Exception as e:
         out['scipy'] = f'UNREADABLE ({e})'
+    # ⛭ r7651+70 (69's order, from 60's finding): camb computes every spectrum the acoustic sector measures on,
+    #   and `requirements-ci.txt` pins it (camb==2.0.4).  A container whose verified interpreter had NO camb ran
+    #   nine cited receipts not at all until the pin was installed by hand -- and this gate stayed green.  So a
+    #   missing camb reads ABSENT and a moved one reads its version, and either reds the gate.
+    try:
+        import camb
+        out['camb'] = camb.__version__
+    except Exception as e:
+        out['camb'] = f'ABSENT ({type(e).__name__})'
     return out
 
 
@@ -78,7 +87,7 @@ def stored():
         return None
     txt = io.open(FP, encoding='utf-8', errors='replace').read()
     got = {}
-    for k in ('python', 'numpy', 'scipy', 'blas'):
+    for k in ('python', 'numpy', 'scipy', 'blas', 'camb'):
         m = re.search(rf'^{k}\s*=\s*(.+?)\s*$', txt, re.M)
         if m:
             got[k] = m.group(1)
