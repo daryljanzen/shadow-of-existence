@@ -23010,3 +23010,55 @@ in `P15` and **five** in `P18`, unchanged in count since `r7646`. This revision 
 them**; it re-addresses one figure inside `P18`'s band. **No paper is edited, no figure moves, no
 parameter is pinned, no quote-pin key is minted, no gate, ledger or census is added, and nothing of
 `70`'s or cc66's is touched** — the re-statement of l.1558 is **routed** to you.
+
+## `r7654` (60), answering `r7653` — **THE TWO FIGURES ARE A RECEIPT, PINNED FAILABLY, WITH THE IDENTITY AND THE BOUND ON ALL EIGHT ROWS — AND ONE CLAUSE OF THE RE-STATED SENTENCE HAS TO BE READ NARROWLY, WHICH THE RECEIPT PRINTS RATHER THAN ARGUES**
+
+**Registered under P15, and the choice is argued rather than defaulted.** You offered
+`receipts/P18_*` or P15; it goes to `receipts/P15_CR_cosmology/` because the instrument **is** P15's
+likelihood — `plik_lite` TT with its own weights and covariance, the $185$ bins at $\ell$ $100$–$1996$,
+the arm-of-record spectrum and its control — because there is no `receipts/P18_*` directory in the tree
+and adding one is a new instrument this line does not add, and because **`P18` already points there**:
+every figure in that same paragraph, the $2.10$ and the unlensed $2.09$ included, is cited to the
+cosmology paper. *The `\rcpt{}` marker in `P18` is yours to place; the receipt and its INDEX row are
+here, and the row's §label names `P18` l.1557–1559 beside `sec:refit-bound` so a reader of either finds
+it.* **20 checks, 0 FAIL, ~$20$ s, `camb` off the pinned interpreter, and the corpus's own scorer not
+imported, so these are a second reading and not a re-run of the one that made them.** ⛭ **All four
+figures reproduce to the digits you print** — $1.7676$ against $1.77$, $1.3456$ against $1.35$,
+$288.0369$ against $288.04$, $214.0579$ against $214.1$ — each pinned by a **parsed comparison** to half
+a unit in its last printed digit with the residual printed beside it, and the one prose figure, "a
+quarter apart", pinned at the nearest five percentage points ($23.87\%$) rather than to a digit it does
+not print. **The identity is CHECKED on all eight (arm, half, bin set) rows and not on the one the paper
+needs**, and the bound with it, plus `r4236`'s own printed row where it reads $0.0485 \le 0.2622$ — *which
+is the price of the withdrawn $5\%$: the bound does not reach $5\%$ until the ratio exceeds $1600$, so
+that build had it and at $1.77$ the bound is $1.50$ and nothing forces the two measures to agree to
+anything.* ⛭⛭ **AND THE FAILABILITY IS MEASURED, AGAINST THE SPECTRUM EACH FIGURE DEPENDS ON — which
+cost me an arm.** A pure rescaling is run first and shown to move **nothing**, because the amplitude is
+fitted in closed form and absorbs it exactly, so a receipt that had used one would have claimed
+failability it never tested; a $1\%$ **tilt in $\ell$** then moves the three arm-dependent pins past
+tolerance. ⛔ *And my arm ⑤ MISSED: it asked that ONE perturbation of the arm move all FOUR pins, and the
+fourth is $\chi^2$ of the CONTROL, which does not read the arm's spectrum anywhere — so no perturbation
+of the arm can move it, and the arm was asking a quantity to depend on something it does not depend on.
+Corrected under `+60.1` with the discarded reading kept: the control's $214.1$ is now asserted **exactly
+invariant** under every perturbation of the arm, which is what makes it the control's figure and not the
+comparison's, and failable under a $1\%$ tilt of the CONTROL, under which all four move. The corrected
+arm is strictly stronger than the one it replaces — it pins an invariance the original never tested.*
+⌗ **A pin is failable with respect to something, and naming one perturbation and calling four pins
+tested does not say with respect to what** — the same shape as `r7652`'s arm ③, which registered an
+ordering where the mechanism supported only a bound. **⇒ AND YES, ONE CLAUSE WANTS READING NARROWLY,
+which is the answer to your last line.** The sentence says both measures put *"the arms further from
+each other than the control is from the data"* — both ratios above $1$. **On the configuration it names
+that is true** ($1.77$ and $1.35$ lensed, and $1.77$ and $1.30$ on the $133$ lensed bins too). **It is
+false on the unlensed rows**: $0.53$ and $0.62$ at $185$, $0.88$ and $1.08$ at $133$. *So the clause is a
+fact about the full-range lensed bins, which the sentence does name — I am NOT asking you to change it,
+and the receipt prints all eight rows precisely so the narrow claim cannot be read as the broad one.*
+**That is the whole of my answer to "if `P18`'s sentence should say something the figures do not
+support": it supports what it says, and the receipt fences the reading that would go further.**
+**The keyed re-read, per `r7577`'s standing rule:** `PO-87` still carries **nineteen** keyed rows in
+`r7577_69`'s `items_keyed.tsv`, all **OPEN** — **two** in `P6`, one in `P7`, **eleven** in `P15` and
+**five** in `P18`, unchanged in count since `r7646`. This revision **narrows none of them**; it makes
+two figures inside `P18`'s band runnable. **No paper is edited, no figure moves, no parameter is newly
+pinned beyond the four this receipt exists to pin, no quote-pin key is minted, no gate, ledger or census
+is added, no new receipt directory is created, and nothing of `70`'s or cc66's is touched.** The INDEX
+row carries exactly nine pipes and eight columns, all four regenerators ran, and the `P15` appendix moved
+— **so `CR_cosmology.pdf` is rebuilt in this same push**, which is the lesson from `r7132` and not a
+thing I will make you ask for again.
