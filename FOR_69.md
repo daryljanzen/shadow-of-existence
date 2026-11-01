@@ -5394,10 +5394,61 @@ an **empty** `GAPS_ALL` — the same vacuity this file was repaired for at `cc66
 exact pre-banking state (a shadow `spectra/` withholding only `r6893_slice_check_leafrec1.npz`) fails the
 three and nothing else; an emptied population fails them too rather than passing vacuously.
 
-## ⛔ WHAT I HAVE NOT DONE YET IN THIS ORDER
+## ⛭ THE PINNING ASK, DONE — AND IT NEEDED TWO FIGURES, NOT TEN
 
-- The landed values (`2.35`, `2.71`, `502.1`, `1.60`, `1.61`, `2.33`, `186.135`, `11.7`, `18.3`, `1.015`)
-  pinned in the receipts that compute them, and `figure_pin_baseline.tsv` lowered from `1484`. That is the
-  next thing I do, in its own commit.
-- The INDEX rows of the four re-pointed receipts still print their namesake figures. I will move them in
-  the same pass as the pins, with the appendices regenerated if the appendix text moves.
+Checked with the gate's **own `pins()`** rather than by eye: **eight of the ten landed values are already
+pinned in the receipts that compute them** — `2.3456`, `2.714` and `502.09` in
+`...the_full_range_lensed_comparison...`; `1.60108` in `...the_133_bin_pair...`; `1.6128` and `1.60276`
+in `...the_no_fit_confrontation...`; `186.135` in `...the_licensed_rebuild...`; `1.015066` in
+`...on_the_arm_of_record_the_fourth_acoustic_feature...`.
+
+**The real gap was `11.7` and `18.3`** — `...the_de_tilted_peak_set...`'s own headline and what l.2175
+prints — standing behind a gate that is **one-sided** (`> 8.0`, `> 15.0`), so all four figures in that
+sentence could have drifted upward with the paper's digits unchanged and nothing would have reddened.
+Pinning them pins **four**, because l.2175 prints the control's `11.4` and `22.6` in the same sentence
+and a pin on half of it leaves the other half free. Pinned as `round(x, 1) == want` — the paper's own
+precision, not a tolerance I chose. Measured `11.6971`, `18.3146`, `11.4258`, `22.6102`. **Perturbed:**
+one per cent on the computation moves the printed digit and reddens the pin *while the one-sided gate
+above still passes*, which is the whole point of the rule.
+
+**`figure_pin_baseline.tsv`: 1483 → 1479**, `check_figures_pinned` green at `1479/1479`, and the file's
+hand-written header is intact because it was edited by hand and not through `--write-baseline`.
+
+⌗ **Two things said rather than reconciled.** Your figure is `1484`; the measured sum before the change
+was `1483` — one figure among 1385 keys, and not mine to guess at. And **the remaining baseline rows for
+the other eight are CO-CITATIONS**, a receipt cited on a passage that prints the figure rather than one
+that computes it. Lowering the baseline for a co-citation would claim a pin that does not exist, so they
+stay and the header says why.
+
+⛔⛭⛭ **AND A SECOND INSTRUMENT HAS THE DICT BLIND SPOT I REPORTED AT `cc66.71`, which bit this very
+pin.** My first form was `all(round(RAT[a][i], 1) == w for (a, i), w in PRINTED.items())` — the same test
+and better to read — and `check_figures_pinned` **still reported both figures UNPINNED**, because its
+`pins()` walks the AST for `ast.Compare` and reads the constant out of the comparison; in a comprehension
+the constant is a loop variable. Rewritten as four literal comparisons, the live count fell at once.
+⇒ *And the same hole hides the strongest pin in the corpus:
+`...the_refit_bound_figures_all_reproduce...` READS each figure out of the paper and compares
+`round(got, dp) == want`, which cannot drift from the paper at all — and nine figures pinned that way
+count as unpinned.* **Routed to 70 through you, not worked around.**
+
+## ⌗ ONE DECISION I AM DELIBERATELY NOT TAKING: THE FOUR INDEX ROWS
+
+The INDEX rows of the four re-pointed receipts still print their namesake figures — l.905 carries `73.1`,
+`105.1`, `77.3`, `8.79`, `16.82` and `1.357`; l.906 carries `282.96`, `77.26`, `5.7`, `0.855` and
+`1.040`; l.1111 carries `0.12589`, `0.1929`, `1.0390` and `5.39`; l.903 carries `0.13`, `1.95` and
+`1.58`. **No gate reddens on them** — `check_figures_pinned` is green at `1479/1479` — so nothing is
+broken and nothing is urgent.
+
+I am not choosing, because there are two defensible conventions and both are yours rather than mine:
+
+1. **Append**, which is what the standing cycle says a result does — *"its INDEX row, inserted at the END
+   of the paper's block so appendix numbering appends"*. Four new rows, the old ones left as the record of
+   what the receipt said when it landed. ⌗ *Risk: `check_cross_row_dupes` asks that no finding be stored
+   in two rows, and four near-duplicates would test that.*
+2. **Amend in place**, which keeps one row per receipt and no duplication. ⌗ *Against it: your own note in
+   `figure_pin_baseline.tsv` says trimming the digits of a landed claim cell "would be rewriting another
+   turn's record", and these are landed rows.*
+
+**My recommendation is (1), appending**, on the ground that an INDEX row is a record of a measurement and
+the namesake measurement was really made — but the duplication question is real and the call is yours.
+Say which and I do it in one pass, with the appendices regenerated and the PDF recompiled if the appendix
+text moves.

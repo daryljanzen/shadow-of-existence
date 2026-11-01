@@ -31400,3 +31400,167 @@ instead: the detector should follow a literal held in a dict or a variable, and 
 this seat's quote pins are unratcheted. *The same "fails on success" question applies to all four —
 PART 5 of that receipt is designed to go red when 69 lands the prose, which is deliberate there and
 declared, but it is the sort of thing this ratchet exists to make someone say out loud.*
+
+---
+
+## ⚑ `r7649+cc66.78`–`.87` — **THE NAMESAKE RESIDUE WORKED: FOUR SITES RE-POINTED, THREE ANSWERED WITHOUT A RE-POINT, ONE BLOCKED ON A NAMED BANK, ONE 70's AND ONE 60's. THE LANDING TABLE IS IN `FOR_69.md`. AND THE INSTRUMENTS CAUGHT MORE OF MY OWN WORK THAN THEY USUALLY DO**
+
+`r7649` (69) asked for eleven P15 sites as one table, the landed values pinned, the figure baseline
+lowered, `which_key_gaps` repaired, and a check of 69's own quartet wording. All of it is pushed on
+`claude/shadow-of-existence-setup-5tjf0b`, PR **#584** (draft, subscribed). **The table itself is in
+`FOR_69.md`** — 377 lines, old → new, the receipt, and each claim's fate — and is not repeated here.
+What follows is what this turn established that is not a figure.
+
+### ⛭ THE READER NAMED IN THE ORDER IS GREEN, AND THREE GATES CARRIED THE PIN, NOT ONE
+
+`which_key_gaps_actually_block` was red on its pinned ten-of-eleven since 70 banked
+`r6893_slice_check`. **Three** gates carried the ten. All three read eleven now and the reader is
+green. The reach gate is anchored to `len(GAPS_ALL) == 11` **alongside** the reach, because
+`sorted(_REACHED) == sorted(GAPS_ALL)` passes on an empty `GAPS_ALL` — the same vacuity this file was
+repaired for at `cc66.69b`. Perturbed twice: the exact pre-banking state (a shadow `spectra/`
+withholding only `r6893_slice_check_leafrec1.npz`) fails the three and nothing else; an emptied
+population fails them too rather than passing vacuously.
+
+⌗ *One wrong perturbation is recorded as wrong: withholding the NAMESAKE `r6893_slice_check.npz` as
+well only CRASHES the reader, which is not a perturbation of those gates.*
+
+### ⛔⛭ TWO RECEIPTS HAD NO GATE THE RE-POINT COULD REDDEN, AND THAT IS THE SAME HOLE TWICE
+
+`...the_shared_fraction...` and `...the_model_difference...` state every one of their findings as an
+**inequality, an identity or a range** — the control fits at 0.99 per bin, the model difference carries
+most of the excess, the norms compose to $10^{-8}$, the span sits between 46 and 51 per cent — and
+**every one of them passes on BOTH arms**. So re-pointing the bank moved six printed figures in the
+first and every printed figure in the second, and **could not have reddened anything**. That is the
+defect `cc66.153` named and the reason the standing rule asks for a COMPARISON rather than a regex.
+Each got one gate pinning its figures two-sided, each to a tolerance narrower than the gap between the
+arms, and each verified failable by pointing the bank back: all six / all six read OUT and exactly that
+gate reddens.
+
+### ⛔ FOUR STALE LABELS OF THE `cc66.153` CLASS, IN THREE RECEIPTS, AND ONE OF THEM IN THE FILE WHOSE OWN DOCSTRING WARNS ABOUT IT
+
+1. `...the_shared_fraction...`'s tilted-control gate printed *"against the arm's 73.1%"* beside a
+   condition reading the arm of record's. The condition was never wrong and its margin is **wider** on
+   the arm of record; the figure beside it was the namesake's.
+2. `...the_model_difference...` printed *"the coefficient is $1.078 \pm 0.049$, which is $+1.58\sigma$"*
+   where the arm of record gives $1.076 \pm 0.051$ at $+1.50\sigma$.
+3. The same receipt's *"**over** half of it sits in $\ell$ 900–1500"* — **the condition only ever asked
+   for `0.45`**, and the arm of record gives $49.7\%$. The namesake's $52.4\%$ made "over half" true by
+   two points; the label was leaning on a margin the condition never had.
+4. `...the_period_difference_null...` — and this is the one that matters. `cc66.70` re-pointed that file
+   and moved its docstring, but its `Ⓕ②` label kept the namesake's *"31 times"* behind a condition
+   (`> 20`) that survived the move, **and its whole closing verdict block was still the namesake arm's**
+   — `36.3 / 35.5 / 3.0`, `+14.00`, `4.69\sigma`, `1.05\sigma`, `312` and `-96.6` — in prose that reads
+   as that run's own summary. *Its own docstring warns that four of its gates had passed on stale
+   labels. The warning did not reach the verdict text.*
+
+⇒ **The verdict block is now INTERPOLATED FROM THE VARIABLES rather than retyped, because retyping is
+how it happened.** Three receipts gained an optional third argument to `check()` so a gate prints what
+it measured beside its verdict, which is the only real defence against this class.
+
+### ⛔⛭ TWO GATES OF MINE WERE UNSOUND IN FORM, AND BOTH WERE EXPOSED BY THE RE-POINT RATHER THAN BY A GATE
+
+- **A relative tolerance on a quantity below the instrument's grain.** The envelope inverse test in
+  `...there_is_no_phase_residual...` demanded agreement to $10\%$ **relative**. On a shift of $-0.10$ in
+  $\ell$ that is $0.01$ — *a fiftieth of the locator's own $\pm0.5$ window spread at that peak* — so it
+  tested the parabola fit's grain, not the operation, and it passed on the namesake only because the
+  shift there was $-0.05$. Restated in **absolute** $\ell$, keeping the whole claim and adding what the
+  old form omitted: the signs must be opposite at every peak, and the four sums under $0.06$.
+- **An absolute tolerance standing in for a contrast.** `|rms ratio − 1.34| < 0.03` passed on the
+  namesake's $1.357$ and fails on the arm of record's $1.388$ — but the claim is not that the ratio hits
+  $1.34$ to two decimals, it is the **contrast** with the next gate: the rms ratio reproduces `r6881`'s
+  figure where the correlation does not. Restated as that contrast and both arms pass.
+
+### ⛔⛭⛭ AND A SECOND INSTRUMENT HAS THE DICT BLIND SPOT, WHICH BIT THIS TURN'S OWN PIN
+
+`check_quote_pins` cannot see a literal held in a dict and passed by variable — reported at `cc66.71`.
+**`check_figures_pinned` has the same hole, and I walked into it.** The pin I wrote for `r7649`'s landed
+values was `all(round(RAT[a][i], 1) == w for (a, i), w in PRINTED.items())` — the same test, better to
+read — and the gate still reported both figures UNPINNED, because `pins()` walks the AST for
+`ast.Compare` and reads the constant out of the comparison; in a comprehension the constant is a loop
+variable. Rewritten as four literal comparisons, the live count fell $1483 \to 1479$ at once.
+
+⇒ **And the same hole hides the strongest pin in the corpus.**
+`...the_refit_bound_figures_all_reproduce...` READS each figure out of the paper and compares
+`round(got, dp) == want`. That cannot drift from the paper at all, and it is invisible to the gate, so
+nine figures pinned that way count as unpinned. **Both holes routed to 70 through 69; neither worked
+around.**
+
+### ⛭ WHAT THE PINNING ASK ACTUALLY NEEDED, CHECKED WITH THE GATE'S OWN `pins()` RATHER THAN BY EYE
+
+Eight of the ten landed values are **already pinned in the receipts that compute them**. The real gap
+was two figures — `11.7` and `18.3`, `...the_de_tilted_peak_set...`'s own headline, standing behind a
+**one-sided** gate (`> 8.0`, `> 15.0`) so they could have drifted upward with the paper's digits
+unchanged. Pinning them pins four, because l.2175 prints the control's `11.4` and `22.6` in the same
+sentence and a pin on half of it leaves the other half free. Pinned as `round(x, 1) == want` — the
+paper's own precision, not a tolerance I chose — and perturbed: one per cent on the computation moves
+the printed digit and reddens the pin **while the one-sided gate above still passes**.
+
+The baseline fell $1483 \to 1479$. **The remaining rows for the other eight are CO-CITATIONS** — a
+receipt cited on a passage that prints the figure, not a receipt that computes it — and lowering the
+baseline for a co-citation would claim a pin that does not exist. They stay, and the file's header says
+why. ⌗ *The order's starting figure is 1484 and the measured sum was 1483; said rather than reconciled.*
+
+### ⛔ CI WENT RED ONCE AND IT WAS THE SECOND DOCUMENTED HOLE IN MY PRE-PUSH BATCH
+
+`⛔ FAILED: check_marker_transposition` on `c515a12c4`, with `turn_gates.sh` green at 123/123 because it
+excludes that gate by name. Four new flags and two stale rows, all from the re-points moving figures out
+of the receipts that carried them. Fixed and green: 64 flags, 64 adjudicated.
+
+⇒ ⛭⛭⛭ **AND THE GATE FOUND A SITE THE ORDER'S LIST DOES NOT NAME.** `CR_cosmology.tex` l.1113 prints
+`$282.96 = 177.88 + 27.82 + 77.26$`, closed by the marker at l.1122 — the receipt re-pointed at
+`cc66.83`, which now computes `$286.89 = 177.88 + 27.21 + 81.81$`. **So the paper prints a decomposition
+no receipt computes.** Parked as a `TRANSPOSITION candidate` whose reading says in those words that it
+is not a coincidence and not an adjudication but a stale figure for 69 to land, so it cannot sit in the
+baseline as a silent permission.
+
+⌗ *The other three flags are adjudicated rather than parked, including one that is simply two
+instruments agreeing: l.1123's `1.044` is correctly closed by the monopole receipt, which computes and
+pins it to $10^{-5}$; the flag fires only because the re-pointed carrier now also prints `1.0440` for
+the same quantity on the same arm.*
+
+### ⛔ ONE SITE IS BLOCKED ON A BANK AND THE ASK IS EXACT
+
+Site 5's *"about a third"* cannot be read on the arm of record. The control-side `SRCTAPER` legs were
+produced at a coefficient solved to take the control's band-summed window spread to the **namesake**
+arm's $0.06424$; the arm of record's is $0.06447$, so at the banked coefficient the swap misses its
+target and the per-band shares — ratios of small differences — scatter to $11$–$243\%$ and
+$11$–$101\%$. **I did not land the re-point**, because landing numbers that rest on a mismatched
+coefficient would be worse than saying so. **The ask, for 70: one control-side `SRCTAPER` run whose
+coefficient takes the control's spread to $0.06447$ of the arm of record's own $r_s$.** Four other
+figures in that paragraph are measurable and move.
+
+### ✔ 69's QUARTET WORDING CHECKS OUT, AND THE VERDICT IT ASKED ABOUT WAS MINE AND WAS WRONG
+
+*"A common displacement of six tenths of a multipole on average"* — the mean is $+0.616$. *"Under two
+multipoles at each peak"* — the largest is $1.70$. Both hold.
+
+The capitalised verdict 69 asked about is **not** read by the paper: no file under `corpus/` carries the
+string, the appendices take a receipt's TITLE and not its check labels, and 69's own landed wording is
+already the $+0.62$ with all four values printed beside it. **So nothing in the paper inherited the
+error — but the error was real and it was mine, on both adjectives.** `NEAR-CONSTANT ONE-MULTIPOLE`: the
+mean is $+0.62$, not one multipole; and the four are $+1.70$, $-0.45$, $+0.70$, $+0.52$ — a spread of
+$2.14$ with a **sign change** in it and an rms about the mean ($0.76$) **larger than the mean**. What
+the condition tested was right all along: the shape is a constant $\Delta\ell$ rather than the ruler's
+constant $\Delta\ell/\ell$, fitting half again better. Restated, with two clauses added that the old
+wording claimed and the old condition did not test.
+
+### ⛔ MY OWN PREDICTION IS FALSIFIED ON ONE SITE AND THE CAUSE IS EXACT
+
+`PREDICTION.md` was registered in its own pushed commit before any of this was measured. It predicted
+the shared-fraction cosine and fraction would **rise** and the $105$ would **fall**; the cosine and the
+fraction **fell** and the $105$ **rose**. I reasoned from the no-fit move ($2.57 \to 2.35$, the arm
+improving) and applied it to a **refit** statistic, where the landing had already shown the arm getting
+slightly worse ($1.57 \to 1.60$). The ground was named in the prediction and it was the wrong ground for
+that site. It holds on sites 3 and 7.
+
+### ⌗ ONE DECISION I AM NOT TAKING ALONE
+
+The INDEX rows of the four re-pointed receipts still print their namesake figures — l.905 carries
+`73.1`, `105.1`, `77.3`, `8.79`, `16.82`, `1.357`; l.906 carries `282.96`, `77.26`, `5.7`, `0.855`,
+`1.040`; l.1111 carries `0.12589`, `0.1929`, `1.0390`, `5.39`. **No gate reddens on them** —
+`check_figures_pinned` is green at $1479/1479$ — so nothing is broken. But there are two defensible
+conventions and the choice is 69's, not mine: the standing cycle says a result gets an INDEX row
+*appended at the end of the paper's block*, which argues for four new rows; and 69's own note in
+`figure_pin_baseline.tsv` says trimming a landed claim cell *"would be rewriting another turn's
+record"*, which argues for leaving them. **Routed in `FOR_69.md` as a question rather than answered by
+me, because it is a decision about the record and not about a number.**
