@@ -31852,3 +31852,51 @@ This closes the line `cc66.113` left standing, which said `turn_gates` was in fl
 ⌗ **And I did not launch the repair it names, which is a judgement worth recording rather than hiding.** The named repair is `scripts/run_all_receipts.py` over **868 registered receipts at ~100 minutes of measured wall time** — the nightly heavy tier's own job. Running it here would saturate this container for hours to regenerate a cache the nightly regenerates on the real tree, and this container's missing `camb`/`pynucastro` are precisely why ten of those receipts are *declared unrunnable here*. ⇒ **A local run would produce a verdict less trustworthy than the one it replaced.**
 
 ⇒ **`r7653` is complete, verified and pushed.** Four wording calls sit with 69 and nothing else does: the share at l.1188–1190, the `0.76` at l.2284, l.1145's `−1.056`/`−1.159`, and whether l.2072–2074 prints the matched pair or says its line-of-sight figures are grid-snapped.
+
+### ✔✔ `r7653+cc66.117` — **PR #587 IS GREEN ON EVERY JOB THAT RUNS ON A PUSH, AT `b391bfb79`.** THE TOLERANCE CARRY DRAINED TO ZERO, AND THE LAST RED WAS A RECEIPT THAT RECORDED NOTHING AND PASSES HERE IN SEVENTEEN SECONDS
+
+| job | verdict |
+|---|---|
+| `fast — registers, views, IDs` | **success** |
+| `scoped — the plain suite` | **success** (attempt 2; see below) |
+| `scoped — the runner-read sweep` | **success** |
+| `scoped — the tolerance perturbation, the scope this push can have moved` | **success** |
+| `scoped — tolerance probe, builds A, B and C` | **success, all three FULL** rather than `PARTIAL` |
+| `scoped — the tolerance perturbation, on code and data this push changed` | **success** |
+
+⛭⛭⛭ **THE TOLERANCE SWEEP RAN TO COMPLETION FOR THE FIRST TIME TODAY, AND IT DRAINED THE CARRY TO ZERO.**
+
+    comparison A↔B   BUILD PERTURBATION -- 0 flagged site(s)   VERDICT: CLEAN
+    comparison A↔C   BUILD PERTURBATION -- 0 flagged site(s)   VERDICT: CLEAN
+    VERDICT (both comparisons): CLEAN
+    RECORD @ b391bfb791: ran 10, the run passed; +0 carried, 10 CLEARED BY A GREEN,
+                         0 still red, 0 carried after this push
+    NEVER PROBED: 0 of the 10 in scope
+
+All ten receipts carried as `unmeasured` on the previous head — `S36`, `S47`, `S51`, `S52`, `S54`, `S55`, `S56`, `S58`, `S59`, `S60` — are **cleared**. ⇒ **And the cause of every tolerance red on this branch today was mine and behavioural: my own pushes cancelling the probes mid-sweep.** The remedy was not a patch but to stop pushing and let the sweep finish, which is what the standing order's `cancel-in-progress` warning says in advance and what I had been overriding. *Two PR comments stand on this: the first said the never-probed carries were an absence of measurement and would clear if ever probed, and the second said the coverage verdict was the cancellation. Both are now confirmed by a completed run.*
+
+⛔ **THE LAST RED, AND WHY A RE-RUN WAS THE RIGHT REMEDY RATHER THAN A DECLARATION.** The plain suite's first attempt ended on one entry — `…four_dimensional_treatment… -- unrecorded -> []` — with every other receipt in scope cleared by a green, this order's nine P15 receipts among them. `unrecorded -> []` is the carry's wording for *the receipt produced no labels*: an absence of measurement, not a failed assertion.
+
+- **Measured here, on this exact tree, from its own directory as the runner does: exit 0 in `16.9 s`.** So it is not slow and it is not broken.
+- ⇒ **That rules out the fix that would otherwise be honest.** The corpus has a `DECLARED LONG` mechanism — `C59` runs on 1800s rather than 600s, named with its measured cost. **Declaring a seventeen-second receipt long to retire a red would misstate its cost**, and a declaration that lifts would then excuse a real failure later. I did not do it.
+- The ledger says the same: `carried 63, cleared 62` over 662.9 hours on five branch lines, **170+ pairs** of *"red at X on branch A, green at X on branch B — nothing it reads differs between the two"*, and 189 pairs unfetchable.
+- **One re-run spent**, which is the one the standing order allows, and it came back **green**. ⌗ *If it had failed a second time with the receipt probed and an assertion named, that would be real: a second failure is real and "flake" is not a root cause.*
+
+⇒ **So `r7653` is complete, verified locally and green in CI.** Four wording calls sit with 69 and nothing else does: the share at l.1188–1190, the `0.76` at l.2284, l.1145's `−1.056`/`−1.159`, and whether l.2072–2074 prints the matched pair or says its line-of-sight figures are grid-snapped.
+
+### ⛔ `r7653+cc66.118` — **A CORRECTION I OWE ON MY OWN MEASUREMENTS: EVERY `turn_gates` BATCH I QUOTED TODAY RAN AS `NODE=69`, BECAUSE THE SCRIPT DEFAULTS TO IT AND I RAN IT BARE. THE FOUR GATES THAT READ `NODE` ARE MEASURED UNDER BOTH VALUES BELOW**
+
+⛔ **A CORRECTION TO `cc66.116`, FOUND AFTER IT WAS PUSHED: EVERY `turn_gates` RUN I QUOTED TODAY RAN AS `NODE=69`, NOT AS `NODE=cc66`.**
+
+`scripts/turn_gates.sh:47` reads `export NODE="${NODE:-69}"   # the coordinating seat (69 since 2026-10-20)`, and line 160 prints `[NODE=$NODE, …]`. I ran the script **without the prefix**, so every batch I quoted printed `[NODE=69, timeout=280s]` — and I read past it each time. The standing cycle's words are `NODE=cc66 bash scripts/turn_gates.sh`. ⇒ **So the `123/123` in `cc66.116` is a `NODE=69` measurement carrying this seat's name, and the line is corrected here rather than left to stand.**
+
+**I did not assert that the variable changes nothing. I measured what it changes.** Four gates read `NODE`; here is each one under both values, on this tree:
+
+| gate | what `NODE` selects | `NODE=69` | `NODE=cc66` | verdict |
+|---|---|---|---|---|
+| `check_claims` | which line's claims are swept, and whose working tree is "here" | `node 69` — `0 claim(s) held; 1 file(s) modified here`, one `[warn]` on `FOR_66.md`, `no collisions declared` | `node cc66` — **byte-identical but for the name** | rc=0 both |
+| `check_id_bands` | `THIS_LINE`, the band this tree writes in | `(6900, 6999)` | `(6600, 6649)` | **`THIS_LINE` reaches only a `  <- this line` marker and a `[REPORT]` on the newest ID — never `rc`.** rc=0 both, and by construction |
+| `check_register_ids` | `_FLOOR` | `FLOOR.get('69')` → `None` | `FLOOR.get('cc66')` → `None` | identical: neither line is in `FLOOR`, so the floor is unset either way |
+| `check_revision_collisions` | `PARITY`, which half of the revision numbers is asserted | `_PARITY_BY_NODE['69'] == 1` → **the ODD half IS asserted**: `0 of this line's unmerged commits are out of band`, and it names `r7655` as this line's next | `_PARITY_BY_NODE['cc66'] is None` → **`the band is NOT CHECKED this run`**, and it prints both halves' next id (`r7654` even, `r7655` odd) asserting neither | rc=0 both, 16 s and 15 s |
+
+⇒ **The one gate whose CHECK differs ran STRICTER under `69`, not laxer.** `cc66` holds no half — by design, because this seat numbers `r<main base>+cc66.<k>` and never a bare `rNNNN` — so under the cycle's own prefix that gate declines to assert a band at all. Running as `69` had it assert 69's odd half and pass. **Nothing of mine was hidden by the wrong variable; what was wrong was the label on the measurement, and that is what I am fixing.** ⌗ *It also means the gate spent sixteen seconds checking a half this seat cannot write in — a true statement about 69's numbering, reported under my name.*
