@@ -32,8 +32,13 @@ whole suite probed on 3.11.15 and 3.11.16 (same source build, same flags, every 
 moved no comparison that one interpreter does not also move run-to-run.  The patch swept on is kept on
 the line after next, which the gate does not read.
 
+⌗ r7651+70 (69's order, from 60's finding): `camb` added to what the gate reads.  ** Not a refresh without a
+sweep: ** `camb==2.0.4` was pinned at r6981 (`17f7fe1c7`), before the r6985+70.1 sweep above, so 2.0.4 is the camb
+that sweep ran on.  The line records it; it does not move it.
+
 python = 3.11
 python_patch_swept_on = 3.11.16
 numpy  = 2.4.6
 scipy  = 1.17.1
 blas   = scipy-openblas 0.3.31.188.0
+camb   = 2.0.4

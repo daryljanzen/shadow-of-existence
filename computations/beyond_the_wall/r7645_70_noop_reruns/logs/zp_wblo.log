@@ -1,0 +1,36 @@
+__SWITCHES__ ARM=lcdm HIER=1 LEAFREC=1 LH0=67.410309 LMAXL=2000 LOM=0.309826 LSTEP=64 NS=0.954248 SAVE=/tmp/claude-0/-home-user-shadow-of-existence/4913e7eb-3c04-585c-bc52-ac1b69fc5eb8/scratchpad/bank5/zp_wblo.npz WBH2=0.02020872 ZPSAVE=/tmp/claude-0/-home-user-shadow-of-existence/4913e7eb-3c04-585c-bc52-ac1b69fc5eb8/scratchpad/bank5/fields_wblo.npz
+  diffusion: r_D at the visibility peak = 7.35 Mpc  ->  l_D = 1899
+
+==============================================================================
+  ACOUSTIC TWO-ARM INSTRUMENT — ARM=lcdm   DRIVING=ON
+==============================================================================
+  rate: radiation-INCLUDED   H0=67.410309  Om=0.309826
+  z_start = 3e+07   eta_start = 0.016   eta_rec = 281.8   eta_end = 1907
+  D_M = 13954 Mpc   r_s = 146.51 Mpc   l_A = pi D/r_s = 299.2   modes = 2547
+  visibility: peak at eta = 281.39 (z = 1092.2), FWHM = 38.75 Mpc   R = 3 rho_b/4 rho_g there = 0.56083   1+R = 1.56083
+  z_eq(leaf) = 3391.5   Omega_r = 9.132622e-05   rho_r/rho_m at the onset = 8842.98
+
+  projection reach: k_max = 4000/D_M against a reported l_max = 2000 -> ratio 2.00
+  projection sampling: dk = 1.123e-04, Bessel period 2pi/D = 4.503e-04, points per period = 4.0
+  hierarchy: LG = 24, handover at tau' = 3.0/Mpc (eta = 133.2), where 3.9% of 1/k_D^2 has accumulated
+  so the envelope carries 3.9% of the damping and the multipoles carry 96.1% of it
+    modes 0-250 done
+    modes 250-500 done
+    modes 500-750 done
+    modes 750-1000 done
+    modes 1000-1250 done
+    modes 1250-1500 done
+    modes 1500-1750 done
+    modes 1750-2000 done
+    modes 2000-2250 done
+    modes 2250-2500 done
+    modes 2500-2547 done
+  ZPSAVE: 2547 modes at eta = 281.39 (visibility peak 281.39, FWHM 38.75), 1+R = 1.56083 -> /tmp/claude-0/-home-user-shadow-of-existence/4913e7eb-3c04-585c-bc52-ac1b69fc5eb8/scratchpad/bank5/fields_wblo.npz
+  saved 30 multipoles to /tmp/claude-0/-home-user-shadow-of-existence/4913e7eb-3c04-585c-bc52-ac1b69fc5eb8/scratchpad/bank5/zp_wblo.npz
+  --------------------------------------------------------------------------
+  PEAKS (line-of-sight, HIERARCHY)   l_A = 299.2
+  --------------------------------------------------------------------------
+    peaks at l = [228, 548, 804, 1444]
+    l_1/l_A = 0.7620   P1/P2 = 2.098   P1/P3 = 2.148
+    sky: 220.6 / 538.1 / 809.8,  l_1/l_A = 0.7312,  P1/P2 = 2.217,  P1/P3 = 2.277
+__DONE__ rc=0
