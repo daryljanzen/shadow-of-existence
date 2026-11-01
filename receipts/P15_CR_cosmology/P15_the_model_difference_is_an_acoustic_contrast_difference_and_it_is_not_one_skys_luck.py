@@ -11,29 +11,29 @@ full bandpower covariance, and the model difference DELTA = m_arm - m_control re
  (1) THE COEFFICIENT INSIDE THE 73%.  The order writes r_arm = 1.15 r_ctl + 0.70 (perp) from
      "cosine 0.855 and norm ratio 1.34", and reads the 1.15 as a 15% amplification along the noise
      direction.  ** The 1.15 mixes two metrics: 0.855 is the WHITENED cosine and 1.34 is the
-     DIAGONAL rms ratio. **  Consistently it is 1.078 whitened (0.855 x 1.261) or 1.137 diagonal
-     (0.837 x 1.357).  ⇒ And the coefficient is not a new quantity: b - 1 = <DELTA,r_ctl>/||r_ctl||^2
+     DIAGONAL rms ratio. **  Consistently it is 1.076 whitened (0.848 x 1.270) or 1.144 diagonal
+     (0.824 x 1.388).  ⇒ And the coefficient is not a new quantity: b - 1 = <DELTA,r_ctl>/||r_ctl||^2
      is ALGEBRAICALLY the cross term of (2) divided by ||r_ctl||^2, so ** the "amplification along
      the noise direction" IS the cross term **, and against its own sky-random null it is
-     +1.58 sigma.  ** A 1.6-sigma departure from 1.00 is what noise looks like. **
+     +1.50 sigma.  ** A 1.5-sigma departure from 1.00 is what noise looks like. **
 
  (2) THE DECOMPOSITION.  chi2_arm = chi2_ctl + 2<r_ctl,DELTA> + ||DELTA||^2 exactly:
-     282.96 = 177.88 + 27.82 + 77.26.  ** ||DELTA||^2 carries 73.5% of the +105.08 excess and the
-     cross term 26.5%. **  The order asks which, plainly: it is ||DELTA||^2.  Under the null that
-     the control is the truth and the sky is a draw, E[chi2_arm] = n + ||DELTA||^2 = 256.3, so on a
-     TYPICAL sky this arm still scores 1.43 per bin.  ⇒ ** The rejection is NOT a fluke of one sky.
-     The cross term is the part that is, and it is +1.58 sigma of its own null. **
+     286.89 = 177.88 + 27.21 + 81.81.  ** ||DELTA||^2 carries 75.0% of the +109.02 excess and the
+     cross term 25.0%. **  The order asks which, plainly: it is ||DELTA||^2.  Under the null that
+     the control is the truth and the sky is a draw, E[chi2_arm] = n + ||DELTA||^2 = 260.8, so on a
+     TYPICAL sky this arm still scores 1.46 per bin.  ⇒ ** The rejection is NOT a fluke of one sky.
+     The cross term is the part that is, and it is +1.50 sigma of its own null. **
 
  (3) DELTA'S SHAPE, AND IT HAS A NAME THE FOUR-PARAMETER FAMILY DID NOT CONTAIN.  DELTA is
-     trough-dominated -- +0.011 sigma at peaks against -0.760 at troughs -- and splitting it into a
-     smooth envelope and an oscillation about that envelope, ** the OSCILLATORY part carries 67 to
-     75 of the 77.3 ** depending on how the envelope is drawn, peak-high and trough-low
-     (+0.389 / -0.420).  That is not an envelope and not a
-     phase: it is a CONTRAST.  ⇒ ** The arm's acoustic oscillation is 1.041 times the control's
+     trough-dominated -- +0.002 sigma at peaks against -0.836 at troughs -- and splitting it into a
+     smooth envelope and an oscillation about that envelope, ** the OSCILLATORY part carries 71 to
+     78 of the 81.8 ** depending on how the envelope is drawn, peak-high and trough-low
+     (+0.423 / -0.458).  That is not an envelope and not a
+     phase: it is a CONTRAST.  ⇒ ** The arm's acoustic oscillation is 1.044 times the control's
      about its own envelope. **  A single direction built from the CONTROL alone -- raise the
-     oscillation at fixed envelope, no run and nothing fitted -- carries 51% of ||DELTA||^2, stable
-     at 46-51% as the envelope window runs 0.75 to 1.5 acoustic periods; with position, tilt and
-     damping the span reaches 66% against ** 5.7% for `cc66.33`'s four without it **.
+     oscillation at fixed envelope, no run and nothing fitted -- carries 56% of ||DELTA||^2, stable
+     at 46-58% as the envelope window runs 0.75 to 1.5 acoustic periods; with position, tilt and
+     damping the span reaches 69% against ** 8.6% for `cc66.33`'s four without it **.
 
  (4) THE SHORT LIST.  The order names four and says three are instrumented.
       * THE HANDOVER AMPLITUDE (0.4835 against 0.5) is EXCLUDED EXACTLY AND WITHOUT A RUN: the
@@ -73,18 +73,18 @@ WHAT IS CLAIMED.
 
  (1) The identity chi2_arm = chi2_ctl + cross + ||DELTA||^2 to machine precision, with all three
      terms reported, at four bin cuts.
- (2) The projection coefficient is 1.078 +- 0.049 whitened (1.137 diagonal), NOT 1.15; the 1.15
-     mixes metrics; and b-1 is the cross term, at +1.58 sigma of its sky-random null.
- (3) ||DELTA||^2 carries the excess, so the rejection survives the sky: E[chi2] = 256.3 on a typical
+ (2) The projection coefficient is 1.076 +- 0.051 whitened (1.144 diagonal), NOT 1.15; the 1.15
+     mixes metrics; and b-1 is the cross term, at +1.50 sigma of its sky-random null.
+ (3) ||DELTA||^2 carries the excess, so the rejection survives the sky: E[chi2] = 260.8 on a typical
      draw.
- (4) DELTA is trough-dominated and its oscillatory part carries 87-97% of it; the arm's oscillation is
-     1.041x the control's about its own envelope; a contrast direction built from the control alone
-     carries 51% of ||DELTA||^2 and the four-parameter family 5.7%.
+ (4) DELTA is trough-dominated and its oscillatory part carries 86-96% of it; the arm's oscillation is
+     1.044x the control's about its own envelope; a contrast direction built from the control alone
+     carries 56% of ||DELTA||^2 and the four-parameter family 8.6%.
  (4b) AND `r6887`'s SHARPENED ASK -- DELTA read against the three features `cc66.34` showed are the
      arm's own rather than shared.  All three turn out to be DELTA'S: the trough deficit
-     (-0.760 against the control's -0.200), the ell~1000 trough (DELTA -1.074 where the control sits
-     at -0.103 and the arm at -1.177, so DELTA carries 91% of it in 15 bins), and the growth with
-     multipole, which DELTA does monotonically (0.33 -> 0.55 -> 0.68) where the residuals do not,
+     (-0.836 against the control's -0.200), the ell~1000 trough (DELTA -1.056 where the control sits
+     at -0.103 and the arm at -1.159, so DELTA carries 91% of it in 15 bins), and the growth with
+     multipole, which DELTA does monotonically (0.41 -> 0.57 -> 0.74) where the residuals do not,
      because a residual is DELTA plus a noise floor of order one and the floor flattens it.
  (5) The handover amplitude is excluded exactly by k-independence; `DPSRC`/`SWSRC` are a knob
      shadow on the hierarchy path, proved by a bit-identical spectrum there against 62% on the LOS
@@ -97,7 +97,7 @@ WHAT IS NOT CLAIMED.
 
  * NOT that the contrast direction is a MECHANISM.  It is a shape, and naming the shape is not
    naming what produces it; the candidate runs are what bear on that.
- * NOT that DELTA is fully accounted for.  The best span here reaches 66% and 34% is unnamed.
+ * NOT that DELTA is fully accounted for.  The best span here reaches 69% and 31% is unnamed.
  * NOT that a candidate's reduction of ||DELTA||^2 is its SHARE of DELTA.  Switching a driving or
    source term off is a large excursion, not a derivative, and `DRE=0` in particular rotates DELTA to
    near-orthogonality (cos -0.16) while shrinking its norm by a third -- DELTA replaced rather than
@@ -188,7 +188,16 @@ RAT[_m] = _le[_m] / _un[_m]
 
 load = lambda f: (lambda d: (d['ls'].astype(float), d['Dl'].astype(float)))(
     np.load(os.path.join(SP, f)))
-arm = lambda t: load(f'cc66_r185_verify_{t}.npz')
+#: ⛭⛭ r7649+cc66.83: ** `arm` RE-POINTED ONTO THE ARM OF RECORD, THE FILES NAMED EXPLICITLY, AND
+#:   `hist` DELIBERATELY NOT MOVED. **  *This file was built for this re-point: the comment below
+#:   already states why part (b)'s `DPSRC=0` bit-identity stays pinned to the `LEAFREC=0` namesakes
+#:   -- it is a measurement of the pre-`736f9399` tree against the spectra that tree produced, and a
+#:   re-point would read as a repair having FAILED where it records one having SUCCEEDED.  So `arm`
+#:   moves and `NAMESAKE`/`hist` do not, and the `_HIST_READ` guard below still asserts the two
+#:   namesake filenames by name.*
+BANK = {'cr': 'cc66_r185_verify_cr_leafrec1.npz',          # the ARM OF RECORD, LEAFREC=1
+        'lcdm': 'cc66_r185_verify_lcdm.npz'}               # the control, unchanged by the switch
+arm = lambda t: load(BANK[t])
 # ** r7639 ⑵ -- THE NAMESAKE LOADER, WHICH DOES NOT MOVE WITH `arm`. **  Part (b)'s `DPSRC=0`
 #   bit-identity is a finding about the instrument BEFORE `_SWSRC`/`_DPSRC` were wired into
 #   `_project` at `r6889+cc66.36` (`736f9399`) -- it is a measurement of the r6885 tree, read against
@@ -304,7 +313,7 @@ check("b - 1 IS the cross term over ||r_ctl||^2 -- the 'amplification along the 
       f"identical to {abs((b_w-1) - float(DEL @ W_L)/float(W_L @ W_L)):.1e}")
 SD_B = np.sqrt(ND2) / float(W_L @ W_L)
 print(f"    sd(b) with DELTA fixed and the sky a draw = ||DELTA||/||r_ctl||^2 = {SD_B:.4f}")
-check("** so the coefficient is 1.078 +- 0.049, which is +1.58 sigma from 1.00 ** -- a 15% "
+check("** so the coefficient is 1.076 +- 0.051, which is +1.50 sigma from 1.00 ** -- a 15% "
       "amplification is not what the covariance says, and 8% at 1.6 sigma is what noise looks like",
       abs((b_w - 1) / SD_B) < 2.0,
       f"b = {b_w:.4f} +- {SD_B:.4f}, ({(b_w-1)/SD_B:+.2f} sigma)")
@@ -350,7 +359,13 @@ for lo in range(100, 1900, 200):
         print(f"      {lo:4d}-{lo+200:<4d} n={int(k.sum()):3d}   {100*float(DEL[k]@DEL[k])/ND2:5.1f}%"
               f" of ||DELTA||^2    DELTA/sigma mean {DMS[k].mean():+6.3f}  rms {np.sqrt((DMS[k]**2).mean()):5.3f}")
 _hi = float(DEL[(LCK >= 900) & (LCK < 1500)] @ DEL[(LCK >= 900) & (LCK < 1500)]) / ND2
-check("over half of it sits in ell 900-1500, so DELTA is not spread evenly and not a low-ell effect",
+#: ⛔ r7649+cc66.83: the label said OVER HALF and the condition asks for 0.45, so on the arm of
+#: record it passes at 49.7% while printing a claim that is false of it.  *The namesake's 52.4% made
+#: "over half" true by two points; it was the label leaning on a margin the condition never had.
+#: Restated to ABOUT half, with both arms' figures named, and the condition left where it was.*
+check("⛭ about half of it sits in ell 900-1500 -- 49.7% on the arm of record, 52.4% on the namesake "
+      "-- so DELTA is not spread evenly and not a low-ell effect.  ⛔ *The label read `over half` "
+      "until r7649, which the condition (0.45) never asserted and the arm of record does not meet*",
       _hi > 0.45, f"{100*_hi:.1f}% in 900-1500")
 
 print("\n  (b) PEAKS AGAINST TROUGHS -- sorted by the sign of the CONTROL's binned D_l curvature")
@@ -427,7 +442,7 @@ print(f"      {'(4) ell 950-1080 (n=' + str(int(_w1.sum())) + ')':28s} {_rl[_w1]
 for _i, _k in enumerate(_th):
     print(f"      {'(3) |.| in third ' + str(_i+1):28s} {np.abs(_rl[_k]).mean():9.3f}"
           f" {np.abs(_rc[_k]).mean():9.3f} {np.abs(DMS[_k]).mean():9.3f}")
-check("** THE ell ~ 1000 TROUGH IS DELTA'S **: the control sits at -0.10 there, the arm at -1.18, "
+check("** THE ell ~ 1000 TROUGH IS DELTA'S **: the control sits at -0.10 there, the arm at -1.16, "
       "and DELTA carries 91 per cent of that deficit in 15 bins -- so `cc66.34`'s 'the gap is the "
       "arm's' sharpens to ** 'the gap is the MODEL DIFFERENCE'S' **, with this sky contributing the "
       "remaining tenth",
@@ -505,8 +520,35 @@ for f in (0.75, 1.0, 1.25, 1.5):
           f"  -> {100*(float(DM@u)/np.sqrt(NDM2))**2:5.1f}% of ||DELTA||^2")
 _r = [(float(DM @ unit((DL_L - envelope(DL_L, f * PERIOD)) / FACK)) / np.sqrt(NDM2)) ** 2
       for f in (0.75, 1.0, 1.25, 1.5)]
-check("...and it does not depend on the window: 46 to 51 per cent across a factor two in it, so "
-      "the one tunable is reported rather than chosen",
+#: ⛭⛭⛭ r7649+cc66.83: ** AND THE ARM-OF-RECORD FIGURES ARE PINNED, BECAUSE WITHOUT THIS GATE THE
+#:   RE-POINT WAS NOT FAILABLE. **  *All forty gates in this file are inequalities, identities or
+#:   ranges, and all forty pass on BOTH arms -- so re-pointing `arm` moved every figure the receipt
+#:   prints and could not have reddened one of them.  That is the standing rule's reason for asking
+#:   for a COMPARISON, and the same hole `cc66.82` found in the shared-fraction receipt an hour
+#:   earlier.  Six figures, two-sided, each to a tolerance narrower than its distance from the
+#:   namesake's value, and VERIFIED failable by pointing `BANK['cr']` back: the namesake reads
+#:   77.257, 5.73%, 51.13%, 66.84%, 1.0401 and -0.760, and all six go OUT.*
+_PIN6 = (('||DELTA||^2', float(NDM2), 81.81, 0.05),
+         ('four-parameter span %', 100.0 * float(P3 @ P3) / NDM2, 8.57, 0.05),
+         ('contrast direction %', 100.0 * (float(DM @ CONTRAST) / np.sqrt(NDM2)) ** 2, 55.72, 0.05),
+         ('span with contrast %', 100.0 * float(P4 @ P4) / NDM2, 69.16, 0.05),
+         ('oscillation ratio', SCALE, 1.0440, 0.0004),
+         ('DELTA/sigma at troughs', float(DMS[TR].mean()), -0.836, 0.004))
+print("\n      the six figures this receipt's prose prints, pinned on the ARM OF RECORD:")
+for _nm, _got, _want, _tol in _PIN6:
+    print(f"        {_nm:24s} {_got:10.4f}  against {_want:9.4f}  (+-{_tol})"
+          f"  {'ok' if abs(_got - _want) <= _tol else 'OUT'}")
+check("⛭⛭⛭ ** AND ALL SIX FIGURES THIS RECEIPT'S PROSE PRINTS ARE PINNED TO THE ARM OF RECORD **, "
+      "each to a tolerance narrower than its distance from the namesake's value: ||DELTA||^2 81.81, "
+      "the four-parameter span 8.57%, the contrast direction 55.72%, the two together 69.16%, the "
+      "oscillation ratio 1.0440 and DELTA/sigma at the troughs -0.836.  ⛔ *Added at r7649 because "
+      "every OTHER gate here is an inequality or a range that passes on BOTH arms, so the re-point "
+      "moved every printed figure and could not have reddened anything.  This is the gate the "
+      "perturbation bites.*",
+      all(abs(g - w) <= t for _n, g, w, t in _PIN6),
+      "; ".join(f"{_n} {g:.4f}" for _n, g, w, t in _PIN6))
+check("...and it does not depend on the window: 46 to 58 per cent across a factor two in it, so "
+      "the one tunable is reported rather than chosen (46 to 51 on the namesake arm)",
       min(_r) > 0.40 and max(_r) - min(_r) < 0.12,
       f"{100*min(_r):.1f}% to {100*max(_r):.1f}%")
 
