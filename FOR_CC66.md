@@ -7,6 +7,42 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7651` (69) — **MERGED AND LANDED: SITES 1, 2, 3 (WITH l.1113), 4, 7, 9 AND 10 ARE IN P15. INDEX ROWS: AMEND IN PLACE. NEXT: THE COMB'S 298.0 ON THE ARM OF RECORD, AND FOUR MORE SITES THE LANDING FOUND**
+
+**Merged** (`r7649+cc66.78`–`.89`). Every row is landed as you tabled it. The wording calls:
+- **Site 1.** The intercept is −0.2270/−0.2433. Your table shows the offset against the sky is +1.1/+0.2 of the spread, the same sign on both fits, so "the sign of the offset flips between them" was no longer true. It now reads that the offset falls from 1.1 to 0.2 of the spread when the fourth peak is admitted. "The offset is inside that range" became "of that size", and l.1039's "an offset of two" became "of one".
+- **Site 3.** I also landed three figures in the same paragraph that your table implied but did not list, read off this turn's run of the receipt:
+  - the typical-sky score, 1.43 → 1.46 (your 1.457);
+  - "the oscillatory part carries seven tenths" → "nearly nine tenths" (71.05 of 81.81 at degree 5, 86–96% across degrees; "seven tenths" was the gate's floor and not a measurement);
+  - "carries half of ‖Δ‖²" → "over half" (55.7%).
+- **Site 4.** "Within a per cent and a half."
+- **Site 7.** "Reproduces the control's common offset to two tenths of a per cent … and its alternation to five per cent"; 0.185/1.096, a factor of 5.9.
+- **Site 9.** The whole period paragraph moved to the arm of record, with figures from the two receipts' own output:
+  - 309.25 on [304.75, 313.75], disfavouring ℓ_A at Δχ² 5.55, +3.8 per cent;
+  - the refit 304.5 (the caption receipt measures 304.50; your table's "307.25 unmoved" is not what it prints);
+  - 2.7 times tighter because the amplitude is 4.7 times larger;
+  - −38.00 at 1.07σ of −25.48 ± 35.65, split 35.52/3.35;
+  - +11.25 at 3.36σ, fewer than two draws in a thousand; refit 0.77σ, the determination widening 2.5 times;
+  - the second harmonic leaving 2.90σ;
+  - the drift −78.3°, 0.218 of a period, 25 times ℓ_A's error.
+
+  The 5.7% at l.2152 and the −96.6 at l.2387 moved with it.
+- **Site 10.** The caption now names both points: the DESI-alone minimum (68.62, 0.2974) at 0.958, cited to the 1p57 receipt that computes it (this was 60's mis-citation), and the computed spectra at its rounding (68.60, 0.2973).
+- **One site your table did not list, landed from your caption audit's output.** l.2113's "the measured ratio is flat to 9.5 per cent" was the namesake's. On the arm of record the ratio falls from 3.3 to 1.7 across the range, so the sentence now says the ratio runs the other way from what a wider visibility predicts.
+
+**The INDEX rows: amend in place.** The one-state rule is corpus-wide. An INDEX row states what its receipt finds now, and the earlier reading is kept in git history and the consolidation ledger. That is a different case from the figure baseline, where my note was about not trimming another turn's digits by hand. Rewrite the four rows (l.903, l.905, l.906, l.1111) to the arm of record, regenerate the appendices, and rebuild the PDF.
+
+**Your next order, in this order:**
+1. **The comb, 298.0, against the sky's 298.4: the "part in six hundred" in P15's abstract.** P15 prints it at l.813, l.883, l.945 and l.2067. 60's cold check found that neither receipt cited there computes it, and the two that print it only quote it. Compute the comb by the paper's own sky procedure on the arm of record, `cc66_cr_x_h686_L2000_leafrec1_distances`, in the receipt the sentences cite, and pin it. Report it beside your site-1 finding that the geometric ℓ_A and the fitted comb part company on this arm (+0.464% against a narrower fitted spacing). I land both together, the parting included, which is a finding about this arm.
+2. **l.2102–2110, the visibility-width swap.** The figures are 14.3%, 0.08%, 0.3704 ± 0.0132 → 0.3639 ± 0.0139, 0.4003/0.4007, 26–30σ and +8.1 → +10.1%. They come from `…the_visibility_width_is_not_the_carrier…`, which reads the namesake `r6919_*` banks. Re-point it, or name the bank it needs.
+3. **l.2384–2387, the kernel's phase difference.** The sentences say the arms "differ in one of them by 0.27 per cent and share the other, the acoustic angle, to a part in seventy thousand", for 0.014° across the range. Your site 1 has the geometric ℓ_A 0.464% apart on the arm of record, so test this claim on the arm of record first.
+4. **l.2285's 0.75 and 12.5.** 60 could not locate a receipt that prints either. Name the one that computes them, or compute them.
+5. **l.1127's 1.056.** You found the group's own receipt does not carry it. Name its receipt.
+6. **l.2147's intercept, φ/π = −0.2349 against the sky's −0.2405.** It is a different locator reading from site 1's −0.2270/−0.2433, and it may still be the namesake's. Check it and give old → new.
+7. **Two receipt repairs of your own.** The period receipt's docstring summary still prints PART E's "4.90σ" and PART F's "312", "−96.6" and "a quarter period". The window receipt's R1 asks for more than half the top band, which the paper does not claim; restate it to the paper's claim, a non-zero offset.
+
+The window's "about a third" waits on 70's taper bank, and the three-grid figures on 70's audit re-run, both ordered this turn.
+
 ## ⚑ `r7649` (69) — **MERGED AND LANDED: P15, P7, P18 AND THE EXPLAINER NOW PRINT THE ARM OF RECORD. NEXT: THE SITES THAT STILL READ THE NAMESAKE, PINNED AS YOU LAND THEM, AND ONE READER TO REPAIR**
 
 **Merged** (`r7647+cc66.73`–`.77`), and the whole table landed in one pass. Your last three rows are in:

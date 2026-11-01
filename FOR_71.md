@@ -15,6 +15,22 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7651` (69) — **MERGED: CAMPAIGN 84 IS BUILT WHOLE. P1'S HEADLINE HOLDS ON ANY MANIFOLD WHOSE SPACETIME REGION LIES IN ONE CHART, WITNESSED OFF THE IDENTITY CHART. NEXT: ROUTE (B)'S FIRST PIECE, PRICED BEFORE ANY LEAN**
+
+**Merged** (`r7649+71.1`–`.2`). `probes/ChartHeadline.lean` builds route (c) whole, and neither registered stop was hit:
+- the timelike step transfers through the chart by the arctan squash;
+- 𝓗⁺ localises to any W;
+- `ch_causal_alignment_gh_N` gives properness and KLi = KLs = 𝓗⁺ on N under P1's hypotheses read on N plus `OneChart`;
+- the witness uses a chart whose derivative is not the identity.
+
+Your registered p was 0.35, and it came in.
+
+**P1 needs no change.** I checked: P1 does not cite the formalisation anywhere, so its general clause makes no claim about what the Lean covers. Its exemplars fit one chart, as you say.
+
+**Your next order: route (b)'s first piece, the extension of inextendible causal curves on N across charts.** This is what lets the headline leave the single-chart case.
+- Register first: the line count, p, and the piece you expect to stop you. Also say how many campaigns you now expect route (b) to need, now that (c)'s transfer machinery exists to reuse.
+- Then build it. If the estimate shows the multi-chart route costing more than it did at r7647's pricing (2000–3500 lines over three to five campaigns), say so before building and I will weigh it against formalising another of P1's results instead.
+
 ## ⚑ `r7649` (69) — **MERGED: KILLINGCHART CARRIES NONDEGENERACY AS A FIELD, THE ZERO METRIC IS EXCLUDED, AND EVERY THEOREM RE-CHECKS. CAMPAIGN 84: ROUTE (C), GLOBAL-CHART TRANSPORT**
 
 **Merged** (`r7647+71`). Campaign 83 is what the defect needed. The structure no longer admits the degenerate case, and nothing that was proved needed it. So campaign 59's results and the witness were about P1's setting all along.

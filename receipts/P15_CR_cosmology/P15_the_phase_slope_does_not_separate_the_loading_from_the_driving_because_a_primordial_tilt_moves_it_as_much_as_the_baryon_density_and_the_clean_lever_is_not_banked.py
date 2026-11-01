@@ -163,7 +163,7 @@ print(f"      on cc66.153's own 179-bin footing: P = {_Pf:.2f}, slope = {_kf:+.4
 # ⛭ THE PAPER'S OWN FIGURES ARE READ FROM THE PAPER, NOT HARD-CODED.  `sec:refit-bound` carries this
 #   drift in print; a receipt that pins it as a literal goes on passing after the sentence moves.
 TEX = io.open(os.path.join(ROOT, 'corpus', 'CR_cosmology.tex'), encoding='utf-8').read()
-_PAT = {'period': r'A period of \$([0-9]+)\$, and \$\\ell_\{A\}\$ with a phase',
+_PAT = {'period': r'A period of \$([0-9.]+)\$, and \$\\ell_\{A\}\$ with a phase',
         'drift': r'drift of the acoustic phase at the correct spacing\}, \$-([0-9.]+)\^\{\\circ\}\$',
         'window': r'across \$([0-9]+)\\le\\ell\\le([0-9]+)\$'}
 _GOT = {k: re.search(v, TEX) for k, v in _PAT.items()}
@@ -187,14 +187,14 @@ print(f"      and READ from `corpus/CR_cosmology.tex` rather than pinned: the pa
 #       `P15_the_residual_does_not_sit_at_ell_A_...`.  Both are routed in `FOR_69.md`.  The check is
 #       inverted and pinned on BOTH pairs, so it fails again when 69 lands the sentence, which is
 #       what a capture-rather-than-hard-code check is for. ***
-check("Ⓐ①  ⛔⛔ ** AND IT DOES NOT REPRODUCE THEM ANY MORE, WHICH IS WHAT CAPTURING THEM WAS "
-      "FOR: this receipt measures 309.25 and -78.3 degrees on the arm of record where "
-      "`sec:refit-bound` still prints 312 and -96.6. **  ⇒ *The window still agrees, ell 104-1886, "
-      "so the disagreement is the two figures and not the footing.  Captured rather than hard-coded, "
-      "so this went red on the re-point instead of going on passing -- and it will go red again when "
-      "69 lands the sentence, which is correct*",
+# ⛭ r7651 (69): THE SENTENCE IS LANDED, so the check now asserts the landed state: the paper prints
+#   the period and the drift this receipt measures on the arm of record, to the printed digits.
+check("Ⓐ①  ✔ ** AND THE PAPER PRINTS WHAT THIS RECEIPT MEASURES: 309.25 and -78.3 degrees on the "
+      "arm of record, in `sec:refit-bound` as landed at r7651. **  ⇒ *The window agrees too, ell "
+      "104-1886, so the figures and the footing both match.  Captured rather than hard-coded, so a "
+      "sentence that drifts from the measurement reddens here*",
       abs(_Pf - 309.25) < 1e-9 and abs(_ddf + 78.30904) < 1e-4
-      and abs(P_PAPER - 312.0) < 1e-9 and abs(D_PAPER + 96.6) < 1e-9
+      and abs(P_PAPER - 309.25) < 1e-9 and abs(D_PAPER + 78.3) < 1e-9
       and abs(L_FIG.min() - W_PAPER[0]) < 5.0 and abs(L_FIG.max() - W_PAPER[1]) < 5.0)
 
 _sg = np.isin(L_FIG, LG)
@@ -524,11 +524,8 @@ print("    the same directions), and the driving-off limit moves the slope the W
 print("    HALF its magnitude -- 0.489 of it, against a third on the namesake arm, because the")
 print("    OBSERVED slope shrank from -9.2995e-04 to -7.0111e-04 while the two driving-off spectra")
 print("    did not move.  *The sign argument is untouched; only the size weakens.*")
-print("  ⛔ ** AND sec:refit-bound's OWN PRINTED PAIR IS NOW STALE: it prints P = 312.00 and")
-print("    -96.6 degrees where this receipt measures 309.25 and -78.3 on the arm of record. **")
-print("    *Captured from the paper rather than hard-coded, so it went red on the re-point instead")
-print("    of passing quietly.  Routed to 69 in FOR_69.md as a landing row; this receipt is that")
-print("    row's gated form and will go red again when the sentence lands.*")
+print("  ✔ ** AND sec:refit-bound PRINTS THE PAIR THIS RECEIPT MEASURES ON THE ARM OF RECORD,")
+print("    P = 309.25 and -78.3 degrees, captured from the paper rather than hard-coded. **")
 print("  ⇒ ** SO: IT NEEDS A GRID, AND IT ALSO NEEDS A DIFFERENT STATISTIC. **  The peak set with")
 print("    its odd-even decomposition separates the two signatures that one global period makes")
 print("    degenerate, and that half is a re-read of the bank at no run cost. The lever half is")

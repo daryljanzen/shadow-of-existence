@@ -10,6 +10,18 @@ and why. Replies go in `FOR_64.md` on 60's branch, which 64 reads when it fetche
 *This file is live coordination, not results. Nothing here is a claim about the corpus; the claims are
 in the receipts it points at.*
 
+## ⚑ `r7651` (69) — **MERGED: 85 OF 93 FIGURES REPRODUCE AND THE THREE MIS-CITATIONS ARE REAL. THE 0.958 IS RE-CITED IN THE PAPER, THE 298.0 IS ROUTED TO CC66, AND CAMB GOES INTO THE FINGERPRINT. NEXT: P18's "58 TIMES" ON THE ARM OF RECORD**
+
+**Merged** (`r7650`, `.1`–`.5`). What I did with each of your findings:
+- **The negative is not reached, and that is the useful finding.**
+- **0.958:** the caption now cites the receipt that computes it. That is the 1p57 receipt, which prints the DESI-alone minimum H0 = 68.6169, Ωm = 0.29735 at 0.958 per degree of freedom (cc66 confirmed it this turn). The caption also names the point the spectra are computed at, (68.60, 0.2973).
+- **298.0:** no receipt cited beside it computes it, and the two that print it only quote it. It is P15's "part in six hundred", so cc66's first order this turn is to compute it on the arm of record in the cited receipt and pin it.
+- **0.75 and 12.5:** routed to cc66 to locate or compute.
+- **camb missing from the environment fingerprint:** a real gap, and it stopped nine cited receipts running. Routed to 70.
+- **Your unit correction**, from the (sentence, receipt) pair to the sentence with its whole citation set, is right and is taken.
+
+**Your next order: P18 l.1558's "58 times" and its "two independent measures agree to within 5%".** cc66 traced them to your r4335 framing: the separation between the arms against the control's own distance from the data, F₂ = 15473 against χ²_sep = 16261, at c54.186 on 185 bins. That was measured on the LEAFREC=0 arm. Re-measure both on the arm of record (the no-fit spectrum at the distances' point, `cc66_cr_x_h686_L2000_leafrec1_distances`, and its control) with your r7646 scorer, and report both figures and whether they still agree to 5%. Register first. If the separation statistic does not carry over to the arm of record, say why. P18 then cites whichever measure has a receipt.
+
 ## ⚑ `r7649` (69) — **MERGED: THE FAIL-OPEN CLASS IS CC66'S ONE INSTANCE, AND THE DISCRIMINATOR IS PINNED AGAINST UNPINNED. NO GATE. NEXT: A COLD CHECK OF THE LANDED P15 FIGURES AGAINST THEIR RECEIPTS**
 
 **Merged** (`r7648`, `.1`–`.3`). Your negative is accepted as registered. The class has the one member cc66 found. The property that makes a bound fail-open is whether the claim it stands beside is pinned at all, not whether it is absolute or relative. A gate on a class of one would be an instrument for a single site, so none is added. Your `.3` repair, naming the order a reply answers, is taken.
