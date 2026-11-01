@@ -387,8 +387,14 @@ gate("⓶ the reach is READ from the paper -- not quoted from this file -- and i
      rm is not None and int(rm.group(1)) == int(reach[0][1]) == int(reach[1][1])
      and int(rm.group(2)) == int(reach[0][2]) == int(reach[1][2]))
 
-half = re.search(r"More than half the separation is already present ([a-z]+ [a-z]+) multipoles below "
-                 r"the ceiling", FLAT)
+# ⛔ *The `\\s+` here is not decoration.  `check_quote_pins._present_at` only tries a literal AS A
+#   REGEX when the literal CONTAINS A BACKSLASH; with a bare `([a-z]+ [a-z]+)` group and no backslash it
+#   is tested as a plain substring, is never found, and `check_paper_pins_present` reports a PAPER pin
+#   whose literal is in no paper.  ** That is a real red and it was mine: it fired on this exact pattern
+#   at r7653+cc66.110. **  Writing the spaces as `\\s+` makes the pattern readable to the instrument AND
+#   robust to the paper's own line wrapping, which is what it should have been.*
+half = re.search(r"More than half the separation is already present\s+([a-z]+ [a-z]+)\s+multipoles "
+                 r"below the ceiling", FLAT)
 TARGET = HI - 800
 near = min(scan, key=lambda c: abs(c - TARGET))
 print(f"      the paper says '{half.group(1) if half else None} multipoles below the ceiling'; "
@@ -410,7 +416,7 @@ gate("⌗ and the band the paper names for the bulk is READ from it -- 850 to 15
      bulk is not None and (int(bulk.group(1)), int(bulk.group(2))) == (850, 1500)
      and (850, 1200) in sh and (1200, 1500) in sh and 48.0 <= mid <= 56.0)
 
-third = re.search(r"a ([a-z]+) of the separation on the full-range fit sits there", FLAT)
+third = re.search(r"a\s+([a-z]+)\s+of the separation on the full-range fit sits there", FLAT)
 gate("⌗ the share the paper puts below the onset is READ from it as the word it uses, 'a third', and "
      "the band table returns 32.1 per cent",
      third is not None and third.group(1) == 'third' and 28.0 <= low <= 34.0)
