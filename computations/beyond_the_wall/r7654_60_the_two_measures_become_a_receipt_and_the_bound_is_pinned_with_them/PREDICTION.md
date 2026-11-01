@@ -128,3 +128,60 @@ tested does not say with respect to what.*
 **Running total of this seat's own rule conditions corrected by measurement rather than by reading,
 across `r7648`, `r7650`, `r7652` and `r7654`: eleven** — every one in the restrictive direction, every
 discarded reading kept beside its correction.
+
+---
+
+# `r7654+60.2` — REGISTER THE CORRECTION: I said `P18` prints four figures and it prints TWO, and a gate of this corpus caught it
+
+**Two gates of this line's own fast job went red on the landing, and both are right.**
+
+## ⓘ `check_receipts`' assertion census — the exit did not depend on a comparison
+
+The census read the receipt as carrying **no check at all**, and by its own rule it was correct:
+`sys.exit(1 if _fail else 0)` tests a **list's truthiness**, and `acting_check.acting_exit` asks whether
+a non-zero exit depends on the outcome of a **comparison**. It does not. ⇒ Corrected to
+`sys.exit(1 if len(_fail) > 0 else 0)`, and the rule's own detector then returns true. *The receipt's
+twenty checks were real; what was missing was that its exit could be seen to depend on them — which is
+exactly the hole the census exists to find, and it found it on this line's own new file.*
+
+## ⛔ `check_unread_figure` — AND THIS ONE CAUGHT A FALSE STATEMENT, NOT A FORMALITY
+
+It flagged `ⓐ①`'s label, *"the full set is 185 bins at ell 100-1996, the range P18's sentence names"*:
+the label attributes a quantity to a text that the receipt never opens, so the check would stay green
+if the text moved. **Following its own remedy — read the paper or drop the attribution — I read the
+paper, and the attribution is FALSE in two places:**
+
+- **`P18` does not print "185 bins" or "$\ell$ 100–1996" at all.** Its sentence says *"on the
+  full-range lensed bins"*. The $185$ and the range are P15's wording, not P18's.
+- ⛔ **AND `P18` DOES NOT PRINT $288.04$ OR $214.1$.** Grepped: **zero** occurrences of either in
+  `corpus/CR_synthesis.tex`. The order's message gave "($288.04$ over $214.1$)" as the *provenance* of
+  the printed $1.35$, and I carried it into the receipt, the INDEX row and the reply as something the
+  paper prints. **It is not.** `P18` prints exactly **two** figures here — $1.77$ and $1.35$ — plus the
+  prose "a quarter apart".
+
+*The discarded reading is kept: my registration's ⓑ table said "the paper's printed value" for all
+four, and for two of them there is no printed value to compare against.*
+
+## THE CORRECTED RULE, registered before the corrected receipt exists
+
+- **⑨ THE TWO FIGURES `P18` ACTUALLY PRINTS ARE READ OUT OF `corpus/CR_synthesis.tex` AND PINNED
+  AGAINST WHAT IS READ**, not against numbers typed into the receipt. *That is strictly stronger than
+  what I wrote: a pin against a literal I typed cannot notice the paper moving, which is the whole
+  complaint the gate raised.* The receipt fails if the sentence is not found, if it does not yield
+  exactly two figures, or if either disagrees with the computation.
+- **⑩ $288.04$ AND $214.1$ ARE RELABELLED, NOT DROPPED.** They are **this receipt's own** two
+  quantities, the numerator and denominator the printed $1.35$ is formed from, and they are still
+  pinned — because a ratio pinned alone can be right through a cancellation, and pinning the pair is
+  what forbids that. But the label no longer says the paper prints them, because it does not.
+- **⑪ `ⓐ①` DROPS ITS ATTRIBUTION** and states what the receipt computed: $185$ bins at $\ell$
+  $100$–$1996$ off the likelihood's own edges. The range is asserted; whose wording it is, is not
+  claimed.
+
+⇒ **So the gate's complaint was the smaller half of what it found.** It asked for a reading or a
+dropped attribution; the reading showed that two of my four "printed" figures were never printed.
+⌗ *A figure attributed to a paper has to be read from the paper, and I now have the instance that
+proves why: I attributed two numbers to a sentence that does not contain them, and only opening the
+file could have told me.*
+
+**Running total of this seat's own rule conditions corrected by measurement rather than by reading,
+across `r7648`, `r7650`, `r7652` and `r7654`: thirteen.**

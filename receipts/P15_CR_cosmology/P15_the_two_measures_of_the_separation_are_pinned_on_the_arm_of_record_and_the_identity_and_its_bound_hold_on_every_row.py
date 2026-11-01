@@ -307,4 +307,4 @@ print("\n" + "=" * 104)
 print(f"  {len(_fail)} failure(s)")
 for f in _fail:
     print("   [FAIL] " + f)
-sys.exit(1 if _fail else 0)
+sys.exit(1 if len(_fail) > 0 else 0)
