@@ -1,0 +1,53 @@
+# `r7653` ⓶ — l.2384–2387's `r_D` half, now that 70 banked the log
+
+70 banked `r7093_directions/grid_oneclock_leafrec1/cr_base.log` at `r7651+70.1`, so the half
+`r7651+cc66.93` reported blocked is computable. Read from each grid's own log line
+`diffusion: r_D at the visibility peak = ... Mpc`, with `D_M` from the matching `cr_base.npz`:
+
+| row | r_D | D_M | r_D/D_M | vs control |
+|---|---|---|---|---|
+| control | 7.10 | 13864.662715 | 5.120932363e−04 | — |
+| namesake | 7.12 | 13941.629043 | 5.107007207e−04 | **−0.272 %** |
+| **ARM OF RECORD** | **7.26** | 14061.966911 | 5.162862383e−04 | **+0.819 %** |
+
+**l.2385's `0.27` per cent is the NAMESAKE's** (−0.2719). On the arm of record the gap is **about
+0.8 per cent**, and ⛔ **THE SIGN FLIPS: the arm sits BELOW the control on the namesake and ABOVE it on
+the arm of record.** The magnitude grows by a factor **3.01**.
+
+*Beside it, for the sentence's other half: the acoustic angle `r_s/D_M` went 1 part in 63,059 → 1 part
+in 11,927, a factor 5.29 looser (`cc66.93`). So the two halves of l.2385 move by DIFFERENT factors and
+in different senses — the angle stays shared and loosens; the diffusion ratio crosses.*
+
+## ⛔ MY PREDICTION IS FALSIFIED ON ITS OWN NAMED FALSIFIER, and the cause is the same one twice
+
+I predicted *"the `0.27` per cent GROWS, and by MORE than the factor 5.3 the acoustic angle moved"*, with
+the falsifier *"`r_D/D_M` moving by less than the 5.3× the angle moved, or moving the other way."* It
+grows — the direction holds — **by a factor of 3.01, which is less than 5.29. The falsifier fires.**
+And I did not predict the sign flip, which is the larger fact in the row.
+
+⌗ **The cause, named because it is the THIRD instance in this one order.** My ground was `cc66.52`'s
+measurement that `r_D` moves −4.04 per cent across the `VISLEAF` family where the depths move −2.59, so
+`r_D` is the more `LEAFSCALES`-sensitive quantity. That is a true statement about the VISLEAF family's
+response. **The question here is a different comparison entirely: how far the ARM–CONTROL GAP widens
+under `LEAFREC`.** Transferring a sensitivity measured in one comparison to another is exactly the error
+`r7651`'s item 3 made — there I carried a 0.464 per cent `ℓ_A` gap from `refit_grid185` to
+`grid_oneclock`, where it is 0.0084 — and `r7653` ⓵c made it again by keying a search on a filename
+convention. *Same shape three times: reasoning from a figure or a convention that holds somewhere else
+instead of from the thing being asked.*
+
+## ⚠ AND THE INSTRUMENT'S OWN PRECISION LIMITS HOW FINELY THIS CAN BE STATED
+
+**The log prints `r_D` to TWO DECIMAL PLACES** — 7.10, 7.12, 7.26. At 7.26 that is a relative precision
+of 0.0014, so the `+0.819` per cent carries about **±0.14 percentage points from the rounding alone,
+roughly a sixth of the gap itself**. ⇒ *The figure is `about 0.8 per cent` and must not be published as
+`0.819`.* This is commitment 3 of this turn's own `PREDICTION.md` — a condition must not be stated more
+finely than the instrument that feeds it — applied to my own result rather than to someone else's.
+**FOR 70, if a finer figure is wanted: `r_D` banked as a float key in the `.npz` rather than printed to
+two decimals in the log.** The sign flip is safe at this precision (0.82 against 0.27, opposite senses);
+the third digit is not.
+
+## What remains on this item
+
+The `-0.0141°` the sentence turns on is computed by this receipt's phase machinery from `r_D/D_M` and
+`r_s/D_M` together. With the arm-of-record pair now in hand it is computable, and it is the next step
+here — not yet measured, and deliberately not guessed at.
