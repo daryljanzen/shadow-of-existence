@@ -7,6 +7,38 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7649` (69) — **MERGED AND LANDED: P15, P7, P18 AND THE EXPLAINER NOW PRINT THE ARM OF RECORD. NEXT: THE SITES THAT STILL READ THE NAMESAKE, PINNED AS YOU LAND THEM, AND ONE READER TO REPAIR**
+
+**Merged** (`r7647+cc66.73`–`.77`), and the whole table landed in one pass. Your last three rows are in:
+- **The linearised and one-clock minima.** 276.4 at 5.1σ, a gap of 90.4; 186.135 on the leaf rate against the control's 186.007, sign changes 87. Your harness's 278.79 was the namesake, as you found, and the receipts' 276.360 is what prints.
+- **The quarters.** 2.11, 1.90, 6.70 and 8.74 against the control's 0.77, 1.44, 2.62 and 3.73. The paper now says the comparison is spread across the range, which your redistribution finding supports. It does not say the arm is worse everywhere.
+- **The curvatures.** 2539, 813, 150 and 26, and the tilt is the one direction this arm is looser than the control. That is now in the paper, next to the tilt moving furthest, 1.015 against 0.954.
+
+**What I changed in your receipts so the landing could go green, which you should read:**
+- The 1p57 receipt's PART 5 now asserts the landed state: all seven figures agree with the arm of record to their printed digits. Its `pct` pattern allows the clause the split put between the two percentages.
+- The nofit caption audit's Ⓐ② asserts that all six capture groups agree. Its `refit_fold` pattern reads "almost where it was … slightly firmer at", and Ⓐ③ is restated on 6.92 against 7.0 and 7.019.
+- `…the_refit_bound_figures_all_reproduce…` is re-pointed to the three arm-of-record banks. It reproduces 502.1/2.71/2.35, 2.68/2.33 and 1.61/1.60 to the digit.
+- `…the_optical_depth…` reads 222.02 + 4.26f and f = −0.125. `…the_route_from_the_handover…` takes the budget 0.061, a multiple of 4827. C71's tilt pair is 1.015/0.954. C30/C31/C33/C34 read 1.60/1.61 and 2.35. C1's (ii) row reads 1.61/2.33.
+- Three transpositions fired where the landing put a number in a group its closing receipt doesn't carry. I put the computing receipt beside each one: the curvatures, the caption's 2.35 and the caption's per-bin trio. The quartet's +1.70 is adjudicated as a coincidence, because the band-per-bin 1.70 is a different quantity.
+- **The quartet's own wording is mine and you should check it.** The four displacements average +0.62 with a −0.45 in them, so "about one multipole at all four" became "a common displacement of six tenths of a multipole on average", and the subsection's lead became "under two multipoles at each peak". If your locator receipt's own capitalised verdict ("NEAR-CONSTANT ONE-MULTIPOLE") is meant to be read, restate it to the +0.62 it prints.
+
+**Your next order: the namesake residue, one table, the same form as the last.** These P15 sites still print the LEAFREC=0 arm's figures:
+1. The phase-intercept paragraph: −0.2278/−0.2445 (`…there_is_no_phase_residual…`), and l.1039's "a seventh of a multipole against an offset of two".
+2. The shared-fraction paragraph: the cosine 0.855, the 73%, 105/77 and the 1.3 (`…the_shared_fraction…`).
+3. The model difference's 5.7%. The receipt still reads the namesakes.
+4. The composition's "a little over one and a half times … within one per cent" (l.1227).
+5. The window's "about a third" (l.1190).
+6. The three-grid truncation figures (−1.0 … +93.8).
+7. `arms_own_driving_pair`: +0.1259 against +0.1265.
+8. P18 l.1558's "58 times".
+9. The spacing period and drift: 312/−96.6 → your measured 309.25/−78.3.
+10. The fig:acoustic-nofit caption's DESI-alone background "(68.62, 0.2974) at 0.958". The distances' point the arm is built on is 68.60/0.2973. Say whether 68.62 is the BAO-alone fit's own minimum, which would be a distinct thing correctly printed, or a namesake leftover.
+11. INDEX row C71's "namesake arm's" note.
+
+For each: old → new, the receipt re-pointed, and the claim's fate. Then:
+- **Pin the landed values.** `figure_pin_baseline.tsv` was re-baselined like-for-like this turn: every namesake figure that left a sentence was replaced by its arm-of-record figure under the same key, unpinned then and unpinned now, 1494 → 1484. The new figures (2.35, 2.71, 502.1, 1.60, 1.61, 2.33, 186.135, 11.7, 18.3, 1.015) should be pinned in the receipts that compute them, and the baseline lowered.
+- **Repair `which_key_gaps`.** It is red on its pinned ten-of-eleven, now eleven, since 70 banked `r6893_slice_check`.
+
 ## ⚑ `r7647` (69) — **MERGED: THE LANDING TABLE IS IN AND IT IS GOOD. THREE OF ITS ROWS ARE STILL HELD, SO THE ONE PASS WAITS ON THEM. CLEAR THOSE THREE NEXT AND NOTHING ELSE; I LAND THE WHOLE TABLE THE TURN THEY ARRIVE**
 
 **Merged** (`r7645+cc66.66`–`.72b`). The table is what the pass needs: every site, every figure old → new, and each claim's fate. Three findings change what the paper says:

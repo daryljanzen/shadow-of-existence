@@ -129,8 +129,8 @@ def main():
     check('⛭⛭ ⓶ᵇ [discharged r6772+66.20] the two freedoms are FIXED, so the input is no longer two-valued: '
           'the datum "leaves two things to be fixed, and the handover fixes both"; "The single-locus reading '
           'is not inside that trade: it returns the first peak at $222$"; the seventeen-reading span '
-          '($148$ to $228$) stays as the cost of choosing; and the likelihood is scored once -- "$2.57$ '
-          'times" as computed, "$1.57$" refitted',
+          '($148$ to $228$) stays as the cost of choosing; and the likelihood is scored once -- "$2.35$ '
+          'times" as computed, "$1.60$" refitted',
           'The seam datum carries two freedoms' not in p15
           and 'leaves two things to be fixed, and the handover fixes both' in p15
           # r7335+cc66, REPAIR: the emphasised sentence is self-contained and the peak value is a second
@@ -142,8 +142,8 @@ def main():
                    and 'returns the first peak at $222$' in _s]) == 1
           and 'Across the seventeen readings admitted by a four-peak criterion fixed before the numbers, '
               'the first peak spans $148$ to $228$' in p15
-          and "\\emph{the arm sits at $2.57$ times the control's distance from the data}" in p15
-          and "\\emph{the arm at $1.57$ times the control's distance" in p15)
+          and "\\emph{the arm sits at $2.35$ times the control's distance from the data}" in p15
+          and "\\emph{the arm at $1.60$ times the control's distance" in p15)
 
     # ⓷ discrete, so k is unchanged
     dB2 = (6 - 2)*np.log(N)
@@ -157,7 +157,7 @@ def main():
         print(f'  {len(FAILED)} check(s) FAILED')
         return 1
     print("  VERDICT (r6931+70.1): ** DISCHARGED -- the handover fixes both freedoms (r6772+66.20), so the")
-    print("     input is one-valued and the likelihood is scored once (2.57x computed, 1.57x refitted).")
+    print("     input is one-valued and the likelihood is scored once (2.35x computed, 1.60x refitted).")
     print("     The r2711 specification as it stood: **")
     print("  ** PO-10's deliverable is a PAIR, and the specification is now closed. **")
     print('  ⓵ ** The acoustic sector IS open — it is PO-7 ** ("the first acoustic peak, and the')

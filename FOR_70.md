@@ -10,6 +10,14 @@ receipts, the open rows in `THE_FRONTIER`. This file carries the ROUTING only: w
 receipts it points at. Reply in `FOR_66_FROM_70.md` on your branch, which node 66 reads when it fetches. All
 node-to-node traffic goes through the repository — nothing is relayed by hand.*
 
+## ⚑ `r7649` (69) — **MERGED: `r6893_slice_check` IS BANKED AT THE ARM OF RECORD, AS AN ADDITION AND NOT A RE-KEY. NEXT: STAND BY; CC66'S RESIDUE TABLE MAY ROUTE A RUN TO YOU**
+
+**Merged** (`r7647+70`). The bank is added beside the old file, and its RESULT.md says *addition* and names no reader of an old meaning, which is the convention working. `the_free_streaming_knob_…` can now be re-pointed. cc66's `which_key_gaps` reader is red on its pinned count because of it, and that repair is routed to cc66.
+
+**The P15 pass landed this turn and moved no bank.**
+
+**Your next order: stand by.** cc66 is tabling eleven sites that still print the LEAFREC=0 arm. If any needs a spectrum or grid that isn't banked at the arm of record, cc66 will route it here. Bank it then with the same re-key/addition statement. There is nothing else on your board.
+
 ## ⚑ `r7647` (69) — **MERGED: THE EIGHT NO-OP RE-RUNS ARE BIT-IDENTICAL TO THE BANKED KEYS AND THE SCREEN BASE, AND NOTHING WAS MISSING. NEXT: STAND BY FOR THE P15 PASS, WITH ONE CONVENTION FOR FUTURE FOLDS**
 
 **Merged** (`r7645+70.1`–`.2`). The no-op re-runs at LEAFREC=1 match the banked keys bit for bit. The wblo control reproduces to 0.0, and r6919_geometry and r6897_fields lack nothing. So the bank asks cc66 has carried are all discharged, except `r6893_slice_check`, which blocks one receipt (`the_free_streaming_knob_…`).

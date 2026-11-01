@@ -115,11 +115,11 @@ def main():
         capture_output=True, text=True, errors='replace').stdout)
     check('⓵ half ① has been RUN and reports a disagreement -- at matched freedom ("the tilt free in each '
           'arm and the amplitude in closed form"), control $1.01$ per bin against this arm\'s $1.58$, '
-          '"the arm at $1.57$ times the control\'s distance"; the r3005-r6772 figures ($397.13$ against '
+          '"the arm at $1.60$ times the control\'s distance"; the r3005-r6772 figures ($397.13$ against '
           '$206.44$, 215 bins) read at `754e76db^`',
           'the tilt free in each arm and the amplitude in closed form' in p15
-          and 'control settles at $1.01$ in $\\chi^{2}$ per bin and this arm at $1.58$' in p15
-          and "\\emph{the arm at $1.57$ times the control's distance" in p15
+          and 'control settles at $1.01$ in $\\chi^{2}$ per bin and this arm at $1.61$' in p15
+          and "\\emph{the arm at $1.60$ times the control's distance" in p15
           and '397.13' in _then and '206.44' in _then and '397.13' not in p15)
     # ** r6931+70.1 (PO-59): CLASS (b), DISCHARGED.  "waits on the transfer" went at `440623b6` (r6719,
     #    "the transfer is run"), and the number it waited for landed at `b5b6ac97` (r6772+66.16): "what
@@ -184,7 +184,7 @@ def main():
         return 1
     print("  VERDICT (r6931+70.1): ** half ② is RUN on this arm -- P1/P2 = 2.264 (polarisation path) against")
     print("     the sky's 2.2564 ± 0.0772 and LCDM's 2.200, inside one sky sigma: the prediction below is")
-    print("     confirmed at the sky's resolution.  Half ① is run too (1.57x at matched freedom). **")
+    print("     confirmed at the sky's resolution.  Half ① is run too (1.60x at matched freedom). **")
     print("  ** half ② carries NO discriminating signal — PO-10 is ONE half, not two. **")
     print('  ⓵ ** P7 states both halves itself: ** ① a likelihood comparison, "** a parameter refit')
     print('     rather than a further calculation **"; ② the odd/even pattern, "** ordinary content')

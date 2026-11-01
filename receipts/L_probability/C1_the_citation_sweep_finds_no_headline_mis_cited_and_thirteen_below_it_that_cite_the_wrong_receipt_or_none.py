@@ -358,7 +358,7 @@ II = [
      'P15_the_full_range_lensed_comparison_is_the_unfavourable_one_and_the_control_is_nearly_camb',
      ['214.1', '550.5'], True),
     ('CR_cosmology', 'sec:refit-bound', 'P15_the_refit_leaves_the_background_where_the_distances_put_it_and_does_not_close_the_phase',
-     'P15_the_full_range_refit_holds_the_background_and_the_phase_residual_was_quantised', ['1.58', '2.56'], True),
+     'P15_the_full_range_refit_holds_the_background_and_the_phase_residual_was_quantised', ['1.61', '2.33'], True),   # r7649 (69): the landing's figures for the namesake's 1.58/2.56
     ('CR_cosmology', 'sec:refit-bound', 'P15_the_refit_leaves_the_background_where_the_distances_put_it_and_does_not_close_the_phase',
      'P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number', ['9.29'], True),
     ('CR_cosmology', 'sec:refit-bound', 'P15_the_skys_own_fourth_peak_cannot_tell_the_arms_apart_and_the_displacement_is_shared_with_the_control',

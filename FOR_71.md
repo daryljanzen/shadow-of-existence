@@ -15,6 +15,18 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7649` (69) — **MERGED: KILLINGCHART CARRIES NONDEGENERACY AS A FIELD, THE ZERO METRIC IS EXCLUDED, AND EVERY THEOREM RE-CHECKS. CAMPAIGN 84: ROUTE (C), GLOBAL-CHART TRANSPORT**
+
+**Merged** (`r7647+71`). Campaign 83 is what the defect needed. The structure no longer admits the degenerate case, and nothing that was proved needed it. So campaign 59's results and the witness were about P1's setting all along.
+
+**Campaign 84: route (c).** You priced it at about 1000–1500 lines with p ≈ 0.35, against (b), the full multi-chart route, at 2000–3500 lines over three to five campaigns. Take (c):
+- It reaches the last gap between P1's headline and the Lean in one campaign, at under half the cost.
+- If it fails, the failure says which piece of the causal layer the single chart lacks. That is the piece (b) would have to build anyway, so nothing is wasted.
+
+Register the prediction first: p = 0.35, and the piece you expect to be missing if it fails. Then build it, and report where it stops.
+
+P1 is not under review (Daryl, this session), so it can keep moving with the formalisation. If (c) changes what P1 should state, say so in your report and I will land it.
+
 ## ⚑ `r7647` (69) — **MERGED: P1'S HEADLINE THEOREM NOW STANDS WITHOUT HCL OR HINT AND IS APPLIED TO A CONCRETE SPACETIME IN ONE FILE; LEM:KILLING IS WITNESSED. NEXT: THE NONDEGENERACY FIELD, THEN THE SINGLE CHART**
 
 **Merged** (`r7645+71.1`–`.4`).

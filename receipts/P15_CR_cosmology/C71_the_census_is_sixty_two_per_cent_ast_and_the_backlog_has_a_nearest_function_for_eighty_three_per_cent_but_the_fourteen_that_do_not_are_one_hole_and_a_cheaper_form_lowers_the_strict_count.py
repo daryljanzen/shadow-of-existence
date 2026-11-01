@@ -139,10 +139,10 @@ ZM_SCRIPTLESS = ('baryon_edge/L110_the_count_specified.py',
                  'baryon_edge/L15_the_quark_lepton_frontier.py',
                  'baryon_edge/L117w_the_colourless_sector.py')
 # order ②
-TILT_PAPER = ('0.998', '0.954')
+TILT_PAPER = ('1.015', '0.954')    # r7649 (69): the arm-of-record landing; it was ('0.998', '0.954')
 TILT_WAS = ('0.995', '0.956')
 TILT_GRID = ('0.9915', '0.9530')      # the response-model refit, a DIFFERENT quantity
-BUDGET_WAS, BUDGET_NOW = '0.039', '0.044'
+BUDGET_WAS, BUDGET_NOW = '0.044', '0.061'    # r7649: the landing moved it from 0.044 (and 0.039 before r7261)
 DRIFT_OUT, DRIFT_IN = 3, 1
 
 
@@ -343,7 +343,7 @@ head("D.  Ⓖ ORDER ②: ONE QUANTITY, TWO VALUE PAIRS IN ONE PAPER -- AND A THI
 
 _p15 = open(os.path.join(ROOT, 'corpus', 'CR_cosmology.tex'), encoding='utf-8').read()
 _BOUND = ('arm prefers $', TILT_PAPER[0], '$ against the control', "'", 's $', TILT_PAPER[1],
-          '$, bluer by $0.0', '44$')
+          '$, bluer by $0.0', '61$')
 _ITEM = ('prefers a tilt of $', TILT_PAPER[0], '$ here against $', TILT_PAPER[1],
          '$ on the standard one')
 gate(f"Ⓖ①  `sec:refit-bound` still reports the pair it computed, {TILT_PAPER[0]} against "

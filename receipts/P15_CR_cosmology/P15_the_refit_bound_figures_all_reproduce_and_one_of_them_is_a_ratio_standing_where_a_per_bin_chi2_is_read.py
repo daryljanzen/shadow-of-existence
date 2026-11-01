@@ -181,12 +181,17 @@ def score(path):
     return float(c), int(nb)
 
 
+# ⛭ r7649 (69): RE-POINTED TO THE ARM OF RECORD on the landing (LEAFREC=1; the no-fit pair at the
+#   distances' point, the refit's verified minimum at 68.5707/0.291246) -- the same three banks the
+#   computing receipts read (`..._lensed_comparison...` and `..._full_range_refit...`).  The control
+#   files do not move: LEAFREC does not reach the control.
+GRID_ARM = os.path.join(ROOT, 'computations', 'beyond_the_wall', 'refit_grid185_leafrec1_distances')
 CFG = {
     'L2000':       (os.path.join(SPEC, 'cc66_lcdm_L2000.npz'),
-                    os.path.join(SPEC, 'cc66_cr_x_h686_L2000.npz')),
-    'grid base':   (os.path.join(GRID, 'lcdm_base.npz'), os.path.join(GRID, 'cr_base.npz')),
+                    os.path.join(SPEC, 'cc66_cr_x_h686_L2000_leafrec1_distances.npz')),
+    'grid base':   (os.path.join(GRID, 'lcdm_base.npz'), os.path.join(GRID_ARM, 'cr_base.npz')),
     'r185 verify': (os.path.join(SPEC, 'cc66_r185_verify_lcdm.npz'),
-                    os.path.join(SPEC, 'cc66_r185_verify_cr.npz')),
+                    os.path.join(SPEC, 'cc66_r185_verify_cr_leafrec1.npz')),
 }
 S = {}
 print()

@@ -234,9 +234,11 @@ head("E.  AND HORN ⓶ CANNOT CARRY THE ROUTE AT ALL, BY THE PAPER'S OWN TILT BU
 #     budget goes `0.039` -> `0.044` and the shift's multiple of it `7550` -> `6692`.  The conclusion
 #     is unchanged and still overwhelming -- a larger budget still loses by three orders of
 #     magnitude -- but the number in the sentence is smaller than it was and says so.
-_REFIT = (r"refitting both arms on this construction's own background prefers a tilt of $0.998$ here "
+# ⛭ r7649 (69): the arm-of-record landing moves the refit's tilt to `$1.015$` (bluer by `$0.061$`), so the
+#   budget is `0.061` and the shift's multiple of it `4827` -- larger budget, same three orders of magnitude.
+_REFIT = (r"refitting both arms on this construction's own background prefers a tilt of $1.015$ here "
           r"against $0.954$ on the standard one")
-BUDGET = mp.mpf('0.998') - mp.mpf('0.954')
+BUDGET = mp.mpf('1.015') - mp.mpf('0.954')
 c0 = 2 / (mp.sqrt(3) * 2 ** (mp.mpf(1) / 3))
 L = c0 * mp.beta(mp.mpf(1) / 6, mp.mpf(1) / 2) / 2          # the paper's own closed form
 K1 = mp.mpf(255) / L                                        # the wavenumber its `-255` fixes
@@ -245,9 +247,9 @@ SHIFT = 2 * CS * K1 * L
 print(f"      the refit clause: {b15.count(_REFIT)}x;   budget = {mp.nstr(BUDGET, 4)}")
 print(f"      `$L$` from the paper's closed form = {mp.nstr(L, 12)};   `$k$` at the first peak = "
       f"{mp.nstr(K1, 10)};   tilt shift `$2c_skL$` = {mp.nstr(SHIFT, 9)}")
-gate("Ⓔ① THE BUDGET IS THE PAPER'S OWN GAP, `$0.998$` AGAINST `$0.954$`, SO `0.044` -- located, not "
+gate("Ⓔ① THE BUDGET IS THE PAPER'S OWN GAP, `$1.015$` AGAINST `$0.954$`, SO `0.061` -- located, not "
      "chosen here",
-     b15.count(_REFIT) == 1 and abs(BUDGET - mp.mpf('0.044')) < mp.mpf('1e-12')
+     b15.count(_REFIT) == 1 and abs(BUDGET - mp.mpf('0.061')) < mp.mpf('1e-12')
      and abs(L - mp.mpf('3.3387380236')) < mp.mpf('1e-10'))
 
 gate(f"Ⓔ② *** AND A TRANSFER WITH A SOUND SPEED IS NOT IN `Ⓑ①`'s CLASS, SO IT ENTERS THE TILT: by "
@@ -255,8 +257,8 @@ gate(f"Ⓔ② *** AND A TRANSFER WITH A SOUND SPEED IS NOT IN `Ⓑ①`'s CLASS, 
      f"first acoustic peak -- `{mp.nstr(SHIFT / BUDGET, 3)}` times the ENTIRE budget. ***  ⇒ ** So the "
      f"route exists on horn ⓵ and cannot exist on horn ⓶: the only transfer horn ⓶ permits destroys "
      f"the very tilt it is supposed to deliver **",
-     abs(SHIFT - mp.mpf('294.448637')) < mp.mpf('1e-5') and SHIFT / BUDGET > 6600
-     and SHIFT / BUDGET < 6800)
+     abs(SHIFT - mp.mpf('294.448637')) < mp.mpf('1e-5') and SHIFT / BUDGET > 4800
+     and SHIFT / BUDGET < 4850)
 
 gate("Ⓔ③ ⌗ AND THE CONTRAST IS THE SAME ALGEBRA AS `Ⓑ②` RATHER THAN A SECOND ARGUMENT: substituting "
      "`$T=e^{-c_skL}$` into `$\\dd\\ln(T^pP)/\\dd\\ln k$` returns `$n_s-1-pc_skL$` symbolically, which "

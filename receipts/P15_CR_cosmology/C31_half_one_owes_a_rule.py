@@ -100,7 +100,7 @@ def main():
         ['git', 'show', '754e76db^:corpus/CR_cosmology.tex'], cwd=ROOT,
         capture_output=True, text=True, errors='replace').stdout)
     check('⓵ half ① was a REFIT and it HAS BEEN RUN: P15 frees "the expansion rate, the matter and baryon '
-          'densities and the tilt" in each arm with "the amplitude in closed form", the arm at $1.57$ '
+          'densities and the tilt" in each arm with "the amplitude in closed form", the arm at $1.60$ '
           'times the control -- the refit this receipt distinguished from L-147 (r3005-r6772 figures '
           '$397.13$/$206.44$ read at `754e76db^`)',
           # r7335+cc66, REPAIR: this pinned ONE 20-word span for the TWO quotations the label
@@ -111,7 +111,7 @@ def main():
           len([_s for _s in re.split(r'(?<=[.!?]) ', p15)
                if 'the expansion rate, the matter and baryon densities and the tilt free in each arm'
                in _s and 'the amplitude in closed form' in _s]) == 1
-          and "\\emph{the arm at $1.57$ times the control's distance" in p15
+          and "\\emph{the arm at $1.60$ times the control's distance" in p15
           and '397.13' in _then and '206.44' in _then)
     check('while L-147 holds parameters FIXED, using CAMB only as a reference: "THE PIPELINE IS WIRED '
           'IFF the CAMB flat-LambdaCDM best fit reproduces chi^2 = 206.4 over 215 TT bins"',
@@ -170,7 +170,7 @@ def main():
     if FAILED:
         print(f'  {len(FAILED)} check(s) FAILED')
         return 1
-    print("  VERDICT (r6931+70.1): ** half ① is RUN (1.57x at matched freedom) and its RULE is stated -- the")
+    print("  VERDICT (r6931+70.1): ** half ① is RUN (1.60x at matched freedom) and its RULE is stated -- the")
     print("     same four parameters in each arm.  ⓶'s one-against-six asymmetry is CORRECTED by the corpus")
     print("     (r6625, r6772+66.3, r6811).  The r2708 finding as it stood: **")
     print("  ** half ① is real, unrun, and NOT the banked test — and it owes a RULE first. **")

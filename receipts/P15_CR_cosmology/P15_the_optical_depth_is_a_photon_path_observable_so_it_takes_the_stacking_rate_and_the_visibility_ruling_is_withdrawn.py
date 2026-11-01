@@ -184,11 +184,11 @@ gate("and the instrument flags the pair as two objects on the same side of the r
      "clocks, with nothing stating the choice -- which is the gap `r7095` ordered closed",
      "Two objects on the same side of the rule, given opposite clocks, and nothing states the choice."
      in fsrc)
-gate("⌗ and `P15` reports the one-parameter family and its external referent, `ell_1 = 221.93 + 4.21f`",
-     "$\\ell_1=221.93+4.21f$" in body15
+gate("⌗ and `P15` reports the one-parameter family and its external referent, `ell_1 = 222.02 + 4.26f`",
+     "$\\ell_1=222.02+4.26f$" in body15
      and "The peak positions are the only one of the three readings with an external referent"
      in body15)
-gate("⌗ and that the sky's own value lies OUTSIDE that family, at `f = -0.304`, on the far side of the "
+gate("⌗ and that the sky's own value lies OUTSIDE that family, at `f = -0.125`, on the far side of the "
      "clock the transfer uses -- so the family was never going to settle it",
 # ⬭⬭ r7255+cc66.172 WIDTH RE-CUT PERFORMED, family Ⓑ.  The pin asserted a whole SENTENCE to
 #   carry a claim that is a VALUE paired with its anchor.  ** The pattern now reads the value and
@@ -196,7 +196,7 @@ gate("⌗ and that the sky's own value lies OUTSIDE that family, at `f = -0.304`
 #   ⌗ Here BOTH halves are values, so the window carries no prose at all: `$0.7312$` and
 #     `$f=-0.304$` are each unique in the corpus and the claim is their PAIRING.  Fully
 #     reword-immune.  One match, verified before performing.
-     re.search(r'\$0\.7312\$.{0,60}?\$f=-0\.304\$', body15) is not None)
+     re.search(r'\$0\.7312\$.{0,60}?\$f=-0\.125\$', body15) is not None)
 
 # ===================================================== B. the narrowing
 head("B.  ⛭⛭ THE NARROWING: `tau'` IS THE SAME EXPRESSION IN BOTH CLOCKS, SO ONLY `t(a)` IS AT ISSUE")
@@ -409,7 +409,8 @@ gate("⇒ and the falsifier is stated: exhibit a photon-path observable this con
      "_POLC" in fsrc and "R^2/(1+R)" in fsrc.replace('_Rg ** 2 / (1 + _Rg)', 'R^2/(1+R)'))
 
 # --- the pinned assertions: against the figures the paper prints ------------------------------------
-assert "$\\ell_1=221.93+4.21f$" in body15, "the family's slope must be the paper's"
+# ⛭ r7649 (69): the arm-of-record landing moved the family to 222.02 + 4.26f and the sky to f = -0.125.
+assert "$\\ell_1=222.02+4.26f$" in body15, "the family's slope must be the paper's"
 assert abs(AS_IS[2] - 1089.0) < 12.0, f'last scattering near z_rec = 1089.9, got {AS_IS[2]:.1f}'
 assert 0.001 < abs(RULED[2] / AS_IS[2] - 1.0) < 0.02, 'the surviving correction is sub-two-per-cent'
 assert sp.simplify(taup_stack - Ga * a_ / c_) == 0, "tau' = Gamma a / c in either clock"

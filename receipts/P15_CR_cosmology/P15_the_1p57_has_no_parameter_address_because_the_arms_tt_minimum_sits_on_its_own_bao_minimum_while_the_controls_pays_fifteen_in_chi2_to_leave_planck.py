@@ -589,7 +589,7 @@ print(BAR)
 P15TEX = os.path.join(ROOT, 'corpus', 'CR_cosmology.tex')
 _TEX = open(P15TEX, encoding='utf-8').read()
 PAT = {
-    'pct': r"moves by \$([0-9.]+)\\%\$ and its matter density by \$([0-9.]+)\\%\$",
+    'pct': r"moves by \$([0-9.]+)\\%\$[^$]*?and its matter density by \$([0-9.]+)\\%\$",
     'sig': r"sits \$([0-9.]+)\$ of a standard deviation from",
     'chi': r"at a cost of \$([0-9.]+)\$ in \$\\chi\^\{2\}\$",
     'ns': r"arm prefers \$([0-9.]+)\$ against the control's \$([0-9.]+)\$, bluer by \$([0-9.]+)\$",
@@ -617,24 +617,22 @@ if all(CAP.values()):
     for k, (p, m) in _cmp.items():
         print(f"      {k:10s} {p:10.6f} {m:16.6f} {abs(p - m):12.6f}"
               f"{'   AGREES' if abs(p - m) <= 5e-4 else ''}")
-    _AGREE = sorted(k for k, (p, m) in _cmp.items() if abs(p - m) <= 5e-4)
-    _OUT = sorted(k for k, (p, m) in _cmp.items() if abs(p - m) > 5e-4)
-    check("⛔⛔ ** EVERY ARM-SIDE FIGURE `sec:refit-bound` PRINTS FOR THIS COMPARISON IS THE "
-          f"NAMESAKE ARM'S, AND ONLY THE CONTROL'S TILT SURVIVES THE RE-POINT: ** out = {_OUT}, "
-          f"agreeing = {_AGREE}.  *The paper's `0.031` per cent in `Omega_m` is the one that moves "
-          f"furthest -- {_pO:.3f} per cent on the arm of record, sixty-six times it -- and its "
-          f"`0.046 sigma` / `+0.010` pair becomes {abs(A['d_wm']):.4f} / {A['dchi2']:+.4f}.  The "
-          "control's tilt is untouched because the re-point does not reach the control, which is "
-          "the same partition `cc66.70`'s caption audit found on the figure bank.*",
-          _AGREE == ['ns_ctl']
-          and _OUT == ['H0_pct', 'Om_pct', 'bluer', 'chi2', 'ns_arm', 'sigma']
+    # ** r7649 (69): THE LANDING HAPPENED, so this part now asserts the landed state. **  The
+    #   tolerance is half a unit in each figure's own last printed digit (the figures_pinned rule), read
+    #   off the captured string, so a figure printed to fewer digits is held to what it prints.
+    def _half(txt):
+        return 0.5 * 10 ** -(len(txt.split('.')[1]) if '.' in txt else 0)
+    _TXT = {'H0_pct': CAP['pct'].group(1), 'Om_pct': CAP['pct'].group(2), 'sigma': CAP['sig'].group(1),
+            'chi2': CAP['chi'].group(1), 'ns_arm': CAP['ns'].group(1), 'ns_ctl': CAP['ns'].group(2),
+            'bluer': CAP['ns'].group(3)}
+    _AGREE = sorted(k for k, (p, m) in _cmp.items() if abs(p - m) <= _half(_TXT[k]) + 1e-12)
+    _OUT = sorted(k for k, (p, m) in _cmp.items() if abs(p - m) > _half(_TXT[k]) + 1e-12)
+    check("✔ ** EVERY FIGURE `sec:refit-bound` PRINTS FOR THIS COMPARISON IS THE ARM OF RECORD'S, TO "
+          f"ITS OWN PRINTED DIGITS (r7649 landing): ** agreeing = {_AGREE}, out = {_OUT}; the matter "
+          f"density moves {_pO:.3f} per cent and the expansion rate {_pH:.4f}",
+          _OUT == [] and len(_AGREE) == 7
           and 0.0426 < _pH < 0.0428 and 2.035 < _pO < 2.038
           and 0.0607 < (_nsA - _nsC) < 0.0609)
-    check("⌗ and the paper's two printed per-cent figures are the NAMESAKE arm's to three decimals, "
-          "so this is a re-point and not a disagreement: the namesake moves `H0` by 0.0276 and "
-          "`Omega_m` by 0.0306 per cent, which round to the printed 0.028 and 0.031",
-          abs(abs(68.5811 / 68.6 - 1) * 100 - _cmp['H0_pct'][0]) < 5e-4
-          and abs(abs(0.297209 / 0.2973 - 1) * 100 - _cmp['Om_pct'][0]) < 5e-4)
 
 # =================================================================================================
 print()
@@ -651,7 +649,7 @@ print(f"    sits {A['d_wm']:+.4f} sigma from its own BAO minimum in $\\omega_m$ 
 print("    in $\\chi^2$ at it -- INSIDE the constraint's own width, half a unit on thirteen")
 print("    measurements -- so the residual is still not a displacement of the matter density.")
 print("  ⛔ ** But it no longer sits ON that minimum, and the file's name says it does. **  The")
-print("    namesake arm sat $-0.046\\sigma$ out and paid the $+0.010$ the paper prints; this one")
+print("    namesake arm sat $-0.046\\sigma$ out and paid the $+0.010$ the paper printed before r7649; this one")
 print("    is fifteen and fifty-two times that, and moves $\\Omega_m$ by $2.04$ per cent where it moved")
 print("    it by under a thirtieth of one -- the third appearance of that split today.")
 print(f"  ⛔ ** And the calibration SPLITS BY VARIABLE: ** in $\\omega_m$ the arm is "

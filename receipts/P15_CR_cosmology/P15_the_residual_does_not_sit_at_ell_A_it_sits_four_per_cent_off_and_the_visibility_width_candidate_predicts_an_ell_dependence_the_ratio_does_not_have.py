@@ -161,7 +161,8 @@ PAT = {
     'nbins': (r"Over \$?([0-9]+)\$?\s*\n?bins on \$?[0-9]+\\le\\ell\\le[0-9]+\$?", 1),
     'arm_fold': (r"amplitude\s*\$([0-9.]+)\\pm([0-9.]+)\$[^$]*\$([0-9.]+)\\sigma\$", 3),
     'ctrl_fold': (r"against the control's \$?([0-9.]+)\\pm([0-9.]+)\$?", 2),
-    'refit_fold': (r"halves it to \$?([0-9.]+)\\pm([0-9.]+)\$? and leaves \$?([0-9.]+)\\sigma\$?", 3),
+    # ⛭ r7649 (69): the landed caption says the refit LEAVES the amplitude, not that it halves it
+    'refit_fold': (r"almost where it was, \$?([0-9.]+)\\pm([0-9.]+)\$?, and the detection\s+slightly firmer at \$?([0-9.]+)\\sigma\$?", 3),
 }
 CAUGHT = {}
 for key, (rx, n) in PAT.items():
@@ -199,45 +200,30 @@ for k in PAT:
           f"{'within its own printed precision' if WORST[k] <= 0 else 'OUT BY ' + str(max(dif))}")
 _AGREE = sorted(k for k, v in WORST.items() if v <= 0)
 _OUT = sorted(k for k, v in WORST.items() if v > 0)
-# ⛔⛔⛔ r7645+cc66.70: ** AND NOW THERE IS A DEFECT TO NAME, BECAUSE THE FIGURE MOVED AND THE
-#   CAPTION DID NOT. **  *`cc66.67` re-pointed `fig:acoustic-nofit` onto the arm of record and
-#   regenerated its banked array; the caption is node 69's prose and still prints the NAMESAKE arm's
-#   figures.  This check was written to say "the caption agrees", and the honest reading now is that
-#   four of its six capture groups do not.*
-#   ⇒ *** AND THE PARTITION IS THE USEFUL PART: the BIN COUNT and the CONTROL's fold still agree,
-#       which is the bank's own statement that the re-point did not touch the control -- so the
-#       staleness is localised to exactly the four ARM-side figures and is not a regeneration
-#       artefact. ***
-#   ⌗ *This check is pinned BOTH WAYS and will fail when 69 lands the caption, which is correct:
-#   this receipt is the gated form of that landing row and should notice it being landed.  Routed in
-#   `FOR_69.md` with the figures.*
-check("Ⓐ②  ⛔⛔ ** AND FOUR OF THE SIX NO LONGER AGREE, because cc66.67 moved the figure "
-      "and the caption is still the namesake arm's: the per-bin trio 1.13/3.00/2.66 against the "
-      "bank's 1.1286/2.6487/2.3469, the refit pair 0.99/1.58 against 0.9937/1.6028, the arm's fold "
-      "1.37+-0.15 at 9.1 against 0.9522+-0.1576 at 6.043, and the refit fold 0.81+-0.12 at 6.9 "
-      "against 0.8331+-0.1187 at 7.019. **  ⇒ *AND THE BIN COUNT AND THE CONTROL's FOLD DO STILL "
-      "AGREE -- 179 bins, and 0.20+-0.11 against 0.2028+-0.1126 -- which is the bank's own statement "
-      "that the re-point did not reach the control, so the staleness is the four ARM figures and not "
-      "the regeneration*",
-      _AGREE == ['ctrl_fold', 'nbins']
-      and _OUT == ['arm_fold', 'per_bin', 'refit_fold', 'refit_pb']
-      and abs(WORST['arm_fold'] - 3.007099) < 5e-5
-      and abs(WORST['per_bin'] - 0.308068) < 5e-5
-      and abs(WORST['refit_fold'] - 0.069416) < 5e-5
-      and abs(WORST['refit_pb'] - 0.017760) < 5e-5)
+# ⛭ r7649 (69): ** THE CAPTION IS LANDED, AND THIS CHECK -- pinned both ways at r7645+cc66.70 so that
+#   it would notice the landing -- now asserts the landed state: all six capture groups agree with
+#   the figure's own banked array to their printed precision. **  The arm's fold is 0.95+-0.16 at
+#   6.0 sigma and the refit's 0.83+-0.12 at 7.0, so the refit LEAVES the modulation where it was
+#   (the namesake's 1.37 -> 0.81 "halving" was the other arm's).
+check("Ⓐ②  ✔ ** ALL SIX AGREE: the caption prints the arm of record's figures **, the per-bin trio "
+      "1.13/2.65/2.35 against the bank's 1.1286/2.6487/2.3469, the refit pair 0.99/1.60 against "
+      "0.9937/1.6028, the arm's fold 0.95+-0.16 at 6.0 against 0.9522+-0.1576 at 6.043, the refit "
+      "fold 0.83+-0.12 at 7.0 against 0.8331+-0.1187 at 7.019, and the bin count and the control's "
+      "fold unchanged -- 179 bins, and 0.20+-0.11 against 0.2028+-0.1126",
+      _OUT == [] and len(_AGREE) == 6)
 
 _a, _e, _s = CAUGHT['refit_fold']
 print(f"      ⌗ and the captured {_a}/{_e} = {_a / _e:.2f} against the captured {_s}")
 print(f"        while the banked {BANK['refit_fold'][0]:.4f}/{BANK['refit_fold'][1]:.4f} = "
       f"{BANK['refit_fold'][0] / BANK['refit_fold'][1]:.3f}")
 check("Ⓐ③  ⛔ MUST-COME-BACK-WRONG, on values this receipt captured and not on anything attributed: "
-      "dividing the captured amplitude by the captured error gives 6.75 against the captured 6.9, "
-      "while the banked unrounded pair gives 6.888.  ** A check built on a printed number's own "
+      "dividing the captured amplitude by the captured error gives 6.92 against the captured 7.0, "
+      "while the banked unrounded pair gives 7.019.  ** A check built on a printed number's own "
       "rounded inputs reports a defect where there is none -- the shortcut is what fails, not the "
       "caption **",
       # ⛭ r7645+cc66.70: the two CAPTURED numbers are unchanged (the caption has not moved);
       #   the BANKED pair has, 6.888 -> 7.019, so the point stands on a new third value.
-      abs(_a / _e - 6.75) < 0.01 and abs(_s - 6.9) < 0.01
+      abs(_a / _e - 6.9167) < 0.01 and abs(_s - 7.0) < 0.01
       and abs(BANK['refit_fold'][0] / BANK['refit_fold'][1] - 7.019416) < 5e-5)
 
 # the layout is checked against THIS SEAT'S OWN generator, which it owns -- not against the

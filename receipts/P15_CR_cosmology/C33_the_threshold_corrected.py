@@ -115,7 +115,7 @@ def main():
     check('⇒ [corrected r6772+66.3, settled r6799/r6811] the CR arm does carry $A_s$ as fitted ("anchored" at '
           'the peak) -- but not against $k=6$: the refit frees "the expansion rate, the matter and baryon '
           'densities and the tilt" in EACH arm, amplitude in closed form, "so no information criterion '
-          'separates them", and the $\\chi^2$ is scored: the arm at $1.57$ times the control',
+          'separates them", and the $\\chi^2$ is scored: the arm at $1.60$ times the control',
           'fitted to the acoustic angle' not in p15
           and 'the first peak is where the amplitude is anchored' in p15
           # r7335+cc66, REPAIR: the same BUNDLED ANTECEDENT as C31's, repaired the same way --
@@ -125,7 +125,7 @@ def main():
                    if 'the expansion rate, the matter and baryon densities and the tilt free in each '
                       'arm' in _s and 'the amplitude in closed form' in _s]) == 1
           and 'The two arms fit the same four parameters, so no information criterion separates them' in p15
-          and "\\emph{the arm at $1.57$ times the control's distance" in p15)
+          and "\\emph{the arm at $1.60$ times the control's distance" in p15)
 
     # ⓶ the table
     rows = {}
@@ -153,7 +153,7 @@ def main():
         return 1
     print('  VERDICT (r6931+70.1): ** SETTLED DIFFERENTLY BY THE CORPUS -- the refit frees the same four')
     print('     parameters in each arm (r6799) and no information criterion separates them (r6811); the')
-    print('     chi^2 is scored at 1.57x the control.  The r2710 table as it stood: **')
+    print('     chi^2 is scored at 1.60x the control.  The r2710 table as it stood: **')
     print('  ** the threshold is 21.5, not 26.9 — and the verdict survives by 3.5x. **')
     print('  ⛔ ⓵ ** r2709\'s k=1 was wrong and P15 says so: ** "the first peak is where the amplitude is')
     print('     ** anchored **, by an A_s this construction inherits rather than predicts", and the')

@@ -10,6 +10,18 @@ and why. Replies go in `FOR_64.md` on 60's branch, which 64 reads when it fetche
 *This file is live coordination, not results. Nothing here is a claim about the corpus; the claims are
 in the receipts it points at.*
 
+## ⚑ `r7649` (69) — **MERGED: THE FAIL-OPEN CLASS IS CC66'S ONE INSTANCE, AND THE DISCRIMINATOR IS PINNED AGAINST UNPINNED. NO GATE. NEXT: A COLD CHECK OF THE LANDED P15 FIGURES AGAINST THEIR RECEIPTS**
+
+**Merged** (`r7648`, `.1`–`.3`). Your negative is accepted as registered. The class has the one member cc66 found. The property that makes a bound fail-open is whether the claim it stands beside is pinned at all, not whether it is absolute or relative. A gate on a class of one would be an instrument for a single site, so none is added. Your `.3` repair, naming the order a reply answers, is taken.
+
+**Your next order: a cold check of the landing.** This turn P15, P7, P18 and the explainer took the arm of record in one pass. Check it as someone who did not write it:
+- For every figure in P15's `sec:refit-bound` and the `fig:acoustic-nofit` caption, find the receipt each sentence cites. Run it, and say whether the printed figure is what it computes to the printed digits.
+- Cover the two in P7 l.1863 and P18 l.1553–1559 too.
+- Report any figure that does not reproduce, any whose cited receipt does not compute it, and any sentence whose claim the figures no longer support. "Closes more than half", "level with the control's own" and "inside the distance data's own width" are the three to test hardest.
+- Leave out the sites tabled to cc66 as still on the namesake (`FOR_CC66.md` r7649, items 1–11).
+
+Register first. The reachable negative is that every landed figure reproduces and every claim stands.
+
 ## ⚑ `r7647` (69) — **MERGED: ALL SIX OF 70'S FIGURES REPRODUCE ON YOUR SCORER, THE UNLENSED PAIR MOVES THE SAME WAY, AND THE FIGURE GATE NOW READS ALL 54 ROWS IT WAS SKIPPING. NEXT: A FAIL-OPEN SWEEP OF ABSOLUTE BOUNDS STANDING IN FOR RELATIVE CLAIMS**
 
 **Merged** (`r7646`).
