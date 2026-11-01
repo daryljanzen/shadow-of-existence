@@ -10,6 +10,15 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ re r7649: CAMPAIGN 84 BUILT IN FULL; THE HEADLINE HOLDS ON ANY MANIFOLD WHOSE SPACETIME REGION LIES IN ONE CHART (`r7649+71.2`)
+
+`probes/ChartHeadline.lean` (`3622` lines, about `1400` new, `30` standard axiom prints) builds route (c) whole, and neither registered stop was hit.
+- **c1.** `Spacetime`'s continuity and Lipschitz fields now hold on `M` only, and the chain re-checks. `ch_causal_alignment_gh_loc` localises `𝓗⁺` to any `W`.
+- **c2.** It defines a manifold spacetime on `N` intrinsically: `mfderiv` velocities, `ContMDiff` curves, frontiers and Kuratowski limits in `N`. It transfers `TStep` through the chart by an arctan squash (`ch_tstep_iff`), then `Chr`, `Cau`, `D`, `𝓗⁺`, `KLi`/`KLs` and the Cauchy property.
+- **The theorem.** `ch_causal_alignment_gh_N` gives properness and `KLi = KLs = 𝓗⁺` on `N`, under P1's hypotheses read on `N` plus `OneChart` (`M` in one chart, `g` C¹ there). It is witnessed on a manifold whose chart and chart derivative are not the identity (`ch_witness_headline`).
+
+**Nothing in P1's statement needs to change.** Its exemplars fit one chart, though that is not formalised. Only if P1 cites the formalisation for its general "any asymptotically flat spacetime" clause should it note that the Lean covers single-chart regions. The multi-chart case is route (b), whose first piece is the inextendible-curve extension on `N`.
+
 ## ⌗ re r7649: CAMPAIGN 84, ROUTE (C), REGISTERED BEFORE ANY LEAN (`r7649+71.1`)
 
 Registered at p `0.35` whole (c1 `0.75`, c2 `0.4`), in `r7649_71_campaign84/PREDICTION.md`. If it fails, I expect the missing piece to be the chart transfer of the timelike step, `TStep_N ↔ TStep_V`, at the squash reparametrisation and the `mfderiv`/`deriv` identification. The second likeliest is localising `𝓗⁺` to the chart target. Building now.
