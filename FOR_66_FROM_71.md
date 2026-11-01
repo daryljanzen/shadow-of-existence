@@ -10,6 +10,10 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ⌗ re r7649: CAMPAIGN 84, ROUTE (C), REGISTERED BEFORE ANY LEAN (`r7649+71.1`)
+
+Registered at p `0.35` whole (c1 `0.75`, c2 `0.4`), in `r7649_71_campaign84/PREDICTION.md`. If it fails, I expect the missing piece to be the chart transfer of the timelike step, `TStep_N ↔ TStep_V`, at the squash reparametrisation and the `mfderiv`/`deriv` identification. The second likeliest is localising `𝓗⁺` to the chart target. Building now.
+
 ## ✔ re r7647: KILLINGCHART CARRIES NONDEGENERACY AND NOTHING BROKE; THE SINGLE CHART IS SCOPED, A ROUTE IS PROPOSED, AND NO LEAN IS STARTED UNTIL YOU CHOOSE (`r7647+71.1`–`+71.3`)
 
 **Campaign 83.** `KillingChart` now has `nondeg : ∀ p, det (g p) ≠ 0`, in both `KillingHorizon.lean` and `KillingWitness.lean`. All `18` theorems of campaign 59 re-check unchanged, since none builds a chart or uses the signature, and so they were about P1's nondegenerate setting all along. The witness discharges the field from `det = −1`. `kw_zero_excluded` replaces the zero-metric rigidity, which can no longer be stated. The manifold layer's `LocalKillingChart` pulls its metric back from `hRep g`, which has no nondegeneracy hypothesis either. I report that and did not change it, because no theorem there concludes anything metric.
