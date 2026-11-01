@@ -31698,3 +31698,24 @@ NEVER PROBED (tolerance): 30 of the 40 in scope -- the run did not reach them,
 Everything above that line passed — 0 hollow assertions across 1140 receipts, 0 assertion debt, and the 21 declared UNRUNNABLE still import what they declare. **And the red cannot be mine to clear:** `--how` prints that the repair is `scripts/run_all_receipts.py --jobs 4 --timeout 600` writing `receipts/RUN_RESULT.txt`, which is the NIGHTLY HEAVY TIER's own job — `gates.yml:253` asks `check_receipts_run` inside the `receipts` job ("heavy — every receipt run where it is registered"), *after* that same job regenerates the cache, 97.8 minutes of it. So the gate is never red in CI for a stale cache, the committed `RUN_RESULT.txt` is 70's (last banked at `r6961+70.3`), and running the full suite locally is on the standing cycle's own do-not-run list. ⇒ **Nothing to fix and nothing to commit for it**, and that is a fact about where the cache is banked rather than a judgement about the tree.
 
 ⇒ So the whole pre-push set for `r7651` is accounted for: `turn_gates.sh` **123/123**, the four gates it excludes by name all green (`check_figures_pinned` 1485/1485, `check_quote_pins` 2767/2767, `check_marker_transposition`, `check_unread_figure`), and the ranged reader sweep **112/112 and 36/37** with the thirty-seventh unreachable from here.
+
+### ⛭⛭ `r7651+cc66.101` — AND THE WHOLE SCOPED TIER IS GREEN ON `671469858`. THE THREE REDS WERE ALL STARVED OR SUPERSEDED RUNS, AND THE RUN THAT FINISHED PROVES IT
+
+Closing the CI ledger for this order. Three reds arrived; none was a contradiction, and the first run of this turn that actually *completed* passes every one of them.
+
+| job (run 41287845915, head `671469858`) | |
+|---|---|
+| `fast — registers, views, IDs` | **success** |
+| `scoped — the plain suite, on what this push can have changed` | **success** (on one re-run) |
+| `scoped — the tolerance perturbation, the scope this push can have moved` | **success** |
+| `scoped — the tolerance perturbation, on code and data this push changed` | **success** |
+| `scoped — tolerance probe, build A / B / C` | **success** ×3 |
+| `scoped — the runner-read sweep, on what this push deleted or renamed` | **success** |
+
+**⒜ The tolerance red on `bc704729a`** — `0 named red, 30 NEVER PROBED` after 81 minutes in the `PO-68` ledger read (`cc66.99`).
+
+**⒝ The tolerance red on `2c05f43ce`** — `ran 30, 0 named red, 7 NEVER PROBED; +0 carried, **23 cleared by a green**, 7 still red`. ⛭ *That run cleared, by name, all nine P15 receipts `cc66.99` could only vouch for from local runs* — so CI confirmed the stand-down independently rather than on my word. One of mine was probed directly and passed with **839× headroom** (`err_a 6.2e-15`, `err_b 3.6e-15`, `tol 5.2e-12`). The job still exited 2 for one receipt that is not mine: `S51_the_queue_closes_whole…` returned `B rc=missing`, so the sweep declined to call itself a sweep — correctly. Zero sites flagged.
+
+**⒞ The plain-suite red on `671469858`, the only one on a live head** — `…P15_the_four_dimensional_treatment…` **exceeded 900s** and recorded `unrecorded -> []`, so it asserted nothing. ⛔ *And it is not slow: timed on this tree it is **12.9 seconds** against a 900-second budget, a factor of seventy — that run was starved, not stretched.* The suite scoped it because it reads `corpus/CR_cosmology.tex`, which is the one file of its reads my push could have touched, so I checked rather than assumed: `git log --name-only origin/main..HEAD -- corpus/CR_cosmology.tex` is **empty** and `cmp` against `origin/main` is **byte-identical**. ⌗ *That also confirms the three perturbations of that file I made this turn while testing `PART 3B`'s disjunction arms all reverted cleanly — worth having proved rather than trusted.* The receipt landed at `r7170` and is not mine. **One re-run spent, the first on this PR, and it came back green.**
+
+⇒ **The pattern across all three is the same and worth naming:** every red was an *absence of measurement* that the instrument itself labelled as such — `NEVER PROBED`, `unrecorded -> []`, `B rc=missing`, `the run did not reach them, which is NOT a verdict about them` — and in each case the carry's conservative behaviour is right while the job's exit code reads like a contradiction. The standing cycle's rule earned its place three times today: **the red_carry ledger says a receipt HAS been contradicted; it cannot say that THIS red is a contradiction.**
