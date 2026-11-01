@@ -493,6 +493,65 @@ check("Ⓔ①  ⛭⛭⛭ ** AND THE DELIVERABLE: THE `$13\\sigma$` BECOMES `$12.
       and abs(N_CORR / PUB164['n_sigma_drive_phi'] - 1) < 0.08
       and abs(NSKY_CORR / PUB164['n_sigma_sky_phi'] - 1) < 0.08)
 
+# ⛭⛭⛭ r7653 (69's ruling on `r7651` ⓸) -- ** l.2283-2284's THREE FIGURES ARE THIS INTERVAL'S
+#   UNFAVOURABLE END, AND WHAT WAS OWED IS THE PIN. **
+#   *60 could not locate a receipt printing `12.5` or `0.75`, and 69 settled where they come from: the
+#   bootstrap 95 per cent interval on the robust width ratio -- computed in section C above, 400
+#   resamples, `[BLO, BHI]` -- carried across at its UNFAVOURABLE end rather than at its centre.  The
+#   centre, `R_ROB`, is what gives Ⓔ①'s `12.9` and `0.78`; `BLO` is what gives the paper's `12.5` and
+#   `0.75`.  ** Unfavourable means the SMALLER ratio, because the corrected width is `S4 / ratio`: a
+#   smaller ratio widens sigma and weakens the exclusion. **  So the paper quotes the weakest reading its
+#   own interval admits, which is the conservative direction and worth saying.*
+#   ⌗ *And the three figures are READ OUT OF `corpus/CR_cosmology.tex` rather than retyped, because a
+#   receipt that attributes a number to a paper it never opens stays green when the paper moves -- which
+#   `check_unread_figure` reddened this seat for four times before this turn.*
+import re                                                                  # noqa: E402
+
+_TEX2285 = os.path.join(ROOT, 'corpus', 'CR_cosmology.tex')
+_FLAT2285 = re.sub(r'\s+', ' ', open(_TEX2285, encoding='utf-8', errors='replace').read())
+_M2285 = re.search(r"the unfavourable end of that ratio's bootstrap interval, \$([0-9.]+)\$, instead"
+                   r"\s+of at its centre, one full unit of the driving is \$([0-9.]+)\$ standard"
+                   r"\s+deviations and the observed point sits at \$([0-9.]+)\$", _FLAT2285)
+SIG_LO = S4 / BLO
+N_LO = abs(DRIVE[0]) / SIG_LO
+NSKY_LO = abs(DSKY[0]) / SIG_LO
+print(f"      ⇒ and at the interval's UNFAVOURABLE end, {BLO:.4f} against the centre's {R_ROB:.4f}: "
+      f"sigma {SIG_LO:.5f}, one driving unit {N_LO:.2f} sigma, the sky {NSKY_LO:.2f}")
+print(f"        the paper prints, read out of corpus/CR_cosmology.tex: "
+      f"{_M2285.groups() if _M2285 else 'NOT LOCATED'}")
+# ⛔⛭⛭ ** AND THE THIRD FIGURE IS 0.76 AND NOT 0.75, BY ONE HUNDREDTH, FOR A REASON WORTH NAMING. **
+#   *`0.75` is what the PUBLISHED, already-rounded `0.79` gives when multiplied by the ratio:
+#   `0.79 x 0.9531 = 0.7529`.  This receipt's own unrounded sky figure is `0.7923`, and
+#   `0.7923 x 0.9531 = 0.7551`, which prints as `0.76`.*  ⇒ ** So the paper's `0.75` carries a
+#   rounding twice: once in the `0.79` it starts from and once in the product. **  The gate therefore
+#   accepts EITHER -- the figure the paper prints today, or the one the receipt's own arithmetic gives
+#   -- and PRINTS which, because correcting a printed digit is 69's call and not this seat's, while
+#   letting the gate pass on a figure neither route produces is not a choice at all.
+_SKY_FROM_ROUNDED = round(round(NSKY_PRINTED, 2) * BLO, 2)
+_SKY_FROM_EXACT = round(NSKY_LO, 2)
+_SKY_STATE = ('the published 0.79 rounded first' if _M2285 is not None
+              and abs(float(_M2285.group(3)) - _SKY_FROM_ROUNDED) < 5e-3
+              else "this receipt's own unrounded 0.7957" if _M2285 is not None
+              and abs(float(_M2285.group(3)) - _SKY_FROM_EXACT) < 5e-3 else None)
+print(f"        the sky figure at that end is {_SKY_FROM_EXACT:.2f} from this receipt's own "
+      f"{NSKY_PRINTED:.4f} and {_SKY_FROM_ROUNDED:.2f} from the published, already-rounded "
+      f"{round(NSKY_PRINTED, 2):.2f}; the paper prints the second -> {_SKY_STATE}")
+check("Ⓔ③  ⛭⛭⛭ ** AND l.2283-2284's `$0.953$`, `$12.5$` AND `$0.75$` ARE THIS INTERVAL'S UNFAVOURABLE "
+      "END, READ OUT OF THE PAPER AND PINNED HERE. **  *The interval is section C's own bootstrap on "
+      "the robust width ratio, 400 resamples; its low end carried across the four-peak width gives the "
+      "figures the sentence quotes, where its CENTRE gives Ⓔ①'s `12.9` and `0.78`.*  ⇒ *** The sentence "
+      "quotes the WEAKEST reading its own interval admits -- a smaller ratio widens sigma and weakens "
+      "the exclusion -- which is the conservative direction, so `both figures quoted above survive the "
+      "change` is now a statement this receipt carries rather than one the paper makes unaided. ***  "
+      "⛔ *The sky figure is the one hundredth where the two routes differ: 0.75 from the published "
+      "0.79 rounded first, 0.76 from this receipt's own 0.7923.  Both are accepted and which the paper "
+      "is in is PRINTED above, because a printed digit is 69's to correct*",
+      _M2285 is not None
+      and abs(float(_M2285.group(1)) - round(BLO, 3)) < 5e-4
+      and abs(float(_M2285.group(2)) - round(N_LO, 1)) < 5e-2
+      and _SKY_STATE is not None
+      and SIG_LO > SIG_CORR and N_LO < N_CORR and NSKY_LO < NSKY_CORR)
+
 print()
 _ka, _aa = robust(ALA[:, 0][GA4 & np.isfinite(ALA[:, 0])]), robust(ALA[:, 0][np.isfinite(ALA[:, 0])])
 R_ALT = _ka[1] / _aa[1] if np.isfinite(_aa[1]) and _aa[1] > 0 else float('nan')

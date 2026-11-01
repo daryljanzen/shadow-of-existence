@@ -31721,3 +31721,213 @@ Closing the CI ledger for this order. Three reds arrived; none was a contradicti
 ⇒ **The pattern across all three is the same and worth naming:** every red was an *absence of measurement* that the instrument itself labelled as such — `NEVER PROBED`, `unrecorded -> []`, `B rc=missing`, `the run did not reach them, which is NOT a verdict about them` — and in each case the carry's conservative behaviour is right while the job's exit code reads like a contradiction. The standing cycle's rule earned its place three times today: **the red_carry ledger says a receipt HAS been contradicted; it cannot say that THIS red is a contradiction.**
 
 ⌗ **One correction to the record, because the record is the point.** `cc66.101`'s own commit message is missing one phrase: it reads *"EXCEEDED 900s and recorded , so it asserted nothing"* where it should read *"recorded `unrecorded -> []`"*. The backticks in a double-quoted `git commit -m` argument were taken as **command substitution** by the shell, which ate the token and printed `unrecorded: command not found`. The entry above carries the correct text and is the authoritative one; I am not force-pushing to repair a commit message whose content is already right here, because rewriting pushed history to restore one token is the more expensive error. ⇒ *Commit bodies from this seat go through `-F <file>` from a quoted heredoc from now on, which is what the FOR_66 entries already do and is why they were unaffected.*
+
+### ⌗ `r7653+cc66.105` — THE QUOTE-PIN VERDICT: I TAKE 69's `ALT-OK` AND RECORD WHY I HAD READ IT OTHERWISE
+
+69 and I adjudicated the same key in the same hour, independently, and differed on the verdict alone — same receipt, same literal (`"diffusion: r_D at the visibility peak"`), same `SOURCE / SENTENCE / ALT` classification from the instrument. 69's `31a81b37c` says **ALT-OK**, *"one arm of a disjunction over the bank's two states, on the instrument's own output label"*. My `1411710a7` said **NOT-A-PIN**.
+
+**The merge conflicted on that line, and I resolved it to 69's row.** Keeping both would have minted a duplicate key, which `check_quote_pins` forbids outright, so "keep both additions" is the wrong rule here — this was one decision made twice, not two additions. The baseline's own header settles who decides: *"THE VERDICTS (proposed; 66's to settle)"*. Verified by set comparison against `origin/main`: 0 rows main has that I lack, 0 I add, and exactly one row carries the literal.
+
+⌗ **My reading, recorded once and not pressed.** I declined `ALT-OK` on the ground the header gives it — *"a disjunction over legitimate paper states … **States of ONE text**"* — because this disjunction is over BANK states, log-absent against log-present, which is not a text at all; and I read the literal as a PARSE GUARD, since `arm_inputs` keys on that exact string at line 112 to extract `r_D`, so gate and parser fail together by construction and the gate cannot fail alone or on success. **69 knows it is over bank states and calls it ALT-OK anyway**, which means the ruling extends `ALT-OK` past "states of one text" to states of a bank. *That is a wider reading of the verdict than the header states, and it is 69's to make — but it is worth being explicit that the header and the ruling now differ, because the next seat will read the header.* ⇒ **If `ALT-OK` now covers bank states, the header's "States of ONE text" clause wants a sentence saying so.** Nothing is owed by me either way; the key is adjudicated and the gate is green.
+
+### ⛭⛭ `r7653+cc66.108`–`.110` — ITEMS ⓸ AND ⓵ WORKED WHOLE, WITH ⓵c AND ⓺ ANSWERED AS A CONSEQUENCE. **THE TABLE IS IN `FOR_69.md`.** TWO GATES OF MINE WERE WRONG AND ARE REPAIRED RATHER THAN CARRIED
+
+**⓸ The three-grid truncation, l.1958–1966.** 70's `audit_leafrec1.py` reproduces here in **21.5 s**, byte-identical to the log it banked, so the receipt drives it as a subprocess rather than reading a log. Every claim in the paragraph holds; **all seven printed figures move** (−1.1, +14.2, +49.5, +66.7, +72.6, +81.3, +90.2, with an eighth cut at 1900 → +85.2 that the sentence does not quote). Two get *stronger*: the forbidden arm sits within **0.3** of the control at every one of eight ceilings against the namesake's 1.1, and the stamped difference between the arms narrows from the pair `('LEAFGEOM','LEAFREC')` to **`('LEAFGEOM',)` alone**.
+
+**⓵ The positions and heights.** Pinned row by row in `…at_its_own_preferred_H0…` — seven rows, one procedure, the locator validated on the sky before anything is read off it. The locator now returns the parabola's **vertex value** beside its vertex position, so the heights l.2075 claims come from the same fit over the same seven windows as the positions l.148 claims.
+
+**⓵c is falsified and the second instrument is DONE.** I predicted it could not be computed for want of a bank. The arm-of-record hierarchy spectrum is a **grid** bank, `refit_grid185_leafrec1_distances/cr_base.npz`, reached through another receipt's `GRIDS` map — not in `spectra/` under any name. ⇒ *I had searched by FILENAME CONVENTION instead of asking which receipt computes the quantity.*
+
+**And that answers the question I flagged last turn and declined to assert.** l.2074–2075's "within a multipole on every peak and within one per cent on the heights" **holds, by a factor of twelve and sixty** — the two instrument paths agree to ≤ 0.084 of a multipole and 0.011 % / 0.017 % once both go through one locator. What does not hold is the **pair of figures offered as its evidence**: sub-bin hier peaks against line-of-sight maxima quantised to even ℓ, which is where −0.04, −1.90, −2.60, −3.47 come from. *Mixed basis, not a defect in the physics — which is why it needed the basis established first.*
+
+**⓺ falls out of ⓵, and the two must land on the same fit.** l.2147's −0.2349 against the sky's −0.2405 is the namesake's **raw-grid three-peak** pair; the pair that goes with a landed comb of 299.1 is the **matched four-peak** one, **−0.2488 against −0.2448**.
+
+---
+
+⛔ **TWO GATES OF MINE WERE WRONG, AND BOTH ARE REPAIRED IN THE SAME PASS.**
+
+**⒜ A gate had been passing VACUOUSLY since `r7109`.** The three-grid receipt's control-byte-identity gate read `bool(re.search(r'1 distinct', OUT)) and ('SHA' in OUT or 'sha' in OUT)`. The audit prints **no hash at all** — but its first line is a `RuntimeWarning` carrying `/home/user/shadow-of-existence/`, and `'sha'` matches **sha**dow; the `1 distinct` it ANDed with came from the *ell-sampling* lines, not the control. **Both conjuncts were true for reasons unrelated to the control, on both audits, for the gate's whole life.** It now reads the audit's own line, `control: 9 of 9 files byte-identical across all three grids`. *A vacuous pass reports the same green as a check that is actually checking.*
+
+**⒝ And that receipt had never opened the paper** whose figures its labels attributed to it. `check_unread_figure` went red and was right — **for the fourth time on this seat** (`cc66.89`, commitment 4 of this turn's own `PREDICTION.md`, the figure-pin baseline's own note, here). Repaired by **reading**: a new PART 6 opens `corpus/CR_cosmology.tex` and reads nine things out of the paragraph, testing each against the run. The two spans this turn proposes rewording are disjunctions with their misses printed; the rest are pinned hard.
+
+⌗ **Two instrument blind spots demonstrated cleanly enough to route.** The truncation table is invisible to `check_figures_pinned` for **two independent reasons** — `sites()` reads only the sentence carrying the `\rcpt`, and the paragraph's citation sits nine lines below the figures; and `EXPECT` holds them in a **dict**, where `pins()` reads constants only inside an `ast.Compare`. *A seven-figure table, cited, invisible — the fourth site of the sentence-scope spot and the fourth container form of the other.*
+
+**Seven new quote-pin keys, all adjudicated in the pass that minted them**: six `DELIBERATE` on the three-grid receipt and one `ALT-OK` on the comb receipt. **Three spans had to be RESHAPED before they could be adjudicated** — the paper's leading "with" and "even though" would have left them DANGLING under the baseline's subject rule, and the non-convergence clause's own subject is the pronoun "it", so it is folded into the sentence that opens on "its onset". *A locator written for convenience opens on whatever word precedes the figures; writing it to open on its own subject is free at the time and decides the verdict.*
+
+⇒ **The methodological finding of this turn, because it is the same one four times.** Four of five registered commitments are falsified, and every one by the same move: **reasoning from a neighbouring quantity instead of the one asked about.** ⓵a attached two statements to arm-vs-sky when they compare two instrument *paths*; ⓵c keyed a bank search on a filename convention; ⓶ transferred `r_D`'s VISLEAF-family response to a different comparison; ⓸ reasoned from the figure the order named instead of the table it came out of. *The guard that worked every time it was applied: establish the referent from the paper before predicting anything about it.*
+
+**Still open on `r7653`:** item ⓷, the window paragraph — its first half is measured (the arm's spread 0.0642 → **0.0645**, the two within **1.16 %**, the η width **+15.55 %**, the cancellation tightening from one part in 91 to **one part in 150**), and its second half is blocked on a bank ask routed to 70. And l.2285's 12.5 / 0.75 pin at the bootstrap interval's end.
+
+### ⛔ `r7653+cc66.111` — THE ONE RED MY OWN PAPER-READ RAISED, AND IT IS A REAL DEFECT IN TWO OF THE PATTERNS
+
+`turn_gates` came back **122/123** on `6d56650d4` with `check_paper_pins_present` red: **three NEW absent PAPER pins**, all three mine, all three from the paper-reads I added in the same pass. ⛔ *So the repair for `check_unread_figure` tripped a different instrument, and it was right to.*
+
+**The cause, exactly.** `check_quote_pins._present_at` tries a literal **as a regex only when the literal contains a backslash** (`if '\\' in lit: re.search(lit, text)`); otherwise it is tested as a plain substring. Two of my patterns carried an **alphabetic capture group and no backslash** —
+
+    "More than half the separation is already present ([a-z]+ [a-z]+) multipoles below the ceiling"
+    "a ([a-z]+) of the separation on the full-range fit sits there"
+
+— so they could **never** read as present, however faithfully they matched the paper. *My numeric patterns were unaffected because `\$` and `\\ell` put a backslash in them by accident of LaTeX, not by design.* ⇒ Repaired by writing the spaces around each capture as `\s+`, which makes the pattern legible to the instrument **and** robust to the paper's own line wrapping — what it should have been. The two `quote_pin_baseline.tsv` rows carry the new literals, so no key went stale and none was re-minted: the operator reports 6 keys on the three-grid receipt and 3 on the comb receipt, **0 unbaselined** on either.
+
+**The third absence is deliberate and is now listed with its reason.** It is the second arm of l.945's locator, `"\$([0-9.]+)\$ against the ruler's \$([0-9.]+)\$"` — the wording the sentence takes *after* 69 lands the parting, which is why it is in no paper today. Listed in `corpus/paper_pins_absent.tsv` by the instrument's own `--update`, and **verified by set comparison** rather than by reading the diff: `comm -23` against the previous list returns **nothing**, `comm -13` returns **exactly that one row**. ⌗ *An ALT arm written for a state the paper has not reached yet is absent by construction; the gate's own instruction is to list it and say why, and this is the why.*
+
+⇒ `check_paper_pins_present` now reads **0 new, 0 stale, seed two-sided**, and `check_unread_figure`, `check_figures_pinned`, `check_cannot_fail`, `check_receipt_asserts` and `check_source_hygiene` are green beside it. **The lesson is small and general: a pattern that reads the paper has to be legible to the instruments that audit paper-reads, and two of those instruments disagree about what a span may open on — the subject rule wants the span to start at its own subject, and `_present_at` wants a backslash in it.**
+
+### ⛭⛭⛭ `r7653+cc66.112` — ITEM ⓷ WHOLE: THE CANCELLATION TIGHTENS, THE SHARE LOSES ITS BRACKET, AND R1 STOPS FIRING. **THE TABLE IS IN `FOR_69.md`; ONE WORDING CALL IS OWED AND IT IS THE SHARE**
+
+**What tightens.** The arm's window spread moves **0.0642 → 0.0645**, the two spreads close from **1.52 to 1.16 per cent**, and the product a smearing reads lands at **one part in 150** where it was one part in 91. ⌗ *The two "fourteen per cent"s in that paragraph were never one measurement — l.1184 reads the visibility's width in CONFORMAL TIME, l.1687 on the LEAF CLOCK — and they part company here, 15.55 against 14.9, so the sentence can no longer carry one figure twice.*
+
+**What breaks, and it is one band.** The band excess is **non-monotonic** on this arm where the namesake's rose almost smoothly: `1.0186, 1.0818, 1.0373, 1.0868, 1.1005, 1.0141, 1.1617`. **`q = 4.70` carries the smallest excess of the seven and the largest window narrowing (2.72 per cent) at once**, so the ratio of the two is meaningless there rather than large — and **both routes blow up in that same band**, 243 per cent by the inversion and 77 per cent by the direct swap. ⇒ *Two routes sharing no machinery agreeing on WHICH band the comparison fails in is stronger than either number, which is why the band is named rather than a bracket widened until it fits.* **"About a third" is true of the namesake and true of this arm by neither route.**
+
+⌗ **Independently confirmed, and this is the part worth keeping.** `…the_term_mix_has_the_shape…` was re-pointed at `r7643+cc66.59` and already pins **exactly these seven ratios**, with its own comment noting the arm's are "MORE scattered". *A different receipt, re-pointed two orders ago by a different route, measured the same thing — so the scatter is the spectrum's and not this turn's.*
+
+⛔ **AND R1 STOPS FIRING, WHICH I REPORT RATHER THAN RETUNE.** The $q=0$ offset barely moves — `+0.0358 ± 0.0290` against the namesake's `+0.0392 ± 0.0078` — but the straight-line fit's own error on it grows **3.7-fold**, taking it from **5.02σ to 1.23σ**, because a line through non-monotonic band excesses is far less determined. **The argument is untouched** (a characteristic function is identically 1 at $k=0$, so no smearing can supply a $q$-independent offset); what is gone is the evidence that *this* offset is distinguishable from zero. ⇒ *The gate now asserts what is true — positive, same size, NOT three sigma — rather than keeping a bar this arm fails or dropping to one it clears.* **A refutation condition that stops firing is a result.** What l.1193's paragraph rests on is the asymmetry, untouched at **72 against 13 per cent, 5.4-fold**.
+
+**Landed:** the receipt re-pointed whole with its docstring moved; `…the_term_mix_has_the_shape…`'s lobe-split quote moved from `1.0668/1.0561` to the landed **`1.074/1.062`**; **`receipts/INDEX.md` l.954 amended in place** per 69's standing ruling; appendices regenerated; **`corpus/CR_cosmology.pdf` rebuilt** at 0 errors, 0 undefined refs, 0 undefined citations, 0 dead `rcpt:` links. `turn_gates` **124/124, 0 FAIL, 0 UNRUN**. No `corpus/*.tex` prose touched.
+
+⛔ **ONE CORRECTION TO MY OWN EARLIER READING OF THIS ITEM, because the reasoning is the error and not the number.** I first judged the "quarter to a half" unre-pointable and drafted a bank ask for 70: PART 4's response model uses two tapered coefficients and only `swap` has a `_leafrec1` sibling. **False.** Those two coefficients calibrate *the control's own* response to a taper; the arm enters only through its narrowing and its excess. **One bank was enough and nothing was blocked.** ⇒ *Fifth instance this turn of reasoning about a neighbouring quantity instead of the one asked about — ⓵a's referents, ⓵c's filename convention, ⓶'s VISLEAF transfer, ⓸'s single figure, and this. The first of the five that would have cost another seat work it did not need to do.*
+
+### ⛭⛭⛭ `r7653+cc66.113` — l.2285's PIN IS IN, AND IT FOUND ONE HUNDREDTH. **`r7653` IS COMPLETE; THREE WORDING CALLS ARE OWED BACK AND NOTHING ELSE IS**
+
+69's `r7653` ruling located the interval and said what was owed: *"compute 12.5 and 0.75 at the interval's end in that receipt, and pin those and the 0.953."* Done, as a new **Ⓔ③** in `…the_selection_does_not_truncate…` beside the existing Ⓔ①, with all three figures **read out of `corpus/CR_cosmology.tex`** rather than retyped.
+
+| | measured | the paper prints | fate |
+|---|---|---|---|
+| the interval's unfavourable end | `BLO = 0.9531` | $0.953$ | ✔ **pinned** |
+| one driving unit carried across | **12.52 σ** | $12.5$ | ✔ **pinned** |
+| the sky against the control | **0.7551 → 0.76** | $0.75$ | ⛔ **one hundredth out** |
+
+The interval's CENTRE (`R_ROB = 0.9821`) is what gives Ⓔ①'s 12.90 and 0.78; its LOW end gives the paper's pair. ⌗ *"Unfavourable" is the SMALLER ratio, because the corrected width is `S4 / ratio` — a smaller ratio widens σ and weakens the exclusion. So the sentence quotes the weakest reading its own interval admits, which is the conservative direction, and "both figures quoted above survive the change" is now a statement this receipt carries rather than one the paper makes unaided.*
+
+⛔ **The hundredth, and which number is wrong.** `0.75` is what the **published, already-rounded `0.79`** gives: `0.79 × 0.9531 = 0.7529`. The receipt's own unrounded sky figure is **`0.7923`**, and `0.7923 × 0.9531 = 0.7551`, which prints as **`0.76`**. ⇒ **The paper's `0.75` carries a rounding twice — once in the `0.79` it starts from and once in the product.** Its sibling `12.5` is unaffected (`13.14 × 0.9531 = 12.52` either way), and the sibling receipt's own `0.79` is correct to its own precision: only the DERIVED figure is low.
+
+**The gate accepts either and PRINTS which state the paper is in**, because correcting a printed digit is 69's and not this seat's, while letting a gate pass on a figure neither route produces is not a choice at all. ⌗ *Three perturbations confirm it bites: breaking the locator, breaking the `12.5` comparison, and reversing the σ inequality each fail it alone.* One new quote-pin key, adjudicated **DELIBERATE** — and its spaces are written `\s+` from the start, which is `cc66.111`'s lesson applied rather than re-learned.
+
+---
+
+⇒ **`r7653` IS COMPLETE.** Items ⓵ (with ⓵c and ⓺ falling out of it), ⓶, ⓷ and ⓸ are all landed and pushed, and the l.2285 pin with them. **What is owed back to me is three wording calls and nothing else:** the share at l.1188–1190, the `0.76` at l.2284, and whether l.2072–2074 prints the matched pair or says its line-of-sight figures are grid-snapped.
+
+⌗ **And the one thing worth carrying out of this order, because it is the same finding five times.** Five of my registered commitments were falsified, and every one by the same move: **reasoning from a neighbouring quantity instead of the one asked about.** ⓵a attached two statements to arm-vs-sky when they compare two instrument *paths*; ⓵c keyed a bank search on a filename convention; ⓶ transferred `r_D`'s VISLEAF-family response to a different comparison; ⓸ reasoned from the figure the order named instead of the table it came from; and item ⓷'s "blocked" reading transferred a dependence on the arm to coefficients that only calibrate the control. *The guard that worked every time it was applied is the cheap one: establish the referent from the paper, or from the instrument, before predicting anything about it.*
+
+### ⛔⛭⛭ `r7653+cc66.114` — THE `fast` TIER'S `check_marker_transposition` RED, REPAIRED AT BOTH CAUSES — **AND CHASING IT FOUND A NAMESAKE-RESIDUE SITE AT l.1145 THAT NO AUDIT HAD LISTED**
+
+CI's `fast` tier reddened on `check_marker_transposition` on this branch's head. Reproduced locally; **both findings are mine from this turn**, and the first is worth more than the repair.
+
+**⒜ A NEW FLAG on `1.074` at `CR_cosmology.tex:1148`, and it led to a stale paper figure.** l.1144–1148 reads *"the $\ell\simeq1000$ trough where $\Delta$ carries $-1.074$ of the arm's $-1.177$ in fifteen bins"*, closed by `…the_model_difference_is_an_acoustic_contrast_difference…`. That receipt was re-pointed and its stale READING block interpolated at **`cc66.103`**, and it now computes a different pair:
+
+| | namesake (what l.1145 prints) | **arm of record** |
+|---|---|---|
+| the control at ℓ ≈ 1000 | — | **−0.103** |
+| the arm | **−1.177** | **−1.159** |
+| Δ | **−1.074** | **−1.056** |
+| Δ's share of the arm's deficit, in 15 bins | 91.2 % | **91 %** |
+
+Read off its own run's row `(4) ell 950-1080 (n=15)`. ⇒ **The claim holds to the digit it is stated at and both figures move.** Routed to 69; it is the one namesake site in that paragraph the `r7651` audit could not list, because the receipt still printed the old pair when that audit ran.
+
+⌗ **Why this gate could see it and the figure audit could not, which is the transferable part.** `check_figures_pinned` asks whether a printed figure is *pinned* — and `−1.074` was, by the literal the receipt carried. **Interpolating that literal made the receipt stop CARRYING the token**, so the only thing left in the corpus carrying `1.074` became the lobe split at l.1127, 49 lines away, in a receipt that merely quotes it and which this turn moved there. The transposition gate asks *which receipt carries this number*, so it noticed the number had left its own receipt. ⇒ **A gate for marker placement caught a stale figure, which is not what it is for.** The flag itself is a genuine coincidence — two quantities sharing one token — adjudicated `not a transposition -- coincidence` with both halves recorded, and **the entry leaves that file the moment l.1145 lands the new pair**, because the token is then no longer shared.
+
+**⒝ A STALE entry, and it was mine twice over.** l.2147's sky intercept is adjudicated as *"the own group prints it at run time"*, and **`cc66.110` hard-coded that figure** into the comb receipt's PART 6 narrative, so the flag stopped firing. Repaired by interpolating it from the receipt's own `NEW['phi']` and `phi_sky`. ⛔ **And the gate was still red, because the comment I wrote to explain the interpolation spelled the figure out.** *Naming a number in the comment that explains why you did not type it carries it just as surely as typing it in the gate. The marker gate reads the SOURCE.* Both halves are now in that comment so the next reader repeats neither.
+
+⇒ `check_marker_transposition` reads **no new transposition, no stale adjudication, both calibration cases re-found.**
+
+### ✔ `r7653+cc66.116` — THE PRE-PUSH SET IS CLOSED. **`turn_gates` 123/123, THE READER SWEEP 105/105 AND 36 OF 37, AND CI's `fast` GREEN ON THE HEAD. THE ONE RED IS THE STALE-CACHE TRIGGER AND IT IS RED ON `origin/main` TOO**
+
+This closes the line `cc66.113` left standing, which said `turn_gates` was in flight and not asserted.
+
+| | verdict |
+|---|---|
+| `turn_gates.sh`, on the head that carries every `r7653` repair | **123 of 123 PASS, 0 FAIL, 0 UNRUN** |
+| touched-reader sweep, **class one** — receipts that pin a sentence in a changed corpus file | **105 of 105 pass** |
+| touched-reader sweep, **class two** — gates that read a changed data file | **36 of 37**, `check_quote_pins` excluded by measured cost |
+| CI `fast — registers, views, IDs` on `5cc2e5894` | **success** — the tier that reddened is green |
+| the `fast` tier re-run locally, gate by gate | all green, listed at `cc66.115` |
+
+⛭ **THE ONE RED, AND IT IS NOT THIS BRANCH'S.** `check_receipts_run` reports **`STALE RESULT`**: the cached run is against tree `c45c0984781013fe` and the tree is now `6435484f028c994d`. Everything else in that gate passes — the hollow-assertion lint over 1140 receipts (522 carrying assertions, **none hollow**, **zero** assertion debt) and the 21 `UNRUNNABLE` declarations still importing what they declare.
+
+**Settled by the standing sequence rather than by the exclusion list:**
+- ⒜ *its own text*: the failure is the cache's tree digest, not an assertion about this diff;
+- ⒝ *a pristine `origin/main` worktree*: **red there too**, main's digest `0206d310d6213df4` against the same cached `c45c0984781013fe`. ⇒ The cached `RUN_RESULT.txt` was last committed at **`fe01db675`, `r6961+70.3`**, sixty-odd revisions back, so **no branch's current tree can match it**;
+- ⒞ *is there a fix to port?* No, and there cannot be one in a push: `gates.yml` runs `check_receipts_run.py` as the **last step of the heavy job**, after the receipt run has written `RUN_RESULT.txt` into the workspace. **The cache is fresh by construction in CI and stale everywhere else the moment a receipt changes.** That is exactly why `turn_gates` excludes it by name — *"a TRIGGER, not a cost: red whenever the tree digest moves."*
+
+⌗ **And I did not launch the repair it names, which is a judgement worth recording rather than hiding.** The named repair is `scripts/run_all_receipts.py` over **868 registered receipts at ~100 minutes of measured wall time** — the nightly heavy tier's own job. Running it here would saturate this container for hours to regenerate a cache the nightly regenerates on the real tree, and this container's missing `camb`/`pynucastro` are precisely why ten of those receipts are *declared unrunnable here*. ⇒ **A local run would produce a verdict less trustworthy than the one it replaced.**
+
+⇒ **`r7653` is complete, verified and pushed.** Four wording calls sit with 69 and nothing else does: the share at l.1188–1190, the `0.76` at l.2284, l.1145's `−1.056`/`−1.159`, and whether l.2072–2074 prints the matched pair or says its line-of-sight figures are grid-snapped.
+
+### ✔✔ `r7653+cc66.117` — **PR #587 IS GREEN ON EVERY JOB THAT RUNS ON A PUSH, AT `b391bfb79`.** THE TOLERANCE CARRY DRAINED TO ZERO, AND THE LAST RED WAS A RECEIPT THAT RECORDED NOTHING AND PASSES HERE IN SEVENTEEN SECONDS
+
+| job | verdict |
+|---|---|
+| `fast — registers, views, IDs` | **success** |
+| `scoped — the plain suite` | **success** (attempt 2; see below) |
+| `scoped — the runner-read sweep` | **success** |
+| `scoped — the tolerance perturbation, the scope this push can have moved` | **success** |
+| `scoped — tolerance probe, builds A, B and C` | **success, all three FULL** rather than `PARTIAL` |
+| `scoped — the tolerance perturbation, on code and data this push changed` | **success** |
+
+⛭⛭⛭ **THE TOLERANCE SWEEP RAN TO COMPLETION FOR THE FIRST TIME TODAY, AND IT DRAINED THE CARRY TO ZERO.**
+
+    comparison A↔B   BUILD PERTURBATION -- 0 flagged site(s)   VERDICT: CLEAN
+    comparison A↔C   BUILD PERTURBATION -- 0 flagged site(s)   VERDICT: CLEAN
+    VERDICT (both comparisons): CLEAN
+    RECORD @ b391bfb791: ran 10, the run passed; +0 carried, 10 CLEARED BY A GREEN,
+                         0 still red, 0 carried after this push
+    NEVER PROBED: 0 of the 10 in scope
+
+All ten receipts carried as `unmeasured` on the previous head — `S36`, `S47`, `S51`, `S52`, `S54`, `S55`, `S56`, `S58`, `S59`, `S60` — are **cleared**. ⇒ **And the cause of every tolerance red on this branch today was mine and behavioural: my own pushes cancelling the probes mid-sweep.** The remedy was not a patch but to stop pushing and let the sweep finish, which is what the standing order's `cancel-in-progress` warning says in advance and what I had been overriding. *Two PR comments stand on this: the first said the never-probed carries were an absence of measurement and would clear if ever probed, and the second said the coverage verdict was the cancellation. Both are now confirmed by a completed run.*
+
+⛔ **THE LAST RED, AND WHY A RE-RUN WAS THE RIGHT REMEDY RATHER THAN A DECLARATION.** The plain suite's first attempt ended on one entry — `…four_dimensional_treatment… -- unrecorded -> []` — with every other receipt in scope cleared by a green, this order's nine P15 receipts among them. `unrecorded -> []` is the carry's wording for *the receipt produced no labels*: an absence of measurement, not a failed assertion.
+
+- **Measured here, on this exact tree, from its own directory as the runner does: exit 0 in `16.9 s`.** So it is not slow and it is not broken.
+- ⇒ **That rules out the fix that would otherwise be honest.** The corpus has a `DECLARED LONG` mechanism — `C59` runs on 1800s rather than 600s, named with its measured cost. **Declaring a seventeen-second receipt long to retire a red would misstate its cost**, and a declaration that lifts would then excuse a real failure later. I did not do it.
+- The ledger says the same: `carried 63, cleared 62` over 662.9 hours on five branch lines, **170+ pairs** of *"red at X on branch A, green at X on branch B — nothing it reads differs between the two"*, and 189 pairs unfetchable.
+- **One re-run spent**, which is the one the standing order allows, and it came back **green**. ⌗ *If it had failed a second time with the receipt probed and an assertion named, that would be real: a second failure is real and "flake" is not a root cause.*
+
+⇒ **So `r7653` is complete, verified locally and green in CI.** Four wording calls sit with 69 and nothing else does: the share at l.1188–1190, the `0.76` at l.2284, l.1145's `−1.056`/`−1.159`, and whether l.2072–2074 prints the matched pair or says its line-of-sight figures are grid-snapped.
+
+### ⛔ `r7653+cc66.118` — **A CORRECTION I OWE ON MY OWN MEASUREMENTS: EVERY `turn_gates` BATCH I QUOTED TODAY RAN AS `NODE=69`, BECAUSE THE SCRIPT DEFAULTS TO IT AND I RAN IT BARE. THE FOUR GATES THAT READ `NODE` ARE MEASURED UNDER BOTH VALUES BELOW**
+
+⛔ **A CORRECTION TO `cc66.116`, FOUND AFTER IT WAS PUSHED: EVERY `turn_gates` RUN I QUOTED TODAY RAN AS `NODE=69`, NOT AS `NODE=cc66`.**
+
+`scripts/turn_gates.sh:47` reads `export NODE="${NODE:-69}"   # the coordinating seat (69 since 2026-10-20)`, and line 160 prints `[NODE=$NODE, …]`. I ran the script **without the prefix**, so every batch I quoted printed `[NODE=69, timeout=280s]` — and I read past it each time. The standing cycle's words are `NODE=cc66 bash scripts/turn_gates.sh`. ⇒ **So the `123/123` in `cc66.116` is a `NODE=69` measurement carrying this seat's name, and the line is corrected here rather than left to stand.**
+
+**I did not assert that the variable changes nothing. I measured what it changes.** Four gates read `NODE`; here is each one under both values, on this tree:
+
+| gate | what `NODE` selects | `NODE=69` | `NODE=cc66` | verdict |
+|---|---|---|---|---|
+| `check_claims` | which line's claims are swept, and whose working tree is "here" | `node 69` — `0 claim(s) held; 1 file(s) modified here`, one `[warn]` on `FOR_66.md`, `no collisions declared` | `node cc66` — **byte-identical but for the name** | rc=0 both |
+| `check_id_bands` | `THIS_LINE`, the band this tree writes in | `(6900, 6999)` | `(6600, 6649)` | **`THIS_LINE` reaches only a `  <- this line` marker and a `[REPORT]` on the newest ID — never `rc`.** rc=0 both, and by construction |
+| `check_register_ids` | `_FLOOR` | `FLOOR.get('69')` → `None` | `FLOOR.get('cc66')` → `None` | identical: neither line is in `FLOOR`, so the floor is unset either way |
+| `check_revision_collisions` | `PARITY`, which half of the revision numbers is asserted | `_PARITY_BY_NODE['69'] == 1` → **the ODD half IS asserted**: `0 of this line's unmerged commits are out of band`, and it names `r7655` as this line's next | `_PARITY_BY_NODE['cc66'] is None` → **`the band is NOT CHECKED this run`**, and it prints both halves' next id (`r7654` even, `r7655` odd) asserting neither | rc=0 both, 16 s and 15 s |
+
+⇒ **The one gate whose CHECK differs ran STRICTER under `69`, not laxer.** `cc66` holds no half — by design, because this seat numbers `r<main base>+cc66.<k>` and never a bare `rNNNN` — so under the cycle's own prefix that gate declines to assert a band at all. Running as `69` had it assert 69's odd half and pass. **Nothing of mine was hidden by the wrong variable; what was wrong was the label on the measurement, and that is what I am fixing.** ⌗ *It also means the gate spent sixteen seconds checking a half this seat cannot write in — a true statement about 69's numbering, reported under my name.*
+
+### ✔ `r7653+cc66.119` — **THE BATCH RE-RUN UNDER THE CYCLE'S OWN PREFIX: `NODE=cc66` GIVES THE SAME 123 OF 123, SO `cc66.116`'s FIGURE WAS MISLABELLED AND NOT WRONG. AND `3872d0c23` IS GREEN ON EVERY JOB A PUSH RUNS**
+
+`cc66.118` promised this number rather than asserting it, and here it is. `NODE=cc66 bash scripts/turn_gates.sh`, on the tree at `3872d0c23`, exit 0:
+
+    turn batch (lean): ran 123 of 123 expected   (glob holds 136)   [NODE=cc66, timeout=280s]
+    PASS=123  FAIL=0  UNRUN=0
+
+Same batch size, same verdict, the same twelve hand-exclusions and the same single precondition skip (`check_sitemap_resolves`, no assembled `_site` here). ⇒ **So the `123/123` quoted at `cc66.113` and `cc66.116` is true under this seat's own prefix too, and the correction at `cc66.118` stands as a correction to the LABEL and to nothing else.** ⌗ *That is the whole value of re-running it: the claim is now a measurement under the name it is filed beside, which is what it was not before.*
+
+**CI at `3872d0c23`, run `41353968170` (push), every job it runs:**
+
+| job | verdict |
+|---|---|
+| `fast — registers, views, IDs` | **success** — the text gates 21:50:39→22:05:00, the hollow-assertion lint, the vacuous-pin sweep |
+| `scoped — the plain suite` | **success** — `RECORD (suite … @ 3872d0c235): ran 19, the run passed; +0 carried, 0 still red; 0 carried after this push` |
+| `scoped — the runner-read sweep` | **success** — `nothing in scope — nothing runs` |
+| `scoped — the tolerance perturbation` (both the scoping job and the code-and-data job) | **success** |
+| `scoped — tolerance probe, builds A/B/C` | **skipped**, and the reason matters — see below |
+| `compile`, `index`, `heavy`, `backstop` | skipped by tier, as a push does |
+
+⚠ **THE PROBE BUILDS WERE SKIPPED BECAUSE THE SCOPE WAS EMPTY, NOT BECAUSE ANYTHING WAS CANCELLED, AND THOSE TWO READ THE SAME IN THE LEDGER'S WORDING.** The record files:
+
+    RECORD (tolerance … @ 3872d0c235): ran 0, the job ended "skipped" with no receipt it can name
+      -- so the WHOLE scope of 0 is carried as NEVER PROBED and NOT as red … +0 carried,
+      0 cleared by a green, 0 still red, 0 no longer registered; 0 carried after this push
+    NEVER PROBED (tolerance): 0 of the 0 in scope
+
+**Read the number, not the sentence.** The ledger's `NEVER PROBED` wording is written for an interrupted probe, and it is the same wording that named fourteen receipts at `r7619` and eight at `a9152cd9f` — but here it is **0 of 0**, because this push is prose only (`FOR_66.md`, `FOR_69.md`) and moves no code or data a tolerance receipt reads. ⇒ **The carry stays at zero. Nothing was re-carried as `unmeasured`, and this is the first push today where the probes did not run and that fact costs nothing.** ⌗ *Worth keeping as a reading rule: the same sentence covers "I was killed mid-sweep" and "there was nothing to sweep", and only the count distinguishes them. At `r7619` I had the first and read it as the second.*
+
+⇒ **Nothing is owed on `r7653`: complete, verified under both labels, and green at `b391bfb79` and `3872d0c23`.** Four wording calls sit with 69 — the share at l.1188–1190, the `0.76` at l.2284, l.1145's `−1.056`/`−1.159`, and whether l.2072–2074 prints the matched pair or says its line-of-sight figures are grid-snapped — plus the `turn_gates` `NODE` default routed at `FOR_69.md`, offered as a one-line refusal and not landed.

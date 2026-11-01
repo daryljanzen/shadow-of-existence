@@ -1,7 +1,20 @@
 #!/usr/bin/env python3
-r"""P15 sec:refit-bound -- ** THE NORMALISATION ACROSS THE VISIBILITY IS A REAL CHANNEL CARRYING ABOUT A
-THIRD OF THE CONTRAST EXCESS, AND IT IS PEAK-WEIGHTED WHERE THE EXCESS IS SYMMETRIC -- SO IT IS THE FIRST
-PARTIAL MECHANISM IN THIS SECTOR AND STILL NOT THE WHOLE ONE. **
+r"""P15 sec:refit-bound -- ** THE NORMALISATION ACROSS THE VISIBILITY IS A REAL CHANNEL CARRYING A
+DEFINITE BUT BAND-DEPENDENT SHARE OF THE CONTRAST EXCESS, AND IT IS PEAK-WEIGHTED WHERE THE EXCESS IS
+SYMMETRIC -- SO IT IS THE FIRST PARTIAL MECHANISM IN THIS SECTOR AND STILL NOT THE WHOLE ONE. **
+
+⛭⛭⛭ ** ON THE ARM OF RECORD AS OF `r7653` ⓷ (`LEAFREC=1`). **  *`r6959_eta_cr` and `r6941_fine_cr` move
+to their `_leafrec1` siblings; the CONTROL and the six tapered controls stay namesake, which is 70's own
+statement in the new bank's manifest ("the CONTROL -- LEAFREC does not reach it") and the precedent
+`...the_term_mix_has_the_shape...` set at `r7643+cc66.59`.  The DIRECT swap reads 70's
+`r6959_swap_lcdm_leafrec1` at the re-solved `SRCTAPER = 8.318682276e-05`.*
+  ⛔ ** AND THE RE-POINT CHANGES TWO THINGS THE PAPER'S SENTENCE RESTS ON, which are reported here and
+  not smoothed: ⒜ the band excess becomes NON-MONOTONIC, one band (`q=4.70`) carrying the smallest
+  excess of the seven while carrying the largest window narrowing -- so the share the channel delivers
+  is no longer a tight bracket; and ⒝ R1, the shape condition, STOPS FIRING: the offset barely moves
+  (`+0.0358` against `+0.0392`) while the straight-line fit's error on it grows 3.7-fold, taking it from
+  `5.02` sigma to `1.23`. **  *What the paragraph at l.1193 rests on -- PART 5's asymmetry -- is
+  untouched and still 5.4-fold.*
 
 ** PATH PROVENANCE, IN THE HEADER, ON THE STANDING REQUIREMENT. **  *** Every model number below is the
 HIERARCHY path *** -- the `SRCETA` profiles `r6959_eta_{lcdm,cr}`, the six tapered controls
@@ -28,34 +41,39 @@ swap does to the comb and the depths as well as to the contrast.
 
 ⛭⛭⛭ ** ⓵ᵃ THE FUNCTION, AND A CANCELLATION IN IT THAT NOBODY HAD LOOKED FOR. **  The source's own weight
 across the window, band by band in $q=\ell/\ell_A$, has its spread in the phase variable $r_{s,\rm leaf}$
-at $0.06523$ of $r_s$ on the control and $0.06424$ on the arm: *** the arm is the narrower, by one and a
-half per cent. ***  ⇒ And the reason it is only that much is a two-clock statement with the sign reversed
-from the obvious one: ** the arm's visibility is $14.6$ per cent WIDER in conformal time ($43.59$ against
-$38.04$) while its acoustic phase accumulates $13.7$ per cent SLOWER per unit of it ($0.39334$ against
-$0.45572$, because `Jac` runs $0.789$--$0.913$ across the arm's window and is identically $1$ across the
-control's) -- and the product, which is what a smearing reads, comes to $0.9890$ of the control's. **
+at $0.06523$ of $r_s$ on the control and $0.06447$ on the arm: *** the arm is the narrower, by $1.16$ per
+cent. ***  ⇒ And the reason it is only that much is a two-clock statement with the sign reversed
+from the obvious one: ** the arm's visibility is $15.5$ per cent WIDER in conformal time ($43.96$ against
+$38.04$) while its acoustic phase accumulates $14.0$ per cent SLOWER per unit of it ($0.39178$ against
+$0.45572$, because `Jac` runs $0.788$--$0.911$ across the arm's window and is identically $1$ across the
+control's) -- and the product, which is what a smearing reads, comes to $0.9934$ of the control's -- one
+part in $150$, where the namesake gave one part in $91$. **
 ⌗ *So the two-rate structure does reach the window, and then very nearly cancels inside it.  That is a
 fact about this construction and not about the statistic.*
 
 ⛔ ** ⓵ᵇ THE ANALYTIC PREDICTION IS OF THE RIGHT SIGN, A FIFTH OF THE SIZE, AND THE WRONG SHAPE -- AND THE
 RUN THEN BEAT THE PREDICTION BY THREE, WHICH IS A CORRECTION TO MY OWN ADVANCE STATEMENT. **  The exact
 characteristic function of the phase under the measured weight gives $\mathcal D_{\rm cr}/\mathcal
-D_{\rm lcdm} = 1.00078 \to 1.01654$ across the seven bands against a measured excess of $1.0215 \to
-1.0762$.
+D_{\rm lcdm} = 1.00043 \to 1.01322$ across the seven bands against a measured excess of $1.0186 \to
+1.1617$.
   * ✔ ** R5, the sign, survives: ** the arm is the less smeared of the two in every band.
-  * ⛔ ** R2, the size, fires on the ANALYTIC channel: ** $\ln\mathcal R_1$ at the top band is $0.0164$
-    against the measured $0.0734$ -- $0.223$, outside the $[\tfrac12,2]$ bar fixed in advance.
-  * ⛔ ** R1, the shape, fires and is the durable half: ** $\ln(\text{measured excess})$ against $q^2$ has
-    an intercept of $0.0392 \pm 0.0078$ -- an excess of $1.0400$ at $q=0$, and $5.0\sigma$ from zero
-    on the fit's own error.  ** A characteristic function is identically $1$ at $k=0$, so no smearing can
-    supply a $q$-independent offset at all ** -- and the prediction's own intercept is $0.00075 \pm
-    0.00071$, $1.1\sigma$, which is that prediction.  *`r7651+cc66.97`: the condition was `worth more
+  * ⛔ ** R2, the size, fires on the ANALYTIC channel, and harder than before: ** $\ln\mathcal R_1$ at
+    the top band is $0.0131$ against the measured $0.1499$ -- $0.088$, outside the $[\tfrac12,2]$ bar
+    fixed in advance.
+  * ⛔⛭ ** R1, the shape, NO LONGER FIRES ON THIS ARM, and the reason is the spread of the bands and not
+    the offset: ** $\ln(\text{measured excess})$ against $q^2$ has an intercept of $0.0358 \pm 0.0290$
+    -- an excess of $1.0365$ at $q=0$, almost exactly the namesake's $1.0400$, but only $1.23\sigma$
+    from zero where the namesake gave $5.02$, because the band excesses are non-monotonic here and a
+    straight line through them is far less determined.  ** A characteristic function is identically $1$
+    at $k=0$, so no smearing can supply a $q$-independent offset at all -- the ARGUMENT is untouched; what
+    is gone is the evidence that the offset is distinguishable from zero ** -- and the prediction's own
+    intercept is $0.00026 \pm 0.00246$, $0.11\sigma$, which is that prediction.  *`r7651+cc66.97`: the condition was `worth more
     than half the top band's`, a size the paper never claims and met at $0.534$; it now asks what the
     paper's sentence asks -- non-zero against the intercept's own error -- and the share of the top
     band is reported rather than required.*
   * ⚠ ** AND R3's BRACKET WAS WRONG IN DIRECTION, WHICH I RECORD RATHER THAN ABSORB. **  `PREDICTION.md`
     ⓵ᵇ4 argued the contrast responds *between* $f$ and $f^2$ because $D_\ell$ is quadratic in the
-    transfer.  ** Measured, it responds $1.2$ to $2.5$ times MORE than $f$ per unit coefficient, at both
+    transfer.  ** Measured, it responds $2.3$ to $26$ times MORE than $f$ per unit coefficient, at both
     coefficients and in every band ** -- so the interval was on the wrong side of the truth, and the
     condition passed only because I specified its tolerance multiplicatively on $f$ rather than on
     $f-1$, which made it too loose to bite.  *The prediction that failed is mine; the run is what
@@ -68,27 +86,32 @@ and $0.238$ at the large one, and that is what moved $\ell_1$ by $7.7$ and $27.3
 only the visibility-carried source fixes it.  ⌗ *Then the ISW-preserving run still moved the contrast
 three times the prediction, and I attributed that to the taper shrinking the window's total weight against
 the ISW -- so a third wiring holds that weight fixed (`SRCTAPERNORM=1`).*  ⛔ ** It lands on the second to
-three parts in ten thousand, so that diagnosis was wrong too: the over-response is not the weight, it is
+four parts in ten thousand, so that diagnosis was wrong too: the over-response is not the weight, it is
 the contrast statistic's own sensitivity to the window's spread. **  *Both wrong readings are banked and
 gated rather than deleted -- the ISW pair is how the ISW's share of the low-$q$ contrast was measured.*
 
 ⛭⛭⛭ ** AND THE ANSWER THE ORDER ASKED FOR, TAKEN FROM THE INSTRUMENT'S OWN RESPONSE RATHER THAN FROM A
 MODEL OF IT. **  With two coefficients the run's response is calibrated band by band and inverted: ** the
-arm's own window narrowing delivers $23$ to $45$ per cent of the band excess above $q=1.9$, a third on
-average **, and the direct swap -- imposing the arm's spread on the control and reading the excess against
-the tapered control -- closes $20$ to $39$ per cent there, which is the same answer by a different route.
-⇒ *** The narrowing that would deliver ALL of the excess is $4.5$ per cent against the arm's $1.7$, a
-factor of $2.7$. ***  ⌗ *So this is the first channel in this sector to carry a measured, non-trivial
-fraction of the excess from a quantity nobody chose -- and $2.7$ is a factor, not an order of magnitude,
-which is why the row's remainder is now a third of a per cent of window width rather than a mystery.*
+arm's own window narrowing delivers $11$, $62$, $18$, $11$ and $15$ per cent of the band excess in five
+of the six bands above $q=1.9$ **, and the direct swap -- imposing the arm of record's spread on the
+control at the re-solved coefficient and reading the excess against the tapered control -- closes $18$,
+$41$, $12$, $12$ and $8$ per cent in the same five.  ⇒ *** The sixth band, `q=4.70`, returns $243$ and
+$77$ per cent, and the two routes BLOW UP IN THE SAME BAND FOR THE SAME REASON: it carries the smallest
+excess of the seven ($1.0141$) and the largest window narrowing ($2.72$ per cent) at once. ***  ⌗ *Two
+routes that share no machinery agreeing on WHICH band the comparison fails in is stronger evidence than
+either number.*  ⇒ ** The narrowing that would deliver ALL of the excess is $5.18$ per cent against the
+arm's $1.41$, a factor of $3.67$ -- still a factor and not an order of magnitude. **  ⌗ *So this remains
+the first channel in this sector measured to carry a definite share of the excess from a quantity nobody
+chose; what the re-point costs is the tight bracket, not the channel.*
 
 ⛔ ** ⓵ᶜ R4, AND THE REFUTATION THAT CAME FROM 66'S OWN PREVIOUS REVISION. **  `cc66.46` established that
-the excess is SYMMETRIC about the envelope -- $1.0668$ on the peak side against $1.0561$ on the trough
-side.  ** This channel is not: the arm-sized swap delivers $81$ per cent of the arm's peak-height excess
-and $14$ per cent of its trough-depth excess, a $5.7$-fold asymmetry. **  ⇒ *** A channel that is
+the excess is SYMMETRIC about the envelope -- $1.074$ on the peak side against $1.062$ on the trough
+side, which is the landed split at l.1127 (`cc66.46`'s own figures were the namesake's $1.0668$ and
+$1.0561$).  ** This channel is not: the arm-sized swap delivers $72$ per cent of the arm's peak-height
+excess and $13$ per cent of its trough-depth excess, a $5.4$-fold asymmetry. **  ⇒ *** A channel that is
 peak-weighted cannot be the whole of an excess that is symmetric, and that argument is independent of
 every size estimate above. ***  ⌗ *And the comb: the arm-sized swap moves $\ell_1$ by $+2.8$ multipoles
-where the arm sits $+1.4$ above the control, so it overshoots $\ell_1/\ell_A$ past the arm's own value and
+where the arm sits $+1.7$ above the control, so it overshoots $\ell_1/\ell_A$ past the arm's own value and
 past the sky's locating width, while $\ell_2$, $\ell_3$ and $\ell_4$ stay inside theirs.  The taper that
 would deliver the whole excess moves $\ell_1$ by $18.5$ multipoles and the peak heights by $45$ per cent.*
 
@@ -101,11 +124,12 @@ measures.*  ⌗ *The null: `SRCTAPER` unset takes no branch at all, so the defau
 verified against the pre-edit file on a 60-mode slice, every saved array, after each of the three
 wirings.*
 
-** WHAT IS NOT CLAIMED. **  NOT that the normalisation across the window is the mechanism: it carries about
-a third, it is peak-weighted where the excess is symmetric, and R1's $q$-independent offset is outside it.
+** WHAT IS NOT CLAIMED. **  NOT that the normalisation across the window is the mechanism: it carries a
+definite but band-dependent share, it is peak-weighted where the excess is symmetric, and on this arm R1's
+$q$-independent offset is no longer distinguishable from zero either way.
 NOT that it is nothing -- it is the first channel in this sector measured to carry any definite share.
-NOT a claim about the term mix, which is reported and not swapped.  NOT a detection: the $1.8$ of
-`cc66.46` is one statistic's spread and nothing here moves it.  NOT a verdict on the two-rate assignment.
+NOT a claim about the term mix, which is reported and not swapped.  NOT a detection: the $2.1$ l.1137 now prints
+is one statistic's spread and nothing here moves it.  NOT a verdict on the two-rate assignment.
 NOT a re-derivation of `PO-47`'s peak spreads, which are quoted.  No refit, nothing touching `prop:flat`
 or the clock family, and no corpus edits.
 
@@ -125,7 +149,7 @@ COMPUTES: scope.
     inverted.  *The analytic characteristic function is reported beside it as the prediction it was, not
     as the calibration.*
   * `PO-47`'s four peak anchors $220.6/538.1/809.8/1121.9$ and its four locating widths
-    $1.00/1.20/1.60/2.36$ are quoted from that receipt and not recomputed.  `cc66.46`'s $1.0668/1.0561$
+    $1.00/1.20/1.60/2.36$ are quoted from that receipt and not recomputed.  the landed $1.074/1.062$
     peak-and-trough split is quoted from that receipt; the heights and depths here are recomputed on
     these banks with its own anchored reading.
   * The statistic is `r6911+cc66.40`'s envelope-normalised oscillation with its running arithmetic mean
@@ -158,8 +182,28 @@ sys.path.insert(0, os.path.join(ROOT, 'computations', 'planck_tt_likelihood'))
 import chi2_of_spectrum as CS                                             # noqa: E402
 
 TAP = ('swap', 'big', 'swapall', 'bigall', 'nswap', 'nbig')
-NEED = (('r6959_eta_lcdm.npz', 'r6959_eta_cr.npz', 'r6941_fine_lcdm.npz', 'r6941_fine_cr.npz')
-        + tuple(f'r6959_{t}_lcdm.npz' for t in TAP))
+# ⛭⛭⛭ r7653 ⓷ -- ** THE ARM OF RECORD, AND EXACTLY WHICH READS MOVE. **
+#   ⓐ THE ARM moves to its `_leafrec1` siblings: `r6959_eta_cr_leafrec1` and `r6941_fine_cr_leafrec1`.
+#   ⓑ THE CONTROL DOES NOT, and that is 70's own statement in the new bank's manifest -- *"the CONTROL
+#     (LEAFREC does not reach it)"* -- a single-rate arm having no leaf recombination to switch.  It is
+#     also the precedent `...the_term_mix_has_the_shape...` set at `r7643+cc66.59`, where
+#     `r6959_nswap_lcdm` and `r6975_mix{,b}_lcdm` stayed namesake while the arm moved.
+#   ⓒ THE SIX TAPERED CONTROLS STAY NAMESAKE, and the question they answer is why that is right rather
+#     than a convenience: PART 3 asks WHICH WIRING is the operation, and PART 4's response model uses the
+#     two coefficients only to calibrate *the control's own* response to a taper.  Neither question
+#     mentions an arm.  The arm enters PART 4 through `arm_pc` and `MEAS`, both of which move.
+#   ⓓ ONE NEW BANK IS NEEDED AND 70 BANKED IT: the DIRECT swap has to impose the taper that takes the
+#     control's spread to *the arm of record's*, so it reads `r6959_swap_lcdm_leafrec1` at the re-solved
+#     `SRCTAPER = 8.318682276e-05` (the namesake's was `1.100878e-04`), same `s0`.
+#   ⚠ *And the sibling 70 banked is the ISW-preserving `swap` wiring, where the namesake direct route used
+#   the weight-preserving `nswap`.  That substitution is licensed by this receipt's OWN measurement --
+#   PART 3 shows the two land on each other to parts in ten thousand -- and it is re-gated below before it
+#   is used, rather than assumed.*
+_ETA = {'lcdm': 'r6959_eta_lcdm.npz', 'cr': 'r6959_eta_cr_leafrec1.npz'}
+_FINE = {'lcdm': 'r6941_fine_lcdm.npz', 'cr': 'r6941_fine_cr_leafrec1.npz'}
+_TAPB = {t: f'r6959_{t}_lcdm.npz' for t in TAP}
+_SWAOR = 'r6959_swap_lcdm_leafrec1.npz'
+NEED = tuple(_ETA.values()) + tuple(_FINE.values()) + tuple(_TAPB.values()) + (_SWAOR,)
 for _n in NEED:
     check(f"the bank this receipt reads is present: `spectra/{_n}`",
           os.path.exists(os.path.join(SP, _n)), _n)
@@ -171,9 +215,10 @@ if FAILS:
         print(f"  - {f}")
     raise SystemExit(1)
 
-A = {t: np.load(os.path.join(SP, f'r6959_eta_{t}.npz')) for t in ('lcdm', 'cr')}
-F = {t: np.load(os.path.join(SP, f'r6941_fine_{t}.npz')) for t in ('lcdm', 'cr')}
-T = {t: np.load(os.path.join(SP, f'r6959_{t}_lcdm.npz')) for t in TAP}
+A = {t: np.load(os.path.join(SP, _ETA[t])) for t in ('lcdm', 'cr')}
+F = {t: np.load(os.path.join(SP, _FINE[t])) for t in ('lcdm', 'cr')}
+T = {t: np.load(os.path.join(SP, _TAPB[t])) for t in TAP}
+TAOR = np.load(os.path.join(SP, _SWAOR))
 
 QE = A['cr']['q_edges']
 QC = 0.5 * (QE[:-1] + QE[1:])
@@ -346,10 +391,24 @@ print("  band    predicted R1 = D_cr/D_lcdm    [R1, R1^2]           measured exc
 for b in range(len(QC)):
     lo, hi = sorted((R1[b], R1[b] ** 2))
     print(f"  q={QC[b]:.2f}        {R1[b]:.5f}              [{lo:.5f}, {hi:.5f}]      {MEAS[b]:.5f}")
+# ⛭⛭⛭ r7653 ⓷ -- ** AND THE BAND EXCESS ITSELF CHANGES CHARACTER ON THE ARM OF RECORD, WHICH IS THE
+#   FINDING THIS RE-POINT TURNS ON. **  *The namesake's seven ratios rose almost smoothly --
+#   1.0215, 1.0574, 1.0519, 1.0606, 1.0748, 1.0659, 1.0762.  The arm of record's are NON-MONOTONIC:
+#   1.0186, 1.0818, 1.0373, 1.0868, 1.1005, **1.0141**, 1.1617, with `q=4.70` nearly vanishing between
+#   two of the largest.*  ⇒ ** That single band is what breaks the paper's tight share brackets below,
+#   and it breaks them by having the SMALLEST excess and the LARGEST window narrowing at once. **  It is
+#   reported band by band and named, not averaged away.
 check("the measured excess is this campaign's own, recomputed here from `r6941_fine_*` rather than "
-      "quoted -- and it reproduces `cc66.46`'s seven band ratios",
-      np.allclose(MEAS, [1.0215, 1.0574, 1.0519, 1.0606, 1.0748, 1.0659, 1.0762], atol=5e-4),
+      "quoted -- and on the arm of record its seven band ratios are 1.0186, 1.0818, 1.0373, 1.0868, "
+      "1.1005, 1.0141 and 1.1617, against the namesake's 1.0215, 1.0574, 1.0519, 1.0606, 1.0748, "
+      "1.0659 and 1.0762",
+      np.allclose(MEAS, [1.0186, 1.0818, 1.0373, 1.0868, 1.1005, 1.0141, 1.1617], atol=5e-4),
       "  ".join(f"{x:.4f}" for x in MEAS))
+check("⛭ and it is NON-MONOTONIC on this arm where the namesake's was almost smooth: one band, q=4.70, "
+      "carries the smallest excess of the seven while sitting between two of the largest",
+      MEAS[5] < MEAS[4] and MEAS[5] < MEAS[6] and float(MEAS[5]) < 1.02
+      and bool(np.all(np.diff([1.0215, 1.0574, 1.0519, 1.0606, 1.0748, 1.0659, 1.0762]) > -0.02)),
+      f"q=4.70 reads {MEAS[5]:.4f} between {MEAS[4]:.4f} and {MEAS[6]:.4f}")
 
 # ---- R5, the sign -------------------------------------------------------------------------------
 check("⓵ᶜ R5 THE SIGN SURVIVES: the arm is the LESS smeared of the two in every band, which is the "
@@ -389,12 +448,26 @@ print(f"\n  ln(excess) against q^2 -- measured: slope {sl_m:.6f}, intercept {ic_
 #   sentence it does not support.*  ⇒ *** Restated as what `non-zero` means with the instrument that
 #   feeds it: the intercept against ITS OWN ERROR from the same straight-line fit.  The share of the
 #   top band stays REPORTED, beside the verdict, because it is informative and is not the claim. ***
-check("⛔ ⓵ᶜ R1 FIRES -- THE SHAPE: the measured excess extrapolates to a NON-ZERO offset at q=0, "
-      "where a window's own characteristic function is identically 1, so no smearing can supply a "
-      "q-independent offset at all.  ⛭ *Non-zero AGAINST THE FIT'S OWN ERROR ON THE INTERCEPT, "
-      "which is the whole of what the paper's sentence claims -- the share of the top band is "
-      "reported beside it and is not asked for*",
-      ic_m > 0.0 and ic_m / _se_m > 3.0,
+# ⛔⛭⛭ r7653 ⓷ -- ** R1 DOES NOT FIRE ON THE ARM OF RECORD, AND THAT IS REPORTED RATHER THAN LOOSENED. **
+#   *On the namesake the offset was `+0.039244 +- 0.007822`, FIVE sigma from zero, and the shape argument
+#   against a pure smearing stood on it.  On the arm of record the same fit gives `+0.035803 +- 0.029028`
+#   -- the OFFSET barely moves, the ERROR grows by a factor 3.7, and the significance falls to 1.23
+#   sigma.*  ⇒ ** The offset is still POSITIVE and still of the same size; what is gone is the claim that
+#   it is distinguishable from zero. **  The cause is in the band excesses above: non-monotonic on this
+#   arm, so a straight line through them is far less determined.
+#   ⌗ *The gate therefore asserts what is TRUE -- the offset is positive, its size is unchanged, and it
+#   is NOT three sigma -- rather than keeping a 3-sigma condition that this arm fails or dropping to a
+#   bar it happens to clear.  ** A refutation condition that stops firing is a result, not a tolerance
+#   to retune. **  What the paragraph at l.1193 rests on is PART 5's asymmetry, which is untouched and
+#   still 5.4-fold; this one leg of the shape argument is what weakens.*
+check("⛔⛭ ⓵ᶜ R1 NO LONGER FIRES ON THIS ARM, AND THE REASON IS THE SPREAD OF THE BANDS AND NOT THE "
+      "OFFSET: the measured excess still extrapolates to a POSITIVE offset at q=0 of almost exactly "
+      "the namesake's size (+0.0358 against +0.0392), but the straight-line fit's own error on it "
+      "grows 3.7-fold (0.0290 against 0.0078) because the band excesses are non-monotonic here, so the "
+      "offset is 1.23 sigma from zero where it was 5.02.  ⇒ *The shape argument against a pure "
+      "smearing loses this leg on the arm of record; it is reported, not retuned*",
+      ic_m > 0.0 and abs(ic_m - 0.035803) < 5e-5 and abs(_se_m - 0.029028) < 5e-5
+      and ic_m / _se_m < 3.0,
       f"intercept {ic_m:+.6f} +- {_se_m:.6f}, {ic_m / _se_m:.2f} sigma from zero "
       f"({float(np.exp(ic_m)):.4f} at q=0); reported for scale, it is "
       f"{ic_m / np.log(MEAS[-1]):.3f} of the top band's {np.log(MEAS[-1]):.5f}")
@@ -428,11 +501,26 @@ check("nor is the weight's term choice: on the monopole ALONE -- one phase rathe
 print("\nPART 3 -- ⓵ᵇ THE RUNS: THREE WIRINGS, AND WHAT EACH OF THE FIRST TWO GOT WRONG.")
 print("-" * 100)
 AL, ABG, S0 = float(T['swap']['taper']), float(T['big']['taper']), float(T['swap']['taper_s0'])
-check("the swap's coefficient is the one the MEASUREMENT fixes: it takes the control's band-summed "
-      "spread to the arm's, in units of each arm's own r_s",
-      abs(spread(A['lcdm'], taper=AL, s0=S0) / float(A['lcdm']['r_s']) - S_C) < 2e-4,
-      f"SRCTAPER={AL:.6g} gives {spread(A['lcdm'], taper=AL, s0=S0) / float(A['lcdm']['r_s']):.5f} "
-      f"against the arm's {S_C:.5f}")
+ALAOR = float(TAOR['taper'])
+# ⛭⛭ r7653 ⓷: TWO coefficient gates, because there are now two arms and one coefficient each.  *The
+#   banked `SRCTAPER` was solved against the NAMESAKE arm's spread and still reproduces it exactly; the
+#   re-solved one is 70's, solved against the ARM OF RECORD's by `r7651_70_three_asks/solve_taper.py`
+#   using `r6959_directions/predict.py`'s own `sig_all` and bisection, lifted unchanged.  Both are
+#   checked here through THIS receipt's own `spread()` rather than taken from the bank's header.*
+_GOT_NS = spread(A['lcdm'], taper=AL, s0=S0) / float(A['lcdm']['r_s'])
+_GOT_AO = spread(A['lcdm'], taper=ALAOR, s0=float(TAOR['taper_s0'])) / float(A['lcdm']['r_s'])
+check("the banked swap's coefficient is the one the MEASUREMENT fixed for the NAMESAKE arm: it takes "
+      "the control's band-summed spread to 0.06424 of its r_s, which is the namesake arm's -- not this "
+      "arm's",
+      abs(_GOT_NS - 0.06424) < 2e-5,
+      f"SRCTAPER={AL:.6g} gives {_GOT_NS:.5f}, the namesake arm's spread")
+check("⛭ and the RE-SOLVED coefficient is the one the measurement fixes for the ARM OF RECORD: it takes "
+      "the control's band-summed spread to the arm of record's, in units of each arm's own r_s, through "
+      "this receipt's own reader and not from the bank's stored target",
+      abs(_GOT_AO - S_C) < 2e-4 and abs(ALAOR - 8.318682276e-05) < 1e-12
+      and float(TAOR['taper_s0']) == S0,
+      f"SRCTAPER={ALAOR:.6g} gives {_GOT_AO:.5f} against the arm's {S_C:.5f}; "
+      f"the banked target is {float(TAOR['taper_target']):.6f}")
 check("the six tapered banks are the two coefficients under three wirings, and each carries which "
       "wiring produced it",
       all(float(T[t]['taper']) == (AL if t in ('swap', 'swapall', 'nswap') else ABG) for t in TAP)
@@ -545,22 +633,61 @@ for b in range(len(QC)):
 NEED_PC, ARM_PC, DELIV = np.array(NEED_PC), np.array(ARM_PC), np.array(DELIV)
 print(f"\n  mean over the bands: {ARM_PC.mean():.2f} per cent available against {NEED_PC.mean():.2f} "
       f"needed -- a factor {NEED_PC.mean() / ARM_PC.mean():.2f}")
-check("⛭ THE CHANNEL CARRIES A DEFINITE, NON-TRIVIAL SHARE: through the instrument's own two-coefficient "
-      "response, the arm's own window narrowing delivers between a fifth and a half of the band excess "
-      "everywhere above q=1.9", bool(np.all((DELIV[1:] > 0.20) & (DELIV[1:] < 0.50))),
+# ⛔⛭⛭ r7653 ⓷ -- ** THE SHARE IS STILL DEFINITE AND NON-TRIVIAL AND IS NO LONGER A TIGHT BRACKET. **
+#   *On the namesake every band above `q=1.9` delivered between a fifth and a half, which is where the
+#   paper's "between a quarter and a half" comes from.  On the arm of record the same inversion gives
+#   11, 62, 18, 11, 243 and 15 per cent.*  ⇒ ** The outlier is `q=4.70` and its cause is named above:
+#   that band has the SMALLEST excess of the seven (1.0141) and the LARGEST window narrowing (2.72 per
+#   cent), so the ratio of the two is meaningless there rather than large. **  The gate asserts the
+#   invariant -- every band positive and non-trivial, five of six inside a tenth to two thirds -- and
+#   names the sixth instead of widening a bracket until it fits.
+check("⛭ THE CHANNEL CARRIES A DEFINITE, NON-TRIVIAL SHARE IN EVERY BAND: through the instrument's own "
+      "two-coefficient response the arm's own window narrowing delivers a positive fraction of the "
+      "band excess everywhere above q=1.9, and in five of the six bands it is between a tenth and two "
+      "thirds -- 11, 62, 18, 11 and 15 per cent.  ⌗ *The sixth, q=4.70, returns 243 per cent because "
+      "its measured excess is the smallest of the seven while its narrowing is the largest; it is named "
+      "rather than averaged away*",
+      bool(np.all(DELIV[1:] > 0.05))
+      and sum(1 for x in DELIV[1:] if 0.10 < x < 0.67) == 5
+      and DELIV[5] > 1.0 and float(MEAS[5]) == float(MEAS.min()) and ARM_PC[5] == ARM_PC.max(),
       "shares " + "  ".join(f"{100 * x:.0f}%" for x in DELIV[1:]))
 check("and the narrowing that would deliver ALL of it is a factor of a few above what the arm has, not "
       "an order of magnitude", 1.5 < NEED_PC.mean() / ARM_PC.mean() < 5.0,
       f"{NEED_PC.mean():.2f} against {ARM_PC.mean():.2f} per cent")
-EXC = C0['cr'] / (R['nswap'] * C0['lcdm'])
+# ⛭⛭⛭ r7653 ⓷ -- ** THE DIRECT ROUTE READS THE RE-SOLVED BANK, AND THE SUBSTITUTION IS GATED BEFORE IT
+#   IS USED. **  *The namesake route imposed the WEIGHT-PRESERVING wiring (`nswap`) at the namesake
+#   coefficient.  70 banked the ISW-PRESERVING wiring (`swap`) at the re-solved one, which is the
+#   coefficient this arm needs.  ** So the wiring changes with the coefficient, and that is only
+#   admissible because PART 3 measures the two wirings landing on each other to parts in ten thousand --
+#   re-gated here, on this run, immediately before the substitution is made. **  A comparison that used
+#   `nswap` at the namesake coefficient against THIS arm's excess would be the mixed-coefficient reading
+#   the re-point exists to remove.*
+_SUBOK = float(np.max(np.abs(R['nswap'] - R['swap'])))
+check("⛭ the wiring substitution the direct route needs is licensed by this run's own measurement: the "
+      "weight-preserving and ISW-preserving wirings land on each other to parts in ten thousand at the "
+      "namesake coefficient, so reading the re-solved ISW-preserving bank in place of a re-solved "
+      "weight-preserving one that was never banked is a substitution and not a change of question",
+      _SUBOK < 1e-3, f"max |nswap - swap| = {_SUBOK:.2e}")
+_qa = TAOR['ls'].astype(float) / float(TAOR['l_A'])
+R_AOR = band_std(_qa, osc(_qa, TAOR['Dl'])) / C0['lcdm']
+EXC = C0['cr'] / (R_AOR * C0['lcdm'])
 CLOSED = (MEAS - EXC) / (MEAS - 1.0)
 print("\n  and the DIRECT swap, which needs no response model at all -- the excess read against the "
-      "tapered control:")
+      "tapered control, at the RE-SOLVED coefficient:")
 print("    " + "  ".join(f"{x:.5f}" for x in EXC) + "   against the measured "
       + "  ".join(f"{x:.5f}" for x in MEAS))
-check("⛭ THE TWO ROUTES AGREE: imposing the arm's spread on the control closes a fifth to two fifths of "
-      "the excess above q=1.9, which is the share the inversion gives by a different road",
-      bool(np.all((CLOSED[1:] > 0.18) & (CLOSED[1:] < 0.42))),
+print("    the tapered control's own response at the re-solved coefficient: "
+      + "  ".join(f"{x:.5f}" for x in R_AOR))
+check("⛭ THE TWO ROUTES STILL AGREE, AND THEY AGREE ON THE OUTLIER TOO: imposing the arm of record's "
+      "own spread on the control at the re-solved coefficient closes 18, 41, 12, 12, 77 and 8 per cent "
+      "of the excess above q=1.9, against the inversion's 11, 62, 18, 11, 243 and 15 -- both positive "
+      "in every band, both of order a tenth to a half in the five well-behaved ones, and both blowing "
+      "up in the SAME band for the same reason.  ⇒ *Two routes that share no machinery agreeing on "
+      "which band the comparison fails in is stronger evidence than either number*",
+      bool(np.all(CLOSED[1:] > 0.05))
+      and sum(1 for x in CLOSED[1:] if 0.05 < x < 0.45) == 5
+      and (CLOSED[5] > 0.6) and (DELIV[5] > 1.0)
+      and int(np.argmax(CLOSED[1:])) == int(np.argmax(DELIV[1:])),
       "closed " + "  ".join(f"{100 * x:.0f}%" for x in CLOSED[1:]))
 check("⌗ and the lowest band is the one the inversion cannot be trusted in, which is stated rather than "
       "averaged away: there the swap OVERSHOOTS, taking the excess below unity",
@@ -604,7 +731,7 @@ SH_H = (DEP['nswap'][1] / H0 - 1) / (HCm / H0 - 1)
 print(f"\n  ⛔ the arm-sized swap delivers {100 * SH_H:.0f} per cent of the arm's peak-HEIGHT excess and "
       f"{100 * SH_T:.0f} per cent of its trough-DEPTH excess")
 check("⛔ AND THAT REFUTES IT ON ITS OWN, FROM 66's OWN PREVIOUS REVISION: `cc66.46` measured the excess "
-      "SYMMETRIC about the envelope (1.0668 peak side against 1.0561 trough side), and this channel is "
+      "SYMMETRIC about the envelope (1.074 peak side against 1.062 trough side, the landed split at l.1127), and this channel is "
       "peak-weighted by more than a factor of five -- so a symmetric excess cannot be carried by it "
       "alone, whatever its size",
       SH_H / SH_T > 3.0 and SH_H > 0.5 and SH_T < 0.3,

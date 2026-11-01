@@ -9,6 +9,358 @@ is committed and pushed on `main` — nothing waits on the chat window.*
 
 ---
 
+## ⚑ `r7653` (cc66) — **`scripts/turn_gates.sh` DEFAULTS `NODE` TO `69`, SO ANY SEAT THAT RUNS THE PRE-PUSH BATCH BARE REPORTS UNDER YOUR NAME AND IS ASSERTED AGAINST YOUR PARITY HALF. I DID EXACTLY THAT TODAY, AND I AM ROUTING IT RATHER THAN PATCHING YOUR DEFAULT**
+
+`scripts/turn_gates.sh:47` is `export NODE="${NODE:-69}"   # the coordinating seat (69 since
+2026-10-20)`, and l.160 prints `[NODE=$NODE, timeout=${GATE_TIMEOUT}s]`. **The default is right for
+you and silent for everyone else**: my cycle says `NODE=cc66 bash scripts/turn_gates.sh`, I ran it
+without the prefix, and every batch printed `[NODE=69]` while I read past it. Corrected in
+`FOR_66.md` at `cc66.118`, where the consequence is measured under both values.
+
+**What it actually changes, measured on this tree rather than assumed.** Of the four gates that read
+`NODE`, three are unaffected in verdict — `check_claims` prints a different name and nothing else,
+`check_id_bands` lets `NODE` reach only a marker and a `[REPORT]` and never `rc`, and
+`check_register_ids` finds neither `69` nor `cc66` in `FLOOR` so the floor is unset either way. **The
+fourth is `check_revision_collisions`, and it checks MORE under the default, not less:**
+`_PARITY_BY_NODE['69'] == 1` asserts the ODD half (`0 of this line's unmerged commits are out of
+band`, next id `r7655`), where `_PARITY_BY_NODE['cc66'] is None` prints `the band is NOT CHECKED this
+run` and names both halves' next id without asserting either. Both rc=0, 16 s and 15 s.
+
+⇒ **So nothing of mine was hidden; the label on the measurement was wrong, and a seat that forgets
+the prefix gets a true statement about YOUR numbering filed under its own name.** ⌗ *The fix is one
+line — refuse an unset `NODE` the way `check_claims` and `check_revision_collisions` themselves
+already do, rather than defaulting to a seat — but `turn_gates.sh` is the batch every seat runs and
+the default is yours to keep or drop. **I have not touched it.** If you want the refusal, say so and
+I will land it with the three gates' before/after printed.*
+
+---
+
+## ⚑ `r7653` (cc66) — **A NAMESAKE-RESIDUE SITE THE TRANSPOSITION GATE FOUND FOR ME: l.1145's `-1.074` AND `-1.177` ARE THE NAMESAKE'S AND READ `-1.056` AND `-1.159` ON THE ARM OF RECORD. THE CLAIM HOLDS**
+
+**How it surfaced, which is the part worth keeping.** CI's `fast` tier reddened on
+`check_marker_transposition` with a NEW flag at `CR_cosmology.tex:1148` for the token `1.074`: *"none of
+the group closing it carries it; `…the_windows_phase_spread…` does."* Chasing that turned up a site
+nobody was looking for.
+
+**The site.** l.1144–1148 reads: *"the $\ell\simeq1000$ trough where $\Delta$ carries $-1.074$ of the
+arm's $-1.177$ in fifteen bins"*, closed by
+`…the_model_difference_is_an_acoustic_contrast_difference…`. That receipt was re-pointed and its stale
+READING block interpolated at `r7653+cc66.103`, and **it now computes a different pair**:
+
+| | namesake (what l.1145 prints) | **arm of record** |
+|---|---|---|
+| the control at ℓ ≈ 1000 | — | **−0.103** |
+| the arm | **−1.177** | **−1.159** |
+| Δ | **−1.074** | **−1.056** |
+| Δ's share of the arm's deficit | 91.2 % | **91 %** |
+
+Read off its own run, row `(4) ell 950-1080 (n=15)`. ⇒ **The claim holds to the digit it is stated at —
+Δ carries nine tenths of the arm's deficit in fifteen bins — and both figures move.** *So this is a
+clean substitution, and it is the one namesake site in that paragraph that the `r7651` audit did not
+list because the receipt still printed the old pair when the audit ran.*
+
+**Why the gate could see it and the figure audit could not.** `check_figures_pinned` asks whether a
+printed figure is *pinned*; `-1.074` was, by the literal the receipt carried. Interpolating that literal
+made the receipt stop carrying the token, and the only thing left in the corpus carrying `1.074` became
+the lobe split at l.1127 — 49 lines away, in a receipt that merely quotes it. **The transposition gate
+reads "which receipt carries this number" and so noticed that the number had left its own receipt.**
+⌗ *A gate for marker placement caught a stale figure, which is not what it is for.*
+
+**Adjudicated, not worked around.** The flag is a genuine coincidence — two different quantities sharing
+one token — and it is in `marker_transposition_baseline.tsv` as `not a transposition -- coincidence`
+with both halves recorded and this routing named. **The entry leaves that file the moment l.1145 lands
+`-1.056` and `-1.159`, because the token is then no longer shared and the flag cannot fire.**
+
+### And the second half of the same red was mine twice over
+
+The gate also reported a **STALE** entry: l.2147's sky intercept, adjudicated as *"the own group prints
+it at run time"*, had stopped firing because `r7653+cc66.110` **hard-coded** that figure into the comb
+receipt's PART 6 narrative. ⇒ Repaired by interpolating it, which is what the adjudication records.
+⛔ *And then the gate was still red, because the comment I wrote to explain the interpolation spelled
+the figure out. Naming a number in the comment that explains why you did not type it carries it just as
+surely as typing it in the gate. The marker gate reads the source.*
+
+⇒ `check_marker_transposition` now reads **no new transposition, no stale adjudication, both calibration
+cases re-found.**
+
+---
+
+## ⚑ `r7653` (cc66) — **l.2285's PIN IS IN, AND IT FOUND ONE HUNDREDTH: THE `0.75` IS THE PUBLISHED `0.79` ROUNDED TWICE, AND THE RECEIPT'S OWN ARITHMETIC GIVES `0.76`. `r7653` IS COMPLETE**
+
+### The pin you asked for
+
+Your `r7653` ruling located the interval and said what was owed: *"compute 12.5 and 0.75 at the interval's end in that receipt, and pin those and the 0.953."* Done, in
+`…the_selection_does_not_truncate…`, as a new **Ⓔ③** beside the existing Ⓔ①:
+
+| | value | the paper prints | fate |
+|---|---|---|---|
+| the interval's unfavourable end | `BLO = 0.9531` | $0.953$ | ✔ **pinned** |
+| one driving unit, carried across | **12.52 σ** | $12.5$ | ✔ **pinned** |
+| the sky against the control | **0.7551 → 0.76** | $0.75$ | ⛔ **one hundredth out — see below** |
+
+The centre of the interval (`R_ROB = 0.9821`) is what gives Ⓔ①'s **12.90** and **0.78**; the low end is
+what gives the paper's pair. ⌗ **"Unfavourable" is the SMALLER ratio**, because the corrected width is
+`S4 / ratio`: a smaller ratio widens σ and weakens the exclusion. ⇒ *So the sentence quotes the weakest
+reading its own interval admits, which is the conservative direction and worth saying — "both figures
+quoted above survive the change" is now a statement the receipt carries rather than one the paper makes
+unaided.* All three figures are **read out of `corpus/CR_cosmology.tex`**, not retyped.
+
+### ⛔ The one hundredth, and which number is wrong
+
+`0.75` is what the **published, already-rounded `0.79`** gives: `0.79 × 0.9531 = 0.7529`. The receipt's
+own unrounded sky figure is **`0.7923`**, and `0.7923 × 0.9531 = 0.7551`, which prints as **`0.76`**.
+⇒ **So the paper's `0.75` carries a rounding twice — once in the `0.79` it starts from and once in the
+product.** Its sibling `12.5` is unaffected: `13.14 × 0.9531 = 12.52` either way.
+
+**The gate accepts either and PRINTS which state the paper is in**, because correcting a printed digit
+is yours and not mine, while letting the gate pass on a figure neither route produces is not a choice at
+all. **My recommendation: l.2284 reads `$0.76$`.** It is a hundredth, it does not touch the claim
+("both figures survive"), and the reason to take it is that the receipt that now pins the sentence
+computes `0.76` — leaving `0.75` means the pin records a disagreement with the paper for good.
+
+⌗ *Three perturbations confirm the gate is not vacuous: breaking the locator, breaking the `12.5`
+comparison, and reversing the direction of the σ inequality each fail it alone.*
+
+### `r7653` is complete
+
+| item | state |
+|---|---|
+| ⓵ the arm of record's positions and heights, by the matched locator | **landed, pinned row by row** |
+| ⓵c the second instrument, the hierarchy path | **done** — my "cannot be" falsified; l.2074–2075 answered in its favour |
+| ⓶ l.2384–2387, the kernel's phase difference | **landed** (`cc66.107`) |
+| ⓷ the window paragraph, l.1178–1191 and l.1687 | **landed** — one wording call owed, the share |
+| ⓸ the three-grid truncation, l.1958–1966 | **landed** — every claim holds, all seven figures move |
+| ⓺ l.2147's intercept | **answered** — the matched four-peak pair, −0.2488 against −0.2448 |
+| l.2285's 12.5 / 0.75 / 0.953 | **pinned**, with the hundredth above |
+
+**Owed back to me, and nothing else is:** the share wording at l.1188–1190, the `0.76` at l.2284, and
+whether to print the matched pair at l.2072–2074 or say its line-of-sight figures are grid-snapped.
+
+---
+
+## ⚑ `r7653` ⓷ (cc66) — **THE WINDOW PARAGRAPH: THE CANCELLATION TIGHTENS, THE SHARE LOSES ITS BRACKET, AND R1 STOPS FIRING. ONE WORDING CALL IS OWED AND IT IS THE SHARE**
+
+### The figures, old → new
+
+| paper | namesake | **arm of record** | fate |
+|---|---|---|---|
+| l.1182 "$0.0652$ on the control against $0.0642$ on this arm" | 0.065229 / 0.064240 | 0.065229 / **0.064474** | the control unchanged; the arm **0.0642 → 0.0645** |
+| l.1183 "within a per cent and a half" | 1.516 % | **1.157 %** | **holds, tightens** → "a per cent and a quarter" |
+| l.1184 "fourteen per cent wider in conformal time" | +14.59 % | **+15.55 %** | **moves** → "fifteen and a half" |
+| l.1185 "fourteen per cent more slowly per unit of it" | −13.69 % | **−14.03 %** | **holds verbatim** |
+| l.1186 "within one part in ninety of unity" | 1 in 91.0 | **1 in 150.5** | **holds, tightens 1.65×** |
+| l.1188–1189 "between a quarter and a half" | 23–45 % | **11, 62, 18, 11, 15 %; 243 % in a sixth band** | ⛔ **no bracket survives** |
+| l.1189–1190 "closes between a fifth and two fifths" | 20–39 % | **18, 41, 12, 12, 8 %; 77 % in the same band** | ⛔ **no bracket survives** |
+| l.1190 "carrying about a third" | a third on average | **band-dependent, median ≈ 15 %** | ⛔ **not what it measures now** |
+| l.1687 "some fourteen per cent wider" on the leaf clock | — | **+14.9 %** | **already landed** at `r7639` |
+
+⛭ **The two "fourteen per cent"s were never one measurement.** l.1184 reads the visibility's width **in
+conformal time**; l.1687 reads it **on the leaf clock**. Both came to about fourteen on the namesake,
+which is why the sentence could carry one figure twice. On the arm of record they part company —
+**15.55** and **14.9** — so it cannot. ⇒ *The cancellation the paragraph argues for is BETTER on this
+arm, not worse: the product lands at one part in 150 where it was one part in 91.*
+
+### ⛭⛭⛭ Why the brackets break, and it is one band
+
+    namesake        1.0215  1.0574  1.0519  1.0606  1.0748  1.0659  1.0762
+    arm of record   1.0186  1.0818  1.0373  1.0868  1.1005  1.0141  1.1617
+                                                            ^^^^^^ q = 4.70
+
+The band excess is **non-monotonic** on this arm. `q = 4.70` carries the **smallest excess of the seven**
+and the **largest window narrowing** (2.72 per cent) at once, so the ratio of the two is meaningless
+there rather than large — **and both routes blow up in that one band, the same band**: 243 per cent by
+the inversion, 77 per cent by the direct swap. *Two routes sharing no machinery agreeing on which band
+the comparison fails in is stronger than either number, and it is why the band is named rather than
+averaged away.*
+
+⌗ **Independently confirmed.** `…the_term_mix_has_the_shape…` was re-pointed at `r7643+cc66.59` and
+already pins **exactly these seven ratios**, its own comment noting the arm's are "MORE scattered". A
+different receipt, re-pointed two orders ago by a different route, measured the same thing.
+
+### ⛔ And R1 stops firing — a result, not a tolerance to retune
+
+| | namesake | **arm of record** |
+|---|---|---|
+| intercept of ln(excess) vs $q^2$ | +0.039244 ± 0.007822 | **+0.035803 ± 0.029028** |
+| excess at $q=0$ | 1.0400 | **1.0365** |
+| significance | **5.02 σ** | **1.23 σ** |
+
+**The offset barely moves; the fit's error on it grows 3.7-fold**, because a straight line through
+non-monotonic band excesses is far less determined. **The argument is untouched** — a characteristic
+function is identically 1 at $k=0$, so no smearing can supply a $q$-independent offset — **but the
+evidence that this offset is distinguishable from zero is gone on this arm.** ⇒ *What l.1193's paragraph
+rests on is the asymmetry, which is untouched: 72 per cent of the peak-height excess against 13 per cent
+of the trough-depth excess, a 5.4-fold asymmetry (namesake 81 / 14, 5.7-fold).*
+
+### The wording call I owe you, stated as a recommendation
+
+**l.1188–1190 cannot keep its brackets.** My recommendation: say the channel closes **between a tenth and
+two fifths of the band excess in five of the six bands above the damping scale**, and that in the sixth
+its measured excess nearly vanishes so the share is not defined there — rather than quoting one fraction.
+"About a third" was true of the namesake and is true of this arm by neither route. **l.1190's "measured
+rather than modelled, and from a quantity nobody chose" still holds**, since that is about provenance.
+
+⚠ **And one thing I am NOT asserting a paper change for.** R1 is the receipt's own refutation condition
+from `r6959`'s `PREDICTION.md`, not a sentence in the paper. But if any paper sentence rests on the
+$q=0$ offset being distinguishable from zero, it rests on 5 σ that is now 1.2 σ.
+
+### What is landed
+
+`…the_windows_phase_spread…` re-pointed whole and its docstring moved; `…the_term_mix_has_the_shape…`'s
+lobe-split quote moved from `1.0668 / 1.0561` to the landed **`1.074 / 1.062`**; **`receipts/INDEX.md`
+l.954 amended in place** per your standing ruling; appendices regenerated; **`corpus/CR_cosmology.pdf`
+rebuilt** at 0 errors, 0 undefined refs, 0 undefined citations, 0 dead `rcpt:` links. **No `corpus/*.tex`
+prose touched.**
+
+⌗ **One bank ask for 70 that turned out not to be needed, recorded because the reasoning was the error.**
+I first judged the "quarter to a half" unre-pointable, because PART 4's response model uses two tapered
+coefficients and only `swap` has a `_leafrec1` sibling. **False**: those two coefficients calibrate *the
+control's own* response, and the arm enters only through its narrowing and its excess. One bank was
+enough. ⇒ *Fifth instance this turn of reasoning about a neighbouring quantity instead of the one asked
+about — and the first that would have cost someone else work.*
+
+---
+
+## ⚑ `r7653` (cc66) — **THE ARM OF RECORD'S POSITIONS AND HEIGHTS, PINNED ROW BY ROW; THE SECOND INSTRUMENT IS DONE AND IT ANSWERS l.2075 IN THE CLAIM'S FAVOUR; THE THREE-GRID TRUNCATION HOLDS ON EVERY COUNT WITH ALL SEVEN FIGURES MOVED**
+
+### ⓵ The positions and heights, by the matched locator, one procedure on every row
+
+Pinned in `…at_its_own_preferred_H0…` (PART 4B). The locator now returns the parabola's **vertex value**
+beside its vertex position, so the heights l.2075 claims come from the same fit over the same seven
+windows as the positions l.148 claims. φ/π is `fit_comb()[1]/π`, PART 1's own convention.
+
+| row | peaks | comb 1–4 | 1–3 | φ/π 1–4 | 1–3 | P₁/P₂ | P₁/P₃ |
+|---|---|---|---|---|---|---|---|
+| THE SKY | 220.98 / 533.79 / 814.79 / 1121.85 | 298.362 | 296.906 | −0.2448 | −0.2378 | 2.221 | 2.262 |
+| control, L2000 | 220.44 / 537.29 / 811.06 / 1123.99 | 298.441 | 295.308 | −0.2443 | −0.2292 | 2.204 | 2.225 |
+| namesake, L2000 | 221.11 / 538.63 / 815.49 / 1130.79 | 300.589 | 297.189 | −0.2494 | −0.2332 | 2.274 | 2.336 |
+| **ARM OF RECORD** | **220.03 / 536.25 / 811.59 / 1125.11** | **299.057** | **295.782** | **−0.2488** | **−0.2331** | **2.291** | **2.349** |
+| hier, control | 220.45 / 537.31 / 811.04 / 1123.96 | 298.429 | 295.299 | −0.2442 | −0.2291 | 2.204 | 2.225 |
+| hier, namesake | 221.11 / 538.64 / 815.47 / 1130.76 | 300.578 | 297.180 | −0.2493 | −0.2331 | 2.274 | 2.335 |
+| **hier, ARM OF RECORD** | **220.03 / 536.27 / 811.58 / 1125.02** | **299.029** | **295.773** | **−0.2486** | **−0.2330** | **2.291** | **2.348** |
+
+**The locator is validated on the sky first**: it returns 2.221 / 2.262 against `sec:intro`'s published
+2.217 / 2.277, 0.2 and 0.7 per cent.
+
+**Which statements hold on the arm of record:**
+
+| statement | its referent | fate |
+|---|---|---|
+| l.148 "the first three peaks within a grid step of the measured ones" | arm vs **sky**, first **three** peaks | ⛔ **FAILS**: offsets −0.95, **+2.46**, **−3.20** against a grid step of 2 |
+| l.2074 "within a multipole on every peak" | **hier vs line-of-sight**, one arm | ✔ **HOLDS, by a factor of twelve** — see ⓵b |
+| l.2075 "within one per cent on the heights" | the same two paths | ✔ **HOLDS, by a factor of sixty** — see ⓵b |
+
+**The comb and the parting, as you have them:** 299.057 against the sky's 298.362 → **299.1 against
+298.4, a part in 429**; the parting **299.06 against the ruler's 302.89** (the geometric ℓ_A is
+bit-identical on both arms at 302.8891, so the ruler cannot see the arm while the comb moves by 1.5).
+
+⛭ **The finding, which is not a figure: the re-point moves the POSITIONS toward the sky and the HEIGHTS
+away from it.** The comb's agreement improves from 1 part in 134 to 1 part in 429, while P₁/P₂ against
+the sky goes +2.40 → +3.16 per cent and P₁/P₃ +3.24 → +3.82. And the **control** is nearer the sky than
+either arm on the heights (−0.75 per cent), which is the direction l.146 already asserts.
+
+### ⓵b l.2074–2075's evidence pair is a MIXED-BASIS comparison, and that is the whole of the problem
+
+I flagged last turn that l.2074's claim looked false in its own printed figures. **It is not false; the
+figures offered as its evidence are not one measurement.** l.2072–2074 compares hier peaks located
+**sub-bin on a unit-step grid** (221.96 / 536.11 / 815.40 / 1130.53) against line-of-sight **raw maxima
+quantised to even ℓ by LSTEP=2** (222 / 538 / 818 / 1134), giving offsets −0.04, −1.90, −2.60, −3.47.
+The paper says so in terms and then compares them anyway.
+
+⇒ **Both paths through the one matched locator agree to ≤ 0.084 of a multipole at every peak and to
+0.011 % / 0.017 % on the height ratios, on the namesake and the arm of record alike.** So the claim holds
+comfortably. **The repair is to print the matched pair, or to say the line-of-sight figures are
+grid-snapped so the printed comparison is an upper bound.** Your call; I have not touched the paper.
+
+### ⓵c My prediction that the second instrument "cannot be done" is FALSIFIED
+
+It is done, through the **grid** bank `refit_grid185_leafrec1_distances/cr_base.npz` (and
+`refit_grid185/{lcdm,cr}_base.npz`), not anything in `spectra/`. **Cause, because it is reusable: I
+searched by FILENAME CONVENTION instead of asking which receipt computes the quantity** — the same genus
+as keying order detection on heading format. The two `spectra/r6784_cr_crossing_hier{,_leafrec1}.npz`
+banks sit at ℓ_A ≈ 172, the H₀ = 73 crossing, and are the wrong configuration.
+
+### ⓺ l.2147's intercept, and why it must move to the same fit as the comb
+
+l.2147's **−0.2349 against the sky's −0.2405** is the **namesake's raw-grid three-peak** pair. The pair
+that goes with a landed comb of **299.1** is the **matched four-peak** one: **−0.2488 against the sky's
+−0.2448** (three-peak: −0.2331 against −0.2378). ⇒ *Printing a four-peak comb beside a three-peak
+intercept would mix two fits inside one paragraph, which is why items ⓵ and ⓺ have to land together as
+you say.*
+
+### ⛔ The LSTEP=2 trap, in its purest form — and it decides which figure l.813 can take
+
+l.2073–2074 prints "this path's" peaks and heights from the **raw-grid** method. On the arm of record
+that method gives **220, 536, 814, 1130**, comb **297.0**, φ/π **−0.2379**, heights **2.281 / 2.312** —
+and its first three maxima land on the **control's own cells**, so its comb and φ come out
+**bit-identical to the control's** while the heights do not; only the fourth peak separates them (1130
+against the control's 1128). ⇒ **So l.813's arm-of-record comb cannot come from this method.** 299.1 is
+the matched locator's; 297.0 is an artefact of where the cells fall.
+
+### ⓸ The three-grid truncation, l.1958–1966 — every claim holds, all seven figures move
+
+70's `audit_leafrec1.py` reproduces here in 21.5 s, byte-identical to its banked log.
+
+| cut | 850 | 1000 | 1200 | 1400 | 1600 | 1800 | (1900) | 1996 |
+|---|---|---|---|---|---|---|---|---|
+| paper now | −1.0 | +14.4 | +51.0 | +67.9 | +74.7 | +84.0 | (+88.3) | +93.8 |
+| **arm of record** | **−1.1** | **+14.2** | **+49.5** | **+66.7** | **+72.6** | **+81.3** | (+85.2) | **+90.2** |
+
+| claim | namesake | **arm of record** |
+|---|---|---|
+| "more than half … eight hundred multipoles below the ceiling" | 54.4 % | **54.9 %** |
+| "about half, between ℓ≃850 and 1500" | 52.2 % | **51.8 %** |
+| "a third … below the onset" | 30.8 % | **32.1 %** |
+| "not converged — grows to the last bin" | +5.5 | **+5.0** |
+| "within about one unit of the control" | 1.1 | **0.3** |
+
+⛭ **Two things get STRONGER.** The forbidden arm sits within **0.3** of the control at every one of eight
+ceilings, fourfold tighter than "about one unit" — **recommendation: state it as "within three tenths of
+a unit"**. And the stamped difference between the arms narrows from the pair `('LEAFGEOM','LEAFREC')` to
+**`('LEAFGEOM',)` alone**, because both arms now read `_leafrec1` siblings: the comparison is now
+like-for-like in the stamps as well as the sampling.
+
+### ⚠ Flagged, NOT asserted, NOT acted on
+
+1. **l.1953–1955's four-ceiling run lengths** (`9, 9, 13, 22` and `9, 9, 9, 12`, "eight or nine" at the
+   bottom) match **neither audit's** `longest` column at any four of its eight ceilings — both audits
+   give specified `4, 5, 11, 20, 23, 23, 27, 33` and forbidden `4, 4, 4, 5, 7, 8, 8, 8`. The figures that
+   DO appear there are the **preceding** paragraph's full-range 22 and 12 (l.1941–1946). ⇒ That sentence
+   reads a **different run-length convention** from the audit it cites, and its source needs establishing
+   before it can be re-pointed. It is cited to the three-grid receipt, which gates none of it.
+2. **The audit's contrast coefficients** are `−0.0670 ± 0.0086` (−7.78σ) and `−0.0092 ± 0.0085` (−1.09σ)
+   against l.1941–1946's `−0.0642` and `−0.0069 ± 0.0083`. **The namesake audit gives the same pair, so
+   this is not a re-point consequence**; the two routes may simply differ, and that paragraph has its own
+   receipt.
+3. **70's `** DIFFERS **` line** (`forbidden cr chi2 186.1350 (receipt 184.989) crossings 87 (91)`) is
+   70's own, against namesake receipt literals, and the wrapper says so by construction.
+
+### Two gate repairs taken rather than carried
+
+- **A gate of mine had been passing VACUOUSLY since `r7109`.** The three-grid receipt's control-hash gate
+  read `('SHA' in OUT or 'sha' in OUT)` — the audit prints no hash, but its first line is a
+  `RuntimeWarning` carrying `/home/user/shadow-of-existence/`, and `'sha'` matches `sha`dow. The
+  `1 distinct` it ANDed with came from the ell-sampling lines, not the control. Both conjuncts true for
+  unrelated reasons, on both audits, for the gate's whole life. It now reads the audit's own
+  byte-identity line.
+- **And that receipt had never opened the paper** whose figures its labels attributed to it.
+  `check_unread_figure` was right, **for the fourth time on this seat**. PART 6 now READS the paragraph
+  out of `corpus/CR_cosmology.tex` — nine reads, each tested against the run — with the two spans this
+  turn proposes rewording held as disjunctions and the rest pinned hard. Six new quote-pin keys,
+  adjudicated DELIBERATE; three spans had to be **reshaped** first, because the paper's leading "with"
+  and "even though" would have left them dangling under the subject rule.
+
+### ⌗ The methodological finding of this turn, since it is the same one four times
+
+Four of five registered commitments are falsified, and **every one by the same move: reasoning from a
+neighbouring quantity instead of the one asked about.** ⓵a attached two statements to arm-vs-sky when
+they compare two instrument paths; ⓵c keyed a bank search on a filename convention; ⓶ transferred
+`r_D`'s VISLEAF-family response to a different comparison; ⓸ reasoned from the figure the order named
+instead of the table it came out of. *The cheap guard is the one that worked every time it was applied:
+establish the referent from the paper before predicting anything about it.*
+
+---
+
 ## ⚑ `r7467` — **PIN FIRE ROUTED: the `open-list` pin, and it fired because the open list actually changed**
 
 `check_explainer_pins` fired on `open-list` at `EXPLAINER.md` l.268 — *"Each of the papers says plainly what

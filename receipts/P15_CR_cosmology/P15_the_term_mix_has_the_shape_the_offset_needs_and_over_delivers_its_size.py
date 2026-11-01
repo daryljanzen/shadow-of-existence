@@ -117,7 +117,8 @@ COMPUTES: scope.
   * ** ⓶'s class table is computed, not quoted: ** each operation is applied to the control's own binned
     spectrum here and read with the same envelope and the same anchored locator as everything else.
   * `PO-47`'s anchors $220.6/538.1/809.8/1121.9$ and widths $1.00/1.20/1.60/2.36$ are quoted from that
-    receipt.  `cc66.46`'s $1.0668/1.0561$ variance split is quoted.  The statistic is `r6911+cc66.40`'s,
+    receipt.  The landed $1.074/1.062$ variance split is quoted -- l.1127's own figures as of `r7653`, where
+    `cc66.46`'s namesake pair was $1.0668/1.0561$.  The statistic is `r6911+cc66.40`'s,
     unchanged, and the locator `cc66.45`'s anchored parabola.
 """
 import os
