@@ -363,7 +363,8 @@ print(f"""
   construction's".  The number stands; the inference does not.  Both models are fitted to the same
   data, so r_CR = r_control + (m_CR - m_control) exactly, and the shared fraction measures how
   similar the two MODELS are.  ** The control tilted by dn_s = +0.02 -- a model nobody believes, at
-  chi^2 = 214.6 -- scores 82.2 per cent, higher than the arm's 73.1. **  The statistic cannot
+  chi^2 = 214.6 -- scores 82.2 per cent, higher than the arm of record's {_sf:.1f} (the namesake
+  arm's was the 73.1 this withdrawal quotes). **  The statistic cannot
   attribute a misfit and I should not have read it as doing so.
 
   ** AND THE CORRECTED READING POINTS THE OTHER WAY. **  The control already fits at
@@ -397,7 +398,8 @@ print("GATES: ALL PASS.")
 print(f"""
 ESTABLISHED: r_CR = r_control + (m_CR - m_control) exactly, so the shared fraction ranks model
 similarity rather than attributing misfit -- a control tilted by dn_s = +0.02 scores 82.2% against
-the arm's 73.1% -- and cc66.33's sentence reading it as "the transfer's and not the construction's"
+the arm of record's {_sf:.1f}% -- and cc66.33's sentence reading it as "the transfer's and not the
+construction's"
 is WITHDRAWN.  The control fits at {C2_L/n:.3f}/bin, the arm exceeds it by {C2_C - C2_L:+.1f}, and the model difference
 carries {float(DIFF @ DIFF):.1f} of that, so the excess is the construction's.  Of r6881's four diagnostics the rms
 ratio reproduces ({float(np.std(DG['cr'][4])/np.std(DG['lcdm'][4])):.3f} against 1.34) and three do not survive on the control: the peak/trough

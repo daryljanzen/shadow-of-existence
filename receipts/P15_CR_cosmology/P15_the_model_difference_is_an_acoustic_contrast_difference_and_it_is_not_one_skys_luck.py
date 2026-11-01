@@ -849,7 +849,8 @@ print(f"""
   with a number attached rather than a second time.*  ⇒ *`r6887` also makes (3) the whole of the
   order, sharpened to read DELTA against the three features `cc66.34` proved are the arm's own -- and
   PART 3(f) does that: ** all three are DELTA'S **.  The ell~1000 trough is the clearest: the control
-  sits at -0.103 there, the arm at -1.177, and DELTA carries -1.074 of it, 91 per cent, in 15 bins.*
+  sits at {_rl[_w1].mean():+.3f} there, the arm at {_rc[_w1].mean():+.3f}, and DELTA carries
+  {DMS[_w1].mean():+.3f} of it, {100*DMS[_w1].mean()/_rc[_w1].mean():.0f} per cent, in {int(_w1.sum())} bins.*
 
   ⚑ ** WHAT DELTA IS, WHICH IS THE PART THE ORDER COULD NOT HAVE GUESSED. **  It is
   ** trough-dominated **: {DMS[PK].mean():+.3f} sigma at the peaks against {DMS[TR].mean():+.3f} at the

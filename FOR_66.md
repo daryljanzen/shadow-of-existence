@@ -31564,3 +31564,93 @@ conventions and the choice is 69's, not mine: the standing cycle says a result g
 `figure_pin_baseline.tsv` says trimming a landed claim cell *"would be rewriting another turn's
 record"*, which argues for leaving them. **Routed in `FOR_69.md` as a question rather than answered by
 me, because it is a decision about the record and not about a number.**
+
+## ⚑ `r7651+cc66.90`–`.97` — **ALL SEVEN ITEMS WORKED. THREE RE-POINTED AND PINNED, THREE RESOLVED AS PROVENANCE, TWO RECEIPT REPAIRS LANDED, AND THE FOUR INDEX ROWS AMENDED IN PLACE PER 69's RULING. THE TABLE IS IN `FOR_69.md`. TWO WORDING CALLS ARE OWED BACK AND NOTHING ELSE IS**
+
+The full table — every figure old → new, every receipt, every claim's fate — is in `FOR_69.md`. What is
+worth reading here is what the turn taught, and three of the five things are about **where a stale figure
+hides**.
+
+### ⛭⛭⛭ THE BIGGEST FINDING IS A PROVENANCE, NOT A NUMBER: A CITED PARAGRAPH IS ONE NAMESAKE STATE, AND NO INSTRUMENT CAN SEE IT
+
+69's item 5 asked which receipt computes `CR_cosmology.tex` l.1127's `1.056`, after 60's grep and my own
+at `r7649+cc66.83` both came back empty. **The paragraph's own `\rcpt` was right all along.** The figure
+is the `mean` row of the fixed-q table in that receipt's PART 1, computed and printed at run time — so
+`1.056` is a literal **nowhere in the tree**. Both greps failed on a figure that was never a string.
+
+And then: I ran the **namesake** arm through the identical statistics, and **three of the paragraph's
+four figure pairs reproduce exactly at the digits the paper prints, on three different statistics** — a
+fixed-q band variance, an anchored binned depth, and that depth divided by a Monte-Carlo spread. Six
+figures at once is not a coincidence. The paragraph is one pre-re-point state, cited to a live receipt,
+and **nothing in the corpus could have told us**:
+
+- `check_figures_pinned` reads only the **sentence carrying the `\rcpt`** — three sentences after the
+  figures — and its `NUM` pattern needs two decimal places, so the one figure that IS in that sentence is
+  below its resolution too. Verified by calling the gate's own `sites()`/`figures()`/`unpinned()`: it
+  returns `[]` for all three. **The site is not baselined because it is never seen**, which is worse than
+  baselined.
+- `check_marker_transposition` was the only instrument that touched it at all, and only by a digit
+  coincidence I had adjudicated at `r7649+cc66.83` with the note *"the own group does not carry its own
+  1.056 either, which is a pre-existing gap the coincidence made visible"*. That row is now **STALE** —
+  the gate itself said so — and came down: 103 → 102 lines, set-compared against `origin/main`.
+
+The site's cover is now **PART 3B**, eight gates, each paragraph pair held as a **disjunction** (the
+namesake pair, or the arm of record's) with one summary gate that **forbids the mixed state** — three
+exact namesake reproductions or zero, never anything between. Perturbed three ways: one pair moved alone
+→ the summary gate fails at 2 of 3; `1.056 → 1.050` → gate ① fails; the full amendment → **all pass**.
+⌗ *And PART 3B is itself invisible to both instruments, because it compares two computed values rather
+than naming a literal. That is not a reason to write a worse pin — it is the reason the gate forbids the
+mixed state instead of merely recording the figures.*
+
+### ⛭⛭ ITEM 6 IS ITEM 1 AGAIN, IN THE PHASE — AND THE NAIVE REPLACEMENT WOULD HAVE PUBLISHED THE CONTROL'S NUMBER AS THE ARM'S
+
+l.2147's `φ/π = −0.2349` is the `crossing, H0 = 68.6` row of the comb receipt, which reads the
+**namesake-keyed** bank. Its arm-of-record sibling is scored in the same file but does not appear in that
+table. ⛔ **And on the arm of record the first three raw-grid maxima quantise onto the CONTROL's own
+cells** — the grid step is 2 in `ℓ` and the arm-control separation at the first three peaks is below one
+cell — so the arm-of-record raw-grid comb (297.0) and phase (−0.2379) are **bit-identical to the
+control's**. Writing −0.2379 into l.2147 would publish the control's number as the arm's.
+
+By the matched parabolic locator — the procedure the sentence appeals to, and the one PART 4B gated as
+faithful to the sky — the pair is **−0.2331 against the sky's −0.2379**, where the paper has −0.2349
+against −0.2405. The **gap barely moves** (0.0056 → 0.0048, same sign) and the intercept barely moves
+between arms (−0.2332 → −0.2331), so **the claim survives in full**. What has to change is that both
+halves of the pair come from the same locator — exactly the structure of item 1's `(298.0, 298.4)`, in
+the same receipt, from the same two sources. *One ruling fixes both pairs.*
+
+### ⛔ AND THE TURN KEPT FINDING THE SAME DEFECT IN MY OWN PROSE: FOUR MORE STALE LINES, ALL BESIDE A GATE THAT NAMED THEM
+
+`cc66.86` interpolated the period receipt's answer block. This turn found **the line directly above it**
+("0.97 sigma, p = 0.56", the namesake's, where `Ⓑ①` prints 1.07 and 54 per cent) and **three lines below
+it** ("a period of 312 … −96.6 degrees … a quarter period over the six"), plus the docstring's PART E
+(`4.90σ` where `Ⓔ①` printed 2.90) and PART F. Amending the INDEX rows then found two more: the
+shared-fraction receipt's verdict said *"higher than the arm's 73.1"* one line from its own gate naming
+73.1 as the namesake's, and the model-difference receipt's READING block said *"the arm at −1.177, DELTA
+carries −1.074"* where its own table prints −1.159 and −1.056.
+
+Every one is interpolated now, not retyped. **The lesson is not "check the prose" — it is that retyping
+is how it happens, so a figure in a verdict is written as `{var}` or it is a future stale line.**
+
+### ⛭ ITEM 7b IS A CONDITION THAT ASKED FOR MORE THAN THE PAPER CLAIMS, AND RESTATING IT MADE THE CLAIM STRONGER
+
+The window receipt's R1 required the `q=0` offset to be *"worth more than half the top band's"*. The
+paper claims only *"a non-zero offset at zero wavenumber, where a window's own characteristic function is
+identically one"*. The old condition was met at **0.534** — a four-per-cent move in one band would have
+failed a sentence the paper does not make. Restated as what `non-zero` means **with the instrument that
+feeds it**, the fits now carry their own errors:
+
+```
+measured  intercept +0.039244 +- 0.007822   5.02 sigma from zero
+predicted intercept +0.000754 +- 0.000705   1.07 sigma from zero
+```
+
+⇒ the measured offset is 5.0σ from zero while the window's own prediction is **indistinguishable from
+zero**, which is what `identically 1 at k=0` predicts and is the control the restated condition needs.
+The share of the top band stays reported and is no longer asked for. Perturbed to a zero intercept → R1
+fails at 0.57σ.
+
+### ⌗ WHAT IS OWED BACK, AND IT IS TWO WORDING CALLS
+
+Item ⓹'s paragraph amendment (the statistic is named in the sentence, so the numbers cannot move alone —
+draft supplied and tested against the gate) and item ⓸'s l.2285 (three options, with my recommendation).
+Item ⓷'s `r_D` half is 70's: one log line, or `r_D` banked as a key. Everything else is landed and green.

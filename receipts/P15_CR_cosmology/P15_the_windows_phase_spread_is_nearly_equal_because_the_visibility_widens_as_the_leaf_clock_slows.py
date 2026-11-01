@@ -46,9 +46,13 @@ D_{\rm lcdm} = 1.00078 \to 1.01654$ across the seven bands against a measured ex
   * ⛔ ** R2, the size, fires on the ANALYTIC channel: ** $\ln\mathcal R_1$ at the top band is $0.0164$
     against the measured $0.0734$ -- $0.223$, outside the $[\tfrac12,2]$ bar fixed in advance.
   * ⛔ ** R1, the shape, fires and is the durable half: ** $\ln(\text{measured excess})$ against $q^2$ has
-    an intercept of $0.0392$ -- an excess of $1.0400$ at $q=0$, $0.534$ of the top band's, above the half
-    the condition set.  ** A characteristic function is identically $1$ at $k=0$, so no smearing can
-    supply a $q$-independent offset at all ** (the prediction's own intercept is $0.00075$).
+    an intercept of $0.0392 \pm 0.0078$ -- an excess of $1.0400$ at $q=0$, and $5.0\sigma$ from zero
+    on the fit's own error.  ** A characteristic function is identically $1$ at $k=0$, so no smearing can
+    supply a $q$-independent offset at all ** -- and the prediction's own intercept is $0.00075 \pm
+    0.00071$, $1.1\sigma$, which is that prediction.  *`r7651+cc66.97`: the condition was `worth more
+    than half the top band's`, a size the paper never claims and met at $0.534$; it now asks what the
+    paper's sentence asks -- non-zero against the intercept's own error -- and the share of the top
+    band is reported rather than required.*
   * ⚠ ** AND R3's BRACKET WAS WRONG IN DIRECTION, WHICH I RECORD RATHER THAN ABSORB. **  `PREDICTION.md`
     ⓵ᵇ4 argued the contrast responds *between* $f$ and $f^2$ because $D_\ell$ is quadratic in the
     transfer.  ** Measured, it responds $1.2$ to $2.5$ times MORE than $f$ per unit coefficient, at both
@@ -366,17 +370,41 @@ check("the shortfall is worst at the bottom of the band, where a smearing has al
 
 # ---- R1, the shape ------------------------------------------------------------------------------
 q2 = QC ** 2
-sl_m, ic_m = np.polyfit(q2, np.log(MEAS), 1)
-sl_p, ic_p = np.polyfit(q2, np.log(R1), 1)
+#   ⛭⛭ r7651+cc66.97: ** THE TWO FITS NOW CARRY THEIR OWN ERRORS, because R1's condition is
+#   restated below on the INTERCEPT'S OWN ERROR and a condition needs the instrument that feeds it.
+#   ** *The covariance is the straight-line fit's own, over the seven bands; nothing else changes.*
+_cm, _Vm = np.polyfit(q2, np.log(MEAS), 1, cov=True)
+sl_m, ic_m = float(_cm[0]), float(_cm[1])
+_se_m = float(np.sqrt(np.diag(_Vm))[1])
+_cp, _Vp = np.polyfit(q2, np.log(R1), 1, cov=True)
+sl_p, ic_p = float(_cp[0]), float(_cp[1])
+_se_p = float(np.sqrt(np.diag(_Vp))[1])
 print(f"\n  ln(excess) against q^2 -- measured: slope {sl_m:.6f}, intercept {ic_m:.6f} "
       f"({np.exp(ic_m):.4f} at q=0);  predicted: slope {sl_p:.6f}, intercept {ic_p:.6f}")
+#   ⛔⛭⛭ r7651+cc66.97: ** R1 ASKED FOR MORE THAN THE PAPER CLAIMS, AND THE PAPER'S CLAIM IS THE
+#   WHOLE OF WHAT THIS GATE NOW ASKS. **  *l.1199 says only `the measured response extrapolates to a
+#   non-zero offset at zero wavenumber, where a window's own characteristic function is identically
+#   one`.  The old condition asked that the offset be worth MORE THAN HALF THE TOP BAND -- a size the
+#   paper never asserts, met at 0.534, so a four-per-cent move in one band would have failed a
+#   sentence it does not support.*  ⇒ *** Restated as what `non-zero` means with the instrument that
+#   feeds it: the intercept against ITS OWN ERROR from the same straight-line fit.  The share of the
+#   top band stays REPORTED, beside the verdict, because it is informative and is not the claim. ***
 check("⛔ ⓵ᶜ R1 FIRES -- THE SHAPE: the measured excess extrapolates to a NON-ZERO offset at q=0, "
-      "worth more than half the top band's, and a characteristic function is identically 1 there",
-      ic_m / np.log(MEAS[-1]) > 0.5,
-      f"intercept {ic_m:.6f} is {ic_m / np.log(MEAS[-1]):.3f} of the top band's {np.log(MEAS[-1]):.5f}")
+      "where a window's own characteristic function is identically 1, so no smearing can supply a "
+      "q-independent offset at all.  ⛭ *Non-zero AGAINST THE FIT'S OWN ERROR ON THE INTERCEPT, "
+      "which is the whole of what the paper's sentence claims -- the share of the top band is "
+      "reported beside it and is not asked for*",
+      ic_m > 0.0 and ic_m / _se_m > 3.0,
+      f"intercept {ic_m:+.6f} +- {_se_m:.6f}, {ic_m / _se_m:.2f} sigma from zero "
+      f"({float(np.exp(ic_m)):.4f} at q=0); reported for scale, it is "
+      f"{ic_m / np.log(MEAS[-1]):.3f} of the top band's {np.log(MEAS[-1]):.5f}")
 check("the prediction's own intercept is two orders down, as a smearing's must be -- so the offset is "
-      "not a shared systematic of the fit",
-      abs(ic_p) < 0.02 * abs(ic_m), f"{ic_p:.6f} against {ic_m:.6f}")
+      "not a shared systematic of the fit.  ⛭ *And read on the same footing as R1 above it is "
+      "indistinguishable from zero, which is what `identically 1 at k=0` predicts and is the control "
+      "the restated R1 needs*",
+      abs(ic_p) < 0.02 * abs(ic_m) and abs(ic_p) / _se_p < 3.0,
+      f"{ic_p:+.6f} +- {_se_p:.6f} ({abs(ic_p) / _se_p:.2f} sigma from zero) against the measured "
+      f"{ic_m:+.6f} ({ic_m / _se_m:.2f} sigma)")
 check("and the q^2 SLOPE is the half that does survive: the prediction supplies a fifth to a half of "
       "it, not a hundredth", 0.2 < sl_p / sl_m < 0.6, f"{sl_p / sl_m:.3f} of the measured slope")
 

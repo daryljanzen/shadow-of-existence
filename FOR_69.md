@@ -5452,3 +5452,213 @@ I am not choosing, because there are two defensible conventions and both are you
 the namesake measurement was really made — but the duplication question is real and the call is yours.
 Say which and I do it in one pass, with the appendices regenerated and the PDF recompiled if the appendix
 text moves.
+
+## ⚑ `r7651+cc66.90`–`.97` — **ALL SEVEN ITEMS, ONE TABLE. THREE RE-POINTED AND PINNED, THREE RESOLVED AS PROVENANCE, TWO RECEIPT REPAIRS LANDED — AND THE FOUR INDEX ROWS AMENDED IN PLACE AS YOU RULED. TWO ITEMS NEED A WORDING CALL AND NOTHING ELSE DOES**
+
+`PREDICTION.md` registered before the first computation (`cc66.90`), five commitments, with the
+structural call deliberately set as the INVERSE of the one `r7649` got wrong.
+
+### ⓵ The comb, `298.0` against the sky's `298.4` — **the paper's figure is not the procedure its own sentence names, and the claim is BETTER on this arm**
+
+Landed as a new **PART 4B** of `…at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number` (`cc66.91`, repaired at `cc66.94`), the receipt l.813/l.883/l.945/l.2067 all cite.
+
+**The provenance first, because it turned the item into more than a re-point.** `score()` finds peaks with `argrelextrema(Dl, order=3)` on the model's OWN NATIVE grid. The L2000 banks are `LSTEP=2`, so those maxima are **quantised to even `ℓ`**: the namesake's are 222 / 538 / 818 / 1134, every one a grid point, and their three-peak comb is **298.00** — the paper's figure to the digit. The sky's `298.4` is `sec:intro`'s stored quartet through the same three-peak fit, 298.45.
+
+⛔ So l.813's *"fitted to those peaks by the procedure this paper runs on the sky"* is **false of the procedure it names**, and was false on the namesake too. By that procedure — lens with P15's own operator, bin through `plik_lite`, cubic-spline to 1-in-ℓ, parabola over ±W, W swept over seven windows, identically on the sky and each arm:
+
+| | peaks (matched locator) | comb 1–4 | comb 1–3 | geometric ℓ_A |
+|---|---|---|---|---|
+| THE SKY, this locator | 220.98 / 533.79 / 814.79 / 1121.85 | 298.362 | 296.906 | — |
+| namesake L2000 | 221.11 / 538.63 / 815.49 / 1130.79 | 300.589 | 297.189 | 302.889 |
+| **ARM OF RECORD, distances'** | 220.03 / 536.25 / 811.59 / 1125.11 | **299.057** | 295.782 | 302.889 |
+
+⇒ ***the agreement is claimed finer than the method that produced it can resolve***: 0.13 per cent, on peaks quantised to 2 in `ℓ`, where the parabolic locator moves the namesake's fourth peak by **3.21**. Same defect class as `cc66.81`'s 10-per-cent relative tolerance on a shift a fiftieth of its locator's grain.
+
+⇒ **And the claim is better on the arm of record, not worse.** Against the sky by the named procedure the namesake is **+2.227**, 1 part in **134**; the arm of record **+0.695**, 1 part in **429**. So l.2067's *"right to a part in six hundred"* survives in DIRECTION and not in SIZE, and it survives better on this arm — the opposite of residue. *(By the paper's own raw method the arm of record gives 297.00 against the unchanged 298.45, so stated that way the gap goes 0.45 → 1.45 and the claim weakens to 1 part in 206. Both readings reported; neither hidden.)*
+
+⛭⛭⛭ **And here is `cc66.81`'s parting in its cleanest form.** At the distances' point the banked `l_A`, `D_M` and `r_s` are the SAME NUMBERS in both files — the background cannot see the arm — while the comb the spectrum actually has goes **300.589 → 299.057**. The fitted comb sits **0.759 per cent** below the reported ruler on the namesake and **1.265 per cent** below it on the arm of record. l.945's *"the comb at 298.0 against a reported scale of 302.9"* is the paper already printing the parting, and 302.889 is that ruler.
+
+⌗ The port is gated before anything is read off it: the matched locator run on the SKY must reproduce `sec:intro`'s own quartet, and does. **My prediction is falsified in one reading and holds in the other, and both are stated** — I predicted 297.5–299.0; the named procedure gives 299.057, the raw method 297.00, so it is outside at both ends. The falsifier I named ("more than 1.0 from the sky") holds for the named procedure and fails for the raw one.
+
+### ⓶ l.2102–2110, the visibility-width swap — **re-pointed, with the geometry keys named, and one sign flips**
+
+`…the_visibility_width_is_not_the_carrier…` (`cc66.92`). All three banks have `_leafrec1` siblings, so it is a re-point — but ⛔ **`r6919_geometry_leafrec1.npz` is RE-KEYED**: all 30 `__cr` keys are bit-identical to the namesake's and the arm of record sits under 17 new `__cr_leafrec1` keys, so `GE['fwhm__cr']` on the sibling returns the NAMESAKE in silence. `GK` is the explicit naming your `r7643` rule requires.
+
+| | namesake | arm of record |
+|---|---|---|
+| visibility width in comoving distance | +14.586% | **+15.548%** |
+| sound horizon accumulated across it | −0.077% | **+0.357%** ⛔ *sign flips* |
+| `d r_s / d chi` | −12.8% | **−13.1%** |
+| control's fold, own width | 0.3704 ± 0.0132 | unmoved |
+| control's fold, swapped | 0.3639 ± 0.0139 | **0.3633 ± 0.0140** |
+| arm's fold, own width | 0.4003 ± 0.0138 | **0.3995 ± 0.0142** |
+| arm's fold, swapped | 0.4007 ± 0.0131 | **0.3994 ± 0.0135** |
+| all four folds resolved at | 26.10–30.51σ | **25.97–29.50σ** |
+| arm-to-control fold difference | +8.1% → +10.1% | **+7.8% → +9.9%** |
+| the swap's amplification of the q-slope | 4.56× | **4.91×** |
+
+**Every conclusion survives**: the swap is still well posed, it still AMPLIFIES the arm-to-control q-dependence instead of closing it, and the undo still fails in both directions. ⌗ The control's swapped leg moves because the swap imposes the ARM's width on it and the arm's width is what moved; its own-width leg is unmoved. ⛔ **And the paper's `14.3` matches NEITHER arm** (14.586 namesake, 15.548 arm of record) — the old label covered that over. My prediction said "about 15.5" and it is +15.548.
+
+### ⓷ l.2384–2387, the kernel's phase difference — **it SPLITS: half is measured and the figure moves 5.3×; half cannot be computed at all**
+
+`…the_kernels_phase_difference…` (`cc66.93`). `r_s/D_M` IS `θ_*/π` and needs only `r_s` and `D_M`, both of which the sibling grid's `cr_base.npz` carries:
+
+| | r_s | D_M | r_s/D_M | agreement with the control |
+|---|---|---|---|---|
+| control | 144.528076 | 13864.662715 | 0.0104242043 | — |
+| namesake arm | 145.328084 | 13941.629043 | | **1 part in 63,059** |
+| **ARM OF RECORD** | 146.572525 | 14061.966911 | | **1 part in 11,927** |
+
+⇒ l.2385's *"share the other, the acoustic angle, to a part in seventy thousand"* is the **namesake's** (1 in 63,059); on the arm of record it is **a part in twelve thousand**, a factor 5.3 looser. **The claim survives** — the arms do share the angle, and 1.2e−4 is still four orders below the residual the sentence compares it with. ⛔ **The other half is blocked on one line of output**: `r7093_directions/grid_oneclock_leafrec1/` holds its nine `cr_*.npz` and **no `cr_base.log`**, and `arm_inputs` reads `r_D` out of that log's `diffusion: r_D at the visibility peak` line. Without it the `0.27` per cent in `r_D/D_M` — and the `−0.014` degrees the sentence turns on — are not computable on this arm. **FOR 70:** that log beside the sibling grid, or `r_D` banked as a key in the `.npz`.
+
+⛔ **My prediction was wrong as stated, right in direction, badly wrong in size, and the cause is a ground I transferred where it does not apply.** I reasoned from `r7649`'s 0.464 per cent `ℓ_A` gap, which is 300× looser than a part in seventy thousand. On THIS grid the arm-control `ℓ_A` difference is 0.0016 per cent on the namesake and 0.0084 on the arm of record — not 0.464. `grid_oneclock` is a different background from `refit_grid185`'s refit point, with the two arms matched in `θ_*`, which is exactly why the angle is shared. And the escape clause I had written does not apply: the claim is not insensitive to the switch — it moved 5.3 times — so the prediction failed on its own terms and not on the one I had hedged.
+
+### ⓸ l.2285's `0.75` and `12.5`
+
+**The receipt that computes the pair:** `P15_the_peak_plane_survives_the_merge_the_sky_lands_within_one_sigma_of_the_control_and_a_full_driving_unit_is_thirteen_but_half_the_draws_lose_the_fourth_peak.py`.
+It prints both quantities at the interval's **centre**:
+
+| quantity | Δφ | σ units | Δalt | σ units |
+|---|---|---|---|---|
+| one driving unit | +0.12542 | **13.1** | +0.02968 | 3.1 |
+| the sky, vs control | +0.00756 | **0.79** | −0.00255 | 0.27 |
+
+on `robust sigma(phi) SPH = 0.009574` (st.dev. 0.107, a factor of eleven).
+
+**And l.2285's `12.5` and `0.75` are those same two quantities on ONE larger σ:**
+
+```
+0.12542 / 13.1 -> sigma = 0.009574      to give 12.5 sigma: sigma = 0.010034
+0.00756 / 0.79 -> sigma = 0.009570      to give  0.75 sigma: sigma = 0.010080
+the two required sigmas agree to 0.46 per cent
+```
+
+⇒ the two paper figures are **internally consistent** — one σ ≈ 0.01005, about 4.9 per cent above the robust σ — and so they are **not two independent errors**.
+⛔ **But the receipt constructs no interval on σ at all.** `robust()` returns a single `SPH`; there is no bootstrap, no percentile, no sweep. So "the unfavourable end of the interval" has no definition anywhere in the tree, and neither figure is reproducible from any receipt as printed.
+
+**Three ways to close it, yours to pick:**
+1. **Define the interval and compute the pair at its upper end.** This is a NEW claim and a new computation, not a repair.
+2. **State the pair at the one σ the receipt computes** — 13.1 and 0.79 — and drop the "unfavourable end" clause.
+3. **Keep the clause and name where 0.01005 comes from.** I could not find it.
+
+*My recommendation: (2).* The sentence's work is done by "a full driving unit is thirteen σ and the sky is under one" — which is what the receipt measures — and (1) buys a wider number at the cost of a construction no receipt has.
+
+### ⓹ l.1127's `1.056`: **its receipt is the group's own, and the whole paragraph is the namesake's**
+
+**The receipt is the one the paragraph already cites:** `P15_the_contrast_excess_is_symmetric_about_the_envelope_and_the_troughs_are_where_the_sky_measures_it_best`.
+It computes the figure as the **`mean` row of the FIXED-q table in PART 1**, at run time — so `1.056` is a literal **nowhere in the tree**, which is why 60's grep and my own at `r7649+cc66.83` both came back empty. The citation was right all along; the figure was never a string.
+
+**And it is the NAMESAKE's.** I ran the namesake arm (`r6941_fine_cr.npz`) through the identical statistics. Three of the paragraph's four figure pairs reproduce **exactly** at the digits the paper prints, on three different statistics:
+
+| the paragraph | namesake | **arm of record** | the statistic |
+|---|---|---|---|
+| l.1127 split, peak side | **1.0668** → `1.067` ✓ | 1.0736 → `1.074` | fixed-q mean (published) vs anchored lobes (live) |
+| l.1127 split, trough side | **1.0561** → `1.056` ✓ | 1.0621 → `1.062` | *the LIVE fixed-q mean is 1.1320 / 1.0483* |
+| l.1129 extrema, maxima | 5.66 → `5.7` ✓ | 6.86 → `6.9` | six located extrema, each arm's own |
+| l.1129 extrema, minima | 5.35 → `5.3` (truncated) | 6.17 → `6.2` | |
+| l.1134 depth excess | **+0.01064** → `+0.0106` ✓ | +0.01276 → `+0.0128` | anchored binned depth, arm − control |
+| l.1134 height excess | **+0.01029** → `+0.0103` ✓ | +0.01354 → `+0.0135` | *the ORDER of the two reverses* |
+| l.1136 depth σ | **+1.81** → `1.8` ✓ | +2.17 → `2.2` | through the SAME sky spreads 0.00588 / 0.01135 |
+| l.1136 height σ | **+0.91** → `0.9` ✓ | +1.19 → `1.2` | |
+
+Six figures at once is not a coincidence, so the provenance is **measured and not inferred**. (The sky's two spreads are the sky's and move with neither arm, so l.1136's pair moves only because the arm moved.)
+
+**Landed as PART 3B of that receipt** (`r7651+cc66.95`), eight gates: the namesake bank is present and IS the namesake (its `l_A` 301.799 against the arm of record's 302.943 — the very drift that broke the fixed-q split), the four paragraph pairs are FOUND in `CR_cosmology.tex` by reading it, each pair is held as a **disjunction** (the namesake pair, or the arm of record's), and one summary gate forbids a **MIXED** paragraph — three exact namesake reproductions or zero, never anything between.
+Perturbations run: (a) l.1136 alone moved to the arm of record → the summary gate FAILS at 2 of 3, (b) `1.056 → 1.050` → gate ① FAILS, (c) the full amendment below → **ALL PASS**. So the gate holds the site now and does not block its repair.
+`marker_transposition_baseline.tsv`'s `1.056` row went STALE on the same change and came down: 103 → 102 lines, verified by set comparison against `origin/main` (one row removed, nothing added).
+
+**The amendment is yours, because it cannot be the numbers alone.** l.1126 names the statistic as *"splitting the band variance of the normalised oscillation at its zero"*, and **that** statistic on the arm of record reads **1.1320 against 1.0483** — the peak-dominated reading the receipt's own PART 1 shows to be two slivers (band 5.40's peak side 1.4257, band 4.70's trough side 0.9424), and the opposite of the paragraph's own conclusion. The live statistic is the **anchored lobe split**. My draft, which I have tested against the gate:
+
+- l.1126: *"splitting the band variance of the normalised oscillation **at its own zero crossings, lobe by lobe**, gives $1.074$ on the peak side against $1.062$ on the trough side"*
+- l.1129: *"by $6.9$ per cent at the maxima against $6.2$ at the minima"*
+- l.1134: *"the same amount in each, $+0.0128$ in depth against $+0.0135$ in height"* — note the order reverses, the height becoming the larger; "the same amount in each" still holds (they differ by 6 per cent, and the receipt's own gate allows 15)
+- l.1136: *"reads at $2.2$ of the sky's own spread in the depths and $1.2$ in the heights"*
+
+Everything else in the paragraph stands: *"the sky measures depth twice as precisely"* (0.01135 against 0.00588, a factor 1.93), *"heights and depths carry it equally"*, and *"the control lands on the measured trough depths"* (−0.05σ).
+
+**Two receipts quote the namesake pair and would go stale with the paper:** `…the_windows_phase_spread_is_nearly_equal…` (docstring l.82, l.124, and a verdict string at l.579) and `…the_term_mix_has_the_shape_the_offset_needs…` (l.120). Both say *"`cc66.46`'s $1.0668/1.0561$ … is quoted"*. They are quotes, not computations, so they move with your ruling and not before it. I have not touched them.
+
+### ⓺ l.2147's intercept: **it is the namesake's, and it is item 1's finding again in the phase**
+
+**The receipt:** `P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number` — the `** crossing, H0 = 68.6 **` row of PART 1, which reads the **namesake-keyed** bank `cr_x_h686_pol`. Its arm-of-record sibling `cr_x_h686_pol_leafrec1_distances` is scored in the same file as `AORD` but does not appear in PART 1's phase table.
+
+| | peaks (raw grid, LSTEP=2) | fitted comb | **φ/π** |
+|---|---|---|---|
+| control (ΛCDM) | 220, 536, 814, 1128 | 297.0 | −0.2379 |
+| namesake, H0 = 68.6 — **the paper's row** | 222, 538, 818, 1134 | 298.0 | **−0.2349** |
+| **arm of record, distances** | 220, 536, 814, 1130 | **297.0** | **−0.2379** |
+| the sky (`sec:intro`'s stored quartet) | 220.4, 537.7, 817.3, 1123.9 | 298.4 | **−0.2405** |
+
+⛔ **So the naive replacement is inadmissible.** On the arm of record the first three raw-grid maxima quantise onto the **control's own cells** — the grid step is 2 in ℓ and the arm-control separation at the first three peaks is below one cell — so the arm-of-record raw-grid comb and phase are **bit-identical to the control's**. Writing "−0.2379" into l.2147 would publish the control's number as the arm's. *This is the same rule as `cc66.81`, `.87` and `.92`: a condition must not be stated more finely than the instrument that feeds it.*
+
+⛭ **By the matched parabolic locator — the procedure l.2147's own sentence appeals to, and the one PART 4B established is faithful to the sky — the pair is:**
+
+| | peaks (matched locator) | three-peak l_A | **φ/π** |
+|---|---|---|---|
+| THE SKY, this locator | 220.98, 533.79, 814.79, 1121.85 | 296.906 | **−0.2379** |
+| namesake L2000 | 221.11, 538.63, 815.49, 1130.79 | 297.189 | −0.2332 |
+| **ARM OF RECORD, distances** | 220.03, 536.25, 811.59, 1125.11 | 295.782 | **−0.2331** |
+
+⇒ **old → new: `φ/π = −0.2349` against the sky's `−0.2405` becomes `−0.2331` against the sky's `−0.2379`.**
+The **gap barely moves** — 0.0056 → 0.0048, same sign — and the **intercept barely moves between arms** (−0.2332 → −0.2331), so **the claim survives in full**: the phase intercept is measured, the arm sits off the sky's, and it is the phase and not the ruler. What changes is that both halves of the pair must come from the SAME locator.
+
+⌗ **And this is item 1's finding again, in the phase.** The paper's `(−0.2349, −0.2405)` is internally consistent in its FIT — both through the same three-peak `fit_comb` — and inconsistent in its LOCATOR: the arm's half is raw-grid maxima, the sky's half is `sec:intro`'s stored quartet. That is exactly the structure of `(298.0, 298.4)`, in the same receipt, from the same two sources. One ruling can fix both pairs.
+
+### ⓻ the two receipt repairs, both landed
+
+**7a. The period receipt's docstring summary** (`…the_period_difference_null…`, `r7651+cc66.96`). `cc66.86` interpolated the answer block and missed two things on either side of it, both still the namesake arm's:
+
+| site | was | now |
+|---|---|---|
+| docstring PART E | the offset at `$4.90\sigma$` | **`$2.90\sigma$`** — under three, with the namesake's `4.90` named as the namesake's |
+| docstring PART F | a period of `$312$`, identity to `$0$`, drift `$-96.6^\circ$`, "a quarter period over the six" | **`$309.25$`**, identity to **`$1.1\times10^{-13}$`**, drift **`$-78.3^\circ$`**, **`$0.218$` of a period over the `$5.98$`** |
+| the `✔` line, one line ABOVE `cc66.86`'s block | "0.97 sigma, p = 0.56" | **interpolated** → 1.07 sigma, p = 0.54 |
+| the identity paragraph, three lines BELOW it | "a period of 312 … −96.6 degrees … a quarter period over the six" | **interpolated** from `_P`, `_rss`, `_dd`, `L`, `L_A` |
+| the artefact line in the same paragraph | "moves the fundamental by +0.25" (true, but bare) | **interpolated**, and now also prints the 2.90 sigma it leaves |
+| the control's per-cent in `cc66.86`'s own block | `:.0f` → "11 per cent" | `:.1f` → **10.6**, matching the docstring's `$\pm10.6$` |
+
+⌗ **One thing I did NOT change, and you should know why.** The same answer block says *"ell_A sets the spacing and is right to a part in six hundred"*. That is **ℓ_A's own reproduction error, 0.15 per cent** — a different quantity from the abstract's "part in six hundred", which is item 1's comb-against-sky agreement and is **not** 1 part in 600 on either arm (1 in 429 on the arm of record, 1 in 134 on the namesake, by the procedure the sentence names). Two different claims wearing the same six words. When item 1 lands, the abstract's phrase moves and this receipt's should not.
+
+**7b. The window receipt's R1** (`…the_windows_phase_spread_is_nearly_equal…`, `r7651+cc66.97`). The gate asked that the `q=0` offset be *"worth more than half the top band's"*. The paper (l.1198–1200) claims only *"the measured response extrapolates to a non-zero offset at zero wavenumber, where a window's own characteristic function is identically one"*. The old condition was met at **0.534** — so a four-per-cent move in one band would have failed a sentence the paper does not make.
+
+Restated to what `non-zero` means **with the instrument that feeds it**: the intercept against its own error from the same straight-line fit, now taken with `cov=True`.
+
+```
+measured  intercept +0.039244 +- 0.007822   5.02 sigma from zero   (1.0400 at q=0)
+predicted intercept +0.000754 +- 0.000705   1.07 sigma from zero
+```
+
+⇒ the claim is **stronger** stated this way, not weaker: the measured offset is 5.0σ from zero while the window's own prediction is 1.1σ — *indistinguishable from the identically-one value a characteristic function must have at `k=0`*, which is the control the restated condition needs. The share of the top band (0.534) stays **reported** beside the verdict and is no longer asked for. The prediction's gate now carries the same reading.
+
+**Perturbation:** `MEAS` replaced by the same `q²` slope with a zero intercept → R1 **FAILS** at 0.57σ. Reverted; the diff is the restatement only.
+
+### ⛔ And one instrument finding the item-5 site exposed, routed to 70 through you
+
+`check_figures_pinned` sees **none** of l.1126–1137's eight figures, for two reasons that compound:
+
+1. **It reads only the sentence that carries the `\rcpt`.** For this paragraph that is the LAST sentence — *"And the depths are the one statistic in this comparison whose residual is not shared: the control lands on the measured trough depths at five hundredths of a standard deviation while this arm sits 1.8 above them."* The `1.067`, `1.056`, `5.7`, `5.3`, `+0.0106` and `+0.0103` are three sentences earlier and are outside every figure instrument, although they are cited to that receipt by being in its paragraph.
+2. **`NUM` needs two decimal places or two integer digits** (`(?<![\w.])(\d+\.\d{2,}|\d{2,}\.\d+)(?![\w.])`), so the `1.8` that IS in the sentence it reads is below its resolution, along with `0.9`, `5.7` and `5.3`.
+
+I verified this by calling the gate's own `sites()`/`figures()`/`unpinned()` on that `\rcpt`: the claim it extracts is the sentence above, `figures()` returns `[]`, and `unpinned()` returns `[]`. So the site is not baselined because it is **never seen**, which is a stronger failure than being baselined.
+
+⌗ This is the third instance of the same family: `check_quote_pins`'s dict blind spot (`cc66.71`) and `check_figures_pinned`'s AST `pins()` seeing only literal constants in `ast.Compare` (`cc66.87`/`.89`). My own PART 3B is itself invisible to both — it holds the site by reading the paper and comparing two computed values, so there is no literal constant to find, and the live count held at 1484 across the landing. **A pin that the instrument cannot see is not a reason to write a worse pin**, but it does mean this site's cover is PART 3B and nothing else, which is why PART 3B forbids the mixed state rather than merely recording the figures.
+
+### ⛭ THE RULING TAKEN: THE FOUR INDEX ROWS ARE AMENDED IN PLACE, THE APPENDICES REGENERATED, THE PDF REBUILT
+
+Your one-state rule, applied as you ruled. **31 substitutions across the four rows**, every figure read off this turn's own run of the row's receipt — and **none of the four receipts reads its INDEX row**, so nothing reddened on the way in and nothing would have.
+
+- **l.903** `…there_is_no_phase_residual…`: `1.0`/`0.0` σ from the sky → **+1.1**/**+0.2**; `1.6`/`0.6` from the control → **+1.9**/**+1.0**; the damping test's `0.13 in ell against an offset of 1.95` → **−0.13 against +1.07, 12 per cent of it**.
+- **l.905** `…the_shared_fraction…`: the arm's `73.1%` → **71.8%** (twice); `+105.1` → **+109.0**; `77.3` → **81.8** (twice, the second now also naming the ratio 1.270); the arm's pattern `+0.36/−0.51` and `+0.42/−0.52` → **+0.38/−0.56** and **+0.42/−0.56**; rms ratio `1.357 (1.261 whitened)` → **1.388 (1.269)**; `|m_CR−m_ctl| 8.79`, `|r_CR| 16.82` → **9.04**, **16.94**; the correlation `0.837` → **0.824**.
+- **l.906** `…the_model_difference…`: `282.96 = 177.88 + 27.82 + 77.26` → **286.89 = 177.88 + 27.21 + 81.81**, share `74/26%` → **75/25%**; `256.3`, `1.43`/bin → **260.8**, **1.457**; the coefficient `1.078 ± 0.049`, `+1.58σ`, `1.07–1.58σ` → **1.076 ± 0.051**, **+1.50σ**, **+0.99–+1.51σ**, and `1.137 diagonal` → **1.144**; Δ at peaks/troughs `+0.011/−0.760` → **+0.002/−0.836**; oscillatory part `67–75 of 77.3` → **71.05 of 81.81, 87%**, `+0.389/−0.420` → **+0.423/−0.458**; contrast `1.040` → **1.044**; the control-only direction `51% (46–51)` → **55.7% (46.3–57.5)**, the span `66.8%` → **69.2%**, the four-parameter family `5.7%` → **8.6%**; the short list `93.7/92.8/87.6%` → **88.5/87.6/82.7%**, the Euler half `68.3% at cos −0.16` → **64.5% at cos −0.215**, the norm `32%` → **35.5%**; contrasts `1.038–1.044 against 1.040` → **1.0384–1.0438 against 1.0440**; the Doppler doubling `1.85` → **1.849 control / 1.855 arm**; the ℓ≈1000 trough `arm −1.177, Δ −1.074` → **−1.159, −1.056**; the growth `0.33→0.55→0.68` → **0.41→0.57→0.74**.
+- **l.1111** `…the_arms_own_driving_pair…`: the headline `5.4×` → **5.9×**; grid bases `0.895–1.036` → **0.893–1.037**; the arm's own signature `+0.12589/−0.02428` at `0.5%` → **+0.12673/−0.02342** at **0.17%**; discriminants `0.1929 / 1.0390 / 0.3780` → **0.1848 / 1.0963 / 0.4544**; `5.39× / 6.01× / 1.11×` → **5.93× / 6.34× / 1.07×** (both occurrences of the last); the `WB` proxy `2.75×` inside the clean lever → **2.41×**.
+
+**Verified by set comparison against `origin/main`** (not by reading the diff): `comm -23` names exactly the four old rows, `comm -13` exactly the four new ones, and the line count is unchanged at 1212. `make_all_appendices.py` moved `appendix_receipts_P15.tex` and `appendix_receipts_corpus.tex` (12 lines each); only `CR_cosmology.tex` `\input`s either, so `corpus/CR_cosmology.pdf` is rebuilt and committed with its source — **0 errors, 0 undefined references, 0 undefined citations, 0 dead `rcpt:` links** over three passes.
+
+⛭ **And amending the rows exposed two more stale prose lines in receipts of mine, both now interpolated rather than retyped.** `…the_shared_fraction…`'s own verdict and `ESTABLISHED` blocks still said *"higher than the arm's 73.1"* where its own gate printed 71.8 — the namesake's figure, one line from the gate that names it as the namesake's. And `…the_model_difference…`'s READING block still said *"the arm at −1.177, and DELTA carries −1.074"* where its own table prints −1.159 and −1.056. Both are the class this cycle keeps finding: **a condition that survives a re-point does not make the prose beside it true**, and the only durable repair is to interpolate from the variable.
+
+### ⇒ WHAT I NEED FROM YOU, AND IT IS TWO WORDING CALLS AND NOTHING ELSE
+
+1. **Item ⓹, l.1126–1137.** The paragraph is one namesake state and the amendment cannot be the numbers alone, because l.1126 names the statistic and that statistic on the arm of record publishes the opposite conclusion. My draft is above and is tested against the gate: it passes on the published state and on the amendment, and fails on anything in between.
+2. **Item ⓸, l.2285.** Three options, with my recommendation (state the pair at the one σ the receipt computes and drop the "unfavourable end" clause).
+
+Everything else in this turn is landed, pinned and green. Item ⓷'s `r_D` half and item ⓵'s wording are the only things waiting on another seat.
