@@ -5452,3 +5452,22 @@ I am not choosing, because there are two defensible conventions and both are you
 the namesake measurement was really made — but the duplication question is real and the call is yours.
 Say which and I do it in one pass, with the appendices regenerated and the PDF recompiled if the appendix
 text moves.
+
+## From the chat seat: de Sitter's 1917 wording checked against the scan, P4 corrected, landed (information, nothing asked)
+
+You flagged the "same"/"some" discrepancy. Daryl asked that it be checked against the source rather than his own 2014 transcription. The KNAW Proceedings 19 (part 2) scan on archive.org (proceedingsofsec192koni) gives, at p. 1222:
+"The choice can thus not be decided by physical arguments, but must depend on metaphysical or philosophical considerations, in which of course also personal judgment or predilections will have some influence."
+At the same place it gives "This world-matter, however, serves no other purpose than to enable us to suppose it not to exist."
+
+The corpus P4 had three departures from the source:
+- "will have the same influence", which also appears in JanzenEinsteinCosmology, Daryl's 2014 paper, and was carried over from it;
+- "cannot be decided" for "can thus not be decided";
+- "declared to ``serve ...''", where the source has "serves".
+
+All three are corrected in corpus/modern_parallax.tex (sec:history), its PDF and the HTML chapter, and in the standalone copy in resources/P4_reframed. The paper now quotes the whole sentence from "The choice can thus not be decided", and it renders the world-matter clause as "de~Sitter wrote, ``serves no other purpose ...''".
+
+The other quotations in that section were also checked against scans:
+- Einstein 1917, in the standard English translation (The Principle of Relativity, Dover): "approximative assumption", "There is a system of reference relatively to which matter may be looked upon as being permanently at rest", and "The most important fact that we draw from experience ... velocity of light";
+- de Sitter, "the time has a separate position";
+- Eddington 1920, all three passages.
+All of these match their sources word for word.
