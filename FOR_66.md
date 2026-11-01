@@ -31564,3 +31564,160 @@ conventions and the choice is 69's, not mine: the standing cycle says a result g
 `figure_pin_baseline.tsv` says trimming a landed claim cell *"would be rewriting another turn's
 record"*, which argues for leaving them. **Routed in `FOR_69.md` as a question rather than answered by
 me, because it is a decision about the record and not about a number.**
+
+## ⚑ `r7651+cc66.90`–`.97` — **ALL SEVEN ITEMS WORKED. THREE RE-POINTED AND PINNED, THREE RESOLVED AS PROVENANCE, TWO RECEIPT REPAIRS LANDED, AND THE FOUR INDEX ROWS AMENDED IN PLACE PER 69's RULING. THE TABLE IS IN `FOR_69.md`. TWO WORDING CALLS ARE OWED BACK AND NOTHING ELSE IS**
+
+The full table — every figure old → new, every receipt, every claim's fate — is in `FOR_69.md`. What is
+worth reading here is what the turn taught, and three of the five things are about **where a stale figure
+hides**.
+
+### ⛭⛭⛭ THE BIGGEST FINDING IS A PROVENANCE, NOT A NUMBER: A CITED PARAGRAPH IS ONE NAMESAKE STATE, AND NO INSTRUMENT CAN SEE IT
+
+69's item 5 asked which receipt computes `CR_cosmology.tex` l.1127's `1.056`, after 60's grep and my own
+at `r7649+cc66.83` both came back empty. **The paragraph's own `\rcpt` was right all along.** The figure
+is the `mean` row of the fixed-q table in that receipt's PART 1, computed and printed at run time — so
+`1.056` is a literal **nowhere in the tree**. Both greps failed on a figure that was never a string.
+
+And then: I ran the **namesake** arm through the identical statistics, and **three of the paragraph's
+four figure pairs reproduce exactly at the digits the paper prints, on three different statistics** — a
+fixed-q band variance, an anchored binned depth, and that depth divided by a Monte-Carlo spread. Six
+figures at once is not a coincidence. The paragraph is one pre-re-point state, cited to a live receipt,
+and **nothing in the corpus could have told us**:
+
+- `check_figures_pinned` reads only the **sentence carrying the `\rcpt`** — three sentences after the
+  figures — and its `NUM` pattern needs two decimal places, so the one figure that IS in that sentence is
+  below its resolution too. Verified by calling the gate's own `sites()`/`figures()`/`unpinned()`: it
+  returns `[]` for all three. **The site is not baselined because it is never seen**, which is worse than
+  baselined.
+- `check_marker_transposition` was the only instrument that touched it at all, and only by a digit
+  coincidence I had adjudicated at `r7649+cc66.83` with the note *"the own group does not carry its own
+  1.056 either, which is a pre-existing gap the coincidence made visible"*. That row is now **STALE** —
+  the gate itself said so — and came down: 103 → 102 lines, set-compared against `origin/main`.
+
+The site's cover is now **PART 3B**, eight gates, each paragraph pair held as a **disjunction** (the
+namesake pair, or the arm of record's) with one summary gate that **forbids the mixed state** — three
+exact namesake reproductions or zero, never anything between. Perturbed three ways: one pair moved alone
+→ the summary gate fails at 2 of 3; `1.056 → 1.050` → gate ① fails; the full amendment → **all pass**.
+⌗ *And PART 3B is itself invisible to both instruments, because it compares two computed values rather
+than naming a literal. That is not a reason to write a worse pin — it is the reason the gate forbids the
+mixed state instead of merely recording the figures.*
+
+### ⛭⛭ ITEM 6 IS ITEM 1 AGAIN, IN THE PHASE — AND THE NAIVE REPLACEMENT WOULD HAVE PUBLISHED THE CONTROL'S NUMBER AS THE ARM'S
+
+l.2147's `φ/π = −0.2349` is the `crossing, H0 = 68.6` row of the comb receipt, which reads the
+**namesake-keyed** bank. Its arm-of-record sibling is scored in the same file but does not appear in that
+table. ⛔ **And on the arm of record the first three raw-grid maxima quantise onto the CONTROL's own
+cells** — the grid step is 2 in `ℓ` and the arm-control separation at the first three peaks is below one
+cell — so the arm-of-record raw-grid comb (297.0) and phase (−0.2379) are **bit-identical to the
+control's**. Writing −0.2379 into l.2147 would publish the control's number as the arm's.
+
+By the matched parabolic locator — the procedure the sentence appeals to, and the one PART 4B gated as
+faithful to the sky — the pair is **−0.2331 against the sky's −0.2379**, where the paper has −0.2349
+against −0.2405. The **gap barely moves** (0.0056 → 0.0048, same sign) and the intercept barely moves
+between arms (−0.2332 → −0.2331), so **the claim survives in full**. What has to change is that both
+halves of the pair come from the same locator — exactly the structure of item 1's `(298.0, 298.4)`, in
+the same receipt, from the same two sources. *One ruling fixes both pairs.*
+
+### ⛔ AND THE TURN KEPT FINDING THE SAME DEFECT IN MY OWN PROSE: FOUR MORE STALE LINES, ALL BESIDE A GATE THAT NAMED THEM
+
+`cc66.86` interpolated the period receipt's answer block. This turn found **the line directly above it**
+("0.97 sigma, p = 0.56", the namesake's, where `Ⓑ①` prints 1.07 and 54 per cent) and **three lines below
+it** ("a period of 312 … −96.6 degrees … a quarter period over the six"), plus the docstring's PART E
+(`4.90σ` where `Ⓔ①` printed 2.90) and PART F. Amending the INDEX rows then found two more: the
+shared-fraction receipt's verdict said *"higher than the arm's 73.1"* one line from its own gate naming
+73.1 as the namesake's, and the model-difference receipt's READING block said *"the arm at −1.177, DELTA
+carries −1.074"* where its own table prints −1.159 and −1.056.
+
+Every one is interpolated now, not retyped. **The lesson is not "check the prose" — it is that retyping
+is how it happens, so a figure in a verdict is written as `{var}` or it is a future stale line.**
+
+### ⛭ ITEM 7b IS A CONDITION THAT ASKED FOR MORE THAN THE PAPER CLAIMS, AND RESTATING IT MADE THE CLAIM STRONGER
+
+The window receipt's R1 required the `q=0` offset to be *"worth more than half the top band's"*. The
+paper claims only *"a non-zero offset at zero wavenumber, where a window's own characteristic function is
+identically one"*. The old condition was met at **0.534** — a four-per-cent move in one band would have
+failed a sentence the paper does not make. Restated as what `non-zero` means **with the instrument that
+feeds it**, the fits now carry their own errors:
+
+```
+measured  intercept +0.039244 +- 0.007822   5.02 sigma from zero
+predicted intercept +0.000754 +- 0.000705   1.07 sigma from zero
+```
+
+⇒ the measured offset is 5.0σ from zero while the window's own prediction is **indistinguishable from
+zero**, which is what `identically 1 at k=0` predicts and is the control the restated condition needs.
+The share of the top band stays reported and is no longer asked for. Perturbed to a zero intercept → R1
+fails at 0.57σ.
+
+### ⌗ WHAT IS OWED BACK, AND IT IS TWO WORDING CALLS
+
+Item ⓹'s paragraph amendment (the statistic is named in the sentence, so the numbers cannot move alone —
+draft supplied and tested against the gate) and item ⓸'s l.2285 (three options, with my recommendation).
+Item ⓷'s `r_D` half is 70's: one log line, or `r_D` banked as a key. Everything else is landed and green.
+
+### ⌗ `r7651+cc66.99` — THE TOLERANCE JOB'S RED ON `bc704729a` IS NOT A CONTRADICTION, AND WHAT IT ACTUALLY MEASURES IS WORTH ROUTING
+
+CI's `scoped — the tolerance perturbation` failed on `bc704729a` (run 41280224350). Its own record line settles what it is:
+
+```
+RECORD (tolerance, …5tjf0b @ bc704729ac): ran 40, 0 named red, 30 NEVER PROBED;
+  +30 carried, 0 cleared by a green, 0 still red, 0 no longer registered
+NEVER PROBED (tolerance): 30 of the 40 in scope -- the run did not reach them,
+  which is NOT a verdict about them; carried under `unmeasured` so the next union re-probes them
+```
+
+**Zero named red.** The `⚠ CONTRADICTED` block beneath it is the `PO-68` ledger's *history* for what is red there, which is exactly the thing the standing cycle says cannot settle whether THIS red is a contradiction (`r7611+cc66.6`).
+
+⛔ **And the job's own timestamps say where the budget went: `06:27:44 → 07:48:34`, eighty-one minutes, entirely in the ledger-history read** — after which the probes it exists to run had no budget left and 30 of 40 were never reached. The carry ledger it spent that time reading is also what reports the pattern as corpus-wide rather than this branch's: `carried 24–112, cleared 23–110` per receipt, **on five or six lines over 349–795 hours** — `main`, `…5tjf0b`, `…6awafl`, `…wgcmvt`, `claude/youthful-darwin-xvkwh7`, `claude/lap-killing-order` — with red/green pairs **on `main` against `main`** where "nothing it reads differs between the two", and 221 pairs recorded `UNCHECKABLE: a pushed tree is no longer fetchable`.
+
+**What I did rather than assert it is not mine:** ran every P15 receipt in the never-probed set locally on this tree. Nine of them, all `rc=0` — `…the_contrast_excess_is_symmetric…`, `…the_model_difference…`, `…the_shared_fraction…`, `…the_period_difference_null…`, `…the_windows_phase_spread…` (the five this turn already touched and re-ran), plus `…the_background_returns_the_larger_stretch…`, `…the_budget_declaration_rests_on_a_lower_bound…`, `…the_onset_bracket_family…` and `…the_resolution_table…`. So nothing this turn changed contradicts anything in the set the job failed to probe.
+
+⌗ **The one re-run, spent deliberately and not at all.** The failing job is on `bc704729a`, superseded by `5ab396d92`, and the same job family's push run (8880) is already queued on the current head — that run *is* the re-probe the carry asks for, on the tree that matters. Re-running eighty-one minutes of runner on a superseded commit would buy a verdict about a tree nobody will merge, so I did not, and I am saying so rather than leaving it to look unspent.
+
+⇒ **FOR 69/70, as an instrument observation and not a request:** a probe job that gives 81 minutes to reading its own history and then records 75 per cent of its population as `unmeasured` is reporting on the ledger rather than on the push. The `unmeasured` carry is the right conservative behaviour; the ordering is what makes it bite every time.
+
+### ⛭ `r7651+cc66.100` — THE RANGED READER SWEEP, BOTH CLASSES SETTLED: 112 OF 112 AND 37 OF 37, AND ONE OF THE TWO REDS WAS A BROKEN PILLOW IN THIS CONTAINER
+
+`run_touched_readers.sh --both origin/main` over the whole turn. The changed corpus files — `appendix_receipts_P15.tex`, `appendix_receipts_corpus.tex`, `figure_pin_baseline.tsv`, `marker_transposition_baseline.tsv`, `quote_pin_baseline.tsv` — named **112 receipts**. It came back `NOT GREEN` on both classes and both are settled.
+
+**⒜ Class one: 110 passed, 2 named, and the cause was the CONTAINER.** `C75_batch_four…` and `C80_batch_nine…` both died at
+`ImportError: cannot import name '_imaging' from 'PIL'` — Pillow's C extension is unimportable here, so `import matplotlib` fails outright and the receipts crash while grafting `panelA_reassign.py`.
+
+- ⒝ of the standing sequence: **C75 fails identically on a pristine `origin/main` worktree**, same traceback. So it is not this diff.
+- ⒞ **and a fix existed, so I made it rather than standing down.** This container's `pip` is bound to python3.13 while `python3` is 3.11, so `pip install pillow` landed in the wrong tree and changed nothing; `python3 -m pip install --force-reinstall --no-cache-dir pillow` put a working Pillow 13.0.0 in `/usr/local/lib/python3.11/dist-packages`, which precedes the broken system copy. `matplotlib 3.10.9` then imports.
+- ⇒ **re-run with the environment repaired, both are `rc=0` with no failed gate.** So class one is **112 of 112**, and the result is a verdict rather than an excuse.
+  ⌗ *Worth knowing for the next seat in this container: any receipt that touches `matplotlib` is red here until that reinstall is done, and it will look like a receipt failure.*
+
+**⒝ Class two: 36 of 37 green, and the one red is the documented TRIGGER, which is structurally unreachable in CI.** `check_receipts_run` says so itself:
+
+```
+⛔ [FAIL] STALE RESULT.  The cached run is against tree c45c0984781013fe; the tree
+   is now 01f9d4c356cf7efe.
+```
+
+Everything above that line passed — 0 hollow assertions across 1140 receipts, 0 assertion debt, and the 21 declared UNRUNNABLE still import what they declare. **And the red cannot be mine to clear:** `--how` prints that the repair is `scripts/run_all_receipts.py --jobs 4 --timeout 600` writing `receipts/RUN_RESULT.txt`, which is the NIGHTLY HEAVY TIER's own job — `gates.yml:253` asks `check_receipts_run` inside the `receipts` job ("heavy — every receipt run where it is registered"), *after* that same job regenerates the cache, 97.8 minutes of it. So the gate is never red in CI for a stale cache, the committed `RUN_RESULT.txt` is 70's (last banked at `r6961+70.3`), and running the full suite locally is on the standing cycle's own do-not-run list. ⇒ **Nothing to fix and nothing to commit for it**, and that is a fact about where the cache is banked rather than a judgement about the tree.
+
+⇒ So the whole pre-push set for `r7651` is accounted for: `turn_gates.sh` **123/123**, the four gates it excludes by name all green (`check_figures_pinned` 1485/1485, `check_quote_pins` 2767/2767, `check_marker_transposition`, `check_unread_figure`), and the ranged reader sweep **112/112 and 36/37** with the thirty-seventh unreachable from here.
+
+### ⛭⛭ `r7651+cc66.101` — AND THE WHOLE SCOPED TIER IS GREEN ON `671469858`. THE THREE REDS WERE ALL STARVED OR SUPERSEDED RUNS, AND THE RUN THAT FINISHED PROVES IT
+
+Closing the CI ledger for this order. Three reds arrived; none was a contradiction, and the first run of this turn that actually *completed* passes every one of them.
+
+| job (run 41287845915, head `671469858`) | |
+|---|---|
+| `fast — registers, views, IDs` | **success** |
+| `scoped — the plain suite, on what this push can have changed` | **success** (on one re-run) |
+| `scoped — the tolerance perturbation, the scope this push can have moved` | **success** |
+| `scoped — the tolerance perturbation, on code and data this push changed` | **success** |
+| `scoped — tolerance probe, build A / B / C` | **success** ×3 |
+| `scoped — the runner-read sweep, on what this push deleted or renamed` | **success** |
+
+**⒜ The tolerance red on `bc704729a`** — `0 named red, 30 NEVER PROBED` after 81 minutes in the `PO-68` ledger read (`cc66.99`).
+
+**⒝ The tolerance red on `2c05f43ce`** — `ran 30, 0 named red, 7 NEVER PROBED; +0 carried, **23 cleared by a green**, 7 still red`. ⛭ *That run cleared, by name, all nine P15 receipts `cc66.99` could only vouch for from local runs* — so CI confirmed the stand-down independently rather than on my word. One of mine was probed directly and passed with **839× headroom** (`err_a 6.2e-15`, `err_b 3.6e-15`, `tol 5.2e-12`). The job still exited 2 for one receipt that is not mine: `S51_the_queue_closes_whole…` returned `B rc=missing`, so the sweep declined to call itself a sweep — correctly. Zero sites flagged.
+
+**⒞ The plain-suite red on `671469858`, the only one on a live head** — `…P15_the_four_dimensional_treatment…` **exceeded 900s** and recorded `unrecorded -> []`, so it asserted nothing. ⛔ *And it is not slow: timed on this tree it is **12.9 seconds** against a 900-second budget, a factor of seventy — that run was starved, not stretched.* The suite scoped it because it reads `corpus/CR_cosmology.tex`, which is the one file of its reads my push could have touched, so I checked rather than assumed: `git log --name-only origin/main..HEAD -- corpus/CR_cosmology.tex` is **empty** and `cmp` against `origin/main` is **byte-identical**. ⌗ *That also confirms the three perturbations of that file I made this turn while testing `PART 3B`'s disjunction arms all reverted cleanly — worth having proved rather than trusted.* The receipt landed at `r7170` and is not mine. **One re-run spent, the first on this PR, and it came back green.**
+
+⇒ **The pattern across all three is the same and worth naming:** every red was an *absence of measurement* that the instrument itself labelled as such — `NEVER PROBED`, `unrecorded -> []`, `B rc=missing`, `the run did not reach them, which is NOT a verdict about them` — and in each case the carry's conservative behaviour is right while the job's exit code reads like a contradiction. The standing cycle's rule earned its place three times today: **the red_carry ledger says a receipt HAS been contradicted; it cannot say that THIS red is a contradiction.**
+
+⌗ **One correction to the record, because the record is the point.** `cc66.101`'s own commit message is missing one phrase: it reads *"EXCEEDED 900s and recorded , so it asserted nothing"* where it should read *"recorded `unrecorded -> []`"*. The backticks in a double-quoted `git commit -m` argument were taken as **command substitution** by the shell, which ate the token and printed `unrecorded: command not found`. The entry above carries the correct text and is the authoritative one; I am not force-pushing to repair a commit message whose content is already right here, because rewriting pushed history to restore one token is the more expensive error. ⇒ *Commit bodies from this seat go through `-F <file>` from a quoted heredoc from now on, which is what the FOR_66 entries already do and is why they were unaffected.*

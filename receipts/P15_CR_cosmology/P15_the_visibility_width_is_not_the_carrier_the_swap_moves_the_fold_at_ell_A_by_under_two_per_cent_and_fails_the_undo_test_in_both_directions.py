@@ -83,8 +83,10 @@ BAR = "=" * 104
 fail = []
 
 
-def check(label, ok):
-    print(f"    {'OK  ' if ok else 'FAIL'}  {label}")
+def check(label, ok, got=None):
+    #: ⛭ r7651+cc66.92: `got` added, optional, so a gate can PRINT WHAT IT MEASURED
+    #: beside its verdict.  Every call that predates this keeps working unchanged.
+    print(f"    {'OK  ' if ok else 'FAIL'}  {label}" + (f"   ({got})" if got is not None else ""))
     if not ok:
         fail.append(label)
 
@@ -99,8 +101,21 @@ NEED = ('r6919_injected_lcdm.npz', 'r6919_injected_cr.npz', 'r6919_geometry.npz'
 if not all(os.path.exists(os.path.join(SP, n)) for n in NEED):
     print("  ⛔ A BANK THIS RECEIPT READS IS NOT ON DISK, so nothing is read and nothing is claimed.")
     sys.exit(1)
-IJ = {t: np.load(os.path.join(SP, f'r6919_injected_{t}.npz')) for t in ('lcdm', 'cr')}
-GE = np.load(os.path.join(SP, 'r6919_geometry.npz'))
+#: ⛭⛭⛭ r7651+cc66.92: ** RE-POINTED ONTO THE ARM OF RECORD, WITH THE GEOMETRY KEYS NAMED
+#:   EXPLICITLY, BECAUSE THIS BANK IS RE-KEYED AND `__cr` IS THE NAMESAKE IN IT. **
+#:   *`r6919_geometry_leafrec1.npz` keeps its `__cr` keys BIT-IDENTICAL to the namesake's -- all 30
+#:   of them, measured -- and carries the arm of record under 17 new `__cr_leafrec1` keys.  So
+#:   reading `fwhm__cr` from the sibling file returns the NAMESAKE and nothing complains: exactly the
+#:   trap `r7645` named when 70 re-keyed `r6929_geometry_leafrec1`, and the reason `r7643` ruled that
+#:   a receipt reading a two-arm bank NAMES the keys it reads.  `GK` is that naming.*
+#:   ⌗ *The injected banks move for a reason worth stating: the CONTROL's swapped leg changes too
+#:   (`Dl__viswap`, 2.8e-3 relative), not because the control changed but because the swap imposes
+#:   the ARM's width on it and the arm's width is what moved.  So both injected siblings are the
+#:   right files for an arm-of-record reading, and the control's OWN-width leg is unmoved at 0.3704.*
+IJ = {t: np.load(os.path.join(SP, f'r6919_injected_{t}_leafrec1.npz'))
+      for t in ('lcdm', 'cr')}
+GE = np.load(os.path.join(SP, 'r6919_geometry_leafrec1.npz'))
+GK = {'lcdm': 'lcdm', 'cr': 'cr_leafrec1'}   # EXPLICIT: `__cr` is the NAMESAKE in this bank
 ANCHOR = 222.0                    # the arm's own first peak, as `cc66.145`'s fold uses
 LO, HI = 100.0, 1900.0            # the confrontation's own window
 
@@ -136,9 +151,9 @@ for t in ('lcdm', 'cr'):
 # ============================================================ A. the geometry
 head("A.  THE GEOMETRY, FROM `r6919`'s OWN BANK -- WHAT THE +14 PER CENT IS AND IS NOT")
 
-W = {t: float(GE[f'fwhm__{t}']) for t in ('lcdm', 'cr')}
-DRS = {t: float(GE[f'd_rs_own__{t}']) for t in ('lcdm', 'cr')}
-DCH = {t: float(GE[f'd_chi__{t}']) for t in ('lcdm', 'cr')}
+W = {t: float(GE[f'fwhm__{GK[t]}']) for t in ('lcdm', 'cr')}
+DRS = {t: float(GE[f'd_rs_own__{GK[t]}']) for t in ('lcdm', 'cr')}
+DCH = {t: float(GE[f'd_chi__{GK[t]}']) for t in ('lcdm', 'cr')}
 CS = {t: DRS[t] / DCH[t] for t in ('lcdm', 'cr')}
 print(f"      FWHM        control {W['lcdm']:9.4f}   arm {W['cr']:9.4f}   "
       f"{100 * (W['cr'] / W['lcdm'] - 1):+.2f} per cent")
@@ -146,17 +161,37 @@ print(f"      d r_s       control {DRS['lcdm']:9.4f}   arm {DRS['cr']:9.4f}   "
       f"{100 * (DRS['cr'] / DRS['lcdm'] - 1):+.2f} per cent")
 print(f"      d r_s/d chi control {CS['lcdm']:9.6f}   arm {CS['cr']:9.6f}   "
       f"{100 * (CS['cr'] / CS['lcdm'] - 1):+.1f} per cent")
-check("Ⓐ①  the width difference these banks carry is +14.59 per cent at the 185-bin minima, which "
-      "is the same quantity the order quotes as +14.3 at the in-print pair -- so the order's number "
-      "and this bank's are the same object read on two backgrounds, and the swap below is the "
-      "order's swap",
-      0.14 < W['cr'] / W['lcdm'] - 1 < 0.15)
-check("Ⓐ②  ** and the sound horizon accumulated ACROSS the visibility is the same on both arms to "
-      "0.08 per cent while the comoving distance across it differs by 14.6 -- so what the width "
-      "difference IS, is a difference in `d r_s / d chi`, 12.8 per cent lower on the arm. **  That "
-      "is `r6919`'s joint object, re-pointed here and not re-derived",
-      abs(DRS['cr'] / DRS['lcdm'] - 1) < 0.005
-      and abs(CS['cr'] / CS['lcdm'] - 0.872) < 0.002)
+#: ⛭⛭ r7651+cc66.92: +14.59 -> +15.55 per cent on the arm of record, so the window moves with it.
+#: ⌗ *And a thing worth saying rather than smoothing over: the paper prints 14.3 and NEITHER arm's
+#: bank gives that -- the namesake is 14.586 and the arm of record 15.548.  The old label called the
+#: two "the same object read on two backgrounds", which covered a 0.29-point gap it did not name.
+#: l.2102's figure is 15.5 on the arm of record and was never 14.3 on this bank.*
+check("Ⓐ①  the width difference these banks carry is +15.55 per cent at the 185-bin minima, against "
+      "+14.59 on the namesake arm -- and the paper's +14.3 is NEITHER, which is reported rather than "
+      "absorbed into `the same object read on two backgrounds`",
+      0.150 < W['cr'] / W['lcdm'] - 1 < 0.161,
+      f"{100 * (W['cr'] / W['lcdm'] - 1):.3f} per cent")
+#: ⛭⛭ r7651+cc66.92: ** THIS ONE MOVES IN A WAY WORTH READING RATHER THAN RE-TOLERANCING: THE
+#:   SOUND-HORIZON AGREEMENT LOOSENS BY A FACTOR FOUR AND A HALF, AND CHANGES SIGN. **  *On the
+#:   namesake the arm accumulated `0.077` per cent LESS sound horizon across its visibility than the
+#:   control; on the arm of record it accumulates `0.357` per cent MORE.  The paper's l.2104 says the
+#:   two accumulate "the same sound horizon to 0.08 per cent", which was the namesake's figure to the
+#:   digit and is now `0.36`.*
+#:   ⇒ *The CLAIM survives and is restated to its new size: 0.36 per cent is still small against the
+#:   15.5 per cent the widths differ by, which is the comparison the sentence is making -- the width
+#:   difference is a difference in `d r_s / d chi` and not in the horizon itself.  What does not
+#:   survive is "to 0.08 per cent", and the sign.  ROUTED TO 69 with the figure.*
+check("Ⓐ②  ** and the sound horizon accumulated across the visibility still nearly agrees -- 0.36 "
+      "per cent on the arm of record, against 0.08 on the namesake and with the SIGN REVERSED (the "
+      "arm now accumulates slightly MORE) -- while the comoving distance across it differs by 15.5, "
+      "so what the width difference IS, is a difference in `d r_s / d chi`, 13.1 per cent lower on "
+      "the arm. **  ⇒ *Still two orders apart, which is the comparison the sentence makes; the "
+      "0.08 per cent itself is the namesake's and is routed*",
+      abs(DRS['cr'] / DRS['lcdm'] - 1) < 0.006
+      and abs(DRS['cr'] / DRS['lcdm'] - 1) < 0.05 * abs(W['cr'] / W['lcdm'] - 1)
+      and abs(CS['cr'] / CS['lcdm'] - 0.869) < 0.002,
+      f"horizon {100 * (DRS['cr'] / DRS['lcdm'] - 1):+.3f} per cent against width "
+      f"{100 * (W['cr'] / W['lcdm'] - 1):+.2f}; d r_s/d chi ratio {CS['cr'] / CS['lcdm']:.4f}")
 
 
 # ============================================================ B. the premise correction
@@ -244,7 +279,25 @@ check("Ⓓ②  ⛔ and narrowing the arm does not move its fold toward the contr
       "unmoved to one part in a thousand.  ** So the undo fails in both directions, which is a "
       "stronger result than one direction failing: the two configurations cannot both be "
       "coincidences of size **",
-      not _toward_ctl and abs(dA) < 0.005)
+      #: ⛔⛭⛭ r7651+cc66.92: ** THE DIRECTION CLAUSE WAS A SIGN ON A QUANTITY FAR BELOW ITS OWN
+      #:   ERROR, and the re-point exposed it. **  *The claim is that narrowing the arm leaves its
+      #:   fold UNMOVED, and on the arm of record it is better satisfied than on the namesake: the
+      #:   fold goes 0.3995 -> 0.3994, one part in 4000, against the namesake's 0.4003 -> 0.4007, one
+      #:   part in 1000.  But the old condition also demanded `not _toward_ctl`, i.e. the sign of
+      #:   that move -- and the move is 0.0001 against folds carrying +-0.0135, a hundred and
+      #:   fortieth of their own error.  A sign on a difference that small is not a measurement, and
+      #:   on the arm of record it reads the other way and reddened a gate whose CLAIM had improved.*
+      #:   ⇒ *Restated to what the sentence says: the move must be small against the fold's OWN
+      #:   error.  Both arms pass, and the namesake passes more loosely, which is the honest
+      #:   ordering.  This is the third gate of this class this seat has found -- after a 10%
+      #:   RELATIVE tolerance on a sub-grain shift at `cc66.81` and a one-sided drift gate at
+      #:   `cc66.87` -- and they share one cause: a condition stated more finely than the
+      #:   instrument that feeds it.*
+      abs(dA) < 0.005 and abs(WH[('cr', 'viswap')][0] - WH[('cr', 'sweepown')][0])
+      < 0.1 * WH[('cr', 'sweepown')][1],
+      f"the arm's fold {WH[('cr', 'sweepown')][0]:.4f} -> {WH[('cr', 'viswap')][0]:.4f}, a move of "
+      f"{abs(WH[('cr', 'viswap')][0] - WH[('cr', 'sweepown')][0]):.4f} against its own error "
+      f"{WH[('cr', 'sweepown')][1]:.4f}")
 check("Ⓓ③  ⇒ ** and the arm-to-control difference SURVIVES the swap, +8.1 per cent becoming +10.1: "
       "the swap does not remove it, it slightly increases it. **  ⇒ THE VISIBILITY WIDTH IS NOT THE "
       "CARRIER OF THE SECTOR'S RESIDUAL, said as plainly as the order asked for this branch",

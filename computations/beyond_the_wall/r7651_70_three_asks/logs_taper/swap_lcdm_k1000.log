@@ -1,0 +1,26 @@
+__SWITCHES__ ARM=lcdm HIER=1 KSLICE=1000:1250 LH0=67.410309 LMAXL=2000 LOM=0.309826 LSTEP=1 NS=0.954248 SAVE=/tmp/claude-0/-home-user-shadow-of-existence/4913e7eb-3c04-585c-bc52-ac1b69fc5eb8/scratchpad/bank7/swap_lcdm_k1000.npz SRCTAPER=8.318682276e-05 SRCTAPERS0=145.3465211 WBH2=0.021966
+  diffusion: r_D at the visibility peak = 7.16 Mpc  ->  l_D = 1949
+
+==============================================================================
+  ACOUSTIC TWO-ARM INSTRUMENT — ARM=lcdm   DRIVING=ON
+==============================================================================
+  rate: radiation-INCLUDED   H0=67.410309  Om=0.309826
+  z_start = 3e+07   eta_start = 0.016   eta_rec = 281.8   eta_end = 1907
+  D_M = 13954 Mpc   r_s = 145.38 Mpc   l_A = pi D/r_s = 301.5   modes = 2547
+  visibility: peak at eta = 281.75 (z = 1090.3), FWHM = 38.04 Mpc   R = 3 rho_b/4 rho_g there = 0.61063   1+R = 1.61063
+  z_eq(leaf) = 3391.5   Omega_r = 9.132622e-05   rho_r/rho_m at the onset = 8842.98
+
+  projection reach: k_max = 4000/D_M against a reported l_max = 2000 -> ratio 2.00
+  projection sampling: dk = 1.123e-04, Bessel period 2pi/D = 4.503e-04, points per period = 4.0
+  hierarchy: LG = 24, handover at tau' = 3.0/Mpc (eta = 137.8), where 4.2% of 1/k_D^2 has accumulated
+  so the envelope carries 4.2% of the damping and the multipoles carry 95.8% of it
+  ⚠ KSLICE=1000:1250 -- this is a PARTIAL C_l over 250 of the run's modes, NOT a spectrum.  Sum the slices before reading anything off it.
+    modes 0-250 done
+  saved 1900 multipoles to /tmp/claude-0/-home-user-shadow-of-existence/4913e7eb-3c04-585c-bc52-ac1b69fc5eb8/scratchpad/bank7/swap_lcdm_k1000.npz
+  --------------------------------------------------------------------------
+  PEAKS (line-of-sight, HIERARCHY)   l_A = 301.5
+  --------------------------------------------------------------------------
+    peaks at l = [1197, 1257, 1262, 1267]
+    l_1/l_A = 3.9696   P1/P2 = 0.864   P1/P3 = 0.856
+    sky: 220.6 / 538.1 / 809.8,  l_1/l_A = 0.7312,  P1/P2 = 2.217,  P1/P3 = 2.277
+__DONE__ rc=0

@@ -58,12 +58,18 @@ measure, and the control's period is measured to `$\\pm10.6$` per cent.*
   PART D  ** THE COMPARISON THAT IS INFORMATIVE, AND IT IS NOT THE ORDERED ONE. **  Against
           `$\\ell_A=298$`: `$+11.25$`, `$3.36\\sigma$`, `$P(p\\le\\ell_A)=0.0015$`.
   PART E  ** THE ARTEFACT CHECK. **  Giving the second harmonic its own freedom moves the
-          fundamental by `$+0.25$` and leaves the offset at `$4.90\\sigma$`, so it is not a
-          single-harmonic fit absorbing harmonic structure.
-  PART F  ** AND WHAT THE OFFSET IS, AS AN IDENTITY. **  A period of `$312$` and `$\\ell_A$` with a
-          phase running linearly in `$\\ell$` are the SAME two-dimensional model -- identical
-          residual sum of squares, to `$0$`.  ⇒ The offset IS a drift of `$-96.6^\\circ$` across
-          `$104\\le\\ell\\le1886$`, a quarter period over the six the range spans.
+          fundamental by `$+0.25$` and leaves the offset at `$2.90\\sigma$` -- UNDER THREE, where
+          the namesake arm left `$4.90$` -- so it is not a single-harmonic fit absorbing harmonic
+          structure, and the margin it is not the fit's by has halved.  *`r7651+cc66.96`: this line
+          said `$4.90$` while `Ⓔ①` below printed `$2.90$`; the gate's condition survived the
+          re-point and the prose beside it did not.*
+  PART F  ** AND WHAT THE OFFSET IS, AS AN IDENTITY. **  A period of `$309.25$` and `$\\ell_A$`
+          with a phase running linearly in `$\\ell$` are the SAME two-dimensional model -- identical
+          residual sum of squares, to `$1.1\\times10^{-13}$`.  ⇒ The offset IS a drift of
+          `$-78.3^\\circ$` across `$104\\le\\ell\\le1886$`, `$0.218$` of a period over the
+          `$5.98$` the range spans.  *`r7651+cc66.96`: the namesake arm's was `$-96.6^\\circ$` at a
+          period of `$312$`, a quarter period over six.  The IDENTITY is arm-independent and only
+          its size moves -- which `Ⓕ①` says and this line did not.*
 
 ⇒ *** SO THE ANSWER TO THE ORDER'S ITEM 2 IS NOT `$r_s/D_M$`.  `$\\ell_A$` sets the comb's SPACING
 and is reproduced to $0.15$ per cent; what the residual carries is a DRIFT of the acoustic phase
@@ -361,7 +367,11 @@ if fail:
         print(f"      - {q}")
     print(BAR)
     sys.exit(1)
-print("  ✔ ** THE ORDERED NULL IS NOT SIGNIFICANT -- 0.97 sigma, p = 0.56 -- and that is the")
+#: ⛔ r7651+cc66.96: ** AND THIS LINE WAS STILL THE NAMESAKE'S TOO, one line above the block
+#:   `cc66.86` interpolated. **  *`0.97 sigma, p = 0.56` is the namesake arm's; `Ⓑ①` prints 1.07 and
+#:   54 per cent.  Interpolated, for the same reason the block below was.*
+print(f"  ✔ ** THE ORDERED NULL IS NOT SIGNIFICANT -- {abs(OBSD) / DIFF.std():.2f} sigma, "
+      f"p = {_p:.2f} -- and that is the")
 print("    complete result in the form the order asked for. **")
 #: ⛔⛭ r7649+cc66.86: ** THIS WHOLE ANSWER BLOCK WAS STILL THE NAMESAKE ARM'S, and it is printed
 #:   from the VARIABLES now so it cannot go stale again. **  *`cc66.70` re-pointed the file and moved
@@ -371,16 +381,22 @@ print("    complete result in the form the order asked for. **")
 #:   verdict text.  Interpolated rather than retyped, because retyping is how it happened.*
 print(f"  ⛭ ** AND THE REASON CARRIES MORE THAN THE NULL: the error on the difference is "
       f"{DIFF.std():.2f}, of which the CONTROL contributes {_qc:.2f} and the arm {_qa:.2f}.  The")
-print(f"    control's period is measured to {100 * _qc / MC['nofit_lcdm'].mean():.0f} per cent, so it "
+print(f"    control's period is measured to {100 * _qc / MC['nofit_lcdm'].mean():.1f} per cent, so it "
       f"cannot serve as a null at all. **  `the difference, not")
 print("    either period alone` is right as a principle and empty as a statistic here.")
 print(f"  ⛭ ** THE COMPARISON THE DATA CAN MAKE IS AGAINST ell_A, AND IT IS {_osig:.2f} SIGMA. **  The")
 print(f"    unfitted arm sits {_off:+.2f} above an ell_A the construction reproduces to 0.15 per cent,")
 print(f"    with {_ple:.4f} of draws at or below it; refitting pulls it back without reaching it.")
-print("    And it is not the fit's artefact: a second harmonic moves the fundamental by +0.25.")
-print("  ⇒ ** AND THE OFFSET IS EXACTLY A PHASE DRIFT, NOT A PERIOD. **  A period of 312 and ell_A")
-print("    with a linearly running phase are the same model to zero, so what the residual carries")
-print("    is a drift of -96.6 degrees across the range -- a quarter period over the six it spans.")
+print(f"    And it is not the fit's artefact: a second harmonic moves the fundamental by "
+      f"{OBS2 - OBS['nofit_cr']:+.2f} and leaves the offset at {(OBS2 - L_A) / MC2.std():.2f} sigma.")
+#: ⛔ r7651+cc66.96: and so was this one -- `312`, `-96.6` and `a quarter period over the six`,
+#:   every one the namesake's, where `Ⓕ①` prints the arm of record's.  Interpolated.
+print(f"  ⇒ ** AND THE OFFSET IS EXACTLY A PHASE DRIFT, NOT A PERIOD. **  A period of {_P:.2f} and "
+      f"ell_A")
+print(f"    with a linearly running phase are the same model to "
+      f"{abs(_rss(_free) - _rss(_drift)):.1e}, so what the residual")
+print(f"    carries is a drift of {_dd:+.1f} degrees across the range -- {abs(_dd) / 360:.3f} of a "
+      f"period over the {(L.max() - L.min()) / L_A:.2f} it spans.")
 print("    ⇒ Item 2's answer is therefore NOT `r_s/D_M`: ell_A sets the spacing and is right to a")
 print("    part in six hundred.  What could carry a running phase at correct spacing is the peak")
 print("    phase itself -- the loading and the driving.  Named, not measured.")

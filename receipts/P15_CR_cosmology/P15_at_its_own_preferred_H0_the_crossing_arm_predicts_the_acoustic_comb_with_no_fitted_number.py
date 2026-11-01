@@ -61,6 +61,17 @@ from scipy.signal import argrelextrema
 
 print(__doc__.split("rc=0")[0])
 fail = []
+
+
+def check(label, ok, got=None):
+    #: ⛭ r7651+cc66.91: this file had NO `check` -- every gate was a bare
+    #: `if ...: fail.append(...)`, so a gate that PASSED printed nothing at all and a reader
+    #: could not tell a satisfied condition from an absent one.  The gates PART 4B adds print
+    #: their verdict and what they measured; the existing bare ones are left as they are,
+    #: because rewriting them is not what `r7651` asked for and would hide this change.
+    print(f"    {'OK  ' if ok else 'FAIL'}  {label}" + (f"   ({got})" if got is not None else ""))
+    if not ok:
+        fail.append(label)
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 SPEC = os.path.join(ROOT, 'computations', 'beyond_the_wall', 'spectra')
 sys.path.insert(0, os.path.join(ROOT, 'computations', 'planck_tt_likelihood'))
@@ -116,6 +127,11 @@ NEW = score('cr_x_h686_pol')
 #   bit-identical to the namesake's, so it is the like-for-like arm of record; the namesake row
 #   stays because this file's identity is a named banked file and cannot move with an arm.
 AORD = score('cr_x_h686_pol_leafrec1_distances')
+#: ⛭ r7651+cc66.91: the L2000 rows PART 4B needs, scored by the SAME raw-grid method as every
+#: row above, so the provenance of the paper's 298.0 is established in this file's own terms
+#: before the matched procedure is run against it.
+NEWL2 = score('cr_x_h686_L2000')
+AORL2 = score('cr_x_h686_L2000_leafrec1_distances')
 NEWF = score('cr_x_h686_fluid')
 PIN = score('cr_leafpin')
 PINF = score('cr_leafpin_fluid')
@@ -295,6 +311,186 @@ for lab, arm, ctl in (('polarisation', X62, CTL), ('fluid', X62F, CTLF)):
     if abs(arm['p12'] / ctl['p12'] - 1) > 0.08:
         fail.append(f"the {lab} arm-to-control P1/P2 offset is "
                     f"{(arm['p12'] / ctl['p12'] - 1) * 100:.1f}%, outside 8%")
+
+# =================================================================================================
+# ⛭⛭⛭ r7651+cc66.91 -- PART 4B: ** THE COMB BY THE PROCEDURE THE SENTENCE NAMES, ON THE ARM OF
+#   RECORD -- ordered by `r7651` ⓵ because none of the receipts the four sentences cite computes it,
+#   and the two that print it only quote it. **
+#
+#   l.813, l.883, l.945 and l.2067 all rest on ONE pair: `$298.0$` against the sky's `$298.4$`, which
+#   l.2067 calls "right to a part in six hundred".  l.813's wording is the claim this PART tests:
+#   *"fitted to those peaks BY THE PROCEDURE THIS PAPER RUNS ON THE SKY"*.
+#
+#   ⛔ ** THE PAIR IS NOT THAT PROCEDURE, AND THE PROVENANCE IS EXACT. **  `score()` above finds peaks
+#   with `argrelextrema(Dl, order=3)` on the model's OWN NATIVE GRID and fits three of them.  The
+#   L2000 banks are `LSTEP=2`, so those maxima are QUANTISED TO EVEN `ell`: the namesake's come out
+#   `222 / 538 / 818 / 1134`, every one of them a grid point, and the three-peak fit of them is
+#   `298.00` -- the paper's figure to the digit.  The sky's `298.4` is `sec:intro`'s stored quartet
+#   through the same three-peak fit, `298.45`.  So the pair is internally consistent in its FIT and
+#   the arm's half of it is not located by the parabolic procedure at all.
+#   ⇒ *** AND THE AGREEMENT IS CLAIMED FINER THAN THE METHOD THAT PRODUCED IT CAN RESOLVE: 0.13 per
+#   cent, on peaks quantised to 2 in `ell`, where the parabolic locator moves the fourth peak by 3.2.
+#   That is the same defect class as the 10-per-cent RELATIVE tolerance `cc66.81` found on a shift a
+#   fiftieth of its locator's grain -- a number stated to a precision its own instrument lacks. ***
+#
+#   ⌗ *So this PART runs the procedure the sentence names -- lens with P15's own operator, bin through
+#   `plik_lite`, cubic-spline to a 1-in-`ell` grid, locate humps, parabola over +-W, W swept over the
+#   seven windows -- IDENTICALLY on the sky and on each arm, which is `cc66.28`'s matched-procedure
+#   discipline.  The sky row is the check that the port is faithful: it must reproduce `sec:intro`.*
+print()
+print("=" * 112)
+print("  PART 4B -- ** THE COMB BY THE PROCEDURE THE SENTENCE NAMES (r7651 ⓵) **")
+print("=" * 112)
+from scipy.interpolate import CubicSpline                                  # noqa: E402
+import camb                                                               # noqa: E402
+
+_LC, _FACB = CS.bin_center_and_fac()
+_WS = (40., 45., 50., 55., 60., 70., 80.)
+_cp = camb.set_params(H0=67.40, ombh2=0.02237, omch2=0.3150 * 0.674 ** 2 - 0.02237,
+                      mnu=0.06, omk=0, tau=0.054, As=2.1e-9, ns=0.965, lmax=3000)
+_ccl = camb.get_results(_cp).get_cmb_power_spectra(_cp, CMB_unit='muK', lmax=3000)
+_cle, _clu = _ccl['total'][:, 0], _ccl['unlensed_scalar'][:, 0]
+_CLG = np.arange(len(_cle), dtype=float)
+_RAT = np.ones_like(_cle)
+_msk = _clu > 0
+_RAT[_msk] = _cle[_msk] / _clu[_msk]
+
+
+def _locate(Db, W, n=4):
+    """`cc66.28`'s locator, unchanged, so the sky and both arms go through ONE procedure."""
+    m = (_LC >= 100) & np.isfinite(Db)
+    lf = np.arange(100.0, 1300.0, 1.0)
+    Df = CubicSpline(_LC[m], Db[m])(lf)
+    out = []
+    for i in argrelextrema(Df, np.greater, order=40)[0]:
+        k = (lf >= lf[i] - W) & (lf <= lf[i] + W)
+        if k.sum() < 5:
+            continue
+        c = np.polyfit(lf[k], Df[k], 2)
+        if c[0] >= 0:
+            continue
+        out.append(float(-c[1] / (2 * c[0])))
+    return out[:n]
+
+
+def _sweep(Db):
+    A3, A4, PK = [], [], []
+    for W in _WS:
+        p = _locate(Db, W)
+        if len(p) < 4:
+            continue
+        PK.append(p)
+        A3.append(fit_comb(p, 3)[0])
+        A4.append(fit_comb(p, 4)[0])
+    PK = np.array(PK)
+    return dict(pk=PK.mean(axis=0), a3=float(np.mean(A3)), a4=float(np.mean(A4)),
+                a4_s=float(np.std(A4, ddof=1)), nW=len(PK))
+
+
+def _matched(fn):
+    z = np.load(os.path.join(SPEC, fn))
+    ls, Dl = np.asarray(z['ls'], float), np.asarray(z['Dl'], float)
+    s = _sweep(CS.bin_spectrum(ls, Dl * np.interp(ls, _CLG, _RAT)) * _FACB)
+    s['lA_rep'] = float(z['l_A'])
+    return s
+
+
+#: ⛔⛭⛭ r7651+cc66.94: ** THE PAPER'S OWN THREE FIGURES ARE READ OUT OF THE PAPER, because
+#:   `check_unread_figure` reddened on this PART and was right -- FOR THE THIRD TIME ON THIS SEAT. **
+#:   *The gates below argue about what l.813, l.945 and l.2067 print.  Their labels named `298.0`,
+#:   `298.4` and `302.9` while nothing in the file opened `corpus/CR_cosmology.tex`, so if 69 moved
+#:   any of them the gates would have stayed green while the argument went false.  `cc66.89` was
+#:   told this once and my own `r7651` PREDICTION.md listed it as commitment 4 -- "a figure
+#:   attributed to the paper is READ OUT OF THE PAPER, not retyped from it" -- and I did it anyway.
+#:   The cause is worth naming: the provenance argument lives in the LABEL, and the gate's whole
+#:   point is that an argument about the paper has to read the paper.*
+#:   ⇒ ** AND IT IS A PIN ON 69's SENTENCES, so each locator is a DISJUNCTION: ** when the sentence
+#:   is found the paper's figures must equal what this file computes by the two methods; when it is
+#:   not found the ALT arm says so and holds the computed values.  Adjudicated in
+#:   `corpus/quote_pin_baseline.tsv` in this same pass.
+import re                                                                  # noqa: E402
+
+_TEXW = re.sub(r'\s+', ' ', open(os.path.join(ROOT, 'corpus', 'CR_cosmology.tex'),
+                                 encoding='utf-8').read())
+_M813 = re.search(r"fitted to those peaks by the procedure this paper runs on the sky, it is "
+                  r"\$([0-9.]+)\$ against the sky's \$([0-9.]+)\$", _TEXW)
+_M945 = re.search(r"the comb at \$([0-9.]+)\$ against a reported scale of \$([0-9.]+)\$", _TEXW)
+PAPER = dict(comb=float(_M813.group(1)) if _M813 else None,
+             sky=float(_M813.group(2)) if _M813 else None,
+             ruler=float(_M945.group(2)) if _M945 else None)
+print(f"  read out of corpus/CR_cosmology.tex: l.813's comb/sky = "
+      f"{PAPER['comb']}/{PAPER['sky']}, l.945's reported scale = {PAPER['ruler']}"
+      + ("" if _M813 and _M945 else "   ⛔ ALT ARM: a sentence was not locatable in this form"))
+
+_MSKY = _sweep(CS.X_DATA * _FACB)
+_MNSK = _matched('cc66_cr_x_h686_L2000.npz')
+_MAOR = _matched('cc66_cr_x_h686_L2000_leafrec1_distances.npz')
+print(f"  {'row':>34} {'peaks (matched locator)':>30} {'comb 1-4':>10} {'1-3':>8} {'geom l_A':>9}")
+for _nm, _s in (('THE SKY, this locator', _MSKY),
+                ('namesake L2000 (LEAFREC=0)', _MNSK),
+                ('** ARM OF RECORD, distances **', _MAOR)):
+    _g = f"{_s['lA_rep']:9.3f}" if 'lA_rep' in _s else f"{'--':>9}"
+    print(f"  {_nm:>34} {' '.join(f'{v:7.2f}' for v in _s['pk'])} {_s['a4']:>10.3f} "
+          f"{_s['a3']:>8.3f} {_g}")
+print(f"\n  the RAW-GRID method `score()` uses, for the provenance: the namesake's maxima are "
+      f"{[int(v) for v in NEWL2['P']]},")
+print(f"  every one an even multipole on the LSTEP=2 grid, and their three-peak comb is "
+      f"{NEWL2['lA']:.2f} -- the paper's 298.0.")
+print(f"  `sec:intro`'s stored quartet through that same three-peak fit is {fit_comb(SKY, 3)[0]:.2f} "
+      f"-- the paper's 298.4.")
+print(f"  the parabolic locator moves the namesake's fourth peak by "
+      f"{abs(_MNSK['pk'][3] - NEWL2['P'][3]):.2f} in ell, against an agreement claimed at 0.13%.")
+check("⛭⛭⛭ ** THE PORT IS FAITHFUL, WHICH IS THE ONLY REASON THE ROWS BELOW MEAN ANYTHING: the "
+      "matched locator run on the SKY reproduces `sec:intro`'s own quartet. **  *Its four-peak comb "
+      "is 298.362 against the 298.45 `sec:intro`'s stored quartet gives through the same fit, and "
+      "its peaks are 220.98 / 533.79 / 814.79 / 1121.85 against the stored 220.4 / 537.7 / 817.3 / "
+      "1123.9.  A port that could not find the sky would not be evidence about an arm.*",
+      abs(_MSKY['a4'] - 298.362) < 0.01 and abs(_MSKY['a4'] - fit_comb(SKY, 3)[0]) < 0.2
+      and _MSKY['nW'] == 7
+      and (PAPER['sky'] is None or abs(fit_comb(SKY, 3)[0] - PAPER['sky']) < 0.06),
+      f"sky comb 1-4 = {_MSKY['a4']:.3f} +- {_MSKY['a4_s']:.3f} over {_MSKY['nW']} windows; "
+      f"sec:intro's three-peak {fit_comb(SKY, 3)[0]:.2f}")
+check("⛔⛭⛭ ** AND THE PAPER'S 298.0 IS NOT THE PROCEDURE THE SENTENCE NAMES. **  By that procedure "
+      "the NAMESAKE's comb is 300.589 and the ARM OF RECORD's is 299.057, neither of them 298.0.  "
+      "The 298.0 is the namesake's raw-grid three-peak comb, on maxima quantised to even `ell` by "
+      "`LSTEP=2`.  ⇒ *The pair (298.0, 298.4) is consistent in its FIT -- both three-peak -- and the "
+      "arm's half of it is not located by the parabolic procedure at all*",
+      abs(_MNSK['a4'] - 300.589) < 0.01 and abs(_MAOR['a4'] - 299.057) < 0.01
+      and abs(NEWL2['lA'] - 298.00) < 0.005
+      and all(float(v) % 2.0 == 0.0 for v in NEWL2['P'])
+      and (PAPER['comb'] is None or abs(NEWL2['lA'] - PAPER['comb']) < 0.05)
+      and (PAPER['comb'] is None or abs(_MNSK['a4'] - PAPER['comb']) > 2.0),
+      f"matched: namesake {_MNSK['a4']:.3f}, arm of record {_MAOR['a4']:.3f}; raw-grid namesake "
+      f"{NEWL2['lA']:.2f} on peaks {[int(v) for v in NEWL2['P']]}")
+_gap_ns = _MNSK['a4'] - _MSKY['a4']
+_gap_ao = _MAOR['a4'] - _MSKY['a4']
+print(f"\n  against the sky, by the named procedure: namesake {_gap_ns:+.3f} in ell "
+      f"(1 part in {abs(_MSKY['a4'] / _gap_ns):.0f}); arm of record {_gap_ao:+.3f} "
+      f"(1 part in {abs(_MSKY['a4'] / _gap_ao):.0f})")
+check("⛭⛭⛭ ** AND BY THE PROCEDURE THE SENTENCE NAMES THE AGREEMENT IS BETTER ON THE ARM OF RECORD "
+      "THAN ON THE NAMESAKE -- 1 part in 429 against 1 part in 134 -- though it was never 1 part in "
+      "six hundred on either. **  ⇒ *So l.2067's claim survives in DIRECTION and not in SIZE, and it "
+      "survives better on this arm, which is the opposite of residue*",
+      abs(_gap_ao) < abs(_gap_ns) and abs(_MSKY['a4'] / _gap_ao) > 300.0
+      and abs(_MSKY['a4'] / _gap_ns) < 200.0,
+      f"arm of record 1 part in {abs(_MSKY['a4'] / _gap_ao):.0f}, namesake 1 part in "
+      f"{abs(_MSKY['a4'] / _gap_ns):.0f}")
+check("⛭⛭⛭ ** AND HERE IS THE PARTING `cc66.81` FOUND, IN ITS CLEANEST FORM: THE GEOMETRIC RULER IS "
+      "BIT-IDENTICAL ON THE TWO ARMS WHILE THE FITTED COMB MOVES. **  *At the distances' point the "
+      "banked `l_A`, `D_M` and `r_s` are the SAME NUMBERS in both files -- the background cannot see "
+      "the arm -- and the comb the spectrum actually has goes 300.589 to 299.057.  `cc66.81` measured "
+      "the same parting at the refit point as a difference BETWEEN arms; here the geometric value is "
+      "literally the same file value and the spectrum's own comb still moves by 1.5 in `ell`.*  ⇒ "
+      "*** The fitted comb sits 1.265 per cent below the reported ruler on the arm of record and "
+      "0.759 per cent below it on the namesake: the ruler is not the comb, and l.945's 'the comb at "
+      "298.0 against a reported scale of 302.9' is the paper already printing the parting. ***",
+      _MNSK['lA_rep'] == _MAOR['lA_rep']
+      and abs(_MNSK['a4'] - _MAOR['a4']) > 1.0
+      and _MAOR['a4'] / _MAOR['lA_rep'] < _MNSK['a4'] / _MNSK['lA_rep'] < 1.0
+      and (PAPER['ruler'] is None or abs(_MAOR['lA_rep'] - PAPER['ruler']) < 0.05),
+      f"geometric l_A identical at {_MAOR['lA_rep']:.4f}; fitted comb {_MNSK['a4']:.3f} -> "
+      f"{_MAOR['a4']:.3f}; fitted/geometric {100 * (_MNSK['a4'] / _MNSK['lA_rep'] - 1):+.3f}% -> "
+      f"{100 * (_MAOR['a4'] / _MAOR['lA_rep'] - 1):+.3f}%")
 
 print()
 print("=" * 112)

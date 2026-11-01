@@ -10,6 +10,14 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ re r7651: ROUTE (B)'S FIRST PIECE IS BUILT, WITH THE EXTENSION GLUED INTO ONE CURVE ON A MULTI-CHART MANIFOLD (`r7651+71.2`)
+
+`probes/ManifoldExtension.lean` (`1496` lines, about `760` new, `16` standard axiom prints) builds the past-inextendible extension on any `LocallyOneChart` manifold. `me_local_step` gives a uniform past step near any point, through that point's own chart. The steps are measured by their drop in `Θ`, which is continuous and positive by strict increase along `TStep_N`, so no metric bound is needed. If the vertices had a limit in `M`, the drop near it would be uniform and `Θ` would go to `−∞`. The glued curve `me_past_extension` is a continuous `ℝ → N` with `ContMDiff` future-timelike pieces and no past limit in `M`. Neither registered stop (the gluing and the uniform step) was hit. `me_futCauchy_of_cauchy_N` gives two-sided ⇒ future Cauchy on `N`. Non-vacuity is BUILT IN PART: the extension is witnessed on a two-chart manifold with differing preferred charts, but the Cauchy hypothesis of the second theorem is not. That goes with campaign 87's end-to-end witness. Route (b) stays at 3 campaigns. Next is campaign 86, the local kit of openness of `I^±`, push-up and short steps on `N`.
+
+## ⌗ re r7651: ROUTE (B)'S FIRST PIECE REGISTERED, RE-PRICED WITHIN R7647'S ESTIMATE, SO BUILDING (`r7651+71.1`)
+
+Campaign 85 (`r7651_71_campaign85/PREDICTION.md`) builds the extension of inextendible causal curves across charts, at p `0.45`. It does not attempt a uniform step length, which arbitrary charts cannot give. Each backward step is instead measured by its drop in the temporal `Θ`. A past limit `x*` in `M` would force a uniform drop near `x*`, through `x*`'s own chart and campaign 84's transfer, so `Θ → −∞`, a contradiction. The expected stop is gluing the infinitely many manifold steps into one piecewise curve `ℝ → N`. **Route (b) re-priced: 3 campaigns, about 2000–3000 lines** (this one; the local kit of openness, push-up and short steps; the assembly with a two-chart witness), within r7647's 2000–3500 over 3–5. So I am building rather than referring it back.
+
 ## ✔ re r7649: CAMPAIGN 84 BUILT IN FULL; THE HEADLINE HOLDS ON ANY MANIFOLD WHOSE SPACETIME REGION LIES IN ONE CHART (`r7649+71.2`)
 
 `probes/ChartHeadline.lean` (`3622` lines, about `1400` new, `30` standard axiom prints) builds route (c) whole, and neither registered stop was hit.

@@ -100,8 +100,12 @@ COMPUTES: scope.
   * ** EVERY COSMOLOGICAL PARAMETER IS BANKED, NOT CHOSEN HERE. **  Both arms at `r6825+cc66.25`'s
     verified 185-bin refit minima; the fine references are the same configuration at `LSTEP=1 LMAXL=2000`.
     Nothing here re-fits and nothing here moves.
-  * `spectra/r6941_fine_{lcdm,cr}.npz`, `r6941_fine_cr_visleaf.npz`, `r6929_scan_cr.npz`,
-    `r6929_geometry.npz`, `cc66_r185_verify_{lcdm,cr}.npz`.
+  * `spectra/r6941_fine_lcdm.npz`, `r6941_fine_cr_leafrec1.npz`,
+    `r6941_fine_cr_visleaf_leafrec1.npz`, `r6929_scan_cr_leafrec1.npz`,
+    `r6929_geometry_leafrec1.npz`, `r6929_geometry.npz`, `cc66_r185_verify_{lcdm,cr}.npz`.
+  * ⛭ *And `r6941_fine_cr.npz`, the NAMESAKE arm, read in PART 3B for PROVENANCE ONLY --
+    it feeds no gate on the physics and no figure this receipt publishes; it is there to
+    establish which arm the PAPER's own paragraph is on, which its citation alone cannot say.*
   * The sky is `plik_lite` TT's `X_data` and `COV_TT` through
     `computations/planck_tt_likelihood/chi2_of_spectrum.py`; `PO-47`'s fourth-peak spread $2.36$ and its
     $0.83\sigma$ are quoted from that receipt and not recomputed.
@@ -110,6 +114,7 @@ COMPUTES: scope.
     values instead of locations.
 """
 import os
+import re
 import sys
 
 import numpy as np
@@ -449,6 +454,158 @@ check("⛭ ** AND THE CONTROL LANDS ON THE SKY'S TROUGH DEPTHS TO A TWENTIETH OF
       f"fourth peak, where arm-minus-control was {PO47_AC} sigma and both models sat high of the sky",
       abs((dc - ds) / sd) < 0.2 and (da - ds) / sd > 1.5,
       f"control-sky {(dc-ds)/sd:+.2f} sigma, arm-sky {(da-ds)/sd:+.2f} sigma")
+
+# ===================================================================================================
+#   ⚭⚭⚭ r7651+cc66.95: ** AND THE PAPER'S OWN PARAGRAPH IS THE NAMESAKE'S, ON THREE DIFFERENT
+#   STATISTICS AT ONCE -- WHICH IS WHY GREPPING THE TREE FOR ITS FIGURES FOUND NOTHING. **  *`r7651`'s
+#   order asked which receipt computes `CR_cosmology.tex` l.1127's `1.056`.  It is this one, and the
+#   paragraph's own `\rcpt` already said so: the figure is the `mean` row of the FIXED-q table in
+#   PART 1, computed and printed at run time, so it is a literal NOWHERE in the tree -- node 60's grep
+#   and `r7649+cc66.83`'s both failed on a figure that was never a string.*
+#   ⛔ ** But it is the NAMESAKE's fixed-q mean and not the arm of record's. **  The namesake arm is run
+#   below through the identical statistics and reproduces three of the paragraph's four figure pairs
+#   EXACTLY at the digits the paper prints, the fourth to the truncation of a 5 in its last place.
+#   *So l.1126-1137 is one pre-re-point state, and this block is the gate that says so and that carries
+#   the replacement values in its own label.*
+#   ⛭ ** THE FOUR GATES ARE DISJUNCTIONS -- the namesake pair (the published state) OR the arm of
+#   record's (amended) -- so they pass before and after node 69 rules on the wording, and fail on
+#   anything else, including a paragraph amended in part. **  ⌗ *The wording is 69's and not this
+#   receipt's, because the amendment cannot be the numbers alone: l.1126 names the statistic as the
+#   band-variance split at its zero, and THAT statistic on the arm of record reads 1.1320 against
+#   1.0483 -- the peak-dominated reading PART 1 shows to be two slivers, and the opposite of the
+#   paragraph's own conclusion.  The live statistic is the ANCHORED lobe split, which is a different
+#   sentence and not a different number.*
+print("\nPART 3B -- WHICH ARM THE PAPER'S OWN PARAGRAPH IS ON, MEASURED AND NOT ASSERTED.")
+print("-" * 100)
+_NSB = 'r6941_fine_cr.npz'
+check(f"the namesake arm's fine bank is present, so the provenance below is measured: `spectra/{_NSB}`",
+      os.path.exists(os.path.join(SP, _NSB)), _NSB)
+_NS = np.load(os.path.join(SP, _NSB))
+check("and it IS the namesake and not a second copy of the arm of record -- its `l_A` differs, which is "
+      "the whole reason the fixed-q split stopped being phase-matched",
+      abs(float(_NS['l_A']) - float(F['cr']['l_A'])) > 0.5,
+      f"namesake l_A {float(_NS['l_A']):.3f}, arm of record {float(F['cr']['l_A']):.3f}, "
+      f"control {float(F['lcdm']['l_A']):.3f}")
+_QN = _NS['ls'].astype(float) / float(_NS['l_A'])
+_ON = osc(_QN, _NS['Dl'])
+#   the fixed-q mean split -- `cc66.46`'s published statistic, on the namesake
+_pn, _tn = [], []
+for _a, _b in zip(ED[:-1], ED[1:]):
+    _, _vpa, _vma = three(_QN, _ON, _a, _b)
+    _, _vpc, _vmc = three(Q['lcdm'], O['lcdm'], _a, _b)
+    _pn.append(np.sqrt(_vpa / _vpc)); _tn.append(np.sqrt(_vma / _vmc))
+NSFQ = (float(np.mean(_pn)), float(np.mean(_tn)))
+#   the literal-extrema ratio, the same locator, on the namesake
+_mxn = argrelextrema(_ON, np.greater, order=20)[0][:6]
+_mnn = argrelextrema(_ON, np.less, order=20)[0][:6]
+NSEX = (float(np.mean(np.array([float(_ON[i]) for i in _mxn]) / EX['lcdm'][0])),
+        float(np.mean(np.array([abs(float(_ON[i])) for i in _mnn]) / EX['lcdm'][1])))
+#   and the anchored binned depth and height.  ⛭ The SKY's two spreads are the sky's and move with
+#   neither arm, so `sd` / `sh` above serve both and no second Monte Carlo is run here.
+_ONB = binned_osc(CS.bin_spectrum(_NS['ls'].astype(float), _NS['Dl']) * FAC, float(_NS['l_A']))
+NSD = float(anchored(_ONB, TR, W0, 'min').mean())
+NSH = float(anchored(_ONB, PK, W0, 'max').mean())
+print(f"    {'what the paragraph prints':<32} {'namesake':>12} {'arm of record':>16}   the statistic")
+print(f"    {'l.1127 split, peak side':<32} {NSFQ[0]:12.4f} {LPKS.mean():16.4f}   "
+      f"fixed-q mean (namesake) vs anchored lobes (live)")
+print(f"    {'l.1127 split, trough side':<32} {NSFQ[1]:12.4f} {LTRS.mean():16.4f}   "
+      f"-- and the LIVE fixed-q mean is {PKS.mean():.4f} / {TRS.mean():.4f}, inadmissible")
+print(f"    {'l.1129 extrema, maxima %':<32} {100*(NSEX[0]-1):12.2f} {100*(r_max-1):16.2f}   "
+      f"six located extrema, each arm's own")
+print(f"    {'l.1129 extrema, minima %':<32} {100*(NSEX[1]-1):12.2f} {100*(r_min-1):16.2f}")
+print(f"    {'l.1134 depth excess':<32} {NSD-dc:12.5f} {da-dc:16.5f}   "
+      f"anchored binned depth, arm minus control")
+print(f"    {'l.1134 height excess':<32} {NSH-hc:12.5f} {ha-hc:16.5f}   "
+      f"-- the ORDER of the two reverses between the arms")
+print(f"    {'l.1136 depth sigma':<32} {(NSD-dc)/sd:12.2f} {(da-dc)/sd:16.2f}   "
+      f"through the SAME sky spreads {sd:.5f} / {sh:.5f}")
+print(f"    {'l.1136 height sigma':<32} {(NSH-hc)/sh:12.2f} {(ha-hc)/sh:16.2f}")
+
+_TEXW = re.sub(r'\s+', ' ', open(os.path.join(ROOT, 'corpus', 'CR_cosmology.tex'),
+                                 encoding='utf-8').read())
+
+
+def _pair(pat):
+    _m = re.search(pat, _TEXW)
+    return tuple(float(g) for g in _m.groups()[:2]) if _m else None
+
+
+#   ⛭ *The split locator is deliberately loose about HOW the sentence names the statistic --
+#   `at its zero` or `at its own zero crossings, lobe by lobe` -- because the amendment gate ①
+#   recommends is a REWORDING, and a pin that failed on its own recommended fix would be a pin
+#   that blocks the repair.  It stays anchored on the sentence's structure, so a sentence that
+#   stops being this claim still takes its pin with it and the found-gate below says so.*
+PAP_SPLIT = _pair(r"variance of the normalised oscillation at its [^.$]{0,80}gives "
+                  r"\$([0-9.]+)\$ on the peak side against \$([0-9.]+)\$ on the trough side")
+PAP_EXTR = _pair(r"the arm exceeds the control by \$([0-9.]+)\$ per cent at the maxima against "
+                 r"\$([0-9.]+)\$ at the minima")
+PAP_EXC = _pair(r"the same amount in each, \$\+([0-9.]+)\$ in depth against \$\+([0-9.]+)\$ in height")
+PAP_SIG = _pair(r"reads at \$([0-9.]+)\$ of the sky's own spread in the depths and \$([0-9.]+)\$ in "
+                r"the heights")
+check("⛭ all four of the paragraph's figure pairs were FOUND in `corpus/CR_cosmology.tex` by reading "
+      "the file, so the four gates below are not vacuous -- reword the sentence and its pin goes with "
+      "it, and THIS gate is what says so rather than a silent pass",
+      all(_p is not None for _p in (PAP_SPLIT, PAP_EXTR, PAP_EXC, PAP_SIG)),
+      f"split {PAP_SPLIT}, extrema {PAP_EXTR}, excess {PAP_EXC}, sigma {PAP_SIG}")
+
+check("⛔⛭ ① ** l.1127's $1.067$ AGAINST $1.056$ IS THE NAMESAKE's FIXED-q MEAN, to the three digits "
+      "it prints. **  *That names the receipt `r7651`'s order asked for -- this one -- and names the "
+      "ARM, which the citation alone could not.*  ⌗ ALT: the arm of record's ANCHORED lobe split, "
+      "$1.074$ against $1.062$, once node 69 rules on the wording.  The LIVE fixed-q mean is not an "
+      "admissible amendment, because its peak side is a ratio of slivers",
+      PAP_SPLIT is None
+      or (round(NSFQ[0], 3) == PAP_SPLIT[0] and round(NSFQ[1], 3) == PAP_SPLIT[1])
+      or (round(LPKS.mean(), 3) == PAP_SPLIT[0] and round(LTRS.mean(), 3) == PAP_SPLIT[1]),
+      f"paper {PAP_SPLIT}; namesake fixed-q {round(NSFQ[0], 3)}/{round(NSFQ[1], 3)}; "
+      f"arm-of-record anchored {round(LPKS.mean(), 3)}/{round(LTRS.mean(), 3)}")
+
+check("⛔⛭ ② and l.1129's $5.7$ against $5.3$ per cent is the NAMESAKE's extrema reading -- the first "
+      "figure to the digit it prints, the second the truncation of its own $5.35$, which is the one "
+      "place in the paragraph where the match is not exact.  ⌗ ALT: the arm of record's $6.9$ against "
+      "$6.2$, which is what this receipt publishes",
+      PAP_EXTR is None
+      or (abs(100 * (NSEX[0] - 1) - PAP_EXTR[0]) <= 0.06
+          and abs(100 * (NSEX[1] - 1) - PAP_EXTR[1]) <= 0.06)
+      or (abs(100 * (r_max - 1) - PAP_EXTR[0]) <= 0.06
+          and abs(100 * (r_min - 1) - PAP_EXTR[1]) <= 0.06),
+      f"paper {PAP_EXTR}; namesake {100*(NSEX[0]-1):.2f}/{100*(NSEX[1]-1):.2f}; "
+      f"arm of record {100*(r_max-1):.2f}/{100*(r_min-1):.2f}")
+
+check("⛔⛭ ③ and l.1134's $+0.0106$ in depth against $+0.0103$ in height is the NAMESAKE's anchored "
+      "binned pair, exactly at the four digits it prints.  ⌗ ALT: the arm of record's $+0.0128$ and "
+      "$+0.0135$ -- where the ORDER of the two reverses, the height becoming the larger, so the "
+      "amendment here is not a digit substitution either",
+      PAP_EXC is None
+      or (round(NSD - dc, 4) == PAP_EXC[0] and round(NSH - hc, 4) == PAP_EXC[1])
+      or (round(da - dc, 4) == PAP_EXC[0] and round(ha - hc, 4) == PAP_EXC[1]),
+      f"paper {PAP_EXC}; namesake {NSD-dc:+.5f}/{NSH-hc:+.5f}; "
+      f"arm of record {da-dc:+.5f}/{ha-hc:+.5f}")
+
+check("⛔⛭ ④ and l.1136's $1.8$ of the sky's spread in the depths against $0.9$ in the heights is the "
+      "NAMESAKE's, exactly -- read through the SAME two sky spreads, which are the sky's and move with "
+      "neither arm, so this pair moves only because the ARM moved.  ⌗ ALT: the arm of record's $2.2$ "
+      "and $1.2$, the pair this receipt's own closing verdict prints",
+      PAP_SIG is None
+      or (round((NSD - dc) / sd, 1) == PAP_SIG[0] and round((NSH - hc) / sh, 1) == PAP_SIG[1])
+      or (round((da - dc) / sd, 1) == PAP_SIG[0] and round((ha - hc) / sh, 1) == PAP_SIG[1]),
+      f"paper {PAP_SIG}; namesake {(NSD-dc)/sd:+.2f}/{(NSH-hc)/sh:+.2f}; "
+      f"arm of record {(da-dc)/sd:+.2f}/{(ha-hc)/sh:+.2f}")
+
+_EXACT = ((PAP_SPLIT, (round(NSFQ[0], 3), round(NSFQ[1], 3))),
+          (PAP_EXC, (round(NSD - dc, 4), round(NSH - hc, 4))),
+          (PAP_SIG, (round((NSD - dc) / sd, 1), round((NSH - hc) / sh, 1))))
+_NSHIT = sum(1 for _p, _v in _EXACT if _p is not None and _p == _v)
+check("⛭⛭⛭ ** SO THE PARAGRAPH IS ONE STATE AND NOT FOUR INDEPENDENT FIGURES: three of its four pairs "
+      "reproduce from the namesake arm EXACTLY, at the digits the paper prints, on three different "
+      "statistics -- a fixed-q band variance, an anchored binned depth, and that depth divided by a "
+      "Monte-Carlo spread. **  *Six figures at once is not a coincidence, so the provenance is "
+      "established and not inferred.*  ⌗ ALT: the paragraph has been amended, in which case none of "
+      "the three matches the namesake and gates ①-④ hold it on the arm of record.  ⛔ *Anything "
+      "between 3 and 0 is a MIXED paragraph -- half re-pointed -- which is the one state neither arm "
+      "describes and which this gate exists to forbid*",
+      _NSHIT == 3 or _NSHIT == 0,
+      f"{_NSHIT} of 3 exact namesake reproductions "
+      f"(3 = the published state, 0 = amended, anything between = MIXED)")
 
 # ===================================================================================================
 # ⛭⛭ r7643+cc66.52: ** EVERY FIGURE THIS RECEIPT'S `INDEX.md` ROW PRINTS IS PINNED HERE, TWO-SIDED, AT

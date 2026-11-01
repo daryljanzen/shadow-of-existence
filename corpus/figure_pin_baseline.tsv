@@ -47,6 +47,50 @@
 #   constant is a loop variable.  A pin held in a dict does not exist as far as this gate is
 #   concerned.  That is the SECOND instrument with it: `check_quote_pins` has the same hole, reported
 #   at cc66.71.  Both are routed to 70 through 69.
+#
+# r7651+cc66.94 (cc66): 1488 -> 1484.  FOUR rows struck because `r7651` ⓵'s new PART 4B now PINS
+# l.813's 298.0 and 298.4 -- the gate reported them STALE, which is the gate saying a figure that was
+# owed is owed no longer.  The receipt computes the comb by the procedure the sentence NAMES (lensed,
+# binned through plik_lite, splined, parabola over +-W, seven windows, identically on the sky and each
+# arm), and it now READS the paper's own 298.0, 298.4 and 302.9 out of `corpus/CR_cosmology.tex` and
+# compares them, rather than naming them in a label.
+#   => That second part was `check_unread_figure`'s doing, and it is the THIRD time this seat has been
+#   told: once at cc66.89, once as commitment 4 of r7651's own PREDICTION.md ("a figure attributed to
+#   the paper is READ OUT OF THE PAPER, not retyped from it"), and once here.  The cause is worth
+#   naming rather than apologising for: the provenance argument lives in the gate's LABEL, and that
+#   gate's whole point is that an argument about the paper must read the paper.
+#
+# r7651+cc66.98 (cc66): 1484 -> 1485, and it is a LIKE-FOR-LIKE re-baseline of 33 keys, not a new
+# population.  69's `r7651` ruling amended four `receipts/INDEX.md` rows (l.903, l.905, l.906, l.1111)
+# to the arm of record, so 33 namesake figures left those claim cells and 33 arm-of-record figures took
+# their places under the same receipt keys -- the gate reported the old ones STALE and the new ones
+# UNPINNED in the same run, which is the two halves of one substitution.  Unpinned before, unpinned now.
+#   => AND THE SUBSTITUTION EXPOSED THE cc66.87 BLIND SPOT AGAIN, in a THIRD form, WITH A SECOND
+#   REASON STACKED BEHIND IT.  `...the_shared_fraction...`'s `_SIX` and `...the_model_difference...`'s
+#   `_PIN6` each hold six figures in a TUPLE the gate iterates
+#   (`all(abs(g - w) <= t for _n, g, w, t in _SIX)`), and `pins()` reads constants only inside an
+#   `ast.Compare` -- so twelve figures these receipts genuinely assert were reported UNPINNED.  Both
+#   receipts now assert the same twelve again as LITERAL comparisons: identical content, visible
+#   instrument.
+#     * FOUR of the twelve then counted as pinned and their rows came down -- 55.7, 69.2, 1.0440 and
+#       1.0438 -- taking the live count 1490 -> 1485 and the key count 1391 -> 1386.
+#     * ⛔ THE OTHER EIGHT DID NOT, and the reason is NOT the AST: their TOLERANCES ARE SLACKER THAN
+#       THIS GATE'S OWN ALLOWANCE FOR THE DIGITS THE ROW PRINTS.  `figures()` allows
+#       `max(0.5 x 10^-dp, 5e-4 |x|)`, so `71.8` at `+-0.2` allows 0.05, `1.270` at `+-0.004` allows
+#       0.000635, `81.81` at `+-0.05` allows 0.0409, `8.57` at `+-0.05` allows 0.005, `0.836` at
+#       `+-0.004` allows 0.0005.  Every one is a real assertion that passes; none is tight enough to be
+#       a PIN by this gate's rule, and three of them miss by a hair.  *Tightening them is a change to
+#       what those receipts assert, which is a separate act from landing 69's row amendment, so it is
+#       NOT done here and is said instead.*
+#   => The remaining rows are the amended INDEX rows' diagnostics (table values, per-cent spans,
+#   switch-off residues).  They are baselined rather than pinned because pinning a figure means naming
+#   the variable that computes it, and a pin written against a variable I guessed at would be worse
+#   than a baseline row that says plainly it is not pinned.  The baseline can only shrink.
+#   => Verified by SET COMPARISON, not by reading the diff -- and against `git show HEAD:` rather than
+#   `origin/main:`, because this branch already carries r7651+cc66.94's own four-row reduction and main
+#   does not, so a comparison against main would have shown those four as an unexplained difference.
+#   Against HEAD: `comm -23` names exactly 33 retired keys, `comm -13` exactly 33 created ones, every
+#   one under the three amended receipts, and the key count is unchanged at 1386.
 APPENDIX	P03	P03_the_cluster_ensemble_exists_and_it_overshoots_the_bound_at_the_dynamical_mass_which_weakens_my_own_exclusion	1.20	2
 APPENDIX	P03	P03_the_cluster_ensemble_exists_and_it_overshoots_the_bound_at_the_dynamical_mass_which_weakens_my_own_exclusion	1.28	1
 APPENDIX	P03	P03_the_cluster_ensemble_exists_and_it_overshoots_the_bound_at_the_dynamical_mass_which_weakens_my_own_exclusion	1.37	1
@@ -217,8 +261,6 @@ APPENDIX	P15	P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_
 APPENDIX	P15	P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number	2.264	1
 APPENDIX	P15	P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number	2.277	1
 APPENDIX	P15	P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number	2.298	1
-APPENDIX	P15	P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number	298.0	1
-APPENDIX	P15	P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number	298.4	1
 APPENDIX	P15	P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number	4.19	1
 APPENDIX	P15	P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number	68.60	1
 APPENDIX	P15	P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number	85.9	1
@@ -537,40 +579,41 @@ APPENDIX	P15	P15_the_low_multipole_floor_moves_with_no_background_and_the_factor
 APPENDIX	P15	P15_the_low_multipole_floor_moves_with_no_background_and_the_factor_two_is_the_late_isw	7.74	1
 APPENDIX	P15	P15_the_low_multipole_floor_moves_with_no_background_and_the_factor_two_is_the_late_isw	7.81	1
 APPENDIX	P15	P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck	0.103	1
-APPENDIX	P15	P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck	0.16	1
 APPENDIX	P15	P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck	0.200	1
+APPENDIX	P15	P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck	0.215	1
 APPENDIX	P15	P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck	0.300	1
-APPENDIX	P15	P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck	0.33	1
-APPENDIX	P15	P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck	0.420	1
+APPENDIX	P15	P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck	0.41	1
+APPENDIX	P15	P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck	0.458	1
 APPENDIX	P15	P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck	0.4835	1
-APPENDIX	P15	P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck	0.760	2
-APPENDIX	P15	P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck	0.79	1
+APPENDIX	P15	P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck	0.791	1
+APPENDIX	P15	P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck	0.836	2
 APPENDIX	P15	P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck	0.855	1
 APPENDIX	P15	P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck	0.88	1
 APPENDIX	P15	P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck	0.89	1
 APPENDIX	P15	P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck	0.994	1
-APPENDIX	P15	P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck	1.038	1
-APPENDIX	P15	P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck	1.040	2
-APPENDIX	P15	P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck	1.044	1
-APPENDIX	P15	P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck	1.074	1
-APPENDIX	P15	P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck	1.078	3
-APPENDIX	P15	P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck	1.137	1
+APPENDIX	P15	P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck	1.0384	1
+APPENDIX	P15	P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck	1.056	1
+APPENDIX	P15	P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck	1.076	3
+APPENDIX	P15	P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck	1.144	1
 APPENDIX	P15	P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck	1.15	1
-APPENDIX	P15	P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck	1.177	1
+APPENDIX	P15	P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck	1.159	1
 APPENDIX	P15	P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck	1.34	1
-APPENDIX	P15	P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck	1.43	1
-APPENDIX	P15	P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck	1.85	1
+APPENDIX	P15	P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck	1.457	1
+APPENDIX	P15	P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck	1.849	1
+APPENDIX	P15	P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck	1.855	1
 APPENDIX	P15	P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck	177.88	1
-APPENDIX	P15	P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck	256.3	1
-APPENDIX	P15	P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck	27.82	1
-APPENDIX	P15	P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck	282.96	1
-APPENDIX	P15	P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck	66.8	1
-APPENDIX	P15	P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck	68.3	1
-APPENDIX	P15	P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck	77.26	1
-APPENDIX	P15	P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck	77.3	1
+APPENDIX	P15	P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck	260.8	1
+APPENDIX	P15	P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck	27.21	1
+APPENDIX	P15	P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck	286.89	1
+APPENDIX	P15	P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck	35.5	1
+APPENDIX	P15	P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck	46.3	1
+APPENDIX	P15	P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck	57.5	1
+APPENDIX	P15	P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck	64.5	1
+APPENDIX	P15	P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck	71.05	1
+APPENDIX	P15	P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck	81.81	2
+APPENDIX	P15	P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck	82.7	1
 APPENDIX	P15	P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck	87.6	1
-APPENDIX	P15	P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck	92.8	1
-APPENDIX	P15	P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck	93.7	1
+APPENDIX	P15	P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck	88.5	1
 APPENDIX	P15	P15_the_monopole_zero_point_is_not_the_channel_and_the_two_residuals_point_opposite_ways	0.028	1
 APPENDIX	P15	P15_the_monopole_zero_point_is_not_the_channel_and_the_two_residuals_point_opposite_ways	0.76	1
 APPENDIX	P15	P15_the_monopole_zero_point_is_not_the_channel_and_the_two_residuals_point_opposite_ways	0.78	1
@@ -671,25 +714,25 @@ APPENDIX	P15	P15_the_second_arm_actually_run	0.676	1
 APPENDIX	P15	P15_the_second_arm_actually_run	2.75	1
 APPENDIX	P15	P15_the_shared_fraction_does_not_mean_what_i_said_and_the_peak_trough_pattern_is_the_arms_alone	0.06	1
 APPENDIX	P15	P15_the_shared_fraction_does_not_mean_what_i_said_and_the_peak_trough_pattern_is_the_arms_alone	0.07	1
-APPENDIX	P15	P15_the_shared_fraction_does_not_mean_what_i_said_and_the_peak_trough_pattern_is_the_arms_alone	0.51	1
-APPENDIX	P15	P15_the_shared_fraction_does_not_mean_what_i_said_and_the_peak_trough_pattern_is_the_arms_alone	0.52	1
+APPENDIX	P15	P15_the_shared_fraction_does_not_mean_what_i_said_and_the_peak_trough_pattern_is_the_arms_alone	0.56	2
 APPENDIX	P15	P15_the_shared_fraction_does_not_mean_what_i_said_and_the_peak_trough_pattern_is_the_arms_alone	0.67	2
-APPENDIX	P15	P15_the_shared_fraction_does_not_mean_what_i_said_and_the_peak_trough_pattern_is_the_arms_alone	0.837	1
+APPENDIX	P15	P15_the_shared_fraction_does_not_mean_what_i_said_and_the_peak_trough_pattern_is_the_arms_alone	0.824	1
 APPENDIX	P15	P15_the_shared_fraction_does_not_mean_what_i_said_and_the_peak_trough_pattern_is_the_arms_alone	0.88	1
 APPENDIX	P15	P15_the_shared_fraction_does_not_mean_what_i_said_and_the_peak_trough_pattern_is_the_arms_alone	0.96	1
 APPENDIX	P15	P15_the_shared_fraction_does_not_mean_what_i_said_and_the_peak_trough_pattern_is_the_arms_alone	0.994	1
-APPENDIX	P15	P15_the_shared_fraction_does_not_mean_what_i_said_and_the_peak_trough_pattern_is_the_arms_alone	1.261	1
+APPENDIX	P15	P15_the_shared_fraction_does_not_mean_what_i_said_and_the_peak_trough_pattern_is_the_arms_alone	1.269	1
+APPENDIX	P15	P15_the_shared_fraction_does_not_mean_what_i_said_and_the_peak_trough_pattern_is_the_arms_alone	1.270	1
 APPENDIX	P15	P15_the_shared_fraction_does_not_mean_what_i_said_and_the_peak_trough_pattern_is_the_arms_alone	1.34	1
-APPENDIX	P15	P15_the_shared_fraction_does_not_mean_what_i_said_and_the_peak_trough_pattern_is_the_arms_alone	1.357	1
+APPENDIX	P15	P15_the_shared_fraction_does_not_mean_what_i_said_and_the_peak_trough_pattern_is_the_arms_alone	1.388	1
 APPENDIX	P15	P15_the_shared_fraction_does_not_mean_what_i_said_and_the_peak_trough_pattern_is_the_arms_alone	1.46	1
 APPENDIX	P15	P15_the_shared_fraction_does_not_mean_what_i_said_and_the_peak_trough_pattern_is_the_arms_alone	1.56	1
 APPENDIX	P15	P15_the_shared_fraction_does_not_mean_what_i_said_and_the_peak_trough_pattern_is_the_arms_alone	13.34	1
-APPENDIX	P15	P15_the_shared_fraction_does_not_mean_what_i_said_and_the_peak_trough_pattern_is_the_arms_alone	16.82	1
+APPENDIX	P15	P15_the_shared_fraction_does_not_mean_what_i_said_and_the_peak_trough_pattern_is_the_arms_alone	16.94	1
 APPENDIX	P15	P15_the_shared_fraction_does_not_mean_what_i_said_and_the_peak_trough_pattern_is_the_arms_alone	214.6	1
-APPENDIX	P15	P15_the_shared_fraction_does_not_mean_what_i_said_and_the_peak_trough_pattern_is_the_arms_alone	73.1	1
-APPENDIX	P15	P15_the_shared_fraction_does_not_mean_what_i_said_and_the_peak_trough_pattern_is_the_arms_alone	77.3	2
-APPENDIX	P15	P15_the_shared_fraction_does_not_mean_what_i_said_and_the_peak_trough_pattern_is_the_arms_alone	8.79	1
+APPENDIX	P15	P15_the_shared_fraction_does_not_mean_what_i_said_and_the_peak_trough_pattern_is_the_arms_alone	71.8	1
+APPENDIX	P15	P15_the_shared_fraction_does_not_mean_what_i_said_and_the_peak_trough_pattern_is_the_arms_alone	81.8	2
 APPENDIX	P15	P15_the_shared_fraction_does_not_mean_what_i_said_and_the_peak_trough_pattern_is_the_arms_alone	82.2	1
+APPENDIX	P15	P15_the_shared_fraction_does_not_mean_what_i_said_and_the_peak_trough_pattern_is_the_arms_alone	9.04	1
 APPENDIX	P15	P15_the_shear_coefficient_derived_not_remembered	0.8852	1
 APPENDIX	P15	P15_the_shear_coefficient_derived_not_remembered	1.0618	1
 APPENDIX	P15	P15_the_shear_coefficient_derived_not_remembered	1.1996	1
@@ -815,7 +858,6 @@ APPENDIX	P15	P15_the_wrap_fix_is_applied_and_agrees_key_for_key_and_the_exposed_
 APPENDIX	P15	P15_the_wrap_fix_is_applied_and_agrees_key_for_key_and_the_exposed_convention_is_the_window_not_the_endpoint	3.10	1
 APPENDIX	P15	P15_the_wrap_fix_is_applied_and_agrees_key_for_key_and_the_exposed_convention_is_the_window_not_the_endpoint	9.11	1
 APPENDIX	P15	P15_there_is_no_phase_residual_and_the_fourth_peak_is_not_the_damping_envelope	0.13	1
-APPENDIX	P15	P15_there_is_no_phase_residual_and_the_fourth_peak_is_not_the_damping_envelope	1.95	1
 APPENDIX	P15	P15_three_quarters_of_the_arms_residual_is_the_controls_and_what_is_left_is_position_not_amplitude	0.83	1
 APPENDIX	P15	P15_three_quarters_of_the_arms_residual_is_the_controls_and_what_is_left_is_position_not_amplitude	0.994	1
 APPENDIX	P15	P15_three_quarters_of_the_arms_residual_is_the_controls_and_what_is_left_is_position_not_amplitude	214.6	1
@@ -1234,8 +1276,6 @@ PROSE	CR_cosmology.tex	P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the
 PROSE	CR_cosmology.tex	P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number	2.277	1
 PROSE	CR_cosmology.tex	P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number	2.298	1
 PROSE	CR_cosmology.tex	P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number	2.33	1
-PROSE	CR_cosmology.tex	P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number	298.0	1
-PROSE	CR_cosmology.tex	P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number	298.4	1
 PROSE	CR_cosmology.tex	P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number	68.60	1
 PROSE	CR_cosmology.tex	P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number	68.62	1
 PROSE	CR_cosmology.tex	P15_camb_reference	1.53	1
