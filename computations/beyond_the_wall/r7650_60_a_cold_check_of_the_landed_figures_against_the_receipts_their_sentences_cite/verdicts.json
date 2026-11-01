@@ -50,65 +50,9 @@
  },
  {
   "paper": "P15 sec:refit-bound",
-  "receipt": "P15_the_third_peak_deficit_is_radiation_driving_and_both_routes_to_the_equality_agree",
-  "figure": "2.200",
-  "verdict": "ABSENT",
-  "verbatim": false
- },
- {
-  "paper": "P15 sec:refit-bound",
-  "receipt": "P15_two_arm_control_and_guard",
-  "figure": "0.14",
-  "verdict": "ABSENT",
-  "verbatim": false
- },
- {
-  "paper": "P15 sec:refit-bound",
-  "receipt": "P15_two_arm_control_and_guard",
-  "figure": "0.23",
-  "verdict": "ABSENT",
-  "verbatim": false
- },
- {
-  "paper": "P15 sec:refit-bound",
-  "receipt": "P15_two_arm_control_and_guard",
-  "figure": "2.195",
-  "verdict": "ABSENT",
-  "verbatim": false
- },
- {
-  "paper": "P15 sec:refit-bound",
   "receipt": "P15_two_arm_control_and_guard",
   "figure": "2.200",
   "verdict": "REPRODUCES",
-  "verbatim": false
- },
- {
-  "paper": "P15 sec:refit-bound",
-  "receipt": "P15_the_line_of_sight_transfer",
-  "figure": "0.14",
-  "verdict": "ABSENT",
-  "verbatim": false
- },
- {
-  "paper": "P15 sec:refit-bound",
-  "receipt": "P15_the_line_of_sight_transfer",
-  "figure": "0.23",
-  "verdict": "ABSENT",
-  "verbatim": false
- },
- {
-  "paper": "P15 sec:refit-bound",
-  "receipt": "P15_the_line_of_sight_transfer",
-  "figure": "2.195",
-  "verdict": "ABSENT",
-  "verbatim": false
- },
- {
-  "paper": "P15 sec:refit-bound",
-  "receipt": "P15_the_line_of_sight_transfer",
-  "figure": "2.200",
-  "verdict": "ABSENT",
   "verbatim": false
  },
  {
@@ -253,13 +197,6 @@
  },
  {
   "paper": "P15 sec:refit-bound",
-  "receipt": "P15_the_phase_is_the_driving_and_the_undriven_arms_agree",
-  "figure": "0.1792",
-  "verdict": "ABSENT",
-  "verbatim": false
- },
- {
-  "paper": "P15 sec:refit-bound",
   "receipt": "P15_the_anomalous_driving_belonged_to_the_pin_and_not_to_the_construction",
   "figure": "0.1717",
   "verdict": "REPRODUCES",
@@ -267,7 +204,7 @@
  },
  {
   "paper": "P15 sec:refit-bound",
-  "receipt": "P15_the_symmetric_comparison_was_never_runnable_and_the_quarter_was_two_fifths",
+  "receipt": "P15_the_symmetric_comparis",
   "figure": "298.0",
   "verdict": "ABSENT",
   "verbatim": false
@@ -306,76 +243,6 @@
   "figure": "502.1",
   "verdict": "REPRODUCES",
   "verbatim": true
- },
- {
-  "paper": "P15 sec:refit-bound",
-  "receipt": "P15_the_133_bin_pair_is_computed_and_asserted_and_the_hardcoded_row_carried_the_other_arm",
-  "figure": "1.16",
-  "verdict": "ABSENT",
-  "verbatim": false
- },
- {
-  "paper": "P15 sec:refit-bound",
-  "receipt": "P15_the_133_bin_pair_is_computed_and_asserted_and_the_hardcoded_row_carried_the_other_arm",
-  "figure": "2.35",
-  "verdict": "ABSENT",
-  "verbatim": false
- },
- {
-  "paper": "P15 sec:refit-bound",
-  "receipt": "P15_the_133_bin_pair_is_computed_and_asserted_and_the_hardcoded_row_carried_the_other_arm",
-  "figure": "2.71",
-  "verdict": "ABSENT",
-  "verbatim": false
- },
- {
-  "paper": "P15 sec:refit-bound",
-  "receipt": "P15_the_133_bin_pair_is_computed_and_asserted_and_the_hardcoded_row_carried_the_other_arm",
-  "figure": "214.1",
-  "verdict": "ABSENT",
-  "verbatim": false
- },
- {
-  "paper": "P15 sec:refit-bound",
-  "receipt": "P15_the_133_bin_pair_is_computed_and_asserted_and_the_hardcoded_row_carried_the_other_arm",
-  "figure": "502.1",
-  "verdict": "ABSENT",
-  "verbatim": false
- },
- {
-  "paper": "P15 sec:refit-bound",
-  "receipt": "P15_where_the_likelihood_sits",
-  "figure": "1.16",
-  "verdict": "ABSENT",
-  "verbatim": false
- },
- {
-  "paper": "P15 sec:refit-bound",
-  "receipt": "P15_where_the_likelihood_sits",
-  "figure": "2.35",
-  "verdict": "ABSENT",
-  "verbatim": false
- },
- {
-  "paper": "P15 sec:refit-bound",
-  "receipt": "P15_where_the_likelihood_sits",
-  "figure": "2.71",
-  "verdict": "ABSENT",
-  "verbatim": false
- },
- {
-  "paper": "P15 sec:refit-bound",
-  "receipt": "P15_where_the_likelihood_sits",
-  "figure": "214.1",
-  "verdict": "ABSENT",
-  "verbatim": false
- },
- {
-  "paper": "P15 sec:refit-bound",
-  "receipt": "P15_where_the_likelihood_sits",
-  "figure": "502.1",
-  "verdict": "ABSENT",
-  "verbatim": false
  },
  {
   "paper": "P15 sec:refit-bound",
@@ -456,42 +323,14 @@
  },
  {
   "paper": "P15 sec:refit-bound",
-  "receipt": "P15_the_133_bin_pair_is_computed_and_asserted_and_the_hardcoded_row_carried_the_other_arm",
+  "receipt": "P15_the_full_range_refit_holds_the_background_and_the_phase_residual_was_quantised",
   "figure": "1.01",
-  "verdict": "ABSENT",
-  "verbatim": false
- },
- {
-  "paper": "P15 sec:refit-bound",
-  "receipt": "P15_the_133_bin_pair_is_computed_and_asserted_and_the_hardcoded_row_carried_the_other_arm",
-  "figure": "1.60",
   "verdict": "REPRODUCES",
   "verbatim": true
  },
  {
   "paper": "P15 sec:refit-bound",
   "receipt": "P15_the_133_bin_pair_is_computed_and_asserted_and_the_hardcoded_row_carried_the_other_arm",
-  "figure": "1.61",
-  "verdict": "ABSENT",
-  "verbatim": false
- },
- {
-  "paper": "P15 sec:refit-bound",
-  "receipt": "P15_the_133_bin_pair_is_computed_and_asserted_and_the_hardcoded_row_carried_the_other_arm",
-  "figure": "2.33",
-  "verdict": "ABSENT",
-  "verbatim": false
- },
- {
-  "paper": "P15 sec:refit-bound",
-  "receipt": "P15_the_no_fit_confrontation_is_three_per_bin_and_its_residual_carries_a_nine_sigma_modulation_at_the_combs_own_period_which_binning_at_that_period_cancels",
-  "figure": "1.01",
-  "verdict": "ABSENT",
-  "verbatim": false
- },
- {
-  "paper": "P15 sec:refit-bound",
-  "receipt": "P15_the_no_fit_confrontation_is_three_per_bin_and_its_residual_carries_a_nine_sigma_modulation_at_the_combs_own_period_which_binning_at_that_period_cancels",
   "figure": "1.60",
   "verdict": "REPRODUCES",
   "verbatim": true
@@ -505,34 +344,6 @@
  },
  {
   "paper": "P15 sec:refit-bound",
-  "receipt": "P15_the_no_fit_confrontation_is_three_per_bin_and_its_residual_carries_a_nine_sigma_modulation_at_the_combs_own_period_which_binning_at_that_period_cancels",
-  "figure": "2.33",
-  "verdict": "ABSENT",
-  "verbatim": false
- },
- {
-  "paper": "P15 sec:refit-bound",
-  "receipt": "P15_the_full_range_refit_holds_the_background_and_the_phase_residual_was_quantised",
-  "figure": "1.01",
-  "verdict": "REPRODUCES",
-  "verbatim": true
- },
- {
-  "paper": "P15 sec:refit-bound",
-  "receipt": "P15_the_full_range_refit_holds_the_background_and_the_phase_residual_was_quantised",
-  "figure": "1.60",
-  "verdict": "REPRODUCES",
-  "verbatim": true
- },
- {
-  "paper": "P15 sec:refit-bound",
-  "receipt": "P15_the_full_range_refit_holds_the_background_and_the_phase_residual_was_quantised",
-  "figure": "1.61",
-  "verdict": "REPRODUCES",
-  "verbatim": true
- },
- {
-  "paper": "P15 sec:refit-bound",
   "receipt": "P15_the_full_range_refit_holds_the_background_and_the_phase_residual_was_quantised",
   "figure": "2.33",
   "verdict": "REPRODUCES",
@@ -540,98 +351,14 @@
  },
  {
   "paper": "P15 sec:refit-bound",
-  "receipt": "P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number",
-  "figure": "1.01",
-  "verdict": "ABSENT",
-  "verbatim": false
- },
- {
-  "paper": "P15 sec:refit-bound",
-  "receipt": "P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number",
-  "figure": "1.60",
-  "verdict": "REPRODUCES",
-  "verbatim": false
- },
- {
-  "paper": "P15 sec:refit-bound",
-  "receipt": "P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number",
-  "figure": "1.61",
-  "verdict": "REPRODUCES",
-  "verbatim": true
- },
- {
-  "paper": "P15 sec:refit-bound",
-  "receipt": "P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number",
-  "figure": "2.33",
-  "verdict": "ABSENT",
-  "verbatim": false
- },
- {
-  "paper": "P15 sec:refit-bound",
-  "receipt": "P15_the_refit_leaves_the_background_where_the_distances_put_it_and_does_not_close_the_phase",
-  "figure": "1.01",
-  "verdict": "REPRODUCES",
-  "verbatim": true
- },
- {
-  "paper": "P15 sec:refit-bound",
-  "receipt": "P15_the_refit_leaves_the_background_where_the_distances_put_it_and_does_not_close_the_phase",
-  "figure": "1.60",
-  "verdict": "ABSENT",
-  "verbatim": false
- },
- {
-  "paper": "P15 sec:refit-bound",
-  "receipt": "P15_the_refit_leaves_the_background_where_the_distances_put_it_and_does_not_close_the_phase",
-  "figure": "1.61",
-  "verdict": "ABSENT",
-  "verbatim": false
- },
- {
-  "paper": "P15 sec:refit-bound",
-  "receipt": "P15_the_refit_leaves_the_background_where_the_distances_put_it_and_does_not_close_the_phase",
-  "figure": "2.33",
-  "verdict": "ABSENT",
-  "verbatim": false
- },
- {
-  "paper": "P15 sec:refit-bound",
-  "receipt": "P15_the_1p57_has_no_parameter_address_because_the_arms_tt_minimum_sits_on_its_own_bao_minimum_while_the_controls_pays_fifteen_in_chi2_to_leave_planck",
-  "figure": "1.01",
-  "verdict": "REPRODUCES",
-  "verbatim": true
- },
- {
-  "paper": "P15 sec:refit-bound",
-  "receipt": "P15_the_1p57_has_no_parameter_address_because_the_arms_tt_minimum_sits_on_its_own_bao_minimum_while_the_controls_pays_fifteen_in_chi2_to_leave_planck",
-  "figure": "1.60",
-  "verdict": "REPRODUCES",
-  "verbatim": true
- },
- {
-  "paper": "P15 sec:refit-bound",
-  "receipt": "P15_the_1p57_has_no_parameter_address_because_the_arms_tt_minimum_sits_on_its_own_bao_minimum_while_the_controls_pays_fifteen_in_chi2_to_leave_planck",
-  "figure": "1.61",
-  "verdict": "REPRODUCES",
-  "verbatim": false
- },
- {
-  "paper": "P15 sec:refit-bound",
-  "receipt": "P15_the_1p57_has_no_parameter_address_because_the_arms_tt_minimum_sits_on_its_own_bao_minimum_while_the_controls_pays_fifteen_in_chi2_to_leave_planck",
-  "figure": "2.33",
-  "verdict": "ABSENT",
-  "verbatim": false
- },
- {
-  "paper": "P15 sec:refit-bound",
-  "receipt": "P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number",
+  "receipt": "P15_at_its_own_preferred_H,P15_the_133_bin_pair_is_co",
   "figure": "0.2974",
   "verdict": "ABSENT",
   "verbatim": false
  },
  {
   "paper": "P15 sec:refit-bound",
-  "receipt": "P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number",
+  "receipt": "P15_at_its_own_preferred_H,P15_the_133_bin_pair_is_co",
   "figure": "0.958",
   "verdict": "ABSENT",
   "verbatim": false
@@ -639,27 +366,6 @@
  {
   "paper": "P15 sec:refit-bound",
   "receipt": "P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number",
-  "figure": "68.62",
-  "verdict": "REPRODUCES",
-  "verbatim": true
- },
- {
-  "paper": "P15 sec:refit-bound",
-  "receipt": "P15_the_133_bin_pair_is_computed_and_asserted_and_the_hardcoded_row_carried_the_other_arm",
-  "figure": "0.2974",
-  "verdict": "ABSENT",
-  "verbatim": false
- },
- {
-  "paper": "P15 sec:refit-bound",
-  "receipt": "P15_the_133_bin_pair_is_computed_and_asserted_and_the_hardcoded_row_carried_the_other_arm",
-  "figure": "0.958",
-  "verdict": "ABSENT",
-  "verbatim": false
- },
- {
-  "paper": "P15 sec:refit-bound",
-  "receipt": "P15_the_133_bin_pair_is_computed_and_asserted_and_the_hardcoded_row_carried_the_other_arm",
   "figure": "68.62",
   "verdict": "REPRODUCES",
   "verbatim": true
@@ -687,10 +393,10 @@
  },
  {
   "paper": "P15 sec:refit-bound",
-  "receipt": "P15_the_no_fit_confrontation_is_three_per_bin_and_its_residual_carries_a_nine_sigma_modulation_at_the_combs_own_period_which_binning_at_that_period_cancels",
+  "receipt": "P15_the_full_range_lensed_comparison_is_the_unfavourable_one_and_the_control_is_nearly_camb",
   "figure": "2.35",
-  "verdict": "ABSENT",
-  "verbatim": false
+  "verdict": "REPRODUCES",
+  "verbatim": true
  },
  {
   "paper": "P15 sec:refit-bound",
@@ -701,42 +407,7 @@
  },
  {
   "paper": "P15 sec:refit-bound",
-  "receipt": "P15_the_full_range_lensed_comparison_is_the_unfavourable_one_and_the_control_is_nearly_camb",
-  "figure": "0.99",
-  "verdict": "ABSENT",
-  "verbatim": false
- },
- {
-  "paper": "P15 sec:refit-bound",
-  "receipt": "P15_the_full_range_lensed_comparison_is_the_unfavourable_one_and_the_control_is_nearly_camb",
-  "figure": "1.13",
-  "verdict": "ABSENT",
-  "verbatim": false
- },
- {
-  "paper": "P15 sec:refit-bound",
-  "receipt": "P15_the_full_range_lensed_comparison_is_the_unfavourable_one_and_the_control_is_nearly_camb",
-  "figure": "1.60",
-  "verdict": "ABSENT",
-  "verbatim": false
- },
- {
-  "paper": "P15 sec:refit-bound",
-  "receipt": "P15_the_full_range_lensed_comparison_is_the_unfavourable_one_and_the_control_is_nearly_camb",
-  "figure": "2.35",
-  "verdict": "REPRODUCES",
-  "verbatim": true
- },
- {
-  "paper": "P15 sec:refit-bound",
-  "receipt": "P15_the_full_range_lensed_comparison_is_the_unfavourable_one_and_the_control_is_nearly_camb",
-  "figure": "2.65",
-  "verdict": "ABSENT",
-  "verbatim": false
- },
- {
-  "paper": "P15 sec:refit-bound",
-  "receipt": "P15_the_no_fit_confrontation_is_three_per_bin_and_its_residual_carries_a_nine_sigma_modulation_at_the_combs_own_period_which_binning_at_that_period_cancels",
+  "receipt": "P15_the_no_fit_confrontati",
   "figure": "0.855",
   "verdict": "ABSENT",
   "verbatim": false
@@ -813,20 +484,6 @@
  },
  {
   "paper": "P15 sec:refit-bound",
-  "receipt": "P15_the_projection_read_recombination_at_the_wrong_conformal_time_and_one_clock_moves_it_72_per_cent",
-  "figure": "0.397",
-  "verdict": "ABSENT",
-  "verbatim": false
- },
- {
-  "paper": "P15 sec:refit-bound",
-  "receipt": "P15_the_projection_read_recombination_at_the_wrong_conformal_time_and_one_clock_moves_it_72_per_cent",
-  "figure": "0.455",
-  "verdict": "ABSENT",
-  "verbatim": false
- },
- {
-  "paper": "P15 sec:refit-bound",
   "receipt": "P15_the_retention_is_the_combs_average_over_the_kernels_own_k_acceptance_and_the_law_has_no_fitted_coefficient",
   "figure": "0.08",
   "verdict": "REPRODUCES",
@@ -841,34 +498,6 @@
  },
  {
   "paper": "P15 sec:refit-bound",
-  "receipt": "P15_the_acceptance_does_not_move_under_refinement_and_three_of_the_twelve_axes_could_not_have_moved_it",
-  "figure": "0.08",
-  "verdict": "UNRUN",
-  "verbatim": false
- },
- {
-  "paper": "P15 sec:refit-bound",
-  "receipt": "P15_the_acceptance_does_not_move_under_refinement_and_three_of_the_twelve_axes_could_not_have_moved_it",
-  "figure": "14.6",
-  "verdict": "UNRUN",
-  "verbatim": false
- },
- {
-  "paper": "P15 sec:refit-bound",
-  "receipt": "P15_the_laws_six_of_seven_is_five_at_the_quoted_floor_which_is_one_phases_and_with_the_instruments_own_error_divided_out_all_seven_hold",
-  "figure": "0.08",
-  "verdict": "ABSENT",
-  "verbatim": false
- },
- {
-  "paper": "P15 sec:refit-bound",
-  "receipt": "P15_the_laws_six_of_seven_is_five_at_the_quoted_floor_which_is_one_phases_and_with_the_instruments_own_error_divided_out_all_seven_hold",
-  "figure": "14.6",
-  "verdict": "ABSENT",
-  "verbatim": false
- },
- {
-  "paper": "P15 sec:refit-bound",
   "receipt": "P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_the_visibility",
   "figure": "0.789",
   "verdict": "REPRODUCES",
@@ -877,20 +506,6 @@
  {
   "paper": "P15 sec:refit-bound",
   "receipt": "P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_the_visibility",
-  "figure": "0.913",
-  "verdict": "REPRODUCES",
-  "verbatim": true
- },
- {
-  "paper": "P15 sec:refit-bound",
-  "receipt": "P15_the_fitted_onset_is_the_wrong_clocks_artefact_because_the_stacking_ruler_keeps_a_square_root_memory_of_the_start_and_the_leaf_ruler_keeps_none",
-  "figure": "0.789",
-  "verdict": "REPRODUCES",
-  "verbatim": true
- },
- {
-  "paper": "P15 sec:refit-bound",
-  "receipt": "P15_the_fitted_onset_is_the_wrong_clocks_artefact_because_the_stacking_ruler_keeps_a_square_root_memory_of_the_start_and_the_leaf_ruler_keeps_none",
   "figure": "0.913",
   "verdict": "REPRODUCES",
   "verbatim": true
@@ -911,13 +526,6 @@
  },
  {
   "paper": "P15 sec:refit-bound",
-  "receipt": "P15_the_controls_base_log_is_banked_beside_the_grids_and_the_peak_heights_concur_with_the_three_rigidity_statistics",
-  "figure": "186.135",
-  "verdict": "ABSENT",
-  "verbatim": false
- },
- {
-  "paper": "P15 sec:refit-bound",
   "receipt": "P15_the_one_fitted_number_moves_the_scale_and_not_the_peak",
   "figure": "239.3",
   "verdict": "REPRODUCES",
@@ -929,20 +537,6 @@
   "figure": "360.6",
   "verdict": "REPRODUCES",
   "verbatim": true
- },
- {
-  "paper": "P15 sec:refit-bound",
-  "receipt": "P15_zonset_determinations",
-  "figure": "239.3",
-  "verdict": "ABSENT",
-  "verbatim": false
- },
- {
-  "paper": "P15 sec:refit-bound",
-  "receipt": "P15_zonset_determinations",
-  "figure": "360.6",
-  "verdict": "ABSENT",
-  "verbatim": false
  },
  {
   "paper": "P15 sec:refit-bound",
@@ -968,34 +562,6 @@
  {
   "paper": "P15 sec:refit-bound",
   "receipt": "P15_the_de_tilted_peak_set_is_the_phase_observable_the_slope_was_not_and_it_separates_the_baryon_direction_from_a_tilt_by_twenty_but_the_driving_half_needs_its_own_pair",
-  "figure": "22.6",
-  "verdict": "REPRODUCES",
-  "verbatim": true
- },
- {
-  "paper": "P15 sec:refit-bound",
-  "receipt": "P15_the_peak_plane_survives_the_merge_the_sky_lands_within_one_sigma_of_the_control_and_a_full_driving_unit_is_thirteen_but_half_the_draws_lose_the_fourth_peak",
-  "figure": "11.4",
-  "verdict": "REPRODUCES",
-  "verbatim": true
- },
- {
-  "paper": "P15 sec:refit-bound",
-  "receipt": "P15_the_peak_plane_survives_the_merge_the_sky_lands_within_one_sigma_of_the_control_and_a_full_driving_unit_is_thirteen_but_half_the_draws_lose_the_fourth_peak",
-  "figure": "11.7",
-  "verdict": "ABSENT",
-  "verbatim": false
- },
- {
-  "paper": "P15 sec:refit-bound",
-  "receipt": "P15_the_peak_plane_survives_the_merge_the_sky_lands_within_one_sigma_of_the_control_and_a_full_driving_unit_is_thirteen_but_half_the_draws_lose_the_fourth_peak",
-  "figure": "18.3",
-  "verdict": "ABSENT",
-  "verbatim": false
- },
- {
-  "paper": "P15 sec:refit-bound",
-  "receipt": "P15_the_peak_plane_survives_the_merge_the_sky_lands_within_one_sigma_of_the_control_and_a_full_driving_unit_is_thirteen_but_half_the_draws_lose_the_fourth_peak",
   "figure": "22.6",
   "verdict": "REPRODUCES",
   "verbatim": true
@@ -1016,56 +582,28 @@
  },
  {
   "paper": "P15 sec:refit-bound",
-  "receipt": "P15_the_selection_does_not_truncate_so_the_thirteen_sigma_stands_at_twelve_point_nine_and_the_peak_that_goes_missing_is_the_third_not_the_fourth",
+  "receipt": "P15_the_selection_does_not,P15_the_peak_plane_survive",
   "figure": "0.75",
   "verdict": "ABSENT",
   "verbatim": false
  },
  {
   "paper": "P15 sec:refit-bound",
-  "receipt": "P15_the_selection_does_not_truncate_so_the_thirteen_sigma_stands_at_twelve_point_nine_and_the_peak_that_goes_missing_is_the_third_not_the_fourth",
-  "figure": "12.5",
-  "verdict": "ABSENT",
-  "verbatim": false
- },
- {
-  "paper": "P15 sec:refit-bound",
-  "receipt": "P15_the_peak_plane_survives_the_merge_the_sky_lands_within_one_sigma_of_the_control_and_a_full_driving_unit_is_thirteen_but_half_the_draws_lose_the_fourth_peak",
-  "figure": "0.75",
-  "verdict": "ABSENT",
-  "verbatim": false
- },
- {
-  "paper": "P15 sec:refit-bound",
-  "receipt": "P15_the_peak_plane_survives_the_merge_the_sky_lands_within_one_sigma_of_the_control_and_a_full_driving_unit_is_thirteen_but_half_the_draws_lose_the_fourth_peak",
-  "figure": "12.5",
-  "verdict": "ABSENT",
-  "verbatim": false
- },
- {
-  "paper": "P15 sec:refit-bound",
-  "receipt": "P15_the_selection_does_not_truncate_so_the_thirteen_sigma_stands_at_twelve_point_nine_and_the_peak_that_goes_missing_is_the_third_not_the_fourth",
-  "figure": "0.75",
-  "verdict": "ABSENT",
-  "verbatim": false
- },
- {
-  "paper": "P15 sec:refit-bound",
-  "receipt": "P15_the_selection_does_not_truncate_so_the_thirteen_sigma_stands_at_twelve_point_nine_and_the_peak_that_goes_missing_is_the_third_not_the_fourth",
+  "receipt": "P15_the_selection_does_not,P15_the_peak_plane_survive",
   "figure": "12.5",
   "verdict": "ABSENT",
   "verbatim": false
  },
  {
   "paper": "P15 fig:acoustic-nofit",
-  "receipt": "P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number",
+  "receipt": "P15_at_its_own_preferred_H,P15_the_133_bin_pair_is_co",
   "figure": "0.2974",
   "verdict": "ABSENT",
   "verbatim": false
  },
  {
   "paper": "P15 fig:acoustic-nofit",
-  "receipt": "P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number",
+  "receipt": "P15_at_its_own_preferred_H,P15_the_133_bin_pair_is_co",
   "figure": "0.958",
   "verdict": "ABSENT",
   "verbatim": false
@@ -1073,27 +611,6 @@
  {
   "paper": "P15 fig:acoustic-nofit",
   "receipt": "P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number",
-  "figure": "68.62",
-  "verdict": "REPRODUCES",
-  "verbatim": true
- },
- {
-  "paper": "P15 fig:acoustic-nofit",
-  "receipt": "P15_the_133_bin_pair_is_computed_and_asserted_and_the_hardcoded_row_carried_the_other_arm",
-  "figure": "0.2974",
-  "verdict": "ABSENT",
-  "verbatim": false
- },
- {
-  "paper": "P15 fig:acoustic-nofit",
-  "receipt": "P15_the_133_bin_pair_is_computed_and_asserted_and_the_hardcoded_row_carried_the_other_arm",
-  "figure": "0.958",
-  "verdict": "ABSENT",
-  "verbatim": false
- },
- {
-  "paper": "P15 fig:acoustic-nofit",
-  "receipt": "P15_the_133_bin_pair_is_computed_and_asserted_and_the_hardcoded_row_carried_the_other_arm",
   "figure": "68.62",
   "verdict": "REPRODUCES",
   "verbatim": true
@@ -1121,41 +638,6 @@
  },
  {
   "paper": "P15 fig:acoustic-nofit",
-  "receipt": "P15_the_no_fit_confrontation_is_three_per_bin_and_its_residual_carries_a_nine_sigma_modulation_at_the_combs_own_period_which_binning_at_that_period_cancels",
-  "figure": "2.35",
-  "verdict": "ABSENT",
-  "verbatim": false
- },
- {
-  "paper": "P15 fig:acoustic-nofit",
-  "receipt": "P15_the_no_fit_confrontation_is_three_per_bin_and_its_residual_carries_a_nine_sigma_modulation_at_the_combs_own_period_which_binning_at_that_period_cancels",
-  "figure": "2.65",
-  "verdict": "REPRODUCES",
-  "verbatim": true
- },
- {
-  "paper": "P15 fig:acoustic-nofit",
-  "receipt": "P15_the_full_range_lensed_comparison_is_the_unfavourable_one_and_the_control_is_nearly_camb",
-  "figure": "0.99",
-  "verdict": "ABSENT",
-  "verbatim": false
- },
- {
-  "paper": "P15 fig:acoustic-nofit",
-  "receipt": "P15_the_full_range_lensed_comparison_is_the_unfavourable_one_and_the_control_is_nearly_camb",
-  "figure": "1.13",
-  "verdict": "ABSENT",
-  "verbatim": false
- },
- {
-  "paper": "P15 fig:acoustic-nofit",
-  "receipt": "P15_the_full_range_lensed_comparison_is_the_unfavourable_one_and_the_control_is_nearly_camb",
-  "figure": "1.60",
-  "verdict": "ABSENT",
-  "verbatim": false
- },
- {
-  "paper": "P15 fig:acoustic-nofit",
   "receipt": "P15_the_full_range_lensed_comparison_is_the_unfavourable_one_and_the_control_is_nearly_camb",
   "figure": "2.35",
   "verdict": "REPRODUCES",
@@ -1163,9 +645,9 @@
  },
  {
   "paper": "P15 fig:acoustic-nofit",
-  "receipt": "P15_the_full_range_lensed_comparison_is_the_unfavourable_one_and_the_control_is_nearly_camb",
+  "receipt": "P15_the_no_fit_confrontation_is_three_per_bin_and_its_residual_carries_a_nine_sigma_modulation_at_the_combs_own_period_which_binning_at_that_period_cancels",
   "figure": "2.65",
-  "verdict": "ABSENT",
-  "verbatim": false
+  "verdict": "REPRODUCES",
+  "verbatim": true
  }
 ]

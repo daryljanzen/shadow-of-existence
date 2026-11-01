@@ -26,7 +26,16 @@ def seg_of(path, start_label, section_re=r'\\section\{'):
 
 
 def sites_in(seg, paper):
-    out = []
+    """[{paper, receipts[], figures[], claim}] -- ONE entry per SENTENCE, carrying its WHOLE
+    citation set.
+
+    ** r7650+60.5 -- THE UNIT THAT MOVED. **  The first form made one entry per `(sentence, receipt)`
+    pair, each carrying all of the sentence's figures, so a figure one cited receipt computes read
+    ABSENT against the other two and 65 figures came back absent, nearly all of them that artefact.
+    *A sentence citing several receipts is not mis-citing any of them; each covers part of the claim,
+    and an identification has to be checked on the loci the object itself distinguishes.*
+    """
+    out, seen = [], {}
     flat = Q._flat(seg)
     for m in re.finditer(r'\\rcpt\{([^}]+)\}', flat):
         name = m.group(1).split(',')[0].strip()
@@ -34,10 +43,17 @@ def sites_in(seg, paper):
             continue
         sent = G._sentence(flat, m.start())
         claim = Q._unmark(re.sub(r'\\(?:rcpt|ldg)\{[^}]*\}', ' ', sent))
-        figs = [s for s, _ in G.figures(claim)]
-        if figs:
-            out.append(dict(paper=paper, receipt=name, figures=sorted(set(figs)),
-                            claim=claim.strip()[:400]))
+        figs = sorted({s for s, _ in G.figures(claim)})
+        if not figs:
+            continue
+        key = (paper, claim.strip())
+        if key in seen:
+            if name not in seen[key]['receipts']:
+                seen[key]['receipts'].append(name)
+            continue
+        d = dict(paper=paper, receipts=[name], figures=figs, claim=claim.strip()[:400])
+        seen[key] = d
+        out.append(d)
     return out
 
 
@@ -66,12 +82,12 @@ for paper, rel, lo, hi in (('P7', 'CR_framework.tex', 1855, 1872),
     EXTRA += E
 
 ALL = S + C + EXTRA
-keep = [s for s in ALL if not any(x in s['receipt'] for x in EXCLUDED)]
+keep = [s for s in ALL if not all(any(x in r for x in EXCLUDED) for r in s['receipts'])]
 drop = len(ALL) - len(keep)
-rec = sorted({s['receipt'] for s in keep})
+rec = sorted({r for s in keep for r in s['receipts']})
 print(f"\n  sites in scope            : {len(ALL)}")
 print(f"  dropped as cc66's 1-11    : {drop}")
-print(f"  sites to check            : {len(keep)}")
+print(f"  SENTENCES to check        : {len(keep)}")
 print(f"  distinct receipts to RUN  : {len(rec)}")
 print(f"  figures to check          : {sum(len(s['figures']) for s in keep)}")
 json.dump(dict(sites=keep, receipts=rec), open(os.path.join(HERE, 'sites.json'), 'w'), indent=1)

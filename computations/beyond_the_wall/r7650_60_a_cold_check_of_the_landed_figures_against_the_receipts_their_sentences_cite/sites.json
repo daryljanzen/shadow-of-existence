@@ -2,7 +2,9 @@
  "sites": [
   {
    "paper": "P15 sec:refit-bound",
-   "receipt": "P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number",
+   "receipts": [
+    "P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number"
+   ],
    "figures": [
     "298.0",
     "298.4"
@@ -11,7 +13,9 @@
   },
   {
    "paper": "P15 sec:refit-bound",
-   "receipt": "C59_the_control_reproduces_camb_and_the_height_defect_was_k_truncation",
+   "receipts": [
+    "C59_the_control_reproduces_camb_and_the_height_defect_was_k_truncation"
+   ],
    "figures": [
     "2.393",
     "2.721"
@@ -20,7 +24,11 @@
   },
   {
    "paper": "P15 sec:refit-bound",
-   "receipt": "P15_the_third_peak_deficit_is_radiation_driving_and_both_routes_to_the_equality_agree",
+   "receipts": [
+    "P15_the_third_peak_deficit_is_radiation_driving_and_both_routes_to_the_equality_agree",
+    "P15_two_arm_control_and_guard",
+    "P15_the_line_of_sight_transfer"
+   ],
    "figures": [
     "0.14",
     "0.23",
@@ -31,29 +39,9 @@
   },
   {
    "paper": "P15 sec:refit-bound",
-   "receipt": "P15_two_arm_control_and_guard",
-   "figures": [
-    "0.14",
-    "0.23",
-    "2.195",
-    "2.200"
+   "receipts": [
+    "P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number"
    ],
-   "claim": "The comparison is made on the polarisation path, in the configuration the control is calibrated in. There the control returns a first-to-second height ratio of 2.195 at peaks 220, 536 and 814, against a standard code's 2.200---0.23\\%: so the instrument is calibrated where this cosmology's number is taken, and that is the figure quoted for it, the closer 0.14\\% belonging to a different run and not "
-  },
-  {
-   "paper": "P15 sec:refit-bound",
-   "receipt": "P15_the_line_of_sight_transfer",
-   "figures": [
-    "0.14",
-    "0.23",
-    "2.195",
-    "2.200"
-   ],
-   "claim": "The comparison is made on the polarisation path, in the configuration the control is calibrated in. There the control returns a first-to-second height ratio of 2.195 at peaks 220, 536 and 814, against a standard code's 2.200---0.23\\%: so the instrument is calibrated where this cosmology's number is taken, and that is the figure quoted for it, the closer 0.14\\% belonging to a different run and not "
-  },
-  {
-   "paper": "P15 sec:refit-bound",
-   "receipt": "P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number",
    "figures": [
     "2.217",
     "2.264",
@@ -64,7 +52,9 @@
   },
   {
    "paper": "P15 sec:refit-bound",
-   "receipt": "P15_in_polarisation_the_fourth_acoustic_feature_is_located_more_tightly_than_in_temperature_and_the_two_skies_do_not_yet_agree_on_it",
+   "receipts": [
+    "P15_in_polarisation_the_fourth_acoustic_feature_is_located_more_tightly_than_in_temperature_and_the_two_skies_do_not_yet_agree_on_it"
+   ],
    "figures": [
     "1.44",
     "1.72",
@@ -76,7 +66,9 @@
   },
   {
    "paper": "P15 sec:refit-bound",
-   "receipt": "P15_on_the_arm_of_record_the_fourth_acoustic_feature_is_the_controls_to_under_a_multipole_in_all_three_spectra",
+   "receipts": [
+    "P15_on_the_arm_of_record_the_fourth_acoustic_feature_is_the_controls_to_under_a_multipole_in_all_three_spectra"
+   ],
    "figures": [
     "0.09",
     "0.21",
@@ -90,7 +82,9 @@
   },
   {
    "paper": "P15 sec:refit-bound",
-   "receipt": "P15_the_control_entered_the_regime_and_the_arm_did_not_move",
+   "receipts": [
+    "P15_the_control_entered_the_regime_and_the_arm_did_not_move"
+   ],
    "figures": [
     "1.01",
     "1.18"
@@ -99,7 +93,9 @@
   },
   {
    "paper": "P15 sec:refit-bound",
-   "receipt": "P15_the_133_bin_pair_is_computed_and_asserted_and_the_hardcoded_row_carried_the_other_arm",
+   "receipts": [
+    "P15_the_133_bin_pair_is_computed_and_asserted_and_the_hardcoded_row_carried_the_other_arm"
+   ],
    "figures": [
     "2.10"
    ],
@@ -107,7 +103,10 @@
   },
   {
    "paper": "P15 sec:refit-bound",
-   "receipt": "P15_the_anomalous_driving_belonged_to_the_pin_and_not_to_the_construction",
+   "receipts": [
+    "P15_the_anomalous_driving_belonged_to_the_pin_and_not_to_the_construction",
+    "P15_the_phase_is_the_driving_and_the_undriven_arms_agree"
+   ],
    "figures": [
     "0.1792"
    ],
@@ -115,15 +114,9 @@
   },
   {
    "paper": "P15 sec:refit-bound",
-   "receipt": "P15_the_phase_is_the_driving_and_the_undriven_arms_agree",
-   "figures": [
-    "0.1792"
+   "receipts": [
+    "P15_the_anomalous_driving_belonged_to_the_pin_and_not_to_the_construction"
    ],
-   "claim": "Subtracting the driving is what measures it: removing every coupling to the potential moves the control's first peak from 220 to 274 and \\ell_{1}/\\ell_{A} by 0.1792, so the modes carrying the first peak are driven and the shift is the driving's size ."
-  },
-  {
-   "paper": "P15 sec:refit-bound",
-   "receipt": "P15_the_anomalous_driving_belonged_to_the_pin_and_not_to_the_construction",
    "figures": [
     "0.1717"
    ],
@@ -131,7 +124,9 @@
   },
   {
    "paper": "P15 sec:refit-bound",
-   "receipt": "P15_the_symmetric_comparison_was_never_runnable_and_the_quarter_was_two_fifths",
+   "receipts": [
+    "P15_the_symmetric_comparison_was_never_runnable_and_the_quarter_was_two_fifths"
+   ],
    "figures": [
     "298.0"
    ],
@@ -139,7 +134,11 @@
   },
   {
    "paper": "P15 sec:refit-bound",
-   "receipt": "P15_the_full_range_lensed_comparison_is_the_unfavourable_one_and_the_control_is_nearly_camb",
+   "receipts": [
+    "P15_the_full_range_lensed_comparison_is_the_unfavourable_one_and_the_control_is_nearly_camb",
+    "P15_the_133_bin_pair_is_computed_and_asserted_and_the_hardcoded_row_carried_the_other_arm",
+    "P15_where_the_likelihood_sits"
+   ],
    "figures": [
     "1.16",
     "2.35",
@@ -151,31 +150,9 @@
   },
   {
    "paper": "P15 sec:refit-bound",
-   "receipt": "P15_the_133_bin_pair_is_computed_and_asserted_and_the_hardcoded_row_carried_the_other_arm",
-   "figures": [
-    "1.16",
-    "2.35",
-    "2.71",
-    "214.1",
-    "502.1"
+   "receipts": [
+    "P15_the_133_bin_pair_is_computed_and_asserted_and_the_hardcoded_row_carried_the_other_arm"
    ],
-   "claim": "And the likelihood is run, both arms scored on the same bins by the same code, with the amplitude fitted so that what is compared is shape. The result is still a rejection of this arm's spectrum and is stated as one. On the full-range lensed configuration---\\ell=100--1996, 185 bins, the lensing carried by the same derived operator on both arms---the control returns \\chi^{2}=214.1, or 1.16 per bin,"
-  },
-  {
-   "paper": "P15 sec:refit-bound",
-   "receipt": "P15_where_the_likelihood_sits",
-   "figures": [
-    "1.16",
-    "2.35",
-    "2.71",
-    "214.1",
-    "502.1"
-   ],
-   "claim": "And the likelihood is run, both arms scored on the same bins by the same code, with the amplitude fitted so that what is compared is shape. The result is still a rejection of this arm's spectrum and is stated as one. On the full-range lensed configuration---\\ell=100--1996, 185 bins, the lensing carried by the same derived operator on both arms---the control returns \\chi^{2}=214.1, or 1.16 per bin,"
-  },
-  {
-   "paper": "P15 sec:refit-bound",
-   "receipt": "P15_the_133_bin_pair_is_computed_and_asserted_and_the_hardcoded_row_carried_the_other_arm",
    "figures": [
     "2.09",
     "279.4",
@@ -185,7 +162,9 @@
   },
   {
    "paper": "P15 sec:refit-bound",
-   "receipt": "P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number",
+   "receipts": [
+    "P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number"
+   ],
    "figures": [
     "0.77",
     "1.44",
@@ -200,7 +179,14 @@
   },
   {
    "paper": "P15 sec:refit-bound",
-   "receipt": "P15_the_133_bin_pair_is_computed_and_asserted_and_the_hardcoded_row_carried_the_other_arm",
+   "receipts": [
+    "P15_the_133_bin_pair_is_computed_and_asserted_and_the_hardcoded_row_carried_the_other_arm",
+    "P15_the_no_fit_confrontation_is_three_per_bin_and_its_residual_carries_a_nine_sigma_modulation_at_the_combs_own_period_which_binning_at_that_period_cancels",
+    "P15_the_full_range_refit_holds_the_background_and_the_phase_residual_was_quantised",
+    "P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number",
+    "P15_the_refit_leaves_the_background_where_the_distances_put_it_and_does_not_close_the_phase",
+    "P15_the_1p57_has_no_parameter_address_because_the_arms_tt_minimum_sits_on_its_own_bao_minimum_while_the_controls_pays_fifteen_in_chi2_to_leave_planck"
+   ],
    "figures": [
     "1.01",
     "1.60",
@@ -211,62 +197,10 @@
   },
   {
    "paper": "P15 sec:refit-bound",
-   "receipt": "P15_the_no_fit_confrontation_is_three_per_bin_and_its_residual_carries_a_nine_sigma_modulation_at_the_combs_own_period_which_binning_at_that_period_cancels",
-   "figures": [
-    "1.01",
-    "1.60",
-    "1.61",
-    "2.33"
+   "receipts": [
+    "P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number",
+    "P15_the_133_bin_pair_is_computed_and_asserted_and_the_hardcoded_row_carried_the_other_arm"
    ],
-   "claim": "And the spectrum's own parameters are refitted, which is the comparison the standard model is usually judged by. With the expansion rate, the matter and baryon densities and the tilt free in each arm and the amplitude in closed form, scored on the full range and verified by running the spectra at the minima, the control settles at 1.01 in \\chi^{2} per bin and this arm at 1.61: the arm at 1.60 time"
-  },
-  {
-   "paper": "P15 sec:refit-bound",
-   "receipt": "P15_the_full_range_refit_holds_the_background_and_the_phase_residual_was_quantised",
-   "figures": [
-    "1.01",
-    "1.60",
-    "1.61",
-    "2.33"
-   ],
-   "claim": "And the spectrum's own parameters are refitted, which is the comparison the standard model is usually judged by. With the expansion rate, the matter and baryon densities and the tilt free in each arm and the amplitude in closed form, scored on the full range and verified by running the spectra at the minima, the control settles at 1.01 in \\chi^{2} per bin and this arm at 1.61: the arm at 1.60 time"
-  },
-  {
-   "paper": "P15 sec:refit-bound",
-   "receipt": "P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number",
-   "figures": [
-    "1.01",
-    "1.60",
-    "1.61",
-    "2.33"
-   ],
-   "claim": "And the spectrum's own parameters are refitted, which is the comparison the standard model is usually judged by. With the expansion rate, the matter and baryon densities and the tilt free in each arm and the amplitude in closed form, scored on the full range and verified by running the spectra at the minima, the control settles at 1.01 in \\chi^{2} per bin and this arm at 1.61: the arm at 1.60 time"
-  },
-  {
-   "paper": "P15 sec:refit-bound",
-   "receipt": "P15_the_refit_leaves_the_background_where_the_distances_put_it_and_does_not_close_the_phase",
-   "figures": [
-    "1.01",
-    "1.60",
-    "1.61",
-    "2.33"
-   ],
-   "claim": "And the spectrum's own parameters are refitted, which is the comparison the standard model is usually judged by. With the expansion rate, the matter and baryon densities and the tilt free in each arm and the amplitude in closed form, scored on the full range and verified by running the spectra at the minima, the control settles at 1.01 in \\chi^{2} per bin and this arm at 1.61: the arm at 1.60 time"
-  },
-  {
-   "paper": "P15 sec:refit-bound",
-   "receipt": "P15_the_1p57_has_no_parameter_address_because_the_arms_tt_minimum_sits_on_its_own_bao_minimum_while_the_controls_pays_fifteen_in_chi2_to_leave_planck",
-   "figures": [
-    "1.01",
-    "1.60",
-    "1.61",
-    "2.33"
-   ],
-   "claim": "And the spectrum's own parameters are refitted, which is the comparison the standard model is usually judged by. With the expansion rate, the matter and baryon densities and the tilt free in each arm and the amplitude in closed form, scored on the full range and verified by running the spectra at the minima, the control settles at 1.01 in \\chi^{2} per bin and this arm at 1.61: the arm at 1.60 time"
-  },
-  {
-   "paper": "P15 sec:refit-bound",
-   "receipt": "P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number",
    "figures": [
     "0.2974",
     "0.958",
@@ -276,17 +210,10 @@
   },
   {
    "paper": "P15 sec:refit-bound",
-   "receipt": "P15_the_133_bin_pair_is_computed_and_asserted_and_the_hardcoded_row_carried_the_other_arm",
-   "figures": [
-    "0.2974",
-    "0.958",
-    "68.62"
+   "receipts": [
+    "P15_the_no_fit_confrontation_is_three_per_bin_and_its_residual_carries_a_nine_sigma_modulation_at_the_combs_own_period_which_binning_at_that_period_cancels",
+    "P15_the_full_range_lensed_comparison_is_the_unfavourable_one_and_the_control_is_nearly_camb"
    ],
-   "claim": "Whitened residuals beneath each. The peak positions and the spacing are the result to read in the upper panels; the residuals are where the rejection lives, and the control's own are drawn beside this arm's so the size of the difference is visible.}\\label{fig:acoustic} \\end{figure} \\begin{figure}[t] \\centering \\includegraphics[width=\\textwidth]{fig_acoustic_nofit.pdf} \\caption{The other confrontat"
-  },
-  {
-   "paper": "P15 sec:refit-bound",
-   "receipt": "P15_the_no_fit_confrontation_is_three_per_bin_and_its_residual_carries_a_nine_sigma_modulation_at_the_combs_own_period_which_binning_at_that_period_cancels",
    "figures": [
     "0.99",
     "1.13",
@@ -298,19 +225,9 @@
   },
   {
    "paper": "P15 sec:refit-bound",
-   "receipt": "P15_the_full_range_lensed_comparison_is_the_unfavourable_one_and_the_control_is_nearly_camb",
-   "figures": [
-    "0.99",
-    "1.13",
-    "1.60",
-    "2.35",
-    "2.65"
+   "receipts": [
+    "P15_the_no_fit_confrontation_is_three_per_bin_and_its_residual_carries_a_nine_sigma_modulation_at_the_combs_own_period_which_binning_at_that_period_cancels"
    ],
-   "claim": "Over 179 bins on 100\\le\\ell\\le1900 the control stands at 1.13 per bin and this arm at 2.65, a factor 2.35, against 0.99 and 1.60 when four parameters are freed in each arm ."
-  },
-  {
-   "paper": "P15 sec:refit-bound",
-   "receipt": "P15_the_no_fit_confrontation_is_three_per_bin_and_its_residual_carries_a_nine_sigma_modulation_at_the_combs_own_period_which_binning_at_that_period_cancels",
    "figures": [
     "0.855"
    ],
@@ -318,7 +235,9 @@
   },
   {
    "paper": "P15 sec:refit-bound",
-   "receipt": "P15_the_monopole_zero_point_is_not_the_channel_and_the_two_residuals_point_opposite_ways",
+   "receipts": [
+    "P15_the_monopole_zero_point_is_not_the_channel_and_the_two_residuals_point_opposite_ways"
+   ],
    "figures": [
     "1.044"
    ],
@@ -326,7 +245,9 @@
   },
   {
    "paper": "P15 sec:refit-bound",
-   "receipt": "P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck",
+   "receipts": [
+    "P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck"
+   ],
    "figures": [
     "1.074",
     "1.177"
@@ -335,7 +256,9 @@
   },
   {
    "paper": "P15 sec:refit-bound",
-   "receipt": "P15_the_monopole_zero_point_is_not_the_channel_and_the_two_residuals_point_opposite_ways",
+   "receipts": [
+    "P15_the_monopole_zero_point_is_not_the_channel_and_the_two_residuals_point_opposite_ways"
+   ],
    "figures": [
     "0.028"
    ],
@@ -343,7 +266,9 @@
   },
   {
    "paper": "P15 sec:refit-bound",
-   "receipt": "P15_the_acoustic_contrast_is_not_in_the_source_and_the_projection_makes_it_without_the_distance",
+   "receipts": [
+    "P15_the_acoustic_contrast_is_not_in_the_source_and_the_projection_makes_it_without_the_distance"
+   ],
    "figures": [
     "0.085",
     "0.449"
@@ -352,7 +277,9 @@
   },
   {
    "paper": "P15 sec:refit-bound",
-   "receipt": "P15_the_cross_term_is_not_the_channel_and_every_projected_term_carries_the_excess",
+   "receipts": [
+    "P15_the_cross_term_is_not_the_channel_and_every_projected_term_carries_the_excess"
+   ],
    "figures": [
     "0.010",
     "1.017"
@@ -361,7 +288,10 @@
   },
   {
    "paper": "P15 sec:refit-bound",
-   "receipt": "P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_the_visibility",
+   "receipts": [
+    "P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_the_visibility",
+    "P15_the_projection_read_recombination_at_the_wrong_conformal_time_and_one_clock_moves_it_72_per_cent"
+   ],
    "figures": [
     "0.397",
     "0.455"
@@ -370,16 +300,11 @@
   },
   {
    "paper": "P15 sec:refit-bound",
-   "receipt": "P15_the_projection_read_recombination_at_the_wrong_conformal_time_and_one_clock_moves_it_72_per_cent",
-   "figures": [
-    "0.397",
-    "0.455"
+   "receipts": [
+    "P15_the_retention_is_the_combs_average_over_the_kernels_own_k_acceptance_and_the_law_has_no_fitted_coefficient",
+    "P15_the_acceptance_does_not_move_under_refinement_and_three_of_the_twelve_axes_could_not_have_moved_it",
+    "P15_the_laws_six_of_seven_is_five_at_the_quoted_floor_which_is_one_phases_and_with_the_instruments_own_error_divided_out_all_seven_hold"
    ],
-   "claim": "The sound speed the kernel sees is therefore 0.455 on the control and 0.397 here, and a difference in that ratio is term-independent by construction, grows with wavenumber, and vanishes for a window narrower than one acoustic period---which is the signature above ."
-  },
-  {
-   "paper": "P15 sec:refit-bound",
-   "receipt": "P15_the_retention_is_the_combs_average_over_the_kernels_own_k_acceptance_and_the_law_has_no_fitted_coefficient",
    "figures": [
     "0.08",
     "14.6"
@@ -388,25 +313,10 @@
   },
   {
    "paper": "P15 sec:refit-bound",
-   "receipt": "P15_the_acceptance_does_not_move_under_refinement_and_three_of_the_twelve_axes_could_not_have_moved_it",
-   "figures": [
-    "0.08",
-    "14.6"
+   "receipts": [
+    "P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_the_visibility",
+    "P15_the_fitted_onset_is_the_wrong_clocks_artefact_because_the_stacking_ruler_keeps_a_square_root_memory_of_the_start_and_the_leaf_ruler_keeps_none"
    ],
-   "claim": "Read physically the law says one thing: a wider \\chi-extent narrows the kernel's acceptance in wavenumber, so less of an acoustic period is averaged over and more of the comb survives; this arm's visibility is the 14.6 per cent wider in \\chi while accumulating the same sound horizon to 0.08 per cent, and that is why it retains more ."
-  },
-  {
-   "paper": "P15 sec:refit-bound",
-   "receipt": "P15_the_laws_six_of_seven_is_five_at_the_quoted_floor_which_is_one_phases_and_with_the_instruments_own_error_divided_out_all_seven_hold",
-   "figures": [
-    "0.08",
-    "14.6"
-   ],
-   "claim": "Read physically the law says one thing: a wider \\chi-extent narrows the kernel's acceptance in wavenumber, so less of an acoustic period is averaged over and more of the comb survives; this arm's visibility is the 14.6 per cent wider in \\chi while accumulating the same sound horizon to 0.08 per cent, and that is why it retains more ."
-  },
-  {
-   "paper": "P15 sec:refit-bound",
-   "receipt": "P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_the_visibility",
    "figures": [
     "0.789",
     "0.913"
@@ -415,16 +325,9 @@
   },
   {
    "paper": "P15 sec:refit-bound",
-   "receipt": "P15_the_fitted_onset_is_the_wrong_clocks_artefact_because_the_stacking_ruler_keeps_a_square_root_memory_of_the_start_and_the_leaf_ruler_keeps_none",
-   "figures": [
-    "0.789",
-    "0.913"
+   "receipts": [
+    "P15_the_fitted_onset_is_the_wrong_clocks_artefact_because_the_stacking_ruler_keeps_a_square_root_memory_of_the_start_and_the_leaf_ruler_keeps_none"
    ],
-   "claim": "So the two rates do not compete for the line-of-sight integral; they divide it. The integral \\Delta_\\ell(k)=\\int S\\,j_\\ell(k(\\eta_0-\\eta))\\,\\mathrm d\\eta runs over one variable, and that variable is the stacking conformal time because \\chi=\\eta_0-\\eta is a separation read across leaves; the plasma's quantities then enter it as functions of that variable, carried through the Jacobian \\mathrm d\\eta_"
-  },
-  {
-   "paper": "P15 sec:refit-bound",
-   "receipt": "P15_the_fitted_onset_is_the_wrong_clocks_artefact_because_the_stacking_ruler_keeps_a_square_root_memory_of_the_start_and_the_leaf_ruler_keeps_none",
    "figures": [
     "0.9985"
    ],
@@ -432,7 +335,10 @@
   },
   {
    "paper": "P15 sec:refit-bound",
-   "receipt": "P15_the_licensed_rebuild_leaves_all_three_rigidity_numbers_where_they_were_and_the_forbidden_one_puts_the_arm_on_the_controls_own_floor",
+   "receipts": [
+    "P15_the_licensed_rebuild_leaves_all_three_rigidity_numbers_where_they_were_and_the_forbidden_one_puts_the_arm_on_the_controls_own_floor",
+    "P15_the_controls_base_log_is_banked_beside_the_grids_and_the_peak_heights_concur_with_the_three_rigidity_statistics"
+   ],
    "figures": [
     "186.135"
    ],
@@ -440,15 +346,10 @@
   },
   {
    "paper": "P15 sec:refit-bound",
-   "receipt": "P15_the_controls_base_log_is_banked_beside_the_grids_and_the_peak_heights_concur_with_the_three_rigidity_statistics",
-   "figures": [
-    "186.135"
+   "receipts": [
+    "P15_the_one_fitted_number_moves_the_scale_and_not_the_peak",
+    "P15_zonset_determinations"
    ],
-   "claim": "Built instead with the projection's distance on the leaf rate it closes the whole of it: \\chi^{2}=186.135, level with the control's own value; sign changes landing on the control's own 87; a longest run of 8, which is the control's exactly ."
-  },
-  {
-   "paper": "P15 sec:refit-bound",
-   "receipt": "P15_the_one_fitted_number_moves_the_scale_and_not_the_peak",
    "figures": [
     "239.3",
     "360.6"
@@ -457,16 +358,10 @@
   },
   {
    "paper": "P15 sec:refit-bound",
-   "receipt": "P15_zonset_determinations",
-   "figures": [
-    "239.3",
-    "360.6"
+   "receipts": [
+    "P15_the_de_tilted_peak_set_is_the_phase_observable_the_slope_was_not_and_it_separates_the_baryon_direction_from_a_tilt_by_twenty_but_the_driving_half_needs_its_own_pair",
+    "P15_the_peak_plane_survives_the_merge_the_sky_lands_within_one_sigma_of_the_control_and_a_full_driving_unit_is_thirteen_but_half_the_draws_lose_the_fourth_peak"
    ],
-   "claim": "Where the plasma starts moves the scale and not the peak, which is why the start is not free. Scanning a hand-placed start over a factor of 3.6 runs \\ell_{A} from 360.6 down to 239.3 while the first peak sits between 204 and 208 throughout : it moves the denominator of \\ell_1/\\ell_A and leaves the numerator where it is , so the spacing such a start reports is not the spacing its spectrum carries."
-  },
-  {
-   "paper": "P15 sec:refit-bound",
-   "receipt": "P15_the_de_tilted_peak_set_is_the_phase_observable_the_slope_was_not_and_it_separates_the_baryon_direction_from_a_tilt_by_twenty_but_the_driving_half_needs_its_own_pair",
    "figures": [
     "11.4",
     "11.7",
@@ -477,18 +372,9 @@
   },
   {
    "paper": "P15 sec:refit-bound",
-   "receipt": "P15_the_peak_plane_survives_the_merge_the_sky_lands_within_one_sigma_of_the_control_and_a_full_driving_unit_is_thirteen_but_half_the_draws_lose_the_fourth_peak",
-   "figures": [
-    "11.4",
-    "11.7",
-    "18.3",
-    "22.6"
+   "receipts": [
+    "P15_the_de_tilted_peak_set_is_the_phase_observable_the_slope_was_not_and_it_separates_the_baryon_direction_from_a_tilt_by_twenty_but_the_driving_half_needs_its_own_pair"
    ],
-   "claim": "The peak set is the observable the slope is not, and it is read on the same banked spectra. Taking the peak positions against integer index after dividing out one global power law---a de-tilt the same control forces, since without it a primordial tilt appears to move peak positions it cannot move---the common offset and the odd--even alternation separate the baryon direction from a pure tilt by fa"
-  },
-  {
-   "paper": "P15 sec:refit-bound",
-   "receipt": "P15_the_de_tilted_peak_set_is_the_phase_observable_the_slope_was_not_and_it_separates_the_baryon_direction_from_a_tilt_by_twenty_but_the_driving_half_needs_its_own_pair",
    "figures": [
     "0.0247",
     "0.0278"
@@ -497,25 +383,10 @@
   },
   {
    "paper": "P15 sec:refit-bound",
-   "receipt": "P15_the_selection_does_not_truncate_so_the_thirteen_sigma_stands_at_twelve_point_nine_and_the_peak_that_goes_missing_is_the_third_not_the_fourth",
-   "figures": [
-    "0.75",
-    "12.5"
+   "receipts": [
+    "P15_the_selection_does_not_truncate_so_the_thirteen_sigma_stands_at_twelve_point_nine_and_the_peak_that_goes_missing_is_the_third_not_the_fourth",
+    "P15_the_peak_plane_survives_the_merge_the_sky_lands_within_one_sigma_of_the_control_and_a_full_driving_unit_is_thirteen_but_half_the_draws_lose_the_fourth_peak"
    ],
-   "claim": "Nor does that reading turn on where the threshold for it was set: taken at the unfavourable end of the interval instead of at its centre, one full unit of the driving is 12.5 standard deviations and the observed point sits at 0.75, so both figures quoted above survive the change ."
-  },
-  {
-   "paper": "P15 sec:refit-bound",
-   "receipt": "P15_the_peak_plane_survives_the_merge_the_sky_lands_within_one_sigma_of_the_control_and_a_full_driving_unit_is_thirteen_but_half_the_draws_lose_the_fourth_peak",
-   "figures": [
-    "0.75",
-    "12.5"
-   ],
-   "claim": "Nor does that reading turn on where the threshold for it was set: taken at the unfavourable end of the interval instead of at its centre, one full unit of the driving is 12.5 standard deviations and the observed point sits at 0.75, so both figures quoted above survive the change ."
-  },
-  {
-   "paper": "P15 sec:refit-bound",
-   "receipt": "P15_the_selection_does_not_truncate_so_the_thirteen_sigma_stands_at_twelve_point_nine_and_the_peak_that_goes_missing_is_the_third_not_the_fourth",
    "figures": [
     "0.75",
     "12.5"
@@ -524,7 +395,10 @@
   },
   {
    "paper": "P15 fig:acoustic-nofit",
-   "receipt": "P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number",
+   "receipts": [
+    "P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number",
+    "P15_the_133_bin_pair_is_computed_and_asserted_and_the_hardcoded_row_carried_the_other_arm"
+   ],
    "figures": [
     "0.2974",
     "0.958",
@@ -534,29 +408,10 @@
   },
   {
    "paper": "P15 fig:acoustic-nofit",
-   "receipt": "P15_the_133_bin_pair_is_computed_and_asserted_and_the_hardcoded_row_carried_the_other_arm",
-   "figures": [
-    "0.2974",
-    "0.958",
-    "68.62"
+   "receipts": [
+    "P15_the_no_fit_confrontation_is_three_per_bin_and_its_residual_carries_a_nine_sigma_modulation_at_the_combs_own_period_which_binning_at_that_period_cancels",
+    "P15_the_full_range_lensed_comparison_is_the_unfavourable_one_and_the_control_is_nearly_camb"
    ],
-   "claim": "Whitened residuals beneath each. The peak positions and the spacing are the result to read in the upper panels; the residuals are where the rejection lives, and the control's own are drawn beside this arm's so the size of the difference is visible.}\\label{fig:acoustic} \\end{figure} \\begin{figure}[t] \\centering \\includegraphics[width=\\textwidth]{fig_acoustic_nofit.pdf} \\caption{The other confrontat"
-  },
-  {
-   "paper": "P15 fig:acoustic-nofit",
-   "receipt": "P15_the_no_fit_confrontation_is_three_per_bin_and_its_residual_carries_a_nine_sigma_modulation_at_the_combs_own_period_which_binning_at_that_period_cancels",
-   "figures": [
-    "0.99",
-    "1.13",
-    "1.60",
-    "2.35",
-    "2.65"
-   ],
-   "claim": "Over 179 bins on 100\\le\\ell\\le1900 the control stands at 1.13 per bin and this arm at 2.65, a factor 2.35, against 0.99 and 1.60 when four parameters are freed in each arm ."
-  },
-  {
-   "paper": "P15 fig:acoustic-nofit",
-   "receipt": "P15_the_full_range_lensed_comparison_is_the_unfavourable_one_and_the_control_is_nearly_camb",
    "figures": [
     "0.99",
     "1.13",

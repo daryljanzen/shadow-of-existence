@@ -101,22 +101,29 @@ check(f"⛭ ARM ② -- at least 30 of the cited receipts ran to completion insid
 
 # ---------------------------------------------------------------- PART 1
 print("\nPART 1 -- EVERY FIGURE IN SCOPE, AGAINST THE RECEIPT ITS OWN SENTENCE CITES")
+# ** r7650+60.5: the unit is the SENTENCE with its WHOLE citation set. **  A figure REPRODUCES
+# when ANY cited receipt produces it; it is ABSENT only when NONE does AND every one of them ran.
 rows, miscite = [], {}
 for s in S['sites']:
-    name = s['receipt']
-    st = R.get(name, {}).get('state', 'UNRUN')
-    txt = out_of(name)
+    names = s['receipts']
+    states = {n: R.get(n, {}).get('state', 'UNRUN') for n in names}
+    texts = {n: out_of(n) for n in names}
+    where = ','.join(n[:26] for n in names)
     for f in s['figures']:
-        if st != 'RAN':
-            rows.append((s['paper'], name, f, 'UNRUN', False))
+        hit = [(n, verdict(f, texts[n])) for n in names if states[n] == 'RAN'
+               and BLOCKED not in texts[n]]
+        good = [(n, w) for n, (v, w) in hit if v == 'REPRODUCES']
+        if good:
+            rows.append((s['paper'], good[0][0], f, 'REPRODUCES', any(w for _n, w in good)))
             continue
-        if BLOCKED in txt:
-            rows.append((s['paper'], name, f, 'INCONCLUSIVE', False))
+        if any(states[n] != 'RAN' for n in names):
+            rows.append((s['paper'], where, f, 'UNRUN', False))
             continue
-        v, verb = verdict(f, txt)
-        rows.append((s['paper'], name, f, v, verb))
-        if v == 'ABSENT':
-            miscite.setdefault(name, []).append(f)
+        if all(BLOCKED in texts[n] for n in names):
+            rows.append((s['paper'], where, f, 'INCONCLUSIVE', False))
+            continue
+        rows.append((s['paper'], where, f, 'ABSENT', False))
+        miscite.setdefault(where, []).append(f)
 tot = len(rows)
 rep = [r for r in rows if r[3] == 'REPRODUCES']
 abs_ = [r for r in rows if r[3] == 'ABSENT']
@@ -138,12 +145,14 @@ if abs_:
     print(f"      {'figure':>10}  {'paper':<24} receipt")
     for paper, name, f, _v, _w in sorted(abs_, key=lambda r: (r[1], r[2])):
         print(f"      {f:>10}  {paper:<24} {name[:58]}")
-    print(f"\n      ⇒ MIS-CITATIONS: {len(miscite)} receipt(s) are cited for a figure they do not print")
+    print(f"\n      ⇒ MIS-CITATIONS: {len(miscite)} SENTENCE(S) whose WHOLE citation set ran and")
+    print(f"        does not print one of their figures -- the unit is the sentence, per r7650+60.5")
 check("⛔ ARM ④ -- registered AGAINST the order's own negative: at least one MIS-CITATION or ABSENT "
       "figure exists in a pass that moved figures across four papers in one turn", len(abs_) > 0)
 
 # ---------------------------------------------------------------- PART 2
 print("\nPART 2 -- ⚑ THE THREE CLAIMS THE ORDER SAYS TO TEST HARDEST")
+print("  *Each claim is checked against the whole citation set of its own sentence.*")
 HARD = [('level with the control\'s own value', ['186.135', '87'],
          'P15_the_licensed_rebuild_leaves_all_three_rigidity_numbers_where_they_were_and_the_'
          'forbidden_one_puts_the_arm_on_the_controls_own_floor'),
