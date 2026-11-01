@@ -7,8 +7,17 @@ Built `r7654` (node 60), discharging `r7653`'s order.  `P18` l.1557-1559 was re-
 `r7652`'s branch 1 and now prints two figures and a gap:
 
   * the separation between the two arms is ** 1.77 ** times the control's own distance from the data,
-  * the difference of the two arms' scores is ** 1.35 ** times it (** 288.04 ** over ** 214.1 **),
+  * the difference of the two arms' scores is ** 1.35 ** times it,
   * and the two measures are ** a quarter ** apart.
+
+** THOSE TWO FIGURES ARE READ OUT OF `corpus/CR_synthesis.tex` AND PINNED AGAINST WHAT IS READ, not
+against literals typed into this file (`r7654+60.2`).  A pin against a typed literal cannot notice the
+paper moving, which is what `check_unread_figure` said when it flagged an earlier draft of this
+receipt.  ⛔ AND READING IT CORRECTED A FALSE CLAIM OF MINE: `P18` prints EXACTLY those two figures
+plus the prose "a quarter", and does NOT print `288.04` or `214.1` -- zero occurrences of either in
+that file.  Those two are THIS RECEIPT'S OWN numerator and denominator for the printed 1.35, pinned
+because a ratio pinned alone can be right through a cancellation of the pair, and they are labelled as
+this receipt's rather than as the paper's. **
 
 Those figures were produced in a computations directory.  This receipt makes them runnable by a reader
 who did not write them, and pins each one against the value the paper prints.
@@ -45,8 +54,8 @@ the 1.77 of the arm of record the bound is 1.50 and nothing forces agreement to 
 printed below.
 
 ** COMPUTES: the ratio chi2_sep/chi2_c and the ratio F2/chi2_c on the arm of record's 185 lensed bins
-   against its control, and the two chi^2 values they are formed from -- the four figures `P18`
-   l.1557-1559 prints, each pinned against the printed value by a parsed comparison; the identity and
+   against its control, and the two chi^2 values they are formed from -- the first two being the
+   figures `P18` l.1557-1559 prints and the last two this receipt's own -- each pinned against the printed value by a parsed comparison; the identity and
    the bound above on all eight (arm, half, bin set) rows this file produces; and the failability of
    every pin, measured by perturbing the arm rather than claimed. ***
 
@@ -72,6 +81,7 @@ rc=0 on success.  Run: python3 <this file>   (numpy, scipy; ~20 s -- reads banke
 """
 import math
 import os
+import re
 import sys
 
 import numpy as np
@@ -173,8 +183,10 @@ FULL = np.isfinite(binned(CTL, True))
 R133 = FULL & (HI <= 1296)
 print(f"      full set       {int(FULL.sum())} bins, ell {int(LO[FULL][0])}-{int(HI[FULL][-1])}")
 print(f"      restricted     {int(R133.sum())} bins, ell {int(LO[R133][0])}-{int(HI[R133][-1])}")
-check(f"ⓐ① the full set is 185 bins at ell {int(LO[FULL][0])}-{int(HI[FULL][-1])}, the range P18's "
-      f"sentence names", int(FULL.sum()) == 185 and int(HI[FULL][-1]) == 1996)
+check(f"ⓐ① the full set this receipt scores on is 185 bins at ell {int(LO[FULL][0])}-"
+      f"{int(HI[FULL][-1])}, counted off the likelihood's own bin edges -- COMPUTED here, with no "
+      f"claim about whose wording that range is (`r7654+60.2`)",
+      int(FULL.sum()) == 185 and int(HI[FULL][-1]) == 1996)
 check(f"ⓐ② and the ell<=1296 restriction is 133 bins, taken from the likelihood's own edges rather "
       f"than from a count", int(R133.sum()) == 133)
 print(f"      the saved FULL lensing operator at ell 1900: {R1900:.4f}")
@@ -205,19 +217,43 @@ for kn in ('185', '133'):
 P18 = ROWS[('185', 'LENSED', 'arm of record')]
 
 # ------------------------------------------------------------------ Ⓒ the pins
-print("\nⓒ  THE FOUR FIGURES P18 PRINTS, EACH PINNED BY A PARSED COMPARISON")
+print("\nⓒ  THE TWO FIGURES P18 PRINTS -- READ OUT OF THE PAPER, NOT TYPED IN HERE (`r7654+60.2`)")
+print("""      ⌗ WHY READ RATHER THAN COMPARE AGAINST A LITERAL: a pin against a number typed into this
+      file cannot notice the paper moving, which is precisely what `check_unread_figure` said when it
+      flagged an earlier version of this receipt.  So the sentence is located in the source and its
+      figures are parsed out; the receipt fails if it is not found or does not yield exactly two.""")
+P18TEX = os.path.join(ROOT, 'corpus', 'CR_synthesis.tex')
+_src = open(P18TEX, encoding='utf-8', errors='replace').read()
+_m = re.search(r'the separation between the two arms is\s*\$([0-9.]+)\$\s*times the control'
+               r"[^$]*?difference of the two arms' scores is\s*\$([0-9.]+)\$\s*times it",
+               _src, re.S)
+check("ⓒ① the sentence is LOCATED in corpus/CR_synthesis.tex -- the receipt fails here rather than "
+      "falling back on a literal if P18 is re-worded", _m is not None)
+if _m is None:
+    print("\n" + "=" * 104)
+    print(f"  {len(_fail)} failure(s) -- the paper's sentence could not be read, so nothing below ran")
+    sys.exit(1 if len(_fail) > 0 else 0)
+_READ = [float(_m.group(1)), float(_m.group(2))]
+print(f"      read from the paper: {_READ[0]} and {_READ[1]}")
+check(f"ⓒ② and it yields EXACTLY the two figures P18 prints here -- {_READ[0]} and {_READ[1]}; the "
+      f"paper prints no others in this sentence (grep: zero occurrences of 288.04 or 214.1 anywhere "
+      f"in it)", len(_READ) == 2 and '288.04' not in _src and '214.1' not in _src)
 PINS = [
-    ('the separation is 1.77 times the control\'s own distance from the data',
-     'sep_over', 1.77, 0.005),
-    ('the difference of the two arms\' scores is 1.35 times it', 'F2_over', 1.35, 0.005),
-    ('that difference is 288.04', 'F2', 288.04, 0.005),
-    ('against the control\'s own 214.1', 'c2c', 214.1, 0.05),
+    (f"the separation is {_READ[0]} times the control's own distance [READ]",
+     'sep_over', _READ[0], 0.005),
+    (f"the difference of the two arms' scores is {_READ[1]} times it [READ]",
+     'F2_over', _READ[1], 0.005),
+    ("that difference, 288.04 -- THIS RECEIPT'S, not printed in P18", 'F2', 288.04, 0.005),
+    ("the control's own, 214.1 -- THIS RECEIPT'S, not printed in P18", 'c2c', 214.1, 0.05),
 ]
+print(f"\n      ⌗ The last two are NOT the paper's: they are the numerator and the denominator the")
+print(f"      printed {_READ[1]} is formed from, pinned here because a ratio pinned alone can be right")
+print(f"      through a cancellation of the pair -- so pinning the pair is what forbids that.\n")
 for label, key, want, tol in PINS:
     got = P18[key]
-    print(f"      {label:<62} printed {want:>9.2f}   computed {got:>9.4f}"
+    print(f"      {label:<62} target {want:>9.2f}   computed {got:>9.4f}"
           f"   |d| {abs(got-want):.4f} <= {tol}")
-    check(f"ⓒ `{label}` -- pinned to half a unit in its last printed digit", abs(got - want) <= tol)
+    check(f"ⓒ `{label}` -- pinned to half a unit in its last digit", abs(got - want) <= tol)
 _q = P18['gap']
 print(f"      the two measures are a quarter apart{'':<27} printed     0.25   computed {_q:>9.4f}"
       f"   nearest 5pp {round(_q*20)/20:.2f}")
