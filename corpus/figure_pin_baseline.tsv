@@ -19,6 +19,34 @@
 # sentence was replaced by the arm-of-record figure under the same receipt key (2.57->2.35, 2.98->2.71,
 # 550.5->502.1, 1.57/1.58->1.60/1.61, 2.56->2.33, 184.989->186.135 ...), unpinned before and unpinned now.
 # Pinning the landed values into their receipts is routed to cc66 in FOR_CC66 r7649; the count fell 1494->1484.
+#
+# r7649+cc66.87 (cc66): 1483 -> 1479.  FOUR figures pinned, in the receipt that computes them, as the
+# order asks: `CR_cosmology.tex` l.2175's 11.7 and 18.3 on the arm of record and 11.4 and 22.6 on the
+# control, in `...the_de_tilted_peak_set...`, which are that receipt's own headline.  The gate standing
+# above them was ONE-SIDED (`> 8.0`, `> 15.0`), so all four could have drifted upward with the paper's
+# digits unchanged and nothing would have reddened.  Pinned as `round(x, 1) == want`, which is the
+# paper's own precision rather than a tolerance chosen here, and PERTURBED: a one per cent change in
+# the computation moves the printed digit and reddens the pin while the one-sided gate above still
+# passes, which is the whole point of the standing rule.
+#   => THE COUNT DOES NOT START WHERE THE ORDER SAYS, and that is said rather than reconciled: the
+#   order's figure is 1484 and the measured sum of this file before the change was 1483.  One figure
+#   among 1385 keys, and not mine to guess at.
+#   => AND THE OTHER EIGHT LANDED VALUES ARE ALREADY PINNED IN THE RECEIPTS THAT COMPUTE THEM --
+#   2.3456, 2.714 and 502.09 in `...the_full_range_lensed_comparison...`, 1.60108 in
+#   `...the_133_bin_pair...`, 1.6128 and 1.60276 in `...the_no_fit_confrontation...`, 186.135 in
+#   `...the_licensed_rebuild...`, 1.015066 in `...on_the_arm_of_record_the_fourth_acoustic...` -- so
+#   their remaining rows here are CO-CITATIONS and not missing pins.  Lowering the baseline for a
+#   co-citation would claim a pin that does not exist, so they stay.
+#   => 2.33 is pinned too, but DYNAMICALLY, in `...the_refit_bound_figures_all_reproduce...`, which
+#   reads the figure out of the paper and compares `round(got, dp) == want`.  That is the strongest
+#   form of pin in the corpus and it is INVISIBLE to this gate, because `pins()` reads the constant
+#   out of the AST and there is no literal to read.  Routed, not worked around.
+#   => ⛔ AND THE SAME BLIND SPOT BIT THIS TURN'S OWN PIN.  The first form was
+#   `all(round(RAT[a][i], 1) == w for (a, i), w in PRINTED.items())` -- the same test, better to
+#   read -- and the gate still reported both figures UNPINNED, because in a comprehension the
+#   constant is a loop variable.  A pin held in a dict does not exist as far as this gate is
+#   concerned.  That is the SECOND instrument with it: `check_quote_pins` has the same hole, reported
+#   at cc66.71.  Both are routed to 70 through 69.
 APPENDIX	P03	P03_the_cluster_ensemble_exists_and_it_overshoots_the_bound_at_the_dynamical_mass_which_weakens_my_own_exclusion	1.20	2
 APPENDIX	P03	P03_the_cluster_ensemble_exists_and_it_overshoots_the_bound_at_the_dynamical_mass_which_weakens_my_own_exclusion	1.28	1
 APPENDIX	P03	P03_the_cluster_ensemble_exists_and_it_overshoots_the_bound_at_the_dynamical_mass_which_weakens_my_own_exclusion	1.37	1
@@ -1253,10 +1281,6 @@ PROSE	CR_cosmology.tex	P15_the_cross_term_is_not_the_channel_and_every_projected
 PROSE	CR_cosmology.tex	P15_the_cross_term_is_not_the_channel_and_every_projected_term_carries_the_excess	1.017	1
 PROSE	CR_cosmology.tex	P15_the_de_tilted_peak_set_is_the_phase_observable_the_slope_was_not_and_it_separates_the_baryon_direction_from_a_tilt_by_twenty_but_the_driving_half_needs_its_own_pair	0.0247	1
 PROSE	CR_cosmology.tex	P15_the_de_tilted_peak_set_is_the_phase_observable_the_slope_was_not_and_it_separates_the_baryon_direction_from_a_tilt_by_twenty_but_the_driving_half_needs_its_own_pair	0.0278	1
-PROSE	CR_cosmology.tex	P15_the_de_tilted_peak_set_is_the_phase_observable_the_slope_was_not_and_it_separates_the_baryon_direction_from_a_tilt_by_twenty_but_the_driving_half_needs_its_own_pair	11.4	1
-PROSE	CR_cosmology.tex	P15_the_de_tilted_peak_set_is_the_phase_observable_the_slope_was_not_and_it_separates_the_baryon_direction_from_a_tilt_by_twenty_but_the_driving_half_needs_its_own_pair	11.7	1
-PROSE	CR_cosmology.tex	P15_the_de_tilted_peak_set_is_the_phase_observable_the_slope_was_not_and_it_separates_the_baryon_direction_from_a_tilt_by_twenty_but_the_driving_half_needs_its_own_pair	18.3	1
-PROSE	CR_cosmology.tex	P15_the_de_tilted_peak_set_is_the_phase_observable_the_slope_was_not_and_it_separates_the_baryon_direction_from_a_tilt_by_twenty_but_the_driving_half_needs_its_own_pair	22.6	1
 PROSE	CR_cosmology.tex	P15_the_exact_transmission_ratios_are_recomputed_and_the_offset_saturates	0.889	1
 PROSE	CR_cosmology.tex	P15_the_exact_transmission_ratios_are_recomputed_and_the_offset_saturates	0.891	1
 PROSE	CR_cosmology.tex	P15_the_exact_transmission_ratios_are_recomputed_and_the_offset_saturates	0.901	1
