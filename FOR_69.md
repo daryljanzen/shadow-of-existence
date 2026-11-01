@@ -9,6 +9,89 @@ is committed and pushed on `main` — nothing waits on the chat window.*
 
 ---
 
+## ⚑ `r7653` ⓷ (cc66) — **THE WINDOW PARAGRAPH: THE CANCELLATION TIGHTENS, THE SHARE LOSES ITS BRACKET, AND R1 STOPS FIRING. ONE WORDING CALL IS OWED AND IT IS THE SHARE**
+
+### The figures, old → new
+
+| paper | namesake | **arm of record** | fate |
+|---|---|---|---|
+| l.1182 "$0.0652$ on the control against $0.0642$ on this arm" | 0.065229 / 0.064240 | 0.065229 / **0.064474** | the control unchanged; the arm **0.0642 → 0.0645** |
+| l.1183 "within a per cent and a half" | 1.516 % | **1.157 %** | **holds, tightens** → "a per cent and a quarter" |
+| l.1184 "fourteen per cent wider in conformal time" | +14.59 % | **+15.55 %** | **moves** → "fifteen and a half" |
+| l.1185 "fourteen per cent more slowly per unit of it" | −13.69 % | **−14.03 %** | **holds verbatim** |
+| l.1186 "within one part in ninety of unity" | 1 in 91.0 | **1 in 150.5** | **holds, tightens 1.65×** |
+| l.1188–1189 "between a quarter and a half" | 23–45 % | **11, 62, 18, 11, 15 %; 243 % in a sixth band** | ⛔ **no bracket survives** |
+| l.1189–1190 "closes between a fifth and two fifths" | 20–39 % | **18, 41, 12, 12, 8 %; 77 % in the same band** | ⛔ **no bracket survives** |
+| l.1190 "carrying about a third" | a third on average | **band-dependent, median ≈ 15 %** | ⛔ **not what it measures now** |
+| l.1687 "some fourteen per cent wider" on the leaf clock | — | **+14.9 %** | **already landed** at `r7639` |
+
+⛭ **The two "fourteen per cent"s were never one measurement.** l.1184 reads the visibility's width **in
+conformal time**; l.1687 reads it **on the leaf clock**. Both came to about fourteen on the namesake,
+which is why the sentence could carry one figure twice. On the arm of record they part company —
+**15.55** and **14.9** — so it cannot. ⇒ *The cancellation the paragraph argues for is BETTER on this
+arm, not worse: the product lands at one part in 150 where it was one part in 91.*
+
+### ⛭⛭⛭ Why the brackets break, and it is one band
+
+    namesake        1.0215  1.0574  1.0519  1.0606  1.0748  1.0659  1.0762
+    arm of record   1.0186  1.0818  1.0373  1.0868  1.1005  1.0141  1.1617
+                                                            ^^^^^^ q = 4.70
+
+The band excess is **non-monotonic** on this arm. `q = 4.70` carries the **smallest excess of the seven**
+and the **largest window narrowing** (2.72 per cent) at once, so the ratio of the two is meaningless
+there rather than large — **and both routes blow up in that one band, the same band**: 243 per cent by
+the inversion, 77 per cent by the direct swap. *Two routes sharing no machinery agreeing on which band
+the comparison fails in is stronger than either number, and it is why the band is named rather than
+averaged away.*
+
+⌗ **Independently confirmed.** `…the_term_mix_has_the_shape…` was re-pointed at `r7643+cc66.59` and
+already pins **exactly these seven ratios**, its own comment noting the arm's are "MORE scattered". A
+different receipt, re-pointed two orders ago by a different route, measured the same thing.
+
+### ⛔ And R1 stops firing — a result, not a tolerance to retune
+
+| | namesake | **arm of record** |
+|---|---|---|
+| intercept of ln(excess) vs $q^2$ | +0.039244 ± 0.007822 | **+0.035803 ± 0.029028** |
+| excess at $q=0$ | 1.0400 | **1.0365** |
+| significance | **5.02 σ** | **1.23 σ** |
+
+**The offset barely moves; the fit's error on it grows 3.7-fold**, because a straight line through
+non-monotonic band excesses is far less determined. **The argument is untouched** — a characteristic
+function is identically 1 at $k=0$, so no smearing can supply a $q$-independent offset — **but the
+evidence that this offset is distinguishable from zero is gone on this arm.** ⇒ *What l.1193's paragraph
+rests on is the asymmetry, which is untouched: 72 per cent of the peak-height excess against 13 per cent
+of the trough-depth excess, a 5.4-fold asymmetry (namesake 81 / 14, 5.7-fold).*
+
+### The wording call I owe you, stated as a recommendation
+
+**l.1188–1190 cannot keep its brackets.** My recommendation: say the channel closes **between a tenth and
+two fifths of the band excess in five of the six bands above the damping scale**, and that in the sixth
+its measured excess nearly vanishes so the share is not defined there — rather than quoting one fraction.
+"About a third" was true of the namesake and is true of this arm by neither route. **l.1190's "measured
+rather than modelled, and from a quantity nobody chose" still holds**, since that is about provenance.
+
+⚠ **And one thing I am NOT asserting a paper change for.** R1 is the receipt's own refutation condition
+from `r6959`'s `PREDICTION.md`, not a sentence in the paper. But if any paper sentence rests on the
+$q=0$ offset being distinguishable from zero, it rests on 5 σ that is now 1.2 σ.
+
+### What is landed
+
+`…the_windows_phase_spread…` re-pointed whole and its docstring moved; `…the_term_mix_has_the_shape…`'s
+lobe-split quote moved from `1.0668 / 1.0561` to the landed **`1.074 / 1.062`**; **`receipts/INDEX.md`
+l.954 amended in place** per your standing ruling; appendices regenerated; **`corpus/CR_cosmology.pdf`
+rebuilt** at 0 errors, 0 undefined refs, 0 undefined citations, 0 dead `rcpt:` links. **No `corpus/*.tex`
+prose touched.**
+
+⌗ **One bank ask for 70 that turned out not to be needed, recorded because the reasoning was the error.**
+I first judged the "quarter to a half" unre-pointable, because PART 4's response model uses two tapered
+coefficients and only `swap` has a `_leafrec1` sibling. **False**: those two coefficients calibrate *the
+control's own* response, and the arm enters only through its narrowing and its excess. One bank was
+enough. ⇒ *Fifth instance this turn of reasoning about a neighbouring quantity instead of the one asked
+about — and the first that would have cost someone else work.*
+
+---
+
 ## ⚑ `r7653` (cc66) — **THE ARM OF RECORD'S POSITIONS AND HEIGHTS, PINNED ROW BY ROW; THE SECOND INSTRUMENT IS DONE AND IT ANSWERS l.2075 IN THE CLAIM'S FAVOUR; THE THREE-GRID TRUNCATION HOLDS ON EVERY COUNT WITH ALL SEVEN FIGURES MOVED**
 
 ### ⓵ The positions and heights, by the matched locator, one procedure on every row
