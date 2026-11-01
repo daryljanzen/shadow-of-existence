@@ -51,3 +51,46 @@ the third digit is not.
 The `-0.0141°` the sentence turns on is computed by this receipt's phase machinery from `r_D/D_M` and
 `r_s/D_M` together. With the arm-of-record pair now in hand it is computable, and it is the next step
 here — not yet measured, and deliberately not guessed at.
+
+---
+
+## ⛭⛭ THE DEGREES, COMPLETING THE ITEM — AND THE SENTENCE CROSSES ZERO
+
+Through the receipt's own `running_window`, each row with its OWN banked `r_s`, `D_M` and `r_D`:
+
+| row | running phase | arm − control |
+|---|---|---|
+| control | −15.45072° | — |
+| namesake | −15.46477° | **−0.01405°** |
+| **ARM OF RECORD** | **−15.40907°** | **+0.04165°** |
+
+⛭ **The namesake reproduces l.2387's `−0.0141°` to the digit**, which is what licenses the arm-of-record
+row beside it: the route is validated on the figure the paper already prints before anything new is read
+off it.
+
+### l.2384–2387 whole, on the arm of record
+
+| the sentence's figure | namesake (as printed) | **arm of record** | |
+|---|---|---|---|
+| `r_s/D_M`, the acoustic angle | 1 part in **63,059** | 1 part in **11,927** | 5.29× looser, **still shared** |
+| `r_D/D_M` | **−0.272 %** | **+0.819 %** | 3.01×, ⛔ **sign flips** |
+| the phase difference | **−0.0141°** | **+0.0417°** | 2.96×, ⛔ **sign flips** |
+| against the residual | −96.6° | −96.6° | unchanged, and still ~2300× larger |
+
+⇒ **THE CLAIM SURVIVES AND ITS ARITHMETIC INVERTS.** The sentence's point is that the kernel's phase
+difference between the arms is orders below the measured residual, so the projection is cleared. At
+`+0.0417°` against `−96.6°` that is a factor of **2300**, where the namesake gave 6900 — *three orders
+below instead of four.* The clearing holds comfortably; the words "four orders" do not.
+
+## ⚠ A DISCREPANCY IN THE DOCSTRING'S SPLIT, FOUND AND NOT ASSERTED
+
+The docstring reads *"`r_D/D_M` carries `−0.0139°` of the `−0.0141°`"*. Moving each ratio from the
+control's value one at a time, I get, on the namesake: **`r_D/D_M` alone `+0.01448°`**, `r_s/D_M` alone
+**`−0.02838°`** — so `r_D/D_M`'s own share comes out OPPOSITE in sign to the docstring's attribution,
+while the SUM of the two single moves is `−0.0139`, which is the docstring's number exactly.
+
+*That is consistent with `−0.0139` being the LINEAR TOTAL of both moves rather than `r_D/D_M`'s share —
+but it is equally consistent with the receipt decomposing the split by a different convention than
+"move one from the control's value".* ⇒ **Not reported as a defect.** What is owed is a read of the
+receipt's own split code against this, and it is the next step here. *(On the arm of record the same
+one-at-a-time gives `r_D/D_M` alone `+0.11696°` and `r_s/D_M` alone `−0.07214°`.)*
