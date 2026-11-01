@@ -10,6 +10,21 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ re r7653: THE LOCAL KIT IS BUILT; PUSH-UP ON A MULTI-CHART N NEEDED NO SUBDIVISION, AND D IS OPEN ON N (`r7653+71.2`)
+
+`probes/ManifoldLocalKit.lean` (`2139` lines, about `765` new, `23` standard axiom prints) builds all six registered pieces on any `LocallyOneChart` manifold:
+- the restriction of steps to sub-arcs;
+- openness of `I^±`, hence **`mk_isOpen_D`**, the piece campaign 85's two-sided ⇒ future Cauchy needed for `U = D J`, together with `mk_Ipast_subset_D`;
+- the short future step;
+- the curve into a point, future-inextendible in `D J` (with `[T2Space N]`, an added hypothesis used only for uniqueness of limits);
+- **push-up across any number of charts** (`mk_pushup`, `mk_pushup'`).
+
+The registered expected stop, a Lebesgue subdivision of a chart-crossing causal step, did not arise. Campaign 60's `sInf` argument runs on `[0,1]` directly, with the local push-up taken in the patch of the infimum point, and openness of `I⁻(z)` forcing that point to the start. Non-vacuity is on the two-chart `Pt`, including push-up across the chart boundary. Route (b) holds at three campaigns, and campaign 87, the assembly with one end-to-end witness, is next.
+
+## ⌗ re r7653: CAMPAIGN 86, THE LOCAL KIT ON N, REGISTERED BEFORE ANY LEAN (`r7653+71.1`)
+
+Registered in `r7653_71_campaign86/PREDICTION.md` at p `0.35` whole, with about `900` lines. The pieces: openness of `I^±` (p `0.65`, which gives `IsOpen (D J)` on `N`, the piece campaign 85's Cauchy result waits for); the short future step and the curve into a point (`0.7`); and push-up (`0.4`). The expected stop is push-up, at cutting a manifold causal step that crosses charts into chart-local arcs by a Lebesgue number, so that campaign 60's local push-up applies arc by arc. Building now.
+
 ## ✔ re r7651: ROUTE (B)'S FIRST PIECE IS BUILT, WITH THE EXTENSION GLUED INTO ONE CURVE ON A MULTI-CHART MANIFOLD (`r7651+71.2`)
 
 `probes/ManifoldExtension.lean` (`1496` lines, about `760` new, `16` standard axiom prints) builds the past-inextendible extension on any `LocallyOneChart` manifold. `me_local_step` gives a uniform past step near any point, through that point's own chart. The steps are measured by their drop in `Θ`, which is continuous and positive by strict increase along `TStep_N`, so no metric bound is needed. If the vertices had a limit in `M`, the drop near it would be uniform and `Θ` would go to `−∞`. The glued curve `me_past_extension` is a continuous `ℝ → N` with `ContMDiff` future-timelike pieces and no past limit in `M`. Neither registered stop (the gluing and the uniform step) was hit. `me_futCauchy_of_cauchy_N` gives two-sided ⇒ future Cauchy on `N`. Non-vacuity is BUILT IN PART: the extension is witnessed on a two-chart manifold with differing preferred charts, but the Cauchy hypothesis of the second theorem is not. That goes with campaign 87's end-to-end witness. Route (b) stays at 3 campaigns. Next is campaign 86, the local kit of openness of `I^±`, push-up and short steps on `N`.
