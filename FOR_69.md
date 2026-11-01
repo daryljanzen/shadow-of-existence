@@ -9,6 +9,59 @@ is committed and pushed on `main` — nothing waits on the chat window.*
 
 ---
 
+## ⚑ `r7653` (cc66) — **l.2285's PIN IS IN, AND IT FOUND ONE HUNDREDTH: THE `0.75` IS THE PUBLISHED `0.79` ROUNDED TWICE, AND THE RECEIPT'S OWN ARITHMETIC GIVES `0.76`. `r7653` IS COMPLETE**
+
+### The pin you asked for
+
+Your `r7653` ruling located the interval and said what was owed: *"compute 12.5 and 0.75 at the interval's end in that receipt, and pin those and the 0.953."* Done, in
+`…the_selection_does_not_truncate…`, as a new **Ⓔ③** beside the existing Ⓔ①:
+
+| | value | the paper prints | fate |
+|---|---|---|---|
+| the interval's unfavourable end | `BLO = 0.9531` | $0.953$ | ✔ **pinned** |
+| one driving unit, carried across | **12.52 σ** | $12.5$ | ✔ **pinned** |
+| the sky against the control | **0.7551 → 0.76** | $0.75$ | ⛔ **one hundredth out — see below** |
+
+The centre of the interval (`R_ROB = 0.9821`) is what gives Ⓔ①'s **12.90** and **0.78**; the low end is
+what gives the paper's pair. ⌗ **"Unfavourable" is the SMALLER ratio**, because the corrected width is
+`S4 / ratio`: a smaller ratio widens σ and weakens the exclusion. ⇒ *So the sentence quotes the weakest
+reading its own interval admits, which is the conservative direction and worth saying — "both figures
+quoted above survive the change" is now a statement the receipt carries rather than one the paper makes
+unaided.* All three figures are **read out of `corpus/CR_cosmology.tex`**, not retyped.
+
+### ⛔ The one hundredth, and which number is wrong
+
+`0.75` is what the **published, already-rounded `0.79`** gives: `0.79 × 0.9531 = 0.7529`. The receipt's
+own unrounded sky figure is **`0.7923`**, and `0.7923 × 0.9531 = 0.7551`, which prints as **`0.76`**.
+⇒ **So the paper's `0.75` carries a rounding twice — once in the `0.79` it starts from and once in the
+product.** Its sibling `12.5` is unaffected: `13.14 × 0.9531 = 12.52` either way.
+
+**The gate accepts either and PRINTS which state the paper is in**, because correcting a printed digit
+is yours and not mine, while letting the gate pass on a figure neither route produces is not a choice at
+all. **My recommendation: l.2284 reads `$0.76$`.** It is a hundredth, it does not touch the claim
+("both figures survive"), and the reason to take it is that the receipt that now pins the sentence
+computes `0.76` — leaving `0.75` means the pin records a disagreement with the paper for good.
+
+⌗ *Three perturbations confirm the gate is not vacuous: breaking the locator, breaking the `12.5`
+comparison, and reversing the direction of the σ inequality each fail it alone.*
+
+### `r7653` is complete
+
+| item | state |
+|---|---|
+| ⓵ the arm of record's positions and heights, by the matched locator | **landed, pinned row by row** |
+| ⓵c the second instrument, the hierarchy path | **done** — my "cannot be" falsified; l.2074–2075 answered in its favour |
+| ⓶ l.2384–2387, the kernel's phase difference | **landed** (`cc66.107`) |
+| ⓷ the window paragraph, l.1178–1191 and l.1687 | **landed** — one wording call owed, the share |
+| ⓸ the three-grid truncation, l.1958–1966 | **landed** — every claim holds, all seven figures move |
+| ⓺ l.2147's intercept | **answered** — the matched four-peak pair, −0.2488 against −0.2448 |
+| l.2285's 12.5 / 0.75 / 0.953 | **pinned**, with the hundredth above |
+
+**Owed back to me, and nothing else is:** the share wording at l.1188–1190, the `0.76` at l.2284, and
+whether to print the matched pair at l.2072–2074 or say its line-of-sight figures are grid-snapped.
+
+---
+
 ## ⚑ `r7653` ⓷ (cc66) — **THE WINDOW PARAGRAPH: THE CANCELLATION TIGHTENS, THE SHARE LOSES ITS BRACKET, AND R1 STOPS FIRING. ONE WORDING CALL IS OWED AND IT IS THE SHARE**
 
 ### The figures, old → new

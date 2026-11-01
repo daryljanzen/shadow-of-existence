@@ -31786,3 +31786,25 @@ Closing the CI ledger for this order. Three reds arrived; none was a contradicti
 **Landed:** the receipt re-pointed whole with its docstring moved; `…the_term_mix_has_the_shape…`'s lobe-split quote moved from `1.0668/1.0561` to the landed **`1.074/1.062`**; **`receipts/INDEX.md` l.954 amended in place** per 69's standing ruling; appendices regenerated; **`corpus/CR_cosmology.pdf` rebuilt** at 0 errors, 0 undefined refs, 0 undefined citations, 0 dead `rcpt:` links. `turn_gates` **124/124, 0 FAIL, 0 UNRUN**. No `corpus/*.tex` prose touched.
 
 ⛔ **ONE CORRECTION TO MY OWN EARLIER READING OF THIS ITEM, because the reasoning is the error and not the number.** I first judged the "quarter to a half" unre-pointable and drafted a bank ask for 70: PART 4's response model uses two tapered coefficients and only `swap` has a `_leafrec1` sibling. **False.** Those two coefficients calibrate *the control's own* response to a taper; the arm enters only through its narrowing and its excess. **One bank was enough and nothing was blocked.** ⇒ *Fifth instance this turn of reasoning about a neighbouring quantity instead of the one asked about — ⓵a's referents, ⓵c's filename convention, ⓶'s VISLEAF transfer, ⓸'s single figure, and this. The first of the five that would have cost another seat work it did not need to do.*
+
+### ⛭⛭⛭ `r7653+cc66.113` — l.2285's PIN IS IN, AND IT FOUND ONE HUNDREDTH. **`r7653` IS COMPLETE; THREE WORDING CALLS ARE OWED BACK AND NOTHING ELSE IS**
+
+69's `r7653` ruling located the interval and said what was owed: *"compute 12.5 and 0.75 at the interval's end in that receipt, and pin those and the 0.953."* Done, as a new **Ⓔ③** in `…the_selection_does_not_truncate…` beside the existing Ⓔ①, with all three figures **read out of `corpus/CR_cosmology.tex`** rather than retyped.
+
+| | measured | the paper prints | fate |
+|---|---|---|---|
+| the interval's unfavourable end | `BLO = 0.9531` | $0.953$ | ✔ **pinned** |
+| one driving unit carried across | **12.52 σ** | $12.5$ | ✔ **pinned** |
+| the sky against the control | **0.7551 → 0.76** | $0.75$ | ⛔ **one hundredth out** |
+
+The interval's CENTRE (`R_ROB = 0.9821`) is what gives Ⓔ①'s 12.90 and 0.78; its LOW end gives the paper's pair. ⌗ *"Unfavourable" is the SMALLER ratio, because the corrected width is `S4 / ratio` — a smaller ratio widens σ and weakens the exclusion. So the sentence quotes the weakest reading its own interval admits, which is the conservative direction, and "both figures quoted above survive the change" is now a statement this receipt carries rather than one the paper makes unaided.*
+
+⛔ **The hundredth, and which number is wrong.** `0.75` is what the **published, already-rounded `0.79`** gives: `0.79 × 0.9531 = 0.7529`. The receipt's own unrounded sky figure is **`0.7923`**, and `0.7923 × 0.9531 = 0.7551`, which prints as **`0.76`**. ⇒ **The paper's `0.75` carries a rounding twice — once in the `0.79` it starts from and once in the product.** Its sibling `12.5` is unaffected (`13.14 × 0.9531 = 12.52` either way), and the sibling receipt's own `0.79` is correct to its own precision: only the DERIVED figure is low.
+
+**The gate accepts either and PRINTS which state the paper is in**, because correcting a printed digit is 69's and not this seat's, while letting a gate pass on a figure neither route produces is not a choice at all. ⌗ *Three perturbations confirm it bites: breaking the locator, breaking the `12.5` comparison, and reversing the σ inequality each fail it alone.* One new quote-pin key, adjudicated **DELIBERATE** — and its spaces are written `\s+` from the start, which is `cc66.111`'s lesson applied rather than re-learned.
+
+---
+
+⇒ **`r7653` IS COMPLETE.** Items ⓵ (with ⓵c and ⓺ falling out of it), ⓶, ⓷ and ⓸ are all landed and pushed, and the l.2285 pin with them. **What is owed back to me is three wording calls and nothing else:** the share at l.1188–1190, the `0.76` at l.2284, and whether l.2072–2074 prints the matched pair or says its line-of-sight figures are grid-snapped.
+
+⌗ **And the one thing worth carrying out of this order, because it is the same finding five times.** Five of my registered commitments were falsified, and every one by the same move: **reasoning from a neighbouring quantity instead of the one asked about.** ⓵a attached two statements to arm-vs-sky when they compare two instrument *paths*; ⓵c keyed a bank search on a filename convention; ⓶ transferred `r_D`'s VISLEAF-family response to a different comparison; ⓸ reasoned from the figure the order named instead of the table it came from; and item ⓷'s "blocked" reading transferred a dependence on the arm to coefficients that only calibrate the control. *The guard that worked every time it was applied is the cheap one: establish the referent from the paper, or from the instrument, before predicting anything about it.*
