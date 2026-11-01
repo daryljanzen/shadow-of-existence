@@ -31654,3 +31654,24 @@ fails at 0.57σ.
 Item ⓹'s paragraph amendment (the statistic is named in the sentence, so the numbers cannot move alone —
 draft supplied and tested against the gate) and item ⓸'s l.2285 (three options, with my recommendation).
 Item ⓷'s `r_D` half is 70's: one log line, or `r_D` banked as a key. Everything else is landed and green.
+
+### ⌗ `r7651+cc66.99` — THE TOLERANCE JOB'S RED ON `bc704729a` IS NOT A CONTRADICTION, AND WHAT IT ACTUALLY MEASURES IS WORTH ROUTING
+
+CI's `scoped — the tolerance perturbation` failed on `bc704729a` (run 41280224350). Its own record line settles what it is:
+
+```
+RECORD (tolerance, …5tjf0b @ bc704729ac): ran 40, 0 named red, 30 NEVER PROBED;
+  +30 carried, 0 cleared by a green, 0 still red, 0 no longer registered
+NEVER PROBED (tolerance): 30 of the 40 in scope -- the run did not reach them,
+  which is NOT a verdict about them; carried under `unmeasured` so the next union re-probes them
+```
+
+**Zero named red.** The `⚠ CONTRADICTED` block beneath it is the `PO-68` ledger's *history* for what is red there, which is exactly the thing the standing cycle says cannot settle whether THIS red is a contradiction (`r7611+cc66.6`).
+
+⛔ **And the job's own timestamps say where the budget went: `06:27:44 → 07:48:34`, eighty-one minutes, entirely in the ledger-history read** — after which the probes it exists to run had no budget left and 30 of 40 were never reached. The carry ledger it spent that time reading is also what reports the pattern as corpus-wide rather than this branch's: `carried 24–112, cleared 23–110` per receipt, **on five or six lines over 349–795 hours** — `main`, `…5tjf0b`, `…6awafl`, `…wgcmvt`, `claude/youthful-darwin-xvkwh7`, `claude/lap-killing-order` — with red/green pairs **on `main` against `main`** where "nothing it reads differs between the two", and 221 pairs recorded `UNCHECKABLE: a pushed tree is no longer fetchable`.
+
+**What I did rather than assert it is not mine:** ran every P15 receipt in the never-probed set locally on this tree. Nine of them, all `rc=0` — `…the_contrast_excess_is_symmetric…`, `…the_model_difference…`, `…the_shared_fraction…`, `…the_period_difference_null…`, `…the_windows_phase_spread…` (the five this turn already touched and re-ran), plus `…the_background_returns_the_larger_stretch…`, `…the_budget_declaration_rests_on_a_lower_bound…`, `…the_onset_bracket_family…` and `…the_resolution_table…`. So nothing this turn changed contradicts anything in the set the job failed to probe.
+
+⌗ **The one re-run, spent deliberately and not at all.** The failing job is on `bc704729a`, superseded by `5ab396d92`, and the same job family's push run (8880) is already queued on the current head — that run *is* the re-probe the carry asks for, on the tree that matters. Re-running eighty-one minutes of runner on a superseded commit would buy a verdict about a tree nobody will merge, so I did not, and I am saying so rather than leaving it to look unspent.
+
+⇒ **FOR 69/70, as an instrument observation and not a request:** a probe job that gives 81 minutes to reading its own history and then records 75 per cent of its population as `unmeasured` is reporting on the ledger rather than on the push. The `unmeasured` carry is the right conservative behaviour; the ordering is what makes it bite every time.
