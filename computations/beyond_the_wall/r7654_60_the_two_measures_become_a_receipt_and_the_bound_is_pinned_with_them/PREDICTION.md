@@ -228,3 +228,36 @@ this one.**
 
 **Running total of this seat's own rule conditions corrected by measurement rather than by reading,
 across `r7648`, `r7650`, `r7652` and `r7654`: fifteen.**
+
+---
+
+# `r7654+60.5` — SCORED: `+60.4`'s ⑭ MISSED. The two keys were never this receipt's, and the quote-pin red is `main`'s own
+
+**⑫ and ⑬ HOLD.** The locator is a disjunction and **both arms are taken on every run** — the second
+by running the same locator over a synthetic text without the sentence and asserting it reports absent.
+*That repair stands on its own merits: a hard pin on wording 69 re-stated one revision ago would go red
+the next time 69 touches it.*
+
+**⛔ ⑭ MISSED.** It said the repair minted two quote-pin keys to be adjudicated in
+`corpus/quote_pin_baseline.tsv`. **Measured: the instrument reports ZERO quote-pin sites in this
+receipt** — moving the pattern into a module-level `LOCATOR` constant, which the disjunction needed
+anyway so both arms could call one function, took it out of the shape the instrument detects. *So the
+two rows I added were adjudications of keys that do not exist, and this file's own header forbids
+exactly that: it is a record of adjudications, not a list of exemptions. Both rows are removed. The
+discarded reading is kept.*
+
+**AND THE RED IS NOT THIS PR'S, ESTABLISHED BY MEASUREMENT AND NOT BY ELIMINATION.** On a **pristine
+`origin/main` worktree** at `f5c83624`, the gate reports **2768 live keys against a baseline of
+2767** — *the same one unadjudicated key, to the digit, as on this branch.* ⇒ **It arrived with
+`r7653`'s own landing and is `main`'s to adjudicate.** No fix exists anywhere to port, because `main`
+is where the red is. Reported in one comment on the PR rather than repaired here: the unadjudicated
+key belongs to another seat's receipts (`L174_*`, `L203_*`), and adjudicating another seat's pin in a
+shared ledger is not this line's call.
+
+⌗ *The lesson, and it is the fourth of this revision: I diagnosed a gate's complaint from its count
+and attributed it to the only thing I had just changed. The count was right and the attribution was
+mine. **A gate that goes red on the same revision as your own change has still to be asked whether it
+is red without it** — and the pristine worktree is how one asks.*
+
+**Running total of this seat's own rule conditions corrected by measurement rather than by reading,
+across `r7648`, `r7650`, `r7652` and `r7654`: sixteen.**

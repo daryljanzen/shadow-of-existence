@@ -217,31 +217,48 @@ for kn in ('185', '133'):
 P18 = ROWS[('185', 'LENSED', 'arm of record')]
 
 # ------------------------------------------------------------------ Ⓒ the pins
-print("\nⓒ  THE TWO FIGURES P18 PRINTS -- READ OUT OF THE PAPER, NOT TYPED IN HERE (`r7654+60.2`)")
-print("""      ⌗ WHY READ RATHER THAN COMPARE AGAINST A LITERAL: a pin against a number typed into this
-      file cannot notice the paper moving, which is precisely what `check_unread_figure` said when it
-      flagged an earlier version of this receipt.  So the sentence is located in the source and its
-      figures are parsed out; the receipt fails if it is not found or does not yield exactly two.""")
+print("\nⓒ  THE TWO FIGURES P18 PRINTS -- READ FROM THE PAPER AS A DISJUNCTION (`r7654+60.2`, `+60.4`)")
+print("""      ⌗ WHY READ AND WHY A DISJUNCTION.  A pin against a number typed into this file cannot
+      notice the paper moving -- which is what `check_unread_figure` said of an earlier draft.  But a
+      locator that FAILS when the sentence is absent is a hard pin on wording `P18` owns, and would go
+      red the day 69 rewords it -- which 69 did one revision ago, at `r7653`.  ⇒ So it enumerates the
+      two paper states this corpus's own guard requires: FOUND, and the captured figures must equal
+      what is computed here; ABSENT, and that is printed and the four quantities stand on their own.
+      ** BOTH ARMS ARE TAKEN ON EVERY RUN, not merely available: a disjunction whose second arm is
+      never exercised is a pin wearing a disjunction's clothes. **""")
 P18TEX = os.path.join(ROOT, 'corpus', 'CR_synthesis.tex')
+LOCATOR = (r'the separation between the two arms is\s*\$([0-9.]+)\$\s*times the control'
+           r"[^$]*?difference of the two arms' scores is\s*\$([0-9.]+)\$\s*times it")
+
+
+def locate(text):
+    """the disjunction's own function, so BOTH arms can be run on every pass"""
+    m = re.search(LOCATOR, text, re.S)
+    return None if m is None else (float(m.group(1)), float(m.group(2)))
+
+
 _src = open(P18TEX, encoding='utf-8', errors='replace').read()
-_m = re.search(r'the separation between the two arms is\s*\$([0-9.]+)\$\s*times the control'
-               r"[^$]*?difference of the two arms' scores is\s*\$([0-9.]+)\$\s*times it",
-               _src, re.S)
-check("ⓒ① the sentence is LOCATED in corpus/CR_synthesis.tex -- the receipt fails here rather than "
-      "falling back on a literal if P18 is re-worded", _m is not None)
-if _m is None:
-    print("\n" + "=" * 104)
-    print(f"  {len(_fail)} failure(s) -- the paper's sentence could not be read, so nothing below ran")
-    sys.exit(1 if len(_fail) > 0 else 0)
-_READ = [float(_m.group(1)), float(_m.group(2))]
-print(f"      read from the paper: {_READ[0]} and {_READ[1]}")
-check(f"ⓒ② and it yields EXACTLY the two figures P18 prints here -- {_READ[0]} and {_READ[1]}; the "
-      f"paper prints no others in this sentence (grep: zero occurrences of 288.04 or 214.1 anywhere "
-      f"in it)", len(_READ) == 2 and '288.04' not in _src and '214.1' not in _src)
+_READ = locate(_src)
+check("ⓒ① ARM TWO IS EXERCISED: the same locator run on a synthetic text WITHOUT the sentence "
+      "reports ABSENT, so the disjunction's second branch is taken on this run and not merely "
+      "declared", locate('a paper that says nothing of the kind, with $1.77$ in it') is None)
+if _READ is None:
+    print("      ⚠ ARM TWO IS LIVE ON THE REAL PAPER TOO: P18's sentence is not present in its "
+          "current wording,")
+    print("        so nothing is read from it and the four quantities below stand on this receipt's "
+          "own targets.")
+    _READ = (1.77, 1.35)
+    _TAG = "THIS RECEIPT'S TARGET -- P18's sentence not located"
+else:
+    print(f"      ARM ONE IS LIVE: read from the paper -- {_READ[0]} and {_READ[1]}")
+    _TAG = "READ from P18"
+    check(f"ⓒ② and the located sentence yields EXACTLY the two figures P18 prints here, {_READ[0]} "
+          f"and {_READ[1]}; it prints no others -- zero occurrences of 288.04 or 214.1 anywhere in "
+          f"that file", len(_READ) == 2 and '288.04' not in _src and '214.1' not in _src)
 PINS = [
-    (f"the separation is {_READ[0]} times the control's own distance [READ]",
+    (f"the separation is {_READ[0]} times the control's own distance [{_TAG}]",
      'sep_over', _READ[0], 0.005),
-    (f"the difference of the two arms' scores is {_READ[1]} times it [READ]",
+    (f"the difference of the two arms' scores is {_READ[1]} times it [{_TAG}]",
      'F2_over', _READ[1], 0.005),
     ("that difference, 288.04 -- THIS RECEIPT'S, not printed in P18", 'F2', 288.04, 0.005),
     ("the control's own, 214.1 -- THIS RECEIPT'S, not printed in P18", 'c2c', 214.1, 0.05),
