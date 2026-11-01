@@ -47,6 +47,18 @@
 #   constant is a loop variable.  A pin held in a dict does not exist as far as this gate is
 #   concerned.  That is the SECOND instrument with it: `check_quote_pins` has the same hole, reported
 #   at cc66.71.  Both are routed to 70 through 69.
+#
+# r7651+cc66.94 (cc66): 1488 -> 1484.  FOUR rows struck because `r7651` ⓵'s new PART 4B now PINS
+# l.813's 298.0 and 298.4 -- the gate reported them STALE, which is the gate saying a figure that was
+# owed is owed no longer.  The receipt computes the comb by the procedure the sentence NAMES (lensed,
+# binned through plik_lite, splined, parabola over +-W, seven windows, identically on the sky and each
+# arm), and it now READS the paper's own 298.0, 298.4 and 302.9 out of `corpus/CR_cosmology.tex` and
+# compares them, rather than naming them in a label.
+#   => That second part was `check_unread_figure`'s doing, and it is the THIRD time this seat has been
+#   told: once at cc66.89, once as commitment 4 of r7651's own PREDICTION.md ("a figure attributed to
+#   the paper is READ OUT OF THE PAPER, not retyped from it"), and once here.  The cause is worth
+#   naming rather than apologising for: the provenance argument lives in the gate's LABEL, and that
+#   gate's whole point is that an argument about the paper must read the paper.
 APPENDIX	P03	P03_the_cluster_ensemble_exists_and_it_overshoots_the_bound_at_the_dynamical_mass_which_weakens_my_own_exclusion	1.20	2
 APPENDIX	P03	P03_the_cluster_ensemble_exists_and_it_overshoots_the_bound_at_the_dynamical_mass_which_weakens_my_own_exclusion	1.28	1
 APPENDIX	P03	P03_the_cluster_ensemble_exists_and_it_overshoots_the_bound_at_the_dynamical_mass_which_weakens_my_own_exclusion	1.37	1
@@ -217,8 +229,6 @@ APPENDIX	P15	P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_
 APPENDIX	P15	P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number	2.264	1
 APPENDIX	P15	P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number	2.277	1
 APPENDIX	P15	P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number	2.298	1
-APPENDIX	P15	P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number	298.0	1
-APPENDIX	P15	P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number	298.4	1
 APPENDIX	P15	P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number	4.19	1
 APPENDIX	P15	P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number	68.60	1
 APPENDIX	P15	P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number	85.9	1
@@ -1234,8 +1244,6 @@ PROSE	CR_cosmology.tex	P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the
 PROSE	CR_cosmology.tex	P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number	2.277	1
 PROSE	CR_cosmology.tex	P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number	2.298	1
 PROSE	CR_cosmology.tex	P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number	2.33	1
-PROSE	CR_cosmology.tex	P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number	298.0	1
-PROSE	CR_cosmology.tex	P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number	298.4	1
 PROSE	CR_cosmology.tex	P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number	68.60	1
 PROSE	CR_cosmology.tex	P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number	68.62	1
 PROSE	CR_cosmology.tex	P15_camb_reference	1.53	1

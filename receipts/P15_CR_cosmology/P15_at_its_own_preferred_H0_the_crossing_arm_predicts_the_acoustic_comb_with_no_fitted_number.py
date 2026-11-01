@@ -395,6 +395,33 @@ def _matched(fn):
     return s
 
 
+#: ⛔⛭⛭ r7651+cc66.94: ** THE PAPER'S OWN THREE FIGURES ARE READ OUT OF THE PAPER, because
+#:   `check_unread_figure` reddened on this PART and was right -- FOR THE THIRD TIME ON THIS SEAT. **
+#:   *The gates below argue about what l.813, l.945 and l.2067 print.  Their labels named `298.0`,
+#:   `298.4` and `302.9` while nothing in the file opened `corpus/CR_cosmology.tex`, so if 69 moved
+#:   any of them the gates would have stayed green while the argument went false.  `cc66.89` was
+#:   told this once and my own `r7651` PREDICTION.md listed it as commitment 4 -- "a figure
+#:   attributed to the paper is READ OUT OF THE PAPER, not retyped from it" -- and I did it anyway.
+#:   The cause is worth naming: the provenance argument lives in the LABEL, and the gate's whole
+#:   point is that an argument about the paper has to read the paper.*
+#:   ⇒ ** AND IT IS A PIN ON 69's SENTENCES, so each locator is a DISJUNCTION: ** when the sentence
+#:   is found the paper's figures must equal what this file computes by the two methods; when it is
+#:   not found the ALT arm says so and holds the computed values.  Adjudicated in
+#:   `corpus/quote_pin_baseline.tsv` in this same pass.
+import re                                                                  # noqa: E402
+
+_TEXW = re.sub(r'\s+', ' ', open(os.path.join(ROOT, 'corpus', 'CR_cosmology.tex'),
+                                 encoding='utf-8').read())
+_M813 = re.search(r"fitted to those peaks by the procedure this paper runs on the sky, it is "
+                  r"\$([0-9.]+)\$ against the sky's \$([0-9.]+)\$", _TEXW)
+_M945 = re.search(r"the comb at \$([0-9.]+)\$ against a reported scale of \$([0-9.]+)\$", _TEXW)
+PAPER = dict(comb=float(_M813.group(1)) if _M813 else None,
+             sky=float(_M813.group(2)) if _M813 else None,
+             ruler=float(_M945.group(2)) if _M945 else None)
+print(f"  read out of corpus/CR_cosmology.tex: l.813's comb/sky = "
+      f"{PAPER['comb']}/{PAPER['sky']}, l.945's reported scale = {PAPER['ruler']}"
+      + ("" if _M813 and _M945 else "   ⛔ ALT ARM: a sentence was not locatable in this form"))
+
 _MSKY = _sweep(CS.X_DATA * _FACB)
 _MNSK = _matched('cc66_cr_x_h686_L2000.npz')
 _MAOR = _matched('cc66_cr_x_h686_L2000_leafrec1_distances.npz')
@@ -419,7 +446,8 @@ check("⛭⛭⛭ ** THE PORT IS FAITHFUL, WHICH IS THE ONLY REASON THE ROWS BELO
       "its peaks are 220.98 / 533.79 / 814.79 / 1121.85 against the stored 220.4 / 537.7 / 817.3 / "
       "1123.9.  A port that could not find the sky would not be evidence about an arm.*",
       abs(_MSKY['a4'] - 298.362) < 0.01 and abs(_MSKY['a4'] - fit_comb(SKY, 3)[0]) < 0.2
-      and _MSKY['nW'] == 7,
+      and _MSKY['nW'] == 7
+      and (PAPER['sky'] is None or abs(fit_comb(SKY, 3)[0] - PAPER['sky']) < 0.06),
       f"sky comb 1-4 = {_MSKY['a4']:.3f} +- {_MSKY['a4_s']:.3f} over {_MSKY['nW']} windows; "
       f"sec:intro's three-peak {fit_comb(SKY, 3)[0]:.2f}")
 check("⛔⛭⛭ ** AND THE PAPER'S 298.0 IS NOT THE PROCEDURE THE SENTENCE NAMES. **  By that procedure "
@@ -429,7 +457,9 @@ check("⛔⛭⛭ ** AND THE PAPER'S 298.0 IS NOT THE PROCEDURE THE SENTENCE NAME
       "arm's half of it is not located by the parabolic procedure at all*",
       abs(_MNSK['a4'] - 300.589) < 0.01 and abs(_MAOR['a4'] - 299.057) < 0.01
       and abs(NEWL2['lA'] - 298.00) < 0.005
-      and all(float(v) % 2.0 == 0.0 for v in NEWL2['P']),
+      and all(float(v) % 2.0 == 0.0 for v in NEWL2['P'])
+      and (PAPER['comb'] is None or abs(NEWL2['lA'] - PAPER['comb']) < 0.05)
+      and (PAPER['comb'] is None or abs(_MNSK['a4'] - PAPER['comb']) > 2.0),
       f"matched: namesake {_MNSK['a4']:.3f}, arm of record {_MAOR['a4']:.3f}; raw-grid namesake "
       f"{NEWL2['lA']:.2f} on peaks {[int(v) for v in NEWL2['P']]}")
 _gap_ns = _MNSK['a4'] - _MSKY['a4']
@@ -456,7 +486,8 @@ check("⛭⛭⛭ ** AND HERE IS THE PARTING `cc66.81` FOUND, IN ITS CLEANEST FOR
       "298.0 against a reported scale of 302.9' is the paper already printing the parting. ***",
       _MNSK['lA_rep'] == _MAOR['lA_rep']
       and abs(_MNSK['a4'] - _MAOR['a4']) > 1.0
-      and _MAOR['a4'] / _MAOR['lA_rep'] < _MNSK['a4'] / _MNSK['lA_rep'] < 1.0,
+      and _MAOR['a4'] / _MAOR['lA_rep'] < _MNSK['a4'] / _MNSK['lA_rep'] < 1.0
+      and (PAPER['ruler'] is None or abs(_MAOR['lA_rep'] - PAPER['ruler']) < 0.05),
       f"geometric l_A identical at {_MAOR['lA_rep']:.4f}; fitted comb {_MNSK['a4']:.3f} -> "
       f"{_MAOR['a4']:.3f}; fitted/geometric {100 * (_MNSK['a4'] / _MNSK['lA_rep'] - 1):+.3f}% -> "
       f"{100 * (_MAOR['a4'] / _MAOR['lA_rep'] - 1):+.3f}%")
