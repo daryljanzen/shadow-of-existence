@@ -144,5 +144,13 @@
     "since": "0dad1e340f3b38c3cc12d8b67383ecb56f27ebee"
    }
   }
+ },
+ "main": {
+  "reads": {
+   "receipts/P15_CR_cosmology/P15_the_kernels_phase_difference_between_the_arms_is_four_orders_below_the_residual_so_the_projection_is_cleared_and_a_sixth_of_the_scale_is_common_mode.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41319884689",
+    "since": "9ba8a6bdae8170498155129b50e14c7b5e24eb54"
+   }
+  }
  }
 }
