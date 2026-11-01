@@ -1950,5 +1950,14 @@
     "since": "0dad1e340f3b38c3cc12d8b67383ecb56f27ebee"
    }
   }
+ },
+ "claude/shadow-of-existence-setup-wgcmvt": {
+  "tolerance": {
+   "receipts/L_probability/S55_the_previous_repairs_own_written_safety_argument_was_the_defect_because_a_shrinking_population_is_safe_for_a_restraint_and_fatal_for_the_non_vacuity_read_off_the_same_range.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41288133116",
+    "since": "51e0fdee13b656246a9eefb11d9cec30213c5ff2",
+    "unmeasured": true
+   }
+  }
  }
 }
