@@ -185,3 +185,46 @@ file could have told me.*
 
 **Running total of this seat's own rule conditions corrected by measurement rather than by reading,
 across `r7648`, `r7650`, `r7652` and `r7654`: thirteen.**
+
+---
+
+# `r7654+60.4` — REGISTER THE CORRECTION: reading the paper made a HARD PIN on another seat's wording, and this corpus's own guard says it should be a DISJUNCTION
+
+**`check_quote_pins` is red in CI on the corrected tree, and it is right twice over.**
+
+⓵ **The count.** The instrument reports **2769** distinct `(receipt, literal)` keys against a baseline
+of **2767**: `+60.2`'s repair minted **two new quote-pin keys** — the two prose fragments the receipt
+now searches for in `corpus/CR_synthesis.tex` — and a new key must be **adjudicated** in
+`corpus/quote_pin_baseline.tsv` rather than left to raise the unadjudicated ceiling. *That is the rule
+that bit at `r7132` and it has bitten again.*
+
+⓶ **And the shape is wrong, which matters more than the count.** As written, the receipt **FAILS if
+the sentence is not found**. That is a hard pin on wording **`P18` owns**: it would go red the day 69
+rewords that sentence — *which 69 is entitled to do, and did do, one revision ago.* ⇒ This corpus's own
+guard already names the repair: **a defence against a paper state changing has to ENUMERATE the states
+it may produce, and a disjunction beats a pin.** The precedent is on the record in the baseline itself,
+where cc66's two `r7651` locators are flagged `ALT` / `ALT-OK` for exactly this reason.
+
+⌗ *So `+60.2` fixed a false attribution and introduced a brittle one in its place. The gate caught the
+second as soon as the first was repaired — which is the sequence working, not the sequence failing.*
+
+## THE CORRECTED RULE, registered before the corrected receipt exists
+
+- **⑫ THE LOCATOR BECOMES A DISJUNCTION OVER PAPER STATES.** Found → the two figures it captures must
+  equal what this receipt computes, to half a unit in the last printed digit, and the pin is as strong
+  as before. **Not found** → the receipt says so in its printed line and the four quantities stand on
+  their own against this receipt's own targets. *It does not go red because `P18` was reworded.*
+- **⑬ BOTH ARMS ARE EXERCISED ON EVERY RUN**, not merely available: the locator is run against a
+  synthetic text that does **not** contain the sentence and asserted to report absent, and against the
+  real file and asserted to report found. **A disjunction whose second arm is never taken is a pin
+  wearing a disjunction's clothes** — this seat's own recurring lesson in its newest form.
+- **⑭ AND THE TWO KEYS ARE ADJUDICATED** in `corpus/quote_pin_baseline.tsv`, flagged `ALT` with
+  verdict `ALT-OK`, each row stating what was read and why the disjunction is the right shape — not
+  recorded as an exemption, which is what that file's own header forbids.
+
+⇒ **The reachable negative is that the repair is unnecessary — that a hard pin on 69's sentence is
+acceptable because the sentence is stable. It is not: it was re-stated at `r7653`, one revision before
+this one.**
+
+**Running total of this seat's own rule conditions corrected by measurement rather than by reading,
+across `r7648`, `r7650`, `r7652` and `r7654`: fifteen.**
