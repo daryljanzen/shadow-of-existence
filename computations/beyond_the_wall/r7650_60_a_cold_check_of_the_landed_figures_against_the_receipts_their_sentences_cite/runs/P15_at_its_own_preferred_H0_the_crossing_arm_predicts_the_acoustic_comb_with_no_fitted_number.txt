@@ -1,0 +1,173 @@
+
+RECEIPT -- P15: ** THE CROSSING ARM, WITH NO PIN, AT THE (H0, Om) ITS OWN RULER PREFERS, PUTS THE
+ACOUSTIC COMB AT 298.0 AGAINST THE SKY'S 298.4 -- 0.13% -- AS AN OUTPUT.  P1/P2 = 2.264 AGAINST
+2.217, P1/P3 = 2.298 AGAINST 2.277, AND THE GAP RATIOS AT 0.8861 AND 1.1286 AGAINST 0.8812 AND
+1.0966.  ** chi^2 IS 4.19 PER BIN AGAINST THE CONTROL'S 2.10, WHERE THE CODED ARM IS 118.44. **
+
+** ⇒ AND NO NUMBER IN THE SPECTRUM IS FITTED. **  The onset is forced -- the handover is at the
+crossing, so there is nothing to solve -- `LATARG` is not used, and (H0, Om) = (68.60, 0.2973) come
+from the DESI DR2 BAO + theta_* joint fit of r6760+cc66.2, not from TT.  ** The spectrum is
+out-of-sample against the data that set the cosmology. **
+
+⛔ ** IT IS STILL REJECTED AGAINST LCDM, 4.19 PER BIN AGAINST 2.10, AND THAT IS STATED AS THE
+RESULT AND NOT AS A CAVEAT. **  What has changed is the size of the gap: a factor 2.0, where the
+corpus's own configuration is a factor 56 and the same crossing arm at H0 = 73 is a factor 17.
+
+Built r6760+cc66.7 (node 66, code seat), on `PO-13`, at node 66 (chat seat)'s work order:
+"THE CROSSING ARM, NO PIN, AT H0 = 68.6 ... on that branch the comb should land on the sky's 298.4
+as an OUTPUT, not a fit."
+
+===================================================================================================
+** WHAT IS SELF-CONSISTENT ABOUT THIS CONFIGURATION, STATED BEFORE ANY NUMBER **
+===================================================================================================
+
+Three choices, each made for its own reason and none for this one:
+
+  ** THE HANDOVER AT THE CROSSING ** -- the branch point, where aH diverges and every mode is
+  super-horizon, so the adiabatic datum is the correct one there (r6760+cc66.1).
+  ** ONE CLOCK, THE LEAF CLOCK ** -- node 66 (chat)'s adjudication, for r_s and r_D together,
+  because `sec:coherence`'s own consistency demand forbids splitting them.
+  ** H0 = 68.60, Om = 0.2973 ** -- what the leaf ruler's joint DESI BAO fit returns, with theta_*
+  alone returning 68.55 independently (r6760+cc66.2).
+
+*The corpus runs the arm at H0 = 73.00, Om = 0.3066 -- the local distance-ladder value -- on a ruler
+that prefers 68.6.  ** This receipt asks what the arm says when it is run at its own ruler's
+answer. **  The three choices were made in three separate places for three unrelated reasons; that
+they land together is the result.*
+
+  PART 1  ** THE COMB, THE PHASE AND THE PEAKS. **  Against the sky and against the control.
+  PART 2  ** THE HEIGHTS AND THE GAP RATIOS. **
+  PART 3  ** THE LIKELIHOOD, BY BAND. **
+  PART 4  ** BOTH INSTRUMENT PATHS, ** because they are not interchangeable and the paper's own
+          height numbers are polarisation-path numbers.
+  PART 5  ** WHAT IS NOT FITTED, ITEMISED, ** since the whole claim rests on it.
+  PART 6  ** AND WHAT IS STILL WRONG. **
+
+** COMPUTES: nothing.  *** It reads spectra already produced and scores them; every parameter is
+   baked into the .npz it reads.  The runs are `ARM=cr CRH0=68.6 CROM=0.2973 ZSTART=3e7
+   LEAFSCALES=1 LSTEP=2 LMAXL=1300`, with `HIER=1` for the polarisation path and absent for the
+   fluid path.  The comb fit has no parameter and the likelihood fits one amplitude in closed
+   form. *** **
+
+
+================================================================================================================
+  PART 1 -- ** THE COMB, THE PHASE AND THE PEAKS **
+================================================================================================================
+                       configuration  l_A rep                      peaks  fitted comb   phi/pi   l1/lA
+                      control (LCDM)    301.4      [220, 536, 814, 1128]        297.0  -0.2379  0.7407
+         the arm as coded, H0 = 73.0    301.6      [206, 528, 832, 1196]        313.0  -0.3323  0.6581
+                 crossing, H0 = 73.0    172.8      [216, 522, 788, 1094]        286.0  -0.2214  0.7552
+           ** crossing, H0 = 68.6 **    302.9      [222, 538, 818, 1134]        298.0  -0.2349  0.7450
+                      run 1, the pin    301.6      [214, 520, 784, 1092]        285.0  -0.2246  0.7509
+                             THE SKY    301.7 [220.4, 537.7, 817.3, 1123.9]        298.4  -0.2405  0.7385
+
+  ⌗ the comb is off by 0.15%, against 4.2% at H0 = 73 and 4.9% as coded
+  ⌗ and the RULER and the SPECTRUM now nearly agree: reported l_A = 302.9 against a fitted comb of 298.0, 1.6%
+    *at H0 = 73 the same two were 172.8 and 286.0, 40% apart -- so this is not bookkeeping agreeing with itself*
+
+================================================================================================================
+  PART 2 -- ** THE HEIGHTS AND THE GAP RATIOS **
+================================================================================================================
+                       configuration    P1/P2   vs sky    P1/P3   vs sky    g2/g1    g3/g2
+                      control (LCDM)    2.195    -1.0%    2.191    -3.8%   0.8797   1.1295
+         the arm as coded, H0 = 73.0    1.759   -20.7%    1.612   -29.2%   0.9441   1.1974
+                 crossing, H0 = 73.0    2.250    +1.5%    2.150    -5.6%   0.8693   1.1504
+           ** crossing, H0 = 68.6 **    2.264    +2.1%    2.298    +0.9%   0.8861   1.1286
+                      run 1, the pin    2.603   +17.4%    2.539   +11.5%   0.8627   1.1667
+                             THE SKY    2.217             2.277            0.8812   1.0966
+
+================================================================================================================
+  PART 3 -- ** THE LIKELIHOOD, BY BAND **
+================================================================================================================
+                       configuration      chi2    /bin    100-400    400-700   700-1000  1000-1300
+                      control (LCDM)     279.4    2.10       0.77       1.44       2.62       3.73
+         the arm as coded, H0 = 73.0   15752.0  118.44     144.82      22.50      77.89     248.50
+                 crossing, H0 = 73.0    4723.2   35.51       7.01       8.11      85.89      47.79
+           ** crossing, H0 = 68.6 **     556.7    4.19       1.70       2.22       4.23       9.29
+       ** the same, ARM OF RECORD **     584.0    4.39       2.11       1.90       6.70       8.74
+                      run 1, the pin    7157.8   53.82      21.69       9.52     133.64      80.14
+
+  ⇒ ** EVERY BAND IS WITHIN A FACTOR 2.5 OF THE CONTROL'S, ** the
+  700-1000 band included -- and that band is the one that survived the crossing handover, the
+  equality scan and the pin alike.  It goes 85.9 -> 4.23 per bin here.
+
+          band    control   namesake  arm of record      change
+       100-400   0.765826   1.700203       2.105510   +23.8387%
+       400-700   1.436731   2.222014       1.904985   -14.2676%
+      700-1000   2.620049   4.228463       6.702414   +58.5071%
+     1000-1300   3.725004   9.293875       8.736422    -5.9981%
+     TOTAL/bin   2.100902   4.185607       4.390895    +4.9046%
+
+  ⛔⛔ ** AND THE RE-POINT REDISTRIBUTES THE COMB RATHER THAN SCALING IT. **  The TOTAL moves +4.90 per cent
+     while the four quarters move +23.84, -14.27, +58.51 and -6.00 per cent --
+     UP, DOWN, UP, DOWN.  *So "the arm of record is about five per cent worse over these bins" hides a
+     reorganisation an order of magnitude larger than itself, and the band that moves most is the
+     700-1000 one -- the band that survived the crossing handover, the equality scan and the pin alike.*
+
+================================================================================================================
+  PART 4 -- ** BOTH INSTRUMENT PATHS, EACH AGAINST ITS OWN-PATH CONTROL **
+================================================================================================================
+                                                      peaks    comb    P1/P2    P1/P3  chi2/bin
+      POLARISATION: control LCDM      [220, 536, 814, 1128]   297.0    2.195    2.191      2.10
+   POLARISATION: arm, H0 = 68.60      [222, 538, 818, 1134]   298.0    2.264    2.298      4.19
+   POLARISATION: arm, H0 = 68.62      [222, 538, 818, 1134]   298.0    2.264    2.297      4.16
+      FLUID:        control LCDM      [220, 530, 812, 1122]   296.0    2.392    2.766     22.76
+   FLUID:        arm, H0 = 68.60      [220, 530, 816, 1126]   298.0    2.448    2.934     32.66
+   FLUID:        arm, H0 = 68.62      [220, 530, 816, 1126]   298.0    2.448    2.933     32.68
+                         THE SKY [220.4, 537.7, 817.3, 1123.9]   298.4    2.217    2.277        --
+
+  ** THE FLUID PATH'S HEIGHT OVERSHOOT IS THE PATH'S, NOT THE ARM'S. **  The LCDM CONTROL on the
+  fluid path returns 2.392/2.766 against the sky's 2.217/2.277 --
+  +7.9% and +21.5% -- and its chi^2 is
+  22.76 per bin against the polarisation control's 2.10.
+  *So a fluid row scored against the polarisation control was charging the path to the arm.*
+
+  ** AGAINST ITS OWN-PATH CONTROL THE ARM SITS THE SAME DISTANCE ON BOTH: **
+      polarisation   P1/P2 +3.1%   P1/P3 +4.9%   chi^2 x2.0
+      fluid          P1/P2 +2.4%   P1/P3 +6.0%   chi^2 x1.4
+  ⇒ *** The comb is path-proof AND the arm-to-control height OFFSET is path-robust.  What is
+  path-specific is the ABSOLUTE height, which both arms and both controls carry alike. ***
+  *That is a weaker caveat than the one r6760+cc66.7 stated, and it is weaker because the control
+  that settles it had not been run.*
+
+  ⌗ ** AND H0 = 68.62, THE VALUE ACTUALLY ORDERED, CONFIRMS 68.60 TO EVERY DIGIT THAT MATTERS: **
+  the same four peaks on both paths, comb 298.0, P1/P2 2.264, P1/P3 2.297.
+
+================================================================================================================
+  PART 5 -- ** WHAT IS NOT FITTED, ITEMISED **
+================================================================================================================
+
+  ** z_onset ** -- not solved.  The handover is at the crossing, `ZSTART=3e7`, and `LATARG` is
+     never reached: `brentq` does not run.  *The corpus calls z_onset "the one fitted number";
+     this configuration does not spend it.*
+  ** l_A **      -- not pinned.  It is REPORTED as pi D_M / r_s and comes out 302.9; the comb is
+     fitted to the spectrum's own peaks and comes out 298.0.  Two independent quantities, 1.6%
+     apart.
+  ** A_s **      -- one amplitude, fitted in closed form by the likelihood, as for every arm and
+     the control alike.  *That is the only fitted number anywhere in these rows.*
+  ** H0, Om **   -- (68.60, 0.2973) from DESI DR2 BAO on the leaf ruler with theta_*, r6760+cc66.2.
+     ⚠ *These ARE fitted -- to BAO and the acoustic angle, not to TT.  So the cosmology is not
+     parameter-free; what is out-of-sample is the SPECTRUM against the data that set it.*
+
+================================================================================================================
+  PART 6 -- ** AND WHAT IS STILL WRONG **
+================================================================================================================
+
+  ⛔ ** 4.19 PER BIN AGAINST THE CONTROL'S 2.10. **  A factor
+  2.0.  *That is the result, not a caveat on it: this construction is still
+  disfavoured against flat LCDM on this data.*  What changed is the SIZE: the coded arm is a factor
+  56 and the same crossing arm at H0 = 73 is a factor 17.
+
+  ⌗ ** THE PHASE IS THE LARGEST SURVIVING POSITION ERROR: ** -0.2349 pi against the
+  sky's -0.2405 pi, 2.3%, where the comb is 0.15%.
+  *`sec:refit-bound`'s standing finding is that the spacing is right and the acoustic phase is the
+  disagreement; on this configuration that is still true, and it is now the ONLY thing left in the
+  positions.*
+
+  ⌗ ** AND THE CONFIGURATION IS THE 133-BIN UNLENSED ONE AT LMAXL = 1300. **  The corpus's own
+  185-bin full-range lensed comparison needs ell ~ 2000 and is not run here.  *A number scored on
+  one configuration may not be quoted against the other.*
+
+================================================================================================================
+  ✓ ALL CHECKS PASSED
+================================================================================================================

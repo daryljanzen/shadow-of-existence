@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/home/user/shadow-of-existence/receipts/P15_CR_cosmology/P15_the_licensed_rebuild_leaves_all_three_rigidity_numbers_where_they_were_and_the_forbidden_one_puts_the_arm_on_the_controls_own_floor.py", line 53, in <module>
+    import rigidity as R                                                    # noqa: E402
+    ^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/shadow-of-existence/computations/beyond_the_wall/r7091_70_fit_rigidity/rigidity.py", line 44, in <module>
+    import camb
+ModuleNotFoundError: No module named 'camb'

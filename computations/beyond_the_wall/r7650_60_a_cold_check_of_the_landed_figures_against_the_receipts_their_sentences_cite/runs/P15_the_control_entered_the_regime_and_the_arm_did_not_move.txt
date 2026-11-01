@@ -1,0 +1,95 @@
+
+⌛ HISTORICAL (r7637+70, 69's ruling): THIS RECEIPT READS A SUPERSEDED INSTRUMENT STATE, DELIBERATELY.
+Its CR spectra are the c54-era runs: the arm at the instrument's old built-in point (H0 73, Omega_m 0.3066) with
+the onset solved to ell_A 301.6, at KFAC=1 and LEAFREC=0.  The corpus has superseded that state twice -- the pin,
+then the leaf rate -- and the arm of record is LEAFREC=1 at H0 68.5707, Omega_m 0.291246 (r7633).  The same forms
+on the arm of record are banked as `<stem>_leafrec1.npz` (r7635), and their figures are in
+`computations/beyond_the_wall/r7635_70_leafrec1_bank/DRYRUN.md`; they are NOT what this receipt pins.  What it
+pins is a record of that instrument, and a sentence of P15 may cite it only for that.  The guard below fails
+if a CR file it reads is not the LEAFREC=0 namesake.
+
+RECEIPT -- P15: ** THE WAVENUMBER TRUNCATION WAS 78% OF THE CONTROL'S REMAINING chi^2, AND REMOVING
+IT TAKES THE CONTROL TO chi^2/dof = 1.18 OVER THE FULL RANGE AGAINST A REFERENCE LambdaCDM'S 1.01 --
+SO FRONT #2's TARGET IS MET AND NO NAMED SECTOR REMAINS.  ACROSS FOUR INSTRUMENT STATES THE CR ARM
+DID NOT MOVE, AND `L-147`'s PRE-REGISTERED F4 FIRES WITH THE ABSOLUTE COMPANION ITS OWN F6
+CORRECTION DEMANDED. **
+
+Built r2441+c54.186, front #2, lead `L-500`.
+
+===================================================================================================
+** WHY THIS EXISTS: THE CONDITION c54.172 WROTE FOR REOPENING `L-147` HAS BEEN MET. **
+===================================================================================================
+
+`L-147` was answered at c54.172 with "the likelihood CANNOT ARBITRATE", and the reason was stated in
+that file's own F6: ** F4 is a RATIO test and never asks whether the instrument's floor F2 is small
+in ABSOLUTE terms.  It was not -- the control arm sat at chi^2/dof ~ 100. **  The row's closing line
+named what would change it: *"a transfer with sub-per-cent-height control -- front #2's work."*
+
+** FRONT #2 HAS NOW DELIVERED THAT, AND THIS FILE IS THE MEASUREMENT. **  *The reopening condition
+was written before the answer was known, which is the only footing on which a result this
+consequential may be read at all.*
+
+  PART 1  ** WHERE THE CONTROL'S REMAINING chi^2 ACTUALLY LIVES, AND IT IS NOT SPREAD. **  After
+          c54.183's derived lensing the control sits at 989 over 185 bins.  ** 726 of that 989 --
+          73% -- is in the 30 bins above ell = 1500, which is 16% of the bins. **  *So c54.184's
+          "53% in neither template set" is not a mystery shape distributed over the spectrum.*
+  PART 2  ** AND IT IS THE WAVENUMBER TRUNCATION -- WHICH IS SHOWN BY REMOVING IT RATHER THAN BY
+          ARGUING FOR IT. **  The instrument builds its k-grid as k = ell/D_M with ell <= LMAXL, so
+          the HIGHEST output multipole has no k-headroom at all -- while C_ell draws on every k with
+          k D_M >= ell.  ** Re-run at LMAXL = 3000 with the k-SPACING HELD FIXED and scored on the
+          SAME bins, the control goes 989 -> 218, chi^2/dof 5.34 -> 1.18, and the last band's ratio
+          to the reference goes 0.42 -> 0.99. **  *c54.178 named the starvation and reported a
+          restricted-range number for it; what is new here is that it was the whole of the tail.*
+          ⇒ ***FRONT #2's TARGET IS MET: the control is within 17% of a true LambdaCDM fit's chi^2
+          over ell = 100-1996, and the last item on the front's own list is struck as numerical.***
+  PART 3  ** THE CR ARM'S k-LADDER, WAIVED BY THE ALIAS GATE ON A CLAIM SINCE c54.178, IS CHECKED
+          IN chi^2 HERE FOR THE FIRST TIME -- AND THE WAIVER WAS RIGHT. **  The gate demands 4
+          samples per Bessel period and the CR ladder has 2.3; it passes itself with the note *"this
+          is not aliasing -- but it is only not aliasing if the answer does not depend on it. Run
+          KCONT=1 to check."*  ** Run at KCONT=1 (1800 continuum modes, 5.7 per period, against the
+          ladder's ~725) the spectra agree to better than 0.7% everywhere and the chi^2 to 2.1 in
+          51817. **  *That check had been run for the PEAK POSITION and never for the statistic this
+          file reads.*
+  PART 4  ** THE INSTRUMENT WAS IMPROVED FOUR TIMES.  THE CONTROL FOLLOWED THE SKY BY A FACTOR OF
+          EIGHTEEN AND THE CR ARM MOVED BY 5%. **  Over the full range, both arms carrying the same
+          lensing operator: the control 21.2 -> 27.7 -> 5.34 -> 1.18 across c54.175 (fluid, 8/9),
+          c54.177 (fluid, derived 16/15), c54.178 (the polarised hierarchy) and c54.186 (the same
+          with the wavenumber range opened); the CR arm 290.7 -> 304.2 -> 298.9 -> 302.1.  ** That
+          is the signature F4's second clause is written to detect, and it is stronger than any
+          single build's number. **
+  PART 5  ** SO F4 FIRES, AND BY THREE ORDERS OF MAGNITUDE RATHER THAN THE ONE IT ASKS FOR. **  F2 = chi^2(arm) - chi^2(CAMB) and F3 = chi^2(CR) - chi^2(arm), both as `L-147`
+          defines them, and both arms carried at the SAME wavenumber range so that the construction
+          is not charged for the instrument's truncation -- which is the mistake F3 exists to avoid.
+
+** WHAT THIS IS AND IS NOT, AND F5 IS NOT SOFTENED HERE. **  `L-147`'s F5 says a negative is a
+MEASUREMENT DISCREPANCY and not a framework verdict, and that `PO-7` is protected precisely here.
+** This file reports a number and does not convert it.  the conversion runs by `F5`'s stated procedure. **  *And the
+number is not new physics: the corpus has carried ell_1/ell_A = 0.5703 against the sky's 0.7312 --
+a 22% deficit -- since c54.168, stated in P15's own text at 21.9%.  What is new is that there is now
+a control good enough for that deficit to be read through a likelihood instead of through a ratio.*
+
+** THE TWO THINGS THAT WOULD UNDO IT, WRITTEN DOWN SO THEY CAN BE TESTED RATHER THAN ARGUED. **
+  (a) ** an unequal comparison. **  If the control were carried at a wavenumber range the CR arm was
+      not, F3 would charge the construction for the instrument.  *Both arms are run at LMAXL = 3000
+      here and scored on identical bins; PART 5 reports the restricted range as well, where the
+      question does not arise because both arms have headroom.*
+  (b) ** a defect the instrument's states SHARE. **  PART 3 removes the largest named candidate.
+      What is NOT ruled out is something upstream of all of them -- and the honest form of that
+      worry is that 0.5703 has never once moved across eight instrument states, which is evidence
+      either of a robust prediction or of a shared upstream constant.  *This file cannot separate
+      those and does not claim to.*
+
+SETTINGS: mixed, and the mixture is the point.  PARTS 1 and 3-5 read the LMAXL=2000 banked
+pair (reduced vs production 3000); PART 2 reads the LMAXL=3000 pair and is what SHOWS the 2000 runs
+were starved.  AT PRODUCTION: every chi^2 quoted from the 2000 pair is 78% truncation artefact and
+the file says so in PART 2 rather than leaving it to the reader -- ** the reduced numbers are
+reported here as the THING BEING CORRECTED, not as measurements. **  *The one figure taken from the
+2000 pair as a measurement is the SHELL LOCATION of the residual, which is what sent PART 2 looking
+and does not depend on the tail being right.*
+
+
+Traceback (most recent call last):
+  File "/home/user/shadow-of-existence/receipts/P15_CR_cosmology/P15_the_control_entered_the_regime_and_the_arm_did_not_move.py", line 133, in <module>
+    import camb                                                                # noqa: E402
+    ^^^^^^^^^^^
+ModuleNotFoundError: No module named 'camb'

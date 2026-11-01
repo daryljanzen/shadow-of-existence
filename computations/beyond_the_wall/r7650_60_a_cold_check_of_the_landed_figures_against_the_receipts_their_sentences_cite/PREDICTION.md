@@ -82,3 +82,58 @@ a third time as a result.*
 re-derive any physics: the comparison is between what the paper prints and what the cited receipt's
 own output says. A figure that reproduces here is one the receipt computes, **not** one that is
 thereby correct.
+
+---
+
+# ⛔ AMENDMENT `r7650+60.1` — REGISTERED BEFORE THE BLOCKED HALF IS RE-RUN, AND BEFORE ANY RESULT IS PRODUCED
+
+**The first pass found that the cold check cannot be run as specified in this container, and the
+reason is not the corpus's.** Of the first `21` cited receipts run, **`9` die on
+`ModuleNotFoundError: No module named 'camb'`** — among them
+`…the_licensed_rebuild…` (cited for *"level with the control's own value"*, one of the three the
+order says to test hardest), `…the_controls_base_log…`,
+`…the_full_range_lensed_comparison…`, `…the_full_range_refit…` and
+`…the_no_fit_confrontation…`. They produce partial output and then stop.
+
+⛔ **So their figures would read ABSENT for a reason that has nothing to do with the landing, and
+reporting that as a MIS-CITATION would be false.** The registered verdicts did not cover *ran, but
+crashed before computing* — they must, and the correction is restrictive:
+
+- **`INCONCLUSIVE (container)`** — the receipt stopped on a missing dependency. Its figures are
+  **not judged** and are counted in their own row, never as `ABSENT` and never as a mis-citation.
+- `MIS-CITATION` is reserved for a receipt that **completes** and does not print its sentence's
+  figure. *A wrong address and an unavailable instrument are different findings; conflating them
+  would manufacture the very defect arm ④ predicted.*
+
+## ⚑ AND THE CAUSE IS WORTH MORE THAN THE WORKAROUND: THE VERIFIED ENVIRONMENT HERE IS INCOMPLETE
+
+`requirements-ci.txt` — *"the environment the corpus's float comparisons are verified on"* — **pins
+`camb==2.0.4`**, with its own comment saying camb is pinned *"because it computes the spectra the
+whole acoustic sector measures on"*. This container's pinned interpreter has **python 3.11.17,
+numpy 2.4.6, scipy 1.17.1 and no camb at all.** The only interpreter here that has camb has
+**2.0.5**, beside **numpy 2.5.3 and scipy 1.18.1** — three libraries off the pin, which is the
+`ENV_FINGERPRINT` event itself and would answer a different question.
+
+⇒ **The remedy is to COMPLETE the pinned environment, not to move it**, and it is registered here
+with its verification before it is done:
+
+- install **exactly** `camb==2.0.4`, the version `requirements-ci.txt` names, with **`--no-deps`**, so
+  nothing can drag `numpy` or `scipy`;
+- then **verify, and report whatever comes back**: `camb.__version__ == 2.0.4`; python, numpy and
+  scipy unchanged at `3.11.17 / 2.4.6 / 1.17.1`; and `check_env_fingerprint` **green**;
+- **if any of those fails, the install is reverted and the blocked receipts stay
+  `INCONCLUSIVE (container)`.** *Installing the pinned version is restoring the declared state;
+  installing anything else, or letting a dependency move, is the event the gate exists to catch. The
+  difference is the version number and the `--no-deps`, and both are checked rather than asserted.*
+
+**Registered arms for the amendment:**
+
+- ⑥ **`camb==2.0.4` installs with `--no-deps` and moves nothing else**: numpy, scipy and python all
+  read exactly as before, and `check_env_fingerprint` is green afterwards.
+- ⑦ **The blocked receipts then run**, and at least `7` of the `9` complete.
+- ⑧ **The three hardest claims become checkable**, `…the_licensed_rebuild…` among them, so arm ③ is
+  read on a run rather than left `UNRUN`.
+- ⑨ ⌗ **And the container finding is reported to 69 whatever the install does**, because it is the
+  more useful half: *a cold check of the landed figures is not runnable on a verified environment
+  that is missing one of its own pinned dependencies*, and the next seat asked to check these
+  figures will meet the same wall.

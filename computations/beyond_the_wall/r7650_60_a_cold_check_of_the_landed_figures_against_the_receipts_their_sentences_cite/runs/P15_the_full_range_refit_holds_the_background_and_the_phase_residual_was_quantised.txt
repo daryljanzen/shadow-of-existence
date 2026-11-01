@@ -1,0 +1,94 @@
+
+RECEIPT -- P15 / `sec:refit-bound`: ** THE $185$-BIN FULL-RANGE REFIT, ON THE ARM OF RECORD -- AND
+THE FINDING HALF INVERTS.  $H_0$ STILL HOLDS, MOVING $0.022\%$; BUT $\Omega_m$ MOVES $2.123\%$,
+SIXTY-FOUR TIMES THE "THIRTIETH OF A PER CENT" THE CORPUS CARRIES, WHERE ON THE NAMESAKE ARM IT MOVED
+$0.031\%$. **
+
+** THIS FILE'S OWN NAME SAYS THE REFIT HOLDS THE BACKGROUND.  THE NAME IS LEFT AS IT STANDS BECAUSE
+THE PAPER CITES IT, AND IT IS THE NAMESAKE ARM'S READING. **  *`r7645`+`cc66.68` re-pointed the ARM's
+grid onto `refit_grid185_leafrec1_distances/` -- `refit_grid185/launch.sh` verbatim with `LEAFREC=1`:
+the same distances' point $(68.60, 0.2973)$ with the built-in $\omega_b$ and $n_s$, the same nine runs,
+the same launcher steps.  The CONTROL's grid does not move, and does not need to: r7641 measured
+`LEAFREC`'s reach into the control at $3.6\times10^{-16}$.  The arm's own starting point does not move
+either -- `refit_grid185_leafrec1_distances/cr_base` carries $D_M = 14011.4567$, $\ell_A = 302.8891$
+and $r_s = 145.3281$ BIT-IDENTICALLY to the namesake's, because `LEAFREC` does not touch the
+background.  What moves is the spectrum the fit is run on, and the minimum it finds.*
+  ⇒ *So the half of the corpus sentence that is about $H_0$ survives and the half about $\Omega_m$
+  fails.  `CR_framework.tex:1863` and `CR_synthesis.tex:1553` both say the arm's "expansion rate and
+  matter density stay where the baryon-acoustic distances put them, to under a thirtieth of a per
+  cent"; on the arm of record the expansion rate does and the matter density does not.  Routed to
+  node 69 in `FOR_69.md` with the replacement figures, because the landing set is 69's to land as one
+  unit.*
+
+** ⇒ AND TWO FURTHER GATES OF THIS RECEIPT TURN, EACH A MEASUREMENT RATHER THAN A TOLERANCE. **
+  ⓵ ** THE RESPONSE MODEL NO LONGER PREDICTS ITS OWN MINIMUM. **  It says $284.9$ and the real run at
+  those parameters returns $297.7$ -- a miss of $+12.1$ where the namesake's was $-0.0$.  *The reason
+  is nameable rather than mysterious: $n_s$ moves $+2.57$ grid steps on the arm of record against
+  $+1.65$ on the namesake, and the stencil's quadratic is built on $\pm1$.  The gate is kept and
+  INVERTED -- it now asserts the miss, two-sided, and asserts the step count that explains it, so a
+  stencil rebuilt wide enough to recover agreement fails here and has to be read.*
+  ⓶ ** AND ON THE RAW LOCATOR THE TWO ARMS NO LONGER RETURN THE SAME PHASE RESIDUAL **, the control's
+  $4.5\%$ against the arm's $0.7\%$, because the arm of record's raw second peak falls in the $532$
+  bin where the namesake's fell in $540$ -- the bracketing-bin coin flip measured at `cc66.68` in
+  `P15_the_locator_is_good_to_three_hundredths_and_the_fourth_peaks_residual_is_the_controls_too`,
+  where the $\ell_2$ bins agree to $0.011$ per cent against $\ell_3$'s $0.066$.  *** THE CLAIM
+  SURVIVES AND THE ARGUMENT FORM DOES NOT. ***  *That `cc66.18`'s $4.5\%$ is the grid is now carried
+  by the CONTROL alone, which goes $4.5\%$ raw to $1.6\%$ refined on one spectrum, and by the arm's
+  own swing in the other direction, $0.7\%$ to $3.7\%$.  Two spectra each moving five-fold under a
+  change of locator is the same evidence as two spectra agreeing; what is withdrawn is "both arms
+  return the same number", not "the number measures the grid".*
+
+** ⇒ AND ONE NUMBER THIS LINE LANDED AT `cc66.18` IS CORRECTED HERE. **  The $132$-bin receipt
+reported the acoustic phase going "$2.3\%\to4.5\%$ out, WORSE".  *That $4.5\%$ was read from a peak
+locator quantised to the spectrum's own $\ell$ sampling -- `LSTEP=8` -- and at that resolution ** the
+CONTROL returns the same $4.5\%$ **, so the number could not distinguish the arms, the ranges, or
+anything else.*  With the peaks refined sub-grid (validated below against an `LSTEP=1` spectrum to
+$0.13$ in $\ell$) the crossing arm sits at ** $3.7\%$ on $185$ bins on the arm of record ($3.4\%$ on
+the namesake) and $3.1\%$ on $132$ ** against ** the control's $1.6\%$ **.  *** The verdict survives -- freedom does not close the phase and the arm
+carries about twice the control's residual -- but it survives on different numbers, and the ones the
+corpus is carrying are quantisation. ***
+
+Built r6825+cc66.25 (node 66, code seat), discharging order ① of the chat seat's `r6801`
+("run the 185-bin refit ... whether the background still sits where the distances put it when the
+damping tail is in the fit") and reporting the correction its follow-up forced.
+
+===================================================================================================
+** WHAT WAS RUN, AND WHAT IS READ RATHER THAN RUN **
+===================================================================================================
+
+An 18-run derivative grid at `LMAXL=2000`, `LSTEP=8`, `KFAC` at the corpus default $2.0$: a base and
+two-sided steps in $H_0$, $\Omega_m$, $\omega_b$ and $n_s$ on each arm, giving the gradient and the
+diagonal curvature, with the amplitude closed-form at every evaluation.  ** Each run carries $2547$
+$k$-modes against the $132$-bin grid's $1656$ ** -- four hours of wall clock at four at a time.
+
+  ** THE GRID AND THE VERIFICATION SPECTRA ARE READ, NOT PRODUCED. **  They are banked at
+  `computations/beyond_the_wall/refit_grid185/` for the control (with the launcher, the fit driver
+  and the verification script beside them), `computations/beyond_the_wall/
+  refit_grid185_leafrec1_distances/` for the arm, and at `spectra/cc66_r185_verify_lcdm.npz` and
+  `spectra/cc66_r185_verify_cr_leafrec1.npz`.
+  ⛭ ** ARM KEYS READ: ** no key suffix is involved here -- the arm is selected by DIRECTORY and by
+  FILE STEM, and both are named in `GRIDS` and `_VER` below, once each.  *The sibling banks that
+  carry `__cr` and `__cr_leafrec1` side by side are the geometry family, not this one; `cc66.68`
+  found that reading `__cr` out of one of those returns the namesake silently.*  *Every
+  parameter is inside the `.npz`; this file re-does the fit, the scoring and the peak analysis on
+  them, and asserts the numbers rather than quoting them.*
+
+  ** tau IS NOT A DIRECTION OF THIS FIT AND THAT IS MEASURED, NOT ASSUMED. **  With no reionisation
+  modelled, $e^{-2\tau}$ is a constant on $\ell\ge100$ and is exactly degenerate with $A_s$
+  (r6760+cc66.14: $\chi^2$ identical to $10^{-6}$ across $\tau=0$--$0.15$).  *So the fit has four
+  directions plus an amplitude, not the six the abstract counts.*
+
+** COMPUTES: both arms refitted like-for-like on the same 185 bins, ell = 100-1996, with P15's
+   derived CAMB lensing operator imposed on both; the minimum located on the response model and
+   then VERIFIED by real LMAXL=2000 runs at the best-fit parameters; every parameter
+   flatness-tested against a one-step excursion; and the two follow-ups recomputed with a peak
+   locator whose resolution is measured rather than assumed.  *** Nothing is tuned: the steps are
+   the same as the 132-bin grid's, the lensing operator is LCDM's and is imposed on both arms
+   alike, and the amplitude is the only closed-form freedom. ***
+
+
+Traceback (most recent call last):
+  File "/home/user/shadow-of-existence/receipts/P15_CR_cosmology/P15_the_full_range_refit_holds_the_background_and_the_phase_residual_was_quantised.py", line 140, in <module>
+    import camb                                                            # noqa: E402
+    ^^^^^^^^^^^
+ModuleNotFoundError: No module named 'camb'

@@ -1,0 +1,163 @@
+
+RECEIPT -- P15: ** THE CONTROL'S BASE LOG IS NOW BANKED BESIDE THE GRIDS, AND WITH IT THE PEAK-HEIGHT
+CELL IS A SIGN RATHER THAN AN EMPTY ONE -- A CONCORDANT SIGN.  THE FORBIDDEN CONFIGURATION'S HEIGHTS
+ARE THE CONTROL'S OWN, AT 0.18 ON TWO DEGREES OF FREEDOM IN THE DATA'S OWN UNITS, WHICH IS A FOURTH
+STATISTIC SAYING WHAT chi^2, THE CROSSINGS AND THE LONGEST RUN ALREADY SAID. **
+
+*** AND THE STATISTIC THAT FILLS THE CELL ALSO SAYS IT COULD NEVER HAVE BEEN A CONTRARY SIGN: ALL
+FOUR ARMS SIT INSIDE 1.1 ON TWO DEGREES OF FREEDOM AGAINST THE SKY'S OWN PEAK-HEIGHT RATIOS, SO THE
+HEIGHTS CANNOT SEPARATE ANY CANDIDATE FROM THE DATA OR FROM EACH OTHER. ***
+
+Built r7109+cc66.84 (node 66, code seat), answering `r7109` ⓶.
+
+===================================================================================================
+** WHAT WAS MISSING, AND IT WAS NOT AN OVERSIGHT **
+===================================================================================================
+
+`70`'s three-grid audit (`r7101_70_three_grid_audit/audit_log.txt`) closes on exactly this blank:
+
+    peak structure printed by the instrument at each arm's base (line-of-sight, hierarchy):
+      licensed  peaks at l = [220, 532, 812, 1132]   l_1/l_A = 0.7263   P1/P2 = 2.283 ...
+      forbidden peaks at l = [220, 540, 812, 1132]   l_1/l_A = 0.7300   P1/P2 = 2.199 ...
+    (the control's base has no log banked beside the grids; its peak ratios are not compared here)
+
+** The control had no log because both grid launchers COPY the control's nine spectra from
+`refit_grid185/` instead of re-running them. **  `LEAFGEOM` and `LEAFREC` are provable no-ops on the
+control -- `Hleaf` and `Hphys` are character-identical when radiation is in the rate -- and the copy
+was verified bit-identical.  *A copy carries the `.npz` and not the stdout, and the peak table is
+printed to stdout.*  So the blank was a property of the copy, not of the measurement.
+
+===================================================================================================
+** AND WITHOUT THAT ROW, ONE READING OF THE HEIGHTS COULD NOT BE TOLD FROM ITS OPPOSITE **
+===================================================================================================
+
+With the arm's two logs alone, `P1/P2 = 2.199` forbidden against `2.283` licensed reads as the
+forbidden configuration's heights being *better* -- nearer the `2.217` the instrument prints on the
+line beneath.  ** But the three rigidity statistics say the forbidden configuration IS the control:
+chi^2 184.989 against the control's 186.007, crossings 91 against 87, longest run 8 against 8. **  So
+`2.199` has two possible meanings and the banked set could not choose between them:
+
+    (a)  the forbidden configuration's heights are BETTER than the licensed one's -- a contrary sign,
+         the heights dissenting from the other three statistics; or
+    (b)  the forbidden configuration's heights are THE CONTROL'S -- a concordant sign, the collapse
+         showing up in a fourth statistic.
+
+** IT IS (b), AND IT IS NOT CLOSE. **  The control's own base reads `P1/P2 = 2.196`, `P1/P3 = 2.190`.
+
+  PART 1  ** THE LOG IS BANKED, AND IT IS THE LOG OF THE BANKED ARTEFACT RATHER THAN OF A RE-RUN. **
+          `refit185/lcdm_base.log` is the original stdout of the run whose `.npz` IS the banked
+          `lcdm_base.npz`, md5 `5df16bcd401dcd2a624fb230313c97f7` on `refit_grid185/` and on both
+          grids.  *A re-run's log would describe a re-run; this one describes the artefact.*  Both
+          banked copies are asserted identical, and tracked -- `*.log` is ignored by default and the
+          exception is declared in `.gitignore`, which is the defect `r7099` Q1 caught last round.
+  PART 2  ** THE FOUR READINGS, RECOMPUTED AT FULL PRECISION THROUGH THE INSTRUMENT'S OWN PEAK
+          DEFINITION rather than read off three printed decimals. **  `argrelextrema(Dl, greater,
+          order=3)` on the banked `Dl`, which is the instrument's own line.
+  PART 3  ** THE DATA'S OWN PEAK-HEIGHT RATIOS, WITH THE ERROR BAR, so the cell has units. **
+          `2.2564 +- 0.0772` and `2.2800 +- 0.0737` from the published covariance's 2x2 block --
+          reproducing `P15_the_height_target_was_below_the_resolution_of_its_own_statistic` (c54.176)
+          through the same route.  ⌗ ** AND THE LINE THE AUDIT READ IS THE BARE ONE. **  The
+          instrument's non-`DSCAN` print still quotes `P1/P2 = 2.217, P1/P3 = 2.277` with no bar,
+          while its `DSCAN` print carries `2.256 +-3.4%` and `2.280 +-3.2%` -- two sky references in
+          one file.  *The bare pair is not WRONG: it is inside 1 sigma of the propagated pair, which
+          c54.176 asserts.  It is BARE, and a 0.084 difference quoted against it is a fifth of the
+          bar nobody was carrying.*
+  PART 4  ** THE CELL, IN THE DATA'S OWN UNITS: lensed, binned by the likelihood's own binning, the
+          same peak finder, the same 185-bin window, and ONE number per arm from the joint
+          covariance of the two ratios. **  A model read on its own 2-multipole grid against a sky
+          read on 185 coarse bins is not "the same units", and reading it that way is the mistake
+          this sector has now named four times.
+  PART 5  ** AND ONE RUN, which is what `r7109` ⓶ budgeted: the instrument AS IT IS NOW, at the
+          control's own settings, returns the banked control's arrays -- `ls`, `l_A`, `D_M` and `r_s`
+          BIT-IDENTICAL and `Dl` to 6.8e-15, which is the same cross-machine reduction order the
+          `DAMPX` pair showed against `r4494` (6.4e-15) and is reported as relaxed rather than
+          asserted as bit-identical. **  *The bank was built at r6801 on another machine.*  That also measures the
+          `LEAFREC` no-op live rather than inheriting it, because `LEAFREC` defaults to 1 since
+          r7095+cc66.75 and the banked control predates the flip.  *Skipped with a named reason, not
+          silently, when the run is not present -- PARTS 1-4 do not depend on it.*
+
+===================================================================================================
+** THE ANSWER TO `r7109` ⓶, IN ONE LINE EACH **
+===================================================================================================
+
+  ⓐ ** THE CELL IS A CONCORDANT SIGN. **  forbidden against the control, as a 2-dof distance in the
+     data's own units: ** 0.18 **.  licensed against the control: ** 2.83 **.  *The configuration the
+     rule licenses moves the heights; the one it forbids does not move them off the control.*
+  ⓑ ** AND THE HEIGHTS CANNOT VOTE. **  Against the sky, on two degrees of freedom: banked 0.85,
+     licensed 1.05, forbidden 0.44, control 0.59.  ** Every one of them is inside 1.1, and the two
+     ratios do not even agree on an ordering. **  ⇒ *So there was never a contrary sign available
+     here, and the apparent one came from quoting a difference a fifth of the statistic's resolution
+     against a sky number carrying no bar.*
+  ⓒ ** THE THREE RIGIDITY STATISTICS KEEP THEIR STANDING AS THE ONES WITH THE INFORMATION **, which
+     is c54.176's conclusion arriving a second time by a second route: chi^2 separates 278.79 from
+     184.99 where the heights separate 1.05 from 0.44.
+
+** COMPUTES: nothing on the instrument. ***  Every spectrum is read from a banked `.npz` and
+   scored; the parameters are the ones baked into those files -- the three grids at
+   (H0, Om) = (68.60, 0.2973) on the arm and the instrument's own (67.40, 0.3150) on the control,
+   `ZSTART=3e7`, `LEAFSCALES=1`, `KFAC=2.0`, `HIER=1 LSTEP=8 LMAXL=2000`.  *What is computed here is
+   the peak finder, the likelihood's binning and CAMB's lensing operator at the fiducial LambdaCDM
+   that operator is defined on -- none of which sets a CR parameter.*  PART 5's one run is at the
+   control's own settings, `ARM=lcdm` and nothing else, and is an independent check rather than an
+   input.
+
+SETTINGS: the banked grids as committed -- `HIER=1 LSTEP=8 LMAXL=2000`, `KFAC=2.0`, the reporting
+path.  ** The sky's error bars are a property of plik_lite and do not move with the transfer's
+depth **, which is why c54.176 could establish them at reduced settings and this file can read them
+at production.  PART 5's run is `r7109_directions/launch_control_base.sh`.
+
+
+====================================================================================================
+  PART 1 -- ** THE LOG IS BANKED, AND IT IS THE LOG OF THE BANKED ARTEFACT **
+====================================================================================================
+  all 12 inputs are tracked by git in this checkout
+                           refit_grid185/lcdm_base.npz  md5 5df16bcd401dcd2a624fb230313c97f7
+          r7093_directions/grid_oneclock/lcdm_base.npz  md5 5df16bcd401dcd2a624fb230313c97f7
+          r7095_directions/grid_licensed/lcdm_base.npz  md5 5df16bcd401dcd2a624fb230313c97f7
+  ** one file in three places, md5 5df16bcd401dcd2a624fb230313c97f7 -- so ONE log describes all three **
+  the two banked log copies are identical (md5 a3aeee178d64b2ece86237b282a4e577)
+  the log names its own output: 'saved 238 multipoles to /tmp/n66/refit185/lcdm_base.npz'
+  the audit's own words, quoted: "the control's base has no log banked beside the grids; its peak ratios are not compared here"
+
+====================================================================================================
+  PART 2 -- ** THE FOUR READINGS, AT FULL PRECISION, THROUGH THE INSTRUMENT'S OWN DEFINITION **
+====================================================================================================
+         arm               peaks at ell       l_A   l_1/l_A      P1/P2      P1/P3
+      banked      [220, 540, 820, 1132]   302.889  0.726339   2.264363   2.297540
+    licensed      [220, 532, 812, 1132]   302.889  0.726339   2.282699   2.311444
+   forbidden      [220, 540, 812, 1132]   301.380  0.729976   2.199479   2.213216
+     control      [220, 540, 812, 1132]   301.375  0.729988   2.195930   2.189782
+  ** the banked log's own printed pair, 2.196 / 2.190, is reproduced from the .npz to its three decimals **
+
+  l_A: forbidden is 0.0048 from the control in 301.375 (1.59e-05 relative); licensed is 1.5143 (5.02e-03)
+  ** so the forbidden configuration's acoustic angle is the control's and the licensed one's is 1.5 away: **
+     the heights are being read on an arm that has ALREADY collapsed in its geometry.
+
+====================================================================================================
+  PART 3 -- ** THE DATA'S OWN PEAK-HEIGHT RATIOS, WITH THE BAR, SO THE CELL HAS UNITS **
+====================================================================================================
+  the window the models cover: 185 bins, ell 104.1 to 1988.0
+  the sky's own peaks in the binned D_l: ell = [221.1, 527.0, 815.0]
+  ** P1/P2 = 2.2564 +- 0.0772 (3.42%)   P1/P3 = 2.2800 +- 0.0737 (3.23%) **   correlation +0.7323
+  *The full 3x3 block of the published covariance, propagated to both ratios at once -- so the
+   two are not treated as independent, which they are not: they share P1.*
+  c54.176's pair, 2.256 +- 0.077 and 2.280 +- 0.074, reproduced through the same route
+
+  the instrument's non-DSCAN print carries the BARE pair: True
+  its DSCAN print carries the pair WITH the bar (2.256, +-3.4%): True
+  ⚠ ** TWO SKY REFERENCES IN ONE FILE, and the audit read the bare one. **
+     P1/P2: bare 2.217 against 2.2564 +- 0.0772  -> 0.51 sigma
+     P1/P3: bare 2.277 against 2.2800 +- 0.0737  -> 0.04 sigma
+     *So the bare pair is not WRONG -- it is inside 1 sigma, which c54.176 asserts and this
+      re-asserts.  It is BARE, and that is enough to make a 0.084 difference look like a
+      sign.*  ⇒ ** Routed to the gate rather than swept: a dozen registered receipts carry
+      2.217 as SKY and the protocol is the paper's, not this seat's. **
+
+====================================================================================================
+  PART 4 -- ** THE CELL, IN THE DATA'S OWN UNITS, ONE NUMBER PER ARM **
+====================================================================================================
+Traceback (most recent call last):
+  File "/home/user/shadow-of-existence/receipts/P15_CR_cosmology/P15_the_controls_base_log_is_banked_beside_the_grids_and_the_peak_heights_concur_with_the_three_rigidity_statistics.py", line 353, in <module>
+    import camb                                                               # noqa: E402
+    ^^^^^^^^^^^
+ModuleNotFoundError: No module named 'camb'

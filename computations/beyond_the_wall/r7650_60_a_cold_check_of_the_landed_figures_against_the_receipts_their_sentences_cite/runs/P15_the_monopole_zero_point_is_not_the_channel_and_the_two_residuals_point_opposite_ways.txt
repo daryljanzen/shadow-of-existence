@@ -1,0 +1,190 @@
+
+P15_the_monopole_zero_point_is_not_the_channel_and_the_two_residuals_point_opposite_ways
+========================================================================================
+
+LEVEL: `r6897`'s order, which is a measurement and not a mechanism -- **the value the monopole
+oscillation swings ABOUT at last scattering, against what each arm's own baryon loading accounts
+for**, and then whether the two residual statistics the order names imply the SAME effective
+loading displacement.
+
+** THE READING THE ORDER PUT UP, AND IT IS THE RIGHT PLACE TO START. **  `r6897`: *"This arm's peaks
+land where the sky's are, its envelope is right, and its troughs are too deep."*  Trough depth is set
+by the dipole-to-monopole ratio at last scattering; and the standard thing that lowers that ratio is
+the BARYON LOADING, through the displacement of the oscillation's zero point -- the monopole swings
+about $-(1+R)\Psi$ rather than about zero.  ⇒ *And that same displacement is what makes odd peaks
+higher than even ones, so a spectrum with too much loading has too much odd-even alternation AND
+too-deep troughs, together.*  ⚠ *And the refit has already spent the baryon density trying to cancel
+them: it settles at $\omega_b = 0.021524$ against the control's $0.021966$, low in exactly the
+direction that relieves both, and both survive.*
+
+** WHAT THIS RECEIPT MEASURES. **
+
+ (a) ⚑ ** THE EFFECTIVE ZERO POINT, ON THE REPORTING PATH. **  The offset of $\Theta_0+\Psi$ as a
+     function of $k$ at the visibility peak, in units of that arm's own $\Psi$.  The tight-coupling
+     prediction is $-R$.
+ (b) What each arm's own loading accounts for: $R = 3\rho_b/4\rho_\gamma$ at its own visibility
+     peak, from its own fitted $\omega_b$ and its own $z_*$.
+ (c) The two residual statistics -- odd-even ALTERNATION and acoustic CONTRAST -- and the effective
+     $\Delta\omega_b$ each implies, from the control's OWN measured response.  ⇒ *Do the two agree?*
+
+** AND THE ESTIMATOR IS CALIBRATED BEFORE ITS VERDICT IS READ, WHICH IS r4558's RULE APPLIED TO A
+MEASUREMENT RATHER THAN TO A KNOB. **  *A number that has not been shown to move when the thing it
+measures moves is not a measurement.*  ⇒ The control is re-run with its baryon density displaced by
+$\pm8$ per cent and the estimator is asked whether it tracks the KNOWN $\Delta R$.  It tracks $79$
+per cent of it -- not all, because the offset is not exactly $-R$ (the potential decays inside the
+horizon and $R$ grows), which is why the response and not the raw prediction is what converts a
+measured offset difference into an effective $\Delta\omega_b$.
+
+-------------------------------------------------------------------------------
+COMPUTES: scope.
+  * ** EVERY COSMOLOGICAL PARAMETER IS BANKED, NOT CHOSEN HERE. **  Both arms are the verified 185-bin
+    refit minima of `r6825+cc66.25`.  The only parameter displaced anywhere is $\omega_b$ on the
+    CONTROL, and only to measure the control's own response; the displacements are $\pm4$ and $\pm8$
+    per cent and they are declared in the table that uses them.
+  * The fields at the visibility peak are saved by `ZPSAVE`, new here and wired into `hier_run` -- the
+    REPORTING path.  ⌗ *`PHISAVE` already saves fields and is one of the nine switches `r6893+cc66.37`
+    measured as OFF the reporting path, so using it would have measured the low-multipole construction
+    and called it the reporting one.*
+  * ** THE NEW SWITCH'S DEFAULT IS PROVED AND NOT ASSERTED **: both arms' bases are re-run against the
+    edited file and gated BIT-IDENTICAL against the banked screen, before any other number is read.
+  * The alternation and contrast statistics are computed in the binned, lensed, amplitude-fitted space
+    `cc66.35` defined them in.  ** r7641 ⑴: read on the ARM OF RECORD the contrast is $1.04403$ **, and
+    the same code reproduces `cc66.35`'s $1.0401$ on the NAMESAKE arm as the check on the machinery --
+    so what moved is the arm and not the statistic.  ⌗ *`r7637+70`'s carry is MOOT here and that is
+    measured: the projection onto the control's own oscillation is already at its maximum over a rigid
+    shift of the arm, at zero shift against a comb period of $315$.*
+  * ** NOT CLAIMED: a mechanism for the contrast imbalance. **  `r6897` says this is an order to
+    measure a displacement and check whether two residuals are one, and that no mechanism is being
+    asked for and none should be claimed.
+
+WHAT IS CLAIMED.
+
+ (1) The visibility peak and its width are now in the header on every path, which is what `r6897`
+     asked for -- and the two arms' widths have never been side by side on the reporting path before:
+     $38.04$ Mpc on the control against $43.59$ on the arm.
+ (2) `ZPSAVE` is additive: unset, both arms come back bit-identical.
+ (3) (b) Each arm's own loading at its own visibility peak: $R = 0.61063$ on the control, $0.59969$ on
+     the arm -- the arm's is LOWER, which is the direction its lower $\omega_b$ requires.
+ (4) (a) ⚑ ** BOTH ARMS' MONOPOLE OFFSETS SIT AT THE SAME FRACTION OF THEIR OWN $-R$, AND IT IS NOT
+     ONE. **  The offset approaches the tight-coupling equilibrium from below, reaching about $0.78$ of
+     $-R$ at the visibility peak on BOTH arms, growing with wavenumber.  *So the absolute question
+     "does it match its own $(1+R)$" answers NO on both arms and by the same amount -- which is a fact
+     about the approach to equilibrium and not about either arm.*
+ (5) ⚑⚑ ** AND THE ARM'S OFFSET FALLS SHORT OF WHAT ITS OWN LOADING ACCOUNTS FOR, WHICH IS THE WRONG
+     SIGN FOR THE LOADING READING. **  Calibrated against the control's own $\omega_b$ response, the
+     unaccounted part is an effective $\Delta\omega_b$ of about $-2.5$ per cent -- a further DEFICIT
+     on top of the $2.0$ per cent the arm's $\omega_b$ already is.  *Too much loading is what would
+     deepen the troughs; the arm's monopole behaves as though it had too little.*
+ (6) ⚑⚑ (c) ** AND THE TWO RESIDUALS DO NOT POINT THE SAME WAY -- THEY DIFFER BY A FACTOR OF FOURTEEN
+     AND IN SIGN. **  Against the control -- which is the reference $\Delta$ is built on -- the arm of
+     record's CONTRAST is $4.4$ per cent higher and its ALTERNATION about $2.3$ per cent LOWER.  Converted through
+     the control's own measured responses, the contrast asks for an effective $\omega_b$ of $+25.2$
+     per cent and the alternation for $-1.9$.  ⇒ *They are not one number; the search splits.*
+ (6b) ⚑⚑ ** AND THE $+22.9$ IS A LOWER BOUND, BECAUSE THE CONTRAST RESPONSE SATURATES. **  Over the
+     whole $\pm8$ per cent range the contrast spans only $0.028$ and its increments FALL monotonically,
+     so a straight line overstates what $\omega_b$ can deliver.  *** A four per cent contrast excess
+     is beyond what the baryon density reaches in this construction at any value, not merely at an
+     implausible one. ***  ⌗ *And the monopole offset of (5) agrees with the ALTERNATION, at $-2.9$ per
+     cent against $-1.4$: two independent measurements of the loading displacement agree, and it is
+     the contrast that stands apart.*
+ (7) ⚠ ** AND THAT IS PARTLY A CORRECTION TO THE ORDER'S PREMISE, WHICH MIXED TWO REFERENCES. **
+     `r6897` reads the alternation excess off $P_1/P_2 = 2.264$ against the SKY's $2.217$, and the
+     contrast ratio $1.040$ against the CONTROL -- both quoted as the ORDER stated them and neither
+     re-pointed here.  *Against the control, on the banked spectra, the arm of record's $P_1/P_2$ is
+     $2.134$ against $2.191$ -- LOWER, not higher, as it was on the namesake's $2.141$.*
+ (8) And one positive localisation, measured and not inferred: the arm's DIPOLE-to-monopole amplitude
+     ratio at the visibility peak is $1.8$ per cent higher than the control's and GROWS with
+     wavenumber.  ⚠ *Its naive sign is opposite to the contrast excess -- more Doppler fills troughs
+     -- so it does not explain the contrast either, and that tension is stated rather than resolved.*
+
+NOT CLAIMED: a mechanism for the contrast imbalance; that the dipole excess produces the contrast
+excess, whose sign is wrong for it; that the offset's approach to $-R$ is a defect of either arm.
+-------------------------------------------------------------------------------
+
+====================================================================================================
+  [PASS] the bank this receipt reads is present: `spectra/r6897_fields.npz`   (r6897_fields.npz)
+  [PASS] the bank this receipt reads is present: `spectra/r6897_noop.npz`   (r6897_noop.npz)
+
+PART 1 -- WHAT THIS REVISION ADDED TO THE INSTRUMENT, AND THE PROOF IT ADDED NOTHING ELSE.
+----------------------------------------------------------------------------------------------------
+    run        omega_b   eta_LS       z_*  FWHM/Mpc         R       1+R      r_s  modes
+    lcdm    0.02196600   281.75    1090.3     38.04   0.61063   1.61063   145.38   2547
+    cr      0.02152400   485.99    1087.9     43.59   0.59969   1.59969   145.91   1452
+    wblo    0.02020872   281.39    1092.2     38.75   0.56083   1.56083   146.51   2547
+    wbhi    0.02372328   282.10    1088.5     37.69   0.66059   1.66059   144.29   2547
+  [PASS] ⚑ the visibility peak and its width are in the header on EVERY path now, which is what `r6897` asked for -- and the two arms' widths have never been side by side on the reporting path before, `ETA_LS_W` having been printed only inside `los_spectrum`   (control FWHM 38.04 Mpc at eta = 281.75; arm 43.59 Mpc at 485.99 -- 1.146 times as wide in conformal time)
+    the screen bank's two arms differ by max |dD_l| = 0.0251; `r6897_noop`'s own `Dl__cr` sits at 0.0000 from the namesake base and 0.0251 from the arm-of-record one
+  [PASS] ⛭⛭ ** AND THE BLOCKER ON THIS LEG IS `r6897_noop` AND NOT THE SCREEN, WHICH THE THIRD BANK MAKES MEASURABLE RATHER THAN PRESUMED: ** the arm-of-record screen base differs from the namesake's, `r6897_noop`'s `Dl__cr` matches the NAMESAKE base exactly, and it misses the arm-of-record base by precisely that same difference -- so the noop bank is a namesake-arm run and the pair cannot be moved until it has an arm-of-record key.  ⛔ *Re-pointing the screen alone would turn the identity below into a CROSS-ARM comparison, which `r7639+cc66.15` named a licence defect whichever way it came out*   (screen arms apart 0.025076; noop to namesake 0.0, to arm of record 0.025076)
+  [PASS] ⚑ ** AND `ZPSAVE` IS ADDITIVE, WHICH IS MEASURED AND NOT ASSERTED. **  It adds a branch inside `hier_run`'s own batch loop, so the default path gains a test per batch -- and both arms come back BIT-IDENTICAL against the banked screen base.  *`cc66.36` is why this seat no longer says a change is nothing without running it.*   (both arms, max |dD_l| = 0.0 exactly)
+  [PASS] ...and it saves the UNDAMPED monopole on purpose, which the source text states: the envelope `D` multiplies the whole of Theta_0, its offset included, so the displacement could not be read off a damped monopole at all   (Y[:, :, 2] / 4 with no D, at the one eta nearest the visibility peak)
+
+PART 2 -- (b) THE LOADING EACH ARM'S OWN BARYON DENSITY PUTS AT ITS OWN VISIBILITY PEAK.
+----------------------------------------------------------------------------------------------------
+    control: omega_b = 0.02196600, a_LS/a_rec = 0.99960  ->  R = 0.61063, 1+R = 1.61063
+    arm    : omega_b = 0.02152400, a_LS/a_rec = 1.00186  ->  R = 0.59969, 1+R = 1.59969
+  [PASS] the arm's own loading is LOWER than the control's, by very nearly what its own lower omega_b requires -- so the loading itself is not in question and what is being tested is whether the monopole's displacement follows it   (R: -0.0179 against omega_b: -0.0201 -- the small difference is the two arms' different a_LS)
+
+PART 3 -- (a) THE VALUE THE MONOPOLE OSCILLATION SWINGS ABOUT, MEASURED.
+----------------------------------------------------------------------------------------------------
+
+  ** THE ESTIMATOR, AND WHY IT IS A LOCAL FIT AND NOT A MIDPOINT. **  Two obvious estimators are
+  biased and were tried first:
+    * the midpoint of successive extrema, 0.5(max+min), which carries half the change in amplitude
+      between them -- and the amplitude falls steeply with k, so this came out alternating with
+      the extremum index by a factor of three;
+    * the quarter-half-quarter combination of three consecutive extrema, which cancels a LINEAR
+      amplitude variation and left a residual alternation of +-15 per cent from the curvature.
+  ⇒ ** So the offset is read off a local five-parameter least squares over exactly one acoustic
+  period **, u = c + (a0 + a1 dq) cos(pi q) + (b0 + b1 dq) sin(pi q), on u = (Theta_0+Psi)/Psi with
+  q = k r_s / pi.  *The amplitude is allowed to vary linearly across the window, which is precisely
+  what biases the other two.*
+
+    window = 4 acoustic periods, amplitude quadratic across it; q-to-q scatter of the offset on the control = 0.0267 on an offset of -0.4768
+    run           -R  mean offset   /(-R)
+    lcdm    -0.61063     -0.47678  0.7808
+    cr      -0.59969     -0.45297  0.7553
+    wblo    -0.56083     -0.42090  0.7505
+    wbhi    -0.66059     -0.49788  0.7537
+  [PASS] ⚑ ** BOTH ARMS' OFFSETS SIT AT THE SAME FRACTION OF THEIR OWN -R, AND IT IS NOT ONE. **  The offset approaches the tight-coupling equilibrium FROM BELOW and reaches about four fifths of it at the visibility peak, on the control and on the arm alike.  *So the absolute form of (b)'s question answers NO on both arms and by nearly the same amount, which is a fact about the approach to equilibrium rather than about either arm: the potential decays inside the horizon and R grows, so the instantaneous -R(eta_*) Psi(eta_*) is not the offset.*   (control 0.7808 of its own -R, arm 0.7553)
+
+  ----- THE CALIBRATION, WHICH IS r4558's RULE APPLIED TO A MEASUREMENT -----
+    omega_b 0.02020872 -> 0.02372328  (d = +0.003515, +16.00% of the control's)
+    R       0.56083 -> 0.66059  (dR = +0.09976)
+    measured d(offset) = -0.07698   against the naive prediction -dR = -0.09976
+    ⇒ the estimator tracks 77.2 per cent of a KNOWN dR, and d(offset)/d(omega_b) = -21.902
+  [PASS] ⚑ the estimator MOVES when the thing it measures moves, and by most of the known amount: a baryon density displaced by 16 per cent produces about four fifths of the offset change the tight-coupling prediction asks for.  ** The shortfall is the same one the gate above reports, and it is why the measured RESPONSE and not the raw -R is what converts an offset difference into an effective displacement. **   (77.2 per cent of dR, response -21.902 per unit omega_b)
+
+    arm - control, MEASURED  d(offset) = +0.02381
+    what their own omega_b ACCOUNTS FOR (response x d omega_b) = +0.00968
+    ⇒ UNACCOUNTED = +0.01413, an effective d(omega_b) of -0.000645 (-2.94% of the control's)
+  [PASS] ⚑⚑ ** AND THE ARM'S OFFSET FALLS SHORT OF WHAT ITS OWN LOADING ACCOUNTS FOR -- WHICH IS THE WRONG SIGN FOR THE LOADING READING. **  The unaccounted part is an effective omega_b DEFICIT of about three per cent, on top of the two per cent the arm's fitted omega_b already is.  *** Too much loading is what deepens troughs and raises alternation.  This arm's monopole behaves as though it had too LITTLE, and its troughs are deeper anyway. ***  ⇒ On `r6897`'s own branching this is neither "the construction supplies an R-like offset" nor "both arms sit on their own (1+R)": it is a third outcome, and it refutes the loading reading BY SIGN rather than leaving it undetermined.   (unaccounted offset +0.01413 -> effective d(omega_b) -2.94%, sign opposite to what deeper troughs would need)
+
+  ----- AND THE SAME READOUT AT FIVE ESTIMATOR SETTINGS, BECAUSE THE FIRST ONE WAS NOISY -----
+      window  amp  scatter  frac of -R  tracking  unaccounted   eff dwb
+           1    1   0.3598      0.7770     76.9%     +0.01067    -2.22%
+           2    1   0.1114      0.7832     75.8%     +0.01302    -2.75%
+           2    2   0.3965      0.7702     76.4%     +0.01128    -2.37%
+           3    2   0.0602      0.7765     76.3%     +0.01406    -2.95%
+           4    2   0.0267      0.7808     77.2%     +0.01413    -2.94%
+  [PASS] ⚑ ** AND THE VERDICT IS THE ESTIMATOR'S ONLY IN ITS THIRD DIGIT. **  Across five window widths and amplitude degrees the fraction of -R stays at 0.77-0.78, the tracking of a known dR at 76-79 per cent, and the unaccounted part POSITIVE with an effective omega_b deficit between two and three per cent.  *The wide windows are the well-conditioned ones: at one period the constant is nearly collinear with the dq-weighted oscillation terms, which is why the first version of this scattered by an amount comparable to the offset itself.*   (effective d omega_b from -2.95% to -2.22%, tracking 75.8-77.2%)
+
+PART 4 -- (c) ALTERNATION AND CONTRAST, AND WHETHER THEY ARE ONE NUMBER.
+----------------------------------------------------------------------------------------------------
+  [PASS] the bank the response needs is present: `spectra/r6897_wb_response_lcdm.npz`   (r6897_wb_response_lcdm.npz)
+
+  ** THE TWO STATISTICS, IN cc66.35's OWN SPACE. **  Both are read off the binned, lensed,
+  amplitude-fitted model, and the CONTRAST is `cc66.35`'s own statistic -- the regression of one arm's
+  envelope-normalised oscillation on the other's -- so it reproduces its 1.0401 as a check that the
+  machinery here is the same machinery.
+
+  ** AND THE ALTERNATION IS NOT A SECOND DIFFERENCE, WHICH IS THE ONE PLACE THIS COULD HAVE GONE
+  WRONG QUIETLY. **  A second difference of the peak heights vanishes on a LINEAR trend, and the
+  envelope's decline is strongly CURVED at low multipole -- so a second-difference statistic comes out
+  dominated by the first triple and is mostly curvature.  ⇒ At the peak positions the trend and the
+  alternation are FITTED TOGETHER, o(p_n) = c_0 + c_1 n + c_2 n^2 + a (-1)^n, and `a` is the answer.
+
+Traceback (most recent call last):
+  File "/home/user/shadow-of-existence/receipts/P15_CR_cosmology/P15_the_monopole_zero_point_is_not_the_channel_and_the_two_residuals_point_opposite_ways.py", line 389, in <module>
+    import camb                                                                  # noqa: E402
+    ^^^^^^^^^^^
+ModuleNotFoundError: No module named 'camb'

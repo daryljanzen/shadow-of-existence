@@ -1,0 +1,104 @@
+
+RECEIPT -- P15 / `sec:refit-bound`, `fig:acoustic`: ** THE CONFRONTATION THE PAPER HAS NEVER CARRIED,
+SCORED: $2.65$ PER BIN WITH NOTHING FITTED AGAINST THE CONTROL'S $1.13$, AND ITS RESIDUAL CARRIES A
+$6.0\sigma$ MODULATION AT THE COMB'S OWN PERIOD. **
+
+** THIS FILE'S OWN NAME CARRIES THE NAMESAKE ARM'S FIGURES ($3.00$ PER BIN, NINE SIGMA) AND IS LEFT
+AS IT STANDS, BECAUSE THE PAPER CITES IT BY NAME. **  *The answer block below was ALSO left on the
+namesake arm at `r7645`+`cc66.67`, which re-pointed the computation and its pins and not the prose it
+states them in -- so for one revision this receipt's stated answer contradicted its own output while
+every gate passed.  Repaired at `r7645`+`cc66.68`; the figures below are this file's own, as run.*
+
+*** AND THE OPERATION THE ORDER ASKED FOR IS THE ONE THAT CANCELS WHAT IT WAS ASKED TO SHOW:
+AVERAGING IN BINS ONE PERIOD WIDE INTEGRATES EACH CYCLE TO ITS OWN MEAN.  THE FOLD IS DRAWN BESIDE
+IT, AND IT IS THE FOLD THAT CARRIES THE RESULT. ***
+
+** THE ORDER (`r7183` ⓵). **  *"`fig:acoustic` plots both arms at their REFIT minima.  The paper has
+no figure of the other confrontation --- the comb computed on the background the distances fix with
+NOTHING fitted to the microwave data... with two things the existing one does not do: the residual
+binned at the comb's own period, so the alternation reads as the measured shape it is rather than as
+scatter; and both confrontations' $\chi^2$ per bin on the figure itself."*
+
+===================================================================================================
+** THE ANSWER **
+===================================================================================================
+
+                                  chi^2      per bin      D_M of the banked spectrum
+      control, nothing fitted     202.02      1.129            13864.6627
+      CR arm,  nothing fitted     474.12      2.649            14011.4567
+      control, refitted           177.88      0.994            13954.3535
+      CR arm,  refitted           286.89      1.603            14133.9546
+
+  arm/control:  nothing fitted  2.3469x       refitted  1.6128x      (179 bins, 100 <= l <= 1900)
+
+  *On the NAMESAKE arm these were 537.38 / 3.002 and 282.96 / 1.581, i.e. 2.660x and 1.591x, and the
+  paper still quotes those at `CR_cosmology.tex:962` and `:1085`.  Both controls are unchanged: the
+  re-point does not reach them.*
+
+** AND THE RESIDUAL, TWO WAYS. **
+
+      binned AT the period l_A = 298, six bands:
+          the arm's band means change sign TWICE across six bands, +1.468 to +1.776 through
+          -1.048 -- a slow swing, NOT a per-period alternation
+
+      FOLDED by phase within the period, anchored on the arm's own first peak at l = 222:
+          one harmonic at l_A      amplitude         sigma
+          CR arm, nothing fitted   0.9522 +- 0.1576   6.04
+          CR arm, refitted         0.8331 +- 0.1187   7.02
+          control, nothing fitted  0.2028 +- 0.1126   1.80
+          control, refitted        0.1051 +- 0.1049   1.00
+
+⇒ *** THE MODULATION IS REAL AND IT IS THE ARM'S: `6.0` sigma with nothing fitted, against the
+control's `1.8`.  AND GIVING THE ARM FOUR PARAMETERS NO LONGER HALVES IT: the amplitude falls an
+eighth, 0.952 to 0.833, and the significance RISES to `7.0`, because the no-fit arm's harmonic error
+is the larger of the two.  On the namesake arm both fell -- 1.373 to 0.813, 9.08 to 6.89 -- so `the
+four parameters absorb part of the modulation` was that arm's reading, not this one's. ***
+
+⛔ ** AND THE ORDER'S CHOSEN OPERATION HIDES IT, FOR A REASON THAT IS ARITHMETIC RATHER THAN A
+MATTER OF TASTE. **  *A bin one period wide averages a full cycle of any modulation whose period is
+that bin's width, so its mean is that modulation's own mean --- which is zero by construction.*
+⇒ ** Binning AT the period is the one operation guaranteed to remove a signal at the period. **  *It
+is still drawn, because it is what the order asked for and what a reader will look for, and because
+what it DOES show --- a slow swing with two sign changes --- is a true and separate statement about
+the residual.  The fold is drawn beside it and labelled as the one that answers the question.*
+
+===================================================================================================
+** WHAT IS READ RATHER THAN RUN **
+===================================================================================================
+
+  ** NO NEW PHYSICS RUN, WHICH THE ORDER REQUIRED. **  All four spectra are banked, and each is
+  identified here by its own stored `D_M` rather than by its filename, so a bank swapped under the
+  figure's feet refuses rather than being plotted under the old label.
+
+  ** THIS FILE RECOMPUTES THE FIGURE'S NUMBERS FROM THE SPECTRA, AND THEN REQUIRES THE FIGURE'S OWN
+  BANKED `.npz` TO AGREE. **  *So the figure is checkable rather than self-certifying: if
+  `make_fig_acoustic_nofit.py` drifts, this receipt fails on the disagreement rather than on its own
+  memory of what the figure used to say.*
+
+  ** SCORING IS `fig:acoustic`'s, UNCHANGED. **  Planck plik_lite TT with its full covariance,
+  `P15`'s own derived CAMB lensing operator on both arms alike, the amplitude closed-form at the
+  covariance-weighted optimum.
+
+** COMPUTES: both confrontations' chi^2 per bin from the banked spectra; the residual binned at the
+   comb's period and folded by phase within it; the amplitude and significance of one harmonic at
+   l_A in each of the four cases; and the agreement of all of it with the figure's banked numbers. **
+
+
+========================================================================================================
+  PART 1 -- ** THE FOUR BANKED SPECTRA, IDENTIFIED BY THEIR OWN STORED `D_M` **
+========================================================================================================
+      nofit_lcdm  computations/beyond_the_wall/refit_grid185/lcdm_base.npz D_M = 13864.6627
+      nofit_cr    computations/beyond_the_wall/refit_grid185_leafrec1_distances/cr_base.npz D_M = 14011.4567
+      refit_lcdm  computations/beyond_the_wall/spectra/cc66_r185_verify_lcdm.npz D_M = 13954.3535
+      refit_cr    computations/beyond_the_wall/spectra/cc66_r185_verify_cr_leafrec1.npz D_M = 14133.9546
+    OK    ⛭ every spectrum carries the `D_M` its slot is -- the arm's no-fit run at `14011.4567` is the BAO-fixed background `r7181+cc66.144` recovered from the distance data alone, and the refitted pair are the verified minima
+    OK    ⛭⛭ and the two NO-FIT spectra are a different pair from the two refitted ones, which is what makes this a second confrontation rather than the same one replotted
+
+========================================================================================================
+  PART 2 -- ** BOTH CONFRONTATIONS SCORED, ON `fig:acoustic`'s OWN BINS AND OPERATOR **
+========================================================================================================
+Traceback (most recent call last):
+  File "/home/user/shadow-of-existence/receipts/P15_CR_cosmology/P15_the_no_fit_confrontation_is_three_per_bin_and_its_residual_carries_a_nine_sigma_modulation_at_the_combs_own_period_which_binning_at_that_period_cancels.py", line 162, in <module>
+    import camb                                                               # noqa: E402
+    ^^^^^^^^^^^
+ModuleNotFoundError: No module named 'camb'

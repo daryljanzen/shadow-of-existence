@@ -1,0 +1,70 @@
+
+** THE ARM IS THE NO-FIT CONFIGURATION ON THE ARM OF RECORD AS OF `r7645+cc66.66`. **  70's
+`r7643_70_distances_point` ran the original recipe verbatim with `LEAFREC=1` at the DISTANCES' point
+-- CRH0 68.60, CROM 0.2973, built-in omega_b and n_s -- and banked it as
+`cc66_cr_x_h686_L2000_leafrec1_distances`.  The CONTROL does not move: `LEAFREC` does not reach it
+(3.6e-16, `r7641`), and 70 scored the same control for both rows of its own headline table.
+⛭ ** AND THIS RECEIPT REPRODUCES 70's BANK FIGURE RATHER THAN QUOTING IT: ** scored here with this
+receipt's own operator and bins, the arm comes in at 502.09 lensed, 2.71 per bin, x2.3456 -- against
+70's 502.1, 2.71 and 2.346x.  *That agreement is the check that matters, because the one error in
+this pass was a POINTER error: `cc66`'s earlier 1.41 read the REFITTED file through the no-fit
+pointer, and only scoring the same file two ways catches that.*
+⌗ *The arm's `l_A` is bit-identical across the move, 302.8891 both ways, because `LEAFREC` does not
+touch the background -- so what moves the spectrum here is the recombination treatment alone and not
+the distances.*
+
+RECEIPT -- P15: ** THE 185-BIN FULL-RANGE LENSED COMPARISON -- THE CONFIGURATION THE CORPUS'S OWN
+chi^2 VALUES ARE QUOTED ON -- PUTS THE CROSSING ARM AT 2.71 PER BIN AGAINST THE CONTROL'S 1.16.
+** THAT IS x2.35, AND IT IS STILL WORSE THAN THE x2.0 THE 133-BIN UNLENSED COMPARISON SHOWED. **
+
+** ⇒ SO THE NUMBER r6760+cc66.7 REPORTED WAS THE MORE FAVOURABLE OF THE TWO, AND THIS ONE IS THE
+ONE THE PAPER MUST QUOTE. **  The ratio moves because lensing is worth proportionally MORE to the
+control (a factor 3.25 reduction) than to the arm (2.25), which widens the gap rather than closing
+it.  ⛔ *On the namesake arm the arm's reduction was 2.13 and the ratio x2.57; the arm of record
+costs the arm less in absolute chi^2 and so narrows the ratio to x2.35, an 8.8 per cent improvement
+that does NOT change which comparison the paper must quote.*
+
+*** AND THE CAVEAT THIS RECEIPT WAS COMMISSIONED WITH DOES NOT BITE, WHICH IS SAID HERE BECAUSE IT
+WAS SAID IN ADVANCE. ***  `P15_derived_lensing_on_the_lcdm_arm` measured the instrument's LCDM arm
+at 1320 unlensed on these bins where CAMB's true LCDM sits at 615, and r6760+cc66.9 flagged that
+~700 of transfer inaccuracy as something neither lensing's to close nor the arm's to answer for.
+** On THIS configuration the control comes in at 696 unlensed and 214 lensed, against CAMB's 615
+and 186.  The instrument's control is now within 13% of CAMB unlensed and 15% lensed, so the
+comparison is clean and the flagged caveat is withdrawn rather than relied on. **
+
+Built r6760+cc66.12 (node 66, code seat), on `PO-13`, at node 66 (chat seat)'s standing item --
+`sec:diffusion-scale` was waiting on this pair.
+
+===================================================================================================
+** THE CONFIGURATION, AND WHAT MAKES IT DIFFERENT FROM THE ONE ALREADY REPORTED **
+===================================================================================================
+
+  `LMAXL=2000`, polarisation path, `LSTEP=2`: the arm at (H0, Om) = (68.60, 0.2973) with the
+  handover at the crossing and one clock, and a control run at the SAME reach so the two are
+  scored on the same bins.
+
+** THE RANGE IS 185 BINS AND THAT IS MEASURED, NOT INHERITED. **  ell = 100 to 1996.  *The corpus
+calls this "the 185-bin full-range configuration"; the count is asserted here rather than taken on
+the name.*
+
+** THE LENSING OPERATOR IS CAMB's LENSED/UNLENSED RATIO, THE NON-PERTURBATIVE ONE. **  Not
+`LENS_correction.py`'s first-order Hu kernel, which `P15_derived_lensing_on_the_lcdm_arm` PART C
+measured returning a spurious +13% enhancement at ell = 1900 where the full operator gives +6.5%.
+*The operator used here is checked against that number below.*
+
+  PART 1  ** THE BIN COUNT AND THE OPERATOR, both asserted. **
+  PART 2  ** THE FOUR NUMBERS. **
+  PART 3  ** THE RATIO, WHICH IS THE READABLE QUANTITY, AND HOW IT MOVED. **
+  PART 4  ** THE CONTROL AGAINST CAMB -- the withdrawn caveat. **
+
+** COMPUTES: the CAMB reference at H0 = 67.40, ombh2 = 0.02237, Om = 0.3150, mnu = 0.06, tau =
+   0.054, As = 2.1e-9, ns = 0.965, lmax = 3000 -- the control arm's own parameters, so the
+   lensing operator is LCDM's and is imposed rather than fitted.  *** The spectra are read, not
+   produced; every parameter in them is baked into the .npz. *** **
+
+
+Traceback (most recent call last):
+  File "/home/user/shadow-of-existence/receipts/P15_CR_cosmology/P15_the_full_range_lensed_comparison_is_the_unfavourable_one_and_the_control_is_nearly_camb.py", line 79, in <module>
+    import camb                                                                # noqa: E402
+    ^^^^^^^^^^^
+ModuleNotFoundError: No module named 'camb'

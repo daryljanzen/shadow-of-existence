@@ -1,0 +1,124 @@
+
+P15_the_laws_six_of_seven_is_five_at_the_quoted_floor_which_is_one_phases_and_with_the_instruments_own_error_divided_out_all_seven_hold
+
+r7049 -> 70: THE FLOOR UNDER THE ACCEPTANCE LAW'S TEST.  Pre-registered at
+`computations/beyond_the_wall/r7049_70_the_laws_floor/PREDICTION.md`, committed before this file.
+
+The claim audited, as landed in `P15` `sec:refit-bound` and in `cc66`'s receipt's gate ⓸:
+  "...holds on both arms to within ten per cent everywhere, worst deviation 6.7 per cent, six of the
+   seven bands on each arm landing inside the measuring statistic's own 3.74 per cent accuracy on a
+   known injected comb..."
+
+The instrument is `cc66`'s -- `env_a`, `osc`, `_fit`, `fit_period`, `band_amp` and the band edges -- and it is
+LIFTED FROM THAT RECEIPT'S SOURCE BY ITS SYNTAX TREE AND EXECUTED UNCHANGED.  So nothing here is a
+re-implementation, and a change there is a change here.  That receipt is not edited, and its gate ⓪ is not
+re-run as a verdict on it.
+
+⛭ WHAT IS FOUND
+  ② "Six of seven inside 3.74 per cent" is FIVE of seven on each arm.  The gate counts at 5 per cent, and its
+     label names 3.74.  The band at 3.65-4.35 sits at 4.2 / 4.4 per cent.
+  ③ The 3.74 per cent is ONE PHASE's error and not the statistic's floor.
+     - Gate ⓪ injects one constant-amplitude comb at one phase (0.7), on the control's envelope only.
+     - Scanned over phase, at each arm's own period and with the law's own amplitude profile, the worst
+       band error is 10.2 per cent (control) and 11.0 per cent (arm).
+     - The phase is NOT unknown here, though: the real comb's fitted phase is 0.686, close to the gate's 0.7.
+       At that phase the instrument's error is -4.2 / -4.0 per cent in the LOWEST band and under one per cent
+       in the other six.
+  ① So the pre-registered ① fires on its phase-agnostic arm (F_t > 10 per cent), and it does NOT fire on the
+     one that bears on the claim.
+     - With the instrument's own error at the real phase divided out, the law and the measurement agree to
+       3.4 / 3.6 per cent at worst.
+     - ALL SEVEN bands on both arms then land inside 3.74 per cent.
+     - The lowest band's 6.3 / 6.7 per cent deviation is two thirds instrument.
+     ⇒ The law is BETTER supported than the landed sentence says, and the sentence's count is wrong.
+  ④ "Six of seven ON EACH ARM" reads as two tests, and it is ONE.
+     - The two arms' deviation patterns correlate at 0.998.
+     - Within an arm, the seven band measurements ARE close to independent: N_eff about 6.7 of 7 under the
+       instrument's own noise response.
+     - The instrument's phase systematic has only about 2.4 independent modes across the seven bands.
+
+⛔ NOT CLAIMED.  No verdict on the law's physics or on `cc66`'s convergence sweep.  No edit to any other
+receipt and no prose edited: routed to 66.  The white noise in M3(b) probes the instrument's coupling
+between bands.  It is not a noise model for the spectra.
+
+====================================================================================================
+    [ok]  the instrument is lifted whole from `cc66`'s receipt: five functions, the band edges and the range   7 bands, 0.70 wide, range 0.85-5.75
+    gate ⓪'s known input, read from that receipt: amplitude 0.5 constant, period 1.0347, phase 0.7, on the control's envelope only
+
+  ================================================================================================
+  M1  THE LITERAL COUNT -- the gate's own ratios, recomputed through its own functions
+  ================================================================================================
+            band   lcdm law/meas   cr law/meas
+     0.85- 1.55          1.0626        1.0667
+     1.55- 2.25          1.0106        1.0145
+     2.25- 2.95          0.9904        0.9902
+     2.95- 3.65          1.0119        1.0115
+     3.65- 4.35          1.0415        1.0443
+     4.35- 5.05          1.0156        1.0178
+     5.05- 5.75          1.0169        1.0165
+    [ok]  the recomputation IS the landed table: worst deviation 6.7 per cent   6.67 per cent
+    [ok]  ⛭ ② inside the QUOTED 3.74 per cent: FIVE of seven on each arm, not six   lcdm 5/7, cr 5/7
+    [ok]       ...and six of seven is the count at 5 per cent, which is the threshold the gate's code uses   lcdm 6/7, cr 6/7
+    ⌗ REPORTED, never required: the gate's label against its count, in `cc66`'s source now -- the label no longer names 3.74 against a 5 per cent count (corrected there)
+
+  ================================================================================================
+  M2  DOES THE 3.74 PER CENT TRANSFER TO WHERE THE REAL BANDS ARE?
+  ================================================================================================
+    lcdm: the real comb's fitted period 1.0012, phase 0.686 (gate ⓪ injected 1.0347, 0.7)
+    cr: the real comb's fitted period 1.0020, phase 0.684 (gate ⓪ injected 1.0347, 0.7)
+
+    injected: each arm's own envelope and grid, the law's own A_l(q) profile, its own period;
+    the band error e = measured / injected band mean - 1, in per cent
+            band  lcdm e(own)  worst/phase  cr e(own)  worst/phase
+     0.85- 1.55        -4.15         7.79      -3.95         8.11
+     1.55- 2.25        -0.78         9.54      -0.87        10.00
+     2.25- 2.95        -0.72        10.17      -0.80        11.02
+     2.95- 3.65        -0.29         5.00      -0.26         5.33
+     3.65- 4.35        -0.73         3.16      -0.85         3.57
+     4.35- 5.05        -0.27         7.94      -0.27         8.25
+     5.05- 5.75        -0.46         5.88      -0.57         6.64
+    [ok]  ⛭ ③ scanned over phase, the statistic's worst band error is TEN per cent and more on both arms -- so 3.74 per cent is ONE phase's error and not the statistic's floor   lcdm 10.2, cr 11.0 per cent
+    [ok]       ...but the phase is MEASURED, and gate ⓪'s 0.7 sits within 0.03 rad of the real comb's   lcdm 0.686, cr 0.684
+    [ok]       at the real phase the instrument's error is about -4 per cent in the LOWEST band and under one per cent in the other six, on both arms   lcdm -4.15 / 0.78, cr -3.95 / 0.87
+
+    the corrected ratio r_c = law x (1 + e_own) / measured -- the deviation the instrument cannot account for
+            band   lcdm r_c     cr r_c
+     0.85- 1.55     1.0186     1.0246
+     1.55- 2.25     1.0027     1.0057
+     2.25- 2.95     0.9833     0.9823
+     2.95- 3.65     1.0090     1.0089
+     3.65- 4.35     1.0339     1.0355
+     4.35- 5.05     1.0129     1.0151
+     5.05- 5.75     1.0122     1.0107
+    [ok]  ⛭⛭ ① with the instrument's own error divided out the law holds to under four per cent at every band -- far inside ten   worst lcdm 3.39, cr 3.55 per cent
+    [ok]       ...ALL SEVEN bands on both arms then land inside the quoted 3.74 per cent
+    [ok]       ...and the lowest band's 6.3 / 6.7 per cent deviation is mostly the instrument's   lcdm 70 per cent, cr 63 per cent
+
+  ================================================================================================
+  M3  HOW MANY INDEPENDENT MEASUREMENTS IS 'SIX OF SEVEN ON EACH ARM'?
+  ================================================================================================
+    lcdm: the range spans 4.89 comb periods, each band 0.70 of one
+    cr: the range spans 4.89 comb periods, each band 0.70 of one
+    [ok]  (b) lcdm: under the instrument's own noise response the seven band amplitudes are CLOSE TO independent (400 draws, the whole instrument each time)   N_eff 6.86 of 7
+    [ok]  (b) cr: under the instrument's own noise response the seven band amplitudes are CLOSE TO independent (400 draws, the whole instrument each time)   N_eff 6.85 of 7
+    [ok]  (c) lcdm: the instrument's PHASE systematic has few independent modes across the bands   N_eff 2.32 of 7
+    [ok]  (c) cr: the instrument's PHASE systematic has few independent modes across the bands   N_eff 2.49 of 7
+    [ok]  ⛭ ④ (d) the two arms' deviation patterns are ONE pattern, so 'on each arm' is one test and not two   correlation 0.9980
+    [ok]       ...and so are the instrument's own errors at the two arms' phases   correlation 0.9986
+
+  ================================================================================================
+  THE PAPER'S WORDING -- REPORTED, NEVER REQUIRED
+  ================================================================================================
+    P15 now reads: the six-of-seven / 3.74 clause is no longer present
+
+====================================================================================================
+GATES: ALL PASS.
+
+  VERDICT: ** the count is wrong and the law is better supported than the count says. **
+  *Inside the quoted 3.74 per cent sit five bands of seven on each arm, not six.  The 3.74 per cent
+  is the error at one phase and not the statistic's floor, which reaches ten per cent across phase.
+  But the real comb's phase is that phase to 0.03 rad, and there the instrument is wrong by about
+  four per cent in the lowest band and under one elsewhere.  Divided out, all seven bands on both
+  arms hold inside 3.74 per cent.*
+  ⌗ ** And 'on each arm' is one test: ** the two arms' deviations correlate at 0.998.  Within an
+     arm the seven bands are close to independent measurements.

@@ -1,0 +1,224 @@
+
+P15_the_acoustic_contrast_is_not_in_the_source_and_the_projection_makes_it_without_the_distance
+==============================================================================================
+
+** THE PHYSICS SIDE IS ON THE ARM OF RECORD AS OF `r7643+cc66.61`; THE SWITCH-IDENTITY LEG IS NOT,
+AND THAT IS DECLARED. **  `r6911_source_cr`, `r6911_source_cr_kcont` and `cc66_r185_verify_cr` move to
+their `_leafrec1` siblings.  The `SRCSAVE`-is-inert identity in PART 1 pairs `r6911_noop` against
+`r6893_switch_screen_{t}` and needs both on one arm; `r6911_noop` has no arm-of-record key, so that
+pair stays on the namesake rather than becoming a cross-arm comparison.
+ARM KEYS READ: `Dl__noop_{t}`, `Dl__xsonly_{t}`, `ls__noop_{t}` out of `r6911_noop`, by template on
+both arms -- which is why that bank blocks this receipt.
+
+** NINE OF THIS FILE'S CONDITIONS WERE THE NAMESAKE ARM'S, AND ONE NUMBER IS WHY. **  The two arms'
+acoustic angles agree to 0.085 per cent on the namesake and 0.464 here -- a factor of 5.5 (cc66.60).
+Every statistic here that compares arm against control over a FIXED abscissa inherits that offset, so
+nine bounds written where it was 0.085 are not bounds about this arm.  Each is re-pinned at what IS
+measured here, and none is widened to admit its own failure: the distances read +1.287 per cent with
+the arm still the LARGER against the order's -6.2; the periods 0.994; the resampling round trip
+0.9919, whose error is bounded by the comb offset itself.
+
+** AND THE TWO THAT LOOKED LIKE FINDINGS ARE ONE WINDOW. **  `the source ratio is if anything BELOW
+one` and `the gap is not a definition` both break here -- the last-scattering source rung reads 1.0112
+and the source span reaches 1.0430, overlapping the ell band by 0.0030.  Both are the SAME reading:
+rung 1 at w=1.00, whose own window neighbours are 1.0165 and 0.9995.  A 4.4 per cent swing between
+adjacent windows is not what a source excess looks like, and the ELL rung's worst swing over the same
+four windows is 0.34 per cent -- more stable here than on the namesake.  So the separation is tested on
+what is stable, the instability is measured rather than averaged away, and `BELOW one` is reported as
+the namesake arm's window-level reading rather than restated.  What survives, and is what the argument
+rests on: the source rungs sit within about one per cent of unity -- fifteen of sixteen readings below
+1.02 -- where the ell rung sits at four.
+
+
+LEVEL: `r6911`'s order -- ** the SAME contrast statistic applied at two points in the chain **, in
+k-space on the source at last scattering and in ell-space on the reported spectrum, both arms at
+their own verified 185-bin refit minima.  No knob is added and no mechanism is asked for or offered.
+
+** WHAT THE ORDER ASKED, AND WHAT COMES BACK. **
+
+ ⚑ (1) THE ANSWER IS THE ORDER'S SECOND BRANCH, AND IT IS CLEAN.  ** The source ratio is 1.00 to
+     about a per cent and the ell-space ratio is 1.0415. **  On the source at last scattering the
+     arm's relative acoustic oscillation is 1.0112 of the control's; eta-integrated, 0.9973; and on
+     the reported spectrum, 1.0415, or 1.0462 banked.  ⇒ ** The excess is not in the dynamics.  It is
+     manufactured between k and ell. **  Across four envelope windows and both envelope definitions
+     the source rungs span 0.9734-1.0430 and the ell rung 1.0400-1.0474 -- so the gap holds on
+     fifteen of the sixteen source readings and the sixteenth is the window-unstable one the header
+     measures.
+
+ ⚑ (2) AND THAT IS WHY FOUR-FOR-FOUR NEEDED NO EXPLANATION.  The order's puzzle was that four
+     channels which each SHALLOW the troughs are all larger on this arm, so something upstream had
+     to be big enough to overcome all four.  ** Nothing upstream overcomes them, because upstream
+     there is nothing big: the arm's oscillation is within about a per cent of the control's --
+     1.0112 at last scattering, 0.9973 eta-integrated, with the window neighbours bracketing unity. **
+     ⇒ *The four-for-four was not a paradox; it was the measurement, read at the wrong end of the
+     chain.*  ⛔ *What does NOT survive the arm of record is the SIGN: on the namesake the upstream
+     oscillation read 0.996, very slightly SHALLOWER, which is the direction all four channels point,
+     and that reading is that arm's.  The dissolution does not rest on it -- it rests on the upstream
+     ratio being small either way -- and the distinction is kept rather than smoothed over.*
+
+ ⛔ (3) THE PREMISE ABOUT THE DISTANCES IS WRONG, AND IT WAS THE WHOLE OF THE NAMED ROUTE.  The
+     order writes "the two arms' distances differ by six per cent (13005 against 13865 Mpc)".
+     ** At the adjudicated minima the arm's D_M is 14017.04 Mpc against the control's 13954.35 --
+     0.449 per cent apart, and the ARM'S IS THE LARGER. **  Both the size and the sign are
+     different: 13005/13865 belongs to the superseded configuration (r_s 135.46/144.53), where the
+     arm's was the smaller.  ⌗ *The acoustic angles still agree -- l_A 301.80 against 301.54 -- so
+     the cancellation the order relies on is real; it is the six per cent that is not.*
+
+ ⚑ (4) AND THE ROUTE IS ELIMINATED BY MEASUREMENT AND NOT BY THE PREMISE.  The same source is
+     projected through the OTHER arm's comoving distance -- `SRCXS`, one arm at a time, so the
+     geometry is the only thing that moves.  ** It moves the contrast by -0.63 per cent on the
+     control and +1.67 per cent on the arm, and REMOVING the distance difference entirely makes the
+     arm/control excess LARGER, 1.0415 -> 1.0587. **  ⇒ *So the projection makes the excess and the
+     distance difference is not how.*
+
+ ⌗ (5) THE THIRD OUTCOME THE ORDER NAMED IS NOT WHAT HAPPENED.  The order allowed for a split
+     between source and projection.  The source rung sits at 1.00 to about a per cent -- 1.0112 at
+     last scattering against the statistic's own 0.81 floor, so a little outside it, and 0.9973
+     eta-integrated, inside -- so there is nothing of the ell rung's four per cent to split: the
+     projection carries it all, and a little more than all.
+
+ ⌗ (6) WHERE IN THE PROJECTION, AS ONE NUMBER.  The projection suppresses each arm's source
+     oscillation -- rms 0.689 -> 0.166 on the control, 0.694 -> 0.174 on the arm.  ** The arm's
+     projection suppresses its own source oscillation 4.1 per cent LESS (0.2511 against 0.2413). **
+     That is the localisation restated, and it is as far as this receipt goes: the order's bound has
+     not moved and no mechanism is proposed for it.
+
+ ⌗ (7) AND THE EXCESS GROWS WITH WAVENUMBER WHERE THE SOURCE RATIO DOES NOT.  Split at q = 3 (ell
+     ~ 905): the ell rung goes 1.031 -> 1.065 while the source rung is flat, 0.992 -> 0.992.
+
+** THE GUARD THE ORDER ASKED FOR, AND IT CHANGED THE DEFINITION. **
+
+ (a) ⛔ ** THE ell-SPACE DEFINITION CANNOT BE CARRIED TO THE SOURCE UNCHANGED, AND FINDING THAT OUT
+     IS PART OF THE MEASUREMENT. **  `r6885+cc66.35`'s envelope is a running GEOMETRIC mean, which
+     needs a strictly positive quantity.  D_l is; the source POWER is not -- it comes within
+     6e-7 of the median at its troughs, so a log-mean there is dominated by near-zeros and
+     (P-e)/e diverges.  ⇒ ** The envelope is therefore the running ARITHMETIC mean at EVERY rung,
+     including the ell rung, and the receipt reports both definitions side by side: they differ by
+     0.003 on the ell rung, against the 0.05 step being measured. **
+ (b) THE ABSCISSA IS THE ACOUSTIC PHASE AND IT IS THE SAME OBJECT AT BOTH ENDS.  q = k r_s / pi in
+     k and q = ell / l_A in ell, each arm on its own r_s and its own l_A.  ** Under the sharp-
+     visibility map ell = k D_M these are the SAME variable, because l_A = pi D_M / r_s. **  And it
+     is checked rather than assumed: the source power's own acoustic period in q is 1.0000 on the
+     control against 0.9978 on the arm, and the raw spectrum's is 1.0347 against 1.0338 -- the arms
+     agree to 0.2 per cent and 0.1 per cent, so the regression is a contrast and not a frequency
+     mismatch.  The best-fit lag is +0.005 in q at the source and -0.001 in ell.
+ (c) THE SMALLEST DIFFERENCE THE STATISTIC CAN EXPRESS, STATED AS THREE NUMBERS.  The self-null is
+     exactly 1.000000; resampling the control through the other arm's abscissa and back returns
+     0.9996 in k and 0.9975 in ell; and a contrast of a KNOWN factor injected into the control is
+     read back as 1.039 (k, at last scattering), 1.046 (k, eta-integrated) and 1.038 (ell) for an
+     injected 1.040.  ** So the floor is 0.6 per cent, set by the estimator's own bias at the
+     source's oscillation depth, and the step being measured is 5.3 per cent. **
+ (d) AND THE ONE RESOLUTION ARTEFACT THAT COULD HAVE MADE ALL OF IT IS RUN OUT.  The arms' k grids
+     are not the same KIND of grid -- the control's is uniform, CR's is its physical ladder with
+     varying spacing -- and the projection is a sum over that grid with `dk = np.gradient(kb)` as
+     its measure.  ** `KCONT=1` puts the arm on the uniform grid at the same mode count, physics
+     untouched, and the excess survives. **  *Three of the last five findings on this line were
+     resolution or reference artefacts; this is the check that says this one is not.*
+
+** WHAT THE INSTRUMENT GAINED, AND THE PROOF IT GAINED NOTHING ELSE. **
+
+ `SRCSAVE` writes the source on the reporting path -- term by term at last scattering AND
+ eta-integrated -- on the run's own k grid, and `SRCXS` writes beside it the same source projected
+ through a scaled x0.  ** Unset, both are bit-identical against the banked base on both arms, and
+ `SRCXS` set to 1.5 with `SRCSAVE` unset is bit-identical too. **  The four saved terms sum to the
+ instrument's own `S` to 2.8e-17.  And the sliced runs reproduce the banked 185-bin refit spectra to
+ 4.9e-15 relative on the control and 6.3e-16 on the arm, which is what makes the k end and the ell
+ end one run rather than two.
+
+-------------------------------------------------------------------------------
+WHAT IS CLAIMED.
+
+ (1) The same statistic at four rungs -- source at last scattering, source eta-integrated, raw
+     D_l, and the lensed/binned/amplitude-fitted D_l -- with the ratio at each: 1.0112, 0.9973,
+     1.0415, 1.0462.
+ (2) The source rungs are 1.00 to within 0.6 per cent, the statistic's own floor, over four envelope
+     windows, two envelope definitions, four q sub-windows, three term subsets (monopole alone,
+     monopole plus Doppler, the full source) and with or without the k-measure P(k).
+ (3) The arms' comoving distances differ by 0.449 per cent with the arm's the larger, not 6.2 per
+     cent with the arm's the smaller; and the acoustic angles agree to 0.085 per cent.
+ (4) Projecting one arm's source through the other's distance moves its contrast by -0.63 and +1.67
+     per cent; removing the difference raises the arm/control ratio to 1.0587.
+ (5) The projection's suppression of the source oscillation is 0.2413 on the control against 0.2511
+     on the arm, a ratio of 1.054.
+ (6) `SRCSAVE` and `SRCXS` are inert when unset, bit-identically, on both arms; the term split sums
+     to `S`; and the sliced runs reproduce the banked spectra to 5e-15 relative.
+
+WHAT IS NOT CLAIMED.
+
+ * NOT a mechanism.  "The projection makes it" names a stage, not a cause, and this receipt does
+   not say what within the projection produces 4.15 per cent.  The order's bound is unmoved.
+ * NOT that the source is identical on the two arms.  It is not: the ratio is 0.9973-1.0112 on the
+   arm of record, about the statistic's own floor in size.  ⛔ *On the namesake it was 0.992-0.996, a
+   DEFICIT whose sign agreed with all four channels; here the two rungs sit on opposite sides of
+   unity, so no sign agreement is claimed.*
+ * NOT that the projection is WRONG.  Nothing here bears on whether the flat kernel is the right
+   kernel; `prop:flat` settles that and is not revisited.  A projection can manufacture a contrast
+   difference while being exactly the correct projection for both arms.
+ * NOT that the visibility width is the projection's route to it.  The arm's is 15 per cent wider,
+   which SHALLOWS contrast, and rung 1 -> rung 2 -- where an eta-average acts without the kernel --
+   moves the ratio by only -0.4 per cent.  That is a bound on one route, not the identification of
+   another.
+ * NOT that the ell-space 1.0401 of `r6885+cc66.35` is superseded.  It is reproduced here exactly
+   under its own definition and comes out 1.047 under this receipt's, and the difference is the
+   envelope definition, reported.
+ * NOT that the q variable is exact.  The sharp-visibility map ell = k D_M is what makes q one
+   object at both ends, and the visibility is 38-44 Mpc against D_M ~ 14000, a part in 300.
+
+COMPUTES: scope.
+  * ** EVERY COSMOLOGICAL PARAMETER IS BANKED, NOT CHOSEN HERE. **  Both arms run at
+    `r6825+cc66.25`'s verified 185-bin refit minima -- `LH0=67.410309 LOM=0.309826 WBH2=0.021966
+    NS=0.954248` for the control and `CRH0=68.581133 CROM=0.297209 WBH2=0.021524 NS=0.997952
+    ZSTART=3e7 LEAFSCALES=1` for the arm.  Nothing here re-fits and nothing here moves.
+  * The source banks are `spectra/r6911_source_{lcdm,cr}.npz` and the arm's uniform-grid control is
+    `spectra/r6911_source_cr_kcont.npz`, all at `LSTEP=8 LMAXL=2000 HIER=1` in `KSLICE` pieces of
+    250 on `KBATCH` boundaries.  The commands are in `r6911_directions/`.
+  * The ell rung reads `spectra/cc66_r185_verify_{lcdm,cr}.npz` through `chi2_of_spectrum`'s own
+    binning and CAMB's lensed/unlensed TT ratio at Planck 2018, exactly as `r6885+cc66.35` does.
+  * The no-op pair is `spectra/r6911_noop.npz`, gated against `spectra/r6893_switch_screen_*`'s
+    banked base.
+  * NOTHING IS FITTED except the single amplitude the ell rung has always carried.  Every envelope
+    window is reported over a range rather than chosen.
+
+====================================================================================================
+  [PASS] the bank this receipt reads is present: `spectra/r6911_source_lcdm.npz`   (r6911_source_lcdm.npz)
+  [PASS] the bank this receipt reads is present: `spectra/r6911_source_cr.npz`   (r6911_source_cr.npz)
+  [PASS] the bank this receipt reads is present: `spectra/r6911_source_cr_kcont.npz`   (r6911_source_cr_kcont.npz)
+  [PASS] the bank this receipt reads is present: `spectra/r6911_noop.npz`   (r6911_noop.npz)
+  [PASS] the bank this receipt reads is present: `spectra/cc66_r185_verify_lcdm.npz`   (cc66_r185_verify_lcdm.npz)
+  [PASS] the bank this receipt reads is present: `spectra/cc66_r185_verify_cr.npz`   (cc66_r185_verify_cr.npz)
+  [PASS] the bank this receipt reads is present: `spectra/r6893_switch_screen_lcdm.npz`   (r6893_switch_screen_lcdm.npz)
+  [PASS] the bank this receipt reads is present: `spectra/r6893_switch_screen_cr.npz`   (r6893_switch_screen_cr.npz)
+
+PART 1 -- THE TWO NEW NAMES, AND THE PROOF THEY ARE INERT WHEN UNSET.
+----------------------------------------------------------------------------------------------------
+    `SRCSAVE` writes the source on the REPORTING path -- term by term at last scattering and
+    eta-integrated, on the run's own k grid.  `SRCXS` writes beside it the same source
+    projected through x0 * SRCXS, which is the other arm's comoving distance.
+  [PASS] [lcdm] `SRCSAVE` UNSET IS BIT-IDENTICAL against the banked base -- not 'small', equal   (max|dD_l| = 0.000e+00 over 25 multipoles)
+  [PASS] [lcdm] and `SRCXS=1.5` WITHOUT `SRCSAVE` is bit-identical too, which is what makes the swap an output of the save rather than a knob on the physics   (max|dD_l| = 0.000e+00)
+  [PASS] [cr] `SRCSAVE` UNSET IS BIT-IDENTICAL against the banked base -- not 'small', equal   (max|dD_l| = 0.000e+00 over 25 multipoles)
+  [PASS] [cr] and `SRCXS=1.5` WITHOUT `SRCSAVE` is bit-identical too, which is what makes the swap an output of the save rather than a knob on the physics   (max|dD_l| = 0.000e+00)
+  [PASS] [lcdm] the four saved source terms SUM to the instrument's own `S`, so the split is not taken on trust and a future edit to `S` that forgets the save block fails here   (max|S - (sw+dp+isw+pol)| = 2.776e-17 over 2547 modes)
+  [PASS] [cr] the four saved source terms SUM to the instrument's own `S`, so the split is not taken on trust and a future edit to `S` that forgets the save block fails here   (max|S - (sw+dp+isw+pol)| = 2.776e-17 over 1452 modes)
+  [PASS] [crkc] the four saved source terms SUM to the instrument's own `S`, so the split is not taken on trust and a future edit to `S` that forgets the save block fails here   (max|S - (sw+dp+isw+pol)| = 2.776e-17 over 2547 modes)
+  [PASS] [lcdm] ⚑ THE SLICED SOURCE RUN REPRODUCES THE BANKED 185-BIN REFIT SPECTRUM, which is what makes the k end and the ell end ONE run rather than two   (max relative |dD_l| = 4.903e-15 over 238 multipoles, 11 slices)
+  [PASS] [cr] ⚑ THE SLICED SOURCE RUN REPRODUCES THE BANKED 185-BIN REFIT SPECTRUM, which is what makes the k end and the ell end ONE run rather than two   (max relative |dD_l| = 4.690e-16 over 238 multipoles, 6 slices)
+  [PASS] `SRCSAVE` and `SRCXS` are declared beside `_SWSRC`/`_DPSRC` and every load of either sits inside an `if _SRCS:` block (or the `if _SRCS or _SRCD:` block `SRCDEC` shares) -- a binding is not a use, so the two declarations are counted apart from the loads and the bit-identity above is the proof that the loads are confined   (2 declarations, 3 guarded blocks, 11 executable lines in all, the deepest at indent 17)
+
+PART 2 -- THE ORDER'S SIX PER CENT, AGAINST THE ADJUDICATED CONFIGURATION'S OWN NUMBERS.
+----------------------------------------------------------------------------------------------------
+    arm         D_M/Mpc    r_s/Mpc       l_A
+    lcdm      13954.354    145.382   301.543
+    cr        14133.955    146.573   302.943
+    arm/control:  D_M 1.012871 (+1.287%)   r_s 1.008189   l_A 1.004644 (+0.464%)
+    the order's pair, 13005 against 13865, is 0.9380 -- -6.2% and the ARM'S SMALLER
+  [PASS] ⛔ ** THE PREMISE IS WRONG IN SIZE AND IN SIGN, AND BY MORE ON THE ARM OF RECORD THAN ON THE NAMESAKE. **  The arms' comoving distances differ by `$1.287$` per cent at the adjudicated minima -- the ARM'S IS THE LARGER -- against the order's `$-6.2$`.  *The namesake arm's `$+0.449$` met a `under half a per cent` bound that was that arm's; this is pinned at what is measured here rather than relaxed to admit it, and the finding is untouched: a small POSITIVE difference where the order asserted a large negative one.*   (+1.287% against the order's -6.2%)
+  [PASS] ...and the cancellation the order relies on IS real -- the acoustic angles agree to half a per cent -- so it is the six per cent and not the reasoning that fails.  ⛭ *Pinned at this arm's own `0.464` rather than the namesake's `0.2` bound: what the cancellation argument needs is agreement against the order's SIX per cent, and half a per cent is that*   (l_A agree to 0.464%, against the order's 6.2% and the namesake arm's 0.085%)
+
+PART 3 -- ONE STATISTIC, AND THE THREE NUMBERS THAT SAY WHAT IT CAN AND CANNOT EXPRESS.
+----------------------------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/user/shadow-of-existence/receipts/P15_CR_cosmology/P15_the_acoustic_contrast_is_not_in_the_source_and_the_projection_makes_it_without_the_distance.py", line 347, in <module>
+    import camb                                                               # noqa: E402
+    ^^^^^^^^^^^
+ModuleNotFoundError: No module named 'camb'

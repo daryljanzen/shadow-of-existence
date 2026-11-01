@@ -1,0 +1,171 @@
+
+RECEIPT -- P15: ** `cc66.155` ASKED FOR A DIFFERENT STATISTIC AND COSTED IT AT ZERO RUNS.  IT IS BUILT
+HERE, ON THE SAME BANK, AND IT WORKS: THE DE-TILTED PEAK SET SEPARATES THE BARYON DIRECTION FROM A
+PURE TILT BY A FACTOR OF `$11.7$` ON THE COMMON OFFSET AND `$18.3$` ON THE ODD-EVEN ALTERNATION,
+WHERE THE FREE-PERIOD SLOPE SEPARATED THEM BY `$1.3$`. **  ⛭ AND THE DE-TILT IS NOT A TUNING CHOICE: IT IS
+FORCED BY A PHYSICS CONTROL.  Without it `$n_s$` moves the common offset MORE THAN ANY OTHER
+DIRECTION, which a primordial tilt cannot do; with it that response collapses by a factor of `$21$`
+and becomes window-independent.  *** The same disease `cc66.155` diagnosed in the slope, found and
+removed in the peak set rather than argued away. ***
+
+  ⛔⛭⛭ ** THE TITLE'S CLAUSE -- THAT THE DRIVING HALF NEEDS ITS OWN PAIR BEFORE IT CAN BE READ AT ALL
+  -- IS THE NAMESAKE ARM'S, AND ON THE ARM OF RECORD THE DRIVING PAIR READS. **  *Re-pointed to
+  `LEAFREC=1` at `$H_0=68.5707$`, `$\Omega_m=0.291246$`, the CR driving-ON spectrum HAS an
+  integer-spaced peak series: worst gap error `$0.103$` against the grid's own `$0.102$`, a factor of
+  `$1.0$`, where on the namesake arm it was `$0.275$` against `$0.105$`.  The comb the common-offset
+  statistic assumes is there, so the step that obstruction blocked is MEASURED here --
+  `$\Delta\varphi=+0.12611$` and `$\Delta\mathrm{alt}=-0.02201$`, against the control arm's
+  same-vintage `$+0.12649$` and `$-0.02469$`.  ** Both are opposite in sign to this arm's OWN baryon
+  direction on both components, so the orthogonality the ask rested on now holds on the arm itself and
+  not only on the control. **  ⛔ What is still owed is a VINTAGE and not a reading: the driving pair
+  was run at `L3000` and the grids were not, so a clean number still wants the `NODRIVE` pair at the
+  grids' own configuration.*
+
+  ⇒ ** THE REVISED COST IS TEN RUNS AND NOT EIGHT, AND THE RE-POINT LEAVES ITS SIZE ALONE: ** *the
+  eight `RBFAC` runs `cc66.155` named, PLUS a `NODRIVE` pair at the grids' own configuration.  ⛭ Its
+  JUSTIFICATION is what moved with the arm: the pair is wanted because the banked one is a different
+  VINTAGE from the grids -- not, as on the namesake arm, because this statistic cannot read it.*
+
+** COMPUTES: peak positions on `$38$` banked spectra by parabola vertex on the instrument's OWN
+   samples, after dividing out a single global power law fitted in log-log over
+   `$150\le\ell\le1600$`; then two statistics per configuration -- the common offset
+   `$\varphi=\langle \ell_n/\ell_A-n\rangle$` and the alternation
+   `$\langle r_n(-1)^n\rangle$` -- and their logarithmic derivatives along every banked direction,
+   both arms, both nine-run grids.  The de-tilt is swept against the fitting half-window over
+   `$25$`--`$75$` so its necessity is measured and not asserted.  *** No new spectrum, no grid,
+   nothing refitted -- which is what `cc66.155` costed this half at. *** **
+
+
+
+========================================================================================================
+  A.  THE DE-TILT IS FORCED BY A PHYSICS CONTROL, NOT CHOSEN -- AND THE CONTROL IS `n_s`
+========================================================================================================
+      `n_s` tilts the PRIMORDIAL spectrum and CANNOT move a peak position relative to the
+      sound horizon: it multiplies the initial power and leaves the transfer function alone.
+      ⚠ It is an INHERITED quantity -- the corpus posits no six-parameter vector, so the
+      spectral index is ADOPTED from LambdaCDM's own basis and derived from nothing this
+      construction predicts.  What that costs: no conclusion here is a claim about n_s.  It
+      is used because its effect on the peak PHASE is known a priori to be nil, which is
+      exactly what a control for a phase statistic requires.
+
+      de-tilt   halfwin   dphi/dlnNS   dphi/dlnWB   |WB/NS|
+      False          25     +0.05052     -0.01327      0.26
+      False          40     +0.05057     -0.01148      0.23
+      False          55     +0.05064     -0.01024      0.20
+      False          75     +0.05121     -0.00483      0.09
+      True           25     -0.00249     -0.02823     11.34
+      True           40     -0.00246     -0.02873     11.70
+      True           55     -0.00243     -0.02907     11.95
+      True           75     -0.00233     -0.03048     13.07
+      ⇒ |dphi/dlnNS| raw 0.05052-0.05121, de-tilted 0.00233-0.00249  -- a factor of 21
+    OK    Ⓐ①  ** WITHOUT THE DE-TILT THE STATISTIC VIOLATES THE CONTROL: `n_s` moves the common offset by more than the baryon direction does, which a primordial tilt cannot do. **  That is the parabola's vertex being dragged by the slope under the peak -- the same disease `cc66.155` found in the free-period slope
+    OK    Ⓐ②  ** AND THE DE-TILT REMOVES IT BY A FACTOR OF TEN OR MORE AND MAKES IT WINDOW-INDEPENDENT. **  ⛔ *The third limb as registered -- that the RAW reading drifts with the window, which is what distinguished a repair from a tuning -- is the NAMESAKE arm's: here the raw reading is already flat, at a spread of 1.4 per cent against that arm's 21*
+      the raw response's own window spread on this arm: 1.4 per cent (the namesake arm's was 21)
+    OK    Ⓐ②ᵇ ⛔ and the absent drift is MEASURED rather than passed over: on this arm the raw response's window spread is under 5 per cent -- printed above -- where on the namesake arm it exceeded 15, which is the whole of what the third limb rested on
+
+========================================================================================================
+  B.  THE SEPARATION, BOTH ARMS AND BOTH GRIDS: THE BARYON DIRECTION AGAINST A PURE TILT
+========================================================================================================
+      grid      arm   par    dphi/dln    dalt/dln
+      oneclock  cr    H0     +0.04366    +0.03767
+      oneclock  cr    OM     +0.01257    +0.02327
+      oneclock  cr    NS     -0.00246    -0.00071
+      oneclock  cr    WB     -0.02873    +0.01306
+      oneclock  lcdm  H0     +0.03957    +0.04408
+      oneclock  lcdm  OM     +0.01135    +0.02159
+      oneclock  lcdm  NS     -0.00243    -0.00048
+      oneclock  lcdm  WB     -0.02779    +0.01075
+      licensed  cr    H0     +0.06561    +0.03909
+      licensed  cr    OM     +0.02349    +0.02364
+      licensed  cr    NS     -0.00217    -0.00065
+      licensed  cr    WB     -0.02687    +0.01417
+      licensed  lcdm  H0     +0.03957    +0.04408
+      licensed  lcdm  OM     +0.01135    +0.02159
+      licensed  lcdm  NS     -0.00243    -0.00048
+      licensed  lcdm  WB     -0.02779    +0.01075
+      cr   : WB:NS = 11.7x on the common offset, 18.3x on the alternation
+      lcdm : WB:NS = 11.4x on the common offset, 22.6x on the alternation
+    OK    Ⓑ①  ** THE PEAK SET SEPARATES THE BARYON DIRECTION FROM A PURE TILT BY AN ORDER OF MAGNITUDE, ON BOTH COMPONENTS AND BOTH ARMS -- where `cc66.155` measured the free-period slope separating the same two directions by 1.3. **  That is the difference between a statistic that reads phase and one that reads gradient
+      and `n_s`'s own residual response is STABLE rather than merely small: 0.00217 to 0.00246 across both arms and both grids
+    OK    Ⓑ②  and the tilt's residual leakage is consistent across all four configurations rather than scattering -- so what is left after the de-tilt is a small systematic floor and not noise that happened to come out low on the one case that was looked at
+
+========================================================================================================
+  C.  AND IT REPAIRS THE CONVENTION-DEPENDENCE `cc66.155` FOUND IN THE ARM'S OWN RESPONSE
+========================================================================================================
+      H0 : licensed/oneclock =  1.50x on phi,  1.04x on the alternation
+      OM : licensed/oneclock =  1.87x on phi,  1.02x on the alternation
+      NS : licensed/oneclock =  0.89x on phi,  0.92x on the alternation
+      WB : licensed/oneclock =  0.94x on phi,  1.09x on the alternation
+      ⇒ worst disagreement between the two arm geometries: 1.87x
+      ⌗ `cc66.155` measured the SAME arm's required move on the free-period slope differing
+        by up to 49x between these two grids (294 per cent against 6).  The peak set's worst
+        is a factor of two, which is a statistic that measures the arm rather than the
+        convention it was computed under.
+    OK    Ⓒ①  ** the arm's response is convention-robust on the peak set where it was not on the slope: worst disagreement a factor of ~2 between `LEAFGEOM` and `LEAFREC`, against up to 49 on the slope. **  A third independent respect in which this statistic is the better instrument, and the one that was not predicted in advance
+
+========================================================================================================
+  D.  ⛭⛭ THE DRIVING HALF READS ON THIS ARM, AND THE TITLE'S OBSTRUCTION WAS THE OTHER'S
+========================================================================================================
+      grid cr_base    peaks/l_A = [0.85  1.851 2.749 3.783 4.764]  worst gap error 0.102
+      L3000 cr ON     peaks/l_A = [0.848 1.839 2.735 3.766 4.743]  worst gap error 0.103
+      L3000 cr OFF    peaks/l_A = [1.004 1.924 2.884 3.877 4.872]  worst gap error 0.080
+      L3000 lcdm ON   peaks/l_A = [0.848 1.853 2.747 3.783 4.762]  worst gap error 0.107
+      L3000 lcdm OFF  peaks/l_A = [1.008 1.933 2.897 3.895 4.893]  worst gap error 0.075
+    OK    Ⓓ①  ⛔⛭⛭ ** ON THE ARM OF RECORD THE CR DRIVING-ON SPECTRUM *DOES* HAVE AN INTEGER-SPACED PEAK SERIES, so this statistic CAN read it -- worst gap error 0.103 against the grid's own 0.102, a factor of 1.0, where the NAMESAKE arm's was 0.275 against 0.105. **  ⇒ *The obstruction this receipt's title names was that arm's, and the step it blocked is measured immediately below*
+      the CONTROL's same-vintage pair does read: phi -0.20125 -> -0.07476 (Dphi = +0.12649)
+                                                  alt +0.01559 -> -0.00910 (Dalt = -0.02469)
+      against the baryon direction's -0.02779 on phi and +0.01075 on the alternation
+    OK    Ⓓ②  ⛭ ** AND ON THE CONTROL, WHERE IT CAN BE READ, THE DRIVING AND THE BARYON DIRECTION MOVE THE PEAK SET IN OPPOSITE DIRECTIONS ON BOTH COMPONENTS. **  That is the orthogonality the ask rested on, and it is now measured on one arm rather than argued -- which is why the runs are worth their compute and why the pair has to be at the grids' own configuration
+      the CR driving step on the arm of record: phi -0.21372 -> -0.08761 (Dphi +0.12611), alt +0.01280 -> -0.00922 (Dalt -0.02201)
+      against the arm's own baryon direction -0.02873 / +0.01306, and the control's step +0.12649 / -0.02469
+    OK    Ⓓ③  ⛭⛭ ** AND THE ORTHOGONALITY THE ASK RESTED ON NOW HOLDS ON THE ARM ITSELF, not only on the control: the CR driving step and the arm of record's own baryon direction move the peak set OPPOSITE ways on both components, and the step is the control's to 0.3 per cent on the common offset. **  ⛔ *Its limit is unchanged and stated: the driving pair is a different vintage from the grids, so a clean number still wants the `NODRIVE` pair at the grids' own configuration -- what has changed is that the statistic can read the pair at all*
+
+========================================================================================================
+  E.  SO THE STATISTIC EXISTS, THE ASK IS MET ON THIS ARM, AND WHAT REMAINS IS A VINTAGE
+========================================================================================================
+      WHAT IS SETTLED, at no run cost, which is what this half was costed at:
+        * the de-tilted peak set IS a phase observable -- it passes the control the slope
+          failed, by a factor of ten or more, window-independently;
+        * it separates the baryon direction from a pure tilt by 11.7x on the common offset
+          and 18.3x on the alternation on the arm of record, 11.4x and 22.6x on the
+          control, on both grids;
+        * it is convention-robust where the slope was not;
+        * and on the arm of record AND on the control, the driving and the baryon
+          direction move it in OPPOSITE directions on both components -- the
+          orthogonality the ask rested on, now measured on the arm itself;
+        * which is the title's "needs its own pair" shown to be the namesake arm's
+          clause: there the driving-ON peak series was not a comb, here it is.
+
+      ⛔ WHAT IS NOT, and what it costs:
+        * a driving signature at the grids' own vintage.  The pair that reads was run at
+          `L3000` and the grids were not, so the number above is a cross-vintage
+          difference -- sound, and not the clean one.
+        ⇒ TEN runs, not eight: the eight `RBFAC` runs (loading without recombination, which
+          `WBH2` cannot give) PLUS a `NODRIVE` pair, all at the grids' own configuration
+          (`HIER=1 LMAXL=2000 LSTEP=8 ZSTART=3e7`, `KFAC` at the corpus default 2.0, `NK`
+          not reduced), idempotent and resumable on output existence.
+    OK    Ⓔ①  ** the half `cc66.155` costed at zero runs is delivered at zero runs. **  38 banked spectra and the driving pairs read, no new spectrum, no grid, nothing refitted -- and the conclusion it reaches is that the statistic works, which is what makes the remaining ask worth putting
+    OK    Ⓔ②  and the ask is bounded and justified by what was measured rather than by what was hoped: the `NODRIVE` pair at the grids' own configuration, at a configuration read off the grids' own switch lines.  ⛭ *Its JUSTIFICATION has changed with the arm -- the pair is wanted for VINTAGE now and not because the statistic cannot read the banked one -- and its size is unchanged*
+
+========================================================================================================
+  ✔ ** THE DE-TILTED PEAK SET IS THE PHASE OBSERVABLE THE FREE-PERIOD SLOPE WAS NOT. **  It
+    separates the baryon direction from a pure tilt by 11.7x on the common offset and 18.3x
+    on the odd-even alternation here, 11.4x and 22.6x on the control, against 1.3x for the
+    slope, on both grids.
+  ⛭ ** AND THE DE-TILT IS FORCED RATHER THAN CHOSEN: without it `n_s` moves the common offset
+    more than the baryon direction does, which a primordial tilt cannot do.  With it that
+    response falls by a factor of ten or more and stops depending on the fitting window. **
+  ⌗ A third gain that was not predicted: the arm's response is convention-robust here -- a
+    factor of ~2 between LEAFGEOM and LEAFREC, against up to 49 on the slope.
+  ⛭⛭ ** THE DRIVING HALF READS ON THIS ARM, AND THE TITLE'S CLAUSE THAT IT CANNOT IS THE
+    NAMESAKE ARM'S. ** The CR driving-ON peak series IS a comb here -- gap error 0.103
+    against the grid's own 0.102, where that arm's was 0.275 against 0.105 -- so the step
+    is measured: Dphi +0.12611, Dalt -0.02201, against the control's +0.12649 / -0.02469.
+    Both oppose this arm's own baryon direction on both components, which is the
+    orthogonality the ask rested on, now on the arm and not only on the control.
+  ⇒ ** THE ASK IS STILL TEN RUNS AND NOT EIGHT, for a VINTAGE rather than a reading: ** eight
+    `RBFAC` plus a `NODRIVE` pair, all at the grids' own configuration, because the pair that
+    reads was run at `L3000` and the grids were not.
+  ⚠ Named and not supplied: five peaks make the alternation a coarse estimate; the de-tilt
+    is one global power law over 150-1600 and its necessity is swept but its FORM is a
+    choice; and `n_s` is inherited, used only as a control, with no claim made about it.
