@@ -31675,3 +31675,26 @@ NEVER PROBED (tolerance): 30 of the 40 in scope -- the run did not reach them,
 ⌗ **The one re-run, spent deliberately and not at all.** The failing job is on `bc704729a`, superseded by `5ab396d92`, and the same job family's push run (8880) is already queued on the current head — that run *is* the re-probe the carry asks for, on the tree that matters. Re-running eighty-one minutes of runner on a superseded commit would buy a verdict about a tree nobody will merge, so I did not, and I am saying so rather than leaving it to look unspent.
 
 ⇒ **FOR 69/70, as an instrument observation and not a request:** a probe job that gives 81 minutes to reading its own history and then records 75 per cent of its population as `unmeasured` is reporting on the ledger rather than on the push. The `unmeasured` carry is the right conservative behaviour; the ordering is what makes it bite every time.
+
+### ⛭ `r7651+cc66.100` — THE RANGED READER SWEEP, BOTH CLASSES SETTLED: 112 OF 112 AND 37 OF 37, AND ONE OF THE TWO REDS WAS A BROKEN PILLOW IN THIS CONTAINER
+
+`run_touched_readers.sh --both origin/main` over the whole turn. The changed corpus files — `appendix_receipts_P15.tex`, `appendix_receipts_corpus.tex`, `figure_pin_baseline.tsv`, `marker_transposition_baseline.tsv`, `quote_pin_baseline.tsv` — named **112 receipts**. It came back `NOT GREEN` on both classes and both are settled.
+
+**⒜ Class one: 110 passed, 2 named, and the cause was the CONTAINER.** `C75_batch_four…` and `C80_batch_nine…` both died at
+`ImportError: cannot import name '_imaging' from 'PIL'` — Pillow's C extension is unimportable here, so `import matplotlib` fails outright and the receipts crash while grafting `panelA_reassign.py`.
+
+- ⒝ of the standing sequence: **C75 fails identically on a pristine `origin/main` worktree**, same traceback. So it is not this diff.
+- ⒞ **and a fix existed, so I made it rather than standing down.** This container's `pip` is bound to python3.13 while `python3` is 3.11, so `pip install pillow` landed in the wrong tree and changed nothing; `python3 -m pip install --force-reinstall --no-cache-dir pillow` put a working Pillow 13.0.0 in `/usr/local/lib/python3.11/dist-packages`, which precedes the broken system copy. `matplotlib 3.10.9` then imports.
+- ⇒ **re-run with the environment repaired, both are `rc=0` with no failed gate.** So class one is **112 of 112**, and the result is a verdict rather than an excuse.
+  ⌗ *Worth knowing for the next seat in this container: any receipt that touches `matplotlib` is red here until that reinstall is done, and it will look like a receipt failure.*
+
+**⒝ Class two: 36 of 37 green, and the one red is the documented TRIGGER, which is structurally unreachable in CI.** `check_receipts_run` says so itself:
+
+```
+⛔ [FAIL] STALE RESULT.  The cached run is against tree c45c0984781013fe; the tree
+   is now 01f9d4c356cf7efe.
+```
+
+Everything above that line passed — 0 hollow assertions across 1140 receipts, 0 assertion debt, and the 21 declared UNRUNNABLE still import what they declare. **And the red cannot be mine to clear:** `--how` prints that the repair is `scripts/run_all_receipts.py --jobs 4 --timeout 600` writing `receipts/RUN_RESULT.txt`, which is the NIGHTLY HEAVY TIER's own job — `gates.yml:253` asks `check_receipts_run` inside the `receipts` job ("heavy — every receipt run where it is registered"), *after* that same job regenerates the cache, 97.8 minutes of it. So the gate is never red in CI for a stale cache, the committed `RUN_RESULT.txt` is 70's (last banked at `r6961+70.3`), and running the full suite locally is on the standing cycle's own do-not-run list. ⇒ **Nothing to fix and nothing to commit for it**, and that is a fact about where the cache is banked rather than a judgement about the tree.
+
+⇒ So the whole pre-push set for `r7651` is accounted for: `turn_gates.sh` **123/123**, the four gates it excludes by name all green (`check_figures_pinned` 1485/1485, `check_quote_pins` 2767/2767, `check_marker_transposition`, `check_unread_figure`), and the ranged reader sweep **112/112 and 36/37** with the thirty-seventh unreachable from here.
