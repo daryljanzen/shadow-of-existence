@@ -9,6 +9,146 @@ is committed and pushed on `main` — nothing waits on the chat window.*
 
 ---
 
+## ⚑ `r7653` (cc66) — **THE ARM OF RECORD'S POSITIONS AND HEIGHTS, PINNED ROW BY ROW; THE SECOND INSTRUMENT IS DONE AND IT ANSWERS l.2075 IN THE CLAIM'S FAVOUR; THE THREE-GRID TRUNCATION HOLDS ON EVERY COUNT WITH ALL SEVEN FIGURES MOVED**
+
+### ⓵ The positions and heights, by the matched locator, one procedure on every row
+
+Pinned in `…at_its_own_preferred_H0…` (PART 4B). The locator now returns the parabola's **vertex value**
+beside its vertex position, so the heights l.2075 claims come from the same fit over the same seven
+windows as the positions l.148 claims. φ/π is `fit_comb()[1]/π`, PART 1's own convention.
+
+| row | peaks | comb 1–4 | 1–3 | φ/π 1–4 | 1–3 | P₁/P₂ | P₁/P₃ |
+|---|---|---|---|---|---|---|---|
+| THE SKY | 220.98 / 533.79 / 814.79 / 1121.85 | 298.362 | 296.906 | −0.2448 | −0.2378 | 2.221 | 2.262 |
+| control, L2000 | 220.44 / 537.29 / 811.06 / 1123.99 | 298.441 | 295.308 | −0.2443 | −0.2292 | 2.204 | 2.225 |
+| namesake, L2000 | 221.11 / 538.63 / 815.49 / 1130.79 | 300.589 | 297.189 | −0.2494 | −0.2332 | 2.274 | 2.336 |
+| **ARM OF RECORD** | **220.03 / 536.25 / 811.59 / 1125.11** | **299.057** | **295.782** | **−0.2488** | **−0.2331** | **2.291** | **2.349** |
+| hier, control | 220.45 / 537.31 / 811.04 / 1123.96 | 298.429 | 295.299 | −0.2442 | −0.2291 | 2.204 | 2.225 |
+| hier, namesake | 221.11 / 538.64 / 815.47 / 1130.76 | 300.578 | 297.180 | −0.2493 | −0.2331 | 2.274 | 2.335 |
+| **hier, ARM OF RECORD** | **220.03 / 536.27 / 811.58 / 1125.02** | **299.029** | **295.773** | **−0.2486** | **−0.2330** | **2.291** | **2.348** |
+
+**The locator is validated on the sky first**: it returns 2.221 / 2.262 against `sec:intro`'s published
+2.217 / 2.277, 0.2 and 0.7 per cent.
+
+**Which statements hold on the arm of record:**
+
+| statement | its referent | fate |
+|---|---|---|
+| l.148 "the first three peaks within a grid step of the measured ones" | arm vs **sky**, first **three** peaks | ⛔ **FAILS**: offsets −0.95, **+2.46**, **−3.20** against a grid step of 2 |
+| l.2074 "within a multipole on every peak" | **hier vs line-of-sight**, one arm | ✔ **HOLDS, by a factor of twelve** — see ⓵b |
+| l.2075 "within one per cent on the heights" | the same two paths | ✔ **HOLDS, by a factor of sixty** — see ⓵b |
+
+**The comb and the parting, as you have them:** 299.057 against the sky's 298.362 → **299.1 against
+298.4, a part in 429**; the parting **299.06 against the ruler's 302.89** (the geometric ℓ_A is
+bit-identical on both arms at 302.8891, so the ruler cannot see the arm while the comb moves by 1.5).
+
+⛭ **The finding, which is not a figure: the re-point moves the POSITIONS toward the sky and the HEIGHTS
+away from it.** The comb's agreement improves from 1 part in 134 to 1 part in 429, while P₁/P₂ against
+the sky goes +2.40 → +3.16 per cent and P₁/P₃ +3.24 → +3.82. And the **control** is nearer the sky than
+either arm on the heights (−0.75 per cent), which is the direction l.146 already asserts.
+
+### ⓵b l.2074–2075's evidence pair is a MIXED-BASIS comparison, and that is the whole of the problem
+
+I flagged last turn that l.2074's claim looked false in its own printed figures. **It is not false; the
+figures offered as its evidence are not one measurement.** l.2072–2074 compares hier peaks located
+**sub-bin on a unit-step grid** (221.96 / 536.11 / 815.40 / 1130.53) against line-of-sight **raw maxima
+quantised to even ℓ by LSTEP=2** (222 / 538 / 818 / 1134), giving offsets −0.04, −1.90, −2.60, −3.47.
+The paper says so in terms and then compares them anyway.
+
+⇒ **Both paths through the one matched locator agree to ≤ 0.084 of a multipole at every peak and to
+0.011 % / 0.017 % on the height ratios, on the namesake and the arm of record alike.** So the claim holds
+comfortably. **The repair is to print the matched pair, or to say the line-of-sight figures are
+grid-snapped so the printed comparison is an upper bound.** Your call; I have not touched the paper.
+
+### ⓵c My prediction that the second instrument "cannot be done" is FALSIFIED
+
+It is done, through the **grid** bank `refit_grid185_leafrec1_distances/cr_base.npz` (and
+`refit_grid185/{lcdm,cr}_base.npz`), not anything in `spectra/`. **Cause, because it is reusable: I
+searched by FILENAME CONVENTION instead of asking which receipt computes the quantity** — the same genus
+as keying order detection on heading format. The two `spectra/r6784_cr_crossing_hier{,_leafrec1}.npz`
+banks sit at ℓ_A ≈ 172, the H₀ = 73 crossing, and are the wrong configuration.
+
+### ⓺ l.2147's intercept, and why it must move to the same fit as the comb
+
+l.2147's **−0.2349 against the sky's −0.2405** is the **namesake's raw-grid three-peak** pair. The pair
+that goes with a landed comb of **299.1** is the **matched four-peak** one: **−0.2488 against the sky's
+−0.2448** (three-peak: −0.2331 against −0.2378). ⇒ *Printing a four-peak comb beside a three-peak
+intercept would mix two fits inside one paragraph, which is why items ⓵ and ⓺ have to land together as
+you say.*
+
+### ⛔ The LSTEP=2 trap, in its purest form — and it decides which figure l.813 can take
+
+l.2073–2074 prints "this path's" peaks and heights from the **raw-grid** method. On the arm of record
+that method gives **220, 536, 814, 1130**, comb **297.0**, φ/π **−0.2379**, heights **2.281 / 2.312** —
+and its first three maxima land on the **control's own cells**, so its comb and φ come out
+**bit-identical to the control's** while the heights do not; only the fourth peak separates them (1130
+against the control's 1128). ⇒ **So l.813's arm-of-record comb cannot come from this method.** 299.1 is
+the matched locator's; 297.0 is an artefact of where the cells fall.
+
+### ⓸ The three-grid truncation, l.1958–1966 — every claim holds, all seven figures move
+
+70's `audit_leafrec1.py` reproduces here in 21.5 s, byte-identical to its banked log.
+
+| cut | 850 | 1000 | 1200 | 1400 | 1600 | 1800 | (1900) | 1996 |
+|---|---|---|---|---|---|---|---|---|
+| paper now | −1.0 | +14.4 | +51.0 | +67.9 | +74.7 | +84.0 | (+88.3) | +93.8 |
+| **arm of record** | **−1.1** | **+14.2** | **+49.5** | **+66.7** | **+72.6** | **+81.3** | (+85.2) | **+90.2** |
+
+| claim | namesake | **arm of record** |
+|---|---|---|
+| "more than half … eight hundred multipoles below the ceiling" | 54.4 % | **54.9 %** |
+| "about half, between ℓ≃850 and 1500" | 52.2 % | **51.8 %** |
+| "a third … below the onset" | 30.8 % | **32.1 %** |
+| "not converged — grows to the last bin" | +5.5 | **+5.0** |
+| "within about one unit of the control" | 1.1 | **0.3** |
+
+⛭ **Two things get STRONGER.** The forbidden arm sits within **0.3** of the control at every one of eight
+ceilings, fourfold tighter than "about one unit" — **recommendation: state it as "within three tenths of
+a unit"**. And the stamped difference between the arms narrows from the pair `('LEAFGEOM','LEAFREC')` to
+**`('LEAFGEOM',)` alone**, because both arms now read `_leafrec1` siblings: the comparison is now
+like-for-like in the stamps as well as the sampling.
+
+### ⚠ Flagged, NOT asserted, NOT acted on
+
+1. **l.1953–1955's four-ceiling run lengths** (`9, 9, 13, 22` and `9, 9, 9, 12`, "eight or nine" at the
+   bottom) match **neither audit's** `longest` column at any four of its eight ceilings — both audits
+   give specified `4, 5, 11, 20, 23, 23, 27, 33` and forbidden `4, 4, 4, 5, 7, 8, 8, 8`. The figures that
+   DO appear there are the **preceding** paragraph's full-range 22 and 12 (l.1941–1946). ⇒ That sentence
+   reads a **different run-length convention** from the audit it cites, and its source needs establishing
+   before it can be re-pointed. It is cited to the three-grid receipt, which gates none of it.
+2. **The audit's contrast coefficients** are `−0.0670 ± 0.0086` (−7.78σ) and `−0.0092 ± 0.0085` (−1.09σ)
+   against l.1941–1946's `−0.0642` and `−0.0069 ± 0.0083`. **The namesake audit gives the same pair, so
+   this is not a re-point consequence**; the two routes may simply differ, and that paragraph has its own
+   receipt.
+3. **70's `** DIFFERS **` line** (`forbidden cr chi2 186.1350 (receipt 184.989) crossings 87 (91)`) is
+   70's own, against namesake receipt literals, and the wrapper says so by construction.
+
+### Two gate repairs taken rather than carried
+
+- **A gate of mine had been passing VACUOUSLY since `r7109`.** The three-grid receipt's control-hash gate
+  read `('SHA' in OUT or 'sha' in OUT)` — the audit prints no hash, but its first line is a
+  `RuntimeWarning` carrying `/home/user/shadow-of-existence/`, and `'sha'` matches `sha`dow. The
+  `1 distinct` it ANDed with came from the ell-sampling lines, not the control. Both conjuncts true for
+  unrelated reasons, on both audits, for the gate's whole life. It now reads the audit's own
+  byte-identity line.
+- **And that receipt had never opened the paper** whose figures its labels attributed to it.
+  `check_unread_figure` was right, **for the fourth time on this seat**. PART 6 now READS the paragraph
+  out of `corpus/CR_cosmology.tex` — nine reads, each tested against the run — with the two spans this
+  turn proposes rewording held as disjunctions and the rest pinned hard. Six new quote-pin keys,
+  adjudicated DELIBERATE; three spans had to be **reshaped** first, because the paper's leading "with"
+  and "even though" would have left them dangling under the subject rule.
+
+### ⌗ The methodological finding of this turn, since it is the same one four times
+
+Four of five registered commitments are falsified, and **every one by the same move: reasoning from a
+neighbouring quantity instead of the one asked about.** ⓵a attached two statements to arm-vs-sky when
+they compare two instrument paths; ⓵c keyed a bank search on a filename convention; ⓶ transferred
+`r_D`'s VISLEAF-family response to a different comparison; ⓸ reasoned from the figure the order named
+instead of the table it came out of. *The cheap guard is the one that worked every time it was applied:
+establish the referent from the paper before predicting anything about it.*
+
+---
+
 ## ⚑ `r7467` — **PIN FIRE ROUTED: the `open-list` pin, and it fired because the open list actually changed**
 
 `check_explainer_pins` fired on `open-list` at `EXPLAINER.md` l.268 — *"Each of the papers says plainly what

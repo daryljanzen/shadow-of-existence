@@ -142,9 +142,11 @@ print("  PART 1 -- ** THE COMB, THE PHASE AND THE PEAKS **")
 print("=" * 112)
 print(f"  {'configuration':>34} {'l_A rep':>8} {'peaks':>26} {'fitted comb':>12} {'phi/pi':>8} "
       f"{'l1/lA':>7}")
+# ⛭ r7653 ⓵: the ARM OF RECORD row joins PART 1 and PART 2, because l.2073-2074 prints THIS path's
+#   raw-grid peaks (222/538/818/1134) and heights (2.264/2.298) and they are the NAMESAKE's.
 for nm, s in (('control (LCDM)', CTL), ('the arm as coded, H0 = 73.0', CODED),
               ('crossing, H0 = 73.0', X73), ('** crossing, H0 = 68.6 **', NEW),
-              ('run 1, the pin', PIN)):
+              ('** the same, ARM OF RECORD **', AORD), ('run 1, the pin', PIN)):
     print(f"  {nm:>34} {s['lA_rep']:>8.1f} {str([int(v) for v in s['P']]):>26} {s['lA']:>12.1f} "
           f"{s['phi'] / np.pi:>8.4f} {s['P'][0] / s['lA']:>7.4f}")
 print(f"  {'THE SKY':>34} {301.7:>8.1f} {str([float(v) for v in SKY]):>26} {lA_sky:>12.1f} "
@@ -170,7 +172,7 @@ print(f"  {'configuration':>34} {'P1/P2':>8} {'vs sky':>8} {'P1/P3':>8} {'vs sky
       f"{'g2/g1':>8} {'g3/g2':>8}")
 for nm, s in (('control (LCDM)', CTL), ('the arm as coded, H0 = 73.0', CODED),
               ('crossing, H0 = 73.0', X73), ('** crossing, H0 = 68.6 **', NEW),
-              ('run 1, the pin', PIN)):
+              ('** the same, ARM OF RECORD **', AORD), ('run 1, the pin', PIN)):
     print(f"  {nm:>34} {s['p12']:>8.3f} {(s['p12'] / SKY_P12 - 1) * 100:>+7.1f}% {s['p13']:>8.3f} "
           f"{(s['p13'] / SKY_P13 - 1) * 100:>+7.1f}% {s['g21']:>8.4f} {s['g32']:>8.4f}")
 g_sky = np.diff(SKY)
@@ -357,7 +359,13 @@ _RAT[_msk] = _cle[_msk] / _clu[_msk]
 
 
 def _locate(Db, W, n=4):
-    """`cc66.28`'s locator, unchanged, so the sky and both arms go through ONE procedure."""
+    """`cc66.28`'s locator, unchanged, so the sky and both arms go through ONE procedure.
+
+    ⛭ r7653 ⓵: it now returns the parabola's VERTEX VALUE beside its vertex position.  *The heights
+    l.2075 claims come from the SAME fit as the positions l.148 claims, over the SAME seven windows, on
+    the sky and on every arm -- which is the only way a height ratio can be compared with the sky's
+    published one without a second procedure smuggled in.*  Nothing about the positions changes.
+    """
     m = (_LC >= 100) & np.isfinite(Db)
     lf = np.arange(100.0, 1300.0, 1.0)
     Df = CubicSpline(_LC[m], Db[m])(lf)
@@ -369,28 +377,41 @@ def _locate(Db, W, n=4):
         c = np.polyfit(lf[k], Df[k], 2)
         if c[0] >= 0:
             continue
-        out.append(float(-c[1] / (2 * c[0])))
+        x = float(-c[1] / (2 * c[0]))
+        out.append((x, float(np.polyval(c, x))))
     return out[:n]
 
 
 def _sweep(Db):
-    A3, A4, PK = [], [], []
+    A3, A4, F3, F4, PK, HT = [], [], [], [], [], []
     for W in _WS:
-        p = _locate(Db, W)
-        if len(p) < 4:
+        ph = _locate(Db, W)
+        if len(ph) < 4:
             continue
+        p = [x for x, _h in ph]
         PK.append(p)
-        A3.append(fit_comb(p, 3)[0])
-        A4.append(fit_comb(p, 4)[0])
-    PK = np.array(PK)
-    return dict(pk=PK.mean(axis=0), a3=float(np.mean(A3)), a4=float(np.mean(A4)),
-                a4_s=float(np.std(A4, ddof=1)), nW=len(PK))
+        HT.append([h for _x, h in ph])
+        _l3, _f3 = fit_comb(p, 3)
+        _l4, _f4 = fit_comb(p, 4)
+        A3.append(_l3), F3.append(_f3), A4.append(_l4), F4.append(_f4)
+    PK, HT = np.array(PK), np.array(HT)
+    H = HT.mean(axis=0)
+    return dict(pk=PK.mean(axis=0), ht=H, a3=float(np.mean(A3)), a4=float(np.mean(A4)),
+                f3=float(np.mean(F3)), f4=float(np.mean(F4)),
+                a4_s=float(np.std(A4, ddof=1)), nW=len(PK),
+                p12=float(H[0] / H[1]), p13=float(H[0] / H[2]))
 
 
-def _matched(fn):
-    z = np.load(os.path.join(SPEC, fn))
+def _matched(fn, lensed=True):
+    """`fn` is a `spectra/` basename or, for the hierarchy path, a path under `beyond_the_wall/`."""
+    _p = fn if os.path.isabs(fn) else os.path.join(SPEC, fn)
+    if not os.path.exists(_p):
+        _p = os.path.join(ROOT, 'computations', 'beyond_the_wall', fn)
+    z = np.load(_p)
     ls, Dl = np.asarray(z['ls'], float), np.asarray(z['Dl'], float)
-    s = _sweep(CS.bin_spectrum(ls, Dl * np.interp(ls, _CLG, _RAT)) * _FACB)
+    if lensed:
+        Dl = Dl * np.interp(ls, _CLG, _RAT)
+    s = _sweep(CS.bin_spectrum(ls, Dl) * _FACB)
     s['lA_rep'] = float(z['l_A'])
     return s
 
@@ -414,7 +435,12 @@ _TEXW = re.sub(r'\s+', ' ', open(os.path.join(ROOT, 'corpus', 'CR_cosmology.tex'
                                  encoding='utf-8').read())
 _M813 = re.search(r"fitted to those peaks by the procedure this paper runs on the sky, it is "
                   r"\$([0-9.]+)\$ against the sky's \$([0-9.]+)\$", _TEXW)
-_M945 = re.search(r"the comb at \$([0-9.]+)\$ against a reported scale of \$([0-9.]+)\$", _TEXW)
+#: ⛭ r7653 ⓵: l.945's locator is a disjunction over the two WORDINGS, not just the two figures.  *69's
+#:   order says the landed sentence prints "the parting (299.06 against the ruler's 302.89) beside it",
+#:   which is a different clause from "the comb at 298.0 against a reported scale of 302.9".  So both
+#:   forms are tried and the ruler is read from whichever is there.*
+_M945 = (re.search(r"the comb at \$([0-9.]+)\$ against a reported scale of \$([0-9.]+)\$", _TEXW)
+         or re.search(r"\$([0-9.]+)\$ against the ruler's \$([0-9.]+)\$", _TEXW))
 PAPER = dict(comb=float(_M813.group(1)) if _M813 else None,
              sky=float(_M813.group(2)) if _M813 else None,
              ruler=float(_M945.group(2)) if _M945 else None)
@@ -423,15 +449,144 @@ print(f"  read out of corpus/CR_cosmology.tex: l.813's comb/sky = "
       + ("" if _M813 and _M945 else "   ⛔ ALT ARM: a sentence was not locatable in this form"))
 
 _MSKY = _sweep(CS.X_DATA * _FACB)
+_MCTL = _matched('cc66_lcdm_L2000.npz')
 _MNSK = _matched('cc66_cr_x_h686_L2000.npz')
 _MAOR = _matched('cc66_cr_x_h686_L2000_leafrec1_distances.npz')
-print(f"  {'row':>34} {'peaks (matched locator)':>30} {'comb 1-4':>10} {'1-3':>8} {'geom l_A':>9}")
+# ⛭⛭ r7653 ⓵: THE SECOND INSTRUMENT -- the HIERARCHY path l.2070-2076 reads, through the SAME locator.
+#   *`r7653`'s ⓵c predicted this could not be done for want of a bank, and that prediction is
+#   FALSIFIED: the arm-of-record hierarchy spectrum is not in `spectra/` under any `*_leafrec1_distances`
+#   name -- it is a GRID bank, `refit_grid185_leafrec1_distances/cr_base.npz`, reached through
+#   `...the_full_range_refit_holds_the_background...`'s own `GRIDS` map.  ** The cause is worth keeping:
+#   I searched by FILENAME CONVENTION instead of asking which receipt computes the quantity. **  (The two
+#   `spectra/r6784_cr_crossing_hier{,_leafrec1}.npz` banks sit at `l_A` ~ 172, the H0=73 crossing, so
+#   they are the wrong configuration and are not it.)*
+_MHCT = _matched('refit_grid185/lcdm_base.npz')
+_MHNS = _matched('refit_grid185/cr_base.npz')
+_MHAO = _matched('refit_grid185_leafrec1_distances/cr_base.npz')
+# ⌗ *the phi column is PART 1's own convention, `fit_comb()[1] / pi`, so the rows here and the rows
+#   there are the same quantity and l.2147's pair can be read against either.*
+print(f"  {'row':>34} {'peaks (matched locator)':>30} {'comb 1-4':>10} {'1-3':>8} "
+      f"{'phi/pi 1-4':>11} {'1-3':>9} {'P1/P2':>7} {'P1/P3':>7} {'geom l_A':>9}")
 for _nm, _s in (('THE SKY, this locator', _MSKY),
+                ('the CONTROL, L2000', _MCTL),
                 ('namesake L2000 (LEAFREC=0)', _MNSK),
-                ('** ARM OF RECORD, distances **', _MAOR)):
+                ('** ARM OF RECORD, distances **', _MAOR),
+                ('--- hier: the CONTROL', _MHCT),
+                ('--- hier: namesake', _MHNS),
+                ('--- hier: ** ARM OF RECORD **', _MHAO)):
     _g = f"{_s['lA_rep']:9.3f}" if 'lA_rep' in _s else f"{'--':>9}"
     print(f"  {_nm:>34} {' '.join(f'{v:7.2f}' for v in _s['pk'])} {_s['a4']:>10.3f} "
-          f"{_s['a3']:>8.3f} {_g}")
+          f"{_s['a3']:>8.3f} {_s['f4'] / np.pi:>11.4f} {_s['f3'] / np.pi:>9.4f} "
+          f"{_s['p12']:>7.3f} {_s['p13']:>7.3f} {_g}")
+print(f"  the sky's own published pair, `sec:intro`'s: P1/P2 {SKY_P12}, P1/P3 {SKY_P13}; this locator "
+      f"returns {_MSKY['p12']:.3f} / {_MSKY['p13']:.3f} on the sky")
+for _nm, _s in (('control', _MCTL), ('namesake', _MNSK), ('ARM OF RECORD', _MAOR)):
+    print(f"    against the sky's own locator values, {_nm:>13}: P1/P2 "
+          f"{100 * (_s['p12'] / _MSKY['p12'] - 1):+6.2f}%   P1/P3 "
+          f"{100 * (_s['p13'] / _MSKY['p13'] - 1):+6.2f}%")
+# ⛭⛭⛭ r7653 ⓵: AND THIS IS THE ANSWER TO THE QUESTION `MEASURED_item1.md` FLAGGED AND DID NOT ASSERT.
+#   *l.2075 claims the two instrument paths agree "within a multipole on every peak".  Read off the
+#   figures l.2072-2074 PRINTS -- hier 221.96/536.11/815.40/1130.53 against "this path's" 222/538/818/
+#   1134 -- the offsets are -0.04, -1.90, -2.60, -3.47, and the claim is false in its own numbers.
+#   ** But those two are not one measurement: the hier figures are located SUB-BIN on a unit-step grid
+#   and the line-of-sight figures are RAW MAXIMA on an LSTEP=2 grid, quantised to even `ell`. **  The
+#   paper says so in terms, and then compares them anyway.  ⇒ Put BOTH paths through the one matched
+#   locator and they agree to under a tenth of a multipole at every peak and to a hundredth of a per
+#   cent on the heights, on the namesake and on the arm of record alike.  *So the claim HOLDS, and
+#   comfortably; what does not hold is the pair of figures offered as its evidence.*
+for _nm, _h, _l in (('namesake', _MHNS, _MNSK), ('ARM OF RECORD', _MHAO, _MAOR)):
+    print(f"    hierarchy against line-of-sight, ONE locator on both, {_nm:>13}: peak offsets "
+          f"{' '.join(f'{a - b:+.2f}' for a, b in zip(_h['pk'], _l['pk']))}  "
+          f"P1/P2 {100 * (_h['p12'] / _l['p12'] - 1):+.3f}%  "
+          f"P1/P3 {100 * (_h['p13'] / _l['p13'] - 1):+.3f}%")
+print(f"    against which the paper's own printed pair, l.2072-2074, offers "
+      f"-0.04 -1.90 -2.60 -3.47 -- hier located sub-bin, line-of-sight quantised to even `ell`")
+
+#: ⛭⛭⛭ r7653 ⓵ -- ** THE TABLE IS PINNED, ROW BY ROW, BY ONE PROCEDURE. **  *69's order asks for the
+#:   four peaks, the four- and three-peak combs, phi/pi, and P1/P2 and P1/P3 for the arm, the control
+#:   and the sky, plus the same on the second instrument.  Every figure below is held to the digit it is
+#:   tabled at, so a re-point of any bank fails here rather than changing a reported number silently.*
+for _nm, _s, _PKL, _A4, _A3, _F4, _P12, _P13 in (
+        ('THE SKY', _MSKY, (220.98, 533.79, 814.79, 1121.85), 298.362, 296.906, -0.7692, 2.221, 2.262),
+        ('the control, L2000', _MCTL, (220.44, 537.29, 811.06, 1123.99), 298.441, 295.308, -0.7674,
+         2.204, 2.225),
+        ('the namesake, L2000', _MNSK, (221.11, 538.63, 815.49, 1130.79), 300.589, 297.189, -0.7835,
+         2.274, 2.336),
+        ('the ARM OF RECORD', _MAOR, (220.03, 536.25, 811.59, 1125.11), 299.057, 295.782, -0.7815,
+         2.291, 2.349),
+        ('hier, the control', _MHCT, (220.45, 537.31, 811.04, 1123.96), 298.429, 295.299, -0.7672,
+         2.204, 2.225),
+        ('hier, the namesake', _MHNS, (221.11, 538.64, 815.47, 1130.76), 300.578, 297.180, -0.7834,
+         2.274, 2.335),
+        ('hier, the ARM OF RECORD', _MHAO, (220.03, 536.27, 811.58, 1125.02), 299.029, 295.773,
+         -0.7811, 2.291, 2.348)):
+    check(f"⛭ the matched locator's whole row for {_nm} is held to its tabled digits -- four peaks, "
+          f"both combs, phi and both height ratios, over all seven windows",
+          _s['nW'] == 7
+          and all(abs(float(a) - b) <= 0.005 for a, b in zip(_s['pk'], _PKL))
+          and abs(_s['a4'] - _A4) <= 0.0005 and abs(_s['a3'] - _A3) <= 0.0005
+          and abs(_s['f4'] - _F4) <= 5e-5
+          and abs(_s['p12'] - _P12) <= 0.0005 and abs(_s['p13'] - _P13) <= 0.0005,
+          f"peaks {' '.join(f'{v:.2f}' for v in _s['pk'])}; combs {_s['a4']:.3f}/{_s['a3']:.3f}; "
+          f"phi {_s['f4']:.4f}; heights {_s['p12']:.3f}/{_s['p13']:.3f}")
+
+check("⛭⛭ ** THE LOCATOR IS VALIDATED ON THE SKY BEFORE ANYTHING IS READ OFF IT: ** it returns P1/P2 "
+      "2.221 and P1/P3 2.262 against `sec:intro`'s own published 2.217 and 2.277 -- 0.2 and 0.7 per "
+      "cent.  *A locator that could not find the sky's own height ratios would not be evidence about "
+      "an arm's.*",
+      abs(_MSKY['p12'] / SKY_P12 - 1) < 0.005 and abs(_MSKY['p13'] / SKY_P13 - 1) < 0.01,
+      f"sky locator {_MSKY['p12']:.3f}/{_MSKY['p13']:.3f} against published {SKY_P12}/{SKY_P13}")
+
+check("⛭⛭⛭ ** THE RE-POINT MOVES THE POSITIONS TOWARD THE SKY AND THE HEIGHTS AWAY FROM IT, which is "
+      "the finding and not a figure. **  *The comb's agreement improves from 1 part in 134 to 1 part "
+      "in 429, while P1/P2 against the sky goes +2.40 to +3.16 per cent and P1/P3 +3.24 to +3.82.  And "
+      "the CONTROL is nearer the sky than either arm on the heights, -0.75 per cent, which is the "
+      "direction l.146's 'the heights are the path's and the positions are the construction's' already "
+      "asserts.*",
+      abs(_MAOR['a4'] - _MSKY['a4']) < abs(_MNSK['a4'] - _MSKY['a4'])
+      and abs(_MAOR['p12'] / _MSKY['p12'] - 1) > abs(_MNSK['p12'] / _MSKY['p12'] - 1)
+      and abs(_MAOR['p13'] / _MSKY['p13'] - 1) > abs(_MNSK['p13'] / _MSKY['p13'] - 1)
+      and abs(_MCTL['p12'] / _MSKY['p12'] - 1) < abs(_MNSK['p12'] / _MSKY['p12'] - 1),
+      f"positions {abs(_MNSK['a4'] - _MSKY['a4']):.3f} -> {abs(_MAOR['a4'] - _MSKY['a4']):.3f}; "
+      f"heights {100 * (_MNSK['p12'] / _MSKY['p12'] - 1):+.2f}% -> "
+      f"{100 * (_MAOR['p12'] / _MSKY['p12'] - 1):+.2f}%; control "
+      f"{100 * (_MCTL['p12'] / _MSKY['p12'] - 1):+.2f}%")
+
+check("⛭⛭⛭ ** AND THE SECOND INSTRUMENT ANSWERS l.2075 IN ITS FAVOUR, ON BOTH ARMS, ONCE THE TWO PATHS "
+      "GO THROUGH ONE PROCEDURE. **  *The hierarchy path and the line-of-sight path agree to under a "
+      "tenth of a multipole at every peak and to under a twentieth of a per cent on both height "
+      "ratios.*  ⇒ *** So 'within a multipole on every peak and within one per cent on the heights' "
+      "HOLDS, and comfortably.  What does not hold is the PAIR OF FIGURES l.2072-2074 offers as its "
+      "evidence: hier located sub-bin on a unit-step grid against line-of-sight maxima quantised to "
+      "even `ell` by LSTEP=2, which gives offsets -0.04, -1.90, -2.60 and -3.47 and makes the claim "
+      "look false in its own numbers. ***",
+      max(abs(float(a) - float(b)) for _h, _l in ((_MHNS, _MNSK), (_MHAO, _MAOR))
+          for a, b in zip(_h['pk'], _l['pk'])) < 0.10
+      and max(abs(_h['p12'] / _l['p12'] - 1) for _h, _l in ((_MHNS, _MNSK), (_MHAO, _MAOR))) < 0.0005
+      and max(abs(_h['p13'] / _l['p13'] - 1) for _h, _l in ((_MHNS, _MNSK), (_MHAO, _MAOR))) < 0.0005,
+      f"worst peak offset {max(abs(float(a) - float(b)) for _h, _l in ((_MHNS, _MNSK), (_MHAO, _MAOR)) for a, b in zip(_h['pk'], _l['pk'])):.3f} in ell")
+
+#: ⛔⛭⛭ r7653 ⓵ -- ** AND THE RAW-GRID ROW ON THE ARM OF RECORD IS THE LSTEP=2 TRAP IN ITS PUREST FORM. **
+#:   *l.2073-2074 prints "this path's" peaks and heights from `score()`, the RAW-GRID method: the
+#:   namesake gives 222/538/818/1134, comb 298.0, phi/pi -0.2349, heights 2.264/2.298.  On the arm of
+#:   record the same method gives 220/536/814/1130 -- and its first THREE maxima land on the CONTROL's
+#:   own cells, so its three-peak comb (297.0) and its phi (-0.2379) come out BIT-IDENTICAL to the
+#:   control's while the heights (2.281/2.312) do not.*  ⇒ ** So the arm-of-record figure for l.813's
+#:   comb cannot come from this method: 69's landed 299.1 is the MATCHED locator's 299.057, and the
+#:   raw grid's 297.0 is an artefact of where the LSTEP=2 cells fall. **
+check("⛔⛭⛭ the raw-grid row on the arm of record is held to its own digits -- peaks 220/536/814/1130, "
+      "comb 297.0, phi/pi -0.2379, heights 2.281 and 2.312 -- AND its comb and phi are bit-identical "
+      "to the control's, because its first three maxima land on the control's own LSTEP=2 cells while "
+      "its fourth does not (1130 against the control's 1128)",
+      [int(v) for v in AORD['P']] == [220, 536, 814, 1130]
+      and abs(AORD['lA'] - 297.0) < 0.05 and abs(AORD['phi'] / np.pi - (-0.2379)) < 5e-5
+      and abs(AORD['p12'] - 2.281) < 0.0005 and abs(AORD['p13'] - 2.312) < 0.0005
+      and AORD['lA'] == CTL['lA'] and AORD['phi'] == CTL['phi']
+      and [int(v) for v in AORD['P']][:3] == [int(v) for v in CTL['P']][:3]
+      and int(AORD['P'][3]) != int(CTL['P'][3]),
+      f"arm of record raw grid {[int(v) for v in AORD['P']]} comb {AORD['lA']:.1f} "
+      f"phi/pi {AORD['phi'] / np.pi:.4f} heights {AORD['p12']:.3f}/{AORD['p13']:.3f}; "
+      f"control {[int(v) for v in CTL['P']]} comb {CTL['lA']:.1f} phi/pi {CTL['phi'] / np.pi:.4f}")
 print(f"\n  the RAW-GRID method `score()` uses, for the provenance: the namesake's maxima are "
       f"{[int(v) for v in NEWL2['P']]},")
 print(f"  every one an even multipole on the LSTEP=2 grid, and their three-peak comb is "
@@ -450,18 +605,41 @@ check("⛭⛭⛭ ** THE PORT IS FAITHFUL, WHICH IS THE ONLY REASON THE ROWS BELO
       and (PAPER['sky'] is None or abs(fit_comb(SKY, 3)[0] - PAPER['sky']) < 0.06),
       f"sky comb 1-4 = {_MSKY['a4']:.3f} +- {_MSKY['a4_s']:.3f} over {_MSKY['nW']} windows; "
       f"sec:intro's three-peak {fit_comb(SKY, 3)[0]:.2f}")
-check("⛔⛭⛭ ** AND THE PAPER'S 298.0 IS NOT THE PROCEDURE THE SENTENCE NAMES. **  By that procedure "
-      "the NAMESAKE's comb is 300.589 and the ARM OF RECORD's is 299.057, neither of them 298.0.  "
-      "The 298.0 is the namesake's raw-grid three-peak comb, on maxima quantised to even `ell` by "
-      "`LSTEP=2`.  ⇒ *The pair (298.0, 298.4) is consistent in its FIT -- both three-peak -- and the "
-      "arm's half of it is not located by the parabolic procedure at all*",
+#: ⛭⛭⛭ r7653 ⓵ -- ** THE LANDED FORM: THIS GATE IS NOW A DISJUNCTION OVER THE TWO STATES l.813 CAN BE
+#:   IN, because this turn's table proposes the second one and 69 lands it. **
+#:   ⓐ THE NAMESAKE STATE, which the paper is in as this is written: l.813 prints `298.0`, and that is
+#:     the NAMESAKE's RAW-GRID three-peak comb on maxima quantised to even `ell`, not the procedure the
+#:     sentence names.  The finding is that the matched locator gives 300.589 there, over two multipoles
+#:     away, so the arm's half of the printed pair is not located by the named procedure at all.
+#:   ⓑ THE LANDED STATE: l.813 prints the MATCHED locator's own figure, `299.1` from 299.057, against
+#:     the sky's `298.4` from the matched 298.362 -- a part in 429.  There the printed pair IS the named
+#:     procedure on both halves, and the provenance finding above is RESOLVED rather than standing.
+#:   ⌗ *A gate pinned to ⓐ alone would go red the day 69 lands the table this turn tables; one pinned to
+#:   ⓑ alone is red today.  Both arms are asserted, the state is PRINTED, and a MIXED state -- a figure
+#:   that is neither -- fails.*
+_PCOMB = None
+if PAPER['comb'] is not None:
+    if abs(NEWL2['lA'] - PAPER['comb']) < 0.05:
+        _PCOMB = 'namesake raw-grid (298.0)'
+    elif abs(round(_MAOR['a4'], 1) - PAPER['comb']) < 0.05:
+        _PCOMB = 'arm of record, matched locator (299.1)'
+print(f"  l.813's comb is in the state: {_PCOMB}")
+check("⛭⛭⛭ ** l.813's COMB IS ONE OF THE TWO STATES THIS QUANTITY HAS, AND THE PROVENANCE ARGUMENT IS "
+      "STATED FOR EACH. **  *In the namesake state the paper's 298.0 IS NOT the procedure the sentence "
+      "names: by that procedure the namesake gives 300.589 and the arm of record 299.057, and 298.0 is "
+      "the namesake's RAW-GRID three-peak comb on maxima quantised to even `ell` by LSTEP=2 -- the pair "
+      "(298.0, 298.4) being internally consistent in its FIT, both three-peak, while the arm's half is "
+      "not parabolically located at all.  In the landed state the paper prints the matched locator's "
+      "own 299.1 against the sky's 298.4 and the provenance finding is resolved.*",
       abs(_MNSK['a4'] - 300.589) < 0.01 and abs(_MAOR['a4'] - 299.057) < 0.01
       and abs(NEWL2['lA'] - 298.00) < 0.005
       and all(float(v) % 2.0 == 0.0 for v in NEWL2['P'])
-      and (PAPER['comb'] is None or abs(NEWL2['lA'] - PAPER['comb']) < 0.05)
-      and (PAPER['comb'] is None or abs(_MNSK['a4'] - PAPER['comb']) > 2.0),
-      f"matched: namesake {_MNSK['a4']:.3f}, arm of record {_MAOR['a4']:.3f}; raw-grid namesake "
-      f"{NEWL2['lA']:.2f} on peaks {[int(v) for v in NEWL2['P']]}")
+      and (PAPER['comb'] is None or _PCOMB is not None)
+      and (_PCOMB != 'namesake raw-grid (298.0)' or abs(_MNSK['a4'] - PAPER['comb']) > 2.0)
+      and (_PCOMB != 'arm of record, matched locator (299.1)'
+           or abs(_MAOR['a4'] - PAPER['comb']) < 0.05),
+      f"state {_PCOMB}; matched: namesake {_MNSK['a4']:.3f}, arm of record {_MAOR['a4']:.3f}; "
+      f"raw-grid namesake {NEWL2['lA']:.2f} on peaks {[int(v) for v in NEWL2['P']]}")
 _gap_ns = _MNSK['a4'] - _MSKY['a4']
 _gap_ao = _MAOR['a4'] - _MSKY['a4']
 print(f"\n  against the sky, by the named procedure: namesake {_gap_ns:+.3f} in ell "
@@ -487,7 +665,8 @@ check("⛭⛭⛭ ** AND HERE IS THE PARTING `cc66.81` FOUND, IN ITS CLEANEST FOR
       _MNSK['lA_rep'] == _MAOR['lA_rep']
       and abs(_MNSK['a4'] - _MAOR['a4']) > 1.0
       and _MAOR['a4'] / _MAOR['lA_rep'] < _MNSK['a4'] / _MNSK['lA_rep'] < 1.0
-      and (PAPER['ruler'] is None or abs(_MAOR['lA_rep'] - PAPER['ruler']) < 0.05),
+      and (PAPER['ruler'] is None or abs(_MAOR['lA_rep'] - PAPER['ruler']) < 0.05
+           or abs(round(_MAOR['lA_rep'], 2) - PAPER['ruler']) < 0.005),
       f"geometric l_A identical at {_MAOR['lA_rep']:.4f}; fitted comb {_MNSK['a4']:.3f} -> "
       f"{_MAOR['a4']:.3f}; fitted/geometric {100 * (_MNSK['a4'] / _MNSK['lA_rep'] - 1):+.3f}% -> "
       f"{100 * (_MAOR['a4'] / _MAOR['lA_rep'] - 1):+.3f}%")
@@ -524,6 +703,15 @@ print(f"""
   *`sec:refit-bound`'s standing finding is that the spacing is right and the acoustic phase is the
   disagreement; on this configuration that is still true, and it is now the ONLY thing left in the
   positions.*
+    ⛭ **and on the ARM OF RECORD, by this same raw-grid method, it is {AORD['phi'] / np.pi:.4f} pi,
+    {abs(AORD['phi'] / phi_sky - 1) * 100:.1f}% from the sky's** -- which is NEARER, not further.  *But
+    that figure is the LSTEP=2 trap: the arm of record's first three raw maxima land on the control's
+    own cells, so its raw phase comes out bit-identical to the control's.  By the matched locator of
+    PART 4B, which is the procedure l.813's sentence names, the pair is {_MAOR['f4'] / np.pi:.4f} pi
+    against the sky's {_MSKY['f4'] / np.pi:.4f} pi on the four-peak fit, and {_MAOR['f3'] / np.pi:.4f}
+    against {_MSKY['f3'] / np.pi:.4f} on the three-peak one.*  ⇒ ** l.2147's intercept pair, -0.2349
+    against the sky's -0.2405, is the NAMESAKE's raw-grid three-peak fit; the pair that goes with a
+    landed comb of 299.1 is the matched four-peak one. **
 
   ⌗ ** AND THE CONFIGURATION IS THE 133-BIN UNLENSED ONE AT LMAXL = 1300. **  The corpus's own
   185-bin full-range lensed comparison needs ell ~ 2000 and is not run here.  *A number scored on
