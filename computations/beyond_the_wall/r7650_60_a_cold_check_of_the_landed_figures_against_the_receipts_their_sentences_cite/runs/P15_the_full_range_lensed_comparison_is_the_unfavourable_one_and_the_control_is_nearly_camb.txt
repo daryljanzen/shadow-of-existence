@@ -63,8 +63,66 @@ measured returning a spurious +13% enhancement at ell = 1900 where the full oper
    produced; every parameter in them is baked into the .npz. *** **
 
 
-Traceback (most recent call last):
-  File "/home/user/shadow-of-existence/receipts/P15_CR_cosmology/P15_the_full_range_lensed_comparison_is_the_unfavourable_one_and_the_control_is_nearly_camb.py", line 79, in <module>
-    import camb                                                                # noqa: E402
-    ^^^^^^^^^^^
-ModuleNotFoundError: No module named 'camb'
+========================================================================================================
+  PART 1 -- ** THE BIN COUNT AND THE OPERATOR **
+========================================================================================================
+  the arm reaches ell = 100 to 1998; the control 100 to 1998
+  ** bins fully covered: 185 **, ell 100 to 1996
+
+  the operator's lensed/unlensed at ell = 1900:  1.0666
+  ** P15_derived_lensing_on_the_lcdm_arm PART C gives +6.5% for the FULL operator there,
+     against the first-order kernel's spurious +13%.  This is the full operator. **
+
+========================================================================================================
+  PART 2 -- ** THE FOUR NUMBERS **
+========================================================================================================
+                          bins   unlensed    /bin     lensed    /bin    d(chi2)
+            control LCDM   185      696.0    3.76      214.1    1.16     -481.9
+  arm, crossing at 68.60   185     1129.8    6.11      502.1    2.71     -627.7
+
+========================================================================================================
+  PART 3 -- ** THE RATIO, AND IT MOVED THE UNFAVOURABLE WAY **
+========================================================================================================
+                                  comparison  arm/control
+            133-bin, unlensed (r6760+cc66.7)        1.98x
+                185-bin full range, unlensed        1.62x
+                  185-bin full range, LENSED        2.35x
+
+  ** WHY IT MOVES: LENSING IS WORTH PROPORTIONALLY MORE TO THE CONTROL. **  The control falls by a
+  factor 3.25 and the arm by 2.25, so the gap WIDENS.  *A smoothing operator helps a
+  spectrum whose peaks are already in the right place more than one whose fourth peak is 0.9% out
+  and whose acoustic phase is 2.3% out -- which is the same two residuals r6760+cc66.7 named, seen
+  from the likelihood's side.*
+
+  ⇒ *** SO THE x2.0 REPORTED AT cc66.7 WAS THE MORE FAVOURABLE OF THE TWO COMPARISONS, AND
+  2.35x IS THE ONE sec:SR-15 MUST QUOTE, ** because the corpus's own chi^2 values are quoted on
+  the full-range lensed configuration and a number scored on one may not be quoted against the
+  other. ***  *Both are stated here so neither can be picked for being the kinder.*
+
+========================================================================================================
+  PART 4 -- ** THE CONTROL AGAINST CAMB: THE FLAGGED CAVEAT IS WITHDRAWN **
+========================================================================================================
+                                       unlensed    lensed
+    CAMB LCDM (that receipt, PART A)      615.0     186.0
+        the c54.178 control (PART B)     1320.0       989
+                        THIS control      696.0     214.1
+
+  ⇒ ** THIS instrument's control is within 13% of CAMB unlensed and
+  15% lensed, where the c54.178 control was 2.1x CAMB's. **
+
+  *r6760+cc66.9 flagged, BEFORE these numbers existed, that the control might carry ~700 of transfer
+  inaccuracy on the full range -- "neither lensing's to close nor the arm's to answer for" -- and
+  said the ratio should be read rather than either absolute.* ⇒ *** The caveat DOES NOT BITE on this
+  configuration and is withdrawn rather than relied on.  The control is sound, so the ratio in PART
+  3 is a statement about the arm and not about the instrument. ***
+  ⌗ *It is recorded rather than deleted because it was stated in advance: a caveat raised before the
+  measurement and then dropped in silence is indistinguishable from one that was never raised.*
+
+  THE FIGURES THE `INDEX.md` ROW PRINTS, PINNED TWO-SIDED:
+    arm (no-fit, arm of record): unlensed 1129.76, lensed 502.09, 2.714 per bin, ratio 2.3456;  l_A 302.8891
+    control (unmoved): unlensed 696.0, lensed 214.06, 1.16 per bin
+    lensing's reduction: control x3.25, arm x2.25;  unlensed ratio 1.6233
+
+========================================================================================================
+  ✓ ALL CHECKS PASSED
+========================================================================================================

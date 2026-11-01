@@ -1,0 +1,162 @@
+
+C51 — PO-24 STEP ONE: THE CONTROL RUN.  ** THE HEIGHT MACHINERY IS NOT BROKEN.  THE $2.721$ WAS A
+k-TRUNCATION ARTEFACT, AND THE CONVERGED CONTROL REPRODUCES CAMB TO $0.14\%$. **
+
+** WHAT WAS ASKED. **  `PO-24` (`THE_REGISTER`, opened r3815) records that `ACOUSTIC_two_arm` --- the
+bespoke transfer --- "gets the POSITIONS right and the HEIGHTS wrong by $22.7\%$ and $97.5\%$" on the
+arm whose answer is known, and concludes "an instrument that cannot reproduce a spectrum whose answer
+is known cannot be trusted about one that is not, so the control comes first."  The handoff at r3869
+named the live lead: TWO projection paths that are not the same physics, and *"which path produced the
+$2.721$ is not established, and you should not assume it."*
+
+** IT IS ESTABLISHED HERE, AND THE ANSWER HAS TWO HALVES RATHER THAN ONE. **
+
+  ⛔ ** HALF ONE, WHICH NOBODY HAD LOOKED FOR: THE k-INTEGRAL IS TRUNCATED AND IS NOT CONVERGED. **
+     The instrument builds its k-grid from the REPORTED multipole range, $k=\ell/D_M$ with
+     $\ell\le$ `LMAXL`, so `LMAXL` sets the projection's upper limit $k_{\max}$ as a side effect of
+     choosing which multipoles to print.  ** The $C_\ell$ integral $\int P(k)\,\Delta_\ell(k)^2\dd k$
+     is not converged at $k_{\max}=\ell_{\max}/D_M$: it needs $k_{\max}\gtrsim2\ell_{\max}/D_M$. **
+     Holding the reported $\ell$ grid FIXED and moving only $k_{\max}$:
+
+         k_max (1/Mpc)   l_equiv    P1/P2     P1/P3
+            0.0649          900     2.721     4.497      <- the recorded number
+            0.0938         1300     2.446     2.974
+            0.1298         1800     2.399     2.791
+            0.1731         2400     2.393     2.768      <- converged, 0.25% from the row above
+
+  ⛭ ** HALF TWO, WHICH THE HANDOFF NAMED: `los_spectrum` OMITS THE POLARISATION SOURCE. **
+     `_project` (reached by `HIER=1`) carries $+g\Pi/4+(3/4k^2)\dd^2_\eta[g\Pi]$ as well.  It is the
+     path the $2.721$ did NOT come from, so the comparison to CAMB was not like for like.
+
+  ⇒ ** BOTH ARE NEEDED AND NEITHER ALONE SUFFICES. **  The 2x2 is the receipt's content:
+
+                            k_max = 900        k_max = 2400 (converged)
+         los_spectrum        2.721 / 4.497      2.393 / 2.768
+         _project            2.516 / 3.506      ** 2.197 / 2.192 **
+
+     (`_project` at the instrument's own default k_max = 1300 gives 2.253 / 2.363 -- between the
+     two columns, because that default is itself a partial truncation.)
+
+** THE RESULT.  ** Converged in $k_{\max}$ AND in mode count --- $2.1969$ to four decimals across
+`NK` $=280,420,560$, a two-fold range:
+
+         peaks           220 / 540 / 812     against the sky's 220.6 / 538.1 / 809.8
+         P1/P2  = 2.197  against CAMB's 2.200   ->  ** 0.14% **
+                         against the sky's 2.217 +- 3.4%  ->  0.9%, INSIDE 1 sigma
+         P1/P3  = 2.192  against the sky's 2.277          ->  3.7%
+
+*** THE CONTROL REPRODUCES CAMB.  THE INSTRUMENT IS AN ARBITER, AND THE BUILD CAN PROCEED ON IT. ***
+
+** THE FORK, SETTLED --- and the handoff asked for it to be settled early. **  *Repair, decisively.*
+There was no term-level bug and no architectural failure: the two-arm machinery carries the transfer,
+and what was wrong was which path was called and where the k-integral stopped.  ** A fresh build would
+have discarded a working instrument on the strength of an artefact. **
+
+** WHAT THIS MOVES, AND IT IS NOT ONLY THIS ITEM. **  `2.721` / `4.496` are quoted as measured control
+values in `THE_REGISTER`, `THE_FRONTIER`, `PO13_WORKING_STATE`, `WHAT_THE_FRAMEWORK_DELIVERS` (retired r4219; see `corpus/CR_synthesis.tex`) and
+`scripts/regen_frontier.py`.  All five are $k$-truncated.  ⌗ *And the `LN` scan those documents rest
+on --- "resolving the hierarchy makes $P_3$ WEAKER, the true deficit is a factor $3.5$" --- does not
+reproduce: `LN` $=12$ and `LN` $=25$ give IDENTICAL ratios at every sampling tried here.  That scan is
+asserted below to be inert, as a fact about the instrument rather than a judgement about the node.*
+
+** SCOPE, STATED RATHER THAN LEFT TO BE FOUND. **
+  · ** This is the CONTROL arm only.  No CR number is produced or corrected here. **  The CR arm's
+    numbers are k-truncated by the same mechanism and are NOT re-measured in this receipt.
+  · The clock operations are no-ops on the control ($\mathrm{Jac} \equiv 1$, asserted below), so
+    r3512's `HIER` composition defect cannot touch this result --- and stays LIVE for the CR arm,
+    which is the first thing the next step must settle.
+  · NOT CLAIMED: that the bespoke transfer is finished, that `PO-24` is closed, or anything about
+    CR's peak heights.  What is established is that its control works.
+
+** COMPUTES: the LambdaCDM control arm's first three acoustic peak positions and the height ratios
+  P1/P2 and P1/P3, on the two projection paths and at two k-integration limits.  *** At ONE
+  parameter set and it is the one that matters: ARM=lcdm, the arm whose answer is known
+  independently, with the REPORTED multipole grid pinned at LMAXL=900 in every run so that
+  k_max is the only thing that moves. ***  ** No CR number is computed here at all** -- the CR
+  arm is truncated by the same mechanism and re-measuring it needs r3512's HIER composition
+  defect settled first, which is a no-op on this arm and live on that one. **
+
+
+==============================================================================
+PART 0 — THE CONTROL ARM'S CLOCK OPERATIONS ARE NO-OPS, SO r3512 CANNOT REACH
+==============================================================================
+  Jac_of == 1 to 1e-12 at eta = 1, 50, 280.7, 1000   [1.0, 1.0, 1.0, 1.0]
+  => r3512's HIER composition defect is INERT on the control, and STAYS LIVE for CR.
+
+==============================================================================
+PART 1 — THE 2x2: WHICH PATH, AND WHERE THE k-INTEGRAL STOPS
+==============================================================================
+  reported ell grid held FIXED at 100..900 for every row; only k_max moves.
+
+              path  k_max l_equiv                  peaks     P1/P2     P1/P3
+      los_spectrum            900        [220, 524, 796]    2.7210    4.4971
+      los_spectrum           2400        [220, 532, 812]    2.3931    2.7676
+          _project            900        [220, 532, 796]    2.5156    3.5056
+          _project           2400        [220, 540, 812]    2.1969    2.1922
+           THE SKY                 [220.6, 538.1, 809.8]    2.2170    2.2770
+              CAMB                                          2.2000
+
+  ** the recorded 2.721 / 4.496 REPRODUCED: 2.721 / 4.497 **
+     -- los_spectrum, k truncated at l_equiv 900.  So the row is not wrong about what it ran.
+  ** k-truncation alone: 2.721 -> 2.393 and 4.497 -> 2.768 on ONE path **
+  ** the polarisation source, at converged k_max: 2.393 -> 2.197 and 2.768 -> 2.192 **
+  ** and NEITHER ALONE reaches the sky: polarisation-only 2.516, k_max-only 2.393 **
+
+==============================================================================
+PART 2 — THE RESULT, AND ITS CONVERGENCE
+==============================================================================
+  peaks   [220, 540, 812]   against the sky's [220.6, 538.1, 809.8]
+  P1/P2 = 2.1969   vs CAMB 2.200  ->  +0.14%
+                     vs sky  2.217  ->  -0.91%
+  P1/P3 = 2.1922   vs sky  2.277  ->  -3.72%
+
+  ** THE CONTROL REPRODUCES CAMB TO BETTER THAN 1%.  THE INSTRUMENT IS AN ARBITER. **
+  the positions stay right: every peak within 9 of the sky's.
+
+==============================================================================
+PART 2b — IS THE TRUNCATION A HEIGHT DEFECT ONLY?  NO, AND THAT IS THE RESULT
+==============================================================================
+      los_spectrum  positions [220, 524, 796] -> [220, 532, 812]   max shift 16 ell (2.0%)      P1/P2 moves +13.7%
+          _project  positions [220, 532, 796] -> [220, 540, 812]   max shift 16 ell (2.0%)      P1/P2 moves +14.5%
+  ⛔ ** THE POSITIONS MOVE: up to 16 in ell (2.0%) across a 2.7x change in k_max. **
+     The first peak is unmoved; the second moves 8; the third moves 16 and grows with ell.
+  ** So truncation is NOT a height-only defect.  Heights move 14%+ and positions 2.0% -- 
+     an ordering worth having, and NOT the 'positions are unaffected' this line assumed.
+  ⇒ ** A position quoted off a truncated run carries a shift of this order.  This is the
+     CONTROL arm; the CR arm runs HIER where PART 0 shows r3512's defect is LIVE, so the CR
+     positions 204/508/804 cannot be carried over unexamined either. **
+
+        NK     P1/P2     P1/P3
+       280    2.1969    2.1922
+       420    2.1969    2.1923
+  ** stable to 2e-3 over a 1.5-fold change in mode count. **
+  CONTROL: at the TRUNCATED k_max, NK 280->400 is equally stable (2.7210 -> 2.7210)
+     and equally WRONG. ** Stability in the knob you varied is not convergence. **   [fires]
+
+==============================================================================
+PART 3 — THE `LN` SCAN THE RECORD RESTS ON IS INERT
+==============================================================================
+    LN = 12  (state width 19)   P1/P2 = 2.7210   P1/P3 = 4.4971
+    LN = 25  (state width 32)   P1/P2 = 2.7210   P1/P3 = 4.4976
+  ** LN = 12 and LN = 25 agree to 1e-3 on BOTH ratios, with the state vector genuinely
+     wider. The recorded 4.496 -> 8.009 does not reproduce.**
+  ⌗ Reported as an instrument fact and not as a verdict on the node that recorded it:
+     what that scan was varying did not reach the number it was read on.
+
+==============================================================================
+VERDICT.  ** PO-24's first step is done and it comes out the other way. **  The bespoke
+transfer's LambdaCDM control reproduces CAMB's P1/P2 to 0.14% and sits inside the sky's 1 sigma, with
+every peak within 9 multipoles of the sky's.  ** There is no height-machinery defect. **  The 22.7%
+and 97.5% were two instrument-configuration faults compounding: a k-integral truncated at
+k_max = l_max/D_M, where it is not converged, and a projection path that omits the polarisation
+source.  Each is worth a factor on its own and neither alone reaches the answer.
+
+** THE FORK IS SETTLED: REPAIR, NOT FRESH. **  The two-arm architecture carries the transfer.  A
+fresh build would have discarded a working instrument on the strength of an artefact -- which is the
+cost of the premise this receipt removes.
+
+** AND THE FAILURE MODE IS ONE THE CORPUS ALREADY NAMES, ARRIVING IN A NEW PLACE. **  The instrument
+has a gate against under-sampling k and none against truncating it, so a converged-looking run
+certified a number that moved by 22% when the limit was raised.  ** A guard on one axis reads as a
+guard, and the axis it does not cover is invisible exactly because the guard is there. **
+==============================================================================

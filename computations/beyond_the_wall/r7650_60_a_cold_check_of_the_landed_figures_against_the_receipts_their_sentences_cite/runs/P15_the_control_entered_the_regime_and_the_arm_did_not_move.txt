@@ -88,8 +88,111 @@ reported here as the THING BEING CORRECTED, not as measurements. **  *The one fi
 and does not depend on the tail being right.*
 
 
-Traceback (most recent call last):
-  File "/home/user/shadow-of-existence/receipts/P15_CR_cosmology/P15_the_control_entered_the_regime_and_the_arm_did_not_move.py", line 133, in <module>
-    import camb                                                                # noqa: E402
-    ^^^^^^^^^^^
-ModuleNotFoundError: No module named 'camb'
+==============================================================================
+PART 1 — WHERE THE CONTROL'S REMAINING chi^2 LIVES, IN SHELLS OF MULTIPOLE
+==============================================================================
+   ell <=  bins shell bins | arm+lensing    shell | CAMB lensed   shell
+      700    66         66 |        56.3     56.3 |        54.4    54.4
+      900    89         23 |        84.6     28.3 |        73.0    18.7
+     1100   111         22 |       126.0     41.4 |        97.7    24.6
+     1300   133         22 |       195.5     69.5 |       124.5    26.8
+     1500   155         22 |       263.4     67.9 |       151.9    27.5
+     1700   167         12 |       509.3    245.9 |       160.6     8.6
+     1996   185         18 |       988.8    479.5 |       186.6    26.0
+
+  ** 725 OF THE 989 — 73% — IS IN THE 30 BINS ABOVE ell = 1500, WHICH IS 16% OF THE BINS. **
+     *and below ell = 700 the control is at chi^2/dof = 0.85, against CAMB's lensed 0.82 on the same bins.*
+
+==============================================================================
+PART 2 — AND IT IS THE WAVENUMBER TRUNCATION, SHOWN BY REMOVING IT
+==============================================================================
+  the grid is k = ell/D_M with ell <= LMAXL, so the TOP output multipole has no k above it
+  left to integrate over -- while C_ell draws on every k with k D_M >= ell.
+  banked control: LMAXL = 2000, 238 multipoles to 1996
+  the same run at LMAXL = 3000 (k-spacing held fixed): 363 to 2996
+
+       ell band   LMAXL=2000 / CAMB   LMAXL=3000 / CAMB
+        100-400              0.9705              0.9898
+        400-700              0.9734              0.9950
+       700-1000              0.9742              1.0017
+      1000-1300              0.9494              1.0018
+      1300-1700              0.8373              1.0029
+      1700-1996              0.4157              0.9928
+
+                                 chi^2   chi^2/dof   (the same 185 bins throughout)
+       control, LMAXL = 2000     988.8        5.34
+       control, LMAXL = 3000     217.8        1.18
+       CAMB lensed LambdaCDM     186.6        1.01
+
+  ** THE TRUNCATION WAS 771 OF THE 989 — 78% — AND THE LAST BAND'S RATIO GOES 0.42 -> 0.99. **
+     *A physical over-damping would not know where the grid ends.*
+  ⇒ ***FRONT #2's TARGET IS MET: the control is at chi^2/dof = 1.18 against a true LambdaCDM fit's 1.01
+     over ell = 100-1996, and the last item on the front's list is struck as NUMERICAL.***
+
+==============================================================================
+PART 3 — THE CR LADDER, WAIVED BY THE ALIAS GATE SINCE c54.178, CHECKED IN chi^2
+==============================================================================
+  the gate demands 4 samples per Bessel period; the CR ladder has 2.3 and waives ITSELF with
+  "this is not aliasing -- but it is only not aliasing if the answer does not depend on it".
+
+                                 l<700    l<1300      full   peak1    l1/lA
+     ladder (2.3 per period)    359.39    329.16    280.09     172   0.5703
+     continuum KCONT=1 (5.7)    359.39    329.16    280.08     172   0.5703
+
+  ** THE TWO SPECTRA AGREE TO 0.67% EVERYWHERE AND THE chi^2 TO 2.1 IN 51817. **
+     ⇒ ***The waiver was right, and it is now checked on the statistic this file reads rather
+     than only on the peak position.***
+
+==============================================================================
+PART 4 — FOUR INSTRUMENT STATES: THE CONTROL FOLLOWED THE SKY AND THE ARM DID NOT
+==============================================================================
+  scored on the same 185 bins throughout, both arms carrying c54.183's lensing operator
+
+                                         state |   control    CR arm
+                       c54.175  fluid, C = 8/9 |     21.20    290.71
+             c54.177  fluid, derived C = 16/15 |     27.73    304.20
+       c54.178  the polarised photon hierarchy |      5.34    298.93
+    c54.186  the same, wavenumber range opened |      1.18    302.07
+
+  ** THE CONTROL IMPROVED BY A FACTOR OF 18 AND THE CR ARM MOVED BY 5%. **
+     *Each state is a different physics content or a different numerical adequacy, not a
+     different setting.*
+  ⇒ ***An error the INSTRUMENT carries moves both arms.  This moved one.***
+
+==============================================================================
+PART 5 — `L-147`'s PRE-REGISTERED F2 AND F3, WITH BOTH ARMS AT THE SAME WAVENUMBER RANGE
+==============================================================================
+  F2 = chi^2(this instrument's LambdaCDM arm) - chi^2(CAMB)   [the instrument's own floor]
+  F3 = chi^2(CR arm) - chi^2(LambdaCDM arm), BOTH on this instrument
+  F4 = if F3 exceeds F2 by an order of magnitude, the disagreement is in the PHYSICS.
+
+    lmax  bins     CAMB       arm   /dof         CR |      F2         F3    F3/F2
+     500    44     34.1      33.8   0.77    15871.9 |    -0.2    15838.1        —
+     700    66     54.4      58.2   0.88    23744.7 |     3.8    23686.5     6212
+     900    89     73.0      89.5   1.01    35467.9 |    16.5    35378.4     2142
+    1100   111     97.7     114.0   1.03    40313.5 |    16.3    40199.5     2459
+    1300   133    124.5     141.6   1.06    43848.5 |    17.1    43706.8     2549
+    1500   155    151.9     168.6   1.09    49015.6 |    16.7    48847.0     2925
+    1996   185    186.6     217.8   1.18    52065.6 |    31.2    51847.9     1661
+
+  ** AT FULL RANGE, WITH BOTH ARMS k-ADEQUATE: F2 = 31 AND F3 = 51848, SO F4's SECOND
+     CLAUSE FIRES BY 1661x WHERE IT ASKS FOR 10. **
+  ** AND BELOW ell = 700, WHERE THE TRUNCATION CANNOT REACH EITHER ARM AT ALL: F2 = 3.8,
+     F3 = 23687. **
+     *The CR arm is scored UNLENSED, which is its better number: c54.183's operator is
+     LambdaCDM's own lensed/unlensed ratio and applying it to the CR arm costs it rather
+     than helping.*
+
+  ⛔ ***AND F5 IS NOT SOFTENED: this is a MEASUREMENT DISCREPANCY, not a framework verdict.
+     `PO-7` is protected precisely here, and the conversion runs by `F5`'s stated procedure.***
+
+==============================================================================
+ALL CHECKS PASS — 73% of the control's residual was in the 16% of bins above ell = 1500, and
+opening the wavenumber range removes 78% of it: the control reaches chi^2/dof = 1.18 against a
+true LambdaCDM fit's 1.01 on the same bins, so front #2's target is met and its last item is
+struck as numerical.  The CR ladder's alias-gate waiver is checked in chi^2 and holds.  Four
+instrument states improved the control eighteenfold and moved the CR arm 5%.  And `L-147`'s F4
+fires by three orders of magnitude — as a MEASUREMENT DISCREPANCY, with `PO-7` protected and
+the conversion left where it belongs.
+==============================================================================
+GATE c54.186 (r2441), `L-500`: opening the wavenumber range removes 78% of the control's residual and takes it to chi^2/dof = 1.18 against CAMB's 1.01 on 185 identical bins; F3 = 51848 against F2 = 31 at full range and 23687 against 3.8 below ell=700, so F4 fires; the CR ladder waiver holds to 0.67%; four states improved the control 18x while the CR arm moved 5% — pinned against `L-147` F2/F3/F4/F5 and THE_WORK front #2.

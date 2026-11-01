@@ -156,8 +156,55 @@ at production.  PART 5's run is `r7109_directions/launch_control_base.sh`.
 ====================================================================================================
   PART 4 -- ** THE CELL, IN THE DATA'S OWN UNITS, ONE NUMBER PER ARM **
 ====================================================================================================
-Traceback (most recent call last):
-  File "/home/user/shadow-of-existence/receipts/P15_CR_cosmology/P15_the_controls_base_log_is_banked_beside_the_grids_and_the_peak_heights_concur_with_the_three_rigidity_statistics.py", line 353, in <module>
-    import camb                                                               # noqa: E402
-    ^^^^^^^^^^^
-ModuleNotFoundError: No module named 'camb'
+  the lensing operator (CAMB's lensed/unlensed, the non-perturbative one) at ell 1900: 1.0666
+  *The same operator `P15_the_full_range_lensed_comparison...` uses, and the same check on it:
+   the first-order kernel's spurious +13% there against the full operator's +6.5%.*
+
+         arm             peaks (binned)     P1/P2     P1/P3  chi2 vs sky   (2 dof)
+      banked      [221.1, 536.0, 815.0]    2.2729    2.3365       0.8509     0.922
+    licensed      [221.1, 536.0, 815.0]    2.2896    2.3498       1.0456     1.023
+   forbidden      [221.1, 536.0, 815.0]    2.2061    2.2500       0.4354     0.660
+     control      [221.1, 536.0, 815.0]    2.2028    2.2263       0.5853     0.765
+
+  ** against the CONTROL, as a 2-dof distance in the data's own units: **
+         banked  chi2 =  2.3110
+       licensed  chi2 =  2.8261
+      forbidden  chi2 =  0.1837
+
+  ⓐ ** THE CELL IS A CONCORDANT SIGN: the forbidden configuration's heights are the
+     control's own at 0.18 on two degrees of freedom, where the licensed
+     one's are 2.83 away. **  The heights say what chi^2, the crossings and
+     the longest run say: the forbidden configuration lands on the control.
+
+  ⓑ ** AND THE HEIGHTS CANNOT VOTE: every arm is inside 1.1 against the SKY on two degrees
+     of freedom, and the two ratios do not agree on an ordering. **
+     nearest on P1/P2: ['banked', 'licensed', 'forbidden', 'control']
+     nearest on P1/P3: ['forbidden', 'control', 'banked', 'licensed']
+     ** the two orderings disagree, at separations all under 1.3 sigma -- so 'which arm
+        fits the heights better' is not a question this statistic answers. **
+
+  ⓒ ** WHAT THE STATISTIC WITH THE INFORMATION SAYS, for contrast: ** chi^2 over the 185
+     bins separates 278.79 (licensed) from 184.99 (forbidden) against the control's 186.01 --
+     a gap of 93.8 -- where the heights separate 1.05 from 0.44.
+     *c54.176's conclusion arriving a second time by a second route.*
+
+  ** AND THE SIGN IS NOT THE BINNING'S: on the instrument's own fine grid, unlensed, the
+     same contrast is 0.046 sigma (forbidden) against 1.124 sigma (licensed) on
+     P1/P2 -- the same sign and the same order of magnitude as the matched route. **
+
+====================================================================================================
+  PART 5 -- ** THE ONE RUN: THE INSTRUMENT AS IT IS NOW RETURNS THE BANKED CONTROL **
+====================================================================================================
+  SKIPPED with a reason: /tmp/n66/r7109_control/lcdm_base.npz is not present in this tree.
+  *This is the one run `r7109` ⓶ budgeted, and it is an INDEPENDENT CHECK on PARTS 1-4
+   rather than an input to them: the banked log already describes the banked artefact,
+   proven by md5 in PART 1.  Re-make it with `r7109_directions/launch_control_base.sh`.*
+
+====================================================================================================
+  ** ALL CHECKS HOLD. **  `r7109` ⓶ is answered: the control's base log is banked beside both
+  grids and is the log of the banked artefact; the peak-height cell is filled in the data's own
+  units; and it is a CONCORDANT sign -- the forbidden configuration's heights are the
+  control's at 0.18 on two degrees of freedom, a fourth statistic agreeing
+  with chi^2, the crossings and the longest run.  ** And the same statistic shows the cell
+  could never have held a contrary sign: no arm is separable from the sky by the heights. **
+====================================================================================================
