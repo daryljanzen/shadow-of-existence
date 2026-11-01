@@ -178,6 +178,59 @@ gate("Ⓐ③ and the arms share r_s/D_M to better than a part in ten thousand wh
      "r_D/D_M at the per-cent level -- which is why the answer is small rather than half a per cent",
      bool(_drs < 1e-4 and 1e-3 < _drD < 1e-2))
 
+# ───────────────────────────────────────────────────────────────────────────────────────────────
+# ⛭⛭⛭ r7651+cc66.93 -- ** Ⓐ③ᵃᵒʳ: THE ACOUSTIC-ANGLE HALF OF THE CLAIM, ON THE ARM OF RECORD,
+#   ordered by `r7651` ⓷ -- and the other half is BLOCKED ON A BANK, which is said here rather
+#   than left to be inferred from an absence. **
+#
+#   l.2385 claims the arms "share the other, the acoustic angle, to A PART IN SEVENTY THOUSAND".
+#   `r_s/D_M` IS `theta_*/pi`, and it needs only `r_s` and `D_M`, both of which the arm-of-record
+#   sibling's `cr_base.npz` carries.  So this half is measurable now and is measured here.
+#
+#   ⛔ ** THE r_D HALF IS NOT. **  `r7093_directions/grid_oneclock_leafrec1/` holds nine `cr_*.npz`
+#   and NO `cr_base.log`, and `arm_inputs` reads `r_D` out of that log's line
+#   `diffusion: r_D at the visibility peak = ... Mpc`.  Without it `rD` is `None` and every figure
+#   downstream of it -- the `0.27` per cent in `r_D/D_M`, and therefore the `-0.014` degrees the
+#   sentence turns on -- cannot be computed on the arm of record at all.  *The ask, for 70: the
+#   `cr_base.log` beside that sibling grid, or `r_D` banked as a key in the `.npz`.  One line of
+#   output, and it unblocks a figure in print.*
+AGO = GO + '_leafrec1'
+_aor_base = os.path.join(AGO, 'cr_base.npz')
+_aor_log = os.path.join(AGO, 'cr_base.log')
+_zA = np.load(_aor_base, allow_pickle=True)
+AORD = dict(rs=float(_zA['r_s']), DM=float(_zA['D_M']), lA=float(_zA['l_A']),
+            rD=None, has_log=os.path.exists(_aor_log))
+_t_ns = ARM['rs'] / ARM['DM']
+_t_ao = AORD['rs'] / AORD['DM']
+_t_ct = CTL['rs'] / CTL['DM']
+_rel_ns = abs(_t_ns / _t_ct - 1)
+_rel_ao = abs(_t_ao / _t_ct - 1)
+print(f"\n    theta_*/pi = r_s/D_M, this grid's own bases:")
+print(f"      control          r_s {CTL['rs']:11.6f}  D_M {CTL['DM']:13.6f}  "
+      f"r_s/D_M {_t_ct:.10f}")
+print(f"      namesake arm     r_s {ARM['rs']:11.6f}  D_M {ARM['DM']:13.6f}  "
+      f"r_s/D_M {_t_ns:.10f}   1 part in {1 / _rel_ns:,.0f}")
+print(f"      ARM OF RECORD    r_s {AORD['rs']:11.6f}  D_M {AORD['DM']:13.6f}  "
+      f"r_s/D_M {_t_ao:.10f}   1 part in {1 / _rel_ao:,.0f}")
+print(f"      and l_A on this grid: control {CTL['lA']:.4f}, namesake {ARM['lA']:.4f} "
+      f"({100 * (ARM['lA'] / CTL['lA'] - 1):+.4f}%), arm of record {AORD['lA']:.4f} "
+      f"({100 * (AORD['lA'] / CTL['lA'] - 1):+.4f}%)")
+gate("⛭⛭⛭ ** Ⓐ③ᵃᵒʳ l.2385's `a part in seventy thousand` IS THE NAMESAKE'S, and on the arm of "
+     "record the acoustic angle is shared to A PART IN TWELVE THOUSAND -- a factor 5.3 looser, and "
+     "still shared. **  *1 part in 63,059 becomes 1 part in 11,927.  The CLAIM survives: the two "
+     "arms do share the angle, because the angle is what this construction computes, and 1.2e-4 is "
+     "still four orders below the residual the sentence compares it with.  The FIGURE moves and is "
+     "routed.*",
+     bool(60000 < 1 / _rel_ns < 70000 and 10000 < 1 / _rel_ao < 13000 and _rel_ao > 4.0 * _rel_ns))
+gate("⛔⛭⛭ ** AND THE OTHER HALF IS BLOCKED, WHICH THIS GATE ASSERTS AS A FACT ABOUT THE BANK "
+     "RATHER THAN LEAVING AS A GAP: ** the arm-of-record sibling grid has its nine `cr_*.npz` and "
+     "NO `cr_base.log`, so `r_D` -- read from that log's `diffusion: r_D at the visibility peak` "
+     "line -- cannot be had, and the `0.27` per cent in `r_D/D_M` and the `-0.014` degrees "
+     "downstream of it are not computable on this arm.  ⇒ *The ask is one line of output: that log, "
+     "or `r_D` banked as a key*",
+     bool(os.path.isdir(AGO) and not AORD['has_log']
+          and len([f for f in os.listdir(AGO) if f.endswith('.npz')]) == 9))
+
 # ═════════════════════════════════════════════════════════════════════════════════════════════════
 head("Ⓑ  TWO INDEPENDENT ROUTES TO THE SAME PHASE, BOTH SHOWN CONVERGED")
 # ═════════════════════════════════════════════════════════════════════════════════════════════════
