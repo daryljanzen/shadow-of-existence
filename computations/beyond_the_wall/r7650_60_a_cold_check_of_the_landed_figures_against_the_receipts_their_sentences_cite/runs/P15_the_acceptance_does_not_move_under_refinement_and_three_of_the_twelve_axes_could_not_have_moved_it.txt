@@ -1,0 +1,86 @@
+
+P15_the_acceptance_does_not_move_under_refinement_and_three_of_the_twelve_axes_could_not_have_moved_it
+
+** THE KERNEL'S k-ACCEPTANCE DOES NOT MOVE UNDER ANY REFINEMENT THAT CAN MOVE IT -- and three of the twelve
+   axis-arm pairs COULD NOT HAVE MOVED IT, so their silence is not convergence and is not reported as it. **
+
+`r7049` offered the observation this answers: *"A_l is a sharper probe of the same thing and it is now free:
+it is built from W_l = G_l^2 dk/k over the k-grid, so truncating k_max truncates the window the law
+integrates over -- and A_l carries NO FITTED AMPLITUDE to absorb the truncation, where a height ratio
+does."*  It cost no re-run: `GRIDSAVE` writes the background `A_l` needs -- vis(eta), x0(eta), k, dk, r_s* --
+in 1.45 s per configuration WITHOUT computing a spectrum at all.
+
+⛔⛔ AND THE FINDING THAT MATTERS IS THE ONE THAT NEARLY DID NOT HAPPEN.  THE READER WAS ABOUT TO PRINT
+   "THE ACCEPTANCE HAS STOPPED MOVING, AT THE FLOOR" FOR THREE AXES WHOSE INPUTS NEVER MOVED.
+  `A_l` is built from the background alone.  So an axis that leaves every one of `k`, `dk`, `eta`, `x0`,
+  `vis` byte-identical CANNOT move it, and its sequence reads `base=X  s1=X  s2=X`: step 0.0000 per cent,
+  three points, not monotone, and the verdict falls straight through to converged.  Two such axes exist
+  here and they are NOT the same defect:
+    ① `NK` ON THE ARM.  The arm's k ladder is sqrt(L(L+2))*stretch out to `KMAXL` and `NK` is only a
+      decimation cap that is never reached -- 1452 modes at `base`, `nk15` and `nk20` alike.  *** On the
+      CONTROL the same knob takes 2547 modes to 3822 to 5094 and the spectra differ outright, which is
+      what makes the arm's silence a reading rather than a broken test. ***
+    ② `LSTEP` ON BOTH ARMS.  `A_l` is read at the SAME multipoles at every setting by construction, so the
+      reported ell grid cannot enter it at all.  *This one is a property of the QUESTION, not of the arm.*
+  ⇒ *** AN AXIS WHOSE INPUTS DO NOT MOVE IS NOT A CONVERGED AXIS, and the cheapest way for a sequence to
+      look converged is to be asked a question the instrument cannot answer. ***  That is this row's
+      recurring defect once more -- an instrument not matching its question -- and this time it was caught
+      in the READER, before the number reached a reply.
+  ⌗ The test is therefore read off the inputs and not held as a list: an axis is inert for an arm when every
+  configuration in it digests identically to `base`.  A list would have to be remembered and would not
+  notice a knob that starts mattering; ** gate ⓪ refuses to print if that test is not discriminating. **
+
+⛭ WHAT THE ARM'S INERT NK COST AND BOUGHT.  Six of `r7041`'s 72 configurations were dropped as the same
+computation repeated -- 588 slices to 557 -- on evidence banked here at the SPECTRUM level, not merely at
+the grid: `real_cr_nk15_k0` and `real_cr_nk20_k0` against `real_cr_base_k0` at max|Dl| = 0 exactly, with an
+identical ell list.  *The sweep reads the arm's `base` for them as an IDENTITY, under a gate.*
+
+⛔ WHAT IS NOT CLAIMED.  ** This is NOT `r7041`'s sweep and does not substitute for it. **  The sweep asks
+what the RETENTION and the peak heights do, measured on spectra; this asks what the kernel's k-acceptance
+does, computed from the background.  *A converged acceptance with an unconverged retention would itself be
+a finding, and the two are reported separately -- as this receipt's own pre-registration required.*  Nor is
+a nine-of-twelve reading a convergence claim for the ROW: the pre-registered criteria are printed beside
+every axis unaltered, including "a sequence that has not turned over is not converged whatever its last
+step" and "a two-point axis cannot turn over".  Nothing here says which cosmology is right.
+
+====================================================================================================
+    [ok]  the bank this receipt reads is present: `spectra/r7041_accept_digest.npz`   r7041_accept_digest.npz
+    [ok]  the bank this receipt reads is present: `spectra/r7041_accept_Al.npz`   r7041_accept_Al.npz
+    [ok]  the bank this receipt reads is present: `spectra/r7041_accept_sample.npz`   r7041_accept_sample.npz
+    [ok]  the bank this receipt reads is present: `spectra/r7041_accept_nk_slices.npz`   r7041_accept_nk_slices.npz
+
+  ⛭ GATE ZERO -- THE INERT TEST MUST DISCRIMINATE, OR NOTHING BELOW IS PRINTED
+  --------------------------------------------------------------------------------------------------
+  *A test that answers the same way on every axis is not a test.  This one is required to fire on
+  the three pairs claimed inert and to stay silent on the other nine, BEFORE any A_l is read.*
+    [ok]  ⓪ the inert test fires on EXACTLY the three axis-arm pairs claimed, and on no other of the twelve   fired on 3 of 12: [('cr', 'the mode count NK'), ('cr', 'the reported ell grid LSTEP'), ('lcdm', 'the reported ell grid LSTEP')]
+    [ok]  ⓪ and it is discriminating rather than constant -- it both fires and stays silent   3 fired, 9 did not
+
+  ⓵ THE INERT CLAIM IS A BYTE CLAIM, AND SO IS ITS CONTROL
+  --------------------------------------------------------------------------------------------------
+    [ok]  ⓵ `cr` k_max via KFAC: at least one input DOES move, so the axis is a real question   3 of 3 moved an input
+    [ok]  ⓵ `cr` the mode count NK: every input digests IDENTICALLY to base -- it cannot move A_l   2 refinement(s), 0 moved an input
+    [ok]  ⓵ `cr` the eta resolution NLOS: at least one input DOES move, so the axis is a real question   2 of 2 moved an input
+    [ok]  ⓵ `cr` the eta half-width NLOSW: at least one input DOES move, so the axis is a real question   2 of 2 moved an input
+    [ok]  ⓵ `cr` the eta split NLOSF: at least one input DOES move, so the axis is a real question   1 of 1 moved an input
+    [ok]  ⓵ `cr` the reported ell grid LSTEP: every input digests IDENTICALLY to base -- it cannot move A_l   1 refinement(s), 0 moved an input
+    [ok]  ⓵ `lcdm` k_max via KFAC: at least one input DOES move, so the axis is a real question   3 of 3 moved an input
+    [ok]  ⓵ `lcdm` the mode count NK: at least one input DOES move, so the axis is a real question   2 of 2 moved an input
+    [ok]  ⓵ `lcdm` the eta resolution NLOS: at least one input DOES move, so the axis is a real question   2 of 2 moved an input
+    [ok]  ⓵ `lcdm` the eta half-width NLOSW: at least one input DOES move, so the axis is a real question   2 of 2 moved an input
+    [ok]  ⓵ `lcdm` the eta split NLOSF: at least one input DOES move, so the axis is a real question   1 of 1 moved an input
+    [ok]  ⓵ `lcdm` the reported ell grid LSTEP: every input digests IDENTICALLY to base -- it cannot move A_l   1 refinement(s), 0 moved an input
+
+  ⓶ NK ON THE ARM AT THE SPECTRUM, NOT ONLY AT THE GRID -- AND THE CONTROL THAT MOVES
+  --------------------------------------------------------------------------------------------------
+    [ok]  ⓶ arm `nk15` against arm `base`: max|Dl| is EXACTLY zero and the ell list is identical   max|Dl| = 0.000e+00
+    [ok]  ⓶ arm `nk20` against arm `base`: max|Dl| is EXACTLY zero and the ell list is identical   max|Dl| = 0.000e+00
+    [ok]  ⓶ and on the CONTROL the same two settings give DIFFERENT spectra -- the test is not vacuous   control max|Dl(nk15) - Dl(nk20)| = 1.7061e-01
+
+  ⓷ A_l RE-DERIVED FROM THE BANKED BACKGROUND -- THE BANK'S OWN NUMBERS ARE NOT TRUSTED
+  --------------------------------------------------------------------------------------------------
+  *Four configurations carry their full background, so A_l is recomputed from vis, x0, k and dk
+  rather than read.  The KFAC axis is walked end to end this way on both arms.*
+    [ok]  ⓷ `cr` `base`: A_l recomputed from the background reproduces the bank at 8 multipoles   max|recomputed - banked| = 0.00e+00
+    [ok]  ⓷ `cr` `kfac40`: A_l recomputed from the background reproduces the bank at 8 multipoles   max|recomputed - banked| = 0.00e+00
+    [ok]  ⓷ `lcdm` `base`: A_l recomputed from the background reproduces the bank at 8 multipoles   max|recomputed - banked| = 0.00e+00

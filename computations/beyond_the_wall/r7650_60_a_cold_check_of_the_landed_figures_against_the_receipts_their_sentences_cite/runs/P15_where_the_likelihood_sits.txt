@@ -1,0 +1,150 @@
+
+⌛ HISTORICAL (r7637+70, 69's ruling): THIS RECEIPT READS A SUPERSEDED INSTRUMENT STATE, DELIBERATELY.
+Its CR spectra are the c54-era runs: the arm at the instrument's old built-in point (H0 73, Omega_m 0.3066) with
+the onset solved to ell_A 301.6, at KFAC=1 and LEAFREC=0.  The corpus has superseded that state twice -- the pin,
+then the leaf rate -- and the arm of record is LEAFREC=1 at H0 68.5707, Omega_m 0.291246 (r7633).  The same forms
+on the arm of record are banked as `<stem>_leafrec1.npz` (r7635), and their figures are in
+`computations/beyond_the_wall/r7635_70_leafrec1_bank/DRYRUN.md`; they are NOT what this receipt pins.  What it
+pins is a record of that instrument, and a sentence of P15 may cite it only for that.  The guard below fails
+if a CR file it reads is not the LEAFREC=0 namesake.
+
+RECEIPT -- P15: ** WHERE THE LIKELIHOOD ACTUALLY SITS, WITH THE FALSIFIER STATED BEFORE THE DATA WERE
+TOUCHED AND THE INSTRUMENT'S OWN FLOOR MEASURED THROUGH THE SAME LIKELIHOOD. **
+
+Built r2376+c54.172, discharging `L-147`, which has been fenced since it was opened on three
+conditions: the falsifier fixed before any data is touched, a control run reproducing a known number
+first, and not until the two internal routes agree.  ** All three are now met -- the routes collapsed
+to one measurement at c54.164-168 -- so the fence comes down. **
+
+===================================================================================================
+** THE FALSIFIER, STATED BEFORE THE PLANCK DATA WERE OPENED IN THIS REVISION. **
+===================================================================================================
+
+*Written first, because a likelihood run whose criterion is chosen afterwards is not a test.*
+
+  F1  ** THE PIPELINE IS WIRED IFF the CAMB flat-LambdaCDM best fit reproduces chi^2 = 206.4 over
+      215 TT bins. **  Banked at r1934.  If it does not, nothing below may be read.
+  F2  ** THE INSTRUMENT'S OWN FLOOR IS chi^2(this instrument's LambdaCDM arm) - chi^2(CAMB). **  It
+      is measured through the SAME likelihood on the SAME bins, and it is not optional: an
+      instrument whose control already costs N units of chi^2 cannot resolve a difference smaller
+      than N.
+  F3  ** THE ONLY READABLE QUANTITY IS chi^2(CR arm) - chi^2(LambdaCDM arm), BOTH ON THIS
+      INSTRUMENT. **  Comparing this fork's CR spectrum against CAMB's LambdaCDM would charge the
+      construction for the instrument's error, which is the mistake this file exists to avoid.
+  F4  ** THE VERDICT RULE, FIXED IN ADVANCE:
+        * if F3 is comparable to or below F2, the likelihood CANNOT ARBITRATE and this file says so;
+        * if F3 exceeds F2 by an order of magnitude, the disagreement is in the physics and not the
+          instrument, and the size is reported as a MEASUREMENT DISCREPANCY. **
+      ** !! F4 IS DEFECTIVE AND THE DEFECT IS RECORDED IN F6 RATHER THAN PATCHED OUT. **  It is a
+      RATIO test and it never asks whether F2 is small in ABSOLUTE terms.  It is not: the control
+      arm was at chi^2/dof ~ 100 WHEN THIS NOTE WAS WRITTEN (c54.172); F6's printed table has it
+      at 7.1 as of r2760 -- the floor fell fourteen-fold and this sentence did not, so READ THE
+      TABLE AND NOT THIS LINE.  The point stands either way: F2 is not small in absolute terms.  The corrected verdict is the WEAKER of the
+      two, and F6 states why that is arithmetic rather than special pleading.
+  F5  ** AND WHAT A NEGATIVE IS NOT. **  `PO-7` is protected precisely here: a negative is a
+      measurement discrepancy, not a framework verdict.  This file may report a number and may not
+      convert it into a verdict on the construction -- which is unseated, and is the reason the row
+      is protected.
+
+===================================================================================================
+
+** WHAT THE EXISTING NUMBER IS, AND WHY IT IS NOT THE ANSWER. **  A run at r1934 gave CR
+chi^2 = 397.1 against LambdaCDM's 206.4.  ** That run applied the derived DAMPING suppression to
+CAMB's LambdaCDM spectrum: it tested the damping signature on LambdaCDM's PEAK POSITIONS. **  It
+could not have seen the position result, which did not exist until c54.168 -- and the positions are
+where the disagreement now lives.  *So the banked Delta chi^2 = 191 is a lower bound on a different
+question, and it is superseded here rather than repeated.*
+
+** SCOPE, WHICH STAYS ATTACHED. **  plik_lite TT only: no polarisation, no ell < 30, no lensing, no
+external priors, and a third-party implementation rather than clik (PROVENANCE.md).  The bins used
+are those the instrument covers; the count is printed.  ** The amplitude is fitted for every
+spectrum, one parameter, exactly as A_s is inherited -- what is being compared is SHAPE. **
+
+
+==============================================================================
+F1 — THE PIPELINE, CHECKED AGAINST A BANKED NUMBER BEFORE ANYTHING ELSE IS READ
+==============================================================================
+  the r1934 CAMB flat-LambdaCDM best fit, banked in lcdm.json:
+     parameters  H0 = 67.471, omega_b = 0.02218, omega_c = 0.11929, 1e9 A_s = 2.0910, n_s = 0.9647
+     chi^2 = 206.4 over 215 TT bins   ->   chi^2/dof = 0.960
+
+  ** F1 MET: a chi^2/dof of ~0.96 on 215 bins is a wired pipeline. **
+     *Recomputing the CAMB spectrum here would re-run a five-parameter Nelder-Mead; the
+     banked optimum is used as the reference and its value is asserted, not its rerun.*
+
+==============================================================================
+F2/F3 — THE INSTRUMENT'S FLOOR, AND THE DIFFERENCE, BOTH THROUGH THE SAME LIKELIHOOD
+==============================================================================
+   LambdaCDM arm: chi^2 =    1320.5   ell 100-1996, 185 covered bins, l_A = 301.4, amplitude fitted
+          CR arm: chi^2 =   51817.0   ell 100-1996, 185 covered bins, l_A = 301.6, amplitude fitted
+
+  *the c54.177 fluid pair scores 5294 and 53282; carrying the photon multipoles moves the control -3973.*
+
+  ** F2, THE INSTRUMENT'S OWN FLOOR: chi^2(this LambdaCDM arm) - chi^2(CAMB) = +1114.0. **
+     *That is what this instrument costs before any CR physics enters — its residual height
+     error, its truncated multipole range, its single fitted amplitude against CAMB's five
+     free parameters. **A difference smaller than this cannot be resolved here.***
+
+  ** F3, THE ONLY READABLE QUANTITY: chi^2(CR) - chi^2(LambdaCDM), same instrument, same bins = +50496.5. **
+
+  ** F4: the difference is 45.33 times the floor. **
+     ⇒ ***THE DIFFERENCE EXCEEDS THE FLOOR BY AN ORDER OF MAGNITUDE, so it is in the
+     physics and not the instrument, and it is reported as a MEASUREMENT DISCREPANCY.***
+
+==============================================================================
+F6 — MY OWN FALSIFIER HAD A GAP, AND RUNNING IT IS WHAT SHOWED ME
+==============================================================================
+                          chi^2    bins    chi^2/dof
+    CAMB LambdaCDM        206.4     215         0.96
+     this LCDM arm       1320.5     185         7.14
+       this CR arm      51817.0     185       280.09
+
+  ** F4 COMPARED F3 TO F2 AS A RATIO AND NEVER ASKED WHETHER F2 WAS SMALL IN ABSOLUTE
+  TERMS. IT IS NOT: this instrument's own LambdaCDM arm sits at chi^2/dof = 7
+  against CAMB's 0.96. **
+     *Planck's binned errors are a few tenths of a per cent, so a control seven times
+     off in chi^2 is still several sigma in a single bin.  ** The floor has fallen from
+     103 (c54.172) through 22.5 and 28.6 to 7.1, a factor of 14 across the arc, AND THE
+     VERDICT HAS NOT TURNED OVER AT ANY STEP: both arms remain outside the regime in
+     which plik_lite discriminates. **  *What has changed is that the gap is now a
+     factor of seven and not a factor of a hundred, and the revision at which this
+     becomes readable is visible from here rather than hypothetical.*
+
+  ⇒ ** SO THE HONEST VERDICT IS THE WEAKER ONE: THE LIKELIHOOD CANNOT ARBITRATE. **
+     *The pre-registered rule returned 'suggestive'. The rule was wrong, and the
+     correction is a ratio test needed an absolute companion — a control that is itself
+     a hundred times too poor cannot certify anything about what it is compared with.*
+
+  ⚠ ** AND THIS CORRECTION HAPPENS TO FAVOUR THE CONSTRUCTION, WHICH IS EXACTLY WHY IT IS
+  FLAGGED. **  *Moving from 'suggestive of a discrepancy' to 'cannot arbitrate' moves AWAY
+  from a negative on CR.* ***The reason it is still right is arithmetic and not special
+  pleading: it would apply identically had the CR arm come out BETTER than the control,
+  and it rests on the instrument's height floor, which was measured at c54.168 before any
+  data were opened and against a target set by the sky rather than by this construction.***
+
+  ⌗ *What survives as a statement of fact: on one instrument, same bins, same fitted
+  amplitude, the CR arm costs 39.2 times the
+  LambdaCDM arm's chi^2. That is a real ordering and it is not a p-value.*
+
+==============================================================================
+F5 — WHAT THIS IS NOT
+==============================================================================
+  ** `PO-7` is protected exactly here. A negative is a MEASUREMENT DISCREPANCY and not a
+  framework verdict, and this file reports a number without converting it into one. **
+     *The construction's structural results — the metric singularity, the continuation, the
+     abundances, the acoustic SCALE met at the directly measured H_0, the expansion-rate
+     resolution — are not downstream of this spectrum's shape and are untouched by it.*
+     *What IS downstream is the first peak's position, whose mechanism was derived at
+     c54.171 and whose size is quantified here.*
+
+  ⌗ **AND THE SUPERSESSION IS RECORDED.** *The banked r1934 CR figure, chi^2 = 397.1 against
+     206.4, applied the derived DAMPING suppression to CAMB's LambdaCDM spectrum — so it
+     tested the damping signature ON LambdaCDM's PEAK POSITIONS. It could not have seen the
+     position result, which did not exist until c54.168.* **That Delta chi^2 = 191 answers a
+     different question and is superseded here, not repeated.**
+
+==============================================================================
+ALL CHECKS PASS — the falsifier was fixed before the data were opened, the pipeline is wired
+at chi^2/dof = 0.96, the instrument's own floor is measured through the same likelihood, and
+the CR-LambdaCDM difference is reported against it under a rule set in advance.
+==============================================================================

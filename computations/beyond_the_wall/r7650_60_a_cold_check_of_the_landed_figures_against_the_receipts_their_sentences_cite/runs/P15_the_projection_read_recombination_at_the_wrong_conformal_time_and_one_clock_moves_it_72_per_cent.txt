@@ -1,0 +1,14 @@
+P15_the_projection_read_recombination_at_the_wrong_conformal_time -- PASS
+  THE DEFECT, from the backgrounds alone and no spectrum:
+    arm  eta_rec   stacking  485.54 Mpc   leaf  282.34 Mpc   gap 41.8%
+    ctrl eta_rec    281.83 Mpc  ->  the arm's LEAF reading is 0.18% from it,
+                                        its STACKING reading 72.3% away
+    D_M             14017.0 ->  13947.1 Mpc  (-0.50%)  -- 84x smaller than the gap, which is how it stayed hidden
+  THE COMB, with the onset HELD and the comb an output:
+    l_1/l_A        0.7290 -> 0.7326   sky 0.7312  (closer by 1.6x)
+    P1/P2, P1/P3   2.142->2.080 and 2.173->2.094   sky 2.217 and 2.277  -- AWAY
+  THE SHAPE, scored to ell <= 1040 over 104 bins:
+    amplitude only  chi2 266.7 -> 274.8   longest run 16 -> 35 bins
+    + a tilt        chi2 265.5 -> 215.0  (-19.0%)   worst excursion 6.10 -> 4.12 sigma
+    ⇒ the swing does NOT flatten: crossings 36 -> 30, longest run 16 -> 18 bins
+    ⇒ a real improvement a fixed-parameter comparison hides, and NOT the fix for the swing

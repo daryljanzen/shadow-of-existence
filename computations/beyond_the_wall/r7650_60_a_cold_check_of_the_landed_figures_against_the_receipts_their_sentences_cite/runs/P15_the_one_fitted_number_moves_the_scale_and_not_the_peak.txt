@@ -1,0 +1,60 @@
+
+  P15 -- the last convention: the fitted number moves the scale, not the peak
+
+  ==========================================================================
+  PART 1 -- THE QUESTION IS THE INSTRUMENT'S OWN, AND SO IS THE PIN
+  ==========================================================================
+    OK    ⓵ the instrument solves z_onset by brentq so that l_A hits LATARG rather than letting it come out as an output
+    OK    ⓵ᵇ and it states the standing question in its own comment -- "GIVEN that l_A is fitted, is the peak SPACING deficit ... an artefact of where the pin was put?"
+    achieved: the paper's scan runs l_A 360.6 -> 239.3, a swing of 121.3 (bound > 100); the first peak stays in [204.0, 208.0], a band 4.0 wide (bound <= 10) and entirely below 239.3
+    OK    ⓵ᶜ and P15 states this scan in its own voice as the reason the start is NOT a parameter: "Where the plasma starts moves the scale and not the peak, which is why the start is not free", with the sentence's own four numbers saying it -- l_A swings across the scan while the first-peak band is narrow and sits wholly below it -- this receipt cited, and "no early-universe parameter" in the bill
+
+  ==========================================================================
+  PART 2 -- THE SCAN, ON THE GRID THAT REPRODUCES P15'S OWN QUOTED PEAK
+  ==========================================================================
+     z_onset      r_s      l_A   l_1   l_1/l_A
+        4500   113.30    360.6   208    0.5768
+        6761   135.46    301.6   204    0.6764
+        8600   146.77    278.4   204    0.7328
+       16000   170.70    239.3   206    0.8608
+         sky             301.7 220.6    0.7312
+    OK    ⓶ at the pin this configuration returns l_1 = 204 against P15's own quoted 204 -- exactly, so the scan is anchored to the paper and not run beside it
+    OK    ⓶ᵇ *** the acoustic scale moves 51% across the scan (360.6 down to 239.3) while the first peak moves 2% (204 to 208) -- the fitted number moves the denominator and leaves the numerator ***
+    OK    ⓶ᶜ and l_A falls monotonically with the onset, which is the arithmetic of r_s and not a fact about the spectrum
+
+  ==========================================================================
+  PART 3 -- ⛭ SO THE DEFICIT IS ONSET-INVARIANT, AND THE TRADE IS AN IDENTITY
+  ==========================================================================
+      z =  4500:  l_1 = 208 against the sky's 220.6   -5.71%
+      z =  6761:  l_1 = 204 against the sky's 220.6   -7.52%
+      z =  8600:  l_1 = 204 against the sky's 220.6   -7.52%
+      z = 16000:  l_1 = 206 against the sky's 220.6   -6.62%
+    OK    ⓷ *** the first peak misses the sky by -7.5% at the pin and by between -7.5% and -5.7% across a factor of 3.6 in the onset -- the deficit does not move with the pin, so it is not an artefact of where the pin was put ***
+
+      pin l_A = 301.6 (measured)  ->  l_1/l_A = 0.6764 vs sky 0.7312    -7.50%
+      pin l_1/l_A to the sky          ->  l_A = 279.0 vs measured 301.6   -7.50%
+    OK    ⓷ᵇ the two misses are the SAME number to 0.0000% -- not nearly symmetric by luck but equal by identity, because l_1 is the same 204 in both: one deficit booked against either of two observables, not two deficits
+    OK    ⓷ᶜ and the ratio DOES move with the pin and crosses the sky -- 0.6764 at the pin, 0.7328 at z = 8600 -- so reading the ratio alone gives the opposite answer to reading l_1, which is why this had to be run rather than argued
+
+  ==========================================================================
+  PART 4 -- "BOTH PINNED" IS UNREACHABLE: THE CONTROL HAS NO FREEDOM LEFT TO SPEND
+  ==========================================================================
+    OK    ⓸ the symmetric sound-horizon convention exists in the instrument and is off by default, so nothing already measured moves
+       LZSTART      r_s      l_A
+          6761   109.70    397.1
+         20000   131.74    330.6
+         60000   140.13    310.8
+    3e7 (ship)   144.53    301.4   <- the floor, r_s from a ~ 0
+        LATARG             301.6   <- the target, BELOW the floor
+    OK    ⓸ᵇ the control's scale falls monotonically as its start recedes and approaches its floor FROM ABOVE, never crossing LATARG
+    OK    ⓸ᶜ *** so "both pinned" is not a run that was skipped: the target 301.6 lies below the control's floor of 301.4, which is why brentq reports endpoints of one sign. The control ARRIVES at the scale the CR arm SPENDS its one fitted number to reach ***
+    OK    ⓸ᵈ and without the convention the half-symmetric run moves nothing: LZSTART alone leaves the control's r_s at its a ~ 0 value by construction, the branch being unreachable
+
+  ==========================================================================
+  *** THE PIN CANNOT REACH THE DEFICIT.  The one fitted number moves l_A by 51% across
+    the scan and l_1 by 2%, so the first peak sits at 204 against the sky's 220.6
+    whatever the onset is.  0.6764 and -7.5% are two spellings of that one number.
+    "Both pinned" is unreachable because the control's scale is a limit, not a root.
+    ⌗ Each arm on its own geometry throughout.
+  ==========================================================================
+

@@ -1,0 +1,119 @@
+
+RECEIPT -- P15: ** THIS FORK NOW HAS A LIVE CONTROL AND A GUARD THAT CAN FAIL, ON ONE MACHINERY.
+THE LambdaCDM ARM LANDS AT 224/536/808 AGAINST THE SKY'S 220.6/538.1/809.8; THE UNDRIVEN COMB LANDS
+ON THE INTEGERS ON BOTH ARMS; AND THE CR ARM GIVES ell_1/ell_A = 0.570 AGAINST THE CONTROL'S 0.743 --
+A 23% DEFICIT AGAINST A 1.7% POSITION FLOOR. **
+
+Built r2376+c54.168, fronts #5 and #18.  Instrument:
+`computations/beyond_the_wall/ACOUSTIC_two_arm.py`, which carries both arms and the guard on ONE set
+of equations so that nothing below is a difference of machinery.
+
+** WHAT WAS MISSING AND IS NOT NOW. **  This fork had never run a control.  `ROBUST_p1p2_scan` quotes
+one from r1975 in a comment; c54.164 then showed its figures move over ell_1 in {150,165,315} under
+four readings of its own stated initial condition, with nothing to measure that against.  ** Without a
+control an absolute peak position is not a number.  Without an undriven guard a comb deficit is not a
+finding. **  Both exist here, and both are this fork's own -- no figure from the acoustic fold is used
+anywhere in this file, that fork's own reproduction gate having failed in this tree.
+
+  PART 1  ** THE GUARD PASSES ON BOTH ARMS. **  Every coupling to the potential removed at every site
+          -- the 4 Phi' in the photon, neutrino and CDM continuity AND the k^2 Psi in the photon/baryon
+          and neutrino Euler, in both the tight-coupled and post-switch branches -- and the source comb
+          lands on the integers: LambdaCDM 1.0147/2.0005, CR 1.0121/1.9968.  ** So the sound horizon,
+          the measure, the k-grid and the phase extraction are validated as an ensemble, and every
+          departure from n pi/r_s in a driven run is the driving and nothing else. **
+  PART 2  ** THE CONTROL, AND ITS FLOOR, WHICH IS THE POINT OF RUNNING ONE. **  Positions to 1.5% at
+          the first peak and 0.4% at the second and third; HEIGHTS to only 13-26%.  ** No height claim
+          from this instrument is meaningful below ~25%. **
+  PART 3  ** THE CR ARM, AND A CONTROL ON ITS OWN DISCRETENESS. **  Run on the physical ladder
+          k_L = sqrt(L(L+2))/r_0 and on a dense continuum sampling, the peaks are IDENTICAL --
+          172/396/624/904 both ways -- so the discrete ladder is not what sets the position.
+  PART 4  ** THE MEASUREMENT. **  ell_1/ell_A = 0.5703 against the control's 0.7433 and the sky's
+          0.7312: a 23% deficit against a 1.7% floor, a factor of fourteen in margin.
+
+** WHAT IS NOT CLAIMED. **  This does not settle PO-7 and does not pretend the CR figure is a
+prediction: the initial datum used is the one the corpus's own text describes -- Theta-hat flat in k,
+common phase, ** velocities zero ** -- and c54.164 established that the figure moves with that choice.
+** What has changed is that it is now moving against something. **  The disagreement with the
+abandoned fork's 201.3 is real and is now measurable rather than assertable.
+
+FIGURES PINNED BELOW are produced by ACOUSTIC_two_arm.py; the four runs cost several minutes each and
+are not re-run here.  What IS recomputed is every background quantity they rest on, which is cheap and
+is where a drift would show first.
+
+
+==============================================================================
+PART 1 — THE GUARD PASSES ON BOTH ARMS
+==============================================================================
+  every coupling to the potential removed at every site; source extrema in k, at recombination
+
+           arm      k r_s/pi, first two extrema    worst departure from an integer
+     LambdaCDM                  1.0147   2.0005                             0.0147
+            CR                  1.0121   1.9968                             0.0121
+
+  ** UNDRIVEN, BOTH COMBS LAND ON THE INTEGERS — worst departure 0.0147. **
+     *So the sound horizon, the measure, the k-grid and the phase extraction are validated as
+     an ensemble, on BOTH arms, and every departure from n pi/r_s in a driven run below is the
+     driving and nothing else. This fork had no such guard before c54.168.*
+
+==============================================================================
+PART 2 — THE CONTROL, AND ITS FLOOR
+==============================================================================
+    peak        sky    control    departure
+       1      220.6      224.0        1.5%
+       2      538.1      536.0       -0.4%
+       3      809.8      808.0       -0.2%
+       4     1147.8     1116.0       -2.8%
+
+   ratio        sky    control    departure
+   P1/P2      2.217      1.933      -12.8%
+   P1/P3      2.277      1.675      -26.4%
+
+  ** THE FLOOR, STATED SO NOTHING BELOW IT IS READ AS A RESULT: positions 1.5% across the first three peaks; HEIGHTS 26%. **
+     *The second and third peaks land at 0.4% and 0.2%, so the position floor is carried by the
+     FIRST peak alone — which is the one in dispute, and is why it is quoted as the floor.*
+     ⚠ **No height claim from this instrument is meaningful below about 25%.**
+
+==============================================================================
+PART 3 — THE CR ARM, AND A CONTROL ON ITS OWN DISCRETENESS
+==============================================================================
+  CR's source modes are discrete: k_L = sqrt(L(L+2))/r_0, projected with the stretch 2.750.
+  ** That is physical, not a sampling choice — but 'physical' is a claim, so the same arm was
+  run on a dense continuum sampling as well. **
+
+    on the discrete ladder : [172, 396, 624, 904]
+    on a dense continuum   : [172, 396, 624, 904]
+
+  ** IDENTICAL. So the discrete ladder is NOT what sets the peak position. **
+     *One objection to any CR peak figure is closed by measurement rather than by argument.*
+
+==============================================================================
+PART 4 — THE MEASUREMENT, IN THE ONLY FORM THAT IS COMPARABLE ACROSS ARMS
+==============================================================================
+           arm      H0       Om   D_M [Mpc]   r_s [Mpc]      l_A
+     LambdaCDM   67.40   0.3150       13865      144.53    301.4
+            CR   73.00   0.3066       13005      135.46    301.6
+
+  ** D_M differs by -6.2% and r_s by -6.3%, AND THEY CANCEL: l_A comes out 301.4 against 301.6. **
+     *So raw peak positions are not comparable across the arms and only the l_A-normalised
+     form is. `PO-7` carries this rule as of c54.165.*
+
+                    l_1    l_1 / l_A
+           sky    220.6       0.7312
+       control      224       0.7433
+            CR      172       0.5703
+
+  ** THE DEFICIT IS 23.3% AGAINST A 1.5% POSITION FLOOR — A FACTOR OF 15 IN MARGIN. **
+     *And the height ratio compounds it rather than cancelling: the CR arm returns
+     P1/P2 = 0.866 against the control's 1.933, a factor of 2.2 on an instrument whose height floor is 26%.*
+
+  ⌗ **AND IT DOES NOT AGREE WITH THE ABANDONED FORK.**  *That line reports ell_1 = 201.3,
+     i.e. l_1/l_A = 0.6675, against this instrument's 0.5703 on the initial datum the
+     corpus's own text describes. **The two are 15% apart and the disagreement is now
+     MEASURABLE rather than assertable** — which is what a control buys. No figure from that
+     fork is used anywhere in this file; its own reproduction gate fails in this tree.*
+
+==============================================================================
+ALL CHECKS PASS — the guard passes on both arms, the control lands at 224/536/808 against
+220.6/538.1/809.8 with a 1.5% position floor, discreteness is ruled out by measurement, and
+the CR arm's first peak sits 23% low against that floor.
+==============================================================================
