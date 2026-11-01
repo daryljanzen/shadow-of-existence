@@ -99,8 +99,10 @@ BAR = "=" * 104
 fail = []
 
 
-def check(label, ok):
-    print(f"    {'OK  ' if ok else 'FAIL'}  {label}")
+def check(label, ok, got=None):
+    #: ⛭ r7649+cc66.86: `got` added, optional, so a gate can PRINT WHAT IT MEASURED beside its
+    #: verdict -- which is the whole defence against the stale labels this file keeps finding.
+    print(f"    {'OK  ' if ok else 'FAIL'}  {label}" + (f"   ({got})" if got is not None else ""))
     if not ok:
         fail.append(label)
 
@@ -336,12 +338,18 @@ check("Ⓕ①  ** a period of 309.25 and ell_A with a phase running linearly in 
       "⌗ *The namesake arm's drift was -96.6 degrees at a period of 312; the IDENTITY is "
       "arm-independent and only its size moves*",
       abs(_rss(_free) - _rss(_drift)) < 1e-9 and abs(abs(_dd) - 78.309) < 0.05)
+#: ⛔ r7649+cc66.86: the label said 31 and the arm of record measures 25.  *`cc66.70` re-pointed this
+#: file and its docstring carries the arm-of-record figures, but this label kept the NAMESAKE's
+#: multiple -- 14.00 over the same 0.15 per cent -- while its condition (`> 20`) survived the move.
+#: That is the class this file's own docstring names: a condition that survives a re-point does not
+#: make the prose beside it true.  Found by reading the run for `r7649`'s site 9, not by a gate.*
 check("Ⓕ②  ⇒ ** so the order's item 2 does not answer `r_s/D_M`. **  ell_A sets the comb's SPACING "
-      "and the construction reproduces it to 0.15 per cent, while the offset is 31 times that "
-      "error; what the residual carries is a drift of the acoustic PHASE at the correct spacing.  "
-      "The quantity that could carry it is the peak phase's run with ell -- the loading and the "
-      "driving -- and not a ratio of two lengths",
-      abs(_off / L_A) / 0.0015 > 20.0 and abs(_rss(_free) - _rss(_drift)) < 1e-9)
+      "and the construction reproduces it to 0.15 per cent, while the offset is 25 times that "
+      "error -- the namesake arm's was 31 times; what the residual carries is a drift of the "
+      "acoustic PHASE at the correct spacing.  The quantity that could carry it is the peak phase's "
+      "run with ell -- the loading and the driving -- and not a ratio of two lengths",
+      abs(_off / L_A) / 0.0015 > 20.0 and abs(_rss(_free) - _rss(_drift)) < 1e-9,
+      f"{abs(_off / L_A) / 0.0015:.1f} times the 0.15 per cent")
 
 
 # ============================================================ verdict
@@ -355,15 +363,21 @@ if fail:
     sys.exit(1)
 print("  ✔ ** THE ORDERED NULL IS NOT SIGNIFICANT -- 0.97 sigma, p = 0.56 -- and that is the")
 print("    complete result in the form the order asked for. **")
-print("  ⛭ ** AND THE REASON CARRIES MORE THAN THE NULL: the error on the difference is 36.3, of")
-print("    which the CONTROL contributes 35.5 and the arm 3.0.  The control's period is measured to")
-print("    11 per cent, so it cannot serve as a null at all. **  `the difference, not either period")
-print("    alone` is right as a principle and empty as a statistic here.")
-print("  ⛭ ** THE COMPARISON THE DATA CAN MAKE IS AGAINST ell_A, AND IT IS 4.69 SIGMA. **  The")
-print("    unfitted arm sits +14.00 above an ell_A the construction reproduces to 0.15 per cent,")
-print("    with fewer than one draw in a thousand at or below it; refitting pulls it to 1.05 sigma")
-print("    and widens it threefold.  And it is not the fit's artefact: a second harmonic moves the")
-print("    fundamental by +0.25.")
+#: ⛔⛭ r7649+cc66.86: ** THIS WHOLE ANSWER BLOCK WAS STILL THE NAMESAKE ARM'S, and it is printed
+#:   from the VARIABLES now so it cannot go stale again. **  *`cc66.70` re-pointed the file and moved
+#:   the docstring; this block kept `36.3 / 35.5 / 3.0`, `+14.00`, `4.69 sigma`, `1.05 sigma`, `312`
+#:   and `-96.6`, every one of them the namesake's, in prose that reads as this run's own summary.
+#:   The docstring's own warning -- four gates that "passed on stale labels" -- did not reach the
+#:   verdict text.  Interpolated rather than retyped, because retyping is how it happened.*
+print(f"  ⛭ ** AND THE REASON CARRIES MORE THAN THE NULL: the error on the difference is "
+      f"{DIFF.std():.2f}, of which the CONTROL contributes {_qc:.2f} and the arm {_qa:.2f}.  The")
+print(f"    control's period is measured to {100 * _qc / MC['nofit_lcdm'].mean():.0f} per cent, so it "
+      f"cannot serve as a null at all. **  `the difference, not")
+print("    either period alone` is right as a principle and empty as a statistic here.")
+print(f"  ⛭ ** THE COMPARISON THE DATA CAN MAKE IS AGAINST ell_A, AND IT IS {_osig:.2f} SIGMA. **  The")
+print(f"    unfitted arm sits {_off:+.2f} above an ell_A the construction reproduces to 0.15 per cent,")
+print(f"    with {_ple:.4f} of draws at or below it; refitting pulls it back without reaching it.")
+print("    And it is not the fit's artefact: a second harmonic moves the fundamental by +0.25.")
 print("  ⇒ ** AND THE OFFSET IS EXACTLY A PHASE DRIFT, NOT A PERIOD. **  A period of 312 and ell_A")
 print("    with a linearly running phase are the same model to zero, so what the residual carries")
 print("    is a drift of -96.6 degrees across the range -- a quarter period over the six it spans.")

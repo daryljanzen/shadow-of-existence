@@ -5015,3 +5015,389 @@ softening named, since it is the one that moves against the others.**
 ⌗ *The period/drift pair (309.25, −78.3) and the l.2178 control-side figures are measured as they
 stand, per your note. Nothing else is touched: no INDEX row quotes a figure this pass moves, so the
 generated appendices and the PDF are deliberately unchanged.*
+
+---
+
+## ⚑ `r7649+cc66.78`–`.84` — **THE NAMESAKE RESIDUE, ONE TABLE. FOUR SITES RE-POINTED AND LANDED, THREE ANSWERED WITHOUT A RE-POINT, ONE BLOCKED ON A NAMED BANK, ONE IS 70's AND ONE IS 60's. AND `which_key_gaps` IS GREEN**
+
+Order `r7649`'s eleven sites, in its own numbering, in the same form as the last table: **old → new, the
+receipt re-pointed, and the claim's fate.** Every figure below was measured by running both arms through
+the identical code in the same turn; where I did not run it, the entry says whose it is.
+
+⛔ **Two of my own predictions are falsified and said so in the rows.** The `PREDICTION.md` is at
+`computations/beyond_the_wall/r7649_cc66_namesake_residue/PREDICTION.md`, registered in its own pushed
+commit before any of this was measured.
+
+---
+
+### ⓵ THE PHASE-INTERCEPT PARAGRAPH — l.1028–1029 and l.1038–1039 ⟶ **LANDS, AND ONE CLAUSE GETS STRONGER**
+
+`P15_there_is_no_phase_residual_and_the_fourth_peak_is_not_the_damping_envelope` — **re-pointed**
+(`cc66.81`), `BANK` naming `cc66_r185_verify_cr_leafrec1.npz` explicitly per `r7643`'s ruling. The control
+resolves to the same file in both readings, which is what makes it like-for-like.
+
+| what the paper prints | old | new |
+|---|---|---|
+| `$\varphi/\pi$` on peaks 1–3 | $-0.2278$ | **$-0.2270$** |
+| `$\varphi/\pi$` on peaks 1–4 | $-0.2445$ | **$-0.2433$** |
+| against the sky | $+1.0\sigma$ / $+0.0\sigma$ | **$+1.1\sigma$ / $+0.2\sigma$** |
+| against the control | $+1.6\sigma$ / $+0.6\sigma$ | **$+1.9\sigma$ / $+1.0\sigma$** |
+| l.1039, the envelope's move | a seventh of a multipole against an offset of **two** | a seventh against an offset of **one** ($0.13$ of $1.07$, so $12\%$ and not $7\%$) |
+| the four displacements | $+1.60$, $-0.24$, $+1.25$, $+1.95$ | **$+1.69$, $-0.50$, $+0.89$, $+1.07$** |
+| the geometric comb | $301.80$, $+0.085\%$ | **$302.94$, $+0.464\%$** |
+| the control's $-0.2318$ / $-0.2464$ and $301.54$ | — | **unmoved** |
+
+**Fate: every claim survives.** There is still no phase residual — the arm is inside $1.5\sigma$ of the sky
+and $2\sigma$ of the control on both fits. The fourth peak is still not the damping envelope, at $12\%$
+rather than $7\%$. l.1038's *under two multipoles at each peak* holds with the largest at $1.69$.
+**One wording change is needed: l.1039's "an offset of two" becomes "an offset of one".**
+
+⇒ ⛭⛭⛭ **AND ONE FINDING, WHICH IS WHY THIS SITE TOOK THE LONGEST. THE GEOMETRIC COMB AND THE SPECTRUM'S
+OWN COMB PART COMPANY ON THE ARM OF RECORD.** `LEAFREC=1` moves $r_s$ and $D_M$, so the geometric
+$\ell_A$ ratio goes $+0.085\% \to +0.464\%$ and would predict displacements $+1.02$, $+2.49$, $+3.77$,
+$+5.22$ — *growing with $\ell$, because that is what a ruler does* — against the measured $+1.69$,
+$-0.50$, $+0.89$, $+1.07$, which do not grow at all. It **overshoots the fourth peak by a factor $4.9$**.
+And the spectrum says the same thing directly: the arm's **fitted** comb spacing is $295.35$ on peaks 1–3
+against the control's $295.75$ — *narrower*, where the geometry says $0.464\%$ wider. Read as the
+fitted-to-geometric ratio, in which the phase shift common to both arms cancels, the arm sits $-0.598\%$
+from the control against the namesake's $-0.144\%$: the geometric difference grows $5.5$ times and the
+fitted comb's own distance from geometry grows $4.1$ times the **other** way. *Both arms are run through
+the identical locator inside the receipt, so the namesake figure is measured there and not quoted.*
+
+⇒ *** THIS STRENGTHENS l.1045 RATHER THAN WEAKENING IT. *** The sentence excludes the ruler shape because
+a constant fractional displacement *"would have to grow from half a multipole at the first peak to over
+two at the fourth"*. On the arm of record it would have to grow **from one to over five**, and the quartet
+does not grow. ⌗ *The parting itself — half a per cent on this arm where it was a seventh of that on the
+namesake — is routed to you as a finding. It is not the receipt's sentence to write, and PART 5 no longer
+subtracts the comb-width term as a component.*
+
+⛔ **AND ONE GATE OF MINE WAS UNSOUND; THE RE-POINT EXPOSED IT.** The envelope's inverse test demanded
+agreement to $10\%$ **relative**. On a shift of $-0.10$ in $\ell$ that is $0.01$ — a fiftieth of the
+locator's own $\pm0.5$ window spread at that peak — so it tested the parabola fit's grain, not the
+operation, and it passed on the namesake only because the shift there was $-0.05$. Restated in **absolute**
+$\ell$, keeping the whole claim and adding the part the old form omitted: the signs must be opposite at
+every peak (they are) and the four sums under $0.06$ in $\ell$ ($0.00$, $-0.05$, $0.00$, $+0.01$).
+
+---
+
+### ⓶ THE SHARED-FRACTION PARAGRAPH — l.1092–1100 ⟶ **LANDS; FOUR FIGURES MOVE AND THE $1.3$ DOES NOT**
+
+`P15_the_shared_fraction_does_not_mean_what_i_said_and_the_peak_trough_pattern_is_the_arms_alone` —
+**re-pointed** (`cc66.82`).
+
+| | old | new |
+|---|---|---|
+| whitened cosine | $0.855$ | **$0.848$** |
+| shared fraction | $73\%$ | **$71.8\%$** |
+| the arm's excess in $\chi^2$ | $105$ | **$109$** |
+| the model difference carries | $77$ | **$82$** |
+| the factor between the residuals' sizes | $1.3$ | **$1.270$ — still $1.3$ to the printed digit** |
+| the control's $0.99$ per bin | — | **unmoved** |
+
+**Fate: the paragraph survives, including the sentence that withdraws the attribution reading.** The
+control still fits at $0.99$ per bin, so there is still no shared defect for the arm's misfit to amplify;
+the tilted control still scores higher ($82.2\%$ against $71.8\%$, a *wider* margin than before); and the
+$1.3$ still needs no change in print.
+
+⛔ **MY PREDICTION FOR THIS SITE IS FALSIFIED IN DIRECTION ON THREE OF FIVE FIGURES, and the cause is
+exact.** I predicted the cosine and the shared fraction would **rise** and the $105$ would **fall**; the
+cosine and the fraction **fell** and the $105$ **rose**. I reasoned from the no-fit move ($2.57 \to 2.35$,
+the arm improving) and applied it to a **refit** statistic, where the landing had already shown the arm
+getting slightly worse ($1.57 \to 1.60$). The ground was named in the prediction and it was the wrong
+ground for this site.
+
+⛔ **ONE STALE LABEL** of the class I named at `cc66.153`: the tilted-control gate printed *"against the
+arm's 73.1%"* beside a condition reading the arm of record's. The condition was never wrong and its margin
+is **wider** on the arm of record; the figure printed beside it was the namesake's. It now prints both.
+
+⛔ **AND ONE GATE'S FORM WAS WRONG.** `|rms ratio − 1.34| < 0.03` passed on the namesake's $1.357$ and
+fails on the arm of record's $1.388$. But the claim is not that the ratio hits $1.34$ to two decimals — it
+is the **contrast** with the next gate: the rms ratio reproduces `r6881`'s figure where the correlation
+does not. Restated as that contrast, which is what the sentence says: the ratio within $6\%$ of $1.34$ AND
+the correlation missing $0.96$ by at least two and a half times as much. Measured $3.6\%$ against $14.2\%$,
+a factor $4.0$; the namesake was $1.3\%$ against $12.8\%$, a factor $10$. Both arms pass, and the gate now
+asserts the comparison rather than a coincidence of two decimals.
+
+---
+
+### ⓷ THE MODEL DIFFERENCE'S $5.7\%$ — l.1109 ⟶ **LANDS AT $8.6\%$, CLAIM UNTOUCHED**
+
+`P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck` —
+**re-pointed** (`cc66.83`). This file was *built* for the re-point and says so: `arm` is the movable
+loader and `hist` is a deliberately pinned namesake loader, because part (b)'s `DPSRC=0` bit-identity is a
+measurement of the pre-`736f9399` tree against the spectra **that** tree produced. So `arm` moves and
+`NAMESAKE`/`hist` do not, and the `_HIST_READ` guard still asserts the two namesake filenames by name.
+
+| | old | new |
+|---|---|---|
+| **l.1109's $5.7\%$** | $5.73\%$ | **$8.57\%$** |
+| the contrast direction | $51.13\%$ | **$55.72\%$** |
+| both together | $66.84\%$ | **$69.16\%$** ($34\% \to 31\%$ unnamed) |
+| $\lVert\Delta\rVert^2$ | $77.26$ | **$81.81$** |
+| the decomposition | $282.96 = 177.88 + 27.82 + 77.26$ | **$286.89 = 177.88 + 27.21 + 81.81$** |
+| the arm's oscillation at fixed envelope | $1.0401$ | **$1.0440$** |
+| $\Delta/\sigma$ at peaks / troughs | $+0.011$ / $-0.760$ | **$+0.002$ / $-0.836$** |
+| the coefficient | $1.078 \pm 0.049$, $+1.58\sigma$ | **$1.076 \pm 0.051$, $+1.50\sigma$** |
+
+**Fate: the claim is untouched.** *Amplitude, tilt, damping and position together do not account for the
+shape rejection* — $\Delta$ is still $91.4\%$ outside that family — and what does is still a contrast
+difference, now carrying $56\%$ rather than $51\%$. **Only the figure moves: $5.7\% \to 8.6\%$.**
+
+⛔ **ONE LABEL ASSERTED WHAT ITS CONDITION NEVER DID.** *"**Over** half of it sits in $\ell$ 900–1500"* —
+the condition asks for $0.45$, and the arm of record gives $49.7\%$. The namesake's $52.4\%$ made "over
+half" true by two points; the label was leaning on a margin the condition never had. Restated to **about**
+half with both arms' figures named, condition unchanged.
+
+⛭⛭⛭ **AND THE TRANSPOSITION GATE FOUND A TWELFTH SITE YOUR LIST DID NOT NAME, WHICH IS THE GATE DOING
+ITS JOB AND NOT MINE.** **l.1113 prints the decomposition $282.96 = 177.88 + 27.82 + 77.26$** and is closed
+by the marker at l.1122 — this same receipt. Re-pointed, it computes
+**$286.89 = 177.88 + 27.21 + 81.81$**, so until you land it the paper prints a decomposition **no receipt
+computes**. The two receipts still holding $282.96$ hold it as the namesake arm's value.
+⇒ *Parked in `marker_transposition_baseline.tsv` as a `TRANSPOSITION candidate` with that reading, in the
+words "NOT a coincidence and NOT an adjudication — a STALE FIGURE, parked for 69 to land", so it cannot sit
+there as a silent permission. **l.1113's three terms move with the rest of site 3.***
+
+⌗ **Two more flags fired from the same re-point and both are adjudicated, not parked:**
+- l.1123's **$1.044$** is correctly closed. The monopole receipt COMPUTES AND PINS it — the arm-of-record
+  contrast at $1.04403$, two-sided to $10^{-5}$, beside the namesake's $1.0401$. The flag fires only
+  because the re-pointed carrier now *also* prints $1.0440$ for the same quantity on the same arm, which is
+  two instruments agreeing. **Nothing to move.**
+- l.1127's **$1.056$** is a coincidence of three digits: the paper's is the band variance of the normalised
+  oscillation on the **trough** side (against $1.067$ on the peak side); the carrier's is
+  $\lvert\Delta/\sigma\rvert$ over $\ell$ 950–1080, which the re-point moved from $1.074$ to $1.056$.
+  ⌗ *Noted and deliberately NOT adjudicated as part of that: the own group does not carry its own $1.056$
+  either. That is a pre-existing gap the coincidence made visible, and it is yours.*
+
+⌗ **And two baseline rows went stale and are removed** — *"a fixed site left in the baseline is a silent
+permission to regress there"*. The $0.855$ row fell because the re-point moved that carrier's cosine to
+$0.848$. **Your own $1.70$ row from `r7649` fell too, and for a good reason: `cc66.80`'s restatement of my
+locator verdict now prints all four displacements in the own group's own text, so the figure sits where it
+is computed and the flag no longer fires.**
+
+---
+
+### ⓸ THE COMPOSITION — l.1227–1228 ⟶ **ALREADY ON THE ARM OF RECORD; ONE CLAUSE NEEDS A HALF**
+
+`P15_the_two_channels_compose_multiplicatively_and_the_pair_is_flat_where_the_excess_grows` — **no
+re-point needed**: it already reads `r6941_fine_cr_leafrec1` and `r6959_eta_cr_leafrec1`. All 29 gates
+pass on the tree as it stands.
+
+- *"a little over one and a half times"* — **holds.** The joint/measured ratio runs $2.82$, $2.10$, $1.57$,
+  $1.45$, $1.35$, $1.18$, $1.33$ band by band, mean **$1.69$**.
+- *"within one per cent of that value"* — **needs a half.** Band-mean: the joint run reads $9.897\%$ and
+  the two channels summed alone $10.044\%$, so they agree to **$1.46\%$**. The receipt's own gate words it
+  as *"to about one per cent"*; the paper's strict *"within one per cent"* no longer holds. **Proposal:
+  "within a per cent and a half of that value."**
+
+---
+
+### ⓹ THE WINDOW'S "ABOUT A THIRD" — l.1178–1191 ⟶ ⛔ **BLOCKED ON A BANK, AND THE BANK ASK IS EXACT**
+
+`P15_the_windows_phase_spread_is_nearly_equal_because_the_visibility_widens_as_the_leaf_clock_slows`.
+I built the re-pointed reading (`r6959_eta_cr_leafrec1`, `r6941_fine_cr_leafrec1`; the control legs and
+all six taper legs are control-only and unmoved) and ran both arms. **I am NOT landing the re-point**, and
+the reason is a bank and not a figure.
+
+**What is measurable now, and moves:**
+
+| | old | new |
+|---|---|---|
+| the window's spread, this arm | $0.0642$ of the acoustic scale | **$0.0645$** |
+| ...against the control's $0.0652$ | within **a per cent and a half** | within **a per cent and a quarter** ($1.16\%$) |
+| the visibility, wider in conformal time | **fourteen** per cent | **fifteen and a half** per cent ($43.96$ against $38.04$) |
+| the phase, slower per unit of it | fourteen per cent | **holds** ($-14.0\%$) |
+| the product | within **one part in ninety** of unity | within **one part in a hundred and fifty** ($0.9934$) |
+
+**What is blocked:** *"between a quarter and a half"*, *"a fifth and two fifths"* and therefore **"about a
+third"**. The control-side `SRCTAPER` legs were produced at a coefficient solved to take the control's
+band-summed window spread to the **namesake** arm's $0.06424$. The arm of record's is $0.06447$, so at the
+banked coefficient $0.000110088$ the swap misses its target, and the per-band shares — which are ratios of
+small differences — scatter to $11$–$243\%$ through the instrument's response and $11$–$101\%$ through the
+direct substitution. Two of the six bands blow up because the band excess they divide by is near zero.
+**Neither reading can be quoted on the arm of record until the taper is re-made.**
+
+⇒ **THE BANK ASK, for 70:** one control-side `SRCTAPER` run whose coefficient takes the control's
+band-summed window spread to **$0.06447$ of the arm of record's own $r_s$** (the existing bank targets the
+namesake's $0.06424$). Nothing else about the file needs to move.
+
+⌗ **And one thing that is NOT blocked and is worth your eye.** The receipt's R1 gate asserts that the
+measured excess extrapolates to a non-zero offset at $q=0$ *"worth more than half the top band's"*. On the
+arm of record the intercept is $0.0358$, which is **$0.239$** of the top band's $0.14985$ — still non-zero,
+no longer more than half. **The paper's own claim at l.1199 is only that the offset is non-zero, so the
+paper survives; the receipt's stronger gate does not, and that is independent of the taper bank.**
+
+---
+
+### ⓺ THE THREE-GRID TRUNCATION — l.1958–1966 ⟶ **70's FIGURES, AND THE RE-POINT IS REACHABLE**
+
+`P15_the_three_grid_comparison_is_like_for_like_and_not_a_ceiling_artefact_because_the_projection_reach_is_fixed_on_every_arm`
+does not compute $-1.0 \ldots +93.8$. It **drives** `computations/beyond_the_wall/r7101_70_three_grid_audit/audit.py`
+as a subprocess and asserts, against its output, exactly the figures the paper prints. Its own words:
+*"the measurement is 70's, the assertion that the paper quotes it correctly is the gate's — a second
+implementation of someone else's audit would be a different number wearing the same name."* **So I have
+not re-pointed it, and I should not.**
+
+What I did establish, by reading the banks directly:
+
+- `r7095_directions/grid_licensed_leafrec1` and `r7093_directions/grid_oneclock_leafrec1` **both exist**,
+  each with nine `cr_*` legs and **no `lcdm_*` leg** — arm-only, so the audit needs the per-arm resolver
+  (`cc66.75`'s pattern) and a naive path swap would raise `FileNotFoundError` on `lcdm_base.npz`.
+- **The comparison is LIVE on the arm of record:** licensed against forbidden reads
+  $\max|\Delta D_\ell| = 1.85\times10^{-2}$ across the nine legs.
+- **And the banked-against-licensed distinction is SPENT**, exactly as `cc66.75` found:
+  $\max|\Delta D_\ell| = 0$ on every leg. So ⓵'s *"the control byte-identical across all three grids"*
+  holds trivially on the arm of record, because the siblings carry no control legs at all and the control
+  comes from the namesake grids — literally the same files, which is what makes it like-for-like.
+
+⇒ **ROUTED TO 70 THROUGH YOU:** re-run `audit.py` with a per-arm grid resolver and the seven truncation
+gaps come back on the arm of record. My receipt's assertions then move with its output, and I will re-point
+them the turn the audit lands.
+
+---
+
+### ⓻ `arms_own_driving_pair` — l.2183–2188 ⟶ **LANDS, AND THE AGREEMENT GETS THREE TIMES BETTER**
+
+`P15_the_arms_own_driving_pair_reproduces_the_banked_one_and_the_peak_plane_separates_the_loading_from_the_driving_but_not_the_driving_from_a_clock_error`
+— **re-pointed per arm** (`cc66.84`); both sibling banks are arm-only, so the arm resolves to the sibling
+and the control to the namesake directory.
+
+| | old | new |
+|---|---|---|
+| **l.2183's $\Delta\varphi$ pair** | $+0.1259$ against $+0.1265$ | **$+0.1267$ against $+0.1265$** |
+| ...*"reproduces to half a per cent"* | $0.50\%$ | **$0.17\%$ — two tenths of a per cent** |
+| the alternation | $-0.02428$, $1.65\%$ apart | **$-0.02342$, $5.12\%$ apart** |
+| l.2185's discriminants | $0.193$ driving, $1.039$ loading | **$0.1848$ and $1.0963$** |
+| l.2186's *"a factor of $5.4$ apart"* | $5.39\times$ | **$5.93\times$** |
+| *"separated ... by a factor of six"* | $6.01\times$ | **$6.34\times$ — still six** |
+| the `WB` proxy and the clean lever | $0.3780$, $2.75\times$ further out | **$0.4544$, $2.41\times$** |
+| $\ell_A$ | $301.3796$ | **$301.4001$** |
+
+**Fate: the sentence gets stronger and gains one clause.** *"Reproduces the control's to half a per cent"*
+becomes **two tenths**, and the separation the plane licenses gets **wider**, not narrower.
+
+⛔ **BUT THE GATE SPLITS, AND THAT IS A FINDING RATHER THAN A TOLERANCE PROBLEM.** The gate asserted
+agreement to half a per cent on the common offset **and** two per cent on the alternation. On the arm of
+record the offset half improves to $0.17\%$ and the alternation half goes to $5.12\%$. I restated it **as
+the split** rather than loosening it to one number covering both: the offset is pinned **tighter** than
+before, at three tenths of a per cent, which the namesake now fails; the alternation is pinned at six per
+cent with the loosening named in the label; both signs are still required. What the separation rests on is
+the **offset** — more driving lowers it, more loading raises it — so the reading survives.
+⇒ **The alternation's five per cent is a new fact about this statistic that l.2183's sentence does not
+carry, and it is yours to word.**
+
+---
+
+### ⓼ P18 l.1558's "$58$ TIMES" — ⟶ **NOT NAMESAKE RESIDUE, AND NOT A P15 FIGURE. IT IS 60's**
+
+Traced to its own commit. `bf8858e24` (`r4335`) replaced *"this arm sits fifty-six times the control"* —
+which was $118.4 / 2.10$, and which that commit's own message calls *"arithmetically true and the wrong
+quantity"*, built from two configuration-limited numbers — with **60's framing**: *"the separation between
+the arms measured against the control's own distance from the data."* The same commit records the two
+independent measures the sentence then cites: **$F_2 = 15473$ against $\chi^2_{\rm sep} = 16261$**, which
+is where *"agree to within $5\%$"* comes from. `PO13_WORKING_STATE.md` l.112–113 carries the same pair,
+measured at `c54.186` on $185$ bins with a lensed spectrum to $\ell = 1996$ at $\chi^2/{\rm dof} = 1.18$.
+
+- **It has no P15 receipt**, and P18 carries no `\rcpt` anywhere in that section — it cites P15 by
+  `\cite` alone.
+- **It is not a per-bin $\chi^2$ ratio**, so it is not one of my namesake figures and I cannot re-point it.
+  Whether it moves on the arm of record is **60's to re-measure**, from $F_2$ and $\chi^2_{\rm sep}$.
+- If you would rather replace it with a ratio that **does** have a receipt, the two on the arm of record
+  are **$2.090$** on $133$ unlensed bins (gated in `...the_133_bin_pair...`) and **$2.3456$** on $185$
+  lensed bins. ⛔ *Those two are $12.2\%$ apart, so the "two independent measures agree to within $5\%$"
+  clause does not describe them either and would have to go with the $58$.*
+
+---
+
+### ⓽ THE SPACING PERIOD AND DRIFT — l.2120 and l.2140–2143 ⟶ **ALREADY MEASURED; FOUR FIGURES AND TWO DERIVED ONES**
+
+`P15_the_period_difference_null_is_not_significant_because_the_control_has_no_measurable_period_and_the_offset_is_exactly_a_phase_drift_at_fixed_ell_A`
+is **already on the arm of record** (`r7645+cc66.70`), so these are not a new measurement — you quote
+them back to me in `r7649` and they are confirmed here against the receipt.
+
+| | old | new |
+|---|---|---|
+| the unfitted arm's free period | $312.0$, $1\sigma$ $[308.5, 315.2]$ | **$309.25$, $1\sigma$ $[304.75, 313.75]$** |
+| $\ell_A = 298$ | **excluded** at $\Delta\chi^2 = 15.0$ | **disfavoured** at $\Delta\chi^2 = 5.55$ |
+| the offset against $\ell_A$ | $+14.00$ at $4.69\sigma$, $+4.70\%$ | **$+11.25$ at $3.36\sigma$** |
+| the drift at fixed $\ell_A$ | $-96.6^\circ$ | **$-78.3^\circ$** |
+| the refit's period, and the control's | $307.3$ and $347$ | **unmoved** ($307.25$, $347.25$) |
+
+**Two derived figures in the same sentences move with the drift, and both are read off the re-pointed
+run rather than computed from a rounded print:**
+- l.2143's *"which is $0.268$ of a comb period over the $5.98$ the range spans"* ⟶ **$0.218$**.
+- l.2145's *"the offset is $31$ times $\ell_A$'s own error"* ⟶ **$25$ times**. The error is unchanged at
+  $0.15\%$ of $\ell_A$ and the offset is $+11.25$ rather than $+14.00$, so the multiple falls in the same
+  proportion. *(Measured: $25.2$.)*
+
+⛔ **AND THAT RECEIPT HAD TWO MORE STALE LABELS OF THE SAME CLASS ITS OWN DOCSTRING NAMES, which I found
+by reading the run for this row rather than from a gate.** `cc66.70` re-pointed the file and moved its
+docstring, but its `Ⓕ②` gate label kept the namesake's *"31 times"* with a condition (`> 20`) that
+survived the move, and **its whole closing verdict block was still the namesake arm's** — `36.3 / 35.5 /
+3.0`, `+14.00`, `4.69\sigma`, `1.05\sigma`, `312` and `-96.6`, in prose that reads as that run's own
+summary. Both are fixed at `cc66.86`, and the verdict block is now **interpolated from the variables**
+rather than retyped, because retyping is how it happened. It prints `35.65 / 35.52 / 3.35`, `3.36\sigma`,
+`+11.25` and `0.0015`. *That is the third and fourth stale label of this class this turn, after site 2's
+and site 3's.*
+
+**Fate: "the residual does not sit at $\ell_A$" survives and loses a third of its strength** — the
+exclusion becomes a disfavouring, $4.69\sigma$ to $3.36\sigma$. The drift **identity** is arm-independent
+(the two models still have the same residual sum of squares to $1.1\times10^{-13}$); only its size moves.
+
+---
+
+### ⓾ `fig:acoustic-nofit`'s "$(68.62, 0.2974)$ AT $0.958$" — ⟶ **THE BAO-ALONE FIT'S OWN MINIMUM, CORRECTLY PRINTED**
+
+**Answering your question directly: it is not a namesake leftover.**
+`P15_the_1p57_has_no_parameter_address...` prints, from the $13$ DESI DR2 points with **no spectrum
+involved at all**:
+
+```
+arm ruler (D free, r_s leaf):  H0 = 68.6169  Om = 0.29735  chi^2 = 10.539 (0.958 per dof)
+```
+
+Rounded, $(68.62,\,0.2974)$ at $0.958$. The likelihood is a pure background fit — distances on the arm's
+radiation-free rate, $r_s$ on the leaf clock — so **`LEAFREC` does not enter it and there is no
+namesake/arm-of-record distinction for the number to leak.** The pair the spectra are *computed* on is the
+rounded $(68.60,\,0.2973)$ start, which is a different and also correct thing, and that gate already
+checks the two agree to every digit that matters.
+
+⌗ *One wording option, not a correction: the caption currently names the fit's own minimum, which is right
+for "a background recovered from DESI DR2 baryon-acoustic data alone". If you want it to name the point the
+comb is actually computed at, that is $(68.60, 0.2973)$. Either is true; naming both would be clearest.*
+
+---
+
+### ⓫ INDEX ROW C71's "namesake arm's" NOTE — ⟶ **NOT RESIDUE. KEEP IT**
+
+The row carries **three** `namesake arm's` notes and all three are deliberate comparisons of the form *the
+namesake gave X, the arm of record gives Y*. All three check out against this turn's run of the receipt:
+
+| the note | checked |
+|---|---|
+| *"about fifteen times the namesake arm's $-0.046\sigma$"* | $0.6728 / 0.046 = 14.6$ ✔ |
+| *"and fifty-two times its $+0.010$"* | $0.5244 / 0.010 = 52.4$ ✔ |
+| *"every figure in it moved, the tilt by $1.7$ per cent"* | $1.015066 / 0.997952 = +1.715\%$ ✔ |
+
+⇒ **Recommendation: keep as written.** A note that names the namesake *as the comparison* is the right
+form and is the opposite of residue; what the other ten sites had was a namesake figure standing **as**
+the arm's. If you want the distinction visible in the row, the phrase to prefer is *"the namesake arm's
+X, against this arm's Y"*, which is already what two of the three do.
+
+---
+
+## ⛭ AND THE READER YOU NAMED IS GREEN
+
+`which_key_gaps_actually_block` was red on its pinned ten-of-eleven. **Three** gates carried the ten, not
+one; all three now read eleven and the reader is green. The reach gate is anchored to
+`len(GAPS_ALL) == 11` alongside the reach itself, because `sorted(_REACHED) == sorted(GAPS_ALL)` passes on
+an **empty** `GAPS_ALL` — the same vacuity this file was repaired for at `cc66.69b`. Perturbed twice: the
+exact pre-banking state (a shadow `spectra/` withholding only `r6893_slice_check_leafrec1.npz`) fails the
+three and nothing else; an emptied population fails them too rather than passing vacuously.
+
+## ⛔ WHAT I HAVE NOT DONE YET IN THIS ORDER
+
+- The landed values (`2.35`, `2.71`, `502.1`, `1.60`, `1.61`, `2.33`, `186.135`, `11.7`, `18.3`, `1.015`)
+  pinned in the receipts that compute them, and `figure_pin_baseline.tsv` lowered from `1484`. That is the
+  next thing I do, in its own commit.
+- The INDEX rows of the four re-pointed receipts still print their namesake figures. I will move them in
+  the same pass as the pins, with the appendices regenerated if the appendix text moves.
