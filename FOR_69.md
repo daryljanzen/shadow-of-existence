@@ -9,6 +9,56 @@ is committed and pushed on `main` — nothing waits on the chat window.*
 
 ---
 
+## ⚑ `r7653` (cc66) — **A NAMESAKE-RESIDUE SITE THE TRANSPOSITION GATE FOUND FOR ME: l.1145's `-1.074` AND `-1.177` ARE THE NAMESAKE'S AND READ `-1.056` AND `-1.159` ON THE ARM OF RECORD. THE CLAIM HOLDS**
+
+**How it surfaced, which is the part worth keeping.** CI's `fast` tier reddened on
+`check_marker_transposition` with a NEW flag at `CR_cosmology.tex:1148` for the token `1.074`: *"none of
+the group closing it carries it; `…the_windows_phase_spread…` does."* Chasing that turned up a site
+nobody was looking for.
+
+**The site.** l.1144–1148 reads: *"the $\ell\simeq1000$ trough where $\Delta$ carries $-1.074$ of the
+arm's $-1.177$ in fifteen bins"*, closed by
+`…the_model_difference_is_an_acoustic_contrast_difference…`. That receipt was re-pointed and its stale
+READING block interpolated at `r7653+cc66.103`, and **it now computes a different pair**:
+
+| | namesake (what l.1145 prints) | **arm of record** |
+|---|---|---|
+| the control at ℓ ≈ 1000 | — | **−0.103** |
+| the arm | **−1.177** | **−1.159** |
+| Δ | **−1.074** | **−1.056** |
+| Δ's share of the arm's deficit | 91.2 % | **91 %** |
+
+Read off its own run, row `(4) ell 950-1080 (n=15)`. ⇒ **The claim holds to the digit it is stated at —
+Δ carries nine tenths of the arm's deficit in fifteen bins — and both figures move.** *So this is a
+clean substitution, and it is the one namesake site in that paragraph that the `r7651` audit did not
+list because the receipt still printed the old pair when the audit ran.*
+
+**Why the gate could see it and the figure audit could not.** `check_figures_pinned` asks whether a
+printed figure is *pinned*; `-1.074` was, by the literal the receipt carried. Interpolating that literal
+made the receipt stop carrying the token, and the only thing left in the corpus carrying `1.074` became
+the lobe split at l.1127 — 49 lines away, in a receipt that merely quotes it. **The transposition gate
+reads "which receipt carries this number" and so noticed that the number had left its own receipt.**
+⌗ *A gate for marker placement caught a stale figure, which is not what it is for.*
+
+**Adjudicated, not worked around.** The flag is a genuine coincidence — two different quantities sharing
+one token — and it is in `marker_transposition_baseline.tsv` as `not a transposition -- coincidence`
+with both halves recorded and this routing named. **The entry leaves that file the moment l.1145 lands
+`-1.056` and `-1.159`, because the token is then no longer shared and the flag cannot fire.**
+
+### And the second half of the same red was mine twice over
+
+The gate also reported a **STALE** entry: l.2147's sky intercept, adjudicated as *"the own group prints
+it at run time"*, had stopped firing because `r7653+cc66.110` **hard-coded** that figure into the comb
+receipt's PART 6 narrative. ⇒ Repaired by interpolating it, which is what the adjudication records.
+⛔ *And then the gate was still red, because the comment I wrote to explain the interpolation spelled
+the figure out. Naming a number in the comment that explains why you did not type it carries it just as
+surely as typing it in the gate. The marker gate reads the source.*
+
+⇒ `check_marker_transposition` now reads **no new transposition, no stale adjudication, both calibration
+cases re-found.**
+
+---
+
 ## ⚑ `r7653` (cc66) — **l.2285's PIN IS IN, AND IT FOUND ONE HUNDREDTH: THE `0.75` IS THE PUBLISHED `0.79` ROUNDED TWICE, AND THE RECEIPT'S OWN ARITHMETIC GIVES `0.76`. `r7653` IS COMPLETE**
 
 ### The pin you asked for

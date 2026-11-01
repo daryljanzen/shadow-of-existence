@@ -31808,3 +31808,24 @@ The interval's CENTRE (`R_ROB = 0.9821`) is what gives Ⓔ①'s 12.90 and 0.78; 
 ⇒ **`r7653` IS COMPLETE.** Items ⓵ (with ⓵c and ⓺ falling out of it), ⓶, ⓷ and ⓸ are all landed and pushed, and the l.2285 pin with them. **What is owed back to me is three wording calls and nothing else:** the share at l.1188–1190, the `0.76` at l.2284, and whether l.2072–2074 prints the matched pair or says its line-of-sight figures are grid-snapped.
 
 ⌗ **And the one thing worth carrying out of this order, because it is the same finding five times.** Five of my registered commitments were falsified, and every one by the same move: **reasoning from a neighbouring quantity instead of the one asked about.** ⓵a attached two statements to arm-vs-sky when they compare two instrument *paths*; ⓵c keyed a bank search on a filename convention; ⓶ transferred `r_D`'s VISLEAF-family response to a different comparison; ⓸ reasoned from the figure the order named instead of the table it came from; and item ⓷'s "blocked" reading transferred a dependence on the arm to coefficients that only calibrate the control. *The guard that worked every time it was applied is the cheap one: establish the referent from the paper, or from the instrument, before predicting anything about it.*
+
+### ⛔⛭⛭ `r7653+cc66.114` — THE `fast` TIER'S `check_marker_transposition` RED, REPAIRED AT BOTH CAUSES — **AND CHASING IT FOUND A NAMESAKE-RESIDUE SITE AT l.1145 THAT NO AUDIT HAD LISTED**
+
+CI's `fast` tier reddened on `check_marker_transposition` on this branch's head. Reproduced locally; **both findings are mine from this turn**, and the first is worth more than the repair.
+
+**⒜ A NEW FLAG on `1.074` at `CR_cosmology.tex:1148`, and it led to a stale paper figure.** l.1144–1148 reads *"the $\ell\simeq1000$ trough where $\Delta$ carries $-1.074$ of the arm's $-1.177$ in fifteen bins"*, closed by `…the_model_difference_is_an_acoustic_contrast_difference…`. That receipt was re-pointed and its stale READING block interpolated at **`cc66.103`**, and it now computes a different pair:
+
+| | namesake (what l.1145 prints) | **arm of record** |
+|---|---|---|
+| the control at ℓ ≈ 1000 | — | **−0.103** |
+| the arm | **−1.177** | **−1.159** |
+| Δ | **−1.074** | **−1.056** |
+| Δ's share of the arm's deficit, in 15 bins | 91.2 % | **91 %** |
+
+Read off its own run's row `(4) ell 950-1080 (n=15)`. ⇒ **The claim holds to the digit it is stated at and both figures move.** Routed to 69; it is the one namesake site in that paragraph the `r7651` audit could not list, because the receipt still printed the old pair when that audit ran.
+
+⌗ **Why this gate could see it and the figure audit could not, which is the transferable part.** `check_figures_pinned` asks whether a printed figure is *pinned* — and `−1.074` was, by the literal the receipt carried. **Interpolating that literal made the receipt stop CARRYING the token**, so the only thing left in the corpus carrying `1.074` became the lobe split at l.1127, 49 lines away, in a receipt that merely quotes it and which this turn moved there. The transposition gate asks *which receipt carries this number*, so it noticed the number had left its own receipt. ⇒ **A gate for marker placement caught a stale figure, which is not what it is for.** The flag itself is a genuine coincidence — two quantities sharing one token — adjudicated `not a transposition -- coincidence` with both halves recorded, and **the entry leaves that file the moment l.1145 lands the new pair**, because the token is then no longer shared.
+
+**⒝ A STALE entry, and it was mine twice over.** l.2147's sky intercept is adjudicated as *"the own group prints it at run time"*, and **`cc66.110` hard-coded that figure** into the comb receipt's PART 6 narrative, so the flag stopped firing. Repaired by interpolating it from the receipt's own `NEW['phi']` and `phi_sky`. ⛔ **And the gate was still red, because the comment I wrote to explain the interpolation spelled the figure out.** *Naming a number in the comment that explains why you did not type it carries it just as surely as typing it in the gate. The marker gate reads the SOURCE.* Both halves are now in that comment so the next reader repeats neither.
+
+⇒ `check_marker_transposition` reads **no new transposition, no stale adjudication, both calibration cases re-found.**
