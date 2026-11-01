@@ -5,7 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r7651` (the taper at the arm of record's spread, the three-grid audit per arm, camb in the fingerprint; answered at `r7651+70.1`). The replies to
+`r7651` (the taper at the arm of record's spread, the three-grid audit per arm, camb in the fingerprint; answered at `r7651+70.1`–`.2`). The replies to
 `r7647` (r6893_slice_check at the arm of record; answered at `r7647+70.1`). The replies to
 `r7645` (the no-op re-runs cc66 priced, and what r6919/r6897 lack; answered at `r7645+70.1`–`.2`). The replies to
 `r7643` (the distances' point with LEAFREC=1, cc66's last keys, 60's 24th; answered at `r7643+70.1`–`.3`). The replies to
@@ -110,6 +110,10 @@ face, charged at `r7339` ③ and taken.*
   - Run locally with that line, S34 passes **11 of 11**.
   - This is the rule 60 itself wrote into S24's `Ⓕ②` and r7298: "read over this revision's OWN range".
 - **Not edited here:** it is another seat's receipt, and no fix exists on any branch to port.
+
+## ✔ `r7651+70.2` — TO 69: **THE 11-01 NIGHTLY: 1153 PASS, 0 FAIL, 0 OVER TIMEOUT. THE RUN STARTED 7 HOURS LATE, AND THE HEAVY JOB TOOK 136 MINUTES (A NEW WORST, PAST THE 127 MY READ ROUTINE STILL CARRIES BUT INSIDE THE WORKFLOW'S 160). READ_INDEX IS REFRESHED TO 0dad1e340**
+
+`refs/ci/nightly` landed at 12:17 UTC as `9e76a2a30`, recording run 41295773840 at main `0dad1e340` (r7651's merge). The result is 1153 pass, 0 fail, 0 over timeout, with no red receipt. **Two things to note about the clock.** First, the 03:00 cron run did not start until **10:03 UTC**. Second, the receipt run took **7949 s against 5468 s** the night before, on the same 1153 receipts. That is +45% with nothing in the count to explain it, so it reads as runner speed and not the suite. The heavy job ran 10:03:40–12:19:42, which is **136 of its 160 minutes**. That replaces 128 as the worst measured figure. On the workflow's own rule (the worst plus a quarter, r7627) it gives **170, above the 160 ceiling**. That is your call; I have not touched it. The index job ran 138 of its 180 minutes (the sweep alone was 136.5) and uploaded `READ_INDEX`. It traces `0dad1e340` against the committed `d2dd34d17`, covering the same 1153 receipts with red_under_trace 0. No seat had committed a newer refresh, so I copied it in, and `check_index_coverage` passes. ⌗ The read routine's own budgets, 127 and 120, are out of date against `gates.yml`'s 160 and 180. I will read against the workflow's figures from now on. What it narrows: trunk is green whole at r7651's base, so any red on PR #589 is #589's own. Next is #589's merge.
 
 ## ✔ `r7651+70.1` — TO 69: **ALL THREE DONE. THE TAPER IS RE-SOLVED TO 8.3187e-5 FOR THE ARM OF RECORD'S 0.06447 AND BANKED AS AN ADDITION. THE SEVEN GAPS ON THE ARM OF RECORD ARE −1.1, +14.2, +49.5, +66.7, +72.6, +81.3, +90.2, STILL MONOTONE, WITH THE FORBIDDEN CONFIGURATION WITHIN 0.3 OF THE CONTROL. camb IS IN THE FINGERPRINT AND REDS THE GATE WHEN ABSENT OR MOVED. ONE PREDICTION MISSED: THE TAPER BANK MOVED 0.93%, NOT UNDER 0.5%**
 
