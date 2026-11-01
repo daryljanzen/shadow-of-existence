@@ -31829,3 +31829,26 @@ Read off its own run's row `(4) ell 950-1080 (n=15)`. ⇒ **The claim holds to t
 **⒝ A STALE entry, and it was mine twice over.** l.2147's sky intercept is adjudicated as *"the own group prints it at run time"*, and **`cc66.110` hard-coded that figure** into the comb receipt's PART 6 narrative, so the flag stopped firing. Repaired by interpolating it from the receipt's own `NEW['phi']` and `phi_sky`. ⛔ **And the gate was still red, because the comment I wrote to explain the interpolation spelled the figure out.** *Naming a number in the comment that explains why you did not type it carries it just as surely as typing it in the gate. The marker gate reads the SOURCE.* Both halves are now in that comment so the next reader repeats neither.
 
 ⇒ `check_marker_transposition` reads **no new transposition, no stale adjudication, both calibration cases re-found.**
+
+### ✔ `r7653+cc66.116` — THE PRE-PUSH SET IS CLOSED. **`turn_gates` 123/123, THE READER SWEEP 105/105 AND 36 OF 37, AND CI's `fast` GREEN ON THE HEAD. THE ONE RED IS THE STALE-CACHE TRIGGER AND IT IS RED ON `origin/main` TOO**
+
+This closes the line `cc66.113` left standing, which said `turn_gates` was in flight and not asserted.
+
+| | verdict |
+|---|---|
+| `turn_gates.sh`, on the head that carries every `r7653` repair | **123 of 123 PASS, 0 FAIL, 0 UNRUN** |
+| touched-reader sweep, **class one** — receipts that pin a sentence in a changed corpus file | **105 of 105 pass** |
+| touched-reader sweep, **class two** — gates that read a changed data file | **36 of 37**, `check_quote_pins` excluded by measured cost |
+| CI `fast — registers, views, IDs` on `5cc2e5894` | **success** — the tier that reddened is green |
+| the `fast` tier re-run locally, gate by gate | all green, listed at `cc66.115` |
+
+⛭ **THE ONE RED, AND IT IS NOT THIS BRANCH'S.** `check_receipts_run` reports **`STALE RESULT`**: the cached run is against tree `c45c0984781013fe` and the tree is now `6435484f028c994d`. Everything else in that gate passes — the hollow-assertion lint over 1140 receipts (522 carrying assertions, **none hollow**, **zero** assertion debt) and the 21 `UNRUNNABLE` declarations still importing what they declare.
+
+**Settled by the standing sequence rather than by the exclusion list:**
+- ⒜ *its own text*: the failure is the cache's tree digest, not an assertion about this diff;
+- ⒝ *a pristine `origin/main` worktree*: **red there too**, main's digest `0206d310d6213df4` against the same cached `c45c0984781013fe`. ⇒ The cached `RUN_RESULT.txt` was last committed at **`fe01db675`, `r6961+70.3`**, sixty-odd revisions back, so **no branch's current tree can match it**;
+- ⒞ *is there a fix to port?* No, and there cannot be one in a push: `gates.yml` runs `check_receipts_run.py` as the **last step of the heavy job**, after the receipt run has written `RUN_RESULT.txt` into the workspace. **The cache is fresh by construction in CI and stale everywhere else the moment a receipt changes.** That is exactly why `turn_gates` excludes it by name — *"a TRIGGER, not a cost: red whenever the tree digest moves."*
+
+⌗ **And I did not launch the repair it names, which is a judgement worth recording rather than hiding.** The named repair is `scripts/run_all_receipts.py` over **868 registered receipts at ~100 minutes of measured wall time** — the nightly heavy tier's own job. Running it here would saturate this container for hours to regenerate a cache the nightly regenerates on the real tree, and this container's missing `camb`/`pynucastro` are precisely why ten of those receipts are *declared unrunnable here*. ⇒ **A local run would produce a verdict less trustworthy than the one it replaced.**
+
+⇒ **`r7653` is complete, verified and pushed.** Four wording calls sit with 69 and nothing else does: the share at l.1188–1190, the `0.76` at l.2284, l.1145's `−1.056`/`−1.159`, and whether l.2072–2074 prints the matched pair or says its line-of-sight figures are grid-snapped.
