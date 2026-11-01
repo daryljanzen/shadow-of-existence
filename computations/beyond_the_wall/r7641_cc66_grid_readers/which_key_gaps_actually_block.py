@@ -266,12 +266,18 @@ for g in GAPS_ALL:
           f"{g in CLOSED_BY_SIBLING}{'  form ' + FORM[g] if g in FORM else ''}")
 _FB = sorted(g for g in CLOSED_BY_SIBLING if FORM.get(g) == 'B')
 _FA = sorted(g for g in CLOSED_BY_SIBLING if FORM.get(g) == 'A')
-check("⛭⛭⛭ ** r7643's FOLD CLOSED TEN OF THE ELEVEN KEY GAPS, ALL IN FORM B (a SUPERSET), "
+check("⛭⛭⛭ ** THE FOLD HAS NOW CLOSED ALL ELEVEN KEY GAPS, EVERY ONE IN FORM B (a SUPERSET), "
       "AND NOT ONE IN THE FORM r7641 USED **: `__cr` and `__lcdm` both bit-identical to the "
       "namesake's, plus `__cr_leafrec1` keys that carry the arm of record.  ⇒ ** So the ask this "
-      "file exists to price is DISCHARGED except for `r6893_slice_check`, which has no sibling **",
-      len(_FB) == 10 and _FA == [] and sorted(GAPS_ALL) == sorted(_FB + ['r6893_slice_check']),
-      f"form B: {len(_FB)}; form A: {len(_FA)}; open: "
+      "file exists to price is FULLY DISCHARGED: `r6893_slice_check`, the last one open at "
+      "`r7645+cc66.69b`, was banked by 70 and closes in the same form as the other ten. **  ⌗ The "
+      "population this ranges over is FIXED at eleven and is asserted to be, so `open == []` is a "
+      "claim about a known set and not a gate whose set has emptied -- the vacuity this file was "
+      "repaired for at `cc66.69b`, when the ask was still shrinking.",
+      len(GAPS_ALL) == 11 and len(_FB) == 11 and _FA == []
+      and sorted(GAPS_ALL) == sorted(_FB)
+      and sorted(set(GAPS_ALL) - set(CLOSED_BY_SIBLING)) == [],
+      f"form B: {len(_FB)}; form A: {len(_FA)}; population: {len(GAPS_ALL)}; open: "
       f"{sorted(set(GAPS_ALL) - set(CLOSED_BY_SIBLING))}")
 check("⛔ ** AND FORM B IS THE ONE THAT BROKE FOUR REGISTERED RECEIPTS SILENTLY **, because a "
       "reader that re-points by changing the FILE and keeping the key gets the NAMESAKE back with "
@@ -282,10 +288,15 @@ check("⛔ ** AND FORM B IS THE ONE THAT BROKE FOUR REGISTERED RECEIPTS SILENTLY
       and abs(_scalar('r6929_geometry_leafrec1', 'l_A__cr') - 301.7986427684055) < 5e-7
       and abs(_scalar('r6929_geometry_leafrec1', 'l_A__cr_leafrec1') - 302.9430505935752) < 5e-7,
       "`__cr` held, `__cr_leafrec1` moved")
-check("⌗ and the one still open is open for a DIFFERENT reason -- no sibling file at all, rather "
-      "than a sibling that cannot be read for the arm",
-      not os.path.exists(os.path.join(SPEC, 'r6893_slice_check_leafrec1.npz')),
-      "r6893_slice_check has no `_leafrec1` file")
+check("⛭ ** AND THE LAST ONE IS CLOSED THE SAME WAY THE OTHERS WERE: ** `r6893_slice_check` was "
+      "open for a DIFFERENT reason from the rest -- no sibling file at all, rather than a sibling "
+      "that could not be read for the arm -- and 70 has now banked it.  *So the two reasons a gap "
+      "could stay open, a missing file and an unreadable key, are both exhausted, and this file's "
+      "price is zero for the first time since `r7641`.*",
+      os.path.exists(os.path.join(SPEC, 'r6893_slice_check_leafrec1.npz'))
+      and 'r6893_slice_check' in CLOSED_BY_SIBLING
+      and FORM.get('r6893_slice_check') == 'B',
+      f"r6893_slice_check sibling exists, closed in form {FORM.get('r6893_slice_check')}")
 _NA, _NN, _NT = _noop_identity()
 check("⛭⛭⛭ ** AND THE NO-OP IDENTITY IS REPRODUCED ON THE ARM OF RECORD, so those legs are "
       "still TESTS and not tautologies **: all "
@@ -580,12 +591,20 @@ _REACHED = [g for g in GAPS_ALL
 #:   had been reached by a second bank -- true then, and the reason item ⑵ still had a key-gap half.
 #:   `r7643`'s fold reached TEN of the eleven.  It is written over `GAPS_ALL` rather than the open
 #:   set so that it cannot pass by the set emptying, and it is two-sided on the count.*
-check("⛭⛭⛭ ** r7643's FOLD REACHED TEN OF THE ELEVEN GAPS WITH AN ARM-OF-RECORD KEY, which is the "
-      "exact inverse of what this gate asserted from cc66.46 to cc66.67 ** -- the one it did not "
-      "reach, `r6893_slice_check`, having no sibling file at all.  ⇒ *Written over GAPS_ALL so it "
-      "cannot pass by the open set emptying, which is how it passed vacuously once this revision "
-      "before the set split*",
-      sorted(_REACHED) == sorted(set(GAPS_ALL) - {'r6893_slice_check'}) and len(_REACHED) == 10,
+#: ⛭⛭⛭ r7649+cc66.78: ** AND IT HAS MOVED ONE FURTHER, FOR THE SECOND AND LAST TIME: ELEVEN OF
+#:   ELEVEN. **  *`70` banked `r6893_slice_check` with an arm-of-record key, which was the single
+#:   gap `r7643`'s fold had left standing and the reason this gate pinned TEN.  The reach set is now
+#:   the whole of `GAPS_ALL`, so the exclusion that named `r6893_slice_check` is gone and the count
+#:   is pinned at eleven.  The population is pinned ALONGSIDE the reach -- `len(GAPS_ALL) == 11` --
+#:   because a reach gate written as `_REACHED == GAPS_ALL` passes on an EMPTY `GAPS_ALL`, which is
+#:   the same vacuity this file was repaired for at `cc66.69b`: the equality has to be anchored to
+#:   the population's own size or it is satisfied by there being nothing to reach.*
+check("⛭⛭⛭ ** THE FOLD HAS NOW REACHED ALL ELEVEN KEY GAPS WITH AN ARM-OF-RECORD KEY, which is the "
+      "exact inverse of what this gate asserted from cc66.46 to cc66.67 ** -- `r7643`'s fold "
+      "reached ten, and `70`'s banking of `r6893_slice_check`, the one it had left, closes the "
+      "last.  ⇒ *Written over GAPS_ALL and pinned to its size so it cannot pass by the population "
+      "emptying, which is how it passed vacuously once this revision before the set split*",
+      len(GAPS_ALL) == 11 and sorted(_REACHED) == sorted(GAPS_ALL) and len(_REACHED) == 11,
       f"{len(_REACHED)} of {len(GAPS_ALL)} reached; not reached: "
       f"{sorted(set(GAPS_ALL) - set(_REACHED))}")
 
