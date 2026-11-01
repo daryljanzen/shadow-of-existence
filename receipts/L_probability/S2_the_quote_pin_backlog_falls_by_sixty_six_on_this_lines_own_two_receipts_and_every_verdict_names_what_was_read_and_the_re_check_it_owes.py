@@ -267,8 +267,9 @@ gate("Ⓒ③  ⛔ AND THE CHECK THAT CAUGHT THE ONE MIS-CLASSIFICATION: both FIG
      and all(re.search(r'\d', lit) for lit in _FIG)
      # ⌗ r7255+cc66.172: the sky-value row's literal is now a width-re-cut PATTERN, so its digits
      #   carry regex escaping -- the test reads them with the backslashes stripped.
+     # ⛭ r7649 (69): the family row's literal follows the landed arm of record, 221.93 -> 222.02.
      and any('0.7312' in lit.replace('\\', '') for lit in _FIG)
-     and any('221.93' in lit for lit in _FIG)
+     and any('222.02' in lit for lit in _FIG)
      and not any('0.7312' in lit.replace('\\', '') for lit in _rule_lit))
 
 gate("Ⓒ④  and the RULE rows carry the reading that fits them: each note says the receipt's result"
