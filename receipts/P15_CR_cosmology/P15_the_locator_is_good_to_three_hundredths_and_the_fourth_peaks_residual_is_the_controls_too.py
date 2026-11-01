@@ -363,12 +363,34 @@ _r_ruler = float(np.std(D_AC - _pred_ruler))
 print(f"    arm-control: mean {D_AC.mean():+.3f}, spread {D_AC.max()-D_AC.min():.3f}")
 print(f"    a constant dl fits with rms {_r_const:.3f}; a constant dl/l (the ruler) predicts "
       f"{['%.2f' % x for x in _pred_ruler]} and fits with rms {_r_ruler:.3f}")
-check("⇒ *** WHAT IS THE CONSTRUCTION'S IS A NEAR-CONSTANT ONE-MULTIPOLE DISPLACEMENT AT ALL FOUR "
-      "PEAKS -- a constant dl, the FIRST of the order's three shapes -- and it fits half again better "
-      "than the ruler's constant dl/l ***",
-      _r_const < 0.75 * _r_ruler and 0.5 < D_AC.mean() < 1.5,
+#: ⛔⛭ r7649+cc66.80: ** THIS VERDICT'S TWO ADJECTIVES WERE BOTH WRONG, AND IT IS MY WORDING AND
+#:   NOT 69's. **  *It said NEAR-CONSTANT ONE-MULTIPOLE.  The four displacements this gate's own
+#:   receipt line prints are `+1.70`, `-0.45`, `+0.70` and `+0.52`: a mean of `+0.62`, not one
+#:   multipole, and a spread of `2.14` with a SIGN CHANGE in it, which is not near-constant.  The rms
+#:   about the mean, `0.760`, is LARGER than the mean -- so "near-constant" was contradicted by the
+#:   very number the gate was testing.  What the CONDITION tests was right all along and has not
+#:   moved: the shape is a constant `dl` rather than the ruler's constant `dl/l`, fitting half again
+#:   better (`0.760` against `1.192`, a factor `1.57`).  That discrimination is the gate's content;
+#:   the adjectives were decoration, and they were decoration that overstated.*
+#:   ⌗ *`69` asked at `r7649` whether this capitalised verdict is MEANT TO BE READ.  It is not: no
+#:   file under `corpus/` carries the string, the appendices take the receipt's TITLE and not its
+#:   check labels, and the paper's own wording at l.1042 -- "a common displacement of six tenths of a
+#:   multipole on average" -- is already the `+0.62` and prints all four values beside it.  So
+#:   nothing in the paper inherited the error.  It is restated anyway, because a capitalised verdict
+#:   in a receipt is read by people.*
+check("⇒ *** WHAT IS THE CONSTRUCTION'S IS A SUB-MULTIPOLE DISPLACEMENT AVERAGING +0.62 ACROSS THE "
+      "FOUR PEAKS, AND ITS SHAPE IS A CONSTANT dl AND NOT THE RULER'S CONSTANT dl/l -- the FIRST of "
+      "the order's three shapes -- fitting half again better *** ⛔ ** It is NOT near-constant, which "
+      "is what this gate said until r7649: the four are +1.70, -0.45, +0.70 and +0.52, a spread of "
+      "2.14 with a sign change in it, and an rms about the mean (0.76) LARGER than the mean. **  ⇒ "
+      "*So the shape discrimination is the finding and the size is sub-multipole; `near-constant` "
+      "and `one-multipole` were both decoration, and both overstated*",
+      _r_const < 0.75 * _r_ruler and 0.5 < D_AC.mean() < 1.5
+      and _r_const > abs(D_AC.mean()) and (D_AC.min() < 0.0 < D_AC.max()),
       f"constant dl rms {_r_const:.3f} against the ruler's {_r_ruler:.3f}, a factor "
-      f"{_r_ruler/_r_const:.2f}")
+      f"{_r_ruler/_r_const:.2f}; mean {D_AC.mean():+.3f}, spread {D_AC.max()-D_AC.min():.3f}, "
+      f"rms-about-mean {_r_const:.3f} exceeds the mean, and the signs are "
+      f"{[('+' if x > 0 else '-') for x in D_AC]}")
 check("⇒ ** SO THE PATTERN NEEDS ONE SYSTEMATIC AND NOT TWO **, and the 'one-off, two-and-three-on, "
       "four-off' shape that fitted none of the three candidates was the raw grid plus an "
       "undifferenced sky comparison -- neither of them physics",
