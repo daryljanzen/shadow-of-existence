@@ -137,3 +137,53 @@ with its verification before it is done:
   more useful half: *a cold check of the landed figures is not runnable on a verified environment
   that is missing one of its own pinned dependencies*, and the next seat asked to check these
   figures will meet the same wall.
+
+---
+
+# ⛔ AMENDMENT `r7650+60.5` — THE UNIT OF THE CHECK WAS WRONG, AND THE FIRST READING IS KEPT BESIDE THE CORRECTION
+
+**The install worked and the check then ran.** `camb==2.0.4` installed with `--no-deps`, nothing
+moved — python `3.11.17`, numpy `2.4.6`, scipy `1.17.1`, `check_env_fingerprint` **green** — and all
+**nine** blocked receipts then completed **green in under ten seconds each**. ⇒ **Arms ⑥, ⑦ and ⑧
+hold**, and the `INCONCLUSIVE (container)` row is **0**.
+
+**The first reading of the figures was: 167 checked, 100 REPRODUCES (93 verbatim), 65 ABSENT,
+2 UNRUN.** It is kept here, and it is **wrong**, in the direction that would have accused the
+landing.
+
+⛔ **THE 65 ARE MOSTLY AN ARTEFACT OF THE SITE MODEL, WHICH IS MINE.** A sentence that cites **three**
+receipts produced **three** sites, each carrying **all** of the sentence's figures — so a figure that
+one cited receipt computes reads `ABSENT` against the other two. The pattern is visible in the output
+itself: `0.2974`, `0.958`, `1.01` and `2.33` each appear as `ABSENT` against several different
+receipts of the same sentence. **A sentence citing several receipts is not mis-citing any of them;
+each covers part of the claim.**
+
+⇒ *An identification has to be checked on the loci the object itself distinguishes, and the locus
+here is the SENTENCE WITH ITS WHOLE CITATION SET, not the pair I happened to enumerate.*
+
+**The corrected rule, registered before the corrected number is produced:**
+
+- ⅰ‴ The unit is the **sentence**. Its citation set is **every** `\rcpt{}` on it.
+- ⅱ‴ A figure **REPRODUCES** when **any** receipt in that set produces it, by the rule already
+  registered — verbatim, or within half a unit of its last printed digit.
+- ⅲ‴ A figure is **ABSENT** only when **no** receipt in the set produces it **and every one of them
+  ran**; if any is UNRUN the figure is **UNRUN**, never ABSENT.
+- ⅳ‴ **MIS-CITATION** keeps its meaning and is now reported at sentence level: a sentence whose whole
+  citation set ran and does not produce one of its figures.
+
+**Registered arms for the correction:**
+
+- ⑩ **The corrected ABSENT count is far below 65**, because the artefact dominates it. Band: **under
+  25**.
+- ⑪ **Arm ① is read on the corrected count**, and arm ④ with it: if the corrected ABSENT count is
+  **zero**, the order's reachable negative is reached and arm ④ — this seat's prediction *against*
+  that negative — **fires**, which is reported as a MISS and not smoothed.
+- ⑫ ⌗ **And a routed observation, not a repair:** `check_figures_pinned` keys its own sites on
+  `(population, paper, RECEIPT, figure)` and so has **the same property by design** — a multi-cited
+  sentence's figures are flagged against every cited receipt that does not pin them. *That is a
+  plausible part of why its baseline is as large as it is, and it is worth 69's attention rather than
+  this seat's hands: the gate is not this seat's and the instruments are frozen.*
+
+⌗ *Four rule conditions have now been withdrawn or corrected across `r7648` and `r7650`, every one
+caught by a measurement rather than by a reading, and every one in the restrictive direction. That is
+what the arms are for, and the count is reported rather than tidied.*

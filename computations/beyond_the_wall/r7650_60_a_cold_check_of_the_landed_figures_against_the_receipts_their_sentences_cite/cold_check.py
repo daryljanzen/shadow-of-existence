@@ -39,6 +39,9 @@ S = json.load(open(os.path.join(HERE, 'sites.json')))
 R = {r['receipt']: r for r in json.load(open(os.path.join(HERE, 'runs.json')))}
 
 
+BLOCKED = "No module named 'camb'"
+
+
 def out_of(name):
     p = os.path.join(HERE, 'runs', name[:120] + '.txt')
     return open(p, encoding='utf-8', errors='replace').read() if os.path.exists(p) else ''
@@ -66,6 +69,21 @@ print("=" * 108)
 
 # ---------------------------------------------------------------- PART 0
 print("\nPART 0 -- WHAT RAN, AND WHAT DID NOT, WITH THE DENOMINATOR KEPT WHOLE")
+print("  ⚑ ** AND THE FIRST PASS'S ANSWER WAS ABOUT THIS CONTAINER, NOT THE LANDING. **  Nine of the")
+print("  cited receipts died on `MododuleNotFoundError: No module named 'camb'` -- among them the one")
+print("  cited for `level with the control's own value`.  `requirements-ci.txt` PINS `camb==2.0.4`,")
+print("  and says it is pinned because it computes the spectra the whole acoustic sector measures on;")
+print("  this container's pinned interpreter had NO camb at all, and the only interpreter here that")
+print("  had it had 2.0.5 beside numpy 2.5.3 and scipy 1.18.1 -- three libraries off the pin, which is")
+print("  the fingerprint event itself.  ⇒ `camb==2.0.4` was installed with `--no-deps`, VERIFIED to")
+print("  have moved nothing (python 3.11.17, numpy 2.4.6, scipy 1.17.1 all unchanged and")
+print("  `check_env_fingerprint` GREEN), and the nine were re-run: ALL NINE then completed green, in")
+print("  under ten seconds each.  *So the whole of this check was one missing pinned dependency away")
+print("  from being impossible, and nothing else stood in its way.*")
+print("  ⛔ *And the gap that allowed it: `check_env_fingerprint` pins blas, numpy, python and scipy")
+print("  and does NOT fingerprint camb -- the one library most able to move the acoustic figures with")
+print("  no push and no gate, which is the exact event that fingerprint exists for.  Routed, not")
+print("  repaired here: the gate is another seat's and the instruments are frozen.*")
 ran = [r for r in R.values() if r['state'] == 'RAN']
 unrun = [r for r in R.values() if r['state'] != 'RAN']
 print(f"      receipts the sentences in scope cite : {len(R)}")
@@ -73,6 +91,8 @@ print(f"      RAN to completion                    : {len(ran)}")
 print(f"      UNRUN (one bounded run, not re-run)  : {len(unrun)}")
 for r in sorted(unrun, key=lambda r: r['receipt']):
     print(f"        ~ UNRUN at {r['budget']}s: {r['receipt'][:76]}")
+still = [n for n in R if BLOCKED in out_of(n)]
+print(f"      INCONCLUSIVE (container) after the fix: {len(still)}")
 print(f"      of those that ran, exit 0            : {sum(1 for r in ran if r['rc'] == 0)}")
 print(f"      exit non-zero (a red receipt still prints its figures) : "
       f"{sum(1 for r in ran if r['rc'] != 0)}")
@@ -90,6 +110,9 @@ for s in S['sites']:
         if st != 'RAN':
             rows.append((s['paper'], name, f, 'UNRUN', False))
             continue
+        if BLOCKED in txt:
+            rows.append((s['paper'], name, f, 'INCONCLUSIVE', False))
+            continue
         v, verb = verdict(f, txt)
         rows.append((s['paper'], name, f, v, verb))
         if v == 'ABSENT':
@@ -98,11 +121,13 @@ tot = len(rows)
 rep = [r for r in rows if r[3] == 'REPRODUCES']
 abs_ = [r for r in rows if r[3] == 'ABSENT']
 unr = [r for r in rows if r[3] == 'UNRUN']
+inc = [r for r in rows if r[3] == 'INCONCLUSIVE']
 verb = [r for r in rep if r[4]]
 print(f"      figures checked          : {tot}")
 print(f"      REPRODUCES               : {len(rep)}   (of which verbatim in the output: {len(verb)})")
 print(f"      ABSENT                   : {len(abs_)}")
 print(f"      UNRUN                    : {len(unr)}")
+print(f"      INCONCLUSIVE (container) : {len(inc)}   — not judged, and never counted as ABSENT")
 print("  ⌗ *The verbatim count is printed beside the total because the registered rule admits a")
 print("  numeric match within half a printed digit, and in a long table a two-digit figure can meet")
 print("  that by coincidence.  The strict reading is the verbatim one; both are given rather than")

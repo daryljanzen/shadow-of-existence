@@ -97,8 +97,45 @@ the residual.  The fold is drawn beside it and labelled as the one that answers 
 ========================================================================================================
   PART 2 -- ** BOTH CONFRONTATIONS SCORED, ON `fig:acoustic`'s OWN BINS AND OPERATOR **
 ========================================================================================================
-Traceback (most recent call last):
-  File "/home/user/shadow-of-existence/receipts/P15_CR_cosmology/P15_the_no_fit_confrontation_is_three_per_bin_and_its_residual_carries_a_nine_sigma_modulation_at_the_combs_own_period_which_binning_at_that_period_cancels.py", line 162, in <module>
-    import camb                                                               # noqa: E402
-    ^^^^^^^^^^^
-ModuleNotFoundError: No module named 'camb'
+      nofit_lcdm  chi2 =   202.02    1.129 per bin
+      nofit_cr    chi2 =   474.12    2.649 per bin
+      refit_lcdm  chi2 =   177.88    0.994 per bin
+      refit_cr    chi2 =   286.89    1.603 per bin
+      179 bins, ell 104-1886
+    OK    ⛭⛭ ** WITH NOTHING FITTED THE ARM IS AT `2.65` PER BIN AND THE CONTROL AT `1.13` ** -- the confrontation the paper has never carried, and the stronger of the two because the background is the distance data's own.  ⛔ *`3.00` was the namesake arm's; the arm of record costs the arm less and the ratio narrows*
+    OK    ⌗ and refitted they are `1.60` and `0.99`, so four parameters close about a third of the gap -- `2.3469x` becomes `1.6128x`
+
+========================================================================================================
+  PART 3 -- ** THE RESIDUAL, BINNED AT THE PERIOD AND FOLDED WITHIN IT **
+========================================================================================================
+      binned AT l_A = 298, 6 bands -- the arm's means: +1.468 +0.208 -0.294 -1.048 +0.220 +1.776
+      sign changes: 2
+      folded: nofit_lcdm  one harmonic at l_A = 0.2028 +- 0.1126  (1.80 sigma)
+      folded: nofit_cr    one harmonic at l_A = 0.9522 +- 0.1576  (6.04 sigma)
+      folded: refit_lcdm  one harmonic at l_A = 0.1051 +- 0.1049  (1.00 sigma)
+      folded: refit_cr    one harmonic at l_A = 0.8331 +- 0.1187  (7.02 sigma)
+    OK    ⛭⛭⛭ ** THE ARM'S NO-FIT RESIDUAL CARRIES A MODULATION AT THE COMB'S OWN PERIOD AT `6.0` SIGMA, AGAINST THE CONTROL'S `1.8` ** -- so the rejection is shaped at the acoustic period and that shape is the arm's, not the data's.  ⛔ *`9.1` was the namesake arm's, and this file's own name carries it; on the arm of record the modulation is a third weaker*
+    OK    ⛔⛔ ** AND REFITTING NO LONGER HALVES IT: the amplitude falls only an eighth, `0.952` to `0.833`, and the SIGNIFICANCE RISES, `6.0` to `7.0`, because the no-fit arm's harmonic error is the larger of the two. **  ⇒ *On the namesake arm both fell -- 1.373 to 0.813 and 9.08 to 6.89 -- so `the four parameters absorb part of the modulation` was that arm's reading.  Here they absorb an eighth of the amplitude and none of the detection*
+    OK    ⛔⛔ ** AND BINNING AT THE PERIOD CANCELS IT, WHICH IS ARITHMETIC AND NOT TASTE: a bin one period wide averages a full cycle of any modulation at that period. **  The arm's band means change sign 2 times across 6 bands and never exceed 1.78 in the whitened residual's own units -- a slow swing -- where the fold at the SAME period returns 6.0 sigma.  ⛔ *The contrast is 3.40 against 7.13 on the namesake arm: halved, because the fold weakened and the band means grew.  The arithmetic does not depend on the arm; its margin does*
+    OK    ⌗ the control's fold is consistent with no modulation at either setting, so the `6.0` sigma is not an artefact of the fold, the binning or the likelihood
+
+========================================================================================================
+  PART 4 -- ** THE FIGURE EXISTS AND ITS BANKED NUMBERS AGREE WITH THESE **
+========================================================================================================
+    OK    ⛭ the generator and the figure are both in the tree
+      figure banked: 179 bins, l_A = 298, peak1 = 222
+    OK    ⛭⛭ the figure's own chi^2 per bin agree with this file's, computed independently from the same banked spectra -- so the numbers ON the figure are checkable and a drift in the generator fails here
+    OK    ⛭⛭ and so do its harmonic amplitudes and significances, which are the figure's headline
+    OK    ⌗ the figure carries BOTH operations rather than only the one that works -- the period bins the order asked for and the fold that answers it
+
+========================================================================================================
+  ✔ ** THE NO-FIT CONFRONTATION IS `2.65` PER BIN AGAINST THE CONTROL'S `1.13`, AND ITS
+    RESIDUAL CARRIES A `6.0` SIGMA MODULATION AT THE COMB'S OWN PERIOD ** -- against the
+    control's `1.8`.  ⛔ *`3.00` and `9.1` are the NAMESAKE arm's and are this file's own
+    NAME; refitting now raises the significance to `7.0` rather than halving it.*
+  ⛔ And the ordered operation -- binning AT the period -- is the one that cancels it, because
+    a bin one period wide averages a full cycle of a modulation at that period.  *Both are
+    drawn: the period bins because a reader will look for them, the fold because it answers.*
+  ⌗ No new physics run: all four spectra were banked, each identified by its own stored D_M.
+========================================================================================================
+  ALL CHECKS PASS

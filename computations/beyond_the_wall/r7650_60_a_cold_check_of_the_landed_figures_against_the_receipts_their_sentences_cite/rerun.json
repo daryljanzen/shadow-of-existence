@@ -1,0 +1,92 @@
+[
+ {
+  "receipt": "P15_the_acoustic_contrast_is_not_in_the_source_and_the_projection_makes_it_without_the_distance",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 9.8,
+  "budget": 1500,
+  "chars": 35242,
+  "was_blocked": true,
+  "still_blocked": false
+ },
+ {
+  "receipt": "P15_the_control_entered_the_regime_and_the_arm_did_not_move",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 6.1,
+  "budget": 1500,
+  "chars": 14595,
+  "was_blocked": true,
+  "still_blocked": false
+ },
+ {
+  "receipt": "P15_the_controls_base_log_is_banked_beside_the_grids_and_the_peak_heights_concur_with_the_three_rigidity_statistics",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 8.3,
+  "budget": 1500,
+  "chars": 15771,
+  "was_blocked": true,
+  "still_blocked": false
+ },
+ {
+  "receipt": "P15_the_full_range_lensed_comparison_is_the_unfavourable_one_and_the_control_is_nearly_camb",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 8.7,
+  "budget": 1500,
+  "chars": 8664,
+  "was_blocked": true,
+  "still_blocked": false
+ },
+ {
+  "receipt": "P15_the_full_range_refit_holds_the_background_and_the_phase_residual_was_quantised",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 8.6,
+  "budget": 1500,
+  "chars": 19877,
+  "was_blocked": true,
+  "still_blocked": false
+ },
+ {
+  "receipt": "P15_the_licensed_rebuild_leaves_all_three_rigidity_numbers_where_they_were_and_the_forbidden_one_puts_the_arm_on_the_controls_own_floor",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 9.1,
+  "budget": 1500,
+  "chars": 11175,
+  "was_blocked": true,
+  "still_blocked": false
+ },
+ {
+  "receipt": "P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 7.9,
+  "budget": 1500,
+  "chars": 40064,
+  "was_blocked": true,
+  "still_blocked": false
+ },
+ {
+  "receipt": "P15_the_monopole_zero_point_is_not_the_channel_and_the_two_residuals_point_opposite_ways",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 8.7,
+  "budget": 1500,
+  "chars": 34097,
+  "was_blocked": true,
+  "still_blocked": false
+ },
+ {
+  "receipt": "P15_the_no_fit_confrontation_is_three_per_bin_and_its_residual_carries_a_nine_sigma_modulation_at_the_combs_own_period_which_binning_at_that_period_cancels",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 8.4,
+  "budget": 1500,
+  "chars": 11684,
+  "was_blocked": true,
+  "still_blocked": false
+ }
+]

@@ -87,8 +87,147 @@ $k$-modes against the $132$-bin grid's $1656$ ** -- four hours of wall clock at 
    alike, and the amplitude is the only closed-form freedom. ***
 
 
-Traceback (most recent call last):
-  File "/home/user/shadow-of-existence/receipts/P15_CR_cosmology/P15_the_full_range_refit_holds_the_background_and_the_phase_residual_was_quantised.py", line 140, in <module>
-    import camb                                                            # noqa: E402
-    ^^^^^^^^^^^
-ModuleNotFoundError: No module named 'camb'
+========================================================================================================
+  PART 1 -- ** THE GRID, AND THE FIT ON IT **
+========================================================================================================
+    OK    all 18 grid runs are banked (18 of 18)
+  the grid reaches ell = 100 to 1996 and covers 185 bins, ell 100-1996
+    OK    ** the range is the 185-bin full one the order asked for, asserted not assumed **
+
+  control (LCDM)   (185 bins)
+                start   best fit       moved  in steps         %
+        H0    67.4000    67.4103     +0.0103    +0.01s   +0.015%
+        OM     0.3150     0.3098     -0.0052    -0.34s   -1.642%
+        WB     0.0224     0.0220     -0.0004    -0.54s   -1.936%
+        NS     0.9650     0.9542     -0.0108    -0.54s   -1.114%
+    chi^2  as-computed    212.9 (1.15/bin)   refitted    185.1 (1.00/bin)   d = -27.8
+
+  CR, crossing   (185 bins)
+                start   best fit       moved  in steps         %
+        H0    68.6000    68.5852     -0.0148    -0.01s   -0.022%
+        OM     0.2973     0.2910     -0.0063    -0.42s   -2.123%
+        WB     0.0224     0.0217     -0.0007    -0.91s   -3.233%
+        NS     0.9650     1.0165     +0.0515    +2.57s   +5.333%
+    chi^2  as-computed    496.5 (2.68/bin)   refitted    284.9 (1.54/bin)   d = -211.6
+
+========================================================================================================
+  PART 2 -- ** THE MINIMUM, VERIFIED BY REAL RUNS **
+========================================================================================================
+  The response model says WHERE to go; only a full run says what is there.  Two runs at the
+  best-fit parameters, at the same LMAXL, LSTEP and k-reach as the grid.
+
+                            bins  predicted   measured        d
+            control (LCDM)   185      185.1      186.5     +1.4
+              CR, crossing   185      284.9      297.7    +12.8
+    OK    control (LCDM): the real run lands within 2 in chi^2 of the model's prediction (+1.38)
+    OK    ⛔ ** AND THE ARM OF RECORD's REAL RUN DOES NOT: the model says 284.9 and the run returns 297.7, a miss of +12.8 where the namesake's was -0.0 ** -- because n_s moves +2.57 grid steps here against +1.65 on the namesake, and the stencil's quadratic is built on +-1
+    OK       ⌗ and the control's stencil is still good to 1.4, so the failure is the ARM's excursion and not the method: the two arms run the same code on the same steps
+
+  ** RATIO AT THE VERIFIED MINIMUM: 1.60x ** against 2.33x as-computed on the same bins.
+    OK    the arm is still disfavoured at the verified minimum -- stated as the result, not a caveat
+
+========================================================================================================
+  PART 3 -- ** THE QUESTION THE ORDER ASKED: DOES THE BACKGROUND STAY PUT WITH THE TAIL IN? **
+========================================================================================================
+  (68.60, 0.2973) came from DESI DR2 BAO and theta_* with no spectrum involved.  Given four
+  free parameters on the FULL range, the crossing arm moves
+      H0       -0.0148   (-0.022%)   against +0.011% on 132 bins
+      Omega_m  -0.0063   (-2.123%)   against  0.20%  on 132 bins
+      omega_b  -0.0007   (-3.23%)
+      n_s      +0.0515   (+5.33%)
+
+  ⇒ ⛔ ** THE EXPANSION RATE STAYS PINNED AND THE MATTER DENSITY DOES NOT. **  H0 moves 0.022%,
+  inside a thirtieth of a per cent; Omega_m moves 2.123%, which is 64 times it.
+  *On the NAMESAKE arm both were inside: 0.028% and 0.031%.  So `the background stays pinned`
+  -- this file's own name, and the corpus sentence at CR_framework.tex:1863 and
+  CR_synthesis.tex:1553 -- is HALF the namesake arm's reading and half still true.  What the
+  two arms share is where the leverage lands: omega_b and n_s move further than on 132 bins
+  on both, and further still here, n_s by 2.57 steps against the namesake's 1.65.*
+    OK    ** the crossing arm's H0 still moves by under 0.05% on the full range: 0.022% **
+    OK    ⛔ ** BUT Omega_m DOES NOT: it moves 2.123%, 64 times the `thirtieth of a per cent` the corpus carries, where the namesake moved 0.031% **
+    OK       ⌗ and so the sentence splits rather than simply moving: the expansion rate half of it survives verbatim and the matter density half is withdrawn
+    OK    H0 moves FURTHER than on 132 bins (0.022% against 0.011%), stated not smoothed over
+    OK    omega_b and n_s move further than on 132 bins -- the tail's leverage, where predicted
+
+========================================================================================================
+  PART 4 -- ** THE FLATNESS TEST: A BEST FIT THAT COSTS NOTHING TO LEAVE IS NOT A MEASUREMENT **
+========================================================================================================
+                   control (LCDM)           CR, crossing
+        H0                 1774.1                 2539.3
+        OM                  473.1                  813.1
+        WB                   98.3                  149.8
+        NS                   32.3                   26.0
+
+  (the cheaper of the two one-step excursions, in chi^2)
+    OK    ⌗ `sec:refit-bound`'s printed quartet is still FOUND by this file's pattern -- a sentence reworded past it must redden this part rather than leave it comparing against nothing
+
+                  paper    arm of record      control   arm vs paper
+          H0       2539        2539.2609    1774.1123       +0.0103%
+          OM        813         813.0525     473.0735       +0.0065%
+          WB        150         149.8416      98.3014       -0.1056%
+          NS         26          25.9805      32.3186       -0.0751%
+    OK    ⛔⛔ ** THE QUARTET MOVES ON THE ARM OF RECORD AND THREE OF THE FOUR GET STIFFER: ** 2539.3, 813.1, 149.8 and 26.0 against the printed 2539, 813, 150 and 26 -- +0.01%, +0.01%, -0.11% and -0.08%
+    OK    ⛔ ** AND THE TILT IS THE ONE DIRECTION THAT SOFTENS: ** it is the only one of the four on which the arm of record is LESS constrained than the CONTROL (0.8039 of it) while the other three are MORE (1.43, 1.72, 1.52 of it) ** -- so the re-point stiffens the background and loosens the tilt, the same direction `cc66.68` found the refit moving it in.  *Stated against the control because the control is the thing that does not move; comparing with the paper's printed quartet would make this gate fail the day 69 lands the new figures.*
+    OK    ⌗ ** AND THE PAPER'S PRINTED QUARTET IS ONE OF EXACTLY TWO LEGITIMATE STATES: ** the NAMESAKE grid's `2527 / 740 / 141 / 31`, which is what it carries now, or the arm of record's `2539 / 813 / 150 / 26`, which is what `cc66.74` proposes and 69 lands.  *It currently reads 2539 / 813 / 150 / 26, the ARM OF RECORD state.*  This is the disjunction `check_quote_pins` asks for: the gate passes in either state and fails only on a THIRD set, which would be a drift rather than a landing.
+    OK    ⌗ and the CONTROL's four are untouched by the re-point, pinned here so the comparison's other half is asserted too: 1774.1123, 473.0735, 98.3014, 32.3186
+    OK    ** every parameter is constrained on both arms: a one-step excursion costs chi^2 ** -- the cheapest of all eight is 25.98, so the claim that these are sharp minima rather than unconstrained directions survives the re-point with room to spare.  ⌗ The old floor here was 5.0, which no quartet of this size could fail; it is raised to 20 and the four figures themselves are pinned above
+    OK    and n_s is a live direction, which is what caught the knob shadow at cc66.17 -- still live on both arms, and now the only one of the four that the re-point made cheaper
+
+========================================================================================================
+  PART 5 -- ** THE TWO FOLLOW-UPS, AND THE PEAK LOCATOR'S RESOLUTION MEASURED FIRST **
+========================================================================================================
+  (a) ** THE REFINEMENT IS VALIDATED BEFORE IT IS USED, on a banked LSTEP=1 spectrum that has a launcher and this cosmology's own comb. **
+      at spacing 1: peaks 222.05 / 535.85 / 815.03 / 1129.74
+      subsampled to  2: raw locator errs by  0.97 in ell, refined by  0.00
+      subsampled to  4: raw locator errs by  1.95 in ell, refined by  0.01
+      subsampled to  8: raw locator errs by  3.85 in ell, refined by  0.02
+    OK    ** at the grid the refit runs on, the RAW locator errs by 3 in ell and the refined one by 0.15 **
+      ⇒ *so a phase residual of a few per cent read from raw peaks is reading the grid.*
+    OK    ⛭ ** and the substrate is the ARM OF RECORD's, which the resolution test above cannot see: l_A = 302.9431 against the namesake's 301.7986, peaks 222.05 / 535.85 / 815.03 / 1129.74 against 221.96 / 536.10 / 815.40 / 1130.53 **
+
+  (b) ** THE FOLLOW-UPS, ON BOTH LOCATORS AND BOTH ARMS. **
+                                                              peaks  phase % out  4th peak %
+      control (LCDM), raw (as cc66.18 read it)     220.0 / 540.0 / 812.0 / 1132.0         4.5%        0.7%
+         control (LCDM), refined     220.4 / 536.3 / 814.3 / 1129.2         1.6%        0.5%
+      CR, crossing, raw (as cc66.18 read it)     220.0 / 532.0 / 812.0 / 1132.0         0.7%        0.7%
+           CR, crossing, refined     222.0 / 535.9 / 815.0 / 1129.7         3.7%        0.5%
+
+    OK    ⛔ ** THE RAW LOCATOR NO LONGER AGREES BETWEEN THE ARMS: the control's 4.5% against the arm of record's 0.7% ** -- because the arm's raw l_2 falls at 532 where the namesake's and the control's fall at 540, a whole bin
+    OK       ⇒ ** AND THE CLAIM SURVIVES ON A STRONGER FOOTING: each arm SEPARATELY swings about five-fold between the two locators -- the control 4.5% -> 1.6% and the arm 0.7% -> 3.7%, in OPPOSITE directions ** -- so the number cannot be a property of either spectrum and is the locator's
+    OK    ** and refined they separate: the arm carries about twice the control's **
+  ⇒ *** THE VERDICT SURVIVES ON DIFFERENT NUMBERS. ***  The crossing arm's phase residual is
+     3.7% on the full range against the control's 1.6%, and the fourth peak is 0.5% out against 0.5%.
+     ** cc66.18's quoted 4.5% is withdrawn: it is the LSTEP=8 grid, and the control shares it. **
+     *Freedom still does not close the phase -- that part of the reading stands.*
+
+========================================================================================================
+  WHAT THIS SETTLES
+========================================================================================================
+
+  ** THE ORDER'S QUESTION IS ANSWERED, AND ON THE ARM OF RECORD THE ANSWER IS HALF THE OTHER WAY. **
+  With the damping tail inside the fit the crossing arm's background moves 0.022% in $H_0$
+  -- inside a thirtieth of a per cent, as the corpus says -- and 2.123% in
+  $\Omega_m$, which is 64 times it.  ** So the expansion rate stays where the
+  distances put it and the matter density does not. **  *On the NAMESAKE arm both were inside, at
+  0.028% and 0.031%, and that is the reading the corpus carries.  What the two arms share is where
+  the leverage lands: omega_b and n_s move further than on 132 bins on both, and further still here.
+  The worry the order named -- that the tail would prise the background off -- turns out to be half
+  right, and the half it is right about is the one the baryon-acoustic data constrain least.*
+
+  ** AND IT COSTS 1.60x THE CONTROL ** (1.61 per bin against 1.01), against
+  2.33x as-computed.  *Freedom closes about a third of the gap and leaves the rest; the arm is
+  still disfavoured, and that is the result rather than a caveat on it.*
+
+  ⛔ ** ONE LANDED NUMBER OF MINE IS WITHDRAWN. **  `cc66.18`'s "the acoustic phase goes 2.3% -> 4.5%
+  out" was read from peaks quantised to the spectrum's own LSTEP=8 sampling.  *The tell was there to
+  be seen and I did not look for it: the CONTROL returns the same 4.5%.*  Refined -- with the
+  refinement validated against an LSTEP=1 spectrum to 0.13 in ell before use -- the arm sits at
+  3.7% against the control's 1.6%.  ** The verdict does not change and the numbers do. **
+  ⛔ *And on the arm of record the EVIDENCE changes too: the two arms no longer return the same
+  raw number (4.5% against 0.7%, the arm's raw l_2 falling a
+  whole bin lower), so `both arms return 4.5%` is withdrawn as an argument.  Each arm swings about
+  five-fold between the locators on its own, in opposite directions, which carries it further.*
+
+========================================================================================================
+  ✓ ALL CHECKS PASSED
+========================================================================================================

@@ -1,7 +1,110 @@
-Traceback (most recent call last):
-  File "/home/user/shadow-of-existence/receipts/P15_CR_cosmology/P15_the_licensed_rebuild_leaves_all_three_rigidity_numbers_where_they_were_and_the_forbidden_one_puts_the_arm_on_the_controls_own_floor.py", line 53, in <module>
-    import rigidity as R                                                    # noqa: E402
-    ^^^^^^^^^^^^^^^^^^^^
-  File "/home/user/shadow-of-existence/computations/beyond_the_wall/r7091_70_fit_rigidity/rigidity.py", line 44, in <module>
-    import camb
-ModuleNotFoundError: No module named 'camb'
+r7097+cc66.79 -- ⛭⛭⛭ THE LICENSED REBUILD LEAVES ALL THREE OF `70`'s RIGIDITY NUMBERS WHERE THEY
+WERE, AND THE FORBIDDEN ONE PUTS THE ARM ON THE CONTROL'S OWN FLOOR.
+
+** WHAT r7097 ORDERED, AND WHY IT NAMED THE NUMBERS IN ADVANCE. **  `r7097` withdrew `r7095`'s Q1 as an
+order, gated `LEAFREC`, and made Q3 the whole job: run the rate rule's own configuration end to end with
+the onset dissolved -- both arms from $z=3\times10^7$ with no solve anywhere, `LEAFSCALES=1`,
+`LEAFPERT` on, **`LEAFREC=1`**, `VISLEAF=0` because it is still unadjudicated, and **`LEAFGEOM=0`, the
+geometry on the stacking rate.**  *It named the targets before the grid existed:* **the data ask this
+arm's acoustic contrast to be $6.4\pm0.9$ per cent lower at $7.5\sigma$ and ask the control for nothing;
+the unreachable $\chi^2$ is $278.8$ against the control's $186.0$ at $n-5=180$; the residual crosses zero
+$54$ times against noise's $88\pm10$.**
+
+⇒ *** ALL THREE ARE UNMOVED BY THE LICENSED REBUILD.  The unreachable $\chi^2$ goes $278.795$ to
+  $278.788$ -- $0.007$ per cent of the $92.8$ gap it was ordered to close -- the crossings stay at $54$, and the longest run of one
+  sign stays at $33$. ***
+⇒ *** AND ALL THREE ARE CLOSED BY THE FORBIDDEN ONE.  $\chi^2$ falls to $184.99$, which is BELOW the
+  control's own $186.01$; the crossings go to $91$ against noise's $88$; the longest run goes to $8$,
+  which is exactly the control's $8$. ***
+
+⛭⛭ ** SO `60`'s FALSIFIER FIRES, AND IT WAS WRITTEN UNPROMPTED AND BEFORE THE RUN. **  *`r7097` quotes
+it: "if a rebuild consistent on all four assignments does not supply a contrast correction of that sign
+and about that size, **then the rate assignments are not where the contrast comes from and the rigidity is
+somewhere this adjudication has not looked.**"*  **The licensed rebuild supplies $0.007$ per cent of it.**
+  ⇒ *But the one assignment the rule FORBIDS supplies all of it, so the conclusion is sharper than the
+  falsifier's own wording: the contrast does not come from the rate assignments **as the rule assigns
+  them** -- it comes from the clock the GEOMETRY is read on, which is the one object `P07` pins to the
+  stacking rate by name.*
+
+⚠ ** THIS DOES NOT REINSTATE `LEAFGEOM=1`. **  *`r7095`'s ruling is the gate's and it stands; the
+switch's default is untouched and no build is resumed.  What is reported is a conflict between the rule's
+configuration and the sky, measured on the gate's own pre-named statistics, for the gate to adjudicate.*
+
+** COMPUTES: the unreachable GLS chi^2, the zero-crossing count and the longest run of one sign for both
+arms on three banked grids, through `70`'s `rigidity.py` definitions rather than re-implemented ones; the
+four-parameter refit on each; and the two-direction tilt against the refit's own n_s shift.  Asserts the
+licensed rebuild moves the unreachable chi^2 by under 0.05 per cent and the crossings and longest run not
+at all, that the forbidden one reaches the control's floor on all three, and that the control is
+identical across all three grids -- the no-op that says what moved is the arm. **
+
+
+  ==========================================================================
+  A.  r7097's THREE NAMED NUMBERS, ON THE BANKED GRID, BEFORE ANYTHING IS COMPARED
+  ==========================================================================
+  [PASS] ⛭⛭ the NAMESAKE arm's two printed figures are still reproduced and still pinned -- 278.795150 on the banked grid and 278.788424 on the licensed one, which are the 278.795 and 278.788 `sec:refit-bound` prints.  *They are kept because the paper prints them; the arm-of-record pair above is what replaces them when 69 lands it.*
+  [PASS] ⛔⛭ ** AND THIS IS WHERE THIS SEAT'S OWN 278.79 CAME FROM: it is the LICENSED NAMESAKE arm's 278.7884, not the banked arm of record's 276.3597. ** `r7647` quotes 278.79 back from this seat's linearised harness, where it was recorded as `banked+LEAFREC`; it is neither banked nor LEAFREC.  *A mislabelled row in my own notes, caught only because the re-point forced both numbers to be computed side by side.*
+      grid       arm     unreachable chi2   n-5  crossings  longest
+      banked     lcdm          186.006575   180         87        8
+      banked     cr            276.359717   180         54       33
+      licensed   lcdm          186.006575   180         87        8
+      licensed   cr            276.359717   180         54       33
+      forbidden  lcdm          186.006575   180         87        8
+      forbidden  cr            186.135046   180         87        8
+  [PASS] ⛔ the banked grid on the ARM OF RECORD returns 276.360, NOT the 278.8 the namesake arm gives and NOT the 278.79 `r7647` quotes from this seat's own linearised harness -- the harness was wrong for this quantity, and `the_fit_has_the_controls_freedom...` agrees on 276.36 by a different route.  The control's 186.0066 at n-5 = 180 and the arm's 54 crossings are unchanged, so the instrument is still the one the order named
+  [PASS] ⌗ THE CONSISTENCY CHECK: the CONTROL's three numbers are IDENTICAL across all three grids, because its nine runs are the same nine files -- so whatever moves below is the arm and not the method
+
+  ==========================================================================
+  B.  ⛔⛔ THE LICENSED REBUILD -- THE RATE RULE'S OWN CONFIGURATION -- MOVES NONE OF THEM
+  ==========================================================================
+      the gap the rebuild was ordered to close: 90.353 in chi^2
+      the licensed rebuild closes:              0.000000  = 0.0000 per cent of it
+      crossings 54 -> 54      longest run 33 -> 33
+  [PASS] ⛔⛔ THE UNREACHABLE chi^2 DOES NOT MOVE: under 0.05 per cent of the gap, on a rebuild that changed the spectrum by six and a half per cent
+  [PASS] ⛔ and neither the crossings nor the longest run of one sign move AT ALL
+  [PASS] ⛭ ⇒ SO `60`'s FALSIFIER FIRES ON ITS OWN TERMS: a rebuild consistent on all four assignments supplies no contrast correction of the named sign and size, which it wrote in advance means the rate assignments are not where the contrast comes from
+
+  ==========================================================================
+  C.  ⛭⛭ AND THE FORBIDDEN ONE REACHES THE CONTROL'S OWN FLOOR ON ALL THREE
+  ==========================================================================
+      forbidden arm chi^2 186.135046   against the CONTROL's own 186.006575
+      crossings 87 (control 87, noise about 88)      longest run 8 (control 8)
+  [PASS] ⛔⛭⛭ ** ON THE ARM OF RECORD THE FORBIDDEN REPAIR DOES NOT GO BELOW THE CONTROL'S OWN VALUE -- IT LANDS LEVEL WITH IT: ** 186.1350 against 186.0066, +0.1285 on n-5 = 180, which is +0.0068 sigma.  *The namesake arm's 184.99 against 186.01 put it BELOW; the arm of record's is a hair above, so `falls below the control's own` lands as `level with the control's own` -- which is what `r7647` ⑴ anticipated and this measures.*
+  [PASS] ⛭ and its longest run of one sign lands on the control's exactly, 8 bins against 33 before
+  [PASS] ⛭ and its crossings go to 87 against the control's 87 and noise's roughly 88, from 54 -- the arm becoming noise-consistent where it was 4.6 sigma away. ** On the arm of record they land EXACTLY on the control's, where the namesake arm's went to 91 against 87 ** -- so the figure printed beside this gate was the namesake's and the gate passed on it, which is the stale-label class and is why it is pinned here
+
+  ==========================================================================
+  D.  ⌗ THE REFIT r7097 ASKED FOR, AND THE TILT PREDICTION IT PUT ON THE RECORD
+  ==========================================================================
+      grid       arm          H0         OM         WB         NS      chi2
+      banked     lcdm    +0.0081    -0.0050    -0.0004    -0.0114     186.3
+      banked     cr      -5.9013    +0.0740    -0.0007    -0.0385     276.4
+      licensed   lcdm    +0.0081    -0.0050    -0.0004    -0.0114     186.3
+      licensed   cr      -5.9013    +0.0740    -0.0007    -0.0385     276.4
+      forbidden  lcdm    +0.0081    -0.0050    -0.0004    -0.0114     186.3
+      forbidden  cr      +0.0212    +0.0041    +0.0007    -0.0643     187.7
+      the two-direction tilt (shape.py, ell<=1040, LMAXL=2000): banked +0.0264, licensed +0.0390, forbidden -0.0016
+      cc66.73's own LMAXL=1300 pair:                            before -0.0046, oneclock -0.0324
+  [PASS] ⛔⛔ ** AND ON THE ARM OF RECORD THAT LICENCE FAILS ON ALL THREE GRIDS. ** The two-direction tilt and the four-parameter refit's own n_s shift agreed to better than 0.004 on the namesake arm, which is what licensed reading one as the other.  Here they are 0.0649, 0.0775 and 0.0627 apart -- fifteen to twenty times that.  *So `a power-law tilt in ell is a delta-n_s to first order` is not a licence this arm supports, and it is WITHDRAWN here rather than loosened: the tolerance is not widened to admit it.*
+  [PASS] ⛔ ⇒ AND ON THE ARM OF RECORD THE ONE-CLOCK REBUILD DOES NOT NEED `essentially NO tilt` EITHER: it needs -0.0643, against the namesake arm's -0.0035 at the same resolution -- eighteen times it, and MORE than the banked and licensed grids' -0.0385.  *So the reading that the rebuild removes the tilt demand inverts: on this arm the rebuild asks for the MOST tilt of the three.*
+  [PASS] ⛔ and the SIGN FLIPS: the banked default and the licensed configuration wanted about +0.03 to +0.04 of tilt on the namesake arm and want -0.0385 on the arm of record -- NEGATIVE, and the same on both.  *So all three grids now want a RED tilt and the one-clock rebuild wants the most; `the tilt the fit reaches for is a property of the two-clock geometry and not of the rebuild` does not survive, because the rebuild changes it most.*
+
+  ==========================================================================
+  E.  ⚠ THE SCOPE
+  ==========================================================================
+  [PASS] no spectrum is computed here and no parameter is pinned: every number is read from a grid tracked in this repository, through `70`'s own `rigidity.py` definitions
+  [PASS] ⛔ and `LEAFGEOM=1` is NOT reinstated: `r7095`'s ruling is the gate's, the switch's default is untouched, and what is reported is a conflict for the gate to adjudicate
+
+  15 checks, 15 pass, 0 fail
+  GATES: ALL PASS
+
+  r7097's Q3, ON ITS OWN THREE NAMED NUMBERS:
+                        unreachable chi2       crossings    longest run
+    control (all three)     186.007               87             8
+    banked arm              278.795               54            33
+    LICENSED arm            278.788               54            33     <- nothing moved
+    forbidden arm           184.989               91             8     <- the control's floor
+  ⇒ the rule's own configuration closes 0.007 per cent of the 92.8 chi^2 gap; the configuration the
+    rule forbids closes all of it and lands the arm on the control's value on all three statistics.
+  ⇒ 60's falsifier fires: the contrast does not come from the rate assignments AS THE RULE ASSIGNS
+    THEM.  It comes from the clock the GEOMETRY is read on -- the one object P07 pins by name.
+

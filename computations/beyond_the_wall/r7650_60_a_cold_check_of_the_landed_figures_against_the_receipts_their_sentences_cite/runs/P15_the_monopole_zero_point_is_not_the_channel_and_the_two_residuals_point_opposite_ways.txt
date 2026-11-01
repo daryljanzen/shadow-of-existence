@@ -183,8 +183,150 @@ PART 4 -- (c) ALTERNATION AND CONTRAST, AND WHETHER THEY ARE ONE NUMBER.
   dominated by the first triple and is mostly curvature.  ⇒ At the peak positions the trend and the
   alternation are FITTED TOGETHER, o(p_n) = c_0 + c_1 n + c_2 n^2 + a (-1)^n, and `a` is the answer.
 
-Traceback (most recent call last):
-  File "/home/user/shadow-of-existence/receipts/P15_CR_cosmology/P15_the_monopole_zero_point_is_not_the_channel_and_the_two_residuals_point_opposite_ways.py", line 389, in <module>
-    import camb                                                                  # noqa: E402
-    ^^^^^^^^^^^
-ModuleNotFoundError: No module named 'camb'
+    the acoustic peaks the statistics are read at: l = [248, 536, 833, 1148, 1445, 1750]
+    control: contrast 1.00000   alternation a = +0.032311
+    arm    : contrast 1.04403   alternation a = +0.031560
+    the namesake arm in the same space: contrast 1.04015
+    the projection maximised over a rigid shift of the arm: 1.04403 at dl = +0.0, against a comb period of 315
+  [PASS] ⛭ THE CONTRAST STATISTIC IS THIS RECEIPT'S OWN, ON THE ARM OF RECORD, and it reproduces `cc66.35`'s machinery on the NAMESAKE arm to a part in ten thousand -- so the space these two statistics live in is that receipt's space and not a new one, and what moved is the ARM   (arm of record 1.04403, namesake 1.04015 against `cc66.35`'s 1.0401; the control against itself 1.00000)
+  [PASS] ⛭⛭ AND `r7637+70`'s CARRY IS MOOT HERE AND THAT IS MEASURED RATHER THAN ARGUED: the projection onto the control's own oscillation is ALREADY at its maximum over a rigid shift of the arm, at zero shift against a comb period of 315 -- so there is no phase offset for a carry to remove, and the figure is not a suppressed one.  ⛔ *Carrying would also cost the claim its own words: a direction remapped onto the arm's measured comb is not built from the control alone with nothing fitted*   (maximum 1.04403 at dl = +0.0 against the unshifted 1.04403)
+    ⛔ on the arm of record: contrast, alternation, P1/P2;  still the namesake, bank-blocked: r6897_fields (arm is a KEY, no arm-of-record key); the ZPSAVE identity, paired with r6897_noop, which has no arm-of-record key -- the screen's own sibling IS banked and does not release it
+  [PASS] ⛔⛭ AND THE ONE INFERENCE THAT CROSSES THE TWO BANKS IS ROBUST IN THE SAFE DIRECTION, WHICH IS GATED AND NOT ASSERTED: the saturation leg converts the ARM-OF-RECORD contrast through the NAMESAKE fields' measured omega_b response, and the arm of record's excess is the LARGER of the two, against an unchanged response span -- so 'beyond what the baryon density reaches' holds a fortiori.  ⌗ *`r7639+cc66.15` is why this is declared: a cross-arm comparison is a licence defect whichever way it comes out*   (arm of record 0.04403 against the namesake's 0.04015)
+  [PASS] ⚑⚑ ** AND AGAINST THE CONTROL THE TWO RESIDUALS POINT OPPOSITE WAYS: the arm's CONTRAST is four per cent HIGHER and its ALTERNATION is about two per cent LOWER. **   (contrast +0.0440; alternation -0.000751 (-2.32%))
+      with the trend at degree 1: control +0.032311, arm +0.031560, difference -0.000751
+      with the trend at degree 3: control +0.027189, arm +0.026544, difference -0.000645
+  [PASS] ...and the sign of that alternation difference does not depend on how the envelope's own trend is carried: degree one, two and three all give the arm LOWER   (deg 1: -0.000751, deg 2: -0.000751, deg 3: -0.000645)
+
+  ----- THE CONTROL'S OWN RESPONSE TO ITS BARYON DENSITY -----
+         omega_b  of control  slices   contrast  alternation
+      0.02020872     -8.00%      11    0.97939    +0.028888
+      0.02108736     -4.00%      11    0.99130    +0.030256
+      0.02196600     +0.00%      11    1.00000    +0.032311
+      0.02284464     +4.00%      11    1.00538    +0.034066
+      0.02372328     +8.00%      11    1.00736    +0.035098
+    d(contrast)/d(omega_b)    = +7.9695 per unit omega_b   (= +0.001751 per one per cent)
+    d(alternation)/d(omega_b) = +1.8470 per unit omega_b   (= +0.000406 per one per cent)
+  [PASS] ⚑ both statistics respond to the baryon density, and in the directions `r6897`'s reading requires: MORE loading gives MORE odd-even alternation and MORE contrast -- deeper troughs.  *Neither is a null, so neither residual is being converted through a response that is not there.*   (d(alternation)/d(omega_b) = +1.847, d(contrast)/d(omega_b) = +7.969)
+  [PASS] ...and both are linear enough over this range that a single slope is the right summary, which is why five values were run rather than two   (largest departure from the straight line, as a fraction of the range: contrast 0.119, alternation 0.051)
+
+    the arm's CONTRAST excess  +0.04403  implies an effective d(omega_b) of +0.005525  (+25.15%)
+    the arm's ALTERNATION diff -0.000751  implies an effective d(omega_b) of -0.000407  (-1.85%)
+    and the arm's own omega_b is already -0.000442 (-2.01%) from the control's
+  [PASS] ⚑⚑⚑ ** AND THE ANSWER TO r6897's SINGLE MOST INFORMATIVE NUMBER IS THAT THE TWO DISAGREE, AND NOT BY A LITTLE: THEY HAVE OPPOSITE SIGNS. **  The contrast excess asks for MORE baryon loading; the alternation asks for LESS.  *** So the remaining residual is not one parameter's worth of physics, and the search splits -- which `r6897` says is also worth knowing, and cheaply. ***   (contrast +25.15% against alternation -1.85% of the control's omega_b -- opposite signs)
+  [PASS] ⚑⚑ ** AND THE +25 PER CENT IS A LOWER BOUND, BECAUSE THE CONTRAST RESPONSE SATURATES. **  Over the whole 16 per cent range the contrast spans only 0.028, and its successive increments FALL monotonically -- 0.0119, 0.0087, 0.0054, 0.0020 -- so a straight line OVERSTATES what omega_b can deliver above the control.  *** A four per cent contrast excess is therefore beyond what the baryon density reaches in this construction at any value, not merely at an implausible one. ***   (increments +0.0119, +0.0087, +0.0054, +0.0020; the whole response spans 0.0280 against a contrast excess of 0.0440)
+  [PASS] ⚑ ...and the third measurement agrees with the second and not with the first: the MONOPOLE OFFSET of Part 3 also asks for LESS loading, at an effective d(omega_b) of about -3 per cent, which is the same sign and nearly the same size as the alternation's.  ** Two independent measurements of the loading displacement agree; it is the CONTRAST that stands apart. **   (monopole offset -2.94%, alternation -1.85%, contrast +25.15%)
+
+PART 5 -- ⚠ WHERE THE 'ALTERNATION EXCESS' CAME FROM, AND WHAT IT IS AGAINST THE CONTROL.
+----------------------------------------------------------------------------------------------------
+    control  peaks at l = [220, 537, 814]   heights [0.5339, 0.2437, 0.2406]   P1/P2 = 2.1912   P1/P3 = 2.2188
+    arm      peaks at l = [222, 536, 815]   heights [0.417, 0.1954, 0.1925]   P1/P2 = 2.1345   P1/P3 = 2.1663
+    namesake peaks at l = [222, 536, 815]   heights [0.4423, 0.2066, 0.2036]   P1/P2 = 2.1411   P1/P3 = 2.1724
+    and `r6897` reads the excess off P1/P2 = 2.264 against the SKY's 2.217, while the contrast 1.040 is against the CONTROL.
+  [PASS] ⚠ ** THE PREMISE MIXED TWO REFERENCES, AND AGAINST THE COMMON ONE THE ALTERNATION IS NOT ELEVATED. **  `r6897` pairs an alternation excess measured against the SKY with a contrast excess measured against the CONTROL.  *Against the control -- which is the reference Delta is built on and the reference this row's object is defined by -- the arm's P1/P2 is LOWER.*  ⇒ The two residuals were never pointing the same way; the appearance that they were is the two references.   (arm P1/P2 = 2.1345 against the control's 2.1912)
+
+PART 6 -- THE DIPOLE-TO-MONOPOLE AMPLITUDE RATIO AT THE VISIBILITY PEAK, MEASURED.
+----------------------------------------------------------------------------------------------------
+
+  `r6897` says that if the monopole's offset is clean, *"the difference is in how the DIPOLE is
+  generated rather than where the monopole sits"*.  ⇒ The same `ZPSAVE` bank carries theta_b, so that
+  is a measurement and not a further run: the Doppler source enters the transfer with amplitude
+  theta_b/k against the monopole's Theta_0+Psi, and the damping envelope multiplies both and cancels.
+
+          q band   control       arm  arm/control
+    [  3.5,  6.0]   1.42331   1.43966      1.01134   (+1.13%)
+    [  6.0,  8.5]   1.58431   1.62130      1.02326   (+2.33%)
+    [  8.5, 11.0]   1.71194   1.76023      1.02816   (+2.82%)
+    [  3.5, 11.0]   1.56775   1.60102      1.02058   (+2.06%)
+  [PASS] ⚑ the arm's dipole-to-monopole amplitude ratio at the visibility peak is about two per cent HIGHER than the control's, and it GROWS with wavenumber -- measured on the reporting path, on the same fields the offset came from   (+2.06% over q in [3.5,11], rising from +1.06% to +2.84%)
+  [PASS] ⚠ ** AND ITS NAIVE SIGN IS OPPOSITE TO THE CONTRAST EXCESS, WHICH IS STATED AND NOT RESOLVED. **  The Doppler term is a quarter period out of phase and FILLS the troughs -- which is what `cc66.36` measured, `DPSRC=0` taking the arm's own oscillation from 1.040 to 1.828.  *So a LARGER dipole fraction makes troughs SHALLOWER, and this arm's is larger while its troughs are deeper.*  ⇒ The dipole fraction does not explain the contrast excess either; it works against it.  ** What that leaves is a contrast excess whose source is larger than four per cent and partly cancelled -- which is a statement about size and not a mechanism, and it is as far as this order's measurements reach.**   (dipole fraction +2.06% (fills troughs, lowers contrast) against a contrast excess of +4.40% (deeper troughs))
+
+====================================================================================================
+
+WHAT THIS REVISION ESTABLISHES.
+
+  ⚑ ** THE HEADER CARRIES THE VISIBILITY NOW, ON EVERY PATH, AND THE TWO ARMS' WIDTHS HAVE NEVER BEEN
+  SIDE BY SIDE ON THE REPORTING PATH BEFORE. **  The control's last-scattering surface is
+  38.04 Mpc wide in conformal time at eta = 281.75;
+  the arm's is 43.59 Mpc at 485.99 --
+  1.146 times as wide.  ⌗ *`ETA_LS_W` was printed
+  only inside `los_spectrum`, and `r6897` is right that this is not a shadow -- a print is not a knob,
+  which is `LRSFROM`'s own lesson -- but the loading is read off this eta and the header should carry
+  it.*
+
+  ⚑⚑ ** (a)/(b) THE MONOPOLE'S ZERO POINT IS NOT THE CHANNEL, AND THE SIGN IS WHAT SAYS SO. **  On both
+  arms the offset of Theta_0+Psi approaches the tight-coupling equilibrium -R Psi FROM BELOW and reaches
+  0.781 of it on the control and 0.755 on the arm at the visibility peak.  ⇒ And
+  calibrated against the control's own response to a KNOWN displaced baryon density -- the estimator
+  tracking 77 per cent of a known dR -- ** the arm's offset FALLS SHORT of what its
+  own loading accounts for, by an effective omega_b of -2.94 per cent, on top of the
+  -2.01 per cent its fitted omega_b already is. **  *** Too much loading is what
+  deepens troughs and raises alternation.  This arm's monopole behaves as though it had too LITTLE. ***
+  ⇒ On `r6897`'s own branching this is a THIRD outcome, and it refutes the loading reading by sign
+  rather than leaving it undetermined.
+
+  ⚑⚑⚑ ** (c) AND THE TWO RESIDUALS ARE NOT ONE NUMBER: THEY HAVE OPPOSITE SIGNS. **  Against the
+  control, the arm's CONTRAST is +4.40 per cent and its ALTERNATION
+  -2.32 per cent.  Converted through the control's own measured responses --
+  d(contrast)/d(omega_b) = +7.97 and d(alternation)/d(omega_b) = +1.85, both positive, so
+  more loading gives more of both -- ** the contrast asks for an effective omega_b of
+  +25.15 per cent and the alternation for -1.85 per cent. **  ⇒ *** The
+  remaining residual is NOT one parameter's worth of physics; the search splits. ***  ⌗ *And the
+  monopole offset agrees with the alternation and not with the contrast -- two independent measurements
+  of the loading displacement at -2.94 and -1.85 per cent, against
+  the contrast standing apart at +25.15.*
+
+  ⚠ ** AND PART OF THAT IS A CORRECTION TO THE ORDER'S PREMISE, WHICH MIXED TWO REFERENCES. **  `r6897`
+  pairs an alternation excess read against the SKY (P1/P2 = 2.264 against 2.217) with a contrast excess
+  read against the CONTROL (1.040) -- the order's own two figures, quoted and not re-pointed.
+  *Against the control, on the banked spectra, the arm of record's P1/P2 is
+  2.1345 against 2.1912 --
+  LOWER, as it was on the namesake's 2.1411.*  ⇒ ** The two were never pointing the same way, and the appearance that they were is the two
+  references. **
+
+  ⚑ ** ONE POSITIVE LOCALISATION, AND ITS SIGN PROBLEM WITH IT. **  The arm's dipole-to-monopole
+  amplitude ratio at the visibility peak is +2.06 per cent and GROWS with wavenumber, from
+  +1.06 to +2.84 per cent.  ⚠ *But
+  the Doppler term FILLS troughs -- `cc66.36` measured `DPSRC=0` taking the arm's oscillation from
+  1.040 to 1.828 -- so a larger dipole fraction makes troughs SHALLOWER, and this arm's is larger while
+  its troughs are deeper.*  ⇒ ** So the dipole fraction does not explain the contrast either; it works
+  AGAINST it, which leaves a contrast excess whose source is larger than four per cent and partly
+  cancelled. **  *That is a statement about size, not a mechanism, and it is as far as this order's
+  measurements reach.*
+
+  ⌗ ** AND TWO METHOD NOTES, BECAUSE BOTH WERE PLACES THIS COULD HAVE GONE WRONG QUIETLY. **  The
+  offset estimator: a midpoint of successive extrema carries half the change in amplitude between them
+  and came out alternating by a factor of three; the quarter-half-quarter combination of three extrema
+  cancels a linear amplitude variation and left +-15 per cent of curvature; and a one-period fitting
+  window is ill-conditioned because the constant is nearly collinear with the dq-weighted oscillation.
+  ** Four periods with a quadratic amplitude gives a q-to-q scatter of 0.0267 on an offset
+  of -0.4768, and the verdict is unchanged across five settings. **  The
+  alternation statistic: a second difference of peak heights vanishes only on a LINEAR trend, and the
+  envelope's decline is strongly curved, so the trend and the alternation are FITTED TOGETHER.
+
+  ⚠ ** WHAT THIS IS NOT. **  No mechanism for the contrast imbalance -- `r6897` says this order is a
+  measurement and that none should be claimed, and none is.  No claim that the dipole excess produces
+  the contrast excess, whose sign is wrong for it.  No claim that the offset's shortfall against -R is
+  a defect of either arm: it is the same shortfall on both, and it is the approach to equilibrium.  And
+  the width story `r6897` withdrew before sending is not reinstated here -- nothing in these numbers
+  attacks its reasoning.
+
+  [PASS] ⛭⛭ AND EVERY FIGURE THIS FILE'S HEADER STATES IS COMPARED WITH THE COMPUTATION RATHER THAN MERELY PRINTED BESIDE IT -- the contrast, its excess, the alternation shortfall, both effective baryon densities and both height ratios -- because re-pointing moved seven of them and only one was gated.  ⛔ *A figure a receipt prints but does not COMPARE is not pinned*   (7 header figures tied to the computation)
+  [PASS] ⛭ and the header's 'A FACTOR OF FOURTEEN' is the measured ratio of the two effective baryon densities and not a word: it is computed here and rounds to it   (|+25.15 / -1.85| = 13.6)
+  [PASS] ⛭ AND THE TWO HEIGHT RATIOS THIS RECEIPT MEASURES ARE PINNED AS NUMBERS AND NOT AS DIGITS IN A STRING: it computes P1/P2 = 2.134 on the arm of record against 2.191 on the control, each within half a printed digit, and the arm's is the LOWER -- which is the clause this receipt's own argument turns on   (arm of record 2.1345 against the control's 2.1912)
+====================================================================================================
+GATES: ALL PASS.
+
+ESTABLISHED: the visibility peak and its width are in the header on every path, and the arm's last
+scattering is 1.146 times as wide in conformal
+time as the control's.  `ZPSAVE` saves the fields at that peak on the REPORTING path and is
+bit-identical when unset.  The monopole's zero point sits at 0.781 and 0.755 of
+each arm's own -R, and the arm's FALLS SHORT of what its own loading accounts for by an effective
+omega_b of -2.94 per cent -- the wrong sign for the loading reading, which is
+therefore refuted rather than left open.  And the two residuals r6897 asked about are not one number:
+the contrast implies +25.15 per cent and the alternation -1.85, opposite
+signs, with the monopole offset agreeing with the alternation.  The arm's dipole-to-monopole ratio is
++2.06 per cent and rising with wavenumber, and its sign works against the contrast excess
+rather than for it.
+NOT CLAIMED: a mechanism for the contrast imbalance; that the dipole excess produces the contrast
+excess; that either arm's offset shortfall against -R is a defect.
+
