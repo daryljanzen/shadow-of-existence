@@ -91,3 +91,40 @@ and the four regenerators run to no change beyond the appendix the new row adds.
 
 ⌗ **The reachable negative is that all four figures reproduce, every pin is failable, and the sentence
 needs no correction.** Arm ⑦ is registered against the last of those three.
+
+---
+
+# `r7654+60.1` — REGISTER THE CORRECTION: arm ⑤ asked ONE perturbation to test FOUR pins, and one of them is not the arm's
+
+**Arm ⑤ as registered said: perturb the arm-of-record spectrum by $1\%$ and every one of the four pins
+falls outside its tolerance. It MISSED, and the discarded reading is kept.** Three of the four moved —
+$1.7676 \to 1.4744$, $1.3456 \to 1.1279$, $288.04 \to 241.44$. **The fourth did not move at all:
+$214.0579 \to 214.0579$.**
+
+⇒ **And it could not have.** The fourth figure is $\chi^2$ of the **CONTROL**, fitted against the data
+on those bins. It does not read the arm's spectrum anywhere. *So no perturbation of the arm can move
+it, and an arm that demanded one was asking a quantity to depend on something it does not depend on.*
+
+⌗ **This is the same error as `r7652`'s arm ③ in a new place: a blanket claim where the mechanism only
+supports a per-object one.** There the registered ORDERING was a guess the mechanism did not license;
+here the registered perturbation is a guess that one lever reaches four quantities.
+
+**The corrected rule, registered before the corrected receipt exists.** Failability is tested
+**against the spectrum each figure actually depends on**:
+
+- **⑤′ THE THREE ARM-DEPENDENT PINS** — $1.77$, $1.35$ and $288.04$ — each fall outside tolerance under
+  a $1\%$ **tilt of the arm**. (Measured above; retained as the arm's own test.)
+- **⑤″ THE CONTROL'S $214.1$ IS INVARIANT UNDER EVERY PERTURBATION OF THE ARM**, exactly, and that is
+  now ASSERTED rather than treated as a failure — because it is what makes $214.1$ the control's
+  figure and not the comparison's.
+- **⑤‴ AND IT IS FAILABLE UNDER A $1\%$ TILT OF THE CONTROL**, which is the perturbation it does
+  depend on. All four of the sentence's figures move under that one, since all four read the control.
+
+⇒ **So the corrected arm is strictly stronger than the one it replaces:** it pins an invariance the
+original did not test, and it still shows every figure failable — each under the lever that reaches
+it. ⌗ *A pin is failable with respect to something. Naming one perturbation and calling four pins
+tested does not say with respect to what.*
+
+**Running total of this seat's own rule conditions corrected by measurement rather than by reading,
+across `r7648`, `r7650`, `r7652` and `r7654`: eleven** — every one in the restrictive direction, every
+discarded reading kept beside its correction.
