@@ -1408,6 +1408,11 @@
     "since": "41d171adcfcfc1da94c6afd74c88a14a27ddacb2",
     "unmeasured": true
    },
+   "receipts/P15_CR_cosmology/P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41275589974",
+    "since": "b4c02c1c45f9fb2a065a23bfcc51633db7f400d5",
+    "unmeasured": true
+   },
    "receipts/P15_CR_cosmology/P15_expansion_law.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41256151748",
     "since": "41d171adcfcfc1da94c6afd74c88a14a27ddacb2",
@@ -1511,6 +1516,11 @@
    "receipts/P15_CR_cosmology/P15_the_corpus_tensor_assignment_and_the_segments_unit_speed_support_are_two_objects_because_on_one_chart_the_two_equations_differ_by_exactly_the_radiation_constant.py": {
     "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41256151748",
     "since": "41d171adcfcfc1da94c6afd74c88a14a27ddacb2",
+    "unmeasured": true
+   },
+   "receipts/P15_CR_cosmology/P15_the_de_tilted_peak_set_is_the_phase_observable_the_slope_was_not_and_it_separates_the_baryon_direction_from_a_tilt_by_twenty_but_the_driving_half_needs_its_own_pair.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41275589974",
+    "since": "b4c02c1c45f9fb2a065a23bfcc51633db7f400d5",
     "unmeasured": true
    },
    "receipts/P15_CR_cosmology/P15_the_derivation_holds_on_any_cut_because_the_radial_equation_is_autonomous_and_radiation_in_the_cut_moves_the_distance_away_from_the_sky.py": {
