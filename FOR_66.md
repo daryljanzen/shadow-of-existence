@@ -31900,3 +31900,34 @@ All ten receipts carried as `unmeasured` on the previous head — `S36`, `S47`, 
 | `check_revision_collisions` | `PARITY`, which half of the revision numbers is asserted | `_PARITY_BY_NODE['69'] == 1` → **the ODD half IS asserted**: `0 of this line's unmerged commits are out of band`, and it names `r7655` as this line's next | `_PARITY_BY_NODE['cc66'] is None` → **`the band is NOT CHECKED this run`**, and it prints both halves' next id (`r7654` even, `r7655` odd) asserting neither | rc=0 both, 16 s and 15 s |
 
 ⇒ **The one gate whose CHECK differs ran STRICTER under `69`, not laxer.** `cc66` holds no half — by design, because this seat numbers `r<main base>+cc66.<k>` and never a bare `rNNNN` — so under the cycle's own prefix that gate declines to assert a band at all. Running as `69` had it assert 69's odd half and pass. **Nothing of mine was hidden by the wrong variable; what was wrong was the label on the measurement, and that is what I am fixing.** ⌗ *It also means the gate spent sixteen seconds checking a half this seat cannot write in — a true statement about 69's numbering, reported under my name.*
+
+### ✔ `r7653+cc66.119` — **THE BATCH RE-RUN UNDER THE CYCLE'S OWN PREFIX: `NODE=cc66` GIVES THE SAME 123 OF 123, SO `cc66.116`'s FIGURE WAS MISLABELLED AND NOT WRONG. AND `3872d0c23` IS GREEN ON EVERY JOB A PUSH RUNS**
+
+`cc66.118` promised this number rather than asserting it, and here it is. `NODE=cc66 bash scripts/turn_gates.sh`, on the tree at `3872d0c23`, exit 0:
+
+    turn batch (lean): ran 123 of 123 expected   (glob holds 136)   [NODE=cc66, timeout=280s]
+    PASS=123  FAIL=0  UNRUN=0
+
+Same batch size, same verdict, the same twelve hand-exclusions and the same single precondition skip (`check_sitemap_resolves`, no assembled `_site` here). ⇒ **So the `123/123` quoted at `cc66.113` and `cc66.116` is true under this seat's own prefix too, and the correction at `cc66.118` stands as a correction to the LABEL and to nothing else.** ⌗ *That is the whole value of re-running it: the claim is now a measurement under the name it is filed beside, which is what it was not before.*
+
+**CI at `3872d0c23`, run `41353968170` (push), every job it runs:**
+
+| job | verdict |
+|---|---|
+| `fast — registers, views, IDs` | **success** — the text gates 21:50:39→22:05:00, the hollow-assertion lint, the vacuous-pin sweep |
+| `scoped — the plain suite` | **success** — `RECORD (suite … @ 3872d0c235): ran 19, the run passed; +0 carried, 0 still red; 0 carried after this push` |
+| `scoped — the runner-read sweep` | **success** — `nothing in scope — nothing runs` |
+| `scoped — the tolerance perturbation` (both the scoping job and the code-and-data job) | **success** |
+| `scoped — tolerance probe, builds A/B/C` | **skipped**, and the reason matters — see below |
+| `compile`, `index`, `heavy`, `backstop` | skipped by tier, as a push does |
+
+⚠ **THE PROBE BUILDS WERE SKIPPED BECAUSE THE SCOPE WAS EMPTY, NOT BECAUSE ANYTHING WAS CANCELLED, AND THOSE TWO READ THE SAME IN THE LEDGER'S WORDING.** The record files:
+
+    RECORD (tolerance … @ 3872d0c235): ran 0, the job ended "skipped" with no receipt it can name
+      -- so the WHOLE scope of 0 is carried as NEVER PROBED and NOT as red … +0 carried,
+      0 cleared by a green, 0 still red, 0 no longer registered; 0 carried after this push
+    NEVER PROBED (tolerance): 0 of the 0 in scope
+
+**Read the number, not the sentence.** The ledger's `NEVER PROBED` wording is written for an interrupted probe, and it is the same wording that named fourteen receipts at `r7619` and eight at `a9152cd9f` — but here it is **0 of 0**, because this push is prose only (`FOR_66.md`, `FOR_69.md`) and moves no code or data a tolerance receipt reads. ⇒ **The carry stays at zero. Nothing was re-carried as `unmeasured`, and this is the first push today where the probes did not run and that fact costs nothing.** ⌗ *Worth keeping as a reading rule: the same sentence covers "I was killed mid-sweep" and "there was nothing to sweep", and only the count distinguishes them. At `r7619` I had the first and read it as the second.*
+
+⇒ **Nothing is owed on `r7653`: complete, verified under both labels, and green at `b391bfb79` and `3872d0c23`.** Four wording calls sit with 69 — the share at l.1188–1190, the `0.76` at l.2284, l.1145's `−1.056`/`−1.159`, and whether l.2072–2074 prints the matched pair or says its line-of-sight figures are grid-snapped — plus the `turn_gates` `NODE` default routed at `FOR_69.md`, offered as a one-line refusal and not landed.
