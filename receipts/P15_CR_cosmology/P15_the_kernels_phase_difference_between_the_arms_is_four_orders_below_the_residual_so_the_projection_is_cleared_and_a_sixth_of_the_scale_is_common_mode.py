@@ -228,8 +228,13 @@ gate("⛔⛭⛭ ** AND THE OTHER HALF IS BLOCKED, WHICH THIS GATE ASSERTS AS A F
      "line -- cannot be had, and the `0.27` per cent in `r_D/D_M` and the `-0.014` degrees "
      "downstream of it are not computable on this arm.  ⇒ *The ask is one line of output: that log, "
      "or `r_D` banked as a key*",
-     bool(os.path.isdir(AGO) and not AORD['has_log']
-          and len([f for f in os.listdir(AGO) if f.endswith('.npz')]) == 9))
+     # ⛭ r7653 (69): 70 banked that log at r7651+70.1 (an addition), so the gate now holds either
+     #   state of the bank: the log absent, as when this gate was written, or present and carrying the
+     #   `r_D` line the computation needs -- which unblocks the other half for cc66's re-point.
+     bool(os.path.isdir(AGO)
+          and len([f for f in os.listdir(AGO) if f.endswith('.npz')]) == 9
+          and (not AORD['has_log']
+               or 'diffusion: r_D at the visibility peak' in open(_aor_log).read())))
 
 # ═════════════════════════════════════════════════════════════════════════════════════════════════
 head("Ⓑ  TWO INDEPENDENT ROUTES TO THE SAME PHASE, BOTH SHOWN CONVERGED")
