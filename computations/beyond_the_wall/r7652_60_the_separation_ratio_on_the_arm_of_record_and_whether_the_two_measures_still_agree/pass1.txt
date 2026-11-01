@@ -1,0 +1,90 @@
+r7652 (60) -- P18 l.1558's `58 times` AND ITS TWO MEASURES, ON THE ARM OF RECORD.
+
+** THE ORDER (`r7651`, 69): ** P18 says the separation between the arms is 58 times the control's own
+distance from the data on the same bins, and that two independent measures agree to within 5%.  cc66
+traced both to this line's `r4335` framing, F2 = 15473 against chi2_sep = 16261 -- measured on the
+`LEAFREC=0` arm.  Re-measure both on the arm of record with this seat's `r7646` scorer, report both
+figures and whether they still agree to 5%, and if the statistic does not carry over, say why.
+
+The line between data and code is `r7644`'s and is unchanged:
+
+  ⌗ ** THE DATA IS SHARED ON PURPOSE. **  `plik_lite` TT, its binning weights and its covariance are
+    the MEASUREMENT.  An instrument on other data would answer a different question.
+  ⛔ ** THE CODE IS NOT. **  This file does not import `chi2_of_spectrum`.  The binning, the
+    marginalisation and the closed-form amplitude below are this seat's, written at `r7644`, carried
+    at `r7646` and re-stated here so the receipt stands alone.
+  ⚠ ** AND camb STAYS OFF THE PINNED INTERPRETER. **  The lensing operator is read as the array
+    `r7644` saved under the other interpreter, and its value at ell 1900 is re-asserted into the band
+    cc66's own receipt gates it into rather than assumed.
+
+⛔ ** AND THE CARRY-OVER TEST HAS TWO MOVING PARTS. **  The 58 was measured on the LEAFREC=0 arm AND
+on 133 UNLENSED bins to ell 1296; the arm of record is measured here on 185 LENSED bins to ell 1996.
+So the LEAFREC=0 arm is re-measured on the SAME 185 lensed bins as a third column.  Without it a
+single number that failed to reproduce could not say which change caused it.
+
+==============================================================================================================
+  r7652 (60) -- the separation ratio and the two measures, on the arm of record
+==============================================================================================================
+
+PART 0 -- THE BINS AND THE OPERATOR, ASSERTED AND NOT INHERITED
+      control covers ell 100-1998, 185 bins, ell 100-1996
+  [PASS] the bin count is 185, ell 100 to 1996, as the corpus calls it
+  [PASS] ⌗ and this file does not import the corpus's own scorer, which is what makes this a second reading rather than a re-run of 70's
+      the saved FULL operator at ell 1900: 1.0666   (camb 2.0.5)
+  [PASS] the operator is the full lensed/unlensed ratio, inside the [1.05, 1.08] cc66's own receipt gates it into
+  [PASS] ⚠ the interpreter running this score is the PINNED one
+
+PART 1 -- ** THE TWO MEASURES, BOTH ARMS, ON THE SAME 185 LENSED BINS **
+
+  ⌗ THE DEFINITIONS ARE THE REGISTRATION'S, FIXED BEFORE THESE NUMBERS EXISTED:
+      F2        = chi2(arm) - chi2(control), the difference of the two arms' OWN distances from the data
+      chi2_sep  = (A_a m_a - A_c m_c)' F (A_a m_a - A_c m_c), the distance between the two FITTED MODELS
+      ratio     = chi2_sep / chi2(control), the quantity that returns 58.20 on the source's 133 bins
+
+      control  chi2 =    214.06  on 185 bins  =  1.157/bin   amplitude 11113.92844
+
+      arm             chi2(arm)  arm/ctl          F2    chi2_sep  sep/ctl  |dis| max      min
+      arm of record      502.09    2.346      288.04      378.36     1.77     23.87%   31.36%
+      LEAFREC=0          550.48    2.572      336.42      476.48     2.23     29.39%   41.63%
+
+      the source's own figures, for comparison, on 133 UNLENSED bins to ell 1296:
+        control 279.4   LEAFREC=0 arm 15752.0 (56.38x)   F2 15472.6   chi2_sep 16260.5   sep/ctl 58.20
+        |F2 - chi2_sep| = 787.9 = 4.84% of chi2_sep and 5.09% of F2
+  [PASS] ⌗ the source's own pair is reproduced from its own printed numbers: F2 = 15752.0 - 279.4 and the ratio = 16260.5 / 279.4, so F2 IS the difference of the two scores and not a second model-model distance
+  [PASS] ⚠ and the original 5% claim PASSES on the larger denominator and FAILS on the smaller, so which was meant is load-bearing (4.85% against 5.09%)
+
+PART 2 -- THE REGISTERED ARMS
+  [PASS] ⑤ the instrument reproduces r7646's own ratio for the arm of record, 2.346 (2.346x)
+  [PASS] ⑤ and for the LEAFREC=0 arm, 2.572 (2.572x)
+  [PASS] ⛭ ARM ① -- the 58 does NOT carry over: chi2_sep/chi2(control) on the arm of record is below 10 (1.77)
+  [PASS] ⛭ ARM ② -- the two measures do NOT agree to 5% on the arm of record, on the registered denominator (23.87%)
+  [PASS] ⌗ ARM ② on the other denominator too (31.36%)
+  [FAIL] ⛭ ARM ③ -- and the registered REASON holds: |F2|/chi2_sep is further from 1 on the arm of record (0.761) than on the LEAFREC=0 arm (0.706), which is the cross term -2 delta' F r_c growing relative to chi2_sep as the arm approaches the data
+  [PASS] ⌗ and the identity F2 = chi2_sep - 2 delta' F r_c is checked, not asserted, on BOTH arms
+  [PASS] ⛭ ARM ④ -- the separation shrinks with the arm: chi2_sep is smaller on the arm of record (378.36) than on the LEAFREC=0 arm (476.48), so the move r7646 measured in the ratio against the data is in the model-model distance too
+  [PASS] ⑥ F2 on the arm of record is small and positive and tracks r7646's ratio: F2/chi2(control) in [1.0, 1.7] (1.346)
+  [FAIL] ⑦ THE CONFIGURATION IS NOT THE CAUSE: the LEAFREC=0 arm on these same 185 lensed bins still returns a ratio above 20 (2.23), so the collapse is the ARM's and not the bin set's
+
+PART 3 -- WHICH MEASURE P18 CAN CITE
+
+      On the arm of record, on 185 lensed bins to ell 1996:
+
+        F2        = 288.04          (1.346 x the control's own)
+        chi2_sep  = 378.36          (1.77 x the control's own)
+        the cross term -2 delta' F r_c = -90.33
+
+      On the LEAFREC=0 arm, SAME bins, for the carry-over:
+
+        F2        = 336.42          (1.572 x the control's own)
+        chi2_sep  = 476.48          (2.23 x the control's own)
+        the cross term -2 delta' F r_c = -140.06
+
+  [PASS] ⛭⛭ ARM ⑧ -- both measures now have a receipt and NEITHER returns 58 on the arm of record, so l.1558 cannot be repaired by choosing a measure: it names a figure of the superseded arm. The re-point is 69's call on P18's registration
+  ⌗ *What this does NOT settle, from the registration: the data is shared on purpose, so this
+  is an agreement about arithmetic on 185 bins and not a claim that those bins are the right
+  confrontation; it does not re-open which arm is the arm of record; and it does not touch P18.*
+
+==============================================================================================================
+  2 failure(s), 0 vacuous
+   [FAIL] ⛭ ARM ③ -- and the registered REASON holds: |F2|/chi2_sep is further from 1 on the arm of record (0.761) than on the LEAFREC=0 arm (0.706), which is the cross term -2 delta' F r_c growing relative to chi2_sep as the arm approaches the data
+   [FAIL] ⑦ THE CONFIGURATION IS NOT THE CAUSE: the LEAFREC=0 arm on these same 185 lensed bins still returns a ratio above 20 (2.23), so the collapse is the ARM's and not the bin set's
