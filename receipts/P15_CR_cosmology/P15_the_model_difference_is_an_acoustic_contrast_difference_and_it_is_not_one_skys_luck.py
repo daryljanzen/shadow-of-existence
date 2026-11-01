@@ -547,6 +547,22 @@ check("⛭⛭⛭ ** AND ALL SIX FIGURES THIS RECEIPT'S PROSE PRINTS ARE PINNED T
       "perturbation bites.*",
       all(abs(g - w) <= t for _n, g, w, t in _PIN6),
       "; ".join(f"{_n} {g:.4f}" for _n, g, w, t in _PIN6))
+#:   ⛔⛭⛭ r7651+cc66.98: ** AND THE SAME SIX AS LITERAL COMPARISONS, for the reason given in
+#:   `...the_shared_fraction...`: `check_figures_pinned`'s `pins()` reads constants only inside an
+#:   `ast.Compare`, so `_PIN6`'s tuple is invisible to it and these figures were carried as
+#:   baselined-unpinned while the gate above held them. **  *Identical content, visible instrument.*
+check("⛭⛭ and the same six again, as LITERAL comparisons, so `check_figures_pinned` can see them -- "
+      "the tuple form above is invisible to its AST reader.  ⌗ *Same content, visible instrument; "
+      "the repair `cc66.87` established on a dict*",
+      abs(float(NDM2) - 81.81) <= 0.05
+      and abs(100.0 * float(P3 @ P3) / NDM2 - 8.57) <= 0.05
+      and abs(100.0 * (float(DM @ CONTRAST) / np.sqrt(NDM2)) ** 2 - 55.72) <= 0.05
+      and abs(100.0 * float(P4 @ P4) / NDM2 - 69.16) <= 0.05
+      and abs(SCALE - 1.0440) <= 0.0004
+      and abs(float(DMS[TR].mean()) - (-0.836)) <= 0.004,
+      f"{float(NDM2):.4f} / {100.0*float(P3@P3)/NDM2:.4f} / "
+      f"{100.0*(float(DM@CONTRAST)/np.sqrt(NDM2))**2:.4f} / {100.0*float(P4@P4)/NDM2:.4f} / "
+      f"{SCALE:.4f} / {float(DMS[TR].mean()):.4f}")
 check("...and it does not depend on the window: 46 to 58 per cent across a factor two in it, so "
       "the one tunable is reported rather than chosen (46 to 51 on the namesake arm)",
       min(_r) > 0.40 and max(_r) - min(_r) < 0.12,

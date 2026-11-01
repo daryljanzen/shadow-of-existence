@@ -346,6 +346,21 @@ check("⛭⛭⛭ ** AND ALL SIX FIGURES THIS RECEIPT'S PROSE PRINTS ARE PINNED T
       "figures and could not have reddened anything.  This is the gate the perturbation bites.*",
       all(abs(g - w) <= t for _n, g, w, t in _SIX),
       "; ".join(f"{_n} {g:.3f}" for _n, g, w, t in _SIX))
+#:   ⛔⛭⛭ r7651+cc66.98: ** AND THE SAME SIX ARE PINNED AGAIN, AS LITERAL COMPARISONS, BECAUSE THE
+#:   TUPLE FORM ABOVE IS INVISIBLE TO `check_figures_pinned`. **  *Its `pins()` is AST-based and reads
+#:   only constants that appear inside an `ast.Compare`; `_SIX`'s live in a tuple the loop iterates, so
+#:   the instrument reported every one of these figures UNPINNED while the gate above held them --
+#:   which is exactly the blind spot `cc66.87` hit with a dict and repaired the same way.  The
+#:   assertion below is identical in content to the one above and adds nothing to what is checked; what
+#:   it adds is that the INSTRUMENT CAN SEE IT, so the INDEX row's figures stop needing a baseline row.*
+check("⛭⛭ and the same six again, as LITERAL comparisons, so `check_figures_pinned` can see them -- "
+      "the tuple form above is invisible to its AST reader and the INDEX row's figures were carried "
+      "as baselined-unpinned because of it.  ⌗ *Same content, visible instrument; the repair "
+      "`cc66.87` established on a dict, applied where it is now load-bearing*",
+      abs(_sf - 71.8) <= 0.2 and abs(_cos - 0.848) <= 0.002
+      and abs(float(C2_C) - 286.89) <= 0.15 and abs(_exc - 109.02) <= 0.15
+      and abs(_mdf - 81.8) <= 0.2 and abs(_rat - 1.270) <= 0.004,
+      f"{_sf:.3f}% / {_cos:.3f} / {float(C2_C):.2f} / {_exc:.2f} / {_mdf:.2f} / {_rat:.3f}")
 check("** the ratio is not an amplification of a shared defect -- it is the size of the model "
       "difference added to the control's residual **, which is the plain answer to what sets it",
       abs(np.linalg.norm(W_C) ** 2 - (np.linalg.norm(W_L) ** 2 + np.linalg.norm(DIFF) ** 2
