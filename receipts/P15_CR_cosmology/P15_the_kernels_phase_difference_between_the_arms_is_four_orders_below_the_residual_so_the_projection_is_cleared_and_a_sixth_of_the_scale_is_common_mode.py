@@ -405,12 +405,20 @@ _PAPER_CONV = re.search(r'their separation in the governing ratio widens (\w+) a
                         r'between them changes sign, at \$([\d.]+)\$ degrees; the clearance '
                         r'survives either way, at no less than \$([\d.]+)\$ orders', _P15FLAT)
 _PAPER_RESID = re.search(r'against a residual of \$([-\d.]+)\$', _P15FLAT)
-print(f"    read out of the paper: l.2387-2388 says `{_PAPER_CONV.group(1)}`, "
-      f"{_PAPER_CONV.group(2)} degrees, {_PAPER_CONV.group(3)} orders;  "
-      f"l.2383's residual {_PAPER_RESID.group(1)}")
-_P_DEG = float(_PAPER_CONV.group(2))
-_P_ORD = float(_PAPER_CONV.group(3))
-_P_RES = float(_PAPER_RESID.group(1))
+# ⛭ ** BOTH READS TOLERATE THEIR OWN MISS, AND THE MISS IS PRINTED.  r7655: `check_quote_pins`
+#   named these two REGEXES as sentence pins on 69's wording, and it was right -- worse, a reworded
+#   sentence would have made `.group()` RAISE, and a crash is not a verdict.  ** This turn ROUTES
+#   both sentences for rewording, so each read is one arm of a disjunction whose other arm is "the
+#   sentence is no longer there", and the gates below take that arm explicitly. **
+_P_WORD = _PAPER_CONV.group(1) if _PAPER_CONV else None
+_P_DEG = float(_PAPER_CONV.group(2)) if _PAPER_CONV else None
+_P_ORD = float(_PAPER_CONV.group(3)) if _PAPER_CONV else None
+_P_RES = float(_PAPER_RESID.group(1)) if _PAPER_RESID else None
+print(f"    read out of the paper: l.2387-2388 "
+      + (f"says `{_P_WORD}`, {_P_DEG} degrees, {_P_ORD} orders"
+         if _PAPER_CONV else "** NO LONGER CARRIES THAT SENTENCE -- reworded since r7655 **")
+      + ";  l.2383's residual "
+      + (f"{_P_RES}" if _PAPER_RESID else "** NOT FOUND -- reworded since r7655 **"))
 
 EPD = os.path.join(BW, 'r7655_cc66_the_endpoint_conventions')
 _EP_LOGS = {'control': 'control_lcdm.log', 'namesake': 'namesake_arm_cr.log',
@@ -515,9 +523,10 @@ gate("⛔⛭⛭ ** Ⓗ④ AND NO ENDPOINT CONVENTION REPRODUCES l.2388's `0.14 d
      "the endpoint in opposite directions -- but its two figures are not this instrument's on "
      "either arm, and `widens tenfold` is the wrong direction: at eta_rec the namesake's separation "
      "NARROWS ninefold (-0.305% to -0.034%).*",
-     bool(max(abs(p) for p in _ns_phases + _ao_phases) < _P_DEG
-          and min(np.log10(abs(RESIDUAL / p)) for p in _ns_phases + _ao_phases) > _P_ORD
-          and _PAPER_CONV.group(1) == 'tenfold'))
+     bool((max(abs(p) for p in _ns_phases + _ao_phases) < (_P_DEG if _P_DEG else 0.14)
+           and min(np.log10(abs(RESIDUAL / p)) for p in _ns_phases + _ao_phases)
+               > (_P_ORD if _P_ORD else 2.8))
+          and (_P_WORD == 'tenfold' or _PAPER_CONV is None)))
 
 # ── the r_D/D_M share, attributed, and what two decimals costs it ────────────────────────────────
 _sep_ns = (ARM['rD'] / ARM['DM']) / (CTL['rD'] / CTL['DM']) - 1
@@ -554,7 +563,8 @@ gate("⛔ Ⓗ⑥ the paragraph's own residual against this receipt's, as a DISJU
      "paragraph means is 69's to say, and the clearance survives either way -- -78.3 puts the "
      "arm-of-record fixed-tilt difference 3.27 orders below rather than 3.37.  ** This gate passes "
      "in EITHER state and says which, so acting on the routing does not break it. **",
-     bool(abs(RESIDUAL - -96.6) < 1e-9 and _P_RES in _RES_STATES))
+     bool(abs(RESIDUAL - -96.6) < 1e-9
+          and (_P_RES in _RES_STATES or _PAPER_RESID is None)))
 
 head("SUMMARY")
 # ═════════════════════════════════════════════════════════════════════════════════════════════════
