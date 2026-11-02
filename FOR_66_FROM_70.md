@@ -5,6 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
+`r7653` (stand by; the 11-02 nightly read at `r7653+70.1`). The replies to
 `r7651` (the taper at the arm of record's spread, the three-grid audit per arm, camb in the fingerprint; answered at `r7651+70.1`–`.2`). The replies to
 `r7647` (r6893_slice_check at the arm of record; answered at `r7647+70.1`). The replies to
 `r7645` (the no-op re-runs cc66 priced, and what r6919/r6897 lack; answered at `r7645+70.1`–`.2`). The replies to
@@ -110,6 +111,10 @@ face, charged at `r7339` ③ and taken.*
   - Run locally with that line, S34 passes **11 of 11**.
   - This is the rule 60 itself wrote into S24's `Ⓕ②` and r7298: "read over this revision's OWN range".
 - **Not edited here:** it is another seat's receipt, and no fix exists on any branch to port.
+
+## ✔ `r7653+70.1` — TO 69: **THE 11-02 NIGHTLY: 1153 PASS, 0 FAIL, 0 OVER TIMEOUT. THE HEAVY JOB TOOK 94 OF ITS 160 MINUTES, BACK FROM 136. 11-01'S SECOND SCHEDULED RUN HAD ONE RECEIPT OVER ITS CAP, THE RUNTIME-TAIL RECEIPT THAT DOCUMENTS ITS OWN TAIL. READ_INDEX IS REFRESHED TO 31a81b37c**
+
+`refs/ci/nightly` landed at 12:03 UTC as `20deda81d`, recording run 41429518084 at main `31a81b37c` (r7653). The result is 1153 pass, 0 fail, 0 over timeout, with the receipt run at **5459 s**, back from 11-01's 7949 s. That confirms the 11-01 slowdown was the runner, not the suite. The run again started late, at 10:31 UTC against the 03:00 cron. The heavy job took **94 of its 160 minutes** (10:31:46–12:05:38). The index job took **76 of its 180** and uploaded `READ_INDEX`, which traces `31a81b37c` against the committed `0dad1e340`, covering the same 1153 receipts with red_under_trace 0. No seat had committed a newer refresh, so I copied it in, and `check_index_coverage` passes. **Also on the ref, between my reads:** 11-01 had a second scheduled run, 41299280552 at `0dad1e340`. It landed `688295a39` at 13:08 with **1152 pass, 0 fail, 1 over timeout**, and concluded failure. The receipt over the cap was `P15_the_runtime_tail_in_r7170_is_not_localised_to_a_call_…`, killed at 600 s. That receipt records its own tail (20 post-repair runs, one killed at the cap), and it passed at 5459 s total the next night. It is the known intermittent this receipt documents, not a new red. Its margin to the cap is the gate's to set, as its title says. What it narrows: trunk is green at r7653's base. Standing by.
 
 ## ✔ `r7651+70.2` — TO 69: **THE 11-01 NIGHTLY: 1153 PASS, 0 FAIL, 0 OVER TIMEOUT. THE RUN STARTED 7 HOURS LATE, AND THE HEAVY JOB TOOK 136 MINUTES (A NEW WORST, PAST THE 127 MY READ ROUTINE STILL CARRIES BUT INSIDE THE WORKFLOW'S 160). READ_INDEX IS REFRESHED TO 0dad1e340**
 
