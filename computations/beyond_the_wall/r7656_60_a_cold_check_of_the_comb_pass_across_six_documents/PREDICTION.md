@@ -298,3 +298,61 @@ known — and neither by re-reading the output.
 
 **Running total of this seat's own rule conditions corrected by measurement rather than by reading,
 across `r7648`, `r7650`, `r7652`, `r7654` and `r7656`: twenty-three.**
+
+---
+
+# `r7656+60.6` — ㉑ FIRED AT **25.3%**, SO ⑲ IS WITHHELD BY ITS OWN REGISTERED CONSEQUENCE: THE HEADLINE IS **85**, NOT 94
+
+**㉑ FAILED.** The correctly-rounded matcher's decoy rate is **25.3%** — 24 of the same 95 decoys —
+against the **20%** registered at `+60.3` and still not moved. `+60.5` wrote the consequence down
+before the number existed, in these words: *"or ⑲ is reported as not measurable and only ⑱ is
+reported."*
+
+⇒ **So ⑲ is withheld.** The nine figures it would have carried are **not reproduced and not absent**:
+they are **UNESTABLISHED**, for want of an instrument whose false-positive rate is low enough to let
+them be read. **The headline of this revision is ⑱: 85 of 95**, and the nine are reported beside it on
+their own line, never folded in.
+
+**㉒ held.** ⑳ came back with **exactly 1** member against a registered band of 1–3, so the exception
+is an incident and not a class. Its one member is `1.4011` at P15 l.2792, whose nearest neighbour in
+any of the 99 banked outputs is `1.401` at **2.00 half-units**, and `1.40097` — the next nearest —
+renders to `1.4010`.
+
+⌗ **Three readings of one data set, each with its own measured reach:** the gate's window 41.1%,
+verbatim 10.5%, rounding 25.3%. *The ORDER of those three is the one their definitions predict, which
+is the only thing about this instrument that has behaved as registered.*
+
+## WHAT IS REGISTERED NOW, before it is measured
+
+**㉓ ⑱'S OWN DECOY RATE, because ⑱ is now the headline and an unmeasured headline is the thing this
+revision has already been wrong about twice.** The same 95 decoys, matched by SAME-FLOAT. Threshold
+**20%**, the one from `+60.3`. *If it fires, the headline falls back to VERBATIM's 81 and `+60.4`'s
+reading is the whole of what this revision can say.*
+
+**㉔ THE DIAGNOSIS, AS A HYPOTHESIS WITH ITS OWN TEST.** A decoy is re-rendered at its original digit
+count, so for a two-digit figure the rounding matcher accepts anything in a band a whole unit wide in
+the last digit — and the corpus is dense in two-digit numbers. **Hypothesis: the rounding matcher's
+reach is a function of the figure's PRECISION, not of the corpus.** Test: the decoy rate **stratified
+by significant digits**, with the strata fixed here and now — **≤2, exactly 3, ≥4** — and the
+threshold still **20%**. A stratum that comes in under it makes ⑲ measurable *for figures of that
+precision and no others*.
+
+**㉕ AND WHATEVER ㉔ RETURNS, THE 85 IS THE HEADLINE AND THE NINE ARE NEVER FOLDED INTO IT.** A
+stratified pass can only add a separate, labelled line saying which of the nine are **conditionally**
+established and at what measured rate. *The threshold is not moving, the strata are not being chosen
+after the fact, and a number already reported as unestablished does not become established because a
+narrower instrument was built for it afterwards.*
+
+**㉖ THE REACHABLE NEGATIVE: that NO stratum comes in under 20%.** It is reachable — the decoys that
+hit include `2.337` and `2.265`, which carry four significant digits apiece — and if it is reached,
+⑲ is unmeasurable full stop, the nine stay unestablished, and this revision says that figure-matching
+against banked stdout cannot settle them, naming what would: each receipt's own banked array, compared
+field by field, which is `r7650`'s instrument and not this one's.
+
+⌗ **The lesson, stated against myself:** *I built the window, then the verbatim matcher, then the
+rounding matcher, and each time the thing I had to measure was not the corpus but the instrument I
+had just reached for.* **The only reason any of the three is reportable is that the decoy control was
+written before the first of them produced a number.**
+
+**Running total of this seat's own rule conditions corrected by measurement rather than by reading,
+across `r7648`, `r7650`, `r7652`, `r7654` and `r7656`: twenty-four.**

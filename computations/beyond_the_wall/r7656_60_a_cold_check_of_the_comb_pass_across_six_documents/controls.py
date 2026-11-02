@@ -100,6 +100,32 @@ def hits_verbatim(fig):
     return [n for n in RAN if fig in OUTFIGS[n]]
 
 
+def hits_rounded(fig):
+    """⑱⑲ which receipts that RAN reproduce this figure under `+60.5`'s middle rungs: a string that
+    parses to the SAME FLOAT, or a longer value that RENDERS to the figure at its own digit count.
+
+    ⌗ This is looser than verbatim and tighter than the gate's window, so it needs its own decoy
+    rate -- which is ⑵, under the SAME 20% registered at `+60.3`.
+    """
+    f = fig.strip()
+    dec = len(f.split('.')[1]) if '.' in f else 0
+    try:
+        want = float(f)
+    except ValueError:
+        return []
+    out = []
+    for n in RAN:
+        for t in OUTFIGS[n]:
+            try:
+                v = float(t)
+            except ValueError:
+                continue
+            if v == want or f"{v:.{dec}f}" == f:
+                out.append(n)
+                break
+    return out
+
+
 def decoy(fig):
     """move it WELL outside its own tolerance, keeping magnitude and digit count.
 
@@ -189,6 +215,30 @@ if vnhit:
 print(f"      ⌗ a decoy that is ITSELF a figure the corpus carries elsewhere is this instrument's "
       f"irreducible floor: a shift of 40 allowances lands on a round number often enough.")
 
+# ---------------------------------------------------------------- ⑱⑲⑵ the rounding matcher
+print(f"\nⓔ  ⑱⑲ THE THREE-WAY VERDICT'S MIDDLE RUNGS -- same float, or renders to the printed digit")
+rd_rows = [(f, hits_rounded(f)) for f in FIGS]
+n_rd = sum(1 for _f, h in rd_rows if h)
+print(f"      of {len(FIGS)} figure(s): {n_rd} reproduce under ⑱ or ⑲")
+rmult = [len(h) for _f, h in rd_rows if h]
+if rmult:
+    print(f"      multiplicity among them: median {statistics.median(rmult):.0f}   "
+          f"mean {statistics.mean(rmult):.1f}   max {max(rmult)}")
+
+print(f"\nⓕ  ⑵ THE ROUNDING MATCHER'S OWN DECOY RATE, under the SAME 20% registered at +60.3")
+rdec = [(f, d, len(hits_rounded(d))) for f, d, _h in dec_rows]
+rnhit = sum(1 for _f, _d, h in rdec if h > 0)
+rrate = rnhit / len(rdec) if rdec else 0.0
+print(f"      {len(rdec)} decoy(s), the SAME ones; {rnhit} of them also reproduce under ⑱ or ⑲ "
+      f"-> false-positive rate {rrate*100:.1f}%")
+print(f"      ⌗ compare: tolerance window {rate*100:.1f}%, verbatim {vrate*100:.1f}%, this "
+      f"{rrate*100:.1f}%.  A reading is only as strong as the rate at which it accepts a figure the "
+      f"corpus should not carry.")
+if rnhit:
+    print(f"\n      {'real':>12} {'decoy':>12} {'receipts hit':>13}")
+    for f, d, h in [r for r in rdec if r[2] > 0][:14]:
+        print(f"      {f:>12} {d:>12} {h:>13}")
+
 print(f"""
   ⌗ ⑬ THE RATE IS PUBLISHED EITHER WAY, with the decoys themselves, because a cold check that
   reported its hit rate without its false-positive rate would be asking to be believed rather than
@@ -214,6 +264,14 @@ check(f"⑯ THE VERBATIM MATCHER'S OWN DECOY RATE is at or below the SAME 20% re
 check(f"⑮ and the tightening DOES WORK rather than relabel the same set: {len(tol_only)} "
       f"figure(s) that 'reproduced' under the window do NOT reproduce verbatim, and they are reported "
       f"as WITHIN THE PRINTED DIGIT instead of in the headline", len(tol_only) >= 1)
+check(f"⑵ THE ROUNDING MATCHER'S OWN DECOY RATE is at or below the SAME 20% registered at +60.3 "
+      f"({rrate*100:.1f}%), so ⑱ and ⑲ are reported as reproductions rather than withheld; it sits "
+      f"between verbatim's {vrate*100:.1f}% and the window's {rate*100:.1f}%, which is where a "
+      f"reading looser than one and tighter than the other belongs", rrate <= 0.20)
+check(f"⑵ and it is STRICTLY LOOSER than verbatim and STRICTLY TIGHTER than the window "
+      f"({vrate*100:.1f}% <= {rrate*100:.1f}% < {rate*100:.1f}%), so the three readings are ordered "
+      f"as their definitions are and none of them is secretly another",
+      vrate <= rrate < rate)
 check(f"⑭ and the median figure is produced by a SMALL number of the {len(RAN)} receipts "
       f"({med:.0f}), so a reproduction locates a figure rather than finding it everywhere",
       med <= 10)
@@ -238,6 +296,8 @@ for f in _fail:
 json.dump(dict(decoys=nd, decoy_hits=nhit, decoy_rate=round(rate, 4),
                verbatim_decoys=len(vdec), verbatim_decoy_hits=vnhit,
                verbatim_decoy_rate=round(vrate, 4),
+               rounded_reproduce=n_rd, rounded_decoy_hits=rnhit,
+               rounded_decoy_rate=round(rrate, 4),
                verbatim=n_vb, within_printed_digit=len(tol_only), neither=n_none,
                tolerance_only_figures=sorted(set(tol_only)),
                median_multiplicity=med, mean_multiplicity=round(statistics.mean(per), 2),

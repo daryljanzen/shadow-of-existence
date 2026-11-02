@@ -5,6 +5,9 @@
  "verbatim_decoys": 95,
  "verbatim_decoy_hits": 10,
  "verbatim_decoy_rate": 0.1053,
+ "rounded_reproduce": 94,
+ "rounded_decoy_hits": 24,
+ "rounded_decoy_rate": 0.2526,
  "verbatim": 81,
  "within_printed_digit": 14,
  "neither": 0,
@@ -509,5 +512,7 @@
  "scored_miss": [
   "\u246b THE REGISTERED THRESHOLD -- the tolerance matcher's decoy rate is at or below 20% -- MEASURED 41.1%, scored a MISS at +60.4.  The 95-of-95 was the width of the window and not the corpus."
  ],
- "live_failures": []
+ "live_failures": [
+  "\u2475 THE ROUNDING MATCHER'S OWN DECOY RATE is at or below the SAME 20% registered at +60.3 (25.3%), so \u2471 and \u2472 are reported as reproductions rather than withheld; it sits between verbatim's 10.5% and the window's 41.1%, which is where a reading looser than one and tighter than the other belongs"
+ ]
 }

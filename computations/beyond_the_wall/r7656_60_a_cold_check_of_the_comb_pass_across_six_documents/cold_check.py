@@ -16,13 +16,25 @@ was judged, moved every figure FORTY TIMES its own allowance and found that 41.1
 
 ⌗ *A hit rate reported without its false-positive rate is asking to be believed rather than checked.*
 
-So `r7656+60.4` registered VERBATIM FIRST, and these are the verdicts it fixed:
-  VERBATIM        -- some candidate that RAN prints THAT STRING, both sides through the gate's own
+So `r7656+60.4` registered VERBATIM FIRST -- and the verbatim count came back too TIGHT at the other
+end, because `186.1350` is `186.135` and `3.338738` is `3.3387380`.  `+60.5` therefore registered the
+THREE-WAY verdict below, before its counts were measured, and the two ends of it are now named
+separately so that neither the window nor the rendering can be mistaken for the corpus:
+
+  VERBATIM        -- a candidate that RAN prints THAT STRING, both sides through the gate's own
                      extractor.  No window, no rounding.  Decoy rate 10.5% (⑯), below the 20%
                      registered at `+60.3` and NOT moved once a number had been seen.
-  PRINTED-DIGIT   -- no candidate prints the string, but one prints a number inside the gate's
-                     allowance.  A WEAKER finding, reported as one and kept out of the headline.
-  ABSENT          -- every candidate RAN and none prints it, verbatim or within the digit
+  EXACT-VALUE     -- ⑱ no candidate prints the string, but one prints a string that parses to the
+                     SAME FLOAT.  A reproduction, full stop: a trailing zero is a rendering of a
+                     number and not a different number.
+  ROUNDED         -- ⑲ one prints a longer number that ROUNDS to the paper's figure at the paper's
+                     own digit count.  Also a reproduction -- it is what printing fewer digits means,
+                     and it is the figure-pin gate's own third remedy.
+  GATE-ONLY       -- ⑳ inside the gate's allowance and does NOT round to the printed figure.  THE
+                     ONLY ONE OF THE FOUR THAT IS A WEAKER FINDING, and the one place a figure the
+                     corpus does not carry at the digit it prints would hide.  Named, with the
+                     nearest value any receipt prints and its distance in half-units.
+  ABSENT          -- every candidate RAN and none prints it under any of the four readings
   UNRUN           -- at least one candidate did not finish, so the figure is not judged
 ⌗ *A figure is never ABSENT because a receipt could not be run.*
 
@@ -86,8 +98,46 @@ def produces_verbatim(name, fig):
     return fig in OUTFIGS[name]
 
 
+def produces_exact(name, fig):
+    """⑱ does some string in this receipt's output parse to the SAME FLOAT as the paper's figure?
+
+    ⌗ `186.1350` is `186.135`.  Verbatim matching demotes a figure that is reproduced to the last
+    bit, so the trailing-zero case is separated from the rounding case and from the gate's window.
+    """
+    try:
+        want = float(fig)
+    except ValueError:
+        return False
+    for t in OUTFIGS[name]:
+        try:
+            if float(t) == want:
+                return True
+        except ValueError:
+            continue
+    return False
+
+
+def produces_rounded(name, fig):
+    """⑲ does some string round to the paper's figure AT THE PAPER'S OWN DIGIT COUNT?
+
+    ⌗ This is the figure-pin gate's third remedy read as a measurement: a paper that prints fewer
+    digits than its receipt computes is reproduced when the receipt's value RENDERS to what the paper
+    printed.  `811.59` -> `811.6` reproduces; `1.40097` -> `1.4010` does not reproduce `1.4011`.
+    Rendering is Python's `format`, which rounds half to even on the decimal repr.
+    """
+    f = fig.strip()
+    dec = len(f.split('.')[1]) if '.' in f else 0
+    for t in OUTFIGS[name]:
+        try:
+            if f"{float(t):.{dec}f}" == f:
+                return True
+        except ValueError:
+            continue
+    return False
+
+
 def produces(name, fig):
-    """the TOLERANCE reading, kept only to separate PRINTED-DIGIT from ABSENT"""
+    """the TOLERANCE reading, kept only to separate GATE-ONLY from ABSENT"""
     if fig in OUTFIGS[name]:
         return True
     try:
@@ -101,6 +151,28 @@ def produces(name, fig):
         except ValueError:
             continue
     return False
+
+
+def nearest(fig, *names):
+    """the closest value any of these receipts prints, and its distance in HALF-UNITS of fig's last
+    printed digit -- so ⑳'s exception is quantified and not merely labelled"""
+    f = fig.strip()
+    dec = len(f.split('.')[1]) if '.' in f else 0
+    half = 0.5 * 10 ** (-dec)
+    try:
+        want = float(f)
+    except ValueError:
+        return (float('nan'), '?', names[0] if names else '')
+    best = (float('inf'), '?', '')
+    for n in names:
+        for t in OUTFIGS[n]:
+            try:
+                d = abs(float(t) - want) / half
+            except ValueError:
+                continue
+            if d < best[0]:
+                best = (d, t, n)
+    return best
 
 
 print(__doc__)
@@ -126,27 +198,37 @@ check("ⓐ④ and no named line is UNRESOLVED", not any(s.get('unresolved') for 
 
 # ---------------------------------------------------------------- the verdicts
 print("\nⓑ  EVERY FIGURE, EVERY SITE -- named line, resolved line, verdict")
-rows, absent, elsewhere, digit = [], [], [], []
+rows, absent, elsewhere, gate_only, exact, rounded = [], [], [], [], [], []
+LADDER = [('VERBATIM', produces_verbatim), ('EXACT-VALUE', produces_exact),
+          ('ROUNDED', produces_rounded), ('GATE-ONLY', produces)]
 for s in SITES:
     cites = [n for n in s['cites'] if n in TEXT]
     for f in s['figures']:
-        good = [n for n in ran if produces_verbatim(n, f)]
-        if good:
-            own = [n for n in good if n in cites]
-            rows.append((s, f, 'VERBATIM', (own or good)[0]))
-            if cites and not own:
-                elsewhere.append((s['paper'], s['line'], f, good[0]))
+        # ⑱⑲⑳ the ladder is tried STRONGEST FIRST, so each figure gets the strongest true reading
+        hit = None
+        for label, fn in LADDER:
+            good = [n for n in ran if fn(n, f)]
+            if good:
+                hit = (label, good)
+                break
+        if hit is None:
+            v = 'UNRUN' if unrun else 'ABSENT'
+            rows.append((s, f, v, None))
+            if v == 'ABSENT':
+                absent.append((s['paper'], s['line'], f))
             continue
-        # ⑮ no receipt prints the string.  Is there one inside the gate's allowance?
-        near = [n for n in ran if produces(n, f)]
-        if near:
-            rows.append((s, f, 'PRINTED-DIGIT', near[0]))
-            digit.append((s['paper'], s['line'], f, near[0]))
-            continue
-        v = 'UNRUN' if unrun else 'ABSENT'
-        rows.append((s, f, v, None))
-        if v == 'ABSENT':
-            absent.append((s['paper'], s['line'], f))
+        label, good = hit
+        own = [n for n in good if n in cites]
+        rows.append((s, f, label, (own or good)[0]))
+        if label == 'VERBATIM' and cites and not own:
+            elsewhere.append((s['paper'], s['line'], f, good[0]))
+        if label == 'EXACT-VALUE':
+            exact.append((s['paper'], s['line'], f, nearest(f, good[0])[1], good[0]))
+        elif label == 'ROUNDED':
+            rounded.append((s['paper'], s['line'], f, nearest(f, good[0])[1], good[0]))
+        elif label == 'GATE-ONLY':
+            d, t, n = nearest(f, *good)
+            gate_only.append((s['paper'], s['line'], f, t, d, n))
 
 by = {}
 for s, f, v, _n in rows:
@@ -161,19 +243,30 @@ for (paper, named, res) in sorted(by, key=lambda k: (k[0], k[1])):
     print(f"      {paper:<10} {named:>6} {res:>6} {len(vs):>5}  "
           + ', '.join(f'{k} {n}' for k, n in sorted(tally.items())) + mark)
 
-nrep = sum(1 for _s, _f, v, _n in rows if v == 'VERBATIM')
-ndig = sum(1 for _s, _f, v, _n in rows if v == 'PRINTED-DIGIT')
-nabs = sum(1 for _s, _f, v, _n in rows if v == 'ABSENT')
-nunr = sum(1 for _s, _f, v, _n in rows if v == 'UNRUN')
-print(f"\n      VERBATIM {nrep}   PRINTED-DIGIT {ndig}   ABSENT {nabs}   UNRUN {nunr}   of {len(rows)}")
-print(f"      ⌗ the headline of this revision is the VERBATIM count and nothing else.  The "
-      f"PRINTED-DIGIT rows below are a WEAKER finding -- no receipt in the candidate set prints the "
-      f"paper's figure; one prints a number the figure-pin gate would accept for it.")
-if digit:
-    print(f"\n      ⚠ PRINTED-DIGIT, {len(digit)} figure(s) -- right to the gate's allowance, not to "
-          f"the digit the paper prints:")
-    for paper, line, f, n in digit:
-        print(f"         {paper} l.{line}: {f} <- {n[:62]}")
+N = {k: sum(1 for _s, _f, v, _n in rows if v == k) for k in
+     ('VERBATIM', 'EXACT-VALUE', 'ROUNDED', 'GATE-ONLY', 'ABSENT', 'UNRUN')}
+nrep, nabs, nunr = N['VERBATIM'], N['ABSENT'], N['UNRUN']
+nrepro = N['VERBATIM'] + N['EXACT-VALUE'] + N['ROUNDED']
+print(f"\n      VERBATIM {N['VERBATIM']}   EXACT-VALUE {N['EXACT-VALUE']}   ROUNDED {N['ROUNDED']}"
+      f"   GATE-ONLY {N['GATE-ONLY']}   ABSENT {nabs}   UNRUN {nunr}   of {len(rows)}")
+print(f"      ⌗ ⑱⑲ THE FIRST THREE ARE REPRODUCTIONS: {nrepro} of {len(rows)}.  The tolerance "
+      f"reading of this same data was {nrepro + N['GATE-ONLY']} at a 41.1% decoy rate; the verbatim "
+      f"reading was {N['VERBATIM']} and demoted {N['EXACT-VALUE']} figure(s) over a trailing zero.")
+if exact:
+    print(f"\n      ⑱ EXACT-VALUE, {len(exact)} figure(s) -- the same number, rendered with a "
+          f"different number of digits:")
+    for paper, line, f, t, n in exact:
+        print(f"         {paper} l.{line}: {f} == {t}   {n[:52]}")
+if rounded:
+    print(f"\n      ⑲ ROUNDED, {len(rounded)} figure(s) -- the receipt's longer value renders to the "
+          f"paper's figure at the paper's own digit count:")
+    for paper, line, f, t, n in rounded:
+        print(f"         {paper} l.{line}: {t} -> {f}   {n[:52]}")
+if gate_only:
+    print(f"\n      ⛔ ⑳ GATE-ONLY, {len(gate_only)} figure(s) -- INSIDE the figure-pin gate's "
+          f"allowance and NOT the digit the paper prints.  This is the headline's exception:")
+    for paper, line, f, t, d, n in gate_only:
+        print(f"         {paper} l.{line}: paper {f}   nearest {t}   {d:.2f} half-units   {n[:46]}")
 if absent:
     print("\n      ⛔ ABSENT, each looked for in every candidate that ran:")
     for paper, line, f in absent:
@@ -182,9 +275,19 @@ check(f"ⓑ① every figure is judged -- no figure is left without a verdict", l
       sum(len(s['figures']) for s in SITES))
 check(f"ⓑ② and none is ABSENT for want of a run: UNRUN is {nunr}, and a figure is ABSENT only when "
       f"every candidate ran", nunr == 0 or bool(unrun))
-check(f"ⓑ③ ⑮ VERBATIM FIRST is what is reported: the headline count ({nrep}) is strictly below "
-      f"the tolerance reading ({nrep + ndig}), so the tightening registered at +60.4 is not a "
-      f"relabelling of the same set", nrep < nrep + ndig)
+check(f"ⓑ③ ⑮ the tightening of +60.4 did work: the VERBATIM count ({N['VERBATIM']}) is strictly "
+      f"below the tolerance reading ({nrepro + N['GATE-ONLY']}), so it is not a relabelling",
+      N['VERBATIM'] < nrepro + N['GATE-ONLY'])
+check(f"ⓑ④ ⑱ AND SO DID THE LOOSENING OF +60.5 AT THE OTHER END: {N['EXACT-VALUE']} figure(s) "
+      f"are reproduced to the last bit and were demoted by verbatim over a rendering, so the "
+      f"three-way verdict is not a relabelling of the verbatim one either", N['EXACT-VALUE'] >= 1)
+check(f"ⓑ⑤ ⑳ THE EXCEPTION CLASS IS NON-EMPTY AND SMALL -- registered at +60.5 as between 1 and "
+      f"3 members, MEASURED {N['GATE-ONLY']}.  More than 3 would make this a class of figures rather "
+      f"than an incident, and fewer than 1 would mean the refinement found nothing",
+      1 <= N['GATE-ONLY'] <= 3)
+check(f"ⓑ⑥ and every GATE-ONLY figure is named with the nearest value any receipt prints and its "
+      f"distance in half-units, so the exception is quantified and not merely labelled",
+      all(t != '?' for _p, _l, _f, t, _d, _n in gate_only))
 
 print(f"\nⓒ  ARM ⑧ -- RESOLVED ELSEWHERE: correct in value, unaddressed in citation")
 print(f"      {len(elsewhere)} figure(s) reproduce in a receipt their own document does not cite")
@@ -199,8 +302,8 @@ print("\n" + "=" * 112)
 print(f"  {len(_fail)} failure(s)")
 for f in _fail:
     print("   [FAIL] " + f)
-json.dump(dict(verbatim=nrep, printed_digit=ndig, absent=nabs, unrun=nunr, total=len(rows),
-               absent_rows=absent, printed_digit_rows=digit, elsewhere=elsewhere[:200],
-               failures=_fail),
+json.dump(dict(counts=N, reproductions=nrepro, total=len(rows), absent_rows=absent,
+               exact_value_rows=exact, rounded_rows=rounded, gate_only_rows=gate_only,
+               elsewhere=elsewhere[:200], failures=_fail),
           open(os.path.join(HERE, 'verdicts.json'), 'w'), indent=1)
 sys.exit(1 if len(_fail) > 0 else 0)
