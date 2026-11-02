@@ -1,7 +1,8 @@
 r"""
 RECEIPT -- P15: ** `r7223` ORDERED IT: `evaluate the kernel's own phase contribution on EACH ARM'S OWN
 r_s, D_M and r_D, and state the difference between the two arms against the measured residual's
-size`.  *** THE DIFFERENCE IS `$-0.0141^{\circ}$` AGAINST A RESIDUAL OF `$-96.6^{\circ}$` -- NEARLY
+size`.  *** THE DIFFERENCE IS `$-0.0141^{\circ}$` AGAINST A RESIDUAL OF `$-78.3^{\circ}$` (r7657;
+`$-96.6$` before it) -- NEARLY
 FOUR ORDERS BELOW -- SO THE KERNEL IS NOT A CARRIER AND THE PROJECTION IS CLEARED. *** **
 
   ⓵ ** THE KERNEL'S PHASE IS A FUNCTION OF EXACTLY TWO DIMENSIONLESS NUMBERS, AND THE ARMS SHARE ONE
@@ -41,14 +42,16 @@ FOUR ORDERS BELOW -- SO THE KERNEL IS NOT A CARRIER AND THE PROJECTION IS CLEARE
 
   ⇒ ⛭ ** SO THE ORDER'S NEGATIVE BRANCH, IN ITS OWN WORDS: `the kernel is not a carrier, the candidate
   list stays at the driving, the loading and the clock, and the projection is cleared`. **  *The
-  difference is `$1.5\times10^{-4}$` of the residual.  No threshold the row could reasonably set is
+  difference is `$1.8\times10^{-4}$` of the residual (r7657's `$-78.3$`; `$1.5\times10^{-4}$`
+  against the `$-96.6$` this file used before it).  No threshold the row could reasonably set is
   anywhere near it.*
 
   ⌈ ⛭⛭ ** AND THE PRE-REGISTERED THIRD OUTCOME HOLDS ALONGSIDE IT, WHICH IS A DIFFERENT STATEMENT
-  FROM `cleared`. **  *The kernel's ABSOLUTE running phase is `$-15.45^{\circ}$`, which is `$16.0$`
-  per cent of the residual's `$-96.6^{\circ}$` -- a sixth -- and it is present in ANY spectrum this
+  FROM `cleared`. **  *The kernel's ABSOLUTE running phase is `$-15.45^{\circ}$`, which is `$19.7$`
+  per cent of the residual's `$-78.3^{\circ}$` -- A FIFTH, and a sixth of the `$-96.6$` this file
+  measured against before r7657 re-pointed it -- and it is present in ANY spectrum this
   instrument projects, the control's included, agreeing between the arms to `$0.09$` per cent.*
-  ⇒ **So `a running phase at correct spacing` is not a phase-clean observable: a sixth of the scale
+  ⇒ **So `a running phase at correct spacing` is not a phase-clean observable: a fifth of the scale
   the row reads its candidates against is manufactured by the projection, and it cancels only because
   both arms carry it.**  *That is why `cleared` is the answer to the order and not the whole of what
   the evaluation found.*
@@ -98,7 +101,17 @@ for _p in (GO, MINE):
 
 NS = 0.96                     # the corpus default the instrument carries
 LLO, LHI = 104.0, 1886.0      # the range the residual is quoted across
-RESIDUAL = -96.6              # degrees of a comb period, sec:refit-bound
+# ⛭⛭⛭ r7657 (69's ask, verbatim): "** Please re-point the closing receipt's gates from -96.6 to it **"
+#   -- `it` being -78.3, the ARM OF RECORD's own drift at l.2142, which r7655 routed as a discrepancy
+#   between this file and the paragraph it closes.  ** The paragraph and this receipt now measure
+#   against the same residual, which is what Ⓗ⑥ asked for and no longer has to report. **
+#   ⌗ *Every `orders below` in this file moves with it, and so does the FLOOR FRACTION: 15.4 against
+#     78.3 is a FIFTH where 15.4 against 96.6 was a sixth.  69 landed `a fifth` on that reading, so
+#     Ⓕ moves with the constant rather than being left to contradict the paper.*
+#   ⌷ *THE FILENAME STILL SAYS `a_sixth_of_the_scale_is_common_mode`, and it is now the namesake's
+#     fraction.  A rename reaches `receipts/INDEX.md`, the appendices and every `\rcpt` that cites
+#     this file across six documents, so it is ROUTED to 69 and not done here.*
+RESIDUAL = -78.3              # degrees of a comb period, l.2142 (r7657); was -96.6 before r7657
 DEG = 180.0 / np.pi           # radians of cos(2 k r_s) -> degrees of a comb period (2 pi rad = 360)
 
 
@@ -337,44 +350,6 @@ gate("Ⓔ⑥ ⛔ and the pre-registration's absolute figure was wrong twice in a
 gate("Ⓔ⑦ the two-number decomposition held, so refuting outcome 4 did not fire",
      bool(abs(_mv['r_s/D_M alone']) < 0.02 * abs(DIFF)))
 
-# ═════════════════════════════════════════════════════════════════════════════════════════════════
-head("Ⓕ  THE PRE-REGISTERED THIRD OUTCOME, WHICH HOLDS ALONGSIDE `cleared` AND IS NOT THE SAME THING")
-# ═════════════════════════════════════════════════════════════════════════════════════════════════
-_frac = abs(wA / RESIDUAL)
-print(f"    the kernel's ABSOLUTE running phase, arm: {wA:+.4f} deg = {100*_frac:.1f}% of the residual")
-print(f"    and the control's:                        {wC:+.4f} deg -- the two agree to "
-      f"{100*abs(wA-wC)/abs(wA):.2f}%")
-gate("Ⓕ① the kernel's own running phase is a SIXTH of the residual, not a negligible part of it",
-     bool(0.10 < _frac < 0.25))
-gate("Ⓕ② and it is COMMON MODE: the arms carry it to better than a tenth of a per cent of itself",
-     bool(abs(wA - wC) / abs(wA) < 1e-3))
-gate("Ⓕ③ so `a running phase at correct spacing` carries a projection-manufactured floor, which is "
-     "a different statement from `the kernel is cleared` and was written down in advance",
-     bool('third outcome' in _pt.lower() and 'common-mode floor' in _pt and 0.10 < _frac < 0.25))
-
-# ═════════════════════════════════════════════════════════════════════════════════════════════════
-head("Ⓖ  WHAT THIS DOES NOT SETTLE")
-# ═════════════════════════════════════════════════════════════════════════════════════════════════
-print("    ⌗ the phase evaluated here is the KERNEL's, on a damped comb with the construction's own")
-print("      three lengths.  It is not the full transfer's phase: the driving and the loading are")
-print("      the row's standing candidates and nothing here touches them.")
-print("    ⌗ r_D is read at the visibility peak, which is the figure the runs report; the diffusion")
-print("      length is itself l-dependent and a single value is a choice -- but the ANSWER is a")
-print("      difference of two arms at the same choice, and the sensitivity is gated in Ⓔ⑤.")
-print("    ⌗ the residual's -96.6 degrees is quoted from the paper and not re-measured here.")
-gate("Ⓖ① the r_D convention is declared and its sensitivity measured rather than assumed",
-     bool(len(_sens) == 3 and all(v < 0 for _, v in _sens)))
-gate("Ⓖ② and the answer is a DIFFERENCE at a common convention, so the convention cancels from it "
-     "to first order -- which is checked by re-running the difference at a shifted r_D",
-     bool(abs((running_window(dict(rs=ARM['rs'], DM=ARM['DM'], rD=ARM['rD'] * 1.05))
-               - running_window(dict(rs=CTL['rs'], DM=CTL['DM'], rD=CTL['rD'] * 1.05))) - DIFF)
-          < 0.5 * abs(DIFF)))
-
-# ═════════════════════════════════════════════════════════════════════════════════════════════════
-# ═════════════════════════════════════════════════════════════════════════════════════════════════
-head("Ⓗ  ⛭⛭⛭ r7655 (cc66), ORDERED BY 69 ITEM 1 -- THE PARAGRAPH'S WHOLE SET ON THE ARM OF RECORD, "
-     "AND THE OTHER CONVENTION MEASURED RATHER THAN QUOTED")
-# ═════════════════════════════════════════════════════════════════════════════════════════════════
 #
 # ⛔ ** l.2387-2388's OTHER CONVENTION HAD NO CARRIER ANYWHERE IN THE CORPUS. **  The sentence reads
 #   "The two arms' damping lengths respond to the choice of endpoint in opposite directions, so on
@@ -452,15 +427,78 @@ gate("Ⓗ① ** THE LICENCE FOR THE EIGHT-SECOND RUNS, ASSERTED: ** each one's t
      "the same arms and not of a cheaper instrument",
      bool(all(abs(EP[k]['two_dp'] - _PROD[k]) < 5e-3 for k in _EP_LOGS)))
 
+# ═════════════════════════════════════════════════════════════════════════════════════════════════
+head("Ⓕ  THE PRE-REGISTERED THIRD OUTCOME, WHICH HOLDS ALONGSIDE `cleared` AND IS NOT THE SAME THING")
+# ═════════════════════════════════════════════════════════════════════════════════════════════════
+# ⌗ lifted above Ⓕ at r7657: the floor is now read on the arm of record, so Ⓕ needs it too.
+def _run(p, ns):
+    return -(phase_window(LHI, **p, ns=ns) - phase_window(LLO, **p, ns=ns)) * DEG
+
+
+# ⛭⛭⛭ r7657 -- ** THE FLOOR IS RE-POINTED ONTO THE ARM OF RECORD, because that is the figure 69
+#   LANDED: "the kernel's own running phase is `-15.4` degrees, a fifth of the residual, and common
+#   to the two arms to three tenths of a per cent". **  `wA`/`wC` below are the NAMESAKE pair, which
+#   is what this gate measured before r7657 and is kept beside the new pair rather than replaced --
+#   the namesake's agreement is TIGHTER and dropping it would hide that.
+_AOR_FLOOR = _run(dict(rs=AORD['rs'], DM=AORD['DM'],
+                       rD=EP['arm of record']['eps']['visibility peak']), 0.96)
+_CTL_FLOOR = _run(dict(rs=CTL['rs'], DM=CTL['DM'],
+                       rD=EP['control']['eps']['visibility peak']), 0.96)
+_frac = abs(_AOR_FLOOR / RESIDUAL)
+_frac_ns = abs(wA / RESIDUAL)
+print(f"    the kernel's ABSOLUTE running phase, ARM OF RECORD at a common tilt: "
+      f"{_AOR_FLOOR:+.4f} deg = {100*_frac:.1f}% of the residual {RESIDUAL:+.1f}")
+print(f"    its control, same tilt:                   {_CTL_FLOOR:+.4f} deg -- the two agree to "
+      f"{100*abs(_AOR_FLOOR-_CTL_FLOOR)/abs(_AOR_FLOOR):.2f}%")
+print(f"    and the NAMESAKE pair, for comparison:    {wA:+.4f} / {wC:+.4f} deg "
+      f"= {100*_frac_ns:.1f}%, agreeing to {100*abs(wA-wC)/abs(wA):.2f}%")
+gate("⛭⛭⛭ ** Ⓕ① l.2393's FLOOR, ON THE ARM OF RECORD: the kernel's own running phase is -15.4 "
+     "degrees, A FIFTH of the residual -- which is a fifth because r7657 re-pointed the residual "
+     "onto -78.3, and was a sixth against -96.6 on the same phase. **  *The figure moved because "
+     "the DENOMINATOR moved, not the measurement: `-15.41` against `-78.3` is 19.7 per cent and "
+     "against `-96.6` was 16.0.*",
+     bool(abs(_AOR_FLOOR - -15.4) < 0.05 and 0.18 < _frac < 0.22))
+gate("⛭⛭ Ⓕ② and it is COMMON MODE on the arm of record to THREE TENTHS of a per cent, which is "
+     "l.2394's figure and is LOOSER than the namesake pair's tenth: the two arms carry the floor to "
+     "0.27 per cent of itself here against 0.09 per cent there.  *Stated as a weakening rather "
+     "than folded into one tolerance, because the claim is about THIS arm.*",
+     bool(abs(_AOR_FLOOR - _CTL_FLOOR) / abs(_AOR_FLOOR) < 3.5e-3
+          and abs(wA - wC) / abs(wA) < 1e-3))
+gate("Ⓕ③ so `a running phase at correct spacing` carries a projection-manufactured floor, which is "
+     "a different statement from `the kernel is cleared` and was written down in advance",
+     bool('third outcome' in _pt.lower() and 'common-mode floor' in _pt and 0.10 < _frac < 0.25))
+
+# ═════════════════════════════════════════════════════════════════════════════════════════════════
+head("Ⓖ  WHAT THIS DOES NOT SETTLE")
+# ═════════════════════════════════════════════════════════════════════════════════════════════════
+print("    ⌗ the phase evaluated here is the KERNEL's, on a damped comb with the construction's own")
+print("      three lengths.  It is not the full transfer's phase: the driving and the loading are")
+print("      the row's standing candidates and nothing here touches them.")
+print("    ⌗ r_D is read at the visibility peak, which is the figure the runs report; the diffusion")
+print("      length is itself l-dependent and a single value is a choice -- but the ANSWER is a")
+print("      difference of two arms at the same choice, and the sensitivity is gated in Ⓔ⑤.")
+print("    ⌗ the residual is QUOTED from the paper (l.2142 via l.2383) and not re-measured here;")
+print("      r7657 re-pointed it from -96.6 to the arm of record's own drift, and Ⓗ⑥ checks the")
+print("      constant back against the paper rather than trusting the edit.")
+gate("Ⓖ① the r_D convention is declared and its sensitivity measured rather than assumed",
+     bool(len(_sens) == 3 and all(v < 0 for _, v in _sens)))
+gate("Ⓖ② and the answer is a DIFFERENCE at a common convention, so the convention cancels from it "
+     "to first order -- which is checked by re-running the difference at a shifted r_D",
+     bool(abs((running_window(dict(rs=ARM['rs'], DM=ARM['DM'], rD=ARM['rD'] * 1.05))
+               - running_window(dict(rs=CTL['rs'], DM=CTL['DM'], rD=CTL['rD'] * 1.05))) - DIFF)
+          < 0.5 * abs(DIFF)))
+
+# ═════════════════════════════════════════════════════════════════════════════════════════════════
+# ═════════════════════════════════════════════════════════════════════════════════════════════════
+head("Ⓗ  ⛭⛭⛭ r7655 (cc66), ORDERED BY 69 ITEM 1 -- THE PARAGRAPH'S WHOLE SET ON THE ARM OF RECORD, "
+     "AND THE OTHER CONVENTION MEASURED RATHER THAN QUOTED")
+# ═════════════════════════════════════════════════════════════════════════════════════════════════
+
 # ── the third input: the arm of record did not run at the control's tilt ─────────────────────────
 _PK = 'visibility peak'
 _aor = dict(rs=AORD['rs'], DM=AORD['DM'], rD=EP['arm of record']['eps'][_PK])
 _ctl = dict(rs=CTL['rs'], DM=CTL['DM'], rD=EP['control']['eps'][_PK])
 _ns_aor, _ns_ctl = EP['arm of record']['ns'], EP['control']['ns']
-
-
-def _run(p, ns):
-    return -(phase_window(LHI, **p, ns=ns) - phase_window(LLO, **p, ns=ns)) * DEG
 
 
 _d_own = _run(_aor, _ns_aor) - _run(_ctl, _ns_ctl)
@@ -515,10 +553,16 @@ gate("⛭⛭⛭ ** Ⓗ③ l.2386's `only the magnitude is a convention-free stat
      "positive -- is a property of the arm and not of a choice.*",
      bool(min(_ns_phases) < 0 < max(_ns_phases) and all(p > 0 for p in _ao_phases)))
 gate("⛔⛭⛭ ** Ⓗ④ AND NO ENDPOINT CONVENTION REPRODUCES l.2388's `0.14 degrees` OR ITS `no less "
-     "than 2.8 orders`, ON EITHER PAIR.  THIS GATE ASSERTS THE MISS AND ROUTES THE FIGURE. **  "
+     "than 2.8 orders`, ON EITHER PAIR.  THIS GATE ASSERTED THE MISS AND r7657 ACTED ON IT: 69 "
+     "REMOVED BOTH FIGURES AND `widens tenfold` WITH THEM, so the read above now MISSES and "
+     "this gate runs on its FALLBACK LITERALS -- kept as the record of what the sentence said "
+     "and why it went, and the absence arm built at r7655 fired on its first real test one "
+     "turn later. **  "
      "*The largest magnitude any of the five gives on the namesake pair is the late FWHM edge at "
-     "0.080 deg, 3.08 orders below -96.6 -- a factor 1.8 short of 0.14 and half an order clear of "
-     "2.8.  On the arm of record the five run 0.028 to 0.063 deg, 3.2 to 3.5 orders.  ⇒ The "
+     "0.080 deg, 2.99 orders below r7657's -78.3 -- a factor 1.8 short of 0.14, and only a FIFTH of "
+     "an order clear of 2.8 where against -96.6 it was 3.08 and a quarter.  On the arm of record "
+     "the five run 0.028 to 0.063 deg, 3.10 to 3.44 orders."
+     "  ⌗ *The re-point COSTS this gate margin and the gate says so rather than being widened.*  ⇒ The "
      "sentence's mechanism is REAL and measured here -- the two arms' damping lengths do respond to "
      "the endpoint in opposite directions -- but its two figures are not this instrument's on "
      "either arm, and `widens tenfold` is the wrong direction: at eta_rec the namesake's separation "
@@ -549,22 +593,288 @@ gate("⛭⛭⛭ ** Ⓗ⑤ l.2385's `0.27 per cent` IS THE NAMESAKE'S AND IS ITSE
      "in the damping ratio at the per-cent level -- survives on both arms.*",
      bool(abs(_sep_ns_full) > 1.1 * abs(_sep_ns) and _sep_ao_full > 0
           and _sep_ns_full < 0 and 0.0068 < _sep_ao_full < 0.0096))
-# ⛭ ** Ⓗ⑥ IS A DISJUNCTION OVER THE TWO LEGITIMATE STATES OF ONE SENTENCE, because this turn
-#   ROUTES that sentence's figure to 69 for a ruling.  A hard pin on `-78.3` would fail the moment
-#   69 acts on my own routing -- the gate's own warning, "fails on SUCCESS when the sentence said
-#   something was open".  So both states pass and the receipt PRINTS which one it found.
-_RES_STATES = {-78.3: 'the state this turn found -- a different denominator from this receipt',
-               -96.6: "brought onto this receipt's own residual, which is what r7655 routed"}
-print(f"    l.2383's residual reads {_P_RES} -- {_RES_STATES.get(_P_RES, 'NEITHER KNOWN STATE')}")
-gate("⛔ Ⓗ⑥ the paragraph's own residual against this receipt's, as a DISJUNCTION over the two "
-     "states that sentence may legitimately be in: l.2383 compares against `-78.3` where this file "
-     "computes against -96.6, so every `orders below` in that paragraph is quoted against a "
-     "different denominator than the gates here use.  *Routed, not resolved: which residual the "
-     "paragraph means is 69's to say, and the clearance survives either way -- -78.3 puts the "
-     "arm-of-record fixed-tilt difference 3.27 orders below rather than 3.37.  ** This gate passes "
-     "in EITHER state and says which, so acting on the routing does not break it. **",
-     bool(abs(RESIDUAL - -96.6) < 1e-9
-          and (_P_RES in _RES_STATES or _PAPER_RESID is None)))
+# ⛭⛭ ** Ⓗ⑥ WAS A ROUTED DISCREPANCY AND r7657 RESOLVED IT, so this gate no longer reports a
+#   mismatch -- it asserts the AGREEMENT.  At r7655 it read `l.2383 compares against -78.3 where
+#   this file computes against -96.6, so every orders below in that paragraph is quoted against a
+#   different denominator`; 69's ruling was to move the RECEIPT and not the paper, and `RESIDUAL`
+#   at the top of this file is now the paragraph's own figure.
+#   ⌗ *The DISJUNCTION STAYS, for the other reason it was written: the read can legitimately miss
+#     if 69 rewords the sentence, and a crash is not a verdict.  What it no longer does is hold a
+#     SECOND residual open as an acceptable state -- there is one residual now, and this file does
+#     not get to pick which.*
+if _PAPER_RESID is None:
+    _res_state = "** NOT FOUND -- reworded since r7655, so the agreement cannot be checked **"
+elif abs(_P_RES - RESIDUAL) < 1e-9:
+    _res_state = f"{_P_RES}, and RESIDUAL here is {RESIDUAL} -- THE SAME FIGURE, which is r7657's ask"
+else:
+    _res_state = (f"{_P_RES}, against {RESIDUAL} here -- ** THESE NO LONGER AGREE: the paragraph "
+                  f"moved again after r7657 and this file has to follow it **")
+print(f"    l.2383's residual reads {_res_state}")
+gate("⛭⛭ ** Ⓗ⑥ THE PARAGRAPH'S RESIDUAL AND THIS RECEIPT'S NOW AGREE, AND THE AGREEMENT IS "
+     "THE GATE: `RESIDUAL` is checked BACK AGAINST l.2383 rather than left to be typed. **  "
+     "*r7655 routed the discrepancy -- l.2383 compared against -78.3 where this file computed "
+     "against -96.6, so every `orders below` in that paragraph was quoted against a different "
+     "denominator than the gates here used.  r7657 ruled for the PAPER's figure and this file "
+     "moved onto it, which is why Ⓕ① now reads a FIFTH where it read a sixth: the denominator "
+     "moved and the measurement did not.  ** Still a disjunction on the READ and not on the "
+     "residual: a reworded sentence makes the read miss and this gate prints the miss instead of "
+     "crashing, but no second residual passes any more. **",
+     bool(_PAPER_RESID is None or abs(_P_RES - RESIDUAL) < 1e-9))
+
+# =================================================================================================
+head("Ⓘ  ⛭⛭⛭ r7657 ITEM 3 -- EVERY FIGURE THE LANDED PARAGRAPH CARRIES, READ OUT OF THE "
+     "PAPER AND MET BY A COMPUTATION HERE")
+# =================================================================================================
+# ⛭ ** 69's ITEM 3, verbatim: "Pin the kernel paragraph's landed figures where they are computed:
+#   0.8 per cent, twelve thousand, +0.041, +0.028/+0.063, +0.33, the tilt's share, -15.4 and a
+#   fifth."  Each one below is READ OUT OF `corpus/CR_cosmology.tex` and compared with what this
+#   file measures -- the LITERAL TWIN pattern, so a figure drifting in either direction fails. **
+#   ⌗ *Every read tolerates its own miss and PRINTS it: a reworded sentence must not crash a
+#     receipt, and `.group()` on a `None` is not a verdict (the r7655 lesson, four rounds of it).*
+#   ⌗ *The WORD figures are read as words and converted through `_WORDS` rather than being
+#     matched as prose: `nearly nine tenths` is a quantitative claim and is gated as one.*
+_WORDS = {'twelve thousand': 12000.0, 'seventy thousand': 70000.0,
+          'a fifth': 0.2, 'a sixth': 1 / 6, 'nine tenths': 0.9, 'three tenths': 0.3}
+_PAPER = {}
+
+
+def paper(key, pat, *cast):
+    """read ONE of l.2378-2397's figures out of the .tex, tolerate its absence, and print which."""
+    m = re.search(pat, _P15FLAT)
+    _PAPER[key] = tuple(c(g.strip()) for c, g in zip(cast, m.groups())) if m else None
+    print(f"      {key:26s} " + (f"{_PAPER[key]}" if m else
+                                 "** NOT FOUND -- reworded since r7657 **"))
+    return _PAPER[key]
+
+
+print("\n    l.2378-2397's figures, each READ OUT OF corpus/CR_cosmology.tex:")
+paper('r_D/D_M, per cent', r'by about \$([\d.]+)\$ per cent and share the other', float)
+paper('the angle, a part in', r'the acoustic angle, to a part in ([a-z ]+?), because', str)
+paper('the range', r'degrees across \$(\d+)\\le\\ell\\le(\d+)\$', float, float)
+paper('fixed-tilt difference', r'phase difference between the arms is \$\+([\d.]+)\$ degrees',
+      float)
+paper('endpoint range', r'the difference runs from \$\+([\d.]+)\$ to \$\+([\d.]+)\$ degrees',
+      float, float)
+paper('the two tilts', r'run at different ones, \$([\d.]+)\$ and \$([\d.]+)\$', float, float)
+paper('as-run difference', r'as run, the difference is \$\+([\d.]+)\$ degrees, nearly '
+                           r'([a-z ]+?) of it the tilt', float, str)
+paper('the floor, share, spread', r"running phase is \$(-[\d.]+)\$ degrees, a ([a-z]+) of the "
+                                 r"residual, and common to the two arms to ([a-z ]+?) of a per "
+                                 r"cent", float, str, str)
+
+_ANG_AOR = (AORD['rs'] / AORD['DM']) / (CTL['rs'] / CTL['DM']) - 1
+_ANG_NS = (ARM['rs'] / ARM['DM']) / (CTL['rs'] / CTL['DM']) - 1
+_TILT_SHARE = (_d_own - _d_96) / _d_own
+_EP_LO, _EP_HI = min(_ao_phases), max(_ao_phases)
+_ORD_96 = np.log10(abs(RESIDUAL / _d_96))
+_ORD_OWN = np.log10(abs(RESIDUAL / _d_own))
+_ORD_EP = min(np.log10(abs(RESIDUAL / q)) for q in _ao_phases)
+print(f"\n    and what this file measures on the ARM OF RECORD, in the same order:")
+print(f"      r_D/D_M                    {100*_sep_ao_full:+.3f} per cent")
+print(f"      r_s/D_M, the angle         {_ANG_AOR:+.3e}  = one part in {1/abs(_ANG_AOR):,.0f}"
+      f"   (the NAMESAKE's was one part in {1/abs(_ANG_NS):,.0f})")
+print(f"      fixed tilt, both at 0.96   {_d_96:+.5f} deg   {_ORD_96:.2f} orders below"
+      f" {RESIDUAL:+.1f}")
+print(f"      across the five endpoints  {_EP_LO:+.5f} to {_EP_HI:+.5f} deg   {_ORD_EP:.2f} orders"
+      f" at worst")
+print(f"      as run ({_ns_aor:.6f} / {_ns_ctl:.2f})  {_d_own:+.5f} deg   {_ORD_OWN:.2f} orders"
+      f" -- the tilt carries {100*_TILT_SHARE:.1f}% of it")
+print(f"      the floor                  {_AOR_FLOOR:+.4f} deg = {100*_frac:.1f}% of the residual,"
+      f" the two arms to {100*abs(_AOR_FLOOR-_CTL_FLOOR)/abs(_AOR_FLOOR):.2f}%")
+
+_pc = _PAPER['r_D/D_M, per cent']
+gate("⛭ Ⓘ① l.2381's `about 0.8 per cent` in r_D/D_M IS THE ARM OF RECORD's at the precision "
+     "two decimals of r_D support.  *+0.807 at six decimals, and Ⓗ⑤ showed the two-decimal line "
+     "alone would allow [0.67, 0.95] -- which is why `about` is in the sentence and why one more "
+     "digit is not claimed.*",
+     bool((_pc is None or abs(_pc[0] - round(100 * _sep_ao_full, 1)) < 1e-9)
+          and 0.0068 < _sep_ao_full < 0.0096))
+_ang = _PAPER['the angle, a part in']
+gate("⛭⛭ ** Ⓘ② l.2382's `a part in twelve thousand` IS THE ARM OF RECORD's, AND IT IS A "
+     "FIVE-FOLD WEAKENING of what the paragraph claimed before r7649: the namesake pair shared "
+     "the acoustic angle to a part in 63,059 -- the `seventy thousand` that stood there -- and "
+     "THIS arm shares it to a part in 11,927. **  *The arms share the angle LESS WELL on the arm "
+     "of record, the paragraph now says so, and that is the honest direction for the figure to "
+     "have moved.  The claim the sentence is making survives it: a part in twelve thousand is "
+     "8.4e-5, which is still TWO ORDERS tighter than the 8.07e-3 they differ by in the damping "
+     "ratio, so the one ratio is shared by construction and the other is not.*",
+     bool((_ang is None or abs(_WORDS.get(_ang[0], -1) - 12000) < 1e-9)
+          and 11000 < 1 / abs(_ANG_AOR) < 13000 and abs(_ANG_NS) < abs(_ANG_AOR)))
+_rng, _ft = _PAPER['the range'], _PAPER['fixed-tilt difference']
+gate("⛭ Ⓘ③ l.2385's `+0.041 degrees across 104 <= l <= 1886` IS THIS FILE's fixed-tilt "
+     "difference AND THE RANGE IS THIS FILE's TOO, read back out of the sentence rather than "
+     "assumed to match.  *+0.04106 rounds to +0.041, and `over three orders below` is 3.28.*",
+     bool((_ft is None or abs(_ft[0] - 0.041) < 5e-4)
+          and (_rng is None or (_rng[0] == LLO and _rng[1] == LHI))
+          and abs(_d_96 - 0.041) < 5e-4 and 3.0 < _ORD_96 < 4.0))
+_epr = _PAPER['endpoint range']
+gate("⛭ Ⓘ④ l.2387-2389's `+0.028 to +0.063 degrees, always of one sign, no less than three "
+     "orders on every convention` IS Ⓗ③'s TABLE, end to end.  *The five endpoints give +0.02829 "
+     "to +0.06256, every one POSITIVE, the worst 3.10 orders below -78.3.  ** This is the sentence "
+     "that replaced `widens tenfold`, `0.14 degrees` and `2.8 orders`, which Ⓗ④ found no "
+     "convention reproduces -- so Ⓗ④ now gates a figure the paper no longer carries, and that "
+     "is deliberate: it is the record of why the figure went. **",
+     bool((_epr is None or (abs(_epr[0] - 0.028) < 5e-4 and abs(_epr[1] - 0.063) < 5e-4))
+          and abs(_EP_LO - 0.028) < 5e-4 and abs(_EP_HI - 0.063) < 5e-4
+          and all(q > 0 for q in _ao_phases) and _ORD_EP > 3.0))
+_tl, _ar = _PAPER['the two tilts'], _PAPER['as-run difference']
+gate("⛭⛭ ** Ⓘ⑤ l.2390-2392's AS-RUN SENTENCE, ALL FOUR OF ITS FIGURES: the tilts 1.015 and "
+     "0.96 are THE SWITCHES THE TWO RUNS CARRY, the difference is +0.33, the tilt's share is "
+     "nearly nine tenths, and `still over two orders below` is 2.37. **  *Measured 87.6 per cent "
+     "of +0.33081 attributable to the tilt alone.  The tilts are checked against `__SWITCHES__` in "
+     "the run logs, not against the paper's own words -- a paper figure met by the paper's figure "
+     "would gate nothing.*",
+     bool((_tl is None or (abs(_tl[0] - round(_ns_aor, 3)) < 1e-9 and _tl[1] == _ns_ctl))
+          and (_ar is None or (abs(_ar[0] - 0.33) < 5e-3
+                               and abs(_WORDS.get(_ar[1], -1) - 0.9) < 1e-9))
+          and abs(_d_own - 0.33) < 5e-3 and abs(_TILT_SHARE - 0.9) < 0.05
+          and 2.0 < _ORD_OWN < 3.0))
+_fl = _PAPER['the floor, share, spread']
+gate("⛭ Ⓘ⑥ l.2393-2395's FLOOR SENTENCE, read back: `-15.4 degrees`, `a fifth of the "
+     "residual` and `three tenths of a per cent` are Ⓕ① and Ⓕ②'s three measurements, and the "
+     "two WORD figures are converted and gated rather than left as prose.  *-15.4073, 19.7 per "
+     "cent of -78.3, the two arms to 0.27 per cent.  A fifth to a tenth of a point is what the "
+     "endpoint sweep leaves it -- l.2396's own claim -- and Ⓔ⑤'s sensitivity is what licenses "
+     "that.*",
+     bool((_fl is None or (abs(_fl[0] - round(_AOR_FLOOR, 1)) < 1e-9
+                           and abs(_WORDS.get('a ' + _fl[1], -1) - 0.2) < 1e-9
+                           and abs(_WORDS.get(_fl[2], -1) - 0.3) < 1e-9))
+          and abs(_AOR_FLOOR - -15.4) < 0.05 and abs(_frac - 0.2) < 0.02
+          and abs(100 * abs(_AOR_FLOOR - _CTL_FLOOR) / abs(_AOR_FLOOR) - 0.3) < 0.05))
+gate("⛭ Ⓘ⑦ and the paragraph's THREE order-of-magnitude claims are each TRUE AND NOT "
+     "UNDERSTATED, which is the one thing a `below` claim can get wrong in the safe direction and "
+     "still be worth fixing: 3.28 for `over three`, 3.10 at worst for `no less than three`, 2.37 "
+     "for `still over two`.  *Each lands in its own decade, so no claim is a decade shy of what "
+     "was measured.*",
+     bool(3.0 < _ORD_96 < 4.0 and 3.0 < _ORD_EP < 4.0 and 2.0 < _ORD_OWN < 3.0))
+
+# =================================================================================================
+head("Ⓙ  ⛭⛭⛭ r7657 ITEM 2 -- l.2395's FLOOR RANGE ON THE ARM OF RECORD, AND THE ENDPOINT "
+     "CLAUSE BESIDE IT")
+# =================================================================================================
+# ⛭ ** 69's ITEM 2, verbatim: "The floor's range, l.2395: `runs from 9 to 24 per cent as the
+#   range is taken from 200 or from 50`.  Measure it on the arm of record against the -78.3
+#   residual."  ** THE ANSWER IS 11 AND 30, AND THE REASON IS THE DENOMINATOR AGAIN. **
+#   ⌗ *The two PHASES behind 9 and 24 are already the arm of record's -- -8.75 and -23.25
+#     degrees, which this file reproduces to four decimals.  Divided by -96.6 they are 9.06 and
+#     24.06, which is where l.2395's figures come from.  r7657 re-pointed the floor sentence's own
+#     `-15.4` and `a fifth` onto -78.3 and left the RANGE CLAUSE on the old residual, so the
+#     sentence now quotes two fractions against one denominator and a third against another.*
+def _runlo(lo, rD, ns=0.96):
+    """the kernel's own running phase from `lo` to LHI, arm of record, one r_D convention."""
+    return -(phase_window(LHI, rs=AORD['rs'], DM=AORD['DM'], rD=rD, ns=ns)
+             - phase_window(lo, rs=AORD['rs'], DM=AORD['DM'], rD=rD, ns=ns)) * DEG
+
+
+_rD_pk = EP['arm of record']['eps']['visibility peak']
+_LOWS = (50.0, 104.0, 200.0, 300.0)
+_FRAC_LO = {}
+print(f"\n    the floor and its fraction as the range's LOW END moves, arm of record, r_D at the "
+      f"visibility peak:")
+for _lo in _LOWS:
+    _ph = _runlo(_lo, _rD_pk)
+    _FRAC_LO[_lo] = (_ph, abs(_ph / RESIDUAL), abs(_ph / -96.6))
+    print(f"      from l = {_lo:6.1f} to {LHI:.0f}:  {_ph:+9.4f} deg = "
+          f"{100*_FRAC_LO[_lo][1]:6.2f}% of {RESIDUAL:+.1f}"
+          f"   ({100*_FRAC_LO[_lo][2]:6.2f}% of the -96.6 l.2395 still divides by)")
+_PAPER_RANGE = re.search(r'moving under a tenth of a point, and runs from \$(\d+)\$ to \$(\d+)\$ '
+                         r'per cent as the range is taken from \$(\d+)\$ or from \$(\d+)\$ instead',
+                         _P15FLAT)
+_PR = [float(g) for g in _PAPER_RANGE.groups()] if _PAPER_RANGE else None
+print(f"    l.2395 reads " + (f"{_PR[0]:.0f} to {_PR[1]:.0f} per cent from {_PR[2]:.0f} or from "
+                              f"{_PR[3]:.0f}" if _PR else
+                              "** NOT FOUND -- reworded since r7657 **"))
+gate("⛔⛭⛭⛭ ** Ⓙ① l.2395's `9 to 24 per cent` IS THE ARM OF RECORD'S OWN PHASES DIVIDED "
+     "BY THE OLD RESIDUAL, AND AGAINST -78.3 THE RANGE IS 11 TO 30.  THIS GATE ASSERTS THE MISS "
+     "AND ROUTES THE TWO FIGURES. **  *The phases are right and this file reproduces them: -8.7491 "
+     "degrees from l = 200 and -23.2458 from l = 50.  Against -96.6 they are 9.06 and 24.06 per "
+     "cent -- l.2395's two figures to the digit.  Against the -78.3 the SAME SENTENCE's `a fifth` "
+     "is now quoted against, they are 11.17 and 29.69.  ⇒ ** The re-point reached the floor "
+     "clause and not the range clause, so one sentence now carries two denominators.  Read from "
+     "200 or from 50 instead, the floor runs from ELEVEN to THIRTY per cent. ** *",
+     bool((_PR is None or (abs(_PR[0] - round(100 * _FRAC_LO[200.0][2])) < 1e-9
+                           and abs(_PR[1] - round(100 * _FRAC_LO[50.0][2])) < 1e-9
+                           and _PR[2] == 200.0 and _PR[3] == 50.0))
+          and abs(100 * _FRAC_LO[200.0][1] - 11.17) < 0.05
+          and abs(100 * _FRAC_LO[50.0][1] - 29.69) < 0.05))
+
+# -- the clause the same sentence opens with, measured on the thing the sentence is about ---------
+_FRAC_EP = {k: abs(_runlo(LLO, v) / RESIDUAL) for k, v in EP['arm of record']['eps'].items()
+            if 'today' not in k}
+_CENTRAL = ('eta_rec (fixed A_REC)', 'visibility peak', 'tau = 1')
+_EDGES2 = ('visibility FWHM, early edge', 'visibility FWHM, late edge')
+print("    and the same fraction with the range held at 104-1886, across the five endpoints:")
+for _nm, _f in sorted(_FRAC_EP.items(), key=lambda kv: -kv[1]):
+    print(f"      {_nm:32s} {100*_f:6.2f}%"
+          + ("   <- one of the three the clause is true over" if _nm in _CENTRAL else
+             "   <- a HALF-MAXIMUM EDGE"))
+_SPREAD3 = 100 * (max(_FRAC_EP[k] for k in _CENTRAL) - min(_FRAC_EP[k] for k in _CENTRAL))
+_SPREAD5 = 100 * (max(_FRAC_EP.values()) - min(_FRAC_EP.values()))
+print(f"      spread across the THREE central conventions: {_SPREAD3:.2f} of a point;  "
+      f"across all FIVE: {_SPREAD5:.2f} points")
+gate("⛔⛭⛭ ** Ⓙ② AND l.2395's OTHER CLAUSE -- `it is insensitive to the endpoint "
+     "convention, moving under a tenth of a point` -- IS TRUE OF THREE CONVENTIONS AND FALSE OF "
+     "THE FIVE THE SAME PARAGRAPH NAMES. **  *Across eta_rec, the visibility peak and tau = 1 the "
+     "fraction moves 0.05 of a point, which is the clause as written.  Across the two "
+     "HALF-MAXIMUM EDGES it moves 8.10 points, from 13.09 to 21.19 per cent, because r_D itself "
+     "runs 5.37 to 12.68 Mpc there and the FLOOR is a function of r_D while the DIFFERENCE is "
+     "not.  ⇒ ** The clause imports the convention-independence of the arm-MINUS-arm difference "
+     "(Ⓗ③, Ⓖ②) into a statement about ONE ARM's absolute phase, where it does not hold.  Routed: "
+     "either name the three conventions, or say `under a tenth of a point between the three "
+     "recombination-epoch conventions and eight points across the half-maximum edges`. ** *",
+     bool(_SPREAD3 < 0.1 and _SPREAD5 > 1.0
+          and all(0.10 < _FRAC_EP[k] < 0.25 for k in _FRAC_EP)))
+# =================================================================================================
+head("Ⓚ  EVERY FIGURE THE INDEX ROW AND THE DOCSTRING PRINT, PINNED AS A LITERAL TWIN")
+# =================================================================================================
+# ⛭ ** `check_figures_pinned`'s rule, in its own words: `a sentence prints a figure beside a
+#   receipt that would not fail if it were wrong`.  r7657's INDEX row and this file's docstring
+#   print SIXTEEN figures between them, and a gate that measures a quantity does not pin the
+#   DIGITS a row quotes it to -- `pins()` only collects constants inside a comparison. **
+#   ⌗ *So the chain below is the pin: one explicit comparison per printed figure, each on the
+#     ROUNDING the row prints, so a row quoting 3.8 where this file measures 3.75 fails here.*
+#   ⌗ *The table above the gate prints the MEASUREMENTS alone.  The literals live in exactly one
+#     place -- the chain -- so there is nothing for a figure to drift against.*
+_ORD_DIFF = np.log10(abs(RESIDUAL / DIFF))
+_COMMON = 100 * abs(_AOR_FLOOR - _CTL_FLOOR) / abs(_AOR_FLOOR)
+print("\n    what the row quotes, measured here:")
+for _nm, _v, _nd in (("orders below, the headline difference", _ORD_DIFF, 2),
+                     ("the floor, degrees", abs(_AOR_FLOOR), 2),
+                     ("the floor as a per cent of the residual", 100 * _frac, 1),
+                     ("the floor's common mode, per cent", _COMMON, 2),
+                     ("orders below at a common tilt", _ORD_96, 2),
+                     ("orders below at worst across endpoints", _ORD_EP, 2),
+                     ("orders below as the arms were run", _ORD_OWN, 2),
+                     ("the tilt's share of the as-run figure", 100 * _TILT_SHARE, 1),
+                     ("n_s as the arm of record ran", _ns_aor, 3),
+                     ("n_s as the control ran", _ns_ctl, 2),
+                     ("the floor from l = 200, degrees", abs(_FRAC_LO[200.0][0]), 2),
+                     ("the floor from l = 50, degrees", abs(_FRAC_LO[50.0][0]), 2),
+                     ("the lowest endpoint fraction, per cent", 100 * min(_FRAC_EP.values()), 1),
+                     ("the highest endpoint fraction, per cent", 100 * max(_FRAC_EP.values()), 1),
+                     ("the spread across all five, points", _SPREAD5, 2),
+                     ("the spread across the three, points", _SPREAD3, 2)):
+    print(f"      {_nm:42s} {round(_v, _nd)}")
+gate("⛭ Ⓚ① ** AND EVERY ONE OF THE SIXTEEN IS PINNED TO THE DIGIT THE ROW PRINTS IT TO, so a "
+     "stale row reddens this receipt instead of going quietly wrong. **  *The one-state rule cuts "
+     "both ways: an INDEX row states what its receipt finds NOW, and this gate is what makes the "
+     "row's own digits the receipt's responsibility.*",
+     bool(abs(round(_ORD_DIFF, 2) - 3.75) < 1e-9
+          and abs(round(abs(_AOR_FLOOR), 2) - 15.41) < 1e-9
+          and abs(round(100 * _frac, 1) - 19.7) < 1e-9
+          and abs(round(_COMMON, 2) - 0.27) < 1e-9
+          and abs(round(_ORD_96, 2) - 3.28) < 1e-9
+          and abs(round(_ORD_EP, 2) - 3.10) < 1e-9
+          and abs(round(_ORD_OWN, 2) - 2.37) < 1e-9
+          and abs(round(100 * _TILT_SHARE, 1) - 87.6) < 1e-9
+          and abs(round(_ns_aor, 3) - 1.015) < 1e-9
+          and abs(round(_ns_ctl, 2) - 0.96) < 1e-9
+          and abs(round(abs(_FRAC_LO[200.0][0]), 2) - 8.75) < 1e-9
+          and abs(round(abs(_FRAC_LO[50.0][0]), 2) - 23.25) < 1e-9
+          and abs(round(100 * min(_FRAC_EP.values()), 1) - 13.1) < 1e-9
+          and abs(round(100 * max(_FRAC_EP.values()), 1) - 21.2) < 1e-9
+          and abs(round(_SPREAD5, 2) - 8.10) < 1e-9
+          and abs(round(_SPREAD3, 2) - 0.05) < 1e-9))
 
 head("SUMMARY")
 # ═════════════════════════════════════════════════════════════════════════════════════════════════
@@ -575,8 +885,9 @@ print()
 print(f"    ⇒ arm minus control, kernel phase across {LLO:.0f}-{LHI:.0f}:  {DIFF:+.4f} deg")
 print(f"    ⇒ the residual:                                     {RESIDUAL:+.1f} deg")
 print(f"    ⇒ {np.log10(abs(RESIDUAL/DIFF)):.2f} orders of magnitude below -- THE PROJECTION IS CLEARED")
-print(f"    ⇒ and the kernel's own phase is {100*_frac:.1f}% of the residual, common mode to "
-      f"{100*abs(wA-wC)/abs(wA):.2f}%")
+print(f"    ⇒ and the kernel's own phase is {100*_frac:.1f}% of the residual on the ARM OF "
+      f"RECORD, common mode to {_COMMON:.2f}% there and to "
+      f"{100*abs(wA-wC)/abs(wA):.2f}% on the namesake pair")
 
 if fail:
     raise SystemExit(1)

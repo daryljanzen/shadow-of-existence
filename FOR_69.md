@@ -9,6 +9,83 @@ is committed and pushed on `main` — nothing waits on the chat window.*
 
 ---
 
+## ⚑ `r7657` (cc66) — **ITEMS 1, 2 AND 3 ARE MEASURED, AND FOUR CLAUSES OF THE TWO PARAGRAPHS NEED YOUR PEN: l.2395's RANGE AND ITS ENDPOINT CLAUSE, l.1939–1942's GRID, l.1943–1954's DIGITS AND ITS `\rcpt`**
+
+*Everything below is gated in the two receipts and pushed. The prose is yours; I have touched no `.tex`.*
+
+### ⛔ ① **l.2395's `9` to `24` per cent is this arm's own phases divided by the OLD residual. Against `−78.3` the range is `11` to `30`.**
+
+The re-point reached the floor clause and not the range clause, so one sentence now carries two denominators. The phases are right and the receipt reproduces them to four decimals:
+
+| the range read from | the floor | against `−78.3` (the sentence's own residual now) | against `−96.6` (what l.2395 still divides by) |
+|---|---|---|---|
+| `ℓ = 50` | `−23.2458°` | **`29.69` %** | `24.06` % ← the paper's `24` |
+| `ℓ = 104` *(the quoted range)* | `−15.4073°` | **`19.68` %** — *a fifth* | `15.95` % |
+| `ℓ = 200` | `−8.7491°` | **`11.17` %** | `9.06` % ← the paper's `9` |
+| `ℓ = 300` | `−5.3852°` | `6.88` % | `5.57` % |
+
+⇒ *Recommendation: `runs from 11 to 30 per cent as the range is taken from 200 or from 50 instead`. Nothing was measured wrongly — the denominator moved under two figures that were left behind.*
+
+### ⛔ ② **And the clause the same sentence opens with is true of three conventions and false of the five the paragraph itself names.**
+
+`it is insensitive to the endpoint convention, moving under a tenth of a point` — on the arm of record, range held at `104`–`1886`:
+
+| the endpoint `r_D` is read at | `r_D` | the floor as a fraction of `−78.3` |
+|---|---|---|
+| the visibility's half-maximum, EARLY edge | `5.373` Mpc | **`21.19` %** |
+| unit optical depth | `7.213` | `19.72` % |
+| the recombination epoch | `7.261` | `19.68` % |
+| the visibility's peak *(what the runs report)* | `7.262` | `19.68` % |
+| the visibility's half-maximum, LATE edge | `12.681` | **`13.09` %** |
+
+**Across the three recombination-epoch conventions the fraction moves `0.05` of a point, which is the clause as written. Across the two half-maximum edges it moves `8.10` points.** The reason is structural: `r_D` itself runs `5.37` to `12.68` Mpc there, and **the FLOOR is a function of `r_D` while the arm-minus-arm DIFFERENCE is not** — the clause imports the difference's convention-independence into a statement about one arm's absolute phase.
+
+⇒ *Recommendation: either name the three — `insensitive to the endpoint convention between the three recombination-epoch readings, moving under a tenth of a point` — or state both: `moving under a tenth of a point between them and eight points across the half-maximum edges`. The second is the fuller truth and costs one clause.*
+
+### ⛭ ③ **ITEM 1, l.1938–1955: the paragraph splits in two. Its FIRST half has no arm-of-record counterpart at all, and its second half survives with every digit moved.**
+
+**The re-point MADE the licensed configuration the baseline.** The arm-of-record banked grid's own `__SWITCHES__` carry `LEAFREC=1 LEAFSCALES=1` and no `LEAFGEOM` — the same switch string as the licensed grid, character for character, and the same spectrum to the bit. So `the configuration the rate rule specifies moves neither statistic` is **exactly** true there, and the four figures that quantify it — `0.08` of an error, `|c|` rising one per cent to `−0.0642`, the run `18` to `22`, `χ²`/bin `3.05` to `3.20` — are the **namesake pair's** and cannot be re-pointed. *A table of zeroes would be a true table of the wrong comparison.*
+
+The forbidden route does have a counterpart, and **every direction the pre-registered test named holds**:
+
+| | the paper (namesake) | **the arm of record** |
+|---|---|---|
+| `c`, specified | `−0.0636 ± 0.0085` | **`−0.0670 ± 0.0086`** |
+| `c`, forbidden | `−0.0069 ± 0.0083` | **`−0.0092 ± 0.0085`** |
+| the move | `6.70` errors | **`6.71` errors** |
+| `|c|` falls | `89` % | **`86.3` %** — landing `0.2` of an error from the control's own `−0.0075` |
+| sign changes | `30 → 44` | **`32 → 38`** |
+| longest run | `18 → 12` | **`16 → 12`** |
+| `χ²` per bin | `3.05 → 1.47` | **`2.64 → 1.33`** |
+| mean excursion | `1.353 → 1.039` | **`1.327 → 1.114`** |
+| `ℓ_A` | `302.889 → 301.380` | **`302.943 → 301.400`**, against the control's unmoved `301.375` |
+
+⌗ *The scale OVERSHOOTS further on this arm: the namesake landed `0.005` above the control and this arm lands `0.025` above it, five times as far on a move twenty times the size. `And the acoustic scale follows it` is if anything stronger.*
+
+⇒ *Recommendations: keep the first half and **name the grid it is read on**; re-point every digit of the second half as above.*
+
+### ⛭ ④ **l.1952–1954's four-ceiling sentence: `separate only above it` HOLDS, and the ceiling moves UP from `800` to `900`.**
+
+| ceiling | `700` | `800` | `900` | `1040` |
+|---|---|---|---|---|
+| specified, namesake | `9` | `9` | `13` | `22` |
+| forbidden, namesake | `9` | `9` | `9` | `12` |
+| **specified, arm of record** | `9` | `9` | `9` | **`16`** |
+| **forbidden, arm of record** | `7` | `8` | `8` | **`12`** |
+| **the gap** *(namesake → arm of record)* | `0 → 2` | `0 → 1` | `4 → 1` | `10 → 4` |
+
+⇒ *Recommendation: `indistinguishable below ℓ ≃ 900` (not `800`), `every one of them with a longest run of seven to nine bins` (not `eight or nine`), the specified run growing `9, 9, 9, 16` and the forbidden one's staying `7, 8, 8, 12`. The structure of the sentence is what survives: the statistic still decides nothing when read low and still separates only at the top — the separation is simply **weaker**, four bins where it was ten.*
+
+### ⛭ ⑤ **The `\rcpt` you asked me to recommend, on the run-length sentence.**
+
+That sentence is closed by the THREE-GRID receipt, which gates none of its four numbers. **The receipt that computes all four, at those four ceilings, on both arms, is `P15_the_licensed_configuration_moves_neither_statistic_and_the_swing_was_read_above_where_it_converges`** — the one that closes the paragraph eleven lines above. ⇒ *Recommendation: cite it there, and leave the three-grid citation on the projection-reach sentence that follows, which is its own.*
+
+### ⌷ ⑥ **Still routed, not done: the kernel receipt's FILENAME says `a_sixth_of_the_scale_is_common_mode`, and a sixth is now the namesake's fraction.**
+
+On the arm of record it is a fifth. A rename reaches `receipts/INDEX.md`, both appendices and every `\rcpt` that cites the file across six documents, so it is yours to call. *The receipt's own text, its INDEX row and its docstring all read `a fifth` and name the filename as stale, so nothing is silently wrong while it waits.*
+
+---
+
 ## ⚑ `r7655` (cc66) — **ITEMS 4 AND 5: BOTH FIGURES ARE CARRIED AND CORRECT, AND IN BOTH CASES THE SENTENCE AROUND THEM DESCRIBES A DIFFERENT OBJECT FROM THE ONE THE FIGURE MEASURES**
 
 **ITEM 4 — `0.9` to `1.3` is the ARM-MINUS-CONTROL displacement, and the clause attached to it describes ARM-MINUS-SKY.** Source established: `P15_the_skys_own_fourth_peak_cannot_tell_the_arms_apart_and_the_displacement_is_shared_with_the_control`, whose own gate reads *"arm minus control is +2.0 in ell, between 0.9 and 1.3 sigma of the sky's own fourth-peak uncertainty"* — **`+0.90σ` at W=55 and `+1.27σ` at W=80**, the two admissible windows. `L_probability`'s corpus sweep already tracks the phrase as a COV+DRAW claim against that receipt.

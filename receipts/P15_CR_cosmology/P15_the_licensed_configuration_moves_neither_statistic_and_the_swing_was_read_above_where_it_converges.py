@@ -386,13 +386,14 @@ for _nm, _rel in _AO_SETS:
 
 # ── ITEM 3: the coefficient, this route, both arms ──────────────────────────────────────────────
 _AUDIT = {'licensed': (-0.0670, 0.0086), 'forbidden': (-0.0092, 0.0085)}
-_CAO = {}
+_CAO, _CAO_CTL = {}, {}      # the arm's and the CONTROL's coefficient, kept apart (r7657: I⑥)
 print(f"\n    the contrast coefficient through THIS receipt's own `c_on`, both arms:")
 for _nm, _d in _AO_DIRS.items():
     _o = CO.c_on(_d)
     _cc, _sc, _ = _o['cr']
     _cl, _sl, _ = _o['lcdm']
     _CAO[_nm] = (_cc, _sc)
+    _CAO_CTL[_nm] = (_cl, _sl)
     print(f"      {_nm:9s} ARM OF RECORD  cr c = {_cc:+.4f} +- {_sc:.4f} ({_cc/_sc:+.1f} sigma)"
           f"   control {_cl:+.4f} +- {_sl:.4f}")
 gate("⛭⛭⛭ ** H② ITEM 3 ANSWERED, AND IT WITHDRAWS THIS SEAT'S OWN REPORT: THE PARAGRAPH'S RECEIPT "
@@ -416,11 +417,16 @@ gate("⛭⛭ H③ and the paragraph's two CLAIMS survive the move: the forbidden
 # ── ITEM 2: the four-ceiling run lengths, this reader, both arms ─────────────────────────────────
 _PUB_SEQ = {'banked': [8, 8, 15, 18], 'licensed': [9, 9, 13, 22], 'forbidden': [9, 9, 9, 12]}
 _SEQ_NS, _SEQ_AO = {}, {}
+# ⛭ r7657: the WHOLE shape dict is kept per (ceiling, configuration), not just `longest`.  Item 1
+#   needs the crossings and the chi^2 per bin from the same subprocess calls, and re-running
+#   `shape.py` for each column would be twelve more subprocesses for numbers already measured.
+_SH_AO = {}
 print(f"\n    the longest run of one sign at this receipt's own four ceilings {CEILINGS}:")
 for _nm in ('banked', 'licensed', 'forbidden'):
+    for _L in CEILINGS:
+        _SH_AO[(_L, _nm)] = shape(os.path.join(_AO_DIRS[_nm], 'cr_base.npz'), _L)
     _SEQ_NS[_nm] = [S[(L, _nm)]['longest'] for L in CEILINGS]
-    _SEQ_AO[_nm] = [shape(os.path.join(_AO_DIRS[_nm], 'cr_base.npz'), L)['longest']
-                    for L in CEILINGS]
+    _SEQ_AO[_nm] = [_SH_AO[(L, _nm)]['longest'] for L in CEILINGS]
     print(f"      {_nm:9s} namesake {str(_SEQ_NS[_nm]):18s} "
           f"ARM OF RECORD {str(_SEQ_AO[_nm]):18s}")
 gate("H④ the namesake sequences are this receipt's own published ones, which calibrates the reader "
@@ -465,6 +471,267 @@ gate("⛭ H⑦ the banked and licensed rows agree on the arm of record because t
      "two files, one spectrum, so the agreement is identity and not coincidence.*",
      bool(_same and _md5_differ))
 
+# =====================================================================================
+head("I.  \u26ed\u26ed\u26ed r7657 (cc66), ORDERED BY 69 ITEM 1 -- l.1938-1955 WHOLE ON THE ARM OF RECORD, "
+     "IN ONE TABLE, WITH THE PARAGRAPH'S OWN FIGURES READ OUT OF THE PAPER BESIDE THEM")
+# =====================================================================================
+#
+# \u26ed ** 69's ITEM 1, verbatim: "Give the rest of the paragraph on the same arm in one table:
+#   `rising one per cent`, the longest run 18 -> 22 and 18 -> 12, chi^2 per bin 3.05, 3.20 and 1.47,
+#   the sign changes 30 -> 44, ell_A 302.889 -> 301.380 against 301.375, and `indistinguishable
+#   below ell ~= 800`.  I land it whole, with the `\rcpt` you recommend on the run-length sentence.
+#   On your figures the gap the sentence turns on falls from ten bins to four, so say whether
+#   `separate only above it` still holds, or how it should read." **
+#
+# \u26d4\u26ed\u26ed\u26ed ** AND THE FIRST HALF OF THE PARAGRAPH HAS NO ARM-OF-RECORD COUNTERPART AT ALL, which
+#   is the finding and not a gap in the table.  ON THE ARM OF RECORD THE BANKED GRID ALREADY
+#   CARRIES `LEAFREC=1 LEAFSCALES=1` AND NO `LEAFGEOM` -- it IS the configuration the rate rule
+#   specifies. **  The two grids' switches are printed below and are the same string; `H\u2466` already
+#   showed their spectra bit-identical.  ⇒ *So `the configuration the rate rule specifies moves
+#   neither statistic` is EXACTLY true there, to the bit, and its four figures -- `0.08` of an
+#   error, `rising` one per cent to `-0.0642`, `18` to `22`, `3.05` to `3.20` -- are the NAMESAKE
+#   pair's and cannot be re-pointed onto this arm.  There is nothing to move, because the
+#   re-point MADE the licensed configuration the baseline.*
+_TOP = CEILINGS[-1]
+_WORDNUM = {'seven': 7, 'eight': 8, 'nine': 9, 'ten': 10}
+_P15T = re.sub(r'\s+', ' ', open(os.path.join(ROOT, 'corpus', 'CR_cosmology.tex'),
+                                 encoding='utf-8', errors='replace').read())
+_PP = {}
+
+
+def ppaper(key, pat, *cast):
+    """read ONE of l.1938-1955's figures out of the .tex, tolerate its absence, and print which."""
+    m = re.search(pat, _P15T)
+    _PP[key] = tuple(c(g) for c, g in zip(cast, m.groups())) if m else None
+    print(f"      {key:14s} " + (f"{_PP[key]}" if m else
+                                 "** NOT FOUND -- reworded since r7657 **"))
+    return _PP[key]
+
+
+print("    l.1938-1955's figures, each READ OUT OF corpus/CR_cosmology.tex:")
+ppaper('coef, licensed', r'moves by \$([\d.]+)\$ of its own error, its magnitude \\emph\{rising\} '
+                        r'one per cent to \$(-[\d.]+)\$', float, float)
+ppaper('shape, licensed', r'the longest run of one sign goes from \$(\d+)\$ to \$(\d+)\$ bins, the '
+                         r'wrong way; \$\\chi\^\{2\}\$ per bin goes from \$([\d.]+)\$ to '
+                         r'\$([\d.]+)\$', int, int, float, float)
+ppaper('coef, forbidden', r'moves the same coefficient by \$([\d.]+)\$ of that error to '
+                         r'\$(-[\d.]+)\\pm([\d.]+)\$', float, float, float)
+ppaper('the fall', r'its magnitude falling \$(\d+)\$ per cent onto the value the control itself '
+                   r'returns', float)
+ppaper('shape, forbidden', r'the sign changes rise from \$(\d+)\$ to \$(\d+)\$, the longest run '
+                          r'falls from \$(\d+)\$ to \$(\d+)\$ and \$\\chi\^\{2\}\$ per bin falls '
+                          r'to \$([\d.]+)\$', int, int, int, int, float)
+ppaper('the scale', r"\$\\ell_A\$ moves from \$([\d.]+)\$ to \$([\d.]+)\$ against the control's "
+                    r"\$([\d.]+)\$", float, float, float)
+ppaper('the ceiling', r"\\emph\{indistinguishable below \$\\ell\\simeq(\d+)\$\}---every one of them "
+                      r"with a longest run of ([a-z]+) or ([a-z]+) bins---and separate only above "
+                      r"it, where the specified configuration's run grows \$(\d+)\$, \$(\d+)\$, "
+                      r"\$(\d+)\$, \$(\d+)\$ and the forbidden one's stays \$(\d+)\$, \$(\d+)\$, "
+                      r"\$(\d+)\$, \$(\d+)\$", int, str, str, int, int, int, int, int, int, int, int)
+
+# -- the two tables, the arm of record first because that is what was ordered --------------------
+_sw_ao = {}
+print("\n    the arm-of-record grids' own switches, because the first half turns on them:")
+for _nm, _rel in _AO_SETS:
+    _zz = np.load(os.path.join(BW, _rel, 'cr_base.npz'), allow_pickle=True)
+    _sw_ao[_nm] = re.sub(r'SAVE=\S+', 'SAVE=...', str(_zz['switches']))
+    print(f"      {_nm:10s} {_sw_ao[_nm]}")
+
+
+def _row(nm, cdict, shdict, lA, base):
+    _c, _e = cdict[nm][:2]
+    _b = cdict[base][0]
+    _sh = shdict[nm]
+    return (_c, _e, (_c - _b) / cdict[base][1], 100.0 * (abs(_c) / abs(_b) - 1.0),
+            _sh['crossings'], _sh['longest'], _sh['chi2bin'], _sh['mean_ext'], lA)
+
+
+_AO_C = {k: (v[0], v[1]) for k, v in _CAO.items()}
+_NS_C = {k: (C[k]['cr'][0], C[k]['cr'][1]) for k in C}
+_AO_LA = {k: float(np.load(os.path.join(_AO_DIRS[k], 'cr_base.npz'),
+                           allow_pickle=True)['l_A']) for k in _AO_DIRS}
+_NS_LA = {k: float(_z[k]['l_A']) for k in _z}
+_LA_CTL = float(np.load(os.path.join(BANKED, 'lcdm_base.npz'), allow_pickle=True)['l_A'])
+_AO = {k: _row(k, _AO_C, {n: _SH_AO[(_TOP, n)] for n in _AO_C}, _AO_LA[k], 'banked')
+       for k in _AO_C}
+_NS = {k: _row(k, _NS_C, {n: S[(_TOP, n)] for n in _NS_C}, _NS_LA[k], 'banked') for k in _NS_C}
+_HDR = (f"      {'configuration':<11}{'c':>9}{'+-':>8}{'move/err':>10}{'|c| %':>8}{'cross':>7}"
+        f"{'longest':>8}{'chi2/bin':>10}{'mean|ext|':>10}{'l_A':>11}")
+for _ttl, _T in ((f"THE ARM OF RECORD, read to ell {_TOP}", _AO),
+                 (f"the NAMESAKE pair at the same ceiling, which is what the paper prints", _NS)):
+    print(f"\n    {_ttl}:")
+    print(_HDR)
+    for _nm in ('banked', 'licensed', 'forbidden'):
+        _r = _T[_nm]
+        print(f"      {_nm:<11}{_r[0]:+9.4f}{_r[1]:8.4f}{_r[2]:+10.2f}{_r[3]:+8.1f}{_r[4]:7d}"
+              f"{_r[5]:8d}{_r[6]:10.2f}{_r[7]:10.3f}{_r[8]:11.3f}")
+    print(f"      {'control':<11}{C['banked']['lcdm'][0]:+9.4f}{C['banked']['lcdm'][1]:8.4f}"
+          f"{'':10}{'':8}{'':7}{'':8}{'':10}{'':10}{_LA_CTL:11.3f}")
+
+gate("\u26d4\u26ed\u26ed\u26ed ** I\u2460 THE PARAGRAPH'S FIRST HALF IS NAMESAKE-ONLY, BECAUSE THE RE-POINT MADE THE "
+     "LICENSED CONFIGURATION THE BASELINE: the arm-of-record banked and licensed grids carry THE "
+     "SAME SWITCHES, so c, the crossings, the longest run and chi^2 per bin are identical to the "
+     "bit and `moves neither statistic` is exactly true. **  *l.1940-1942's four figures -- 0.08 "
+     "of an error, |c| rising one per cent to -0.0642, the run 18 to 22, chi^2/bin 3.05 to 3.20 -- "
+     "are the NAMESAKE pair's, where the banked grid has no `LEAFREC` and the licensed one does.  "
+     "\u21d2 ** They cannot be re-pointed onto this arm: there is no second configuration to compare, "
+     "and a table of zeroes would be a true table of the wrong comparison. ** *",
+     bool(_sw_ao['banked'] == _sw_ao['licensed'] and 'LEAFGEOM' not in _sw_ao['banked']
+          and 'LEAFREC=1' in _sw_ao['banked'] and 'LEAFSCALES=1' in _sw_ao['banked']
+          and _AO_C['banked'] == _AO_C['licensed']
+          and _SH_AO[(_TOP, 'banked')] == _SH_AO[(_TOP, 'licensed')]
+          and abs(_AO['licensed'][3]) < 1e-9 and abs(_AO['licensed'][2]) < 1e-9
+          # ⌗ `namesake-only` is a claim ABOUT THE PAPER, so the paper's own figure is READ and
+          #   shown to match the namesake measurement and NOT this arm's.  Without this the label
+          #   would attribute four figures to l.1940-1942 while depending on nothing read out of
+          #   it -- which is what `check_unread_figure` caught here, and it was right.
+          and (_PP['coef, licensed'] is None
+               or (abs(_NS_C['licensed'][0] - _PP['coef, licensed'][1]) < 5e-5
+                   and abs(_AO_C['licensed'][0] - _PP['coef, licensed'][1]) > 5e-4))
+          and (_PP['shape, licensed'] is None
+               or (_NS['licensed'][5] == _PP['shape, licensed'][1]
+                   and _AO['licensed'][5] != _PP['shape, licensed'][1]
+                   and abs(_NS['licensed'][6] - _PP['shape, licensed'][3]) < 5e-3
+                   and abs(_AO['licensed'][6] - _PP['shape, licensed'][3]) > 5e-2))))
+_pl, _ps = _PP['coef, licensed'], _PP['shape, licensed']
+gate("\u26ed I\u2461 and the reader is CALIBRATED on the paper's own first-half digits before the second "
+     "half is read with it: the namesake pair returns 0.08 of an error, |c| rising 1 per cent to "
+     "-0.0642, the run 18 to 22 and chi^2/bin 3.05 to 3.20, each read out of l.1940-1942 rather "
+     "than typed here.  *A reader that cannot reproduce the figures the paragraph prints has no "
+     "standing to report that the other half of it moved.*",
+     bool((_pl is None or (abs(abs(_NS['licensed'][2]) - _pl[0]) < 5e-3
+                           and abs(_NS_C['licensed'][0] - _pl[1]) < 5e-5))
+          and (_ps is None or (_NS['banked'][5] == _ps[0] and _NS['licensed'][5] == _ps[1]
+                               and abs(_NS['banked'][6] - _ps[2]) < 5e-3
+                               and abs(_NS['licensed'][6] - _ps[3]) < 5e-3))
+          and abs(_NS['licensed'][3] - 1.0) < 0.5))
+_pf, _pfa, _pfs = _PP['coef, forbidden'], _PP['the fall'], _PP['shape, forbidden']
+print(f"\n    the forbidden route's whole set, NAMESAKE then ARM OF RECORD:")
+print(f"      c moves           {_NS['forbidden'][2]:+.2f} errors -> "
+      f"{_AO['forbidden'][2]:+.2f} errors")
+print(f"      |c| falls         {_NS['forbidden'][3]:+.1f} per cent -> "
+      f"{_AO['forbidden'][3]:+.1f} per cent, onto the control's own "
+      f"{C['banked']['lcdm'][0]:+.4f} "
+      f"({abs(_AO_C['forbidden'][0] - C['banked']['lcdm'][0]) / C['banked']['lcdm'][1]:.1f} of an "
+      f"error from it)")
+print(f"      sign changes      {_NS['banked'][4]} -> {_NS['forbidden'][4]}   became   "
+      f"{_AO['banked'][4]} -> {_AO['forbidden'][4]}")
+print(f"      longest run       {_NS['banked'][5]} -> {_NS['forbidden'][5]}   became   "
+      f"{_AO['banked'][5]} -> {_AO['forbidden'][5]}")
+print(f"      chi^2 per bin     {_NS['banked'][6]:.2f} -> {_NS['forbidden'][6]:.2f}   became   "
+      f"{_AO['banked'][6]:.2f} -> {_AO['forbidden'][6]:.2f}")
+print(f"      mean |excursion|  {_NS['banked'][7]:.3f} -> {_NS['forbidden'][7]:.3f}   became   "
+      f"{_AO['banked'][7]:.3f} -> {_AO['forbidden'][7]:.3f}")
+gate("\u26ed\u26ed\u26ed ** I\u2462 ITEM 1's SECOND HALF, ON THE ARM OF RECORD: EVERY DIRECTION THE "
+     "PRE-REGISTERED TEST NAMED HOLDS AND EVERY DIGIT MOVES. **  *c -0.0670 -> -0.0092, a move of "
+     "6.7 of its error, |c| falling 86 per cent (the paper's 89) and landing 0.2 of an error from "
+     "the control's own -0.0075; the sign changes 32 -> 38 where the paper prints 30 -> 44; the "
+     "longest run 16 -> 12 where it prints 18 -> 12; chi^2 per bin 2.64 -> 1.33 where it prints "
+     "3.05 -> 1.47; the mean excursion 1.327 -> 1.114.  ** More sign changes, shorter runs, "
+     "smaller excursions and a lower chi^2 -- the four-part test fixed before either grid was "
+     "read, met on all four. ** *",
+     bool((_pf is None or (abs(_NS['forbidden'][2] - _pf[0]) < 5e-2
+                           and abs(_NS_C['forbidden'][0] - _pf[1]) < 5e-5))
+          and (_pfa is None or abs(abs(_NS['forbidden'][3]) - _pfa[0]) < 1.0)
+          and (_pfs is None or (_NS['banked'][4] == _pfs[0] and _NS['forbidden'][4] == _pfs[1]
+                                and _NS['banked'][5] == _pfs[2] and _NS['forbidden'][5] == _pfs[3]
+                                and abs(_NS['forbidden'][6] - _pfs[4]) < 5e-3))
+          and _AO['forbidden'][2] > 6.0 and -88.0 < _AO['forbidden'][3] < -84.0
+          and abs(_AO_C['forbidden'][0] - C['banked']['lcdm'][0]) < 0.3 * C['banked']['lcdm'][1]
+          and _AO['forbidden'][4] > _AO['banked'][4] and _AO['forbidden'][5] < _AO['banked'][5]
+          and _AO['forbidden'][6] < _AO['banked'][6]
+          and _AO['forbidden'][7] < _AO['banked'][7]))
+_pla = _PP['the scale']
+print(f"\n    and the acoustic scale: {_AO['banked'][8]:.3f} -> {_AO['forbidden'][8]:.3f} against "
+      f"the control's {_LA_CTL:.3f}   (the paper's namesake pair: {_NS['banked'][8]:.3f} -> "
+      f"{_NS['forbidden'][8]:.3f} against the same {_LA_CTL:.3f})")
+gate("\u26ed\u26ed ** I\u2463 AND THE SCALE FOLLOWS IT ON THIS ARM TOO, PAST THE CONTROL RATHER THAN ONTO IT: "
+     "l_A moves 302.943 -> 301.400 against the control's 301.375, where the paper prints 302.889 "
+     "-> 301.380 against the same 301.375. **  *The control's figure is UNMOVED because it is the "
+     "same file on every grid, which is what makes this a statement about the arm.  ** The "
+     "forbidden route overshoots: the namesake landed 0.005 above the control and this arm lands "
+     "0.025 above it, five times as far, on a move twenty times that size. ** *",
+     bool((_pla is None or (abs(_NS['banked'][8] - _pla[0]) < 5e-4
+                            and abs(_NS['forbidden'][8] - _pla[1]) < 5e-4
+                            and abs(_LA_CTL - _pla[2]) < 5e-4))
+          and abs(_AO['banked'][8] - 302.943) < 5e-4
+          and abs(_AO['forbidden'][8] - 301.400) < 5e-4
+          and _AO['forbidden'][8] > _LA_CTL
+          and _AO['banked'][8] - _AO['forbidden'][8] > 1.0))
+_pc = _PP['the ceiling']
+_GAPS_AO = [_SEQ_AO['licensed'][k] - _SEQ_AO['forbidden'][k] for k in range(len(CEILINGS))]
+_GAPS_NS = [_SEQ_NS['licensed'][k] - _SEQ_NS['forbidden'][k] for k in range(len(CEILINGS))]
+print(f"\n    where the three SEPARATE, gap in the longest run at each ceiling {CEILINGS}:")
+print(f"      namesake       specified {_SEQ_NS['licensed']}  forbidden {_SEQ_NS['forbidden']}"
+      f"  gap {_GAPS_NS}")
+print(f"      ARM OF RECORD  specified {_SEQ_AO['licensed']}  forbidden {_SEQ_AO['forbidden']}"
+      f"  gap {_GAPS_AO}")
+gate("\u26ed\u26ed\u26ed ** I\u2464 `separate only above it` STILL HOLDS AND THE CEILING MOVES UP: ON THE ARM OF "
+     "RECORD THE THREE ARE INDISTINGUISHABLE BELOW ell \u2243 900, NOT 800. **  *At 700, 800 and 900 "
+     "the specified configuration reads 9, 9, 9 and the forbidden one 7, 8, 8 -- gaps of two, one "
+     "and one bin -- where the namesake pair had already opened to four bins at 900 (13 against "
+     "9).  The separation appears only at the top ceiling, 16 against 12.  \u21d2 ** So the sentence's "
+     "STRUCTURE survives and two of its figures move: `indistinguishable below ell \u2243 900`, `every "
+     "one of them with a longest run of SEVEN to nine bins`, and the gap it turns on falls from "
+     "ten bins to four. ** *",
+     bool((_pc is None or (_pc[0] == 800 and _WORDNUM[_pc[1]] == 8 and _WORDNUM[_pc[2]] == 9
+                           and list(_pc[3:7]) == _SEQ_NS['licensed']
+                           and list(_pc[7:11]) == _SEQ_NS['forbidden']))
+          and max(_GAPS_AO[:3]) <= 2 and _GAPS_AO[3] == 4 and _GAPS_NS[3] == 10
+          and _GAPS_NS[2] == 4
+          and min(min(v[:3]) for v in _SEQ_AO.values()) == 7))
+gate("\u2317 I\u2465 the control's coefficient is the SAME NUMBER on all six grids, and here that is an "
+     "identity rather than a check: the arm-of-record sets carry no control of their own, so all "
+     "three link the same nine `lcdm_*` files `H\u2460` showed byte-identical across the namesake "
+     "grids.  *Said plainly because `identical across all three grids` reads like a measurement, "
+     "and on this arm it is a property of the composition -- the MEASUREMENT of it is the namesake "
+     "row in F.*",
+     bool(all(_CAO_CTL[k] == _CAO_CTL['banked'] for k in _CAO_CTL)
+          and _CAO_CTL['banked'][0] == C['banked']['lcdm'][0]
+          and all(C[k]['lcdm'][0] == C['banked']['lcdm'][0] for k in C)))
+# -- the INDEX row's own digits, pinned, because r7657 puts fourteen new ones in it ---------------
+# ⌗ `check_figures_pinned`'s rule: a figure a citing sentence prints must FAIL its receipt when it
+#   is wrong, and `pins()` only sees constants inside a comparison -- so a gate that MEASURES a
+#   quantity does not pin the digits a row quotes it to.  The chain below is the pin; the tables
+#   above print the measurements, so each literal lives in exactly one place.
+_cf, _cc = _AO_C['forbidden'], _CAO_CTL['banked']
+gate("⛭ I⑦ ** EVERY DIGIT r7657 PUTS IN THIS RECEIPT'S INDEX ROW IS A LITERAL TWIN HERE, so a "
+     "stale row reddens the receipt instead of going quietly wrong. **  *The one-state rule cuts "
+     "both ways: the row states what this receipt finds NOW, and this gate makes the row's own "
+     "digits the receipt's responsibility.*",
+     bool(abs(round(_AO_C['banked'][0], 4) - -0.0670) < 1e-9
+          and abs(round(_AO_C['banked'][1], 4) - 0.0086) < 1e-9
+          and abs(round(_cf[0], 4) - -0.0092) < 1e-9
+          and abs(round(_cf[1], 4) - 0.0085) < 1e-9
+          and abs(round(_AO['forbidden'][2], 2) - 6.71) < 1e-9
+          and abs(round(_AO['forbidden'][3], 1) - -86.3) < 1e-9
+          and abs(round(abs(_cf[0] - _cc[0]) / _cc[1], 1) - 0.2) < 1e-9
+          and abs(round(_cc[0], 4) - -0.0075) < 1e-9
+          and abs(round(_cc[1], 4) - 0.0083) < 1e-9
+          and abs(round(_AO['banked'][6], 2) - 2.64) < 1e-9
+          and abs(round(_AO['forbidden'][6], 2) - 1.33) < 1e-9
+          and abs(round(_AO['banked'][7], 3) - 1.327) < 1e-9
+          and abs(round(_AO['forbidden'][7], 3) - 1.114) < 1e-9
+          and abs(round(_AO['banked'][8], 3) - 302.943) < 1e-9
+          and abs(round(_AO['forbidden'][8], 3) - 301.400) < 1e-9
+          and abs(round(_LA_CTL, 3) - 301.375) < 1e-9))
+print("""
+    \u26ed\u26ed\u26ed THE RECOMMENDATION 69 ASKED FOR, IN ONE PLACE:
+      \u2460 l.1939-1942, the licensed half: it is a NAMESAKE comparison and should say so, or go.
+        On the arm of record there is no second configuration -- the baseline already carries the
+        rule's own assignment -- so `moves neither statistic` is exactly true and its four figures
+        have no counterpart here.  ** Recommend: keep the half, name the grid it is read on. **
+      \u2461 l.1943-1949, the forbidden half: re-point every digit.  c -0.0670 -> -0.0092 at 6.7 of
+        its error, |c| falling 86 per cent onto the control's own value, sign changes 32 -> 38,
+        longest run 16 -> 12, chi^2 per bin 2.64 -> 1.33, l_A 302.943 -> 301.400 against 301.375.
+      \u2462 l.1952-1954, the four-ceiling sentence: `indistinguishable below ell ~= 900` (not 800),
+        `a longest run of seven to nine bins` (not eight or nine), the specified run growing
+        9, 9, 9, 16 and the forbidden one 7, 8, 8, 12.  `separate only above it` HOLDS.
+      \u2463 and the \u0060\\rcpt\u0060 on that sentence: it is closed by the THREE-GRID receipt, which gates none
+        of these four numbers.  ** Recommend citing THIS receipt there -- it computes all four at
+        those four ceilings on both arms -- and leaving the three-grid citation on the reach
+        sentence that follows, which is its own. **
+""")
 print(f"\n  {len(CHECKS)} checks, {len(CHECKS)-len(bad)} pass, {len(bad)} fail")
 print("  GATES: " + ("ALL PASS" if not bad else "FAILURES ABOVE"))
 print("""

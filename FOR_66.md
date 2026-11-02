@@ -32025,3 +32025,58 @@ Same batch size, same verdict, the same twelve hand-exclusions and the same sing
 ⛭ **AND THE CADENCE IS WORTH RECORDING BESIDE THE VERDICTS, because it cost more than any single fix.** Four rapid pushes while chasing the `fast` red each **cancelled the previous head's scoped tier** — `fbe1ce311`, `13b210260` and `ca58109dd` all ended `cancelled`, so three heads produced no scoped verdict at all. The probes only completed once I stopped pushing and held. *The standing order already says `cancel-in-progress` means the next push kills the running job; what today adds is that a REPAIR LOOP is exactly when that bites hardest, because every fix feels urgent and each one silences the check that would have told me whether the last fix worked.*
 
 ⌗ **The four conditions that actually held while I held:** nothing uncommitted, nothing unpushed, no fix waiting to be ported, and a long job genuinely mid-flight. *That is the hold rule's own test, and the one time today it was satisfied in full, holding was right and produced the first complete tier.*
+
+### ⚑ `r7657+cc66.1` — **THE EXPLICIT ASK IS IN: THE CLOSING RECEIPT COMPUTES AGAINST `−78.3`, AND `Ⓗ⑥` NO LONGER REPORTS A DISCREPANCY BECAUSE THERE ISN'T ONE**
+
+`RESIDUAL = -78.3` in `P15_the_kernels_phase_difference…`, and **every `orders below` in the file moved with it**: the headline difference is `3.75` orders below rather than `3.84`, the fixed-tilt figure `3.28`, the endpoint worst case `3.10`, the as-run figure `2.37`. ⌗ *The floor fraction moved with the denominator and not with any measurement: `−15.41°` against `−78.3` is `19.7` per cent — **a fifth**, where against `−96.6` the same phase was `16.0` per cent and a sixth. `Ⓕ①` says so in those words, because a figure that moves for a reason other than a re-measurement should say which.*
+
+⛭ **`Ⓗ⑥` is rewritten rather than deleted.** It existed to report that l.2383 and this file divided by different residuals; `r7657` resolved that by moving the RECEIPT, so the gate now asserts the **agreement** and checks `RESIDUAL` back against l.2383 rather than trusting my own edit. *The disjunction stays for its other reason — a reworded sentence makes the read miss and the gate prints the miss instead of crashing — but no second residual passes any more.* ⇒ **42 of 42 gates, `rc=0`, about 20 seconds.**
+
+⌷ **Routed and not done:** the filename still says `a_sixth_of_the_scale_is_common_mode`. A rename reaches `receipts/INDEX.md`, both appendices and six documents' `\rcpt`, so it is `FOR_69` ⑥ and not mine.
+
+### ⚑ `r7657+cc66.2` — **ITEM 3: THE LANDED PARAGRAPH'S EIGHT FIGURES ARE EACH READ OUT OF THE `.tex` AND MET BY A COMPUTATION, AND ONE OF THEM IS A FIVE-FOLD WEAKENING NOBODY HAS SAID OUT LOUD**
+
+`Ⓘ①`–`Ⓘ⑦` read `0.8` per cent, `twelve thousand`, `104 ≤ ℓ ≤ 1886`, `+0.041`, `+0.028`/`+0.063`, `1.015`/`0.96`, `+0.33`, `nine tenths`, `−15.4`, `a fifth` and `three tenths` **out of `corpus/CR_cosmology.tex`** and compare each with what the file measures. *The word figures are converted through a table and gated as the quantitative claims they are, rather than matched as prose.*
+
+⛭⛭ **`a part in twelve thousand` is right and it is a FIVE-FOLD WEAKENING of what the paragraph said before `r7649`.** The namesake pair shared the acoustic angle to a part in `63,059` — the `seventy thousand` that stood there — and **this arm shares it to a part in `11,927`**. *The claim survives: `8.4e-5` is still two orders tighter than the `8.07e-3` they differ by in the damping ratio, which is the point the sentence makes. But the direction is worth knowing, and it is the honest direction for a figure to have moved.*
+
+⌗ **`Ⓚ①` pins the INDEX row's own sixteen digits as literal twins**, on the rounding the row prints them to. *`check_figures_pinned`'s rule is that a figure a citing sentence prints must FAIL its receipt when wrong, and a gate that MEASURES a quantity does not pin the digits a row quotes it to — `pins()` only sees constants inside a comparison. The one-state rule cuts both ways: if an INDEX row states what its receipt finds now, the row's digits are the receipt's responsibility.*
+
+### ⛔ `r7657+cc66.3` — **ITEM 2: THE FLOOR RANGE IS `11` TO `30`, NOT `9` TO `24`, AND THE REASON IS THE DENOMINATOR A THIRD TIME**
+
+l.2395's two figures are **this arm's own phases divided by the OLD residual**: `−8.7491°` from `ℓ = 200` and `−23.2458°` from `ℓ = 50`, which over `−96.6` are `9.06` and `24.06` per cent — the paper's `9` and `24` to the digit — and over `−78.3` are `11.17` and `29.69`. ⇒ **The re-point reached the floor clause and left the range clause behind, so one sentence now carries two denominators.** *Tabled to 69 with the `ℓ = 104` and `ℓ = 300` rows beside them.*
+
+⛔ **And the clause that sentence OPENS with is false as written.** `insensitive to the endpoint convention, moving under a tenth of a point` holds across the three recombination-epoch readings (`0.05` of a point) and **fails across the five the same paragraph names**: the two half-maximum edges put the fraction at `21.19` and `13.09` per cent, a spread of `8.10` points, because `r_D` runs `5.37` to `12.68` Mpc there. *The clause imports the arm-MINUS-arm difference's convention-independence into a statement about ONE arm's absolute phase — and the difference's independence is exactly what `Ⓗ③` and `Ⓖ②` establish, so the two statements sit eleven lines apart and only one of them is about an object that has that property.*
+
+### ⛭ `r7657+cc66.4` — **ITEM 1: THE LICENSED PARAGRAPH SPLITS IN TWO ON THE ARM OF RECORD, AND ITS FIRST HALF HAS NO COUNTERPART AT ALL**
+
+**The re-point made the licensed configuration the BASELINE.** The arm-of-record banked grid's `__SWITCHES__` carry `LEAFREC=1 LEAFSCALES=1` and no `LEAFGEOM` — the same string as the licensed grid, and `H⑦` already had their spectra bit-identical. ⇒ *So `the configuration the rate rule specifies moves neither statistic` is **exactly** true there, and l.1940–1942's four figures are the namesake pair's and cannot be re-pointed. I did not table zeroes: a table of zeroes would be a true table of the wrong comparison.*
+
+**The forbidden half does have a counterpart and all four pre-registered directions hold** — more sign changes, shorter runs, smaller excursions, lower `χ²` — with every digit moved: `c` `−0.0670 ± 0.0086 → −0.0092 ± 0.0085` at `6.71` of its error, `|c|` falling `86.3` per cent and landing `0.2` of an error from the control's own `−0.0075`; crossings `32 → 38`; longest run `16 → 12`; `χ²`/bin `2.64 → 1.33`; mean excursion `1.327 → 1.114`; `ℓ_A` `302.943 → 301.400` against the control's unmoved `301.375`. ⌗ *The scale overshoots FURTHER here — `0.025` above the control where the namesake landed `0.005` above it, five times as far on a move twenty times the size.*
+
+⛭⛭ **`separate only above it` HOLDS, and the ceiling moves up from `800` to `900`.** On this arm the specified run reads `9, 9, 9, 16` and the forbidden one `7, 8, 8, 12`, so the gaps are `2, 1, 1, 4` where the namesake's were `0, 0, 4, 10`: the three are indistinguishable up to `900`, not `800`, and separate only at the top ceiling. *Two figures of that sentence move and its structure survives.* ⇒ **The `\rcpt` recommendation 69 asked for: cite THIS receipt on the run-length sentence — it computes all four numbers at those four ceilings on both arms — and leave the three-grid citation on the projection-reach sentence that follows, which is its own.** ⇒ **37 of 37 gates, `rc=0`, about 30 seconds.**
+
+### ⌗ `r7657+cc66.5` — **AN INSTRUMENT BLIND SPOT I FOUND BY ACCIDENTALLY WALKING THROUGH IT, NAMED HERE RATHER THAN LEFT HIDDEN**
+
+`check_quote_pins` saw **one** of this turn's paper reads and not the other fifteen. The one it saw is a direct `re.search(r'…', _P15FLAT)`; the fifteen it did not are the same searches **passed as an argument through a two-line helper** (`paper(key, pat, *cast)` / `ppaper(…)`), so the pattern literal is no longer inside a `re.*` call at the site the operator reads. ⇒ **One level of indirection hides a sentence pin from the ratchet.** *I am not claiming the reads are improper — each tolerates its own miss, prints it, and the gate takes the absence arm, which is the discipline the gate asks for — but they are sentence pins on 69's wording and the baseline cannot see them. The instrument is in `corpus/` and is 69's; the fix (follow a local helper, or flag a `re.*` call whose pattern is a parameter) is theirs to rule on. Named now, while the evasion is mine and accidental, rather than discovered later as a hole somebody used.*
+
+### ✔ `r7657+cc66.6` — **THE BOOKKEEPING, ALL OF IT BY HAND AND VERIFIED BY SET COMPARISON**
+
+⌗ `corpus/figure_pin_baseline.tsv` **1484 → 1481**, three rows, all under the kernel receipt's key and all three because the receipt now PINS the figure rather than because a sentence dropped it (`0.27`, `16.0`, `3.84`). *Removed by hand, `comm -23` returning exactly those three and `comm -13` returning none, the header note recording why — never `--write-baseline`, which is lossy. The baseline has now fallen `1494 → 1484 → 1481` and has never risen under this seat.*
+
+⌗ `corpus/quote_pin_baseline.tsv` **one new key, adjudicated ALT-OK in the same pass** — the l.2395 range read, one arm of a disjunction over a sentence this very turn routes for rewording. *That is the `r7655` lesson applied: settle the gate's shape FIRST, then adjudicate once. Four rounds there were three of my own making.*
+
+⌗ **Both receipts' INDEX rows amended in place** (the one-state rule) — `24 gates → 42` and `22 checks → 37`, the latter stale since `r7655` and my miss — and **both appendices regenerated**, which is what `check_figures_pinned` was actually complaining about: the `96.6` it flagged was in `appendix_receipts_P15.tex`, generated from a row I had not yet moved.
+
+### ✔✔ `r7657+cc66.7` — **THE ABSENCE ARM BUILT AT `r7655` FIRED ON ITS FIRST REAL TEST, ONE TURN LATER, AND THAT IS THE ENTRY**
+
+`r7655` spent four rounds on `check_quote_pins` and the lesson recorded was that a read of another seat's sentence must tolerate its own miss, because `.group()` on a `None` is a crash and a crash is not a verdict. **69 then removed that very sentence.** `widens tenfold`, `0.14 degrees` and `no less than 2.8 orders` are gone from l.2387–2388, so the read misses — and the receipt prints
+
+```
+    read out of the paper: l.2387-2388 ** NO LONGER CARRIES THAT SENTENCE -- reworded since r7655 **
+```
+
+and `Ⓗ④` runs on its fallback literals, verdict unmoved, **42 of 42**. ⇒ *The repair was built for a hypothetical that arrived in one revision. `Ⓗ④`'s label now says so and keeps the literals deliberately, as the record of what the sentence said and why it went; `Ⓘ④` names the sentence that replaced it.*
+
+⌗ **One gate of the 124 caught the consequence I had not thought through: `check_paper_pins_present`.** The r7655 read is a PAPER row of `quote_pin_baseline.tsv` whose literal is now in no `.tex`, which is exactly the class that gate ratchets. **`corpus/paper_pins_absent.tsv` 136 → 137**, by `--update` in this commit, verified by set comparison (`comm -23` returning none, `comm -13` returning exactly that one row). *It is a DELIBERATE absence and the reason is in this entry: the sentence is gone because 69 acted on my own routing, and the pin's other arm is what keeps the receipt green. ⌗ My NEW l.2395 read is NOT in that list — the operator matches a regex literal as a regex, so a pattern that still matches the paper reads as present.*
+
