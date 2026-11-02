@@ -205,3 +205,90 @@ items above are a citation and a gate, not a number.
 
 **Running total of this seat's own rule conditions corrected by measurement or by another seat rather
 than by reading, across `r7648`, `r7650`, `r7652`, `r7654`, `r7656` and `r7658`: twenty-seven.**
+
+---
+
+# `r7658+60.2` — THE PIN CHECK CAUGHT ONE: `−15.4` IS OUTSIDE HALF A UNIT OF EVERY VALUE BUT ONE, AND THE ONE IT MATCHES IS NOT THE OBJECT THE SENTENCE NAMES
+
+**⑰ REGISTERED BEFORE IT IS SCORED, and declared honestly: a pin I wrote FAILED and that failure is
+how I found this.** `ⓑ①` asserted that every figure in the paragraph reproduces to half a unit in its
+last printed digit. It came back **FAIL on one figure only**, and I then read the four values the
+receipt prints for that quantity:
+
+| route and arm | value | to one decimal | distance from the paper's `−15.4` |
+|---|---|---|---|
+| closed-form, arm | `−15.4648` | `−15.5` | `0.0648` — **outside** |
+| closed-form, control | `−15.4507` | `−15.5` | `0.0507` — **outside** |
+| full Bessel, arm | `−15.4532` | `−15.5` | `0.0532` — **outside** |
+| full Bessel, control | `−15.4391` | `−15.4` | `0.0391` — inside |
+
+The figure-pin allowance for `−15.4` is the coarser of half a unit (`0.05`) and `0.05%` of `15.4`
+(`0.0077`), so it is **`0.05`**. **Three of the four are outside it, and the one inside is the control
+on one of the two routes** — while the sentence says *"the kernel's own running phase is `−15.4`
+degrees … **common to the two arms** to three tenths of a per cent"*, which names the arms, not a
+control on a single route.
+
+**I predict: the figure is right to about half a per cent and WRONG at the digit it prints**, in the
+sense the figure-pin gate means — the correctly-rounded value of every arm row is `−15.5`. *This is
+not an error in the physics and it changes nothing the paragraph argues: the "a fifth" reading holds
+at either value (`15.4/78.3 = 1/5.08`, `15.5/78.3 = 1/5.05`). It is a printed digit that no receipt
+row supports on the object the sentence names.*
+
+**⑱ AND THE SAME SENTENCE IS LOOSER THAN ITS RECEIPT IN THE OTHER DIRECTION:** it says the two arms
+agree **"to three tenths of a per cent"** where the receipt prints **`0.09%`** — true, and weaker by a
+factor of `3.3`. *Registered as a separate verdict, because a true-but-loose statement and a
+mis-printed digit are different findings and folding them together would hide both.*
+
+**⑲ THE REACHABLE NEGATIVE, registered: some other row in the candidate set prints a value for this
+quantity that rounds to `−15.4` on an ARM.** If one does, the figure is located, ⑰ is a MISS, and that
+row is named. *It is searched for across both banked outputs, not assumed away.*
+
+⌗ **And the thing worth saying about this one is how it was found.** I did not go looking for it; a pin
+I had written to pass simply failed, and the failure named the figure. *That is what a pin is for, and
+it is the first time in six revisions that one of mine caught something rather than being corrected.*
+
+**⑳ WHAT IS STILL NOT CLAIMED.** No correction is proposed — `69` chooses whether to print `−15.5`, to
+cite the route and arm the `−15.4` is read on, or to print `−15` and lose nothing. All three are
+available and the choice is not this seat's.
+
+---
+
+# `r7658+60.3` — SCORED. ⑰ HELD, ⑲'S NEGATIVE IS NOT REACHED — AND THE SCAN THAT SAID IT WAS, WAS MY OWN GRANULARITY
+
+**⑰ HELD.** `−15.4` is outside half a unit of **every arm value either route prints**; the nearest is
+`0.0532` against an allowance of `0.05`, and the one row inside is the **control on one of the two
+routes**. **⑱ HELD** too: "three tenths of a per cent" is true and loose by `3.3×` against the
+receipt's `0.09%`. **⑪ HELD**: the two-route agreement is `MIXED-BASIS`, real as worded on the pair it
+was measured on and unestablished on the pair the sentence names. **⑬ HELD**: Ⓗ④ passes, and its
+sentence is gone.
+
+## ⛔ AND ⑲ SCORED A MISS FIRST — ON MY OWN INSTRUMENT, FOR THE THIRD TIME IN THREE REVISIONS
+
+The first version of ⑲'s scan was **line-level**: any line naming `arm` that carried a value inside
+the allowance. **It returned ONE hit and reported the negative REACHED.** The hit was `−15.4391` — the
+**control's** value, sitting on a line that reads `arm −15.4532   control −15.4391`. *A line-level
+search cannot tell which column a number is in, so it attributed a control value to an arm.* Made
+column-aware, it returns **zero**, and ⑲'s negative is **not** reached.
+
+⌗ **The same lesson in its third form.** *The sweep that measured its own reach; the matcher that
+measured its own window; and now a search whose granularity was coarser than the distinction it was
+asked to make.* **Every one answered about itself and looked like an answer about the corpus** — and
+this one would have reversed a finding. *It is kept in the file, with the hit it returned and why.*
+
+## THE READING, COMPLETE
+
+**Every figure in all three stretches reproduces on the object its sentence names, except one**, and
+every derived word holds:
+
+- **The kernel paragraph:** `+0.04106`, `+0.33081`, the tilts `1.015066`/`0.96`, `+0.807%`, a part in
+  twelve thousand, and an endpoint column whose **exact min and max are the paragraph's `+0.028` and
+  `+0.063`** with all five of one sign. The words hold on the residual the paragraph names: `3.280`,
+  `3.097`, `2.374` orders, `0.876`, `1/5.06`.
+- **The fourth-peak sentence:** `3.26` of `1121.85` is `0.291%`; `1.381` spreads; `0.656` shared with
+  the control — **all four read off one locator, both sides.**
+- **The two-path sentence:** a part in `296`; and "by more than either differs from the sky" holds on
+  both ratios **and on both sky bases**, margins `1.13×` to `1.18×`.
+- **The exception:** `−15.4`, outside the printed digit on every arm row.
+
+**Running total of this seat's own rule conditions corrected by measurement or by another seat rather
+than by reading, across `r7648`, `r7650`, `r7652`, `r7654`, `r7656` and `r7658`: twenty-nine.**
