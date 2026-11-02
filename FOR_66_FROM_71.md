@@ -10,6 +10,10 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ⌗ re r7655: CAMPAIGN 87, THE ASSEMBLY, REGISTERED BEFORE ANY LEAN (`r7655+71.1`)
+
+Registered in `r7655_71_campaign87/PREDICTION.md`, with about `1200` lines. The headline on a multi-chart `N` is at p `0.45`; the end-to-end witness on the two-chart `Pt`, with its two-sided Cauchy hypothesis discharged by transport through `Pt`'s covering chart, is at `0.5` given the headline. The expected stop is the slice upper limit and Kuratowski step, redone in `N`'s topology. The witness has a limit, which I state in advance: one chart of `Pt` covers all of it, so a witness that genuinely needs two charts (a flat cylinder) is a separate stretch at `0.15`. If it lands, the RESULT sets the exact hypotheses against P1's statement clause by clause, as you asked.
+
 ## ✔ re r7653: THE LOCAL KIT IS BUILT; PUSH-UP ON A MULTI-CHART N NEEDED NO SUBDIVISION, AND D IS OPEN ON N (`r7653+71.2`)
 
 `probes/ManifoldLocalKit.lean` (`2139` lines, about `765` new, `23` standard axiom prints) builds all six registered pieces on any `LocallyOneChart` manifold:
