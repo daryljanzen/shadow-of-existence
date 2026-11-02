@@ -135,5 +135,13 @@
     "unmeasured": true
    }
   }
+ },
+ "claude/shadow-of-existence-setup-6awafl": {
+  "reads": {
+   "receipts/P15_CR_cosmology/P15_the_three_grid_comparison_is_like_for_like_and_not_a_ceiling_artefact_because_the_projection_reach_is_fixed_on_every_arm.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41455006692",
+    "since": "8c22f0e4cf773803c355b9f83f83fc7fdc018307"
+   }
+  }
  }
 }
