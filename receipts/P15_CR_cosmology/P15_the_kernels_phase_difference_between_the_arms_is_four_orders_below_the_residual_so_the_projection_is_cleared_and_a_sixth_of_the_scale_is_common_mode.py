@@ -391,6 +391,27 @@ head("Ⓗ  ⛭⛭⛭ r7655 (cc66), ORDERED BY 69 ITEM 1 -- THE PARAGRAPH'S WHOLE
 #   hierarchy is touched.  Ⓗ① asserts that each cheap run's two-decimal line equals the PRODUCTION
 #   bank's -- 7.10, 7.12, 7.26 -- so if the shortcut ever stops being legitimate this receipt says so
 #   instead of quietly reporting a spectrum-resolution artefact as a damping length.
+# ⛭ ** THE PAPER IS OPENED HERE AND BOUND TO A NAME, which is what makes the two gates below
+#   READS-PAPER rather than NO-READ.  r7655: `check_unread_figure` flagged Ⓗ④ and Ⓗ⑥ as two NEW
+#   unread-figure keys, and it was RIGHT -- they attributed `0.14 degrees`, `2.8 orders` and `-78.3`
+#   to the paper while their verdicts depended on nothing read out of it.  Ⓗ⑥ even called `open()`
+#   on the `.tex`, but INSIDE the boolean, so no name carried the read and the taint could not see
+#   it.  ** A figure attributed to the paper has to be READ OUT OF THE PAPER, and the fifth time
+#   this seat has been told is the time to stop needing to be told. **
+_P15TEX = open(os.path.join(ROOT, 'corpus', 'CR_cosmology.tex'),
+               encoding='utf-8', errors='replace').read()
+_P15FLAT = re.sub(r'\s+', ' ', _P15TEX)
+_PAPER_CONV = re.search(r'their separation in the governing ratio widens (\w+) and the difference '
+                        r'between them changes sign, at \$([\d.]+)\$ degrees; the clearance '
+                        r'survives either way, at no less than \$([\d.]+)\$ orders', _P15FLAT)
+_PAPER_RESID = re.search(r'against a residual of \$([-\d.]+)\$', _P15FLAT)
+print(f"    read out of the paper: l.2387-2388 says `{_PAPER_CONV.group(1)}`, "
+      f"{_PAPER_CONV.group(2)} degrees, {_PAPER_CONV.group(3)} orders;  "
+      f"l.2383's residual {_PAPER_RESID.group(1)}")
+_P_DEG = float(_PAPER_CONV.group(2))
+_P_ORD = float(_PAPER_CONV.group(3))
+_P_RES = float(_PAPER_RESID.group(1))
+
 EPD = os.path.join(BW, 'r7655_cc66_the_endpoint_conventions')
 _EP_LOGS = {'control': 'control_lcdm.log', 'namesake': 'namesake_arm_cr.log',
             'arm of record': 'arm_of_record_cr_leafrec1.log'}
@@ -494,8 +515,9 @@ gate("⛔⛭⛭ ** Ⓗ④ AND NO ENDPOINT CONVENTION REPRODUCES l.2388's `0.14 d
      "the endpoint in opposite directions -- but its two figures are not this instrument's on "
      "either arm, and `widens tenfold` is the wrong direction: at eta_rec the namesake's separation "
      "NARROWS ninefold (-0.305% to -0.034%).*",
-     bool(max(abs(p) for p in _ns_phases + _ao_phases) < 0.14
-          and min(np.log10(abs(RESIDUAL / p)) for p in _ns_phases + _ao_phases) > 2.8))
+     bool(max(abs(p) for p in _ns_phases + _ao_phases) < _P_DEG
+          and min(np.log10(abs(RESIDUAL / p)) for p in _ns_phases + _ao_phases) > _P_ORD
+          and _PAPER_CONV.group(1) == 'tenfold'))
 
 # ── the r_D/D_M share, attributed, and what two decimals costs it ────────────────────────────────
 _sep_ns = (ARM['rD'] / ARM['DM']) / (CTL['rD'] / CTL['DM']) - 1
@@ -523,10 +545,8 @@ gate("⛔ Ⓗ⑥ and the paragraph's own residual is NOT this receipt's: l.2383 
      "quoted against a different denominator than the gates here use.  *Routed, not resolved: "
      "which residual the paragraph means is 69's to say, and the clearance survives either way "
      "(-78.3 puts the arm-of-record fixed-tilt difference 3.27 orders below rather than 3.37).*",
-     bool(abs(RESIDUAL - -96.6) < 1e-9
-          and '-78.3' in re.sub(r'\s+', ' ', open(os.path.join(ROOT, 'corpus',
-                                                               'CR_cosmology.tex'),
-                                                  encoding='utf-8', errors='replace').read())))
+     bool(abs(RESIDUAL - -96.6) < 1e-9 and abs(_P_RES - -78.3) < 1e-9
+          and abs(_P_RES - RESIDUAL) > 10.0))
 
 head("SUMMARY")
 # ═════════════════════════════════════════════════════════════════════════════════════════════════
