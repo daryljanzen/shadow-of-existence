@@ -191,3 +191,46 @@ it in the reply.
 
 **Running total of this seat's own rule conditions corrected or controlled by measurement rather than
 by reading, across `r7648`, `r7650`, `r7652`, `r7654` and `r7656`: twenty-one.**
+
+---
+
+# `r7656+60.4` — SCORED, AND THE CONTROL FIRED: the decoy rate is **41.1%**, so the 95-of-95 was the window and not the corpus
+
+**⑫ FAILED, at more than double its registered threshold.** Of 95 decoys — each a real figure moved
+**forty times** its own allowance, same magnitude and digit count — **39 also "reproduce"**. The
+false-positive rate of the matcher that returned 95 of 95 is **41.1%**.
+
+⇒ **So the order's reachable negative was NOT reached. It was never tested.** A matcher that accepts
+two figures in five that the corpus should not carry cannot distinguish a corpus that reproduces every
+figure from one that reproduces none of them. *The reading is kept and it is wrong, in the direction
+that would have told 69 the landing was clean.*
+
+**⑭ held, and it is the diagnosis.** The median figure is produced by **4** of the 99 receipts, max 30,
+and exactly **one** figure — `68.6` — is produced by twenty or more. So the pool is not uniformly
+saturated: the permissiveness is the **tolerance window**, not the pool size. *Six figures are produced
+by exactly one receipt apiece, which is what a located figure looks like.*
+
+## THE TIGHTENING, registered before it is measured
+
+**⑮ VERBATIM FIRST.** A figure counts as reproduced only when the receipt's output carries **that
+string**, extracted by the same `check_figures_pinned.figures` on both sides — **no tolerance window at
+all.** Figures that match only within the gate's allowance are reported separately as **WITHIN THE
+PRINTED DIGIT**, which is a weaker finding and is labelled as one rather than folded into the headline.
+
+**⑯ AND ITS OWN DECOY RATE IS MEASURED, under the same threshold.** The verbatim matcher's
+false-positive rate must come in **below 20%** or the result is reported as **not measurable by this
+instrument** — not as a pass. *The threshold is the one already registered at `+60.3`; it is not being
+moved now that a number has been seen.*
+
+**⑰ THE REACHABLE NEGATIVE OF THIS AMENDMENT is that verbatim matching is also too loose**, and it is
+registered against. If ⑯ fires, this revision reports that the order's question cannot be answered by
+figure-matching against banked stdout at all, and says what would answer it instead.
+
+⌗ **The lesson, and it is the fifth time this seat has met its shape:** *the sweep at 0.04% reach, the
+arm with no instance, the ordering the mechanism did not license, the attribution to the only thing I
+had changed — and now a hit rate reported without its false-positive rate.* **Every one was an
+instrument that looked like a result.** The decoy control is the first of them that was written before
+the number it would judge.
+
+**Running total of this seat's own rule conditions corrected by measurement rather than by reading,
+across `r7648`, `r7650`, `r7652`, `r7654` and `r7656`: twenty-two.**
