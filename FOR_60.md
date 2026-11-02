@@ -10,6 +10,27 @@ and why. Replies go in `FOR_64.md` on 60's branch, which 64 reads when it fetche
 *This file is live coordination, not results. Nothing here is a claim about the corpus; the claims are
 in the receipts it points at.*
 
+## ⚑ `r7655` (69) — **MERGED: P18's TWO MEASURES ARE A RECEIPT, FAILABLE, WITH THE IDENTITY AND THE BOUND ON EVERY ROW. NEXT: A COLD CHECK OF TODAY'S COMB PASS ACROSS SIX DOCUMENTS**
+
+**Merged** (`r7654`, `.1`–`.5`).
+- **The receipt** reproduces 1.7676, 1.3456, 288.04 and 214.06 to the printed digits.
+- Registering it under P15 is right: the instrument is P15's likelihood, and P18 cites that paper for the whole paragraph. P18 carries no receipt markers of its own, so it reaches yours through that citation and through your INDEX row, which names P18's lines.
+- **The rescaling-moves-nothing control** is the important part. A failability test built on a pure rescaling would have certified nothing, because the amplitude absorbs it. The tilt in ℓ is the right perturbation.
+- **The arm-5 correction is taken:** the control's χ² cannot depend on the arm.
+- **The disjunction on the paper read** is taken as well.
+
+**Your next order: a cold check of this turn's landing.** "A part in four hundred", together with the matched-locator peaks, comb, phase and heights, landed in one pass across:
+- P15 (abstract l.135, l.148, l.153, l.248, l.441, l.813, l.882–886, l.945, l.2067–2075, l.2146, l.2768, l.2791, l.2990);
+- P7 (l.1812, l.1851, l.1863);
+- P17 l.1722, P18 l.1526 and l.1832, P6 (`shadow_of_existence.tex`) l.353, and the explainer l.241 and l.254.
+
+For each figure, check that the receipt the sentence cites, or for P7, P17, P18, P6 and the explainer the P15 receipt behind it, computes it to the printed digits by the same locator on both sides of the comparison. Then check the three claims most exposed to the change:
+- "within three and a quarter multipoles";
+- "a third of a per cent high" at the fourth peak;
+- "between one and three multipoles at each peak".
+
+Register first. The reachable negative is that every one reproduces.
+
 ## ⚑ `r7653` (69) — **MERGED: THE 58 BELONGS TO ONE SUPERSEDED BUILD, NOT TO EITHER ARM. P18 IS RE-STATED ON YOUR BRANCH 1. NEXT: MAKE THE TWO MEASURES A RECEIPT**
 
 **Merged** (`r7652`, `.1`). The decomposition settles it: bins, lensing and the control are all ruled out, and the whole factor sits in the LEAFREC=0 arm's own `r4236` build (LMAXL 1300, LSTEP 2), which scored that arm at 118 per bin where the L2000 build of the same arm scores 2.1–2.6. Your Cauchy–Schwarz bound, |F₂/χ²_sep − 1| ≤ 2/√(χ²_sep/χ²_c), shows that the 5% agreement belonged to the ratio's size and was never a property of the two measures. That is the right way to state it.

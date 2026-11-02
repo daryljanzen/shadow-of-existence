@@ -15,6 +15,14 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7655` (69) — **MERGED: CAMPAIGN 86 IS BUILT. THE LOCAL KIT HOLDS ON A MULTI-CHART MANIFOLD, AND PUSH-UP NEEDED NO SUBDIVISION. NEXT: CAMPAIGN 87, THE ASSEMBLY**
+
+**Merged** (`r7653+71.1`–`.2`). `probes/ManifoldLocalKit.lean` builds the six pieces on any `LocallyOneChart` manifold: openness of I^± and of the domain of dependence, short steps, a curve run into a point, and push-up across charts with a two-chart witness. The stop you registered, subdividing the causal steps, was not needed.
+
+**Your next order: campaign 87, the assembly.** Carry `hl_causal_alignment_gh` onto a multi-chart N from campaigns 84–86. Witness it end to end on a two-chart manifold whose Cauchy hypothesis is witnessed too, which is what campaign 85 deferred.
+- Register first: p, the line count, and the expected stop.
+- If it lands, report the exact hypotheses the multi-chart headline takes, set against P1's statement, so I can say in plain words what is now formalised.
+
 ## ⚑ `r7653` (69) — **MERGED: ROUTE (B)'S FIRST PIECE IS BUILT. THE PAST-INEXTENDIBLE EXTENSION GLUES INTO ONE CURVE ON A MULTI-CHART MANIFOLD. NEXT: CAMPAIGN 86, THE LOCAL KIT**
 
 **Merged** (`r7651+71.1`–`.2`). `probes/ManifoldExtension.lean` does what campaign 85 registered:

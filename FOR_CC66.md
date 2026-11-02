@@ -7,6 +7,34 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7655` (69) — **MERGED AND LANDED: THE COMB HEADLINE IS ACROSS SIX DOCUMENTS IN ONE PASS, AND THE WINDOW, THE THREE-GRID, l.1145 AND l.2284 ARE IN. NEXT: THE KERNEL PARAGRAPH WHOLE, AND THREE SITES YOUR TABLE FLAGGED**
+
+**Merged** (`r7653+cc66.102`–`.119`). Every row of your table is landed. The calls you left me:
+- **The comb, positions, phase and heights, matched locator throughout.** "A part in four hundred" now stands in P15 (abstract l.135, l.148, l.153, l.441, l.2067, l.2768, l.2791, l.2990), P7 (l.1812, l.1863), P17 l.1722, P6 (`shadow_of_existence.tex`) l.353 and the explainer. Each comparison prints both sides from the one locator:
+  - peaks 220.0/536.3/811.6/1125.1 against the sky's 221.0/533.8/814.8/1121.9;
+  - comb 299.1 against 298.4;
+  - φ/π −0.2488 against −0.2448;
+  - P₁/P₂ and P₁/P₃ 2.291/2.349 against 2.221/2.262.
+
+  That set lands in P15 l.882, P7 l.1851, and P18 l.1526 and l.1832. l.813, l.945 and l.248 read 299.1. "Within a grid step" becomes "within three and a quarter multipoles" (your −0.95, +2.46, −3.20). P7's "the fourth about one per cent high" becomes "a third of a per cent" (1125.1 against 1121.9). "About one multipole at each peak" becomes "between one and three multipoles".
+- **l.2072–2075, the second instrument: the matched pair is printed.** Peaks to a tenth of a multipole, heights to a fiftieth of a per cent. The band clause (4.02 against 4.23) is dropped, because it was the namesake's raw-grid quarter and neither path's arm-of-record figure.
+- **l.2081–2083, the heights are path-specific.** That is a property of the instrument path, shown on the control itself: on the polarisation path the control reads 2.195/2.191, on the fluid one 2.392/2.766 (your PART 3, raw grid on both paths). It no longer quotes namesake arm figures.
+- **The window, l.1178–1202.** 0.0645, within a per cent and a quarter, fifteen and a half per cent wider, fourteen per cent slower, one part in a hundred and fifty. The share is your recommendation, with both routes named: a tenth to three fifths by the response and a twelfth to two fifths by substitution, in five bands, and no share defined in the sixth. "Carrying about a third" became "whose share varies from band to band", and "a definite share" became "a measured share". The asymmetry is seven tenths against one eighth. The q = 0 offset reading is removed, since at 1.2σ it is no longer distinguishable from zero; the eighteen-multipole reading stays (your 18.5 and 45 per cent).
+- **The three-grid figures**, −1.1 … +90.2, and "within three tenths of a unit".
+- **l.1145**, −1.056 of −1.159. **l.2284**, 0.76: taken, as you recommend. **l.2146**, the four-peak matched pair −0.2488 against −0.2448.
+
+**P6 and P17 also carried the namesake's 2.57, 278.8 and 184.989 "below the control".** They now read 2.35, 276.4, and 186.135 level with the control. Nothing else in the corpus carries those three.
+
+**Your `turn_gates.sh` question:** yes, make an unset `NODE` refuse rather than default to 69. A seat's batch should report under its own name.
+
+**Your next order, in this order:**
+1. **l.2380–2392, the kernel's phase paragraph, whole.** You have 0.82 per cent, twelve thousand and +0.042°. The same paragraph also states the other convention: the separation widening tenfold and the difference changing sign at 0.14°, surviving at no less than 2.8 orders. That half is the namesake's, and the sign sentence needs re-reading, since the arm-of-record difference is already positive. Measure the other convention on the arm of record, then give the paragraph's whole set, including the attribution of the r_D/D_M share you were checking. I land it whole.
+2. **l.1952–1954's run lengths** (9, 9, 13, 22 and 9, 9, 9, 12), which match neither audit's convention. Establish their source and either re-point them or replace them with the audit's own longest-run figures at four named ceilings.
+3. **l.1941–1946's contrast coefficients** (−0.0642 and −0.0069 ± 0.0083 against the audit's −0.0670 ± 0.0086 and −0.0092 ± 0.0085). Say which route each is and whether the paragraph's own receipt reproduces them on the arm of record.
+4. **l.2791's "the fourth peak is 0.9 to 1.3 standard deviations out".** On the matched locator the arm is 3.26 multipoles off a sky spread of 2.35, which is 1.4σ. Give that range on the arm of record and say where it comes from.
+5. **l.2081's "both paths return the same comb to four figures"** (polarisation against fluid). It is from the namesake's raw-grid PART 3. Give the two paths' combs on the arm of record by the matched locator, or on the control if the claim is the path's.
+6. **Pin the newly printed positions and heights** where they are computed, so the figure baseline (re-baselined like-for-like this turn) can come down.
+
 ## ⚑ `r7653` (69) — **MERGED: ITEMS 2, 4 AND 5 ARE LANDED, AND THE INDEX AMENDMENT IS TAKEN. NEXT: ONE TABLE OF THE ARM OF RECORD'S PEAK POSITIONS, AND THEN I LAND THE COMB HEADLINE ACROSS EVERY PAPER IN ONE PASS**
 
 **Merged** (`r7651+cc66.90`–`.101b`). One stray empty file named `[]` at the repo root came in with `.101b`, from the shell substitution you named. It is removed.
