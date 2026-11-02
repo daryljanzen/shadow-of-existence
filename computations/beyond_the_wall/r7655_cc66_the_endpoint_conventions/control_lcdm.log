@@ -1,0 +1,27 @@
+__SWITCHES__ ARM=lcdm LMAXL=100 LSTEP=50 ZSTART=3e7
+  diffusion: r_D at the visibility peak = 7.10 Mpc  ->  l_D = 1952
+  diffusion: r_D by ENDPOINT CONVENTION (r7655, cc66 -- additive; the line above is the visibility peak at two decimals and is unchanged)
+      r_D at eta_rec (fixed A_REC)          eta =   280.670   r_D =     7.091592 Mpc   r_D/D_M = 5.11486817e-04
+      r_D at visibility peak                eta =   280.745   r_D =     7.103286 Mpc   r_D/D_M = 5.12330228e-04
+      r_D at visibility FWHM, early edge    eta =   264.848   r_D =     5.244258 Mpc   r_D/D_M = 3.78246347e-04
+      r_D at visibility FWHM, late edge     eta =   302.648   r_D =    12.449123 Mpc   r_D/D_M = 8.97903088e-04
+      r_D at tau = 1                        eta =   280.462   r_D =     7.059412 Mpc   r_D/D_M = 5.09165814e-04
+      r_D at today (eta_0)                  eta = 14145.333   r_D = 2013872.802586 Mpc   r_D/D_M = 1.45252203e+02
+
+==============================================================================
+  ACOUSTIC TWO-ARM INSTRUMENT — ARM=lcdm   DRIVING=ON
+==============================================================================
+  rate: radiation-INCLUDED   H0=67.4  Om=0.315
+  z_start = 3e+07   eta_start = 0.016   eta_rec = 280.7   eta_end = 1893
+  D_M = 13865 Mpc   r_s = 144.53 Mpc   l_A = pi D/r_s = 301.4   modes = 780
+  visibility: peak at eta = 280.75 (z = 1089.5), FWHM = 37.80 Mpc   R = 3 rho_b/4 rho_g there = 0.62316   1+R = 1.62316
+  z_eq(leaf) = 3447.1   Omega_r = 9.135415e-05   rho_r/rho_m at the onset = 8700.40
+
+  projection reach: k_max = 200/D_M against a reported l_max = 100 -> ratio 2.00
+  projection sampling: dk = 1.741e-05, Bessel period 2pi/D = 4.532e-04, points per period = 26.0
+  line-of-sight: visibility peak eta = 280.75, FWHM = 37.8 Mpc, 560 samples over eta = 54-1893
+  --------------------------------------------------------------------------
+  PEAKS (line-of-sight)   l_A = 301.4
+  --------------------------------------------------------------------------
+    peaks at l = []
+    sky: 220.6 / 538.1 / 809.8,  l_1/l_A = 0.7312,  P1/P2 = 2.217,  P1/P3 = 2.277

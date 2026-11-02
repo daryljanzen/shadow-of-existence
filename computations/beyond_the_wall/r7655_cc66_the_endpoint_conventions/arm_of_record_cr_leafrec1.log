@@ -1,0 +1,32 @@
+__SWITCHES__ ARM=cr CRH0=68.570730 CROM=0.291246 HIER=1 LEAFGEOM=1 LEAFREC=1 LEAFSCALES=1 LMAXL=100 LSTEP=50 NS=1.015066 WBH2=0.021643 ZSTART=3e7
+  __ONECLOCK__ LEAFGEOM=1: one clock end to end -- max|Jac-1| = 0.0e+00, max|rs_stack-rs_leaf| = 0.0e+00 Mpc
+  diffusion: r_D at the visibility peak = 7.26 Mpc  ->  l_D = 1936
+  diffusion: r_D by ENDPOINT CONVENTION (r7655, cc66 -- additive; the line above is the visibility peak at two decimals and is unchanged)
+      r_D at eta_rec (fixed A_REC)          eta =   283.807   r_D =     7.261427 Mpc   r_D/D_M = 5.16387707e-04
+      r_D at visibility peak                eta =   283.814   r_D =     7.262487 Mpc   r_D/D_M = 5.16463095e-04
+      r_D at visibility FWHM, early edge    eta =   267.691   r_D =     5.373112 Mpc   r_D/D_M = 3.82102446e-04
+      r_D at visibility FWHM, late edge     eta =   306.027   r_D =    12.680891 Mpc   r_D/D_M = 9.01786401e-04
+      r_D at tau = 1                        eta =   283.496   r_D =     7.213164 Mpc   r_D/D_M = 5.12955577e-04
+      r_D at today (eta_0)                  eta = 14345.774   r_D = 2032603.153753 Mpc   r_D/D_M = 1.44546148e+02
+
+==============================================================================
+  ACOUSTIC TWO-ARM INSTRUMENT — ARM=cr   DRIVING=ON
+==============================================================================
+  rate: GEOMETRIC (L1)   H0=68.57073  Om=0.291246
+  z_start = 3e+07   eta_start = 0.016   eta_rec = 283.8   eta_end = 1930
+  D_M = 14062 Mpc   r_s = 146.57 Mpc   l_A = pi D/r_s = 301.4   modes = 70
+  visibility: peak at eta = 283.81 (z = 1089.9), FWHM = 38.34 Mpc   R = 3 rho_b/4 rho_g there = 0.60190   1+R = 1.60190
+  z_eq(leaf) = 3298.8   Omega_r = 8.826135e-05   rho_r/rho_m at the onset = 9091.42
+
+  projection reach: k_max = 198/D_M against a reported l_max = 100 -> ratio 1.98
+  projection sampling: dk = 1.956e-04, Bessel period 2pi/D = 4.468e-04, points per period = 2.3
+  ⌗ CR's ladder is DISCRETE and physical, so this is not aliasing — but it is only
+    not aliasing if the answer does not depend on it. Run KCONT=1 to check.
+  hierarchy: LG = 24, handover at tau' = 3.0/Mpc (eta = 137.6), where 4.1% of 1/k_D^2 has accumulated
+  so the envelope carries 4.1% of the damping and the multipoles carry 95.9% of it
+    modes 0-70 done
+  --------------------------------------------------------------------------
+  PEAKS (line-of-sight, HIERARCHY)   l_A = 301.4
+  --------------------------------------------------------------------------
+    peaks at l = []
+    sky: 220.6 / 538.1 / 809.8,  l_1/l_A = 0.7312,  P1/P2 = 2.217,  P1/P3 = 2.277

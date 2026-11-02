@@ -738,6 +738,31 @@ _kD2inv = np.concatenate([[0.0], np.cumsum(0.5 * (_int[1:] + _int[:-1]) * _dE)])
 kD2inv_of = CubicSpline(_egrid, _kD2inv)
 _rD = float(np.sqrt(_kD2inv[_gi]))
 print(f"  diffusion: r_D at the visibility peak = {_rD:.2f} Mpc  ->  l_D = {(eta_0-ETA_LS)/_rD:.0f}")
+# ⛭⛭⛭ r7655 (cc66), ordered by 69's item 1 -- ** THE SECOND ENDPOINT, PRINTED, AND AT FULL
+#   PRECISION.  ADDITIVE: the line above is untouched, so every reader keyed on it is unaffected. **
+#   *P15 l.2387-2388 states a SECOND convention -- "the two arms' damping lengths respond to the
+#   choice of endpoint in opposite directions, so on the other convention their separation in the
+#   governing ratio widens tenfold and the difference between them changes sign, at 0.14 degrees".*
+#   ** Every banked log in this corpus reports exactly ONE endpoint, the visibility peak, so that
+#   sentence was not reproducible from any banked quantity on any arm. **  The endpoint it refers to
+#   is `eta_rec`, this instrument's own fixed-`A_REC` recombination time, which the run already has
+#   and never reported.  ⇒ Printed here beside the first, so the convention is a MEASUREMENT on
+#   whichever arm is run rather than a figure with no carrier.
+#   ⌗ *And at six decimals, not two: the first line's `%.2f` is why the arm-of-record `r_D/D_M`
+#     separation is quotable only as "about 0.8 per cent" -- a two-decimal r_D puts a band of
+#     +-0.14 points on it (cc66, r7655).  The new line does not inherit that limit.*
+_ENDPOINTS = [('eta_rec (fixed A_REC)', eta_rec),
+              ('visibility peak', ETA_LS),
+              ('visibility FWHM, early edge', float(_egrid[_half][0])),
+              ('visibility FWHM, late edge', float(_egrid[_half][-1])),
+              ('tau = 1', float(np.interp(1.0, _tau[::-1], _egrid[::-1]))),
+              ('today (eta_0)', eta_0)]
+print("  diffusion: r_D by ENDPOINT CONVENTION (r7655, cc66 -- additive; the line above is "
+      "the visibility peak at two decimals and is unchanged)")
+for _nm, _e in _ENDPOINTS:
+    _r = float(np.sqrt(kD2inv_of(_e)))
+    print(f"      r_D at {_nm:30s} eta = {_e:9.3f}   r_D = {_r:12.6f} Mpc"
+          f"   r_D/D_M = {_r / D_M:.8e}")
 
 
 def evolve(kk, t_eval=None, e_end=None, y_init=None):

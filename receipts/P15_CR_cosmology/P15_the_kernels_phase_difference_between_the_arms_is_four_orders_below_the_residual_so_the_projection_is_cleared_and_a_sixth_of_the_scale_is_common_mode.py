@@ -64,6 +64,7 @@ FOUR ORDERS BELOW -- SO THE KERNEL IS NOT A CARRIER AND THE PROJECTION IS CLEARE
 STATUS: rc=0 on success.  Run: python3 <this file>   (numpy, scipy; 20s MEASURED)
 """
 import os
+import re                     # r7655: the endpoint logs and the paper are parsed, not typed
 import sys
 
 import numpy as np
@@ -122,14 +123,21 @@ CTL = arm_inputs('lcdm_base')
 # ─────────────────────────────────────────────────────────────────────────────────────────────────
 #  ROUTE 1 -- r7234's CLOSED-FORM WINDOW, READ AS A COMPLEX INTEGRAL SO THE PHASE COMES OUT DIRECTLY
 # ─────────────────────────────────────────────────────────────────────────────────────────────────
-def phase_window(l, rs, DM, rD, nu=20000, reach=80.0, **_):
+def phase_window(l, rs, DM, rD, nu=20000, reach=80.0, ns=None, **_):
     """arg INT dt W(x;l) exp(2i (x-l) r_s/D_M),  x = l cosh t.  The substitution absorbs the
-    inverse-square-root edge of <j_l^2> = 1/(x sqrt(x^2-l^2)) exactly, so this is plain quadrature."""
+    inverse-square-root edge of <j_l^2> = 1/(x sqrt(x^2-l^2)) exactly, so this is plain quadrature.
+
+    ⛭ `ns` was the module constant `NS` until r7655.  It is now an argument DEFAULTING to it, so
+    every call above is unchanged -- but the arm of record RAN AT `NS=1.015066` while the control
+    ran at the instrument default `0.96`, and a tilt the two arms do not share is a THIRD input to
+    a kernel the paper calls a function of two ratios.  Ⓗ below measures what that costs.
+    """
+    ns = NS if ns is None else ns
     tmax = np.arccosh(max(1.0 + 1e-12, reach * DM / (l * rD)))
     t = np.linspace(0.0, tmax, nu)
     x = l * np.cosh(t)
     k = x / DM
-    W = k ** (NS - 2) * np.exp(-2.0 * (k * rD) ** 2) / x
+    W = k ** (ns - 2) * np.exp(-2.0 * (k * rD) ** 2) / x
     return float(np.angle(np.trapezoid(W * np.exp(2j * (x - l) * rs / DM), t)))
 
 
@@ -363,6 +371,163 @@ gate("Ⓖ② and the answer is a DIFFERENCE at a common convention, so the conve
           < 0.5 * abs(DIFF)))
 
 # ═════════════════════════════════════════════════════════════════════════════════════════════════
+# ═════════════════════════════════════════════════════════════════════════════════════════════════
+head("Ⓗ  ⛭⛭⛭ r7655 (cc66), ORDERED BY 69 ITEM 1 -- THE PARAGRAPH'S WHOLE SET ON THE ARM OF RECORD, "
+     "AND THE OTHER CONVENTION MEASURED RATHER THAN QUOTED")
+# ═════════════════════════════════════════════════════════════════════════════════════════════════
+#
+# ⛔ ** l.2387-2388's OTHER CONVENTION HAD NO CARRIER ANYWHERE IN THE CORPUS. **  The sentence reads
+#   "The two arms' damping lengths respond to the choice of endpoint in opposite directions, so on
+#   the other convention their separation in the governing ratio widens tenfold and the difference
+#   between them changes sign, at 0.14 degrees; the clearance survives either way, at no less than
+#   2.8 orders of magnitude."  ** Every banked log in this corpus reports exactly ONE endpoint --
+#   `r_D at the visibility peak` -- and to two decimals. **  So neither half of that sentence was
+#   reproducible from any banked quantity, on any arm, when it was written.
+#   ⇒ `ACOUSTIC_two_arm.py` now prints the whole endpoint table beside its original line, additively
+#     and at six decimals, and `r7655_cc66_the_endpoint_conventions/` banks one run per arm.
+#
+# ⛭ ** THE SHORTCUT IS LICENSED BY A GATE AND NOT BY AN ARGUMENT. **  Those runs use `LMAXL=100
+#   LSTEP=50` and take eight seconds each, because r_D is a BACKGROUND quantity built before the
+#   hierarchy is touched.  Ⓗ① asserts that each cheap run's two-decimal line equals the PRODUCTION
+#   bank's -- 7.10, 7.12, 7.26 -- so if the shortcut ever stops being legitimate this receipt says so
+#   instead of quietly reporting a spectrum-resolution artefact as a damping length.
+EPD = os.path.join(BW, 'r7655_cc66_the_endpoint_conventions')
+_EP_LOGS = {'control': 'control_lcdm.log', 'namesake': 'namesake_arm_cr.log',
+            'arm of record': 'arm_of_record_cr_leafrec1.log'}
+
+
+def endpoints(fn):
+    """every `r_D at <convention>` row the run printed, plus the n_s it actually ran at."""
+    txt = open(os.path.join(EPD, fn), encoding='utf-8', errors='replace').read()
+    eps = {m.group(1).strip(): float(m.group(2))
+           for m in re.finditer(r'r_D at (.+?)\s+eta =\s*[\d.]+\s+r_D =\s*([\d.]+) Mpc', txt)}
+    two_dp = re.search(r'r_D at the visibility peak = ([\d.]+) Mpc', txt)
+    ns = 0.96
+    sw = re.search(r'__SWITCHES__.*', txt)
+    if sw:
+        for tok in sw.group(0).split():
+            if tok.startswith('NS='):
+                ns = float(tok[3:])
+    return dict(eps=eps, ns=ns, two_dp=float(two_dp.group(1)))
+
+
+EP = {k: endpoints(v) for k, v in _EP_LOGS.items()}
+_PROD = {'control': CTL['rD'], 'namesake': ARM['rD'], 'arm of record': 7.26}
+print("    the cheap runs against the PRODUCTION banks, two-decimal visibility-peak line:")
+for k in _EP_LOGS:
+    print(f"      {k:14s} cheap run {EP[k]['two_dp']:.2f} Mpc   production bank "
+          f"{_PROD[k]:.2f} Mpc   n_s as run {EP[k]['ns']:.6f}")
+gate("Ⓗ① ** THE LICENCE FOR THE EIGHT-SECOND RUNS, ASSERTED: ** each one's two-decimal "
+     "visibility-peak r_D equals the production bank's, so r_D is independent of the spectrum "
+     "resolution these runs threw away -- which is what makes the endpoint table a measurement of "
+     "the same arms and not of a cheaper instrument",
+     bool(all(abs(EP[k]['two_dp'] - _PROD[k]) < 5e-3 for k in _EP_LOGS)))
+
+# ── the third input: the arm of record did not run at the control's tilt ─────────────────────────
+_PK = 'visibility peak'
+_aor = dict(rs=AORD['rs'], DM=AORD['DM'], rD=EP['arm of record']['eps'][_PK])
+_ctl = dict(rs=CTL['rs'], DM=CTL['DM'], rD=EP['control']['eps'][_PK])
+_ns_aor, _ns_ctl = EP['arm of record']['ns'], EP['control']['ns']
+
+
+def _run(p, ns):
+    return -(phase_window(LHI, **p, ns=ns) - phase_window(LLO, **p, ns=ns)) * DEG
+
+
+_d_own = _run(_aor, _ns_aor) - _run(_ctl, _ns_ctl)
+_d_96 = _run(_aor, 0.96) - _run(_ctl, 0.96)
+_d_ao = _run(_aor, _ns_aor) - _run(_ctl, _ns_aor)
+print(f"\n    the arm of record's kernel phase against the control, across {LLO:.0f}-{LHI:.0f}:")
+print(f"      each arm on its OWN n_s ({_ns_aor:.6f} vs {_ns_ctl:.2f}):  {_d_own:+.5f} deg   "
+      f"{np.log10(abs(RESIDUAL / _d_own)):.2f} orders below the residual")
+print(f"      both arms at a COMMON n_s = 0.96          :  {_d_96:+.5f} deg   "
+      f"{np.log10(abs(RESIDUAL / _d_96)):.2f} orders")
+print(f"      both arms at a COMMON n_s = {_ns_aor:.6f}    :  {_d_ao:+.5f} deg   "
+      f"{np.log10(abs(RESIDUAL / _d_ao)):.2f} orders")
+gate("⛭⛭⛭ ** Ⓗ② THE TWO-RATIO IDENTITY SURVIVES AT FIXED TILT AND THE ARMS DO NOT SHARE THE "
+     "TILT.  l.2384's `exactly two dimensionless ratios` IS TRUE AT FIXED n_s AND INCOMPLETE FOR "
+     "THIS PAIR. **  *The difference at a common n_s is the same number whichever common value is "
+     "chosen -- 0.96 and 1.015066 agree to better than 1e-4 degrees -- so the identity holds.  But "
+     "the arm of record RAN at 1.015066 and the control at 0.96, and n_s enters the kernel as "
+     "k^(n_s-2), so as the runs were actually configured the difference is EIGHT TIMES the "
+     "fixed-tilt one.  Both numbers are real and they answer different questions.*",
+     bool(abs(_d_96 - _d_ao) < 1e-4 and abs(_d_own) > 5.0 * abs(_d_96)))
+
+# ── the endpoint conventions, all five, on both pairs ───────────────────────────────────────────
+CONV = ['eta_rec (fixed A_REC)', 'visibility peak', 'tau = 1',
+        'visibility FWHM, early edge', 'visibility FWHM, late edge']
+print(f"\n    EVERY DEFENSIBLE ENDPOINT, both pairs, at a common n_s = 0.96 "
+      f"(so the tilt of Ⓗ② is held fixed and only the convention moves):")
+print(f"      {'convention':31s} {'namesake: sep / phase':>26s}   {'arm of record: sep / phase':>26s}")
+_rows = {}
+for _c in CONV:
+    _out = []
+    for _k, _rs, _DM in (('namesake', ARM['rs'], ARM['DM']),
+                         ('arm of record', AORD['rs'], AORD['DM'])):
+        _rDa, _rDc = EP[_k]['eps'][_c], EP['control']['eps'][_c]
+        _sep = (_rDa / _DM) / (_rDc / CTL['DM']) - 1
+        _ph = (-(phase_window(LHI, _rs, _DM, _rDa, ns=0.96)
+                 - phase_window(LLO, _rs, _DM, _rDa, ns=0.96)) * DEG
+               - (-(phase_window(LHI, CTL['rs'], CTL['DM'], _rDc, ns=0.96)
+                    - phase_window(LLO, CTL['rs'], CTL['DM'], _rDc, ns=0.96)) * DEG))
+        _out.append((_sep, _ph))
+        _rows[(_k, _c)] = (_sep, _ph)
+    print(f"      {_c:31s} {_out[0][0]*100:+10.4f}% {_out[0][1]:+10.5f} deg   "
+          f"{_out[1][0]*100:+10.4f}% {_out[1][1]:+10.5f} deg")
+
+_ns_phases = [_rows[('namesake', c)][1] for c in CONV]
+_ao_phases = [_rows[('arm of record', c)][1] for c in CONV]
+gate("⛭⛭⛭ ** Ⓗ③ l.2386's `only the magnitude is a convention-free statement, and the sign is not` "
+     "IS TRUE OF THE NAMESAKE PAIR AND FALSE OF THE ARM OF RECORD -- in the direction that "
+     "STRENGTHENS the paragraph. **  *The namesake's difference changes sign between conventions "
+     "(negative at the visibility peak and at eta_rec, POSITIVE at tau=1 and at the late FWHM "
+     "edge).  On the arm of record every one of the five is POSITIVE, so there the sign is "
+     "convention-free too, and 69's reading -- that the arm-of-record difference is already "
+     "positive -- is a property of the arm and not of a choice.*",
+     bool(min(_ns_phases) < 0 < max(_ns_phases) and all(p > 0 for p in _ao_phases)))
+gate("⛔⛭⛭ ** Ⓗ④ AND NO ENDPOINT CONVENTION REPRODUCES l.2388's `0.14 degrees` OR ITS `no less "
+     "than 2.8 orders`, ON EITHER PAIR.  THIS GATE ASSERTS THE MISS AND ROUTES THE FIGURE. **  "
+     "*The largest magnitude any of the five gives on the namesake pair is the late FWHM edge at "
+     "0.080 deg, 3.08 orders below -96.6 -- a factor 1.8 short of 0.14 and half an order clear of "
+     "2.8.  On the arm of record the five run 0.028 to 0.063 deg, 3.2 to 3.5 orders.  ⇒ The "
+     "sentence's mechanism is REAL and measured here -- the two arms' damping lengths do respond to "
+     "the endpoint in opposite directions -- but its two figures are not this instrument's on "
+     "either arm, and `widens tenfold` is the wrong direction: at eta_rec the namesake's separation "
+     "NARROWS ninefold (-0.305% to -0.034%).*",
+     bool(max(abs(p) for p in _ns_phases + _ao_phases) < 0.14
+          and min(np.log10(abs(RESIDUAL / p)) for p in _ns_phases + _ao_phases) > 2.8))
+
+# ── the r_D/D_M share, attributed, and what two decimals costs it ────────────────────────────────
+_sep_ns = (ARM['rD'] / ARM['DM']) / (CTL['rD'] / CTL['DM']) - 1
+_sep_ns_full = _rows[('namesake', _PK)][0]
+_sep_ao_full = _rows[('arm of record', _PK)][0]
+_lo = ((_aor['rD'] - 0.005) / AORD['DM']) / ((_ctl['rD'] + 0.005) / CTL['DM']) - 1
+_hi = ((_aor['rD'] + 0.005) / AORD['DM']) / ((_ctl['rD'] - 0.005) / CTL['DM']) - 1
+print(f"\n    l.2385's `differ by 0.27 per cent` in r_D/D_M, attributed:")
+print(f"      namesake, r_D as the log prints it (two decimals) : {_sep_ns*100:+.3f} per cent")
+print(f"      namesake, r_D at six decimals                     : {_sep_ns_full*100:+.3f} per cent")
+print(f"      ARM OF RECORD, six decimals                       : {_sep_ao_full*100:+.3f} per cent")
+print(f"      and what TWO DECIMALS alone would allow there      : "
+      f"[{_lo*100:+.3f}, {_hi*100:+.3f}] per cent")
+gate("⛭⛭⛭ ** Ⓗ⑤ l.2385's `0.27 per cent` IS THE NAMESAKE'S AND IS ITSELF A ROUNDING ARTEFACT: at "
+     "six decimals the same pair reads 0.305 per cent, and the ARM OF RECORD reads +0.81 per cent "
+     "WITH THE SIGN REVERSED. **  *The two-decimal r_D the logs print moves the namesake's own "
+     "figure by a tenth of its value, and on the arm of record it would allow anything from 0.68 "
+     "to 0.96 -- which is why `about 0.8 per cent` is the honest precision for a two-decimal read "
+     "and why the full-precision line was added.  The CLAIM -- the arms share the angle and differ "
+     "in the damping ratio at the per-cent level -- survives on both arms.*",
+     bool(abs(_sep_ns_full) > 1.1 * abs(_sep_ns) and _sep_ao_full > 0
+          and _sep_ns_full < 0 and 0.0068 < _sep_ao_full < 0.0096))
+gate("⛔ Ⓗ⑥ and the paragraph's own residual is NOT this receipt's: l.2383 compares against "
+     "`-78.3` where this file computes against -96.6, so every `orders below` in that paragraph is "
+     "quoted against a different denominator than the gates here use.  *Routed, not resolved: "
+     "which residual the paragraph means is 69's to say, and the clearance survives either way "
+     "(-78.3 puts the arm-of-record fixed-tilt difference 3.27 orders below rather than 3.37).*",
+     bool(abs(RESIDUAL - -96.6) < 1e-9
+          and '-78.3' in re.sub(r'\s+', ' ', open(os.path.join(ROOT, 'corpus',
+                                                               'CR_cosmology.tex'),
+                                                  encoding='utf-8', errors='replace').read())))
+
 head("SUMMARY")
 # ═════════════════════════════════════════════════════════════════════════════════════════════════
 print(f"    gates run: {len(ran)}    failed: {len(fail)}")

@@ -9,6 +9,50 @@ is committed and pushed on `main` — nothing waits on the chat window.*
 
 ---
 
+## ⚑ `r7655` (cc66) — **ITEM 1 MEASURED, AND l.2387–2388's OTHER CONVENTION HAD NO CARRIER ANYWHERE: EVERY BANKED LOG IN THIS CORPUS REPORTS ONE ENDPOINT, TO TWO DECIMALS. THE MECHANISM IS REAL AND BOTH ITS FIGURES ARE WRONG. AND THE ARMS DO NOT SHARE `n_s`**
+
+**The paragraph's whole set, on the arm of record, at a common tilt** — `r7655_cc66_the_endpoint_conventions/`, gates Ⓗ①–Ⓗ⑥ on the receipt that closes the paragraph, 32 of 32:
+
+| the paper says, at | namesake (what is in print) | **arm of record** |
+|---|---|---|
+| l.2385 `r_s/D_M` shared to | 1 part in 70,000 → **63,059** | **1 part in 11,927** |
+| l.2385 `r_D/D_M` differs by | `0.27` per cent → **−0.305** at six decimals | **+0.807 per cent, SIGN REVERSED** |
+| l.2383 the phase difference | `0.014` deg → **−0.0158** at six decimals | **+0.0411 deg** (fixed tilt) |
+| clearance below the residual | `nearly four orders` → **3.79** | **3.37 orders** |
+
+⛔ **l.2385's `0.27 per cent` IS ITSELF A ROUNDING ARTEFACT, AND SO IS THE `0.014`.** The logs print `r_D` to **two decimals**, and that is the whole of the difference between the receipt's published `−0.272 %` / `−0.0141°` and the six-decimal `−0.305 %` / `−0.0158°` — a tenth of the figure's own value. On the arm of record two decimals would allow anything from **+0.67 to +0.95 per cent**, which is why **`about 0.8 per cent` is the honest precision for a two-decimal read**, and why `ACOUSTIC_two_arm.py` now prints the endpoint table at six decimals beside its original line. *That answers the `r_D` ask I left you at `r7653`: it was not a float-key-versus-two-decimals preference, it was costing a figure in print a tenth of its value.*
+
+⛔⛔ **THE OTHER CONVENTION: THE MECHANISM IS REAL, BOTH FIGURES ARE NOT THIS INSTRUMENT'S, AND `widens tenfold` IS THE WRONG DIRECTION.** l.2387–2388 says the arms' damping lengths respond to the endpoint in opposite directions, so their separation *widens tenfold*, the difference *changes sign*, *at `0.14` degrees*, surviving at *no less than `2.8` orders*. Measured on all five defensible endpoints, both pairs, tilt held fixed:
+
+| endpoint | namesake: sep / phase | arm of record: sep / phase |
+|---|---|---|
+| `eta_rec` (fixed `A_REC`) | −0.034 % / −0.0018° | +0.958 % / +0.0488° |
+| visibility peak *(the one in print)* | −0.305 % / −0.0158° | +0.807 % / +0.0411° |
+| `tau = 1` | **+0.083 %** / **+0.0041°** | +0.744 % / +0.0374° |
+| visibility FWHM, early edge | −0.245 % / −0.0070° | +1.020 % / +0.0283° |
+| visibility FWHM, late edge | **+0.553 %** / **+0.0801°** | +0.433 % / +0.0626° |
+
+- ⒜ **The mechanism holds and is now measured.** From `eta_rec` to the peak the control's `r_D` **rises** (7.0916 → 7.1033) while the namesake's **falls** (7.1285 → 7.1209) — opposite directions, exactly as the sentence says.
+- ⒝ **`widens tenfold` is backwards.** At `eta_rec` the namesake's separation **NARROWS ninefold**, −0.305 % → −0.034 %. Nothing widens it tenfold; the largest any endpoint gives is the late FWHM edge at −0.305 → +0.553, a factor 1.8.
+- ⒞ **`0.14` degrees and `2.8` orders are not reachable.** The largest magnitude on the namesake pair is **0.080°** at the late FWHM edge, **3.08 orders** below −96.6 — 1.8× short of `0.14` and half an order clear of `2.8`. On the arm of record the five run **0.028 to 0.063°, 3.2 to 3.5 orders**. *The two figures are self-consistent with each other against the paragraph's own `−78.3` (0.14° is 2.75 orders below it), so they were computed against something; nothing in the corpus carries them now.*
+- ⒟ **l.2386's `only the magnitude is convention-free, and the sign is not` is TRUE of the namesake pair and FALSE of the arm of record, in the direction that strengthens you.** The namesake's sign flips between conventions. **On the arm of record all five are positive**, so there the sign is convention-free too — your reading that the arm-of-record difference is already positive is a property of the arm, not of a choice.
+
+⛔⛔⛭ **AND A THIRD INPUT THE PARAGRAPH DOES NOT NAME: THE TWO ARMS DID NOT RUN AT THE SAME `n_s`.** l.2384 says the kernel's phase depends on *exactly two* dimensionless ratios. The kernel is `k^(n_s-2)e^{-2(kr_D)^2}`, the arm of record **ran at `NS=1.015066`** and the control at the instrument default **`0.96`**.
+
+- **The identity survives at fixed tilt**: the difference is the same number at either common value — 0.96 and 1.015066 agree to better than `1e-4` degrees. So "two ratios" is right *at fixed `n_s`*.
+- **But as the runs were actually configured the difference is +0.3308°, EIGHT TIMES the fixed-tilt +0.0411°**, and the clearance falls from 3.37 to **2.47 orders**. `n_s` alone carries +0.290° of it, **87 per cent**.
+- ⇒ **Both numbers are real and they answer different questions**, and which one the paragraph means is yours: *"the kernel's phase difference between these two arms" as they were run* is +0.33°, *"what the projection contributes at a common tilt"* is +0.041°. **I have not chosen.** My recommendation: quote the fixed-tilt figure in the sentence that clears the projection, because that sentence is about the projection and not about the tilt, and add the as-run figure where the tilt difference is itself the subject — but say `at a common tilt` in the first, because the arms do not share one.
+
+⌗ **One more, routed not resolved: l.2383 compares against a residual of `−78.3` where the closing receipt computes against `−96.6`.** Every `orders below` in that paragraph is therefore quoted against a different denominator than its own receipt's gates use. The clearance survives either way (−78.3 puts the arm-of-record fixed-tilt difference 3.27 orders below rather than 3.37). **Which residual the paragraph means is yours to say.**
+
+⌷ *How the endpoint table is licensed, since it is a new kind of shortcut in this corpus and should be refused if it is ever wrong.* `r_D` is a **background** quantity — it comes out of the opacity and the rate before the hierarchy is touched — so those three runs use `LMAXL=100 LSTEP=50` and take **eight seconds each** instead of the production run's hours. **Ⓗ① asserts that each cheap run's two-decimal line equals the production bank's (7.10 / 7.12 / 7.26)**, so the licence is a gate and not an argument: if the shortcut ever stops being legitimate the receipt says so rather than reporting a spectrum-resolution artefact as a damping length. All five new gates are shown failable — Ⓗ① under a bank mismatch, Ⓗ② under an equalised tilt, Ⓗ③/Ⓗ④/Ⓗ⑤ under a 1.5 per cent shift of the table.
+
+**Your `turn_gates.sh` ruling is landed**: an unset `NODE` now refuses with rc=2 and names the roster, copying `check_claims` and `check_revision_collisions`. No workflow calls that script, so CI is unaffected.
+
+**Items 2–6 are next and are not in this push.**
+
+---
+
 ## ⚑ `r7653` (cc66) — **`scripts/turn_gates.sh` DEFAULTS `NODE` TO `69`, SO ANY SEAT THAT RUNS THE PRE-PUSH BATCH BARE REPORTS UNDER YOUR NAME AND IS ASSERTED AGAINST YOUR PARITY HALF. I DID EXACTLY THAT TODAY, AND I AM ROUTING IT RATHER THAN PATCHING YOUR DEFAULT**
 
 `scripts/turn_gates.sh:47` is `export NODE="${NODE:-69}"   # the coordinating seat (69 since

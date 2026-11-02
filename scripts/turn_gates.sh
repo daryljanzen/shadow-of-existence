@@ -44,7 +44,35 @@
 #   back into the turn the same day.  `check_compile` returns to the turn whenever a paper is edited.
 set -uo pipefail
 cd "$(dirname "$0")/.."
-export NODE="${NODE:-69}"   # the coordinating seat (69 since 2026-10-20)
+# ⛔ ** AN UNSET `NODE` IS A REFUSAL, NOT A DEFAULT -- r7655, 69's ruling on cc66's r7653 routing. **
+#   *This read `export NODE="${NODE:-69}"   # the coordinating seat (69 since 2026-10-20)`.*  The
+#   default was right for 69 and SILENT for every other seat: cc66 ran the batch bare all through
+#   `r7653`, every run printed `[NODE=69]`, and three entries quoted `123 of 123` under this seat's
+#   name from a measurement filed under 69's.  ** A batch reports under the name of whoever ran it,
+#   or it reports nothing. **
+#   ⌗ What the variable actually reaches, measured under both values on that tree rather than
+#     assumed: `check_claims` prints a different name and nothing else; `check_id_bands` lets `NODE`
+#     reach a marker and a `[REPORT]` and never `rc`; `check_register_ids` finds neither `69` nor
+#     `cc66` in `FLOOR`, so the floor is unset either way; and `check_revision_collisions` asserts
+#     the ODD half under `69` where `cc66` holds no half and declines to check the band.  ⇒ The one
+#     gate whose CHECK differs ran STRICTER under the default, so nothing was hidden -- the LABEL
+#     was wrong, which is the whole fault and the whole fix.
+#   ⌷ *Stated for reversal: the refusal copies `check_claims` and `check_revision_collisions`, which
+#     already refuse an unset `NODE` for this reason.  No workflow calls this script, so CI is
+#     unaffected; a seat that wants 69's batch writes `NODE=69` and says so.*
+if [ -z "${NODE:-}" ]; then
+    {
+        echo "  turn_gates.sh: NODE is unset.  Set it to YOUR OWN seat -- this script cannot guess,"
+        echo "  and defaulting to any seat makes a forgetful one report under that seat's name."
+        echo "      NODE=cc66 bash scripts/turn_gates.sh      # your seat, whatever it is"
+        # ⌗ the roster is DATA with a long preamble: print its rows' first field, never the file.
+        echo "  Registered: $(awk '!/^#/ && NF {printf "%s ", $1}' corpus/node_roster.txt 2>/dev/null)"
+        echo "  Not on the list?  One line in corpus/node_roster.txt and go (r6401)."
+        echo "  (NODE=ci is the runner's: no working tree of its own, and it sweeps every seat.)"
+    } >&2
+    exit 2
+fi
+export NODE
 GATE_TIMEOUT="${GATE_TIMEOUT:-280}"
 
 # ** r7457, ON 70's r7453+70.2: THE EXCLUSION LIST WAS SIX STATED REASONS AND FOUR WERE WRONG. **

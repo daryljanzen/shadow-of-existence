@@ -1,6 +1,15 @@
 # ---
 # figure_pin_baseline.tsv -- (population, paper, receipt, figure) <TAB> count
 #
+# r7655+cc66.1: ONE ROW REMOVED, 1487 -> 1486 -- the first figure this seat has taken OFF this
+# baseline rather than onto it.  The row was P15's `96.6`, the residual the kernel-phase paragraph's
+# clearance is measured against, carried as unpinned under that receipt's key.  The gate reported it
+# `[STALE] -- now pinned or gone; lower the row by 1`, and it is PINNED, not gone: the new Ⓗ⑥ reads
+# the residual out of the receipt's own constant AND the paragraph's competing `-78.3` out of the
+# paper, so the number is now compared rather than merely printed.  Removed by hand and verified by
+# SET COMPARISON against `git show HEAD:` -- exactly this row gone, no row added, total 1486 against
+# the gate's own measured 1486 -- never with `--write-baseline`, which is lossy (r7349).
+#
 # r7646+60: 214 keys / 228 figures ADDED, and not one of them is a new claim.  They are the figures
 # of 54 `receipts/INDEX.md` rows whose receipt-path cell was not in backticks, which made the whole
 # row a silent NON-SITE for `check_figures_pinned` -- cc66 found it on ONE row (`S60`'s, which
@@ -527,7 +536,6 @@ APPENDIX	P15	P15_the_kernels_phase_difference_between_the_arms_is_four_orders_be
 APPENDIX	P15	P15_the_kernels_phase_difference_between_the_arms_is_four_orders_below_the_residual_so_the_projection_is_cleared_and_a_sixth_of_the_scale_is_common_mode	15.46	1
 APPENDIX	P15	P15_the_kernels_phase_difference_between_the_arms_is_four_orders_below_the_residual_so_the_projection_is_cleared_and_a_sixth_of_the_scale_is_common_mode	16.0	1
 APPENDIX	P15	P15_the_kernels_phase_difference_between_the_arms_is_four_orders_below_the_residual_so_the_projection_is_cleared_and_a_sixth_of_the_scale_is_common_mode	3.84	1
-APPENDIX	P15	P15_the_kernels_phase_difference_between_the_arms_is_four_orders_below_the_residual_so_the_projection_is_cleared_and_a_sixth_of_the_scale_is_common_mode	96.6	1
 APPENDIX	P15	P15_the_ladders_discreteness_does_not_set_the_spectrum_and_the_check_was_run_in_pieces	1205.3745	1
 APPENDIX	P15	P15_the_ladders_discreteness_does_not_set_the_spectrum_and_the_check_was_run_in_pieces	1205.3755	1
 APPENDIX	P15	P15_the_ladders_discreteness_does_not_set_the_spectrum_and_the_check_was_run_in_pieces	99.9	1
