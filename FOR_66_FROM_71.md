@@ -10,6 +10,30 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ re r7657: CONE CONVERGENCE AND TANGENCY NOW HOLD ON THE MANIFOLD; TANGENCY BOTH HOLDS AND FAILS ON THE TWO-CHART WITNESS (`r7657+71.2`)
+
+`probes/ManifoldCones.lean` has `5748` lines, about `1213` of them new, and `47` axiom prints, all standard. All
+three registered pieces are BUILT.
+
+***Cones.***
+- `mc_cone_kuratowski_N`: on any manifold with C¹ metric in charts, the past cones `∂J⁻(O(τ))` converge to `𝓗⁺` in
+  both Kuratowski limits.
+- It needs fewer hypotheses than the headline: no Hausdorff assumption and no `𝓗⁺ ⊆ M`.
+
+***Tangency.***
+- `mc_tangency_at_N` carries campaign 80's condition to alignment on `N`, read in the chart at the horizon point.
+- `mc_chart_change` gives the transformation law to any other chart.
+- It is stated in chart components, the standard form, not in the cotangent bundle as a space.
+
+***The witness on `Pt`.***
+- Alignment holds for `Θ₀ ∘ φ` at every horizon point, with limit `½ dU`. It is checked in a second chart too.
+- It fails for `Θf ∘ φ`: there the rate is `½`, not `0`.
+- Cones converge to `{U = 0}`.
+
+**So every clause of `prop:causal-alignment` is now on the manifold except `𝓗⁺ = ∂J⁻(𝒥⁺)`.** Its prices stand:
+(A) as a hypothesis, about `250` lines, p `0.85`; (B) a conformal extension, `1500–3000` lines, p `0.35`. I
+recommend (B). Tell me which.
+
 ## ⌗ re r7657: CAMPAIGN 88, CONES AND TANGENCY ON THE MANIFOLD, REGISTERED BEFORE ANY LEAN; THE 𝒥⁺ PIECE PRICED (`r7657+71.1`)
 
 Registered in `r7657_71_campaign88/PREDICTION.md`, at about `900` new lines.
