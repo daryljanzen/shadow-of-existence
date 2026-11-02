@@ -9,10 +9,21 @@ output is never grepped for a string, so a figure that reproduces does so under 
 was read from (`r7656+60.1`): six of the named lines are the blank line before their paragraph, and a
 literal read would have extracted nothing from them and called it green.
 
-Verdicts, as at `r7650`:
-  REPRODUCES  -- some candidate that RAN prints the figure within the gate's own allowance
-  ABSENT      -- every candidate RAN and none prints it
-  UNRUN       -- at least one candidate did not finish, so the figure is not judged
+⛔ AND THE FIRST PASS OF THIS FILE WAS A GUARD THAT COULD NOT FAIL.  Read with the gate's tolerance
+window it returned REPRODUCES 95 of 95 -- and `controls.py`, registered at `+60.3` before that number
+was judged, moved every figure FORTY TIMES its own allowance and found that 41.1% of the decoys
+"reproduced" too.  A 95-of-95 at a 41% false-positive rate is a measurement of the window.
+
+⌗ *A hit rate reported without its false-positive rate is asking to be believed rather than checked.*
+
+So `r7656+60.4` registered VERBATIM FIRST, and these are the verdicts it fixed:
+  VERBATIM        -- some candidate that RAN prints THAT STRING, both sides through the gate's own
+                     extractor.  No window, no rounding.  Decoy rate 10.5% (⑯), below the 20%
+                     registered at `+60.3` and NOT moved once a number had been seen.
+  PRINTED-DIGIT   -- no candidate prints the string, but one prints a number inside the gate's
+                     allowance.  A WEAKER finding, reported as one and kept out of the headline.
+  ABSENT          -- every candidate RAN and none prints it, verbatim or within the digit
+  UNRUN           -- at least one candidate did not finish, so the figure is not judged
 ⌗ *A figure is never ABSENT because a receipt could not be run.*
 
 ⌗ AND WHAT A REPRODUCTION HERE IS NOT (arm ⑧ of the registration): it establishes that SOME receipt in
@@ -65,8 +76,18 @@ def allow(x):
     return max(half, rel)
 
 
+def produces_verbatim(name, fig):
+    """⑮ does this receipt's OUTPUT carry THIS STRING -- no window, no rounding, no float at all?
+
+    ⌗ Both sides go through `check_figures_pinned.figures`, so this is not a grep for a substring:
+    the stdout is reduced to the set of figures the GATE would read in it, and the paper's figure has
+    to be one of them character for character.
+    """
+    return fig in OUTFIGS[name]
+
+
 def produces(name, fig):
-    """does this receipt's OUTPUT carry this figure, read through the same extractor?"""
+    """the TOLERANCE reading, kept only to separate PRINTED-DIGIT from ABSENT"""
     if fig in OUTFIGS[name]:
         return True
     try:
@@ -105,22 +126,27 @@ check("ⓐ④ and no named line is UNRESOLVED", not any(s.get('unresolved') for 
 
 # ---------------------------------------------------------------- the verdicts
 print("\nⓑ  EVERY FIGURE, EVERY SITE -- named line, resolved line, verdict")
-rows, absent, elsewhere = [], [], []
+rows, absent, elsewhere, digit = [], [], [], []
 for s in SITES:
     cites = [n for n in s['cites'] if n in TEXT]
     for f in s['figures']:
-        good = [n for n in ran if produces(n, f)]
-        if not good:
-            v = 'UNRUN' if unrun else 'ABSENT'
-            rows.append((s, f, v, None))
-            if v == 'ABSENT':
-                absent.append((s['paper'], s['line'], f))
+        good = [n for n in ran if produces_verbatim(n, f)]
+        if good:
+            own = [n for n in good if n in cites]
+            rows.append((s, f, 'VERBATIM', (own or good)[0]))
+            if cites and not own:
+                elsewhere.append((s['paper'], s['line'], f, good[0]))
             continue
-        own = [n for n in good if n in cites]
-        v = 'REPRODUCES' if own or not cites else 'REPRODUCES'
-        rows.append((s, f, v, (own or good)[0]))
-        if cites and not own:
-            elsewhere.append((s['paper'], s['line'], f, good[0]))
+        # ⑮ no receipt prints the string.  Is there one inside the gate's allowance?
+        near = [n for n in ran if produces(n, f)]
+        if near:
+            rows.append((s, f, 'PRINTED-DIGIT', near[0]))
+            digit.append((s['paper'], s['line'], f, near[0]))
+            continue
+        v = 'UNRUN' if unrun else 'ABSENT'
+        rows.append((s, f, v, None))
+        if v == 'ABSENT':
+            absent.append((s['paper'], s['line'], f))
 
 by = {}
 for s, f, v, _n in rows:
@@ -135,10 +161,19 @@ for (paper, named, res) in sorted(by, key=lambda k: (k[0], k[1])):
     print(f"      {paper:<10} {named:>6} {res:>6} {len(vs):>5}  "
           + ', '.join(f'{k} {n}' for k, n in sorted(tally.items())) + mark)
 
-nrep = sum(1 for _s, _f, v, _n in rows if v == 'REPRODUCES')
+nrep = sum(1 for _s, _f, v, _n in rows if v == 'VERBATIM')
+ndig = sum(1 for _s, _f, v, _n in rows if v == 'PRINTED-DIGIT')
 nabs = sum(1 for _s, _f, v, _n in rows if v == 'ABSENT')
 nunr = sum(1 for _s, _f, v, _n in rows if v == 'UNRUN')
-print(f"\n      REPRODUCES {nrep}   ABSENT {nabs}   UNRUN {nunr}   of {len(rows)}")
+print(f"\n      VERBATIM {nrep}   PRINTED-DIGIT {ndig}   ABSENT {nabs}   UNRUN {nunr}   of {len(rows)}")
+print(f"      ⌗ the headline of this revision is the VERBATIM count and nothing else.  The "
+      f"PRINTED-DIGIT rows below are a WEAKER finding -- no receipt in the candidate set prints the "
+      f"paper's figure; one prints a number the figure-pin gate would accept for it.")
+if digit:
+    print(f"\n      ⚠ PRINTED-DIGIT, {len(digit)} figure(s) -- right to the gate's allowance, not to "
+          f"the digit the paper prints:")
+    for paper, line, f, n in digit:
+        print(f"         {paper} l.{line}: {f} <- {n[:62]}")
 if absent:
     print("\n      ⛔ ABSENT, each looked for in every candidate that ran:")
     for paper, line, f in absent:
@@ -147,6 +182,9 @@ check(f"ⓑ① every figure is judged -- no figure is left without a verdict", l
       sum(len(s['figures']) for s in SITES))
 check(f"ⓑ② and none is ABSENT for want of a run: UNRUN is {nunr}, and a figure is ABSENT only when "
       f"every candidate ran", nunr == 0 or bool(unrun))
+check(f"ⓑ③ ⑮ VERBATIM FIRST is what is reported: the headline count ({nrep}) is strictly below "
+      f"the tolerance reading ({nrep + ndig}), so the tightening registered at +60.4 is not a "
+      f"relabelling of the same set", nrep < nrep + ndig)
 
 print(f"\nⓒ  ARM ⑧ -- RESOLVED ELSEWHERE: correct in value, unaddressed in citation")
 print(f"      {len(elsewhere)} figure(s) reproduce in a receipt their own document does not cite")
@@ -161,7 +199,8 @@ print("\n" + "=" * 112)
 print(f"  {len(_fail)} failure(s)")
 for f in _fail:
     print("   [FAIL] " + f)
-json.dump(dict(reproduces=nrep, absent=nabs, unrun=nunr, total=len(rows),
-               absent_rows=absent, elsewhere=elsewhere[:200]),
+json.dump(dict(verbatim=nrep, printed_digit=ndig, absent=nabs, unrun=nunr, total=len(rows),
+               absent_rows=absent, printed_digit_rows=digit, elsewhere=elsewhere[:200],
+               failures=_fail),
           open(os.path.join(HERE, 'verdicts.json'), 'w'), indent=1)
 sys.exit(1 if len(_fail) > 0 else 0)

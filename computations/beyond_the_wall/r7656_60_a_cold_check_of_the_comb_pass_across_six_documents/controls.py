@@ -15,6 +15,18 @@ TWO CONTROLS, both registered at `+60.3` before this file existed:
         rate above 20% means the matcher is the result and not the corpus.
   ⑭     MULTIPLICITY -- how many of the hundred receipts produce each figure independently.  One is a
         located figure; forty is a coincidence of the window.
+
+⛔ AND THE CONTROL FIRED: 41.1% against a threshold of 20%.  `r7656+60.4` therefore registered the
+tightening BELOW, before the number it would produce was seen:
+  ⑮     VERBATIM FIRST -- a figure counts as reproduced only when the receipt's output carries THAT
+        STRING, extracted by the same `check_figures_pinned.figures` on both sides, with NO tolerance
+        window at all.  Tolerance-only matches are reported separately as WITHIN THE PRINTED DIGIT,
+        which is a weaker finding and is labelled as one.
+  ⑯     AND ITS OWN DECOY RATE IS MEASURED under the SAME 20% threshold, which is the one already
+        registered at `+60.3` and is NOT moved now that a number has been seen.
+  ⑰     THE REACHABLE NEGATIVE OF THAT AMENDMENT is that verbatim matching is ALSO too loose, and it
+        is registered against: if ⑯ fires, this revision reports that the order's question cannot be
+        answered by figure-matching against banked stdout at all, and says what would answer it.
 """
 import json
 import os
@@ -78,6 +90,16 @@ def hits(fig):
     return out
 
 
+def hits_verbatim(fig):
+    """⑮ which receipts that RAN print THIS STRING -- no window, no rounding, no float at all.
+
+    ⌗ The same extractor runs on both sides, so this is not a grep: the receipt's stdout is reduced
+    to the set of figures the GATE would see in it, and the paper's figure has to be one of them
+    character for character.
+    """
+    return [n for n in RAN if fig in OUTFIGS[n]]
+
+
 def decoy(fig):
     """move it WELL outside its own tolerance, keeping magnitude and digit count.
 
@@ -133,25 +155,94 @@ for f, d, h in dec_rows[:14]:
 if nd > 14:
     print(f"      ... and {nd-14} more")
 
+# ---------------------------------------------------------------- ⑮⑯⑰ verbatim first
+print(f"\nⓒ  ⑮ VERBATIM FIRST -- the same figure STRING on both sides, no tolerance window at all")
+vb_rows = [(f, hits_verbatim(f)) for f in FIGS]
+n_vb = sum(1 for _f, h in vb_rows if h)
+tol_only = [f for f, h in vb_rows if not h and hits(f)]
+n_none = sum(1 for f, h in vb_rows if not h and not hits(f))
+print(f"      of {len(FIGS)} figure(s): VERBATIM {n_vb}   WITHIN THE PRINTED DIGIT {len(tol_only)}   "
+      f"NEITHER {n_none}")
+print(f"      ⌗ the {len(tol_only)} tolerance-only match(es) are a WEAKER finding and are NOT folded "
+      f"into the headline:")
+for f in sorted(set(tol_only))[:16]:
+    print(f"         {f}  -- a receipt prints a number inside the gate's allowance; none prints it")
+if len(set(tol_only)) > 16:
+    print(f"         ... and {len(set(tol_only))-16} more distinct")
+
+vmult = {f: len(hits_verbatim(f)) for f in sorted(set(FIGS))}
+vper = [vmult[f] for f in FIGS if vmult[f]]
+if vper:
+    print(f"      multiplicity among the verbatim ones: median {statistics.median(vper):.0f}   "
+          f"mean {statistics.mean(vper):.1f}   max {max(vper)}")
+
+print(f"\nⓓ  ⑯ THE VERBATIM MATCHER'S OWN DECOY RATE, under the threshold registered at +60.3")
+vdec = [(f, d, len(hits_verbatim(d))) for f, d, _h in dec_rows]
+vnhit = sum(1 for _f, _d, h in vdec if h > 0)
+vrate = vnhit / len(vdec) if vdec else 0.0
+print(f"      {len(vdec)} decoy(s), the SAME ones; {vnhit} of them are printed verbatim somewhere "
+      f"-> false-positive rate {vrate*100:.1f}%")
+if vnhit:
+    print(f"\n      {'real':>10} {'decoy':>10} {'receipts hit':>13}")
+    for f, d, h in [r for r in vdec if r[2] > 0][:14]:
+        print(f"      {f:>10} {d:>10} {h:>13}")
+print(f"      ⌗ a decoy that is ITSELF a figure the corpus carries elsewhere is this instrument's "
+      f"irreducible floor: a shift of 40 allowances lands on a round number often enough.")
+
 print(f"""
   ⌗ ⑬ THE RATE IS PUBLISHED EITHER WAY, with the decoys themselves, because a cold check that
   reported its hit rate without its false-positive rate would be asking to be believed rather than
   checked.""")
 
-check(f"⑫ THE REGISTERED THRESHOLD -- the decoy rate is at or below 20% ({rate*100:.1f}%), so the "
-      f"95-of-95 is a statement about the corpus and not about the width of this matcher's window",
-      rate <= 0.20)
+# ⌗ ⑫ IS SCORED, NOT HIDDEN.  It was registered at `+60.3` with its threshold and it FAILED at
+# `+60.4`; the record keeps the failing condition printed with the number that broke it, separately
+# from the conditions this revision still stands on, because a miss folded into a pass is a lie about
+# what was asked.
+_miss = []
+if not rate <= 0.20:
+    _miss.append(f"⑫ THE REGISTERED THRESHOLD -- the tolerance matcher's decoy rate is at or below "
+                 f"20% -- MEASURED {rate*100:.1f}%, scored a MISS at +60.4.  The 95-of-95 was the "
+                 f"width of the window and not the corpus.")
+print(f"\n  [MISS] {_miss[0] if _miss else ''}" if _miss else
+      f"\n  [PASS] ⑫ the tolerance matcher's decoy rate is {rate*100:.1f}%")
+
+print("\n  THE CONDITIONS THIS REVISION STANDS ON, after the tightening registered at +60.4:")
+check(f"⑯ THE VERBATIM MATCHER'S OWN DECOY RATE is at or below the SAME 20% registered at +60.3 "
+      f"({vrate*100:.1f}%) -- the threshold was NOT moved once a number had been seen, so a verbatim "
+      f"reproduction is a statement about the corpus and not about this matcher's reach",
+      vrate <= 0.20)
+check(f"⑮ and the tightening DOES WORK rather than relabel the same set: {len(tol_only)} "
+      f"figure(s) that 'reproduced' under the window do NOT reproduce verbatim, and they are reported "
+      f"as WITHIN THE PRINTED DIGIT instead of in the headline", len(tol_only) >= 1)
 check(f"⑭ and the median figure is produced by a SMALL number of the {len(RAN)} receipts "
       f"({med:.0f}), so a reproduction locates a figure rather than finding it everywhere",
       med <= 10)
+check(f"⑮ and the verbatim multiplicity is SMALLER still (median "
+      f"{statistics.median(vper) if vper else 0:.0f}), which is what a located figure looks like",
+      bool(vper) and statistics.median(vper) <= 4)
+
+print(f"""
+  ⌗ ⑰ THE REACHABLE NEGATIVE OF `+60.4` IS REGISTERED AGAINST AND WAS LIVE UNTIL THE NUMBER
+  ABOVE.  Had the verbatim rate come in over 20% as well, this revision's answer to the order would
+  be that the question is NOT measurable by figure-matching against banked stdout at all, and that
+  what would answer it instead is each comb-pass receipt's own banked artefact -- the arrays it
+  writes, compared field by field against the paper's table -- rather than its printed text.""")
 
 print("\n" + "=" * 112)
-print(f"  {len(_fail)} failure(s)")
+for m in _miss:
+    print("   [MISS] " + m)
+print(f"  {len(_fail)} failure(s) among the conditions this revision stands on")
 for f in _fail:
     print("   [FAIL] " + f)
+
 json.dump(dict(decoys=nd, decoy_hits=nhit, decoy_rate=round(rate, 4),
+               verbatim_decoys=len(vdec), verbatim_decoy_hits=vnhit,
+               verbatim_decoy_rate=round(vrate, 4),
+               verbatim=n_vb, within_printed_digit=len(tol_only), neither=n_none,
+               tolerance_only_figures=sorted(set(tol_only)),
                median_multiplicity=med, mean_multiplicity=round(statistics.mean(per), 2),
                one_receipt_only=_one, twenty_or_more=_many,
-               rows=[dict(real=f, decoy=d, hits=h) for f, d, h in dec_rows]),
+               rows=[dict(real=f, decoy=d, hits=h) for f, d, h in dec_rows],
+               scored_miss=_miss, live_failures=_fail),
           open(os.path.join(HERE, 'controls.json'), 'w'), indent=1)
 sys.exit(1 if len(_fail) > 0 else 0)

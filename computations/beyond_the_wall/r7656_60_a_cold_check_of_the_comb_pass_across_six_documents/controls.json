@@ -2,6 +2,20 @@
  "decoys": 95,
  "decoy_hits": 39,
  "decoy_rate": 0.4105,
+ "verbatim_decoys": 95,
+ "verbatim_decoy_hits": 10,
+ "verbatim_decoy_rate": 0.1053,
+ "verbatim": 81,
+ "within_printed_digit": 14,
+ "neither": 0,
+ "tolerance_only_figures": [
+  "0.4390",
+  "1.4011",
+  "1125.1",
+  "186.135",
+  "3.3387380",
+  "811.6"
+ ],
  "median_multiplicity": 4,
  "mean_multiplicity": 4.82,
  "one_receipt_only": [
@@ -491,5 +505,9 @@
    "decoy": "70.6",
    "hits": 1
   }
- ]
+ ],
+ "scored_miss": [
+  "\u246b THE REGISTERED THRESHOLD -- the tolerance matcher's decoy rate is at or below 20% -- MEASURED 41.1%, scored a MISS at +60.4.  The 95-of-95 was the width of the window and not the corpus."
+ ],
+ "live_failures": []
 }

@@ -234,3 +234,67 @@ the number it would judge.
 
 **Running total of this seat's own rule conditions corrected by measurement rather than by reading,
 across `r7648`, `r7650`, `r7652`, `r7654` and `r7656`: twenty-two.**
+
+---
+
+# `r7656+60.5` — ⑯ HELD AT **10.5%**, SO THE TIGHTENING IS MEASURABLE — AND THE VERBATIM COUNT IS NOW TOO **TIGHT** AT THE OTHER END
+
+**⑯ PASSED.** The verbatim matcher's decoy rate is **10.5%** — 10 of the same 95 decoys — against the
+**20%** registered at `+60.3` and not moved. So a verbatim reproduction is a statement about the
+corpus. **⑮ held too:** 14 of the 95 figures that "reproduced" under the window do **not** reproduce
+verbatim, so the tightening is doing work and not relabelling the same set. **⑰'s negative was live
+until that number and is not reached.**
+
+**Reading, under VERBATIM FIRST: 81 VERBATIM, 14 WITHIN THE PRINTED DIGIT, 0 ABSENT, 0 UNRUN of 95.**
+
+## AND WHAT I HAVE ALREADY SEEN BEFORE REGISTERING THIS, stated so the registration is honest
+
+I read the fourteen. **They are not one thing, and `WITHIN THE PRINTED DIGIT` flattens three kinds
+into one label.** What I have seen, and it is the whole of what I have seen:
+
+- `186.135` and `3.3387380` — a receipt prints `186.1350` and `3.338738`. **The same value**, to the
+  last bit; the mismatch is a trailing zero. Verbatim demotes a figure that is *exactly* reproduced.
+- `1125.1`, `811.6`, `0.4390` — a receipt prints `1125.11`, `811.59`, `0.438985966`, each of which
+  **rounds to the paper's figure at the paper's own digit count**. That is what printing fewer digits
+  *means*, and the figure-pin gate's third remedy says so in as many words.
+- `1.4011` — the nearest thing any of the 99 receipts prints is `1.401` (2.00 half-units) and
+  `1.40097` (2.60), and **`1.40097` rounds to `1.4010`, not to `1.4011`.** This one is inside the
+  gate's 0.05% allowance and is **not** the figure the paper prints.
+
+I have **not** measured: the counts in each of the three classes, whether any figure besides `1.4011`
+lands in the strict one, or the decoy rate of the rounding matcher. Those are what follows.
+
+## THE THREE-WAY VERDICT, registered before it is measured
+
+**⑱ EXACT-VALUE.** Some receipt prints a string that parses to the **same float** as the paper's
+figure. A reproduction, full stop — trailing zeros are a rendering of a number, not a different one.
+
+**⑲ CORRECTLY-ROUNDED.** No receipt prints that value, but one prints a longer number that **rounds to
+the paper's figure at the paper's own digit count**. Also a reproduction, and it is the honest reading
+of a paper that prints fewer digits than its receipt computes.
+
+**⑳ WITHIN-THE-GATE-ONLY.** Inside the gate's allowance and **does not round to the printed figure**.
+*This is the only one of the three that is a weaker finding*, and it is where a figure the corpus does
+not carry at the digit it prints would hide. It is reported as the headline's exception, by name, with
+the nearest value any receipt prints and its distance in half-units of the paper's last digit.
+
+**㉑ AND ⑲'S OWN DECOY RATE IS MEASURED, under the SAME 20%.** The correctly-rounded matcher is looser
+than verbatim and its false-positive rate must come in **below 20%** — the threshold registered at
+`+60.3`, still not moved — or ⑲ is reported as not measurable and only ⑱ is reported.
+
+**㉒ THE REACHABLE NEGATIVE, and it must be reachable in BOTH directions.**
+*If ⑳ comes back empty*, the refinement found nothing the verbatim count had not already told me, and
+this revision says so rather than presenting three classes as three findings. *`1.4011` is already
+known to land in ⑳, so the class is non-empty* — therefore the negative registered here is the
+**other** one: **that ⑳ is the ONLY member**, i.e. that one figure in ninety-five is the entire
+residue, and the fourteen were thirteen renderings and one discrepancy. I register **against** that:
+I predict **⑳ holds between 1 and 3 members**, and if it holds more than 3 the finding is a class of
+figures and not an incident.
+
+⌗ **The lesson of this amendment is the mirror of `+60.4`'s.** *A matcher loosened until it cannot
+fail measures its own window; a matcher tightened until it cannot pass measures its own rendering.*
+Both were caught the same way — by asking what the instrument does to data whose answer is already
+known — and neither by re-reading the output.
+
+**Running total of this seat's own rule conditions corrected by measurement rather than by reading,
+across `r7648`, `r7650`, `r7652`, `r7654` and `r7656`: twenty-three.**
