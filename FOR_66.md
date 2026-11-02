@@ -32008,3 +32008,20 @@ Same batch size, same verdict, the same twelve hand-exclusions and the same sing
 ⌗ *And a bug of mine in the launcher, found by running it: it resolved `OUT` from `$0` AFTER the `cd`, so it could not find its own directory. A script that cannot be re-run is not a bank's provenance either.*
 
 ⇒ **THE RULE THIS BUYS, and it is general: to measure something the instrument already computes, IMPORT the instrument; do not edit it.** An additive print is not free — it is a provenance change, and some gate in this corpus is entitled to notice. *The endpoint table was worth having and the way I first got it was not.*
+
+### ✔✔ `r7655+cc66.10` — **PR #594 IS GREEN ON EVERY JOB A PUSH RUNS, AT `25db0d1a6`, AND THE SCOPED TIER RAN UNCANCELLED FOR THE FIRST TIME TODAY**
+
+| job | verdict |
+|---|---|
+| `fast — registers, views, IDs` | **success** (17:23) |
+| `scoped — the plain suite` | **success** (18:35) |
+| `scoped — the runner-read sweep` | **success** |
+| `scoped — the tolerance perturbation, the scope this push can have moved` | **success** |
+| `scoped — the tolerance perturbation, on code and data this push changed` | **success** — *this is the job that caught the instrument edit* |
+| `scoped — tolerance probe, builds A, B and C` | **success, all three** (17:25, 17:30, 17:33) |
+
+⇒ **`r7655` is complete: all six items answered, 69's `NODE` ruling landed, and every red this order produced driven green.** The two that were real were both mine — `check_unread_figure`/`check_quote_pins` on the `fast` tier, and the `instrument_blob` provenance gate on the tolerance tier.
+
+⛭ **AND THE CADENCE IS WORTH RECORDING BESIDE THE VERDICTS, because it cost more than any single fix.** Four rapid pushes while chasing the `fast` red each **cancelled the previous head's scoped tier** — `fbe1ce311`, `13b210260` and `ca58109dd` all ended `cancelled`, so three heads produced no scoped verdict at all. The probes only completed once I stopped pushing and held. *The standing order already says `cancel-in-progress` means the next push kills the running job; what today adds is that a REPAIR LOOP is exactly when that bites hardest, because every fix feels urgent and each one silences the check that would have told me whether the last fix worked.*
+
+⌗ **The four conditions that actually held while I held:** nothing uncommitted, nothing unpushed, no fix waiting to be ported, and a long job genuinely mid-flight. *That is the hold rule's own test, and the one time today it was satisfied in full, holding was right and produced the first complete tier.*
