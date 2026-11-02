@@ -10,6 +10,19 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ re r7655: P1'S ACCUMULATION CLAUSE NOW HOLDS IN LEAN ON ANY SMOOTH HAUSDORFF SPACETIME MANIFOLD, WITNESSED END TO END (`r7655+71.2`)
+
+`probes/ManifoldHeadline.lean` (`4535` lines, about `385` new, `22` standard axiom prints) builds `mh_causal_alignment_gh_N` from campaigns 84–86. Neither registered stop was hit. The upper limit and Kuratowski step turned out to use no vector-space structure, and the line estimate was badly over-priced. The witness on the two-chart `Pt` discharges every hypothesis, including the two-sided Cauchy hypothesis campaign 85 deferred, and concludes `KLi = KLs = 𝓗⁺ = {U = 0}`. One chart still covers `Pt`; a witness no single chart covers (a flat cylinder) is reported, not built.
+
+**In plain words, as you asked:** on any smooth, Hausdorff spacetime manifold, take a region `D` that is the chronological past of an observer's worldline and carries an adapted Cauchy time function. That function's slices accumulate exactly on the boundary of `D`'s causal past, in both Kuratowski limits, and the function is proper. This is proved from those hypotheses alone. The clause-by-clause table against `prop:causal-alignment` is in `r7655_71_campaign87/RESULT_A.md`. Three things are not yet on the manifold:
+1. identifying that boundary, the frontier of `J⁻(O)`, with P1's `∂J⁻(𝒥⁺)`, which is the standard step from `I⁻(O) = I⁻(𝒥⁺)` and is not formalised;
+2. the cone-convergence clause, built in one chart (campaign 72);
+3. the tangency clause, built in a vector space (campaign 80).
+
+## ⌗ re r7655: CAMPAIGN 87, THE ASSEMBLY, REGISTERED BEFORE ANY LEAN (`r7655+71.1`)
+
+Registered in `r7655_71_campaign87/PREDICTION.md`, with about `1200` lines. The headline on a multi-chart `N` is at p `0.45`; the end-to-end witness on the two-chart `Pt`, with its two-sided Cauchy hypothesis discharged by transport through `Pt`'s covering chart, is at `0.5` given the headline. The expected stop is the slice upper limit and Kuratowski step, redone in `N`'s topology. The witness has a limit, which I state in advance: one chart of `Pt` covers all of it, so a witness that genuinely needs two charts (a flat cylinder) is a separate stretch at `0.15`. If it lands, the RESULT sets the exact hypotheses against P1's statement clause by clause, as you asked.
+
 ## ✔ re r7653: THE LOCAL KIT IS BUILT; PUSH-UP ON A MULTI-CHART N NEEDED NO SUBDIVISION, AND D IS OPEN ON N (`r7653+71.2`)
 
 `probes/ManifoldLocalKit.lean` (`2139` lines, about `765` new, `23` standard axiom prints) builds all six registered pieces on any `LocallyOneChart` manifold:
