@@ -1,0 +1,23 @@
+__SWITCHES__ ARM=lcdm LMAXL=1300 LSTEP=2 SAVE=/tmp/claude-0/-home-user-shadow-of-existence/4913e7eb-3c04-585c-bc52-ac1b69fc5eb8/scratchpad/bank8/lcdm_fluid_repro.npz
+  diffusion: r_D at the visibility peak = 7.10 Mpc  ->  l_D = 1952
+
+==============================================================================
+  ACOUSTIC TWO-ARM INSTRUMENT — ARM=lcdm   DRIVING=ON
+==============================================================================
+  rate: radiation-INCLUDED   H0=67.4  Om=0.315
+  z_start = 3e+07   eta_start = 0.016   eta_rec = 280.7   eta_end = 1893
+  D_M = 13865 Mpc   r_s = 144.53 Mpc   l_A = pi D/r_s = 301.4   modes = 1656
+  visibility: peak at eta = 280.75 (z = 1089.5), FWHM = 37.80 Mpc   R = 3 rho_b/4 rho_g there = 0.62316   1+R = 1.62316
+  z_eq(leaf) = 3447.1   Omega_r = 9.135415e-05   rho_r/rho_m at the onset = 8700.40
+
+  projection reach: k_max = 2600/D_M against a reported l_max = 1300 -> ratio 2.00
+  projection sampling: dk = 1.128e-04, Bessel period 2pi/D = 4.532e-04, points per period = 4.0
+  line-of-sight: visibility peak eta = 280.75, FWHM = 37.8 Mpc, 560 samples over eta = 54-1893
+  saved 600 multipoles to /tmp/claude-0/-home-user-shadow-of-existence/4913e7eb-3c04-585c-bc52-ac1b69fc5eb8/scratchpad/bank8/lcdm_fluid_repro.npz
+  --------------------------------------------------------------------------
+  PEAKS (line-of-sight)   l_A = 301.4
+  --------------------------------------------------------------------------
+    peaks at l = [220, 530, 812, 1122]
+    l_1/l_A = 0.7300   P1/P2 = 2.392   P1/P3 = 2.766
+    sky: 220.6 / 538.1 / 809.8,  l_1/l_A = 0.7312,  P1/P2 = 2.217,  P1/P3 = 2.277
+__DONE__ rc=0
