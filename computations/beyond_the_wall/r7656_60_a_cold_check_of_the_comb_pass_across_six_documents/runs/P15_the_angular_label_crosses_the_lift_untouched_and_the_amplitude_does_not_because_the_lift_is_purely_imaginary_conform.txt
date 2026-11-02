@@ -1,0 +1,228 @@
+
+P15 receipt -- `r7107`'s `Q1`: HOW THE LAYER'S ANGULAR HARMONICS ARE CARRIED ALONG THE BEAD THROUGH
+THE LAP, WITH THE LIFT INCLUDED.  THE OBJECT THAT HOLDS ALL THREE REQUIREMENTS AT ONCE *DOES* EXIST
+IN THIS CONSTRUCTION AND IT IS NOT A CHART: IT IS THE HARMONICS' OWN PARAMETER, THE COMPLEX CONFORMAL
+TIME $\eta=\int d\tilde\tau/r$ ALONG THE ONE ANALYTIC CURVE.  THE ANGULAR LABEL CROSSES THE LIFT
+UNTOUCHED, EXACTLY.  THE AMPLITUDE DOES NOT -- AND WHAT IT PICKS UP IS AN ENVELOPE WITH EXACTLY NO
+PHASE.
+
+** THE ORDER. **  `r7107` withdrew `r7105`'s `Q1` -- the de~Sitter presentation *"buries the entire
+lap, seam to seam, as the hyperboloid's finite minimum $S^3$ equator"* -- and re-posed the question as
+a requirement rather than a chart: *"The three presentations each hold a piece of it; what is missing
+is the object that holds all three at once."*  The three: ⓵ the layer as a sphere, so there are
+harmonics; ⓶ the lap resolved, $r=0$ to the cosmological seam; ⓷ the lift carried.  With the stop
+licence meant a third time -- *"if the object that carries all three does not exist in this
+construction, say that and stop -- but say it of the requirement, not of a chart"* -- and the
+instruction to *"use the arc-length parametrisation of (F) if that is what keeps the bundle
+single-valued."*
+
+⇒ *** THE OBJECT EXISTS AND IT IS NOT STOPPED.  Take (F)'s own instinct one step further: the
+parameter that keeps the bundle single-valued is not arc length in $r$ but arc length in CONFORMAL
+time, $d\eta=d\tilde\tau/r$, which is the variable the angular harmonics' own equation is written
+in.  On the single curve $r(\tilde\tau)=A\sinh^{2/3}(3\tilde\tau/2\alpha)$ it holds all three:
+the layer is a sphere of radius $\lvert r\rvert$ at every point so the label $(L,M)$ is defined
+everywhere; each of the three legs has FINITE $\eta$-length so the lap is resolved rather than
+compressed; and the lift is carried because the lift's $\eta$ is PURELY IMAGINARY -- it is a straight
+segment of the complex $\eta$-plane at right angles to the two Lorentzian legs. ***
+
+** ⛭⛭⛭ AND THE LAP CLOSES IN IT AS AN EXACT 30-60-90 TRIANGLE.  The three legs' conformal lengths
+are in the ratio $1:\sqrt3:2$ -- collapse : lift : expansion -- proved in closed form, with no
+$\Lambda$, no $H_0$, no mass and no epoch anywhere in it. **
+  $\lvert\Delta\eta\rvert_{\rm coll}=c_0\!\int_0^\infty\!\cosh^{-2/3}\!x\,dx = c_0 B(\tfrac13,\tfrac16)/4$ (REAL),
+  $\lvert\Delta\eta\rvert_{\rm lift}=c_0\!\int_0^{\pi/2}\!\sin^{-2/3}\!w\,dw = c_0 B(\tfrac16,\tfrac12)/2$ (purely IMAGINARY),
+  $\lvert\Delta\eta\rvert_{\rm exp}=c_0\!\int_0^\infty\!\sinh^{-2/3}\!x\,dx = c_0 B(\tfrac13,\tfrac16)/2$ (REAL),
+  with $c_0=2\alpha/3A=2/\sqrt3\,2^{1/3}$.  *The ratios are $\sqrt3$ and $2$ IDENTICALLY:*
+  $B(\tfrac16,\tfrac12)/B(\tfrac13,\tfrac16)\cdot2=\Gamma(\tfrac12)^2/\Gamma(\tfrac13)\Gamma(\tfrac23)=\sin(\pi/3)\cdot2=\sqrt3$,
+  by reflection alone.  ⇒ ** So $\Delta\eta_{\rm coll}+\Delta\eta_{\rm lift}$ has modulus EXACTLY
+  $\lvert\Delta\eta\rvert_{\rm exp}$ and argument EXACTLY $-\pi/3$ **, and $\sqrt3=\alpha/r_N$ is
+  the construction's own ratio while $\pi/3$ is half the $120^\circ$ third the lap is built from.
+
+** ⛭⛭ THE ANSWER TO "DOES THE LIFT DO ANYTHING", IN TWO HALVES, BECAUSE THE TWO HALVES DIFFER. **
+  ✔ ** ⓵ THE LABEL PASSES THROUGH UNTOUCHED, EXACTLY, AND FOR A REASON THAT NEEDS NO INTEGRATION. **
+  The bead's angular block is $r^2 d\Omega_{(3)}^2$; the lift moves $r$ and nothing else, at fixed
+  angles.  The eigenvalue of $-\nabla^2$ on the layer is $k^2/r^2$ with $k^2=L(L+2)$ the degree-$L$
+  eigenvalue on the unit $S^3$, so the LABEL is a discrete quantity on a continuous path and cannot
+  change along one.  *That half of the identification is secured on the construction's own terms, as
+  the order said it would be.*
+  ⛔ ** ⓶ THE AMPLITUDE DOES NOT, AND IT IS A SELECTION RULE RATHER THAN A FILTER. **  On the lift
+  $\eta=-is$ with $s$ real, so $d^2/d\eta^2=-d^2/ds^2$ and $u''+(k^2-a''/a)u=0$ becomes
+  ** $u_{ss}=(k^2+a_{ss}/a)\,u$ ** -- real, sign-definite in the bulk, and NOT oscillating.  Near the
+  branch point $a\to(s_{\rm tot}-s)^2/3\cdot2^{4/3}$ and $a_{ss}/a\to2/(s_{\rm tot}-s)^2$, whose two
+  behaviours in $\varphi=u/a$ are $\varphi\to$ const and $\varphi\sim(s_{\rm tot}-s)^{-3}$.
+    ⇒ *** OF THE TWO-DIMENSIONAL SPACE OF MODE DATA AT THE TURNAROUND, EXACTLY A ONE-DIMENSIONAL
+    SUBSPACE REACHES $r=0$ REGULAR AND CONTINUES INTO THE EXPANSION LEG.  Everything else diverges at
+    the seam.  That is the lift's action: a projection, one solution per harmonic. ***
+
+** ⛭ AND ON THAT SUBSPACE THE TRANSMITTED AMPLITUDE IS A PURE NUMBER FUNCTION OF $k$ ALONE. **
+  $T(k)\equiv\varphi(r{=}0)/\varphi({\rm turnaround})$, with ** $T(0)=1$ EXACTLY ** -- the monopole
+  passes untouched because $u=a$ solves the lift equation identically at $k=0$, which is the control
+  that had to come back affirmative -- and
+  ** $T(k)\to2^{7/3}k^2e^{-k\,s_{\rm tot}}$ **, $s_{\rm tot}=\Gamma(\tfrac16)\sqrt\pi/\Gamma(\tfrac23)\sqrt3\,2^{1/3}=3.3387380236$.
+  *Both the exponent's length and the prefactor are parameter-free: no $\Lambda$, no $H_0$, no
+  $\Omega_m$, no mass, no epoch enters either.*  $\alpha$ cancels between $d\tilde\tau$ and $A$.
+
+** ⛔⛔ SO THE SECOND BRANCH OF THE ORDER IS THE ONE THAT FIRED, AND THE HONEST READING OF IT IS NOT
+THE ONE THE ORDER HOPED FOR.  What the harmonics pick up is an ENVELOPE, and exactly NO PHASE. **
+  $\operatorname{Re}\Delta\eta=0$ IDENTICALLY across the lift -- not small, zero, because the
+  integrand is purely imaginary there on the branch panel (C) fixes.  ⇒ *A comb is a phase.  The lift
+  supplies a real damping and no phase at all.*  ⌗ ** The SKY-side figure goes through `eq:lowell`
+  (CORRECTED at `r7112` on `r7111`'s finding against this receipt's first version, which took the sky
+  multipole for the layer degree -- the very reading `sec:throat` guards against): ** the first
+  acoustic peak's $\ell=220.6$ sits at $L=78.5$, where the damping is $e^{-255}$.*
+    ⇒ *** THE LIFT IS THEREFORE NOT THE THING THE ACOUSTIC SECTOR HAS BEEN MISSING; IT IS THE
+    CONSTRUCTION'S OWN SMOOTHING STEP.  The seam is isotropic by identity rather than by tuning --
+    the MILDEST damping of any $L>0$ is the one at $L=1$, a factor of $14.3$ ($T=7.00\times10^{-2}$),
+    with not one adjustable quantity in it -- and the acoustic structure cannot be inherited from
+    before the lift.  It has to be generated on the expansion leg. ***
+
+⚠ ** THE BRANCH IS A FINDING AND IT IS RECORDED RATHER THAN HIDDEN. **  Writing the lift as
+$\tilde\tau=i(2\alpha/3)v$ gives $r=A(i\sin v)^{2/3}$, and the PRINCIPAL branch
+$(-i)^{2/3}=e^{-i\pi/3}$ puts the collapse leg at phase $-60^\circ$ and MANUFACTURES a real phase
+across the lift.  `CR_framework`'s panel (C) fixes it: it writes the inward leg as
+$r=-(2M\alpha^2)^{1/3}\cosh^{2/3}(3\operatorname{Re}\tilde\tau/2\alpha)$, phase $\pi$, so
+$(-i)^{2/3}=e^{i\pi}=-1$ and the lift is real negative from $-A$ to $0$ -- which is the figure's own
+*"single vertical segment at $\operatorname{Re}\tilde\tau=0$."*  ⛭ *A $\sqrt2$-class branch slip
+avoided by reading the figure the order told me to read, and the wrong branch is kept below as a
+control that must come back NON-zero.*
+
+** COMPUTES: the conformal-time structure of one analytic curve, and one linear ODE on one leg of it.
+*** The three legs' $\eta$-lengths and their closed forms; the $1:\sqrt3:2$ identity symbolically and
+to $5\times10^{-22}$; the branch; $\operatorname{Re}\Delta\eta$ on both branches; the lift's mode
+equation and its seam asymptotics; and $T(k)$ by stable Riccati integration of
+$\varphi_{ss}+2(a_s/a)\varphi_s=k^2\varphi$ started from the EXACT seam solution
+$u=\sqrt\sigma I_{3/2}(k\sigma)$, for $L=0..1000$, with matching-point independence shown.
+*** Nothing is fitted.  No transfer, spectrum, kernel or likelihood is computed; the acoustic
+instrument is not opened; no file outside the three papers is read. *** **
+
+⚠ ** SCOPE AND THE CONVENTION, CARRIED. **  $k^2=L(L+2)$ is the unit-$S^3$ scalar Laplacian
+eigenvalue and the mode equation used is $u''+(k^2-a''/a)u=0$; $T$ is reported as a function of $k^2$,
+so a curvature-convention shift $k^2\to k^2+\delta$ with $\delta=O(1)$ is a relabel of the same
+curve and is MEASURED below rather than assumed away.  ⛔ What this does NOT cover: modes GENERATED on
+the expansion leg, to which none of it applies; any mass spectrum, since the bead here is the single
+analytic curve at the Nariai amplitude; and the projection to the sky, which `r7106` settled
+separately and is not re-opened.  The paper is READ and not edited.
+
+
+  ==========================================================================
+  A.  THE BRANCH -- FIXED BY THE FIGURE, NOT BY THE PRINCIPAL VALUE
+  ==========================================================================
+  [PASS] `CR_framework`'s bead figure writes the INWARD leg with a leading MINUS and a cosh, `r=-(2M\alpha^2)^{1/3}\cosh^{2/3}(3\operatorname{Re}\tilde\tau/2\alpha)`, and the lift as the single vertical segment at `\operatorname{Re}\tilde\tau=0` -- so the branch is the paper's and not a choice of mine
+  [PASS] the collapse leg is the SAME analytic curve: `\sinh(X-i\pi/2)=-i\cosh X` to 4.3e-62
+  [PASS] the figure's minus sign forces `(-i)^{2/3}=e^{i\pi}=-1`; the PRINCIPAL value `e^{-i\pi/3}` is a different branch and would put the collapse leg at `-60` degrees
+
+  ==========================================================================
+  B.  THE LAP'S CONFORMAL BUDGET -- THREE FINITE LENGTHS, RATIO 1 : sqrt3 : 2 EXACTLY
+  ==========================================================================
+      I (lift)      = 3.642975971831372417729
+      J (collapse)  = 2.103273157988181391763
+      E (expansion) = 4.206546315976362783524
+  [PASS] each leg's conformal length is FINITE and has a closed form: `I=B(1/6,1/2)/2`, `J=B(1/3,1/6)/4`, `E=B(1/3,1/6)/2`, each to 1.1e-21
+      I/J = 1.732050807568877293527   (sqrt3 = 1.732050807568877293527)
+      E/J = 2.0   (2)
+  [PASS] ⛭⛭⛭ the three legs are in the ratio `1 : \sqrt3 : 2` -- collapse : lift : expansion -- to 5.3e-22
+  [PASS] and it is an IDENTITY, not an agreement: `I/J-\sqrt3` simplifies to 0 symbolically (reflection, `\Gamma(1/3)\Gamma(2/3)=\pi/\sin(\pi/3)`), and `E=2J` term by term
+  [PASS] ⇒ so the lap CLOSES in the complex `\eta`-plane: `\Delta\eta_{coll}+\Delta\eta_{lift}` has modulus exactly `\lvert\Delta\eta\rvert_{exp}` (=2.0 vs 2.0) and argument exactly `-\pi/3` (-1.047197551197 vs -1.047197551197)
+  [PASS] and `\sqrt3` is the construction's OWN ratio, `\alpha/r_N`, to 2.2e-16 -- the lift is the `\sqrt3` side
+
+  ==========================================================================
+  C.  THE LIFT CARRIES EXACTLY NO PHASE -- Re(Delta eta) = 0 IDENTICALLY
+  ==========================================================================
+      figure branch :  Delta eta = +0.000e+00 -3.338738023567 i
+  [PASS] ⛭⛭⛭ on the branch the figure fixes, `r` is REAL and `d\tilde\tau` purely imaginary, so the lift's integrand is `i` times a real function and `\operatorname{Re}\Delta\eta=0` IDENTICALLY -- the quadrature returns the exact float zero, not a small number
+      achieved: |Im| vs c_0 I  3.11e-61 (bound 1e-15),  c_0 I vs closed form  0.00e+00 (bound 1e-12)
+  [PASS] and the modulus is the parameter-free `s_tot` -- `\lvert\operatorname{Im}\Delta\eta\rvert = c_0 I = 3.3387380236`, agreeing with the quadrature to 3.1e-61 against a bound of 1e-15 and with the closed form `\Gamma(1/6)\sqrt\pi/\Gamma(2/3)\sqrt3\,2^{1/3}` to 0.0e+00 against 1e-12
+      principal     :  Delta eta = -2.891431944990 +1.669369011783 i
+  [PASS] ⚠ and the WRONG branch is kept as the control that must come back NON-zero: the principal value `(-i)^{2/3}=e^{-i\pi/3}` gives `\operatorname{Re}\Delta\eta=-2.891432`, a manufactured real phase of 87 per cent of the lift's length -- so the zero above is a property of the figure's branch and not of the integral's shape
+  [PASS] ⇒ the two Lorentzian legs are the opposite case and that is what makes the statement a contrast: there `\operatorname{Im}\tilde\tau` is FIXED, `d\tilde\tau` and `r` are both real, so `\eta` is real and each harmonic oscillates -- phase accumulates on the legs and exactly none on the lift
+
+  ==========================================================================
+  D.  THE LIFT'S MODE EQUATION -- REAL, NON-OSCILLATING, AND ITS SEAM ASYMPTOTICS
+  ==========================================================================
+  [PASS] `\eta=-is` on the lift, so `d^2/d\eta^2=-d^2/ds^2` and the mode equation turns from `u''+(k^2-a''/a)u=0` into ** `u_{ss}=(k^2+a_{ss}/a)u` ** -- real, and the two signs flip together so there is no oscillating solution anywhere on it
+      seam asymptotics: a/(s_tot-s)^2 -> 1/3.2^(4/3) = 0.1322834210;  (a_ss/a)(s_tot-s)^2/2 -> 1
+        delta=1e-02    sigma=0.59235398  a/(COEF sigma^2)=0.999985714  (a_ss/a)sigma^2/2=0.999614293
+        delta=1e-03    sigma=0.27494593  a/(COEF sigma^2)=0.999999857  (a_ss/a)sigma^2/2=0.999996143
+        delta=1e-04    sigma=0.12761859  a/(COEF sigma^2)=1.000000031  (a_ss/a)sigma^2/2=0.999999929
+        delta=1e-05    sigma=0.05923530  a/(COEF sigma^2)=1.000000055  (a_ss/a)sigma^2/2=0.999999945
+  [PASS] near the branch point the scale factor is `a\to(s_{tot}-s)^2/3\cdot2^{4/3}` and the potential `a_{ss}/a\to2/(s_{tot}-s)^2` -- the ordinary matter-domination pair.  Both limits are APPROACHED, not merely close: within 1e-05 and 4e-04 across the whole range of `\delta` and within 1e-07 and 4e-06 for `\delta\le10^{-3}` -- so the two behaviours in `\varphi=u/a` are a CONSTANT and `(s_{tot}-s)^{-3}`
+      the potential changes sign at t = pi/3;  s(pi/3)/s_tot = 0.333333333333333315   (1/3 = 0.333333333333333315)
+  [PASS] ⌗ and the potential changes sign at exactly `t=\pi/3`, i.e. `\tan^2t=3` -- 1.7e-16 there, against 0.7937 at the turnaround and `+\infty` at the seam
+  [PASS] ⛭ and that point sits at EXACTLY one third of the lift: `\int_0^{\pi/3}\cos^{-2/3} = \tfrac13\int_0^{\pi/2}\sin^{-2/3}` to 3.7e-22 -- so the curvature term is negative over the first third of the lift and positive over the last two thirds, which are the same thirds the lap is built from
+
+  ==========================================================================
+  E.  THE TRANSMISSION ACROSS THE LIFT -- T(0)=1 EXACTLY, AND 2^{7/3} k^2 exp(-k s_tot)
+  ==========================================================================
+      matching-point independence (L=2):
+        delta=3e-05      s0=0.085432   ln T = -5.4827499766
+        delta=1e-05      s0=0.059235   ln T = -5.4827499764
+        delta=3e-06      s0=0.039654   ln T = -5.4827499768
+        delta=1e-06      s0=0.027495   ln T = -5.4827499760
+  [PASS] the integration is started from the EXACT seam solution `u=\sqrt\sigma I_{3/2}(k\sigma)` rather than from a series, so the answer does not depend on where the matching is done: `\ln T` moves by 7.5e-10 over a 30-fold range of matching point
+
+      the CONTROL that had to come back affirmative -- the monopole:
+        L=0 (k=0): u=a solves u_ss=(a_ss/a)u identically, phi == 1, T = 1.000000000000
+  [PASS] ✔ THE CONTROL RETURNS THE AFFIRMATIVE: at `k=0` the lift equation is `u_{ss}=(a_{ss}/a)u`, which `u=a` satisfies IDENTICALLY, so `\varphi=u/a\equiv1` and `T(0)=1` exactly -- the monopole crosses the lift untouched in amplitude as well as in label
+
+       L        k            ln T            T              ln T + k s_tot - 2 ln k
+        0     0.00000        0.000000    1.00000e+00            nan
+        1     1.73205       -2.658834    7.00298e-02      2.0254179
+        2     2.82843       -5.482750    4.15788e-03      1.8811857
+        3     3.87298       -8.408151    2.23042e-04      1.8146754
+        4     4.89898      -11.402879    1.11633e-05      1.7754765
+        5     5.91608      -14.447447    5.31561e-07      1.7494452
+        8     8.94427      -23.774578    4.72968e-11      1.7059762
+       10    10.95445      -30.096470    8.49707e-14      1.6900813
+       20    20.97618      -62.291444    8.85461e-28      1.6557409
+       40    40.98780     -127.783881    3.19276e-56      1.6371066
+      100   100.99505     -326.340476   1.87125e-142      1.6253927
+      200   200.99751     -658.850059   7.32917e-287      1.6213930
+      400   400.99875    -1325.222493    0.00000e+00      1.6193749
+     1000  1000.99950    -3326.639426    0.00000e+00      1.6181589
+  [PASS] the exponent is `s_tot` ITSELF and nothing else: `d\ln T/dk` between `L=400` and `L=1000` is -3.335691 against `-s_tot = -3.338738`, 0.09 per cent and still closing -- the lift's conformal length IS the damping length in `k`
+  [PASS] and the prefactor is `2^{7/3}k^2` exactly: `\ln T+k s_{tot}-2\ln k` runs 1.62139, 1.61937, 1.61816 at `L=200,400,1000`, converging as `1/k` on `(7/3)\ln2=1.61734342` -- so ** `T(k)\to2^{7/3}k^2e^{-k s_{tot}}` **, every constant in it a pure number
+
+      where k^2 meets the curvature term:  s_tot - s_cross = sqrt2 / k
+        L=    2   s_tot-s_cross=0.500000  = 14.98 % of s_tot
+        L=   10   s_tot-s_cross=0.129099  =  3.87 % of s_tot
+        L=  100   s_tot-s_cross=0.014003  =  0.42 % of s_tot
+  [PASS] ⌗ and the curvature term matters only in a shrinking neighbourhood of the seam, `s_{tot}-s_{cross}=\sqrt2/k` -- 15.0 per cent of the lift at `L=2` and 0.42 per cent at `L=100` -- so the `k^2`-dominated Euclidean bulk is what sets the exponent, which is why the exponent is the whole length
+
+      the convention carried: k^2 -> k^2 + delta with delta = O(1)
+        L=  10   ln T(k^2)=  -30.09647   ln T(k^2-3)=  -29.66081   shift=+0.43566   (3 s_tot/2k = +0.45718)
+        L= 100   ln T(k^2)= -326.34048   ln T(k^2-3)= -326.29118   shift=+0.04930   (3 s_tot/2k = +0.04959)
+        L= 400   ln T(k^2)=-1325.22249   ln T(k^2-3)=-1325.21002   shift=+0.01247   (3 s_tot/2k = +0.01249)
+  [PASS] a curvature-convention shift `k^2\to k^2-3` moves `\ln T` by `+3s_{tot}/2k`, i.e. by `O(1/k)` and never by the exponent -- measured at `L=10,100,400` against the prediction, so the `e^{-k s_{tot}}` statement does not rest on which convention is used
+
+  ==========================================================================
+  F.  EVERY NUMBER ABOVE IS PARAMETER-FREE, AND WHAT THAT MAKES OF THE ACOUSTIC SECTOR
+  ==========================================================================
+      refit       (H0,Om)=(68.6,0.2973):  alpha=  5213.287  r_N= 3009.892  A=  3792.227  c0 = 2 alpha/3A = 0.9164864246657350
+      instrument  (H0,Om)=(73.0,0.3066):  alpha=  4931.805  r_N= 2847.379  A=  3587.473  c0 = 2 alpha/3A = 0.9164864246657348
+  [PASS] `\alpha` cancels between `d\tilde\tau=i(2\alpha/3)dv` and `A=2^{1/3}\alpha/\sqrt3`, so `c_0=2/\sqrt3\,2^{1/3}` and with it `s_{tot}`, `T(k)`, the `1:\sqrt3:2` ratio and the `2^{7/3}` prefactor carry NO `\Lambda`, `H_0`, `\Omega_m`, mass or epoch: the two stated backgrounds give `c_0` identical to 2.2e-16
+
+      the envelope the lift applies:  L=1 -> 7.0030e-02 (a factor 14.3)   L=2 -> 4.1579e-03
+      `eq:lowell`: stretch D_C/r_0 = 2.773729;  the sky's ell=220.6 sits at k = 79.5319, L = 78.5382  =>  ln T = -255.2
+      the CONTROL that must come back WRONG: reading L=220 off the sky index gives ln T = -725.4, off by 470 in the exponent
+  [PASS] ⛔⛔ so the second branch of the order is the one that fired, and what the harmonics pick up is an ENVELOPE AND EXACTLY NO PHASE: the MILDEST damping of any `L>0` is `L=1` at `T=7.003e-02`, a factor 14.3; `L=2` is already 4.16e-03 -- all of it with `\operatorname{Re}\Delta\eta=0` identically, and a comb is a phase
+  [PASS] ⛭ and the SKY-side figure goes through `eq:lowell`, `\ell_L=\sqrt{L(L+2)}D_C/r_0`, because the layer degree is not the sky multipole: the stretch is 2.7737, so the first acoustic peak's `\ell=220.6` sits at `L=78.5` and the envelope there is `e^{-255}` -- ⚠ reading `L=220` straight off the sky index is the control that must come back WRONG and it does, by 470 in the exponent
+  [PASS] ⇒ what it IS, stated as the affirmative it is: the construction's own smoothing step.  Every `L>0` arriving from the collapse leg is damped -- by a factor 14.3 at worst and without a single adjustable quantity in it -- so the seam is isotropic BY IDENTITY rather than by tuning, and the acoustic structure cannot be inherited from before the lift
+  [PASS] ⌗ and the label half of the answer is the half the order said would secure the identification, which it does: the bead's angular block is `r^2d\Omega^2`, the lift moves `r` at fixed angles, and `(L,M)` is a DISCRETE label on a CONTINUOUS path -- so it crosses untouched with no integration needed, and `sec:properframe`'s `r^2d\Omega^2` is where that is read from
+
+  ==========================================================================
+  G.  ⚠ SCOPE, AND WHAT IS NOT CLAIMED
+  ==========================================================================
+      every file this receipt opened: ['CR_cosmology.tex', 'CR_framework.tex']
+  [PASS] no transfer, spectrum, kernel or likelihood is computed and the acoustic instrument is not opened: the only files opened are two papers, and the only numerical objects are one analytic curve's conformal lengths and one linear ODE on one leg of it
+  [PASS] ⛔ and what this does NOT cover, named: modes GENERATED on the expansion leg, to which none of it applies; any mass spectrum, since the bead here is the single curve at the Nariai amplitude; and the projection to the sky, which `r7106` settled separately and is not reopened
+  [PASS] ⌗ `r7106`'s framing is superseded where `r7107` withdrew its own `Q1`: the de Sitter presentation's exclusion of the two closed kernels STANDS as computed, but it is no longer the setting the question is asked in -- the setting is the bead, and it is a parametrisation rather than a presentation
+
+  ==========================================================================
+  VERDICT
+  ==========================================================================
+
+  30 of 30 checks pass   [31.6s]
+  ALL PASS -- the object that holds all three requirements is the complex conformal time along
+  the bead; the lap closes in it as an exact 1 : sqrt3 : 2 right triangle; the angular label
+  crosses the lift untouched exactly; and the amplitude does not -- the lift is a selection
+  rule plus a parameter-free envelope 2^(7/3) k^2 exp(-k s_tot) with EXACTLY no phase, so it
+  is the construction's smoothing step and not the acoustic sector's missing piece.

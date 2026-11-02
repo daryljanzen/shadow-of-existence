@@ -1,0 +1,142 @@
+
+RECEIPT -- P15: ** `r7213` ORDERED THE PARAMETRIC COMB -- POSITION, SPACING AND ALTERNATION AS FITTED
+PARAMETERS -- AND ATTACHED A VALIDATION BURDEN: `show it recovers cc66.156's and cc66.158's own model
+directions ... If it does not recover them, that is the result and the data half does not happen`.
+*** IT DOES NOT RECOVER THEM.  THE DATA HALF DOES NOT HAPPEN.  AND THE REASON IS THAT THE PEAK
+SPACING DRIFTS, WHICH IS A FOURTH DEGREE OF FREEDOM THE THREE PARAMETERS CANNOT CARRY. ***
+
+  ⓵ ** THE TEMPLATE IS RIGHT AND THAT IS CHECKED RATHER THAN ASSUMED. **
+  `$\cos(2\pi[u-a\cos\pi u])$` has its maxima at `$u=n+a(-1)^{n}$`, verified numerically on a
+  `$10^{-5}$` grid at three values of `$a$`.  *So a comb with position, spacing and alternation is
+  exactly what is being fitted, and a failure below is the model's and not the algebra's.*
+
+  ⓶ ⛔ ** IT RECOVERS THREE SPECTRA OF SIX AND MISSES THREE, AND IN EACH DRIVING PAIR IT MISSES
+  EXACTLY ONE MEMBER. **  *Both `NODRIVE` spectra come back inside `$0.11$` per cent, and so does
+  the driving-ON `cr_rb0.5` at `$0.27$`.  `cr_base`, `lcdm_base` and `cr_rb1.5` come back
+  `$18$`--`$19$` per cent HIGH.  **Since `$\phi$` is referred to the FITTED `$\ell_A$`, a pair
+  whose two members disagree about the spacing by `$18$` per cent cannot be differenced at all** --
+  so `cc66.158`'s directions are not reproduced badly, they are not constructible, and by `r7213`'s
+  own terms that ends it.*
+
+  ⛔⛭ ** AND THE FIRST VERSION OF THIS RECEIPT GOT THAT SPLIT WRONG, BECAUSE THE SEARCH WAS WRONG. **
+  *It used a `$3\times3$` grid of starts offset from the banked `$\ell_A$` and reported that every
+  driving-ON spectrum failed.  That grid returns a worse `$\chi^{2}$` on five of the six spectra --
+  by `$57$` per cent on the driving-off pair -- and on `cr_rb0.5` it lands `$65$` multipoles from the
+  minimum.  **A start grid centred on the answer I expected could not tell me the answer was
+  somewhere else.**  *The starts now span the whole feasible box and every optimum is checked to be
+  interior to it; `fit_narrow` is kept in the file so the defect is visible beside its repair.**
+
+  ⓷ ⛭⛭ ** THE REASON IS SPECIFIC: THE GAPS DRIFT. **  *A comb's gaps are
+  `$\ell_A(1\mp2a)$` -- the high gaps equal each other and the low gaps equal each other.  On
+  `cr_base` they are `$302/270/312/295$`: alternating, yes, **but the highs rise by `$10$` and the
+  lows by `$25$`.**  Fitting the four gaps with spacing and alternation alone leaves an rms of
+  `$9.5$` multipoles; adding one linear drift term cuts it to `$3.8$`, and on `cr_rb0.5` from
+  `$8.5$` to `$0.5$`.  **Every spectrum tried wants the drift.***
+
+  ⇒ ⛭⛭⛭ ** AND OMITTING IT BIASES THE ALTERNATION BY FORTY PER CENT, WHICH IS ONE OF THE TWO
+  COMPONENTS THE WHOLE SEPARATION RESTS ON. **  *`cr_base`'s implied alternation goes
+  `$0.0208\to0.0295$` when the drift is admitted, and `cr_rb0.5`'s `$0.0090\to0.0174$`.  **A
+  three-parameter comb does not merely fit worse; it returns a wrong alternation.***
+
+  ⌈ ** AND THE MISSING PARAMETER IS NOT ARBITRARY -- IT IS THE QUANTITY THIS SECTOR IS ABOUT. **  *A
+  drift in spacing IS a linear phase drift at fixed `$\ell_A$`, which is `cc66.153`'s own
+  description of this residual (`$-96.6^{\circ}$` at the correct spacing).  **So the instrument
+  `r7213` specified is missing exactly the degree of freedom the sector has been chasing** -- and
+  adding it is widening the order, which is `66`'s to do and not this seat's.*
+
+  ⚠ ** ONE PITFALL REPORTED BECAUSE I WALKED INTO IT. **  *Given a generic basis -- each harmonic
+  with its own polynomial envelope -- `$\chi^{2}$` falls by nearly three orders of magnitude and
+  `$\ell_A$` runs to the edge of the search box at `$430.000$`.  The comb parameters become
+  UNIDENTIFIED while the fit looks perfect.  **A good `$\chi^{2}$` from a comb fit is not evidence
+  the comb was found**, and the disciplined basis -- one envelope, scalar harmonic ratios -- is what
+  makes the numbers above mean anything.*
+
+** COMPUTES: the ordered three-parameter comb, profiled over a smooth baseline and one shared
+   envelope with scalar harmonic ratios, a coarse multi-start over the whole feasible box
+   refined at its best few, on six likelihood-binned model spectra; the template's maxima
+   verified numerically; the gap pattern decomposed into
+   spacing+alternation against spacing+alternation+drift; and the unidentifiability of the generic
+   basis exhibited.  *** No new spectra, no refit, and the data is deliberately NOT touched. *** **
+
+
+
+========================================================================================================
+  A.  ⓵ THE TEMPLATE PUTS ITS MAXIMA WHERE THE COMB WANTS THEM -- CHECKED, NOT ASSUMED
+========================================================================================================
+      a = +0.000:  maxima [1. 2. 3. 4.]  wanted [1. 2. 3. 4.]  worst 1.6e-11  (exact; this is float noise)
+      a = +0.020:  maxima [0.98 2.02 2.98 4.02]  wanted [0.98 2.02 2.98 4.02]  worst 4.0e-05  (= 0.10 a^2)
+      a = -0.040:  maxima [1.0397 1.9603 3.0397 3.9603]  wanted [1.04 1.96 3.04 3.96]  worst 3.1e-04  (= 0.19 a^2)
+    OK    Ⓐ①  the template's maxima sit at `$n+a(-1)^{n}$` ** TO SECOND ORDER IN `$a$` AND NOT EXACTLY **, the deviation being under a quarter of `$a^{2}$` at every `$a$` tried -- `$4\times10^{-5}$` at `$a=0.02$` and `$3.1\times10^{-4}$` at `$a=-0.04$`.  ⚠ *I first wrote this check as `better than 2e-4` and it FAILED at `$a=-0.04$`: the displacement `$a\cos\pi u$` is evaluated at the SHIFTED maximum, so the relation carries an `$O(a^{2})$` term I had treated as exact.*  ⇒ *It is negligible against the signals -- `$3\times10^{-4}$` in `$u$` against a driving offset of `$0.126$` -- but the fitted `$a$` is the comb's alternation only to that order, and saying so is the difference between a measured bound and an assumed identity*
+
+========================================================================================================
+  B.  ⓶ ⛔ THE ORDERED COMB RECOVERS THREE SPECTRA OF SIX AND MISSES THREE -- AND THE SPLIT IS NOT THE ONE I FIRST REPORTED
+========================================================================================================
+      spectrum        l_A fit    banked  error %       phi         a       chi2 |   3x3 l_A   3x3 chi2 3x3 worse
+      cr_base         357.087   301.380   +18.48  +0.32856  +0.02471       3463 |   359.481       3715      7.3%
+      lcdm_base       357.129   301.375   +18.50  +0.32868  +0.02372       3016 |   359.633       3193      5.9%
+      cr_nodrive      301.658   301.380    +0.09  -0.57282  +0.02477        106 |   300.439      166.6     57.1%
+      lcdm_nodrive    301.706   301.375    +0.11  -0.57268  +0.02496      93.84 |   300.479      147.6     57.3%
+      cr_rb0.5        286.841   286.060    +0.27  -0.72277  +0.08512       1515 |   351.961       1885     24.4%
+      cr_rb1.5        375.956   315.272   +19.25  -0.18727  -0.04182  2.357e+04 |   375.956  2.357e+04      0.0%
+      ⇒ the 3x3 grid this receipt first used is worse on 5 of 6, by up to 57 per cent, and on `cr_rb0.5` it lands 65 multipoles away
+    OK    Ⓑ①  ⛔⛭ ** THE DICHOTOMY THE FIRST VERSION OF THIS RECEIPT REPORTED WAS THE SEARCH AND NOT THE MODEL. **  *A `$3\times3$` grid of starts offset from the banked `$\ell_A$` returns a worse `$\chi^{2}$` on five of the six spectra -- by `$57$` per cent on the driving-off pair -- and on `cr_rb0.5` it reports `$351.961$` where the minimum is `$286.841$`.*  ⇒ *The box is spanned now and every optimum below is INTERIOR to it, so `the search was adequate` is measured here rather than assumed. **This is the defect, and it is mine: a start grid centred on the answer I expected could not tell me the answer was elsewhere.**
+      ⇒ recovered to under 1%: cr_nodrive, lcdm_nodrive, cr_rb0.5
+      ⇒ missed by over 15%:    cr_base, lcdm_base, cr_rb1.5
+    OK    Ⓑ②  ** THE COMB RECOVERS `$\ell_A$` ON THREE SPECTRA OF SIX -- BOTH DRIVING-OFF ONES AND THE DRIVING-ON `cr_rb0.5` -- AND MISSES THE OTHER THREE BY `$18$`--`$20$` PER CENT. **  *So the instrument is not blind to a spectrum merely because it carries a driving: it recovers `cr_rb0.5` to `$0.27$` per cent at a `$\chi^{2}$` the inadequate search missed by a quarter.*  ⇒ *What separates the three it fails is PART C's drift and not the driving, which is where this receipt's diagnosis was right and its bound was wrong*
+      ⇒ the cr driving pair: cr_base off by +18.5% and cr_nodrive by +0.09% -- a difference between them is not a driving difference
+      ⇒ the lcdm driving pair: lcdm_base off by +18.5% and lcdm_nodrive by +0.11% -- a difference between them is not a driving difference
+    OK    Ⓑ③  ⛔ ** AND `r7213`'s VALIDATION BURDEN IS STILL NOT MET, FOR A SHARPER REASON THAN I FIRST GAVE. **  *In EACH driving pair the comb misses one member's spacing by `$18$` per cent and recovers the other's to `$0.1$`, and `$\phi$` is defined against the fitted `$\ell_A$`.  **So the two members' phases are not referred to the same comb and no driving difference can be formed at all** -- `cc66.158`'s `$0.1929$`/`$1.0390$` separation is not merely reproduced badly, it is not constructible from this instrument.*  ⇒ *`r7213` made that recovery the condition for going on to the data, so the data is not touched here*
+
+========================================================================================================
+  C.  ⓷ ⛭⛭ WHY -- A COMB'S HIGH GAPS REPEAT AND THESE RISE, SO ONE DRIFT TERM IS MISSING
+========================================================================================================
+      a comb gives gaps l_A(1 -+ 2a): the highs equal each other, the lows equal each other
+      spectrum      gaps                      highs rise  lows rise  rms comb  rms +drift   a comb  a +drift
+      cr_base       [302, 270, 312, 295]             +10        +25      9.58        3.86   0.0208    0.0295
+      lcdm_base     [302, 269, 312, 295]             +10        +26      9.70        3.97   0.0213    0.0301
+      cr_nodrive    [278, 290, 300, 301]             +22        +11      8.62        2.82   0.0051    0.0020
+      lcdm_nodrive  [278, 290, 300, 301]             +22        +11      8.62        2.81   0.0050    0.0020
+      cr_rb0.5      [275, 263, 290, 281]             +15        +18      8.31        0.59   0.0095    0.0177
+      cr_rb1.5      [324, 274, 330, 307]              +6        +33     11.81        6.73   0.0298    0.0395
+    OK    Ⓒ①  ** ON EVERY SPECTRUM THE HIGH GAPS AND THE LOW GAPS BOTH RISE rather than repeating, and one linear drift term cuts the gap-fit residual on every one of them. **  *That is a FOURTH degree of freedom in the peak pattern, and the ordered instrument has three*
+      ⇒ admitting the drift changes the implied alternation by 33--87 per cent on the driving-on spectra
+    OK    Ⓒ②  ⛭⛭⛭ ** AND OMITTING THE DRIFT DOES NOT MERELY FIT WORSE -- IT RETURNS A WRONG ALTERNATION, by tens of per cent, on every driving-on spectrum. **  *The alternation is one of the two components `cc66.158`'s whole separation rests on, so a three-parameter comb would have carried a biased value into the one number the sector is using*
+
+========================================================================================================
+  D.  ⚠ THE PITFALL: A GENERIC BASIS MAKES THE COMB UNIDENTIFIED WHILE LOOKING PERFECT
+========================================================================================================
+      cr_base, each harmonic given its own polynomial envelope (18 oscillatory columns):
+         disciplined basis: l_A 357.087 (+18.5%), chi2       3463
+         generic basis:     l_A 430.000 (+42.7%), chi2      6.393   -- AT THE BOX EDGE
+         ⇒ chi2 improves 542x while the answer gets WORSE by +24.2 points
+    OK    Ⓓ①  ** THE GENERIC BASIS IMPROVES `$\chi^{2}$` BY NEARLY THREE ORDERS OF MAGNITUDE AND RUNS `$\ell_A$` TO THE EDGE OF THE SEARCH BOX. **  *So a good `$\chi^{2}$` from a comb fit is not evidence the comb was found: the extra oscillatory freedom absorbs the spectrum rather than locating its comb, and every number in `PART B` depends on the basis being disciplined instead.*  ⚠ *I have now had this check wrong in BOTH directions, from one cause.  I first wrote `runs to the boundary with chi2 essentially exact`, then walked it back to a measured `$122\times$` because that is what the file returned.  **Both readings came from the inadequate search: with the box spanned, the boundary behaviour I first described is what the receipt's own basis does.**  The lesson is not that I over-claimed and then under-claimed -- it is that neither number meant anything while the search was wrong*
+
+========================================================================================================
+  E.  WHAT FOLLOWS, AND WHAT IS NOT DONE
+========================================================================================================
+  ⛔ THE DATA HALF DOES NOT HAPPEN.  `r7213` set recovering the model directions as the
+     condition and it is not met.  No observed point is placed and no carrier is named.
+  ⌈ THE MISSING PARAMETER IS NOT ARBITRARY.  A drift in the spacing IS a linear phase drift
+     at fixed l_A, which is cc66.153's own description of this residual -- the -96.6 degrees
+     at the correct spacing.  So the three-parameter instrument is missing precisely the
+     degree of freedom this sector has been chasing since r7181.
+  ⛔ AND ADDING IT IS WIDENING THE ORDER, WHICH IS NOT THIS SEAT'S TO DO.  r7213 ordered
+     three parameters and said not to reduce the count without saying so; it did not
+     authorise a fourth.  Naming it and stopping is the same discipline held at r7203 and
+     r7211, and both times 66 sustained it.
+  ✔ AND NOTHING IS WITHDRAWN.  cc66.157 and cc66.158 use located peaks with l_A FIXED at its
+     banked value, so the drift never enters their difference statistics as a free
+     parameter -- it is common to both sides of every difference they take.
+  ⛭ AND WHAT SEPARATES THEM IS PART C's DRIFT, NOT THE DRIVING.  The three spectra the comb
+     recovers are the three with the SMALLEST driftless gap residual (8.62, 8.62, 8.31) and the three it misses are the three
+     largest (9.58, 9.70, 11.81) -- a perfect ordering, at 8.62 against 9.58.
+  ⚠ AND THAT IS AN ORDERING ON SIX SPECTRA AND NOT A THRESHOLD.  A 3/3 split falling in
+     perfect order arises by luck once in twenty times, and the margin is 0.96 of
+     a multipole against a spread of 3.49.
+     So it is consistent with the diagnosis and it does not establish where the boundary is.
+    OK    Ⓔ①  ⛭ ** THE INADEQUACY IS NOT SPECIFIC TO SPECTRA CARRYING A DRIVING -- IT TRACKS THE DRIFT. **  *Every spectrum the comb recovers has a smaller driftless gap residual than every spectrum it misses.  **I first bounded this finding by the driving, and that bound was an artefact of the narrow search: `cr_rb0.5` carries a driving and is recovered to `$0.27$` per cent.**  What the comb cannot do is fit a spectrum whose gaps drift too far for three parameters, which is PART C's diagnosis and not a second one.*  ⇒ *Stated as the ordering it is: six spectra, a `$3/3$` split, a margin under one multipole -- so it says a four-parameter comb should first be tested where the drift is largest, and it does not say where the boundary lies*
+
+========================================================================================================
+  ✔ 8 of 8 checks pass -- and what they establish is that the ORDERED instrument fails its
+    own validation, for a named reason, with the missing parameter identified.
+========================================================================================================

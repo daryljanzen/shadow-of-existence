@@ -1,0 +1,14 @@
+  measured 100theta_* = 1.04109  ->  l_A = 301.76 ; rounded l_*=301 is -0.25% off
+  (1) pinning the MEASURED angle      -> z_onset = 6797
+      H0-independence:  1.04109@67.4  1.04109@70.0  1.04109@73.0
+  (2) pinning the ROUNDED l_*=301     -> z_onset = 6844   (l_* at 6850 = 300.90)
+      => the old agreement with 6850 is the rounding, not a recovery
+  (3) inherited datum alone (rho_r/rho_m=2 at onset), Omega_m held:
+      H0=67.4 : z_onset = 6840   (rho_r/rho_m at z=6797 is 1.987)
+      H0=70.0 : z_onset = 7378   (rho_r/rho_m at z=6797 is 1.842)
+      H0=73.0 : z_onset = 8024   (rho_r/rho_m at z=6797 is 1.694)
+
+  RESULT: PASS -- (1) returns 6797 and is H0-independent; (2) is rigged by the rounding;
+          (3) is H0-DEPENDENT and agrees with (1) only near H0=67.4.
+
+[assertions r2376+c54.160] 6797 (H0-independent to 1e-5), 6844, l_*(6850)=300.90, 6840/7378/8024, 1.694: pinned.

@@ -1,0 +1,112 @@
+P15 sec:refit-bound -- ** THE BELOW-FLOOR ESTIMATOR IS BUILT AND VALIDATED AND IT DOES REACH A BAND
+NO ESTIMATOR HAS REACHED; THE CANDIDATE PASSES EVERY TOOTH THAT CAN BE APPLIED THERE; AND THE TOOTH THAT
+WOULD DECIDE CANNOT BE APPLIED, BECAUSE THE TARGET'S OWN CURVATURE IS NOT DETERMINED ON ANY RANGE THE
+CANDIDATE CAN BE MEASURED ON. **
+
+** PATH PROVENANCE, IN THE HEADER, ON THE STANDING REQUIREMENT. **  *** Every model number below is the
+HIERARCHY path *** -- `r6897_fields` (the `ZPSAVE` bank the register's own estimator reads),
+`r6941_fine_{lcdm,cr}` (the banked spectra the contrast statistic is computed on) and `r6959_eta_cr`
+(the band edges alone).  `sec:refit-bound`'s quartet is the LINE-OF-SIGHT path's and is not read;
+searched for below rather than asserted.  ⛔ *** Nothing is SOLVED. ***
+
+** THE PRE-REGISTRATION IS `r7001_directions/PREDICTION.md` **, five outcomes for ⓶ including BOTH
+nulls, and it states in that order which teeth were committed at `r6993` and `cc66.52` before this
+measurement and that its outcome TABLE was written after the band values had been read -- *which
+introduces no criterion, the teeth having been fixed first, and is dated rather than implied.*
+
+⛭⛭ ** ⓵ THE ESTIMATOR, AND THE FIRST THING IT FOUND WAS THAT THE PERIOD IS NOT THE PERIOD. **  The
+acoustic period in $q = k r_s/\pi$ is $2$ by construction.  ** It is not $2$ in the fields. **  Read off
+the drift of the recovered phase and iterated to self-consistency, the monopole runs at $1.9636$ and the
+dipole at $1.9909$ on the control -- *a two per cent error, and a DIFFERENT one for the two fields,
+which is precisely the failure the order asked to be measured rather than noted.*  ⇒ **So the held
+period is MEASURED, per field and per arm, and its own uncertainty is taken from disjoint sub-ranges:
+$1.3$ per cent.**
+
+⛔ ** AND THE VALIDATION CAME FIRST, WHICH WAS THE ORDER AND IS ALSO THE STANDING GUARD. **  Against the
+window estimator, same quantity and same fields: *the means agree.*  ⚠ **And the window estimator does
+not survive its own width**: its ripple runs from $0.7$ per cent at `half` $=2$ to $11.6$ at `half`
+$=0.5$, *the width `cc66.51` read the candidate at*, while the held estimator sits near $2.5$ per cent
+at every width and reaches $q = 0.39$.
+
+⛭ ** AND THE LEAK IS MEASURED AND IT IS SMALL, FOR A REASON THAT IS A MECHANISM. **  Perturbing the held
+period at the $1.3$ per cent it is known to moves the candidate's span across the bands by $0.00006$
+against a span of $0.00959$ -- ** under one per cent of the dependence being measured. **  *The fit
+re-fits the PHASE in every window, so a wrong held period is absorbed there and costs only a common
+amplitude factor, which cancels in a ratio of ratios.*  ⇒ ***THE ESTIMATOR CAN ANSWER THE QUESTION.***
+
+⛭⛭ ** ⓶ AND IT REACHES A BAND NOTHING HAS REACHED -- AND STOPS AT ONE NOTHING WILL. **  The band at
+$q=1.90$ is now measured, stable to $0.003$ across eight estimator settings, where the window estimator
+could not reach below $q=2.0$ at any width.  ⛔ **Band 1 at $q=1.20$ is still not measurable and now for
+a stated reason rather than a width**: its spread $0.021$ exceeds its value $0.0003$, *because its
+window straddles the first acoustic excursion, where there is no oscillation amplitude to estimate.*
+⇒ ** A floor of MECHANISM, and the second null of the pre-registration. **
+
+⛭ ** THE TEETH, SIGN FIRST. **  On $q = 1.90$--$5.40$ the candidate's departure is **positive in every
+band**, as the target's is, and runs $+0.0048 \to +0.0144$: $G = 2.99$ against the target's $1.33$, the
+same direction.  ⇒ *** IT PASSES SIGN AND IT PASSES GROWTH, ON THE RANGE THIS ESTIMATOR UNLOCKED. ***
+
+⛔⛔ ** AND THE CURVATURE TOOTH CANNOT BE APPLIED, WHICH IS THE RESULT AND IS THE PRE-REGISTRATION'S
+FIRST NULL. **  *The criterion is that the candidate's curvature carry the TARGET's sign -- and
+on every range excluding band 1 the target's own curvature flips sign when any single band is dropped.*
+⛔ **And on the full range the reason is exact rather than statistical: dropping BAND 1 ALONE flips the
+target's curvature from $-0.0033$ to $+0.0003$, while dropping any other single band leaves it
+negative.**  ⇒ ***The target's deceleration is carried entirely by the one band no estimator of the
+candidate can reach.***  ⇒ ***The filter is out of teeth rather than the candidate out
+of chances, and that is a statement about the filter.***
+
+⚠⚠ ** AND `cc66.51`'s CURVATURE PASS DOES NOT SURVIVE, WHICH IS A CORRECTION TO THIS SEAT'S OWN LANDED
+RESULT. **  Read with the window estimator on its own range and its own recipe, the candidate's
+curvature swings from $-0.0093$ at `half` $=0.5$ -- *the width it was read at* -- to $+0.0012$ at `half`
+$=2$, *where that estimator is sound.*  ⛔ **The stability check `cc66.51` ran certified the MEAN over a
+sub-range.  The curvature was never the quantity that was checked** -- the "say which quantity" guard,
+biting on the seat that wrote it.
+
+⛭⛭⛭ ** ⓷ THE PREDICTION IS AN INDEPENDENT READING OF THE JACOBIAN, AND IT IS NOT OBSERVABLE. **  Two
+different functionals of the same `Jac`: the COMB reads the **cumulative** ratio at last scattering,
+$0.5665$ -- $\pi D_M/r_{s,\rm leaf} = 301.41$ against the banked $l_A = 301.80$, while
+$\pi D_M/r_{s,\rm stack} = 170.76$ is not close -- and the WIDTHS read the **window-local** average,
+$\langle\mathrm{Jac}\rangle = 0.8744$.  ***They differ by a third, both are $1$ on one rate, and neither
+carries a free coefficient*** -- so a construction tuned to the comb must still produce the right LOCAL
+Jacobian to match the widths.  ⛔ **But no measurement reaches the ratio**: the phase width, which the
+Landau damping reads, differs between the arms by $0.84$ per cent, while the conformal width, which the
+projection reads, differs by $13.5$ and `cc66.52` bounded its contrast effect at $2$.  ⇒ ***NO, NOT
+OBSERVABLE IN ITS OWN RIGHT -- said plainly, in the order's terms.***
+
+  [PASS] ⛔ PATH PROVENANCE: no line-of-sight quartet value and no line-of-sight bank name occurs in the executable body -- every model number below is the HIERARCHY path's   (r6897_fields, r6941_fine_{lcdm,cr} and r6959_eta_cr's band edges only)
+  [PASS] and nothing is SOLVED: the instrument is neither imported nor shelled out to   (banks on disk)
+
+⛭⛭ ⓵ -- THE ESTIMATOR, VALIDATED BEFORE IT IS READ
+
+  [PASS] ⛭ THE HELD PERIOD IS MEASURED AND IT IS NOT 2, which is the whole reason it is held at a measured value: the acoustic period in q is 2 BY CONSTRUCTION and the fields do not run at it, and the monopole and the dipole do not run at the same one   (lcdm: monopole 1.96361 dipole 1.99088  cr: monopole 1.95845 dipole 1.98956)
+  [PASS] and its own uncertainty is measured from disjoint sub-ranges rather than assumed, which is what makes the leak test below a test at the right scale   (lcdm 1.23%  cr 1.38%; perturbation used 1.3%)
+  [PASS] ⛔ VALIDATION FIRST, AS ORDERED: the two estimators return the SAME quantity and their MEANS agree, on the range where both work -- the window estimator taken at the width where it is sound   (window(half=2) 1.4987 against held(half=0.5) 1.4910)
+  [PASS] ⚠ AND THE WINDOW ESTIMATOR DOES NOT SURVIVE ITS OWN WIDTH WHILE THE HELD ONE DOES: the window's ripple grows more than tenfold as it narrows to the width `cc66.51` read the candidate at, and the held estimator's is flat   (window 0.0071 -> 0.1155; held 0.0224 -> 0.0292)
+  [PASS] ⛭ AND IT REACHES WHERE THE WINDOW ESTIMATOR CANNOT: the window estimator's lowest centre is 1.5 + half and so never below q = 2.0, while the held fit needs only a fraction of a period and reaches the data's own edge   (held floor q = 0.39 against the window estimator's 2.00)
+  [PASS] ⛭ AND THE COST THE ORDER NAMED IS MEASURED RATHER THAN NOTED: the held period perturbed at the scale it is KNOWN to moves the candidate's span across the bands by far less than that span.  ⇒ THE ESTIMATOR CAN ANSWER THE QUESTION.  *The fit re-fits the PHASE in every window, so a wrong held period is absorbed there and costs a common amplitude factor, which cancels in a ratio of ratios*   (worst leak +0.00006 against span +0.00959 -- 0.6 per cent)
+
+⛭⛭ ⓶ -- THE CANDIDATE, BELOW THE OLD FLOOR
+
+    q           1.20      1.90      2.60      3.30      4.00      4.70      5.40
+    dep     -0.00031  +0.00482  +0.00494  +0.00507  +0.00903  +0.01241  +0.01441
+    spread   0.02102   0.00303   0.00501   0.00517   0.00110   0.00205   0.00098
+  [PASS] ⛔ THE SECOND NULL OF THE PRE-REGISTRATION, AND IT IS A FLOOR OF MECHANISM RATHER THAN OF WIDTH: band 1 is STILL not measurable -- its spread across eight estimator settings exceeds its value -- because its window straddles the first acoustic excursion, where there is no oscillation amplitude to estimate at all   (band 1 value -0.00031 with spread 0.0210)
+  [PASS] and every band above it IS measurable, which is what makes the floor a statement and not an excuse   (largest spread above band 1 is 0.0052)
+  [PASS] ⛭ AND THE BAND AT q = 1.90 IS NOW MEASURED, WHICH NO ESTIMATOR OF THIS QUANTITY HAS REACHED   (band 2 at q = 1.90, value +0.00482, spread 0.0030)
+  [PASS] ⛭⛭ SIGN FIRST, THE TOOTH THIS SEAT ADDED LAST REVISION: on the range the estimator unlocked the candidate's departure is POSITIVE IN EVERY BAND, as the target's is   (candidate +0.00482 -> +0.01441; target +0.05740 -> +0.07621)
+  [PASS] and GROWTH AFTER: it grows across the bands in the same direction as the target   (candidate G = 2.99 against the target's 1.33)
+  [PASS] ⛔⛔ AND THE CURVATURE TOOTH CANNOT BE APPLIED, WHICH IS THE FIRST NULL AND IS A STATEMENT ABOUT THE FILTER RATHER THAN THE CANDIDATE: the criterion is that the candidate's curvature carry the TARGET's sign, and the target's own curvature FLIPS SIGN when any single band is dropped, on both ranges either can be read on   (target drop-one curvature on q>=1.90 [-0.002909, +0.002296], on q>=2.60 [-0.008992, +0.000538])
+  [PASS] ⛔⛔ AND THE REASON IS EXACT RATHER THAN STATISTICAL: on the FULL seven-band range the target's curvature is negative as pre-registered at r6993, and dropping BAND 1 ALONE flips it positive while dropping any OTHER single band leaves it negative.  ⇒ *** THE TARGET'S DECELERATION IS CARRIED ENTIRELY BY THE ONE BAND NO ESTIMATOR OF THE CANDIDATE CAN REACH. ***   (full range -0.003265; drop band 1 +0.000302; drop any other in [-0.005302, -0.002816])
+  [PASS] ⌗ and the candidate's own curvature is at least stable on the range this estimator unlocked, so what is missing is the target's sign and not the candidate's number   (candidate curvature +0.000815, drop-one [+0.000459, +0.001507])
+  [PASS] ⚠⚠ AND `cc66.51`'s CURVATURE PASS DOES NOT SURVIVE, WHICH IS A CORRECTION TO THIS SEAT'S OWN LANDED RESULT: read with the WINDOW estimator on its own range and its own recipe, the candidate's curvature CHANGES SIGN between the width it was read at and the width where that estimator is sound   (half=0.5: -0.009276  half=1.0: -0.000486  half=2.0: +0.001240)
+  [PASS] ⛔ and the reason `cc66.51`'s own stability check did not catch it is the 'say which quantity' guard biting the seat that wrote it: that check certified the MEAN over a sub-range, and the mean IS stable across the widths on which the curvature is not   (means 1.4987 and 1.5091 agree to 0.69% while the curvature changes sign)
+
+⛭⛭⛭ ⓷ -- THE PREDICTION IN ITS OWN RIGHT
+
+  [PASS] ⛭ THE COMB READS THE CUMULATIVE JACOBIAN: pi D_M / rs_leaf reproduces the banked acoustic scale while pi D_M / rs_stack does not come near it, which is what 'the comb rides the leaf accumulation' means as a number   (pi D_M/rs_leaf = 301.410 and pi D_M/rs_stack = 170.758 against l_A = 301.799)
+  [PASS] ⛭⛭⛭ AND THE WIDTHS READ A DIFFERENT FUNCTIONAL OF THE SAME OBJECT -- the WINDOW-LOCAL average against that CUMULATIVE integral -- so the width prediction is an INDEPENDENT reading of the two-rate assignment and not a restatement of the comb.  *Both are 1 on one rate and neither carries a free coefficient, so a construction tuned to the comb must still produce the right LOCAL Jacobian to match the widths*   (cumulative 0.56653 against window-local <Jac> 0.87441 -- -35 per cent apart)
+  [PASS] ⛔ BUT NO MEASUREMENT REACHES THE RATIO, WHICH IS THE ANSWER THE ORDER ASKED FOR IN ITS OWN TERMS: the PHASE width, which the window's Landau damping of the acoustic oscillation reads, differs between the arms by under one per cent, while the CONFORMAL width, which the projection reads, differs by more than thirteen -- and `cc66.52` bounded the projection's contrast effect at two per cent with its sign undetermined.  ⇒ NOT OBSERVABLE IN ITS OWN RIGHT   (phase width -0.84%, conformal width +13.50%)
+  [PASS] ⛔ THE ORDER'S GUARD: a PREDICTION.md exists and carries BOTH nulls as named outcomes -- the tooth that cannot be applied, and the floor that no estimator reaches   (7 outcomes tabled, both nulls among them)
+  [PASS] and it says WHEN each part of itself was written, rather than implying the table predates the reading it describes -- the teeth were fixed at r6993 and cc66.52 and the table was not   (the taxonomy introduces no criterion and is dated)
+
+====================================================================================================
+GATES: ALL PASS

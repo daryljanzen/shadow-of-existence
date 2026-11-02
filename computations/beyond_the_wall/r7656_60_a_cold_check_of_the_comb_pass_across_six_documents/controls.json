@@ -1,0 +1,543 @@
+{
+ "decoys": 95,
+ "decoy_hits": 39,
+ "decoy_rate": 0.410526,
+ "verbatim_decoys": 95,
+ "verbatim_decoy_hits": 10,
+ "verbatim_decoy_rate": 0.105263,
+ "exact_reproduce": 85,
+ "exact_decoy_hits": 14,
+ "exact_decoy_rate": 0.147368,
+ "stratified": {
+  "<=2": {
+   "decoys": 2,
+   "hits": 2,
+   "rate": 1.0,
+   "real": 2
+  },
+  "3": {
+   "decoys": 11,
+   "hits": 10,
+   "rate": 0.9091,
+   "real": 11
+  },
+  ">=4": {
+   "decoys": 82,
+   "hits": 12,
+   "rate": 0.1463,
+   "real": 82
+  }
+ },
+ "strata_measurable": [
+  ">=4"
+ ],
+ "rounded_reproduce": 94,
+ "rounded_decoy_hits": 24,
+ "rounded_decoy_rate": 0.252632,
+ "verbatim": 81,
+ "within_printed_digit": 14,
+ "neither": 0,
+ "tolerance_only_figures": [
+  "0.4390",
+  "1.4011",
+  "1125.1",
+  "186.135",
+  "3.3387380",
+  "811.6"
+ ],
+ "median_multiplicity": 4,
+ "mean_multiplicity": 4.82,
+ "one_receipt_only": [
+  "0.2488",
+  "0.4390",
+  "0.8555",
+  "2.6876",
+  "49.4",
+  "85.6"
+ ],
+ "twenty_or_more": [
+  "68.6"
+ ],
+ "rows": [
+  {
+   "real": "1.60",
+   "decoy": "1.80",
+   "hits": 2
+  },
+  {
+   "real": "186.007",
+   "decoy": "189.727",
+   "hits": 0
+  },
+  {
+   "real": "186.135",
+   "decoy": "189.858",
+   "hits": 0
+  },
+  {
+   "real": "2.35",
+   "decoy": "2.55",
+   "hits": 1
+  },
+  {
+   "real": "276.4",
+   "decoy": "281.9",
+   "hits": 2
+  },
+  {
+   "real": "0.23",
+   "decoy": "0.43",
+   "hits": 4
+  },
+  {
+   "real": "1121.9",
+   "decoy": "1144.3",
+   "hits": 0
+  },
+  {
+   "real": "1125.1",
+   "decoy": "1147.6",
+   "hits": 2
+  },
+  {
+   "real": "220.0",
+   "decoy": "224.4",
+   "hits": 0
+  },
+  {
+   "real": "221.0",
+   "decoy": "225.4",
+   "hits": 0
+  },
+  {
+   "real": "533.8",
+   "decoy": "544.5",
+   "hits": 0
+  },
+  {
+   "real": "536.3",
+   "decoy": "547.0",
+   "hits": 0
+  },
+  {
+   "real": "811.6",
+   "decoy": "827.8",
+   "hits": 0
+  },
+  {
+   "real": "814.8",
+   "decoy": "831.1",
+   "hits": 0
+  },
+  {
+   "real": "298.4",
+   "decoy": "304.4",
+   "hits": 2
+  },
+  {
+   "real": "299.1",
+   "decoy": "305.1",
+   "hits": 0
+  },
+  {
+   "real": "0.2488",
+   "decoy": "0.2538",
+   "hits": 0
+  },
+  {
+   "real": "2.291",
+   "decoy": "2.337",
+   "hits": 3
+  },
+  {
+   "real": "2.221",
+   "decoy": "2.265",
+   "hits": 6
+  },
+  {
+   "real": "2.262",
+   "decoy": "2.307",
+   "hits": 0
+  },
+  {
+   "real": "2.349",
+   "decoy": "2.396",
+   "hits": 0
+  },
+  {
+   "real": "299.1",
+   "decoy": "305.1",
+   "hits": 0
+  },
+  {
+   "real": "1125.02",
+   "decoy": "1147.52",
+   "hits": 2
+  },
+  {
+   "real": "220.03",
+   "decoy": "224.43",
+   "hits": 0
+  },
+  {
+   "real": "536.25",
+   "decoy": "546.98",
+   "hits": 0
+  },
+  {
+   "real": "536.27",
+   "decoy": "547.00",
+   "hits": 0
+  },
+  {
+   "real": "811.58",
+   "decoy": "827.81",
+   "hits": 0
+  },
+  {
+   "real": "811.59",
+   "decoy": "827.82",
+   "hits": 0
+  },
+  {
+   "real": "1125.11",
+   "decoy": "1147.61",
+   "hits": 2
+  },
+  {
+   "real": "2.291",
+   "decoy": "2.337",
+   "hits": 3
+  },
+  {
+   "real": "2.348",
+   "decoy": "2.395",
+   "hits": 0
+  },
+  {
+   "real": "2.349",
+   "decoy": "2.396",
+   "hits": 0
+  },
+  {
+   "real": "0.4390",
+   "decoy": "0.4478",
+   "hits": 2
+  },
+  {
+   "real": "0.8555",
+   "decoy": "0.8726",
+   "hits": 1
+  },
+  {
+   "real": "0.8780",
+   "decoy": "0.8956",
+   "hits": 0
+  },
+  {
+   "real": "1.0311",
+   "decoy": "1.0517",
+   "hits": 4
+  },
+  {
+   "real": "1.4011",
+   "decoy": "1.4291",
+   "hits": 0
+  },
+  {
+   "real": "2.3759",
+   "decoy": "2.4234",
+   "hits": 0
+  },
+  {
+   "real": "2.6876",
+   "decoy": "2.7414",
+   "hits": 0
+  },
+  {
+   "real": "2.774",
+   "decoy": "2.829",
+   "hits": 4
+  },
+  {
+   "real": "3.3387380",
+   "decoy": "3.4055128",
+   "hits": 1
+  },
+  {
+   "real": "302.9",
+   "decoy": "309.0",
+   "hits": 0
+  },
+  {
+   "real": "49.4",
+   "decoy": "51.4",
+   "hits": 1
+  },
+  {
+   "real": "7.85",
+   "decoy": "8.05",
+   "hits": 0
+  },
+  {
+   "real": "85.6",
+   "decoy": "87.6",
+   "hits": 1
+  },
+  {
+   "real": "0.23",
+   "decoy": "0.43",
+   "hits": 4
+  },
+  {
+   "real": "1121.9",
+   "decoy": "1144.3",
+   "hits": 0
+  },
+  {
+   "real": "1125.1",
+   "decoy": "1147.6",
+   "hits": 2
+  },
+  {
+   "real": "2.221",
+   "decoy": "2.265",
+   "hits": 6
+  },
+  {
+   "real": "2.262",
+   "decoy": "2.307",
+   "hits": 0
+  },
+  {
+   "real": "2.291",
+   "decoy": "2.337",
+   "hits": 3
+  },
+  {
+   "real": "2.349",
+   "decoy": "2.396",
+   "hits": 0
+  },
+  {
+   "real": "220.0",
+   "decoy": "224.4",
+   "hits": 0
+  },
+  {
+   "real": "221.0",
+   "decoy": "225.4",
+   "hits": 0
+  },
+  {
+   "real": "298.4",
+   "decoy": "304.4",
+   "hits": 2
+  },
+  {
+   "real": "299.1",
+   "decoy": "305.1",
+   "hits": 0
+  },
+  {
+   "real": "533.8",
+   "decoy": "544.5",
+   "hits": 0
+  },
+  {
+   "real": "536.3",
+   "decoy": "547.0",
+   "hits": 0
+  },
+  {
+   "real": "811.6",
+   "decoy": "827.8",
+   "hits": 0
+  },
+  {
+   "real": "814.8",
+   "decoy": "831.1",
+   "hits": 0
+  },
+  {
+   "real": "1.16",
+   "decoy": "1.36",
+   "hits": 7
+  },
+  {
+   "real": "1.60",
+   "decoy": "1.80",
+   "hits": 2
+  },
+  {
+   "real": "186.0",
+   "decoy": "189.7",
+   "hits": 0
+  },
+  {
+   "real": "186.007",
+   "decoy": "189.727",
+   "hits": 0
+  },
+  {
+   "real": "186.135",
+   "decoy": "189.858",
+   "hits": 0
+  },
+  {
+   "real": "2.35",
+   "decoy": "2.55",
+   "hits": 1
+  },
+  {
+   "real": "2.71",
+   "decoy": "2.91",
+   "hits": 1
+  },
+  {
+   "real": "276.4",
+   "decoy": "281.9",
+   "hits": 2
+  },
+  {
+   "real": "2.35",
+   "decoy": "2.55",
+   "hits": 1
+  },
+  {
+   "real": "1121.9",
+   "decoy": "1144.3",
+   "hits": 0
+  },
+  {
+   "real": "1125.1",
+   "decoy": "1147.6",
+   "hits": 2
+  },
+  {
+   "real": "2.221",
+   "decoy": "2.265",
+   "hits": 6
+  },
+  {
+   "real": "2.262",
+   "decoy": "2.307",
+   "hits": 0
+  },
+  {
+   "real": "2.291",
+   "decoy": "2.337",
+   "hits": 3
+  },
+  {
+   "real": "2.349",
+   "decoy": "2.396",
+   "hits": 0
+  },
+  {
+   "real": "220.0",
+   "decoy": "224.4",
+   "hits": 0
+  },
+  {
+   "real": "221.0",
+   "decoy": "225.4",
+   "hits": 0
+  },
+  {
+   "real": "298.4",
+   "decoy": "304.4",
+   "hits": 2
+  },
+  {
+   "real": "299.1",
+   "decoy": "305.1",
+   "hits": 0
+  },
+  {
+   "real": "533.8",
+   "decoy": "544.5",
+   "hits": 0
+  },
+  {
+   "real": "536.3",
+   "decoy": "547.0",
+   "hits": 0
+  },
+  {
+   "real": "811.6",
+   "decoy": "827.8",
+   "hits": 0
+  },
+  {
+   "real": "814.8",
+   "decoy": "831.1",
+   "hits": 0
+  },
+  {
+   "real": "1125.1",
+   "decoy": "1147.6",
+   "hits": 2
+  },
+  {
+   "real": "2.221",
+   "decoy": "2.265",
+   "hits": 6
+  },
+  {
+   "real": "2.291",
+   "decoy": "2.337",
+   "hits": 3
+  },
+  {
+   "real": "2.349",
+   "decoy": "2.396",
+   "hits": 0
+  },
+  {
+   "real": "220.0",
+   "decoy": "224.4",
+   "hits": 0
+  },
+  {
+   "real": "536.3",
+   "decoy": "547.0",
+   "hits": 0
+  },
+  {
+   "real": "811.6",
+   "decoy": "827.8",
+   "hits": 0
+  },
+  {
+   "real": "186.135",
+   "decoy": "189.858",
+   "hits": 0
+  },
+  {
+   "real": "276.4",
+   "decoy": "281.9",
+   "hits": 2
+  },
+  {
+   "real": "298.4",
+   "decoy": "304.4",
+   "hits": 2
+  },
+  {
+   "real": "299.1",
+   "decoy": "305.1",
+   "hits": 0
+  },
+  {
+   "real": "68.6",
+   "decoy": "70.6",
+   "hits": 1
+  }
+ ],
+ "scored_miss": [
+  "\u246b THE REGISTERED THRESHOLD -- the tolerance matcher's decoy rate is at or below 20% -- MEASURED 41.1%, scored a MISS at +60.4.  The 95-of-95 was the width of the window and not the corpus.",
+  "\u3251 THE ROUNDING MATCHER'S OWN DECOY RATE is at or below the SAME 20% registered at +60.3 -- MEASURED 25.3%, scored a MISS at +60.6.  \u2472 is therefore WITHHELD and the nine figures it carried are UNESTABLISHED, not reproduced.  \u3254 locates the whole of it in LOW PRECISION: 100% at <=2 significant digits, 90.9% at 3, and 14.6% at >=4."
+ ],
+ "live_failures": []
+}

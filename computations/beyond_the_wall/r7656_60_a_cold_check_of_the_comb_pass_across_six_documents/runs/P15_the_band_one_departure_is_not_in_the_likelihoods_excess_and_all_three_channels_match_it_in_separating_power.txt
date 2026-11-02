@@ -1,0 +1,119 @@
+P15 sec:refit-bound, sec:scope -- ** BAND 1 CARRIES UNDER ONE PER CENT OF THE LIKELIHOOD'S EXCESS AND ITS
+CONTRIBUTION CHANGES SIGN UNDER SHAPE ABSORPTION, SO THE DEPARTURE IS NEITHER A FEATURE OF THE RESIDUAL NOR
+THE SHAPE REJECTION READ LOCALLY; `cc66.62` CALLED A SEPARATING-POWER DEPARTURE A CONTRIBUTION TO THE EXCESS
+AND THAT LABEL IS CORRECTED HERE; AND IN THE METRIC THE STEP DOES LIVE IN, ALL THREE CHANNELS DEPART THE
+ARM'S WAY. **
+
+** PATH PROVENANCE. **  *** Every model number below is the HIERARCHY path *** --
+`r6941_fine_{lcdm,cr_leafrec1}`, `r6959_nswap_lcdm`, `r6975_mix_lcdm`, `r6983_joint_lcdm`,
+`r6959_eta_cr_leafrec1`'s band edges, and `plik_lite` TT
+through the corpus's own `chi2_of_spectrum`.  ⛔ *** Nothing is SOLVED and nothing is RUN. ***
+
+** THE ORDER'S DISTINCTION IS THIS RECEIPT'S VOCABULARY AND NOT AN ACKNOWLEDGEMENT. **
+  · ** SEPARATING POWER ** -- the instrument's ability to tell two candidate spectra apart at a band.
+  · ** SIGNIFICANCE ** -- the size of a departure against its own trend, in that metric.
+⇒ *No quantity below divides one by the other; every share is a ratio of two **significances**.*
+
+⛔⛭ ** ⓶ IS RUN FIRST THOUGH IT IS NUMBERED SECOND, BECAUSE IT DECIDES WHAT ⓵ MEANS -- and the
+pre-registration says so, so the file's structure carries it rather than a sentence. **
+
+** ⛔ r7639 ⑴ -- RE-POINTED TO THE ARM OF RECORD, AND THE COMB CARRY DOES NOT APPLY HERE. **  69's
+ruling is about a band RMS cut on a comb coordinate; *** this receipt has no such statistic. ***  It works
+in BINNED multipole space against the Planck covariance -- every quantity below is a quadratic form in
+`COV_TT`, with no envelope, no oscillation and no comb anywhere in it.  So the re-point is a pointer
+change and nothing else, and carrying anything here would be a coordinate transformation applied to a
+statistic that does not live in that coordinate.  ⌗ *That is the third class this campaign has
+found: the carry APPLIES to an arm-vs-control comb-band ratio, is the IDENTITY for control against
+control, and DOES NOT APPLY where the statistic is not a comb-band ratio at all.*
+
+⛔⛔ ** ⓶ AND THE ANSWER IS NEITHER OF THE TWO OUTCOMES THE ORDER TABLED. **  Band 1 contributes $3.9$ of the
+$298.5$ the seven bands sum to -- ** a little over one per cent ** -- against a total excess of $336.5$ over
+all covered bins.  Absorbing smooth global shape with $n = 1,2,3,4$ free coefficients in $\ln\ell$ it reads
+$+3.9$, $-0.5$, $+0.5$, $+7.1$: *** it changes sign ***, where bands 2--7 hold to within a few per cent.
+  ⌗ *On the namesake arm those were $2.6$ of $287$ against $322$, and "under one per cent".  The
+sign change -- which is the claim -- is unmoved.*
+
+⇒ *** SO BAND 1'S DEPARTURE IS NOT A DISTINCT FEATURE OF THE RESIDUAL, AND IT IS NOT THE SHAPE REJECTION
+READ LOCALLY EITHER -- THE SHAPE REJECTION IS BARELY PRESENT THERE AT ALL. ***  *It lives at bands 4--7,
+which carry $86\%$ of the per-band excess.*
+
+⛔⛔ ** AND THAT FORCES A CORRECTION TO `cc66.62`, WHICH IS THIS SEAT'S. **  Its ⓵ⓑ was headed *"THE STEP IS A
+LOCALISED CONTRIBUTION TO ITS EXCESS"* and then reported band 1's ** separating power ** -- $36.4\sigma$
+against a trend predicting $53$--$71$.  ** The number was right and the label was wrong. **  ⇒ *The
+likelihood **does** see a band-1 departure, in its power to tell models apart; it does **not** carry a band-1
+excess.  Those are different sentences and `cc66.62` ran them together -- one revision after the
+separating-power/significance distinction was drawn, and one before it bit.*
+
+⛭⛭⛭ ** ⓵ AND IN THE METRIC THE STEP ACTUALLY LIVES IN, ALL THREE CHANNELS DEPART THE ARM'S WAY. **  Each
+channel's band-1 departure from its own bands 2--7 trend, against the arm's $-0.311$ to $-0.489$:
+  · the ** WINDOW channel ** $-0.448$ to $-0.584$ -- *the same sign and **larger***, a share of $1.31$;
+  · the ** TERM MIX ** $-0.244$ to $-0.459$, a share of $0.86$;
+  · the ** JOINT ** $-0.100$ to $-0.343$, a share of $0.51$.
+⇒ *** THE FIRST TIME THIS ROW HAS HAD CANDIDATES THAT DEPART THE SAME WAY AS THE ARM ON AN INSTRUMENT THAT
+CAN CARRY THE QUESTION. ***
+
+⚠ *And the window channel, which went the **wrong** way on the differential estimator, goes the right way
+here and over-delivers -- **a different verdict on a different instrument, reported as that rather than
+smoothed.***
+
+⛔ ** AND THE CANCELLATION IS MEASURED RATHER THAN READ OFF **, as the order required: the realised pair
+delivers $34\%$ of the closest of product, sum and quadrature, $2.4$ of its own residual away.  *The two
+knobs partly cancel here as they did on the differential estimator.*
+
+⚠⚠ ** AND WHAT ⓶ DOES TO ⓵, WHICH IS THE WHOLE REASON IT WAS RUN FIRST. **  *These are shares of a
+**separating-power** departure.  A channel matching the arm there is matching a feature that carries one per
+cent of the likelihood's excess.*  ⇒ ** So this is NOT yet "a candidate produces the step" in the sense
+`PO-56`'s strong clause needs: a real match in a real metric, and the wrong metric for the clause. **
+
+⛔ *No new candidate.  No mechanism.  `cc66.61`'s floor is not revisited -- it is landed as a statement about
+the banded family and that is finished work.  No basis or aggregation chosen.  No corpus edits.*
+
+  [PASS] ⛔ PATH PROVENANCE: no line-of-sight bank name occurs in the executable body   (the fine banks, the three response banks and plik_lite only)
+  [PASS] and nothing is SOLVED and nothing is RUN   (banks on disk)
+  [PASS] the bank this receipt reads is present: `spectra/r6959_eta_cr_leafrec1.npz`   (r6959_eta_cr_leafrec1.npz)
+  [PASS] the bank this receipt reads is present: `spectra/r6941_fine_lcdm.npz`   (r6941_fine_lcdm.npz)
+  [PASS] the bank this receipt reads is present: `spectra/r6941_fine_cr_leafrec1.npz`   (r6941_fine_cr_leafrec1.npz)
+  [PASS] the bank this receipt reads is present: `spectra/r6959_nswap_lcdm.npz`   (r6959_nswap_lcdm.npz)
+  [PASS] the bank this receipt reads is present: `spectra/r6975_mix_lcdm.npz`   (r6975_mix_lcdm.npz)
+  [PASS] the bank this receipt reads is present: `spectra/r6983_joint_lcdm.npz`   (r6983_joint_lcdm.npz)
+  [PASS] ⛔⛭ THE SEQUENCING: the pre-registration adopts the order's separating-power/significance distinction as its OWN VOCABULARY rather than acknowledging it, and commits that no quantity divides one by the other   (the distinction is a rule the file binds itself to, not a note)
+  [PASS] ⛭ AND IT STATES THAT ⓶ IS ASKED FIRST THOUGH NUMBERED SECOND, so the file's STRUCTURE carries the order's point that ⓶ decides what ⓵ means   (structure, not a sentence)
+  [PASS] ⛭ AND IT NAMES ⓶'s OWN HAZARD BEFORE MEETING IT: more free parameters always shrink a residual, so the rate is what is read and the same absorption is applied to arm and channels alike   (a shrinking departure is not by itself evidence)
+  [PASS] ⛭ AND IT REQUIRES THE JOINT'S APPARENT CANCELLATION TO BE MEASURED AGAINST THREE RULES rather than read off the two numbers the order flagged   (measured, not inferred)
+  [PASS] and the band edges are a DEFINITION and not a measurement, so they do not move with the arm: the namesake's `q_edges` and the arm of record's are bit-identical.  ⛭ *This receipt reads the eta bank for NOTHING ELSE, so reverting that pointer cannot move a figure here -- and this check is what makes that a statement rather than an assumption.  It is why the eta leg's revert is silent and why no pin on it would mean anything: the quantity it supplies is a definition, proven identical, which is not the silent class of `r7637+cc66.1` at all*   (8 edges, 0.85 to 5.75, max |diff| 0.0e+00)
+
+PART 1 -- ⓶ (RUN FIRST) THE LOWEST BAND IS NOT WHERE THE LIKELIHOOD REJECTS THIS ARM.
+----------------------------------------------------------------------------------------------------
+    n=1  total excess   336.5   per band:     3.9     14.2     27.8     69.7     85.2     49.5     48.2
+    n=2  total excess   329.7   per band:    -0.5     18.8     24.4     78.6     87.3     52.4     51.3
+    n=3  total excess   339.7   per band:     0.5     18.2     21.8     75.7     81.6     54.8     48.1
+    n=4  total excess   328.1   per band:     7.1     14.0     26.3     71.3     89.2     53.0     51.4
+  [PASS] ⓶ THE LOWEST BAND CARRIES A NEGLIGIBLE SHARE OF THE LIKELIHOOD'S EXCESS -- which is where the likelihood actually rejects this arm, and it is NOT band 1   (band 1 is 1.3% of the 298 the bands sum to; bands 4-7 carry 85%)
+  [PASS] AND ITS CONTRIBUTION CHANGES SIGN AS SMOOTH GLOBAL SHAPE IS ABSORBED, where bands 2--7 hold steady.  ⇒ ** So the departure is NEITHER a distinct feature of the residual NOR the shape rejection read locally: the shape rejection is barely present there at all -- and that is neither of the two outcomes the order tabled **   (band 1 reads +3.9, -0.5, +0.5, +7.1; bands 2-7 stay within 8% of their n=1 value)
+  [PASS] ⌗ AND THE HAZARD THE PRE-REGISTRATION NAMED IS HONOURED: the same absorption is applied to arm and control alike and what is read is the RATE against the other bands, not the size   (both arms absorbed identically at every n)
+
+PART 2 -- THE CORRECTION TO `cc66.62` THAT ⓶ FORCES.
+----------------------------------------------------------------------------------------------------
+    band-1 SEPARATING POWER 46.6 sigma, its bands 2--7 trend predicting 68-91   -- `cc66.62`'s figure was 36.4 on the NAMESAKE arm; on the arm of record it is this
+    band-1 share of the EXCESS 1.3%   -- the quantity that sentence named
+  [PASS] ⛔ THE HEADER'S THREE ARM-OF-RECORD FIGURES ARE THE COMPUTED ONES: band 1's contribution, the seven-band sum, and the total excess, each read out of the header text and compared with what this run measures   (header carries $3.9$ of $298.5$ against a total excess of $336.5$)
+  [PASS] ⛔ THE ARM IS PINNED on band 1's separating power, which EXCLUDES the namesake arm -- without it every claim here is a share or a sign with room and a green would say nothing about which arm was read   (band-1 separating power 46.64 sigma against the namesake arm's 36.4)
+  [PASS] ⛔⛔ THE CORRECTION: `cc66.62` ⓵ⓑ CALLED A SEPARATING-POWER DEPARTURE A CONTRIBUTION TO THE LIKELIHOOD'S EXCESS.  ** The number was right and the label was wrong **, and this receipt says so in its own header rather than leaving it to the reply   (the likelihood sees a band-1 departure in separating power and carries no band-1 excess)
+
+PART 3 -- ⓵ THE CHANNELS, SCORED IN THE METRIC THE STEP ACTUALLY LIVES IN.
+----------------------------------------------------------------------------------------------------
+    window     -0.493  -0.448  -0.584  -0.514   share  1.31   [2.7-3.6s]
+    term mix   -0.325  -0.244  -0.459  -0.336   share  0.86   [2.2-2.4s]
+    JOINT      -0.206  -0.100  -0.343  -0.184   share  0.51   [0.6-1.9s]
+    the ARM    -0.374  -0.312  -0.490  -0.393   share  1.00
+  [PASS] ⓵ ALL THREE CHANNELS DEPART THE SAME WAY AS THE ARM -- the first time this row has had candidates that do, on an instrument that can carry the question   (window, term mix and the realised pair all negative, as the arm is)
+  [PASS] AND THE WINDOW CHANNEL, WHICH WENT THE WRONG WAY ON THE DIFFERENTIAL ESTIMATOR, GOES THE RIGHT WAY HERE AND OVER-DELIVERS -- a different verdict on a different instrument, reported as that rather than smoothed   (share 1.31 of the arm's)
+    product      predicts -0.6769   residual -0.4685 = 2.8 of the joint's own
+    sum          predicts -0.8507   residual -0.6422 = 3.9 of the joint's own
+    quadrature   predicts -0.6132   residual -0.4048 = 2.4 of the joint's own
+  [PASS] AND THE CANCELLATION IS MEASURED RATHER THAN READ OFF THE TWO NUMBERS THE ORDER FLAGGED: no rule fits, and the realised pair delivers a third of the closest prediction   (closest quadrature, 2.4 residuals away; the pair delivers 34%)
+  [PASS] ⚠⚠ AND WHAT ⓶ DOES TO ⓵ IS CARRIED IN THE HEADER RATHER THAN LEFT TO THE READER: these are shares of a SEPARATING-POWER departure, so a channel matching the arm is matching a feature that carries one per cent of the likelihood's excess.  ** Not yet "a candidate produces the step" in the sense `PO-56`'s strong clause needs **   (a real match in a real metric, and the wrong metric for the clause)
+  [PASS] ⛔ AND ⓷ HOLDS: no new candidate, no mechanism, and `cc66.61`'s floor is not revisited   (finished work is left finished)
+
+====================================================================================================
+GATES: ALL PASS

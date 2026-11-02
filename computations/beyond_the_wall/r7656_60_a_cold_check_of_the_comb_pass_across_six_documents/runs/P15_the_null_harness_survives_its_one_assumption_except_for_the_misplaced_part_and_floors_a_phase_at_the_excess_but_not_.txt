@@ -1,0 +1,163 @@
+P15 -- THE NULL HARNESS, NOW LOAD-BEARING FOR `PO-56`'s EXIT, GIVEN ONE PASS OF ITS OWN (node 70, `r7035`).
+
+`r7029` built the instrument-noise null: the control fit plus a draw from N(0, COV), the likelihood's own
+covariance, pushed through the whole estimator.  `cc66.66` scored its three projections against it and reversed
+`cc66.65` on it.  It assumes the likelihood's COV IS the noise.
+** a) What does that assumption buy, and what would it cost if it were wrong?  b) Can the harness give an
+uncertainty on a RATIO of two projected amplitudes and on a PHASE OFFSET -- what the accounting will quote? **
+
+** a) IT BUYS EVERY CLEARANCE BUT ONE. **
+  * Held design: the ESTIMATOR is fixed (F stays the likelihood's metric, as the paper defines the statistic); only
+    the covariance the noise is DRAWN from varies.  Diagonal alone; every correlation at the flat 0.15 floor
+    `cc66.62` measured; that floor at lags 1-7 only; COV rescaled.
+  * The arm's a(1.00) and `cc66.66`'s projections a) and b) clear under EVERY variant, pooled or not, by margins
+    the variants never approach.
+  * ** The misplaced part c) does not.**  Pooled over 20,000 draws it clears the likelihood's COV (0 reach it) and
+    fails the pre-registered bar under the lags-1-7 floor: 26 of 20,000 reach it, p = 1.3e-3.  Still below one
+    per cent, but it is the ONE clearance the assumption decides.
+  * ** And `cc66.66`'s 1.44x is the favourable end of its own seed spread. **  Its seed reproduces it exactly;
+    ten other seeds of 2,000 give 1.10x to 1.37x, because the maximum of 2,000 draws is itself a noisy statistic.
+    The pooled tail count is the stable number, and on it c) still clears the likelihood's COV.
+  * RESCALING DOES NOT MATTER; STRUCTURE DOES.  The repository measures the noise scale -- its fitted LCDM control
+    returns chi2 206.4 over 210 degrees of freedom, 0.98 +- 0.10 -- and the smallest variance inflation at which any
+    draw reaches c) is 2.5, fifteen widths away.  (The harness's own control returns 3.3 per degree of freedom,
+    but that is theory misfit -- the control is a theory spectrum, not fitted to the data -- and is not read as a
+    rescale.)  The sqrt(s) law the pre-registration assumed FAILS: each draw is
+    a FIXED part (the noise-free quadratic term) plus noise, and only the noise scales, so the margin is measured
+    by a scan, not the formula.
+  * ⇒ *** THE MARGIN: A CLEARANCE NEEDS ITS OBSERVED VALUE ABOVE ABOUT ONE AND A HALF TIMES THE LIKELIHOOD-COV
+    NULL'S MAXIMUM BEFORE THE ASSUMPTION STOPS MATTERING -- the largest structural inflation of the null maximum
+    is 1.46x.  The arm and a) and b) sit at 2.0x and above; c) sits at 1.1x to 1.4x. ***
+
+** b) YES AT THE EXCESS, AND AT THE SPECTRUM THERE IS NOTHING TO FLOOR. **
+  * The null CANNOT give them as a null: it is built with the signal absent.  Its cross-term phase is uniform
+    (Rayleigh p = 0.20); its excess phase is not, and that is the fixed quadratic term (amplitude 1.06 in every
+    draw), which `r7029` declared -- not a leak.  A ratio or a phase needs the same noise model used as a
+    PERTURBATION about the observed data, and that is what is measured here.
+  * AT THE SPECTRUM LEVEL -- `cc66.65`'s accounting instrument -- THE FLOORS ARE NEGLIGIBLE: phase offsets to
+    4e-4 rad, ratios to 1e-3 relative.  The spectrum difference moves with the data only through two fitted
+    scalars.  ⇒ *** The window's 0.264 and +0.27 rad are properties of the two THEORIES, with no statistical floor.
+    A share built from them is exact up to the construction, and its honest uncertainty is SYSTEMATIC. ***
+  * AT THE EXCESS LEVEL -- where the noise lives -- THE FLOORS ARE FINITE AND LINEAR: phase offsets to about
+    0.05 rad and ratios to 0.015 (window) and 0.030 (term mix).  Half the noise doubled matches the full noise to
+    one per cent, and the delta method from the joint covariance matches direct perturbation to one per cent.  So
+    the floor on ANY residue `arm - k * channel` at fixed k follows from one 6x6 matrix, which is recorded.
+
+⛔ NOT CLAIMED: no accounting is run.  No central value of the term mix's ratio, phase or share is printed -- that is
+`cc66`'s, because it owns the instrument; spreads only.  No channel, no mechanism, no re-scoring, no physics, and no
+verdict on `cc66`'s results: c)'s dependence on the assumption and the seed spread of its multiple are ROUTED, not
+applied.  No `cc66` receipt, bank or transfer is touched.
+
+Written r7035 by node 70.  Stated for reversal.
+
+====================================================================================================
+THE AUDIT, RUN IN-PROCESS FROM ITS COMMITTED SCRIPT (nothing written back)
+====================================================================================================
+OBSERVED: arm a(1.00) 7.304, ⓐ term mix own cost 4.238, ⓑ arm part it does not explain 4.005, ⓒ the part it misplaces 1.482
+REPRO cc66.66 (seed 7033): obs/max [3.12, 2.26, 2.83, 1.44]
+
+V0 likelihood COV
+   arm a(1.00)                        obs   7.304  null med  1.091  p99  1.961  max  2.338  #>=obs    0  obs/max  3.12
+   ⓐ term mix own cost                obs   4.238  null med  0.826  p99  1.611  max  2.038  #>=obs    0  obs/max  2.08
+   ⓑ arm part it does not explain     obs   4.005  null med  0.678  p99  1.268  max  1.619  #>=obs    0  obs/max  2.47
+   ⓒ the part it misplaces            obs   1.482  null med  0.447  p99  0.926  max  1.286  #>=obs    0  obs/max  1.15
+
+V1 diagonal alone
+   arm a(1.00)                        obs   7.304  null med  1.142  p99  2.350  max  2.779  #>=obs    0  obs/max  2.63
+   ⓐ term mix own cost                obs   4.238  null med  0.839  p99  1.771  max  2.303  #>=obs    0  obs/max  1.84
+   ⓑ arm part it does not explain     obs   4.005  null med  0.662  p99  1.400  max  1.812  #>=obs    0  obs/max  2.21
+   ⓒ the part it misplaces            obs   1.482  null med  0.460  p99  1.017  max  1.365  #>=obs    0  obs/max  1.09
+
+V2 flat 0.15, all pairs
+   arm a(1.00)                        obs   7.304  null med  1.125  p99  2.252  max  2.639  #>=obs    0  obs/max  2.77
+   ⓐ term mix own cost                obs   4.238  null med  0.832  p99  1.742  max  2.123  #>=obs    0  obs/max  2.00
+   ⓑ arm part it does not explain     obs   4.005  null med  0.656  p99  1.357  max  1.731  #>=obs    0  obs/max  2.31
+   ⓒ the part it misplaces            obs   1.482  null med  0.453  p99  0.969  max  1.321  #>=obs    0  obs/max  1.12
+
+V3 flat 0.15, lags 1-7
+   arm a(1.00)                        obs   7.304  null med  1.181  p99  2.694  max  3.412  #>=obs    0  obs/max  2.14
+   ⓐ term mix own cost                obs   4.238  null med  0.872  p99  2.143  max  2.643  #>=obs    0  obs/max  1.60
+   ⓑ arm part it does not explain     obs   4.005  null med  0.738  p99  1.797  max  2.292  #>=obs    0  obs/max  1.75
+   ⓒ the part it misplaces            obs   1.482  null med  0.530  p99  1.222  max  1.778  #>=obs    2  obs/max  0.83
+
+V4 COV x 0.5
+   arm a(1.00)                        obs   7.304  null med  1.072  p99  1.695  max  1.960  #>=obs    0  obs/max  3.73
+   ⓐ term mix own cost                obs   4.238  null med  0.804  p99  1.371  max  1.667  #>=obs    0  obs/max  2.54
+   ⓑ arm part it does not explain     obs   4.005  null med  0.678  p99  1.103  max  1.346  #>=obs    0  obs/max  2.98
+   ⓒ the part it misplaces            obs   1.482  null med  0.428  p99  0.784  max  1.029  #>=obs    0  obs/max  1.44
+
+V4 COV x 2
+   arm a(1.00)                        obs   7.304  null med  1.130  p99  2.387  max  2.874  #>=obs    0  obs/max  2.54
+   ⓐ term mix own cost                obs   4.238  null med  0.870  p99  1.952  max  2.565  #>=obs    0  obs/max  1.65
+   ⓑ arm part it does not explain     obs   4.005  null med  0.707  p99  1.535  max  2.024  #>=obs    0  obs/max  1.98
+   ⓒ the part it misplaces            obs   1.482  null med  0.497  p99  1.135  max  1.663  #>=obs    1  obs/max  0.89
+   median ratio / sqrt(0.5) per quantity: [1.3892 1.3767 1.415  1.3568]
+   median ratio / sqrt(2.0) per quantity: [0.7321 0.7452 0.7378 0.7877]
+   s* by the pre-registered formula (INVALID, sqrt law fails): {'arm a(1.00)': 9.76, 'ⓐ term mix own cost': 4.33, 'ⓑ arm part it does not explain': 6.12, 'ⓒ the part it misplaces': 1.33}
+   scan arm a(1.00)                        first s with a draw >= obs: 24.0   first s with p99 >= obs: None
+   scan ⓐ term mix own cost                first s with a draw >= obs: 12.0   first s with p99 >= obs: 24.0
+   scan ⓑ arm part it does not explain     first s with a draw >= obs: 12.0   first s with p99 >= obs: 24.0
+   scan ⓒ the part it misplaces            first s with a draw >= obs: 2.5   first s with p99 >= obs: 4.0
+   structural variants, null max / V0 null max: {'V1 diagonal alone': [1.188, 1.13, 1.119, 1.062], 'V2 flat 0.15, all pairs': [1.129, 1.042, 1.069, 1.027], 'V3 flat 0.15, lags 1-7': [1.459, 1.297, 1.415, 1.382]}
+   V0 likelihood COV        arm a(1.00)                        null max over 10 seeds 2.182-2.465 (obs/max 2.96-3.35);  pooled 0 of 20000 >= obs, p 5.0e-05
+   V0 likelihood COV        ⓐ term mix own cost                null max over 10 seeds 1.809-2.127 (obs/max 1.99-2.34);  pooled 0 of 20000 >= obs, p 5.0e-05
+   V0 likelihood COV        ⓑ arm part it does not explain     null max over 10 seeds 1.461-1.666 (obs/max 2.40-2.74);  pooled 0 of 20000 >= obs, p 5.0e-05
+   V0 likelihood COV        ⓒ the part it misplaces            null max over 10 seeds 1.079-1.343 (obs/max 1.10-1.37);  pooled 0 of 20000 >= obs, p 5.0e-05
+   V3 flat 0.15, lags 1-7   arm a(1.00)                        null max over 10 seeds 3.038-3.551 (obs/max 2.06-2.40);  pooled 0 of 20000 >= obs, p 5.0e-05
+   V3 flat 0.15, lags 1-7   ⓐ term mix own cost                null max over 10 seeds 2.364-3.269 (obs/max 1.30-1.79);  pooled 0 of 20000 >= obs, p 5.0e-05
+   V3 flat 0.15, lags 1-7   ⓑ arm part it does not explain     null max over 10 seeds 2.109-2.358 (obs/max 1.70-1.90);  pooled 0 of 20000 >= obs, p 5.0e-05
+   V3 flat 0.15, lags 1-7   ⓒ the part it misplaces            null max over 10 seeds 1.463-1.904 (obs/max 0.78-1.01);  pooled 26 of 20000 >= obs, p 1.3e-03
+   repository noise scale: fitted LCDM chi2 206.4 over nu 210 -> s_hat 0.983 +/- 0.098
+   (the harness control's chi2/nu 3.27 is theory misfit, not a noise scale)
+
+ⓑ(0) arm excess (quad + cross) phase under the NULL: mean resultant 0.9432, Rayleigh p 0
+
+ⓑ(0) arm cross term alone phase under the NULL: mean resultant 0.0282, Rayleigh p 0.204
+ⓑ d  window  /arm: ratio 0.2638 (median 0.2638)  phase +0.270 rad  ratio sd 2.41e-04 phase sd 4.05e-04 rad  linearity x2(half)/full: ratio 1.000 phase 1.000
+ⓑ d  term mix/arm: [central values withheld: cc66 runs the accounting]  ratio sd 6.12e-04 phase sd 2.83e-04 rad  linearity x2(half)/full: ratio 1.000 phase 1.000
+ⓑ ex window  /arm: ratio 0.2752 (median 0.2761)  phase +3.121 rad  ratio sd 1.54e-02 phase sd 4.56e-02 rad  linearity x2(half)/full: ratio 0.999 phase 0.997
+ⓑ ex term mix/arm: [central values withheld: cc66 runs the accounting]  ratio sd 3.04e-02 phase sd 5.21e-02 rad  linearity x2(half)/full: ratio 0.997 phase 0.996
+ⓑ per-component noise sigma of the excess projections: {'ex arm': 0.3669, 'ex window': 0.1209, 'ex term mix': 0.3155}
+ⓑ delta method, window/arm at the excess: ratio sd 0.0154 (direct 0.0154), phase sd 0.0454 (direct 0.0456)
+ⓑ per-component sigma of the residue arm - k*channel, k on a grid: {'window': {'0.0': 0.3669493042887301, '0.25': 0.38542121078853214, '0.5': 0.4053074279830668, '1.0': 0.44855764960354544}, 'term mix': {'0.0': 0.3669493042887301, '0.25': 0.31307264271920393, '0.5': 0.27169061122122784, '1.0': 0.2504680980784671}}
+
+====================================================================================================
+THE GATES
+====================================================================================================
+
+PART 0 -- THE PRE-REGISTRATION CAME FIRST, AND THE HARNESS IS THE ONE `cc66.66` SCORED ON.
+  [PASS] the pre-registration fixed the design (estimator held, DRAWING covariance varied) and the bars before the script existed
+  [PASS] ⛭ the harness reproduces the arm's a(1.00) and, on `cc66.66`'s own seed and draw order, its published multiples 2.26, 2.83 and 1.44 exactly   (a(1.00) 7.3038; multiples [2.262, 2.828, 1.44])
+
+PART ⓐ -- THE ASSUMPTION, VARIED.
+  [PASS] on the likelihood's own COV all four clear: 0 of 2,000 reach any observed value   ({'arm a(1.00)': 0, 'ⓐ term mix own cost': 0, 'ⓑ arm part it does not explain': 0, 'ⓒ the part it misplaces': 0})
+  [PASS] ⛭ the arm, a) and b) SURVIVE THE ASSUMPTION: 0 of 2,000 reach them under the diagonal, the flat plateau AND the flat floor at lags 1-7   ({'V1': [2.6284651802006334, 1.8402094869480246, 2.210721992242934], 'V2': [2.7673214827620325, 1.9959221957353734, 2.314085251308909], 'V3': [2.1406438247205184, 1.6037091086505282, 1.747827594487493]})
+  [PASS] ⛔⛭ AND c), THE MISPLACED PART, DOES NOT: it survives the diagonal and the plateau but draws reach it under the lags-1-7 floor -- the one clearance the assumption decides   (V1 0, V2 0, V3 2 of 2000)
+  [PASS] ⌗ pooled over 20,000 draws: c) clears the likelihood's COV outright and, under the lags-1-7 floor, lands between 1e-4 and 1e-2 -- below one per cent, not clear of it   (V0 0 of 20000; V3 26 of 20000, p 1.3e-03)
+  [PASS] and pooled, the arm, a) and b) are reached by NO draw under either
+  [PASS] ⛭ `cc66.66`'s 1.44x for c) is the FAVOURABLE END of its own seed spread: ten other seeds of 2,000 give multiples wholly below it, because the maximum of 2,000 draws is itself a noisy statistic   (ten seeds 1.10x - 1.37x against 1.44x)
+  [PASS] ⚠ the sqrt(s) law the pre-registration assumed FAILS, so its s* formula is kept for the record and NOT used -- each draw is a fixed noise-free part plus noise, and only the noise scales   (median ratio / sqrt(s): s=0.5 [1.39, 1.38, 1.42, 1.36], s=2 [0.73, 0.75, 0.74, 0.79])
+  [PASS] ⛭ so the rescale margin is measured by a scan: c) is first reached at a variance inflation of at most 3, the other three at no less than 12   ({'ar': 24.0, 'ⓐ ': 12.0, 'ⓑ ': 12.0, 'ⓒ ': 2.5})
+  [PASS] ⛭ AND RESCALING IS NOT WHERE THE RISK IS: the repository measures the noise scale -- the fitted LCDM control's chi2 per degree of freedom -- and c)'s threshold sits more than ten widths above it   (s_hat 0.983 +- 0.098; c) first reached at s = 2.5)
+  [PASS] ⛔ and the harness's own control is NOT a noise estimate -- its chi2/nu is theory misfit, and it is reported as that rather than read as a rescale   (3.27)
+  [PASS] ⇒ *** THE MARGIN: the largest structural inflation of the null maximum is under 1.5x, so a clearance above about 1.5x the likelihood-COV maximum is safe from the assumption -- the arm, a) and b) are; c) is not ***   (largest inflation 1.46x; lowest seed multiple: arm/a/b [2.96, 1.99, 2.4], c 1.10)
+
+PART ⓑ -- A RATIO AND A PHASE.
+  [PASS] the null cannot supply them AS A NULL: the noise-carrying cross term's phase is uniform under it   (Rayleigh p 0.20)
+  [PASS] ⚠ and the excess's null phase is NOT uniform -- found running it and pre-registered as a leak -- because the quadratic term is FIXED in every draw, at about the null's own median; `r7029` declared that term noise-free   (mean resultant 0.94; fixed quad 1.056 against null median 1.091)
+  [PASS] ⛭⛭ AT THE SPECTRUM LEVEL -- the accounting's own instrument -- THE FLOORS ARE NEGLIGIBLE by the pre-registered bar: phase below 0.01 rad, ratio below one per cent relative   (window phase 4.0e-04 rad, ratio 9.1e-04 rel; term mix phase 2.8e-04 rad, ratio 6.1e-04)
+  [PASS] ⇒ *** and the window's published 0.264 and +0.27 rad are recovered as the perturbation's centres -- properties of the two theories, with no statistical floor ***   (ratio 0.2638, phase +0.270 rad)
+  [PASS] ⛭ AT THE EXCESS LEVEL THE FLOORS ARE FINITE: phase offsets to about 0.05 rad, ratios to a few hundredths   ({'window': (0.0456, 0.0154), 'term mix': (0.0521, 0.0304)})
+  [PASS] and LINEAR by the pre-registered bar: half the noise, doubled, is within ten per cent of the full spread   ({'d window/arm': (1.0, 1.0), 'd term mix/arm': (1.0, 1.0), 'ex window/arm': (0.999, 0.997), 'ex term mix/arm': (0.997, 0.996)})
+  [PASS] ⛭ and the delta method from the joint 6x6 covariance matches direct perturbation within fifteen per cent, so the floor on ANY residue arm - k*channel follows from the recorded matrix   (ratio 1.000, phase 0.997)
+  [PASS] ⌗ the residue floor is tabled on a grid of k, not at a fitted k -- per component it stays between 0.2 and 0.5   ({'window': {'0.0': 0.3669493042887301, '0.25': 0.38542121078853214, '0.5': 0.4053074279830668, '1.0': 0.44855764960354544}, 'term mix': {'0.0': 0.3669493042887301, '0.25': 0.31307264271920393, '0.5': 0.27169061122122784, '1.0': 0.2504680980784671}})
+
+PART ⛔ -- THE LIMITS, AS WRITTEN.
+  [PASS] no central value of the term mix's ratio, phase or share is computed into the record -- spreads only
+  [PASS] and the header says no accounting is run, and routes c)'s dependence and the seed spread rather than applying them
+
+====================================================================================================
+VERDICT: ALL PASS -- the harness survives its one assumption for the arm, a) and b); c), the misplaced part,
+         is the one clearance the assumption decides, and its 1.44x is the favourable end of its seed spread.
+         A ratio or phase is floored at the excess (about 0.05 rad) and has no statistical floor at the
+         spectrum, where the accounting's own instrument lives.

@@ -1,0 +1,125 @@
+P15 sec:refit-bound, sec:scope -- ** THE EXCESS AT BANDS 4--7 IS FEATURELESS TO EVERY SMOOTH SHAPE AND
+YET MODULATED AT THE ACOUSTIC PERIOD, SO `cc66.58`'s "FEATURELESS" WAS A PROPERTY OF THE BANDING; THE TERM
+MIX IS THE FIRST CHANNEL EVER TO PRODUCE COST WHERE THE ARM IS ACTUALLY REJECTED, THOUGH IT OVERSHOOTS BY A
+THIRD AND MISPLACES NEARLY HALF OF IT; AND THE CANCELLATION IS ABSENT HERE -- THE PAIR ADDS. **
+
+** PATH PROVENANCE. **  *** Every model number below is the HIERARCHY path *** -- `r6941_fine_{lcdm,cr}`,
+`r6959_nswap_lcdm`, `r6975_mix_lcdm`, `r6983_joint_lcdm`, `r6959_eta_cr`'s band edges, and `plik_lite` TT
+through the corpus's own `chi2_of_spectrum`.  ⛔ *** Nothing is SOLVED and nothing is RUN. ***
+
+** THE VOCABULARY IS NOW THREE COLUMNS WIDE AND NO QUANTITY BELOW MIXES TWO. **
+  · ** SEPARATING POWER ** -- how well the data could tell two candidate spectra apart, $d^{T}Fd$.
+  · ** SIGNIFICANCE ** -- the size of a departure against its own trend, within one instrument.
+  · ** EXCESS ** -- $\chi^{2}(\mathrm{arm}) - \chi^{2}(\mathrm{control})$, what the data REJECTS on.
+⇒ *⓵ is scored on the third.  **Every share below is a ratio of two excesses and of nothing else.***
+
+⛭ ** AND THE ESTIMATOR IS EXACT THIS TIME, WHICH IS A CORRECTION TO `cc66.63`'s INSTRUMENT AND NOT TO ITS
+RESULT. **  `cc66.63` inverted each band's covariance block alone and its contributions summed to $287$
+against a total of $322$; *I quoted that gap rather than eliding it.*  Since $r_a = r_c - d$,
+
+$$\chi^{2}(a) - \chi^{2}(c) \;=\; d^{T}Fd \;-\; 2\,d^{T}Fr_c ,$$
+
+whose per-bin terms sum to the excess ** identically ** -- reproduced here to $1.7\times10^{-13}$.  ⌗ *And
+the split is not bookkeeping: the first term is the separating power and the second is the only part that
+knows where the data sits.  **`cc66.63`'s finding is that algebra.***  ⇒ On the exact decomposition bands
+4--7 carry $87\%$ against `cc66.63`'s $86\%$: *** the location holds. ***
+
+⛭⛭⛭ ** ⓶ THE EXCESS AT 4--7 IS FEATURELESS AND COMBED AT ONCE, WHICH IS NOT A CONTRADICTION. **  Across
+$82$ bins a constant explains $0.0\%$ of the scatter, a trend in $\ln q$ $1.6\%$, a quadratic $2.8\%$ --
+*`cc66.58`'s verdict survives every smooth shape at the finer scale.*  ** But project onto the acoustic comb
+and the amplitude is $7.30$ against a null of $2.53$ built from $110$ wrong periods, of which *** not one ***
+returns more, and the maximum anywhere in $0.55$--$1.95$ sits at period $1.01$. **
+
+⇒ *** SO `cc66.58`'s "FEATURELESS" WAS A PROPERTY OF THE BANDING. ***  *Seven numbers cannot see a modulation
+at the period they are $0.70$ wide against; $82$ bins at a thirty-fourth of that period can.*
+
+⛔ ** AND THE CONTROL THAT DECIDES WHETHER THAT COMB IS A RESULT. **  $d$ is itself a comb, so a comb in the
+excess could be an artefact of the model difference.  Split the two terms: the comb at period $1.00$ measures
+$6.24$ in $-2d^{T}Fr_c$ and $1.08$ in $d^{T}Fd$.  *** Five sixths of it comes from the term that knows where
+the data sits, so the modulation is a fact about the DATA and not about $d$. ***  ⚠ *The quadratic term was
+predicted to enter at period $1/2$; it carries $0.57$ there and $1.08$ at $1.00$, so that prediction did not
+hold cleanly -- $d$ is not a pure sinusoid and its envelope varies.  It is reported as it measured.*
+
+⛭⛭⛭ ** ⓵ AND HERE THE SHARES ARE LARGE, WHICH IS WHY THEY GET A CONTROL BEFORE THEY GET A HEADLINE. **
+At bands 4--7 the window weighting scores $0.14$, the term mix $1.36$ and the realised joint pair $1.53$,
+stable across $n = 1,2,3,4$ ($0.13$--$0.18$, $1.28$--$1.42$, $1.47$--$1.63$).  ⛔ *But **any** spectrum that is
+not the control costs something, so a share above one may mean only "also rejected" and not "rejected the
+same way."*  ⇒ *** So the per-bin PATTERN is compared, not the total. ***
+
+  · ** the window weighting is ANTI-correlated with the arm, $r = -0.70$. **  *Its cost is not the arm's.*
+  · ** the term mix matches at $r = +0.70$, regression $0.74$, with $45\%$ left over. **
+  · ** the joint pair matches WORSE than the term mix alone, $r = +0.46$. **  *Adding the window raises the
+    total and degrades the pattern.*
+
+⇒ *** SO THE TERM MIX IS THE FIRST CANDIDATE THIS ROW HAS EVER PRODUCED THAT COSTS SOMETHING WHERE THE
+LIKELIHOOD ACTUALLY REJECTS THE ARM -- $1.41$, $1.07$, $0.76$ across bands 4, 5 and 7 -- AND IT OVERSHOOTS BY
+A THIRD AND PUTS NEARLY HALF OF ITS COST SOMEWHERE THE ARM DOES NOT PAY IT. ***
+
+⛔⛔ ** SO THE AMENDED CLAUSE IS NEITHER MET NOR DISCHARGED, AND I WILL NOT ROUND IT EITHER WAY. **  *The
+clause terminates if **no** quantity this construction fixes produces the contrast excess in the bands where
+the likelihood rejects the arm.  A channel producing $136\%$ of it with $70\%$ pattern correlation is not
+"no quantity"; a channel misplacing $45\%$ of its cost is not "the carrier identified."*
+
+⚠⚠ ** AND THE CANCELLATION IS ABSENT HERE, WHICH COSTS THE STORY THIS ROW WAS BUILDING. **  Twice elsewhere
+the pair delivered a fraction of its singles and 66 wrote that it was *beginning to look like a property*.
+** On the excess the singles sum to $1.4965$ and the realised pair gives $1.5305$ -- $102\%$ of the sum. **
+⇒ *** THE KNOBS ADD HERE.  CANCELLATION IS A PROPERTY OF THE METRIC, NOT OF THE PAIR. ***  ⌗ *That is the
+third instrument-dependence this row has found and it is the one that goes against me.*
+
+⚠ ** AND WHERE A FEATURE IS MOST VISIBLE IS NOT WHERE IT COSTS MOST -- now with the converse attached: **
+*band 6 is where the arm is CHEAPEST ($14.6$ against $80$, $80$, $123$) and every channel is expensive there,
+so that band's share has a small denominator and is never quoted alone.*
+
+⛔ *No new candidate.  No mechanism.  `cc66.61`'s floor and the band-1 results are finished work and are not
+re-derived.  No basis or aggregation chosen.  No corpus edits.*
+
+  [PASS] ⛔ PATH PROVENANCE: no line-of-sight bank name occurs in the executable body   (the fine banks, the three response banks and plik_lite only)
+  [PASS] and nothing is SOLVED and nothing is RUN   (banks on disk)
+  [PASS] the bank this receipt reads is present: `spectra/r6959_eta_cr.npz`   (r6959_eta_cr.npz)
+  [PASS] the bank this receipt reads is present: `spectra/r6941_fine_lcdm.npz`   (r6941_fine_lcdm.npz)
+  [PASS] the bank this receipt reads is present: `spectra/r6941_fine_cr.npz`   (r6941_fine_cr.npz)
+  [PASS] the bank this receipt reads is present: `spectra/r6959_nswap_lcdm.npz`   (r6959_nswap_lcdm.npz)
+  [PASS] the bank this receipt reads is present: `spectra/r6975_mix_lcdm.npz`   (r6975_mix_lcdm.npz)
+  [PASS] the bank this receipt reads is present: `spectra/r6983_joint_lcdm.npz`   (r6983_joint_lcdm.npz)
+  [PASS] ⛔ THE PRE-REGISTRATION IS ON DISK AND WAS COMMITTED BEFORE THE WORKING SCRIPT   (PREDICTION.md)
+  [PASS] and it tabled FIRST the outcome that costs this seat most -- no channel accounting for the cost, which retires the three candidates `cc66.63` reported   (the expensive outcome is tabled first)
+  [PASS] and it fixed the estimator check as a GATE before any result was built on it   (a disagreement was pre-committed as a finding against the file)
+  [PASS] and it fixed the wrong-period null BEFORE the comb was projected   (the null was pre-registered)
+
+====================================================================================================
+  ⛭ THE ESTIMATOR, WHICH THE PRE-REGISTRATION MADE A GATE BEFORE ANYTHING RESTS ON IT
+----------------------------------------------------------------------------------------------------
+  [PASS] ⛭ THE DECOMPOSITION IS AN IDENTITY, NOT A FIT: the per-bin terms of $d^{T}F(d - 2r_c)$ sum to $\chi^{2}(a) - \chi^{2}(c)$ exactly, so `cc66.63`'s 287-against-322 gap is gone   (direct 321.9628 vs summed 321.9628, agreeing to 5.7e-14)
+  [PASS] and it agrees with `cc66.63`'s block-inverted instrument on WHERE the cost is, which is the only thing the two are asked to agree on -- so this corrects the instrument and not the result   (bands 4--7 carry 87% exact vs 86% block-inverted)
+
+  ⛭⛭⛭ ⓶ FEATURELESS TO EVERY SMOOTH SHAPE, AND COMBED AT THE ACOUSTIC PERIOD
+----------------------------------------------------------------------------------------------------
+    vs a constant          : +0.0% of the scatter explained
+    vs a trend in ln q     : +1.6% of the scatter explained
+    vs a quadratic in ln q : +2.8% of the scatter explained
+  [PASS] ⛭ `cc66.58`'s VERDICT SURVIVES EVERY SMOOTH SHAPE AT THE FINER SCALE: across the 82 bins a constant, a trend and a quadratic in $\ln q$ each explain under 3% of the scatter   (82 bins; a constant +0.0%, a trend in ln q +1.6%, a quadratic in ln q +2.8%)
+
+    comb amplitude at period 1.00: 7.3038;  null over 110 wrong periods: mean 2.5279, max 5.5613;  peak of the scan at 1.01
+  [PASS] ⛭⛭ AND YET IT IS MODULATED AT THE ACOUSTIC PERIOD: the projection at period 1.00 exceeds what the SAME projection returns at every one of the wrong periods, and the scan's own maximum sits at 1.01 -- *** so `cc66.58`'s "featureless" was a property of the BANDING, not of the excess ***   (0 of 110 wrong periods return more; peak at 1.01)
+  [PASS] ⛔ AND THE CONTROL SAYS THE COMB IS A FACT ABOUT THE DATA AND NOT AN ARTEFACT OF $d$: of the modulation at period 1.00, the term that knows where the data sits carries five sixths and the purely quadratic term carries the rest   (-2d'Fr_c 6.24 against d'Fd 1.08, a ratio of 5.8)
+  [PASS] ⚠ AND THE PREDICTION THAT THE QUADRATIC TERM WOULD ENTER AT PERIOD 1/2 DID NOT HOLD CLEANLY, AND IS REPORTED AS IT MEASURED RATHER THAN QUIETLY DROPPED   (it carries 0.57 at 1/2 and 1.08 at 1.00)
+
+  ⛭⛭⛭ ⓵ THE CHANNELS AT BANDS 4--7, ON THE EXCESS -- AND THE PATTERN CONTROL
+----------------------------------------------------------------------------------------------------
+    window     share +0.137   across n=1..4  +0.127..+0.184
+    term mix   share +1.360   across n=1..4  +1.276..+1.419
+    JOINT      share +1.530   across n=1..4  +1.469..+1.628
+  [PASS] ⛭ THE SHARES ARE STABLE UNDER SHAPE ABSORPTION, so `cc66.63`'s sign-flip lesson is applied here BEFORE it can bite rather than after: no channel's share changes sign or moves by half across $n = 1,2,3,4$   (window +0.13..+0.18; term mix +1.28..+1.42; JOINT +1.47..+1.63)
+    window     corr -0.703  regression -0.115  left over 184%
+    term mix   corr +0.702  regression +0.743  left over 45%
+    JOINT      corr +0.456  regression +0.623  left over 59%
+  [PASS] ⛔⛔ THE SHARE ALONE WAS NOT INTERPRETABLE AND THE PATTERN CONTROL IS WHAT MAKES IT ONE: the window weighting's cost is ANTI-correlated with the arm's, so its 0.14 is not a small share of the arm's cost -- it is a DIFFERENT cost   (window r = -0.703)
+  [PASS] ⛭⛭⛭ AND THE TERM MIX IS THE FIRST CHANNEL THIS ROW HAS PRODUCED THAT COSTS SOMETHING WHERE THE LIKELIHOOD ACTUALLY REJECTS THE ARM: share 1.36 with the cost lying along the arm's own per-bin pattern at $r = +0.70$   (share 1.36, r = +0.702, regression 0.74)
+  [PASS] ⛔ AND IT IS NOT ROUNDED UP INTO A CARRIER: it overshoots by a third and nearly half its cost does not lie along the arm's pattern at all, so the amended clause is NEITHER met NOR discharged   (45% left over)
+  [PASS] and adding the window to the term mix RAISES the total while DEGRADING the pattern, which is the sharpest statement available that a total is not a match   (share 1.36 -> 1.53 but r +0.70 -> +0.46)
+  [PASS] ⚠⚠ AND THE CANCELLATION IS ABSENT ON THE EXCESS, WHICH GOES AGAINST THE STORY THIS ROW WAS BUILDING: twice elsewhere the pair delivered a fraction of its singles and it was called *beginning to look like a property* -- here the singles ADD, the realised pair giving 102% of their sum.  *** Cancellation is a property of the METRIC, not of the pair. ***   (closest rule sum, the pair delivering 102%)
+  [PASS] ⚠ AND BAND 6 IS FLAGGED RATHER THAN QUOTED: it is where the ARM is cheapest, so its per-band share has a small denominator and is never quoted alone   (the arm pays 14.6 there against 123 at band 7)
+  [PASS] ⛔ AND ⓷ HOLDS: no new candidate, no mechanism, and `cc66.61`'s floor and the band-1 results are left finished   (finished work is left finished)
+
+====================================================================================================
+GATES: ALL PASS

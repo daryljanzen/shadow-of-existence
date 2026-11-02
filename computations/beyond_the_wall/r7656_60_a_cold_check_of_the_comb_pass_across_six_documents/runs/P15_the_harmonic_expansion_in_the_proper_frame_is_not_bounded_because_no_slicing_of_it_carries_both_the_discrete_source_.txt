@@ -1,0 +1,278 @@
+
+P15 receipt -- `r7101`'s Q1: THE HARMONIC EXPANSION, CARRIED OUT IN THE PROPER FRAME.  THE EXPANSION
+ITSELF INTRODUCES NOTHING -- THE OBSERVER'S OFFSET FROM THE CHART ORIGIN IS A PURE PHASE, EXACTLY --
+BUT THE SLICE HAS NOTHING TO EXPAND AND NO $D_C$ TO OFFER, AND THE COMPLETION IS NOT BOUNDED ON THIS
+CONSTRUCTION.  SO IT IS SAID AND STOPPED, WITH THE REASON EXHIBITED.
+
+** THE ORDER. **  `r7101`: *"Your own statement of it: $j_\ell(k D_C)$ is licensed by the flatness of
+the slice plus the exact recovery of the expansion law, and not by expanding a plane wave on the
+constant-$\tilde\tau$ slice with the observer at a general point of it.  Do that.  Show what the
+$\ell$-space kernel is, with the observer off the origin of the chart, and whether it is
+$j_\ell(k D_C)$ with $D_C$ the light-travel distance."*  With two things wanted beyond the answer --
+whether the expansion introduces anything the flat identification does not have, and what the
+observer being at a general point costs -- and one licence: *"if it turns out not to be bounded after
+all ... say that and stop, because an unbounded calculation reported as bounded is worse than the
+identification it would replace."*
+
+⇒ *** THE ANSWER, IN ONE LINE: THE EXPANSION INTRODUCES NOTHING, AND IT CANNOT BE SET UP.  The
+observer's constant-$\tau$ slice is exactly $\mathbb{E}^3$ and the plane-wave expansion about a
+general point of it is exact to $1.3\times10^{-15}$ with the offset a pure phase -- so no measure, no
+weight, no $\ell$-dependent factor.  But that slice is not a surface of constant cosmic epoch, and
+the only length it offers between the observer and the last-scattering epoch is $r_0$ -- the reading
+`r7100` excluded -- short of $D_C$ by exactly the stretch $D_C/r_0 = 2.7737$. ***
+
+** WHAT THE CHART IS, EXACTLY -- and this is the piece that makes the rest follow. **  Writing
+`eq:proper-frame` on the areal radius instead of the comoving label gives, with no approximation,
+
+      ds^2 = -d tau^2 + ( dr - v(r) d tau )^2 + r^2 d Omega^2 ,     v(r)^2 = r_s/r + r^2/alpha^2
+
+*-- the Painleve-Gullstrand chart of Schwarzschild-de Sitter, with `r_s = 2 alpha / (3 sqrt 3)`
+EXACTLY the Nariai value (verified symbolically against `eq:scalefac` itself, residual identically
+zero), so that `f(r) = -(r-r_N)^2 (r+2 r_N) / (alpha^2 r) <= 0` everywhere with its double zero at the
+Nariai radius, and `v(r) = H(z) r / c` to machine precision with `1+z = r_0/r`.*  ⇒ ** The flow speed
+of the Painleve-Gullstrand slicing IS the Hubble velocity, and it is at or above `c` everywhere, equal
+to `c` only at `r_N`. **  *The chart is not an analogy; it is the same object the framework's "unit-speed
+loci of the lap" names.*
+
+** (i) WHAT THE EXPANSION INTRODUCES: NOTHING, and this half of the order's question is cleanly YES. **
+*On $\mathbb{E}^3$ the addition theorem about an observer at $x_O \ne 0$ is exact -- the offset is
+$e^{i k \cdot x_O}$, which cancels in $C_\ell$ -- and the series is verified here to
+$1.3\times10^{-15}$ at six random $(k, x_O, s)$ with $|x_O| \approx r_0$.*  ⇒ *So the identification
+is not hiding a measure or an $\ell$-dependent weight: that was the live worry and it is dead.*
+  ⌗ *And the control can see a number move: run the same series with the chart radius $|x|$ in place of
+  the chord $s$ and it misses the plane wave by $O(1)$.*
+
+** (ii) WHAT THE GENERAL POINT COSTS: the whole of $D_C$, and the shortfall is exactly the stretch. **
+*On the slice $\tau = \tau_0$ the cosmic epoch is a function of the EUCLIDEAN RADIUS ALONE --
+$\tilde\tau = \tau_0 + \chi$ and $r(\tilde\tau) = |x|$, so $1+z = r_0/|x|$ -- which makes the
+observer's own simultaneity slice carry every cosmic epoch, laid out as concentric spheres about the
+branch point.*  ⇒ ** The construction's $z = 1089.9$ locus is therefore a sphere of radius $4.63$ Mpc
+about the branch point: it subtends $0.105$ degrees of the observer's sky, two parts in ten million of
+it, and its Euclidean chord from the observer is $r_0$ to nine parts in ten thousand. **
+  ⇒ *** $D_C$ / (that chord) $= 2.7737$ -- the stretch $D_C/r_0$, to six figures.  The slice does not
+  fall short of $D_C$ by an unknown amount; it falls short by precisely the number the low-multipole
+  floor is built on. ***
+
+** (iii) AND THE SLICE IS NOT WHERE THE PHOTONS ARE, which is why no expansion on it could have worked. **
+*The exact null geodesics of this chart give `1+z = (1 +- v_o)/(1 +- v_e)` -- derived twice, confirmed
+by numerical integration of the geodesic system to one part in `1e-12`, and calibrated in the de Sitter
+case where the answer is independently known, returning `a_0/a_e` to twelve figures while the ratio of
+areal radii returns nothing like it.*  ⇒ ** On that relation the construction's $z=1089.9$ locus is a
+BLUESHIFT, the $z=1089.9$ surface sits at the Nariai radius to within $51$ Mpc, $r = r_N$ is an
+infinite-redshift surface, and the radial area distance is affine -- $D_A = (r_0-r_e)/(v_o-1)$,
+saturating at $1.31\times10^{4}$ Mpc. **  *None of that is the cosmological relation, and it is not
+meant to be: `sec:flatlcdm` says where the field equations act.*  ⇒ *** So the redshift the paper uses
+is the Friedmann readout's, not this chart's null geodesics' -- and a plane wave expanded on this
+chart's slice is not a mode of the thing that is observed. ***
+
+** (iv) AND THE JOIN THE ORDER NAMED IS WHERE IT FAILS, with one sentence of the paper carrying it. **
+*`sec:largescale` says the cosmological layers "are the closed $S^3$ of constant
+$\tilde\tau=\tau+\chi$", citing `sec:properframe`.  Computed from `eq:proper-frame`, that surface's
+induced three-metric is `(v^2-1) d chi^2 + r^2 d Omega^2` with BOTH coefficients constant on it, whose
+Ricci scalar is `2/r^2` and whose Ricci tensor has a zero eigenvalue along `chi`.*  ⇒ ** That is
+`R x S^2` of radius `r(tilde tau)`, not an `S^3`, which would give `6/a^2` isotropically. **
+  ⌗ *An `S^3` slice of curvature radius `a` DOES exist in this geometry -- a spherically symmetric
+  spacelike slice with the right induced metric can be built for ANY `a`, verified here -- so the
+  `S^3` is a choice of slice, and it is neither the constant-cosmic-time one nor one that singles out
+  `r_0`.*
+  ⚠ ** THE CHARITABLE READING, AND IT IS PROBABLY THE RIGHT ONE: ** *if "the cosmological layers are
+  the closed $S^3$" means the FRIEDMANN READOUT's spatial sections -- the closed reading in which
+  `Omega_k = -Omega_Lambda` sets a curvature radius near `r_0` -- then the physics is untouched and it
+  is the citation to `sec:properframe` that needs repair.  ** This receipt claims the geometry and NOT
+  that any number moves: `r_0`, `D_C`, the stretch, `ell_A` and the comb are all read off the Friedmann
+  readout, which nothing here touches. **
+
+⇒ *** THE VERDICT, AND THE STOP.  The expansion is NOT bounded on this construction, and the reason is
+exhibited rather than guessed: no single slicing of the proper frame carries both the source's discrete
+spectrum and the projection distance.  The flat slice has the distances' flatness and no epoch; the
+constant-epoch surface has the epoch and is a cylinder; the `S^3` is a third slice, unforced.  So this
+receipt does what the order licensed -- says that, and stops. ***
+  ⇒ ** WHAT THAT DOES AND DOES NOT DO TO `r7100`. **  *It does not move the conclusion.  `j_\ell(k_L
+  D_C)` is neither confirmed nor contradicted here; what is settled is that it cannot be DERIVED on the
+  proper frame's flat slice, so its licence remains `sec:flatlcdm`'s exact recovery of flat
+  $\Lambda$CDM -- an identification, with a named content.*  ⇒ *** The remainder `r7100` called "the
+  only place this chain could still move" does not move it.  It moves the LICENSING, from a derivation
+  the construction does not have to an identification the construction does.  The disagreement with the
+  sky stays real. ***
+
+⌗ ** THE SMALLER ITEM -- is a `c54`-era lensing potential admissible on the current background? **
+*One line, as asked: ** ADMISSIBLE IN PRINCIPLE, NOT AS IT STANDS, AND NOT FOR THE REASON THE ERA
+SUGGESTS. **  None of the three switches added since `c54` -- `LEAFSCALES`, `VISLEAF`, `LEAFREC` --
+reaches the growth factor or the line-of-sight projection the potential is built from; but its producer
+evaluates the growth on `A.Hphys`, the stacking rate, where the rate rule and the instrument's own
+`LEAFPERT` default put the perturbations on the leaf's.  ⇒ So part B has been standing on an object
+whose RATE ASSIGNMENT is superseded, not merely one that is unreproducible, and re-deriving it is the
+only option.  ⌗ Sized here so the re-derivation is not walked into blind: the two rates' growth shapes
+`D(a)/D_0` differ by `1.1e-3` at `z=2`, where the lensing kernel peaks, and by `5.8e-3` out to `z=10`,
+so the re-derivation should be expected to CONFIRM part B's numbers rather than move them.*
+
+** COMPUTES: the background objects at TWO stated parameter sets, and the chart and slice geometry
+built on them.  *** $(H_0, \Omega_m) = (68.60, 0.2973)$, the refit background `P15` fits, and
+$(73.00, 0.3066)$, the instrument's own default; every figure is reported at one of the two and
+labelled with which.  Derived: $x_0$, $\alpha$, $r_N$, $r_0$, $r_s$, $v(r)$, $f(r)$,
+$D_C(z_{\rm rec}=1089.9)$ and the ratios built from them; $\Omega_r = 4.15\times10^{-5}/h^2$ enters
+only the growth comparison in the lensing line.  *** No spectrum, transfer or likelihood is computed at
+any parameter set, and nothing is fitted. *** **
+
+⚠ ** SCOPE. **  No transfer is run and no spectrum computed.  `cc66`'s three-grid table is NOT
+re-measured and is not used here.  The acoustic instrument is NOT run; `L171x_lensing_potential.py` is
+READ for its rate assignment and not executed, and the lensing potential is NOT re-derived -- that is
+`cc66`'s order.  ⛔ And the expansion is not completed: the order's own licence is taken, and the
+reason is given rather than a result manufactured.
+
+
+  ==========================================================================
+  A.  THE CALIBRATION: FOUR OF `P15`'s PARAMETER-FREE FIGURES, REPRODUCED FROM THE BACKGROUND
+  ==========================================================================
+      the refit background `P15` fits:  x_0 = 1.6783  alpha =  5213.3  r_N =  3009.9  r_0 =  5051.5  r_s =  2006.6  D_C =  14011.5 Mpc
+      the instrument's own default:  x_0 = 1.6538  alpha =  4931.8  r_N =  2847.4  r_0 =  4709.0  r_s =  1898.3  D_C =  13004.6 Mpc
+  [PASS] ⛭ the layer's areal radius comes out at `r_0 = 5051` Mpc, `P15`'s own parameter-free figure
+  [PASS] ⛭ and the projection distance at `D_C = 1.4011e4` Mpc, the paper's own, to half its printed ulp -- a bracket the other configuration's 1.395e4 fails by 123 times
+  [PASS] ⛭ so the STRETCH is 2.7737 against the paper's 2.774 -- the number this receipt's main finding turns out to reproduce from a different direction
+  [PASS] ⛭ and the lowest closed-$S^3$ mode lands at ell_2 = 7.85 against the paper's 7.8 -- four figures calibrated before the unknown is touched
+
+  ==========================================================================
+  B.  ⛭⛭⛭ WHAT THE CHART IS: THE PAINLEVE-GULLSTRAND SLICING OF SdS AT EXACTLY THE NARIAI MASS
+  ==========================================================================
+  [PASS] the paper gives the proper frame on the COMOVING label, with $r$ a function of $\tau+\chi$ and the radial and angular coefficients DIFFERENT -- which is the form this section rewrites
+  [PASS] and it says the reassignment selects the Nariai member, which is the mass the identity below returns without being given it
+      symbolic residual  (dr/d tilde-tau)^2 - ( r_s/r + r^2/alpha^2 )  =  0      [0.3s]
+  [PASS] ⛭⛭ THE CHART IS NAMED BY AN IDENTITY, NOT BY ANALOGY: `eq:scalefac` satisfies `(dr/dtt)^2 = r_s/r + r^2/alpha^2` with `r_s = 2 alpha/(3 sqrt3)` -- the Nariai value -- so `ds^2 = -dtau^2 + (dr - v dtau)^2 + r^2 dOmega^2` IS the Painleve-Gullstrand form of SdS
+      worst | v(r) / (H(z) r/c) - 1 |              over both backgrounds: 2.22e-16
+      worst relative | f(r) - closed form |        over both backgrounds: 3.40e-16
+  [PASS] ⛭⛭ AND THE FLOW SPEED OF THAT SLICING IS THE HUBBLE VELOCITY: `v(r) = H(z) r / c` to machine precision with `1+z = r_0/r`, at five redshifts on both backgrounds
+  [PASS] ⛭ and `f(r) = -(r-r_N)^2 (r+2 r_N)/(alpha^2 r)`, so `f <= 0` EVERYWHERE with a double zero at the Nariai radius ⇒ `v >= 1` everywhere, equal to 1 only at `r_N`
+
+  ==========================================================================
+  C.  ⛭⛭ (i) THE EXPANSION ITSELF, WITH THE OBSERVER OFF THE CHART ORIGIN: EXACT, AND A PURE PHASE
+  ==========================================================================
+  [PASS] `prop:flat` is the premise, and it is the paper's own: the constant-$\tau$ slice is exactly flat $\mathbb{R}^3$
+      constant-tau slice: Ricci scalar = 0 ; Ricci tensor identically zero: True
+  [PASS] ⌗ THE CONTROL THAT RETURNS THE AFFIRMATIVE: the same machinery, run on the constant-$\tau$ slice, FINDS the flatness -- Ricci tensor identically zero -- so a non-zero answer below is the geometry and not the tool
+         k [1/Mpc]    s [Mpc]  |x_O| [Mpc]  |series-exact|  wrong-argument
+       4.25207e-04     6242.5       5068.2       2.776e-17       3.930e-04
+       7.04548e-04     4243.0       4969.2       5.551e-16       3.607e-02
+       7.14889e-04     4693.6       5068.0       2.776e-17       2.499e-01
+       2.03734e-04    10956.0       5033.6       3.140e-16       5.034e-01
+       7.07772e-04     4102.8       5220.9       1.347e-16       1.090e+00
+       7.89992e-04     7635.0       4960.8       1.344e-15       8.617e-02
+  [PASS] ⛭⛭ (i) ANSWERED: on the flat slice the expansion about a GENERAL point is EXACT and the observer's offset is the pure phase `exp(i k . x_O)` -- worst miss 1.3e-15 over six random configurations with |x_O| ~ r_0 ⇒ NO measure, NO weight, NO ell-dependent factor
+  [PASS] ⌗ and the control CAN see a number move: the same series with the chart radius |x| in place of the chord s misses the plane wave by 1.09 -- so the pass above is a measurement
+
+  ==========================================================================
+  D.  ⛭⛭⛭ (ii) WHAT THE SLICE OFFERS INSTEAD OF $D_C$: $r_0$, SHORT BY EXACTLY THE STRETCH
+  ==========================================================================
+      the observer's own constant-tau slice, epoch by Euclidean radius  (refit background):
+               1+z    |x| = r_0/(1+z)    chord from observer
+                 1          5051.4880        0.00 .. 10102.98 
+                 2          2525.7440     2525.74 .. 7577.23  
+                11           459.2262     4592.26 .. 5510.71  
+               101            50.0147     5001.47 .. 5101.50  
+            1090.9             4.6306     5046.86 .. 5056.12  
+             3e+07             0.0002     5051.49 .. 5051.49  
+
+      the z=1089.9 locus is a sphere of radius 4.6306 Mpc about the BRANCH POINT:
+        chord from the observer  = r_0 to 9.17e-04   (r_0 = 5051.49 Mpc)
+        angular size on the sky  = 0.1050 deg, 2.101e-07 of 4 pi
+        D_C / chord              = 2.773729   <-- the stretch D_C/r_0
+  [PASS] ⛭⛭ THE SLICE IS NOT A SURFACE OF CONSTANT COSMIC EPOCH: `tilde tau = tau_0 + chi` and `r(tilde tau) = |x|`, so the epoch across it is `1+z = r_0/|x|` and the observer's own simultaneity slice carries EVERY cosmic epoch, as spheres about the branch point
+  [PASS] ⛭⛭⛭ (ii) ANSWERED: the only length the slice offers between the observer and the $z=1089.9$ epoch is the chord to that sphere, which is `r_0` to 9.2e-04 -- the reading `r7100` excluded, and the paper's own `D_M=D_C` is the one it is short of
+  [PASS] ⇒ *** AND THE SHORTFALL IS NOT AN UNKNOWN AMOUNT: D_C / chord = 2.773729, the stretch D_C/r_0 to six figures -- the number the low-multipole floor is built on ***
+  [PASS] ⌗ and the whole last-scattering surface, as the slice sees it, subtends 0.105 degrees in ONE direction -- 2.1e-07 of the sky -- which is 'a chart's angle is not a sky', with a number on it
+
+      and what the general point costs in ANISOTROPY: epoch across the sky at fixed chord s
+        s =     100.0 Mpc:  1+z at 0 / 90 / 180 deg = 0.980588 / 0.999804 / 1.020196   spread 0.0396
+        s =    1000.0 Mpc:  1+z at 0 / 90 / 180 deg = 0.834751 / 0.980963 / 1.246823   spread 0.4121
+        s =    2525.7 Mpc:  1+z at 0 / 90 / 180 deg = 0.666667 / 0.894427 / 2.000000   spread 1.3333
+        s =   14011.5 Mpc:  1+z at 0 / 90 / 180 deg = 0.264990 / 0.339157 / 0.563784   spread 0.2988
+  [PASS] ⌗ the slice's epoch gradient is RADIAL ABOUT THE BRANCH POINT, so an observer at a general point is at no symmetry centre of it: at a chord of half `r_0` the epoch already spreads by more than 0.3 across the sky
+
+  ==========================================================================
+  E.  ⛭⛭ (iii) AND THE PHOTONS ARE NOT THE CHART'S NULL GEODESICS -- THE EXACT RELATION, AND dS
+  ==========================================================================
+  [PASS] the paper states the redshift it uses as the ratio of the scale factor at two cosmic times, which is the Friedmann readout's relation and is what the exact chart relation below is compared against
+      at the construction's locus r_e = 4.6306 Mpc (v_e = 20.8167, v_o = 1.155907):
+        exact chart relation, outgoing root  1+z = 0.098819        ingoing root  1+z = 0.007867      <- both BLUESHIFTS
+        the exact relation's 1+z = 1090.9 surface is at r = 2959.291 and 3061.067 Mpc, i.e. r_N = 3009.892 to within 51.2 Mpc
+
+      numerical integration of the geodesic system, ingoing root, down to r = 3061.0672:
+        |k.u|_o = 1.000000000000   |k.u|_e = 1090.900000   => 1+z = 1090.900000
+        the analytic root gives                                1+z = 1090.900000
+        null constraint held: -5.6e-17 -> +7.1e-11;  affine span 12766.7522 Mpc = (r_0-r_e)/(v_o-1) = 12766.7522 Mpc
+        achieved: agreement 1.03e-13 (bound 1e-6), null constraint 7.08e-11 (bound 1e-5)
+  [PASS] ⛭ the exact null-geodesic redshift of this chart is `1+z = (1 +- v_o)/(1 +- v_e)` -- the analytic root and an independent numerical integration of the geodesic system agree to 1.0e-13, against a bound of 1e-6, with the null constraint held to 7.1e-11, against 1e-5
+
+      the de Sitter calibration, where the answer is independently known to be a_0/a_e:
+        X_o=0.3 a_e=0.5:  (1-v_o)/(1-v_e) = 2.000000000000   a_0/a_e = 2.000000000000   ratio of AREAL RADII = 0.461538
+        X_o=0.1 a_e=0.2:  (1-v_o)/(1-v_e) = 5.000000000000   a_0/a_e = 5.000000000000   ratio of AREAL RADII = 0.121951
+        X_o=0.45 a_e=0.8:  (1-v_o)/(1-v_e) = 1.250000000000   a_0/a_e = 1.250000000000   ratio of AREAL RADII = 0.803571
+  [PASS] ⛭⛭ AND IT IS CALIBRATED, NOT ASSERTED: in the de Sitter case the same relation returns `a_0/a_e` to twelve figures, while the ratio of the two events' AREAL RADII returns nothing like it -- so the chart's areal-radius ratio is not a photon redshift
+  [PASS] ⇒ ⛭⛭ (iii) ANSWERED: on the exact relation the construction's z=1089.9 locus is a BLUESHIFT (0.0079 / 0.0988), its own z=1089.9 surface sits at the Nariai radius, and `r = r_N` is an infinite-redshift surface ⇒ the photons the paper projects are NOT this chart's null geodesics, so a plane wave expanded on this chart's slice is not a mode of what is observed
+
+      and the radial area distance is AFFINE on this chart (vacuum: R_mn k^m k^n = 0, and a radial
+      ray is a principal null direction so the shear source vanishes):  D_A = (r_0 - r_e)/(v_o - 1),
+      saturating at 13095.0 Mpc as r_e -> r_N, against D_C/(1+z) = 12.844 Mpc on the readout.
+  [PASS] ⌗ and its area distance saturates at a finite value as the redshift diverges, which is horizon structure and not a cosmological distance -- a third way the same statement comes out
+
+  ==========================================================================
+  F.  ⛭⛭⛭ (iv) THE JOIN: THE CONSTANT-COSMIC-TIME LAYER IS `R x S^2`, NOT AN `S^3`
+  ==========================================================================
+  [PASS] the paper still makes the closed-$S^3$ claim for the cosmological layers and still reads $r_0$ off it twice -- once as the areal radius, once as the curvature radius -- with the sphere's presentation now named rather than left to the constant-$\tilde\tau$ label
+      on tilde-tau = const: dtau = -dchi and r is CONSTANT, so the induced metric is
+        (v^2 - 1) dchi^2 + r_c^2 dOmega^2      with both coefficients constant on the surface
+      Ricci scalar = 2/r_c**2        chi-chi Ricci component = 0
+      for comparison, S^3 of curvature radius a: R = 6/a**2   (and Ricci isotropic)
+  [PASS] ⛭⛭⛭ (iv) THE JOIN IS NOT MADE GOOD: the constant-cosmic-time surface of `eq:proper-frame` has Ricci scalar `2/r_c^2` with a ZERO Ricci eigenvalue along `chi` -- it is `R x S^2` of radius `r(tilde tau)`, where an `S^3` of curvature radius `a` would give `6/a^2` isotropically
+
+      and an S^3 slice DOES exist in this geometry, for ANY curvature radius a:
+        a =    5051.5 Mpc: solving  -T'^2 + (1 - v T')^2 = 1/(1 - r^2/a^2)  for T'(r) reproduces it to 4.44e-16
+        a =   14011.5 Mpc: solving  -T'^2 + (1 - v T')^2 = 1/(1 - r^2/a^2)  for T'(r) reproduces it to 4.44e-16
+        a =    2000.0 Mpc: solving  -T'^2 + (1 - v T')^2 = 1/(1 - r^2/a^2)  for T'(r) reproduces it to 3.33e-16
+  [PASS] ⌗ so the `S^3` is a CHOICE of slice -- a spherically symmetric spacelike slice with that induced metric exists for any curvature radius -- and it is neither the constant-cosmic-time surface nor one that singles out `r_0`
+  [PASS] ⚠ AND THE CHARITABLE READING IS NAMED RATHER THAN SUPPRESSED: if the closed $S^3$ is the FRIEDMANN READOUT's spatial section rather than `eq:proper-frame`'s layer, the physics is untouched and the citation is what needs repair -- so this receipt claims the geometry and NOT that `r_0`, `D_C`, the stretch or the comb moves
+
+  ==========================================================================
+  G.  ⇒ THE VERDICT: NOT BOUNDED ON THIS CONSTRUCTION -- SAID, AND STOPPED
+  ==========================================================================
+      the three candidate slicings, and what each has:
+        constant tau      : flat E^3 (prop:flat)        -- NO constant epoch, and offers r_0
+        constant tilde-tau: constant epoch              -- R x S^2, not an S^3
+        the S^3 slice     : the source's spectrum        -- unforced, any curvature radius
+  [PASS] ⇒ *** NO SINGLE SLICING OF THE PROPER FRAME CARRIES BOTH THE SOURCE'S DISCRETE SPECTRUM AND THE PROJECTION DISTANCE, so the expansion cannot be completed on it: the order's licence is taken and the reason is exhibited rather than guessed ***
+  [PASS] ⇒ AND WHAT IT DOES TO `r7100`: it does not move the conclusion, it moves the LICENSING -- `j_ell(k_L D_C)` is neither confirmed nor contradicted here, and its licence remains `sec:flatlcdm`'s exact recovery of flat $\Lambda$CDM, an identification with a named content
+
+  ==========================================================================
+  H.  ⌗ THE SMALLER ITEM: IS A `c54`-ERA LENSING POTENTIAL ADMISSIBLE ON THE CURRENT BACKGROUND?
+  ==========================================================================
+      producer present: True;  evaluates the growth on `A.Hphys`: True
+      does the producer mention any switch added since c54? {'LEAFSCALES': False, 'VISLEAF': False, 'LEAFREC': False, 'LEAFPERT': False}
+  [PASS] the producer exists and builds the growth factor on `A.Hphys` -- the STACKING rate -- while none of the three switches added since `c54` appears in it at all
+  [PASS] and the rate the instrument puts the perturbations on is the LEAF's: `Hleaf` carries the radiation term and `Hphys` carries it only when `RAD_IN_RATE`, which the CR arm does not set
+
+      how much the misassignment is worth (Omega_r = 8.819e-05), in D(a)/D_0:
+        z = 0.5    stacking 0.773968   leaf 0.773778   difference -2.455e-04
+        z = 1      stacking 0.612745   leaf 0.612426   difference -5.217e-04
+        z = 2      stacking 0.422250   leaf 0.421786   difference -1.099e-03
+        z = 3      stacking 0.319484   leaf 0.318946   difference -1.684e-03
+        z = 5      stacking 0.213980   leaf 0.213369   difference -2.855e-03
+        z = 10     stacking 0.116910   leaf 0.116236   difference -5.769e-03
+  [PASS] ⌗ ONE LINE, AS ASKED: ADMISSIBLE IN PRINCIPLE -- no switch added since `c54` reaches the growth or the projection -- BUT NOT AS IT STANDS, because the growth is evaluated on the stacking rate where the rate rule puts the perturbations on the leaf's; so part B stands on a SUPERSEDED rate assignment, not merely an unreproducible object, and re-deriving is the only option
+  [PASS] ⌗ and sized so `cc66` does not walk into it blind: the two rates' growth shapes differ by 1.1e-03 at z=2, where the lensing kernel peaks, and 5.8e-03 out to z=10 ⇒ the re-derivation should be expected to CONFIRM part B's numbers rather than move them
+
+  ==========================================================================
+  I.  ⚠ SCOPE, AND WHAT IS NOT CLAIMED
+  ==========================================================================
+      every file this receipt opened: ['ACOUSTIC_two_arm.py', 'CR_cosmology.tex', 'L171x_lensing_potential.py']
+  [PASS] no transfer, spectrum or likelihood is computed here: the ONLY files this receipt opened are the paper, the acoustic instrument and the lensing producer, and the last two were READ for their rate assignment rather than run
+  [PASS] and no banked output of any other row is read: `cc66`'s three-grid logs and the `c54` lensing spectrum are not among them, so neither its table nor that potential is re-measured here
+
+  ==========================================================================
+  VERDICT
+  ==========================================================================
+
+  35 of 35 checks pass   [1.5s]
+  ALL PASS -- the expansion introduces nothing, the slice offers r_0 and not D_C, the constant-epoch
+  surface is R x S^2, the chart's photons are not the paper's photons, and the completion is not
+  bounded on this construction.  Said, and stopped.
+/home/user/shadow-of-existence/receipts/P15_CR_cosmology/P15_the_harmonic_expansion_in_the_proper_frame_is_not_bounded_because_no_slicing_of_it_carries_both_the_discrete_source_and_the_projection_distance.py:372: RuntimeWarning: divide by zero encountered in scalar divide
+  zm = lambda ve: (vo - 1.0) / (ve - 1.0)                                        # noqa: E731

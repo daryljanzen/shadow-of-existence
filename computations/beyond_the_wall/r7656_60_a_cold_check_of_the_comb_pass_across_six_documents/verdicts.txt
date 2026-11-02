@@ -1,0 +1,122 @@
+r7656 (60) -- THE VERDICT: does every figure the comb pass landed across six documents reproduce?
+
+⛭ ONE LOCATOR ON BOTH SIDES, which is `r7655`'s own condition.  `check_figures_pinned.figures` --
+the gate's extractor -- is applied to the paper's sentence AND to each receipt's banked stdout.  The
+output is never grepped for a string, so a figure that reproduces does so under one rule and not two.
+
+⛔ AND THE RESOLUTION IS VISIBLE.  Every site prints the line the order NAMED beside the line the text
+was read from (`r7656+60.1`): six of the named lines are the blank line before their paragraph, and a
+literal read would have extracted nothing from them and called it green.
+
+⛔ AND THE FIRST PASS OF THIS FILE WAS A GUARD THAT COULD NOT FAIL.  Read with the gate's tolerance
+window it returned REPRODUCES 95 of 95 -- and `controls.py`, registered at `+60.3` before that number
+was judged, moved every figure FORTY TIMES its own allowance and found that 41.1% of the decoys
+"reproduced" too.  A 95-of-95 at a 41% false-positive rate is a measurement of the window.
+
+⌗ *A hit rate reported without its false-positive rate is asking to be believed rather than checked.*
+
+So `r7656+60.4` registered VERBATIM FIRST -- and the verbatim count came back too TIGHT at the other
+end, because `186.1350` is `186.135` and `3.338738` is `3.3387380`.  `+60.5` therefore registered the
+THREE-WAY verdict below, before its counts were measured, and the two ends of it are now named
+separately so that neither the window nor the rendering can be mistaken for the corpus:
+
+  VERBATIM        -- a candidate that RAN prints THAT STRING, both sides through the gate's own
+                     extractor.  No window, no rounding.  Decoy rate 10.5% (⑯), below the 20%
+                     registered at `+60.3` and NOT moved once a number had been seen.
+  EXACT-VALUE     -- ⑱ no candidate prints the string, but one prints a string that parses to the
+                     SAME FLOAT.  A reproduction, full stop: a trailing zero is a rendering of a
+                     number and not a different number.
+  ROUNDED         -- ⑲ one prints a longer number that ROUNDS to the paper's figure at the paper's
+                     own digit count.  Also a reproduction -- it is what printing fewer digits means,
+                     and it is the figure-pin gate's own third remedy.
+  GATE-ONLY       -- ⑳ inside the gate's allowance and does NOT round to the printed figure.  THE
+                     ONLY ONE OF THE FOUR THAT IS A WEAKER FINDING, and the one place a figure the
+                     corpus does not carry at the digit it prints would hide.  Named, with the
+                     nearest value any receipt prints and its distance in half-units.
+  ABSENT          -- every candidate RAN and none prints it under any of the four readings
+  UNRUN           -- at least one candidate did not finish, so the figure is not judged
+⌗ *A figure is never ABSENT because a receipt could not be run.*
+
+⌗ AND WHAT A REPRODUCTION HERE IS NOT (arm ⑧ of the registration): it establishes that SOME receipt in
+the candidate set computes the figure.  On 25 of the named lines there is no `\rcpt{}` marker to point
+at one, so a figure whose computing receipt is not among those its own document cites is reported
+RESOLVED ELSEWHERE -- correct in value, unaddressed in citation.
+
+================================================================================================================
+  r7656 (60) -- the comb pass, six documents, one locator
+================================================================================================================
+
+ⓐ  THE INSTRUMENT'S OWN REACH, ASSERTED BEFORE ITS VERDICTS ARE READ
+      100 candidate(s): 99 RAN, 1 UNRUN
+      34 site(s); 95 figure(s), 46 distinct
+  [PASS] ⓐ① ARM ⑩ -- the candidate set exceeds 20 (100), so a figure reported ABSENT was looked for somewhere rather than nowhere
+  [PASS] ⓐ② and the runs are banked for every candidate, so no verdict rests on a missing file
+  [PASS] ⓐ③ ARM ⑨ -- 7 named line(s) were BLANK and resolved to the next non-blank one, and each is printed with both numbers below; a literal read would have extracted nothing from them
+  [PASS] ⓐ④ and no named line is UNRESOLVED
+
+ⓑ  EVERY FIGURE, EVERY SITE -- named line, resolved line, verdict
+
+      paper       named   read  figs  verdicts
+      EXPLAINER     254    254     3  VERBATIM 3
+      P15           135    136     5  EXACT-VALUE 1, VERBATIM 4 ←blank, resolved
+      P15           148    149     1  VERBATIM 1 ←blank, resolved
+      P15           883    883     8  UNESTABLISHED 2, VERBATIM 6
+      P15           884    884     2  VERBATIM 2
+      P15           885    885     2  VERBATIM 2
+      P15           886    886     3  VERBATIM 3
+      P15           945    945     1  VERBATIM 1
+      P15          2071   2071     6  VERBATIM 6
+      P15          2072   2072     4  VERBATIM 4
+      P15          2791   2792    13  EXACT-VALUE 1, GATE-ONLY 1, UNESTABLISHED 1, VERBATIM 10 ←blank, resolved
+      P17          1722   1722     1  VERBATIM 1
+      P18          1526   1526    14  UNESTABLISHED 2, VERBATIM 12
+      P18          1832   1832     7  UNESTABLISHED 2, VERBATIM 5
+      P6            353    353     2  EXACT-VALUE 1, VERBATIM 1
+      P7           1851   1851    15  UNESTABLISHED 2, VERBATIM 13
+      P7           1863   1863     8  EXACT-VALUE 1, VERBATIM 7
+
+      EACH RUNG'S OWN MEASURED REACH, read from controls.json -- a rung over 20% is WITHHELD and reports UNESTABLISHED, never a reproduction:
+         VERBATIM     decoy rate  10.5%   reportable
+         EXACT-VALUE  decoy rate  14.7%   reportable
+         ROUNDED      decoy rate  25.3%   WITHHELD
+         GATE-ONLY    decoy rate  41.1%   never a reproduction -- it IS the exception class
+
+      VERBATIM 81   EXACT-VALUE 4   ROUNDED 0   GATE-ONLY 1   ABSENT 0   UNRUN 0   of 95
+
+      ⚠ UNESTABLISHED, 9 figure(s) -- the rung that would carry them (ROUNDED) has a decoy rate above 20%, so they are NEITHER reproduced NOR absent.  ㉕: they are not folded into the headline.
+         P15 l.883: paper 1125.1   nearest 1125.11   0.20 half-units   P15_at_its_own_preferred_H0_the_crossing_arm_p
+         P15 l.883: paper 811.6   nearest 811.59   0.20 half-units   P15_at_its_own_preferred_H0_the_crossing_arm_p
+         P15 l.2791: paper 0.4390   nearest 0.438985966   0.28 half-units   P07_the_back_seam_is_the_laps_one_non_degenera
+         P7 l.1851: paper 1125.1   nearest 1125.11   0.20 half-units   P15_at_its_own_preferred_H0_the_crossing_arm_p
+         P7 l.1851: paper 811.6   nearest 811.59   0.20 half-units   P15_at_its_own_preferred_H0_the_crossing_arm_p
+         P18 l.1526: paper 1125.1   nearest 1125.11   0.20 half-units   P15_at_its_own_preferred_H0_the_crossing_arm_p
+         P18 l.1526: paper 811.6   nearest 811.59   0.20 half-units   P15_at_its_own_preferred_H0_the_crossing_arm_p
+         P18 l.1832: paper 1125.1   nearest 1125.11   0.20 half-units   P15_at_its_own_preferred_H0_the_crossing_arm_p
+         P18 l.1832: paper 811.6   nearest 811.59   0.20 half-units   P15_at_its_own_preferred_H0_the_crossing_arm_p
+      ⌗ THE HEADLINE IS THE REPORTABLE RUNGS: 85 of 95.  The tolerance reading of this same data was 95 at a 41.1% decoy rate; the verbatim reading alone was 81 and demoted 4 figure(s) over a trailing zero.
+
+      ⑱ EXACT-VALUE, 4 figure(s) -- the same number, rendered with a different number of digits:
+         P15 l.135: 186.135 == 186.1350   P15_the_licensed_rebuild_leaves_all_three_rigidity_n
+         P15 l.2791: 3.3387380 == 3.338738   P15_the_angular_label_crosses_the_lift_untouched_and
+         P7 l.1863: 186.135 == 186.1350   P15_the_licensed_rebuild_leaves_all_three_rigidity_n
+         P6 l.353: 186.135 == 186.1350   P15_the_licensed_rebuild_leaves_all_three_rigidity_n
+
+      ⛔ ⑳ GATE-ONLY, 1 figure(s) -- INSIDE the figure-pin gate's allowance and NOT the digit the paper prints.  This is the headline's exception:
+         P15 l.2791: paper 1.4011   nearest 1.401   2.00 half-units   P15_the_kernels_distance_is_the_observers_own_
+  [PASS] ⓑ① every figure is judged -- no figure is left without a verdict
+  [PASS] ⓑ② and none is ABSENT for want of a run: UNRUN is 0, and a figure is ABSENT only when every candidate ran
+  [PASS] ⓑ③ ⑮ the tightening of +60.4 did work: the VERBATIM count (81) is strictly below the tolerance reading (95), so it is not a relabelling
+  [PASS] ⓑ③' ㉑㉕ AND THE VERDICT READS ITS CONTROL: the rung(s) whose measured decoy rate exceeds 20% (ROUNDED) report UNESTABLISHED, and 9 figure(s) are held out of the headline on that ground alone
+  [PASS] ⓑ④ ⑱ AND SO DID THE LOOSENING OF +60.5 AT THE OTHER END: 4 figure(s) are reproduced to the last bit and were demoted by verbatim over a rendering, so the three-way verdict is not a relabelling of the verbatim one either
+  [PASS] ⓑ⑤ ⑳ THE EXCEPTION CLASS IS NON-EMPTY AND SMALL -- registered at +60.5 as between 1 and 3 members, MEASURED 1.  More than 3 would make this a class of figures rather than an incident, and fewer than 1 would mean the refinement found nothing
+  [PASS] ⓑ⑥ and every GATE-ONLY figure is named with the nearest value any receipt prints and its distance in half-units, so the exception is quantified and not merely labelled
+
+ⓒ  ARM ⑧ -- RESOLVED ELSEWHERE: correct in value, unaddressed in citation
+      0 figure(s) reproduce in a receipt their own document does not cite
+      ⌗ On 25 of the named lines there is no `\rcpt{}` marker at all, so for those this is not a
+      defect but the architecture: they reach a receipt through the paper-level citation, exactly as
+      the order says.  It is reported so the distinction between a right number and a right address
+      stays visible.
+
+================================================================================================================
+  0 failure(s)

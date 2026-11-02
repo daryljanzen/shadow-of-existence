@@ -1,0 +1,238 @@
+
+RECEIPT -- P15: ** THE TWO FIGURES THE CORPUS HAS BEEN QUOTING FOR THE 133-BIN COMPARISON ARE
+COMPUTED AND ASSERTED HERE FOR THE FIRST TIME -- THE CONTROL'S 2.10 PER BIN AND THE 4.16 BESIDE IT.
+UNTIL NOW ONE LIVED IN A HEADLINE AND THE OTHER IN A HARDCODED PRINT, AND NEITHER WAS AN ASSERTION. **
+
+*** AND COMPUTING THEM FINDS THAT THE HARDCODED ONE IS THE WRONG RUN'S: `4.16` IS THE H0 = 68.62
+CONFIRMATION ARM, NOT THE 68.60 ARM `r6760+cc66.7` REPORTED AND NOT THE 68.60 ARM THE TWO ROWS
+PRINTED BESIDE IT ARE COMPUTED FROM.  cc66.7's OWN FIGURE IS 4.19. ***
+
+** NOTHING MOVES: 4.16/2.10 = 1.98 against 4.19/2.10 = 1.99, and both are the "x2.0" the conclusion
+rests on. **  *This is a provenance defect and is reported as one -- but it is a provenance defect
+inside a table whose entire purpose is a LIKE-FOR-LIKE ratio, and a computed row is what caught it.*
+
+*** AND ON `r7645`'s POINT THE PAPER'S `a factor 1.98` GOES UP RATHER THAN DOWN: $2.09$ AT 70's
+DISTANCES' POINT. TWO BANKS CARRY THE ARM OF RECORD -- ONE AT THE DISTANCES' BACKGROUND AND ONE AT
+THE REFIT POINT -- AND THIS FILE NARRATED THE REFIT ONE'S $1.60$. READING THE WRONG ONE TURNS A
+FINDING THAT SLIGHTLY STRENGTHENS THE CLAIM INTO ONE THAT HALVES IT. ***
+
+⌗ ** AND FIVE FIGURES THIS FILE REPORTED WERE NARRATED AND NOT ASSERTED -- IN THE FILE WHOSE WHOLE
+SUBJECT IS THAT A NARRATED NUMBER IS NOT A MEASURED ONE. **  `447.3733`, `3.363709`, `1.601078`,
+`938.3175` and `5.071986` sat in this docstring and in no check.  *They reproduce exactly and are
+gated in PART 5; the point is that nothing would have failed if they had not.*
+
+Built r7109+cc66.85 (node 66, code seat), answering the first half of `r7109` ⓷ (= `r7101` Q1).
+
+===================================================================================================
+** WHAT WAS ASKED, AND WHY A NARRATED NUMBER IS NOT A MEASURED ONE **
+===================================================================================================
+
+`r7101` named it and `r7109` ⓷ refused to reclassify it: *"the control's 2.10 per bin on 133 bins,
+computed and ASSERTED by a receipt rather than narrated in one headline and hardcoded in another's
+print -- it is the last live item on the thirteen-figure list."*
+
+** The two sites, read as they stand: **
+
+  * `P15_the_handover_at_the_crossing_and_what_it_costs` -- the number is in its HEADLINE ("35.5 per
+    bin against the control's 2.10"), which no check reads.  Four more receipts repeat it in prose.
+  * `P15_the_full_range_lensed_comparison_...` line 129 -- `print(f"... {4.16 / 2.10:>11.2f}x")`.
+    ** A literal division inside an f-string, in a receipt that computes the two rows beneath it
+    live. **  Nothing fails if either number is wrong, and nothing did.
+
+  PART 1  ** THE CONFIGURATION AND THE BIN COUNT, asserted off the spectra and not off the name. **
+          133 bins, ell 100 to 1298.  The pair identified by file and asserted tracked.
+  PART 2  ** THE TWO FIGURES, COMPUTED. **  The control at 2.100902 per bin and the arm at 4.185607,
+          through `chi2_of_spectrum.py` -- the corpus's own machinery, one amplitude fitted, the
+          same route every other chi^2 in this sector is scored on.
+  PART 3  ** HISTORICAL -- AND THE THIRD FIGURE, WHICH IS WHERE THE DEFECT WAS: 4.157889 BELONGS
+          TO 68.62. **  The literal is read out of the other receipt's SOURCE, so the claim is about
+          the file as it stands and not about a memory of it.  ** On the arm of record the two runs
+          are ONE POINT, so the distinction this PART draws has nothing left to measure there, and
+          that is asserted rather than asserted away. **
+  PART 4  ** WHAT DOES NOT MOVE, SAID AS PLAINLY AS WHAT DOES. **  Both ratios are 2.0 to the two
+          figures the conclusion quotes, and the 185-bin rows are recomputed here so all three rows
+          of that table are live numbers from named files.
+  PART 5  ** `r7645`'s ARM, SCORED RATHER THAN NARRATED. **  Three arms on one control over both
+          ranges: the namesake, the arm of record at 70's DISTANCES' point (whose `l_A`, `D_M` and
+          `r_s` are bit-identical to the namesake's, so it alone is like-for-like), and the arm of
+          record at its REFIT point.  The five figures this file used to narrate are asserted here,
+          the paper's `1.98` is shown to move UP to `2.09`, and the direction of the re-point is
+          shown NOT to be common to the two ranges.
+
+===================================================================================================
+** WHY PART 3 IS MARKED HISTORICAL, AND WHY THE REST IS NOT RE-POINTED (r7639 ⑶) **
+===================================================================================================
+
+`r7639` ⑶: *"mark PART 3 of the 133-bin receipt historical.  On the arm of record the pair is one
+point, so there is nothing left to measure."*  ** Measured here rather than taken on the word: **
+`cc66_cr_x_h686_pol_leafrec1` and `cc66_cr_x_h6862_pol_leafrec1` differ by `max |dD_l| = 0.0000e+00`,
+where the namesakes differ by `2.4067e-04`.  The two spectra ARE one file's content on the arm of
+record -- `r7635+70`'s manifest records the 68.62 leg as banked from the h686 run for exactly that
+reason -- so `4.16` against `4.19` is a distinction of the SUPERSEDED instrument state.  It stays
+recorded, because the provenance defect it found was real and the hardcoded literal it names is still
+in the other receipt's source; it is not re-asserted on the arm of record, because there is no second
+point there to assert it against.
+
+⛔ ** AND THAT RULING'S SCOPE IS THE BANK IT NAMED, WHICH IS NOT `r7645`'s POINT. **  There are TWO
+arm-of-record banks for this pair.  The one `r7639` ⑶ ruled on sits at the arm's REFIT point
+(`CRH0=68.57073`, `CROM=0.291246`) and its two legs ARE one file's content.  **70's DISTANCES'-point
+bank is a different bank** (`CRH0=68.60`, `CROM=0.2973`, and `l_A`/`D_M`/`r_s` bit-identical to the
+namesakes'), and there the two legs are `2.3601e-04` apart -- `0.9806` of the namesakes' own
+separation -- so the 68.62-versus-68.60 distinction PART 3 draws is ALIVE on `r7645`'s point and is
+not spent. *That is a statement about the scope of 69's ruling and not a contradiction of it: the
+ruling named a bank, and this is the other one.*  ⌗ LEAFREC moves the spectrum at the distances'
+point by `6.4169e-03`, 27 times the leg separation, which is what moves the $\chi^2$ at all.
+
+** AND THE WHOLE FILE IS A PROVENANCE RECORD OF THREE NAMED BANKED SPECTRA, NOT A LIVE SCORE. **
+PART 2 identifies `cc66_cr_x_h686_pol` by reproducing the `556.7` `FOR_66` records for `cc66.7`: that
+identification is of a file and cannot move with an arm.  So this receipt's reads stay on their
+namesakes and its figures stay as recorded.  *What the arm of record says about the same bins is a
+different measurement, and PART 5 now SCORES it on both banks instead of narrating one:*
+
+      arm                        bins        chi^2    per bin   ratio vs control
+      namesake                    133     556.6858   4.185607           1.992290
+      arm of record, distances    133     583.9890   4.390895         ** 2.090004 **
+      arm of record, refit        133     447.3733   3.363709           1.601078
+      namesake                    185    1169.8183   6.323342           1.680854
+      arm of record, distances    185    1129.7632   6.106828           1.623301
+      arm of record, refit        185     938.3175   5.071986           1.348222
+
+*So `sec:refit-bound`'s "$279.4$ against $556.7$, a factor $1.98$" moves to $583.99$ and $2.09$ on
+`r7645`'s point -- the claim that the arm is about twice the control SURVIVES and is slightly larger,
+while the printed $1.98$ is stale and even the "$	imes2.0$" rounds to $2.1$.*  ⇒ Under `r7639` ⑴ it
+is reported to 69 with proposed wording and not edited here.  ⚠ **And the direction is not common to
+the two ranges:** on 133 bins the arm of record is WORSE than its namesake and on 185 bins BETTER,
+which this seat had registered as "worse on both" before measuring and got wrong.
+
+===================================================================================================
+** WHAT THIS DOES NOT CLAIM **
+===================================================================================================
+
+** It does not claim the x2.57 conclusion is affected. **  It is not: the comparison that matters
+there is 185-bin lensed against 185-bin unlensed, both computed live in that receipt from one arm.
+** And it does not claim cc66.7 reported the wrong number. **  cc66.7 reported 4.19 and `FOR_66`
+records its chi^2 as 556.7, which is this file's 556.6858 -- *the reporting was right and the later
+transcription into a neighbouring receipt's print was not.*
+
+** COMPUTES: nothing. ***  Three banked spectra are read and scored through
+   `chi2_of_spectrum.py`; every parameter is the one baked into the `.npz` it came from --
+   the control at the instrument's own (67.40, 0.3150), the arm at (68.60, 0.2973) and the
+   confirmation arm at (68.62, 0.2973), all on the polarisation path at `LMAXL=1300`, `LSTEP=2`.
+   *The whole point of this file is that those H0 values are DIFFERENT and a literal could not say
+   so, which is why they are named here rather than left to the filenames.*
+
+SETTINGS: the banked 133-bin pair as committed -- `LMAXL=1300`, polarisation path, `LSTEP=2`.  ** The
+figures are properties of banked spectra and the published covariance, so no run can move them; what
+a deeper run would move is the SPECTRA, and that is a different question with its own receipts. **
+
+
+====================================================================================================
+  PART 1 -- ** THE CONFIGURATION AND THE BIN COUNT, OFF THE SPECTRA **
+====================================================================================================
+  all 13 inputs are tracked by git in this checkout
+                  spectrum        ell range   bins        chi2    per bin
+                 cc66_lcdm        100..1298    133    279.4200   2.100902
+        cc66_cr_x_h686_pol        100..1298    133    556.6858   4.185607
+       cc66_cr_x_h6862_pol        100..1298    133    552.9992   4.157889
+  ** all three cover the same 133 bins, so the ratios below are matched **
+
+====================================================================================================
+  PART 2 -- ** THE TWO FIGURES, COMPUTED AND ASSERTED FOR THE FIRST TIME **
+====================================================================================================
+  ** the control: chi^2 = 279.4200 over 133 bins = 2.100902 per bin **   (the corpus's 2.10)
+  ** the arm at H0 = 68.60: chi^2 = 556.6858 = 4.185607 per bin **   (cc66.7's own 4.19)
+  the arm's chi^2 is 556.6858 against the 556.7 `FOR_66` records for cc66.7, so the file is identified and not guessed
+  ratio, 68.60 against the control: ** 1.992290 ** -- the 'factor 2.0'
+  the headline site, quoted: "35.5 PER BIN AGAINST THE CONTROL'S 2.10" -- in a docstring, which no check reads
+
+====================================================================================================
+  PART 3 (HISTORICAL) -- ** AND THE HARDCODED ROW IS THE OTHER ARM: 4.16 IS 68.62 -- A
+                          DISTINCTION OF THE SUPERSEDED STATE, SPENT ON THE ARM OF RECORD **
+====================================================================================================
+  the arm at H0 = 68.62: chi^2 = 552.9992 = 4.157889 per bin  -> 4.16
+  the arm at H0 = 68.60: 4.185607 per bin  -> 4.19
+  ** the two runs are distinguishable at the two decimals the corpus quotes: 4.16 and 4.19 **
+  the literal in that receipt's source: 4.16 / 2.1
+  ⚠ ** THE DEFECT, STATED: the literal numerator is the 68.62 run's figure, while the
+     row's own label reads '(r6760+cc66.7)' and cc66.7's arm is the 68.60 one -- whose
+     figure is 4.19. **
+     ⌗ and the two rows computed LIVE beneath it load `cr_x_h686_L2000`, the 68.60
+        arm -- so the table mixes two H0 values in three rows.
+
+  the namesakes differ by     max |dD_l| = 2.4067e-04  -- two runs, and PART 3 reads them
+  the arm of record differs by max |dD_l| = 0.0000e+00  -- ** ONE POINT **
+  at 70's DISTANCES' point it differs by max |dD_l| = 2.3601e-04  -- ** TWO POINTS, 0.9806 of the namesakes' separation **
+  ⛔ ** AND `r7639` ⑶'s RULING DOES NOT TRANSFER TO `r7645`'s POINT. **  The collapse to one
+     point is a property of the REFIT-point bank alone.  At the DISTANCES' point the two legs
+     are 2.3601e-04 apart -- 0.9806 of the namesakes' own separation, so the 68.62-versus-68.60
+     distinction PART 3 draws is ALIVE there and is not spent.  *That is a statement about
+     the scope of 69's ruling and not a contradiction of it: the ruling named the bank it named,
+     and this is a different bank.*  ⌗ LEAFREC moves the spectrum at the distances' point by
+     6.4169e-03, 27 times the leg separation, which is why PART 5's chi^2 moves at all.
+  ** SO PART 3 IS HISTORICAL. **  `r7635+70` banked the 68.62 leg from the h686 run
+   because on the arm of record the pair is one point, and that is what this reads:
+   the 4.16/4.19 distinction is a property of the SUPERSEDED instrument state.  It
+   stays recorded -- the provenance defect was real and the literal is still in the
+   other receipt's source -- and it is NOT re-asserted on the arm of record, because
+   there is no second point there to assert it against.
+
+====================================================================================================
+  PART 4 -- ** WHAT DOES NOT MOVE, AND THE WHOLE TABLE AS LIVE NUMBERS **
+====================================================================================================
+  the ratio the conclusion rests on, both ways: 1.9791 (68.62) and 1.9923 (68.60)
+  to the two figures that conclusion quotes: 1.98x and 1.99x
+  ** so the 'x2.0' is x2.0 either way, and the defect is provenance and not arithmetic. **
+
+  and the 185-bin rows, recomputed from their own files:
+                                       row   bins        chi2   per bin
+                           cc66_lcdm_L2000    185    695.9666    3.7620
+                      cc66_cr_x_h686_L2000    185   1169.8183    6.3233
+                    185-bin unlensed ratio                       1.6809
+  the 185-bin control reproduces that receipt's quoted 696 unlensed (696.0)
+  ⌗ *The LENSED rows stay in their own receipt, which owns the operator and checks it; this
+   file's business is the 133-bin pair, and duplicating a CAMB call would duplicate the check
+   that validates it.*
+
+====================================================================================================
+  PART 5 -- ** THE SAME BINS ON 70's DISTANCES' POINT: `r7645`'s ARM, SCORED NOT NARRATED **
+====================================================================================================
+                         arm  bins         chi2    per bin   ratio vs control
+                    namesake   133     556.6858   4.185607           1.992290
+    arm of record, distances   133     583.9890   4.390895           2.090004
+        arm of record, refit   133     447.3733   3.363709           1.601078
+                    namesake   185    1169.8183   6.323342           1.680854
+    arm of record, distances   185    1129.7632   6.106828           1.623301
+        arm of record, refit   185     938.3175   5.071986           1.348222
+
+  ⛭ the five formerly-narrated figures reproduce EXACTLY and are now asserted: 447.3733, 3.363709 per bin,
+    a factor 1.601078 on 133 bins, and 938.3175 at 5.071986 per bin on 185 -- all at the REFIT point.
+
+  ⛔⛔ ** AND `sec:refit-bound`'s PRINTED `a factor 1.98` MOVES TO 2.09 ON `r7645`'s POINT, NOT DOWN TO THE 1.60
+     THIS FILE NARRATES. **  The namesake is 1.9923 and the arm of record at the distances' point is 2.0900:
+     *the conclusion that the arm is about twice the control SURVIVES and is slightly LARGER, while the
+     printed `1.98` is stale and even the `x2.0` rounds to 2.1 rather than 2.0.*  ⇒ The 1.60 is the
+     REFIT point's, where the arm has four parameters the control does not, so it is not the figure
+     `sec:refit-bound`'s sentence is about.  ⌗ Reading the wrong one of these two banks turns a
+     finding that strengthens the claim into one that halves it.
+
+  ⛔ ** AND THE DIRECTION IS NOT COMMON TO THE TWO RANGES, WHICH THIS SEAT PREDICTED IT WOULD BE. **
+     On 133 bins the arm of record is WORSE than its namesake (4.185607 -> 4.390895 per bin); on 185
+     bins it is BETTER (6.323342 -> 6.106828).  *Registered before measuring as `worse on both`,
+     and the reachable negative fired.  A re-point's sign is a property of the RANGE and not of the arm.*
+
+  ⌗ the refit point beats both unrefit arms on both ranges (3.3637 against 4.1856 and 4.3909;
+    5.0720 against 6.3233 and 6.1068), which is what four fitted parameters buy and is why it
+    cannot stand in for an unrefit comparison.
+
+====================================================================================================
+  ** ALL CHECKS HOLD. **  The first half of `r7109` ⓷ is answered: the control's 2.10 per bin
+  on 133 bins is COMPUTED (2.100902) and ASSERTED, and so is the 4.16 beside it
+  (4.157889) -- together with cc66.7's own 4.19 (4.185607), which is the figure the
+  hardcoded row should have carried and does not.  ** The conclusion is untouched and the
+  attribution is not, and only a computed row could have told the two apart. **
+  ⌗ PART 3 is HISTORICAL as of `r7639` ⑶ FOR THE REFIT-POINT BANK, where the two runs are
+    one point.  ⛔ At 70's DISTANCES' point -- `r7645`'s -- they are two points again, 0.9806
+    of the namesakes' own separation, so that ruling's scope is the bank it named.
+  ⛔ And `sec:refit-bound`'s printed `a factor 1.98` moves UP to 2.09 there, not down to
+    the 1.60 this file used to narrate from the other bank.
+====================================================================================================

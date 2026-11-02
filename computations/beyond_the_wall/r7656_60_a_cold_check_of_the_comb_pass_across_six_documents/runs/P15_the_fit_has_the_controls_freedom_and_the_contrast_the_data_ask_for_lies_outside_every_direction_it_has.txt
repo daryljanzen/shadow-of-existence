@@ -1,0 +1,163 @@
+
+P15_the_fit_has_the_controls_freedom_and_the_contrast_the_data_ask_for_lies_outside_every_direction_it_has.py
+
+** THE REFIT'S OWN ANATOMY, WHICH THE PAPER REPORTED AS A RATIO AND NEVER AS A GEOMETRY.  `sec:refit-
+bound` states that the refit closes about a third of the gap and leaves the rest.  WHAT it leaves was
+never measured: how many directions the fit actually has, whether this arm has fewer than the control,
+and whether what survives is a direction the model could move at all.  All three are measured here. **
+
+** AND IT SETTLES THE READING THE SECTION WAS MISSING.  The leftover is not a parameter deficiency --
+this arm has the control's freedom, direction for direction -- and it is not noise.  It is a uniform
+ACOUSTIC CONTRAST, which no declared parameter supplies on EITHER arm, and which the data ask this arm
+to lower by 6.4 per cent.  The control is asked for nothing.  That is the same quantity, and very
+nearly the same size, as the standing arm/control contrast excess the section already carries. **
+
+** COMPUTES: on the banked six-parameter refit grid `computations/beyond_the_wall/refit_grid185/` --
+185 plik_lite TT bins over ell 100-1996, base and two-sided steps in H0, Omega_m, omega_b and n_s on
+each arm, the amplitude in closed form -- (1) the singular values and effective rank of the whitened
+response of the five independent directions, per arm; (2) each parameter's response decomposed on an
+amplitude, an acoustic-SHIFT and an acoustic-CONTRAST template of the base spectrum, and the
+singular-value ratio of the resulting 4x2 (shift, contrast) matrix; (3) the residual chi2 at the exact
+linearised GLS minimum, which is by construction unreachable by any linear move of the five, against
+n - 5; (4) the drop a free contrast template would buy, and its fitted coefficient with its error; and
+(5) the residual's sign-change count in ell order against correlated plik_lite noise with the same five
+directions projected out.  NOT a run of the transfer: every spectrum here is a BANKED one and no
+numerical setting of the integrator is touched.  NOT a convergence question: that is swept and closed
+elsewhere in this sector.  NOT an attribution of the contrast to a mechanism, which is PO-70's. **
+
+ORIGIN: node 70's `computations/beyond_the_wall/r7091_70_fit_rigidity/rigidity.py` and
+  `contrast_size.py`, pre-registered at `PREDICTION.md` beside them.  Those scripts print; this one
+  asserts, and the construction is rebuilt here from the banked grid rather than imported, so the
+  figures the paper quotes rest on a receipt that recomputes them.
+
+  ** TWO OF THAT PRE-REGISTRATION'S FOUR PREDICTIONS MISSED, AND THE MISSES ARE WHY THIS RECEIPT
+  ASSERTS WHAT IT ASSERTS.  A CR-ONLY shift/contrast coupling was predicted and is NOT there -- both
+  arms read alike, so the coupling is a property of the parameter basis and not of this arm's clock
+  Jacobian -- and a CR arm one effective rank lower was predicted and is not there either.  So the
+  equality of the two arms' freedom is asserted here as the finding it is, rather than noted as a
+  shortfall of a guess. **
+
+WHAT IS COMPUTED, and what each assertion is for.
+  1. ** THE RANK IS 4 STIFF PLUS 1 SOFT ON BOTH ARMS, with the same degenerate direction. **  H0 and
+     Omega_m have |cos| = 0.99 on both arms: the familiar geometric degeneracy, not an artefact here.
+     Asserted so that "this arm has fewer directions" cannot be read into the ratio.
+  2. ** THE CONTRAST RESPONSE IS SMALL ON BOTH ARMS. **  The 4x2 (shift, contrast) singular-value
+     ratio is 0.04 on the control and 0.036 on this arm.  Both read "collinear" against the
+     pre-registered 0.1 -- so the right statement is that the declared parameters move the acoustic
+     SHIFT and barely move the CONTRAST, on either background.
+  3. ** THE REACH SEPARATES THE ARMS AND NOTHING ELSE HERE DOES. **  At the exact GLS minimum the
+     control leaves 186.0 against n - 5 = 180 (+0.3 sigma: the fit reaches the data) and this arm
+     leaves 278.8 (+5.2 sigma).  About a hundred in chi2 lies outside every direction the model has.
+  4. ** AND THE MISSING DIRECTION IS A UNIFORM CONTRAST. **  Freeing one contrast template removes
+     56.4 of this arm's residual (20 per cent) against 0.8 on the control, at a coefficient
+     c = -0.0636 +- 0.0085 (-7.5 sigma) against the control's -0.0075 +- 0.0083 (-0.9 sigma).  An
+     ell-MODULATED contrast buys 4.5 and a modulated shift 0.4, so the request is uniform rather than
+     a drift.
+  5. ** THE RESIDUAL IS NOT NOISE ON THIS ARM AND IS NOISE ON THE CONTROL. **  54 sign changes against
+     noise's 88 +- 10, on 2000 correlated draws with the five directions removed; the control's 87.
+
+WHAT IS NOT CLAIMED.
+  * ** Nothing here says CR's physics sets the contrast lower. **  What is established is that the
+    quantity the data ask to move is outside the span of the declared parameters, so no
+    re-parametrisation reaches it and the change has to come from what SETS the contrast.  Which
+    assignment that is, is `PO-70`'s and the rate rulings', not this receipt's.
+  * ** The lensing operator is the registered refit's own fallback **, CAMB at the control's
+    parameters, and is identical on both arms by construction, so it cannot carry an arm difference.
+  * ** The onset pin is not in this grid. **  Every CR run in it sets ZSTART=3e7, so the solved onset
+    is overridden there.  That is asserted below as a FACT about the grid, because it bounds what this
+    receipt is about: these are the directions of the grid's model, and if the reported spectrum uses
+    the solved onset they are not that spectrum's directions.
+  * The Monte Carlo is 2000 draws at a fixed seed; the sign-change count is asserted as a wide
+    inequality against the noise mean, not at a p-value this receipt would have to calibrate.
+
+STATUS: OK (ranks, the two singular-value ratios, the two reaches, the contrast drop and its
+coefficient with its sigma, the modulated alternatives, the crossing counts, and the grid's own
+ZSTART, all asserted).
+
+
+================================================================================================
+ ⓪  THE GRID IS READ BEFORE IT IS USED: which onset every CR run in it was computed at.
+================================================================================================
+   grid files carrying the run configuration: 3
+   ** ZSTART=3e7 appears in the grid's own configuration: True ** -- so the solved onset
+      (Z_START = None, solved for the pinned acoustic scale) is OVERRIDDEN in this grid, and
+      the directions measured below are the directions of the grid's model.
+   the arm of record's grid states its own onset in its resolved config: ZSTART=30000000.0 and LEAFREC=True
+   PASS  ⓪ BOTH grids state their own onset, and it is the fixed 3e7 rather than the solved pin -- the namesake's in its logged configuration and the arm of record's in its `cr_base.npz` RESOLVED config, which is the stronger record because it says what the run DID; and that same config is what says LEAFREC is on, which no log line could say once the default moved
+   PASS  ⓪ᵇ and the arm of record's grid is ARM-ONLY, so the per-arm resolution above is forced rather than chosen: it carries nine `cr_*` legs and no `lcdm_*` leg at all
+
+================================================================================================
+  CONTROL   185 bins, lensing: CAMB at the control's parameters (the registered refit's own fallback),  l_A at base 301.375
+================================================================================================
+  ①  whitened singular values, one receipt-step per parameter (amplitude at 2 %):
+           58.87     31.04      4.76      2.34      0.65
+        effective rank 4 at dchi2 > 1 per step;  5 above 1 % of the largest
+        |cos| between the H0 and Omega_m responses: 0.991  (the geometric degeneracy)
+  ②  each parameter on (shift, contrast), whitened and the templates put on one scale:
+        H0   shift -4.505e+01   contrast +1.474e+00   contrast/shift -0.033
+        OM   shift -2.233e+01   contrast +9.135e-01   contrast/shift -0.041
+        WB   shift +9.844e+00   contrast +1.721e+00   contrast/shift +0.175
+        NS   shift +6.751e-01   contrast +3.891e-01   contrast/shift +0.576
+        the 4x2 matrix: sv 51.259, 2.067  ->  ratio 0.040
+  ③  residual chi2 at the linearised GLS minimum 186.0 -- unreachable by any linear
+        move of the five by construction -- against n - 5 = 180  (+0.3 sigma)
+        + contrast, uniform        free would remove dchi2     0.8  ( 0.4 % of the residual)
+        + contrast x (ell - mid)   free would remove dchi2     2.6  ( 1.4 % of the residual)
+        + shift x (ell - mid)      free would remove dchi2     0.5  ( 0.3 % of the residual)
+        ** the contrast scaled by (1 + c):  c = -0.0075 +- 0.0083  (-0.9 sigma) **
+  ⑤  sign changes in ell order: data 87   noise 88.4 +- 9.5   (-0.15 sigma over 2000 correlated draws)
+
+================================================================================================
+  CR, crossing   185 bins, lensing: CAMB at the control's parameters (the registered refit's own fallback),  l_A at base 302.943
+================================================================================================
+  ①  whitened singular values, one receipt-step per parameter (amplitude at 2 %):
+           59.23     32.91      4.94      2.58      0.62
+        effective rank 4 at dchi2 > 1 per step;  5 above 1 % of the largest
+        |cos| between the H0 and Omega_m responses: 0.993  (the geometric degeneracy)
+  ②  each parameter on (shift, contrast), whitened and the templates put on one scale:
+        H0   shift -4.668e+01   contrast +1.010e+00   contrast/shift -0.022
+        OM   shift -2.548e+01   contrast +6.443e-01   contrast/shift -0.025
+        WB   shift +1.044e+01   contrast +1.822e+00   contrast/shift +0.175
+        NS   shift +6.879e-01   contrast +4.206e-01   contrast/shift +0.611
+        the 4x2 matrix: sv 54.204, 2.064  ->  ratio 0.038
+  ③  residual chi2 at the linearised GLS minimum 276.4 -- unreachable by any linear
+        move of the five by construction -- against n - 5 = 180  (+5.1 sigma)
+        + contrast, uniform        free would remove dchi2    60.5  (21.9 % of the residual)
+        + contrast x (ell - mid)   free would remove dchi2     3.4  ( 1.2 % of the residual)
+        + shift x (ell - mid)      free would remove dchi2     0.1  ( 0.0 % of the residual)
+        ** the contrast scaled by (1 + c):  c = -0.0670 +- 0.0086  (-7.8 sigma) **
+  ⑤  sign changes in ell order: data 54   noise 88.2 +- 9.7   (-3.53 sigma over 2000 correlated draws)
+
+================================================================================================
+  THE ASSERTIONS
+================================================================================================
+ ① the freedom, and it is EQUAL -- which is the finding, the pre-registration having predicted one fewer on this arm
+   PASS  ① the control has 4 stiff directions at dchi2 > 1 per step
+   PASS  ① and this arm has the same 4, not fewer
+   PASS  ① H0 and Omega_m are degenerate to |cos| > 0.98 on BOTH arms, so the degeneracy is the familiar geometric one and not this arm's
+ ② the contrast response is small on BOTH arms -- so no declared parameter supplies a contrast, on either background
+   PASS  ② the control's 4x2 (shift, contrast) sv-ratio is 0.040 to three decimals
+   PASS  ② this arm's is 0.038 to three decimals -- the arm of record's, against the namesake arm's 0.036; it moves by a thousandth and stays far under the collinearity threshold, so this part's finding is untouched by the re-point
+   PASS  ② both sit under the 0.1 pre-registered as "collinear", so the coupling is NOT CR-specific
+ ③ the reach, which is the one place the two arms part
+   PASS  ③ the control leaves 186.0066 at the GLS minimum -- ** UNCHANGED BY THE RE-POINT, because its nine legs are the same nine files in both readings ** , which is what makes the arm's move above a like-for-like comparison and not two different fits
+   PASS  ③ and that is within 1 sigma of n - 5 = 180: the control reaches the data
+   PASS  ③ this arm leaves 276.360 -- ** AND THAT IS NOT THE 278.79 `r7647` QUOTES FROM THIS SEAT'S OWN LINEARISED HARNESS. ** The harness figure was wrong for this quantity; this receipt and `the_licensed_rebuild...` agree on it by two different routes, at 276.360 and 276.360.  *The gap over the control becomes 90.353 rather than 92.8, so `about a hundred in chi^2 lies outside every direction the model has` still stands -- but the figure beside it must not be 278.79.*
+   PASS  ③ at +5.08 sigma over n - 5, so about a hundred in chi2 is outside every direction it has -- the namesake arm's was +5.2, and the claim survives the re-point in the only form it is made in
+ ④ and the missing direction is a UNIFORM contrast, at a size the data name
+   PASS  ④ a free uniform contrast removes 60.5 of this arm's residual (21.9 per cent of it), against the namesake arm's 56.4 and 20 per cent -- so the missing direction is MORE of the residual on the arm of record, not less
+   PASS  ④ against 0.8 on the control, so the control asks for no contrast
+   PASS  ④ the fitted coefficient is c = -0.0670 +- 0.0086 on this arm, against the namesake arm's -0.0636 +- 0.0085 -- the same size and sign, slightly sharper
+   PASS  ④ which is -7.8 sigma, against the namesake arm's -7.5
+   PASS  ④ and -0.9 sigma on the control, which is nothing
+   PASS  ④ an ell-MODULATED contrast buys under a tenth of what the uniform one does, so the request is uniform rather than a drift
+   PASS  ④ and a modulated shift buys less still
+ ⑤ the residual is not noise on this arm, and is noise on the control
+   PASS  ⑤ this arm crosses zero 54 times
+   PASS  ⑤ against a noise mean of 88 +- 10, so it is more than 3 sigma short of noise
+   PASS  ⑤ while the control crosses 87, inside one sigma of its own noise
+ ⛭ AND THE ONE INFERENCE THE PAPER TAKES FROM THIS, asserted as an inequality rather than narrated
+   PASS  ⛭ the request is decisive on this arm and absent on the control: past 7 sigma against under 1
+   PASS  ⛭ and the two differ eight-fold in significance and more than five-fold in size
+
+ALL CHECKS PASS

@@ -1,0 +1,108 @@
+{
+ "arm": [
+  222.05,
+  535.85,
+  815.03,
+  1129.74
+ ],
+ "sky": [
+  220.4,
+  537.7,
+  817.3,
+  1123.9
+ ],
+ "residual": [
+  1.65,
+  -1.85,
+  -2.27,
+  5.84
+ ],
+ "control": [
+  -0.05,
+  -1.41,
+  -2.97,
+  5.32
+ ],
+ "arm_minus_control": [
+  1.7,
+  -0.44000000000000017,
+  0.7000000000000002,
+  0.5199999999999996
+ ],
+ "raw": [
+  222.0,
+  538.0,
+  818.0,
+  1134.0
+ ],
+ "po47_fourth": 1121.9,
+ "comb": [
+  299.1,
+  298.4
+ ],
+ "claim_a": {
+  "verdict": "UNLOCATED",
+  "worst": 2.27,
+  "bound": 3.25,
+  "located": false
+ },
+ "claim_b": {
+  "verdict": "FAILS",
+  "stated": 0.3333,
+  "readings": {
+   "sub-bin vs the sky's own fourth": 0.5196,
+   "sub-bin vs PO-47's fourth": 0.6988,
+   "raw grid vs the sky's own fourth": 0.8987,
+   "raw grid vs PO-47's fourth": 1.0785
+  },
+  "nearest": 0.5196,
+  "factor": 1.559
+ },
+ "claim_c": {
+  "verdict": "FAILS",
+  "readings": [
+   {
+    "reading": "cumulative spacing error, l.2067's own derivation",
+    "values": [
+     0.7,
+     1.4,
+     2.1,
+     2.8
+    ],
+    "verdict": "FAILS",
+    "fails_at": [
+     1
+    ]
+   },
+   {
+    "reading": "the measured sky residual, |arm - sky|",
+    "values": [
+     1.65,
+     1.85,
+     2.27,
+     5.84
+    ],
+    "verdict": "FAILS",
+    "fails_at": [
+     4
+    ]
+   },
+   {
+    "reading": "arm minus control, what belongs to the construction",
+    "values": [
+     1.7,
+     0.44,
+     0.7,
+     0.52
+    ],
+    "verdict": "FAILS",
+    "fails_at": [
+     2,
+     3,
+     4
+    ]
+   }
+  ]
+ },
+ "failures": []
+}

@@ -1,0 +1,105 @@
+P15 sec:refit-bound, sec:scope -- ** THE LIKELIHOOD SEES THE STEP AS A LOCALISED CONTRIBUTION TO ITS
+EXCESS AND SEPARATES THE TWO CHANNELS AT BAND 1 AT TWENTY-FIVE SIGMA, SO `cc66.61`'s DEMONSTRATION COVERS
+THE STATISTIC FAMILY AND NOT THE INSTRUMENT THE PAPER RUNS BESIDE IT, AND `PO-56`'s AMENDED CLAUSE IS NOT
+MET. **
+
+** PATH PROVENANCE. **  *** Every model number below is the HIERARCHY path *** -- `r6941_fine_{lcdm,cr_leafrec1}`,
+`r6959_nswap_lcdm`, `r6975_mix_lcdm`, `r6983_joint_lcdm`, `r6959_eta_cr_leafrec1`'s band edges, and
+`plik_lite` TT
+through the corpus's own `chi2_of_spectrum`.  ⛔ *** Nothing is SOLVED and nothing is RUN. ***
+
+** THE PRE-REGISTRATION IS ITS OWN COMMIT AHEAD OF THE WORKING SCRIPT **, and it opens by saying plainly
+which facts had already been looked at: the likelihood's **structure** -- bin edges, widths, covariance --
+is a property of the instrument fixed on disk regardless of any spectrum, so it was inspected first and
+the first branch of ⓵ was declared settled rather than pre-registered as open.
+
+⛭⛭⛭ ** ⓵ⓐ THE LIKELIHOOD IS NOT A BANDED STATISTIC IN DISGUISE. **  `plik_lite` TT bins at a median
+$0.0298$ in $q$ -- ** one thirty-fourth of a comb period ** -- with $24$ bins inside band 1, and its
+bin-to-bin correlation is a flat $\approx 0.15$ floor rather than a coupling that grows over a period.
+*It bins; it does not **band**, in the sense that defeats every statistic in the demonstration.*
+
+** ⛔ r7639 ⑴ -- RE-POINTED TO THE ARM OF RECORD, AND THE COMB CARRY DOES NOT APPLY. **  69's ruling is
+about a band RMS cut on a comb coordinate and *** this receipt has no such statistic ***: it is a
+likelihood in BINNED multipole space, every quantity a quadratic form in `COV_TT`, with no envelope and
+no comb in it.  So the re-point is a pointer change.  ⌗ *And the channel-separation figures below
+do not move at all, because both channels are `lcdm`: what moves is only what is read against the arm.*
+
+⛭⛭⛭ ** ⓵ⓑ AND THE STEP IS A LOCALISED CONTRIBUTION TO ITS EXCESS. **  Band 1's bins carry $46.6\sigma$ of
+arm-versus-control separation **on their own**, where its own bands 2--7 trend predicts $68$--$91$: a
+departure of $-0.312$ to $-0.490$ across the four bases, at $2.6$--$3.4\sigma$ on its own residual.
+  ⌗ *On the namesake arm those were $36.4\sigma$, $53$--$71$, $-0.311$ to $-0.489$ and
+  $2.5$--$3.2\sigma$.  The departure and its significance barely move; the SEPARATION rises by a quarter,
+  which is the arm of record sitting further from the control.*
+⇒ ** The same sign as every other instrument in this row -- and the first per-band number in it that
+carries the INSTRUMENT'S own noise rather than an empirical scatter across a noiseless theory spectrum. **
+
+⛔⛔ ** ⓵ⓒ AND IT SEPARATES THE TWO CHANNELS AT BAND 1 AT $25.1\sigma$. **  The smallest share of the band-1
+arm-control difference it could detect is $0.055$.
+
+⇒ *** SO `cc66.61`'s DEMONSTRATION COVERS THE STATISTIC FAMILY AND NOT THE INSTRUMENT THE PAPER RUNS BESIDE
+IT.  `PO-56`'s AMENDED CLAUSE IS **NOT** MET, AND THE ROW HAS A MEASUREMENT TO MAKE RATHER THAN AN EXIT TO
+TAKE. ***
+
+⚠ ** AND THE DENOMINATORS ARE NOT THE SAME, WHICH THE PRE-REGISTRATION REQUIRED BE SAID BEFORE THE NUMBERS
+WERE IN HAND. **  *$0.055$ is a share of the band-1 **difference** under real instrument noise; `cc66.61`'s
+$0.59$ is a share of the **step** under an empirical scatter of a **noiseless** spectrum.*  ⛔ **They are
+not one number and neither bounds the other.**  *The comparison that IS legitimate is the one the order
+asked for, and it is stark: the statistic family cannot separate the channels at band 1, and the likelihood
+separates them at twenty-five sigma.*
+
+⛭ ** ⓶ AND THE SCOPE STATEMENT THE CLAUSE NEEDS. **  Of the **eleven** instruments this row has ever made a
+claim on, ** eight BAND ** at $0.70$ of a comb period -- the contrast statistic, the held-period amplitude,
+the window-free depth, the extremal envelope, the differential estimator, the bilinear decomposition read
+through the band statistic, the comb-phase projection and the projection-width kernel.  ** Three do not: **
+the anchored peak/trough locator (*which does not band but makes no amplitude claim at band 1 -- it locates
+peaks*), the likelihood, and the refit $\chi^2$ that uses its bins.
+
+⇒ ** So the likelihood and its refit are the ONLY instruments in this row that both avoid the band-width
+limit AND make an amplitude claim at band 1 ** -- *which is why ⓵ was the right question, and why there is
+no third instrument outside the demonstration.*
+
+⛔ *`cc66.61`'s floor is not revisited, softened or re-derived -- it stands as measured, as the order said.
+No envelope, basis, abscissa or aggregation chosen; no new candidate; no mechanism.  No corpus edits.*
+
+  [PASS] ⛔ PATH PROVENANCE: no line-of-sight bank name occurs in the executable body   (the fine banks, the three response banks, the band edges and plik_lite only)
+  [PASS] and nothing is SOLVED and nothing is RUN   (banks on disk, likelihood read through the corpus module)
+  [PASS] the bank this receipt reads is present: `spectra/r6959_eta_cr_leafrec1.npz`   (r6959_eta_cr_leafrec1.npz)
+  [PASS] the bank this receipt reads is present: `spectra/r6941_fine_lcdm.npz`   (r6941_fine_lcdm.npz)
+  [PASS] the bank this receipt reads is present: `spectra/r6941_fine_cr_leafrec1.npz`   (r6941_fine_cr_leafrec1.npz)
+  [PASS] the bank this receipt reads is present: `spectra/r6959_nswap_lcdm.npz`   (r6959_nswap_lcdm.npz)
+  [PASS] the bank this receipt reads is present: `spectra/r6975_mix_lcdm.npz`   (r6975_mix_lcdm.npz)
+  [PASS] the bank this receipt reads is present: `spectra/r6983_joint_lcdm.npz`   (r6983_joint_lcdm.npz)
+  [PASS] ⛔⛭ THE SEQUENCING, AND THE HARDEST PART OF IT: the pre-registration says OUT LOUD which facts had already been looked at before it was written -- the likelihood's bin structure -- and declares that branch SETTLED rather than pretending it was open   (the branch that was already decided is declared, not tabled as if open)
+  [PASS] ⛭ AND IT TABLES THE OUTCOME THAT ENDS THE ROW FIRST, as this seat has four revisions running   (the closing outcome leads the table, and the reopening one is what obtained)
+  [PASS] ⛭ AND IT NAMES THE INCOMMENSURABLE-UNITS HAZARD BEFORE THE NUMBERS WERE IN HAND: this row's statistics are NOISELESS and their sigma is an empirical scatter, while the likelihood's is real instrument noise, so the two floors must not be quoted against each other   (the hazard that the two floors would be read as one number)
+  [PASS] the band edges are a DEFINITION and not a measurement, so they do not move with the arm: the namesake's `q_edges` and the arm of record's are bit-identical.  ⛭ *This receipt reads the eta bank for NOTHING ELSE, so reverting that pointer cannot move a figure here -- which is why its revert is silent for a legitimate reason and no pin on it would mean anything*   (8 edges, max |diff| 0.0e+00)
+
+PART 1 -- ⓵ⓐ THE LIKELIHOOD BINS, BUT IT DOES NOT BAND.
+----------------------------------------------------------------------------------------------------
+    185 bins covered, ell 100--1996, q = 0.345--6.593
+    bin widths in q: median 0.0298 -- one 34th of a comb period; 24 bins inside band 1
+  [PASS] ⓵ⓐ THE LIKELIHOOD IS NOT A BANDED STATISTIC IN DISGUISE: its bins are more than an order of magnitude finer than the comb period, and band 1 -- the band that defeats every statistic in the demonstration -- contains many of them   (median bin 0.0298 in q against a period of 1.00; 24 bins in band 1)
+  [PASS] AND IT DOES NOT INHERIT THE WIDTH LIMIT THROUGH ITS COVARIANCE EITHER: the bin-to-bin correlation is a flat floor, not a coupling that grows over a period   (mean correlation at lags 1-7: 0.120 to 0.156, flat)
+
+PART 2 -- ⓵ⓑⓒ WHAT THE LIKELIHOOD SEES, IN ITS OWN METRIC.
+----------------------------------------------------------------------------------------------------
+    arm vs control, sigma from each band alone:   46.64   55.27   64.08   56.64   45.10   30.72   18.63
+  [PASS] ⛔ THE ARM IS PINNED on band 1's arm-versus-control separation, which EXCLUDES the namesake arm -- without it every claim here is a sign, a share, or a separation between two CONTROL channels, none of which moves with the arm, and a green would say nothing about which arm was read   (band 1 46.64 sigma against the namesake arm's 36.37)
+    band 1 against its own bands 2--7 trend:     -0.374(-2.59s)  -0.312(-3.42s)  -0.490(-2.63s)  -0.393(-2.96s)
+  [PASS] ⓵ⓑ THE STEP IS A LOCALISED CONTRIBUTION TO THE LIKELIHOOD'S EXCESS, with the SAME SIGN as every other instrument in this row -- and this per-band number carries the instrument's own noise rather than an empirical scatter across a noiseless theory spectrum   (-0.490..-0.312, 2.6-3.4 sigma; the trend predicts 68-91 where the likelihood delivers 46.6)
+    window vs control, at band 1            6.61 sigma
+    term mix vs control, at band 1         18.64 sigma
+    JOINT vs control, at band 1            12.82 sigma
+    the ARM vs control, at band 1          46.64 sigma
+    window vs term mix, at band 1          25.11 sigma
+  [PASS] ⛔⛔ ⓵ⓒ AND THE LIKELIHOOD SEPARATES THE TWO CHANNELS AT BAND 1 -- the thing no statistic in this row can do.  ⇒ *** `cc66.61`'s DEMONSTRATION COVERS THE STATISTIC FAMILY AND NOT THE INSTRUMENT THE PAPER RUNS BESIDE IT, AND `PO-56`'s AMENDED CLAUSE IS NOT MET ***   (25.1 sigma, against the 2 sigma the pre-registration set as the bar)
+  [PASS] ⚠ AND THE TWO FLOORS ARE IN DIFFERENT UNITS, WHICH THE PRE-REGISTRATION REQUIRED BE SAID: the likelihood's is a share of the band-1 DIFFERENCE under real instrument noise and `cc66.61`'s is a share of the STEP under an empirical scatter of a NOISELESS spectrum.  ** Neither bounds the other, and this receipt says so in its own header **   (the likelihood's smallest detectable share at band 1 is 0.043; `cc66.61`'s floor is 0.59 of a different quantity)
+
+PART 3 -- ⓶ THE SCOPE STATEMENT: WHICH INSTRUMENTS BAND.
+----------------------------------------------------------------------------------------------------
+  [PASS] ⓶ THE LIST IS COMPLETE AND COUNTED, and it is in this receipt's own header rather than left to the reply: every instrument this row has made a claim on, each marked   (11 instruments, 8 banding at 0.70 of a period, 3 not)
+  [PASS] AND THE ONE THAT MATTERS IS NAMED: the likelihood and the refit that uses its bins are the ONLY instruments that both avoid the band-width limit AND make an amplitude claim at band 1 -- the anchored locator does neither, because it locates peaks rather than measuring amplitudes   (which is why ⓵ was the right question and why no third instrument sits outside the demonstration)
+  [PASS] ⛔ AND ⓷ HOLDS: `cc66.61`'s floor is not revisited, softened or re-derived, and no envelope, basis, abscissa or aggregation is chosen   (the order said the floor stands and this revision does not touch it)
+
+====================================================================================================
+GATES: ALL PASS

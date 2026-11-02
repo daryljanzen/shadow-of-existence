@@ -1,0 +1,122 @@
+
+⌛ HISTORICAL (r7637+70, 69's ruling): THIS RECEIPT READS A SUPERSEDED INSTRUMENT STATE, DELIBERATELY.
+Its CR spectra are the c54-era runs: the arm at the instrument's old built-in point (H0 73, Omega_m 0.3066) with
+the onset solved to ell_A 301.6, at KFAC=1 and LEAFREC=0.  The corpus has superseded that state twice -- the pin,
+then the leaf rate -- and the arm of record is LEAFREC=1 at H0 68.5707, Omega_m 0.291246 (r7633).  The same forms
+on the arm of record are banked as `<stem>_leafrec1.npz` (r7635), and their figures are in
+`computations/beyond_the_wall/r7635_70_leafrec1_bank/DRYRUN.md`; they are NOT what this receipt pins.  What it
+pins is a record of that instrument, and a sentence of P15 may cite it only for that.  The guard below fails
+if a CR file it reads is not the LEAFREC=0 namesake.
+
+RECEIPT -- P15: ** WHY 0.62 pi: THE DRIVING, AND THE ATTRIBUTION IS COMPLETE.  ** WITH EVERY COUPLING
+TO THE POTENTIAL REMOVED THE TWO ARMS' ACOUSTIC PHASES AGREE TO 0.013 OF ell_A AND BOTH SPACINGS ARE
+ell_A EXACTLY.  TURNING THE DRIVING ON SUPPLIES -0.127 TO THE CONTROL AND -0.729 TO THIS
+CONSTRUCTION -- A FACTOR OF 5.7 -- WHICH IS 98% OF THE 0.615 DISCREPANCY. **  AND THE SAME SWITCH
+ACCOUNTS FOR THE 2.4% THE SPACING WAS SHORT. **
+
+Built r2441+c54.193, front #2, lead `L-507`.
+
+===================================================================================================
+** WHY: c54.191 SAID "why 0.62 pi HAS AN ADDRESS" AND DID NOT GO TO IT. **
+===================================================================================================
+
+c54.191 closed with: *"an acoustic phase shift is a computable consequence of the driving, so the
+question 'why 0.62 pi' has an address.  This file does not have it."*  ** The instrument has carried
+the switch since c54.170: `NODRIVE=1` removes every coupling to the potential at every site -- the
+4 Phi' in the photon, neutrino and CDM continuity equations and the k^2 Psi in the Euler equations --
+while leaving Phi's own evolution alone, since that is the background and not a coupling. **  *Both
+arms are run through it at production depth here, which is what the question needed and what no
+revision had done.*
+
+  PART 1  ** UNDRIVEN, THE TWO ARMS ARE THE SAME OSCILLATOR. **  Intercepts -0.135 and -0.149 of
+          ell_A -- ** they agree to 0.013 ** -- and both slopes are ell_A to within a part in a
+          thousand.  *Two constructions with different rates, different sound horizons, different
+          starting redshifts and different initial data give the same acoustic series once nothing
+          drives it.*
+  PART 2  ** AND THE DRIVING IS WHAT SEPARATES THEM. **  Switched on it supplies -0.127 to the
+          control and ** -0.729 to this construction: a factor of 5.7 **.  The driven discrepancy is
+          0.615 and the undriven is 0.013, so ** the driving accounts for 98% of it. **
+  PART 3  ** THE SAME SWITCH ACCOUNTS FOR THE SPACING TOO. **  Undriven, both slopes are 1.000 and
+          1.001 of ell_A.  Driven, the control's is 1.003 and this construction's 0.976.  ** So the
+          2.4% the spacing was short is the driving as well, and not a second effect. **
+  PART 4  ** WHICH MAKES THE WHOLE ACOUSTIC DISAGREEMENT ONE OBJECT. **  *Not a spacing and a phase
+          and a transient, but one coupling behaving differently -- and a coupling is a thing a
+          theory says something about, where a ratio is not.*
+
+** WHAT THIS DOES NOT SAY, AND IT IS THE INTERESTING HALF. **  ** It does not say WHY the driving is
+5.7 times stronger here. **  *The obvious candidate is that this construction's modes begin already
+sub-horizon at the seam carrying an assigned amplitude and zero velocity, in a potential that is not
+the equilibrium configuration for that state -- so the potential does work on them immediately, where
+LambdaCDM's modes begin super-horizon in adiabatic equilibrium and the potential decays gradually as
+they enter.*  ** That is a hypothesis and this file does not test it. **  ⇒ ***The instrument already
+carries the split that would: `DRC` is the potential's RATE OF CHANGE feeding the density and `DRE`
+is its GRADIENT driving the velocity, and they can be switched independently.  Running them
+separately attributes the 5.7 to one term or the other, and that is the next thing this front
+owes.***
+
+** F5 IS NOT SOFTENED, AND THIS RESULT IS THE REASON TO SAY SO CAREFULLY. **  A measurement
+discrepancy is not a framework verdict; `PO-7` is protected; the conversion runs by `F5`'s stated procedure.  ** An
+attribution is not an explanation and it is not a verdict: what this establishes is that the acoustic
+disagreement lives in ONE coupling rather than in four items, a ratio, or an initial condition. **
+
+
+==============================================================================
+PART 1/2 — UNDRIVEN THE TWO ARMS ARE THE SAME OSCILLATOR
+==============================================================================
+  *`NODRIVE=1` removes EVERY coupling to the potential at EVERY site -- the 4 Phi' in the
+   photon, neutrino and CDM continuity equations and the k^2 Psi in the Euler equations --
+   and leaves Phi's own evolution alone, that being the background and not a coupling.*
+
+                       run  npk               first four peaks  slope/l_A  intcpt/l_A
+     LambdaCDM  driving ON    8          [220, 540, 812, 1132]     1.0034     -0.2628
+    LambdaCDM  driving OFF    8          [276, 564, 860, 1164]     1.0007     -0.1354
+     CR         driving ON    8           [172, 404, 636, 916]     0.9761     -0.8780
+    CR         driving OFF    7          [268, 564, 860, 1164]     1.0000     -0.1485
+
+  ** UNDRIVEN, THE TWO INTERCEPTS DIFFER BY 0.0132 OF ell_A. **
+     *Two constructions with different rates, sound horizons, starting redshifts and initial
+     data give the SAME acoustic series once nothing drives it.*
+
+  ** WHAT THE DRIVING SUPPLIES: -0.1274 to the control, -0.7294 here — a factor of 5.7. **
+  ** THE DRIVEN DISCREPANCY IS +0.6152 AND THE UNDRIVEN IS +0.0132, SO THE DRIVING
+     ACCOUNTS FOR 98% OF IT. **
+
+==============================================================================
+PART 3 — AND THE SAME SWITCH ACCOUNTS FOR THE SPACING
+==============================================================================
+                       run  slope/l_A
+     LambdaCDM  driving ON     1.0034
+    LambdaCDM  driving OFF     1.0007
+     CR         driving ON     0.9761
+    CR         driving OFF     1.0000
+
+  ** UNDRIVEN BOTH SLOPES ARE ell_A TO 0.07%. DRIVEN, THIS CONSTRUCTION'S IS 2.4% SHORT. **
+     ⇒ ***So the 2.4% the spacing was short is the driving as well, and not a second
+     effect.  The whole acoustic disagreement is ONE coupling behaving differently.***
+
+==============================================================================
+WHAT THIS DOES NOT SAY
+==============================================================================
+  ** It does not say WHY the driving is stronger here. **
+     *The obvious candidate: this construction's modes begin already sub-horizon at the seam
+     carrying an assigned amplitude and ZERO velocity, in a potential that is not the
+     equilibrium configuration for that state — so the potential does work on them at once,
+     where the control's modes begin super-horizon in adiabatic equilibrium.  A HYPOTHESIS,
+     and this file does not test it.*
+  ⇒ ***The instrument carries the split that would: `DRC` is the potential's RATE OF CHANGE
+     feeding the density, `DRE` its GRADIENT driving the velocity, switchable separately.
+     That is the next thing this front owes.***
+
+  ⛔ ***F5 UNSOFTENED.  An attribution is not an explanation and it is not a verdict: what
+     this establishes is that the acoustic disagreement lives in ONE COUPLING rather than in
+     four items, a ratio, or an initial condition.  `PO-7` protected; the conversion is
+     Daryl's.***
+
+==============================================================================
+ALL CHECKS PASS — with every coupling to the potential removed the two arms' acoustic phases
+agree to 0.013 of l_A and both spacings are l_A to a part in a thousand; switching the driving
+on supplies -0.127 to the control and -0.729 here, a factor of 5.7, which is 98% of the 0.615
+discrepancy; and the same switch accounts for the 2.4% the spacing was short.  The acoustic
+disagreement is one coupling, not four items and a ratio.
+==============================================================================
+GATE c54.193 (r2441), `L-507`: undriven the two arms' acoustic phases differ by 0.0132 of l_A with both slopes at l_A to a part in a thousand; the driving supplies -0.1274 to the control and -0.7294 here (5.7x), accounting for 98% of the 0.615 discrepancy, and for the 2.4% the spacing was short — pinned against `L-505`, `L-506` and `L-147` F5.

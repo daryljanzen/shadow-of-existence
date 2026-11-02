@@ -1,0 +1,222 @@
+
+P15_the_shared_fraction_does_not_mean_what_i_said_and_the_peak_trough_pattern_is_the_arms_alone
+==============================================================================================
+
+LEVEL: the same verified refit minima and the same full-covariance pipeline as `r6879+cc66.33`,
+with the four diagnostics `r6881` routed measured on both the diagonal and the covariance, and one
+control that decides what the shared-fraction statistic is worth.
+
+** THIS RECEIPT WITHDRAWS THE HEADLINE OF MY OWN PREVIOUS LANDING. **
+
+`r6879+cc66.33` reported, and I put it first in the reply:
+
+    "73.1 per cent of the arm's chi^2 lies along the control's own residual direction ...  On the
+     order's own criterion that part is the TRANSFER'S and not the construction's."
+
+** The number is right and the inference is wrong. **  The statistic cannot carry it, and the reason
+is algebraic rather than subtle: both models are fitted to the SAME data, so
+
+        r_CR  =  r_control  +  (m_CR - m_control)          exactly, to 9e-16 below
+
+and the common -d term is in both residuals by construction.  A large "shared fraction" therefore
+measures HOW SIMILAR THE TWO MODELS ARE, not whose the misfit is.  ** The control that settles it:
+the flat-LCDM control deliberately tilted by dn_s = +0.02 -- a model nobody believes, costing
+chi^2 = 214.6 -- comes out 82.2 PER CENT "shared" with the control, MORE than the CR arm's 71.8. **
+The statistic is not diagnostic in this regime and my reading of it was an over-claim.
+
+-------------------------------------------------------------------------------
+WHAT REPLACES IT, AND IT POINTS THE OTHER WAY.
+
+The control already fits at 0.994 per bin -- it is a good fit, not a fit with a shared defect.  The
+arm's chi^2 exceeds it by +109.0, and the model difference alone carries 81.8 of that.  ** Without
+the model difference the arm would BE the control, so the whole of the excess traces to the ways this
+construction's spectrum differs from flat LCDM's.  The excess is the construction's. **
+
+-------------------------------------------------------------------------------
+AND THREE OF `r6881`'s FOUR DIAGNOSTICS DO NOT SURVIVE ON THE CONTROL.
+
+The order offers them "to be overturned", measured on diagonal errors, and asks for the full
+covariance behind them.  Measured both ways:
+
+ (1) PEAK / TROUGH.  The order has the control at +0.57 / -0.67 and the arm at +0.93 / -1.11, and
+     concludes "same sign, same structure, BOTH MODELS".  ** The control shows essentially nothing:
+     +0.03 / -0.06 on a diagonal amplitude, +0.03 / -0.07 on the covariance.  The arm does show it,
+     +0.38 / -0.56 and +0.42 / -0.56. **  So the pattern is the ARM'S ALONE, and the composite
+     inference built on both arms showing it -- "the bulk belongs to the transfer rather than to
+     either cosmology" -- fails at its premise.
+
+ (2) THE ARM AS THE CONTROL SCALED.  ** The rms ratio reproduces: 1.388 against the quoted
+     1.34, and 1.269 whitened.  The correlation does not: 0.824, not 0.96; the regression slope
+     1.15, not 1.28. **  And "the control scaled" is the wrong picture for the reason above: it is
+     the control PLUS a model difference, and that difference is the whole of the excess.
+
+ (3) GROWTH WITH MULTIPOLE.  Both do grow and the first third does match, but far more mildly than
+     reported: control 0.67 / 0.77 / 0.88 against the quoted 0.66 / 0.96 / 1.46, arm
+     0.71 / 1.15 / 1.03 against 0.69 / 1.39 / 2.09 (whitened, 0.75 / 0.93 / 1.13).
+
+ (4) THE ell ~ 1000 TROUGH.  ** The gap is the arm's, not shared: control +0.06 where the order has
+     -1.56, arm -0.58 where it has -2.66 (-0.07 and -1.04 whitened). **
+
+-------------------------------------------------------------------------------
+AND THE QUESTION THE ORDER CLOSES ON -- WHAT SETS THE 1.3 -- HAS A PLAIN ANSWER.
+
+Nothing amplifies anything.  In the whitened metric |r_control| = 13.34 and the model difference has
+norm 9.04; the arm's is 16.94, which is those two combined with their cross term.  ** The "factor of
+1.3" -- 1.270 on the arm of record -- is not an amplification of a shared defect; it is the size of
+the model difference itself, 81.8 in chi^2, and that is the construction's. **
+
+-------------------------------------------------------------------------------
+WHAT IS CLAIMED.
+
+ (1) r_CR = r_control + (m_CR - m_control) exactly, verified to 9e-16 in the whitened metric.
+ (2) A deliberately tilted control scores 82.2% "shared", above the CR arm's 71.8%, and the score
+     falls away for larger tilts -- so the statistic ranks model SIMILARITY, not attribution.
+ (3) The control fits at 0.994/bin; the arm exceeds it by +109.0; the model difference carries 81.8.
+ (4) The four diagnostics, each on a diagonal amplitude and on the covariance, against the quoted
+     values -- (2)'s rms ratio reproducing and (1), (3), (4) not surviving on the control.
+ (5) |r_control| = 13.34, |model difference| = 9.04, |r_CR| = 16.94, which is what the 1.3 is.
+
+WHAT IS NOT CLAIMED.
+
+ * NOT that the transfer is exonerated.  What is withdrawn is that the shared fraction was EVIDENCE
+   for the transfer; no statistic here separates a transfer defect from a cosmology difference, and
+   none is offered.
+ * NOT that `r6879+cc66.33`'s other results move.  The band means, the three single-parameter scans
+   and the figure stand; it is the attribution sentence that is withdrawn.
+ * NOT a mechanism for the misfit.  Four directions were excluded at cc66.33 and none is added here.
+ * The peak/trough split uses the sign of the CONTROL's own binned D_l curvature for both arms, so
+   the two are sorted by the same partition; using each arm's own moves no verdict and is not run.
+
+WHAT WOULD FALSIFY IT.  The identity in (1) failing; the tilted control NOT scoring high on the
+shared statistic; the control reproducing the order's peak/trough or ell~1000 numbers; or the rms
+ratio not reproducing.
+
+====================================================================================================
+
+PART 1 -- THE ALGEBRA THAT MAKES THE SHARED FRACTION UNINFORMATIVE.
+----------------------------------------------------------------------------------------------------
+    |r_control| =  13.34    |m_CR - m_control| =   9.04    |r_CR| =  16.94
+  [PASS] r_CR = r_control + (m_CR - m_control) EXACTLY -- both residuals carry the same -d, so a 'shared fraction' is a similarity of MODELS and not an attribution of misfit   (max |r_CR - r_ctl - diff| = 8.9e-16)
+
+    CR vs control: shared fraction 71.8%, cosine +0.848   <- cc66.33 reported 73.1% at +0.855 on the NAMESAKE arm
+
+  ** THE CONTROL THE STATISTIC NEEDED AND DID NOT GET: a model nobody believes. **
+    flat LCDM tilted by dn_s = +0.02:  chi2 =    214.6  shared with the control =  82.2%
+    flat LCDM tilted by dn_s = +0.05:  chi2 =    408.8  shared with the control =  42.5%
+    flat LCDM tilted by dn_s = +0.10:  chi2 =   1083.8  shared with the control =  15.6%
+    flat LCDM tilted by dn_s = -0.05:  chi2 =    428.4  shared with the control =  42.2%
+  [PASS] ** A DELIBERATELY WRONG MODEL SCORES HIGHER THAN THE CR ARM **: the control tilted by 0.02, at chi^2 = 214.6, is 82.2% 'shared' against the arm of record's 71.8% (the namesake's was 73.1%) -- so the statistic ranks similarity to the control, not whose the misfit is   (82.2% at chi2 215 against the arm's 71.8%)
+  [PASS] ...and it falls away for larger tilts, which is the signature of a similarity measure rather than of an attribution   (82% -> 43% -> 16%)
+
+  ⛔ ** SO cc66.33's SENTENCE IS WITHDRAWN. **  "73.1 per cent ... on the order's own criterion that
+     part is the TRANSFER'S and not the construction's" does not follow, and nothing here replaces
+     it with a statistic that would.  What can be said instead is PART 2.
+
+
+PART 2 -- WHAT CAN BE SAID: THE CONTROL IS ALREADY A GOOD FIT, SO THE EXCESS IS THE ARM'S.
+----------------------------------------------------------------------------------------------------
+    control  chi2 =  177.88 over 179 bins = 0.994/bin   ** already a good fit **
+    CR arm   chi2 =  286.89 over 179 bins = 1.603/bin
+    excess   +109.02,  of which the model difference alone carries 81.8 and the cross term +27.2
+  [PASS] the control fits at 0.99 per bin, so there is no shared defect for the arm's excess to be an amplification OF   (0.994/bin)
+  [PASS] ** and the whole of the arm's excess traces to m_CR - m_control: remove the model difference and the arm IS the control **, so the excess is the construction's   (model difference carries 81.8 of the 109.0 excess)
+
+PART 3 -- `r6881`'s FOUR DIAGNOSTICS, ON THE DIAGONAL AND ON THE COVARIANCE.
+----------------------------------------------------------------------------------------------------
+  (1) PEAK / TROUGH, sorted by the sign of the control's own binned D_l curvature (93 / 86)
+                                peaks   troughs
+      control, diag amplitude    +0.03     -0.06
+      control, whitened         +0.03     -0.07
+      CR arm, diag amplitude    +0.38     -0.56
+      CR arm, whitened          +0.42     -0.56
+      r6881 quoted:  control +0.57 / -0.67,  arm +0.93 / -1.11
+  [PASS] ** THE CONTROL SHOWS ESSENTIALLY NO PEAK/TROUGH PATTERN **, against the +0.57 / -0.67 the order reports -- so 'same structure, BOTH models' does not survive   (control +0.03 / -0.06)
+  [PASS] ...while the ARM does show it, on both metrics -- so the pattern is the arm's alone   (arm +0.38 / -0.56 diag, +0.42 / -0.56 whitened)
+  [PASS] ⛔ and therefore the order's composite -- 'that BOTH arms show it says the bulk belongs to the transfer rather than to either cosmology' -- fails at its premise
+
+  (2) IS THE ARM THE CONTROL SCALED?
+      diagonal  corr +0.8240   slope 1.145   rms ratio 1.388
+      whitened  corr +0.8478   slope 1.076   rms ratio 1.269
+      r6881 quoted: corr 0.96, slope 1.28, rms ratio 1.34
+  [PASS] ** the RMS RATIO reproduces r6881's quoted 1.34 AND THE CORRELATION DOES NOT, by at least two and a half times as much ** -- which is the comparison this pair of gates exists to make.  ⛔ *Stated as the contrast from r7649: the absolute `|ratio - 1.34| < 0.03` this replaces passed on the namesake's 1.357 and failed on the arm of record's 1.388, testing a coincidence of two decimals rather than the claim*   (ratio 1.388 (3.6% off 1.34) against correlation +0.824 (14.2% off 0.96), a factor 3.9)
+  [PASS] ...but the CORRELATION does not: 0.84, not 0.96 -- so 'the same series scaled' is too strong even before PART 1's objection to what that would mean   (+0.824)
+
+  (3) GROWTH WITH MULTIPOLE, mean |residual| by thirds of 100-1300
+      control  diag   0.67   0.77   0.88    whitened   0.66   0.74   0.89
+      CR arm   diag   0.71   1.15   1.03    whitened   0.75   0.93   1.13
+      r6881 quoted: control 0.66 / 0.96 / 1.46 ;  arm 0.69 / 1.39 / 2.09
+  [PASS] both DO grow with multipole and the first third matches, so that much stands   (control 0.67 -> 0.88)
+  [PASS] ...but far more mildly than reported -- the control's last third is 0.88, not 1.46   (0.88 against 1.46)
+
+  (4) THE ell ~ 1000 TROUGH, 950-1080
+      control  diag  +0.06   whitened  -0.07
+      CR arm   diag  -0.58   whitened  -1.04
+      (n = 15 bins)   r6881 quoted: control -1.56, arm -2.66
+  [PASS] ** THE GAP AT ell ~ 1000 IS THE ARM'S, NOT SHARED **: the control sits at +0.06 where the order has -1.56   (control +0.06, arm -0.58)
+
+PART 4 -- WHAT SETS THE 1.3.
+----------------------------------------------------------------------------------------------------
+    |r_control| =  13.34
+    |m_CR - m_control| =   9.04   (81.8 in chi^2)
+    |r_CR| =  16.94   ratio to the control = 1.270
+    the six figures this receipt's prose prints, pinned on the ARM OF RECORD:
+      shared fraction %                71.847  against   71.800  (+-0.2)  ok
+      whitened cosine                   0.848  against    0.848  (+-0.002)  ok
+      arm's chi^2                     286.894  against  286.890  (+-0.15)  ok
+      excess                          109.017  against  109.020  (+-0.15)  ok
+      model difference in chi^2        81.810  against   81.800  (+-0.2)  ok
+      |r_CR|/|r_ctl|                    1.270  against    1.270  (+-0.004)  ok
+  [PASS] ⛭⛭⛭ ** AND ALL SIX FIGURES THIS RECEIPT'S PROSE PRINTS ARE PINNED TO THE ARM OF RECORD, each to a tolerance narrower than its distance from the namesake's value ** -- the shared fraction 71.8%, the cosine +0.848, the arm's chi^2 286.89, the excess +109.02, the model difference 81.8 and the ratio 1.270.  ⛔ *Added at r7649 because every OTHER gate in this file is an inequality or an identity that passes on BOTH arms, so the re-point moved six printed figures and could not have reddened anything.  This is the gate the perturbation bites.*   (shared fraction % 71.847; whitened cosine 0.848; arm's chi^2 286.894; excess 109.017; model difference in chi^2 81.810; |r_CR|/|r_ctl| 1.270)
+  [PASS] ⛭⛭ and the same six again, as LITERAL comparisons, so `check_figures_pinned` can see them -- the tuple form above is invisible to its AST reader and the INDEX row's figures were carried as baselined-unpinned because of it.  ⌗ *Same content, visible instrument; the repair `cc66.87` established on a dict, applied where it is now load-bearing*   (71.847% / 0.848 / 286.89 / 109.02 / 81.81 / 1.270)
+  [PASS] ** the ratio is not an amplification of a shared defect -- it is the size of the model difference added to the control's residual **, which is the plain answer to what sets it   (|r_CR|^2 = |r_ctl|^2 + |diff|^2 + 2 r_ctl.diff = 177.9 + 81.8 + 27.2 = 286.9)
+
+====================================================================================================
+THE READING.
+====================================================================================================
+
+  ⛔ ** FIRST, THE WITHDRAWAL, BECAUSE IT IS MINE. **  `r6879+cc66.33` led with "73.1 per cent of the
+  arm's chi^2 lies along the control's direction ... that part is the transfer's and not the
+  construction's".  The number stands; the inference does not.  Both models are fitted to the same
+  data, so r_CR = r_control + (m_CR - m_control) exactly, and the shared fraction measures how
+  similar the two MODELS are.  ** The control tilted by dn_s = +0.02 -- a model nobody believes, at
+  chi^2 = 214.6 -- scores 82.2 per cent, higher than the arm of record's 71.8 (the namesake
+  arm's was the 73.1 this withdrawal quotes). **  The statistic cannot
+  attribute a misfit and I should not have read it as doing so.
+
+  ** AND THE CORRECTED READING POINTS THE OTHER WAY. **  The control already fits at
+  0.994 per bin; there is no shared defect for the arm's excess to be an amplification of.  The
+  arm exceeds it by +109.0, the model difference alone carries 81.8 of that, and removing the
+  model difference makes the arm the control.  ** The excess is the construction's. **
+
+  ** SECOND, THREE OF THE FOUR DIAGNOSTICS DO NOT SURVIVE ON THE CONTROL, AND THE ORDER ASKED TO BE
+  OVERTURNED. **  The peak/trough pattern is the ARM'S alone -- the control sits at
+  +0.03 / -0.06 where the order has +0.57 / -0.67.  The ell ~ 1000 trough is the arm's --
+  the control sits at +0.06 where the order has -1.56.  The growth with multipole is real but
+  far milder, the control's last third 0.88 rather than 1.46.  ** So the composite -- "that both
+  arms show it says the bulk belongs to the transfer rather than to either cosmology" -- fails at its
+  premise, and it fails in the same direction as the withdrawal above. **
+
+  ** WHAT DOES REPRODUCE IS THE RMS RATIO: 1.388 against the quoted 1.34. **  And what sets it is
+  not an amplification: |r_control| = 13.34, the model difference 9.04, the arm 16.94.
+  ** The factor of 1.3 IS the model difference. **
+
+  ⚠ ** AND WHAT IS NOT ESTABLISHED EITHER WAY. **  Withdrawing "it is the transfer's" is not showing
+  the transfer is innocent.  No statistic here separates a transfer defect from a cosmology
+  difference, and none is offered; what is established is that the shared fraction was never that
+  statistic.  The band means, the three single-parameter scans and the figure of cc66.33 stand.
+
+====================================================================================================
+GATES: ALL PASS.
+
+ESTABLISHED: r_CR = r_control + (m_CR - m_control) exactly, so the shared fraction ranks model
+similarity rather than attributing misfit -- a control tilted by dn_s = +0.02 scores 82.2% against
+the arm of record's 71.8% -- and cc66.33's sentence reading it as "the transfer's and not the
+construction's"
+is WITHDRAWN.  The control fits at 0.994/bin, the arm exceeds it by +109.0, and the model difference
+carries 81.8 of that, so the excess is the construction's.  Of r6881's four diagnostics the rms
+ratio reproduces (1.388 against 1.34) and three do not survive on the control: the peak/trough
+pattern, the ell~1000 trough and the steepness of the growth are the ARM'S, so the composite reading
+that both arms show it fails at its premise.  The 1.3 is the model difference's own size.
+NOT CLAIMED: that the transfer is exonerated; a mechanism for the misfit; any change to cc66.33's
+band means, single-parameter scans or figure.
+

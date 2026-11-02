@@ -1,0 +1,97 @@
+P15 sec:refit-bound -- ** THE BANK THE ROW NEEDED ALREADY EXISTED, SO THE ARM'S COUPLING IS NOW
+MEASURED RATHER THAN TRANSFERRED; THE DOPPLER CARRIES A GROWING MINORITY OF THE EXCESS AND IS
+SIGN-INDEFINITE AT THE BOTTOM; AND THE FOUR SHAPE MISMATCHES SHARE A REASON THAT IS ABOUT THE EXCESS
+AND NOT ABOUT THE CANDIDATES. **
+
+** PATH PROVENANCE, IN THE HEADER, ON THE STANDING REQUIREMENT. **  *** Every model number below is the
+HIERARCHY path *** -- `r6915_pairs_{lcdm,cr}` (the `SRCDEC` bilinear decomposition), `r6941_fine_*` and
+`r6959_eta_cr`'s band edges.  ⛔ *** Nothing is SOLVED and nothing is RUN: the bank was already on
+disk. ***
+
+** THE PRE-REGISTRATION IS `r7007_directions/PREDICTION.md` **, five failure modes ahead of five
+outcomes, ** with "the right quantity lands between the two wrong ones and settles nothing" tabled first
+** on the order's instruction, and with the failed first construction dated as failed.
+
+⛭⛭ ** ⓵ THE INSTRUMENT ALREADY EMITS THE RIGHT QUANTITY AND THE BANK IS ALREADY ON DISK. **  `SRCDEC`,
+added at `r6915+cc66.41`, writes the full bilinear decomposition -- with $\Delta^a_\ell(k) = \int
+\text{term}_a\, j_\ell\, d\eta$, $C_\ell = \sum_{a\le b} w_{ab} \sum_k P\, \Delta^a \Delta^b$ -- ***ten
+numbers per multipole summing to $C_\ell$ exactly***, and `r6915_pairs_{lcdm,cr}` carry them for both
+arms.  ⇒ ** No run, no instrument change, and the order's escape hatch is not needed. **  ⌗ *The grid
+is $238$ multipoles against the fine banks' $1900$: it reads the contrast $1.9$ per cent low, and the
+deficit agrees between the arms to three parts in ten thousand, so it CANCELS in the ratio -- which is
+the only thing read from it.*
+
+⛭ ** AND THE BANK DISCHARGES A CAVEAT `cc66.55` COULD ONLY STATE. **  The $s$-scaling of every pair is
+exact -- $s^2$ on `dp*dp`, $s$ on the three `dp` crosses, $1$ on the rest -- so
+$dD_\ell/d\ln s = (\texttt{sw*dp} + \texttt{dp*isw} + \texttt{dp*pol}) + 2\,\texttt{dp*dp}$ per
+multipole, and the coupling follows analytically ***for the arm as well as the control***: $-0.48$ to
+$-0.86$ on each, **equal between the arms to four per cent** and agreeing with `cc66.55`'s three-point
+finite difference to seven.  ⇒ *`cc66.55` measured it on the control and transferred it; that caveat
+is discharged.*
+
+⚠ ** AND ONE CONSTRUCTION WAS TRIED FIRST AND IS REPORTED AS FAILED RATHER THAN DROPPED. **  The obvious
+reading of the quantity, $\sqrt{\mathrm{osc}(\texttt{dp*dp})/\mathrm{osc}(\texttt{sw*sw})}$ per band, is
+small and sign-indefinite on the arithmetic envelope and reaches $+134$ per cent under a median one --
+*because the oscillation of a weak, smooth term about a median envelope is not a well-conditioned
+quantity.*  ⇒ ** That definition inherits the envelope ambiguity through its own conditioning, so it
+is not used, and the failure is dated in the pre-registration. **
+
+⛭⛭ ** WHAT IS USED NEEDS NO EQUIVALENT-$s$ STEP: A ONE-AT-A-TIME SWAP. **  On the arm's own $q$ grid,
+replace the arm's four Doppler-containing pairs by the control's, scaled by the ratio of the two arms'
+envelopes, and recompute the contrast.  The Doppler's share is then $(C_{\rm arm} - C_{\rm
+swapped})/(C_{\rm arm} - C_{\rm control})$ -- *a direct attribution with no coupling-times-input product
+in it, and the same shape of operation as `SRCINJRS`'s one-at-a-time clock swap.*
+
+⛔ ** ⓶ AND THE CONTRIBUTION IS A MINORITY SHARE THAT GROWS, SIGN-INDEFINITE AT THE BOTTOM. **
+$-12$ to $+17$ per cent on the arithmetic envelope and $-20$ to $+48$ on the median one -- negative at
+$q=1.90$ on both, rising to a fifth or a half by the top band.  ⇒ *** IT LANDS BETWEEN THE TWO WRONG
+READINGS, WHICH SAID $-13$ AND $+188$ PER CENT -- AND IT DOES NOT SETTLE NOTHING: it settles that the
+candidate is a real but MINORITY contributor, which neither wrong reading said. ***  ⌗ *`cc66.55`'s
+split holds exactly as predicted: the coupling's SIGN is envelope-independent and the FRACTION inherits
+the ambiguity, by about a factor of two.*  ⛔ *No envelope is chosen -- the order's standing refusal.*
+
+⛭⛭⛭ ** ⓷ AND THE FOUR MISMATCHES DO SHARE A REASON, AND IT IS ABOUT THE EXCESS. **  The excess has ONE
+dominant feature: ***band 1 is a third of the mean of the rest and sits five scatters below it***, while
+above band 1 a constant already fits and a line only halves the residual.  ⇒ *** THE EXCESS'S
+$q$-STRUCTURE IS A STEP AT THE LOWEST BAND, NOT A TREND -- AND ALL FOUR CANDIDATES WERE JUDGED ON A
+TREND ACROSS BANDS 2--7, WHERE THE EXCESS IS VERY NEARLY FEATURELESS. ***  *A flat candidate (the window
+weighting, the term mix, the band-power reading) matches the flat part and misses the step; a rising one
+(the projection width, the field reading) matches the mild rise and misses the step, and on bands 2--7
+the two are barely distinguishable because there is almost nothing there to distinguish them with.*
+⇒ ** So the sector has been spending its discriminating power on the part of the excess carrying least
+structure, because the part carrying the structure is the band `cc66.54` showed it cannot measure a
+candidate in. **  ⌗ *Which is `cc66.54`'s own finding seen from the candidate side, and it is why four
+mismatches look like four failures rather than one.*
+
+  [PASS] ⛔ PATH PROVENANCE: no line-of-sight quartet value and no line-of-sight bank name occurs in the executable body   (r6915_pairs_*, r6941_fine_* and r6959_eta_cr's band edges only)
+  [PASS] and nothing is SOLVED and nothing is RUN: the bank was already on disk   (banks on disk)
+
+⛭⛭ ⓵ THE BANK
+
+  [PASS] ⛭⛭ THE INSTRUMENT ALREADY EMITS THE RIGHT QUANTITY: `SRCDEC`'s bilinear decomposition is on disk for BOTH arms, ten l-resolved terms per multipole in the order the instrument fixes, and they sum to Dl exactly.  ⇒ No run, no instrument change, and the order's escape hatch is not needed   (max relative departure from Dl is 1.2e-15)
+  [PASS] and the coarse grid is CHECKED rather than assumed adequate: it reads the contrast about two per cent low, and the deficit agrees between the arms to parts in ten thousand -- so it CANCELS in the ratio, which is the only thing read from it   (coarse/fine 0.9813 on the control, and arm-against-control to 3.1e-04)
+    q                1.20      1.90      2.60      3.30      4.00      4.70      5.40
+    lcdm           -0.479    -0.857    -0.623    -0.654    -0.716    -0.571    -0.720
+    cr             -0.476    -0.861    -0.613    -0.644    -0.702    -0.549    -0.706
+  [PASS] ⛭ AND THE BANK DISCHARGES A CAVEAT cc66.55 COULD ONLY STATE: the s-scaling of every pair is exact, so the coupling follows ANALYTICALLY for the ARM as well as the control -- negative at every band on both, equal between the arms to a few per cent, and agreeing with cc66.55's three-point finite difference   (arm against control to 4%, both against the finite difference to 7%)
+  [PASS] ⚠ AND THE FIRST CONSTRUCTION IS REPORTED AS FAILED RATHER THAN DROPPED: sqrt(osc(dp*dp) / osc(sw*sw)) is small on the arithmetic envelope and runs away under a median one, because the oscillation of a weak, smooth term about a median envelope is not well conditioned.  ⇒ That definition inherits the envelope ambiguity through its OWN conditioning, so it is not used   (arithmetic |delta| <= 0.0100; median reaches +1.342)
+
+⛔ ⓶ THE CONTRIBUTION, BY ONE-AT-A-TIME SWAP
+
+    mean    excess  +0.0046   +0.0081   +0.0077   +0.0071   +0.0107   +0.0075   +0.0072   fraction     +1%     -12%      +5%     +12%     +11%     +26%     +17%
+    median  excess  +0.0116   +0.0082   +0.0029   +0.0090   +0.0130   +0.0100   +0.0083   fraction    +12%     -20%     -13%     +32%     +33%     +34%     +48%
+  [PASS] ⛭⛭ THE SWAP NEEDS NO EQUIVALENT-s STEP, which is why it replaces the failed definition: the arm's four Doppler-containing pairs are replaced by the control's, envelope-scaled, on the arm's own q grid, and the share is a ratio of contrast differences   (the four Doppler-containing pairs are exactly sw*dp, dp*dp, dp*isw, dp*pol)
+  [PASS] ⛔ AND THE CONTRIBUTION IS A MINORITY SHARE, ON BOTH ENVELOPES: well under half of the excess at every band on the arithmetic envelope and under half on the median one.  ⇒ THE CANDIDATE IS NOT THE CARRIER   (arithmetic peaks at +26%, median at +48%)
+  [PASS] and it GROWS with q and is SIGN-INDEFINITE at the bottom -- negative at q = 1.90 on both envelopes -- so it cannot be told from zero at the bands where the excess's own structure is   (band 2 -12% and -20%; band 7 +17% and +48%)
+  [PASS] ⛭ AND IT LANDS BETWEEN THE TWO WRONG READINGS, which said -13 and +188 per cent -- the outcome the order told this seat to table first -- AND IT DOES NOT SETTLE NOTHING: a minority share is neither of them, and neither wrong reading said it   (the swap's share spans -12% to +26% against -13% and +94..188%)
+  [PASS] ⌗ and cc66.55's split is confirmed rather than assumed: the coupling's SIGN is the same on both envelopes while the FRACTION moves by about a factor of two   (the median-envelope share is 2.7x the arithmetic one)
+
+⛭⛭⛭ ⓷ THE PATTERN IN THE FOUR MISMATCHES
+
+    the excess    +0.0215   +0.0574   +0.0519   +0.0606   +0.0748   +0.0659   +0.0762
+  [PASS] ⛭⛭⛭ THE EXCESS HAS ONE DOMINANT FEATURE AND IT IS NOT A TREND: band 1 is about a third of the mean of the rest and sits nearly five scatters below it   (band 1 is 0.33 of the bands 2-7 mean, 4.9 scatters below)
+  [PASS] and above band 1 a CONSTANT already fits: a line adds a mild slope and only halves the residual, so bands 2-7 carry very little structure to distinguish a flat candidate from a rising one.  ⇒ ALL FOUR MISMATCHES WERE JUDGED THERE, which is the reason they share -- the sector has been spending its discriminating power where the excess has least structure, because the part that has the structure is the band cc66.54 showed it cannot measure a candidate in   (constant leaves 0.0088 on a mean of 0.0645; a line leaves 0.0049)
+  [PASS] ⛔ THE PRE-REGISTRATION TABLES THE FAILURE MODES AHEAD OF THE OUTCOMES, with 'settles nothing' among them as the order required, and it dates the failed first construction as failed   (15 tabled rows, failure modes first)
+
+====================================================================================================
+GATES: ALL PASS

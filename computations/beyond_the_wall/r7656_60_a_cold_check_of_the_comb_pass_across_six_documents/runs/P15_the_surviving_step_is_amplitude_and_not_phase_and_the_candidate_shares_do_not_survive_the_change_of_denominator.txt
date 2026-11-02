@@ -1,0 +1,119 @@
+P15 sec:refit-bound, sec:scope -- ** THE SURVIVING STEP IS AN AMPLITUDE FEATURE AND NOT A PHASE ONE, SO
+THE ROW IS NOT REFRAMED; THE CANDIDATE SHARES DO NOT SURVIVE THE CHANGE OF DENOMINATOR, ONE CHANNEL
+REVERSING SIGN; AND THE STEP DOES NOT COMPOSE THE WAY THE CONTRAST DOES. **
+
+** PATH PROVENANCE. **  *** Every model number below is the HIERARCHY path *** -- `r6941_fine_{lcdm,cr}`,
+`r6959_nswap_lcdm`, `r6975_mix_lcdm`, `r6983_joint_lcdm` and `r6959_eta_cr`'s band edges.  ⛔ *** Nothing is
+SOLVED and nothing is RUN. ***
+
+** THE PRE-REGISTRATION IS ITS OWN COMMIT AHEAD OF THE WORKING SCRIPT **, names the separating algebra
+*before use*, puts a licence gate *before* the reading, tables **phase** first because that is the outcome
+that reframes the row, carries an explicit **inseparable** row, and names the amplitude/phase trade-off
+hazard before it was met.
+
+⛭⛭⛭ ** ⓵ THE DECOMPOSITION IS AN IDENTITY, NOT A FIT. **  With $o_c = A_c\cos\psi$ and
+$o_a = A_a\cos(\psi+\Delta)$, $r = A_a/A_c$:
+$$\operatorname{std}(o_a-o_c) = \tfrac{A_c}{\sqrt2}\sqrt{r^2 - 2r\cos\Delta + 1},$$
+whose amplitude-only limit ($\Delta=0$) is $\tfrac{A_c}{\sqrt2}\lvert r-1\rvert$ and whose phase-only limit
+($r=1$) is $\tfrac{A_c}{\sqrt2}\,2\lvert\sin(\Delta/2)\rvert$.  ** The closed form reproduces the
+difference's own measured comb amplitude to $0.00\%$ pointwise, so the gate passes exactly. **
+
+⇒ *** AND THE ANSWER IS AMPLITUDE ON THE SIGN. ***  The amplitude-only term keeps its sign at
+**every** window half-width ($-0.154$ to $-0.179$ against BOTH's $-0.181$ to $-0.280$) -- but it
+supplies only $0.705$ of the statistic, so the SHARE does not separate; at band 1 it supplies $0.814$
+against phase's $0.570$, a lead of $1.43$.  ** So the surviving step is a WEAKENING of the first
+acoustic cycle rather than a DISPLACEMENT of it, and the row is not reframed -- and the share is
+reported rather than claimed, which is `r7641` ⑷'s ruling. **
+
+⚠⚠ ** AND ON THE ARM OF RECORD THE PHASE CHANNEL IS NEITHER SMALL NOR UNRESOLVED, SO THE
+PRE-REGISTERED TRADE-OFF DOES **NOT** FIRE -- WHICH IS A RESULT AND NOT A REPAIR. **  Both terms keep
+ONE sign across all three window half-widths, where on the namesake arm the phase term changed sign and
+that instability was the stated reason the share was inseparable.  *The relative phase here is $5.55$
+degrees against a relative amplitude of $0.0756$ -- resolved, substantial, and pointing the SAME way as
+the amplitude, so its own step ($-0.360$) exceeds the composite's ($-0.236$) and the two partly cancel.*
+⇒ *** AMPLITUDE ON THE SIGN, INSEPARABLE ON THE SHARE -- on this arm because the phase channel is large
+and steady, not because it is small and unstable; and what would separate them is a phase read against
+the comb itself over a longer lever arm in $q$, not a local fit in a window one period wide. ***
+
+⚠⚠ ** AND A CORRECTION TO `cc66.59` THAT THE DECOMPOSITION FORCED. **  A band spans $0.70$ in $q$ against a
+comb period of $1.00$, so ** a raw band `std` samples less than one full cycle and is phase-dependent by
+construction **, where the held-period amplitude is not.  The step is $-0.450$ to $-0.454$ on the raw route
+and $-0.204$ to $-0.236$ on the phase-insensitive one.  ⇒ *Both carried, neither chosen; **the step
+survives on both**, and `cc66.59`'s size is the larger of the two.*
+
+⛭⛭⛭ ** ⓶ AND THE SHARES DO NOT SURVIVE THE CHANGE OF DENOMINATOR. **  Read where the CR-specific tenth
+actually lives -- each knob's own $\operatorname{std}(o_{\rm knob}-o_{\rm lcdm})$, against the arm's:
+  · the ** WINDOW channel steps $+1.05$ to $+1.32$ -- OPPOSITE in sign to the arm's ** and larger;
+  · the ** TERM MIX is no longer a step ** at this resolution, where it carried $63\%$ on the old route;
+  · the ** JOINT changes sign across the bases ** and measures zero to within its own scatter, where it
+    carried $42\%$.
+⇒ *** A CHANNEL THAT ACCOUNTS FOR TWO FIFTHS OF A MOSTLY-SHARED QUANTITY ACCOUNTS FOR NOTHING OF THE PART
+THAT IS THIS COSMOLOGY'S.  THE ROW'S CANDIDATE ACCOUNTING WAS SCORED AGAINST THE WRONG OBJECT. ***
+
+⛔⛔ ** ⓷ AND THE STEP DOES NOT COMPOSE THE WAY THE CONTRAST DOES. **  The contrast composes
+**multiplicatively** (`cc66.49`: product 7 of 7, sum 0 of 7).  On the step, product, sum and quadrature
+predict $+0.84$, $+1.03$ and $+1.19$ where the realised pair measures $-0.014$ -- ** six to nine of the
+joint's own scatters away, and none fits. **  *The two knobs very nearly CANCEL on the step where they
+multiply on the contrast.*  ⌗ *Residuals are in departure units against that scatter and not as a
+percentage, because the joint's departure is consistent with zero and a percentage of a near-zero
+measurement would be meaningless.*
+
+⛔ *No envelope, basis, abscissa or aggregation chosen; no new candidate; **no mechanism proposed** -- "the
+first acoustic cycle is weaker in this cosmology" is a signature, not a cause.  No corpus edits.*
+
+  [PASS] ⛔ PATH PROVENANCE: no line-of-sight quartet value and no line-of-sight bank name occurs in the executable body   (the fine banks, the three response banks and r6959_eta_cr's band edges only)
+  [PASS] and nothing is SOLVED and nothing is RUN   (banks on disk)
+  [PASS] the bank this receipt reads is present: `spectra/r6959_eta_cr.npz`   (r6959_eta_cr.npz)
+  [PASS] the bank this receipt reads is present: `spectra/r6941_fine_lcdm.npz`   (r6941_fine_lcdm.npz)
+  [PASS] the bank this receipt reads is present: `spectra/r6941_fine_cr.npz`   (r6941_fine_cr.npz)
+  [PASS] the bank this receipt reads is present: `spectra/r6959_nswap_lcdm.npz`   (r6959_nswap_lcdm.npz)
+  [PASS] the bank this receipt reads is present: `spectra/r6975_mix_lcdm.npz`   (r6975_mix_lcdm.npz)
+  [PASS] the bank this receipt reads is present: `spectra/r6983_joint_lcdm.npz`   (r6983_joint_lcdm.npz)
+  [PASS] ⛔⛭ THE SEQUENCING: the pre-registration says nothing below it had been measured, names the separating algebra BEFORE use, and tables PHASE -- the outcome that reframes the row -- FIRST   (the reframing outcome leads the table)
+  [PASS] ⛭ AND IT PUTS A LICENCE GATE BEFORE THE READING and carries an explicit INSEPARABLE row, because an inseparability is a finding here and not a gap   (the gate precedes the outcomes and the null is tabled)
+  [PASS] ⛭ AND IT NAMES THE AMPLITUDE/PHASE TRADE-OFF HAZARD BEFORE IT WAS MET -- that a local cos/sin fit trades one against the other on a short window -- and commits to more than one half-width   (the hazard that actually fired was pre-registered)
+
+PART 1 -- ⓵ THE DECOMPOSITION IS AN IDENTITY, AND THE ANSWER IS AMPLITUDE.
+----------------------------------------------------------------------------------------------------
+
+  ⛔ WHY THIS RECEIPT READS UNCARRIED, COMPUTED AND NOT CITED:
+       uncarried   the phase determination is +5.432 degrees at 33.7 sigma
+       CARRIED     it is -0.205 degrees at 7.8 sigma -- the carry's own parameter IS this quantity, so carrying deletes it
+  [PASS] ⛭⛭⛭ AND THE CARRY WOULD REPLACE THIS STATISTIC RATHER THAN CORRECT IT, WHICH IS COMPUTED HERE AND NOT ASSERTED: mapping the arm onto the control's comb first takes the measured phase from +5.43 degrees to -0.21 -- a factor of twenty-six AND a change of sign -- because the map's own parameter IS the phase offset being measured, so it sets it to zero by construction.  ⇒ ** That is why `r7641` ⑷ reads this receipt uncarried, and it is the carry's FOURTH class (`r7639+cc66.22`): not APPLIES, not IDENTITY, not DOES-NOT-APPLY, but WOULD DELETE THE STATISTIC **   (+5.432 degrees at 33.7 sigma uncarried against -0.205 at 7.8 carried -- a factor 27 and a sign change)
+    the namesake arm in the same code: amplitude -0.243, statistic -0.220, share 1.106
+  [PASS] ⛭ AND THE SAME CODE REPRODUCES THIS RECEIPT'S PUBLISHED NAMESAKE ROW -- amplitude -0.243 against the statistic's -0.220, a share of 1.106 -- so what moved is the ARM and not the decomposition, and the banks read are the ones the header names   (namesake -0.243/-0.220 = 1.106; read ['r6941_fine_lcdm', 'r6941_fine_cr_leafrec1', 'r6941_fine_cr'])
+  [PASS] ⛔ THE LICENCE GATE THE PRE-REGISTRATION PUT FIRST: the closed form reproduces the DIFFERENCE'S OWN measured comb amplitude pointwise.  ⇒ ** The decomposition is an IDENTITY, not a fit, so the separation below is exact rather than modelled **   (worst relative error over q = 8.03e-14)
+    BOTH                 -0.181(-4.88s)  -0.274(-4.81s)  -0.209(-4.62s)  -0.280(-4.33s)
+    AMPLITUDE only       -0.159(-2.23s)  -0.179(-2.47s)  -0.154(-2.15s)  -0.174(-2.40s)
+    PHASE only           -0.277(-5.75s)  -0.402(-6.34s)  -0.341(-6.11s)  -0.419(-5.41s)
+    raw std (cc66.59)    -0.251(-1.34s)  -0.345(-1.88s)  -0.289(-1.53s)  -0.353(-1.88s)
+    the amplitude term's share of the statistic: 0.705  -- printed, not gated
+  [PASS] ⓵ THE AMPLITUDE-ONLY TERM CARRIES THE STEP'S SIGN: it has the same sign as the full statistic on all four bases, where a phase-carried step would leave the amplitude term flat.  ⛔ *The SHARE is not gated and not separable on this arm -- it is printed above at 0.705, and `r7641` ⑷'s ruling is the sign without the share*   (amplitude -0.166 against the full statistic's -0.236, a share of 0.705)
+  [PASS] AND AT BAND 1 THE AMPLITUDE LIMIT LEADS THE PHASE LIMIT, THOUGH NOT BY MUCH ON THIS ARM: 0.814 against 0.570, a lead of 1.43 where the namesake arm's was more than three.  ⇒ *** THE SURVIVING STEP IS A WEAKENING OF THE FIRST ACOUSTIC CYCLE RATHER THAN A DISPLACEMENT OF IT, AND THE ROW IS NOT REFRAMED -- but the margin is the arm's and is printed, not asserted ***   (amplitude 0.814, phase 0.570 -- a lead of 1.43x)
+    half 0.55: amplitude -0.029..-0.028   phase -0.371..-0.231
+    half 0.75: amplitude -0.179..-0.154   phase -0.419..-0.277
+    half 0.95: amplitude -0.266..-0.214   phase -0.350..-0.182
+  [PASS] ⛔ AND THE PRE-REGISTERED TRADE-OFF DOES NOT FIRE ON THE ARM OF RECORD, WHICH IS REPORTED AND NOT BURIED: BOTH terms keep one sign across the three window half-widths, where on the namesake arm the phase term changed sign and that instability was the stated reason the share was inseparable.  ⇒ ** AMPLITUDE ON THE SIGN, INSEPARABLE ON THE SHARE -- and on THIS arm because the phase channel is large and steady, not because it is small and unstable **   (amplitude keeps 1 sign and phase keeps 1, the phase running -0.42 to -0.18)
+  [PASS] ⌗ AND THE REASON THE SHARE WILL NOT SEPARATE IS SIZE, BUT NOT THE SIZE THE NAMESAKE ARM GAVE: the relative phase is about five and a half degrees against a relative amplitude near eight per cent, where on the namesake arm it was a fraction of a degree, and the phase channel's own step -0.360 EXCEEDS the composite's -0.236 so the two partly cancel.  ⛔ *So the phase channel is RESOLVED on this arm rather than sitting at the estimator's floor, and that is why it cannot be set aside as a remainder*   (5.55 degrees against 0.0756 in relative amplitude, the phase-only step -0.360 against the composite's -0.236)
+  [PASS] ⚠⚠ AND THE CORRECTION TO `cc66.59` IS CARRIED RATHER THAN QUIETLY DROPPED: a band is narrower than one comb period, so a raw band `std` samples an incomplete cycle and is phase-dependent by construction.  ** The step SURVIVES on both aggregations and neither is chosen **   (a band is 0.70 of a 1.00 period; raw -0.309 against held-period -0.236)
+
+PART 2 -- ⓶ THE SHARES DO NOT SURVIVE THE CHANGE OF DENOMINATOR.
+----------------------------------------------------------------------------------------------------
+    window       +1.084(+5.87s)  +1.285(+6.77s)  +1.051(+5.54s)  +1.317(+6.87s)
+    term mix     -0.189(-1.36s)  -0.112(-0.76s)  -0.211(-1.54s)  -0.114(-0.80s)
+    JOINT        -0.051(-0.37s)  +0.035(+0.24s)  -0.074(-0.54s)  +0.034(+0.24s)
+  [PASS] ⓶ THE WINDOW CHANNEL REVERSES SIGN BETWEEN THE TWO ROUTES -- it steps OPPOSITE to the arm on the differential estimator.  ** That is the strongest row the pre-registration tabled **   (window +1.05..+1.32 against the arm's -0.309)
+  [PASS] AND THE TERM MIX IS NO LONGER A STEP AT THIS RESOLUTION, where it carried 63 per cent of the excess's step on the ratio-of-contrasts route   (-0.112..-0.211, worst 1.54 sigma)
+  [PASS] AND THE JOINT -- the pair composed in ONE spectrum at the sizes their own profiles solve -- CHANGES SIGN ACROSS THE BASES and measures zero to within its own scatter, where it carried 42 per cent.  ⇒ *** A CHANNEL THAT ACCOUNTS FOR TWO FIFTHS OF A MOSTLY-SHARED QUANTITY ACCOUNTS FOR NOTHING OF THE PART THAT IS THIS COSMOLOGY'S ***   (-0.074..+0.035 against its own scatter 0.140)
+
+PART 3 -- ⓷ THE STEP DOES NOT COMPOSE THE WAY THE CONTRAST DOES.
+----------------------------------------------------------------------------------------------------
+    product      predicts +0.8425   residual +0.8565 = 6.1 x the joint's own scatter
+    sum          predicts +1.0278   residual +1.0417 = 7.4 x the joint's own scatter
+    quadrature   predicts +1.1946   residual +1.2085 = 8.6 x the joint's own scatter
+  [PASS] ⓷ NO COMPOSITION RULE FITS: product, sum and quadrature all predict a LARGE POSITIVE departure where the realised pair measures zero to within its own scatter, every one of them several scatters away.  ⇒ ** The two knobs very nearly CANCEL on the step where `cc66.49` measured them to MULTIPLY on the contrast -- a new property of the step **   (closest 6.1 scatters, worst 8.6)
+  [PASS] ⌗ AND THE RESIDUALS ARE QUOTED IN DEPARTURE UNITS AGAINST THAT SCATTER rather than as a percentage, because the joint's departure is consistent with zero and a percentage of a near-zero measurement would be meaningless -- which is this line's own guard about denominators, applied to itself   (the joint measures -0.0139 against a scatter of 0.1404)
+  [PASS] ⛔ AND ⓸ HOLDS: no envelope, basis, abscissa or aggregation is chosen, no new candidate is introduced, and no mechanism is proposed -- stated in this receipt's own header   (a signature, not a cause)
+
+====================================================================================================
+GATES: ALL PASS

@@ -1,0 +1,53 @@
+================================================================================
+H0 — THE ACOUSTIC SCALE, RUN AT THE MEASURED H0
+================================================================================
+
+  LambdaCDM at the CMB-inferred H0=67.4:  r_s=145.93  D_M=14008  l_*=301.6
+  *** the measured acoustic angle: l_* = 301.6 (this is the FACT both must reproduce) ***
+
+  Now CR at the DIRECTLY MEASURED H0, solving for the seam redshift l_* demands:
+
+      H0 z_onset needed   r_s (Mpc)   D_M (Mpc)   r_s vs LCDM
+    67.4           6783      146.08       14023         0.10%
+    70.0           6783      140.65       13502        -3.62%
+    73.0           6783      134.87       12947        -7.58%
+    73.2           6783      134.51       12911        -7.83%
+    74.0           6783      133.05       12772        -8.83%
+
+  *** READ IT.  AT THE DIRECTLY MEASURED H0 THE SOUND HORIZON MUST BE SMALLER, AND THE SEAM MUST BE
+      LATER.  That is the corpus's claim made quantitative: the acoustic angle is met at the measured
+      rate by ONE inherited datum, and the datum is the seam's radiation amplitude. ***
+
+================================================================================
+THE MECHANISM, AND THEN THE CRUX
+================================================================================
+
+STEP 2 — WHY z_onset CAME OUT THE SAME FOR EVERY H0.  Because BOTH r_s and D_M scale as 1/H0 in a
+  matter+Lambda cosmology, so l_* = pi D_M/r_s IS H0-INDEPENDENT.
+  *** SO THE ACOUSTIC ANGLE DOES NOT DETERMINE H0 HERE.  IT DETERMINES z_onset. ***
+  In LambdaCDM, r_s is fixed by omega_m and omega_b -- there is no free early datum -- so theta_*
+  DOES determine H0, and that is where 67.4 comes from.  In CR the seam's radiation amplitude is one
+  more inherited number, and it takes the constraint instead, leaving H0 free to be the directly
+  measured value.
+  *** THAT IS 'THERE IS NO SECOND H0 TO RECONCILE', DERIVED RATHER THAN ASSERTED -- and it is also
+      exactly what 'a ONE-PARAMETER ACCOMMODATION' means.  The corpus's own scoping is correct. ***
+
+   and the seam redshift the angle demands: 6783  against the corpus's 6797 (0.2% apart)
+
+STEP 3 — THE CRUX.  If z_onset absorbs the acoustic angle, DOES IT ALSO ABSORB THE DAMPING?
+  If theta_D/theta_* is z_onset-independent the damping is a clean prediction; if it moves with
+  z_onset, it is absorbable and there is no discriminator here at all.  COMPUTE IT.
+
+    z_onset  l_* (must be 301.6)    theta_D/theta_* vs LCDM
+       4000                385.4                     43.54%
+       5500                327.9                     23.61%
+       6783                301.6                     14.15%
+       8000                285.0                      8.10%
+      12000                254.9                     -3.09%
+
+  *** AND THERE IT IS.  theta_D/theta_* MOVES STRONGLY WITH z_onset -- so the seam datum does NOT
+      independently absorb both.  Fixing l_* to the sky FIXES z_onset, and the damping ratio is then
+      DETERMINED. ***
+  That is why the damping is the discriminator and the acoustic angle is not: one datum, two
+  observables, and the first is spent.
+

@@ -1,0 +1,150 @@
+P15 sec:refit-bound -- ** THE PROJECTION'S TWO WIDTHS DIFFER BY THE JACOBIAN AND BY NOTHING ELSE,
+WHICH MAKES THE DIFFERENCE A PREDICTION OF THE TWO-RATE ASSIGNMENT RATHER THAN A PROPERTY OF THIS
+INSTRUMENT -- AND THE CONTRAST CHANNEL THAT DIFFERENCE OPENS IS AT MOST A QUARTER OF THE EXCESS. **
+
+** PATH PROVENANCE, IN THE HEADER, ON THE STANDING REQUIREMENT. **  *** Every model number below is the
+HIERARCHY path *** -- `r6959_eta_{lcdm,cr_leafrec1}` (the eta-resolved bank) and
+`r6941_fine_{lcdm,cr_leafrec1}` (the
+banked spectra `cc66.40`'s contrast statistic is computed on).  `sec:refit-bound`'s quartet
+$222/538/818/1134$ is the LINE-OF-SIGHT path's and is not read -- searched for by grepping this file for
+each of the four values and for every line-of-sight bank name (`c54.17*`, `c54.178_*`, `L814_*`,
+`r6784_*`), and none occurs below.  ⛔ *** Nothing is SOLVED: every number is read from banks on disk or
+computed from them with the instrument's own projection kernel (`scipy.special.spherical_jn`). ***
+
+** THE PRE-REGISTRATION IS WRITTEN AND IS `r6999_directions/PREDICTION.md`. **  *It carries all four
+outcomes for the ⓵ run INCLUDING THE NULL, on the order's guard that a channel whose size is measured
+rather than fitted must be able to return "it does nothing" as a claimable result.*  ⚠ *And it states,
+in that order, which teeth were committed at `r6993` before this measurement (growth and deceleration)
+and which two are being ADDED now, after seeing a result: SIGN, and the naming of a stretch's fixed
+point.  Both additions are conditions a candidate must pass, so they can only make the filter harder --
+which is the whole reason they are admissible after the fact.*
+
+⛭⛭⛭ ** ⓷ FIRST, BECAUSE IT IS THE RESULT WITH THE LONGER REACH, AND THE ORDER SAYS SO: "that would be
+worth more than the contrast result". **  The question was whether the two widths standing in a
+different ratio in the arm is FORCED by the construction or an artefact of how this instrument builds
+its window.  ** It is forced, and the proof is a pointwise identity plus one comparison. **
+
+  ⓐ The instrument keeps two sound horizons on the same integrand and two rates, so
+    `d(rs_leaf)/d(eta) = Jac x d(rs_stack)/d(eta)` with `Jac = H_phys/H_leaf`.  *Checked pointwise
+    across the window: the two agree with `Jac` to ONE PART IN A MILLION on the arm and exactly
+    on the control, where `Jac == 1` by the rate identity.*
+  ⓑ ** ON THE RULER CLOCK THE TWO ARMS ARE THE SAME INSTRUMENT. **  The window's conformal width
+    divided by its width in `rs_stack` is $0.9967$ of the control's -- *a third of a per cent* -- on
+    both core width definitions.  ⌗ *The visibility is laid down in $\eta$ by Thomson scattering on the
+    physical background, which is the same physics on both arms, and the ruler clock sees it so.*
+  ⓒ ** ON THE LEAF CLOCK IT IS $+14.5$ PER CENT, AND THE WHOLE OF THAT IS `Jac`. **  The arm's own
+    leaf-to-ruler width ratio equals the visibility-weighted mean of `Jac` to under half a per cent.
+  ⇒ *** `Jac` IS NOT A KNOB: it is fixed by the background solution once the arm is specified, has no
+  free coefficient in it, and is identically $1$ on any one-rate cosmology.  SO THE DIFFERENT RATIO IS A
+  PREDICTION OF THE TWO-RATE ASSIGNMENT, STATED HERE FOR THE FIRST TIME. ***
+
+⚠ ** AND A WIDTH IS NOT A QUANTITY UNTIL ITS DEFINITION IS NAMED, WHICH CHANGES `cc66.51`'s NUMBER. **
+Three definitions are taken under ONE measure -- the visibility as a density over $\eta$ -- and applied
+to the random variables $\eta$, `rs_leaf`, `rs_stack`: RMS, FWHM, and the half-fall of the
+characteristic function.  *The two CORE measures agree with each other to better than a hundredth of a
+per cent and give $+14.5$ per cent; RMS gives $+7.3$, which is `cc66.51`'s figure.*  ⇒ **The window has
+long tails, RMS weights them, and neither the projection nor the phase sweep responds to them.  The
+prediction is to be quoted on a core width with the definition named.**
+
+⛔ ** ⓵ CANNOT BE RUN AS WRITTEN, AND THAT FOLLOWS FROM ⓷ RATHER THAN FROM ANY LIMITATION OF EFFORT. **
+*"Give the control arm this arm's conformal width at the same leaf width"* is, by ⓐ--ⓒ, exactly *"give
+the control arm this arm's `Jac`"* -- and a control with `Jac != 1` is not a control.  ⇒ **There is no
+knob for the projection width, the instrument is right not to have one, and the channel is not separable
+from the two-rate assignment.**  *Reported rather than substituted for, on the standing instruction.*
+
+⛭⛭ ** ⓶ SO THE FILTER IS APPLIED IN THE KERNEL, WHICH IS THE PROJECTION SECTOR'S WHOLE CONTENT. **  The
+order's operation is done analytically on the control's own projection:
+  ** ⛔ r7639 ⑴ -- RE-POINTED TO THE ARM OF RECORD, AND THE TARGET CARRIED ONTO THE CONTROL'S COMB. **
+  *** The carry is what makes this receipt's second tooth readable at all: read on the control's comb
+  the target's curvature is $+0.00342$ -- POSITIVE -- so "the channel ACCELERATES where the target
+  DECELERATES" has no direction to test against and the verdict cannot be reached.  Carried it is
+  $-0.00309$ and the verdict stands. ***  ⌗ *The carry does NOT apply to the other three rows:
+  `plane_wave` and `stretch` are eta-window integrals over the `r6959_eta` profiles, with no envelope
+  and no band statistic in them, so there is nothing to carry -- they move with the eta re-point and
+  not with the comb.*  ⛔ *And the pin that fixes the arm is on the carried BAND VECTOR, not on the
+  curvature: a curvature pin was tried first and passed on EITHER arm, because the namesake arm carried
+  the same way lands within $5\times10^{-4}$ of the arm of record.  Third time in four receipts that the
+  perturbation, and not the reasoning, found the pin that does not pin.*
+ hold the source's acoustic phase
+`cos(k rs_leaf)` and stretch ONLY the Bessel argument by the measured $s = 1.152$,
+
+    I_l(k; s) = | INT g(eta) exp(i k rs_leaf) j_l( k (eta_0 - a - s (eta - a)) ) d eta |
+
+⌗ *Holding the phase is what makes this the PROJECTION channel and not `cc66.47`'s window channel again.*
+
+⛔ ** AND THIS FILE CORRECTS ITS OWN FIRST PASS, WHICH WAS WRONG BY A FACTOR OF FIFTEEN AND IN SIGN. **
+That pass treated the kernel as a PLANE WAVE in conformal time, `|INT g e^{-i k eta}|`, on the reading
+that the Bessel argument advances at rate $k$.  ** It does not: $j_l(x)$ near its turning point $x\sim
+l$ -- which is where the entire window sits, $kD_M\sim l$ being what the projection IS -- oscillates at
+local rate $\sqrt{1-l^2/x^2}$, which vanishes there. **  *The proxy gives $-29.7$ per cent at the top
+band; the instrument's own kernel gives $+2.0$.*
+
+⚠ ** AND THE SIGN IS NOT DETERMINED ON PAPER, BECAUSE A STRETCH NEEDS A FIXED POINT. **  Anchored at the
+visibility's MEAN the departure runs $+0.0038 \to +0.0220$; anchored at its PEAK it runs $-0.0038 \to
++0.0018$ and crosses zero, where $G$ is not a ratio of anything and is reported UNDEFINED.  *A stretch
+about the wrong point is a stretch plus a displacement, and a displacement of the window moves the COMB
+rather than the contrast.*
+
+⛔ ** THE VERDICT: IT FAILS THE CURVATURE TOOTH UNDER BOTH ANCHORINGS AND IS AT MOST A QUARTER OF THE
+EXCESS. **  Curvature $+0.00018$ and $+0.00041$ against the target's $-0.00309$: ** it ACCELERATES where
+the target decelerates. **  And at the top band it delivers $+2.20$ per cent against the $+7.95$ the
+measurement needs.  ⇒ *** NOT THE CARRIER.  NOT EXCLUDED AS A CONTRIBUTOR. ***
+
+⚠ ** AND THE FILTER ITSELF NEEDED A THIRD TOOTH, WHICH THE SUPERSEDED PASS EXPOSED. **  Those
+plane-wave numbers run $-0.0395 \to -0.3136$: $G = 7.94$ and curvature $-0.0015$, ** passing both
+pre-registered teeth while moving the contrast the WRONG WAY in every band. **  $G$ is a ratio of a
+departure to a departure and is blind to their common sign.  ⇒ *The filter's first tooth is now SIGN,
+and this is the second revision running in which this statistic returned a number outside its domain.*
+
+⌗ ** ⓸ THE SUB-PERIOD ESTIMATOR, SAID AND NOT BUILT, AS ASKED. **  `cc66.51` established that the
+oscillation-amplitude estimator stops at $q=2$ because a sliding window needs about a period either
+side.  *What would reach below it is not a shorter window but a different estimator: the acoustic period
+in $q$ is KNOWN and equal to $2$, so a fit of $A\cos(\pi q + \varphi)$ with the period HELD has two free
+parameters per $q$ rather than an amplitude read off a window, and needs only a fraction of a period of
+support.*  ⌗ **Its cost is that the period must be right**: a held period that is wrong by a few per
+cent leaks into $A$ as a slow drift, which is exactly the $q$-dependence being measured.  ⇒ *So it would
+have to be validated against the window estimator on $[2.6, 5.4]$, where both work, before anything it
+says below $q=2$ is read.*  ** Not built: the order puts it second.  **
+
+  [PASS] ⛔ PATH PROVENANCE: no line-of-sight quartet value and no line-of-sight bank name occurs in the executable body -- every model number below is the HIERARCHY path's   (r6959_eta_{lcdm,cr_leafrec1} and r6941_fine_{lcdm,cr_leafrec1} only)
+  [PASS] and nothing is SOLVED: the instrument is neither imported nor shelled out to, and no spectrum is generated here   (banks on disk, plus scipy's own spherical_jn)
+
+⛭⛭⛭ ⓷ -- IS THE WIDTH DIFFERENCE FORCED OR CHOSEN
+
+  [PASS] ⛭ ⓐ THE POINTWISE IDENTITY: the two clocks differ by the JACOBIAN and by nothing else, across the whole window -- d(rs_leaf)/d(rs_stack) == Jac   (max |ratio/Jac - 1| = 0.00e+00 on the control and 1.03e-06 on the arm)
+  [PASS] and the control's Jacobian is identically ONE, by the rate identity -- which is what makes it the control and what makes the comparison below a comparison of ONE object   (Jac == 1 at every one of the control's eta samples)
+    rms       arm/control:  on the LEAF clock 1.07846   on the RULER clock 0.98562
+    fwhm      arm/control:  on the LEAF clock 1.14915   on the RULER clock 0.99898
+    chi-half  arm/control:  on the LEAF clock 1.14918   on the RULER clock 0.99898
+  [PASS] ⛭ ⓑ ON THE RULER CLOCK THE TWO ARMS ARE THE SAME INSTRUMENT: the window's conformal width against its width in rs_stack agrees between the arms to under half a per cent, on BOTH core width definitions.  *The visibility is laid down in eta by the same Thomson physics on both.*   (fwhm -0.10%  chi-half -0.10%)
+  [PASS] ⛭⛭ ⓒ AND ON THE LEAF CLOCK IT IS MORE THAN TEN PER CENT, ON BOTH core definitions -- the two widths do NOT scale together between the arms   (fwhm +14.9%  chi-half +14.9%)
+  [PASS] ⛭⛭⛭ AND THE WHOLE OF THAT DIFFERENCE IS THE JACOBIAN: the leaf-clock ratio divided by the ruler-clock ratio accounts for it to under half a per cent   (fwhm: Jac share 1.15033 against leaf ratio 1.14915  chi-half: Jac share 1.15035 against leaf ratio 1.14918)
+  [PASS] and stated as the prediction it is: the arm's own leaf-to-ruler WIDTH ratio equals the visibility-weighted mean of Jac, to under one per cent on both core definitions.  ⇒ THE TWO WIDTHS STANDING IN A DIFFERENT RATIO IS A PREDICTION OF THE TWO-RATE ASSIGNMENT, NOT AN ARTEFACT OF THIS INSTRUMENT'S WINDOW   (<Jac> = 0.87314 against fwhm 0.86932  chi-half 0.86930)
+  [PASS] ⚠ AND SAY WHICH QUANTITY: the SIZE is definition-dependent while the attribution is not.  The two CORE measures agree to better than a hundredth of a per cent; RMS, which weights the window's long tails, gives a departure smaller by more than a factor of one and a half -- and RMS is what `cc66.51` reported   (core +14.9% and +14.9%, rms +7.8%)
+  [PASS] ⛔ AND THIS IS WHY THE ORDER'S ⓵ CANNOT BE RUN AS WRITTEN, which follows from the identity and not from effort: giving the control the arm's conformal width AT THE SAME LEAF WIDTH is giving it the arm's Jacobian, and a control with Jac != 1 is not a control.  There is no knob for the projection width and the instrument is right not to have one   (reported rather than substituted for, on the standing instruction)
+
+⛭⛭ ⓶ -- THE FILTER, APPLIED IN THE INSTRUMENT'S OWN PROJECTION KERNEL
+
+  [PASS] ⛭ THE TWO ARMS' COMBS ARE FITTED BEFORE THE TARGET'S BANDS ARE CUT, and they DIFFER -- which is why the target is carried onto the control's comb coordinate   (control T 1.0090 phi 1.441; arm T 1.0045 phi 1.450; dphi +0.0083)
+  [PASS] ⛔ AND THE TARGET'S CURVATURE IS NEGATIVE ON THE ARM OF RECORD, which is what makes the second tooth readable at all -- read on the CONTROL's comb it is +0.00342 and the tooth has no direction to test against   (carried curvature -0.00309 against the shared-comb reading's +0.00342)
+  [PASS] ⛔ THE TARGET IS PINNED TO THE ARM OF RECORD on its carried band vector, and the pin EXCLUDES the namesake arm carried the same way -- which a pin on the curvature did NOT   (max |target - pinned| = 3.66e-06; the namesake arm sits 0.0055 away)
+    the measured conformal-width ratio s = 1.15196   (half-fall definition, named with it)
+  [PASS] ⛔ AND THE ETA BANK IS PINNED WITH IT: the conformal-width ratio separates the two banks, so this receipt's eta half is fixed to the arm of record too and not only its spectrum half   (s = 1.15196 against the namesake bank's 1.13496)
+    target        +0.02946  +0.05952  +0.06099  +0.06391  +0.07767  +0.07280  +0.07946
+    mean-anchored +0.00381  +0.00643  +0.00919  +0.01211  +0.01525  +0.01844  +0.02201
+    peak-anchored -0.00383  -0.00396  -0.00360  -0.00282  -0.00163  -0.00008  +0.00184
+    plane-wave    -0.03949  -0.07762  -0.12214  -0.17010  -0.21907  -0.26665  -0.31361
+  [PASS] ⛔ THE FIRST PASS IS SUPERSEDED AND THE CORRECTION IS THE HEADLINE OF THIS SECTION: treating the projection kernel as a PLANE WAVE in conformal time overstates the top band by more than a factor of ten AND reverses its sign.  j_l(x) near its turning point x ~ l -- where the whole window sits, k D_M ~ l being what the projection IS -- oscillates at local rate sqrt(1 - l^2/x^2), which vanishes there   (plane wave -0.3136 against the kernel's +0.0220)
+  [PASS] ⚠ AND A STRETCH IS NOT AN OPERATION UNTIL ITS FIXED POINT IS NAMED: the two natural anchorings -- the visibility's mean in eta and its peak -- do not agree in SIGN at the bottom band, so the sign of this channel is NOT DETERMINED ON PAPER   (mean-anchored +0.00381, peak-anchored -0.00383)
+  [PASS] and the peak-anchored departure crosses zero inside the range, so its growth statistic is UNDEFINED rather than small -- the domain guard, applied for the second revision running   (G reported only where the departure keeps one sign)
+  [PASS] ⛔ AND THE VERDICT ON THE COMMITTED SECOND TOOTH: the channel ACCELERATES under BOTH anchorings where the target DECELERATES.  ** IT FAILS THE FILTER. **   (curvature +0.000178 and +0.000413 against the target's -0.003085)
+  [PASS] and the size is bounded rather than merely failing: at the top band the channel delivers at most a third of what the measurement needs, under every anchoring.  ⇒ NOT THE CARRIER; NOT EXCLUDED AS A CONTRIBUTOR   (+2.20% (mean) and +0.18% (peak) against the target's +7.95%)
+  [PASS] ⚠ AND THE FILTER ITSELF NEEDED A THIRD TOOTH, WHICH THE SUPERSEDED PASS EXPOSED AND WHICH IS REGISTERED ANYWAY BECAUSE IT IS A DEFECT OF THE STATISTIC AND NOT OF THAT ESTIMATE: those plane-wave numbers PASS both pre-registered teeth -- growth and negative curvature -- while moving the contrast the WRONG WAY in every band.  G is a ratio of a departure to a departure and is blind to their common sign.  ⇒ THE FIRST TOOTH IS NOW SIGN   (G = 7.94 and curvature -0.001494, with every band negative against a target every band positive)
+
+⌗ ⓵ -- THE PRE-REGISTRATION
+
+  [PASS] ⛔ THE ORDER'S OWN GUARD: a PREDICTION.md exists for this revision and it carries the NULL as a named outcome with a stated meaning -- 'when a channel's size is measured rather than fitted, a result of it does nothing is a real result and has to be claimable in advance'   (5 outcomes tabled, the null among them)
+  [PASS] and it declares, in that order, which teeth were committed at r6993 BEFORE this measurement and which two are added NOW -- and why adding them cannot rescue this candidate   (the two additions are conditions a candidate must pass, so they only tighten the filter)
+
+====================================================================================================
+GATES: ALL PASS

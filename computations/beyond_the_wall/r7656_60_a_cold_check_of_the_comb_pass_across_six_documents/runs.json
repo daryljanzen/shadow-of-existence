@@ -1,0 +1,802 @@
+[
+ {
+  "receipt": "C59_the_control_reproduces_camb_and_the_height_defect_was_k_truncation",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 1714.5,
+  "budget": 2100,
+  "chars": 10917
+ },
+ {
+  "receipt": "H0_acoustic_angle_and_seam",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 10.1,
+  "budget": 420,
+  "chars": 3159
+ },
+ {
+  "receipt": "P07_the_back_seam_is_the_laps_one_non_degenerate_horizon_and_its_surface_gravity_is_the_beads_own_acceleration_there",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 11.0,
+  "budget": 420,
+  "chars": 15223
+ },
+ {
+  "receipt": "P15_a_drive_clock_error_cannot_move_the_spacing_so_it_is_a_running_phase_but_its_direction_on_the_peak_plane_depends_on_which_pair_of_stretches_is_read_and_the_two_clocks_disagree_about_which_is_longer",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 451.6,
+  "budget": 900,
+  "chars": 17115
+ },
+ {
+  "receipt": "P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_the_visibility",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 1.6,
+  "budget": 420,
+  "chars": 20812
+ },
+ {
+  "receipt": "P15_all_three_projections_clear_the_instrument_noise_null_so_the_term_mixs_cost_is_combed_after_all",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 6.6,
+  "budget": 420,
+  "chars": 10738
+ },
+ {
+  "receipt": "P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 13.4,
+  "budget": 420,
+  "chars": 23464
+ },
+ {
+  "receipt": "P15_centring_removes_the_correlation_exactly_and_closes_the_route_anyway_because_the_decorrelated_parameter_is_not_the_acoustic_scale",
+  "state": "UNRUN",
+  "rc": null,
+  "seconds": 420.1,
+  "budget": 420,
+  "chars": 3233
+ },
+ {
+  "receipt": "P15_in_polarisation_the_fourth_acoustic_feature_is_located_more_tightly_than_in_temperature_and_the_two_skies_do_not_yet_agree_on_it",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 0.0,
+  "budget": 420,
+  "chars": 593
+ },
+ {
+  "receipt": "P15_no_statistic_this_construction_can_build_resolves_the_two_channels_and_the_phase_step_dies_on_a_matched_width_control",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 3.5,
+  "budget": 420,
+  "chars": 16320
+ },
+ {
+  "receipt": "P15_on_the_arm_of_record_the_fourth_acoustic_feature_is_the_controls_to_under_a_multipole_in_all_three_spectra",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 0.0,
+  "budget": 420,
+  "chars": 518
+ },
+ {
+  "receipt": "P15_the_133_bin_pair_is_computed_and_asserted_and_the_hardcoded_row_carried_the_other_arm",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 0.9,
+  "budget": 420,
+  "chars": 18042
+ },
+ {
+  "receipt": "P15_the_1p57_has_no_parameter_address_because_the_arms_tt_minimum_sits_on_its_own_bao_minimum_while_the_controls_pays_fifteen_in_chi2_to_leave_planck",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 6.9,
+  "budget": 420,
+  "chars": 22509
+ },
+ {
+  "receipt": "P15_the_acceptance_does_not_move_under_refinement_and_three_of_the_twelve_axes_could_not_have_moved_it",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 331.3,
+  "budget": 420,
+  "chars": 12738
+ },
+ {
+  "receipt": "P15_the_accounting_closes_but_cannot_attribute_because_the_share_is_the_cosine_of_a_phase_offset",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 0.5,
+  "budget": 420,
+  "chars": 9298
+ },
+ {
+  "receipt": "P15_the_acoustic_contrast_is_not_in_the_source_and_the_projection_makes_it_without_the_distance",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 14.5,
+  "budget": 420,
+  "chars": 35242
+ },
+ {
+  "receipt": "P15_the_angular_label_crosses_the_lift_untouched_and_the_amplitude_does_not_because_the_lift_is_purely_imaginary_conformal_time_so_what_it_adds_is_an_envelope_with_exactly_no_phase",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 34.8,
+  "budget": 420,
+  "chars": 22546
+ },
+ {
+  "receipt": "P15_the_anomalous_driving_belonged_to_the_pin_and_not_to_the_construction",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 1.1,
+  "budget": 420,
+  "chars": 6438
+ },
+ {
+  "receipt": "P15_the_arms_own_driving_pair_reproduces_the_banked_one_and_the_peak_plane_separates_the_loading_from_the_driving_but_not_the_driving_from_a_clock_error",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 0.2,
+  "budget": 420,
+  "chars": 12815
+ },
+ {
+  "receipt": "P15_the_band_one_departure_is_not_in_the_likelihoods_excess_and_all_three_channels_match_it_in_separating_power",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 0.6,
+  "budget": 420,
+  "chars": 12439
+ },
+ {
+  "receipt": "P15_the_band_rms_ratio_does_not_move_with_any_numerical_setting",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 0.3,
+  "budget": 420,
+  "chars": 566
+ },
+ {
+  "receipt": "P15_the_bank_already_existed_and_the_doppler_carries_a_growing_minority_of_the_excess",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 0.3,
+  "budget": 420,
+  "chars": 10239
+ },
+ {
+  "receipt": "P15_the_baryon_loading_moves_the_common_offset_OPPOSITE_to_the_full_baryon_direction_so_omega_b_was_never_a_contaminated_loading_lever_but_an_opposing_one",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 0.2,
+  "budget": 420,
+  "chars": 11378
+ },
+ {
+  "receipt": "P15_the_carrier_separation_on_L_p_is_the_combs_peak_count_not_the_carrier_and_the_closure_has_no_number_because_the_degeneracy_is_sampling_invariant",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 514.1,
+  "budget": 900,
+  "chars": 25314
+ },
+ {
+  "receipt": "P15_the_combs_resolution_is_four_multipoles_and_the_skys_own_value_lies_outside_the_family",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 1.5,
+  "budget": 420,
+  "chars": 30576
+ },
+ {
+  "receipt": "P15_the_contrast_excess_is_symmetric_about_the_envelope_and_the_troughs_are_where_the_sky_measures_it_best",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 22.9,
+  "budget": 420,
+  "chars": 26468
+ },
+ {
+  "receipt": "P15_the_control_entered_the_regime_and_the_arm_did_not_move",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 7.4,
+  "budget": 420,
+  "chars": 14595
+ },
+ {
+  "receipt": "P15_the_controls_base_log_is_banked_beside_the_grids_and_the_peak_heights_concur_with_the_three_rigidity_statistics",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 10.8,
+  "budget": 420,
+  "chars": 15771
+ },
+ {
+  "receipt": "P15_the_cross_term_is_not_the_channel_and_every_projected_term_carries_the_excess",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 1.1,
+  "budget": 420,
+  "chars": 25472
+ },
+ {
+  "receipt": "P15_the_crossing_spectrum_reproduces_on_a_second_instrument_and_the_172_is_the_radiation_free_ruler",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 0.7,
+  "budget": 420,
+  "chars": 24692
+ },
+ {
+  "receipt": "P15_the_de_tilted_peak_set_is_the_phase_observable_the_slope_was_not_and_it_separates_the_baryon_direction_from_a_tilt_by_twenty_but_the_driving_half_needs_its_own_pair",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 0.2,
+  "budget": 420,
+  "chars": 16756
+ },
+ {
+  "receipt": "P15_the_derived_diffusion_damping",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 0.9,
+  "budget": 420,
+  "chars": 6508
+ },
+ {
+  "receipt": "P15_the_excess_decelerates_and_nothing_measured_in_this_arm_carries_its_wavenumber_dependence",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 5.1,
+  "budget": 420,
+  "chars": 18863
+ },
+ {
+  "receipt": "P15_the_expansion_in_the_de_sitter_presentation_is_not_bounded_either_because_the_sphere_lives_at_zero_mass_and_the_observer_at_the_nariai_one_and_both_closed_kernels_are_excluded_by_the_comb",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 0.7,
+  "budget": 420,
+  "chars": 18062
+ },
+ {
+  "receipt": "P15_the_fit_has_the_controls_freedom_and_the_contrast_the_data_ask_for_lies_outside_every_direction_it_has",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 10.8,
+  "budget": 420,
+  "chars": 14293
+ },
+ {
+  "receipt": "P15_the_fitted_onset_is_the_wrong_clocks_artefact_because_the_stacking_ruler_keeps_a_square_root_memory_of_the_start_and_the_leaf_ruler_keeps_none",
+  "state": "RAN",
+  "rc": 1,
+  "seconds": 7.0,
+  "budget": 420,
+  "chars": 25941
+ },
+ {
+  "receipt": "P15_the_floor_is_a_distance_between_models_not_a_number_from_the_data",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 20.6,
+  "budget": 420,
+  "chars": 8775
+ },
+ {
+  "receipt": "P15_the_fourth_parameter_recovers_the_drift_the_gaps_show_but_the_spacing_and_the_drift_are_not_separable_so_the_data_half_still_does_not_happen",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 678.3,
+  "budget": 1500,
+  "chars": 12830
+ },
+ {
+  "receipt": "P15_the_free_streaming_knob_is_common_to_both_arms_and_the_switch_sweep_finds_no_further_shadow",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 15.2,
+  "budget": 420,
+  "chars": 65243
+ },
+ {
+  "receipt": "P15_the_full_range_lensed_comparison_is_the_unfavourable_one_and_the_control_is_nearly_camb",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 10.0,
+  "budget": 420,
+  "chars": 8664
+ },
+ {
+  "receipt": "P15_the_full_range_refit_holds_the_background_and_the_phase_residual_was_quantised",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 11.6,
+  "budget": 420,
+  "chars": 19877
+ },
+ {
+  "receipt": "P15_the_gradient_coupling_in_closed_form",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 0.6,
+  "budget": 420,
+  "chars": 7133
+ },
+ {
+  "receipt": "P15_the_harmonic_expansion_in_the_proper_frame_is_not_bounded_because_no_slicing_of_it_carries_both_the_discrete_source_and_the_projection_distance",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 2.7,
+  "budget": 420,
+  "chars": 26604
+ },
+ {
+  "receipt": "P15_the_height_target_was_below_the_resolution_of_its_own_statistic",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 1.5,
+  "budget": 420,
+  "chars": 12947
+ },
+ {
+  "receipt": "P15_the_held_period_estimator_reaches_below_the_floor_and_the_tooth_that_would_decide_cannot_be_applied",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 5.1,
+  "budget": 420,
+  "chars": 13260
+ },
+ {
+  "receipt": "P15_the_kernels_distance_is_the_observers_own_flat_slice_so_the_rate_rule_does_reach_it_and_the_disagreement_with_the_sky_is_real",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 0.6,
+  "budget": 420,
+  "chars": 15065
+ },
+ {
+  "receipt": "P15_the_kernels_phase_difference_between_the_arms_is_four_orders_below_the_residual_so_the_projection_is_cleared_and_a_sixth_of_the_scale_is_common_mode",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 19.3,
+  "budget": 420,
+  "chars": 14420
+ },
+ {
+  "receipt": "P15_the_laws_six_of_seven_is_five_at_the_quoted_floor_which_is_one_phases_and_with_the_instruments_own_error_divided_out_all_seven_hold",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 73.5,
+  "budget": 420,
+  "chars": 9258
+ },
+ {
+  "receipt": "P15_the_licensed_configuration_moves_neither_statistic_and_the_swing_was_read_above_where_it_converges",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 35.6,
+  "budget": 420,
+  "chars": 13993
+ },
+ {
+  "receipt": "P15_the_licensed_rebuild_leaves_all_three_rigidity_numbers_where_they_were_and_the_forbidden_one_puts_the_arm_on_the_controls_own_floor",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 11.1,
+  "budget": 420,
+  "chars": 11175
+ },
+ {
+  "receipt": "P15_the_likelihood_sees_the_step_and_separates_the_two_channels_so_the_demonstration_does_not_cover_it",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 0.6,
+  "budget": 420,
+  "chars": 11038
+ },
+ {
+  "receipt": "P15_the_line_of_sight_transfer",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 0.2,
+  "budget": 420,
+  "chars": 7047
+ },
+ {
+  "receipt": "P15_the_locator_is_good_to_three_hundredths_and_the_fourth_peaks_residual_is_the_controls_too",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 1.4,
+  "budget": 420,
+  "chars": 23585
+ },
+ {
+  "receipt": "P15_the_lowest_band_is_closed_by_the_fields_and_the_excess_deceleration_is_carried_by_it_alone",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 10.2,
+  "budget": 420,
+  "chars": 18132
+ },
+ {
+  "receipt": "P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 11.4,
+  "budget": 420,
+  "chars": 41871
+ },
+ {
+  "receipt": "P15_the_monopole_zero_point_is_not_the_channel_and_the_two_residuals_point_opposite_ways",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 11.1,
+  "budget": 420,
+  "chars": 34097
+ },
+ {
+  "receipt": "P15_the_no_fit_confrontation_is_three_per_bin_and_its_residual_carries_a_nine_sigma_modulation_at_the_combs_own_period_which_binning_at_that_period_cancels",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 11.8,
+  "budget": 420,
+  "chars": 11684
+ },
+ {
+  "receipt": "P15_the_null_harness_survives_its_one_assumption_except_for_the_misplaced_part_and_floors_a_phase_at_the_excess_but_not_at_the_spectrum",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 86.4,
+  "budget": 420,
+  "chars": 17589
+ },
+ {
+  "receipt": "P15_the_one_fitted_number_moves_the_scale_and_not_the_peak",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 884.8,
+  "budget": 1500,
+  "chars": 5239
+ },
+ {
+  "receipt": "P15_the_optical_depth_is_a_photon_path_observable_so_it_takes_the_stacking_rate_and_the_visibility_ruling_is_withdrawn",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 3.0,
+  "budget": 420,
+  "chars": 18435
+ },
+ {
+  "receipt": "P15_the_peak_plane_survives_the_merge_the_sky_lands_within_one_sigma_of_the_control_and_a_full_driving_unit_is_thirteen_but_half_the_draws_lose_the_fourth_peak",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 7.4,
+  "budget": 420,
+  "chars": 22303
+ },
+ {
+  "receipt": "P15_the_peak_statistic_cannot_be_pointed_at_the_observed_spectrum_because_a_local_maximum_finder_reads_twenty_one_maxima_where_the_model_has_five",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 7.2,
+  "budget": 420,
+  "chars": 9625
+ },
+ {
+  "receipt": "P15_the_period_difference_null_is_not_significant_because_the_control_has_no_measurable_period_and_the_offset_is_exactly_a_phase_drift_at_fixed_ell_A",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 31.0,
+  "budget": 420,
+  "chars": 17379
+ },
+ {
+  "receipt": "P15_the_phase_is_already_carried_into_the_projections_variable_and_the_two_statements_of_the_sound_horizon_agree_identically",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 8.0,
+  "budget": 420,
+  "chars": 8483
+ },
+ {
+  "receipt": "P15_the_phase_is_the_driving_and_the_undriven_arms_agree",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 2.9,
+  "budget": 420,
+  "chars": 8854
+ },
+ {
+  "receipt": "P15_the_phase_moves_with_the_datum_and_only_the_spacing_does_not",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 2.8,
+  "budget": 420,
+  "chars": 8998
+ },
+ {
+  "receipt": "P15_the_phase_slope_does_not_separate_the_loading_from_the_driving_because_a_primordial_tilt_moves_it_as_much_as_the_baryon_density_and_the_clean_lever_is_not_banked",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 3.0,
+  "budget": 420,
+  "chars": 20041
+ },
+ {
+  "receipt": "P15_the_phase_systematic_leaves_the_step_standing_and_carries_a_third_of_the_retention_slope_through_a_phase_drift_between_the_sources",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 129.0,
+  "budget": 420,
+  "chars": 12974
+ },
+ {
+  "receipt": "P15_the_photon_hierarchy_in_the_transfer",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 0.8,
+  "budget": 420,
+  "chars": 11321
+ },
+ {
+  "receipt": "P15_the_projection_read_recombination_at_the_wrong_conformal_time_and_one_clock_moves_it_72_per_cent",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 1.0,
+  "budget": 420,
+  "chars": 1045
+ },
+ {
+  "receipt": "P15_the_refit_leaves_the_background_where_the_distances_put_it_and_does_not_close_the_phase",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 18.7,
+  "budget": 420,
+  "chars": 13227
+ },
+ {
+  "receipt": "P15_the_residual_does_not_sit_at_ell_A_it_sits_four_per_cent_off_and_the_visibility_width_candidate_predicts_an_ell_dependence_the_ratio_does_not_have",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 0.3,
+  "budget": 420,
+  "chars": 17800
+ },
+ {
+  "receipt": "P15_the_resolution_table_eight_of_the_eleven_instruments_cannot_represent_the_comb_period_and_four_smallest_shares_are_honest_blanks",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 2.3,
+  "budget": 420,
+  "chars": 13897
+ },
+ {
+  "receipt": "P15_the_retention_is_the_combs_average_over_the_kernels_own_k_acceptance_and_the_law_has_no_fitted_coefficient",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 168.9,
+  "budget": 420,
+  "chars": 10525
+ },
+ {
+  "receipt": "P15_the_selection_does_not_truncate_so_the_thirteen_sigma_stands_at_twelve_point_nine_and_the_peak_that_goes_missing_is_the_third_not_the_fourth",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 26.0,
+  "budget": 420,
+  "chars": 17298
+ },
+ {
+  "receipt": "P15_the_shared_fraction_does_not_mean_what_i_said_and_the_peak_trough_pattern_is_the_arms_alone",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 16.9,
+  "budget": 420,
+  "chars": 17170
+ },
+ {
+  "receipt": "P15_the_source_decomposition_is_reachable_on_the_reporting_path_and_the_neutrinos_have_a_knob",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 15.9,
+  "budget": 420,
+  "chars": 23327
+ },
+ {
+  "receipt": "P15_the_spacing_drift_is_made_in_the_projection_so_the_construction_determines_it_and_the_handover_contributes_nothing",
+  "state": "RAN",
+  "rc": 1,
+  "seconds": 36.9,
+  "budget": 420,
+  "chars": 11347
+ },
+ {
+  "receipt": "P15_the_step_survives_a_differential_estimator_and_no_single_bilinear_term_carries_the_shared_step_though_the_doppler_leads_it",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 0.5,
+  "budget": 420,
+  "chars": 13343
+ },
+ {
+  "receipt": "P15_the_surviving_step_is_amplitude_and_not_phase_and_the_candidate_shares_do_not_survive_the_change_of_denominator",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 2.5,
+  "budget": 420,
+  "chars": 14031
+ },
+ {
+  "receipt": "P15_the_symmetric_comparison_was_never_runnable_and_the_quarter_was_two_fifths",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 386.6,
+  "budget": 900,
+  "chars": 3458
+ },
+ {
+  "receipt": "P15_the_term_mix_does_not_carry_the_modulation_and_it_survives_in_the_part_no_channel_explains",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 2.0,
+  "budget": 420,
+  "chars": 10904
+ },
+ {
+  "receipt": "P15_the_term_mix_has_the_shape_the_offset_needs_and_over_delivers_its_size",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 3.2,
+  "budget": 420,
+  "chars": 20297
+ },
+ {
+  "receipt": "P15_the_term_mix_is_the_first_channel_to_produce_cost_where_the_arm_is_rejected_and_the_excess_there_is_combed_at_the_acoustic_period",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 1.1,
+  "budget": 420,
+  "chars": 12276
+ },
+ {
+  "receipt": "P15_the_third_peak_deficit_is_radiation_driving_and_both_routes_to_the_equality_agree",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 4.2,
+  "budget": 420,
+  "chars": 7882
+ },
+ {
+  "receipt": "P15_the_three_grid_comparison_is_like_for_like_and_not_a_ceiling_artefact_because_the_projection_reach_is_fixed_on_every_arm",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 99.4,
+  "budget": 420,
+  "chars": 18743
+ },
+ {
+  "receipt": "P15_the_three_instruments_with_no_noise_model_one_can_be_given_a_floor_and_ten_passages_quote_a_significance_or_share_the_instrument_cannot_bear",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 23.0,
+  "budget": 420,
+  "chars": 9812
+ },
+ {
+  "receipt": "P15_the_three_parameter_comb_fails_its_validation_because_the_peak_spacing_DRIFTS_and_the_missing_parameter_is_the_one_the_sector_is_about",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 347.0,
+  "budget": 420,
+  "chars": 15804
+ },
+ {
+  "receipt": "P15_the_two_channels_compose_multiplicatively_and_the_pair_is_flat_where_the_excess_grows",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 1.7,
+  "budget": 420,
+  "chars": 18503
+ },
+ {
+  "receipt": "P15_the_two_projection_widths_differ_by_the_jacobian_alone_and_the_channel_that_opens_is_a_quarter_of_the_excess",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 3.3,
+  "budget": 420,
+  "chars": 16291
+ },
+ {
+  "receipt": "P15_the_two_readings_are_different_quantities_and_the_projection_width_is_the_unmeasured_one",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 2.7,
+  "budget": 420,
+  "chars": 16552
+ },
+ {
+  "receipt": "P15_the_visibility_width_is_not_the_carrier_the_swap_moves_the_fold_at_ell_A_by_under_two_per_cent_and_fails_the_undo_test_in_both_directions",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 0.3,
+  "budget": 420,
+  "chars": 13822
+ },
+ {
+  "receipt": "P15_the_window_free_reading_cannot_resolve_the_first_cycle_the_flatness_was_a_trend_and_nine_tenths_of_the_step_is_common_to_both_arms",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 1.6,
+  "budget": 420,
+  "chars": 14740
+ },
+ {
+  "receipt": "P15_the_windows_phase_spread_is_nearly_equal_because_the_visibility_widens_as_the_leaf_clock_slows",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 1.5,
+  "budget": 420,
+  "chars": 30618
+ },
+ {
+  "receipt": "P15_there_is_no_phase_residual_and_the_fourth_peak_is_not_the_damping_envelope",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 9.9,
+  "budget": 420,
+  "chars": 24544
+ },
+ {
+  "receipt": "P15_three_quarters_of_the_arms_residual_is_the_controls_and_what_is_left_is_position_not_amplitude",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 11.0,
+  "budget": 420,
+  "chars": 15799
+ },
+ {
+  "receipt": "P15_two_arm_control_and_guard",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 0.7,
+  "budget": 420,
+  "chars": 7696
+ },
+ {
+  "receipt": "P15_where_the_likelihood_sits",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 0.6,
+  "budget": 420,
+  "chars": 10646
+ },
+ {
+  "receipt": "P15_which_coupling_carries_the_k_dependence",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 0.1,
+  "budget": 420,
+  "chars": 6966
+ },
+ {
+  "receipt": "P15_zonset_determinations",
+  "state": "RAN",
+  "rc": 0,
+  "seconds": 0.6,
+  "budget": 420,
+  "chars": 892
+ }
+]

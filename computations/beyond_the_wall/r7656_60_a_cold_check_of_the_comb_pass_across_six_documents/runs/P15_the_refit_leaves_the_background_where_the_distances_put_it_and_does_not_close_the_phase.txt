@@ -1,0 +1,191 @@
+
+RECEIPT -- P15: ** THE PARAMETER REFIT, ON THE ARM OF RECORD.  GIVEN FOUR FREE PARAMETERS THE
+CROSSING ARM MOVES $H_0$ BY $-0.0009$ -- A THOUSANDTH OF A PER CENT, STAYING WHERE THE
+BARYON-ACOUSTIC DATA PUT IT -- AND Omega_m BY $-0.0064$, WHICH IS $2.16\%$ AND DOES NOT. **
+
+** ⛔⛔ SO THE CLAIM SPLITS RATHER THAN MOVING. **  *On the NAMESAKE arm both were inside a
+thirtieth of a per cent, at $0.001\%$ and $0.20\%$, and the corpus carries that as "the spectrum,
+given the freedom to go anywhere, stays there".  On the arm of record the EXPANSION RATE stays and
+the MATTER DENSITY is pulled two per cent off -- four tenths of one grid step, and the only one of
+the four parameters the distance data themselves constrain.  The 185-bin range says the same thing
+with $0.022\%$ and $2.123\%$ (`cc66.68`), so it is not a property of this range.*
+
+** AND IT STILL DOES NOT CLOSE THE TWO RESIDUALS, THOUGH THE EVIDENCE HAD TO BE REBUILT: the
+acoustic phase goes $1.32\%	o3.69\%$ out and the fourth peak $0.47\%	o0.51\%$, both read with a
+locator whose resolution is measured. **
+  ⛭⛭⛭ *The figures this file carried, $2.3\%	o4.5\%$ and $0.9\%	o0.7\%$, were a COMPUTED
+  "after" on raw `argrelextrema` peaks against a TYPED-IN "before" -- and the raw locator is the one
+  `cc66.18`'s $4.5\%$ was withdrawn as.  On the arm of record that locator returns a BIT-IDENTICAL
+  peak set before and after the refit, $220/532/812/1132$ both times, so its phase is $0.72\%$ on two
+  spectra separated by $146$ in $\chi^{2}$.  **No argument about locators is needed: the locator
+  reports the same number for two different spectra.**  Both columns are now computed, on both
+  locators, from the two spectra this receipt already reads.*
+
+** ⇒ SO THE RESIDUALS ARE PROPERTIES OF THE CONSTRUCTION AND NOT BACKGROUND CHOICES, ** which is
+the question node 66 (chat seat) asked of this run in as many words: *"if a refit removes them they
+are a background choice rather than a property of the construction."*  It does not remove them.
+
+** chi^2 AT THE VERIFIED MINIMUM: control 118.3 (0.90/bin), arm 181.7 (1.38/bin) over 132 bins --
+a ratio of 1.54, against 2.35 as-computed. **  *Freedom closes 60 per cent of the excess over one and
+leaves the rest.*  ⌗ *On the namesake arm these were 171.1, 1.45 and 2.22, and "about a third of
+the gap" was that arm's arithmetic.*
+
+Built r6788+cc66.18 (node 66, code seat), on `PO-13`, at the chat seat's standing refit order and
+its ruling of r6788 (take the 132-bin configuration; the control refitted like-for-like).
+
+===================================================================================================
+** WHAT WAS RUN, AND THE THREE THINGS THAT MAKE IT A FIT RATHER THAN AN EXTRAPOLATION **
+===================================================================================================
+
+  ** 1  A MEASURED RESPONSE, NOT A SEARCH. **  Each likelihood call is a full spectrum, so a search
+  is thousands of them.  Instead: 18 runs -- a base and two-sided steps in H0, Omega_m, omega_b and
+  n_s, per arm -- giving the gradient AND the diagonal curvature, so the model is quadratic along
+  each axis.  *The amplitude is fitted in closed form at every evaluation and costs nothing.*
+
+  ** 2  THE MINIMUM IS VERIFIED BY A REAL RUN. **  The response model says where to go; a run at
+  the best-fit parameters says what is there.  ** Predicted 118.2 and 170.8; measured 118.3 and
+  181.7 -- $+0.2$ on the control and $+10.9$ on the arm. **
+  ⛔⛔ *On the namesake both were inside half a unit.  On the arm of record the ARM's stencil
+  misses by eleven while the control's -- same code, same steps -- is good to two tenths, because
+  $n_s$ moves $+2.39$ grid steps here and the quadratic is built on $\pm1$.  So the model's
+  PARAMETERS are still the licence (PART 2 reads them, PART 5 scores the real run at them) and the
+  model's $\chi^{2}$ is not.  The 185-bin range does the same at $+12.8$ and $2.57$ steps.*
+  ⌗ *The verification file is banked at the FULL-RANGE minimum; this range's own minimum agrees
+  with it to a quarter of a grid step, measured before the re-point was made and gated in PART 1.*
+
+  ** 3  EVERY PARAMETER IS TESTED FOR FLATNESS. **  A one-step excursion from the minimum must cost
+  chi^2 or the 'best fit' is not a measurement.  *This is not decoration: it is what caught a dead
+  knob.  Before r6788+cc66.17 the tilt returned d(chi^2) = 0.00 on BOTH arms, because `NS` was
+  shadowed by two more copies of the literal 0.965 on the path the grid runs.*
+
+** WHAT IS NOT A FREE DIRECTION, AND THE ABSTRACT COUNTS IT AS ONE. **  tau is exactly degenerate
+with the amplitude here: no reionisation is modelled, so exp(-2 tau) is a constant on ell >= 100 and
+only A_s exp(-2 tau) is seen.  ** Measured at cc66.14: chi^2 identical to one part in 1e6 across
+tau = 0 to 0.15. **  *So the fit has FOUR directions plus an amplitude, not six.*
+
+  PART 1  ** THE VERIFICATION. **
+  PART 2  ** THE PARAMETERS AT THE MINIMUM, AND HOW FAR EACH MOVED. **
+  PART 3  ** THE FLATNESS TEST. **
+  PART 4  ** THE TWO FOLLOW-UPS: the acoustic phase and the fourth peak. **
+  PART 5  ** WHAT IT COSTS AND WHAT IT DOES NOT BUY. **
+
+** COMPUTES: the grid is `LMAXL=1300`, `LSTEP=8`, `HIER=1`, `KFAC` at the corpus default 2.0 --
+   132 bins, ell 100-1287.  Starting points: control (67.40, 0.3150, 0.0224, 0.965), arm
+   (68.60, 0.2973, 0.0224, 0.965) with the handover at the crossing and one clock.  Steps: H0 2.0,
+   Omega_m 0.0150, omega_b 0.0008, n_s 0.0200.  *** The 185-bin configuration the order first asked
+   for is NOT produced: a run at LMAXL=2000 takes ~60 min against container windows that were 1-15
+   min, and the cheaper k-reach is refused by the instrument's own truncation guard.  The chat seat
+   ruled at r6788 to take this range with the cost stated. *** **
+
+
+========================================================================================================
+  PART 1 -- ** THE VERIFICATION: the model said where to go, these runs say what is there **
+========================================================================================================
+                 arm  model predicted   REAL RUN    /bin     diff   bins
+      control (LCDM)            118.2      118.3    0.90     +0.2    132
+        CR, crossing            170.8      181.7    1.38    +10.9    132
+
+  ⇒ ⛔ ** THE CONTROL'S RUN LANDS WHERE THE MODEL SAID (+0.2) AND THE ARM'S DOES NOT (+10.9). **
+  *Because n_s moves +2.39 grid steps on the arm of record and the stencil's quadratic
+  is built on +-1.  So the model's PARAMETERS are quotable -- PART 2 reads them and PART 5
+  scores the real run at them -- and the model's chi^2 is not.*
+  ⌗ *The 185-bin range does the same at +12.8 and +2.57 steps (cc66.68), so this is the
+  excursion and not the range.*
+
+========================================================================================================
+  PART 2 -- ** THE PARAMETERS AT THE MINIMUM **
+========================================================================================================
+
+  control (LCDM)
+                  start   best fit      moved   in steps
+          H0    67.4000    67.4054    +0.0054     +0.00s
+          OM     0.3150     0.3095    -0.0055     -0.37s
+          WB     0.0224     0.0220    -0.0004     -0.44s
+          NS     0.9650     0.9559    -0.0091     -0.45s
+
+  CR, crossing
+                  start   best fit      moved   in steps
+          H0    68.6000    68.5991    -0.0009     -0.00s
+          OM     0.2973     0.2909    -0.0064     -0.43s
+          WB     0.0224     0.0218    -0.0006     -0.70s
+          NS     0.9650     1.0127    +0.0477     +2.39s
+
+  ⇒ *** THE ANSWER TO THE QUESTION THE ORDER ASKED. ***  Given four free parameters the crossing arm
+  moves H0 by -0.0009 and Omega_m by -0.0064 -- ** 0.001% and 2.16%. **
+  *(68.60, 0.2973) came from DESI DR2 BAO and theta_*, with no spectrum involved.*  ⛔⛔ ** AND ON
+  THE ARM OF RECORD THE ANSWER SPLITS: THE EXPANSION RATE STAYS THERE AND THE MATTER DENSITY DOES
+  NOT. **  *H0 moves 0.001% -- a thirtieth of a per cent is 0.033%, so it is
+  inside by a factor of twenty-five.  Omega_m moves 2.16%, which is
+  65 times it.  On the NAMESAKE arm both were inside, at
+  0.001% and 0.20%.  So `the spectrum, given the freedom to go anywhere, stays there` is HALF this
+  range's reading and half the namesake's, and the 185-bin range says the same thing with
+  0.022% and 2.123% (`cc66.68`).*
+  ⌗ ** The tilt is the one parameter that moves: ** the arm wants n_s = 1.0127
+  against the control's 0.9559 -- bluer by
+  0.0568, which is 2.8 steps and is a real difference between the arms.
+
+========================================================================================================
+  PART 3 -- ** THE FLATNESS TEST: is each 'best fit' a measurement? **
+========================================================================================================
+               arm   param      step   d(chi2) +1         -1        verdict
+    control (LCDM)      H0    2.0000       844.79     970.49    CONSTRAINED
+                        OM    0.0150       228.23     265.34    CONSTRAINED
+                        WB    0.0008        59.70      58.77    CONSTRAINED
+                        NS    0.0200        23.64      23.82    CONSTRAINED
+      CR, crossing      H0    2.0000      1195.85    1391.82    CONSTRAINED
+                        OM    0.0150       390.14     458.11    CONSTRAINED
+                        WB    0.0008        89.69      88.63    CONSTRAINED
+                        NS    0.0200        19.50      21.98    CONSTRAINED
+
+  ⇒ ** All four are constrained on both arms. **  *Which is why "H0 moved by -0.0009" means AT A
+  SHARP MINIMUM and not UNCONSTRAINED -- a one-step move in H0 costs 1196 in chi^2.*
+  ⌗ *Before r6788+cc66.17 the n_s row read 0.00 and 0.00 on both arms: `NS` was shadowed by two more
+  copies of the literal 0.965 on the hierarchy path, which is the path this grid runs.  **This table
+  is what caught it.***
+
+========================================================================================================
+  PART 4 -- ** THE TWO FOLLOW-UPS **
+========================================================================================================
+                                                   peaks  phase % out  4th peak %
+      before, raw   220.00 /   532.00 /   812.00 /  1132.00        0.72%       0.72%
+  before, refined   220.28 /   535.64 /   814.06 /  1129.13        1.32%       0.47%
+       after, raw   220.00 /   532.00 /   812.00 /  1132.00        0.72%       0.72%
+   after, refined   222.04 /   535.85 /   815.00 /  1129.68        3.69%       0.51%
+          the sky   220.40 /   537.70 /   817.30 /  1123.90
+
+  ⇒ ⛭⛭⛭ *** THE RAW LOCATOR CANNOT SEE THE REFIT: it returns the SAME peak set before and
+  after, [220, 532, 812, 1132], so its phase is 0.72 per cent both times *** -- across a
+  fit that moves chi^2 by -146.
+  *That is the whole case against the raw number, made by the number itself.*
+
+  ⇒ *** AND ON THE REFINED LOCATOR THE VERDICT STANDS: THE PHASE GETS WORSE. ***  1.32 per
+  cent before against 3.69 after -- it nearly TRIPLES -- and the fourth peak barely moves,
+  0.47 against 0.51.  ** So neither residual is removed by freedom, and on the chat
+  seat's own criterion they are properties of the CONSTRUCTION and not background choices. **
+  ⌗ *This file's name says `does not close the phase`, and on the arm of record read with a
+  locator whose resolution is measured, it does not: the name holds.  What changes is the evidence --
+  the namesake's 2.3 -> 4.5 was the grid's number on both ends.*
+
+========================================================================================================
+  PART 5 -- ** WHAT IT COSTS AND WHAT IT DOES NOT BUY **
+========================================================================================================
+                                    chi2    /bin
+             control, refitted     118.3    0.90
+              CR arm, refitted     181.7    1.38
+                         ratio      1.54x
+
+  ⇒ ** 1.54x at the verified minimum, against 2.35x as-computed on the same
+  bins. **  *Freedom closes 60 per cent of the excess
+  over one and leaves the rest.*  ⛔ ** The arm is still disfavoured, and that is the result rather
+  than a caveat on it. **  ⌗ *On the NAMESAKE arm these were 1.45x and 2.22x, and `about a third of
+  the gap` was that arm's arithmetic; here freedom closes rather more than a third.*
+
+  ⚠ ** AND THE RANGE IS 132 BINS, ell 100-1287, NOT THE 185 THE ORDER FIRST ASKED FOR. **  *The
+  damping tail is where omega_b and n_s carry most of their leverage, so those two are the loosest
+  numbers here.  H0 and Omega_m are set by the peak positions and the comb, all inside this range,
+  so the question the order actually asked is answered on it.*  ⌗ *The chat seat ruled at r6788 to
+  take this configuration with the range stated as its cost.*
+
+========================================================================================================
+  ✓ ALL CHECKS PASSED
+========================================================================================================

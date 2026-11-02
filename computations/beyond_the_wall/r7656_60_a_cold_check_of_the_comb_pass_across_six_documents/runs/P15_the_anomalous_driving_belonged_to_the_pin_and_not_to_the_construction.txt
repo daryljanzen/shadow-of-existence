@@ -1,0 +1,97 @@
+
+RECEIPT -- P15: ** THE DRIVING SUBTRACTION ON THE ADJUDICATED ARM IS 0.96x THE CONTROL'S, WHERE
+`sec:refit-bound`'s PINNED ARM WAS 2.48x. ** THE ANOMALOUS DRIVING BELONGED TO THE PIN AND NOT TO
+THE CONSTRUCTION. **
+
+** ⇒ AND IT IS PATH-PROOF: the two instrument paths agree to four decimals (0.1717 both), unlike
+the heights. **  *That matters because it is the one thing in this family that has been
+path-dependent, and this quantity is not.*
+
+Built r6760+cc66.15 (node 66, code seat), on `PO-13`, at node 66 (chat seat)'s routed item in
+`FOR_CC66`: "removing every coupling to the potential on the crossing arm at (68.60, 0.2973), both
+paths, reporting the first peak, ell_1/ell_A and the shift against the control's."
+
+===================================================================================================
+** WHAT THE PARAGRAPH SAID, AND WHY ITS NUMBERS ARE OUT **
+===================================================================================================
+
+`sec:refit-bound`'s driving-subtraction paragraph carried the PINNED arm: first peak 206 -> 340,
+ell_1/ell_A 0.6830 -> 1.1273, ** 2.4 times the control's shift **.  *That configuration is the one
+r6760+cc66.7 retired -- the pin and the crossing are disjoint by ordering -- so the paragraph now
+points at a measurement the corpus does not have.*  ** This is that measurement. **
+
+** THE CONVENTION, STATED BECAUSE IT IS EASY TO GET WRONG AND THE ANSWER MOVES WITH IT. **
+ell_1/ell_A here is the first peak over the arm's ** REPORTED ** l_A = pi D_M / r_s, which is what
+the instrument's own header prints -- NOT over the comb fitted to the spectrum's peaks.  *On this
+arm those are 302.9 and 298.0, so the two conventions give 0.7329 and 0.7450 for the same run.*
+** The chat seat's control figure reproduces on the reported-l_A convention and not on the other,
+which is how it was identified. **
+
+  PART 1  ** THE FOUR ROWS. **
+  PART 2  ** THE RATIO, WHICH IS WHAT THE PARAGRAPH IS ABOUT. **
+  PART 3  ** BOTH PATHS. **
+  PART 4  ** AND A TWO-MULTIPOLE DIFFERENCE FROM THE QUOTED CONTROL, PRICED. **
+
+** COMPUTES: nothing.  *** It reads spectra already produced and locates their peaks.  The runs are
+   `ARM=cr CRH0=68.60 CROM=0.2973 ZSTART=3e7 LEAFSCALES=1 [NODRIVE=1] LSTEP=2 LMAXL=1300` with
+   `HIER=1` for the polarisation path and absent for the fluid, and `ARM=lcdm [NODRIVE=1]` for the
+   control.  `NODRIVE=1` sets DRC = DRE = 0, which is every coupling of the potential into the
+   fluid; Phi's own evolution is never switched, since removing it would change the background
+   rather than the driving. *** **
+
+
+========================================================================================================
+  PART 1 -- ** THE FOUR ROWS **   (ell_1/l_A on the REPORTED l_A, the instrument's own)
+========================================================================================================
+                   configuration  l_A rep  l_1 driven  undriven  shift  l1/lA driven  undriven  d(l1/lA)
+    control (LCDM), POLARISATION    301.4         220       274     54        0.7300    0.9092    0.1792
+      CR arm 68.60, POLARISATION    302.9         222       274     52        0.7329    0.9046    0.1717
+             CR arm 68.60, FLUID    302.9         220       272     52        0.7263    0.8980    0.1717
+  the PINNED arm (sec:refit-bound)    301.6         206       340    134        0.6830    1.1273    0.4443
+
+========================================================================================================
+  PART 2 -- ** THE RATIO, WHICH IS WHAT THE PARAGRAPH IS ABOUT **
+========================================================================================================
+                                           shift   vs the control
+                    the control itself    0.1792            1.00x
+  the ADJUDICATED arm (crossing, 68.60)    0.1717            0.96x
+        the PINNED arm (the paragraph)    0.4443            2.48x
+
+  ⇒ *** THE ANOMALOUS DRIVING BELONGED TO THE PIN. ***  On the adjudicated arm the potential's grip
+  on the oscillator is within 4% of the control's, and SLIGHTLY WEAKER rather than
+  stronger.  *`sec:refit-bound`'s paragraph was reporting a property of the pinned configuration,
+  not of the construction, and its 2.4x does not survive the configuration change.*
+
+  ⚠ ** WHAT THIS DOES NOT SAY. **  A smaller driving shift is not evidence the arm is RIGHT -- it
+  says the arm's driving now behaves like the control's, which REMOVES a discrepancy rather than
+  adding a confirmation.  *The phase residual this is to be read against is still 2.3%
+  (r6760+cc66.7), and nothing here touches it.*
+
+========================================================================================================
+  PART 3 -- ** BOTH PATHS, AND THIS ONE IS PATH-PROOF **
+========================================================================================================
+      polarisation    0.1717
+             fluid    0.1717
+        difference    0.0000
+
+  ⇒ ** The two paths agree to 0.0000. **  *That is worth stating because the HEIGHTS on
+  this instrument are path-dependent and have had to be reported as polarisation-path specific
+  throughout (r6760+cc66.7, r6760+cc66.10).  **This quantity is not: the driving shift is the
+  construction's and not the path's.***
+
+========================================================================================================
+  PART 4 -- ** THE QUOTED CONTROL AND THIS ONE DIFFER BY TWO MULTIPOLES **
+========================================================================================================
+  the chat seat's control:  l_1 undriven 276, shift 0.1858
+  this tree's control:      l_1 undriven 274, shift 0.1792
+
+  ** 2 multipoles, which is ONE GRID STEP at LSTEP=2 -- so it is resolution and
+  not substance. **  *But it moves the quoted shift 0.1858 -> 0.1792, and with it the
+  arm's ratio from 2.39x -> 2.48x for the pinned arm and
+  0.92x -> 0.96x for the adjudicated one.*
+  ⇒ *** Both are reported so the size of the difference is visible, and the ratios above are on
+  THIS tree's control throughout rather than mixing a measured shift against a quoted one. ***
+
+========================================================================================================
+  ✓ ALL CHECKS PASSED
+========================================================================================================

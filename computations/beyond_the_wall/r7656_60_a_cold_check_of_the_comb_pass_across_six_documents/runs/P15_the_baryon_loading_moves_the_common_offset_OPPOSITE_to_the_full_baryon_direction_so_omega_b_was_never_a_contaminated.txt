@@ -1,0 +1,118 @@
+
+RECEIPT -- P15: ** `r7203` ASKED FOR THE LOADING LEVER'S CURVE AS A RECEIPT OF ITS OWN.  IT IS HERE,
+AND IT CARRIES A FINDING THE CURVE WAS NOT RUN TO GET: *** THE SURGICAL LOADING LEVER MOVES THE
+COMMON OFFSET IN THE OPPOSITE DIRECTION FROM THE FULL BARYON-DENSITY DIRECTION. *** **  `cc66.155`
+said `$\omega_b$` was "never a clean loading lever" because it moves loading AND recombination, so
+"even a discriminating `WB` result would have been two effects".  ⛭ ** With the clean lever now run,
+that statement is too weak: the two effects do not merely coexist, they OPPOSE on the phase
+observable, and the non-loading part is the larger. **  `$\mathrm{d}\varphi/\mathrm{d}\ln R_b$`
+is `$+0.0164$` where `$\mathrm{d}\varphi/\mathrm{d}\ln\omega_b$` is `$-0.0276$`.
+
+  ⇒ ** AND THE COMPARISON IS LEGITIMATE RATHER THAN NOMINAL, WHICH IS THE WHOLE REASON IT CAN BE
+  MADE. **  *The instrument's line `214` is `RB_REC = RBFAC * RB_REC` and line `397` feeds that
+  straight into `Rb_of`, so `$R_b\propto\mathrm{RBFAC}$` LINEARLY -- exactly as
+  `$R_b\propto\omega_b$`.  A logarithmic step in `RBFAC` is therefore a logarithmic step of the
+  same size in the loading, and the two derivatives are in the same units on the same quantity.
+  **Without that the two numbers would share a name and nothing else.***
+
+  ⌗ ** THE CURVE ALSO VINDICATES HAVING INSISTED ON A CURVE. **  *`$\ell_A$` responds at `$8.5$`
+  per unit `$\ln\mathrm{RBFAC}$` across `$0.1\to0.5$` and `$22.1$` across `$0.5\to1.0$` -- a
+  factor of `$2.6$` between ADJACENT intervals of one lever.  A single central difference across
+  `$0.1\to2.0$`, which is what the lever was first costed as, would have reported one number for
+  that and called it a response.*
+
+** COMPUTES: the de-tilted peak statistic of `cc66.156` -- unchanged, not a new statistic -- on the
+   four-point `RBFAC` curve `$\{0.1,0.5,1.0,1.5\}$` run at `r7201`/`r7203`, where `$1.0$` is the
+   banked grid base and needed no run; the logarithmic response of both components about
+   `$\mathrm{RBFAC}=1$` by central difference on `$0.5\to1.5$`; and that response against the
+   banked `WB` and `NS` directions read off `cc66.156`'s own grid derivatives.  *** No refit, no new
+   statistic, no new spectrum beyond the three `r7203` approved. *** **
+
+
+
+========================================================================================================
+  A.  THE LEVER IS ONE LEVER, AND THAT IS READ OFF THE INSTRUMENT RATHER THAN ASSUMED
+========================================================================================================
+      the scaling:   RB_REC = float(os.environ.get('RBFAC', '1.0')) * RB_REC
+      its only use:  Rb_of = CubicSpline(eg, RB_REC * (ag / A_REC))
+      parsed: assignment=True  operation=BinOp/Mult  rescales=True
+      and the spline that defines R_b(a) is built from that same name: True
+    OK    Ⓐ①  ** `RBFAC` enters as a LINEAR multiplicative scaling of the recombination-epoch loading and nowhere else, so `$R_b\propto\mathrm{RBFAC}$` exactly as `$R_b\propto\omega_b$`. **  That is what makes a logarithmic `RBFAC` derivative comparable with a logarithmic `$\omega_b$` derivative instead of merely similarly named -- and the two lines are quoted from the instrument, not paraphrased
+
+      arm    RBFAC file                mult  nonfin        l_A        phi        alt
+      cr       0.1 cr_rb0.1             238       0    272.419   -0.21732   -0.00782
+      cr       0.5 cr_rb0.5             238       0    286.060   -0.20935   +0.00444
+      cr       1.0 cr_base              238       0    301.380   -0.20124   +0.01511
+      cr       1.5 cr_rb1.5             238       0    315.272   -0.19131   +0.02318
+      lcdm     0.1 lcdm_rb0.1           238       0    272.453   -0.21735   -0.00786
+      lcdm     0.5 lcdm_rb0.5           238       0    286.077   -0.20944   +0.00464
+      lcdm     1.0 lcdm_base            238       0    301.375   -0.20124   +0.01556
+    OK    Ⓐ②  and every point on the curve is a complete spectrum of the same length with no non-finite sample, `$1.0$` being the banked grid base at the same `HIER`, `LSTEP`, `LMAXL` and `ZSTART` -- so the centre of the curve cost no run and is not a different vintage
+
+========================================================================================================
+  B.  IT IS A CURVE AND NOT A SLOPE, WHICH IS WHY ONE CENTRAL DIFFERENCE WOULD HAVE LIED
+========================================================================================================
+      l_A per unit ln(RBFAC) across  0.1 ->  0.5:     8.48
+      l_A per unit ln(RBFAC) across  0.5 ->  1.0:    22.10
+      l_A per unit ln(RBFAC) across  1.0 ->  1.5:    34.26
+      ⇒ the extreme adjacent intervals differ by a factor of 4.04
+    OK    Ⓑ①  ** THE RESPONSE OF `$\ell_A$` TO THE LOADING IS STRONGLY NON-LINEAR IN `$\ln\mathrm{RBFAC}$`: adjacent intervals of the SAME lever differ by more than a factor of two. **  So the lever's first costing -- a central difference across `$0.1\to2.0$` -- would have returned a single number standing for a quantity that varies by that much inside its own span
+    OK    Ⓑ②  and BOTH components rise monotonically with the loading across the whole span, so the non-linearity is in the SIZE of the response and not in its direction -- which is what lets a sign be read off it at all
+      RBFAC  0.1: detected spacing 0.904-0.993 of l_A
+      RBFAC  0.5: detected spacing 0.920-1.017 of l_A
+      RBFAC  1.0: detected spacing 0.895-1.036 of l_A
+      RBFAC  1.5: detected spacing 0.869-1.049 of l_A
+    OK    Ⓑ③  ⛭ and the comb -- the statistic's ONE assumption -- survives the lever at both ends: every point's detected spacing stays inside the banked base's own range to within a twentieth, against the `$0.74$`--`$0.96$` that disqualified the CR arm's banked driving-ON spectrum from this statistic in `cc66.156`.  *The lever is far from unity and that was the live risk*
+
+========================================================================================================
+  C.  THE TWO ARMS AGREE AT MATCHED LOADING, SO THE LEVER ACTS ON THE ACOUSTICS NOT THE ARM
+========================================================================================================
+      RBFAC  0.1:  |dphi| 3.05e-05   |dalt| 3.76e-05   |dl_A| 0.034
+      RBFAC  0.5:  |dphi| 9.14e-05   |dalt| 2.01e-04   |dl_A| 0.016
+      RBFAC  1.0:  |dphi| 4.12e-06   |dalt| 4.56e-04   |dl_A| 0.005
+    OK    Ⓒ①  ** the CR arm and the control agree on both components to parts in `$10^{4}$` at every matched loading. **  The refit matched their `$\ell_A$` by construction, so this is not a null result about the arm -- it is what licenses reading the lever's effect as acoustic physics rather than as a property of `LEAFGEOM`, and it is why the control's own `$1.5$` point was the one `r7203` could drop
+
+========================================================================================================
+  D.  ⛭⛭⛭ THE FINDING: THE CLEAN LEVER AND THE FULL BARYON DIRECTION OPPOSE ON THE OFFSET
+========================================================================================================
+      d/dln(RBFAC)   -- the LOADING alone, central difference 0.5->1.5 about 1.0:
+          phi +0.01642      alternation +0.01706
+      d/dln(WBH2)    -- the FULL baryon direction, off the banked grid:
+          phi -0.02760      alternation +0.01043
+      d/dln(NS)      -- the control direction, which carries no acoustic phase:
+          phi -0.00244      alternation -0.00049
+
+      ⇒ on the common offset the two have OPPOSITE SIGN.  Decomposing `$\omega_b$` into
+        its loading part and the rest:  -0.02760 = +0.01642 (loading)
+        -0.04402 (everything else omega_b does), so the non-loading part is
+        2.7x the loading part AND of the opposite sign.
+    OK    Ⓓ①  ** `$\mathrm{d}\varphi/\mathrm{d}\ln R_b$` IS POSITIVE WHERE `$\mathrm{d}\varphi/\mathrm{d}\ln\omega_b$` IS NEGATIVE. **  *`cc66.155` called `$\omega_b$` a contaminated loading lever -- loading and recombination together, so 'even a discriminating `WB` result would have been two effects'.*  ⇒ ** It is worse than contaminated: the two effects OPPOSE on this observable, and the one that is not the loading is the larger. **  So `$\omega_b$`'s offset response is not a weakened reading of the loading's -- it points the other way
+    OK    Ⓓ②  and that is a statement about `$\omega_b$` rather than about the statistic's precision: the non-loading part of the `WB` response exceeds the loading part by more than a factor of two, so no sharpening of the measurement would recover the loading's sign from the `WB` direction alone
+    OK    Ⓓ③  ⚠ and on the ALTERNATION they do NOT oppose -- both are positive, within a factor of two.  *Stated because it bounds the finding: the opposition is a property of the common offset alone, and a statistic reading only the odd-even alternation would have seen the clean lever and the full baryon direction agree.*
+
+========================================================================================================
+  E.  WHAT THIS DOES NOT CLAIM
+========================================================================================================
+  ⛔ NO CARRIER IS NAMED HERE.  This receipt measures ONE of the two candidates -- the
+     loading -- against the bank's own baryon direction.  The driving half is a separate
+     pair and is not read in this file.
+  ⛔ AND NO CLAIM IS MADE ABOUT `NS`.  It is an INHERITED quantity: this corpus posits no
+     six-parameter vector, so the spectral index is ADOPTED from LambdaCDM's own basis and
+     derived from nothing this construction predicts.  What that costs is stated rather than
+     hidden: it appears here only as the direction known a priori to carry no acoustic
+     phase, which is what a control for a phase statistic requires, and every conclusion
+     above would stand if its value moved.
+  ⌗ The curve is four points on one arm.  It establishes a SIGN and an order of magnitude
+     for the loading's response, not a functional form.
+  ⚠ AND THE CONTROL LEAVES A FLOOR ON THE OFFSET, MEASURED RATHER THAN WAVED AT:
+     the tilt's residual response is 15% of the loading's on the common offset
+     and 2.9% on the alternation.  *I first wrote this check as `an order of
+     magnitude below` on BOTH components and it FAILED on the offset -- 15% is
+     not a factor of ten.  The de-tilt collapses the tilt's leakage by a factor of 22 but
+     does not abolish it, so the offset carries a floor of about a sixth of the loading's
+     own signal and the alternation is the cleaner of the two components.*
+    OK    Ⓔ①  the control direction's residual response stays well below the loading's on both components -- within a SIXTH on the common offset and a THIRTIETH on the alternation -- which is the check that the statistic reads acoustic phase rather than the de-tilt's leftover gradient.  ⚠ *Not an order of magnitude on the offset: that is the bound this check was first written with and it did not hold, so the floor is stated at its measured size instead of at the one I expected*
+
+========================================================================================================
+  ✔ 11 of 11 checks pass.
+========================================================================================================

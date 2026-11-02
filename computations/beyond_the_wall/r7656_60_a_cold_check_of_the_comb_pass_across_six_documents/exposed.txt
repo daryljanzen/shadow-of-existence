@@ -1,0 +1,87 @@
+r7656+60.7 (60) -- THE ORDER'S THREE EXPOSED CLAIMS, which no figure gate can see.
+
+⛭ WHY THEY ARE EXPOSED.  `check_figures_pinned` extracts DECIMALS.  These three claims carry their
+quantities in WORDS -- "three and a quarter multipoles", "a third of a per cent", "between one and
+three multipoles at each peak" -- so every gate of this corpus reads straight past them, and the cold
+check of `cold_check.py` could not have reached them either: the sentences carrying them contribute
+`2.35`, `1.60`, `299.1` and the rest, and the gate scores those and calls the line green.
+
+⌗ *A figure printed in words is a figure no ratchet of this corpus is watching.*
+
+THE SOURCE OF TRUTH is ONE banked receipt, `P15_the_locator_is_good_to_three_hundredths_...`, read
+from `runs/` exactly as `run_candidates.py` banked it.  Its peak positions are PARSED OUT OF THAT TEXT
+rather than typed in here, so this file cannot drift from the bank, and if the receipt's own printing
+changes the parse fails loudly instead of scoring a stale number.
+
+THREE VERDICTS, registered at `+60.7` before any of them was scored:
+  REPRODUCES  -- the bank produces the claim's stated quantity
+  UNLOCATED   -- the claim HOLDS, but nothing in the bank produces the value it states
+  FAILS       -- the bank's readings contradict it, and the nearest is named with its factor
+
+⌗ AND EVERY ARM IS FAILABLE, EXERCISED EVERY RUN (㉚).  Each claim's stated value is replaced with a
+decoy whose verdict must FLIP.  *An arm that cannot be made to fail on the data it is given is not an
+arm, and this revision has spent five amendments on exactly that mistake.*
+
+================================================================================================================
+  r7656+60.7 (60) -- three claims in words, against one banked receipt
+================================================================================================================
+
+ⓐ  WHAT THE BANK SAYS, PARSED FROM IT AND NOT TYPED HERE
+      arm, sub-binned     222.05/535.85/815.03/1129.74
+      sky                 220.4/537.7/817.3/1123.9   (PO-47's fourth: 1121.9)
+      arm - sky           +1.65/-1.85/-2.27/+5.84
+      control - sky       -0.05/-1.41/-2.97/+5.32
+      arm - control       +1.700/-0.440/+0.700/+0.520
+      raw grid            222/538/818/1134
+  [PASS] ⓐ① the four peaks parsed out of the bank are strictly increasing, which is what a comb is
+  [PASS] ⓐ② and the residual the bank prints is the arithmetic difference of the two rows it prints, so the parse is checked against the bank rather than trusted
+  [PASS] ⓐ③ and arm-minus-control is the difference of the two residuals to the third decimal the bank prints it at
+
+ⓑ  ㉗ CLAIM A -- "the first three peaks within three and a quarter multipoles of the measured ones"
+      P15 l.136, l.149, l.886 and P7 l.1812 all carry it.
+      max |residual| over peaks 1-3 = 2.27   against the stated bound 3.25  -> HOLDS
+      is 3.25 produced anywhere in this receipt's own output? NO
+      ⇒ VERDICT: UNLOCATED   -- the bound holds with 0.98 multipoles of slack (1.43x the measured maximum), and nothing computes the 3.25.
+  [PASS] ⓑ① ㉗ AS REGISTERED: claim A HOLDS as a bound (2.27 <= 3.25) and is UNLOCATED -- nothing in this receipt produces the value it states
+  [PASS] ⓑ② ㉚ AND IT IS FAILABLE: a decoy bound of 2.00 makes it FAIL (FAILS), so this arm is not a guard that cannot fail
+
+ⓒ  ㉘ CLAIM B -- "and the fourth a third of a per cent high"  (P7 l.1812)
+
+      reading                                  arm       sky   offset  per cent  x claim
+      sub-bin vs the sky's own fourth      1129.74    1123.9    +5.84    0.520%    1.56x
+      sub-bin vs PO-47's fourth            1129.74    1121.9    +7.84    0.699%    2.10x
+      raw grid vs the sky's own fourth     1134.00    1123.9   +10.10    0.899%    2.70x
+      raw grid vs PO-47's fourth           1134.00    1121.9   +12.10    1.079%    3.24x
+
+      a third of a per cent is 0.333%, i.e. 3.75 multipoles at this peak -- a value NO reading of the bank returns
+      ⇒ VERDICT: FAILS   -- the nearest of the four is 0.520%, 1.56x the claim, and every other reading is further out
+  [PASS] ⓒ① ㉘ AS REGISTERED: claim B FAILS -- the nearest reading the bank supports (0.520%) is more than a twentieth away from the stated 0.333%
+  [PASS] ⓒ② ㉘'S REACHABLE NEGATIVE IS SEARCHED FOR AND NOT ASSUMED AWAY: put the measured 0.520% through the SAME verdict function and it returns REPRODUCES, so this arm reports a FAIL because the bank disagrees with the paper and not because no stated value could ever agree
+  [PASS] ⓒ③ ㉚ AND ALL FOUR READINGS EXCEED THE CLAIM, so the verdict does not turn on which sky value or which grid is chosen -- the smallest is 0.520% and the claim 0.333%
+
+ⓓ  ㉙ CLAIM C -- "what remains at the peaks is between one and three multipoles", AT EACH PEAK
+      P15 l.136, l.2067, l.2788 and P7 l.1863 carry it; l.2067 derives it from the spacing.
+      the comb is 299.1 against 298.4, so the spacing error is 0.7 per period
+
+      reading                                               peak 1       2       3       4  verdict
+      cumulative spacing error, l.2067's own derivation       0.70    1.40    2.10    2.80  FAILS at peak(s) 1
+      the measured sky residual, |arm - sky|                  1.65    1.85    2.27    5.84  FAILS at peak(s) 4
+      arm minus control, what belongs to the construction     1.70    0.44    0.70    0.52  FAILS at peak(s) 2,3,4
+
+      ⇒ VERDICT: FAILS   -- no reading the bank supports puts all four peaks in [1, 3], and the three readings fail at DIFFERENT peaks: [(1,), (4,), (2, 3, 4)]
+      ⌗ So the word carrying the claim is "each", and this corpus's own guard applies:
+      *before two stretches are identified by a label, check how many-to-one the label is on the
+      object.*  Two of the three readings hold at THREE of the four peaks, which is why the sentence
+      reads as true and is not.
+  [PASS] ⓓ① ㉙ AS REGISTERED: claim C FAILS AT "EACH" UNDER EVERY READING the bank supports
+  [PASS] ⓓ② and the three readings fail at DIFFERENT peaks ([(1,), (4,), (2, 3, 4)]), so the failure is not one outlier reading but the quantity being many-to-one on the phrase
+  [PASS] ⓓ③ ㉚ AND IT IS FAILABLE: widened to [0, 6] every reading HOLDS AT EACH (['HOLDS AT EACH', 'HOLDS AT EACH', 'HOLDS AT EACH']), so the arm reports a FAIL about the stated range and not about the shape of the test
+
+ⓔ  ㉛ WHAT IS NOT CLAIMED.  Not that the receipt behind these three sentences is wrong -- it is not
+    this seat's, it is not edited, and its own numbers are what every verdict above is read FROM.  Not
+    a correction to any of the three sentences: a correction needs the configuration each was written
+    in, which is 69's to say.  What is established is which of the three reproduce against the bank
+    and which do not, with the numbers, and that NO gate of this corpus was watching any of them.
+
+================================================================================================================
+  0 failure(s)

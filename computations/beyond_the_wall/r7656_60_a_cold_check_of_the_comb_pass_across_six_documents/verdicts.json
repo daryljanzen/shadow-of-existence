@@ -1,0 +1,142 @@
+{
+ "counts": {
+  "VERBATIM": 81,
+  "EXACT-VALUE": 4,
+  "ROUNDED": 0,
+  "GATE-ONLY": 1,
+  "UNESTABLISHED": 9,
+  "ABSENT": 0,
+  "UNRUN": 0
+ },
+ "reproductions": 85,
+ "total": 95,
+ "absent_rows": [],
+ "exact_value_rows": [
+  [
+   "P15",
+   135,
+   "186.135",
+   "186.1350",
+   "P15_the_licensed_rebuild_leaves_all_three_rigidity_numbers_where_they_were_and_the_forbidden_one_puts_the_arm_on_the_controls_own_floor"
+  ],
+  [
+   "P15",
+   2791,
+   "3.3387380",
+   "3.338738",
+   "P15_the_angular_label_crosses_the_lift_untouched_and_the_amplitude_does_not_because_the_lift_is_purely_imaginary_conformal_time_so_what_it_adds_is_an_envelope_with_exactly_no_phase"
+  ],
+  [
+   "P7",
+   1863,
+   "186.135",
+   "186.1350",
+   "P15_the_licensed_rebuild_leaves_all_three_rigidity_numbers_where_they_were_and_the_forbidden_one_puts_the_arm_on_the_controls_own_floor"
+  ],
+  [
+   "P6",
+   353,
+   "186.135",
+   "186.1350",
+   "P15_the_licensed_rebuild_leaves_all_three_rigidity_numbers_where_they_were_and_the_forbidden_one_puts_the_arm_on_the_controls_own_floor"
+  ]
+ ],
+ "rounded_rows": [],
+ "gate_only_rows": [
+  [
+   "P15",
+   2791,
+   "1.4011",
+   "1.401",
+   1.9999999999997797,
+   "P15_the_kernels_distance_is_the_observers_own_flat_slice_so_the_rate_rule_does_reach_it_and_the_disagreement_with_the_sky_is_real"
+  ]
+ ],
+ "unestablished_rows": [
+  [
+   "P15",
+   883,
+   "1125.1",
+   "1125.11",
+   0.1999999999998181,
+   "P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number"
+  ],
+  [
+   "P15",
+   883,
+   "811.6",
+   "811.59",
+   0.1999999999998181,
+   "P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number"
+  ],
+  [
+   "P15",
+   2791,
+   "0.4390",
+   "0.438985966",
+   0.2806799999999221,
+   "P07_the_back_seam_is_the_laps_one_non_degenerate_horizon_and_its_surface_gravity_is_the_beads_own_acceleration_there"
+  ],
+  [
+   "P7",
+   1851,
+   "1125.1",
+   "1125.11",
+   0.1999999999998181,
+   "P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number"
+  ],
+  [
+   "P7",
+   1851,
+   "811.6",
+   "811.59",
+   0.1999999999998181,
+   "P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number"
+  ],
+  [
+   "P18",
+   1526,
+   "1125.1",
+   "1125.11",
+   0.1999999999998181,
+   "P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number"
+  ],
+  [
+   "P18",
+   1526,
+   "811.6",
+   "811.59",
+   0.1999999999998181,
+   "P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number"
+  ],
+  [
+   "P18",
+   1832,
+   "1125.1",
+   "1125.11",
+   0.1999999999998181,
+   "P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number"
+  ],
+  [
+   "P18",
+   1832,
+   "811.6",
+   "811.59",
+   0.1999999999998181,
+   "P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number"
+  ]
+ ],
+ "withheld_rungs": [
+  "ROUNDED"
+ ],
+ "rung_decoy_rate": {
+  "VERBATIM": 0.105263,
+  "EXACT-VALUE": 0.147368,
+  "ROUNDED": 0.252632,
+  "GATE-ONLY": 0.410526
+ },
+ "threshold": 0.2,
+ "tolerance_reading": 95,
+ "elsewhere": [],
+ "failures": []
+}

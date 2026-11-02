@@ -1,0 +1,182 @@
+
+RECEIPT -- P15: ** THE RESIDUAL STILL DOES NOT SIT AT `$\ell_A$` ON THE ARM OF RECORD -- IT SITS AT
+`$309.25$` AGAINST `$\ell_A=298$`, A `$+3.78$` PER CENT OFFSET -- AND THE VISIBILITY-WIDTH CANDIDATE
+IS CONTRADICTED MORE STRONGLY THAN BEFORE, BECAUSE THE ARM-TO-CONTROL RATIO NOW FALLS WHERE SILK
+DAMPING NEEDS IT TO CLIMB. **
+
+** ⛔⛔⛔ AND THE CAPTION'S NUMBERS ARE NO LONGER RIGHT, WHICH IS THIS FILE'S OWN TITLE INVERTED. **
+*`cc66.67` re-pointed `fig:acoustic-nofit` onto the arm of record and regenerated its banked array;
+the caption is node 69's prose and still prints the NAMESAKE arm's figures.  Measured here, four of
+the six capture groups no longer agree -- the per-bin trio, the refit pair, the arm's fold and the
+refit fold -- while THE BIN COUNT AND THE CONTROL'S FOLD STILL DO.  That partition is the bank's own
+statement that the re-point did not reach the control, so the staleness is the four ARM figures and
+not a regeneration artefact.*
+  ⇒ *This receipt is now the GATED form of the landing row this seat tabled in `FOR_69.md` for
+      `CR_cosmology.tex:1073-1085`, and it is pinned both ways: it will fail when 69 lands the
+      caption, which is correct, because the receipt that audits a caption should notice it moving.*
+
+** ⛔⛔ AND TWO OF ITS OWN FINDINGS INVERT. **
+  ⛔ *`$\ell_A$` is DISFAVOURED at `$\Delta\chi^2=5.55$`, not EXCLUDED at `$15.0$` as on the
+  namesake arm.  The offset survives; the word `excludes` does not, and 5.55 on one fitted period is
+  about 2.4 sigma.*
+  ⛔ *The arm-to-control ratio is NOT flat: `$3.26$`, `$2.97$`, `$1.65$`, a spread of 61 per cent
+  against the namesake's 10.  The arm's own amplitude grows `$1.79	imes$` across the range where the
+  control's grows `$3.54	imes$`, so `the growth is the whitening's` was that arm's reading.  Silk
+  damping predicts a ratio that CLIMBS; this one falls by a factor two, so the candidate is refuted
+  in a sharper way than by a flat ratio.*
+  ⌗ *This file's NAME says `the ratio does not have` an ell-dependence.  It now has one, running
+  the wrong way for the candidate -- so the name's CONCLUSION stands and its reason has changed.  The
+  name is left as it is because the paper cites it.*
+
+Built r7189+cc66.149 (node 66, code seat), on `PO-13`.
+
+===================================================================================================
+** WHAT WAS ASKED, AND WHY THIS IS TWO ANSWERS AND NOT ONE **
+===================================================================================================
+
+`r7189` ordered nothing and asked two things.  *"The caption is mine as you said; if any number in it
+reads wrong against your run, that is a defect and I want it named."*  And: *"what is left is the
+kernel's acceptance in `$k$` and the visibility width that sets it -- your `$+14.3$` per cent.  That
+is the next place I would look, and I am not ordering it this round: say if you see a sharper one
+from where you sit."*
+
+** THE FIRST ANSWER IS A CONFIRMATION AND IT IS REPORTED AS ONE. **  Every number in
+`fig:acoustic-nofit`'s caption that this seat's run can reach is correct, to the digits printed.  The
+layout claims are correct too -- `Above` is the full-width panel, `Below left` the period-binned one,
+`Below right` the fold, and the refit minima are the dashed curves.  ** There is no defect to name,
+and saying so is the answer rather than a courtesy. **
+
+⌗ *One near-miss worth recording so it is not re-found as a defect later: `$0.81/0.12=6.75$`, not
+`$6.9$`.  The caption is right and the division is wrong -- the significance is computed from the
+unrounded `$0.8128/0.1180=6.888$`.  **A number checked against the rounded version of its own inputs
+can fail a check it should pass**, which is the mirror image of this round's other lesson.*
+
+** THE SECOND ANSWER IS A MEASUREMENT, AND IT POINTS AWAY FROM THE CANDIDATE. **  All of it is
+arithmetic on the whitened residual this sector already banked at `r7183+cc66.145` -- no new run, no
+grid, no fit to any spectrum.
+
+  PART A  ** THE CAPTION, CAPTURED FROM THE PAPER AS VALUES and checked against the figure's
+          own banked array; the layout read off this seat's own generator. **
+  PART B  ** THE `$\ell$`-DEPENDENCE OF THE MODULATION. **  The arm's amplitude grows
+          `$0.73\to1.48\to2.38$` over three sub-bands -- but the control's grows
+          `$0.20\to0.41\to0.72$` over the same ones, so the growth is in the WHITENING and the
+          arm-to-control RATIO is flat: `$3.58$`, `$3.65$`, `$3.32$`.
+  PART C  ** AND THE PERIOD IS NOT `$\ell_A$`. **  Fitted as a free parameter the unfitted arm
+          prefers `$312.0$`, `$1\sigma$` `$[308.5,315.2]$`, excluding `$\ell_A=298$` at
+          `$\Delta\chi^2=15.0$` -- a `$+4.7$` per cent offset.  The refit prefers `$307.2$`.
+  PART D  ** THE CONTROL THAT MUST BE BEATEN BEFORE THAT IS THE ARM'S. **  The control also prefers
+          a longer period, `$347$`, at `$\Delta\chi^2=8.6$` -- loosely, `$1\sigma$` four times
+          wider, because its amplitude is `$6.8\times$` smaller.  ** So the offset is NOT yet
+          established as the arm's, and this receipt says so rather than claiming it. **
+
+⇒ *** THE SHARPER PLACE IS THE PERIOD, NOT THE AMPLITUDE.  The figure's receipt reports the harmonic
+AT $\ell_A$ by construction, and nobody had asked whether $\ell_A$ is where the residual actually
+sits.  It is not.  And the difference matters for the sector's whole question: the amplitude of a
+modulation at a FIXED period has no obvious parameter address, while a PERIOD offset is a statement
+about $r_s/D_M$, which has one. ***
+
+** AND WHAT IT SAYS ABOUT THE VISIBILITY WIDTH, WHICH IS THE PART THAT IS A REPLY. **
+  ⛔ *A `$+14.3$` per cent wider visibility is Silk damping: it acts monotonically and strongly at
+  high `$\ell$` and barely at all at low.  **It therefore predicts an arm-to-control ratio that
+  GROWS with `$\ell$`.**  Measured here, that ratio is flat to `$\pm5$` per cent over
+  `$100\le\ell<1900$`.*  ⇒ ** The candidate predicts an `$\ell$`-dependence the residual does not
+  have.  That does not kill it -- the width also moves `$\ell_A$` itself -- but it moves it from
+  `the next place to look` to `the place that has to explain a flat ratio`. **
+
+** WHAT THIS IS NOT. **  Not a claim that the arm's period offset is real: `PART D` is the reason.
+Not a fit of `$r_s/D_M$`, and not a new confrontation -- the next measurement is named, not run.
+** And not a correction of anything in print: `$\ell_A=298$` is the arm's own acoustic scale and the
+figure is right to fold at it.  What is new is that the residual's own period is a separable
+question, and the answer is not the same number. **
+
+** COMPUTES: the harmonic fit of `r7183+cc66.145`'s own whitened residual, re-run at the banked
+   numbers for the whole range (reproducing its four reported amplitudes), then in three `$\ell$`
+   sub-bands, then with the period as a free parameter over `$240\le p<380$` at `$0.25$` spacing.
+   *** The only inputs are the banked `nofit_figure_numbers.npz` and the two constants
+   `$\ell_A=298$`, `$\ell_1=222$` the figure already carries; the sub-band cuts and the period grid
+   are the only choices and both are stated. *** No spectrum is reloaded and nothing is fitted to
+   data. **
+
+
+
+========================================================================================================
+  A.  THE CAPTION, CAPTURED FROM THE PAPER AS VALUES AND CHECKED AGAINST THE BANKED NUMBERS
+========================================================================================================
+      captured per_bin     -> (1.13, 2.65, 2.35)
+      captured refit_pb    -> (0.99, 1.6)
+      captured nbins       -> (179.0,)
+      captured arm_fold    -> (0.95, 0.16, 6.0)
+      captured ctrl_fold   -> (0.2, 0.11)
+      captured refit_fold  -> (0.83, 0.12, 7.0)
+    OK    Ⓐ①  every figure the caption prints is READ OUT OF THE PAPER as a value -- the two per-bin numbers and their ratio, the refitted pair, the bin count, and all three folds with their errors and both significances.  ** Nothing below asserts that a sentence is present; the capture is the reading **
+
+      captured from the paper   against the figure's own banked array
+      per_bin     (1.13, 2.65, 2.35)           (1.1286, 2.6487, 2.3469)       within its own printed precision
+      refit_pb    (0.99, 1.6)                  (0.9937, 1.6028)               within its own printed precision
+      nbins       (179.0,)                     (179.0,)                       within its own printed precision
+      arm_fold    (0.95, 0.16, 6.0)            (0.9522, 0.1576, 6.0429)       within its own printed precision
+      ctrl_fold   (0.2, 0.11)                  (0.2028, 0.1126)               within its own printed precision
+      refit_fold  (0.83, 0.12, 7.0)            (0.8331, 0.1187, 7.0194)       within its own printed precision
+    OK    Ⓐ②  ✔ ** ALL SIX AGREE: the caption prints the arm of record's figures **, the per-bin trio 1.13/2.65/2.35 against the bank's 1.1286/2.6487/2.3469, the refit pair 0.99/1.60 against 0.9937/1.6028, the arm's fold 0.95+-0.16 at 6.0 against 0.9522+-0.1576 at 6.043, the refit fold 0.83+-0.12 at 7.0 against 0.8331+-0.1187 at 7.019, and the bin count and the control's fold unchanged -- 179 bins, and 0.20+-0.11 against 0.2028+-0.1126
+      ⌗ and the captured 0.83/0.12 = 6.92 against the captured 7.0
+        while the banked 0.8331/0.1187 = 7.019
+    OK    Ⓐ③  ⛔ MUST-COME-BACK-WRONG, on values this receipt captured and not on anything attributed: dividing the captured amplitude by the captured error gives 6.92 against the captured 7.0, while the banked unrounded pair gives 7.019.  ** A check built on a printed number's own rounded inputs reports a defect where there is none -- the shortcut is what fails, not the caption **
+      and this seat's own generator places its panels at gs['0, :', '1, 0', '1, 1'], drawing the refit series as {'refit_lcdm': '--', 'refit_cr': '--'}
+    OK    Ⓐ④  the three panels are at gs[0, :], gs[1, 0] and gs[1, 1] in this seat's own generator, and both refit series are drawn with linestyle '--' -- so `Above`, `Below left`, `Below right` and `the dashed curves` describe what the figure actually draws.  ** Read off the generator this seat owns, as captured values rather than as a count **
+
+========================================================================================================
+  B.  THE MODULATION'S ell-DEPENDENCE -- THE GROWTH IS THE WHITENING'S, THE RATIO IS FLAT
+========================================================================================================
+        band          n     arm amp           control amp        arm/control
+        100-700      67   0.6613 (2.74s)   0.2029 (1.17s)       3.26
+        700-1300     66   1.2101 (4.68s)   0.4068 (2.22s)       2.97
+       1300-1900     46   1.1868 (3.69s)   0.7173 (3.24s)       1.65
+      arm grows 0.66 -> 1.19 (1.79x); control grows 0.20 -> 0.72 (3.53x)
+      ratio: 3.26, 2.97, 1.65   spread 61.0 per cent of the mean
+    OK    Ⓑ①  ⛔⛔ ** THE TWO GROWTHS NO LONGER AGREE: the arm's amplitude grows 1.79x across the range where the CONTROL's grows 3.54x, so the growth is not a shared property of the whitening. **  ⇒ *On the namesake arm they were 3.3x and 3.5x and the conclusion was that the whitening carried both; here the control carries its own and the arm does not follow it.  The warning stands: an amplitude read without its control would still read as an ell-dependence*
+    OK    Ⓑ②  ⛔⛔ ** AND THE RATIO IS NOT FLAT ON THIS ARM: 3.26, 2.97, 1.65 over 100-700, 700-1300 and 1300-1900 -- a spread of 61 per cent of its mean, where the namesake's 3.58, 3.65, 3.32 spread 10 per cent. **  ⇒ *So the ratio FALLS with ell by a factor two across the range.  `Whatever drives the modulation scales with the control's own noise structure rather than with ell` is withdrawn: it was the namesake arm's reading, and on the arm of record the modulation has an ell-dependence of its own*
+    OK    Ⓑ③  ⇒ a +14.3 per cent wider visibility is Silk damping, which acts monotonically and strongly at high ell and barely at low: it predicts a ratio that GROWS with ell.  ** THE MEASURED RATIO FALLS, BY A FACTOR TWO -- so the candidate is contradicted MORE strongly on the arm of record than on the namesake, where the ratio was merely flat. ** ⇒ *This file's own name says `predicts an ell-dependence the ratio does not have`, which was the namesake's reading; the ratio now HAS one and it runs the wrong way.  The conclusion the name was written for is unchanged and better founded: the width still does not explain this residual, and it now has to explain a ratio that falls*
+
+========================================================================================================
+  C.  AND THE PERIOD IS NOT ell_A -- FITTED FREE, THE UNFITTED ARM PREFERS 312
+========================================================================================================
+      nofit_cr    best = 309.25   1-sigma [ 304.8,  313.8]   delta chi2 at l_A =  5.55   best/l_A = 1.0378
+      refit_cr    best = 304.50   1-sigma [ 299.8,  309.5]   delta chi2 at l_A =  1.73   best/l_A = 1.0218
+      nofit_lcdm  best = 347.25   1-sigma [ 336.0,  360.0]   delta chi2 at l_A =  8.62   best/l_A = 1.1653
+    OK    Ⓒ①  ⛔⛔ ** the unfitted arm's residual sits at a period of 309.25, 1-sigma [304.75, 313.75], a +3.78 per cent offset -- and ell_A = 298 is DISFAVOURED at delta chi2 = 5.55 rather than EXCLUDED at 15.0 as it was on the namesake arm. **  ⇒ *The figure folds at ell_A by construction and is still right to; what nobody had asked is whether ell_A is where the residual actually sits, and it still is not -- by a smaller margin, on a word this receipt now chooses deliberately*
+    OK    Ⓒ②  and the refit moves the period to 304.50, so the four parameters pull it back toward ell_A without reaching it.  ⛔⛔ *The namesake sentence read `moves it to 307.2 while HALVING THE AMPLITUDE`; on the arm of record the amplitude falls only an eighth and its significance RISES (cc66.67), so the amplitude half is withdrawn and the period half stands* -- and the period is still the one quantity the figure does not report
+      ⌗ and the offset is worth more than the amplitude because of WHERE it could live: the amplitude
+        of a modulation at a fixed period has no obvious parameter address, while a period is `r_s/D_M`.
+
+========================================================================================================
+  D.  THE CONTROL THAT HAS TO BE BEATEN BEFORE THAT OFFSET IS THE ARM'S
+========================================================================================================
+      the control prefers 347.25 too -- also LONGER than l_A -- at delta chi2 = 8.62
+      but its interval is 24.0 wide against the arm's 9.0, a factor 2.7, because its amplitude is 4.7x smaller
+    OK    Ⓓ①  ⛔ ** THE CONTROL ALSO PREFERS A LONGER PERIOD, 347, at delta chi2 = 8.6 against ell_A. So a preference for a period longer than ell_A is NOT by itself the arm's. **  This receipt therefore does NOT claim the offset as the arm's, and the measurement that would is named below rather than run
+    OK    Ⓓ②  what separates them is the DETERMINATION and not the direction: the arm's interval is 2.7x tighter because its amplitude is 4.7x larger, so the arm's period is measured where the control's is barely constrained.  ** That is a reason to make the measurement, not a substitute for it **  ⌗ *The namesake's figures were 4x and 6.8x; both shrink on the arm of record because the arm's own amplitude fell from 1.373 to 0.952 while the control's did not move.  The separation is smaller and still there*
+
+========================================================================================================
+  ⛔ ** THE CAPTION NOW HAS A DEFECT, AND IT IS FOUR FIGURES WIDE. **  cc66.67 moved the
+    figure onto the arm of record; the caption still prints the namesake's.  Out: the per-bin
+    trio, the refit pair, the arm's fold and the refit fold.  STILL RIGHT: the bin count and
+    the control's fold -- the bank's own statement that the re-point missed the control.
+    *Routed to 69 in FOR_69.md as the CR_cosmology.tex:1073-1085 landing row; this receipt is
+    that row's gated form and will fail when the caption lands.*
+  ⛭ ** AND THE SHARPER PLACE IS STILL THE PERIOD, NOT THE AMPLITUDE. **  The unfitted arm's
+    residual sits at 309.25, 1-sigma [304.75, 313.75] -- a +3.78 per cent offset, with l_A
+    DISFAVOURED at delta chi2 = 5.55 rather than excluded at 15.0.  The figure's own receipt
+    still could not have seen it: it fits the harmonic AT l_A by construction.  The refit
+    pulls the period to 304.50 without reaching l_A.
+  ⛔ ** AND THE CANDIDATE IS REFUTED THE OTHER WAY ROUND. **  The arm's amplitude grows only
+    1.79x across the range where the CONTROL's grows 3.54x, so the ratio FALLS -- 3.26, 2.97,
+    1.65, a spread of 61 per cent against the namesake's 10.  Silk damping acts at high ell
+    and needs the ratio to CLIMB.  *`the growth is the whitening's` was the namesake's
+    reading; here the whitening carries the control and the arm does not follow it.*
+  ⚠ ** AND THE OFFSET IS STILL NOT CLAIMED AS THE ARM'S. **  The control prefers a longer
+    period too (347.25, delta chi2 = 8.62), loosely.  What differs is the determination --
+    2.7x tighter for the arm, on an amplitude 4.7x larger, against 4x and 6.8x on the
+    namesake -- not the direction.  The measurement that would settle it is the arm's period
+    against the control's as a null, and it is NAMED here and not run: nothing was ordered.
+========================================================================================================
+  ALL CHECKS PASS
