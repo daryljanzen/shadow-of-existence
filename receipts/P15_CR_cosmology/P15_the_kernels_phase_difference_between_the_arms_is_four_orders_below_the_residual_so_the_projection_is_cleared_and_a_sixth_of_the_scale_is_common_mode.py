@@ -540,13 +540,21 @@ gate("⛭⛭⛭ ** Ⓗ⑤ l.2385's `0.27 per cent` IS THE NAMESAKE'S AND IS ITSE
      "in the damping ratio at the per-cent level -- survives on both arms.*",
      bool(abs(_sep_ns_full) > 1.1 * abs(_sep_ns) and _sep_ao_full > 0
           and _sep_ns_full < 0 and 0.0068 < _sep_ao_full < 0.0096))
-gate("⛔ Ⓗ⑥ and the paragraph's own residual is NOT this receipt's: l.2383 compares against "
-     "`-78.3` where this file computes against -96.6, so every `orders below` in that paragraph is "
-     "quoted against a different denominator than the gates here use.  *Routed, not resolved: "
-     "which residual the paragraph means is 69's to say, and the clearance survives either way "
-     "(-78.3 puts the arm-of-record fixed-tilt difference 3.27 orders below rather than 3.37).*",
-     bool(abs(RESIDUAL - -96.6) < 1e-9 and abs(_P_RES - -78.3) < 1e-9
-          and abs(_P_RES - RESIDUAL) > 10.0))
+# ⛭ ** Ⓗ⑥ IS A DISJUNCTION OVER THE TWO LEGITIMATE STATES OF ONE SENTENCE, because this turn
+#   ROUTES that sentence's figure to 69 for a ruling.  A hard pin on `-78.3` would fail the moment
+#   69 acts on my own routing -- the gate's own warning, "fails on SUCCESS when the sentence said
+#   something was open".  So both states pass and the receipt PRINTS which one it found.
+_RES_STATES = {-78.3: 'the state this turn found -- a different denominator from this receipt',
+               -96.6: "brought onto this receipt's own residual, which is what r7655 routed"}
+print(f"    l.2383's residual reads {_P_RES} -- {_RES_STATES.get(_P_RES, 'NEITHER KNOWN STATE')}")
+gate("⛔ Ⓗ⑥ the paragraph's own residual against this receipt's, as a DISJUNCTION over the two "
+     "states that sentence may legitimately be in: l.2383 compares against `-78.3` where this file "
+     "computes against -96.6, so every `orders below` in that paragraph is quoted against a "
+     "different denominator than the gates here use.  *Routed, not resolved: which residual the "
+     "paragraph means is 69's to say, and the clearance survives either way -- -78.3 puts the "
+     "arm-of-record fixed-tilt difference 3.27 orders below rather than 3.37.  ** This gate passes "
+     "in EITHER state and says which, so acting on the routing does not break it. **",
+     bool(abs(RESIDUAL - -96.6) < 1e-9 and _P_RES in _RES_STATES))
 
 head("SUMMARY")
 # ═════════════════════════════════════════════════════════════════════════════════════════════════
