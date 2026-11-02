@@ -1,0 +1,176 @@
+
+RECEIPT -- P15: ** `r7197`'s ORDERED NULL, ON THE ARM OF RECORD, RUN ON THE BANKED RESIDUAL WITH NO
+NEW SPECTRUM.  THE DIFFERENCE IS `$1.07\sigma$` -- NOT SIGNIFICANT -- AND THE REASON IS THE WHOLE
+RESULT: THE ERROR ON IT IS `$35.65$`, OF WHICH THE CONTROL CONTRIBUTES `$35.52$` AND THE ARM
+`$3.35$`.  ** THE CONTROL HAS NO MEASURABLE PERIOD, SO IT CANNOT SERVE AS A NULL. **  AGAINST
+`$\ell_A$`, WHICH IS KNOWN TO `$0.15$` PER CENT WHERE THE CONTROL'S PERIOD IS KNOWN TO `$10.6$`, THE
+ARM'S PERIOD IS `$+11.25$` HIGH AT `$3.36\sigma$` -- AND THAT OFFSET IS *EXACTLY* A LINEAR PHASE
+DRIFT OF `$-78.3^\circ$` AT FIXED `$\ell_A$`, WHICH IS AN IDENTITY AND NOT A FIT PREFERENCE. **
+
+** ⛔⛔ EVERY FIGURE ABOVE MOVED AT `r7645`+`cc66.70`, AND THE CONTROL'S DID NOT. **  *`cc66.67`
+re-pointed `fig:acoustic-nofit` onto the arm of record and this receipt reads its banked residual.
+The namesake arm gave `$0.97\sigma$`, an error of `$36.3$` split `$35.5$`/`$3.0$`, and `$+14.00$` at
+`$4.69\sigma$` with a `$-96.6^\circ$` drift.  The CONTROL's own error is unchanged at `$35.52$` --
+the re-point does not reach it -- so the factor between them falls from `$12$` to `$10.6$` because
+the ARM's error grew, from `$2.99$` to `$3.35$`.*
+  ⇒ *** WHAT SURVIVES AND WHAT WEAKENS: the null is still not significant and still not
+      significant FOR THE CONTROL'S REASON, which is the result the order asked for in that form.
+      The offset against `$\ell_A$` survives and loses a third of its strength, `$4.69\sigma$` to
+      `$3.36$`.  The drift IDENTITY is arm-independent -- the two models still have the same residual
+      sum of squares to `$1.1	imes10^{-13}$` -- and only the drift's size moves. ***
+  ⛔ *AND FOUR OF THIS FILE'S GATES PASSED ON STALE LABELS, their inequalities surviving the
+  re-point while the figures printed beside them were the namesake arm's.  That is the same class as
+  `cc66.67`'s own answer block, found here by reading the run rather than by a gate: a condition that
+  survives a re-point does not make the prose beside it true.  All four now pin their own figures.*
+
+Built r7197+cc66.153 (node 66, code seat), on `PO-13`.
+
+===================================================================================================
+** THE ORDER, AND WHY THE ANSWER IS BOTH BRANCHES AT ONCE **
+===================================================================================================
+
+`r7197`: *"The arm's preferred period against the control's as a null, with the period free in both
+arms and the DIFFERENCE as the statistic."*  With three things to keep apart: the difference and not
+either period alone; what a `$+4.7$` per cent offset would MEAN given `$\ell_A$` is right to
+`$0.15$` per cent; and -- *"if the difference is NOT significant, that is a complete result and I
+want it in that form."*
+
+** IT IS NOT SIGNIFICANT, AND THE FORM THE ORDER ASKED FOR TURNS OUT TO CARRY MORE THAN A NULL. **
+The difference is `$-38.00$` observed against an error of `$35.65$`: `$1.07\sigma$`, with `$54$` per
+cent of draws at least as extreme.  ** But the error decomposes, and it is not shared: `$35.52$` of it
+is the control and `$3.35$` is the arm. **  ⇒ *The test as specified cannot discriminate -- not because the
+arm's period is uncertain, but because the control's is.  A null needs a null hypothesis the data can
+measure, and the control's period is measured to `$\pm10.6$` per cent.*
+
+  PART A  ** THE FORWARD MODEL, VERIFIED EXACTLY, WHICH IS WHAT LICENSES THE REST. **  The figure
+          whitens with the inverse Cholesky of the FULL bandpower covariance, not the diagonal;
+          `$L^{-1}(\text{model}-\text{data})$` reproduces all four banked whitened residuals to
+          one part in `$10^{-12}$` of their own scale -- one ulp, and *not* bit-exact, because the
+          blocked `cholesky`/`inv` sum in an order that depends on the thread count.  And then the
+          Monte Carlo is exact in one line: perturbing the data by its own
+          covariance perturbs the whitened residual by `$-z$` with `$z\sim N(0,I)$`, the SAME draw
+          in both arms, so their correlation is preserved rather than assumed away.
+  PART B  ** THE ORDERED STATISTIC. **  `$\Delta=-38.00$` observed, `$1.07\sigma$`, `$p=0.54$`.
+  PART C  ** AND THE DECOMPOSITION THAT IS THE RESULT. **  Arm `$309.17\pm3.35$`, control
+          `$334.65\pm35.52$` -- an error `$10.6\times$` larger, because its amplitude is
+          `$4.7\times$` smaller.  *The control's half of this line is unchanged.*
+  PART D  ** THE COMPARISON THAT IS INFORMATIVE, AND IT IS NOT THE ORDERED ONE. **  Against
+          `$\ell_A=298$`: `$+11.25$`, `$3.36\sigma$`, `$P(p\le\ell_A)=0.0015$`.
+  PART E  ** THE ARTEFACT CHECK. **  Giving the second harmonic its own freedom moves the
+          fundamental by `$+0.25$` and leaves the offset at `$2.90\sigma$` -- UNDER THREE, where
+          the namesake arm left `$4.90$` -- so it is not a single-harmonic fit absorbing harmonic
+          structure, and the margin it is not the fit's by has halved.  *`r7651+cc66.96`: this line
+          said `$4.90$` while `Ⓔ①` below printed `$2.90$`; the gate's condition survived the
+          re-point and the prose beside it did not.*
+  PART F  ** AND WHAT THE OFFSET IS, AS AN IDENTITY. **  A period of `$309.25$` and `$\ell_A$`
+          with a phase running linearly in `$\ell$` are the SAME two-dimensional model -- identical
+          residual sum of squares, to `$1.1\times10^{-13}$`.  ⇒ The offset IS a drift of
+          `$-78.3^\circ$` across `$104\le\ell\le1886$`, `$0.218$` of a period over the
+          `$5.98$` the range spans.  *`r7651+cc66.96`: the namesake arm's was `$-96.6^\circ$` at a
+          period of `$312$`, a quarter period over six.  The IDENTITY is arm-independent and only
+          its size moves -- which `Ⓕ①` says and this line did not.*
+
+⇒ *** SO THE ANSWER TO THE ORDER'S ITEM 2 IS NOT `$r_s/D_M$`.  `$\ell_A$` sets the comb's SPACING
+and is reproduced to $0.15$ per cent; what the residual carries is a DRIFT of the acoustic phase
+against $\ell$, at that correct spacing.  The quantity that could carry it is the peak phase's run
+with $\ell$ -- set by the baryon loading and the driving -- and not the ratio of two lengths. ***
+
+** WHAT THIS IS NOT, AND THE ASSUMPTION NAMED RATHER THAN SUPPLIED. **
+  ⛔ *Not a claim that the arm's period offset is a defect in the arm.*  `PART F` makes it a
+  statement about the phase's `$\ell$`-dependence; which term carries that is not measured here.
+  ⚠ ** THE ASSUMPTION THE BANKED DATA CANNOT CARRY, NAMED: the models' own uncertainty. **  *The four
+  banked spectra are point predictions with no parameter covariance banked beside them, so this null
+  propagates PLANCK's noise and nothing else.  That is the right error for `is the arm's period
+  separably different from the control's`, which is what was ordered.  It is NOT an error bar on how
+  far the period would move under refitting -- and `PART D`'s refitted row is the measured stand-in
+  for that, not a substitute.*
+
+** COMPUTES: the four whitened residuals re-derived from the Planck TT data and covariance and
+   checked against the bank; one free-period profile per arm over `$240\le p<400$` at `$0.25$`; a
+   `$4000$`-draw Monte Carlo on the shared data noise; the same profile with two harmonics; and one
+   algebraic identity.  *** The window `$100\le\ell\le1900$`, the anchor `$\ell_1=222$`, the
+   period grid and the draw count are the only choices and all four are stated. ***  No new
+   spectrum, no grid, nothing fitted to data. **
+
+
+
+========================================================================================================
+  A.  THE FORWARD MODEL, VERIFIED AGAINST THE BANK -- THE WHITENING IS THE FULL COVARIANCE'S
+========================================================================================================
+      kept bins 179 against the bank's 179; ell agree: True; data agree to 0.0e+00
+      nofit_cr    max|L^-1(model-data) - banked whitened| = 3.55e-15
+      nofit_lcdm  max|L^-1(model-data) - banked whitened| = 1.55e-15
+      refit_cr    max|L^-1(model-data) - banked whitened| = 2.66e-15
+      refit_lcdm  max|L^-1(model-data) - banked whitened| = 1.78e-15
+      worst 3.55e-15 against a residual scale of 5.218 -- 6.8e-16 of it, and the bound asked is 5.2e-12
+    OK    Ⓐ①  the figure's whitening is the inverse Cholesky of the FULL bandpower covariance and not the diagonal, and reproducing it from the Planck data and covariance returns all four banked residuals to the arithmetic's own precision -- one part in `1e-12` of the residual scale, where the margin measured is one ulp.  ** A Monte Carlo on a forward model that did not reproduce the bank would be a measurement of the reconstruction **
+      and the perturbation is exact in one line: L^-1(model - (data + L z)) = w_obs - z,
+      so a draw z ~ N(0, I) shared by BOTH arms carries their correlation rather than
+      assuming it away -- which a diagonal-sigma Monte Carlo would have done silently.
+    OK    Ⓐ②  and that identity is checked numerically rather than taken: perturbing the DATA by `chol(C) z` and re-whitening gives the same vector as subtracting `z` from the whitened residual, to 1e-10
+
+========================================================================================================
+  B.  THE ORDERED STATISTIC -- THE DIFFERENCE, WITH THE PERIOD FREE IN BOTH ARMS
+========================================================================================================
+      observed   arm 309.25   control 347.25   difference -38.00        (l_A = 298)
+      4000 draws, shared noise:   difference -25.48 +- 35.65
+      ⇒ 1.07 sigma from zero, and 54 per cent of draws are at least as extreme
+    OK    Ⓑ①  ** THE ORDERED DIFFERENCE IS NOT SIGNIFICANT: 1.07 sigma, with 54 per cent of draws at least as extreme. **  That is the order's third branch and it is reported as the complete result it asked for, not as a failure to find something.  ⌗ *The namesake arm gave 0.97 sigma and 56 per cent; the conclusion is unchanged and the figures are this arm's*
+
+========================================================================================================
+  C.  AND THE DECOMPOSITION IS THE RESULT -- THE CONTROL HAS NO MEASURABLE PERIOD
+========================================================================================================
+      nofit_cr    observed  309.25   MC  309.17 +-  3.35   (1.1 per cent)
+      nofit_lcdm  observed  347.25   MC  334.65 +- 35.52   (10.6 per cent)
+      refit_cr    observed  304.50   MC  305.44 +-  8.42   (2.8 per cent)
+      error on the difference 35.65;  control 35.52, arm 3.35  -- the control is 10.6x the arm
+    OK    Ⓒ①  ** the error on the ordered difference is 35.65, of which the control contributes 35.52 and the arm 3.35.  So the test cannot discriminate because of the CONTROL, not the arm. **  The arm's period is measured to 1.1 per cent; the control's to 10.6.  ⌗ *The namesake arm gave 36.3 / 35.5 / 3.0 and a factor 12; here the factor is 10.6, because the ARM's error grew from 2.99 to 3.35 while the control's did not move -- the re-point does not reach the control*
+    OK    Ⓒ②  ⇒ so `the difference, not either period alone` is right as a principle and empty as a statistic here: a null needs a null hypothesis the data can measure, and the control's preference for a long period is noise.  ** This is the trap the order's own item 1 named, arriving from the other side **
+
+========================================================================================================
+  D.  THE COMPARISON THAT IS INFORMATIVE -- AGAINST ell_A, WHICH IS KNOWN TO 0.15 PER CENT
+========================================================================================================
+      arm, nothing fitted:  309.25 against l_A = 298   offset +11.25 (+3.78 per cent)   3.36 sigma   P(p <= l_A) = 0.0015
+      arm, refitted:        304.50   offset +6.50   0.77 sigma   (MC +- 8.42)
+    OK    Ⓓ①  ** against ell_A the unfitted arm's period is +11.25 high at 3.36 sigma, with fewer than two draws in a thousand at or below ell_A. **  That is the comparison the data can make: ell_A is known to 0.15 per cent where the control's period is known to 10.6.  ⛔ *The namesake arm gave +14.00 at 4.69 sigma; the offset survives and WEAKENS by a third, which is the same direction as the amplitude and the delta chi^2 at cc66.70*
+    OK    Ⓓ②  and refitting pulls it toward ell_A AND widens its determination -- 304.50 at 0.77 sigma against 309.25 at 3.36, the error going 3.35 to 8.42 -- the same pattern the amplitude shows, now in the one quantity that figure does not report.  ⌗ *The namesake arm gave 307.25 at 1.05 against 312.00 at 4.69.  ⛔ And the AMPLITUDE half of that comparison no longer holds on this arm: cc66.67 measured the refit falling only an eighth with its significance RISING, so the `same pattern` is now the PERIOD's alone*
+
+========================================================================================================
+  E.  THE ARTEFACT CHECK -- A SECOND HARMONIC DOES NOT PULL THE FUNDAMENTAL BACK
+========================================================================================================
+      one harmonic   309.25   MC +- 3.35   offset 3.36 sigma
+      two harmonics  309.50   MC +- 3.97   offset 2.90 sigma   -- the fundamental moves +0.25
+    OK    Ⓔ①  ⛔ MUST-COME-BACK-WRONG: a single-harmonic fit to a residual with harmonic structure returns a BIASED period, so if the offset were that artefact, giving the second harmonic its own freedom would pull the fundamental back toward ell_A.  ** It moves it by +0.25 and leaves the offset at 2.90 sigma -- under three, where the namesake arm left 4.90.  The offset is still not the fit's, and the margin it is not the fit's by has halved. **
+
+========================================================================================================
+  F.  AND WHAT THE OFFSET IS -- A PHASE DRIFT AT FIXED ell_A, BY AN IDENTITY
+========================================================================================================
+      RSS, period free at 309.2        = 380.993850638
+      RSS, l_A fixed + linear phase run = 380.993850638
+      ⇒ the two are the SAME model, to 1.1e-13
+      and the drift it is: -78.3 deg across ell 104-1886 = 0.218 of a period over the 5.98 the range spans
+    OK    Ⓕ①  ** a period of 309.25 and ell_A with a phase running linearly in ell are the SAME two-dimensional model -- identical residual sum of squares, to 1.1e-13. **  So the offset is not a competing period: it IS a drift of -78.3 degrees across ell 104-1886, 0.218 of a period over the 5.98 the range spans, and that is an identity rather than a fit preference.  ⌗ *The namesake arm's drift was -96.6 degrees at a period of 312; the IDENTITY is arm-independent and only its size moves*
+    OK    Ⓕ②  ⇒ ** so the order's item 2 does not answer `r_s/D_M`. **  ell_A sets the comb's SPACING and the construction reproduces it to 0.15 per cent, while the offset is 25 times that error -- the namesake arm's was 31 times; what the residual carries is a drift of the acoustic PHASE at the correct spacing.  The quantity that could carry it is the peak phase's run with ell -- the loading and the driving -- and not a ratio of two lengths   (25.2 times the 0.15 per cent)
+
+========================================================================================================
+  ✔ ** THE ORDERED NULL IS NOT SIGNIFICANT -- 1.07 sigma, p = 0.54 -- and that is the
+    complete result in the form the order asked for. **
+  ⛭ ** AND THE REASON CARRIES MORE THAN THE NULL: the error on the difference is 35.65, of which the CONTROL contributes 35.52 and the arm 3.35.  The
+    control's period is measured to 10.6 per cent, so it cannot serve as a null at all. **  `the difference, not
+    either period alone` is right as a principle and empty as a statistic here.
+  ⛭ ** THE COMPARISON THE DATA CAN MAKE IS AGAINST ell_A, AND IT IS 3.36 SIGMA. **  The
+    unfitted arm sits +11.25 above an ell_A the construction reproduces to 0.15 per cent,
+    with 0.0015 of draws at or below it; refitting pulls it back without reaching it.
+    And it is not the fit's artefact: a second harmonic moves the fundamental by +0.25 and leaves the offset at 2.90 sigma.
+  ⇒ ** AND THE OFFSET IS EXACTLY A PHASE DRIFT, NOT A PERIOD. **  A period of 309.25 and ell_A
+    with a linearly running phase are the same model to 1.1e-13, so what the residual
+    carries is a drift of -78.3 degrees across the range -- 0.218 of a period over the 5.98 it spans.
+    ⇒ Item 2's answer is therefore NOT `r_s/D_M`: ell_A sets the spacing and is right to a
+    part in six hundred.  What could carry a running phase at correct spacing is the peak
+    phase itself -- the loading and the driving.  Named, not measured.
+  ⚠ The assumption the banked data cannot carry, named rather than supplied: the models have
+    no parameter covariance banked beside them, so this null propagates Planck's noise and
+    nothing else.  That is the right error for what was ordered and is not an error bar on
+    refitting; the refitted row is the measured stand-in, not a substitute.
+========================================================================================================
+  ALL CHECKS PASS

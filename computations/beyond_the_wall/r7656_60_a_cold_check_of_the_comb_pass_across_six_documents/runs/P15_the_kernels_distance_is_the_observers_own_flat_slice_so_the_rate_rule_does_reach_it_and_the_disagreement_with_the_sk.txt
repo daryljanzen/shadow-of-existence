@@ -1,0 +1,162 @@
+
+P15 receipt -- `r7099`'s Q1, ANSWERED: THE KERNEL'S DISTANCE IS THE OBSERVER'S OWN FLAT SLICE, SO THE
+RATE RULE DOES REACH IT, ALL THREE OF THE ORDER'S READINGS ARE SETTLED, AND THE DISAGREEMENT WITH THE
+SKY IS REAL.
+
+** THE ORDER. **  `r7099` asked the sector's last question -- *"what IS the comoving distance entering
+$j_\ell(k\chi)$ on this background?  Not which rate it should be built on -- that framing assumes the
+answer is one of two rates.  What the object is"* -- and named three live readings without recommending
+one, guessing that (3) was worth looking at first *"because it is cheap and it is the only one that
+could dissolve the conflict rather than resolve it."*
+
+⇒ *** (3) IS CHEAP AND IT DOES NOT DISSOLVE: the construction already made the identification it would
+have to break, and receipted it.  (2) IS REAL AS A FACT ABOUT THE LINE ELEMENT AND STILL DOES NOT MOVE
+THE KERNEL.  SO IT LANDS ON (1), AND THE DISAGREEMENT IS A RESULT ABOUT CR. ***
+
+** (3) -- "the kernel's argument and $D_M$ may not be the same object." **  *They are the same object,
+and `P15` says so in a sentence that carries a proposition behind it*: because the distance slicing is
+flat (`prop:flat`), *"the photons are projected through the FLAT geometry --- the comoving
+angular-diameter distance is $D_M = D_C$, the same flat-$\Lambda$CDM observable that places the
+acoustic scale at $\ell_A\approx301$ --- while only the SOURCE modes carry the closed-$S^3$
+quantization."*
+  ⛭ ** AND THE OBJECT (3) WAS REACHING FOR EXISTS, IS DISTINCT, AND IS ALREADY IN USE FOR A DIFFERENT
+  JOB. **  It is $r_0$, the layer's own areal radius, which sets the source's discrete spectrum
+  $k_L=\sqrt{L(L+2)}/r_0$ while $D_C$ does the projecting.  *This receipt reproduces both from the
+  background alone -- $r_0 = 5051$ Mpc and $D_C = 1.401\times10^{4}$ Mpc at `P15`'s own refit
+  background, with the stretch $D_C/r_0 = 2.77$ and the lowest mode at $\ell_2 = 7.85$ -- which are
+  four of the paper's parameter-free figures, calibrated here before anything new is asked.*
+  ⇒ *So the two-object structure the order hoped for is already present and already spent: the conflict
+  does not dissolve into a gap, because the gap is occupied.*
+
+** (2) -- "the projection is not the standard flat line-of-sight integral." **  ⛭⛭ *This is TRUE of the
+line element, and the exact statement of it is a one-line identity nobody in the sector seems to have
+written down*:
+
+        ds^2 = -d tau^2 + (dr/d chi)^2 d chi^2 + r^2 d Omega^2,     r = r(tau + chi)
+    ⇒   r / (dr/d tau~)  =  alpha tanh( 3 c tau~ / 2 alpha )  =  c / H       EXACTLY
+
+*verified here to ten decimals at $z = 0, 1, 10, 1090$ and $3\times10^{7}$ on both backgrounds, with
+$\sinh^{2}u_0 = x_0^{3}/2$ the exact bridge between the native parameterisation and the fitted one.*
+  ⇒ ** So in the proper frame the radial-to-angular ratio is the HUBBLE RADIUS. **  *In comoving-FRW
+  form the angular radius and the radial comoving distance are the same function; here they are not,
+  and that is precisely the sense in which the projection is not the standard integral.*
+  ⛔ ** AND IT STILL DOES NOT MOVE THE KERNEL'S ARGUMENT, because the standard form is not claimed on
+  THIS chart. **  `prop:flat` passes to the observer's own constant-$\tau$ slice, whose induced metric
+  is $dr^{2}+r^{2}d\Omega^{2}$ with vanishing Riemann tensor, and the projection is read there.  *The
+  non-synchrony $\tilde\tau=\tau+\chi$ is what lets flat distances and a closed $S^{3}$ coexist --
+  the paper calls that decoupling "the decoupling itself".*
+
+⛔⛭ ** AND THE TRAP THE QUESTION INVITES IS NAMED AND EXCLUDED, because it is the reading a careful
+seat would reach for next. **  Taken at face value, the line element's angular part $r^{2}d\Omega^{2}$
+makes the angular-diameter distance the areal radius itself, $D_A = r(\tilde\tau_e)$; combined with
+the construction's own redshift $1+z = r(\tilde\tau_0)/r(\tilde\tau_e)$ that gives
+
+        D_M = (1+z) D_A = r(tau~_0) = r_0 = CONSTANT at every redshift,
+
+*i.e. $5051$ Mpc rather than $1.401\times10^{4}$.*  ⇒ ** That reading is excluded twice over. **  It
+would put the acoustic scale at $\pi r_0/r_s$ -- computed here, and it misses the measured comb by
+more than a factor of two -- *and the $d\Omega$ it reads is the SdS static chart's, centred on the
+chart origin at $r=0$, which is the branch point and not the observer.*  **A chart's angle is not a
+sky.**
+
+⇒ ** (1) IS WHERE IT LANDS, AND NOW BY THREE INDEPENDENT ROUTES. **  `P07`'s rate rule names $D_M$ on
+the stacking side outright; `r7096`'s null-cone argument puts the photon-path lapse there; and the
+observer's own readout -- flat slice by `prop:flat`, exactly flat-$\Lambda$CDM by `sec:flatlcdm` -- is
+the stacking rate's $\sinh^{2/3}$ law with radiation absent.  *The three agree, and the implementation
+already does what they say.*
+  ⇒ *** SO THE DISAGREEMENT WITH THE SKY IS REAL, LOCALISED, AND A RESULT ABOUT CR RATHER THAN A
+  DEFECT -- which is the outcome the order said to state plainly if that is where it lands. ***
+
+⌗ ** THE ONE REMAINDER, AND IT IS THE ONLY PLACE THIS CHAIN COULD STILL MOVE. **  *The harmonic
+expansion has never been derived IN the proper frame.*  `j_\ell(k D_C)` is licensed by an
+IDENTIFICATION -- the observer's slice is flat, the observer's readout is exactly flat
+$\Lambda$CDM -- rather than by expanding a plane wave on the constant-$\tau$ slice with the observer
+at a general point of it, which is where the chart's origin stops being the centre of anything.
+  ⇒ ** What would settle it is bounded and nobody has run it: expand on that slice with the observer
+  off the origin and show the $\ell$-space kernel is $j_\ell(k D_C)$ with $D_C$ the light-travel
+  distance.  ⛔ It is NOT ordered here and this receipt does not do it. **  *It is named because the
+  honest form of "(1) is where it lands" includes where it could fail to.*
+
+** COMPUTES: the background objects at TWO stated parameter sets and nothing else.  *** $(H_0,
+\Omega_m) = (68.60, 0.2973)$, the refit background `P15` fits, and $(73.00, 0.3066)$, the instrument's
+own default -- every figure here is reported at one of the two and labelled with which.  The derived
+quantities are $x_0$, $lpha$, $r_N$, $r_0$, $D_C(z_{
+m rec}=1089.9)$, $r_{s,
+m leaf}$ and the
+ratios built from them; $\omega_b = 0.0224$ enters only the baryon loading in $r_s$.  *** Nothing is
+computed at a third parameter set, and no spectrum, likelihood or transfer is computed at any. *** **
+
+⚠ ** SCOPE. **  No transfer is run and no spectrum computed; `cc66` holds the queue.  `cc66`'s
+three-grid table is NOT re-measured -- the order said it is verified there and this receipt takes it as
+given, using it nowhere except to name which configuration the sky prefers.
+
+
+  ==========================================================================
+  A.  THE CALIBRATION: FOUR OF `P15`'s PARAMETER-FREE FIGURES, REPRODUCED FROM THE BACKGROUND
+  ==========================================================================
+      the refit background `P15` fits:  x_0 = 1.6783  alpha =  5213.3  r_N =  3009.9  r_0 =  5051.5  D_C =  14011.5 Mpc
+      the instrument's own default:  x_0 = 1.6538  alpha =  4931.8  r_N =  2847.4  r_0 =  4709.0  D_C =  13004.6 Mpc
+  [PASS] ⛭ the layer's areal radius comes out at `r_0 = 5051` Mpc, which is `P15`'s own parameter-free figure
+  [PASS] ⛭ and the projection distance at `D_C = 1.4011e4` Mpc, the paper's own, to half its printed ulp -- a bracket the other configuration's 1.395e4 fails by 123 times
+  [PASS] ⛭ so the STRETCH is 2.774 against the paper's 2.774 -- the ratio of the two objects the order asked whether to distinguish
+  [PASS] ⛭ and the lowest closed-$S^3$ mode lands at ell_2 = 7.85 against the paper's 7.8 -- four figures calibrated before the unknown is touched
+
+  ==========================================================================
+  B.  ⛔ READING (3): THE KERNEL'S ARGUMENT AND $D_M$ ARE THE SAME OBJECT, BY A PROPOSITION
+  ==========================================================================
+      anchored window before the $D_M=D_C$ sentence: 400 chars
+  [PASS] `P15` identifies them outright, and `prop:flat` is the reason: the distance slicing is flat, so the photons are projected through the FLAT geometry and the comoving angular-diameter distance IS $D_C$
+  [PASS] and `prop:flat` is a proposition with a receipted argument -- the constant-$\tau$ slice's induced three-metric is $dr^2+r^2d\Omega^2$ with vanishing Riemann tensor
+  [PASS] ⛭ AND THE DISTINCT OBJECT EXISTS AND IS ALREADY SPENT: $r_0$ sets the SOURCE's discrete spectrum $k_L=\sqrt{L(L+2)}/r_0$ while $D_C$ does the projecting -- so the gap reading (3) needed is occupied
+  [PASS] ⇒ so (3) does not dissolve the conflict: it would have to break an identification the construction already made, and the two-object structure it reached for is in use for a different job
+
+  ==========================================================================
+  C.  ⛭⛭ READING (2) IS TRUE OF THE LINE ELEMENT -- AND THE EXACT STATEMENT IS r/rdot = c/H
+  ==========================================================================
+  [PASS] the proper-frame line element is NOT in comoving-FRW form: the radial coefficient is $(\partial_\chi r)^2$ and the angular one $r^2$, with $r$ a function of $\tau+\chi$
+      the refit background `P15` fits: worst |r/rdot ÷ (c/H) - 1| over z = 0 .. 1090 is 1.11e-16
+      the instrument's own default: worst |r/rdot ÷ (c/H) - 1| over z = 0 .. 1090 is 2.22e-16
+  [PASS] ⛭⛭ `r / (dr/d(c tau~)) = alpha tanh(3 c tau~ / 2 alpha) = c/H` EXACTLY -- worst relative departure 2.2e-16 over five redshifts on both backgrounds
+  [PASS] ⌗ and the bridge that makes it exact is `sinh^2 u_0 = x_0^3 / 2`, which is what matches the native rate $(c/\alpha)^2(1+2(1+z)^3/x_0^3)$ to the fitted one -- a first pass of this receipt had it as $x_0^3$ and the identity came out a factor $\sqrt2$ off at high $z$
+  [PASS] ⇒ SO THE RADIAL-TO-ANGULAR RATIO IS THE HUBBLE RADIUS, where comoving-FRW form would make it the radial comoving distance -- which is the precise sense in which the projection is not the standard integral on THIS chart
+  [PASS] ⛔ and it still does not move the kernel, because the standard form is claimed on the OBSERVER's slice and not on this chart -- the non-synchrony $\tilde\tau=\tau+\chi$ being what lets flat distances and a closed $S^3$ coexist, which the paper calls the decoupling itself
+
+  ==========================================================================
+  D.  ⛔⛭ THE TRAP THE QUESTION INVITES, NAMED AND EXCLUDED: A CHART'S ANGLE IS NOT A SKY
+  ==========================================================================
+  [PASS] the construction's own redshift is $1+z = r(\tilde\tau_0)/r(\tilde\tau_e)$, so reading the angular part at face value gives $D_A = r(\tilde\tau_e)$ and hence $D_M = (1+z)D_A = r_0$, CONSTANT at every redshift
+      the refit background `P15` fits: r_s,leaf = 145.34 Mpc  ->  pi D_C/r_s =  302.87   but pi r_0/r_s = 109.19
+      the instrument's own default: r_s,leaf = 139.74 Mpc  ->  pi D_C/r_s =  292.36   but pi r_0/r_s = 105.86
+  [PASS] ⇒ THE FACE-VALUE READING IS EXCLUDED BY THE COMB: it puts the acoustic scale at $\pi r_0/r_s$, which misses the measured one by more than a factor of two, where $\pi D_C/r_s$ lands near it
+  [PASS] ⛭ and it is excluded structurally too: the $d\Omega$ it reads is the SdS static chart's, centred where $r=0$ -- which the paper calls the BRANCH POINT and not a boundary, and which is not where the observer is
+
+  ==========================================================================
+  E.  ⇒ READING (1): THREE INDEPENDENT ROUTES PUT IT ON THE STACKING RATE, SO THE MISFIT IS REAL
+  ==========================================================================
+  [PASS] ROUTE ONE -- `P07`'s rate rule names the stacking side by enumeration, $D_M$ among them
+  [PASS] ROUTE TWO -- `r7096`'s null-cone argument, which is this line's own and is in the tree: `a d eta = c dt` by the definition of a conformal time, so the photon-path lapse is the stacking rate's
+  [PASS] ROUTE THREE -- the observer's OWN readout: the slice is flat by `prop:flat` and the recovery of flat $\Lambda$CDM is exact, on the $\sinh^{2/3}$ law whose rate is the stacking one with radiation absent
+  [PASS] ⇒⇒ THE THREE AGREE AND THE IMPLEMENTATION ALREADY DOES WHAT THEY SAY, so the sky's preference for the other configuration is a DISAGREEMENT BETWEEN THE CONSTRUCTION AND THE SKY -- localised, quantified, and a result about CR rather than a defect in the code
+  [PASS] ⛭⛭ the ruled assignment -- the leaf ruler against the stacking $D_C$ -- gives pi D_C/r_s = 302.87 against `cc66`'s grid-measured 302.889, agreeing to 0.006 per cent, so the configuration this ruling selects is the one that produced the banked number
+  [PASS] ⌗ and the face-value reading misses that comb by exactly the STRETCH, $D_C/r_0$ -- the same ratio that carries the lowest closed-$S^3$ mode to $\ell_2\approx7.8$, so the two readings of the distance are off by the one number the low-multipole floor is built on
+
+  ==========================================================================
+  F.  ⌗ THE ONE REMAINDER, AND THE SCOPE
+  ==========================================================================
+  [PASS] the licensing step is an IDENTIFICATION and not a derivation: the paper reaches $j_\ell(k_L D_C)$ from the flatness of the slice plus the exact recovery, and the harmonic expansion is never carried out in the proper frame itself
+  [PASS] ⇒ so the bounded calculation that would settle it is named and NOT done here: expand on the constant-$\tau$ slice with the observer at a general point of it and show the $\ell$-space kernel is $j_\ell(k D_C)$ with $D_C$ the light-travel distance
+  [PASS] ⌗ THE AFFIRMATIVE CONTROL: on the control arm the two rates are one function, so every object in this dispute coincides there and the question does not arise -- which is why it is the arm's question and not the method's
+  [PASS] ⚠ SCOPE: no transfer is run and no spectrum computed -- every import in this file is the standard library, numpy or scipy, and `cc66`'s three-grid table is taken as verified rather than re-measured
+
+  ==========================================================================
+  26 checks, 26 pass, 0 fail   [0s]
+  GATES: ALL PASS
+
+  THE ANSWER, IN ONE PLACE:
+    the kernel's argument IS D_M = D_C, on the OBSERVER's flat constant-tau slice, and the
+    rate rule therefore does reach it -- so (3) does not dissolve the conflict, (2) is a true
+    fact about the line element that does not move the kernel, and (1) is where it lands.
+    ⇒ three independent routes put it on the stacking rate, so the sky's preference for the
+      forbidden configuration is a disagreement between the construction and the sky.
+    ⌗ the one place the chain could still move: j_l(k D_C) is licensed by an identification,
+      not by a harmonic expansion carried out in the proper frame.  Named, and not ordered.

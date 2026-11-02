@@ -1,0 +1,211 @@
+
+RECEIPT -- P15: ** `r7221` ORDERED THE DIFFERENCING ALONG THE TIGHT DIRECTION -- `measure whether
+the carrier separates along the direction the bank actually carries` -- WITH THE BURDEN `state the
+expected Delta L_p BEFORE you read the fits`.  *** THE CARRIERS SEPARATE BY `218` SIGMA, MY
+PRE-REGISTERED NUMBER IS WRONG BY SIX TIMES THE BOUND I WROTE, AND WHAT THE `218` SIGMA
+MEASURES IS THE COMB'S OWN PEAK COUNT RATHER THAN THE CARRIER. *** **
+
+  ⓵ ** ITEM ① HAS A YES AND IT DOES NOT MEAN WHAT IT WAS MEANT TO MEAN. **  `$\Delta L_p$` across
+  the driving pair is `$56.693$` against `$\sigma=0.129$`/`$0.226$` -- **`$218\sigma$`** on the
+  bank's own convention, `$93\sigma$` on the scale-invariant one.  *I pre-registered
+  `$|\Delta L_p|\le10$` from the gap terms, which sum to `$5.05$`; it is `$56.693$` -- **`$5.7$`
+  times the bound and `$11.2$` times the terms.  Reported against the measurement, as ordered.***
+
+  ⓶ ⛔ ** AND THE REASON IT IS `$56.7$` IS THAT `$L_p$` IS THE FITTED CURVE'S OWN PEAK SPACING ONLY
+  WHERE THE FIT LOCKS ONTO THE PEAK TRAIN. **  *Pointing PART C's locator at the FITTED CURVE:
+  `$L_p$` equals that curve's mean gap to `$0.16$` per cent on the two driving-OFF spectra and
+  misses it by `$21$`--`$27$` per cent on the other four.  **So the `$218\sigma$` is the difference
+  between a fit that locks and a fit that does not.***
+
+  ⓷ ⛔ ** THE LOADING PAIR CANNOT BE DIFFERENCED AT ALL. **  *`cr_rb1.5` has no interior optimum in
+  any box: `$430.000$` at the `$430$` box, `$900.000$` at the `$900$` box, `$\chi^{2}$` falling
+  `$1.94\times10^{4}\to1.39\times10^{3}$` as the box is widened.  `cc66.160`'s unbounded direction,
+  recurring where the order needed it not to.*
+
+  ⓸ ⛔ ** AND THE SIGMA THE ORDER ASKS ME TO MEASURE AGAINST IS NOT AN ERROR ON `$L_p$`. **  *Moving
+  the window's top edge from `$1000$` to `$1950$` moves `cr_nodrive`'s `$L_p$` by `$14.3$` --
+  `$283.2$`, `$281.6$`, `$293.4$`, `$295.6$`, `$296.0$` -- while the formal `$\sigma$` over those
+  windows is `$0.01$`--`$4.28$`.  **The bank does not carry `$L_p$` to `$0.08$` per cent; it
+  carries a formal error of `$0.08$` per cent on a number that moves by five per cent when the
+  window moves.***
+  ⌗ *The same sigma is amplitude-dependent, and on the scale-free one `cc66.162`'s `$35\sigma$` and
+  `$379\sigma$` read `$54$` and `$82$` -- so its conclusion and its ordering stand and `more than
+  three hundred` does not.  Flagged here because `sec:refit-bound` quotes it.*
+
+  ⓹ ** ITEM ② RUN ANYWAY, AND THE SKY LANDS ON THE UNLOCKED VALUE. **  *`$L_p$`(sky) `$=351.807$`
+  by the identical extraction -- within `$1.68$` and `$1.97$` of the two driving-ON bases and
+  `$58.4$` from the driving-OFF pair, **which reads naively as the sky preferring the driving.**
+  It is void: the curve that extraction returns is rejected by `plik_lite` at `$\chi^{2}/{\rm
+  dof}=11.8$` on its own covariance, and its `$L_p$` misses its own curve's peak spacing by
+  `$62$` -- the unlocked signature exactly.*  ⇒ **And the matched differencing is blind to the arm:
+  `$(\rm arm-sky)-(\rm control-sky)=0.295$`, `$1.6\sigma$`, against the carrier's `$218$`.**
+
+  ⓺ ⛭⛭⛭ ** THE CLOSURE HAS NO NUMBER, BECAUSE THE DEGENERACY IS INVARIANT TO EVERYTHING THE BANK
+  CAN VARY. **  *`r7221` names the remainder as `what point count, window and per-point error would
+  bring 0.1929 against 1.0390 within reach`.  Measured: `$|\rho(\ell_A,d)|$` stays in
+  `$[0.939,0.977]$` over THIRTEEN fits -- `$78$`--`$176$` points, five windows, six spectra -- and
+  **halving the point count leaves it at `$-0.9549$` against `$-0.9548$`.**  ⇒ *So `r7219`'s
+  `what would change it is a finer binning` is measurably wrong, and there is no point count,
+  window or per-point error in this bank that changes it.*
+
+  ⌈ ⛭⛭ ** WHAT THE POINTS DO BUY IS THE LOCATOR, WHICH IS THE INSTRUMENT THE ROW WROTE OFF. **
+  *Merged in pairs -- `$18$` per bin, `$78$` points -- PART C's locator reads the sky's first four
+  peaks within `$3.37$` of its own read of the MODEL through the identical merge, against a
+  `$547$` displacement at the native `$9$`.  **`r7221` says `the peak locator of cc66.159 could
+  not` be pointed at the sky; at half the bank's resolution it can, and the comb is the half no
+  sampling fixes.**  ⚠ *Four peaks and not five, and forming `$(\varphi,{\rm alt})$` on four is a
+  new measurement with its own burden -- named as a route, NOT made here.*
+
+** COMPUTES: `cc66.162`'s centred four-parameter comb, unchanged and pinned to its published
+   digits; its `$L_p$` differenced within `cc66.158`'s driving and loading pairs; PART C's locator
+   pointed at the FITTED curves; the same extraction run on `plik_lite` TT and scored against its
+   own covariance; the degeneracy measured against point count, window and spectrum; and the
+   sky re-binned in pairs through the identical merge as the model. **
+
+
+
+========================================================================================================
+  A.  THE MACHINERY IS cc66.162's, PINNED TO ITS PUBLISHED DIGITS BEFORE ANYTHING NEW IS ASKED
+========================================================================================================
+      spectrum        lA(v=0)        d   v_p*       L_p    sigma  rho(lA,d)       chi2  cc66.162 L_p
+      cr_base         338.199   +4.427   1.35   350.131   0.1285    -0.9385       3025       350.131
+      lcdm_base       337.466   +4.608   1.34   349.835   0.1388    -0.9385       2610       349.835
+      cr_nodrive      281.534   +3.548   1.68   293.438   0.2260    -0.9548      59.08       293.438
+      lcdm_nodrive    281.555   +3.552   1.68   293.476   0.2416    -0.9548      52.65       293.476
+      cr_rb0.5        397.574  -17.600   1.42   347.672   0.2141    -0.9773      767.2       347.672
+      cr_rb1.5        430.000  -15.376   0.00   430.000   0.0000    -0.0000  1.936e+04  not published
+      sky             342.458   +3.554   1.32   351.807   0.0000    -0.9408  2.831e+11  not published
+    OK    Ⓐ①  ** THE FIVE SPECTRA cc66.162 PUBLISHED COME BACK TO ITS PRINTED DIGITS -- `$L_p$` TO THREE DECIMALS, `$\rho$` TO FOUR, `$\sigma$` TO THREE. **  *The one change here is that `fit()` computes its four tight refits ONCE instead of twice; Nelder-Mead from a fixed start is deterministic, so nothing can move -- and this is what says so.  **A re-used instrument that is not pinned is a new instrument wearing the old one's results***
+      the locator split is a no-op on all 7 inputs: True
+    OK    Ⓐ②  ** AND SPLITTING PART C's LOCATOR SO IT CAN BE POINTED AT A FITTED CURVE IS A NO-OP ON ALL SEVEN INPUTS, CHECKED AGAINST `cc66.160`'s BYTE-FOR-BYTE COPY. **  *`cc66.161` learned this the hard way: a locator retyped from memory differed in four places and would have compared the fit against my own variant while the text claimed it was PART C's*
+
+      PART C's gap model `gap_n = c0 + c1(-1)^n + c2 n`, which is what the pre-registration was built on:
+      spectrum             c0      c1      c2  banked lA
+      cr_base          281.89  +16.64   +8.77    301.380
+      lcdm_base        281.75  +16.98   +8.85    301.375
+      cr_nodrive       280.57   +1.11   +8.15    301.380
+      lcdm_nodrive     280.63   +1.13   +8.15    301.375
+      cr_rb0.5         265.46   +9.42   +8.29    286.060
+      cr_rb1.5         294.57  +23.25   +9.70    315.272
+      ⇒ driving pair:  Delta c0 = +1.32   (banked l_A is bit-identical across the switch)
+      ⇒ loading pair:  Delta c0 = +29.11  against a banked +29.21  -- 0.35% apart
+    OK    Ⓐ③  ** THE MECHANISM THE PRE-REGISTRATION RESTS ON IS MEASURED AND IT IS RIGHT ON THE GAPS. **  *PART C's gap LEVEL is the same to `$1.4$` across the driving switch -- where the banked scale is bit-identical -- and moves `$+29.1$` across the loading switch against a banked `$+29.2$`, **three parts in a thousand.**  *So the gap sequence tracks the acoustic scale where the scale moves and holds still where it does not; the pre-registration's premise is sound and what fails below is its conclusion.**
+
+========================================================================================================
+  B.  ① THE DIFFERENCING AS ORDERED -- AND THE PRE-REGISTERED NUMBER, REPORTED EITHER WAY
+========================================================================================================
+      pair                          Delta L_p sigma(bank)  in sigma  sigma(scale-inv)  in sigma
+      driving  (cr, r7221 ①)          +56.693      0.2600     218.1            0.6108     92.82
+      driving  (lcdm control)         +56.359      0.2787     202.2            0.6132     91.91
+      loading  (cr, r7221 ①)          -82.328      0.2141    -384.6            0.4976   -165.46   <- cr_rb1.5 IS ON THE BOX EDGE: THESE FOUR NUMBERS ARE NOT A MEASUREMENT
+      arm - control (bases)            +0.295      0.1892       1.6            0.8403      0.35
+      arm - control (nodrive)          -0.038      0.3308      -0.1            0.2071     -0.18
+    OK    Ⓑ①  ** ITEM ① HAS A YES: THE DRIVING PAIR SEPARATES ON `$L_p$` BY `$56.693$`, WHICH IS `$218$` OF THE BANK'S OWN SIGMA AND `$93$` OF THE SCALE-INVARIANT ONE. **  *`r7221` asks `whether the carrier difference is larger than that` and it is larger by two orders.  ⌗ The bank's `$\sigma$` is the unit-variance one `cc66.162` published; the models carry ARBITRARY amplitudes (`$Y$` rms `$35$` against `$88$` across this one pair), so that `$\sigma$` is amplitude-dependent and the second column -- `$\sigma\sqrt{\chi^2/{\rm dof}}$`, which is not -- is given beside it throughout*
+
+      pre-registered:  |Delta L_p| = |Delta c0 + v_p Delta c2 + c2 Delta v_p| <= 5.05, bounded at 10
+      measured:        56.693   -- 5.7x the bound, 11.2x the terms
+    OK    Ⓑ②  ⛔ ** MY PRE-REGISTERED NUMBER IS WRONG -- SIX TIMES THE BOUND I WROTE AND ELEVEN TIMES THE TERMS THAT PRODUCED IT -- AND IS REPORTED AS `r7221` ASKED, AGAINST THE MEASUREMENT EITHER WAY. **  *The terms the gap geometry allows sum to `$5.05$` and I bounded the prediction at `$10$`; it is `$56.693$`.  ⚠ **AND IT WAS NOT A BLIND PREDICTION:** `cc66.162` printed `$L_p=350.131$` and `$293.438$`, so this difference was already in print and I knew the bound was wrong before the run began.  *It is recorded as a failed prediction and not as a test; the blind ones were the loading pair, the sky's `$L_p$` and the arm--control differencing, and they are below.**
+
+      spectrum            L_p  fitted curve mean gap   off by  max|peak - data peak|
+      cr_base         350.131                 290.17    20.7%                  23.89
+      lcdm_base       349.835                 290.17    20.6%                  24.28
+      cr_nodrive      293.438                 292.98     0.2%                   1.60
+      lcdm_nodrive    293.476                 293.04     0.1%                   1.61
+      cr_rb0.5        347.672                 273.42    27.2%                  20.85
+      cr_rb1.5        430.000                 302.45    42.2%                  29.38
+      sky             351.807                 289.52    21.5%                 557.55
+      ⇒ `L_p` IS the fitted curve's own spacing on: cr_nodrive, lcdm_nodrive
+    OK    Ⓑ③  ⛔⛭⛭⛭ ** AND THAT IS WHY: `$L_p$` IS THE FITTED CURVE'S OWN PEAK SPACING ONLY WHERE THE FIT LOCKS ONTO THE PEAK TRAIN -- `$0.2$` PER CENT ON THE TWO DRIVING-OFF SPECTRA, `$21$`--`$27$` PER CENT OUT ON THE OTHER FOUR INCLUDING THE SKY. **  *Pointing PART C's own locator at the FITTED curve, not at the data: where the comb locks, its maxima sit `$1.6$` from the data's and `$L_p$` is their spacing; where it does not, they sit `$21$`--`$24$` out and `$L_p$` is the spacing of a phase map that no feature of the curve has.*  ⌗ *The sky's `$558$` in that last column is NOT its fit being worse: it is the DATA's own located peaks coming back out of order at the bank's native binning, which is PART D's subject*  ⇒ **So the `$218\sigma$` is the difference between a fit that locks and one that does not, and the carrier's role in it is that the driving is what breaks the lock.**
+
+      cr_rb1.5 at the 430 box: lA  430.000  chi2  1.936e+04  sigma 7.1e-07
+      cr_rb1.5 at the 900 box: lA  900.000  chi2       1387  sigma 7.1e-07
+    OK    Ⓑ④  ⛔ ** SO THE LOADING HALF OF ITEM ① CANNOT BE DIFFERENCED AT ALL: `cr_rb1.5` HAS NO INTERIOR OPTIMUM IN ANY BOX. **  *It sits on the edge at `$430.000$`; widen the box to `$900$` and it sits on the edge at `$900.000$` with `$\chi^{2}$` falling `$1.94\times10^{4}\to1.39\times10^{3}$`.  **The direction is unbounded, which is `cc66.160`'s `$542\times$` pitfall arriving where this order needed it not to** -- and the covariance there is degenerate, so the `$\sigma$` is `$7\times10^{-7}$` and means nothing.*  ⇒ *`r7221` ① asked for two pairs and the bank supports one of them*
+
+            window    N   lA(v=0)       L_p    sigma  rho(lA,d)
+        150-1000     94   272.188   283.175   4.2761    -0.9581
+        150-1300    127   256.726   281.614   0.8148    -0.9601
+        150-1600    156   281.534   293.438   0.2260    -0.9548   <- PART A, not refitted
+        150-1950    176   284.909   295.595   0.0659    -0.9515
+        250-1950    165   284.829   295.951   0.0116    -0.9614
+      ⇒ L_p moves 14.3 across the five windows, while the formal sigma over them is 0.01-4.28
+      ⇒ and its offset from banked (301.380) over the same five windows: +5.43 to +19.77  -- one sign throughout, and no larger than the spread the windows themselves produce
+    OK    Ⓑ⑤  ⛔⛭⛭ ** AND THE SIGMA `r7221` ASKS ME TO MEASURE AGAINST IS NOT AN ERROR ON `$L_p$`: MOVING THE WINDOW'S TOP EDGE FROM `$1000$` TO `$1950$` MOVES `cr_nodrive`'s `$L_p$` BY `$14.3$` -- FIVE PER CENT -- WHILE ITS FORMAL `$\sigma$` THERE IS `$0.01$`--`$4.28$`. **  *So the premise `the orthogonal direction it carries to `$0.08$` per cent` is a statement about a formal error and not about reproducibility.  **The bank carries a `$0.08$` per cent error bar on a number that moves by five per cent when you choose a different top edge for the same window** -- and `larger than the bank's own sigma` is therefore a test that any difference passes.*  ⇒ *This is the one place in the order I think the specification is wrong rather than merely unlucky, and it is measured rather than argued*  ⌈ **AND IT PUTS A NUMBER IN PRINT UNDER STRAIN, WHICH IS WHY IT IS HERE AND NOT ONLY IN MY REPLY: `cc66.162`'s `$35\sigma$` for `cr_nodrive` -- the figure `sec:refit-bound` quotes -- is an offset of `$7.94$` from banked, and the WINDOW alone moves `$L_p$` by `$14.3$`.**  *The robust statement the five windows support is that `$L_p$` lies BELOW banked on every one of them, by `$5.4$`--`$19.8$`; the `$35$` is not robust to the window and I am flagging it rather than leaving it to be found*
+
+      and the same two conventions on `cc66.162`'s own published comparison, because two of
+      its digits are quoted in `sec:refit-bound`:
+      spectrum            L_p    banked   offset  sig(bank)  in sig  sig(scale-free)  in sig
+      cr_base         350.131   301.380  +48.751     0.1285     379           0.5932      82
+      lcdm_base       349.835   301.375  +48.460     0.1388     349           0.5953      81
+      cr_nodrive      293.438   301.380   -7.942     0.2260      35           0.1458      54
+      lcdm_nodrive    293.476   301.375   -7.899     0.2416      33           0.1471      54
+      cr_rb0.5        347.672   286.060  +61.612     0.2141     288           0.4976     124
+    OK    Ⓑ⑥  ⛔ ** AND THE TWO FIGURES `cc66.162` PUT IN PRINT DO NOT SURVIVE THE CHANGE OF CONVENTION INTACT: ITS `$35\sigma$` READS `$54$` AND ITS `$379\sigma$` READS `$82$`. **  *The conclusion and the ordering survive -- every one of the five is still tens of sigma from banked on both conventions, which is what `cc66.162`'s `Ⓒ①` actually asserts (`$>10$`).  **What does not survive is `more than three hundred`, which becomes `more than eighty`.**  ⌗ *And neither convention is an error bar in the ordinary sense: these are NOISELESS model spectra, so what is being inverted is model misfit and not noise -- which is why `Ⓑ⑤`'s window spread, not either sigma, is the honest measure of how well the number is determined.*
+
+========================================================================================================
+  C.  ② `$L_p$` CARRIED TO THE SKY BY THE IDENTICAL EXTRACTION -- AND WHAT IT IS WORTH THERE
+========================================================================================================
+      L_p(sky) = 351.807   on 156 binned points, the same bins the models cover
+      against                    L_p  sky - it
+      cr_base                350.131    +1.676
+      lcdm_base              349.835    +1.971
+      cr_nodrive             293.438   +58.369
+      lcdm_nodrive           293.476   +58.330
+      cr_rb0.5               347.672    +4.135
+    OK    Ⓒ①  ** THE SKY LANDS ON THE DRIVING-ON BASES: `$L_p=351.807$`, WITHIN `$1.68$` AND `$1.97$` OF THEM AND `$58.4$` FROM THE DRIVING-OFF PAIR. **  *Read naively that is the sky choosing the driving over its absence, on the row's tight direction, by two orders of the bank's `$\sigma$`.  **It is the reading this order was built to reach and it is the one I am about to withdraw** -- stated first, in the terms it would be stated in if it held*
+
+      the curve the matched extraction returns, scored against plik_lite's own covariance:
+          diagonal only    chi2      1338 / 142 dof =   9.423
+          full covariance  chi2      1680 / 142 dof =  11.828
+      and its L_p against its own curve's peak spacing: 351.807 vs 289.52, 21.5% out
+    OK    Ⓒ②  ⛔⛭⛭⛭ ** AND THE READING IS VOID, ON ITS OWN TWO COUNTS. **  *The curve the identical extraction returns is **rejected by `plik_lite` at `$\chi^{2}/{\rm dof}=11.8$` on the full covariance** -- the de-tilt is a diagonal rescaling so that covariance transforms exactly and nothing is dropped -- and its `$L_p$` misses its OWN curve's peak spacing by `$62$`, `$21$` per cent, **which is the unlocked signature of `Ⓑ③` exactly.**  ⇒ *So `$351.807$` is a parameter of a phase map belonging to a curve the data reject, and its agreement with the driving-ON bases is agreement about the failure mode they share and not about the driving*
+
+      the section's matched-procedure differencing, arm and control through the same extraction:
+          (arm - sky)         -1.676
+          (control - sky)     -1.971
+          difference          +0.295   = 1.56 sigma(bank), 0.35 sigma(scale-invariant)
+          the carrier, for scale                    218 sigma(bank), 93 sigma(scale-invariant)
+    OK    Ⓒ③  ⛔ ** AND THE MATCHED DIFFERENCING IS BLIND TO THE ARM: `$(\rm arm-sky)-(\rm control-sky)=0.295$`, WHICH IS `$1.6$` OF THE BANK'S SIGMA AND `$0.35$` OF THE SCALE-INVARIANT ONE, AGAINST THE CARRIER'S `$218$`. **  *The extraction reaches the sky -- `r7221` ② is right that the comb can be pointed where the locator could not -- and what it says there does not distinguish the arm from `$\Lambda$CDM`.  **A statistic that separates the carrier by two orders and the arm by one sigma is not an instrument for this measurement**, which is `cc66.161`'s conclusion reached from the other end*
+
+      and the response of L_p to a REAL change in the acoustic scale, on the only lever the bank has:
+          banked l_A  301.380 -> 286.060  (-15.319)
+          L_p         350.131 -> 347.672  (-2.459)   = 16% of it
+    OK    Ⓒ④  ⛔ ** AND `$L_p$` CARRIES ONLY `$16$` PER CENT OF A REAL CHANGE IN THE ACOUSTIC SCALE: `cr_rb0.5`'s BANKED SCALE IS `$15.32$` BELOW `cr_base`'s AND ITS `$L_p$` IS `$2.46$` BELOW. **  *With a quoted `$\sigma$` of `$0.21$` that under-response would be reported as a `$12\sigma$` determination of a number six times too small.*  ⚠ **The caveat is real and it is the bank's: `cr_rb0.5` moves `$R_b$` as well as the scale, so `$16$` per cent is a response along a mixed direction and not `$\partial L_p/\partial\ell_A$`** -- *and the bank has no spectrum that moves the scale alone, which is itself the answer to whether this could be calibrated out*
+
+========================================================================================================
+  D.  THE REMAINDER r7221 NAMES -- `what point count, window and per-point error` -- HAS NO NUMBER
+========================================================================================================
+      cr_nodrive at  156 points: rho -0.9548  L_p 293.438  sigma 0.2260
+      cr_nodrive at   78 points: rho -0.9549  L_p 293.423  sigma 0.3199   <- bins merged in pairs, median width 18
+
+      spectrum          N       window  rho(lA,d)
+      cr_base         156     150-1600    -0.9385
+      lcdm_base       156     150-1600    -0.9385
+      cr_nodrive      156     150-1600    -0.9548
+      lcdm_nodrive    156     150-1600    -0.9548
+      cr_rb0.5        156     150-1600    -0.9773
+      sky             156     150-1600    -0.9408
+      cr_nodrive       78  150-1600 /2    -0.9549
+      cr_nodrive       94     150-1000    -0.9581
+      cr_nodrive      127     150-1300    -0.9601
+      cr_nodrive      176     150-1950    -0.9515
+      cr_nodrive      165     250-1950    -0.9614
+      cr_base         127     150-1300    -0.9729
+      cr_base         176     150-1950    -0.9451
+      ⇒ 13 fits, 78-176 points, five windows, six spectra: |rho| in [0.9385, 0.9773]
+    OK    Ⓓ①  ⛔⛭⛭⛭ ** THE DEGENERACY IS INVARIANT TO EVERYTHING THE BANK CAN VARY: `$|\rho(\ell_A,d)|$` STAYS IN `$[0.939,0.977]$` ACROSS THIRTEEN FITS, `$78$`--`$176$` POINTS, FIVE WINDOWS AND SIX SPECTRA -- AND HALVING THE POINT COUNT LEAVES IT AT `$-0.9549$` AGAINST `$-0.9548$`. **  *So `r7221`'s remainder -- `what point count, window and per-point error would bring `$0.1929$` against `$1.0390$` within reach` -- **has no number, because no point count or window in reach of this bank moves the correlation at all.**  ⌈ And `r7219`'s `what would change it is a finer binning rather than a further parameter`, now in print, is measurably wrong: halving the points changed `$\rho$` in the fourth decimal and only inflated `$\sigma$` by `$\sqrt2$`.*  ⇒ *`$(v,v^{2})$` are monomials and their correlation over an interval is set by the interval's endpoint RATIO, which is why `cc66.162`'s shear removes it exactly and why sampling does not touch it*
+
+      and what the bank's points DO buy, on the instrument the row wrote off -- PART C's
+      locator pointed at the SKY and at the MODEL through the identical merge:
+        merge  bins  width    noise/increment  sky peaks  model peaks  max|d|
+            1   156    9.0    0.579 (p90 2.379)          4            5  547.49
+              sky gaps [845, -527, 252]   model gaps [302, 270, 312, 295]
+            2    78   18.0    0.207 (p90 0.821)          4            5    3.37
+              sky gaps [303, 268, 309]   model gaps [302, 269, 312, 295]
+            3    52   27.0    0.113 (p90 0.389)          0            0      --
+    OK    Ⓓ②  ⛭⛭⛭ ** AND MERGED IN PAIRS THE LOCATOR READS THE SKY: FOUR PEAKS WITHIN `$3.37$` OF ITS OWN READ OF THE MODEL THROUGH THE IDENTICAL MERGE, AGAINST A `$547$` DISPLACEMENT AT THE BANK'S NATIVE `$9$`. **  *At `$9$` per bin the per-bin noise is `$2.4$` times the signal's own bin-to-bin increment at the ninetieth percentile and the locator returns four maxima OUT OF ORDER -- `cc66.159`'s catastrophe.  At `$18$` that ratio is `$0.82$` and the sky's gaps come back `$303$`/`$268$`/`$309$` against the model's `$302$`/`$269$`/`$312$`.*  ⌗ **At `$27$` the locator returns NOTHING ON EITHER, which is its own `$\pm40$` window holding fewer than four points -- a property of the locator and not of the sky**, and it is why the usable merge is a factor of two and only a factor of two
+    OK    Ⓓ③  ⛔⛭⛭ ** SO THE ROW'S TWO HALVES WANT OPPOSITE BINNINGS AND THE REACHABLE HALF IS THE PEAK PLANE, NOT THE COMB. **  *The comb needs points it cannot use -- `$\rho$` is `$-0.95$` at `$176$` and `$-0.95$` at `$78$` -- and the locator needs the bank merged, which costs exactly the points the comb is short of.  `r7221` says `the four-parameter comb can be pointed at the sky and the peak locator of cc66.159 could not, which is the whole reason the comb was built`; **measured, the comb points at the sky and returns a rejected fit whose parameter moves five per cent with the window, and the locator reads the sky's peaks to `$3.4$` once the bank is merged in pairs.**  ⇒ *That is a reversal of the instrument choice and it is the one thing here I would act on.*  ⚠ **AND ITS BURDEN IS NAMED AND NOT DISCHARGED: four peaks, not five; `cc66.156`'s statistic is banked at five; and forming `$(\varphi,{\rm alt})$` on four peaks of a merged bank is a new measurement with its own validation.  I am not making it -- `r7221` says `I am not asking for an instrument after it` and this is a route, offered, not an instrument built.**
+
+========================================================================================================
+  ✔ 16 of 16 checks pass -- the carriers separate on L_p by 218 sigma, the separation
+    is the comb's own peak count, the sky's reading is void, and the closure has no number.
+========================================================================================================

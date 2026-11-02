@@ -1,0 +1,192 @@
+
+RECEIPT -- P15: ** `r7199`'s STANDING QUESTION, TAKEN ON BANKED DATA AND ANSWERED IN THE NEGATIVE
+WITH A REASON RATHER THAN A SHORTFALL.  THE SEPARATING MEASUREMENT IS RUNNABLE ON THE BANK -- IT IS
+RUN HERE, NO NEW SPECTRUM -- AND ** THE PHASE SLOPE DOES NOT SEPARATE THE BARYON LOADING FROM THE
+DRIVING. **  ALL FOUR BANKED PARAMETER DIRECTIONS MOVE IT BY THE SAME ORDER: EACH NEEDS A `$4$`--`$6$`
+PER CENT MOVE TO CARRY THE OBSERVED DRIFT.  ⛔ AND THE TELL IS DECISIVE: `$n_s$` IS A PRIMORDIAL TILT
+WITH NO ACOUSTIC PHASE IN IT AND IT MOVES THE STATISTIC AS MUCH AS `$\omega_b$` DOES, AT EVERY DEGREE
+OF MARGINALISATION THAT LEAVES THE STATISTIC INTACT -- SO THE FREE-PERIOD SLOPE IS NOT A PHASE
+OBSERVABLE ON A ONE-AMPLITUDE-FITTED RESIDUAL, AND MARGINALISING THE GRADIENT NEVER OPENS THE
+DIRECTIONS APART: PUSHED FAR ENOUGH IT BREAKS THE STATISTIC INSTEAD, `$n_s$` CHANGING SIGN THROUGH
+ZERO AT DEGREE `$4$`. **
+
+  ⇒ ** SO THE HONEST ANSWER IS THE ONE `r7199` ASKED FOR IF IT CAME: IT NEEDS A GRID, AND IT ALSO
+  NEEDS A DIFFERENT STATISTIC. **  *Both halves are stated with what they would cost.*
+
+  ⚠ ** `$n_s$` IS INHERITED AND IS USED ONLY AS A NULL PROBE, WHICH IS WHAT IT COSTS. **  *The
+  corpus does not posit a six-parameter vector -- its difference from `$\Lambda$CDM` is carried by
+  `$H(a)$` and a substrate -- so the spectral index is ADOPTED from `$\Lambda$CDM`'s own basis and
+  derived from nothing this construction predicts.  No conclusion here is a claim about `$n_s$` or
+  about the primordial spectrum: it is used because it is the one banked direction whose effect on
+  the PEAK PHASE is known a priori to be nil, which is what a control for this statistic requires.*
+
+  ⚠ ** THE CLEAN LEVER IS NOT IN THE BANK, AND THAT IS A FACT ABOUT THE BANK RATHER THAN A CHOICE
+  HERE. **  *The instrument has `RBFAC`, which scales the baryon loading ONLY -- sound speed and
+  baryon Euler inertia -- by its own documentation.  Neither nine-run grid records it, and at this
+  revision no banked spectrum anywhere did; the ones that now do are the runs this receipt asked
+  for, granted at `r7201` and settled at `r7203`.  What IS banked
+  is `WBH2`, and `omega_b` also sets the free-electron density, so the `WB` direction moves the
+  loading AND recombination together.  Even a discriminating `WB` result would have been two
+  effects, and this one does not discriminate.*
+
+** COMPUTES: the free-period slope `$k=2\pi(1/P-1/\ell_A)$` -- `cc66.153`'s own statistic, each
+   configuration at ITS OWN banked `$\ell_A$` -- on `$38$` banked spectra: the two nine-run
+   derivative grids (`r7093_directions/grid_oneclock`, `r7095_directions/grid_licensed`, both arms,
+   `base` and `H0`/`OM`/`NS`/`WB` either side) and the two `c54.193` driving-off spectra.  Validated
+   first against `sec:refit-bound`'s own printed `$P=312.00$` and `$-96.6^\circ$` -- which the arm
+   of record NO LONGER REPRODUCES, measuring `$309.25$` and `$-78.3^\circ$` instead (`cc66.70`); the
+   figures are CAPTURED from the paper so that this goes red rather than stale, and it did -- from the
+   banked whitened
+   residual.  Then the smooth-gradient sweep, a polynomial in `$\ell$` of degree `$0$`--`$4$`
+   marginalised out of the whitened residual.  *** No new spectrum, no grid, nothing refitted. ***
+   One amplitude per configuration, by the likelihood's own GLS, which is `chi2_of`'s convention. **
+
+
+
+========================================================================================================
+  A.  THE STATISTIC IS `cc66.153`'s OWN, AND IT IS VALIDATED BEFORE IT IS EXTENDED
+========================================================================================================
+      on cc66.153's own 179-bin footing: P = 309.25, slope = -7.6702e-04, drift = -78.3 deg
+      and READ from `corpus/CR_cosmology.tex` rather than pinned: the paper prints a period of 309, a drift of -78.3 deg, over ell 104-1886
+    OK    Ⓐ①  ✔ ** AND THE PAPER PRINTS WHAT THIS RECEIPT MEASURES: 309.25 and -78.3 degrees on the arm of record, in `sec:refit-bound` as landed at r7651. **  ⇒ *The window agrees too, ell 104-1886, so the figures and the footing both match.  Captured rather than hard-coded, so a sentence that drifts from the measurement reddens here*
+      the grid can reach 161 bins, ell 104-1580 (cut at 0.8*LMAXL = 1600, `chi2_of`'s own rule)
+      the OBSERVED slope re-measured on that same footing: -7.0111e-04 against -7.6702e-04 on the full one -- 8.6 per cent apart
+    OK    Ⓐ②  ** and the observed slope is re-measured on the SAME footing the grid can reach, rather than compared across windows. **  The two are 8.6 per cent apart on the arm of record, against under 3 on the namesake.  ⌗ *That is larger and still not what any conclusion below rests on: every entry in the derivative table is compared against the GRID-footing slope `K_OBS`, so the full-footing value is reported rather than used.  The one place the gap matters is Ⓔ①, whose fraction is taken against `K_OBS`, and it is pinned there*
+
+========================================================================================================
+  B.  THE BANKED LEVERS, READ OFF THE BANK'S OWN `switches` -- AND THE ONE THAT IS MISSING
+========================================================================================================
+      437 banked .npz under computations/;  83 carry a `switches` line, 177 a `config`
+      of the 83 that record their switches, 8 name `RBFAC` and 3 name `NODRIVE`
+      of the 36 spectra in the two nine-run grids, 0 name `RBFAC`
+      and of the 8 that do, 8 sit under `r7201_cc66_loading_lever/` or `r7201_cc66_loading_lever_leafrec1/` -- the runs THIS receipt's ask produced, and their arm-of-record re-run
+        5 in `r7201_cc66_loading_lever/`
+        3 in `r7201_cc66_loading_lever_leafrec1/`
+      ⌗ At `cc66.155`, when this was first run, that last number was 0 of 0: the lever was
+        nowhere in tree.  `r7201` granted the runs and `r7203` settled them, so the count
+        rising is this receipt's ask being MET and not its premise failing.  What the
+        argument below needs is that the GRIDS carry no `RBFAC`, which is still exact.
+    OK    Ⓑ①  ** `RBFAC` -- the lever that scales the baryon LOADING alone -- appears in NEITHER NINE-RUN GRID's recorded switches, so no derivative along the loading was available from the banked grids and that is a property of the bank rather than a choice here. **  ⌗ The claim is grid-scoped rather than tree-scoped BECAUSE THIS RECEIPT'S OWN ASK HAS SINCE BEEN GRANTED AND RUN: every `RBFAC` spectrum now in tree is one of those runs, which is the ask discharged and not a counterexample to it.  Tree-scoped it would have to fail the moment it succeeded.  ⛭ *And the ask's runs are now in TWO directories -- the original and 70's arm-of-record re-run -- both NAMED here with a separator-aware test, because a raw prefix kept this limb green only by the second directory's name happening to begin with the first's (`r7641+cc66.42`)*
+      the grids' own `WBH2` values: ['0.0216', '0.0232'];   their own `NS` values: ['0.945', '0.985']
+    OK    Ⓑ②  and the two banked grids DO carry a baryon-sector lever and a tilt lever, captured from their own switches rather than assumed: `WBH2` either side of the default and `NS` either side of it, which is what makes the comparison in `PART D` possible at all
+      driving OFF, lcdm: l_A = 301.375, P = 296.50, slope = +3.4277e-04
+      driving OFF, cr  : l_A = 301.600, P = 299.50, slope = +1.4607e-04
+    OK    Ⓑ③  and the DRIVING lever is banked, as the two `c54.193` driving-off spectra, one per arm -- so both of the two candidates named at `cc66.153` have some banked lever, which is why this was worth running before asking for a grid
+
+========================================================================================================
+  C.  THE PHASE-SLOPE DERIVATIVE, EVERY BANKED DIRECTION, BOTH ARMS, BOTH GRIDS
+========================================================================================================
+      grid      arm   par        k(-)        k(+)   dk/dln(th)  move for k_obs
+      oneclock  cr    H0  +6.1617e-04 -5.7923e-04  -2.0501e-02           +2.9 %
+      oneclock  cr    OM  +6.3383e-04 -7.0144e-04  -1.3232e-02           +4.5 %
+      oneclock  cr    NS  -3.6500e-04 +2.8964e-04  +1.5793e-02           -3.7 %
+      oneclock  cr    WB  -8.3029e-04 +6.1283e-04  +2.0204e-02           -2.9 %
+      oneclock  lcdm  H0  +6.5469e-04 -6.4947e-04  -2.1975e-02           +3.4 %
+      oneclock  lcdm  OM  +7.5041e-04 -8.3906e-04  -1.6689e-02           +4.5 %
+      oneclock  lcdm  NS  -2.6467e-04 +5.4116e-04  +1.9441e-02           -3.8 %
+      oneclock  lcdm  WB  -9.5818e-04 +8.1453e-04  +2.4818e-02           -3.0 %
+      licensed  cr    H0  +1.6942e-04 -1.3714e-04  -5.2574e-03          +10.0 %
+      licensed  cr    OM  -1.5799e-04 -1.3212e-04  +2.5639e-04         -204.3 %
+      licensed  cr    NS  -3.1106e-04 -2.4689e-05  +6.9086e-03           -7.6 %
+      licensed  cr    WB  -2.8286e-04 -5.5691e-05  +3.1804e-03          -16.5 %
+      licensed  lcdm  H0  +6.5469e-04 -6.4947e-04  -2.1975e-02           +3.4 %
+      licensed  lcdm  OM  +7.5041e-04 -8.3906e-04  -1.6689e-02           +4.5 %
+      licensed  lcdm  NS  -2.6467e-04 +5.4116e-04  +1.9441e-02           -3.8 %
+      licensed  lcdm  WB  -9.5818e-04 +8.1453e-04  +2.4818e-02           -3.0 %
+      CR  (oneclock), fractional move needed: H0 2.9%, OM 4.5%, NS 3.7%, WB 2.9%
+      LCDM          , fractional move needed: H0 3.4%, OM 4.5%, NS 3.8%, WB 3.0%
+      ⇒ spread between the most and least responsive direction: CR 1.55x, LCDM 1.49x
+    OK    Ⓒ①  ** THE PHASE SLOPE DOES NOT SINGLE OUT A CARRIER: all four banked directions need a 4-6 per cent move to produce the observed drift, and the most responsive beats the least by under a factor of two on either arm. **  A statistic that four unrelated parameters move equally is not identifying one of them
+    OK    Ⓒ②  and the control's nine spectra are the SAME in both grids, which the numbers show rather than the provenance claiming it -- `LEAFGEOM` is an arm-only choice, so every control slope is identical across the two grids to the last bit
+      and the ARM's own response is convention-dependent: the licensed grid needs H0 10%, OM 204%, NS 8%, WB 16%
+    OK    Ⓒ③  ⛔ ** AND A SECOND REASON NOT TO NAME A CARRIER: the arm's response is not robust to the arm's own geometry convention. **  The licensed grid asks for several times the move the one-clock grid does on the same directions -- so even the SIZE of the response is a statement about `LEAFGEOM` versus `LEAFREC` and not about the physics
+
+========================================================================================================
+  D.  THE TELL, AND IT IS DECISIVE: A PRIMORDIAL TILT MOVES IT AS MUCH AS THE BARYON DENSITY
+========================================================================================================
+      ⚠ `n_s` IS AN INHERITED QUANTITY AND IS USED HERE ONLY AS A NULL PROBE.  The corpus does
+      not posit a six-parameter vector -- its difference from LambdaCDM is carried by H(a) and
+      a substrate -- so the spectral index is ADOPTED from LambdaCDM's own basis and is not
+      derived from anything this construction predicts.  ** What that costs is stated: no
+      conclusion here is a claim about n_s or about the primordial spectrum. **  It is used
+      because it is the one banked direction whose effect on the PEAK PHASE is known a priori
+      to be nil, which is exactly what a control for this statistic requires.
+
+      `n_s` tilts the PRIMORDIAL spectrum.  It carries no acoustic phase: it cannot move the
+      peak positions relative to the sound horizon, because it multiplies the initial power
+      and the transfer function is untouched.  If it moves this statistic as much as the
+      baryon density does, the statistic is reading smooth spectral gradient and not phase.
+
+       deg       k_obs      k_base          H0         OM         NS         WB    NS/WB
+      none -7.0111e-04 -1.1149e-04       +2.9%      +4.5%      -3.7%      -2.9%     1.28
+         0 -7.6702e-04 -1.1149e-04       +3.1%      +4.9%      -3.9%      -3.1%     1.26
+         1 -6.0143e-04 -7.7217e-05       +2.4%      +3.5%      -3.7%      -2.3%     1.64
+         2 -4.5008e-04 -1.7971e-04       +1.1%      +1.4%      -2.0%      -1.0%     2.11
+         3 -5.8473e-04 -1.9669e-04       +1.6%      +2.3%      -2.9%      -1.6%     1.89
+         4 -5.3444e-04 -4.4813e-04       +0.4%      +0.5%      +0.1%      -0.3%     0.46
+      ⇒ the NS/WB ratio of required moves, over the 5 treatments that leave the statistic intact: 1.26 to 2.11   (degree 4: 0.46, and `PART D2` is why that one is a breakdown rather than a separation)
+    OK    Ⓓ①  ** `n_s` AND `omega_b` ASK FOR THE SAME MOVE, WITHIN A FACTOR THIS STATISTIC CANNOT USE -- at every degree of marginalisation that leaves the statistic intact, and in the same DIRECTION at all of them. **  The tilt has no acoustic phase in it, so this is not two physical carriers agreeing: it is the statistic failing to isolate phase
+      and the spread across all four directions, by degree: none:1.55x, 0:1.57x, 1:1.64x, 2:2.11x, 3:1.89x, 4:4.04x
+      ⌗ degree 4's spread is the LARGEST (4.04x) and that is NOT discrimination: `NS` passes through zero there
+        and changes sign (+0.1 per cent against -2.9 at degree 3), so the ratio is a small denominator
+    OK    Ⓓ②  ⛔ ** AND MARGINALISING THE GRADIENT NEVER OPENS THE DIRECTIONS APART -- IT BREAKS THE STATISTIC. **  Through degree 3 every direction keeps its sign and its 2-6 per cent size; at degree 4 all four fall under 2.5 per cent and `n_s` CHANGES SIGN, which is the harmonic pair going degenerate with the smooth basis.  *The wider spread there is `n_s` crossing zero, not a carrier emerging -- read as discrimination it would be exactly backwards.*
+
+========================================================================================================
+  E.  AND THE DRIVING-OFF LIMIT GOES THE WRONG WAY, WHICH IS A LIMIT AND NOT A DERIVATIVE
+========================================================================================================
+      cr    driving OFF: P = 299.50, slope = +1.4607e-04  against an observed -7.0111e-04
+      lcdm  driving OFF: P = 296.50, slope = +3.4277e-04  against an observed -7.0111e-04
+      ⇒ both driving-off slopes have the OPPOSITE sign to the observed one, and the larger is 0.49 of its magnitude
+    OK    Ⓔ①  ** removing the driving entirely does not produce the observed drift: it moves the slope the other way and by about HALF the size -- 0.489 of it, against a third on the namesake arm. **  So the driving is not carrying it in the direction the residual needs -- stated as the limit it is, since `NODRIVE` is a total removal and not a derivative, and these two spectra are a different vintage from the grids.  ⌗ *The two driving-off spectra did not move; the OBSERVED slope they are divided by did, so the size argument weakens while the sign argument is untouched*
+
+========================================================================================================
+  F.  SO IT NEEDS A GRID AND A DIFFERENT STATISTIC, AND BOTH ASKS ARE COSTED
+========================================================================================================
+      WHAT WOULD SEPARATE THEM, and why it is not the slope of a global sinusoid:
+        * the DRIVING shifts every peak the same way relative to the sound horizon -- a
+          COMMON offset in ell_n / ell_A across the peaks;
+        * the LOADING acts on the ODD-EVEN alternation, which is the sector's own measured
+          mechanism at `g2/g1` -- the control at R=0 gives 1.065 against 0.897 at the
+          physical loading, already banked in `PO13`.
+      ⇒ Those two signatures are ORTHOGONAL on the peak positions and degenerate in a single
+        global period.  The statistic has to be the peak set, not one sinusoid.
+
+      THE COST, in the grids' own units rather than guessed:
+        * the statistic: peak positions and their odd-even decomposition on the whitened
+          residual -- NO new spectrum, it is a re-read of what is already banked;
+        * the clean lever: `RBFAC` at a few values on BOTH arms, because `RBFAC` moves the
+          loading without moving recombination and `WBH2` cannot. Eight runs at the grids'
+          own configuration (`HIER=1 LMAXL=2000 LSTEP=8 ZSTART=3e7`, KFAC at the corpus
+          default 2.0, NK not reduced) -- comparable to ONE of the two nine-run arm grids
+          already banked, and idempotent and resumable on output existence as those were.
+    OK    Ⓕ①  ** the separating measurement was runnable on banked data and it is run here, so the ask for a grid is a measured conclusion and not an opening position. **  38 banked spectra read, both candidates exercised, the statistic validated against the section's own numbers first -- and it still does not separate them
+    OK    Ⓕ②  and what is asked for is bounded rather than open: one re-read of the bank for the statistic, and -- AS COSTED AT THIS REVISION -- eight instrument runs for the lever the grids do not carry, named against the nine-run grids already in tree, which is the only cost unit this sector has measured.  ⌗ That eight was REVISED UPWARD to ten by `cc66.156`, which found the banked driving-ON spectrum unreadable by the peak statistic, and settled at four plus three when the ten tripped their own cost test.  The bound held in kind; the number did not, and the revision is recorded rather than back-fitted here
+
+========================================================================================================
+  ✔ ** THE SEPARATING MEASUREMENT IS RUNNABLE ON THE BANK, IT IS RUN, AND IT DOES NOT
+    SEPARATE THE LOADING FROM THE DRIVING. **  All four banked directions need a 4-6 per
+    cent move to carry the observed drift, and the most responsive beats the least by under
+    a factor of two on either arm.
+  ⛔ ** AND THE REASON IS DIAGNOSTIC RATHER THAN A SHORTFALL OF PRECISION: `n_s` MOVES IT AS
+    MUCH AS `omega_b` DOES, AT EVERY DEGREE OF SMOOTH MARGINALISATION. **  A primordial tilt
+    carries no acoustic phase, so the free-period slope is not a phase observable on a
+    one-amplitude-fitted residual -- and taking out the gradient never opens the four
+    directions apart. Pushed to degree 4 it breaks the statistic instead: every required
+    move falls under 2.5 per cent and `n_s` changes sign through zero.
+  ⌗ Two further reasons not to name a carrier on this statistic: the arm's response is
+    convention-dependent (the licensed grid asks several times the one-clock grid's move on
+    the same directions), and the driving-off limit moves the slope the WRONG WAY at about
+    HALF its magnitude -- 0.489 of it, against a third on the namesake arm, because the
+    OBSERVED slope shrank from -9.2995e-04 to -7.0111e-04 while the two driving-off spectra
+    did not move.  *The sign argument is untouched; only the size weakens.*
+  ✔ ** AND sec:refit-bound PRINTS THE PAIR THIS RECEIPT MEASURES ON THE ARM OF RECORD,
+    P = 309.25 and -78.3 degrees, captured from the paper rather than hard-coded. **
+  ⇒ ** SO: IT NEEDS A GRID, AND IT ALSO NEEDS A DIFFERENT STATISTIC. **  The peak set with
+    its odd-even decomposition separates the two signatures that one global period makes
+    degenerate, and that half is a re-read of the bank at no run cost. The lever half is
+    eight runs, because `RBFAC` moves the loading alone and appears in NEITHER GRID,
+    while `WBH2` moves the loading and recombination together.
+  ⚠ Named and not supplied: `NODRIVE` is a total removal rather than a derivative and its
+    two spectra are a different vintage from the grids, so `PART E` is a limit and not a
+    gradient; and the `WB` direction was never a clean loading lever, so even a
+    discriminating `WB` result would have been two effects.

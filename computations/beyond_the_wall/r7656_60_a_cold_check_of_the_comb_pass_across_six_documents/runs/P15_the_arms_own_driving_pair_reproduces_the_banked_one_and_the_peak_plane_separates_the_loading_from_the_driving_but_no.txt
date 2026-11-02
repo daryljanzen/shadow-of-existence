@@ -1,0 +1,127 @@
+
+RECEIPT -- P15: ** `r7203`'s FIRST TWO ITEMS, ON THE ARM'S OWN `NODRIVE` PAIR.  *** THE DEFECT DOES
+NOT RECUR, THE NEW CONTROL PAIR REPRODUCES THE BANKED ONE, AND THE PEAK PLANE SEPARATES THE LOADING
+FROM THE DRIVING BY A FACTOR OF FIVE ON THE RATIO -- BUT NOT THE DRIVING FROM A CLOCK ERROR. *** **
+
+  ⓵ ** THE DEFECT DOES NOT RECUR, WHICH `r7203` ASKED TO HEAR FIRST AND SEPARATELY. **  *The CR
+  arm's banked driving-ON spectrum was disqualified from this statistic in `cc66.156` for having no
+  integer-spaced peak series -- gaps `$0.74$`--`$0.96$` of `$\ell_A$` where the common-offset
+  statistic assumes a comb.  **Both new `NODRIVE` spectra give `$0.925$`--`$0.999$`, TIGHTER than
+  the grid bases' own `$0.895$`--`$1.036$`.**  So the driving-off limit is readable on the arm's own
+  vintage and no number here is a statement about the detector.*
+
+  ⓶ ⛭⛭ ** AND THE NEW CONTROL PAIR REPRODUCES THE BANKED ONE, WHICH RETIRES A CAVEAT RATHER THAN
+  ADDING A RESULT. **  *`cc66.156` had to carry its `$+0.126$`/`$-0.0247$` as a DIFFERENT VINTAGE
+  from the grids -- the reason ten runs were asked for instead of eight.  Run at the grids' own
+  configuration the control gives `$+0.12651$`/`$-0.02469$`: the same numbers to three figures.
+  **The vintage worry was real and it was unfounded, and that is only knowable now.***
+
+  ⓷ ** THE CR ARM'S OWN DRIVING SIGNATURE MATCHES THE CONTROL'S** to TWO TENTHS of a per cent on the
+  common offset -- `$+0.12673$` against `$+0.12651$`, tighter than the namesake arm's half a per
+  cent.  *The driving is not arm-specific on that component, so what the plane separates it
+  separates as acoustic physics.*  ⛔ ** But the ALTERNATION component does NOT follow it: `$-0.02342$`
+  against `$-0.02469$` is `$5.1$` per cent apart, where the namesake arm was inside `$1.7$`. **  *So
+  the arm-independence is a property of the common offset and not of the pair; the separation below
+  rests on the offset, so the reading survives, and the alternation's arm-dependence is reported.*
+
+  ⇒ ⛔ ** THE REACH, AND IT IS `60`'s NARROWING CARRIED THROUGH RATHER THAN ARGUED WITH. **  *On the
+  plane's own discriminant `$\lvert\Delta\mathrm{alt}/\Delta\varphi\rvert$`, the measured
+  driving sits at `$0.1848$` and `60`'s `r7218` drive-clock error at `$0.086$`--`$0.173$`.  **Those
+  overlap, so the plane does NOT license `the driving` over `a clock error in the driving`.**  But
+  the CLEAN loading lever sits at `$1.0963$` -- `$6.34$` times the clock error's top and `$5.93$`
+  times the driving's -- so what the plane DOES separate, decisively, is the loading from both of
+  them.*  ⌗ *On the namesake arm these read `$0.1929$`, `$1.0390$`, `$6.01$` and `$5.39$`: the
+  separation the plane licenses gets slightly WIDER on the arm of record, not narrower.*
+
+  ⌗ ⛭ *And `60` could not have seen that: it used the banked `WB` direction (`$0.454$` on the arm of
+  record, `$0.378$` on the namesake) as the loading's stand-in, because the clean lever did not
+  exist.  **The clean lever is `$2.4\times$`
+  further out than that proxy, and `cc66.157` measured the two to have OPPOSITE sign on the common
+  offset -- so the proxy both understated the separation and pointed the wrong way along it.***
+
+** COMPUTES: `cc66.156`'s de-tilted peak statistic, unchanged, on the `r7203` `NODRIVE` pair and the
+   grids' own bases; the driving difference in `cc66.156`'s own convention (OFF minus ON) on both
+   arms; the four directions' plane discriminants; and the separations among them.  *** No refit, no
+   new statistic, no spectrum beyond the three `r7203` approved. *** **
+
+
+
+========================================================================================================
+  A.  ⓵ THE DEFECT DOES NOT RECUR -- THE ITEM `r7203` ASKED TO HEAR FIRST AND ON ITS OWN
+========================================================================================================
+      spectrum                l_A  npk  detected spacing / l_A
+      cr_nodrive          301.400    5  0.925-0.999
+      lcdm_nodrive        301.375    5  0.925-0.999
+      cr_base             301.400    5  0.898-1.035
+      lcdm_base           301.375    5  0.893-1.037
+      the disqualified banked CR driving-ON spectrum, for contrast:  0.74-0.96 (cc66.156)
+    OK    Ⓐ①  ** BOTH NEW `NODRIVE` SPECTRA CARRY AN INTEGER-SPACED SERIES, AND A TIGHTER ONE THAN THE GRID BASES THEMSELVES. **  *`r7203` asked to be told immediately if the pair came back with the defect the banked driving-ON spectrum has, because that would be a statement about the driving-off limit itself and worth more than a salvaged number.  It does not: five peaks each, spacing inside `$0.92$`--`$1.00$` against the bases' `$0.89$`--`$1.04$`*
+      and l_A is unchanged by the switch: nodrive 301.4000876652635 vs base 301.4000876652635
+    OK    Ⓐ②  ⛭ and `NODRIVE` leaves `$\ell_A$` BIT-IDENTICAL to the base's, so the pair differs in the driving and in nothing else.  *That is what a phase comparison needs and what the banked pair could not promise, being a different vintage*
+
+========================================================================================================
+  B.  ⓶ THE DRIVING DIFFERENCE, IN `cc66.156`'s OWN CONVENTION (OFF MINUS ON)
+========================================================================================================
+      ⛔ CONVENTION: `cc66.156` formed its published +0.126/-0.0247 as OFF minus ON -- the
+         change on REMOVING the driving.  Taken the other way the signs invert and the two
+         arms read as opposing when they agree.  Matched here deliberately.
+      cr     Dphi +0.12673   Dalt -0.02342
+      lcdm   Dphi +0.12651   Dalt -0.02469
+      cc66.156's banked control pair, for comparison:  +0.12600 / -0.02470
+    OK    Ⓑ①  ⛭⛭ ** THE SAME-VINTAGE CONTROL PAIR REPRODUCES THE BANKED ONE TO BETTER THAN ONE PER CENT ON BOTH COMPONENTS. **  *`cc66.156` could not know this: it carried its driving numbers with the caveat that the banked pair was a different vintage from the grids, and that caveat is the reason the ask went from eight runs to ten.  **The worry was legitimate and the answer is that it cost nothing -- which is a result about the bank, not about the physics.***
+      arm against control: common offset 0.17% apart, alternation 5.12% apart
+    OK    Ⓑ②  ⓷ and the CR arm's OWN driving signature matches the control's to THREE TENTHS of a per cent on the common offset -- tighter than the namesake arm's half a per cent -- with both signs the same.  ⛔ ** But it SPLITS: the ALTERNATION is 5.1 per cent apart on the arm of record where the namesake was inside 2, so that half is no longer arm-independent at the level this gate used to assert. **  ⇒ *The separation below rests on the OFFSET -- more driving lowers it, more loading raises it -- so the reading survives, and the alternation's arm-dependence is REPORTED rather than absorbed into a looser single tolerance*   (offset 0.17% (namesake 0.5%), alternation 5.12% (namesake under 2%))
+
+========================================================================================================
+  C.  THE FOUR DIRECTIONS ON THE PLANE, AND WHAT SEPARATES FROM WHAT
+========================================================================================================
+      direction                      Dphi       Dalt  |Dalt/Dphi|
+      driving (more of it)       -0.12673   +0.02342       0.1848
+      loading (more of it)       +0.01535   +0.01683       1.0963
+      baryon direction WB        -0.02974   +0.01351       0.4544
+      clock error (60, r7218)          --         -- 0.086-0.173  (cited, not recomputed)
+
+      ⇒ loading / driving on the discriminant: 5.93x
+      ⇒ loading / the clock error's top:       6.34x
+      ⇒ driving  / the clock error's top:      1.07x
+      driving discriminant          0.1848  against   0.1848  (+-0.0004)  ok
+      loading discriminant          1.0963  against   1.0963  (+-0.0004)  ok
+      loading / driving             5.9310  against   5.9300  (+-0.02)  ok
+      loading / the clock's top     6.3371  against   6.3400  (+-0.02)  ok
+    OK    ⛭⛭⛭ ** AND ALL FOUR DISCRIMINANT FIGURES THE PAPER PRINTS ARE PINNED TO THE ARM OF RECORD **: the driving at 0.1848, the loading at 1.0963, the two a factor 5.93 apart and the loading 6.34 times the clock error's top -- against the paper's 0.193, 1.039, 5.4 and six.  ⛔ *Added at r7649: the only gate the re-point could redden was the offset one above, so four figures the paper quotes moved unpinned.  The namesake gives 0.1929, 1.0390, 5.39 and 6.01 and fails all four.*   (driving discriminant 0.1848; loading discriminant 1.0963; loading / driving 5.9310; loading / the clock's top 6.3371)
+    OK    Ⓒ①  ** THE TWO CANDIDATE CARRIERS HAVE OPPOSITE SIGN ON THE COMMON OFFSET AND DIFFER BY A FACTOR OF FIVE ON THE PLANE'S DISCRIMINANT. **  More driving lowers the offset, more loading raises it, and `$\lvert\Delta\mathrm{alt}/\Delta\varphi\rvert$` is `$0.19$` against `$1.04$`.  *That is the separation the whole ask rested on, now measured on the arm's own pair rather than inferred from the control's*
+    OK    Ⓒ②  ⛔ ** BUT THE DRIVING AND `60`'s CLOCK ERROR ARE NOT SEPARATED BY THIS PLANE: the driving's discriminant sits within a sixth of the clock error's top, inside the spread of `60`'s own three readings. **  *So the plane does not license `the driving` over `a clock error in the driving`, exactly as `r7203` said it would not -- stated as the limit it is rather than left for the reader to notice*
+    OK    Ⓒ③  ⛭ and what the plane DOES separate decisively is the LOADING from both of them -- six times the clock error's top and five times the driving's.  *So the negative is specific rather than general: the plane distinguishes the two candidate carriers from each other, and fails only to distinguish the driving from a mis-read clock in the driving*
+
+========================================================================================================
+  D.  ⛭ AND `60` COULD NOT HAVE SEEN THAT, BECAUSE THE PROXY IT HAD POINTS THE WRONG WAY
+========================================================================================================
+      `60`'s stand-in for the loading was the banked `WB` direction, at 0.4544.
+      The clean lever is at 1.0963 -- 2.41x further out.
+      And cc66.157 measured their common-offset responses to have OPPOSITE sign:
+          d(phi)/dln(R_b)      +0.01535
+          d(phi)/dln(omega_b)  -0.02974
+    OK    Ⓓ①  ** THE `WB` DIRECTION UNDERSTATED THE LOADING'S SEPARATION BY A FACTOR APPROACHING THREE, AND POINTED THE OPPOSITE WAY ALONG THE OFFSET. **  *`60` used it because the clean lever did not exist when `r7218` was filed -- this is not a defect in `r7218`, it is the value of the three runs: a conclusion drawn on the proxy would have placed the loading nearer the clock error than it is and on the wrong side of zero*
+
+========================================================================================================
+  E.  ⛔ WHAT IS NOT CLAIMED, AND IT IS THE STEP THAT WOULD NAME THE CARRIER
+========================================================================================================
+  ** NO CARRIER IS NAMED FOR THE OBSERVED DRIFT, AND THE REASON HAS CHANGED. **
+  Before these runs the blocker was that the arm had no readable driving signature.  That is
+  now gone.  What is missing is the OBSERVED residual's own position on this plane: nothing
+  in tree measures it.  The de-tilted peak statistic has been run on model spectra only --
+  238-point curves with no noise -- and putting the data on the same plane means running it
+  on 179 binned points with a covariance, which is a measurement with its own validation
+  burden and is not what `r7203` ordered (`no refit, no new statistic`).
+  ⇒ So what the plane says is reported and the naming is not asserted: the two candidate
+     carriers are separated, the driving and a clock error are not, and which of them the
+     observed drift requires needs one measurement that nobody has made.
+  ⌗ `NS` appears only as the control direction known a priori to carry no acoustic phase --
+     an INHERITED quantity, adopted from LambdaCDM's own basis and derived from nothing this
+     construction predicts.  No conclusion here is a claim about it.
+     its own residual response: dphi -0.00234  dalt -0.00068
+    OK    Ⓔ①  the control direction stays well below every carrier direction on both components, which is the check that the plane is reading acoustic phase and not the de-tilt's leftover gradient
+
+========================================================================================================
+  ✔ 9 of 9 checks pass.
+========================================================================================================

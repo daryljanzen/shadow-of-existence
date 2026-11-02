@@ -1,0 +1,259 @@
+
+P15_the_source_decomposition_is_reachable_on_the_reporting_path_and_the_neutrinos_have_a_knob
+=============================================================================================
+
+LEVEL: an INSTRUMENT repair and its proof, then the two measurements the repair makes possible --
+`r6889`'s order, which put the knob shadow `r6885+cc66.35` found ahead of everything else.
+
+** THE SHADOW, AND WHY IT IS THE THIRD OF ITS KIND. **  `r4558` added `_SWSRC` and `_DPSRC` -- the
+monopole and Doppler-dipole switches -- and calibrated them, on `los_spectrum`.  ** The HIERARCHY
+path builds its own source at the foot of `los_hier`, and the LOW-ELL path builds a third at the foot
+of `main`, and neither read them. **  `HIER=1` is the path every refit number in this sector is
+computed on, so `DPSRC=0` there returned a BIT-IDENTICAL spectrum on both arms while the same switch
+moves D_l by 62 per cent on the path it does reach.  *`_ISW` was wired to all three in the same
+revision and these two were not, which is the whole of the difference -- and it is the same shape as
+the `NS` literal at `cc66.17`: a knob verified on the path it reaches and used on the path it does
+not.*
+
+** WHAT WAS DONE, IN ONE SENTENCE EACH. **
+
+ (1) `_SWSRC` and `_DPSRC` are wired into the hierarchy path and the low-multipole path, ADDITIVELY:
+     both are multipliers whose default is 1.0, and the monopole bracket is SPLIT so the switch
+     multiplies g(Theta_0+Psi) and not the polarisation term that shares the bracket and already has
+     `PISRC`.
+ (2) ** THE DEFAULT IS PROVED AND NOT ASSERTED **: the unset configuration is re-run on both arms and
+     gated BIT-IDENTICAL against the banked `cc66_r185_verify_{lcdm,cr}` before any other number in
+     this receipt is read.  ⌗ *And "bit-identical" is meant literally.  The first version of the
+     split wrote `_SWSRC * g_ * (Th0 + Ps) + g_ * _PI * Pi / 4`, which sums in a different ORDER
+     from the original and cost max |dD_l| = 1.1e-16 -- immaterial physically and still not zero.
+     Keeping the factor inside the bracket, `g_ * (_SWSRC * (Th0 + Ps) + _PI * Pi / 4)`, makes it
+     exact, because x * 1.0 is.  **That was measured, not foreseen**, and it is recorded because a
+     revision whose whole claim is "this changes nothing" should be able to say zero and mean it.*
+ (3) ** AND EACH IS CALIBRATED WHERE IT IS NEWLY WIRED **, because r4558's own note is the rule that
+     this revision exists to enforce: a knob that reports no change cannot be told from a knob that
+     is not connected.
+ (4) The two bracketing tests are re-run on the REPORTING path, where `r6885+cc66.35` could only run
+     them on the other one and said so.
+ (5) ⚑ AND THE FREE-STREAMING PHASE SHIFT GETS A KNOB, because the order asked whether one was
+     buildable and what it would cost.  ** It is four lines. **  What makes a neutrino free-stream
+     rather than behave as a perfect fluid is its anisotropic stress sigma_nu = F_2/2, at exactly two
+     dynamical sites -- the Euler equation and Psi's shear term -- so `NUFS` multiplies sigma_nu and
+     the F_2 source.  At `NUFS=0` the quadrupole is never sourced and the whole l>=2 ladder stays
+     zero, ** and the ladder's initial condition is exactly zero **, so the sector degenerates to a
+     perfect fluid at the SAME background density with nothing in the expansion history touched.
+     ⌗ *`NUFS=0` removes the whole free-streaming effect -- the phase shift AND the drag on the
+     amplitude -- so the PHASE half is the peak-POSITION difference and the drag is the rest.*
+
+** AND ONE CORRECTION TO THE ORDER, WHICH IS WHY THE KNOB IS SEPARATE. **  `r6889` says of the source
+decomposition and the phase shift that "the two are the same part of the source".  ** They are two
+layers, not one. **  `SWSRC`/`DPSRC` switch LINE-OF-SIGHT SOURCE TERMS -- which contributions are
+projected onto the sky -- and the free-streaming phase shift is in the DYNAMICS that set the dipole's
+phase before last scattering.  Deleting the Doppler term removes the dipole's contribution; `NUFS`
+changes what the dipole is.  *Pointing the first at the second would have measured nothing, so it is
+two knobs and this receipt builds both.*
+
+** ⛔ r7639 ⑵ -- THE `DPSRC=0` BIT-IDENTITY BELOW IS HISTORICAL, AND IS PINNED HERE AS HISTORY. **
+It is a measurement of the instrument BEFORE `_SWSRC` and `_DPSRC` were wired into `_project` at
+`r6889+cc66.36` (`736f9399`), so it can only be read against the spectra that instrument made.  It is
+therefore loaded through `hist`, which reads the `LEAFREC=0` namesakes and RECORDS what it read, with a
+check that fails if either file carries the arm-of-record suffix.  *The pin is load-bearing and not
+decoration: in `max |dD_l|` the namesake pair reads exactly `0.0` on both legs, a per-arm re-point gives
+the cross-arm `2.529e-02`, which measures nothing, and the honest both-legs arm-of-record read is
+`9.467e-02` -- because the knob IS wired there.  A re-point would read as a repair having FAILED where
+what it records is a repair having SUCCEEDED, and it would read that way GREEN.*
+  ⌘ *The arm-of-record pair `r6885_dp0_cr_leafrec1` DOES exist, so this family is reachable on that arm.
+  What is not reachable there is the BIT-IDENTITY, because on that arm there is nothing bit-identical to
+  measure.  P15 cites this receipt for other claims and for none of this one -- classed in
+  `computations/beyond_the_wall/r7639_cc66_P15_repoint_paper/P15_SENTENCES_dpsrc.md`.*
+
+-------------------------------------------------------------------------------
+COMPUTES: scope.
+  * ** EVERY COSMOLOGICAL PARAMETER IS BANKED, NOT CHOSEN HERE. **  Both arms are the verified 185-bin
+    refit minima of `r6825+cc66.25` -- `LH0=67.410309 LOM=0.309826 WBH2=0.021966 NS=0.954248` for the
+    control, `CRH0=68.581133 CROM=0.297209 WBH2=0.021524 NS=0.997952 ZSTART=3e7 LEAFSCALES=1` for the
+    arm -- and every run here is one of those two commands with ONE knob added.
+  * The lensing operator is `c54.183`'s CAMB lensed/unlensed TT ratio at Planck 2018, used exactly as
+    `cc66.33`, `cc66.34` and `cc66.35` use it.
+  * The one free number fitted is the single bandpower amplitude per spectrum, on the full covariance.
+  * ** NOT CLAIMED: any pinned value of n_s, H_0, Omega_m or omega_b. **  Those are `r6825+cc66.25`'s.
+
+WHAT IS CLAIMED.
+
+ (1) The shadow, stated as a property of the source text and not of a memory: `_DPSRC` occurs once
+     outside its declaration and inside `los_spectrum`, BEFORE the repair.
+ (2) The repair is additive: the unset configuration reproduces the banked spectra bit-for-bit on
+     both arms, so nothing downstream of this revision moves unless a knob is set.
+ (3) Each newly wired switch moves the hierarchy path's spectrum by a stated amount.
+ (4) The two bracketing tests on the reporting path, beside `r6885+cc66.35`'s line-of-sight ones.
+ (5) `NUFS` exists, its ladder's initial condition is exactly zero, and `NUFS=0` moves the spectrum.
+
+WHAT IS NOT CLAIMED.
+
+ * NOT a mechanism for the contrast imbalance.  `r6889` says that boundary is right and does not move
+   it, and neither does this.
+ * NOT the free-streaming phase shift's VALUE as a result about this construction.  The knob is built
+   and calibrated; pointing it at the question is the next order's, and what is reported here is that
+   it moves and by how much.
+ * NOT a repair of anything else in the instrument.  Three paths now read the same two switches; no
+   other knob is audited, and the count of shadows found is not a claim that there are no more.
+ * The low-multipole path is wired for consistency and is NOT exercised here -- this sector's numbers
+   are the hierarchy path's.  Naming it rather than quietly leaving it is the point.
+
+WHAT WOULD FALSIFY IT.  The unset configuration NOT reproducing the banked spectra; either switch
+still moving nothing on the hierarchy path; the reporting path's bracketing tests disagreeing with the
+line-of-sight ones in sign; or the neutrino quadrupole's initial condition turning out to be nonzero,
+which would make `NUFS=0` a frozen state rather than a perfect fluid.
+
+====================================================================================================
+
+  the frame, carried over from `r6885+cc66.35` unchanged: 179 bins, ||DELTA||^2 = 77.26, the arms' contrast ratio 1.0401
+
+PART 1 -- THE SHADOW, AS A PROPERTY OF THE SOURCE TEXT AND OF THE BANKED MEASUREMENT.
+----------------------------------------------------------------------------------------------------
+    `los_spectrum` begins at offset 95718; the hierarchy source and the low-multipole
+    source are both after it.
+    the monopole switch                `_SWSRC` used 5 time(s) at [98550, 126363, 126884, 129741, 149734]
+    the Doppler switch                 `_DPSRC` used 4 time(s) at [98700, 127014, 129776, 149754]
+    the ISW switch, for comparison     `_ISW * et` used 4 time(s) at [98610, 126931, 129091, 129851]
+  [PASS] ** ALL THREE SWITCHES NOW REACH MORE THAN ONE PATH **, which is the repair: before it the two source switches were used once each and `_ISW` three times, and that asymmetry WAS the shadow   (SWSRC 5x, DPSRC 4x, ISW 4x)
+  [PASS] ...and at least one use of each is AFTER `los_spectrum`, i.e. on a path that was blind to it   (last SWSRC at 149734, last DPSRC at 149754, against `los_spectrum` at 95718)
+  [PASS] ** the monopole bracket is SPLIT so the switch multiplies g(Theta_0+Psi) and NOT the polarisation term that shares it **, which is what makes the switch mean the same thing on the hierarchy path as on the line-of-sight one   (the split bracket is in the source, with the factor INSIDE so the default sums in the original order)
+  [PASS] ** ⛔ AND THE WHOLE OF THE SHADOW RECORD BELOW IS HISTORICAL, SO IT IS PINNED TO THE `LEAFREC=0` NAMESAKES AND NOT TO WHATEVER `base` POINTS AT **, because a measurement of the instrument before `r6889+cc66.36` can only be read against the spectra that instrument made   (the two files actually read are ['cc66_r185_verify_lcdm.npz', 'cc66_r185_verify_cr.npz'])
+  [PASS] ⛔ AND THE MEASUREMENT IT WAS FOUND BY, kept and re-gated here: with the switch UNWIRED, `DPSRC=0` on the refit configuration returned a bit-identical spectrum on BOTH arms   (max |dD_l| = 0.0e+00 and 0.0e+00 at `r6885_dp0_*`)
+
+PART 2 -- THE REPAIR IS ADDITIVE, AND THE DEFAULT IS PROVED BEFORE ANYTHING ELSE IS READ.
+----------------------------------------------------------------------------------------------------
+    the SAME two commands with nothing set, on the edited instrument:
+      control : max |D_l(new) - D_l(banked)| = 0.000e+00
+      CR arm  : max |D_l(new) - D_l(banked)| = 0.000e+00
+  [PASS] ** BIT-IDENTICAL ON BOTH ARMS **, so wiring two switches into two more paths and adding the neutrino knob changes NOTHING at the defaults -- every number this sector has reported still stands unedited   (0.0e+00 and 0.0e+00, exactly zero)
+  [PASS] ...and the multipole grids are identical too, so it is the same comparison and not a resampled one   (238 multipoles, 100-1996)
+
+PART 3 -- THE CALIBRATION: EACH NEWLY WIRED SWITCH MOVES THE REPORTING PATH.
+----------------------------------------------------------------------------------------------------
+
+  ** r4558's own note is the rule this revision exists to enforce: a knob that reports NO CHANGE is
+  indistinguishable from a knob that is not connected. **  So every switch newly wired here is shown
+  to move the spectrum on the path it was newly wired into, BEFORE any verdict is read off it.
+
+    `DPSRC=0`, the Doppler dipole                max relative |dD_l|: control  62.34%   arm  61.29%
+    `SWSRC=0`, the monopole                      max relative |dD_l|: control  89.11%   arm  90.26%
+    `NUFS=0`, the neutrinos as a perfect fluid   max relative |dD_l|: control  36.27%   arm  37.26%
+  [PASS] the Doppler switch demonstrably reaches the term it names on the hierarchy path   (62.3% and 61.3%)
+  [PASS] the monopole switch demonstrably reaches the term it names on the hierarchy path   (89.1% and 90.3%)
+  [PASS] the free-streaming switch demonstrably reaches the term it names on the hierarchy path   (36.3% and 37.3%)
+  [PASS] ⛭ ** AND THAT IS THE PAIR THAT MAKES THE SHADOW A PROOF **: the same switch, the same two commands, exactly 0.0 before the repair and this much after -- a null and an unwired knob look identical until both halves are on the record   (0.0% at `r6885_dp0_*` against 61-62% at `r6889_hdp0_*`)
+
+PART 4 -- THE TWO BRACKETING TESTS, ON THE PATH THE NUMBERS ARE REPORTED FROM.
+----------------------------------------------------------------------------------------------------
+
+  `r6885+cc66.35` could run these only on the line-of-sight path and said so, and that path's chi^2
+  is not comparable with this one's.  ** Here they are where it matters. **  The question each
+  answers is whether the CONTRAST -- the arm's acoustic oscillation at 1.040 of the control's about
+  its own envelope, which is what DELTA mostly is -- lives in the monopole-to-dipole balance.
+
+      test           ||DELTA_off||^2  of base  contrast ratio  cos(shape, CONTRAST)   [LOS path, r6885]
+      DPSRC=0                 149.30   193.3%          1.0376               +0.7980   [+0.893]
+                     and it takes the arm's own oscillation to +1.828 of what it was   [LOS: +1.855]
+      SWSRC=0                 229.69   297.3%          1.0818               -0.7655   [-0.791]
+                     and it takes the arm's own oscillation to -0.399 of what it was   [LOS: -0.300]
+  [PASS] ⚑ ** THE TWO HALVES OF THE SOURCE BRACKET THE CONTRAST WITH OPPOSITE SIGNS ON THE REPORTING PATH TOO **, so `r6885+cc66.35`'s reading -- the contrast direction IS the monopole-to-dipole balance -- was not an artefact of the path it had to be measured on   (DPSRC=0 cos +0.798, SWSRC=0 cos -0.765)
+  [PASS] ...and the two paths agree in SIGN on both, which is the comparison that was owed and could not be made before this repair   (hierarchy +0.798/-0.765 against LOS +0.893/-0.791)
+  [PASS] ⚠ ...while the arms' contrast RATIO SURVIVES both deletions -- it does not collapse toward 1.000 under either -- so the channel is identified and the cause is still not measured, which is the boundary `r6889` said it was not moving   (1.0401 -> hdp0 1.0376, hsw0 1.0818)
+  [PASS] ...and the two deletions are NOT equally inert on it, which is reported rather than averaged away: dropping the dipole barely moves the ratio while dropping the monopole raises it by four points, so the balance is not symmetric in its two halves   (dipole -0.0025, monopole +0.0416)
+
+PART 5 -- THE FREE-STREAMING PHASE SHIFT: A KNOB WAS BUILDABLE, AND HERE IS WHAT IT COST.
+----------------------------------------------------------------------------------------------------
+
+  The order asked for one of two answers: a knob is buildable and here is its cost, or the phase
+  shift cannot be tested on this instrument at all and the papers should carry that.  ** It is the
+  first, and the cost is four lines. **
+
+  What makes a neutrino free-stream rather than behave as a perfect fluid is its anisotropic stress
+  sigma_nu = F_2 / 2, which enters at exactly two dynamical sites -- the Euler equation
+  theta_nu' = k^2 (delta_nu/4 - sigma_nu), and Psi's shear term -- plus the l >= 2 ladder that
+  carries it.  `NUFS` multiplies sigma_nu and the F_2 source on both solver paths.
+
+  [PASS] `NUFS` is declared once and used at FOUR sites, two per solver path -- the shear where it is read and the F_2 source where it is made   (5 occurrences: one declaration and 4 uses)
+  [PASS] ** and the ladder's INITIAL CONDITION IS EXACTLY ZERO **, which is what makes NUFS=0 a perfect fluid rather than a frozen state: the quadrupole is allocated zero and never assigned, so with its source switched off it stays zero and everything above it stays zero   (`y0 = np.zeros((nk, NV))` with no assignment to index 7 anywhere in the file)
+  [PASS] ...and the background is untouched: `FNU` and the density fractions `Onv`/`Ogv` carry no `_NUFS`, so the expansion history and the radiation split are the same run to run   (no `_NUFS` within the density-fraction block)
+
+    `NUFS=0` on the reporting path moves D_l by 36.3% (control) and 37.3% (arm)
+      control  peaks free-streaming [221, 536, 815, 1130, 1418, 1733]
+      control  peaks perfect fluid  [230, 545, 824, 1139, 1436, 1750]   shift ['+9', '+9', '+9', '+9', '+18', '+17']
+      CR arm   peaks free-streaming [221, 536, 815, 1130, 1427, 1733]
+      CR arm   peaks perfect fluid  [230, 545, 824, 1139, 1436, 1750]   shift ['+9', '+9', '+9', '+9', '+9', '+17']
+  [PASS] ⚑ ** THE KNOB MOVES THE PEAK POSITIONS AND IT MOVES THEM THE RIGHT WAY **: the free-streaming phase shift pulls the peaks to SMALLER multipole, so removing it must push them back to LARGER -- and every shift on both arms is POSITIVE   (shifts control ['+9', '+9', '+9', '+9', '+18', '+17'] / CR arm ['+9', '+9', '+9', '+9', '+9', '+17'])
+  [PASS] ...and it is UNIFORM across the first four peaks on both arms, which is what a PHASE shift looks like as against a rescaling of the acoustic scale   (control +8.999 at peaks 1-4 (spread 0.002), CR arm +8.999 at peaks 1-4 (spread 0.002))
+  [PASS] ⚠ ** AND ITS SIZE IS GRID-LIMITED AND IS REPORTED AS SUCH **: the shift comes out at one binned grid step, so the SIGN and the order of magnitude are established here and the VALUE is not -- reading it off would want a locator on a finer grid, which is not run   (shift +8.998 against a median bin step of 9.000 -- exactly one step, which is the resolution and not a measurement)
+  [PASS] ...while the DRAG half -- the amplitude suppression free-streaming also causes -- is the large effect, and the two must not be quoted as one number   (D_l moves 36% and 37% against a peak shift of one grid step)
+  [PASS] ⌗ and the knob is CALIBRATED rather than merely present -- which is the entire subject of this revision, so a new knob that had not been shown to move something would be the same defect landed twice   (min move 36.3%)
+
+====================================================================================================
+THE READING.
+====================================================================================================
+
+  ** THE ORDER PUT THE SHADOW AHEAD OF EVERYTHING ELSE AND IT IS CLOSED. **  `_SWSRC` and `_DPSRC`
+  now reach all three source constructions -- `los_spectrum`, the hierarchy path and the
+  low-multipole path -- where before they reached one.  ⇒ *** And the default is PROVED rather than
+  asserted: the unset configuration reproduces the banked spectra BIT-FOR-BIT on both arms, so
+  nothing this sector has already reported moves. ***  ⌗ *`_ISW` was wired to all three at r4558 and
+  these two were not; that asymmetry was the whole of the defect, and it is the third of its shape
+  after the `NS` literal and the baryon density.*
+
+  ** AND THE PAIR THAT MAKES IT A PROOF RATHER THAN A STORY. **  The same switch, the same two
+  commands: exactly 0.0 on the reporting path before the repair, 61% after.  *A null and an
+  unwired knob are indistinguishable until both halves are on the record, which is r4558's own rule
+  and the reason this revision exists.*
+
+  ⚑ ** THE BRACKETING TESTS SURVIVE THE MOVE TO THE REPORTING PATH. **  DPSRC=0 at cos +0.80 and SWSRC=0 at cos -0.77 -- the two halves of
+  the source bracket the contrast with opposite signs here as they did on the line-of-sight path, so
+  *** `r6885+cc66.35`'s reading, that the contrast direction IS the monopole-to-dipole balance, was
+  not an artefact of the path it had to be measured on. ***  ⚠ *And the arms' contrast RATIO survives
+  both deletions again, so the channel stays identified and the cause stays unmeasured -- the
+  boundary `r6889` said it was not moving.*
+
+  ⚑ ** THE FREE-STREAMING PHASE SHIFT HAS A KNOB, AND THE ANSWER TO "WHAT WOULD IT COST" IS FOUR
+  LINES. **  What makes a neutrino free-stream is its anisotropic stress at two dynamical sites, so
+  `NUFS` multiplies sigma_nu and the F_2 source on both solver paths.  ** The quadrupole's initial
+  condition is exactly zero **, so at `NUFS=0` it is never sourced, the whole ladder stays zero, and
+  the sector is a perfect fluid at the SAME background density -- `FNU` and the density fractions
+  untouched.  ⇒ It moves the spectrum by 37.3% on the arm and it moves the PEAK POSITIONS, which is
+  the phase half.  ⇒ *** And the phase half comes out with the RIGHT SIGN: removing free-streaming
+  pushes every peak on both arms to LARGER multipole, uniformly across the first four, which is what
+  a phase shift looks like and the direction the Bashinsky-Seljak pull has. ***  ⚠ *Its SIZE is one
+  binned grid step, so the sign and the order of magnitude are established and the value is not; and
+  the DRAG half -- the amplitude suppression, 37.3% in D_l -- is the large effect and must not be
+  quoted as the same number.*  *After three orders naming this candidate and none testing it, it is
+  reachable.*
+
+  ⛭ ** AND ONE CORRECTION TO THE ORDER, WHICH IS WHY IT IS A SECOND KNOB AND NOT THE FIRST ONE
+  POINTED SOMEWHERE. **  `r6889` says of the source decomposition and the phase shift that "the two
+  are the same part of the source".  *They are two layers.*  `SWSRC`/`DPSRC` switch which
+  LINE-OF-SIGHT terms are projected onto the sky; the phase shift is in the DYNAMICS that set the
+  dipole before last scattering.  ** Deleting the Doppler term removes the dipole's contribution;
+  `NUFS` changes what the dipole IS. **  Pointing the first at the second would have measured
+  nothing.
+
+  ⚠ ** WHAT THIS IS NOT. **  No mechanism for the contrast imbalance, which `r6889` explicitly did
+  not ask for.  No VALUE for the phase shift as a result about this construction -- the knob is built
+  and calibrated and pointing it at the question is the next order's.  And no audit of any other
+  knob: three shadows have now been found in this sector by three different routes, and nothing here
+  says there is not a fourth.
+
+====================================================================================================
+GATES: ALL PASS.
+
+ESTABLISHED: `_SWSRC` and `_DPSRC` now reach all three source constructions where they reached one,
+and the repair is additive -- the unset configuration reproduces `cc66_r185_verify_{lcdm,cr}`
+bit-for-bit on both arms.  Each newly wired switch is calibrated where it was newly wired: the
+Doppler switch moves the reporting path by 61% where it moved it by exactly 0.0 before, which is
+what turns `r6885+cc66.35`'s bit-identical pair from a null into a proof.  The two bracketing tests
+re-run on the reporting path give DPSRC=0 at cos +0.80 and SWSRC=0 at cos -0.77, the same opposite-sign bracket the line-of-sight path gave,
+so the contrast direction IS the monopole-to-dipole balance and that reading was not the path's.  AND
+the free-streaming phase shift is reachable: `NUFS` is four lines, its quadrupole's initial condition
+is exactly zero so `NUFS=0` is a perfect fluid at the same background density, and it moves the arm
+by 37.3% and moves the peak positions.
+NOT CLAIMED: a mechanism for the contrast imbalance; a value for the phase shift as a result about
+this construction; or that no further knob in this instrument is shadowed.
+

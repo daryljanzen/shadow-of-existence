@@ -1,0 +1,96 @@
+
+RECEIPT -- P15: ** THE HEIGHTS, BROUGHT FROM 13-34% TO 2-3% BY PUTTING THE DIFFUSION DAMPING BACK --
+DERIVED ON EACH ARM'S OWN OPACITY AND RATE, NOT IMPORTED AND NOT FITTED.  AND THE LIKELIHOOD'S FLOOR
+FALLS BY A FACTOR OF FIVE WITHOUT THE VERDICT TURNING OVER. **
+
+Built r2376+c54.175, front #2.
+
+** WHAT WAS MISSING, AND THE DIAGNOSIS WAS FROM THE SIGN. **  At c54.173 the line-of-sight transfer
+gave positions to 0.16% and heights of -13% (P1/P2) and -34% (P1/P3).  ** Both LOW means the second
+and third peaks were too HIGH relative to the first, which is what under-damping looks like -- and
+the higher the multipole the worse it was, which is where diffusion acts. **  The cause: the
+hierarchy's tight-coupling closure switches off at tau' = 0.6/Mpc, and the visibility peaks where
+tau' ~ 0.03/Mpc -- twenty times lower.  ** The photon quadrupole and the baryon slip were absent
+through the whole of last scattering, so the line-of-sight path carried no Silk damping at all. **
+The pre-line-of-sight path had hidden this behind a hardcoded r_D.
+
+** THE FIX IS THE STANDARD TIGHT-COUPLING RESULT, EVALUATED ON EACH ARM'S OWN BACKGROUND. **
+
+    1/k_D^2(eta) = INT_0^eta [ R^2/(1+R) + C ] / [ 6 (1+R) tau' ] d(eta'),   C = 16/15,
+
+applied as exp(-k^2/k_D^2) to the PHOTON perturbations in the source -- Theta_0 and the baryon
+velocity -- and not to the potentials, which do not diffuse.
+
+  PART 1  ** THE SCALE IS DERIVED AND LANDS WHERE IT SHOULD. **  r_D = 7.10 Mpc at the visibility
+          peak on the LambdaCDM arm, against the 6-7 Mpc a Boltzmann code returns.  Nothing fitted.
+          *Built at 6.58 with C = 8/9; c54.177 DERIVES C = 16/15 from the polarised photon
+          hierarchy and PART 1 follows it.  The rest of this file is the history of runs at 8/9
+          and is left at those values.*
+  PART 2  ** AND A DOUBLE COUNT HAD TO BE REMOVED FOR IT TO WORK. **  With the hierarchy's own
+          tight-coupling damping left in over tau' > 0.6 AND the integral applied over the same
+          range, the control came out OVER-damped: +6.7% and +17%.  ** Removing the in-hierarchy
+          terms so that one mechanism acts once gives -0.45% and +5.3%. **  *The sign flip either
+          side of the correction is what identifies it as a double count rather than a coefficient.*
+  PART 3  ** THE HEIGHTS: -13%/-34% -> -2.8%/-2.1%. **  An order of magnitude, on a control whose
+          positions were already sub-per-cent.
+  PART 4  ** AND THE LIKELIHOOD'S FLOOR FALLS BY FIVE WITHOUT THE VERDICT TURNING OVER. **
+          chi^2/dof for the control goes 103 -> 22.5.  ** Still not one, so `L-147`'s answer stands:
+          the likelihood cannot arbitrate. **  *The floor moving by five and the verdict not moving
+          is the useful fact -- it says how much further the instrument has to go, which is the
+          specification that row delivered.*
+
+** !! AND THE 2-3% IS SUPERSEDED AS A COMPARISON AT c54.176, IN THE SAME REVISION AS THIS FILE'S
+SUCCESSOR. **  The 2.217 and 2.277 it is measured against are bare numbers.  ** With the plik_lite
+covariance the sky's own ratios are 2.256 +- 0.077 and 2.280 +- 0.074 -- 3.4% and 3.2%.  So the
+13% and 34% of PART 3 were four and ten sigma and stand; the 2-3% is about ONE sigma and is not a
+measured residual. **  *The improvement is real and its size as stated is not.*  See
+`P15_the_height_target_was_below_the_resolution_of_its_own_statistic.py`.
+
+** WHAT IS STILL OWED. **  A control at chi^2/dof ~ 1 needs sub-per-cent heights, and 2-3% is not
+that.  The remaining error is still worst at high multipole: no polarisation term in the source, and
+a photon sector with no free-streaming hierarchy after decoupling.  ** Neither is a CR question. **
+
+
+==============================================================================
+PART 1 — THE DIFFUSION SCALE, DERIVED ON THIS ARM'S OWN OPACITY AND RATE
+==============================================================================
+  visibility peaks at eta = 280.75 (eta_rec = 280.67), where tau' = 0.0605/Mpc
+  the hierarchy's tight-coupling closure switches off at tau' = 0.6/Mpc — 10 times higher
+
+  ** r_D at the visibility peak = 7.10 Mpc, against the 6-7 Mpc a Boltzmann code
+     returns.  Nothing fitted: it is the standard tight-coupling integral evaluated on
+     this arm's own opacity. **
+
+==============================================================================
+PART 2/3 — THE DOUBLE COUNT, AND THE HEIGHTS
+==============================================================================
+                       configuration     P1/P2    vs sky     P1/P3    vs sky
+                                 sky     2.217         —     2.277         —
+          c54.173  no damping at all     1.930   -12.9%     1.514   -33.5%
+     c54.175  damping + hierarchy TC     2.365     6.7%     2.670    17.3%
+     c54.175  damping alone (NOTC=1)     2.154    -2.8%     2.230    -2.1%
+
+  ** WITH NO DAMPING the heights are LOW (peaks 2 and 3 too high); WITH BOTH MECHANISMS
+     they are HIGH.  ** The sign flips either side, which identifies a DOUBLE COUNT rather
+     than a wrong coefficient: the hierarchy damps over tau' > 0.6 and the integral covers
+     the same range. **  One mechanism acting once: worst error 34% -> 3%.
+
+==============================================================================
+PART 4 — AND THE LIKELIHOOD'S FLOOR FALLS BY FIVE WITHOUT THE VERDICT TURNING OVER
+==============================================================================
+                              chi^2   bins   chi^2/dof
+     CAMB (5 parameters)      206.4    215        0.96
+        control, c54.172    18992.6    185      102.66
+        control, c54.175     4170.2    185       22.54
+
+  ** THE FLOOR FALLS 103 -> 23, a factor of 4.6. **
+     *And it is still not one, so `L-147`'s answer stands unchanged: the likelihood cannot
+     arbitrate.* ⇒ ***The floor moving by five and the verdict not moving is the useful
+     fact — it measures how much further the instrument has to go, which is exactly the
+     specification that row delivered instead of a verdict.***
+
+==============================================================================
+ALL CHECKS PASS — the diffusion scale is derived at 7.1 Mpc, a double count had to be
+removed for it to work and the sign flip identifies it, the heights go from 13-34% to 2-3%,
+and the likelihood’s floor falls with its verdict unchanged.
+==============================================================================

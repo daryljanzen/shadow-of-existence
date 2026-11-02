@@ -1,0 +1,154 @@
+P15 sec:refit-bound -- ** THE LOWEST BAND IS CLOSED TO ANY OSCILLATION-AMPLITUDE ESTIMATOR BY THE
+FIELDS THEMSELVES, AT AN EXACT FLOOR; THE EXCESS'S DECELERATION IS ROBUST IN SIGN AND IS CARRIED BY THAT
+SAME BAND ALONE; AND THE FILTER'S THIRD CONDITION IS PERMANENTLY UNAVAILABLE EXACTLY FOR THE CLASS OF
+CANDIDATE THE PHYSICS SAYS CAN CARRY THE EXCESS. **
+
+** PATH PROVENANCE, IN THE HEADER, ON THE STANDING REQUIREMENT. **  *** Every model number below is the
+HIERARCHY path *** -- `r6897_fields` (the `ZPSAVE` bank, whose arm is a KEY and exists on the namesake
+arm only), `r6941_fine_lcdm` and `r6941_fine_cr_leafrec1` (the banked spectra the contrast statistic is
+computed on, with `r6941_fine_cr` read for the comparison) and `r6959_eta_cr_leafrec1` (band edges alone).  `sec:refit-bound`'s
+line-of-sight quartet is searched for below rather than asserted absent.  ⛔ *** Nothing is SOLVED. ***
+
+** THE PRE-REGISTRATION IS `r7003_directions/PREDICTION.md` AND IT TABLES THE FAILURE MODES FIRST **, on
+this revision's own new guard -- *pre-register the ways the measurement can fail to decide, not only its
+outcomes* -- with four for ⓵ and four for ⓶, and it dates each of its own parts.
+
+⛭⛭⛭ ** ⓵ THE BAND IS CLOSED BY THE FIELDS, AND THERE IS AN EXACT FLOOR. **  The criterion is named
+before it is applied and is a necessary condition from identifiability rather than a chosen threshold:
+*an oscillation amplitude at $q_0$ is identified only if the fitting window holds a TURNING POINT of the
+field on each side of $q_0$* -- because over a span carrying no turning point the held-period `cos`/`sin`
+pair is monotone in $q$, and a monotone function over a short span is what the baseline polynomial
+already spans.
+
+⇒ ** SO THE FLOOR IS THE MIDPOINT OF THE FIRST TWO TURNING POINTS, AND THE MONOPOLE SETS IT. **  Its
+turning points are at $q = 0.996,\,1.915,\,2.912,\dots$ with ***none below the first*** -- the first
+excursion is one-sided -- giving a floor of $q = 1.455$, against the dipole's $0.962$.  ⛔ ***The
+filter's lowest band, $q \in [0.85,\,1.55]$, lies $86$ per cent below that floor, and every other band
+lies entirely above it.***
+
+⌷ ** AND IT IS NOT THE WINDOW, WHICH IS SHOWN THREE WAYS. **  *Width*: the same eight window widths at
+identical conditioning give a spread of $0.004$ at $q_0 = 1.90$ and $0.016$ at $q_0 = 1.20$, with a sign
+change.  *Placement*: sweeping the left edge with the right held, the departure drifts monotonically
+negative as the window opens past the monopole's first turning point and is positive once it stays above
+it -- *what lies below is the field's rise from its initial condition, which is not an acoustic
+oscillation at all.*  *Prediction*: **every centre below the floor spreads by more than every centre
+above it**, which the floor was not fitted to.
+
+⇒ *** NO ESTIMATOR OF AN OSCILLATION AMPLITUDE CAN REACH INSIDE THE FIRST EXCURSION.  An acoustic
+oscillation has a first extremum and there is no amplitude before it because there is no oscillation
+before it. ***
+
+⛭⛭ ** ⓶ AND THE ANSWER IS IN THREE PARTS, THE THIRD OF WHICH GOES AGAINST THIS SEAT'S OWN RESULT. **
+
+⌗ ** ⓐ WITHIN THE STATISTIC AS DEFINED, THE CURVATURE IS ROBUST. **  Moving the envelope's width
+($0.8$--$1.2$), the band edges ($\pm 0.05$) and the sampling, *the curvature is negative in every one of
+six variants*, $-0.00369$ to $-0.00280$, with band 1's own value stable at $+0.0261$ to $+0.0314$ --
+$18$ per cent of its own size, the same relative spread the namesake arm had.
+
+⛔ ** ⓑ AND IT IS CARRIED BY BAND 1 ALONE. **  With band 1 dropped the curvature runs $-0.00154$ to
+$+0.00004$ across those same six: ** its sign is not determined. **  ⚠ *The straddle is THIN -- the
+positive end reaches only $+0.00004$ -- and that is printed rather than smoothed over.*  ⇒ *** THE DECELERATION IS THE
+LOWEST BAND BEING LOW, NOT THE UPPER BANDS BENDING *** -- and that band is the one ⓵ closes.
+
+⚠⚠ ** ⓒ AND IT IS NOT ROBUST TO THE ENVELOPE'S DEFINITION, WHICH IS THE PART THE ORDER ASKED FOR AND
+WHICH THIS SEAT WOULD RATHER NOT HAVE FOUND. **  Replacing the running ARITHMETIC MEAN by a running
+MEDIAN -- same window, same bands, same everything else -- *** reverses the curvature to $+0.00624$. ***
+⌗ That variant is a DIFFERENT statistic and the difference is measured rather than asserted: **its
+envelope absorbs more than half of the band-7 oscillation on BOTH arms** ($0.096 \to 0.044$ on the
+control, $0.103 \to 0.053$ on the arm), so its band ratios are formed on a much smaller residual, and
+`r6911+cc66.40` specifies the arithmetic mean.  ⛔ **But naming it a different statistic does not make
+the exposure go away:** *"the excess decelerates" is a property of the arithmetic-mean-envelope contrast
+statistic and not of the excess as such, and the paper does not currently say which.*
+⌗ *The second non-defining variant, `win` $=2.0$, is two acoustic periods and drops band 1 by a factor
+of $2.8$ while keeping the sign.*
+
+⇒ ** SO `P15` MAY SAY THE EXCESS DECELERATES, AND OWES TWO QUALIFICATIONS IN THE SAME BREATH: THAT THE
+DECELERATION IS CARRIED BY THE LOWEST BAND, AND THAT IT IS A PROPERTY OF THIS ENVELOPE. **  *What was
+landed too strongly is not the claim but its INDEPENDENCE -- of any one band, and of the envelope's
+definition -- which nothing in the paper says and a reader would assume.*
+
+⛭⛭⛭ ** `r7639` ⑱ -- THE ARM OF RECORD ON THE SPECTRA, THE NAMESAKE ARM ON THE FIELDS, AND THE
+CARRY IS WHAT MAKES ⓶ A RESULT AT ALL. **  ⓵ reads `r6897_fields`, which carries its arm as a KEY
+suffix and has **no arm-of-record key**, so the source fields exist on the namesake arm only; ⓶ reads
+the banked spectra, which do have one, and its statistic is an arm-vs-control comb-band ratio, so it is
+carried onto the control's comb coordinate before the bands are cut.  *No gate mixes the two legs, and a
+guard measures which banks were read rather than asserting it.*
+
+⛔ ** AND WITHOUT THE CARRY THE WHOLE OF ⓶ WOULD BE WITHDRAWN. **  Read on the arm of record on the raw
+grid, the curvature runs $-0.00106$ to $+0.00352$ -- *** the sign is not determined, so "the excess
+decelerates" would have no support at all *** -- band 1's spread is $76$ per cent of its own value
+against $18$, and the drop-band-1 curvature stops straddling zero ($+0.00550$ to $+0.01531$, all one
+sign), which would have inverted ⓑ as well.
+
+⚠ ** TWO REGISTERED THRESHOLDS MISS, BOTH CALIBRATED ON THE NAMESAKE ARM, AND BOTH FINDINGS SURVIVE. **
+ⓐ's band-1 stability was an ABSOLUTE span under $0.005$; band 1 is larger on this arm, so the same
+relative stability breaches it at $0.0052$.  *Relative to its own value the spread is $18.2$ per cent
+here against $17.6$ on the namesake -- the same number -- while the uncarried reading is $76.4$.*  And
+the `win` $=2.0$ drop was registered at under a QUARTER of the admissible minimum; it is $0.356$ here
+and $0.414$ on the NAMESAKE arm once the carry is applied, against $0.194$ on the namesake arm
+uncarried, where the quarter was set -- so *the threshold tracks the CARRY and not the arm*.  Both printed with their measured values; neither
+re-toleranced.
+
+⛔⛔ ** ⓷ AND THE THIRD CONDITION IS NOT UNAVAILABLE IN GENERAL, WHICH IS WORSE THAN IF IT WERE. **  It
+needs a band-1 value, and band 1 is closed to *oscillation-amplitude estimators* -- not to a candidate
+computed from the kernel.  `cc66.52`'s projection-width channel had a band-1 value and ** was excluded on
+curvature. **  ⇒ *** THE FILTER'S FULL STRENGTH IS AVAILABLE EXACTLY FOR THE CLASS THAT CANNOT CARRY THE
+EXCESS, AND ITS THIRD CONDITION IS PERMANENTLY UNAVAILABLE EXACTLY FOR THE CLASS THAT CAN *** -- since
+`cc66.51` settled on physics that what fills a trough is an oscillation amplitude.
+
+⌗ ** AND IS A TWO-CONDITION FILTER A FILTER?  SEPARATELY, BECAUSE THE ANSWERS DIFFER. **  *As an
+exclusion device, yes and it has lost nothing*: sign and growth are each necessary on a carrier, and the
+exclusions already made were made on growth alone.  *As a confirmation device, no -- and it never was
+one, not with three either*: all three conditions are conditions on the SHAPE of a departure in $q$, and
+a shape match does not fix a size.  ** Measured here: the candidate matches the target in sign and in
+direction of growth while being five times smaller at the top band. **  ⇒ *So the candidate's passing
+two conditions is worth exactly what passing three would have been -- it is not excluded -- and the
+row's remaining question is the coupling, which is quantitative and needs band 1 not at all.*  ⛔ *Named
+as the question, not proposed as a channel: the order's ⓸ closes the list.*
+
+  [PASS] ⛭ AND THE BAND EDGES ARE A DEFINITION AND NOT A MEASUREMENT: the arm-of-record eta bank's `q_edges` are BIT-IDENTICAL to the namesake's, so no pin on that leg could mean anything   (8 edges, byte-for-byte equal)
+  [PASS] ⛔ PATH PROVENANCE: no line-of-sight quartet value and no line-of-sight bank name occurs in the executable body   (r6897_fields, r6941_fine_{lcdm,cr} and r6959_eta_cr's band edges only)
+  [PASS] and nothing is SOLVED: the instrument is neither imported nor shelled out to   (banks on disk)
+
+⛭⛭⛭ ⓵ -- IS THE LOWEST BAND CLOSED BY THE FIELDS?
+
+    lcdm  monopole turning points 0.996  1.915  2.912  3.910   floor 1.4553
+          dipole   turning points 0.471  1.453  2.414  3.442   floor 0.9618
+    cr    monopole turning points 0.993  1.914  2.907  3.900   floor 1.4533
+          dipole   turning points 0.474  1.449  2.415  3.435   floor 0.9613
+  [PASS] ⛭ THE FIRST EXCURSION IS ONE-SIDED: the monopole source field has NO turning point below its first, on either arm, so no window there can hold one on each side of its centre   (first monopole turning point at q = 0.996 (control) and 0.993 (arm), monotone below it)
+  [PASS] ⛭⛭ AND THE BINDING FLOOR IS THE MONOPOLE'S, not the dipole's -- so the reach of a RATIO of the two amplitudes is set by the field whose first excursion starts later   (monopole floor 1.4553 against dipole floor 0.9618)
+  [PASS] ⛔ AND THE FILTER'S LOWEST BAND LIES MOSTLY BELOW THAT FLOOR WHILE EVERY OTHER BAND LIES ENTIRELY ABOVE IT, which is the whole of the result: band 1 is not hard to measure, it is closed   (band 1 is 86.5 per cent below the floor q = 1.4553; bands 2-7 are 0 per cent)
+  [PASS] ⌷ AND IT IS NOT THE BAND'S WIDTH: the SAME eight window widths, at identical conditioning, hold to a few parts in a thousand one band up and swing by an order of magnitude more at band 1, changing sign   (spread 0.01641 at q0=1.20 against 0.00392 at q0=1.90)
+  [PASS] ⌷ AND THE OBSTRUCTION BITES AT THE FIRST TURNING POINT: sweeping the window's LEFT EDGE with its right edge held, the departure is negative for every window that opens past the monopole's first turning point and positive for every window that stays above it.  *What lies below is the field's rise from its initial condition, which is not an acoustic oscillation*   ([0.30,2.16] -0.00361  [0.50,2.16] -0.00772  [0.70,2.16] -0.00496  [0.90,2.16] -0.00286  [1.00,2.16] +0.00021  [1.10,2.16] +0.00564  [1.20,2.16] +0.00802)
+  [PASS] ⌷ AND THE FLOOR PREDICTS THE REACH RATHER THAN BEING FITTED TO IT: EVERY centre below the floor spreads by more than EVERY centre above it   (below the floor min spread 0.01641; above the floor max spread 0.01263)
+
+⛭⛭ ⓶ -- DOES THE TARGET'S OWN CURVATURE CARRY THE PAPER'S CLAIM?
+
+    admissible variants: curvature -0.00369 to -0.00280;  with band 1 dropped -0.00154 to +0.00004;  band 1 +0.0261 to +0.0314
+    the namesake arm, as registered: curvature -0.00377 to -0.00291;  dropped -0.00121 to +0.00031;  band 1 +0.0201 to +0.0240
+    the arm of record UNCARRIED:     curvature -0.00106 to +0.00352;  dropped +0.00550 to +0.01531;  band 1 +0.0119 to +0.0265
+  [PASS] ⛭ THE CLAIM IS SUPPORTED: the target's curvature is NEGATIVE in every variant that leaves the statistic's own definition alone -- the envelope width, the band edges and the sampling all moved.  *'The excess decelerates' is not a fragile number*   (6 variants, all negative, -0.00369 to -0.00280)
+  [PASS] and band 1's own value is stable ACROSS THOSE VARIANTS RELATIVE TO ITS OWN SIZE, so the single-band dependence below can be characterised rather than merely suspected   (band 1 spans +0.0261 to +0.0314, 18.2 per cent of its own value; the namesake arm 17.6 per cent and the uncarried arm of record 76.4 per cent)
+  [PASS] ⚠ AND THE REGISTERED FORM OF THAT CLAUSE -- an ABSOLUTE span under 0.005 -- MISSES ON THE ARM OF RECORD, while what it was registered to separate is separated more sharply by the relative form: band 1 is larger on this arm, so the same relative stability breaches an absolute threshold set on the namesake's smaller value.  ** Reported, not re-toleranced **   (0.0052 against the registered 0.005 (namesake 0.0039); relative, 18.2 against 17.6 per cent -- the same number -- while the uncarried reading is 76.4)
+  [PASS] ⛔ AND IT IS A SINGLE-BAND CLAIM: with band 1 dropped the curvature's sign is NOT DETERMINED across those same variants.  ⇒ THE DECELERATION IS THE LOWEST BAND BEING LOW, NOT THE UPPER BANDS BENDING -- and that band is the one ⓵ closes   (drop-band-1 curvature runs -0.00154 to +0.00004 -- and the straddle is THIN, the positive end reaching only +0.000042, against the namesake arm's +0.000314; on the uncarried arm of record it does not straddle at all (+0.00550 to +0.01531, all one sign))
+  [PASS] ⚠⚠ AND IT IS NOT ROBUST TO THE ENVELOPE'S DEFINITION, WHICH IS THE PART THIS SEAT WOULD RATHER NOT HAVE FOUND AND IS REPORTING ANYWAY: replacing the running ARITHMETIC MEAN by a running MEDIAN -- same window, same bands, everything else unchanged -- REVERSES THE CURVATURE.  ⇒ 'The excess decelerates' is a property of the arithmetic-mean-envelope statistic and not of the excess as such, and the paper does not currently say which   (median-envelope curvature +0.00624 against the mean envelope's -0.00369 to -0.00280)
+  [PASS] ⌷ and that variant is a DIFFERENT statistic on a measured difference rather than on a preference: its envelope absorbs more than half of the top band's oscillation on BOTH arms, so its band ratios are formed on a much smaller residual -- and `r6911+cc66.40` specifies the arithmetic mean.  *Naming it a different statistic does not retire the exposure above*   (lcdm band 7 0.0962 -> 0.0441  cr band 7 0.1038 -> 0.0526)
+  [PASS] and the second non-defining variant is named too: `win` = 2.0 is TWO acoustic periods and smooths across the structure the statistic is defined to measure, dropping band 1 by a large factor while keeping the sign   (band 1 becomes +0.0093 against +0.0261 admissibly, a drop of 2.8x with the sign kept)
+  [PASS] ⚠ AND THE REGISTERED FORM OF THAT CLAUSE -- a drop to under a QUARTER -- MISSES, and it misses on the namesake arm too once the carry is applied, so the quarter was a property of the UNCARRIED reading rather than of either arm.  What it was registered to establish holds: a large drop with the sign kept.  ** Reported, not re-toleranced **   (0.356 of the admissible minimum here and 0.414 on the NAMESAKE arm once carried, against 0.194 on the namesake arm uncarried where the quarter was set -- so the threshold tracks the CARRY and not the arm; and on the uncarried arm of record band 1 goes NEGATIVE at this window (-0.0079), a different failure altogether)
+
+⛔⛔ ⓷ -- WHAT CAN THE FILTER STILL DECIDE?
+
+  [PASS] ⛔⛭ THE THIRD CONDITION IS NOT UNAVAILABLE IN GENERAL, WHICH IS WORSE THAN IF IT WERE: a candidate COMPUTED from the kernel has a band-1 value -- `cc66.52`'s projection width did, and the filter EXCLUDED it on curvature -- while the amplitude-class candidate's band-1 spread exceeds its value.  ⇒ THE FILTER'S FULL STRENGTH IS AVAILABLE EXACTLY FOR THE CLASS THAT CANNOT CARRY THE EXCESS, since `cc66.51` settled on physics that what fills a trough is an oscillation amplitude   (amplitude class band 1 -0.00031 with spread 0.0210; kernel class +0.00343)
+  [PASS] ⌗ AND AS A CONFIRMATION DEVICE THE FILTER NEVER WORKED, NOT WITH THREE CONDITIONS EITHER, WHICH is why the missing one costs less than it looks: all three are conditions on the SHAPE of a departure in q, and a shape match does not fix a size -- measured here, the candidate matches the target in sign and in direction of growth while being several times smaller at the top band   (candidate +0.01441 against target +0.07946 -- a factor 5.5)
+  [PASS] and as an EXCLUSION device it has lost nothing, because each remaining condition is necessary on a carrier and the exclusions already made were made on growth alone.  ⇒ The candidate's passing two is worth what passing three would have been: it is NOT EXCLUDED, and the row's remaining question is the coupling rather than a fourth condition   (on the measurable range both are positive throughout and both grow: candidate G = 2.99, target G = 1.34)
+
+⌗ THE PRE-REGISTRATION
+
+  [PASS] ⛔ THIS REVISION'S OWN NEW GUARD, APPLIED TO ITSELF: the pre-registration tables the WAYS EACH MEASUREMENT CAN FAIL TO DECIDE, and tables them BEFORE the outcomes   (14 tabled rows, failure modes for both measured items, ahead of the outcomes)
+  [PASS] and it dates its own parts, naming the criterion ⓵ applies as stated before use and the outcome tables as written after   (the bracketing criterion is a necessary condition from identifiability, not a fitted threshold)
+  [PASS] ⛭ AND THE TWO LEGS ARE WHAT THE HEADER SAYS: the spectra and band edges read on the ARM OF RECORD, the source fields on the NAMESAKE arm because that bank has no arm-of-record key at all   (read ['r6941_fine_lcdm', 'r6941_fine_cr_leafrec1', 'r6941_fine_cr', 'r6959_eta_cr_leafrec1']; the fields bank holds 72 keys and none names an arm of record)
+  [PASS] ⛭ AND EVERY ARM-OF-RECORD FIGURE THIS HEADER PRINTS FOR ⓶ IS THE COMPUTED ONE, compared and not merely found   (19 figures: $-0.00369$ $-0.00280$ $-0.00154$ $+0.00004$ $+0.0261$ $+0.0314$ $+0.00624$ $-0.00106$ $+0.00352$ $+0.00550$ $+0.01531$ $0.0052$ $18.2$ $17.6$ $76.4$ $0.356$ $0.194$ $0.414$ $2.8$)
+
+====================================================================================================
+GATES: ALL PASS

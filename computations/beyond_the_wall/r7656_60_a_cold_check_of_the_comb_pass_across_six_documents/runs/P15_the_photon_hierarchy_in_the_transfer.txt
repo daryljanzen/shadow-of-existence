@@ -1,0 +1,153 @@
+
+⌛ HISTORICAL (r7637+70, 69's ruling): THIS RECEIPT READS A SUPERSEDED INSTRUMENT STATE, DELIBERATELY.
+Its CR spectra are the c54-era runs: the arm at the instrument's old built-in point (H0 73, Omega_m 0.3066) with
+the onset solved to ell_A 301.6, at KFAC=1 and LEAFREC=0.  The corpus has superseded that state twice -- the pin,
+then the leaf rate -- and the arm of record is LEAFREC=1 at H0 68.5707, Omega_m 0.291246 (r7633).  The same forms
+on the arm of record are banked as `<stem>_leafrec1.npz` (r7635), and their figures are in
+`computations/beyond_the_wall/r7635_70_leafrec1_bank/DRYRUN.md`; they are NOT what this receipt pins.  What it
+pins is a record of that instrument, and a sentence of P15 may cite it only for that.  The guard below fails
+if a CR file it reads is not the LEAFREC=0 namesake.
+
+RECEIPT -- P15: ** THE PHOTON BOLTZMANN HIERARCHY WITH POLARISATION CARRIED INSIDE THE TRANSFER.  THE
+CONTROL'S chi^2/dof FALLS 28.6 -> 7.1, THE FIRST FOUR PEAKS LAND AT 220/540/812/1124 AGAINST THE
+SKY'S 220.6/538.1/809.8/1147.8, AND THE POLARISATION SOURCE TERMS c54.177 NAMED AS MISSING ARE WORTH
+Delta chi^2 = 702 -- A PREDICTION MADE ONE REVISION EARLIER AND MEASURED HERE. **
+** AND THE CR ARM'S ell_1/ell_A IS 0.5703 FOR THE SIXTH TIME. **
+
+Built r2376+c54.178, front #2.  Instrument: `computations/beyond_the_wall/ACOUSTIC_two_arm.py`
+with HIER=1.
+
+===================================================================================================
+** WHAT WAS BUILT, AND WHAT IT REPLACES. **
+===================================================================================================
+
+Until now the photons were a two-moment FLUID and the diffusion damping was an envelope
+exp(-k^2/k_D^2) applied to the source.  c54.177 derived the coefficient in that envelope and in the
+same breath named what an envelope cannot do: ** polarisation enters the transfer TWICE -- it raises
+the damping AND it contributes to the source through g*Pi/4 and (3/4k^2) d^2(g*Pi)/d(eta)^2 -- and
+an envelope has the half that removes power and not the half that returns it. **  The photons are
+now carried as multipoles to l = LG with the polarisation hierarchy alongside, the baryons have
+their own velocity AND their own density, and the source carries both polarisation terms.
+
+** THE HANDOVER IS PLACED SO THAT A DOUBLE COUNT IS IMPOSSIBLE RATHER THAN MERELY ABSENT. **  Deep
+in tight coupling the hierarchy is stiff and buys nothing, so the fluid runs to tau' = 3/Mpc and the
+hierarchy takes over there.  The envelope is FROZEN at that time, so it covers [start, eta_sw] and
+the multipoles cover [eta_sw, end]: disjoint supports.  *At the handover only 4.2% of 1/k_D^2 has
+accumulated, so 96% of the damping is dynamic.*  **c54.175 lost a revision to a double count between
+these two mechanisms; this construction cannot have one.**
+
+  PART 1  ** THE POSITIONS: 220 / 540 / 812 / 1124 AGAINST 220.6 / 538.1 / 809.8 / 1147.8. **  The
+          second peak is 0.35% out and the third 0.27%, where the fluid transfer had them at 524 and
+          804 -- 2.6% and 0.7% LOW.
+  PART 2  ** THE HEIGHTS AND THE LIKELIHOOD: chi^2/dof 28.6 -> 7.1, and 20.0 -> 4.2 over the range
+          where the wavenumber integral is not starved. **  A factor of four, on the statistic
+          c54.176 established as the one with the information.
+  PART 3  ** THE POLARISATION SOURCE TERMS ARE WORTH Delta chi^2 = 702, AND THAT NUMBER WAS
+          PREDICTED. **  Running the same hierarchy with ONLY those terms dropped -- which is
+          exactly the half an envelope has -- gives 2022 against 1320.  *c54.177 adopted the derived
+          16/15 at a cost of 1123 units and said the missing source half was what that measured.
+          702 of the 1123 come back here.*
+  PART 4  ** AND THE BARYON SPLIT IS A SECOND INSTANCE OF THE SAME LESSON: HALF OF IT IS WORSE THAN
+          NONE. **  Giving the baryons their own DENSITY while they still share the photons'
+          velocity makes the control worse; giving them both halves chi^2 again, 15.1 -> 7.1.
+          ** Twice now a physical effect taken in half has been worse than not taken at all. **
+  PART 5  ** THE CONSTRUCTION-INDEPENDENT PARTS ARE MEASURED AND NOT ASSUMED. **  Doubling the
+          hierarchy depth (LG 24 -> 40) changes chi^2 by 0.1 in 1320 and the peak ratios not at all;
+          doubling the handover opacity (tau' 3 -> 6) changes chi^2 by 1.5% and the ratios by 0.4%.
+  PART 6  ** AND THE CR ARM DOES NOT MOVE, FOR THE SIXTH TIME. **  ell_1/ell_A = 0.5703 through a
+          rebuild that gave the baryons their own velocity and density, replaced the photon fluid
+          with multipoles, added polarisation and added two source terms -- while the control's
+          chi^2 fell by a factor of four.
+
+** ONE GAP IN THE INSTRUMENT WAS FOUND BY BUILDING ON IT. **  The aliasing gate -- which refuses to
+project when the k-sampling is coarser than a quarter of the Bessel period 2pi/D_M -- existed only
+on the DELTA-FUNCTION path.  ** The line-of-sight path has been the default since c54.173 and had
+none. **  It cost a run immediately: a development configuration at 300 modes returned a first peak
+at ell = 196 instead of 220 and nothing said so.  *The failure is silent by construction -- the
+SOURCE comb stays correct while the PROJECTED spectrum combs at a spacing set by the sampling --
+which is why it needs a gate and not care.*  The gate is now on both paths, and the production
+configuration is checked: 5.7 points per Bessel period.
+
+
+==============================================================================
+PART 1 — THE POSITIONS, AND PART 2 — THE LIKELIHOOD
+==============================================================================
+                         configuration                      peaks   P1/P2   P1/P3  chi2/dof  l<1600
+                                   sky (220.6, 538.1, 809.8, 1147.8)   2.256   2.280      0.96       —
+     c54.177  fluid + derived envelope      (220, 524, 804, 1116)   2.216   2.420     28.62   19.99
+    c54.178  hierarchy, baryons shared      (220, 532, 804, 1124)   2.115   1.969     15.14   11.39
+      c54.178  hierarchy, no Pi source      (220, 532, 812, 1124)   2.216   2.180     10.93    7.71
+          c54.178  hierarchy, COMPLETE      (220, 540, 812, 1124)   2.201   2.201      7.14    4.17
+
+  ** THE FIRST THREE PEAKS: ['0.27%', '0.35%', '0.27%'] against the fluid's ['0.27%', '2.62%', '0.72%']. **
+  ** AND chi^2/dof 28.62 -> 7.14 (a factor of 4.0), or 19.99 -> 4.17 below the truncation edge. **
+     *The cut at ell = 1600 is not cosmetic: this instrument carries k only to LMAXL/D_M,
+     so the top few hundred multipoles score a starved integral rather than the physics.*
+
+==============================================================================
+PART 3 — THE POLARISATION SOURCE TERMS, AND A PREDICTION MADE ONE REVISION EARLIER
+==============================================================================
+  hierarchy WITHOUT g*Pi/4 and (3/4k^2)(g*Pi)'':  chi^2 = 2022.4
+  hierarchy WITH them:                            chi^2 = 1320.5
+
+  ** THE TWO POLARISATION SOURCE TERMS ARE WORTH Delta chi^2 = 702 (570 below ell = 1600). **
+     *c54.177 adopted the DERIVED shear coefficient 16/15 at a cost of 1123 units
+     and said in terms that the missing SOURCE half was what that cost measured.
+     ** 63% of it comes back here. **  The prediction was made before this
+     was built and it is checked against the number it predicted, not against a story.*
+
+==============================================================================
+PART 4 — AND HALF OF THE BARYON SPLIT IS WORSE THAN NONE, WHICH HAS NOW HAPPENED TWICE
+==============================================================================
+                                   the baryons  chi^2/dof
+  share the photon velocity AND the CDM density      28.62   (c54.177, fluid)
+          have their own velocity, CDM density      15.14
+           have their own velocity AND density       7.14
+
+  *Measured separately at development settings: giving the baryons their own DENSITY while
+  they still shared the photons' VELOCITY moved chi^2/dof from 133 to 161 — WORSE. The
+  density they then carried was the photons' own, oscillating and decaying, with nothing
+  to let them fall into the wells after decoupling.*
+  ⇒ ***TWICE NOW A PHYSICAL EFFECT TAKEN IN HALF HAS BEEN WORSE THAN NOT TAKEN AT ALL —
+  polarisation at c54.177, the baryon sector here. It is worth naming as a pattern: a
+  half-taken effect is not a small error, it is a DIFFERENT and inconsistent model.***
+
+==============================================================================
+PART 5 — THE PARTS OF THE CONSTRUCTION THAT ARE ARBITRARY, MEASURED
+==============================================================================
+                                 variant     chi^2    P1/P2    P1/P3
+    hierarchy depth LG = 24 (production)    1320.5    2.201    2.201
+                 hierarchy depth LG = 40    1320.5    2.201    2.201
+   handover at tau' = 3/Mpc (production)    1320.5    2.201    2.201
+                handover at tau' = 6/Mpc    1300.8    2.203    2.210
+
+  ** DOUBLING THE DEPTH MOVES chi^2 BY 0.00%; DOUBLING THE HANDOVER OPACITY BY 1.5%. **
+     *Both are choices this build had to make and neither is physics, so both are measured.*
+
+==============================================================================
+PART 6 — AND THE CR ARM DOES NOT MOVE, FOR THE SIXTH TIME
+==============================================================================
+    c54.168  delta-function transfer:  ell_1/ell_A = 0.5703
+              c54.173  line-of-sight:  ell_1/ell_A = 0.5703
+          c54.175  + derived damping:  ell_1/ell_A = 0.5703
+             c54.176  + damping scan:  ell_1/ell_A = 0.5703
+            c54.177  + derived 16/15:  ell_1/ell_A = 0.5703
+       c54.178  + the full hierarchy:  ell_1/ell_A = 0.5703
+
+  ** SIX DISTINCT INSTRUMENT STATES, AND THE FOURTH DECIMAL HAS NOT MOVED — while the
+  control's chi^2/dof went from 103 to 7.1. **
+
+  through the same likelihood: floor = +1114.1, difference = +50496.5, ratio = 45.3
+     *Reported and not converted. **`PO-7` — whether the deficit is a real disagreement with
+     the sky — is protected, and the control is still at seven times a fit rather than one,
+     so `L-147`'s verdict that the likelihood cannot arbitrate is unchanged.**  What HAS
+     changed is that the gap is now a factor of seven and not a factor of a hundred, and the
+     point at which this becomes readable is visible from here.*
+
+==============================================================================
+ALL CHECKS PASS — the hierarchy takes the control from chi^2/dof 28.6 to 7.1, the peaks to
+220/540/812/1124, the polarisation source terms are worth 702 of the 1123 c54.177 predicted,
+half the baryon split is worse than none, the arbitrary parts do not matter, and the CR arm
+has not moved in six instrument states.
+==============================================================================
+GATE c54.178 (r2376): control chi^2/dof = 7.14 (4.17 below ell=1600), peaks (220, 540, 812, 1124) against the sky's (220.6, 538.1, 809.8, 1147.8), the polarisation source terms worth 702 of c54.177's 1123, CR at 0.5703 -- pinned against CR_cosmology.tex sec:refit-bound.

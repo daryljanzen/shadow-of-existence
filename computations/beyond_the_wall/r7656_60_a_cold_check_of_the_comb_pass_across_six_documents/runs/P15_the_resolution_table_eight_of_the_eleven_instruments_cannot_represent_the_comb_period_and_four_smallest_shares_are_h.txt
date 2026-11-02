@@ -1,0 +1,133 @@
+P15 -- THE RESOLUTION TABLE FOR `PO-56`'s ELEVEN INSTRUMENTS, BUILT ONCE AND IN ADVANCE (node 70, `r7029` item one).
+
+** THE ROW HAS MET ONE INSTRUMENT LIMIT FOUR TIMES, EACH TIME AFTER A RESULT WAS STATED ON THE BANDED READING. **
+This table is how a result meets its instrument's limit BEFORE it is stated.  For each of the eleven instruments
+`cc66.62` enumerated, three columns:
+
+  * the FINEST PERIOD it can resolve in q (comb period = 1.00), DERIVED from its own geometry on disk: the
+    Nyquist period of its output sampling, and the transfer its averaging window imposes AT the comb period;
+  * the SMALLEST SHARE it can detect, in its OWN units and under the noise model it ACTUALLY uses -- computed
+    here where the model is the likelihood's covariance, quoted and text-gated where only `cc66`'s receipt
+    derived it, and ** left BLANK WITH ITS REASON ** where it cannot be derived;
+  * the CLASS OF FEATURE INVISIBLE TO IT -- the column the row keeps paying for.
+
+** THE HEADLINE, DERIVED BELOW. **  Every banded instrument outputs one number per 0.70-wide band, so its output
+series has a Nyquist period of 1.40: *** A MODULATION AT THE COMB PERIOD CANNOT BE REPRESENTED BY ANY OF THE
+EIGHT, however it is aggregated *** -- and the boxcar a band applies passes only 0.37 of it before that.  The
+likelihood bins at 0.030, a Nyquist period of 0.060 and a transfer of 0.9985 at the comb.  ** That single ratio
+-- 1.40 against 0.060 -- is the four accidental discoveries, stated in advance. **
+
+** THE BLANKS ARE FINDINGS, NOT GAPS. **  The contrast statistic, the bilinear decomposition and the
+projection-width kernel carry NO statistical noise model -- their only scales are numerical or definitional
+spreads, which are not detection floors.  The refit's floor cannot be derived because its inputs
+(`/tmp/n66/...`) are not in the repository.  ⛔ *A guessed number in any of those cells would be worse than
+the blank.*
+
+⚠ ** SHARES IN DIFFERENT UNITS ARE NOT COMPARABLE. **  `cc66.61`'s 0.91 is a share of the STEP under an
+empirical scatter of a noiseless spectrum; the likelihood's 0.043 is a share of the band-1 DIFFERENCE under
+instrument noise.  The table sets them side by side and ranks neither against the other.
+
+⛔ NOT CLAIMED: any statement about the physics, any channel or mechanism, any verdict on a result of `cc66`'s.
+The table says what each instrument CAN see; it does not re-run or re-score what any of them DID see.
+Nothing is solved; the only computation beyond geometry is the likelihood's per-band floor, on banks on disk.
+
+Written r7029 by node 70.  Stated for reversal.
+
+RE-POINTED r7637 (node 70) onto the arm of record (LEAFREC=1, r7633's refit; the `_leafrec1` banks of r7635):
+the likelihood's band-1 floor 0.055 -> 0.043 (band-1 sigma 36.37 -> 46.64), the per-band row
+0.055/0.047/0.040/0.045/0.057/0.081/0.141 -> 0.043/0.036/0.031/0.035/0.044/0.065/0.107.  The geometry columns
+(Nyquist 1.40 against 0.060, the boxcar's 0.37) are the instruments' own and do not move.
+
+  [PASS] the source receipt for `contrast` is on disk   (P15_the_acoustic_contrast_is_not_in_the_source_and_the_projection_makes_it_without_the_distance.py)
+  [PASS] the source receipt for `held` is on disk   (P15_the_surviving_step_is_amplitude_and_not_phase_and_the_candidate_shares_do_not_survive_the_change_of_denominator.py)
+  [PASS] the source receipt for `wfdepth` is on disk   (P15_the_step_is_the_excesss_own_and_it_sits_at_the_second_acoustic_peak_and_none_of_the_four_produces_it.py)
+  [PASS] the source receipt for `extremal` is on disk   (P15_the_window_free_reading_cannot_resolve_the_first_cycle_the_flatness_was_a_trend_and_nine_tenths_of_the_step_is_common_to_both_arms.py)
+  [PASS] the source receipt for `diff` is on disk   (P15_the_step_survives_a_differential_estimator_and_no_single_bilinear_term_carries_the_shared_step_though_the_doppler_leads_it.py)
+  [PASS] the source receipt for `srcdec` is on disk   (P15_the_cross_term_is_not_the_channel_and_every_projected_term_carries_the_excess.py)
+  [PASS] the source receipt for `phase` is on disk   (P15_no_statistic_this_construction_can_build_resolves_the_two_channels_and_the_phase_step_dies_on_a_matched_width_control.py)
+  [PASS] the source receipt for `kernel` is on disk   (P15_the_two_projection_widths_differ_by_the_jacobian_alone_and_the_channel_that_opens_is_a_quarter_of_the_excess.py)
+  [PASS] the source receipt for `locator` is on disk   (P15_the_contrast_excess_is_symmetric_about_the_envelope_and_the_troughs_are_where_the_sky_measures_it_best.py)
+  [PASS] the source receipt for `likelihood` is on disk   (P15_the_likelihood_sees_the_step_and_separates_the_two_channels_so_the_demonstration_does_not_cover_it.py)
+  [PASS] the source receipt for `refit` is on disk   (P15_the_refit_leaves_the_background_where_the_distances_put_it_and_does_not_close_the_phase.py)
+  [PASS] ⛔ THE ELEVEN ARE `cc66.62`'s OWN ENUMERATION, not a list chosen here: every name is in `FOR_66.md`'s scope table   (11 of 11 found)
+  [PASS] the band edges are seven bands of 0.70   (edges [0.85, 1.55, 2.25, 2.95, 3.65, 4.35, 5.05, 5.75])
+  [PASS] the extremum spacing -- what the window-free depth, the extremal envelope and the locator sample at -- is half a comb period   (median 0.461 in q; 1 extremum inside band 1)
+
+==============================================================================================================
+  THE GEOMETRY EVERY ROW IS DERIVED FROM
+--------------------------------------------------------------------------------------------------------------
+    l_A (control) 301.543;  fine bank dq 0.00332;  step-8 grids dq 0.0265;  plik bin (median) 0.0298 = 1/34 of a period;  bands 0.70;  extrema every 0.461
+    boxcar transfer AT the comb period: band 0.70 -> 0.368;  held window 1.50 -> 0.212;  locator +-40 ell (0.265) -> 0.888;  plik bin -> 0.9985
+  [PASS] ⛭ THE HEADLINE: a band-per-number output has a Nyquist period of 1.40, so the comb period CANNOT be represented by any banded instrument; the likelihood's Nyquist period is 0.060   (banded 1.40 vs likelihood 0.060)
+  [PASS] and before the output is sampled, a band's own boxcar passes only about a third of a comb-period modulation, where a likelihood bin passes all but a tenth of a per cent   (0.368 vs 0.9985)
+  [PASS] the likelihood's band-1 floor on the ARM OF RECORD: 2 / (band-1 sigma of the arm-control difference) -- re-pinned r7637 from `cc66.62`'s 36.37 sigma / 0.055 on the LEAFREC=0 arm   (band-1 46.64 sigma over 24 bins -> 0.0429)
+    likelihood smallest detectable share, per band (2 sigma of the band's arm-control difference): 0.043  0.036  0.031  0.035  0.044  0.065  0.107
+  [PASS] every floor this table QUOTES is literally in the receipt that derived it   (0.6 per cent (cc66.40); 0.91 (cc66.61, on the arm of record); 0.0059 / 0.0114 (cc66.46); 1.363 and 0.02 sigma (cc66.58))
+  [PASS] ⛔ THE REFIT'S BLANK IS FORCED, NOT CHOSEN: its fit reads inputs under /tmp that CANNOT be repository files -- an absolute path outside the tree -- so its floor cannot be re-derived here   (fit.py reads 2 path(s) under /tmp, none inside the repository: ['/tmp/n66/lens_ratio.npy', '/tmp/n66/refit'])
+  [PASS] ⛔ AND THE THREE NO-NOISE BLANKS ARE THE SOURCES' OWN: none of the three draws a noise realisation or propagates a covariance into its statistic -- no Monte Carlo, no random draw, in any of them   (no noise draw in any of the three)
+  [PASS] ⌗ and the ONE covariance any of them reads is the contrast receipt's amplitude-fit weight, used once to put a spectrum on the data's scale and never to put an error on the statistic   (contrast: FISH in fit4 only; SRCDEC and the kernel: none)
+
+==============================================================================================================
+  THE TABLE
+==============================================================================================================
+
+  1  the contrast statistic (r6911+cc66.40)
+    finest period : 1.40 as banded (Nyquist of 0.70 bands; boxcar passes 0.37 at 1.00); ORIGINALLY one regression over 0.85-5.75 -- no period at all
+    smallest share: BLANK: no noise model. Its 0.6 per cent is a NUMERICAL floor (self-null, round trips, injection), not a detection floor; the covariance it reads is only the weight of an amplitude fit
+    invisible     : anything finer than 1.40, including a comb-period modulation of the contrast; the overall level (osc is normalised by a 1.0-wide running envelope); sign and phase inside a band (a std)
+
+  2  the held-period amplitude (cc66.60)
+    finest period : 1.50 (its +-0.75 fit window; boxcar passes 0.21 at 1.00), and 1.40 once banded
+    smallest share: 0.91 of the STEP (cc66.61's floor on the arm of record; ⛔ this is NO LONGER the route that attains it -- the raw band std is, at 0.91 against this one's 0.96, where on the namesake arm this route attained the floor at 0.59), under an EMPIRICAL scatter of a noiseless spectrum
+    invisible     : amplitude structure narrower than 1.5; any oscillation at a period other than 1.00 (the fit fixes it); anything a quadratic baseline absorbs
+
+  3  the window-free peak-to-trough depth (cc66.57)
+    finest period : 1.00 as a datum series (one datum per half cycle, every 0.46 -- the comb period sits AT Nyquist), 1.40 banded
+    smallest share: band 1 holds 1 extremum and cc66.58 reads ONE transition there: 0.02 sigma from zero and 1.60 from the rest -- informative about neither. No band-1 floor can be formed from one datum
+    invisible     : everything between extrema; any envelope variation at period 1.00 or finer; band 1 in all but name
+
+  4  the extremal envelope (cc66.58)
+    finest period : 1.00 as an interpolated envelope (extrema every 0.46), 1.40 banded
+    smallest share: undefined below q = 1.363, its first extremum pair: it covers 27 per cent of band 1 and interpolates ACROSS the step there
+    invisible     : 73 per cent of band 1; structure between extrema, which it interpolates over
+
+  5  the differential estimator (cc66.59)
+    finest period : 1.40 (band std of the arm/control ratio; boxcar passes 0.37 at 1.00)
+    smallest share: no better than 0.91 of the STEP on the arm of record: cc66.61 minimised the floor over this family's routes, and the RAW band std attains it there (0.91 against the held amplitude's 0.96) where the held amplitude attained it on the namesake arm (0.59)
+    invisible     : anything finer than 1.40; a raw band std samples 0.70 of a cycle, so amplitude and phase mix (cc66.60's correction to cc66.59)
+
+  6  the bilinear decomposition SRCDEC (r6915+cc66.41)
+    finest period : 0.053 intrinsically (per multipole at step 8), but 1.40 AS READ -- every claim on it went through the band statistic
+    smallest share: BLANK: no noise model. Its cross-term span across windows is a definitional spread, not a floor
+    invisible     : as read: anything finer than 1.40; per-term cancellation inside a band
+
+  7  the comb-phase projection (cc66.61)
+    finest period : 1.40 with its 0.70 stretches, 2.00 with its 1.00 stretches -- and ONLY at period 1.00 (it projects there and nowhere else)
+    smallest share: 2 x its matched-width scatter = 0.015 rad at a 0.70 stretch (band 1 sits 1.52 scatters out); 0.002 rad over the whole upper range. Phase, not a share
+    invisible     : phase change inside a stretch; everything at a period other than 1.00; amplitude (it returns phase only)
+
+  8  the projection-width kernel (cc66.52)
+    finest period : 1.40 (21 points averaged per band)
+    smallest share: BLANK: no noise model. The mean-vs-peak anchor spread (and its sign change) is the only scale it has
+    invisible     : anything finer than 1.40; its own sign, which depends on the anchor
+
+  9  the anchored peak/trough locator (cc66.45/46)
+    finest period : positions: to a few hundredths of ell; amplitude: the +-40 ell window (0.265 in q, passes 0.89 at 1.00), BUT the depth it reports is a mean over three troughs spanning q 1.3-3.3
+    smallest share: 2 x its COV_TT Monte Carlo spread: 0.012 on depth, 0.023 on height -- instrument noise
+    invisible     : amplitude at band 1 specifically (its first trough anchor sits inside band 1 and is averaged with two outside); everything away from an extremum
+
+  10 plik_lite TT, the likelihood
+    finest period : 0.060 (bins of 0.0298; a bin passes 0.9985 at 1.00)
+    smallest share: per band, 2 sigma of the band's arm-control difference: 0.043, 0.036, 0.031, 0.035, 0.044, 0.065, 0.107 -- instrument noise (COV_TT)
+    invisible     : structure narrower than one bin (9 ell); a uniform rescaling (its fitted amplitude absorbs it); and LOCATION OF REJECTION versus separating power -- a band's sigma is not its share of the chi2 excess unless the exact d'F(d - 2r) split is used (cc66.63, cc66.64)
+
+  11 the refit chi2 and its derivative grid (r6788+cc66.18)
+    finest period : 0.060 (the likelihood's bins), on spectra sampled every 0.0265
+    smallest share: BLANK: cannot be derived here -- its fit reads /tmp/n66 inputs not in the repository
+    invisible     : anything degenerate with its four parameter derivatives and the amplitude (fitted away); response beyond quadratic; off-diagonal curvature (not modelled)
+  [PASS] ⛭ THE TABLE HAS ELEVEN ROWS AND EVERY ROW HAS ALL THREE COLUMNS FILLED -- a blank is filled WITH ITS REASON, never left empty   (11 x 3)
+  [PASS] ⛔ FOUR SMALLEST-SHARE CELLS ARE HONEST BLANKS -- three for want of any noise model and one for want of its inputs -- and none is filled with a guess   (4 blanks)
+  [PASS] ⛭ AND THE ROW'S FOUR ACCIDENTAL DISCOVERIES ARE ONE LINE OF THIS TABLE: every instrument whose finest period is 1.40 or coarser cannot see a comb-period feature, and they are the eight `cc66.62` found band   (8 rows carry the 1.40 banded limit)
+
+==============================================================================================================
+GATES: ALL PASS

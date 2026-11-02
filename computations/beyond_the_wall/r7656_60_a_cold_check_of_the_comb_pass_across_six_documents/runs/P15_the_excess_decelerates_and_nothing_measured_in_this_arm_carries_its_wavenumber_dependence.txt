@@ -1,0 +1,181 @@
+P15 sec:refit-bound -- ** THE EXCESS DECELERATES WITH WAVENUMBER, WHICH EXCLUDES THE CORPUS'S OWN
+WORKING PARAMETRISATION; AND THE FIRST POSITIVE SEARCH THIS SECTOR HAS EVER RUN COMES BACK EMPTY --
+NOTHING ALREADY MEASURED IN THIS ARM CARRIES THE EXCESS'S WAVENUMBER DEPENDENCE. **
+
+** PATH PROVENANCE, IN THE HEADER, ON THE STANDING REQUIREMENT. **  *** Every model number below is the
+HIERARCHY path *** -- `r6941_fine_{lcdm,cr_leafrec1}`, `r6959_eta_{lcdm,cr_leafrec1}`'s per-band
+`SRCETA` term profiles, and
+the three banked channel responses `r6959_nswap_lcdm`, `r6975_mix_lcdm`, `r6983_joint_lcdm`.
+`sec:refit-bound`'s quartet $222/538/818/1134$ is the LINE-OF-SIGHT path's and is not read -- searched for
+by grepping this file for each of the four values and for every line-of-sight bank name (`c54.17*`,
+`c54.178_*`, `L814_*`, `r6784_*`), and none occurs below.  ⛔ *** Nothing is RUN here: the order's ⓸
+forbids a channel run before ⓵ to ⓷ are answered on paper, and every number comes from banks on disk. ***
+
+** WHY IT EXISTS. **  `r6993`'s order redirected `PO-56` off this seat's own stated next object.  I had
+written it as *what sets the sizes*; the order moved it to ***what carries the excess's own wavenumber
+dependence***, on the argument that my finding was a SHAPE refutation and no account of sizes closes a gap
+that is not a size.  *That redirection is accepted and is the right one: a correct size still leaves a flat
+response against one that varies.*  ⇒ The order also made this **the first POSITIVE search criterion this
+row has ever had** -- every previous step was an elimination.
+
+⛭⛭ ** ⓷ FIRST, AND THE INVERSION IS THE METHOD RATHER THAN A LIBERTY. **  ⓷ asks whether the statistic's
+$q$-dependence belongs to the effect or to the anchoring.  *That is a question about the INSTRUMENT, and
+its answer is what a pre-registration for ⓵ must write its tolerances on -- the alternative is a guessed
+resolution, which is the defect `cc66.47`'s own lesson is about.*
+  * ✔ ** A known $q$-dependence READS BACK: ** six forms injected into the control's own spectrum -- a
+    constant, a rise linear in $q^{2}$, a power law, a logarithm and two turnovers WITH A SCALE IN THEM --
+    recover with a worst error of $1.3$ per cent.  *So the filter can see the shapes it filters on,
+    including the one that would name a physical length.*
+  * ⚠ ** BUT THE ESTIMATOR MANUFACTURES BAND-TO-BAND STRUCTURE. **  Its per-band bias swings about one per
+    cent and all six forms agree on it to $0.36$ per cent, so it is fixed and not a property of the
+    injected shape: *** a CONSTANT contrast reads as a wobble. ***  ⇒ **Band-to-band ordering at the
+    per-cent level is the instrument**, and the excess's own wobble is exactly that size.
+  * ⛔ ** AND THE MEDIAN ENVELOPE IS NOT A VALID ALTERNATIVE ANCHORING -- DIAGNOSED, NOT DISMISSED, AND IT
+    WOULD OTHERWISE HAVE BEEN THE HEADLINE. **  It reads a variation of $1.49$ against the mean envelope's
+    $0.44$, which taken at face value would say the filter is anchoring-dependent and the order's premise
+    unsafe.  *The tell is that it does not move with its own window -- the last band reads the same to
+    seven figures at $0.8$ and $1.2$, where every mean-envelope reading moves.*  ⇒ **At high $q$ the
+    running median collapses onto the curve itself, within $3.6$ per cent of it, because the median of a
+    locally monotone stretch is its central value whatever the window** -- so the oscillation it should
+    measure against is absorbed into it.  The mean envelope sits $14$--$17$ per cent away and moves.
+  * ✔ The rise survives the mean envelope at windows $0.8/1.0/1.2$: $0.44$, $0.44$, $0.40$.
+    ⇒ *** THE RISE IS REAL; THE WOBBLE IS NOT. ***
+
+⛔⛭⛭ ** ⓵ AND THE SHAPE EXCLUDES THE PARAMETRISATION THIS SECTOR HAS BEEN QUOTING. **  Six forms fitted at
+the pre-registered $\sigma = 0.013$, the measured recovery error, on the rule fixed before any fit:
+  * ⛔ ** A rise LINEAR IN $q^{2}$ is EXCLUDED at $\chi^{2}/\nu = 4.66$ ** -- the only form excluded, and
+    it is the one `cc66.47`, `cc66.48` and `cc66.49` all quote their variation statistic in.  *** The
+    excess DECELERATES with wavenumber; it does not accelerate. ***  ⌗ *The statistic those revisions
+    quote is a descriptive measure and remains one; what is excluded is reading it as the FORM.*
+  * ⛭ The concave family -- turnover, saturating exponential, power law, logarithm -- all fit, and ** NONE
+    is preferred: ** best-against-next is $\Delta\chi^{2} = 0.43$ against a pre-registered bar of $4$.
+  * ✔ ** Both pre-registered NON-separations held: ** power law against logarithm $\Delta\chi^{2} = 3.42$,
+    power law against turnover $0.99$.  *Named before they failed to separate, which is what the clause is
+    for.*
+  * ⛔ ** NO SCALE IS RESOLVED, and the rule that says so caught my own code. **  The turnover's
+    $q_0 = 1.64 \pm 0.52$ and the exponential's $2.52 \pm 1.50$ both reach the bottom edge of the measured
+    range.  *`PREDICTION.md` required a scale to land inside the range WITH ITS UNCERTAINTY; the test as
+    first written asked only that the central value be inside, which is a weaker bar, and it passed the
+    turnover.  The rule as written is applied.*
+  * ⚠ ** The rise is a PREFERENCE, not an exclusion of flatness, and those are different claims. **  Every
+    rising form beats a constant by $\Delta\chi^{2} = 6.0$ to $10.4$, above the bar -- but the constant's
+    own $\chi^{2}/\nu = 2.03$ is under the exclusion bar of $3$, so flatness is disfavoured and not
+    excluded.
+
+⛭⛭⛭ ** ⓶ AND THE FILTER'S FIRST APPLICATION RETURNS EMPTY, WHICH IS THE RESULT. **  ⓵ gives the filter two
+teeth rather than one: a candidate must grow AND decelerate.  *The statistic is the GROWTH OF THE DEPARTURE
+FROM UNITY across the measured range -- scale-free, and exactly what "carries the wavenumber dependence"
+means.*  ⌗ *The sector's usual $|{\rm slope}\times\langle q^{2}\rangle|/|{\rm intercept}|$ was tried first
+and abandoned: it divides by $\ln r$ at $q=0$, so a candidate sitting at $r\simeq0.78$ is divided by
+$0.25$ where the excess at $1.04$ is divided by $0.04$ -- the same shape reads twenty times larger at the
+lower level.  Fine for one quantity near unity, wrong for comparing several.*
+  * **The target is $G = 2.70$ with negative curvature** ($-0.00309$).
+  * ** ⛔⛔ r7639 ⑴ -- RE-POINTED TO THE ARM OF RECORD, AND THE BAND RATIO CARRIED ONTO THE CONTROL'S
+    COMB. **  69's ruling is that a $0.70$-wide band holds less than one comb period, so when the arms'
+    periods differ the ratio beats.  *** Here that is not a refinement: read on the CONTROL's comb the
+    arm of record's excess has curvature $+0.00342$ -- POSITIVE -- and this receipt's own claim, the one
+    it is named for, would be WITHDRAWN.  Carried onto the arm's own comb the curvature is $-0.00309$
+    and the claim stands. ***  ⌗ *And the carry is not a blanket substitution: the injected forms of
+    PART 1 and the three banked channel responses compare the CONTROL against itself, where the carry is
+    the identity, and they are left exactly as they were.*
+  * ** TWO REGISTERED GATES MISS, both reported and NEITHER re-toleranced, and they are ONE fact. **
+    The power law and the logarithm were registered as NOT separating, margin $4$; carried they sit
+    $6.31$ apart (namesake $3.43$), because the **logarithm's** fit degrades ($\chi^2$ $6.15 \to 7.98$)
+    while the power law's improves ($2.72 \to 1.66$).  The same degradation drops the logarithm's margin
+    over a constant to $2.21$ where the other three rising forms keep $8.5$ to $9.4$.  ⇒ *So the arm of
+    record discriminates a shape the namesake arm could not: the registered non-separation is lost to a
+    SHARPER instrument, not to noise, and the flatness claim is restated to name the logarithm as the
+    exception rather than widened to cover it.*
+  * ⛔ ** EVERY CANDIDATE ALREADY MEASURED IN THIS ARM FAILS THE FIRST TOOTH: ** all six source terms
+    ($G = 0.73$ to $1.03$), the dipole-to-monopole ratio ($0.90$), and all three measured channels --
+    the window ($0.55$), the term mix ($1.53$), the pair ($1.27$).  *The largest is the term mix at
+    $1.53$, which is $57$ per cent of what is needed* -- ** and that is the margin the re-point
+    narrows: on the namesake arm the target was $3.55$ and $1.53$ was under half of it. **
+  * ⚠ ** AND THE ORDER'S OWN NAMED CANDIDATE DISAGREES WITH THE REGISTER, WHICH IS REPORTED AND NOT
+    SETTLED. **  The register records the dipole-to-monopole ratio as *two per cent above the control's
+    and rising*.  Read from these profiles on the hierarchy path at each arm's own visibility peak, the
+    amplitude ratio sits **fourteen per cent BELOW** the control and is flat ($G = 0.73$, curvature
+    positive).  ⛔ *That is not a refutation of the register's number: the register's reading may be the
+    line-of-sight path or a different definition, and this receipt reads only the hierarchy path.  What is
+    owed before the candidate is closed is which quantity the register measured, and it is named here
+    rather than decided.*
+
+** WHAT IS NOT CLAIMED. **  NOT that the excess's form is a turnover, a power law or a logarithm -- none is
+preferred and that is stated as a non-separation.  NOT that a scale exists or does not: none is RESOLVED,
+which is weaker.  NOT that the excess is inconsistent with flatness: flatness is disfavoured, not excluded.
+NOT that the dipole-to-monopole ratio is eliminated: it fails the filter as measured here and the register
+disagrees, which is a discrepancy to name and not a verdict.  NOT that no candidate exists -- what is shown
+is that none of the things ALREADY MEASURED carries the dependence, which is a statement about the list
+searched.  NOT a third channel: the order forbids one and none is run.  NOT a detection.  NOT a verdict on
+the two-rate assignment.  No refit, nothing touching `prop:flat` or the clock family, and no corpus edits.
+
+COMPUTES: scope.
+  * ** EVERY COSMOLOGICAL PARAMETER IS BANKED, NOT CHOSEN HERE. **  Both arms at `r6825+cc66.25`'s verified
+    185-bin refit minima; every spectrum read is that configuration.  Nothing here re-fits and nothing is
+    run.
+  * `spectra/r6941_fine_{lcdm,cr}.npz`, `spectra/r6959_eta_{lcdm,cr}.npz`, `spectra/r6959_nswap_lcdm.npz`,
+    `spectra/r6975_mix_lcdm.npz`, `spectra/r6983_joint_lcdm.npz`.
+  * ** The per-band uncertainty $\sigma = 0.013$ is MEASURED here and not assumed: ** it is the worst
+    recovery error over six injected forms, and `PREDICTION.md` fixes every tolerance on it before any fit.
+  * The statistic is `r6911+cc66.40`'s, unchanged; the band edges are `r6959`'s own `q_edges`.
+
+====================================================================================================
+  [PASS] the bank this receipt reads is present: `spectra/r6941_fine_lcdm.npz`   (r6941_fine_lcdm.npz)
+  [PASS] the bank this receipt reads is present: `spectra/r6941_fine_cr_leafrec1.npz`   (r6941_fine_cr_leafrec1.npz)
+  [PASS] the bank this receipt reads is present: `spectra/r6959_eta_lcdm.npz`   (r6959_eta_lcdm.npz)
+  [PASS] the bank this receipt reads is present: `spectra/r6959_eta_cr_leafrec1.npz`   (r6959_eta_cr_leafrec1.npz)
+  [PASS] the bank this receipt reads is present: `spectra/r6959_nswap_lcdm.npz`   (r6959_nswap_lcdm.npz)
+  [PASS] the bank this receipt reads is present: `spectra/r6975_mix_lcdm.npz`   (r6975_mix_lcdm.npz)
+  [PASS] the bank this receipt reads is present: `spectra/r6983_joint_lcdm.npz`   (r6983_joint_lcdm.npz)
+  [PASS] ⛭ THE TWO ARMS' COMBS ARE FITTED BEFORE ANY BAND IS CUT, and they DIFFER -- which is why the target below is carried onto the control's comb coordinate rather than read on each arm's own q   (control T 1.0090 phi 1.441; arm T 1.0045 phi 1.450; dphi +0.0083)
+  [PASS] the measured excess is recomputed here from `r6941_fine_*` and reproduces `cc66.46`'s seven band ratios, CARRIED onto the control's comb -- `cc66.46`'s own figures were the shared-comb reading on the namesake arm and are quoted here as history   (1.0295  1.0595  1.0610  1.0639  1.0777  1.0728  1.0795)
+
+PART 1 -- ⓷ THE FILTER, CONTROLLED BEFORE THE THING IT FILTERS ON.
+----------------------------------------------------------------------------------------------------
+  six injected forms recover with a worst error of 1.26e-02
+  per-band bias 0.99874  1.00584  0.99818  0.99993  1.00417  0.99610  1.00414
+  form spread   0.00168  0.00356  0.00069  0.00015  0.00102  0.00106  0.00118
+  [PASS] ⓷a a KNOWN q-dependence reads back, over six forms including two with a SCALE in them -- so the filter can see the shapes it is being asked to filter on   (worst 1.26e-02)
+  [PASS] ⛭ ⓷b AND THE ESTIMATOR MANUFACTURES BAND-TO-BAND STRUCTURE: its per-band bias is a FIXED property, agreed on by the six forms far more closely than it swings -- so a CONSTANT contrast reads as a wobble, and band ordering at the per-cent level is the instrument.  ⌗ *Judged against the TYPICAL disagreement across bands; at the single worst band the forms differ by more, and that band is named rather than averaged away*   (bias swings 0.97%, typical form disagreement 0.13% (7.3x), worst single band 0.36% at q=1.90)
+  variation statistic by envelope window: mean 0.8 -> 0.377,  mean 1.0 -> 0.362,  mean 1.2 -> 0.350
+  [PASS] ⓷c the excess's RISE survives the mean-envelope window, far above that bias   (0.377  0.362  0.350)
+  [PASS] ⛔ ⓷d AND THE MEDIAN ENVELOPE IS EXCLUDED WITH ITS MECHANISM, not dismissed: at high q it collapses onto the curve itself and does not move with its own window, where the mean envelope sits an order further away and does move -- the median of a locally monotone stretch is its central value whatever the window, so the oscillation it should measure against is absorbed   (median sits 0.03575 from the curve and is IDENTICAL at both windows; the mean sits 0.13800 -> 0.16602, 3.9x further away and moving)
+
+PART 2 -- ⓵ THE TARGET'S SHAPE, ON THE RULE FIXED BEFORE ANY FIT.
+----------------------------------------------------------------------------------------------------
+  F0 constant            chi2 =   10.19  nu = 6  chi2/nu =  1.70
+  F1 linear in q^2       chi2 =   34.29  nu = 6  chi2/nu =  5.71
+  F2 power law           chi2 =    1.66  nu = 5  chi2/nu =  0.33
+  F3 logarithm           chi2 =    7.98  nu = 6  chi2/nu =  1.33
+  F4 turnover            chi2 =    0.81  nu = 5  chi2/nu =  0.16
+  F5 sat. exponential    chi2 =    1.10  nu = 5  chi2/nu =  0.22
+  [PASS] ⛔⛭⛭ ⓵ THE RISE LINEAR IN q^2 IS EXCLUDED -- and it is the parametrisation cc66.47, cc66.48 and cc66.49 all quote their variation statistic in.  THE EXCESS DECELERATES WITH WAVENUMBER   (chi^2/nu = 5.71 against the pre-registered exclusion bar of 3)
+  [PASS] and it is the ONLY form excluded, so this is a statement about curvature and not a cull   (1 of 6 excluded)
+  [PASS] ⓵ AND NO FORM IS PREFERRED, on the pre-registered margin of 4   (best F4 turnover over next F5 sat. exponential by only 0.29)
+  [PASS] the pre-registered NON-separation holds: F2 power law against F4 turnover   (Delta chi^2 = 0.85)
+
+    ⛔ REGISTERED: the power law and the logarithm do NOT separate, margin 4.  MEASURED on the arm of record: 6.31 -- a MISS, reported and NOT re-toleranced
+  [PASS] ⛔ AND THE MISS HAS ITS DIRECTION AND ITS CAUSE MEASURED: the power law and the logarithm SEPARATE on the arm of record, and they separate because the LOGARITHM's fit degrades while the power law's improves -- so the arm of record discriminates a shape the namesake arm could not, and the registered non-separation is lost to a sharper instrument rather than to noise   (power law chi^2 1.66 (namesake 2.72), logarithm 7.98 (namesake 6.15), separation 6.31 against the namesake's 3.43)
+  [PASS] ⛔ ⓵ NO SCALE IS RESOLVED -- both scale-bearing forms put q0 with its uncertainty on the bottom edge of the measured range, and PREDICTION.md required it inside WITH its uncertainty   (turnover q0 = 1.46 +/- 0.45, exponential 2.10 +/- 1.07, range 1.20-5.40)
+  [PASS] ⚠ ⓵ THE RISE IS A PREFERENCE AND NOT AN EXCLUSION OF FLATNESS, which are different claims: every rising form EXCEPT THE LOGARITHM beats a constant by more than the margin, yet the constant's own chi^2/nu is under the exclusion bar.  ⛔ *The logarithm is the exception for the one reason already measured above -- its fit degrades on the arm of record -- and it is the form the power law now excludes, so this is that finding and not a second one*   (Delta chi^2 over the constant 2.22 to 9.38; the constant itself chi^2/nu = 1.70)
+
+PART 3 -- ⓶ THE FILTER APPLIED ON PAPER, AND IT RETURNS EMPTY.
+----------------------------------------------------------------------------------------------------
+  the TARGET: departure grows by G = 2.70 across q = 1.20-5.40, curvature -0.00309
+    source w2sw            G =  1.03   curvature -0.01048
+    source w2dp            G =  0.99   curvature -0.00147
+    source w2isw           G =  0.73   curvature -0.00226
+    source w2pol           G =  0.96   curvature +0.00602
+    source w2md            G =  0.91   curvature -0.00870
+    source w2              G =  0.92   curvature -0.00856
+    dipole/monopole        G =  0.90   curvature +0.00967
+    channel window         G =  0.55   curvature +0.00139
+    channel term mix       G =  1.53   curvature -0.00196
+    channel the pair       G =  1.27   curvature -0.00070
+  [PASS] ⛭⛭⛭ ⓶ THE FILTER'S FIRST APPLICATION RETURNS EMPTY: every candidate already measured in this arm -- all six source terms, the dipole-to-monopole ratio, and all three measured channels -- fails the growth tooth, the largest reaching less than half of what the target needs   (largest G = 1.53 against the target's 2.70)
+  [PASS] and the target's own curvature is negative, so the filter's second tooth is a real constraint and not a formality   (curvature -0.00309)
+  [PASS] ⚠ AND THE ORDER'S NAMED CANDIDATE DISAGREES WITH THE REGISTER, WHICH IS NAMED AND NOT SETTLED: the register records the dipole-to-monopole ratio as two per cent ABOVE the control and rising; read from these profiles on the HIERARCHY path at each arm's own visibility peak it sits well below and is flat.  The register's reading may be the line-of-sight path or another definition, and which quantity it measured is owed before this candidate is closed   (amplitude ratio 0.8637 at the peak, departure growth G = 0.73)
+  [PASS] ⛔ THE ETA BANK IS PINNED TO THE ARM OF RECORD, and the pin EXCLUDES the namesake bank -- without which this receipt's eta half would pass on either and its green would say nothing about which one it read   (departure growth G = 0.733 against the namesake bank's 0.97, and the peak amplitude ratio 0.8637 against its 0.8629)
+
+====================================================================================================
+GATES: ALL PASS

@@ -1,0 +1,131 @@
+
+RE-POINTED r7637 (node 70; 69 assigned it as naming no seat) ONTO THE ARM OF RECORD: the source's continuum
+bank and the c54.186 uniform/ladder pair are now `r6911_source_cr_kcont_leafrec1`, `c54.186_cr_KCONT_leafrec1` and
+`c54.186_cr_L3000_leafrec1` (LEAFREC=1 at r7633's refit; r7635's bank).  The finding stands and its figures move:
+SW alone D +0.56 -> +0.53, the whole monopole source +0.03 -> +0.00, the instrument's own saved source re-projected
++2.57 -> +2.55, the source comb in k +0.03 -> +0.00; and the uniform/ladder pair, which sat at the superseded
+pinned arm (D +13.76 / +13.84), now gives +4.52 / +4.52 -- identical, so the handover still contributes nothing.
+The `r7234_60` runs this receipt also reads (`cr_base`, `lcdm_base`, `cr_nodrive`) are that seat's own and are
+not re-run here.  The figures in the text below are the LEAFREC=0 arm's, as first written.
+
+RECEIPT -- P15: ** `r7221` ORDERED THE DERIVATION: `IS THE DRIFT A QUANTITY THE CONSTRUCTION
+DETERMINES, OR AN ARTEFACT OF THE TRANSFER?`  *** IT IS DETERMINED, AND IT IS MADE ENTIRELY IN THE
+PROJECTION: THE ACOUSTIC PHASE CARRIES NO DRIFT AT ALL AND THE HANDOVER CONTRIBUTES NOTHING. *** **
+
+  ⓵ ** THE SOURCE COMB IN `$k$` HAS NO DRIFT, DRIVEN OR UNDRIVEN. **  *Measured on source extrema
+  at recombination -- never in `$\ell$`, which is the instrument's own standing rule.  UNDRIVEN the
+  comb lands on the integers to `$0.015$`, under two ladder steps, and its own drift is `$-0.69$`
+  against an rms of `$1.74$`: zero.  DRIVEN, on a UNIFORM `$k$` grid at half the ladder's quantum
+  with the extrema parabolically refined, the driving moves the comb by a nearly CONSTANT `$-0.12$`
+  in `$q=k r_s/\pi$` -- a spread of `$0.029$` across six peaks -- and leaves `$D=+0.03$`--`$+0.56$`,
+  inside its own rms of zero either way.*  ⇒ **A constant phase shift has no curvature, so it cannot
+  drift a comb: the driving supplies the OFFSET and the alternation, not the drift.**
+
+  ⓶ ** THE PROJECTION MANUFACTURES THE WHOLE OF IT, FROM A COMB THAT HAS NONE. **  *Push a PERFECT
+  comb -- extrema exactly at `$k r_s=n\pi$`, no dynamics, no background, no fit -- through the same
+  projection integral and the `$\ell$`-space gaps come out `$278.5\;289.5\;293.4\;295.4$`: rising,
+  decelerating, and saturating under `$\ell_A$`, giving `$D=+2.62$`.  Re-projecting the instrument's
+  own SAVED source gives `$D=+2.57$` and the reporting path's banked spectrum `$+4.38$`, the
+  remainder sitting in the multipole hierarchy's damping, which the closed form carries as one
+  Gaussian in `$k$`.*
+
+  ⓷ ⛭⛭⛭ ** AND THE DRIFT IS DERIVED IN CLOSED FORM, NOT MEASURED OFF A SPECTRUM. **  *Replace
+  `$j_\ell(kD)^2$` by its own asymptotic average `$1/(x\sqrt{x^2-\ell^2})$`, substitute
+  `$x=\ell\cosh t$` so the inverse-square-root edge integrates exactly, and the `$\ell$`-space peaks
+  come back at `$299.0\;577.4\;866.9\;1160.3\;1455.7$` against the full Bessel sum's
+  `$298.6\;576.9\;866.4\;1159.8\;1455.2$` -- **every peak to under `$0.5$` in `$\ell$` and the
+  drift to `$0.01$`.**  ⇒ *So the drift is the CENTROID SHIFT of the kernel's own window acting on a
+  damped comb, and its only inputs are `$r_s$`, `$D_M$` and `$r_D$`, all three of which this
+  construction computes.*
+
+  ⓸ ⛔ ** THE HANDOVER CONTRIBUTES NOTHING, WHICH IS THE PAPER'S OWN STATEMENT MEASURED. **  *`Prop.
+  subhorizon` says the collapse leg's contribution `is an amplitude and not a phase`.  Moved the
+  handover epoch by a DECADE, `ZSTART` from `$10^7$` to `$10^8$`: the source comb moves `$0.0010$`
+  in `$q$`, which is `$0.30$` in `$\ell$` -- a tenth of one per cent of a peak spacing -- and the
+  drift by `$0.002$`.*  ⇒ **So the one place the order named as `this construction's rather than
+  anybody's` is the one place that supplies none of the answer.**
+
+  ⓹ ** IT IS NOT A GRID ARTEFACT, WHICH IS THE BRANCH THE ORDER ASKED TO BE RULED OUT. **  *The
+  instrument's own projection sampling is `$2.3$` points per Bessel period and it says so; on one
+  configuration run both ways the DISCRETE ladder gives `$D=+13.84$` and the UNIFORM grid `$+13.76$`,
+  `$0.6$` per cent apart.  The derived drift moves by `$0.00$` under doubling the `$k$` sampling and
+  `$0.02$` under halving the `$\ell$` step.*
+
+  ⇒ ⛭ ** SO THE PRE-REGISTERED THIRD OUTCOME IS THE ONE THAT FIRED: DERIVABLE, AND NOT A
+  DISCRIMINATOR. **  *Arm `$D=+4.38$`, control `$+4.42$`, every peak position agreeing to under
+  `$0.4$` in `$\ell$` -- the drift is carried by `$r_s$`, `$D_M$` and `$r_D$`, which the two
+  frameworks share to under a per cent, so it is a parameter-free prediction OF THE SPECTRUM and no
+  test at all OF THE RATE SPLIT.  **The bank's eight parts in ten thousand is precise, derivable and
+  unscoreable as a discrimination, and that is the answer rather than a hedge on it.***
+
+  ⌈ ⛔ ** AND TWO OF THIS SEAT'S OWN PRE-REGISTERED CLAIMS FAILED. **  *(i) The SIGN held and the
+  percentage band held -- `$+6.1$` per cent derived and `$+7.8$` measured against `$5$`--`$10$`
+  predicted -- but the SAME prediction's quadratic-coefficient form, `$+5$` to `$+15$`, did NOT: the
+  measured coefficient is `$+4.38$` and the derived `$+2.61$`.  The two forms were offered as
+  equivalent and are not, because a saturating drift has no single quadratic coefficient; the
+  conversion was made off a three-point local mean where the rise decelerates.  **(ii) The
+  ATTRIBUTION was wrong**: the prediction named the expansion-leg driving around equality as the
+  carrier, and the driving carries `$8.7$` per cent of it.  Both are gated here as failures rather
+  than reported as successes.*
+
+** COMPUTES: the peak-spacing drift of the acoustic comb, D in l_n = c + b n + D n^2 + A (-1)^n over
+   the first five peaks on 150 <= l <= 1600 -- derived from the projection kernel's own asymptotic
+   window with r_s, D_M and r_D as its only inputs, and decomposed against the source comb in k, the
+   handover epoch and the k-grid.  *** No new spectra are computed here: the ODE runs are banked
+   under computations/beyond_the_wall/r7234_60_.../ with their logs and their launcher. *** **
+
+
+
+========================================================================================================
+  Ⓐ  THE GUARD -- UNDRIVEN, THE SOURCE COMB IN k IS THE INTEGERS, SO IT HAS NO DRIFT TO FIND
+========================================================================================================
+    undriven source comb q = k r_s/pi : ['0.9854', '2.0074', '3.0020', '4.0057', '5.0003']
+    worst departure from an integer   : 0.0146   (the run's own guard: 0.0128; ladder quantum about 0.009)
+    OK    Ⓐ① every undriven extremum is an integer to better than 0.02 -- the instrument's own guard
+    undriven comb x l_A: b = 306.38   D = -0.69   A = +1.03   rms = 1.74
+    OK    Ⓐ② and its quadratic drift is zero to its own rms: |D| < 1 and |D| < rms
+    the run's own switch marker        : __SWITCHES__ ARM=cr CRH0=68.60 CROM=0.2973 LEAFGEOM=1 LEAFSCALES=1 LMAXL=2000 LOS=0 NODRIVE=1 NOPROJ=1 ZSTART=3e7
+    OK    Ⓐ③ the guard was read off a run that CARRIES NODRIVE=1, not inferred
+    OK    Ⓐ④ and the driven comb it is compared with carries the SAME switch line with that one word removed -- so the pair differs in the driving and in nothing else
+
+========================================================================================================
+  Ⓑ  DRIVEN, THE SOURCE COMB STILL HAS NO DRIFT -- THE DRIVING IS AN OFFSET, NOT A CURVATURE
+========================================================================================================
+    driven source comb q              : ['0.8942', '1.8705', '2.8651', '3.8780', '4.8817', '5.8854']
+    its offset from the integers      : ['-0.1058', '-0.1295', '-0.1349', '-0.1220', '-0.1183', '-0.1146']   spread 0.0291
+    OK    Ⓑ① the driving's phase offset is NEARLY CONSTANT: it spreads by under 0.05 in q across six peaks while sitting about -0.12 from the integers
+    OK    Ⓑ② and that is read on a UNIFORM k grid at better than half the ladder's quantum, so it is not the ladder's resolution talking
+    SW alone,   refined q: ['0.8891', '1.8609', '2.8479', '3.8536', '4.8420', '5.8323']  ->  D = +0.53 (rms 3.12)
+    whole monopole source: ['0.8410', '1.8240', '2.8273', '3.8365', '4.8295', '5.8207']  ->  D = +0.00 (rms 2.96)
+    OK    Ⓑ③ the DRIVEN source comb's own drift is at most +0.6 and inside its own rms of zero
+
+========================================================================================================
+  Ⓒ  THE PROJECTION MAKES THE DRIFT OUT OF A COMB THAT HAS NONE
+========================================================================================================
+    l_A = pi D_M/r_s = 301.380; a PERFECT comb's n-th extremum is at k r_s = n pi exactly
+    full Bessel sum   : peaks ['298.6', '576.9', '866.4', '1159.8', '1455.2']  gaps ['278.4', '289.4', '293.4', '295.4']  D = +2.62
+    closed-form window: peaks ['299.0', '577.4', '866.9', '1160.3', '1455.7']  gaps ['278.5', '289.5', '293.4', '295.4']  D = +2.61
+    OK    Ⓒ① a comb with NO drift of its own acquires one on projection, and it is POSITIVE: the gaps rise monotonically, decelerating, and stay under l_A throughout
+    OK    Ⓒ② the closed-form window reproduces the full Bessel sum peak by peak to under 1 in l -- so the drift is the KERNEL's own centroid shift and not a property of the sum
+    OK    Ⓒ③ and the two agree on the drift itself to better than 0.1
+    the same window at the run's own r_D = 7.12 Mpc: D = +1.48
+    OK    Ⓒ④ the derived drift is positive across the construction's whole r_D range, 7.1 to 10.9 Mpc
+    the instrument's OWN saved source, re-projected: peaks ['234.8', '525.5', '818.1', '1125.3', '1421.7']  D = +2.55
+    OK    Ⓒ⑤ re-projecting the instrument's own saved source gives the same drift as the perfect comb does, to better than 0.3 -- the source contributes none of it
+
+========================================================================================================
+  Ⓓ  THE HANDOVER CONTRIBUTES NOTHING, AND THE PAPER SAID SO BEFORE IT WAS MEASURED
+========================================================================================================
+    ZSTART = 1e7 : ['0.8941', '1.8703', '2.8648', '3.8775', '4.8811', '5.8847']
+    ZSTART = 1e8 : ['0.8942', '1.8706', '2.8653', '3.8782', '4.8819', '5.8857']
+    a DECADE of handover epoch moves the comb by 0.0010 in q = 0.30 in l = 0.10% of one spacing
+    OK    Ⓓ① a decade of handover epoch moves the source comb by under 0.002 in q
+    and the drift itself: D(1e7) = +0.933   D(1e8) = +0.931
+    OK    Ⓓ② and it moves the DRIFT by under 0.02
+Traceback (most recent call last):
+  File "/home/user/shadow-of-existence/receipts/P15_CR_cosmology/P15_the_spacing_drift_is_made_in_the_projection_so_the_construction_determines_it_and_the_handover_contributes_nothing.py", line 320, in <module>
+    _tex_pin = subprocess.run(['git', 'show', f'{PIN}:corpus/CR_cosmology.tex'], cwd=ROOT,
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['git', 'show', 'bfa6c6bc84f3014b9c18f54e3a58010eeae8a045:corpus/CR_cosmology.tex']' returned non-zero exit status 128.

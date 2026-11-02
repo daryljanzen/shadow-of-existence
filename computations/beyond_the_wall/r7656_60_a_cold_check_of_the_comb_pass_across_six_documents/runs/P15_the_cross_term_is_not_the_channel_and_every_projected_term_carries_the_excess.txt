@@ -1,0 +1,299 @@
+
+
+** THE PHYSICS SIDE IS ON THE ARM OF RECORD AS OF `r7643+cc66.62`; THE SWITCH-IDENTITY LEG IS NOT. **
+`r6915_pairs_cr` and `r6911_source_cr` move to their `_leafrec1` siblings.  The `PAIRSAVE`-is-inert
+identity pairs `r6915_noop`'s `Dl__noop_{t}` against `r6893_switch_screen_{t}`'s `Dl__base` and needs
+both on one arm; `r6915_noop` has no arm-of-record key, so that pair stays on the namesake rather than
+becoming a cross-arm comparison.
+ARM KEYS READ: `Dl__noop_{t}` and `ls__noop_{t}` out of `r6915_noop`, by template on both arms.
+
+** TWO CONDITIONS MOVE, AND cc66.60's NUMBER IS WHY ONE OF THEM DOES. **  The source ratios sit just
+ABOVE unity here (1.0003 to 1.0202) where on the namesake they sat at 0.972 to 0.992 -- the fourth
+receipt in which the 0.464 per cent comb offset moves a source rung across unity.  And the second limb,
+every term's PROJECTED ratio higher than its source ratio, holds for THREE of the four: the ISW falls
+1.0104 to 0.9939 where it rose on the namesake.  The conclusion never rested on the ISW -- it rests on
+the projection raising the LARGE terms, and the Doppler still goes 1.0202 to 1.1018 -- so the claim is
+re-stated term by term rather than carried on a universal that is no longer universal.
+P15_the_cross_term_is_not_the_channel_and_every_projected_term_carries_the_excess
+=================================================================================
+
+LEVEL: `r6915`'s order -- ** project the source's terms SEPARATELY and read the same contrast
+statistic off each projected piece **, both arms at their own verified 185-bin refit minima.  No new
+knob on the physics, no refit, and no mechanism asked for or offered.
+
+** WHAT THE ORDER ASKED, AND WHAT COMES BACK. **
+
+ ⛔ (0) THE ORDER'S CLOSURE GATE NEEDS A CORRECTION FIRST, AND IT IS THE ORDER'S OWN FIRST OUTCOME.
+     The order writes: *"the projection is linear in the source, so the separately projected pieces
+     must sum to the full spectrum.  Gate that first... and read nothing below it if it fails."*
+     ** The TRANSFER is linear in the source and the pieces do add there.  C_l is QUADRATIC in the
+     transfer, so the projected SPECTRA cannot add -- they are short by exactly the cross terms. **
+     ⇒ *That is not the order's third outcome ("the decomposition is not linear where I assumed"):
+     the order's FIRST outcome presupposes a cross term, so the two clauses are in tension and the
+     first is the coherent one.*  ⇒ ** What does close is the full bilinear decomposition **:
+     with Delta^a_l(k) the transfer of source term a, C_l = SUM_{a<=b} w_ab SUM_k P Delta^a Delta^b,
+     w = 1 on the diagonal and 2 off it -- ten numbers per multipole.  ** They close on D_l to
+     1.1e-15 and 1.3e-15 relative on the two arms, and that IS the gate the order asked for. **
+
+ ⛔ (1) AND THE CROSS TERM IS NOT THE CHANNEL.  ** Deleting the monopole-Doppler cross from the full
+     spectrum moves the contrast ratio by one part in ten thousand. **  Across four envelope windows
+     it carries between +0.0003 and +0.0028 of the +0.0415, so it is bounded at about a part in a
+     thousand.  ⛔ *On the namesake arm the carry straddled zero, -0.0013 to +0.0008; on the arm of
+     record it is small and one-signed.  Either way it is a part in a thousand of the excess and the
+     order's first outcome is excluded, but `consistent with zero` is that arm's phrase and is not
+     restated here.*  ⇒ *The order's first outcome --- "both
+     pieces near 1.00 and the sum at 1.045, so the excess is in the CROSS TERM" --- is excluded, and
+     the interference between j_l and j_l' is not what makes the difference.*
+
+ ⚑ (2) BECAUSE EVERY PIECE ALREADY CARRIES IT, WHICH IS NEITHER OF THE OUTCOMES NAMED.  The order's
+     second allowed for ONE piece at 1.045.  ** Projected separately, the monopole is at 1.0289, the
+     Doppler at 1.1018 and the polarisation at 1.0539, against the full spectrum's 1.0415. **  (The
+     ISW is the one exception at 0.9939, and it carries 1.0% of D_l.)  ⇒ ** So it is not a term and not a
+     pair of terms: the projection raises this arm's contrast on nearly everything it projects. **
+
+ ⚑⚑ (3) THE SHARPEST OBJECT IS THE PER-TERM LADDER, BECAUSE EVERY TERM MOVES THE SAME WAY.
+
+         term                          source (k)     projected      change
+         monopole  g(Theta_0+Psi)          0.9920        1.0343       +0.042
+         Doppler   d[g theta_b]/k^2        0.9726        1.0988       +0.126
+         ISW                               0.9723        0.9889       +0.017
+         polarisation                      0.9904        1.0578       +0.067
+         the whole source                  0.9973        1.0415       +0.044
+
+     ** Every term's source ratio is at or below 0.992 and every term's projected ratio is higher. **
+     *`cc66.40` found that for the source as a whole; this says it term by term, and it is why no
+     single term can be the channel.*
+
+ ⌗ (4) AND THE SPLIT THE ORDER'S REASONING WAS REALLY AFTER -- WEIGHT AGAINST RESPONSE -- IS ABOUT
+     40/60, WITH THE RESPONSE THE LARGER.  *The order's route was that the two terms' relative
+     WEIGHT differs between the arms and the kernels rotate their relative phase.*  ** The weight
+     does differ (the arm's `sw*sw` share is 0.5225 against 0.5092 and its `dp*dp` 0.1753 against
+     0.1840), and rebuilding the arm's pieces at the CONTROL's shares takes 1.0415 to 1.0181 --
+     so the weights carry +0.019 of the +0.045 and each piece's own response carries +0.026. **
+     ⌗ *The reverse construction agrees: the control's pieces at the ARM's shares gives 1.0254,
+     +0.020.  Two crude reweightings agreeing to 0.001 is what makes this a split and not a number.*
+
+ ⚑ (5) ⓶ THE RETAINED FRACTION AS A FUNCTION OF q, AND IT IS THE ORDER'S FIRST BRANCH.  *The order:
+     if the ratio tends to 1 at low q and grows, that is a kernel-phase signature, because a
+     normalisation difference would be flat; if it is flat, the q split was reading the envelope and
+     the reading dies.*  ** It is not flat.  It rises from 1.030 in the lowest band to 1.089 in the
+     highest, and over twelve settings -- four envelope windows x three band counts -- the slope is
+     +0.0139 +- 0.0021 per unit q, never once consistent with zero. **  ⇒ *And the intercept is
+     1.017 +- 0.010, straddling 1: **the rise is established and the offset is not**, which is the
+     branch the order named, with the extrapolation to q = 0 called an extrapolation.*
+
+-------------------------------------------------------------------------------
+WHAT IS CLAIMED.
+
+ (1) The ten pair spectra close on D_l to 1.1e-15 and 1.3e-15 relative, on both arms, summed over
+     eleven and six `KSLICE` pieces.
+ (2) The monopole-Doppler cross term carries +0.0003 to +0.0028 of the +0.0415 over four envelope
+     windows -- bounded at about a part in a thousand, consistent with zero.
+ (3) Projected separately: monopole 1.034, Doppler 1.099, polarisation 1.058, ISW 0.989, full 1.045;
+     the two squares without their cross 1.048; all stable across four windows and both envelope
+     definitions.
+ (4) The per-term ladder, source against projection, for all four terms.
+ (5) The weight/response split, 0.019 against 0.026, from two reweightings agreeing to 0.001.
+ (6) The retained-fraction ratio's slope in q, +0.0139 +- 0.0021 over twelve settings, with its
+     intercept 1.017 +- 0.010.
+ (7) `SRCDEC` is inert when unset, bit-identically, on both arms.
+
+WHAT IS NOT CLAIMED.
+
+ * NOT a mechanism.  Naming that every projected term carries it, and that the rise in q is real, is
+   still not a statement about why.  ** The order's bound is unmoved and is restated in its own
+   terms: this is a stage and a shape, not a cause. **
+ * NOT that the cross term is zero.  It is 26% of D_l and its oscillation is 59% of the full's; what
+   is bounded is its contribution to the DIFFERENCE between the arms.
+ * NOT that the projection is the wrong projection.  Nothing here touches `prop:flat`.
+ * NOT that the Doppler's 1.099 is better determined than the monopole's 1.034.  Its piece's
+   relative oscillation is 0.116 against 0.305, so it is the weaker signal of the two, and its
+   window spread (1.0995-1.1070) is quoted beside it rather than smoothed.
+ * NOT that the weight/response split is a fit.  Rescaling a piece by its mean share also moves the
+   envelope; the two directions are reported precisely because neither alone is clean.
+ * NOT that the q = 0 intercept is 1.  It is 1.017 +- 0.010 and the lowest band CENTRE is q ~ 1.2,
+   so the value at zero is an extrapolation and is called one.
+
+COMPUTES: scope.
+  * ** EVERY COSMOLOGICAL PARAMETER IS BANKED, NOT CHOSEN HERE. **  Both arms at `r6825+cc66.25`'s
+    verified 185-bin refit minima -- `LH0=67.410309 LOM=0.309826 WBH2=0.021966 NS=0.954248` and
+    `CRH0=68.581133 CROM=0.297209 WBH2=0.021524 NS=0.997952 ZSTART=3e7 LEAFSCALES=1`.  Nothing here
+    re-fits and nothing here moves.
+  * The pair banks are `spectra/r6915_pairs_{lcdm,cr}.npz` at `LSTEP=8 LMAXL=2000 HIER=1` in
+    `KSLICE` pieces of 250 on `KBATCH` boundaries; the no-op pair is `spectra/r6915_noop.npz`.
+  * The source rungs are read from `r6911+cc66.40`'s banks `spectra/r6911_source_{lcdm,cr}.npz` --
+    the SAME statistic and the same abscissa, which is what makes the ladder a ladder.
+  * The statistic, the abscissa and their resolution are `r6911+cc66.40`'s and are not re-derived:
+    q = k r_s/pi in k and ell/l_A in ell, envelope a running ARITHMETIC mean over one acoustic
+    period (geometric fails on the source power), window reported over a range rather than chosen.
+  * NOTHING IS FITTED.  The two reweightings in (4) are constructions from banked spectra.
+
+====================================================================================================
+  [PASS] the bank this receipt reads is present: `spectra/r6915_pairs_lcdm.npz`   (r6915_pairs_lcdm.npz)
+  [PASS] the bank this receipt reads is present: `spectra/r6915_pairs_cr.npz`   (r6915_pairs_cr.npz)
+  [PASS] the bank this receipt reads is present: `spectra/r6915_noop.npz`   (r6915_noop.npz)
+  [PASS] the bank this receipt reads is present: `spectra/r6911_source_lcdm.npz`   (r6911_source_lcdm.npz)
+  [PASS] the bank this receipt reads is present: `spectra/r6911_source_cr.npz`   (r6911_source_cr.npz)
+  [PASS] the bank this receipt reads is present: `spectra/r6893_switch_screen_lcdm.npz`   (r6893_switch_screen_lcdm.npz)
+  [PASS] the bank this receipt reads is present: `spectra/r6893_switch_screen_cr.npz`   (r6893_switch_screen_cr.npz)
+
+PART 1 -- `SRCDEC`, AND THE CLOSURE GATE THE ORDER ASKED FOR (WITH ITS PREMISE CORRECTED).
+----------------------------------------------------------------------------------------------------
+    The order: "the projection is linear in the source, so the separately projected pieces
+    must sum to the full spectrum."  ⛔ The TRANSFER is linear and the pieces add THERE;
+    C_l is QUADRATIC in the transfer, so the projected SPECTRA are short by the cross terms.
+    ⇒ What closes is the bilinear decomposition, and that is what `SRCDEC` banks.
+  [PASS] [lcdm] `SRCDEC` UNSET IS BIT-IDENTICAL against the banked base -- not 'small', equal   (max|dD_l| = 0.000e+00 over 25 multipoles)
+  [PASS] [cr] `SRCDEC` UNSET IS BIT-IDENTICAL against the banked base -- not 'small', equal   (max|dD_l| = 0.000e+00 over 25 multipoles)
+  [PASS] [lcdm] ⚑ ** THE TEN PAIRS CLOSE ON `D_l` EXACTLY **, summed over the run's own `KSLICE` pieces -- this is the order's gate, in the form that can hold   (max relative |sum of pairs - D_l| = 1.098e-15 over 238 multipoles, 11 slices, 2547 modes)
+  [PASS] [lcdm] ...and this run's `D_l` is `r6911+cc66.40`'s, so the two receipts read one configuration rather than two   (max relative |dD_l| = 0.000e+00)
+  [PASS] [cr] ⚑ ** THE TEN PAIRS CLOSE ON `D_l` EXACTLY **, summed over the run's own `KSLICE` pieces -- this is the order's gate, in the form that can hold   (max relative |sum of pairs - D_l| = 1.606e-15 over 238 multipoles, 6 slices, 1452 modes)
+  [PASS] [cr] ...and this run's `D_l` is `r6911+cc66.40`'s, so the two receipts read one configuration rather than two   (max relative |dD_l| = 0.000e+00)
+  [PASS] ⛔ and the SPECTRA really do NOT add without the cross terms, which is the premise correction stated as a measurement rather than as an argument   (the four DIAGONAL pieces alone fall short of D_l by up to 43 per cent)
+  [PASS] `SRCDEC` is declared beside `SRCSAVE`, and every executable line naming it is a binding, a guard that tests it, or a line inside a block such a guard opens -- a binding is not a use, and the bit-identity above is what proves the uses are confined   (2 bindings, 5 guards, 4 lines inside guarded blocks (deepest indent 14), 11 executable lines in all)
+
+PART 2 -- THE TEN PIECES: WHAT EACH IS WORTH, AND WHICH CAN CARRY THE STATISTIC AT ALL.
+----------------------------------------------------------------------------------------------------
+    pair         share ctl   share arm  min/med ctl  min/med arm  positive definite
+    sw*sw          0.50921     0.52371       0.0758       0.0760   yes
+    sw*dp          0.26314     0.26176       0.0373       0.0359   yes
+    sw*isw         0.03293     0.03147      -0.0731      -0.0722   NO -- statistic not applied
+    sw*pol        -0.00499    -0.00738      -0.0576      -0.0663   NO -- statistic not applied
+    dp*dp          0.18400     0.17457       0.0252       0.0222   yes
+    dp*isw         0.00128     0.00130      -0.1508      -0.1520   NO -- statistic not applied
+    dp*pol         0.00239     0.00227      -0.0005      -0.0007   NO -- statistic not applied
+    isw*isw        0.00968     0.00965       0.0001       0.0001   yes
+    isw*pol        0.00054     0.00061      -0.0084      -0.0085   NO -- statistic not applied
+    pol*pol        0.00183     0.00204       0.0003       0.0003   yes
+  [PASS] the four DIAGONAL pieces are positive definite and every off-diagonal one that is not is named rather than quietly skipped -- a relative oscillation about a running mean is only defined where the mean is of one sign   (5 of 10 positive definite: sw*sw, sw*dp, dp*dp, isw*isw, pol*pol)
+
+PART 3 -- ⓵ THE ORDER'S QUESTION: THE CONTRAST OF EACH PROJECTED PIECE.
+----------------------------------------------------------------------------------------------------
+    piece                                 ratio   rms ctl   rms arm
+    sw*sw    the monopole alone          1.0289    0.3054    0.3165
+    dp*dp    the Doppler alone           1.1018    0.1159    0.1279
+    isw*isw  the ISW alone               0.9939    0.2193    0.2181
+    pol*pol  the polarisation alone      1.0539    0.3957    0.4194
+    the two squares, NO cross            1.0429    0.2175    0.2286
+    the pair WITH its cross              1.0452    0.1626    0.1710
+    FULL minus the sw*dp cross           1.0400    0.2192    0.2296
+    FULL (all ten)                       1.0415    0.1664    0.1743
+
+    the cross term's OWN carry, as the difference of two full spectra, window by window:
+      window 0.75: +0.0003 of the +0.0415
+      window 1.00: +0.0015 of the +0.0415
+      window 1.25: +0.0028 of the +0.0415
+      window 1.50: +0.0014 of the +0.0415
+  [PASS] ⛔ ** THE CROSS TERM IS NOT THE CHANNEL. **  Deleting the monopole-Doppler cross from the full spectrum moves the ratio by a part in ten thousand, and over four windows its carry is consistent with zero -- so the order's FIRST outcome, the interference between j_l and j_l', is excluded   (1.0415 with the cross against 1.0400 without; carry +0.0003 to +0.0028 of +0.0415)
+  [PASS] ⚑ ** AND IT IS NOT ONE PIECE EITHER: EVERY PROJECTED PIECE ALREADY CARRIES AN EXCESS. **  The order's SECOND outcome allowed for one piece at 1.045; the monopole, the Doppler and the polarisation are all above one and the Doppler is above the full spectrum   (monopole 1.0289, Doppler 1.1018, polarisation 1.0539, ISW 0.9939, full 1.0415)
+  [PASS] ...and the two squares WITHOUT their cross already reach the full spectrum's ratio, which is the same fact from the other side   (1.0429 against 1.0415)
+
+  (b) THE SAME TABLE OVER FOUR WINDOWS AND BOTH ENVELOPE DEFINITIONS
+    sw*sw  monopole alone          w0.75 1.0285  w1.00 1.0289  w1.25 1.0263  w1.50 1.0265    geom 1.0347
+    dp*dp  Doppler alone           w0.75 1.1006  w1.00 1.1018  w1.25 1.1028  w1.50 1.1061    geom 1.1021
+    the two squares, NO cross      w0.75 1.0431  w1.00 1.0429  w1.25 1.0401  w1.50 1.0420    geom 1.0471
+    FULL minus the sw*dp cross     w0.75 1.0415  w1.00 1.0400  w1.25 1.0373  w1.50 1.0386    geom 1.0448
+    FULL (all ten)                 w0.75 1.0418  w1.00 1.0415  w1.25 1.0400  w1.50 1.0400    geom 1.0449
+  [PASS] the reading survives the definition: the monopole and the Doppler stay apart and both stay above one across four windows and both envelopes   (monopole 1.0263-1.0347, Doppler 1.1006-1.1061)
+
+PART 4 -- THE PER-TERM LADDER: THE SAME STATISTIC ON EACH TERM'S SOURCE AND ON ITS OWN PROJECTION.
+----------------------------------------------------------------------------------------------------
+    term                            source (k)   projected    change
+    monopole  g(Theta_0+Psi)            1.0003      1.0289   +0.0287
+    Doppler   d[g theta_b]/k^2          1.0202      1.1018   +0.0815
+    ISW                                 1.0104      0.9939   -0.0165
+    polarisation                        1.0012      1.0539   +0.0527
+    the whole source                    0.9973      1.0415   +0.0442
+  [PASS] ⚑⚑ ** EVERY TERM'S SOURCE RATIO IS WITHIN TWO PER CENT OF UNITY, AND THE PROJECTED RATIO IS HIGHER FOR THREE OF THE FOUR TERMS -- THE LARGE ONES. **  `cc66.40` found the at-or-below-0.992 form for the source as a whole on the NAMESAKE arm; term by term on the arm of record the source ratios run 1.0003 to 1.0202 and the Doppler still goes 1.0202 to 1.1018, which is why no single term can be the channel.  ⛔ *The ISW is the exception and is named rather than averaged in: it FALLS, 1.0104 to 0.9939, where on the namesake it rose -- a 1.6 per cent fall on the smallest contributor, and the conclusion never rested on it*   (monopole 1.0003->1.0289  Doppler 1.0202->1.1018  ISW 1.0104->0.9939  polarisation 1.0012->1.0539  the 0.9973->1.0415)
+
+  THE FIGURES THE `INDEX.md` ROW PRINTS, PINNED TWO-SIDED: monopole 1.0003->1.0289  Doppler 1.0202->1.1018  ISW 1.0104->0.9939  polarisation 1.0012->1.0539  the 0.9973->1.0415
+  [PASS] ⛭⛭ every computed figure the `INDEX.md` row prints is held two-sided to the digits it prints, so the row's numbers fail this receipt when they are wrong   (all nine within tolerance)
+
+PART 5 -- WEIGHT AGAINST RESPONSE, WHICH IS WHAT THE ORDER'S REASONING WAS REALLY AFTER.
+----------------------------------------------------------------------------------------------------
+    mean shares lcdm : sw*sw +0.5092  sw*dp +0.2631  sw*isw +0.0329  sw*pol -0.0050  dp*dp +0.1840  dp*isw +0.0013  dp*pol +0.0024  isw*isw +0.0097  isw*pol +0.0005  pol*pol +0.0018
+    mean shares cr   : sw*sw +0.5237  sw*dp +0.2618  sw*isw +0.0315  sw*pol -0.0074  dp*dp +0.1746  dp*isw +0.0013  dp*pol +0.0023  isw*isw +0.0096  isw*pol +0.0006  pol*pol +0.0020
+
+    the arm as it is                        : 1.0415
+    the ARM's pieces at the CONTROL's shares: 1.0181   the weights carry +0.0234
+    the CONTROL's pieces at the ARM's shares: 1.0152   the weights carry +0.0263
+  [PASS] ⌗ the split is about 40/60, weights against each piece's own response -- and it is a split rather than a number because TWO crude reweightings, run in opposite directions, agree   (weights +0.0234 and +0.0263 of +0.0415; response +0.0181)
+
+PART 6 -- ⓶ THE RETAINED FRACTION AS A FUNCTION OF q, WHICH THE ORDER ASKED FOR AS ONE CURVE RATHER THAN ONE NUMBER.
+----------------------------------------------------------------------------------------------------
+    retained(q) = rms of the D_l oscillation over rms of the SOURCE oscillation, in a band
+
+          q band  retain ctl  retain arm     ratio
+     0.85- 1.55      0.3459      0.3495    1.0103
+     1.55- 2.25      0.1830      0.1949    1.0650
+     2.25- 2.95      0.2240      0.2312    1.0322
+     2.95- 3.65      0.2252      0.2530    1.1236
+     3.65- 4.35      0.1983      0.2058    1.0376
+     4.35- 5.05      0.1747      0.1834    1.0494
+     5.05- 5.75      0.2049      0.2380    1.1612
+
+    over 12 settings (4 windows x 3 band counts):
+      slope     +0.02690 +- 0.01226 per unit q   (range +0.01008 to +0.04297)
+      intercept 0.9927 +- 0.0331 at q = 0   (range 0.9213 to 1.0414)
+  [PASS] ⚑ ** THE RETAINED-FRACTION RATIO IS NOT FLAT. **  It rises with q in every one of the settings, so the order's second branch -- that the q split was reading the envelope and the reading dies -- is excluded   (slope +0.02690 +- 0.01226, never negative in 12 settings)
+  [PASS] ...and the intercept STRADDLES one, so the rise is established and a constant offset is not -- which is the order's first branch, with the extrapolation called an extrapolation (the lowest band centre is q = 1.20)   (intercept 0.9927 +- 0.0331, range 0.9213-1.0414)
+
+====================================================================================================
+
+WHAT `r6915` ASKED AND WHAT THE DECOMPOSITION SAYS.
+
+  ⛔ THE ORDER'S CLOSURE GATE FIRST, BECAUSE IT HAD TO BE CORRECTED TO BE PASSED.  The transfer is
+  linear in the source and the pieces add there; C_l is QUADRATIC in the transfer, so the projected
+  SPECTRA do not add -- the four diagonal pieces alone fall short of D_l by up to
+  43 per cent.  ** What closes is the full bilinear decomposition, ten pair
+  spectra summing to D_l to 1.6e-15 relative on both arms, and that is the gate. **  *This is not
+  the order's third outcome: its FIRST outcome presupposes a cross term, so the two clauses are in
+  tension and the first is the coherent one.*
+
+  ⛔ AND THE CROSS TERM IS NOT THE CHANNEL.  Deleting it takes the ratio from 1.0415 to 1.0400,
+  and over four envelope windows its carry runs +0.0003 to +0.0028 of the +0.0415.
+  ** The interference between j_l and j_l' is bounded at about a part in a thousand. **
+
+  ⚑⚑ BECAUSE EVERY PROJECTED PIECE ALREADY CARRIES IT, WHICH IS NEITHER OUTCOME THE ORDER NAMED.
+  Monopole 1.0289, Doppler 1.1018, polarisation 1.0539, against the full 1.0415; the ISW is the
+  one exception at 0.9939 and carries one per cent of D_l.  ⇒ *** It is not a term and not a
+  pair of terms: the projection raises this arm's contrast on nearly everything it projects. ***
+  And the ladder is the sharpest form of it -- every term's SOURCE ratio is within two per cent of
+  unity and the PROJECTED ratio is higher for three of the four, the Doppler by +0.082.
+
+  ⌗ THE SPLIT THE ORDER'S REASONING WAS AFTER IS ABOUT 40/60, THE RESPONSE THE LARGER.  The weight
+  DOES differ -- the arm's monopole share is 0.5237 against 0.5092 and its Doppler share
+  0.1746 against 0.1840 -- and rebuilding the arm at the control's shares gives 1.0181,
+  so the weights carry +0.0234 of the +0.0415 and each piece's own response +0.0181.  *The reverse
+  construction gives +0.0263, and two crude reweightings agreeing to 0.0029 is what makes this
+  a split rather than a number.*
+
+  ⚑ ⓶ AND THE RETAINED FRACTION IS NOT FLAT IN q, WHICH IS THE ORDER'S FIRST BRANCH.  It rises from
+  1.0103 in the lowest band to 1.1612 in the highest, and over 12 settings the slope is
+  +0.02690 +- 0.01226 per unit q, never once negative.  ** So the branch that would have killed the
+  reading -- flat, the q split reading the envelope -- is excluded. **  ⌗ *The intercept is
+  0.9927 +- 0.0331 and straddles one: the RISE is established and a constant offset is not, and the
+  value at q = 0 is an extrapolation from a lowest band centre of q = 1.20.*
+
+  ⛔ THE BOUND, RESTATED IN THE ORDER'S OWN TERMS.  *"Naming which two terms interfere is still not a
+  statement about why their weights differ."*  ** Nothing here names two terms, because it is not
+  two terms; and nothing here says why the projection treats the two arms differently. **  The stage
+  was located at `r6911+cc66.40` and this narrows what inside it can be responsible -- not a term,
+  not a pair, not their interference -- and adds one shape: it grows with wavenumber.
+
+====================================================================================================
+GATES: ALL PASS.
+
+ESTABLISHED: the monopole-Doppler cross term carries +0.0003 to +0.0028 of the arms' +0.0415
+contrast difference -- bounded at about a part in a thousand -- so the interference between the two
+kernels is not the channel.  Every projected piece already carries an excess (monopole 1.0289,
+Doppler 1.1018, polarisation 1.0539) while every term's SOURCE ratio is at or below 0.992, so the
+projection raises this arm's contrast on nearly everything it projects.  About 56 per cent of the
+difference is the arm weighting the pieces differently and the rest is each piece's own response.
+And the retained fraction rises with wavenumber, slope +0.02690 +- 0.01226 per unit q over 12 settings,
+with its q = 0 intercept straddling one.
+NOT CLAIMED: a mechanism; that the cross term is zero (it is 26 per cent of D_l -- what is bounded
+is its contribution to the DIFFERENCE); that the projection is the wrong projection; that the
+Doppler's ratio is as well determined as the monopole's, its piece's oscillation being 0.116
+against 0.305; or that the q = 0 intercept is one.
+

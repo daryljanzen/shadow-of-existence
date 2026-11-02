@@ -1,0 +1,48 @@
+
+RECEIPT -- P15: ** `r7219` ORDERED THE REPARAMETRISATION AND NAMED THE CLOSURE BRANCH IN ADVANCE:
+`centre the comb basis and measure whether the l_A-drift correlation survives it ... if the
+correlation survives centring, the route is closed and that is the result`.  *** THE CORRELATION
+DOES NOT SURVIVE -- IT GOES TO MACHINE ZERO EXACTLY -- AND THE ROUTE IS CLOSED ANYWAY, FOR A REASON
+NEITHER BRANCH NAMED. *** **
+
+  ⓵ ** CENTRING IS AN EXACT SHEAR IN PARAMETER SPACE AND NOT A REFIT. **  Matching
+  `$\ell=\ell_A v+dv^{2}$` to `$\ell=L_p v+D(v^{2}-2v_pv)$` gives `$L_p=\ell_A+2v_pd$` and
+  `$D=d$`, so the FITTED CURVE IS BIT-IDENTICAL -- *checked here as `$\max|A_1-A_0|=0$` on the
+  design matrix, which is `r7219`'s burden `the fitted curve must be identical to the digits and
+  only the covariance may move` verified at the digits rather than argued.*
+
+  ⓶ ** SO THE CORRELATION CAN BE DRIVEN TO EXACTLY ZERO, AND IS. **  *The covariance transforms by
+  `$J=[[1,2v_p],[0,1]]$`, so `$ho(L_p,D)=0$` at `$v_p^{*}=-C_{01}/2C_{11}$`.  Measured:
+  `$ho$` goes from `$-0.94$`--`$-0.98$` to `$10^{-16}$` on every spectrum whose `$\ell_A$` is not
+  clipped, and the decorrelating pivot is INTERIOR to the fitted window on all five.*
+
+  ⓷ ⛔⛭⛭⛭ ** AND THE DECORRELATED PARAMETER IS NOT THE ACOUSTIC SCALE. **  *`cr_nodrive`'s
+  spacing at its decorrelating pivot is `$293.438\pm0.226$` against a banked `$301.380$` --
+  **`$35$` standard deviations away** -- and `cr_base`'s is `$350.131\pm0.129$` against `$301.380$`,
+  **`$378$`**.  *Centring buys a precisely determined number about the wrong quantity.**
+
+  ⇒ ⛔ ** SO THE ROUTE IS CLOSED AND THE CORRELATION WAS NEVER THE OBSTACLE. **  *The bank
+  constrains ONE combination of scale and drift tightly -- to `$0.08$` per cent -- and the acoustic
+  scale is not that combination.  **A correlation that a relabelling removes was never a defect of
+  the parametrisation; it was the shape of what `$179$` points can say.***
+
+  ⌈ ⛭ ** AND EVERY PIVOT-INVARIANT STATEMENT IN `cc66.161` SURVIVES BY THE SAME ALGEBRA. **
+  *Because centring leaves the curve identical, the base spectra's fitted spacing still never equals
+  the banked value anywhere -- `$\ell^{*}<0$` -- and no reparametrisation can change it.  **That is
+  the closure, and it is a property of the fit rather than of the coordinates on it.***
+
+** COMPUTES: the four-parameter comb of `cc66.161`, re-expressed about a pivot; the shear algebra
+   verified on the design matrix to the digits; the 2x2 curvature transformed analytically and the
+   decorrelating pivot solved for; and the decorrelated spacing compared with the banked scale in
+   units of its own sigma.  *** No new spectra, no refit, data not touched. *** **
+
+
+
+========================================================================================================
+  A.  ⓵ CENTRING IS AN EXACT SHEAR -- r7219's BURDEN CHECKED ON THE DESIGN MATRIX
+========================================================================================================
+      cr_base       max|A1-A0| = 0.0e+00
+      lcdm_base     max|A1-A0| = 0.0e+00
+      cr_nodrive    max|A1-A0| = 0.0e+00
+      lcdm_nodrive  max|A1-A0| = 0.0e+00
+      cr_rb0.5      max|A1-A0| = 0.0e+00

@@ -1,0 +1,107 @@
+
+RECEIPT -- P15: ** `r7211` ORDERED THE OBSERVED POINT ONTO THE PEAK PLANE AND SAID TO STOP AND SAY SO
+IF THE PLACEMENT CAME BACK UNRELIABLE RATHER THAN MERELY IMPRECISE.  *** IT IS UNRELIABLE, AND NOT
+BECAUSE OF THE COVARIANCE: THE PEAK LOCATOR READS `$21$` LOCAL MAXIMA ON THE OBSERVED SPECTRUM WHERE
+IT READS `$5$` ON A MODEL BINNED THE SAME WAY, SO THE FIVE IT REFINES ARE NOT THE ACOUSTIC PEAKS. ***
+
+  ⓵ ** THE STATISTIC SURVIVES THE BINNING.  THAT WAS THE RISK AND IT IS NOT THE PROBLEM. **  *Run on
+  four model spectra fine and then through the likelihood's own `bin_spectrum`, the common offset
+  moves by `$-0.0013$` to `$-0.0021$` and the alternation by about `$-0.0002$` -- a small bias,
+  consistent in sign, and applied to data and models alike.*
+
+  ⓶ ⛔ ** BUT THE PEAK LOCATOR IS NOT NOISE-ROBUST, AND THE OBSERVED SPECTRUM IS NOISY AT THE SCALE
+  OF ITS OWN CURVATURE. **  *The locator takes local maxima of a `$0.5$`-step interpolant and keeps
+  the first five separated by `$60$`.  On the binned CR model that returns the acoustic peaks.  On
+  the observed spectrum it returns `$21$` maxima, keeps `$10$`, and the first five are
+  `$239$`/`$464$`/`$527$`/`$617$`/`$815$` -- **three of them inside the second acoustic peak's own
+  neighbourhood.**  The parabola then refines noise wiggles, and one of the five is not even concave.*
+
+  ⓷ ⛔ ** AND THE ERROR BAR CONFIRMS IT RATHER THAN RESCUING IT. **  *Propagating the full `plik_lite`
+  TT covariance by Cholesky draws: **`$98.2$` per cent of `$2000$` draws fail to yield five finite
+  peaks at all**, the `$35$` survivors give `$\sigma_\varphi=1.25$` against a driving signal of
+  `$0.127$` and a loading signal of `$0.018$`, and the two components come back correlated at
+  `$-0.955$` -- collapsed onto one degenerate direction rather than spanning a plane.*
+
+  ⇒ ** SO NO POINT IS PLACED AND NO CARRIER IS NAMED.  `r7211` ASKED FOR THE INTERVAL AS THE RESULT
+  AND THE INTERVAL IS THAT THERE IS NO MEASUREMENT HERE. **  *It is not that the observed point's
+  uncertainty covers both candidates -- it is that the quantity being measured is not the one the
+  statistic was built to read.  `$\sigma_\varphi$` is ten times the larger candidate's whole signal
+  and seventy times the smaller's.*
+
+  ⌗ ** WHAT THIS DOES NOT TOUCH. **  *`cc66.157` and `cc66.158` compare MODEL to MODEL on noiseless
+  `$238$`-point spectra, where `Ⓐ` above shows the statistic sound.  **The `$5.39\times$` separation
+  and the `$\omega_b$` opposition stand unchanged.**  What fails is one step -- pointing it at data.*
+
+  ⌈ ** AND WHAT A REPAIR WOULD HAVE TO BE, STATED WITHOUT BUILDING IT. **  *A locator that finds
+  maxima and then refines them cannot work on a spectrum whose noise creates maxima.  It would have
+  to fit a parametric comb to the whole binned residual under the covariance -- **a different
+  statistic, which `r7211` did not order and which is `66`'s to cost.***
+
+** COMPUTES: the de-tilted peak statistic of `cc66.156`, unchanged, (a) on four model spectra fine
+   and likelihood-binned, to bound the binning's effect; (b) on `plik_lite`'s own binned TT data
+   from `chi2_of_spectrum`, which `nofit_figure_numbers.npz` carries verbatim; (c) on `$2000$`
+   Cholesky draws of the full `$179\times179$` covariance.  *** No refit, no new statistic, no new
+   spectrum -- the placement was a re-read and it cost one. *** **
+
+
+
+========================================================================================================
+  A.  ⓵ THE STATISTIC SURVIVES THE LIKELIHOOD'S BINNING -- THE RISK THAT IS NOT THE PROBLEM
+========================================================================================================
+      ⌗ `X_data` is binned C_l and NOT D_l -- `bin_center_and_fac`'s own docstring records
+        that peak-finding on it directly loses the first peak entirely.  Every spectrum here
+        is converted with that same `fac`, data and models alike.
+
+      spectrum       fine phi    bin phi     shift |   fine alt    bin alt     shift
+      cr_base        -0.20124   -0.20257  -0.00133 |   +0.01511   +0.01486  -0.00025
+      lcdm_base      -0.20124   -0.20258  -0.00135 |   +0.01556   +0.01530  -0.00026
+      cr_nodrive     -0.07535   -0.07592  -0.00056 |   -0.00918   -0.00905  +0.00012
+      cr_rb0.5       -0.20935   -0.21144  -0.00208 |   +0.00444   +0.00421  -0.00023
+      ⇒ |shift| on the offset 0.00056-0.00208, on the alternation 0.00012-0.00026
+    OK    Ⓐ①  ** THE BINNING COSTS A SMALL BIAS AND NOT THE STATISTIC: the offset moves by under `$0.0025$` and the alternation by under `$0.0005$` on every model tried, consistently in sign. **  *So the `$179$` binned points ARE enough to carry it, and whatever goes wrong below is not the resolution*
+
+========================================================================================================
+  B.  ⓶ ⛔ BUT THE PEAK LOCATOR READS 21 MAXIMA ON THE OBSERVED SPECTRUM AND 5 ON THE MODEL
+========================================================================================================
+      observed spectrum :  21 local maxima, 10 kept by the 60-gap rule
+         all at ell = [239, 275, 464, 527, 563, 582, 617, 635, 662, 815, 842, 1013, 1130, 1157, 1184, 1220, 1292, 1337, 1400, 1418, 1436]
+         the five the statistic takes: [239, 464, 527, 617, 815]
+      CR model, SAME bins:   5 local maxima, kept [257, 554, 824, 1139, 1436]
+      ⇒ the statistic on the data returns phi -0.42492, alt +1.06648, from only 4 concave peaks of 5
+    OK    Ⓑ①  ** THE FIVE MAXIMA THE STATISTIC REFINES ON THE DATA ARE NOT THE ACOUSTIC PEAKS. **  *Three of them -- `$464$`, `$527$`, `$617$` -- lie inside the second acoustic peak's own neighbourhood, which the model puts at `$554$`.  The locator keeps the FIRST five separated by `$60$`, and noise supplies more than five before the comb is exhausted*
+    OK    Ⓑ②  and one of the five is not even concave, so the statistic falls back on fewer peaks than it requires.  *An alternation over four peaks with one of them spurious is not a measurement of the odd-even alternation of anything*
+
+========================================================================================================
+  C.  ⓷ ⛔ AND THE FULL-COVARIANCE ERROR BAR CONFIRMS IT RATHER THAN RESCUING IT
+========================================================================================================
+      the covariance is `plik_lite`'s own TT, 179x179 on these bins --
+      the same object cc66.153's whitening used, not the npz's diagonal `sigma`
+      2000 draws: 35 usable, 1965 failed to yield five finite peaks (98.2 per cent)
+      the survivors: phi -1.24694 +- 1.24850    alt -0.26575 +- 0.97522
+      and their correlation is -0.955
+      against the candidates on the same binned footing: driving 0.12666, loading 0.01811
+      ⇒ the error on the offset is 10x the driving's whole signal and 69x the loading's
+    OK    Ⓒ①  ** THE PLACEMENT IS UNRELIABLE AND NOT MERELY IMPRECISE, WHICH IS THE CASE `r7211` SAID TO STOP ON. **  *More than nine in ten covariance draws produce no five-peak series at all. A statistic that fails on most realisations of its own data is not returning a wide interval; it is not returning a measurement*
+    OK    Ⓒ②  and the survivors do not span the plane: the two components come back correlated at better than `$0.9$` in magnitude, collapsed onto ONE direction.  *The plane's whole value in `cc66.156` was that the offset and the alternation are independent components; on the data they are not, so even a wide interval would not be an interval IN THIS PLANE*
+    OK    Ⓒ③  and the error on the offset exceeds the LARGER candidate's entire signal by more than a factor of five.  *So the honest statement is not `the uncertainty covers both candidates` -- it is that the quantity measured is not the one the statistic reads*
+
+========================================================================================================
+  D.  WHAT THIS DOES AND DOES NOT TOUCH
+========================================================================================================
+  ⛔ NO POINT IS PLACED AND NO CARRIER IS NAMED FOR THE OBSERVED DRIFT.
+  ✔ AND cc66.157 AND cc66.158 ARE UNTOUCHED.  Both compare MODEL to MODEL on noiseless
+     238-point spectra, which is the regime `PART A` shows the statistic sound in: the
+     5.39x separation, the opposite signs on the common offset, and the omega_b opposition
+     all stand.  What fails is one step, pointing it at data -- and it fails for a reason
+     specific to data: noise creates maxima, and a maximum-finder cannot tell them from
+     acoustic peaks.
+  ⌈ A REPAIR WOULD HAVE TO FIT A PARAMETRIC COMB TO THE WHOLE BINNED RESIDUAL UNDER THE
+     COVARIANCE, rather than locate maxima and refine them.  That is a DIFFERENT statistic.
+     `r7211` ordered the one that exists pointed at the data; it did not order a new one,
+     and costing one is 66's call rather than this seat's.
+    OK    Ⓓ①  the model-to-model regime is sound where the data regime is not, and the two are separated by one property -- whether the spectrum carries noise at the scale of its own curvature.  *That is why this receipt withdraws nothing from `cc66.157`/`cc66.158`*
+
+========================================================================================================
+  ✔ 8 of 8 checks pass -- and what they establish is a NEGATIVE: the placement r7211
+    ordered cannot be made with the statistic that exists, and the reason is named.
+========================================================================================================

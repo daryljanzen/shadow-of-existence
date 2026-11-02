@@ -1,0 +1,146 @@
+P15 receipt -- `r7201`'s order, answered in all three parts, with one of them answered AGAINST the
+pre-registered expectation and one of them a correction to this seat's own `r7216`.
+
+*** ⛭⛭⛭ ⓵ THE SIGN HAS NO PAIR-INDEPENDENT ANSWER, WHICH IS THE ANSWER.  A DRIVE-CLOCK ERROR READ ON
+    THE SEAM-BOUNDED PAIR MOVES THE COMMON OFFSET `$+0.300$` PER UNIT DISTORTION; READ ON TWO OTHER
+    PAIRS OF THE SAME OBJECT IT MOVES IT `$-0.268$` AND `$-0.059$`.  ***  *The sign flips with the
+pair, so `which clock the driving is read on` does not by itself fix a direction --- it fixes one only
+together with WHICH STRETCHES the two clocks are compared on.*
+
+** ⛔ ⓶ AND IT IS NOT A THIRD DIRECTION ON `cc66`'s PLANE.  The three pairs land at
+`$\lvert\Delta\mathrm{alt}/\Delta\varphi\rvert = 0.086,\ 0.158,\ 0.173$` against the control
+arm's driving `$0.196$` and baryon `$0.388$` --- INSIDE the same narrow cone, with the seam-bounded
+pair carrying the DRIVING's own sign pattern and the other two the BARYON's. **  ⇒ *The de-tilted peak
+set does not become a three-way discriminator: on this plane a clock error is not separable from the
+driving, and depending on which pair is read it imitates one measured direction or the other.*  ⌗ *So
+the pre-registered branch `the clock lands nearly along the varphi axis` is REFUTED by its own run.*
+
+** ✔ ⓷ AND THE NEGATIVE BRANCH DOES NOT FIRE: IT IS A RUNNING PHASE AT FIXED SPACING, EXACTLY THE
+SHAPE THE ORDER ASKED ABOUT. **  *The spacing CANNOT move --- `$r_s=\int c_s\,d\eta$` is an integral
+on the oscillator's own clock, which a drive-clock error does not touch, so `$\ell_A$` is identically
+the same number in every column.*  ⇒ ** The per-mode phase shift `$\Delta\delta(k)$` runs from
+`$-0.025$` at `$\ell=200$` to `$-0.224$` at `$\ell=1400$`, rising fast below `$\ell\simeq500$` and
+flat above -- so it is neither a constant offset nor linear in `$\ell$`. **  *And the two readings
+agree: `$\Delta\varphi$` from the peak comb matches `$-\langle\Delta\delta\rangle/\pi$` from the
+oscillator to `10` per cent on both pairs tested, which is the cross-check that makes the number a
+measurement rather than an artefact of either estimator.*
+
+⛭⛭ ** AND A CORRECTION TO `r7216`, WHICH IS THIS SEAT'S OWN AND IS THE REASON THE MAGNITUDE QUESTION
+   HAD TO BE RE-ASKED. **  *`r7216` Ⓒ② reported the two clocks as disagreeing by `15.2` per cent on
+the seam-bounded pair.*  ⛔ ** That compared `$D_{\rm front}/D_{\rm back}=2.3042$` against
+`$U_{\rm back}/U_{\rm front}=2$` --- the same pair ordered OPPOSITE WAYS.  Read the same way round,
+the parameter clock gives `$2.0000$` and the conformal clock `$0.4340$`: a factor of `$4.6083$`, `78.3`
+per cent, and the two clocks DISAGREE ABOUT WHICH STRETCH IS LONGER. **  ⌗ *`r7216`'s structural claim
+survives untouched -- whichever clock a reader supplies, the other is wrong about these pieces -- and
+only its MAGNITUDE is withdrawn.  At that true amplitude the perturbation is not perturbative: the
+peak comb breaks to three peaks, which is `cc66.156`'s own stated failure mode for this statistic, so
+no magnitude is claimed there and the direction is reported from linear response instead.*
+
+========================================================================================================
+  A.  THE TWO CLOCKS AND THE THREE STRETCH PAIRS, DERIVED -- AND r7216's MAGNITUDE WITHDRAWN
+========================================================================================================
+      S1 = back seam -> turnaround      u    1.3169578969248   conformal 1.0311227880975
+      S2 = branch point -> front seam   u   0.65847894846241   conformal 2.3758705509413
+      S1/S2 on the parameter clock = 2.0
+      S1/S2 on the conformal clock = 0.4339978824557365
+      S2/S1 on the conformal clock = 2.304158707737451   <- the number r7216 printed
+    OK    Ⓐ① the two seam-bounded pieces and both seam parameters reproduce `r7216` exactly, so the correction below is about the COMPARISON and not about any quantity: `$2:1$` on the seams' own parameter and `$1.0311:2.3759$` in conformal length
+      SAME-ORDER disagreement 78.3001 per cent, a factor of 4.608317415474902
+      what r7216 printed     15.2079 per cent
+    OK    Ⓐ② ⛔ ⛭⛭ `r7216`'s `15.2 per cent` COMPARED TWO OPPOSITELY ORDERED RATIOS and is withdrawn as a magnitude.  Read the same way round the clocks differ by a FACTOR of `$4.6083$` --- `78.3` per cent --- and they disagree about WHICH STRETCH IS LONGER: the parameter clock makes `S1` twice `S2`, the conformal clock makes it `$0.434$` of it.  ***This seat's own revision, corrected here rather than left for the gate to find***
+    OK    Ⓐ③ and it is not an exact inversion either, which is why neither reading is the other's reciprocal and the ambiguity cannot be repaired by taking a reciprocal: the product of the two same-order ratios is `$0.868$`, not `$1$`
+    OK    Ⓐ④ ✔ and `r7216`'s STRUCTURAL claim is left standing, which is the half that was right: the seams divide neither horn simply, so there is no reading on which `the $2:1$ leg` names one clock --- that sentence is untouched and only the number attached to it is
+
+      A  the seam-bounded pair, back stretch against front stretch
+           split  parameter 0.666667  conformal 0.302649   ratios 2.000000 vs 0.433998   factor 4.6083
+      B  the expansion stretch split at its own conformal midpoint
+           split  parameter 0.526324  conformal 0.811333   ratios 1.111150 vs 4.300334   factor 3.8702
+      C  the collapse stretch split at its own conformal midpoint
+           split  parameter 0.442839  conformal 0.500000   ratios 0.794812 vs 1.000000   factor 1.2582
+    OK    Ⓐ⑤ and the THREE pairs taken from the SAME object disagree about the size of the clock disagreement --- factors `$4.61$`, `$3.87$` and `$1.26$` --- which is `r7201`'s own travelling limit arriving before any physics: there is no one number that is `the` disagreement between these two clocks
+
+========================================================================================================
+  B.  THE OSCILLATOR, AND THE DIFFUSION SCALE DERIVED FROM THE BARYON FRACTION RATHER THAN FIXED
+========================================================================================================
+      a_* = 1/1091.4   R_* = 0.6047   r_s = 0.03319265   l_A = 325.708   l_D = 1400.0
+    OK    Ⓑ① the background is this oscillator's own and is reported rather than tuned: recombination from the standard fitting form, the loading scaled from the baryon fraction, and the diffusion scale from an integral over the ionised epoch with ONE calibration of the Thomson rate fixed at the fiducial and then frozen for every other configuration
+
+========================================================================================================
+  C.  THE POSITIVE CONTROL, WHICH HAD TO PASS BEFORE ANY CLOCK NUMBER COULD BE REPORTED
+========================================================================================================
+      drive ON   phi -0.07394   alt +0.01373   peaks [ 322.9  650.8  939.5 1266.5 1585.6]
+      drive OFF  phi +0.00922   alt -0.00616   peaks [ 356.7  661.5  976.1 1293.7 1612.5]
+      => Dphi +0.08315   Dalt -0.01990   ratio 0.2393
+         the control arm reads +0.12600 / -0.02470, ratio 0.1960
+    OK    Ⓒ① ⛭⛭ THE DRIVING CONTROL PASSES ON EVERYTHING IT WAS ASKED FOR, which is what licenses the rest: switching this oscillator's drive off moves the common offset POSITIVE and the alternation NEGATIVE, the same pair of signs the control arm reads, with the ratio within a quarter of the measured `$0.196$` and both magnitudes within a factor of `$1.5$` --- on an oscillator that was never shown the measurement
+      baryon direction  dphi/dln +0.02599   dalt/dln +0.01421   ratio 0.5469
+         the control arm reads -0.02780 / +0.01080, ratio 0.3880
+    OK    Ⓒ② ⛔⛭ AND THE BARYON HALF OF THE CONTROL FAILS ON THE COMMON OFFSET, WHICH IS REPORTED AS PRE-REGISTERED RATHER THAN ABSORBED.  The alternation's sign and magnitude come out right; the common offset comes out POSITIVE where the arm reads it negative.  ***What that costs is stated: this oscillator has no finite last-scattering width, no `$j_\ell$` projection and one radiation fluid, all of which enter the common offset, so the clock result below is licensed by the DRIVING control -- the direction it is itself a reparametrization of -- and the baryon direction is taken from the arm's measurement and NEVER from this toy***
+
+========================================================================================================
+  D.  THE LINEAR-RESPONSE DIRECTION OF A DRIVE-CLOCK ERROR, ON THREE PAIRS OF THE SAME OBJECT
+========================================================================================================
+      pair   lam       Dphi       Dalt   Dphi/lam   Dalt/lam  |ratio|  npk
+      A     0.05   +0.01501   -0.00130   +0.30023   -0.02600   0.0866    5
+      A     0.10   +0.03021   -0.00258   +0.30214   -0.02576   0.0853    5
+      A     0.20   +0.05971   -0.00670   +0.29853   -0.03350   0.1122    5
+      B     0.05   -0.01341   +0.00212   -0.26819   +0.04243   0.1582    5
+      B     0.10   -0.02650   +0.00437   -0.26499   +0.04372   0.1650    5
+      B     0.20   -0.05237   +0.00812   -0.26186   +0.04060   0.1551    5
+      C     0.05   -0.00296   +0.00050   -0.05918   +0.00995   0.1681    5
+      C     0.10   -0.00594   +0.00104   -0.05944   +0.01042   0.1753    5
+      C     0.20   -0.01208   +0.00184   -0.06039   +0.00919   0.1522    5
+    OK    Ⓓ① the OFFSET's response is linear in the distortion, which is what makes a DIRECTION well defined at all: `$\Delta\varphi/\lambda$` is the same number at `$\lambda=0.05$`, `$0.10$` and `$0.20$` to better than `5` per cent on all three pairs
+      A:  Dphi/lam +0.30023   Dalt/lam -0.02600   |ratio| 0.0866
+      B:  Dphi/lam -0.26819   Dalt/lam +0.04243   |ratio| 0.1582
+      C:  Dphi/lam -0.05918   Dalt/lam +0.00995   |ratio| 0.1681
+    OK    Ⓓ② ⛭⛭⛭ ⓵ THE SIGN IS PAIR-DEPENDENT, SO THE ORDER'S FIRST QUESTION HAS NO PAIR-INDEPENDENT ANSWER.  The seam-bounded pair moves the common offset `$+0.300$` per unit distortion; the other two pairs of the SAME object move it `$-0.268$` and `$-0.059$`.  ***`which clock the driving is read on` fixes a direction only together with which stretches the clocks are compared on, and that is the finding `r7201`'s travelling limit asked for***
+      pair C, the two directions of the same substitution: (-0.05711, +0.01088) and (+0.05789, -0.00983)
+    OK    Ⓓ③ ✔ and the pre-registered sign AMBIGUITY is confirmed rather than discovered: substituting either clock for the other gives the two opposite directions of one LINE through the origin, with the magnitudes agreeing to better than `10` per cent --- so a clock error is an axis on this plane and not a ray, exactly as filed before the run
+      |Dalt/Dphi|:  clock A 0.0866   clock B 0.1582   clock C 0.1681   against driving 0.1960 (arm) / 0.2393 (here)   baryon 0.3880 (arm)
+    OK    Ⓓ④ ⛔ ⛭⛭⛭ ⓶ AND IT IS NOT A THIRD DIRECTION: THE PEAK SET DOES NOT BECOME A THREE-WAY DISCRIMINATOR.  All three clock readings fall INSIDE the cone the two measured directions already span --- `$0.087$`, `$0.158$`, `$0.168$` against the driving's `$0.196$` and the baryon's `$0.388$` --- and the seam-bounded pair carries the DRIVING's own sign pair while the other two carry the BARYON's.  ***So on this plane a clock error is not separable from the driving, and which measured direction it imitates depends on which pair is read***
+      and pair A's ratio DRIFTS with the distortion by 1.30x over a FOURFOLD change
+      in it, where B's holds to 2 per cent and C's to 9 per cent -- so A's alternation response is
+      second order and the other two pairs' are first order: the same pair-dependence again.
+    OK    Ⓓ⑤ ⛔ AND THE PRE-REGISTERED BRANCH SURVIVES ON ONE PAIR AND IS REFUTED ON TWO, which is reported as a split rather than as a win: `r7218` filed `the alternation moves only at second order, so the ratio sits MUCH BELOW both measured ones`.  On the seam-bounded pair that is right --- `$0.087$` is under half the driving's `$0.196$`, and it is the only pair whose ratio drifts with the distortion, which is what second order looks like.  ***On the other two it is wrong: `$0.158$` and `$0.168$` sit within a fifth of the driving's and do not drift, so the alternation moves at FIRST order there and the filed reason does not hold in general***
+      at the lap's OWN amplitude on the seam-bounded pair: Dphi +1.5364, peaks found 3 of 5
+    OK    Ⓓ⑥ ⚠ and at the amplitude the lap actually implies, the perturbation is NOT perturbative and no magnitude is claimed there: the comb breaks to three peaks and the offset moves by more than a whole spacing, which is `cc66.156`'s OWN stated failure mode for this statistic --- the direction above is therefore reported from linear response and the full-amplitude number is refused rather than printed
+
+========================================================================================================
+  E.  WHAT SHAPE IT IS -- r7201 ⓷, ANSWERED ON THE PHASE ITSELF AND NOT ON THE PEAK COMB
+========================================================================================================
+      r_s = 0.0331926514 and l_A = 325.7082 are the SAME NUMBER in every row below:
+      the sound horizon is an integral on the oscillator's own clock, which a drive-clock
+      error does not touch, so the SPACING cannot move and whatever moves is a PHASE.
+
+      case                 200     350     500     650     800     950    1100    1250    1400
+      drive OFF        -3.1975 -3.1380 -3.1670 -3.1384 -3.1575 -3.1406 -3.1516 -3.1430 -3.1474
+      true clock       +0.0183 +0.4329 +0.4683 +0.3748 +0.3422 +0.3247 +0.2909 +0.2820 +0.2510
+    OK    Ⓔ① ⛔ THE MUST-COME-OUT-FLAT CONTROL ON THE PHASE ESTIMATOR: with the drive switched OFF the per-mode phase is CONSTANT across the whole range --- `$-3.14$` to within `$0.03$` over `$200\le\ell\le1400$` --- so this estimator reports a constant offset AS a constant, and a running it reports is not an artefact of the estimator
+      clock A lam=0.20 -0.0247 -0.1890 -0.2034 -0.2106 -0.1989 -0.2040 -0.2155 -0.2194 -0.2239
+      clock B lam=0.20 +0.0030 +0.1337 +0.1642 +0.1779 +0.1812 +0.1832 +0.1960 +0.2052 +0.2141
+      clock C lam=1.00 -0.0072 +0.1180 +0.1695 +0.2013 +0.2174 +0.2153 +0.2248 +0.2353 +0.2472
+
+      rise over 200 -> 500: A 0.1786  B 0.1612  C 0.1767   against the drive-off control's own change over the same two modes 0.0305
+      and the fraction of the whole 200 -> 1400 run spent below 500: A 0.90  B 0.76  C 0.69
+    OK    Ⓔ② ⛭⛭⛭ ⓷ SO THE NEGATIVE BRANCH DOES NOT FIRE: IT IS A PHASE THAT RUNS WITH `$\ell$` AT FIXED SPACING, which is exactly the shape the order named.  On all three pairs the induced shift RISES by five times or more the drive-off control's own change over the same two modes, so it is not a constant offset; and it is not linear in `$\ell$` either --- between two thirds and nine tenths of the whole `$200\to1400$` run is spent below `$\ell\simeq500$`, with the rest of the decade contributing the remainder.  ***So the candidate carrier is NOT removed***
+      A: -<Dd>/pi = +0.06476 from the oscillator   against Dphi +0.06005 from the peak comb
+      C: -<Dd>/pi = -0.06340 from the oscillator   against Dphi -0.05918 from the peak comb
+    OK    Ⓔ③ ⛭⛭ AND THE TWO ESTIMATORS AGREE, which is what turns this from one pipeline's output into a measurement: the offset read off the peak comb matches `$-\langle\Delta\delta\rangle/\pi$` read off the oscillator's own phase to better than `15` per cent on both pairs tested, with the SIGNS agreeing --- two independent reductions of the same perturbation
+
+========================================================================================================
+  F.  WHAT THIS DOES NOT CLAIM
+========================================================================================================
+      ⛔ No banked spectrum was read, no grid was touched, nothing was fitted to the arm and
+         no carrier is named.  The deliverable is a direction on a statistic, filed before
+         the ten approved runs exist, so a disagreement with the measurement is a result.
+      ⚠ The baryon half of the control fails on the common offset, so the comparison against
+         the baryon direction uses the ARM's measured numbers and not this oscillator's.
+      ⚠ Three pairs of one object are measured, not every pair, and the three disagree in
+         sign -- so `the` clock direction is not established, only that it is pair-dependent.
+      ⚠ Five peaks make the alternation coarse here exactly as the arm's own receipt says of
+         itself, and the window is this oscillator's own because its l_A is not the arm's.
+
+========================================================================================================
+  ✔ every gate passed
+========================================================================================================

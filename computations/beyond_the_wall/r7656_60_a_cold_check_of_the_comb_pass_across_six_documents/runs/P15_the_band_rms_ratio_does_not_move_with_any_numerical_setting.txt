@@ -1,0 +1,7 @@
+P15_the_band_rms_ratio_does_not_move_with_any_numerical_setting -- PASS
+  read from   : the table banked from the 2026-10-01 10:53 run (the spectra are not in the repository)
+  worst step  : 0.008% against the 0.6% floor -- a factor of 73 inside it
+  ratios      : fixed = 1.0587 flat; sweepown = 1.0659-1.0660  (r6919 base points reproduced)
+  converged   : 1 of 12 readings -- sweepown/NLOSW only
+                7 read `not turned over`, 4 read `two points only`
+  the axes    : FIVE moved it on the arm, SIX on the control -- NK inert on the arm by construction

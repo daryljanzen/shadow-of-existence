@@ -1,0 +1,122 @@
+
+⌛ HISTORICAL (r7637+70, 69's ruling): THIS RECEIPT READS A SUPERSEDED INSTRUMENT STATE, DELIBERATELY.
+Its CR spectra are the c54-era runs: the arm at the instrument's old built-in point (H0 73, Omega_m 0.3066) with
+the onset solved to ell_A 301.6, at KFAC=1 and LEAFREC=0.  The corpus has superseded that state twice -- the pin,
+then the leaf rate -- and the arm of record is LEAFREC=1 at H0 68.5707, Omega_m 0.291246 (r7633).  The same forms
+on the arm of record are banked as `<stem>_leafrec1.npz` (r7635), and their figures are in
+`computations/beyond_the_wall/r7635_70_leafrec1_bank/DRYRUN.md`; they are NOT what this receipt pins.  What it
+pins is a record of that instrument, and a sentence of P15 may cite it only for that.  The guard below fails
+if a CR file it reads is not the LEAFREC=0 namesake.
+
+RECEIPT -- P15: ** THE CONTROL'S REMAINING 17% IS NAMED, AND NAMING IT REQUIRED CHANGING THE
+MEASUREMENT.  MEASURED THROUGH THE DATA THE FLOOR IS F2 = 21-31 DEPENDING ON WHICH LambdaCDM IS
+CALLED TRUE; MEASURED AS A DISTANCE BETWEEN THE TWO MODELS -- WHICH IS WHAT IT ACTUALLY IS -- IT IS
+0.11 chi^2 PER BIN, AND THE REFERENCE'S OWN NEUTRINO CONTENT MOVES IT BY A FACTOR OF THREE. **
+
+Built r2441+c54.188, front #2, lead `L-503`.
+
+===================================================================================================
+** WHY: c54.186 SAID "1.18 IS NOT A FIT" AND LEFT THE REMAINDER UNNAMED.  THIS NAMES IT. **
+===================================================================================================
+
+c54.186 took the control to chi^2/dof = 1.18 against a reference LambdaCDM's 1.01 on the same 185
+bins and said, against itself, that the 17% between them had not been named.  ** It is named here,
+and the naming turns on a distinction the front had not been making: F2 as `L-147` defines it --
+chi^2(arm) - chi^2(CAMB) -- is a difference of two numbers each computed AGAINST THE SKY, so it
+mixes how far the two models are apart with where each happens to sit relative to one noise
+realisation. **  *The thing the front actually wants to know is how far apart the two models are.*
+
+  PART 1  ** THE INSTRUMENT REPRODUCES A REFERENCE LambdaCDM TO BETTER THAN 1.6% EVERYWHERE, AND
+          THE DIFFERENCE IS SMOOTH RATHER THAN ACOUSTIC. **  Amplitude-matched, the fractional
+          departure runs -1.1% at ell ~ 200 through zero near ell ~ 600 to +0.7% at ell ~ 1400,
+          with an in-band rms of 0.1-0.7%.  *A slow undulation of order one per cent, not a
+          mis-phased oscillation.*
+  PART 2  ** AND F2 IS NOT A CLEAN MEASURE OF IT, WHICH IS SHOWN BY MOVING THE REFERENCE. **  Three
+          defensible reference LambdaCDMs give F2 = +31.2, +21.5 and +27.2.  ** The spread across
+          reference choices is comparable to the value being reported. **
+  PART 3  ** SO THE FLOOR IS MEASURED WITHOUT THE DATA: the chi^2 distance between the two models,
+          in the comparison's own metric. **  chi2_sep = (A_a m_a - A_c m_c)^T F (A_a m_a - A_c m_c)
+          over the same bins.  ** Against the reference the front actually uses it is 21.3 over 185
+          bins -- 0.11 chi^2 per bin, about a third of a standard deviation per bin. **
+  PART 4  ** AND THE ORDERING REVERSES BETWEEN THE TWO MEASURES, WHICH IS THE TRAP. **  The
+          massless-neutrino reference gives the SMALLEST F2 (21.5) and the LARGEST model separation
+          (62.7).  ** A reference chosen to make the instrument look good through the data is the
+          one it is furthest from as a model. **  *Reported because someone will otherwise choose
+          it.*
+
+** WHAT THIS DOES TO c54.178's LIST, WHICH IS NOW COMPLETE. **  That revision named four things
+remaining: reionisation, the neutrino mass, a lensed spectrum, and the wavenumber range.
+Reionisation was struck at c54.181, lensing built at c54.183, the wavenumber range closed at
+c54.186.  ** The neutrino mass is the one item never addressed, and it is worth about ten of the
+thirty-one: the reference carries one massive species at 0.06 eV and this instrument carries none.
+So the last item on that list is now MEASURED rather than outstanding. **
+
+** AND WHAT IT DOES TO `L-147`, WHICH IS NOTHING EXCEPT MAKE IT SAFER. **  F3 = 51848.  ** The floor
+is 21-63 across every reference choice defensible here, so F4's margin is three orders of magnitude
+whichever is taken. **  *A verdict that does not depend on the choice is the only kind this front
+should report.*
+
+** WHAT IS NOT CLAIMED. **  0.11 chi^2 per bin is not zero and this file does not say the instrument
+is exact.  ** It says the residual is at the level where the REFERENCE's own parameter choices
+matter as much as the instrument's error, and that below that level this statistic cannot arbitrate
+between two LambdaCDM implementations at all. **
+
+
+==============================================================================
+PART 1 — THE INSTRUMENT AGAINST A REFERENCE LambdaCDM, BY BAND
+==============================================================================
+       ell band      mean   in-band rms   max abs
+        100-300    -1.09%         0.10%     1.29%
+        300-500    -0.79%         0.10%     0.97%
+        500-700    -0.41%         0.36%     0.74%
+        700-900     0.34%         0.24%     0.62%
+       900-1100     0.11%         0.31%     0.52%
+      1100-1300     0.08%         0.20%     0.47%
+      1300-1500     0.70%         0.28%     1.03%
+      1500-1700    -0.13%         0.35%     0.58%
+      1700-1996    -0.72%         0.72%     1.52%
+
+  ** NOWHERE MORE THAN 1.52%, AND THE DEPARTURE IS A SLOW UNDULATION RATHER THAN A MIS-PHASED OSCILLATION. **
+     *The in-band rms is comparable to the band means, so the structure is smooth in ell.*
+
+==============================================================================
+PART 2/3/4 — F2 AGAINST THE DATA, AND THE MODEL SEPARATION THAT DOES NOT USE IT
+==============================================================================
+  F2       = chi^2(arm) - chi^2(CAMB), both against the sky -- `L-147`'s own definition
+  chi2_sep = (A_a m_a - A_c m_c)^T F (A_a m_a - A_c m_c) -- a distance between two MODELS
+
+                           reference LambdaCDM       F2  chi2_sep  per bin
+  as the front uses it (67.36, one 0.06 eV nu)    +31.2      21.3     0.11
+     massless neutrinos, as the instrument has    +21.5      62.7     0.34
+      + the instrument's own H0, Om, ombh2, ns    +27.2      31.7     0.17
+
+  ** AGAINST THE REFERENCE THE FRONT ACTUALLY USES, THE TWO MODELS ARE 21.3 APART OVER 185 BINS
+     — 0.11 chi^2 PER BIN, ABOUT A THIRD OF A STANDARD DEVIATION PER BIN. **
+  ** AND THE NEUTRINO CONTENT MOVES IT BY A FACTOR OF 2.9: the reference carries one massive
+     species at 0.06 eV and this instrument carries none, which is worth about 10 of the 31. **
+
+  ⚠ ***AND THE ORDERING REVERSES: the massless reference gives the SMALLEST F2 (+21.5) and the
+     LARGEST separation (62.7). A reference chosen to flatter the instrument through the data
+     is the one it is furthest from as a model.***
+
+==============================================================================
+AND WHAT IT DOES TO `L-147`, WHICH IS NOTHING EXCEPT MAKE IT SAFER
+==============================================================================
+  F3 = chi^2(CR arm) - chi^2(LambdaCDM arm) = 51848
+  the floor, across every reference defensible here: 21 – 63
+
+  ** SO F4's MARGIN IS 827x AT ITS WORST AND 2438x AT ITS BEST — THREE ORDERS OF MAGNITUDE
+     WHICHEVER REFERENCE IS TAKEN. **
+     *A verdict that does not depend on the choice is the only kind this front should report.*
+
+  ⛔ ***F5 UNSOFTENED: a MEASUREMENT DISCREPANCY is not a framework verdict.  `PO-7` is
+     protected and the conversion runs by `F5`'s stated procedure.***
+
+==============================================================================
+ALL CHECKS PASS — the instrument reproduces a reference LambdaCDM to better than 1.6% with a
+smooth departure; F2 spans 21-31 across defensible references, a spread comparable to itself;
+the model separation is 0.11 chi^2 per bin; the neutrino content moves it threefold and is the
+last unaddressed item on c54.178's list, worth about ten of the thirty-one; and F4's margin is
+three orders of magnitude whichever reference is taken.
+==============================================================================
+GATE c54.188 (r2441), `L-503`: the instrument tracks a reference LambdaCDM to 1.52%; F2 spans +21 to +31 across three references while the model separation spans 21–63 (0.11 per bin at the reference used), and the two orderings REVERSE; F3 = 51848, so F4's margin is 827x at worst — pinned against `L-147` F2/F3/F4/F5 and c54.178's remaining-items list, whose last entry (the neutrino mass) is worth 10 of it.

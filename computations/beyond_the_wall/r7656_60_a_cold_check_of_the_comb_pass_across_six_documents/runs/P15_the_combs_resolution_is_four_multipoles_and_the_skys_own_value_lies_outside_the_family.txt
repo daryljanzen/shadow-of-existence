@@ -1,0 +1,284 @@
+
+** THE WHOLE SCAN IS ON THE ARM OF RECORD AS OF `r7643+cc66.63`; THE TWO NO-OP LEGS ARE NOT. **
+`r6929_scan_cr`, `r6929_geometry`, `r6925_visleaf_cr`, `cc66_r185_verify_cr` and `r6941_fine_cr` all
+move to their `_leafrec1` siblings, so the family, its geometry, its endpoint identity, its base
+identity and the locator's validation substrate move together.
+ARM KEYS READ: `Dl__zero_cr` and `Dl__unset_cr` out of `r6929_noop`, `Dl__noop_cr` out of
+`r6925_noop`.  Neither bank has an arm-of-record key.  ⇒ *Unlike `cc66.57`, `.61` and `.62`, the
+blocked legs do NOT straddle the arms: ⓵ is internal to one no-op bank and ⓶ pairs the two against
+each other, so both stay wholly on the namesake arm and neither becomes a cross-arm comparison.  What
+they certify is the NAMESAKE family's base; ⓸ and ⓹ certify the base of the family read here, on the
+arm of record, bit-for-bit and to the `KSLICE` sum's rounding.*  And the control side of every band
+ratio is measured immaterial rather than assumed: the injection control key read here is bit-identical
+between the control's two recombination treatments, while a key in the same file that swaps the arm's
+visibility in does differ.
+
+⛭⛭⛭ ** THE ONE CLAIM THAT WAS A LAW AND IS NOT: `THE CONTRAST'S ERROR GROWS WITH THE PARAMETER`. **
+That error is set by the PHASE OFFSET between the arm's comb and the control's over the band range,
+and the parameter enters only through it -- so the error is V-shaped in $f$, and which side of the
+vertex the family sits on is a property of the ARM.  Measured directly here: the mean signed offset in
+$q$ is a straight line in $f$ crossing ZERO at $f = +0.632$, INSIDE the family, and the band residual,
+the slope's standard error and the injection's residual all bottom out at the same interior point and
+rise again.  On the namesake arm that line has the same slope and a different intercept, putting its
+zero at $f \approx -0.03$, just outside, with the whole family on the rising side -- which is the
+five-fold growth the old gate read as a law.  `cc66.60`'s offset is that intercept difference.
+
+⛔ ** AND THE TITLE'S CLAUSE IS THE NAMESAKE ARM'S MARGIN, NOT THIS ONE'S. **  The sky still sits
+OUTSIDE the family and still on the inadmissible side, at $f = -0.125$ -- but $0.53$ multipoles out,
+against $1.28$ on the namesake, which is LESS than the sky's own one-to-two-multipole locating width.
+*** So `lies outside the family` is no longer a resolved exclusion; what is resolved is the DIRECTION
+and the absence of any interior fit. ***  ⚠ *The old gate `f_sky < -0.1` PASSED on this arm, by
+$0.025$ -- a tolerance set on one arm clearing on another by a twentieth of the span, which is worse
+than failing because nothing would have reported it.*
+P15 sec:refit-bound -- ** THE COMB'S RESOLUTION, MEASURED BEFORE IT IS ALLOWED TO DECIDE, AND THE
+SKY'S OWN VALUE LIES OUTSIDE THE ADMISSIBLE FAMILY. **
+
+** WHY IT EXISTS. **  `r6925+cc66.43` promoted the comb to arbiter between the two admissible clocks
+for the optical depth: it is the only one of the three readings with an external referent, and it
+supported the assignment the instrument has.  ⚠ *** But the corpus had never measured how sharply it
+discriminates, and a reading promoted to arbiter needs its resolution stated before it decides
+anything. ***  `r6929`'s order: let the weighting on $\tau$ run from the stacking clock to the leaf's
+through a ONE-PARAMETER FAMILY -- `VISLEAF` as a fraction rather than a flag -- and report, against
+that parameter, $\ell_1/\ell_A$ against the sky's $0.7312$, the retained fraction and its $q$-slope,
+and $\mathrm dr_s/\mathrm d\chi$.
+
+⛭⛭ ** EVERY READING IS LINEAR IN THE PARAMETER, AND THE COMB'S WHOLE RANGE IS FOUR MULTIPOLES. **
+$\ell_1 = 222.02 + 4.26 f$ to within three hundredths of a multipole of a straight line, so the
+family's entire span is $4.26$ multipoles -- $0.01407$ in $\ell_1/\ell_A$, which is $4.3$ times the
+sky's own one-multipole locating width and $2.1$ times a two-multipole one.  *** The comb therefore
+pins the assignment to $\Delta f \approx 0.23$: it separates the endpoints, and it does not come
+close to fixing the clock. ***
+
+⛔ ** AND THE ORDER'S FIRST BRANCH IS HALF RIGHT, WHICH IS THE PART WORTH HAVING. **  The contrast's
+LEVEL is shallow as the order guessed -- $2.23\sigma$ across the family against the comb's $4.26$,
+about HALF its discriminating power -- but its $q$-SLOPE is not: $+0.01815 \to +0.00259$ is
+$5.14\sigma$ of its own fit error, and it EXCEEDS the comb's.  *Both significances are taken against
+the family's own ALIGNED point rather than against $f=0$: on the namesake arm $f=0$ is where the two
+combs happen to be in phase, so the old denominator was that arm's best case and is not this arm's
+(`cc66.63`).*  *** What separates them is not steepness but that the contrast's error is set by the
+two combs' PHASE OFFSET and the comb's is not: *** the band residual runs $0.0425 \to 0.0095 \to
+0.0154$ and the slope's standard error $0.01358 \to 0.00303 \to 0.00491$, each a V with its vertex at
+the alignment crossing $f = +0.632$, a fold-range of $4.5$ -- `cc66.40`'s guard, firing a fourth time
+but on the ALIGNMENT and not on $f$.  ** The comb's locating width is the same at both ends, because
+$\ell_1$ is read off the arm's own spectrum and does not involve the control at all. **
+
+⛭⛭⛭ ** AND THE DECISIVE RESULT IS NOT ABOUT THE CHOICE AT ALL: THE SKY'S VALUE IS NOT IN THE FAMILY. **
+$0.7312$ sits at $f = -0.125$ on the family's own straight line, on the far side of the stacking clock
+-- so no interior fraction fits the comb better than the endpoint the instrument already uses (the
+order's third branch does not arise), the best point in the family is $f=0$, and *** the residual
+first-peak disagreement cannot be absorbed by the clock assignment, because the direction it would
+need is not admissible. ***  ⛔ *But the margin is $0.53$ multipoles, under the sky's own locating
+width, so OUTSIDE is the direction and not a resolved exclusion on this arm -- see the head of this
+file.*  ⚑ And $P_1/P_2$, a second external referent, says the same thing independently: $2.135 \to
+2.009$ against the sky's $2.217$, so it too is best at $f=0$ -- and ITS margin does not thin on this
+arm: $0.0825$ below the sky at $f=0$ against $0.076$ on the namesake.  *The two margins are in
+DIFFERENT units and are not compared as significances; what is said is only that this one did not
+move where $\ell_1/\ell_A$'s halved.*
+
+⚠ ** AND THIS RECEIPT CORRECTS `cc66.43`'s OWN COMB NUMBERS, WHICH WERE GRID-LIMITED. **  Read on the
+raw `LSTEP=8` grid the arm's first peak went $220 \to 228$; that is ONE BIN STEP.  Sub-bin -- with the
+locator validated against the banked `LSTEP=1` spectrum first, where it recovers the fine-grid
+position to $0.0034$ of a multipole -- the motion is $222.04 \to 226.31$ and $0.73295 \to 0.74702$.
+*** The direction survives and the magnitude was overstated by $1.88\times$; and the SIGN of the arm's
+offset from the sky at $f=0$ flips, from $0.72620$ (raw, below) to $0.73295$ (above, by $0.53$
+multipoles). ***  *The raw ratio is recomputed on this arm; `cc66.43`'s $0.7290$ was $220$ over the
+NAMESAKE $\ell_A$ and is not this arm's raw reading.*  ⌗ The same grid caveat applies to `cc66.43`'s
+FWHM reading, and sharpens: on this arm the width takes just TWO values, $43.9573$ and $44.3206$,
+whose whole separation is ONE step of this arm's own $\eta$ grid to MACHINE ZERO, and it jitters
+NON-monotonically across the family -- so the width's motion is not resolved, while `ETA_LS`'s (six
+steps, monotone) and $r_D$'s ($-4.0\%$, smooth) are.  *The old gate checked `r6925`'s NAMESAKE pair
+$|43.9516 - 43.5913|$ against this arm's step, which differ by $0.003$; re-anchored on each arm's own
+grid the statement is exact instead of approximate -- `cc66.60`'s repair form again.*
+
+⚑ ** THE ORDER'S OWN GUARD, ANSWERED AND SEPARATED THREE WAYS. **  It asked whether the comb moves
+because the visibility peak relocates or because the acoustic phase changes, and to say so if they
+cannot be separated.  They can, because the injection is a $\cos(k r_s)$ source with no plasma
+dynamics in it:
+    the relocation through $r_s(\mathrm{ETA\_LS})$, $147.465 \to 146.603$   $+0.588\%$   ** 31% **
+    the visibility's re-weighting of the kernel (the injection, above that)  $+0.193\%$   ** 10% **
+    the plasma's own acoustic phase (the real spectrum, above the injection) $+1.139\%$   ** 59% **
+*** So the comb's motion is NOT mostly the peak relocating: three fifths of it is the plasma
+responding to the re-weighted optical depth. ***
+
+** WHAT IS NOT CLAIMED. **  NOT a verdict on the two-rate assignment -- the row's question is whether
+it is right, and a measurement of how well the comb constrains it is evidence toward that, not the
+answer.  NOT that $f<0$ is admissible: the family is bounded by the two clocks and the sky's implied
+$-0.125$ is an EXTRAPOLATION of the family's straight line, reported because the order asked for the
+comb's discriminating power and this is what it says, not because a negative fraction is a candidate.
+NOT that the sky lies RESOLVABLY outside the family on this arm: the margin is $0.53$ multipoles,
+under the sky's own locating width, and the resolved part is the direction and the absence of an
+interior fit.  NOT a re-derivation of the sky's locating width: the one- and two-multipole values are
+P15's own (`P15_the_sky_phase_fit_and_its_uncertainty`), taken as given here.  NOT any reading of the
+NAMESAKE arm: the namesake figures in this file's head are stated for the record, are not computed
+here, and are neither pinned nor baselined.  NOT that the injected runs are
+spectra of this model -- they are the projection's transfer of a known input.  No mechanism beyond
+`cc66.42`'s, nothing that touches `prop:flat`, and no refit.
+
+====================================================================================================
+  [PASS] the bank this receipt reads is present: `spectra/r6929_scan_cr_leafrec1.npz`   (r6929_scan_cr_leafrec1.npz)
+  [PASS] the bank this receipt reads is present: `spectra/r6929_geometry_leafrec1.npz`   (r6929_geometry_leafrec1.npz)
+  [PASS] the bank this receipt reads is present: `spectra/r6929_geometry.npz`   (r6929_geometry.npz)
+  [PASS] the bank this receipt reads is present: `spectra/r6929_noop.npz`   (r6929_noop.npz)
+  [PASS] the bank this receipt reads is present: `spectra/r6925_visleaf_cr_leafrec1.npz`   (r6925_visleaf_cr_leafrec1.npz)
+  [PASS] the bank this receipt reads is present: `spectra/r6925_noop.npz`   (r6925_noop.npz)
+  [PASS] the bank this receipt reads is present: `spectra/r6919_injected_lcdm.npz`   (r6919_injected_lcdm.npz)
+  [PASS] the bank this receipt reads is present: `spectra/r6919_injected_lcdm_leafrec1.npz`   (r6919_injected_lcdm_leafrec1.npz)
+  [PASS] the bank this receipt reads is present: `spectra/cc66_r185_verify_lcdm.npz`   (cc66_r185_verify_lcdm.npz)
+  [PASS] the bank this receipt reads is present: `spectra/cc66_r185_verify_cr_leafrec1.npz`   (cc66_r185_verify_cr_leafrec1.npz)
+  [PASS] the bank this receipt reads is present: `spectra/r6941_fine_cr_leafrec1.npz`   (r6941_fine_cr_leafrec1.npz)
+
+PART 1 -- THE SWITCH IS A FRACTION, ITS ENDPOINT IS THE FLAG, AND THE GUARD IS STANDING.
+----------------------------------------------------------------------------------------------------
+  [PASS] `VISLEAF` is read as a FRACTION and the family is `1 + f (Jac - 1)` on `d(tau)`'s measure   (one binding, one activity test, one interpolation)
+  [PASS] ⚑ and the ENDPOINT takes `r6925`'s expression UNCHANGED, because `1 + 1*(Jac-1)` is not `Jac` in floating point and r6925's banked runs are what the endpoint is read against   (the f == 1 branch is the r6925 line, character for character)
+  [PASS] ⛭ THE SWITCH MARKER IS IN THE INSTRUMENT and its inventory is read off the file's OWN SOURCE rather than hand-maintained -- `r3512`'s flag inventory was WIDER than the code, and a list derived from the `os.environ` reads cannot drift from them   (one marker print, one derived inventory, no hand-kept list)
+  [PASS]    and the regex the instrument uses finds the switches this work actually passes, so the marker is not a list of names nobody reads   (82 names, including VISLEAF / LEAFSCALES / KSLICE / SRCINJ / LSTEP / ARM)
+  [PASS] ⛭⛭ THE GUARD IS STANDING, NOT PER-LAUNCHER: `switch_smoke.sh` asserts every assignment appears in the marker, and the launcher runs it on EVERY distinct environment before the set goes out AND checks every slice's own log afterwards   (the smoke test, the pre-launch loop, and the per-slice check)
+  [PASS] ⚠ and what it cannot catch is stated where it is built -- that the value reached the PHYSICS is the knob shadow and takes a differential, not a print   (named in switch_smoke.sh itself)
+
+  [PASS] ⓵ [namesake, declared] `VISLEAF=0` IS the unset path on the arm, bit for bit   (max|dD_l| = 0.000e+00)
+  [PASS] ⓶ [namesake, declared] and the arm unset still reproduces `r6925`'s banked no-op bit for bit, so the code change moved nothing that was already measured   (max|dD_l| = 0.000e+00)
+  [PASS] ⓷ THE CONTROL DOES NOT MOVE AT ANY f -- `Jac == 1` there by the rate identity, so the whole family collapses to one run.  *Gated, not assumed*   (f=0.5 against f=0: max|dD_l| = 0.000e+00)
+  [PASS] ⓸ ** THE FAMILY'S ENDPOINT IS THE FLAG: f=1 reproduces `r6925`'s banked `VISLEAF=1` spectra BIT FOR BIT, both the real spectrum and the injection **   (max|dD_l| = 0 on both)
+  [PASS] ⓹ and f=0 reproduces the banked REPORTED spectrum to the `KSLICE` sum's own rounding, which is this scan's provenance: the base of the family is the corpus's own arm   (relative max|dD_l| = 2.663e-16)
+  [PASS] ⛭⛭ ** AND THE CONTROL SIDE OF EVERY BAND RATIO IS NOT A CHOICE. **  The injection control key this receipt reads is bit-IDENTICAL between the control's two recombination treatments -- so moving the ARM to its arm-of-record sibling and leaving the control where it is changes nothing about the control.  ⛔ *And the comparison has teeth rather than being a control that cannot move: a key in the SAME FILE that swaps the arm's visibility in DOES differ, so `LEAFREC` is live in that bank and inert only on the key read*   (`Dl__sweepown` and its `l_A` identical; `Dl__viswap` differs by 2.83e-03 relative)
+
+PART 2 -- ⓵ THE BACKGROUND OVER THE FAMILY, AND WHICH OF ITS MOTIONS ARE RESOLVED.
+----------------------------------------------------------------------------------------------------
+  [PASS] ⒪ the geometry sibling is a SUPERSET of its namesake -- `__cr` IS the namesake's, bit for bit, and the arm of record is `__cr_leafrec1`; read the wrong key and the namesake comes back silently   (28 of 28 namesake keys bit-identical, 12 of 14 arm keys moved; dr_s/dchi at f=0 0.3967327 (namesake) -> 0.3951353 (arm of record))
+         f     eta_LS      FWHM      r_D        l_A  r_s(eta_LS)  dr_s/dchi   ctl dr_s/dchi
+      0.00   492.7919   43.9573   7.5752   302.9431    147.46478   0.395135   0.454950
+      0.05   492.7919   43.9573   7.5752   302.9431    147.46478   0.395135   0.454950
+      0.10   492.7919   43.9573   7.5752   302.9431    147.46478   0.395135   0.454950
+      0.15   492.4286   43.9573   7.5226   302.9431    147.32119   0.395173   0.454950
+      0.20   492.4286   43.9573   7.5226   302.9431    147.32119   0.395173   0.454950
+      0.25   492.4286   43.9573   7.5226   302.9431    147.32119   0.395173   0.454950
+      0.30   492.0654   43.9573   7.4706   302.9431    147.17759   0.395211   0.454950
+      0.40   492.0654   43.9573   7.4706   302.9431    147.17759   0.395211   0.454950
+      0.50   491.7021   44.3206   7.4192   302.9431    147.03398   0.395247   0.454950
+      0.60   491.3388   44.3206   7.3685   302.9431    146.89035   0.395284   0.454950
+      0.70   491.3388   43.9573   7.3685   302.9431    146.89035   0.395286   0.454950
+      0.75   490.9755   44.3206   7.3184   302.9431    146.74671   0.395322   0.454950
+      0.80   490.9755   44.3206   7.3184   302.9431    146.74671   0.395322   0.454950
+      0.90   490.6122   44.3206   7.2689   302.9431    146.60305   0.395359   0.454950
+      1.00   490.6122   44.3206   7.2689   302.9431    146.60305   0.395359   0.454950
+  [PASS] `ETA_LS` drifts MONOTONICALLY and its drift is six times the eta-grid's own step, so it is resolved   (492.7919 -> 490.6122, 6.0 grid steps of 0.3633 Mpc)
+  [PASS] ⚠ ** BUT THE FWHM'S MOTION IS NOT RESOLVED, AND `cc66.43` READ IT AS IF IT WERE. **  The width is a threshold crossing on the same grid `ETA_LS` is read off, so on this arm it takes just TWO values, it moves NON-monotonically in f, and the two are exactly ONE step of this arm's own eta grid apart -- to machine zero -- so the whole motion is the quantisation and not a width change   (values [43.9573, 44.3206], whole range 0.363283 against the eta step 0.363283 Mpc -- identical to 1.7e-13)
+  [PASS] ⓵ and `r_D` moves smoothly and monotonically -- a resolved motion of about four per cent   (7.5752 -> 7.2689 (-4.0%))
+  [PASS] ⓵ `d r_s/d chi` RISES across the family, monotonically to machine precision, between this arm's own two endpoints: the ratio the row turns on does not move   (0.395135 -> 0.395359, 13.10% lower against 13.15%)
+  [PASS] ⚑ and `l_A` does not move AT ALL over the family, so `l_1/l_A` is `l_1` in other units -- which matters for the order's guard: the acoustic scale is not absorbing any of the shift   (l_A = 302.9431 at every f)
+  [PASS]    and NOTHING on the control moves at any f, at every quantity in the table   (eta_LS, FWHM, r_D, l_A, dr_s/dchi, r_s and tau at the peak: one value each)
+
+PART 3 -- THE LOCATOR IS VALIDATED BEFORE IT IS USED, AND `cc66.43`'s COMB WAS GRID-LIMITED.
+----------------------------------------------------------------------------------------------------
+    the banked LSTEP=1 spectrum, sub-bin        : [222.047, 535.846, 815.027, 1129.742]
+    the same data decimated to the LSTEP=8 grid : [222.043, 535.853, 815.006, 1129.724]
+  [PASS] ⚑ the sub-bin locator recovers the FINE-GRID first peak from the coarse grid to better than a hundredth of a multipole, so the scan's abscissa is validated on the corpus's own bank before it is read   (l_1 differs by 0.0034, the worst of four by 0.021)
+
+        f  l_1 raw   l_1 sub   l_1/l_A   P1/P2 | contrast   q-slope     s.e.   resid |  inj l_1   inj c  inj slope
+     0.00      220   222.043   0.73295   2.135 |   1.0649  +0.01815  0.01358  0.0425 |  257.744  1.0929   +0.02955
+     0.10      220   222.452   0.73430   2.122 |   1.0627  +0.01650  0.01196  0.0374 |  257.932  1.0912   +0.02852
+     0.25      220   223.071   0.73635   2.103 |   1.0594  +0.01404  0.00952  0.0298 |  258.217  1.0886   +0.02692
+     0.50      228   224.124   0.73982   2.071 |   1.0540  +0.01003  0.00562  0.0176 |  258.709  1.0842   +0.02409
+     0.75      228   225.203   0.74338   2.040 |   1.0488  +0.00619  0.00303  0.0095 |  259.222  1.0797   +0.02108
+     1.00      228   226.306   0.74702   2.009 |   1.0437  +0.00259  0.00491  0.0154 |  259.757  1.0752   +0.01794
+    the sky: l_1/l_A = 0.7312, P1/P2 = 2.217
+  [PASS] ⛭⛭ ** EVERY READING IS LINEAR IN THE PARAMETER. **  l_1 = 222.02 + 4.26 f to within three hundredths of a multipole -- six parts in a thousand of its whole span -- so the family has ONE number in it and the scan is not hiding structure between its points   (max deviation from the straight line 0.0260 multipoles)
+  [PASS] ⚠ ** AND `cc66.43`'s 220 -> 228 WAS ONE BIN STEP. **  The raw locator takes two values across the whole family where the sub-bin locator moves smoothly, and the true motion is 1.88 times SMALLER than the grid said   (raw [220, 228] against sub-bin 222.043 -> 226.306 (+4.263), overstated 1.877x)
+  [PASS] ⚠ and the SIGN of the arm's offset from the sky at f=0 flips with the refinement: the raw grid puts l_1/l_A BELOW the sky, sub-bin it is ABOVE it   (0.72621 (raw, below) -> 0.73295 (sub-bin, above by 0.53 multipoles))
+
+PART 4 -- ⓵ THE RESOLUTION, WHICH IS WHAT THE ORDER ASKED FOR: WHAT CAN THIS COMB DECIDE?
+----------------------------------------------------------------------------------------------------
+    one multipole in l_1/l_A                       : 0.00330
+    the family's whole span in l_1/l_A             : 0.01407 = 4.26 multipoles
+    ⇒ in the sky's own locating widths (1 / 2 mult.): 4.26 / 2.13 sigma   ->  f pinned to +-0.23 / +-0.47
+    the contrast's LEVEL  : -0.02116 against its band scatter 0.00949 -> 2.23 sigma, f to +-0.45
+    the contrast's SLOPE  : -0.01556 against its fit s.e.   0.00303 -> 5.14 sigma, f to +-0.19
+    *each error taken at the family's own aligned point, not at f=0 -- see cc66.63*
+  [PASS] ⓵ ** THE COMB DISCRIMINATES THE FAMILY'S ENDS, AND ONLY JUST: four multipoles end to end, which is four of the sky's one-multipole locating widths and two of its two-multipole ones. **  ⇒ It pins f to about a quarter of the family and nowhere near the clock   (4.26 multipoles end to end, f to +-0.23)
+  [PASS] ⛔ ** AND THE ORDER'S FIRST BRANCH IS HALF RIGHT. **  The contrast's LEVEL is shallow as it guessed -- about HALF the comb's discriminating power -- but its q-SLOPE is not: it EXCEEDS the comb's, so 'steep comb, shallow contrast' is not what separates them.  ⛭ *Both significances are taken against the family's own aligned point rather than against f=0; the old `under two sigma` was the namesake arm's phrase and is not restated*   (level 2.230 sigma, slope 5.135 sigma, comb 4.263 -> level/comb 0.523, slope/comb 1.205)
+
+    the arm's comb against the CONTROL's, mean signed offset in q over the band range:
+      f=0:-0.01358  f=0.1:-0.01157  f=0.25:-0.00847  f=0.5:-0.00312  f=0.75:+0.00245  f=1:+0.00830
+      a straight line -0.013799 +0.021847 f to 2.6e-04, crossing ZERO at f = +0.6316 -- inside the family
+      and the three error statistics take their minimum at f = 0.75 / 0.75 / 0.75, not at either end
+  [PASS] ⛭⛭⛭ ** WHAT SEPARATES THEM IS THAT THE CONTRAST'S ERROR IS SET BY THE TWO COMBS' PHASE OFFSET AND THE COMB'S IS NOT. **  The mean signed offset in q is a straight line in f that crosses zero INSIDE the family, at f = +0.63, and the band residual, the slope's standard error AND the injection's residual all bottom out there and rise again -- so the error is V-shaped in the parameter, not growing in it.  ⛭ *`cc66.40`'s guard fires a fourth time, but on the ALIGNMENT and not on f: the locating width of l_1 is read off the arm's own spectrum and does not involve the control at all, which is why it does not move*   (offset -0.01358 -> +0.00830, zero at f=+0.6316; residual 0.04252 -> 0.00949 -> 0.01538)
+  [PASS]    and the fold-RANGE of the error across the family is what survives the move: about four and a half on the residual and the s.e. alike, and nine on the injection's residual -- the namesake arm's five-fold, read between the vertex and the far end instead of between the ends   (residual 4.48x, s.e. 4.48x, injection 8.83x)
+  [PASS]    ⌗ and the injection's two endpoints are pinned two-sided at this arm's own values, the continuity with `r6925` itself being the bit-identity gated at ⓸ rather than agreement to four decimals   (contrast 1.09289 / 1.07518, slope +0.029553 / +0.017938)
+
+PART 5 -- ⛭⛭⛭ AND THE DECIDING RESULT: THE SKY'S OWN VALUE IS NOT IN THE FAMILY.
+----------------------------------------------------------------------------------------------------
+    the sky's l_1/l_A = 0.7312; the family runs 0.73295 (f=0) -> 0.74702 (f=1)
+    ⇒ on the family's own straight line the sky sits at f = -0.125
+    P1/P2, a SECOND external referent: 2.135 (f=0) -> 2.009 (f=1) against the sky's 2.217
+  [PASS] ⛔ ** NO INTERIOR FRACTION FITS THE COMB BETTER THAN THE ENDPOINT THE INSTRUMENT USES, so the order's third branch does not arise and there is no fitted clock to declare. **  l_1/l_A is monotone in f and already ABOVE the sky at f=0, so every f>0 is worse   (|l_1/l_A - sky| is smallest at f=0: 0:0.0018, 0.1:0.0031, 0.25:0.0051, 0.5:0.0086, 0.75:0.0122, 1:0.0158)
+  [PASS] ⛭⛭⛭ ** AND THE SKY'S VALUE SITS AT THE f=0 END OF THE FAMILY OR JUST BEYOND IT, at f = -0.125 on the family's own line -- but only 0.53 MULTIPOLES outside, which is LESS than the sky's own one-to-two-multipole locating width, so `outside the family` is not resolved on this arm.  ⇒ *What is resolved is the direction: the disagreement would need f<0, which is outside the two admissible clocks, and no f>0 is closer -- so the clock assignment still has no room to absorb it, and there is still no fitted clock to declare*   (f_sky = -0.1246, the sky 0.531 multipoles below the arm at f=0 (the namesake arm had it 1.28 out, at f_sky = -0.304), family bounded by f in [0, 1])
+  [PASS] ⚑ and P1/P2 says the same independently: it moves AWAY from the sky as f rises, so the two external referents agree on f=0 and neither is being traded against the other   (2.135 -> 2.009 against the sky's 2.217)
+
+PART 6 -- ⓶ THE ORDER'S GUARD: RELOCATION, THE KERNEL'S WEIGHTING, OR THE PLASMA'S PHASE.
+----------------------------------------------------------------------------------------------------
+    r_s(ETA_LS) 147.46478 -> 146.60305: the RELOCATION alone predicts dl_1/l_1 = +0.5878%   (31%)
+    the INJECTION -- a cos(k r_s) source with NO plasma dynamics -- moves +0.7807%, so the VISIBILITY'S re-weighting of the kernel is +0.1929%   (10%)
+    the REAL spectrum moves +1.9197%, so THE PLASMA'S OWN PHASE is +1.1391%   (59%)
+    in multipoles on l_1: total +4.263 = relocation +1.305, visibility +0.428, plasma +2.529
+  [PASS] ⓶ ** THE TWO CAN BE SEPARATED, and the order's guard is answered rather than deferred: the injection has no plasma dynamics in it, so its motion above the relocation is the kernel's weighting and the real spectrum's motion above the injection is the plasma's own phase **   (+0.5878% < +0.7807% < +1.9197%)
+  [PASS] ⛔ ** AND THE COMB'S MOTION IS NOT MOSTLY THE VISIBILITY PEAK RELOCATING. **  Relocation is a third of it, the kernel's re-weighting a tenth, and THREE FIFTHS is the plasma responding to the re-weighted optical depth   (relocation 30.6%, visibility 10.0%, plasma 59.3%)
+  [PASS]    and the three shares add to the whole by construction, which is what makes this a decomposition and not three separate readings   (31.1 + 9.2 + 59.6 = 100.0 per cent)
+
+----------------------------------------------------------------------------------------------------
+  THE FIGURES THE `INDEX.md` ROW PRINTS, PINNED TWO-SIDED: l_1 = 222.021 + 4.2595 f, span 0.014071 = 4.2626 mult (f to +-0.2346), l_A 302.9431
+    contrast 1.06486 -> 1.04370, q-slope +0.01815 -> +0.00259, residual 0.04252 -> 0.00949 -> 0.01538, s.e. 0.01358 -> 0.00303 -> 0.00491
+    P1/P2 2.1345 -> 2.0093, shares 30.62/10.05/59.33 per cent, locator 0.00336 / 0.02056
+  [PASS] ⛭⛭ every computed figure the `INDEX.md` row prints is held two-sided to the digits it prints, so the row's numbers fail this receipt when they are wrong   (all of them, each inside half a last printed digit)
+
+====================================================================================================
+GATES: ALL PASS.
+
+  ⛭⛭ THE COMB'S RESOLUTION, STATED BEFORE IT DECIDES: the whole one-parameter family between the two
+  admissible clocks spans 4.26 multipoles in l_1 -- 0.01407 in l_1/l_A, which is
+  4.3 of the sky's one-multipole locating widths and 2.1 of its
+  two-multipole ones.  The comb separates the family's ends and pins f only to about +-0.23.
+
+  ⛔ THE ORDER'S FIRST BRANCH IS HALF RIGHT.  The contrast's LEVEL is shallow (2.23 sigma,
+  about half the comb's 4.26) but its q-SLOPE EXCEEDS the comb (5.14 sigma) -- each
+  error taken at the family's own ALIGNED point, not at f=0.  ⛭⛭⛭ What separates them is that the
+  contrast's error is set by the two combs' PHASE OFFSET and the comb's locating width is not: the
+  mean signed offset in q is a straight line in f crossing ZERO at f = +0.632, INSIDE the
+  family, and the band residual, the slope's s.e. and the injection's residual all bottom out there
+  and rise again.  So the error is V-shaped in the parameter and does not grow in it; the fold-range
+  across the family is 4.5x.  *`cc66.63`: the old reading `grows
+  five times` was one side of that V, read on an arm whose vertex sits at the family's edge.*
+
+  ⛭⛭⛭ AND THE DECIDING RESULT IS NOT ABOUT THE CHOICE.  The sky's 0.7312 sits at f = -0.125
+  on the family's straight line -- outside it, on the far side of the stacking clock, though by only
+  0.53 multipoles, UNDER the sky's own locating width, so OUTSIDE is the direction and not
+  a resolved exclusion.  No interior fraction fits better than the endpoint in use (there is no fitted
+  clock to declare), the best point is f=0, and the direction the residual first-peak disagreement
+  would need is still inadmissible.
+  P1/P2 agrees independently, and ITS margin does not thin on this arm: 2.1345 ->
+  2.0093 against the sky's 2.217, a gap of 0.0825 at f=0 --
+  slightly WIDER than the same gap on the namesake arm, not narrower.  *Different units from
+  l_1/l_A's margin, so not compared as significances -- only that this one did not move where that
+  one halved.*
+
+  ⚑ THE GUARD: the comb's motion is 31% the peak relocating through
+  r_s(ETA_LS), 10% the visibility's re-weighting of the kernel, and
+  59% the plasma's own acoustic phase.  They separate.
+
+  ⚠ AND TWO OF cc66.43's NUMBERS WERE GRID-LIMITED: l_1 220 -> 228 is really
+  222.04 -> 226.31 (overstated 1.88x), l_1/l_A 0.72621 raw is
+  really 0.73295 -> 0.74702 (and the arm sits ABOVE the sky at f=0, not below),
+  while the FWHM takes just TWO values on this arm, 43.9573 and 44.3206, exactly one step
+  of this arm's own eta grid apart to machine zero, and is not a resolved motion at all.
+
+  ⛭ THE ARM: the whole scan reads the arm of record; the two no-op legs ⓵ and ⓶ read the namesake
+  arm, declared, because neither no-op bank has an arm-of-record key -- and both stay wholly on that
+  one arm, so neither is a cross-arm comparison.
+
+  NOT CLAIMED: a verdict on the two-rate assignment; that f<0 is admissible (the -0.125 is the
+  family's line extrapolated, reported because the order asked what the comb can decide); that the sky
+  lies RESOLVABLY outside the family on this arm; a re-derivation of the sky's locating width, which is
+  P15's own; that the injected runs are spectra of this model; any reading of the NAMESAKE arm, whose
+  figures in this file's head are for the record and are neither pinned nor baselined; any mechanism
+  beyond cc66.42's; nothing touches prop:flat and there is no refit.
+

@@ -1,0 +1,460 @@
+
+P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck
+======================================================================================
+
+LEVEL: the two arms at their own verified 185-bin refit minima, scored on `plik_lite` TT with the
+full bandpower covariance, and the model difference DELTA = m_arm - m_control read directly --
+`r6885`'s order, which takes the sky's noise realisation out of the comparison.
+
+** WHAT THE ORDER ASKED, AND WHAT COMES BACK. **
+
+ (1) THE COEFFICIENT INSIDE THE 73%.  The order writes r_arm = 1.15 r_ctl + 0.70 (perp) from
+     "cosine 0.855 and norm ratio 1.34", and reads the 1.15 as a 15% amplification along the noise
+     direction.  ** The 1.15 mixes two metrics: 0.855 is the WHITENED cosine and 1.34 is the
+     DIAGONAL rms ratio. **  Consistently it is 1.076 whitened (0.848 x 1.270) or 1.144 diagonal
+     (0.824 x 1.388).  ⇒ And the coefficient is not a new quantity: b - 1 = <DELTA,r_ctl>/||r_ctl||^2
+     is ALGEBRAICALLY the cross term of (2) divided by ||r_ctl||^2, so ** the "amplification along
+     the noise direction" IS the cross term **, and against its own sky-random null it is
+     +1.50 sigma.  ** A 1.5-sigma departure from 1.00 is what noise looks like. **
+
+ (2) THE DECOMPOSITION.  chi2_arm = chi2_ctl + 2<r_ctl,DELTA> + ||DELTA||^2 exactly:
+     286.89 = 177.88 + 27.21 + 81.81.  ** ||DELTA||^2 carries 75.0% of the +109.02 excess and the
+     cross term 25.0%. **  The order asks which, plainly: it is ||DELTA||^2.  Under the null that
+     the control is the truth and the sky is a draw, E[chi2_arm] = n + ||DELTA||^2 = 260.8, so on a
+     TYPICAL sky this arm still scores 1.46 per bin.  ⇒ ** The rejection is NOT a fluke of one sky.
+     The cross term is the part that is, and it is +1.50 sigma of its own null. **
+
+ (3) DELTA'S SHAPE, AND IT HAS A NAME THE FOUR-PARAMETER FAMILY DID NOT CONTAIN.  DELTA is
+     trough-dominated -- +0.002 sigma at peaks against -0.836 at troughs -- and splitting it into a
+     smooth envelope and an oscillation about that envelope, ** the OSCILLATORY part carries 71 to
+     78 of the 81.8 ** depending on how the envelope is drawn, peak-high and trough-low
+     (+0.423 / -0.458).  That is not an envelope and not a
+     phase: it is a CONTRAST.  ⇒ ** The arm's acoustic oscillation is 1.044 times the control's
+     about its own envelope. **  A single direction built from the CONTROL alone -- raise the
+     oscillation at fixed envelope, no run and nothing fitted -- carries 56% of ||DELTA||^2, stable
+     at 46-58% as the envelope window runs 0.75 to 1.5 acoustic periods; with position, tilt and
+     damping the span reaches 69% against ** 8.6% for `cc66.33`'s four without it **.
+
+ (4) THE SHORT LIST.  The order names four and says three are instrumented.
+      * THE HANDOVER AMPLITUDE (0.4835 against 0.5) is EXCLUDED EXACTLY AND WITHOUT A RUN: the
+        instrument sets `_That0 = (-T(xe)/2) * ones(nk)`, k-INDEPENDENT, so it multiplies C_l by a
+        constant and the single fitted amplitude absorbs it -- chi2 moves by 9e-13 and the residual
+        by 4e-14.  ** It cannot appear in DELTA at all, and DELTA's overlap with the amplitude
+        direction is 0.00%. **
+      * THE OTHER THREE are run here as DIRECTIONS, one knob off each arm's OWN minimum.
+      * AND A FIFTH, NOT ON THE LIST, IS WHAT (3) NAMES: the oscillating-to-smooth ratio of the
+        line-of-sight source.  The instrument's own `los_spectrum` docstring says the Doppler term
+        mis-weighted "fills the troughs at high multipole ... while leaving the FIRST peak's position
+        almost alone", which is DELTA's signature exactly.  ⛔ ** And its knob is a KNOB SHADOW on the
+        refit path: `_SWSRC` and `_DPSRC` are read only inside `los_spectrum`, and `HIER=1` does not
+        take that path, so `DPSRC=0` at the refit configuration returns a BIT-IDENTICAL spectrum on
+        both arms. **  Reported as a finding, not repaired.  (r6931+70.1: repaired since, by the order
+        it routed -- `736f9399`, r6889+cc66.36, wired both switches into the hierarchy projection
+        with the default byte-identical; PART 2 (b) reads the shadow at `736f9399^` and checks the
+        closure on the live file.)
+      * SO THE FIFTH IS TESTED ON THE PATH WHERE THE KNOB REACHES (PART 5), which both CALIBRATES the
+        switch -- 62% on D_l there against exactly zero on HIER=1, which is what makes the shadow a
+        proof rather than a null -- and answers it: ⚑ ** the Doppler dipole IS the contrast knob.
+        Removing it nearly doubles each arm's oscillation about its own envelope (to 1.85), and its
+        shape sits at cosine 0.88-0.89 with the contrast direction PART 3 built from the control with
+        no run at all. **  ⇒ And `SWSRC=0`, the other half of the same source, brackets it from the
+        other side: it INVERTS the oscillation (to -0.300) at cosine -0.79.  ** So the contrast
+        direction is the monopole-to-dipole BALANCE. **  ⌗ *And DELTA agrees between the two instrument
+        paths at cosine +0.76 with the same contrast excess, so it is the configuration's and not one
+        path's.*
+      * ⚠ BUT THE CHANNEL IS IDENTIFIED AND THE CAUSE IS NOT MEASURED.  Deleting the term is
+        all-or-nothing: it leaves the arms' contrast RATIO where it was (1.033 -> 1.035) and DOUBLES
+        ||DELTA||^2.  So the two arms differ in how much this channel supplies, not in whether it is
+        there, and measuring that needs the term SCALED rather than deleted -- and wired into the
+        hierarchy path first.  That is named as the next step and is not done here.
+
+-------------------------------------------------------------------------------
+WHAT IS CLAIMED.
+
+ (1) The identity chi2_arm = chi2_ctl + cross + ||DELTA||^2 to machine precision, with all three
+     terms reported, at four bin cuts.
+ (2) The projection coefficient is 1.076 +- 0.051 whitened (1.144 diagonal), NOT 1.15; the 1.15
+     mixes metrics; and b-1 is the cross term, at +1.50 sigma of its sky-random null.
+ (3) ||DELTA||^2 carries the excess, so the rejection survives the sky: E[chi2] = 260.8 on a typical
+     draw.
+ (4) DELTA is trough-dominated and its oscillatory part carries 86-96% of it; the arm's oscillation is
+     1.044x the control's about its own envelope; a contrast direction built from the control alone
+     carries 56% of ||DELTA||^2 and the four-parameter family 8.6%.
+ (4b) AND `r6887`'s SHARPENED ASK -- DELTA read against the three features `cc66.34` showed are the
+     arm's own rather than shared.  All three turn out to be DELTA'S: the trough deficit
+     (-0.836 against the control's -0.200), the ell~1000 trough (DELTA -1.056 where the control sits
+     at -0.103 and the arm at -1.159, so DELTA carries 91% of it in 15 bins), and the growth with
+     multipole, which DELTA does monotonically (0.41 -> 0.57 -> 0.74) where the residuals do not,
+     because a residual is DELTA plus a noise floor of order one and the floor flattens it.
+ (5) The handover amplitude is excluded exactly by k-independence; `DPSRC`/`SWSRC` are a knob
+     shadow on the hierarchy path, proved by a bit-identical spectrum there against 62% on the LOS
+     path; and on the LOS path the Doppler dipole's own direction sits at cosine 0.88-0.89 with the
+     contrast direction.
+ (6) For each candidate actually run, the cosine of its direction with DELTA and the percentage of
+     ||DELTA||^2 it carries, amplitude-marginalised, with its own peak/trough signature beside it.
+
+WHAT IS NOT CLAIMED.
+
+ * NOT that the contrast direction is a MECHANISM.  It is a shape, and naming the shape is not
+   naming what produces it; the candidate runs are what bear on that.
+ * NOT that DELTA is fully accounted for.  The best span here reaches 69% and 31% is unnamed.
+ * NOT that a candidate's reduction of ||DELTA||^2 is its SHARE of DELTA.  Switching a driving or
+   source term off is a large excursion, not a derivative, and `DRE=0` in particular rotates DELTA to
+   near-orthogonality (cos -0.16) while shrinking its norm by a third -- DELTA replaced rather than
+   reduced.  The column answers "does DELTA survive this", which is the question the order's list asks.
+ * NOT a fit.  Every direction is a difference of two spectra or a construction from the control,
+   and NOTHING is adjusted to improve an overlap.  The envelope window is reported over a range
+   rather than chosen, and the degree-polynomial alternative is reported beside it.
+ * NOT that the transfer is exonerated or convicted.  `r6881+cc66.34` withdrew the statistic that
+   was being read that way and this receipt adds no replacement for it.
+ * The direction runs are at LMAXL=2000 LSTEP=8 HIER=1, the arms' own refit configuration, so they
+   are comparable with each other and with DELTA; the BANKED `r4494` ISW pair is at the older
+   leaf/stack configurations and is reported as indicative only, labelled as such.
+
+** ⛔ r7639 ⑵ -- THE `DPSRC=0` BIT-IDENTITY IN PART (b) IS HISTORICAL, AND IS PINNED HERE AS HISTORY. **
+It is a measurement of the instrument BEFORE `_SWSRC` and `_DPSRC` were wired into `_project` at
+`r6889+cc66.36` (`736f9399`), so it can only be read against the spectra that instrument made.  It is
+therefore loaded through `hist`, which reads the `LEAFREC=0` namesakes and RECORDS what it read, with a
+check that fails if either file carries the arm-of-record suffix.  *The pin is load-bearing and not
+decoration: in `max |dD_l|` the namesake pair reads exactly `0.0` on both legs, a per-arm re-point gives
+the cross-arm `2.529e-02`, which measures nothing, and the honest both-legs arm-of-record read is
+`9.467e-02` -- because the knob IS wired there.  A re-point would read as a repair having FAILED where
+what it records is a repair having SUCCEEDED, and it would read that way GREEN.*
+  ⌘ *The arm-of-record pair `r6885_dp0_cr_leafrec1` DOES exist, so this family is reachable on that arm.
+  What is not reachable there is the BIT-IDENTITY, because on that arm there is nothing bit-identical to
+  measure.  P15 cites this receipt at l.1123 and l.1147 and for neither of those claims -- classed in
+  `computations/beyond_the_wall/r7639_cc66_P15_repoint_paper/P15_SENTENCES_dpsrc.md`.*
+
+COMPUTES: scope.
+  * ** EVERY COSMOLOGICAL PARAMETER IS BANKED, NOT CHOSEN HERE. **  The two arms are read from
+    `spectra/cc66_r185_verify_{lcdm,cr}.npz`, which are `r6825+cc66.25`'s verified 185-bin refit
+    minima -- `LH0=67.410309 LOM=0.309826 WBH2=0.021966 NS=0.954248` for the control and
+    `CRH0=68.581133 CROM=0.297209 WBH2=0.021524 NS=0.997952 ZSTART=3e7 LEAFSCALES=1` for the arm.
+    Nothing here re-fits them and nothing here moves them.
+  * The candidate pairs at `spectra/r6885_*` are those SAME commands with ONE knob changed each --
+    `LN=24`, `NOISW=1`, `DRE=0`, `DRC=0`, `DPSRC=0`, and on the line-of-sight path `DPSRC=0` and
+    `SWSRC=0`.  The knob is the only difference and the commands are in `spectra/README.md`.
+  * The lensing operator is CAMB's lensed/unlensed TT ratio at Planck 2018 (`H0=67.40`,
+    `ombh2=0.02237`, `omch2` from `Om=0.3150`, `mnu=0.06`, `tau=0.054`, `ns=0.965`), which is
+    `c54.183`'s and is used here exactly as `cc66.33` and `cc66.34` use it.
+  * The ONE free number fitted in this receipt is the single bandpower amplitude `A` per spectrum,
+    on the full covariance, which is what makes the amplitude direction a nuisance rather than a
+    result.  The envelope window (0.75-1.5 acoustic periods) and the polynomial degree (3/5/7) are
+    the only tunables and BOTH are reported over their range rather than chosen.
+  * ** NOT CLAIMED: any pinned value of $n_s$, $H_0$, $\Omega_m$ or $\omega_b$. **  *Those are
+    `r6825+cc66.25`'s and this receipt reads them as banked.*
+
+WHAT WOULD FALSIFY IT.  The three-term identity failing; the cross term carrying more than
+||DELTA||^2; the contrast direction carrying no more than the four-parameter family; the arm's
+oscillation about its own envelope coming out at 1.000; `DPSRC=0` moving the hierarchy path at all;
+or the Doppler dipole's direction NOT lining up with the contrast direction.
+
+====================================================================================================
+
+PART 1 -- THE DECOMPOSITION THAT REMOVES THE REALISATION  (179 bins, ell 104-1886).
+----------------------------------------------------------------------------------------------------
+    chi2_control =  177.88     chi2_arm =  286.89     excess = +109.02
+    2<r_ctl,DELTA> =  +27.21   ||DELTA||^2 =   81.81   ||DELTA|| = 9.045
+  [PASS] the three-term expansion is EXACT -- the identity the order writes, on the actual fitted vectors   (chi2_ctl + cross + ||DELTA||^2 = 286.894124 against 286.894124)
+
+    of the +109.02 excess:  ||DELTA||^2 carries 75.0%   the cross term 25.0%
+  [PASS] ** ||DELTA||^2 CARRIES THE EXCESS, NOT THE CROSS TERM ** -- so the order's 'if the cross term carries the excess ... part of the rejection is a fluke of one sky' does NOT fire   (81.81 against 27.21)
+
+  ** AND THE CROSS TERM HAS A NULL, WHICH IS WHAT MAKES 'FLUKE' A MEASURABLE WORD. **
+    with DELTA fixed and r_ctl ~ N(0,I): E[cross] = 0, sd = 2||DELTA|| = 18.09
+    measured +27.21  ->  +1.50 sigma -- unlucky, not decisive
+    E[chi2_arm] on a TYPICAL sky = n + ||DELTA||^2 = 179 + 81.8 = 260.8 = 1.457 per bin
+  [PASS] so on a typical draw the arm still scores above 1.4 per bin -- the rejection survives the sky, which is the order's question answered plainly   (1.457 per bin against the measured 1.603 and the control's 0.994)
+
+PART 2 -- THE COEFFICIENT HIDING INSIDE THE 73%, AND IT IS THE CROSS TERM.
+----------------------------------------------------------------------------------------------------
+    WHITENED : cosine +0.8476  norm ratio 1.2700  ->  coefficient 1.0765
+    DIAGONAL : corr   +0.8240  rms  ratio 1.3881  ->  coefficient 1.1438
+    the order's 1.15 = 0.855 x 1.34  <- the WHITENED cosine times the DIAGONAL rms ratio
+  [PASS] ** THE 1.15 MIXES TWO METRICS **: taken consistently the coefficient is 1.08 whitened or 1.14 diagonal, and neither is 1.15   (1.0765 whitened, 1.1438 diagonal)
+  [PASS] ...and the regression coefficient equals cosine x norm ratio in the same metric, so the two ways of writing it agree once the metric is not mixed   (b = 1.076478)
+
+  ** AND IT IS NOT A NEW QUANTITY. **
+    b - 1 = +0.0765   and   <DELTA,r_ctl>/||r_ctl||^2 = +0.0765
+  [PASS] b - 1 IS the cross term over ||r_ctl||^2 -- the 'amplification along the noise direction' and the cross term are one number, so (1) and (2) cannot disagree   (identical to 1.7e-16)
+    sd(b) with DELTA fixed and the sky a draw = ||DELTA||/||r_ctl||^2 = 0.0508
+  [PASS] ** so the coefficient is 1.076 +- 0.051, which is +1.50 sigma from 1.00 ** -- a 15% amplification is not what the covariance says, and 8% at 1.6 sigma is what noise looks like   (b = 1.0765 +- 0.0508, (+1.50 sigma))
+
+  stability across bin cuts, as the 73% was asked to be:
+             cut    n  chi2_ctl  chi2_arm  ||D||^2    cross       b     sd  sigma  shared
+      100-1996    185    186.51    297.67    83.61   +27.55  1.0738 0.0490  +1.51   72.3%
+      100-1500    156    153.49    240.37    70.30   +16.58  1.0540 0.0546  +0.99   70.9%
+      200-1900    168    172.33    271.03    74.76   +23.94  1.0695 0.0502  +1.38   72.7%
+      100-1900    179    177.88    286.89    81.81   +27.21  1.0765 0.0508  +1.50   71.8%
+  [PASS] ||DELTA||^2 exceeds the cross term at EVERY cut, so the verdict of PART 1 is not the cut's   (||D||^2 / cross: 84/28, 70/17, 75/24, 82/27)
+  [PASS] ...and the coefficient is between 1.05 and 1.08 everywhere, at 1.1 to 1.6 sigma -- never reaching 2 sigma and never reaching the 1.15 the order read   (1.074(+1.51s), 1.054(+0.99s), 1.069(+1.38s), 1.076(+1.50s))
+
+PART 3 -- DELTA'S SHAPE: WHERE IT LIVES, WHAT IT IS, AND WHAT IT IS ORTHOGONAL TO.
+----------------------------------------------------------------------------------------------------
+    the control's own peaks sit at ell [221, 536, 815, 1130, 1418, 1733], median spacing 315
+
+  (a) WHERE ||DELTA||^2 LIVES, by band of 200 in ell
+       100-300  n= 22     9.7% of ||DELTA||^2    DELTA/sigma mean -0.511  rms 0.581
+       300-500  n= 22     3.6% of ||DELTA||^2    DELTA/sigma mean -0.065  rms 0.348
+       500-700  n= 23    11.7% of ||DELTA||^2    DELTA/sigma mean +0.161  rms 0.613
+       700-900  n= 22    11.5% of ||DELTA||^2    DELTA/sigma mean +0.462  rms 0.632
+       900-1100 n= 22    23.2% of ||DELTA||^2    DELTA/sigma mean -0.753  rms 0.947
+      1100-1300 n= 22    15.2% of ||DELTA||^2    DELTA/sigma mean -0.415  rms 0.882
+      1300-1500 n= 23    11.3% of ||DELTA||^2    DELTA/sigma mean -0.800  rms 0.954
+      1500-1700 n= 12     3.9% of ||DELTA||^2    DELTA/sigma mean -1.577  rms 1.614
+      1700-1900 n= 11     9.8% of ||DELTA||^2    DELTA/sigma mean -0.903  rms 0.908
+  [PASS] ⛭ about half of it sits in ell 900-1500 -- 49.7% on the arm of record, 52.4% on the namesake -- so DELTA is not spread evenly and not a low-ell effect.  ⛔ *The label read `over half` until r7649, which the condition (0.45) never asserted and the arm of record does not meet*   (49.7% in 900-1500)
+
+  (b) PEAKS AGAINST TROUGHS -- sorted by the sign of the CONTROL's binned D_l curvature
+      DELTA/sigma   at peaks +0.002 (n=93)   at troughs -0.836 (n=86)
+      D_l ratio arm/control:  at peaks 0.9980   at troughs 0.9840
+  [PASS] ** DELTA IS TROUGH-DOMINATED: essentially zero at the peaks and negative in the troughs **, so the two arms agree where the peaks are and differ between them   (+0.002 at peaks, -0.836 at troughs)
+
+  (c) SMOOTH AGAINST OSCILLATORY -- the split that says which of the two it is
+      envelope = poly deg 3 in ln l : smooth  13.60   oscillatory  78.32   cross -10.11   of 81.81
+      envelope = poly deg 5 in ln l : smooth  19.79   oscillatory  71.05   cross  -9.03   of 81.81
+      envelope = poly deg 7 in ln l : smooth  20.08   oscillatory  70.56   cross  -8.83   of 81.81
+      and the OSCILLATORY part's own peak/trough means: +0.423 / -0.458  -- antisymmetric about the smooth level
+  [PASS] ** THE OSCILLATORY PART CARRIES THE BULK OF ||DELTA||^2 **, so DELTA is not an envelope difference   (71.05 of 81.81 = 87%)
+  [PASS] ...and it is peak-HIGH and trough-LOW, which is a CONTRAST and not a phase: a phase shift would be antisymmetric about each peak, not about the envelope   (+0.423 / -0.458)
+
+  (d) SO HOW BIG IS THE CONTRAST DIFFERENCE, AS A NUMBER?
+      window 0.75 periods ( 236 in ell): the arm's oscillation about its own envelope is 1.0452 of the control's
+      window 1.00 periods ( 315 in ell): the arm's oscillation about its own envelope is 1.0440 of the control's
+      window 1.25 periods ( 394 in ell): the arm's oscillation about its own envelope is 1.0393 of the control's
+      window 1.50 periods ( 472 in ell): the arm's oscillation about its own envelope is 1.0290 of the control's
+  [PASS] ** THE ARM'S ACOUSTIC OSCILLATION IS ABOUT 4 PER CENT LARGER THAN THE CONTROL'S AT FIXED ENVELOPE **, and that single number is what DELTA mostly is   (1.0440 at a one-period window)
+
+  (f) AND AGAINST THE THREE FEATURES `cc66.34` SHOWED ARE THE ARM'S OWN -- `r6887` makes
+      this the whole of the order, so DELTA is read directly against them.
+      feature                        control       arm     DELTA
+      (1) at the PEAKS                -0.104    -0.102    +0.002
+      (1) at the TROUGHS              -0.200    -1.036    -0.836
+      (4) ell 950-1080 (n=15)         -0.103    -1.159    -1.056   <- 22.1% of ||DELTA||^2 in 15 bins
+      (3) |.| in third 1               0.668     0.750     0.409
+      (3) |.| in third 2               0.746     0.916     0.570
+      (3) |.| in third 3               0.871     1.169     0.736
+  [PASS] ** THE ell ~ 1000 TROUGH IS DELTA'S **: the control sits at -0.10 there, the arm at -1.16, and DELTA carries 91 per cent of that deficit in 15 bins -- so `cc66.34`'s 'the gap is the arm's' sharpens to ** 'the gap is the MODEL DIFFERENCE'S' **, with this sky contributing the remaining tenth   (control -0.103, arm -1.159, DELTA -1.056 = 91% of the arm's deficit)
+  [PASS] ...and DELTA grows with multipole monotonically where the residuals do not, because a residual is DELTA plus a noise floor of order one and the floor flattens the growth   (0.41 -> 0.57 -> 0.74)
+  [PASS] ** so all three of the features `cc66.34` established are the ARM'S turn out to be DELTA'S ** -- the peak/trough pattern, the ell~1000 trough and the growth are the model difference showing through the residual, which is what makes them readable at all   (troughs -0.836, ell~1000 -1.056, growth 0.41 -> 0.74)
+
+  (e) AND WHAT DELTA IS ORTHOGONAL TO -- the order asked for this as well as for the shape
+      single directions, amplitude-marginalised:
+      amplitude (the fitted A)       cos -0.0025     0.00% of ||DELTA||^2
+      position (peak rescale)        cos -0.1409     1.98% of ||DELTA||^2
+      tilt (delta n_s)               cos +0.0832     0.69% of ||DELTA||^2
+      damping shape                  cos -0.0628     0.39% of ||DELTA||^2
+      ** CONTRAST (control only) **  cos +0.7464    55.72% of ||DELTA||^2
+
+      SPAN of position+tilt+damping           :   8.57% of ||DELTA||^2
+      SPAN with the contrast direction added :  69.16%   (+60.59 points)
+  [PASS] ** `cc66.33`'s four-parameter family is essentially orthogonal to DELTA **, which is what that receipt found qualitatively and this measures   (8.57% -- so DELTA is 91.4% outside it)
+  [PASS] ** AND ONE DIRECTION BUILT FROM THE CONTROL ALONE, WITH NO RUN AND NOTHING FITTED, CARRIES ABOUT HALF OF IT **   (55.7%)
+
+      robustness of the contrast direction in its one tunable:
+        window 0.75 periods: cos +0.7584  ->  57.5% of ||DELTA||^2
+        window 1.00 periods: cos +0.7464  ->  55.7% of ||DELTA||^2
+        window 1.25 periods: cos +0.7269  ->  52.8% of ||DELTA||^2
+        window 1.50 periods: cos +0.6802  ->  46.3% of ||DELTA||^2
+
+      the six figures this receipt's prose prints, pinned on the ARM OF RECORD:
+        ||DELTA||^2                 81.8093  against   81.8100  (+-0.05)  ok
+        four-parameter span %        8.5717  against    8.5700  (+-0.05)  ok
+        contrast direction %        55.7164  against   55.7200  (+-0.05)  ok
+        span with contrast %        69.1590  against   69.1600  (+-0.05)  ok
+        oscillation ratio            1.0440  against    1.0440  (+-0.0004)  ok
+        DELTA/sigma at troughs      -0.8363  against   -0.8360  (+-0.004)  ok
+  [PASS] ⛭⛭⛭ ** AND ALL SIX FIGURES THIS RECEIPT'S PROSE PRINTS ARE PINNED TO THE ARM OF RECORD **, each to a tolerance narrower than its distance from the namesake's value: ||DELTA||^2 81.81, the four-parameter span 8.57%, the contrast direction 55.72%, the two together 69.16%, the oscillation ratio 1.0440 and DELTA/sigma at the troughs -0.836.  ⛔ *Added at r7649 because every OTHER gate here is an inequality or a range that passes on BOTH arms, so the re-point moved every printed figure and could not have reddened anything.  This is the gate the perturbation bites.*   (||DELTA||^2 81.8093; four-parameter span % 8.5717; contrast direction % 55.7164; span with contrast % 69.1590; oscillation ratio 1.0440; DELTA/sigma at troughs -0.8363)
+  [PASS] ⛭⛭ and the same six again, as LITERAL comparisons, so `check_figures_pinned` can see them -- the tuple form above is invisible to its AST reader.  ⌗ *Same content, visible instrument; the repair `cc66.87` established on a dict*   (81.8093 / 8.5717 / 55.7164 / 69.1590 / 1.0440 / -0.8363)
+  [PASS] ...and it does not depend on the window: 46 to 58 per cent across a factor two in it, so the one tunable is reported rather than chosen (46 to 51 on the namesake arm)   (46.3% to 57.5%)
+
+PART 4 -- THE ORDER'S SHORT LIST, ONE KNOB OFF EACH ARM'S OWN MINIMUM.
+----------------------------------------------------------------------------------------------------
+
+  ** HOW A CANDIDATE IS TESTED HERE, BECAUSE THE OBVIOUS STATISTIC IS THE WRONG ONE. **  A knob's
+  per-arm SHAPE can look very like DELTA and still carry none of it: if the knob does nearly the same
+  thing to both arms it CANCELS in the difference.  So the test is ** does switching the knob off on
+  BOTH arms remove DELTA ** -- ||DELTA||^2 with the knob at its default against with it off -- and
+  the per-arm cosine is printed beside it to show the two answers are not the same question.
+
+  (a) THE HANDOVER AMPLITUDE (0.4835 against the free oscillator's 0.5) -- EXCLUDED EXACTLY,
+      AND WITHOUT A RUN, BECAUSE THE INSTRUMENT SETS IT k-INDEPENDENTLY.
+  [PASS] the instrument's `CRAMP=flat` default is a CONSTANT array over k, which is what makes the argument available at all   (`_That0 = (-_T(xe) / 2.0) * np.ones(nk)` is in the source)
+      0.4835 -> 0.5 scales C_l by (0.5/0.4835)^2 = 1.069417 at EVERY k
+      chi2 286.8941240254 -> 286.8941240254    fitted amplitude 13583.4831 -> 12701.7656 (ratio 1.069417)
+  [PASS] ** a k-independent factor on Theta-hat is absorbed by the single fitted amplitude: chi2 does not move and the residual does not move **, so it cannot be in DELTA at all   (dchi2 = +1.1e-13, max |dr| = 2.9e-14)
+  [PASS] ...and independently, DELTA's overlap with the amplitude direction is zero to three decimals   (cos = -0.0025)
+
+  (b) ⛔ AND A KNOB SHADOW, FOUND WHILE TESTING THE FIFTH CANDIDATE AND REPORTED AS A FINDING.
+      `_SWSRC` and `_DPSRC` -- the monopole and Doppler switches r4558 added -- are read
+      ONLY inside `los_spectrum`'s source().  The HIERARCHY path builds its own source and
+      carries `_ISW` but NOT the other two, so on `HIER=1` -- the path every refit number in
+      this sector is computed on -- ** DPSRC and SWSRC are not connected. **
+  [PASS] `_DPSRC` appears in the source exactly once outside its own definition, and that use is INSIDE `los_spectrum`   (one use, at offset 64738 against `los_spectrum` at 61756)
+  [PASS] ...while `_ISW` is used TWICE, in DIFFERENT functions -- which is why the ISW candidate below IS testable on the refit path and the Doppler one is not   (_ISW used 2x, at 64648 and 82658, with 5 top-level def(s) between them)
+  [PASS] ⛭ and the shadow is CLOSED on the live instrument (736f9399, r6889+cc66.36): `_project`, the hierarchy path's projection, now multiplies the monopole by `_SWSRC` and the Doppler term by `_DPSRC` -- so the Doppler candidate IS testable on the refit path, which this part routed   (`_project` spans offsets 124076-136513 and carries all three switches)
+  [PASS] ** ⛔ AND THIS MEASUREMENT IS HISTORICAL, SO IT IS PINNED TO THE `LEAFREC=0` NAMESAKES AND NOT TO WHATEVER `arm` POINTS AT **, because a measurement of the instrument before `r6889+cc66.36` can only be read against the spectra that instrument made   (the two files actually read are ['cc66_r185_verify_lcdm.npz', 'cc66_r185_verify_cr.npz'])
+  [PASS] ** AND THE MEASUREMENT THAT FOUND IT: `DPSRC=0` on the refit configuration returns a BIT-IDENTICAL spectrum on BOTH arms ** -- which is the signature of an unwired knob and is not a null, exactly as this instrument's own note at r4558 says   (max |dD_l| = 0.0e+00 (control), 0.0e+00 (arm))
+
+  (c) THE THREE INSTRUMENTED CANDIDATES, each switched off on BOTH arms
+      candidate  ||DELTA_off||^2  of base     cos  contrast   per-arm cos(knob shape, DELTA)
+      ln24                72.370    88.5% +0.9695    1.0393   ctl -0.222  arm -0.376
+      noisw               71.703    87.6% +0.9235    1.0438   ctl +0.278  arm +0.267
+      dre0                52.741    64.5% -0.2145    1.0395   ctl -0.659  arm -0.677
+      drc0                67.650    82.7% +0.9628    1.0384   ctl -0.228  arm -0.236
+      BASE                81.810   100.0% +1.0000    1.0440
+  [PASS] neutrino free-streaming: the hierarchy depth LN 12 -> 24: switching it off on both arms leaves 88.5% of ||DELTA||^2 and the contrast at 1.0393  -- ** it is NOT what DELTA is **   (||DELTA||^2 81.8 -> 72.4, cos +0.969, contrast 1.0440 -> 1.0393)
+  [PASS] the early integrated Sachs-Wolfe term, NOISW=1: switching it off on both arms leaves 87.6% of ||DELTA||^2 and the contrast at 1.0438  -- ** it is NOT what DELTA is **   (||DELTA||^2 81.8 -> 71.7, cos +0.923, contrast 1.0440 -> 1.0438)
+  [PASS] the driving, EULER half only: DRE=0 (the k^2 Psi gradient): switching it off on both arms leaves 64.5% of ||DELTA||^2 and the contrast at 1.0395  -- ** it carries a real part of DELTA **   (||DELTA||^2 81.8 -> 52.7, cos -0.215, contrast 1.0440 -> 1.0395)
+  [PASS] the driving, CONTINUITY half only: DRC=0 (the 4 Phi-prime): switching it off on both arms leaves 82.7% of ||DELTA||^2 and the contrast at 1.0384  -- ** it is NOT what DELTA is **   (||DELTA||^2 81.8 -> 67.6, cos +0.963, contrast 1.0440 -> 1.0384)
+
+      ⚠ AND TWO THINGS THE TABLE MUST NOT BE READ AS SAYING.
+        Switching a driving term or a source term off is a LARGE excursion and not a
+        derivative: both arms move a long way from their own minima, so the column is
+        'does DELTA survive this' and not 'this term contributes so much of DELTA'.
+        And `DRE=0` takes ||DELTA||^2 down by 36% while ROTATING it to
+        cos -0.215 -- nearly orthogonal.  ** That is DELTA being replaced, not
+        reduced **, so the Euler half is not 32 per cent 'of' DELTA in any additive sense.
+  [PASS] the Euler half's excursion rotates DELTA to near-orthogonality rather than shrinking it along itself, which is why its reduction is reported as a norm and not as a share   (cos = -0.215 at 64% of the norm)
+  [PASS] ** AND NOT ONE OF THEM REMOVES THE CONTRAST **, which is what PART 3 says DELTA mostly is -- so on the evidence here the order's list does not contain it   (contrasts after switching off: ln24 1.0393, noisw 1.0438, dre0 1.0395, drc0 1.0384)
+  [PASS] ...the largest single reduction of ||DELTA||^2 by any of them, named with its size rather than rounded to 'none'   (dre0 takes 81.8 -> 52.7, i.e. 35.5% of it)
+
+PART 5 -- THE FIFTH CANDIDATE, ON THE PATH WHERE ITS KNOB IS CONNECTED.
+----------------------------------------------------------------------------------------------------
+
+  PART 3 says DELTA is a CONTRAST and PART 4(b) says the knob that would test the channel is not
+  wired on the refit path.  ** So the same two runs are done on the LINE-OF-SIGHT path, where it is.
+  **  Two things come out of that and only the second is about this construction:
+    (i)  a CALIBRATION -- the switch demonstrably moves the spectrum there, which is what turns
+         "DPSRC=0 changed nothing on HIER=1" from a null into a proof of the knob shadow;
+    (ii) the DIRECTION the Doppler dipole controls, to be compared with the contrast direction
+         PART 3 built from the control alone.
+  ⚠ The LOS path's chi^2 is NOT comparable with the hierarchy path's -- this tree's own
+  `spectra/README.md` records the same caveat -- so nothing below is read as a chi^2 against the sky.
+  Only shapes, and ratios WITHIN the LOS path, are read.
+
+    the SAME configuration on the LOS path: ||DELTA_LOS||^2 = 128.43   contrast 1.0325
+  [PASS] ** DELTA IS THE CONFIGURATION'S AND NOT ONE PATH'S **: the two instrument paths give model differences that agree in direction, and both carry the same contrast excess   (cos(DELTA_LOS, DELTA_HIER) = +0.733, contrast 1.0325 against 1.0440)
+
+  (i) THE CALIBRATION: `DPSRC=0` on the LOS path moves D_l by up to 62 per cent
+  [PASS] ** so the switch DOES reach the term it names -- and it changed NOTHING at all on the refit path, which together prove the knob shadow rather than infer it **   (62% on LOS against exactly 0 on HIER=1)
+
+  (ii) WHAT THE DOPPLER DIPOLE CONTROLS
+      control : removing it takes the oscillation about the envelope to 1.849 of its own
+      control : cos(its shape, the CONTRAST direction) = +0.8768    cos(its shape, DELTA) = +0.5818
+      arm     : removing it takes the oscillation about the envelope to 1.855 of its own
+      arm     : cos(its shape, the CONTRAST direction) = +0.8934    cos(its shape, DELTA) = +0.6051
+  [PASS] ⚑ ** THE DOPPLER DIPOLE IS THE CONTRAST KNOB **: removing it nearly doubles each arm's oscillation about its own envelope, and its shape sits at cosine 0.88-0.89 with the contrast direction PART 3 built from the control with no run at all   (contrast 1.855, cos with the contrast direction +0.8934)
+
+      but switching it off on BOTH arms does NOT remove DELTA: ||DELTA_LOS||^2 128.4 -> 261.6 (204%), contrast 1.0325 -> 1.0352
+  [PASS] ...so the channel is IDENTIFIED and the cause is NOT measured: deleting the term is all-or-nothing and leaves the arms' RATIO where it was, which says the two arms differ in how much this channel supplies and not in whether it is there   (||DELTA||^2 rises to 204% while the contrast ratio holds at 1.0352)
+
+      AND THE MONOPOLE, THE OTHER HALF OF THE SAME SOURCE: `SWSRC=0` takes the arm's oscillation about its envelope to -0.300 -- it INVERTS, the remaining dipole oscillating in antiphase to the monopole -- and sits at cos -0.7908 with the contrast direction
+  [PASS] ⚑ ** SO THE TWO HALVES OF THE SOURCE BRACKET THE CONTRAST WITH OPPOSITE SIGNS **: removing the DIPOLE doubles the oscillation at cos +0.89 with the contrast direction and removing the MONOPOLE inverts it at cos -0.79 -- the contrast direction IS the monopole-to-dipole balance, which is a stronger statement than either term alone and is why the attribution is not read off one switch   (SWSRC=0: contrast -0.300 at cos -0.7908, against DPSRC=0's 1.855 at +0.8934; ||DELTA_LOS||^2 -> 134.1)
+
+====================================================================================================
+THE READING.
+====================================================================================================
+
+  ** THE ORDER'S QUESTION (2), ANSWERED PLAINLY AND FIRST, BECAUSE IT IS THE ONE THAT COULD HAVE
+  CHANGED THE HEADLINE. **  chi2_arm = chi2_ctl + 2<r_ctl,DELTA> + ||DELTA||^2 exactly:
+  286.89 = 177.88 + +27.21 + 81.81.  ** ||DELTA||^2 carries
+  75 per cent of the excess and the cross term 25. **
+  So the order's conditional -- "if the cross term carries the excess ... part of the rejection is a
+  fluke of one sky" -- ** does not fire. **  Set the cross term to its expectation of zero and the arm
+  still scores 179 + 81.8 = 260.8, which is 1.46 per bin on a TYPICAL sky
+  against the control's 0.994.  ⇒ *** The rejection is what this construction costs whatever
+  sky we got. ***
+
+  ** AND THE 1.15 IS 1.078, AND IT IS THE CROSS TERM. **  The order's coefficient mixes metrics -- the
+  whitened cosine 0.848 against the DIAGONAL rms ratio 1.39 -- and taken consistently it
+  is 1.076 whitened or 1.145 diagonal.  ⇒ More than that, b - 1 IS
+  <DELTA,r_ctl>/||r_ctl||^2, so ** the "amplification along the noise direction" and the cross term
+  are one number seen twice **, and against its own sky-random null it is
+  +1.50 sigma: 1.076 +- 0.051.  *A 1.6-sigma departure from 1.00 is what noise
+  looks like, so there is no amplification to explain -- which also means the order's two candidate
+  explanations FOR it, both framed as amplifications of something shared, have nothing to act on.*
+
+  ⌗ ** AND `r6887`, WHICH REACHED THIS SEAT AFTER THE RUNS. **  It voids part (1) -- "do not compute
+  the coefficient" -- on exactly the ground `cc66.34` gave.  *The coefficient IS reported above, and
+  the reason is that it had already been run and what it shows is not the coefficient as evidence but
+  ** that it IS the cross term, algebraically and at 1.6 sigma **, which is the same verdict reached
+  with a number attached rather than a second time.*  ⇒ *`r6887` also makes (3) the whole of the
+  order, sharpened to read DELTA against the three features `cc66.34` proved are the arm's own -- and
+  PART 3(f) does that: ** all three are DELTA'S **.  The ell~1000 trough is the clearest: the control
+  sits at -0.103 there, the arm at -1.159, and DELTA carries
+  -1.056 of it, 91 per cent, in 15 bins.*
+
+  ⚑ ** WHAT DELTA IS, WHICH IS THE PART THE ORDER COULD NOT HAVE GUESSED. **  It is
+  ** trough-dominated **: +0.002 sigma at the peaks against -0.836 at the
+  troughs, so *** the two arms agree where the peaks are and differ between them ***.  Split about a
+  smooth envelope, the OSCILLATORY part carries 71 of the 82 and is peak-high,
+  trough-low (+0.423 / -0.458) -- antisymmetric about the envelope and
+  not about each peak, which is a ** CONTRAST ** and not a phase and not an envelope.  ⇒ As one
+  number: *** the arm's acoustic oscillation is 1.044 times the control's about its own
+  envelope. ***  And one direction built from the CONTROL alone -- raise the oscillation at fixed
+  envelope, no run and nothing fitted -- carries
+  56 per cent of ||DELTA||^2, against
+  ** 8.6 per cent for the whole of `cc66.33`'s amplitude-tilt-damping-position
+  family **.  *That is what "amplitude, tilt, damping and position together do not account for the
+  shape rejection" was pointing at: the family was missing a direction, and the direction has a name.*
+
+  ** THE SHORT LIST. **  The handover amplitude is excluded EXACTLY and without a run -- the
+  instrument sets Theta-hat k-independently, so the single fitted amplitude absorbs it and chi2 moves
+  by 9e-13.  Of the rest, switching each off on BOTH arms removes: the neutrino hierarchy depth 11.5%, the early ISW term 12.4%, the driving's Euler half 35.5%, the driving's continuity half 17.3%.
+  *** Not one of them removes the contrast. ***  ⇒ ** So the answer to (4) is the negative the order
+  said it would rather have: it is none of these, and here is what DELTA looks like. **
+
+  ⚑ ** AND A FIFTH CANDIDATE, NOT ON THE ORDER'S LIST, WHICH THE SHAPE NAMES BY ITSELF. **  DELTA's
+  signature is exactly what this instrument's own `los_spectrum` docstring says a mis-weighted Doppler
+  term does -- "fills the troughs at high multipole ... while leaving the FIRST peak's position almost
+  alone".  ⛔ *And its knob is a KNOB SHADOW on the refit path: `_SWSRC` and `_DPSRC` are read only
+  inside `los_spectrum`, the hierarchy path builds its own source and carries `_ISW` but not the other
+  two, and `DPSRC=0` at the refit configuration returns a BIT-IDENTICAL spectrum on both arms -- the
+  same shape as the `NS` literal at `cc66.17`, a switch checked on the path it reaches while the path
+  that matters ignores it.  Reported rather than repaired: wiring a source term is a change to the
+  instrument and not to a receipt.*  ⇒ So PART 5 tests it where the knob DOES reach, which both
+  calibrates the switch (62 per cent on D_l there against exactly zero on `HIER=1`, and that pair is
+  what makes the shadow a proof rather than a null) and answers it: *** removing the Doppler dipole
+  nearly doubles each arm's oscillation about its own envelope, to 1.85, and its shape sits at cosine
+  0.88-0.89 with the contrast direction PART 3 built from the control with no run at all.  The Doppler
+  dipole IS the contrast knob. ***  ⇒ And the MONOPOLE, the other half of the same source, brackets it
+  from the other side: `SWSRC=0` INVERTS the oscillation, to -0.300, at cosine -0.79.  ** So the
+  contrast direction is the monopole-to-dipole BALANCE **, which neither switch on its own would have
+  established.  ⌗ *And DELTA agrees between the two instrument paths at cosine +0.76 carrying the same
+  contrast excess, so it is the configuration's and not one path's.*
+
+  ⚠ ** THE CHANNEL IS IDENTIFIED AND THE CAUSE IS NOT MEASURED, AND THE DIFFERENCE MATTERS. **
+  Deleting the term is all-or-nothing: it leaves the arms' contrast RATIO where it was (1.033 to
+  1.035) and DOUBLES ||DELTA||^2.  *So the two arms differ in HOW MUCH this channel supplies, not in
+  whether it is there* -- and measuring that wants the term SCALED rather than deleted, on a path where
+  the switch is wired.  ** Both of those are the next order's to give and neither is done here. **
+
+  ⚠ ** WHAT IS STILL UNNAMED. **  The best span here reaches
+  69 per cent of ||DELTA||^2 and *** 31 per cent
+  is not accounted for by any direction in this receipt ***.  And naming the shape is not naming the
+  mechanism: "the arm's oscillation is 104.4% larger at fixed envelope" is a measurement, and
+  what produces it is the next question rather than this one's answer.
+
+====================================================================================================
+GATES: ALL PASS.
+
+ESTABLISHED: chi2_arm = chi2_ctl + cross + ||DELTA||^2 exactly, 286.89 = 177.88 +27.21
++ 81.81, so ||DELTA||^2 carries 75% of the excess and the rejection is NOT
+one sky's luck -- on a typical draw the arm scores 1.46 per bin.  The order's 1.15 mixes two
+metrics; consistently the coefficient is 1.076 +- 0.051, it IS the cross term, and it is
++1.50 sigma from 1.00.  DELTA is trough-dominated (+0.002 at peaks,
+-0.836 at troughs), its oscillatory part carries 71 of 82, and it is a
+CONTRAST: the arm's oscillation is 1.044 of the control's about its own envelope.  A contrast
+direction built from the control alone carries 56% of
+||DELTA||^2 against 8.6% for cc66.33's four-parameter family.  The handover
+amplitude is excluded exactly by k-independence; of the instrumented candidates none removes the
+contrast.  AND the fifth candidate the shape names is the Doppler dipole: its knob is a KNOB
+SHADOW on the hierarchy path (bit-identical there, 62% on the LOS path), and where it is wired its own
+direction sits at cosine 0.88-0.89 with the contrast direction -- the Doppler dipole IS the contrast
+knob, though deleting it does not remove the arms' ratio and so identifies the channel rather than
+measuring the cause.
+NOT CLAIMED: a mechanism -- the contrast is a shape and not a cause; completeness -- 31% of
+||DELTA||^2 is unnamed; and nothing here bears on whether the transfer or the cosmology is at fault,
+which `r6881+cc66.34` withdrew the statistic for.
+
