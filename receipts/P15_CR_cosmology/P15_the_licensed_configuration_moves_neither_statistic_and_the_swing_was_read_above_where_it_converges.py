@@ -472,21 +472,32 @@ gate("⛭ H⑦ the banked and licensed rows agree on the arm of record because t
      bool(_same and _md5_differ))
 
 # =====================================================================================
-head("I.  \u26ed\u26ed\u26ed r7657 (cc66), ORDERED BY 69 ITEM 1 -- l.1938-1955 WHOLE ON THE ARM OF RECORD, "
+head("I.  ⛭⛭⛭ r7657 (cc66), ORDERED BY 69 ITEM 1 -- l.1938-1955 WHOLE ON THE ARM OF RECORD, "
      "IN ONE TABLE, WITH THE PARAGRAPH'S OWN FIGURES READ OUT OF THE PAPER BESIDE THEM")
 # =====================================================================================
 #
-# \u26ed ** 69's ITEM 1, verbatim: "Give the rest of the paragraph on the same arm in one table:
+# ⌗ ** TWO OF 69's FIGURES ARE ELIDED FROM THE QUOTE BELOW AND FROM I④'s LABEL, and a GATE is
+#   the reason: `check_marker_transposition` reads a receipt's own source for a paper figure's
+#   digits and treats the receipt as CARRYING that number, so printing another site's figure in
+#   PROSE makes this file a FALSE CARRIER for it.  That is exactly what happened at r7657: the
+#   gate flagged l.1997's restatement of the namesake grid's acoustic scale as transposed away
+#   from the optical-depth group that closes it, because THIS file's prose had started quoting
+#   those digits -- and naming them AGAIN in this very comment would re-make the flag, so the
+#   number is not written here either.  Its own `unquoted()` drops
+#   lines carrying `$` or `TEX` for this reason, and a plain `#` comment is not dropped. **
+#   ⇒ *So this file prints the figures it COMPUTES and reads the paper's out of the paper.
+#   Nothing is hidden: the elision is marked here, and both figures are in I④'s own read.*
+# ⛭ ** 69's ITEM 1, verbatim: "Give the rest of the paragraph on the same arm in one table:
 #   `rising one per cent`, the longest run 18 -> 22 and 18 -> 12, chi^2 per bin 3.05, 3.20 and 1.47,
-#   the sign changes 30 -> 44, ell_A 302.889 -> 301.380 against 301.375, and `indistinguishable
-#   below ell ~= 800`.  I land it whole, with the `\rcpt` you recommend on the run-length sentence.
+#   the sign changes 30 -> 44, ell_A <the namesake pair's own two figures, ELIDED here and read
+#   out of l.1946 by I④ instead> against 301.375, and `indistinguishable below ell ~= 800`.  I land it whole, with the `\rcpt` you recommend on the run-length sentence.
 #   On your figures the gap the sentence turns on falls from ten bins to four, so say whether
 #   `separate only above it` still holds, or how it should read." **
 #
-# \u26d4\u26ed\u26ed\u26ed ** AND THE FIRST HALF OF THE PARAGRAPH HAS NO ARM-OF-RECORD COUNTERPART AT ALL, which
+# ⛔⛭⛭⛭ ** AND THE FIRST HALF OF THE PARAGRAPH HAS NO ARM-OF-RECORD COUNTERPART AT ALL, which
 #   is the finding and not a gap in the table.  ON THE ARM OF RECORD THE BANKED GRID ALREADY
 #   CARRIES `LEAFREC=1 LEAFSCALES=1` AND NO `LEAFGEOM` -- it IS the configuration the rate rule
-#   specifies. **  The two grids' switches are printed below and are the same string; `H\u2466` already
+#   specifies. **  The two grids' switches are printed below and are the same string; `H⑦` already
 #   showed their spectra bit-identical.  ⇒ *So `the configuration the rate rule specifies moves
 #   neither statistic` is EXACTLY true there, to the bit, and its four figures -- `0.08` of an
 #   error, `rising` one per cent to `-0.0642`, `18` to `22`, `3.05` to `3.20` -- are the NAMESAKE
@@ -568,13 +579,13 @@ for _ttl, _T in ((f"THE ARM OF RECORD, read to ell {_TOP}", _AO),
     print(f"      {'control':<11}{C['banked']['lcdm'][0]:+9.4f}{C['banked']['lcdm'][1]:8.4f}"
           f"{'':10}{'':8}{'':7}{'':8}{'':10}{'':10}{_LA_CTL:11.3f}")
 
-gate("\u26d4\u26ed\u26ed\u26ed ** I\u2460 THE PARAGRAPH'S FIRST HALF IS NAMESAKE-ONLY, BECAUSE THE RE-POINT MADE THE "
+gate("⛔⛭⛭⛭ ** I① THE PARAGRAPH'S FIRST HALF IS NAMESAKE-ONLY, BECAUSE THE RE-POINT MADE THE "
      "LICENSED CONFIGURATION THE BASELINE: the arm-of-record banked and licensed grids carry THE "
      "SAME SWITCHES, so c, the crossings, the longest run and chi^2 per bin are identical to the "
      "bit and `moves neither statistic` is exactly true. **  *l.1940-1942's four figures -- 0.08 "
      "of an error, |c| rising one per cent to -0.0642, the run 18 to 22, chi^2/bin 3.05 to 3.20 -- "
      "are the NAMESAKE pair's, where the banked grid has no `LEAFREC` and the licensed one does.  "
-     "\u21d2 ** They cannot be re-pointed onto this arm: there is no second configuration to compare, "
+     "⇒ ** They cannot be re-pointed onto this arm: there is no second configuration to compare, "
      "and a table of zeroes would be a true table of the wrong comparison. ** *",
      bool(_sw_ao['banked'] == _sw_ao['licensed'] and 'LEAFGEOM' not in _sw_ao['banked']
           and 'LEAFREC=1' in _sw_ao['banked'] and 'LEAFSCALES=1' in _sw_ao['banked']
@@ -594,7 +605,7 @@ gate("\u26d4\u26ed\u26ed\u26ed ** I\u2460 THE PARAGRAPH'S FIRST HALF IS NAMESAKE
                    and abs(_NS['licensed'][6] - _PP['shape, licensed'][3]) < 5e-3
                    and abs(_AO['licensed'][6] - _PP['shape, licensed'][3]) > 5e-2))))
 _pl, _ps = _PP['coef, licensed'], _PP['shape, licensed']
-gate("\u26ed I\u2461 and the reader is CALIBRATED on the paper's own first-half digits before the second "
+gate("⛭ I② and the reader is CALIBRATED on the paper's own first-half digits before the second "
      "half is read with it: the namesake pair returns 0.08 of an error, |c| rising 1 per cent to "
      "-0.0642, the run 18 to 22 and chi^2/bin 3.05 to 3.20, each read out of l.1940-1942 rather "
      "than typed here.  *A reader that cannot reproduce the figures the paragraph prints has no "
@@ -622,7 +633,7 @@ print(f"      chi^2 per bin     {_NS['banked'][6]:.2f} -> {_NS['forbidden'][6]:.
       f"{_AO['banked'][6]:.2f} -> {_AO['forbidden'][6]:.2f}")
 print(f"      mean |excursion|  {_NS['banked'][7]:.3f} -> {_NS['forbidden'][7]:.3f}   became   "
       f"{_AO['banked'][7]:.3f} -> {_AO['forbidden'][7]:.3f}")
-gate("\u26ed\u26ed\u26ed ** I\u2462 ITEM 1's SECOND HALF, ON THE ARM OF RECORD: EVERY DIRECTION THE "
+gate("⛭⛭⛭ ** I③ ITEM 1's SECOND HALF, ON THE ARM OF RECORD: EVERY DIRECTION THE "
      "PRE-REGISTERED TEST NAMED HOLDS AND EVERY DIGIT MOVES. **  *c -0.0670 -> -0.0092, a move of "
      "6.7 of its error, |c| falling 86 per cent (the paper's 89) and landing 0.2 of an error from "
      "the control's own -0.0075; the sign changes 32 -> 38 where the paper prints 30 -> 44; the "
@@ -645,9 +656,10 @@ _pla = _PP['the scale']
 print(f"\n    and the acoustic scale: {_AO['banked'][8]:.3f} -> {_AO['forbidden'][8]:.3f} against "
       f"the control's {_LA_CTL:.3f}   (the paper's namesake pair: {_NS['banked'][8]:.3f} -> "
       f"{_NS['forbidden'][8]:.3f} against the same {_LA_CTL:.3f})")
-gate("\u26ed\u26ed ** I\u2463 AND THE SCALE FOLLOWS IT ON THIS ARM TOO, PAST THE CONTROL RATHER THAN ONTO IT: "
-     "l_A moves 302.943 -> 301.400 against the control's 301.375, where the paper prints 302.889 "
-     "-> 301.380 against the same 301.375. **  *The control's figure is UNMOVED because it is the "
+gate("⛭⛭ ** I④ AND THE SCALE FOLLOWS IT ON THIS ARM TOO, PAST THE CONTROL RATHER THAN ONTO IT: "
+     "l_A moves 302.943 -> 301.400 against the control's 301.375, where the paper prints its "
+     "NAMESAKE pair's own two figures against the same 301.375 -- READ out of l.1946 above and "
+     "not repeated here. **  *The control's figure is UNMOVED because it is the "
      "same file on every grid, which is what makes this a statement about the arm.  ** The "
      "forbidden route overshoots: the namesake landed 0.005 above the control and this arm lands "
      "0.025 above it, five times as far, on a move twenty times that size. ** *",
@@ -666,12 +678,12 @@ print(f"      namesake       specified {_SEQ_NS['licensed']}  forbidden {_SEQ_NS
       f"  gap {_GAPS_NS}")
 print(f"      ARM OF RECORD  specified {_SEQ_AO['licensed']}  forbidden {_SEQ_AO['forbidden']}"
       f"  gap {_GAPS_AO}")
-gate("\u26ed\u26ed\u26ed ** I\u2464 `separate only above it` STILL HOLDS AND THE CEILING MOVES UP: ON THE ARM OF "
-     "RECORD THE THREE ARE INDISTINGUISHABLE BELOW ell \u2243 900, NOT 800. **  *At 700, 800 and 900 "
+gate("⛭⛭⛭ ** I⑤ `separate only above it` STILL HOLDS AND THE CEILING MOVES UP: ON THE ARM OF "
+     "RECORD THE THREE ARE INDISTINGUISHABLE BELOW ell ≃ 900, NOT 800. **  *At 700, 800 and 900 "
      "the specified configuration reads 9, 9, 9 and the forbidden one 7, 8, 8 -- gaps of two, one "
      "and one bin -- where the namesake pair had already opened to four bins at 900 (13 against "
-     "9).  The separation appears only at the top ceiling, 16 against 12.  \u21d2 ** So the sentence's "
-     "STRUCTURE survives and two of its figures move: `indistinguishable below ell \u2243 900`, `every "
+     "9).  The separation appears only at the top ceiling, 16 against 12.  ⇒ ** So the sentence's "
+     "STRUCTURE survives and two of its figures move: `indistinguishable below ell ≃ 900`, `every "
      "one of them with a longest run of SEVEN to nine bins`, and the gap it turns on falls from "
      "ten bins to four. ** *",
      bool((_pc is None or (_pc[0] == 800 and _WORDNUM[_pc[1]] == 8 and _WORDNUM[_pc[2]] == 9
@@ -680,9 +692,9 @@ gate("\u26ed\u26ed\u26ed ** I\u2464 `separate only above it` STILL HOLDS AND THE
           and max(_GAPS_AO[:3]) <= 2 and _GAPS_AO[3] == 4 and _GAPS_NS[3] == 10
           and _GAPS_NS[2] == 4
           and min(min(v[:3]) for v in _SEQ_AO.values()) == 7))
-gate("\u2317 I\u2465 the control's coefficient is the SAME NUMBER on all six grids, and here that is an "
+gate("⌗ I⑥ the control's coefficient is the SAME NUMBER on all six grids, and here that is an "
      "identity rather than a check: the arm-of-record sets carry no control of their own, so all "
-     "three link the same nine `lcdm_*` files `H\u2460` showed byte-identical across the namesake "
+     "three link the same nine `lcdm_*` files `H①` showed byte-identical across the namesake "
      "grids.  *Said plainly because `identical across all three grids` reads like a measurement, "
      "and on this arm it is a property of the composition -- the MEASUREMENT of it is the namesake "
      "row in F.*",
@@ -716,18 +728,18 @@ gate("⛭ I⑦ ** EVERY DIGIT r7657 PUTS IN THIS RECEIPT'S INDEX ROW IS A LITERA
           and abs(round(_AO['forbidden'][8], 3) - 301.400) < 1e-9
           and abs(round(_LA_CTL, 3) - 301.375) < 1e-9))
 print("""
-    \u26ed\u26ed\u26ed THE RECOMMENDATION 69 ASKED FOR, IN ONE PLACE:
-      \u2460 l.1939-1942, the licensed half: it is a NAMESAKE comparison and should say so, or go.
+    ⛭⛭⛭ THE RECOMMENDATION 69 ASKED FOR, IN ONE PLACE:
+      ① l.1939-1942, the licensed half: it is a NAMESAKE comparison and should say so, or go.
         On the arm of record there is no second configuration -- the baseline already carries the
         rule's own assignment -- so `moves neither statistic` is exactly true and its four figures
         have no counterpart here.  ** Recommend: keep the half, name the grid it is read on. **
-      \u2461 l.1943-1949, the forbidden half: re-point every digit.  c -0.0670 -> -0.0092 at 6.7 of
+      ② l.1943-1949, the forbidden half: re-point every digit.  c -0.0670 -> -0.0092 at 6.7 of
         its error, |c| falling 86 per cent onto the control's own value, sign changes 32 -> 38,
         longest run 16 -> 12, chi^2 per bin 2.64 -> 1.33, l_A 302.943 -> 301.400 against 301.375.
-      \u2462 l.1952-1954, the four-ceiling sentence: `indistinguishable below ell ~= 900` (not 800),
+      ③ l.1952-1954, the four-ceiling sentence: `indistinguishable below ell ~= 900` (not 800),
         `a longest run of seven to nine bins` (not eight or nine), the specified run growing
         9, 9, 9, 16 and the forbidden one 7, 8, 8, 12.  `separate only above it` HOLDS.
-      \u2463 and the \u0060\\rcpt\u0060 on that sentence: it is closed by the THREE-GRID receipt, which gates none
+      ④ and the `\\rcpt` on that sentence: it is closed by the THREE-GRID receipt, which gates none
         of these four numbers.  ** Recommend citing THIS receipt there -- it computes all four at
         those four ceilings on both arms -- and leaving the three-grid citation on the reach
         sentence that follows, which is its own. **
