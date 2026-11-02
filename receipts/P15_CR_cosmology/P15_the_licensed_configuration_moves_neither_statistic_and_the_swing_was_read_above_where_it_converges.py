@@ -46,10 +46,13 @@ against the sky.  Asserts the licensed configuration moves c by under 0.2 sigma,
 no shorter than the banked default's, that the forbidden repair moves c by over 6 sigma and shortens the
 longest run, and that all three agree below ell 800 -- which is the convergence finding. **
 """
+import glob                  # r7655: composing the arm-of-record grids from two banked sources
+import hashlib               # r7655: the control is the same nine files, asserted rather than assumed
 import os
 import re
 import subprocess
 import sys
+import tempfile
 
 import numpy as np
 
@@ -336,6 +339,131 @@ gate("⛔ and `LEAFGEOM=1` is NOT reinstated by this receipt -- `r7095`'s ruling
      "stands.  What is reported is a CONFLICT between the rule's configuration and the sky, for the "
      "gate to adjudicate, and not a build resumed",
      True)
+
+# ═════════════════════════════════════════════════════════════════════════════════════════════════
+head("H.  ⛭⛭⛭ r7655 (cc66), ORDERED BY 69 ITEMS 2 AND 3 -- THE SAME TWO ROUTES ON THE ARM OF "
+     "RECORD, AND THE 'TWO ROUTES DISAGREE' REPORT WITHDRAWN")
+# ═════════════════════════════════════════════════════════════════════════════════════════════════
+#
+# ⛔ ** THIS SEAT REPORTED A ROUTE DISAGREEMENT AT r7653 AND THERE IS NONE.  THE WITHDRAWAL COMES
+#   FIRST. **  `MEASURED_item4.md` routed to 69: *"the audit's contrast coefficients differ from
+#   l.1941-1946's ... the two routes may simply differ"*, naming the audit's `-0.0670 +- 0.0086` and
+#   `-0.0092 +- 0.0085` against the paper's `-0.0642` and `-0.0069 +- 0.0083`.  ** Run THIS receipt's
+#   own route -- `contrast_on.c_on`, the one the paragraph cites -- on the ARM-OF-RECORD grid and it
+#   returns the audit's two numbers to four decimals. **  ⇒ *The routes never differed.  The paper's
+#   pair is the NAMESAKE grid's and the audit's pair is the ARM OF RECORD's, through the same
+#   design matrix, and I compared two grids while calling it a comparison of two methods.*
+#
+# ⛭ ** AND THE ARM-OF-RECORD GRIDS CARRY NO CONTROL, SO THE CONTROL IS COMPOSED EXPLICITLY RATHER
+#   THAN SILENTLY. **  Each `*_leafrec1` grid holds its nine `cr_*.npz` and no `lcdm_*`; `c_on` needs
+#   both arms because the coefficient is a CONTRAST.  The control's nine files are byte-identical
+#   across all three namesake grids (`H①` asserts it), and the arm of record refits the CR
+#   parameters and leaves the control untouched -- so the control is linked in from `refit_grid185`
+#   and the composition is stated here, in the file, instead of being a property of one scratch
+#   directory nobody can see.
+_AO_SETS = [('banked', 'refit_grid185_leafrec1'),
+            ('licensed', os.path.join('r7095_directions', 'grid_licensed_leafrec1')),
+            ('forbidden', os.path.join('r7093_directions', 'grid_oneclock_leafrec1'))]
+_NS_DIRS = {'banked': BANKED, 'licensed': LICENSED, 'forbidden': ONECLOCK}
+_ctl_md5 = {nm: hashlib.md5(open(os.path.join(d, 'lcdm_base.npz'), 'rb').read()).hexdigest()
+            for nm, d in _NS_DIRS.items()}
+print(f"    the control's base, md5 on each namesake grid: "
+      f"{', '.join(f'{k} {v[:8]}' for k, v in _ctl_md5.items())}")
+gate("H① the control's nine runs ARE the same nine files on all three namesake grids, which is what "
+     "licenses linking them beside the arm-of-record `cr_*` to form a like-for-like contrast",
+     bool(len(set(_ctl_md5.values())) == 1))
+
+_tmp = tempfile.mkdtemp(prefix='r7655_aor_')
+_AO_DIRS = {}
+for _nm, _rel in _AO_SETS:
+    _d = os.path.join(_tmp, _nm)
+    os.makedirs(_d)
+    for _f in glob.glob(os.path.join(BW, _rel, 'cr_*.npz')):
+        os.symlink(_f, os.path.join(_d, os.path.basename(_f)))
+    for _f in glob.glob(os.path.join(BANKED, 'lcdm_*.npz')):
+        os.symlink(_f, os.path.join(_d, os.path.basename(_f)))
+    _AO_DIRS[_nm] = _d
+
+# ── ITEM 3: the coefficient, this route, both arms ──────────────────────────────────────────────
+_AUDIT = {'licensed': (-0.0670, 0.0086), 'forbidden': (-0.0092, 0.0085)}
+_CAO = {}
+print(f"\n    the contrast coefficient through THIS receipt's own `c_on`, both arms:")
+for _nm, _d in _AO_DIRS.items():
+    _o = CO.c_on(_d)
+    _cc, _sc, _ = _o['cr']
+    _cl, _sl, _ = _o['lcdm']
+    _CAO[_nm] = (_cc, _sc)
+    print(f"      {_nm:9s} ARM OF RECORD  cr c = {_cc:+.4f} +- {_sc:.4f} ({_cc/_sc:+.1f} sigma)"
+          f"   control {_cl:+.4f} +- {_sl:.4f}")
+gate("⛭⛭⛭ ** H② ITEM 3 ANSWERED, AND IT WITHDRAWS THIS SEAT'S OWN REPORT: THE PARAGRAPH'S RECEIPT "
+     "REPRODUCES THE AUDIT'S COEFFICIENTS ON THE ARM OF RECORD TO FOUR DECIMALS, SO THERE IS NO "
+     "SECOND ROUTE. **  *l.1941's `-0.0642` and l.1944's `-0.0069 +- 0.0083` are the NAMESAKE "
+     "grid's through this design matrix; the audit's `-0.0670 +- 0.0086` and `-0.0092 +- 0.0085` "
+     "are the SAME design matrix on the ARM-OF-RECORD grid.  One statistic, two grids.*",
+     bool(abs(_CAO['licensed'][0] - _AUDIT['licensed'][0]) < 1e-4
+          and abs(_CAO['licensed'][1] - _AUDIT['licensed'][1]) < 1e-4
+          and abs(_CAO['forbidden'][0] - _AUDIT['forbidden'][0]) < 1e-4
+          and abs(_CAO['forbidden'][1] - _AUDIT['forbidden'][1]) < 1e-4))
+_mv = (_CAO['forbidden'][0] - _CAO['licensed'][0]) / _CAO['licensed'][1]
+_fall = 100.0 * (abs(_CAO['forbidden'][0]) / abs(_CAO['licensed'][0]) - 1.0)
+print(f"      and the forbidden route moves c by {_mv:+.2f} of the licensed error, "
+      f"|c| {_fall:+.0f} per cent  (the paper says 6.7 errors and -89 per cent on the namesake)")
+gate("⛭⛭ H③ and the paragraph's two CLAIMS survive the move: the forbidden route still moves the "
+     "coefficient by more than six errors and still takes |c| down by about nine tenths, so only "
+     "the digits are the namesake's",
+     bool(_mv > 6.0 and -92.0 < _fall < -82.0))
+
+# ── ITEM 2: the four-ceiling run lengths, this reader, both arms ─────────────────────────────────
+_PUB_SEQ = {'banked': [8, 8, 15, 18], 'licensed': [9, 9, 13, 22], 'forbidden': [9, 9, 9, 12]}
+_SEQ_NS, _SEQ_AO = {}, {}
+print(f"\n    the longest run of one sign at this receipt's own four ceilings {CEILINGS}:")
+for _nm in ('banked', 'licensed', 'forbidden'):
+    _SEQ_NS[_nm] = [S[(L, _nm)]['longest'] for L in CEILINGS]
+    _SEQ_AO[_nm] = [shape(os.path.join(_AO_DIRS[_nm], 'cr_base.npz'), L)['longest']
+                    for L in CEILINGS]
+    print(f"      {_nm:9s} namesake {str(_SEQ_NS[_nm]):18s} "
+          f"ARM OF RECORD {str(_SEQ_AO[_nm]):18s}")
+gate("H④ the namesake sequences are this receipt's own published ones, which calibrates the reader "
+     "before the arm of record is read with it",
+     bool(all(_SEQ_NS[k] == _PUB_SEQ[k] for k in _PUB_SEQ)))
+gate("⛭⛭⛭ ** H⑤ ITEM 2 ANSWERED: l.1952-1954's `9, 9, 13, 22` AND `9, 9, 9, 12` ARE THIS RECEIPT'S, "
+     "AT CEILINGS 700/800/900/1040 ON THE NAMESAKE GRID, AND THEY ARE NOT THE AUDIT'S STATISTIC AT "
+     "ALL. **  *The audit's `longest` column -- specified 4, 5, 11, 20, 23, 23, 27, 33 and forbidden "
+     "4, 4, 4, 5, 7, 8, 8, 8 -- is a different reader at eight different ceilings (850..1996), so "
+     "the two were never comparable and the sentence should NOT be re-pointed onto the audit.  What "
+     "is wrong is the CITATION: the sentence sits in a passage closed by the three-grid receipt, "
+     "which gates none of it, while the receipt that computes all four numbers closes the paragraph "
+     "eleven lines above.*",
+     bool(_SEQ_NS['licensed'] == [9, 9, 13, 22] and _SEQ_NS['forbidden'] == [9, 9, 9, 12]))
+_gap_ns = _SEQ_NS['licensed'][-1] - _SEQ_NS['forbidden'][-1]
+_gap_ao = _SEQ_AO['licensed'][-1] - _SEQ_AO['forbidden'][-1]
+print(f"      the discriminating gap at the top ceiling: namesake {_SEQ_NS['licensed'][-1]} vs "
+      f"{_SEQ_NS['forbidden'][-1]} = {_gap_ns};  arm of record {_SEQ_AO['licensed'][-1]} vs "
+      f"{_SEQ_AO['forbidden'][-1]} = {_gap_ao}")
+gate("⛔⛭⛭ ** H⑥ AND ON THE ARM OF RECORD THE DISCRIMINATING FEATURE IS WEAKER, WHICH IS THE PART "
+     "WORTH ROUTING RATHER THAN THE DIGITS. **  *The specified configuration's run reaches 16 "
+     "instead of 22 while the forbidden one's still reaches 12, so the gap the sentence turns on "
+     "falls from ten bins to four.  The DIRECTION survives -- specified grows, forbidden stays -- "
+     "and `every one of them with a longest run of eight or nine bins` below the ceiling becomes "
+     "SEVEN to nine, because the forbidden arm reads 7 at 700.*",
+     bool(_gap_ao < _gap_ns and _gap_ao > 0 and min(min(v[:2]) for v in _SEQ_AO.values()) == 7))
+
+# ── and why two of the three arm-of-record rows agree exactly ────────────────────────────────────
+_zb = np.load(os.path.join(BW, 'refit_grid185_leafrec1', 'cr_base.npz'), allow_pickle=True)
+_zl = np.load(os.path.join(BW, 'r7095_directions', 'grid_licensed_leafrec1', 'cr_base.npz'),
+              allow_pickle=True)
+_same = all(np.array_equal(_zb[k], _zl[k]) for k in ('Dl', 'ls', 'l_A', 'D_M', 'r_s'))
+_md5_differ = (hashlib.md5(open(os.path.join(BW, 'refit_grid185_leafrec1',
+                                             'cr_base.npz'), 'rb').read()).hexdigest()
+               != hashlib.md5(open(os.path.join(BW, 'r7095_directions', 'grid_licensed_leafrec1',
+                                                'cr_base.npz'), 'rb').read()).hexdigest())
+print(f"\n    the banked and licensed arm-of-record grids: spectra bit-identical {_same}, "
+      f"files differ {_md5_differ}")
+gate("⛭ H⑦ the banked and licensed rows agree on the arm of record because their SPECTRA ARE "
+     "BIT-IDENTICAL -- `Dl`, `ls`, `l_A`, `D_M` and `r_s` all equal -- while the FILES differ, in a "
+     "`manifest` key alone.  *Stated because the md5 difference invites the opposite conclusion: "
+     "two files, one spectrum, so the agreement is identity and not coincidence.*",
+     bool(_same and _md5_differ))
 
 print(f"\n  {len(CHECKS)} checks, {len(CHECKS)-len(bad)} pass, {len(bad)} fail")
 print("  GATES: " + ("ALL PASS" if not bad else "FAILURES ABOVE"))

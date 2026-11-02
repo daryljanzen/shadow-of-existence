@@ -9,6 +9,39 @@ is committed and pushed on `main` — nothing waits on the chat window.*
 
 ---
 
+## ⚑ `r7655` (cc66) — **ITEMS 2 AND 3: NEITHER OFFERED ACTION IS THE RIGHT ONE, BECAUSE THE PREMISE I GAVE YOU AT `r7653` WAS WRONG. THE FIGURES ARE CARRIED AND CORRECT; WHAT IS WRONG IS THE CITATION. AND I WITHDRAW THE "TWO ROUTES DIFFER" REPORT**
+
+**The withdrawal first, because the rest follows from it.** At `r7653` I routed you *"the audit's contrast coefficients differ from l.1941–1946's … the two routes may simply differ"*. **They do not differ.** Run the paragraph's own receipt — `contrast_on.c_on`, the design matrix the sentence cites — on the **arm-of-record** grid and it returns the audit's two numbers **to four decimals**:
+
+| | licensed cr | forbidden cr |
+|---|---|---|
+| paper l.1941–1946 (namesake grid) | **−0.0642** ± 0.0084 | **−0.0069** ± 0.0083 |
+| the audit (arm of record) | −0.0670 ± 0.0086 | −0.0092 ± 0.0085 |
+| **this receipt's route, arm of record** | **−0.0670 ± 0.0086** | **−0.0092 ± 0.0085** |
+
+⇒ **One statistic, two grids.** I compared two *grids* and called it a disagreement between two *methods*. Item 3's answer: the route is the same one in both places, the paragraph's receipt reproduces the audit exactly on the arm of record, and the paper's pair is simply the namesake's. **The paragraph's claims survive the move**: the forbidden route still shifts `c` by **+6.71** of the licensed error (the paper says 6.7) and still takes `|c|` down by **86 per cent** (the paper says 89). Only two digits are the namesake's.
+
+⛔ **ITEM 2: `9, 9, 13, 22` AND `9, 9, 9, 12` ARE NOT UNCARRIED AND ARE NOT THE AUDIT'S — THEY ARE THE PARAGRAPH'S OWN RECEIPT'S, AND I REPRODUCED ALL FOUR.** They are `P15_the_licensed_configuration_moves_neither_statistic…`'s, at **its own four ceilings 700 / 800 / 900 / 1040**, on the **namesake** grid, through `r7091_directions/shape.py`. Its docstring and four gates carry them verbatim, including *"below ℓ 800 all three have a longest run of 8 or 9 bins"*.
+
+- **So they must NOT be replaced with the audit's figures.** The audit's `longest` column (specified `4,5,11,20,23,23,27,33`, forbidden `4,4,4,5,7,8,8,8`) is a **different reader at eight different ceilings, 850 to 1996**. The two were never comparable, and my `r7653` note's "match neither audit's convention" was true but led to the wrong conclusion.
+- **The one real defect is the CITATION.** The sentence sits in a passage closed by the three-grid receipt, **which gates none of it**, while the receipt that computes all four numbers closes the paragraph eleven lines above. ⇒ *My recommendation, and the prose is yours: give that sentence its own `\rcpt{P15_the_licensed_configuration_moves_neither_statistic_and_the_swing_was_read_above_where_it_converges}`. I have not touched the `.tex`.*
+
+⛭⛭ **AND THE ARM-OF-RECORD FIGURES, WHICH IS THE PART THAT MOVES THE PARAGRAPH.** Same reader, same four ceilings, calibrated against the receipt's published namesake rows first:
+
+| configuration | namesake | **arm of record** |
+|---|---|---|
+| banked default | `8, 8, 15, 18` | **`9, 9, 9, 16`** |
+| the specified configuration | `9, 9, 13, 22` | **`9, 9, 9, 16`** |
+| the forbidden one | `9, 9, 9, 12` | **`7, 8, 8, 12`** |
+
+- ⒜ **The discriminating gap falls from ten bins to four** — 22 against 12 becomes 16 against 12. **The direction survives** (specified grows, forbidden stays), so the paragraph's argument holds, but the feature it turns on is markedly weaker on the arm of record. *That is the call I would want you to see rather than the digits.*
+- ⒝ **`every one of them with a longest run of eight or nine bins` becomes SEVEN to nine**, because the forbidden arm reads 7 at ceiling 700.
+- ⒞ **The specified and banked rows are identical on the arm of record because their spectra are bit-identical** — `Dl`, `ls`, `l_A`, `D_M`, `r_s` all equal, the two files differing in a `manifest` key alone. *Said explicitly because the differing md5 invites the opposite conclusion; I nearly drew it. Two files, one spectrum.*
+
+⌗ *The arm-of-record grids carry only their nine `cr_*.npz` and no control, and the coefficient is a CONTRAST, so the control's nine files are linked in from `refit_grid185` — licensed by `H①`, which asserts that the control's base is byte-identical across all three namesake grids (`5df16bcd…`). The composition is stated in the receipt rather than left as a property of a scratch directory.* Gates `H①`–`H⑦`, receipt now **30 of 30**; three of them go red when the arm-of-record paths are swapped for the namesake ones.
+
+---
+
 ## ⚑ `r7655` (cc66) — **ITEM 1 MEASURED, AND l.2387–2388's OTHER CONVENTION HAD NO CARRIER ANYWHERE: EVERY BANKED LOG IN THIS CORPUS REPORTS ONE ENDPOINT, TO TWO DECIMALS. THE MECHANISM IS REAL AND BOTH ITS FIGURES ARE WRONG. AND THE ARMS DO NOT SHARE `n_s`**
 
 **The paragraph's whole set, on the arm of record, at a common tilt** — `r7655_cc66_the_endpoint_conventions/`, gates Ⓗ①–Ⓗ⑥ on the receipt that closes the paragraph, 32 of 32:
