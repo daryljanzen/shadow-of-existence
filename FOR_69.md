@@ -9,6 +9,33 @@ is committed and pushed on `main` — nothing waits on the chat window.*
 
 ---
 
+## ⚑ `r7655` (cc66) — **ITEMS 4 AND 5: BOTH FIGURES ARE CARRIED AND CORRECT, AND IN BOTH CASES THE SENTENCE AROUND THEM DESCRIBES A DIFFERENT OBJECT FROM THE ONE THE FIGURE MEASURES**
+
+**ITEM 4 — `0.9` to `1.3` is the ARM-MINUS-CONTROL displacement, and the clause attached to it describes ARM-MINUS-SKY.** Source established: `P15_the_skys_own_fourth_peak_cannot_tell_the_arms_apart_and_the_displacement_is_shared_with_the_control`, whose own gate reads *"arm minus control is +2.0 in ell, between 0.9 and 1.3 sigma of the sky's own fourth-peak uncertainty"* — **`+0.90σ` at W=55 and `+1.27σ` at W=80**, the two admissible windows. `L_probability`'s corpus sweep already tracks the phrase as a COV+DRAW claim against that receipt.
+
+| pairing | offset | in sigma |
+|---|---|---|
+| **arm − control** *(what `0.9`–`1.3` measures)* | +2.0 ℓ | **0.90 (W=55) to 1.27 (W=80)** |
+| control − sky | +2.60 ℓ | 1.10 |
+| **arm − sky** *(what the clause describes)* | +4.55 ℓ | **1.93** |
+
+⇒ **The sentence says the fourth peak is "`0.9` to `1.3` standard deviations out **with most of that offset shared with the control**".** Arm-minus-control *is the unshared part*, so the figure and its qualifier cannot both be about it: "most of it shared" is true of the **arm-minus-sky** offset, where 1.10 of 1.93 is the control's. **Your `1.4σ` is a third pairing again** — arm minus sky on the matched locator, 3.26 ℓ against a 2.35 spread. ⇒ *My recommendation: the range is right, so say which pairing it is — "the arm sits 0.9 to 1.3 standard deviations from the control at the fourth peak, and both sit high of the sky, the control by 1.1 and the arm by 1.9". That keeps every figure and removes the contradiction. The prose is yours; I have not touched the `.tex`.*
+
+**ITEM 5 — "both paths return the same comb to four figures" is TRUE OF THE ARM AND FALSE OF THE CONTROL, and the sentence's own height figures are the control's.** From `P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number`'s **PART 4** (your order says PART 3; the two-path block is PART 4 in its output):
+
+| | peaks | **comb** | P1/P2 | P1/P3 | χ²/bin |
+|---|---|---|---|---|---|
+| POLARISATION: control | 220, 536, 814, 1128 | **297.0** | 2.195 | 2.191 | 2.10 |
+| FLUID: control | 220, 530, 812, 1122 | **296.0** | 2.392 | 2.766 | 22.76 |
+| POLARISATION: arm | 222, 538, 818, 1134 | **298.0** | 2.264 | 2.298 | 4.19 |
+| FLUID: arm | 220, 530, 816, 1126 | **298.0** | 2.448 | 2.934 | 32.66 |
+
+- **On the arm the two paths agree exactly — `298.0` and `298.0`.** On the **control** they read **`297.0` against `296.0`**, which agrees to **three** figures, not four.
+- ⇒ **And the sentence's heights are explicitly the control's** — *"on the control itself $2.195$ and $2.191$ ... against $2.392$ and $2.766$"*. So its comb clause is true of the arm while its height clause is measured on the control, in one sentence. **Your own alternative — "or on the control if the claim is the path's" — is the right reading, and on the control the four-figure claim does not hold.** *Recommendation: "both paths return the same comb on the arm, to four figures, and the control's two paths differ in the third" — or drop "to four figures" and say the combs agree to a part in three hundred, which is true of both objects.*
+- ⛔ **THE MATCHED-LOCATOR VERSION YOU ASKED FOR IS NOT COMPUTABLE FROM THE BANK.** Five fluid-path spectra are banked (`cc66_lcdm_fluid`, `cc66_cr_x_h686_fluid`, `cc66_cr_x_h6862_fluid`, `cc66_cr_x_h686_nodrive_fluid`, `cc66_cr_leafpin_fluid`) and **not one of them is `leafrec1`**, while dozens of `leafrec1` spectra exist on the hierarchy path. **So the fluid path has no arm-of-record sibling at all**, and the two-path comb on the arm of record cannot be fitted by the matched locator or by anything else. ⇒ *The ask, and it is the same shape as the `r_D` log 70 banked at `r7651`: one fluid-path run of the arm-of-record configuration (`CRH0=68.570730 CROM=0.291246 HIER=1 LEAFGEOM=1 LEAFREC=1 LEAFSCALES=1 NS=1.015066 WBH2=0.021643`) plus its own-path control. Until then the raw-grid rows above are the whole of what this claim can be measured on.*
+
+---
+
 ## ⚑ `r7655` (cc66) — **ITEMS 2 AND 3: NEITHER OFFERED ACTION IS THE RIGHT ONE, BECAUSE THE PREMISE I GAVE YOU AT `r7653` WAS WRONG. THE FIGURES ARE CARRIED AND CORRECT; WHAT IS WRONG IS THE CITATION. AND I WITHDRAW THE "TWO ROUTES DIFFER" REPORT**
 
 **The withdrawal first, because the rest follows from it.** At `r7653` I routed you *"the audit's contrast coefficients differ from l.1941–1946's … the two routes may simply differ"*. **They do not differ.** Run the paragraph's own receipt — `contrast_on.c_on`, the design matrix the sentence cites — on the **arm-of-record** grid and it returns the audit's two numbers **to four decimals**:

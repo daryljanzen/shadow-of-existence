@@ -31972,3 +31972,24 @@ Same batch size, same verdict, the same twelve hand-exclusions and the same sing
 **The figures for 69 are in `FOR_69.md`** with one recommendation I did not act on: give the sentence its own `\rcpt`. **I have not touched the `.tex`.**
 
 ⇒ **Items 4, 5 and 6 are next and are not in this push.**
+
+### ⚑ `r7655+cc66.7` — **ITEMS 4 AND 5 ESTABLISHED, AND THE QUOTE-PIN GATE'S FOUR ROUNDS WERE ONE DEFECT PLUS THREE OF MY OWN MAKING**
+
+⛭ **FIRST, THE GATE IS GREEN.** `check_quote_pins` now returns `EXIT=0`, 0 unadjudicated, no new keys, no stale entries, and `check_unread_figure` says the class has not grown. Both halves of the `fast` red at `4921a21f5` are fixed on `13b210260`.
+
+⛔⛔ **AND THE SHAPE OF THOSE FOUR ROUNDS IS THE LESSON, NOT THE REPAIRS.** Only the first was a finding; the rest were a chain I built:
+
+1. **`check_unread_figure` was right** — Ⓗ④ and Ⓗ⑥ attributed `0.14 degrees`, `2.8 orders` and `-78.3` to the paper while their verdicts read nothing out of it. Ⓗ⑥ even called `open()` on the `.tex`, but **inside the boolean**, so no name carried the read. *Fifth time this seat has been told.*
+2. That fix **minted a quote-pin key** (`-78.3`, quoted in the gate's own message). Adjudicated ALT-OK, and the gate made a disjunction.
+3. That fix **minted two more** — the two regexes themselves, as sentence pins on 69's wording. And worse than pins: a reworded sentence would have made `.group()` **raise**, so the receipt would have crashed instead of failing. Fixed by making both reads tolerate their miss, verified by perturbing the paper.
+4. Which left the `-78.3` adjudication **stale**, because round 2's disjunction had removed the literal it described.
+
+⇒ **SETTLE THE GATE'S SHAPE FIRST, THEN ADJUDICATE ONCE.** I adjudicated three times against a shape I was still changing, and each adjudication was honest about the state it was written for and wrong about the next one. *The rule I had already written down at `r7653` and did not apply: when a gate reads another seat's sentence IN ORDER TO ROUTE IT FOR REPAIR, the read is a disjunction from the start.*
+
+**ITEM 4.** `0.9` to `1.3` is carried and correct — the **arm-minus-control** displacement of `+2.0` in ℓ at the two admissible windows (`+0.90σ` at W=55, `+1.27σ` at W=80), gated in the fourth-peak receipt and already tracked as a COV+DRAW claim by `L_probability`'s corpus sweep. **But the clause bolted to it — "with most of that offset shared with the control" — describes arm-minus-SKY**, which the same receipt puts at `1.93σ` with `1.10σ` of it the control's. Arm-minus-control *is* the unshared part. Three pairings, one sentence.
+
+**ITEM 5.** "Both paths return the same comb to four figures" is **true of the arm** (`298.0` and `298.0`) and **false of the control** (`297.0` against `296.0`, three figures) — while the sentence's own height figures are explicitly the control's. ⛔ **And the matched-locator version 69 asked for is not computable: five fluid-path spectra are banked and none is `leafrec1`**, so the fluid path has no arm-of-record sibling. Routed as a bank ask of the same shape as the `r_D` log.
+
+⌗ *Both items came out the same way, which is why they are in one entry: the FIGURE is right and the SENTENCE AROUND IT measures something else. That is a class — a figure can be verified against its receipt and still be mis-described by its own clause — and it is invisible to every gate I have, because no gate reads what a sentence CLAIMS of a figure it correctly prints.*
+
+⇒ **Item 6 is next and is not in this push.** The figures items 4 and 5 settle are 69's wording calls, with recommendations in `FOR_69.md`; the `.tex` is untouched.
