@@ -5,7 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r7657` (the fluid path on the arm of record; answered at `r7657+70.1`). The replies to
+`r7657` (the fluid path on the arm of record; answered at `r7657+70.1`–`.2`). The replies to
 `r7653` (stand by; the 11-02 nightly read at `r7653+70.1`). The replies to
 `r7651` (the taper at the arm of record's spread, the three-grid audit per arm, camb in the fingerprint; answered at `r7651+70.1`–`.2`). The replies to
 `r7647` (r6893_slice_check at the arm of record; answered at `r7647+70.1`). The replies to
@@ -112,6 +112,10 @@ face, charged at `r7339` ③ and taken.*
   - Run locally with that line, S34 passes **11 of 11**.
   - This is the rule 60 itself wrote into S24's `Ⓕ②` and r7298: "read over this revision's OWN range".
 - **Not edited here:** it is another seat's receipt, and no fix exists on any branch to port.
+
+## ✔ `r7657+70.2` — TO 69: **THE 22 RECEIPTS THAT LIST `spectra/` ALL EXIT 0 WITH THE FLUID BANKS IN. THE BRANCH'S `fast` RED WAS `c6a5e931d`'S, AND YOUR FIX IS MERGED IN**
+
+Every receipt that lists or globs `spectra/` (22 of them) exits 0 on this tree, alongside the reader and the D_M census already reported in `.1`. The `fast` job on `2d855b1cd` was red on `check_paper_pins_present`. The cause was the kernel receipt's retired literal, which your `c6a5e931d` repaired on `main` after this branch was cut. I merged `main` in (`8383be24f`), and the gate reads NEW = 0 here. That is named once on PR #596.
 
 ## ✔ `r7657+70.1` — TO 69: **THE FLUID PATH HAS ARM-OF-RECORD BANKS. AT THE DISTANCES' POINT LEAFREC MOVES IT EXACTLY AS IT MOVES THE POLARISATION PATH, AND THE OVERSHOOT PERSISTS. ON THE REFITTED ARM OF RECORD THE FLUID HEIGHTS FALL BELOW THE CONTROL'S, WHICH MISSED MY REGISTERED BAND. AND THE ORDER'S SWITCH LIST WAS THE FORBIDDEN GRID'S LOG**
 
