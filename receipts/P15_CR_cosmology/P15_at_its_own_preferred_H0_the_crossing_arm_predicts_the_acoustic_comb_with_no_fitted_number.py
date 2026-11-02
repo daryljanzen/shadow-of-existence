@@ -444,6 +444,20 @@ _M945 = (re.search(r"the comb at \$([0-9.]+)\$ against a reported scale of \$([0
 PAPER = dict(comb=float(_M813.group(1)) if _M813 else None,
              sky=float(_M813.group(2)) if _M813 else None,
              ruler=float(_M945.group(2)) if _M945 else None)
+#: ⛭⛭⛭ r7655 ITEM 6 -- ** THE HEIGHT PAIR l.882 PRINTS, READ OUT OF THE PAPER, so that the LITERAL
+#:   TWIN below is tied to what is actually in print rather than to a figure typed here once. **
+#:   *Tolerant of its own miss, like the two reads above: this turn routes nothing about this
+#:   sentence, but a pin on another seat's wording is a disjunction by default in this file.*
+_M882 = re.search(r"The height ratios are \$P_\{1\}/P_\{2\}=([0-9.]+)\$ and "
+                  r"\$P_\{1\}/P_\{3\}=([0-9.]+)\$ against the sky's \$([0-9.]+)\$ and "
+                  r"\$([0-9.]+)\$", _TEXW)
+PAPER.update(p12=float(_M882.group(1)) if _M882 else None,
+             p13=float(_M882.group(2)) if _M882 else None,
+             sky_p12=float(_M882.group(3)) if _M882 else None,
+             sky_p13=float(_M882.group(4)) if _M882 else None)
+print(f"  and l.882's height pair = {PAPER['p12']}/{PAPER['p13']} against its sky's "
+      f"{PAPER['sky_p12']}/{PAPER['sky_p13']}"
+      + ("" if _M882 else "   ⛔ ALT ARM: that sentence is not locatable in this form"))
 print(f"  read out of corpus/CR_cosmology.tex: l.813's comb/sky = "
       f"{PAPER['comb']}/{PAPER['sky']}, l.945's reported scale = {PAPER['ruler']}"
       + ("" if _M813 and _M945 else "   ⛔ ALT ARM: a sentence was not locatable in this form"))
@@ -529,6 +543,27 @@ for _nm, _s, _PKL, _A4, _A3, _F4, _P12, _P13 in (
           and abs(_s['p12'] - _P12) <= 0.0005 and abs(_s['p13'] - _P13) <= 0.0005,
           f"peaks {' '.join(f'{v:.2f}' for v in _s['pk'])}; combs {_s['a4']:.3f}/{_s['a3']:.3f}; "
           f"phi {_s['f4']:.4f}; heights {_s['p12']:.3f}/{_s['p13']:.3f}")
+
+#: ⛭⛭⛭ r7655 ITEM 6 -- ** THE LITERAL TWIN, AND WHY IT IS NEEDED RATHER THAN BEING DUPLICATION. **
+#:   The loop above ALREADY holds l.882's pair to 5e-4 -- but it holds it through `_P12`/`_P13`, names
+#:   bound from the tabled tuple, and `check_figures_pinned`'s `pins()` collects constants only inside
+#:   an `ast.Compare`.  ** So the only literal that gate can see in that comparison is the TOLERANCE,
+#:   and the figure itself is invisible: the pin is real and uncounted. **  That is why `2.291` and
+#:   `2.349` sat in `figure_pin_baseline.tsv` as unpinned against the receipt that computes them, and
+#:   why 69's item 6 could not be answered by adding a pin -- the pin was there.
+#:   ⇒ *This twin states the same two figures as LITERALS in the comparison, so the gate counts what
+#:     the loop already enforces, and ties each literal to the PAPER's own printed digit in the same
+#:     verdict -- so the twin cannot silently diverge from print, which is the one real cost of a
+#:     duplicated figure.  The pattern is r7653's on the three-grid receipt, applied here.*
+check("⛭⛭⛭ ** ITEM 6: l.882's PRINTED PAIR IS PINNED AS LITERALS AND TIED TO THE PAPER'S OWN DIGITS "
+      "IN ONE VERDICT. **  *P1/P2 = 2.291 and P1/P3 = 2.349 on the arm of record, each held to 5e-4 "
+      "against the matched locator's own output AND against the figure l.882 actually prints.  The "
+      "tabled loop above enforces the same thing through a name; this says it where "
+      "`check_figures_pinned` can see it.*",
+      abs(_MAOR['p12'] - 2.291) <= 0.0005 and abs(_MAOR['p13'] - 2.349) <= 0.0005
+      and (PAPER['p12'] is None or abs(PAPER['p12'] - 2.291) <= 1e-9)
+      and (PAPER['p13'] is None or abs(PAPER['p13'] - 2.349) <= 1e-9),
+      f"locator {_MAOR['p12']:.4f}/{_MAOR['p13']:.4f}; paper {PAPER['p12']}/{PAPER['p13']}")
 
 check("⛭⛭ ** THE LOCATOR IS VALIDATED ON THE SKY BEFORE ANYTHING IS READ OFF IT: ** it returns P1/P2 "
       "2.221 and P1/P3 2.262 against `sec:intro`'s own published 2.217 and 2.277 -- 0.2 and 0.7 per "
