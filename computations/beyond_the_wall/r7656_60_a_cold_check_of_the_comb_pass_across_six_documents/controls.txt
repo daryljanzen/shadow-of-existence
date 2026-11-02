@@ -1,0 +1,158 @@
+r7656+60.3 (60) -- THE MATCHER'S OWN REACH, measured before its 95-of-95 is reported.
+
+⛔ THE PROBLEM, STATED BEFORE IT WAS MEASURED.  `cold_check.py` searches ONE HUNDRED receipts' stdout
+for any number within half a unit of the target's last printed digit.  For a two-significant-digit
+figure the chance that SOME number in a hundred outputs lands inside that window is high WHATEVER THE
+CORPUS SAYS -- so a 95-of-95 is exactly what a matcher with no discriminating power returns.
+
+⌗ *A guard that cannot fail on the data it is given is not a guard.  The way to find out is a negative
+control, not a re-reading.*
+
+TWO CONTROLS, both registered at `+60.3` before this file existed:
+  ⑪⑫⑬  DECOYS -- every real figure moved WELL OUTSIDE its own tolerance, magnitude and digit count
+        kept, run through the SAME matcher against the SAME bank.  Threshold fixed in advance: a decoy
+        rate above 20% means the matcher is the result and not the corpus.
+  ⑭     MULTIPLICITY -- how many of the hundred receipts produce each figure independently.  One is a
+        located figure; forty is a coincidence of the window.
+
+⛔ AND THE CONTROL FIRED: 41.1% against a threshold of 20%.  `r7656+60.4` therefore registered the
+tightening BELOW, before the number it would produce was seen:
+  ⑮     VERBATIM FIRST -- a figure counts as reproduced only when the receipt's output carries THAT
+        STRING, extracted by the same `check_figures_pinned.figures` on both sides, with NO tolerance
+        window at all.  Tolerance-only matches are reported separately as WITHIN THE PRINTED DIGIT,
+        which is a weaker finding and is labelled as one.
+  ⑯     AND ITS OWN DECOY RATE IS MEASURED under the SAME 20% threshold, which is the one already
+        registered at `+60.3` and is NOT moved now that a number has been seen.
+  ⑰     THE REACHABLE NEGATIVE OF THAT AMENDMENT is that verbatim matching is ALSO too loose, and it
+        is registered against: if ⑯ fires, this revision reports that the order's question cannot be
+        answered by figure-matching against banked stdout at all, and says what would answer it.
+
+================================================================================================================
+  r7656+60.3 -- the matcher's reach: decoys and multiplicity
+================================================================================================================
+
+  95 real figure(s) over 99 receipt(s) that ran
+
+ⓐ  ⑭ MULTIPLICITY -- how many of the 99 receipts produce each figure independently
+      median 4   mean 4.8   min 1   max 30
+      produced by exactly ONE receipt: 6 distinct figure(s)  ['0.2488', '0.4390', '0.8555', '2.6876', '49.4', '85.6']
+      produced by TWENTY OR MORE:      1 distinct figure(s)  ['68.6']
+
+ⓑ  ⑪ DECOYS -- each real figure moved 40x its own allowance, same digit count
+      95 decoy(s) built; 39 of them ALSO 'reproduce' -> false-positive rate 41.1%
+
+            real      decoy  receipts hit
+            1.60       1.80             2
+         186.007    189.727             0
+         186.135    189.858             0
+            2.35       2.55             1
+           276.4      281.9             2
+            0.23       0.43             4
+          1121.9     1144.3             0
+          1125.1     1147.6             2
+           220.0      224.4             0
+           221.0      225.4             0
+           533.8      544.5             0
+           536.3      547.0             0
+           811.6      827.8             0
+           814.8      831.1             0
+      ... and 81 more
+
+ⓒ  ⑮ VERBATIM FIRST -- the same figure STRING on both sides, no tolerance window at all
+      of 95 figure(s): VERBATIM 81   WITHIN THE PRINTED DIGIT 14   NEITHER 0
+      ⌗ the 14 tolerance-only match(es) are a WEAKER finding and are NOT folded into the headline:
+         0.4390  -- a receipt prints a number inside the gate's allowance; none prints it
+         1.4011  -- a receipt prints a number inside the gate's allowance; none prints it
+         1125.1  -- a receipt prints a number inside the gate's allowance; none prints it
+         186.135  -- a receipt prints a number inside the gate's allowance; none prints it
+         3.3387380  -- a receipt prints a number inside the gate's allowance; none prints it
+         811.6  -- a receipt prints a number inside the gate's allowance; none prints it
+      multiplicity among the verbatim ones: median 1   mean 1.9   max 10
+
+ⓓ  ⑯ THE VERBATIM MATCHER'S OWN DECOY RATE, under the threshold registered at +60.3
+      95 decoy(s), the SAME ones; 10 of them are printed verbatim somewhere -> false-positive rate 10.5%
+
+            real      decoy  receipts hit
+            1.60       1.80             1
+            2.35       2.55             1
+            0.23       0.43             2
+            49.4       51.4             1
+            85.6       87.6             1
+            0.23       0.43             2
+            1.16       1.36             2
+            1.60       1.80             1
+            2.35       2.55             1
+            2.35       2.55             1
+      ⌗ a decoy that is ITSELF a figure the corpus carries elsewhere is this instrument's irreducible floor: a shift of 40 allowances lands on a round number often enough.
+
+ⓔ  ⑱⑲ THE THREE-WAY VERDICT'S MIDDLE RUNGS -- same float, or renders to the printed digit
+      of 95 figure(s): 94 reproduce under ⑱ or ⑲
+      multiplicity among them: median 2   mean 3.2   max 30
+
+ⓕ  ㉑ THE ROUNDING MATCHER'S OWN DECOY RATE, under the SAME 20% registered at +60.3
+      95 decoy(s), the SAME ones; 24 of them also reproduce under ⑱ or ⑲ -> false-positive rate 25.3%
+      ⌗ compare: tolerance window 41.1%, verbatim 10.5%, this 25.3%.  A reading is only as strong as the rate at which it accepts a figure the corpus should not carry.
+
+              real        decoy  receipts hit
+              1.60         1.80             2
+              2.35         2.55             1
+             276.4        281.9             1
+              0.23         0.43             4
+             2.291        2.337             1
+             2.221        2.265             1
+             2.291        2.337             1
+              49.4         51.4             1
+              85.6         87.6             1
+              0.23         0.43             4
+             2.221        2.265             1
+             2.291        2.337             1
+              1.16         1.36             7
+              1.60         1.80             2
+
+ⓖ  ㉓ ⑱'S OWN DECOY RATE -- same float, no rendering, no window.  THE HEADLINE'S OWN REACH
+      of 95 real figure(s): 85 reproduce under ⑱
+      95 decoy(s), the SAME ones; 14 also reproduce under ⑱ -> false-positive rate 14.7%
+
+ⓗ  ㉔ THE DIAGNOSIS AS A TEST -- ⑲'s decoy rate STRATIFIED BY SIGNIFICANT DIGITS
+      strata fixed at +60.6 before this ran: <=2, exactly 3, >=4.  Threshold still 20%.
+
+       digits  decoys  hits    rate   real figs  verdict
+          <=2       2     2  100.0%           2  NOT measurable
+            3      11    10   90.9%          11  NOT measurable
+          >=4      82    12   14.6%          82  MEASURABLE at this precision
+
+  ⌗ ㉕ AND THE 85 IS THE HEADLINE WHATEVER THIS TABLE SAYS.  A stratum under 20% can only add a
+  separate line naming which of the nine withheld figures are CONDITIONALLY established and at what
+  measured rate.  A figure already reported unestablished does not become established because a
+  narrower instrument was built for it afterwards.
+
+      → CONDITIONALLY ESTABLISHED, at precision >=4: 9 of the withheld figure(s)  ['0.4390', '1125.1', '811.6']
+
+  ⌗ ⑬ THE RATE IS PUBLISHED EITHER WAY, with the decoys themselves, because a cold check that
+  reported its hit rate without its false-positive rate would be asking to be believed rather than
+  checked.
+
+  [MISS] ⑫ THE REGISTERED THRESHOLD -- the tolerance matcher's decoy rate is at or below 20% -- MEASURED 41.1%, scored a MISS at +60.4.  The 95-of-95 was the width of the window and not the corpus.
+
+  THE CONDITIONS THIS REVISION STANDS ON, after the tightening registered at +60.4:
+  [PASS] ⑯ THE VERBATIM MATCHER'S OWN DECOY RATE is at or below the SAME 20% registered at +60.3 (10.5%) -- the threshold was NOT moved once a number had been seen, so a verbatim reproduction is a statement about the corpus and not about this matcher's reach
+  [PASS] ⑮ and the tightening DOES WORK rather than relabel the same set: 14 figure(s) that 'reproduced' under the window do NOT reproduce verbatim, and they are reported as WITHIN THE PRINTED DIGIT instead of in the headline
+  [PASS] ㉓ ⑱'S OWN DECOY RATE -- the HEADLINE's reach -- is at or below the SAME 20% registered at +60.3 (14.7%), so the 85 is a statement about the corpus; had it fired the headline would fall back to verbatim's 81
+  [PASS] ㉔ the stratified test is DECIDED either way -- every stratum either has decoys and a rate or is reported as empty, so no precision band is silently skipped
+  [PASS] ㉕ and the withheld nine are NOT in the headline: ⑱'s 85 is strictly below ⑱-or-⑲'s 94, so withholding ⑲ changed the number rather than the label
+
+  [MISS] ㉑ THE ROUNDING MATCHER'S OWN DECOY RATE is at or below the SAME 20% registered at +60.3 -- MEASURED 25.3%, scored a MISS at +60.6.  ⑲ is therefore WITHHELD and the nine figures it carried are UNESTABLISHED, not reproduced.  ㉔ locates the whole of it in LOW PRECISION: 100% at <=2 significant digits, 90.9% at 3, and 14.6% at >=4.
+  [PASS] ㉑ and it is STRICTLY LOOSER than verbatim and STRICTLY TIGHTER than the window (10.5% <= 25.3% < 41.1%), so the three readings are ordered as their definitions are and none of them is secretly another
+  [PASS] ⑭ and the median figure is produced by a SMALL number of the 99 receipts (4), so a reproduction locates a figure rather than finding it everywhere
+  [PASS] ⑮ and the verbatim multiplicity is SMALLER still (median 1), which is what a located figure looks like
+
+  ⌗ ⑰ THE REACHABLE NEGATIVE OF `+60.4` IS REGISTERED AGAINST AND WAS LIVE UNTIL THE NUMBER
+  ABOVE.  Had the verbatim rate come in over 20% as well, this revision's answer to the order would
+  be that the question is NOT measurable by figure-matching against banked stdout at all, and that
+  what would answer it instead is each comb-pass receipt's own banked artefact -- the arrays it
+  writes, compared field by field against the paper's table -- rather than its printed text.
+
+================================================================================================================
+   [MISS] ⑫ THE REGISTERED THRESHOLD -- the tolerance matcher's decoy rate is at or below 20% -- MEASURED 41.1%, scored a MISS at +60.4.  The 95-of-95 was the width of the window and not the corpus.
+   [MISS] ㉑ THE ROUNDING MATCHER'S OWN DECOY RATE is at or below the SAME 20% registered at +60.3 -- MEASURED 25.3%, scored a MISS at +60.6.  ⑲ is therefore WITHHELD and the nine figures it carried are UNESTABLISHED, not reproduced.  ㉔ locates the whole of it in LOW PRECISION: 100% at <=2 significant digits, 90.9% at 3, and 14.6% at >=4.
+  0 failure(s) among the conditions this revision stands on

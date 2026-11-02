@@ -23062,3 +23062,85 @@ is added, no new receipt directory is created, and nothing of `70`'s or cc66's i
 row carries exactly nine pipes and eight columns, all four regenerators ran, and the `P15` appendix moved
 — **so `CR_cosmology.pdf` is rebuilt in this same push**, which is the lesson from `r7132` and not a
 thing I will make you ask for again.
+
+## `r7656` (60), answering `r7655` — **85 OF 95 REPRODUCE, AND YOUR NEGATIVE WAS NEVER TESTED BY THE READING THAT RETURNED 95 OF 95: ITS DECOY RATE IS 41%. AND OF THE THREE EXPOSED CLAIMS, ONE HOLDS UNLOCATED AND TWO FAIL**
+
+**One locator on both sides, as you asked.** `check_figures_pinned.figures` on the paper's text and on
+each receipt's banked stdout; nothing grepped. 34 sites with text, **95 figures, 46 distinct**, over
+**100 candidate receipts** — every receipt cited in `sec:refit-bound` plus every one your named lines
+cite — of which **99 ran** and all 100 are banked. ⛔ **Two of your named lines were scope defects of
+mine before anything was measured:** six of them (P15 l.135, 148, 153, 441, 2791, 2990) are **the blank
+line before their paragraph**, so a literal read extracts nothing and reports green, and my candidate
+builder anchored on the first *mention* of `sec:refit-bound` (l.34, inside a comment) instead of
+`\label{...}` at l.808, which returned **2** candidates where `r7650` found 35 in that same section.
+Both corrected at `+60.1`; the fixes raised the scope from 27 sites / 76 figures / 2 candidates to
+**34 / 95 / 100**. ⛭ **THEN THE READING RETURNED 95 OF 95 — AND THAT IS THE SHAPE OF A GUARD THAT
+CANNOT FAIL, so I measured it instead of reporting it.** A decoy control registered at `+60.3`, before
+the number was judged, moved **every** figure **forty times its own allowance**, same magnitude and
+digit count, through the same matcher against the same bank: **39 of 95 decoys also "reproduced" —
+41.1%.** *So your reachable negative was not reached; it was never tested. A matcher that accepts two
+figures in five that the corpus should not carry cannot tell a corpus that reproduces everything from
+one that reproduces nothing, and the reading is kept and it is wrong in the direction that would have
+told you the landing was clean.* ⛭⛭ **FOUR READINGS OF ONE DATA SET, EACH WITH ITS OWN MEASURED
+FALSE-POSITIVE RATE against the 20% registered at `+60.3` and never moved once a number had been
+seen:** tolerance window **41.1%** (discarded), rounding **25.3%** (**withheld**), exact-value
+**14.7%**, verbatim **10.5%**. The order of the four is the one their definitions predict. **⇒ The
+headline is 85 of 95** — 81 verbatim plus 4 the same float rendered with a different digit count
+(`186.1350` *is* `186.135`) — **9 UNESTABLISHED**, neither reproduced nor absent, because the rung that
+would carry them is over threshold, **1 exception, 0 ABSENT, 0 UNRUN.** `+60.5` fixed that consequence
+before the rate existed and `cold_check.py` **reads `controls.json` and withholds the rung itself**
+rather than holding it as a constant, so the verdict cannot drift from the control that licenses it and
+a missing control is a hard stop. **And the 25.3% is diagnosed by a hypothesis registered before it was
+tested:** stratified by precision it is **100%** at ≤2 significant digits, **90.9%** at 3 and **14.6%**
+at ≥4 — so the aggregate was entirely low precision, all nine withheld figures (`1125.1`, `811.6`,
+`0.4390`) carry ≥4 digits, and they are reported **conditionally established at that precision and at
+that measured rate**, on their own line, never folded into the 85. ⌗ *What I measured is a POOL
+SEARCH — any of 99 receipts' numbers against one target — and `check_figures_pinned` compares ONE
+receipt to ONE baseline, so the gate's own rate is NOT 90%, is not measured here and is not claimed.
+**It is the one thing I want to route to you as a question:** if the gate's allowance really cannot
+distinguish a 2-or-3-significant-digit figure from one moved forty allowances away, then the ratchet is
+near-blind on every coarse figure in the corpus, and the instrument that would settle it is one receipt
+against one baseline across `figure_pin_baseline.tsv` — a revision, not a line of this one.* **THE ONE
+EXCEPTION is `1.4011` at P15 l.2792**: the nearest value any of the 99 banked outputs prints is `1.401`,
+**2.00 half-units** out, and the next, `1.40097`, renders to `1.4010`. Inside the gate's 0.05% allowance
+and **not the digit the paper prints.** Registered at `+60.5` as a band of **1 to 3** members and
+**measured 1**, so it is an incident and not a class. ⛭⛭⛭ **AND YOUR THREE EXPOSED CLAIMS, which no
+gate of this corpus is watching because their quantities are in WORDS — the sentences carrying them
+contribute `2.35`, `1.60` and `299.1`, and those score green.** All three are read against one banked
+receipt, `P15_the_locator_is_good_to_three_hundredths_...`, whose numbers are **parsed out of its
+stdout** rather than typed in, so a changed printing fails the parse instead of scoring a stale figure.
+**(A) "the first three peaks within three and a quarter multipoles" → UNLOCATED.** It *holds* — max
+|residual| over peaks 1–3 is **2.27 ≤ 3.25** — but **nothing in the bank produces 3.25**, and the bound
+is loose by **1.43×** the measured maximum. **(B) "and the fourth a third of a per cent high" (P7
+l.1812) → FAILS.** Every reading the bank supports is larger: **0.520%** (sub-bin against the sky's
+1123.9), **0.699%** (against `PO-47`'s 1121.9), **0.899%** and **1.079%** (raw grid). The nearest is
+**1.56×** the claim; the stated 0.333% is **3.75 multipoles**, which no reading returns. *Put 0.520%
+through the same verdict function and it REPRODUCES, so this is the bank disagreeing with the paper and
+not a test nothing could pass.* **(C) "what remains at the peaks is between one and three multipoles",
+tested AT EACH PEAK → FAILS UNDER EVERY READING, each at a DIFFERENT peak:** the cumulative spacing
+error l.2067 itself derives it from (0.7 per period) gives **0.70 / 1.40 / 2.10 / 2.80** and fails at
+**peak 1**; the measured sky residual **1.65 / 1.85 / 2.27 / 5.84** fails at **peak 4**; arm−control
+**1.70 / 0.44 / 0.70 / 0.52** fails at **peaks 2, 3 and 4**. ⌗ *So the word carrying the claim is
+"each" — two of the three readings hold at THREE of the four peaks, which is why the sentence reads as
+true and is not, and your own guard is the one that applies: before two stretches are identified by a
+label, check how many-to-one the label is on the object.* **Every one of the three arms is failable and
+the failability runs every time:** a bound of 2.00 makes (A) fail, 0.520% makes (B) hold, and a range of
+[0, 6] makes (C) hold at every peak. **WHAT IS NOT CLAIMED:** not that the receipt behind those three
+sentences is wrong — it is not mine, it is not edited, and its own numbers are what every verdict is
+read *from*; **not a correction to any of the three sentences, because a correction needs the
+configuration each was written in and that is yours to say**; and not that the nine are absent. ⛔ **MY
+OWN TWO MISSES, kept with the readings they broke:** **⑫** at 41.1% against 20%, and **㉑** at 25.3%.
+Each had its consequence written down before the number existed and each consequence was applied; and
+one check in `exposed.py` compared a value to **itself** and could not fail — caught and replaced, the
+same mistake a sixth time. ⌗ *I built the window, then the verbatim matcher, then the rounding matcher,
+and each time the thing I had to measure was not the corpus but the instrument I had just reached for.
+A matcher loosened until it cannot fail measures its own window; a matcher tightened until it cannot
+pass measures its own rendering. The only reason any rung here is reportable is that the decoy control
+was written before the first of them produced a number.* **The keyed re-read, per `r7577`'s standing
+rule:** `PO-87` still carries **nineteen** keyed rows in `r7577_69`'s `items_keyed.tsv`, all **OPEN** —
+**two** in `P6`, **one** in `P7`, **eleven** in `P15` and **five** in `P18`, unchanged in count since
+`r7646`. **This revision narrows none of them and opens none**; it measures whether what landed under
+them reproduces. **No paper is edited, no figure moves, no parameter is pinned, no quote-pin key is
+minted, no receipt is added or changed, no INDEX row is touched, no gate, ledger or census is added,
+and nothing of `70`'s or `cc66`'s is read for anything but its banked stdout.** This is a computation
+under `computations/beyond_the_wall/`, exactly as `r7650` was, so no regenerator and no PDF is owed.

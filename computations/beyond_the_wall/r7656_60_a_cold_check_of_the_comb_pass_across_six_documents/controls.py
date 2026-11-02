@@ -346,7 +346,7 @@ check(f"㉔ the stratified test is DECIDED either way -- every stratum either ha
 check(f"㉕ and the withheld nine are NOT in the headline: ⑱'s {n_ex} is strictly below ⑱-or-⑲'s "
       f"{n_rd}, so withholding ⑲ changed the number rather than the label",
       n_ex < n_rd)
-# ⌗ ㉑ IS SCORED LIKE ⒫, AND ITS CONSEQUENCE WAS WRITTEN BEFORE THE NUMBER EXISTED.  `+60.5`
+# ⌗ ㉑ IS SCORED LIKE ⑫, AND ITS CONSEQUENCE WAS WRITTEN BEFORE THE NUMBER EXISTED.  `+60.5`
 # said: "or ⑲ is reported as not measurable and only ⑱ is reported."  That is what `cold_check.py`
 # now does, by READING the rate below rather than by being told it.
 if not rrate <= 0.20:

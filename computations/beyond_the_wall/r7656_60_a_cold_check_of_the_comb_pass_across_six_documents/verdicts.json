@@ -130,10 +130,10 @@
   "ROUNDED"
  ],
  "rung_decoy_rate": {
-  "VERBATIM": 0.1053,
-  "EXACT-VALUE": 0.1474,
-  "ROUNDED": 0.2526,
-  "GATE-ONLY": 0.4105
+  "VERBATIM": 0.105263,
+  "EXACT-VALUE": 0.147368,
+  "ROUNDED": 0.252632,
+  "GATE-ONLY": 0.410526
  },
  "threshold": 0.2,
  "tolerance_reading": 95,
