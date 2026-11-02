@@ -120,3 +120,88 @@ quote-pin key is minted, and no gate, ledger or census is added.
 
 **Running total of this seat's own rule conditions corrected by measurement or by another seat rather
 than by reading, across `r7648`, `r7650`, `r7652`, `r7654`, `r7656` and now `r7658`: twenty-six.**
+
+---
+
+# `r7658+60.1` — ⑦⑧ SCORED A MISS, ⑨'S NEGATIVE IS REACHED, AND EVERY FIGURE IN ALL THREE STRETCHES REPRODUCES — WITH ONE CLAIM ATTACHED TO AN OBJECT ITS RECEIPT DOES NOT COMPUTE IT ON
+
+**⑧ MISSED, and in the restrictive direction.** I predicted the kernel receipt's **printed verdicts**
+would still carry the looser wording of its own filename. They do not. The receipt prints `3.37`
+orders for `+0.04106`, `2.47` for the as-run pair, `16.0` per cent of its own residual, and — this is
+the part my arm did not allow for — **it already enumerates `−78.3` and `−96.6` as a DISJUNCTION over
+the two states the paragraph may legitimately be in, and routes the question.** So **⑨'s negative is
+reached: only the filename and the docstring headline are stale, and a filename is not a claim.**
+
+⌗ *I predicted a receipt would be looser than the paper it backs, having read nothing of it but its
+name. The guard this corpus already carries says it: a defence against a paper state changing has to
+ENUMERATE the states it may produce, and a disjunction beats a pin. The receipt had done that before
+I looked.*
+
+## ① AND ② DISCHARGED: `PART 4B`'S ROWS CONFIRM BOTH, READ OFF ONE LOCATOR
+
+| row | ℓ₁ | ℓ₂ | ℓ₃ | ℓ₄ |
+|---|---|---|---|---|
+| the sky, this locator | 220.98 | 533.79 | 814.79 | 1121.85 |
+| the arm of record | 220.03 | 536.25 | 811.59 | 1125.11 |
+| the control, L2000 | 220.44 | 537.29 | 811.06 | 1123.99 |
+
+Offsets `−0.95 / +2.46 / −3.20 / +3.26`, exactly `r7657`'s. **(A) HOLDS** (`3.20 ≤ 3.25`); **(B)
+HOLDS** (`3.26/1121.85 = 0.291%`, which is `0.3%` to the one significant figure "a third of a per
+cent" carries); **"under three and a half at each" HOLDS** (max `3.26`). **And "two thirds of that
+offset shared with the control" HOLDS on the same rows:** the control is `+2.14` of the arm's `+3.26`
+= **0.656**. *All four read off one locator, both sides, which is what `r7656` failed to do.*
+
+## THE KERNEL PARAGRAPH: EVERY FIGURE REPRODUCES ON THE ARM OF RECORD
+
+`+0.04106` at a common tilt (either tilt, same answer) → **`+0.041`**; `+0.33081` as run → **`+0.33`**;
+tilts `1.015066` and `0.96` → **`1.015` and `0.96`**; `−15.4648` → **`−15.4`**; `+0.807` per cent in
+`r_D/D_M` → **"about `0.8` per cent"**; a part in **twelve thousand** in the acoustic angle, which the
+receipt asserts is the arm of record's where `a part in seventy thousand` was the namesake's. **The
+five-endpoint column runs `+0.04875 / +0.04106 / +0.03736 / +0.02829 / +0.06256`** → the paragraph's
+**"from `+0.028` to `+0.063`, always of one sign"** is the exact min, the exact max, and all five
+positive. ⌗ *Nothing here is ABSENT and nothing is loose.*
+
+**And the words check out on the residual the paragraph names:** `3.281` orders for "over three";
+`3.097` at the worst endpoint for "no less than three on every convention"; `2.375` for "still over
+two"; `0.876` for "nearly nine tenths of it the tilt's"; `1/5.06` for "a fifth". *On the receipt's
+`−96.6` the same figures read `3.372` and `1/6.27` — which is why its own text says "a sixth". **Both
+wordings are right, each on its own denominator, and only the paragraph states which one it uses.***
+
+## ⑪ WHAT I HAVE ALREADY SEEN AND NOW REGISTER AGAINST, before scoring it
+
+**⑪ THE TWO-ROUTE AGREEMENT IS ATTACHED TO THE WRONG PAIR.** The paragraph reads
+"`+0.041` degrees … **with the closed-form window and the full spherical-Bessel sum agreeing to the
+fifth decimal place** and each converged in its own parameter". `+0.041` is the **arm of record's**.
+The receipt's two-route section Ⓑ establishes that agreement on its **own arm/control pair**, where
+the difference is `−0.01405` by the window and `−0.01407` by the sum — and **there is no two-route row
+on the arm of record anywhere in its output.** *So the clause's figure and the clause's support are
+two different pairs.* **I predict this is a MIXED-BASIS attribution: true of the pair it was measured
+on, unestablished on the pair the sentence names.** ⌗ *This is the same defect `r7657` caught in me,
+one level up — and I would not have looked for it if it had not.*
+**⑫ THE REACHABLE NEGATIVE, registered: some other receipt in the candidate set runs both routes on
+the arm of record**, in which case the clause is located, this arm is a MISS, and that receipt is
+named. *It is searched for, not assumed away.*
+
+**⑬ AND A GATE'S OBJECT HAS BEEN WITHDRAWN.** The receipt's Ⓗ④ asserts that **no endpoint convention
+reproduces l.2388's `0.14 degrees` or its `no less than 2.8 orders`** — and the same receipt prints,
+four lines above it, that **l.2387–2388 "NO LONGER CARRIES THAT SENTENCE — reworded since `r7655`"**.
+The paragraph now says `+0.028` to `+0.063` and "no less than three orders", which the table confirms.
+**So a passing gate is asserting a miss against a sentence that no longer exists.** I predict the gate
+still passes and that its object is gone. ⌗ *A gate must assert the clause its argument reasons FROM,
+never the status of a sentence a live row is asking to change — this corpus's own guard, and the gate
+is `cc66`'s, so it is ROUTED with the lines, never edited.*
+
+**⑭ EVERY VERDICT ABOVE IS A FUNCTION OF ITS STATED VALUE AND A DECOY MUST FLIP IT**, per ⑥, and the
+script asserts the flip every run. **⑮ AND THE `1.4011` FIX IS TESTED**: the mantissa reading must make
+`1.4011` reproduce against `14011.4567`, and ⑯ *if nothing else in these three stretches needs that
+reading, it is reported as a correction to `r7656` and nothing more.*
+
+## WHAT IS NOT CLAIMED
+
+No correction to any of the three stretches, and none to Ⓗ④: both need the configuration they were
+written in, which is `69`'s and `cc66`'s to say. **No receipt is edited.** The paragraph is, on this
+reading, **stronger than its receipt's filename and right on every figure it prints** — and the two
+items above are a citation and a gate, not a number.
+
+**Running total of this seat's own rule conditions corrected by measurement or by another seat rather
+than by reading, across `r7648`, `r7650`, `r7652`, `r7654`, `r7656` and `r7658`: twenty-seven.**
