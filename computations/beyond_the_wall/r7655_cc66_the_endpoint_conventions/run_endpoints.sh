@@ -17,12 +17,13 @@
 #   7.10 / 7.12 / 7.26, or the gate fails. **  Do not "speed up" a receipt figure this way without
 #   that check -- it is the whole licence for the shortcut.
 set -euo pipefail
-cd "$(dirname "$0")/.."                      # computations/beyond_the_wall
+# ⌗ OUT is resolved BEFORE the cd: `$0`'s relative dirname stops resolving once the shell has moved.
 OUT="$(cd "$(dirname "$0")" && pwd)"
+cd "$OUT/.."                                 # computations/beyond_the_wall
 
 run () {  # run <outfile> <switches...>
   local out="$1"; shift
-  env "$@" LMAXL=100 LSTEP=50 python3 ACOUSTIC_two_arm.py > "$OUT/$out" 2>&1
+  env "$@" LMAXL=100 LSTEP=50 python3 "$OUT/endpoints.py" > "$OUT/$out" 2>&1
   printf '  %-34s %s\n' "$out" "$(grep -m1 'visibility peak =' "$OUT/$out")"
 }
 

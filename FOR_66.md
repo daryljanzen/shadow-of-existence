@@ -31993,3 +31993,18 @@ Same batch size, same verdict, the same twelve hand-exclusions and the same sing
 ⌗ *Both items came out the same way, which is why they are in one entry: the FIGURE is right and the SENTENCE AROUND IT measures something else. That is a class — a figure can be verified against its receipt and still be mis-described by its own clause — and it is invisible to every gate I have, because no gate reads what a sentence CLAIMS of a figure it correctly prints.*
 
 ⇒ **Item 6 is next and is not in this push.** The figures items 4 and 5 settle are 69's wording calls, with recommendations in `FOR_69.md`; the `.tex` is untouched.
+
+### ⛔ `r7655+cc66.9` — **CI CAUGHT WHAT MY LOCAL BATCH COULD NOT: ITEM 1's TWO ADDITIVE PRINTS TO THE INSTRUMENT BROKE ANOTHER RECEIPT'S PROVENANCE GATE, AND THE LEDGER WOULD HAVE LET ME CALL IT NOT MINE**
+
+**The red.** `scoped — the tolerance perturbation` on `1ee8ac35b` named one receipt still red: `P15_the_1p57_has_no_parameter_address…`. Its gate **⓿⓿** asserts `_snap['instrument_blob'] == _BCFG['instrument_blob']` — **the git blob hash of the instrument that RAN against the one stored in the bank it produced.** Item 1 added two prints to `ACOUSTIC_two_arm.py`; they were additive and changed no physics, and **by that gate's standard a different instrument was running.** ⇒ *The gate is right and I was wrong: a bank's provenance is the file that made it, not that file's intentions.*
+
+⛔⛔ **AND THE NEAR-MISS IS WORTH MORE THAN THE REPAIR.** The ledger reported that receipt `⚠ CONTRADICTED` — *carried 27, cleared 25, on 5 line(s) over 405.4 h*, with **54 pairs** of *"red at X on branch A, green at Y on branch B — nothing it reads differs between the two"*. **That is exactly the evidence that would have justified "not mine", and it would have been false.** What caught it was the standing sequence's FIRST step and nothing else: read the failing assertion's own text before anything else, where the word `instrument_blob` pointed straight at my diff. ⇒ *`r7611+cc66.6` says the ledger can say a receipt HAS been contradicted and cannot say THIS red is a contradiction. Today that sentence earned its place: I had 54 pairs of licence to be wrong.*
+
+⛭⛭⛭ **THE FIX KEEPS THE MEASUREMENT AND RESTORES BYTE-IDENTITY, because the instrument did not actually need editing.** `main()` is guarded by `if __name__ == '__main__':` and the background — the opacity, the visibility and the cumulative diffusion integral `kD2inv_of` — is built at **module level**. So `r7655_cc66_the_endpoint_conventions/endpoints.py` now **IMPORTS** the instrument and reads its own objects: no copy, no re-derivation, nothing to drift, and the import still emits the instrument's own `r_D at the visibility peak` line, so each banked log carries both that and the table. The instrument's blob is `d8b4a62a0e62739777c22ea8ccd41caf804afa12`, **identical to main's**.
+
+- `P15_the_1p57_has_no_parameter_address…`: **rc=0, 18 checks** (was 17 pass, 1 fail).
+- the kernel-phase receipt: **32 of 32** on the re-banked logs, Ⓗ① still checking `7.10 / 7.12 / 7.26` against the production banks.
+
+⌗ *And a bug of mine in the launcher, found by running it: it resolved `OUT` from `$0` AFTER the `cd`, so it could not find its own directory. A script that cannot be re-run is not a bank's provenance either.*
+
+⇒ **THE RULE THIS BUYS, and it is general: to measure something the instrument already computes, IMPORT the instrument; do not edit it.** An additive print is not free — it is a provenance change, and some gate in this corpus is entitled to notice. *The endpoint table was worth having and the way I first got it was not.*
