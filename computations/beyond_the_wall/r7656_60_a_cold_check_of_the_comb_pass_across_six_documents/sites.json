@@ -1,0 +1,318 @@
+{
+ "sites": [
+  {
+   "paper": "P15",
+   "file": "corpus/CR_cosmology.tex",
+   "line": 248,
+   "figures": [],
+   "cites": [],
+   "claim": "outside the horizon there and the plasma's own expansion carries them, so the sound horizon converges at its"
+  },
+  {
+   "paper": "P15",
+   "file": "corpus/CR_cosmology.tex",
+   "line": 813,
+   "figures": [],
+   "cites": [
+    "H0_acoustic_angle_and_seam"
+   ],
+   "claim": "densities . So the acoustic scale is computed rather than accommodated, and it is the comb of the computed"
+  },
+  {
+   "paper": "P15",
+   "file": "corpus/CR_cosmology.tex",
+   "line": 882,
+   "figures": [],
+   "cites": [],
+   "claim": "point and the background fixed by the distance data alone.}"
+  },
+  {
+   "paper": "P15",
+   "file": "corpus/CR_cosmology.tex",
+   "line": 883,
+   "figures": [
+    "1121.9",
+    "1125.1",
+    "220.0",
+    "221.0",
+    "533.8",
+    "536.3",
+    "811.6",
+    "814.8"
+   ],
+   "cites": [],
+   "claim": "Located by one procedure on the sky and on the arm alike, the peaks fall at 220.0, 536.3, 811.6 and 1125.1 against the sky's 221.0, 533.8, 814.8 and 1121.9;"
+  },
+  {
+   "paper": "P15",
+   "file": "corpus/CR_cosmology.tex",
+   "line": 884,
+   "figures": [
+    "298.4",
+    "299.1"
+   ],
+   "cites": [],
+   "claim": "the comb fitted to them is 299.1 against the sky's 298.4, and"
+  },
+  {
+   "paper": "P15",
+   "file": "corpus/CR_cosmology.tex",
+   "line": 885,
+   "figures": [
+    "0.2488",
+    "2.291"
+   ],
+   "cites": [],
+   "claim": "the phase intercept \\varphi/\\pi=-0.2488 against -0.2448. The height ratios are P_{1}/P_{2}=2.291 and"
+  },
+  {
+   "paper": "P15",
+   "file": "corpus/CR_cosmology.tex",
+   "line": 886,
+   "figures": [
+    "2.221",
+    "2.262",
+    "2.349"
+   ],
+   "cites": [
+    "P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number"
+   ],
+   "claim": "P_{1}/P_{3}=2.349 against the sky's 2.221 and 2.262 . The first three peaks sit within three and a quarter multipoles of the sky's, and at the fourth the two models agree with each other: located through one"
+  },
+  {
+   "paper": "P15",
+   "file": "corpus/CR_cosmology.tex",
+   "line": 945,
+   "figures": [
+    "299.1"
+   ],
+   "cites": [],
+   "claim": "agree, the comb at 299.1 against a reported scale of 302.9. \\emph{The two sides of that agreement are"
+  },
+  {
+   "paper": "P15",
+   "file": "corpus/CR_cosmology.tex",
+   "line": 2067,
+   "figures": [],
+   "cites": [],
+   "claim": "paths, so what remains at the peaks is between one and three multipoles."
+  },
+  {
+   "paper": "P15",
+   "file": "corpus/CR_cosmology.tex",
+   "line": 2069,
+   "figures": [],
+   "cites": [],
+   "claim": "The result is reproduced independently on a second instrument. A separate implementation---the"
+  },
+  {
+   "paper": "P15",
+   "file": "corpus/CR_cosmology.tex",
+   "line": 2070,
+   "figures": [],
+   "cites": [],
+   "claim": "hierarchy path rather than the line-of-sight one, 185 covered bins rather than 133, its own wavenumber"
+  },
+  {
+   "paper": "P15",
+   "file": "corpus/CR_cosmology.tex",
+   "line": 2071,
+   "figures": [
+    "1125.02",
+    "220.03",
+    "536.25",
+    "536.27",
+    "811.58",
+    "811.59"
+   ],
+   "cites": [],
+   "claim": "grid---returns peaks at 220.03, 536.27, 811.58 and 1125.02 against this path's 220.03, 536.25, 811.59 and"
+  },
+  {
+   "paper": "P15",
+   "file": "corpus/CR_cosmology.tex",
+   "line": 2072,
+   "figures": [
+    "1125.11",
+    "2.291",
+    "2.348",
+    "2.349"
+   ],
+   "cites": [],
+   "claim": "1125.11, both located by the one procedure; and height ratios 2.291 and 2.348 against 2.291 and 2.349: \\emph{within a tenth of a multipole on every peak and within a fiftieth of a per cent on the"
+  },
+  {
+   "paper": "P15",
+   "file": "corpus/CR_cosmology.tex",
+   "line": 2073,
+   "figures": [],
+   "cites": [],
+   "claim": "heights}. The fourth peak's excess reproduces there too, so it is a property of the"
+  },
+  {
+   "paper": "P15",
+   "file": "corpus/CR_cosmology.tex",
+   "line": 2074,
+   "figures": [],
+   "cites": [],
+   "claim": "spectrum rather than of either implementation---and on that path, where the sub-bin location is available on"
+  },
+  {
+   "paper": "P15",
+   "file": "corpus/CR_cosmology.tex",
+   "line": 2075,
+   "figures": [],
+   "cites": [],
+   "claim": "both arms, it is a property the control carries with"
+  },
+  {
+   "paper": "P15",
+   "file": "corpus/CR_cosmology.tex",
+   "line": 2146,
+   "figures": [],
+   "cites": [],
+   "claim": "this arm against the sky, which is not the difference the model comparison reads}: \\Delta---this arm minus"
+  },
+  {
+   "paper": "P15",
+   "file": "corpus/CR_cosmology.tex",
+   "line": 2768,
+   "figures": [],
+   "cites": [],
+   "claim": "The low-multipole prediction above and the ratio statements below are carried by a Boltzmann transfer built for this programme, and its standing should be stated plainly rather than assumed. It is a full photon hierarchy with polarisation, second-order tight coupling, massless neutrinos, and a Peebl"
+  },
+  {
+   "paper": "P7",
+   "file": "corpus/CR_framework.tex",
+   "line": 1812,
+   "figures": [],
+   "cites": [],
+   "claim": "to, and it returns the peak spacing to one part in four hundred, the first three peaks within three and a quarter multipoles of the measured ones and the fourth a third of a per cent high, with the heights within a few per cent --- and the full-spectrum likelihood leaving, at the parameters' full re"
+  },
+  {
+   "paper": "P7",
+   "file": "corpus/CR_framework.tex",
+   "line": 1851,
+   "figures": [
+    "0.23",
+    "1121.9",
+    "1125.1",
+    "2.221",
+    "2.262",
+    "2.291",
+    "2.349",
+    "220.0",
+    "221.0",
+    "298.4",
+    "299.1",
+    "533.8",
+    "536.3",
+    "811.6",
+    "814.8"
+   ],
+   "cites": [],
+   "claim": "first-to-second height ratio to 0.23\\% at peaks 220, 536 and 814 --- and on the background the baryon-acoustic distances fix this construction's arm returns peaks at 220.0, 536.3, 811.6 and 1125.1 against the sky's 221.0, 533.8, 814.8 and 1121.9 located by the same procedure, a comb of 299.1 against"
+  },
+  {
+   "paper": "P7",
+   "file": "corpus/CR_framework.tex",
+   "line": 1863,
+   "figures": [
+    "1.16",
+    "1.60",
+    "186.0",
+    "186.007",
+    "186.135",
+    "2.35",
+    "2.71",
+    "276.4"
+   ],
+   "cites": [],
+   "claim": "arm}: over the full-range lensed configuration the control returns 1.16 in \\chi^{2} per bin and this arm 2.71, the arm at 2.35 times the control's distance from the data; refitting both arms' own parameters on the full range leaves it at 1.60 times, moving this arm's expansion rate by under a twenti"
+  },
+  {
+   "paper": "P17",
+   "file": "corpus/geometric_core_paper.tex",
+   "line": 1722,
+   "figures": [
+    "2.35"
+   ],
+   "cites": [],
+   "claim": "reproduces the comb to a part in four hundred and the heights to a few per cent, and on shape sits at 2.35"
+  },
+  {
+   "paper": "P18",
+   "file": "corpus/CR_synthesis.tex",
+   "line": 1526,
+   "figures": [
+    "1121.9",
+    "1125.1",
+    "2.221",
+    "2.262",
+    "2.291",
+    "2.349",
+    "220.0",
+    "221.0",
+    "298.4",
+    "299.1",
+    "533.8",
+    "536.3",
+    "811.6",
+    "814.8"
+   ],
+   "cites": [],
+   "claim": "integral.} On that footing, located by one procedure on the sky and the arm alike, the construction returns peaks at 220.0, 536.3, 811.6 and 1125.1 against the sky's 221.0, 533.8, 814.8 and 1121.9 --- a comb of 299.1 against the sky's 298.4 --- and height ratios of 2.291 and 2.349 against 2.221 and "
+  },
+  {
+   "paper": "P18",
+   "file": "corpus/CR_synthesis.tex",
+   "line": 1832,
+   "figures": [
+    "1125.1",
+    "2.221",
+    "2.291",
+    "2.349",
+    "220.0",
+    "536.3",
+    "811.6"
+   ],
+   "cites": [],
+   "claim": "two-arm transfer that propagates the modes, which returns this arm's peaks at 220.0, 536.3, 811.6 and 1125.1 \\cite{JanzenCRcosmology}. The heights are measured by the same transfer --- P_{1}/P_{2}=2.291 and P_{1}/P_{3}=2.349 against the sky's 2.221 and 2.262. The driven amplitude is a resonant Fouri"
+  },
+  {
+   "paper": "P6",
+   "file": "corpus/shadow_of_existence.tex",
+   "line": 353,
+   "figures": [
+    "186.135",
+    "276.4"
+   ],
+   "cites": [],
+   "claim": "The discipline grounds the half of the companion programme that turns ontology empirical. The modern parallax of the forerunning paper \\cite{JanzenModernParallax} is the forward instance of the vindication lemma: the cosmic rest frame and the uniform expansion are the structure the rules favour---re"
+  },
+  {
+   "paper": "EXPLAINER",
+   "file": "EXPLAINER.md",
+   "line": 241,
+   "figures": [],
+   "cites": [],
+   "claim": "And here is the part that still astonishes me. Wherever this picture meets the measurements, it keeps landing on the standard numbers \u2014 and every time, for a reason of its own. The expansion follows the same curve, with no push behind it and no brake against it. The light elements come out where the"
+  },
+  {
+   "paper": "EXPLAINER",
+   "file": "EXPLAINER.md",
+   "line": 254,
+   "figures": [
+    "298.4",
+    "299.1",
+    "68.6"
+   ],
+   "cites": [],
+   "claim": "**What fits.** Computed that way, with nothing adjusted to fit it, the comb comes out with a spacing of 299.1 against the sky's 298.4 \u2014 right to one part in four hundred. Fixed by that spacing and the distances charted across the universe's growth, today's expansion rate comes out near 68.6 kilometr"
+  }
+ ],
+ "candidates": [
+  "H0_acoustic_angle_and_seam",
+  "P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number"
+ ]
+}

@@ -102,3 +102,47 @@ ELSEWHERE, not as correctly cited** — and that distinction is the finding if a
   denominator, and the figures depending on it are UNRUN rather than absent. *A cold check that
   quietly dropped what it could not run would be measuring its own window — which this seat has now
   reported twice and will not report a third time as a result.*
+
+---
+
+# `r7656+60.1` — REGISTER THE CORRECTIONS: the order names the BLANK line before each paragraph, and my candidate set anchored on a comment
+
+**Two method defects, both mine, both found by measurement before a single verdict was produced.**
+
+## ⓘ THE NAMED LINES ARE THE BLANK LINES BEFORE THE PARAGRAPHS
+
+Measured: `P15` l.135, l.148, l.153, l.441, l.2791 and l.2990 each have **length 1** — the newline
+alone. The paragraph begins on the **next** line every time, and the "part in four hundred" the order
+is about sits at l.136, l.149, l.154, l.442, l.2765, l.2788 and l.2987.
+
+⇒ **So 69 is naming paragraph starts by the blank line that precedes them.** That is a consistent
+convention, not a slip — but a check that read the named lines **literally** would find six blank
+lines, extract nothing from them, and report them green. *That is the vacuity failure arm ② of this
+registration was written against, and it would have fired on my own instrument rather than on the
+corpus.*
+
+**⑨ THE CORRECTED RULE, registered before the corrected scope exists:** a named line that is blank
+resolves to the **next non-blank line**, and the receipt **prints the resolved line number beside the
+named one** for every site, so the resolution is visible and not silent. A named line that is blank
+and has no non-blank successor is reported UNRESOLVED, never skipped.
+
+## ⓘ AND THE CANDIDATE SET WAS BUILT FROM THE WRONG ANCHOR
+
+It returned **2** candidate receipts where `r7650` found **35** in the same section. The cause: the
+builder anchored the segment on the first *mention* of `sec:refit-bound`, which is **line 34, inside a
+comment block**, instead of on `\label{sec:refit-bound}` at **line 808**. So the "section" it scanned
+was the abstract.
+
+⇒ **⑩ THE CORRECTED RULE:** the segment is anchored on the **label's definition**, `\label{sec:...}`,
+never on a mention; and the receipt **asserts the candidate count is above 20**, because a candidate
+set of two could not resolve 33 distinct figures and a check that tried would report them absent for
+want of a place to look. *A sweep that returns nothing has measured its own reach — the third time
+this seat has had that lesson, and the first time it has been caught by an assertion written in
+advance.*
+
+⌗ *Both defects share one shape: **an instrument that silently returns less than it should looks
+exactly like a corpus that is clean.** So both corrections are assertions about the instrument's own
+reach, placed before the measurement rather than inferred from its result.*
+
+**Running total of this seat's own rule conditions corrected by measurement rather than by reading,
+across `r7648`, `r7650`, `r7652`, `r7654` and `r7656`: eighteen.**
