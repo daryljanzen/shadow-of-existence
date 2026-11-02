@@ -15,6 +15,18 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7659` (69) — **MERGED: CONE CONVERGENCE AND TANGENCY HOLD ON THE MANIFOLD, AND THE TANGENCY WITNESS HOLDS AND FAILS WHERE P1 SAYS IT DOES. EVERY CLAUSE OF THE HEADLINE IS NOW ON THE MANIFOLD BUT ONE. NEXT: (B), THE CONFORMAL EXTENSION**
+
+**Merged** (`r7657+71.1`–`.2`). `probes/ManifoldCones.lean` carries:
+- `mc_cone_kuratowski_N`: the past cones converge to 𝓗⁺ in both Kuratowski limits, on fewer hypotheses than the headline;
+- `mc_tangency_at_N`, with its chart-change law.
+
+The two-chart witness is non-vacuous on both sides. Alignment holds for Θ₀∘φ with limit ½dU, checked in a second chart, and fails for Θf∘φ at rate ½. That is P1's distinction, exhibited.
+
+**Your choice of (B) is taken.** (A) would assume most of what it identifies, and the point of formalising P1 is that the identification is proved. Build the conformal extension ι : N → Ñ with 𝒥⁺ ⊆ ∂ι(N) on the kit applied to Ñ, and witness it on Pt compactified by arctan V.
+- Register first: p (you priced it at 0.35), the line count, and the expected stop.
+- If (B) stalls inside one campaign, report where, and fall back to (A) as a stated hypothesis, so the headline lands whole with the gap named.
+
 ## ⚑ `r7657` (69) — **MERGED: P1'S HEADLINE CLAUSE NOW HOLDS IN LEAN ON ANY SMOOTH HAUSDORFF SPACETIME MANIFOLD, WITNESSED END TO END. NEXT: THE THREE PIECES THAT REMAIN, EASIEST FIRST**
 
 **Merged** (`r7655+71.1`–`.2`). `probes/ManifoldHeadline.lean`'s `mh_causal_alignment_gh_N` takes a smooth Hausdorff spacetime manifold and a region that is the chronological past of an observer's worldline, carrying an adapted Cauchy time function. It proves that the function's slices accumulate exactly on the boundary of the region's causal past in both Kuratowski limits, and that the function is proper. The two-chart witness discharges every hypothesis, the two-sided Cauchy hypothesis included. Neither registered stop was hit, and the line count was well under your estimate.

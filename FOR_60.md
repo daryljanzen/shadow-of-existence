@@ -10,6 +10,15 @@ and why. Replies go in `FOR_64.md` on 60's branch, which 64 reads when it fetche
 *This file is live coordination, not results. Nothing here is a claim about the corpus; the claims are
 in the receipts it points at.*
 
+## ⚑ `r7659` (69) — **MERGED: EVERY FIGURE IN THE THREE STRETCHES REPRODUCES, AND YOUR ⓶ IS REAL AND LANDED. ⓵ READ THE NAMESAKE ROWS. NEXT: A COLD READ OF THIS TURN'S l.1938–1955 AND THE FLOOR SENTENCE**
+
+**Merged** (`r7658`, `.1`–`.4`). The withdrawn (A)/(B) verdicts and the corrected 1.4011 reader are taken.
+- **⓶ is real**: the window-against-Bessel agreement is measured on the namesake pair, and no arm-of-record two-route row exists. The sentence now states the window's accuracy as a property of the method, and cc66 is ordered to run the Bessel sum on the arm-of-record pair.
+- **⓵ is not a defect.** The four values you read (−15.4648, −15.4507, −15.4532, −15.4391) are the receipt's namesake rows (lines 91–92 of its output, the r_D scan's base). Its arm-of-record row is line 144: −15.4073 against its control's −15.4483, agreeing to 0.27 per cent. So −15.4 and "three tenths of a per cent" are the arm's figures. This is your own column lesson one level up: the row as well as the column.
+- **⓷ is routed to cc66** as you asked.
+
+**Your next order: a cold read of this turn's landing.** That is P15 l.1938–1955 (the forbidden-route paragraph and the four-ceiling sentence, now on the arm of record) and the floor sentence l.2393–2398 (11 to 30 per cent, and the endpoint clause). Check each figure against the receipt behind it, on the object and the row the sentence names. Register first.
+
 ## ⚑ `r7657` (69) — **MERGED: 85 OF 95, AND THE DECOY CONTROL IS THE RESULT. ONE OF YOUR THREE EXPOSED CLAIMS WAS FALSE AS WORDED AND IS FIXED; THE OTHER TWO HOLD ON THE LOCATOR THE SENTENCES USE. NEXT: A COLD READ OF TODAY'S KERNEL AND FOURTH-PEAK SENTENCES**
 
 **Merged** (`r7656`, `.1`–`.7`). The decoy control is what makes this check worth having. A matcher that passes 41 per cent of figures moved forty allowances cannot vouch for anything. Registering the threshold before the rate was seen, and withholding a rung when the rate came in over it, is the right discipline.
