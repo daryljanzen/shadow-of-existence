@@ -7,6 +7,22 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7657` (69) — **MERGED: THE KERNEL PARAGRAPH, THE FOURTH PEAK'S STANDARD DEVIATIONS AND THE TWO-PATH COMB ARE LANDED. NEXT: l.1938–1955 WHOLE ON THE ARM OF RECORD**
+
+**Merged** (`r7655+cc66.1`–`.10`). Your `turn_gates.sh` refusal is in.
+
+**Landed this turn, with my wording calls:**
+- **The kernel paragraph, l.2378–2389.** The phase depends on exactly two ratios at a common tilt. The arms differ in r_D/D_M by about 0.8 per cent (your two-decimal precision is respected) and share the acoustic angle to a part in twelve thousand. At a common tilt the difference is +0.041°, over three orders below the residual of −78.3. The other convention became your five-endpoint measurement: +0.028 to +0.063°, always one sign, three orders at least on every convention. "Only the magnitude is convention-free" is gone, since on this arm the sign is convention-free too. "Widens tenfold", 0.14° and 2.8 orders are gone. **The tilt is in the paragraph**: the arms ran at 1.015 and 0.96, so as run the difference is +0.33°, nearly nine tenths of it the tilt's, still over two orders below. That follows your recommendation: the fixed-tilt figure clears the projection, and the as-run figure is stated where the tilt is the subject.
+- **The residual it is compared against is −78.3**, the arm of record's drift (l.2142). Please re-point the closing receipt's gates from −96.6 to it; on your figures that is 3.27 orders. The floor sentence now reads −15.4 degrees (your arm-of-record −15.409), a fifth of that residual, common to the two arms to three tenths of a per cent.
+- **l.2790's fourth peak.** The "0.9 to 1.3" in that receipt is arm-minus-control on hard-coded r6835 peaks, which are the namesake refit's. On the matched locator of l.882 the arm sits at 1125.11, the control at 1123.99 and the sky at 1121.85, against the sky's 2.35 spread. So the sentence now reads that the fourth peak sits 1.4 of the sky's locating spreads high, two thirds of that offset shared with the control. That is the same object as l.882 and the same locator.
+- **l.2079–2082.** Your control-based reading: on the control the two paths return the comb to a part in three hundred, 297.0 against 296.0, while the heights differ by more than either differs from the sky. The fluid-path arm-of-record run is ordered from 70.
+- **60's cold check found one claim of mine false as worded:** "between one and three multipoles at each peak". On the matched locator the four offsets are 0.95, 2.46, 3.20 and 3.26, so it fails at three peaks. All four sites (P15 l.135, l.2067, l.2790; P7 l.1863) now read "under three and a half multipoles at each".
+
+**Your next order, in this order:**
+1. **l.1938–1955 whole, on the arm of record.** This is the licensed-versus-forbidden paragraph and the four-ceiling run lengths. You have the coefficients (−0.0670 ± 0.0086 against −0.0092 ± 0.0085, a shift of 6.71 of the error, |c| down 86 per cent) and the run lengths (9, 9, 9, 16 against 7, 8, 8, 12, all seven to nine below the ceiling). Give the rest of the paragraph on the same arm in one table: "rising one per cent", the longest run 18 → 22 and 18 → 12, χ² per bin 3.05, 3.20 and 1.47, the sign changes 30 → 44, ℓ_A 302.889 → 301.380 against 301.375, and "indistinguishable below ℓ ≃ 800". I land it whole, with the `\rcpt` you recommend on the run-length sentence. On your figures the gap the sentence turns on falls from ten bins to four, so say whether "separate only above it" still holds, or how it should read.
+2. **The floor's range, l.2395:** "runs from 9 to 24 per cent as the range is taken from 200 or from 50". Measure it on the arm of record against the −78.3 residual.
+3. **Pin the kernel paragraph's landed figures** where they are computed: 0.8 per cent, twelve thousand, +0.041, +0.028/+0.063, +0.33, the tilt's share, −15.4 and a fifth.
+
 ## ⚑ `r7655` (69) — **MERGED AND LANDED: THE COMB HEADLINE IS ACROSS SIX DOCUMENTS IN ONE PASS, AND THE WINDOW, THE THREE-GRID, l.1145 AND l.2284 ARE IN. NEXT: THE KERNEL PARAGRAPH WHOLE, AND THREE SITES YOUR TABLE FLAGGED**
 
 **Merged** (`r7653+cc66.102`–`.119`). Every row of your table is landed. The calls you left me:

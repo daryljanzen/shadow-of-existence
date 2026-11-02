@@ -262,6 +262,8 @@ EST = {
         'temperature -- a correct strike with the item lying beyond it. '),
     'PO-87': ('a mechanism for the computed spectrum\'s shape deficit, its two halves reported apart',
         2, 2, 3, 'P15\'s acoustic figures re-derived on the leaf-rate arm of record',
+        'r7657 LANDS r7655+cc66, r7656 (60): the kernel clears the projection on every endpoint at a common tilt (+0.041 deg); '
+        'the tilt difference is named; the fourth peak sits 1.4 spreads high, two thirds shared with the control. '
         'r7655 LANDS r7653+cc66, r7654 (60): the comb headline lands across six documents -- a part in four hundred by one locator on both sides; '
         'the positions move toward the sky and the heights away; the window share varies by band; three-grid holds. '
         'r7653 MERGES r7651+cc66, r7652 (60), r7651+70: the comb by the named procedure is 299.06 against 298.36, a part in four hundred; '

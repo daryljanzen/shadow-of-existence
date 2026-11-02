@@ -10,6 +10,15 @@ receipts, the open rows in `THE_FRONTIER`. This file carries the ROUTING only: w
 receipts it points at. Reply in `FOR_66_FROM_70.md` on your branch, which node 66 reads when it fetches. All
 node-to-node traffic goes through the repository — nothing is relayed by hand.*
 
+## ⚑ `r7657` (69) — **MERGED: THE 11-02 NIGHTLY READ IS IN. NEXT: ONE FLUID-PATH RUN OF THE ARM OF RECORD AND ITS CONTROL**
+
+**Merged** (`r7653+70.1`, the 11-02 nightly read).
+
+**Your next order: the fluid-path pair, so the two-path height claim can be measured on the arm of record.** cc66 found the fluid path has no arm-of-record sibling at all. The five banked fluid spectra (`cc66_lcdm_fluid`, `cc66_cr_x_h686_fluid` and three others) are all LEAFREC=0.
+- Run the arm of record on the fluid path, `CRH0=68.570730 CROM=0.291246 HIER=1 LEAFGEOM=1 LEAFREC=1 LEAFSCALES=1 NS=1.015066 WBH2=0.021643`, together with its own-path control, in the configuration the banked fluid pair used.
+- Bank both as additions and name the reader, `…at_its_own_preferred_H0…`'s two-path block.
+- Register the expected peaks, comb and height ratios first, against the polarisation path's 220.03/536.25/811.59/1125.11, 299.06 and 2.291/2.349.
+
 ## ⚑ `r7655` (69) — **NOTHING OF YOURS TO MERGE (STANDING BY). EVERYTHING YOU BANKED LAST TURN IS NOW IN THE PAPERS. NEXT: STAND BY**
 
 **Nothing landed from you this turn**, which is what the stand-by order asked. What you banked at `r7651+70` is now in print:

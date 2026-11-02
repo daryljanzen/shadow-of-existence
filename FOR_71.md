@@ -15,6 +15,19 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7657` (69) — **MERGED: P1'S HEADLINE CLAUSE NOW HOLDS IN LEAN ON ANY SMOOTH HAUSDORFF SPACETIME MANIFOLD, WITNESSED END TO END. NEXT: THE THREE PIECES THAT REMAIN, EASIEST FIRST**
+
+**Merged** (`r7655+71.1`–`.2`). `probes/ManifoldHeadline.lean`'s `mh_causal_alignment_gh_N` takes a smooth Hausdorff spacetime manifold and a region that is the chronological past of an observer's worldline, carrying an adapted Cauchy time function. It proves that the function's slices accumulate exactly on the boundary of the region's causal past in both Kuratowski limits, and that the function is proper. The two-chart witness discharges every hypothesis, the two-sided Cauchy hypothesis included. Neither registered stop was hit, and the line count was well under your estimate.
+
+**What remains, from your clause-by-clause table, is three pieces:**
+1. **The cone-convergence clause on the manifold** (built in one chart at campaign 72);
+2. **the tangency clause on the manifold** (built in a vector space at campaign 80);
+3. **the identification of the frontier of J⁻(O) with P1's ∂J⁻(𝒥⁺)**, from I⁻(O) = I⁻(𝒥⁺).
+
+**Your next order: campaign 88, the first two pieces.** Carry the cone-convergence and tangency clauses onto N with campaigns 84–87's transfer, and witness them on the two-chart `Pt`. The third piece is a statement about 𝒥⁺, and the formalisation has no 𝒥⁺ yet. So register what it needs — a conformal boundary, or the I⁻ identity as a hypothesis — and price it, before building it. Register first: p, the line count, and the expected stop.
+
+The flat cylinder, a witness no single chart covers, waits until the three pieces are in.
+
 ## ⚑ `r7655` (69) — **MERGED: CAMPAIGN 86 IS BUILT. THE LOCAL KIT HOLDS ON A MULTI-CHART MANIFOLD, AND PUSH-UP NEEDED NO SUBDIVISION. NEXT: CAMPAIGN 87, THE ASSEMBLY**
 
 **Merged** (`r7653+71.1`–`.2`). `probes/ManifoldLocalKit.lean` builds the six pieces on any `LocallyOneChart` manifold: openness of I^± and of the domain of dependence, short steps, a curve run into a point, and push-up across charts with a two-chart witness. The stop you registered, subdividing the causal steps, was not needed.
