@@ -63,6 +63,21 @@ def check(label, ok):
         _fail.append(label)
 
 
+# ---------------------------------------------------------------- ㉑ the verdict READS its control
+# ⌗ `+60.5` fixed the consequence of a failing decoy rate before the rate existed, and `+60.6`
+# scored it: at 25.3% the ⑲ rung is WITHHELD.  This file does not hold that as a constant -- it
+# reads `controls.json` and withholds the rung itself, so the verdict cannot drift away from the
+# control that licenses it, and a MISSING control is a hard stop rather than a silent reproduction.
+CTL = os.path.join(HERE, 'controls.json')
+if not os.path.exists(CTL):
+    sys.exit("⛔ controls.json is absent.  Run controls.py first: no rung of the ladder may be "
+             "reported before its own false-positive rate has been measured.")
+C = json.load(open(CTL))
+THRESHOLD = 0.20                                   # registered at +60.3 and never moved since
+RUNG_RATE = {'VERBATIM': C['verbatim_decoy_rate'], 'EXACT-VALUE': C['exact_decoy_rate'],
+             'ROUNDED': C['rounded_decoy_rate'], 'GATE-ONLY': C['decoy_rate']}
+WITHHELD = {k for k, v in RUNG_RATE.items() if v > THRESHOLD and k != 'GATE-ONLY'}
+
 S = json.load(open(os.path.join(HERE, 'sites.json')))
 SITES, CANDS = S['sites'], S['candidates']
 STATE = {r['receipt']: r['state'] for r in json.load(open(os.path.join(HERE, 'runs.json')))}
@@ -198,7 +213,7 @@ check("ⓐ④ and no named line is UNRESOLVED", not any(s.get('unresolved') for 
 
 # ---------------------------------------------------------------- the verdicts
 print("\nⓑ  EVERY FIGURE, EVERY SITE -- named line, resolved line, verdict")
-rows, absent, elsewhere, gate_only, exact, rounded = [], [], [], [], [], []
+rows, absent, elsewhere, gate_only, exact, rounded, withheld = [], [], [], [], [], [], []
 LADDER = [('VERBATIM', produces_verbatim), ('EXACT-VALUE', produces_exact),
           ('ROUNDED', produces_rounded), ('GATE-ONLY', produces)]
 for s in SITES:
@@ -218,6 +233,11 @@ for s in SITES:
                 absent.append((s['paper'], s['line'], f))
             continue
         label, good = hit
+        if label in WITHHELD:
+            d, t, n = nearest(f, *good)
+            rows.append((s, f, 'UNESTABLISHED', good[0]))
+            withheld.append((s['paper'], s['line'], f, t, d, good[0]))
+            continue
         own = [n for n in good if n in cites]
         rows.append((s, f, label, (own or good)[0]))
         if label == 'VERBATIM' and cites and not own:
@@ -244,14 +264,29 @@ for (paper, named, res) in sorted(by, key=lambda k: (k[0], k[1])):
           + ', '.join(f'{k} {n}' for k, n in sorted(tally.items())) + mark)
 
 N = {k: sum(1 for _s, _f, v, _n in rows if v == k) for k in
-     ('VERBATIM', 'EXACT-VALUE', 'ROUNDED', 'GATE-ONLY', 'ABSENT', 'UNRUN')}
+     ('VERBATIM', 'EXACT-VALUE', 'ROUNDED', 'GATE-ONLY', 'UNESTABLISHED', 'ABSENT', 'UNRUN')}
+print(f"\n      EACH RUNG'S OWN MEASURED REACH, read from controls.json -- a rung over "
+      f"{THRESHOLD*100:.0f}% is WITHHELD and reports UNESTABLISHED, never a reproduction:")
+for k in ('VERBATIM', 'EXACT-VALUE', 'ROUNDED'):
+    print(f"         {k:<12} decoy rate {RUNG_RATE[k]*100:5.1f}%   "
+          + ("WITHHELD" if k in WITHHELD else "reportable"))
+print(f"         {'GATE-ONLY':<12} decoy rate {RUNG_RATE['GATE-ONLY']*100:5.1f}%   "
+      f"never a reproduction -- it IS the exception class")
 nrep, nabs, nunr = N['VERBATIM'], N['ABSENT'], N['UNRUN']
 nrepro = N['VERBATIM'] + N['EXACT-VALUE'] + N['ROUNDED']
+ntol = nrepro + N['GATE-ONLY'] + N['UNESTABLISHED']
 print(f"\n      VERBATIM {N['VERBATIM']}   EXACT-VALUE {N['EXACT-VALUE']}   ROUNDED {N['ROUNDED']}"
       f"   GATE-ONLY {N['GATE-ONLY']}   ABSENT {nabs}   UNRUN {nunr}   of {len(rows)}")
-print(f"      ⌗ ⑱⑲ THE FIRST THREE ARE REPRODUCTIONS: {nrepro} of {len(rows)}.  The tolerance "
-      f"reading of this same data was {nrepro + N['GATE-ONLY']} at a 41.1% decoy rate; the verbatim "
-      f"reading was {N['VERBATIM']} and demoted {N['EXACT-VALUE']} figure(s) over a trailing zero.")
+if withheld:
+    print(f"\n      ⚠ UNESTABLISHED, {len(withheld)} figure(s) -- the rung that would carry them "
+          f"({', '.join(sorted(WITHHELD))}) has a decoy rate above {THRESHOLD*100:.0f}%, so they are "
+          f"NEITHER reproduced NOR absent.  ㉕: they are not folded into the headline.")
+    for paper, line, f, t, d, n in withheld:
+        print(f"         {paper} l.{line}: paper {f}   nearest {t}   {d:.2f} half-units   {n[:46]}")
+print(f"      ⌗ THE HEADLINE IS THE REPORTABLE RUNGS: {nrepro} of {len(rows)}.  The tolerance "
+      f"reading of this same data was {ntol} at a {RUNG_RATE['GATE-ONLY']*100:.1f}% decoy rate; the "
+      f"verbatim reading alone was {N['VERBATIM']} and demoted {N['EXACT-VALUE']} figure(s) over a "
+      f"trailing zero.")
 if exact:
     print(f"\n      ⑱ EXACT-VALUE, {len(exact)} figure(s) -- the same number, rendered with a "
           f"different number of digits:")
@@ -276,8 +311,12 @@ check(f"ⓑ① every figure is judged -- no figure is left without a verdict", l
 check(f"ⓑ② and none is ABSENT for want of a run: UNRUN is {nunr}, and a figure is ABSENT only when "
       f"every candidate ran", nunr == 0 or bool(unrun))
 check(f"ⓑ③ ⑮ the tightening of +60.4 did work: the VERBATIM count ({N['VERBATIM']}) is strictly "
-      f"below the tolerance reading ({nrepro + N['GATE-ONLY']}), so it is not a relabelling",
-      N['VERBATIM'] < nrepro + N['GATE-ONLY'])
+      f"below the tolerance reading ({ntol}), so it is not a relabelling", N['VERBATIM'] < ntol)
+check(f"ⓑ③' ㉑㉕ AND THE VERDICT READS ITS CONTROL: the rung(s) whose measured decoy rate "
+      f"exceeds {THRESHOLD*100:.0f}% ({', '.join(sorted(WITHHELD)) or 'none'}) report UNESTABLISHED, "
+      f"and {len(withheld)} figure(s) are held out of the headline on that ground alone",
+      all(RUNG_RATE[k] > THRESHOLD for k in WITHHELD)
+      and len(withheld) == N['UNESTABLISHED'])
 check(f"ⓑ④ ⑱ AND SO DID THE LOOSENING OF +60.5 AT THE OTHER END: {N['EXACT-VALUE']} figure(s) "
       f"are reproduced to the last bit and were demoted by verbatim over a rendering, so the "
       f"three-way verdict is not a relabelling of the verbatim one either", N['EXACT-VALUE'] >= 1)
@@ -304,6 +343,8 @@ for f in _fail:
     print("   [FAIL] " + f)
 json.dump(dict(counts=N, reproductions=nrepro, total=len(rows), absent_rows=absent,
                exact_value_rows=exact, rounded_rows=rounded, gate_only_rows=gate_only,
+               unestablished_rows=withheld, withheld_rungs=sorted(WITHHELD),
+               rung_decoy_rate=RUNG_RATE, threshold=THRESHOLD, tolerance_reading=ntol,
                elsewhere=elsewhere[:200], failures=_fail),
           open(os.path.join(HERE, 'verdicts.json'), 'w'), indent=1)
 sys.exit(1 if len(_fail) > 0 else 0)

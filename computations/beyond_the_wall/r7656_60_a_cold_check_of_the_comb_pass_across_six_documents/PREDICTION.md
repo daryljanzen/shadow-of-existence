@@ -356,3 +356,64 @@ written before the first of them produced a number.**
 
 **Running total of this seat's own rule conditions corrected by measurement rather than by reading,
 across `r7648`, `r7650`, `r7652`, `r7654` and `r7656`: twenty-four.**
+
+---
+
+# `r7656+60.7` — ㉔ CONFIRMED SHARPLY, AND THE ORDER'S THREE EXPOSED CLAIMS ARE REGISTERED WITH WHAT I HAVE ALREADY READ OF THEM
+
+**㉓ PASSED at 14.7%**, so the **85** is a statement about the corpus and the headline stands.
+**㉔'s hypothesis is confirmed, and sharply:** ⑲'s decoy rate is **100%** at ≤2 significant digits,
+**90.9%** at exactly 3, and **14.6%** at ≥4. The aggregate 25.3% was entirely low precision. All nine
+withheld figures carry ≥4 digits, so they are reported **conditionally established at that precision
+and at that measured rate** — a separate labelled line, per **㉕**, never folded into the 85. **㉖'s
+negative is not reached.**
+
+⌗ **And it is a measurement about this corpus's figure-pin allowance, not only about my matcher.** At
+≤3 significant digits a figure cannot be told from one moved forty allowances away. *But what I
+measured is a POOL SEARCH — any of 99 receipts' numbers against one target — and `check_figures_pinned`
+compares ONE receipt to ONE baseline. The gate's own rate is therefore NOT 90%, is not measured here,
+and is not claimed.* It is routed to 66 as a question, with the instrument that would answer it.
+
+## THE ORDER'S THREE EXPOSED CLAIMS — what I have already read, stated before any arm is scored
+
+The figure extractor cannot see these: they are quantities **in words**. From the banked output of
+`P15_the_locator_is_good_to_three_hundredths_...`, the arm's sub-binned peaks are
+`222.05/535.85/815.03/1129.74`, the sky's `220.4/537.7/817.3/1123.9`, the arm's residual
+`+1.65/−1.85/−2.27/+5.84`, the control's `−0.05/−1.41/−2.97/+5.32`, and arm−control
+`+1.696/−0.445/+0.696/+0.518`. The comb is `299.1` against `298.4`. **I have already computed, by
+hand, that 5.84 is 0.520% of 1123.9, that a third of a per cent of 1123.9 is 3.75 multipoles, and
+that a 0.7-per-period spacing error accumulates to 0.7/1.4/2.1/2.8.** That is the whole of what I have
+seen, and the arms below are registered against it rather than discovered from it.
+
+**㉗ CLAIM A — "the first three peaks within three and a quarter multipoles of the measured ones".**
+I predict it **HOLDS as a bound and is UNLOCATED**: max |residual| over peaks 1–3 is **2.27 ≤ 3.25**,
+and **no receipt in the candidate set produces 3.25**. A bound that holds but that nothing computes is
+a third verdict and is reported as one, with the slack stated.
+
+**㉘ CLAIM B — "the fourth a third of a per cent high" (P7 l.1812).** I predict it **FAILS**: every
+reading the bank supports gives **0.520%** (sub-bin against the sky's 1123.9), **0.699%** (sub-bin
+against `PO-47`'s 1121.9), **0.899%** (raw grid against 1123.9) or **1.079%** (raw grid against
+1121.9), and the smallest of the four is **1.56×** the claim. *The reachable negative is that some
+receipt in the candidate set produces 0.33% at the fourth peak, in which case the claim is located and
+this arm is a MISS* — it is searched for, not assumed away.
+
+**㉙ CLAIM C — "between one and three multipoles at each peak", tested PEAK BY PEAK as a range.** I
+predict it **FAILS AT "EACH" UNDER EVERY READING THE BANK SUPPORTS, each at a different peak**:
+cumulative spacing `0.7/1.4/2.1/2.8` fails at **peak 1**; the measured sky residual
+`1.65/1.85/2.27/5.84` fails at **peak 4**; arm−control `1.70/0.45/0.70/0.52` fails at **peaks 2, 3 and
+4**. *So the word doing the work is "each", and the corpus's own guard applies: before two stretches
+are identified by a label, check how many-to-one the label is on the object.*
+
+**㉚ EVERY ONE OF THE THREE IS FAILABLE, AND THE FAILABILITY IS EXERCISED EVERY RUN.** For each claim
+the stated value is replaced by a **decoy** and the verdict must FLIP: a bound of `2.00` must make A
+fail; `0.52` must make B hold; `0` to `6` must make C hold at every peak. *An arm that cannot be made
+to fail on the data it is given is not an arm, and this revision has spent five amendments on exactly
+that mistake.*
+
+**㉛ AND WHAT IS NOT CLAIMED.** Not that the receipt behind these claims is wrong — it is not this
+seat's and is not edited. Not a correction to any of the three sentences: a correction needs the
+configuration each was written in, which is `69`'s to say. **What is established is only which of the
+three reproduce against the bank and which do not**, and it is routed with the numbers.
+
+**Running total of this seat's own rule conditions corrected by measurement rather than by reading,
+across `r7648`, `r7650`, `r7652`, `r7654` and `r7656`: twenty-four.**

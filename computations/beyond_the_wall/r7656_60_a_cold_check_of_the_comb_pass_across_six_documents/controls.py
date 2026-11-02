@@ -105,7 +105,7 @@ def hits_rounded(fig):
     parses to the SAME FLOAT, or a longer value that RENDERS to the figure at its own digit count.
 
     ⌗ This is looser than verbatim and tighter than the gate's window, so it needs its own decoy
-    rate -- which is ⑵, under the SAME 20% registered at `+60.3`.
+    rate -- which is ㉑, under the SAME 20% registered at `+60.3`.
     """
     f = fig.strip()
     dec = len(f.split('.')[1]) if '.' in f else 0
@@ -124,6 +124,35 @@ def hits_rounded(fig):
                 out.append(n)
                 break
     return out
+
+
+def hits_exact(fig):
+    """⑱ which receipts that RAN print a string that parses to the SAME FLOAT as this figure.
+
+    ⌗ ㉓: ⑱ is the headline once ㉑ withheld ⑲, and an unmeasured headline is what this
+    revision has already been wrong about twice.  So it gets its own decoy rate too.
+    """
+    try:
+        want = float(fig.strip())
+    except ValueError:
+        return []
+    out = []
+    for n in RAN:
+        for t in OUTFIGS[n]:
+            try:
+                if float(t) == want:
+                    out.append(n)
+                    break
+            except ValueError:
+                continue
+    return out
+
+
+def sigdigits(fig):
+    """significant digits of a printed figure -- ㉔'s stratifier, fixed at +60.6 before measuring"""
+    d = fig.strip().lstrip('+-').replace('.', '')
+    d = d.lstrip('0')
+    return len(d.rstrip('0')) if '.' not in fig else len(d)
 
 
 def decoy(fig):
@@ -215,7 +244,7 @@ if vnhit:
 print(f"      ⌗ a decoy that is ITSELF a figure the corpus carries elsewhere is this instrument's "
       f"irreducible floor: a shift of 40 allowances lands on a round number often enough.")
 
-# ---------------------------------------------------------------- ⑱⑲⑵ the rounding matcher
+# ---------------------------------------------------------------- ⑱⑲㉑ the rounding matcher
 print(f"\nⓔ  ⑱⑲ THE THREE-WAY VERDICT'S MIDDLE RUNGS -- same float, or renders to the printed digit")
 rd_rows = [(f, hits_rounded(f)) for f in FIGS]
 n_rd = sum(1 for _f, h in rd_rows if h)
@@ -225,7 +254,7 @@ if rmult:
     print(f"      multiplicity among them: median {statistics.median(rmult):.0f}   "
           f"mean {statistics.mean(rmult):.1f}   max {max(rmult)}")
 
-print(f"\nⓕ  ⑵ THE ROUNDING MATCHER'S OWN DECOY RATE, under the SAME 20% registered at +60.3")
+print(f"\nⓕ  ㉑ THE ROUNDING MATCHER'S OWN DECOY RATE, under the SAME 20% registered at +60.3")
 rdec = [(f, d, len(hits_rounded(d))) for f, d, _h in dec_rows]
 rnhit = sum(1 for _f, _d, h in rdec if h > 0)
 rrate = rnhit / len(rdec) if rdec else 0.0
@@ -238,6 +267,50 @@ if rnhit:
     print(f"\n      {'real':>12} {'decoy':>12} {'receipts hit':>13}")
     for f, d, h in [r for r in rdec if r[2] > 0][:14]:
         print(f"      {f:>12} {d:>12} {h:>13}")
+
+# ---------------------------------------------------------------- ㉓ the exact-value matcher
+print(f"\nⓖ  ㉓ ⑱'S OWN DECOY RATE -- same float, no rendering, no window.  THE HEADLINE'S OWN REACH")
+edec = [(f, d, len(hits_exact(d))) for f, d, _h in dec_rows]
+enhit = sum(1 for _f, _d, h in edec if h > 0)
+erate = enhit / len(edec) if edec else 0.0
+n_ex = sum(1 for f in FIGS if hits_exact(f))
+print(f"      of {len(FIGS)} real figure(s): {n_ex} reproduce under ⑱")
+print(f"      {len(edec)} decoy(s), the SAME ones; {enhit} also reproduce under ⑱ "
+      f"-> false-positive rate {erate*100:.1f}%")
+
+# ---------------------------------------------------------------- ㉔ stratified by precision
+print(f"\nⓗ  ㉔ THE DIAGNOSIS AS A TEST -- ⑲'s decoy rate STRATIFIED BY SIGNIFICANT DIGITS")
+print(f"      strata fixed at +60.6 before this ran: <=2, exactly 3, >=4.  Threshold still 20%.")
+STRATA = [('<=2', lambda k: k <= 2), ('  3', lambda k: k == 3), ('>=4', lambda k: k >= 4)]
+strat = {}
+print(f"\n      {'digits':>7} {'decoys':>7} {'hits':>5} {'rate':>7}   {'real figs':>9}  verdict")
+for name, pred in STRATA:
+    sub = [(f, d, h) for f, d, h in rdec if pred(sigdigits(f))]
+    sh = sum(1 for _f, _d, h in sub if h > 0)
+    sr = sh / len(sub) if sub else None
+    nreal = sum(1 for f in FIGS if pred(sigdigits(f)))
+    v = ('no decoy' if sr is None else
+         'MEASURABLE at this precision' if sr <= 0.20 else 'NOT measurable')
+    strat[name.strip()] = dict(decoys=len(sub), hits=sh,
+                               rate=None if sr is None else round(sr, 4), real=nreal)
+    print(f"      {name:>7} {len(sub):>7} {sh:>5} "
+          + (f"{sr*100:>6.1f}%" if sr is not None else "      -")
+          + f"   {nreal:>9}  {v}")
+
+_ok = [k for k, v in strat.items() if v['rate'] is not None and v['rate'] <= 0.20]
+print(f"""
+  ⌗ ㉕ AND THE 85 IS THE HEADLINE WHATEVER THIS TABLE SAYS.  A stratum under 20% can only add a
+  separate line naming which of the nine withheld figures are CONDITIONALLY established and at what
+  measured rate.  A figure already reported unestablished does not become established because a
+  narrower instrument was built for it afterwards.""")
+if _ok:
+    cond = [f for f in FIGS if any(p(sigdigits(f)) for n, p in STRATA if n.strip() in _ok)
+            and not hits_exact(f) and hits_rounded(f)]
+    print(f"\n      → CONDITIONALLY ESTABLISHED, at precision {', '.join(_ok)}: "
+          f"{len(cond)} of the withheld figure(s)  {sorted(set(cond))}")
+else:
+    print(f"\n      → ㉖'S NEGATIVE IS REACHED: no stratum comes in under 20%, so ⑲ is unmeasurable "
+          f"full stop and the nine stay UNESTABLISHED.")
 
 print(f"""
   ⌗ ⑬ THE RATE IS PUBLISHED EITHER WAY, with the decoys themselves, because a cold check that
@@ -264,11 +337,28 @@ check(f"⑯ THE VERBATIM MATCHER'S OWN DECOY RATE is at or below the SAME 20% re
 check(f"⑮ and the tightening DOES WORK rather than relabel the same set: {len(tol_only)} "
       f"figure(s) that 'reproduced' under the window do NOT reproduce verbatim, and they are reported "
       f"as WITHIN THE PRINTED DIGIT instead of in the headline", len(tol_only) >= 1)
-check(f"⑵ THE ROUNDING MATCHER'S OWN DECOY RATE is at or below the SAME 20% registered at +60.3 "
-      f"({rrate*100:.1f}%), so ⑱ and ⑲ are reported as reproductions rather than withheld; it sits "
-      f"between verbatim's {vrate*100:.1f}% and the window's {rate*100:.1f}%, which is where a "
-      f"reading looser than one and tighter than the other belongs", rrate <= 0.20)
-check(f"⑵ and it is STRICTLY LOOSER than verbatim and STRICTLY TIGHTER than the window "
+check(f"㉓ ⑱'S OWN DECOY RATE -- the HEADLINE's reach -- is at or below the SAME 20% registered at "
+      f"+60.3 ({erate*100:.1f}%), so the 85 is a statement about the corpus; had it fired the "
+      f"headline would fall back to verbatim's 81", erate <= 0.20)
+check(f"㉔ the stratified test is DECIDED either way -- every stratum either has decoys and a rate "
+      f"or is reported as empty, so no precision band is silently skipped",
+      all(v['rate'] is not None or v['decoys'] == 0 for v in strat.values()))
+check(f"㉕ and the withheld nine are NOT in the headline: ⑱'s {n_ex} is strictly below ⑱-or-⑲'s "
+      f"{n_rd}, so withholding ⑲ changed the number rather than the label",
+      n_ex < n_rd)
+# ⌗ ㉑ IS SCORED LIKE ⒫, AND ITS CONSEQUENCE WAS WRITTEN BEFORE THE NUMBER EXISTED.  `+60.5`
+# said: "or ⑲ is reported as not measurable and only ⑱ is reported."  That is what `cold_check.py`
+# now does, by READING the rate below rather than by being told it.
+if not rrate <= 0.20:
+    _miss.append(f"㉑ THE ROUNDING MATCHER'S OWN DECOY RATE is at or below the SAME 20% registered "
+                 f"at +60.3 -- MEASURED {rrate*100:.1f}%, scored a MISS at +60.6.  ⑲ is therefore "
+                 f"WITHHELD and the nine figures it carried are UNESTABLISHED, not reproduced.  "
+                 f"㉔ locates the whole of it in LOW PRECISION: 100% at <=2 significant digits, "
+                 f"90.9% at 3, and 14.6% at >=4.")
+    print(f"\n  [MISS] {_miss[-1]}")
+else:
+    print(f"\n  [PASS] ㉑ the rounding matcher's decoy rate is {rrate*100:.1f}%")
+check(f"㉑ and it is STRICTLY LOOSER than verbatim and STRICTLY TIGHTER than the window "
       f"({vrate*100:.1f}% <= {rrate*100:.1f}% < {rate*100:.1f}%), so the three readings are ordered "
       f"as their definitions are and none of them is secretly another",
       vrate <= rrate < rate)
@@ -293,11 +383,13 @@ print(f"  {len(_fail)} failure(s) among the conditions this revision stands on")
 for f in _fail:
     print("   [FAIL] " + f)
 
-json.dump(dict(decoys=nd, decoy_hits=nhit, decoy_rate=round(rate, 4),
+json.dump(dict(decoys=nd, decoy_hits=nhit, decoy_rate=round(rate, 6),
                verbatim_decoys=len(vdec), verbatim_decoy_hits=vnhit,
-               verbatim_decoy_rate=round(vrate, 4),
+               verbatim_decoy_rate=round(vrate, 6),
+               exact_reproduce=n_ex, exact_decoy_hits=enhit, exact_decoy_rate=round(erate, 6),
+               stratified=strat, strata_measurable=_ok,
                rounded_reproduce=n_rd, rounded_decoy_hits=rnhit,
-               rounded_decoy_rate=round(rrate, 4),
+               rounded_decoy_rate=round(rrate, 6),
                verbatim=n_vb, within_printed_digit=len(tol_only), neither=n_none,
                tolerance_only_figures=sorted(set(tol_only)),
                median_multiplicity=med, mean_multiplicity=round(statistics.mean(per), 2),
