@@ -1,0 +1,43 @@
+
+  P15 -- the symmetric undriven comparison r4549 promised, run from the tree
+
+  ==========================================================================
+  PART 1 -- IT WAS NOT RUNNABLE FROM THE TREE UNTIL THIS REVISION
+  ==========================================================================
+    OK    ⓵ the control's START has been exposed since r3683, which is the half r4549 had
+    OK    ⓵ᵇ and its SOUND-HORIZON CONVENTION is exposed as of r6476, which is the half it did not -- so the run below could not have been reproduced from the tree before now
+    OK    ⓵ᶜ the commit is reachable, so the two checks below are not reading an empty string off a shallow clone -- r4549 — the visibility is excluded, and then t...
+    OK    ⓵ᵈ r4549 touched NO file under receipts/ -- so the receipt its own message said would "land next" did not land in it
+    OK    ⓵ᵉ and no receipt in the tree at that revision set either knob, so the numbers it reported were not reproducible from the tree by anyone, including the line that made them
+
+  ==========================================================================
+  PART 2 -- THE FOUR ROWS
+  ==========================================================================
+    arm / convention                          l_A   l_1   l_1/l_A     split
+    CR, at its pin                          301.6   338    1.1207        --
+    control, as shipped                     301.4   272    0.9025   +0.2182
+    control, start matched                  301.4   482    1.5992   -0.4785
+    control, start + convention matched     397.1   482    1.2138   -0.0931
+
+  ==========================================================================
+  PART 3 -- r4549'S THREE CLAIMS, CHECKED
+  ==========================================================================
+    OK    ⓶ matching the START alone does not shrink the split -- it overshoots and CHANGES SIGN, +0.2182 to -0.4785, the magnitude growing by 2.2x
+    OK    ⓶ᵇ matching the start AND the convention leaves a residue on the far side of zero, -0.0931
+    OK    ⓶ᶜ *** and the implied mode is IDENTICAL across the last two rows -- l_1 = 482 in both, to the multipole -- while the convention moves l_A from 301.4 to 397.1.  The denominator moved and the mode did not ***
+
+  ==========================================================================
+  PART 4 -- ⛔ AND THE ONE NUMBER, WHICH IS WRONG AND IS THIS LINE'S OWN
+  ==========================================================================
+      r4549: "leaves a quarter of the original, on the far side of zero"
+      measured: 0.0931 / 0.2182 = 42.7%
+    OK    ⓷ the residue is 43% of the original, not the 25% r4549 reported -- a factor of 1.7 on the quantity the row's verdict rests on, in the direction that makes the dissolution look more complete than it is
+    OK    ⓷ᵇ and r4549's VERDICT survives its arithmetic being corrected: two fifths of the original is still a minority of it and still on the far side of zero, so the split is still largely a comparison artefact
+
+  ==========================================================================
+  *** THE MODE NEVER MOVED, ONLY THE SCALE IT WAS REPORTED AGAINST -- r4549 wrote
+    that down and then read the quotient anyway, and so did r6476's first draft.
+    The residue is two fifths of the original, not a quarter.  The verdict stands;
+    the number does not.
+  ==========================================================================
+

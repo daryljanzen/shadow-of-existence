@@ -1,0 +1,191 @@
+r7109 (66) -- ⛭⛭⛭ THE THREE-GRID COMPARISON IS LIKE-FOR-LIKE AND IS NOT A CEILING ARTEFACT: THE
+PROJECTION'S REACH IS A FIXED MULTIPLE OF THE INVERSE DISTANCE ON EVERY ARM, SO THE COUPLING THAT WOULD
+MANUFACTURE THE SEPARATION CANCELS BY CONSTRUCTION -- AND MORE THAN HALF OF IT IS ALREADY PRESENT EIGHT
+HUNDRED MULTIPOLES BELOW THE CEILING.
+
+** WHY THIS RECEIPT EXISTS, AND WHOSE COMPUTATION IT IS. **  `P15 sec:refit-bound` quotes the ceiling
+scan's own numbers -- the seven truncation gaps, the reach `k_max*D_M`, the band shares, and the
+forbidden arm's tracking of the control at every truncation.  *** Those figures are node 70's
+measurement, made in its own audit instrument at `r7101+70.1`, pre-registered beside it, and run by the
+seat that did NOT produce the comparison. ***  This receipt does not recompute them and does not touch
+that instrument: it DRIVES
+`computations/beyond_the_wall/r7651_70_three_asks/audit_leafrec1.py` as a subprocess and asserts,
+against its output, exactly the figures the paper prints.
+
+  ⛭ ** THE ARM OF RECORD, AND WHAT THE RE-POINT DID AND DID NOT CHANGE (r7653 ⓸). **  `audit_leafrec1.py`
+  is `r7101`'s `audit.py` run *unchanged*: 70's wrapper rewrites ONE AST node -- `GRIDS` -- to a per-run
+  directory of links that resolves `lcdm_*` from the namesake grid and `cr_*` from the `_leafrec1`
+  sibling, so the imported `rigidity.py` AND its `--grid` subprocess driver see the same resolution.
+  ⇒ *The measurement stays 70's and the instrument stays one instrument; only which banks its arms read
+  has moved.*  ** Every one of the paragraph's claims survives the move; all seven of its printed
+  figures change, and one claim gets FOURFOLD stronger. **  ⌗ *The receipt gates the resolution itself
+  below, so it cannot silently fall back to the namesake and keep passing.*
+
+  ⌗ ** So the division of labour is on the record: the measurement is 70's, the assertion that the paper
+  quotes it correctly is the gate's. **  *A paper figure with no receipt is the gap this closes; a second
+  implementation of someone else's audit would be a different number wearing the same name.*
+
+** WHAT THE PAPER CLAIMS, AND IT IS FOUR THINGS. **
+
+  ⓵ ** LIKE-FOR-LIKE: ** one `ell` sampling across all three grids, and the control byte-identical
+    across them -- so a difference between arms cannot be a difference of controls or of sampling.
+
+  ⓶ ** THE CEILING MECHANISM DOES NOT OPERATE: ** both logged arms carry `k_max * D_M = 3998` against a
+    reported `l_max = 2000`.  *The reach is a multiple of `1/D_M`, so the arm with the SHORTER distance is
+    not thereby nearer its ceiling.*  ⇒ *** The coupling "k_max fixed, D_M smaller" -- the one way a
+    ceiling could manufacture this separation -- is not what the instrument does. ***
+
+  ⓷ ** THE SEPARATION IS NOT CONFINED TO HIGH MULTIPOLE: ** re-fitting all three statistics to data
+    truncated at a succession of ceilings (a fit to fewer data -- sub-covariance, re-whitened, five
+    directions re-projected -- and not a mask), the licensed-minus-forbidden excess runs
+
+        850 -> -1.1   1000 -> +14.2   1200 -> +49.5   1400 -> +66.7
+       1600 -> +72.6   1800 -> +81.3   1900 -> +85.2   1996 -> +90.2
+
+    (the namesake's were `-1.0, +14.4, +51.0, +67.9, +74.7, +84.0, +88.3, +93.8`, which is what the paper
+    still prints; the scan has EIGHT cuts and the paper quotes SEVEN of them, dropping `1900`)
+
+    with about half of the full-range gap falling in `850 < ell <= 1500` -- `51.8` per cent, from the
+    band table -- and about a third of it below `ell = 850` -- `32.1` per cent -- where the parameters
+    absorb it entirely.  ** And at every truncation the forbidden arm sits within about one unit of the
+    control **, which a flatness produced by distance from a ceiling would not do.
+
+    ⛭ ** AND ON THE ARM OF RECORD THAT LAST BOUND TIGHTENS FOURFOLD, from `1.1` to `0.3`. **  *The
+    forbidden configuration does not merely sit near the control's floor across the eight ceilings; it
+    sits ON it to three tenths of a unit at every one of them.*  ⌗ Both are gated: the paper's claim
+    ("about one unit") as the claim, and `0.3` as the measurement, so the sentence can be tightened
+    without the gate having to be rewritten first.
+
+  ⓸ ** AND IT IS NOT CONVERGED: ** the gap grows to the last bin, `+5.0` between `1900` and `1996`
+    (the namesake's `+5.5`), so the quoted separation is a statement about the range read and not a
+    saturated value.
+
+⇒ *** WHAT THE PAPER THEREFORE SAYS IS `localised IN ONSET` AND NOT `confined TO HIGH ell`: a rigidity
+across scales, onset between `ell ~ 850` and `1000`, already decisive by `ell ~ 1200`, unbounded above by
+the data used. ***  ⌗ *70's reply states the distinction in terms and it is the one correction the audit
+asked of the paper: "The paper's `localised` is defensible only if it means localised in ONSET.  If it
+means `confined to high ell`, it is wrong."*
+
+⚠ ** ONE THING LIKE-FOR-LIKE CANNOT BE SHOWN FROM THE ARTEFACTS, AND IT IS NOT ASSERTED HERE. **  *Neither
+stamp carries the instrument's source hash.*  ⇒ ** "Same instrument but for the switch" is INFERRED from
+every shared log line agreeing, not recorded. **  *No gate below claims it.  The writing half that would
+record it -- the configuration's own blob hash, at save time -- landed on `cc66`'s branch in the same
+round, so the NEXT grid pair closes this by construction rather than by inference.*
+
+  ⛭ ** BUT THE STAMPED DIFFERENCE ITSELF NARROWS FROM A PAIR TO A SINGLE KEY, which is the one thing the
+  re-point makes strictly stronger. **  *On the namesake the two arms differed in `('LEAFGEOM',
+  'LEAFREC')` -- TWO keys -- because the forbidden grid at `r7093` predated the `LEAFREC` split.  On the
+  arm of record both arms' `cr_*` legs come from `_leafrec1` siblings, so at every one of the nine CR
+  steps they differ in `('LEAFGEOM',)` ALONE.*  ⇒ ** The comparison is now like-for-like in the stamps as
+  well as in the sampling, and that is gated below. **
+
+  ==========================================================================
+  0.  THE INSTRUMENT IS 70's AND IS RUN, NOT REIMPLEMENTED
+  ==========================================================================
+  [PASS] 70's audit instrument is present where the paper's figures come from
+  [PASS] ⌗ and the instrument it RUNS is `r7101`'s own audit.py, unchanged -- the arm-of-record wrapper rewrites one AST node (GRIDS) and nothing else, so this is one instrument on new banks and not a second implementation
+  [PASS] ⌗ and it is PRE-REGISTERED beside itself, which is what makes it an audit rather than a rerun
+
+      ran 70's audit_leafrec1.py in place: exit 0, 90 lines of output
+  [PASS] it runs clean, so every figure below is read from THIS run and not from the log beside it
+
+  ==========================================================================
+  1.  LIKE-FOR-LIKE -- ONE SAMPLING, AND THE CONTROL BYTE-IDENTICAL ACROSS THE THREE GRIDS
+  ==========================================================================
+      per-arm resolution the run reports: [('banked', 'refit_grid185', 'refit_grid185_leafrec1', '19'), ('licensed', 'r7095_directions/grid_licensed', 'r7095_directions/grid_licensed_leafrec1', '20'), ('forbidden', 'r7093_directions/grid_oneclock', 'r7093_directions/grid_oneclock_leafrec1', '20')]
+  [PASS] ⛭ all three grids resolve their ARM from a `_leafrec1` sibling and their CONTROL from the namesake, which is what makes this the arm of record rather than the namesake
+  [PASS] ⌗ and the three resolved sets are the sizes the banks have: TEN cr_* legs each (nine CR steps and `cr_base.log` beside the base), TEN lcdm_* legs for each direction pair, and NINE for the banked pair -- `refit_grid185` predates log banking, so it has no `lcdm_base.log` -- which is why 19, 20, 20 and not 20, 20, 20
+      the key set the two arms differ in, at every CR step: ('LEAFGEOM',)
+  [PASS] ⛭ on the arm of record the licensed and forbidden grids differ in ONE stamped key, LEAFGEOM, at every one of the nine CR steps -- the namesake's pair ('LEAFGEOM', 'LEAFREC') has become a single switch, because both arms now read `_leafrec1` siblings
+      ell samplings reported per grid: [('banked', '1', '100', '1996'), ('licensed', '1', '100', '1996'), ('forbidden', '1', '100', '1996')]
+  [PASS] all three grids carry exactly ONE ell sampling, and it is the same 100..1996 on each -- so an arm-to-arm difference is not a difference of sampling
+      the audit's own control byte-identity line: ('9', '9')
+  [PASS] ⓵ the control is byte-identical across the grids -- ALL of its files, not a majority -- which is what says a moved statistic belongs to the arm and not to the method
+
+  ==========================================================================
+  2.  THE CEILING MECHANISM -- THE REACH IS A FIXED MULTIPLE OF 1/D_M ON EVERY ARM
+  ==========================================================================
+      per-arm reach: [('licensed', '3998', '2000', '14134.0'), ('forbidden', '3998', '2000', '14062.0')]
+  [PASS] ⓶ BOTH arms carry k_max*D_M = 3998 against l_max = 2000 -- the reach is a multiple of 1/D_M, so the arm with the shorter distance is NOT thereby nearer its ceiling
+      and the distances DO differ: {'licensed': 14134.0, 'forbidden': 14062.0}
+  [PASS] ⌗ and the distances differ while the reach does not, which is the whole content of the cancellation: 14134.0 against 14062.0 Mpc on the arm of record (the namesake's were 14011.5 and 13941.6)
+
+  ==========================================================================
+  3.  THE TRUNCATION SCAN -- THE SEPARATION IS NOT CONFINED TO HIGH MULTIPOLE
+  ==========================================================================
+      licensed-minus-forbidden gap by truncation: {850: -1.1, 1000: 14.2, 1200: 49.5, 1400: 66.7, 1600: 72.6, 1800: 81.3, 1900: 85.2, 1996: 90.2}
+  [PASS] the eight truncations the scan reports are all present, and they are the seven the paper quotes plus the 1900 cut it does not
+  [PASS] ⓷ and every one of them matches the arm of record to a tenth -- -1.1, +14.2, +49.5, +66.7, +72.6, +81.3, +85.2, +90.2
+  [PASS] ⌗ the eight cuts, stated again as literal comparisons the pin instrument can read
+  [PASS] ⓷ MORE THAN HALF THE GAP IS PRESENT AT ell <= 1200, EIGHT HUNDRED MULTIPOLES BELOW THE CEILING -- the inequality, as this run of the audit measures it
+  [PASS] ⌗ and the measurement behind it: 49.5 of 90.2 is 54.9 per cent (the namesake's 51.0 of 93.8 was 54.4), so the re-point moves the share by half a point and the claim by nothing
+  [PASS] ⌗ and it is MONOTONE above the onset, so the growth is the arm failing across scales rather than a single band dominating
+  [PASS] ⓸ AND IT IS NOT CONVERGED: the gap still grows at the last cut, so the quoted separation is a statement about the range read and not a saturated value
+  [PASS] ⌗ and by how much: the last 96 multipoles add 5.0 on the arm of record (the namesake's 5.5)
+
+  ==========================================================================
+  4.  THE FORBIDDEN ARM TRACKS THE CONTROL AT EVERY TRUNCATION, NOT ONLY AT THE FULL RANGE
+  ==========================================================================
+      forbidden vs control chi^2 per truncation: {850: (68.8, 68.7), 1000: (77.3, 77.0), 1200: (102.1, 101.9), 1400: (135.8, 136.1), 1600: (157.6, 157.7), 1800: (174.6, 174.5), 1900: (177.5, 177.5), 1996: (186.1, 186.0)}
+      largest forbidden-minus-control discrepancy across all truncations: 0.30
+  [PASS] ⓷ the forbidden arm sits within one unit of the control at EVERY truncation -- the stronger form of 'lands on the control's floor', and not something distance from a ceiling produces.  PART 6 reads the bound the paper states and holds this measurement to it
+  [PASS] ⛭ AND ON THE ARM OF RECORD THAT BOUND TIGHTENS FOURFOLD: the largest discrepancy across all eight ceilings is 0.3, against the namesake's 1.1.  The forbidden configuration does not sit NEAR the control's floor; it sits ON it.  ⌗ The paper's wording, 'within about one unit', is true and loose, and this is the figure that would tighten it
+
+  ==========================================================================
+  5.  THE BAND SHARES -- ABOUT HALF BETWEEN 850 AND 1500, ABOUT A THIRD BELOW 850
+  ==========================================================================
+      share of the gap per band: {(0, 500): 10.7, (500, 850): 21.4, (850, 1200): 28.4, (1200, 1500): 23.4, (1500, 1800): 8.0, (1800, 2000): 8.1}
+      850 < ell <= 1500 carries 51.8%;  ell <= 850 carries 32.1%
+  [PASS] about HALF the full-range gap falls between ell = 850 and 1500 -- 51.8 per cent on the arm of record, the namesake's 52.2
+  [PASS] ⌗ and about a THIRD of it sits below ell = 850 -- 32.1 per cent, the namesake's 30.8 -- where the truncated fit absorbs it entirely (the 850 cut returns -1.1, a NEGATIVE gap), which is what makes the failure a cross-scale one
+
+  ==========================================================================
+  6.  THE PARAGRAPH IS READ OUT OF `corpus/CR_cosmology.tex`, NOT RECALLED FROM IT
+  ==========================================================================
+      read 496858 flattened characters of corpus/CR_cosmology.tex
+  [PASS] the paragraph this receipt closes is STILL IN THE PAPER, found by its own citation -- which is what makes everything below a read of THIS paragraph and not of a sentence that happens to match
+      the paper prints [-1.1, 14.2, 49.5, 66.7, 72.6, 81.3, 90.2] as the truncation moves from 850 to 1996
+  [PASS] ⛭ the truncation run is READ out of the paper, over the seven ceilings the scan reports -- bottom 850 and top 1996, the scan's eight minus the 1900 cut the sentence does not quote
+  [PASS] ⌗ and the arm of record's seven, which THIS run of the audit prints, are the landed state the disjunction below offers
+  [PASS] ⛭ the figure the paper prints at the ell <= 850 ceiling is one of this quantity's two states: the namesake's -1.0 or the arm of record's -1.1
+  [PASS] ⛭ the figure the paper prints at the ell <= 1000 ceiling is one of this quantity's two states: the namesake's +14.4 or the arm of record's +14.2
+  [PASS] ⛭ the figure the paper prints at the ell <= 1200 ceiling is one of this quantity's two states: the namesake's +51.0 or the arm of record's +49.5
+  [PASS] ⛭ the figure the paper prints at the ell <= 1400 ceiling is one of this quantity's two states: the namesake's +67.9 or the arm of record's +66.7
+  [PASS] ⛭ the figure the paper prints at the ell <= 1600 ceiling is one of this quantity's two states: the namesake's +74.7 or the arm of record's +72.6
+  [PASS] ⛭ the figure the paper prints at the ell <= 1800 ceiling is one of this quantity's two states: the namesake's +84.0 or the arm of record's +81.3
+  [PASS] ⛭ the figure the paper prints at the ell <= 1996 ceiling is one of this quantity's two states: the namesake's +93.8 or the arm of record's +90.2
+      figures already in the arm-of-record state: 7 of 7
+  [PASS] ⛭ and the paragraph is in ONE state and not mixed: either all seven still read the namesake or all seven read the arm of record
+      the reach the paper prints: ('3998', '2000')
+  [PASS] ⓶ the reach is READ from the paper -- not quoted from this file -- and it is what the audit reports on BOTH arms, which is the whole cancellation argument
+      the paper says 'eight hundred multipoles below the ceiling'; 1996 - 800 = 1196; the scan's nearest cut is 1200
+  [PASS] ⓷ the 'more than half' claim is READ from the paper, and TESTED where the paper's own words put it: eight hundred multipoles below its own top ceiling is 1196, the scan's nearest cut is 1200, and the gap there is more than half the full-range gap
+  [PASS] ⌗ and the band the paper names for the bulk is READ from it -- 850 to 1500 -- and it is exactly the union of two of the audit's own bands, which is why the band table and not the scan is what 'falling between' reads
+  [PASS] ⌗ the share the paper puts below the onset is READ from it as the word it uses, 'a third', and the band table returns 32.1 per cent
+      the bound the paper states: 'three tenths of a unit' -> 0.35;  measured 0.30
+  [PASS] ⛭ the control-tracking bound is READ from the paper as the phrase it uses, and this run's largest forbidden-minus-control discrepancy satisfies it.  ⌗ ALT for the same reason as the run above -- this turn proposes tightening that wording, so an unrecognised phrase PRINTS and falls back to the loosest bound rather than going red on 69's landing
+  [PASS] ⓷⓸ the onset, the decisive ceiling AND the non-convergence clause are READ from the paper as the one sentence that carries them -- between 850 and 1000, decisive by 1200, growing to the last bin -- and the scan is the shape that says so: NEGATIVE at 850, positive at 1000, more than half the gap by 1200, and still rising at 1996
+
+  ==========================================================================
+  7.  WHAT IS NOT ASSERTED, STATED RATHER THAN LEFT TO BE NOTICED
+  ==========================================================================
+      does the audit's own output claim a recorded instrument hash? False
+  [PASS] ⚠ no gate here claims the two grids came from one instrument REVISION: that is inferred from the shared log lines agreeing and is not recorded in either stamp, which 70 said in terms and which the configuration writer landed in the same round closes for the NEXT pair
+      numeric modules loaded in THIS process: none
+  [PASS] ⌗ and nothing here re-measures the comparison itself: no array or linear-algebra library is loaded in this process at all, so this receipt drives 70's instrument and asserts what the paper prints rather than computing a second answer under the same name
+
+  42 checks, 42 pass, 0 fail
+  GATES: ALL PASS
+
+  THE AUDIT'S VERDICT, IN ONE PLACE:
+    like-for-like       ->  one ell sampling, control byte-identical in all nine files, arms differing
+                            in ONE stamped switch (LEAFGEOM) at every CR step.
+    the ceiling         ->  k_max*D_M = 3998 on BOTH arms, so the coupling cancels by construction.
+    where it lives      ->  54.9 per cent of the gap at ell <= 1200; onset between 850 and 1000; 32.1
+                            per cent below 850, absorbed there by the parameters.
+    convergence         ->  NOT converged; +5.0 in the last 96 multipoles.
+    the forbidden arm   ->  within 0.3 of the control at every truncation, which is fourfold tighter
+                            than the "about one unit" the paper claims.
+  => the paper's word is localised IN ONSET.  'Confined to high multipole' would be wrong, and the
+     comparison survives the one mechanism that could have manufactured it.
+

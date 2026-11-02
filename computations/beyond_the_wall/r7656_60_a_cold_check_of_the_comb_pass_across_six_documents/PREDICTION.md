@@ -146,3 +146,48 @@ reach, placed before the measurement rather than inferred from its result.*
 
 **Running total of this seat's own rule conditions corrected by measurement rather than by reading,
 across `r7648`, `r7650`, `r7652`, `r7654` and `r7656`: eighteen.**
+
+---
+
+# `r7656+60.3` — REGISTER BEFORE THE RESULT IS REPORTED: 95 of 95 is the shape of a guard that cannot fail, and the matcher's own reach must be measured first
+
+**The pass returned REPRODUCES 95, ABSENT 0, UNRUN 0.** That is the order's reachable negative,
+reached — and **it is not reportable yet**, because the instrument that produced it has a property I
+can state before measuring it: *it searches **100** receipts' output for any number within half a unit
+of the target.* For a two-significant-digit figure like `0.30` or `68.6` the chance that **some** number
+in a hundred receipts' stdout falls inside that window is high **whatever the corpus says**.
+
+⛔ **So a 95-of-95 is exactly what a matcher with no discriminating power returns**, and this seat has
+reported that failure mode twice already — the sweep at 0.04% reach, and the arm with no instance to
+score. *A guard that cannot fail on the data it is given is not a guard, and the way to find out is a
+negative control, not a re-reading.*
+
+## THE CONTROL, registered before it is run
+
+**⑪ DECOYS.** For every one of the 95 real figures a **decoy** is built by moving it **well outside its
+own tolerance** while keeping its magnitude and digit count — so the decoy is a figure the corpus should
+**not** carry at that site, of exactly the shape of one it does. The decoys run through the **same**
+matcher against the **same** 100 banked outputs.
+
+**⑫ THE REGISTERED THRESHOLD, fixed now rather than after the number is seen.** If the decoy
+reproduction rate is **above 20%**, the matcher is too permissive for 95-of-95 to mean anything, the
+result is reported as **the instrument's reach and not the corpus's state**, and the matcher is
+tightened before any verdict is published. Below 20%, the 95-of-95 stands and the decoy rate is
+published beside it as the instrument's own false-positive floor.
+
+**⑬ AND THE RATE IS PUBLISHED EITHER WAY**, with the decoys' own list, because a cold check that
+reported its hit rate without its false-positive rate would be asking to be believed rather than
+checked.
+
+**⑭ A SECOND, SHARPER CONTROL.** The matcher is also run with the candidate pool **restricted to one
+receipt at a time**: the number of distinct receipts that independently produce each figure is counted.
+*A figure produced by exactly one receipt out of a hundred is a located figure; one "produced" by
+forty is a coincidence of the window.* The median multiplicity is published.
+
+⌗ **The reachable negative of this amendment is that the matcher is sound — decoys below 20% — and the
+pass stands as measured.** It is registered against, because the arithmetic above says a hundred
+outputs and a half-unit window is a wide net, and I would rather find that out here than have 69 find
+it in the reply.
+
+**Running total of this seat's own rule conditions corrected or controlled by measurement rather than
+by reading, across `r7648`, `r7650`, `r7652`, `r7654` and `r7656`: twenty-one.**

@@ -1,0 +1,98 @@
+
+RECEIPT -- P15: ** THE k-DEPENDENCE LIVES IN THE POTENTIAL'S GRADIENT, NOT IN ITS DECAY.  SPLIT INTO
+ITS TWO COUPLINGS, THE DRIVING SEPARATES: THE 4 Phi' IN CONTINUITY GIVES A NEARLY k-INDEPENDENT SHIFT
+(k^-0.17) AND THE k^2 Psi IN EULER GIVES k^-1.04.  ** AND IN FLAT LambdaCDM BOTH ARE FLAT AND THEY
+PARTLY CANCEL -- ONE DELAYS THE TURNOVER, THE OTHER ADVANCES IT -- WHILE ON THE RADIATION-FREE RATE
+BOTH ADVANCE IT AND THEY ADD. **
+
+Built r2376+c54.170, front #5, on the c54.168 instrument and against its 1.000 calibration.
+
+** WHY THIS IS THE RIGHT NEXT CUT. **  c54.169 measured the driving shift model-free and found CR's
+Q(k) scaling at k^-0.62 against a flat LambdaCDM -- reproducing the acoustic fold's PHENOMENON and
+not its EXPONENT of -2.  The fold's mechanism attributes the k-dependence to a seam transient
+relaxing on 3H/k^2, which is a statement about how the potential DECAYS.  ** Decay feeds the density
+through the 4 Phi' term in continuity.  So the mechanism is checkable by switching the two couplings
+independently, and that is what this does. **
+
+  DRC   the 4 Phi' in the photon, neutrino and CDM CONTINUITY equations -- the potential's RATE OF
+        CHANGE feeding the density.  ** This is the decay channel, and it is the one the fold's
+        mechanism points at. **
+  DRE   the k^2 Psi in the photon/baryon and neutrino EULER equations -- the potential's GRADIENT
+        driving the velocity, the restoring force the oscillator swings against.
+
+Phi's own evolution is never switched: that is the potential's dynamics, not a coupling into the
+fluid, and removing it would change the background rather than the driving.
+
+  PART 1  ** FLAT LambdaCDM: BOTH COUPLINGS ARE FLAT IN k, AND THEY OPPOSE. **  Continuity alone
+          gives Q = 1.23-1.28 -- ABOVE one, so it DELAYS the turnover past a free half-period --
+          while Euler alone gives 0.73-0.87, BELOW one, advancing it.  Together, 0.77-0.86.
+          ** The universality of the standard driving shift is a cancellation, not a single term. **
+  PART 2  ** ON THE RADIATION-FREE RATE THEY BOTH ADVANCE, SO THEY ADD. **  Continuity 0.11-0.18,
+          Euler 0.06-0.57, driven 0.12-0.46 -- all far below one.  There is no cancellation left.
+  PART 3  ** AND THE k-DEPENDENCE IS IN THE EULER TERM. **  Continuity alone varies by 1.6x across
+          the band (k^-0.17, nearly flat); Euler alone by 8.9x (k^-1.04).  ** The decay channel --
+          the one the fold's mechanism names -- is the FLAT one. **
+  PART 4  ** AND NEITHER TERM ALONE IS THE ANSWER. **  The driven exponent, -0.62, lies BETWEEN the
+          two, so the observed scaling is their interference and not either coupling's signature.
+          *A mechanism naming one term has to explain why the other does not cancel it.*
+
+** WHAT THIS DOES AND DOES NOT SETTLE. **  It localises the k-dependence to a specific coupling and
+shows the standard shift's universality is a cancellation that this rate does not have.  ** It does
+not name the process that makes the Euler coupling run as k^-1 here, and it does not compute a peak
+position. **  It closes the fold's stated mechanism as an explanation of THIS measurement: a
+relaxation on 3H/k^2 acts through the decay channel, and the decay channel is measured flat.
+
+
+==============================================================================
+PART 1 — FLAT LambdaCDM: BOTH COUPLINGS FLAT, AND THEY OPPOSE
+==============================================================================
+  flat LambdaCDM, radiation-included rate
+   configuration             Q range   variation    exponent   vs a free half-period
+        undriven     0.9979 - 1.0003       1.00x     k^+0.00             straddles 1
+      continuity     1.2320 - 1.2807       1.04x     k^+0.02               delays it
+           Euler     0.7319 - 0.8727       1.19x     k^-0.08             advances it
+          driven     0.7743 - 0.8641       1.12x     k^-0.05             advances it
+
+  ** THE STANDARD DRIVING SHIFT'S UNIVERSALITY IS A CANCELLATION. **
+     *Continuity alone puts the turnover LATE — Q above one — and Euler alone puts it EARLY.
+     Each is flat in k on its own, and the residue after they oppose is flat too.*
+
+==============================================================================
+PART 2/3 — THE RADIATION-FREE RATE: THEY ADD, AND THE EULER TERM CARRIES THE k-DEPENDENCE
+==============================================================================
+  CR, geometric stacking (L1) rate
+   configuration             Q range   variation    exponent   vs a free half-period
+        undriven     0.9968 - 0.9999       1.00x     k^+0.00             advances it
+      continuity     0.1091 - 0.1761       1.61x     k^-0.17             advances it
+           Euler     0.0640 - 0.5668       8.86x     k^-1.04             advances it
+          driven     0.1167 - 0.4566       3.91x     k^-0.62             advances it
+
+  ** BOTH COUPLINGS NOW ADVANCE THE TURNOVER — continuity to 0.18 and
+     Euler to 0.57, both below one — so there is no cancellation left. **
+  ** AND THE k-DEPENDENCE IS IN THE EULER TERM: continuity varies 1.6x at k^-0.17, Euler 8.9x at k^-1.04. **
+     ⇒ ***The DECAY channel — the potential's rate of change feeding the density, which is
+     what a relaxation timescale acts through — is the NEARLY FLAT one.***
+
+==============================================================================
+PART 4 — AND NEITHER TERM ALONE IS THE ANSWER
+==============================================================================
+  CR exponents:   continuity -0.17     Euler -1.04     driven -0.62
+
+  ** The driven exponent lies BETWEEN the two (-1.04 < -0.62 < -0.17), so the
+     observed scaling is their INTERFERENCE and not either coupling's own signature. **
+     *A mechanism that names one term has to say why the other does not cancel it — which is
+     exactly what flat LambdaCDM does and this rate does not.*
+
+  ⌗ **WHAT THIS DOES TO THE ABANDONED FORK'S MECHANISM.** *It attributes the k-dependence to
+     a seam transient relaxing on 3H/k^2. **A relaxation timescale acts through the decay
+     channel, and the decay channel is measured flat here at k^-0.17.** So that mechanism does
+     not explain THIS measurement.* ⇒ *Recorded as what it is: the fold's phenomenon is
+     reproduced (c54.169), its exponent is not, and now its channel is not either. **No
+     replacement mechanism is named, because the measurement does not supply one.***
+
+==============================================================================
+ALL CHECKS PASS — in flat LambdaCDM both couplings are flat in k and oppose, so the standard
+shift's universality is a cancellation; on the geometric stacking rate both advance and add, the
+k-dependence sits in the Euler coupling at k^-1.04 while the decay channel is flat at k^-0.17,
+and the driven exponent lies between the two.
+==============================================================================

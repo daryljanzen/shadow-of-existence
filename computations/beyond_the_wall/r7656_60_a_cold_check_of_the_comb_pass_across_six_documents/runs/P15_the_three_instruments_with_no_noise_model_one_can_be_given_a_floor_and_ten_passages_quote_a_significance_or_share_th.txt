@@ -1,0 +1,80 @@
+P15 -- THE THREE INSTRUMENTS WITH NO NOISE MODEL: CAN ONE BE BUILT, AND WHAT RESTS ON ONE THAT DOES NOT EXIST
+(node 70, `r7033`).
+
+The resolution table left four smallest-share cells blank; three were blank because the instrument carries NO noise
+model at all -- the contrast statistic, the bilinear decomposition `SRCDEC`, and the projection-width kernel.
+** a) For each, can a noise model be built from what the repository holds?  b) Which stated results quote a share,
+a significance or a detection that rests on a floor the instrument cannot supply? **
+
+** a) THE ANSWERS, ONE PER INSTRUMENT. **
+  * THE CONTRAST STATISTIC -- *** AS DEFINED IT NEVER SEES THE DATA ***: its binned rung fits each arm's amplitude to
+    the data and the envelope normalisation cancels that amplitude exactly (scaling it moves `reg` by 1e-16).  It
+    is a THEORY-AGAINST-THEORY comparison, so there is no noise for a noise model to describe -- its 0.6 per cent
+    NUMERICAL floor is the right floor for what it says.  ** Its SKY COUNTERPART can be given one **, from the
+    likelihood's own covariance: the same statistic on a noisy realisation of the control against the control.
+    Whole range: a 2-sigma floor of 0.018 in `reg`.  Banded: 0.043 -- 0.086 per band, with a noise BIAS of +0.5 to
+    +1.7 per cent.
+  * `SRCDEC` -- *** NO, FOR ANY SINGLE TERM, AND THIS IS STRUCTURAL ***: its ten pair terms sum to the spectrum, and
+    only the SUM reaches the sky.  The sum's noise model is the contrast's, above; a term has no data counterpart.
+  * THE PROJECTION-WIDTH KERNEL -- *** NO ***: it is a ratio of theory projection integrals and reads no data.  Its
+    only uncertainty in the repository is SYSTEMATIC -- the two anchorings -- and at the band that matters they
+    differ twelvefold.
+
+** b) TEN PASSAGES OF `P15` CARRY MORE THAN THEIR INSTRUMENT CAN BEAR. **  Eight quote a SIGNIFICANCE (sigma,
+"scatters", chi-squared, "+-", or the word "noise") whose sigma is not a noise model -- it is the band-to-band
+scatter of a NOISELESS spectrum about a trend, an injection-recovery error, or a spread over envelope settings, and
+none of their source receipts draws a noise realisation or reads the covariance.  One quotes a SHARE ("about a
+quarter") on the one anchoring of two that gives it; the other gives a fiftieth.  And one reads "bounded above at
+twice what it would need" where its source says the kernel's effect is bounded at TWO PER CENT -- a transcription,
+which contradicts the paper's own sentence nine lines earlier.
+
+⛔ NOT CLAIMED: that any of the ten is wrong about the THEORY -- every one describes a real difference between two
+noiseless spectra, and the numerical floor supports the differences themselves.  What is claimed is narrower: a
+sigma that is not a noise model is not a significance, and a share quoted on one anchoring is not the share.
+No re-scoring, no channel, no mechanism, no physics, no verdict on `cc66`'s results, and no receipt of theirs
+touched.  The paper is not edited here; the passages are routed to 66.
+
+Written r7033 by node 70.  Stated for reversal.
+
+RE-POINTED r7637 (node 70) onto the arm of record (the `_leafrec1` banks of r7635): the contrast regression on
+the binned rung 1.0468 -> 1.0462, and the arm's excess over the sky-noise floor stays 2.6 floors (the floor,
+0.0177, is the control's own and does not move).  No pinned figure moves.
+
+
+==============================================================================================================
+  a) THE CONTRAST STATISTIC -- its binned rung, with the contrast receipt's own definitions
+--------------------------------------------------------------------------------------------------------------
+  [PASS] the definitions used are the contrast receipt's own: its arithmetic running envelope, `osc`, the regression `reg`, the window of one period and the range 0.85-5.75   (P15_the_acoustic_contrast_is_not_in_the_source_and_the_proje)
+  [PASS] ⛭ AS DEFINED THE STATISTIC NEVER SEES THE DATA: the data enter only through each arm's fitted amplitude, and scaling that amplitude from 0.5 to 2 moves `reg` by nothing -- it is a comparison of two noiseless theories, so there is no noise for a noise model to describe   (reg = 1.0462 on the binned rung; max change under rescaling 0.0e+00)
+  [PASS] ⛭ ITS SKY COUNTERPART CAN BE GIVEN A NOISE MODEL FROM THE LIKELIHOOD'S OWN COVARIANCE: the same statistic on a noisy realisation of the control against the control gives a whole-range 2-sigma floor under two per cent   (2000 draws: mean 0.9997, sd 0.0088, 2-sigma floor 0.0177; the arm's +0.0462 on this rung is 2.6 floors)
+  [PASS] and the BANDED form, read one band at a time on the sky, is far coarser: a 2-sigma floor of four to nine per cent of the band's own amplitude, and noise BIASES it upward   (per band 0.051, 0.055, 0.043, 0.058, 0.045, 0.079, 0.086; bias +0.004, +0.010, +0.006, +0.008, +0.007, +0.016, +0.008)
+
+  a) SRCDEC -- the ten pair terms and the one spectrum they sum to
+  [PASS] ⛔ SRCDEC GETS NO NOISE MODEL FOR ANY SINGLE TERM, AND THIS IS STRUCTURAL: its pair terms sum to the one spectrum the sky measures, so only the SUM has a data counterpart -- whose noise model is the contrast's, above   (10 terms close to the total to 1.0e-15)
+
+  a) THE PROJECTION-WIDTH KERNEL
+  [PASS] ⛔ THE KERNEL GETS NO NOISE MODEL: it is a ratio of theory projection integrals and reads no data -- no likelihood data, no covariance, no draw   (P15_the_two_projection_widths_differ_by_the_jacobian_alone_a)
+  [PASS] and its ONLY uncertainty in the repository is systematic -- the two anchorings -- which at the top band read +0.0220 and +0.0018   (mean- and peak-anchored, top band)
+  [PASS] the top band's need, 0.0795, is the kernel receipt's own figure (+7.95 per cent), not a number chosen here   (quoted from the kernel's receipt)
+  [PASS] ⚠ so the share it is quoted at is ANCHOR-DEPENDENT BY A FACTOR OF TWELVE: a quarter of what the top band needs on one anchoring, a fiftieth on the other   (0.28 vs 0.023 of the 0.0795 the top band needs)
+
+==============================================================================================================
+  b) THE PASSAGES OF `P15` THAT CARRY MORE THAN THEIR INSTRUMENT CAN BEAR
+--------------------------------------------------------------------------------------------------------------
+  [PASS] [SIG] "of its own band scatter" -- band-to-band scatter of a noiseless ratio, set beside the comb's SKY-noise locating width as its 'statistical equal'   (its source `P15_the_combs_resolution_is_four_multipoles_an...` draws no noise: True; still in P15: False (all ten corrected at r7035))
+  [PASS] [SIG] "of its own fit error" -- regression error across a clock family of noiseless curves   (its source `P15_the_combs_resolution_is_four_multipoles_an...` draws no noise: True; still in P15: False (all ten corrected at r7035))
+  [PASS] [SIG] "a preference over flatness" -- chi-squared with sigma = the injection-recovery error, used as a noise sigma   (its source `P15_the_excess_decelerates_and_nothing_measure...` draws no noise: True; still in P15: True (all ten corrected at r7035))
+  [PASS] [SIG] "No scale is resolved" -- the same chi-squared   (its source `P15_the_excess_decelerates_and_nothing_measure...` draws no noise: True; still in P15: False (all ten corrected at r7035))
+  [PASS] [SIG] "nearly five scatters below" -- the bands 2-7 scatter of a noiseless ratio about a trend   (its source `P15_the_bank_already_existed_and_the_doppler_c...` draws no noise: True; still in P15: False (all ten corrected at r7035))
+  [PASS] [SIG] "clearing two standard deviations" -- the same kind of empirical scatter   (its source `P15_the_window_free_reading_cannot_resolve_the...` draws no noise: True; still in P15: False (all ten corrected at r7035))
+  [PASS] [SIG] "some seven standard deviations" -- the same kind of empirical scatter   (its source `P15_the_window_free_reading_cannot_resolve_the...` draws no noise: True; still in P15: False (all ten corrected at r7035))
+  [PASS] [SIG] "straddles one" -- a spread over twelve envelope settings   (its source `P15_the_cross_term_is_not_the_channel_and_ever...` draws no noise: True; still in P15: False (all ten corrected at r7035))
+  [PASS] [SIG] "cannot be told from zero" -- a sign change, with no noise model at all   (its source `P15_the_bank_already_existed_and_the_doppler_c...` draws no noise: True; still in P15: False (all ten corrected at r7035))
+  [PASS] [SIG] "noise at the step's own resolution" -- scatter across sliding windows, called noise   (its source `P15_the_step_is_the_excesss_own_and_it_sits_at...` draws no noise: True; still in P15: False (all ten corrected at r7035))
+  [PASS] [SHARE] "about a quarter of what the excess needs" -- one anchoring of two; the other gives a fiftieth   (its source `P15_the_two_projection_widths_differ_by_the_ja...` draws no noise: True; still in P15: True (all ten corrected at r7035))
+  [PASS] [TEXT] "twice what it would need" -- its source bounds the kernel's effect at TWO PER CENT   (its source `P15_the_held_period_estimator_reaches_below_th...` draws no noise: True; still in P15: False (all ten corrected at r7035))
+  [PASS] ⛔ AND THE TRANSCRIPTION WAS A CONTRADICTION INSIDE THE PAPER: the source bounds the kernel's effect at 2 (per cent), the paper read it as 'twice what it would need', and nine lines earlier said it 'delivers about a quarter of what the excess needs' -- both corrected at r7035   (source bound intact; 'twice what it would need' still in P15: False)
+  [PASS] ⛭ TEN PASSAGES: eight significance passages across six source receipts, one share, one transcription   (12 phrases)
+
+==============================================================================================================
+GATES: ALL PASS

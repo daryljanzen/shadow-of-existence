@@ -1,0 +1,288 @@
+P15 sec:refit-bound -- ** THE NORMALISATION ACROSS THE VISIBILITY IS A REAL CHANNEL CARRYING A
+DEFINITE BUT BAND-DEPENDENT SHARE OF THE CONTRAST EXCESS, AND IT IS PEAK-WEIGHTED WHERE THE EXCESS IS
+SYMMETRIC -- SO IT IS THE FIRST PARTIAL MECHANISM IN THIS SECTOR AND STILL NOT THE WHOLE ONE. **
+
+⛭⛭⛭ ** ON THE ARM OF RECORD AS OF `r7653` ⓷ (`LEAFREC=1`). **  *`r6959_eta_cr` and `r6941_fine_cr` move
+to their `_leafrec1` siblings; the CONTROL and the six tapered controls stay namesake, which is 70's own
+statement in the new bank's manifest ("the CONTROL -- LEAFREC does not reach it") and the precedent
+`...the_term_mix_has_the_shape...` set at `r7643+cc66.59`.  The DIRECT swap reads 70's
+`r6959_swap_lcdm_leafrec1` at the re-solved `SRCTAPER = 8.318682276e-05`.*
+  ⛔ ** AND THE RE-POINT CHANGES TWO THINGS THE PAPER'S SENTENCE RESTS ON, which are reported here and
+  not smoothed: ⒜ the band excess becomes NON-MONOTONIC, one band (`q=4.70`) carrying the smallest
+  excess of the seven while carrying the largest window narrowing -- so the share the channel delivers
+  is no longer a tight bracket; and ⒝ R1, the shape condition, STOPS FIRING: the offset barely moves
+  (`+0.0358` against `+0.0392`) while the straight-line fit's error on it grows 3.7-fold, taking it from
+  `5.02` sigma to `1.23`. **  *What the paragraph at l.1193 rests on -- PART 5's asymmetry -- is
+  untouched and still 5.4-fold.*
+
+** PATH PROVENANCE, IN THE HEADER, ON THE STANDING REQUIREMENT. **  *** Every model number below is the
+HIERARCHY path *** -- the `SRCETA` profiles `r6959_eta_{lcdm,cr}`, the six tapered controls
+`r6959_{swap,big,swapall,bigall,nswap,nbig}_lcdm`, and the `LSTEP=1` baselines `r6941_fine_{lcdm,cr}`.
+That is not a preference but the only possibility: `_project`, where `SRCETA` and `SRCTAPER` live, is
+called from `hier_run` and nowhere else, so the line-of-sight path cannot reach either knob.
+`sec:refit-bound`'s quartet $222/538/818/1134$ is the LINE-OF-SIGHT path's and is not read here --
+searched for by grepping this file for each of the four values and for every line-of-sight bank name
+(`c54.17*`, `c54.178_*`, `L814_*`, `r6784_*`), and none occurs in the code below.  *** The sky enters only
+as `PO-47`'s four peak anchors and its four locating widths, quoted, and as `plik_lite`'s own binning ***
+-- `chi2_of_spectrum.bin_spectrum` -- with every model binned identically before any comparison.
+
+** WHY IT EXISTS. **  `r6959`'s order: five eliminations later the only mechanism left standing is the one
+offered unasked at `cc66.46` -- that the contrast excess is the transfer's own normalisation across the
+visibility window, since that is what multiplies an oscillation symmetrically about its envelope without
+moving its phase.  ⓵ᵃ measure the source's conformal-time dependence across the window on both arms and
+report it as a FUNCTION; ⓵ᵇ impose one arm's normalisation on the other and check the contrast moves by
+the amount the measurement predicted IN ADVANCE; ⓵ᶜ state first what would refute it, and say what the
+swap does to the comb and the depths as well as to the contrast.
+  ⌗ ** The prediction and six refutation conditions were committed before any swap ran **, in
+  `computations/beyond_the_wall/r6959_directions/PREDICTION.md`, and the taper coefficients are solved
+  from the ⓵ᵃ measurement into `prediction.json`, which the launchers read -- so neither the size
+  predicted nor the operation performed could be chosen after a spectrum was seen.
+
+⛭⛭⛭ ** ⓵ᵃ THE FUNCTION, AND A CANCELLATION IN IT THAT NOBODY HAD LOOKED FOR. **  The source's own weight
+across the window, band by band in $q=\ell/\ell_A$, has its spread in the phase variable $r_{s,\rm leaf}$
+at $0.06523$ of $r_s$ on the control and $0.06447$ on the arm: *** the arm is the narrower, by $1.16$ per
+cent. ***  ⇒ And the reason it is only that much is a two-clock statement with the sign reversed
+from the obvious one: ** the arm's visibility is $15.5$ per cent WIDER in conformal time ($43.96$ against
+$38.04$) while its acoustic phase accumulates $14.0$ per cent SLOWER per unit of it ($0.39178$ against
+$0.45572$, because `Jac` runs $0.788$--$0.911$ across the arm's window and is identically $1$ across the
+control's) -- and the product, which is what a smearing reads, comes to $0.9934$ of the control's -- one
+part in $150$, where the namesake gave one part in $91$. **
+⌗ *So the two-rate structure does reach the window, and then very nearly cancels inside it.  That is a
+fact about this construction and not about the statistic.*
+
+⛔ ** ⓵ᵇ THE ANALYTIC PREDICTION IS OF THE RIGHT SIGN, A FIFTH OF THE SIZE, AND THE WRONG SHAPE -- AND THE
+RUN THEN BEAT THE PREDICTION BY THREE, WHICH IS A CORRECTION TO MY OWN ADVANCE STATEMENT. **  The exact
+characteristic function of the phase under the measured weight gives $\mathcal D_{\rm cr}/\mathcal
+D_{\rm lcdm} = 1.00043 \to 1.01322$ across the seven bands against a measured excess of $1.0186 \to
+1.1617$.
+  * ✔ ** R5, the sign, survives: ** the arm is the less smeared of the two in every band.
+  * ⛔ ** R2, the size, fires on the ANALYTIC channel, and harder than before: ** $\ln\mathcal R_1$ at
+    the top band is $0.0131$ against the measured $0.1499$ -- $0.088$, outside the $[\tfrac12,2]$ bar
+    fixed in advance.
+  * ⛔⛭ ** R1, the shape, NO LONGER FIRES ON THIS ARM, and the reason is the spread of the bands and not
+    the offset: ** $\ln(\text{measured excess})$ against $q^2$ has an intercept of $0.0358 \pm 0.0290$
+    -- an excess of $1.0365$ at $q=0$, almost exactly the namesake's $1.0400$, but only $1.23\sigma$
+    from zero where the namesake gave $5.02$, because the band excesses are non-monotonic here and a
+    straight line through them is far less determined.  ** A characteristic function is identically $1$
+    at $k=0$, so no smearing can supply a $q$-independent offset at all -- the ARGUMENT is untouched; what
+    is gone is the evidence that the offset is distinguishable from zero ** -- and the prediction's own
+    intercept is $0.00026 \pm 0.00246$, $0.11\sigma$, which is that prediction.  *`r7651+cc66.97`: the condition was `worth more
+    than half the top band's`, a size the paper never claims and met at $0.534$; it now asks what the
+    paper's sentence asks -- non-zero against the intercept's own error -- and the share of the top
+    band is reported rather than required.*
+  * ⚠ ** AND R3's BRACKET WAS WRONG IN DIRECTION, WHICH I RECORD RATHER THAN ABSORB. **  `PREDICTION.md`
+    ⓵ᵇ4 argued the contrast responds *between* $f$ and $f^2$ because $D_\ell$ is quadratic in the
+    transfer.  ** Measured, it responds $2.3$ to $26$ times MORE than $f$ per unit coefficient, at both
+    coefficients and in every band ** -- so the interval was on the wrong side of the truth, and the
+    condition passed only because I specified its tolerance multiplicatively on $f$ rather than on
+    $f-1$, which made it too loose to bite.  *The prediction that failed is mine; the run is what
+    corrected it.*
+
+⛭⛭ ** THREE WIRINGS OF THE SAME OPERATION, BECAUSE THE FIRST TWO WERE NOT THE OPERATION. **  A Gaussian in
+$r_{s,\rm leaf}$ applied to the whole source also crushes the ISW, whose support runs to $\eta_0$ where
+$|s-s_0|$ reaches $427$ Mpc: its $\eta$-integral came back at $0.656$ of itself at the small coefficient
+and $0.238$ at the large one, and that is what moved $\ell_1$ by $7.7$ and $27.3$ multipoles.  Tapering
+only the visibility-carried source fixes it.  ⌗ *Then the ISW-preserving run still moved the contrast
+three times the prediction, and I attributed that to the taper shrinking the window's total weight against
+the ISW -- so a third wiring holds that weight fixed (`SRCTAPERNORM=1`).*  ⛔ ** It lands on the second to
+four parts in ten thousand, so that diagnosis was wrong too: the over-response is not the weight, it is
+the contrast statistic's own sensitivity to the window's spread. **  *Both wrong readings are banked and
+gated rather than deleted -- the ISW pair is how the ISW's share of the low-$q$ contrast was measured.*
+
+⛭⛭⛭ ** AND THE ANSWER THE ORDER ASKED FOR, TAKEN FROM THE INSTRUMENT'S OWN RESPONSE RATHER THAN FROM A
+MODEL OF IT. **  With two coefficients the run's response is calibrated band by band and inverted: ** the
+arm's own window narrowing delivers $11$, $62$, $18$, $11$ and $15$ per cent of the band excess in five
+of the six bands above $q=1.9$ **, and the direct swap -- imposing the arm of record's spread on the
+control at the re-solved coefficient and reading the excess against the tapered control -- closes $18$,
+$41$, $12$, $12$ and $8$ per cent in the same five.  ⇒ *** The sixth band, `q=4.70`, returns $243$ and
+$77$ per cent, and the two routes BLOW UP IN THE SAME BAND FOR THE SAME REASON: it carries the smallest
+excess of the seven ($1.0141$) and the largest window narrowing ($2.72$ per cent) at once. ***  ⌗ *Two
+routes that share no machinery agreeing on WHICH band the comparison fails in is stronger evidence than
+either number.*  ⇒ ** The narrowing that would deliver ALL of the excess is $5.18$ per cent against the
+arm's $1.41$, a factor of $3.67$ -- still a factor and not an order of magnitude. **  ⌗ *So this remains
+the first channel in this sector measured to carry a definite share of the excess from a quantity nobody
+chose; what the re-point costs is the tight bracket, not the channel.*
+
+⛔ ** ⓵ᶜ R4, AND THE REFUTATION THAT CAME FROM 66'S OWN PREVIOUS REVISION. **  `cc66.46` established that
+the excess is SYMMETRIC about the envelope -- $1.074$ on the peak side against $1.062$ on the trough
+side, which is the landed split at l.1127 (`cc66.46`'s own figures were the namesake's $1.0668$ and
+$1.0561$).  ** This channel is not: the arm-sized swap delivers $72$ per cent of the arm's peak-height
+excess and $13$ per cent of its trough-depth excess, a $5.4$-fold asymmetry. **  ⇒ *** A channel that is
+peak-weighted cannot be the whole of an excess that is symmetric, and that argument is independent of
+every size estimate above. ***  ⌗ *And the comb: the arm-sized swap moves $\ell_1$ by $+2.8$ multipoles
+where the arm sits $+1.7$ above the control, so it overshoots $\ell_1/\ell_A$ past the arm's own value and
+past the sky's locating width, while $\ell_2$, $\ell_3$ and $\ell_4$ stay inside theirs.  The taper that
+would deliver the whole excess moves $\ell_1$ by $18.5$ multipoles and the peak heights by $45$ per cent.*
+
+⚑ ** THE GUARDS. **  The window cut is not load-bearing: the analytic prediction moves by under two
+thousandths across $\pm2$ to $\pm6$ FWHM.  Nor is the weight's term choice: on the monopole ALONE the
+prediction is smaller still.  ⚠ *And the order's third-transfer warning was checked and not assumed: the
+smearing's* $q$*-signature does not transfer to the term mix's, which is why the two are separable, and
+the contrast's response does not transfer to the heights' and depths', which is what the asymmetry above
+measures.*  ⌗ *The null: `SRCTAPER` unset takes no branch at all, so the default is byte-identical --
+verified against the pre-edit file on a 60-mode slice, every saved array, after each of the three
+wirings.*
+
+** WHAT IS NOT CLAIMED. **  NOT that the normalisation across the window is the mechanism: it carries a
+definite but band-dependent share, it is peak-weighted where the excess is symmetric, and on this arm R1's
+$q$-independent offset is no longer distinguishable from zero either way.
+NOT that it is nothing -- it is the first channel in this sector measured to carry any definite share.
+NOT a claim about the term mix, which is reported and not swapped.  NOT a detection: the $2.1$ l.1137 now prints
+is one statistic's spread and nothing here moves it.  NOT a verdict on the two-rate assignment.
+NOT a re-derivation of `PO-47`'s peak spreads, which are quoted.  No refit, nothing touching `prop:flat`
+or the clock family, and no corpus edits.
+
+COMPUTES: scope.
+  * ** EVERY COSMOLOGICAL PARAMETER IS BANKED, NOT CHOSEN HERE. **  Both arms at `r6825+cc66.25`'s
+    verified 185-bin refit minima; the profiles and all six tapered spectra are that same configuration.
+    Nothing here re-fits and nothing here moves.
+  * `spectra/r6959_eta_{lcdm,cr}.npz` (the instrument's own `SRCETA` output, unaltered),
+    `spectra/r6959_{swap,big,swapall,bigall,nswap,nbig}_lcdm.npz`,
+    `spectra/r6941_fine_{lcdm,cr}.npz`.
+  * ** The taper coefficients are not free numbers: ** each is solved from the `SRCETA` measurement -- one
+    to match the arm's spread, one to deliver the observed excess at the top band under the analytic
+    model -- and each is carried in the bank it produced, so this receipt reads them from the spectra
+    rather than restating them.
+  * ** The inversion uses the instrument's own response and no model of it: ** two coefficients fix
+    $\ln R = c_1\alpha + c_2\alpha^2$ per band from the two norm-preserving runs, and that is what is
+    inverted.  *The analytic characteristic function is reported beside it as the prediction it was, not
+    as the calibration.*
+  * `PO-47`'s four peak anchors $220.6/538.1/809.8/1121.9$ and its four locating widths
+    $1.00/1.20/1.60/2.36$ are quoted from that receipt and not recomputed.  the landed $1.074/1.062$
+    peak-and-trough split is quoted from that receipt; the heights and depths here are recomputed on
+    these banks with its own anchored reading.
+  * The statistic is `r6911+cc66.40`'s envelope-normalised oscillation with its running arithmetic mean
+    over one acoustic period, unchanged, in the same seven bands; the locator is `cc66.45`'s anchored
+    parabola.
+
+====================================================================================================
+  [PASS] the bank this receipt reads is present: `spectra/r6959_eta_lcdm.npz`   (r6959_eta_lcdm.npz)
+  [PASS] the bank this receipt reads is present: `spectra/r6959_eta_cr_leafrec1.npz`   (r6959_eta_cr_leafrec1.npz)
+  [PASS] the bank this receipt reads is present: `spectra/r6941_fine_lcdm.npz`   (r6941_fine_lcdm.npz)
+  [PASS] the bank this receipt reads is present: `spectra/r6941_fine_cr_leafrec1.npz`   (r6941_fine_cr_leafrec1.npz)
+  [PASS] the bank this receipt reads is present: `spectra/r6959_swap_lcdm.npz`   (r6959_swap_lcdm.npz)
+  [PASS] the bank this receipt reads is present: `spectra/r6959_big_lcdm.npz`   (r6959_big_lcdm.npz)
+  [PASS] the bank this receipt reads is present: `spectra/r6959_swapall_lcdm.npz`   (r6959_swapall_lcdm.npz)
+  [PASS] the bank this receipt reads is present: `spectra/r6959_bigall_lcdm.npz`   (r6959_bigall_lcdm.npz)
+  [PASS] the bank this receipt reads is present: `spectra/r6959_nswap_lcdm.npz`   (r6959_nswap_lcdm.npz)
+  [PASS] the bank this receipt reads is present: `spectra/r6959_nbig_lcdm.npz`   (r6959_nbig_lcdm.npz)
+  [PASS] the bank this receipt reads is present: `spectra/r6959_swap_lcdm_leafrec1.npz`   (r6959_swap_lcdm_leafrec1.npz)
+
+PART 1 -- ⓵ᵃ THE FUNCTION: THE SOURCE'S WEIGHT ACROSS THE WINDOW, AND ITS PHASE SPREAD.
+----------------------------------------------------------------------------------------------------
+  [PASS] both profiles are the HIERARCHY path, which is the only path `_project` is reached from   (HIER on both)
+  [PASS] the control's `Jac` is identically 1 across the window and the arm's is not -- the two-clock structure is present in the measurement and is not assumed   (lcdm 1.0000, cr 0.7879..0.9114 over +-3 FWHM)
+
+  band   sigma_s/r_s (lcdm -> cr)   D_lcdm   D_cr    monopole fraction (lcdm -> cr)
+  q=1.20      0.06938 -> 0.06899       0.96653  0.96694     0.1837 -> 0.2182
+  q=1.90      0.06817 -> 0.06754       0.92194  0.92355     0.3417 -> 0.4090
+  q=2.60      0.06685 -> 0.06574       0.86300  0.86752     0.3739 -> 0.4458
+  q=3.30      0.06030 -> 0.05945       0.82476  0.82956     0.4432 -> 0.4983
+  q=4.00      0.05973 -> 0.05904       0.77191  0.77813     0.5994 -> 0.6589
+  q=4.70      0.05489 -> 0.05339       0.73339  0.74846     0.5768 -> 0.6579
+  q=5.40      0.05265 -> 0.05190       0.67993  0.68892     0.5320 -> 0.5789
+
+  band-summed: the control 0.06523 of its r_s, the arm 0.06447 of its -- the arm is 1.16 per cent the narrower
+  and the reason: the arm's visibility is +15.5 per cent wider in eta (43.96 against 38.04) while its phase accumulates -14.0 per cent slower per unit of it (0.39178 against 0.45572)
+  [PASS] the arm's window is WIDER in conformal time -- by more than ten per cent   (1.1555)
+  [PASS] and its phase accumulates SLOWER per unit conformal time by nearly the same factor, so the product -- the spread the smearing reads -- is nearly invariant   (product ratio 0.9934)
+  [PASS] so the arm is the narrower of the two in the phase variable, but by under three per cent   (1.16 per cent)
+  [PASS] the arm carries MORE of its window's power in the monopole than the control does, in every band -- the term mix is where a normalisation difference that is NOT a smearing lives   (0.1837->0.2182 .. 0.5320->0.5789)
+  [PASS] and correspondingly less in the Doppler, so the two exchange weight rather than one growing   (0.7901->0.7587)
+  [PASS] the ISW is under one per cent of the window's power on both arms, so the window statistic is not carrying the term that lives outside it   (max 0.0047)
+
+PART 2 -- ⓵ᵇ THE PREDICTION, AND ⓵ᶜ's REFUTATION CONDITIONS APPLIED TO IT.
+----------------------------------------------------------------------------------------------------
+  band    predicted R1 = D_cr/D_lcdm    [R1, R1^2]           measured excess
+  q=1.20        1.00043              [1.00043, 1.00085]      1.01861
+  q=1.90        1.00175              [1.00175, 1.00350]      1.08182
+  q=2.60        1.00524              [1.00524, 1.01051]      1.03734
+  q=3.30        1.00583              [1.00583, 1.01169]      1.08677
+  q=4.00        1.00806              [1.00806, 1.01618]      1.10045
+  q=4.70        1.02054              [1.02054, 1.04151]      1.01409
+  q=5.40        1.01322              [1.01322, 1.02662]      1.16166
+  [PASS] the measured excess is this campaign's own, recomputed here from `r6941_fine_*` rather than quoted -- and on the arm of record its seven band ratios are 1.0186, 1.0818, 1.0373, 1.0868, 1.1005, 1.0141 and 1.1617, against the namesake's 1.0215, 1.0574, 1.0519, 1.0606, 1.0748, 1.0659 and 1.0762   (1.0186  1.0818  1.0373  1.0868  1.1005  1.0141  1.1617)
+  [PASS] ⛭ and it is NON-MONOTONIC on this arm where the namesake's was almost smooth: one band, q=4.70, carries the smallest excess of the seven while sitting between two of the largest   (q=4.70 reads 1.0141 between 1.1005 and 1.1617)
+  [PASS] ⓵ᶜ R5 THE SIGN SURVIVES: the arm is the LESS smeared of the two in every band, which is the direction a 6 per cent excess needs   (R1 = 1.00043 .. 1.02054)
+  [PASS] ⛔ ⓵ᶜ R2 FIRES -- THE SIZE: the predicted log-excess at the top band is under half the measured one, which `PREDICTION.md` fixed in advance as the refutation bar   (ln R1 0.01313 against measured 0.14985, ratio 0.088, bar [0.5, 2])
+  [PASS] and it under-delivers rather than over-delivers, so it is NOT `cc66.40`'s failure repeating   (11.41x short)
+  [PASS] the shortfall is worst at the bottom of the band, where a smearing has almost nothing to give   (q=1.20: 0.0231 of the measured)
+
+  ln(excess) against q^2 -- measured: slope 0.002511, intercept 0.035803 (1.0365 at q=0);  predicted: slope 0.000588, intercept 0.000261
+  [PASS] ⛔⛭ ⓵ᶜ R1 NO LONGER FIRES ON THIS ARM, AND THE REASON IS THE SPREAD OF THE BANDS AND NOT THE OFFSET: the measured excess still extrapolates to a POSITIVE offset at q=0 of almost exactly the namesake's size (+0.0358 against +0.0392), but the straight-line fit's own error on it grows 3.7-fold (0.0290 against 0.0078) because the band excesses are non-monotonic here, so the offset is 1.23 sigma from zero where it was 5.02.  ⇒ *The shape argument against a pure smearing loses this leg on the arm of record; it is reported, not retuned*   (intercept +0.035803 +- 0.029028, 1.23 sigma from zero (1.0365 at q=0); reported for scale, it is 0.239 of the top band's 0.14985)
+  [PASS] the prediction's own intercept is two orders down, as a smearing's must be -- so the offset is not a shared systematic of the fit.  ⛭ *And read on the same footing as R1 above it is indistinguishable from zero, which is what `identically 1 at k=0` predicts and is the control the restated R1 needs*   (+0.000261 +- 0.002459 (0.11 sigma from zero) against the measured +0.035803 (1.23 sigma))
+  [PASS] and the q^2 SLOPE is the half that does survive: the prediction supplies a fifth to a half of it, not a hundredth   (0.234 of the measured slope)
+  [PASS] the window cut is not load-bearing: R1 moves by under two thousandths across +-2 to +-6 FWHM, which is a twentieth of the shortfall it would have to explain   (max spread 5.99e-04 against the 0.1484 it is short by)
+  [PASS] nor is the weight's term choice: on the monopole ALONE -- one phase rather than two -- the prediction is SMALLER still, so the conclusion does not rest on including the Doppler   (monopole-only top band 1.00678 against 1.01322)
+
+PART 3 -- ⓵ᵇ THE RUNS: THREE WIRINGS, AND WHAT EACH OF THE FIRST TWO GOT WRONG.
+----------------------------------------------------------------------------------------------------
+  [PASS] the banked swap's coefficient is the one the MEASUREMENT fixed for the NAMESAKE arm: it takes the control's band-summed spread to 0.06424 of its r_s, which is the namesake arm's -- not this arm's   (SRCTAPER=0.000110088 gives 0.06424, the namesake arm's spread)
+  [PASS] ⛭ and the RE-SOLVED coefficient is the one the measurement fixes for the ARM OF RECORD: it takes the control's band-summed spread to the arm of record's, in units of each arm's own r_s, through this receipt's own reader and not from the bank's stored target   (SRCTAPER=8.31868e-05 gives 0.06447 against the arm's 0.06447; the banked target is 0.064474)
+  [PASS] the six tapered banks are the two coefficients under three wirings, and each carries which wiring produced it   (swap/big ISW-preserving, swapall/bigall all-terms, nswap/nbig weight-preserving)
+  band   predicted f (small/big)   nswap    swap    swapall  |   nbig     big     bigall
+  q=1.20   1.00103 / 1.01160      1.02684  1.02700  1.06744  |  1.25509  1.25480  1.28667
+  q=1.90   1.00292 / 1.03166      1.01827  1.01796  1.02003  |  1.27014  1.26830  1.26383
+  q=2.60   1.00383 / 1.04808      1.01936  1.01956  1.02012  |  1.28315  1.28602  1.27707
+  q=3.30   1.00377 / 1.05431      1.01179  1.01224  1.01224  |  1.20187  1.20507  1.20032
+  q=4.00   1.00668 / 1.08788      1.01531  1.01512  1.01573  |  1.26449  1.26331  1.26412
+  q=4.70   1.00489 / 1.07377      1.01424  1.01433  1.01449  |  1.24213  1.24342  1.24071
+  q=5.40   1.00449 / 1.07620      1.01485  1.01493  1.01514  |  1.29074  1.29030  1.29278
+
+  ⛔ WIRING ONE was not the operation: over the whole eta grid the same Gaussian cuts the ISW's own eta-integral to 0.656 and 0.238 of itself
+  [PASS] ⛔ the all-terms taper removes a third of the ISW at the coefficient that narrows the window by a per cent, and the ISW's support is outside the window entirely   (ISW eta-integral -> 0.6557)
+  [PASS] and the damage is where the ISW lives: the all-terms wiring exceeds the ISW-preserving one by more than double in the lowest band, while above q=1.9 the two agree to a per cent   (q=1.20 1.02700 against 1.06744; above, max difference 0.00208)
+  [PASS] ⛔ AND WIRING TWO's DIAGNOSIS WAS WRONG TOO, WHICH IS WHY THERE IS A THIRD: holding the window's total weight fixed lands on the ISW-preserving run to parts in ten thousand, so the taper shrinking the window against the ISW is NOT what made the run outrun the prediction   (max |nswap - swap| 4.49e-04, |nbig - big| 3.20e-03)
+
+  the run's response against the analytic one, (run-1)/(pred-1): 26.1  6.3  5.1  3.1  2.3  2.9  3.3
+  and at the large coefficient:                                  22.0  8.5  5.9  3.7  3.0  3.3  3.8
+  [PASS] ⚠ ⓵ᶜ R3's BRACKET WAS WRONG IN DIRECTION, AND THAT IS MINE: `PREDICTION.md` argued the contrast responds BETWEEN f and f^2, i.e. no more than f; measured, it responds MORE than f in every band and at both coefficients   (smallest over-response 2.3x)
+  [PASS] and the two coefficients agree on that factor to within a factor two above the lowest band, so it is a property of the statistic and not of one run   (ratio across coefficients 0.73...0.89)
+  [PASS] ⛔ so the condition passed only because its tolerance was written multiplicatively on f instead of on f-1, which made it too loose to bite -- recorded, not absorbed   (every band inside a bar that spans 0.67 to 1.50)
+
+PART 4 -- THE SIZE, TAKEN FROM THE INSTRUMENT'S OWN RESPONSE RATHER THAN FROM A MODEL OF IT.
+----------------------------------------------------------------------------------------------------
+  band   arm's own narrowing   narrowing for ALL of it   the arm's share, through the run's own response
+  q=1.20       0.56 per cent           1.08 per cent        1.00948 against 1.01861  ->   50.9 per cent
+  q=1.90       0.93 per cent           7.66 per cent        1.00879 against 1.08182  ->   10.7 per cent
+  q=2.60       1.66 per cent           2.62 per cent        1.02316 against 1.03734  ->   62.0 per cent
+  q=3.30       1.41 per cent           7.03 per cent        1.01603 against 1.08677  ->   18.5 per cent
+  q=4.00       1.16 per cent           9.21 per cent        1.01066 against 1.10045  ->   10.6 per cent
+  q=4.70       2.72 per cent           1.18 per cent        1.03427 against 1.01409  ->  243.3 per cent
+  q=5.40       1.43 per cent           7.47 per cent        1.02444 against 1.16166  ->   15.1 per cent
+
+  mean over the bands: 1.41 per cent available against 5.18 needed -- a factor 3.67
+  [PASS] ⛭ THE CHANNEL CARRIES A DEFINITE, NON-TRIVIAL SHARE IN EVERY BAND: through the instrument's own two-coefficient response the arm's own window narrowing delivers a positive fraction of the band excess everywhere above q=1.9, and in five of the six bands it is between a tenth and two thirds -- 11, 62, 18, 11 and 15 per cent.  ⌗ *The sixth, q=4.70, returns 243 per cent because its measured excess is the smallest of the seven while its narrowing is the largest; it is named rather than averaged away*   (shares 11%  62%  18%  11%  243%  15%)
+  [PASS] and the narrowing that would deliver ALL of it is a factor of a few above what the arm has, not an order of magnitude   (5.18 against 1.41 per cent)
+  [PASS] ⛭ the wiring substitution the direct route needs is licensed by this run's own measurement: the weight-preserving and ISW-preserving wirings land on each other to parts in ten thousand at the namesake coefficient, so reading the re-solved ISW-preserving bank in place of a re-solved weight-preserving one that was never banked is a substitution and not a change of question   (max |nswap - swap| = 4.49e-04)
+
+  and the DIRECT swap, which needs no response model at all -- the excess read against the tapered control, at the RE-SOLVED coefficient:
+    0.99768  1.06724  1.02214  1.07678  1.08799  1.00318  1.14869   against the measured 1.01861  1.08182  1.03734  1.08677  1.10045  1.01409  1.16166
+    the tapered control's own response at the re-solved coefficient: 1.02098  1.01366  1.01487  1.00928  1.01146  1.01087  1.01129
+  [PASS] ⛭ THE TWO ROUTES STILL AGREE, AND THEY AGREE ON THE OUTLIER TOO: imposing the arm of record's own spread on the control at the re-solved coefficient closes 18, 41, 12, 12, 77 and 8 per cent of the excess above q=1.9, against the inversion's 11, 62, 18, 11, 243 and 15 -- both positive in every band, both of order a tenth to a half in the five well-behaved ones, and both blowing up in the SAME band for the same reason.  ⇒ *Two routes that share no machinery agreeing on which band the comparison fails in is stronger evidence than either number*   (closed 18%  41%  12%  12%  77%  8%)
+  [PASS] ⌗ and the lowest band is the one the inversion cannot be trusted in, which is stated rather than averaged away: there the swap OVERSHOOTS, taking the excess below unity   (q=1.20 excess 0.99768, closed fraction 1.125)
+
+PART 5 -- ⓵ᶜ R4: THE COMB, THE DEPTHS, AND THE ASYMMETRY THAT REFUTES IT ON ITS OWN.
+----------------------------------------------------------------------------------------------------
+    nswap    peaks moved   +2.827    +0.195    +0.710    +0.209
+    swap     peaks moved   +2.446    +0.273    +0.713    +0.240
+    swapall  peaks moved   +7.732    +0.209    +0.749    +0.241
+    nbig     peaks moved  +18.534    +1.558    +7.837    +2.707
+    big      peaks moved  +15.974    +2.035    +7.907    +2.888
+    bigall   peaks moved  +27.323    +1.322    +7.910    +2.870
+    the arm's own        +1.696    -0.445    +0.696    +0.518
+    sky locating width     1.00      1.20      1.60      2.36
+  [PASS] ⛔ ⓵ᶜ R4: the taper that would deliver the whole excess moves the comb past the sky's locating width at more than one peak, so by the order's own rule it is not a mechanism for this row   (moves +18.53/1.00  +1.56/1.20  +7.84/1.60  +2.71/2.36)
+  [PASS] ⌗ and the arm-sized swap OVERSHOOTS l_1 rather than reproducing it: it moves l_1 further than the arm sits from the control, and past the sky's width there, while l_2, l_3 and l_4 stay inside   (l_1 +2.827 against the arm's +1.696 and a width of 1.00)
+
+    control troughs 0.36952 heights 0.16853;  arm troughs 0.37967 (+2.75 per cent) heights 0.17924 (+6.35)
+    nswap    troughs 0.37088 (+0.37 per cent)   heights 0.17626 (+4.59)
+    nbig     troughs 0.40167 (+8.70 per cent)   heights 0.24469 (+45.19)
+
+  ⛔ the arm-sized swap delivers 72 per cent of the arm's peak-HEIGHT excess and 13 per cent of its trough-DEPTH excess
+  [PASS] ⛔ AND THAT REFUTES IT ON ITS OWN, FROM 66's OWN PREVIOUS REVISION: `cc66.46` measured the excess SYMMETRIC about the envelope (1.074 peak side against 1.062 trough side, the landed split at l.1127), and this channel is peak-weighted by more than a factor of five -- so a symmetric excess cannot be carried by it alone, whatever its size   (heights 72 per cent against depths 13 -- 5.4-fold asymmetry)
+  [PASS] and the argument is independent of the size estimates, because it is a RATIO of two shares of the same operation and both are read on the same banks with the same anchored locator   (both move the way the excess does, by very different fractions of it)
+  [PASS] ⌗ the taper that would deliver the whole excess wrecks the heights outright, which is the same asymmetry at forty times the amplitude   (heights +45.2 per cent against troughs +8.7)
+
+====================================================================================================
+GATES: ALL PASS
