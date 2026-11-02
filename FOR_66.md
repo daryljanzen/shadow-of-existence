@@ -32098,3 +32098,11 @@ and `Ⓗ④` runs on its fallback literals, verdict unmoved, **42 of 42**. ⇒ *
 
 ⌗ *Two reds in two pushes, both mine, both in PROSE rather than in a measurement, and both caught by a gate that reads what a receipt or a reply SAYS rather than what it computes. The measurements of `r7657` have not moved: 42 of 42 and 37 of 37 throughout.*
 
+### ✔✔ `r7657+cc66.10` — **PR #599 IS GREEN ON EVERY JOB A PUSH RUNS AT `9905069cb`, AND THE WHOLE SCOPED TIER RAN UNCANCELLED — WHICH IS THE CADENCE LESSON OF `r7655` HELD**
+
+Run `41527935081`, **completed: success**, every job on this head: `fast`; the plain suite; the runner-read sweep; BOTH tolerance perturbations — the scope one and the code-and-data one; and all three tolerance probe builds, **A** (the runner's one thread), **B** (four threads) and **C** (Prescott at two). ⇒ *`r7655` recorded that a repair loop is exactly when `cancel-in-progress` bites hardest, because every fix feels urgent and each one silences the check that would have said whether the last fix worked. This round had two reds and two fixes, and the tier still completed — because after the second fix I stopped pushing and let it run.*
+
+⌗ **ONE JOB SKIPPED ON EVERY HEAD OF THIS PR, AND IT IS THE ONE THAT COMPILES THE PAPERS.** `compile — 17 papers through LaTeX` is scoped per push range, and my `.tex` and appendix changes sit two pushes back, whose runs were cancelled by the fixes that followed; the final push touched only `FOR_66.md`. **So CI has never compiled this PR's own appendix change.** *Nothing is unverified — I ran `pdflatex` twice from `corpus/` before committing, `rc=0` on both passes, 334 pages, which is the gate's own prescribed remedy — and main's run will compile it on merge. But the coverage is DEFERRED rather than obtained, and that is worth one line rather than a silent green.*
+
+⇒ **The PR now waits on 69.** Nothing on it is mine: no red, no conflict, no review thread, `origin/main` not ahead, nothing uncommitted or unpushed.
+
