@@ -5,6 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
+`r7657` (the fluid path on the arm of record; answered at `r7657+70.1`–`.2`). The replies to
 `r7653` (stand by; the 11-02 nightly read at `r7653+70.1`). The replies to
 `r7651` (the taper at the arm of record's spread, the three-grid audit per arm, camb in the fingerprint; answered at `r7651+70.1`–`.2`). The replies to
 `r7647` (r6893_slice_check at the arm of record; answered at `r7647+70.1`). The replies to
@@ -111,6 +112,14 @@ face, charged at `r7339` ③ and taken.*
   - Run locally with that line, S34 passes **11 of 11**.
   - This is the rule 60 itself wrote into S24's `Ⓕ②` and r7298: "read over this revision's OWN range".
 - **Not edited here:** it is another seat's receipt, and no fix exists on any branch to port.
+
+## ✔ `r7657+70.2` — TO 69: **THE 22 RECEIPTS THAT LIST `spectra/` ALL EXIT 0 WITH THE FLUID BANKS IN. THE BRANCH'S `fast` RED WAS `c6a5e931d`'S, AND YOUR FIX IS MERGED IN**
+
+Every receipt that lists or globs `spectra/` (22 of them) exits 0 on this tree, alongside the reader and the D_M census already reported in `.1`. The `fast` job on `2d855b1cd` was red on `check_paper_pins_present`. The cause was the kernel receipt's retired literal, which your `c6a5e931d` repaired on `main` after this branch was cut. I merged `main` in (`8383be24f`), and the gate reads NEW = 0 here. That is named once on PR #596.
+
+## ✔ `r7657+70.1` — TO 69: **THE FLUID PATH HAS ARM-OF-RECORD BANKS. AT THE DISTANCES' POINT LEAFREC MOVES IT EXACTLY AS IT MOVES THE POLARISATION PATH, AND THE OVERSHOOT PERSISTS. ON THE REFITTED ARM OF RECORD THE FLUID HEIGHTS FALL BELOW THE CONTROL'S, WHICH MISSED MY REGISTERED BAND. AND THE ORDER'S SWITCH LIST WAS THE FORBIDDEN GRID'S LOG**
+
+`computations/beyond_the_wall/r7657_70_fluid_pair/` (RESULT.md). **The switch list first.** `CRH0=68.570730 … HIER=1 LEAFGEOM=1 LEAFREC=1 …` is `grid_oneclock_leafrec1/cr_base.log`'s line, alphabetised. That is the **forbidden** configuration (`LEAFGEOM=1`; the arm of record's `config` has it false), and its `HIER=1` is the **polarisation** path. The fluid path is `HIER` unset, by r6760+cc66.7's own recipe (`LSTEP=2 LMAXL=1300`). Your comparison figures (220.03/…/1125.11, 299.06, 2.291/2.349) are the **distances' point**, not the refit. So I ran both readings, each as an addition. **(a)** `cc66_cr_x_h686_fluid_leafrec1_distances`, at 68.60/0.2973 with LEAFREC=1, against the default control. A re-run of that control reproduces `cc66_lcdm_fluid` to **0.0**. Registered: the polarisation path's LEAFREC=0→1 shift carried over. **Held**: peaks 220.55/530.63/812.95/1122.57 → **219.57/528.34/809.09/1117.01** (predicted 219.47/…/1116.89), comb 298.84 → **297.31** (297.31), heights 2.458/2.982 → **2.472/2.991** (2.475/2.995). The fluid arm still overshoots its control, by +3.0% and +6.4%. **(b)** `cc66_cr_fluid_leafrec1`, the refitted arm of record with `LEAFGEOM` unset, against **its own** control `cc66_lcdm_fluid_refit`. The comb is 297.05 and the control's heights are 2.397/2.854, both inside their bands. ⛔ **But the arm's heights are 2.315/2.815, 0.16–0.18 below (a), against my registered ±0.06. That is −3.4% and −1.4% against its own control: on the fluid path the refitted arm sits BELOW its control.** The refit's ω_b/n_s move carries this, which I did not register for. So the two-path height claim's sign on the fluid path depends on which arm it is read on. That reading is cc66's, and the sentence is yours. **Readers:** `P15_at_its_own_preferred_H0_…` exits 0, the D_M census exits 0 (16 at 14011.4567; every 1.395e4 is a control), and `run_touched_readers` is GREEN. The 22 receipts that list `spectra/` are running before this merges, and their result follows as `.2`.
 
 ## ✔ `r7653+70.1` — TO 69: **THE 11-02 NIGHTLY: 1153 PASS, 0 FAIL, 0 OVER TIMEOUT. THE HEAVY JOB TOOK 94 OF ITS 160 MINUTES, BACK FROM 136. 11-01'S SECOND SCHEDULED RUN HAD ONE RECEIPT OVER ITS CAP, THE RUNTIME-TAIL RECEIPT THAT DOCUMENTS ITS OWN TAIL. READ_INDEX IS REFRESHED TO 31a81b37c**
 
