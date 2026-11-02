@@ -1,0 +1,10 @@
+  [PASS] the sky's numbers are the sky's: identical in the two runs
+  [PASS] the control against CAMB at the fourth feature: -1.6 in TT and in EE, a common offset
+  [PASS] combined spread at W = 55: TT 2.35 (Planck), 3.06 (ACT)
+  [PASS] EE 1.72 (ACT) against 6.84 (Planck); TE 1.44 (ACT) against 2.43 (Planck)
+  [PASS] the skies apart: EE 10.6 (1.50 combined sigma), TE 5.5 (1.95)
+  [PASS] the arm's TT feature: 1129.58 and 1124.56, 5.0 apart, the control 1128.09 in both
+  [PASS] and the arm moves in all three spectra while the control does not
+
+  7 checks, 7 pass, 0 fail
+  GATES: ALL PASS

@@ -1,0 +1,165 @@
+
+====================================================================================================
+  A -- THE TWO SEAMS ARE ROOTS OF f, AND ONLY ONE OF THEM IS SIMPLE
+====================================================================================================
+      M = alpha/(3 sqrt3) = 0.1924500897
+      f(back  = -1.15470054) = -4.441e-16     f'(back)  = +2.5980762114
+      f(front = +0.57735027) = -5.551e-17     f'(front) = -4.441e-16     f''(front) = -6.00000000
+  [PASS] Ⓐ①  both seams are roots of f on the Nariai member
+  [PASS] Ⓐ②  the FRONT seam is a DOUBLE root -- f and f' both vanish and f'' does not: the merged horizon, degenerate
+  [PASS] Ⓐ③  the BACK seam is a SIMPLE root -- f vanishes and f' does not, and f'(back) = 9/(2 sqrt3) alpha^-1 exactly
+
+====================================================================================================
+  B -- SO THE LAP CARRIES EXACTLY ONE NON-DEGENERATE HORIZON, AND IT IS THE BACK SEAM
+====================================================================================================
+      kappa(back)  = |f'|/2 = 1.2990381057     3 sqrt3 / 4 = 1.2990381057
+      kappa(front) = |f'|/2 = 2.220e-16
+  [PASS] Ⓑ①  the back seam's surface gravity is 3 sqrt3 / 4 alpha = 1.29904 alpha^-1, non-zero
+  [PASS] Ⓑ②  and the front seam's is zero, which is what DEGENERATE means for a horizon
+
+====================================================================================================
+  C -- AND THE BEAD'S ACCELERATION THERE IS THAT SAME NUMBER, BY AN IDENTITY AND NOT BY LUCK
+====================================================================================================
+      d2r/dtau2 at the back seam = -1.2990381057     -kappa(back) = -1.2990381057
+  [PASS] Ⓒ①  the bead's acceleration at the back seam is exactly -kappa there
+      the identity off the Nariai member, at each one's own black-hole root:
+        M = 0.0500   r_h = 0.10103126   1 - f = 1.000000000000   d2r/dtau2 = -4.79741654   -kappa = -4.79741654
+        M = 0.1000   r_h = 0.20914885   1 - f = 1.000000000000   d2r/dtau2 = -2.07691863   -kappa = -2.07691863
+        M = 0.1500   r_h = 0.33893624   1 - f = 1.000000000000   d2r/dtau2 = -0.96679934   -kappa = -0.96679934
+        M = 0.1900   r_h = 0.52331112   1 - f = 1.000000000000   d2r/dtau2 = -0.17048789   -kappa = -0.17048789
+        M = 0.1920   r_h = 0.55440037   1 - f = 1.000000000000   d2r/dtau2 = -0.07027473   -kappa = -0.07027473
+  [PASS] Ⓒ②  ** AND IT IS STRUCTURAL: at ANY root of f, (1-f) = 1 so the congruence's acceleration is -(1/2) f' while the surface gravity is (1/2)|f'| ** -- verified at the black-hole root of five NON-Nariai members, so the equality is the identity and not this member's coincidence
+  [PASS] Ⓒ③  which is why `P7`'s F-triptych caption already prints this number as the transverse crossing's acceleration, without naming it a surface gravity
+
+====================================================================================================
+  D -- THE TWO PARAMETERS INVERT EACH OTHER, AND BOTH ARE IN PLAY
+====================================================================================================
+  (i) the TORTOISE length r_* = int dr/f, from 0.3 outside each seam in to a gap eps:
+        back  (simple)   eps=1e-02   |r_*| = 1.277161
+        back  (simple)   eps=1e-04   |r_*| = 3.048592
+        back  (simple)   eps=1e-06   |r_*| = 4.821112
+        front (double)   eps=1e-02   |r_*| = 33.472076
+        front (double)   eps=1e-04   |r_*| = 3335.242413
+        front (double)   eps=1e-06   |r_*| = 333336.077480
+      back-seam increments per factor 100: 1.771431, 1.772520   (ln 100 / |f'| = 1.772531)
+  [PASS] Ⓓ⓪  ** in the TORTOISE parameter the orders are the OTHER way round: at the back seam's SIMPLE root r_* diverges LOGARITHMICALLY, each factor 100 in the gap adding ln(100)/|f'| exactly, which is the exponential approach at rate 2 kappa -- the imprinting law ** -- while at the front seam's double root r_* grows like 1/eps, a power law
+
+  (ii) the layer's proper time T, dT = dr/sqrt(-f), over the same approaches:
+        front (double)   eps=1e-02   T = 2.049401
+        front (double)   eps=1e-04   T = 4.711483
+        front (double)   eps=1e-06   T = 7.370311
+        back (simple)    eps=1e-02   T = 0.545757
+        back (simple)    eps=1e-04   T = 0.657370
+        back (simple)    eps=1e-06   T = 0.668538
+  [PASS] Ⓓ①  at the FRONT seam's double root T DIVERGES, and logarithmically -- each factor 100 in the gap adds the same increment, which is the signature of ln(1/(r-r_N))
+      and the back seam's truncated values carry a sqrt(eps) tail, so they extrapolate:
+        eps=1e-02   T = 0.545757   + 2 sqrt(eps/f') = 0.124081   ->  T(0) = 0.669838
+        eps=1e-04   T = 0.657370   + 2 sqrt(eps/f') = 0.012408   ->  T(0) = 0.669778
+        eps=1e-06   T = 0.668538   + 2 sqrt(eps/f') = 0.001241   ->  T(0) = 0.669778
+      deficit ratios 10.000, 10.000  (sqrt(100) = 10)
+  [PASS] Ⓓ②  at the BACK seam's SIMPLE root the same integral CONVERGES -- its omitted tail falls like sqrt(eps) and the three truncations extrapolate to ONE finite limit, 0.66978 alpha, where the front seam's have no limit to extrapolate to
+  [PASS] Ⓓ③  ** SO THE TWO PARAMETERS INVERT EACH OTHER AT BOTH SEAMS: the back seam's approach is exponential in the phase's parameter and finite in the trajectory's, and the front seam's is the reverse ** -- which is why the lap's one non-degenerate horizon carries a thermal scale while the modes still do not meet an unbounded approach to it, and `P15` carries both halves in different sections
+      dT/dln(1/(r-r_N)) at the front seam = 0.577357   (1/sqrt(Lambda) = alpha/sqrt3 = 0.577350)
+  [PASS] Ⓓ④  and the rate of that exponential is sqrt(Lambda) = sqrt3/alpha, which is `P15`'s own `r - r_N propto e^{-sqrt(Lambda) T}`
+
+====================================================================================================
+  E -- THE LAYER'S COSMIC TIME FROM THE BACK SEAM TO THE TURNAROUND
+====================================================================================================
+      turnaround at r = -0.72741576 alpha,  f = +1.000e+00 ... 1 - f = +0.000e+00
+      Delta tau = 0.877972 alpha   (quad error 2.8e-10)   ->  14.90 Gyr at alpha = sqrt3/sqrt(Lambda) = 16.974 Gly
+  [PASS] Ⓔ①  the turnaround is where the marginal rate vanishes, 1 - f = 0
+  [PASS] Ⓔ②  the collapse leg from the back seam to the turnaround is 0.8780 alpha of cosmic time, which is 14.90 Gyr on the corpus's own 1/sqrt(Lambda) = 9.8 Gly
+
+====================================================================================================
+  F -- AND THE PIECES THE STATEMENT COMPOSES ARE EACH IN PRINT, READ FROM THEIR OWN SOURCES
+====================================================================================================
+  [PASS] Ⓕ①  `P7` stratifies the lap and puts the character change at the back seam
+  [PASS] Ⓕ②  `P2` makes the two seams ONE point of the underlying geometry, by the phase
+  [PASS] Ⓕ③  `P2` names the cubic's extra roots for what they are -- the cosmological horizon and its backward-radial partner -- and records that they are ABSENT at Lambda = 0
+  [PASS] Ⓕ④  `P15` carries the converging integral at the back seam's simple zero
+  [PASS] Ⓕ⑤  `P16` puts the progenitor in a previous universe, which is the region the horn beyond the back seam carries
+
+====================================================================================================
+  G -- AND THE BACK SEAM IS DOWNSTREAM OF WHERE THE SKY'S SPECTRUM IS FIXED, NOT BESIDE IT
+====================================================================================================
+      the collapse leg's conformal length        = 1.927621297 alpha
+      the back seam sits at cosh x = 2, x = 1.316958
+      far past -> back seam                      = 0.896498509 alpha = 46.508 % of the leg
+      far past -> the sky's first peak's spectrum = 0.92 % of the leg (`P15`'s own receipt)
+      so the back seam is 50.6x further in than that locus, and lies BETWEEN it and the turnaround
+  [PASS] Ⓖ①  the back seam sits at 46.5 per cent of the collapse leg from its far-past end, while the locus where the sky's first acoustic peak has its spectrum fixed is in the first 0.92 per cent of the SAME leg from the SAME end
+  [PASS] Ⓖ②  ** SO THE LAP'S ONE NON-DEGENERATE HORIZON IS NOT BESIDE WHERE THE PROGENITOR'S SPECTRUM IS SET -- IT IS FIFTY TIMES DOWNSTREAM OF IT, ON THE PATH OF EVERY MODE THE SKY CARRIES ** -- which is what makes `what the back seam does to a mode crossing it` a question about the measured spectrum rather than a coincidence of location
+  [PASS] Ⓖ③  the per-cent figure's own receipt measures it from the collapse leg's FAR-PAST end, and `P15`'s own sentence now names that end too -- a bare `the first per cent of the collapse leg` is read from whichever end the reader supplies, and the two ends put the locus on opposite sides of the back seam
+
+====================================================================================================
+  H -- WHERE THE SPECTRUM-FIXING LOCUS SITS IN RADIUS, NOT ONLY IN CONFORMAL POSITION
+====================================================================================================
+      spectrum-fixing locus (0.92 % from the far past):  x = 7.218930   r = -56.38850 alpha
+      back seam                                        :  x = 1.316958   r = -1.15470 alpha
+      turnaround                                       :                        r = -0.72742 alpha
+      |r| at the locus / |r| at the seam = 48.8339
+  [PASS] Ⓗ①  ** in RADIUS the spectrum-fixing locus sits at -56.4 alpha against the back seam's -1.1547 alpha -- OUTSIDE the seam by a factor 48.8, deep in the parent universe at large ** -- so the modes are fixed BEFORE they reach the mass's cosmological horizon and cross it afterwards, which is the order group G gives in conformal position
+  [PASS] Ⓗ②  and that is a THIRD measure of the same factor of fifty: 48.8 in radius here, 50.6 in conformal position (Ⓖ), and 53.0 in wavenumber from the thermal scale -- three different quantities, agreeing to under ten per cent
+
+====================================================================================================
+  I -- AND WHAT A `LEG` IS BOUNDED BY, BECAUSE THE LAP CARRIES TWO DIFFERENT RATIOS OF TWO
+====================================================================================================
+  (i) CONFORMAL, on the WHOLE HORNS -- the `sec:scope` closure:
+        collapse  (r=-inf -> turnaround) = 1.927621297 alpha
+        lift                             = 3.338738024 alpha   / collapse = 1.732050808
+        expansion (r=0 -> +inf)          = 3.855242593 alpha   / collapse = 2.000000000
+  [PASS] Ⓘ①  the 1 : sqrt3 : 2 closure is on the WHOLE HORNS -- collapse from the far past to the turnaround, the lift, and expansion from the branch point out to infinity
+  (ii) and the SEAM-BOUNDED sub-stretches of those same horns are NOT the closure's legs:
+        back seam -> turnaround     = 1.031122788 alpha   (the horn is 1.927621)
+        branch point -> front seam  = 2.375870551 alpha   (the horn is 3.855243)
+  [PASS] Ⓘ②  ** the seam-bounded stretches are 1.0311 and 2.3759, neither of which is its horn's length, and their ratio is not 2 ** -- so a `leg` read as seam-to-turnaround or branch-point-to-seam does not satisfy the closure and the two readings cannot be merged
+  (iii) THE OTHER 2, which is exact and is on COSMIC TIME and the seam-bounded stretches:
+        back seam -> turnaround    = (2a/3) arccosh 2      = 0.877971931 alpha
+        branch point -> front seam = (2a/3) arcsinh(1/r2)  = 0.438985966 alpha
+        arccosh 2 - 2 arcsinh(1/sqrt2) = 0.000e+00   (both = ln(2+sqrt3))
+  [PASS] Ⓘ③  ** and that ratio is EXACTLY 2, by the identity arccosh 2 = 2 arcsinh(1/sqrt2) = ln(2+sqrt3), to 30 digits ** -- a second exact two, on a different clock and different stretches from the closure's
+  [PASS] Ⓘ④  ⇒ so the lap carries TWO exact ratios of two and they pair different objects: 1:sqrt3:2 in conformal length on the whole horns, and 2:1 in cosmic time on the seam-bounded stretches.  ** Reading either with the other's stretches is the error, and it is the one a careful reader reaches for **
+
+
+==========================================================================================
+  THE BACK SEAM IS THE LAP'S ONE NON-DEGENERATE HORIZON.
+
+  Both seams are roots of the Nariai cubic and they are one point of the
+  underlying geometry, met a lap apart.  The front seam is the DOUBLE root --
+  the merged horizon, surface gravity zero.  The back seam is the SIMPLE
+  root, surface gravity 3 sqrt3 / 4 alpha = 1.29904/alpha, and the bead's
+  acceleration there is exactly minus that number, by an identity holding at
+  every root of f rather than by coincidence on this member.
+
+  And the two parameters invert each other at both seams.  In the TORTOISE
+  length -- the parameter the phase accumulates in, and the one the
+  transmission dichotomy is stated in -- the back seam's simple root gives the
+  exponential approach at rate 2 kappa, the imprinting law, while the front
+  seam's double root gives a power law.  In the LAYER'S OWN PROPER TIME -- the
+  parameter the collapse trajectory advances in -- it is the reverse: the
+  double root diverges logarithmically at rate sqrt(Lambda) and the simple
+  root's integral converges, to 0.66978 alpha.
+
+  So the lap's one non-degenerate horizon DOES carry a thermal scale, and what
+  it does not have is an unbounded approach along the trajectory that carries
+  the modes.  The layer crosses it at a finite reading and keeps going,
+  14.90 Gyr short of the turnaround, where no finite layer of the exterior's
+  reckoning reaches it at all.
+
+  WHAT IS OPEN: what the back seam does to a mode crossing it.  The locus
+  where the sky's first acoustic peak has its spectrum fixed is in the first
+  0.92 per cent of the collapse leg from its far-past end, and the back seam
+  is at 46.5 per cent of the same leg from the same end -- so the horizon is
+  not beside that locus but 51 times downstream of it, crossed by every
+  mode the sky carries, before the turnaround.  Nothing here computes what
+  that crossing does.
+==========================================================================================
+
+/home/user/shadow-of-existence/receipts/P07_CR_framework/P07_the_back_seam_is_the_laps_one_non_degenerate_horizon_and_its_surface_gravity_is_the_beads_own_acceleration_there.py:169: IntegrationWarning: The occurrence of roundoff error is detected, which prevents 
+  the requested tolerance from being achieved.  The error may be 
+  underestimated.
+  v, _ = quad(lambda r: 1.0 / f(r), min(a, b), max(a, b), limit=600)
+/home/user/shadow-of-existence/receipts/P07_CR_framework/P07_the_back_seam_is_the_laps_one_non_degenerate_horizon_and_its_surface_gravity_is_the_beads_own_acceleration_there.py:192: IntegrationWarning: The occurrence of roundoff error is detected, which prevents 
+  the requested tolerance from being achieved.  The error may be 
+  underestimated.
+  val, _ = quad(lambda r: 1.0 / math.sqrt(max(-f(r), 1e-300)), min(a, b), max(a, b), limit=400)

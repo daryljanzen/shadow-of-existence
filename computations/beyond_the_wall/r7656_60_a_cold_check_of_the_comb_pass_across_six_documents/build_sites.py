@@ -48,14 +48,23 @@ def line_sites():
             continue
         L = open(p, encoding='utf-8', errors='replace').read().split('\n')
         for n in sorted(set(lines)):
-            if n > len(L) or not L[n - 1].strip():
+            # ** r7656+60.1 -- A BLANK NAMED LINE RESOLVES TO THE NEXT NON-BLANK ONE. **  Every one of
+            # P15 l.135, 148, 153, 441, 2791, 2990 is the newline alone: 69 names paragraph starts by
+            # the blank line before them.  Read literally, six sites would extract nothing and report
+            # green -- the vacuity this registration's arm 2 was written against.
+            r = n
+            while r <= len(L) and not L[r - 1].strip():
+                r += 1
+            if r > len(L):
+                out.append(dict(paper=paper, file=rel, line=n, resolved=0, figures=[], cites=[],
+                                claim='', unresolved=True))
                 continue
-            raw = L[n - 1]
+            raw = L[r - 1]
             claim = strip(raw)
             figs = sorted({s for s, _ in G.figures(claim)})
             cites = sorted({nm.strip() for m in re.finditer(r'\\rcpt\{([^}]+)\}', raw)
                             for nm in m.group(1).split(',') if nm.strip() in G.FILES})
-            out.append(dict(paper=paper, file=rel, line=n, figures=figs, cites=cites,
+            out.append(dict(paper=paper, file=rel, line=n, resolved=r, figures=figs, cites=cites,
                             claim=claim.strip()[:300]))
     return out
 
@@ -67,7 +76,10 @@ def candidates(sites):
         cands.update(s['cites'])
     p15 = os.path.join(ROOT, 'corpus', 'CR_cosmology.tex')
     lines = open(p15, encoding='utf-8', errors='replace').read().split('\n')
-    a = next(i for i, l in enumerate(lines) if 'sec:refit-bound' in l)
+    # ** r7656+60.1 -- ANCHOR ON THE LABEL'S DEFINITION, NEVER ON A MENTION. **  The first mention is
+    # line 34, inside a comment block, and anchoring there scanned the abstract and returned 2
+    # candidates where r7650 found 35 in this same section.
+    a = next(i for i, l in enumerate(lines) if r'\label{sec:refit-bound}' in l)
     nxt = [i for i, l in enumerate(lines) if i > a and re.match(r'\\section\{', l)]
     seg = '\n'.join(lines[a:(nxt[0] if nxt else len(lines))])
     for m in re.finditer(r'\\rcpt\{([^}]+)\}', seg):
@@ -84,9 +96,14 @@ if __name__ == '__main__':
     allfigs = sorted({f for s in sites for f in s['figures']})
     print(f"  {len(sites)} line(s) with text; {nfig} figure(s), {len(allfigs)} distinct")
     print(f"  {len(cands)} candidate receipt(s) -- the sec:refit-bound set plus the named lines' own")
-    print(f"\n  {'paper':<10} {'line':>6} {'figs':>5} {'cites':>6}")
+    assert len(cands) > 20, (
+        f"⛔ ARM ⑩: only {len(cands)} candidate(s).  A set this small could not resolve "
+        f"{len(allfigs)} distinct figures, and a check that tried would report them ABSENT for want "
+        f"of a place to look.  A sweep that returns nothing has measured its own reach.")
+    print(f"\n  {'paper':<10} {'named':>6} {'resolv':>6} {'figs':>5} {'cites':>6}")
     for s in sites:
-        print(f"  {s['paper']:<10} {s['line']:>6} {len(s['figures']):>5} {len(s['cites']):>6}"
+        print(f"  {s['paper']:<10} {s['line']:>6} {s.get('resolved', 0):>6} "
+              f"{len(s['figures']):>5} {len(s['cites']):>6}"
               + ('   <- carries NO figure of >=2 sig digits' if not s['figures'] else ''))
     json.dump(dict(sites=sites, candidates=cands),
               open(os.path.join(HERE, 'sites.json'), 'w'), indent=1)

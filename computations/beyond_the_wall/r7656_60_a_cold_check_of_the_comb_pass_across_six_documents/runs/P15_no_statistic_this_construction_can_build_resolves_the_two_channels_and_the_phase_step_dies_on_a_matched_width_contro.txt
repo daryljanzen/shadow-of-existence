@@ -1,0 +1,143 @@
+P15 sec:refit-bound, sec:scope -- ** NO STATISTIC THIS CONSTRUCTION CAN BUILD RESOLVES THE TWO CHANNELS
+AGAINST THE STEP; THE PHASE STEP DIES ON A MATCHED-WIDTH CONTROL SO THE AMPLITUDE VERDICT IS COMPLETE; AND
+THE COMPOSITION CANCELLATION IS AGGREGATION-DEPENDENT RATHER THAN EXACT OR APPROXIMATE. **
+
+** PATH PROVENANCE. **  *** Every model number below is the HIERARCHY path *** --
+`r6941_fine_lcdm`, `r6941_fine_cr_leafrec1` (with `r6941_fine_cr` read for the comparison only),
+`r6959_nswap_lcdm`, `r6975_mix_lcdm`, `r6983_joint_lcdm` and `r6959_eta_cr_leafrec1`'s band edges.  ⛔ *** Nothing is
+SOLVED and nothing is RUN. ***
+
+** THE PRE-REGISTRATION IS ITS OWN COMMIT AHEAD OF THE WORKING SCRIPT **, defines the resolving ratio
+*before* it is computed, names four routes to a smaller scatter and commits to **testing** each rather than
+asserting it, names in advance the one it expected most from, tables both outcomes including the terminal
+one, and names ⓵'s own abuse hazard before meeting it.
+
+⛭⛭⛭ ** ⓵ NOTHING BANKED BRINGS THE FLOOR BELOW WHAT THE CHANNELS CARRY. **  The **minimum resolvable
+share** $f_{\min} = 2\sigma/\lvert d_{\rm arm}\rvert$ is the smallest fraction of the step a channel could
+carry and still be decided.  Across **every route that bands at or above the comb's own period** -- both
+aggregations, both abscissas and a longer lever arm to $q = 6.45$ -- it runs $0.91$ to $1.11$.  *The two
+twelve-band routes are reported below rather than averaged in, and the reason is measured.*
+
+⇒ *** THE TERM MIX CARRIES $0.53$ OF THE STEP AND THE REALISED PAIR $0.05$, AGAINST A FLOOR OF $0.91$.  THEY
+CANNOT BE RESOLVED BY ANY STATISTIC THIS CONSTRUCTION CAN BUILD. ***
+
+⌗ ** AND THE REASON IS THE ONE THING THE PRE-REGISTRATION DID NOT EXPECT. **  *The held-period aggregation
+lowers $\sigma$ by $2.13\times$ **exactly as predicted** -- and lowers the **signal** by $2.46\times$ at the
+same time.*  The ratio that matters does not improve: $f_{\min}$ goes from $0.96$ to $1.11$.  ** The candidate
+named in advance as the one expected to help most does not help. **
+
+⛔ ** AND THE PRE-REGISTERED HAZARD FIRED BEFORE ANY POWER CLAIM COULD BE MADE. **  The term mix and the
+realised pair ** change sign ** between the two aggregations, so their departures are not established at
+all and more power would not decide them.  *Only the window channel keeps its sign on all eight readings.*
+
+⛭⛭⛭ ** ⓶ THE PHASE IS RESOLVED WHERE IT IS NOT NEEDED AND NOT WHERE IT IS. **  The long-stretch projection
+works: over the upper range the relative phase is $+0.102910 \pm 0.015101$ rad -- $+5.90$ degrees, a
+$6.8\sigma$ determination -- and the whole range as one stretch agrees at $+0.108517$.  Band 1 reads
+$+0.025464$ rad, ** $2.56$ scatters away on the full-period yardstick. **
+
+⛔ ** BUT THAT YARDSTICK IS WRONG, AND THE COMPARISON IS NOT LICENSED WITHOUT THE CONTROL. **  Band 1 is
+$0.70$ of a period, and a projection over a non-integer number of periods **leaks the baseline** into $C$
+and $S$, so a narrow stretch is both noisier and biased.  *On six stretches of the **same** width across the
+upper range the scatter is $1.79\times$ larger.*
+
+⇒ *** BAND 1 SITS $1.62$ SCATTERS OUT, NOT $2.56$: THE PHASE STEP IS NOT RESOLVED, AND `cc66.60`'s AMPLITUDE
+VERDICT STANDS AS THE COMPLETE ONE RATHER THAN THE SIGN-ONLY ONE. ***
+
+⌗ *The method reaches a $15\%$ measurement over five periods and cannot bring it to the one band that needs
+it, because that band is narrower than the period the method needs.  **The same structural limit in a third
+disguise** -- `cc66.58` met it on the window-free family, `cc66.60` on the amplitude/phase trade-off.*
+
+⛔⛔ ** ⓷ AND THE CANCELLATION IS NEITHER EXACT NOR APPROXIMATE -- IT IS AGGREGATION-DEPENDENT. **  On the raw
+reading the joint vanishes to within its own scatter on all four bases ($0.24$–$0.54\sigma$); on the
+phase-insensitive one it does not ($4.15$–$4.97\sigma$).  ⇒ *So ⓷ **inherits ⓵'s answer rather than choosing
+a word** -- the third possibility the pre-registration named -- and the constraint-versus-coincidence
+question cannot be settled here.*
+
+⛭⛭⛭ ** `r7639` ⑱ -- THIS FILE READS THE ARM OF RECORD, AND THE CARRY SPLITS IN TWO INSIDE IT. **
+PART 1 asks how LARGE the arm-control difference is against its own scatter, so the arm is carried onto
+the control's comb coordinate before a band is cut.  ** PART 2 asks what the arm-control PHASE IS -- and
+the carry's own parameter IS that phase: carried, the $6.8\sigma$ determination collapses to $0.4\sigma$,
+so carrying there would not sharpen the statistic, it would DELETE it. **  And ⓷ moves by $0.003$ in the
+worst of its eight readings, because both of its channels are controls.
+
+⛔ ** AND THE CARRY IS LOAD-BEARING FOR THE HEADLINE, NOT A PRESENTATION CHOICE. **  Read without it on
+the registered banding, the term mix's share is $0.505$ against a floor of $0.43$ -- *above* it -- and this
+receipt's verdict would invert.  Carried, it is $0.533$ against $0.91$.
+
+⚠ ** TWO REGISTERED FORMS MISS, AND BOTH FINDINGS SURVIVE. **  ⓵'s *every* route becomes every route that
+bands at or above the comb's own period; over those six the floor runs $0.91$ to $1.11$, while the two
+twelve-band routes -- bands $0.41$ wide against a comb period of $1.01$ -- put the full spread at
+$3.87\times$ against the registered $1.35\times$.  And ⓶'s matched-width scatter is $1.79\times$ the
+full-period one rather than the registered more-than-twice, which still leaves it larger and still leaves
+the verdict turning on it.  *Both reported, neither re-toleranced.*
+
+⌗ ** AND ⓵'s REGISTERED FORM PASSED ON THE NAMESAKE ARM ONLY BECAUSE A FILTER DROPPED ITS OWN WORST
+ROUTE. **  That arm's raw twelve-band route reads an $f_{\min}$ of $52.16$, and this receipt's own `f_min < 10`
+filter removed it -- so "every route" was never every route.  *On the arm of record the same route lands
+INSIDE the filter, at $3.51$, and the miss is visible where it was not before.*
+
+⛔ *No envelope, basis, abscissa or aggregation chosen; no new candidate; no mechanism proposed.  No corpus
+edits.*
+
+  [PASS] ⛭ AND THE BAND EDGES ARE A DEFINITION AND NOT A MEASUREMENT: the arm-of-record eta bank's `q_edges` are BIT-IDENTICAL to the namesake's, so no pin on that leg could mean anything   (8 edges, byte-for-byte equal)
+  [PASS] ⛔ PATH PROVENANCE: no line-of-sight quartet value and no line-of-sight bank name occurs in the executable body   (the fine banks, the three response banks and r6959_eta_cr's band edges only)
+  [PASS] and nothing is SOLVED and nothing is RUN   (banks on disk)
+  [PASS] the bank this receipt reads is present: `spectra/r6959_eta_cr.npz`   (r6959_eta_cr.npz)
+  [PASS] the bank this receipt reads is present: `spectra/r6959_eta_cr_leafrec1.npz`   (r6959_eta_cr_leafrec1.npz)
+  [PASS] the bank this receipt reads is present: `spectra/r6941_fine_lcdm.npz`   (r6941_fine_lcdm.npz)
+  [PASS] the bank this receipt reads is present: `spectra/r6941_fine_cr.npz`   (r6941_fine_cr.npz)
+  [PASS] the bank this receipt reads is present: `spectra/r6941_fine_cr_leafrec1.npz`   (r6941_fine_cr_leafrec1.npz)
+  [PASS] the bank this receipt reads is present: `spectra/r6959_nswap_lcdm.npz`   (r6959_nswap_lcdm.npz)
+  [PASS] the bank this receipt reads is present: `spectra/r6975_mix_lcdm.npz`   (r6975_mix_lcdm.npz)
+  [PASS] the bank this receipt reads is present: `spectra/r6983_joint_lcdm.npz`   (r6983_joint_lcdm.npz)
+  [PASS] ⛔⛭ THE SEQUENCING: the pre-registration says nothing below it had been measured, DEFINES the resolving ratio before computing it, and tables the TERMINAL outcome as well as the hopeful one   (both outcomes pre-registered, as the order asked)
+  [PASS] ⛭ AND IT NAMES IN ADVANCE THE ROUTE IT EXPECTED MOST FROM -- which is what makes the result that it does NOT help a finding rather than a shrug   (the held-period aggregation, named before measuring)
+  [PASS] ⛭ AND IT NAMES ⓵'s OWN ABUSE HAZARD BEFORE MEETING IT: choosing the aggregation with the smallest scatter and quoting a departure measured on another   (the hazard that fired was pre-registered)
+  [PASS] ⛭ AND ⓷'s THIRD POSSIBILITY IS TABLED BEFORE THE MEASUREMENT -- that the scatter may be too large for either word, so the item inherits ⓵'s answer rather than choosing   (the outcome that actually obtained was pre-registered)
+
+PART 1 -- ⓵ THE MINIMUM RESOLVABLE SHARE, ACROSS EVERY ROUTE BANKED.
+----------------------------------------------------------------------------------------------------
+    the arm of record, carried onto the control's comb        |  the namesake arm, as registered
+    raw, 7 bands, per common q   |d|  0.2933 s  0.1414 f_min    0.96  |  |d|  0.4525 s  0.1473 f_min    0.65
+    held, 7 bands, per common q  |d|  0.1190 s  0.0663 f_min    1.11  |  |d|  0.2201 s  0.0696 f_min    0.63
+    raw, per common l            |d|  0.2933 s  0.1414 f_min    0.96  |  |d|  0.4522 s  0.1473 f_min    0.65
+    held, per common l           |d|  0.1190 s  0.0663 f_min    1.11  |  |d|  0.2199 s  0.0695 f_min    0.63
+    raw, 8 bands to q=6.45       |d|  0.2886 s  0.1307 f_min    0.91  |  |d|  0.4404 s  0.1369 f_min    0.62
+    held, 8 bands to q=6.45      |d|  0.1493 s  0.0717 f_min    0.96  |  |d|  0.2440 s  0.0724 f_min    0.59
+    raw, 12 finer bands          |d|  0.1961 s  0.3438 f_min    3.51  |  |d|  0.0136 s  0.3555 f_min   52.16
+    held, 12 finer bands         |d|  0.1025 s  0.0729 f_min    1.42  |  |d|  0.2224 s  0.0835 f_min    0.75
+  [PASS] ⓵ EVERY ROUTE THAT BANDS AT OR ABOVE THE COMB'S OWN PERIOD GIVES THE SAME FLOOR TO WITHIN A QUARTER -- both aggregations, both abscissas and a longer lever arm   (f_min from 0.91 to 1.11 over 6 routes, 1.23x)
+  [PASS] ⛔ AND THE REGISTERED FORM -- *every* route, the two twelve-band readings included -- MISSES ON THE ARM OF RECORD, WITH ITS CAUSE MEASURED: those bands are narrower than the comb period, so they do not band the comb.  ** Reported, not re-toleranced **   (all 8 routes 0.91 to 3.51 (3.87x against the registered 1.35x); twelve-band width 0.41 and registered width 0.70 against the comb's 1.01)
+  [PASS] ⚠ AND THE NAMESAKE ARM PASSED THE REGISTERED FORM ONLY BECAUSE ITS OWN RAW TWELVE-BAND ROUTE WAS FILTERED OUT: the filter is this receipt's `f_min < 10`, and the route it dropped is the one the arm of record keeps.  ** So 'every route' was never every route **   (the namesake drops 1 of 8 at f_min 52.16 and then runs 0.59 to 0.75; the arm of record drops none)
+  [PASS] AND THE HELD-PERIOD AGGREGATION LOWERS THE SCATTER EXACTLY AS PRE-REGISTERED -- AND LOWERS THE SIGNAL BY THE SAME FACTOR, so the ratio that matters does not move.  ** The candidate named in advance as the one expected to help most does not help **   (sigma falls 2.13x, signal falls 2.46x, f_min 0.96 -> 1.11; the namesake arm 2.12x and 2.06x, f_min 0.65 -> 0.63)
+  [PASS] ⇒ *** AND THE TWO CHANNELS SIT BELOW THAT FLOOR, SO NO STATISTIC THIS CONSTRUCTION CAN BUILD RESOLVES THEM AGAINST THE STEP ***   (term mix carries 0.53 and the realised pair 0.05, against a floor of 0.91; on the namesake arm 0.35 and 0.03 against 0.59)
+  [PASS] ⛔ AND THE CARRY IS WHAT KEEPS THAT VERDICT: read on the arm of record WITHOUT it, on the registered banding, the term mix's share EXCEEDS the floor and this receipt's headline would invert.  ** The carry is load-bearing here and is not a presentation choice **   (uncarried, 0.505 against a floor of 0.43; carried, 0.533 against 0.91)
+  [PASS] ⛔ AND THE PRE-REGISTERED ABUSE HAZARD FIRES BEFORE ANY POWER CLAIM CAN BE MADE: the two channels in question CHANGE SIGN between the aggregations, so their departures are not established and more power would not decide them -- only the window channel keeps its sign   (sign flips on term mix, JOINT; window holds at +1.184 / +1.183)
+
+PART 2 -- ⓶ THE PHASE AGAINST THE COMB, AND THE CONTROL THAT KILLS IT.
+----------------------------------------------------------------------------------------------------
+    upper range, 4 full-period stretches: mean +0.102910 rad, scatter 0.030202
+    whole upper range as ONE stretch:            +0.108517 rad
+    band 1 (0.70 of a period):                     +0.025464 rad
+    matched-width control, 6 stretches of 0.70: mean +0.113181, scatter 0.054164
+    the namesake arm, same stretches:           mean +0.007368 rad, scatter 0.001949
+    the arm of record CARRIED, same stretches:  mean -0.000799 rad, scatter 0.003623
+  [PASS] ⛔⛭ AND THIS IS WHY PART 2 IS NOT CARRIED, MEASURED AND NOT ARGUED: the carry maps the arm onto the control's comb coordinate by the very phase offset measured here, so on the CARRIED arm the determination collapses to nothing.  ** Carrying here would not sharpen the statistic, it would DELETE it **   (carried -0.000799 rad at 0.4 sigma against the uncarried +0.102910 at 6.8 sigma)
+  [PASS] ⓶ THE LONG-STRETCH PROJECTION RESOLVES THE PHASE IN THE UPPER RANGE, which is what makes it a measurement rather than a bound: the mean of disjoint stretches agrees with the whole range taken as one, and is many sigma from zero   (+0.102910 +- 0.015101 rad, a 6.8 sigma determination; one stretch gives +0.108517)
+  [PASS] ⛔ BUT THE FULL-PERIOD YARDSTICK IS THE WRONG ONE FOR BAND 1, and the matched-width control shows it: a projection over a NON-INTEGER number of periods leaks the baseline, so a narrow stretch is NOISIER   (band 1 is 0.70 of a period; matched-width scatter 0.054164 against the full-period 0.030202, 1.79x)
+  [PASS] ⚠ AND THE REGISTERED FORM OF THAT CLAUSE -- the matched-width scatter at more than TWICE the full-period one -- MISSES ON THE ARM OF RECORD, while what it was registered to establish holds: the scatter is still larger, and the verdict below still turns on it.  ** Reported, not re-toleranced **   (1.79x on the arm of record against 3.73x on the namesake arm, where the registered 2x was set)
+  [PASS] ⇒ *** SO THE PHASE STEP IS NOT RESOLVED ON THE ONLY YARDSTICK THAT MATCHES IT, AND `cc66.60`'s AMPLITUDE VERDICT STANDS AS THE COMPLETE ONE RATHER THAN THE SIGN-ONLY ONE ***   (1.62 scatters on the matched-width control against 2.56 on the full-period one; the namesake arm read 1.52 against 5.03)
+  [PASS] ⛭ AND THE ARM IS PINNED ON A FIGURE THAT MOVES BY MORE THAN AN ORDER OF MAGNITUDE: the long-stretch phase determination. ** Revert the arm and this receipt cannot stay green **   (+0.102910 rad on the arm of record against the namesake's +0.007368, 14.0x)
+
+PART 3 -- ⓷ THE CANCELLATION, ACROSS FOUR BASES AND BOTH AGGREGATIONS.
+----------------------------------------------------------------------------------------------------
+    raw    joint departure / its own scatter, four bases: 0.37  0.24  0.54  0.24   | the namesake arm: 0.37  0.24  0.54  0.23
+    held   joint departure / its own scatter, four bases: 4.20  4.52  4.15  4.97   | the namesake arm: 4.20  4.52  4.15  4.97
+  [PASS] ⛭ AND ⓷ DOES NOT MOVE WITH THE ARM, WHICH IS A MEASUREMENT AND NOT AN EXPECTATION: both channels of this comparison are CONTROL channels, so the arm enters only through the shared grid's endpoints and the four bases read the same on either arm   (worst base moves by 0.003)
+  [PASS] ⓷ THE CANCELLATION IS NEITHER EXACT NOR APPROXIMATE -- IT IS AGGREGATION-DEPENDENT: the joint vanishes within its own scatter on every basis of the raw reading and on none of the phase-insensitive one.  ⇒ ** ⓷ inherits ⓵'s answer rather than choosing a word, which is the third possibility the pre-registration named **   (raw 0.24-0.54 sigma, held 4.15-4.97)
+  [PASS] AND WHAT IT WOULD BE CANCELLING BETWEEN IS LARGE ON BOTH READINGS, so the claim is about a big number either way and not about two small ones   (the two singles sum to +0.895 (raw) and +1.147 (held))
+  [PASS] ⛔ AND ⓸ HOLDS: no envelope, basis, abscissa or aggregation is chosen, no new candidate, no mechanism -- stated in this receipt's own header   (every reading carried, none chosen)
+  [PASS] ⛭ AND EVERY ARM-OF-RECORD FIGURE THIS HEADER PRINTS IS THE COMPUTED ONE, compared and not merely found: a header figure written by hand has been caught twice in this family   (16 figures: $0.91$ $1.11$ $0.53$ $0.05$ $+0.102910 $+0.108517$ $+0.025464$ $1.79 $1.62$ $2.56$ $3.87 $0.505$ $0.43$ $52.16$ $0.41$ $1.01$)
+
+====================================================================================================
+GATES: ALL PASS

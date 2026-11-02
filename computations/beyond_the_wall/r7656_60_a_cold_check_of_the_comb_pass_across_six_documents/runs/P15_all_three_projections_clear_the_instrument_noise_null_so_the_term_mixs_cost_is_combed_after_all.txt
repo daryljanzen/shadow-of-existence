@@ -1,0 +1,114 @@
+P15 sec:refit-bound, sec:scope -- ** ON THE NULL 70 VALIDATED, ALL THREE PROJECTIONS CLEAR AT $p \le
+0.0005$ AND NONE OF 2,000 DRAWS REACHES ANY OF THEM; SO THE TERM MIX'S OWN COST IS COMBED AFTER ALL AND
+`cc66.65`'s READING WAS WRONG IN THE DIRECTION THIS SEAT DID NOT FLAG; AND `cc66.62`'s SCOPE CLAIM IS
+AMENDED -- THE LOCATOR LOCATES INSIDE BAND 1 AND MEASURES NO HEIGHT THERE. **
+
+** PATH PROVENANCE. **  *** Every model number below is the HIERARCHY path *** -- `r6941_fine_{lcdm,cr}`,
+`r6975_mix_lcdm`, `r6959_eta_cr`'s band edges, and `plik_lite` TT through the corpus's own
+`chi2_of_spectrum`.  ⛔ *** Nothing is SOLVED and nothing is RUN. ***
+
+⛔⛔ ** THE MEASUREMENT IS UNCHANGED.  ONLY THE BAR CHANGED, AND THE BAR WAS MINE. **  `cc66.65` scored three
+projections against a 110-period wrong-period null.  70's audit: the 82 bins span $T = 2.78$ in $q$ and hold
+about $3.6$ independent frequencies, the ensemble's participation ratio is $N_{\rm eff} = 3.07$, and 6 of the
+110 correlate with the comb above $0.5$.  ⇒ *** "NONE OF 110" WAS WORTH ABOUT ONE IN FOUR. ***
+
+⌗ *I flagged the margin as thin and asked for this audit. **I did not work out that 82 bins over $T=2.78$ can
+only hold about 3.6 independent frequencies, which is the fact that decides it** -- and that, not the
+arithmetic gate I was pleased with, was the weak part of `cc66.65`.*
+
+⛭ ** THE INSTRUMENT IS REPRODUCED BEFORE ANYTHING RESTS ON IT. **  2,000 draws of `COV` through this seat's
+own pipeline, 70's `Q3(iii)` construction with 70's own definitions copied rather than re-derived: the arm's
+$7.3038$ against **0 of 2,000** and a null maximum of $2.34$, where 70 reported 0 and $2.54$ on another seed.
+
+⛭⛭⛭ ** ⓵ AND ALL THREE CLEAR, WITH NONE OF 2,000 DRAWS REACHING ANY OF THEM. **  *`ⓐ` and `ⓑ` clear by
+more than double their null's maximum; **`ⓒ` clears by $1.44\times$, and that is stated rather than rounded
+into the same sentence.***
+
+  · ** `ⓐ` the term mix's own cost: $4.238$, null max $1.874$, 0 of 2,000, $p \le 0.0005$. **
+  · ** `ⓑ` the arm's excess it does NOT explain: $4.005$, null max $1.416$, 0 of 2,000. **
+  · ** `ⓒ` the $45\%$ it misplaces: $1.482$, null max $1.029$, 0 of 2,000. **
+
+⇒ *** SO `ⓐ` CLEARS, AND `cc66.65`'s CENTRAL READING -- "the term mix's own cost is NOT combed" -- IS WRONG.
+IT WAS WRONG BECAUSE OF THE BAR I CHOSE, AND IT FAILED THAT BAR BY ONE PERIOD OF 110. ***
+
+⚠ ** I PRE-REGISTERED THIS OUTCOME AND THE WORDS FOR IT. **  *`PREDICTION.md`: "a bar worth one in four
+failing something by one unit is equally capable of passing it.  If `ⓐ` clears the noise null, `cc66.65`'s
+reading was wrong in the direction I did not flag, and I will say that in those words." **It cleared.***
+
+⛔ ** AND `ⓐ`'s CLEARANCE IS NOT THE NOISE-FREE TERM TALKING, WHICH IS THE CHECK THAT MAKES IT A RESULT. **
+*Under this null $d$ is fixed and only $r_c$ moves, so $d^{T}Fd$ has no noise in it to fail.*  Measured: `ⓐ`'s
+quadratic term is $0.851$ against a null of $0.794 \pm 0.006$ -- **noise-free, and therefore not evidence** --
+while its cross term is $3.399$ against a null median of $0.354$, **0 of 2,000**.  ⇒ *** `ⓐ` CLEARS ON THE
+TERM THAT KNOWS WHERE THE DATA SITS. ***
+
+⛔ ** AND THE FITTED-COEFFICIENT VARIANT AGREES, WHICH THE PRE-REGISTRATION REQUIRED BEFORE ANY EXIT. **
+$\beta$ and $\gamma$ re-estimated on every draw (primary) and held at their measured values (check) give the
+**same verdict on all three**.  *So none of the clearance is the regression chasing noise.*
+
+⛭⛭ ** SO THE MEASURED ROW IS "BOTH", WHICH IS THE ORDER'S THIRD LINE AND 66's TO PLACE. **  *`ⓐ` clears,
+which the order reads as DISCHARGES; `ⓑ` clears too, which is the terminating row's condition half-met.*
+⇒ ***I am not choosing between them.  The projections no longer separate: at this bar all three quantities
+carry modulation above instrument noise, and the fork as posed does not discriminate.***
+
+⚠ ** AND THE HONEST SHAPE OF THIS REVISION IS THAT THE OLD BAR WAS NOT MERELY WEAK, IT WAS INFLATED. **
+*Its maxima ran $3.2$–$4.3$ where this one's run $1.0$–$1.9$: the wrong-period amplitudes were carrying the
+signal itself, leaked. **A null built from the same data at neighbouring frequencies is not independent of
+the feature it is scoring**, and that is the general form of the mistake.*
+
+⛭⛭ ** ⓶ AND 70's ROUTED FINDING AGAINST `cc66.62` IS AMENDED, NOT REJECTED. **  Band 1 is $q \in [0.85,
+1.55)$.  The locator's four **peak** anchors sit at $q = 0.736, 1.778, 2.703, 3.751$ -- *none inside*.  But
+`C17_the_instrument_already_carries_both` states the instrument carries **"acoustic peak and trough positions
+to $0.5\%$ across $P_1$--$P_4$"**, and **trough 1 sits at $q = 1.360$, inside band 1**.  ⇒ *** 70's FACTUAL
+CLAIM IS CORRECT AND THE PEAK-ONLY READING WOULD HAVE BEEN A DODGE. ***
+
+⇒ ** The qualifier: the locator LOCATES inside band 1 and MEASURES NO HEIGHT there. **  *`anchored()` returns
+$-c_1/2c_0$, a vertex position, and never $c_0$ or $c_2$.  So "makes no amplitude claim at band 1" is true of
+what it reports and was carrying an implication it had not earned -- that the instrument does not reach band
+1 at all. **It does.***
+
+⛔ *No mechanism.  No new candidate.  `cc66.61`'s floor and the band-1 results are finished work and are not
+re-derived.  No basis or aggregation chosen.  No corpus edits.*
+
+  [PASS] ⛔ PATH PROVENANCE: no line-of-sight bank name occurs in the executable body   (the fine banks, the term-mix bank and plik_lite only)
+  [PASS] and nothing is SOLVED and nothing is RUN   (banks on disk)
+  [PASS] the bank this receipt reads is present: `spectra/r6959_eta_cr.npz`   (r6959_eta_cr.npz)
+  [PASS] the bank this receipt reads is present: `spectra/r6941_fine_lcdm.npz`   (r6941_fine_lcdm.npz)
+  [PASS] the bank this receipt reads is present: `spectra/r6941_fine_cr.npz`   (r6941_fine_cr.npz)
+  [PASS] the bank this receipt reads is present: `spectra/r6975_mix_lcdm.npz`   (r6975_mix_lcdm.npz)
+  [PASS] ⛔ THE PRE-REGISTRATION IS ON DISK AND WAS COMMITTED BEFORE THE WORKING SCRIPT   (PREDICTION.md)
+  [PASS] ⚠⚠ AND IT PRE-REGISTERED THE EXACT OUTCOME THIS REVISION FOUND, IN THE WORDS USED FOR IT -- that a bar worth one in four failing something by one unit is equally capable of passing it   (the reversal was tabled before the run, not rationalised after)
+  [PASS] and it fixed the per-draw / held-coefficient question BEFORE the run, because ⓑ and ⓒ are built with fitted coefficients where the arm's excess is not   (cc66.65's own guard applied again)
+  [PASS] and it made reproducing 70's instrument a GATE before anything rested on it   (the bar is 70s or nothing is read)
+  [PASS] ⛔ and it says plainly that the weak part of `cc66.65` was the BAR this seat chose, not the arithmetic gate it was pleased with   (the seat names its own weak point before the result is known)
+
+====================================================================================================
+  ⛔ THE GATE: IS THIS 70's INSTRUMENT?
+----------------------------------------------------------------------------------------------------
+    arm 7.3038;  0 of 2000 reach it;  null max 2.344
+  [PASS] ⛭ 70's RESULT REPRODUCES: the arm's comb clears an instrument-noise null of 2,000 draws with none reaching it, and the null's maximum matches 70's 2.54 to within seed scatter   (7.3038, 0 of 2000, max 2.344 against 70's 2.54)
+
+  ⛭⛭⛭ ⓵ THE THREE PROJECTIONS AGAINST THE BAR THAT CAN CARRY THEM
+----------------------------------------------------------------------------------------------------
+    quantity                                  amp  null med  null max  # >= amp        p
+    ⓐ term mix own cost                     4.238     0.839     1.874         0   0.0005
+    ⓑ arm excess it does NOT explain        4.005     0.681     1.416         0   0.0005
+    ⓒ the 45% it misplaces                  1.482     0.451     1.029         0   0.0005
+  [PASS] ⛭⛭⛭ ALL THREE CLEAR, with none of 2,000 draws reaching any of them   (ⓐ 4.238 vs max 1.874 (2.26x); ⓑ 4.005 vs max 1.416 (2.83x); ⓒ 1.482 vs max 1.029 (1.44x))
+  [PASS] ⛔ AND THE MARGINS ARE NOT ROUNDED TOGETHER: `ⓐ` and `ⓑ` clear by more than double their null's maximum and `ⓒ` by 1.44x, which the header states separately rather than in one sentence   (ⓐ 2.26x; ⓑ 2.83x; ⓒ 1.44x)
+  [PASS] ⛔⛔ SO `ⓐ` CLEARS AND `cc66.65`'s CENTRAL READING IS WRONG -- it failed the old bar by ONE period of 110, and the header says so in the pre-registered words rather than softening it   (the term mix's own cost IS combed)
+  [PASS] ⛔ AND `ⓐ`'s CLEARANCE IS NOT THE NOISE-FREE TERM TALKING: its quadratic term has no noise in it to fail and is reported as no evidence, while its CROSS term -- the part that knows where the data sits -- clears with 0 of 2,000   (quadratic 0.851 vs 0.794 +/- 0.0055 (noise-free); cross 3.399 vs median 0.354, 0 of 2000)
+  [PASS] ⛔ AND THE HELD-COEFFICIENT VARIANT AGREES ON BOTH FITTED QUANTITIES, so none of the clearance is the regression chasing noise -- which the pre-registration required before any exit   (ⓑ 0 of 2000; ⓒ 0 of 2000)
+  [PASS] ⛭⛭ AND THE MEASURED ROW IS "BOTH", REPORTED AS SUCH RATHER THAN CHOSEN BETWEEN: at this bar the projections no longer separate, and the fork as posed does not discriminate   (66's to place)
+  [PASS] ⚠ AND THE OLD BAR IS DIAGNOSED RATHER THAN JUST RETIRED: its maxima ran 3.2--4.3 where this one's run 1.0--1.9, so it was INFLATED by the signal leaking into neighbouring frequencies   (this null's maxima 1.03--1.87 against the old 3.2--4.3)
+
+  ⛭⛭ ⓶ THE LOCATOR'S ANCHORS AGAINST BAND 1
+----------------------------------------------------------------------------------------------------
+    band 1: q in [0.85, 1.55);  peaks at 0.736, 1.778, 2.703, 3.751
+                troughs at 1.360, 2.238, 3.366, 4.344
+  [PASS] ⛭ 70's FACTUAL CLAIM IS CORRECT: no PEAK anchor is inside band 1, but the FIRST TROUGH is   (0 of 4 peaks; trough 1 at q = 1.360)
+  [PASS] ⛔ and the peak-only reading would have been a DODGE, because the corpus's own characterisation of this instrument carries BOTH -- `C17` says "acoustic peak and trough positions"   (the instrument carries troughs too)
+  [PASS] ⛭⛭ SO THE ANSWER IS AMEND, THE MIDDLE OF THE THREE FIXED IN ADVANCE: the locator returns a vertex POSITION and never a height, so `cc66.62`'s claim survives in substance -- but it was carrying an implication it had not earned, that the instrument does not reach band 1 at all   (it LOCATES inside band 1 and MEASURES no height there)
+  [PASS] ⛔ AND ⓷ HOLDS: no mechanism, no new candidate, and `cc66.61`'s floor and the band-1 results are left finished   (finished work is left finished)
+
+====================================================================================================
+GATES: ALL PASS
