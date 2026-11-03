@@ -1,0 +1,112 @@
+r7660 (60) -- A COLD READ OF l.1938-1955 AND THE FLOOR SENTENCE, ON THE OBJECT **AND THE ROW**.
+
+⛭ WHY THE ROW IS THE NEW PRECONDITION.  `r7658` enforced same-procedure-same-run on both sides of a
+comparison, and that held.  It did NOT enforce which ROW of a multi-row table a figure is read from,
+and that is exactly where its one reported defect went: I read the kernel receipt's NAMESAKE rows and
+reported `-15.4` unsupported on the arm of record.
+
+⛔ AND THE RESOLUTION WAS A TREE, WHICH IS THIS FILE'S FIRST RULE.  The arm-of-record running-phase row
+did not exist in the receipt I banked: `cc66` added it in `3630fff1`, which is not an ancestor of the
+`main` that bank was taken against.  So `r7658`'s reading and `r7659`'s correction were both right,
+about different trees.  ⌗ *A cold read is a statement about a TREE and it has to name the tree* --
+so every verdict here prints the commit it was read on, and `runs/TREE.txt` records it, written BEFORE
+the banks were made.
+
+WHAT THIS FILE CHECKS, in order:
+  ⓐ  the forbidden-route paragraph and the four-ceiling sentence, every figure against the ARM OF
+     RECORD row, with the NAMESAKE row printed beside it so the row the paper uses is visible
+  ⓑ  the floor sentence, including the two clauses `cc66` routed last turn and `69` took
+  ⓒ  the finding: the receipt's own paper-reader, seven groups, and the three that have gone BLIND
+
+⛔ EVERY VERDICT IS A FUNCTION OF ITS STATED VALUE AND A DECOY MUST FLIP IT.  ⌗ *`r7656`'s pool
+decoy-RATE control is deliberately not carried over: there is no pool here.  Saying so each time is
+cheaper than rediscovering it.*
+
+================================================================================================================
+  r7660 (60) -- two stretches, the object AND the row, on a named tree
+================================================================================================================
+
+ⓐ  ① THE TREE EVERY VERDICT BELOW IS READ ON, recorded before the banks were made
+      worktree: 5246b45bf84f41489d82e2eeaedad56280e361a9
+      dirty: 1 path(s)
+      9f248b592a1f006b08539f828dd04b3f3d4bfa95  P15_the_licensed_configuration_moves_neither_statistic_and_t
+      3630fff16c2cfff5f2a5252bab7ee9c3a1f232ce  P15_the_kernels_phase_difference_between_the_arms_is_four_or
+      the tree this run is reading from NOW: 378d5bfff1eebea57a1e4050a3d570d5b8e5119d
+  [PASS] ⓐ① ① the tree is NAMED, with the commit of each receipt file the verdicts are read from, so a later reading can tell whether it disagrees with this one or with a different tree
+  [PASS] ⓐ② and nothing the verdicts read from was dirty when the banks were made (1 path(s), this revision's own output directory)
+
+ⓑ  THE FORBIDDEN-ROUTE PARAGRAPH (l.1938-1955) -- the ARM OF RECORD row, the namesake beside it
+      row                                c       +-  move/err    |c| %  cross   run   chi2       l_A
+      ARM OF RECORD, banked        -0.0670   0.0086      0.00      0.0     32    16   2.64   302.943
+      ARM OF RECORD, forbidden     -0.0092   0.0085      6.71    -86.3     38    12   1.33   301.400
+      namesake, forbidden          -0.0069   0.0083      6.70    -89.2     44    12   1.47   301.380
+      ARM OF RECORD, control       -0.0075   0.0083                                   301.375
+
+      the paragraph's own figures, each against the ARM OF RECORD row:
+         error            REPRODUCES
+         coef_licensed    REPRODUCES
+         coef_forbidden   REPRODUCES
+         fall             REPRODUCES
+         crossings        REPRODUCES
+         run              REPRODUCES
+         chi2             REPRODUCES
+         scale            REPRODUCES
+  [PASS] ⓑ① every figure the paragraph prints reproduces on the ARM OF RECORD row -- not on the namesake row, which for the forbidden route reads -0.0069, 44, 12, 1.47 and 301.380 instead
+  [PASS] ⓑ② ⑵ FAILABLE: moving the forbidden coefficient one digit makes that pin fail while the rest stand, so each figure enters its own test
+  [PASS] ⓑ③ AND THE ROW MATTERS, WHICH IS THE ORDER'S CONDITION: the same figures read off the NAMESAKE row would fail -- its crossings are 44 against the paper's 38 and its longest run 12 against 12's twin at a different chi2 of 1.47
+
+      the four reading ceilings on the ARM OF RECORD: specified [9, 9, 9, 16]  forbidden [7, 8, 8, 12]
+  [PASS] ⓑ④ ⑶ THE RANGE IS SCORED CEILING BY CEILING, not at its extremes: the paper's `9, 9, 9, 16` and `7, 8, 8, 12` match element for element
+  [PASS] ⓑ⑤ and `every one of them with a longest run of seven to nine bins` holds at the three ceilings below the fourth, element by element, on BOTH configurations ([9, 9, 9] and [7, 8, 8])
+  [PASS] ⓑ⑥ ⑵ FAILABLE: a stated band of seven-to-eight would FAIL on the specified runs, so the band is tested and not recited
+
+ⓒ  THE FLOOR SENTENCE (l.2393-2402) -- on the ARM OF RECORD row that now exists
+      arm of record -15.4073 deg = 19.7% of the residual -78.3
+      its control   -15.4483 deg -- the two agree to 0.27%
+  [PASS] ⓒ① `-15.4 degrees` reproduces on the ARM OF RECORD row (-15.4073, which rounds to -15.4) -- the row `r7658` could not read because it did not yet exist
+  [PASS] ⓒ② `a fifth of the residual` holds at 19.7% = 1/5.08
+  [PASS] ⓒ③ `common to the two arms to three tenths of a per cent` holds at 0.27% on THIS row, where on the namesake pair it is a tenth -- so the paper's figure is the arm's and the looseness I reported at `r7658` was the namesake pair's
+  [PASS] ⓒ④ ⑵ FAILABLE: a stated `three hundredths of a per cent` would fail at 0.27%
+
+      the two clauses cc66 routed last turn and 69 took:
+         the range: the receipt asserts the old `9 to 24` was the old residual's, and against -78.3 the range is 11 to 30; the paper now prints 11 to 30
+         the endpoints: the receipt asserts `under a tenth of a point` is true of THREE conventions and false across the half-maximum edges: True; the paper now says exactly that
+  [PASS] ⓒ⑤ both routed corrections are IN THE PAPER on this tree -- `11` to `30` per cent, and the three endpoints separated from the half-maximum edges
+
+ⓓ  ⑫ THE FINDING -- THE RECEIPT'S OWN PAPER-READER, SEVEN GROUPS, AND WHAT THE REWORDING DID
+  [PASS] ⓓ①' every one of the receipt's 7 reader groups is accounted for, by NAME taken from the receipt rather than scraped from its output: 2 found, 5 not
+      the receipt prints 5 of its 7 groups as NOT FOUND: ['coef, forbidden', 'coef, licensed', 'shape, forbidden', 'shape, licensed', 'the ceiling']
+      and finds ['the fall', 'the scale']
+
+      group                receipt   an independent pattern on the CURRENT paper
+      coef, forbidden    NOT FOUND   FOUND ['6.7', '-0.0670', '0.0086', '-0.0092', '0.0085']  -> BLIND
+      coef, licensed     NOT FOUND   also absent  -> WITHDRAWN
+      shape, forbidden   NOT FOUND   FOUND ['32', '38', '16', '12', '2.64', '1.33']  -> BLIND
+      shape, licensed    NOT FOUND   also absent  -> WITHDRAWN
+      the ceiling        NOT FOUND   FOUND ['900', 'seven', 'nine']  -> BLIND
+
+      ⇒ 2 FOUND, 3 BLIND, 2 WITHDRAWN.
+      ⌗ The two WITHDRAWN are the licensed half: the paragraph no longer prints a measured licensed
+      null, it says `moves neither statistic by construction` -- which is THE RECEIPT'S OWN
+      RECOMMENDATION ① taken, so NOT FOUND is the right answer there.
+      ⛔ The 3 BLIND are figures the paper STILL PRINTS, missed on three small rewordings:
+      `the same coefficient ... to` became `the contrast coefficient ... from ... to`; `the longest
+      run falls` became `the longest run OF ONE SIGN falls`; `a longest run of X or Y bins` became
+      `X TO Y bins`.  And the figures recovered are the ones the receipt's own table measures.
+      ⑭ and the recovered figures AGREE with the receipt's own arm-of-record table: True
+  [PASS] ⓓ① ⑬ AS REGISTERED: 2 FOUND, 3 BLIND, 2 WITHDRAWN
+  [PASS] ⓓ② ⑭ THE NEGATIVE IS TESTED AND NOT REACHED: every figure recovered from the current wording EQUALS the receipt's own measured value, so the blindness costs no claim that is wrong -- only a check that is no longer being made
+  [PASS] ⓓ③ ⑮ and BLIND is told from WITHDRAWN by a pattern printed beside each verdict, so the distinction can be checked rather than believed
+
+      ⇒ ⛔ AND THE CONSEQUENCE, WHICH IS THE WHOLE FINDING: the receipt tolerates a missing read by
+      short-circuit -- a `None` satisfies the conjunction -- which was the RIGHT design when the
+      sentence might be withdrawn.  For these 3 the sentence was not withdrawn, only reworded, so a
+      guard built to compare the paper's digits against the receipt's is comparing nothing, AND IT IS
+      GREEN.  ⌗ *A guard that cannot fail on the data it is given is not a guard -- my own standing
+      lesson, found this time in another seat's receipt and caused by neither seat's mistake: cc66
+      wrote the reader, 69 reworded the sentence, and the tolerance that made the reader safe is what
+      made the blindness silent.*  ⑯ No correction is proposed and nothing is edited; the three
+      repointed patterns are routed as a diff.
+
+================================================================================================================
+  0 failure(s)

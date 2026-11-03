@@ -169,3 +169,77 @@ nothing of it is edited** — the three repointed patterns below are a routed *d
 `69`'s wording is not criticised: it is better than what it replaced, and the reader is what has to
 follow it. *And this is not a red: the gate is green and stays green. It is a check that stopped
 checking, which is the one thing a green gate cannot tell you.*
+
+---
+
+# `r7660+60.3` — SCORED. ⑬ AND ⑭ HELD; AND MY OWN PARSER WOULD HAVE UNDERSTATED THE FINDING BY TWO
+
+**⑬ HELD exactly: 2 FOUND, 3 BLIND, 2 WITHDRAWN.** **⑭'s negative is tested and not reached** — every
+figure recovered from the current wording **equals** the receipt's own arm-of-record value, so the
+blindness costs no claim that is wrong, only a check that is no longer made. **⑮ holds**: each verdict
+prints the pattern it was decided by. **⑧ stays a MISS** and ⑨'s negative stays reached for the
+word-claims: all of them check out on the rows their sentences name.
+
+## ⛔ AND THE INSTRUMENT FAILED ONCE MORE, IN THE DIRECTION THAT WOULD HAVE LOOKED SAFE
+
+The first version of the block that reads the seven group names **scraped them with a regex over the
+receipt's printed lines**. The regex swallowed the table's banner into one "name" and glued two others
+onto the lines above them, so **two groups fell out of the recovery table and were scored
+`WITHDRAWN`**. It reported **1 BLIND where there are 3** — it *understated* the finding, and the
+output looked orderly while doing it. Fixed by taking the seven names **from the receipt** instead of
+from its output, with a hard stop if any one is missing.
+
+⌗ **Fourth form of the same lesson, and the first in the quiet direction.** *The sweep that measured
+its own reach; the matcher that measured its own window; the search coarser than its distinction; and
+now a parser loose enough to mis-read its own input.* **The first three inflated a result. This one
+hid most of one** — which is worse, because nothing about the output invited a second look.
+
+**Running total of this seat's own rule conditions corrected by measurement or by another seat rather
+than by reading, across `r7648`–`r7660`: thirty-two.**
+
+---
+
+# `r7660+60.4` — ⑫ CONFIRMS IN A SECOND RECEIPT, AND THERE IT IS A CI RED: THE DIFFERENCE IS WHETHER THE READ WAS REGISTERED AS A PIN
+
+**Found by running the gate, not by my instrument, and that is the point.**
+`check_paper_pins_present` is **red on `origin/main` at `9f248b59`** — 1545 PAPER rows, 138 absent,
+**one NEW key**, identical on my branch. The key is the **kernel receipt's reader for the floor
+sentence's range clause**:
+
+```
+"moving under a tenth of a point, and runs from \$(\d+)\$ to \$(\d+)\$ per cent
+ as the range is taken from \$(\d+)\$ or from \$(\d+)\$ instead"
+```
+
+**And the figures are all still in the paper**: an independent pattern recovers `11`, `30`, `200`,
+`50`. The pattern misses because `r7659`'s rewording **inserted the endpoint clause between its two
+halves** and changed *"moving under a tenth of a point, and runs"* to *"it moves under a tenth of a
+point between the three endpoints … and by eight points across the … edges, … and runs"*.
+
+**⇒ So this is `⑫` again — a reader blinded by the same rewording — in a second receipt.** And the
+comparison is the sharpest thing this revision has:
+
+| | the licensed receipt's three | the kernel receipt's one |
+|---|---|---|
+| figures still in the paper | yes | yes |
+| the pattern | stale | stale |
+| registered as a PAPER pin | **no** | **yes** |
+| what happened | **silent, gate green** | **CI red on `main`** |
+
+⌗ **The difference between a blindness that is caught and one that is silent is whether the read was
+registered as a pin.** *Three reads that were not registered went quiet behind a passing conjunction;
+the one that was registered reddened the trunk within the hour. That is an argument for the ratchet,
+not against it — and it is why the licensed receipt's three are worth routing even though nothing is
+failing.*
+
+**⑰ AND THIS RED IS NOT MINE AND I AM NOT TAKING THE GATE'S THIRD REMEDY, which is a change from
+`r7658+60.4`.** There the absent literal was a sentence `cc66` had **deliberately** routed for
+rewording, and the receipt said so in writing, so listing it recorded a true thing. **Here the figures
+are present and the pattern is merely stale**, so listing it as *"deliberately absent"* would record a
+**falsehood** and would silence a gate that is doing exactly its job. *I ran `--update`, read the one
+row it added, and reverted it.* The repoint is `cc66`'s and is routed with its diff; the remedy that
+exists for me is to say so once, which is what the PR comment does.
+
+**Running total of this seat's own rule conditions corrected by measurement or by another seat rather
+than by reading, across `r7648`–`r7660`: thirty-two, and this one is not among them — it is a red I
+did not cause and declined to silence.**
