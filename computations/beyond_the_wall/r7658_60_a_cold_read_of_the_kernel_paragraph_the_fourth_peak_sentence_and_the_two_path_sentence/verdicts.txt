@@ -1,0 +1,150 @@
+r7658 (60) -- A COLD READ OF THREE STRETCHES OF P15, ON THE SAME OBJECT AND THE SAME LOCATOR.
+
+⛭ WHAT `r7657` ORDERED, AND WHY THE FIRST RULE OF THIS FILE IS A PRECONDITION AND NOT A PREFERENCE.
+At `r7656` I set the arm's peaks from one locator against the sky's quartet from ANOTHER, and reported
+the difference as the paper's.  Two of my three verdicts were artefacts of that basis.  So here:
+
+  ⛔ NO COMPARISON IS SCORED UNLESS BOTH OF ITS SIDES COME OUT OF THE SAME PROCEDURE IN THE SAME RUN.
+     A reading whose two sides come from different procedures is `MIXED-BASIS` and is reported as
+     UNSCOREABLE -- in either direction, because a mixed basis manufactures a disagreement as easily
+     as it hides one.
+
+⌗ *An identification has to be checked on the loci the object itself distinguishes.*
+
+AND WHAT THIS FILE IS ACTUALLY FOR.  `r7656` established that no ratchet of this corpus watches a
+quantity stated in WORDS; the sentences carrying them score green on their decimals.  These three
+stretches are dense with them -- "over three orders of magnitude", "nearly nine tenths", "a fifth",
+"two thirds", "by more than either differs from the sky" -- and every one is checked here against the
+figures its own sentence prints, arithmetically.
+
+⛔ AND EVERY VERDICT IS A FUNCTION OF ITS STATED VALUE, WITH A DECOY THAT MUST FLIP IT (arm ⑭).  At
+`r7656` I shipped a check that compared a value to itself and could not fail.  The decoy is the control
+for that, and it runs every time.  ⌗ *The pool decoy-RATE control of `r7656` is deliberately not
+carried over: it measured a pool search, and there is no pool here.  Carrying it over would be the
+same error one layer up.*
+
+EVERY NUMBER BELOW IS PARSED OUT OF THE BANKED RECEIPT OUTPUT IN `runs/`, never typed in, so a changed
+printing fails the parse loudly instead of scoring a stale figure.
+
+================================================================================================================
+  r7658 (60) -- three stretches, one locator, the words checked as well as the figures
+================================================================================================================
+
+ⓐ  ① THE MATCHED LOCATOR -- `PART 4B`, where BOTH sides of every comparison come from ONE run
+      the sky              220.98    533.79    814.79   1121.85
+      the arm of record    220.03    536.25    811.59   1125.11   offsets -0.95 +2.46 -3.20 +3.26
+      the control          220.44    537.29    811.06   1123.99   offsets -0.54 +3.50 -3.73 +2.14
+  [PASS] ⓐ① all three rows are parsed from ONE receipt's ONE run, so every offset below is same-basis
+
+      (A) "the first three peaks within three and a quarter multipoles"   worst 3.20  -> HOLDS
+      "under three and a half multipoles at each"                        worst 3.26  -> HOLDS
+      (B) "the fourth a third of a per cent high"                        0.291%  -> HOLDS  (0.333% stated; equal at one sig. fig.)
+      "the fourth peak sits 1.4 of the sky's own locating spreads high"  1.381  -> HOLDS
+      "two thirds of that offset shared with the control"                0.656  -> HOLDS
+  [PASS] ⓐ② ② r7657's REQUEST DISCHARGED: (A) and (B) are confirmed against PART 4B's own printed rows, and r7656's FAIL on (B) was an artefact of my basis, not the paper's
+  [PASS] ⓐ③ and the two claims the same sentence makes about the fourth peak hold on the SAME rows -- 1.4 spreads (1.38) and two thirds shared (0.66)
+  [PASS] ⓐ④ ⑭ FAILABLE: a bound of 2.00 makes (A) fail, 0.29% makes (B)'s stated value the measured one, 3.0 makes "at each" fail, and a third makes the shared fraction fail
+
+ⓑ  THE KERNEL PARAGRAPH (l.2378-2398) -- every figure against the ARM OF RECORD rows
+      residual the paragraph names        -78.3
+      tilts as run                        1.015066 and 0.96
+      as run                              +0.33081 deg   2.47 orders below
+      at a common tilt                    +0.04106 deg   3.37 orders below
+      the kernel's own running phase      -15.4648 deg
+      r_D/D_M separation                  +0.807 per cent
+      the five endpoints (arm of record)  +0.04875 +0.04106 +0.03736 +0.02829 +0.06256
+  [PASS] ⓑ① every figure the paragraph prints reproduces on the ARM OF RECORD TO HALF A UNIT IN ITS LAST PRINTED DIGIT -- EXCEPT ONE, which ⑰ takes up below: +0.041 (0.04106), +0.33 (+0.33081), the tilts 1.015 and 0.96 (1.015066/0.96) and about 0.8 per cent (+0.807)
+  [PASS] ⓑ② and the paragraph's endpoint RANGE is the exact min and max of the five it is read from: +0.028 = +0.02829, +0.063 = +0.06256
+  [PASS] ⓑ③ "always of one sign" -- all five endpoints are positive on the arm of record (5 of 5)
+
+      THE CLAIMS IN WORDS, on the residual the PARAGRAPH names (-78.3):
+         over three orders of magnitude below it          3.280 orders  -> HOLDS
+         no less than three orders on every convention    3.097 orders  -> HOLDS
+         still over two orders below the residual         2.374 orders  -> HOLDS
+         nearly nine tenths of it the tilt's              0.8759      -> HOLDS
+         a fifth of the residual                          1/5.06       -> HOLDS
+  [PASS] ⓑ④ every derived WORD in the paragraph holds on the residual the paragraph names, and no ratchet of this corpus was watching any of them
+
+      ⌗ AND THE SAME WORDS ON THE RECEIPT'S OWN RESIDUAL (-96.6), which is why its text says `a sixth` where the paragraph says `a fifth`:
+         over three orders   3.372        a fifth/a sixth   1/6.25
+  [PASS] ⓑ⑤ ⑧ SCORED A MISS, AND ⑨'S NEGATIVE IS REACHED: both wordings are RIGHT, each on its own denominator -- the receipt's `a sixth` on -96.6 (1/6.25) and the paragraph's `a fifth` on -78.3 (1/5.06) -- so only the filename is stale, and a filename is not a claim
+  [PASS] ⓑ⑥ and the receipt ENUMERATES both residual states as a disjunction rather than pinning one, which is why it was right before I looked
+
+ⓑ'  ⑰ THE ONE FIGURE A PIN OF MINE CAUGHT -- `-15.4`, against every value either bank prints
+      the sentence: "the kernel's own running phase is -15.4 degrees ... common to the TWO ARMS"
+      the gate's allowance for a figure printed to one decimal: 0.05
+
+      route                  arm           value   to 1 dp  distance  verdict
+      closed-form window     arm        -15.4648     -15.5    0.0648  OUTSIDE half a unit
+      closed-form window     control    -15.4507     -15.5    0.0507  OUTSIDE half a unit
+      full Bessel sum        arm        -15.4532     -15.5    0.0532  OUTSIDE half a unit
+      full Bessel sum        control    -15.4391     -15.4    0.0391  inside
+
+      ⇒ VERDICT: OUTSIDE THE PRINTED DIGIT -- 1 of the 4 rows is inside the allowance, and it is
+      a CONTROL on one of the two routes, where the sentence names the arms in common.  The correctly rounded
+      value of every arm row is -15.5.  ⌗ *Right to about half a per cent and wrong at the digit
+      it prints -- which changes nothing the paragraph argues, since `a fifth` holds at either value
+      (1/5.08 and 1/5.06).*
+  [PASS] ⓑ'① ⑰ AS REGISTERED: the paper's -15.4 is OUTSIDE half a unit of every ARM value either route prints (nearest 0.0532 against an allowance of 0.05), and the only row inside it is a control on one route
+      ⑲ scanned both banks COLUMN-AWARE for an ARM value inside 0.05 of -15.4: 0 found   (the line-level version of this scan found 1, and it was the CONTROL's)
+  [PASS] ⓑ'② ⑲ THE NEGATIVE IS SEARCHED ACROSS BOTH BANKS, COLUMN-AWARE, AND NOT REACHED: not one ARM value in either output lies inside the allowance of the paper's figure (0 found).  The line-level scan that preceded this one returned a CONTROL value and would have reported the negative reached -- so the granularity of the search is part of the result
+  [PASS] ⓑ'③ and the finding does not touch the argument: `a fifth of the residual` holds at the paper's -15.4 (1/5.08) and at the arm's -15.5 (1/5.06) alike, so this is a printed digit and not a result
+
+      ⑱ AND THE SAME SENTENCE IS LOOSER THAN ITS RECEIPT THE OTHER WAY: it says the two arms
+      agree "to three tenths of a per cent" where the receipt prints 0.09% -- true, and weaker by 3.3x.
+  [PASS] ⓑ'④ ⑱ the `three tenths of a per cent` claim HOLDS and is LOOSE: the measured agreement is 0.09%, inside the stated 0.3% by a factor of 3.3, and it is reported as a weaker statement rather than folded in with ⑰'s mis-printed digit
+
+ⓒ  ⑪ THE ONE CLAUSE WHOSE FIGURE AND WHOSE SUPPORT ARE TWO DIFFERENT PAIRS
+      the paragraph:  "+0.041 degrees ... with the closed-form window and the full
+                       spherical-Bessel sum agreeing to the fifth decimal place"
+      the receipt's two-route section is on ITS OWN pair:
+         closed-form window  arm-control -0.01405 deg
+         full Bessel sum     arm-control -0.01407 deg   -- they differ by 2e-05, one unit in the FIFTH decimal
+      is there ANY two-route row on the ARM OF RECORD in this output?  NO
+      ⇒ VERDICT: MIXED-BASIS -- the clause's figure is the arm of record's
+      (+0.041), and the agreement it cites is established on the pair at -0.01405.  The
+      agreement itself is REAL and holds exactly as worded on the pair it was measured on; what is
+      unestablished is that it holds on the pair the sentence names.  ⌗ *This is the defect `r7657`
+      caught in me, one level up, and I looked for it only because it did.*
+  [PASS] ⓒ① ⑪ AS REGISTERED: the two-route agreement is MIXED-BASIS -- measured on the pair at -0.01405 and attached to the figure at +0.041, with no two-route row on the arm of record anywhere in the output
+  [PASS] ⓒ② and the agreement IS true as worded on the pair it was measured on: the two routes differ by 2e-05, one unit in the fifth decimal place, so this is a question of WHICH PAIR and not of whether the agreement holds
+  [PASS] ⓒ③ ⑫ THE NEGATIVE IS REACHABLE AND IS SHOWN TO BE: the same scan run against a synthetic line that DOES name a route beside the arm of record returns True, so the NO above is the output's answer and not a scan that could never say YES
+
+ⓓ  ⑬ A PASSING GATE WHOSE SENTENCE NO LONGER EXISTS
+      the receipt prints, of l.2387-2388:  NO LONGER CARRIES THAT SENTENCE -- reworded since r7655
+      and four lines below, Ⓗ④ asserts:    no endpoint convention reproduces l.2388's `0.14 degrees` or its `no less than 2.8 orders`  [OK]
+      does the paragraph still carry `0.14 degrees` or `2.8 orders`?  NO
+      ⇒ So a PASSING gate is asserting a miss against a sentence that has been withdrawn and
+      replaced by `+0.028` to `+0.063` and `no less than three orders`, both of which this file
+      confirms above.  ⌗ *A gate must assert the clause its argument reasons FROM, never the status of
+      a sentence a live row is asking to change.*  The gate is `cc66`'s: it is ROUTED, never edited,
+      and no correction to it is proposed here.
+  [PASS] ⓓ① ⑬ AS REGISTERED: Ⓗ④ passes, its object is gone from the paragraph, and the receipt itself prints that the lines no longer carry the sentence
+
+ⓔ  THE TWO-PATH SENTENCE (l.2079-2082) -- both paths on the CONTROL, through one procedure
+      polarisation  comb 297.0   heights 2.195 / 2.191
+      fluid         comb 296.0   heights 2.392 / 2.766
+      the sky       this locator 2.221 / 2.262   sec:intro's published 2.217 / 2.277
+      "the comb to a part in three hundred, 297.0 against 296.0"  -> a part in 296
+
+      "height ratios differ between them by MORE than either differs from the sky" -- and it is checked on BOTH sky bases, because that is the kind of claim r7656 got wrong:
+         P1/P2 vs this locator  paths 0.197 | pol-sky 0.026 | fluid-sky 0.171   -> HOLDS   (margin 1.15x)
+         P1/P2 vs sec:intro     paths 0.197 | pol-sky 0.022 | fluid-sky 0.175   -> HOLDS   (margin 1.13x)
+         P1/P3 vs this locator  paths 0.575 | pol-sky 0.071 | fluid-sky 0.504   -> HOLDS   (margin 1.14x)
+         P1/P3 vs sec:intro     paths 0.575 | pol-sky 0.086 | fluid-sky 0.489   -> HOLDS   (margin 1.18x)
+  [PASS] ⓔ① both paths and both height pairs come out of ONE receipt on ONE object, the control, so this comparison is same-basis by construction
+  [PASS] ⓔ② the comb agreement between the paths is a part in 296, which is the sentence's `a part in three hundred`
+  [PASS] ⓔ③ and `by more than either differs from the sky` HOLDS on both ratios AND on BOTH sky bases, so the claim survives the change of basis that broke my r7656 readings
+  [PASS] ⓔ④ ⑭ FAILABLE: the same test with the two paths' own difference HALVED fails, so it is a test of the margin and not of the shape
+
+ⓕ  ⑮ THE `1.4011` DEFECT OF `r7656`, FIXED AND TESTED
+      against a receipt line reading `the implementation's own $D_C=14011.456$ Mpc to a part in ...`
+         1.4011 under r7656's reading (mantissa unknown):  DOES NOT
+         1.4011 under the fix:                             reproduces
+  [PASS] ⓕ① ⑮ the fix makes `1.4011` reproduce against `14011.456`, so r7656's one GATE-ONLY exception was my renderer and the exception class was EMPTY
+  [PASS] ⓕ② ⑭ FAILABLE: a figure the text does not carry at any exponent still does NOT reproduce, so the fix did not simply make everything match
+      ⌗ ⑯ AND THAT IS ALL IT IS.  No figure in these three stretches needs this reading, so it
+      is reported as a correction to `r7656` and NOT as a finding of this revision.
+
+================================================================================================================
+  0 failure(s)

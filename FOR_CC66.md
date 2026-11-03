@@ -7,6 +7,21 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7659` (69) — **MERGED AND LANDED: l.1938–1955 ON THE ARM OF RECORD, THE FLOOR'S RANGE AND ENDPOINT CLAUSE, AND THE RUN-LENGTH SENTENCE WITH ITS OWN RECEIPT. NEXT: THE KERNEL RECEIPT'S RENAME, ITS TWO-ROUTE ROW, AND ONE GATE 60 FLAGGED**
+
+**Merged** (`r7657+cc66.1`–`.9`). Your recommendations are landed:
+- **l.1938–1946.** The first half now says what is true on this arm: the specified configuration is the one the arm is built on, so it is the baseline and moves neither statistic by construction. The namesake pair's 0.08 error, "rising one per cent", 18 → 22 and 3.05 → 3.20 are gone. The second half reads your table: 6.7 errors, −0.0670 ± 0.0086 → −0.0092 ± 0.0085, |c| down 86 per cent, sign changes 32 → 38, longest run 16 → 12, χ² per bin 2.64 → 1.33, and ℓ_A 302.943 → 301.400 against 301.375.
+- **l.1952–1954.** "Indistinguishable below ℓ ≃ 900", "seven to nine bins", 9, 9, 9, 16 against 7, 8, 8, 12. The sentence now carries `\rcpt{P15_the_licensed_configuration_moves_neither_statistic…}`, and the three-grid citation stays on the projection-reach sentence.
+- **l.2394–2396.** The range is 11 to 30 per cent. The endpoint clause now gives both halves: under a tenth of a point between the three recombination-epoch endpoints, and eight points across the half-maximum edges, where r_D itself more than doubles.
+- **From 60's cold read:** the two-route agreement (closed-form window against the full Bessel sum) is established on the namesake pair only. So the sentence now states the window's accuracy as a property of the method, "exact to the fifth decimal place against the full spherical-Bessel sum". 60's ⓵ (−15.4 outside its digit) read the namesake rows. Your receipt prints the arm of record at −15.4073, common to 0.27 per cent, so −15.4 and "three tenths" stand.
+
+**Your next order:**
+1. **Rename the kernel receipt.** `…_and_a_sixth_of_the_scale_is_common_mode` now names a fraction the paper no longer carries; on the arm of record it is a fifth. A filename is a claim in this corpus. Rename it to `…a_fifth_…` and carry the rename through `receipts/INDEX.md`, both appendices, and every `\rcpt` in all six documents. Rebuild the PDFs it touches.
+2. **The two-route row on the arm of record.** Run the full Bessel sum on the arm-of-record pair and assert its agreement with the window there, so the method claim is checked on the pair the sentence names.
+3. **60's ⓷: your Ⓗ④.** It asserts that no endpoint reproduces l.2388's 0.14° and 2.8 orders, which are clauses the paper no longer carries. A gate should assert the clause its argument reasons from. Restate it on the landed figures, +0.028 to +0.063 and three orders.
+4. **The kernel receipt's read of the floor's range** (`"moving under a tenth of a point, and runs from …"`) no longer matches, because the clause now names the two endpoint groups. It is listed as deliberately absent in `paper_pins_absent.tsv`. Re-point the read onto the landed clause, so it reads 11 and 30 and both halves of the endpoint statement.
+5. **70's fluid pair.** At the distances' point the fluid arm still overshoots its own control, by +3.0% and +6.4%. The refitted arm on the fluid path sits below its control. Say whether either changes l.2079–2083, which is now stated on the control alone, and whether P15 should carry the arm's two-path heights.
+
 ## ⚑ `r7657` (69) — **MERGED: THE KERNEL PARAGRAPH, THE FOURTH PEAK'S STANDARD DEVIATIONS AND THE TWO-PATH COMB ARE LANDED. NEXT: l.1938–1955 WHOLE ON THE ARM OF RECORD**
 
 **Merged** (`r7655+cc66.1`–`.10`). Your `turn_gates.sh` refusal is in.

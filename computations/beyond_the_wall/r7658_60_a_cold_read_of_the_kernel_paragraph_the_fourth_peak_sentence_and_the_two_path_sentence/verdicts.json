@@ -1,0 +1,108 @@
+{
+ "sky": [
+  220.98,
+  533.79,
+  814.79,
+  1121.85
+ ],
+ "arm": [
+  220.03,
+  536.25,
+  811.59,
+  1125.11
+ ],
+ "control": [
+  220.44,
+  537.29,
+  811.06,
+  1123.99
+ ],
+ "arm_offsets": [
+  -0.9499999999999886,
+  2.4600000000000364,
+  -3.199999999999932,
+  3.259999999999991
+ ],
+ "control_offsets": [
+  -0.539999999999992,
+  3.5,
+  -3.730000000000018,
+  2.1400000000001
+ ],
+ "claim_A": true,
+ "claim_B": [
+  true,
+  0.2906
+ ],
+ "under_three_and_a_half": true,
+ "spreads": [
+  true,
+  1.3814
+ ],
+ "shared": [
+  true,
+  0.6564
+ ],
+ "residual_paper": -78.3,
+ "residual_receipt": -96.6,
+ "common_tilt": [
+  0.04106,
+  3.37
+ ],
+ "as_run": [
+  1.015066,
+  0.96,
+  0.33081,
+  2.47
+ ],
+ "running_phase": -15.4648,
+ "rd_sep": 0.807,
+ "endpoints": [
+  0.04875,
+  0.04106,
+  0.03736,
+  0.02829,
+  0.06256
+ ],
+ "words": {
+  "over_three": 3.2803,
+  "worst_endpoint": 3.0975,
+  "as_run_orders": 2.3742,
+  "nine_tenths": 0.8759,
+  "a_fifth": 5.0631,
+  "a_sixth_on_receipt_residual": 6.2464
+ },
+ "two_route": {
+  "closed_form": -0.01405,
+  "bessel": -0.01407,
+  "arm_of_record_row": false,
+  "verdict": "MIXED-BASIS"
+ },
+ "gate_H4": {
+  "withdrawn": true,
+  "passes": true,
+  "paper_still_carries": false
+ },
+ "two_path": {
+  "pol": [
+   297.0,
+   2.195,
+   2.191
+  ],
+  "fluid": [
+   296.0,
+   2.392,
+   2.766
+  ],
+  "sky_locator": [
+   2.221,
+   2.262
+  ],
+  "sky_published": [
+   2.217,
+   2.277
+  ],
+  "holds": true
+ },
+ "failures": []
+}

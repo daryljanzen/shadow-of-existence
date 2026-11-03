@@ -10,6 +10,51 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ re r7657: CONE CONVERGENCE AND TANGENCY NOW HOLD ON THE MANIFOLD; TANGENCY BOTH HOLDS AND FAILS ON THE TWO-CHART WITNESS (`r7657+71.2`)
+
+`probes/ManifoldCones.lean` has `5748` lines, about `1213` of them new, and `47` axiom prints, all standard. All
+three registered pieces are BUILT.
+
+***Cones.***
+- `mc_cone_kuratowski_N`: on any manifold with C¹ metric in charts, the past cones `∂J⁻(O(τ))` converge to `𝓗⁺` in
+  both Kuratowski limits.
+- It needs fewer hypotheses than the headline: no Hausdorff assumption and no `𝓗⁺ ⊆ M`.
+
+***Tangency.***
+- `mc_tangency_at_N` carries campaign 80's condition to alignment on `N`, read in the chart at the horizon point.
+- `mc_chart_change` gives the transformation law to any other chart.
+- It is stated in chart components, the standard form, not in the cotangent bundle as a space.
+
+***The witness on `Pt`.***
+- Alignment holds for `Θ₀ ∘ φ` at every horizon point, with limit `½ dU`. It is checked in a second chart too.
+- It fails for `Θf ∘ φ`: there the rate is `½`, not `0`.
+- Cones converge to `{U = 0}`.
+
+**So every clause of `prop:causal-alignment` is now on the manifold except `𝓗⁺ = ∂J⁻(𝒥⁺)`.** Its prices stand:
+(A) as a hypothesis, about `250` lines, p `0.85`; (B) a conformal extension, `1500–3000` lines, p `0.35`. I
+recommend (B). Tell me which.
+
+## ⌗ re r7657: CAMPAIGN 88, CONES AND TANGENCY ON THE MANIFOLD, REGISTERED BEFORE ANY LEAN; THE 𝒥⁺ PIECE PRICED (`r7657+71.1`)
+
+Registered in `r7657_71_campaign88/PREDICTION.md`, at about `900` new lines.
+
+***The registered odds.***
+- Cone convergence on `N`: p `0.7`. It reuses campaign 72's topology with campaign 87's `mh_hint`, `mh_hcl` and
+  push-up.
+- Tangency on `N`: p `0.55`.
+- The `Pt` witness: p `0.45`. Alignment holds for `Θ₀ ∘ φ` and fails for `Θf ∘ φ`, so the witness is non-vacuous on both
+  sides.
+
+***The expected stop.*** Stating tangency chart-invariantly: covectors at nearby points must be re-read in one chart
+at `q`.
+
+***The third piece, priced.***
+- **(A)** Take the `I⁻` identity and `𝒥⁺`'s causal properties as hypotheses. About `250` lines, p `0.85`. This assumes
+  most of what it identifies.
+- **(B)** A conformal extension `ι : N → Ñ` with `𝒥⁺ ⊆ ∂ι(N)`, built on the existing kit applied to `Ñ`. Witnessed on
+  `Pt` compactified by `arctan V`. About `1500–3000` lines, p `0.35`.
+- I recommend (B), with (A) as the cheap fallback. Tell me which.
+
 ## ✔ re r7655: P1'S ACCUMULATION CLAUSE NOW HOLDS IN LEAN ON ANY SMOOTH HAUSDORFF SPACETIME MANIFOLD, WITNESSED END TO END (`r7655+71.2`)
 
 `probes/ManifoldHeadline.lean` (`4535` lines, about `385` new, `22` standard axiom prints) builds `mh_causal_alignment_gh_N` from campaigns 84–86. Neither registered stop was hit. The upper limit and Kuratowski step turned out to use no vector-space structure, and the line estimate was badly over-priced. The witness on the two-chart `Pt` discharges every hypothesis, including the two-sided Cauchy hypothesis campaign 85 deferred, and concludes `KLi = KLs = 𝓗⁺ = {U = 0}`. One chart still covers `Pt`; a witness no single chart covers (a flat cylinder) is reported, not built.

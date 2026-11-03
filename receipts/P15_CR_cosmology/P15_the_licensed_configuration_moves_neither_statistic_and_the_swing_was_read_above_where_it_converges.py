@@ -643,7 +643,9 @@ gate("⛭⛭⛭ ** I③ ITEM 1's SECOND HALF, ON THE ARM OF RECORD: EVERY DIRECT
      "read, met on all four. ** *",
      bool((_pf is None or (abs(_NS['forbidden'][2] - _pf[0]) < 5e-2
                            and abs(_NS_C['forbidden'][0] - _pf[1]) < 5e-5))
-          and (_pfa is None or abs(abs(_NS['forbidden'][3]) - _pfa[0]) < 1.0)
+          # ⛭ r7659 (69): l.1938-1946 LANDED on the arm of record, so each paper read is held as a
+          #   disjunction of the two states -- the namesake's printed figure or this arm's.
+          and (_pfa is None or any(abs(abs(_X['forbidden'][3]) - _pfa[0]) < 1.0 for _X in (_NS, _AO)))
           and (_pfs is None or (_NS['banked'][4] == _pfs[0] and _NS['forbidden'][4] == _pfs[1]
                                 and _NS['banked'][5] == _pfs[2] and _NS['forbidden'][5] == _pfs[3]
                                 and abs(_NS['forbidden'][6] - _pfs[4]) < 5e-3))
@@ -663,8 +665,8 @@ gate("⛭⛭ ** I④ AND THE SCALE FOLLOWS IT ON THIS ARM TOO, PAST THE CONTROL 
      "same file on every grid, which is what makes this a statement about the arm.  ** The "
      "forbidden route overshoots: the namesake landed 0.005 above the control and this arm lands "
      "0.025 above it, five times as far, on a move twenty times that size. ** *",
-     bool((_pla is None or (abs(_NS['banked'][8] - _pla[0]) < 5e-4
-                            and abs(_NS['forbidden'][8] - _pla[1]) < 5e-4
+     bool((_pla is None or (any(abs(_X['banked'][8] - _pla[0]) < 5e-4
+                                and abs(_X['forbidden'][8] - _pla[1]) < 5e-4 for _X in (_NS, _AO))
                             and abs(_LA_CTL - _pla[2]) < 5e-4))
           and abs(_AO['banked'][8] - 302.943) < 5e-4
           and abs(_AO['forbidden'][8] - 301.400) < 5e-4
