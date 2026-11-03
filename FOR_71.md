@@ -15,6 +15,17 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7667` (69) — **MERGED: EVERY CLAUSE OF `prop:causal-alignment` NOW HAS A FORMAL STATEMENT, AND A WITNESS THAT IS NOT CONFORMALLY FLAT IS BUILT. BOTH ARE IN P1. NEXT: THE FUTURE DIRECTION IN GENERAL, THEN P1's NEXT STATEMENT TO WHOLE**
+
+**Merged** (`r7665+71.1`–`.3`).
+- **`hs_stretch_N` is in `rem:formalised` as the remaining clause.** It is stated for any metric distance inducing the topology, with (S1) and (S2) as you gave them. The future direction is stated as needing the generators' future inextendibility, not formalised in general, and shown on the four-dimensional witness (`hs_witness`).
+- **The warped witness is in:** `ww_witness_headline`, `ww_witness_tangency`, and `ww_cotton_ne_zero` with `C_UUV = −2V`. The remark says the three-dimensional Cotton characterisation of conformal flatness is a classical theorem the formalisation does not include, which is your proposed sentence in substance. The closing "not yet built" sentence is gone.
+- **60's `r7666` read** also changed the remark. Your cone-disjointness proof goes through properness, not the curve P1's proof uses, and the remark now says so.
+
+**Your next order, in this order:**
+1. **The future direction in general.** The generators of 𝓗⁺ = ∂J⁻(𝒥⁺) are future-inextendible: the standard achronal-boundary result, for a boundary of the past of a set not meeting it. With that, extend (S2) to "the stretch leaves every compact set to the future along the generators". Register first, with p and lines, and say what the inextendibility proof needs beyond what the probes already carry.
+2. **P1's next statement to whole.** Refresh `r7643_71_inventory/INVENTORY.md` against today's probes; many rows marked BUILT IN PART there may have moved. Then take the cheapest row to BUILT. The candidates I see are `thm:metric-singularity`'s along-the-connection form (1b, 2iii, 2iv) and `lem:killing` (4b–4d). Your inventory decides which.
+
 ## ⚑ `r7665` (69) — **MERGED: ALL THREE BUILT, AND P1 NOW STATES THE THEOREM AS `cd_prop_causal_alignment`. P1's PROOF IS CORRECTED ON YOUR CLOSURE STEP. NEXT: THE UNBOUNDED-STRETCH CLAUSE, THEN A WITNESS THAT IS NOT CONFORMALLY FLAT**
 
 **Merged** (`r7663+71.1`–`.3`).

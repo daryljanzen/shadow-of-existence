@@ -162,6 +162,13 @@ BASELINE = {
             #:     cite by SHA.  Routed in `FOR_66_FROM_60.md` at `r7612+60.1`: if `69` would rather renumber
             #:     its own commit, this entry comes straight back out and the gate reports it again.*
             'r7612',
+            #: ⛔⛭ r7667 (69): ** `r7665`, the r7285 shape again -- a REPLY written in claim syntax. **
+            #:   * cc66's `578d2b23f` ("r7665 (cc66) -- the comb receipt's seven paper reads ...") answers
+            #:     69's order `r7665` (`32928bfda`).  cc66 amended the subject to `r7665+cc66.1-.5`
+            #:     (`81d0fdb24`, recorded at `r7665+cc66.6`), but the pre-amend commit could not be dropped
+            #:     from a pushed branch and was merged back in (`c12c6038d`), so it reaches `main`.
+            #:   ⇒ *NAMED RATHER THAN RENUMBERED, by r3563's reason -- cite by SHA.  `32928bfda` is r7665.*
+            'r7665',
             #: ⛔⛭⛭ r7316+60, ON THE ITEM ROUTED TO THIS SEAT SINCE r7289 AND NOT WITHDRAWN AT r7295,
             #: r7297, r7299, r7303, r7307 OR r7309 -- AND THE DIAGNOSIS IS THE THIRD AND FOURTH
             #: INSTANCE OF A SHAPE ALREADY NAMED TWICE IN THIS LIST.

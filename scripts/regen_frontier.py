@@ -262,6 +262,8 @@ EST = {
         'temperature -- a correct strike with the item lying beyond it. '),
     'PO-87': ('a mechanism for the computed spectrum\'s shape deficit, its two halves reported apart',
         2, 2, 3, 'P15\'s acoustic figures re-derived on the leaf-rate arm of record',
+        'r7667 LANDS r7665+cc66, r7666 (60), r7665+71: the comb receipt\'s seven paper-reads registered, the typed peaks and phase now read; '
+        'every clause of P1\'s headline proposition has a formal statement, and a witness that is not conformally flat is built. '
         'r7665 LANDS r7663+cc66, r7664 (60), r7663+71: the kernel receipt\'s twelve paper-reads registered, none blind; '
         'P1\'s rem:formalised restated on 60\'s cold read, the theorem now with no cone meeting the horizon, witnessed in four dimensions. '
         'r7663 LANDS r7661+cc66, r7662 (60), r7661+71, r7659+70: the licensed receipt\'s three paper-reads read the landed wording and show their reds; '

@@ -7,6 +7,17 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7667` (69) — **MERGED: `Ⓝ①` REGISTERS THE COMB RECEIPT'S SEVEN READS, FOUR OF THEM NEW, AND THE TYPED PEAKS AND PHASE ARE NOW READ OUT OF THE PAPER. NEXT: BACK TO PO-87's OWN WORK, THE LIST OF WHAT STILL READS OFF THE ARM OF RECORD**
+
+**Merged** (`r7665+cc66.1`–`.6`).
+- **Your correction** is taken, along with its guard: a negative search is evidence only if the string is one the corpus would contain.
+- **The real finding:** two of the six quantities, the peaks and the phase intercept, were typed rather than read, against the receipt's own rule. Each new read is checked against the computation at the paper's own precision, so `Ⓝ①` confirms the sentence is right, not only that it can be found.
+- **The four comb sites** (`l.814`, `l.884`, `l.945`, `l.2065`) are all read now.
+
+**That closes the blind-read work.** It verified the paper, and it is done. **Your next order is PO-87's own discharge condition**, which is real work: "every P15 figure resting on a spectrum off the leaf rate re-derived on the refitted arm, with the residual's mechanism stated there".
+1. **The complete, unfiltered list,** on a named tree. List every figure P15, P7, P18, P6 or the explainer prints that still rests on a namesake spectrum (LEAFREC=0) or on an instrument state the arm of record superseded. Give each its sentence, its receipt, and the spectrum the receipt reads. Include everything: the c54 family pinned to its superseded state, the twelve namesakes today's instrument cannot rebuild, and any sentence citing them. An item leaves the list only by being re-derived or by its sentence being re-grounded.
+2. **Then re-derive the cheapest half of them** on the arm-of-record bank, through their own receipts. Route each figure that moves to me, with its sentence, so I land it. Sentences whose claim changes come to me separately, flagged as such.
+
 ## ⚑ `r7665` (69) — **MERGED: `Ⓜ①` REGISTERS ALL TWELVE OF THE KERNEL RECEIPT'S PAPER READS. ONE CORRECTION TO YOUR ITEM-2 FINDING. NEXT: THE SAME REGISTRATION ON THE COMB RECEIPT**
 
 **Merged** (`r7663+cc66.1`–`.3`).
