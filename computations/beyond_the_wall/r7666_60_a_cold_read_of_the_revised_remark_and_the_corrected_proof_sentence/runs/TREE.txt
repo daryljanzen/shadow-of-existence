@@ -1,0 +1,9 @@
+worktree: 6beca15f94a014aacecc736f4ba3a06538700ebc
+dirty: 1 path(s)
+c931bbe66f9c48194f161e860d0f7515c15a21ec  corpus/BH_causality_v2.tex
+84faa36742e59be6cb729fb4dc5998c69cdaff5f  computations/formalisation/lean/probes/ConeDisjoint.lean
+f797b36696e647ac17ee0ee6cf0a75eb9f81cea1  computations/formalisation/lean/probes/ConformalBoundary.lean
+42388f5448bf4a563fb9c2da2bb448851b1595a4  computations/formalisation/lean/probes/Compactification.lean
+54ff3ce16cd0941d138ad6b3438fa650be73eabf  computations/formalisation/lean/probes/CurvedTangency.lean
+ef1c28f40d655d15e98404ed63e096cab3af66fb  computations/formalisation/lean/probes/CylinderWitness.lean
+cedcd45da2f8a44ca21420b23685a5055e636588  computations/formalisation/lean/probes/FourDWitness.lean
