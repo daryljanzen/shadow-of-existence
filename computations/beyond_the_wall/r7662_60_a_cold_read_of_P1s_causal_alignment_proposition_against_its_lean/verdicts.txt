@@ -1,0 +1,105 @@
+r7662 (60) -- P1's `prop:causal-alignment` against its Lean, clause by clause, on a named tree.
+
+⛭ THE ORDER'S THREE QUESTIONS are the three verdict classes: a clause P1 states that the Lean does not
+prove (`STATED-NOT-PROVED`); a hypothesis the Lean takes that P1 does not state (`ASSUMED-NOT-STATED`);
+a clause the witness does not exercise non-vacuously (`VACUOUS`).  Two classes the order did not name
+turned up and are reported beside them rather than folded in:
+
+  `PROMOTED`        -- P1 states it as a HYPOTHESIS and the Lean PROVES it.  The Lean is stronger.
+  `STATED-NOT-USED` -- P1 assumes it and the Lean never takes it.  P1 is stronger, which is not a gap
+                       in the formalisation but is a fact about the proposition's hypotheses.
+
+⌗ *Before two stretches are identified by a label, check how many-to-one the label is on the object* --
+so every mapping below prints the Lean term it matched, and where one P1 clause needs several Lean
+terms (or several P1 clauses one term) the multiplicity is printed and not smoothed.
+
+⛔ EVERY MAPPING IS LOCATED IN THE FILES, NOT ASSERTED.  Each Lean term is found by searching the probe
+for its own text; a term that cannot be found is a hard stop, because a mapping to a term that is not
+there would be a statement about this script.  And each is FAILABLE: a decoy term must not be found.
+
+⌗ This revision does NOT re-verify the Lean.  Whether `mx_prop_causal_alignment` compiles and what
+axioms it rests on are `71`'s measurements; this reads the STATEMENTS against each other.
+
+================================================================================================================
+  r7662 (60) -- P1's proposition against its Lean, on a named tree
+================================================================================================================
+
+ⓐ  ① THE TREE, recorded before either side was read
+      worktree: 5c7a26acebb8356e74bc203b5f127b8c79042263
+      dirty: 1 path(s)
+      53816139f8f75aec1da496ff77789384b3502d80  corpus/BH_causality_v2.tex
+      5b10726558ffc87abd844bb8f8f57c39e4795ce5  computations/formalisation/lean/probes/ConformalBoundary.lean
+  [PASS] ⓐ① ① the tree is named, with the commit of BOTH objects this revision compares, so a later reading can tell whether it disagrees with this one or with a different tree
+  [PASS] ⓐ② and both statements are LOCATED in their files rather than quoted from memory -- the proposition between its own delimiters, the theorem up to its `:= by`
+
+ⓑ  THE HYPOTHESES — P1's prose against the Lean's binders
+      P1 clause                                       in P1  Lean binder(s)
+      asymptotically flat, with a conformal boundary    yes  3 of 3: ConformalExtension S St
+      the horizon IS ∂J⁻(𝒥⁺)                            yes  1 of 1: S.H J = frontier (X.ι ⁻¹' St.JpastSet 𝒥)
+      the exterior domain D is globally hyperbolic      yes  1 of 1: hΘ : S.IsCauchyTemporalOn (S.D J) Θ
+      O is a worldline, future-ordered                  yes  1 of 1: hmono : ∀ s t : ℝ, s < t → S.Chr (O s) (O t)
+      O is FUTURE-COMPLETE and O(τ) → i⁺                yes  — none, and none expected
+      the causal past of O is the whole exterior        yes  1 of 1: hOD : S.IpastSet (range O) = S.D J
+      Θ is a smooth Cauchy temporal function of D       yes  1 of 1: hΘ : S.IsCauchyTemporalOn (S.D J) Θ
+      Θ is adapted to O: Θ(O(τ)) = τ + const            yes  1 of 1: hadapt : ∀ τ, Θ (O τ) = τ + c
+  [PASS] ⓑ① every P1 hypothesis is located in P1's own proposition text
+  [PASS] ⓑ② and every Lean binder this read maps to is located in the theorem's own statement
+
+ⓒ  ② ASSUMED-NOT-STATED — Lean binders with no counterpart in P1
+      does P1 carry a conventions clause naming Hausdorffness or the manifold's category anywhere? NO
+      in the theorem           [T2Space N]                                          Hausdorffness of the spacetime
+      in the theorem           hL : S.LocallyOneChart                               one-chart locality of S
+      in the theorem           hLt : St.LocallyOneChart                             one-chart locality of the extension
+      in the theorem           hJM : J ⊆ S.M                                        carrier bookkeeping for J
+      in the theorem           hHM : frontier (X.ι ⁻¹' St.JpastSet 𝒥) ⊆ S.M         carrier bookkeeping for the horizon
+  [PASS] ⓒ① ⑥ AS REGISTERED: there is at least one ASSUMED-NOT-STATED hypothesis -- 5 Lean binders have no counterpart in P1's proposition, and P1 carries no conventions clause that would supply them
+  [PASS] ⓒ② ⑦ AND MY ARM'S OWN NEGATIVE IS TESTED, NOT ASSUMED: P1 is searched for a conventions clause naming Hausdorffness, paracompactness, second countability or `by a spacetime we mean`, and the verdict turns on that search returning nothing
+
+ⓓ  THE CONCLUSIONS — P1's clauses against the Lean's seven
+      P1 clause                                                       in P1  verdict
+      the past cones converge to the horizon as τ → ∞                   yes  PROVED  (2 term(s): KLi (S.cone O) = frontier)
+      NONE of the past cones MEETS the horizon                          yes  STATED-NOT-PROVED
+      the stretch approached to within any distance EXTENDS TO THE FUTURE WITHOUT BOUND    yes  STATED-NOT-PROVED
+      the slices accumulate on the horizon, every point approached when late enough    yes  PROVED  (1 term(s): KLi (S.slice J Θ) = frontier)
+      and the slices accumulate at NO point outside it                  yes  PROVED  (1 term(s): KLs (S.slice J Θ) = frontier)
+      each finite-Θ slice lies entirely in D                            yes  PROVED  (1 term(s): S.SublevelProper J Θ)
+      the tangent hyperplanes become asymptotically tangent to the generators    yes  PROVED  (1 term(s): TCF.FrameHyp (S.gE x) (ℓ x) (n x) (dcov )
+      consequently the horizon is on no finite exterior slice           yes  PROVED  (1 term(s): S.SublevelProper J Θ)
+
+      ⇒ The Lean's conclusion is a SEVEN-TUPLE and P1's prose is EIGHT clauses.  Six of P1's eight map
+      onto it, two of them many-to-one (the slice pair carries `accumulate on` and `at no point
+      outside it`; the cone pair carries `converge to it`), and `SublevelProper` carries two of P1's
+      clauses at once -- the finite slice lying in D and the consequence drawn from it.
+      ⛔ 2 of P1's clauses have NO term in the seven:
+         • NONE of the past cones MEETS the horizon
+         • the stretch approached to within any distance EXTENDS TO THE FUTURE WITHOUT BOUND
+      ⌗ Both are QUANTITATIVE where the Lean is set-theoretic.  `KLs (S.cone O) = 𝓗⁺` says the
+      cones' upper Kuratowski limit IS the horizon; it does not say an individual cone is disjoint
+      from it, and `SublevelProper` is about slices, not cones.  And no term in the seven speaks of a
+      stretch growing without bound to the future -- set convergence does not carry it.
+  [PASS] ⓓ① ⑥ AS REGISTERED: the order's negative is NOT reached -- 2 clause(s) of P1 are STATED-NOT-PROVED and at least one hypothesis is ASSUMED-NOT-STATED, so the Lean does not prove exactly P1's proposition under exactly P1's hypotheses
+  [PASS] ⓓ② and every clause reported PROVED has its Lean term located IN THE THEOREM'S OWN STATEMENT, so none is counted proved because a nearby term looked similar
+  [PASS] ⓓ③ ⑤ FAILABLE: a decoy term of the same shape is NOT found, so `located` means located
+  [PASS] ⓓ④ and the SEVEN are the theorem's whole conclusion -- each of the seven is located, so the comparison is against all of it and not a convenient subset
+
+ⓔ  ③ NON-VACUITY, ON THE WITNESS'S OWN DISCHARGED INSTANCE
+      yes      the horizon is NON-EMPTY at the witness
+      yes      and it is characterised, not merely named: 𝓗⁺ = {U = 0}
+      yes      the seven are destructured from the theorem itself
+      yes      the tangency clause is applied at a NAMED horizon point
+      yes      with a named frame and a limit
+      ⇒ So no clause is VACUOUS: the horizon is non-empty and pinned to `{U = 0}`, the seven
+      are read off the theorem rather than restated, and the tangency clause -- the one conclusion
+      that could have been satisfied by having no point to test -- is discharged AT a horizon point
+      with a named frame.  ⌗ *An arm with no instance to score is not a pass, and this witness gives
+      every clause an instance.*
+  [PASS] ⓔ① ③ NO CLAUSE IS VACUOUS on the witness: the horizon is non-empty, characterised, and the tangency clause is discharged at a named point with a named frame
+  [PASS] ⓔ② ④ and non-vacuity is read off the witness's own discharge rather than from my judgement that a clause sounds substantive -- the destructuring of the seven is located in the file
+
+ⓕ  WHAT IS NOT CLAIMED.  No correction to P1 and none to the Lean; nothing of `71`'s is edited.  This
+    does not re-verify the Lean: whether the theorem compiles and what axioms it rests on are `71`'s
+    measurements.  And the two STATED-NOT-PROVED clauses are not errors in P1 -- they are clauses the
+    formalisation does not reach, which is what the order asked to be told.
+
+================================================================================================================
+  0 failure(s)
