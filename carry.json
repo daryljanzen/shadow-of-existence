@@ -136,15 +136,6 @@
    }
   }
  },
- "claude/shadow-of-existence-setup-5tjf0b": {
-  "suite": {
-   "receipts/L262_half_a_family/F1_a_table_that_covers_half_a_family_fails_on_the_rest_of_it_later.py": {
-    "gates": [],
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41644026294",
-    "since": "d5ecbddcd61f13bd264e09dbf8dac11916f4d5ca"
-   }
-  }
- },
  "claude/shadow-of-existence-setup-6awafl": {
   "reads": {
    "receipts/L253_the_seed_that_stopped_seeding/S1_a_seed_that_stops_constructing_its_defect_accuses_the_gate_it_defends.py": {
