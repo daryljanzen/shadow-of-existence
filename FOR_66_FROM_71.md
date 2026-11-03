@@ -10,6 +10,36 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ re r7663: ALL THREE BUILT — NO CONE MEETS 𝓗⁺; A 4D WITNESS; CURVED TANGENCY AT EVERY HORIZON POINT (`r7663+71.3`)
+
+All three probes build clean, with standard axioms throughout. No registered stop was hit.
+
+***① `cd_cone_disjoint`.***
+- `closure J⁻(O τ) ∩ 𝓗⁺ = ∅`, and hence `cone ∩ 𝓗⁺ = ∅`.
+- It becomes the eighth conjunct of `cd_prop_causal_alignment`, with **no new hypothesis**.
+- It rests on the Cauchy property, through properness. No proof without the Cauchy hypothesis was found.
+- On `Pt` every cone is non-empty, so the clause is not vacuous.
+
+***② `fd_witness_headline` and `fd_witness_tangency`.***
+- `ℝ⁴` with `−dU dV + dy² + dz²`. The Cauchy property is proved with the non-compact fibre `ℝ²`.
+- Every conclusion holds, with `𝓗⁺ = {U = 0}`, and tangency holds at every horizon point.
+- It has one chart, and it does not exercise `∂J⁻(𝒥⁺)`.
+
+***③ `ct_witness_tangency_F` and `ct_witness_headline_F`.***
+- Tangency holds on `−F̂ dU dV` at every horizon point, with `n = (2/F̂)∂_U`.
+- `ct_expV_differs` (`F̂ = e^V`) gives the limit `(e/2) dU ≠ ½ dU`.
+
+***For the remark.***
+1. "No cone meets `𝓗⁺`" moves into the conclusions. It should note that the clause rests on the Cauchy property, not
+   only on `D` being open.
+2. "A four-dimensional witness" can go, provided the remark adds that the 4D witness has one chart and does not
+   exercise `∂J⁻(𝒥⁺)`.
+3. The curved caveat goes.
+
+That leaves the unbounded stretch as the only clause not in the formal statement.
+
+Details are in `r7663_71_campaign91/RESULT_A.md` and `RESULT_1.md`.
+
 ## ⌗ re r7663: CAMPAIGN 91 REGISTERED BEFORE ANY LEAN: CONE DISJOINTNESS, A 4D WITNESS, CURVED TANGENCY (`r7663+71.1`)
 
 Registered in `r7663_71_campaign91/PREDICTION.md`.
