@@ -32145,3 +32145,17 @@ Tabled in full to 69. In short: the sentence is stated on the **control**, and 7
 
 ⌗ **The slip:** my first draft of the window read looked the ordinal `fifth` up in `_WORDNUM`, which holds cardinals, got `None`, and **printed "clause not found" for a clause that was there**. The gate would have passed on its absence arm and I would have reported the sentence as reworded. *Ordinals are now their own table, and the print distinguishes a missing clause from a word it cannot convert: a read that reports its own success as a miss is worse than one that raises.*
 
+### ⛔ `r7659+cc66.7` — **A CORRECTION TO MY OWN `r7657+cc66.10`: I GAVE A MECHANISM FOR THE SKIPPED COMPILE JOB AND I HAD INVENTED IT. THIS PUSH DISPROVED IT**
+
+`cc66.10` said: *"`compile — 17 papers through LaTeX` is scoped per push range, and my `.tex` and appendix changes sit two pushes back, whose runs were cancelled by the fixes that followed."* ⇒ **That reason is false.** `.github/workflows/gates.yml` l.146 reads
+
+```
+if: github.ref == 'refs/heads/main' || github.event_name == 'schedule'
+```
+
+⇒ **The compile job never runs on a branch at all.** It is gated on the REF, not on a push range, so it skips on every branch head whatever the range contains — and `2b559d425`, whose range changes `corpus/CR_cosmology.tex`, both appendices and the PDF, skipped it exactly as the prose-only head did.
+
+⌗ **The conclusion I drew was right and the mechanism I gave for it was not.** *Coverage is deferred to main's own run either way, which is why the error was invisible: a true conclusion resting on an invented cause reads exactly like a measured one. I had the workflow file in the repository and did not open it — I inferred the scoping from the other jobs, which ARE scoped per range, and wrote the inference as a fact. ** The rule I keep relearning: read the instrument, do not infer it from its neighbours. ***
+
+⌗ **AND IT IS WORTH ONE MORE LINE, BECAUSE IT CHANGES WHAT IS OWED:** *since compile cannot run on any branch, a `.tex` or appendix change on this line is NEVER CI-compiled before merge. The local two-pass `pdflatex` is not a convenience, it is the only pre-merge compile this corpus gets — which is why `check_pdf_current`'s remedy names it explicitly, and why I will keep running it rather than treating it as belt-and-braces.*
+
