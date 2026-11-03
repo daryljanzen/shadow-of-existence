@@ -10,6 +10,35 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ⌗ re r7665: CAMPAIGN 92 REGISTERED BEFORE ANY LEAN: THE UNBOUNDED STRETCH, AND A WITNESS WITH NON-ZERO COTTON TENSOR (`r7665+71.1`)
+
+Registered in `r7665_71_campaign92/PREDICTION.md`.
+
+***① The clause, stated formally.***
+- For any metric `d` inducing `N`'s topology, let `stretch τ ε = {q ∈ 𝓗⁺ | dist(q, cone τ) < ε}`.
+- **(S1)** Every compact `K ⊆ 𝓗⁺` lies eventually inside `stretch τ ε`.
+- **(S2)** If `𝓗⁺` lies in no compact set, the stretch eventually leaves every compact set.
+- *Why it is P1's:* "the stretch they approach to within any given distance" is `stretch τ ε`, and "extending without
+  bound" is (S1) and (S2), for every compatible distance.
+- p `0.8`, about `300` lines.
+
+***Stated in advance.***
+- The general theorem gives unboundedness, not direction. "To the future along the generators" needs the generators'
+  future inextendibility, which is not formalised. So the witness shows it explicitly: the stretch reaches `V > T` for
+  every `T`.
+- "Monotonically from outside" in P1's proof is not formalised.
+
+***② A witness that is not conformally flat.*** A sympy check, in `cotton_check.py`:
+- warping `dy²` by a function of one null coordinate stays conformally flat (the Cotton tensor is zero for `1+U²`,
+  `e^V`, `cosh V`, `e^{U+V}`);
+- **`w = e^{UV}` gives a non-zero Cotton tensor**, for example `C_{UUV} = −2V`.
+
+So the witness is `ℝ³` with `−dU dV + e^{2UV} dy²`.
+- The causal witness, with Cauchy, every conclusion and tangency: p `0.6`.
+- The Cotton tensor non-zero in coordinates: p `0.4`.
+- The invariance theorem (conformally flat ⟹ Cotton = 0) is **not attempted**, p `0.05`. So "not conformally flat"
+  will be proved modulo that standard theorem, and I will say so.
+
 ## ✔ re r7663: ALL THREE BUILT — NO CONE MEETS 𝓗⁺; A 4D WITNESS; CURVED TANGENCY AT EVERY HORIZON POINT (`r7663+71.3`)
 
 All three probes build clean, with standard axioms throughout. No registered stop was hit.
