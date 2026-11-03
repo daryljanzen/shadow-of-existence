@@ -9,6 +9,35 @@ is committed and pushed on `main` — nothing waits on the chat window.*
 
 ---
 
+## ⚑ `r7659` (cc66) — **ITEM 5: NEITHER OF 70's FLUID READINGS CHANGES l.2079–2083, AND P15 SHOULD NOT CARRY THE ARM'S TWO-PATH HEIGHTS, BECAUSE THEY HAVE NO SINGLE SIGN**
+
+*All figures are 70's banked `r7657_70_fluid_pair/RESULT.md`, scored through `P15_at_its_own_preferred_H0_…`'s own `_matched` and `score` — the same machinery the control's figures in l.2079–2083 came from. The arithmetic below is mine.*
+
+### ① **l.2079–2083 stands as landed, and 70's refit control slightly STRENGTHENS it.**
+
+The sentence is stated on the control, and nothing 70 ran moves the control's two-path comparison. Better: the **refit** control reproduces the default control's fluid heights — `2.388`/`2.809` against `2.392`/`2.766` — so the control's two-path statement survives the refit as well as the re-point. ⇒ *No edit owed.*
+
+### ⛔ ② **The arm's two-path heights have no single sign, so a sentence carrying them would be a sentence about which arm-of-record reading was taken.**
+
+| the arm, on the fluid path | P₁/P₂ | P₁/P₃ | against its own control |
+|---|---|---|---|
+| at the distances' point (68.60/0.2973) | `2.462` | `2.944` | **above** it: `+2.9` %, `+6.4` % |
+| the refitted arm of record | `2.306` | `2.770` | **below** it: `−3.4` %, `−1.4` % |
+
+*The control's own fluid heights are `2.392`/`2.766` at the distances' point and `2.388`/`2.809` on the refit, so the control is steady and it is the ARM that moves between the two readings.* ⇒ **Recommendation: do not carry the arm's two-path heights.** *"The arm overshoots its control on the fluid path" is true at the distances' point and false on the refitted arm of record; the claim that survives both is the one the paragraph already makes — the heights are path-dependent at the per-cent level on BOTH arms, which is why every height quoted is the polarisation path's.*
+
+### ⌗ ③ **One measurement you may want instead, and it is not a recommendation to land: on the ARM the two paths agree on the comb about half as well as on the control.**
+
+| pair | polarisation | fluid | agreement |
+|---|---|---|---|
+| control *(what l.2079 quotes)* | `296.0` | `296.80` | a part in `~300` |
+| arm at the distances' point | `299.04` | `297.31` | **a part in `173`** |
+| the refitted arm of record | `299.1` *(the landed figure)* | `297.05` | **a part in `146`** |
+
+*So `the two paths return the comb to a part in three hundred` is the CONTROL's figure. If that clause is meant as a property of the instrument rather than of the control, the arm's is the weaker number and the honest one to quote.* ⌗ **Say the word and I will pin it** in the two-path receipt before you land it — as it stands the comparison is my arithmetic on 70's banked rows, and nothing gates it.
+
+---
+
 ## ⚑ `r7657` (cc66) — **ITEMS 1, 2 AND 3 ARE MEASURED, AND FOUR CLAUSES OF THE TWO PARAGRAPHS NEED YOUR PEN: l.2395's RANGE AND ITS ENDPOINT CLAUSE, l.1939–1942's GRID, l.1943–1954's DIGITS AND ITS `\rcpt`**
 
 *Everything below is gated in the two receipts and pushed. The prose is yours; I have touched no `.tex`.*

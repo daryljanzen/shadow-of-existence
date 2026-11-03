@@ -10,6 +10,12 @@
 # SET COMPARISON against `git show HEAD:` -- exactly this row gone, no row added, total 1486 against
 # the gate's own measured 1486 -- never with `--write-baseline`, which is lossy (r7349).
 #
+# ⌗ r7659+cc66: 8 ROWS RE-KEYED, NOT RE-ADJUDICATED.  69's item 1 renamed the kernel-phase receipt
+#   `…_and_a_sixth_of_the_scale_is_common_mode` -> `…_and_a_fifth_…`, because on the arm of record
+#   the floor is a fifth and a filename is a claim in this corpus.  Every row under that key moved
+#   with the path and NOTHING a row says changed.  ** Recorded because a re-key is indistinguishable
+#   from a re-adjudication in a diff, and it should not be (the r7109+cc66.85 precedent). **
+#
 # r7657+cc66: THREE ROWS REMOVED, 1484 -> 1481, all under the kernel-phase receipt's key, and all
 # three because the receipt now PINS the figure rather than because a sentence dropped it.  69's
 # r7657 re-pointed the paragraph's residual from `-96.6` to the arm of record's own `-78.3`, so the
@@ -536,14 +542,14 @@ APPENDIX	P15	P15_the_joint_fit_leaves_the_gaussian_and_the_bound_was_chi2_not_si
 APPENDIX	P15	P15_the_joint_fit_leaves_the_gaussian_and_the_bound_was_chi2_not_sigma	1.497	1
 APPENDIX	P15	P15_the_joint_fit_leaves_the_gaussian_and_the_bound_was_chi2_not_sigma	272.8	1
 APPENDIX	P15	P15_the_joint_fit_leaves_the_gaussian_and_the_bound_was_chi2_not_sigma	69.8	1
-APPENDIX	P15	P15_the_kernels_phase_difference_between_the_arms_is_four_orders_below_the_residual_so_the_projection_is_cleared_and_a_sixth_of_the_scale_is_common_mode	0.0001	1
-APPENDIX	P15	P15_the_kernels_phase_difference_between_the_arms_is_four_orders_below_the_residual_so_the_projection_is_cleared_and_a_sixth_of_the_scale_is_common_mode	0.0139	1
-APPENDIX	P15	P15_the_kernels_phase_difference_between_the_arms_is_four_orders_below_the_residual_so_the_projection_is_cleared_and_a_sixth_of_the_scale_is_common_mode	0.01406	1
-APPENDIX	P15	P15_the_kernels_phase_difference_between_the_arms_is_four_orders_below_the_residual_so_the_projection_is_cleared_and_a_sixth_of_the_scale_is_common_mode	0.01407	2
-APPENDIX	P15	P15_the_kernels_phase_difference_between_the_arms_is_four_orders_below_the_residual_so_the_projection_is_cleared_and_a_sixth_of_the_scale_is_common_mode	0.0141	1
-APPENDIX	P15	P15_the_kernels_phase_difference_between_the_arms_is_four_orders_below_the_residual_so_the_projection_is_cleared_and_a_sixth_of_the_scale_is_common_mode	0.09	1
-APPENDIX	P15	P15_the_kernels_phase_difference_between_the_arms_is_four_orders_below_the_residual_so_the_projection_is_cleared_and_a_sixth_of_the_scale_is_common_mode	1.05	1
-APPENDIX	P15	P15_the_kernels_phase_difference_between_the_arms_is_four_orders_below_the_residual_so_the_projection_is_cleared_and_a_sixth_of_the_scale_is_common_mode	15.46	1
+APPENDIX	P15	P15_the_kernels_phase_difference_between_the_arms_is_four_orders_below_the_residual_so_the_projection_is_cleared_and_a_fifth_of_the_scale_is_common_mode	0.0001	1
+APPENDIX	P15	P15_the_kernels_phase_difference_between_the_arms_is_four_orders_below_the_residual_so_the_projection_is_cleared_and_a_fifth_of_the_scale_is_common_mode	0.0139	1
+APPENDIX	P15	P15_the_kernels_phase_difference_between_the_arms_is_four_orders_below_the_residual_so_the_projection_is_cleared_and_a_fifth_of_the_scale_is_common_mode	0.01406	1
+APPENDIX	P15	P15_the_kernels_phase_difference_between_the_arms_is_four_orders_below_the_residual_so_the_projection_is_cleared_and_a_fifth_of_the_scale_is_common_mode	0.01407	2
+APPENDIX	P15	P15_the_kernels_phase_difference_between_the_arms_is_four_orders_below_the_residual_so_the_projection_is_cleared_and_a_fifth_of_the_scale_is_common_mode	0.0141	1
+APPENDIX	P15	P15_the_kernels_phase_difference_between_the_arms_is_four_orders_below_the_residual_so_the_projection_is_cleared_and_a_fifth_of_the_scale_is_common_mode	0.09	1
+APPENDIX	P15	P15_the_kernels_phase_difference_between_the_arms_is_four_orders_below_the_residual_so_the_projection_is_cleared_and_a_fifth_of_the_scale_is_common_mode	1.05	1
+APPENDIX	P15	P15_the_kernels_phase_difference_between_the_arms_is_four_orders_below_the_residual_so_the_projection_is_cleared_and_a_fifth_of_the_scale_is_common_mode	15.46	1
 APPENDIX	P15	P15_the_ladders_discreteness_does_not_set_the_spectrum_and_the_check_was_run_in_pieces	1205.3745	1
 APPENDIX	P15	P15_the_ladders_discreteness_does_not_set_the_spectrum_and_the_check_was_run_in_pieces	1205.3755	1
 APPENDIX	P15	P15_the_ladders_discreteness_does_not_set_the_spectrum_and_the_check_was_run_in_pieces	99.9	1

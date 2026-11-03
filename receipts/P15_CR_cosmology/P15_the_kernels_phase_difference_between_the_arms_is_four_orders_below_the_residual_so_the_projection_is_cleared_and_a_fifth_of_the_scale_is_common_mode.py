@@ -108,9 +108,13 @@ LLO, LHI = 104.0, 1886.0      # the range the residual is quoted across
 #   ⌗ *Every `orders below` in this file moves with it, and so does the FLOOR FRACTION: 15.4 against
 #     78.3 is a FIFTH where 15.4 against 96.6 was a sixth.  69 landed `a fifth` on that reading, so
 #     Ⓕ moves with the constant rather than being left to contradict the paper.*
-#   ⌷ *THE FILENAME STILL SAYS `a_sixth_of_the_scale_is_common_mode`, and it is now the namesake's
-#     fraction.  A rename reaches `receipts/INDEX.md`, the appendices and every `\rcpt` that cites
-#     this file across six documents, so it is ROUTED to 69 and not done here.*
+#   ⌷ *THE FILENAME IS RENAMED AT r7659 (69's item 1): `a_sixth_` became `a_fifth_`, because a
+#     filename is a claim in this corpus and a sixth is now the namesake's fraction alone.  ⛭ AND
+#     THE REACH WAS ONE CITATION, NOT SIX DOCUMENTS: my own r7657 routing said the rename reached
+#     `every \rcpt that cites this file across six documents`, and 69's order repeated that from
+#     me.  Measured at the rename: ONE `\rcpt`, at `corpus/CR_cosmology.tex` l.2405, plus the
+#     INDEX row, the two GENERATED appendices, and the three baselines keyed by the path.  The
+#     premise was mine and it was wrong.*
 RESIDUAL = -78.3              # degrees of a comb period, l.2142 (r7657); was -96.6 before r7657
 DEG = 180.0 / np.pi           # radians of cos(2 k r_s) -> degrees of a comb period (2 pi rad = 360)
 
@@ -376,22 +380,32 @@ gate("Ⓔ⑦ the two-number decomposition held, so refuting outcome 4 did not fi
 _P15TEX = open(os.path.join(ROOT, 'corpus', 'CR_cosmology.tex'),
                encoding='utf-8', errors='replace').read()
 _P15FLAT = re.sub(r'\s+', ' ', _P15TEX)
-_PAPER_CONV = re.search(r'their separation in the governing ratio widens (\w+) and the difference '
-                        r'between them changes sign, at \$([\d.]+)\$ degrees; the clearance '
-                        r'survives either way, at no less than \$([\d.]+)\$ orders', _P15FLAT)
+# ⛭⛭⛭ r7659 (69's item 3, from 60's cold read ⓷): ** THE READ MOVED ONTO THE CLAUSE THE GATE
+#   REASONS FROM. **  Until now this was a read of the sentence that said the separation `widens`
+#   and the difference changes sign, with two figures Ⓗ④ asserted no convention reproduces.  r7657
+#   LANDED Ⓗ④'s finding: 69 removed that sentence and its two figures, and put this file's own
+#   five-endpoint measurement in their place.  ⇒ *A gate that goes on asserting a retired sentence
+#   is gating the corpus's history, not its state.  So the read is now of the LANDED clause, and
+#   Ⓗ④ asserts that -- which also clears this receipt's `widens` row from `paper_pins_absent.tsv`,
+#   where r7657 listed it as deliberately absent.*
+_WORDNUM = {'two': 2.0, 'three': 3.0, 'four': 4.0, 'five': 5.0, 'six': 6.0, 'seven': 7.0,
+            'eight': 8.0, 'nine': 9.0, 'ten': 10.0, 'twelve': 12.0}
+_PAPER_EP = re.search(r'the difference runs from \$\+([\d.]+)\$ to \$\+([\d.]+)\$ degrees, '
+                      r'always of one sign, so the clearance holds at no less than (\w+) orders '
+                      r'of magnitude on every convention', _P15FLAT)
 _PAPER_RESID = re.search(r'against a residual of \$([-\d.]+)\$', _P15FLAT)
 # ⛭ ** BOTH READS TOLERATE THEIR OWN MISS, AND THE MISS IS PRINTED.  r7655: `check_quote_pins`
 #   named these two REGEXES as sentence pins on 69's wording, and it was right -- worse, a reworded
 #   sentence would have made `.group()` RAISE, and a crash is not a verdict.  ** This turn ROUTES
 #   both sentences for rewording, so each read is one arm of a disjunction whose other arm is "the
 #   sentence is no longer there", and the gates below take that arm explicitly. **
-_P_WORD = _PAPER_CONV.group(1) if _PAPER_CONV else None
-_P_DEG = float(_PAPER_CONV.group(2)) if _PAPER_CONV else None
-_P_ORD = float(_PAPER_CONV.group(3)) if _PAPER_CONV else None
+_P_LO = float(_PAPER_EP.group(1)) if _PAPER_EP else None
+_P_HI = float(_PAPER_EP.group(2)) if _PAPER_EP else None
+_P_ORDW = _WORDNUM.get(_PAPER_EP.group(3)) if _PAPER_EP else None
 _P_RES = float(_PAPER_RESID.group(1)) if _PAPER_RESID else None
-print(f"    read out of the paper: l.2387-2388 "
-      + (f"says `{_P_WORD}`, {_P_DEG} degrees, {_P_ORD} orders"
-         if _PAPER_CONV else "** NO LONGER CARRIES THAT SENTENCE -- reworded since r7655 **")
+print(f"    read out of the paper: l.2387-2389's endpoint clause "
+      + (f"runs +{_P_LO} to +{_P_HI} degrees at no less than {_P_ORDW:.0f} orders"
+         if _PAPER_EP else "** NOT FOUND -- reworded since r7659 **")
       + ";  l.2383's residual "
       + (f"{_P_RES}" if _PAPER_RESID else "** NOT FOUND -- reworded since r7655 **"))
 
@@ -552,26 +566,30 @@ gate("⛭⛭⛭ ** Ⓗ③ l.2386's `only the magnitude is a convention-free stat
      "convention-free too, and 69's reading -- that the arm-of-record difference is already "
      "positive -- is a property of the arm and not of a choice.*",
      bool(min(_ns_phases) < 0 < max(_ns_phases) and all(p > 0 for p in _ao_phases)))
-gate("⛔⛭⛭ ** Ⓗ④ AND NO ENDPOINT CONVENTION REPRODUCES l.2388's `0.14 degrees` OR ITS `no less "
-     "than 2.8 orders`, ON EITHER PAIR.  THIS GATE ASSERTED THE MISS AND r7657 ACTED ON IT: 69 "
-     "REMOVED BOTH FIGURES AND `widens tenfold` WITH THEM, so the read above now MISSES and "
-     "this gate runs on its FALLBACK LITERALS -- kept as the record of what the sentence said "
-     "and why it went, and the absence arm built at r7655 fired on its first real test one "
-     "turn later. **  "
-     "*The largest magnitude any of the five gives on the namesake pair is the late FWHM edge at "
-     "0.080 deg, 2.99 orders below r7657's -78.3 -- a factor 1.8 short of 0.14, and only a FIFTH of "
-     "an order clear of 2.8 where against -96.6 it was 3.08 and a quarter.  On the arm of record "
-     "the five run 0.028 to 0.063 deg, 3.10 to 3.44 orders."
-     "  ⌗ *The re-point COSTS this gate margin and the gate says so rather than being widened.*  ⇒ The "
-     "sentence's mechanism is REAL and measured here -- the two arms' damping lengths do respond to "
-     "the endpoint in opposite directions -- but its two figures are not this instrument's on "
-     "either arm, and `widens tenfold` is the wrong direction: at eta_rec the namesake's separation "
-     "NARROWS ninefold (-0.305% to -0.034%).*",
-     bool((max(abs(p) for p in _ns_phases + _ao_phases) < (_P_DEG if _P_DEG else 0.14)
-           and min(np.log10(abs(RESIDUAL / p)) for p in _ns_phases + _ao_phases)
-               > (_P_ORD if _P_ORD else 2.8))
-          and (_P_WORD == 'tenfold' or _PAPER_CONV is None)))
-
+_ORD_NS = min(np.log10(abs(RESIDUAL / p)) for p in _ns_phases)
+_ORD_AO = min(np.log10(abs(RESIDUAL / p)) for p in _ao_phases)
+print(f"    the worst convention on each pair: namesake {_ORD_NS:.2f} orders below {RESIDUAL:+.1f},"
+      f"  ARM OF RECORD {_ORD_AO:.2f} orders")
+gate("⛭⛭⛭ ** Ⓗ④ RESTATED AT r7659 ON THE CLAUSE IT REASONS FROM (69's item 3, carrying 60's "
+     "cold read ⓷): l.2387-2389's LANDED CLAIM -- the difference running `+0.028` to `+0.063` "
+     "degrees, `always of one sign`, the clearance holding `at no less than three orders on every "
+     "convention` -- IS MET ON THE ARM OF RECORD AND WOULD NOT HAVE BEEN ON THE NAMESAKE PAIR. **  "
+     "*Arm of record: five endpoints, every difference POSITIVE, the worst 3.10 orders below -78.3. "
+     "Namesake pair: its late half-maximum edge gives 0.080 degrees, 2.99 orders -- a hair UNDER "
+     "three -- so the sentence is true of the arm it is stated on and would have been false by a "
+     "hundredth of an order on the pair this file's headline still uses.  "
+     "⇒ ** What this gate asserted until r7659 was the MISS of two figures the paper no longer "
+     "carries: the sentence that said the separation widens and the difference changes sign went "
+     "with them, on this gate's own routing.  A gate still asserting it would be gating the "
+     "corpus's history rather than its state, which is 60's ⓷ and is right. **  "
+     "⌗ *The MECHANISM it measured survives and is still measured here -- the two arms' damping "
+     "lengths respond to the endpoint in opposite directions, and at eta_rec the namesake's "
+     "separation NARROWS ninefold, -0.305% to -0.034%.*",
+     bool((_PAPER_EP is None
+           or (abs(min(_ao_phases) - _P_LO) < 5e-4 and abs(max(_ao_phases) - _P_HI) < 5e-4
+               and _ORD_AO > _P_ORDW))
+          and all(p > 0 for p in _ao_phases)
+          and _ORD_AO > 3.0 and _ORD_NS < 3.0))
 # ── the r_D/D_M share, attributed, and what two decimals costs it ────────────────────────────────
 _sep_ns = (ARM['rD'] / ARM['DM']) / (CTL['rD'] / CTL['DM']) - 1
 _sep_ns_full = _rows[('namesake', _PK)][0]
@@ -711,9 +729,9 @@ _epr = _PAPER['endpoint range']
 gate("⛭ Ⓘ④ l.2387-2389's `+0.028 to +0.063 degrees, always of one sign, no less than three "
      "orders on every convention` IS Ⓗ③'s TABLE, end to end.  *The five endpoints give +0.02829 "
      "to +0.06256, every one POSITIVE, the worst 3.10 orders below -78.3.  ** This is the sentence "
-     "that replaced `widens tenfold`, `0.14 degrees` and `2.8 orders`, which Ⓗ④ found no "
-     "convention reproduces -- so Ⓗ④ now gates a figure the paper no longer carries, and that "
-     "is deliberate: it is the record of why the figure went. **",
+     "that replaced the retired sentence and its two figures, which Ⓗ④ found no convention "
+     "reproduces -- and at r7659 Ⓗ④ was RESTATED onto this landed clause, so no gate here "
+     "asserts a sentence the paper no longer carries. **",
      bool((_epr is None or (abs(_epr[0] - 0.028) < 5e-4 and abs(_epr[1] - 0.063) < 5e-4))
           and abs(_EP_LO - 0.028) < 5e-4 and abs(_EP_HI - 0.063) < 5e-4
           and all(q > 0 for q in _ao_phases) and _ORD_EP > 3.0))
@@ -777,27 +795,39 @@ for _lo in _LOWS:
     print(f"      from l = {_lo:6.1f} to {LHI:.0f}:  {_ph:+9.4f} deg = "
           f"{100*_FRAC_LO[_lo][1]:6.2f}% of {RESIDUAL:+.1f}"
           f"   ({100*_FRAC_LO[_lo][2]:6.2f}% of the -96.6 l.2395 still divides by)")
-_PAPER_RANGE = re.search(r'moving under a tenth of a point, and runs from \$(\d+)\$ to \$(\d+)\$ '
-                         r'per cent as the range is taken from \$(\d+)\$ or from \$(\d+)\$ instead',
-                         _P15FLAT)
-_PR = [float(g) for g in _PAPER_RANGE.groups()] if _PAPER_RANGE else None
-print(f"    l.2395 reads " + (f"{_PR[0]:.0f} to {_PR[1]:.0f} per cent from {_PR[2]:.0f} or from "
-                              f"{_PR[3]:.0f}" if _PR else
-                              "** NOT FOUND -- reworded since r7657 **"))
-gate("⛔⛭⛭⛭ ** Ⓙ① l.2395's `9 to 24 per cent` IS THE ARM OF RECORD'S OWN PHASES DIVIDED "
-     "BY THE OLD RESIDUAL, AND AGAINST -78.3 THE RANGE IS 11 TO 30.  THIS GATE ASSERTS THE MISS "
-     "AND ROUTES THE TWO FIGURES. **  *The phases are right and this file reproduces them: -8.7491 "
-     "degrees from l = 200 and -23.2458 from l = 50.  Against -96.6 they are 9.06 and 24.06 per "
-     "cent -- l.2395's two figures to the digit.  Against the -78.3 the SAME SENTENCE's `a fifth` "
-     "is now quoted against, they are 11.17 and 29.69.  ⇒ ** The re-point reached the floor "
-     "clause and not the range clause, so one sentence now carries two denominators.  Read from "
-     "200 or from 50 instead, the floor runs from ELEVEN to THIRTY per cent. ** *",
-     bool((_PR is None or (abs(_PR[0] - round(100 * _FRAC_LO[200.0][2])) < 1e-9
-                           and abs(_PR[1] - round(100 * _FRAC_LO[50.0][2])) < 1e-9
-                           and _PR[2] == 200.0 and _PR[3] == 50.0))
+# ⛭⛭⛭ r7659 (69's item 4): ** THE READ MOVED ONTO THE LANDED CLAUSE. **  r7657 routed both
+#   halves of this sentence and 69 landed both: the range is `11` to `30`, and the endpoint clause
+#   now gives the two groups separately -- under a tenth of a point between the three endpoints at
+#   the recombination epoch, and eight points across the half-maximum edges, where the damping
+#   length itself more than doubles.  ⇒ *So the read is re-pointed and BOTH Ⓙ gates become
+#   agreements instead of misses.  The old read is what `paper_pins_absent.tsv` listed as
+#   deliberately absent at r7659; re-pointing it clears that row too.*
+_PAPER_RANGE = re.search(r'it moves under a tenth of a point between the three endpoints at the '
+                         r"recombination epoch itself---the epoch, unit optical depth and the "
+                         r"visibility's peak---and by (\w+) points across the visibility's "
+                         r'half-maximum edges, where the damping length itself more than doubles, '
+                         r'and runs from \$(\d+)\$ to \$(\d+)\$ per cent as the range is taken '
+                         r'from \$(\d+)\$ or from \$(\d+)\$ instead', _P15FLAT)
+_PR = ([_WORDNUM.get(_PAPER_RANGE.group(1))]
+       + [float(g) for g in _PAPER_RANGE.groups()[1:]]) if _PAPER_RANGE else None
+print(f"    l.2394-2396 reads "
+      + (f"a tenth of a point across the three recombination-epoch endpoints and {_PR[0]:.0f} "
+         f"points across the half-maximum edges, {_PR[1]:.0f} to {_PR[2]:.0f} per cent from "
+         f"{_PR[3]:.0f} or from {_PR[4]:.0f}" if _PR else
+         "** NOT FOUND -- reworded since r7659 **"))
+gate("⛭⛭ ** Ⓙ① RESOLVED AT r7659: l.2394-2396 NOW READS `11` TO `30` PER CENT, which is what "
+     "this file measures against -78.3, and the gate asserts the AGREEMENT where r7657's version "
+     "asserted the miss. **  *The two phases were always this arm's own -- -8.7491 degrees from "
+     "l = 200 and -23.2458 from l = 50 -- and r7657 found them divided by the residual the "
+     "paragraph carried BEFORE the re-point: 9.06 and 24.06 per cent, which were l.2395's two "
+     "figures to the digit.  Against -78.3 they are 11.17 and 29.69, the paper now says 11 and 30, "
+     "and one sentence no longer carries two denominators.  ⌗ The -96.6 column stays in the table "
+     "above, because it is what makes the old figures legible as arithmetic rather than error.*",
+     bool((_PR is None or (abs(_PR[1] - round(100 * _FRAC_LO[200.0][1])) < 1e-9
+                           and abs(_PR[2] - round(100 * _FRAC_LO[50.0][1])) < 1e-9
+                           and _PR[3] == 200.0 and _PR[4] == 50.0))
           and abs(100 * _FRAC_LO[200.0][1] - 11.17) < 0.05
           and abs(100 * _FRAC_LO[50.0][1] - 29.69) < 0.05))
-
 # -- the clause the same sentence opens with, measured on the thing the sentence is about ---------
 _FRAC_EP = {k: abs(_runlo(LLO, v) / RESIDUAL) for k, v in EP['arm of record']['eps'].items()
             if 'today' not in k}
@@ -812,17 +842,21 @@ _SPREAD3 = 100 * (max(_FRAC_EP[k] for k in _CENTRAL) - min(_FRAC_EP[k] for k in 
 _SPREAD5 = 100 * (max(_FRAC_EP.values()) - min(_FRAC_EP.values()))
 print(f"      spread across the THREE central conventions: {_SPREAD3:.2f} of a point;  "
       f"across all FIVE: {_SPREAD5:.2f} points")
-gate("⛔⛭⛭ ** Ⓙ② AND l.2395's OTHER CLAUSE -- `it is insensitive to the endpoint "
-     "convention, moving under a tenth of a point` -- IS TRUE OF THREE CONVENTIONS AND FALSE OF "
-     "THE FIVE THE SAME PARAGRAPH NAMES. **  *Across eta_rec, the visibility peak and tau = 1 the "
-     "fraction moves 0.05 of a point, which is the clause as written.  Across the two "
-     "HALF-MAXIMUM EDGES it moves 8.10 points, from 13.09 to 21.19 per cent, because r_D itself "
-     "runs 5.37 to 12.68 Mpc there and the FLOOR is a function of r_D while the DIFFERENCE is "
-     "not.  ⇒ ** The clause imports the convention-independence of the arm-MINUS-arm difference "
-     "(Ⓗ③, Ⓖ②) into a statement about ONE ARM's absolute phase, where it does not hold.  Routed: "
-     "either name the three conventions, or say `under a tenth of a point between the three "
-     "recombination-epoch conventions and eight points across the half-maximum edges`. ** *",
-     bool(_SPREAD3 < 0.1 and _SPREAD5 > 1.0
+gate("⛭⛭ ** Ⓙ② AND THE ENDPOINT CLAUSE IS RESOLVED THE OTHER WAY -- 69 LANDED BOTH HALVES "
+     "RATHER THAN NARROWING THE CLAIM, so the gate asserts BOTH: under a tenth of a point between "
+     "the three endpoints at the recombination epoch, and eight points across the half-maximum "
+     "edges. **  *Measured here: 0.05 of a point across eta_rec, the visibility peak and tau = 1; "
+     "8.10 points from 13.09 to 21.19 per cent once the two half-maximum edges are included.  "
+     "r7657 reported the clause -- `insensitive to the endpoint convention, moving under a tenth "
+     "of a point` -- as TRUE of three conventions and FALSE of the five the same paragraph names, "
+     "because r_D itself runs 5.37 to 12.68 Mpc there and the FLOOR is a function of r_D where the "
+     "arm-minus-arm DIFFERENCE (Ⓗ③, Ⓖ②) is not.  ⇒ ** The landed sentence now says both, and names "
+     "the mechanism in its own words: `where the damping length itself more than doubles`. ** "
+     "⌗ *2.36-fold, 5.373 to 12.681 Mpc, which is what `more than doubles` is asserted against.*",
+     bool((_PR is None or abs(_PR[0] - round(_SPREAD5)) < 1e-9)
+          and _SPREAD3 < 0.1 and 7.5 < _SPREAD5 < 8.5
+          and (EP['arm of record']['eps']['visibility FWHM, late edge']
+               / EP['arm of record']['eps']['visibility FWHM, early edge']) > 2.0
           and all(0.10 < _FRAC_EP[k] < 0.25 for k in _FRAC_EP)))
 # =================================================================================================
 head("Ⓚ  EVERY FIGURE THE INDEX ROW AND THE DOCSTRING PRINT, PINNED AS A LITERAL TWIN")
@@ -875,6 +909,79 @@ gate("⛭ Ⓚ① ** AND EVERY ONE OF THE SIXTEEN IS PINNED TO THE DIGIT THE ROW 
           and abs(round(100 * max(_FRAC_EP.values()), 1) - 21.2) < 1e-9
           and abs(round(_SPREAD5, 2) - 8.10) < 1e-9
           and abs(round(_SPREAD3, 2) - 0.05) < 1e-9))
+
+# =================================================================================================
+head("Ⓛ  ⛭⛭⛭ r7659 ITEM 2 -- THE TWO ROUTES ON THE ARM-OF-RECORD PAIR, WHICH IS THE PAIR "
+     "THE SENTENCE NAMES")
+# =================================================================================================
+# ⛭ ** 69's ITEM 2, verbatim: "Run the full Bessel sum on the arm-of-record pair and assert its
+#   agreement with the window there, so the method claim is checked on the pair the sentence
+#   names."  The ask came from 60's cold read: Ⓑ① and Ⓑ② establish the agreement on the NAMESAKE
+#   pair, and the paragraph is about the arm of record.  69 restated the sentence as a property of
+#   the METHOD -- "the closed-form window being exact to the fifth decimal place against the full
+#   spherical-Bessel sum" -- which is the honest wording for a claim measured on one pair. **
+#   ⌗ *`running_bessel` carries the module tilt `NS` and takes no `ns` argument, so this is the
+#     FIXED-TILT comparison -- both arms at 0.96 -- which is exactly the +0.041 the sentence
+#     quotes.  The as-run figure has no Bessel counterpart here and is not claimed to.*
+# ⌗ ORDINALS ARE THEIR OWN TABLE.  `_WORDNUM` holds cardinals, and the first draft of this read
+#   looked `fifth` up in it, got `None`, and PRINTED "clause not found" for a clause that was
+#   there -- a read that reports its own success as a miss is worse than one that raises.
+_ORDINAL = {'third': 3.0, 'fourth': 4.0, 'fifth': 5.0, 'sixth': 6.0, 'seventh': 7.0}
+_PAPER_WIN = re.search(r'the closed-form window being exact to the (\w+) decimal place against '
+                       r'the full spherical-Bessel sum', _P15FLAT)
+_P_DECW = _PAPER_WIN.group(1) if _PAPER_WIN else None
+_P_DEC = _ORDINAL.get(_P_DECW) if _PAPER_WIN else None
+_bAO, _ppAO = running_bessel(_aor)
+_bCT, _ppCT = running_bessel(_ctl)
+_d_bes = _bAO - _bCT
+print(f"\n    ARM OF RECORD, both arms at a common tilt {NS}:")
+print(f"      closed-form window : arm {_run(_aor, NS):+9.4f}   control {_run(_ctl, NS):+9.4f}"
+      f"   arm-control {_d_96:+.5f} deg")
+print(f"      full Bessel sum    : arm {_bAO:+9.4f}   control {_bCT:+9.4f}"
+      f"   arm-control {_d_bes:+.5f} deg   ({_ppAO:.1f} / {_ppCT:.1f} points per Bessel period)")
+print(f"      the two routes differ by {abs(_d_bes - _d_96):.2e} degrees on the difference, and by "
+      f"{abs(_bAO - _run(_aor, NS)):.4f} / {abs(_bCT - _run(_ctl, NS)):.4f} on each arm's own phase")
+print(f"      l.2385 claims exactness to the "
+      + ("** CLAUSE NOT FOUND -- reworded since r7659 **" if _PAPER_WIN is None else
+         f"{_P_DECW} ({_P_DEC:.0f}th) decimal place" if _P_DEC else
+         f"`{_P_DECW}` decimal place -- ** AN ORDINAL THIS FILE CANNOT CONVERT **"))
+_D_NS = abs((wA - wC) - (bA - bC))
+_D_AO = abs(_d_bes - _d_96)
+print(f"      the NAMESAKE pair's two routes differ by {_D_NS:.2e} and this pair's by {_D_AO:.2e}"
+      f" -- {_D_AO/_D_NS:.1f} times as far apart")
+gate("⛔⛭⛭⛭ ** Ⓛ① ITEM 2 ANSWERED, AND THE LANDED WORDING IS ONE DECIMAL TOO TIGHT FOR THIS "
+     "PAIR: on the arm of record the two routes agree to 5.8e-05 degrees -- THE FOURTH decimal "
+     "place -- where on the namesake pair they agree to 1.4e-05, the fifth.  THIS GATE ASSERTS THE "
+     "MISS AND ROUTES THE CLAUSE. **  *l.2385 says `the closed-form window being exact to the "
+     "fifth decimal place against the full spherical-Bessel sum`, in a sentence whose figure is the "
+     "ARM OF RECORD's +0.041.  Both routes run here on that pair's own three lengths, r_D at the "
+     "visibility peak, both arms at the common tilt, the Bessel sum sampled at 11.6 points per "
+     "period against Ⓒ's measured threshold of 4.6: window +0.04106, Bessel +0.04112.  Both read "
+     "+0.0411 to four decimals and part company in the fifth.  ⇒ ** The method claim HOLDS and "
+     "its precision is a decimal coarser on this pair than on the namesake one: either `to the "
+     "fourth decimal place`, or name the pair the fifth belongs to.  4.1 times the namesake "
+     "pair's gap on a difference 2.9 times the size, so the RELATIVE agreement is a little "
+     "coarser here as well: 0.14 per cent of the difference against 0.10 per cent there. ** *",
+     bool((_P_DEC is None or _P_DEC == 5.0)
+          and 1e-5 < _D_AO < 5e-4 and _D_NS < 5e-5 and _D_AO > 2.0 * _D_NS
+          and _ppAO > 4.6 and _ppCT > 4.6))
+gate("⛭ Ⓛ② and each arm's OWN running phase agrees between the routes to better than 0.05 "
+     "degrees there too, which is Ⓑ①'s tolerance on the namesake pair held on this one.  *Stated "
+     "separately from the difference because the two are different claims: the difference is where "
+     "the convention cancels, and the absolute phase is where it does not.*",
+     bool(abs(_bAO - _run(_aor, NS)) < 0.05 and abs(_bCT - _run(_ctl, NS)) < 0.05))
+gate("⌗ Ⓛ③ and every digit r7659 puts in this receipt's INDEX row is a LITERAL TWIN here too, on "
+     "the rounding the row prints: the two routes' arm-of-record difference and its Bessel "
+     "counterpart, both gaps, both relative agreements, and the two worst-convention orders.  *The "
+     "Ⓚ① chain runs before Ⓛ exists, so this is its continuation rather than a second instrument.*",
+     bool(abs(round(_d_96, 5) - 0.04106) < 1e-9
+          and abs(round(_d_bes, 5) - 0.04112) < 1e-9
+          and abs(round(_D_AO * 1e5, 1) - 5.8) < 1e-9
+          and abs(round(_D_NS * 1e5, 1) - 1.4) < 1e-9
+          and abs(round(100 * _D_AO / abs(_d_96), 2) - 0.14) < 1e-9
+          and abs(round(100 * _D_NS / abs(wA - wC), 2) - 0.10) < 1e-9
+          and abs(round(_ORD_AO, 2) - 3.10) < 1e-9
+          and abs(round(_ORD_NS, 2) - 2.99) < 1e-9))
 
 head("SUMMARY")
 # ═════════════════════════════════════════════════════════════════════════════════════════════════

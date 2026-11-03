@@ -32106,3 +32106,42 @@ Run `41527935081`, **completed: success**, every job on this head: `fast`; the p
 
 ⇒ **The PR now waits on 69.** Nothing on it is mine: no red, no conflict, no review thread, `origin/main` not ahead, nothing uncommitted or unpushed.
 
+### ⚑ `r7659+cc66.1` — **ITEM 1: THE RENAME IS IN, AND ITS REACH WAS ONE `\rcpt` RATHER THAN THE SIX DOCUMENTS MY OWN ROUTING CLAIMED**
+
+`…_and_a_sixth_of_the_scale_is_common_mode.py` → `…_and_a_fifth_…`, carried through `receipts/INDEX.md`, both regenerated appendices, the three baselines keyed by the path (8 figure-pin rows, 10 quote-pin rows, 2 absent-pin rows — **re-keyed, not re-adjudicated**, with that said in each file's header because a re-key is indistinguishable from a re-adjudication in a diff), the receipt's own note, and `CR_cosmology.pdf` rebuilt at 334 pages because a generated input moved.
+
+⛭ **AND THE REACH IS A CORRECTION TO ME.** My `r7657` routing said a rename "reaches `receipts/INDEX.md`, the appendices and every `\rcpt` that cites this file across six documents", and 69's order repeated that from me. **Measured at the rename: ONE `\rcpt`, at `corpus/CR_cosmology.tex` l.2405.** *No other paper cites this receipt at all. The premise was mine, I never checked it, and the rename I called expensive enough to route was a five-minute job.*
+
+### ⚑ `r7659+cc66.2` — **ITEM 3: `Ⓗ④` NOW ASSERTS THE CLAUSE IT REASONS FROM, AND THE LANDED SENTENCE IS TRUE OF THE ARM IT IS STATED ON BY A HUNDREDTH OF AN ORDER**
+
+60's ⓷ is right: `Ⓗ④` asserted that no endpoint convention reproduces two figures the paper carried, `r7657` **landed** that finding — 69 removed the sentence and both figures — and a gate still asserting them would be gating the corpus's history rather than its state. It now reads l.2387–2389's landed clause and asserts THAT.
+
+⛭⛭ **And the restatement measures something the old form could not: the clause is true of the arm of record and would have been FALSE of the namesake pair.** *On the arm of record the five endpoints are all positive and the worst is `3.10` orders below `−78.3`. On the namesake pair the late half-maximum edge gives `0.080` degrees, **`2.99` orders** — a hair under the `no less than three orders` the sentence claims. ⇒ The sentence is stated on the arm of record, so it holds; had it been stated on the pair this file's own headline still uses, it would have failed by a hundredth of an order.*
+
+### ⚑ `r7659+cc66.3` — **ITEM 4: BOTH `Ⓙ` GATES BECOME AGREEMENTS, BECAUSE 69 LANDED BOTH HALVES RATHER THAN NARROWING THE CLAIM**
+
+`Ⓙ①`: l.2394–2396 now reads `11` to `30` per cent, which is what this file measures against `−78.3` (`11.17` and `29.69`), so one sentence no longer carries two denominators. ⌗ *The `−96.6` column stays in the table, because it is what makes the old figures legible as arithmetic rather than as error.*
+
+`Ⓙ②`: the endpoint clause now gives both halves — under a tenth of a point between the three endpoints at the recombination epoch, and eight points across the half-maximum edges — against this file's `0.05` of a point and `8.10` points. ⛭ *69 landed the fuller statement rather than the narrower one, and named the mechanism in the paper's own words: `where the damping length itself more than doubles`, which is gated here as the measured `2.36`-fold, `5.373` to `12.681` Mpc.*
+
+### ⛔ `r7659+cc66.4` — **ITEM 2 ANSWERED, AND THE LANDED WORDING IS ONE DECIMAL TOO TIGHT FOR THE PAIR IT IS STATED ON**
+
+The full Bessel sum now runs on the arm-of-record pair beside the window (`Ⓛ①`, `Ⓛ②`), both arms at the common tilt, r_D at the visibility peak, the sum sampled at `11.6` points per Bessel period against `Ⓒ`'s measured aliasing threshold of `4.6`:
+
+| | window | full Bessel sum | gap | as a fraction of the difference |
+|---|---|---|---|---|
+| **arm of record** | `+0.04106` | `+0.04112` | **`5.8e-05`** — the FOURTH decimal | `0.14` % |
+| namesake pair | `−0.01405` | `−0.01407` | `1.4e-05` — the fifth | `0.10` % |
+
+⇒ **l.2385's `exact to the fifth decimal place` is the namesake pair's figure**, in a sentence whose own figure is the arm of record's `+0.041`. *The method claim HOLDS — `4.1` times the namesake pair's gap on a difference `2.9` times the size — and its precision is a decimal coarser on this pair. Routed: either `to the fourth decimal place`, or name the pair the fifth belongs to.*
+
+### ⌗ `r7659+cc66.5` — **ITEM 5: NEITHER FLUID READING CHANGES l.2079–2083, AND P15 SHOULD NOT CARRY THE ARM'S TWO-PATH HEIGHTS, BECAUSE THEY HAVE NO SINGLE SIGN**
+
+Tabled in full to 69. In short: the sentence is stated on the **control**, and 70's refit control reproduces the default control's fluid heights (`2.388`/`2.809` against `2.392`/`2.766`), so nothing is owed and the claim survives the refit as well as the re-point. ⛔ **But the ARM's two-path heights change sign between the two arm-of-record readings** — above its control at the distances' point (`+2.9` %, `+6.4` %) and **below** it on the refitted arm (`−3.4` %, `−1.4` %) — so a sentence carrying them would be a sentence about which reading was taken. *What survives both is what the paragraph already says.* ⌗ *One finding offered and not recommended: on the arm the two paths agree on the comb to a part in `173` at the distances' point and a part in `146` on the refitted arm, against the control's part in ~`300`. If `a part in three hundred` is meant as a property of the instrument, the arm's is the weaker figure — and it is my arithmetic on 70's banked rows, so I said I will pin it before 69 lands it.*
+
+### ✔ `r7659+cc66.6` — **THE BOOKKEEPING, AND ONE SLIP MY OWN PRINT CAUGHT BEFORE A GATE DID**
+
+⌗ `quote_pin_baseline.tsv`: **three new keys adjudicated ALT-OK in the same pass that minted them, two stale rows removed** — the retired `widens` read and the old range read, both replaced by reads of the landed clauses. `paper_pins_absent.tsv` **138 → 136**, by `--update`, because those two retired reads were exactly what it listed. Every change verified by set comparison against `git show HEAD:` with the rename applied — `comm -23` returning exactly the rows I meant to drop and `comm -13` exactly the ones I meant to add.
+
+⌗ **The slip:** my first draft of the window read looked the ordinal `fifth` up in `_WORDNUM`, which holds cardinals, got `None`, and **printed "clause not found" for a clause that was there**. The gate would have passed on its absence arm and I would have reported the sentence as reworded. *Ordinals are now their own table, and the print distinguishes a missing clause from a word it cannot convert: a read that reports its own success as a miss is worse than one that raises.*
+
