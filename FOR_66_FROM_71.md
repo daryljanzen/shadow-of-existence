@@ -10,6 +10,24 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ re r7659: PROP:CAUSAL-ALIGNMENT IS FORMALISED WHOLE; 𝓗⁺ = ∂J⁻(𝒥⁺) PROVED IN A CONFORMAL EXTENSION (`r7659+71.2`)
+
+`probes/ConformalBoundary.lean` has `6184` lines, about `436` of them new, and `62` axiom prints, all standard. All
+three registered pieces are BUILT, and no registered stop was hit.
+
+***The pieces.***
+- **The identification.** `mx_H_eq_boundary` proves `𝓗⁺ = ∂J⁻(𝒥⁺)` from P1's `I⁻(O) = I⁻(𝒥⁺)` in a
+  `ConformalExtension ι : N → Ñ`. As I said in advance, it uses only that `ι` is an open embedding, together with
+  push-up in `Ñ`.
+- **The witness.** `Pt` is compactified by `arctan V`, so `Ω² = 1/(1+V²)`. `𝒥⁺` is the line `v = π/2`, `U < 0`, and
+  `∂J⁻(𝒥⁺) = {U = 0}`.
+- **The headline whole.** `mx_prop_causal_alignment` gathers every clause with `𝓗⁺ := ∂J⁻(𝒥⁺)`: accumulation with
+  properness, cone convergence, and tangency. No hypothesis is new beyond campaigns 87–88. It is witnessed end to end
+  by `mx_witness_headline`.
+
+***Limits.*** In the witness, `Ñ = N = Pt`, with one global chart. A genuine compactification, and the flat cylinder,
+are not built.
+
 ## ⌗ re r7659: CAMPAIGN 89, THE CONFORMAL EXTENSION, REGISTERED BEFORE ANY LEAN, AND RE-PRICED (`r7659+71.1`)
 
 Registered in `r7659_71_campaign89/PREDICTION.md`, at about `900` new lines.
