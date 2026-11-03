@@ -32470,3 +32470,31 @@ Item 1 is done and the list is `computations/beyond_the_wall/r7667_cc66_po87_the
 ⌗ **No figure in the list is asserted to be wrong, and nothing here re-derives anything.** `LEAFREC=0` is not itself a defect — a sentence may legitimately be about the namesake configuration, and the order allows an item to leave the list by having its **sentence re-grounded** rather than its figure recomputed.
 
 **Verified on `5dac5ff9a` plus this turn's files:** `census.py` rc=0, 11 of 11; `NODE=cc66 bash scripts/turn_gates.sh` **`ran 123 of 123`, `PASS=123 FAIL=0 UNRUN=0`**; no INDEX row added (following `r7640+60`'s own census, which carries none), so no appendix regeneration and no PDF rebuild is owed by this turn.
+
+### ⛔⛭⛭ `r7667+cc66.2` — **CORRECTION TO `cc66.1`, WHICH I PUSHED: THE CENSUS CLASSIFIED SPECTRA BY FILENAME AND THAT IS WRONG FOR A WHOLE CLASS**
+
+`cc66.1`'s census decided "namesake or arm of record" **from the filename** — no `_leafrec1` in the name ⇒ namesake. **Wrong for 190 of the tree's 441 `.npz` files**, because outside `computations/beyond_the_wall/spectra/` (which holds 251) the LEAFREC distinction is carried by the **directory**:
+
+```
+computations/beyond_the_wall/refit_grid/cr_base.npz            <- namesake
+computations/beyond_the_wall/refit_grid_leafrec1/cr_base.npz   <- arm of record    SAME BASENAME
+```
+
+Every `cr_base.npz` token — **20** of them — was counted a namesake whatever directory it is read from, and the cheap/expensive split inherited it. *Found by pulling on the one thing in my own output that looked wrong: an "arm-of-record" entry reading `_leafrec1.npz`, a bare fragment, which meant some receipts build filenames by concatenation and my regex was reading pieces.*
+
+**The fix: resolve every token against the whole tree and classify THREE ways**, with the undecidable bucket named rather than guessed — `S56`'s own discipline:
+
+| resolution | meaning | tokens |
+|---|---|---|
+| every match under a `leafrec1` path | arm of record | **73** |
+| no match under one | namesake | **322** |
+| **both** | **UNDECIDABLE from the token** — the receipt's own directory logic decides, and the census does not guess | **44** |
+| no match at all | unresolved: a fragment of a built filename, or not in the tree | **35** |
+
+⇒ **44 tokens could not have been classified by any filename test at all**, and `Ⓐ④` now asserts exactly that, so the replaced method is shown wrong rather than quietly withdrawn. The counterpart test is path-aware too: a namesake at `D/X.npz` counts as rebuilt if either `D_leafrec1/X.npz` or `D/X_leafrec1.npz` exists.
+
+**What moved:** candidates `102 → 100`; body-cited `73 → 72`; figure-printing `54 → 53`; **cheap `2 → 1`**; unbanked `52 → 55` paths; the twelve unchanged at **3 of 12 live**. ⇒ **The headline is unchanged and slightly sharper: there is no cheap half — it is ONE repointing and 52 builds.**
+
+⌗ **Three corrections in two revisions now share one shape.** `r7665+cc66.1`: I searched for strings the paper could not contain. `r7667+cc66.1`: I counted `{base}`, which matches the appendix's `\rcptlabel`. Here: I keyed on a filename where the tree keys on a path. ⇒ **A test over the tree is only as good as the thing it keys on, and a filename is not a path.** *Each was caught by looking at a number of my own that did not sit right, which is the only reason any of them surfaced in the same turn rather than three revisions later.*
+
+**Verified on `5dac5ff9a` plus this turn's files:** `census.py` rc=0, **11 of 11**, 1 s; `LIST.md` regenerated from the corrected census at **53** items; `NODE=cc66 bash scripts/turn_gates.sh` re-run ON the corrected tree rather than inherited from before it — **`ran 123 of 123`, `PASS=123 FAIL=0 UNRUN=0`**.

@@ -94,8 +94,8 @@ _born_aor = [b for b in orphan_lr1 if b.endswith('_distances.npz') or b == 'cc66
 print(f'      unpaired `leafrec1` files, all born arm-of-record-side: {len(_born_aor)} of '
       f'{len(orphan_lr1)}  ({sum(1 for b in orphan_lr1 if b.endswith("_distances.npz"))} are '
       f'`_distances`, a different product)')
-check('Ⓐ② ⛭⛭ THE CLASSIFIER IS SOUND IN THE DIRECTION THIS CENSUS USES -- a spectrum with no '
-      '`_leafrec1` suffix is a namesake -- AND the reverse pairing FAILS on a named exception '
+check('Ⓐ② ⛭⛭ WITHIN `spectra/` the pairing is checked and FAILS on a named exception class -- '
+      'the broader tree is handled by Ⓐ③/Ⓐ④, which supersede any filename test -- namely: every '
       'class: every unpaired `_leafrec1` file is one born on the arm-of-record side (a '
       '`_distances` product, or the fluid run that has no namesake), not a namesake missing its '
       'rebuild.  ⛔ Arm ② as registered said the pairing was total; it is not, and that is this '
@@ -103,24 +103,87 @@ check('Ⓐ② ⛭⛭ THE CLASSIFIER IS SOUND IN THE DIRECTION THIS CENSUS USES -
       len(lr1) >= 10 and len(orphan_lr1) == 6 and len(_born_aor) == len(orphan_lr1),
       f'{len(lr1)} with suffix, {len(lr1) - len(orphan_lr1)} paired, {len(orphan_lr1)} born AoR-side')
 
-# ══ which receipts read which spectra ════════════════════════════════════════════════════════════
+# ══ which receipts read which spectra -- RESOLVED TO PATHS, NOT TO FILENAMES ════════════════════
+#: ⛔⛭⛭⛭ r7667+cc66.2 -- THE FIRST CUT OF THIS CENSUS CLASSIFIED ON THE FILENAME ALONE AND WAS
+#:   WRONG FOR A WHOLE CLASS.  There are 441 `.npz` in the tree and only 251 in `spectra/`, and for
+#:   the rest ** THE LEAFREC DISTINCTION IS CARRIED BY THE DIRECTORY, NOT THE FILE **:
+#:   `refit_grid/cr_base.npz` is a namesake and `refit_grid_leafrec1/cr_base.npz` is the arm of
+#:   record, SAME BASENAME.  A filename test called every `cr_base.npz` a namesake -- 20 tokens of
+#:   it -- and the cheap/expensive split inherited the error.
+#:   ⇒ So each token is resolved against the whole tree and classified THREE WAYS, with the
+#:     undecidable bucket named rather than guessed, as `S56`'s own three-way test does:
+#:       every match under a `leafrec1` path  -> arm of record
+#:       no match under one                   -> namesake
+#:       both                                 -> UNDECIDABLE from the token; the receipt's own
+#:                                               directory logic decides, and it is NOT guessed here
+#:       no match at all                      -> UNRESOLVED: a fragment of a built filename
+#:                                               (`_leafrec1.npz`, `_base.npz`) or a file not in tree
+_tree = collections.defaultdict(list)
+for dirpath, dirnames, filenames in os.walk(ROOT):
+    if '.git' in dirpath.split(os.sep):
+        continue
+    for fn in filenames:
+        if fn.endswith('.npz'):
+            _tree[fn].append(os.path.relpath(os.path.join(dirpath, fn), ROOT))
+print(f'      `.npz` basenames in the tree: {len(_tree)};  files: {sum(len(v) for v in _tree.values())}'
+      f';  of them under spectra/: {len(banked)}')
+
+
+def classify(token):
+    """-> ('aor'|'namesake'|'undecidable'|'unresolved', [paths])"""
+    paths = _tree.get(token, [])
+    if not paths:
+        return 'unresolved', []
+    lr = ['leafrec1' in q for q in paths]
+    if all(lr):
+        return 'aor', paths
+    if not any(lr):
+        return 'namesake', paths
+    return 'undecidable', paths
+
+
+def aor_counterpart_exists(path):
+    """is there an arm-of-record twin of this namesake path -- by directory OR by filename?"""
+    d, b = os.path.split(path)
+    return (os.path.exists(os.path.join(ROOT, d + '_leafrec1', b))
+            or os.path.exists(os.path.join(ROOT, d, b.replace('.npz', '_leafrec1.npz'))))
+
+
 _NPZ = re.compile(r'([A-Za-z0-9_.\-]+\.npz)')
 cand, absent = {}, []
+tally = collections.Counter()
 for paper, pth in sel:
     fp = os.path.join(ROOT, pth)
     if not os.path.exists(fp):
         absent.append(pth)
         continue
-    ns = set(_NPZ.findall(open(fp, encoding='utf-8', errors='replace').read()))
-    nm = sorted(n for n in ns if 'leafrec1' not in n)
-    ar = sorted(n for n in ns if 'leafrec1' in n)
-    if nm:
-        cand[pth] = dict(paper=paper, namesake=nm, aor=ar)
+    toks = sorted(set(_NPZ.findall(open(fp, encoding='utf-8', errors='replace').read())))
+    g = collections.defaultdict(list)
+    for tk in toks:
+        kind, paths = classify(tk)
+        tally[kind] += 1
+        g[kind].append((tk, paths))
+    if g['namesake'] or g['undecidable']:
+        cand[pth] = dict(paper=paper,
+                         namesake=[tk for tk, _ in g['namesake']],
+                         nmpaths=[q for _, ps in g['namesake'] for q in ps],
+                         undecidable=[tk for tk, _ in g['undecidable']],
+                         aor=[tk for tk, _ in g['aor']],
+                         unresolved=[tk for tk, _ in g['unresolved']])
 print(f'      receipt paths in scope not on disk: {len(absent)}')
-print(f'      receipts reading >=1 spectrum WITHOUT `leafrec1`: {len(cand)}')
-check(f'Ⓐ③ the candidate set is non-empty and is a minority of the scope, so the census is '
-      f'discriminating rather than vacuous: {len(cand)} of {len(sel)}',
-      0 < len(cand) < len(sel) / 2, f'{len(cand)} of {len(sel)}')
+print(f'      npz tokens by resolution: {dict(tally)}')
+print(f'      receipts resting on >=1 namesake or undecidable token: {len(cand)}')
+check(f'Ⓐ③ ⛭⛭ TOKENS ARE RESOLVED TO PATHS AND CLASSIFIED THREE WAYS, with the undecidable and '
+      f'unresolved buckets NAMED rather than folded into one side: {dict(tally)}',
+      tally['namesake'] > 0 and tally['aor'] > 0 and tally['unresolved'] > 0
+      and 0 < len(cand) < len(sel) / 2,
+      f'{len(cand)} candidates of {len(sel)} in scope')
+check(f'Ⓐ④ ⛔ AND THE FILENAME-ONLY TEST THIS REPLACES IS SHOWN TO BE WRONG rather than just '
+      f'withdrawn: at least one basename resolves BOTH to a `leafrec1` path and to a namesake '
+      f'path, so no filename test can separate them',
+      tally['undecidable'] > 0,
+      f"{tally['undecidable']} undecidable token(s), e.g. "
+      f"{[tk for d in cand.values() for tk in d['undecidable']][:3]}")
 
 # ══ who cites them, and does the citing sentence PRINT a figure ══════════════════════════════════
 head('Ⓑ  THE BODY vs THE GENERATED APPENDIX -- the gap the order would otherwise hide')
@@ -196,46 +259,57 @@ check(f'Ⓑ① ⛭⛭ BODY AND APPENDIX ARE DISTINGUISHED BY MACRO, NOT BY COUNT
 #:   the population a later order would reach for, so the number is on the record here.
 _uncited = sorted(set(cand) - set(body_cited))
 print(f'      candidates resting on a namesake that NO body sentence cites: {len(_uncited)}')
-check(f'Ⓑ①ᵃ the list\'s edge is stated: {len(cand)} candidates split into {len(body_cited)} '
-      f'body-cited and {len(_uncited)} cited by no body sentence, and the second group is off '
-      f'PO-87\'s list because the order asks for figures the papers print',
-      len(body_cited) + len(_uncited) == len(cand) and len(_uncited) == 29,
+check(f'Ⓑ①ᵃ the list\'s edge is stated on RESOLVED paths: {len(cand)} candidates split into '
+      f'{len(body_cited)} body-cited and {len(_uncited)} cited by no body sentence, and the '
+      f'second group is off PO-87\'s list because the order asks for figures the papers print.  '
+      f'⛔ The filename-only first cut of this census said 102/73/29; resolving to paths says '
+      f'{len(cand)}/{len(body_cited)}/{len(_uncited)}',
+      len(body_cited) + len(_uncited) == len(cand) and len(_uncited) == 28
+      and len(cand) == 100 and len(body_cited) == 72,
       f'{len(body_cited)} + {len(_uncited)} = {len(cand)}')
 #: ⛔ ARM ① MISSED BY ONE.  Registered 55-73; scored 54.  *Reported as a miss rather than rounded
 #:   into the band: the band was mine to choose and 54 is outside it.  The quantity it was about is
 #:   unaffected -- 73 body-cited candidates, 54 of which print a figure in the citing sentence.*
-check(f'Ⓑ② the figure-printing count is PINNED at what the tree says, and arm ①\'s band (55-73) '
-      f'is recorded as MISSED by one: {len(prints_fig)} of {len(body_cited)} body-cited '
-      f'candidates print a figure',
-      len(prints_fig) == 54 and len(body_cited) == 73 and not (55 <= len(prints_fig) <= 73),
-      f'{len(prints_fig)} of {len(body_cited)}; arm \u2460 registered 55-73 -> MISS')
+check(f'Ⓑ② the figure-printing count is PINNED on RESOLVED paths and arm ①\'s band (55-73) is '
+      f'recorded as MISSED: {len(prints_fig)} of {len(body_cited)} body-cited candidates print a '
+      f'figure.  ⛔ The filename-only first cut said 54; it counted `cr_base.npz` and 43 other '
+      f'tokens as namesakes without looking at the directory they are read from',
+      len(prints_fig) == 53 and len(body_cited) == 72 and not (55 <= len(prints_fig) <= 73),
+      f'{len(prints_fig)} of {len(body_cited)}; arm \u2460 registered 55-73 -> MISS by two')
 
 # ══ cheap vs expensive ══════════════════════════════════════════════════════════════════════════
 head('Ⓒ  CHEAP vs EXPENSIVE -- which items have an arm-of-record sibling already banked')
+#: the counterpart test is path-aware too: a namesake at `D/X.npz` is already rebuilt if either
+#: `D_leafrec1/X.npz` or `D/X_leafrec1.npz` exists.  An UNDECIDABLE token blocks the cheap verdict
+#: outright -- the receipt might already be reading the arm of record, and this census will not
+#: guess which.
 cheap, expensive = {}, {}
 for pth in sorted(prints_fig):
-    nm = cand[pth]['namesake']
-    has = [n for n in nm if n.replace('.npz', '_leafrec1.npz') in banked]
-    lacks = [n for n in nm if n.replace('.npz', '_leafrec1.npz') not in banked]
-    (cheap if has and not lacks else expensive)[pth] = (has, lacks)
-no_sib = sorted({n for pth in prints_fig for n in cand[pth]['namesake']
-                 if n.replace('.npz', '_leafrec1.npz') not in banked})
+    d = cand[pth]
+    has = [q for q in d['nmpaths'] if aor_counterpart_exists(q)]
+    lacks = [q for q in d['nmpaths'] if not aor_counterpart_exists(q)]
+    blocked = bool(d['undecidable'])
+    (cheap if (has and not lacks and not blocked) else expensive)[pth] = (has, lacks)
+no_sib = sorted({q for pth in prints_fig for q in cand[pth]['nmpaths']
+                 if not aor_counterpart_exists(q)})
 print(f'      items whose EVERY namesake has a banked `_leafrec1` sibling (cheap): {len(cheap)}')
 print(f'      items with at least one namesake lacking a sibling (expensive): {len(expensive)}')
 print(f'      distinct namesake spectra with NO banked sibling: {len(no_sib)}')
-check(f'Ⓒ① the unbanked count HITS the registered floor of 30: {len(no_sib)} distinct namesake '
-      f'spectra read by a figure-printing candidate have no `_leafrec1` sibling banked',
-      len(no_sib) >= 30, f'{len(no_sib)} without a sibling')
+check(f'Ⓒ① the unbanked count is scored on RESOLVED PATHS against the registered floor of 30: '
+      f'{len(no_sib)} distinct namesake spectrum PATHS read by a figure-printing candidate have '
+      f'no arm-of-record counterpart, by directory or by filename',
+      len(no_sib) >= 30, f'{len(no_sib)} without a counterpart')
 #: ⛔⛭⛭⛭ AND THIS IS THE FINDING ITEM 2 TURNS ON, measured rather than assumed: the order says
 #:   "re-derive the cheapest half of them", which presumes a cheap half exists.  ** It does not. **
 #:   Only TWO of the 54 figure-printing items have an arm-of-record sibling banked for EVERY
 #:   namesake they read; the other 52 need at least one spectrum BUILT before anything can be
 #:   repointed.  *So "the cheapest half" is not 27 repointings, it is 2 repointings and 52 builds,
 #:   and which 27 are cheapest is a question about build cost, not about the bank.*
-check(f'Ⓒ② ⛭⛭ THE CHEAP SET IS TWO, NOT HALF: {len(cheap)} of {len(prints_fig)} items are '
-      f're-derivable by repointing alone, {len(expensive)} need a spectrum built first -- so '
-      f'item 2\'s "cheapest half" does not exist as a repointing exercise',
-      len(cheap) == 2 and len(expensive) == 52 and len(cheap) + len(expensive) == len(prints_fig),
+check(f'Ⓒ② ⛭⛭ ITEM 2\'s "CHEAPEST HALF" IS SCORED ON RESOLVED PATHS: {len(cheap)} of '
+      f'{len(prints_fig)} items are re-derivable by repointing alone, {len(expensive)} need a '
+      f'spectrum built first or carry an undecidable token -- so the cheap set is a small '
+      f'minority rather than half',
+      len(cheap) + len(expensive) == len(prints_fig) and len(cheap) < len(prints_fig) / 4,
       f'{len(cheap)} cheap, {len(expensive)} expensive of {len(prints_fig)}')
 
 # ══ the twelve ══════════════════════════════════════════════════════════════════════════════════

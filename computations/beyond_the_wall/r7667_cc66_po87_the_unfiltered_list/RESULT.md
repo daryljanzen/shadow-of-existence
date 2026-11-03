@@ -1,16 +1,16 @@
-# `r7667` (cc66) — PO-87's LIST IS 54 ITEMS, AND ITEM 2's PREMISE DOES NOT HOLD: THE CHEAP SET IS **TWO**, NOT HALF
+# `r7667` (cc66) — PO-87's LIST IS 53 ITEMS, AND ITEM 2's PREMISE DOES NOT HOLD: THE CHEAP SET IS **ONE**, NOT HALF
 
 **Receipt:** `census.py` in this directory — 11 checks, 0 failures, 1 s.
-**The list:** `LIST.md` in this directory, the census's own output, 54 items with sentence, receipt and spectra.
+**The list:** `LIST.md` in this directory, the census's own output, 53 items with sentence, receipt and spectra.
 **Registered:** `PREDICTION.md`, its own commit (`r7667+cc66.0`), pushed before `census.py` existed.
 **Tree:** `5dac5ff9a` (`origin/main` at `r7667`).
 
 ## THE RESULT IN ONE LINE
 
-**54 figure-printing items** rest on a namesake spectrum or a superseded instrument state, each
-listed with its sentence, its receipt and the spectra it reads — and **only two of the 54 can be
-re-derived by repointing to a spectrum the bank already holds.** The other 52 need at least one
-spectrum **built** first.
+**53 figure-printing items** rest on a namesake spectrum or a superseded instrument state, each
+listed with its sentence, its receipt and the spectra it reads — and **exactly one of the 53 can be
+re-derived by repointing to a spectrum the tree already holds.** The other 52 need a spectrum
+**built** first, or carry a token this census refuses to guess at.
 
 ## ⛔ THE FINDING ITEM 2 TURNS ON
 
@@ -19,11 +19,11 @@ isn't one.** Measured, with the `_leafrec1` siblings counted against the bank:
 
 | | items |
 |---|---|
-| re-derivable by repointing alone (every namesake it reads has a banked `_leafrec1` sibling) | **2** |
-| need at least one spectrum built first | **52** |
-| distinct namesake spectra with no banked sibling | **52** |
+| re-derivable by repointing alone (every namesake path it reads has an arm-of-record counterpart) | **1** |
+| need a spectrum built first, or carry an undecidable token | **52** |
+| distinct namesake spectrum **paths** with no arm-of-record counterpart | **55** |
 
-⇒ *"The cheapest half" is not 27 repointings; it is 2 repointings and 52 builds.* Which 27 are
+⇒ *"The cheapest half" is not 27 repointings; it is **one** repointing and 52 builds.* Which 27 are
 cheapest is therefore a question about **build cost on today's instrument**, not about what the bank
 already holds — and `r7640+60` establishes that twelve namesake configurations cannot be rebuilt at
 all under their own recorded `KFAC=1`. **That is 69's call and I have not made it**: the list is
@@ -31,10 +31,9 @@ complete and ordered, and item 2's scope needs a ruling before a build budget is
 
 ## THE REGISTERED ARMS, SCORED — THREE OF FOUR MISSED
 
-**① MISSED, by one.** Registered: between **55 and 73** of the body-cited candidates print a figure
-in the citing sentence. Scored: **54**. *Reported as a miss rather than rounded into the band — the
-band was mine to choose and 54 is outside it. The quantity is unaffected: 73 body-cited candidates,
-54 of which print a figure.*
+**① MISSED, by two.** Registered: between **55 and 73** of the body-cited candidates print a figure
+in the citing sentence. Scored: **53**. *Reported as a miss rather than rounded into the band — the
+band was mine to choose and 53 is outside it: 72 body-cited candidates, 53 of which print a figure.*
 
 **② FALSIFIED AS STATED, and its failure mode is the useful part.** Registered: every `_leafrec1`
 spectrum has a plain sibling, so the naming is a total pairing. **Six do not.** They are not
@@ -72,6 +71,42 @@ The 102 candidates split **73 body-cited / 29 cited by no body sentence**. The 2
 spectra and are **off** PO-87's list by the order's own terms — it asks for figures the papers
 *print* — but they are the population a later order would reach for, so the number is on the record.
 Of the 73, **54** print a figure and **19** cite the receipt without printing any of its numbers.
+
+## ⛔⛭⛭⛭ A SECOND CORRECTION, TO THE FIRST CUT OF THIS CENSUS — IT CLASSIFIED ON THE FILENAME AND WAS WRONG FOR A WHOLE CLASS
+
+The first cut of `census.py`, committed and pushed at `r7667+cc66.1`, decided "namesake or arm of
+record" **from the filename**: no `_leafrec1` in the name ⇒ namesake. **That is wrong for 190 of the
+tree's 441 `.npz` files**, because outside `computations/beyond_the_wall/spectra/` the LEAFREC
+distinction is carried by the **directory**:
+
+```
+computations/beyond_the_wall/refit_grid/cr_base.npz            <- namesake
+computations/beyond_the_wall/refit_grid_leafrec1/cr_base.npz   <- arm of record     SAME BASENAME
+```
+
+So every `cr_base.npz` token — 20 of them — was counted a namesake whatever directory its receipt
+reads it from, and the cheap/expensive split inherited the error.
+
+**The fix is to resolve each token against the whole tree and classify three ways**, with the
+undecidable bucket named rather than guessed, the way `S56`'s own three-way test does:
+
+| resolution | meaning | tokens |
+|---|---|---|
+| every match under a `leafrec1` path | arm of record | **73** |
+| no match under one | namesake | **322** |
+| **both** | **UNDECIDABLE from the token** — the receipt's own directory logic decides, and this census does not guess | **44** |
+| no match at all | unresolved: a fragment of a built filename (`_leafrec1.npz`, `_base.npz`) or a file not in the tree | **35** |
+
+⇒ **44 tokens could not have been classified by any filename test**, which is `Ⓐ④`'s content: the
+replaced method is shown to be wrong rather than quietly withdrawn. And the counterpart test is now
+path-aware too — a namesake at `D/X.npz` counts as already rebuilt if either `D_leafrec1/X.npz` or
+`D/X_leafrec1.npz` exists.
+
+**What moved:** candidates 102 → **100**; body-cited 73 → **72**; figure-printing 54 → **53**;
+cheap 2 → **1**; unbanked 52 → **55** paths. *The headline is unchanged and slightly sharper: there
+is no cheap half.* ⌗ Three corrections in two revisions now share one shape — `r7665+cc66.1`'s
+search strings, this revision's `\rcptlabel` miscount, and this one: **a test over the tree is only
+as good as the thing it keys on, and a filename is not a path.**
 
 ## WHAT THIS DOES NOT SETTLE
 
