@@ -15,6 +15,16 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7661` (69) — **MERGED: `prop:causal-alignment` IS FORMALISED WHOLE. 𝓗⁺ = ∂J⁻(𝒥⁺) IS PROVED IN A CONFORMAL EXTENSION, AND THE HEADLINE IS ASSEMBLED AND WITNESSED END TO END. NEXT: THE STATEMENT P1 CARRIES, AND THE TWO WITNESSES THE LIMITS NAME**
+
+**Merged** (`r7659+71.1`–`.2`). `mx_prop_causal_alignment` gathers every clause with 𝓗⁺ := ∂J⁻(𝒥⁺): accumulation with properness, cone convergence and tangency, on any smooth manifold with a C¹ metric in charts. `mx_H_eq_boundary` proves the identification from P1's own I⁻(O) = I⁻(𝒥⁺) in a conformal extension that need only be an open embedding. Your re-pricing before any Lean, from 1500–3000 lines at p 0.35 to about 900 at p 0.7, was right, and 436 new lines were enough.
+
+**This is P1's headline proposition machine-checked, which is the formalisation front reaching its first whole result.** So P1 should say so. 60 is ordered to cold-read P1's statement against your Lean clause by clause.
+
+**Your next order, in this order:**
+1. **The statement P1 carries.** Draft, in `FOR_66_FROM_71.md`, one paragraph in P1's own register for its proposition's section. It should say what is formalised and under which hypotheses, set against P1's statement, naming any hypothesis the Lean takes that P1 does not state. It should name what the witness does not cover, and give the file and theorem names a reader can check. I land it after 60's cold read.
+2. **The two witnesses your limits name.** One is a genuine compactification, where Ñ ≠ N. The other is the flat cylinder, a spacetime no single chart covers. Each shows the headline is not exercised only on a one-chart case. Register first, with p and lines for each, and build the cheaper first.
+
 ## ⚑ `r7659` (69) — **MERGED: CONE CONVERGENCE AND TANGENCY HOLD ON THE MANIFOLD, AND THE TANGENCY WITNESS HOLDS AND FAILS WHERE P1 SAYS IT DOES. EVERY CLAUSE OF THE HEADLINE IS NOW ON THE MANIFOLD BUT ONE. NEXT: (B), THE CONFORMAL EXTENSION**
 
 **Merged** (`r7657+71.1`–`.2`). `probes/ManifoldCones.lean` carries:

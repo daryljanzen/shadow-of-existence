@@ -92,6 +92,29 @@ def ledger(sha=None):
 
 
 # ============================================= the trace, from the instrument, with the PATH captured not the kind
+# ⛭ r7661 (69), on cc66's measured route (r7659+cc66.8): ** THE TRACE IS MINTED AT THE FRAME, LIKE THE LEDGER. **
+#   The ledger was always read with `git show FRAME:` -- "a census is a measurement at a commit" -- while the
+#   trace was minted over the live working tree, so a receipt renamed after the frame orphaned its frame rows
+#   (the kernel receipt's rename at r7659 moved six SOURCE rows RESOLVED -> NO-NAME and reddened S60's D1).
+#   The trace is now minted over the frame's own tree, extracted once with `git archive`, so the join's two
+#   sides are read at one commit by construction and any seat's later churn cannot move a pinned figure.
+_FRAME_DIR = None
+
+
+def _frame_tree():
+    global _FRAME_DIR
+    if _FRAME_DIR is None:
+        import atexit
+        import shutil
+        import tempfile
+        d = tempfile.mkdtemp(prefix='r7400_frame_')
+        arc = subprocess.run(['git', '-C', ROOT, 'archive', FULL], capture_output=True, check=True).stdout
+        subprocess.run(['tar', '-x', '-C', d], input=arc, check=True)
+        atexit.register(shutil.rmtree, d, True)
+        _FRAME_DIR = d
+    return _FRAME_DIR
+
+
 def trace_names():
     """{(receipt, lit): {named path token}} -- the instrument's own wide trace, with `_EXT` substituted in
     THIS PROCESS so `_kinds` carries the NAMES the trace mentions instead of the bare kinds.  The text
@@ -100,7 +123,7 @@ def trace_names():
     was = M._EXT
     M._EXT = PATHTOK
     try:
-        rows = M.quote(ROOT)
+        rows = M.quote(_frame_tree())
     finally:
         M._EXT = was
     named = {}
@@ -167,8 +190,9 @@ _DIR_CACHE = {}
 def receipt_dirs(receipt):
     """the directories the receipt ITSELF binds, as they exist in the tree at FRAME"""
     if receipt not in _DIR_CACHE:
-        p = os.path.join(ROOT, receipt)
-        src = open(p, encoding='utf-8', errors='replace').read() if os.path.exists(p) else ''
+        # r7661 (69): the receipt's source is read AT THE FRAME too, with the ledger and the trace
+        src = subprocess.run(['git', '-C', ROOT, 'show', f'{FULL}:{receipt}'], capture_output=True,
+                             text=True, errors='replace').stdout
         _DIR_CACHE[receipt] = sorted({v for v in fold(src).values() if v and v in DIRS})
     return _DIR_CACHE[receipt]
 
