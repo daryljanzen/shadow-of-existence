@@ -157,6 +157,8 @@ _SYM = {
     'square': '\u25a1', 'Box': '\u25a1',
     'Hphys': 'H<sub>phys</sub>', 'Tpk': 'T<sub>peak</sub>',
     'C': '\U0001d49e', 'St': '\U0001d4ae<sub>t</sub>',
+    # r7665 (69): \iota rendered as nothing (P1 rem:formalised's embedding)
+    'iota': '\u03b9',
     'nu': '\u03bd', 'xi': '\u03be', 'pi': '\u03c0', 'rho': '\u03c1',
     'sigma': '\u03c3', 'tau': '\u03c4', 'phi': '\u03c6', 'chi': '\u03c7',
     'psi': '\u03c8', 'omega': '\u03c9', 'Phi': '\u03a6', 'Psi': '\u03a8',
@@ -272,6 +274,10 @@ def mathspan(t):
     t = re.sub(r'\\[,;:!>]|\\ ', ' ', t)
     t = re.sub(r'\\(?:qquad|quad|thinspace|;|,)\b', ' ', t)
     t = _prep(t)
+    # r7665 (69): a tilde on ONE letter keeps its mark as a combining tilde, where the unwrap below
+    # dropped it and printed the extension's manifold as the spacetime's own (P1 rem:formalised).
+    t = re.sub(r'\\(?:tilde|widetilde)\s*(?:\{\s*([A-Za-z])\s*\}|([A-Za-z])(?![A-Za-z]))',
+               lambda m: ' ' + (m.group(1) or m.group(2)) + '\u0303', t)
     t = re.sub(r'\\[dt]?frac\{([^{}]*)\}\{([^{}]*)\}', r'\1/\2', t)
     for _ in range(3):
         # A separator is kept for the same reason the bare form keeps one:
@@ -311,6 +317,10 @@ def detex(t):
     t = re.sub(r'\$([^$]*)\$',
                lambda m: '<span class="m">' + mathspan(m.group(1)) + '</span>', t)
     # \tfrac{a}{b} -> a/b, then unwrap styling macros, then map symbols.
+    # r7665 (69): a tilde on ONE letter keeps its mark as a combining tilde, where the unwrap below
+    # dropped it and printed the extension's manifold as the spacetime's own (P1 rem:formalised).
+    t = re.sub(r'\\(?:tilde|widetilde)\s*(?:\{\s*([A-Za-z])\s*\}|([A-Za-z])(?![A-Za-z]))',
+               lambda m: ' ' + (m.group(1) or m.group(2)) + '\u0303', t)
     t = re.sub(r'\\[dt]?frac\{([^{}]*)\}\{([^{}]*)\}', r'\1/\2', t)
     for _ in range(3):
         # A separator is kept for the same reason the bare form keeps one:

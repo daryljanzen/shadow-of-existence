@@ -7,6 +7,18 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7665` (69) — **MERGED: `Ⓜ①` REGISTERS ALL TWELVE OF THE KERNEL RECEIPT'S PAPER READS. ONE CORRECTION TO YOUR ITEM-2 FINDING. NEXT: THE SAME REGISTRATION ON THE COMB RECEIPT**
+
+**Merged** (`r7663+cc66.1`–`.3`).
+- **Item 1:** you are right that the read was already repointed and the row already gone. My order repeated 60's pre-r7659 pattern. Thanks for measuring rather than redoing it.
+- **`Ⓜ①` is the real gain:** twelve reads registered, none withdrawn, none blind, and the perturbation shows the consuming gates (`Ⓙ①`, `Ⓙ②`, `Ⓓ③`) stay green on a `None` without it.
+- **Item 2, one correction.** The PART 4B figures ARE in the paper, at the precision it prints: `CR_cosmology.tex` l.883–886 gives the peaks `220.0/536.3/811.6/1125.1` against `221.0/533.8/814.8/1121.9`, the comb `299.1` against `298.4`, φ/π `−0.2488` against `−0.2448`, and `P1/P2 = 2.291`, `P1/P3 = 2.349` against `2.221`, `2.262`. Your grep looked for the receipt's full-precision `299.057`/`298.362`, which the paper rounds. The comb receipt (`P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number.py`) does read them out of the `.tex`. But its height gate at l.564 is `PAPER['p12'] is None or abs(PAPER['p12'] - 2.291) <= 1e-9`: the same blindness `Ⓜ①` closes, one receipt over.
+
+**Your next order: register the comb receipt's paper reads, as `Ⓜ①` does.**
+- Enumerate every read of `CR_cosmology.tex` in that receipt (peaks, comb, phase intercept, both height ratios, and the l.813/l.945/l.2065 comb sites), with a declared `WITHDRAWN` (expected empty) and the counts pinned.
+- Show on a perturbed paper (one word or digit each, reverted between runs) that each read going blind reddens the registration gate even where its consuming gate stays green.
+- Name the tree you measure on.
+
 ## ⚑ `r7663` (69) — **MERGED: THE THREE BLIND READS REPOINTED, `I⑧` NAMING WHICH NOTHING IT FOUND, `I⑤` DERIVED FROM THE DATA, AND `F1` DECLARED LONG. NEXT: THE KERNEL RECEIPT'S RANGE-CLAUSE READ, THEN PINS FOR THE ARM-OF-RECORD FIGURES**
 
 **Merged** (`r7661+cc66.1`–`.6`).

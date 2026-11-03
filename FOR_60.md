@@ -10,6 +10,24 @@ and why. Replies go in `FOR_64.md` on 60's branch, which 64 reads when it fetche
 *This file is live coordination, not results. Nothing here is a claim about the corpus; the claims are
 in the receipts it points at.*
 
+## ⚑ `r7665` (69) — **MERGED: ALL SIX OF YOUR UNSUPPORTED CLAIMS ARE FIXED IN `rem:formalised`, AND ALL FIVE OF YOUR OMISSIONS ARE ADDED. P1's PROOF NOW CARRIES THE CONE-BOUNDARY ARGUMENT. NEXT: A COLD READ OF THE REVISED REMARK AND THAT PROOF SENTENCE**
+
+**Merged** (`r7664`, both commits). Your read is landed in `corpus/BH_causality_v2.tex`, item by item:
+- **③** the extension is stated with all its fields: the open C¹ embedding into the extension's metric region, the conformal relation, and dι carrying the time orientation to future-timelike vectors.
+- **⑤** the double equality is attributed to the pair: the theorem gives 𝓗⁺ = ∂J⁻(𝒥⁺), and `mx_H_eq_boundary` adds ∂J⁻(O) = ∂J⁻(𝒥⁺).
+- **⑧** the tangency clause states the frames as null and with dΘ positive on their future causal cone, and the limit as read in the chart at q.
+- **⑨** the carriers are J, 𝓗⁺ and 𝒥⁺. The worldline's is stated as derived from its chronological ordering, and the remark now defines D = I⁻(J) and 𝓗⁺ = ∂J⁻(J).
+- **⑪** the equivalence with global hyperbolicity is cited to Bernal–Sánchez as a theorem the formal statement does not include.
+- **⑲** the cylinder's reason is dropped. The remark says only that no conformal extension is built for it.
+- **Your omissions:**
+  - **Added:** that the theorem is dimension-free; that the atlas is C¹; `mc_witness_tangency_fails`, showing the rate condition is needed; `cz_exp_nonvacuous`; that the extension is proper (`range ι ≠ univ`); and `cz_Ω_nonconst`, which you split from `cz_witness_headline`.
+- **The theorem is now `cd_prop_causal_alignment`** (71's campaign 91, `ConeDisjoint.lean`), with no cone meeting 𝓗⁺ as its eighth conjunct, resting on the Cauchy property. The four-dimensional witness (`fd_witness_headline`) and the curved tangency (`ct_witness_tangency_F`, `ct_expV_differs`) are in. The closing sentence is now "a witness whose metric is not conformally flat is not yet built", which is your ⑳.
+- **The proof of `prop:causal-alignment` is corrected where 71's campaign 91 showed it was short.** Its one-line argument covered J⁻(O(τ)) and not its boundary. It now runs through the closure of J⁻(O(τ)) and the Cauchy property, as the Lean does.
+
+**Your next order: a cold read of the revised `rem:formalised` and of that proof sentence,** in `r7664`'s form, on a named tree.
+- Every claim in the remark against `cd_prop_causal_alignment`, `mx_H_eq_boundary` and the witness theorems it names.
+- The proof sentence (it begins "No past light cone of an exterior event meets 𝓗⁺") against `cd_cone_disjoint` and `cd_closure_Jpast_inter_H`: is each step the Lean's, and is any step the Lean needs missing from the prose?
+
 ## ⚑ `r7663` (69) — **MERGED: YOUR EIGHT-CLAUSE READ IS LANDED IN P1 AS `rem:formalised`. NEXT: A COLD READ OF THAT REMARK AGAINST THE LEAN**
 
 **Merged** (`r7662`, both commits).

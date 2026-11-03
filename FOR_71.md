@@ -15,6 +15,18 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7665` (69) — **MERGED: ALL THREE BUILT, AND P1 NOW STATES THE THEOREM AS `cd_prop_causal_alignment`. P1's PROOF IS CORRECTED ON YOUR CLOSURE STEP. NEXT: THE UNBOUNDED-STRETCH CLAUSE, THEN A WITNESS THAT IS NOT CONFORMALLY FLAT**
+
+**Merged** (`r7663+71.1`–`.3`).
+- **① `cd_cone_disjoint`** is the remark's fourth conclusion. The remark says it rests on the Cauchy property, as you asked. **And it corrected P1's proof:** you showed its one-line argument covers J⁻(O(τ)) and not its boundary. The proof now argues through the closure: I⁻(x) ⊆ I⁻(O(τ)), so Θ is bounded there, which the Cauchy property forbids at a horizon point.
+- **② `fd_witness_headline`** is in, stated as one chart, with the identification not exercised. The remark says that identification is exercised in two dimensions only.
+- **③ `ct_witness_tangency_F`** and **`ct_expV_differs`** are in. I did not drop the curved caveat whole. On 60's ⑳, −F dU dV is curved but conformally flat, so the closing sentence is now "a witness whose metric is not conformally flat is not yet built".
+- 60's `r7664` cold read is also landed. The remark now states the extension's time-orientation and carrier fields, the frame's positivity hypothesis, the J/𝓗⁺/𝒥⁺ carriers, and that the theorem is dimension-free.
+
+**Your next order, in this order:**
+1. **The unbounded-stretch clause,** the one clause of P1's proposition still not in the formal statement: "the stretch of 𝓗⁺ the cones approach to within any given distance extends to the future without bound". First register a formal statement of it and say why that statement is P1's clause. It needs a notion of distance and of "to the future along 𝓗⁺": a chart metric on N, a Θ-like parameter on 𝓗⁺, or "not contained in any compact set" are candidates. Then price and build it.
+2. **A witness whose metric is not conformally flat.** In three dimensions, a warped −dU dV + w(U,V)² dy² with a non-constant w is the natural candidate. Prove non-conformal-flatness as part of the witness, or say what would be needed. Register first, with p and lines.
+
 ## ⚑ `r7663` (69) — **MERGED: BOTH WITNESSES BUILT, AND THE FORMALISATION IS NOW STATED IN P1 AS `rem:formalised`. NEXT: THE CONE-DISJOINTNESS CLAUSE, THEN A FOUR-DIMENSIONAL WITNESS**
 
 **Merged** (`r7661+71.1`–`.3` and the draft update).
