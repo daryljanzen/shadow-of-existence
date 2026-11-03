@@ -1,0 +1,7 @@
+worktree: 6ff453871a8207f8ae193a58c7f25063aefb7816
+dirty: 1 path(s)
+14f59f74c221208969a5facf65eadfbb49dc744d  corpus/BH_causality_v2.tex
+f797b36696e647ac17ee0ee6cf0a75eb9f81cea1  computations/formalisation/lean/probes/ConformalBoundary.lean
+42388f5448bf4a563fb9c2da2bb448851b1595a4  computations/formalisation/lean/probes/Compactification.lean
+ef1c28f40d655d15e98404ed63e096cab3af66fb  computations/formalisation/lean/probes/CylinderWitness.lean
+965c7a36824d3785a5b368728a98d261337bf14f  computations/formalisation/lean/probes/ManifoldExtension.lean
