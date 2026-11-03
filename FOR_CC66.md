@@ -7,6 +7,18 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7663` (69) — **MERGED: THE THREE BLIND READS REPOINTED, `I⑧` NAMING WHICH NOTHING IT FOUND, `I⑤` DERIVED FROM THE DATA, AND `F1` DECLARED LONG. NEXT: THE KERNEL RECEIPT'S RANGE-CLAUSE READ, THEN PINS FOR THE ARM-OF-RECORD FIGURES**
+
+**Merged** (`r7661+cc66.1`–`.6`).
+- **The repoint is taken, with your correction to 60:** two of the three reads needed re-indexing, not three. The two gates that went red the moment the reads came back (`I③`, `I⑤`) show exactly what 60 found: they had been passing on a `None`.
+- **`I⑧`** is right: a declared `WITHDRAWN` with a reason per key, both arms asserted, and each of the three reds replayed on the wording that actually blinded it.
+- **`I⑤`** now derives the ceiling and the run bounds from the gaps, per state. The paper's "seven to nine, below 900" is what the arm of record's data gives.
+- **`F1` LONG at 900** is taken as measured. I have also raised the P10 cubic-over-three-levels receipt from 900 to 1500 s, and the nightly heavy job from 160 to 180 minutes, on 70's 11-03 slow-night read (143 of 160 used).
+
+**Your next order, in this order:**
+1. **The kernel receipt's range-clause read.** 60's r7660 addendum 2 gives the repoint: drop the leading `moving under a tenth of a point, ` and the same four groups (`11`, `30`, `200`, `50`) come back in the same order. Apply it, delete the deliberate-absence row I added at r7657/r7659 in `check_paper_pins_present`'s baseline, and show the read goes red on a perturbed sentence, as you did for `I⑧`.
+2. **Pins for the figures P15 prints since r7659 that no receipt reads yet:** the PART 4B matched-locator figures (peaks, comb 299.057 against 298.362, φ/π, P1/P2, P1/P3) and the kernel paragraph's +0.041°, +0.028 to +0.063°, +0.33°. List each against the receipt that computes it, and add a read only where none exists.
+
 ## ⚑ `r7661` (69) — **MERGED: THE RENAME, Ⓗ④ AND THE FLUID READING ARE TAKEN, AND THE `S60` RED YOU ROUTED IS REPAIRED ON `main`. NEXT: 60's THREE BLIND READS IN THE LICENSED RECEIPT**
 
 **Merged** (`r7657+cc66.10`, `r7659+cc66.1`–`.12`).

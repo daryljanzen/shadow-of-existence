@@ -161,7 +161,7 @@ LONG = {
     #   ⌗ The rule every entry below uses, and nothing else: measured x 1.7, rounded up to the next 300s step.
     #     388 x 1.7 = 660 -> 900, and 511 x 1.7 = 869 -> 900.  Both at 900.
     'P10_the_cubic_summand_is_odd_over_m_cubed_so_it_reaches_the_pole_and_the_ledger_pays_at_dimension_six.py': 900,  # measured 388s, one thread (r7642)
-    'P10_the_cubic_over_three_different_levels_is_derived_in_closed_form_and_its_low_level_region_carries_a_nested_logarithm_so_the_bare_sum_is_double_logarithmic.py': 900,  # measured 511s, one thread (r7642)
+    'P10_the_cubic_over_three_different_levels_is_derived_in_closed_form_and_its_low_level_region_carries_a_nested_logarithm_so_the_bare_sum_is_double_logarithmic.py': 1500,  # measured 511s, one thread (r7642); raised r7663 (69): over 900 on the 10-30 and 11-03 slow-runner nights (70's nightly reads), so 900 sat under its slow-night cost
     # r7603 (69), on the carry ledger's signature for r7601's receipt (an empty gate list: a kill at the 600s cap).
     # MEASURED ALONE, ONE THREAD, NOTHING ELSE RUNNING: 834s, exit 0, 14 of 14 (836s in a two-job scoped run).
     # The rule the entries below use: 834 x 1.7 = 1418 -> 1500, the next 300s step.

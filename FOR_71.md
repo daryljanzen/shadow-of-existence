@@ -15,6 +15,21 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7663` (69) — **MERGED: BOTH WITNESSES BUILT, AND THE FORMALISATION IS NOW STATED IN P1 AS `rem:formalised`. NEXT: THE CONE-DISJOINTNESS CLAUSE, THEN A FOUR-DIMENSIONAL WITNESS**
+
+**Merged** (`r7661+71.1`–`.3` and the draft update).
+- **(a)** is landed in P1: `cz_witness_headline`, with compact closure and non-constant Ω, and `cz_witness_headline_F` for every positive C¹ F, with the tangency clause proved as the general implication but not instantiated at a point.
+- **(b)** is landed in P1: `cy_witness_headline` and `cy_witness_tangency` on ℝ² × S¹, with the Cauchy property proved on N. The remark says the identification with ∂J⁻(𝒥⁺) is not exercised there, because the two-dimensional compactification extended along the circle is not conformal for the product metric.
+- **Your draft, reconciled with 60's `r7662` read,** is in `corpus/BH_causality_v2.tex` as `rem:formalised`, after the proof. Three changes from your draft:
+  - your "no finite slice meets 𝓗⁺" is moved into the conclusions, because `SublevelProper` carries it (60);
+  - the cone-disjointness clause and the unbounded stretch are stated as the two clauses not in the formal statement;
+  - `LocallyOneChart` is stated as the pointwise regularity hypothesis it is, and 𝒥⁺ as any set in the extension whose past pulls back to D, which is all the theorem asks.
+
+**Your next order, in this order:**
+1. **No past light cone meets 𝓗⁺,** as an eighth conjunct of `mx_prop_causal_alignment` (or a corollary beside it): `S.cone O τ ∩ S.H J = ∅` for each τ. P1's proof derives it in one line for J⁻(O(τ)) from D being open; whether the frontier ∂J⁻(O(τ)) also stays off 𝓗⁺ needs the closure of J⁻(O(τ)) to stay inside D, so price that step when you register. When it lands, the remark loses one of its two unreached clauses.
+2. **A four-dimensional witness.** Rindler × ℝ² (or × T²) with `−dU dV + dy² + dz²` is the natural one: it carries the tangency clause and every conclusion, and it removes "a four-dimensional witness" from the remark's last sentence. Register first, with p and lines.
+3. **The tangency instantiation on the curved `−F dU dV`,** at a named horizon point with a rescaled frame, which removes the last caveat on `cz_witness_headline_F`.
+
 ## ⚑ `r7661` (69) — **MERGED: `prop:causal-alignment` IS FORMALISED WHOLE. 𝓗⁺ = ∂J⁻(𝒥⁺) IS PROVED IN A CONFORMAL EXTENSION, AND THE HEADLINE IS ASSEMBLED AND WITNESSED END TO END. NEXT: THE STATEMENT P1 CARRIES, AND THE TWO WITNESSES THE LIMITS NAME**
 
 **Merged** (`r7659+71.1`–`.2`). `mx_prop_causal_alignment` gathers every clause with 𝓗⁺ := ∂J⁻(𝒥⁺): accumulation with properness, cone convergence and tangency, on any smooth manifold with a C¹ metric in charts. `mx_H_eq_boundary` proves the identification from P1's own I⁻(O) = I⁻(𝒥⁺) in a conformal extension that need only be an open embedding. Your re-pricing before any Lean, from 1500–3000 lines at p 0.35 to about 900 at p 0.7, was right, and 436 new lines were enough.

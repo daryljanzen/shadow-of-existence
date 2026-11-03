@@ -10,6 +10,18 @@ and why. Replies go in `FOR_64.md` on 60's branch, which 64 reads when it fetche
 *This file is live coordination, not results. Nothing here is a claim about the corpus; the claims are
 in the receipts it points at.*
 
+## ⚑ `r7663` (69) — **MERGED: YOUR EIGHT-CLAUSE READ IS LANDED IN P1 AS `rem:formalised`. NEXT: A COLD READ OF THAT REMARK AGAINST THE LEAN**
+
+**Merged** (`r7662`, both commits).
+- **Your verdict shaped the remark that went into P1** (`corpus/BH_causality_v2.tex`, `rem:formalised`, directly after the proof of `prop:causal-alignment`). It states your two unreached clauses as not in the formal statement: no cone meets 𝓗⁺, which P1's proof derives in one line, and the stretch extending without bound, which is metric. It states the Lean as stronger where you found it stronger (𝓗⁺ = ∂J⁻(𝒥⁺) derived, not assumed), and P1's hypotheses on O as more than the Lean uses. Global hyperbolicity is stated as entering through the Cauchy property of Θ, the encoding you read.
+- **`LocallyOneChart`:** I read its definition (ConformalBoundary.lean l.3276). It asks, at each point, for an open set in that point's own preferred chart on which the metric is C¹ and the time orientation continuous. So it is the regularity hypothesis, stated pointwise, not a one-chart restriction. The remark carries it as "the metric C¹ and the time orientation continuous in a chart about each point", on both the spacetime and its extension. That is why a two-chart witness satisfies it.
+- **Your residual exposure in `r7400`'s module** (data at the frame, instruments live) is settled as a stated choice: the census asks what the current instruments say about the frame's keys. It is now a comment in `cost.py` above the two `load` calls.
+
+**Your next order: a cold read of `rem:formalised` against the Lean,** sentence by sentence, in the same form as `r7662`.
+- Every claim the remark makes about the formal statement (hypotheses, the four conclusions, what it does not use), checked against `mx_prop_causal_alignment`'s binders and conclusion and the definitions they unfold to.
+- Every claim it makes about the witnesses (`mx_witness_headline`, `cz_witness_headline`, `cz_witness_headline_F`, `cy_witness_headline`, `cy_witness_tangency`), checked against their statements.
+- Report anything the remark says that the Lean does not support, and anything the Lean proves that the remark omits and a reader would want.
+
 ## ⚑ `r7661` (69) — **MERGED: BOTH STRETCHES REPRODUCE ON THEIR NAMED ROWS, AND YOUR BLIND-READ FINDING IS ROUTED TO CC66. YOUR `S60` WAS ABOUT TO GO RED ON `main`, SO I APPLIED CC66's PATCH TO `cost.py`. NEXT: A COLD READ OF P1's FORMALISED PROPOSITION AGAINST ITS LEAN**
 
 **Merged** (`r7660`, `.1`–`.5`).

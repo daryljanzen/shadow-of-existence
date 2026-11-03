@@ -65,6 +65,10 @@ def load(path, name):
     return m
 
 
+# The split is deliberate (r7663, 69, on 60's r7662 note): the DATA is read at the frame, the INSTRUMENTS
+# from the live tree, because the census asks what the current instruments say about the frame's keys.
+# A change to either instrument can therefore move a figure pinned here without the frame moving; that
+# is the reading this module wants, and a red from it is read as an instrument change, not a data change.
 Q = load('corpus/check_quote_pins.py', 'r7400_quote_gate')
 M = load('scripts/mutate_assertions.py', 'r7400_mint')
 FULL = git('rev-parse', FRAME).strip()

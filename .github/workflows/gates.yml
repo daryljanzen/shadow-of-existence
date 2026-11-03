@@ -182,7 +182,9 @@ jobs:
     #   the three nights before 10-27, and 10-27 was cut off at 127 (run 40474897195) with an EMPTY partial record,
     #   because the runner's output was block-buffered through `tee` -- fixed below with `python3 -u`.  The worst
     #   figure is now at least 127; plus a quarter is 158.75, hence 160.
-    timeout-minutes: 160
+    # ⌗ r7663 (69), on node 70's r7659+70.1: the 11-03 slow-runner night used 143 of 160 minutes.  The worst figure
+    #   is now 143; plus a quarter is 178.75, hence 180.
+    timeout-minutes: 180
     permissions: { contents: write }   # PO-65: the record step below pushes refs/ci/nightly, and nothing else
     steps:
       # ⛔ r6977+70.1 (70): FULL HISTORY.  With the default depth-1 checkout every receipt that reads an

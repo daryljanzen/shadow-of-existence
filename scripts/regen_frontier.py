@@ -262,6 +262,8 @@ EST = {
         'temperature -- a correct strike with the item lying beyond it. '),
     'PO-87': ('a mechanism for the computed spectrum\'s shape deficit, its two halves reported apart',
         2, 2, 3, 'P15\'s acoustic figures re-derived on the leaf-rate arm of record',
+        'r7663 LANDS r7661+cc66, r7662 (60), r7661+71, r7659+70: the licensed receipt\'s three paper-reads read the landed wording and show their reds; '
+        'P1 states its formalisation (rem:formalised), with witnesses on a genuine compactification and on R2 x S1. '
         'r7661 MERGES r7659+cc66, r7660 (60), r7659+71: the paper sites hold on cold read; the fluid pair leaves the two-path sentence on the control; '
         'P1\'s headline proposition is formalised whole in Lean. '
         'r7659 LANDS r7657+cc66, r7658 (60), r7657+70: the forbidden route on the arm of record moves the contrast 6.7 errors onto the control; '
