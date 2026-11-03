@@ -1,0 +1,10 @@
+worktree: 5246b45bf84f41489d82e2eeaedad56280e361a9
+dirty: 1 path(s)
+9f248b592a1f006b08539f828dd04b3f3d4bfa95  P15_the_licensed_configuration_moves_neither_statistic_and_t
+3630fff16c2cfff5f2a5252bab7ee9c3a1f232ce  P15_the_kernels_phase_difference_between_the_arms_is_four_or
+
+⌗ r7660 ① -- THE TREE EVERY VERDICT OF THIS REVISION IS READ ON, recorded BEFORE the banks are
+  made rather than after, because r7659 showed what a cold read costs when it cannot name its tree:
+  cc66's 3630fff1 added an arm-of-record running-phase row to the kernel receipt AFTER r7658's bank
+  was taken, so r7658's reading and r7659's correction were both right, about different trees.
+  The only path dirty while these banks were made is this revision's own runs/ directory.
