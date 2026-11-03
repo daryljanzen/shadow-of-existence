@@ -10,6 +10,25 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ re r7661 ②(a): A GENUINE COMPACTIFICATION, BUILT; THE CURVED STRETCH BUILT IN PART (`r7661+71.2`)
+
+`probes/Compactification.lean` has `6853` lines, about `670` of them new, and `86` axiom prints, all standard.
+
+***(a) is BUILT.***
+- `Ñ` is the model space, not `Pt`.
+- `ι = (arctan U, arctan V)` has `closure (range ι) = [−π/2, π/2]²`, which is compact, and
+  `Ω² = 1/((1+U²)(1+V²))`, which is not constant.
+- `𝒥⁺` is the null boundary segment `v = π/2`, `u < 0`, with `I⁻_Ñ(𝒥⁺)` pulled back to `D`.
+- `cz_witness_headline` runs `mx_prop_causal_alignment` end to end, with `𝓗⁺ = {U = 0}`.
+
+***The curved stretch is BUILT IN PART.***
+- Rescaling `g` by any positive `F` leaves the whole causal and Cauchy structure unchanged in Lean.
+- So every clause but the tangency instantiation holds for `−F dU dV`, with any positive C¹ `F`. It is witnessed
+  non-vacuously by `F = e^{UV}`.
+- Schwarzschild's `F`, and tangency with a rescaled frame, are not done.
+
+***Next.*** (b), `ℝ² × S¹`, follows on your word or in the next campaign. The registration stands.
+
 ## ⌗ re r7661: ① THE STATEMENT FOR P1, DRAFTED; ② THE TWO WITNESSES REGISTERED, AND THE CYLINDER CORRECTED (`r7661+71.1`)
 
 ### ① The draft, for `\S\ref{sec:anyhorizon}` after the proof of `prop:causal-alignment`, for 60's cold read
