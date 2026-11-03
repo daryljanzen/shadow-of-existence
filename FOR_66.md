@@ -32218,3 +32218,20 @@ rc=0; timeout 600 python3 scripts/red_carry.py --union reads --list "$RUNNER_TEM
 ⛭ **AND THE REFINEMENT, which is why this entry is pushed rather than held.** I held two pushes for the plain suite running on `8add4b241`, correctly by the standing rule — nothing uncommitted, no fix waiting, a long job genuinely mid-flight. But that job's scope is *the receipts that read `FOR_66.md`*, `19` of them, and **this entry edits `FOR_66.md`**. ⇒ *Its verdict would certify a tree this edit supersedes — the same defect as `r7659+cc66.7`'s root cause, where I appended to the reply file while the validating batch was running: **a green certifies the tree it read, and a reply file edited after it is a tree it never saw.** The `55` minutes of runner time are already spent either way; what the push costs is a verdict about a superseded tree, and what it buys is the same `19` receipts re-run, plus the carry, on the tree that will actually be reviewed.*
 
 ⇒ **So the hold rule gets one clause: hold for a mid-flight job unless its own scope is derived from what you are about to change.** *In that case the hold is not conserving a measurement, it is conserving a stale one.*
+
+### ⛭ `r7659+cc66.12` — **THE COUNT IN `cc66.10` IS WRONG: IT IS THREE SCOPED LINES, NOT TWO — AND THE SAME READING CLEARS THIS BRANCH'S OWN RECEIPTS BY CI'S ARITHMETIC RATHER THAN BY MY ASSURANCE**
+
+`cc66.10` says the orphaned join reds **two** scoped lines. **It reds all three.** The plain suite's record at `6ac20fe0d` reads
+
+```
+RECORD (suite, …@ 6ac20fe0dc): ran 20, 1 named red; +0 carried, 0 cleared by a green, 1 still red
+  = still red: …S60…  -- gate(s) ['Ⓓ①']
+```
+
+⌗ *I had the suite line wrong twice over: first as green-because-nothing-in-scope, then as red-by-elimination because the previous head's log was `HTTP 404` — the job showed `cancelled` although its receipts step had completed `failure` one minute before my push. **Both readings were inferences; this one is the log.***
+
+✔ **AND `ran 20, 1 named red` IS THE ONE ARITHMETIC THAT CLEARS THIS BRANCH.** The population is the `19` receipts in this range's natural suite scope plus the carried `S60`, and exactly one of the twenty is red. *So "no receipt of this PR's own fails" stops being my assurance and becomes CI's subtraction.* ⌗ *I had run those same `19` on this container beforehand — every one `rc=0`, which is corroboration and not the proof; the proof is that the runner found `20` and named `1`.*
+
+**The tier's final state at this head, eight jobs that are not skipped:** `fast` ✔, the tolerance scope job ✔, probe builds `A`/`B`/`C` ✔ (all three delivered, `NEVER PROBED: 0 of 1`), and **three red — the plain suite, the runner-read sweep, the tolerance perturbation on code and data — every one of them `S60` `Ⓓ①` and nothing else.** The three carry lines all print ⚠ CONTRADICTED: suite `90`/`89` over `422.9` h, reads `4`/`3` over `194.2` h, tolerance `88`/`86` over `431.9` h. ⌗ *The suite line adds `270 pair(s) UNCHECKABLE: a pushed tree is no longer fetchable` — the history instrument losing the trees it would need, which is worth knowing before anyone leans on those counts.*
+
+⛭ **WHY THIS IS PUSHED NOW WHEN `cc66.11` HELD THE SAME SENTENCE BACK.** The hold condition was a long job genuinely mid-flight; the tier at `6ac20fe0d` is complete, so holding conserves nothing and the only remaining cost is one more tier on the next push — *which any future push spends anyway*. ⇒ **A wrong figure in the reply file is not worth saving an hour of runner time**, and the arithmetic above is the entry a reader would otherwise have to re-derive. ⌗ *The standing comment on the PR already carried the corrected count; the reply file is the channel that gets trimmed into the record, so it does not get to be the stale one.*
