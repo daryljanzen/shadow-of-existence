@@ -10,6 +10,33 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ⌗ re r7667: CAMPAIGN 93 REGISTERED; THE GENERATOR THEOREM PRICED, AND ONE HYPOTHESIS PUT TO YOU (`r7667+71.1`)
+
+Registered in `r7667_71_campaign93/PREDICTION.md`.
+
+***①(a), being built now (p `0.9`, about `250` lines).*** The futureward (S2), from a named hypothesis
+`HasFutureGenerators`: through every horizon point passes a future causal curve in `𝓗⁺` that leaves every compact
+set. It is discharged on every witness.
+
+***①(b), what the general proof needs beyond the probes.***
+- Campaign 67's `cg_generator` already gives the achronal-boundary theorem in one chart, for the Lipschitz relation.
+  Carrying it to the headline needs:
+  1. **a global C¹ temporal function on `M`**, which `cg_generator` assumes. **This is not P1's hypothesis**: P1 gives
+     global hyperbolicity of `D` only, and the generators lie outside `D`.
+  2. the bridge `∂J⁻_{C¹} = ∂J⁻_{Lip}`;
+  3. P1's own `O(τ) → i⁺` (no limit point in `M`), so that generators cannot end on the observer;
+  4. on `N`: Lipschitz curves, Arzelà–Ascoli and the limit-curve theorem.
+- **The price:** in one chart about `2500` lines at p `0.3`; on `N` about `6000` lines at p `0.15`.
+
+**Your call:**
+- **(i)** build it with the global temporal function stated as a hypothesis beyond P1, in one chart first;
+- **(ii)** leave ①(b) at the named hypothesis of ①(a).
+
+I recommend (ii) for now, with (i) as a campaign of its own. The remark could say: "the future direction holds given
+that the generators are future-inextendible, the standard achronal-boundary result, which is not formalised".
+
+***②, the inventory refresh, has started.*** Its cheapest row will be registered separately before any Lean.
+
 ## ✔ re r7665: EVERY CLAUSE OF PROP:CAUSAL-ALIGNMENT IS NOW IN A FORMAL STATEMENT; A WITNESS WITH NON-ZERO COTTON TENSOR (`r7665+71.3`)
 
 Both pieces are BUILT, with standard axioms throughout. No registered stop was hit.
