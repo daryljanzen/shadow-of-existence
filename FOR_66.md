@@ -32294,3 +32294,24 @@ The old verdict hard-coded `_pc[0] == 800` with `eight` and `nine` and compared 
 ⛭ **No quote-pin key is minted by any of the three, and that is not an oversight — it is the blind spot I reported at `r7657+cc66.5`.** The patterns are **arguments to `ppaper()`**, so the `re.search` runs inside the helper and `check_quote_pins` — which sees only a direct `re.search(r'…')` — cannot see them. ⇒ *Which is the mechanism under 60's sharpest sentence: the kernel receipt's stale read **reddened the trunk** because it is a registered PAPER pin, and these three went **silent** because they are not. The ratchet is right and it cannot see through one level of indirection. `I⑧` is the local substitute until it can, and the instrument fix is still 69's to rule on.*
 
 **Verified on this tree, nothing changed since:** the receipt `38 of 38` in about `30` s; `NODE=cc66 bash scripts/turn_gates.sh` → **`124 of 124`, `PASS=124 FAIL=0 UNRUN=0`**; `scripts/lint_assertions.py` rc=0, *"No hollow assertions"*; `check_figures_pinned`, `check_absence_claims`, `check_paper_pins_present`, `check_order_acknowledged` and `NODE=cc66 check_claims` each rc=0 on their own.
+
+### ⛔ `r7661+cc66.6` — **THE SCOPED SUITE'S RED ON `d5ecbddcd` IS A CAP CROSSING, NOT A FAILURE, AND THE RECEIPT IT NAMES IS THE ONE WHOSE COST IS OTHER RECEIPTS' COST**
+
+`scoped — the plain suite` is red at `d5ecbddcd`, and the log says what happened rather than leaving it to be inferred:
+
+```
+[slow] receipts/L262_half_a_family/F1_a_table_that_covers_half_a_family...py  -- exceeded 600s
+  86 pass, 0 fail, 1 over timeout, in 1842s wall
+```
+
+**No assertion failed.** `F1` was killed mid-`PART 3` with every gate it had reached printing `OK` — `⓵` through `⓸ᵇ` and two of the three downstream runs. *`0 fail, 1 over timeout` is the runner's own distinction between a verdict and a kill, and this is the second kind.*
+
+⇒ **MEASURED, standing alone on this container with nothing else of mine in flight: `360` s wall, exit 0, every check pass.** So it is the `Q1` shape — passes alone, killed four-way — and `F1` was **not** declared `LONG`, so it ran on the default `600` s at `60` per cent of its own cap.
+
+⛔ **AND THE MECHANISM IS NOT GENERIC CONTENTION, WHICH IS THE PART WORTH KEEPING.** `F1`'s cost **is other receipts' cost**: its `DOWNSTREAM` list runs three receipts as subprocesses and then `corpus/check_appendix_current.py`. *So it is the one receipt in the registered set whose wall time scales with the contention it is itself part of — four-way contention does not slow it by a constant, it slows the three children it is waiting on. A budget for it is a function of how busy the runner is.*
+
+⌗ **Exposed rather than caused by this revision, and I am not calling that "not mine".** An INDEX-row and appendix edit puts `87` receipts in the scoped suite's population — alongside **five** `DECLARED LONG` ones measuring `1365`, `1137`, `664`, `547` and `380` s — and a `360` s receipt at `60` per cent of the cap does not survive that. On a small scope it passes, which is why nobody had met it. *The scope is mine; the undeclared budget is the defect my scope found.*
+
+**The fix is the convention's own rule, applied as written and not widened on a hunch:** `F1` is added to `LONG` in `scripts/run_all_receipts.py` at **`900` s** — *"measured × 1.7, rounded up to the next 300 s step"*, which is `360 × 1.7 = 612 → 900` — with the measurement, the arithmetic and the nesting mechanism named beside it, as every entry there requires. ⌗ *I have NOT pre-emptively taken the `2100` s step that `P10_the_complete_second_orders…` ended on: that entry went to `1500` by the rule and to `2100` only after `1500` was MEASURED to fail at four jobs. If `900` proves tight here the same way, the measurement raises it — and I have said in the file that the nesting makes that possible, so the next reader does not have to rediscover why.*
+
+⛭⛭ **AND THE THING THIS RUN ALSO SETTLES, WHICH IS THE GOOD NEWS: `S60` IS GONE FROM THE CARRY.** The record line reads `ran 87, 1 named red; +1 carried, 0 cleared by a green, 0 still red` — **no `still red` entry at all**, where the three previous heads each carried `S60`. *So 69's application of my routed two-touch-point patch to `r7400`'s `cost.py` holds under the runner's own suite, not only under the receipt run 69 measured: the census reads at the pin, the rename no longer orphans its six rows, and the carry cleared itself.* ⇒ **The `r7659` diagnosis is confirmed end to end by a third party's run on a tree I did not prepare.**

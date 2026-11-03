@@ -129,6 +129,21 @@ SLOW = (
 #   The global cap stays where it is; this buys the one receipt that needs it the room to finish,
 #   and the number is the measurement plus headroom rather than a round figure chosen to feel safe.
 LONG = {
+    # ⛭ ADDED r7661 (cc66), on the scoped suite's own report at `d5ecbddcd`: `86 pass, 0 fail, 1 over
+    # timeout`, the one being `F1_a_table_that_covers_half_a_family...`, KILLED MID-PART-3 after every
+    # gate it reached had printed OK.  ** MEASURED ON THIS CONTAINER, nothing else of this seat's in
+    # flight: 360s wall, exit 0, every check pass. **  So it is the Q1 shape -- passes standing alone,
+    # killed four-way -- and the budget is the rule's: 360 x 1.7 = 612 -> 900, the next 300s step.
+    # ⛔ AND THE MECHANISM IS WORTH NAMING, BECAUSE IT IS NOT GENERIC CONTENTION: this receipt's cost
+    #   is OTHER RECEIPTS' cost.  Its `DOWNSTREAM` list runs three receipts as subprocesses and then
+    #   `check_appendix_current.py`, so its wall time scales with the contention it is itself part of
+    #   -- the only receipt in the set whose budget is a function of how busy the runner is.
+    #   ⌗ *Which is why 900 may yet prove tight at four jobs, as 1500 did for the entry below. The
+    #     rule is applied as written rather than widened on a hunch; a measurement can raise it.*
+    # ⌗ *Exposed rather than caused by `r7661`: an INDEX-row and appendix edit put 87 receipts in the
+    #   scoped suite's population, alongside five DECLARED LONG ones (1365s, 1137s, 664s, 547s, 380s),
+    #   and a 360s receipt at 60 per cent of the cap does not survive that.  On a small scope it passes.*
+    'F1_a_table_that_covers_half_a_family_fails_on_the_rest_of_it_later.py': 900,  # measured 360s, this container (r7661)
     # ⛭ ADDED r7642 (60), on r7641's order: the nightly's 10-30 read found these two OVER the 600s cap, each
     # KILLED MID-COMPUTATION rather than failing -- the second at m = 19 of its recoupling sums.  The order gave
     # two exits, declare long with the measured cost or cut the level range, to be chosen BY WHAT THE CLAIM NEEDS.
