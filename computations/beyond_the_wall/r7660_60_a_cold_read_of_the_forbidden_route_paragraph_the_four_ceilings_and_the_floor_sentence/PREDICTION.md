@@ -105,3 +105,67 @@ finding. *`r7658` found three; a revision that must find something is not a cold
 No correction to either stretch is proposed; no receipt is edited; nothing of `70`'s or `cc66`'s is
 touched beyond its banked stdout. No figure moves, no parameter is pinned, no quote-pin key is minted,
 no gate, ledger or census is added.
+
+---
+
+# `r7660+60.2` — ⑧ MISSED AND ⑨'S NEGATIVE IS REACHED FOR THE WORDS; THE FINDING IS SOMEWHERE ELSE, AND IT IS A READER GONE BLIND BEHIND A GREEN GATE
+
+**⑧ MISSED, and I am not retro-fitting it.** I predicted at least one of the thirteen word-claims
+would be stated on a row or object other than the one that produces it. **None is.** Every figure and
+every derived word in both stretches reproduces on the arm-of-record rows the sentences name, including
+the two `cc66` routed last turn and `69` took: the floor's range is now **11 to 30** against `−78.3`
+(the receipt's Ⓙ① asserted the old `9 to 24` was the old residual's), and the endpoint clause now
+separates **"under a tenth of a point" across three conventions** from **"eight points" across the
+half-maximum edges** (its Ⓙ② asserted exactly that split). **So ⑨'s negative is reached for the
+word-claims, and I say so rather than manufacture a finding from them.**
+
+**⑪ AND `⓵`/`⓸` OF `r7658` BOTH RESOLVE ON THE ROW THAT NOW EXISTS.** Line 144 of the kernel bank on
+*this* tree: the arm-of-record running phase is **`−15.4073`** = **`19.7%`** of `−78.3`, its control
+`−15.4483`, the two agreeing to **`0.27%`**. So `−15.4`, "a fifth" and "three tenths of a per cent" are
+all the arm's own figures, and its Ⓕ② says in as many words that three tenths is **looser than the
+namesake pair's tenth** — which is the thing I reported as a loose statement, correctly, about the
+wrong pair.
+
+## ⑫ WHAT I HAVE SEEN AND NOW REGISTER AGAINST, before scoring it
+
+The licensed receipt reads **seven groups of figures out of the paper** to calibrate its own table
+against them. On this tree its output prints **five of the seven as `NOT FOUND -- reworded since
+r7657`**. I then tested each pattern against the paper myself, and the five are **not one thing**:
+
+- **Two are WITHDRAWN figures** — `coef, licensed` and `shape, licensed`. The paragraph no longer
+  prints a measured licensed null at all; it says *"moves neither statistic by construction"*. ⌗ *That
+  is the receipt's own recommendation ① taken — it asked for the licensed half to say it is a namesake
+  comparison or go, and `69` made it structural instead. `NOT FOUND` is the right answer here.*
+- **Three are figures THE PAPER STILL PRINTS that the reader can no longer see** — `coef, forbidden`,
+  `shape, forbidden` and `the ceiling`. An independent pattern recovers from the current wording
+  exactly `6.7`, `−0.0670±0.0086`, `−0.0092±0.0085`; `32`, `38`, `16`, `12`, `2.64`, `1.33`; and
+  `900`, `seven`, `nine` — **which are precisely the figures the receipt's own table measures.** The
+  receipt's patterns miss them on three small rewordings: *"the same coefficient … to"* became *"the
+  contrast coefficient … from … to"*, *"the longest run falls"* became *"the longest run of one sign
+  falls"*, and *"a longest run of X or Y bins"* became *"X to Y bins"*.
+
+**⇒ AND THE CONSEQUENCE IS THE FINDING: those gates PASS WITHOUT THEIR PAPER-SIDE CHECK.** The receipt
+tolerates a missing read by short-circuit — `_PP[key] is None` satisfies the conjunction — which was
+the right design when the sentence might be withdrawn. **But for these three the sentence was not
+withdrawn, only reworded, so a guard built to compare the paper's digits against the receipt's is now
+comparing nothing, and it is green.** ⌗ *A guard that cannot fail on the data it is given is not a
+guard — my own standing lesson, found this time in someone else's receipt and caused by neither seat's
+mistake: `cc66` wrote the reader, `69` reworded the sentence, and the tolerance that made the reader
+safe is what made the blindness silent.*
+
+**⑬ I PREDICT: 2 FOUND, 3 BLIND, 2 WITHDRAWN**, and that for each of the three BLIND the independently
+recovered figures **equal the receipt's own measured values** — so the blindness costs no claim that is
+wrong, only a check that is no longer being made. **⑭ THE REACHABLE NEGATIVE: that one of the three is
+a figure the paper genuinely changed**, in which case the receipt's table and the paper disagree and
+that is a far larger finding than a blind reader. *It is tested by comparing each recovered figure
+against the receipt's table rather than assumed.*
+
+**⑮ AND THE DISTINCTION IS SCORED, NOT ASSERTED.** `WITHDRAWN` and `BLIND` are told apart by whether an
+independent pattern finds the figure in the current paper, and every such pattern is printed beside its
+verdict so the reading can be checked rather than believed.
+
+**⑯ WHAT IS NOT CLAIMED, and it matters here.** **No correction to `cc66`'s receipt is proposed and
+nothing of it is edited** — the three repointed patterns below are a routed *diff*, not a change.
+`69`'s wording is not criticised: it is better than what it replaced, and the reader is what has to
+follow it. *And this is not a red: the gate is green and stays green. It is a check that stopped
+checking, which is the one thing a green gate cannot tell you.*

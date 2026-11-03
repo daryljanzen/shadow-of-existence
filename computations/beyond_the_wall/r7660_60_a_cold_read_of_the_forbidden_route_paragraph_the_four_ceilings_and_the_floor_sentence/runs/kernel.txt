@@ -1,0 +1,276 @@
+
+RECEIPT -- P15: ** `r7223` ORDERED IT: `evaluate the kernel's own phase contribution on EACH ARM'S OWN
+r_s, D_M and r_D, and state the difference between the two arms against the measured residual's
+size`.  *** THE DIFFERENCE IS `$-0.0141^{\circ}$` AGAINST A RESIDUAL OF `$-78.3^{\circ}$` (r7657;
+`$-96.6$` before it) -- NEARLY
+FOUR ORDERS BELOW -- SO THE KERNEL IS NOT A CARRIER AND THE PROJECTION IS CLEARED. *** **
+
+  ⓵ ** THE KERNEL'S PHASE IS A FUNCTION OF EXACTLY TWO DIMENSIONLESS NUMBERS, AND THE ARMS SHARE ONE
+  OF THEM BY CONSTRUCTION. **  *Writing `$x=kD_M$`, `r7234`'s window is
+  `$W\propto x^{n_s-2}e^{-2(xr_D/D_M)^2}/(x\sqrt{x^2-\ell^2})$` and the oscillation it weights is
+  `$\cos(2xr_s/D_M)$`, so the phase depends on `$r_D/D_M$` and on `$r_s/D_M$` and on nothing else --
+  verified here by SCALING all three lengths together and getting the same phase to `$10^{-10}$`
+  degrees.*  ⇒ **`$r_s/D_M$` is `$\theta_*/\pi$`, which the two arms match to `$1.5\times10^{-5}$`
+  because the angle is what the construction computes; `$r_D/D_M$` differs by `$0.27$` per cent.**
+  ⌗ *Moved one at a time: `$r_D/D_M$` carries `$-0.0139^{\circ}$` of the `$-0.0141^{\circ}$` and
+  `$r_s/D_M$` carries `$-0.0001^{\circ}$`.*
+
+  ⓶ ** TWO INDEPENDENT ROUTES, AND THEY AGREE ON THE DIFFERENCE TO FIVE DECIMAL PLACES. **  *The
+  closed-form window gives `$-0.01406^{\circ}$` and the FULL Bessel sum `$-0.01407^{\circ}$`; on the
+  absolute running phase they agree to `$0.012^{\circ}$` out of `$15.5$`.  Both are shown converged
+  -- the window under the quadrature count and the tail reach, the Bessel under its `$k$` sampling.*
+
+  ⓷ ⛔⛭⛭⛭ ** AND THE UNDER-SAMPLED BESSEL SUM MANUFACTURES A DIFFERENCE `$74$` TIMES THE TRUE ONE. **
+  *At `$1.8$` points per Bessel period the arm-minus-control phase reads `$-1.05^{\circ}$`; at
+  `$4.6$` and above it reads `$-0.01407^{\circ}$` and does not move again through a fifty-fold
+  refinement.  **The window route is immune, because it averages the kernel analytically rather than
+  sampling it.**  ⌗ This is the instrument's own documented failure mode -- `the projected peaks would
+  be aliasing while the source comb stayed correct` -- arriving in the PHASE instead of the peaks, and
+  it is the reason the answer is given on two routes rather than one.*
+
+  ⓸ ⛔ ** THE PRE-REGISTERED SIGN IS WRONG, AND THE REASON IS A CONFLATION THIS SEAT HAS NOW MADE
+  TWICE. **  *Predicted `$+0.06^{\circ}$`, measured `$-0.0141^{\circ}$`: the magnitude is inside the
+  pre-registered band and the SIGN FAILED.  **Measured root cause: the kernel's PHASE has
+  `$|{\rm running}|$` FALLING with `$r_D$` -- `$16.77^{\circ}$` at `$5.0$` Mpc to `$8.54^{\circ}$` at
+  `$14.0$` -- while the kernel's PEAK-POSITION drift has `$|{\rm running}|$` RISING with `$r_D$`.**
+  *I read the sensitivity off `r7234`'s peak-offset table for a question about phase, and the two have
+  OPPOSITE `$r_D$` dependence.*  ⌈ ***And the central value was wrong twice over in a way that
+  cancelled:*** *the `$-17^{\circ}$` absolute phase in the pre-registration was a peak-offset running
+  drift converted at `$180^{\circ}$` per peak step where the paper's comb period is `$360^{\circ}$` --
+  the right number by the wrong route and the wrong units at once.  The true phase is
+  `$-15.45^{\circ}$`.*
+
+  ⇒ ⛭ ** SO THE ORDER'S NEGATIVE BRANCH, IN ITS OWN WORDS: `the kernel is not a carrier, the candidate
+  list stays at the driving, the loading and the clock, and the projection is cleared`. **  *The
+  difference is `$1.8\times10^{-4}$` of the residual (r7657's `$-78.3$`; `$1.5\times10^{-4}$`
+  against the `$-96.6$` this file used before it).  No threshold the row could reasonably set is
+  anywhere near it.*
+
+  ⌈ ⛭⛭ ** AND THE PRE-REGISTERED THIRD OUTCOME HOLDS ALONGSIDE IT, WHICH IS A DIFFERENT STATEMENT
+  FROM `cleared`. **  *The kernel's ABSOLUTE running phase is `$-15.45^{\circ}$`, which is `$19.7$`
+  per cent of the residual's `$-78.3^{\circ}$` -- A FIFTH, and a sixth of the `$-96.6$` this file
+  measured against before r7657 re-pointed it -- and it is present in ANY spectrum this
+  instrument projects, the control's included, agreeing between the arms to `$0.09$` per cent.*
+  ⇒ **So `a running phase at correct spacing` is not a phase-clean observable: a fifth of the scale
+  the row reads its candidates against is manufactured by the projection, and it cancels only because
+  both arms carry it.**  *That is why `cleared` is the answer to the order and not the whole of what
+  the evaluation found.*
+
+** COMPUTES: the projection kernel's own running acoustic phase across 104 <= l <= 1886, evaluated on
+   each arm's own r_s, D_M and r_D, by two independent routes -- the closed-form asymptotic window of
+   r7234 read as a complex integral, and the full spherical-Bessel sum -- together with the
+   arm-minus-control difference, its decomposition into the two dimensionless numbers the phase
+   depends on, and the aliasing threshold above which the Bessel route is trustworthy.  *** No
+   spectra are computed and no bank is written; the three background numbers per arm are read off the
+   banked spectra and their run logs. *** **
+
+
+
+========================================================================================================
+  Ⓐ  THE IDENTITY -- THE KERNEL'S PHASE DEPENDS ON TWO DIMENSIONLESS NUMBERS AND NOTHING ELSE
+========================================================================================================
+    arm     : r_s =  145.3281  D_M =  13941.629  r_D =  7.12   r_s/D_M = 0.01042404   r_D/D_M = 5.107007e-04
+    control : r_s =  144.5281  D_M =  13864.663  r_D =  7.10   r_s/D_M = 0.01042420   r_D/D_M = 5.120932e-04
+    OK    Ⓐ① the three numbers were READ from the banks and their run logs, not typed into this file
+    scaling all three lengths by 1.37: running phase -15.4647711313 -> -15.4647711313 deg
+    OK    Ⓐ② SCALE INVARIANCE: the phase is unchanged when all three lengths are scaled together, so it is a function of the two RATIOS and of nothing dimensional
+    the arms differ by 1.59e-05 in r_s/D_M (= theta_*/pi) and 2.73e-03 in r_D/D_M
+    OK    Ⓐ③ and the arms share r_s/D_M to better than a part in ten thousand while differing in r_D/D_M at the per-cent level -- which is why the answer is small rather than half a per cent
+
+    theta_*/pi = r_s/D_M, this grid's own bases:
+      control          r_s  144.528076  D_M  13864.662715  r_s/D_M 0.0104242043
+      namesake arm     r_s  145.328084  D_M  13941.629043  r_s/D_M 0.0104240390   1 part in 63,059
+      ARM OF RECORD    r_s  146.572525  D_M  14061.966911  r_s/D_M 0.0104233303   1 part in 11,927
+      and l_A on this grid: control 301.3748, namesake 301.3796 (+0.0016%), arm of record 301.4001 (+0.0084%)
+    OK    ⛭⛭⛭ ** Ⓐ③ᵃᵒʳ l.2385's `a part in seventy thousand` IS THE NAMESAKE'S, and on the arm of record the acoustic angle is shared to A PART IN TWELVE THOUSAND -- a factor 5.3 looser, and still shared. **  *1 part in 63,059 becomes 1 part in 11,927.  The CLAIM survives: the two arms do share the angle, because the angle is what this construction computes, and 1.2e-4 is still four orders below the residual the sentence compares it with.  The FIGURE moves and is routed.*
+    OK    ⛔⛭⛭ ** AND THE OTHER HALF IS BLOCKED, WHICH THIS GATE ASSERTS AS A FACT ABOUT THE BANK RATHER THAN LEAVING AS A GAP: ** the arm-of-record sibling grid has its nine `cr_*.npz` and NO `cr_base.log`, so `r_D` -- read from that log's `diffusion: r_D at the visibility peak` line -- cannot be had, and the `0.27` per cent in `r_D/D_M` and the `-0.014` degrees downstream of it are not computable on this arm.  ⇒ *The ask is one line of output: that log, or `r_D` banked as a key*
+
+========================================================================================================
+  Ⓑ  TWO INDEPENDENT ROUTES TO THE SAME PHASE, BOTH SHOWN CONVERGED
+========================================================================================================
+    closed-form window : arm  -15.4648   control  -15.4507   arm-control -0.01405 deg
+    full Bessel sum    : arm  -15.4532   control  -15.4391   arm-control -0.01407 deg   (11.5 points per Bessel period)
+    OK    Ⓑ① the two routes agree on each arm's own running phase to better than 0.05 degrees
+    OK    Ⓑ② and on the arm-minus-control DIFFERENCE to better than 0.0005 degrees
+    window convergence (nu, reach): ['-0.01405', '-0.01405', '-0.01405']
+    OK    Ⓑ③ the window route is converged: a sixteen-fold quadrature refinement and a doubled tail reach move the difference by under 1e-5 degrees
+
+========================================================================================================
+  Ⓒ  ⛔ THE UNDER-SAMPLED BESSEL SUM MANUFACTURES A DIFFERENCE SEVENTY TIMES THE TRUE ONE
+========================================================================================================
+    nk =   40000  (  1.8 points per Bessel period):  arm-control =  -1.04649 deg
+    nk =  100000  (  4.6 points per Bessel period):  arm-control =  -0.01407 deg
+    nk =  250000  ( 11.5 points per Bessel period):  arm-control =  -0.01407 deg
+    OK    Ⓒ① below four points per Bessel period the difference is inflated by more than an order
+    OK    Ⓒ② at and above it the number is stable to 1e-5 degrees across a further sixfold refinement
+    OK    Ⓒ③ and the window route gives the same answer at EVERY sampling, because it averages the kernel analytically instead of sampling it -- which is what makes the pair a check
+
+========================================================================================================
+  Ⓓ  THE ANSWER THE ORDER ASKED FOR, IN THE ONE FORM IT ASKED FOR IT IN
+========================================================================================================
+    the kernel's phase difference between the arms, across 104 <= l <= 1886: -0.0141 deg
+    the residual it is measured against:                               -78.3 deg
+    ratio 1.795e-04   = 3.75 orders of magnitude below
+    OK    Ⓓ① the difference is more than THREE orders of magnitude below the residual
+    OK    Ⓓ② so the kernel is not a carrier: the projection is CLEARED, which is the order's own negative branch and a result rather than a null
+    moving r_D/D_M alone: contributes -0.01395 deg of the -0.01405
+    moving r_s/D_M alone: contributes -0.00011 deg of the -0.01405
+    moving both together: contributes -0.01405 deg of the -0.01405
+    OK    Ⓓ③ and r_D/D_M carries essentially the whole of it while r_s/D_M carries under a per cent of it -- the two-number decomposition the identity predicted
+
+========================================================================================================
+  Ⓔ  THE PRE-REGISTERED PREDICTION, SCORED -- AND THE SIGN IS THE PART THAT FAILED
+========================================================================================================
+    OK    Ⓔ① the prediction is on disk, in ONE form as r7223 required, and names its band and its sign
+    predicted: +0.06 deg, band 0.01 to 0.3 in magnitude, POSITIVE.  measured: -0.0141 deg
+    OK    Ⓔ② the MAGNITUDE is inside the pre-registered band
+    OK    Ⓔ③ and `three orders of magnitude below the residual` holds
+    OK    Ⓔ④ ⛔ THE SIGN FAILED -- predicted POSITIVE, measured NEGATIVE.  This gate asserts the failure, not the prediction
+    the kernel's PHASE against r_D:  5.00 -> -16.7656    7.12 -> -15.4648   14.00 ->  -8.5428
+    r7234's PEAK-OFFSET drift against r_D ran the other way: 10.9 -> 16.9 -> 29.0 in magnitude
+    OK    Ⓔ⑤ and the root cause is MEASURED: the kernel's phase magnitude FALLS with r_D while its peak-position drift RISES, so a sensitivity read off the peak table is backwards for a phase
+    OK    Ⓔ⑥ ⛔ and the pre-registration's absolute figure was wrong twice in a cancelling way -- a peak-offset drift converted at 180 degrees per step where the comb period is 360 -- which this gate records by asserting the TRUE phase is near 15 and not near the 34 that table gives
+    OK    Ⓔ⑦ the two-number decomposition held, so refuting outcome 4 did not fire
+    read out of the paper: l.2387-2388 ** NO LONGER CARRIES THAT SENTENCE -- reworded since r7655 **;  l.2383's residual -78.3
+    the cheap runs against the PRODUCTION banks, two-decimal visibility-peak line:
+      control        cheap run 7.10 Mpc   production bank 7.10 Mpc   n_s as run 0.960000
+      namesake       cheap run 7.12 Mpc   production bank 7.12 Mpc   n_s as run 0.960000
+      arm of record  cheap run 7.26 Mpc   production bank 7.26 Mpc   n_s as run 1.015066
+    OK    Ⓗ① ** THE LICENCE FOR THE EIGHT-SECOND RUNS, ASSERTED: ** each one's two-decimal visibility-peak r_D equals the production bank's, so r_D is independent of the spectrum resolution these runs threw away -- which is what makes the endpoint table a measurement of the same arms and not of a cheaper instrument
+
+========================================================================================================
+  Ⓕ  THE PRE-REGISTERED THIRD OUTCOME, WHICH HOLDS ALONGSIDE `cleared` AND IS NOT THE SAME THING
+========================================================================================================
+    the kernel's ABSOLUTE running phase, ARM OF RECORD at a common tilt: -15.4073 deg = 19.7% of the residual -78.3
+    its control, same tilt:                   -15.4483 deg -- the two agree to 0.27%
+    and the NAMESAKE pair, for comparison:    -15.4648 / -15.4507 deg = 19.8%, agreeing to 0.09%
+    OK    ⛭⛭⛭ ** Ⓕ① l.2393's FLOOR, ON THE ARM OF RECORD: the kernel's own running phase is -15.4 degrees, A FIFTH of the residual -- which is a fifth because r7657 re-pointed the residual onto -78.3, and was a sixth against -96.6 on the same phase. **  *The figure moved because the DENOMINATOR moved, not the measurement: `-15.41` against `-78.3` is 19.7 per cent and against `-96.6` was 16.0.*
+    OK    ⛭⛭ Ⓕ② and it is COMMON MODE on the arm of record to THREE TENTHS of a per cent, which is l.2394's figure and is LOOSER than the namesake pair's tenth: the two arms carry the floor to 0.27 per cent of itself here against 0.09 per cent there.  *Stated as a weakening rather than folded into one tolerance, because the claim is about THIS arm.*
+    OK    Ⓕ③ so `a running phase at correct spacing` carries a projection-manufactured floor, which is a different statement from `the kernel is cleared` and was written down in advance
+
+========================================================================================================
+  Ⓖ  WHAT THIS DOES NOT SETTLE
+========================================================================================================
+    ⌗ the phase evaluated here is the KERNEL's, on a damped comb with the construction's own
+      three lengths.  It is not the full transfer's phase: the driving and the loading are
+      the row's standing candidates and nothing here touches them.
+    ⌗ r_D is read at the visibility peak, which is the figure the runs report; the diffusion
+      length is itself l-dependent and a single value is a choice -- but the ANSWER is a
+      difference of two arms at the same choice, and the sensitivity is gated in Ⓔ⑤.
+    ⌗ the residual is QUOTED from the paper (l.2142 via l.2383) and not re-measured here;
+      r7657 re-pointed it from -96.6 to the arm of record's own drift, and Ⓗ⑥ checks the
+      constant back against the paper rather than trusting the edit.
+    OK    Ⓖ① the r_D convention is declared and its sensitivity measured rather than assumed
+    OK    Ⓖ② and the answer is a DIFFERENCE at a common convention, so the convention cancels from it to first order -- which is checked by re-running the difference at a shifted r_D
+
+========================================================================================================
+  Ⓗ  ⛭⛭⛭ r7655 (cc66), ORDERED BY 69 ITEM 1 -- THE PARAGRAPH'S WHOLE SET ON THE ARM OF RECORD, AND THE OTHER CONVENTION MEASURED RATHER THAN QUOTED
+========================================================================================================
+
+    the arm of record's kernel phase against the control, across 104-1886:
+      each arm on its OWN n_s (1.015066 vs 0.96):  +0.33081 deg   2.37 orders below the residual
+      both arms at a COMMON n_s = 0.96          :  +0.04106 deg   3.28 orders
+      both arms at a COMMON n_s = 1.015066    :  +0.04106 deg   3.28 orders
+    OK    ⛭⛭⛭ ** Ⓗ② THE TWO-RATIO IDENTITY SURVIVES AT FIXED TILT AND THE ARMS DO NOT SHARE THE TILT.  l.2384's `exactly two dimensionless ratios` IS TRUE AT FIXED n_s AND INCOMPLETE FOR THIS PAIR. **  *The difference at a common n_s is the same number whichever common value is chosen -- 0.96 and 1.015066 agree to better than 1e-4 degrees -- so the identity holds.  But the arm of record RAN at 1.015066 and the control at 0.96, and n_s enters the kernel as k^(n_s-2), so as the runs were actually configured the difference is EIGHT TIMES the fixed-tilt one.  Both numbers are real and they answer different questions.*
+
+    EVERY DEFENSIBLE ENDPOINT, both pairs, at a common n_s = 0.96 (so the tilt of Ⓗ② is held fixed and only the convention moves):
+      convention                           namesake: sep / phase   arm of record: sep / phase
+      eta_rec (fixed A_REC)              -0.0339%   -0.00184 deg      +0.9582%   +0.04875 deg
+      visibility peak                    -0.3048%   -0.01575 deg      +0.8067%   +0.04106 deg
+      tau = 1                            +0.0825%   +0.00408 deg      +0.7443%   +0.03736 deg
+      visibility FWHM, early edge        -0.2445%   -0.00702 deg      +1.0195%   +0.02829 deg
+      visibility FWHM, late edge         +0.5525%   +0.08013 deg      +0.4325%   +0.06256 deg
+    OK    ⛭⛭⛭ ** Ⓗ③ l.2386's `only the magnitude is a convention-free statement, and the sign is not` IS TRUE OF THE NAMESAKE PAIR AND FALSE OF THE ARM OF RECORD -- in the direction that STRENGTHENS the paragraph. **  *The namesake's difference changes sign between conventions (negative at the visibility peak and at eta_rec, POSITIVE at tau=1 and at the late FWHM edge).  On the arm of record every one of the five is POSITIVE, so there the sign is convention-free too, and 69's reading -- that the arm-of-record difference is already positive -- is a property of the arm and not of a choice.*
+    OK    ⛔⛭⛭ ** Ⓗ④ AND NO ENDPOINT CONVENTION REPRODUCES l.2388's `0.14 degrees` OR ITS `no less than 2.8 orders`, ON EITHER PAIR.  THIS GATE ASSERTED THE MISS AND r7657 ACTED ON IT: 69 REMOVED BOTH FIGURES AND `widens tenfold` WITH THEM, so the read above now MISSES and this gate runs on its FALLBACK LITERALS -- kept as the record of what the sentence said and why it went, and the absence arm built at r7655 fired on its first real test one turn later. **  *The largest magnitude any of the five gives on the namesake pair is the late FWHM edge at 0.080 deg, 2.99 orders below r7657's -78.3 -- a factor 1.8 short of 0.14, and only a FIFTH of an order clear of 2.8 where against -96.6 it was 3.08 and a quarter.  On the arm of record the five run 0.028 to 0.063 deg, 3.10 to 3.44 orders.  ⌗ *The re-point COSTS this gate margin and the gate says so rather than being widened.*  ⇒ The sentence's mechanism is REAL and measured here -- the two arms' damping lengths do respond to the endpoint in opposite directions -- but its two figures are not this instrument's on either arm, and `widens tenfold` is the wrong direction: at eta_rec the namesake's separation NARROWS ninefold (-0.305% to -0.034%).*
+
+    l.2385's `differ by 0.27 per cent` in r_D/D_M, attributed:
+      namesake, r_D as the log prints it (two decimals) : -0.272 per cent
+      namesake, r_D at six decimals                     : -0.305 per cent
+      ARM OF RECORD, six decimals                       : +0.807 per cent
+      and what TWO DECIMALS alone would allow there      : [+0.666, +0.947] per cent
+    OK    ⛭⛭⛭ ** Ⓗ⑤ l.2385's `0.27 per cent` IS THE NAMESAKE'S AND IS ITSELF A ROUNDING ARTEFACT: at six decimals the same pair reads 0.305 per cent, and the ARM OF RECORD reads +0.81 per cent WITH THE SIGN REVERSED. **  *The two-decimal r_D the logs print moves the namesake's own figure by a tenth of its value, and on the arm of record it would allow anything from 0.68 to 0.96 -- which is why `about 0.8 per cent` is the honest precision for a two-decimal read and why the full-precision line was added.  The CLAIM -- the arms share the angle and differ in the damping ratio at the per-cent level -- survives on both arms.*
+    l.2383's residual reads -78.3, and RESIDUAL here is -78.3 -- THE SAME FIGURE, which is r7657's ask
+    OK    ⛭⛭ ** Ⓗ⑥ THE PARAGRAPH'S RESIDUAL AND THIS RECEIPT'S NOW AGREE, AND THE AGREEMENT IS THE GATE: `RESIDUAL` is checked BACK AGAINST l.2383 rather than left to be typed. **  *r7655 routed the discrepancy -- l.2383 compared against -78.3 where this file computed against -96.6, so every `orders below` in that paragraph was quoted against a different denominator than the gates here used.  r7657 ruled for the PAPER's figure and this file moved onto it, which is why Ⓕ① now reads a FIFTH where it read a sixth: the denominator moved and the measurement did not.  ** Still a disjunction on the READ and not on the residual: a reworded sentence makes the read miss and this gate prints the miss instead of crashing, but no second residual passes any more. **
+
+========================================================================================================
+  Ⓘ  ⛭⛭⛭ r7657 ITEM 3 -- EVERY FIGURE THE LANDED PARAGRAPH CARRIES, READ OUT OF THE PAPER AND MET BY A COMPUTATION HERE
+========================================================================================================
+
+    l.2378-2397's figures, each READ OUT OF corpus/CR_cosmology.tex:
+      r_D/D_M, per cent          (0.8,)
+      the angle, a part in       ('twelve thousand',)
+      the range                  (104.0, 1886.0)
+      fixed-tilt difference      (0.041,)
+      endpoint range             (0.028, 0.063)
+      the two tilts              (1.015, 0.96)
+      as-run difference          (0.33, 'nine tenths')
+      the floor, share, spread   (-15.4, 'fifth', 'three tenths')
+
+    and what this file measures on the ARM OF RECORD, in the same order:
+      r_D/D_M                    +0.807 per cent
+      r_s/D_M, the angle         -8.384e-05  = one part in 11,927   (the NAMESAKE's was one part in 63,059)
+      fixed tilt, both at 0.96   +0.04106 deg   3.28 orders below -78.3
+      across the five endpoints  +0.02829 to +0.06256 deg   3.10 orders at worst
+      as run (1.015066 / 0.96)  +0.33081 deg   2.37 orders -- the tilt carries 87.6% of it
+      the floor                  -15.4073 deg = 19.7% of the residual, the two arms to 0.27%
+    OK    ⛭ Ⓘ① l.2381's `about 0.8 per cent` in r_D/D_M IS THE ARM OF RECORD's at the precision two decimals of r_D support.  *+0.807 at six decimals, and Ⓗ⑤ showed the two-decimal line alone would allow [0.67, 0.95] -- which is why `about` is in the sentence and why one more digit is not claimed.*
+    OK    ⛭⛭ ** Ⓘ② l.2382's `a part in twelve thousand` IS THE ARM OF RECORD's, AND IT IS A FIVE-FOLD WEAKENING of what the paragraph claimed before r7649: the namesake pair shared the acoustic angle to a part in 63,059 -- the `seventy thousand` that stood there -- and THIS arm shares it to a part in 11,927. **  *The arms share the angle LESS WELL on the arm of record, the paragraph now says so, and that is the honest direction for the figure to have moved.  The claim the sentence is making survives it: a part in twelve thousand is 8.4e-5, which is still TWO ORDERS tighter than the 8.07e-3 they differ by in the damping ratio, so the one ratio is shared by construction and the other is not.*
+    OK    ⛭ Ⓘ③ l.2385's `+0.041 degrees across 104 <= l <= 1886` IS THIS FILE's fixed-tilt difference AND THE RANGE IS THIS FILE's TOO, read back out of the sentence rather than assumed to match.  *+0.04106 rounds to +0.041, and `over three orders below` is 3.28.*
+    OK    ⛭ Ⓘ④ l.2387-2389's `+0.028 to +0.063 degrees, always of one sign, no less than three orders on every convention` IS Ⓗ③'s TABLE, end to end.  *The five endpoints give +0.02829 to +0.06256, every one POSITIVE, the worst 3.10 orders below -78.3.  ** This is the sentence that replaced `widens tenfold`, `0.14 degrees` and `2.8 orders`, which Ⓗ④ found no convention reproduces -- so Ⓗ④ now gates a figure the paper no longer carries, and that is deliberate: it is the record of why the figure went. **
+    OK    ⛭⛭ ** Ⓘ⑤ l.2390-2392's AS-RUN SENTENCE, ALL FOUR OF ITS FIGURES: the tilts 1.015 and 0.96 are THE SWITCHES THE TWO RUNS CARRY, the difference is +0.33, the tilt's share is nearly nine tenths, and `still over two orders below` is 2.37. **  *Measured 87.6 per cent of +0.33081 attributable to the tilt alone.  The tilts are checked against `__SWITCHES__` in the run logs, not against the paper's own words -- a paper figure met by the paper's figure would gate nothing.*
+    OK    ⛭ Ⓘ⑥ l.2393-2395's FLOOR SENTENCE, read back: `-15.4 degrees`, `a fifth of the residual` and `three tenths of a per cent` are Ⓕ① and Ⓕ②'s three measurements, and the two WORD figures are converted and gated rather than left as prose.  *-15.4073, 19.7 per cent of -78.3, the two arms to 0.27 per cent.  A fifth to a tenth of a point is what the endpoint sweep leaves it -- l.2396's own claim -- and Ⓔ⑤'s sensitivity is what licenses that.*
+    OK    ⛭ Ⓘ⑦ and the paragraph's THREE order-of-magnitude claims are each TRUE AND NOT UNDERSTATED, which is the one thing a `below` claim can get wrong in the safe direction and still be worth fixing: 3.28 for `over three`, 3.10 at worst for `no less than three`, 2.37 for `still over two`.  *Each lands in its own decade, so no claim is a decade shy of what was measured.*
+
+========================================================================================================
+  Ⓙ  ⛭⛭⛭ r7657 ITEM 2 -- l.2395's FLOOR RANGE ON THE ARM OF RECORD, AND THE ENDPOINT CLAUSE BESIDE IT
+========================================================================================================
+
+    the floor and its fraction as the range's LOW END moves, arm of record, r_D at the visibility peak:
+      from l =   50.0 to 1886:   -23.2458 deg =  29.69% of -78.3   ( 24.06% of the -96.6 l.2395 still divides by)
+      from l =  104.0 to 1886:   -15.4073 deg =  19.68% of -78.3   ( 15.95% of the -96.6 l.2395 still divides by)
+      from l =  200.0 to 1886:    -8.7491 deg =  11.17% of -78.3   (  9.06% of the -96.6 l.2395 still divides by)
+      from l =  300.0 to 1886:    -5.3852 deg =   6.88% of -78.3   (  5.57% of the -96.6 l.2395 still divides by)
+    l.2395 reads ** NOT FOUND -- reworded since r7657 **
+    OK    ⛔⛭⛭⛭ ** Ⓙ① l.2395's `9 to 24 per cent` IS THE ARM OF RECORD'S OWN PHASES DIVIDED BY THE OLD RESIDUAL, AND AGAINST -78.3 THE RANGE IS 11 TO 30.  THIS GATE ASSERTS THE MISS AND ROUTES THE TWO FIGURES. **  *The phases are right and this file reproduces them: -8.7491 degrees from l = 200 and -23.2458 from l = 50.  Against -96.6 they are 9.06 and 24.06 per cent -- l.2395's two figures to the digit.  Against the -78.3 the SAME SENTENCE's `a fifth` is now quoted against, they are 11.17 and 29.69.  ⇒ ** The re-point reached the floor clause and not the range clause, so one sentence now carries two denominators.  Read from 200 or from 50 instead, the floor runs from ELEVEN to THIRTY per cent. ** *
+    and the same fraction with the range held at 104-1886, across the five endpoints:
+      visibility FWHM, early edge       21.19%   <- a HALF-MAXIMUM EDGE
+      tau = 1                           19.72%   <- one of the three the clause is true over
+      eta_rec (fixed A_REC)             19.68%   <- one of the three the clause is true over
+      visibility peak                   19.68%   <- one of the three the clause is true over
+      visibility FWHM, late edge        13.09%   <- a HALF-MAXIMUM EDGE
+      spread across the THREE central conventions: 0.05 of a point;  across all FIVE: 8.10 points
+    OK    ⛔⛭⛭ ** Ⓙ② AND l.2395's OTHER CLAUSE -- `it is insensitive to the endpoint convention, moving under a tenth of a point` -- IS TRUE OF THREE CONVENTIONS AND FALSE OF THE FIVE THE SAME PARAGRAPH NAMES. **  *Across eta_rec, the visibility peak and tau = 1 the fraction moves 0.05 of a point, which is the clause as written.  Across the two HALF-MAXIMUM EDGES it moves 8.10 points, from 13.09 to 21.19 per cent, because r_D itself runs 5.37 to 12.68 Mpc there and the FLOOR is a function of r_D while the DIFFERENCE is not.  ⇒ ** The clause imports the convention-independence of the arm-MINUS-arm difference (Ⓗ③, Ⓖ②) into a statement about ONE ARM's absolute phase, where it does not hold.  Routed: either name the three conventions, or say `under a tenth of a point between the three recombination-epoch conventions and eight points across the half-maximum edges`. ** *
+
+========================================================================================================
+  Ⓚ  EVERY FIGURE THE INDEX ROW AND THE DOCSTRING PRINT, PINNED AS A LITERAL TWIN
+========================================================================================================
+
+    what the row quotes, measured here:
+      orders below, the headline difference      3.75
+      the floor, degrees                         15.41
+      the floor as a per cent of the residual    19.7
+      the floor's common mode, per cent          0.27
+      orders below at a common tilt              3.28
+      orders below at worst across endpoints     3.1
+      orders below as the arms were run          2.37
+      the tilt's share of the as-run figure      87.6
+      n_s as the arm of record ran               1.015
+      n_s as the control ran                     0.96
+      the floor from l = 200, degrees            8.75
+      the floor from l = 50, degrees             23.25
+      the lowest endpoint fraction, per cent     13.1
+      the highest endpoint fraction, per cent    21.2
+      the spread across all five, points         8.1
+      the spread across the three, points        0.05
+    OK    ⛭ Ⓚ① ** AND EVERY ONE OF THE SIXTEEN IS PINNED TO THE DIGIT THE ROW PRINTS IT TO, so a stale row reddens this receipt instead of going quietly wrong. **  *The one-state rule cuts both ways: an INDEX row states what its receipt finds NOW, and this gate is what makes the row's own digits the receipt's responsibility.*
+
+========================================================================================================
+  SUMMARY
+========================================================================================================
+    gates run: 42    failed: 0
+
+    ⇒ arm minus control, kernel phase across 104-1886:  -0.0141 deg
+    ⇒ the residual:                                     -78.3 deg
+    ⇒ 3.75 orders of magnitude below -- THE PROJECTION IS CLEARED
+    ⇒ and the kernel's own phase is 19.7% of the residual on the ARM OF RECORD, common mode to 0.27% there and to 0.09% on the namesake pair
+kernel exit=0
