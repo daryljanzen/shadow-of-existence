@@ -455,12 +455,69 @@ PAPER.update(p12=float(_M882.group(1)) if _M882 else None,
              p13=float(_M882.group(2)) if _M882 else None,
              sky_p12=float(_M882.group(3)) if _M882 else None,
              sky_p13=float(_M882.group(4)) if _M882 else None)
-print(f"  and l.882's height pair = {PAPER['p12']}/{PAPER['p13']} against its sky's "
-      f"{PAPER['sky_p12']}/{PAPER['sky_p13']}"
-      + ("" if _M882 else "   ⛔ ALT ARM: that sentence is not locatable in this form"))
+#: ⛭⛭⛭ r7665 (69's order), AND THE REGISTRY `Ⓜ①` USES ON THE KERNEL RECEIPT, BROUGHT HERE.
+#:   *Every read below is TOLERANT of its own miss -- `PAPER[k] is None or ...` -- which is right when
+#:   69 may withdraw a sentence and FATAL when 69 merely rewords one: `r7661` found three reads in the
+#:   licensed receipt blind behind a green gate for two revisions on exactly that shape, and 69's own
+#:   r7665 names this receipt's l.885 height gate as the same thing one receipt over.*
+#:   ⇒ ** `WITHDRAWN_READS` is a DECLARED list, empty because no sentence here is gone, and `Ⓝ①`
+#:     asserts both arms with the counts pinned.  Nothing here is blind today; that is the point. **
+#: ⛔ AND FOUR READS ARE ADDED, because the enumeration 69 asked for turned up figures this receipt
+#:   ATTRIBUTES to the paper and does not READ from it: the peak quartets, the phase intercept, and
+#:   two of the four sites that print the comb pair.  *The peaks sat here as a typed tuple inside the
+#:   tabled loop -- the receipt's own `r7651+cc66.94` comment says why that is not good enough: `a
+#:   figure attributed to the paper is READ OUT OF THE PAPER, not retyped from it`.*
+WITHDRAWN_READS = {}        # key -> why its sentence is legitimately gone.  EMPTY: none is.
+_READS = {}
+
+
+def note_read(key, got):
+    """register one paper read and return its two-case state, for the print beside it."""
+    _READS[key] = got is not None
+    if got is not None:
+        return ""
+    return (f"   ⛔ WITHDRAWN, declared -- {WITHDRAWN_READS[key]}" if key in WITHDRAWN_READS
+            else "   ⛔ NOT MATCHED -- not declared withdrawn, so this read has gone BLIND")
+
+
+_M883 = re.search(r"the peaks fall at \$([0-9.]+)\$, \$([0-9.]+)\$, \$([0-9.]+)\$ and "
+                  r"\$([0-9.]+)\$ against the sky's \$([0-9.]+)\$, \$([0-9.]+)\$, "
+                  r"\$([0-9.]+)\$ and \$([0-9.]+)\$", _TEXW)
+_M884 = re.search(r"the comb fitted to them is \$([0-9.]+)\$ against the sky's \$([0-9.]+)\$",
+                  _TEXW)
+_M885 = re.search(r"the phase intercept \$\\varphi/\\pi=(-[0-9.]+)\$ against \$(-[0-9.]+)\$",
+                  _TEXW)
+_M2065 = re.search(r"at \$([0-9.]+)\$ against \$([0-9.]+)\$ the spacing is right to a part in",
+                   _TEXW)
+PAPER.update(pk=tuple(float(g) for g in _M883.groups()[:4]) if _M883 else None,
+             sky_pk=tuple(float(g) for g in _M883.groups()[4:]) if _M883 else None,
+             comb884=float(_M884.group(1)) if _M884 else None,
+             sky884=float(_M884.group(2)) if _M884 else None,
+             phi=float(_M885.group(1)) if _M885 else None,
+             sky_phi=float(_M885.group(2)) if _M885 else None,
+             comb2065=float(_M2065.group(1)) if _M2065 else None,
+             sky2065=float(_M2065.group(2)) if _M2065 else None)
+_g813 = note_read("l.814's comb and sky", _M813)
+_g945 = note_read("l.945's comb and ruler", _M945)
+_g882 = note_read("l.885's height pair", _M882)
+_g883 = note_read("l.883's peak quartets", _M883)
+_g884 = note_read("l.884's comb and sky", _M884)
+_g885 = note_read("l.885's phase intercept", _M885)
+_g2065 = note_read("l.2065's comb and sky", _M2065)
+#: ⚭ The two pre-existing reads print the SAME two-case state as the five below, appended to the
+#:   line they already had: the bare `ALT ARM` suffix said that one of the two was missing and not
+#:   WHICH, and said nothing about whether the loss is declared.  *Found by the perturbation sweep of
+#:   `r7665`: R1 and R2 reddened `ⓝ①` with no marker beside the read itself.*
 print(f"  read out of corpus/CR_cosmology.tex: l.813's comb/sky = "
       f"{PAPER['comb']}/{PAPER['sky']}, l.945's reported scale = {PAPER['ruler']}"
-      + ("" if _M813 and _M945 else "   ⛔ ALT ARM: a sentence was not locatable in this form"))
+      + ("" if _M813 and _M945 else "   ⛔ ALT ARM: a sentence was not locatable in this form")
+      + _g813 + _g945)
+print(f"  and l.885's height pair = {PAPER['p12']}/{PAPER['p13']} against its sky's "
+      f"{PAPER['sky_p12']}/{PAPER['sky_p13']}{_g882}")
+print(f"  l.883's peaks = {PAPER['pk']} against the sky's {PAPER['sky_pk']}{_g883}")
+print(f"  l.884's comb = {PAPER['comb884']} against {PAPER['sky884']}{_g884};  "
+      f"l.2065's = {PAPER['comb2065']} against {PAPER['sky2065']}{_g2065}")
+print(f"  l.885's phase intercept phi/pi = {PAPER['phi']} against {PAPER['sky_phi']}{_g885}")
 
 _MSKY = _sweep(CS.X_DATA * _FACB)
 _MCTL = _matched('cc66_lcdm_L2000.npz')
@@ -759,6 +816,48 @@ print(f"""
   185-bin full-range lensed comparison needs ell ~ 2000 and is not run here.  *A number scored on
   one configuration may not be quoted against the other.*
 """)
+
+#: ⛭⛭⛭ r7665 (69's order) -- ** THE REGISTRATION GATE, AND THE FOUR NEW READS MET BY THIS FILE'S
+#:   OWN OUTPUT AT THE PAPER'S PRECISION. **  *The paper rounds: it prints the arm's peaks to one
+#:   decimal where this receipt computes two, the comb to one where it computes three, and the phase
+#:   intercept IN UNITS OF pi where this receipt carries radians.  ⌗ That rounding is exactly what
+#:   defeated my own `r7663` item-2 grep -- I searched for `299.057` and `298.362`, the figures THIS
+#:   FILE computes, and concluded the paper did not print them.  It prints `299.1` and `298.4`.*
+_PI = float(np.pi)
+_pk_ao = tuple(round(float(v), 1) for v in _MAOR['pk'])
+_pk_sky = tuple(round(float(v), 1) for v in _MSKY['pk'])
+print(f"\n  the paper's rounding, against this file's own figures:")
+print(f"      peaks      arm {_pk_ao} paper {PAPER['pk']};  sky {_pk_sky} paper {PAPER['sky_pk']}")
+print(f"      comb       arm {round(_MAOR['a4'], 1)} paper {PAPER['comb884']}/{PAPER['comb2065']};"
+      f"  sky {round(_MSKY['a4'], 1)} paper {PAPER['sky884']}/{PAPER['sky2065']}")
+print(f"      phi/pi     arm {_MAOR['f4'] / _PI:+.4f} paper {PAPER['phi']};"
+      f"  sky {_MSKY['f4'] / _PI:+.4f} paper {PAPER['sky_phi']}")
+check("⛭⛭⛭ ** Ⓝ① EVERY ONE OF THIS RECEIPT'S SEVEN PAPER READS MATCHED, NONE IS DECLARED "
+      "WITHDRAWN, AND EACH NEW READ AGREES WITH WHAT THIS FILE COMPUTES AT THE PAPER'S OWN "
+      "PRECISION. **  *`r7661` found three reads in the licensed receipt blind behind a green gate "
+      "for two revisions, because a missing read short-circuits the conjunction that consumes it; "
+      "69's `r7665` names this receipt's own height gate as the same shape one receipt over.  Here "
+      "the registry covers all seven: the three reads this file already had, and four it did not "
+      "-- the peak quartets, the phase intercept, and the comb sites at l.884 and l.2065 -- whose "
+      "figures this receipt ATTRIBUTED to the paper while carrying them as typed tuples.  ⇒ The "
+      "tolerance stays, because 69 may withdraw a sentence, but it now costs a DECLARATION and the "
+      "undeclared case reddens; and the second arm says a withdrawn sentence coming back makes its "
+      "own declaration false rather than letting the list rot.*",
+      not [k for k, ok in _READS.items() if not ok and k not in WITHDRAWN_READS]
+      and not [k for k in WITHDRAWN_READS if _READS.get(k)]
+      and len(_READS) == 7 and sum(_READS.values()) == 7 and len(WITHDRAWN_READS) == 0
+      # and each read agrees with this file's own figure at the precision the paper prints
+      and (PAPER['pk'] is None or PAPER['pk'] == _pk_ao)
+      and (PAPER['sky_pk'] is None or PAPER['sky_pk'] == _pk_sky)
+      and (PAPER['comb884'] is None or abs(PAPER['comb884'] - round(_MAOR['a4'], 1)) < 1e-9)
+      and (PAPER['sky884'] is None or abs(PAPER['sky884'] - round(_MSKY['a4'], 1)) < 1e-9)
+      and (PAPER['comb2065'] is None or abs(PAPER['comb2065'] - round(_MAOR['a4'], 1)) < 1e-9)
+      and (PAPER['sky2065'] is None or abs(PAPER['sky2065'] - round(_MSKY['a4'], 1)) < 1e-9)
+      and (PAPER['phi'] is None or abs(PAPER['phi'] - _MAOR['f4'] / _PI) < 5e-4)
+      and (PAPER['sky_phi'] is None or abs(PAPER['sky_phi'] - _MSKY['f4'] / _PI) < 5e-4),
+      f"reads {len(_READS)}, matched {sum(_READS.values())}, declared withdrawn "
+      f"{len(WITHDRAWN_READS)}, blind "
+      f"{[k for k, ok in _READS.items() if not ok and k not in WITHDRAWN_READS]}")
 
 print("=" * 112)
 if fail:

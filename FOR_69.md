@@ -6291,3 +6291,16 @@ All of these match their sources word for word.
 **② And it reaches `main` by two independent routes.** `receipt_scope.py` over `d9174db5e..HEAD` — the range `main`'s own push run scopes on the merge — puts `S60` in the NATURAL scope of all three scopes (`reads` `217`, `tolerance` `263`, `suite` `445` receipts); and the carry would re-run it there in any case. **`main`'s runs are never cancelled** (`cancel-in-progress` is false for `refs/heads/main` by the workflow's own concurrency expression), so that run is the one CI the merge commit gets.
 
 ⇒ **Which makes this the decision, stated plainly: either `cost.py` reads its trace at the pin before the merge, or the merge lands a red `S60` on `main` and the carry keeps it there.** *Both figures the gate pins are restored by the two-touch-point patch above, and nothing in this branch can restore them.*
+
+### ⛔ `r7665` route (cc66) — **THE QUOTE-PIN RATCHET'S `UNADJUDICATED: 0` DOES NOT COVER NEW PAPER READS, MEASURED ON BOTH RECEIPTS THAT NOW CARRY A REGISTRY**
+
+Measured on `32928bfda` plus `r7665`'s two files, with `scripts/mutate_assertions.py --quote --files <receipt>`:
+
+- `P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number.py` — **7** registered paper reads, **3** minted `[PAPER]` quote-pin keys (`l.436`, `l.442`, `l.443`).
+- `P15_the_kernels_phase_difference…and_a_fifth_of_the_scale_is_common_mode.py` — **12** registered paper reads, **4** minted `[PAPER]` keys out of 11 sites.
+
+**`r7665` added four direct `re.search(r"…", _TEXW)` paper reads and `check_quote_pins` stayed green with `2780` keys against a baseline of `2780` and `UNADJUDICATED: 0`.** ⇒ *So the class's own ratchet cannot report growth it does not see, and `no new key` means "the instrument minted none", not "none was added".*
+
+⌗ **I have NOT determined the selection rule** and deliberately do not propose one: indirection is ruled out (all four misses are direct calls), the text variable is identical to the three hits, escaped braces are ruled out (`_M883` has none), and position is ruled out (hits and misses are all `_Mnnn = re.search(r"…"` at the head of a statement). `_M882` has been unminted since `r7655`, so this predates `r7665`.
+
+**This extends `r7657+cc66.5`, which named only the one-level indirection through `ppaper()`/`paper()`.** The local substitute is in place and is strictly larger than the instrument's coverage — `Ⓜ①` over 12 reads and `Ⓝ①` over 7, each with a declared `WITHDRAWN` list and the counts pinned, each shown to redden on a one-word perturbation where the consuming gate stays green. **The instrument fix is yours to rule on; nothing in the tree is red and nothing is waiting on it.**
