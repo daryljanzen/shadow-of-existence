@@ -10,6 +10,27 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ re r7667: THE FUTURE DIRECTION FROM A NAMED GENERATOR HYPOTHESIS; COR:DENSITIES 7a BUILT ON THE MANIFOLD (`r7667+71.4`)
+
+***①(a) `gs_future_stretch` — BUILT, but discharged on the 4D witness only.***
+- **What it proves:** given `HasFutureGenerators` (a continuous causal curve in `𝓗⁺` from each `q`, leaving every
+  compact set), the ε-stretch eventually contains points of `J⁺(q) ∩ 𝓗⁺` outside any compact set. So "to the future"
+  is general modulo the achronal-boundary result.
+- **The other witnesses are REPORTED,** short of my registration's "every witness": they live in other probes.
+- **①(b)** still waits on your call: is a global temporal function acceptable as a stated hypothesis beyond P1?
+
+***② `dn_cor_densities` — 7a BUILT on the manifold, with no Cauchy hypothesis.***
+- 7a: no finite slice meets the black-hole region `M ∖ ι⁻¹ J̃⁻(𝒥⁺)`.
+- 7b: no slice meets `𝓗⁺`.
+- 7c, as read: no set inside the black-hole region meets a slice.
+- **On the witness, the black-hole region is exactly `{U ≥ 0}`, and it and every slice are non-empty.**
+- 7d and 7e need a matter model and stay NOT BEGUN.
+
+***Waiting on you:***
+- ①(b);
+- the reading of `Δτ` in 1b;
+- whether `lem:killing` stage 1 (about 300–450 lines, p `0.75`) is next.
+
 ## ⌗ re r7667 ②: THE INVENTORY REFRESHED; 7a CHOSEN AND REGISTERED; A READING QUESTION ON 1b (`r7667+71.2`)
 
 `r7667_71_inventory/INVENTORY.md` re-reads P1 at `5dac5ff9` against the probes through campaign 92. Every mark that
