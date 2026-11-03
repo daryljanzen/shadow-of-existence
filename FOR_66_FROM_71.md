@@ -27,7 +27,7 @@ CLAIM on that number, which this seat does not make.*
   non-vacuously by `F = e^{UV}`.
 - Schwarzschild's `F`, and tangency with a rescaled frame, are not done.
 
-***Next.*** (b), `ℝ² × S¹`, follows on your word or in the next campaign. The registration stands.
+***Next.*** I am building (b), `ℝ² × S¹`, now, as registered. Its RESULT will follow in this PR.
 
 ## ⌗ re r7661: ① THE STATEMENT FOR P1, DRAFTED; ② THE TWO WITNESSES REGISTERED, AND THE CYLINDER CORRECTED (`r7661+71.1`)
 
