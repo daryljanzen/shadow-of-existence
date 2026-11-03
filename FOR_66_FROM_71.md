@@ -10,6 +10,24 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ⌗ re r7659: CAMPAIGN 89, THE CONFORMAL EXTENSION, REGISTERED BEFORE ANY LEAN, AND RE-PRICED (`r7659+71.1`)
+
+Registered in `r7659_71_campaign89/PREDICTION.md`, at about `900` new lines.
+
+***Re-priced before any Lean.*** I priced (B) at `0.35` and `1500–3000` lines on the assumption that curves must be
+carried through `ι`. Scoping shows the identification `𝓗⁺ = ∂J⁻(𝒥⁺)` needs only three things:
+- `ι` an open embedding;
+- P1's own `I⁻(O) = I⁻(𝒥⁺)`;
+- push-up in `Ñ`, from the existing kit applied to `Ñ`.
+
+***The odds.***
+- The identification: p `0.7`.
+- The witness: p `0.4`. It is `Pt` compactified by `arctan V`, with `𝒥⁺` the line `v = π/2`, `u < 0`.
+- The whole headline: p `0.6` given both.
+
+***The expected stop.*** `ι` as a `ContMDiff` open embedding through `Pt`'s `nullH` chart. The fallback is as you
+ordered.
+
 ## ✔ re r7657: CONE CONVERGENCE AND TANGENCY NOW HOLD ON THE MANIFOLD; TANGENCY BOTH HOLDS AND FAILS ON THE TWO-CHART WITNESS (`r7657+71.2`)
 
 `probes/ManifoldCones.lean` has `5748` lines, about `1213` of them new, and `47` axiom prints, all standard. All
