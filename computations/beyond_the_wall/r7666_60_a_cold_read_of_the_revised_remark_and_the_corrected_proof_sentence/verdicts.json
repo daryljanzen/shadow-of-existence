@@ -1,0 +1,340 @@
+{
+ "tree": [
+  "worktree: 6beca15f94a014aacecc736f4ba3a06538700ebc",
+  "dirty: 1 path(s)",
+  "c931bbe66f9c48194f161e860d0f7515c15a21ec  corpus/BH_causality_v2.tex",
+  "84faa36742e59be6cb729fb4dc5998c69cdaff5f  computations/formalisation/lean/probes/ConeDisjoint.lean",
+  "f797b36696e647ac17ee0ee6cf0a75eb9f81cea1  computations/formalisation/lean/probes/ConformalBoundary.lean",
+  "42388f5448bf4a563fb9c2da2bb448851b1595a4  computations/formalisation/lean/probes/Compactification.lean",
+  "54ff3ce16cd0941d138ad6b3438fa650be73eabf  computations/formalisation/lean/probes/CurvedTangency.lean",
+  "ef1c28f40d655d15e98404ed63e096cab3af66fb  computations/formalisation/lean/probes/CylinderWitness.lean",
+  "cedcd45da2f8a44ca21420b23685a5055e636588  computations/formalisation/lean/probes/FourDWitness.lean"
+ ],
+ "guard": {
+  "true-probe  (`S.SublevelProper J Θ` is a conjunct)": true,
+  "false-probe (`S.ConeDisjoint J Θ` is a conjunct)": false,
+  "marker-probe true  (\\bCauchy property\\b matches the sentence)": true,
+  "marker-probe false (\\bparacompact\\b matches the sentence)": false,
+  "marker-probe word-boundary (\\bproper\\b does NOT match \"the Cauchy property\")": true,
+  "flip-test (every derived verdict depends on its readings)": true
+ },
+ "cited": {
+  "cd_prop_causal_alignment": {
+   "file": "ConeDisjoint",
+   "declared_there": true,
+   "named_in_the_remark": true
+  },
+  "mx_prop_causal_alignment": {
+   "file": "ConformalBoundary",
+   "declared_there": true,
+   "named_in_the_remark": true
+  },
+  "mx_H_eq_boundary": {
+   "file": "ConformalBoundary",
+   "declared_there": true,
+   "named_in_the_remark": true
+  },
+  "mx_witness_headline": {
+   "file": "ConformalBoundary",
+   "declared_there": true,
+   "named_in_the_remark": true
+  },
+  "cd_witness": {
+   "file": "ConeDisjoint",
+   "declared_there": true,
+   "named_in_the_remark": true
+  },
+  "mc_witness_tangency_fails": {
+   "file": "ConformalBoundary",
+   "declared_there": true,
+   "named_in_the_remark": true
+  },
+  "cz_witness_headline": {
+   "file": "Compactification",
+   "declared_there": true,
+   "named_in_the_remark": true
+  },
+  "cz_Ω_nonconst": {
+   "file": "Compactification",
+   "declared_there": true,
+   "named_in_the_remark": true
+  },
+  "cz_witness_headline_F": {
+   "file": "Compactification",
+   "declared_there": true,
+   "named_in_the_remark": true
+  },
+  "cz_exp_nonvacuous": {
+   "file": "Compactification",
+   "declared_there": true,
+   "named_in_the_remark": true
+  },
+  "ct_witness_tangency_F": {
+   "file": "CurvedTangency",
+   "declared_there": true,
+   "named_in_the_remark": true
+  },
+  "ct_expV_differs": {
+   "file": "CurvedTangency",
+   "declared_there": true,
+   "named_in_the_remark": true
+  },
+  "cy_witness_headline": {
+   "file": "CylinderWitness",
+   "declared_there": true,
+   "named_in_the_remark": true
+  },
+  "cy_witness_tangency": {
+   "file": "CylinderWitness",
+   "declared_there": true,
+   "named_in_the_remark": true
+  },
+  "fd_witness_headline": {
+   "file": "FourDWitness",
+   "declared_there": true,
+   "named_in_the_remark": true
+  },
+  "fd_witness_tangency": {
+   "file": "FourDWitness",
+   "declared_there": true,
+   "named_in_the_remark": true
+  },
+  "cd_cone_disjoint": {
+   "file": "ConeDisjoint",
+   "declared_there": true,
+   "named_in_the_remark": false
+  },
+  "cd_closure_Jpast_inter_H": {
+   "file": "ConeDisjoint",
+   "declared_there": true,
+   "named_in_the_remark": false
+  }
+ },
+ "binders": [
+  "[T2Space]",
+  "S",
+  "St",
+  "hL",
+  "hLt",
+  "X",
+  "𝒥",
+  "h𝒥",
+  "J",
+  "O",
+  "hOD",
+  "hmono",
+  "hJM",
+  "hI",
+  "hHM",
+  "Θ",
+  "c",
+  "hΘ",
+  "hadapt"
+ ],
+ "binders_match_mx": true,
+ "conjuncts": [
+  "S.H J = frontier (X.ι ⁻¹' St.JpastSet 𝒥)",
+  "S.SublevelProper J Θ",
+  "KLi (S.slice J Θ) = frontier (X.ι ⁻¹' St.JpastSet 𝒥)",
+  "KLs (S.slice J Θ) = frontier (X.ι ⁻¹' St.JpastSet 𝒥)",
+  "KLi (S.cone O) = frontier (X.ι ⁻¹' St.JpastSet 𝒥)",
+  "KLs (S.cone O) = frontier (X.ι ⁻¹' St.JpastSet 𝒥)",
+  "(∀ q ∈ frontier (X.ι ⁻¹' St.JpastSet 𝒥), ∀ (ℓ n : N → E) (L : Filter N) (C : ℝ) (ℓ₀ : E), L ≤ 𝓝 q → (∀ᶠ x in L, TCF.FrameHyp (S.gE x) (ℓ x) (n x) (dcov Θ x)) → (∀ᶠ x in L, ‖dchartL q x (n x)‖ ≤ C) → Tendsto (fun x => dchartL q x (ℓ x)) L (𝓝 ℓ₀) → Tendsto (fun x => dcov Θ x (ℓ x) / dcov Θ x (n x)) L (𝓝 0) → Tendsto (fun x => (dcov Θ x (n x))⁻¹ • covCh Θ q x) L (𝓝 (-(S.gE q ℓ₀))))",
+  "∀ τ, S.cone O τ ∩ frontier (X.ι ⁻¹' St.JpastSet 𝒥) = ∅"
+ ],
+ "coverage": {
+  "1": "⑧",
+  "2": "⑨",
+  "3": "⑩",
+  "4": "⑩",
+  "5": "⑩",
+  "6": "⑩",
+  "7": "⑫",
+  "8": "⑪"
+ },
+ "sentence": "No past light cone of an exterior event meets $\\mathcal{H}^+$. A point $x$ in the closure of $J^-(O(\\tau))$ has $I^-(x)\\subseteq I^-(O(\\tau))$, on which $\\Theta<\\Theta(O(\\tau))$; if $x$ lay on $\\mathcal{H}^+$, a past-directed timelike curve from $x$ would lie in $I^-(x)\\subseteq D$ and be future-inextendible in $D$, so by the Cauchy property $\\Theta$ would grow without bound along it, which it cannot. So neither $J^-(O(\\tau))$ nor its boundary meets $\\mathcal{H}^+$. ",
+ "preceding_sentence": "dary approached in the infinite-time limit. \\end{proposition} \\begin{proof} By global hyperbolicity of $D$, each level set $S_\\tau$ meets the past light cone $J^-(O(\\tau))$ in a smooth spacelike hypersurface, and $\\partial J^-(O(\\tau))$ is a null hypersurface. ",
+ "chain_scan": [
+  {
+   "link": "me_futCauchy_of_cauchy_N",
+   "what": "the two-sided Cauchy property converted to its FUTURE form, by gluing a past extension at the curve's start",
+   "markers_found": [
+    {
+     "marker": "\\bfuture[- ]inextendible\\b",
+     "at": 290,
+     "context": " $x$ would lie in $I^-(x)\\subseteq D$ and be future-inextendible in $D$, so by the Cauchy property $\\Theta$ w"
+    }
+   ],
+   "in_the_prose": true
+  },
+  {
+   "link": "mh_hint",
+   "what": "`int J⁻(J) ⊆ D`, which needs `J ⊆ M`",
+   "markers_found": [],
+   "in_the_prose": false
+  },
+  {
+   "link": "mh_sublevelProper",
+   "what": "PROPERNESS -- that the CLOSURE of every sublevel set stays in `D` -- derived by a blow-up at a horizon point, needing Hausdorffness and `𝓗⁺ ⊆ M`",
+   "markers_found": [],
+   "in_the_prose": false
+  },
+  {
+   "link": "cd_chr_of_mem_closure_Jpast",
+   "what": "that `y ≪ x` for `x` in the CLOSURE of `J⁻(p)` gives `y ≪ p`, via the openness of `I⁺(y)` and dual push-up",
+   "markers_found": [],
+   "in_the_prose": false
+  },
+  {
+   "link": "mh_past_step",
+   "what": "that every neighbourhood of a point OF `M` contains a point chronologically before it -- the approximation that makes the closure argument go",
+   "markers_found": [],
+   "in_the_prose": false
+  },
+  {
+   "link": "cd_mem_closure_sublevel",
+   "what": "that such an `x` lies in the closure of the SUBLEVEL set",
+   "markers_found": [],
+   "in_the_prose": false
+  },
+  {
+   "link": "cd_closure_Jpast_subset_D",
+   "what": "properness applied: the whole of `closure J⁻(p) ∩ M` lies in `D`",
+   "markers_found": [],
+   "in_the_prose": false
+  },
+  {
+   "link": "mh_not_mem_D_of_H",
+   "what": "that `𝓗⁺ ∩ D = ∅` -- the horizon is disjoint from the exterior, which is why the prose's curve is inextendible IN `D` at all",
+   "markers_found": [],
+   "in_the_prose": false
+  },
+  {
+   "link": "T2Space",
+   "what": "Hausdorffness, which `mh_sublevelProper` needs and so therefore does the clause",
+   "markers_found": [],
+   "in_the_prose": false
+  },
+  {
+   "link": "𝓗⁺ ⊆ M",
+   "what": "that the horizon lies in the region carrying the metric",
+   "markers_found": [],
+   "in_the_prose": false
+  }
+ ],
+ "verdicts": {
+  "①": [
+   "UNMEASURED BY THIS SEAT",
+   "`#print axioms`' OUTPUT cannot be read on this tree — no toolchain and no Mathlib — so the three-axiom claim is not decided here.  Measurable, and NOT reported as the claim: the audit is requested for 3/3 of the new theorems (MSpacetime.cd_prop_causal_alignment, MSpacetime.cd_cone_disjoint, MSpacetime.cd_closure_Jpast_inter_H) among 70 `#print axioms` lines in ConeDisjoint.lean; 0 occurrences of sorry/admit/native_decide and 0 `axiom` declarations across the six probe files.  The three NAMES the sentence gives all resolve: `cd_prop_causal_alignment` in ConeDisjoint.lean, `mx_prop_causal_alignment` and `mx_H_eq_boundary` in ConformalBoundary.lean, and the first is literally the second plus one conjunct."
+  ],
+  "②": [
+   "SUPPORTED",
+   "`ConeDisjoint.lean`'s own variable block — the one in force at `cd_prop_causal_alignment` — is `[NormedAddCommGroup E] [NormedSpace ℝ E]` and nothing more (True), with `[IsManifold 𝓘(ℝ,E) 1]` on both carriers (['1']), and `FiniteDimensional` and `CompleteSpace` occur zero times in all six probe files.  So the `C¹` atlas and the every-dimension claim hold of the NEW theorem's own ambient instances and are not inherited from the file this one was copied out of."
+  ],
+  "③": [
+   "SUPPORTED",
+   "`MSpacetime`'s fields are ['M', 'isOpen_M', 'g', 'symm', 'T', 'T_timelike', 'pos_on_perp']: an OPEN region `M` with the Lorentzian conditions imposed on `M` alone (True), which is what the remark's \"on an open region `M`\" now says and the earlier version did not.  `LocallyOneChart` is `hRep g` `C¹` and `chartRep T` continuous about each point (True); `[T2Space N]` is a binder."
+  ],
+  "④": [
+   "SUPPORTED",
+   "`ConformalExtension`'s fields are ['ι', 'isOpenEmbedding', 'contMDiff', 'Ω', 'Ω_pos', 'conformal', 'timeOrient', 'maps_M'], and the revised sentence states all of them: the open `C¹` embedding, `ι` carrying `M` into the extension's metric region (`maps_M`), `ι*g̃ = Ω²g` with `Ω` positive, and `dι` carrying the time orientation to future-timelike vectors (`timeOrient`).  Unstated fields: none — `r7664`'s ③ is repaired."
+  ],
+  "⑤": [
+   "SUPPORTED",
+   "`Cau = ReflTransGen CStep` with `CStep` a `ContMDiff … 1` arc with future-causal velocity (True): chains of `C¹` causal arcs, exactly."
+  ],
+  "⑥": [
+   "SUPPORTED",
+   "`D J = I⁻(J)` (True) and `H J = ∂J⁻(J)` (True), the two definitions the revised remark now gives and the earlier one left the reader to infer."
+  ],
+  "⑦": [
+   "SUPPORTED",
+   "`hmono` is the chronological ordering; `hOD` and `hI` together are `I⁻(O) = D = ι⁻¹ I⁻(𝒥⁺)` with the past of `𝒥⁺` taken in `Ñ` — `St.IpastSet 𝒥`, which is the clause the revised sentence adds; `hΘ` is `IsCauchyTemporalOn (S.D J) Θ`, the unique crossing of every level by every inextendible causal curve IN `D` (True), and `hadapt` is `Θ (O τ) = τ + c`."
+  ],
+  "⑧": [
+   "SUPPORTED",
+   "the first conjunct is `S.H J = ∂J⁻(𝒥⁺)` and `S.H (range O)` is NOT in this theorem's conclusion (False); it is `mx_H_eq_boundary`'s first conjunct (True).  The revised sentence attributes each half to the theorem that carries it — `r7664`'s ⑤ is repaired."
+  ],
+  "⑨": [
+   "SUPPORTED",
+   "`SublevelProper` is `∀ T, closure {x ∈ D J ∧ Θ x ≤ T} ⊆ D J` (True), and the revised sentence now writes the sublevel set as `{x ∈ D : Θ(x) ≤ T}`, with `D` inside it.  The consequence is one step from `∂J⁻(A) = closure D ∖ D` (True)."
+  ],
+  "⑩": [
+   "SUPPORTED",
+   "the four Kuratowski conjuncts are present ([True, True, True, True]) and `KLi`/`KLs` unfold to \"met for all sufficiently late `τ`\" and \"met frequently\" (True), which is the gloss given."
+  ],
+  "⑪": [
+   "SUPPORTED",
+   "the eighth conjunct is `∀ τ, S.cone O τ ∩ ∂J⁻(𝒥⁺) = ∅`, and it is discharged by `cd_cone_disjoint`, whose binders are ['[T2Space]', 'S', 'hL', 'J', 'O', 'hOD', 'hmono', 'hJM', 'hHM', 'Θ', 'hΘ'] — the Cauchy-temporal hypothesis among them (True).  So \"rests on the Cauchy property of `Θ`\" is the Lean's.  Its own docstring records that `hadapt` is not used (True).  What \"as in the proof above\" adds is a claim about the ROUTE, and that is ㉔–㉗ below, where it does not hold."
+  ],
+  "⑫": [
+   "SUPPORTED",
+   "`FrameHyp` is `NullFrame (bil g) ℓ n ∧ ∀ v, FutCausal (bil g) ℓ n v → 0 < ξ v` — null frame AND `dΘ` positive on the frame's future causal cone (True) — and the limit is of `covCh Θ q x`, `dΘ` read in the chart at `q` (True).  The revised sentence states both: \"frames `(ℓ,n)` that are null and on whose future causal cone `dΘ` is positive\" and \"read in that chart\".  `r7664`'s ⑧ is repaired."
+  ],
+  "⑬": [
+   "SUPPORTED",
+   "the carrier binders are ['h𝒥', 'hJM', 'hHM'] — three, and the revised sentence names exactly three, `J` and `𝓗⁺` in `M` and `𝒥⁺` in `M̃₀`, and states the worldline's as DERIVED from its chronological ordering, which `mx_range_subset_M` is (True).  Binders left unaccounted by the registered mapping: none.  `r7664`'s ⑨ is repaired, including the part this seat itself got wrong.  Also: `cd_prop_causal_alignment`'s binders are identical to `mx_prop_causal_alignment`'s (True), so the eighth conjunct costs no hypothesis."
+  ],
+  "⑭": [
+   "SUPPORTED",
+   "no binder mentions asymptotic flatness, future-completeness or `i⁺` ({'asymptot': True, 'Complete': True, 'i⁺': True, 'FiniteDimensional': True}); the atlas is `IsManifold … 1` (['1']) and every `ContMDiff` class in the file is `1` (['1']).  The revised sentence's \"of the atlas, the metric or the maps\" names all three, which is `r7664`'s second omission supplied."
+  ],
+  "⑮": [
+   "SUPPORTED",
+   "no theorem or lemma in the six probe files mentions hyperbolicity (0; 1 occurrence(s) of the word in all, and the one in ConeDisjoint.lean is a docstring aside).  The equivalence is now CITED to Bernal–Sánchez (4 citations of that key in the paper) and marked as what the formal statement does not include.  `r7664`'s ⑪ is repaired by saying so rather than by proving it, which is the right repair."
+  ],
+  "⑯": [
+   "SUPPORTED",
+   "no statement in the six files says the approached stretch extends without bound (0), and the cone clause that was the other absentee is now conjunct eight.  One clause left out, as the sentence says."
+  ],
+  "⑰": [
+   "SUPPORTED",
+   "`mx_witness_headline` reads off 7 of the conclusion's clauses on the two-chart Rindler atlas (True), and `cd_witness` adds that every past light cone misses the horizon and is non-empty {'cones miss 𝓗⁺': True, 'cones non-empty': True} — the non-emptiness being what keeps the new conjunct from holding vacuously, which the remark states and is right to state."
+  ],
+  "⑱": [
+   "SUPPORTED",
+   "`Ffail s = -Real.log s - Real.sin (Real.log s) - s` — the `sin(log s)` term is the oscillating rate — and the theorem negates BOTH the rate limit and the tangency limit (2 `¬ Tendsto`), which is what \"fails both the rate condition and the tangency\" says and what makes the rate condition necessary rather than convenient.  \"Meets every other hypothesis\" is carried in part by the conclusion — 3 positive conjuncts, the Cauchy property and the frame hypotheses on `D` among them — and in part by the shared witness's hypotheses, discharged inside the proof rather than stated."
+  ],
+  "⑲": [
+   "NOT SUPPORTED",
+   "the compact closure (True) and the proper image, `range ι ≠ univ` (True), are conjuncts of `cz_witness_headline`, and `cz_Ω_nonconst` gives non-constancy by evaluating `Ω²` at 3 points (cz_Ω (ψ (0, 0)) ^ 2 = 1 ∧ cz_Ω (ψ (1, 0)) ^ 2 = 1 / 2 ∧ cz_Ω (ψ (0, 1)) ^ 2 = 1 / 2).  But the FORMULA the sentence states, `Ω² = 1/[(1+U²)(1+V²)]`, is in NEITHER cited theorem (False in the headline's conjuncts): it is ['cz_Ω_sq', 'cz_ΩF_sq'] in the same file, cited nowhere (False).  The sentence asserts an equation and points at two theorems that do not contain it, one citation away from being right."
+  ],
+  "⑳": [
+   "SUPPORTED",
+   "`cz_witness_headline_F` holds for every positive `C¹` `F̂` with the tangency clause in its general form (True); `cz_exp_nonvacuous` keeps the family from being the flat case relabelled (True); `ct_witness_tangency_F` is stated for EVERY horizon point `q` (True); and `ct_expV_differs` takes `F̂ = exp(y.2)`, a function of `V` as the sentence says (True), and proves its limit unequal to the flat one (True).  All four as stated."
+  ],
+  "㉑": [
+   "SUPPORTED",
+   "the cylinder gives {'IsCauchyTemporalOn': True, 'SublevelProper': True, 'KLi': True, 'KLs': True} with no chart covering it (True); the four-dimensional witness gives {'IsCauchyTemporalOn': True, 'SublevelProper': True, 'KLi': True, 'KLs': True} and states its own dimension as a conjunct, `finrank ℝ E = 4` (True).  In both, `J` IS the worldline's range (True, True), so `S.H J` is `∂J⁻(O)` and the sentence's reading of `𝓗⁺ = {U = 0}` as `∂J⁻(O)` is the Lean's.  Tangency at every horizon point is `cy_witness_tangency` (True) and `fd_witness_tangency` (True)."
+  ],
+  "㉒": [
+   "SUPPORTED",
+   "no conformal extension is defined for either carrier ({'CylinderWitness': [], 'FourDWitness': []}) — the `ConformalExtension` occurrences in those files belong to the carried-over two-dimensional section — so the identification with `∂J⁻(𝒥⁺)` is exercised in two dimensions only, as the sentence says.  `r7664`'s ⑲ is repaired by dropping the unproved reason and keeping the fact."
+  ],
+  "㉓": [
+   "SUPPORTED",
+   "no curvature object appears anywhere in the six files (0 occurrences of Riemann/curvature/Weyl), and every metric built is flat or a positive multiple of a flat one (['cy_S', 'cz_minkF', 'cz_scale', 'fd_S']): `cz_scale S F` is `F • g`, and the three- and four-dimensional carriers are products of flat factors.  So no witness has a metric that is not conformally flat, as the closing sentence says.  It is this seat's ⑳ from `r7664`, sharpened by `69` from \"a curved one beyond conformal rescaling\" to the condition that actually fails."
+  ],
+  "㉔": [
+   "SUPPORTED",
+   "the assertion itself is `cd_cone_disjoint`: `∀ τ, S.cone O τ ∩ S.H J = ∅`, with `S.cone O τ = ∂J⁻(O τ)`.  The conclusion the prose states is the Lean's, exactly."
+  ],
+  "㉕": [
+   "SUPPORTED",
+   "`I⁻(x) ⊆ I⁻(O(τ))` for `x` in the closure is `cd_chr_of_mem_closure_Jpast`, and that `Θ` decreases into the past on `D` is `mh_temporalD_chr`, used inside `cd_mem_closure_sublevel`.  Both steps exist in the Lean, though the Lean reaches the inclusion through the openness of `I⁺(y)` and dual push-up, which the prose asserts rather than argues."
+  ],
+  "㉖": [
+   "NOT SUPPORTED",
+   "the prose's contradiction runs: a past-directed timelike curve from `x` lies in `I⁻(x) ⊆ D`, is future-inextendible in `D`, and the Cauchy property makes `Θ` grow without bound.  The Lean's route is not this one.  It goes Cauchy → FUTURE-Cauchy (`me_futCauchy_of_cauchy_N`) → PROPERNESS (`mh_sublevelProper`, a blow-up at a horizon point, needing `[T2Space N]`) → `closure J⁻(p) ∩ M ⊆ D` → `𝓗⁺ ∩ D = ∅`.  It never constructs a curve from `x`; its curves run INTO points of `M`.  And the prose's curve is future-inextendible in `D` only because `x ∉ D`, which is `mh_not_mem_D_of_H` and which the prose does not state."
+  ],
+  "㉗": [
+   "SUPPORTED",
+   "\"neither `J⁻(O(τ))` nor its boundary meets `𝓗⁺`\" is `cd_closure_Jpast_inter_H`: `closure (S.Jpast (O τ)) ∩ S.H J = ∅`, from which `cd_cone_disjoint` takes the frontier case by `frontier_subset_closure`.  The prose's \"nor its boundary\" is exactly the step `r7665` says 71 found short, and it is now the Lean's own statement."
+  ]
+ },
+ "tally": {
+  "UNMEASURED BY THIS SEAT": 1,
+  "SUPPORTED": 24,
+  "NOT SUPPORTED": 2
+ }
+}
