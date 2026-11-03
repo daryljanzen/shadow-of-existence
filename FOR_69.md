@@ -6255,3 +6255,31 @@ The other quotations in that section were also checked against scans:
 - de Sitter, "the time has a separate position";
 - Eddington 1920, all three passages.
 All of these match their sources word for word.
+
+---
+
+# ⛔ `r7659` — ROUTED TO 60, VIA 69: `r7400`'s CENSUS READS ITS LEDGER AT THE PIN AND ITS TRACE LIVE, SO A RECEIPT RENAME MOVES FOUR OF ITS PINNED FIGURES
+
+**Where.** `computations/beyond_the_wall/r7400_60_the_container_from_the_keys_own_trace/cost.py`, and the gate that fails on it is `receipts/L_probability/S60_…cannot_see_a_dead_pin_in_its_own_container.py` `Ⓓ①`. **Red on `claude/shadow-of-existence-setup-5tjf0b` at `ab4bf2536` in `scoped — the runner-read sweep`; green on `origin/main` at `d9174db5e`.**
+
+**What is wrong.** `ledger()` reads `corpus/quote_pin_baseline.tsv` with `git show FRAME:` and gives the reason: *"a census is a measurement at a commit, so the population is read at the pin and never live."* The trace that population is joined to is read live — `trace_names()` mints through `M.quote(ROOT)` over the working tree, and `receipt_dirs()` opens `os.path.join(ROOT, receipt)`. ⇒ **A receipt renamed between the frame and `HEAD` orphans every frame-ledger row keyed to its old path**: the live mint keys those literals to the new path, `named.get((receipt, lit))` misses, and the rows fall `RESOLVED → NO-NAME`.
+
+**Measured, on the instrument itself.** Of the `270` distinct receipt paths the frame ledger names, one does not exist in the live tree — the kernel receipt renamed at `r7659` item 1 — and it carries `6` `SOURCE` rows. Per-row class comparison between `origin/main` and the branch returns those six and nothing else.
+
+| the trace minted from | ⒜ resolved | named-unresolved | named-nothing | ⒞ absent | `DELIBERATE` |
+|---|---|---|---|---|---|
+| a worktree of the frame `15f27418` | `839` | `234` | `125` | `112` of `839` = `13.3` % | `61` |
+| `origin/main` `d9174db5e`, live | `839` | `233` | `126` | `112` of `839` = `13.3` % | `61` |
+| the branch at `ab4bf2536`, live | `833` | `233` | `132` | `111` of `833` = `13.3` % | `60` |
+
+✔ **Minting at the frame reproduces `S60`'s own docstring pins exactly**: Ⓒ's `839` of `1198` with `234` naming a file that resolves to nothing and `125` naming no file at all, and Ⓓ's `112` of `839` = `13.3` %. *The banked `container.txt` was taken at a tree matching the frame; the shipped code has drifted from it since.* ⛭ *And it drifts independently of this branch — the frame's `234`/`125` is main's `233`/`126`, one row moved by a receipt edit between the frame and main, which happens not to touch ⒜ or ⒞. The rename is the first drift that lands on a pinned figure, not the first drift.*
+
+**The patch, two touch points, both in `cost.py`.**
+1. `trace_names()` — mint from the frame's tree rather than the working tree (a detached worktree at `FULL`, or `M.quote(<frame tree>)`), so `named`'s keys are the ledger's keys by construction.
+2. `receipt_dirs()` — read the receipt's source with `git show {FULL}:{receipt}` instead of `open(os.path.join(ROOT, receipt))`, so the folded directory constants are the frame's too.
+
+⇒ Effect: ⒜⒝⒞⒟ become invariant under any seat's receipt churn and reproduce the banked run, `GAP_PINNED = 94` included. *The price is one worktree checkout at the frame, against the `14.0` s Ⓕ already prices the census at.*
+
+⛔ **The repair that looks cheaper does not work, and this is measured too.** Following the rename with `git diff --find-renames FRAME..HEAD -- receipts/` finds **zero** renamed receipts: the kernel receipt went `24,840 → 76,125` bytes across `r7657` and `r7659`, its similarity index is `R030`, and git's default `-M50%` cannot see it. `-M30% -l0` sees it. *A threshold is a guess that has to be re-guessed each time a receipt grows.*
+
+⌗ **Not applied, per `S60` Ⓔ's own rule** — the gate and its module are 60's, and Ⓔ routed the repo-wide branch's backslash correction rather than reaching into another seat's gate. ⌗ *Nothing on this side can repair it: the frame ledger is a git object at a fixed commit, a stub at the old path would be a dead duplicate receipt minted to satisfy a census, and renaming back contradicts item 1. **The sweep stays red on this branch until the trace is read at the pin**, and `fast` is green on the head.*

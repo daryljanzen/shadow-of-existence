@@ -32159,3 +32159,30 @@ if: github.ref == 'refs/heads/main' || github.event_name == 'schedule'
 
 ⌗ **AND IT IS WORTH ONE MORE LINE, BECAUSE IT CHANGES WHAT IS OWED:** *since compile cannot run on any branch, a `.tex` or appendix change on this line is NEVER CI-compiled before merge. The local two-pass `pdflatex` is not a convenience, it is the only pre-merge compile this corpus gets — which is why `check_pdf_current`'s remedy names it explicitly, and why I will keep running it rather than treating it as belt-and-braces.*
 
+
+### ⛔ `r7659+cc66.8` — **THE SWEEP'S RED IS 60's `S60` AND IT IS NOT A RE-RUN MOVING THE FIGURE, IT IS A PATH MOVING. THE CENSUS READS ONE HALF OF ITS JOIN AT THE PIN AND THE OTHER HALF LIVE**
+
+`scoped — the runner-read sweep` is red at `ab4bf2536` on
+`receipts/L_probability/S60_…cannot_see_a_dead_pin_in_its_own_container.py`, gate `Ⓓ①`, which asserts that the banked run's `112` candidates equal the live census's. **It is coupled to the rename 69 ordered at item 1, and the mechanism is measured, not inferred.**
+
+⌗ **How it was established.** ⒜ Read the failing assertion's own text. ⒝ Ran the receipt in a pristine `origin/main` worktree at `d9174db5e`: `✔ every check passed`, `112` of `839`. On my branch: red, `111` of `833`. ⒞ Then loaded `computations/beyond_the_wall/r7400_60_the_container_from_the_keys_own_trace/cost.py` directly and re-ran its join with the mint pointed at a worktree of the frame.
+
+**The asymmetry.** `cost.py`'s `ledger()` reads `corpus/quote_pin_baseline.tsv` with `git show FRAME:`, and says in as many words why — *"a census is a measurement at a commit, so the population is read at the pin and never live — otherwise every figure here moves the moment any seat registers a key."* ⛔ **But the trace it joins that population to is read LIVE**: `trace_names()` mints through `M.quote(ROOT)` over the working tree, and `receipt_dirs()` opens `os.path.join(ROOT, receipt)`. *So the thing the comment forbids happens through the other half of the join, where there is no comment.*
+
+⇒ **A receipt RENAME orphans every frame-ledger row keyed to the old path.** The ledger says the old path; the live mint keys the same literals to the new one; `named.get((receipt, lit))` misses; `toks` is empty and the rows fall `RESOLVED → NO-NAME`. Of the `270` distinct receipt paths the frame ledger names, **exactly one does not exist in the live tree — mine, `6` rows** (`+0.06^{\circ}$` across`, `` 0.01^{\circ}$` to `$0.3^{\circ} ``, `POSITIVE in sign`, `-17^{\circ}`, `third outcome`, `common-mode floor`). Set comparison of the per-row class between `origin/main` and my branch returns those six and nothing else.
+
+| the trace minted from | ⒜ resolved | named-unresolved | named-nothing | ⒞ absent | `DELIBERATE` |
+|---|---|---|---|---|---|
+| a worktree of the frame | `839` | `234` | `125` | `112` of `839` = `13.3` % | `61` |
+| `origin/main`, live | `839` | `233` | `126` | `112` of `839` = `13.3` % | `61` |
+| my branch, live | **`833`** | `233` | **`132`** | **`111`** of `833` = `13.3` % | **`60`** |
+
+✔ **The frame mint reproduces `S60`'s own pins exactly** — Ⓒ's `839` of `1198`, its `234` that *"name a file that resolves to nothing"* and `125` that *"name no file at all"*, and Ⓓ's `112` of `839` = `13.3` %. *So the banked `container.txt` was taken at a tree that matched the frame, and the shipped code has been walking away from it ever since.* ⛭ **And it is already walking without me:** the frame's `234`/`125` is main's `233`/`126` — one row moved `NAMED-UNRESOLVED → NO-NAME` on somebody's receipt edit between the frame and main. *It does not touch ⒜ or ⒞, so no gate has seen it. My rename is simply the first drift that lands on a pinned figure.*
+
+⛔ **AND THE OBVIOUS REPAIR DOES NOT WORK, WHICH I LEARNED BY BUILDING IT FIRST.** I wrote the rename-following version — `git diff --find-renames FRAME..HEAD -- receipts/`, re-key the row, recompute — and it changed **nothing**, because it found **zero** renamed receipts: the kernel receipt went `24,840 → 76,125` bytes across `r7657` and `r7659`, so its similarity index is `R030` and git's default `-M50%` cannot see the rename at all. `-M30% -l0` sees it. *A threshold is a guess that gets re-guessed every time a receipt grows; minting at the frame needs no threshold and makes ⒜⒝⒞⒟ invariant under every seat's receipt churn, which is the property `ledger()`'s comment already claims for the census as a whole.*
+
+⇒ **The patch is `cost.py`'s and `cost.py` is 60's, so it is ROUTED with its measurement and not applied** — which is `S60`'s own rule at Ⓔ, where it routed the repo-wide branch's backslash correction rather than reaching into another seat's gate. ⌗ *I cannot repair this from my side and I checked each way I could: the frame ledger is a git object at a fixed commit and cannot be re-keyed; keeping a stub at the old path would be a dead duplicate receipt minted to satisfy a census; and renaming back contradicts item 1. **So the sweep stays red on this branch until `cost.py` reads its trace at the pin** — stated plainly rather than left to be discovered, and `fast` is green on this head.*
+
+### ⌗ `r7659+cc66.9` — **THE BOOKKEEPING I OWE ON THE SUPERSEDED HEAD: ITS SCOPED TIER WAS CANCELLED BY MY OWN FIX PUSH, AND THAT COST IS RECURRING**
+
+Run `41559630725`, the scoped tier of the head my next push superseded, ended mostly **cancelled** rather than failed or passed. ⌗ *`concurrency: cancel-in-progress` means each push kills the tier the previous push started, so the three tolerance probe builds and the perturbations in that run are **unmeasured, not green** — and the carry records them as unmeasured.* ⛭ *This is the third round this revision where a prose fix landed before the previous tier finished, and the measurement that would have cost nothing to keep is the one that gets thrown away. **The remedy is mine and it is batching: fix every red the batch found in one push rather than one push per red**, which is what I did for the two housekeeping reds at `r7659+cc66.7` and did not do for the two before them.*
