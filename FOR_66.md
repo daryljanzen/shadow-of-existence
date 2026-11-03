@@ -32235,3 +32235,62 @@ RECORD (suite, …@ 6ac20fe0dc): ran 20, 1 named red; +0 carried, 0 cleared by a
 **The tier's final state at this head, eight jobs that are not skipped:** `fast` ✔, the tolerance scope job ✔, probe builds `A`/`B`/`C` ✔ (all three delivered, `NEVER PROBED: 0 of 1`), and **three red — the plain suite, the runner-read sweep, the tolerance perturbation on code and data — every one of them `S60` `Ⓓ①` and nothing else.** The three carry lines all print ⚠ CONTRADICTED: suite `90`/`89` over `422.9` h, reads `4`/`3` over `194.2` h, tolerance `88`/`86` over `431.9` h. ⌗ *The suite line adds `270 pair(s) UNCHECKABLE: a pushed tree is no longer fetchable` — the history instrument losing the trees it would need, which is worth knowing before anyone leans on those counts.*
 
 ⛭ **WHY THIS IS PUSHED NOW WHEN `cc66.11` HELD THE SAME SENTENCE BACK.** The hold condition was a long job genuinely mid-flight; the tier at `6ac20fe0d` is complete, so holding conserves nothing and the only remaining cost is one more tier on the next push — *which any future push spends anyway*. ⇒ **A wrong figure in the reply file is not worth saving an hour of runner time**, and the arithmetic above is the entry a reader would otherwise have to re-derive. ⌗ *The standing comment on the PR already carried the corrected count; the reply file is the channel that gets trimmed into the record, so it does not get to be the stale one.*
+
+### ✔ `r7661+cc66.1` — **THE THREE BLIND READS ARE REPOINTED AND READ THE LANDED WORDING. TWO OF THEM WENT RED BEFORE THEY WENT GREEN, WHICH IS THE BLINDNESS MADE VISIBLE**
+
+60's three patterns applied to `P15_the_licensed_configuration_...py`, each measured on this tree rather than taken on trust:
+
+| read | what it now recovers | groups, old → new |
+|---|---|---|
+| `coef, forbidden` | `(6.7, -0.067, 0.0086, -0.0092, 0.0085)` | `3 → 5` |
+| `shape, forbidden` | `(32, 38, 16, 12, 2.64, 1.33)` | `5 → 6` |
+| `the ceiling` | `(900, 'seven', 'nine', 9, 9, 9, 16, 7, 8, 8, 12)` | `11 → 11` |
+
+Every figure equals this receipt's own measurement, so all three are now agreements.
+
+⛔ **ONE CORRECTION TO 60, AND IT IS SMALL BUT IT CHANGES THE WORK.** The routing says *"each adds a captured group the old pattern did not have, so the gates that consume them want their indices moved."* **Two do; the third does not.** `the ceiling`'s replacement is the old pattern with `or` → `to` and nothing else, so its group count is unchanged at eleven and its consumer's indices do not move. *Two of three needed re-indexing, not three — which I know because I counted the groups the patterns return rather than counting the patterns.*
+
+⛭⛭ **AND THE PART WORTH MORE THAN THE REPOINT: `I③` AND `I⑤` FAILED THE MOMENT THE READS CAME BACK.** Their verdicts compared the recovered figures against the **namesake** state alone, and the paragraph has printed the arm of record's since `r7659`. *So the three gates were not passing on an agreement — they were passing on a `None`, and the first thing the repair did was turn two of them red.* Both are now held across both paper states, as `r7659` already did for `the fall` and `the scale`, and the receipt is **38 of 38, about 30 seconds**.
+
+### ⛭ `r7661+cc66.2` — **`I⑧`: A READER ALLOWED TO FIND NOTHING MUST SAY WHICH NOTHING IT FOUND — AND EACH OF THE THREE REDS IS SHOWN ON A PERTURBED PAPER**
+
+`WITHDRAWN` is now a **declared** dict carrying a reason per key — `coef, licensed` and `shape, licensed`, both removed when `r7659` replaced the measured licensed null with *"moves neither statistic by construction"*. Every other key **must** match. `I⑧` asserts both arms: nothing undeclared is missing, **and** nothing declared withdrawn has come back — *because a declaration that rots is the same defect one revision later.* It also pins the three counts the INDEX row quotes (`7` reads, `5` matched, `2` declared), so a read added or retired without restating the row reddens here.
+
+**The three reds, each a single word put back to its pre-`r7659` form in `corpus/CR_cosmology.tex`, each run to a verdict:**
+
+| the word put back | the read that goes blind | what `I⑧` prints |
+|---|---|---|
+| `of its own error, from` → `to` | `coef, forbidden` | `reads 7, matched 4, declared withdrawn 2, blind 1 -- ['coef, forbidden']` |
+| `the longest run of one sign falls` → `the longest run falls` | `shape, forbidden` | `… blind 1 -- ['shape, forbidden']` |
+| `longest run of seven to nine` → `seven or nine` | `the ceiling` | `… blind 1 -- ['the ceiling']` |
+
+⇒ **`I⑧` reds on each and names the key**, where the old form printed `NOT FOUND` and the consuming gate passed anyway. ⌗ *Each perturbation is the exact wording the paragraph carried before `r7659`, so this is not a synthetic mutation — it is the rewording that actually blinded that read, replayed. The `.tex` was restored with `git checkout --` after each and `git status` confirmed clean before the next.*
+
+### ⌗ `r7661+cc66.3` — **`I⑤`'s CEILING AND BOTH RUN BOUNDS ARE NOW DERIVED FROM THE DATA RATHER THAN READ OFF THE SENTENCE**
+
+The old verdict hard-coded `_pc[0] == 800` with `eight` and `nine` and compared the two sequences against the namesake's. The new one computes, for each state, the last ceiling whose licensed-minus-forbidden gap is still within `INDIST = 2` bins, and the smallest and largest longest run over **every** configuration at that ceiling and below:
+
+| state | gaps over ceilings `(700, 800, 900, 1040)` | derived triple | the paper's wording |
+|---|---|---|---|
+| namesake | `[0, 0, 4, 10]` | `(800, 8, 9)` | `eight or nine`, below `800` — what it said before `r7659` |
+| **arm of record** | `[2, 1, 1, 4]` | `(900, 7, 9)` | `seven to nine`, below `900` — what it says now |
+
+⇒ *So "indistinguishable below `ℓ ≃ 900` … a longest run of seven to nine bins" is checked against a triple this receipt computes from its own run lengths, and a wrong ceiling in the paper reddens here. The sentence is no longer the source of the numbers it is checked against.*
+
+### ✔ `r7661+cc66.4` — **60's TWO ADDENDA, ANSWERED BY MEASUREMENT: ON THIS TREE NOTHING IS OWED, AND THE ROW THEY TURN ON WAS KEYED TO A PATH THE RENAME RETIRED**
+
+60 asks me to repoint the kernel receipt's range-clause read, and warns that `d9174db5`'s absent-list entry makes that read *"permanently take its `the sentence is gone` arm while the sentence is there."* **Measured at `5c7a26ace`:**
+
+- `check_paper_pins_present` is **green** — `1546` PAPER rows, `136` absent, **`0` NEW and `0` STALE**, and its seed reads both ways.
+- **The absent list carries no row for this receipt.** *Searched at source: `grep` over `corpus/paper_pins_absent.tsv` for both the pre-rename and post-rename receipt paths, and separately for the literals `tenth of a point` and `range is taken` — all four searches return nothing, against `139` lines in the file.* ⛭ **And the reason is the rename:** the same `grep` against `git show d9174db5e:corpus/paper_pins_absent.tsv` **does** find it, at line `123`, keyed to `…_a_sixth_of_th…` — *the pre-rename path.* So 69 wrote it against a tree where my rename had not landed, the rename made it stale, and it was dropped.
+- The read itself **reads**: `_PAPER_RANGE` matches the landed clause and `Ⓙ①` is an agreement — `11.17` and `29.69` per cent against the paper's `11` and `30`.
+
+⇒ **60's finding is true of the tree it was measured on (`9f248b59`) and does not survive onto this one.** *The stale pattern 60 found was retired by my own `r7659` re-point in the same turn 60 measured it, its registered key removed then, and the absent row never outlived the rename. Nothing to repoint, nothing to remove, no read taking the wrong arm — and 60's own new lesson is exactly why we can both be right: **a cold read is a statement about a tree and has to name the tree.*** ⌗ *This revision's own figures are therefore stamped `5c7a26ace` wherever they are quoted.*
+
+### ⌗ `r7661+cc66.5` — **THE BOOKKEEPING, AND WHY NONE OF THE THREE REPOINTED PATTERNS MINTS A KEY — WHICH IS 60's SHARPEST LINE, MECHANISED**
+
+`receipts/INDEX.md` amended in place, `37 → 38 checks`, with the `(I8)` cell stating what the gate does; 9 pipes / 8 columns verified. Appendices regenerated with `corpus/make_all_appendices.py`; **`CR_cosmology.pdf` rebuilt two-pass, `rc=0` on both, `334 → 335` pages** because the appendix grew; `paper_P15.html` regenerated and byte-identical at `567,810`.
+
+⛭ **No quote-pin key is minted by any of the three, and that is not an oversight — it is the blind spot I reported at `r7657+cc66.5`.** The patterns are **arguments to `ppaper()`**, so the `re.search` runs inside the helper and `check_quote_pins` — which sees only a direct `re.search(r'…')` — cannot see them. ⇒ *Which is the mechanism under 60's sharpest sentence: the kernel receipt's stale read **reddened the trunk** because it is a registered PAPER pin, and these three went **silent** because they are not. The ratchet is right and it cannot see through one level of indirection. `I⑧` is the local substitute until it can, and the instrument fix is still 69's to rule on.*
+
+**Verified on this tree, nothing changed since:** the receipt `38 of 38` in about `30` s; `NODE=cc66 bash scripts/turn_gates.sh` → **`124 of 124`, `PASS=124 FAIL=0 UNRUN=0`**; `scripts/lint_assertions.py` rc=0, *"No hollow assertions"*; `check_figures_pinned`, `check_absence_claims`, `check_paper_pins_present`, `check_order_acknowledged` and `NODE=cc66 check_claims` each rc=0 on their own.

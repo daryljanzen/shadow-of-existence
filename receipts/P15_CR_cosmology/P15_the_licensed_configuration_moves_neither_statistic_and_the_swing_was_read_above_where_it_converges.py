@@ -510,12 +510,34 @@ _P15T = re.sub(r'\s+', ' ', open(os.path.join(ROOT, 'corpus', 'CR_cosmology.tex'
 _PP = {}
 
 
+# ⛭⛭ r7661 (69's order, from 60's general point at r7660): A READER THAT MAY LEGITIMATELY FIND
+#   NOTHING WANTS ITS TWO CASES SEPARATED.  One `None` serving both *the sentence is gone* and *the
+#   pattern no longer sees it* is what let three of these seven reads go blind behind a green gate
+#   between `r7657` and `r7661`: each `None` short-circuits its conjunction, so the gate passed
+#   WITHOUT its paper-side check and nothing in the output invited a second look.
+#   ⇒ `WITHDRAWN` is now a DECLARED list carrying its reason, and every other key MUST match.
+#   `I⑧` is the gate that says so, which is what turns the next rewording into a red.
+WITHDRAWN = {
+    'coef, licensed': 'r7659 replaced the measured licensed null with `moves neither statistic by '
+                      'construction`, so there is no licensed coefficient pair left to read -- '
+                      'which is this receipt\'s own recommendation (1), taken',
+    'shape, licensed': 'the same removal: the sentence no longer prints a licensed run or chi^2 pair',
+}
+_MISSED = []
+
+
 def ppaper(key, pat, *cast):
-    """read ONE of l.1938-1955's figures out of the .tex, tolerate its absence, and print which."""
+    """read ONE of l.1938-1955's figures out of the .tex, and say WHICH KIND of absence it is."""
     m = re.search(pat, _P15T)
     _PP[key] = tuple(c(g) for c, g in zip(cast, m.groups())) if m else None
-    print(f"      {key:14s} " + (f"{_PP[key]}" if m else
-                                 "** NOT FOUND -- reworded since r7657 **"))
+    if m:
+        state = f"{_PP[key]}"
+    elif key in WITHDRAWN:
+        state = f"** WITHDRAWN, declared -- {WITHDRAWN[key]} **"
+    else:
+        state = "** NOT MATCHED -- not declared withdrawn, so this read has gone BLIND **"
+        _MISSED.append(key)
+    print(f"      {key:16s} {state}")
     return _PP[key]
 
 
@@ -525,17 +547,23 @@ ppaper('coef, licensed', r'moves by \$([\d.]+)\$ of its own error, its magnitude
 ppaper('shape, licensed', r'the longest run of one sign goes from \$(\d+)\$ to \$(\d+)\$ bins, the '
                          r'wrong way; \$\\chi\^\{2\}\$ per bin goes from \$([\d.]+)\$ to '
                          r'\$([\d.]+)\$', int, int, float, float)
-ppaper('coef, forbidden', r'moves the same coefficient by \$([\d.]+)\$ of that error to '
-                         r'\$(-[\d.]+)\\pm([\d.]+)\$', float, float, float)
+# ⛭ r7661: REPOINTED.  `the same coefficient ... to` became `the contrast coefficient ... from
+#   ... to`, which adds the SPECIFIED pair the old pattern never read -- five groups, not three.
+ppaper('coef, forbidden', r'by \$([\d.]+)\$ of its own error, from \$(-[\d.]+)\\pm([\d.]+)\$ '
+                         r'to \$(-[\d.]+)\\pm([\d.]+)\$',
+       float, float, float, float, float)
 ppaper('the fall', r'its magnitude falling \$(\d+)\$ per cent onto the value the control itself '
                    r'returns', float)
+# ⛭ r7661: REPOINTED.  `the longest run falls` became `the longest run OF ONE SIGN falls`, and
+#   chi^2 per bin now prints BOTH ends -- six groups, not five.
 ppaper('shape, forbidden', r'the sign changes rise from \$(\d+)\$ to \$(\d+)\$, the longest run '
-                          r'falls from \$(\d+)\$ to \$(\d+)\$ and \$\\chi\^\{2\}\$ per bin falls '
-                          r'to \$([\d.]+)\$', int, int, int, int, float)
+                          r'of one sign falls from \$(\d+)\$ to \$(\d+)\$ and '
+                          r'\$\\chi\^\{2\}\$ per bin falls from \$([\d.]+)\$ to \$([\d.]+)\$',
+       int, int, int, int, float, float)
 ppaper('the scale', r"\$\\ell_A\$ moves from \$([\d.]+)\$ to \$([\d.]+)\$ against the control's "
                     r"\$([\d.]+)\$", float, float, float)
 ppaper('the ceiling', r"\\emph\{indistinguishable below \$\\ell\\simeq(\d+)\$\}---every one of them "
-                      r"with a longest run of ([a-z]+) or ([a-z]+) bins---and separate only above "
+                      r"with a longest run of ([a-z]+) to ([a-z]+) bins---and separate only above "
                       r"it, where the specified configuration's run grows \$(\d+)\$, \$(\d+)\$, "
                       r"\$(\d+)\$, \$(\d+)\$ and the forbidden one's stays \$(\d+)\$, \$(\d+)\$, "
                       r"\$(\d+)\$, \$(\d+)\$", int, str, str, int, int, int, int, int, int, int, int)
@@ -635,20 +663,33 @@ print(f"      mean |excursion|  {_NS['banked'][7]:.3f} -> {_NS['forbidden'][7]:.
       f"{_AO['banked'][7]:.3f} -> {_AO['forbidden'][7]:.3f}")
 gate("⛭⛭⛭ ** I③ ITEM 1's SECOND HALF, ON THE ARM OF RECORD: EVERY DIRECTION THE "
      "PRE-REGISTERED TEST NAMED HOLDS AND EVERY DIGIT MOVES. **  *c -0.0670 -> -0.0092, a move of "
-     "6.7 of its error, |c| falling 86 per cent (the paper's 89) and landing 0.2 of an error from "
-     "the control's own -0.0075; the sign changes 32 -> 38 where the paper prints 30 -> 44; the "
-     "longest run 16 -> 12 where it prints 18 -> 12; chi^2 per bin 2.64 -> 1.33 where it prints "
-     "3.05 -> 1.47; the mean excursion 1.327 -> 1.114.  ** More sign changes, shorter runs, "
-     "smaller excursions and a lower chi^2 -- the four-part test fixed before either grid was "
-     "read, met on all four. ** *",
-     bool((_pf is None or (abs(_NS['forbidden'][2] - _pf[0]) < 5e-2
-                           and abs(_NS_C['forbidden'][0] - _pf[1]) < 5e-5))
-          # ⛭ r7659 (69): l.1938-1946 LANDED on the arm of record, so each paper read is held as a
-          #   disjunction of the two states -- the namesake's printed figure or this arm's.
+     "6.7 of its error, |c| falling 86 per cent and landing 0.2 of an error from the control's "
+     "own -0.0075; the sign changes 32 -> 38; the longest run 16 -> 12; chi^2 per bin 2.64 -> "
+     "1.33; the mean excursion 1.327 -> 1.114.  ** More sign changes, shorter runs, smaller "
+     "excursions and a lower chi^2 -- the four-part test fixed before either grid was read, met "
+     "on all four. ** *  ⛭ r7661: this gate used to add `where the paper prints 30 -> 44` and its "
+     "three companions, because the paragraph then carried the NAMESAKE pair.  It no longer does "
+     "-- r7659 landed the re-point -- so the paper's digits and this receipt's are the same "
+     "digits, and the read is now an AGREEMENT rather than a contrast.",
+     # ⛭ r7659 (69): l.1938-1946 LANDED on the arm of record, so each paper read is held as a
+     #   disjunction of the two states -- the namesake's printed figure or this arm's.
+     # ⛭⛭ r7661: `coef, forbidden` and `shape, forbidden` are REPOINTED onto the landed wording,
+     #   which reads the ARM's figures and the SPECIFIED end the old patterns never saw.  Both are
+     #   now held across both states, as `the fall` and `the scale` already were -- and both reads
+     #   FAILED on the namesake-only form the moment they came back, which is the blindness made
+     #   visible: the gates had been passing on a `None`, not on an agreement.
+     bool((_pf is None or any(abs(_X['forbidden'][2] - _pf[0]) < 5e-2
+                              and abs(_XC['banked'][0] - _pf[1]) < 5e-5
+                              and abs(_XC['banked'][1] - _pf[2]) < 5e-5
+                              and abs(_XC['forbidden'][0] - _pf[3]) < 5e-5
+                              and abs(_XC['forbidden'][1] - _pf[4]) < 5e-5
+                              for _X, _XC in ((_NS, _NS_C), (_AO, _AO_C))))
           and (_pfa is None or any(abs(abs(_X['forbidden'][3]) - _pfa[0]) < 1.0 for _X in (_NS, _AO)))
-          and (_pfs is None or (_NS['banked'][4] == _pfs[0] and _NS['forbidden'][4] == _pfs[1]
-                                and _NS['banked'][5] == _pfs[2] and _NS['forbidden'][5] == _pfs[3]
-                                and abs(_NS['forbidden'][6] - _pfs[4]) < 5e-3))
+          and (_pfs is None or any(_X['banked'][4] == _pfs[0] and _X['forbidden'][4] == _pfs[1]
+                                   and _X['banked'][5] == _pfs[2] and _X['forbidden'][5] == _pfs[3]
+                                   and abs(_X['banked'][6] - _pfs[4]) < 5e-3
+                                   and abs(_X['forbidden'][6] - _pfs[5]) < 5e-3
+                                   for _X in (_NS, _AO)))
           and _AO['forbidden'][2] > 6.0 and -88.0 < _AO['forbidden'][3] < -84.0
           and abs(_AO_C['forbidden'][0] - C['banked']['lcdm'][0]) < 0.3 * C['banked']['lcdm'][1]
           and _AO['forbidden'][4] > _AO['banked'][4] and _AO['forbidden'][5] < _AO['banked'][5]
@@ -659,9 +700,9 @@ print(f"\n    and the acoustic scale: {_AO['banked'][8]:.3f} -> {_AO['forbidden'
       f"the control's {_LA_CTL:.3f}   (the paper's namesake pair: {_NS['banked'][8]:.3f} -> "
       f"{_NS['forbidden'][8]:.3f} against the same {_LA_CTL:.3f})")
 gate("⛭⛭ ** I④ AND THE SCALE FOLLOWS IT ON THIS ARM TOO, PAST THE CONTROL RATHER THAN ONTO IT: "
-     "l_A moves 302.943 -> 301.400 against the control's 301.375, where the paper prints its "
-     "NAMESAKE pair's own two figures against the same 301.375 -- READ out of l.1946 above and "
-     "not repeated here. **  *The control's figure is UNMOVED because it is the "
+     "l_A moves 302.943 -> 301.400 against the control's 301.375, and since r7659 those are the "
+     "paper's own three figures too -- READ out of l.1946 above and not repeated here. **  *The "
+     "control's figure is UNMOVED because it is the "
      "same file on every grid, which is what makes this a statement about the arm.  ** The "
      "forbidden route overshoots: the namesake landed 0.005 above the control and this arm lands "
      "0.025 above it, five times as far, on a move twenty times that size. ** *",
@@ -675,6 +716,29 @@ gate("⛭⛭ ** I④ AND THE SCALE FOLLOWS IT ON THIS ARM TOO, PAST THE CONTROL 
 _pc = _PP['the ceiling']
 _GAPS_AO = [_SEQ_AO['licensed'][k] - _SEQ_AO['forbidden'][k] for k in range(len(CEILINGS))]
 _GAPS_NS = [_SEQ_NS['licensed'][k] - _SEQ_NS['forbidden'][k] for k in range(len(CEILINGS))]
+INDIST = 2          # bins; `indistinguishable` as this receipt already scores it below
+
+
+def _state(seq, gaps):
+    """(the ceiling the sentence can say they are indistinguishable BELOW, the run bounds there),
+    DERIVED from one state's own gap profile rather than taken from the sentence: the last ceiling
+    whose gap is still within `INDIST`, and the min and max longest run over every configuration
+    at that ceiling and below.  ⛭ r7661: the paper's three figures are a reading of this triple,
+    so the triple is what the read is checked against -- namesake (800, 8, 9), arm (900, 7, 9)."""
+    k = -1
+    for i, g in enumerate(gaps):
+        if g > INDIST:
+            break
+        k = i
+    if k < 0:
+        return None
+    win = [v[:k + 1] for v in seq.values()]
+    return CEILINGS[k], min(min(w) for w in win), max(max(w) for w in win)
+
+
+_ST_NS, _ST_AO = _state(_SEQ_NS, _GAPS_NS), _state(_SEQ_AO, _GAPS_AO)
+print(f"      the ceiling each state can claim, derived from its own gaps (<= {INDIST} bins): "
+      f"namesake {_ST_NS}, ARM OF RECORD {_ST_AO}")
 print(f"\n    where the three SEPARATE, gap in the longest run at each ceiling {CEILINGS}:")
 print(f"      namesake       specified {_SEQ_NS['licensed']}  forbidden {_SEQ_NS['forbidden']}"
       f"  gap {_GAPS_NS}")
@@ -685,12 +749,16 @@ gate("⛭⛭⛭ ** I⑤ `separate only above it` STILL HOLDS AND THE CEILING MOV
      "the specified configuration reads 9, 9, 9 and the forbidden one 7, 8, 8 -- gaps of two, one "
      "and one bin -- where the namesake pair had already opened to four bins at 900 (13 against "
      "9).  The separation appears only at the top ceiling, 16 against 12.  ⇒ ** So the sentence's "
-     "STRUCTURE survives and two of its figures move: `indistinguishable below ell ≃ 900`, `every "
-     "one of them with a longest run of SEVEN to nine bins`, and the gap it turns on falls from "
-     "ten bins to four. ** *",
-     bool((_pc is None or (_pc[0] == 800 and _WORDNUM[_pc[1]] == 8 and _WORDNUM[_pc[2]] == 9
-                           and list(_pc[3:7]) == _SEQ_NS['licensed']
-                           and list(_pc[7:11]) == _SEQ_NS['forbidden']))
+     "STRUCTURE survives and two of its figures moved, and since r7659 the paragraph carries them: "
+     "`indistinguishable below ell ≃ 900`, `a longest run of seven to nine bins`, and the gap it "
+     "turns on falls from ten bins to four. ** *  ⛭ r7661: the ceiling and the two run bounds are "
+     "DERIVED from each state's own gap profile rather than taken from the sentence -- namesake "
+     "(800, 8, 9), arm of record (900, 7, 9) -- so the read is checked against a triple this "
+     "receipt computes, and a wrong ceiling in the paper reddens here.",
+     bool((_pc is None or any((_pc[0], _WORDNUM[_pc[1]], _WORDNUM[_pc[2]]) == _ST
+                              and list(_pc[3:7]) == _S['licensed']
+                              and list(_pc[7:11]) == _S['forbidden']
+                              for _S, _ST in ((_SEQ_NS, _ST_NS), (_SEQ_AO, _ST_AO))))
           and max(_GAPS_AO[:3]) <= 2 and _GAPS_AO[3] == 4 and _GAPS_NS[3] == 10
           and _GAPS_NS[2] == 4
           and min(min(v[:3]) for v in _SEQ_AO.values()) == 7))
@@ -703,6 +771,28 @@ gate("⌗ I⑥ the control's coefficient is the SAME NUMBER on all six grids, an
      bool(all(_CAO_CTL[k] == _CAO_CTL['banked'] for k in _CAO_CTL)
           and _CAO_CTL['banked'][0] == C['banked']['lcdm'][0]
           and all(C[k]['lcdm'][0] == C['banked']['lcdm'][0] for k in C)))
+_still = [k for k in WITHDRAWN if _PP[k] is not None]
+gate("⛭⛭⛭ ** I⑧ EVERY READ THAT IS NOT DECLARED WITHDRAWN MATCHED, AND EVERY ONE THAT IS "
+     "DECLARED WITHDRAWN IS STILL ABSENT. **  *This is the gate `r7660` is owed and the one this "
+     "receipt did not have: between `r7657` and `r7661` three of these seven reads stopped seeing "
+     "figures the paper still printed -- `coef, forbidden`, `shape, forbidden` and `the ceiling` "
+     "-- and because a missing read is tolerated by short-circuit, the three gates that consume "
+     "them went on passing WITHOUT their paper-side check.  ** A guard that cannot fail on the "
+     "data it is given is not a guard, and a green gate is the one thing that cannot tell you a "
+     "check has stopped checking. **  ⇒ The tolerance stays, because a sentence may legitimately "
+     "be withdrawn -- but it now costs a DECLARATION with a reason, and the undeclared case "
+     "reddens.  ⌗ The second arm matters as much as the first: if a withdrawn sentence comes "
+     "back, the declaration is false and this gate says so rather than letting the list rot.*",
+     bool(not _MISSED and not _still
+          # ⌗ and the three counts the INDEX row quotes are PINNED here, not merely printed, so a
+          #   read added or withdrawn without restating the row reddens this receipt.
+          and len(_PP) == 7 and len(WITHDRAWN) == 2
+          and sum(v is not None for v in _PP.values()) == 5))
+print(f"      reads {len(_PP)}, matched {sum(v is not None for v in _PP.values())}, "
+      f"declared withdrawn {len(WITHDRAWN)}, blind {len(_MISSED)}"
+      + (f" -- {_MISSED}" if _MISSED else "")
+      + (f";  DECLARED WITHDRAWN BUT PRESENT: {_still}" if _still else ""))
+
 # -- the INDEX row's own digits, pinned, because r7657 puts fourteen new ones in it ---------------
 # ⌗ `check_figures_pinned`'s rule: a figure a citing sentence prints must FAIL its receipt when it
 #   is wrong, and `pins()` only sees constants inside a comparison -- so a gate that MEASURES a
@@ -730,21 +820,26 @@ gate("⛭ I⑦ ** EVERY DIGIT r7657 PUTS IN THIS RECEIPT'S INDEX ROW IS A LITERA
           and abs(round(_AO['forbidden'][8], 3) - 301.400) < 1e-9
           and abs(round(_LA_CTL, 3) - 301.375) < 1e-9))
 print("""
-    ⛭⛭⛭ THE RECOMMENDATION 69 ASKED FOR, IN ONE PLACE:
-      ① l.1939-1942, the licensed half: it is a NAMESAKE comparison and should say so, or go.
-        On the arm of record there is no second configuration -- the baseline already carries the
-        rule's own assignment -- so `moves neither statistic` is exactly true and its four figures
-        have no counterpart here.  ** Recommend: keep the half, name the grid it is read on. **
-      ② l.1943-1949, the forbidden half: re-point every digit.  c -0.0670 -> -0.0092 at 6.7 of
-        its error, |c| falling 86 per cent onto the control's own value, sign changes 32 -> 38,
-        longest run 16 -> 12, chi^2 per bin 2.64 -> 1.33, l_A 302.943 -> 301.400 against 301.375.
-      ③ l.1952-1954, the four-ceiling sentence: `indistinguishable below ell ~= 900` (not 800),
-        `a longest run of seven to nine bins` (not eight or nine), the specified run growing
-        9, 9, 9, 16 and the forbidden one 7, 8, 8, 12.  `separate only above it` HOLDS.
-      ④ and the `\\rcpt` on that sentence: it is closed by the THREE-GRID receipt, which gates none
-        of these four numbers.  ** Recommend citing THIS receipt there -- it computes all four at
-        those four ceilings on both arms -- and leaving the three-grid citation on the reach
-        sentence that follows, which is its own. **
+    ⛭⛭⛭ THE RECOMMENDATION 69 ASKED FOR AT r7657 -- ALL FOUR ITEMS TAKEN AT r7659, RECORDED HERE
+    BECAUSE A RECOMMENDATION THAT HAS BEEN ACTED ON SHOULD STOP ASKING:
+      ① the licensed half: taken, and taken FURTHER than asked.  I recommended keeping the half
+        and naming the grid; 69 removed the measured null instead and wrote `moves neither
+        statistic by construction`, which is the stronger statement and the true one on this arm.
+        ⇒ `coef, licensed` and `shape, licensed` are now DECLARED WITHDRAWN above, with that
+        reason, rather than tolerated as silent misses.
+      ② the forbidden half: taken, every digit.  The paragraph now prints 6.7 of an error,
+        -0.0670+-0.0086 -> -0.0092+-0.0085, 86 per cent, 32 -> 38, 16 -> 12, 2.64 -> 1.33 and
+        l_A 302.943 -> 301.400 against 301.375 -- this receipt's own figures, so I③ and I④ read
+        them back as AGREEMENTS.
+      ③ the four-ceiling sentence: taken.  `indistinguishable below ell ~= 900` and `a longest run
+        of seven to nine bins`, with 9, 9, 9, 16 against 7, 8, 8, 12.  I⑤ derives the ceiling and
+        both run bounds from each state's own gap profile and checks the sentence against them.
+      ④ the `\\rcpt` on that sentence: taken -- l.1952-1954 now cites THIS receipt.
+    ⛔ AND WHAT THE FOUR COST, WHICH IS THE PART WORTH CARRYING FORWARD: three of these seven
+    reads went BLIND on the rewording that took (2) and (3), and passed green for two revisions
+    because a missing read short-circuits its gate.  60 found it at r7660, not a gate.  I⑧ is the
+    repair, and the rule it carries is general: ** a reader allowed to find nothing must say WHICH
+    nothing it found. **
 """)
 print(f"\n  {len(CHECKS)} checks, {len(CHECKS)-len(bad)} pass, {len(bad)} fail")
 print("  GATES: " + ("ALL PASS" if not bad else "FAILURES ABOVE"))
