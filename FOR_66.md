@@ -32186,3 +32186,35 @@ if: github.ref == 'refs/heads/main' || github.event_name == 'schedule'
 ### ⌗ `r7659+cc66.9` — **THE BOOKKEEPING I OWE ON THE SUPERSEDED HEAD: ITS SCOPED TIER WAS CANCELLED BY MY OWN FIX PUSH, AND THAT COST IS RECURRING**
 
 Run `41559630725`, the scoped tier of the head my next push superseded, ended mostly **cancelled** rather than failed or passed. ⌗ *`concurrency: cancel-in-progress` means each push kills the tier the previous push started, so the three tolerance probe builds and the perturbations in that run are **unmeasured, not green** — and the carry records them as unmeasured.* ⛭ *This is the third round this revision where a prose fix landed before the previous tier finished, and the measurement that would have cost nothing to keep is the one that gets thrown away. **The remedy is mine and it is batching: fix every red the batch found in one push rather than one push per red**, which is what I did for the two housekeeping reds at `r7659+cc66.7` and did not do for the two before them.*
+
+### ⛔ `r7659+cc66.10` — **A CORRECTION TO MYSELF, SAME CLASS AS `cc66.7` AND TWICE IN ONE REVISION: I MEASURED ONE INPUT OF A JOB AND ASSERTED ITS WHOLE POPULATION. THE RUN FALSIFIED IT WITHIN THE HOUR**
+
+I measured `scripts/receipt_scope.py --range 8add4b241^..8add4b241` as **reads `0`, tolerance `0`, suite `19`** and predicted from it that the scoped tier would come back green on that head — a green I went so far as to label *"a scope artefact, not a cleared cause."* ⇒ **Falsified on the run.** `scoped — the runner-read sweep` reported `ran 1, 1 named red` and failed; so did `scoped — the tolerance perturbation, on code and data this push changed`.
+
+**Why, read out of `gates.yml` rather than inferred from it this time.** Each scoped job's scope step is
+
+```
+python3 scripts/receipt_scope.py --ci --scope reads --list "$RUNNER_TEMP/scope.txt"
+rc=0; timeout 600 python3 scripts/red_carry.py --union reads --list "$RUNNER_TEMP/scope.txt" …
+```
+
+⇒ **the population is the natural scope UNIONED WITH THE CARRY**, so a receipt carried red is re-run on every subsequent push whatever the range contains. *I had measured the first line and reported the sum. ⌗ `cc66.7`'s rule was "read the instrument, do not infer it from its neighbours"; this is the same error one level in — **do not infer a job's population from one of its own inputs**, either.*
+
+⛭ **AND THE REAL MECHANISM IS BETTER THAN THE ONE I INVENTED, which is becoming the pattern.** The carry is precisely what stops a latent red hiding behind an empty scope: the figure cannot go quietly green on a push that happens to touch nothing. *The natural `0`s are still true, and the reads job's own seeded probe fires its selector on synthetic input first, so its `0` is a MEASURED `0` and not an assumed one.*
+
+**THE RED, COMPLETE, since this is the entry a reader will use.** `S60`'s `Ⓓ①`, two lines, both at `8add4b241`:
+
+| line | what ran | carry history, as the job prints it |
+|---|---|---|
+| `reads` | `ran 1, 1 named red`; `1` carried after the push | ⚠ CONTRADICTED, carried `4`, cleared `3`, on `2` branches over `194.2` h |
+| `tolerance` | `ran 1, 1 named red`; **`NEVER PROBED: 0 of the 1 in scope`** | ⚠ CONTRADICTED, carried `88`, cleared `86`, on `6` branches over `431.9` h, `130`-odd same-content red/green pairs |
+
+✔ *The tolerance red is therefore **MEASURED and not carried-unmeasured** — all three probe builds delivered on this head, unlike the superseded one. And the runner reproduces my own census independently: `833` resolved, `111` candidates, census `13.6` s, repo-wide comparison `172.5` s. ⛔ The CONTRADICTED marks say the receipt HAS been contradicted; by `r7611+cc66.6`'s rule they cannot say that THIS red is one, and this one's cause is measured in both directions — orphaned at `833`/`111` on the branch, restored to `839`/`112` by minting the trace at the frame.*
+
+### ⌗ `r7659+cc66.11` — **THE CADENCE, AND A REFINEMENT TO THE HOLD RULE THAT THIS ROUND MEASURED: A JOB WHOSE SCOPE IS DERIVED FROM THE FILE YOU ARE ABOUT TO EDIT IS NOT A JOB WORTH HOLDING FOR**
+
+⌗ **The cancel cost, a second instance.** My `04:31Z` push cancelled the plain suite on `2b559d425`'s successor `ab4bf2536` mid-run — its `run the scoped receipts` step cancelled and its record step then failed — so **there is no plain-suite verdict on the head where this red was established**, which is exactly the verdict that would have said whether `S60` reds that line too. Build `B` of that head's three tolerance probes was cancelled after its upload; `A` and `C` delivered.
+
+⛭ **AND THE REFINEMENT, which is why this entry is pushed rather than held.** I held two pushes for the plain suite running on `8add4b241`, correctly by the standing rule — nothing uncommitted, no fix waiting, a long job genuinely mid-flight. But that job's scope is *the receipts that read `FOR_66.md`*, `19` of them, and **this entry edits `FOR_66.md`**. ⇒ *Its verdict would certify a tree this edit supersedes — the same defect as `r7659+cc66.7`'s root cause, where I appended to the reply file while the validating batch was running: **a green certifies the tree it read, and a reply file edited after it is a tree it never saw.** The `55` minutes of runner time are already spent either way; what the push costs is a verdict about a superseded tree, and what it buys is the same `19` receipts re-run, plus the carry, on the tree that will actually be reviewed.*
+
+⇒ **So the hold rule gets one clause: hold for a mid-flight job unless its own scope is derived from what you are about to change.** *In that case the hold is not conserving a measurement, it is conserving a stale one.*
