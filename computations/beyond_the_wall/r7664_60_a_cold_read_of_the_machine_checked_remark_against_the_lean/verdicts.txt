@@ -1,0 +1,80 @@
+TREE: worktree: 6ff453871a8207f8ae193a58c7f25063aefb7816
+GUARD: {'true-probe  (`S.SublevelProper J Θ` is a conjunct)': True, 'false-probe (`S.FiniteDimensional J Θ` is a conjunct)': False, 'flip-test (⑧ ⑨ ⑪ ⑲ verdicts depend on their readings)': True}  -> both probes flipped; the verdicts stand.
+BINDERS (19): ['[T2Space]', 'S', 'St', 'hL', 'hLt', 'X', '𝒥', 'h𝒥', 'J', 'O', 'hOD', 'hmono', 'hJM', 'hI', 'hHM', 'Θ', 'c', 'hΘ', 'hadapt']
+CONJUNCTS (7):
+  1. S.H J = frontier (X.ι ⁻¹' St.JpastSet 𝒥)
+  2. S.SublevelProper J Θ
+  3. KLi (S.slice J Θ) = frontier (X.ι ⁻¹' St.JpastSet 𝒥)
+  4. KLs (S.slice J Θ) = frontier (X.ι ⁻¹' St.JpastSet 𝒥)
+  5. KLi (S.cone O) = frontier (X.ι ⁻¹' St.JpastSet 𝒥)
+  6. KLs (S.cone O) = frontier (X.ι ⁻¹' St.JpastSet 𝒥)
+  7. ∀ q ∈ frontier (X.ι ⁻¹' St.JpastSet 𝒥), ∀ (ℓ n : N → E) (L : Filter N) (C : ℝ) (ℓ₀ : E), L ≤ 𝓝 q → (∀ᶠ x in L, TCF.FrameHyp (S.gE x) (ℓ x) (n x) (dcov
+
+①  UNMEASURED BY THIS SEAT
+     no Lean toolchain and no Mathlib on this tree, so `#print axioms`' OUTPUT cannot be read here and the three-axiom claim is not decided.  What IS measurable: the file requests the audit for 2/2 of the two named theorems (MSpacetime.mx_prop_causal_alignment, MSpacetime.mx_H_eq_boundary), 62 `#print axioms` lines in ConformalBoundary.lean in all; 0 occurrences of sorry/admit/native_decide and 0 `axiom` declarations across the three probe files.
+
+②  SUPPORTED
+     `[T2Space N]` is a binder of the theorem (True); `LocallyOneChart` is exactly `hRep g` `C¹` and `chartRep T` continuous on an open set in the preferred chart about each point (True); the charted structure is `IsManifold … 1` on both carriers ([('1', 'N'), ('1', 'N'), ('1', 'Ñ')]).  `MSpacetime`'s fields are ['M', 'isOpen_M', 'g', 'symm', 'T', 'T_timelike', 'pos_on_perp']: the Lorentzian conditions `T_timelike` and `pos_on_perp` are imposed ON `M` only, which the remark's own phrase "the region carrying the metric" (⑨) matches.  Hausdorffness is assumed for `N` ALONE — `T2Space Ñ` is not a binder (False) — so the setting sentence is, if anything, stronger than the Lean needs.
+
+③  NOT SUPPORTED
+     `ConformalExtension`'s fields are ['ι', 'isOpenEmbedding', 'contMDiff', 'Ω', 'Ω_pos', 'conformal', 'timeOrient', 'maps_M'].  The remark states the open `C¹` embedding, the positive `Ω` and `ι*g̃ = Ω²g`, and "causal curves are chains of `C¹` causal arcs" is exactly `Cau = ReflTransGen CStep` with `CStep` a `ContMDiff … 1` arc (True).  But 2 field(s) of the structure go unstated: ['timeOrient', 'maps_M'] — the agreement of the time orientations under `Dι` on `M`, and `ι(M) ⊆ M̃`.  A reader asked what the formal statement assumes about the extension is told five of its seven fields.
+
+④  SUPPORTED
+     `hmono : ∀ s t, s < t → S.Chr (O s) (O t)` is the chronological ordering; `hOD` is `I⁻(range O) = D J` and `hI` is `I⁻(range O) = ι⁻¹ Ĩ⁻(𝒥)`, which together are the remark's `I⁻(O) = D = I⁻(𝒥⁺)`; `hΘ : S.IsCauchyTemporalOn (S.D J) Θ` and `hadapt : ∀ τ, Θ (O τ) = τ + c`.  `IsCauchyTemporalOn` unfolds to `IsTemporalOn` plus a unique crossing for every inextendible causal curve IN `U` (True), so "Cauchy temporal function of `D`" is the intrinsic property on `D` and not a statement about surfaces of the whole spacetime.
+
+⑤  NOT SUPPORTED
+     the first conjunct is `S.H J = frontier (ι⁻¹ J̃⁻(𝒥))` (True), i.e. `∂J⁻(J) = ∂J⁻(𝒥⁺)`.  The remark's first of four is `∂J⁻(O) = ∂J⁻(𝒥⁺) = 𝓗⁺`, and `S.H (range O)` does NOT appear in this theorem's conclusion (False); it is the FIRST conjunct of `mx_H_eq_boundary` (True), which the remark names separately, in the clause before.  The pair of theorems carries the double equality; the theorem the sentence attributes it to carries one half.
+
+⑥  SUPPORTED
+     the second conjunct is `S.SublevelProper J Θ`, which unfolds to `∀ T, closure {x ∈ D J ∧ Θ x ≤ T} ⊆ D J` (True) — the remark's sentence exactly, with the sublevel set taken inside `D`, which the remark's "{Θ≤T}" leaves to its own "lies inside `D`".  The consequence the remark draws, that no finite-`Θ` slice meets `𝓗⁺`, is NOT a conjunct: it is one step from `mx_frontier_JpastSet`, `∂J⁻(A) = closure D ∖ D` (True), which is disjoint from `D`.  The remark's "so that" is accurate as a derivation and the derivation's one input is a proved lemma of the same file.
+
+⑦  SUPPORTED
+     four of the seven conjuncts are `KLi`/`KLs` of `S.slice J Θ` and of `S.cone O`, each equal to the same frontier ([True, True, True, True]).  `KLi A = {p | ∀ U ∈ 𝓝 p, ∀ᶠ τ in atTop, (A τ ∩ U).Nonempty}` is literally "met by ALL SUFFICIENTLY LATE τ" and `KLs` is "met FREQUENTLY" (True); `slice J Θ τ = {x ∈ D J | Θ x = τ}` and `cone O τ = frontier (J⁻(O τ))` are the remark's `S_τ` and `∂J⁻(O(τ))`.  The remark's gloss names the substantive half of each equality — `frontier ⊆ KLi` for the lower limit, `KLs ⊆ frontier` for the upper — and each conjunct is in fact an equality, so the Lean gives both inclusions of both.
+
+⑧  NOT SUPPORTED
+     the seventh conjunct quantifies over every `q ∈ frontier`, every `ℓ n L C ℓ₀` with `L ≤ 𝓝 q`, and takes FOUR hypotheses: `∀ᶠ FrameHyp (gE x) (ℓ x) (n x) (dcov Θ x)`, `∀ᶠ ‖dchartL q x (n x)‖ ≤ C`, `dchartL q x (ℓ x) → ℓ₀`, and the rate `→ 0`; the limit is `(dcov Θ x (n x))⁻¹ • covCh Θ q x → −(gE q ℓ₀)`.  `FrameHyp` is `NullFrame (bil g) ℓ n ∧ ∀ v, FutCausal (bil g) ℓ n v → 0 < ξ v` — a null frame AND `ξ` POSITIVE ON THE FUTURE CAUSAL CONE OF `(ℓ, n)` (True).  The remark states the frame as "null frames (ℓ,n)" and never states that second half, which is not implied by `Θ` being temporal on `D`, because the hypothesis is asked eventually along a filter converging to a point OF `𝓗⁺`, where `IsTemporalOn (S.D J)` says nothing.  Separately the limit is of `covCh Θ q x`, `dΘ_x` RE-READ IN THE CHART AT `q` (True); the remark attaches "in a chart" to the bound on `n` only, and without the chart-reading its `dΘ/dΘ(n) → −g(ℓ₀,·)` compares covectors at different points.
+
+⑨  NOT SUPPORTED
+     the carrier binders actually assumed are ['h𝒥', 'hJM', 'hHM']: `hJM : J ⊆ S.M`, `hHM : frontier (ι⁻¹ J̃⁻(𝒥)) ⊆ S.M` and `h𝒥 : 𝒥 ⊆ St.M` — three, on `J`, on `𝓗⁺` and on `𝒥⁺`.  The remark names two, "the worldline and `𝓗⁺`", and the WORLDLINE's carrier is not among them: `range O ⊆ S.M` is DERIVED from the chronological ordering by `mx_range_subset_M` (True) and is assumed nowhere.  What is assumed in its place is the carrier of `J`, the set whose chronological past is `D`, which is not the worldline.  Compounding it, ⑧'s positivity of `dΘ` on the frame's cone is a tangency hypothesis the sentence's "the convergence and bound on the frame just stated" does not cover.  Binders left unaccounted by the registered mapping: none.
+
+⑩  SUPPORTED
+     no binder mentions asymptotic flatness, future-completeness of `O`, or `O(τ)→i⁺` ({'asymptot': True, 'Complete': True, 'i⁺': True, 'FiniteDimensional': True}), and the regularity is `1` throughout: the CHARTED STRUCTURE itself is `IsManifold 𝓘(ℝ,E) 1` on both carriers (['1']), not `⊤`, so the atlas is `C¹` too and the claim holds at a level the sentence does not even claim.  The smoothness classes appearing with `ContMDiff` in the file are ['1'].  The model space carries `NormedAddCommGroup`/`NormedSpace ℝ` and nothing else — no finite dimensionality, no completeness — so the theorem is dimension-free.
+
+⑪  NOT SUPPORTED
+     the word "hyperbolic" does not occur once in the three probe files (0 occurrences), so there is no machine-checked statement relating global hyperbolicity of `D` to the existence of a Cauchy temporal function on it.  That global hyperbolicity enters only through `hΘ` is SUPPORTED — it is the single binder in which `D`'s causal character is used.  Its appositive, "its standard equivalent", is a claim about the literature standing inside a remark headed "Machine-checked form", and the attestation does not reach it.
+
+⑫  SUPPORTED
+     neither clause is among the seven conjuncts, and neither is proved elsewhere in the file: no statement disjoints a past cone from `𝓗⁺` (False) and none says the approached stretch extends without bound (False).  The remark's account of what is missing is accurate, and so is its reason for the second — `KLi`/`KLs` are set limits and carry no metric extent.
+
+⑬  SUPPORTED
+     `mx_witness_headline` discharges every hypothesis of `mx_prop_causal_alignment` and reads off all seven conjuncts {'identification (H J)': True, 'properness': True, 'KLi slice': True, 'KLs slice': True, 'KLi cone': True, 'KLs cone': True, 'tangency at p₀': True}, the tangency one instantiated at `p₀` with the frame `(ℓN, nN)` along `𝓝[D] p₀`.  The carrier is the two-chart atlas `{idH, nullH}` (True) and the compactification is `v = arctan V` alone, visible in `Ω² = 1/(1 + V²)` (True).  "Every clause of the conclusion instantiated" is exact.
+
+⑭  SUPPORTED
+     `Θ₀ = ThetaG (fun s => −log s)`, i.e. `−log(−U) + V` (True), and it is the slicing `mx_witness_headline`'s tangency limit is proved for.
+
+⑮  SUPPORTED
+     `Ffail s = -Real.log s - Real.sin (Real.log s) - s`, so `Θf = F(−U) + V` with a `sin(log s)` term: the rate across the generators oscillates.  `mc_witness_tangency_fails` proves `Θf` is still Cauchy temporal on `D` and the frame hypotheses still hold on `D`, and then NEGATES both the rate limit and the tangency limit (2 `¬ Tendsto`).  SUPPORTED — but the remark cites only `mx_witness_headline` for this sentence, and that theorem says nothing about `Θf`; the result is `mc_witness_tangency_fails`, which the remark never names.
+
+⑯  SUPPORTED
+     `cz_witness_headline`'s conclusion opens with `IsCompact (closure (range ι))` and `range ι ≠ univ` (True) — the image's compact closure, stated as a conjunct, with the target `Ñ = P` a different type from `N = Pt`, so this is a genuine compactification and not a relabelling.  The non-constancy of `Ω²` is NOT a conjunct of this theorem (False): it is the separate `cz_Ω_nonconst` (True), which the remark's single citation does not distinguish.
+
+⑰  SUPPORTED
+     `cz_witness_headline_F` is stated for every positive `C¹` `F̂`, with `g_F = F·g = −F dU dV`, and its last conjunct is the tangency clause in full generality — `∀ q ∈ frontier, ∀ ℓ n L C ℓ₀, …` (True) — with no point instantiated, exactly as the remark says.  The remark omits `cz_exp_nonvacuous` (True), which exhibits `F̂ = e^{UV}` and proves `g_F ≠ g`: without it the `F`-family could be read as the flat case relabelled.
+
+⑱  SUPPORTED
+     `cy_witness_headline` {'no chart covers': True, 'H = {U=0}': True, 'Cauchy on the manifold': True, 'properness': True, 'KLi/KLs slice': True, 'KLi/KLs cone': True}; `cy_J = range cy_O` (True), so `cy_S.H cy_J` IS `∂J⁻(O)` and the remark's reading of `𝓗⁺ = {U=0}×S¹` as `∂J⁻(O)` is the Lean's.  The Cauchy property is `cy_isCauchyTemporalOn`, a conjunct, stated on `N` itself.  Tangency at every horizon point is `cy_witness_tangency` (True).  Six of the seven conjuncts plus tangency; the identification conjunct is the one absent, which is ⑲.
+
+⑲  NOT SUPPORTED
+     the non-exercise is right — no `ConformalExtension` is built for the cylinder.  But the REASON the remark gives is not machine-checked: the file's own header carries it as "`ConformalExtension` / `mx_prop_causal_alignment` — REPORTED, not built" (True), an argument in prose that a conformal `g̃ = h(−du dv) + k dy²` would need `k = Ω²` and `h = Ω²(1+U²)(1+V²)`, so either the circle's size vanishes at `𝒥⁺` or `h` blows up.  No theorem states it.  A sentence of a remark headed "Machine-checked form" asserts, without marking it, something the probe file itself marks as reported rather than built.
+
+⑳  SUPPORTED
+     the files instantiating the headline are ['Compactification.lean', 'ConformalBoundary.lean', 'CylinderWitness.lean', 'ManifoldCones.lean', 'ManifoldHeadline.lean']; the model dimensions they state are ['3'] — the cylinder's 3 is the largest and no witness states 4.  The curved stretch that exists is `cz_scale`, a conformal rescaling `F·g` whose causal objects are unchanged by construction, so "a curved one beyond conformal rescaling" is indeed not built.
+
+OMITTED BY THE REMARK, PROVED BY THE LEAN:
+  * the theorem is DIMENSION-FREE: `E` carries only `NormedAddCommGroup` and `NormedSpace ℝ`, with no `FiniteDimensional` and no `CompleteSpace` anywhere in the three files, so the proposition is proved for any real normed model space.  The remark's closing sentence speaks only of which WITNESSES are built, leaving a reader to suppose the theorem itself is tied to low dimension.
+  * the charted structure is `IsManifold 𝓘(ℝ,E) 1`, a `C¹` ATLAS, not `⊤`.  The remark says no smoothness beyond `C¹` is used of the metric and the maps; that it is not used of the atlas either is stronger and is not said.
+  * `mc_witness_tangency_fails` — the theorem behind the remark's oscillating slicing — is never named, though it is the only place a NEGATIVE result is proved, and it is the sharper half of the pair: `Θf` satisfies every hypothesis of the proposition except the rate limit, so the rate hypothesis is shown necessary and not merely convenient.
+  * `cz_exp_nonvacuous` (`F̂ = e^{UV}`, `g_F ≠ g`) is not named, so nothing in the remark rules out the `F`-family being the flat metric under another name.
+  * `cz_witness_headline`'s conclusion also carries `range ι ≠ univ`: the extension is proper, the boundary genuinely added.  The remark gives the compact closure and not this.
+
+TALLY: {'UNMEASURED BY THIS SEAT': 1, 'SUPPORTED': 13, 'NOT SUPPORTED': 6}
