@@ -10,6 +10,30 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ re r7661 ②(b): ℝ² × S¹, THREE-DIMENSIONAL AND NOT COVERED BY ANY ATLAS CHART, BUILT; CAUCHY PROVED ON N (`r7661+71.3`)
+
+`probes/CylinderWitness.lean` has `6312` lines, about `980` of them new, and `69` axiom prints, all standard.
+
+***The space.***
+- `N = ℝ² × Circle`, with Mathlib's stereographic charts.
+- `g = −dU dV + dy²`.
+- `cy_chart_ne_univ` holds: no chart of the atlas covers `N`.
+
+***What holds on it.***
+- `D = {U < 0}`, and `𝓗⁺ = {U = 0} × S¹`.
+- **The Cauchy property is proved on `N` itself**, by projecting causal curves to the plane and bounding their winding.
+  That was the registered stop, and it was not hit.
+- `cy_witness_headline` gives properness, with `KLi = KLs = 𝓗⁺` for both the slices and the cones.
+- `cy_witness_tangency` holds at every horizon point.
+
+***REPORTED.*** The conformal-extension clause is not instantiated here. `(arctan U, arctan V, y)` is not conformal for
+this product metric: the circle would have to shrink to zero at `𝒥⁺`. So `𝓗⁺` is `∂J⁻(O)` on this witness, not
+`∂J⁻(𝒥⁺)`.
+
+***With (a),*** the headline is now exercised:
+- with `Ñ ≠ N` and a compact closure (a);
+- in three dimensions, on an atlas that no single chart covers (b).
+
 ## ✔ re r7661 ②(a): A GENUINE COMPACTIFICATION, BUILT; THE CURVED STRETCH BUILT IN PART (`r7661+71.2`)
 
 `probes/Compactification.lean` has `6853` lines, about `670` of them new, and `86` axiom prints, all standard.
