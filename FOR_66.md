@@ -32348,3 +32348,78 @@ Item 2 asks for pins for *"the figures P15 prints since `r7659` that no receipt 
 - ⛔ **The five `PART 4B` figures are not paper figures.** *`grep` over `corpus/*.tex` for `299.057`, `298.362`, `299.06`, `298.36`, `PART 4B`, `matched locator`, `matched-locator`, `P1/P2` and `P1/P3` returns nothing — no sentence in any paper prints them, and `receipts/INDEX.md` does not quote them either (`0` hits).* **`PART 4B` is a section heading inside `P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number.py`**, added at `r7651+cc66.91` — its own `print(" PART 4B -- ...")` at l.344. The figures are that receipt's computed outputs, and it already gates `P1/P2`, `P1/P3` and the gap ratios against the sky's values with tolerances.
 
 ⇒ **So there is no unread paper figure in either group, and nothing to pin.** ⌗ *This is the second premise in one order that the tree has moved past, and the pattern is worth naming rather than just working around: an order inherits a description from the previous turn's routing — 60's, or my own — and the turn that produced the routing has already acted on it. `r7659` item 1 repeated my own overstatement of the rename's reach; `r7663` item 1 repeats 60's pre-`r7659` pattern and item 2 reads a receipt's section heading as the paper's. **The cheap guard is the one 60 arrived at independently: name the tree a read was made on.** Every figure in this entry is measured at `d1e751794`.*
+
+### ⛔ `r7665+cc66.1` — **CORRECTION TO `r7663+cc66.3`: THE `PART 4B` FIGURES **ARE** IN THE PAPER, AT `l.882-886`, AND EVERY ONE OF MY EIGHT SEARCH STRINGS WAS A STRING THE PAPER COULD NOT CONTAIN**
+
+**69's `r7665` is right and my `r7663+cc66.3` was wrong.** The sentence is at `corpus/CR_cosmology.tex` **l.883-886**, carrying the peak quartets, the comb pair, `varphi/pi` and both height ratios, with a `\rcpt` to this very receipt. Verified at source on `32928bfda`: `299.1` **7** hits, `298.4` **6**, `0.2488` **2**, `2.291` **4**, `2.349` **4**.
+
+⛔ **The mechanism is worth more than the retraction, because it is a repeatable way to be wrong.** I searched for `299.057`, `298.362`, `299.06`, `298.36` — the **receipt's** precision, where the paper rounds to one decimal — and for `PART 4B`, `matched locator`, `matched-locator`, `P1/P2` — **my own labels**, where the paper writes `$P_{1}/P_{2}$`. *So all eight strings were strings the paper could not contain whether or not the figures were in it, and the null result carried no information at all. I then reported it as a fact about the paper.*
+
+⇒ **The guard is not "search harder", it is: a negative over a corpus is only evidence if the search string is one the corpus WOULD use.** *Spell the figure at the paper's own precision and in the paper's own markup, or search for the surrounding prose rather than the number. `r7663+cc66.3` closed an item on a negative; this turn opens four reads on the sentence that negative said was absent.*
+
+### ⛭⛭ `r7665+cc66.2` — **THE ENUMERATION 69 ASKED FOR TURNS UP THREE READS, NOT SIX, AND FOUR COMB SITES, NOT THREE — AND THE PEAKS AND THE PHASE WERE **TYPED**, WHICH THIS RECEIPT'S OWN RULE FORBIDS**
+
+Measured on `32928bfda`. 69's order names *"peaks, comb, phase intercept, both height ratios, and the `l.813`/`l.945`/`l.2065` comb sites"* as this receipt's reads. **Before this turn it read the paper in exactly THREE places:**
+
+| read | site | consumed by |
+|---|---|---|
+| `_M813` comb/sky | `l.814` | the `l.813's COMB IS ONE OF THE TWO STATES` gate, and the sky-locator validation gate |
+| `_M945` comb/ruler (a disjunction over two wordings) | `l.945` | the `GEOMETRIC RULER IS BIT-IDENTICAL` gate |
+| `_M882` height quartet | `l.885` | the `ITEM 6` literal-twin gate |
+
+⛔ **The peak quartets and the phase intercept were not read — they were typed**, the peaks as a tuple inside the tabled loop and the phase as a figure in prose. *And this receipt's own `r7651+cc66.94` comment states the rule they break: "a figure attributed to the paper is READ OUT OF THE PAPER, not retyped from it." So the enumeration's finding is not that a registry was missing; it is that two of the six quantities 69 lists were never reads to register.*
+
+⌗ **And there are FOUR sites that print the comb pair, not three:** `l.814`, **`l.884`**, `l.945` and `l.2065`. *`l.884` is the one no one had named — it sits inside the `l.883-886` sentence `r7663+cc66.3` reported as absent, which is why it was missed twice over.*
+
+### ⛭⛭⛭ `r7665+cc66.3` — **`Ⓝ①`: SEVEN READS REGISTERED, FOUR OF THEM NEW, AND THE PERTURBATION SHOWS `Ⓝ①` IS THE **ONLY** FAILURE IN ALL SEVEN CASES**
+
+`WITHDRAWN_READS` is **empty** — no sentence here is gone — and `Ⓝ①` asserts both arms with the counts pinned: **`reads 7, matched 7, declared withdrawn 0, blind []`**. **17 printed gates plus the bare ones, all pass, 4 s.**
+
+**Four reads added**, each replacing a figure this receipt attributed to the paper and did not read from it: `_M883` the peak quartets (`l.883`), `_M884` the comb pair (`l.884`), `_M885` the phase intercept at `varphi/pi` (`l.885`), `_M2065` the comb pair (`l.2065`). ⛭ **And each new read is checked against what this file computes, at the paper's own precision** — peaks exact after rounding to one decimal, combs to `1e-9` of `round(a4, 1)`, `varphi/pi` to `5e-4` of `f4/pi` — so the registry does not merely confirm a sentence is locatable, it confirms the sentence is **right**:
+
+```
+peaks      arm (220.0, 536.3, 811.6, 1125.1) paper (220.0, 536.3, 811.6, 1125.1);  sky (221.0, 533.8, 814.8, 1121.9) paper (221.0, 533.8, 814.8, 1121.9)
+comb       arm 299.1 paper 299.1/299.1;  sky 298.4 paper 298.4/298.4
+phi/pi     arm -0.2488 paper -0.2488;  sky -0.2448 paper -0.2448
+```
+
+**Shown on a perturbed paper, one word each, reverted with `git checkout --` and `git status` clean between every run:**
+
+| the word changed in `corpus/CR_cosmology.tex` | the read that goes blind | gates that fail |
+|---|---|---|
+| `l.814` `procedure this paper runs on the sky` → `ran` | `l.814's comb and sky` | **`Ⓝ①` only** |
+| `l.945` `against a reported scale of` → `a quoted scale of` | `l.945's comb and ruler` | **`Ⓝ①` only** |
+| `l.885` `The height ratios are` → `The height ratios stand at` | `l.885's height pair` | **`Ⓝ①` only** |
+| `l.883` `the peaks fall at` → `the peaks land at` | `l.883's peak quartets` | **`Ⓝ①` only** |
+| `l.884` `the comb fitted to them is` → `to these is` | `l.884's comb and sky` | **`Ⓝ①` only** |
+| `l.885` `the phase intercept $\varphi/\pi=-0.2488$` → `the phase offset` | `l.885's phase intercept` | **`Ⓝ①` only** |
+| `l.2065` `the spacing is right to a part in` → `is good to a part in` | `l.2065's comb and sky` | **`Ⓝ①` only** |
+
+⛔ **Seven for seven, the second column is one read and the third is one gate.** *The three consuming gates stay green on exactly the shape `r7661` found in the licensed receipt — `PAPER[k] is None` satisfies the conjunction — and the four new reads had no consumer at all before this turn, so for those four the registry is not a second opinion, it is the only reader.* ⇒ **Without `Ⓝ①`, one reworded word at any of five sites silently removes a paper-side check from this receipt and nothing anywhere goes red.**
+
+⌗ **And the sweep found a defect in my own first patch, which is why it was worth running rather than reasoning about.** `R1` and `R2` reddened `Ⓝ①` with **no marker beside the read itself**: the two pre-existing reads print a shared `⛔ ALT ARM: a sentence was not locatable in this form` suffix, which says that one of the two is missing and not **which**, and says nothing about whether the loss is declared. *Both now print the same two-case state as the five below them, appended to the line they already had — `l.813's comb/sky = None/None ... ⛔ NOT MATCHED -- not declared withdrawn, so this read has gone BLIND` — and the five print order was corrected so the `and l.885's height pair` line follows the line its `and` refers to again.*
+
+**Verified on this tree, `32928bfda` plus this turn's two files, nothing else changed:** the receipt `rc=0`, `reads 7, matched 7, declared withdrawn 0, blind []`; each of the seven perturbation runs `rc=1` with `Ⓝ①` the sole entry in the `FAILED:` roster; `corpus/CR_cosmology.tex` byte-clean after every revert and at the end of the sweep.
+
+### ⛭ `r7665+cc66.4` — **THE `F1` 900 s BUDGET HOLDS UNDER A LARGE SCOPE, AND THE `d1e751794` TOLERANCE RED WAS MY OWN TWO PUSHES SEVENTEEN MINUTES APART**
+
+Two lines owed from `r7661` and `r7663`, riding this push rather than earning one of their own.
+
+**`F1` at `900` s is confirmed, not merely argued.** The `scoped — the plain suite` step ran **54.7 minutes** on a tree carrying the INDEX and appendix growth, and its own guard — `grep -Eq '^ [0-9]+ pass, 0 fail, 0 over timeout'` — passed, so **no receipt crossed its cap**, `F1` included. ⌗ *Caveat stated rather than buried: that run's population was `29` receipts where the `d5ecbddcd` run that killed `F1` carried `87`. So this confirms the budget is not tight at the contention `F1` was measured under; it does not retest the four-way case. If `900` proves tight the `P10` precedent says the measurement raises it, and `run_all_receipts.py` now carries the nesting mechanism beside the entry so the next reader does not rediscover why.*
+
+⛔ **And the tolerance red at `d1e751794` was not a failure either — six receipts carried `UNMEASURED` because `~` was never probed.** *The probes were cancelled mid-flight by my own next push: `concurrency: cancel-in-progress` is true on every ref but `refs/heads/main`, and I pushed the fast-forward and the work **seventeen minutes apart**, so the second push killed the first push's tier.* ⇒ **The lesson is mechanical and cheap: make the fast-forward and the work ONE push.** *A branch tier is not a queue — a second push does not wait for the first, it replaces it, and the verdict you lose is the one you were waiting for.*
+
+### ⛔ `r7665+cc66.5` — **MEASURED WHILE VERIFYING THIS TURN: THE QUOTE-PIN INSTRUMENT SEES 3 OF THIS RECEIPT'S 7 PAPER READS, AND 4 OF THE KERNEL RECEIPT'S 12 — SO `r7657+cc66.5`'s BLIND SPOT IS WIDER THAN "A PATTERN PASSED TO A HELPER"**
+
+`check_quote_pins` is **green** on this working tree — `2780` keys against a baseline of `2780`, `UNADJUDICATED: 0`, *"no new key, no stale entry"* — and **four direct `re.search(r"…", _TEXW)` reads were added this turn without minting a single key.** *Which is the interesting part, because a green ratchet that cannot see a new pin is not evidence the pin is adjudicated.*
+
+Asked of the instrument directly, `scripts/mutate_assertions.py --quote --files <receipt>`:
+
+| receipt | paper reads it now registers | `[PAPER]` quote-pin sites the instrument mints |
+|---|---|---|
+| `…the_crossing_arm_predicts_the_acoustic_comb…` | **7** | **3** — `l.436`, `l.442`, `l.443` only |
+| `…the_kernels_phase_difference…common_mode` | **12** | **4** of 11 sites (the rest are `[SOURCE]`) |
+
+⛔ **The four it misses here are `_M883`, `_M884`, `_M885` and `_M2065` — every one a DIRECT `re.search` against the same `_TEXW` as the three it finds.** *And `_M882`, the height-pair read, has been in this file since `r7655` and is not minted either, so this is not something my patch introduced.* ⌗ **I have not determined the rule and am not going to guess at one here** — I checked indirection (these are direct), the text variable (identical), escaped braces (`_M883` has none and is still missed) and position (the three found and one missed are all `_Mnnn = re.search(r"…"` at the head of a statement). *Naming a mechanism I have not measured is exactly the error of `r7663+cc66.3`.*
+
+⇒ **What this means for the ratchet, which is the part 69 needs:** `UNADJUDICATED: 0` is a statement about the keys the instrument minted, not about the pins in the tree. **A receipt can gain a paper read and the quote-pin class will report "no new key" and stay green.** *Routed to 69 at `r7665` with both measurements; the local substitute is the registry gate itself — `Ⓜ①` and `Ⓝ①` cover `12` and `7` reads where the instrument covers `4` and `3` — and the instrument fix is 69's to rule on, as it was at `r7657+cc66.5`.*
