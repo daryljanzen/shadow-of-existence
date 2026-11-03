@@ -32423,3 +32423,19 @@ Asked of the instrument directly, `scripts/mutate_assertions.py --quote --files 
 ⛔ **The four it misses here are `_M883`, `_M884`, `_M885` and `_M2065` — every one a DIRECT `re.search` against the same `_TEXW` as the three it finds.** *And `_M882`, the height-pair read, has been in this file since `r7655` and is not minted either, so this is not something my patch introduced.* ⌗ **I have not determined the rule and am not going to guess at one here** — I checked indirection (these are direct), the text variable (identical), escaped braces (`_M883` has none and is still missed) and position (the three found and one missed are all `_Mnnn = re.search(r"…"` at the head of a statement). *Naming a mechanism I have not measured is exactly the error of `r7663+cc66.3`.*
 
 ⇒ **What this means for the ratchet, which is the part 69 needs:** `UNADJUDICATED: 0` is a statement about the keys the instrument minted, not about the pins in the tree. **A receipt can gain a paper read and the quote-pin class will report "no new key" and stay green.** *Routed to 69 at `r7665` with both measurements; the local substitute is the registry gate itself — `Ⓜ①` and `Ⓝ①` cover `12` and `7` reads where the instrument covers `4` and `3` — and the instrument fix is 69's to rule on, as it was at `r7657+cc66.5`.*
+
+### ⛔ `r7665+cc66.6` — **`fast` RED ON `578d2b23f` WAS MY OWN COMMIT SUBJECT: A REPLY COMMIT MAY NOT CARRY A BARE `rNNNN`**
+
+`fast — registers, views, IDs` failed on `578d2b23f` with `⛔ FAILED: check_revision_collisions`, and the gate names the reason exactly:
+
+```
+[FAIL] r7665 claimed by two commits for different work:
+       578d2b23f  (cc66) -- the comb receipt's seven paper reads registered under N1, four o
+       32928bfda  (69) -- four seats merged; P1's rem:formalised restated on 60's twenty-cla
+```
+
+**Reproduced locally before touching anything** — `NODE=cc66 python3 corpus/check_revision_collisions.py` rc=1 on the same two SHAs. The rule is in the gate's own `CLAIM` pattern, `^(r\d{3,5})(?![\w+.])`: the negative lookahead is what keeps `r7225+70.1` out, so **`r7665+cc66.1-.5` is not a claim and a bare `r7665 (cc66)` is one.** *My subject dropped the suffix my own previous commits carried — `r7661+cc66.1-.5`, `r7663+cc66.1-.3`, `r7659+cc66.8` — so the gate correctly read a reply as a second line taking the order's own number.*
+
+⇒ **Fixed by amending the subject to `r7665+cc66.1-.5`, which is the convention and not a workaround**, with the mechanism written into the commit body so the next reader does not have to re-derive it. The gate is `rc=0` on the amended head. ⌗ *The tree is unchanged by the amend, so every other measurement in `cc66.1`-`.5` stands as recorded; only the subject moved. An amend and force-with-lease on a branch I created, with no review on the PR to break.*
+
+⛭ **And the generalisable part: this red was not about the corpus at all.** *It was about the identifier on the commit — a class of red that no amount of reading my diff would have found, because the diff was green. The gate's remedy line is also worth keeping for the case where a seat is numbering NEW work rather than replying: "pick the next number of YOUR OWN parity above the front, never `front + 2`" — the front run here is `r7665..r7665`, so the next even is `r7666` and the next odd `r7667`.*
