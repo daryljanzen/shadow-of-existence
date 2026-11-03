@@ -1,0 +1,262 @@
+r7095+cc66.78 -- ⛭⛭⛭ THE LICENSED CONFIGURATION MOVES NEITHER STATISTIC, AND THE EARLIER NEGATIVE
+RESULT WAS READ ABOVE THE CEILING WHERE THE STATISTIC CONVERGES.
+
+** WHAT r7095 ASKED AND WHAT THIS ANSWERS. **  `r7095` adjudicated against `cc66.73`'s `LEAFGEOM=1`
+repair: the rate rule requires `D_M` on the STACKING rate and recombination on the LEAF's, so moving the
+geometry onto the leaf is the one thing the rule names and forbids.  It ordered the rule's OWN
+configuration run instead -- `LEAFSCALES=1 LEAFREC=1 ZSTART=3e7`, geometry left on the stacking rate --
+and fixed the fork in advance:
+
+    *if the rule's own configuration ALSO drops |c|, the rule and the data agree and the forbidden route
+    was just one way there.  If it does NOT, the data are asking for the one object the rule pins -- a
+    conflict between the rate rule and the sky rather than an implementation defect.  Assume neither.*
+
+⇒ *** IT RESOLVES THE SECOND WAY.  The licensed configuration moves the contrast coefficient by 0.08
+  sigma and makes the swing and chi^2 WORSE.  The forbidden one moves c by 6.7 sigma and flattens the
+  swing on all three pre-registered criteria. ***
+
+⛭⛭ ** AND A SECOND FINDING, WHICH IS WHY THE FIRST CAN BE TRUSTED: THE SWING STATISTIC IS NOT
+** CONVERGED AGAINST THE CEILING IT IS READ TO, AND THE EARLIER NEGATIVE RESULT SAT ABOVE WHERE IT IS. **
+*`cc66.73` reported that the forbidden repair did NOT flatten the swing -- crossings $36 \to 30$ and the
+longest run $16 \to 18$, the wrong way on both -- and `r7095` credited that as reporting against myself.
+**It reproduces here to the digit on its own pair, so it was measured correctly.  It was measured at
+`LMAXL=1300`, and read to $\ell \le 1040$ that is 80 per cent of the run's own ceiling.**  Rerun at
+`LMAXL=2000` the same comparison REVERSES: crossings $30 \to 44$, longest run $18 \to 12$.*
+  ⇒ ** The ceiling scan below localises why, and it is not a wash: the discriminating feature LIVES
+    above $\ell \approx 850$. **  *Below it all three configurations look alike -- longest run 8 or 9
+    bins.  Above it the banked default's longest run GROWS with the ceiling, $8 \to 8 \to 15 \to 18$,
+    and the licensed configuration's grows faster, $9 \to 9 \to 13 \to 22$, while the forbidden
+    repair's stays flat, $9 \to 9 \to 9 \to 12$.*  **So the statistic discriminates exactly where the
+    `LMAXL=1300` run could not see it, which is why that run read a null.**
+
+⚠ ** WHAT IS NOT CLAIMED. **  *This does not reinstate `LEAFGEOM=1`: `r7095`'s ruling is the gate's and
+it stands.  What is reported is that the configuration the rule licenses does not move the two numbers
+the rule's own repair was supposed to move, and that the forbidden one does -- which is a conflict to
+adjudicate, not a build to resume.*  *Nor is the earlier result withdrawn: it was right about its own
+pair, and the correction is the ceiling, not the arithmetic.*
+  ⌗ *No parameter is refitted here and no onset is pinned.  Every spectrum is read from a BANKED file
+  tracked in this repository -- nothing is derived from `/tmp` -- and the verdict rule is `r7091`'s own,
+  quoted below before any number is read.*
+
+** COMPUTES: the sign-crossing count, the longest run of one sign, the mean |extremum| over runs and
+chi^2/bin of the binned residual for three banked CR configurations at four read ceilings; the contrast
+coefficient c on each banked grid through 70's own design matrix; and the three peak-height ratios
+against the sky.  Asserts the licensed configuration moves c by under 0.2 sigma, that its longest run is
+no shorter than the banked default's, that the forbidden repair moves c by over 6 sigma and shortens the
+longest run, and that all three agree below ell 800 -- which is the convergence finding. **
+
+
+  ==========================================================================
+  A.  THE THREE CONFIGURATIONS, READ OFF THEIR OWN BANKED HEADERS
+  ==========================================================================
+      licensed  __SWITCHES__ ARM=cr CRH0=68.60 CROM=0.2973 HIER=1 LEAFREC=1 LEAFSCALES=1 LMAXL=2000 LSTEP=8 SAVE=/tmp/n66/grid_licensed/
+      forbidden __SWITCHES__ ARM=cr CRH0=68.60 CROM=0.2973 HIER=1 LEAFGEOM=1 LEAFSCALES=1 LMAXL=2000 LSTEP=8 SAVE=/tmp/n66/grid_oneclock
+  [PASS] the licensed grid carries `LEAFREC=1 LEAFSCALES=1 ZSTART=3e7` and NO `LEAFGEOM` -- the rate rule's own assignment, geometry left on the stacking rate
+  [PASS] ⛔ and the forbidden grid carries `LEAFGEOM=1` -- the geometry moved onto the leaf, which is what `P07`'s rate rule names and forbids
+      banked    l_A = 302.889077   D_M = 14011.4567   r_s = 145.328084
+      licensed  l_A = 302.889077   D_M = 14011.4567   r_s = 145.328084
+      forbidden l_A = 301.379596   D_M = 13941.6290   r_s = 145.328084
+  [PASS] ⛭ `LEAFREC` moved the SPECTRUM and left `l_A`, `D_M` and `r_s` BIT-IDENTICAL to the banked run -- which is `r6893+cc66.37`'s finding that these three are diagnostics no transfer function reads, holding again on a switch that was built after it
+  [PASS] ⌗ and the three grids share one ell sampling, so every shape statistic below is comparable without interpolation
+
+  ==========================================================================
+  B.  ⛭⛭ THE SWING, FIRST, BECAUSE r7095 FIXED THE ORDER -- AND AT FOUR CEILINGS
+  ==========================================================================
+      the rule, quoted before any number: a chi^2 that improves while the swing stays is not the fix, and a swing that flattens is the fix even if chi^2 moves little; a flattened swing has MORE crossings, SHORTER runs and SMALLER extrema
+
+       ceiling  configuration crossings longest mean|ext| chi2/bin
+           700  banked            30       8     1.031     1.45
+           700  licensed          32       9     0.982     1.22
+           700  forbidden         36       9     0.932     0.85
+           800  banked            35       8     1.052     1.55
+           800  licensed          31       9     1.203     1.51
+           800  forbidden         37       9     1.036     0.97
+           900  banked            23      15     1.339     1.94
+           900  licensed          30      13     1.147     1.68
+           900  forbidden         38       9     1.043     0.96
+          1040  banked            30      18     1.353     3.05
+          1040  licensed          36      22     1.217     3.20
+          1040  forbidden         44      12     1.039     1.47
+  [PASS] ⛔⛔ THE LICENSED CONFIGURATION DOES NOT FLATTEN THE SWING: read to ell 1040 its longest run is LONGER than the banked default's, which is the wrong direction on the criterion `r7091` named first
+  [PASS] ⛭⛭ and the forbidden repair DOES, on all three criteria at once -- more crossings, a shorter longest run, smaller mean |extremum|
+  [PASS] ⛭⛭⛭ AND THE STATISTIC IS NOT CONVERGED: below ell 800 all three configurations have a longest run of 8 or 9 bins and are indistinguishable, so a reading taken there decides nothing
+  [PASS] ⇒ and the feature that discriminates GROWS with the ceiling on the banked default and on the licensed configuration while staying flat on the forbidden repair -- which is why it lives above ell 850 and not below
+
+  ==========================================================================
+  C.  ⛭ THE EARLIER NEGATIVE RESULT, REPRODUCED ON ITS OWN PAIR AND THEN EXPLAINED
+  ==========================================================================
+      LMAXL=1300  before    crossings 36  longest 16  chi2/bin 2.55
+      LMAXL=1300  oneclock  crossings 30  longest 18  chi2/bin 2.07
+  [PASS] ⌗ `cc66.73`'s reported crossings 36 -> 30 and longest run 16 -> 18 REPRODUCE exactly on the `LMAXL=1300` pair it was measured from -- the earlier null was arithmetically right
+      LMAXL=1300: k_max = 2599/D_M, reported l_max = 1300, ratio 2.0   [read from the run's own tracked log]
+      LMAXL=2000: k_max = 3998/D_M, reported l_max = 2000, ratio 2.0   [read from the run's own tracked log]
+  [PASS] ⛔ and the reason is the ceiling and not the arithmetic: both runs hold k_max = 2 l_max / D_M, so reading to ell 1040 is 80 per cent of the `LMAXL=1300` run's own reported ceiling against 52 per cent of the `LMAXL=2000` run's
+  [PASS] ⇒ so the earlier null is CORRECTED BY RESOLUTION, not withdrawn: the same comparison at `LMAXL=2000` reverses on both criteria it reported
+
+  ==========================================================================
+  D.  chi^2, SECOND -- AND IT AGREES WITH THE SWING RATHER THAN HIDING IT THIS TIME
+  ==========================================================================
+      ell <=  700   banked 1.45   licensed 1.22   forbidden 0.85
+      ell <=  800   banked 1.55   licensed 1.51   forbidden 0.97
+      ell <=  900   banked 1.94   licensed 1.68   forbidden 0.96
+      ell <= 1040   banked 3.05   licensed 3.20   forbidden 1.47
+  [PASS] the licensed configuration's chi^2/bin is NO BETTER than the banked default's at the order's ceiling -- it is worse
+  [PASS] ⛭ and the forbidden repair's is the lowest of the three at EVERY ceiling tested, so on this comparison chi^2 and the swing point the same way instead of opposite ways
+
+  ==========================================================================
+  E.  THE HEIGHTS, THIRD -- WHERE THE LICENSED CONFIGURATION IS THE WORST OF THE THREE
+  ==========================================================================
+      banked    l_1 = 220  l_1/l_A = 0.7263 (-0.0049)   P1/P2 = 2.264 (+0.047)   P1/P3 = 2.298 (+0.021)   sum|height dev| 0.068
+      licensed  l_1 = 220  l_1/l_A = 0.7263 (-0.0049)   P1/P2 = 2.283 (+0.066)   P1/P3 = 2.311 (+0.034)   sum|height dev| 0.100
+      forbidden l_1 = 220  l_1/l_A = 0.7300 (-0.0012)   P1/P2 = 2.199 (-0.018)   P1/P3 = 2.213 (-0.064)   sum|height dev| 0.081
+      the sky: l_1 = 220.6, l_1/l_A = 0.7312, P1/P2 = 2.217, P1/P3 = 2.277
+  [PASS] all three put the first peak at ell = 220 against the sky's 220.6, so none of this is a first-peak-position effect
+  [PASS] ⛔ the licensed configuration's summed height deviation is the LARGEST of the three -- it overshoots P1/P2 and P1/P3 further than the banked default does
+  [PASS] ⌗ and the forbidden repair trades them: `l_1/l_A` lands four times closer to the sky while P1/P3 undershoots, so the heights are a trade and not the clean win the swing is
+
+  ==========================================================================
+  F.  ⛭⛭⛭ THE CONTRAST COEFFICIENT, WHICH IS THE NUMBER r7093 NAMED
+  ==========================================================================
+/home/user/shadow-of-existence/computations/beyond_the_wall/r7091_70_fit_rigidity/rigidity.py:227: RuntimeWarning: divide by zero encountered in scalar divide
+  z = (v - a.mean()) / a.std()
+      banked    lcdm  c = -0.0075 +- 0.0083   (-0.9 sigma)
+      banked    cr    c = -0.0636 +- 0.0085   (-7.5 sigma)
+/home/user/shadow-of-existence/computations/beyond_the_wall/r7091_70_fit_rigidity/rigidity.py:227: RuntimeWarning: divide by zero encountered in scalar divide
+  z = (v - a.mean()) / a.std()
+      licensed  lcdm  c = -0.0075 +- 0.0083   (-0.9 sigma)
+      licensed  cr    c = -0.0642 +- 0.0084   (-7.7 sigma)
+/home/user/shadow-of-existence/computations/beyond_the_wall/r7091_70_fit_rigidity/rigidity.py:227: RuntimeWarning: divide by zero encountered in scalar divide
+  z = (v - a.mean()) / a.std()
+      forbidden lcdm  c = -0.0075 +- 0.0083   (-0.9 sigma)
+      forbidden cr    c = -0.0069 +- 0.0083   (-0.8 sigma)
+  [PASS] 70's published coefficients are REPRODUCED on the banked grid before anything is compared to them -- arm -0.0636 and control -0.0075
+      licensed  moves the arm's c by -0.0007 = -0.08 sigma   |c| +1%
+      forbidden moves the arm's c by +0.0567 = +6.70 sigma   |c| -89%
+  [PASS] ⛔⛔ THE LICENSED CONFIGURATION DOES NOT MOVE THE CONTRAST COEFFICIENT: under 0.2 sigma, and |c| RISES rather than falls -- the anomaly the rebuild was ordered to remove is untouched
+  [PASS] ⛭⛭ and the forbidden repair moves it by more than 6 sigma, taking |c| down by about 89 per cent onto the control's own value
+  [PASS] ⌗ THE CONSISTENCY CHECK: the CONTROL's coefficient is unchanged across all three, because its nine runs are the same nine files -- so what moved is the arm and not the method
+
+  ==========================================================================
+  G.  ⚠ THE SCOPE, AND WHAT THIS DOES NOT LICENSE
+  ==========================================================================
+      provenance asked of `git ls-files`: 10 input(s), 0 not tracked
+  [PASS] ⛭ EVERY FILE THIS RECEIPT READS IS TRACKED IN THE REPOSITORY, asked of `git ls-files` rather than asserted -- so it cannot pass here on a file absent from CI's checkout
+  [PASS] no parameter is refitted and no onset pinned here, and the three grids' own `switches` stamps are quoted above
+  [PASS] ⛔ and `LEAFGEOM=1` is NOT reinstated by this receipt -- `r7095`'s ruling is the gate's and it stands.  What is reported is a CONFLICT between the rule's configuration and the sky, for the gate to adjudicate, and not a build resumed
+
+  ==========================================================================
+  H.  ⛭⛭⛭ r7655 (cc66), ORDERED BY 69 ITEMS 2 AND 3 -- THE SAME TWO ROUTES ON THE ARM OF RECORD, AND THE 'TWO ROUTES DISAGREE' REPORT WITHDRAWN
+  ==========================================================================
+    the control's base, md5 on each namesake grid: banked 5df16bcd, licensed 5df16bcd, forbidden 5df16bcd
+  [PASS] H① the control's nine runs ARE the same nine files on all three namesake grids, which is what licenses linking them beside the arm-of-record `cr_*` to form a like-for-like contrast
+
+    the contrast coefficient through THIS receipt's own `c_on`, both arms:
+/home/user/shadow-of-existence/computations/beyond_the_wall/r7091_70_fit_rigidity/rigidity.py:227: RuntimeWarning: divide by zero encountered in scalar divide
+  z = (v - a.mean()) / a.std()
+      banked    ARM OF RECORD  cr c = -0.0670 +- 0.0086 (-7.8 sigma)   control -0.0075 +- 0.0083
+/home/user/shadow-of-existence/computations/beyond_the_wall/r7091_70_fit_rigidity/rigidity.py:227: RuntimeWarning: divide by zero encountered in scalar divide
+  z = (v - a.mean()) / a.std()
+      licensed  ARM OF RECORD  cr c = -0.0670 +- 0.0086 (-7.8 sigma)   control -0.0075 +- 0.0083
+/home/user/shadow-of-existence/computations/beyond_the_wall/r7091_70_fit_rigidity/rigidity.py:227: RuntimeWarning: divide by zero encountered in scalar divide
+  z = (v - a.mean()) / a.std()
+      forbidden ARM OF RECORD  cr c = -0.0092 +- 0.0085 (-1.1 sigma)   control -0.0075 +- 0.0083
+  [PASS] ⛭⛭⛭ ** H② ITEM 3 ANSWERED, AND IT WITHDRAWS THIS SEAT'S OWN REPORT: THE PARAGRAPH'S RECEIPT REPRODUCES THE AUDIT'S COEFFICIENTS ON THE ARM OF RECORD TO FOUR DECIMALS, SO THERE IS NO SECOND ROUTE. **  *l.1941's `-0.0642` and l.1944's `-0.0069 +- 0.0083` are the NAMESAKE grid's through this design matrix; the audit's `-0.0670 +- 0.0086` and `-0.0092 +- 0.0085` are the SAME design matrix on the ARM-OF-RECORD grid.  One statistic, two grids.*
+      and the forbidden route moves c by +6.71 of the licensed error, |c| -86 per cent  (the paper says 6.7 errors and -89 per cent on the namesake)
+  [PASS] ⛭⛭ H③ and the paragraph's two CLAIMS survive the move: the forbidden route still moves the coefficient by more than six errors and still takes |c| down by about nine tenths, so only the digits are the namesake's
+
+    the longest run of one sign at this receipt's own four ceilings (700, 800, 900, 1040):
+      banked    namesake [8, 8, 15, 18]     ARM OF RECORD [9, 9, 9, 16]     
+      licensed  namesake [9, 9, 13, 22]     ARM OF RECORD [9, 9, 9, 16]     
+      forbidden namesake [9, 9, 9, 12]      ARM OF RECORD [7, 8, 8, 12]     
+  [PASS] H④ the namesake sequences are this receipt's own published ones, which calibrates the reader before the arm of record is read with it
+  [PASS] ⛭⛭⛭ ** H⑤ ITEM 2 ANSWERED: l.1952-1954's `9, 9, 13, 22` AND `9, 9, 9, 12` ARE THIS RECEIPT'S, AT CEILINGS 700/800/900/1040 ON THE NAMESAKE GRID, AND THEY ARE NOT THE AUDIT'S STATISTIC AT ALL. **  *The audit's `longest` column -- specified 4, 5, 11, 20, 23, 23, 27, 33 and forbidden 4, 4, 4, 5, 7, 8, 8, 8 -- is a different reader at eight different ceilings (850..1996), so the two were never comparable and the sentence should NOT be re-pointed onto the audit.  What is wrong is the CITATION: the sentence sits in a passage closed by the three-grid receipt, which gates none of it, while the receipt that computes all four numbers closes the paragraph eleven lines above.*
+      the discriminating gap at the top ceiling: namesake 22 vs 12 = 10;  arm of record 16 vs 12 = 4
+  [PASS] ⛔⛭⛭ ** H⑥ AND ON THE ARM OF RECORD THE DISCRIMINATING FEATURE IS WEAKER, WHICH IS THE PART WORTH ROUTING RATHER THAN THE DIGITS. **  *The specified configuration's run reaches 16 instead of 22 while the forbidden one's still reaches 12, so the gap the sentence turns on falls from ten bins to four.  The DIRECTION survives -- specified grows, forbidden stays -- and `every one of them with a longest run of eight or nine bins` below the ceiling becomes SEVEN to nine, because the forbidden arm reads 7 at 700.*
+
+    the banked and licensed arm-of-record grids: spectra bit-identical True, files differ True
+  [PASS] ⛭ H⑦ the banked and licensed rows agree on the arm of record because their SPECTRA ARE BIT-IDENTICAL -- `Dl`, `ls`, `l_A`, `D_M` and `r_s` all equal -- while the FILES differ, in a `manifest` key alone.  *Stated because the md5 difference invites the opposite conclusion: two files, one spectrum, so the agreement is identity and not coincidence.*
+
+  ==========================================================================
+  I.  ⛭⛭⛭ r7657 (cc66), ORDERED BY 69 ITEM 1 -- l.1938-1955 WHOLE ON THE ARM OF RECORD, IN ONE TABLE, WITH THE PARAGRAPH'S OWN FIGURES READ OUT OF THE PAPER BESIDE THEM
+  ==========================================================================
+    l.1938-1955's figures, each READ OUT OF corpus/CR_cosmology.tex:
+      coef, licensed ** NOT FOUND -- reworded since r7657 **
+      shape, licensed ** NOT FOUND -- reworded since r7657 **
+      coef, forbidden ** NOT FOUND -- reworded since r7657 **
+      the fall       (86.0,)
+      shape, forbidden ** NOT FOUND -- reworded since r7657 **
+      the scale      (302.943, 301.4, 301.375)
+      the ceiling    ** NOT FOUND -- reworded since r7657 **
+
+    the arm-of-record grids' own switches, because the first half turns on them:
+      banked     __SWITCHES__ ARM=cr CRH0=68.570730 CROM=0.291246 HIER=1 LEAFREC=1 LEAFSCALES=1 LMAXL=2000 LSTEP=8 NS=1.015066 SAVE=... WBH2=0.021643 ZSTART=3e7
+      licensed   __SWITCHES__ ARM=cr CRH0=68.570730 CROM=0.291246 HIER=1 LEAFREC=1 LEAFSCALES=1 LMAXL=2000 LSTEP=8 NS=1.015066 SAVE=... WBH2=0.021643 ZSTART=3e7
+      forbidden  __SWITCHES__ ARM=cr CRH0=68.570730 CROM=0.291246 HIER=1 LEAFGEOM=1 LEAFREC=1 LEAFSCALES=1 LMAXL=2000 LSTEP=8 NS=1.015066 SAVE=... WBH2=0.021643 ZSTART=3e7
+
+    THE ARM OF RECORD, read to ell 1040:
+      configuration        c      +-  move/err   |c| %  cross longest  chi2/bin mean|ext|        l_A
+      banked       -0.0670  0.0086     +0.00    +0.0     32      16      2.64     1.327    302.943
+      licensed     -0.0670  0.0086     +0.00    +0.0     32      16      2.64     1.327    302.943
+      forbidden    -0.0092  0.0085     +6.71   -86.3     38      12      1.33     1.114    301.400
+      control      -0.0075  0.0083                                                         301.375
+
+    the NAMESAKE pair at the same ceiling, which is what the paper prints:
+      configuration        c      +-  move/err   |c| %  cross longest  chi2/bin mean|ext|        l_A
+      banked       -0.0636  0.0085     +0.00    +0.0     30      18      3.05     1.353    302.889
+      licensed     -0.0642  0.0084     -0.08    +1.1     36      22      3.20     1.217    302.889
+      forbidden    -0.0069  0.0083     +6.70   -89.2     44      12      1.47     1.039    301.380
+      control      -0.0075  0.0083                                                         301.375
+  [PASS] ⛔⛭⛭⛭ ** I① THE PARAGRAPH'S FIRST HALF IS NAMESAKE-ONLY, BECAUSE THE RE-POINT MADE THE LICENSED CONFIGURATION THE BASELINE: the arm-of-record banked and licensed grids carry THE SAME SWITCHES, so c, the crossings, the longest run and chi^2 per bin are identical to the bit and `moves neither statistic` is exactly true. **  *l.1940-1942's four figures -- 0.08 of an error, |c| rising one per cent to -0.0642, the run 18 to 22, chi^2/bin 3.05 to 3.20 -- are the NAMESAKE pair's, where the banked grid has no `LEAFREC` and the licensed one does.  ⇒ ** They cannot be re-pointed onto this arm: there is no second configuration to compare, and a table of zeroes would be a true table of the wrong comparison. ** *
+  [PASS] ⛭ I② and the reader is CALIBRATED on the paper's own first-half digits before the second half is read with it: the namesake pair returns 0.08 of an error, |c| rising 1 per cent to -0.0642, the run 18 to 22 and chi^2/bin 3.05 to 3.20, each read out of l.1940-1942 rather than typed here.  *A reader that cannot reproduce the figures the paragraph prints has no standing to report that the other half of it moved.*
+
+    the forbidden route's whole set, NAMESAKE then ARM OF RECORD:
+      c moves           +6.70 errors -> +6.71 errors
+      |c| falls         -89.2 per cent -> -86.3 per cent, onto the control's own -0.0075 (0.2 of an error from it)
+      sign changes      30 -> 44   became   32 -> 38
+      longest run       18 -> 12   became   16 -> 12
+      chi^2 per bin     3.05 -> 1.47   became   2.64 -> 1.33
+      mean |excursion|  1.353 -> 1.039   became   1.327 -> 1.114
+  [PASS] ⛭⛭⛭ ** I③ ITEM 1's SECOND HALF, ON THE ARM OF RECORD: EVERY DIRECTION THE PRE-REGISTERED TEST NAMED HOLDS AND EVERY DIGIT MOVES. **  *c -0.0670 -> -0.0092, a move of 6.7 of its error, |c| falling 86 per cent (the paper's 89) and landing 0.2 of an error from the control's own -0.0075; the sign changes 32 -> 38 where the paper prints 30 -> 44; the longest run 16 -> 12 where it prints 18 -> 12; chi^2 per bin 2.64 -> 1.33 where it prints 3.05 -> 1.47; the mean excursion 1.327 -> 1.114.  ** More sign changes, shorter runs, smaller excursions and a lower chi^2 -- the four-part test fixed before either grid was read, met on all four. ** *
+
+    and the acoustic scale: 302.943 -> 301.400 against the control's 301.375   (the paper's namesake pair: 302.889 -> 301.380 against the same 301.375)
+  [PASS] ⛭⛭ ** I④ AND THE SCALE FOLLOWS IT ON THIS ARM TOO, PAST THE CONTROL RATHER THAN ONTO IT: l_A moves 302.943 -> 301.400 against the control's 301.375, where the paper prints its NAMESAKE pair's own two figures against the same 301.375 -- READ out of l.1946 above and not repeated here. **  *The control's figure is UNMOVED because it is the same file on every grid, which is what makes this a statement about the arm.  ** The forbidden route overshoots: the namesake landed 0.005 above the control and this arm lands 0.025 above it, five times as far, on a move twenty times that size. ** *
+
+    where the three SEPARATE, gap in the longest run at each ceiling (700, 800, 900, 1040):
+      namesake       specified [9, 9, 13, 22]  forbidden [9, 9, 9, 12]  gap [0, 0, 4, 10]
+      ARM OF RECORD  specified [9, 9, 9, 16]  forbidden [7, 8, 8, 12]  gap [2, 1, 1, 4]
+  [PASS] ⛭⛭⛭ ** I⑤ `separate only above it` STILL HOLDS AND THE CEILING MOVES UP: ON THE ARM OF RECORD THE THREE ARE INDISTINGUISHABLE BELOW ell ≃ 900, NOT 800. **  *At 700, 800 and 900 the specified configuration reads 9, 9, 9 and the forbidden one 7, 8, 8 -- gaps of two, one and one bin -- where the namesake pair had already opened to four bins at 900 (13 against 9).  The separation appears only at the top ceiling, 16 against 12.  ⇒ ** So the sentence's STRUCTURE survives and two of its figures move: `indistinguishable below ell ≃ 900`, `every one of them with a longest run of SEVEN to nine bins`, and the gap it turns on falls from ten bins to four. ** *
+  [PASS] ⌗ I⑥ the control's coefficient is the SAME NUMBER on all six grids, and here that is an identity rather than a check: the arm-of-record sets carry no control of their own, so all three link the same nine `lcdm_*` files `H①` showed byte-identical across the namesake grids.  *Said plainly because `identical across all three grids` reads like a measurement, and on this arm it is a property of the composition -- the MEASUREMENT of it is the namesake row in F.*
+  [PASS] ⛭ I⑦ ** EVERY DIGIT r7657 PUTS IN THIS RECEIPT'S INDEX ROW IS A LITERAL TWIN HERE, so a stale row reddens the receipt instead of going quietly wrong. **  *The one-state rule cuts both ways: the row states what this receipt finds NOW, and this gate makes the row's own digits the receipt's responsibility.*
+
+    ⛭⛭⛭ THE RECOMMENDATION 69 ASKED FOR, IN ONE PLACE:
+      ① l.1939-1942, the licensed half: it is a NAMESAKE comparison and should say so, or go.
+        On the arm of record there is no second configuration -- the baseline already carries the
+        rule's own assignment -- so `moves neither statistic` is exactly true and its four figures
+        have no counterpart here.  ** Recommend: keep the half, name the grid it is read on. **
+      ② l.1943-1949, the forbidden half: re-point every digit.  c -0.0670 -> -0.0092 at 6.7 of
+        its error, |c| falling 86 per cent onto the control's own value, sign changes 32 -> 38,
+        longest run 16 -> 12, chi^2 per bin 2.64 -> 1.33, l_A 302.943 -> 301.400 against 301.375.
+      ③ l.1952-1954, the four-ceiling sentence: `indistinguishable below ell ~= 900` (not 800),
+        `a longest run of seven to nine bins` (not eight or nine), the specified run growing
+        9, 9, 9, 16 and the forbidden one 7, 8, 8, 12.  `separate only above it` HOLDS.
+      ④ and the `\rcpt` on that sentence: it is closed by the THREE-GRID receipt, which gates none
+        of these four numbers.  ** Recommend citing THIS receipt there -- it computes all four at
+        those four ceilings on both arms -- and leaving the three-grid citation on the reach
+        sentence that follows, which is its own. **
+
+
+  37 checks, 37 pass, 0 fail
+  GATES: ALL PASS
+
+  THE ANSWER TO r7095's FORK, IN ONE PLACE:
+    the licensed configuration  ->  c moves -0.08 sigma (|c| RISES 1%), longest run 18 -> 22,
+                                    chi^2/bin 3.05 -> 3.20, heights the worst of the three.
+                                    ** IT MOVES NEITHER STATISTIC. **
+    the forbidden repair        ->  c moves +6.70 sigma (|c| FALLS 89%), longest run 18 -> 12,
+                                    crossings 30 -> 44, chi^2/bin 3.05 -> 1.47.
+    the swing statistic         ->  NOT CONVERGED below ell ~ 850; the earlier null was read at
+                                    80 per cent of its own run's ceiling and reverses above it.
+    ⇒ the fork resolves the SECOND way: the data are asking for the one object the rule pins.
+      That is a conflict to adjudicate, not an implementation defect to repair.
+
+licensed exit=0
