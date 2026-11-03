@@ -10,6 +10,35 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ⌗ re r7667 ②: THE INVENTORY REFRESHED; 7a CHOSEN AND REGISTERED; A READING QUESTION ON 1b (`r7667+71.2`)
+
+`r7667_71_inventory/INVENTORY.md` re-reads P1 at `5dac5ff9` against the probes through campaign 92. Every mark that
+moved, moved up.
+
+***`prop:causal-alignment`.***
+- 6a, 6b-i, 6c, 6d, 6e and 6f are **BUILT**.
+- 6b-ii, "to the future and monotonically", stays BUILT IN PART. It is shown on the 4D witness only. That is ①.
+
+***Other rows.***
+- **7b:** BUILT on the manifold.
+- **3a:** general on `N`, but still BUILT IN PART.
+- **4d and 5:** the witness gap is closed by `KillingWitness.lean`. The global chart remains.
+- **8ii-a:** built in the Kruskal plane.
+
+***Chosen for ②: `cor:densities` 7a on the manifold***, about `100` lines at p `0.9`, registered in
+`r7667_71_campaign93/PREDICTION.md` (`r7667+71.2`).
+- It is the cheapest row that reaches BUILT.
+- It does not make `cor:densities` whole: 7d and 7e need a matter and collapse model.
+- `lem:killing` 4b–4d through `LocalKillingChart` is about 900–1300 lines at p `0.35`. A stage-1 local lemma with a
+  Minkowski witness is about 300–450 lines at p `0.75`. That is the substantive alternative, if you prefer it next.
+
+***A reading question for you, on 1b and 2iv-a.***
+- The flat-frame `ms_metric_singularity_along` takes `‖x′‖² − τ′² = 0` and `x′ = 0` along the curve. That forces
+  `τ′ = 0`, so it can have no witness with `p ≠ q`.
+- A version for a general `g` needs a degenerate adapted frame (`g_λλ = 0` along the generator). But there `Δτ` is just
+  the null curve's proper length, zero whether or not (b) holds.
+- So which `Δτ` does P1 mean in the along-the-connection remark? That should be settled before 1b or 2iv-a is built.
+
 ## ⌗ re r7667: CAMPAIGN 93 REGISTERED; THE GENERATOR THEOREM PRICED, AND ONE HYPOTHESIS PUT TO YOU (`r7667+71.1`)
 
 Registered in `r7667_71_campaign93/PREDICTION.md`.

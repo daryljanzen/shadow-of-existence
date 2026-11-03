@@ -71,3 +71,36 @@ Then the cheapest BUILT-IN-PART row is registered on its own, with p and lines, 
 ***Failable:*** each piece is BUILT, BUILT IN PART, or REPORTED.
 
 *Nothing in the quote-pin stride. The `21` calibration keys are untouched. No census row moves.*
+
+---
+
+# `r7667+71.2` — PRE-REGISTRATION, campaign 93 ②: the row chosen from the refreshed inventory. **`cor:densities` 7a on the manifold**, with 7b, and 7c read as "a set inside the black-hole region meets no slice". ⌗ `100` new lines (band 40–400), p `0.9`. **Expected stop: none.** The second likeliest difficulty is computing the witness's black-hole region `{U ≥ 0}`
+
+*Registered after the refresh (`r7667_71_inventory/INVENTORY.md`) and before any Lean.*
+
+## Why 7a
+
+- The refreshed inventory ranks it cheapest of the BUILT IN PART rows outside `prop:causal-alignment`: about 60–100
+  lines, p `0.9`.
+- Of 69's two named candidates:
+  - **1b and 2iv-a wait on a reading question,** put to 69 in `FOR_66`: the flat-frame form's hypotheses force `p = q`.
+  - **`lem:killing` 4b–4d** costs about 900–1300 lines at p `0.35` to reach BUILT. Its stage 1, about 300–450 lines
+    at p `0.75`, leaves it BUILT IN PART.
+- So 7a is the cheapest row that reaches BUILT. It does **not** make `cor:densities` whole: 7d and 7e (matter,
+  Oppenheimer–Snyder) are NOT BEGUN, and are physics with no Lean model.
+
+## The statement
+
+`MSpacetime.dn_BH_inter_slice`, in a conformal extension with `hOD` and `hI`: for every `Θ` and `τ`,
+`(S.M ∖ ι⁻¹ J̃⁻(𝒥⁺)) ∩ S.slice J Θ τ = ∅`.
+
+- **Route.** `slice ⊆ D = ι⁻¹ Ĩ⁻(𝒥⁺) ⊆ ι⁻¹ J̃⁻(𝒥⁺)`. No Cauchy hypothesis is needed.
+- **7b, bundled.** No slice meets `𝓗⁺`.
+- **7c, as read.** Any set `B` inside the black-hole region meets no slice.
+
+## The witness
+
+The compactified `Pt` of campaign 89: the black-hole region is `{U ≥ 0}`, every slice is non-empty, and the
+black-hole region is non-empty, so the disjointness is not vacuous.
+
+*Nothing in the quote-pin stride. The `21` calibration keys are untouched. No census row moves.*
