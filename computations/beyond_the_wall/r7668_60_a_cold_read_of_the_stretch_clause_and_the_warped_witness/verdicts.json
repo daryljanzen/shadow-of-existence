@@ -1,0 +1,139 @@
+{
+ "tree": [
+  "worktree: 09d24e981324a9350ccc7a8af15d7c0c6c593078",
+  "dirty: 1 path(s)",
+  "1ac4b004ebcc33a9d2293c5ac992dec06faddaf1  corpus/BH_causality_v2.tex",
+  "4dd2a08afdaad7e27599deb4fe3d294e3364c11c  computations/formalisation/lean/probes/HorizonStretch.lean",
+  "faa5f77b2640fcd17683aea0f2afa727fb1362c3  computations/formalisation/lean/probes/WarpedWitness.lean",
+  "cedcd45da2f8a44ca21420b23685a5055e636588  computations/formalisation/lean/probes/FourDWitness.lean"
+ ],
+ "guard": {
+  "true-probe  (`IsCompact K` occurs in a conjunct)": true,
+  "false-probe (`IsConnected K` occurs in a conjunct)": false,
+  "marker-probe true  (\\bstretch\\b matches P1 clause)": true,
+  "marker-probe false (\\bparacompact\\b matches P1 clause)": false,
+  "marker-probe word-boundary (\\bproper\\b does NOT match \"the Cauchy property\")": true,
+  "flip-test (every derived verdict depends on its readings)": true
+ },
+ "cited": {
+  "hs_stretch_N": true,
+  "hs_witness": true,
+  "ww_witness_headline": true,
+  "ww_witness_tangency": true,
+  "ww_cotton_ne_zero": true,
+  "ww_gco_bridge": true,
+  "fd_witness_headline": true,
+  "fd_witness_tangency": true
+ },
+ "clause": "the stretch of $\\mathcal{H}^+$ they approach to within any given distance extending to the future without bound",
+ "hs_binders": " (hL : S.LocallyOneChart) {J : Set N} {O : ℝ → N} (hOD : S.IpastSet (range O) = S.D J) (hmono : ∀ s t : ℝ, s < t → S.Chr (O s) (O t)) (hJM : J ⊆ S.M) (m : MetricSpace N) (hm : m.toUniformSpace.toTopologicalSpace = tN) {ε : ℝ} (hε : 0 < ε) :",
+ "hs_conjuncts": [
+  "(∀ K : Set N, K ⊆ S.H J → IsCompact K → ∀ᶠ τ in atTop, K ⊆ @hs_stretch N m (S.cone O) (S.H J) τ ε)",
+  "((∀ K : Set N, IsCompact K → ¬ S.H J ⊆ K) → ∀ K : Set N, IsCompact K → ∀ᶠ τ in atTop, ¬ @hs_stretch N m (S.cone O) (S.H J) τ ε ⊆ K)"
+ ],
+ "hs_stretch_def": "noncomputable def hs_stretch (A : ℝ → Set X) (H : Set X) (τ ε : ℝ) : Set X := {q | q ∈ H ∧ Metric.infDist q (A τ) < ε}",
+ "clause_parts": [
+  {
+   "part": "\"the stretch\" as ONE portion of `𝓗⁺`",
+   "flag": true,
+   "why": "nothing relates `hs_stretch` to connectedness; the set is a sublevel of `infDist` and may be a union of far-apart pieces, so the pair gives a SET that grows, not a stretch"
+  },
+  {
+   "part": "\"extending\" as growth in `τ`",
+   "flag": true,
+   "why": "no statement makes `hs_stretch … τ ε` monotone in `τ`; (S1) and (S2) are eventual, and eventual containment is not growth — the stretch could shrink and regrow"
+  },
+  {
+   "part": "\"along its generators\"",
+   "flag": true,
+   "why": "nothing ties the stretch to a generator of `𝓗⁺`; the remark names the future direction as unformalised but not the identification of the stretch with a portion of a generator"
+  },
+  {
+   "part": "\"to within any given distance\"",
+   "flag": true,
+   "why": "carried: `ε` and the metric are binders"
+  },
+  {
+   "part": "\"the cones approach\"",
+   "flag": true,
+   "why": "carried: (S1) is containment in the `ε`-stretch of the cones"
+  },
+  {
+   "part": "\"without bound\"",
+   "flag": true,
+   "why": "carried: (S2) is escape from every compact set"
+  }
+ ],
+ "curvature_chain": {
+  "ww_ginv <- ww_GI": true,
+  "ww_Γ <- ww_ginv": true,
+  "ww_Γ <- ww_gco": true,
+  "ww_Riem <- ww_Γ": true,
+  "ww_Ric <- ww_Riem": true,
+  "ww_R <- ww_Ric": true,
+  "ww_Sch <- ww_Ric": true,
+  "ww_Sch <- ww_gco": true,
+  "ww_covS <- ww_Sch": true,
+  "ww_covS <- ww_Γ": true,
+  "ww_Cot <- ww_covS": true
+ },
+ "bridge": "theorem ww_gco_bridge (x : Warped.N) (i j : Fin 3) : Warped.ww_S.gE x (![((1, 0), 0), ((0, 1), 0), ((0, 0), 1)] i) (![((1, 0), 0), ((0, 1), 0), ((0, 0), 1)] j) = ww_gco i j ![x.1.1, x.1.2, x.2] := by have hw := Warped.ww_w_sq x fin_cases i <;> fin_cases j <;> simp [Warped.ww_gE, Model.gM_apply, ww_gco, ww_GC, ww_k, hw] ",
+ "verdicts": {
+  "①": [
+   "SUPPORTED",
+   "all 8 theorem names the two new passages cite resolve in the files named ({'hs_stretch_N': True, 'hs_witness': True, 'ww_witness_headline': True, 'ww_witness_tangency': True, 'ww_cotton_ne_zero': True, 'ww_gco_bridge': True, 'fd_witness_headline': True, 'fd_witness_tangency': True}).  `hs_stretch_N` is a theorem of HorizonStretch.lean whose conclusion is a 2-fold conjunction, which is the (S1)/(S2) pair the remark describes."
+  ],
+  "②": [
+   "SUPPORTED",
+   "the distance is a BINDER, `(m : MetricSpace N)` (True), with `hm : m.toUniformSpace.toTopologicalSpace = tN` identifying its topology with the charted one (True), and `ε` is universally quantified with `0 < ε` (True).  So \"for any metric distance inducing the manifold's topology\" and \"to within any given distance\" are both the Lean's, and the quantifier order is: for each metric and each `ε`, the pair below."
+  ],
+  "③": [
+   "SUPPORTED",
+   "(S1) is `∀ K ⊆ S.H J, IsCompact K → ∀ᶠ τ in atTop, K ⊆ hs_stretch (S.cone O) (S.H J) τ ε` (True), and `hs_stretch A H τ ε = {q | q ∈ H ∧ Metric.infDist q (A τ) < ε}` (True) — the part of the horizon within `ε` of the cone, which is exactly P1's \"the stretch of `𝓗⁺` they approach to within any given distance\".  \"Every compact part … of all sufficiently late `τ`\" is the Lean's wording for wording."
+  ],
+  "④": [
+   "SUPPORTED",
+   "(S2) is `(∀ K, IsCompact K → ¬ S.H J ⊆ K) → ∀ K, IsCompact K → ∀ᶠ τ in atTop, ¬ hs_stretch … τ ε ⊆ K` (True): under the hypothesis that `𝓗⁺` lies in no compact set, the stretch eventually leaves every compact set.  The remark states the hypothesis and the conclusion in that order and in those terms."
+  ],
+  "⑤": [
+   "SUPPORTED",
+   "no theorem or lemma in HorizonStretch.lean states the future inextendibility of the generators or the future direction in general (0); the file's own header says so in writing (True).  The remark's \"not formalised in general\" is accurate, and it is the right way to carry an unformalised step: named, not implied."
+  ],
+  "⑥": [
+   "NOT SUPPORTED",
+   "`hs_witness`'s fifth conjunct is `∀ ε > 0, ∀ T : ℝ, ∀ᶠ τ in atTop, ∃ q ∈ hs_stretch …, q.1.2 > T` (True): for every bound `T` the stretch eventually contains a point whose `V` EXCEEDS `T`.  That is unboundedness above in `V`, not surjectivity onto `V`; no conjunct says `q.1.2 = V` for a given `V` (False).  The remark's \"the stretch reaches every value of `V`\" renders an `>` as an `=`, and the two coincide only for a connected stretch, which nothing here proves.  ⌗ The remark also omits the conjunct that carries the future direction ON this witness: `∀ q ∈ 𝓗⁺, ∀ K compact, ¬ ({p | Cau q p} ∩ 𝓗⁺) ⊆ K` (1 such conjunct) — from EVERY horizon point the horizon's own causal future leaves every compact set, which is the futureward statement the remark says is not formalised in general and which IS formalised here."
+  ],
+  "⑬": [
+   "NOT SUPPORTED",
+   "P1's clause reads: \"the stretch of $\\mathcal{H}^+$ they approach to within any given distance extending to the future without bound\".  Three of its six parts are NOT carried by the pair, beyond the future direction the remark already names: **\"the stretch\" as ONE portion of `𝓗⁺`** — nothing relates `hs_stretch` to connectedness; the set is a sublevel of `infDist` and may be a union of far-apart pieces, so the pair gives a SET that grows, not a stretch; **\"extending\" as growth in `τ`** — no statement makes `hs_stretch … τ ε` monotone in `τ`; (S1) and (S2) are eventual, and eventual containment is not growth — the stretch could shrink and regrow; **\"along its generators\"** — nothing ties the stretch to a generator of `𝓗⁺`; the remark names the future direction as unformalised but not the identification of the stretch with a portion of a generator.  The three that ARE carried are the given distance, the cones' approach and the unboundedness.  So the pair is a faithful reading of \"a set of horizon points within any given distance of the cones, exhausting `𝓗⁺` and escaping every compact set\" — which is the clause's extensional content — and not of \"a stretch\", a single portion climbing the generators, which is the clause's picture."
+  ],
+  "⑦": [
+   "SUPPORTED",
+   "`ww_witness_headline` carries {'IsCauchyTemporalOn': True, 'SublevelProper': True, 'KLi': True, 'KLs': True}, states its own dimension `finrank ℝ E = 3` (True) and `𝓗⁺ = {U = 0}` (True); `ww_J = range ww_O` (True), so `S.H ww_J` IS `∂J⁻(O)`.  Tangency at every horizon point is `ww_witness_tangency (q) (hq)` (True).  The four-dimensional headline has the same shape ({'IsCauchyTemporalOn': True, 'SublevelProper': True, 'KLi': True, 'KLs': True}), so \"the same holds\" is exact."
+  ],
+  "⑧": [
+   "SUPPORTED",
+   "part A's metric is `gE x v w = gM v.1 w.1 + ww_w x ² (v.2 w.2)` (True) with `ww_w x = exp(U·V)` (True), so the `dy²` coefficient is `exp(2UV)`; part B's components are `[[0,−1/2,0],[−1/2,0,0],[0,0,ww_k]]` with `ww_k U V = exp(2(UV))` (True, True), and `g_UV = g_VU = −1/2` IS `−dU dV`.  `−dU dV + e^{2UV} dy²` on `ℝ³`, as stated, in both halves."
+  ],
+  "⑨": [
+   "SUPPORTED",
+   "the Cotton tensor is DERIVED, link by link, from the metric components: {'ww_ginv <- ww_GI': True, 'ww_Γ <- ww_ginv': True, 'ww_Γ <- ww_gco': True, 'ww_Riem <- ww_Γ': True, 'ww_Ric <- ww_Riem': True, 'ww_R <- ww_Ric': True, 'ww_Sch <- ww_Ric': True, 'ww_Sch <- ww_gco': True, 'ww_covS <- ww_Sch': True, 'ww_covS <- ww_Γ': True, 'ww_Cot <- ww_covS': True} (True) — `ww_Γ` is the Christoffel formula in `ww_ginv` and `ww_gco`, `ww_Riem` is built from `ww_Γ`, `ww_Ric` from `ww_Riem`, `ww_R` from `ww_Ric`, `ww_Sch` from `ww_Ric` and `ww_gco`, `ww_covS` from `ww_Sch` and `ww_Γ`, and `ww_Cot i j k = ww_covS i j k - ww_covS i k j`.  `ww_ginv` is PROVED to be the inverse, not assumed (`ww_ginv_spec`, True).  And `ww_cotton_ne_zero` states `∀ x, ww_Cot 0 0 1 x = −2·x₁` with a point where it is `−2 ≠ 0` (True): `C_UUV = −2V`, not identically zero, exactly as written.  \"Computed in Lean from the metric\" is the truth about this chain."
+  ],
+  "⑩": [
+   "SUPPORTED",
+   "`ww_gco_bridge` is a BRIDGE and not a restatement.  Its left side is part A's own witness metric, `Warped.ww_S.gE x` (True), evaluated on the three coordinate basis vectors `![((1,0),0), ((0,1),0), ((0,0),1)]` (True); its right side is part B's component array `ww_gco i j ![x.1.1, x.1.2, x.2]` (True), which is the object the whole curvature chain is computed from.  The two sides are different symbols with different types (True), the statement is not of the form `X = X` (False), and it is proved by `fin_cases` on both indices using `ww_w_sq`.  So the Cotton tensor the remark cites is the Cotton tensor OF THE WITNESS'S METRIC, and the order's doubt is answered in the affirmative.  *This seat registered this arm as the one most likely to fail.*"
+  ],
+  "⑪": [
+   "SUPPORTED",
+   "no theorem or lemma in WarpedWitness.lean states the conformal-flatness criterion (0), and the remark says in so many words that it is classical and not included (True).  The inference from `C ≠ 0` to \"not conformally flat\" therefore rests on a cited classical theorem, which the remark marks — the same discipline it now applies to Bernal–Sánchez."
+  ],
+  "⑫": [
+   "SUPPORTED",
+   "no conformal extension is defined for the warped or the four-dimensional carrier ({'WarpedWitness': [], 'FourDWitness': []}), so the identification with `∂J⁻(𝒥⁺)` is exercised in two dimensions only, as stated."
+  ]
+ },
+ "tally": {
+  "SUPPORTED": 11,
+  "NOT SUPPORTED": 2
+ }
+}

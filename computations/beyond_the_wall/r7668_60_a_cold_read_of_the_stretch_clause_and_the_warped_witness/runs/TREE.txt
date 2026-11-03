@@ -1,0 +1,6 @@
+worktree: 09d24e981324a9350ccc7a8af15d7c0c6c593078
+dirty: 1 path(s)
+1ac4b004ebcc33a9d2293c5ac992dec06faddaf1  corpus/BH_causality_v2.tex
+4dd2a08afdaad7e27599deb4fe3d294e3364c11c  computations/formalisation/lean/probes/HorizonStretch.lean
+faa5f77b2640fcd17683aea0f2afa727fb1362c3  computations/formalisation/lean/probes/WarpedWitness.lean
+cedcd45da2f8a44ca21420b23685a5055e636588  computations/formalisation/lean/probes/FourDWitness.lean
