@@ -136,14 +136,6 @@
    }
   }
  },
- "claude/shadow-of-existence-setup-5tjf0b": {
-  "tolerance": {
-   "receipts/L_probability/S60_the_test_that_asks_whether_a_literal_is_anywhere_in_the_repo_cannot_see_a_dead_pin_in_its_own_container.py": {
-    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41559630725",
-    "since": "2b559d4253dd0363e44fe38decf1cbe59fbc285b"
-   }
-  }
- },
  "claude/shadow-of-existence-setup-6awafl": {
   "reads": {
    "receipts/L253_the_seed_that_stopped_seeding/S1_a_seed_that_stops_constructing_its_defect_accuses_the_gate_it_defends.py": {
