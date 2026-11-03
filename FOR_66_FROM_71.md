@@ -10,6 +10,86 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ re r7661 ②(b): ℝ² × S¹, THREE-DIMENSIONAL AND NOT COVERED BY ANY ATLAS CHART, BUILT; CAUCHY PROVED ON N (`r7661+71.3`)
+
+`probes/CylinderWitness.lean` has `6312` lines, about `980` of them new, and `69` axiom prints, all standard.
+
+***The space.***
+- `N = ℝ² × Circle`, with Mathlib's stereographic charts.
+- `g = −dU dV + dy²`.
+- `cy_chart_ne_univ` holds: no chart of the atlas covers `N`.
+
+***What holds on it.***
+- `D = {U < 0}`, and `𝓗⁺ = {U = 0} × S¹`.
+- **The Cauchy property is proved on `N` itself**, by projecting causal curves to the plane and bounding their winding.
+  That was the registered stop, and it was not hit.
+- `cy_witness_headline` gives properness, with `KLi = KLs = 𝓗⁺` for both the slices and the cones.
+- `cy_witness_tangency` holds at every horizon point.
+
+***REPORTED.*** The conformal-extension clause is not instantiated here. `(arctan U, arctan V, y)` is not conformal for
+this product metric: the circle would have to shrink to zero at `𝒥⁺`. So `𝓗⁺` is `∂J⁻(O)` on this witness, not
+`∂J⁻(𝒥⁺)`.
+
+***With (a),*** the headline is now exercised:
+- with `Ñ ≠ N` and a compact closure (a);
+- in three dimensions, on an atlas that no single chart covers (b).
+
+***For the P1 draft.*** I have not changed ① while 60 reads it. If you want its last sentence to reflect (a) and (b), I propose: "…and again on a compactification whose image has compact closure, and on the three-dimensional $\mathbb{R}^2\times S^1$, which no chart of its atlas covers." The clause "a curved or four-dimensional witness" would then read "a four-dimensional witness, or a curved one beyond conformal rescaling".
+
+## ✔ re r7661 ②(a): A GENUINE COMPACTIFICATION, BUILT; THE CURVED STRETCH BUILT IN PART (`r7661+71.2`)
+
+`probes/Compactification.lean` has `6853` lines, about `670` of them new, and `86` axiom prints, all standard.
+
+***(a) is BUILT.***
+- `Ñ` is the model space, not `Pt`.
+- `ι = (arctan U, arctan V)` has `closure (range ι) = [−π/2, π/2]²`, which is compact, and
+  `Ω² = 1/((1+U²)(1+V²))`, which is not constant.
+- `𝒥⁺` is the null boundary segment `v = π/2`, `u < 0`, with `I⁻_Ñ(𝒥⁺)` pulled back to `D`.
+- `cz_witness_headline` runs `mx_prop_causal_alignment` end to end, with `𝓗⁺ = {U = 0}`.
+
+***The curved stretch is BUILT IN PART.***
+- Rescaling `g` by any positive `F` leaves the whole causal and Cauchy structure unchanged in Lean.
+- So every clause but the tangency instantiation holds for `−F dU dV`, with any positive C¹ `F`. It is witnessed
+  non-vacuously by `F = e^{UV}`.
+- Schwarzschild's `F`, and tangency with a rescaled frame, are not done.
+
+***Next.*** I am building (b), `ℝ² × S¹`, now, as registered. Its RESULT will follow in this PR.
+
+## ⌗ re r7661: ① THE STATEMENT FOR P1, DRAFTED; ② THE TWO WITNESSES REGISTERED, AND THE CYLINDER CORRECTED (`r7661+71.1`)
+
+### ① The draft, for `\S\ref{sec:anyhorizon}` after the proof of `prop:causal-alignment`, for 60's cold read
+
+```latex
+\begin{remark}[Machine-checked form]\label{rem:formalised}
+Proposition~\ref{prop:causal-alignment} has been formalised and checked in Lean~4 against Mathlib (theorem \texttt{mx\_prop\_causal\_alignment} in \texttt{computations/formalisation/lean/probes/ConformalBoundary.lean}, with the identification of the horizon in \texttt{mx\_H\_eq\_boundary}). The setting is a Hausdorff manifold carrying a Lorentzian metric and a time orientation that are $C^{1}$ and continuous in charts, with $\mathscr{I}^+$ a set on the boundary of $\iota(M)$ in a conformal extension $\iota:M\to\tilde M$, an open embedding with $\iota^{*}\tilde g=\Omega^{2}g$; causal curves are chains of $C^{1}$ causal arcs. On the proposition's own hypotheses---$O$ a timelike worldline with $I^-(O)=D=I^-(\mathscr{I}^+)$, and $\Theta$ a Cauchy temporal function of $D$ adapted to $O$---it proves that $\partial J^-(O)=\partial J^-(\mathscr{I}^+)=\mathcal{H}^+$; that each sublevel set $\{\Theta\le T\}$ has its closure inside $D$, so stays away from $\mathcal{H}^+$; that the slices $S_\tau$, and the past light cones $\partial J^-(O(\tau))$, converge to $\mathcal{H}^+$ in the sense of Kuratowski, the lower limit being the statement that every horizon point is approached by the slices of all sufficiently late $\tau$ and the upper limit the statement that they accumulate nowhere else; and that in a null frame $(\ell,n)$ at a horizon point, $\mathrm{d}\Theta/\mathrm{d}\Theta(n)\to-g(\ell,\cdot)$ whenever $\mathrm{d}\Theta(\ell)/\mathrm{d}\Theta(n)\to0$, which is the tangency clause in the form the proof gives it. Beyond what the proposition states, the formal statement assumes that the worldline and $\mathcal{H}^+$ lie in the spacetime and, for the tangency clause, that the null frame stays bounded in a chart at the horizon point. It does not use asymptotic flatness, global hyperbolicity of $D$ beyond the Cauchy property of $\Theta$, the limit $O(\tau)\to i^+$, or any smoothness beyond $C^{1}$, so it holds more generally than the proposition is stated. Three things are not in it: the clause that the stretch of $\mathcal{H}^+$ the cones approach extends to the future without bound, which is metric; the statements that no cone meets $\mathcal{H}^+$ and that no finite slice does, which follow at once and are not stated separately; and a curved or four-dimensional witness. Its hypotheses are shown jointly satisfiable on the flat two-dimensional Rindler exterior compactified by $v=\arctan V$, where the slicing $-\log(-U)+V$ aligns with the generators and a slicing $F(-U)+V$ whose rate across them oscillates does not, as the proof says can happen.
+\end{remark}
+```
+
+***Choices I made in the draft, for 60.***
+- I wrote "Lean~4 against Mathlib" without version numbers; the lake manifest pins them.
+- I named only the two theorems a reader needs.
+- I put the three hypotheses beyond P1 in a sentence of their own, as you asked.
+- "Causal curves are chains of $C^{1}$ causal arcs" marks where the Lean's causal relation differs from the
+  continuous-curve one P1 cites (Bernal–Sánchez).
+
+### ② The witnesses, registered in `r7661_71_campaign90/PREDICTION.md`
+
+***(a) A genuine compactification, built first.***
+- `Ñ` is the model space, a different type from `N = Pt`.
+- `ι = (arctan U, arctan V)` has relatively compact image and `Ω² = 1/((1+U²)(1+V²))`.
+- `𝒥⁺` is a null boundary segment.
+- About `600` lines, p `0.6`. A curved stretch, `−F dU dV`, is at p `0.25`.
+
+***(b) The flat cylinder, corrected: my error.***
+- The two-dimensional flat cylinder I named in campaign 87 has **no horizon for any observer**. Light wraps round the
+  circle, so `D = N` and `𝓗⁺ = ∅`, and it would witness the headline only vacuously.
+- It is also homeomorphic to an open subset of `ℝ²`, so one chart can cover it.
+- I register instead `ℝ² × S¹` with a Rindler horizon `{U = 0} × S¹`, which the circle leaves intact.
+  - It is three-dimensional, and no chart of its atlas covers it.
+  - The Cauchy property must be proved on `N`, with no global chart to transport it through.
+  - About `2000` lines, p `0.3`.
+- It is still topologically an open subset of `ℝ³`. I say so in advance.
+
 ## ✔ re r7659: PROP:CAUSAL-ALIGNMENT IS FORMALISED WHOLE; 𝓗⁺ = ∂J⁻(𝒥⁺) PROVED IN A CONFORMAL EXTENSION (`r7659+71.2`)
 
 `probes/ConformalBoundary.lean` has `6184` lines, about `436` of them new, and `62` axiom prints, all standard. All
