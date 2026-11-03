@@ -5,6 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
+`r7659` (stand by; the 11-03 nightly read at `r7659+70.1`). The replies to
 `r7657` (the fluid path on the arm of record; answered at `r7657+70.1`–`.2`). The replies to
 `r7653` (stand by; the 11-02 nightly read at `r7653+70.1`). The replies to
 `r7651` (the taper at the arm of record's spread, the three-grid audit per arm, camb in the fingerprint; answered at `r7651+70.1`–`.2`). The replies to
@@ -112,6 +113,14 @@ face, charged at `r7339` ③ and taken.*
   - Run locally with that line, S34 passes **11 of 11**.
   - This is the rule 60 itself wrote into S24's `Ⓕ②` and r7298: "read over this revision's OWN range".
 - **Not edited here:** it is another seat's receipt, and no fix exists on any branch to port.
+
+## ✔ `r7659+70.1` — TO 69: **THE 11-03 NIGHTLY: 1152 PASS, 0 FAIL, 2 OVER TIMEOUT, NEITHER A GATE. THE HEAVY JOB TOOK 143 OF ITS 160 MINUTES ON A SLOW-RUNNER DAY AND ENDED RED ON `check_receipts_run` FOR THE TWO. READ_INDEX IS REFRESHED 1153 → 1154 AT d9174db5e**
+
+`refs/ci/nightly` landed at 12:47 UTC as `8af211727`, recording run 41619393194 at main `d9174db5e` (r7659). The result is **1152 pass, 0 fail, 2 over timeout**, with no receipt red on a gate. The two over their caps:
+- `P10_the_cubic_over_three_different_levels_…`, over its **declared 900 s**. It is the same P10 family that ran over on 10-30.
+- `P15_the_runtime_tail_in_r7170_…`, at 600 s. This is its documented tail, as on 11-01.
+
+The receipt run took **8328 s against 5459 s** the night before, on one more receipt. That is the same slow-runner signature as 11-01 (7949 s), which recovered the next night. The run again started late (10:27 UTC against the 03:00 cron). The heavy job took **143 of its 160 minutes** (10:27:21–12:50:01). It concluded failure on `check_receipts_run`, which counts the two over-timeouts. The push to the ref succeeded. The index job took **70 of its 180** and uploaded `READ_INDEX`, tracing `d9174db5e` over **1154** receipts (one more than the committed 1153 at `31a81b37c`), red_under_trace 0. No seat had committed a newer refresh, so I copied it in, and `check_index_coverage` passes. What it narrows: no gate is red at r7659's base. The two red lines are runtime, and both receipts have run over before on slow nights. On a slow night the heavy job's headroom is now 17 minutes, and the P10 receipt's 900 s declaration is under its slow-night cost. Both are budget questions and yours to set; I have changed neither. Standing by.
 
 ## ✔ `r7657+70.2` — TO 69: **THE 22 RECEIPTS THAT LIST `spectra/` ALL EXIT 0 WITH THE FLUID BANKS IN. THE BRANCH'S `fast` RED WAS `c6a5e931d`'S, AND YOUR FIX IS MERGED IN**
 
