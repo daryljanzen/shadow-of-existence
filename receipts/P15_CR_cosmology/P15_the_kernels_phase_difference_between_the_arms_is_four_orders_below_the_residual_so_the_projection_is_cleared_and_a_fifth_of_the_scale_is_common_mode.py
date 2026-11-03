@@ -390,6 +390,25 @@ _P15FLAT = re.sub(r'\s+', ' ', _P15TEX)
 #   where r7657 listed it as deliberately absent.*
 _WORDNUM = {'two': 2.0, 'three': 3.0, 'four': 4.0, 'five': 5.0, 'six': 6.0, 'seven': 7.0,
             'eight': 8.0, 'nine': 9.0, 'ten': 10.0, 'twelve': 12.0}
+# ⛭⛭ r7663 (69's item 1, generalising 60's r7660 point and this seat's own `I⑧`): THIS RECEIPT
+#   HAS TWELVE PAPER READS ACROSS FIVE MECHANISMS and every one of them tolerated its own
+#   absence silently, which is exactly the shape that blinded three reads in the licensed
+#   receipt between `r7657` and `r7661` while their gates stayed green.  Nothing here is blind
+#   TODAY -- all twelve match -- and that is the point: the state is now a GATE (`Ⓜ①`) rather
+#   than a fact nobody is checking.  ⌗ *A reader allowed to find nothing must say WHICH nothing.*
+WITHDRAWN_READS = {}        # key -> why its sentence is legitimately gone.  EMPTY: none is.
+_READS = {}
+
+
+def note_read(key, got):
+    """register one paper read and return its two-case state, for the print beside it."""
+    _READS[key] = got is not None
+    if got is not None:
+        return None
+    return (f'** WITHDRAWN, declared -- {WITHDRAWN_READS[key]} **' if key in WITHDRAWN_READS
+            else '** NOT MATCHED -- not declared withdrawn, so this read has gone BLIND **')
+
+
 _PAPER_EP = re.search(r'the difference runs from \$\+([\d.]+)\$ to \$\+([\d.]+)\$ degrees, '
                       r'always of one sign, so the clearance holds at no less than (\w+) orders '
                       r'of magnitude on every convention', _P15FLAT)
@@ -403,11 +422,13 @@ _P_LO = float(_PAPER_EP.group(1)) if _PAPER_EP else None
 _P_HI = float(_PAPER_EP.group(2)) if _PAPER_EP else None
 _P_ORDW = _WORDNUM.get(_PAPER_EP.group(3)) if _PAPER_EP else None
 _P_RES = float(_PAPER_RESID.group(1)) if _PAPER_RESID else None
+_g_ep = note_read("l.2387-2389's endpoint clause", _PAPER_EP)
+_g_res = note_read("l.2383's residual", _PAPER_RESID)
 print(f"    read out of the paper: l.2387-2389's endpoint clause "
       + (f"runs +{_P_LO} to +{_P_HI} degrees at no less than {_P_ORDW:.0f} orders"
-         if _PAPER_EP else "** NOT FOUND -- reworded since r7659 **")
+         if _PAPER_EP else _g_ep)
       + ";  l.2383's residual "
-      + (f"{_P_RES}" if _PAPER_RESID else "** NOT FOUND -- reworded since r7655 **"))
+      + (f"{_P_RES}" if _PAPER_RESID else _g_res))
 
 EPD = os.path.join(BW, 'r7655_cc66_the_endpoint_conventions')
 _EP_LOGS = {'control': 'control_lcdm.log', 'namesake': 'namesake_arm_cr.log',
@@ -654,14 +675,12 @@ head("Ⓘ  ⛭⛭⛭ r7657 ITEM 3 -- EVERY FIGURE THE LANDED PARAGRAPH CARRIES, 
 _WORDS = {'twelve thousand': 12000.0, 'seventy thousand': 70000.0,
           'a fifth': 0.2, 'a sixth': 1 / 6, 'nine tenths': 0.9, 'three tenths': 0.3}
 _PAPER = {}
-
-
 def paper(key, pat, *cast):
-    """read ONE of l.2378-2397's figures out of the .tex, tolerate its absence, and print which."""
+    """read ONE of l.2378-2397's figures out of the .tex, and say WHICH KIND of absence it is."""
     m = re.search(pat, _P15FLAT)
     _PAPER[key] = tuple(c(g.strip()) for c, g in zip(cast, m.groups())) if m else None
-    print(f"      {key:26s} " + (f"{_PAPER[key]}" if m else
-                                 "** NOT FOUND -- reworded since r7657 **"))
+    _gone = note_read(key, _PAPER[key])
+    print(f"      {key:26s} " + (_gone or f"{_PAPER[key]}"))
     return _PAPER[key]
 
 
@@ -810,11 +829,11 @@ _PAPER_RANGE = re.search(r'it moves under a tenth of a point between the three e
                          r'from \$(\d+)\$ or from \$(\d+)\$ instead', _P15FLAT)
 _PR = ([_WORDNUM.get(_PAPER_RANGE.group(1))]
        + [float(g) for g in _PAPER_RANGE.groups()[1:]]) if _PAPER_RANGE else None
+_g_rng = note_read("l.2394-2396's range clause", _PAPER_RANGE)
 print(f"    l.2394-2396 reads "
       + (f"a tenth of a point across the three recombination-epoch endpoints and {_PR[0]:.0f} "
          f"points across the half-maximum edges, {_PR[1]:.0f} to {_PR[2]:.0f} per cent from "
-         f"{_PR[3]:.0f} or from {_PR[4]:.0f}" if _PR else
-         "** NOT FOUND -- reworded since r7659 **"))
+         f"{_PR[3]:.0f} or from {_PR[4]:.0f}" if _PR else _g_rng))
 gate("⛭⛭ ** Ⓙ① RESOLVED AT r7659: l.2394-2396 NOW READS `11` TO `30` PER CENT, which is what "
      "this file measures against -78.3, and the gate asserts the AGREEMENT where r7657's version "
      "asserted the miss. **  *The two phases were always this arm's own -- -8.7491 degrees from "
@@ -941,8 +960,9 @@ print(f"      full Bessel sum    : arm {_bAO:+9.4f}   control {_bCT:+9.4f}"
       f"   arm-control {_d_bes:+.5f} deg   ({_ppAO:.1f} / {_ppCT:.1f} points per Bessel period)")
 print(f"      the two routes differ by {abs(_d_bes - _d_96):.2e} degrees on the difference, and by "
       f"{abs(_bAO - _run(_aor, NS)):.4f} / {abs(_bCT - _run(_ctl, NS)):.4f} on each arm's own phase")
+_g_win = note_read("l.2385's window-accuracy clause", _PAPER_WIN)
 print(f"      l.2385 claims exactness to the "
-      + ("** CLAUSE NOT FOUND -- reworded since r7659 **" if _PAPER_WIN is None else
+      + (_g_win if _PAPER_WIN is None else
          f"{_P_DECW} ({_P_DEC:.0f}th) decimal place" if _P_DEC else
          f"`{_P_DECW}` decimal place -- ** AN ORDINAL THIS FILE CANNOT CONVERT **"))
 _D_NS = abs((wA - wC) - (bA - bC))
@@ -982,6 +1002,24 @@ gate("⌗ Ⓛ③ and every digit r7659 puts in this receipt's INDEX row is a LIT
           and abs(round(100 * _D_NS / abs(wA - wC), 2) - 0.10) < 1e-9
           and abs(round(_ORD_AO, 2) - 3.10) < 1e-9
           and abs(round(_ORD_NS, 2) - 2.99) < 1e-9))
+
+_blind = sorted(k for k, ok in _READS.items() if not ok and k not in WITHDRAWN_READS)
+_back = sorted(k for k in WITHDRAWN_READS if _READS.get(k))
+print(f"\n    paper reads registered {len(_READS)}, matched {sum(_READS.values())}, "
+      f"declared withdrawn {len(WITHDRAWN_READS)}, blind {len(_blind)}"
+      + (f" -- {_blind}" if _blind else "") + (f";  BACK: {_back}" if _back else ""))
+gate("⛭⛭⛭ ** Ⓜ① ALL TWELVE OF THIS RECEIPT'S PAPER READS MATCHED, AND NONE OF THEM IS ALLOWED "
+     "TO GO MISSING QUIETLY. **  *`r7661` found three reads in the licensed receipt blind behind a "
+     "green gate for two revisions, because a missing read short-circuits the conjunction that "
+     "consumes it; `60`'s `r7660` said the general case is worth taking, and 69's `r7663` item 1 "
+     "asks for it here.  ** This receipt had the same shape in FIVE places -- the eight `paper()` "
+     "reads and four inline `re.search` reads, each printing its own `NOT FOUND` and each "
+     "tolerated. **  ⇒ Every one is now registered, `WITHDRAWN_READS` is EMPTY because none of "
+     "the twelve sentences is gone, and this gate asserts both arms: nothing undeclared missing, "
+     "and nothing declared withdrawn come back.  ⌗ Nothing here is blind today -- that is the "
+     "point. The state was true and unchecked, and now it is a gate.*",
+     bool(not _blind and not _back and len(_READS) == 12
+          and sum(_READS.values()) == 12 and len(WITHDRAWN_READS) == 0))
 
 head("SUMMARY")
 # ═════════════════════════════════════════════════════════════════════════════════════════════════

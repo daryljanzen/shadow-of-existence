@@ -32315,3 +32315,36 @@ The old verdict hard-coded `_pc[0] == 800` with `eight` and `nine` and compared 
 **The fix is the convention's own rule, applied as written and not widened on a hunch:** `F1` is added to `LONG` in `scripts/run_all_receipts.py` at **`900` s** — *"measured × 1.7, rounded up to the next 300 s step"*, which is `360 × 1.7 = 612 → 900` — with the measurement, the arithmetic and the nesting mechanism named beside it, as every entry there requires. ⌗ *I have NOT pre-emptively taken the `2100` s step that `P10_the_complete_second_orders…` ended on: that entry went to `1500` by the rule and to `2100` only after `1500` was MEASURED to fail at four jobs. If `900` proves tight here the same way, the measurement raises it — and I have said in the file that the nesting makes that possible, so the next reader does not have to rediscover why.*
 
 ⛭⛭ **AND THE THING THIS RUN ALSO SETTLES, WHICH IS THE GOOD NEWS: `S60` IS GONE FROM THE CARRY.** The record line reads `ran 87, 1 named red; +1 carried, 0 cleared by a green, 0 still red` — **no `still red` entry at all**, where the three previous heads each carried `S60`. *So 69's application of my routed two-touch-point patch to `r7400`'s `cost.py` holds under the runner's own suite, not only under the receipt run 69 measured: the census reads at the pin, the rename no longer orphans its six rows, and the carry cleared itself.* ⇒ **The `r7659` diagnosis is confirmed end to end by a third party's run on a tree I did not prepare.**
+
+### ✔ `r7663+cc66.1` — **ITEM 1's TWO HALVES WERE ALREADY DONE AT `r7659`, MEASURED; THE THIRD HALF WAS NOT, AND IT IS THE ONE WORTH HAVING**
+
+Item 1 asks me to repoint the kernel receipt's range-clause read, delete the deliberate-absence row, and show the read go red on a perturbed sentence. **Measured at `d1e751794`, the merged tree:**
+
+- **The read is already repointed and it reads.** `_PAPER_RANGE` matches the landed clause and prints `a tenth of a point across the three recombination-epoch endpoints and eight points across the half-maximum edges, 11 to 30 per cent from 200 or from 50`. `Ⓙ①` has been an **agreement** since `r7659`, at `11.17` and `29.69` against the paper's `11` and `30`. ⌗ *60's addendum 2 quotes the PRE-`r7659` pattern — `moving under a tenth of a point, and runs…` — because it measured `9f248b59`. I replaced that pattern in the same turn 60 measured it, with one that reads the WHOLE landed clause including the endpoint groups, which is strictly more than the drop-the-prefix repair would have given.*
+- **There is no row to delete.** *Searched at source over `corpus/paper_pins_absent.tsv` (139 lines) for the receipt's post-rename path, its pre-rename path, and the literals `tenth of a point` and `range is taken` — all four return `0`.* ⛭ And my own comment at the read says why, written at `r7659`: *"The old read is what `paper_pins_absent.tsv` listed as deliberately absent at r7659; re-pointing it clears that row too."* The row existed at `d9174db5e` keyed to the **pre-rename** path and went stale with the rename.
+
+⇒ **So the half of item 1 that was real is the demonstration — and doing it properly meant taking `60`'s general point here, not just showing one read fail.**
+
+### ⛭⛭ `r7663+cc66.2` — **`Ⓜ①`: THIS RECEIPT HAD THE SAME BLINDNESS IN FIVE PLACES AND TWELVE READS, AND THE PERTURBATION SHOWS THE CONSUMING GATES STAY GREEN**
+
+**Twelve paper reads across five mechanisms:** the eight through `paper()` and four inline `re.search` reads — `l.2387-2389`'s endpoint clause, `l.2383`'s residual, `l.2394-2396`'s range clause and `l.2385`'s window-accuracy clause — *each printing its own `NOT FOUND` and each tolerated.* All twelve match today, and that is exactly why it was worth gating: **the state was true and unchecked.**
+
+Every read is now registered; `WITHDRAWN_READS` is **empty**, because none of the twelve sentences is gone; and `Ⓜ①` asserts both arms with the counts pinned — `paper reads registered 12, matched 12, declared withdrawn 0, blind 0`. **46 gates, all pass, about 30 s.**
+
+**Shown on a perturbed paper, one word each:**
+
+| the word changed in `corpus/CR_cosmology.tex` | the read that goes blind | gates that fail |
+|---|---|---|
+| `a tenth of a point` → `a tenth of a degree` | `l.2394-2396's range clause` (inline) | **`Ⓜ①` only** |
+| `per cent and share the other` → `per cent while sharing the other` | `r_D/D_M, per cent` (via `paper()`) | **`Ⓜ①` only** |
+
+⛔ **AND THAT SECOND COLUMN IS THE FINDING, not the first.** In both cases the gates that CONSUME the read — `Ⓙ①`, `Ⓙ②`, `Ⓓ③` — stay **green**, because a `None` satisfies their conjunction. *So `Ⓜ①` is not a convenience: without it, one reworded word in the paper silently removes a paper-side check from this receipt and nothing anywhere goes red.* ⌗ *Both perturbations were reverted with `git checkout --` and `git status` confirmed clean between them.*
+
+### ⛔ `r7663+cc66.3` — **ITEM 2: THE THREE KERNEL FIGURES ARE ALREADY READ, AND THE FIVE `PART 4B` FIGURES ARE NOT IN THE PAPER AT ALL — `PART 4B` IS A RECEIPT'S OWN SECTION**
+
+Item 2 asks for pins for *"the figures P15 prints since `r7659` that no receipt reads yet"*. **Measured, and the answer is nothing to add:**
+
+- **The kernel paragraph's three ARE read**, by this receipt's `Ⓘ` block since `r7657` item 3: `fixed-tilt difference (0.041,)`, `endpoint range (0.028, 0.063)`, `as-run difference (0.33, 'nine tenths')` — each read out of the `.tex` and met by a computation, and each now registered under `Ⓜ①`.
+- ⛔ **The five `PART 4B` figures are not paper figures.** *`grep` over `corpus/*.tex` for `299.057`, `298.362`, `299.06`, `298.36`, `PART 4B`, `matched locator`, `matched-locator`, `P1/P2` and `P1/P3` returns nothing — no sentence in any paper prints them, and `receipts/INDEX.md` does not quote them either (`0` hits).* **`PART 4B` is a section heading inside `P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number.py`**, added at `r7651+cc66.91` — its own `print(" PART 4B -- ...")` at l.344. The figures are that receipt's computed outputs, and it already gates `P1/P2`, `P1/P3` and the gap ratios against the sky's values with tolerances.
+
+⇒ **So there is no unread paper figure in either group, and nothing to pin.** ⌗ *This is the second premise in one order that the tree has moved past, and the pattern is worth naming rather than just working around: an order inherits a description from the previous turn's routing — 60's, or my own — and the turn that produced the routing has already acted on it. `r7659` item 1 repeated my own overstatement of the rename's reach; `r7663` item 1 repeats 60's pre-`r7659` pattern and item 2 reads a receipt's section heading as the paper's. **The cheap guard is the one 60 arrived at independently: name the tree a read was made on.** Every figure in this entry is measured at `d1e751794`.*
