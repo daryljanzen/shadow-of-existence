@@ -1,0 +1,217 @@
+{
+ "tree": [
+  "worktree: 5c7a26acebb8356e74bc203b5f127b8c79042263",
+  "dirty: 1 path(s)",
+  "53816139f8f75aec1da496ff77789384b3502d80  corpus/BH_causality_v2.tex",
+  "5b10726558ffc87abd844bb8f8f57c39e4795ce5  computations/formalisation/lean/probes/ConformalBoundary.lean"
+ ],
+ "hypotheses": [
+  {
+   "clause": "asymptotically flat, with a conformal boundary",
+   "in_p1": true,
+   "terms": [
+    "ConformalExtension S St",
+    "h\ud835\udca5 : \ud835\udca5 \u2286 St.M",
+    "hI : S.IpastSet (range O) = X.\u03b9 \u207b\u00b9' St.IpastSet \ud835\udca5"
+   ],
+   "found": [
+    "ConformalExtension S St",
+    "h\ud835\udca5 : \ud835\udca5 \u2286 St.M",
+    "hI : S.IpastSet (range O) = X.\u03b9 \u207b\u00b9' St.IpastSet \ud835\udca5"
+   ],
+   "verdict": "MATCHED"
+  },
+  {
+   "clause": "the horizon IS \u2202J\u207b(\ud835\udca5\u207a)",
+   "in_p1": true,
+   "terms": [
+    "S.H J = frontier (X.\u03b9 \u207b\u00b9' St.JpastSet \ud835\udca5)"
+   ],
+   "found": [
+    "S.H J = frontier (X.\u03b9 \u207b\u00b9' St.JpastSet \ud835\udca5)"
+   ],
+   "verdict": "PROMOTED"
+  },
+  {
+   "clause": "the exterior domain D is globally hyperbolic",
+   "in_p1": true,
+   "terms": [
+    "h\u0398 : S.IsCauchyTemporalOn (S.D J) \u0398"
+   ],
+   "found": [
+    "h\u0398 : S.IsCauchyTemporalOn (S.D J) \u0398"
+   ],
+   "verdict": "ENCODED"
+  },
+  {
+   "clause": "O is a worldline, future-ordered",
+   "in_p1": true,
+   "terms": [
+    "hmono : \u2200 s t : \u211d, s < t \u2192 S.Chr (O s) (O t)"
+   ],
+   "found": [
+    "hmono : \u2200 s t : \u211d, s < t \u2192 S.Chr (O s) (O t)"
+   ],
+   "verdict": "MATCHED"
+  },
+  {
+   "clause": "O is FUTURE-COMPLETE and O(\u03c4) \u2192 i\u207a",
+   "in_p1": true,
+   "terms": [],
+   "found": [],
+   "verdict": "STATED-NOT-USED"
+  },
+  {
+   "clause": "the causal past of O is the whole exterior",
+   "in_p1": true,
+   "terms": [
+    "hOD : S.IpastSet (range O) = S.D J"
+   ],
+   "found": [
+    "hOD : S.IpastSet (range O) = S.D J"
+   ],
+   "verdict": "MATCHED"
+  },
+  {
+   "clause": "\u0398 is a smooth Cauchy temporal function of D",
+   "in_p1": true,
+   "terms": [
+    "h\u0398 : S.IsCauchyTemporalOn (S.D J) \u0398"
+   ],
+   "found": [
+    "h\u0398 : S.IsCauchyTemporalOn (S.D J) \u0398"
+   ],
+   "verdict": "MATCHED"
+  },
+  {
+   "clause": "\u0398 is adapted to O: \u0398(O(\u03c4)) = \u03c4 + const",
+   "in_p1": true,
+   "terms": [
+    "hadapt : \u2200 \u03c4, \u0398 (O \u03c4) = \u03c4 + c"
+   ],
+   "found": [
+    "hadapt : \u2200 \u03c4, \u0398 (O \u03c4) = \u03c4 + c"
+   ],
+   "verdict": "MATCHED"
+  }
+ ],
+ "assumed_not_stated": [
+  {
+   "term": "[T2Space N]",
+   "gloss": "Hausdorffness of the spacetime",
+   "in_lean": true
+  },
+  {
+   "term": "hL : S.LocallyOneChart",
+   "gloss": "one-chart locality of S",
+   "in_lean": true
+  },
+  {
+   "term": "hLt : St.LocallyOneChart",
+   "gloss": "one-chart locality of the extension",
+   "in_lean": true
+  },
+  {
+   "term": "hJM : J \u2286 S.M",
+   "gloss": "carrier bookkeeping for J",
+   "in_lean": true
+  },
+  {
+   "term": "hHM : frontier (X.\u03b9 \u207b\u00b9' St.JpastSet \ud835\udca5) \u2286 S.M",
+   "gloss": "carrier bookkeeping for the horizon",
+   "in_lean": true
+  }
+ ],
+ "p1_conventions_clause": false,
+ "conclusions": [
+  {
+   "clause": "the past cones converge to the horizon as \u03c4 \u2192 \u221e",
+   "in_p1": true,
+   "terms": [
+    "KLi (S.cone O) = frontier",
+    "KLs (S.cone O) = frontier"
+   ],
+   "found": [
+    "KLi (S.cone O) = frontier",
+    "KLs (S.cone O) = frontier"
+   ],
+   "verdict": "PROVED"
+  },
+  {
+   "clause": "NONE of the past cones MEETS the horizon",
+   "in_p1": true,
+   "terms": [],
+   "found": [],
+   "verdict": "STATED-NOT-PROVED"
+  },
+  {
+   "clause": "the stretch approached to within any distance EXTENDS TO THE FUTURE WITHOUT BOUND",
+   "in_p1": true,
+   "terms": [],
+   "found": [],
+   "verdict": "STATED-NOT-PROVED"
+  },
+  {
+   "clause": "the slices accumulate on the horizon, every point approached when late enough",
+   "in_p1": true,
+   "terms": [
+    "KLi (S.slice J \u0398) = frontier"
+   ],
+   "found": [
+    "KLi (S.slice J \u0398) = frontier"
+   ],
+   "verdict": "PROVED"
+  },
+  {
+   "clause": "and the slices accumulate at NO point outside it",
+   "in_p1": true,
+   "terms": [
+    "KLs (S.slice J \u0398) = frontier"
+   ],
+   "found": [
+    "KLs (S.slice J \u0398) = frontier"
+   ],
+   "verdict": "PROVED"
+  },
+  {
+   "clause": "each finite-\u0398 slice lies entirely in D",
+   "in_p1": true,
+   "terms": [
+    "S.SublevelProper J \u0398"
+   ],
+   "found": [
+    "S.SublevelProper J \u0398"
+   ],
+   "verdict": "PROVED"
+  },
+  {
+   "clause": "the tangent hyperplanes become asymptotically tangent to the generators",
+   "in_p1": true,
+   "terms": [
+    "TCF.FrameHyp (S.gE x) (\u2113 x) (n x) (dcov \u0398 x)"
+   ],
+   "found": [
+    "TCF.FrameHyp (S.gE x) (\u2113 x) (n x) (dcov \u0398 x)"
+   ],
+   "verdict": "PROVED"
+  },
+  {
+   "clause": "consequently the horizon is on no finite exterior slice",
+   "in_p1": true,
+   "terms": [
+    "S.SublevelProper J \u0398"
+   ],
+   "found": [
+    "S.SublevelProper J \u0398"
+   ],
+   "verdict": "PROVED"
+  }
+ ],
+ "stated_not_proved": [
+  "NONE of the past cones MEETS the horizon",
+  "the stretch approached to within any distance EXTENDS TO THE FUTURE WITHOUT BOUND"
+ ],
+ "seven_located": 7,
+ "non_vacuous": true,
+ "failures": []
+}

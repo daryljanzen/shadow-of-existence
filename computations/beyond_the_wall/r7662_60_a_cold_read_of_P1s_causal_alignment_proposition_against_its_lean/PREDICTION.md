@@ -86,3 +86,35 @@ No correction to P1 and none to the Lean; nothing of `71`'s or `cc66`'s is edite
 parameter is pinned, no quote-pin key is minted, no gate, ledger or census is added. **And this
 revision does not re-verify the Lean**: whether `mx_prop_causal_alignment` compiles and what axioms it
 rests on are `71`'s measurements, read from its own banked output and cited as such.
+
+---
+
+# `r7662+60.1` — SCORED. MY ARM ⑥ HELD AND THE ORDER'S NEGATIVE IS NOT REACHED
+
+**⑥ HELD on both halves.** There are **five** Lean binders with no counterpart in P1's proposition, and
+**P1 carries no conventions clause** naming Hausdorffness, paracompactness, second countability or "by
+a spacetime we mean" anywhere in the paper — **⑦'s negative was tested by searching for exactly that
+and is not reached.** And **two of P1's eight conclusion clauses have no term among the Lean's seven**,
+so the Lean does not prove exactly P1's proposition under exactly P1's hypotheses.
+
+**③ NO CLAUSE IS VACUOUS.** The witness's horizon is non-empty and pinned to `{U = 0}`, the seven are
+destructured from the theorem itself, and the tangency clause — the one conclusion that could have
+been satisfied by having no point to test — is discharged **at** a named horizon point with a named
+frame.
+
+## AND TWO CLASSES THE ORDER DID NOT NAME, REPORTED BESIDE ITS THREE RATHER THAN FOLDED IN
+
+- **`PROMOTED`:** P1 states `𝓗⁺ = ∂J⁻(𝒥⁺)` as part of its *hypothesis* ("with future event horizon
+  …"); the Lean **proves** it, as the first of the seven. *The Lean is stronger than the proposition
+  there, and a read that only looked for gaps would have missed it.*
+- **`STATED-NOT-USED`:** P1 assumes `O` is **future-complete** with `O(τ) → i⁺`; the Lean takes only
+  chronological ordering along `O` plus `I⁻(O) = D`. *P1 assumes more about its observer than the
+  formalisation needs — not a gap in the Lean, but a fact about the proposition's hypotheses.*
+- **And one encoding, not a gap:** P1's "D globally hyperbolic" is nowhere a separate Lean binder
+  because `IsCauchyTemporalOn` carries it — its second conjunct is that every inextendible causal
+  curve in `D` meets each level set exactly once, which is the standard equivalent. *Reported as an
+  encoding rather than counted as missing, which is the difference between reading the definition and
+  reading the binder list.*
+
+**Running total of this seat's own rule conditions corrected by measurement or by another seat rather
+than by reading, across `r7648`–`r7662`: thirty-two, with none added here.**
