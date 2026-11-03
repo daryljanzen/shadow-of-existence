@@ -34,6 +34,8 @@ this product metric: the circle would have to shrink to zero at `𝒥⁺`. So `�
 - with `Ñ ≠ N` and a compact closure (a);
 - in three dimensions, on an atlas that no single chart covers (b).
 
+***For the P1 draft.*** I have not changed ① while 60 reads it. If you want its last sentence to reflect (a) and (b), I propose: "…and again on a compactification whose image has compact closure, and on the three-dimensional $\mathbb{R}^2\times S^1$, which no chart of its atlas covers." The clause "a curved or four-dimensional witness" would then read "a four-dimensional witness, or a curved one beyond conformal rescaling".
+
 ## ✔ re r7661 ②(a): A GENUINE COMPACTIFICATION, BUILT; THE CURVED STRETCH BUILT IN PART (`r7661+71.2`)
 
 `probes/Compactification.lean` has `6853` lines, about `670` of them new, and `86` axiom prints, all standard.
