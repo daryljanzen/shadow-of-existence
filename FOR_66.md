@@ -32969,3 +32969,35 @@ The six and what they move: `r6919_geometry` **13** quantities, `r6897_fields` *
 ⌗⌗ **One process note against myself.** I pushed `.4` and `.5` — both receipt changes — *before* running `turn_gates.sh`, and ran it afterwards. It came back green, so nothing was harmed, but the order was wrong: the cycle's rule is to run the batch and only commit green, not commit and then check. *The two are indistinguishable when the batch passes and not at all when it fails.*
 
 ⌗ `run_acceptance.txt` is regenerating with a corrected cross-reference in a gate label (it pointed at `.6`, which is the route to 70, where the constant's move is this entry) and lands in the next commit. The numbers above are from the completed run of the same code.
+
+### ⛔⛭⛭⛭ `r7673+cc66.8` — **ONE OF THE TEN REPOINTS MUST NOT BE MADE, AND THE RECEIPT SAYS SO WITH THE NUMBERS. ARM ④'s SUBSTANCE IS TRUE AND MY TEST FOR IT WAS TOO NARROW — ELEVENTH INSTANCE**
+
+**`P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck` is NOT repointed, and that is the right answer.** Its `r6885` family is pinned to the LEAFREC=0 namesakes **deliberately**, and `r7639 ⑵` wrote down why, in the file, with the measurements:
+
+> *"THE NAMESAKE LOADER, WHICH DOES NOT MOVE WITH `arm`. Part (b)'s `DPSRC=0` bit-identity is a finding about the instrument BEFORE `_SWSRC`/`_DPSRC` were wired into `_project`… So it is pinned to the `LEAFREC=0` namesakes and stays pinned if `arm` is ever re-pointed. In max |dD_l|: the namesake pair reads EXACTLY 0.0 on both legs; the cross-arm read a per-arm re-point would produce is 2.529e-02, which measures nothing; and the honest both-legs arm-of-record read is 9.467e-02, because the knob IS wired there. **So a re-point would read as a repair having FAILED where what it records is a repair having SUCCEEDED.**"*
+
+⇒ **Its `BANK['cr']` is already `cc66_r185_verify_cr_leafrec1`, and the `r6885` legs are a historical bit-identity that the arm of record would destroy.** So this item needs no repoint and leaves PO-87's list on its own documented grounds — *a third way off the list, beside being re-derived and being re-grounded.*
+
+#### ⛔ AND ARM ④ WAS FALSIFIED ON A TEST TOO NARROW FOR ITS OWN CLAIM
+
+I registered: *"at least one of the 18 is read by a receipt whose own **header guard** asserts the file it opens IS the LEAFREC=0 namesake."* I scored it **FALSIFIED** because none of the 18 is read by a guard-string carrier. **The substance of the arm is true** — a receipt here does pin the namesake deliberately — **and my test looked for one marker (`is not the LEAFREC=0 namesake`) when the corpus marks the same thing in prose at the load site.**
+
+⌗⌗ **Eleventh instance, and the narrowest yet: I wrote the arm, chose the test, and the test could only see one of the two ways the tree says this.** *Nine times the lesson was "the instrument must match the question"; the tenth added "grep for a trap a receipt has already written down". This one adds: when I register an arm about a PROPERTY, the test must enumerate the ways the property is marked, or a falsification is just my test's blind spot wearing a verdict's clothes.*
+
+**Re-scored honestly: arm ④ HITS on substance and its registered test was wrong.** One receipt of the thirteen pins the namesake deliberately; its marker is prose, not the guard string.
+
+#### ⌗ AND FOUR MORE NEED READING BEFORE THEIR REPOINTS, WHICH IS NOT A REGEX VERDICT
+
+A marker grep over the thirteen (`does not move with`, `stays pinned`, `pinned to the LEAFREC=0`, `NAMESAKE LOADER`, `HISTORICAL`, `deliberately`, `read ONLY to gate`) returns **5 of 13**:
+
+| receipt | markers | state |
+|---|---|---|
+| `the_model_difference…` | all seven | **deliberate pin, settled above** |
+| `a_source_with_no_physics…` | `read ONLY to gate` | *that is my own comment from `r7673+cc66.4`* — repoint already landed |
+| `the_low_multipole_depth_gap…` | `historical` | **needs reading**; also held for 70 |
+| `the_residual_does_not_sit_at_ell_A…` | `deliberately` | **needs reading**; also held for 70 |
+| `the_spacing_drift…` | `historical` | **needs reading** |
+
+⇒ **Three receipts need their marker read in context before any repoint.** ⌗ *I am not issuing verdicts from the grep. That is precisely what `ITEM2_TRIAGE.md` refused to do with the wording regex, and the refusal was right; the grep orders the reading and does not replace it.*
+
+**Verified on this head:** `moved.py` rc=0 3 of 3; the acceptance receipt rc=0 **GATES: ALL PASS** at `0.63 pp` with `0.37 pp` of margin; `P15_a_source_with_no_physics…` rc=0 **GATES: ALL PASS**; `NODE=cc66 bash scripts/turn_gates.sh` — **`ran 123 of 123`, `PASS=123 FAIL=0 UNRUN=0`**. **No receipt was repointed in this entry** — it records one repoint that must not be made and three that need a read first.
