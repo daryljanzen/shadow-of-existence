@@ -1,0 +1,359 @@
+{
+ "digits": [
+  {
+   "figure": "1.061",
+   "site": "l.1797",
+   "digits": "REPRODUCES",
+   "quantity": "CONFIRMED",
+   "receipt": "P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_the_visibility",
+   "evidence": [
+    "l68: (1) A physics-free `g cos(k r_s(eta))` injection gives an arm/control retained ratio of 1.061 and a",
+    "l148: sweep, each arm own clock | ratio"
+   ]
+  },
+  {
+   "figure": "0.019",
+   "site": "l.1798",
+   "digits": "REPRODUCES",
+   "quantity": "CONFIRMED",
+   "receipt": "P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_the_visibility",
+   "evidence": [
+    "l53: +0.0193 to ** +0.0924 ** while barely moving the mean (1.061 to 1.053): band by band || by eight. **  Giving e",
+    "l148: sweep, each arm own clock | slope"
+   ]
+  },
+  {
+   "figure": "0.022",
+   "site": "l.1798",
+   "digits": "REPRODUCES",
+   "quantity": "CONFIRMED",
+   "receipt": "P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_the_visibility",
+   "evidence": [
+    "l14: ** 1.061 with a slope of +0.0193 per unit q **, against the real source's 1.054 and +0.0218 -- || kernel, visi",
+    "l69: slope of +0.0193 per unit q, against the real source's 1.054 and +0.0218 -- so the geometry || (1) A physics-f"
+   ]
+  },
+  {
+   "figure": "0.36",
+   "site": "l.1807",
+   "digits": "REPRODUCES",
+   "quantity": "CONFIRMED",
+   "receipt": "P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_the_visibility",
+   "evidence": [
+    "l36: ** The SOUND HORIZON accumulated across the visibility is the same on the two arms to 0.36 per",
+    "l75: (3) Across the visibility FWHM the accumulated sound horizon agrees to 0.36 per cent (17.3074 || 0.788-0.911 a"
+   ]
+  },
+  {
+   "figure": "17.307",
+   "site": "l.1807",
+   "digits": "REPRODUCES",
+   "quantity": "CONFIRMED",
+   "receipt": "P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_the_visibility",
+   "evidence": [
+    "l33: control | d r_s (own clock)",
+    "l184: lcdm | d r_s own + d r_s stack"
+   ]
+  },
+  {
+   "figure": "17.369",
+   "site": "l.1807",
+   "digits": "REPRODUCES",
+   "quantity": "CONFIRMED",
+   "receipt": "P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_the_visibility",
+   "evidence": [
+    "l34: arm | d r_s (own clock)",
+    "l185: cr | d r_s own"
+   ]
+  },
+  {
+   "figure": "15.5",
+   "site": "l.1808",
+   "digits": "REPRODUCES",
+   "quantity": "CONFIRMED",
+   "receipt": "P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_the_visibility",
+   "evidence": [
+    "l37: cent, while the COMOVING DISTANCE across it differs by 15.5 per cent. ** | cent, while the COMOVING DISTANCE a",
+    "l76: against 17.3691 Mpc) while the comoving distance differs by 15.5 per cent (38.042 against || (3) Across the vi"
+   ]
+  },
+  {
+   "figure": "38.04",
+   "site": "l.1808",
+   "digits": "REPRODUCES",
+   "quantity": "CONFIRMED",
+   "receipt": "P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_the_visibility",
+   "evidence": [
+    "l33: control | FWHM(eta) + d chi = d eta",
+    "l76: against 17.3691 Mpc) while the comoving distance differs by 15.5 per cent (38.042 against || (3) Across the vi"
+   ]
+  },
+  {
+   "figure": "43.96",
+   "site": "l.1809",
+   "digits": "REPRODUCES",
+   "quantity": "CONFIRMED",
+   "receipt": "P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_the_visibility",
+   "evidence": [
+    "l34: arm | FWHM(eta) + d chi = d eta",
+    "l77: 43.957), so d r_s / d chi is 0.4549 against 0.3951. || against 17.3691 Mpc) while the comoving distance differ"
+   ]
+  },
+  {
+   "figure": "0.395",
+   "site": "l.1810",
+   "digits": "REPRODUCES",
+   "quantity": "CONFIRMED",
+   "receipt": "P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_the_visibility",
+   "evidence": [
+    "l34: arm | d r_s / d chi",
+    "l41: 0.3951 on the arm against 0.4549 on the control, 13.1 per cent lower. *** || \u21d2 *** The joint object is d r_s /"
+   ]
+  },
+  {
+   "figure": "0.455",
+   "site": "l.1810",
+   "digits": "REPRODUCES",
+   "quantity": "CONFIRMED",
+   "receipt": "P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_the_visibility",
+   "evidence": [
+    "l33: control | d r_s / d chi",
+    "l41: 0.3951 on the arm against 0.4549 on the control, 13.1 per cent lower. *** || \u21d2 *** The joint object is d r_s /"
+   ]
+  },
+  {
+   "figure": "4.43",
+   "site": "l.1845",
+   "digits": "REPRODUCES",
+   "quantity": "CONFIRMED",
+   "receipt": "P15_the_acceptance_does_not_move_under_refinement_and_three_of_the_twelve_axes_could_not_have_moved_it",
+   "evidence": [
+    "l111: base | arm 4.4301",
+    "l112: kfac26 | arm 4.4301"
+   ]
+  },
+  {
+   "figure": "5.14",
+   "site": "l.1845",
+   "digits": "REPRODUCES",
+   "quantity": "CONFIRMED",
+   "receipt": "P15_the_acceptance_does_not_move_under_refinement_and_three_of_the_twelve_axes_could_not_have_moved_it",
+   "evidence": [
+    "l111: base | control 5.1353",
+    "l112: kfac26 | control 5.1355"
+   ]
+  },
+  {
+   "figure": "13.73",
+   "site": "l.1846",
+   "digits": "REPRODUCES",
+   "quantity": "CONFIRMED",
+   "receipt": "P15_the_acceptance_does_not_move_under_refinement_and_three_of_the_twelve_axes_could_not_have_moved_it",
+   "evidence": [
+    "l111: base | arm narrower by 13.73%",
+    "l115: nk15 | arm narrower by 13.73%"
+   ]
+  },
+  {
+   "figure": "13.1",
+   "site": "l.1847",
+   "digits": "REPRODUCES",
+   "quantity": "CONFIRMED",
+   "receipt": "P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_the_visibility",
+   "evidence": [
+    "l41: 0.3951 on the arm against 0.4549 on the control, 13.1 per cent lower. *** || \u21d2 *** The joint object is d r_s /",
+    "l116: 13.1 per cent; the sound-horizon agreement 0.08 -> 0.36 per cent; the comoving-distance || 0.789-0.913 -> 0.78"
+   ]
+  },
+  {
+   "figure": "0.788",
+   "site": "l.1890",
+   "digits": "REPRODUCES",
+   "quantity": "CONFIRMED",
+   "receipt": "P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_the_visibility",
+   "evidence": [
+    "l26: `Jac = d eta_leaf / d eta_stack` is 1.000000 everywhere; ** on the arm it runs 0.788 to 0.911 || the LEAF rate",
+    "l74: 0.788-0.911 across +-3 FWHM on the arm. || empty; the two clocks are between `r_s` and `eta`, with `Jac` 1.000"
+   ]
+  },
+  {
+   "figure": "0.911",
+   "site": "l.1890",
+   "digits": "REPRODUCES",
+   "quantity": "CONFIRMED",
+   "receipt": "P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_the_visibility",
+   "evidence": [
+    "l26: `Jac = d eta_leaf / d eta_stack` is 1.000000 everywhere; ** on the arm it runs 0.788 to 0.911 || the LEAF rate",
+    "l74: 0.788-0.911 across +-3 FWHM on the arm. || empty; the two clocks are between `r_s` and `eta`, with `Jac` 1.000"
+   ]
+  },
+  {
+   "figure": "12.6",
+   "site": "l.2283",
+   "digits": "REPRODUCES",
+   "quantity": "CONFIRMED",
+   "receipt": "P15_the_selection_does_not_truncate_so_the_thirteen_sigma_stands_at_twelve_point_nine_and_the_peak_that_goes_missing_is_the_third_not_the_fourth",
+   "evidence": [
+    "l151: one driving unit at that end is 12.63 sigma on the arm of record, printing as 12.6; the paper prints 12.6 -> t"
+   ]
+  },
+  {
+   "figure": "0.953",
+   "site": "l.2283",
+   "digits": "REPRODUCES",
+   "quantity": "CONFIRMED",
+   "receipt": "P15_the_selection_does_not_truncate_so_the_thirteen_sigma_stands_at_twelve_point_nine_and_the_peak_that_goes_missing_is_the_third_not_the_fourth",
+   "evidence": [
+    "l109: bootstrap 95% interval on the robust ratio, 400 resamples: [0.9531, 1.0103]",
+    "l149: \u21d2 and at the interval's UNFAVOURABLE end, 0.9531 against the centre's 0.9821: sigma 0.01002, one driving unit "
+   ]
+  },
+  {
+   "figure": "0.76",
+   "site": "l.2284",
+   "digits": "REPRODUCES",
+   "quantity": "CONFIRMED",
+   "receipt": "P15_the_selection_does_not_truncate_so_the_thirteen_sigma_stands_at_twelve_point_nine_and_the_peak_that_goes_missing_is_the_third_not_the_fourth",
+   "evidence": [
+    "l153: OK | \u26d4 *The sky figure is the one hundredth where the two routes differ: 0.75 from the published 0.79 rounded "
+   ]
+  }
+ ],
+ "the_three_horizons": {
+  "d_rs_own": 0.3565360340200163,
+  "R_S": 0.8188677503522257,
+  "rs_ls_own": 1.4573824243891753
+ },
+ "jac_windows": {
+  "arm": "cr",
+  "fwhm": 43.59130794780725,
+  "eta_ls": 487.7902429825906,
+  "windows": {
+   "pm3_FWHM": [
+    0.7908152147067375,
+    0.9130446374996558
+   ],
+   "pm3_halfwidths": [
+    0.8368537890328217,
+    0.8946045115850244
+   ],
+   "pm1p5_FWHM": [
+    0.8368537890328217,
+    0.8946045115850244
+   ]
+  }
+ },
+ "receipt_prose": {
+  "selection_header_stale": true,
+  "a_source_established_overclaims": true
+ },
+ "namesake": {
+  "retention_banks": [
+   "r7041_accept_",
+   "r7041_accept_cr",
+   "r7041_accept_lcdm"
+  ],
+  "acceptance_banks": [
+   "r7041_accept_Al",
+   "r7041_accept_Al_leafrec1",
+   "r7041_accept_digest",
+   "r7041_accept_digest_leafrec1",
+   "r7041_accept_nk_slices",
+   "r7041_accept_nk_slices_leafrec1",
+   "r7041_accept_sample",
+   "r7041_accept_sample_leafrec1"
+  ],
+  "retention_acceptance": [
+   "5.2226",
+   "4.5364"
+  ],
+  "acceptance_acceptance": [
+   "5.1353",
+   "4.4301"
+  ]
+ },
+ "claims": [
+  {
+   "claim": "l.1798 `exceeding` what the real source gives -- the RATIO",
+   "holds": true,
+   "note": "injection 1.0612 against the real source 1.054"
+  },
+  {
+   "claim": "l.1798 `at a slope of +0.019 ... close to the real source's own +0.022` -- a HEDGE, and the receipt's own gate calls the slope half FALSIFIED",
+   "holds": true,
+   "note": "the injection's slope is LOWER, not steeper: +0.01927 against +0.02178"
+  },
+  {
+   "claim": "l.1808 the comoving distance `differs by 15.5 per cent` while the sound horizon is `the same`",
+   "holds": true,
+   "note": "d r_s 0.36% against d chi +15.55%"
+  },
+  {
+   "claim": "l.1845 the acceptance is `the narrower on this arm`",
+   "holds": true,
+   "note": "arm 4.4301 against control 5.1353"
+  },
+  {
+   "claim": "l.1847 `two routes to one quantity, and the agreement is built in nowhere`",
+   "holds": true,
+   "note": "the comparison target 13.1 IS a hardcoded constant in `\u2026the_acceptance\u2026`, declared as such, checked at a 1 pp window with 0.63 pp measured"
+  },
+  {
+   "claim": "l.1850 this arm's visibility is `the 15.5 per cent wider in chi`",
+   "holds": true,
+   "note": "d chi 43.957 against 38.042"
+  },
+  {
+   "claim": "l.2284 `both figures quoted above survive the change`",
+   "holds": true,
+   "note": "the receipt carries the sentence and says the quoted end is the conservative one"
+  }
+ ],
+ "scope": {
+  "unseen": [
+   [
+    "1.061",
+    "l.1797"
+   ],
+   [
+    "0.022",
+    "l.1798"
+   ],
+   [
+    "17.307",
+    "l.1807"
+   ],
+   [
+    "17.369",
+    "l.1807"
+   ],
+   [
+    "38.04",
+    "l.1808"
+   ],
+   [
+    "43.96",
+    "l.1809"
+   ],
+   [
+    "4.43",
+    "l.1845"
+   ],
+   [
+    "5.14",
+    "l.1845"
+   ],
+   [
+    "13.73",
+    "l.1846"
+   ],
+   [
+    "13.1",
+    "l.1847"
+   ]
+  ],
+  "cited_sentences": 329,
+  "distinct": 17,
+  "checked": 20
+ }
+}
