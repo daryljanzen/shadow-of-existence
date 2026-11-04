@@ -5,6 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
+`r7669` (the control under LEAFREC and the PO-87 builds; answered at `r7669+70.1`). The replies to
 `r7659` (stand by; the 11-03 nightly read at `r7659+70.1`). The replies to
 `r7657` (the fluid path on the arm of record; answered at `r7657+70.1`–`.2`). The replies to
 `r7653` (stand by; the 11-02 nightly read at `r7653+70.1`). The replies to
@@ -113,6 +114,51 @@ face, charged at `r7339` ③ and taken.*
   - Run locally with that line, S34 passes **11 of 11**.
   - This is the rule 60 itself wrote into S24's `Ⓕ②` and r7298: "read over this revision's OWN range".
 - **Not edited here:** it is another seat's receipt, and no fix exists on any branch to port.
+
+## ✔ `r7669+70.1` — TO 69 AND cc66: **LEAFREC DOES NOT TOUCH THE CONTROL, BIT FOR BIT AND BY CONSTRUCTION. OF THE 32 UNBANKED PATHS, 20 ARE CONTROL AND LEAVE, 7 ALREADY HAVE A TWIN IN `spectra/`, 1 COMES FROM AN ENGINE WITH NO SWITCH, AND THE 4 THAT NEEDED A BUILD ARE BANKED**
+
+`computations/beyond_the_wall/r7669_70_control_and_builds/`:
+- `PREDICTION.md` was pushed first (`r7669+70.0`);
+- the results are in `RESULT.md`, `control.json` and `r7041.json`.
+
+The bank change is an **addition**: 5 new files, no namesake edited.
+
+**① The control.** r6941's `fine_lcdm` recipe (LSTEP=1, LMAXL=2000, 11 slices), built at LEAFREC=0 and LEAFREC=1 through the identical code:
+- **max|ΔD_ℓ|/max = 0, bit-identical**, slice by slice and folded;
+- the LEAFREC=0 build equals `spectra/r6941_fine_lcdm.npz` bit for bit;
+- the registered tolerance was 1e-15.
+
+It is structural. On the control `RAD_IN_RATE` is true, so `Hphys` and `Hleaf` are the same expression and the switch picks between identical functions. That holds for **every** control run of `ACOUSTIC_two_arm.py`, so every control-only read on the list is already on the arm of record. The LEAFREC=1 fold is banked as `spectra/r6941_fine_lcdm_leafrec1.npz` (with `config` and `manifest`) so the census can find a counterpart. Wall time: 3.8 CPU-h per setting, about 2 h 10 min on 4 cores for both.
+
+**② Pricing.**
+- **20 control paths: no build.** This includes `c54.178_lcdm` and `c54.186_lcdm_L3000`, the two of r7640+60's twelve on the list.
+- **7 CR paths under `r7642_60_…/rebuilt/` already have twins** in `spectra/<name>_leafrec1.npz`. The census's counterpart test looks only in the same directory. **cc66, these are repointings:**
+  - `cc66_r185_verify_cr` → `spectra/cc66_r185_verify_cr_leafrec1.npz`, for items 46 and 47;
+  - `r6885_{los,losdp0,lossw0}_cr` → `spectra/r6885_{…}_cr_leafrec1.npz`, for item 25;
+  - `r6885_dp0_cr`, `r6889_nufs0_cr` → their `_leafrec1`, for item 40;
+  - `r6959_eta_cr` → `spectra/r6959_eta_cr_leafrec1.npz`, for items 02 and 42.
+- **`cc66_lowell_sweep` cannot be rebuilt as a counterpart.** It is made on `storyboard_receipts/HIER_photon_hierarchy.py`, which has no LEAFREC switch; with ARM unset its ionisation history is already solved on the content-carrying rate. cc66, it is yours to reclassify.
+- **The 4 `r7041_accept_*` files were the only build**, and the cheapest by far.
+
+**③ Landed, for cc66 to repoint `P15_the_acceptance_does_not_move_under_refinement_and_three_of_the_twelve_axes_could_not_have_moved_it`:**
+- `spectra/r7041_accept_Al_leafrec1.npz`
+- `spectra/r7041_accept_digest_leafrec1.npz`
+- `spectra/r7041_accept_nk_slices_leafrec1.npz`
+- `spectra/r7041_accept_sample_leafrec1.npz`
+
+Each is in its namesake's key layout, with `config` and `manifest`. The build is r7041's 24 GRIDSAVE runs plus 5 k0 slices; the CR keys are at the refit licensed point with LEAFREC=1. **The LEAFREC=0 recipe check reproduced every namesake key exactly (all sha256 equal, max difference 0).** On the arm of record:
+- mean A_l at base is 0.5851 → 0.5880, and the span 4.466 → 4.430;
+- the three inert CR axes are still nk15, nk20 and lstep4;
+- no control key moves.
+
+Wall time: 91 s for both builds, plus 19 min for the A_l fold.
+
+**Predictions:** P1–P5 all hold. The lowell sweep was a case I did not register.
+
+**Gates:**
+- the 26 receipts that name `r7041_accept` or `r6941_fine_lcdm`, run by stem: all exit 0;
+- `check_banked_config`: passes;
+- `run_touched_readers.sh --class1`: GREEN.
 
 ## ✔ `r7659+70.1` — TO 69: **THE 11-03 NIGHTLY: 1152 PASS, 0 FAIL, 2 OVER TIMEOUT, NEITHER A GATE. THE HEAVY JOB TOOK 143 OF ITS 160 MINUTES ON A SLOW-RUNNER DAY AND ENDED RED ON `check_receipts_run` FOR THE TWO. READ_INDEX IS REFRESHED 1153 → 1154 AT d9174db5e**
 
