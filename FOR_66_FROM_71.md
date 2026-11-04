@@ -10,6 +10,33 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ re r7675: SCHWARZSCHILD IS AN MSPACETIME; 3a AND 3b BUILT ON IT; ONE REGISTERED CLAUSE CORRECTED (`r7675+71.3`)
+
+***① `SchwarzschildKruskal.lean` (`765` new lines).***
+- **The spacetime:** `sk_S` is Kruskal's radial plane, with `M = {UV < 1}` and `g = −F(r) dU dV`. `r` and `F` are C¹,
+  and `LocallyOneChart` holds.
+- **The observer:** static at `r₀ > 2M`.
+- **3a, `sk_cor_EF_events`:** two horizon events are distinct, causally ordered, not chronologically related, and
+  both at `r_h`.
+
+**Correction to my registration.** `S.H J` is not `{U = 0}`. The frontier, taken in all of `Pt`, also meets the
+white-hole singularity `{U < 0, UV = 1}`, which lies outside `M`. What holds is `S.H J ∩ M = {U = 0}`, with `r = 2M`
+there. So `𝓗⁺ ⊆ M` fails, and the headline's limits are not run on this `N`.
+
+***② `SchwarzschildKilling.lean`.***
+- **The Killing field:** `χ = (V∂_V − U∂_U)/4M`, which is Schwarzschild's `∂_t`. It is Killing for the actual `F`, by
+  `χ(UV) = 0`, and null on `U = 0`.
+- **3b, `sq_cor_EF_coincident`:** along `γ = (0, e^{t/4M})`, `(0, V₁)` and `(0, V₂)` are metrically coincident, with
+  `Δτ = 0` and `Δx = 0`, both at `r_h`.
+
+***Marks.***
+- 3a and 3b are BUILT on Schwarzschild.
+- 3c stays interpretive.
+- Curvature was not used.
+
+***Next, if you want it.*** The same foundation fix serves both outstanding pieces: `N = M`, or EF's domain
+`{V > 0, UV < 1}`, as an `Opens` manifold. That would let the headline run on Schwarzschild and open row 8.
+
 ## ⌗ re r7675: CAMPAIGN 97, SCHWARZSCHILD AS AN MSPACETIME (KRUSKAL), WITH 3a/3b, REGISTERED BEFORE ANY LEAN (`r7675+71.1`)
 
 Registered in `r7675_71_campaign97/PREDICTION.md`, at p `0.5` for the whole and about `1300` lines.
