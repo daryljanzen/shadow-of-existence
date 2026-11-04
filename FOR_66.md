@@ -32713,3 +32713,27 @@ Reading the residue by hand, as item 1 asks, showed the source says plainly what
 ⌗ **I am NOT routing a partial batch.** You asked for every RE-GROUND sentence in **one** batch so you can land them in a single pass through P15; sending two now would cost you a second pass. **The batch goes to `FOR_69.md` complete**, with line, current wording and proposed wording for each, once the **34** sentence judgements are read. The REBUILD list goes to `FOR_70.md` in the same pass.
 
 **Verified:** `classify.py` rc=0 **9 of 9**; `item4_c54178.py` rc=0 **6 of 6**; `sentence_at.py` verifies both named items (`contains-its-own-citation=True`); `NODE=cc66 bash scripts/turn_gates.sh` — **`ran 123 of 123`, `PASS=123 FAIL=0 UNRUN=0`**.
+
+### ⛔⛔⛭⛭⛭ `r7671+cc66.2` — **CORRECTION TO A HEADLINE YOU HAVE ALREADY MERGED: PO-87's LIST IS 30 ITEMS, NOT 48. THE SENTENCE TEST WAS CRUDE AND INFLATED IT BY 18**
+
+**You merged `r7669+cc66.0`–`.1` on a list I reported as 48 figure-printing items. It is 30.** The cause is in `r7667`'s census, not in the tree, and I found it only because `r7671` item 3 made me build a *precise* sentence extractor to quote wording — and the precise one disagreed with the census.
+
+**The defect.** `census.py` bounded a citing sentence by the nearest `. ` in either direction. In LaTeX that lands **inside `\emph{...}`, inside `$...$`, and inside a `\rcpt{...}` run**, so the span routinely ran into neighbouring sentences and **their** figures were counted as the citing sentence's. The crude span was not even required to contain the citation it was extracted for.
+
+**Measured, on the same 104 spectrum-loading receipts:**
+
+| | receipts |
+|---|---|
+| "citing sentence prints a figure", **crude** test | **55** |
+| "citing sentence prints a figure", **precise** test | **36** |
+| **inflation attributable to the test** | **19** |
+
+⇒ **PO-87's list, end to end: 48 → 30.** The split becomes **15** that demonstrably load a namesake and **15** kept only because every load site is undecidable. **The headline is unchanged: still ZERO re-derivable by repointing.**
+
+⛔ **AND ARM ②'s SECOND CLAUSE IS FALSIFIED, HAVING BEEN SCORED A HIT TWICE.** I registered *"at least 30 namesake spectra with no arm-of-record counterpart"* and scored it **52**, then **32**, both on the inflated set. **On the precise test it is 22** — below the floor I set. *Recorded as a miss rather than re-floored: the clause was mine to choose, and the number that falsifies it is the same fix that shrank the list.*
+
+⌗ **Also corrected by it:** the twelve now read **1 live** with the other eleven at **0** body-cited readers each (was 1 live but with three showing readers), and the item-2 judgement set is **22**, not the 34 I gave you one commit ago.
+
+⌗⌗ **This is the seventh instance of one error and the most expensive, so let me name the pattern rather than the instance.** Every one was an instrument keyed on something cheaper than the question: strings the paper could not contain; a `{base}` match that hits `\rcptlabel`; a filename where the tree keys on a path; a token where the question is what the code loads; a load site where the filename lives at the caller; a receipt that *mentions* `leafrec1` rather than loading it; and now **a sentence bounded by a period that LaTeX does not end sentences with.** ⇒ **Six were caught before they left my hands. This one reached you, and it reached you in a headline.** *The only reason it was caught at all is that `r7671` asked for wording, and wording cannot be quoted from a span that does not contain its own citation — the requirement to QUOTE is what exposed the counter.*
+
+**Verified on `b9e12a98e`:** `census.py` rc=0, **13 of 13**, with the two pins corrected to the measured values rather than loosened; `LIST.md` regenerated at **30** items; `classify.py` rc=0 **9 of 9**; `item4_c54178.py` rc=0 **6 of 6**; `NODE=cc66 bash scripts/turn_gates.sh` — **`ran 123 of 123`, `PASS=123 FAIL=0 UNRUN=0`**.

@@ -319,15 +319,56 @@ for f in glob.glob(os.path.join(ROOT, 'corpus', '*.tex')) + [os.path.join(ROOT, 
 _NUM = re.compile(r'\d+\.\d+|\b\d{2,}\b')
 
 
+#: ⛔⛭⛭⛭ r7667+cc66.5 -- THE SENTENCE TEST WAS CRUDE AND IT INFLATED THIS CENSUS'S HEADLINE BY 19.
+#:   The first version bounded a sentence by the nearest `. ` in either direction.  In LaTeX that
+#:   lands inside `\emph{...}`, inside `$...$` and inside a `\rcpt{...}` run, so the span routinely
+#:   ran into NEIGHBOURING sentences and their figures were counted as the citing sentence's.
+#:   ** Measured: 55 receipts "print a figure" by the crude test and 36 by this one -- 19 of the
+#:   list's members were the test's own inflation, not figures in print. **
+#:   ⇒ A period only ends a sentence at BRACE DEPTH ZERO and OUTSIDE math, and the span must then
+#:     extend past the trailing citation run so the sentence that owns the `\rcpt` is the one read.
+#:     The span is also required to CONTAIN its own citation, which the crude one did not guarantee.
+def _depth_at(txt, i):
+    d = 0
+    math = False
+    for ch in txt[:i]:
+        if ch == '{':
+            d += 1
+        elif ch == '}':
+            d -= 1
+        elif ch == '$':
+            math = not math
+    return d, math
+
+
 def sentences_citing(txt, base):
-    """every sentence of txt that carries \\rcpt{base}, whitespace-collapsed."""
+    """every sentence of txt that carries \\rcpt{base}, bounded at brace depth 0 outside math."""
+    pat = '\\rcpt{' + base + '}'
     out = []
-    for m in re.finditer(re.escape('\\rcpt{' + base + '}'), txt):
-        a = txt.rfind('. ', 0, m.start())
-        a = 0 if a < 0 else a + 2
-        b = txt.find('. ', m.end())
-        b = len(txt) if b < 0 else b + 1
-        out.append(re.sub(r'\s+', ' ', txt[a:b]).strip())
+    for m in re.finditer(re.escape(pat), txt):
+        i, start = m.start(), 0
+        while i > 0:
+            cands = [x for x in (txt.rfind('. ', 0, i), txt.rfind('.\n', 0, i)) if x != -1]
+            if not cands:
+                break
+            i = max(cands)
+            d, mm = _depth_at(txt, i)
+            if d == 0 and not mm:
+                start = i + 2
+                break
+        j, end = m.start(), len(txt)
+        while True:
+            cands = [x for x in (txt.find('. ', j), txt.find('.\n', j)) if x != -1]
+            if not cands:
+                break
+            k = min(cands)
+            d, mm = _depth_at(txt, k)
+            if d == 0 and not mm:
+                end = k + 1
+                break
+            j = k + 2
+        if pat in txt[start:end]:
+            out.append(re.sub(r'\s+', ' ', txt[start:end]).strip())
     return out
 
 
@@ -398,8 +439,8 @@ check(f'Ⓑ② the figure-printing count is PINNED on RESOLVED paths and arm ①
       f'recorded as MISSED: {len(prints_fig)} of {len(body_cited)} body-cited candidates print a '
       f'figure.  ⛔ The filename-only first cut said 54; it counted `cr_base.npz` and 43 other '
       f'tokens as namesakes without looking at the directory they are read from',
-      len(prints_fig) == 48 and len(body_cited) == 68 and not (55 <= len(prints_fig) <= 73),
-      f'{len(prints_fig)} of {len(body_cited)}; arm \u2460 registered 55-73 -> MISS by seven')
+      len(prints_fig) == 30 and len(body_cited) == 68 and not (55 <= len(prints_fig) <= 73),
+      f'{len(prints_fig)} of {len(body_cited)}; arm \u2460 registered 55-73 -> MISS by twenty-five')
 
 # ══ cheap vs expensive ══════════════════════════════════════════════════════════════════════════
 head('Ⓒ  CHEAP vs EXPENSIVE -- which items have an arm-of-record sibling already banked')
@@ -419,10 +460,16 @@ no_sib = sorted({q for pth in prints_fig for q in cand[pth]['nmpaths']
 print(f'      items whose EVERY namesake has a banked `_leafrec1` sibling (cheap): {len(cheap)}')
 print(f'      items with at least one namesake lacking a sibling (expensive): {len(expensive)}')
 print(f'      distinct namesake spectra with NO banked sibling: {len(no_sib)}')
-check(f'Ⓒ① the unbanked count is scored on RESOLVED PATHS against the registered floor of 30: '
-      f'{len(no_sib)} distinct namesake spectrum PATHS read by a figure-printing candidate have '
-      f'no arm-of-record counterpart, by directory or by filename',
-      len(no_sib) >= 30, f'{len(no_sib)} without a counterpart')
+#: ⛔⛭⛭ AND ARM ②'s SECOND CLAUSE IS FALSIFIED BY THE SENTENCE FIX, having been scored a HIT twice.
+#:   I registered "at least 30 namesake spectra with no counterpart" and scored it 52, then 32, on
+#:   a figure-printing set the crude sentence test had inflated.  ** On the precise test it is 22,
+#:   below the floor I set. **  *Recorded as a miss rather than re-floored: the clause was mine to
+#:   choose, and the number that falsified it is the same fix that shrank the list.*
+check(f'Ⓒ① the unbanked count is scored on RESOLVED PATHS and arm ②\'s floor of 30 is recorded as '
+      f'FALSIFIED: {len(no_sib)} distinct namesake spectrum PATHS read by a figure-printing '
+      f'candidate have no arm-of-record counterpart, against the 30 I registered',
+      len(no_sib) == 22 and len(no_sib) < 30,
+      f'{len(no_sib)} without a counterpart; arm \u2461 floor 30 -> FALSIFIED')
 #: ⛔⛭⛭⛭ AND THIS IS THE FINDING ITEM 2 TURNS ON, measured rather than assumed: the order says
 #:   "re-derive the cheapest half of them", which presumes a cheap half exists.  ** It does not. **
 #:   Only TWO of the 54 figure-printing items have an arm-of-record sibling banked for EVERY
