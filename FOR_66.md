@@ -33001,3 +33001,31 @@ A marker grep over the thirteen (`does not move with`, `stays pinned`, `pinned t
 ⇒ **Three receipts need their marker read in context before any repoint.** ⌗ *I am not issuing verdicts from the grep. That is precisely what `ITEM2_TRIAGE.md` refused to do with the wording regex, and the refusal was right; the grep orders the reading and does not replace it.*
 
 **Verified on this head:** `moved.py` rc=0 3 of 3; the acceptance receipt rc=0 **GATES: ALL PASS** at `0.63 pp` with `0.37 pp` of margin; `P15_a_source_with_no_physics…` rc=0 **GATES: ALL PASS**; `NODE=cc66 bash scripts/turn_gates.sh` — **`ran 123 of 123`, `PASS=123 FAIL=0 UNRUN=0`**. **No receipt was repointed in this entry** — it records one repoint that must not be made and three that need a read first.
+
+### ⛔⛭⛭⛭ `r7673+cc66.10` — **CI's `fast` WENT RED ON MY OWN HEAD, BOTH GATES FROM THE ONE GATE I ADDED, AND I REACHED FOR A TOOL THE FILE I WAS EDITING FORBIDS IN WRITING**
+
+**`fast` failed on `fb93fe989`:** `⛔ FAILED: check_exact_counts check_figures_pinned`. Green on every earlier head, so it is mine, and **both reds come from the single gate `⓿` I added at `r7673+cc66.9`.**
+
+⌗ **Why my local batch was green and CI was not, which is not an excuse but is the mechanism:** both gates are in the class `turn_gates.sh` declares *"LEAN: heavy, and CI's fast job asks it on every push — run `--full` to ask it here"*. So `ran 123 of 123, PASS=123` was true and did not cover these two. **The remedy is to run those two by name when a receipt changes, which is what I now do.**
+
+#### ① `check_exact_counts` — adjudicated, and the zero is the claim
+
+My gate asserts `len(_ao_ctl) == 0`: the arm-of-record grid carries **no** control leg. That is an exact equality on a set another seat can move, so the detector is right to flag it. Adjudicated **DELIBERATE** in `corpus/exact_count_baseline.tsv` with what was read.
+
+⇒ **Monotone (`<= 0`) is identical for a count and would hide the thing worth seeing.** If 70 ever builds a control leg in that grid, this gate **should** fire — the asymmetry would no longer hold and the receipt would be repointing on a stale reason. *The equality is the content, not a cost of it; its control is in the same gate, which reads the namesake grid in the same breath and requires it to carry control legs.*
+
+#### ⛔ ② `check_figures_pinned` — and I used a tool the baseline forbids
+
+The `12.5` row went stale because my `_N_STATE` block now pins it. **I ran `--write-baseline`, which the gate's own output suggests, and it dropped 118 lines — including the entire header recording every prior adjudication by every seat.**
+
+The file I was editing says, in writing, in its own header:
+
+> *"Removed by hand and verified by SET COMPARISON against `git show HEAD:` — exactly this row gone, no row added, total 1486 against the gate's own measured 1486 — **never with `--write-baseline`, which is lossy (r7349)**."*
+
+**Reverted and done by hand.** One row removed; verified by set comparison — `comm -23` returns exactly that row, `comm -13` returns nothing; the gate reads **1474 against its own measured 1474**. The header records this change in the same form as its predecessors, *including that I reached for the forbidden tool first*.
+
+⌗⌗ **THIS IS THE SECOND TIME IN ONE REVISION THAT THE TRAP WAS WRITTEN DOWN IN THE FILE I WAS WORKING IN.** `r7673+cc66.3` was `r7645`'s re-key note, sitting in `P15_the_contrast_excess…`. This one is the baseline's own header. ⇒ *The lesson is not "be careful" — I have written a version of that eleven times. It is specific and mechanical: **this corpus documents its traps AT THE SITE, so the header of a file is part of the file and gets read before the file is edited, not after CI reports it.** The two instances cost a 118-line clobber and a merged-headline correction; reading two headers would have cost a minute.*
+
+**Verified before this push, in the foreground, by name:** `check_exact_counts` rc=0 — *"every exposed exact count is accounted: no new site, no stale entry, and the backlog in the open"*, ratchet holding at 21 against a ceiling of 21; `check_figures_pinned` rc=0 — *"no figure is printed beside a receipt that does not pin it, beyond the baselined sites"*, 1474 against 1474. The full `turn_gates.sh` batch is re-running as this is pushed and its tally goes in the next entry.
+
+⌗ *Pushed rather than held because CI is red on the branch head and this is the fix for that red. The standing cycle names exactly this case: a held merge once blocked the fix for the very red the job it waited on was failing.*
