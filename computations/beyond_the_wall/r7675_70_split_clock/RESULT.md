@@ -63,4 +63,7 @@ Whether that is the arm of record's physics or a construction effect, **I cannot
 
 ## Pre-push gates
 
-See the reply (`r7675+70.1`).
+- **The sweep's receipt, run by stem:** `P15_the_low_multipole_depth_gap_closes_and_two_defects_were_cancelling.py` exits 0 in 350 s with the switch in the tree, so HIER unset still gives what it read.
+- `check_banked_config`: it first **failed** on the new file. Its `config` lacked the four defining keys, `LEAFSCALES`, `ZSTART`, `STACKPERT` and `VISLEAF`, which are `ACOUSTIC_two_arm.py` switches that HIER does not have. They are now written out as `null`, with a note that none of them is a switch of this instrument (HIER's onset is `ZS`, recorded as 1e6). The gate now passes. `run_bank.py` writes them the same way.
+- `run_touched_readers.sh --class1`: GREEN.
+- `gate_unset.py`: G1 and G2 hold.

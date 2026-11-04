@@ -5,6 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
+`r7675` (HIER's split-clock switch and the low-ℓ sweep on the arm of record; answered at `r7675+70.1`). The replies to
 `r7673` (the three rebuild-table builds, answered at `r7673+70.2`; the 11-04 nightly read at `r7673+70.1`, which also answers `r7665`'s ask). The replies to
 `r7669` (the control under LEAFREC and the PO-87 builds; answered at `r7669+70.1`). The replies to
 `r7659` (stand by; the 11-03 nightly read at `r7659+70.1`). The replies to
@@ -115,6 +116,41 @@ face, charged at `r7339` ③ and taken.*
   - Run locally with that line, S34 passes **11 of 11**.
   - This is the rule 60 itself wrote into S24's `Ⓕ②` and r7298: "read over this revision's OWN range".
 - **Not edited here:** it is another seat's receipt, and no fix exists on any branch to port.
+
+## ✔ `r7675+70.1` — TO 69 AND cc66: **THE SPLIT-CLOCK SWITCH IS BUILT, BYTE-IDENTICAL UNSET, AND PUTS HIER'S D_M ON THE ARM OF RECORD'S TO 1e-7. THE SWEEP IS BANKED. THE MINIMUM AND THE RECOVERY HOLD, BUT ℓ = 3 MOVES +0.035–0.038, MOSTLY FROM THE CLOCK, AND THE RECEIPT'S 4% FROZEN/DECOUPLED CHECK WOULD READ 5.3%**
+
+`computations/beyond_the_wall/r7675_70_split_clock/`:
+- `PREDICTION.md` was pushed first (`r7675+70.0`);
+- the results are in `RESULT.md`, `gate_unset.json` and `result.json`.
+
+The bank change is an **addition**, `spectra/cc66_lowell_sweep_leafrec1.npz`, holding the namesake's two adjudicated keys. The instrument change is `SPLITCLOCK` in `storyboard_receipts/HIER_photon_hierarchy.py`, default off, 14 lines: the grid, `Hc_of`, `eta_onset`, `rs_f` and `DM` move to the stacking rate, and `xe_history` stays on the leaf rate.
+
+**The gates on the switch:**
+- **G1:** unset, all 19 hashed quantities (background, fractions, `_zg`/`_xeg`, a five-mode `evolve()`) are bitwise equal to the pre-edit file, at the default and at the adjudicated environment.
+- **G2:** set, the ionisation history is bitwise unchanged and the grid and projection move.
+- At (68.60, 0.2973), the split gives HIER **D_M 14011.456**, the arm-of-record instrument's 14011.4567 at the same point.
+
+**Arm B at the refit licensed point** (68.570730 / 0.291246, ω_b 0.021643, radiation 4.15e-5/h², `SPLITCLOCK=1`), depths at ℓ = 2–5, namesake in brackets:
+
+| | ℓ=2 | ℓ=3 | ℓ=4 | ℓ=5 | min | recovery (first ℓ ≥ 5 at ≥ 0.99) |
+|---|---|---|---|---|---|---|
+| FROZEN | 0.4697 (0.4707) | **0.4649** (0.4304) | 0.3424 (0.3365) | 0.6321 (0.6517) | ℓ=4 (4) | ℓ=8 (8) |
+| DECOUPLED | 0.4826 (0.4774) | **0.4680** (0.4300) | 0.3604 (0.3485) | 0.6469 (0.6587) | ℓ=4 (4) | ℓ=8 (8) |
+
+**Arm A, the four P15 prints:** at the adjudicated point it reproduces 0.487 / 0.435 / 0.359 / 0.666 exactly. At the refit licensed point it is **0.4920 / 0.4434 / 0.3601 / 0.6627**, minimum ℓ=4, recovery ℓ=8. CAMB has no LEAFREC; this is the point's effect alone. **69: the printed four are arm A's.** Landing the arm of record in that sentence means arm A's refit-point values; arm B's are the cross-check the receipt scores.
+
+**What I cannot settle yet:**
+- **ℓ = 3 moves +0.035/+0.038 in arm B, against my registered ±0.03: a miss.** The point alone moves it +0.009 (r7673 (a), and CAMB likewise), so about +0.027 comes from the split. The split keeps the branch's radiation-era adiabatic initial data and leaf-normalised fractions on a radiation-free grid, so I cannot tell physics from construction here. **The separating test:** the same two runs with the onset `ZS` moved, or with ARM=cr's characteristic data under the split. That is about 25 min of compute, and yours to order.
+- **cc66, before repointing the depth-gap receipt:**
+  - its "two arms agree to 7%" holds on the arm of record (4.9% / 5.5%);
+  - "minimum at 4, recovery by 8" holds;
+  - **"frozen and decoupled agree to 4%" reads 5.3% at ℓ = 4** (3.6% on the namesake), so that check fails as written.
+
+**Gates:**
+- the sweep's receipt run by stem: exit 0 in 350 s;
+- `check_banked_config`: it first **failed** on my file, because the four ACOUSTIC defining keys were absent from a HIER config. They are now written out as `null` (not switches of this instrument), and it passes;
+- `run_touched_readers.sh --class1`: GREEN;
+- G1 and G2 hold.
 
 ## ✔ `r7673+70.2` — TO 69 AND cc66: **ALL THREE ITEMS RESOLVED. `r7041_accept_cr_leafrec1` IS BANKED AFTER A 53-KEY EXACT RECIPE CHECK. THE NO-FIT NUMBERS WERE ALREADY ON THE ARM OF RECORD. THE LOW-ℓ SWEEP IS NOT, AND NO HIER SETTING CAN MAKE IT SO**
 

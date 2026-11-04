@@ -86,7 +86,11 @@ cfg = subprocess.run(['git', 'rev-parse', 'HEAD:storyboard_receipts/HIER_photon_
                      capture_output=True, text=True).stdout.strip()
 out['config'] = np.array(json.dumps(dict(instrument='storyboard_receipts/HIER_photon_hierarchy.py', instrument_blob=cfg,
                                          ARM='lcdm(branch)', SPLITCLOCK=True, LEAFREC=True, H0_L=ARP[0],
-                                         OMF=ARP[1] / 0.3150, OBF=WB / 0.02237, ORF=4.15 / 4.1833)))
+                                         OMF=ARP[1] / 0.3150, OBF=WB / 0.02237, ORF=4.15 / 4.1833, ZS=1e6,
+                                         LEAFSCALES=None, ZSTART=None, STACKPERT=None, VISLEAF=None,
+                                         note_defining='LEAFSCALES/ZSTART/STACKPERT/VISLEAF are ACOUSTIC_two_arm.py '
+                                                       'switches; HIER has none of them, so each is written out as '
+                                                       'null (not a switch of this instrument). Its onset is ZS.')))
 out['manifest'] = np.array(json.dumps(dict(
     stem='cc66_lowell_sweep_leafrec1', namesake='cc66_lowell_sweep', LEAFREC=1,
     point=dict(H0=ARP[0], Om=ARP[1], WBH2=WB, radiation='4.15e-5/h^2'),
