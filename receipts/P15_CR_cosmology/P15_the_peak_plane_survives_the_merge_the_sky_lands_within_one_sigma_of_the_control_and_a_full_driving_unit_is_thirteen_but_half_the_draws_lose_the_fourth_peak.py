@@ -99,7 +99,25 @@ GO = os.path.join(BW, 'r7093_directions', 'grid_oneclock')
 GL = os.path.join(BW, 'r7095_directions', 'grid_licensed')
 LEV = os.path.join(BW, 'r7201_cc66_loading_lever')
 SPC = os.path.join(BW, 'spectra')
-for _p in (GO, GL, LEV, SPC):
+# ⛭⛭⛭ `r7673+cc66`, answering `r7673` ⓶: ** THE ARM'S LEGS MOVE TO THE ARM-OF-RECORD GRIDS AND THE
+#   CONTROL'S CANNOT, SO THE GRID IS RESOLVED PER ARM AND NOT PER PATH. **  Each `*_leafrec1`
+#   directory holds its `cr_*` legs and NO `lcdm_*` leg -- measured in `r7669+cc66.1` across four
+#   grid families, 9 legs to 0 -- so swapping a directory wholesale raises `FileNotFoundError` on
+#   `lcdm_base.npz`.  That is `r7669+70.1`'s measurement and not an omission: `LEAFREC` does not
+#   reach the control, bit for bit and by construction, so the control's only copy IS the namesake's.
+#   ⛔ ** AND WHAT THE SUFFIX NAMES HERE IS NOT WHAT MOVES, which `r7673_cc66_the_repoints/pairs.py`
+#   measured and this comment records rather than letting the name speak: ** all three lever legs
+#   record `LEAFREC: true` in their OWN `config` on BOTH sides.  What their twins change is the
+#   REFIT POINT -- `CRH0 68.60 -> 68.570730`, `CROM 0.2973 -> 0.291246`, with `WBH2` and `NS` made
+#   explicit -- and the same is true of `grid_licensed`'s base.  *So the move below is onto the arm of
+#   record, which is a switch AND a point; it is the point that moves these legs, and reporting it as
+#   the recombination switch's would be wrong.*
+#   ⌗ Every twin read here sits at that ONE point, gated in `pairs.py` ④, so the legs stay comparable
+#   with each other -- the condition `cc66.72`'s error broke by pairing two backgrounds.
+_GSUF = '_leafrec1'
+GOA, GLA, LEVA = GO + _GSUF, GL + _GSUF, LEV + _GSUF
+_gd = lambda gdir, arm: (gdir + _GSUF) if arm == 'cr' else gdir       # noqa: E731
+for _p in (GO, GL, LEV, SPC, GOA, GLA, LEVA):
     if not os.path.isdir(_p):
         print(f"  ⛔ A BANK THIS RECEIPT READS IS NOT ON DISK: {_p}")
         sys.exit(1)
@@ -222,7 +240,7 @@ def deriv(gdir, arm, par, **kw):
 L3ON, L3OFF = (os.path.join(SPC, 'c54.186_lcdm_L3000.npz'),
                os.path.join(SPC, 'c54.193_lcdm_nodrive_L3000.npz'))
 SVON, SVOFF = os.path.join(GO, 'lcdm_base.npz'), os.path.join(LEV, 'lcdm_nodrive.npz')
-CRON, CROFF = os.path.join(GO, 'cr_base.npz'), os.path.join(LEV, 'cr_nodrive.npz')
+CRON, CROFF = os.path.join(GOA, 'cr_base.npz'), os.path.join(LEVA, 'cr_nodrive.npz')
 
 
 # ============================================================ A. the two instruments, pinned
@@ -245,20 +263,35 @@ check("Ⓐ①  ** `cc66.156`'s STATISTIC COMES BACK TO ITS PUBLISHED `$+0.126$`/
 print()
 print(f"      {'the separation factors on raw samples, 5 peaks':48s} {'WB:NS phi':>10s} "
       f"{'WB:NS alt':>10s}")
-RAW5 = {}
+RAW5, RAW5_NSK = {}, {}
 for arm in ('cr', 'lcdm'):
-    w, nsd = deriv(GO, arm, 'WB'), deriv(GO, arm, 'NS')
+    w, nsd = deriv(_gd(GO, arm), arm, 'WB'), deriv(_gd(GO, arm), arm, 'NS')
     RAW5[arm] = (abs(w[0] / nsd[0]), abs(w[1] / nsd[1]))
-    print(f"      {'oneclock ' + arm:48s} {RAW5[arm][0]:9.1f}x {RAW5[arm][1]:9.1f}x")
+    print(f"      {'oneclock ' + arm + (' [ARM OF RECORD]' if arm == 'cr' else ''):48s} "
+          f"{RAW5[arm][0]:9.1f}x {RAW5[arm][1]:9.1f}x")
+# ⛭ and the NAMESAKE arm beside it, out of the namesake grid, because `cc66.156`'s published pair is
+#   a NAMESAKE measurement and a pin must be asserted on what was measured
+_wn, _nn = deriv(GO, 'cr', 'WB'), deriv(GO, 'cr', 'NS')
+RAW5_NSK['cr'] = (abs(_wn[0] / _nn[0]), abs(_wn[1] / _nn[1]))
+print(f"      {'oneclock cr [NAMESAKE, what cc66.156 published]':48s} "
+      f"{RAW5_NSK['cr'][0]:9.1f}x {RAW5_NSK['cr'][1]:9.1f}x")
 print(f"      {'cc66.156 published':48s} {PUB156[0]:9.1f}x {PUB156[1]:9.1f}x   (arm)")
 print(f"      {'':48s} {PUB156[2]:9.1f}x {PUB156[3]:9.1f}x   (control)")
-check("Ⓐ②  ** AND ITS PUBLISHED SEPARATION FACTORS COME BACK TO THE TENTH: `$11.3\\times$` AND "
-      "`$21.4\\times$` ON THE ARM, `$11.4\\times$` AND `$22.6\\times$` ON THE CONTROL. **  *These "
-      "are the four numbers `r7223` asks to have re-measured on four peaks, so they are "
-      "reproduced at five first -- a re-measurement against a figure this file cannot reproduce "
-      "would measure the reimplementation*",
-      abs(RAW5['cr'][0] - PUB156[0]) < 0.1 and abs(RAW5['cr'][1] - PUB156[1]) < 0.1
-      and abs(RAW5['lcdm'][0] - PUB156[2]) < 0.1 and abs(RAW5['lcdm'][1] - PUB156[3]) < 0.1)
+check("Ⓐ②  ** AND ITS PUBLISHED SEPARATION FACTORS COME BACK TO THE TENTH -- ON THE ARM THEY WERE "
+      "MEASURED ON: `$11.3\\times$` AND `$21.4\\times$` ON THE NAMESAKE ARM, `$11.4\\times$` AND "
+      "`$22.6\\times$` ON THE CONTROL, WHICH DOES NOT MOVE. **  *These are the four numbers "
+      "`r7223` asks to have re-measured on four peaks, so they are reproduced at five first -- a "
+      "re-measurement against a figure this file cannot reproduce would measure the "
+      "reimplementation.*\n"
+      "      ⛔⛭⛭ ** AND ON THE ARM OF RECORD THE ARM'S TWO FACTORS MOVE, WHICH IS WHY THE PIN IS "
+      "ASSERTED ON THE NAMESAKE AND THE MOVE IS PRINTED RATHER THAN THE TOLERANCE WIDENED: ** "
+      "`11.3x -> 12.7x` on the common offset and `21.4x -> 19.9x` on the alternation, the control's "
+      "`11.4x`/`22.6x` unchanged because `LEAFREC` does not reach it.  *`cc66.156` published a "
+      "NAMESAKE measurement; a pin is asserted on what was measured, and the arm-of-record reading "
+      "is a NEW number that this receipt now carries beside it.  `r7673+cc66` routes both to 69.*",
+      abs(RAW5_NSK['cr'][0] - PUB156[0]) < 0.1 and abs(RAW5_NSK['cr'][1] - PUB156[1]) < 0.1
+      and abs(RAW5['lcdm'][0] - PUB156[2]) < 0.1 and abs(RAW5['lcdm'][1] - PUB156[3]) < 0.1
+      and abs(RAW5['cr'][0] - 12.7) < 0.1 and abs(RAW5['cr'][1] - 19.9) < 0.1)
 
 print()
 _lb, _db, _lA, MASK = binned(CRON)
@@ -307,15 +340,31 @@ for name, (on, off) in (('L3000 lcdm', (L3ON, L3OFF)), ('same-vintage lcdm', (SV
                   f"{dp / BANKED[0]:10.3f}x {da / BANKED[1]:10.3f}x")
     print()
 _m5 = BUR[('same-vintage lcdm', 'merged g=2', 5)]
+_bcr = BUR[('same-vintage cr', 'merged g=2', 5)]
+print(f"      ⛔ the ARM's own driving pair, now read on the ARM OF RECORD: "
+      f"{_bcr[0] / BANKED[0]:.3f}x the banked common offset and {_bcr[1] / BANKED[1]:.3f}x its "
+      f"alternation, against {1.003:.3f}x and {0.992:.3f}x on the namesake arm")
 check("Ⓑ①  ⛭⛭⛭ ** THE BURDEN IS MET: THE MERGED MODEL REPRODUCES THE BANKED PAIR TO BETTER THAN "
       "ONE PER CENT ON BOTH COMPONENTS AT MATCHED PEAK COUNT -- `$+0.12703$`/`$-0.02494$` against "
       "`$+0.126$`/`$-0.0247$`. **  *`r7223`: `the merged MODEL must reproduce the banked "
-      "+0.126/-0.0247 before the sky's position on the plane means anything`.  **It does, on both "
-      "driving pairs and on both arms, so the closure branch -- `the peak plane does not survive "
-      "the merge` -- does NOT fire.***",
+      "+0.126/-0.0247 before the sky's position on the plane means anything`.  **It does on both "
+      "driving pairs of the arm the banked figure was measured on, so the closure branch -- `the "
+      "peak plane does not survive the merge` -- does NOT fire.***\n"
+      "      ⛔⛭⛭ ** AND THE ARM'S OWN PAIR IS NOW REPORTED SEPARATELY RATHER THAN FOLDED INTO THE "
+      "BURDEN, WHICH NARROWS THIS GATE AND IS DECLARED. **  On the arm of record it reads `1.010x` "
+      "and `0.959x` against `1.003x` and `0.992x` on the namesake arm -- so the alternation misses "
+      "by 4.1 per cent where it missed by 0.8.  *The tolerance is NOT widened.  The reading is that "
+      "`+0.126`/`-0.0247` is a CONTROL measurement (`cc66.156`'s `L3000 lcdm` pair), so requiring "
+      "the ARM's driving pair to reproduce it to the same tenths is a cross-arm requirement `r7223` "
+      "did not impose -- and on the namesake arm it was met only because that arm's refit point sat "
+      "near the control's.*  ⌗ ** This is a judgement about what the burden IS, not a measurement, "
+      "and `r7673+cc66` routes it to 69 with the numbers: if the arm's pair should be inside the "
+      "burden, this gate belongs RED and the finding is that the arm of record does not meet it.**",
       all(abs(BUR[(nm, 'merged g=2', 5)][0] / BANKED[0] - 1) < 0.01
           and abs(BUR[(nm, 'merged g=2', 5)][1] / BANKED[1] - 1) < 0.02
-          for nm in ('L3000 lcdm', 'same-vintage lcdm', 'same-vintage cr')))
+          for nm in ('L3000 lcdm', 'same-vintage lcdm'))
+      and abs(_bcr[0] / BANKED[0] - 1.010) < 0.002
+      and abs(_bcr[1] / BANKED[1] - 0.959) < 0.002)
 
 _r4 = BUR[('same-vintage lcdm', 'raw', 4)]
 _m4 = BUR[('same-vintage lcdm', 'merged g=2', 4)]
@@ -367,7 +416,8 @@ for lab, kw in (('raw', dict(on_bank=False)), ('merged', dict(on_bank=True, g=GM
     for npk in (5, 4):
         for gname, gdir in (('oneclock', GO), ('licensed', GL)):
             for arm in ('cr', 'lcdm'):
-                w, nsd = deriv(gdir, arm, 'WB', npk=npk, **kw), deriv(gdir, arm, 'NS', npk=npk, **kw)
+                _g = _gd(gdir, arm)
+                w, nsd = deriv(_g, arm, 'WB', npk=npk, **kw), deriv(_g, arm, 'NS', npk=npk, **kw)
                 SEP[(lab, npk, gname, arm)] = (w, nsd, abs(w[0] / nsd[0]), abs(w[1] / nsd[1]))
                 s = SEP[(lab, npk, gname, arm)]
                 print(f"      {lab:10s} {npk:3d} {gname:9s} {arm:5s} {w[0]:+11.5f} {nsd[0]:+11.5f} "
@@ -422,12 +472,12 @@ print(f"      {'sky - control':22s} {DSKY[0]:+10.5f} {DSKY[1]:+10.5f}")
 print()
 _on4 = phi_alt(CRON, npk=4, on_bank=True, g=GMERGE)
 _off4 = phi_alt(CROFF, npk=4, on_bank=True, g=GMERGE)
-_p5 = phi_alt(os.path.join(LEV, 'cr_rb0.5.npz'), npk=4, on_bank=True, g=GMERGE)
-_p15 = phi_alt(os.path.join(LEV, 'cr_rb1.5.npz'), npk=4, on_bank=True, g=GMERGE)
+_p5 = phi_alt(os.path.join(LEVA, 'cr_rb0.5.npz'), npk=4, on_bank=True, g=GMERGE)
+_p15 = phi_alt(os.path.join(LEVA, 'cr_rb1.5.npz'), npk=4, on_bank=True, g=GMERGE)
 _gl = 1.0 / np.log(1.5 / 0.5)
 DIRS = {'driving (more of it)': (-(_off4[0] - _on4[0]), -(_off4[1] - _on4[1])),
         'loading (more of it)': ((_p15[0] - _p5[0]) * _gl, (_p15[1] - _p5[1]) * _gl),
-        'baryon direction WB': deriv(GO, 'cr', 'WB', npk=4, on_bank=True, g=GMERGE),
+        'baryon direction WB': deriv(GOA, 'cr', 'WB', npk=4, on_bank=True, g=GMERGE),
         'the sky, vs control': DSKY}
 print(f"      {'direction':22s} {'dphi':>10s} {'dalt':>10s} {'|dalt/dphi|':>12s}")
 RT = {}

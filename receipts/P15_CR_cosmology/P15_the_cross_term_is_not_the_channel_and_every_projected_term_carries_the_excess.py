@@ -1,11 +1,18 @@
 """
 
-** THE PHYSICS SIDE IS ON THE ARM OF RECORD AS OF `r7643+cc66.62`; THE SWITCH-IDENTITY LEG IS NOT. **
-`r6915_pairs_cr` and `r6911_source_cr` move to their `_leafrec1` siblings.  The `PAIRSAVE`-is-inert
-identity pairs `r6915_noop`'s `Dl__noop_{t}` against `r6893_switch_screen_{t}`'s `Dl__base` and needs
-both on one arm; `r6915_noop` has no arm-of-record key, so that pair stays on the namesake rather than
-becoming a cross-arm comparison.
-ARM KEYS READ: `Dl__noop_{t}` and `ls__noop_{t}` out of `r6915_noop`, by template on both arms.
+** THIS RECEIPT IS WHOLLY ON THE ARM OF RECORD AS OF `r7673+cc66`.  NO LEG IS BANK-BLOCKED. **
+The physics side moved at `r7643+cc66.62`: `r6915_pairs_cr` and `r6911_source_cr` to their
+`_leafrec1` siblings.  ** The switch-identity leg moved at `r7673+cc66` ** -- that revision declared
+`r6915_noop` had "no arm-of-record key", and it has them now: `Dl__noop_cr_leafrec1` and
+`ls__noop_cr_leafrec1`.  So the `PAIRSAVE`-is-inert identity is read at the no-op's arm-of-record key
+against `r6893_switch_screen_cr_leafrec1`, both sides on one arm, and it is NOT a cross-arm comparison.
+ARM KEYS READ: `Dl__noop_{t}` and `ls__noop_{t}` out of `r6915_noop_leafrec1`, by template on both
+arms, with the arm key named once as `_GARM` and gated under `r7645+cc66.68`'s convention -- that bank
+is a SUPERSET, so a path-only repoint would read the namesake's numbers through its shared keys.
+⇒ ** AND NO FIGURE THIS RECEIPT PRINTS MOVES: ** every number in its output is unchanged to the last
+digit against the namesake read of this leg.  The identity asserts BIT-IDENTITY, so its holding on the
+arm of record exactly as on the namesake is what an inert switch means.  *Moved to establish that
+rather than to assume it; the CONTROL side stays on the namesake per `r7669+70.1`.*
 
 ** TWO CONDITIONS MOVE, AND cc66.60's NUMBER IS WHY ONE OF THEM DOES. **  The source ratios sit just
 ABOVE unity here (1.0003 to 1.0202) where on the namesake they sat at 0.972 to 0.992 -- the fourth
@@ -150,9 +157,10 @@ ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)
 SP = os.path.join(ROOT, 'computations', 'beyond_the_wall', 'spectra')
 INST = os.path.join(ROOT, 'computations', 'beyond_the_wall', 'ACOUSTIC_two_arm.py')
 SRC = open(INST).read()
-NEED = ('r6915_pairs_lcdm.npz', 'r6915_pairs_cr.npz', 'r6915_noop.npz',
-        'r6911_source_lcdm.npz', 'r6911_source_cr.npz',
-        'r6893_switch_screen_lcdm.npz', 'r6893_switch_screen_cr.npz')
+NEED = ('r6915_pairs_lcdm.npz', 'r6915_pairs_cr_leafrec1.npz',
+        'r6915_noop_leafrec1.npz', 'r6911_source_lcdm.npz',
+        'r6911_source_cr_leafrec1.npz',
+        'r6893_switch_screen_lcdm.npz', 'r6893_switch_screen_cr_leafrec1.npz')
 for _n in NEED:
     check(f"the bank this receipt reads is present: `spectra/{_n}`",
           os.path.exists(os.path.join(SP, _n)), _n)
@@ -172,11 +180,24 @@ if FAILS:
 #   rather than becoming a cross-arm comparison -- the shape `cc66.57` measured and `cc66.61` repeated.*
 #   ⛭ ** ARM KEYS READ: ** `Dl__noop_{t}` and `ls__noop_{t}` out of `r6915_noop`, by template on both
 #   arms, which is why that bank blocks this receipt.
+# ⛭⛭⛭ r7673+cc66: ** AND THE SWITCH-IDENTITY LEG IS NOW ON THE ARM OF RECORD TOO, SO NO LEG OF
+#   THIS RECEIPT IS BANK-BLOCKED. **  The declaration above said `r6915_noop` "has no arm-of-record key".
+#   ** It has them now **: `Dl__noop_cr_leafrec1`, `ls__noop_cr_leafrec1`, measured by `r7673_cc66_the_repoints/pairs.py`, which classes
+#   that bank `RE-KEY` -- every SHARED array bit-identical and the arm of record in keys the namesake
+#   does not have.  ⇒ *** So the arm key is named ONCE, as `_GARM`, and gated: a repoint of the PATH
+#   alone would have read the namesake's numbers through the bit-identical shared keys and reported no
+#   change, which is `r7645+cc66.68`'s trap exactly. ***
+#   ⌗ The pair now moves on BOTH sides together -- the no-op at its arm-of-record key against
+#   `r6893_switch_screen_cr_leafrec1` -- so it is not the cross-arm comparison `r7639+cc66.15` named.
+#   The CONTROL side stays on the namesake and needs no sibling: `r7669+70.1` measured that LEAFREC
+#   does not reach the control, bit for bit and by construction.
+_GARM = 'cr_leafrec1'
+_key = lambda t: _GARM if t == 'cr' else t                                 # noqa: E731
 _PAIRS = {'lcdm': 'r6915_pairs_lcdm.npz', 'cr': 'r6915_pairs_cr_leafrec1.npz'}
 _SRC = {'lcdm': 'r6911_source_lcdm.npz', 'cr': 'r6911_source_cr_leafrec1.npz'}
 PR = {t: np.load(os.path.join(SP, _PAIRS[t])) for t in ('lcdm', 'cr')}
 SO = {t: np.load(os.path.join(SP, _SRC[t])) for t in ('lcdm', 'cr')}
-NOOP = np.load(os.path.join(SP, 'r6915_noop.npz'))
+NOOP = np.load(os.path.join(SP, 'r6915_noop_leafrec1.npz'))
 NM = [str(x) for x in PR['lcdm']['pairs']]
 IX = {n: i for i, n in enumerate(NM)}
 QL = {t: PR[t]['ls'].astype(float) / float(PR[t]['l_A']) for t in PR}
@@ -239,10 +260,10 @@ print("    must sum to the full spectrum.\"  ⛔ The TRANSFER is linear and the 
 print("    C_l is QUADRATIC in the transfer, so the projected SPECTRA are short by the cross terms.")
 print("    ⇒ What closes is the bilinear decomposition, and that is what `SRCDEC` banks.")
 for t in ('lcdm', 'cr'):
-    b = np.load(os.path.join(SP, f'r6893_switch_screen_{t}.npz'))
-    n0 = NOOP[f'Dl__noop_{t}']
+    b = np.load(os.path.join(SP, f'r6893_switch_screen_{_key(t)}.npz'))
+    n0 = NOOP[f'Dl__noop_{_key(t)}']
     check(f"[{t}] `SRCDEC` UNSET IS BIT-IDENTICAL against the banked base -- not 'small', equal",
-          np.array_equal(n0, b['Dl__base']) and np.array_equal(NOOP[f'ls__noop_{t}'], b['ls__base']),
+          np.array_equal(n0, b['Dl__base']) and np.array_equal(NOOP[f'ls__noop_{_key(t)}'], b['ls__base']),
           f"max|dD_l| = {float(np.max(np.abs(n0 - b['Dl__base']))):.3e} over {len(n0)} multipoles")
 CLO = {}
 for t in ('lcdm', 'cr'):

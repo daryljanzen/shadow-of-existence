@@ -5,6 +5,17 @@ bank and the c54.186 uniform/ladder pair are now `r6911_source_cr_kcont_leafrec1
 SW alone D +0.56 -> +0.53, the whole monopole source +0.03 -> +0.00, the instrument's own saved source re-projected
 +2.57 -> +2.55, the source comb in k +0.03 -> +0.00; and the uniform/ladder pair, which sat at the superseded
 pinned arm (D +13.76 / +13.84), now gives +4.52 / +4.52 -- identical, so the handover still contributes nothing.
+RE-POINTED AGAIN r7673+cc66, answering `r7673` (2): ** SECTION (F)'s TWO ARM LEGS ARE NOW ON THE ARM OF
+RECORD TOO -- `grid_oneclock_leafrec1/cr_base` and `r7201_cc66_loading_lever_leafrec1/cr_nodrive` --
+with the grid resolved PER ARM, because no arm-of-record grid carries a control leg.  *** AND THE
+DRIFT DOES NOT MOVE: D = +4.38 on the arm of record and +4.38 on the namesake arm, against the
+control's +4.42; the undriven arm goes +4.01 from +4.00. ***  Both namesake readings are printed
+beside the arm-of-record ones in (F)'s own table, so the non-move is MEASURED rather than assumed.
+=> *That is this receipt's own claim holding where it would have been easiest to break: the drift is
+made in the PROJECTION, so it is insensitive to the refit point the arm of record moves -- and
+`r7673_cc66_the_repoints/pairs.py` measured that the point IS what these two twins change, their own
+`config` recording `LEAFREC: true` on both sides.  `CR_cosmology.tex` l.2375's `+4.38 against the
+control's +4.42` stands unedited.*
 The `r7234_60` runs this receipt also reads (`cr_base`, `lcdm_base`, `cr_nodrive`) are that seat's own and are
 not re-run here.  The figures in the text below are the LEAFREC=0 arm's, as first written.
 
@@ -107,6 +118,20 @@ MINE = os.path.join(BW, 'r7234_60_is_the_peak_spacing_drift_a_quantity_the_const
 SRC_KCONT = os.path.join(BW, 'spectra', 'r6911_source_cr_kcont_leafrec1.npz')
 GO = os.path.join(BW, 'r7093_directions', 'grid_oneclock')
 LEV = os.path.join(BW, 'r7201_cc66_loading_lever')
+# ⛭⛭⛭ `r7673+cc66`, answering `r7673` ⓶: ** SECTION Ⓕ's ARM LEGS MOVE TO THE ARM-OF-RECORD GRIDS AND
+#   ITS CONTROL LEG CANNOT, SO THE GRID IS PER ARM.  ** Each `*_leafrec1` grid holds its `cr_*` legs
+#   and no `lcdm_*` (`r7669+cc66.1`: 9 to 0 across four grid families), because `LEAFREC` does not
+#   reach the control -- `r7669+70.1`, bit for bit and by construction.  A wholesale directory swap
+#   raises `FileNotFoundError` on `lcdm_base.npz`.
+#   ⛔ ** AND WHAT MOVES THESE TWO LEGS IS NOT `LEAFREC`, which `r7673_cc66_the_repoints/pairs.py`
+#   measured: ** `r7201_cc66_loading_lever/cr_nodrive.npz` records `LEAFREC: true` in its OWN
+#   `config` already, and its twin's `config` is character-identical but for the instrument blob.
+#   What the twins change is the REFIT POINT -- `CRH0 68.60 -> 68.570730`, `CROM 0.2973 -> 0.291246`.
+#   *So this is a move onto the arm of record, which is a switch AND a point, and here it is the
+#   point.  Both twins sit at that one point, gated in `pairs.py` ④, so Ⓕ's two arm legs stay
+#   comparable with each other rather than straddling two backgrounds (`cc66.72`'s error).*
+GOA = GO + '_leafrec1'
+LEVA = LEV + '_leafrec1'
 SPEC = os.path.join(BW, 'spectra')
 for _p in (MINE, SRC_KCONT, GO, LEV, SPEC):
     if not os.path.exists(_p):
@@ -385,15 +410,20 @@ gate("Ⓔ③ halving the l step moves it by under 0.05", bool(abs(_D3 - Dw) < 0.
 # ═════════════════════════════════════════════════════════════════════════════════════════════════
 head("Ⓕ  AND IT IS NOT A DISCRIMINATOR -- THE ARM AND THE CONTROL CARRY THE SAME DRIFT")
 # ═════════════════════════════════════════════════════════════════════════════════════════════════
-_pa, _laa = bank_peaks(os.path.join(GO, 'cr_base.npz'))
+_pa, _laa = bank_peaks(os.path.join(GOA, 'cr_base.npz'))
 _pc, _lac2 = bank_peaks(os.path.join(GO, 'lcdm_base.npz'))
-_pu, _lau = bank_peaks(os.path.join(LEV, 'cr_nodrive.npz'))
+_pu, _lau = bank_peaks(os.path.join(LEVA, 'cr_nodrive.npz'))
 _Da, _Aa = comb_fit(_pa)[1], comb_fit(_pa)[2]
 _Dc = comb_fit(_pc)[1]
 _Du = comb_fit(_pu)[1]
-print(f"    arm      (driven)  : peaks {['%.1f' % v for v in _pa]}  D = {_Da:+.2f}  A = {_Aa:+.2f}")
+_pan, _ = bank_peaks(os.path.join(GO, 'cr_base.npz'))
+_pun, _ = bank_peaks(os.path.join(LEV, 'cr_nodrive.npz'))
+_Dan, _Dun = comb_fit(_pan)[1], comb_fit(_pun)[1]
+print(f"    arm      (driven)  : peaks {['%.1f' % v for v in _pa]}  D = {_Da:+.2f}  A = {_Aa:+.2f}"
+      f"   [ARM OF RECORD; the namesake arm reads {_Dan:+.2f}]")
 print(f"    control  (driven)  : peaks {['%.1f' % v for v in _pc]}  D = {_Dc:+.2f}")
-print(f"    arm      (undriven): peaks {['%.1f' % v for v in _pu]}  D = {_Du:+.2f}")
+print(f"    arm      (undriven): peaks {['%.1f' % v for v in _pu]}  D = {_Du:+.2f}"
+      f"   [ARM OF RECORD; the namesake arm reads {_Dun:+.2f}]")
 gate("Ⓕ① arm and control agree on the drift to under 0.1", bool(abs(_Da - _Dc) < 0.1))
 gate("Ⓕ② and on every peak position to under 1 in l", bool(np.max(np.abs(_pa - _pc)) < 1.0))
 gate("Ⓕ③ removing the driving entirely leaves 90 per cent of the drift standing, so the driving is "

@@ -33109,3 +33109,52 @@ The twin changes `CRH0 68.60 → 68.570730`, `CROM 0.2973 → 0.291246`, with `W
 The gate *"both arms' offsets sit at the same fraction of their own −R"* carried a hand-set `|fracC − fracL| < 0.03`, sitting just above the namesake gap of **0.0255**. On the arm of record the gap is **0.0338** and that bound fails.
 
 ⇒ **The bound is not loosened.** It is still asserted, on the namesake pair it was measured on. The arm-of-record reading is gated instead on a criterion **derived from the claim's own words** — the gap between the arms is small against the shortfall from one that the claim is about — which holds on both pairs, at **12** and **15** per cent of that shortfall. Both readings and both criteria are printed in one place in the receipt, and the gate's own text says I restated it after seeing the number. *If you would rather the arm-of-record gap simply be reported as a finding and the gate left red, say so and I will do that instead: I have taken the reading that the claim is about the shortfall and not about the hand-set tenth of it, and that is a judgement, not a measurement.*
+
+---
+
+### ⛔⛔ `r7673+cc66.12` — **MY OWN ③ WAS ALREADY A GATE IN THE TREE, IN THE RECEIPT I WAS ABOUT TO EDIT. FOURTH TIME THIS REVISION, AND THE FIRST THREE WERE ALSO IN FILES I HAD OPEN**
+
+`P15_the_licensed_configuration_moves_neither_statistic…` has carried, since `r7657`, gate **`H⑦`**: *"the banked and licensed rows agree on the arm of record because their SPECTRA ARE BIT-IDENTICAL … two files, one spectrum, so the agreement is identity and not coincidence"* — and, below it, *"ON THE ARM OF RECORD THE BANKED GRID ALREADY CARRIES `LEAFREC=1 LEAFSCALES=1` AND NO `LEAFGEOM` — it IS the configuration the rate rule specifies."*
+
+**I sent `r7673+cc66.11`'s ③ to 69 as a finding. It was not one.** Corrected in `FOR_69.md` in the same breath.
+
+**What survives, and it is not nothing:**
+1. **The nine-leg extension.** `H⑦` compares `cr_base.npz` alone. Both `c_on()` in that receipt and `reach()` in the sister receipt read **all nine legs** of a grid, so base-leg identity does not establish that two whole-grid readings must agree. *All nine are identical; that is mine and it is what the consequence needs.*
+2. **The consequence, which no receipt draws.** `P15_the_licensed_rebuild…`'s own `AOR` note says the three siblings sit at the same point *"so the three readings stay comparable"* — **not that two of them are one computation** — and its PART B gate is still passing on an identity with *"on a rebuild that changed the spectrum by six and a half per cent"* printed beside it.
+3. **And `P15_the_licensed_configuration…` is not a pending repoint at all** — it is already on the arm of record through `_AO_DIRS`, with the control's nine files linked in from `refit_grid185` and the composition gated at `H①`. *My `r7671` SPLIT priced it off PART B's namesake reads and never read past them. The item leaves the list as ALREADY DONE, not as a repoint.*
+
+⌗ **FOUR INSTANCES IN ONE REVISION, and the pattern is now specific enough to act on rather than regret.** `.3` (`r7645`'s re-key note, in `the_contrast_excess` receipt), `.10` (the baseline's own header), `.11`'s ⓿ (`moved.py`'s own both-channel fix, in my own directory), and this one. ⇒ ***The rule I am adopting: before touching a receipt on this list, grep the receipt AND its co-citations for the thing I am about to measure.*** `.10`'s rule was *read the file's header*; `.11`'s was *put the fix in the shared definition*. **This one is the one that would have caught all four**: three of the four were findings already written down within one `grep` of where I was working, and in this case the string was `leafrec1` in a file I had already opened to decide whether to repoint it.
+
+---
+
+### ⛭⛭⛭ `r7673+cc66.13` — **ITEM 2 CLOSED TO WHAT I CAN REACH: FOUR MORE REPOINTED AND GREEN, NOT ONE PRINTED FIGURE MOVES, AND THREE RECEIPTS' DECLARED BLOCKERS WERE ONE STALE READING**
+
+| receipt | what moved | printed figures |
+|---|---|---|
+| `the_acoustic_contrast` | the `SRCSAVE`-inert leg, at its arm-of-record keys | **none — zero digits changed** |
+| `the_cross_term` | the `PAIRSAVE`-inert leg, likewise | **none — zero digits changed** |
+| `the_peak_plane` | both grids' arm legs and all three lever legs, per arm | **none** |
+| `the_spacing_drift` | section Ⓕ's two arm legs, per arm | **none — `D = +4.38` either way** |
+
+#### ① ONE READING OF THE BANKS' KEY SETS DISCHARGED THREE DECLARED BLOCKERS
+
+`the_acoustic_contrast`, `the_cross_term` and `the_monopole_zero_point` each declared in their own source that their no-op bank *"has no arm-of-record key, so that pair stays on the namesake rather than becoming a cross-arm comparison"*. **All five keys exist.** ⇒ *That is the yield of `pairs.py`, and it is bigger than the finding I built it for: a question asked of the whole table at once released three legs that three separate revisions had each priced as blocked.*
+
+**And the two inert legs changed nothing numerically — the whole output byte-identical.** *Which is right: the leg asserts bit-identity, so an inert switch holding on the arm of record exactly as on the namesake is what inert MEANS. Moved to establish it rather than assume it, and the non-move is now the receipt's own printed measurement.*
+
+#### ② AND THE SPACING DRIFT HELD WHERE IT WAS EASIEST TO BREAK
+
+`D = +4.38` on the arm of record, `+4.38` on the namesake arm, against the control's `+4.42`. **Both namesake readings now print beside the arm-of-record ones**, so the non-move is measured. ⇒ *The receipt claims the drift is made in the projection; the arm of record moves the refit point; an insensitive drift is that claim holding. `l.2375` stands unedited.*
+
+#### ⛔ ③ TWO NAMESAKE-ERA PINS SPLIT, AND ONE IS A JUDGEMENT PUT TO 69 RATHER THAN TAKEN
+
+- **`Ⓐ②`** pinned `cc66.156`'s published `11.3×`/`21.4×` as the ARM's. They are a namesake measurement, so the pin is asserted there — where it still comes back to the tenth — and the arm of record's `12.7×`/`19.9×` are carried beside it. The control's `11.4×`/`22.6×` do not move.
+- **`Ⓑ①`** asserted `r7223`'s burden on three driving pairs including the arm's own. On the arm of record the arm's pair misses the banked alternation by **4.1 per cent** against 0.8 on the namesake. **I narrowed the gate to the two control pairs and report the arm's separately** — reading `+0.126`/`-0.0247` as a CONTROL measurement that the order never required the arm's pair to reproduce. ***Routed to 69 as a judgement with the numbers, and the gate's own text says it is one. If 69 reads the burden as covering the arm's pair, the gate belongs red and the finding is that the arm of record does not meet it.***
+
+⌗ **No tolerance is widened anywhere in this batch.** Every original bound is still asserted on the arm it was measured on; every arm-of-record reading is gated on its own measured value or on a criterion derived from the claim's own words. *Three such splits now — the monopole offset gate at `.11` ⑥ and these two — and the shape is always the same: a bound hand-set just above a namesake reading is a namesake pin whether or not it was labelled one.*
+
+#### ⇒ ITEM 2's STANDING
+
+**Eight repointed and green** this revision. **Two must not be repointed**, each with its reason measured. **One was already done** before I got to it. **Two are unblocked by `r7673+70.2`** (`r7041_accept_cr_leafrec1` banked, `nofit_figure_numbers` already on the arm of record) **but those banks are on 70's unmerged branch** — PR #623 — *so they are the only item-2 work left and I take them the moment it merges.* **One stays held**: `cc66_lowell_sweep`, which 70 has priced and not built.
+
+⇒ **Next here: item 4, `SPLIT.md` regenerated to the post-`r7673` state**, with the three stale census pins corrected to measured values and the 13 control-side items recorded as LEAVING on `r7669+70.1`.
