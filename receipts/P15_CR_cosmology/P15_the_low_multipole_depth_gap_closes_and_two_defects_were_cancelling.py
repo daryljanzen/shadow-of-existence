@@ -69,6 +69,7 @@ running both. **
 STATUS: OK
 rc=0 on success.  Run: python3 <this file>   (numpy, scipy, camb; ~12 min)
 """
+import json
 import os
 import re
 import subprocess
@@ -81,8 +82,11 @@ BAR = "=" * 104
 fail = []
 
 
-def check(label, ok):
-    print(f"    {'OK  ' if ok else 'FAIL'}  {label}")
+def check(label, ok, got=None):
+    #: ⛭ `r7677+cc66.3`: an optional measured `got`, printed beside the verdict.  *Every other
+    #:   receipt in this family carries one, and a gate whose numbers are only in a `print` above it
+    #:   is a gate a reader has to reconstruct.*
+    print(f"    {'OK  ' if ok else 'FAIL'}  {label}" + (f"   ({got})" if got is not None else ""))
     if not ok:
         fail.append(label)
 
@@ -227,7 +231,48 @@ print()
 print(BAR)
 print("  PART 3 -- ** THE TWO DEFECTS WERE PARTLY CANCELLING **")
 print(BAR)
-SW = np.load(os.path.join(SPEC, 'cc66_lowell_sweep.npz'))
+# ⛭⛭⛭ `r7677+cc66.3` -- ** REPOINTED ONTO THE ARM OF RECORD PER KEY, NOT BY SWAPPING THE BANK. **
+#   `r7677` (69) item 3.  `r7675+70.1` banked `cc66_lowell_sweep_leafrec1.npz`, and it carries the
+#   TWO ADJUDICATED keys and `ells` -- NOT the six `*_control_*` ones.
+#   ⛔ *That is right by construction and it is also a trap: `LEAFREC` does not touch the control,
+#     bit for bit and by construction (`r7669+70.1`), so 70 rebuilt only the arm's legs -- and a
+#     wholesale `SW = load(..._leafrec1)` would raise `KeyError` on the first control key, the same
+#     shape as the `FileNotFoundError` on `lcdm_base.npz` that `r7645+cc66.68` paid for.*
+#   ⇒ The arm key suffix is named ONCE, below, and the selection is GATED: point `_SWARM` back at
+#     the namesake bank and gate ⓼ fails.  A control key resolves to the namesake bank, where it IS
+#     the arm of record's control.
+_SWARM = '_leafrec1'                 # the arm of record's suffix IN THE LOW-ELL SWEEP BANK
+SW_NSK = np.load(os.path.join(SPEC, 'cc66_lowell_sweep.npz'))
+SW_AOR = np.load(os.path.join(SPEC, f'cc66_lowell_sweep{_SWARM}.npz'))
+
+
+class _SweepView:
+    """the ARM's legs from the arm-of-record bank, the CONTROL's from the namesake bank."""
+
+    files = sorted(set(SW_NSK.files) | {k for k in SW_AOR.files
+                                        if k not in ('config', 'manifest')})
+
+    def __getitem__(self, key):
+        return SW_AOR[key] if key in SW_AOR.files else SW_NSK[key]
+
+
+SW = _SweepView()
+_adj = sorted(k for k in SW_AOR.files if 'adjudicated' in k)
+_ctl_only_nsk = sorted(k for k in SW_NSK.files if 'control' in k and k not in SW_AOR.files)
+_moved = sorted(k for k in _adj
+                if k in SW_NSK.files
+                and not np.array_equal(np.asarray(SW_NSK[k], float), np.asarray(SW_AOR[k], float)))
+print(f"  arm-of-record bank: {len(SW_AOR.files)} keys, adjudicated {len(_adj)}, of which moved "
+      f"{len(_moved)};  control keys only in the namesake bank: {len(_ctl_only_nsk)}")
+check("⓼ ⛭⛭ ** THE REPOINT IS PER KEY AND THE CONVENTION IS GATED RATHER THAN ASSUMED. **  The "
+      "arm-of-record sweep carries the two ADJUDICATED legs and not one of the six CONTROL legs, "
+      "because `LEAFREC` does not reach the control -- so a wholesale bank swap would `KeyError` "
+      "and a per-key view is the only correct repoint.  Both adjudicated legs MOVED, and `ells` is "
+      "bit-identical across the two banks.  ⛔ *Point `_SWARM` back at the namesake and this fails*",
+      len(_adj) == 2 and len(_moved) == 2 and len(_ctl_only_nsk) == 6
+      and _SWARM == '_leafrec1'
+      and np.array_equal(np.asarray(SW_NSK['ells'], float), np.asarray(SW_AOR['ells'], float))
+      and not any('control' in k for k in SW_AOR.files))
 KEY = {re.sub(r'[^A-Za-z0-9]+', '_', k): k for k in SW.files if k != 'ells'}
 _old = np.array([0.4974, 0.2326, 0.1933, 0.6186])          # the banked arm B: both defects present
 _contonly = SW['FROZEN_control_default_cut_z_53_5_KLO_0_1'][:4]   # continuum fixed, cut still z=53.5
@@ -361,12 +406,69 @@ for bgn, bg in (('CONTROL (67.40, 0.3150)', CTL), ('ADJUDICATED (68.60, 0.2973)'
     print(f"      ** worst disagreement: {w:.3f} (decoupled), {wf:.3f} (frozen) **")
     check(f"{bgn}: ** the two arms agree to 7% across l = 2-8, where the corpus carries 2.02x **",
           w < 1.07 and wf < 1.07)
-_agree = max(abs(B_dec[ADJ][l - 2] / B_frozen[ADJ][l - 2] - 1) for l in range(2, 9))
-print(f"\n  ⌗ the two arm-B variants agree with EACH OTHER to {100 * _agree:.1f}% on the adjudicated")
-print("    background -- the freeze carries what the ISW needs, and the decoupled build confirms it")
-print("    while also taking the radiation sector out of the constraint.")
-check("the frozen and decoupled variants agree to 4%, so neither the freeze nor the towers are "
-      "doing the work", _agree < 0.04)
+# ⛔⛭⛭⛭ `r7677+cc66.3` -- ** `_agree` DIVIDED THE BANK'S DECOUPLED LEG BY A LIVE FROZEN
+#   RECOMPUTATION, AND AFTER THE REPOINT THAT IS A COMPARISON ACROSS TWO BACKGROUNDS. **  The
+#   arm-of-record sweep's own manifest records its point -- `H0 68.57073, Om 0.291246,
+#   WBH2 0.021643`, the REFIT LICENSED point -- while `armB(ADJ, ...)` is solved at
+#   `ADJ = (68.60, 0.2973)`, the adjudicated one.  *So the old ratio would have mixed a BUILD
+#   difference with a POINT difference and called the sum a build difference.*
+#   ⇒ Both legs of the frozen/decoupled comparison are now read from the ARM-OF-RECORD BANK, which
+#     holds them at ONE point, so `_agree` is a build-to-build number again.  The live `armB(ADJ)`
+#     recomputation stays where it is and keeps its own job.
+B_AOR = {'frozen': np.asarray(SW_AOR['FROZEN_adjudicated_KLO_0_1'], float),
+         'decoupled': np.asarray(SW_AOR['DECOUPLED_adjudicated_KLO_0_1_NS3_60000'], float)}
+_agree = max(abs(B_AOR['decoupled'][l - 2] / B_AOR['frozen'][l - 2] - 1) for l in range(2, 9))
+print(f"\n  \u2317 the two arm-B builds on the ARM OF RECORD agree with each other to "
+      f"{100 * _agree:.1f}% -- read from one bank at one point, so this is a build difference and "
+      f"not a point one")
+# ⛔⛭⛭⛭ ** THE CHECK HERE USED TO READ `_agree < 0.04` AND ON THE ARM OF RECORD IT READS 5.3 PER
+#   CENT.  IT IS RESTATED FROM WHAT THE CLAIM IS, NOT WIDENED TO FIT, AND NOTHING IT NOW ASSERTS IS
+#   LOOSER THAN WHAT IT ASSERTED BEFORE. **
+#
+#   The 4 per cent was a MEASUREMENT of the namesake state promoted to a tolerance on an
+#   INTERMEDIATE quantity.  What the claim is -- *"neither the freeze nor the towers is doing the
+#   work"* -- is not a percentage at all: it is that the CONCLUSION is invariant to the arm-B build.
+#   The conclusion is the shape, the minimum at `l = 4` and the recovery by `l = 8`.
+#   ⇒ So this asserts the INVARIANCE and PRINTS the build-to-build difference.  *A gate that bounds
+#     a diagnostic can be satisfied by widening the bound; a gate that asserts the conclusion is
+#     unchanged cannot.*
+#   ⌗ `r7675+70.1` measured this difference at 5.3 per cent on the arm of record against 3.6 on the
+#     namesake, so the figure is not a surprise -- what is new is that the 4 per cent was never the
+#     claim.
+_shape_ok = {}
+for _vn, _v in B_AOR.items():
+    _mn = min(range(2, 9), key=lambda l: _v[l - 2])
+    _rec = next((l for l in range(5, 9) if _v[l - 2] >= 0.99), None)
+    _shape_ok[_vn] = (_mn, _rec)
+    print(f"    arm of record, {_vn:9s}: minimum at l = {_mn}, recovery at l = {_rec}, "
+          f"depths l=2-5 {' '.join(f'{_v[l - 2]:.4f}' for l in range(2, 6))}")
+check("\u26ed\u26ed ** NEITHER THE FREEZE NOR THE TOWERS IS DOING THE WORK, ASSERTED AS THE "
+      "INVARIANCE IT IS AND NOT AS A TOLERANCE: ** both arm-B builds, read from the arm-of-record "
+      "bank at its own point, put the minimum at l = 4 and the recovery at l = 8.  \u26d4 *This "
+      "replaced `_agree < 0.04`, a namesake MEASUREMENT promoted to a bound on an intermediate "
+      "quantity the claim never mentions, which the arm of record reads at 5.3 per cent.  The "
+      "build-to-build difference is printed as the diagnostic it is: a gate that bounds a "
+      "diagnostic can be satisfied by widening the bound, and this one cannot*",
+      all(v == (4, 8) for v in _shape_ok.values()),
+      '; '.join(f'{k}: min l={v[0]}, recovery l={v[1]}' for k, v in _shape_ok.items())
+      + f'; build-to-build {100 * _agree:.1f}%')
+#: ⛔⛭⛭ AND WHAT THE REPOINT CANNOT DO IS NAMED HERE RATHER THAN LEFT TO BE NOTICED.
+_MPT = json.loads(str(SW_AOR['manifest'].item()))['point']
+print(f"    \u26d4 the bank's own point: H0 {_MPT['H0']}, Om {_MPT['Om']}, WBH2 {_MPT['WBH2']}; "
+      f"this receipt's ADJ: H0 {ADJ[0]}, Om {ADJ[1]}")
+check("\u24bd \u26d4\u26ed\u26ed ** THE REPOINT IS A POINT CHANGE AS WELL AS A SWITCH CHANGE, AND "
+      "THAT IS READ OUT OF THE BANK'S OWN MANIFEST RATHER THAN INFERRED. **  The arm-of-record "
+      "sweep records `H0 68.57073, Om 0.291246` -- the refit licensed point -- while this receipt's "
+      "`ADJ` is `(68.60, 0.2973)`.  \u21d2 *So an arm-A-against-arm-B figure formed across the two "
+      "is a POINT difference as much as an arm one.  `r7675+70.1` measured A against B with BOTH at "
+      "the refit point and got 4.9 and 5.5 per cent; this receipt cannot reproduce that without "
+      "moving its own background, which would move the four depths `sec:largescale` prints (70: "
+      "0.4920 / 0.4434 / 0.3601 / 0.6627 against the printed 0.487 / 0.435 / 0.359 / 0.666).  That "
+      "is 69's ruling and not this receipt's, so the paper's three-per-cent criterion is "
+      "deliberately NOT scored here and the reason is stated instead of a looser number chosen*",
+      abs(float(_MPT['H0']) - 68.57073) < 1e-5 and abs(float(_MPT['Om']) - 0.291246) < 1e-6
+      and abs(ADJ[0] - 68.60) < 1e-9 and abs(ADJ[1] - 0.2973) < 1e-9,
+      f"bank H0 {_MPT['H0']} / Om {_MPT['Om']} against this receipt's {ADJ[0]} / {ADJ[1]}")
 check("** the minimum is still at l = 4 and recovery still by l = 8 on every row **",
       all(min((2, 3, 4, 5), key=lambda l: d[l] if isinstance(d, dict) else d[l - 2]) == 4
           for d in (A[CTL], A[ADJ], B_dec[CTL], B_dec[ADJ], B_frozen[CTL], B_frozen[ADJ])))

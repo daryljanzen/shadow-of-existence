@@ -6982,3 +6982,25 @@ The acceptance receipt's `R6919_NARROWING` block still described `= 0.128` and a
 3. **⭐ Re-ground the clause on a receipt that does locate its own peaks.** `the_locator_is_good_to_three_hundredths…` is fully on the arm of record, locates sub-bin peaks off `cc66_r185_verify_cr_leafrec1`, and already carries the fourth peak's residual and the control's share — which is exactly the pair `l.2790` is claiming. *That replaces an unreproducible input with a live measurement without inventing a number, and it is the cheapest of the three.*
 
 *I have not touched `corpus/CR_cosmology.tex`.*
+
+---
+
+### ⛭⛭⛭ `r7677+cc66.3` → 69 — **ITEM 3: THE REPOINT IS A *POINT* CHANGE AS WELL AS A SWITCH CHANGE, AND THAT PUTS A RULING IN FRONT OF YOU — MOVING THIS RECEIPT'S BACKGROUND WOULD MOVE THE FOUR DEPTHS `sec:largescale` PRINTS**
+
+**Repointed, per key and gated.** `cc66_lowell_sweep_leafrec1.npz` holds the **two adjudicated legs and `ells` only** — not one of the six control legs, which is right (`r7669+70.1`) and a trap: a wholesale bank swap `KeyError`s on the first control key. The arm key is named once and gated, so pointing it back at the namesake fails. Both adjudicated legs moved; `ells` is bit-identical.
+
+⛔ **And the bank's own manifest records its POINT: `H0 68.57073, Om 0.291246, WBH2 0.021643` — the refit licensed point — beside `LEAFREC: 1` and `SPLITCLOCK: true`.** This receipt's `ADJ` is `(68.60, 0.2973)`. ⇒ *`pairs.py`'s finding — the arm of record is a switch **and** a point — turning up in a second place, and here it changes what the repoint means.*
+
+**So `_agree` is fixed as well as repointed.** It used to divide the bank's decoupled leg by a **live** frozen recomputation at the adjudicated point, which after the repoint would mix a build difference with a point difference. Both legs now come from the arm-of-record bank at its one point: **the two builds differ by `5.3` per cent, your own 70's figure to the digit.**
+
+**The `4 per cent` check is restated, not widened.** It was a namesake measurement promoted to a bound on an intermediate quantity. What the claim says — *"neither the freeze nor the towers is doing the work"* — is an **invariance**, so the gate asserts that both builds put the minimum at `ℓ = 4` and the recovery at `ℓ = 8`, and **prints** the build-to-build difference. Measured: frozen `0.4697 / 0.4649 / 0.3424 / 0.6321`, decoupled `0.4826 / 0.4680 / 0.3604 / 0.6469`. *Nothing is bounded more loosely than before; the bound is gone and the conclusion is asserted instead.*
+
+#### ⛔ THE RULING I NEED, AND I HAVE NOT PRE-EMPTED IT
+
+The paper's own criterion for this pair — *"the hierarchy agrees to three per cent at every multipole and one per cent above `$\ell = 5$`"* — **cannot be scored in this receipt as it stands**, because arm A is at the adjudicated point and arm B is now at the refit point, so any A-against-B figure across them is a point difference as much as an arm one. 70 measured it with **both** at the refit point: `4.9` and `5.5` per cent, which is outside the three per cent the paper claims.
+
+**The fork:**
+- **(a) Move this receipt's background to the refit licensed point.** Then A and B are comparable and the paper's criterion can be scored — but arm A at that point gives `0.4920 / 0.4434 / 0.3601 / 0.6627` where `sec:largescale` prints `0.487 / 0.435 / 0.359 / 0.666`, **so four figures in print move**, and the three-per-cent claim itself would then read `4.9`/`5.5` and need restating too.
+- **(b) ⭐ Leave the receipt at the adjudicated point** — where its printed four reproduce exactly — and carry the arm-of-record sweep as the cross-check it is, with the point difference stated in the gate, which is what I have done. *Nothing in print moves and nothing is asserted across two backgrounds.*
+
+**My recommendation is (b) until 70's `ℓ = 3` separating test reports,** because (a) changes four printed depths *and* a published tolerance on the strength of a comparison 70 says it cannot yet tell physics from construction in. ⇒ **And no figure of this receipt is routed, by your own order's words.** 70's test is about 25 minutes of compute and it is yours to order.

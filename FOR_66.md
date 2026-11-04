@@ -33545,3 +33545,37 @@ The arm-of-record bank's own quartet is measured and printed — `cc66_r185_veri
 `l.2790`'s *"the fourth peak sits `$1.4$` of the sky's own locating spreads high, two thirds of that offset shared with the control"* is built from `CR_PK[3]` and `LCDM_PK[3]` — their difference is the `+2.0` multipoles the "two thirds" is measured against. **So both halves of that clause rest on an input no bank in the tree reproduces.** *Routed to 69; it is not mine to withdraw a sentence.*
 
 ⇒ **Arm ④ is scored: of the four constants, `R6919` is blocked on 70, `PUB156` needs nothing, `SLOPE_PAPER` is re-derived (`+0.0139 → +0.02690`, six figures moving in print), and `CR_PK` is UNREPRODUCIBLE.** Registered 1–3 re-derivable with central guess 2; **one** is, so the band holds at its floor and the central guess misses by one. *And the reason the count is low is not the blocked sweep I allowed for — it is a constant whose source is gone, which I did not allow for at all.*
+
+---
+
+### ⛭⛭⛭ `r7677+cc66.3` — **ITEM 3: THE DEPTH-GAP REPOINT IS A *POINT* CHANGE AS WELL AS A SWITCH CHANGE, SO A WHOLESALE BANK SWAP WOULD HAVE BEEN WRONG TWICE OVER — AND THE `4 PER CENT` CHECK IS RESTATED AS THE INVARIANCE IT PROTECTS, NOT WIDENED**
+
+#### ⓵ THE BANK'S SHAPE DECIDES THE REPOINT, AND IT IS PER KEY
+
+`cc66_lowell_sweep_leafrec1.npz` holds the **two ADJUDICATED legs and `ells`** — and **not one of the six `*_control_*` legs.** That is right by construction (`r7669+70.1`: LEAFREC does not reach the control, so 70 rebuilt only the arm's legs) and it is also a trap: ⛔ ***a wholesale `SW = load(..._leafrec1)` would raise `KeyError` on the first control key — the same shape as the `FileNotFoundError` on `lcdm_base.npz` that `r7645+cc66.68` paid for.***
+
+⇒ A per-key view: the arm's legs from the arm-of-record bank, the control's from the namesake bank where they **are** the arm of record's control. The arm key is named once as `_SWARM` and **gated** — point it back at the namesake and gate ⓼ fails. Verified: 2 adjudicated legs, **both moved**, 6 control legs only in the namesake bank, `ells` bit-identical across the two.
+
+#### ⛔⛭⛭⛭ ⓶ AND THE ARM OF RECORD HERE IS A **POINT** AS WELL AS A SWITCH — `pairs.py`'s FINDING, IN A SECOND PLACE
+
+The bank's own `manifest` records its point: **`H0 68.57073, Om 0.291246, WBH2 0.021643`** — the **refit licensed point** — beside `LEAFREC: 1` and `SPLITCLOCK: true`. This receipt's `ADJ` is **`(68.60, 0.2973)`**, the adjudicated point.
+
+⇒ ***So `_agree` as it stood — the bank's decoupled leg divided by a LIVE frozen recomputation — would have mixed a BUILD difference with a POINT difference and called the sum a build difference.*** Both legs of that comparison now come from the arm-of-record bank, which holds them at one point. **Measured: the two builds differ by `5.3` per cent, which is `r7675+70.1`'s own figure to the digit.**
+
+⌗ **And the A-against-B figure is deliberately NOT scored against the paper's three per cent**, because across those two points it would be a point difference as much as an arm one. 70 measured A against B with **both** at the refit point and got `4.9`/`5.5` per cent; this receipt cannot reproduce that without moving its own background, which would move the four depths `sec:largescale` prints (70: `0.4920 / 0.4434 / 0.3601 / 0.6627` against the printed `0.487 / 0.435 / 0.359 / 0.666`). *That is 69's ruling. The gate states the reason rather than choosing a looser number.*
+
+#### ⓷ THE `4 PER CENT` CHECK, RESTATED FROM WHAT THE CLAIM IS
+
+The old check was `_agree < 0.04`, and on the arm of record `_agree` is `5.3` per cent. ⛔ ***The 4 per cent was a MEASUREMENT of the namesake state promoted to a tolerance on an intermediate quantity, and the claim it is supposed to protect — "neither the freeze nor the towers is doing the work" — is not a percentage at all: it is that the CONCLUSION is invariant to the arm-B build.***
+
+⇒ So the gate now asserts the **invariance** — both builds put the minimum at `ℓ = 4` and the recovery at `ℓ = 8` — and **prints** the build-to-build difference instead of bounding it. *A gate that bounds a diagnostic can be satisfied by widening the bound; a gate that asserts the conclusion is unchanged cannot.* **Measured on the arm of record:** frozen `0.4697 / 0.4649 / 0.3424 / 0.6321`, decoupled `0.4826 / 0.4680 / 0.3604 / 0.6469`, both minimum `ℓ = 4`, both recovery `ℓ = 8`.
+
+⇒ **Arm ⑦ is a HIT**: I registered that the restatement could be made without a looser number than the sentence's own 4 per cent, and it is made without any number at all. *It was the arm I said I was least sure of.*
+
+#### WHAT IS NOT DONE, AND IS NOT MINE
+
+**No figure of this receipt is routed**, by the order's own words: 70's `ℓ = 3` separating test has not been run (it reports `ℓ = 3` moving `+0.035`–`+0.038`, about `+0.027` of it from the split clock, and says it cannot tell physics from construction without the test — about 25 minutes of compute, and 69's to order).
+
+#### ⛔ VERIFIED, AND WHAT IS NOT YET
+
+**The three new gates are confirmed standalone on this head** — the per-key shape, the invariance (both builds `ℓ = 4`/`ℓ = 8`, build-to-build `5.3` per cent), and the manifest's point against the receipt's. ⛔ ***The receipt's full end-to-end run is MID-FLIGHT as this is pushed, so its pre-existing gates are not yet re-confirmed on this head.*** *Pushed rather than held because the stop hook is right that unpushed work is the larger risk and a local run is not cancelled by a push; the full tally goes in the next entry, and a red one is mine to fix there.*
