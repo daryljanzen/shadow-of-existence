@@ -1,4 +1,17 @@
 # BASELINE of marker-transposition flags -- r7069+70 (node 70).  Data, not code.
+# r7677+cc66.8: ONE ROW REMOVED, 65 -> 64 -- `CR_cosmology.tex` `43.96`, own group
+#   `P15_a_source_with_no_physics...`, carrier `P15_the_monopole_zero_point...`.  The gate reported
+#   it STALE: the flag no longer fires.
+# ⛭⛭ WHY IT STOPPED FIRING, which is the part worth recording: the row's verdict was *not a
+#   transposition -- the carrier rounds*, adjudicated by 69 at r7677 on the reading that `a_source`
+#   computes 43.957 and the paper prints it to two decimals.  ** r7677+cc66.1 then PINNED that digit
+#   in `a_source` itself (`CHI_ARM_MPC_IN_PRINT = 43.96`), so the own group now carries the printed
+#   number and there is nothing left to adjudicate. **  ⇒ *The pin did not hide the flag, it fixed
+#   the site: the number is now asserted where it is computed, which is the thing this gate is
+#   about.  A fixed site left in the baseline is a silent permission to regress there (r7069), so
+#   the row goes.*
+# Removed BY HAND and verified by SET COMPARISON -- exactly this row gone, no row added, 64 against
+#   the gate's own measured 64 flags.
 # ** A RECORD OF ADJUDICATIONS, NOT A LIST OF EXEMPTIONS (r7069). **  One line per flag:
 #   paper <TAB> own group <TAB> number <TAB> carrier <TAB> verdict <TAB> what was read
 # The gate FAILS on a flag not listed here (new) and on a line here whose flag no longer fires
@@ -100,4 +113,3 @@ CR_cosmology.tex	P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acous
 CR_cosmology.tex	P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number	220.0	P15_the_full_range_refit_holds_the_background_and_the_phase_residual_was_quantised	not a transposition -- the own group carries the UNROUNDED value and the paper rounds	r7655 (69): l.882's matched-locator positions are computed and pinned in the closing receipt's PART 4B at two decimals (220.03, the arm of record), which the paper prints to one; the named carrier holds 220.0 as a different quantity
 CR_cosmology.tex	P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number	220.0	P15_the_line_of_sight_transfer	not a transposition -- the own group carries the UNROUNDED value and the paper rounds	r7655 (69): l.882's matched-locator positions are computed and pinned in the closing receipt's PART 4B at two decimals (220.03, the arm of record), which the paper prints to one; the named carrier holds 220.0 as a different quantity
 CR_cosmology.tex	P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number	220.0	P15_the_refit_leaves_the_background_where_the_distances_put_it_and_does_not_close_the_phase	not a transposition -- the own group carries the UNROUNDED value and the paper rounds	r7655 (69): l.882's matched-locator positions are computed and pinned in the closing receipt's PART 4B at two decimals (220.03, the arm of record), which the paper prints to one; the named carrier holds 220.0 as a different quantity
-CR_cosmology.tex	P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_the_visibility	43.96	P15_the_monopole_zero_point_is_not_the_channel_and_the_two_residuals_point_opposite_ways	not a transposition -- the carrier rounds	r7677 (69): the cited a_source receipt computes the arm comoving distance across the visibility as 43.957 Mpc and the paper prints it to two decimals beside 38.04; the monopole receipt carries the same 43.9573 by a second route (r7673+cc66.11)
