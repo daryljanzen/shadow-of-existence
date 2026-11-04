@@ -1,0 +1,91 @@
+{
+ "recipe": "ARM=lcdm HIER=1 LH0=67.410309 LMAXL=2000 LOM=0.309826 LSTEP=1 NS=0.954248 WBH2=0.021966 (r6941_directions/launch.sh fine_lcdm), KSLICE 250 x 11 over NK 2547",
+ "tolerance_identical": 1e-15,
+ "config_diff_lr0_vs_lr1": {
+  "LEAFREC": [
+   false,
+   true
+  ]
+ },
+ "lr1_vs_lr0": {
+  "max_rel_Dl": 0.0,
+  "bit_identical_Dl": true,
+  "ls_equal": true,
+  "scalars": {
+   "l_A": [
+    301.54271387763947,
+    301.54271387763947
+   ],
+   "D_M": [
+    13954.353505619329,
+    13954.353505619329
+   ],
+   "r_s": [
+    145.38203856796778,
+    145.38203856796778
+   ]
+  },
+  "per_slice_max_rel": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ]
+ },
+ "lr0_vs_namesake": {
+  "max_rel_Dl": 0.0,
+  "bit_identical_Dl": true,
+  "ls_equal": true,
+  "scalars_namesake": {
+   "l_A": 301.54271387763947,
+   "D_M": 13954.353505619329,
+   "r_s": 145.38203856796778
+  }
+ },
+ "lr1_vs_namesake_max_rel_Dl": 0.0,
+ "wall": {
+  "lr0": {
+   "per_slice_s": [
+    180,
+    354,
+    643,
+    1018,
+    1492,
+    1877,
+    1903,
+    1917,
+    1927,
+    1952,
+    390
+   ],
+   "sum_s": 13653,
+   "max_s": 1952
+  },
+  "lr1": {
+   "per_slice_s": [
+    179,
+    359,
+    650,
+    1032,
+    1527,
+    1927,
+    1960,
+    1976,
+    1988,
+    1977,
+    402
+   ],
+   "sum_s": 13977,
+   "max_s": 1988
+  }
+ },
+ "verdict": "IDENTICAL (bit for bit)",
+ "banked": "spectra/r6941_fine_lcdm_leafrec1.npz"
+}

@@ -42,6 +42,30 @@ def sha(a):
     return hashlib.sha256(np.ascontiguousarray(a).tobytes()).hexdigest()
 
 
+def _acc(job):
+    """acceptance() per configuration, cached to disk so a restart resumes rather than recomputes"""
+    lr, arm, t, ls = job
+    c = f'{D}/lr{lr}/acc_{arm}_{t}.npz'
+    if not os.path.exists(c):
+        A, wd, _, RS, _, _ = acc.acceptance(f'{D}/lr{lr}/grid/g_{arm}_{t}.npz', ls)
+        np.savez(c + '.tmp.npz', A=A, wd=wd, RS=RS)
+        os.replace(c + '.tmp.npz', c)
+    z = np.load(c)
+    return (lr, arm, t), (z['A'], z['wd'], float(z['RS']))
+
+
+def _ls(lr, arm):
+    lA = float(np.load(f'{D}/lr{lr}/grid/g_{arm}_base.npz')['l_A'])
+    return np.unique(np.round(np.linspace(acc.LO, acc.HI, acc.NL) * lA).astype(int))
+
+
+if __name__ == '__main__':
+    from multiprocessing import Pool
+    _jobs = [(lr, arm, t, _ls(lr, arm)) for lr in (0, 1) for arm in ('cr', 'lcdm') for t in TAGS]
+    with Pool(int(os.environ.get('NPROC', '4'))) as _p:
+        ACC = dict(_p.map(_acc, _jobs, chunksize=1))
+
+
 def build(lr):
     """-> the four banks' dicts for build lr, in the namesake's key layout"""
     dig, Al, sample, sl = {}, {}, {}, {}
@@ -54,7 +78,7 @@ def build(lr):
             for q in KEYS:
                 dig[f'{arm}_{t}_{q}'] = sha(gd[q])
             dig[f'{arm}_{t}_r_s'] = f"{float(gd['r_s']):.17g}"
-            A, wd, _, RS, nk, nlos = acc.acceptance(g, ls)
+            A, wd, RS = ACC[(lr, arm, t)]
             Al[f'{arm}_{t}_A'], Al[f'{arm}_{t}_wd'], Al[f'{arm}_{t}_ls'] = A, wd, np.asarray(ls)
             Al[f'{arm}_{t}_n'] = np.array([int(gd['n_modes']), int(gd['nlos'])])
             Al[f'{arm}_{t}_span'] = np.array([float(np.nanmean(2 * RS * wd))])
