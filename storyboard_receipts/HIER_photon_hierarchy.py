@@ -80,6 +80,18 @@ if _ARM == 'cr':
     Hub=lambda a: H0*np.sqrt(Om/a**3+OL)              # STACKING rate: radiation-free
 else:
     Hub=lambda a: H0*np.sqrt(Or_content/a**4+Om/a**3+OL)   # LEAF rate: content-carrying (r2115)
+# ⛭ r7675+70: SPLITCLOCK=1 -- THE ARM OF RECORD'S TWO CLOCKS ON THIS BRANCH, at 69's r7675 order.
+#   With ARM unset this file runs ONE rate for everything; ARM=cr runs the other one for everything.
+#   Neither is the arm of record (ACOUSTIC_two_arm.py, LEAFGEOM unset, LEAFREC=1): there the conformal
+#   time grid and the projection distance are on the STACKING rate, and the ionisation history is
+#   solved on the LEAF rate.  SPLITCLOCK=1 (ARM unset only) does exactly that: `Hub` below becomes the
+#   radiation-free stacking rate, so eg / Hc_of / eta_onset / rs_f / DM follow it, and `_Hrec` keeps the
+#   content-carrying leaf rate for `xe_history`.  Content fractions and the branch's initial data are
+#   unchanged.  UNSET = byte-identical: `_Hrec` is then the same function object as `Hub`.
+_SPLIT = os.environ.get('SPLITCLOCK', '0') == '1' and _ARM != 'cr'
+_Hrec = Hub
+if _SPLIT:
+    Hub = lambda a: H0*np.sqrt(Om/a**3+OL)                 # STACKING rate: the grid and the projection
    # *** omega_r is FIXED by T_CMB; Omega_r = omega_r/h^2.  The old
                                  # form had BOTH scaling factors inverted, giving z_eq=2905 where
                                  # omega_m/omega_r gives 3936 -- 37% too much radiation (r1989). ***
@@ -208,7 +220,7 @@ def modes_all(kk):
 # ================= the ionisation history (shared with r_D and the visibility) =================
 from RD_diffusion_direct import xe_history, n_H0_of, sigT, Mpc_m, xe_total
 _Yp = 0.2454
-_zg, _xeg = xe_history(lambda z: Hub(1/(1+z))*1e3/Mpc_m, ombh2, _Yp, z_hi=3000.0, z_lo=80.0, n=6000)
+_zg, _xeg = xe_history(lambda z: _Hrec(1/(1+z))*1e3/Mpc_m, ombh2, _Yp, z_hi=3000.0, z_lo=80.0, n=6000)
 _nH0 = n_H0_of(ombh2, _Yp)
 _XEF = float(os.environ.get('XEF','1.0'))   # scale the frozen-out residual tail (test r2124)
 _HE = os.environ.get('NOHE','0') != '1'
