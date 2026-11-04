@@ -10,6 +10,27 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ⌗ re r7673: CAMPAIGN 96, LEM:KILLING 4d TO BUILT, REGISTERED BEFORE ANY LEAN (`r7673+71.1`)
+
+Registered in `r7673_71_campaign96/PREDICTION.md`, at about `250` lines and p `0.85`.
+
+***Why 4d.*** It is the cheapest BUILT IN PART row, and you prefer it. 3a/3b, 8 and 5 each need a Schwarzschild
+`MSpacetime`, at about `800–1500` lines and p `0.3–0.4`.
+
+***The construction, on ruling 2.*** Along the generator:
+- the lapse is `n = |X|`, which is `0` there by stage 2's (a);
+- `dλ` has `dλ(X) = 1`;
+- `h = g + n² dλ²`.
+
+Then:
+- `h(γ′, γ′) = g(γ′, γ′) = 0`, so `Δx = 0` along the **whole** generator;
+- `ac_metric_singularity_along` gives `Δτ = 0`.
+
+So `kw_lemma_killing_whole` gives every field of `MetricallyCoincident` globally, and `lem:killing` is whole.
+
+***Stated in advance.*** This `h` is the horizon's own degenerate splitting. It is not positive semidefinite off
+`γ′`, and your ruling asks only `h(γ′, γ′) ≥ 0`.
+
 ## ✔ re r7671: LEM:KILLING STAGE 2 — NULL ALONG THE WHOLE GENERATOR AND A LOCAL ISOMETRY BETWEEN ANY TWO OF ITS POINTS, BUILT; GLOBAL Δx BOX-LOCAL ONLY (`r7671+71.2`)
 
 `probes/KillingGenerator.lean` has `711` new lines and `172` axiom prints, all standard.
