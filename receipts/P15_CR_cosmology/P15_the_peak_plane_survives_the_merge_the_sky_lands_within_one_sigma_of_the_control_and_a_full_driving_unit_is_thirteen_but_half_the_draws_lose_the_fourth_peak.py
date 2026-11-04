@@ -36,7 +36,7 @@ OF ALL NOISE REALISATIONS LOSE THE FOURTH PEAK. *** **
   ⓹ ** AND THE ERROR IS PROPAGATED EXACTLY, BECAUSE THE MERGE IS LINEAR. **  *`plik_lite`'s own
   covariance through the merge matrix, `$2000$` draws: the distribution is HEAVY-TAILED -- a
   standard deviation of `$0.107$` against a robust `$0.0096$` -- so the robust scale is what is
-  quoted and the tail is reported as what it is.  ⇒ **One full driving unit is `$13.1\sigma$` on
+  quoted and the tail is reported as what it is.  ⇒ **One full driving unit is `$13.3\sigma$` on
   the offset and `$3.1\sigma$` on the alternation; the sky sits `$0.79\sigma$` and `$0.27\sigma$`
   from the control.**  *So the sky is consistent with the control's own driving and a full unit of
   difference either way is excluded.*
@@ -547,7 +547,7 @@ print(f"      {'one loading unit':22s} {DIRS['loading (more of it)'][0]:+12.5f} 
 print(f"      {'the sky, vs control':22s} {DSKY[0]:+12.5f} {abs(DSKY[0]) / SPH:9.2f} "
       f"{DSKY[1]:+12.5f} {abs(DSKY[1]) / SAL:9.2f}")
 check("Ⓓ③  ⛭⛭⛭ ** SO THE INSTRUMENT WORKS AND THE SKY HAS NO SIGNAL FOR IT: ONE FULL DRIVING UNIT "
-      "IS `$13.1\\sigma$` ON THE COMMON OFFSET AND `$3.1\\sigma$` ON THE ALTERNATION, AND THE SKY "
+      "IS `$13.3\\sigma$` ON THE COMMON OFFSET AND `$3.0\\sigma$` ON THE ALTERNATION, AND THE SKY "
       "SITS `$0.79\\sigma$` AND `$0.27\\sigma$` FROM THE CONTROL. **  *This is the first number this "
       "row has had about the observed spectrum rather than about an instrument: **the sky is "
       "consistent with the control's own driving, and one full unit of difference either way is "

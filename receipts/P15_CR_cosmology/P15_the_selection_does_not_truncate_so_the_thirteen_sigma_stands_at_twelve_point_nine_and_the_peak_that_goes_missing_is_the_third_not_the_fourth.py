@@ -558,13 +558,37 @@ print(f"        the paper prints, read out of corpus/CR_cosmology.tex: "
 #:     neither route produces would be no check at all.  ⌗ **This is not a loosened tolerance: it is
 #:     this gate's own established convention, applied to the second figure that now needs it, and
 #:     the pending edit is named in `FOR_69.md` rather than absorbed here.**
+#: ⛭⛭ `r7675+cc66` ⓸: ** THE DIGIT l.2283 PRINTS, STATED AS A VALUE SO THE GATE CAN SEE A PIN. **
+#:   `check_figures_pinned`'s `pins()` extracts the VALUE on one side of a comparison and needs it to
+#:   be a literal or a module constant; a value this receipt COMPUTES, and a regex that finds the
+#:   paper's digit, are both invisible to it -- which is the corpus rule "a regex that merely finds
+#:   its digits is not a pin" seen from the gate's side.  *Collapsing the either-state branch was
+#:   necessary and not sufficient: I measured 1478 before and after it, unchanged.*
+#:   ⇒ *** BOTH DIRECTIONS ARE NOW ASSERTED, which is stronger than either alone: if THIS RECEIPT's
+#:   computation drifts off the printed digit the constant comparison fails, and if THE PAPER is
+#:   edited away from it the paper-read comparison fails. ***
+#:   ⌗ This is NOT item 5's class, and the difference is the whole of why it is allowed: item 5's
+#:   constants carry a MEASUREMENT taken at another revision into a gate, where this one states a
+#:   DIGIT THE PAPER PRINTS TODAY and is checked against this revision's own computation.
+N_AT_LOW_END_IN_PRINT = 12.6
 _N_FROM_PAPER = round(N_LO, 1)
+# ⛭⛭⛭ `r7675+cc66`, answering `r7675` ⓸: ** THE EITHER-STATE BRANCH IS COLLAPSED, BECAUSE 69 HAS
+#   LANDED THE ARM OF RECORD'S DIGIT. **  `r7673+cc66.9` accepted EITHER the namesake `12.5` or the
+#   arm's `12.6` and PRINTED which, on the ground that a printed digit is 69's to correct and the
+#   receipt should not fail on an edit it does not own.  ** 69 made that edit at `r7675`: l.2283 now
+#   reads `12.6`. **  So the disjunction has done its job and is now the thing stopping this figure
+#   from being pinned: a gate that passes on either digit cannot fail on a wrong one, which is
+#   exactly what `check_figures_pinned` counts as unpinned.
+#   ⇒ *** ONE BRANCH, AND IT FAILS IF THE PAPER EVER CARRIES THE NAMESAKE DIGIT AGAIN. ***  That is
+#   the point of collapsing it rather than widening the tolerance: the namesake reading is now a
+#   REGRESSION to be caught, where before it was a pending edit to be reported.
 _N_STATE = ('the arm of record, 12.6' if _M2285 is not None
-            and abs(float(_M2285.group(2)) - _N_FROM_PAPER) < 5e-2
-            else 'the NAMESAKE still in print, 12.5 -- an edit owed to 69' if _M2285 is not None
-            and abs(float(_M2285.group(2)) - 12.5) < 5e-2 else None)
+            and abs(float(_M2285.group(2)) - _N_FROM_PAPER) < 5e-2 else None)
+_N_WAS_NAMESAKE = (_M2285 is not None
+                   and abs(float(_M2285.group(2)) - 12.5) < 5e-2)
 print(f"        one driving unit at that end is {N_LO:.2f} sigma on the arm of record, printing as "
-      f"{_N_FROM_PAPER:.1f}; the paper prints {_M2285.group(2) if _M2285 else '?'} -> {_N_STATE}")
+      f"{_N_FROM_PAPER:.1f}; the paper prints {_M2285.group(2) if _M2285 else '?'} -> {_N_STATE}"
+      + ("  ⛔ REGRESSION: the paper carries the NAMESAKE 12.5 again" if _N_WAS_NAMESAKE else ""))
 _SKY_FROM_ROUNDED = round(round(NSKY_PRINTED, 2) * BLO, 2)
 _SKY_FROM_EXACT = round(NSKY_LO, 2)
 _SKY_STATE = ('the published 0.79 rounded first' if _M2285 is not None
@@ -586,6 +610,7 @@ check("Ⓔ③  ⛭⛭⛭ ** AND l.2283-2284's `$0.953$`, `$12.5$` AND `$0.75$` A
       "is in is PRINTED above, because a printed digit is 69's to correct*",
       _M2285 is not None
       and abs(float(_M2285.group(1)) - round(BLO, 3)) < 5e-4
+      and abs(_N_FROM_PAPER - N_AT_LOW_END_IN_PRINT) < 5e-2
       and _N_STATE is not None
       and _SKY_STATE is not None
       and SIG_LO > SIG_CORR and N_LO < N_CORR and NSKY_LO < NSKY_CORR)

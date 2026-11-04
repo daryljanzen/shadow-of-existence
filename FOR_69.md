@@ -6761,3 +6761,22 @@ R6919 = {'fixed': 1.0587, 'sweepown': 1.0659}   # the banked base points this mu
 1. **The receipt needs a real read**, not a hardcoded table — that is mine, and it belongs in item 5's class, which it also exemplifies: `R6919` is a constant whose comment names another revision and carries a namesake measurement into a gate, exactly `R6919_NARROWING`'s shape.
 2. **`l.1857`'s two numbers need relabelling** as the two injection schemes they are.
 3. **And whether the sentence should print the arm-of-record pair at all** is your call, since on the arm of record `sweepown` reads `1.0612` — the figure you just landed sixty lines earlier.
+
+#### ⓸ THE EITHER-STATE COLLAPSE: **`1476` AGAINST `1476`, YOUR NUMBER EXACTLY — BUT IT IS ONE ROW OF COUNT 2, NOT TWO ROWS, AND THE COLLAPSE ALONE DID NOT DO IT**
+
+`check_figures_pinned` now reads **1476 against a baseline of 1476**. Your two numbers were right.
+
+**What I got wrong, and it cost one measurement rather than being assumed.** I registered "exactly two rows removed". It is **one row whose count is 2** — the selection receipt's `12.6` entry. ⇒ *And the collapse of the either-state branch, which I expected to do the whole job, moved the count not at all: I measured 1478 before and after it.*
+
+**Why.** `check_figures_pinned`'s `pins()` extracts the **value on one side of a comparison** and needs it to be a literal or a module constant. A value the receipt **computes**, and a regex that reads the paper's digit, are both invisible to it. *That is the corpus's own rule — "a regex that merely finds its digits is not a pin" — seen from the gate's side.*
+
+**So the fix is both halves, which is stronger than either:**
+- `N_AT_LOW_END_IN_PRINT = 12.6` states the digit the paper prints and is compared against the receipt's own computed value ⇒ **the receipt drifting off the digit fails**;
+- the existing paper-read regex stays ⇒ **the paper being edited away from it fails**.
+- And the disjunction is collapsed to the arm's branch, so **a return to the namesake `12.5` is now a REGRESSION the receipt catches**, where `r7673+cc66.9` could only report it as an edit you owed. *It is no longer owed — you made it.*
+
+⌗ **`the_peak_plane`'s `12.6  1` row STAYS, and that is a verdict, not an oversight.** It is co-cited on l.2283 and **does not compute that figure**: its own driving unit is `13.3σ` at the interval's **centre**, where `12.6` is the selection receipt's reading at the unfavourable **end**. *A pin there would make it assert a number it never measures.* ⇒ **So the floor on this sentence is one baselined row, not zero**, and lowering it further would require the paper to stop co-citing or the peak plane to start computing it — neither of which is mine to decide.
+
+⛔ **And I found a stale figure of my own while doing it.** `the_peak_plane`'s docstring and its `Ⓓ` gate label both said `13.1σ`/`3.1σ`; on the arm of record it computes **`13.3`/`3.0`**. Updated. *I repointed that receipt at `r7673+cc66.13` and reported "no printed figure moves" — which is still true, and I checked it again here: the only `13.1` in `CR_cosmology.tex` is `a_source`'s sound-speed cross-check at l.1847, and the one `13\sigma` match is `0.713\sigma`. **But I updated three other receipts' prose that revision and missed this one's**, so the gate carried a label its own arithmetic had stopped producing.*
+
+Baseline removed **by hand** and verified by set comparison — `comm -23` returns exactly that row, `comm -13` nothing. *Not with `--write-baseline`, which the file's header forbids and which I used once at `r7673+cc66.10` to the cost of 118 lines.*

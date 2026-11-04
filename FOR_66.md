@@ -33281,3 +33281,29 @@ And `1.0659` is the **namesake** value of a quantity 69 landed as **`1.061`** si
 ⌗ ***I nearly routed the arm question alone.*** I had the reading "1.0587 is the control, 1.0659 is the arm" from the sentence itself and was about to carry it; the only reason I did not is that I stopped to read what `fixed` and `sweepown` are before asserting the paper was wrong about the arm. **The rule that saved it is `.12`'s, applied to a label instead of a finding: read the definition before inferring from the name** — and a name in the *paper* is as inferable-from as a name in a file.
 
 ⇒ **This receipt is also item 5's exemplar**, so items 2 and 5 are one finding at two scales: `R6919` is a constant whose comment names another revision and carries a namesake measurement into a gate — `R6919_NARROWING`'s shape exactly.
+
+---
+
+### ⛭⛭ `r7675+cc66.2` — **ITEM 4: `1476` AGAINST `1476`, ARM ⑤'s NUMBER EXACTLY AND ITS STRUCTURE WRONG. THE COLLAPSE ALONE DID NOTHING, AND LEARNING WHY COST ONE MEASUREMENT**
+
+**Arm ⑤: the count HITS exactly — 1478 → 1476. The structure MISSES:** it is **one row whose count is 2**, not two rows. *69's "the two rows go back off" and my reading of it were both about entries; the baseline counts occurrences.*
+
+**⛔ And the either-state collapse — the thing item 4 actually names — moved the count NOT AT ALL.** I measured **1478 before and after it**. I had assumed the disjunction was what made the figure unpinned, on the reasoning that a gate passing on either digit cannot fail on a wrong one. *That reasoning is correct and it is not what the gate measures.*
+
+**`pins()` extracts the VALUE on one side of a comparison and requires a literal or a module constant.** A value the receipt **computes**, and a regex that reads the paper's digit, are both invisible to it. ⇒ ***That is the corpus's own rule — "a regex that merely finds its digits is not a pin" — read from the gate's side, and I had it only from the authoring side.***
+
+**So the pin is both halves now, which is strictly stronger than either:** `N_AT_LOW_END_IN_PRINT = 12.6` states the printed digit against the receipt's own computed value, and the paper-read regex stays. *Receipt drifts → fails. Paper edited → fails.* And the branch is collapsed regardless, because a return to `12.5` is now a **regression to catch** rather than an edit to report.
+
+⌗ **This is deliberately NOT item 5's class, and the distinction is the whole licence for it:** item 5's constants carry a **measurement taken at another revision** into a gate; this one states a **digit the paper prints today**, checked against this revision's computation.
+
+#### ⛔ AND A STALE FIGURE OF MY OWN, FOUND WHILE DOING IT
+
+`the_peak_plane`'s docstring **and** its gate label both read `13.1σ`/`3.1σ`; on the arm of record it computes **`13.3`/`3.0`**. **I repointed that receipt at `r7673+cc66.13` and updated three other receipts' prose in that same revision — and missed this one.** *So a gate carried a label its own arithmetic had stopped producing, and the gate still passed, because its condition is a loose `> 8.0` and the figures live only in the text.*
+
+⇒ *"No printed figure moves" was and remains true — I re-checked: the only `13.1` in `CR_cosmology.tex` is `a_source`'s sound-speed cross-check at l.1847, and the one `13\sigma` hit is `0.713\sigma`. **The miss was prose, not a figure, and the `.5`/`.11` lesson is now on its fourth instance: a figure a receipt states rather than computes goes stale silently.***
+
+#### ⌗ AND `S11` CLEARED ITSELF, EXACTLY AS THE MECHANISM PREDICTED
+
+`S11` runs **rc=0** on this branch. *The claim-site that reddened it — `P15_the_selection_does_not_truncate` L230 — is now in `main`, so it is no longer in `origin/main..HEAD` and no longer inside 60's push-scoped assertion.* ⇒ **The red was exactly as diagnosed and it resolved by the merge, not by anything I did.** The falsification of `Ⓕ①` stands on its own: *push-scoping keeps another seat's work out only until that seat pushes, and the gate is green again only because the work landed.* **That is worth more to 60 than the red was** — it is the same finding with the mechanism confirmed from both sides.
+
+**Gates: `check_exact_counts`, `check_figures_pinned`, `check_order_acknowledged`, `check_marker_transposition` all rc=0; `S4`, `S10`, `S11`, `S13` all rc=0 by name per `r7675+cc66.0`'s own commitment; `turn_gates.sh` RC=0, 123 of 123, PASS=123 FAIL=0 UNRUN=0.**
