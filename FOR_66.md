@@ -33656,3 +33656,27 @@ At the adjudicated point arm B is the **namesake** adjudicated leg, which is lik
 | ⑧ 1–4 depth-gap gates red on the bare repoint | 1–4 | **1 — HIT at its floor**, and it was the one my own repoint caused |
 
 ⇒ ***Five of eight falsified or missed, and four of the five in the direction that cost me.*** *That is the registration working: a revision where the arms mostly hit is a revision whose arms were not risking anything.*
+
+---
+
+### ⛔⛭⛭⛭ `r7677+cc66.7`–`.8` — **CI CAUGHT TWO REDS AND BOTH WERE MINE, AND BOTH ARE THE SAME CLASS OF MISTAKE SEEN FROM TWO SIDES: A FIGURE ASSERTED WHERE IT IS NOT READ**
+
+`fast — registers, views, IDs` failed on head `25b67c214` naming **`check_unread_figure`** and **`check_marker_transposition`**. ⛔ ***Both reproduce locally at rc=1, so neither is the shallow-clone class the standing cycle lists*** — and that list naming `check_marker_transposition` is exactly why I checked rather than stood it down.
+
+#### ⓵ THE UNREAD-FIGURE RATCHET — ONE NEW SITE, AND IT IS MY OWN GATE LABEL
+
+Exactly one: **gate ⓗ** from `.3`, whose label quoted *"the four depths `sec:largescale` prints … `0.487 / 0.435 / 0.359 / 0.666`"* as literals. The gate's own words for the class: *"The label says the number is the PAPER's; nothing in the receipt reads the paper, so the check stays green when the paper moves."*
+
+⛔ ***And the sharp part is that this receipt DOES read the paper:*** `_PAPER4` is parsed from `sec:largescale` at line 377, and my gate at line 467 quoted the same four figures as literals. *So the attribution was not merely unread — it was unread **beside a live parse of the same four numbers**, forty lines up.* The label now carries `_PAPER4` itself, with 70's refit-point quadruple beside it and labelled as 70's report. **`check_unread_figure` rc=0: 16 owed against a ceiling of 22, no new key, no stale entry.**
+
+#### ⓶ THE MARKER-TRANSPOSITION BASELINE — ONE STALE ROW, AND IT IS STALE BECAUSE THE PIN *FIXED* THE SITE
+
+`CR_cosmology.tex` `43.96`, own group `a_source`, carrier `the_monopole_zero_point`. **69 adjudicated that row at `r7677`** — *"not a transposition, the carrier rounds"* — on the reading that `a_source` computes `43.957` and the paper prints two decimals. **`r7677+cc66.1` then pinned that digit in `a_source` itself**, so the own group now carries the printed number and there is nothing left to adjudicate.
+
+⇒ ***The pin did not hide the flag; it fixed the site.*** The number is now asserted where it is computed, which is what that gate is about. Row removed **by hand**, verified by set comparison, reason written into the file's header, **65 → 64 against the gate's own measured 64. rc=0: no new transposition, no stale adjudication, both calibration cases re-found.**
+
+#### ⌗ AND THE TWO TOGETHER ARE ONE LESSON, WHICH IS THE EIGHTH OF THIS LANE
+
+***A figure belongs where it is computed, and a gate's LABEL is an assertion about provenance, not decoration.*** `check_figures_pinned` wants the digit compared against a literal; `check_unread_figure` wants the attribution read from the paper; `check_marker_transposition` wants the number carried by the receipt that computes it. **All three are the same requirement from three sides, and item 1 satisfied the first while breaking the second and incidentally satisfying the third.** *I had read the first gate's rule off the baseline header four hours earlier and still did not see that the other two are the same rule.*
+
+⌗ *Both fixes were pushed as they were found rather than batched, each with the confirming local run named. `turn_gates.sh` does not run either gate — both are deferred to CI's fast job — which is why a green 123-of-123 locally did not see them.*
