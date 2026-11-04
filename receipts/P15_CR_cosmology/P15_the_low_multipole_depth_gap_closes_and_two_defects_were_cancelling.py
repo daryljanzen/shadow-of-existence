@@ -470,10 +470,11 @@ check("\u24bd \u26d4\u26ed\u26ed ** THE REPOINT IS A POINT CHANGE AS WELL AS A S
       "`ADJ` is `(68.60, 0.2973)`.  \u21d2 *So an arm-A-against-arm-B figure formed across the two "
       "is a POINT difference as much as an arm one.  `r7675+70.1` measured A against B with BOTH at "
       "the refit point and got 4.9 and 5.5 per cent; this receipt cannot reproduce that without "
-      "moving its own background, which would move the four depths `sec:largescale` prints (70: "
-      "0.4920 / 0.4434 / 0.3601 / 0.6627 against the printed 0.487 / 0.435 / 0.359 / 0.666).  That "
-      "is 69's ruling and not this receipt's, so the paper's three-per-cent criterion is "
-      "deliberately NOT scored here and the reason is stated instead of a looser number chosen*",
+      "moving its own background, which would move the four depths `sec:largescale` prints -- "
+      f"PARSED from the paper above as {' / '.join(f'{v:.3f}' for v in _PAPER4)}, against the "
+      "0.4920 / 0.4434 / 0.3601 / 0.6627 `r7675+70.1` reports at the refit point.  That is 69's "
+      "ruling and not this receipt's, so the paper's three-per-cent criterion is deliberately NOT "
+      "scored here and the reason is stated instead of a looser number chosen*",
       abs(float(_MPT['H0']) - 68.57073) < 1e-5 and abs(float(_MPT['Om']) - 0.291246) < 1e-6
       and abs(ADJ[0] - 68.60) < 1e-9 and abs(ADJ[1] - 0.2973) < 1e-9,
       f"bank H0 {_MPT['H0']} / Om {_MPT['Om']} against this receipt's {ADJ[0]} / {ADJ[1]}")
