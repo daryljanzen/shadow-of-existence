@@ -20,39 +20,39 @@
 
       receipts in scope that load a spectrum at all: 104
         every resolved load is ARM OF RECORD          : 3
-        loads BOTH arms                               : 24
-        every resolved load is NAMESAKE               : 65
+        loads BOTH arms                               : 26
+        every resolved load is NAMESAKE               : 71
         audit the whole tree with a recursive glob    : 6
-    OK    Ⓑ① ⛭⛭ RESOLVING THROUGH THE DIRECTORY CONSTANT DECIDES WHAT THE LOAD SITE COULD NOT: 3 receipts load only the arm of record, 24 load both and 65 only the namesake   (3/24/65 of 104)
+    OK    Ⓑ① ⛭⛭ RESOLVING THROUGH THE DIRECTORY CONSTANT DECIDES WHAT THE LOAD SITE COULD NOT: 3 receipts load only the arm of record, 26 load both and 71 only the namesake   (3/26/71 of 104)
     OK    Ⓑ② ⛭ AND A CLASS THE ORDER DID NOT ANTICIPATE IS NAMED RATHER THAN FOLDED IN: 6 receipt(s) audit every `.npz` under `computations/` with a recursive glob, so they do not REST on a namesake in any sense a rebuild would fix   (6 tree-auditing receipt(s))
 
       r7667 HANDED OVER 41 receipt(s) it could not decide.  Re-resolved here:
         now ARM OF RECORD only  -> LEAVES the list : 1
-        now BOTH arms           -> sentence decides: 5
-        now NAMESAKE only       -> STAYS            : 26
+        now BOTH arms           -> sentence decides: 7
+        now NAMESAKE only       -> STAYS            : 32
         tree-auditing glob      -> LEAVES, other way: 1
-        STILL undecidable                           : 9
-    OK    Ⓑ③ ⛭⛭⛭ ARM ① SCORED: of the 41 receipts `r7667` could not decide, 2 LEAVE the list (1 because every resolved load is arm-of-record, 1 because they audit the whole tree), 5 are decided by their sentence and 26 stay   (1+1 leave, 5 sentence, 26 stay, 9 still undecidable)
-    OK    Ⓑ④ ⛔ AND WHAT IS STILL UNDECIDABLE IS NAMED RATHER THAN ASSUMED EITHER WAY: 9 receipt(s) resolve to neither arm even through their constants   (9 still undecidable)
+        STILL undecidable                           : 1
+    OK    Ⓑ③ ⛭⛭⛭ ARM ① SCORED: of the 41 receipts `r7667` could not decide, 2 LEAVE the list (1 because every resolved load is arm-of-record, 1 because they audit the whole tree), 7 are decided by their sentence and 32 stay   (1+1 leave, 7 sentence, 32 stay, 1 still undecidable)
+    OK    Ⓑ④ ⛔ AND WHAT IS STILL UNDECIDABLE IS NAMED RATHER THAN ASSUMED EITHER WAY: 1 receipt(s) resolve to neither arm even through their constants   (1 still undecidable)
 
       OF THOSE, the figure-printing subset -- PO-87's own list -- is 24:
         ARM OF RECORD only -> LEAVES               : 1
-        BOTH arms          -> sentence decides     : 4
-        NAMESAKE only      -> STAYS                : 15
+        BOTH arms          -> sentence decides     : 5
+        NAMESAKE only      -> STAYS                : 17
         tree-auditing glob -> LEAVES, other grounds: 1
-        STILL undecidable                          : 4
-    OK    Ⓑ⑤ ⛔⛭⛭ ARM ① IS FALSIFIED, AND NOT NARROWLY. I registered that between 8 and 14 of the undecidable figure-printing items would LEAVE the list once read. **2 leave.** 15 resolve to the namesake and STAY, 4 are decided by their sentence rather than their loads, and 4 are still undecidable from source   (2 leave against a registered 8-14 -> FALSIFIED)
-    OK    Ⓑ⑤ᵃ ⛔ ARM ② IS WRONG IN THE OPPOSITE DIRECTION, and the cause is named: I registered a ONE-item gap against the census's 22; this file's figure-printing handover subset is 24, a gap of 2.  The difference is the CANDIDATE SET -- `census.py` excludes any receipt carrying an arm-of-record load site, so its undecidable bucket never holds the 4 both-arm items this file keeps   (24 here vs 22 in census.py; 4 both-arm items are the difference)
+        STILL undecidable                          : 1
+    OK    Ⓑ⑤ ⛔⛭⛭ ARM ① IS FALSIFIED, AND NOT NARROWLY. I registered that between 8 and 14 of the undecidable figure-printing items would LEAVE the list once read. **2 leave.** 17 resolve to the namesake and STAY, 5 are decided by their sentence rather than their loads, and 1 are still undecidable from source   (2 leave against a registered 8-14 -> FALSIFIED)
+    OK    Ⓑ⑤ᵃ ⛔ ARM ② IS WRONG IN THE OPPOSITE DIRECTION, and the cause is named: I registered a ONE-item gap against the census's 22; this file's figure-printing handover subset is 24, a gap of 2.  The difference is the CANDIDATE SET -- `census.py` excludes any receipt carrying an arm-of-record load site, so its undecidable bucket never holds the 5 both-arm items this file keeps   (24 here vs 22 in census.py; 5 both-arm items are the difference)
     OK    Ⓑ⑥ ⛭ ARM ④ HITS: the two receipts whose own header guard asserts the loaded file IS the LEAFREC=0 namesake and that an arm-of-record counterpart exists beside it both resolve NAMESAKE here, so they are RE-GROUND with the wording already written   (both header-guard receipts resolve to the namesake side)
-        UNDECIDED       B5_the_scan_cannot_test_the_asymptotic_phase.py
+        NAMESAKE        B5_the_scan_cannot_test_the_asymptotic_phase.py
         NAMESAKE        B6_the_acoustics_reproduce_and_the_dichotomy_is_false.py
         NAMESAKE        B7_the_seam_phase_moves_the_asymptotic_intercept.py
-        UNDECIDED       B8_the_zero_velocity_band_is_a_third_of_the_gap.py
+        NAMESAKE        B8_the_zero_velocity_band_is_a_third_of_the_gap.py
         NAMESAKE        B9_the_admissible_pair_is_forced_not_merely_distinguished.py
         NAMESAKE        K1_a_capability_assumed_from_one_failure.py
         NAMESAKE        S2_the_lmax2512_extension_recovers_c51s_dropped_bins_and_CR_stays_di
-        NAMESAKE        P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_c
-        UNDECIDED       P15_centring_removes_the_correlation_exactly_and_closes_the_route_an
+        BOTH            P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_c
+        NAMESAKE        P15_centring_removes_the_correlation_exactly_and_closes_the_route_an
         NAMESAKE        P15_the_acoustics_work_and_the_phase_is_the_whole_disagreement.py
         NAMESAKE        P15_the_admissible_band_is_a_third_and_the_two_entries_differ_agains
         UNDECIDED       P15_the_arms_own_driving_pair_reproduces_the_banked_one_and_the_peak
@@ -62,26 +62,26 @@
         NAMESAKE        P15_the_crossing_spectrum_reproduces_on_a_second_instrument_and_the_
         AOR-ONLY        P15_the_de_tilted_peak_set_is_the_phase_observable_the_slope_was_not
         BOTH            P15_the_fit_has_the_controls_freedom_and_the_contrast_the_data_ask_f
-        UNDECIDED       P15_the_fourth_parameter_recovers_the_drift_the_gaps_show_but_the_sp
+        NAMESAKE        P15_the_fourth_parameter_recovers_the_drift_the_gaps_show_but_the_sp
         BOTH            P15_the_kernels_phase_difference_between_the_arms_is_four_orders_bel
         NAMESAKE        P15_the_lowell_sweep_is_reproduced_by_a_producer_in_the_repository_a
         NAMESAKE        P15_the_no_fit_confrontation_is_three_per_bin_and_its_residual_carri
-        UNDECIDED       P15_the_peak_plane_survives_the_merge_the_sky_lands_within_one_sigma
+        NAMESAKE        P15_the_peak_plane_survives_the_merge_the_sky_lands_within_one_sigma
         NAMESAKE        P15_the_peak_statistic_cannot_be_pointed_at_the_observed_spectrum_be
         NAMESAKE        P15_the_period_difference_null_is_not_significant_because_the_contro
         NAMESAKE        P15_the_phase_is_the_driving_and_the_undriven_arms_agree.py
         NAMESAKE        P15_the_phase_moves_with_the_datum_and_only_the_spacing_does_not.py
         NAMESAKE   GLOB P15_the_phase_slope_does_not_separate_the_loading_from_the_driving_b
         NAMESAKE        P15_the_photon_hierarchy_in_the_transfer.py
-        UNDECIDED       P15_the_refit_bound_figures_all_reproduce_and_one_of_them_is_a_ratio
+        BOTH            P15_the_refit_bound_figures_all_reproduce_and_one_of_them_is_a_ratio
         BOTH            P15_the_refit_leaves_the_background_where_the_distances_put_it_and_d
         NAMESAKE        P15_the_residual_does_not_sit_at_ell_A_it_sits_four_per_cent_off_and
         NAMESAKE        P15_the_retention_is_the_combs_average_over_the_kernels_own_k_accept
-        UNDECIDED       P15_the_selection_does_not_truncate_so_the_thirteen_sigma_stands_at_
+        NAMESAKE        P15_the_selection_does_not_truncate_so_the_thirteen_sigma_stands_at_
         NAMESAKE        P15_the_shared_fraction_does_not_mean_what_i_said_and_the_peak_troug
         BOTH            P15_the_spacing_drift_is_made_in_the_projection_so_the_construction_
         NAMESAKE        P15_the_spacing_is_right_and_the_acoustic_phase_is_wrong.py
-        UNDECIDED       P15_the_three_parameter_comb_fails_its_validation_because_the_peak_s
+        NAMESAKE        P15_the_three_parameter_comb_fails_its_validation_because_the_peak_s
         NAMESAKE        P15_the_two_measures_of_the_separation_are_pinned_on_the_arm_of_reco
         BOTH            P15_the_windows_phase_spread_is_nearly_equal_because_the_visibility_
         NAMESAKE        P15_where_the_likelihood_sits.py
@@ -92,30 +92,32 @@
         P15_the_visibility_width_is_not_the_carrier_the_swap_moves_the_fold_at_ell_A
 
       BOTH ARMS (the sentence decides which figure it prints):
+        P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with  aor=2 namesake=1
         P15_no_statistic_this_construction_can_build_resolves_the_two_channels_and_t  aor=1 namesake=3
         P15_the_1p57_has_no_parameter_address_because_the_arms_tt_minimum_sits_on_it  aor=3 namesake=1
         P15_the_acoustic_contrast_is_not_in_the_source_and_the_projection_makes_it_w  aor=1 namesake=4
-        P15_the_band_one_departure_is_not_in_the_likelihoods_excess_and_all_three_ch  aor=2 namesake=3
+        P15_the_band_one_departure_is_not_in_the_likelihoods_excess_and_all_three_ch  aor=2 namesake=5
         P15_the_combs_resolution_is_four_multipoles_and_the_skys_own_value_lies_outs  aor=6 namesake=5
         P15_the_contrast_excess_is_symmetric_about_the_envelope_and_the_troughs_are_  aor=3 namesake=3
         P15_the_coupling_is_measured_and_negative_and_the_contribution_is_undetermin  aor=1 namesake=3
         P15_the_fit_has_the_controls_freedom_and_the_contrast_the_data_ask_for_lies_  aor=1 namesake=2
         P15_the_full_range_refit_holds_the_background_and_the_phase_residual_was_qua  aor=2 namesake=5
         P15_the_kernels_phase_difference_between_the_arms_is_four_orders_below_the_r  aor=1 namesake=1
-        P15_the_ladders_discreteness_does_not_set_the_spectrum_and_the_check_was_run  aor=2 namesake=1
+        P15_the_ladders_discreteness_does_not_set_the_spectrum_and_the_check_was_run  aor=4 namesake=1
         P15_the_licensed_configuration_moves_neither_statistic_and_the_swing_was_rea  aor=2 namesake=5
-        P15_the_likelihood_sees_the_step_and_separates_the_two_channels_so_the_demon  aor=2 namesake=3
+        P15_the_likelihood_sees_the_step_and_separates_the_two_channels_so_the_demon  aor=2 namesake=5
         P15_the_locator_is_good_to_three_hundredths_and_the_fourth_peaks_residual_is  aor=3 namesake=3
         P15_the_monopole_zero_point_is_not_the_channel_and_the_two_residuals_point_o  aor=1 namesake=7
         P15_the_phase_systematic_leaves_the_step_standing_and_carries_a_third_of_the  aor=1 namesake=3
+        P15_the_refit_bound_figures_all_reproduce_and_one_of_them_is_a_ratio_standin  aor=2 namesake=3
         P15_the_refit_leaves_the_background_where_the_distances_put_it_and_does_not_  aor=2 namesake=4
         P15_the_resolution_table_eight_of_the_eleven_instruments_cannot_represent_th  aor=2 namesake=2
-        P15_the_spacing_drift_is_made_in_the_projection_so_the_construction_determin  aor=1 namesake=1
+        P15_the_spacing_drift_is_made_in_the_projection_so_the_construction_determin  aor=3 namesake=2
         P15_the_step_is_the_excesss_own_and_it_sits_at_the_second_acoustic_peak_and_  aor=1 namesake=4
         P15_the_three_instruments_with_no_noise_model_one_can_be_given_a_floor_and_t  aor=1 namesake=2
         P15_the_visibilitys_clock_is_the_one_the_kernel_reads_and_the_comb_votes_aga  aor=5 namesake=8
         P15_the_windows_phase_spread_is_nearly_equal_because_the_visibility_widens_a  aor=1 namesake=3
-        P15_there_is_no_phase_residual_and_the_fourth_peak_is_not_the_damping_envelo  aor=1 namesake=3
+        P15_there_is_no_phase_residual_and_the_fourth_peak_is_not_the_damping_envelo  aor=1 namesake=4
 
       TREE-AUDITING (leave on different grounds):
         C52_the_banked_spectra_fail_the_sampling_guard.py

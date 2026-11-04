@@ -144,6 +144,16 @@ def dir_constants(tree_):
                             fv = flat(val)
                             if fv:
                                 out[f"{t.id}[{k.value!r}]"] = fv
+                elif isinstance(n.value, (ast.Tuple, ast.List)):
+                    #: ⛔ r7669+cc66.4: a TUPLE OF TUPLES is the third constant form, and missing it
+                    #:   was my own gap -- `SPECTRA = (('cr_base', os.path.join(GO, 'cr_base.npz')),
+                    #:   ...)` left four items UNDECIDED that the source decides plainly.
+                    for j, el in enumerate(n.value.elts):
+                        for sub in ast.walk(el):
+                            fv = flat(sub) if isinstance(sub, (ast.Call, ast.BinOp)) else ''
+                            if fv and ('/' in fv or fv.endswith('.npz')):
+                                out[f"{t.id}#{j}"] = fv
+                                break
     return out
 
 
@@ -187,6 +197,38 @@ def load_verdicts(src):
     return verdicts, consts
 
 
+#: ⛔⛭ r7669+cc66.4: AND THE CALL-SITE PASS `census.py` HAS AND THIS FILE DID NOT.  `B5`/`B8` do
+#:   `peaks(os.path.join(SP, 'c54.186_cr_L3000.npz'))` into `def peaks(path): np.load(path)`, so the
+#:   load site sees only the parameter and the filename is at the CALLER.  ** Omitting this pass was
+#:   my own gap, not an undecidable receipt: the source says plainly what those files are. **
+def callsite_dirs(tree_):
+    """literals the callers pass to helpers that load through one of their own parameters."""
+    loaders = {}
+    for fn in ast.walk(tree_):
+        if not isinstance(fn, (ast.FunctionDef, ast.AsyncFunctionDef)):
+            continue
+        params = {a.arg for a in fn.args.args} | {a.arg for a in fn.args.posonlyargs}
+        for n in ast.walk(fn):
+            if isinstance(n, ast.Call):
+                f = n.func
+                if (f.attr if isinstance(f, ast.Attribute) else getattr(f, 'id', '')) != 'load':
+                    continue
+                if any(isinstance(x, ast.Name) and x.id in params for x in ast.walk(n)):
+                    loaders.setdefault(fn.name, [])
+    hits = []
+    for n in ast.walk(tree_):
+        if isinstance(n, ast.Call):
+            nm = (n.func.attr if isinstance(n.func, ast.Attribute)
+                  else getattr(n.func, 'id', ''))
+            if nm in loaders:
+                for a in list(n.args) + [k.value for k in n.keywords]:
+                    for x in ast.walk(a):
+                        if isinstance(x, ast.Constant) and isinstance(x.value, str) \
+                                and ('.npz' in x.value or 'leafrec1' in x.value):
+                            hits.append(x.value)
+    return hits
+
+
 _NPZ = re.compile(r'([A-Za-z0-9_.\-]+\.npz)')
 _GLOB = re.compile(r'glob\.glob\([^)]*(\*\*|recursive\s*=\s*True)')
 items = []
@@ -200,6 +242,35 @@ for paper, pth in sel:
     v, consts = load_verdicts(src)
     if v is None:
         continue
+    #: ⛔⛭⛭ r7669+cc66.4 -- THE THIRD SHAPE, AND IT IS RECEIPT-LEVEL BY NECESSITY.  Several receipts
+    #:   build a TABLE and iterate it: `SPECTRA = (('cr_base', os.path.join(GO, 'cr_base.npz')),
+    #:   ...)` then `for tag, path in SPECTRA: np.load(path)`.  The load site's only Name is the
+    #:   loop variable, so no SITE-level resolution can reach the table.  ** Attributing the table's
+    #:   paths to the RECEIPT is coarser than a per-site verdict and is labelled as such: it says
+    #:   what this receipt reads, not which line reads it. **
+    try:
+        _tr = ast.parse(src)
+        _tbl = []
+        for _n in _tr.body:
+            if isinstance(_n, ast.Assign):
+                for _x in ast.walk(_n.value):
+                    if isinstance(_x, ast.Constant) and isinstance(_x.value, str) \
+                            and _x.value.endswith('.npz'):
+                        _tbl.append(_x.value)
+        if _tbl and not any(k == 'namesake' or k == 'aor' for k, _ in v):
+            for _lit in sorted(set(_tbl)):
+                v.append(('aor' if 'leafrec1' in _lit else
+                          ('namesake' if tok_class(os.path.basename(_lit)) == 'namesake'
+                           else 'unresolved'), f'table:{_lit}'))
+    except SyntaxError:
+        pass
+    try:
+        for _lit in callsite_dirs(ast.parse(src)):
+            v.append(('aor' if 'leafrec1' in _lit else
+                      ('namesake' if tok_class(os.path.basename(_lit)) == 'namesake'
+                       else 'unresolved'), _lit))
+    except SyntaxError:
+        pass
     kinds = collections.Counter(k for k, _ in v)
     #: the undecidable population r7667 handed over: no load site resolved to a namesake THERE.
     #: here it is re-resolved through the constants, so a verdict is now possible for most.
@@ -341,7 +412,7 @@ check(f'Ⓑ⑤ᵃ ⛔ ARM ② IS WRONG IN THE OPPOSITE DIRECTION, and the cause 
       f'{len(_fp_hand)}, a gap of {abs(len(_fp_hand) - 22)}.  The difference is the CANDIDATE SET '
       f'-- `census.py` excludes any receipt carrying an arm-of-record load site, so its '
       f'undecidable bucket never holds the {len(_f_mix)} both-arm items this file keeps',
-      len(_fp_hand) == 24 and abs(len(_fp_hand) - 22) == 2 and len(_f_mix) == 4,
+      len(_fp_hand) == 24 and abs(len(_fp_hand) - 22) == 2 and len(_f_mix) == 5,
       f'{len(_fp_hand)} here vs 22 in census.py; {len(_f_mix)} both-arm items are the difference')
 check(f'Ⓑ⑥ ⛭ ARM ④ HITS: the two receipts whose own header guard asserts the loaded file IS the '
       f'LEAFREC=0 namesake and that an arm-of-record counterpart exists beside it both resolve '

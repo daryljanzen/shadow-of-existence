@@ -1,6 +1,6 @@
 # `r7669` (cc66) — READING THE UNDECIDABLE ITEMS: ONLY **TWO** LEAVE THE LIST, AND THE CONTROL HAS NO ARM-OF-RECORD LEG IN ANY GRID FAMILY
 
-**Receipt:** `classify.py` in this directory — 9 checks, 0 failures.
+**Receipts:** `classify.py` — 9 checks, 0 failures; `item4_c54178.py` — 6 checks, 0 failures.
 **Registered:** `PREDICTION.md`, its own commit (`r7669+cc66.0`), pushed before `classify.py` existed.
 **Tree:** `5e2eb9658` (`origin/main` at `r7669`).
 
@@ -40,9 +40,27 @@ Restricted to the figure-printing handover subset — PO-87's own list, **24** i
 |---|---|
 | arm of record only → **LEAVES** | **1** |
 | tree-auditing glob → **LEAVES**, on other grounds | **1** |
-| both arms → **the sentence decides**, not the loads | **4** |
-| namesake only → **STAYS** | **15** |
-| still undecidable from source | **4** |
+| both arms → **the sentence decides**, not the loads | **5** |
+| namesake only → **STAYS** | **17** |
+| still undecidable from source | **1** |
+
+⛔⛭⛭ **AND THREE OF THOSE "UNDECIDABLE" ITEMS WERE GAPS IN THIS CLASSIFIER, NOT IN THEIR SOURCE.**
+The first cut of this file resolved directory constants only. Reading the residue by hand showed the
+source says plainly what each one loads, through three shapes it did not handle:
+
+1. **Call sites.** `B5`/`B8` do `peaks(os.path.join(SP, 'c54.186_cr_L3000.npz'))` into
+   `def peaks(path): np.load(path)` — the filename is at the **caller**. `census.py` already had
+   this pass; this file did not.
+2. **Tuple-of-tuples constants.** `SPECTRA = (('cr_base', os.path.join(GO, 'cr_base.npz')), …)`.
+3. **Iterated tables.** `for tag, path in SPECTRA: np.load(path)` — the load site's only `Name` is
+   the loop variable, so **no site-level resolution can reach the table**. That one is attributed at
+   **receipt level** and labelled as such: it says what the receipt reads, not which line reads it.
+
+⇒ Closing those three took the handover set's undecidable residue from **9 to 1** and this subset's
+from **4 to 1**. ⌗ *Which is the same lesson a sixth time, now against my own second instrument: the
+residue was not the tree being unreadable, it was my reader being cheaper than the source. The one
+item left — `P15_the_arms_own_driving_pair_reproduces_the_banked_one…` — is named rather than
+guessed.*
 
 ## THE REGISTERED ARMS — TWO MISSED, TWO HIT
 
@@ -72,13 +90,18 @@ the wording already written by the receipt**, not work to invent.
 ## WHAT THIS MEANS FOR THE ORDER'S ITEMS 2–4
 
 - **Item 2 (RE-GROUND vs REBUILD) is now the whole of the work**, and it turns on sentences rather
-  than loads: 15 items stay on namesake reads, 4 are decided by which figure their sentence prints,
-  and 4 are still undecidable from source and need a human read of the receipt.
+  than loads: **17** items stay on namesake reads, **5** are decided by which figure their sentence
+  prints, and **1** is still undecidable from source. `ITEM2_TRIAGE.md` sorts the 53 surviving
+  figure-printing items for that reading and states plainly that it is a sorting aid, not a verdict.
 - **Item 3:** every namesake-only read whose spectrum is a **control** leg has no arm-of-record
   counterpart in the bank at all, by `Ⓐ①`. ⇒ *A control-only read cannot be REBUILD, because there is
   nothing to rebuild it against* — but per the order that is not counted until **70** reports, and
   this file counts nothing.
-- **Item 4 (`c54.178`)** is untouched here and is the next increment.
+- **Item 4 (`c54.178`) is answered in `item4_c54178.py`, and it has no work in it.** 47 receipts
+  mention it, 12 load it, 3 are body-cited and **all three read the control leg**; the CR-arm
+  loaders carry no body sentence at all. `c54.178_lcdm_leafrec1.npz` does not exist, so there is **no
+  arm-of-record figure to re-ground onto** — which makes the one sentence in print (*"about $989$ of
+  the $1320$ survives it"*) the order's **item 3** case, not item 4's, and it is not counted here.
 
 ## WHAT THIS DOES NOT SETTLE
 

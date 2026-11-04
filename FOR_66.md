@@ -32661,3 +32661,27 @@ Item 1 done. `computations/beyond_the_wall/r7669_cc66_reading_the_undecidable/` 
 ⌗ **One thing worth your ruling before I spend that reading:** the triage's 34 "arm-of-record wording" items are not 34 REBUILDs. A sentence can say *"this arm"* while the figure it prints is a **method** or **instrument** property that no re-derivation would move — and `r7667`'s own `Ⓒ④` convergence says the instrument cannot tell those apart. **If you want the 49 read in a particular order — by paper section, by spectrum, or worst-case-first — say so and I will take them in that order; otherwise I will go in `LIST.md` order and route in batches as they resolve.**
 
 **Verified:** triage regenerated on this tree; `NODE=cc66 bash scripts/turn_gates.sh` — **`ran 123 of 123`, `PASS=123 FAIL=0 UNRUN=0`**.
+
+### ⛔⛭⛭⛭ `r7669+cc66.4` — **THREE OF THE "UNDECIDABLE" ITEMS WERE GAPS IN MY OWN READER, NOT IN THEIR SOURCE: 9 → 1**
+
+Reading the residue by hand, as item 1 asks, showed the source says plainly what each one loads — through three shapes `classify.py`'s first cut did not handle:
+
+1. **Call sites.** `B5`/`B8` do `peaks(os.path.join(SP, 'c54.186_cr_L3000.npz'))` into `def peaks(path): np.load(path)` — the filename is at the **caller**. ⛔ *`census.py` already had this pass and this file did not; I wrote the second instrument without carrying over the fix the first one needed.*
+2. **Tuple-of-tuples constants.** `SPECTRA = (('cr_base', os.path.join(GO, 'cr_base.npz')), …)`.
+3. **Iterated tables.** `for tag, path in SPECTRA: np.load(path)` — the load site's only `Name` is the loop variable, so **no site-level resolution can reach the table**. That one is attributed at **receipt level** and labelled as such in the gate: it says what the receipt reads, not which line reads it.
+
+⇒ **Closing the three took the handover set's undecidable residue from `9` to `1`, and PO-87's own subset from `4` to `1`.** The corrected split of the 24:
+
+| | items |
+|---|---|
+| arm of record only → **LEAVES** | **1** |
+| tree-auditing glob → **LEAVES**, other grounds | **1** |
+| both arms → **the sentence decides** | **5** |
+| namesake only → **STAYS** | **17** |
+| still undecidable from source | **1** — `P15_the_arms_own_driving_pair_reproduces_the_banked_one…`, **named rather than guessed** |
+
+⌗ **That is the same lesson a sixth time, and this time against my own second instrument.** The residue was never the tree being unreadable; it was **my reader being cheaper than the source**. *Five of the six were in `r7667`'s census and one is here, and the only reason any of them surfaced is that I went back and read what the instrument had given up on instead of reporting its residue as a property of the tree.*
+
+⛭ **And one pin moved honestly rather than being left to drift:** `Ⓑ⑤ᵃ` pinned the both-arm count at `4`; closing the gaps made it `5`, the gate failed, and the pin was corrected to what the tree now says — not loosened.
+
+**Verified on `5e2eb9658` plus this turn's files:** `classify.py` rc=0, **9 of 9**; `item4_c54178.py` rc=0, **6 of 6**; `NODE=cc66 bash scripts/turn_gates.sh` — **`ran 123 of 123`, `PASS=123 FAIL=0 UNRUN=0`**.
