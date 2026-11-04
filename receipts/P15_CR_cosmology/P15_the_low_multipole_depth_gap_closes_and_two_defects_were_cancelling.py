@@ -246,17 +246,22 @@ SW_NSK = np.load(os.path.join(SPEC, 'cc66_lowell_sweep.npz'))
 SW_AOR = np.load(os.path.join(SPEC, f'cc66_lowell_sweep{_SWARM}.npz'))
 
 
-class _SweepView:
-    """the ARM's legs from the arm-of-record bank, the CONTROL's from the namesake bank."""
-
-    files = sorted(set(SW_NSK.files) | {k for k in SW_AOR.files
-                                        if k not in ('config', 'manifest')})
-
-    def __getitem__(self, key):
-        return SW_AOR[key] if key in SW_AOR.files else SW_NSK[key]
-
-
-SW = _SweepView()
+# ⛔⛭⛭⛭ `r7677+cc66.4` -- ** AND THE FIRST CUT OF THIS REPOINT PUT THE ARM-OF-RECORD LEG INTO A
+#   COMPARISON THAT CROSSES TWO BACKGROUNDS, WHICH REDDENED THE RECEIPT'S OWN 7-PER-CENT GATE AT
+#   EXACTLY THE MULTIPOLE 70 FLAGGED. **
+#   A per-key VIEW -- the arm's legs from the arm-of-record bank, the control's from the namesake --
+#   reads beautifully and is wrong here, because `A[ADJ]` is CAMB at the ADJUDICATED point and the
+#   arm-of-record legs are at the REFIT one.  Measured: the A-against-B worst disagreement went to
+#   ** 7.6 per cent, at l = 3 **, against the 7 the receipt requires -- and `l = 3` is the one
+#   multipole `r7675+70.1` says it cannot yet tell physics from construction on.
+#   ⇒ * So every A-against-B figure is kept AT ONE POINT: at the adjudicated point arm B is the
+#     NAMESAKE adjudicated leg, which is like-for-like with CAMB there.  The arm-of-record pair is
+#     read EXPLICITLY below as `B_AOR` and compared only with itself. *
+#   ⌗ ** And the cross-point number is not noise, it is the point difference measured: ** 70's arm A
+#   at the refit point reads 0.4434 at l = 3, so like-for-like THERE the disagreement is 5.5 per
+#   cent -- 70's own figure -- and the 7.6 is what mixing the two points adds.  *That is the
+#   quantitative case for fork (b) in my route, and it is measured rather than argued.*
+SW = SW_NSK
 _adj = sorted(k for k in SW_AOR.files if 'adjudicated' in k)
 _ctl_only_nsk = sorted(k for k in SW_NSK.files if 'control' in k and k not in SW_AOR.files)
 _moved = sorted(k for k in _adj
@@ -264,11 +269,14 @@ _moved = sorted(k for k in _adj
                 and not np.array_equal(np.asarray(SW_NSK[k], float), np.asarray(SW_AOR[k], float)))
 print(f"  arm-of-record bank: {len(SW_AOR.files)} keys, adjudicated {len(_adj)}, of which moved "
       f"{len(_moved)};  control keys only in the namesake bank: {len(_ctl_only_nsk)}")
-check("⓼ ⛭⛭ ** THE REPOINT IS PER KEY AND THE CONVENTION IS GATED RATHER THAN ASSUMED. **  The "
-      "arm-of-record sweep carries the two ADJUDICATED legs and not one of the six CONTROL legs, "
-      "because `LEAFREC` does not reach the control -- so a wholesale bank swap would `KeyError` "
-      "and a per-key view is the only correct repoint.  Both adjudicated legs MOVED, and `ells` is "
-      "bit-identical across the two banks.  ⛔ *Point `_SWARM` back at the namesake and this fails*",
+check("⓼ ⛭⛭ ** THE ARM-OF-RECORD SWEEP IS FOUND UNDER A NAMED SUFFIX AND ITS SHAPE IS GATED "
+      "RATHER THAN ASSUMED. **  It carries the two ADJUDICATED legs and not one of the six CONTROL "
+      "legs, because `LEAFREC` does not reach the control -- so a wholesale bank swap would "
+      "`KeyError` on the first control key.  Both adjudicated legs MOVED, and `ells` is "
+      "bit-identical across the two banks.  ⛔ *Point `_SWARM` back at the namesake and this fails.  "
+      "And the arm-of-record legs are read EXPLICITLY as `B_AOR`, never substituted into an "
+      "adjudicated-point comparison: they are at the REFIT point, and crossing the two reddened "
+      "this receipt's own 7-per-cent gate at l = 3 by exactly the point difference*",
       len(_adj) == 2 and len(_moved) == 2 and len(_ctl_only_nsk) == 6
       and _SWARM == '_leafrec1'
       and np.array_equal(np.asarray(SW_NSK['ells'], float), np.asarray(SW_AOR['ells'], float))

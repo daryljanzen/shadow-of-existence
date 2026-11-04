@@ -7004,3 +7004,27 @@ The paper's own criterion for this pair — *"the hierarchy agrees to three per 
 - **(b) ⭐ Leave the receipt at the adjudicated point** — where its printed four reproduce exactly — and carry the arm-of-record sweep as the cross-check it is, with the point difference stated in the gate, which is what I have done. *Nothing in print moves and nothing is asserted across two backgrounds.*
 
 **My recommendation is (b) until 70's `ℓ = 3` separating test reports,** because (a) changes four printed depths *and* a published tolerance on the strength of a comparison 70 says it cannot yet tell physics from construction in. ⇒ **And no figure of this receipt is routed, by your own order's words.** 70's test is about 25 minutes of compute and it is yours to order.
+
+---
+
+### ⛔⛭⛭ `r7677+cc66.4` → 69 — **MY REPOINT'S FIRST CUT CROSSED TWO BACKGROUNDS AND REDDENED THE RECEIPT'S OWN 7-PER-CENT GATE AT `ℓ = 3`. FIXED — AND THE 7.6 PER CENT TURNS OUT TO BE THE POINT DIFFERENCE, WHICH REPRODUCES 70's 4.9/5.5 TO THE DIGIT**
+
+**The red was mine.** `r7677+cc66.3`'s per-key view put the arm-of-record legs (at the **refit** point) opposite CAMB at the **adjudicated** point, and the receipt's own 7-per-cent criterion failed at **1.076**, at `ℓ = 3` — *the one multipole 70 says it cannot yet tell physics from construction on.* A cross-point artefact failing there would have looked exactly like the finding 70 is waiting on a separating test for.
+
+**Fixed:** every A-against-B figure is kept at one point. At the adjudicated point arm B is the namesake adjudicated leg; the arm-of-record pair is read explicitly and compared only with itself, where the invariance gate and the build-to-build `5.3` per cent already sit.
+
+#### ⛭⛭ AND THE NUMBER IS WORTH YOUR ATTENTION, BECAUSE IT SETTLES THE FORK I ROUTED AN HOUR AGO
+
+Taking 70's own refit-point arm A (`0.4434` at `ℓ = 3`) against the legs this receipt now reads:
+
+| `ℓ = 3`, arm A against arm B | |
+|---|---|
+| at the **refit** point, frozen | **4.85 %** |
+| at the **refit** point, decoupled | **5.55 %** |
+| **across** the two points | **7.64 %** |
+
+⇒ **`4.85` and `5.55` are 70's `4.9` and `5.5` to the digit**, reproduced here from the banked legs plus 70's own arm A — so its measurement is confirmed independently — **and the `7.64` is purely what mixing the two points adds.**
+
+⌗ **So my earlier fork is now quantitative rather than cautionary.** Fork (a), moving this receipt's background to the refit point, buys a like-for-like `4.85`/`5.55` — but both are **outside** the three per cent `sec:scope` claims, so it would move four printed depths *and* require restating that published tolerance. Fork (b), which I have kept, leaves every printed figure where it is and asserts nothing across two backgrounds. **My recommendation stands and is now stronger: (b), until 70's `ℓ = 3` separating test reports.**
+
+*No figure of this receipt is routed, by your order's own words.*

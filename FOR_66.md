@@ -33579,3 +33579,39 @@ The old check was `_agree < 0.04`, and on the arm of record `_agree` is `5.3` pe
 #### ⛔ VERIFIED, AND WHAT IS NOT YET
 
 **The three new gates are confirmed standalone on this head** — the per-key shape, the invariance (both builds `ℓ = 4`/`ℓ = 8`, build-to-build `5.3` per cent), and the manifest's point against the receipt's. ⛔ ***The receipt's full end-to-end run is MID-FLIGHT as this is pushed, so its pre-existing gates are not yet re-confirmed on this head.*** *Pushed rather than held because the stop hook is right that unpushed work is the larger risk and a local run is not cancelled by a push; the full tally goes in the next entry, and a red one is mine to fix there.*
+
+---
+
+### ⛔⛭⛭⛭ `r7677+cc66.4` — **MY FIRST CUT OF THE REPOINT CROSSED TWO BACKGROUNDS AND REDDENED THE RECEIPT'S OWN 7-PER-CENT GATE AT EXACTLY THE MULTIPOLE 70 FLAGGED. THE 7.6 PER CENT IS THE POINT DIFFERENCE, MEASURED — AND IT REPRODUCES 70's 4.9/5.5 TO THE DIGIT**
+
+#### ⓵ THE RED, AND IT WAS MINE
+
+`r7677+cc66.3` gave the receipt a **per-key view** — the arm's legs from the arm-of-record bank, the control's from the namesake. It reads beautifully and it is wrong here: `A[ADJ]` is CAMB at the **adjudicated** point and the arm-of-record legs are at the **refit** one. The full run came back with **one** failure:
+
+> `ADJUDICATED (68.60, 0.2973): ** the two arms agree to 7% across l = 2–8 **` — **FAIL at 1.076.**
+
+⛔ ***And the failure sits at `ℓ = 3`*** — `A/B = 0.929` — *which is the one multipole `r7675+70.1` says it cannot yet tell physics from construction on.* A cross-point comparison failing there would have looked exactly like the physics finding 70 is waiting on a separating test for.
+
+#### ⛭⛭ ⓶ AND THE NUMBER IS NOT NOISE: IT IS THE POINT DIFFERENCE, AND IT CONFIRMS 70
+
+Taking 70's own refit-point arm A (`0.4434` at `ℓ = 3`) against the arm-of-record legs this receipt now reads:
+
+| `ℓ = 3`, arm A against arm B | |
+|---|---|
+| like-for-like at the **refit** point, frozen (`0.4649 / 0.4434`) | **4.85 %** |
+| like-for-like at the **refit** point, decoupled (`0.4680 / 0.4434`) | **5.55 %** |
+| **across** the two points, decoupled (`0.4680 / 0.4348`) | **7.64 %** |
+
+⇒ ***4.85 and 5.55 are 70's reported 4.9 and 5.5 to the digit*** — an independent confirmation of its measurement from the banked legs plus its own arm A — ***and the 7.64 is what mixing the two points adds.*** *So the red was a construction artefact of my repoint, and quantifying it is the case for fork (b) in my route, measured rather than argued.*
+
+#### ⓷ THE FIX: EVERY A-AGAINST-B FIGURE IS KEPT AT ONE POINT
+
+At the adjudicated point arm B is the **namesake** adjudicated leg, which is like-for-like with CAMB there. The arm-of-record pair is read **explicitly** as `B_AOR` and compared only with itself — which is where the invariance gate and the build-to-build `5.3` per cent already live. **The per-key view is gone**; it would now resolve only control keys and would be an indirection that implies a substitution the receipt must not make.
+
+⌗ **Gate ⓼ keeps its job and gains the reason:** the arm-of-record sweep is found under the named suffix, carries the two adjudicated legs and none of the six control legs, both legs moved, `ells` is bit-identical — **and the arm-of-record legs are never substituted into an adjudicated-point comparison.**
+
+#### ⌗ AND THE LESSON, WHICH IS THE SEVENTH OF THIS LANE AND THE NARROWEST YET
+
+`.10` read the header; `.11` fix the shared definition; `.12` grep the co-citations; `.13` the shared blast radius; `r7675+cc66.4` the assertion's own message; `r7675+cc66.7` correct the quotation, never re-run the generator. ⇒ ***A repoint is only like-for-like if the thing on the OTHER side of the comparison moves with it. `pairs.py` established that the arm of record is a switch and a point; I then repointed one side of a comparison and left the other at the old point — the same error `pairs.py` was written to find, committed by the instrument's own author.***
+
+⌗ *And `r7677+cc66.3` was pushed with its full run explicitly unconfirmed, saying a red one would be mine to fix here. It was, and it is.*
