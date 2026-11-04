@@ -1,0 +1,33 @@
+
+====================================================================================================
+  r7669 ITEM 4 -- `c54.178`: WHO ACTUALLY READS IT, AND WHAT COULD RE-GROUND IT
+====================================================================================================
+
+      receipts MENTIONING `c54.178`                 : 47
+      receipts whose LOAD SITE names it             : 12
+    OK    ⓵ ⛭⛭ MENTIONING IS NOT LOADING, and the gap is most of the population: the great majority of receipts that name `c54.178` never load it -- they discuss it in a comment, a docstring or a provenance note   (12 loaders of 47 mentions)
+      of the loaders, cited by a body sentence      : 3
+        P15_derived_lensing_on_the_lcdm_arm.py
+            loads: ['c54.178_lcdm.npz']
+        P15_the_residual_is_contrast_and_the_lensing_potential_is_derived.py
+            loads: ['c54.178_lcdm.npz']
+        P15_what_is_left_is_lensing_and_not_reionisation.py
+            loads: ['c54.178_lcdm.npz']
+    OK    ⓶ ⛭⛭⛭ EVERY BODY-CITED `c54.178` LOADER READS THE CONTROL LEG, not the CR arm   (3 body-cited loaders, all reading c54.178_lcdm.npz)
+      loaders of the CR arm `c54.178_cr*`           : 6
+        of those, cited by a body sentence          : 0
+    OK    ⓷ ⛔ AND THE CR-ARM READS -- WHICH IS WHAT THE RULING IS ABOUT -- CARRY NO BODY SENTENCE AT ALL, so no figure in print rests on `c54.178`'s CR arm   (6 CR-arm loaders, 0 of them body-cited)
+      c54.178_cr_leafrec1.npz   exists: True
+      c54.178_lcdm_leafrec1.npz exists: False
+    OK    ⓸ ⛭⛭⛭ THE RE-GROUNDING FIGURE THE ORDER ASKS FOR DOES NOT EXIST FOR THESE SENTENCES: the CR arm has a banked arm-of-record spectrum and the CONTROL has none -- so a control read cannot be re-grounded on an arm-of-record figure, there being none to re-ground onto   (cr_leafrec1 present, lcdm_leafrec1 absent)
+      of the three, whose citing sentence PRINTS a figure: 2
+        P15_derived_lensing_on_the_lcdm_arm.py
+            "\emph{Most of the fitted headroom is recovered by a genuine lensing, and about $989$ of the $1320$ survives it}: the verdict of the last paragraph stands from the derived side, lensing real and not th"
+        P15_the_residual_is_contrast_and_the_lensing_potential_is_
+            "\emph{Most of the fitted headroom is recovered by a genuine lensing, and about $989$ of the $1320$ survives it}: the verdict of the last paragraph stands from the derived side, lensing real and not th"
+    OK    ⓹ ⛭ SO ITEM 4 REDUCES TO ONE SENTENCE, shared by two receipts, and it is a control read: *"Most of the fitted headroom is recovered by a genuine lensing, and about $989$ of the $1320$ survives it"* -- figures `989` and `1320`   (2 of 3 print a figure, sharing one sentence)
+    OK    ⓺ ⛔⛭⛭ ⇒ ITEM 4 HAS NO RE-GROUNDING WORK, AND ITEM 3 IS WHY: the only figure in print that rests on a `c54.178` read rests on its CONTROL leg, which has no arm-of-record counterpart anywhere in the bank.  That makes it the order's ITEM 3 case -- a control-only read, which leaves the list if 70 reports the switch does not touch the control -- and NOT item 4's.  ⚠ Nothing here counts it, per the order   (routed to item 3, not re-grounded here)
+
+====================================================================================================
+  ✓ ALL CHECKS PASSED
+====================================================================================================

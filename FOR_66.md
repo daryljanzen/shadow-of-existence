@@ -32614,3 +32614,30 @@ Item 1 done. `computations/beyond_the_wall/r7669_cc66_reading_the_undecidable/` 
 ⇒ **Item 2 is now the whole of the work and it turns on SENTENCES, not loads.** 15 stay on namesake reads, 4 are decided by which figure their sentence prints, 4 need a human read. **Item 4 (`c54.178`) is untouched and is the next increment.**
 
 **Verified:** `classify.py` rc=0, 9 of 9; `NODE=cc66 bash scripts/turn_gates.sh` on this tree — **`ran 123 of 123`, `PASS=123 FAIL=0 UNRUN=0`**.
+
+### ⛔⛭⛭⛭ `r7669+cc66.2` — **ITEM 4 HAS NO RE-GROUNDING WORK IN IT, AND YOUR OWN ITEM 3 IS WHY**
+
+`item4_c54178.py` in the same directory — **6 checks, 0 failures**. Item 4 asks that `c54.178`'s sentence be re-grounded on an arm-of-record figure or withdrawn, and that I route the sentence and the figure. **Measured, the premise does not hold:**
+
+| | |
+|---|---|
+| receipts **mentioning** `c54.178` | **47** |
+| receipts whose **load site** names it | **12** |
+| of those, cited by a **body sentence** | **3** — and **all three load `c54.178_lcdm.npz`, the CONTROL** |
+| loaders of the **CR arm** `c54.178_cr*` | **6**, of which body-cited: **0** |
+| `c54.178_cr_leafrec1.npz` | **exists** |
+| `c54.178_lcdm_leafrec1.npz` | **does not exist** |
+
+⇒ **There is no arm-of-record figure to re-ground these sentences onto**, because they are control reads and the control has no arm-of-record leg anywhere in the bank — which is `classify.py`'s `Ⓐ①` applied to one configuration. And the CR-arm reads, which are what the ruling is *about*, **carry no body sentence at all**; `c54.178_cr_leafrec1.npz` exists, so had a sentence needed that figure it was available — none does.
+
+**Item 4 therefore reduces to ONE sentence**, shared by `P15_derived_lensing_on_the_lcdm_arm` and `P15_the_residual_is_contrast_and_the_lensing_potential_is_derived`:
+
+> *"Most of the fitted headroom is recovered by a genuine lensing, and about `$989$` of the `$1320$` survives it"*
+
+**and it is a control read.** ⇒ **That makes it your ITEM 3 case, not item 4's**: a control-only read, which leaves the list if 70 reports the switch does not touch the control. **Nothing here counts it**, per your order. *The third body-cited loader, `P15_what_is_left_is_lensing_and_not_reionisation`, prints no figure in its citing sentence at all — "Of the two, one cannot pay at all" — so it is not on PO-87's list to begin with.*
+
+⌗ **And the mechanism of the premise is worth naming, because it is the third order in a row to carry one.** `r7663` item 2 described figures as absent that were in print; `r7667` item 2 presumed a cheap half that does not exist; `r7669` item 4 presumes a `c54.178` sentence resting on the CR arm. ⇒ **Each time the description was inherited from the previous turn's routing — including mine — and the turn that produced the routing had already moved past it.** *The guard is the one I owed at `r7663+cc66.3` and still hold to: name the tree a read was made on. Every figure here is measured at `5e2eb9658`.*
+
+⌗ **`⓵` is also a gate against my own last miss:** 47 mentions against 12 loaders, in one receipt's own population. *That ratio is why arm ① of `cc66.0` was falsified — I counted receipts that **mention** `leafrec1`, and mentioning is not loading. It is now asserted rather than remembered.*
+
+**Verified:** `item4_c54178.py` rc=0, **6 of 6**; `NODE=cc66 bash scripts/turn_gates.sh` on this tree — **`ran 123 of 123`, `PASS=123 FAIL=0 UNRUN=0`**.
