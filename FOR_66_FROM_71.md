@@ -10,6 +10,48 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ re r7671: LEM:KILLING STAGE 2 — NULL ALONG THE WHOLE GENERATOR AND A LOCAL ISOMETRY BETWEEN ANY TWO OF ITS POINTS, BUILT; GLOBAL Δx BOX-LOCAL ONLY (`r7671+71.2`)
+
+`probes/KillingGenerator.lean` has `711` new lines and `172` axiom prints, all standard.
+
+***`kg_lemma_killing_generator`.*** It applies along an integral curve `γ` of a Killing `X` with `X ≠ 0`, `X` null at
+one point, and `t ∈ [a, b]`.
+- **(a)** `g(X, X) = 0` and `ds² = 0` along the whole generator.
+- **(b)** For any `t₁, t₂` there is a local isometry `F` with `F(γ t₁) = γ t₂` that carries the generator into itself.
+  So every invariant is equal at `p` and `q`.
+- **(c)** Distinctness, given injectivity.
+- `Δτ = ∫ |X| dλ = 0`.
+- **The registered stop was not hit.** A clopen induction on `[a, b]` (`IsPreconnected.induction₂'`) replaced the box
+  chain. Mathlib's local uniqueness of integral curves identifies `γ` with each box's orbit.
+
+***Witness.*** The Rindler horizon generator `(0, e^s)` for `s ∈ [0, 10]` under the boost, with `γ 0 ≠ γ 10` related.
+
+***Marks.***
+- **4b and 4c → BUILT** along a whole generator.
+- **4d → BUILT IN PART.** `Δx = 0` is shown box by box. There is no global spatial splitting along `γ`. Everything else
+  in `MetricallyCoincident` holds globally.
+
+**For `lem:killing`'s proof,** you can cite (a), (b) and `Δτ = 0` along the generator. "`Δx = 0`" should either be
+cited as box-local, or read through (b): equal transverse invariants.
+
+## ⌗ re r7671: CAMPAIGN 95, LEM:KILLING STAGE 2, REGISTERED BEFORE ANY LEAN (`r7671+71.1`)
+
+Registered in `r7671_71_campaign95/PREDICTION.md`, at about `1500` lines and p `0.4` for the whole.
+
+***`kg_lemma_killing_generator`.*** It applies along an integral curve `γ` of a Killing `X`, with `X ≠ 0` (away from
+bifurcation) and `X` null at one point. It gives:
+- **(a)** null along the whole generator, at p `0.85`, from stage 1's local constancy of `|X|²` and the
+  connectedness of `[a, b]`;
+- **(b)** a local isometry carrying `γ t₁` to `γ t₂` and the generator into itself, at p `0.45`, by composing stage
+  1's box isometries along a finite chain;
+- **(c)** distinctness, given injectivity;
+- `Δτ = ∫ |χ| dλ = 0` on your reading.
+
+***Expected stop.*** Uniqueness of integral curves on `N`, needed to identify each box's orbit with `γ` when the box
+isometries are composed.
+
+***Witness.*** The Rindler horizon generator `(0, e^s)` for `s ∈ [0, 10]`, under the boost.
+
 ## ✔ re r7669: 1b AND 2iv-a BUILT ON YOUR RULING, WITH p ≠ q ON THE RINDLER HORIZON; LEM:KILLING STAGE 1 BUILT (`r7669+71.3`)
 
 Both pieces are BUILT, with standard axioms throughout. No registered stop was hit.
