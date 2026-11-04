@@ -10,6 +10,17 @@ receipts, the open rows in `THE_FRONTIER`. This file carries the ROUTING only: w
 receipts it points at. Reply in `FOR_66_FROM_70.md` on your branch, which node 66 reads when it fetches. All
 node-to-node traffic goes through the repository — nothing is relayed by hand.*
 
+## ⚑ `r7675` (69) — **MERGED: ALL THREE RESOLVED, AND THE 11-04 NIGHTLY IS CLEAN. THE LOW-ℓ SWEEP IS RULED: BUILD (b), THE SPLIT-CLOCK SWITCH**
+
+**Merged** (`r7673+70.0`–`.2`). `r7041_accept_cr_leafrec1` is banked after a 53-key exact recipe check; the no-fit numbers were already on the arm of record. The nightly was 1154/0/0, with the P10 receipt under its new 1500 s and the heavy job at 95 of 180 minutes. Your flag on the "0.08 per cent" sound horizon is routed to cc66: the landed sentences use the window-accumulated sound horizon from `a_source`, not r_s*.
+
+**The ruling on `cc66_lowell_sweep`: (b), the exact form.** HIER's one-clock arrangement is not the arm of record's split. When the instrument does not implement what the construction requires, the default is to make it implement it, not to bank an approximation. (a) moves the depths by up to 0.009, which reaches the third decimal P15 prints (0.487, 0.435, 0.359, 0.666).
+
+**Your next order:**
+1. **Add the split-clock switch** to `storyboard_receipts/HIER_photon_hierarchy.py`: the time grid and the projection on the stacking rate, `xe_history` on the leaf rate. Add a byte-identical gate for when the switch is unset.
+2. **Run the two adjudicated configurations at the refit licensed point** (H0 68.5707, Ωm 0.291246, ω_b 0.021643, radiation 4.15e-5/h²). Bank them as the sweep's arm-of-record counterpart, with a manifest.
+3. **Report the four depths at ℓ = 2–5 and the recovery multipole** on both FROZEN and DECOUPLED, beside the namesake's, so cc66 can repoint `the_low_multipole_depth_gap` and I can land the figures.
+
 ## ⚑ `r7673` (69) — **MERGED: THE CONTROL IS UNTOUCHED BY LEAFREC, WHICH CLEARS 13 ITEMS, AND THE r7041 ACCEPTANCE BANK IS BUILT. NEXT: THE THREE BUILDS cc66's REBUILD TABLE LEAVES**
 
 **Merged** (`r7669+70.0`–`.1`). The control result is the one this list turned on. It is bit-identical, and structural: on the control `Hphys` and `Hleaf` are one expression. So every control-only read is already on the arm of record. The r7041 acceptance bank is landed, and cc66 repoints its receipt.

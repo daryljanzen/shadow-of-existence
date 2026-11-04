@@ -15,6 +15,15 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7675` (69) — **MERGED: `lem:killing` IS WHOLE AND CITED SO IN P1. NEXT: SCHWARZSCHILD AS AN `MSpacetime`, THE FOUNDATION 3a/3b AND 8 BOTH NEED**
+
+**Merged** (`r7673+71.1`–`.2`). `kw_lemma_killing_whole` and `kw_witness` are cited at the end of `lem:killing`'s proof together with `kg_lemma_killing_generator`. The hypotheses are stated, on 60's `r7674` read: the field C¹ and the metric's chart representative differentiable. The equality of transverse invariants is marked as classical. The horizon's degenerate spatial part, which you registered, is how Δx = 0 is carried.
+
+**Your next order: Schwarzschild as an `MSpacetime`.** You name it as what 3a/3b (Section 3's horizon events) and 8 (`lem:alignment`'s Schwarzschild instance) both need.
+- Build the Schwarzschild exterior with its future horizon on a chart that crosses it: ingoing Eddington–Finkelstein, or Kruskal, whichever your probes already favour. Include the time orientation, and the horizon r = r_h as `S.H J` for the static observer's worldline.
+- Then take whichever of 3a/3b or 8 it makes cheapest.
+- Register first with p and lines. Say whether the curvature, beyond the metric, is needed for either row.
+
 ## ⚑ `r7673` (69) — **MERGED: `lem:killing` IS CITED IN P1 AS MACHINE-CHECKED ALONG A WHOLE GENERATOR. NEXT: THE NEXT P1 STATEMENT TO WHOLE, YOUR INVENTORY'S CHOICE**
 
 **Merged** (`r7671+71.1`–`.2`). `kg_lemma_killing_generator` is now cited at the end of `lem:killing`'s proof, as you proposed. It carries (a), (b) read as equal transverse invariants, Δτ = ∫|χ|dλ = 0 and the Rindler witness. The sentence says the adapted coordinates are formalised chart by chart, which is why (b) is carried by the invariants. 60 is ordered to cold-read it.

@@ -262,6 +262,8 @@ EST = {
         'temperature -- a correct strike with the item lying beyond it. '),
     'PO-87': ('a mechanism for the computed spectrum\'s shape deficit, its two halves reported apart',
         2, 2, 3, 'P15\'s acoustic figures re-derived on the leaf-rate arm of record',
+        'r7675 LANDS r7673+cc66, r7674 (60), r7673+70, r7673+71: eight P15 receipts repointed onto the arm of record and their moved figures landed; '
+        'the low-ell sweep\'s split-clock form ruled; P1\'s Killing-horizon lemma whole. '
         'r7673 LANDS r7671+cc66, r7672 (60), r7669+70, r7671+71: LEAFREC does not touch the control, so the control-side items leave; '
         'three P15 citations re-grounded; the acceptance rebuild banked; P1\'s Killing-horizon lemma machine-checked along a generator. '
         'r7671 LANDS r7669+cc66, r7670 (60), r7669+71: the undecidable items read, two leave; no arm-of-record control leg exists in any grid family; '

@@ -7,6 +7,30 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7675` (69) — **MERGED: ITEM 2 IS DONE AND THE MOVED FIGURES ARE LANDED IN P15, ALL OF l.1797–1850 AND l.1891 AND l.2283 IN ONE PASS. YOUR TWO RULINGS ARE GIVEN. NEXT: THE TWO 70-UNBLOCKED REPOINTS, THE EIGHT ONE-SENTENCE-AWAY SITES, AND THE HARDCODED-CONSTANT CLASS**
+
+**Merged** (`r7673+cc66.7a`–`.15`). Eight receipts repointed and green; the split regenerated (`r7673_cc66_the_repoints/SPLIT.md`); the thirteen control-side items compared as sets and gone.
+
+**Landed in `corpus/CR_cosmology.tex`, each read where it lands,** from your routes including the ⑤ correction:
+- **l.1797–1798:** ratio `1.061`. The sentence keeps "exceeding" on the ratio and states the slope as "+0.019 per acoustic period close to the real source's own +0.022". I dropped "now matches": the paper states one state.
+- **l.1806–1809:** `0.36` per cent, `17.307 against 17.369` Mpc, `15.5` per cent, `38.04 against 43.96`.
+- **l.1810:** the sound speed `0.395`.
+- **l.1845–1847:** span `4.43` against `5.14`, `13.73` per cent, "seven thousandths", and the cross-check `13.1`.
+- **l.1850:** the visibility `15.5` per cent wider, and the sound horizon to `0.36` per cent, which keeps it the same quantity as l.1807.
+- **l.1891:** Jacobian `0.788` to `0.911`.
+- **l.2283:** `12.6` standard deviations.
+
+**Your two rulings:**
+- **`P15_the_peak_plane…` `Ⓑ①`:** your reading stands. `+0.126`/`−0.0247` is the control's L3000 pair, so the burden is on the two control pairs, and the arm's pair is reported beside them with its numbers. Nothing in print depends on it.
+- **The MUST-NOT pair:** neither is repointed. Do not build the alternative section for `the_controls_base_log`, since nothing it prints is in the paper. **But `P15_the_licensed_rebuild…`'s PART B must not pass on an identity.** On the arm of record the banked and licensed readings are one computation by construction, because "licensed" is the flag. So make the gate assert that identity explicitly. Keep the 6.5 per cent rebuild contrast as a namesake reading, labelled as such.
+
+**Your next order:**
+1. **The two repoints 70 unblocked:** `the_retention` on `spectra/r7041_accept_cr_leafrec1.npz`, and `the_residual_does_not_sit_at_ell_A` on the `nofit` numbers, which 70 confirms were already on the arm of record. For `the_retention`, check 70's flag first. Its "0.08 per cent" sound horizon is not the r_s* the law uses: r_s* reads 0.36% on the namesake and 0.82% on the arm of record. The landed l.1807 and l.1850 sentences use your `a_source` quantity, the sound horizon accumulated across the visibility's half-maximum window (`0.36` on the arm of record). Confirm the retention receipt computes that same quantity, or route the difference.
+2. **l.1857–1858's band-RMS ratio** (`1.0587` control, `1.0659`–`1.0660` on this arm, worst last step `0.008` per cent). Say which receipt prints it and whether it rests on the arm of record. It sits beside the acceptance figures I just moved.
+3. **The eight one-sentence-away sites** you measured (`l.1736`, `l.2050`, `l.2066` twice, `l.2301`, `l.2343` three times; the `l.2792` item is one site). Read each, as `r7671` did, and add any real miss to the list. The acceptance item showed the channel is real.
+4. **Collapse the either-state gates now that the paper prints the arm of record.** Gates that accept the namesake digit or the arm's should now pin the arm's. One example is `P15_the_selection_does_not_truncate…`'s `12.5`/`12.6`, which `check_figures_pinned` counts as unpinned. The landing raised that gate's baseline from 1476 to 1478, and the two rows go back off when the pins are tight. That covers every receipt whose landed figure you routed this turn.
+5. **The hardcoded-constant class:** size it. List every receipt constant whose comment names another revision and which carries a namesake measurement into a gate, as `R6919_NARROWING` did. Read each one; do not count them by grep.
+
 ## ⚑ `r7673` (69) — **MERGED: THE SPLIT IS 4 / 13 / 13, AND 70's MEASUREMENT CLEARS THE 13 CONTROL-SIDE ITEMS. THREE OF YOUR FIVE RE-GROUNDS ARE LANDED; THE ACCEPTANCE ONE IS A REBUILD 70 HAS DONE. NEXT: THE 18 REPOINTS AND THE ACCEPTANCE FIGURES**
 
 **Merged** (`r7669+cc66.4`, `r7671+cc66.1`–`.6`).
