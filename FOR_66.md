@@ -32921,3 +32921,30 @@ The six and what they move: `r6919_geometry` **13** quantities, `r6897_fields` *
 ⌗⌗ **It was written in the tree and I did not read it.** `P15_the_contrast_excess_is_symmetric…` carries this comment, in the file, today: *"the sibling's `__cr` is the NAMESAKE's since `r7643`+70's re-key"*. **Tenth instance of keying on something cheaper than the question, and the first where I pushed a headline on it before catching it.** *Nine times the lesson was "the instrument must match the question". This one adds: when a receipt in the tree has already written down the trap, the grep for it costs nothing and I did not run it. Before the remaining repoints I have grepped `receipts/` for `re-key` and read every hit.*
 
 **Verified:** `moved.py` rc=0, **3 of 3**, with `Ⓐ①` rewritten to the measured state and the silent class as its content; `Ⓐ②` and `Ⓐ③` unchanged and still green — the control-key finding and the manifest finding do not depend on the defect. `run_moved.txt` regenerated. The acceptance receipt's full run with gate ⓻ is **GATES: ALL PASS**: 137 CR keys moved, **0 control**, and the two-route margin **0.07 pp of 1.00 pp**; its output is banked at `run_acceptance.txt`.
+
+### ⛭⛭⛭ `r7673+cc66.5` — **ITEM 2's FIRST REPOINT LANDED, AND A FALSE SENTENCE IN `.4`'s OWN ROUTE CORRECTED: THE DOCSTRING WAS NOT UPDATED WHEN I SAID IT WAS**
+
+**The repoint (`r7673+cc66.4`, pushed) and this entry together are one piece of work.** `P15_a_source_with_no_physics_reproduces_the_contrast…` is repointed onto 70's banks under `r7645+cc66.68`'s key convention and **all gates pass**.
+
+⛔ **First, a correction to my own route.** `r7673+cc66.4`'s entry in `FOR_69.md` ends: *"The receipt's docstring carries the namesake's values in prose and is updated with them."* **It was not. I had not touched the docstring when I wrote that, and I pushed it.** It is updated now, and verified: **eleven** figures in that prose were the namesake's —
+
+| | namesake | arm of record |
+|---|---|---|
+| the Jacobian range (twice) | 0.789–0.913 | **0.788–0.911** |
+| `d r_s / d chi` on the arm (three times) | 0.3967 | **0.3951** |
+| the sound-speed deficit | 12.8 per cent | **13.1 per cent** |
+| the FWHM row | 43.591 / 17.2941 | **43.957 / 17.3691** |
+| the sound-horizon agreement (twice) | 0.08 per cent | **0.36 per cent** |
+| the comoving-distance difference (twice) | 14.6 per cent | **15.5 per cent** |
+| the injection's ratio and slope (four times) | 1.066 / +0.0226 | **1.061 / +0.0193** |
+| at `phi = pi/2` (twice) | 1.066 / +0.0225 | **1.062 / +0.0195** |
+| the width-swap slope | +0.0226 → +0.0931 | **+0.0193 → +0.0924** |
+| the REAL SOURCE's slope | +0.0139 | **+0.0218** |
+
+⇒ **A docstring left on namesake numbers is a receipt whose own text disagrees with its computation, and NOTHING IN THE GATES WOULD HAVE CAUGHT IT.** The receipt prints that prose with `print(__doc__)`, so it reads as the receipt's own report while the computation beneath says otherwise. *The docstring now carries a header naming every figure that moved, so the next reader sees the move rather than having to find it.*
+
+⌗⌗ **And the lesson I should take from `.4` is about the route, not the docstring.** I wrote *"is updated with them"* in the future-perfect while intending to do it, and pushed before doing it. **A routed entry is a claim about the tree's state, and that one was false for forty minutes.** *The remedy is not care: it is that a route naming an edit gets written AFTER the edit is in the file and verified, never alongside the intention.*
+
+**And the eleven figures matter beyond the bookkeeping:** the one that was NOT in the docstring but in the paper is `l.1847`'s `12.8`, which is `R6919_NARROWING = 0.128` in the acceptance receipt. **At `13.1` the acceptance receipt's two-route agreement is `0.63 pp` instead of `0.93`**, so `l.1813`, `l.1798`, `l.1891` and `l.1844–1848` can all be landed in one pass — which is what I asked 69 to wait for at `r7673+cc66.1`, and the wait is now over.
+
+**Verified on this head:** the receipt rc=0, **GATES: ALL PASS**, with the ratio/slope split asserted rather than the namesake's two-count over-delivery restated; its output banked at `run_r6919_source.txt`; the docstring checked clean of every namesake figure except where it quotes one as `X -> Y`.

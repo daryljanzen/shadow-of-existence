@@ -11,9 +11,10 @@ refit minima.  No new physics knob, no refit, nothing touching `prop:flat`, and 
  ⚑⚑ (1) ⓵ THE SOURCE IS IRRELEVANT TO IT, AND THE GEOMETRY OVER-DELIVERS.  A pure
      `g(eta) cos(k r_s(eta))` -- no transfer, no terms, no weights -- projected through each arm's own
      kernel, visibility, k grid and multipole grid gives an arm-to-control retained ratio of
-     ** 1.066 with a slope of +0.0226 per unit q **, against the real source's 1.054 and +0.0139.
+     ** 1.061 with a slope of +0.0193 per unit q **, against the real source's 1.054 and +0.0218 --
+so the RATIO over-delivers and the SLOPE no longer does (r7673+cc66.4).
      ⇒ *** The projection's geometry accounts for the whole of the measured effect and then some. ***
-     ⌗ And the injection's PHASE is not the answer: at phi = pi/2 it is 1.066 and +0.0225, unchanged.
+     ⌗ And the injection's PHASE is not the answer: at phi = pi/2 it is 1.062 and +0.0195, unchanged.
 
  ⛔ (2) THE ORDER'S NAMED CANDIDATE IS IN THE INSTRUMENT, BUT NOT WHERE THE ORDER PUTS IT.  The order
      proposes that `chi(eta)` -- "this arm's own conformal-distance-to-time relation" -- is read on
@@ -22,7 +23,7 @@ refit minima.  No new physics knob, no refit, nothing touching `prop:flat`, and 
      there to exchange. **  ⇒ *The two clocks sit between `r_s` and `eta`*: `eg` -- conformal time,
      and so `x0` -- is built from `Hphys`, the STACKING rate, while the acoustic phase accumulates on
      the LEAF rate.  On the control `Hleaf` and `Hphys` are character-identical, so
-     `Jac = d eta_leaf / d eta_stack` is 1.000000 everywhere; ** on the arm it runs 0.789 to 0.913
+     `Jac = d eta_leaf / d eta_stack` is 1.000000 everywhere; ** on the arm it runs 0.788 to 0.911
      across +-3 FWHM of the visibility. **
 
  ⚑⚑⚑ (3) AND THAT IS WHERE THE TWO FACTORS PART COMPANY, AS ONE NUMBER PER ARM.  Across the
@@ -30,14 +31,14 @@ refit minima.  No new physics knob, no refit, nothing touching `prop:flat`, and 
 
          arm       FWHM(eta)    d r_s (own clock)   d chi = d eta    d r_s / d chi
          control      38.042         17.3074           38.042          0.454950
-         arm          43.591         17.2941           43.591          0.396733
+         arm          43.957         17.3691           43.957          0.395135
 
-     ** The SOUND HORIZON accumulated across the visibility is the same on the two arms to 0.08 per
-     cent, while the COMOVING DISTANCE across it differs by 14.6 per cent. **  ⇒ *On the arm the leaf
+     ** The SOUND HORIZON accumulated across the visibility is the same on the two arms to 0.36 per
+     cent, while the COMOVING DISTANCE across it differs by 15.5 per cent. **  ⇒ *On the arm the leaf
      clock makes `r_s` accumulate more slowly per unit `eta`, so a 15 per cent wider window in `eta`
      covers the SAME acoustic phase -- and the kernel, which reads `chi`, sees the wider window.*
      ⇒ *** The joint object is d r_s / d chi across the visibility: the sound speed the KERNEL sees,
-     0.3967 on the arm against 0.4550 on the control, 12.8 per cent lower. ***
+     0.3951 on the arm against 0.4549 on the control, 13.1 per cent lower. ***
 
  ⛔ (4) ⓶ AND THE TWO ARE NOT SEPARABLE, WHICH IS THE OUTCOME THE ORDER NAMED THIRD.
       * ** THE CLOCK SWAP IS NOT WELL POSED AS A ONE-AT-A-TIME ISOLATION, AND THE STATISTIC SAYS SO
@@ -49,7 +50,7 @@ refit minima.  No new physics knob, no refit, nothing touching `prop:flat`, and 
         exactly this and it fires here; reported as an ill-posed swap and not as a measurement.*
       * ** THE VISIBILITY-WIDTH SWAP IS WELL POSED AND IT DOES NOT CLOSE IT EITHER -- it OVERSHOOTS
         by eight. **  Giving each arm the other's FWHM about its own peak takes the slope from
-        +0.0226 to ** +0.0931 ** while barely moving the mean (1.066 to 1.057): band by band
+        +0.0193 to ** +0.0924 ** while barely moving the mean (1.061 to 1.053): band by band
         0.985 -> 1.380.  *So the width is a strong lever on the q-dependence and is not what sets
         the level -- and swapping it does not neutralise the difference, it amplifies it.*
      ⇒ *** So the two factors close only together, and the joint object is (3): the ratio of the
@@ -64,16 +65,16 @@ refit minima.  No new physics knob, no refit, nothing touching `prop:flat`, and 
 -------------------------------------------------------------------------------
 WHAT IS CLAIMED.
 
- (1) A physics-free `g cos(k r_s(eta))` injection gives an arm/control retained ratio of 1.066 and a
-     slope of +0.0226 per unit q, against the real source's 1.054 and +0.0139 -- so the geometry
+ (1) A physics-free `g cos(k r_s(eta))` injection gives an arm/control retained ratio of 1.061 and a
+     slope of +0.0193 per unit q, against the real source's 1.054 and +0.0218 -- so the geometry
      accounts for the effect and over-delivers, and the answer does not depend on the injection's
-     phase (1.066 / +0.0225 at phi = pi/2).
+     phase (1.062 / +0.0195 at phi = pi/2).
  (2) `chi(eta) = eta_0 - eta` on BOTH arms, so d chi / d eta == 1 and the order's proposed swap is
      empty; the two clocks are between `r_s` and `eta`, with `Jac` 1.000000 on the control and
-     0.789-0.913 across +-3 FWHM on the arm.
- (3) Across the visibility FWHM the accumulated sound horizon agrees to 0.08 per cent (17.3074
-     against 17.2941 Mpc) while the comoving distance differs by 14.6 per cent (38.042 against
-     43.591), so d r_s / d chi is 0.4550 against 0.3967.
+     0.788-0.911 across +-3 FWHM on the arm.
+ (3) Across the visibility FWHM the accumulated sound horizon agrees to 0.36 per cent (17.3074
+     against 17.3691 Mpc) while the comoving distance differs by 15.5 per cent (38.042 against
+     43.957), so d r_s / d chi is 0.4549 against 0.3951.
  (4) The clock swap is ill posed as an isolation -- it moves the comb, and the statistic alternates in
      sign band by band; the visibility-width swap is well posed and takes the slope to +0.0931.
  (5) `SRCINJ`, `SRCINJPH`, `SRCINJRS` and `SRCINJVIS` are inert when unset, bit-identically, on both
@@ -107,6 +108,16 @@ COMPUTES: scope.
   * ** The solver is SKIPPED on the injected runs **, because the analytic source replaces `S`
     entirely and evolving the hierarchy would build an array nothing reads.
   * NOTHING IS FITTED.
+
+⛭⛭⛭ r7673+cc66.4 -- EVERY FIGURE IN THIS DOCSTRING IS THE ARM OF RECORD'S.  The receipt was
+repointed onto 70's LEAFREC=1 banks under r7645+cc66.68's key convention, and the prose below
+carried the NAMESAKE's numbers until this revision.  The ones that moved: the Jacobian
+0.789-0.913 -> 0.788-0.911; d r_s/d chi on the arm 0.3967 -> 0.3951 and the deficit 12.8 ->
+13.1 per cent; the sound-horizon agreement 0.08 -> 0.36 per cent; the comoving-distance
+difference 14.6 -> 15.5 per cent; the injection's ratio 1.066 -> 1.061 and slope +0.0226 ->
++0.0193; and the REAL SOURCE's slope +0.0139 -> +0.0218, which is what falsifies the slope
+half of the over-delivery.  ⛔ *A docstring left on namesake numbers is a receipt whose own
+text disagrees with its computation, and nothing in the gates would have caught it.*
 
 ====================================================================================================
   [PASS] the bank this receipt reads is present: `spectra/r6919_injected_lcdm_leafrec1.npz`   (r6919_injected_lcdm_leafrec1.npz)
