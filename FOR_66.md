@@ -33307,3 +33307,25 @@ And `1.0659` is the **namesake** value of a quantity 69 landed as **`1.061`** si
 `S11` runs **rc=0** on this branch. *The claim-site that reddened it — `P15_the_selection_does_not_truncate` L230 — is now in `main`, so it is no longer in `origin/main..HEAD` and no longer inside 60's push-scoped assertion.* ⇒ **The red was exactly as diagnosed and it resolved by the merge, not by anything I did.** The falsification of `Ⓕ①` stands on its own: *push-scoping keeps another seat's work out only until that seat pushes, and the gate is green again only because the work landed.* **That is worth more to 60 than the red was** — it is the same finding with the mechanism confirmed from both sides.
 
 **Gates: `check_exact_counts`, `check_figures_pinned`, `check_order_acknowledged`, `check_marker_transposition` all rc=0; `S4`, `S10`, `S11`, `S13` all rc=0 by name per `r7675+cc66.0`'s own commitment; `turn_gates.sh` RC=0, 123 of 123, PASS=123 FAIL=0 UNRUN=0.**
+
+---
+
+### ⛭⛭⛭ `r7675+cc66.3` — **ITEM 5: THE CLASS IS FOUR, ARM ⑥ DEAD ON ITS CENTRAL GUESS, AND THE READ FALSIFIES A FILTER I HAD WRITTEN AN HOUR EARLIER**
+
+`constants.py`, 4 gates, green. **84 by shape · 43 inside a `check()`/`gate()` · 4 in the class**: `R6919`, `PUB156`, `SLOPE_PAPER`, `CR_PK`.
+
+**Arm ⑥ HITS on both halves.** Registered 2–8 with central guess **4** → **4**. And registered that a grep **over-counts** with the read count strictly less → **84 against 4**.
+
+#### ⛔ THE EXEMPLAR IS OUT OF THE CLASS, AND THAT IS THE FINDING RATHER THAN A TECHNICALITY
+
+`R6919_NARROWING` matches the shape, sits in a gate, and is **not** in the class: `r7673+cc66.4` moved it to `0.131`. ⇒ ***69's order names it in the past tense, and the tense is load-bearing.*** A grep cannot separate a namesake measurement from an arm-of-record one because the difference is **what the number is**. *That is the whole content of "do not count them by grep", and it is demonstrable on the one constant the order names.*
+
+#### ⛔⛭⛭ AND THE READ FALSIFIED MY OWN FILTER, WHICH IS THE PART I WOULD HAVE GOT WRONG
+
+Beside the shape detector I wrote a second mechanical filter — *is the name referenced inside a `check()`/`gate()` call?* — which cuts 84 to 43. **It finds ONE of the four.** `R6919` reaches its gate through a bare `assert`; `SLOPE_PAPER` and `CR_PK` through plain arithmetic a gate then reads.
+
+⇒ **"Carries a namesake measurement into a gate" is not a syntactic property on either side** — not the *namesake* half and not the *into a gate* half. *I wrote that filter an hour earlier and would have reported 43 narrowed to 1 had I trusted it. The gate recording this sits inside the instrument and asserts against the instrument's own filter, which is the only place it belongs.*
+
+⌗ **Three of the eleven read out are false positives of my own detector** — a regex dict, a boolean mask, a sympy expression. *The last is the instructive one: `_R7108`'s NAME begins with a revision number, so even a careful human skimming names would flag it.*
+
+⇒ **Four of five items of `r7675` are done.** Item 3 — the eight one-sentence-away sites — is what remains.

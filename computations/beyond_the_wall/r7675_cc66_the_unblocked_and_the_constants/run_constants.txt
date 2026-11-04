@@ -1,0 +1,137 @@
+
+`r7675` (cc66) ⓹ -- ** THE HARDCODED-CONSTANT CLASS, SIZED BY READING AND NOT BY GREP. **
+
+*** 84 CONSTANTS MATCH THE SHAPE.  43 OF THOSE ARE REFERENCED INSIDE A `check()`/`gate()` CALL.
+** FOUR ARE THE CLASS. **  AND THREE OF THE FOUR ARE *NOT* IN THAT 43 -- THEY REACH A GATE THROUGH A
+BARE `assert` OR THROUGH PLAIN ARITHMETIC -- SO A MECHANICAL `is it in a gate` FILTER WOULD HAVE
+FOUND ONE OF FOUR AND MISSED THREE. ***
+
+Built r7675+cc66 (node 66, code seat), answering `r7675` ⓹.
+
+===================================================================================================
+** WHAT THE CLASS IS, STATED BEFORE ANYTHING IS COUNTED **
+===================================================================================================
+
+`r7675` ⓹: *"every receipt constant whose comment names another revision and which carries a NAMESAKE
+MEASUREMENT into a gate, as `R6919_NARROWING` did.  Read each one; do not count them by grep."*
+
+** Three conditions, and all three have to hold: **
+  ⑴ a module-level constant bound to a numeric literal, whose NAME or adjacent COMMENT names a
+     revision -- the mechanical shape, and the only part a grep can decide;
+  ⑵ its value is a MEASUREMENT OF AN ARM QUANTITY -- not a tolerance, a unit conversion, a
+     pre-registered population, a published datum, a target, a mask or a regex;
+  ⑶ and that measurement is the NAMESAKE's, so the arm of record would move it.
+
+⛔ ** CONDITION ⑶ IS WHY THIS CANNOT BE GREPPED, and `R6919_NARROWING` is the proof: ** it is the
+constant the order names as the exemplar, it matches the shape, it is referenced in a gate -- and it
+is **NOT IN THE CLASS ANY MORE**, because `r7673+cc66.4` moved it to the arm of record's `0.131`.
+*A grep cannot tell a namesake measurement from an arm-of-record one, because the difference is in
+what the number IS and not in how it is written.*
+
+===================================================================================================
+** AND THE MECHANICAL `IN A GATE` FILTER IS UNSOUND, WHICH THIS FILE MEASURES AGAINST ITSELF **
+===================================================================================================
+
+I wrote the shape detector first and added a second mechanical filter: is the constant's name
+referenced inside a `check()` or `gate()` call?  That filter cuts 84 to 43 and it is **wrong for
+this question**: ** three of the four class members fail it. **
+  * `R6919` reaches its gate through a bare `assert`, not a `check()`;
+  * `SLOPE_PAPER` and `CR_PK` reach theirs through plain arithmetic whose result a gate then reads.
+⇒ *** So the filter I would have trusted finds 1 of 4.  That is a second, independent reason the
+order's `read each one` is right, and it is a defect in the instrument I had just written. ***
+
+
+====================================================================================================
+  ① THE SHAPE, AND THE `IN A GATE` FILTER I WOULD HAVE TRUSTED
+====================================================================================================
+  constants matching the shape          : 84 in 53 receipts
+  ...of those, inside a check()/gate()  : 43
+    [ok]  ① the shape is a GREP and its count is reported as one -- a module-level constant bound to a numeric literal whose name or adjacent comment names a revision   84 by shape, 43 of them in a check()/gate()
+
+====================================================================================================
+  ② THE READ -- EVERY VERDICT WITH WHAT IT RESTS ON
+====================================================================================================
+
+  IN THE CLASS  (4)
+    R6919              the_band_rms_ratio                        
+      {'fixed': 1.0587, 'sweepown': 1.0659} -- the NAMESAKE arm-to-control retained ratios u
+      nder two injection schemes. a_source's own source says 1.0659 reads 1.0612 on the arm 
+      of record, and 69 landed 1.061 at l.1798. Reaches its gate through a bare `assert`
+    PUB156             the_peak_plane_survives_the_merge         
+      (11.3, 21.4, 11.4, 22.6) -- 'arm then control'. The first two are the ARM's separation
+       factors measured on the NAMESAKE; r7673+cc66.13 measured 12.7/19.9 on the arm of reco
+      rd and split the gate so the pin is asserted where it was measured. Still a namesake m
+      easurement
+    SLOPE_PAPER        the_phase_systematic_leaves_the_step      
+      0.0139 -- its own comment says '(the LEAFREC=0 arm's)'. The namesake arm's slope, wher
+      e the arm of record gives the +0.019 69 landed at l.1798
+    CR_PK              the_skys_own_fourth_peak                  
+      [221.8, 536.8, 812.9, 1126.5] -- the ARM's peak positions hardcoded from cc66.28, a na
+      mesake-era locator run. Reaches its gate through plain arithmetic (CR_PK[3] - LCDM_PK[
+      3])
+
+  READ OUT OF THE CLASS  (11)
+    R6919_NARROWING    the_acceptance_does_not_move_under_refin  
+      0.131 -- THE ORDER'S OWN EXEMPLAR, AND ALREADY FIXED: r7673+cc66.4 moved it from the n
+      amesake 0.128 to the arm of record's 0.131 and its comment says ARM OF RECORD. Out of 
+      the class because of what the number IS, which no grep can see
+    _R7108             the_kernel_carries_no_sound_speed         
+      a SYMPY EXPRESSION -- sp.diff(u, eta, 2) + (k**2 - sp.diff(a, eta, 2)/a)*u, the tensor
+       equation written out. My detector matched the numeric literal `2` inside the derivati
+      ve orders. A third false positive of the shape, and the most instructive of the three:
+       the name begins with a revision number, so even a human skimming names would flag it
+    RESIDUAL           the_kernels_phase_difference              
+      -78.3 -- the digit l.2142 PRINTS, updated at r7657 from -96.6. A paper digit checked a
+      gainst the computation, which is the legitimate 'read at a PIN' shape and not this cla
+      ss
+    BANKED             the_peak_plane_survives_the_merge         
+      (0.126, -0.0247) -- cc66.156's L3000 **control** driving pair. A control measurement, 
+      and r7669+70.1 measured that LEAFREC does not reach the control, so the arm of record 
+      cannot move it
+    STEP_REPORTED      the_phase_systematic_leaves_the_step      
+      0.0617 -- its comment says 'on the ARM OF RECORD (was 0.043)'. Already moved at r7637
+    MEASURED_SD        the_projection_join_inverts               
+      this receipt's own eight widths. A projection-join geometry quantity with no LEAFREC d
+      ependence -- the join is read on the paper's own two lengths
+    R7164_SD           the_projection_join_inverts               
+      r7164's eight printed widths, asserted against MEASURED_SD beside them -- a reproducti
+      on check of another revision's PRINTED figures, which is the thing this class is the o
+      pposite of: the comparison is the content
+    STRETCH_P          the_projection_join_inverts               
+      2.774 -- the value the paper prints, held beside the computed STRETCH = 2.7739 precise
+      ly so the two can be compared. A paper digit, not a namesake measurement
+    PAT                the_residual_does_not_sit_at_ell_A        
+      a dict of REGEXES. My detector matched the group-count literals inside it -- a false p
+      ositive of the shape, not a number at all
+    TARGET             the_substrate_cannot_tilt                 
+      n_s - 1 = -0.005, the refit's PREFERENCE at r6805. A target the receipt solves against
+      , not a measurement of an arm's output
+    R133               the_two_measures_of_the_separation        
+      FULL & (HI <= 1296) -- a boolean MASK. My detector matched the 1296. Another false pos
+      itive
+    [ok]  ② ⛭⛭ THE CLASS IS 4, AND THE GREP IS 84: every constant given a verdict has a stated reason for it, and the reason is what the NUMBER IS rather than how it is written   4 in the class, 11 read out, each with its reason
+
+====================================================================================================
+  ③ THE ORDER'S OWN EXEMPLAR IS NO LONGER IN THE CLASS, AND THAT IS WHY A GREP CANNOT DO THIS
+====================================================================================================
+  R6919_NARROWING: in_class=False
+    0.131 -- THE ORDER'S OWN EXEMPLAR, AND ALREADY FIXED: r7673+cc66.4 moved it from the names
+    [ok]  ③ ⛔ `R6919_NARROWING` matches the shape, is referenced in a gate, and is NOT in the class, because `r7673+cc66.4` moved it to the arm of record.  *The order names it in the PAST tense and the tense is load-bearing: a grep cannot tell a namesake measurement from an arm-of-record one, because the difference is in what the number IS*
+
+====================================================================================================
+  ④ ⛔ AND THE `IN A GATE` FILTER I WROTE FINDS ONE OF THE FOUR
+====================================================================================================
+  class members the filter FINDS  : 1  ['PUB156']
+  class members the filter MISSES : 3  ['R6919', 'SLOPE_PAPER', 'CR_PK']
+  *`R6919` reaches its gate through a bare `assert`; `SLOPE_PAPER` and `CR_PK` through plain
+   arithmetic a gate then reads.*
+    [ok]  ④ ⛔⛭⛭ THE MECHANICAL FILTER IS UNSOUND FOR THIS QUESTION AND THIS GATE SAYS SO AGAINST MY OWN INSTRUMENT: it finds a MINORITY of the class.  ⇒ *A second, independent reason the order's `read each one; do not count them by grep` is right -- and the filter it falsifies is one I had written an hour earlier and would have trusted*   1 found, 3 missed of 4
+
+====================================================================================================
+  GATES: ALL PASS.
+  ⛭ 84 by shape, 43 inside a check()/gate(), and ** 4 in the class **:
+     R6919, PUB156, SLOPE_PAPER, CR_PK.
+  ⛔ The order's own exemplar is OUT of the class, already fixed at r7673+cc66.4 -- and the
+     mechanical `in a gate` filter finds one of the four.  Both say the same thing: this
+     question is a reading and not a count.
+====================================================================================================

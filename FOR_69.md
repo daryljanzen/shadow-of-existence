@@ -6780,3 +6780,31 @@ R6919 = {'fixed': 1.0587, 'sweepown': 1.0659}   # the banked base points this mu
 ⛔ **And I found a stale figure of my own while doing it.** `the_peak_plane`'s docstring and its `Ⓓ` gate label both said `13.1σ`/`3.1σ`; on the arm of record it computes **`13.3`/`3.0`**. Updated. *I repointed that receipt at `r7673+cc66.13` and reported "no printed figure moves" — which is still true, and I checked it again here: the only `13.1` in `CR_cosmology.tex` is `a_source`'s sound-speed cross-check at l.1847, and the one `13\sigma` match is `0.713\sigma`. **But I updated three other receipts' prose that revision and missed this one's**, so the gate carried a label its own arithmetic had stopped producing.*
 
 Baseline removed **by hand** and verified by set comparison — `comm -23` returns exactly that row, `comm -13` nothing. *Not with `--write-baseline`, which the file's header forbids and which I used once at `r7673+cc66.10` to the cost of 118 lines.*
+
+#### ⓹ THE HARDCODED-CONSTANT CLASS IS **FOUR**, AND BOTH HALVES OF WHY IT HAD TO BE READ ARE MEASURED
+
+`computations/beyond_the_wall/r7675_cc66_the_unblocked_and_the_constants/constants.py`, 4 gates, green.
+
+**84** constants match the shape — a module-level constant bound to a numeric literal whose name or adjacent comment names a revision. **43** of those are referenced inside a `check()`/`gate()` call. ***Four are the class:***
+
+| constant | receipt | what it is |
+|---|---|---|
+| **`R6919`** | `the_band_rms_ratio…` | `{'fixed': 1.0587, 'sweepown': 1.0659}` — the **namesake** arm-to-control ratios; `1.0659` reads `1.0612` on the arm of record, which you landed as `1.061` |
+| **`PUB156`** | `the_peak_plane…` | `(11.3, 21.4, …)` — the **arm's** separation factors measured on the namesake; `12.7`/`19.9` on the arm of record |
+| **`SLOPE_PAPER`** | `the_phase_systematic…` | `0.0139` — its own comment says *"(the LEAFREC=0 arm's)"* |
+| **`CR_PK`** | `the_skys_own_fourth_peak…` | `[221.8, 536.8, 812.9, 1126.5]` — the **arm's** peak positions hardcoded from `cc66.28`, a namesake-era locator run |
+
+#### ⛔ AND YOUR OWN EXEMPLAR IS NOT IN THE CLASS, WHICH IS EXACTLY WHY A GREP CANNOT DO THIS
+
+**`R6919_NARROWING` matches the shape, is referenced in a gate, and is out of the class** — `r7673+cc66.4` moved it to the arm of record's `0.131`. *Your order names it in the past tense and the tense is load-bearing: a grep cannot tell a namesake measurement from an arm-of-record one, because the difference is in **what the number is**, not in how it is written.*
+
+**Eleven more match the shape and are read out**, each with its reason stated — a control measurement the switch cannot reach (`BANKED`), figures already moved (`STEP_REPORTED`), paper digits held against a computation (`RESIDUAL`, `STRETCH_P`), a reproduction check whose comparison **is** the content (`R7164_SD`), a target rather than a measurement (`TARGET`), and **three false positives of my own detector** — a regex dict (`PAT`), a boolean mask (`R133`), and a sympy expression (`_R7108`).
+
+#### ⛔⛭⛭ AND A SECOND, INDEPENDENT REASON — IT FALSIFIES AN INSTRUMENT I WROTE AN HOUR EARLIER
+
+I added a mechanical filter beside the shape detector: *is the constant referenced inside a `check()`/`gate()` call?* It cuts 84 to 43 and I would have trusted it. ***It finds ONE of the four.***
+
+- `R6919` reaches its gate through a bare **`assert`**, not a `check()`;
+- `SLOPE_PAPER` and `CR_PK` through **plain arithmetic** a gate then reads.
+
+⇒ **So "carries a namesake measurement into a gate" is not a syntactic property either.** *The gate that says so is in the instrument, asserting against the instrument's own filter — which is the only honest place to put it.*
