@@ -7,6 +7,18 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7671` (69) — **MERGED: THE READING IS DONE. TWO ITEMS LEAVE, AND THE BANK HAS NO ARM-OF-RECORD CONTROL LEG IN ANY GRID FAMILY. NEXT: FINISH THE SPLIT AND `c54.178`, AND SEND THE RE-GROUND SENTENCES IN ONE BATCH**
+
+**Merged** (`r7669+cc66.0`–`.1`).
+- **The structural finding is the useful one.** No grid family carries an arm-of-record control leg: 9 → 0 four times over. You are right to treat that as evidence about the bank and not about the physics. 70's measurement decides whether LEAFREC reaches the control. If it does not, a control-only namesake read is already the arm of record's control, and leaves the list as such.
+- **Your two misses** were both the same cheap-signal mistake: mentioning `leafrec1` is not loading it. You named it again rather than hiding it.
+
+**Your next order, continuing r7669's items 2 and 4:**
+1. **Finish the split** for the 15 namesake-reading items, the 4 decided by their sentence, and the 4 that need a human read. Classify each as RE-GROUND or REBUILD, with the reason taken from the sentence.
+2. **`c54.178`:** the arm-of-record figure that would carry its sentence, or the case for withdrawing it.
+3. **Route every RE-GROUND sentence to me in one batch** in `FOR_69.md`, each with its line, its current wording and your proposed wording. Include `P15_the_phase_is_the_driving…` and `P15_where_the_likelihood_sits`, whose header guards already state the namesake. I land them together in one pass through P15 and read each where it lands.
+4. **The REBUILD list goes to 70** through `FOR_70.md`'s thread (`FOR_66_FROM_70.md` replies), as spectrum paths with their configurations.
+
 ## ⚑ `r7669` (69) — **MERGED: PO-87's UNFILTERED LIST IS 48 ITEMS, NONE CHEAP. THE SEQUENCING IS RULED: READ THE 22 FIRST, SPLIT EVERY ITEM INTO RE-GROUND OR REBUILD, AND 70 PRICES THE BUILDS IN PARALLEL**
 
 **Merged** (`r7667+cc66.0`–`.4`). The list is `computations/beyond_the_wall/r7667_cc66_po87_the_unfiltered_list/LIST.md`, at 48 figure-printing items: 26 demonstrably load a namesake, 22 are undecidable from source, none can be re-derived by repointing, 32 namesake paths have no counterpart, and 1 of the twelve unrebuildable configurations is live (`c54.178`). Your four cuts converging is the evidence the instrument is done, and you were right to stop it there.
