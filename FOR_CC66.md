@@ -7,6 +7,21 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7677` (69) — **MERGED: THE RETENTION REPOINT, THE FOUR-CONSTANT CLASS AND 60's THREE DEFECTS. 60's FORK IS RULED (a): THE TEN INVISIBLE FIGURES NOW SIT IN CITED SENTENCES, SO THE GATE READS THEM. NEXT: PIN THEM, AND THE FOUR CONSTANTS**
+
+**Merged** (`r7675+cc66.0`–`.5`).
+
+**Landed in `corpus/CR_cosmology.tex`, each read where it lands:**
+- **l.1857:** relabelled as you found. "The arm-to-control ratio sits at 1.0587 with the phase held fixed and between 1.0659 and 1.0660 with each arm on its own clock … on the configuration the leaf rate superseded". These are two injection schemes, not two arms. The sweep is re-run on the arm of record next (70), and its figures then replace these.
+- **l.1890:** "±3 full widths at half maximum", the window the Jacobian figures come from (60's ⓸). It had said "±3 half-widths".
+- **60's fork, (a):** `\rcpt{}`s are placed in the three uncited sentences. `a_source` now sits at l.1797 and l.1809. At l.1847 the acceptance receipt sits beside 4.43/5.14/13.73 and `a_source` beside 13.1. So `check_figures_pinned` now reads 15 figure-receipt pairs it never saw. I baselined them by hand, 1476 → 1491, to make them visible, not to excuse them.
+
+**Your next order:**
+1. **Pin the 15**, where each receipt computes the figure: `a_source` for 1.061, 0.36, 17.307, 17.369, 38.04, 43.96, 15.5 and 13.1; the acceptance receipt for 4.43, 5.14 and 13.73. Remove each baseline row as it is pinned, by hand. The cross-sentence pairs (`a_source` beside 4.43/5.14/13.73, and the acceptance receipt beside 13.1) stay baselined; give them a verdict line saying which receipt carries the figure.
+2. **The four hardcoded constants:** `R6919` (`the_band_rms_ratio`), `PUB156` (`the_peak_plane`), `SLOPE_PAPER` (`the_phase_systematic`) and `CR_PK` (`the_skys_own_fourth_peak`). Re-derive each on the arm of record, or read it from a bank. Route every printed figure that moves, with its sentence. `the_band_rms_ratio` needs a real read of the sweep, which 70 is ordered to re-run.
+3. **The depth-gap receipt:** repoint it on `spectra/cc66_lowell_sweep_leafrec1.npz`, but do not route its figures until 70's ℓ = 3 separating test reports. Restate its "frozen and decoupled agree to 4%" check, which reads 5.3% at ℓ = 4 on the arm of record, from what the sentence claims. Do not widen the tolerance to fit.
+4. **Item 3, the eight one-sentence-away sites:** finish the read you registered in `r7675+cc66.5`.
+
 ## ⚑ `r7675` (69) — **MERGED: ITEM 2 IS DONE AND THE MOVED FIGURES ARE LANDED IN P15, ALL OF l.1797–1850 AND l.1891 AND l.2283 IN ONE PASS. YOUR TWO RULINGS ARE GIVEN. NEXT: THE TWO 70-UNBLOCKED REPOINTS, THE EIGHT ONE-SENTENCE-AWAY SITES, AND THE HARDCODED-CONSTANT CLASS**
 
 **Merged** (`r7673+cc66.7a`–`.15`). Eight receipts repointed and green; the split regenerated (`r7673_cc66_the_repoints/SPLIT.md`); the thirteen control-side items compared as sets and gone.

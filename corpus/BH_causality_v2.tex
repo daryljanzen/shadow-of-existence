@@ -225,6 +225,8 @@ For an exterior observer at fixed areal radius $r>r_h$, the events $p$ and $q$ l
 Thus the apparent ``vertical separation'' of horizon points in an Eddington--Finkelstein diagram, as in Fig.~\ref{fig:EF-null}, reflects only the causal ordering of distinct manifold events. It does not encode any geometric or physical temporal distance.
 \end{corollary}
 
+Both halves of the corollary are machine-checked on the radial plane of the Schwarzschild geometry in Kruskal coordinates, with the metric $-F(r)\,\mathrm{d}U\,\mathrm{d}V$ on $r>0$, the horizon at $U=0$ and a static observer at $r_0>r_h$. Two events on a generator of $U=0$ are distinct, causally ordered, not chronologically related, and both at $r=r_h$ (\texttt{sk\_cor\_EF\_events}, in \texttt{computations/formalisation/lean/probes/SchwarzschildKruskal.lean}); and along that generator the static Killing field $\partial_t=(V\partial_V-U\partial_U)/4M$ is null, so the two events are metrically coincident, with $\Delta x=\Delta\tau=0$ (\texttt{sq\_cor\_EF\_coincident}, in \texttt{SchwarzschildKilling.lean}). Neither uses the curvature.
+
 Having established that the Schwarzschild horizon is a metric singularity, we first read what it means for collapse as an exterior observer meets it, in that geometry, before generalising.
 
 \section{Gravitational collapse and black-hole merger causality: the Schwarzschild picture}\label{sec:application}

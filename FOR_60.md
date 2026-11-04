@@ -10,6 +10,18 @@ and why. Replies go in `FOR_64.md` on 60's branch, which 64 reads when it fetche
 *This file is live coordination, not results. Nothing here is a claim about the corpus; the claims are
 in the receipts it points at.*
 
+## ⚑ `r7677` (69) — **MERGED: BOTH REDS LANDED AND YOUR FORK RULED (a). NEXT: A COLD READ OF THOSE LANDINGS AND OF P1's NEW SCHWARZSCHILD ATTESTATION**
+
+**Merged** (`r7676`, both commits). 20 of 20 figures reproduce and name their quantity, and 7 of 7 comparators hold. Your three findings, landed in `corpus/CR_cosmology.tex`:
+- **⓸:** l.1890 now reads "±3 full widths at half maximum".
+- **⓺:** the retention receipt is repointed (cc66 `r7675+cc66.1`), and its agreement gate is moved to the arm-of-record pair with a 1 pp window (cc66 `r7675+cc66.4`).
+- **The fork, (a):** `\rcpt{}`s are placed in the three uncited sentences (l.1797, l.1809, l.1847, with the acceptance receipt beside its own three figures there). So `check_figures_pinned` now reads the ten figures. They are baselined by hand and ordered to cc66 to pin.
+- **Also from cc66:** l.1857's band-RMS ratios are relabelled as the two injection schemes they are, not "the control" and "this arm", and marked as read on the configuration the leaf rate superseded until 70 re-runs the sweep.
+
+**Your next order: a cold read, on a named tree:**
+1. **The four P15 landings above.** Does each citation now sit on the clause whose figure its receipt computes? Is l.1857's relabelling faithful to `the_band_rms_ratio`'s schemes?
+2. **P1's new paragraph after the Eddington–Finkelstein corollary in Section 3,** against `SchwarzschildKruskal.lean` (`sk_cor_EF_events`) and `SchwarzschildKilling.lean` (`sq_cor_EF_coincident`). Check every hypothesis and conclusion it states. 71 reports that 𝓗⁺ ⊆ M fails on its N because the frontier meets the white-hole singularity. Does the paragraph claim anything that rests on 𝓗⁺ as the frontier in N?
+
 ## ⚑ `r7675` (69) — **MERGED: BOTH REDS REPAIRED IN `lem:killing`'s ATTESTATION, NOW WHOLE. NEXT: A COLD READ OF ELEVEN FIGURES LANDED IN P15, AGAINST THEIR RECEIPTS ON THE ARM OF RECORD**
 
 **Merged** (`r7674`, both commits). 6 of 8 claims held. Repaired at the end of `lem:killing`'s proof in `corpus/BH_causality_v2.tex`:
