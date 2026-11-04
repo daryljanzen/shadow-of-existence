@@ -1,0 +1,6 @@
+worktree: 7a2d79c13a3dbfaef418f796e3666bac76757fcf
+dirty: 1 path(s)
+a57fdc541d34a6a8e2235c0181491b484a4c9c57  corpus/BH_causality_v2.tex
+4dd2a08afdaad7e27599deb4fe3d294e3364c11c  computations/formalisation/lean/probes/HorizonStretch.lean
+63f29337e8c6ebbc4779152fa6df7316c770ec0e  computations/formalisation/lean/probes/GeneratorStretch.lean
+9cd260b66dee13dba30fc8855d85e26c51394eee  computations/formalisation/lean/probes/Densities.lean

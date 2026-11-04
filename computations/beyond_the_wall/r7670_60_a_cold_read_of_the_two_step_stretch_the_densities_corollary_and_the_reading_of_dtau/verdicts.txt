@@ -1,0 +1,77 @@
+TREE: worktree: 7a2d79c13a3dbfaef418f796e3666bac76757fcf
+GUARD: {"true-probe  (`S.slice J Θ τ` occurs in a conjunct)": true, "false-probe (`S.IsCauchyTemporalOn` occurs in a conjunct)": false, "marker-probe true  (\\btwo steps\\b in the passage)": true, "marker-probe false (\\bparacompact\\b in the passage)": false, "marker-probe word-boundary (\\bproper\\b not in \"the Cauchy property\")": true, "marker-probe formula (a control-sequence marker does not match a truncation)": true, "flip-test (every derived verdict depends on its readings)": true}
+CITED NAMES: 7 cited, unresolved -> none
+
+HasFutureGenerators, the hypothesis step two names:
+   ∀ q ∈ S.H J, ∃ γ : ℝ → N, γ 0 = q ∧ ContinuousOn γ (Ici 0) ∧ (∀ t ≥ 0, γ t ∈ S.H J ∧ S.Cau q (γ t)) ∧ Tendsto γ atTop (cocompact N)
+  continuous only: True   no causal-step condition between times: True
+
+dn_cor_densities CONJUNCTS (4):
+  1. (∀ Θ τ, (S.M \ X.ι ⁻¹' St.JpastSet 𝒥) ∩ S.slice J Θ τ = ∅)
+  2. (∀ Θ τ, S.slice J Θ τ ∩ frontier (X.ι ⁻¹' St.JpastSet 𝒥) = ∅)
+  3. (∀ Θ τ, S.slice J Θ τ ∩ S.H J = ∅)
+  4. (∀ B ⊆ S.M \ X.ι ⁻¹' St.JpastSet 𝒥, ∀ Θ τ, B ∩ S.slice J Θ τ = ∅)
+  Θ binder: False   Cauchy/temporal binder: False
+
+P1's SENTENCES MENTIONING Δτ (8):
+  [47] First, the temporal separation $\Delta\tau=\tau(q)-\tau(p)$ assigned by a smooth temporal function $\tau$ is not a geometric invariant.
+  [51] That $\Delta\tau$ is frame-dependent does not mean it can be driven to zero.
+  [96] \end{enumerate} Then their temporal separation vanishes also, $\Delta\tau=0$.
+  [103] \end{remark} \begin{proof} The quantities in play are the invariant separations named in the hypotheses: $\Delta x$ is the invariant spatial separation of~(b), and $\Delta\tau$ the temporal separation conjugate to it in the frame 
+  [105] The relation among them is the Lorentzian metric relation, \[ \Delta s^2 = \Delta x^2 - \Delta\tau^2, \] the sign distinguishing the Lorentzian from the Euclidean Pythagorean relation.
+  [108] By hypothesis (a), $\Delta s^2=0$, so $\Delta x^2=\Delta\tau^2$.
+  [110] Substituting gives $\Delta\tau^2=0$, hence $\Delta\tau=0$.
+  [258] That is hypothesis~(b), and Theorem~\ref{thm:metric-singularity} then gives $\Delta\tau=0$.
+
+P1 SENTENCES SUPPORTING THE RULING:
+  FOUND      the adapted-frame definition
+      ...t spatial separation of~(b), and $\Delta\tau$ the temporal separation conjugate to it in the frame adapted to the same foliation; $\Delta s^2$ is the invari...
+  FOUND      the line element in the adapted frame
+      ...is is the metric's own difference-structure---the local form of the line element in a frame adapted to the foliation of~(b), and the formal content o...
+  FOUND      the temporal LEG of the triangle
+      ...a s^2=0$, i.e.\ an isosceles right triangle whose spatial and temporal legs are equal, so that its hypotenuse---the spacetime separatio...
+  FOUND      the along-the-connection condition
+      ...m} \begin{remark} Hypothesis (b) is, as stated, a condition along the whole connection: the connecting null geodesic remains at the comm...
+  FOUND      the Killing-parameter line element
+      ... it $dx^{i}=0$ and the line element reduces to \[ ds^{2}=g(\chi,\chi)\,d\lambda^{2}=|\chi|^{2}\,d\lambda^{2}. \] The generator is nul...
+  FOUND      the lapse named N, collapsing
+      ...}{r}\Bigr)^{-1}\,\longrightarrow\,-\infty, \qquad N=\sqrt{1-r_h/r}\,\longrightarrow\,0 . \] The collapse of the laps...
+  FOUND      a vanishing lapse times a nonzero increment carries no duration
+      ...--causal \emph{order} drawn as coordinate length, carrying no metrical duration. The geometric argument by Theorem~\ref{thm:metri...
+P1 SENTENCES READING OTHERWISE:
+  FOUND      Δτ as an endpoint difference of a temporal function
+      ...st not be merged. First, the temporal separation $\Delta\tau=\tau(q)-\tau(p)$ assigned by a smooth temporal function $\tau$ is not a geometric invariant. Different ad...
+  FOUND      the separations not accumulated along a path
+      ...$\Delta s^2$ is the invariant interval. These are not coordinate differences accumulated along some path between $p$ and $q$, and no statement about finit...
+
+①  SUPPORTED
+     all 7 names the two passages cite resolve in the files named ({'hs_stretch_N': True, 'hs_witness': True, 'gs_segment_stretch': True, 'gs_future_stretch': True, 'gs_witness': True, 'dn_cor_densities': True, 'dn_witness': True}).  The passage's "two steps" are `hs_stretch_N` and the `gs_` pair, and that is how they stand in the Lean: `gs_segment_stretch` calls `(hs_stretch_N …).1` on a compact segment, so step two is built ON step one rather than beside it.
+
+②  SUPPORTED
+     step one's sentence now says "the set of horizon points within that distance" (1 occurrence(s)) where the earlier version said "the stretch".  That is `hs_stretch`'s actual content — a sublevel set of `infDist` within `𝓗⁺` — and the change is `r7668`'s ⑬ repaired at the root: the noun no longer claims a connectedness the Lean does not prove.  `hs_stretch_N`'s two conjuncts are unchanged (2 of them).
+
+③  NOT SUPPORTED
+     the two conclusions are the sentence's: every finite segment `γ''[0,t₀]` inside the `ε`-stretch (True), and a point of `J⁺(q) ∩ 𝓗⁺` in the stretch outside any compact `K` (True); the binders are `hs_stretch_N`'s plus `hG` and nothing else (True, True).  But the HYPOTHESIS is weaker than the sentence states.  `HasFutureGenerators` is ` ∀ q ∈ S.H J, ∃ γ : ℝ → N, γ 0 = q ∧ ContinuousOn γ (Ici 0) ∧ (∀ t ≥ 0, γ t ∈ S.H J ∧ S.Cau q (γ t)) ∧ Tendsto γ atTop (cocompact N)…` — it asks for a CONTINUOUS `γ` (True) with each `γ t` in `𝓗⁺` and causally after `q` (True), and NOTHING relating `γ t` to `γ t'` for `0 < t < t'`: no `CStep`, no `ContMDiff` (True), and its own docstring calls it "purely topological".  The sentence says "a future-directed causal curve runs in `𝓗⁺`", which is strictly more than that.  The Lean is therefore STRONGER than advertised, and a reader who supplies only the paper's hypothesis would be supplying more than the theorem needs.
+
+④  SUPPORTED
+     the word "achronal" does not occur once in the three probe files (0), so no theorem derives `HasFutureGenerators` from an achronal-boundary argument; it is a NAMED hypothesis, discharged only on a witness (0 theorem(s) concluding it).  The passage's "which the formalisation does not include in general" is accurate, and naming the standard result rather than gesturing at it is the right way to carry the gap.
+
+⑤  SUPPORTED
+     `gs_witness` PROVES `fd_S.HasFutureGenerators fd_J` on the four-dimensional witness (True) and carries the futureward conclusion (True); the curve is exhibited, `gs_gen q s = ((U, V + s), y, z)` (True), translation along the generator direction.  So "on the four-dimensional witness below it is proved" is exact and not a restatement of `hs_witness`, whose own `V`-bound conjunct is `q.1.2 > T` (True) — the `>` the passage now renders as "exceeds every bound in `V`", which is `r7668`'s ⑥ repaired.
+
+⑥  SUPPORTED
+     no statement anywhere makes the stretch monotone in `τ` (0), and the passage now says so itself (1 occurrence(s) of the disclaimer).  `r7668`'s second uncarried part is carried by admitting it, which is the only honest way to carry it.
+
+⑦  SUPPORTED
+     `dn_cor_densities` has NO `Θ` binder (False) and no temporal or Cauchy hypothesis (False): `Θ` is universally quantified inside each of its four conjuncts, which are exactly the sentence's three plus the `B`-form {'the black-hole region': True, '∂J⁻(𝒥⁺)': True, '𝓗⁺': True, 'any set inside it': True}.  "For every function `Θ`" is therefore literal — and the reason is the one the PAPER ITSELF names, "its slices taken in `D` as here" (1 occurrence(s)): `slice J Θ τ = {x ∈ D J | Θ x = τ}` (True), so the slice is inside `D` by definition and `D` is disjoint from the black-hole region and from `𝓗⁺` whatever `Θ` is.  The statement is exactly as strong as it looks and no stronger, and the sentence does not overclaim because it says where the strength comes from.  `dn_witness` gives the black-hole region as `{U ≥ 0}` (True), non-empty (True), with non-empty slices (True) so no conjunct is vacuous.  Nothing in the three files models matter (0 mentions), so "not formalised" holds.
+
+⑧  SUPPORTED
+     P1's text SUPPORTS the ruling's reading in 7 distinct places: **the adapted-frame definition**; **the line element in the adapted frame**; **the temporal LEG of the triangle**; **the along-the-connection condition**; **the Killing-parameter line element**; **the lapse named N, collapsing**; **a vanishing lapse times a nonzero increment carries no duration**.  The proof names `Δτ` as "the temporal separation conjugate to [`Δx`] in the frame adapted to the same foliation", puts the relation in "the local form of the line element in a frame adapted to the foliation of (b)", and calls it the triangle's temporal LEG — `69`'s own word.  `lem:killing`'s proof writes the generator's line element as `ds² = g(χ,χ)dλ² = |χ|²dλ²` with `λ` the Killing parameter, which is the ruling's Killing-horizon specialisation in P1's own hand.  `N` is P1's symbol for the lapse, and Section 3 says in as many words that a vanishing lapse times a nonzero coordinate increment is "causal ORDER drawn as coordinate length, carrying no metrical duration" — which is the ruling's `∫N|dt|` with `N → 0`, stated as physics.
+
+⑨  SUPPORTED
+     NO sentence of P1 reads `Δτ` as the null curve's own length (0 such).  The zero length belongs to `Δs`: "their spacetime separation is zero, because the geodesic joining them is null".  `Δs²`, `Δx` and `Δτ` are three named quantities throughout, and the ruling's negative half — that `Δτ` is not the null curve's length — is the paper's own distinction.
+
+⑩  NOT SUPPORTED
+     **2 sentences read otherwise, not one.**  ⓵ *"the temporal separation `Δτ = τ(q) − τ(p)` assigned by a smooth temporal function `τ` is not a geometric invariant"* — that `Δτ` is an ENDPOINT DIFFERENCE of a temporal function, and P1 calls it explicitly NON-invariant, while the proof's `Δτ` is listed among "the invariant separations named in the hypotheses".  `∫N|dt(γ′)|` is neither an endpoint difference nor non-invariant, so it is not the Section-1 object; the SYMBOL carries two objects.  ⓶ *"These are not coordinate differences accumulated along some path between `p` and `q`"* — `∫N|dt(γ′)|` IS an accumulation along a path, of an invariant integrand rather than a coordinate, so the sentence excludes the coordinate reading and not the integral; but it is the sentence a reader would cite against the ruling and it needs the distinction said.  ⌗ Neither `∫N|dt|` nor `∫|χ|dλ` appears anywhere in P1 (0 occurrence(s) of either integral): the formulae are consistent with `Δs² = Δx² − Δτ²` and with `ds² = |χ|²dλ²` but are `69`'s construction, not the paper's text.
+
+TALLY: {'SUPPORTED': 8, 'NOT SUPPORTED': 2}

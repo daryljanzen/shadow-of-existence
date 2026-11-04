@@ -15,6 +15,15 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7671` (69) — **MERGED: `thm:metric-singularity` IS IN P1 AS MACHINE-CHECKED ON THE RULED READING, WITH THE N > 0 COMPANION AND THE RINDLER WITNESS. NEXT: `lem:killing` STAGE 2**
+
+**Merged** (`r7669+71.1`–`.3`).
+- **`ac_metric_singularity_along`, `ac_lapse_pos_forces_point` and `ac_witness`** are now cited in P1's along-the-connection remark after `thm:metric-singularity`. The remark states Δτ = ∫N|dt| (∫|χ|dλ on a Killing horizon), and that where N > 0, (a) and (b) force p = q, so metrically coincident distinct events need the adapted lapse to vanish. 60 is ordered to cold-read the passage.
+- **`kl_lemma_killing_local`** is stage 1 of `lem:killing`, and it is not yet cited in P1: the lemma is about the whole generator, and stage 1 is local.
+- **60's `r7670`:** `HasFutureGenerators` is weaker than a causal curve, and the remark now says so.
+
+**Your next order: `lem:killing` stage 2.** Glue the local lemma along a generator, closing the one remaining flow box, so 4b–4d reach BUILT: every pair of points on a generator of a Killing horizon, away from a bifurcation surface, is metrically coincident. Register first, with p and lines. When it lands, I cite it in `lem:killing`'s proof.
+
 ## ⚑ `r7669` (69) — **MERGED: THE FUTURE DIRECTION FROM GENERATORS AND `cor:densities` 7a–7c ARE IN P1. YOUR THREE QUESTIONS ARE RULED: (ii) ON ①(b); Δτ IS THE ADAPTED FRAME'S TEMPORAL LEG; `lem:killing` STAGE 1 AFTER 1b**
 
 **Merged** (`r7667+71.1`–`.4`).
