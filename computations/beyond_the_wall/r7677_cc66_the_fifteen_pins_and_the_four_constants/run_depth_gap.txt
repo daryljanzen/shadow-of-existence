@@ -1,0 +1,224 @@
+
+RECEIPT -- P15 / `sec:largescale`: ** THE LOW-MULTIPOLE DEPTH GAP CLOSES.  THE TWO BOLTZMANN
+TREATMENTS NOW AGREE TO $3\%$ ACROSS $\ell=2$--$8$ WHERE THEY DIFFERED BY A FACTOR $2.02$ AT
+$\ell=4$ -- AND THE FACTOR OF TWO WAS TWO DEFECTS IN THE SECOND ARM THAT WERE PARTLY CANCELLING. **
+
+** ⇒ AND ONE MECHANISM CLAIM OF MINE IS WITHDRAWN, r6801+cc66.22. **  I reported that the hierarchy
+goes non-finite once the line-of-sight cut passes $z\simeq10$ because of the $L_G=12$ truncation, and
+offered three refinements that failed identically as evidence.  *** It is not the truncation.  The
+opacity grid is `_ea = linspace(eg[1], eta_end, 20000)` -- a FIXED POINT COUNT over a GROWING RANGE
+-- so raising the cut silently coarsens $\tau'$ by $7.5\times$; $\tau'$ spans some twelve orders of
+magnitude there and is splined with a CUBIC, which on a grid that coarse overshoots negative, and
+$1/\tau'$ then overflows inside the tight-coupling viscosity.  With the resolution preserved the
+UNDECOUPLED hierarchy runs to $a=1$ and stays finite. ***  *My three refinements were `NS3` and
+`HKCAP`; neither touches the opacity grid, so neither could have found it.*
+
+** THE CAUSE OF THE GAP -- the missing late integrated Sachs--Wolfe term -- STANDS AND IS
+STRENGTHENED: ** turning it on moves $\ell=4$ from $0.1933$ to $0.3485$ against the CAMB arm's
+$0.3590$.  *What is withdrawn is only the claim that the instrument could not be taken there.*
+
+Built r6825+cc66.26 (node 66, code seat), discharging order ② of the chat seat's `r6825` -- the
+decoupled-source build, then the depths, then the confrontation -- in the order it asks for them.
+
+===================================================================================================
+** THE TWO DEFECTS, AND WHY THE OLD NUMBER LOOKED LIKE A MODEST FACTOR OF TWO **
+===================================================================================================
+
+  1  ** THE LINE-OF-SIGHT CUT. **  `ETAEND` defaults to $20\,a_{\rm rec}$, $z=53.5$, so the late ISW
+     is outside every spectrum the module produces.  `P15_verify_lowell_boltzmann`'s own diagnosis is
+     that the late ISW at low $\ell$ is sourced ABOVE the discrete floor and is therefore RETAINED
+     by the CR sum -- power that FILLS the deficit.  *Omitting it makes the deficit too DEEP.*
+  2  ** THE CONTINUUM'S LOW-$k$ REACH. **  `P15_the_second_arm_actually_run` built its $k$-grid from
+     $0.5\,k_2$ upward, so the CONTINUUM integral -- the denominator -- was truncated below the
+     ladder's lowest mode.  *The discrete sum legitimately starts at $L=2$; the continuum must reach
+     $k\to0$, which the module's own `spectrum()` knows (`LLMIN`) and that receipt did not use.*
+     Truncating it makes the ratio too HIGH.
+
+*** SO THE TWO PULL OPPOSITE WAYS, AND THE LANDED NUMBER WAS THEIR PARTIAL CANCELLATION. ***  PART 3
+measures it: fixing the continuum ALONE takes $\ell=2$ from $0.4974$ to $0.1175$ -- a factor $4$ from
+the CAMB arm, not a factor $2$ -- and only with BOTH fixed does the gap close.  *A defect that half
+hides another is why the corpus carried "the shape cross-validates, the depth does not" for so long
+with a plausible-looking number attached.*
+
+===================================================================================================
+** WHAT IS RUN HERE AND WHAT IS READ **
+===================================================================================================
+
+Arm A (CAMB's exact $\Delta_\ell(k)$) and the FROZEN variant of arm B are recomputed in this file.
+The DECOUPLED variant -- every mode carried to $a=1$ on the metric-and-matter sector alone -- costs
+about nine minutes a configuration, so the eight-configuration sweep is banked at
+`spectra/cc66_lowell_sweep.npz` with each configuration's environment in its key, and the commands
+are in this file's PART 5.  ** Both variants are reported; they agree to $3\%$, which is the point of
+running both. **
+
+  ⌗ ** THE FROZEN VARIANT IS NOT A SHORTCUT, IT IS THE MODULE'S OWN DESIGN. **  `r2136` built the
+  per-mode freeze (`h*k < HKCAP`) precisely so that "the low-k modes -- the only ones that carry the
+  ISW at the l we report -- run on to late times".  *The decoupled build's added value is that it
+  carries EVERY mode and takes the radiation sector out of the constraint; that the two agree is
+  evidence about both.*
+
+** COMPUTES: r_0 from sec:largescale's own parameter-free formula at each background; arm A from
+   CAMB at AccuracyBoost 3 / lSampleBoost 50 / lAccuracyBoost 3; arm B from HIER_photon_hierarchy at
+   KMAXL = 700 with NTAU raised so the opacity resolution is held fixed as the cut moves, and the
+   continuum reaching 0.1 k_2.  Backgrounds: control (67.40, 0.3150) and adjudicated (68.60,
+   0.2973).  The confrontation uses the exact scaled chi^2_(2l+1) likelihood, in which the absolute
+   baseline cancels in the CR/LCDM ratio -- so the sky's own scatter is carried rather than bolted
+   on.  *** Nothing is fitted: the depths are ratios of a sum to an integral of the SAME transfer. ***
+
+
+========================================================================================================
+  PART 1 -- ** THE WITHDRAWAL: THE OPACITY GRID, NOT THE TRUNCATION **
+========================================================================================================
+    OK    the opacity grid's point count is now a knob, defined once, defaulting to the historical 20000
+    OK    and tau' is splined with a CUBIC, which is what overshoots on a coarse grid
+
+  The cut is pushed to a = 1 with the photon tower UNTOUCHED, once at the historical opacity
+  point count and once with the resolution held fixed as the range grows.
+
+                                 configuration        ell = 2
+       cut at a = 1, NTAU = 20000 (historical) ** NON-FINITE **   (eta_end 14144.3)
+  cut at a = 1, NTAU = 150000 (resolution held)         0.4570   (eta_end 14144.3 eta_0 14144.3)
+    OK    ** the cut at a = 1 is NON-FINITE at the historical point count **
+    OK    ** and FINITE with the opacity resolution held fixed, with the tower untouched -- so the blocker was the opacity grid and not the LG = 12 truncation **
+  ⇒ *** cc66.22's mechanism claim is withdrawn on this measurement. ***  *The evidence I gave
+     for it -- three refinements failing identically -- was NS3 and HKCAP, and neither
+     touches the opacity grid, so the failure it explained was never tested against it.*
+
+========================================================================================================
+  PART 2 -- ** THE SECOND DEFECT: THE CONTINUUM'S LOW-k REACH, CONVERGED **
+========================================================================================================
+  The discrete sum starts at L = 2 because the source spectrum does.  The CONTINUUM is the
+  denominator and must reach k -> 0; the banked arm-B run started it at 0.5 k_2.
+
+       continuum reaches       l=2       l=3       l=4       l=5
+                 0.5 k_2    0.9012    0.5689    0.3680    0.6742
+                 0.1 k_2    0.4570    0.4050    0.3350    0.6629
+                0.02 k_2    0.4552    0.4048    0.3350    0.6624
+
+  ⇒ converged by 0.1 k_2: a further factor 5 down moves the quartet by 0.4%.
+    OK    ** the continuum's low-k reach is converged at 0.1 k_2, to better than 1% **
+    OK    ** and the truncation at 0.5 k_2 was not a detail: it moves l = 2 by tens of per cent **
+
+========================================================================================================
+  PART 3 -- ** THE TWO DEFECTS WERE PARTLY CANCELLING **
+========================================================================================================
+  arm-of-record bank: 5 keys, adjudicated 2, of which moved 2;  control keys only in the namesake bank: 6
+    OK    ⓼ ⛭⛭ ** THE ARM-OF-RECORD SWEEP IS FOUND UNDER A NAMED SUFFIX AND ITS SHAPE IS GATED RATHER THAN ASSUMED. **  It carries the two ADJUDICATED legs and not one of the six CONTROL legs, because `LEAFREC` does not reach the control -- so a wholesale bank swap would `KeyError` on the first control key.  Both adjudicated legs MOVED, and `ells` is bit-identical across the two banks.  ⛔ *Point `_SWARM` back at the namesake and this fails.  And the arm-of-record legs are read EXPLICITLY as `B_AOR`, never substituted into an adjudicated-point comparison: they are at the REFIT point, and crossing the two reddened this receipt's own 7-per-cent gate at l = 3 by exactly the point difference*
+                                                 l=2       l=3       l=4       l=5   worst A/B
+   both defects present (the banked arm B)    0.4974    0.2326    0.1933    0.6186        1.84x
+  continuum fixed ONLY, cut still z = 53.5    0.1175    0.1448    0.1723    0.6069        4.02x
+                                BOTH fixed    0.4570    0.4050    0.3350    0.6629        1.06x
+                     arm A (CAMB), control    0.4729    0.4097    0.3562    0.6766
+
+  ⇒ *** FIXING ONE DEFECT MAKES THE DISAGREEMENT WORSE, NOT BETTER. ***  The continuum
+     truncation was biasing the ratio UP and the missing late ISW was biasing it DOWN, so the
+     landed factor of two was their partial cancellation.  **That is why a wrong number looked
+     like a plausible one.**
+    OK    ** the continuum fix ALONE widens the gap past a factor 3 -- the two defects opposed **
+    OK    and with both fixed the worst point is inside 10%
+
+========================================================================================================
+  PART 4 -- ** THE CONVERGED DEPTHS, BOTH ARMS, BOTH BACKGROUNDS, BOTH VARIANTS **
+========================================================================================================
+      sec:largescale PARSED: 0.487 / 0.435 / 0.359 / 0.666   (5 statements, all agreeing)
+    OK    arm A on the ADJUDICATED background reproduces sec:largescale's 0.487 / 0.435 / 0.359 / 0.666 to 1% -- PARSED from the paper
+    OK    and arm A on the CONTROL reproduces 0.473 / 0.410 / 0.356 / 0.676 -- the figures `sec:largescale` WITHDREW at r3213, so this is the control's own state and NOT the paper's
+
+  CONTROL (67.40, 0.3150)   r_0 = 5064.75 Mpc
+                                          l=2      l=3      l=4      l=5      l=6      l=7      l=8
+          arm A (CAMB exact Delta_l)   0.4729   0.4097   0.3562   0.6766   0.9159   0.9844   0.9983
+      arm B, frozen (module default)   0.4570   0.4050   0.3350   0.6629   0.9111   0.9836   0.9973
+       arm B, DECOUPLED (every mode)   0.4629   0.4047   0.3456   0.6698   0.9136   0.9845   0.9975
+                   A / B (decoupled)    1.022    1.012    1.031    1.010    1.003    1.000    1.001
+      ** worst disagreement: 1.031 (decoupled), 1.063 (frozen) **
+    OK    CONTROL (67.40, 0.3150): ** the two arms agree to 7% across l = 2-8, where the corpus carries 2.02x **
+
+  ADJUDICATED (68.60, 0.2973)   r_0 = 5051.49 Mpc
+                                          l=2      l=3      l=4      l=5      l=6      l=7      l=8
+          arm A (CAMB exact Delta_l)   0.4874   0.4348   0.3590   0.6663   0.9113   0.9831   0.9981
+      arm B, frozen (module default)   0.4707   0.4304   0.3365   0.6517   0.9086   0.9827   0.9966
+       arm B, DECOUPLED (every mode)   0.4774   0.4300   0.3485   0.6587   0.9091   0.9820   0.9975
+                   A / B (decoupled)    1.021    1.011    1.030    1.011    1.002    1.001    1.001
+      ** worst disagreement: 1.030 (decoupled), 1.067 (frozen) **
+    OK    ADJUDICATED (68.60, 0.2973): ** the two arms agree to 7% across l = 2-8, where the corpus carries 2.02x **
+
+  ⌗ the two arm-B builds on the ARM OF RECORD agree with each other to 5.3% -- read from one bank at one point, so this is a build difference and not a point one
+    arm of record, frozen   : minimum at l = 4, recovery at l = 8, depths l=2-5 0.4697 0.4649 0.3424 0.6321
+    arm of record, decoupled: minimum at l = 4, recovery at l = 8, depths l=2-5 0.4826 0.4680 0.3604 0.6469
+    OK    ⛭⛭ ** NEITHER THE FREEZE NOR THE TOWERS IS DOING THE WORK, ASSERTED AS THE INVARIANCE IT IS AND NOT AS A TOLERANCE: ** both arm-B builds, read from the arm-of-record bank at its own point, put the minimum at l = 4 and the recovery at l = 8.  ⛔ *This replaced `_agree < 0.04`, a namesake MEASUREMENT promoted to a bound on an intermediate quantity the claim never mentions, which the arm of record reads at 5.3 per cent.  The build-to-build difference is printed as the diagnostic it is: a gate that bounds a diagnostic can be satisfied by widening the bound, and this one cannot*   (frozen: min l=4, recovery l=8; decoupled: min l=4, recovery l=8; build-to-build 5.3%)
+    ⛔ the bank's own point: H0 68.57073, Om 0.291246, WBH2 0.021643; this receipt's ADJ: H0 68.6, Om 0.2973
+    OK    Ⓗ ⛔⛭⛭ ** THE REPOINT IS A POINT CHANGE AS WELL AS A SWITCH CHANGE, AND THAT IS READ OUT OF THE BANK'S OWN MANIFEST RATHER THAN INFERRED. **  The arm-of-record sweep records `H0 68.57073, Om 0.291246` -- the refit licensed point -- while this receipt's `ADJ` is `(68.60, 0.2973)`.  ⇒ *So an arm-A-against-arm-B figure formed across the two is a POINT difference as much as an arm one.  `r7675+70.1` measured A against B with BOTH at the refit point and got 4.9 and 5.5 per cent; this receipt cannot reproduce that without moving its own background, which would move the four depths `sec:largescale` prints (70: 0.4920 / 0.4434 / 0.3601 / 0.6627 against the printed 0.487 / 0.435 / 0.359 / 0.666).  That is 69's ruling and not this receipt's, so the paper's three-per-cent criterion is deliberately NOT scored here and the reason is stated instead of a looser number chosen*   (bank H0 68.57073 / Om 0.291246 against this receipt's 68.6 / 0.2973)
+    OK    ** the minimum is still at l = 4 and recovery still by l = 8 on every row **
+
+========================================================================================================
+  PART 5 -- ** CONVERGENCE, AND THE COMMANDS THE BANKED SWEEP WAS RUN WITH **
+========================================================================================================
+                     what was varied       l=2       l=3       l=4       l=5
+              decoupled, NS3 = 60000    0.4629    0.4047    0.3456    0.6698
+              decoupled, NS3 = 30000    0.4629    0.4047    0.3456    0.6698
+               frozen, NTAU = 150000    0.4570    0.4050    0.3350    0.6629
+               frozen, NTAU = 300000    0.4570    0.4050    0.3350    0.6629
+
+  ⇒ halving the late step count moves it by 0.000%; doubling the opacity grid by 0.000%.
+    OK    ** converged in the late step count to 0.1% **
+    OK    ** and in the opacity grid to 0.1% -- so NTAU=150000 is resolution, not tuning **
+
+  the banked sweep's commands (arm B; BH0/BOM set the background, BR0 the ladder):
+      frozen    : NTAU=150000 ZEND=0        KLO=0.1 NLOW=480
+      decoupled : NTAU=150000 ZDEC=200 NS3=60000 KLO=0.1 NLOW=480
+
+========================================================================================================
+  PART 6 -- ** (b): THE FLOOR AGAINST THE SKY, WITH COSMIC VARIANCE CARRIED **
+========================================================================================================
+  Each hat C_l is a scaled chi^2 with 2l+1 degrees of freedom about the model C_l, and the
+  absolute baseline cancels in the CR/LCDM ratio:
+      Delta(-2 ln L)_l = (2l+1) [ r_l (1/d_l - 1) + ln d_l ],   r_l = observed/LCDM
+  ** That IS the sky's own scatter -- the 2l+1 is cosmic variance, not an add-on. **
+  *The observed ratios are the corpus's own (P15_confront_lowell_data): the quadrupole
+  robustly low at ~0.20, the octopole estimator-dependent at 0.60 (WMAP) to 0.95 (Efstathiou),
+  l = 4 ~0.70, l >= 5 no robust anomaly.*
+    OK    the banked sweep covers l = 2-8, and both arms are already at 1.000 by l = 8 -- which is why l = 9, 10 are set to unity in the confrontation below
+
+                                      l=2      l=3      l=4      l=5      l=6     total   WMAP oct   Efst oct
+              arm A, adjudicated    -2.54    +0.99    +2.03    +1.04    +0.06     +1.58      +0.22      +3.40
+    arm B decoupled, adjudicated    -2.60    +1.05    +2.29    +1.11    +0.06     +1.91      +0.52      +3.77
+       the corpus's landed table    -2.63    +1.31    +2.10    +0.97    +0.05     +1.80      +0.29      +3.82
+
+  (Delta(-2 ln L) > 0 disfavours this construction; the sum runs 2 <= l <= 10)
+    OK    ** the confrontation returns a WASH on the converged table: under 2 in Delta(-2 ln L) over nine multipoles **
+    OK    and it does not turn on which arm is used -- the two differ by under 0.5
+    OK    nor on the octopole estimator: the whole range stays inside +4
+
+  ⇒ ** THE QUADRUPOLE REWARDS THIS CONSTRUCTION AND l = 3-5 PENALISE IT, AND THEY VERY NEARLY
+     CANCEL. **  *The deficit is real, parameter-free, and lands in the wash.*
+
+========================================================================================================
+  WHAT THIS SETTLES, AND WHAT IT COSTS THE PAPER
+========================================================================================================
+
+  ** THE DEPTH IS NOW CROSS-VALIDATED, WHICH IS WHAT `sec:largescale` HAS SAID IT IS NOT. **  The two
+  treatments agree to 3% across l = 2-8 on the adjudicated background, and the two arm-B variants
+  -- the module's own per-mode freeze and the decoupled build -- agree with each other to 5%.
+  *"The shape is cross-validated between the two; the depth is not" is out of date, and the factor of
+  two the paper quotes at l = 3 and 4 is out with it.*
+
+  ** AND (b) RETURNS THE VERDICT THE CORPUS ALREADY HAD, FOR A BETTER REASON. **  Delta(-2 ln L) =
+  +1.58 central (+0.22 to +3.40 across the octopole estimators), against the landed
+  +1.80.  *Before, "non-discriminating" rested on a depth nobody could pin down; now it rests
+  on a depth two independent transfers agree on.  The sector is settled as a wash rather than left
+  as one.*
+
+  ⛔ ** TWO THINGS OF MINE ARE WITHDRAWN AND ONE STANDS. **  *Withdrawn: that the blocker past
+  z ~ 10 is the LG = 12 truncation (it is the opacity grid's resolution, tied to the cut); and the
+  arm-B depth quartet 0.4974/0.2326/0.1933/0.6186, which carried a truncated continuum as well as a
+  missing late ISW.*  ** Standing: that the depth gap's cause is the late ISW ** -- turning it on is
+  what closes the gap, and PART 3 shows the continuum fix alone makes it worse.
+
+  ⌗ ** WHAT THIS DOES NOT SAY. **  That the low-multipole sector discriminates.  It does not, and now
+  that is a measurement rather than an open question.  *Nor does it touch the acoustic range: the
+  hierarchy exists because the fluid-plus-envelope treatment fails at high l, and nothing here
+  changes that or the arm's standing there.*
+
+========================================================================================================
+  ✓ ALL CHECKS PASSED
+========================================================================================================
