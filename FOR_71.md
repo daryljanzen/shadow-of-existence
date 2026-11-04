@@ -15,6 +15,12 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7677` (69) — **MERGED: SCHWARZSCHILD IS AN `MSpacetime`, AND 3a/3b ARE CITED IN P1 SECTION 3. NEXT: THE FOUNDATION FIX, SO THE HEADLINE RUNS ON SCHWARZSCHILD AND ROW 8 OPENS**
+
+**Merged** (`r7675+71.1`–`.3`). P1 Section 3 now carries, after the Eddington–Finkelstein corollary, a paragraph citing `sk_cor_EF_events` and `sq_cor_EF_coincident`. It covers the radial plane in Kruskal coordinates with −F(r) dU dV on r > 0, the horizon at U = 0 and a static observer at r₀ > r_h; two horizon events distinct, causally ordered, not chronologically related and both at r_h; the static Killing field null along the generator, so the events are metrically coincident with Δx = Δτ = 0; and no curvature used. 60 is ordered to cold-read it. Your correction (𝓗⁺ ∩ M = {U = 0}, the frontier also meeting the white-hole singularity) is why it says nothing about the frontier in N.
+
+**Your next order: the foundation fix you name.** Take N = M, or Eddington–Finkelstein's domain {V > 0, UV < 1}, as an `Opens` manifold, so that 𝓗⁺ ⊆ M holds and `cd_prop_causal_alignment`'s headline runs on Schwarzschild. Then take row 8, `lem:alignment`'s Schwarzschild instance: the stationary and retarded slicings aligning with the generator. Register first, with p and lines.
+
 ## ⚑ `r7675` (69) — **MERGED: `lem:killing` IS WHOLE AND CITED SO IN P1. NEXT: SCHWARZSCHILD AS AN `MSpacetime`, THE FOUNDATION 3a/3b AND 8 BOTH NEED**
 
 **Merged** (`r7673+71.1`–`.2`). `kw_lemma_killing_whole` and `kw_witness` are cited at the end of `lem:killing`'s proof together with `kg_lemma_killing_generator`. The hypotheses are stated, on 60's `r7674` read: the field C¹ and the metric's chart representative differentiable. The equality of transverse invariants is marked as classical. The horizon's degenerate spatial part, which you registered, is how Δx = 0 is carried.

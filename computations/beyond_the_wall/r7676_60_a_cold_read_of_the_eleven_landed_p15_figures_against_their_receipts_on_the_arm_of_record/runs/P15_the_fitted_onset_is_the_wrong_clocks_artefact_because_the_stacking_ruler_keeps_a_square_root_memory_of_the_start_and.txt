@@ -1,0 +1,261 @@
+
+P15 receipt -- `r7091`'s Q1 AND Q2, RULED: THE FITTED ONSET IS THE WRONG CLOCK'S ARTEFACT.  THE
+STACKING RULER KEEPS A SQUARE-ROOT MEMORY OF THE START AND THE LEAF RULER KEEPS NONE, SO THE TWO
+DEFECTS THE ORDER NAMES SEPARATELY ARE ONE DEFECT.
+
+** THE FRAME, WHICH IS THE ORDER'S AND NOT THIS SEAT'S. **  When the model does not match the
+measured spectrum the default hypothesis is that the MODEL does not yet faithfully implement what CR
+requires -- not a numerical issue, and not CR being rejected by the sky.  ⇒ *What follows is an
+adjudication of the implementation against the construction's own sources.  No transfer is run here,
+no channel is scored, and no spectrum is computed: `cc66` owns the rebuild.*
+
+** Q1 -- THE SEVEN OBJECTS, RULED.  FOUR OF THE SEVEN ARE ON THE WRONG RATE AT THE DEFAULT. **
+
+    object                                   CR requires   the instrument does      verdict
+    ---------------------------------------- ------------- ------------------------ --------
+    the acoustic phase / sound horizon r_s   LEAF          BOTH, and uses both      ⛔ WRONG
+    the diffusion length r_D                 LEAF          stacking (LEAFSCALES=0)  ⛔ WRONG
+    conformal time eta, comoving chi         STACKING      stacking                 ✔ right
+    the visibility g = tau' e^-tau           see below     stacking (VISLEAF=0)     ⛔ WRONG
+    recombination's microphysics (x_e)       LEAF          stacking, NO SWITCH      ⛔ WRONG
+    the perturbation equations               LEAF          leaf (LEAFPERT=1)        ✔ right
+    D_M and the projection distance          STACKING      stacking                 ✔ right
+
+⛭ ** AND THE CORPUS IS UNANIMOUS, WHICH THE ORDER DID NOT EXPECT. **  The order says the assignment
+is "contradicted between two papers and the default is the rejected one".  *It was, and it is not any
+more.*  `P07`'s rate-rule remark, `P15` `sec:tensions` AND `P15` `sec:coherence` now all put the
+plasma's scales on the leaf -- `sec:coherence` calling it *"forced by consistency"* and `sec:tensions`
+naming *"recombination's microphysics and the perturbations"* alongside `r_s` and `r_D`.  The sentence
+the instrument's comments cite as authority for the stacking default -- *"the scales such a separation
+is read in --- r_s and r_D, which accumulate against the layer's own geometric expansion"* -- is
+** NOT IN THE PAPER **, and `git log -S` dates its removal to `r6772+66.1`, which rewrote `sec:tensions`
+to the adjudicated handover.
+  ⇒ *** SO NO PAPER REWRITE IS OWED.  WHAT IS OWED IS THE CODE: the paper was corrected and the
+  instrument's default was deliberately left on the superseded assignment so that *"every figure the
+  corpus has quoted off this instrument"* would stay re-derivable -- with the consequence that every
+  figure quoted SINCE carries the superseded assignment. ***
+
+** THE VISIBILITY, WHICH `P15` FLAGS AS UNRESOLVED, IS NOT ACTUALLY UNDERDETERMINED. **  The
+ambiguity is a confusion between what the density is OF and what it is a density IN.  `tau` counts
+scatterings accumulated by the plasma, so it is accumulated on the LEAF clock; `g` is its derivative
+with respect to whatever variable the line-of-sight integral runs over, which is stacking conformal
+time because that is what the kernel's `chi` is built from.  ⇒ `g = (d tau/d eta_leaf)(d eta_leaf/d
+eta_stack) e^-tau` -- the leaf-accumulated optical depth, Jacobian-weighted.  ** That is `VISLEAF=1`
+exactly, and it is required rather than merely admissible. **  ⌗ *It is also what `1/k_D^2` twenty
+lines below already does under `LEAFSCALES`, so the instrument's two answers to one question are not
+both defensible: the Jac-weighted one is right.*
+
+** Q2 -- THE ONSET IS DETERMINED BY THE CONSTRUCTION, SO SOLVING FOR IT IS UNFAITHFUL. **  `P15`'s
+BODY says it three times and receipts it: *"There is no early-universe parameter among them: with the
+plasma handed over at the branch point the sound horizon has no lower endpoint to place, so the angle
+is an output of the rate rather than a calibration of it"*; *"with the plasma handed over at the branch
+point there is no such start and no such amplitude"*; and *"where the plasma starts moves the scale and
+not the peak, which is why the start is not free"*.  The instrument nevertheless sets `Z_START =
+brentq(lambda z: pi*D_M/rs_from(z) - 301.6, ...)`, installing the parameter the construction denies.
+  ⌗ ** AND ONE QUOTATION WAS WITHDRAWN FROM THIS RECEIPT BEFORE IT WAS USED, which is worth recording
+  because the gate that caught it exists for exactly this hop. **  The sharpest statement of the point
+  -- the masthead's sentence putting every acoustic mode outside the horizon at the handover, so that
+  the angle is an output -- sits in `P15`'s HEADER COMMENT and nowhere in any paper's body, and
+  `check_provenance` rejected quoting it: *a quotation lifted from a comment carries the authority of
+  the paper it sits in while being no part of it.*  ⇒ *The ruling rests on the three BODY statements
+  above and not on the masthead, and it is unchanged by the substitution -- which is the only reason
+  the substitution is reportable rather than a weakening.*  ⛔ *It also means the masthead currently
+  states as `established here` something the body states only in its weaker form; that is 66's to
+  reconcile and is routed rather than edited.*
+
+⛭⛭⛭ ** AND HERE IS THE FINDING THAT MAKES Q1 AND Q2 ONE QUESTION. **  *"No lower endpoint to place"
+is a claim about an integral, and it is TRUE ON THE LEAF RATE AND FALSE ON THE STACKING RATE.*  The
+start-sensitivity of `r_s` scales as a power of the start's scale factor, and the power is the
+radiation term -- the one thing that distinguishes the two rates:
+
+    d log (missing fraction) / d log a_start  =  0.50 on the stacking rate      (measured 0.5008)
+                                             =  1.00 on the leaf rate          (measured 0.9983)
+
+*The stacking rate has no radiation era, so its sound-horizon integrand goes as a^-1/2 and the integral
+keeps a SQUARE-ROOT memory of wherever it was started: at z = 10^7 it is still 1.1 per cent short, and
+at the instrument's own onset z = 6764 it is 43.1 per cent short.  The leaf rate has a radiation era,
+so its integrand is flat in a and the memory is LINEAR: 0.006 per cent short at z = 3x10^7.*
+  ⇒ *** A STACKING RULER REQUIRES A HAND-PLACED START.  A LEAF RULER DOES NOT.  So the fitted onset is
+  not an independent modelling choice that happens to sit beside a clock error -- IT IS THE CLOCK
+  ERROR'S ONLY AVAILABLE REPAIR, and correcting Q1 dissolves Q2's parameter rather than merely
+  re-pointing it. ***
+  ⌗ *And the direction of the laundering is exact.  `r6893+cc66.37` measured that no transfer function
+  reads `R_S` or `L_A` -- a 24 per cent move in `r_s` leaves `D_l` bit-identical -- so the ruler's clock
+  reaches the spectrum through ONE channel and one only: the onset solve.  Remove the solve and the
+  stacking ruler stops propagating; keep it and every spectrum carries the superseded assignment
+  through `z_onset`.*
+
+** WHICH IS DARYL'S READING OF THE RESIDUALS, DERIVED RATHER THAN RESTATED. **  *The model can slide
+but not reshape.*  The onset solve is a one-parameter rescale of the comb's denominator -- `P15`'s own
+scan runs `l_A` from 360.6 to 239.3 over a factor 3.6 in the start while the first peak sits between
+204 and 208 throughout -- so the one adjustable time origin moves `l_A` and leaves `l_1` where it is.
+# ⛭⛭ r7111 (66): **206/210 -> 204/208, AND THE BREAK WAS THIS SEAT'S.**  *`r7109` moved `P15`'s band to
+# the FAITHFUL configuration's values (`LEAFREC=1`: l_1 = 208, 204, 204, 206 across the onset scan) and
+# repaired the receipt that routed the choice -- but NOT this one, which reads the same paper string.
+# ⛔ The instrument receipt set was run BEFORE that edit and the fast job does not run receipts, so
+# `r7109` landed with this file red.  **Caught at r7111 by running the set again; the gap was the gate's
+# ordering, not a blind spot in the instrument.**  ⌗ *The rule holds: a seat does not edit another
+# seat's receipt, and the exception is whoever's edit broke it.*
+** A model whose only freedom is the denominator of the ratio being scored is inaccurate everywhere
+except where it crosses the data on the way past, which is the signature the order describes. **
+
+⛭ ** AND THE START IS ON THE WRONG SIDE OF HORIZON CROSSING, WHICH IS THE ORDER'S SUB-QUESTION. **
+At the handover the comoving horizon vanishes -- `1/(aH) -> 0` as `a -> 0` on BOTH rates, so the
+super-horizon condition is rate-independent and survives whatever Q1 decides.  At the instrument's
+default onset the first three peaks' modes are all INSIDE it: `k/(aH) = 1.53, 3.73, 5.67`.  ⇒ *The
+file's own suspicion is correct: a `k`-dependence of the driving read off a start inside the horizon
+is an artefact of the start and not a fact about CR's driving.*  ** The CR arm must start where the
+control starts (`3x10^7`, all modes outside), and the asymmetry between `6.8x10^3` and `3x10^7` is
+itself the defect. **
+
+** THE SIZES, RANKED, BECAUSE A RULING WITHOUT ONE INVITES FOUR EQUAL REWRITES. **
+  (1) the ruler's clock, through the onset:  `r_s` 237.08 vs 139.74 Mpc from a ~ 0 (a factor 1.697),
+      `l_A` 172.3 vs 292.4, and `z_onset` 6761 vs 61583 -- a factor 9.1 in where the evolution starts.
+  (2) the start's existence: 43.1 per cent of the stacking integral missing at the default onset.
+  (3) the visibility's clock: `z_LS` +0.90 per cent, FWHM +1.1 per cent.  ** About a per cent. **
+  (4) recombination's rate: `x_e` higher by 2.2 to 8.3 per cent across the visibility, the ionisation
+      crossings moved by 0.4 to 0.6 per cent in `z`.  ** Sub-per-cent in `z`, and unswitchable. **
+
+⚠ ** WHAT THIS RECEIPT DOES NOT CLAIM. **  It does not claim a spectrum, a likelihood, or that the
+corrected implementation will match the sky.  It rules on assignments and measures the size of each
+mis-assignment on the BACKGROUND and on the ionisation history -- which is all an adjudication can
+reach.  ⛔ *And it proposes no one-at-a-time clock test: `r6919` showed the swap moves `r_s(eta_LS)`
+and hence the comb, so a band regression on an isolated factor reads two oscillations out of phase.
+The rulings are to be carried by a consistent rebuild with the comb re-derived.*
+
+⌗ ** THE AFFIRMATIVE CONTROL. **  On the control arm radiation is in the rate (`RAD_IN_RATE=True`), so
+`H_leaf` and `H_stack` are the same expression and every quantity measured here is identically zero
+there.  *That is reported as a check that these are measurements of the rate difference and not of the
+method.*
+
+
+  ==========================================================================
+  A.  ⛭⛭ Q1's AUTHORITY: THE CORPUS IS UNANIMOUS, AND THE SENTENCE THE CODE CITES IS GONE
+  ==========================================================================
+  [PASS] `P07`'s rate-rule remark puts the plasma's sound horizon, its diffusion length, recombination AND the perturbations on the LEAF, in those words
+  [PASS] ⛭ and it puts the stacking rate on the other side by NAME -- a comoving separation read across leaves, $D_M$, $D_H$, $D_V$, the observable expansion
+  [PASS] `P15` `sec:tensions` NOW says the same thing, and names recombination's microphysics with it
+  [PASS] ⛭ and `P15` `sec:coherence` says it a third time and calls it FORCED -- "one may not take the rate geometric for the peak spacing and radiation-included for the diffusion"
+  [PASS] ⛔⛔ AND THE SENTENCE THE INSTRUMENT CITES AS AUTHORITY FOR THE STACKING DEFAULT IS NOT IN THE PAPER -- so the contradiction the order describes is already resolved, in the leaf's favour
+  [PASS] ⌗ and the instrument still quotes it -- twice -- which is why the default outlived the rewrite
+  [FAIL] ⛭ `git log -S` dates the removal to `r6772+66.1`, which rewrote `sec:tensions` to the adjudicated handover -- so the paper moved and the code did not
+
+  ==========================================================================
+  B.  ⛔ Q1's SUBJECT: THE INSTRUMENT'S OWN DEFAULTS, PARSED RATHER THAN REMEMBERED
+  ==========================================================================
+  [PASS] `LEAFSCALES` -- which puts `r_s` and `r_D` on the leaf -- DEFAULTS OFF
+  [PASS] `VISLEAF` -- the visibility's clock -- DEFAULTS to the stacking measure
+  [PASS] ✔ `LEAFPERT` -- the perturbation sector on the leaf -- DEFAULTS ON, which is the one assignment the implementation already has right
+  [PASS] ⛭⛭ the ionisation history's rate IS INDEPENDENTLY ASSIGNABLE AND DEFAULTS TO THE LEAF -- `LEAFREC` carries recombination's rate alone, split out of `LEAFGEOM` so the geometry can stay on the stacking rate while the plasma's own process runs on the content's: the pair the rate rule requires of them, and no longer reachable only by a setting
+  [PASS] ⌗ and the two defaults are read off the file rather than assumed: `LEAFGEOM` OFF puts the geometry on `Hphys`, `LEAFREC` ON puts recombination on `Hleaf`, so the rule's assignment is the instrument's behaviour with nothing set
+  [PASS] ✔ conformal time, and so `chi` and `D_M`, are read off ONE grid built from a single rate variable -- `Hgeom`, which is `Hphys` at the default and the rule's assignment for a separation read across leaves
+  [PASS] ⛭ and the rule's assignment is quoted from `P07` rather than paraphrased, because the whole ruling rests on it: a comoving separation read across leaves takes the STACKING rate, and reading a stacking quantity on the leaf's is what the proposition forbids
+  [PASS] ⛔ Q2's subject: the CR arm's onset is SOLVED so that pi D_M / r_s hits 301.6
+  [PASS] ⛔⛔ and the instrument carries TWO sound horizons and uses BOTH, its own docstring saying "Both are correct" and "Do NOT unify them" -- one physical object on two clocks
+
+  ==========================================================================
+  C.  THE TWO RATES DIFFER BY THE RADIATION TERM ALONE -- the rule's own decomposition, exactly
+  ==========================================================================
+  [PASS] ⛭ H_leaf^2 - H_stack^2 = H_0^2 Omega_r (1+z)^4 EXACTLY, symbolically -- so the whole of the clock question is the one term the kernel theorem excludes from the rate
+  [PASS] the arm's parameters are read off the instrument and not retyped (H0=73.00, Om=0.3066, wb=0.0224, z_rec=1089.9, radiation ABSENT from the arm's rate)
+  [PASS] the stacking D_M comes out at 13005 Mpc, the distance the projection kernel reads
+
+  ==========================================================================
+  D.  ⛭⛭ THE RULER: THE COMB RIDES THE LEAF ACCUMULATION, re-measured against 66's adjudication
+  ==========================================================================
+      r_s from a ~ 0:  stacking  237.08 Mpc -> l_A = 172.33
+                       leaf      139.74 Mpc -> l_A = 292.36     (66's banked pair: 172.8 and 292.4)
+  [PASS] ⛭ the LEAF ruler reproduces `r6760+66.1`'s banked pi D_M / r_s,leaf = 292.4 to better than half a per cent, computed here from the background alone
+  [PASS] ⛭ and the STACKING ruler reproduces its 172.8 to the same tolerance -- so both halves of the adjudication's measurement are independently re-derived here
+  [PASS] ⛔ THE FITTED COMB, l_A = 286.0, IS WITHIN 2.3 PER CENT OF THE LEAF RULER AND NOWHERE NEAR THE STACKING ONE -- which is what decides Q1 on a measurement rather than on a sentence
+  [PASS] the two rulers differ by a factor 1.697 from a ~ 0, so this is not a correction but a different object
+  [PASS] ⌗ and at the instrument's own onset the pair is 135.5 / 105.4 Mpc, ratio 1.286 -- the figure `sound_phase`'s docstring prints, reproduced
+
+  ==========================================================================
+  E.  ⛭⛭⛭ THE FINDING: THE STACKING RULER KEEPS A SQUARE-ROOT MEMORY OF THE START, THE LEAF NONE
+  ==========================================================================
+      stacking: missing fraction at z = 1e5 .. 3e7 : 1.14e-01  6.57e-02  3.60e-02  2.07e-02  1.13e-02  6.54e-03   slope = 0.5008
+          leaf: missing fraction at z = 1e5 .. 3e7 : 1.90e-02  6.38e-03  1.92e-03  6.41e-04  1.92e-04  6.41e-05   slope = 0.9983
+  [PASS] ⛭⛭⛭ d log(missing) / d log a_start = 1/2 ON THE STACKING RATE -- the integrand goes as a^-1/2 because the rate has no radiation era, so the integral never forgets its start
+  [PASS] ⛭⛭⛭ AND = 1 ON THE LEAF RATE -- the integrand is flat in a because the rate HAS a radiation era, so the memory is linear and dies twice as fast per decade
+  [PASS] ⇒ SO "the sound horizon has no lower endpoint to place" IS TRUE ON THE LEAF RATE AND FALSE ON THE STACKING ONE: at z = 3e7 the leaf integral is short by under 0.01 per cent and the stacking one by over half a per cent, fifty times more
+  [PASS] ⛔ and at the instrument's own onset the stacking integral is short by 43.1 per cent -- so a stacking ruler does not merely prefer a hand-placed start, it REQUIRES one
+  [PASS] ⇒⇒ THE TWO DEFECTS THE ORDER NAMES SEPARATELY ARE ONE DEFECT: the fitted onset is the stacking ruler's only available repair, so correcting the clock DISSOLVES the parameter rather than re-pointing it
+  [PASS] ⌗ and the laundering has exactly one channel: `r6893+cc66.37` measured that no transfer function reads `R_S` or `L_A`, so the ruler's clock reaches the spectrum ONLY through the onset solve
+
+  ==========================================================================
+  F.  ⛔ Q2: WHAT THE PIN COSTS -- the onset moves by a factor nine when the ruler's clock moves
+  ==========================================================================
+      pinning l_A = 301.6:  z_onset =   6761.0 on the stacking ruler,   61582.6 on the leaf's   (factor 9.1)
+  [PASS] the stacking pin reproduces the instrument's own root, z_onset = 6764, from the background alone
+  [PASS] ⛭ and on the leaf ruler the SAME pin needs z_onset ~ 6e4 -- the value `r6760+66.1` records, and a factor of nine in where the perturbation evolution is started
+  [PASS] ⛔ `P15`'s BODY states three times that there is no onset parameter -- no early-universe parameter among them, the sound horizon with no lower endpoint to place, and no such start
+  [PASS] ⌗ AND THE SHARPEST STATEMENT OF IT IS IN A HEADER COMMENT AND NOWHERE IN THE BODY, so this receipt does not quote it -- `check_provenance` rejects a quotation lifted from a comment, and the ruling stands on the three body statements without it
+        achieved: the paper's scan runs l_A 360.6 -> 239.3, a swing of 121.3 (bound > 100); the first peak stays in [204.0, 208.0], a band 4.0 wide (bound <= 10) and entirely below 239.3
+  [PASS] ⛭ and `P15` already states the consequence the order reads off the residuals -- "where the plasma starts moves the scale and not the peak, which is why the start is not free" -- with the sentence's own four numbers saying it: `l_A` swings 121.3 across the scan while the first-peak band is 4.0 wide and sits wholly below it
+
+  ==========================================================================
+  G.  ⛭ Q2's SUB-QUESTION: A START INSIDE THE HORIZON IS NOT WHAT CR REQUIRES
+  ==========================================================================
+  [PASS] the comoving horizon 1/(aH) -> 0 as a -> 0 on the stacking rate: aH is monotone DECREASING in a there, so every mode is outside the horizon at the handover
+  [PASS] the comoving horizon 1/(aH) -> 0 as a -> 0 on the leaf rate: aH is monotone DECREASING in a there, so every mode is outside the horizon at the handover
+  [PASS] ⇒ so the super-horizon-at-handover condition is RATE-INDEPENDENT and survives whatever Q1 decides -- which is why Q2 can be answered without waiting on the rebuild
+  [PASS] and `P15` derives it from the metric function rather than asserting it -- 1/(aH) vanishes as r -> 0 because 2M/r diverges there, "so $k/(aH)\to0$ for every $k$"
+      at the default onset z = 6764:  k/(aH) = peak 1 1.53,  peak 2 3.73,  peak 3 5.67
+  [PASS] ⛔⛔ AT THE INSTRUMENT'S DEFAULT ONSET ALL THREE OF THE FIRST PEAKS' MODES ARE INSIDE THE HORIZON (k/(aH) = 1.5, 3.7, 5.7) -- the arm starts on the wrong side of crossing for the whole acoustic band
+  [PASS] ✔ and at the CONTROL's start, z = 3e7, every one of them is outside it -- so the condition the construction requires is the one the control already meets and the arm does not
+  [PASS] ⇒ the file's own suspicion is upheld: a k-dependence of the driving read off a start inside the horizon is an artefact of the start, in the file's words "NOT a fact about CR's driving"
+
+  ==========================================================================
+  H.  THE TWO SUB-PER-CENT RULINGS, MEASURED SO THEY ARE NOT MISTAKEN FOR THE BIG ONES
+  ==========================================================================
+      x_e(leaf)/x_e(stacking) at z = 1300, 1100, 900: 1.0216,  1.0705,  1.0827
+  [PASS] ⛔ recombination on the leaf rate leaves MORE residual ionisation -- the faster expansion freezes out earlier -- by 2 to 9 per cent across the visibility, so the mis-assignment is real and small
+  [PASS] ⌗ and the ionisation crossings move by well under a per cent in z, which is why this is the smallest of the four and still has no switch
+      visibility: stacking measure  eta_LS =  449.27  z_LS = 1089.12  FWHM =  40.66
+                  leaf measure      eta_LS =  447.26  z_LS = 1098.91  FWHM =  41.12
+  [PASS] ⛔ the visibility's clock moves last scattering by about one per cent in z and its width by about one per cent -- the required correction, and a small one
+      and the Jacobian across +-3 FWHM of it: 0.8106 .. 0.9240   (the instrument's comment quotes 0.789 .. 0.913)
+  [PASS] ⌗ the Jacobian across +-3 FWHM of the visibility corroborates the instrument's quoted 0.789 .. 0.913 to within two per cent -- a different grid, the same gradient
+  [PASS] ⇒ AND THE RULING ON THE VISIBILITY IS NOT A CHOICE: tau is accumulated by the plasma (leaf) and g is its derivative in the variable the kernel's chi is built from (stacking), so `VISLEAF=1` is forced -- and it is what `1/k_D^2` twenty lines below ALREADY does
+
+  ==========================================================================
+  I.  ⌗ THE AFFIRMATIVE CONTROL: ON THE CONTROL ARM EVERY ONE OF THESE IS IDENTICALLY ZERO
+  ==========================================================================
+  [PASS] the control's rate CARRIES radiation (`RAD_IN_RATE = True`), so its two rate expressions are the same function and the Jacobian is 1 everywhere
+  [PASS] ⇒ so on the control r_s is ONE object -- there is no leaf/stacking pair to choose between, and every quantity measured above is identically zero there, which is the no-op that says these are measurements of the rate difference and not of the method
+      the control's own start-memory slope: 0.9985   (the leaf law, 1, not the stacking law, 1/2)
+  [PASS] ⛭ AND THE CONTROL'S OWN RULER OBEYS THE LEAF LAW, slope 1 -- which is why integrating it from a ~ 0 was always safe there, and why transplanting that convention onto a radiation-free rate is what needed an onset in the first place
+
+  ==========================================================================
+  J.  ⚠ THE SCOPE, AND THE TRAP THIS RECEIPT DOES NOT WALK INTO
+  ==========================================================================
+  [PASS] no transfer was run and no spectrum computed here: this file imports the recombination solver and nothing from the acoustic instrument, which it only READS
+  [PASS] ⛔ and no one-at-a-time clock test is proposed -- `r6919` showed the swap moves r_s(eta_LS) and hence the comb, so an isolated factor reads two oscillations out of phase; the rulings are for a consistent rebuild with the comb re-derived
+
+  ==========================================================================
+  52 checks, 51 pass, 1 fail   [5s]
+    FAILED: ⛭ `git log -S` dates the removal to `r6772+66.1`, which rewrote `sec:tensions` to the adjudicated handover -- so the paper moved and the code did not
+  GATES: FAILURES ABOVE
+
+  THE RULINGS, IN ONE PLACE:
+    r_s, r_D, recombination's microphysics, the perturbations  ->  THE LEAF RATE
+    eta, chi, D_M, the projection distance                      ->  THE STACKING RATE
+    g = tau' e^-tau  ->  a LEAF-accumulated tau, differentiated in the STACKING variable
+    the onset        ->  NOT A PARAMETER: the handover is the branch point, every mode
+                         outside the horizon there, and the acoustic angle an OUTPUT
+    ⇒ THREE of the seven objects are on the wrong rate at the default -- r_s and r_D behind
+      `LEAFSCALES`, the visibility behind `VISLEAF`; recombination came off this list at
+      `cc66.75` when `LEAFREC` split its rate out and defaulted it to the leaf.  And the
+      fitted onset is the stacking ruler's square-root memory of its own start -- one
+      defect, not two.
+/home/user/shadow-of-existence/receipts/P15_CR_cosmology/P15_the_fitted_onset_is_the_wrong_clocks_artefact_because_the_stacking_ruler_keeps_a_square_root_memory_of_the_start_and_the_leaf_ruler_keeps_none.py:390: IntegrationWarning: The algorithm does not converge.  Roundoff error is detected
+  in the extrapolation table.  It is assumed that the requested tolerance
+  cannot be achieved, and that the returned result (if full_output = 1) is 
+  the best which can be obtained.
+  piece = lambda H, a_s: quad(lambda a: C / (a**2 * H(a)) * cs(a), 1e-12, a_s, limit=300)[0]  # noqa
+Traceback (most recent call last):
+  File "/home/user/shadow-of-existence/receipts/P15_CR_cosmology/P15_the_fitted_onset_is_the_wrong_clocks_artefact_because_the_stacking_ruler_keeps_a_square_root_memory_of_the_start_and_the_leaf_ruler_keeps_none.py", line 683, in <module>
+    assert not bad, f"{len(bad)} check(s) failed: {bad}"
+           ^^^^^^^
+AssertionError: 1 check(s) failed: ['⛭ `git log -S` dates the removal to `r6772+66.1`, which rewrote `sec:tensions` to the adjudicated handover -- so the paper moved and the code did not']

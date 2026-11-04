@@ -1,0 +1,120 @@
+
+P15_the_retention_is_the_combs_average_over_the_kernels_own_k_acceptance_and_the_law_has_no_fitted_coefficient
+
+** THE RETENTION IS THE COMB AVERAGED OVER THE KERNEL'S OWN k-ACCEPTANCE, AND THE LAW THAT SAYS SO HAS
+   NO FITTED COEFFICIENT -- so it predicts an ABSOLUTE amplitude and can be killed by one. **
+
+`r6919+cc66.42` named the joint object -- dr_s/dchi across the visibility, 0.454950 against 0.396733 --
+and stopped there, under a `no mechanism` guard.  `r7039` lifted that guard and `r7043` composed the
+result with `r7041`'s convergence order.  This receipt is the law.
+
+⛭ THE LAW.  For a STANDING oscillation the line-of-sight integral factorises with no approximation:
+
+    Delta_l(k) = cos(k r_s*) * k^((1-ns)/2) * G_l(k),    G_l(k) = INT vis(eta) j_l(k x0) d eta
+
+*The comb therefore passes into the transfer UNTOUCHED, and the only thing left that can damp it is the
+sum over k at fixed l*, whose weight is W_l(k) = P(k) k^(1-ns) G_l(k)^2 = G_l(k)^2 dk/k -- the tilt
+cancelling exactly.  With C_l = INT W cos^2(k r_s*) dk = (1/2) INT W + (1/2) Re INT W exp(2 i k r_s*),
+the comb's fractional amplitude in C_l is
+
+    A_l = | INT W exp(2 i k r_s*) dk | / INT W dk
+
+⇒ *** AND THERE IS NOTHING TO FIT.  A_l is built from the window the kernel reads and the comb's period,
+    both of them the background's own. ***
+
+⌗ READ PHYSICALLY: a WIDER chi-extent narrows the kernel's k-acceptance, so less of an acoustic period is
+averaged over and more of the comb survives.  This arm's visibility is 14.6 per cent the wider in chi while
+accumulating the same sound horizon to 0.08 per cent (`r6919`), which is why it retains MORE.
+
+⛔⛔ AND THE MEASURING INSTRUMENT TOOK THREE ATTEMPTS.  THE FIRST TWO ARE NAMED HERE BECAUSE THE GATE THAT
+   CAUGHT THEM IS WORTH MORE THAN THE RESULT.
+  (1) A band std after a running-mean envelope.  Fed a comb of KNOWN amplitude 0.5 it returns 0.46 to 0.55
+    -- up to 46 per cent wrong on a known input.  ** The arm-to-control RATIO survived it only because the
+    same factor divides out of both arms, which is exactly why the ratio agreed while the absolute did not.
+    A statistic can be fit for a ratio and unfit for the quantity the ratio is made of. **
+  (2) A per-band matched filter choosing the period by MAXIMISING the fitted amplitude.  Wrong twice:
+    maximising signal is not a fit criterion (a longer period absorbs more of the band's trend, so the
+    search runs to the edge of its range by construction), and a band is 0.70 wide in q where the comb's
+    period is about 1.00 -- LESS THAN ONE CYCLE, so a per-band fit cannot determine a period at all.
+  (3) What is used: ONE period for the whole range by MINIMUM RESIDUAL, then HELD while the amplitude is
+    fitted band by band.  ** Gate ⓪ refuses to print any measurement unless it recovers a known input. **
+  ⌗ That is `cc66.60`'s error -- the instrument not matching the question's grain -- for the third time in
+  this row, and the first time caught before a number was reported rather than after.
+
+⛔ WHAT IS NOT CLAIMED.  Not that the injection IS the real source: it is the projection's transfer of a
+known input, and over-delivery is sufficiency and not identity.  No convergence claim -- `r7041`'s sweep is
+a separate row and this receipt reads the REPORTED settings only.  Nothing about which cosmology is right.
+And no claim that naming A_l explains why the construction assigns its scales and its distances to
+different rates, which is `r6919`'s own reserved bound and is untouched here.
+
+====================================================================================================
+    [ok]  the bank this receipt reads is present: `spectra/r7041_accept_lcdm.npz`   r7041_accept_lcdm.npz
+    [ok]  the bank this receipt reads is present: `spectra/r7041_accept_cr.npz`   r7041_accept_cr.npz
+    [ok]  the bank this receipt reads is present: `spectra/r6919_injected_lcdm.npz`   r6919_injected_lcdm.npz
+    [ok]  the bank this receipt reads is present: `spectra/r6919_injected_cr.npz`   r6919_injected_cr.npz
+
+  ================================================================================================
+  ⓪ THE INSTRUMENT'S OWN GATE, BEFORE ANY MEASUREMENT IS PRINTED
+  ================================================================================================
+    [ok]  ⛭ the statistic recovers a KNOWN comb's period   1.0322 against 1.0347 (0.24%)
+    [ok]  ⛭ and its amplitude, to better than five per cent -- *the two earlier instruments did not, and this gate is why they were caught rather than reported*   worst 3.74%: 0.4972, 0.4834, 0.4947, 0.4836, 0.4830, 0.4977, 0.4813
+
+  ================================================================================================
+  ⓵ A_l DOES NOT DEPEND ON THE INJECTION, AND THAT IS GATED RATHER THAN ASSERTED
+  ================================================================================================
+    *`A_l` is built from `vis`, `x0`, `k` and `r_s*` and nothing in it refers to what was
+     injected.  The bank therefore holds ONE `A` per arm.  ⛔ A first fold computed it per
+     injection and would have banked two keys holding identical arrays -- an arithmetic identity
+     dressed as two measurements.  So the identity is CHECKED here instead:*
+    [ok]  ⓵ᵃ lcdm: the two injections share window, kernel argument, visibility, k axis and measure -- so one `A` serves both   eta, x0, vis, k, P all byte-equal
+    [ok]       ...and `r_s*` too, which is the other half of `A`   145.382039
+    [ok]  ⓵ᵇ cr: the two injections share window, kernel argument, visibility, k axis and measure -- so one `A` serves both   eta, x0, vis, k, P all byte-equal
+    [ok]       ...and `r_s*` too, which is the other half of `A`   145.911277
+
+  ================================================================================================
+  ⓶ THE FACTORISATION IS EXACT, AND A_l IS RE-DERIVED RATHER THAN TAKEN FROM THE BANK
+  ================================================================================================
+    [ok]  ⓶ᵃ lcdm: Delta_l(k) = cos(k r_s*) k^((1-ns)/2) G_l(k) EXACTLY, on 8 multipoles spread across the reported range -- *so the comb enters the transfer undamped and the k-sum is the only thing that can touch it*   max relative residual 2.73e-15
+    [ok]       ...and A_l recomputed from `vis`, `x0` and `k` reproduces the banked value, so the law is re-derived here and not trusted   max relative difference 0.00e+00
+    [ok]  ⓶ᵇ cr: Delta_l(k) = cos(k r_s*) k^((1-ns)/2) G_l(k) EXACTLY, on 8 multipoles spread across the reported range -- *so the comb enters the transfer undamped and the k-sum is the only thing that can touch it*   max relative residual 2.13e-15
+    [ok]       ...and A_l recomputed from `vis`, `x0` and `k` reproduces the banked value, so the law is re-derived here and not trusted   max relative difference 0.00e+00
+
+  ================================================================================================
+  ⓷ THE ACCEPTANCE, AND IT LANDS ON r6919's OWN NUMBER BY A DIFFERENT ROUTE
+  ================================================================================================
+    lcdm: the acceptance spans 2 r_s* dk = 5.2226 of acoustic phase
+    cr: the acceptance spans 2 r_s* dk = 4.5364 of acoustic phase
+    [ok]  ⛭⛭ ⓷ the ARM's acceptance is the narrower, by about the thirteen per cent `r6919`'s dr_s/dchi independently gives (0.454950 -> 0.396733 is 12.8 per cent) -- *two routes to one quantity, and the agreement is not built in anywhere*   13.1 per cent narrower against 12.8 per cent
+
+  ================================================================================================
+  ⓸ THE LAW FORWARD: ABSOLUTE, BOTH ARMS, NO FITTED COEFFICIENT
+  ================================================================================================
+            band  lcdm law  lcdm meas   ratio      cr law   cr meas   ratio
+     0.85- 1.55    0.5659     0.5325   1.063      0.5834    0.5469   1.067
+     1.55- 2.25    0.5307     0.5251   1.011      0.5554    0.5475   1.015
+     2.25- 2.95    0.5244     0.5295   0.990      0.5550    0.5605   0.990
+     2.95- 3.65    0.5300     0.5238   1.012      0.5654    0.5590   1.012
+     3.65- 4.35    0.5411     0.5195   1.042      0.5805    0.5559   1.044
+     4.35- 5.05    0.5545     0.5460   1.016      0.5975    0.5871   1.018
+     5.05- 5.75    0.5695     0.5601   1.017      0.6153    0.6053   1.016
+    [ok]  ⛭⛭⛭ ⓸ the law predicts the ABSOLUTE comb amplitude on BOTH arms with nothing fitted, to within ten per cent everywhere   worst deviation 6.7 per cent
+    [ok]       ...and six of the seven bands on each arm land inside the instrument's own gate tolerance of 5 per cent, which is the tightest claim THIS receipt supports; *the 3.74 per cent gate-zero figure is the error at ONE injected phase and five of seven sit inside it*   lcdm 6/7, cr 6/7 inside 5 per cent; inside 3.74 per cent: lcdm 5/7, cr 5/7
+
+  ================================================================================================
+  ⓹ AND THE REPRODUCTION GATE: THIS RUN IS r6919's RUN, UNSLICED
+  ================================================================================================
+    [ok]  ⓹ the fixed injection's arm-to-control ratio reproduces `r6919`'s banked run to better than the floor -- *and these were computed on DIFFERENT run schemes, that one sliced on `KBATCH` and this one unsliced, so the agreement covers the scheme as well as the statistic*   1.0587 now against 1.0587 banked, 0.0000 per cent
+
+====================================================================================================
+GATES: ALL PASS.
+
+  VERDICT: ** the retention is the comb averaged over the kernel's own k-acceptance, and the
+  law that says so has no fitted coefficient. **
+  *The line-of-sight integral factorises exactly for a standing oscillation, so the comb reaches
+  the transfer undamped and only the sum over k at fixed l can touch it.  The acceptance's width
+  is set inversely by the chi-extent of the visibility -- this arm's is the wider while
+  accumulating the same sound horizon -- and A_l predicts the ABSOLUTE amplitude on both arms.*
+  ⛔ ** What it does NOT do is say why the construction puts its scales and its distances on
+     different rates. **  That is `r6919`'s reserved bound and this receipt does not touch it.
+  ⌗ ** And the instrument took three attempts. **  The gate on a known input is what separated
+     the third from the first two, and it is the part that transfers.

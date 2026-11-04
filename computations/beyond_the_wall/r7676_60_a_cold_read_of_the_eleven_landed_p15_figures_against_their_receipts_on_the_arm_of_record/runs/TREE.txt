@@ -1,0 +1,10 @@
+r7676 (60) -- THE TREE THIS READ IS REGISTERED AND RUN ON
+
+worktree  a313f53a84a6f4af4f465168644ae9dfef61ad99
+HEAD      5f2513f4  (r7675 (69) -- four seats merged; cc66's eight P15 repoints onto the arm of
+          record landed in one pass)
+base      origin/main at 5f2513f4, level
+
+⌗ A cold read is a statement about a TREE and it has to name the tree.  Every figure below is
+  checked against the receipts AS THEY STAND ON THIS WORKTREE, not against the landing commit's
+  account of what it computed.

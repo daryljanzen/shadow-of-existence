@@ -1,0 +1,198 @@
+r7676 (60) -- THE COLD READ: do the P15 figures r7675 landed say what their receipts compute?
+
+** THE ORDER (`r7675`, 69) ** names seven sites in `corpus/CR_cosmology.tex`, calls them *eleven
+figures*, and asks THREE questions kept separate because they can disagree:
+  (1) does the cited receipt, run on today's tree, produce the printed figure at the printed
+      precision?
+  (2) ** is it the quantity the sentence names? ** -- in particular, is `l.1850`'s "the same sound
+      horizon to 0.36 per cent" the window-accumulated quantity of `l.1807`, and NOT `r_s*`, which
+      `70` measures at 0.82 per cent on the arm of record?
+  (3) does any sentence's CLAIM, not only its digits, change on the arm of record, as `l.1798`'s
+      "exceeding" did?
+
+** THE METHOD IS `PREDICTION.md`'s, FIXED BEFORE ANYTHING RAN: ** the site set is the corpus's own
+site builder over the order's seven ranges (`build_sites.py`); each cited receipt gets ONE bounded
+run (`run_cited.py`, three at a time, one thread each, `NODE=60`); a figure REPRODUCES when it is in
+that output verbatim or within half a unit of its last printed digit; and -- new to this revision --
+every reproducing figure carries THE LABEL THE RECEIPT PRINTS BESIDE IT, compared against markers
+drawn from the sentence's own words.
+
+⌗ *Cold means the check reads the paper's sentence and the receipt's own output, never the landing
+commit's account of what it did.  The tree is `runs/TREE.txt`.*
+
+⛭ THE LESSON THIS INSTRUMENT IS BUILT AROUND, from `r7674`: ** a guard that checks whether a verdict
+depends on its input cannot check whether the input was read correctly -- a dependence test is not a
+correctness test. **  `r7674`'s flip family caught NONE of three mis-readings.  So the label reader
+below carries a probe dict pinning every shape the receipt output actually contains, and a NEGATIVE
+probe that a label from a different line must not attach.
+
+============================================================================================================
+  r7676 (60) -- the cold read of the P15 figures r7675 landed, on the tree named in runs/TREE.txt
+============================================================================================================
+
+PART 0 -- THE GUARD FAMILIES, RUN BEFORE ANY VERDICT IS READ
+  ⌗ `PREDICTION.md` registered FIVE (G1-G5).  G6 -- the flattening probes -- was ADDED DURING the run,
+  when a prose probe on `both figures quoted above survive the change` read False because the phrase
+  WRAPS in `CR_cosmology.tex`.  That rule has been standing in this line since `r7664` and was
+  simply not written down as a family; the addition is declared here rather than folded into the
+  registration, because a method changed mid-run is a thing to report.
+  --------------------------------------------------------------------------------------------------------
+  [PASS] G1 the conjunct probe: the digit rule fires on a number the output HAS and not on one it has not
+  [PASS] G2a word-boundary anchor: `\bsound horizon\b` matches the phrase and NOT `sound horizons`
+  [PASS] G2b control-sequence anchor: `\\chi` matches `d\chi` and not a bare `chi` inside a word
+  [PASS] G2c math-delimiter anchor: `\$12\.9\$` matches `$12.9$` and not `$12.95$`
+  [PASS] G2d an UNANCHORED marker is REFUSED rather than silently matched
+  [PASS] G5 reader shape `prose line, its own words` (CONFIRMED)
+  [PASS] G5 reader shape `a ROW under a HEADER -- the column reader` (CONFIRMED)
+  [PASS] G5 reader shape `a row where the number is in TWO columns -- both are named` (CONFIRMED)
+  [PASS] G5 reader shape `a LABELLED cell, the label inside the cell` (CONFIRMED)
+  [PASS] G5 reader shape `an =-assignment` (CONFIRMED)
+  [PASS] G5 ⛭ NEGATIVE ① -- a label past a BLANK LINE must not attach (UNCONFIRMED)
+  [PASS] G5 ⛭ NEGATIVE ② -- the NEIGHBOURING column's name must not attach to this cell (UNCONFIRMED)
+  [PASS] G5 ⛭ NEGATIVE ③ -- the header lookup must walk PAST the rows above, so the row above's own value is not this number's label (UNCONFIRMED)
+  [PASS] G5 ⛭ NEGATIVE ④ -- a word true of the WHOLE row does not confirm one of its cells: the cell reading keeps `arm 4.4301` apart from `control 5.1353` (CONFIRMED)
+  [PASS] G6a ⛭ a prose phrase that WRAPS reads False on the raw text and True on the flattened copy -- which is why every prose probe goes through `flat()`
+  [PASS] G6b and flattening does not join two SEPARATE phrases into a match that was never there
+  [PASS] G6c the flattener is idempotent, so a probe cannot depend on how many times it ran
+  [PASS] G3 the flip family: every quantity verdict flips when its label is removed (2 of 2)
+
+PART 1 -- WHAT RAN, WITH THE DENOMINATOR KEPT WHOLE
+  --------------------------------------------------------------------------------------------------------
+      RAN   rc=0       344.8s / 420s  P15_the_acceptance_does_not_move_under_refinement_and_three_of_the_twelve_
+      RAN   rc=0        99.9s / 420s  P15_the_retention_is_the_combs_average_over_the_kernels_own_k_acceptance_a
+      RAN   rc=0        43.5s / 420s  P15_the_laws_six_of_seven_is_five_at_the_quoted_floor_which_is_one_phases_
+      RAN   rc=1        20.0s / 420s  P15_the_fitted_onset_is_the_wrong_clocks_artefact_because_the_stacking_rul
+      RAN   rc=0        10.1s / 420s  P15_the_selection_does_not_truncate_so_the_thirteen_sigma_stands_at_twelve
+      RAN   rc=0         8.1s / 420s  P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_pa
+      RAN   rc=0         2.8s / 420s  P15_the_peak_plane_survives_the_merge_the_sky_lands_within_one_sigma_of_th
+      RAN   rc=0         0.4s / 420s  P15_the_projection_read_recombination_at_the_wrong_conformal_time_and_one_
+  [PASS] ⛭ ARM ③ -- at least 6 of the 8 cited receipts ran to completion inside the window (8 of 8)
+
+PART 2 -- ⓵ THE DIGITS AND ⓸ THE QUANTITY, FIGURE BY FIGURE
+  --------------------------------------------------------------------------------------------------------
+        figure  site     digits      quantity      the label the receipt attaches to it
+         1.061  l.1797   REPRODUCES  CONFIRMED     (1) A physics-free `g cos(k r_s(eta))` injection g
+         0.019  l.1798   REPRODUCES  CONFIRMED     +0.0193 to ** +0.0924 ** while barely moving the m
+         0.022  l.1798   REPRODUCES  CONFIRMED     ** 1.061 with a slope of +0.0193 per unit q **, ag
+          0.36  l.1807   REPRODUCES  CONFIRMED     ** The SOUND HORIZON accumulated across the visibi
+        17.307  l.1807   REPRODUCES  CONFIRMED     control | d r_s (own clock)
+        17.369  l.1807   REPRODUCES  CONFIRMED     arm | d r_s (own clock)
+          15.5  l.1808   REPRODUCES  CONFIRMED     cent, while the COMOVING DISTANCE across it differ
+         38.04  l.1808   REPRODUCES  CONFIRMED     control | FWHM(eta) + d chi = d eta
+         43.96  l.1809   REPRODUCES  CONFIRMED     arm | FWHM(eta) + d chi = d eta
+         0.395  l.1810   REPRODUCES  CONFIRMED     arm | d r_s / d chi
+         0.455  l.1810   REPRODUCES  CONFIRMED     control | d r_s / d chi
+          4.43  l.1845   REPRODUCES  CONFIRMED     base | arm 4.4301
+          5.14  l.1845   REPRODUCES  CONFIRMED     base | control 5.1353
+         13.73  l.1846   REPRODUCES  CONFIRMED     base | arm narrower by 13.73%
+          13.1  l.1847   REPRODUCES  CONFIRMED     0.3951 on the arm against 0.4549 on the control, 1
+         0.788  l.1890   REPRODUCES  CONFIRMED     `Jac = d eta_leaf / d eta_stack` is 1.000000 every
+         0.911  l.1890   REPRODUCES  CONFIRMED     `Jac = d eta_leaf / d eta_stack` is 1.000000 every
+          12.6  l.2283   REPRODUCES  CONFIRMED     one driving unit at that end is 12.63 sigma on the
+         0.953  l.2283   REPRODUCES  CONFIRMED     bootstrap 95% interval on the robust ratio, 400 re
+          0.76  l.2284   REPRODUCES  CONFIRMED     OK | ⛔ *The sky figure is the one hundredth where 
+
+      REPRODUCES 20 / 20   ABSENT 0   quantity CONTRADICTED 0   AMBIGUOUS 0   UNCONFIRMED 0
+
+PART 3 -- ⓹ THE ORDER'S NAMED QUESTION: IS `l.1850`'s `0.36 PER CENT` THE WINDOW'S SOUND
+          HORIZON, OR `r_s*`?
+  --------------------------------------------------------------------------------------------------------
+  *The order asks it because `70` measures `r_s*` at `0.82` per cent on the arm of record, and
+  a sentence that says `the same sound horizon to 0.36 per cent` is checkable only once it is
+  settled WHICH sound horizon.  ⌗ Three quantities in the corpus answer to that name.*
+
+      quantity                                                       control         arm   arm/ctl
+      the sound horizon ACCUMULATED ACROSS THE VISIBILITY FWHM -- `l.1807`'s own     17.3074     17.3691     0.36%
+      `r_s*`, the banked sound horizon at last scattering           145.3820    146.5725     0.82%
+      the sound horizon AT the visibility peak on the arm's own clock    145.3465    147.4648     1.46%
+
+  [PASS] ⓹ⓐ the figure `l.1850` prints, 0.36 per cent, IS the window-accumulated sound horizon of `l.1807` (0.36% on the arm of record)
+  [PASS] ⓹ⓑ and it is NOT `r_s*`, whose arm-to-control difference on the same banks is `70`'s 0.82 per cent (0.82%)
+  [PASS] ⓹ⓒ ⛭ and a THIRD quantity answers to the same name -- the sound horizon AT the peak on the arm's own clock, 1.46 per cent -- so `the sound horizon` is THREE-to-one on this object
+
+PART 4 -- ⛔ ⓸ THE WINDOW `l.1890` NAMES IS NOT THE WINDOW ITS FIGURES WERE MEASURED ON
+  --------------------------------------------------------------------------------------------------------
+  `l.1889-1890` prints: *the Jacobian `runs 0.788 to 0.911 across $\pm3$ HALF-WIDTHS of the
+  visibility`*.  The receipt's own prose, three times, says `+-3 FWHM`; and the bank that
+  carries `jac_lo`/`jac_hi` builds its grid as `linspace(ETA_LS - 3*w, ETA_LS + 3*w, 201)`
+  with `w = M.ETA_LS_W`, whose own definition in `ACOUSTIC_two_arm.py:600` is `its FWHM in
+  conformal time`.  ⇒ ** +-3 FWHM is +-6 half-widths: the window the sentence names is HALF
+  the one the figures come from. **
+
+      window                                 Jac lo     Jac hi    spread
+      pm3_FWHM                               0.7908     0.9130     12.2%
+      pm3_halfwidths                         0.8369     0.8946      5.8%
+      pm1p5_FWHM                             0.8369     0.8946      5.8%
+  [PASS] ⓸ⓐ on the window the RECEIPT names (+-3 FWHM) the Jacobian spans the printed 0.788-0.911
+  [PASS] ⓸ⓑ ⛔ on the window the SENTENCE names (+-3 half-widths) it does NOT -- it spans 0.837 to 0.895, less than half the spread
+  [PASS] ⓸ⓒ and the direction is the understating one for the sentence's own point: the narrower window makes the two clocks look MORE alike, so the printed pair is the stronger reading and the named window the weaker
+
+PART 5 -- ⛔ ⓺ ONE OF THE FOUR RECEIPTS `l.1850` CITES IS STILL ENTIRELY ON THE NAMESAKE
+  --------------------------------------------------------------------------------------------------------
+      `…the_retention…`  reads : r7041_accept_, r7041_accept_cr, r7041_accept_lcdm
+      `…the_acceptance…` reads : r7041_accept_Al_leafrec1, r7041_accept_digest_leafrec1, r7041_accept_nk_slices_leafrec1, r7041_accept_sample_leafrec1
+  [PASS] ⓺ⓐ ⛔ `…the_retention…` reads the NAMESAKE banks -- not one `_leafrec1` form among them -- while `…the_acceptance…`, cited in the same sentence, reads the arm of record's
+  [PASS] ⓺ⓑ and it HARDCODES the namesake's `d r_s / d chi` in its own prose and in the message of the gate that checks the agreement: `0.454950 against 0.396733` and `12.8 per cent`, where the arm of record is `0.395135` and `13.1`
+      the acceptance, from `…the_retention…`  (namesake banks) : 5.2226, 4.5364
+      the acceptance, from `…the_acceptance…` (arm of record)  : 5.1353, 4.4301
+  [PASS] ⓺ⓒ ⛔ so ONE named quantity has TWO values in the corpus, and the paper prints the arm of record's -- `4.43` and `5.14` are `…the_acceptance…`'s, not `…the_retention…`'s
+  [PASS] ⓺ⓓ ⛭ AND THE TRAP: `…the_retention…`'s NAMESAKE acceptance narrowing is ALSO `13.1` per cent, the same digits as the arm of record's SOUND-SPEED narrowing that `l.1847` quotes -- so one number is many-to-one across two quantities AND two arms
+
+      ⌗ AND TWO RECEIPT PROSE DEFECTS OF THE SAME CLASS, FOUND WHILE READING THE LABELS:
+  [PASS] ⓺ⓔ ⛔ `…the_selection…`'s own assertion HEADER names the paper's OLD figures, `12.5` and `0.75`, while the measurement two lines above it reads the paper as printing `12.6` and `0.76` -- the receipt's text disagrees with its own computation
+  [PASS] ⓺ⓕ ⛔ and `…a_source…`'s ESTABLISHED paragraph says the injection's figures are `exceeding the real source's 1.054 AND +0.02178`, where its own gate says the slope `is NOT steeper any more` and prints `slope FALSIFIED` -- the paper's own sentence is the MORE accurate of the two, hedging the slope instead of claiming it
+
+PART 6 -- ⓻ THE CLAIMS, NOT THE DIGITS: DOES ANY COMPARATOR CHANGE ON THE ARM OF RECORD?
+  --------------------------------------------------------------------------------------------------------
+      [HOLDS  ] l.1798 `exceeding` what the real source gives -- the RATIO
+                  injection 1.0612 against the real source 1.054
+      [HOLDS  ] l.1798 `at a slope of +0.019 ... close to the real source's own +0.022` -- a HEDGE, and the receipt's own gate calls the slope half FALSIFIED
+                  the injection's slope is LOWER, not steeper: +0.01927 against +0.02178
+      [HOLDS  ] l.1808 the comoving distance `differs by 15.5 per cent` while the sound horizon is `the same`
+                  d r_s 0.36% against d chi +15.55%
+      [HOLDS  ] l.1845 the acceptance is `the narrower on this arm`
+                  arm 4.4301 against control 5.1353
+      [HOLDS  ] l.1847 `two routes to one quantity, and the agreement is built in nowhere`
+                  the comparison target 13.1 IS a hardcoded constant in `…the_acceptance…`, declared as such, checked at a 1 pp window with 0.63 pp measured
+      [HOLDS  ] l.1850 this arm's visibility is `the 15.5 per cent wider in chi`
+                  d chi 43.957 against 38.042
+      [HOLDS  ] l.2284 `both figures quoted above survive the change`
+                  the receipt carries the sentence and says the quoted end is the conservative one
+  [PASS] ⓻ the comparators that do NOT hold on the receipts' own numbers (0 of 7)
+
+PART 7 -- ① THE CITATION SCOPE AND ⑦ THE COUNT, THROUGH THE GATE'S OWN `sites()`
+  --------------------------------------------------------------------------------------------------------
+      cited sentences in `CR_cosmology.tex` the gate reads : 329
+      of the order's 20 figures, those appearing in NO cited sentence, so the
+      figure-pin gate never reads them                     : 10
+        ~    1.061  at l.1797
+        ~    0.022  at l.1798
+        ~   17.307  at l.1807
+        ~   17.369  at l.1807
+        ~    38.04  at l.1808
+        ~    43.96  at l.1809
+        ~     4.43  at l.1845
+        ~     5.14  at l.1845
+        ~    13.73  at l.1846
+        ~     13.1  at l.1847
+  [PASS] ①ⓐ the read made before registration survives the gate's own `sites()`: the heaviest figures of the repoint sit in sentences that cite NO receipt, so the figure-pin gate has never read them (10 of 20)
+
+      the order calls them              : eleven
+      the landing commit calls them     : eight repoints
+      the parser finds, distinct        : 17
+      this read checked                 : 20
+  [PASS] ⑦ the count is MEASURED and does not match either name given to it (17 distinct against `eleven` and `eight`)
+
+============================================================================================================
+  THE VERDICT
+============================================================================================================
+  ⓵ THE DIGITS            : 20 of 20 reproduce to the printed precision; 0 absent.
+  ⓸ THE QUANTITY          : 20 confirmed, 0 contradicted, 0 ambiguous, 0 unconfirmed.
+  ⓹ `l.1850`'s 0.36       : the WINDOW-ACCUMULATED sound horizon of `l.1807`, measured 0.36%, and NOT `r_s*` at 0.82%.  The order's reading is right.
+  ⓸ `l.1890`'s WINDOW     : ⛔ NOT SUPPORTED -- `+-3 half-widths` names half the window the figures come from.
+  ⓺ `l.1850`'s CITATIONS  : ⛔ one of the four receipts is entirely on the NAMESAKE and disagrees with the printed figures.
+  ⓻ THE CLAIMS            : 7 of 7 comparators hold.
+  ① THE GATE'S REACH      : 10 of the 20 figures sit in UNCITED sentences, outside what the figure-pin gate can see.
+
+============================================================================================================
+  ALL GUARDS AND ARMS PASS.
