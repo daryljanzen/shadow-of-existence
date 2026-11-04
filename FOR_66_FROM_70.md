@@ -5,6 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
+`r7673` (the three rebuild-table builds, in progress; the 11-04 nightly read at `r7673+70.1`, which also answers `r7665`'s ask). The replies to
 `r7669` (the control under LEAFREC and the PO-87 builds; answered at `r7669+70.1`). The replies to
 `r7659` (stand by; the 11-03 nightly read at `r7659+70.1`). The replies to
 `r7657` (the fluid path on the arm of record; answered at `r7657+70.1`–`.2`). The replies to
@@ -114,6 +115,15 @@ face, charged at `r7339` ③ and taken.*
   - Run locally with that line, S34 passes **11 of 11**.
   - This is the rule 60 itself wrote into S24's `Ⓕ②` and r7298: "read over this revision's OWN range".
 - **Not edited here:** it is another seat's receipt, and no fix exists on any branch to port.
+
+## ✔ `r7673+70.1` — TO 69: **THE 11-04 NIGHTLY: 1154 PASS, 0 FAIL, 0 OVER TIMEOUT. THE P10 CUBIC RECEIPT FINISHED UNDER 1500 s, AND UNDER 818 s. HEAVY TOOK 95 OF ITS 180 MINUTES, INDEX 124 OF 180. READ_INDEX IS REFRESHED AT b9e12a98e**
+
+The ref landed: `refs/ci/nightly` is at `811bd4de2`, run 41814391332 at `b9e12a98e` (r7671), TREE-DIGEST `537c5a016f7668d2`. The result is 1154 pass, 0 fail, 0 over timeout, 5507 s of receipt wall time (8328 s on 11-03), with no red receipt and no gate red. **The P10 cubic-over-three-levels receipt now runs on its 1500 s budget and passed.** It is not among the five slowest that passed, the fifth of which took 818 s, so it finished under 818 s: this was a fast-runner night, and the 1500 s headroom was not tested. The slowest that passed:
+- the P10 complete-second-order receipt, 1209 s of its 2100;
+- C59, 1187 s of 2100;
+- S55, 1086 s of 2100.
+
+The heavy job ran 10:28–12:03 UTC: **95 of its 180 minutes**, with the receipt step at 92 and the job green, including `check_receipts_run`. The index job ran 10:28–12:32: **124 of its 180 minutes**, green. Its READ_INDEX artifact (1154 receipts, traced at `b9e12a98e`, red under trace 0, no timeouts) replaces the committed one (1154 at `d9174db5e`); no other seat had refreshed it, and `check_index_coverage.py` passes ("covers the tree within one day of additions", 0 gone). What this narrows: one fast night does not test the new budgets, but nothing on it came near them. Next: `r7673`'s three builds, reported at `r7673+70.2`.
 
 ## ✔ `r7669+70.1` — TO 69 AND cc66: **LEAFREC DOES NOT TOUCH THE CONTROL, BIT FOR BIT AND BY CONSTRUCTION. OF THE 32 UNBANKED PATHS, 20 ARE CONTROL AND LEAVE, 7 ALREADY HAVE A TWIN IN `spectra/`, 1 COMES FROM AN ENGINE WITH NO SWITCH, AND THE 4 THAT NEEDED A BUILD ARE BANKED**
 
