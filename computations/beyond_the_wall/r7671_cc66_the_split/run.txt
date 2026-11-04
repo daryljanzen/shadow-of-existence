@@ -59,11 +59,10 @@
 ====================================================================================================
 
       to 69 (RE-GROUND, one batch) : 2 sentences
-      to 70 (REBUILD)              : 11 items over 19 distinct spectra -- 17 already banked on the arm of record, 2 to build
+      to 70 (REBUILD)              : 11 items over 19 distinct spectra -- 18 already banked on the arm of record, 1 to build
       held pending 70's measurement: 13
         TO BUILD  computations/beyond_the_wall/r7183_nofit_figure/nofit_figure_numbers.npz
-        TO BUILD  computations/beyond_the_wall/spectra/cc66_lowell_sweep.npz
-    OK    Ⓒ① THE REBUILD ROUTING IS PRICED RATHER THAN LISTED: 11 items over 19 distinct namesake spectra, 17 of which have an arm-of-record sibling already banked and 2 of which do not.  ⌗ *That split is 70's, not mine -- it is the bank's state, and `r7667`'s Ⓒ② already found no item is cheap END TO END*   (17 repoint, 2 build)
+    OK    Ⓒ① THE REBUILD ROUTING IS PRICED RATHER THAN LISTED: 11 items over 19 distinct namesake spectra, 18 of which have an arm-of-record sibling already banked and 1 of which do not.  ⌗ *That split is 70's, not mine -- it is the bank's state, and `r7667`'s Ⓒ② already found no item is cheap END TO END*   (18 repoint, 1 build)
     OK    Ⓒ② ⛔⛭⛭ THE RESOLUTION THIS READING DOES NOT HAVE IS COUNTED: 10 of the 11 REBUILD items are TRACED -- the figure in print followed through the receipt to a namesake load -- and 1 are UNTRACED, where the receipt's own arm legs are already arm-of-record and the namesake reads that remain may be auxiliaries.  ⇒ ** This is the receipt-level-versus-site-level limit named at `r7669`, and it is why 70 is sent a priced list with the untraced items flagged rather than a build order. **   (10 traced, 1 untraced)
       items at least one of whose citing sentences carries MORE THAN ONE `\rcpt`: 14 of 26
     OK    Ⓒ③ ⛭ WHY "ITS SENTENCE" IS NOT ALWAYS ONE RECEIPT'S: 14 of 26 items are cited in a sentence that cites OTHERS too, so the figure in print may be a co-cited receipt's rather than this one's.  *Stated as a count because it is the reason some reasons below name which receipt supplies the figure instead of assuming this one does*   (14 of 26 multi-cited)
@@ -73,7 +72,7 @@
 ====================================================================================================
 
   [01] REBUILD   (arm-figure)  P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_the_visibility
-       lines: [1813, 1851, 1891]
+       lines: [1800, 1810, 1813, 1847, 1851, 1891]
        anchor: "which on this arm runs $0.788$ to $0.911$"
        reason: the Jacobian in print is this arm's and is the LEAFREC quantity itself: the sentence gives d(eta_leaf)/d(eta_stack) running 0.789 to 0.913 on this arm against identically one on the control, and the receipt reads every leg -- injected, geometry, noop, source, screen -- on the namesake side with no `_leafrec1` anywhere in its live source
        spectrum: computations/beyond_the_wall/spectra/r6919_injected_cr.npz  [arm-of-record sibling banked]
@@ -141,7 +140,7 @@
        lines: [2591, 2595, 2599, 2801, 2811]
        anchor: "$\approx0.487$, $0.435$, $0.359$ and $0.666$ of the flat-$\Lambda$CDM expectation"
        reason: the four deficits in print are this construction's own low-multipole floor and come straight out of `cc66_lowell_sweep.npz`, the receipt's single spectrum read. ⚠ But the sweep has NO `_leafrec1` sibling and its keys carry no LEAFREC dimension at all (FROZEN/DECOUPLED x control/adjudicated x KLO/NS3/NTAU) -- so whether LEAFREC has a referent here is a question for 70 before any build
-       spectrum: computations/beyond_the_wall/spectra/cc66_lowell_sweep.npz  [NO sibling -- to build]
+       spectrum: computations/beyond_the_wall/spectra/cc66_lowell_sweep.npz  [arm-of-record sibling banked]
   [13] RE-GROUND (method, UNTRACED)  P15_the_lowell_sweep_is_reproduced_by_a_producer_in_the_repository_and_the_bank_is_that_producers_output_rounded
        lines: [2595]
        anchor: "the hierarchy agrees to three per cent at every multipole"
@@ -225,7 +224,7 @@
        reason: `_AOR[cr]` is `cc66_r185_verify_cr_leafrec1`; the namesake `cc66_r185_verify_cr.npz` is opened once for the K185 comparison and the remaining namesake figure read is `_AOR[lcdm]`, the control leg
        spectrum: computations/beyond_the_wall/spectra/cc66_r185_verify_lcdm.npz  [NO sibling -- to build]
 
-  TOTALS: 2 RE-GROUND to 69, 11 REBUILD to 70 (10 traced / 1 untraced), 13 HELD pending 70's control measurement.  19 distinct spectra: 17 repoint, 2 build.
+  TOTALS: 2 RE-GROUND to 69, 11 REBUILD to 70 (10 traced / 1 untraced), 13 HELD pending 70's control measurement.  19 distinct spectra: 18 repoint, 1 build.
 
 ====================================================================================================
   ✓ ALL CHECKS PASSED

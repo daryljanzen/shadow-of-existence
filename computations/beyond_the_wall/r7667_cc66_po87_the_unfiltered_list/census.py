@@ -527,13 +527,34 @@ print(f'      distinct namesake spectra with NO banked sibling: {len(no_sib)}')
 #:   a figure-printing set the crude sentence test had inflated.  ** On the precise test it is 22,
 #:   below the floor I set. **  *Recorded as a miss rather than re-floored: the clause was mine to
 #:   choose, and the number that falsified it is the same fix that shrank the list.*
+# ═════════════════════════════════════════════════════════════════════════════════════════════════
+# ⛭⛭⛭ `r7677+cc66` -- ** TWO OF THIS CENSUS'S PINS MOVED BECAUSE ANOTHER SEAT BANKED A SPECTRUM,
+#   AND THAT IS THE ONE CAUSE BEHIND BOTH.  THE PINS ARE RE-SET AGAINST A LEDGER, NOT RE-TYPED. **
+#
+#   `_LEFT_SINCE` records items that left the list; `_JOINED_BY_READ` records items a read put on
+#   it.  ⛔ * Neither covers the third way the numbers move: a namesake path acquiring its
+#   arm-of-record twin, which is work done in another seat's revision and changes nothing about
+#   what the papers print. *  `Ⓒ①` counts unbanked PATHS and `Ⓒ④` counts CHEAP items, and one
+#   landed bank moves both.
+#   ⇒ So the bank is named here with the revision that built it, `Ⓒ①` is pinned at its old value
+#     MINUS this ledger, and the path is required to actually HAVE a counterpart now -- a ledger
+#     entry for a bank that is not there would redden the gate rather than excuse it.
+_BANKED_SINCE = {
+    'computations/beyond_the_wall/spectra/cc66_lowell_sweep.npz':
+        'r7675+70.1 (node 70) -- cc66_lowell_sweep_leafrec1.npz banked as an addition.  Not this '
+        'seat\'s work and not a change to anything in print: it makes the depth-gap item '
+        'REPOINTABLE, which is what r7677 item 3 orders',
+}
 check(f'Ⓒ① the unbanked count is scored on RESOLVED PATHS and arm ②\'s floor of 30 is recorded as '
       f'FALSIFIED: {len(no_sib)} distinct namesake spectrum PATHS read by a figure-printing '
       f'candidate have no arm-of-record counterpart, against the 30 I registered',
-      len(no_sib) == 18 and len(no_sib) < 30,
+      len(no_sib) == 18 - len(_BANKED_SINCE) and len(no_sib) < 30
+      and all(not aor_counterpart_exists(q) for q in no_sib)
+      and all(aor_counterpart_exists(q) for q in _BANKED_SINCE),
       f'{len(no_sib)} without a counterpart; arm \u2461 floor 30 -> FALSIFIED  '
       f'[r7673+cc66: 22 -> 18, the four paths that left with the four items in _LEFT_SINCE.  '
-      f'The clause is MORE falsified, not less: the floor was 30]')
+      f'r7677+cc66: 18 -> {18 - len(_BANKED_SINCE)}, the {len(_BANKED_SINCE)} path(s) another seat '
+      f'BANKED, per _BANKED_SINCE.  The clause is MORE falsified, not less: the floor was 30]')
 #: ⛔⛭⛭⛭ AND THIS IS THE FINDING ITEM 2 TURNS ON, measured rather than assumed: the order says
 #:   "re-derive the cheapest half of them", which presumes a cheap half exists.  ** It does not. **
 #:   Only TWO of the 54 figure-printing items have an arm-of-record sibling banked for EVERY
@@ -598,13 +619,15 @@ check(f'Ⓒ③ ⛭⛭ THE LIST SEPARATES EVIDENCE FROM CONSERVATIVE INCLUSION: {
 #:   sites still undecidable are loop variables, dict comprehensions and module-level constants --
 #:   ** resolving them is a READING task on 22 receipts, not a fifth instrument. **  Said here so
 #:   that nobody spends a fifth iteration discovering the same convergence.
+#: ⛭ the cheap set is NAMED and not merely counted, so a third cheap item reddens `Ⓒ④` too.
+_CHEAP_NAMED = ('a_source_with_no_physics', 'the_low_multipole_depth_gap')
 check(f'Ⓒ④ ⛭ THE INSTRUMENT HAS CONVERGED ON THE ANSWER THAT MATTERS: the call-site pass moved '
       f'the list to {len(prints_fig)} items and the evidence split to {len(_loads_nm)}/'
       f'{len(_undec_only)}, and left the cheap count at {len(cheap)} -- so the remaining '
       f'{site_tally["undecidable"]} undecidable sites are a reading task on {len(_undec_only)} '
       f'receipts rather than a further instrument',
-      len(cheap) == 1 and len(_undec_only) < len(_loads_nm) + 10
-      and all('a_source_with_no_physics' in q for q in cheap),
+      len(cheap) == 1 + len(_BANKED_SINCE) and len(_undec_only) < len(_loads_nm) + 10
+      and all(any(n in q for n in _CHEAP_NAMED) for q in cheap),
       f'{len(cheap)} cheap; {len(_undec_only)} to read  '
       f'[⛔ r7673+cc66: THE CHEAP COUNT MOVED 0 -> 1 AND THE 1 IS NOT A CHEAP REPOINT.  It is '
       f'`a_source_with_no_physics`, ALREADY repointed at r7673+cc66.5: the only namesake paths it '
@@ -613,7 +636,11 @@ check(f'Ⓒ④ ⛭ THE INSTRUMENT HAS CONVERGED ON THE ANSWER THAT MATTERS: the 
       f'converged here, `no item is cheap end to end`, is intact; what moved is a count this '
       f'census cannot distinguish from a figure read, which is r7669s own receipt-level limit.  '
       f'The gate NAMES the item rather than just counting it, so a genuinely cheap second item '
-      f'would redden it]')
+      f'would redden it.  ⛭⛭ r7677+cc66: IT DID, AND THE SECOND ONE IS GENUINE.  '
+      f'`the_low_multipole_depth_gap` became cheap the moment 70 banked '
+      f'`cc66_lowell_sweep_leafrec1.npz` (_BANKED_SINCE), and r7677 item 3 orders exactly that '
+      f'repoint -- so the gate did the job it was written for: it named a real repointing the '
+      f'instant the bank made it possible, rather than letting a count drift]')
 
 # ══ THE LIST ════════════════════════════════════════════════════════════════════════════════════
 head('THE UNFILTERED LIST -- every figure-printing item, its receipt, its spectra, its sentence')

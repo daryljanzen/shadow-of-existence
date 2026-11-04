@@ -395,14 +395,31 @@ print(f'      ⇒ the class, as measured: {len(blind_inv) + len(_BY_HAND)}')
 print(f'      of the class, already on PO-87\'s list by another route: {len(_on_list)}')
 print(f'      of the class, with a figure-printing citing sentence of their OWN: '
       f'{sum(1 for v in _own_fig.values() if v)}')
-check('\u2464 ⛭⛭ arm \u2467 (4-12 receipts, central 6) is scored: the resolver finds '
-      f'{len(blind_inv)} directory-blind receipts in scope and the read found a '
-      f'{len(blind_inv) + len(_BY_HAND)}th the resolver also misses -- so the BAND HOLDS AT ITS TOP '
-      'EDGE and the central guess MISSES BY SIX.  The class is real and it is twice the size I '
-      'registered',
-      4 <= len(blind_inv) + len(_BY_HAND) <= 12 and len(blind_inv) == 11,
+#: ⛔⛭⛭⛭ `r7677+cc66` -- ** ARM \u2467's BAND IS EXCEEDED BY ONE, AND THE REASON IS A PROPERTY OF
+#:   THE ARM I DID NOT SEE WHEN I SET IT: THE CLASS IS BANK-DEPENDENT. **  Membership requires the
+#:   namesake path to HAVE a banked `_leafrec1` twin -- that is what makes the receipt a repointing
+#:   the classifier cannot see -- so ** the class GROWS every time another seat banks a twin. **
+#:   `r7675+70.1` banked `cc66_lowell_sweep_leafrec1.npz` and `the_lowell_sweep_is_reproduced_by_a_
+#:   producer` joined it, taking the measurement 12 -> 13.
+#:   ⇒ * So the honest score is BOTH numbers: 12 on the tree the arm was registered against, inside
+#:     4-12 at its top edge; 13 after 70's bank landed, one OUTSIDE it.  The band is recorded as
+#:     EXCEEDED rather than re-floored, and the defect is mine -- I set a band on a quantity that
+#:     moves with the bank and said nothing about the bank. *  The pin is the registration-tree
+#:     value PLUS the census's own `_BANKED_SINCE` ledger, so a further bank moves it only with a
+#:     declared cause.
+_AT_REGISTRATION = 12
+_BANKED = len(getattr(census, '_BANKED_SINCE', {}))
+check('\u2464 ⛭⛭ arm \u2467 (4-12 receipts, central 6) is scored IN BOTH TREE STATES: '
+      f'{_AT_REGISTRATION} on the tree it was registered against, INSIDE the band at its top '
+      f'edge; {len(blind_inv) + len(_BY_HAND)} now, ONE OUTSIDE IT, because the class is '
+      'BANK-DEPENDENT and another seat banked a twin.  \u26d4 The band is recorded as EXCEEDED, '
+      'not re-floored: I set a band on a quantity that moves with the bank and did not say so',
+      len(blind_inv) == _AT_REGISTRATION - 1 + _BANKED
+      and len(blind_inv) + len(_BY_HAND) == _AT_REGISTRATION + _BANKED
+      and not (4 <= len(blind_inv) + len(_BY_HAND) <= 12),
       f'{len(blind_inv)} by the resolver + {len(_BY_HAND)} by hand = '
-      f'{len(blind_inv) + len(_BY_HAND)}; central guess 6')
+      f'{len(blind_inv) + len(_BY_HAND)}; registered 4-12 central 6; {_AT_REGISTRATION} at '
+      f'registration + {_BANKED} banked since = {_AT_REGISTRATION + _BANKED}')
 #: ⛭⛭⛭ ** AND THE RESULT THAT MATTERS TO 69 IS THE OTHER ONE: THE GAP ADDS NOTHING TO THE LIST BY
 #:   THE LIST'S OWN CRITERION. **  Of the class, two are already on PO-87's list through a namesake
 #:   read the classifier DOES see, and of the rest not one is cited by a body sentence that prints a
@@ -414,9 +431,12 @@ check('\u2464\u1d43 ⛭⛭ AND THE GAP ADDS ZERO ITEMS TO PO-87\'S LIST BY THE L
       'classifier DOES see, and not one of the others is cited by a body sentence that prints a '
       'figure.  ⇒ The classifier fix is a correction to `len(cand)`, not to what the papers print, '
       'which is why it is routed to 69 rather than merged here',
-      len(_on_list) == 2
+      len(_on_list) == 2 + _BANKED
       and all(_own_fig[p] == 0 for p in blind_inv if p not in _on_list),
-      f'{len(_on_list)} of {len(blind_inv) + len(_BY_HAND)} on the list; '
+      f'{len(_on_list)} of {len(blind_inv) + len(_BY_HAND)} on the list '
+      f'[r7677+cc66: 2 -> {2 + _BANKED}, the item 70s bank made repointable, per the censuss '
+      f'_BANKED_SINCE; the substantive clause is UNCHANGED -- every other member still has no '
+      f'figure-printing citing sentence of its own]; '
       f'{sum(1 for p in blind_inv if p not in _on_list and _own_fig[p])} of the rest have a '
       f'figure-printing citing sentence')
 

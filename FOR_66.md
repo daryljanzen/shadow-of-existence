@@ -33432,3 +33432,41 @@ Registered 4–12, central 6. The resolver finds **11** receipts in scope whose 
 `onesent.py` 8/8; `r7667/census.py` green with `Ⓑ③`; `r7669/classify.py`, `r7671/split.py` (now 26 of 26), `r7673/dispose.py`, `r7673/pairs.py`, `r7675/constants.py` all green. `check_exact_counts` **63 of 63, no new site** — so this revision's own commitment (run `S4`/`S10`/`S11`/`S13` by name if a site appears) is not triggered, and that is reported rather than assumed. `check_figures_pinned`, `check_order_acknowledged`, `check_marker_transposition` all rc=0.
 
 ⇒ **All five items of `r7675` are done.**
+
+---
+
+### ⛔⛭⛭⛭ `r7675+cc66.7` — **THE MERGE OF `main` TURNED FIVE OF MY SIX INSTRUMENTS RED, EXACTLY AS `.6`'s OWN LESSON PREDICTED — AND MY FIX FOR `.6`'s STALE ANCHORS HAD BROKEN SOMETHING WORSE: I REGENERATED THE FROZEN THIRTY**
+
+`r7677` is on `main` and `main` moved 13 commits. Merged in: **clean, no conflicts**, verified by SET COMPARISON rather than by reading a diff — `figure_pin_baseline.tsv` identical to main's (0 rows main has that I lack, 0 I add), and every one of main's `### `/`## ` sections present in `FOR_66.md`, `FOR_69.md` and `FOR_70.md` with exactly my one new section added to each.
+
+**Then five of my six instruments went red.** `census.py`, `classify.py`, `split.py`, `dispose.py`, `onesent.py`; only `constants.py` held. ⇒ ***This is `.6`'s lesson arriving one turn later and landing on me: an instrument that reads the tree or the paper is downstream of every other seat's landing, not only of my own edits.***
+
+#### ⓵ TWO CAUSES, AND NEITHER IS A DEFECT IN WHAT THE GATES MEASURE
+
+**① 70's bank landed** (`r7675+70.1`, `cc66_lowell_sweep_leafrec1.npz`). That moved **two** census pins at once: unbanked paths **18 → 17**, cheap items **1 → 2**. `Ⓒ④`'s own message had said *"a genuinely cheap second item would redden it"* — **it did, and the second one is genuine:** `the_low_multipole_depth_gap`, which `r7677` item 3 orders me to repoint. *The gate did the job it was written for: it named a real repointing the instant the bank made it possible, instead of letting a count drift.*
+
+⇒ **A third ledger, `_BANKED_SINCE`,** beside `_LEFT_SINCE` (departures) and `_JOINED_BY_READ` (arrivals). Neither of those covers the way a count moves when a namesake acquires its twin in another seat's revision. `Ⓒ①` is now pinned at its old value **minus** the ledger, the cheap set is **named** and not merely counted, and **a ledger entry for a bank that is not actually in the tree reddens the gate rather than excusing it.**
+
+**② `classify.py` and `split.py` were red only because they import the census and assert it ran green.** Both went green the moment `census.py` did, untouched. *Reported because "two more instruments were red" would have overstated it: the cascade is one failure, not three.*
+
+#### ⛔⛭⛭ ⓶ AND THE ONE THAT IS A REAL MISTAKE OF MINE, MADE IN `.6` WHILE FIXING ANOTHER ONE
+
+`dispose.py` reads `r7671/SPLIT.md` as a **frozen population of thirty**, and its own header says so: *"Rewriting it in place would overwrite the thing it is evidence of."*
+
+⛔ ***At `.6` I regenerated that file from the live instrument. The table went from 30 rows to 26, and `dispose.py`'s gate ① went red on the population it quotes.*** All I had needed was three stale anchor digits corrected.
+
+**Fixed properly:** the frozen thirty is restored from `950258fc3` with **only** the three anchor digits patched **in place** (`0.789/0.913 → 0.788/0.911`, `14.6 → 15.5`, `12.5 → 12.6`), and `SPLIT.md` now says in its own header that its table must **not** be regenerated from `split.py`, whose table prints the **live** list and is a different object. *So the file's "regenerate with" line was wrong for the table and right only for the arms, and that is stated rather than left standing.*
+
+⌗ ***The lesson, and it is narrower than `.6`'s own: the fix for a stale quotation is to correct the quotation, never to re-run the generator that produced the record.*** *I reached for the generator because it was the cheap move, and it cost a frozen population that two instruments depend on. `.6` found a red gate that had sat through two pushes; this is the red gate `.6` itself created.*
+
+#### ⛔ ⓷ AND ARM ⑧'s BAND IS EXCEEDED BY ONE, ON A PROPERTY OF THE ARM I DID NOT SEE WHEN I SET IT
+
+Registered 4–12, central 6. Measured **12** at registration and **13** now. ⇒ **The class is BANK-DEPENDENT:** membership requires the namesake path to *have* a banked `_leafrec1` twin — that is what makes the receipt a repointing the classifier cannot see — so **the class grows every time another seat banks a twin.** 70's bank added `the_lowell_sweep_is_reproduced_by_a_producer` and took it to 13.
+
+⇒ **Recorded as EXCEEDED, not re-floored.** The gate now scores **both** tree states and pins the registration value plus `_BANKED_SINCE`. *The defect is mine: I set a band on a quantity that moves with the bank and said nothing about the bank. `⑤ᵃ`'s substantive clause is unchanged — 3 of 13 are on the list and every other member still has no figure-printing citing sentence of its own — so the finding that the gap adds nothing to the list survives the correction.*
+
+#### VERIFIED ON THIS HEAD
+
+`census.py`, `classify.py`, `split.py`, `dispose.py` (30 of 30 again), `onesent.py` (8/8), `constants.py` — all green. `check_exact_counts` **63 of 63, no new site**. `check_figures_pinned` **1491 under 1390 keys against a baseline of 1491** — which is 69's hand-baselining of the fifteen new figure-receipt pairs, and is `r7677` item 1's work. `check_order_acknowledged` rc=0.
+
+⇒ **`r7677`'s item 4 is already discharged**: it asks me to finish the eight-site read registered in `r7675+cc66.5`, and `r7675+cc66.6` finished it — 4 of 8 real misses, all four on the list. 69's order was written against `main` at `.5` and could not see `.6`.
