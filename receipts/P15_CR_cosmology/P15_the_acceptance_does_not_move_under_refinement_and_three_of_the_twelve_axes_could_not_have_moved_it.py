@@ -97,8 +97,16 @@ R6919_NARROWING = 0.128            # r6919's INDEPENDENT dr_s/dchi reading
 print(__doc__)
 print("=" * 100)
 
-NEED = ['r7041_accept_digest.npz', 'r7041_accept_Al.npz',
-        'r7041_accept_sample.npz', 'r7041_accept_nk_slices.npz']
+# ⛭⛭⛭ r7673+cc66.1 -- REPOINTED ONTO THE ARM OF RECORD.  69's r7673 ruled this receipt a REBUILD and
+#   not a re-ground: the sentence BEFORE the one carrying its citation prints its own arm figures
+#   (4.47 of acoustic phase against the control's 5.14, 13.03 per cent narrower at all twelve
+#   settings), so moving the citation would have left those figures on the LEAFREC=0 namesake.
+#   70 built the four banks at LEAFREC=1 and they are what this receipt now reads.
+#   ⛭ ** ARM KEYS READ: ** every `cr_*` and `lcdm_*` key of the four banks below, out of their
+#   `_leafrec1` forms.  The namesake forms stay in the tree and are read by gate ⓻ ONLY, which
+#   measures what the move did rather than asserting it.
+NEED = ['r7041_accept_digest_leafrec1.npz', 'r7041_accept_Al_leafrec1.npz',
+        'r7041_accept_sample_leafrec1.npz', 'r7041_accept_nk_slices_leafrec1.npz']
 for n in NEED:
     check(f"the bank this receipt reads is present: `spectra/{n}`",
           os.path.exists(os.path.join(SP, n)), n)
@@ -106,10 +114,10 @@ if FAILS:
     bail("A BANK THIS RECEIPT READS IS NOT ON DISK, so nothing is read and this receipt FAILS rather\n"
          "     than reporting the parts it could run as the whole.")
 
-DG = np.load(os.path.join(SP, 'r7041_accept_digest.npz'))
-AL = np.load(os.path.join(SP, 'r7041_accept_Al.npz'))
-SM = np.load(os.path.join(SP, 'r7041_accept_sample.npz'))
-NKS = np.load(os.path.join(SP, 'r7041_accept_nk_slices.npz'))
+DG = np.load(os.path.join(SP, 'r7041_accept_digest_leafrec1.npz'))
+AL = np.load(os.path.join(SP, 'r7041_accept_Al_leafrec1.npz'))
+SM = np.load(os.path.join(SP, 'r7041_accept_sample_leafrec1.npz'))
+NKS = np.load(os.path.join(SP, 'r7041_accept_nk_slices_leafrec1.npz'))
 
 
 def inert(arm, seq):
@@ -237,6 +245,55 @@ check("⓺ and that an inert axis is not reported as converged",
 check("⓺ and the pre-registered criteria are carried here unaltered, not loosened after the numbers",
       says('a sequence that has not turned over is not converged whatever its last step')
       and says('a two-point axis cannot turn over'))
+
+# =================================================================================================
+print("\n  ⓻ WHAT THE MOVE ONTO THE ARM OF RECORD DID -- MEASURED HERE, NOT TAKEN ON REPORT")
+print("  " + "-" * 98)
+#: ⛭⛭⛭ r7673+cc66.1 -- `r7669+70.1` reports that LEAFREC does not touch the control, bit for bit.
+#:   ** That is 70's measurement and this gate does not assume it: it reads BOTH banks and checks
+#:   the claim against the four files this receipt actually uses. **  If a control key had moved,
+#:   every control figure in print would be in question and the repoint above would be unsafe.
+#:   ⌗ *The namesake banks stay in the tree precisely so this comparison is possible; nothing below
+#:     reads them for a figure.*
+_PAIRS = [('r7041_accept_digest', DG), ('r7041_accept_Al', AL),
+          ('r7041_accept_sample', SM), ('r7041_accept_nk_slices', NKS)]
+_moved_cr, _moved_ctl, _same_cr = 0, [], 0
+for _stem, _aor in _PAIRS:
+    _nsk = np.load(os.path.join(SP, _stem + '.npz'), allow_pickle=True)
+    for _k in sorted(set(_nsk.files) & set(_aor.files)):
+        _eq = np.array_equal(_nsk[_k], _aor[_k])
+        _ctl = _k.startswith('lcdm_')
+        if not _eq and _ctl:
+            _moved_ctl.append(f'{_stem}:{_k}')
+        elif not _eq:
+            _moved_cr += 1
+        elif not _ctl:
+            _same_cr += 1
+print(f"      keys that moved on the CR side   : {_moved_cr}")
+print(f"      keys that moved on the CONTROL   : {len(_moved_ctl)}  {_moved_ctl[:4]}")
+print(f"      CR-side keys that did NOT move   : {_same_cr}  (mode counts and ell lists)")
+check("⓻ ⛭⛭ 70's REPORT IS CHECKED AND NOT ASSUMED: every key that differs between the namesake "
+      "banks and the arm-of-record banks this receipt reads is on the CR side, and NOT ONE control "
+      "key moved -- which is what makes the control's 5.14 in print safe across the repoint",
+      _moved_cr > 0 and not _moved_ctl,
+      f"{_moved_cr} CR keys moved, {len(_moved_ctl)} control keys moved")
+#: ⛔⛭⛭ AND THE ONE THING THE MOVE COST, STATED AS A MARGIN RATHER THAN LEFT TO BE NOTICED.
+#:   `R6919_NARROWING = 0.128` is r6919's INDEPENDENT reading and it is a HARDCODED CONSTANT here,
+#:   measured on the NAMESAKE.  On the namesake this receipt's own narrowing was 13.03 per cent, so
+#:   the two routes agreed to 0.23 pp against a 1.00 pp tolerance.  On the arm of record the
+#:   narrowing is 13.73 per cent and the agreement is 0.93 pp -- ** the gate still passes, with
+#:   seven per cent of its tolerance left. **
+#:   ⇒ *A constant carrying another receipt's namesake measurement is a dependency no path-based
+#:     census can see, and this is the one in this file.  Routed to 69 rather than adjusted here:
+#:     re-deriving r6919's reading on the arm of record is its own item, and loosening this
+#:     tolerance to make room would be exactly the move this row does not make.*
+_nar_mean = float(np.mean(nar))
+_margin = 0.01 - abs(_nar_mean - R6919_NARROWING)
+print(f"      the two-route agreement's remaining margin: {_margin * 100:.2f} pp of 1.00 pp")
+check("⓻ THE AGREEMENT'S MARGIN IS PRINTED RATHER THAN ONLY ITS VERDICT: the cross-check against "
+      "r6919's hardcoded 12.8 per cent passes, and how much room is left is on the record because "
+      "`R6919_NARROWING` is a NAMESAKE measurement this repoint did not move",
+      _margin > 0, f"{_margin * 100:.2f} pp left of the 1.00 pp tolerance")
 
 print()
 print("=" * 100)

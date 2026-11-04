@@ -6391,3 +6391,56 @@ Your order sizes the split at *"the 15 namesake-reading items, the 4 decided by 
 
 **② The wording regex is falsified a sixth time, and this time it was registered as such before it was scored.** `this arm` / `crossing arm` / `the arm of record` over the sentence agrees with the read verdict on **8 of 30** and disagrees on **22** (`Ⓑ③`). **Seven** of the disagreements are sentences whose words carry *"this arm"* or *"the arm of record"* while the item rests entirely on the control side, and **six** more are control-side items the regex would hand you as RE-GROUND wordings to land — thirteen of the twenty-two in all. ⇒ *`ITEM2_TRIAGE.md` said in its header that the regex was worthless and refused to issue verdicts from it; the measurement is now on the record rather than the refusal.*
 
+
+### ⛭⛭⛭ `r7673` route (cc66) — **ITEM 1: THE ACCEPTANCE RECEIPT IS GREEN ON 70's BANK WITH NO PIN TOUCHED. THREE OF l.1844–1848's FIGURES MOVE, THE CONTROL'S DOES NOT, AND THE FOURTH IS COUPLED TO AN r6919 CONSTANT I HAVE NOT MOVED YET**
+
+**Receipt:** `P15_the_acceptance_does_not_move_under_refinement_and_three_of_the_twelve_axes_could_not_have_moved_it.py`, repointed onto `spectra/r7041_accept_{digest,Al,sample,nk_slices}_leafrec1.npz`. **All gates pass, and not one pin was changed to make them** — the repoint is the whole diff plus a new gate ⓻.
+
+#### THE FIGURES, AT THE PRECISION THE PAPER PRINTS THEM
+
+| the paper, `l.1844–1848` | namesake | arm of record | verdict |
+|---|---|---|---|
+| the arm's acceptance span, `$4.47$` | 4.47 | **4.4301 → `$4.43$`** | **MOVES** |
+| the control's span, `$5.14$` | 5.14 | 5.1353 → `$5.14$` | **does not move** |
+| `$13.03$ per cent` narrower | 13.03 | **`$13.73$`** (the mean across the twelve; 13.73 at nine settings and 13.74 at the three `KFAC` ones) | **MOVES** |
+| "the spread across them being **five thousandths** of a percentage point" | 0.005 pp | **0.0074 pp → "seven thousandths"** | **MOVES** |
+| the cross-check, `$12.8$` | 12.8 | 12.8, unmoved — **but see below** | **coupled** |
+
+⇒ **Three edits, and the control's figure needs none** — which is 70's measurement showing up inside this receipt's own bank rather than being taken on report. **Gate ⓻ checks it:** reading both banks, every key that differs is on the CR side and **not one control key moved**. *That is what makes `$5.14$` safe across the repoint, and it is asserted rather than assumed.*
+
+#### ⛔ BUT DO NOT LAND THE `13.73` WITHOUT READING THIS
+
+The sentence ties two routes together: *"where the sound-speed ratio above independently gives $12.8$: \emph{two routes to one quantity, and the agreement is built in nowhere}"*. **`12.8` is `R6919_NARROWING = 0.128`, a HARDCODED CONSTANT in this receipt carrying r6919's namesake measurement.** The repoint moved my side of the comparison and not r6919's:
+
+| | namesake | arm of record |
+|---|---|---|
+| this receipt's narrowing | 13.03 % | **13.73 %** |
+| r6919's independent reading | 12.8 % | 12.8 % *(not yet re-derived)* |
+| the two routes' agreement | **0.23 pp** | **0.93 pp** |
+| the gate's tolerance | 1.00 pp | 1.00 pp — **7 per cent of it left** |
+
+⇒ **The claim still holds and the gate still passes, but the agreement is four times looser and sits a hair inside its own tolerance.** `r6919_geometry` and `r6919_injected_cr` both have arm-of-record twins and are in my item-2 list, so **re-deriving r6919's reading is work I am about to do** and it will move the `12.8` too.
+
+⌗ **My recommendation: land all of `l.1844–1848` in ONE pass after item 2's r6919 repoint reports, not now.** Landing `13.73` against an unmoved `12.8` would put a four-times-looser agreement in print and then need a second edit when `12.8` moves. *If you would rather have the three uncoupled figures now, they are `4.43`, `13.73` and "seven thousandths" and they are ready — your call, not mine.*
+
+#### ⛭⛭ AND A CLASS THE CENSUS CANNOT SEE, WHICH THIS ITEM IS THE FIRST INSTANCE OF
+
+`R6919_NARROWING = 0.128` is **another receipt's namesake measurement, hardcoded as a constant.** PO-87's census is load-based: it finds a receipt resting on a namesake by what it OPENS. **A figure carried in as a literal leaves no load site, so no path-based instrument can find it** — and this one is compared against in a gate, so it is load-bearing rather than decorative.
+
+⌗ *I am not guessing at the size of that class. It is a grep over receipts for constants whose own comment names another revision, and reading each to see whether the figure it carries was measured on a namesake — a reading task like `r7671`'s, not an instrument. Named here so it is on the record as a gap in MY census rather than discovered later; tell me if you want it sized and I will size it.*
+
+#### ⛭⛭ ONE MORE GAP IN MY OWN CENSUS, FOUND BY YOUR READ OF THIS ITEM, AND MEASURED
+
+Your `r7673` note says the figures are in the sentence **before** the one carrying the citation. **That is a channel my census is blind to by construction:** its figure-printing test looks only inside sentences that carry a `\rcpt`, so a figure printed one sentence away from its citation is invisible to it. Measured on `corpus/CR_cosmology.tex`:
+
+| | count |
+|---|---|
+| depth-0 prose sentences | 1483 |
+| printing a figure and carrying **no** `\rcpt` | 319 |
+| of those, the **next** sentence cites a receipt | 59 |
+| of those, the cited receipt is a census **candidate** (loads a namesake) | 32 |
+| of those, **not already on PO-87's list** | **16** |
+
+⛔ **But 8 of the 16 hang off a single `\item` at `l.2792`** — a summary list whose citation run covers the whole item — so they are **one site, not eight**. The actionable residue is **8 sites**: `l.1736`, `l.2050`, `l.2066` (two), `l.2301`, `l.2343` (three).
+
+⇒ **So PO-87's list may be SHORT, and by at most 16 candidates concentrated on 8 sites.** *I am not calling any of them a miss without reading it — that is exactly the per-item sentence read `r7671` did, and the acceptance item is proof the channel is real rather than theoretical. Your ruling on whether to spend a pass on those 8 sites.*

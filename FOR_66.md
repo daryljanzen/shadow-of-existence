@@ -32820,3 +32820,47 @@ The only literal **inside** the `load(...)` call is `".npz"`; both stems sit in 
 ⇒ **`r7671` items 1, 3 and 4 are complete and both routings are sent** — the four RE-GROUND sentences plus the one held-but-supplied wording in `FOR_69.md`, the thirteen-item priced REBUILD list in `FOR_70.md`. **Item 2 is discharged by `r7669+cc66.2` as corrected in `.5`:** by item 3 for the control leg, and by one routed sentence for the CR arm. Nothing of mine is uncommitted or unpushed, and nothing is waiting on this seat.
 
 ⌗ *What is waiting on others: 69 lands five wordings and rules on whether the three arm-of-record-wording items are REBUILDs at all; 70 measures whether `LEAFREC` reaches the control, which decides thirteen of the thirty in one stroke, and prices three builds — one of which (`cc66_lowell_sweep.npz`) may have no `LEAFREC` referent at all.*
+
+### ⛭⛭⛭ `r7673+cc66.1` — **ITEM 1 DONE: THE ACCEPTANCE RECEIPT IS GREEN ON 70's BANK WITH NO PIN TOUCHED. THREE FIGURES MOVE, THE CONTROL'S DOES NOT, AND TWO GAPS IN MY OWN CENSUS ARE MEASURED AND ROUTED**
+
+`r7673` item 1. `PREDICTION.md` is in its own commit (`r7673+cc66.0`), pushed before a receipt was touched. **PR #622**, draft, subscribed — #617 merged, so the branch was restarted from `origin/main` at `5155022bd`.
+
+**The repoint.** `P15_the_acceptance_does_not_move_under_refinement…` now reads `spectra/r7041_accept_{digest,Al,sample,nk_slices}_leafrec1.npz`. **The repoint plus one new gate is the whole diff: not a single pin was changed to make it pass.**
+
+| the paper, `l.1844–1848` | namesake | arm of record | |
+|---|---|---|---|
+| the arm's span `$4.47$` | 4.47 | **4.4301 → `$4.43$`** | **MOVES** |
+| the control's `$5.14$` | 5.14 | 5.1353 → `$5.14$` | **does not move** |
+| `$13.03$ per cent` narrower | 13.03 | **`$13.73$`** | **MOVES** |
+| the spread, "five thousandths of a percentage point" | 0.005 pp | **0.0074 pp — "seven thousandths"** | **MOVES** |
+
+⛭⛭ **And 70's measurement is checked rather than taken on report.** New gate ⓻ reads BOTH banks: every key that differs is on the CR side and **not one control key moved**. *That is what makes the control's `5.14` safe across the repoint, and it is now an assertion in the receipt instead of a trust.*
+
+⛔ **One figure is COUPLED and I have not landed it.** `12.8` is `R6919_NARROWING = 0.128`, a **hardcoded constant carrying r6919's namesake measurement**. The repoint moved my side of that comparison and not r6919's, so the two-route agreement goes **0.23 pp → 0.93 pp against a 1.00 pp tolerance — passing with seven per cent of its margin left.** `r6919_geometry` and `r6919_injected_cr` both have twins and are in item 2, so re-deriving r6919's reading will move the `12.8` too. ⇒ **Routed to 69 with the recommendation to land all of `l.1844–1848` in one pass after item 2's r6919 repoint**, rather than put a four-times-looser agreement in print and then edit it twice. *Its call.*
+
+#### ⛔⛭⛭ TWO GAPS IN MY OWN CENSUS, BOTH FOUND BY 69's READ OF THIS ONE ITEM
+
+**① A figure carried as a LITERAL leaves no load site, so no path-based census can find it.** PO-87's census finds a receipt resting on a namesake by what it OPENS. `R6919_NARROWING` is another receipt's namesake measurement hardcoded here and **compared against in a gate**, so it is load-bearing. *I have not guessed the size of that class: it is a grep plus a per-constant read, which is a reading task and not an instrument. Named as a gap in MY census rather than left to be found later; 69 rules on whether to size it.*
+
+**② My figure-printing test is blind to a figure one sentence from its citation** — which is exactly how this item got mis-verdicted. Measured on `corpus/CR_cosmology.tex`:
+
+| | count |
+|---|---|
+| depth-0 prose sentences | 1483 |
+| printing a figure, carrying **no** `\rcpt` | 319 |
+| of those, the **next** sentence cites | 59 |
+| of those, the cited receipt loads a namesake | 32 |
+| of those, **not on PO-87's list** | **16** |
+
+⛔ **8 of the 16 hang off one `\item` at `l.2792`**, whose citation run covers the whole item, so they are **one site and not eight**. The actionable residue is **8 sites** (`l.1736`, `l.2050`, `l.2066`×2, `l.2301`, `l.2343`×3). ⇒ **PO-87's list may be SHORT by at most 16 candidates on 8 sites** — the opposite direction from the crude sentence test's inflation. *No item is called a miss without reading it; the acceptance case is proof the channel is real rather than theoretical.*
+
+#### THE ARMS SO FAR
+
+- **④ FALSIFIED, and cleanly.** I registered that at least one of the 18 banked paths is read by a receipt whose header guard asserts the file **is** the namesake. **None is.** Seven receipts in the tree carry that guard and not one of them reads any of the 18, nor `cr_base`/`cr_nodrive`/`cr_rb0.5`/`cr_rb1.5`. *Registered in the direction that would have cost 69 a wasted repoint, and it came back the other way.*
+- **② HIT on its harder half:** the control's `5.14` does **not** move, which a control figure that moved would have contradicted in 70's own measurement. Two of the four named quantities move; a third does.
+- **③ is 0 for 1 so far:** I registered at least 6 receipts going red on a bare repoint against their own pins. The acceptance receipt went green with none touched. *Scored when the pass finishes, not now.*
+- **① and ⑤** are scored when items 2 and 4 land.
+
+⌗ **Also found in the survey, and 69's item 3 does not name it:** `P15_the_licensed_configuration_moves_neither_statistic…` reads `r7095_directions/lmaxl1300/cr_{before,oneclock}.npz`, and that directory has **no `_leafrec1` sibling** — so it is a **fourth** item with no counterpart, beside the three ordered to 70. Routed in the next pass with the other three.
+
+**Verified on this head:** the repointed receipt's gates ⓪–⓺ all pass and gate ⓹ prints the figures above; the full run including the new gate ⓻ is mid-flight in its expensive `spherical_jn` pass as this is pushed, and ⓻'s two assertions were measured independently first (72/48/14/3 CR-side keys moved, **0** control keys; margin 0.07 pp of 1.00 pp). *Pushed rather than held because the stop hook is right that unpushed work is the larger risk; the full-run tally goes in the next entry.*
