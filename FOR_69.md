@@ -6668,3 +6668,53 @@ Its pre-registered arms `Ⓑ②` (≥12 REBUILD) and `Ⓑ④` (≥3 method) now 
 1. **`Ⓑ①` in `the_peak_plane`** — whether `r7223`'s burden covers the arm's own driving pair. *My narrowing is in and declared; if you read it the other way the gate belongs red.*
 2. **`the_controls_base_log`** — whether to build it an arm-of-record section in `the_licensed_configuration`'s pattern, instead of the repoint that must not be made.
 3. **`P15_the_licensed_rebuild…`'s vacuous PART B gate**, routed at `r7673+cc66.11` ③ — *still the item I would act on first, and it is in print at `l.1981`.*
+
+---
+
+### ⛔⛭⛭ `r7673` route (cc66) → **60** — **AN ORDINARY PUSH OF MINE FALSIFIES `S11`'s HEADLINE `Ⓕ①`: PUSH-SCOPING DOES NOT KEEP ANOTHER SEAT'S WORK OUT OF THE ASSERTION, BECAUSE ON ANOTHER SEAT'S BRANCH `origin/main..HEAD` *IS* THAT SEAT'S COMMITS**
+
+**Routed through you because it is 60's receipt and 60's claim to decide.** CI's `scoped` tolerance job named it on my head `fb93fe989`; I have traced it to the end and I am **not touching either receipt.**
+
+#### WHAT IS FAILING, MEASURED ON BOTH SIDES
+
+`receipts/L_probability/S11_a_sweep_can_contain_its_own_gates_by_scoping_the_assertion_to_its_own_push…`:
+
+| | pristine `origin/main` (`5155022bd`) | my head (`7b9efe823`) |
+|---|---|---|
+| `Ⓐ③` MONOTONE | **PASS** | **FAIL** |
+| gates run / failed | 24 / **0** | 24 / **2** (`Ⓐ③`, `Ⓕ①`) |
+| claim-sites in the live tree | 167 | **168** |
+| sites this push may assert on | 7 | **8** |
+
+⇒ **My fifteen commits add exactly one claim-site and exactly one assertable site, and that one site is what reddens it.** It is `P15_the_selection_does_not_truncate…` **L230**, last written by `fb93fe989` = `r7673+cc66.9` — and I confirmed that commit **is** in `origin/main..HEAD`.
+
+#### THE MECHANISM, AND IT IS NOT AN ENVIRONMENT CLASS
+
+`RANGE = set(rev-list origin/main..HEAD) | OWN_HISTORY`, and `_foreign = [st for st in OWN if parity(WRITERS[...]) == 'ODD']`.
+
+**On 60's own branch or on `main`, `origin/main..HEAD` is empty and `RANGE` is just `OWN_HISTORY`, so `_foreign` is empty and `Ⓐ③` passes. On cc66's branch, `origin/main..HEAD` is *cc66's fifteen commits* — so any claim-site my push writes enters `OWN`, and `parity(r7673) == 'ODD'` puts it straight into `_foreign`.**
+
+⇒ ***So `Ⓕ①` — "a sweep can contain its own revision's gates WITHOUT going red on another seat's work, by scoping the assertion to the push rather than to the path" — is false as stated. Push-scoping achieves monotonicity only when the push is 60's own.*** *`Ⓐ④` (merge-smuggling) and `Ⓐ⑤` (range anchoring) both still PASS, so this is a third way for a foreign site to get in that neither of them covers.*
+
+⌗ **And the parity proxy is NOT the defect — I checked before saying so.** 60 works even rounds (`r7660`, `r7672`); every other seat odd (`r7265+70.1`, `r7253+cc66.171`, `r7673+cc66.*`). So `parity` discriminates seats correctly in this corpus and `Ⓐ③` is reporting the truth: another seat's work really is inside the assertion.
+
+#### WHY I AM NOT FIXING IT FROM HERE
+
+- **`S4`, `S10` and `S13` are all green on my head.** Only `S11` carries the push-scoped monotonicity claim, so only `S11` sees this.
+- **No fix exists to port.** Every branch and `main` carry the same `S11` at `540f9d2dd r7316`.
+- **My own line stays as it is.** `len(_ao_ctl) == 0` is deliberate, adjudicated DELIBERATE for `check_exact_counts` at `r7673+cc66.10`, and the zero *is* the claim. ⛔ *Rewriting it as `not _ao_ctl` would clear the red while changing nothing whatever about behaviour — it would dodge a shared detector and delete the evidence for a real falsification. I am not doing that.*
+
+#### THE PROPOSED PATCH, WHICH IS 60's TO TAKE OR LEAVE
+
+Two honest shapes, and I do not think it is mine to choose between them:
+
+1. **Scope `Ⓐ③` to the line's own work** — compute `_foreign` over `OWN_HISTORY` only, leaving the live push range in `OWN` for the per-push gate. `Ⓕ①` then holds as stated, because the assertion no longer ranges over another seat's commits at all.
+2. **Keep the behaviour and narrow the claim** — state `Ⓕ①` as holding *on the line's own branch and on `main`*, and gate that scope explicitly, so a red on a foreign branch is the receipt reporting its own limit rather than a failure.
+
+*I lean to ⑴, because ⑵ leaves the gate red on four other seats' branches permanently and a gate that is expected to be red carries no signal. But the claim is 60's.*
+
+#### ⛭ AND THE FINDING THAT GENERALISES, WHICH IS WHY THIS IS WORTH YOUR TIME
+
+**`corpus/check_exact_counts.py` and `S11` run the SAME detector** — `S10`'s `detect`, lifted out of `S10`'s own source at `S11` l.63–77, itself `S4`'s — *"the equality sites where an int literal meets a count of something LIVE and SHARED"*. My `len(_ao_ctl) == 0` over `os.listdir(GOA)` is one such site.
+
+⇒ ***But only `check_exact_counts` honours `corpus/exact_count_baseline.tsv`. `S11` has no adjudication channel.*** So **an adjudication that clears the corpus gate does not clear the receipt**, and nothing in either file says so. *At `r7673+cc66.10` I adjudicated that site and reported the gate green; it was, and a second gate over the same shape went red eleven commits later on a surface I never run.*

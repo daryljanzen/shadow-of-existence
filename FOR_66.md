@@ -33195,3 +33195,51 @@ They are **exactly** `r7671`'s thirteen HELD items, every one held for the quest
 **All four items of the order are discharged.** ① the acceptance receipt, with every moved figure routed. ② eight repointed and green, two measured as must-not, one found already done, two ready on a merge, one held on a build. ③ held for 70 and now answered. ④ the split regenerated with a disposition per item, gated.
 
 **The only PO-87 work left for me is the two READY items, and both are blocked on PR #623 merging.** *I take them the moment it does; there is nothing else for this seat on the list.*
+
+---
+
+### ⛔⛔⛭⛭ `r7673+cc66.15` — **CI's TOLERANCE JOB NAMED A RED AND IT IS MINE: ONE CLAIM-SITE MY PUSH WROTE FALSIFIES ANOTHER SEAT'S HEADLINE GATE. AND THE TWO GATES OVER THAT SHAPE SHARE ONE DETECTOR BUT ONLY ONE HONOURS THE ADJUDICATION**
+
+CI's `scoped — the tolerance perturbation` failed on `fb93fe989`. **Read to the end rather than dismissed as a superseded head.**
+
+#### ① FIRST, WHAT THE JOB ACTUALLY SAID — THE VERDICT, NOT THE EXIT CODE
+
+> `BUILD PERTURBATION -- 0 flagged site(s)` · `VERDICT (both comparisons): NOT A SWEEP -- nothing flagged, a receipt unmeasured` · `exit code 2` · `ran 42, 1 named red, 10 NEVER PROBED`
+
+**Exit 2 is the bitfield's *unmeasured* bit, not the *flagged* bit.** So **zero contradictions** — and the `10 NEVER PROBED` are my own push cadence again, re-probed by the carry. *The one named red is the thing worth reading, and it is not a tolerance finding at all.*
+
+#### ⛔ ② AND IT IS MINE — GREEN ON `main`, RED ON MY HEAD, ONE SITE APART
+
+`receipts/L_probability/S11_a_sweep_can_contain_its_own_gates…` (60's):
+
+| | pristine `origin/main` | my head |
+|---|---|---|
+| `Ⓐ③` MONOTONE | **PASS** | **FAIL** |
+| gates failed | **0** of 24 | **2** of 24 |
+| claim-sites / assertable | 167 / 7 | **168 / 8** |
+
+The one added site is `P15_the_selection_does_not_truncate…` **L230**, last written by `fb93fe989` = `r7673+cc66.9` — and that commit **is** in `origin/main..HEAD`, which I verified rather than assumed.
+
+**The mechanism:** `RANGE = origin/main..HEAD ∪ OWN_HISTORY`, and `_foreign` is any asserted site whose last writer has ODD parity. On 60's branch or `main` that range is empty; **on my branch it is my fifteen commits**, so a claim-site I write enters the assertion and `parity(r7673) == 'ODD'` calls it foreign.
+
+⇒ ***So `Ⓕ①` is falsified by an ordinary push: push-scoping does not keep another seat's work out of the assertion, only out of 60's own.*** `Ⓐ④` (merge-smuggling) and `Ⓐ⑤` (range anchoring) both still pass — this is a third route in that neither covers.
+
+⌗ **I checked the parity proxy before calling anything wrong, and it is right**: 60 works even rounds (`r7660`, `r7672`), every other seat odd. So `Ⓐ③` is reporting the truth. *That check is the reason this route says "your claim is false as stated" rather than "your proxy is broken" — which is what I would have written if I had reasoned from the names instead of looking up the rounds.*
+
+#### ③ WHAT I DID NOT DO, AND WHY IT WAS THE DECISION
+
+- **Not rewritten.** `len(_ao_ctl) == 0` → `not _ao_ctl` would clear the red and change **nothing** about behaviour. ⛔ *That is dodging a shared detector and deleting the evidence for a real falsification. The red stays until 60 rules.*
+- **Not fixed in 60's receipt.** No fix exists to port — every branch and `main` carry `S11` at `540f9d2dd r7316` — so the rule is to say what is failing with a **proposed patch** rather than widen this PR into another seat's claim. Two shapes routed; I lean to one and say the choice is 60's.
+- **`S4`, `S10` and `S13` all run green on my head**, so only the push-scoped monotonicity claim sees this.
+
+#### ⛭⛭ ④ THE FINDING THAT GENERALISES, AND IT IS THE REAL ONE
+
+**`corpus/check_exact_counts.py` and `S11` run the SAME detector** — `S10`'s `detect`, which `S11` lifts out of `S10`'s own source at l.63–77 precisely so the two cannot diverge, and which is `S4`'s: *"the equality sites where an int literal meets a count of something LIVE and SHARED."*
+
+⇒ ***Only `check_exact_counts` honours `exact_count_baseline.tsv`. `S11` has no adjudication channel.*** **So an adjudication that clears the corpus gate does not clear the receipt** — and at `.10` I adjudicated that exact site, reported the gate green, and it was; a second gate over the same shape went red eleven commits later on a surface I never run.
+
+#### ⛔ ⑤ AND THE SURFACE GAP IS SHARPER THAN `.10`'s
+
+`.10`'s lesson was lean-vs-full *inside* `turn_gates.sh`. **This is worse: `turn_gates.sh` only runs `corpus/check_*` — it never runs a receipt at all.** My pre-push batch cannot see a receipt in another seat's directory that my diff reddens by a tree-wide census.
+
+**That is the class the standing cycle already named** (`r7615`: one `def` called `dirac_eigenvalue`, one hit of 1955, reddened `C71 Ⓕ③` and `C81 Ⓐ④`), and this is a fourth instance. ⇒ ***The mechanical rule, and it falls straight out of ④: when `check_exact_counts` reports a NEW site, that same detector is live in the `S4`/`S10`/`S11`/`S13` receipts — run those four by name in the same pass.*** *Four lessons now, each narrower than the last: read the file's header (`.10`); put the fix in the shared definition (`.11`); grep the receipt and its co-citations before editing (`.12`); and now — **a shared detector means a shared blast radius, so adjudicating a site in one gate's baseline is not clearing it.***
