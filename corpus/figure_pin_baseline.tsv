@@ -39,7 +39,6 @@
 #   written to hold them would be building an instrument, not repairing one; trimming the digits of
 #   a landed 55 KB claim cell would be rewriting another turn's record.  Both remain available and
 #   the baseline can only shrink.
-
 #
 # r7649 (69): the P15 landing re-baselined like-for-like -- each namesake figure that left a citing
 # sentence was replaced by the arm-of-record figure under the same receipt key (2.57->2.35, 2.98->2.71,
@@ -117,6 +116,7 @@
 #   does not, so a comparison against main would have shown those four as an unexplained difference.
 #   Against HEAD: `comm -23` names exactly 33 retired keys, `comm -13` exactly 33 created ones, every
 #   one under the three amended receipts, and the key count is unchanged at 1386.
+
 APPENDIX	P03	P03_the_cluster_ensemble_exists_and_it_overshoots_the_bound_at_the_dynamical_mass_which_weakens_my_own_exclusion	1.20	2
 APPENDIX	P03	P03_the_cluster_ensemble_exists_and_it_overshoots_the_bound_at_the_dynamical_mass_which_weakens_my_own_exclusion	1.28	1
 APPENDIX	P03	P03_the_cluster_ensemble_exists_and_it_overshoots_the_bound_at_the_dynamical_mass_which_weakens_my_own_exclusion	1.37	1
@@ -1466,11 +1466,6 @@ PROSE	CR_cosmology.tex	P15_two_arm_control_and_guard	2.200	1
 PROSE	CR_cosmology.tex	P15_verify_lowell_boltzmann	0.359	1
 PROSE	CR_cosmology.tex	P15_verify_lowell_boltzmann	0.435	1
 PROSE	CR_cosmology.tex	P15_verify_lowell_boltzmann	0.666	1
-PROSE	CR_cosmology.tex	P15_where_the_likelihood_sits	1.16	1
-PROSE	CR_cosmology.tex	P15_where_the_likelihood_sits	2.35	1
-PROSE	CR_cosmology.tex	P15_where_the_likelihood_sits	2.71	1
-PROSE	CR_cosmology.tex	P15_where_the_likelihood_sits	214.1	1
-PROSE	CR_cosmology.tex	P15_where_the_likelihood_sits	502.1	1
 PROSE	CR_cosmology.tex	P15_zonset_determinations	239.3	1
 PROSE	CR_cosmology.tex	P15_zonset_determinations	360.6	1
 PROSE	CR_cosmology.tex	Q1_a_stated_tolerance_is_a_request_and_the_corpus_answers_it	0.28	1

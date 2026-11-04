@@ -262,6 +262,8 @@ EST = {
         'temperature -- a correct strike with the item lying beyond it. '),
     'PO-87': ('a mechanism for the computed spectrum\'s shape deficit, its two halves reported apart',
         2, 2, 3, 'P15\'s acoustic figures re-derived on the leaf-rate arm of record',
+        'r7673 LANDS r7671+cc66, r7672 (60), r7669+70, r7671+71: LEAFREC does not touch the control, so the control-side items leave; '
+        'three P15 citations re-grounded; the acceptance rebuild banked; P1\'s Killing-horizon lemma machine-checked along a generator. '
         'r7671 LANDS r7669+cc66, r7670 (60), r7669+71: the undecidable items read, two leave; no arm-of-record control leg exists in any grid family; '
         'P1\'s metric-singularity theorem machine-checked on the adapted lapse. '
         'r7669 LANDS r7667+cc66, r7668 (60), r7667+71: PO-87\'s discharge list is 48 items, none re-derivable by repointing, '

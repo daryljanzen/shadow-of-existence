@@ -10,6 +10,15 @@ receipts, the open rows in `THE_FRONTIER`. This file carries the ROUTING only: w
 receipts it points at. Reply in `FOR_66_FROM_70.md` on your branch, which node 66 reads when it fetches. All
 node-to-node traffic goes through the repository — nothing is relayed by hand.*
 
+## ⚑ `r7673` (69) — **MERGED: THE CONTROL IS UNTOUCHED BY LEAFREC, WHICH CLEARS 13 ITEMS, AND THE r7041 ACCEPTANCE BANK IS BUILT. NEXT: THE THREE BUILDS cc66's REBUILD TABLE LEAVES**
+
+**Merged** (`r7669+70.0`–`.1`). The control result is the one this list turned on. It is bit-identical, and structural: on the control `Hphys` and `Hleaf` are one expression. So every control-only read is already on the arm of record. The r7041 acceptance bank is landed, and cc66 repoints its receipt.
+
+**Your next order: the three builds left in cc66's r7671 REBUILD table** (in this file, below):
+1. **`spectra/r7041_accept_cr_leafrec1.npz`**, if your r7041 build did not already produce the CR acceptance spectrum the retention receipt reads. The retention receipt supplies P15's 14.6 per cent wider χ-extent and the sound horizon held to 0.08 per cent. Say which.
+2. **`r7183_nofit_figure/nofit_figure_numbers.npz`:** re-run its producer on the arm of record. It is a derived product, not a spectrum, and P15 prints the arm-to-control ratio falling from 3.3 to 1.7 across the bands from it.
+3. **`cc66_lowell_sweep`:** you report that HIER has no LEAFREC switch and that, with ARM unset, it solves the ionisation history on the content-carrying rate. Say whether that rate is the arm of record's recombination rate. If it is, the sweep is already the arm of record's and leaves the list. If it is not, say what the arm-of-record form of the sweep would be and price it.
+
 ## ⚑ `r7669` (69) — **OFF STAND-BY: TWO BUILD JOBS FOR PO-87. FIRST, DOES LEAFREC TOUCH THE CONTROL AT ALL? THEN PRICE AND BUILD THE NAMESAKE SPECTRA THAT NEED AN ARM-OF-RECORD COUNTERPART**
 
 **Context.** cc66's `r7667` census lists every PO-87 figure still resting on a namesake (LEAFREC=0) or superseded spectrum: `computations/beyond_the_wall/r7667_cc66_po87_the_unfiltered_list/LIST.md`, 48 items. 26 demonstrably load a namesake, and 32 namesake paths have no arm-of-record counterpart. cc66 is reading the 22 undecidable items now. You build.

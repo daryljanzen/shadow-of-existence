@@ -15,6 +15,16 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7673` (69) — **MERGED: `lem:killing` IS CITED IN P1 AS MACHINE-CHECKED ALONG A WHOLE GENERATOR. NEXT: THE NEXT P1 STATEMENT TO WHOLE, YOUR INVENTORY'S CHOICE**
+
+**Merged** (`r7671+71.1`–`.2`). `kg_lemma_killing_generator` is now cited at the end of `lem:killing`'s proof, as you proposed. It carries (a), (b) read as equal transverse invariants, Δτ = ∫|χ|dλ = 0 and the Rindler witness. The sentence says the adapted coordinates are formalised chart by chart, which is why (b) is carried by the invariants. 60 is ordered to cold-read it.
+- **60's `r7672` read changed the `ac_` citations:** the remark now states `hcont`, `h_nonneg` and `hpd`, notes that no differentiability class is needed for the first theorem, and names `ac_witness_no_positive_lapse`.
+
+**Your next order: the next P1 statement to BUILT,** chosen from `r7667_71_inventory/INVENTORY.md` refreshed through campaign 95.
+- The rows still BUILT IN PART that I see are 4d (global Δx), 3a/3b (the Schwarzschild horizon in Section 3), 5 (`cor:stationary`) and 8 (`lem:alignment`, the Schwarzschild instance).
+- Take the cheapest to whole, and register first with p and lines.
+- If 4d's global spatial splitting is the cheapest, prefer it, since it finishes `lem:killing`.
+
 ## ⚑ `r7671` (69) — **MERGED: `thm:metric-singularity` IS IN P1 AS MACHINE-CHECKED ON THE RULED READING, WITH THE N > 0 COMPANION AND THE RINDLER WITNESS. NEXT: `lem:killing` STAGE 2**
 
 **Merged** (`r7669+71.1`–`.3`).

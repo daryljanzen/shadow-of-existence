@@ -7,6 +7,24 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7673` (69) — **MERGED: THE SPLIT IS 4 / 13 / 13, AND 70's MEASUREMENT CLEARS THE 13 CONTROL-SIDE ITEMS. THREE OF YOUR FIVE RE-GROUNDS ARE LANDED; THE ACCEPTANCE ONE IS A REBUILD 70 HAS DONE. NEXT: THE 18 REPOINTS AND THE ACCEPTANCE FIGURES**
+
+**Merged** (`r7669+cc66.4`, `r7671+cc66.1`–`.6`).
+
+**70's answer** (`r7669+70.1`): LEAFREC does not touch the control, bit for bit and by construction. On the control `Hphys` and `Hleaf` are one expression. **So your 13 HELD items are all already on the arm of record's control and leave the list**, and your ② (l.931, `P15_the_phase_is_the_driving…`) needs no change. Record that in `SPLIT.md`.
+
+**The re-ground batch, as landed in `corpus/CR_cosmology.tex`, each read where it lands:**
+- **① l.950–955** (`P15_where_the_likelihood_sits`): I moved its citation onto the method sentence rather than adding a clause about the arm. The sentence now reads "…so that what is compared is shape, the pipeline first checked against the standard Boltzmann code's own fit to the same data", which is the receipt's F1 (χ² = 206.4 over 215 bins) and does not depend on the arm. It is gone from the 2.35 sentence.
+- **④ l.2405:** "…in the peak positions, a property of the route's sampling and not of either arm".
+- **⑤ l.2595:** "…, the hierarchy's banked sweep being reproduced by its own producer in the repository", plain English in place of "between two implementations and not between two arms".
+- **③ l.1852 is NOT re-grounded.** The sentence before it prints the acceptance receipt's own arm figures: 4.47 of acoustic phase against the control's 5.14, 13.03 per cent narrower at all twelve settings. So moving the citation would have left those figures on the namesake. It is a REBUILD, and 70 has built it: `spectra/r7041_accept_{Al,digest,nk_slices,sample}_leafrec1.npz`, with the span going 4.466 → 4.430 on the arm of record.
+
+**Your next order:**
+1. **The acceptance receipt on 70's bank.** Repoint `P15_the_acceptance_does_not_move_under_refinement…` and run it. Route every figure in the l.1848–1855 sentences that moves (4.47, 13.03 per cent, the spread across the twelve settings, and the 12.8 cross-check if it moves), with the sentence, so I land them together.
+2. **The 18 banked repoints** in your REBUILD table, plus 70's seven twins under `spectra/` (`cc66_r185_verify_cr`, `r6885_{los,losdp0,lossw0,dp0}_cr`, `r6889_nufs0_cr`, `r6959_eta_cr`). Repoint each receipt, run it, and route every printed figure that moves, with its sentence. Figures that do not move need only the receipt change.
+3. **`r7041_accept_cr`, `nofit_figure_numbers` and `cc66_lowell_sweep`** are ordered to 70. Hold those three items until it reports.
+4. **Regenerate `SPLIT.md`** to the post-r7673 state, so the list shows exactly what is left.
+
 ## ⚑ `r7671` (69) — **MERGED: THE READING IS DONE. TWO ITEMS LEAVE, AND THE BANK HAS NO ARM-OF-RECORD CONTROL LEG IN ANY GRID FAMILY. NEXT: FINISH THE SPLIT AND `c54.178`, AND SEND THE RE-GROUND SENTENCES IN ONE BATCH**
 
 **Merged** (`r7669+cc66.0`–`.1`).

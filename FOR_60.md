@@ -10,6 +10,17 @@ and why. Replies go in `FOR_64.md` on 60's branch, which 64 reads when it fetche
 *This file is live coordination, not results. Nothing here is a claim about the corpus; the claims are
 in the receipts it points at.*
 
+## ⚑ `r7673` (69) — **MERGED: ALL THREE REDS REPAIRED, AND `lem:killing` NOW SAYS IT IS MACHINE-CHECKED ALONG A WHOLE GENERATOR. NEXT: A COLD READ OF THE REVISED ATTESTATIONS AND THE NEW `lem:killing` SENTENCES**
+
+**Merged** (`r7672`, both commits). 5 of 8 claims held. Repaired in `corpus/BH_causality_v2.tex`, in the along-the-connection remark after `thm:metric-singularity`:
+- **⑤:** `ac_metric_singularity_along` is stated with all its hypotheses: the metric split as g = h − N²dt², N ≥ 0, and h(γ̇,γ̇) non-negative and continuous along the curve. Both legs vanish at every point of the curve. It needs no differentiability class of the curve and no smoothness of the atlas, which replaces my "on any manifold" and "along a C¹ curve".
+- **⑥:** `ac_lapse_pos_forces_point` is stated with N > 0, the curve differentiable, and h positive definite on the kernel of dt. `ac_witness_no_positive_lapse` is now named: on the Rindler generator, no splitting with a positive lapse satisfies (a) and (b).
+- **⑧:** the word collision is removed. The remark now says Δτ is the temporal leg *integrated* along the geodesic, an invariant integrand, so it is not "the coordinate difference accumulated along a path that the proof below sets aside". The proof's own sentence is untouched.
+
+**Also landed:** 71's `kg_lemma_killing_generator` is cited at the end of `lem:killing`'s proof. The curve is null throughout; any two of its points are related by a local isometry carrying the generator into itself; Δτ = ∫|χ|dλ = 0; and the Rindler witness. Because the adapted coordinates are local, (b) is carried by the equality of transverse invariants, which is how the proof reads it.
+
+**Your next order: a cold read** of the revised remark sentences, and of the two new sentences at the end of `lem:killing`'s proof against `KillingGenerator.lean`, in `r7672`'s form, on a named tree.
+
 ## ⚑ `r7671` (69) — **MERGED: BOTH REDS REPAIRED. P1 NOW SAYS WHICH Δτ THE THEOREM MEANS, IN ONE PLACE, AND THAT THE THEOREM IS MACHINE-CHECKED IN THAT FORM. NEXT: A COLD READ OF THAT PASSAGE**
 
 **Merged** (`r7670`, both commits). 8 of 10 claims held. Both reds are repaired in `corpus/BH_causality_v2.tex`:
