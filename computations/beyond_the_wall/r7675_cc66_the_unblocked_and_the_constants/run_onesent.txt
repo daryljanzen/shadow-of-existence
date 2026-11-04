@@ -1,0 +1,109 @@
+
+====================================================================================================
+  ①  THE CHANNEL -- a figure printed one sentence from its citation
+====================================================================================================
+
+      depth-0 prose sentences in the body: 1633
+      rows (uncited figure, next sentence cites a namesake-resting receipt off the list): 6;  (sentence, receipt) pairs: 16
+        l.1736   1 receipt(s)
+        l.2050   1 receipt(s)
+        l.2068   2 receipt(s)
+        l.2303   1 receipt(s)
+        l.2344   3 receipt(s)
+        l.2792   8 receipt(s)
+    OK    ① the channel reproduces `r7673+cc66.1`'s measurement off the SHARED splitter: 16 pairs on 6 rows, 8 of them on the single `\item` at `l.2792`, leaving 8 actionable pairs -- and the shape is pinned per row, so a row moving between sites would redden this rather than cancel in the total   (16 pairs on 6 rows: l.1736x1, l.2050x1, l.2068x2, l.2303x1, l.2344x3, l.2792x8)
+
+====================================================================================================
+  ②  THE READ -- a verdict per (sentence, receipt) pair, declared and reasoned
+====================================================================================================
+
+      l.1736   NOT A MISS P15_the_three_instruments_with_no_noise_model_one_can_be_given_a_floor_and_t
+      l.2050   NOT A MISS P15_the_combs_resolution_is_four_multipoles_and_the_skys_own_value_lies_outs
+      l.2068   NOT A MISS P15_the_crossing_spectrum_reproduces_on_a_second_instrument_and_the_172_is_t
+      l.2068   NOT A MISS P15_the_locator_is_good_to_three_hundredths_and_the_fourth_peaks_residual_is
+      l.2303   REAL MISS  P15_the_three_parameter_comb_fails_its_validation_because_the_peak_spacing_D
+      l.2344   REAL MISS  P15_centring_removes_the_correlation_exactly_and_closes_the_route_anyway_bec
+      l.2344   REAL MISS  P15_the_carrier_separation_on_L_p_is_the_combs_peak_count_not_the_carrier_an
+      l.2344   REAL MISS  P15_the_fourth_parameter_recovers_the_drift_the_gaps_show_but_the_spacing_an
+      l.2792   NOT A MISS _THE_ITEM
+
+      verdicts: 4 real miss(es), 5 cleared, 9 pairs read (the 8 actionable plus `l.2792` as one site)
+    OK    ② every pair the channel produced carries a DECLARED verdict with a reason long enough to say WHY, and the two are separable: the verdict set covers the channel's rows exactly and no pair is left unread   (9 read; shortest reason 269 chars)
+    OK    ②ᵃ arm ⑦ (1-4 real misses, central 2) is scored: the read gives 4, so the BAND HOLDS AT ITS TOP EDGE and the central guess MISSES BY TWO -- the channel yields twice what I registered   (4 of 8 actionable pairs are real misses; central guess 2)
+
+====================================================================================================
+  ③  WHY THESE FOUR NEEDED BOTH DEFECTS -- neither fix alone surfaces them
+====================================================================================================
+
+      P15_centring_removes_the_correlation_exactly_and_closes_the_route_anyway
+         classifier sites: {'undecidable': 1};  namesake sites recorded: 0
+         its OWN citing sentence(s) printing a figure: 0
+         namesake paths resolved through the directory: 4, every one with a banked sibling
+            computations/beyond_the_wall/r7093_directions/grid_oneclock/cr_base.npz
+               -> computations/beyond_the_wall/r7093_directions/grid_oneclock_leafrec1/cr_base.npz
+            computations/beyond_the_wall/r7201_cc66_loading_lever/cr_nodrive.npz
+               -> computations/beyond_the_wall/r7201_cc66_loading_lever_leafrec1/cr_nodrive.npz
+      P15_the_carrier_separation_on_L_p_is_the_combs_peak_count_not_the_carrie
+         classifier sites: {'undecidable': 2};  namesake sites recorded: 0
+         its OWN citing sentence(s) printing a figure: 0
+         namesake paths resolved through the directory: 4, every one with a banked sibling
+            computations/beyond_the_wall/r7093_directions/grid_oneclock/cr_base.npz
+               -> computations/beyond_the_wall/r7093_directions/grid_oneclock_leafrec1/cr_base.npz
+            computations/beyond_the_wall/r7201_cc66_loading_lever/cr_nodrive.npz
+               -> computations/beyond_the_wall/r7201_cc66_loading_lever_leafrec1/cr_nodrive.npz
+      P15_the_fourth_parameter_recovers_the_drift_the_gaps_show_but_the_spacin
+         classifier sites: {'undecidable': 1};  namesake sites recorded: 0
+         its OWN citing sentence(s) printing a figure: 0
+         namesake paths resolved through the directory: 4, every one with a banked sibling
+            computations/beyond_the_wall/r7093_directions/grid_oneclock/cr_base.npz
+               -> computations/beyond_the_wall/r7093_directions/grid_oneclock_leafrec1/cr_base.npz
+            computations/beyond_the_wall/r7201_cc66_loading_lever/cr_nodrive.npz
+               -> computations/beyond_the_wall/r7201_cc66_loading_lever_leafrec1/cr_nodrive.npz
+      P15_the_three_parameter_comb_fails_its_validation_because_the_peak_spaci
+         classifier sites: {'undecidable': 1};  namesake sites recorded: 0
+         its OWN citing sentence(s) printing a figure: 0
+         namesake paths resolved through the directory: 4, every one with a banked sibling
+            computations/beyond_the_wall/r7093_directions/grid_oneclock/cr_base.npz
+               -> computations/beyond_the_wall/r7093_directions/grid_oneclock_leafrec1/cr_base.npz
+            computations/beyond_the_wall/r7201_cc66_loading_lever/cr_nodrive.npz
+               -> computations/beyond_the_wall/r7201_cc66_loading_lever_leafrec1/cr_nodrive.npz
+    OK    ③ ⛭⛭ NEITHER FIX ALONE WOULD HAVE FOUND THESE FOUR, and that is asserted rather than argued: for every one of them the classifier records ZERO namesake load sites (so widening the sentence scope leaves it off the candidate set) AND its own citing sentence prints no figure (so fixing the classifier leaves it off the list).  ⇒ The two defects are independent and they compose   (P15_centring_removes_t: namesake-sites=0, own-fig-sentences=0, resolved-namesakes=4; P15_the_carrier_separa: namesake-sites=0, own-fig-sentences=0, resolved-namesakes=4; P15_the_fourth_paramet: namesake-sites=0, own-fig-sentences=0, resolved-namesakes=4; P15_the_three_paramete: namesake-sites=0, own-fig-sentences=0, resolved-namesakes=4)
+
+====================================================================================================
+  ④  THE FOUR MISSES, PRICED -- every namesake they read is already rebuilt
+====================================================================================================
+
+      namesake DIRECTORIES the four read: 2
+        computations/beyond_the_wall/r7093_directions/grid_oneclock  (4 file reads)  sibling banked: True
+        computations/beyond_the_wall/r7201_cc66_loading_lever  (12 file reads)  sibling banked: True
+    OK    ④ all four are CHEAP by the census's own counterpart test: every namesake path they read has a banked `_leafrec1` twin, and the twins are whole DIRECTORIES already in the tree -- so the repointing is `_gd(gdir, arm)` per arm, the convention `r7645+cc66.68` set, and not a wholesale directory swap   (computations/beyond_the_wall/r7093_directions/grid_oneclock, computations/beyond_the_wall/r7201_cc66_loading_lever)
+
+====================================================================================================
+  ⑤  ARM ⑧ -- how many receipts in scope the classifier is directory-blind to
+====================================================================================================
+
+      receipts in scope with a RESOLVED namesake path that has a banked sibling: 40
+      of those, the classifier records NO namesake load site (DIRECTORY-BLIND): 11
+      plus the one the resolver ALSO misses, found by hand at `l.2068`: 1
+      ⇒ the class, as measured: 12
+      of the class, already on PO-87's list by another route: 2
+      of the class, with a figure-printing citing sentence of their OWN: 2
+    OK    ⑤ ⛭⛭ arm ⑧ (4-12 receipts, central 6) is scored: the resolver finds 11 directory-blind receipts in scope and the read found a 12th the resolver also misses -- so the BAND HOLDS AT ITS TOP EDGE and the central guess MISSES BY SIX.  The class is real and it is twice the size I registered   (11 by the resolver + 1 by hand = 12; central guess 6)
+    OK    ⑤ᵃ ⛭⛭ AND THE GAP ADDS ZERO ITEMS TO PO-87'S LIST BY THE LIST'S OWN CRITERION: of the directory-blind class, the two already on the list got there through a namesake read the classifier DOES see, and not one of the others is cited by a body sentence that prints a figure.  ⇒ The classifier fix is a correction to `len(cand)`, not to what the papers print, which is why it is routed to 69 rather than merged here   (2 of 12 on the list; 0 of the rest have a figure-printing citing sentence)
+
+====================================================================================================
+  ⑥  THE FOUR ARRIVALS -- what goes on PO-87's list, and by which test
+====================================================================================================
+
+      PO-87's list, as `census.py` DERIVES it: 26 figure-printing items
+      arrivals from this read, by the ONE-SENTENCE-AWAY test: 4
+        + P15_centring_removes_the_correlation_exactly_and_closes_the_route_anyway_because_the_dec
+        + P15_the_carrier_separation_on_L_p_is_the_combs_peak_count_not_the_carrier_and_the_closur
+        + P15_the_fourth_parameter_recovers_the_drift_the_gaps_show_but_the_spacing_and_the_drift_
+        + P15_the_three_parameter_comb_fails_its_validation_because_the_peak_spacing_DRIFTS_and_th
+      ⇒ PO-87's list, derived plus declared: 26 + 4 = 30
+    OK    ⑥ the arrivals are DECLARED and DISJOINT from the derived set: none of the four is already on it, each is a candidate the census already holds (so nothing new is invented about the tree), and the list goes 26 -> 30   (26 derived + 4 declared)
+
+====================================================================================================
+  ✓ ALL CHECKS PASSED
+====================================================================================================

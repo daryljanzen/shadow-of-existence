@@ -444,6 +444,66 @@ check(f'Ⓑ② the figure-printing count is PINNED on RESOLVED paths and arm ①
       f'{len(_LEFT_SINCE)} declared departures, not a re-typed {len(prints_fig)} -- so an '
       f'undeclared fifth departure reddens this gate]')
 
+# ═════════════════════════════════════════════════════════════════════════════════════════════════
+# ⛭⛭⛭ `r7675+cc66` -- ** FOUR ITEMS JOIN PO-87's LIST BY A TEST THIS CENSUS DOES NOT RUN, AND THEY
+#   ARE DECLARED HERE RATHER THAN DERIVED, BECAUSE A READ IS NOT AN INSTRUMENT. **
+#
+#   `r7673+cc66.1` named gap ② in this census: a figure printed ONE SENTENCE from its citation is
+#   invisible to a test that reads the citing sentence only.  `r7675`'s item 3 read the eight
+#   actionable pairs that channel produced (`r7675.../onesent.py`, nine verdicts, every one
+#   reasoned) and four are real misses.  ⛔ * They cannot be derived here, and that is the point: *
+#     ① their own citing sentence prints no figure, so `prints_fig` cannot hold them; and
+#     ② `load_sites` records ZERO namesake sites for all four, because the arm is carried by the
+#        DIRECTORY and the directory is a module VARIABLE -- `np.load(path)` through a parameter
+#        whose caller passes `os.path.join(GO, 'cr_base.npz')`.  No literal names the arm.
+#   ⇒ * Both defects must be fixed for these four to appear by derivation; that composition is
+#     asserted in `onesent.py` gate ③.  Until the classifier is fixed -- which is 69's call, since
+#     `onesent.py` gate ⑤ᵃ measures that fixing it adds ZERO items to this list -- the four are
+#     carried as a DECLARED ledger beside the derived set, exactly as `_LEFT_SINCE` carries the
+#     departures.  The derived count stays pinned by `Ⓑ②` and is NOT quietly inflated. *
+_JOINED_BY_READ = {
+    'receipts/P15_CR_cosmology/P15_the_three_parameter_comb_fails_its_validation_because_the_peak_'
+    'spacing_DRIFTS_and_the_missing_parameter_is_the_one_the_sector_is_about.py':
+        'r7675+cc66 item 3 -- l.2303 prints its gate Ⓓ①\'s factor of 542 and Ⓑ①\'s further 24 '
+        'points, computed on r7093_directions/grid_oneclock/cr_base.npz and '
+        'r7201_cc66_loading_lever/, both namesake directories with a banked _leafrec1 sibling; the '
+        'citation sits in the NEXT sentence',
+    'receipts/P15_CR_cosmology/P15_the_carrier_separation_on_L_p_is_the_combs_peak_count_not_the_'
+    'carrier_and_the_closure_has_no_number_because_the_degeneracy_is_sampling_invariant.py':
+        'r7675+cc66 item 3 -- l.2344 prints its headline verbatim ([0.939,0.977] over thirteen '
+        'fits, 78-176 points, five windows, six spectra, and the fourth-decimal halving), every '
+        'one of the six spectra read through the same two namesake directories',
+    'receipts/P15_CR_cosmology/P15_the_fourth_parameter_recovers_the_drift_the_gaps_show_but_the_'
+    'spacing_and_the_drift_are_not_separable_so_the_data_half_still_does_not_happen.py':
+        'r7675+cc66 item 3 -- l.2344: a co-producer of the printed -0.94 to -0.98 range, as its own '
+        'stop condition, off the same six namesake spectra.  The list is keyed on the RECEIPT, so '
+        'a second receipt resting on a namesake for a figure in print is a second item',
+    'receipts/P15_CR_cosmology/P15_centring_removes_the_correlation_exactly_and_closes_the_route_'
+    'anyway_because_the_decorrelated_parameter_is_not_the_acoustic_scale.py':
+        'r7675+cc66 item 3 -- l.2344: its gate Ⓑ① IS that range (-0.94 to -0.98 becomes 1e-16), '
+        'measured on the same six namesake spectra, every one with a banked _leafrec1 sibling',
+}
+_joined = sorted(_JOINED_BY_READ)
+print(f'      items DECLARED onto the list by `r7675`\'s one-sentence-away read: {len(_joined)}')
+check(f'Ⓑ③ ⛭⛭ THE FOUR DECLARED ARRIVALS ARE CHECKED AGAINST THIS CENSUS RATHER THAN ASSERTED: each '
+      f'is a candidate the census already holds (it rests on a namesake), each is cited in a paper '
+      f'BODY, and NOT ONE is in the derived figure-printing set -- which is why it had to be read '
+      f'rather than counted.  ⛔ If a later fix to `load_sites` or to the sentence scope makes one '
+      f'of them derivable, this gate fires and the ledger entry comes out',
+      len(_joined) == 4
+      and all(p in cand for p in _joined)
+      and all(p in body_cited for p in _joined)
+      and not any(p in prints_fig for p in _joined),
+      f'{len(_joined)} declared; in cand {sum(1 for p in _joined if p in cand)}; body-cited '
+      f'{sum(1 for p in _joined if p in body_cited)}; already derived '
+      f'{sum(1 for p in _joined if p in prints_fig)}')
+#: ⌗ AND THE TOTAL LANDS ON 30, WHICH IS `_LIST_WAS`.  * A coincidence and said to be one: * four
+#:   items left the derived set since `r7671` (`_LEFT_SINCE`) and four join it by this read, so
+#:   26 + 4 = 30 is arithmetic and not a return to a previous state.  The thirty of `r7671` and the
+#:   thirty here share no membership test and only two thirds of their members.
+print(f'      ⇒ PO-87\'s list: {len(prints_fig)} derived + {len(_joined)} declared = '
+      f'{len(prints_fig) + len(_joined)}')
+
 # ══ cheap vs expensive ══════════════════════════════════════════════════════════════════════════
 head('Ⓒ  CHEAP vs EXPENSIVE -- which items have an arm-of-record sibling already banked')
 #: the counterpart test is path-aware too: a namesake at `D/X.npz` is already rebuilt if either
@@ -582,7 +642,23 @@ for i, pth in enumerate(sorted(prints_fig), 1):
         for s in dict.fromkeys(ss):          #: one citation per DISTINCT sentence
             print(f'       {f}: "{s[:400]}"')
 print()
-print(f'  TOTALS: {len(prints_fig)} figure-printing items; {len(cheap)} cheap, '
+#: ⛭⛭ `r7675+cc66` -- THE DECLARED ARRIVALS ARE PRINTED AS A SECOND BLOCK AND NOT MERGED INTO THE
+#:   FIRST, so a reader can always see which items this census DERIVED and which a read put here.
+print('-' * 100)
+print('  DECLARED BY READING, NOT DERIVED -- the one-sentence-away channel (`r7675` item 3).')
+print('  *Their own citing sentence prints no figure and the classifier sees no namesake load, so')
+print('   neither the sentence test nor `load_sites` can reach them.  See `onesent.py` gate ③.*')
+print('-' * 100)
+for i, pth in enumerate(_joined, len(prints_fig) + 1):
+    d = cand[pth]
+    print(f'  [{i:02d}] [{d["paper"]}] {pth}')
+    print(f'       why it is here: {_JOINED_BY_READ[pth]}')
+    for f, ss in sorted(body_cited[pth].items()):
+        for ss_ in dict.fromkeys(ss):
+            print(f'       {f}: "{ss_[:400]}"')
+print()
+print(f'  TOTALS: {len(prints_fig)} figure-printing items DERIVED plus {len(_joined)} DECLARED by '
+      f'reading = {len(prints_fig) + len(_joined)}; {len(cheap)} cheap, '
       f'{len(expensive)} expensive; {len(no_sib)} namesake spectra unbanked; '
       f'{len(live)} of the twelve live; {len(gen_only)} generated-appendix-only.')
 

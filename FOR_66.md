@@ -33358,3 +33358,77 @@ Beside the shape detector I wrote a second mechanical filter — *is the name re
 - **⛔ And 60's ten-invisible-figures finding goes straight at my item ⓸.** `check_figures_pinned`'s citation scope is the **sentence**, and ten of the figures 69 landed sit in sentences citing nothing — so **the gate has never read them.** ⇒ ***I reported "1476 against 1476" as though the baseline measured coverage. For those ten it measures nothing.*** *I was reading the gate's OUTPUT where 60 read the gate's SCOPE, and that is the whole difference. Fifth instance of the shape: I keep checking what an instrument says instead of what it looks at.*
 
 ⌗ **The standing lesson, now stated in the form that would have caught today's three.** `.10` said read the file's header; `.11` put the fix in the shared definition; `.12` grep the receipt before editing; `.13`'s was the shared blast radius. ⇒ ***Today's is narrower and harder: when I correct a figure in a receipt, the assertion's own message and label are part of the receipt. I corrected three docstrings this revision and missed the text inside two gates and one summary — all three in files I had open, and all three found by another seat.***
+
+---
+
+### ⛭⛭⛭ `r7675+cc66.6` — **ITEM 3 IS DONE AND IT IS 4 OF 8, THE TOP OF MY BAND. BUT THE READ FOUND THE CAUSE, AND IT IS A SECOND BLIND SPOT IN MY OWN CENSUS: THE FOUR MISSES NEED *BOTH* DEFECTS, SO NEITHER FIX ALONE WOULD EVER HAVE SURFACED THEM**
+
+**Receipt:** `computations/beyond_the_wall/r7675_cc66_the_unblocked_and_the_constants/onesent.py` — 8 gates, 0 failures, `run_onesent.txt`. Costs nothing: it reads the tree and the paper and runs no solver. Arms ⑧ and ⑨ were registered in their own commit (`r7675+cc66.5`) and pushed **before** this file existed.
+
+#### ⓵ THE CHANNEL REPRODUCES EXACTLY, OFF THE SHARED SPLITTER AND NOT A FOURTH COPY
+
+16 candidate (sentence, receipt) pairs on 6 rows — `l.1736`×1, `l.2050`×1, `l.2068`×2, `l.2303`×1, `l.2344`×3, `l.2792`×8 — which is `r7673+cc66.1`'s measurement to the row. ⛭ **The whole-text split went into `r7667/sentence.py` beside `sentences_citing`, not into the instrument that needed it**: a second splitter would have been the **fourth** copy of the boundary definition, which is the drift that file exists to end. *`r7673+cc66.11`'s lesson, applied before it cost anything this time.*
+
+⌗ *The order's line numbers and mine differ by one or two — `l.2066`/`l.2068`, `l.2301`/`l.2303`, `l.2343`/`l.2344` — because `depth0_sentences` reports where the SPAN begins and `r7673+cc66.1` reported where the FIGURE sits. Same three sites; the convention is stated in the file.*
+
+#### ⓶ THE READ: **4 REAL MISSES, 5 CLEARED**, every one of the nine with a declared reason
+
+| site | verdict | why, in one line |
+|---|---|---|
+| `l.1736` | NOT A MISS | the per-band floor is the CONTROL through the likelihood's covariance, band edges from `r6959_eta_cr_leafrec1`; its one namesake read is a control leg, and `r7669+70.1` settles that LEAFREC never touches the control |
+| `l.2050` | NOT A MISS | `2.135 → 2.009` is `R[0.0]/R[1.0]['p12']`, computed on `_A = '_leafrec1'`; its five namesake reads are a convention GATE, two no-op bases its own header keeps on the namesake arm, and two control legs |
+| `l.2068` | NOT A MISS ×2 | the sub-bin peaks and height ratios are **a third receipt's** (`at_its_own_preferred_H0`, both rows labelled `the ARM OF RECORD` in its own source) and the one figure the crossing receipt carries in that sentence is the **bin coverage**, `185` against `133`, which no arm can move |
+| `l.2303` | **REAL MISS** | `factor of 542` and `a further 24 points` ARE its gates Ⓓ①/Ⓑ①, on `r7093_directions/grid_oneclock/cr_base.npz` and `r7201_cc66_loading_lever/` |
+| `l.2344` | **REAL MISS ×3** | the sentence prints `the_carrier_separation`'s headline verbatim (`[0.939, 0.977]`, thirteen fits, `78`–`176` points, five windows, six spectra, the fourth-decimal halving), and `the_fourth_parameter` and `centring_removes` carry the same `−0.94`–`−0.98` range off the same six namesake spectra |
+| `l.2792` | NOT A MISS | **not one of the eight receipts the `\item` cites contains `2.774` at all** |
+
+⇒ **Arm ⑦ (1–4, central 2): the band HOLDS AT ITS TOP EDGE and the central guess MISSES BY TWO.** The channel yields twice what I registered.
+
+⇒ **Arm ⑨ is a HIT and its stated REASON was wrong, which I am recording rather than banking the hit.** I registered that `l.2792`'s `2.774` would be carried by a receipt already on the list or already on the arm of record. It is carried by **neither**: the eight cited receipts do not contain the figure in any state. *What that site actually shows is a **citation** gap, not a namesake one — a figure in print whose producers are not cited in its own `\item`. Routed to 69 as such.*
+
+#### ⛔⛭⛭⛭ ⓷ THE FINDING: **THE FOUR MISSES NEED TWO INDEPENDENT DEFECTS, AND FIXING EITHER ALONE STILL MISSES THEM**
+
+The second defect is mine and it is in the census's **load-site classifier**. The arm of record is carried by the **DIRECTORY** (`r7093_directions/grid_oneclock` vs `…_leafrec1`); the directory lives in a module **variable**; and the load is `np.load(path)` through a parameter whose caller passes `os.path.join(GO, 'cr_base.npz')`. **No literal in that call names the arm, so the site reads UNDECIDABLE and the receipt records ZERO namesake loads.**
+
+⛭ **So the two compose, and gate ③ asserts it rather than arguing it.** For all four: `namesake` load sites recorded = **0**, and figure-printing citing sentences of their own = **0**.
+- Widen the sentence scope alone → the receipt is still not a namesake candidate.
+- Fix the classifier alone → the receipt is still off the list, because its own citing sentence prints no figure.
+
+⇒ ***That is `r7667+cc66.2`'s own lesson — the arm is carried by the directory — reappearing one level further in, INSIDE the load site, where cut 2's fix does not reach.*** *Third gap named in my own census, and the first one I found by reading rather than by being told.*
+
+#### ⓸ ARM ⑧: THE DIRECTORY-BLIND CLASS IS **12**, AND IT ADDS **ZERO** ITEMS TO THE LIST
+
+Registered 4–12, central 6. The resolver finds **11** receipts in scope whose classifier records no namesake site while a resolved namesake path with a banked `_leafrec1` sibling exists; the read found a **12th the resolver also misses** (`the_crossing_spectrum…`, whose four namesake banks are loaded as `load(f)` with `f` a loop variable over a dict of names). ⇒ **Band holds at its top edge; central guess misses by six.**
+
+⛭⛭ **And the result that matters is the other one.** Of the 12, two are already on PO-87's list through a namesake read the classifier *does* see, and **not one of the other ten is cited by a body sentence that prints a figure** — which is the list's own membership test. ⇒ ***Fixing the classifier would move `len(cand)` and change nothing about what the papers print.*** *So the fix is ROUTED to 69 and not merged: `PREDICTION.md` already says rebuilding the census is not mine, and the measurement says it buys nothing on the list.*
+
+#### ⓹ THE FOUR ARRIVALS ARE ON THE LIST, DECLARED AND NOT QUIETLY DERIVED
+
+`census.py` gains `_JOINED_BY_READ` beside `_LEFT_SINCE` — four entries, each naming the site, the figure and the banks — plus gate `Ⓑ③`, which checks each arrival **against the census**: in `cand`, body-cited, and **not** in the derived set. **The derived pin stays 26 and is not inflated;** `LIST.md` prints the arrivals as a separate block saying they were read, not derived. ⇒ **26 derived + 4 declared = 30.**
+
+⌗ *The total landing on 30 — `_LIST_WAS` — is arithmetic and said to be: four left since `r7671` and four join. The two thirties share no membership test and only two thirds of their members.*
+
+⌗ **All four are CHEAP:** two namesake directories, `grid_oneclock` and `r7201_cc66_loading_lever`, both with whole `_leafrec1` siblings already banked. The repointing is `_gd(gdir, arm)` per arm — `r7645+cc66.68`'s convention — and **not** a wholesale directory swap, which `FileNotFoundError`s on `lcdm_base.npz`.
+
+#### ⛔⛭⛭⛭ ⓺ AND A RED GATE OF MINE WAS SITTING IN THE TREE ACROSS TWO OF MY OWN PUSHES, BECAUSE 69 LANDED THE FIGURES I ROUTED
+
+`r7671/split.py`'s `Ⓐ③` — *"every reason's anchor is a VERBATIM fragment of that item's own precise sentence"* — was **FAIL, 23 of 26**, and had been since the re-ground batch landed. Verified it is not mine from this revision: red on `950258fc3`'s own `census.py` too.
+
+**The cause is exactly the landing I asked for.** An anchor is a verbatim fragment of the paper, which is what makes it evidence the verdict was *read* and not invented. 69 moved the digits under three of them:
+- `$0.789$ to $0.913$` → `$0.788$ to $0.911$` (`l.1891`)
+- `$14.6$ per cent wider in $\chi$` → `$15.5$` (`l.1850`)
+- `$12.5$ standard deviations` → `$12.6$` (`l.2283`)
+
+**Re-cut from the landed sentences; no verdict changes** — a landed digit is the same reading differently printed — and `SPLIT.md` carries the reason. **26 of 26 anchored, green.**
+
+⌗ ***The lesson, and it is the sixth of this lane and narrower than the fifth.*** `.10` read the header; `.11` fix the shared definition; `.12` grep the co-citations; `.13` the shared blast radius; `.4` the assertion's own message is part of the receipt. ⇒ ***When 69 lands a figure I routed, every instrument that quotes the paper VERBATIM is downstream of that landing — not only the receipt that produced the figure. I ran the receipts and the corpus gates and did not run my own instruments, which is how a red gate survived two pushes.***
+
+#### THE OWED ADDENDUM, CLOSING `r7673+cc66.11`/`.15`'s NEVER-PROBED THREAD
+
+**The tolerance carry drained 11 → 1 on head `7b9efe823`, with `0 of 28` NEVER PROBED.** Ten receipts were cleared by a green rather than by an adjudication. ⇒ *The thread those two entries left open is closed: the carries were my own `cancel-in-progress` pushes cancelling running probes, exactly as `.11` said, and re-probing drained them without a single contradiction.*
+
+#### VERIFIED ON THIS HEAD
+
+`onesent.py` 8/8; `r7667/census.py` green with `Ⓑ③`; `r7669/classify.py`, `r7671/split.py` (now 26 of 26), `r7673/dispose.py`, `r7673/pairs.py`, `r7675/constants.py` all green. `check_exact_counts` **63 of 63, no new site** — so this revision's own commitment (run `S4`/`S10`/`S11`/`S13` by name if a site appears) is not triggered, and that is reported rather than assumed. `check_figures_pinned`, `check_order_acknowledged`, `check_marker_transposition` all rc=0.
+
+⇒ **All five items of `r7675` are done.**

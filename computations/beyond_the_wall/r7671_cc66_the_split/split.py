@@ -105,7 +105,19 @@ HELD = 'HELD'               # -> nobody yet: the order's item 3 bar, 70's measur
 V = {
  'P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_the_visibility': dict(
     verdict=REBUILD, why='arm-figure', traced=True,
-    anchor='which on this arm runs $0.789$ to $0.913$',
+#: ⛔⛭⛭⛭ `r7675+cc66` -- ** THREE ANCHORS WENT STALE AND Ⓐ③ WENT RED, AND THE CAUSE IS THAT 69
+#:   LANDED THE FIGURES I ROUTED. **  An anchor is a VERBATIM fragment of the item's own citing
+#:   sentence, which is what makes it evidence that the verdict was read rather than invented.  When
+#:   69 landed `r7673`/`r7675`'s re-ground batch, the paper's digits moved under three of them --
+#:   `$0.789$ to $0.913$` -> `$0.788$ to $0.911$` at `l.1891`, `$14.6$ per cent wider` -> `$15.5$`
+#:   at `l.1850`, `$12.5$ standard deviations` -> `$12.6$` at `l.2283` -- and the fragments stopped
+#:   existing.  ⇒ * The anchors are re-cut from the LANDED sentences.  The verdicts do not change: a
+#:   landed digit is the same reading, differently printed.  And this is the sixth process lesson of
+#:   this lane, narrower than the fifth: ** when 69 lands a figure I routed, every instrument that
+#:   quotes the paper VERBATIM is downstream of that landing, not only the receipt that produced the
+#:   figure. **  I did not run this file in the revision the landing arrived in, which is how a red
+#:   gate sat in the tree across two of my own pushes. *
+    anchor='which on this arm runs $0.788$ to $0.911$',   # r7675: was $0.789$/$0.913$
     reason='the Jacobian in print is this arm\'s and is the LEAFREC quantity itself: the sentence '
            'gives d(eta_leaf)/d(eta_stack) running 0.789 to 0.913 on this arm against identically '
            'one on the control, and the receipt reads every leg -- injected, geometry, noop, '
@@ -313,7 +325,7 @@ V = {
     spectra=['computations/beyond_the_wall/r7183_nofit_figure/nofit_figure_numbers.npz']),
  'P15_the_retention_is_the_combs_average_over_the_kernels_own_k_acceptance_and_the_law_has_no_fitted_coefficient': dict(
     verdict=REBUILD, why='arm-figure', traced=True,
-    anchor="this arm's visibility is the $14.6$ per cent wider in $\\chi$",
+    anchor="this arm's visibility is the $15.5$ per cent wider in $\\chi$",  # r7675: was $14.6$
     reason='this is the receipt that SUPPLIES the sentence\'s two figures -- the 14.6 per cent '
            'wider chi-extent and the sound horizon held to 0.08 per cent -- and it reads '
            '`r7041_accept_{lcdm,cr}` and `r6919_injected_{lcdm,cr}` with no `_leafrec1` anywhere. '
@@ -323,7 +335,7 @@ V = {
              'computations/beyond_the_wall/spectra/r6919_injected_cr.npz']),
  'P15_the_selection_does_not_truncate_so_the_thirteen_sigma_stands_at_twelve_point_nine_and_the_peak_that_goes_missing_is_the_third_not_the_fourth': dict(
     verdict=REBUILD, why='arm-figure', traced=True,
-    anchor='one full unit of the driving is $12.5$ standard deviations',
+    anchor='one full unit of the driving is $12.6$ standard deviations',  # r7675: was $12.5$
     reason='the driving unit and the observed point are read off the receipt\'s own '
            '`CRON`/`CROFF` pair -- `grid_oneclock/cr_base.npz` against '
            '`r7201_cc66_loading_lever/cr_nodrive.npz` -- both namesake, with no per-arm split in '

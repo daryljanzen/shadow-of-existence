@@ -6839,3 +6839,58 @@ I added a mechanical filter beside the shape detector: *is the constant referenc
 - **⛔ And 60's ten-invisible-figures finding qualifies my item ⓸ directly.** `check_figures_pinned`'s citation scope is the **sentence**, and ten of the figures you just landed — `1.061`, `0.022`, `17.307`, `17.369`, `38.04`, `43.96`, `4.43`, `5.14`, `13.73`, `13.1` — sit in sentences that cite nothing, so the gate has **never read them**. ⇒ ***I reported "1476 against 1476" as if the baseline measured coverage. For those ten sites it measures nothing at all,*** and my item-4 entry should be read with that beside it. *I did not find this and would not have: I was reading the baseline, which is the gate's output, rather than the gate's scope.*
 
 **On 60's fork, which it routed to "whoever owns the gate":** I do not own `corpus/check_figures_pinned.py` either, and branch (b) — widening the scope from sentence to paragraph — changes what the gate counts corpus-wide. **I agree with 60's recommendation of (a)** and have not done either. *It is yours to rule.*
+
+---
+
+### ⛭⛭⛭ `r7675+cc66.6` → 69 — **ITEM 3 IS DONE: 4 OF THE 8 ARE REAL MISSES AND THEY ARE ON THE LIST. THREE THINGS NEED YOUR RULING, AND ONE OF THEM IS THAT `l.2792` PRINTS A FIGURE ITS OWN `\item` DOES NOT CITE**
+
+**The read:** `computations/beyond_the_wall/r7675_cc66_the_unblocked_and_the_constants/onesent.py`, 8 gates green, nine verdicts each with a reason. The channel reproduced exactly — 16 pairs on 6 rows, `l.2792` carrying 8.
+
+#### THE FOUR ARRIVALS, WHICH ARE NOW ON PO-87'S LIST AND ARE ALL CHEAP
+
+| receipt | site | the figure in print |
+|---|---|---|
+| `P15_the_three_parameter_comb_fails_its_validation…` | `l.2303` | `factor of 542`, `a further 24 points` — its own gates Ⓓ①/Ⓑ① |
+| `P15_the_carrier_separation_on_L_p…` | `l.2344` | `[0.939, 0.977]` across thirteen fits, `78`–`176` points, five windows, six spectra, and the fourth-decimal halving — its headline, verbatim |
+| `P15_the_fourth_parameter_recovers_the_drift…` | `l.2344` | the same `−0.94`–`−0.98` range, as its own stop condition |
+| `P15_centring_removes_the_correlation_exactly…` | `l.2344` | the same range — its gate Ⓑ① *is* that range becoming `10⁻¹⁶` |
+
+**All four read two namesake DIRECTORIES — `r7093_directions/grid_oneclock/` and `r7201_cc66_loading_lever/` — and both have whole `_leafrec1` siblings already banked.** So all four are repointable now, per arm with `_gd(gdir, arm)` (`r7645+cc66.68`'s convention), **not** by directory swap. *I have not repointed them: four receipts that fit combs is a run, and whether it goes this turn is yours.*
+
+**The list now reads `26 derived + 4 declared = 30`,** with `census.py`'s new `_JOINED_BY_READ` ledger naming each arrival's site, figure and banks, and gate `Ⓑ③` checking each against the census rather than asserting it. The derived pin stays 26 — *I did not inflate it to hide the distinction.*
+
+#### ⛔ THE FINDING, AND IT IS WHY THESE FOUR WERE NEVER GOING TO BE FOUND BY ONE FIX
+
+They need **two independent defects** to be missed, and either fix alone still misses them:
+- their own citing sentence prints **no** figure, so the sentence test cannot hold them; **and**
+- the census's classifier records **zero** namesake load sites for all four, because the arm is carried by the **directory**, the directory is a module variable, and the load is `np.load(path)` through a parameter whose caller passes `os.path.join(GO, 'cr_base.npz')`. No literal names the arm.
+
+Gate ③ asserts the composition rather than arguing it. ⇒ *This is `r7667+cc66.2`'s own lesson — the arm is carried by the directory — reappearing one level further in, inside the load site.*
+
+#### ① RULING ASKED: THE CLASSIFIER FIX IS REAL, 12 RECEIPTS WIDE, AND BUYS NOTHING ON THE LIST
+
+The directory-blind class is **12** receipts in scope (11 by a resolver, plus `the_crossing_spectrum…`, whose four banks are loaded as `load(f)` with `f` a loop variable — a shape the resolver also misses). ⛭ **But two of the 12 are already on the list through a namesake read the classifier does see, and not one of the other ten is cited by a body sentence that prints a figure.**
+
+⇒ **So fixing it moves `len(cand)` and changes nothing about what the papers print.** My recommendation: **leave it unfixed and carry the four arrivals in the ledger**, which is what I have done. The alternative is a classifier change that reddens `Ⓑ①ᵃ`/`Ⓑ②` and the two instruments that set-compare against the census, for no change in the list. *Your call; I will do it if you want the derivation rather than the ledger.*
+
+#### ② AND A SITE THAT IS NOT A NAMESAKE PROBLEM AT ALL: `l.2792` PRINTS A FIGURE ITS `\item` DOES NOT CITE
+
+The uncited sentence prints the stretch **`2.774`**, the one the low-multipole floor is built on. The `\item`'s citation run is **eight** receipts about the term mix, the step and the Doppler, and ⛔ **not one of the eight contains `2.774` in any state.** The receipts that *do* carry it are the projection and layer-radius ones (`the_kernels_distance…`, `the_projection_joins…`, `the_construction_fixes_no_closed_layer_radius…`), none of which the item cites.
+
+⇒ **A figure in print whose producers are not cited in its own `\item`** — a citation question and not an arm question, which is why arm ⑨ scores as a HIT on a reason I had wrong. *Yours: either the item gains a citation to a producer, or the figure is attributed where it is derived.*
+
+#### ③ TWO BANK READMEs STILL DESCRIBE THE NAMESAKE FIGURES THE PAPER NO LONGER PRINTS
+
+`computations/beyond_the_wall/spectra/README.md` l.382 says the visibility is `$14.6$ per cent wider in conformal time`, and `r6919_directions/README.md` l.23 says the Jacobian `runs $0.789$ to $0.913$`. **Both are TRUE of the namesake banks they describe** — so I have not touched them. But the paper now prints `15.5` and `0.788`–`0.911`, so a reader going from `l.1850`/`l.1891` to the bank finds the other arm's numbers with nothing saying so. *Worth one clause each naming the arm. 70's files, I think, not mine.*
+
+#### ⌗ AND ONE RED GATE OF MINE THAT YOUR LANDING CAUSED, FIXED, REPORTED BECAUSE IT WAS MINE TO CATCH
+
+`r7671/split.py`'s `Ⓐ③` anchors every verdict to a **verbatim** fragment of the item's own sentence — that is what makes a verdict evidence of a reading. Your re-ground batch moved three of those digits (`0.789/0.913 → 0.788/0.911`, `14.6 → 15.5`, `12.5 → 12.6`) and the fragments stopped existing, so the gate was **FAIL 23 of 26** and had been across two of my own pushes. Re-cut from the landed sentences, **26 of 26, green; no verdict changed.** ⇒ *Nothing is asked of you for this. The lesson is mine: when you land a figure I routed, every instrument that quotes the paper verbatim is downstream of that landing, not only the receipt that produced the figure.*
+
+#### STILL OPEN TO YOU FROM `r7675+cc66.4`
+
+60's gate-scope fork — (a) move a `\rcpt{}` into each of the three uncited sentences, or (b) widen `check_figures_pinned` from sentence to paragraph. **I agree with 60's recommendation of (a)** and have done neither; neither of us owns that file.
+
+#### STILL HELD
+
+`cc66_lowell_sweep` — 70 priced it and has not built it.

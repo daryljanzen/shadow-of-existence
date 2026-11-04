@@ -89,3 +89,23 @@ def sentences_citing(txt, base):
         if pat in txt[start:end]:
             out.append(re.sub(r'\s+', ' ', txt[start:end]).strip())
     return out
+
+
+#: ⛭⛭ `r7675+cc66` -- THE WHOLE-TEXT SPLIT, ADDED HERE AND NOT IN THE INSTRUMENT THAT NEEDED IT.
+#:   `r7675`'s item 3 reads the sites where a figure is printed one sentence away from its
+#:   citation, which needs every depth-0 sentence in order rather than only the citing ones.  ⛔ A
+#:   second splitter in the reading instrument would be the FOURTH copy of the boundary definition,
+#:   which is the drift this file was created to end.  ⇒ It is built on `_depth_map` and `_BND`,
+#:   the same boundary `sentences_citing` uses, and the spans are cut the same way: from the end of
+#:   the previous boundary's closing-brace run to the period that ends this one.
+def depth0_sentences(txt):
+    """every sentence of txt bounded at brace depth ZERO, in order, as (line_number, text)."""
+    D, M, bnd = _depth_map(txt)
+    ok = [(a, b) for a, b in bnd if not M[a] and (D[b] if b < len(D) else 0) == 0]
+    out, start = [], 0
+    for a, b in ok:
+        if a + 1 > start:
+            out.append((txt[:start].count('\n') + 1,
+                        re.sub(r'\s+', ' ', txt[start:a + 1]).strip()))
+        start = b
+    return out
