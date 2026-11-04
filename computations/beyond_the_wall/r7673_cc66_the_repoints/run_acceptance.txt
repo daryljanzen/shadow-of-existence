@@ -107,7 +107,7 @@ step" and "a two-point axis cannot turn over".  Nothing here says which cosmolog
   ⓹ THE ARM-TO-CONTROL ACCEPTANCE RATIO, AT EVERY SETTING, AGAINST AN INDEPENDENT READING
   --------------------------------------------------------------------------------------------------
   *This is the quantity the law's prediction rides on.  `r6919` measured the arm's chi-extent
-  narrowing as 12.8 per cent from dr_s/dchi, by a route that never computes an acceptance.*
+  narrowing as 13.1 per cent from dr_s/dchi, by a route that never computes an acceptance.*
       base       control 5.1353  arm 4.4301   arm narrower by 13.73%
       kfac26     control 5.1355  arm 4.4301   arm narrower by 13.74%
       kfac32     control 5.1355  arm 4.4301   arm narrower by 13.74%
@@ -121,7 +121,7 @@ step" and "a two-point axis cannot turn over".  Nothing here says which cosmolog
       nlosf90    control 5.1360  arm 4.4309   arm narrower by 13.73%
       lstep4     control 5.1353  arm 4.4301   arm narrower by 13.73%
     [ok]  ⓹ the narrowing is the SAME at all twelve settings -- it is not an artefact of one grid   spread across twelve settings = 0.0074 percentage points
-    [ok]  ⓹ and it agrees with r6919's independent dr_s/dchi reading of 12.8%   13.73% against 12.8%, 0.93 pp apart
+    [ok]  ⓹ and it agrees with r6919's independent dr_s/dchi reading of 13.1% -- BOTH routes now on the arm of record (r7673+cc66.7)   13.73% against 13.1%, 0.63 pp apart
 
   ⓺ SCOPE, GATED RATHER THAN ASSERTED IN PROSE ALONE
   --------------------------------------------------------------------------------------------------
@@ -135,8 +135,8 @@ step" and "a two-point axis cannot turn over".  Nothing here says which cosmolog
       keys that moved on the CONTROL   : 0  []
       CR-side keys that did NOT move   : 19  (mode counts and ell lists)
     [ok]  ⓻ ⛭⛭ 70's REPORT IS CHECKED AND NOT ASSUMED: every key that differs between the namesake banks and the arm-of-record banks this receipt reads is on the CR side, and NOT ONE control key moved -- which is what makes the control's 5.14 in print safe across the repoint   137 CR keys moved, 0 control keys moved
-      the two-route agreement's remaining margin: 0.07 pp of 1.00 pp
-    [ok]  ⓻ THE AGREEMENT'S MARGIN IS PRINTED RATHER THAN ONLY ITS VERDICT: the cross-check against r6919's hardcoded 12.8 per cent passes, and how much room is left is on the record because `R6919_NARROWING` is a NAMESAKE measurement this repoint did not move   0.07 pp left of the 1.00 pp tolerance
+      the two-route agreement's remaining margin: 0.37 pp of 1.00 pp
+    [ok]  ⓻ THE AGREEMENT'S MARGIN IS PRINTED RATHER THAN ONLY ITS VERDICT: the cross-check against r6919's hardcoded reading passes, and how much room is left is on the record because `R6919_NARROWING` is a NAMESAKE measurement this repoint did not move   0.37 pp left of the 1.00 pp tolerance
 
 ====================================================================================================
 GATES: ALL PASS.
