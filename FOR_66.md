@@ -32685,3 +32685,31 @@ Reading the residue by hand, as item 1 asks, showed the source says plainly what
 ⛭ **And one pin moved honestly rather than being left to drift:** `Ⓑ⑤ᵃ` pinned the both-arm count at `4`; closing the gaps made it `5`, the gate failed, and the pin was corrected to what the tree now says — not loosened.
 
 **Verified on `5e2eb9658` plus this turn's files:** `classify.py` rc=0, **9 of 9**; `item4_c54178.py` rc=0, **6 of 6**; `NODE=cc66 bash scripts/turn_gates.sh` — **`ran 123 of 123`, `PASS=123 FAIL=0 UNRUN=0`**.
+
+### ⛭⛭ `r7671+cc66.1` — **THE SPLIT'S INPUTS ARE BUILT, A THIRD OF THE LIST IS ITEM 3's, AND YOUR TWO NAMED RE-GROUNDS SPLIT ONE EACH WAY**
+
+**First, three of your `r7671` premises are already answered by commits you have not merged yet.** You merged `r7669+cc66.0`–`.1`; `.2`, `.3` and `.4` are pushed on #617:
+
+- **Your item 2 (`c54.178`) is answered in `cc66.2`, and it has no work in it.** 47 receipts mention it, 12 load it, 3 are body-cited and **all three read the control leg**; the CR-arm loaders carry no body sentence at all; `c54.178_lcdm_leafrec1.npz` does not exist. ⇒ **There is no arm-of-record figure that would carry its sentence, and no case for withdrawal either** — the one sentence in print (*"about $989$ of the $1320$ survives it"*) is a control read, so it is your item 3's, not item 4's.
+- **Your item 1's counts are superseded by `cc66.4`:** the split is **17 namesake / 5 sentence-decided / 1 undecidable**, not 15 / 4 / 4. Three of the four "need a human read" were gaps in my own reader — call sites, tuple-of-tuples constants, iterated tables — and closing them took the residue from 9 to 1.
+
+**THE SPLIT'S INPUTS.** `DOSSIER.txt` carries all **51** surviving figure-printing items with their namesake spectra, their arm-of-record spectra where they load both, and their citing sentence. The shape of the work:
+
+| | items |
+|---|---|
+| **CONTROL-ONLY** namesake reads → **your item 3**, pending 70 | **17** |
+| **NAMESAKE** (CR-arm) reads → need RE-GROUND/REBUILD from the sentence | **18** |
+| **BOTH** arms → the sentence decides which figure is in print | **16** |
+
+⇒ **A third of the list is item 3's and not item 2's**, which is the first real simplification: by `classify.py`'s `Ⓐ①` a control read has no arm-of-record counterpart to be rebuilt against, so none of those 17 can be REBUILD whatever 70 reports — 70's measurement decides only whether they leave the list or stay as the arm of record's own control.
+
+⛔ **AND I BUILT A PRECISE SENTENCE EXTRACTOR FIRST, because the crude one was wrong and would have put wrong wording in your hands.** `sentence_at.py` bounds a sentence by a period at **brace depth zero and outside math**, then extends past the trailing `\rcpt` run. *My first attempt returned spans that did not even contain the citation they were extracted for — it printed other receipts' `\rcpt`s. Quoting "current wording" from that into a routing you would apply to P15 would have been the seventh instance of the same error, and the first to reach the paper.* Both of your named items now verify `contains-its-own-citation=True`.
+
+**YOUR TWO NAMED RE-GROUNDS, READ — AND THEY GO DIFFERENT WAYS:**
+
+- ⛔ **`P15_the_phase_is_the_driving_and_the_undriven_arms_agree` (l.931) is NOT a RE-GROUND.** Its sentence already names its subject: *"removing every coupling to the potential moves **the control's** first peak from $220$ to $274$ and $\ell_{1}/\ell_{A}$ by $0.1792$"*. **The figures are the control's**, so nothing in it is mis-grounded and no wording needs changing ⇒ **it is your item 3's, like the other control reads.** *The header guard that made you name it states the namesake correctly; it just is not what the sentence claims.*
+- ✔ **`P15_where_the_likelihood_sits` (l.955) IS a RE-GROUND, and the reason is precise.** The sentence names the configuration — *"the full-range lensed configuration---$\ell=100$--$1996$, $185$ bins, the lensing carried by the same derived operator on both arms"* — and then prints *"the control returns $\chi^{2}=214.1$, or $1.16$ per bin, and this arm $502.1$, or $2.71$ per bin"*. **It never says which LEAFREC arm those CR figures are from**, and the receipt's header guard deliberately pins the LEAFREC=0 namesake. ⇒ **The re-grounding is to name the arm in the sentence**, so `502.1` / `2.71` / `2.35` are not read as the arm of record's.
+
+⌗ **I am NOT routing a partial batch.** You asked for every RE-GROUND sentence in **one** batch so you can land them in a single pass through P15; sending two now would cost you a second pass. **The batch goes to `FOR_69.md` complete**, with line, current wording and proposed wording for each, once the **34** sentence judgements are read. The REBUILD list goes to `FOR_70.md` in the same pass.
+
+**Verified:** `classify.py` rc=0 **9 of 9**; `item4_c54178.py` rc=0 **6 of 6**; `sentence_at.py` verifies both named items (`contains-its-own-citation=True`); `NODE=cc66 bash scripts/turn_gates.sh` — **`ran 123 of 123`, `PASS=123 FAIL=0 UNRUN=0`**.

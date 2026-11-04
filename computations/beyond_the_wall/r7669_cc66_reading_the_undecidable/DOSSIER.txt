@@ -1,0 +1,228 @@
+[01] CONTROL-ONLY  P15_the_joint_fit_leaves_the_gaussian_and_the_bound_was_chi2_not_sigma
+     namesake: ['L820_lcdm_L2512_nk800.npz']
+     sentence: "\emph{And the tilt takes a fixed share of it rather than a variable one}: seven tenths at the adjudicated ratio and seven tenths at $1.0926$, so what the refit can and cannot do is a property of the shapes and not of the size\rcpt{P15_the_joint_fit_leaves_the_"
+
+[02] CONTROL-ONLY  P15_derived_lensing_on_the_lcdm_arm
+     namesake: ['c54.178_lcdm.npz']
+     sentence: "\emph{Most of the fitted headroom is recovered by a genuine lensing, and about $989$ of the $1320$ survives it}: the verdict of the last paragraph stands from the derived side, lensing real and not the last build\rcpt{P15_derived_lensing_on_the_lcdm_arm}. \emp"
+
+[03] NAMESAKE  P15_the_residual_is_contrast_and_the_lensing_potential_is_derived
+     namesake: ['c54.178_lcdm.npz', 'c54.182_clpp.npz']
+     sentence: "\emph{Most of the fitted headroom is recovered by a genuine lensing, and about $989$ of the $1320$ survives it}: the verdict of the last paragraph stands from the derived side, lensing real and not the last build\rcpt{P15_derived_lensing_on_the_lcdm_arm}. \emp"
+
+[04] NAMESAKE  P15_the_phase_is_the_driving_and_the_undriven_arms_agree
+     namesake: ['c54.186_cr_L3000.npz', 'c54.186_lcdm_L3000.npz', 'c54.193_cr_nodrive_L3000.npz', 'c54.193_lcdm_nodrive_L3000.npz']
+     sentence: "\emph{The second is not a worse measurement of the first's quantity}: it is a different configuration, chosen for the comparison it makes, and the two sit beside each other rather than one superseding the other. \emph{The driving's size on the observable leg i"
+
+[05] NAMESAKE  P15_the_control_entered_the_regime_and_the_arm_did_not_move
+     namesake: ['c54.175_cr.npz', 'c54.175_lcdm.npz', 'c54.177_cr.npz', 'c54.177_lcdm.npz', 'c54.178_cr.npz', 'c54.178_lcdm.npz']
+     sentence: "\emph{And the truncation's removal is measured on the arm whose answer is known}: it was $78\%$ of the control's remaining $\chi^{2}$, and taking it out brings the control to $1.18$ per degree of freedom over the full range against a reference $1.01$\rcpt{P15_"
+
+[06] NAMESAKE  P15_the_floor_is_a_distance_between_models_not_a_number_from_the_data
+     namesake: ['c54.186_cr_L3000.npz', 'c54.186_lcdm_L3000.npz']
+     sentence: "\emph{And the motion the alternative produces is separable into its causes}, the projection of an analytic oscillating source with no plasma dynamics in it isolating them: about a third is the visibility peak relocating, so that the sound horizon at last scatt"
+
+[07] BOTH  P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_com
+     namesake: ['cc66_cr_x_h686_L2000.npz', 'cc66_lcdm_L2000.npz', 'lcdm_base.npz']
+     aor     : ['cc66_cr_x_h686_L2000_leafrec1_distances.npz']
+     sentence: "\emph{So the acoustic scale is computed rather than accommodated}, and it is the comb of the computed spectrum that carries it: fitted to those peaks by the procedure this paper runs on the sky, it is $299.1$ against the sky's $298.4$, with the background fixe"
+
+[08] CONTROL-ONLY  P15_the_refit_leaves_the_background_where_the_distances_put_it_and_doe
+     namesake: ['cc66_refit_verify_lcdm.npz']
+     aor     : ['cc66_refit_verify_cr_leafrec1.npz']
+     sentence: "\emph{And the spectrum's own parameters are refitted, which is the comparison the standard model is usually judged by.} With the expansion rate, the matter and baryon densities and the tilt free in each arm and the amplitude in closed form, scored on the full "
+
+[09] BOTH  P15_the_signature_collapses_at_the_adjudicated_ratio_and_the_endpoint_
+     namesake: ['cc66_cr_x_h686_L2000.npz']
+     aor     : ['cc66_cr_x_h686_L2000_leafrec1.npz']
+     sentence: "\emph{Terminating the diffusion integral at a sharp recombination cut instead}, $r=1.0231$, \emph{gives $51$ and a tilt of $-0.019$}, and a ratio of $1.082$ gives $618$ and $-0.070$ on the same base and the same damping scale\rcpt{P15_the_signature_collapses_a"
+
+[10] BOTH  P15_the_full_range_refit_holds_the_background_and_the_phase_residual_w
+     namesake: ['cc66_cr_x_lstep1.npz', 'cc66_r185_verify_lcdm.npz', 'r6941_fine_cr.npz']
+     aor     : ['cc66_r185_verify_cr_leafrec1.npz', 'r6941_fine_cr_leafrec1.npz']
+     sentence: "\emph{And the spectrum's own parameters are refitted, which is the comparison the standard model is usually judged by.} With the expansion rate, the matter and baryon densities and the tilt free in each arm and the amplitude in closed form, scored on the full "
+
+[11] NAMESAKE  P15_the_low_multipole_depth_gap_closes_and_two_defects_were_cancelling
+     namesake: ['cc66_lowell_sweep.npz']
+     sentence: "Carried out with the exact transfer (gate-validated: the continuum reproduces the code's own $C_\ell$ to four figures; and the $r_0$ sensitivity is measured rather than assumed: the \emph{shape} is stable---the minimum stays at $\ell=4$ and the recovery multip"
+
+[12] BOTH  P15_there_is_no_phase_residual_and_the_fourth_peak_is_not_the_damping_
+     namesake: ['cc66_r185_verify_cr.npz', 'cc66_r185_verify_lcdm.npz']
+     aor     : ['cc66_r185_verify_cr_leafrec1.npz']
+     sentence: "\emph{So the arm sits about one of the locator's own window-to-window spreads from the sky on the one fit and on the sky's value in the other}, the offset falling from $1.1$ to $0.2$ of that spread when the fourth peak is admitted --- \emph{the shape of a diff"
+
+[13] NAMESAKE  P15_three_quarters_of_the_arms_residual_is_the_controls_and_what_is_le
+     namesake: ['cc66_fig_acoustic_numbers.npz', 'cc66_r185_verify_cr.npz']
+     sentence: "It is small: the rescale is under a multipole at the fourth peak, and $1.7$ of $287$ is under one per cent\rcpt{P15_three_quarters_of_the_arms_residual_is_the_controls_and_what_is_left_is_position_not_amplitude}. \emph{Amplitude, tilt, damping and position tog"
+
+[14] BOTH  P15_the_shared_fraction_does_not_mean_what_i_said_and_the_peak_trough_
+     namesake: ['cc66_r185_verify_cr.npz', 'cc66_r185_verify_lcdm.npz']
+     aor     : ['cc66_r185_verify_cr_leafrec1.npz']
+     sentence: "\emph{That fraction is not an attribution, and reading it as one would be an error}: both arms are fitted to the same bandpowers, so their residuals differ by the model difference alone and the fraction measures only how alike the two models are --- a control "
+
+[15] BOTH  P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_
+     namesake: ['cc66_r185_verify_cr.npz', 'cc66_r185_verify_lcdm.npz', 'r6885_los_cr.npz', 'r6885_los_lcdm.npz', 'r6885_losdp0_cr.npz', 'r6885_losdp0_lcdm.npz']
+     aor     : ['cc66_r185_verify_cr_leafrec1.npz']
+     sentence: "And one direction built from the control alone---raise the oscillation at fixed envelope, with nothing fitted---carries over half of $\lVert\Delta\rVert^{2}$\rcpt{P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck}. \emph{T"
+
+[16] NAMESAKE  P15_the_source_decomposition_is_reachable_on_the_reporting_path_and_th
+     namesake: ['cc66_r185_verify_cr.npz', 'cc66_r185_verify_lcdm.npz', 'r6885_dp0_cr.npz', 'r6885_dp0_lcdm.npz', 'r6889_nufs0_cr.npz', 'r6889_nufs0_lcdm.npz']
+     sentence: "\emph{One systematic is stated rather than minimised}: the envelope's abscissa moves the measured depth by about a third of that spread across the admissible acoustic scales. \emph{And the three features this arm's residual shows and the control's does not are"
+
+[17] BOTH  P15_the_monopole_zero_point_is_not_the_channel_and_the_two_residuals_p
+     namesake: ['cc66_r185_verify_cr.npz', 'cc66_r185_verify_lcdm.npz', 'r6893_switch_screen_cr.npz', 'r6897_fields.npz', 'r6897_noop.npz', 'r6897_wb_response_lcdm.npz']
+     aor     : ['cc66_r185_verify_cr_leafrec1.npz', 'r6893_switch_screen_cr_leafrec1.npz']
+     sentence: "And one direction built from the control alone---raise the oscillation at fixed envelope, with nothing fitted---carries over half of $\lVert\Delta\rVert^{2}$\rcpt{P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck}. \emph{T"
+
+[18] BOTH  P15_the_free_streaming_knob_is_common_to_both_arms_and_the_switch_swee
+     namesake: ['cc66_r185_verify_lcdm.npz', 'r6889_nufs0_lcdm.npz', 'r6893_fine_grid_cr.npz', 'r6893_fine_grid_lcdm.npz', 'r6893_full_reach_nulls_lcdm.npz', 'r6893_slice_check.npz']
+     aor     : ['cc66_r185_verify_cr_leafrec1.npz', 'r6889_nufs0_cr_leafrec1.npz']
+     sentence: "\emph{The two sides of that agreement are computed independently}: the reported scale reaches the transfer nowhere---no source term, no projection and no solver reads it---so the comb it is compared against is not a quantity it was used to set\rcpt{P15_at_its_"
+
+[19] BOTH  P15_the_acoustic_contrast_is_not_in_the_source_and_the_projection_make
+     namesake: ['cc66_r185_verify_cr.npz', 'cc66_r185_verify_lcdm.npz', 'r6893_switch_screen_cr.npz', 'r6893_switch_screen_lcdm.npz', 'r6911_noop.npz', 'r6911_source_cr.npz']
+     aor     : ['cc66_r185_verify_cr_leafrec1.npz', 'r6911_source_cr_kcont_leafrec1.npz', 'r6911_source_cr_leafrec1.npz']
+     sentence: "\emph{Nor is it the distance}: the two arms' comoving distances to last scattering differ by $0.449$ per cent with this arm's the larger, their acoustic angles agreeing to $0.085$ per cent, and projecting either arm's own source through the other's distance mo"
+
+[20] BOTH  P15_the_cross_term_is_not_the_channel_and_every_projected_term_carries
+     namesake: ['r6893_switch_screen_cr.npz', 'r6893_switch_screen_lcdm.npz', 'r6911_source_cr.npz', 'r6911_source_lcdm.npz', 'r6915_noop.npz', 'r6915_pairs_cr.npz']
+     aor     : ['r6911_source_cr_leafrec1.npz', 'r6915_pairs_cr_leafrec1.npz']
+     sentence: "\emph{The intercept of that rise covers one across the same twelve settings}, $1.017$ with a spread of $0.010$, so what is established is the growth with wavenumber and not a constant offset: \emph{whatever the projection does differently here, it does nothing"
+
+[21] NAMESAKE  P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clock
+     namesake: ['r6893_switch_screen_cr.npz', 'r6893_switch_screen_lcdm.npz', 'r6911_source_cr.npz', 'r6911_source_lcdm.npz', 'r6919_geometry.npz', 'r6919_injected_cr.npz']
+     sentence: "\emph{The sound speed the kernel sees is therefore $0.455$ on the control and $0.397$ here}, and a difference in that ratio is term-independent by construction, grows with wavenumber, and vanishes for a window narrower than one acoustic period---which is the s"
+
+[22] BOTH  P15_the_combs_resolution_is_four_multipoles_and_the_skys_own_value_lie
+     namesake: ['cc66_cr_x_lstep1.npz', 'cc66_r185_verify_lcdm.npz', 'r6919_injected_lcdm.npz', 'r6925_noop.npz', 'r6929_geometry.npz', 'r6929_noop.npz']
+     aor     : ['cc66_r185_verify_cr_leafrec1.npz', 'r6919_injected_lcdm_leafrec1.npz', 'r6925_visleaf_cr_leafrec1.npz', 'r6929_geometry_leafrec1.npz']
+     sentence: "\emph{And the motion the alternative produces is separable into its causes}, the projection of an analytic oscillating source with no plasma dynamics in it isolating them: about a third is the visibility peak relocating, so that the sound horizon at last scatt"
+
+[23] BOTH  P15_the_locator_is_good_to_three_hundredths_and_the_fourth_peaks_resid
+     namesake: ['cc66_r185_verify_lcdm.npz', 'r6929_geometry.npz', 'r6929_scan_cr.npz', 'r6941_fine_cr_visleaf.npz', 'r6941_fine_lcdm.npz']
+     aor     : ['cc66_r185_verify_cr_leafrec1.npz', 'r6929_geometry_leafrec1.npz', 'r6929_scan_cr_leafrec1.npz', 'r6941_fine_cr_leafrec1.npz']
+     sentence: "\emph{The fourth peak's excess reproduces there too}, so it is a property of the spectrum rather than of either implementation---and on that path, where the sub-bin location is available on both arms, it is a property the control carries with it\rcpt{P15_the_c"
+
+[24] BOTH  P15_the_contrast_excess_is_symmetric_about_the_envelope_and_the_trough
+     namesake: ['r6929_geometry.npz', 'r6941_fine_cr.npz', 'r6941_fine_lcdm.npz']
+     aor     : ['r6929_geometry_leafrec1.npz', 'r6929_scan_cr_leafrec1.npz', 'r6941_fine_cr_leafrec1.npz', 'r6941_fine_cr_visleaf_leafrec1.npz']
+     sentence: "\emph{And the depths are the one statistic in this comparison whose residual is not shared}: the control lands on the measured trough depths at five hundredths of a standard deviation while this arm sits $2.1$ above them\rcpt{P15_the_contrast_excess_is_symmetr"
+
+[25] BOTH  P15_the_two_readings_are_different_quantities_and_the_projection_width
+     namesake: ['r6897_fields.npz', 'r6941_fine_lcdm.npz', 'r6959_eta_lcdm.npz']
+     aor     : ['r6941_fine_cr_leafrec1.npz', 'r6959_eta_cr_leafrec1.npz']
+     sentence: "A ratio of band-integrated powers mixes the two and reads the opposite sign on the same spectra---\emph{so the two readings are different quantities and not a disagreement about one}, and the one this comparison needs is the amplitude ratio\rcpt{P15_the_two_re"
+
+[26] NAMESAKE  P15_the_term_mix_does_not_carry_the_modulation_and_it_survives_in_the_
+     namesake: ['r6941_fine_cr.npz', 'r6941_fine_lcdm.npz', 'r6959_eta_cr.npz', 'r6959_nswap_lcdm.npz', 'r6975_mix_lcdm.npz', 'r6983_joint_lcdm.npz']
+     sentence: "\emph{A null built instead from the same data at neighbouring frequencies cannot be used for the question at all}, its amplitudes carrying the feature they are meant to score: over this range such an ensemble spans only about three independent draws, and its l"
+
+[27] CONTROL-ONLY  P15_the_resolution_table_eight_of_the_eleven_instruments_cannot_repres
+     namesake: ['r6941_fine_lcdm.npz', 'r6959_nswap_lcdm.npz', 'r6975_mix_lcdm.npz', 'r6983_joint_lcdm.npz']
+     aor     : ['r6941_fine_cr_leafrec1.npz', 'r6959_eta_cr_leafrec1.npz']
+     sentence: "\emph{A null built instead from the same data at neighbouring frequencies cannot be used for the question at all}, its amplitudes carrying the feature they are meant to score: over this range such an ensemble spans only about three independent draws, and its l"
+
+[28] NAMESAKE  P15_all_three_projections_clear_the_instrument_noise_null_so_the_term_
+     namesake: ['r6941_fine_cr.npz', 'r6941_fine_lcdm.npz', 'r6959_eta_cr.npz', 'r6975_mix_lcdm.npz']
+     sentence: "\emph{A null built instead from the same data at neighbouring frequencies cannot be used for the question at all}, its amplitudes carrying the feature they are meant to score: over this range such an ensemble spans only about three independent draws, and its l"
+
+[29] CONTROL-ONLY  P15_the_three_instruments_with_no_noise_model_one_can_be_given_a_floor
+     namesake: ['cc66_r185_verify_lcdm.npz', 'r6915_pairs_lcdm.npz']
+     aor     : ['cc66_r185_verify_cr_leafrec1.npz', 'r6959_eta_cr_leafrec1.npz']
+     sentence: "\emph{Which is why the rejection this section closes on is read in the likelihood and not here}: the whole-range contrast is what this instrument supports, and the band-by-band structure is a property of the computed spectra that the sky's own noise would not "
+
+[30] NAMESAKE  P15_the_retention_is_the_combs_average_over_the_kernels_own_k_acceptan
+     namesake: ['r6919_injected_cr.npz', 'r6919_injected_lcdm.npz', 'r7041_accept_cr.npz', 'r7041_accept_lcdm.npz']
+     sentence: "\emph{Read physically the law says one thing}: a wider $\chi$-extent narrows the kernel's acceptance in wavenumber, so less of an acoustic period is averaged over and more of the comb survives; this arm's visibility is the $14.6$ per cent wider in $\chi$ while"
+
+[31] CONTROL-ONLY  P15_the_phase_systematic_leaves_the_step_standing_and_carries_a_third_
+     namesake: ['r6915_pairs_lcdm.npz', 'r6941_fine_lcdm.npz']
+     aor     : ['r6911_source_cr_leafrec1.npz', 'r6911_source_lcdm_leafrec1.npz', 'r6915_pairs_cr_leafrec1.npz', 'r6941_fine_cr_leafrec1.npz']
+     sentence: "\emph{And the statistic's phase systematic is what limits both}, carrying three to three and a half independent modes across the seven bands where its noise response carries nearly seven---\emph{the slope's own effective count being between five and nine}, so "
+
+[32] NAMESAKE  P15_the_acceptance_does_not_move_under_refinement_and_three_of_the_twe
+     namesake: ['r7041_accept_Al.npz', 'r7041_accept_digest.npz', 'r7041_accept_nk_slices.npz', 'r7041_accept_sample.npz']
+     sentence: "\emph{Read physically the law says one thing}: a wider $\chi$-extent narrows the kernel's acceptance in wavenumber, so less of an acoustic period is averaged over and more of the comb survives; this arm's visibility is the $14.6$ per cent wider in $\chi$ while"
+
+[33] CONTROL-ONLY  P15_the_fit_has_the_controls_freedom_and_the_contrast_the_data_ask_for
+     namesake: ['lcdm_base.npz']
+     sentence: "\emph{And the leftover is not noise}: in $\ell$ order this arm's residual changes sign $54$ times against $88\pm10$ for correlated draws of the likelihood's own covariance with the same five directions projected out, while the control's $87$ sits inside one st"
+
+[34] NAMESAKE  P15_the_licensed_configuration_moves_neither_statistic_and_the_swing_w
+     namesake: ['cr_before.npz', 'cr_oneclock.npz', 'lcdm_base.npz']
+     sentence: "\emph{The control's own coefficient is identical across all three grids}, which is what says the move belongs to this arm and not to the method\rcpt{P15_the_licensed_configuration_moves_neither_statistic_and_the_swing_was_read_above_where_it_converges}. \emph{"
+
+[35] CONTROL-ONLY  P15_the_licensed_rebuild_leaves_all_three_rigidity_numbers_where_they_
+     namesake: ['lcdm_base.npz']
+     sentence: "\emph{Built instead with the projection's distance on the leaf rate it closes the whole of it}: $\chi^{2}=186.135$, level with the control's own value; sign changes landing on the control's own $87$; a longest run of $8$, which is the control's exactly\rcpt{P1"
+
+[36] CONTROL-ONLY  P15_the_controls_base_log_is_banked_beside_the_grids_and_the_peak_heig
+     namesake: ['lcdm_base.npz']
+     sentence: "\emph{Built instead with the projection's distance on the leaf rate it closes the whole of it}: $\chi^{2}=186.135$, level with the control's own value; sign changes landing on the control's own $87$; a longest run of $8$, which is the control's exactly\rcpt{P1"
+
+[37] NAMESAKE  P15_the_lowell_sweep_is_reproduced_by_a_producer_in_the_repository_and
+     namesake: ['cc66_lowell_sweep.npz']
+     sentence: "\emph{The two independent Boltzmann treatments cross-validate the depth as well as the shape} once each carries the late integrated Sachs--Wolfe term to the present: on the exact transfer the deficit is $0.487$, $0.435$, $0.359$, $0.666$ of the flat expectatio"
+
+[38] CONTROL-ONLY  P15_the_1p57_has_no_parameter_address_because_the_arms_tt_minimum_sits
+     namesake: ['verify_lcdm.npz']
+     aor     : ['cc66_r185_verify_cr_leafrec1.npz']
+     sentence: "\emph{And the spectrum's own parameters are refitted, which is the comparison the standard model is usually judged by.} With the expansion rate, the matter and baryon densities and the tilt free in each arm and the amplitude in closed form, scored on the full "
+
+[39] BOTH  P15_the_no_fit_confrontation_is_three_per_bin_and_its_residual_carries
+     namesake: ['cc66_r185_verify_lcdm.npz', 'lcdm_base.npz', 'nofit_figure_numbers.npz']
+     aor     : ['cc66_r185_verify_cr_leafrec1.npz']
+     sentence: "\emph{And the spectrum's own parameters are refitted, which is the comparison the standard model is usually judged by.} With the expansion rate, the matter and baryon densities and the tilt free in each arm and the amplitude in closed form, scored on the full "
+
+[40] NAMESAKE  P15_the_residual_does_not_sit_at_ell_A_it_sits_four_per_cent_off_and_t
+     namesake: ['nofit_figure_numbers.npz']
+     sentence: "The same candidate fails a second way: a wider visibility is Silk damping, which acts strongly at high multipole and barely at low, so it predicts an arm-to-control ratio that climbs with $\ell$---and the measured ratio falls instead, from $3.3$ on $100$--$700"
+
+[41] BOTH  P15_the_visibility_width_is_not_the_carrier_the_swap_moves_the_fold_at
+     namesake: ['r6919_geometry.npz', 'r6919_injected_cr.npz', 'r6919_injected_lcdm.npz']
+     aor     : ['r6919_geometry_leafrec1.npz']
+     sentence: "The same candidate fails a second way: a wider visibility is Silk damping, which acts strongly at high multipole and barely at low, so it predicts an arm-to-control ratio that climbs with $\ell$---and the measured ratio falls instead, from $3.3$ on $100$--$700"
+
+[42] NAMESAKE  P15_the_period_difference_null_is_not_significant_because_the_control_
+     namesake: ['nofit_figure_numbers.npz']
+     sentence: "\emph{What could carry a running phase at correct spacing is therefore the driving and the baryon loading, and that is named rather than measured}\rcpt{P15_the_residual_does_not_sit_at_ell_A_it_sits_four_per_cent_off_and_the_visibility_width_candidate_predicts"
+
+[43] NAMESAKE  P15_the_phase_slope_does_not_separate_the_loading_from_the_driving_bec
+     namesake: ['c54.193_cr_nodrive_L3000.npz', 'c54.193_lcdm_nodrive_L3000.npz', 'nofit_figure_numbers.npz']
+     sentence: "\emph{What could carry a running phase at correct spacing is therefore the driving and the baryon loading, and that is named rather than measured}\rcpt{P15_the_residual_does_not_sit_at_ell_A_it_sits_four_per_cent_off_and_the_visibility_width_candidate_predicts"
+
+[44] CONTROL-ONLY  P15_the_de_tilted_peak_set_is_the_phase_observable_the_slope_was_not_a
+     namesake: ['c54.186_lcdm_L3000.npz', 'c54.193_lcdm_nodrive_L3000.npz']
+     aor     : ['c54.186_cr_L3000_leafrec1.npz', 'c54.193_cr_nodrive_L3000_leafrec1.npz']
+     sentence: "\emph{What could carry a running phase at correct spacing is therefore the driving and the baryon loading, and that is named rather than measured}\rcpt{P15_the_residual_does_not_sit_at_ell_A_it_sits_four_per_cent_off_and_the_visibility_width_candidate_predicts"
+
+[45] CONTROL-ONLY  P15_the_arms_own_driving_pair_reproduces_the_banked_one_and_the_peak_p
+     namesake: ['lcdm_base.npz', 'lcdm_nodrive.npz']
+     sentence: "\emph{The loading is separated from a reparametrization of the clock as well, by a factor of six; the driving is not}, sitting within a sixth of the largest clock reading and inside the spread of the three. \emph{So the component pair settles which of the two "
+
+[46] NAMESAKE  P15_the_peak_statistic_cannot_be_pointed_at_the_observed_spectrum_beca
+     namesake: ['lcdm_base.npz', 'nofit_figure_numbers.npz']
+     sentence: "\emph{The loading is separated from a reparametrization of the clock as well, by a factor of six; the driving is not}, sitting within a sixth of the largest clock reading and inside the spread of the three. \emph{So the component pair settles which of the two "
+
+[47] CONTROL-ONLY  P15_the_three_parameter_comb_fails_its_validation_because_the_peak_spa
+     namesake: ['lcdm_base.npz', 'lcdm_nodrive.npz']
+     sentence: "\emph{So the two halves of this comparison want opposite binnings}---the comb wants points the correlation above shows it cannot use, and the locator wants the bank merged, which costs exactly those points---\emph{and it is the located peak positions, on a mer"
+
+[48] CONTROL-ONLY  P15_the_carrier_separation_on_L_p_is_the_combs_peak_count_not_the_carr
+     namesake: ['lcdm_base.npz', 'lcdm_nodrive.npz']
+     sentence: "\emph{So the two halves of this comparison want opposite binnings}---the comb wants points the correlation above shows it cannot use, and the locator wants the bank merged, which costs exactly those points---\emph{and it is the located peak positions, on a mer"
+
+[49] CONTROL-ONLY  P15_the_peak_plane_survives_the_merge_the_sky_lands_within_one_sigma_o
+     namesake: ['c54.186_lcdm_L3000.npz', 'c54.193_lcdm_nodrive_L3000.npz', 'lcdm_base.npz', 'lcdm_nodrive.npz']
+     sentence: "A slope fitted to a residual with one amplitude free is therefore reading smooth spectral gradient alongside any phase, and the drift's \emph{size} is an identity while its \emph{name} is not something that statistic can supply\rcpt{P15_the_phase_slope_does_no"
+
+[50] CONTROL-ONLY  P15_the_spacing_drift_is_made_in_the_projection_so_the_construction_de
+     namesake: ['lcdm_base.npz']
+     aor     : ['c54.186_cr_KCONT_leafrec1.npz', 'c54.186_cr_L3000_leafrec1.npz', 'r6911_source_cr_kcont_leafrec1.npz']
+     sentence: "\emph{So the drift is a parameter-free prediction of the spectrum and no test at all of the rate split}: this arm returns $+4.38$ against the control's $+4.42$, with every peak position agreeing to better than $0.4$ in $\ell$, because the three lengths that ca"
+
+[51] CONTROL-ONLY  P15_the_selection_does_not_truncate_so_the_thirteen_sigma_stands_at_tw
+     namesake: ['lcdm_base.npz']
+     sentence: "\emph{Nor does that reading turn on where the threshold for it was set}: taken at the unfavourable end of that ratio's bootstrap interval, $0.953$, instead of at its centre, one full unit of the driving is $12.5$ standard deviations and the observed point sits"
+
+TOTAL 51
