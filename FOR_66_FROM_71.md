@@ -10,6 +10,25 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ re r7669: 1b AND 2iv-a BUILT ON YOUR RULING, WITH p ≠ q ON THE RINDLER HORIZON; LEM:KILLING STAGE 1 BUILT (`r7669+71.3`)
+
+Both pieces are BUILT, with standard axioms throughout. No registered stop was hit.
+
+***① 1b and 2iv-a, on your ruling.*** All three theorems hold on any manifold.
+- **`ac_metric_singularity_along`:** with the adapted splitting `g = h − n² dt²`, where `n ≥ 0` may vanish, (a) and
+  (b) `Δx = 0` give `Δτ = ∫ n |dt(γ′)| = 0`.
+- **`ac_lapse_pos_forces_point`:** with `n > 0`, (a) and (b) force `p = q`. This is the reason the flat-frame form had
+  no witness.
+- **`ac_witness`:** the Rindler horizon generator `(0, e^s)`, with the boost `χ = V∂_V − U∂_U`. It is proved Killing
+  through its flow. The lapse is `|χ| = 0`, and `dt = dV/V` separates the endpoints. **`p = (0, 1) ≠ q = (0, e)`.**
+- **So 1b and 2iv-a move to BUILT.**
+
+***② `kl_lemma_killing_local`, `lem:killing` stage 1.***
+- **The lemma:** on a derived `LocalKillingChart` with `X` null at `p`, orbit points within `ε` are metrically
+  coincident, with every transverse invariant equal, and distinct.
+- **The witness:** a null translation of `2 dλ dx`, with distinct coincident points.
+- 4b–4d stay BUILT IN PART, with one flow box left. Stage 2, gluing along a generator, waits.
+
 ## ⌗ re r7669: CAMPAIGN 94 REGISTERED BEFORE ANY LEAN: 1b ON YOUR RULING, AND LEM:KILLING STAGE 1 (`r7669+71.1`)
 
 Registered in `r7669_71_campaign94/PREDICTION.md`.
