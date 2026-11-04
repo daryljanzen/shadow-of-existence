@@ -1,43 +1,34 @@
-import re, sys
-TEX=open('corpus/CR_cosmology.tex',encoding='utf-8',errors='replace').read()
+#!/usr/bin/env python3
+"""`r7669` (cc66) -- print the sentence(s) of `corpus/CR_cosmology.tex` that cite a receipt.
 
-def sentence_at(pos):
-    """the LaTeX sentence containing TEX[pos], bounded by a period that is not inside
-    braces or math, and extended forward past any trailing \\rcpt{...}\\ldg{...} run."""
-    def depth_at(i):
-        d=0; m=False
-        for ch in TEX[:i]:
-            if ch=='{': d+=1
-            elif ch=='}': d-=1
-            elif ch=='$': m=not m
-        return d,m
-    # backward: nearest '. ' or '.\n' at brace depth 0 and outside math
-    i=pos
-    while i>0:
-        i=max(TEX.rfind('. ',0,i), TEX.rfind('.\n',0,i))
-        if i<=0: return 0,None
-        d,m=depth_at(i)
-        if d==0 and not m: start=i+2; break
-        # keep looking further back
-    else:
-        start=0
-    # forward: first '. ' / '.\n' at depth 0 outside math, AFTER the citation run ends
-    j=pos
-    while True:
-        k=min([x for x in (TEX.find('. ',j), TEX.find('.\n',j)) if x!=-1] or [len(TEX)])
-        if k>=len(TEX): return start,len(TEX)
-        d,m=depth_at(k)
-        if d==0 and not m: return start,k+1
-        j=k+2
+A reading aid for the RE-GROUND wordings, used to quote a sentence rather than to count one.
 
-base=sys.argv[1]
-pat='\\rcpt{'+base+'}'
-WS=re.compile(r'\s+')
-for m in re.finditer(re.escape(pat), TEX):
-    ln=TEX[:m.start()].count('\n')+1
-    a,b=sentence_at(m.start())
-    s=WS.sub(' ',TEX[a:b]).strip()
-    ok = pat in TEX[a:b]
-    print("line %d  contains-its-own-citation=%s" % (ln, ok))
-    print("   "+s[:520])
-    print()
+⛔ ** r7671+cc66.4: THIS FILE USED TO CARRY ITS OWN COPY OF THE SENTENCE TEST, and it was the THIRD
+copy. **  The three copies -- `r7667/census.py`, `r7669/classify.py` and this one -- drifted, and the
+drift cost a merged headline: PO-87's list was reported at 48 items on a span bounded by the nearest
+`. `, which in LaTeX runs into neighbouring sentences.  It is 30.
+⇒ ** One definition, imported: ** `r7667/sentence.py`, cut 6, which bounds a sentence at the depth of
+its own citation inside the brace group that encloses it.  *A copy that cannot drift is the only fix
+that holds.*
+"""
+import os
+import re
+import sys
+
+ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
+sys.path.insert(0, os.path.join(ROOT, 'computations', 'beyond_the_wall',
+                                'r7667_cc66_po87_the_unfiltered_list'))
+from sentence import sentences_citing            # noqa: E402
+
+TEX = open(os.path.join(ROOT, 'corpus', 'CR_cosmology.tex'),
+           encoding='utf-8', errors='replace').read()
+base = sys.argv[1]
+pat = '\\rcpt{' + base + '}'
+lines = [TEX[:m.start()].count('\n') + 1 for m in re.finditer(re.escape(pat), TEX)]
+sents = sentences_citing(TEX, base)
+print(f'  {base}')
+print(f'  cited at line(s): {lines};  sentences recovered: {len(sents)}')
+for ln, s in zip(lines, sents):
+    #: the span must CONTAIN its own citation -- the property the crude test did not guarantee
+    print(f'\n  line {ln}  contains-its-own-citation={pat in s}  chars={len(s)}')
+    print('   ' + s)

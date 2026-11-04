@@ -35,14 +35,22 @@
     OK    Ⓑ③ ⛭⛭⛭ ARM ① SCORED: of the 41 receipts `r7667` could not decide, 2 LEAVE the list (1 because every resolved load is arm-of-record, 1 because they audit the whole tree), 7 are decided by their sentence and 32 stay   (1+1 leave, 7 sentence, 32 stay, 1 still undecidable)
     OK    Ⓑ④ ⛔ AND WHAT IS STILL UNDECIDABLE IS NAMED RATHER THAN ASSUMED EITHER WAY: 1 receipt(s) resolve to neither arm even through their constants   (1 still undecidable)
 
-      OF THOSE, the figure-printing subset -- PO-87's own list -- is 24:
+      OF THOSE, the figure-printing subset -- PO-87's own list -- is 17:
         ARM OF RECORD only -> LEAVES               : 1
         BOTH arms          -> sentence decides     : 5
-        NAMESAKE only      -> STAYS                : 17
-        tree-auditing glob -> LEAVES, other grounds: 1
-        STILL undecidable                          : 1
-    OK    Ⓑ⑤ ⛔⛭⛭ ARM ① IS FALSIFIED, AND NOT NARROWLY. I registered that between 8 and 14 of the undecidable figure-printing items would LEAVE the list once read. **2 leave.** 17 resolve to the namesake and STAY, 5 are decided by their sentence rather than their loads, and 1 are still undecidable from source   (2 leave against a registered 8-14 -> FALSIFIED)
-    OK    Ⓑ⑤ᵃ ⛔ ARM ② IS WRONG IN THE OPPOSITE DIRECTION, and the cause is named: I registered a ONE-item gap against the census's 22; this file's figure-printing handover subset is 24, a gap of 2.  The difference is the CANDIDATE SET -- `census.py` excludes any receipt carrying an arm-of-record load site, so its undecidable bucket never holds the 5 both-arm items this file keeps   (24 here vs 22 in census.py; 5 both-arm items are the difference)
+        NAMESAKE only      -> STAYS                : 11
+        tree-auditing glob -> LEAVES, other grounds: 0
+        STILL undecidable                          : 0
+    OK    Ⓑ⑤ ⛔⛭⛭ ARM ① IS FALSIFIED, AND NOT NARROWLY. I registered that between 8 and 14 of the undecidable figure-printing items would LEAVE the list once read. **1 leave.** 11 resolve to the namesake and STAY, 5 are decided by their sentence rather than their loads, and 0 are still undecidable from source   (1 leave against a registered 8-14 -> FALSIFIED)
+
+      SET COMPARISON against `r7667/census.py` (imported, not a remembered number):
+        its undecidable-only figure-printing items : 15
+        this file's handover figure-printing subset: 17
+        in the census and not here                 : 0
+        here and not in the census                 : 2
+          P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with
+          P15_the_control_entered_the_regime_and_the_arm_did_not_move.py
+    OK    Ⓑ⑤ᵃ ⛔⛭ ARM ② IS FALSIFIED AND THE GATE'S OWN PIN WAS STALE: I registered a ONE-item gap against the census; on the shared sentence test the census holds 15 undecidable-only figure-printing items and this file 17, differing by 0 the census has that this file lacks and 2 this file has that it lacks -- compared as SETS, with the census imported and its own gates confirmed green (True), rather than against the constant 22 the crude test produced   (census 15 vs here 17; symmetric difference 0+2)
     OK    Ⓑ⑥ ⛭ ARM ④ HITS: the two receipts whose own header guard asserts the loaded file IS the LEAFREC=0 namesake and that an arm-of-record counterpart exists beside it both resolve NAMESAKE here, so they are RE-GROUND with the wording already written   (both header-guard receipts resolve to the namesake side)
         NAMESAKE        B5_the_scan_cannot_test_the_asymptotic_phase.py
         NAMESAKE        B6_the_acoustics_reproduce_and_the_dichotomy_is_false.py

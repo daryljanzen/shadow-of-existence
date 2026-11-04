@@ -328,49 +328,11 @@ _NUM = re.compile(r'\d+\.\d+|\b\d{2,}\b')
 #:   ⇒ A period only ends a sentence at BRACE DEPTH ZERO and OUTSIDE math, and the span must then
 #:     extend past the trailing citation run so the sentence that owns the `\rcpt` is the one read.
 #:     The span is also required to CONTAIN its own citation, which the crude one did not guarantee.
-def _depth_at(txt, i):
-    d = 0
-    math = False
-    for ch in txt[:i]:
-        if ch == '{':
-            d += 1
-        elif ch == '}':
-            d -= 1
-        elif ch == '$':
-            math = not math
-    return d, math
-
-
-def sentences_citing(txt, base):
-    """every sentence of txt that carries \\rcpt{base}, bounded at brace depth 0 outside math."""
-    pat = '\\rcpt{' + base + '}'
-    out = []
-    for m in re.finditer(re.escape(pat), txt):
-        i, start = m.start(), 0
-        while i > 0:
-            cands = [x for x in (txt.rfind('. ', 0, i), txt.rfind('.\n', 0, i)) if x != -1]
-            if not cands:
-                break
-            i = max(cands)
-            d, mm = _depth_at(txt, i)
-            if d == 0 and not mm:
-                start = i + 2
-                break
-        j, end = m.start(), len(txt)
-        while True:
-            cands = [x for x in (txt.find('. ', j), txt.find('.\n', j)) if x != -1]
-            if not cands:
-                break
-            k = min(cands)
-            d, mm = _depth_at(txt, k)
-            if d == 0 and not mm:
-                end = k + 1
-                break
-            j = k + 2
-        if pat in txt[start:end]:
-            out.append(re.sub(r'\s+', ' ', txt[start:end]).strip())
-    return out
-
+#: ⛭⛭ r7671+cc66.4 -- THE SENTENCE TEST NOW LIVES IN ONE PLACE, `sentence.py` beside this file,
+#:   because three instruments carried their own copy of it and the copies drifted.  Cut 6 and its
+#:   reasoning are documented there.
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from sentence import sentences_citing            # noqa: E402
 
 body_cited, gen_only, prints_fig = {}, [], {}
 for pth, d in cand.items():
@@ -551,10 +513,22 @@ for i, pth in enumerate(sorted(prints_fig), 1):
     print(f'       spectra read (namesake/superseded): {d["namesake"]}')
     if d['aor']:
         print(f'       also reads arm-of-record: {d["aor"]}')
-    print(f'       re-derivable by repointing: {"YES -- " + str(has) if has and not lacks else "NO"}'
+    #: ⛔ r7671+cc66.4 -- this line said "YES" for an item the cheap/expensive split counts
+    #:   EXPENSIVE, because `cheap` also requires that no load site be undecidable and the printed
+    #:   line did not.  An undecidable site means the receipt MIGHT already read the arm of record,
+    #:   so the repointing is not known to be available.  Stated here as it is scored.
+    _blocked = bool(d['undecidable'])
+    if has and not lacks and not _blocked:
+        _verdict = 'YES -- ' + str(has)
+    elif has and not lacks:
+        _verdict = ('NO -- an arm-of-record sibling is banked for every namesake it loads '
+                    + str(has) + ', but ' + d['undecidable'][0] + ' leaves the repointing undecided')
+    else:
+        _verdict = 'NO'
+    print(f'       re-derivable by repointing: {_verdict}'
           + (f';  no banked sibling for {lacks}' if lacks else ''))
     for f, ss in sorted(body_cited[pth].items()):
-        for s in ss:
+        for s in dict.fromkeys(ss):          #: one citation per DISTINCT sentence
             print(f'       {f}: "{s[:400]}"')
 print()
 print(f'  TOTALS: {len(prints_fig)} figure-printing items; {len(cheap)} cheap, '

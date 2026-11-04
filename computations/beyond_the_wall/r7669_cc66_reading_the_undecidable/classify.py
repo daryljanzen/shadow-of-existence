@@ -24,6 +24,9 @@ Registered at PREDICTION.md in this directory, its own commit, before this file 
 """
 import ast
 import collections
+import contextlib
+import importlib.util
+import io
 import os
 import re
 import sys
@@ -364,15 +367,23 @@ for _f in ('corpus/CR_cosmology.tex', 'corpus/CR_framework.tex', 'corpus/CR_synt
 _NUM = re.compile(r'\d+\.\d+|\b\d{2,}\b')
 
 
+#: ⛔⛭⛭ r7671+cc66.4 -- THIS FUNCTION CARRIED THE CRUDE SENTENCE TEST, one instrument after the
+#:   census's copy of it was corrected.  It bounded a span at the nearest `. `, which in LaTeX lands
+#:   inside `\emph{...}`, inside `$...$` and inside a `\rcpt{...}` run, so the span ran into
+#:   NEIGHBOURING sentences and their figures were counted as the citing sentence's.  The census's
+#:   same error put PO-87's list at 48 items when it is 30.
+#:   ⇒ ** The fix is not a better copy, it is NOT A COPY: ** `sentences_citing` is imported from
+#:     `r7667/sentence.py`, the one definition all three instruments now share.  The subset counts
+#:     below are re-scored on it and the gate pins are corrected to the measured values.
+sys.path.insert(0, os.path.join(BW, 'r7667_cc66_po87_the_unfiltered_list'))
+from sentence import sentences_citing            # noqa: E402
+
+
 def prints_a_figure(pth):
     base = os.path.basename(pth)[:-3]
     for tx in _texts.values():
-        for m in re.finditer(re.escape('\\rcpt{' + base + '}'), tx):
-            a = tx.rfind('. ', 0, m.start())
-            a = 0 if a < 0 else a + 2
-            b = tx.find('. ', m.end())
-            b = len(tx) if b < 0 else b + 1
-            if _NUM.search(re.sub(r'\s+', ' ', tx[a:b])):
+        for s in sentences_citing(tx, base):
+            if _NUM.search(s):
                 return True
     return False
 
@@ -396,24 +407,52 @@ check(f'Ⓑ⑤ ⛔⛭⛭ ARM ① IS FALSIFIED, AND NOT NARROWLY. I registered th
       f'sentence rather than their loads, and {len(_f_none)} are still undecidable from source',
       _leave < 8 and len(_f_aor) + len(_f_mix) + len(_f_nm) + len(_f_none) == len(_fp_hand),
       f'{_leave} leave against a registered 8-14 -> FALSIFIED')
-#: ⛔⛭⛭ ARM ② IS WRONG TOO, AND IN THE OPPOSITE DIRECTION.  I registered that the 22-vs-21 gap
-#:   against `r7667`'s census was ONE item and a sentence-test boundary effect.  This file's
-#:   figure-printing handover subset is 24, so the gap is TWO and it runs the other way.
-#:   ** The cause is the CANDIDATE SET, not the sentence test. **  `census.py` builds its candidates
-#:   by EXCLUDING any receipt with an arm-of-record load site (`kinds['namesake'] or
-#:   (kinds['undecidable'] and not kinds['aor'])`), so a receipt that loads both arms never enters
-#:   its undecidable bucket at all.  This file's handover test is per-receipt over every
-#:   spectrum-loading receipt in scope, so it keeps those.  ⇒ The two instruments are asking
-#:   slightly different questions, and the four `BOTH`-arm items are exactly where they part.
-#:   ⌗ *Named rather than reconciled by moving one of them: the classification below is reported
-#:     PER ITEM, so the boundary does not change any receipt's verdict -- only the headline count.*
-check(f'Ⓑ⑤ᵃ ⛔ ARM ② IS WRONG IN THE OPPOSITE DIRECTION, and the cause is named: I registered a '
-      f'ONE-item gap against the census\'s 22; this file\'s figure-printing handover subset is '
-      f'{len(_fp_hand)}, a gap of {abs(len(_fp_hand) - 22)}.  The difference is the CANDIDATE SET '
-      f'-- `census.py` excludes any receipt carrying an arm-of-record load site, so its '
-      f'undecidable bucket never holds the {len(_f_mix)} both-arm items this file keeps',
-      len(_fp_hand) == 24 and abs(len(_fp_hand) - 22) == 2 and len(_f_mix) == 5,
-      f'{len(_fp_hand)} here vs 22 in census.py; {len(_f_mix)} both-arm items are the difference')
+#: ⛔⛭⛭ ARM ② IS WRONG TOO, AND IN THE OPPOSITE DIRECTION -- and `r7671+cc66.4` found the gate
+#:   itself was keyed on a STALE LITERAL.  I registered that the gap against `r7667`'s census was
+#:   ONE item.  The gate then compared this file's subset against the constant `22`, which was the
+#:   census's count on the CRUDE sentence test; the census now says 15 and the constant said nothing
+#:   about it.  ** A gate that pins one instrument against another instrument's old number measures
+#:   neither. **
+#:   ⇒ So the census is IMPORTED and the two populations are compared as SETS, both directions
+#:     named, which is the discipline the merge rule uses on an append-only file for the same
+#:     reason: a difference of counts hides which members differ.
+_cen_ok, _cen_set = None, set()
+try:
+    _spec = importlib.util.spec_from_file_location(
+        'census_r7667', os.path.join(BW, 'r7667_cc66_po87_the_unfiltered_list', 'census.py'))
+    _cen = importlib.util.module_from_spec(_spec)
+    with contextlib.redirect_stdout(io.StringIO()):
+        try:
+            _spec.loader.exec_module(_cen)
+            _cen_ok = True
+        except SystemExit:
+            _cen_ok = False          #: the census's own gates failed; recorded, never ignored
+    _cen_set = {q for q in _cen.prints_fig if not _cen.cand[q]['sites'].get('namesake')}
+except Exception as _e:              # noqa: BLE001
+    _cen_ok = None
+    print(f'      ⛔ the census could not be imported for the set comparison: {_e!r}')
+_mine = {i[1] for i in _fp_hand}
+_only_cen = sorted(_cen_set - _mine)
+_only_mine = sorted(_mine - _cen_set)
+print(f'\n      SET COMPARISON against `r7667/census.py` (imported, not a remembered number):')
+print(f'        its undecidable-only figure-printing items : {len(_cen_set)}')
+print(f'        this file\'s handover figure-printing subset: {len(_mine)}')
+print(f'        in the census and not here                 : {len(_only_cen)}')
+for _q in _only_cen:
+    print(f'          {os.path.basename(_q)[:76]}')
+print(f'        here and not in the census                 : {len(_only_mine)}')
+for _q in _only_mine:
+    print(f'          {os.path.basename(_q)[:76]}')
+check(f'Ⓑ⑤ᵃ ⛔⛭ ARM ② IS FALSIFIED AND THE GATE\'S OWN PIN WAS STALE: I registered a ONE-item gap '
+      f'against the census; on the shared sentence test the census holds {len(_cen_set)} '
+      f'undecidable-only figure-printing items and this file {len(_mine)}, differing by '
+      f'{len(_only_cen)} the census has that this file lacks and {len(_only_mine)} this file has '
+      f'that it lacks -- compared as SETS, with the census imported and its own gates confirmed '
+      f'green ({_cen_ok}), rather than against the constant 22 the crude test produced',
+      _cen_ok is True and (len(_only_cen) + len(_only_mine)) > 0
+      and len(_only_cen) + len(_only_mine) == len(_cen_set ^ _mine),
+      f'census {len(_cen_set)} vs here {len(_mine)}; symmetric difference '
+      f'{len(_only_cen)}+{len(_only_mine)}')
 check(f'Ⓑ⑥ ⛭ ARM ④ HITS: the two receipts whose own header guard asserts the loaded file IS the '
       f'LEAFREC=0 namesake and that an arm-of-record counterpart exists beside it both resolve '
       f'NAMESAKE here, so they are RE-GROUND with the wording already written',

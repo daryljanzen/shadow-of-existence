@@ -6304,3 +6304,90 @@ Measured on `32928bfda` plus `r7665`'s two files, with `scripts/mutate_assertion
 ⌗ **I have NOT determined the selection rule** and deliberately do not propose one: indirection is ruled out (all four misses are direct calls), the text variable is identical to the three hits, escaped braces are ruled out (`_M883` has none), and position is ruled out (hits and misses are all `_Mnnn = re.search(r"…"` at the head of a statement). `_M882` has been unminted since `r7655`, so this predates `r7665`.
 
 **This extends `r7657+cc66.5`, which named only the one-level indirection through `ppaper()`/`paper()`.** The local substitute is in place and is strictly larger than the instrument's coverage — `Ⓜ①` over 12 reads and `Ⓝ①` over 7, each with a declared `WITHDRAWN` list and the counts pinned, each shown to redden on a one-word perturbation where the consuming gate stays green. **The instrument fix is yours to rule on; nothing in the tree is red and nothing is waiting on it.**
+
+### ⛭⛭⛭ `r7671` route (cc66) — **THE RE-GROUND BATCH, COMPLETE: FIVE SENTENCES, ONE PASS. AND THE SPLIT'S REAL SHAPE IS 4 / 13 / 13 — THIRTEEN OF THE THIRTY ARE THE CONTROL SIDE OF TWO-ARM READS AND ARE 70's TO CLEAR, NOT YOURS TO RE-GROUND**
+
+**Receipt:** `computations/beyond_the_wall/r7671_cc66_the_split/split.py` — 12 checks, 0 failures.
+**Registered:** `PREDICTION.md` in that directory, its own commit (`r7671+cc66.3`), pushed before a line of `split.py` existed.
+**Generated list:** `computations/beyond_the_wall/r7671_cc66_the_split/SPLIT.md` — all thirty items with verdict, anchor, reason and spectra.
+
+#### ⛔ FIRST, THE NUMBER YOUR NEXT PASS IS SIZED BY, AND IT IS NOT YOUR 15 / 4 / 4
+
+Your order sizes the split at *"the 15 namesake-reading items, the 4 decided by their sentence, and the 4 that need a human read"*. **Those numbers came off `ITEM2_TRIAGE.md`, which I built on the crude sentence test — the same error that put PO-87's list at 48 when it is 30.** `r7671+cc66.2` corrected the census; this corrects the triage. **The split is owed on the thirty, and it reads 4 RE-GROUND / 13 REBUILD / 13 HELD.**
+
+⛭⛭ **And the reason thirteen are HELD is your own `r7669` finding turned round.** `r7635`/`r7643` moved each receipt's CR legs to the arm of record and **could not** move the control legs, because no arm-of-record grid carries one — four families, four times zero. ⇒ **So most of what is left on PO-87's list is the control side of two-arm reads.** `_grid_for(tag)`, `BANK = {'cr': …_leafrec1, 'lcdm': …}`, `_SRC`/`_VER`/`_FINE`/`SPEC` — nine receipts separate the arms by file or directory and the namesake read that remains is the control's. **70's one measurement of whether `LEAFREC` reaches the control clears or keeps all thirteen together**, and per your own item 3 I count none of them REBUILD until it reports.
+
+#### ⇒ THE BATCH: FIVE SENTENCES, EACH WITH ITS LINE, ITS CURRENT WORDING AND MY PROPOSED WORDING
+
+**No figure changes in any of the five.** Each proposal moves a citation onto the clause it actually supports, or names the arm a figure was read on. *I have not touched `corpus/CR_cosmology.tex` — these are proposals and you land them.*
+
+⌗ **And they are written in the body's own register rather than the receipts'.** `CR_cosmology.tex` contains **zero** occurrences of `\textsc` and **zero** of `LEAFREC`; it says *"the leaf rate"* 28 times, *"leaf-rate"* three, and *"the arm of record"*. So the wordings below say **"the configuration the leaf rate superseded"** and not `\textsc{leafrec}$=0$`, which is what my first draft of them said. *Measured before writing them, because a proposal in the wrong register is a proposal you have to rewrite.*
+
+---
+
+**① `l.955` — `P15_where_the_likelihood_sits`.** RE-GROUND, and it is the one you named: its header guard already states the namesake.
+
+*Current:*
+> `…the control returns $\chi^{2}=214.1$, or $1.16$ per bin, and this arm $502.1$, or $2.71$ per bin: \emph{the arm sits at $2.35$ times the control's distance from the data}\rcpt{P15_the_full_range_lensed_comparison_is_the_unfavourable_one_and_the_control_is_nearly_camb}\rcpt{P15_the_133_bin_pair_is_computed_and_asserted_and_the_hardcoded_row_carried_the_other_arm}\rcpt{P15_where_the_likelihood_sits}.`
+
+*Proposed:*
+> `…the control returns $\chi^{2}=214.1$, or $1.16$ per bin, and this arm $502.1$, or $2.71$ per bin: \emph{the arm sits at $2.35$ times the control's distance from the data}\rcpt{P15_the_full_range_lensed_comparison_is_the_unfavourable_one_and_the_control_is_nearly_camb}\rcpt{P15_the_133_bin_pair_is_computed_and_asserted_and_the_hardcoded_row_carried_the_other_arm}---\emph{the likelihood's own seat being read on the configuration the leaf rate superseded, whose counterparts on the arm of record are banked beside it}\rcpt{P15_where_the_likelihood_sits}.`
+
+*Why, from the sentence:* the sentence's $214.1$/$502.1$ are the full-range lensed comparison's, the first citation's. `where_the_likelihood_sits` scores the `c54.178` and `c54.177` pairs and **pins the namesake deliberately** — its own header says *"the arm of record is LEAFREC=1 … they are NOT what this receipt pins"* and its guard asserts every CR file it reads carries no `manifest` key. ⇒ Giving it its own clause says which arm it was read on without disturbing the figures.
+
+---
+
+**② `l.931` — `P15_the_phase_is_the_driving_and_the_undriven_arms_agree`.** ⛔ **HELD, not RE-GROUND — and the wording is supplied anyway because you asked for it.**
+
+*Current:*
+> `…removing every coupling to the potential moves the control's first peak from $220$ to $274$ and $\ell_{1}/\ell_{A}$ by $0.1792$, so the modes carrying the first peak are driven and the shift is the driving's size\rcpt{P15_the_anomalous_driving_belonged_to_the_pin_and_not_to_the_construction}\rcpt{P15_the_phase_is_the_driving_and_the_undriven_arms_agree}.`
+
+*Proposed, if you want it landed regardless:*
+> `…so the modes carrying the first peak are driven and the shift is the driving's size\rcpt{P15_the_anomalous_driving_belonged_to_the_pin_and_not_to_the_construction}---\emph{both figures being the control's, read on the driving pair the leaf rate superseded}\rcpt{P15_the_phase_is_the_driving_and_the_undriven_arms_agree}.`
+
+*Why it is HELD:* **both figures this sentence prints are the CONTROL's** — its first peak moving $220$ to $274$ and its $\ell_{1}/\ell_{A}$ by $0.1792$. The arm's own figure, $0.1717$, is in the *next* sentence and is cited to a different receipt. ⇒ By your item-3 bar a control figure is not re-grounded or rebuilt until 70 reports. *If 70 finds the switch does not reach the control, this sentence needs nothing at all and the proposal above is wasted ink; I am giving it to you rather than deciding that for you.* This is the one place my reading differs from your order, and the difference is the bar, not the sentence.
+
+---
+
+**③ `l.1852` — `P15_the_acceptance_does_not_move_under_refinement_and_three_of_the_twelve_axes_could_not_have_moved_it`.** RE-GROUND: a three-citation run where only one of the three carries the arm figures.
+
+*Current:*
+> `\emph{Read physically the law says one thing}: a wider $\chi$-extent narrows the kernel's acceptance in wavenumber, so less of an acoustic period is averaged over and more of the comb survives; this arm's visibility is the $14.6$ per cent wider in $\chi$ while accumulating the same sound horizon to $0.08$ per cent, and that is why it retains \emph{more}\rcpt{P15_the_retention_is_the_combs_average_over_the_kernels_own_k_acceptance_and_the_law_has_no_fitted_coefficient}\rcpt{P15_the_acceptance_does_not_move_under_refinement_and_three_of_the_twelve_axes_could_not_have_moved_it}\rcpt{P15_the_laws_six_of_seven_is_five_at_the_quoted_floor_which_is_one_phases_and_with_the_instruments_own_error_divided_out_all_seven_hold}.`
+
+*Proposed:*
+> `\emph{Read physically the law says one thing}: a wider $\chi$-extent narrows the kernel's acceptance in wavenumber, so less of an acoustic period is averaged over and more of the comb survives---\emph{the acceptance itself measured rather than fitted, and unmoved by refinement}\rcpt{P15_the_acceptance_does_not_move_under_refinement_and_three_of_the_twelve_axes_could_not_have_moved_it}\rcpt{P15_the_laws_six_of_seven_is_five_at_the_quoted_floor_which_is_one_phases_and_with_the_instruments_own_error_divided_out_all_seven_hold}; this arm's visibility is the $14.6$ per cent wider in $\chi$ while accumulating the same sound horizon to $0.08$ per cent, and that is why it retains \emph{more}\rcpt{P15_the_retention_is_the_combs_average_over_the_kernels_own_k_acceptance_and_the_law_has_no_fitted_coefficient}.`
+
+*Why, from the sentence:* the two arm figures — $14.6$ per cent and $0.08$ per cent — are the **retention** receipt's, which is the first citation. What the acceptance receipt carries is the law's physical reading and its stability under refinement: a property of the kernel's acceptance integral, which the sentence states without reference to an arm. The four `r7041_accept_*` digests it reads carry no arm in their names and no `_leafrec1` counterpart was ever built for any of them. ⇒ Splitting the run puts each receipt on its own clause and takes this item off PO-87's list without a build.
+
+---
+
+**④ `l.2405` — `P15_the_kernels_phase_difference_between_the_arms_is_four_orders_below_the_residual_so_the_projection_is_cleared_and_a_fifth_of_the_scale_is_common_mode`.** RE-GROUND: the figure in print is an instrument artefact.
+
+*Current:*
+> `…at under two points per Bessel period it manufactures a difference between the arms $74$ times the true one, while the window route is immune because it averages the kernel analytically---the instrument's own documented aliasing failure arriving in the phase rather than in the peak positions\rcpt{P15_the_kernels_phase_difference_between_the_arms_is_four_orders_below_the_residual_so_the_projection_is_cleared_and_a_fifth_of_the_scale_is_common_mode}.`
+
+*Proposed:*
+> `…the instrument's own documented aliasing failure arriving in the phase rather than in the peak positions\emph{, which is a property of the route's sampling and not of either arm}\rcpt{P15_the_kernels_phase_difference_between_the_arms_is_four_orders_below_the_residual_so_the_projection_is_cleared_and_a_fifth_of_the_scale_is_common_mode}.`
+
+*Why, from the sentence:* the sentence already names the figure as *the instrument's own documented aliasing failure*. A sampling failure of the Bessel route against the window route is the same on either arm. ⇒ Eight words make the sentence say why no re-derivation moves it.
+
+---
+
+**⑤ `l.2595` — `P15_the_lowell_sweep_is_reproduced_by_a_producer_in_the_repository_and_the_bank_is_that_producers_output_rounded`.** RE-GROUND: its claim is provenance, not physics.
+
+*Current:*
+> `\emph{The two independent Boltzmann treatments cross-validate the depth as well as the shape} once each carries the late integrated Sachs--Wolfe term to the present: on the exact transfer the deficit is $0.487$, $0.435$, $0.359$, $0.666$ of the flat expectation at $\ell=2$ to $5$, and the hierarchy agrees to three per cent at every multipole and one per cent above $\ell=5$ (\S\ref{sec:scope})\rcpt{P15_the_low_multipole_depth_gap_closes_and_two_defects_were_cancelling}\rcpt{P15_the_lowell_sweep_is_reproduced_by_a_producer_in_the_repository_and_the_bank_is_that_producers_output_rounded}.`
+
+*Proposed:*
+> `…and the hierarchy agrees to three per cent at every multipole and one per cent above $\ell=5$ (\S\ref{sec:scope})\rcpt{P15_the_low_multipole_depth_gap_closes_and_two_defects_were_cancelling}---\emph{the banked sweep being that producer's own output rounded, so the cross-validation is between two implementations and not between two arms}\rcpt{P15_the_lowell_sweep_is_reproduced_by_a_producer_in_the_repository_and_the_bank_is_that_producers_output_rounded}.`
+
+*Why, from the sentence:* this receipt's claim is **provenance** — the bank is its producer's output rounded. An agreement between two independent Boltzmann treatments is a statement about the instruments, not about which arm either was run on. ⇒ The deficits themselves stay with the first citation, which is a REBUILD and goes to 70.
+
+---
+
+#### ⛭ AND TWO THINGS YOU SHOULD HAVE BEFORE YOU LAND THEM
+
+**① `16 of the 30` are cited in a sentence that cites other receipts too** (`Ⓒ③`). So *"its sentence"* is often not one receipt's, and **four of the five** proposals above are exactly that: splitting a citation run so each receipt sits on the clause it supports. The fifth adds a clause without splitting anything. *That is why each reason names which receipt supplies the figure rather than assuming this one does.*
+
+**② The wording regex is falsified a sixth time, and this time it was registered as such before it was scored.** `this arm` / `crossing arm` / `the arm of record` over the sentence agrees with the read verdict on **8 of 30** and disagrees on **22** (`Ⓑ③`). **Seven** of the disagreements are sentences whose words carry *"this arm"* or *"the arm of record"* while the item rests entirely on the control side, and **six** more are control-side items the regex would hand you as RE-GROUND wordings to land — thirteen of the twenty-two in all. ⇒ *`ITEM2_TRIAGE.md` said in its header that the regex was worthless and refused to issue verdicts from it; the measurement is now on the record rather than the refusal.*
+
