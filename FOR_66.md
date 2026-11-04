@@ -33510,3 +33510,38 @@ The summary `\item` says the retention is narrower *"because this arm's visibili
 #### ⌗ AND A STALE COMMENT CORRECTED IN PASSING
 
 The acceptance receipt's `R6919_NARROWING` block still described `= 0.128` and a `0.93 pp` agreement — the namesake state, left standing after the constant was moved to `0.131`. Now records the real margin: `0.63 pp` apart, `0.37 pp` of `1.00 pp` left. *Third time this lane has paid for a comment describing a superseded state.*
+
+---
+
+### ⛔⛭⛭⛭ `r7677+cc66.2` — **`CR_PK` CANNOT BE RE-DERIVED AT ALL: NOT ONE OF 369 BANKED SPECTRA IN THE TREE REPRODUCES `cc66.28`'s PEAK QUARTET THROUGH THE RECEIPT'S OWN LOCATOR, AND THE GATE THAT SAYS SO IS THE GATE THAT WAS SUPPOSED TO LET ME READ THE ANSWER**
+
+**Receipt:** `computations/beyond_the_wall/r7677_cc66_the_fifteen_pins_and_the_four_constants/crpk.py` — 4 gates, 0 failures, `run_crpk.txt`. No solver; it bins banked spectra and runs a locator.
+
+#### ⓵ THE SHAPE OF THE PROBLEM, WHICH IS NOT THE SHAPE I EXPECTED
+
+`CR_PK = [221.8, 536.8, 812.9, 1126.5]` and `LCDM_PK = [220.2, 537.0, 811.7, 1124.5]` are `cc66.28`'s peak quartets, and ⛔ **the receipt that carries them loads NO SPECTRA AT ALL** — the quartets are its input, not its measurement. So there is nothing to repoint, and the order's "re-derive it on the arm of record" means running the receipt's own locator on the arm-of-record bank.
+
+⛭⛭ **The locator is LIFTED from the receipt's source by `ast`, not copied.** A copied locator would be the drift `sentence.py` exists to end, and here it would be worse: the whole question is what *this* locator returns, so a locator differing by a line answers a different question. Gate ⓞ asserts the lift of `spline_of`, `find_free`, `WS`, `LF` and both quartets.
+
+#### ⛔ ⓶ AND GATE ① — THE ONE THAT DECIDES WHETHER ANYTHING ELSE MAY BE READ — FAILED, SO I SEARCHED THE WHOLE TREE BEFORE SAYING SO
+
+On `cc66_r185_verify_{lcdm,cr}` the lifted locator returns quartets **2.8 and 3.3 multipoles** off `cc66.28`'s at the fourth peak. *The obvious bank failing is not evidence that no bank works* — `r7667+cc66.2`'s own lesson is that this tree carries the same basename in several directories. So every `.npz` under `beyond_the_wall/` went through the same locator:
+
+| | |
+|---|---|
+| `.npz` files in the tree | **447** |
+| on which this locator finds four peaks on all seven windows | **369** |
+| closest approach to `CR_PK` | **0.86** multipoles — `r7093_directions/grid_oneclock/cr_NSp.npz`, a **tilt-perturbed** grid leg |
+| closest approach to `LCDM_PK` | **1.46** multipoles — `r7095_directions/lmaxl1300/cr_oneclock.npz` |
+
+⇒ ***`CR_PK` AND `LCDM_PK` ARE HARDCODED CONSTANTS WHOSE PROVENANCE CANNOT BE RECOVERED FROM THE TREE.*** Both nearest approaches are an order of magnitude outside the tenth of a multipole the constants are quoted to, and the nearest is a perturbed leg rather than a base spectrum. *The obvious bank failing would not have been evidence of this; 369 of 447 failing is.*
+
+#### ⓷ WHAT I DID **NOT** DO, AND WHY IT WOULD HAVE BEEN THE SAME MISTAKE TWICE
+
+The arm-of-record bank's own quartet is measured and printed — `cc66_r185_verify_cr_leafrec1` gives `222.0 / 536.8 / 813.9 / 1128.6`, LEAFREC moving that bank by up to `0.74` multipoles — **but it is not offered as the arm-of-record value of `CR_PK`**, because gate ① establishes they are not the same quantity. ⛔ ***Substituting it would be `r7645+cc66.68`'s error in a new place: a number internally consistent and silently answering a different question.***
+
+#### ⓸ AND WHAT RESTS ON IT IN PRINT IS NAMED RATHER THAN LEFT TO BE FOUND
+
+`l.2790`'s *"the fourth peak sits `$1.4$` of the sky's own locating spreads high, two thirds of that offset shared with the control"* is built from `CR_PK[3]` and `LCDM_PK[3]` — their difference is the `+2.0` multipoles the "two thirds" is measured against. **So both halves of that clause rest on an input no bank in the tree reproduces.** *Routed to 69; it is not mine to withdraw a sentence.*
+
+⇒ **Arm ④ is scored: of the four constants, `R6919` is blocked on 70, `PUB156` needs nothing, `SLOPE_PAPER` is re-derived (`+0.0139 → +0.02690`, six figures moving in print), and `CR_PK` is UNREPRODUCIBLE.** Registered 1–3 re-derivable with central guess 2; **one** is, so the band holds at its floor and the central guess misses by one. *And the reason the count is low is not the blocked sweep I allowed for — it is a constant whose source is gone, which I did not allow for at all.*

@@ -1,0 +1,42 @@
+
+====================================================================================================
+  ⓪ THE LOCATOR AND THE CONSTANTS, LIFTED FROM THE RECEIPT RATHER THAN COPIED
+====================================================================================================
+
+    OK    ⓪ the locator, its window sweep and both hardcoded quartets are LIFTED from the receipt's own source by `ast` -- not copied, because the question is what THIS locator returns and a locator differing by one line answers a different one   (lifted ['find_free', 'spline_of'] and ['CR_PK', 'LCDM_PK', 'LF', 'WS'])
+      cc66.28 CR_PK   :    221.8    536.8    812.9   1126.5
+      cc66.28 LCDM_PK :    220.2    537.0    811.7   1124.5
+
+====================================================================================================
+  ① THE NAMESAKE BANKS DO NOT REPRODUCE cc66.28 -- and the search is over the WHOLE TREE
+====================================================================================================
+
+      cc66_r185_verify_lcdm                220.4    537.3    813.1   1127.8   (spread  0.00  0.42  0.62  0.73, 7 of 7 windows)
+      cc66_r185_verify_cr                  221.9    537.1    814.2   1129.3   (spread  0.01  0.39  0.59  0.65, 7 of 7 windows)
+      |difference from cc66.28|   arm  0.15  0.26  1.31  2.81
+                              control  0.16  0.31  1.38  3.34
+
+      `.npz` files under beyond_the_wall/: 447;  on which this locator finds four peaks on all seven windows: 369
+      closest to CR_PK  :   0.86 multipoles   computations/beyond_the_wall/r7093_directions/grid_oneclock/cr_NSp.npz
+                           221.1    537.6    812.9   1127.4
+      closest to LCDM_PK:   1.46 multipoles   computations/beyond_the_wall/r7095_directions/lmaxl1300/cr_oneclock.npz
+                           221.1    535.5    810.3   1123.4
+    OK    ① ⛔⛭⛭ ** NO BANKED SPECTRUM IN THE TREE REPRODUCES EITHER QUARTET. **  The locator is run on all 369 spectra under `beyond_the_wall/` that it can locate four peaks on, and the closest approach is 0.86 multipoles to the arm's quartet and 1.46 to the control's -- both an order of magnitude outside the tenth of a multipole the constants are quoted to.  ⇒ `CR_PK` and `LCDM_PK` are hardcoded constants whose PROVENANCE CANNOT BE RECOVERED FROM THE TREE, so they cannot be re-derived on the arm of record by this route.  *The obvious bank failing would not have been evidence of this; 369 of 447 failing is*   (369 spectra tried; nearest 0.86 (arm) and 1.46 (control) multipoles)
+
+====================================================================================================
+  ② THE ARM-OF-RECORD BANK's OWN QUARTET -- reported, and NOT offered as a replacement
+====================================================================================================
+
+      cc66_r185_verify_cr_leafrec1     222.0    536.8    813.9   1128.6   (spread  0.01  0.40  0.57  0.63, 7 of 7 windows)
+      its namesake sibling             221.9    537.1    814.2   1129.3
+      the move LEAFREC makes on it     +0.10    -0.25    -0.35    -0.74
+      cc66.28's hardcoded CR_PK        221.8    536.8    812.9   1126.5  <- a DIFFERENT quantity, per ①
+    OK    ② the `_leafrec1` bank's quartet is measured through the same lifted locator and the move LEAFREC makes on THAT bank is reported -- but it is NOT offered as the arm-of-record value of `CR_PK`, because ① establishes they are not the same quantity.  ⛔ *Substituting it would be the `r7645+cc66.68` error in a new place: a number that is internally consistent and silently answers a different question*   (LEAFREC moves this bank by up to 0.74 multipoles)
+
+      `l.2790` is built from CR_PK[3] = 1126.5 and LCDM_PK[3] = 1124.5:
+        their difference, the shared-offset numerator: +2.0 multipoles
+    OK    ②ᵃ what rests on these constants in print is NAMED rather than left to be found: `l.2790`'s "the fourth peak sits 1.4 of the sky's own locating spreads high, two thirds of that offset shared with the control" is built from `CR_PK[3]` and `LCDM_PK[3]`, so BOTH halves rest on an input no bank in the tree reproduces   (CR_PK[3] - LCDM_PK[3] = +2.0)
+
+====================================================================================================
+  ✓ ALL CHECKS PASSED
+====================================================================================================

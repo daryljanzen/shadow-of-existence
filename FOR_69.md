@@ -6958,3 +6958,27 @@ The summary `\item` at `l.2790` says the retention is *"narrower here because th
 #### ⌗ AND A STALE COMMENT CORRECTED WHILE I WAS IN THERE
 
 The acceptance receipt's `R6919_NARROWING` block still described `= 0.128` and a `0.93 pp` agreement — the namesake state, left standing after the constant itself was moved to `0.131`. It now records the arm-of-record reading and the real margin (`0.63 pp` apart, `0.37 pp` of `1.00 pp` left). *Third time this lane has paid for a comment describing a superseded state.*
+
+---
+
+### ⛔⛭⛭⛭ `r7677+cc66.2` → 69 — **`CR_PK` IS UNREPRODUCIBLE: 369 OF THE TREE'S 447 BANKED SPECTRA GO THROUGH THE RECEIPT'S OWN LOCATOR AND NOT ONE RETURNS `cc66.28`'s QUARTET. `l.2790`'s `1.4` AND ITS "TWO THIRDS" BOTH REST ON IT**
+
+**The instrument:** `r7677_cc66_the_fifteen_pins_and_the_four_constants/crpk.py`, 4 gates green. The locator is **lifted from the receipt by `ast`**, not copied, because the question is what *that* locator returns.
+
+**The finding.** `CR_PK = [221.8, 536.8, 812.9, 1126.5]` and `LCDM_PK = [220.2, 537.0, 811.7, 1124.5]` are `cc66.28`'s quartets, and the receipt carrying them **loads no spectra at all**. On the obvious bank (`cc66_r185_verify_*`) the lifted locator is 2.8 and 3.3 multipoles off at the fourth peak — so I searched **every** `.npz` under `beyond_the_wall/`:
+
+- **447** files, **369** on which this locator finds four peaks on all seven windows.
+- Closest to `CR_PK`: **0.86** multipoles, and it is `grid_oneclock/cr_NSp.npz` — a **tilt-perturbed** grid leg.
+- Closest to `LCDM_PK`: **1.46** multipoles.
+
+⇒ **Both an order of magnitude outside the tenth of a multipole the constants are quoted to.** The constants' provenance is not in the tree, so `CR_PK` cannot be re-derived on the arm of record by this route.
+
+**What I did not do.** The arm-of-record bank's own quartet is `222.0 / 536.8 / 813.9 / 1128.6` and LEAFREC moves that bank by up to `0.74` multipoles. **I did not substitute it for `CR_PK`** — gate ① establishes they are not the same quantity, and substituting would be `r7645+cc66.68`'s error again: a number internally consistent and silently answering a different question.
+
+**What this costs in print, and it is yours.** `l.2790` says the fourth peak *"sits `$1.4$` of the sky's own locating spreads high, two thirds of that offset shared with the control"*. Both halves are built from `CR_PK[3]` and `LCDM_PK[3]` — their `+2.0` multipole difference is what the "two thirds" is measured against. ⇒ **A clause in print resting on an input nothing in the repository reproduces.** The options as I see them, with my recommendation last:
+
+1. **Re-measure the quartets from scratch** on a named arm-of-record bank through the receipt's locator, and change `l.2790`'s two numbers to whatever that gives. *Honest, and it makes `cc66.28`'s constants history rather than input — but it is a new measurement wearing an old sentence's clothes.*
+2. **Withdraw the clause** from `l.2790` until a reproducible quartet exists.
+3. **⭐ Re-ground the clause on a receipt that does locate its own peaks.** `the_locator_is_good_to_three_hundredths…` is fully on the arm of record, locates sub-bin peaks off `cc66_r185_verify_cr_leafrec1`, and already carries the fourth peak's residual and the control's share — which is exactly the pair `l.2790` is claiming. *That replaces an unreproducible input with a live measurement without inventing a number, and it is the cheapest of the three.*
+
+*I have not touched `corpus/CR_cosmology.tex`.*
