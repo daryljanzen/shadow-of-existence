@@ -32864,3 +32864,33 @@ The only literal **inside** the `load(...)` call is `".npz"`; both stems sit in 
 ⌗ **Also found in the survey, and 69's item 3 does not name it:** `P15_the_licensed_configuration_moves_neither_statistic…` reads `r7095_directions/lmaxl1300/cr_{before,oneclock}.npz`, and that directory has **no `_leafrec1` sibling** — so it is a **fourth** item with no counterpart, beside the three ordered to 70. Routed in the next pass with the other three.
 
 **Verified on this head:** the repointed receipt's gates ⓪–⓺ all pass and gate ⓹ prints the figures above; the full run including the new gate ⓻ is mid-flight in its expensive `spherical_jn` pass as this is pushed, and ⓻'s two assertions were measured independently first (72/48/14/3 CR-side keys moved, **0** control keys; margin 0.07 pp of 1.00 pp). *Pushed rather than held because the stop hook is right that unpushed work is the larger risk; the full-run tally goes in the next entry.*
+
+### ⛭⛭⛭ `r7673+cc66.2` — **ITEM 2 IS ORDERED BY A FILE COMPARISON, NOT BY RECEIPT RUNS: 6 OF THE 30 TWINS ARE BIT-IDENTICAL, SO THOSE REPOINTS CANNOT MOVE A FIGURE. AND 70's MEASUREMENT IS CHECKED ON ALL 30 PAIRS WITH ITS ONE EXCEPTION CLASS NAMED**
+
+**Receipt:** `computations/beyond_the_wall/r7673_cc66_the_repoints/moved.py` — 3 checks, 0 failures. Costs nothing: it compares `.npz` files and runs no solver.
+
+**The cheapest thing to know first, and it is not a receipt run.** A repoint can only move a figure if the arm-of-record twin **differs** from its namesake. That is a file comparison; running the receipt is minutes. So the pass is now ordered by this:
+
+| | pairs |
+|---|---|
+| namesake/arm-of-record pairs reachable | **30** |
+| **BIT-IDENTICAL across the switch** — a repoint is bookkeeping and cannot move a figure | **6** |
+| genuinely moved — these need a run and a reading | **24** |
+
+⛭⛭ **The six are the no-physics and geometry constructs:** `r6919_geometry`, `r6919_noop`, `r6911_noop`, `r6915_noop`, `r6897_fields`, `r6897_noop`. **Zero keys differ in any of them.** ⇒ *They were never resting on anything the leaf rate moves; they are on PO-87's list by the naming convention alone. Their repoints are safe and silent, and 70's twins for them were no-ops — which is itself an independent confirmation that the switch does not reach a source with no plasma dynamics in it.*
+
+⛭⛭⛭ **And 70's measurement is checked on every pair rather than rested on.** Across the 30, the **only** control keys that move are **cross-arm SWAP products** — `Dl__viswap` in `r6919_injected_lcdm`, `Dl_swap` and `xswap` in `r6911_source_lcdm` — which are the arm's own source or visibility substituted into the control's leg, so they involve the CR arm by construction and moving is what they must do. **Not one control key moved outside that class.** ⇒ *A control key moving outside it would put every control figure in print in question, which is why this is `Ⓐ②` and not a remark.*
+
+⌗ Also gated: **all 30 twins carry a `manifest` key their namesake lacks** (`Ⓐ③`) — the same test the namesake-pinning receipts' own header guards use, so the twin declares itself rather than being identified by its filename.
+
+#### ⛔⛭⛭ AND THE GATE'S FIRST FORM SAID SOMETHING FALSE — NINTH INSTANCE, CAUGHT BY MY OWN EARLIER MEASUREMENT
+
+`Ⓐ②` first classified a key as control-side **by the key's own name** (`'lcdm' in key`). `r6919_injected_lcdm.npz` is a control leg whose one moving key is `Dl__viswap` — **no `lcdm` anywhere in the key** — so a name test counted a control file's moving key as CR-side and **the swap class came out empty**. The gate printed *"0 control keys moved"* while two control files had each moved a key.
+
+⇒ **A key is control-side when THE FILE is a control leg or the key names one.** *The only reason this did not ship saying something false is that I had measured those two files in scratch BEFORE writing the gate, and the gate disagreed with the measurement. That is the eighth instance's lesson applied: not "watch for cheap signals" but keep the independent measurement and make the gate answer to it.*
+
+#### WHAT THIS LEAVES FOR THE REST OF ITEM 2
+
+**24 pairs need a receipt run and a reading**, and the receipts divide as: 6 whose every namesake read is bit-identical (bookkeeping), the 10 repointable receipts of the REBUILD table, and the 3 held for 70. ⌗ **`r6893_switch_screen_cr` moved 247 of 373 keys and `r7041_accept_digest` 72 of 144** — the two largest, and the acceptance one is already landed at `r7673+cc66.1`.
+
+⌗ **Three control legs have NO twin at all** — `r6893_switch_screen_lcdm`, `r6915_pairs_lcdm`, `cc66_r185_verify_lcdm` — and by 70's measurement they need none, so a receipt reading them keeps its control leg on the namesake path by design. *That is the shape every two-arm receipt in the tree already has, and it is now the shape the repoints produce rather than something to explain away.*
