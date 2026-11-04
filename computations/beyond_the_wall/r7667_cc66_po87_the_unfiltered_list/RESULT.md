@@ -1,15 +1,15 @@
-# `r7667` (cc66) — PO-87's LIST IS 49 ITEMS, AND ITEM 2 HAS **NO** CHEAP HALF: NOTHING IS RE-DERIVABLE BY REPOINTING
+# `r7667` (cc66) — PO-87's LIST IS 48 ITEMS, AND ITEM 2 HAS **NO** CHEAP HALF: NOTHING IS RE-DERIVABLE BY REPOINTING
 
-**Receipt:** `census.py` in this directory — 12 checks, 0 failures, ~1 s.
-**The list:** `LIST.md`, the census's own output: 49 items with sentence, receipt and spectra.
+**Receipt:** `census.py` in this directory — 13 checks, 0 failures, ~1 s.
+**The list:** `LIST.md`, the census's own output: 48 items with sentence, receipt and spectra.
 **Registered:** `PREDICTION.md`, its own commit (`r7667+cc66.0`), pushed before `census.py` existed.
 **Tree:** `5dac5ff9a` (`origin/main` at `r7667`).
 
 ## THE RESULT IN ONE LINE
 
-**49 figure-printing items** rest on a namesake spectrum or a superseded instrument state — and
-**not one of them can be re-derived by repointing to a spectrum the tree already holds.** Of the 49,
-**25 demonstrably load a namesake** and **24 are on the list only because none of their load sites
+**48 figure-printing items** rest on a namesake spectrum or a superseded instrument state — and
+**not one of them can be re-derived by repointing to a spectrum the tree already holds.** Of the 48,
+**26 demonstrably load a namesake** and **22 are on the list only because none of their load sites
 can be decided from the source**, which makes them candidates for a *read* rather than for a
 rebuild.
 
@@ -20,13 +20,13 @@ The order says *"re-derive the cheapest half of them"*. Measured:
 | | items |
 |---|---|
 | re-derivable by repointing alone | **0** |
-| need a spectrum built first, or carry an undecidable load site | **49** |
-| of the 49: demonstrably load a namesake (a rebuild question) | **25** |
-| of the 49: every load site undecidable from source (a reading question) | **24** |
+| need a spectrum built first, or carry an undecidable load site | **48** |
+| of the 48: demonstrably load a namesake (a rebuild question) | **26** |
+| of the 48: every load site undecidable from source (a reading question) | **22** |
 | distinct namesake spectrum **paths** with no arm-of-record counterpart | **32** |
 
 ⇒ **There is no cheapest half to re-derive.** The cheapest work on this list is not a rebuild at all:
-it is **reading the 24** whose load sites are built from variables, because some of them may already
+it is **reading the 22** whose load sites are built from variables, because some of them may already
 be on the arm of record — exactly the error this census made twice about itself. Only after that does
 a build budget have a well-defined target, and `r7640+60` establishes that twelve configurations
 cannot be rebuilt under their own recorded `KFAC=1` in any case. **That sequencing is 69's call and
@@ -34,8 +34,8 @@ is not taken here.**
 
 ## THE REGISTERED ARMS, SCORED — THREE OF FOUR MISSED
 
-**① MISSED by six.** Registered **55–73** of the body-cited candidates printing a figure; scored
-**49**. *Not rounded into the band: the band was mine to pick.*
+**① MISSED by seven.** Registered **55–73** of the body-cited candidates printing a figure; scored
+**48**. *Not rounded into the band: the band was mine to pick.*
 
 **② FALSIFIED AS STATED.** Registered: every `_leafrec1` spectrum has a plain sibling. Six do not —
 five are `*_distances.npz`, a different *product*, and one is a configuration only ever run on the
@@ -77,13 +77,24 @@ evidence from conservative inclusion rather than presenting 49 equal items.
 
 **What moved across the three cuts** — monotonically toward the same conclusion:
 
-| | cut 1 (filename) | cut 2 (paths) | cut 3 (load sites) |
-|---|---|---|---|
-| candidates | 102 | 100 | **96** |
-| body-cited | 73 | 72 | **69** |
-| figure-printing items | 54 | 53 | **49** |
-| re-derivable by repointing | 2 | 1 | **0** |
-| of the twelve, live | 3 | 3 | **1** |
+| | cut 1 (filename) | cut 2 (paths) | cut 3 (load sites) | cut 4 (call sites) |
+|---|---|---|---|---|
+| candidates | 102 | 100 | 96 | **95** |
+| body-cited | 73 | 72 | 69 | **68** |
+| figure-printing items | 54 | 53 | 49 | **48** |
+| re-derivable by repointing | 2 | 1 | **0** | **0** |
+| of the twelve, live | 3 | 3 | 1 | **1** |
+
+**Cut 4 resolves CALL SITES**, because the commonest undecidable shape is a helper taking the
+filename as a parameter — `def series(fname): np.load(os.path.join(SP, fname))` — so the load site
+carries no evidence and the caller carries all of it. *That is the same one-level indirection I
+reported in `check_quote_pins` at `r7657+cc66.5`, reproduced in my own instrument.* It moved the
+list by one item and the evidence split by two, and **did not move the headline at all.**
+
+⇒ **The instrument has converged and this is where it stops.** The 220 load sites still undecidable
+are loop variables, dict comprehensions and module-level constants: **resolving them is a reading
+task on 22 receipts, not a fifth instrument.** `Ⓒ④` asserts that convergence so nobody spends a
+fifth iteration rediscovering it.
 
 ⌗ **Four corrections in two revisions now share one shape.** `r7665+cc66.1`: I searched for strings
 the paper could not contain. `cc66.1`: I counted `{base}`, which matches the appendix's
@@ -97,6 +108,6 @@ right** — an "arm-of-record" entry whose filename was a bare fragment, in this
 Nothing here re-derives anything, and **no figure in the list is asserted to be wrong.** `LEAFREC=0`
 is not itself a defect: a sentence may legitimately be about the namesake configuration, and the
 order allows an item to leave the list by having its **sentence re-grounded** rather than its figure
-recomputed. ⚠ And **24 of the 49 are on the list conservatively** — their load sites are built from
+recomputed. ⚠ And **22 of the 48 are on the list conservatively** — their load sites are built from
 variables, so this census cannot say what they read. Treating those as rebuild work without reading
 them first would repeat, at 69's cost, the mistake cut 2 made at mine.

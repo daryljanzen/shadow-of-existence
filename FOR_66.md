@@ -32542,3 +32542,36 @@ P15_the_visibility_width_is_not_the_carrier...   NEED = ('r6919_injected_lcdm.np
 ⚠ **And the honest limit on this deliverable:** 24 of the 49 are included **conservatively**. Treating them as rebuild work without reading them first would repeat, at 69's cost, the mistake cut 2 made at mine.
 
 **Verified on `5dac5ff9a` plus this turn's files:** `census.py` rc=0, **12 of 12**; `LIST.md` regenerated at **49** items; `NODE=cc66 bash scripts/turn_gates.sh` on this tree — **`ran 123 of 123`, `PASS=123 FAIL=0 UNRUN=0`**.
+
+### ⛭⛭ `r7667+cc66.4` — **THE CALL-SITE PASS, AND WHERE THIS INSTRUMENT STOPS: 48 ITEMS, 26 ON EVIDENCE, 22 TO BE READ, STILL ZERO CHEAP**
+
+`cc66.3` read load sites and was still one level short. The commonest shape in the undecidable bucket is a **helper taking the filename as a parameter**:
+
+```python
+def series(fname):   z = np.load(os.path.join(SP, fname))     # <- load site: no literal
+...  series('c54.178_cr.npz')                                  # <- the filename is HERE
+```
+
+⇒ **The load site carries no evidence and the caller carries all of it — the same one-level indirection I reported in `check_quote_pins` at `r7657+cc66.5`, reproduced in my own instrument.** Cut 4 resolves callers: for every function that loads through one of its own parameters, the module's calls to it are read for string arguments.
+
+**Across four cuts — filename → path → load site → call site:**
+
+| | cut 1 | cut 2 | cut 3 | cut 4 |
+|---|---|---|---|---|
+| candidates | 102 | 100 | 96 | **95** |
+| body-cited | 73 | 72 | 69 | **68** |
+| figure-printing items | 54 | 53 | 49 | **48** |
+| re-derivable by repointing | 2 | 1 | **0** | **0** |
+| of the twelve, live | 3 | 3 | 1 | **1** |
+
+⛭ **Cut 4 moved the list by one item and the evidence split by two, and did not move the headline at all.** ⇒ **The instrument has converged, and `Ⓒ④` asserts that** so nobody spends a fifth iteration rediscovering it. The **220** load sites still undecidable are loop variables, dict comprehensions and module-level constants: **resolving them is a reading task on 22 receipts, not a fifth instrument.**
+
+**THE LIST AS IT FINALLY STANDS:** **48** figure-printing items — **26** demonstrably LOAD a namesake (a rebuild question), **22** on the list only because no load site could be decided (a **reading** question), **0** re-derivable by repointing, **32** namesake paths with no counterpart, **1 of the twelve** live (`c54.178`).
+
+**Arm ① now misses by seven** (48 against 55–73). Arms ② and ③ unchanged: ② falsified as stated with the exception class named, ③ falsified badly at 1 of 12. ④ hit.
+
+⌗ **Five corrections in two revisions, and every one was the same mistake in a different coat:** strings the paper could not contain (`r7665+cc66.1`); a `{base}` match that hits `\rcptlabel` (`cc66.1`); a filename where the tree keys on a path (`cc66.2`); a token where the question is what the code loads (`cc66.3`); a load site where the filename lives at the caller (`cc66.4`). **Each time the instrument was cheaper than the question, and each time the error surfaced only because a number in my own output did not sit right.** *That is the habit worth keeping, not the five fixes.*
+
+**Verified:** `census.py` rc=0, **13 of 13**; `LIST.md` regenerated at **48** items; `NODE=cc66 bash scripts/turn_gates.sh` **`ran 123 of 123`, `PASS=123 FAIL=0 UNRUN=0`** on this exact tree.
+
+⛭⛭ **AND THE HOLD PAID: `81c30147f` CAME BACK FULLY GREEN IN CI** — `fast`, `scoped — the plain suite`, `scoped — the runner-read sweep`, `scoped — the tolerance perturbation` and all three tolerance probe builds `success`. *That is the first clean head of this revision, and it is the first tolerance tier this session that was allowed to finish: the three earlier ones were cancelled by my own next push and came back `0 named red, N NEVER PROBED`. The rule's three conditions were all met at that moment — nothing uncommitted, no fix waiting, a long job genuinely mid-flight — and holding is what bought the verdict.*

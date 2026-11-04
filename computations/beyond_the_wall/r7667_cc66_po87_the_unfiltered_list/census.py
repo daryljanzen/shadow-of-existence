@@ -187,6 +187,52 @@ def load_sites(src):
     return sites
 
 
+#: ⛔⛭⛭⛭ r7667+cc66.4 -- AND CUT 3 WAS STILL ONE LEVEL SHORT.  The commonest shape in the
+#:   undecidable bucket is a HELPER that takes the filename as a parameter:
+#:
+#:       def series(fname):  z = np.load(os.path.join(SP, fname))        <- load site: no literal
+#:       ... series('c54.178_cr.npz')                                    <- the filename is HERE
+#:
+#:   ** So the load site carries no evidence and the caller carries all of it -- which is exactly
+#:   the one-level indirection I reported in `check_quote_pins` at `r7657+cc66.5`, reproduced in my
+#:   own instrument. **  `callsite_literals` resolves it: for every function whose body loads
+#:   through one of its own parameters, the module's calls to that function are read for string
+#:   arguments, and those are classified as that function's reads.
+def callsite_literals(tree):
+    """{function name -> [string args its callers pass]} for helpers that load via a parameter."""
+    loaders = {}
+    for fn in ast.walk(tree):
+        if not isinstance(fn, (ast.FunctionDef, ast.AsyncFunctionDef)):
+            continue
+        params = {a.arg for a in fn.args.args} | {a.arg for a in fn.args.posonlyargs}
+        if fn.args.vararg:
+            params.add(fn.args.vararg.arg)
+        for n in ast.walk(fn):
+            if not isinstance(n, ast.Call):
+                continue
+            f = n.func
+            if (f.attr if isinstance(f, ast.Attribute) else getattr(f, 'id', '')) != 'load':
+                continue
+            if any(isinstance(x, ast.Name) and x.id in params for x in ast.walk(n)):
+                loaders.setdefault(fn.name, [])
+    if not loaders:
+        return {}
+    for n in ast.walk(tree):
+        if isinstance(n, ast.Call):
+            nm = (n.func.attr if isinstance(n.func, ast.Attribute) else getattr(n.func, 'id', ''))
+            if nm in loaders:
+                for a in list(n.args) + [k.value for k in n.keywords]:
+                    if isinstance(a, ast.Constant) and isinstance(a.value, str):
+                        loaders[nm].append(a.value)
+                    elif isinstance(a, ast.JoinedStr):
+                        loaders[nm] += [v.value for v in a.values
+                                        if isinstance(v, ast.Constant) and isinstance(v.value, str)]
+                    elif isinstance(a, ast.BinOp):
+                        loaders[nm] += [x.value for x in ast.walk(a)
+                                        if isinstance(x, ast.Constant) and isinstance(x.value, str)]
+    return loaders
+
+
 def site_kind(lits):
     """'aor' | 'namesake' | 'undecidable' for ONE load site, from its own literals."""
     if any('leafrec1' in s for s in lits):
@@ -219,6 +265,13 @@ for paper, pth in sel:
     if sites is None:
         unparsed.append(pth)
         continue
+    #: every helper that loads through a parameter contributes its CALLERS' literals as sites
+    try:
+        for _fn, _lits in callsite_literals(ast.parse(src)).items():
+            if _lits:
+                sites.append((_lits, False))
+    except SyntaxError:
+        pass
     kinds = collections.Counter()
     nm_names = []
     for lits, fstr in sites:
@@ -336,7 +389,7 @@ check(f'Ⓑ①ᵃ the list\'s edge is stated on RESOLVED paths: {len(cand)} cand
       f'⛔ The filename-only first cut of this census said 102/73/29; resolving to paths says '
       f'{len(cand)}/{len(body_cited)}/{len(_uncited)}',
       len(body_cited) + len(_uncited) == len(cand) and len(_uncited) == 27
-      and len(cand) == 96 and len(body_cited) == 69,
+      and len(cand) == 95 and len(body_cited) == 68,
       f'{len(body_cited)} + {len(_uncited)} = {len(cand)}')
 #: ⛔ ARM ① MISSED BY ONE.  Registered 55-73; scored 54.  *Reported as a miss rather than rounded
 #:   into the band: the band was mine to choose and 54 is outside it.  The quantity it was about is
@@ -345,8 +398,8 @@ check(f'Ⓑ② the figure-printing count is PINNED on RESOLVED paths and arm ①
       f'recorded as MISSED: {len(prints_fig)} of {len(body_cited)} body-cited candidates print a '
       f'figure.  ⛔ The filename-only first cut said 54; it counted `cr_base.npz` and 43 other '
       f'tokens as namesakes without looking at the directory they are read from',
-      len(prints_fig) == 49 and len(body_cited) == 69 and not (55 <= len(prints_fig) <= 73),
-      f'{len(prints_fig)} of {len(body_cited)}; arm \u2460 registered 55-73 -> MISS by six')
+      len(prints_fig) == 48 and len(body_cited) == 68 and not (55 <= len(prints_fig) <= 73),
+      f'{len(prints_fig)} of {len(body_cited)}; arm \u2460 registered 55-73 -> MISS by seven')
 
 # ══ cheap vs expensive ══════════════════════════════════════════════════════════════════════════
 head('Ⓒ  CHEAP vs EXPENSIVE -- which items have an arm-of-record sibling already banked')
@@ -427,6 +480,20 @@ check(f'Ⓒ③ ⛭⛭ THE LIST SEPARATES EVIDENCE FROM CONSERVATIVE INCLUSION: {
       f'candidates for a READ rather than for a rebuild',
       len(_loads_nm) + len(_undec_only) == len(prints_fig) and len(_loads_nm) > 0,
       f'{len(_loads_nm)} on evidence, {len(_undec_only)} conservative')
+
+#: ⛭⛭ WHERE THIS INSTRUMENT STOPS, AND WHY THAT IS A RESULT RATHER THAN A LIMIT ADMITTED LATE.
+#:   Four cuts: filename -> path -> load site -> call site.  The last one moved the list by one item
+#:   and the evidence split by two, and did NOT move the headline (`0 cheap`) at all.  The 220 load
+#:   sites still undecidable are loop variables, dict comprehensions and module-level constants --
+#:   ** resolving them is a READING task on 22 receipts, not a fifth instrument. **  Said here so
+#:   that nobody spends a fifth iteration discovering the same convergence.
+check(f'Ⓒ④ ⛭ THE INSTRUMENT HAS CONVERGED ON THE ANSWER THAT MATTERS: the call-site pass moved '
+      f'the list to {len(prints_fig)} items and the evidence split to {len(_loads_nm)}/'
+      f'{len(_undec_only)}, and left the cheap count at {len(cheap)} -- so the remaining '
+      f'{site_tally["undecidable"]} undecidable sites are a reading task on {len(_undec_only)} '
+      f'receipts rather than a further instrument',
+      len(cheap) == 0 and len(_undec_only) < len(_loads_nm) + 10,
+      f'{len(cheap)} cheap; {len(_undec_only)} to read')
 
 # ══ THE LIST ════════════════════════════════════════════════════════════════════════════════════
 head('THE UNFILTERED LIST -- every figure-printing item, its receipt, its spectra, its sentence')
