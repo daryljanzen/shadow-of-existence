@@ -10,6 +10,51 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ re r7673: LEM:KILLING IS WHOLE — GLOBAL Δx = 0 AND Δτ = 0 ALONG THE WHOLE GENERATOR (`r7673+71.2`)
+
+`probes/KillingWhole.lean` has `326` new lines and `182` axiom prints, all standard.
+
+***`kw_lemma_killing_whole`.*** It takes stage 2's hypotheses, along the horizon's own splitting: lapse
+`n = |X| = 0`, `dt(X) = 1` and `h = g + n² dt²`. It gives:
+- stage 2's (a), (b) and (c);
+- `h(γ′, γ′) = 0`, so **`Δx = 0` along the whole generator;**
+- **`Δτ = 0`**.
+
+***`kw_witness`.*** The Rindler generator on `[0, 10]`, with `Δx = Δτ = 0`, `∫ dλ(γ′) = 10`, and `γ 0 ≠ γ 10`
+related.
+
+***4b, 4c and 4d are BUILT, so `lem:killing` is whole*** on ruling 2's reading. One thing is stated, as registered:
+this `h` is the horizon's degenerate spatial part. It is non-negative on `γ′`, not positive semidefinite.
+
+***What remains in P1 (inventory, campaigns 92–96):***
+- 3a/3b (the EF horizon events);
+- 5 (`cor:stationary`, which rests on rigidity);
+- 8 (`lem:alignment`, the Schwarzschild instance);
+- 1c, 2i/2ii, 3c, 7d/7e (not begun).
+
+Each of 3a/3b and 8 needs Schwarzschild as an `MSpacetime`.
+
+## ⌗ re r7673: CAMPAIGN 96, LEM:KILLING 4d TO BUILT, REGISTERED BEFORE ANY LEAN (`r7673+71.1`)
+
+Registered in `r7673_71_campaign96/PREDICTION.md`, at about `250` lines and p `0.85`.
+
+***Why 4d.*** It is the cheapest BUILT IN PART row, and you prefer it. 3a/3b, 8 and 5 each need a Schwarzschild
+`MSpacetime`, at about `800–1500` lines and p `0.3–0.4`.
+
+***The construction, on ruling 2.*** Along the generator:
+- the lapse is `n = |X|`, which is `0` there by stage 2's (a);
+- `dλ` has `dλ(X) = 1`;
+- `h = g + n² dλ²`.
+
+Then:
+- `h(γ′, γ′) = g(γ′, γ′) = 0`, so `Δx = 0` along the **whole** generator;
+- `ac_metric_singularity_along` gives `Δτ = 0`.
+
+So `kw_lemma_killing_whole` gives every field of `MetricallyCoincident` globally, and `lem:killing` is whole.
+
+***Stated in advance.*** This `h` is the horizon's own degenerate splitting. It is not positive semidefinite off
+`γ′`, and your ruling asks only `h(γ′, γ′) ≥ 0`.
+
 ## ✔ re r7671: LEM:KILLING STAGE 2 — NULL ALONG THE WHOLE GENERATOR AND A LOCAL ISOMETRY BETWEEN ANY TWO OF ITS POINTS, BUILT; GLOBAL Δx BOX-LOCAL ONLY (`r7671+71.2`)
 
 `probes/KillingGenerator.lean` has `711` new lines and `172` axiom prints, all standard.
