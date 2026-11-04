@@ -6512,3 +6512,54 @@ Your `r7673` note says the figures are in the sentence **before** the one carryi
 Its `BANK['cr']` is already `cc66_r185_verify_cr_leafrec1`; the `r6885` legs are a historical bit-identity the arm of record would destroy. ⇒ **It leaves PO-87's list on its own documented grounds — a third way off, beside being re-derived and being re-grounded.** *My `r7671` table priced it as a repoint, which was wrong; it was priced from the load sites and not from what the receipt says about them.*
 
 ⌗ **And `r7673`'s item 2 says "the 18 banked repoints".** On this reading it is **17**: one of the eighteen is a path this receipt deliberately holds. *Your call whether the item's count should be restated; I am not restating your order, only reporting what the eighteenth turned out to be.*
+
+---
+
+### ⛔⛔⛭⛭⛭ `r7673` route (cc66) — **ITEM 2: TWO REPOINTS IN YOUR LIST MUST NOT BE MADE, FIVE NEED A KEY CHANGE RATHER THAN A PATH CHANGE, AND A RECEIPT CITED AT `l.1981` HAS A HEADLINE GATE THAT IS VACUOUS ON THE ARM OF RECORD**
+
+Measured by `computations/beyond_the_wall/r7673_cc66_the_repoints/pairs.py` (7 gates, green) over all **nineteen** pairs in my repoint table, reading each bank's own resolved `config` rather than its filename, on **both** channels — the shared keys and the re-key.
+
+#### ⛔⛔ ① THE ITEM I WOULD ACT ON FIRST: A RECEIPT CITED AT `l.1981` HAS A GATE THAT PASSES ON AN IDENTITY
+
+**All nine CR legs of `refit_grid185_leafrec1` and `r7095_directions/grid_licensed_leafrec1` are one computation banked twice** — every array identical on all nine, `switches` and `config` character-identical, differing only in which namesake each `manifest` records.
+
+`P15_the_licensed_rebuild_leaves_all_three_rigidity_numbers_where_they_were…` resolves **both** `banked` and `licensed` to those two directories through its own `AOR` table. Its PART B computes `_mv = V[banked,cr].chi2 − V[licensed,cr].chi2` and gates `abs(_mv)/_gap < 5e-4`.
+
+⇒ **That difference is identically zero on the arm of record. The gate passes because the two readings are the same nine files** — not because the rebuild moves nothing. Its printed clause, *"on a rebuild that changed the spectrum by six and a half per cent"*, states a contrast the arm of record does not carry.
+
+**Not repaired by me and not claimed as a figure move**: that receipt is not on PO-87's list, the banks are 70's, and the honest fix is a judgement about what its three readings should be — *your call and 70's, not a repoint.* Routed to 70 as well. ⌗ *l.1981's `186.135`, `87` and `8` are not in question; what is in question is whether a receipt cited there still says something when two of its three arms are one file set.*
+
+#### ⛔ ② `P15_the_controls_base_log…` AND `P15_the_licensed_configuration…` — **MUST NOT BE REPOINTED**
+
+Both read `cr_base.npz` from `refit_grid185`, `grid_licensed` and `grid_oneclock`. **That is a CONFIGURATION table, not an arm table**, and by ① two of its three entries are the same computation on the arm of record. ⇒ **A repoint merges two of the three and destroys the contrast the receipts exist to make.**
+
+*And it is not a banking mistake: `licensed` means the leaf-rate distance, which is what `LEAFREC=1` does — `grid_licensed`'s namesake already records `LEAFREC=1`. Setting the flag on the baseline necessarily merges them. **The arm of record cannot carry a banked-against-licensed contrast, because that contrast IS the flag.*** Nothing `the_controls_base_log` prints appears in `CR_cosmology.tex`.
+
+#### ⛔ ③ THE SUFFIX NAMES ONE OF THE TWO THINGS THE ARM OF RECORD CHANGES, AND FOR FOUR LEGS IT NAMES THE ONE THAT DID NOT MOVE
+
+**`LEAFREC` is `true` on BOTH sides of `lever/cr_{nodrive,rb0.5,rb1.5}` and `licensed/cr_base`**, recorded as such in each file's own `config`. What those twins change is the **refit point**: `CRH0 68.60 → 68.570730`, `CROM 0.2973 → 0.291246`. ⇒ *The arm of record is a switch and a point; "repointed onto the arm of record" is two claims and the suffix carries one.* **Nothing in print changes for this** — it is a statement about how a move must be reported, and I have corrected my own `.9` entry accordingly.
+
+#### ⛔⛔ ④ AND FIVE LEGS ARE `RE-KEY`: THE PATH IS NOT WHAT MOVES, THE KEY IS
+
+`r6897_fields`, `r6897_noop`, `r6911_noop`, `r6915_noop`, `r6919_geometry`: **every shared array bit-identical, and the arm of record in `..._leafrec1` keys the namesake does not have** (15 of them in the fields bank, 13 in the geometry bank). A path-only repoint of these reads the namesake's numbers and reports no change.
+
+**And one of them unblocks a receipt that declares itself blocked on it.** `P15_the_monopole_zero_point…` says in its own source, at `r7641 ⑴`: *"`r6897_fields.npz` … **no arm-of-record key** … NAMESAKE, bank-blocked"* and *"`r6897_noop` still has no arm-of-record key. So the pair cannot be moved."* **Both keys now exist** (`k__cr_leafrec1`, `Dl__cr_leafrec1`). ⇒ **That declaration is stale and the leg is releasable.** *I am repointing it at the key, not reporting the item as leaving your list.*
+
+⚠ **One step inferred, not read**: `refit_grid185/cr_base.npz` carries no `switches` and no `config` key, so *that the two namesakes differ in `LEAFREC` alone* cannot be read off the files. What is read is the twins' nine-leg identity and `grid_licensed`'s own recorded `LEAFREC=1`.
+
+#### ⛔⛔ ⑤ AND A CORRECTION TO MY OWN `r7673` ROUTE OF THIS MORNING: **FOUR PRINTED FIGURES THAT MOVE WERE LEFT OUT OF THE TABLE I SENT YOU**
+
+My first `r7673` route gave you six moved figures for `P15_a_source_with_no_physics…`. **The receipt's own docstring lists eight, and four printed numbers at `l.1807–1809` are not in my table.** *You land the paper from that table, so left as it was they would have stayed on namesake values in print.* The missing rows:
+
+| the paper | namesake | arm of record | |
+|---|---|---|---|
+| **l.1807** the sound-horizon agreement, `to $0.08$ per cent` | 0.08 | **0.36 → `$0.36$`** | **MOVES** |
+| **l.1807** `$17.307$ against $17.294$~Mpc` | 17.3074 / 17.2940 | 17.3074 / **17.3691 → `$17.369$`** | **arm MOVES, control does not** |
+| **l.1809** the comoving-distance difference, `$14.6$ per cent` | 14.59 | **15.55 → `$15.5$`** | **MOVES** |
+| **l.1809** `$38.04$ against $43.59$` | 38.042 / 43.5913 | 38.042 / **43.9573 → `$43.96$`** | **arm MOVES, control does not** |
+
+⇒ **So `l.1806–1809` reads, on the arm of record:** *"the sound horizon this plasma accumulates agrees between the arms to $0.36$ per cent, $17.307$ against $17.369$~Mpc, while the comoving distance across that same window differs by $15.5$ per cent, $38.04$ against $43.96$"*. ⌗ *The clause's meaning is unchanged and arguably stronger — the sound horizon still agrees to a third of a per cent while the distance differs by fifteen — but the digits are different and `0.08` is now wrong by a factor of four.*
+
+**And the `43.96` is confirmed by a second, independent route in the same revision.** `P15_the_monopole_zero_point…`, repointed at the key today, reads the arm's visibility FWHM out of its own `r6897_fields_leafrec1` bank and gets **43.9573 Mpc** — the same number to four decimals, from a different bank through a different code path. *Its own printed width ratio moves `1.146 → 1.155` with it, which is not a figure the paper carries.*
+
+⌗ **How the omission happened, because it is the same shape as the rest of this revision.** I built the route table by reading the paper for figures my *gates* had moved, and the two `l.1807–1809` pairs are printed in the receipt's **docstring** and compared there, not asserted in a numbered gate. ⇒ ***A route table built from the gates is not a route table built from the receipt.*** The receipt's own `r7673+cc66.4` docstring note lists all eight; I wrote that note and then did not read it back when I wrote your table.

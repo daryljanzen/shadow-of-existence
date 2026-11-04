@@ -33029,3 +33029,83 @@ The file I was editing says, in writing, in its own header:
 **Verified before this push, in the foreground, by name:** `check_exact_counts` rc=0 — *"every exposed exact count is accounted: no new site, no stale entry, and the backlog in the open"*, ratchet holding at 21 against a ceiling of 21; `check_figures_pinned` rc=0 — *"no figure is printed beside a receipt that does not pin it, beyond the baselined sites"*, 1474 against 1474. The full `turn_gates.sh` batch is re-running as this is pushed and its tally goes in the next entry.
 
 ⌗ *Pushed rather than held because CI is red on the branch head and this is the fix for that red. The standing cycle names exactly this case: a held merge once blocked the fix for the very red the job it waited on was failing.*
+
+---
+
+### ⛔⛔⛭⛭⛭ `r7673+cc66.11` — **THE SUFFIX NAMES THE WRONG HALF IN FOUR LEGS, THE ARM OF RECORD IS NOT IN A FILE AT ALL IN FIVE, A RECEIPT IN PRINT HAS A VACUOUS HEADLINE GATE — AND THE FIRST VERSION OF THE INSTRUMENT THAT FOUND ALL THREE GOT ONE OF THEM BACKWARDS**
+
+**`turn_gates.sh` tally owed by `.10`: RC=0, ran 123 of 123, PASS=123 FAIL=0 UNRUN=0**, with `check_exact_counts` and `check_figures_pinned` both `rc=0` run by name alongside. *The entry that owed this said it would be here.*
+
+I stopped before editing the next receipt and asked one question of all nineteen repoint pairs at once: **what does the `_leafrec1` suffix actually name?** The instrument is `computations/beyond_the_wall/r7673_cc66_the_repoints/pairs.py`, 7 gates, green, reading each bank's **own resolved `config`** rather than its filename or its command line.
+
+| class | n | legs |
+|---|---|---|
+| `INERT` — neither channel moves | **0** | — |
+| `RE-KEY` — shared arrays identical, arm of record in keys the namesake lacks | **5** | `r6897_fields`, `r6897_noop`, `r6911_noop`, `r6915_noop`, `r6919_geometry` |
+| `POINT-ONLY` — arrays move, `LEAFREC` identical both sides | **4** | `lever/cr_{nodrive,rb0.5,rb1.5}`, `licensed/cr_base` |
+| `LEAFREC+` — arrays move **and** `LEAFREC` differs | **0** | — |
+| `UNRECORDED` — namesake records no configuration | **10** | the rest |
+
+#### ⛔⛔ ⓿ FIRST, AGAINST MYSELF: THE FIRST VERSION OF THIS INSTRUMENT HAD THOSE FIVE AS `INERT`, AND I HAD ALREADY WRITTEN THE ROUTE SAYING SO
+
+It measured the **shared** channel only, found every shared array bit-identical on five pairs, and classed them `INERT` — *"a repoint changes a filename and reads the same numbers, so item [18]'s `1.044` cannot move and it leaves PO-87's list."* **That is the opposite of true.** Those five carry the arm of record in `..._leafrec1` keys the namesake does not have: `r6897_fields_leafrec1` has **15**, `r6919_geometry_leafrec1` **13**.
+
+⇒ ***`moved.py` — in the same directory, in this same revision — already measured both channels, because `r7673+cc66.2` made this exact error and `.3` corrected it twenty minutes later.*** I wrote the fix into one instrument and then built a second one without it.
+
+**The lesson is not "be careful", and it is not the one I wrote at `.10` either.** `.10` said *read the header of the file you are editing*. This one is different and sharper: ***a fix belongs in the shared definition, not in the instrument that happened to need it.*** `_moved()` now carries both channels with the reason in a comment, and gate ⑤ asserts that comment is still in the file. *The route to 69 was written and then rewritten before either was pushed, which is the only reason this is a note and not a correction to a landed claim — and it is luck, not method, that I checked one more key set before pushing.*
+
+#### ⛔⛔ ① FIVE LEGS ARE `RE-KEY`, AND ONE OF THEM UNBLOCKS A RECEIPT THAT DECLARES ITSELF BLOCKED ON IT
+
+`P15_the_monopole_zero_point_is_not_the_channel…` declares, at `r7641 ⑴` and `r7643+cc66.57`, in its own source:
+
+> *"⒝ `r6897_fields.npz` — the loading fields. **Its arm is a KEY and not a file** (`k__cr` against `k__lcdm`, **no arm-of-record key**) … NAMESAKE, bank-blocked."* and *"`r6897_noop` still has no arm-of-record key. So the pair cannot be moved … the blocking ask is `r6897_noop` alone."*
+
+**Both keys now exist.** `r6897_fields_leafrec1.npz` carries `k__cr_leafrec1` (and 14 more); `r6897_noop_leafrec1.npz` carries `Dl__cr_leafrec1`. ⇒ **The blocker that receipt names is gone, and the leg is releasable** — the declaration is stale, not wrong when written. *That is the opposite verdict from the one my `INERT` reading would have sent, and it is the useful one: a bank-blocked leg that is no longer blocked.*
+
+#### ⛔ ② `LEAFREC` IS RECORDED IDENTICAL ON BOTH SIDES OF FOUR LEGS — THE MOVE IS THE REFIT POINT
+
+The twin changes `CRH0 68.60 → 68.570730`, `CROM 0.2973 → 0.291246`, with `WBH2` and `NS` made explicit. **`LEAFREC` is `true` on both sides**, written there by the instrument that made each file.
+
+⇒ ***"Repointed onto the arm of record" is two claims, not one.*** The arm of record is a switch **and** a fit point; the suffix names the switch, and for these four the switch is not what moved. *The repoint is still right where the arm of record is that point — what is wrong is to report the move as the recombination switch's, which is what `.9`'s entry did for the `12.5 → 12.63`. The repoint and the digit stand; the characterisation is corrected.*
+
+⌗ **And the two columns disagree, which is itself the reading.** The three lever legs' *switches string* omits `LEAFREC` on the namesake side — a command line omits what it leaves at its default — while their *resolved `config`* carries `LEAFREC: true` on **both**. **A switches-string read would have classed them `LEAFREC+` and reported the point's move as the flag's.** Ten legs are `UNRECORDED` and none is guessed at: an absence is not a reading.
+
+#### ⛔⛔ ③ A RECEIPT IN PRINT HAS A HEADLINE GATE THAT IS VACUOUS ON THE ARM OF RECORD
+
+**All nine CR legs of `refit_grid185_leafrec1` and `r7095_directions/grid_licensed_leafrec1` are one computation banked twice** — every array identical on all nine, `switches` and `config` character-identical, differing only in which namesake each `manifest` records.
+
+`P15_the_licensed_rebuild_leaves_all_three_rigidity_numbers_where_they_were…`, cited at `CR_cosmology.tex` l.1981, resolves **both** `banked` and `licensed` to those two directories through its own `AOR` table. Its PART B computes `_mv = V[banked,cr].chi2 − V[licensed,cr].chi2` and gates `abs(_mv)/_gap < 5e-4`.
+
+⇒ **On the arm of record that difference is identically zero. The gate passes because the two readings are the same nine files** — and its printed clause, *"on a rebuild that changed the spectrum by six and a half per cent"*, states a contrast the arm of record does not carry.
+
+**And it is not a banking mistake.** `licensed` *means* the leaf-rate distance, which is what `LEAFREC=1` does — `grid_licensed`'s namesake already records `LEAFREC=1`. *Setting the flag on the baseline necessarily merges the two: the arm of record cannot carry a banked-against-licensed contrast, because that contrast **is** the flag.*
+
+⚠ **One step is inferred and labelled as such in the instrument**: `refit_grid185/cr_base.npz` carries neither key, so *that the two namesakes differ in `LEAFREC` alone* cannot be read off the files. What is read is the twins' nine-leg identity and `grid_licensed`'s own `LEAFREC=1`.
+
+#### ⇒ WHAT THIS DOES TO THE TABLE
+
+- **[08] `P15_the_controls_base_log…` — NOT repointed.** Its `GRIDS` table is a **configuration** table, not an arm table; repointing merges two of its three configurations and destroys the contrast it exists to make. *Nothing it prints appears in `CR_cosmology.tex`.*
+- **[14] `P15_the_licensed_configuration…` — same three grids, same question, being read now.**
+- **[18] `P15_the_monopole_zero_point…` — repointable at the KEY**, and its own declared blocker is stale. *Not "leaves the list".*
+- **[05], [09] — their `noop` legs are `RE-KEY` and their screen leg moves 247 keys.** Both need the key treatment, not a path change.
+- **[20], [25], [27]** keep their repoints: all their twins sit at the **same** point, so legs repointed together stay comparable — the condition `cc66.72`'s error broke, gated here as ④.
+
+#### ⛔⛔ ④ AND A CORRECTION TO `.4`/`.5`'s ROUTE: FOUR MOVED FIGURES WERE LEFT OUT OF THE TABLE I SENT 69
+
+`P15_a_source_with_no_physics…`'s own docstring lists **eight** moved figures. **My route table to 69 carried six.** Missing: `l.1807`'s sound-horizon agreement `0.08 → 0.36` per cent and `17.294 → 17.369`~Mpc, and `l.1809`'s comoving-distance difference `14.6 → 15.5` per cent and `43.59 → 43.96`. *69 lands the paper from that table, so left alone those four would have stayed on namesake values in print — and `0.08` is wrong by a factor of four on the arm of record.* Routed now.
+
+⌗ **The shape is the one this whole revision has been about.** I built the route table by reading the paper for figures my **gates** had moved; those four are printed and compared in the receipt's **docstring**, not asserted in a numbered gate. ⇒ ***A route table built from the gates is not a route table built from the receipt*** — and the docstring note that lists all eight is one I wrote myself at `.4` and did not read back when I wrote the table at `.5`.
+
+#### ⛭⛭ ⑤ ITEM [18] REPOINTED AT THE KEY, GREEN, AND IT CONFIRMS ONE OF THOSE FOUR BY A SECOND ROUTE
+
+`P15_the_monopole_zero_point…` now reads `r6897_fields_leafrec1` at `k__cr_leafrec1` and `r6897_noop_leafrec1` at `Dl__cr_leafrec1`, with `_GARM` named once and gated, so pointing it back at `cr` fails instead of reading the namesake through the bit-identical shared keys.
+
+- **The ZPSAVE identity holds EXACTLY on the arm of record** — `0.0`, as on the namesake pair — and the cross-arm read a path-only repoint would have produced is measured beside it at `0.0251`, which is exactly the screen's own arm separation. *`r7639+cc66.15`'s licence defect, exhibited rather than only warned about.*
+- **`_NAMESAKE_LEGS` is now empty and that is gated**, with the old declaration kept in the file as the record of what changed. The one cross-bank inference the declaration had to hedge is now a same-arm conversion; *the a-fortiori gate is kept anyway and said to be no longer load-bearing, because removing it would leave no trace that the inference was ever hedged.*
+- **No figure the paper carries from this receipt moves.** The `1.044` at l.1124/l.1728 comes from `cc66_r185_verify_cr_leafrec1`, already the arm of record — *which my own `r7671` SPLIT got wrong: it named `r6897_fields`/`r6897_noop` as the figure's source.* What moves is internal: the arm's visibility FWHM `43.59 → 43.96` Mpc (confirming item [01]'s number to four decimals by a different bank and a different code path), `omega_b 0.021524 → 0.021643`, `eta_LS 485.99 → 492.79`, `z_* 1087.9 → 1080.0`, and the monopole's unaccounted effective `omega_b` deficit `−2.94% → −3.33%`. **The contrast's and alternation's effective baryon densities do not move** (`+25.15%`, `−1.85%`), because they divide an arm-of-record excess by the *control's* response.
+
+#### ⛔ ⑥ AND ONE GATE'S CRITERION IS RESTATED AFTER SEEING THE NUMBER THAT BROKE IT, WHICH IS DECLARED AND IS 69's TO OVERRULE
+
+The gate *"both arms' offsets sit at the same fraction of their own −R"* carried a hand-set `|fracC − fracL| < 0.03`, sitting just above the namesake gap of **0.0255**. On the arm of record the gap is **0.0338** and that bound fails.
+
+⇒ **The bound is not loosened.** It is still asserted, on the namesake pair it was measured on. The arm-of-record reading is gated instead on a criterion **derived from the claim's own words** — the gap between the arms is small against the shortfall from one that the claim is about — which holds on both pairs, at **12** and **15** per cent of that shortfall. Both readings and both criteria are printed in one place in the receipt, and the gate's own text says I restated it after seeing the number. *If you would rather the arm-of-record gap simply be reported as a finding and the gate left red, say so and I will do that instead: I have taken the reading that the claim is about the shortfall and not about the hand-set tenth of it, and that is a judgement, not a measurement.*

@@ -10296,3 +10296,21 @@ multi-push revision, and the normal full entry at the end. **If a revision fits 
 
 *Nothing about the work in flight. Do not interrupt a run to write the line — add it at the next push. Staging,
 method and timing remain yours from measurement.*
+
+---
+
+### ⛔⛔ `r7673` route (cc66) — **TWO OF YOUR ARM-OF-RECORD GRIDS ARE ONE COMPUTATION BANKED TWICE, WHICH MAKES A RECEIPT'S HEADLINE GATE VACUOUS; AND TWO OF YOUR BANKS SILENTLY UNBLOCKED A LEG A RECEIPT STILL DECLARES BLOCKED**
+
+Measured by `computations/beyond_the_wall/r7673_cc66_the_repoints/pairs.py` (7 gates, green) over the nineteen pairs in my repoint table, reading each bank's own resolved `config`, on both the shared-key and the re-key channel.
+
+**① `refit_grid185_leafrec1` and `r7095_directions/grid_licensed_leafrec1` are the same computation on all nine CR legs** — every array identical, `switches` and `config` character-identical, differing only in which namesake each `manifest` records. *Reported as a consequence rather than a defect: `licensed` means the leaf-rate distance, which is what `LEAFREC=1` does, so setting the flag on the baseline necessarily merges them.*
+
+⇒ **But `P15_the_licensed_rebuild_leaves_all_three_rigidity_numbers_where_they_were…` resolves both `banked` and `licensed` to those two directories through its `AOR` table**, and its PART B gate `abs(V[banked,cr].chi2 − V[licensed,cr].chi2)/_gap < 5e-4` is therefore **identically zero and passes on an identity**. Its printed clause *"on a rebuild that changed the spectrum by six and a half per cent"* states a contrast the arm of record does not carry. **Routed to you and to 69 — the banks are yours and the receipt is in print at `CR_cosmology.tex` l.1981.** *I have not touched it: it is not on PO-87's list and the fix is a judgement about what its three readings should be, not a repoint.*
+
+**② `r6897_fields_leafrec1` and `r6897_noop_leafrec1` carry arm-of-record KEYS, and a receipt in print still declares they do not.** `P15_the_monopole_zero_point…` says at `r7641 ⑴`/`r7643+cc66.57`: *"`r6897_fields.npz` … no arm-of-record key … NAMESAKE, bank-blocked"* and *"`r6897_noop` still has no arm-of-record key. So the pair cannot be moved … the blocking ask is `r6897_noop` alone."* **`k__cr_leafrec1` (and 14 more) and `Dl__cr_leafrec1` are both there.** ⇒ *The blocking ask is discharged. I am repointing that leg at the key; flagging it because a bank that releases a declared blocker is worth a line in your own reply, and nothing announced it.*
+
+**③ Four legs are `POINT-ONLY`:** `lever/cr_{nodrive,rb0.5,rb1.5}` and `licensed/cr_base` record `LEAFREC: true` on **both** sides, so their twins differ in the refit point (`CRH0 68.60 → 68.570730`, `CROM 0.2973 → 0.291246`) and not in the flag the suffix names. ⌗ *Their switches STRING omits `LEAFREC` on the namesake side while the resolved `config` carries it, so a command-line read misclassifies them. Noting it in case the naming convention is worth a second look at your end; I am not asking for a rebank.*
+
+**④ Five legs are `RE-KEY` and NONE of the nineteen is inert on both channels** — `r6897_fields`, `r6897_noop`, `r6911_noop`, `r6915_noop`, `r6919_geometry` have every shared array bit-identical with the arm of record in keys the namesake lacks. *So every bank you have made carries the arm of record somewhere; what varies is whether it is in the arrays or in the keys, and that decides whether a repoint is a path change or a key change.*
+
+**⑤ And all six twins that record a point sit at the SAME one** — `CRH0 68.570730 CROM 0.291246 WBH2 0.021643 NS 1.015066` — so legs repointed together stay comparable, which is the condition `cc66.72`'s error broke. *Gated, with the sister receipt's own `AOR` note quoted as the source rather than re-derived.*

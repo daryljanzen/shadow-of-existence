@@ -1,0 +1,215 @@
+
+`r7673` (cc66) -- ** WHAT THE `_leafrec1` SUFFIX ACTUALLY NAMES, READ OFF THE BANKS' OWN RESOLVED
+CONFIGURATION RATHER THAN OFF THEIR FILENAMES. **
+
+*** THE FINDING, IN TWO PARTS.  ⑴ FOR FOUR OF THE NINETEEN PAIRS, `LEAFREC` IS NOT WHAT MOVES: IT IS
+`true` ON BOTH SIDES, RECORDED AS SUCH IN EACH FILE'S OWN `config`, AND WHAT THE TWIN CHANGES IS THE
+REFIT POINT.  ⑵ AND FOR FIVE MORE THE ARM OF RECORD IS NOT IN A FILE AT ALL BUT IN KEYS THE NAMESAKE
+DOES NOT HAVE, SO A PATH-ONLY REPOINT READS THE NAMESAKE'S NUMBERS AND REPORTS NO CHANGE.  ⛔ NOT
+ONE OF THE NINETEEN IS INERT ON BOTH CHANNELS. ***
+
+⌗⌗ ** AND THE FIRST VERSION OF THIS INSTRUMENT GOT ⑵ EXACTLY BACKWARDS, in this same revision. **
+It measured the shared channel only, found five pairs with every shared array bit-identical, and
+called them `INERT` -- which went into a route to `69` saying an item left PO-87's list because its
+figure `cannot move`.  *The opposite is true: those five carry the arm of record in `..._leafrec1`
+keys, and one of them is the very bank a receipt in print declares it is BLOCKED on.*  ⇒ `moved.py`,
+in this same directory and this same revision, had already measured both channels, because
+`r7673+cc66.2` made this error and `.3` corrected it twenty minutes later.  ** The lesson is not to
+be careful: it is that a fix belongs in the shared definition, not in the instrument that needed it
+-- `_moved` below now carries it, and gate ⑤ asserts the note saying so is still in this file. **
+
+Built r7673+cc66 (node 66, code seat), answering `r7673` ⓶.
+
+===================================================================================================
+** WHY THIS IS ASKED BEFORE A RECEIPT IS EDITED, AND IT IS r7645's TRAP ONE LEVEL DEEPER **
+===================================================================================================
+
+`r7645+cc66.68` named the trap this corpus keeps setting: *an arm-of-record twin is a SUPERSET of its
+namesake*, so a repoint that changes only a filename can read the same numbers and report no change.
+Its remedy was to name the arm key once in a constant and GATE it.
+
+** That remedy is sound and it does not reach this case.**  Here the twin's NAME is the thing that
+lies: the directory and the file say `_leafrec1`, and for five of the nineteen pairs `LEAFREC` is
+already `true` on the NAMESAKE side -- written into its own `config` by the instrument that made it.
+*What those twins change is `CRH0 68.60 -> 68.570730`, `CROM 0.2973 -> 0.291246`, with `WBH2` and `NS`
+made explicit: the REFIT POINT, which is the arm of record's other half.*
+
+⇒ ** So "repointed onto the arm of record" is two claims, not one, and the suffix names only one of
+them -- in these five cases the one that did not move. **  A repoint is still right where the arm of
+record is that point; what is wrong is to report the move as the recombination switch's.
+
+⌗ ** AND THE SISTER RECEIPT ALREADY HAD THE OTHER HALF OF THIS WRITTEN DOWN. **
+`P15_the_licensed_rebuild_leaves_all_three_rigidity_numbers_where_they_were...` carries, at its own
+`AOR` table: *"All three siblings sit at the SAME point -- CRH0 68.57073, CROM 0.291246, WBH2
+0.021643, NS 1.015066 -- so the three readings stay comparable with each other.  `refit_grid185_
+leafrec1_distances/` is a DIFFERENT point (68.60 / 0.2973) and is deliberately NOT used here:
+pairing it with `grid_oneclock_leafrec1` would compare two backgrounds, which is the error `cc66.72`
+found."*  ** That note says the point is part of what the twin carries.  It is the third time in one
+revision that the trap was documented in the tree before this seat walked into it. **
+
+===================================================================================================
+** THE FOUR CLASSES, AND EACH IS A DIFFERENT ANSWER TO "SHOULD THIS LEG REPOINT" **
+===================================================================================================
+
+  `INERT`       neither channel moves: every shared array bit-identical AND no arm-of-record key
+                inside the twin.  A repoint is a true no-op and a figure read off such legs cannot
+                move.  ⛔ *Nothing in this table is in this class.*
+  `RE-KEY`      every shared array bit-identical, and the arm of record lives in keys the namesake
+                does not have (`..._cr_leafrec1`).  ** So the repoint is a KEY change, not a path
+                change, and a path-only repoint reads the namesake's numbers silently. **
+  `POINT-ONLY`  arrays move, and `LEAFREC` is identical on both sides.  The move is the refit point.
+                Legitimate, but it must not be reported as the recombination switch's.
+  `LEAFREC+`    arrays move AND `LEAFREC` differs between the two recorded configurations.
+  `UNRECORDED`  the namesake carries no `config` and no `switches` key, so its configuration cannot
+                be read from the file.  ⛔ NOT reported as either -- an absence is not a reading.
+
+
+====================================================================================================
+  ① EVERY PAIR, CLASSIFIED FROM ITS OWN RECORDED CONFIGURATION
+====================================================================================================
+                       leg       class    LFR n/t  shrd  mvd  rekey  where LEAFREC was read
+  --------------------------------------------------------------------------------------------------
+         r6919_injected_cr  UNRECORDED    - /   1    35   20      0  namesake records no `config` key -- LEAFRE
+            r6919_geometry      RE-KEY    - /   1    30    0     13  namesake records no `config` key -- LEAFRE
+                r6911_noop      RE-KEY    - /   1     8    0      2  namesake records no `config` key -- LEAFRE
+           r6911_source_cr  UNRECORDED    - /   1    31   27      0  namesake records no `config` key -- LEAFRE
+    r6893_switch_screen_cr  UNRECORDED    - /   1   373  247      0  namesake records no `config` key -- LEAFRE
+                r6915_noop      RE-KEY    - /   1     4    0      1  namesake records no `config` key -- LEAFRE
+              r6897_fields      RE-KEY    - /   1    72    0     15  namesake records no `config` key -- LEAFRE
+                r6897_noop      RE-KEY    - /   1     6    0      1  namesake records no `config` key -- LEAFRE
+              r6885_los_cr  UNRECORDED    - /   1     6    4      0  namesake records no `config` key -- LEAFRE
+           r6885_losdp0_cr  UNRECORDED    - /   1     6    4      0  namesake records no `config` key -- LEAFRE
+           r6885_lossw0_cr  UNRECORDED    - /   1     6    4      0  namesake records no `config` key -- LEAFRE
+                c54.178_cr  UNRECORDED    - /   1     6    4      0  namesake records no `config` key -- LEAFRE
+                c54.177_cr  UNRECORDED    - /   1     6    4      0  namesake records no `config` key -- LEAFRE
+            banked/cr_base  UNRECORDED    - /   1     6    4      0  namesake records no `config` key -- LEAFRE
+          licensed/cr_base  POINT-ONLY    1 /   1     7    4      0  namesake records no `config` key -- LEAFRE
+          oneclock/cr_base  UNRECORDED    - /   1     8    4      0  namesake records no `config` key -- LEAFRE
+          lever/cr_nodrive  POINT-ONLY    1 /   1     8    4      0  config IDENTICAL on both sides
+            lever/cr_rb0.5  POINT-ONLY    1 /   1     8    4      0  config IDENTICAL on both sides
+            lever/cr_rb1.5  POINT-ONLY    1 /   1     8    4      0  config IDENTICAL on both sides
+
+  all 19 pairs classified, each from its own file's `config` or `switches`
+
+====================================================================================================
+  ② THE CLASSES PARTITION THE TABLE, AND THE TWO THAT CHANGE AN ANSWER ARE NAMED WHOLE
+====================================================================================================
+        INERT   0   (none)
+       RE-KEY   5   r6897_fields, r6897_noop, r6911_noop, r6915_noop, r6919_geometry
+   POINT-ONLY   4   lever/cr_nodrive, lever/cr_rb0.5, lever/cr_rb1.5, licensed/cr_base
+     LEAFREC+   0   (none)
+   UNRECORDED  10   banked/cr_base, c54.177_cr, c54.178_cr, oneclock/cr_base, r6885_los_cr, r6885_losdp0_cr, r6885_lossw0_cr, r6893_switch_screen_cr, r6911_source_cr, r6919_injected_cr
+
+  19 of 19: the four classes partition the table with nothing double-counted
+
+  ⛔ ** 4 leg(s) are POINT-ONLY: `LEAFREC` is recorded identical on
+     both sides and the arrays move anyway. **  For these the `_leafrec1` name is a
+     misnomer and the move is the refit point:
+             lever/cr_nodrive  switches: CRH0 68.60->68.570730; CROM 0.2973->0.291246; LEAFREC (default)->1
+                               resolved config IDENTICAL on both sides
+               lever/cr_rb0.5  switches: CRH0 68.60->68.570730; CROM 0.2973->0.291246; LEAFREC (default)->1
+                               resolved config IDENTICAL on both sides
+               lever/cr_rb1.5  switches: CRH0 68.60->68.570730; CROM 0.2973->0.291246; LEAFREC (default)->1
+                               resolved config IDENTICAL on both sides
+             licensed/cr_base  switches: CRH0 68.60->68.570730; CROM 0.2973->0.291246; NS (default)->1.0150
+                               resolved namesake records no `config` key -- LEAFREC read off its switches string instead
+
+     ⌗ ** AND THE TWO COLUMNS DISAGREE ON `LEAFREC` FOR THE THREE LEVER LEGS, WHICH IS
+        ITSELF THE READING. **  Their switches STRING omits `LEAFREC` on the namesake
+        side, because a command line omits what it leaves at its default; their resolved
+        `config` carries `LEAFREC: true` on BOTH sides, because that is the default the
+        instrument took.  *A switches-string read would have called these `LEAFREC+` and
+        reported the refit point's move as the recombination switch's.*
+
+  ⛔⛔ ** 5 leg(s) are RE-KEY: every SHARED array is bit-identical and the arm
+     of record is in keys the namesake does not have. **  A path-only repoint of these
+     reads the namesake's numbers and reports no change -- `r7645+cc66.68`'s trap exactly,
+     live in this table.  ⇒ ** For these the KEY has to move, not the path. **
+                 r6897_fields  item(s) 18             15 arm-of-record key(s), e.g. D_M__cr_leafrec1, R_eta__cr_leafrec1, R_peak__cr_leafrec1
+                   r6897_noop  item(s) 18             1 arm-of-record key(s), e.g. Dl__cr_leafrec1
+                   r6911_noop  item(s) 01, 05         2 arm-of-record key(s), e.g. Dl__noop_cr_leafrec1, Dl__xsonly_cr_leafrec1
+                   r6915_noop  item(s) 09             1 arm-of-record key(s), e.g. Dl__noop_cr_leafrec1
+               r6919_geometry  item(s) 01             13 arm-of-record key(s), e.g. D_M__cr_leafrec1, R_S__cr_leafrec1, d_chi__cr_leafrec1
+
+  ⌗ ** NO leg in this table is INERT on both channels. **  Every one of the nineteen
+     carries the arm of record somewhere -- in a moved array, or in a key the namesake
+     does not have.  *The class is kept and printed empty rather than dropped, because
+     `INERT` is the verdict a reader would otherwise infer from `moved = 0`.*
+
+====================================================================================================
+  ③ THE TWO TWINS THAT ARE ONE COMPUTATION BANKED TWICE
+====================================================================================================
+  refit_grid185_leafrec1/cr_base.npz against r7095_directions/grid_licensed_leafrec1/cr_base.npz
+    shared keys 9; differing ['manifest']
+    `switches` character-identical: True
+    `config` character-identical  : True
+    `manifest` differs in: ['file', 'held', 'namesake']
+
+  ⛔ ** SO ON THE ARM OF RECORD THE `banked` AND `licensed` CONFIGURATIONS ARE ONE
+     COMPUTATION, BANKED TWICE UNDER TWO NAMES -- every shared array identical and
+     the resolved `config` character-identical, differing only in which namesake each
+     manifest records. **
+     *And that is not an accident of the banking: `licensed` MEANS the leaf-rate
+      distance, which is what `LEAFREC=1` does -- its namesake already carries
+      `LEAFREC=1` in its own switches.  So the arm of record IS the licensed
+      configuration, and a receipt whose table contrasts the two has no contrast left
+      on it.*
+
+====================================================================================================
+  ③ᵇ AND IT IS NOT ONE LEG: ALL NINE OF THE TWO GRIDS' CR LEGS ARE THE SAME COMPUTATION
+====================================================================================================
+  *`reach()` in the sister receipt reads the WHOLE grid -- the base and the eight derivative
+   legs -- so the identity matters on all nine or it does not matter at all.*
+  legs in refit_grid185_leafrec1: 10   in r7095_directions/grid_licensed_leafrec1: 9   shared by name: 9
+  of the 9 shared legs, 9 differ in `manifest` ALONE -- every other array identical
+  ⛔⛔ ** SO ALL NINE LEGS ARE ONE COMPUTATION, AND THE CONSEQUENCE IS A LIVE ONE. **
+     `P15_the_licensed_rebuild_leaves_all_three_rigidity_numbers_where_they_were...` is
+     cited at `CR_cosmology.tex` l.1981 and resolves BOTH `banked` and `licensed` to
+     these two directories through its own `AOR` table.  Its PART B headline computes
+     `_mv = V[banked,cr].chi2 - V[licensed,cr].chi2` and gates `abs(_mv)/_gap < 5e-4`.
+     ⇒ ** On the arm of record that difference is IDENTICALLY ZERO, so the gate passes
+     because the two readings are the same nine files -- not because the rebuild moves
+     nothing. **  Its printed clause, `on a rebuild that changed the spectrum by six and
+     a half per cent`, states a contrast the arm of record does not carry.
+     ⌗ *Routed, not repaired here: that receipt is not on PO-87's list and the banks are
+      70's.  And this is not a banking mistake -- `licensed` MEANS the leaf-rate
+      distance, so setting `LEAFREC=1` on the baseline NECESSARILY merges the two.  The
+      arm of record cannot carry a banked-against-licensed contrast, because that
+      contrast IS the flag.*
+     ⚠ *One step of this is INFERRED and not read: `refit_grid185/cr_base.npz` carries no
+      `switches` and no `config` key, so that the two NAMESAKES differ in `LEAFREC` alone
+      cannot be read off the files.  What is READ here is that their twins are identical
+      and that `grid_licensed`'s namesake already records `LEAFREC=1`.*
+
+====================================================================================================
+  ④ THE REFIT POINT IS THE ARM OF RECORD'S OTHER HALF, AND EVERY MOVING TWIN SITS AT IT
+====================================================================================================
+  *Quoted from the sister receipt's own `AOR` note rather than re-derived: CRH0 68.570730,
+   CROM 0.291246, WBH2 0.021643, NS 1.015066.*
+    [ok]         banked/cr_base  CRH0=68.570730 CROM=0.291246 WBH2=0.021643 NS=1.015066
+    [ok]       licensed/cr_base  CRH0=68.570730 CROM=0.291246 WBH2=0.021643 NS=1.015066
+    [ok]       oneclock/cr_base  CRH0=68.570730 CROM=0.291246 WBH2=0.021643 NS=1.015066
+    [ok]       lever/cr_nodrive  CRH0=68.570730 CROM=0.291246 WBH2=0.021643 NS=1.015066
+    [ok]         lever/cr_rb0.5  CRH0=68.570730 CROM=0.291246 WBH2=0.021643 NS=1.015066
+    [ok]         lever/cr_rb1.5  CRH0=68.570730 CROM=0.291246 WBH2=0.021643 NS=1.015066
+
+  all 6 twins that record a point sit at the SAME one, so legs repointed
+  together stay comparable with each other -- the condition cc66.72's error broke
+
+====================================================================================================
+  ⑤ SCOPE, GATED RATHER THAN ASSERTED IN PROSE ALONE
+====================================================================================================
+    [ok]  ⑤ this states r7645+cc66.68's trap, which it extends rather than replaces
+    [ok]  ⑤ an UNRECORDED namesake is not reported as either class
+    [ok]  ⑤ a POINT-ONLY move is not called illegitimate, only mis-named
+    [ok]  ⑤ the second channel is measured, and the instrument records that it was added after the first version got this wrong
+
+====================================================================================================
+  GATES: ALL PASS.
+  ⛭ The `_leafrec1` suffix names ONE of the two things the arm of record changes, and for
+     4 of the 19 legs in the repoint table it names the one that did not move.
+  ⛔⛔ AND 5 legs are RE-KEY: the shared half is bit-identical and the arm of record
+     is in keys the namesake does not have, so a PATH-ONLY repoint of those reads the
+     namesake's numbers and reports no change.  For them the KEY has to move.
+  ⌗ And 0 legs are inert on both channels.
+====================================================================================================
