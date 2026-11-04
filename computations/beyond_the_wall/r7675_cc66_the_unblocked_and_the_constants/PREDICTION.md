@@ -33,3 +33,33 @@
 - **Not the paper.** `corpus/CR_cosmology.tex` is not edited here: every figure that moves goes to 69 with its sentence.
 
 ⌗ **One process commitment, from `r7673+cc66.15`'s own lesson.** `check_exact_counts` and the `S4`/`S10`/`S11`/`S13` receipts share one detector and only the corpus gate honours the adjudication baseline. ⇒ **If anything I write this revision adds an exact-count site, I run those four receipts by name in the same pass, not only the corpus gate.**
+
+## ⛭⛭ ADDENDUM, REGISTERED MID-REVISION AND IN ITS OWN COMMIT — ITEM 3's READ TURNED UP A CAUSE AND NOT ONLY A VERDICT
+
+⛔ **This addendum exists because item 3's read found something the arms above cannot score, and the
+honest thing is to register it before measuring it rather than to report it afterwards as though it
+had been predicted.** The eight sites are a CHANNEL; what the read of them turned up is a blind spot
+in my own census's classifier, which is a different object. The section above says the channel is not
+mine to turn into a standing instrument, and that still holds — **this addendum is not that.** It is
+the size of a defect, measured because four of the eight sites are explained by it.
+
+⌗ **What I already knew when I wrote this, stated so the band is registered against my real state of
+knowledge and not a pretended one:** four receipts cited at `l.2303` and `l.2344` read
+`r7093_directions/grid_oneclock/` and `r7201_cc66_loading_lever/` — namesake directories, both with a
+banked `_leafrec1` sibling — and the census's load-site classifier calls all four UNDECIDABLE, because
+the load goes through a parameter whose caller passes `os.path.join(DIRVAR, 'cr_base.npz')`. The
+directory is a variable, so no literal in the call names the arm. *This is `r7667+cc66.2`'s own lesson
+— the arm is carried by the DIRECTORY — reappearing one level further in, inside the load site, where
+cut 2's fix does not reach.*
+
+**⑧ The directory-blind class is between 4 and 12 receipts in scope, central guess 6** — a receipt
+whose every namesake read is invisible to the classifier because the directory is a variable, and
+which therefore belongs on PO-87's list and is not on it. *Falsified below 4 — I know of four already,
+so a measurement under four means my reading of those four is wrong — and falsified above 12, which
+would mean the list is not a list but a sample.*
+
+**⑨ The `l.2792` item, read as ONE site, is NOT a real miss.** *It is the eight-receipt `\item` whose
+citation run covers the whole item; I register that its uncited sentence's figure (`2.774`, the
+stretch the low-multipole floor is built on) is carried by a receipt already on the list or already on
+the arm of record. Registered in the direction that costs me nothing to check and would be expensive
+to be wrong about: eight receipts is the largest single exposure in the channel.*
