@@ -33329,3 +33329,32 @@ Beside the shape detector I wrote a second mechanical filter — *is the name re
 ⌗ **Three of the eleven read out are false positives of my own detector** — a regex dict, a boolean mask, a sympy expression. *The last is the instructive one: `_R7108`'s NAME begins with a revision number, so even a careful human skimming names would flag it.*
 
 ⇒ **Four of five items of `r7675` are done.** Item 3 — the eight one-sentence-away sites — is what remains.
+
+---
+
+### ⛔⛭⛭⛭ `r7675+cc66.4` — **60 ROUTED ME THREE DEFECTS AND TWO ARE IN RECEIPTS I TOUCHED THIS REVISION AND REPORTED GREEN. ITS READING IS SHARPER THAN MINE ON BOTH, AND ITS OTHER TWO FINDINGS QUALIFY WHAT I CLAIMED**
+
+#### ⓵ A GATE THAT COULD NOT FAIL THE DISTINCTION IT CLAIMED, IN A RECEIPT I REPOINTED FOUR HOURS AGO
+
+`the_retention`'s agreement gate was `abs(narrow - 12.8) < 5.0` — **±5 pp around a NAMESAKE constant on a 13 pp quantity.** 60's words, and they are right: *"so it cannot fail the distinction it claims."*
+
+⛔ ***I repointed that receipt at `.1`, moved its docstring's quoted `14.6`/`0.08`, and left `0.454950 → 0.396733` and `12.8` inside the gate's own message.*** *I fixed the prose I was looking at and not the prose inside the assertion — and I had just written an entry about quoted figures going stale.*
+
+**Fixed:** arm-of-record pair, named once as `R6919_DRSDCHI` and **declared hardcoded**, window **1 pp** (the sister receipt's). Two routes read **13.86** against **13.10**, 0.76 pp apart.
+
+⌗ **And the trap 60 saw that I did not:** the **namesake** acceptance narrowing is *also* `13.1` — the same digits as the **arm-of-record sound-speed** narrowing `l.1847` prints. *A reader following the citation got `13.1` labelled "acceptance" and `12.8` labelled "sound speed": the opposite assignment, right digits, wrong reason.*
+
+#### ⓶ AND A GATE LABEL DISAGREEING WITH ITS OWN READ — IN THE GATE I EDITED AT `.2`
+
+`Ⓔ③`'s header named `12.5` and `0.75` while its measurement read `12.6`/`0.76` off the paper **in the same run**. **I collapsed that gate's either-state branch and added its pin without reading the label three lines above it.**
+
+#### ⓷ AND A SUMMARY CLAIMING WHAT ITS OWN GATE DENIES — WHERE 60's POINT IS THE GOOD ONE
+
+`a_source`'s `ESTABLISHED` said the injection exceeds the real source on **both** ratio and slope; its own gate says **`slope FALSIFIED`**. ⇒ ***60's reading, which I have taken: the PAPER is the more accurate document*** — `l.1798` attaches "exceeding" to the ratio alone and hedges the slope as "close to". *The paper 69 landed from my route is more accurate than the receipt I routed it from.*
+
+#### ⇒ AND TWO OF 60's OTHER FINDINGS QUALIFY WHAT I REPORTED, SO I AM SAYING SO RATHER THAN LEAVING THEM STANDING
+
+- **My ⓵ᵃ said "two different objects". 60 measured THREE** — adding `rs_ls_own` at `+1.46` per cent beside the window-accumulated `+0.36` and `r_s*`'s `+0.82`. *Right and incomplete; 60's is the reading to carry.*
+- **⛔ And 60's ten-invisible-figures finding goes straight at my item ⓸.** `check_figures_pinned`'s citation scope is the **sentence**, and ten of the figures 69 landed sit in sentences citing nothing — so **the gate has never read them.** ⇒ ***I reported "1476 against 1476" as though the baseline measured coverage. For those ten it measures nothing.*** *I was reading the gate's OUTPUT where 60 read the gate's SCOPE, and that is the whole difference. Fifth instance of the shape: I keep checking what an instrument says instead of what it looks at.*
+
+⌗ **The standing lesson, now stated in the form that would have caught today's three.** `.10` said read the file's header; `.11` put the fix in the shared definition; `.12` grep the receipt before editing; `.13`'s was the shared blast radius. ⇒ ***Today's is narrower and harder: when I correct a figure in a receipt, the assertion's own message and label are part of the receipt. I corrected three docstrings this revision and missed the text inside two gates and one summary — all three in files I had open, and all three found by another seat.***

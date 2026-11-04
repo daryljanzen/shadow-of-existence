@@ -465,8 +465,14 @@ print("GATES: ALL PASS.")
 print(f"""
 ESTABLISHED: a source with no physics in it -- a pure oscillation on each arm's own visibility --
 projected through each arm's own machinery gives an arm/control retained ratio of {RES['sweepown']['r']:.4f} at a slope
-of {RES['sweepown']['sl']:+.5f} per unit q, exceeding the real source's 1.054 and {RSL:+.5f}, so the projection's geometry
-accounts for the effect and the source is irrelevant to it.  The order's proposed swap of chi(eta) is
+of {RES['sweepown']['sl']:+.5f} per unit q -- exceeding the real source's 1.054 on the RATIO, at a slope CLOSE TO
+the real source's {RSL:+.5f} rather than steeper than it -- so the projection's geometry
+accounts for the effect and the source is irrelevant to it.
+  (This paragraph said "exceeding ... 1.054 and {RSL:+.5f}", claiming the injection exceeds on BOTH
+  components, where this receipt's own over-delivery gate reports `ratio holds, slope FALSIFIED` on
+  the arm of record.  `60`'s `r7676` caught the disagreement, and its reading is the one taken: the
+  PAPER is the more accurate document here -- l.1798 attaches "exceeding" to the ratio alone and
+  hedges the slope as "close to", which is exactly what survives.)  The order's proposed swap of chi(eta) is
 empty -- chi = eta_0 - eta on both arms -- and the two clocks sit between r_s and eta instead, with
 Jac exactly 1 on the control and {g('jac_lo','cr'):.4f}-{g('jac_hi','cr'):.4f} across the arm's visibility.  Across that visibility the
 accumulated sound horizon agrees to {100*abs(_drs):.2f} per cent while the comoving distance differs by {100*_dch:+.1f},

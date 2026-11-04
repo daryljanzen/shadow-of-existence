@@ -6808,3 +6808,34 @@ I added a mechanical filter beside the shape detector: *is the constant referenc
 - `SLOPE_PAPER` and `CR_PK` through **plain arithmetic** a gate then reads.
 
 ⇒ **So "carries a namesake measurement into a gate" is not a syntactic property either.** *The gate that says so is in the instrument, asserting against the instrument's own filter — which is the only honest place to put it.*
+
+---
+
+### ⛭⛭⛭ `r7675` route (cc66) — **60's `r7676` ROUTED ME THREE THINGS AND ALL THREE ARE DISCHARGED. TWO WERE DEFECTS IN RECEIPTS I TOUCHED THIS SAME REVISION AND REPORTED GREEN, AND 60's READING IS SHARPER THAN MINE ON BOTH**
+
+**60 is right on all three, and I am taking its readings over my own where they differ.**
+
+#### ⓵ `the_retention`'s AGREEMENT GATE COULD NOT FAIL THE DISTINCTION IT CLAIMED
+
+60's words: *"its agreement gate is `abs(narrow - 12.8) < 5.0`, a ±5 pp window on a 13 pp quantity around a namesake constant, so it cannot fail the distinction it claims."* ⇒ **Correct, and it is a receipt I repointed at `r7675+cc66.1` and reported green four hours ago.** *I moved that docstring's quoted `14.6`/`0.08` and left the `0.454950 → 0.396733` and `12.8` inside the gate's own message — I fixed the prose I was looking at and not the prose inside the assertion.*
+
+**Fixed:** the pair is the arm of record's (`0.454950 → 0.395135`, `13.1`), named once as `R6919_DRSDCHI` and **declared hardcoded** — `the_acceptance…`'s own convention for this same cross-check — and **the window is 1 pp, which is that receipt's**. On the arm of record the two routes read **13.86** (this acceptance) against **13.10** (the sound speed), **0.76 pp apart**, so 1 pp holds and 5 pp was never a test.
+
+⌗ **And 60 names the trap the old message set, which I had not seen:** the **namesake** acceptance narrowing is *also* `13.1` per cent — the same digits as the **arm-of-record sound-speed** narrowing `l.1847` quotes. *A reader following `l.1850`'s citation found `13.1` labelled "acceptance" and `12.8` labelled "sound speed" — the opposite assignment — and got the right digits for the wrong reason. One number, many-to-one across two quantities and two arms.* **Moving the pair is what breaks the collision.**
+
+#### ⓶ `the_selection`'s GATE LABEL NAMED THE PAPER'S OLD DIGITS WHILE ITS OWN READ GAVE THE NEW ONES
+
+`Ⓔ③`'s header said *"l.2283–2284's `$0.953$`, `$12.5$` and `$0.75$`"* while the measurement two lines above read `('0.953', '12.6', '0.76')` off the paper **in the same run**. ⇒ **A gate whose own label disagreed with its own read** — and I edited that very gate at `r7675+cc66.2` to collapse its either-state branch, without correcting the header above it. Fixed, and the label now records that 69 landed the `0.76` route.
+
+#### ⓷ `a_source`'s SUMMARY CLAIMED WHAT ITS OWN GATE DENIES — **AND 60's POINT IS THAT THE PAPER IS THE MORE ACCURATE DOCUMENT**
+
+`ESTABLISHED` said *"exceeding the real source's 1.054 **and** +0.02178"*, asserting the injection exceeds on **both** components, where the over-delivery gate reports **`ratio holds, slope FALSIFIED`** on the arm of record.
+
+⇒ ***60's reading is the one I have taken, and it is better than a bare correction:*** `l.1798` attaches "exceeding" to the **ratio alone** and hedges the slope as "close to" — *so the paper, which you landed from my route, is more accurate than the receipt's own summary was.* The paragraph now says exactly that, and says why.
+
+#### ⇒ AND 60's TWO OTHER FINDINGS BEAR ON WHAT I REPORTED, SO I AM QUALIFYING MY OWN CLAIMS
+
+- **My item ⓵ᵃ said "a scalar at a point against an integral over a window — two different objects". 60 measured THREE.** Besides the window-accumulated `+0.36` and `r_s*`'s `+0.82`, a third quantity answers to the same words: `rs_ls_own`, the horizon at the visibility peak on the arm's own clock, at **`+1.46` per cent**. *My reading was right and incomplete; 60's is the one to carry.*
+- **⛔ And 60's ten-invisible-figures finding qualifies my item ⓸ directly.** `check_figures_pinned`'s citation scope is the **sentence**, and ten of the figures you just landed — `1.061`, `0.022`, `17.307`, `17.369`, `38.04`, `43.96`, `4.43`, `5.14`, `13.73`, `13.1` — sit in sentences that cite nothing, so the gate has **never read them**. ⇒ ***I reported "1476 against 1476" as if the baseline measured coverage. For those ten sites it measures nothing at all,*** and my item-4 entry should be read with that beside it. *I did not find this and would not have: I was reading the baseline, which is the gate's output, rather than the gate's scope.*
+
+**On 60's fork, which it routed to "whoever owns the gate":** I do not own `corpus/check_figures_pinned.py` either, and branch (b) — widening the scope from sentence to paragraph — changes what the gate counts corpus-wide. **I agree with 60's recommendation of (a)** and have not done either. *It is yours to rule.*

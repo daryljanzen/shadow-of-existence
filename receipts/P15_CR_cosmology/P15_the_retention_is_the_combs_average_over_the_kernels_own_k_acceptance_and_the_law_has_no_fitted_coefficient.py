@@ -4,7 +4,8 @@ P15_the_retention_is_the_combs_average_over_the_kernels_own_k_acceptance_and_the
 ** THE RETENTION IS THE COMB AVERAGED OVER THE KERNEL'S OWN k-ACCEPTANCE, AND THE LAW THAT SAYS SO HAS
    NO FITTED COEFFICIENT -- so it predicts an ABSOLUTE amplitude and can be killed by one. **
 
-`r6919+cc66.42` named the joint object -- dr_s/dchi across the visibility, 0.454950 against 0.396733 --
+`r6919+cc66.42` named the joint object -- dr_s/dchi across the visibility, 0.454950 against 0.395135
+on the ARM OF RECORD (0.396733 was the namesake's, and `60`'s `r7676` caught it still quoted here) --
 and stopped there, under a `no mechanism` guard.  `r7039` lifted that guard and `r7043` composed the
 result with `r7041`'s convergence order.  This receipt is the law.
 
@@ -240,11 +241,33 @@ for t in ('lcdm', 'cr'):
     sp[t] = float((2 * float(d['r_s__fixed']) * d['dkw'])[m].mean())
     print(f"    {t}: the acceptance spans 2 r_s* dk = {sp[t]:.4f} of acoustic phase")
 narrow = (1 - sp['cr'] / sp['lcdm']) * 100
+# ⛔⛭⛭⛭ `r7675+cc66`, ON `60`'s `r7676` ROUTE -- ** THIS GATE QUOTED THE NAMESAKE'S dr_s/dchi PAIR
+#   AND HELD IT TO +-5 PERCENTAGE POINTS AROUND A NAMESAKE CONSTANT, ON A QUANTITY OF THIRTEEN. **
+#   60's words: *"its agreement gate is `abs(narrow - 12.8) < 5.0`, a +-5 pp window on a 13 pp
+#   quantity around a namesake constant, so it cannot fail the distinction it claims"*.  ** That is
+#   right, and it is a receipt this seat repointed at `r7675+cc66.1` and reported green. **  I moved
+#   the DOCSTRING's quoted figures that revision and left the ones inside this gate's own message.
+#   ⇒ *** THE PAIR IS THE ARM OF RECORD'S NOW, NAMED ONCE AND DECLARED HARDCODED -- the convention
+#   `…the_acceptance…` already uses for the same cross-check -- AND THE WINDOW IS 1 pp, WHICH IS
+#   THAT RECEIPT'S OWN. ***  On the arm of record the two routes read 13.86 (this acceptance) and
+#   13.10 (the sound speed), 0.76 pp apart, so 1 pp holds and 5 pp was never a test.
+#   ⌗ 60 also names the trap this gate's old message set: the NAMESAKE acceptance narrowing is ALSO
+#   13.1 per cent, the same digits as the ARM-OF-RECORD sound-speed narrowing l.1847 quotes -- so a
+#   reader following the citation found 13.1 labelled `acceptance` and 12.8 labelled `sound speed`,
+#   the opposite assignment, and got the right digits for the wrong reason.  *One number, many-to-one
+#   across two quantities and two arms.  Fixing the pair is what breaks the collision.*
+R6919_DRSDCHI = 13.1       # r6919's dr_s/dchi narrowing, ARM OF RECORD (0.454950 -> 0.395135),
+                           # hardcoded and declared so: it is another receipt's measurement, carried
+                           # here only as the independent route this one is compared against
 check("⛭⛭ ⓷ the ARM's acceptance is the narrower, by about the thirteen per cent `r6919`'s "
-      "dr_s/dchi independently gives (0.454950 -> 0.396733 is 12.8 per cent) -- *two routes to one "
-      "quantity, and the agreement is not built in anywhere*",
-      3.0 < narrow < 25.0 and abs(narrow - 12.8) < 5.0,
-      f"{narrow:.1f} per cent narrower against 12.8 per cent")
+      f"dr_s/dchi independently gives on the ARM OF RECORD (0.454950 -> 0.395135 is "
+      f"{R6919_DRSDCHI} per cent) -- *two routes to one quantity, and the agreement is not built in "
+      "anywhere.*  ⛔ *The window is 1 pp, which is `…the_acceptance…`'s own for this same "
+      "cross-check; it was 5 pp around the NAMESAKE's 12.8 until `60`'s `r7676` named it, and 5 pp "
+      "on a 13 pp quantity could not fail the distinction this gate claims*",
+      3.0 < narrow < 25.0 and abs(narrow - R6919_DRSDCHI) < 1.0,
+      f"{narrow:.2f} per cent narrower against {R6919_DRSDCHI} per cent, "
+      f"{abs(narrow - R6919_DRSDCHI):.2f} pp apart in a 1.0 pp window")
 
 print()
 print("  " + "=" * 96)

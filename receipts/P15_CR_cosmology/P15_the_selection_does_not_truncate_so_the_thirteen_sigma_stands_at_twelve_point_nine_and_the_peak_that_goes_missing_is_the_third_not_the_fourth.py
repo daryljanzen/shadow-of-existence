@@ -598,7 +598,7 @@ _SKY_STATE = ('the published 0.79 rounded first' if _M2285 is not None
 print(f"        the sky figure at that end is {_SKY_FROM_EXACT:.2f} from this receipt's own "
       f"{NSKY_PRINTED:.4f} and {_SKY_FROM_ROUNDED:.2f} from the published, already-rounded "
       f"{round(NSKY_PRINTED, 2):.2f}; the paper prints the second -> {_SKY_STATE}")
-check("Ⓔ③  ⛭⛭⛭ ** AND l.2283-2284's `$0.953$`, `$12.5$` AND `$0.75$` ARE THIS INTERVAL'S UNFAVOURABLE "
+check("Ⓔ③  ⛭⛭⛭ ** AND l.2283-2284's `$0.953$`, `$12.6$` AND `$0.76$` ARE THIS INTERVAL'S UNFAVOURABLE "
       "END, READ OUT OF THE PAPER AND PINNED HERE. **  *The interval is section C's own bootstrap on "
       "the robust width ratio, 400 resamples; its low end carried across the four-peak width gives the "
       "figures the sentence quotes, where its CENTRE gives Ⓔ①'s `12.9` and `0.78`.*  ⇒ *** The sentence "
@@ -607,7 +607,12 @@ check("Ⓔ③  ⛭⛭⛭ ** AND l.2283-2284's `$0.953$`, `$12.5$` AND `$0.75$` A
       "change` is now a statement this receipt carries rather than one the paper makes unaided. ***  "
       "⛔ *The sky figure is the one hundredth where the two routes differ: 0.75 from the published "
       "0.79 rounded first, 0.76 from this receipt's own 0.7923.  Both are accepted and which the paper "
-      "is in is PRINTED above, because a printed digit is 69's to correct*",
+      "is in is PRINTED above, because a printed digit is 69's to correct -- and 69 corrected it at "
+      "`r7675`, so the paper is in the 0.76 route now.*  ⛔ *This header named `12.5` and `0.75`, the "
+      "digits the paper carried BEFORE that landing, while the measurement two lines above read "
+      "`12.6`/`0.76` off the paper in the same run -- a gate whose own label disagreed with its own "
+      "read.  `60`'s `r7676` caught it; it is corrected here and it is the same class as the two "
+      "stale prose figures this seat fixed at `r7675+cc66.1` and `.2`*",
       _M2285 is not None
       and abs(float(_M2285.group(1)) - round(BLO, 3)) < 5e-4
       and abs(_N_FROM_PAPER - N_AT_LOW_END_IN_PRINT) < 5e-2
