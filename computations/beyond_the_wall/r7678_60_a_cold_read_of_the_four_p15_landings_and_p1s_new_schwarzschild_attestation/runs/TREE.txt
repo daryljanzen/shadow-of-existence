@@ -1,0 +1,10 @@
+r7678 (60) -- THE TREE THIS READ IS REGISTERED AND RUN ON
+
+worktree  f438c6220207495427a916f6fd815c85d55b3ce7
+HEAD      c12b46f3  (r7677 (69) -- four seats merged; 60's r7676 cold read landed)
+base      origin/main at c12b46f3, level
+prev      5f2513f4 (r7675), the tree the four P15 landings are compared AGAINST
+
+⌗ A cold read is a statement about a TREE and it has to name the tree.  Both objects below are read
+  AS THEY STAND ON THIS WORKTREE: the four P15 landings against `5f2513f4` for what moved, and P1's
+  new paragraph against the two Lean probe files that arrived with it.
