@@ -1,0 +1,173 @@
+{
+ "tree": [
+  "worktree: 54e854a6f958bca81cb2c180662ad34b67733e36",
+  "dirty: 1 path(s)",
+  "2156688cdff6ff110fea69567d1b937930097dca  corpus/BH_causality_v2.tex",
+  "f0be92810d98c5684e56fc98dcae19a5f1e5622c  computations/formalisation/lean/probes/AlongConnection.lean"
+ ],
+ "guard": {
+  "true-probe  (`σ.Δτ = 0` is a conjunct)": true,
+  "false-probe (`σ.Δs = 0` is a conjunct)": false,
+  "marker-probe true  (\\btemporal leg\\b in the remark)": true,
+  "marker-probe false (\\bparacompact\\b in the remark)": false,
+  "marker-probe word-boundary (\\bproper\\b not in \"the Cauchy property\")": true,
+  "flip-test (every derived verdict depends on its readings)": true,
+  "class-probe (the remark's own attestation sentence is classified, not residual)": true,
+  "class-probe (a Section-1 sentence is NOT classified as the remark's own)": true
+ },
+ "cited": {
+  "ac_metric_singularity_along": true,
+  "ac_lapse_pos_forces_point": true,
+  "ac_witness": true
+ },
+ "msa_binders": [
+  "S",
+  "γ",
+  "σ",
+  "ha",
+  "hb",
+  "hcont"
+ ],
+ "msa_conclusion": [
+  "σ.Δτ = 0",
+  "(∀ s ∈ Icc (0:ℝ) 1, σ.n s * σ.dt s (vel γ s) = 0)",
+  "(∀ s ∈ Icc (0:ℝ) 1, σ.h s (vel γ s) (vel γ s) = 0)"
+ ],
+ "lpf_binders": [
+  "S",
+  "γ",
+  "σ",
+  "ha",
+  "hb",
+  "hcont",
+  "hn",
+  "hpd"
+ ],
+ "witness": {
+  "g(χ,χ) = UV": true,
+  "χ is the velocity": true,
+  "the velocity is null and non-zero": true,
+  "the lapse vanishes on γ": true,
+  "the Killing parameter separates": true,
+  "Δτ = 0": true,
+  "p ≠ q": true
+ },
+ "accounts": {
+  "the adapted-frame leg": true,
+  "the arbitrary-temporal-function separation": true,
+  "the coordinate-difference exclusion": true,
+  "the Killing-horizon form": true
+ },
+ "classified": [
+  {
+   "i": 47,
+   "class": "endpoint difference of a temporal function",
+   "account": "the arbitrary-temporal-function separation",
+   "covered": true,
+   "text": "First, the temporal separation $\\Delta\\tau=\\tau(q)-\\tau(p)$ assigned by a smooth temporal function $\\tau$ is not a geometric invariant."
+  },
+  {
+   "i": 51,
+   "class": "frame-dependence, not degeneracy",
+   "account": "the arbitrary-temporal-function separation",
+   "covered": true,
+   "text": "That $\\Delta\\tau$ is frame-dependent does not mean it can be driven to zero."
+  },
+  {
+   "i": 96,
+   "class": "the theorem's conclusion",
+   "account": "the adapted-frame leg",
+   "covered": true,
+   "text": "\\end{enumerate} Then their temporal separation vanishes also, $\\Delta\\tau=0$."
+  },
+  {
+   "i": 103,
+   "class": "the remark's own sentence",
+   "account": "the adapted-frame leg",
+   "covered": true,
+   "text": "Read along the connection, the temporal separation is the one the frame adapted to (b) fixes: the connecting geodesic stays at one value of the invariant spatial coordinate, so it runs along that frame's own time direction, and $\\Delta\\tau$ is the temporal leg"
+  },
+  {
+   "i": 105,
+   "class": "the remark's own sentence",
+   "account": "the adapted-frame leg",
+   "covered": true,
+   "text": "In this form the theorem is machine-checked on any manifold (\\texttt{ac\\_metric\\_singularity\\_along}, in \\texttt{computations/formalisation/lean/probes/AlongConnection.lean}): along a $C^{1}$ curve, with the metric split as $g=h-N^{2}\\mathrm{d}t^{2}$ and $N\\ge"
+  },
+  {
+   "i": 107,
+   "class": "the adapted-frame conjugate",
+   "account": "the adapted-frame leg",
+   "covered": true,
+   "text": "\\end{remark} \\begin{proof} The quantities in play are the invariant separations named in the hypotheses: $\\Delta x$ is the invariant spatial separation of~(b), and $\\Delta\\tau$ the temporal separation conjugate to it in the frame adapted to the same foliation;"
+  },
+  {
+   "i": 109,
+   "class": "the metric relation",
+   "account": "the adapted-frame leg",
+   "covered": true,
+   "text": "The relation among them is the Lorentzian metric relation, \\[ \\Delta s^2 = \\Delta x^2 - \\Delta\\tau^2, \\] the sign distinguishing the Lorentzian from the Euclidean Pythagorean relation."
+  },
+  {
+   "i": 112,
+   "class": "the metric relation",
+   "account": "the adapted-frame leg",
+   "covered": true,
+   "text": "By hypothesis (a), $\\Delta s^2=0$, so $\\Delta x^2=\\Delta\\tau^2$."
+  },
+  {
+   "i": 114,
+   "class": "the metric relation",
+   "account": "the adapted-frame leg",
+   "covered": true,
+   "text": "Substituting gives $\\Delta\\tau^2=0$, hence $\\Delta\\tau=0$."
+  },
+  {
+   "i": 262,
+   "class": "the theorem's conclusion",
+   "account": "the adapted-frame leg",
+   "covered": true,
+   "text": "That is hypothesis~(b), and Theorem~\\ref{thm:metric-singularity} then gives $\\Delta\\tau=0$."
+  }
+ ],
+ "residue": 0,
+ "accumulation_sentences": 1,
+ "verdicts": {
+  "①": [
+   "SUPPORTED",
+   "the remark's reading and the Lean's definition agree to the symbol: `Δτ` is \"the temporal leg accumulated along it\" (True), written `Δτ = ∫N|dt|` (True), and the Lean's is `def Δτ := ∫ s in 0..1, σ.n s * |σ.dt s (vel γ s)|` (True), with `Δx := ∫ √(h(γ′,γ′))` beside it (True).  Both are INTEGRALS along the curve, not endpoint differences, and the remark's reason — the geodesic staying at one value of the invariant spatial coordinate, so running along the frame's own time direction (True) — is the clause that makes an integral the right object."
+  ],
+  "②": [
+   "SUPPORTED",
+   "the Killing-horizon form is now written in the remark (True), and `lem:killing`'s own proof carries `ds² = g(χ,χ)dλ²` (True), so the specialisation the remark cites to that lemma is in that lemma.  `r7670` found this consistent but unwritten; it is written now.  The witness carries the same field concretely — `g(χ,χ) = UV` (True) — and the file names `λ = log V` the Killing parameter (True)."
+  ],
+  "③": [
+   "SUPPORTED",
+   "the remark states it in one clause (True).  In the Lean the integrand is `σ.n s * |σ.dt s (vel γ s)|`, built from the splitting and the `mfderiv` velocity, so it is frame data and a vector, not a chart coordinate's increment — which is what \"not a coordinate difference\" has to mean for the formal object."
+  ],
+  "④": [
+   "SUPPORTED",
+   "the remark says the arbitrary-temporal-function separation stays non-invariant (True) and cites `cor:threefold`(iv) (True), which does say it — \"has no invariant geometric meaning, and may be altered arbitrarily by smooth local deformations\" (True).  The citation holds and the two readings are now related in one place, which is `r7670`'s ⑩ repaired."
+  ],
+  "⑤": [
+   "NOT SUPPORTED",
+   "the splitting IS `g = h − n²dt⊗dt` as a field of the structure (True) with `n ≥ 0` (True), and the conclusion's first conjunct is `Δτ = 0`.  \"On any manifold\" is not only true but UNDERSTATED: at this theorem's line only `[TopologicalSpace N]` and `[ChartedSpace E N]` are in force — the `[IsManifold 𝓘(ℝ,E) 1 N]` instance is declared LATER in the file (True that it is needed here) — and `FiniteDimensional` and `T2Space` occur 0 and 0 times.  So it holds without even a `C¹` atlas.  ⌗ But the sentence's hypothesis list is INCOMPLETE and its curve class is SPURIOUS.  Binders: ['S', 'γ', 'σ', 'ha', 'hb', 'hcont'].  `hcont`, the continuity of `s ↦ h s (γ′ s) (γ′ s)` on `[0,1]`, is a FOURTH hypothesis the sentence does not state (True) and is NOT implied by the splitting, whose `h` is an arbitrary field; the structure also carries `h_nonneg` (True), the spatial part non-negative on the velocity, which the sentence's `g = h − N²dt²` does not say.  And the sentence says \"along a `C¹` curve\" while the theorem imposes NO differentiability class on `γ` at all (False) — `vel` is `mfderiv`, defined regardless.  ⌗ The conclusion is also THREE conjuncts, not one: `Δτ = 0`, `n·dt(γ′) = 0` pointwise, and `h(γ′,γ′) = 0` pointwise — (b) recovered pointwise from its integral form, which is the step the registration called the expected stop."
+  ],
+  "⑥": [
+   "NOT SUPPORTED",
+   "`ac_lapse_pos_forces_point` does conclude the events coincide, but on more than the sentence states.  Binders: ['S', 'γ', 'σ', 'ha', 'hb', 'hcont', 'hn', 'hpd'] — besides `hn` (`0 < n`), it carries ['hcont', 'hpd']: `hcont` again, and `hpd`, that each `h s` is POSITIVE DEFINITE on `ker dt s`.  `hpd` is the hypothesis doing the work — it is what turns `dt(γ′) = 0` into `γ′ = 0` — and the sentence does not state it.  And `γ 1 = γ 0` is not a conjunct but the consequent of an IMPLICATION (True): it holds for `γ` manifold-differentiable on `[0,1]`, which the sentence's \"force `p = q`\" reads as unconditional.  This theorem, unlike the first, does sit after the `IsManifold` instance (True), so the `C¹` atlas is needed here and not there — a distinction \"on any manifold\" flattens."
+  ],
+  "⑦": [
+   "SUPPORTED",
+   "`ac_witness` carries both halves and more {'g(χ,χ) = UV': True, 'χ is the velocity': True, 'the velocity is null and non-zero': True, 'the lapse vanishes on γ': True, 'the Killing parameter separates': True, 'Δτ = 0': True, 'p ≠ q': True}: the lapse vanishes along the whole curve, `Δτ = 0`, and `γ 0 = (0,1) ≠ (0,e) = γ 1`, with `∫dt(γ′) = 1` so the Killing parameter still separates them.  `χ` is proved Killing (`ac_boost_isometry`, `ac_boost_generator`: True), and `ac_witness_no_positive_lapse` (True) closes the circle — along this curve NO positive-lapse splitting satisfies (a) and (b), so the vanishing is forced and not chosen.  That last theorem is the sharper half and the remark does not name it."
+  ],
+  "⑧": [
+   "NOT SUPPORTED",
+   "the residue was COMPUTED over all 10 sentences of P1 that mention the temporal separation, classified by markers drawn from the remark's own text; the remark's four accounts are {'the adapted-frame leg': True, 'the arbitrary-temporal-function separation': True, 'the coordinate-difference exclusion': True, 'the Killing-horizon form': True}, and **0 sentence(s) of that set fall outside them**: none.  ⌗ But the sentence the order names is not in that set, because it does not use the symbol: the proof's *\"These are not coordinate differences accumulated along some path between `p` and `q`\"* (1 such).  The remark answers its COORDINATE half — \"it is not a coordinate difference\" (True) — and not its ACCUMULATION half, while the remark itself now says `Δτ` is \"the temporal leg **accumulated along** it\" (True).  The two sentences now use the same word for opposite purposes, two paragraphs apart, and that is sharper than it was at `r7670`: the collision is no longer latent.  One clause in the proof — that an invariant integrated along the connection is not what \"accumulated\" excludes — would close it."
+  ]
+ },
+ "tally": {
+  "SUPPORTED": 5,
+  "NOT SUPPORTED": 3
+ }
+}
