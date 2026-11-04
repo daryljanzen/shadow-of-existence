@@ -129,9 +129,23 @@ print("=" * 100)
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 SP = os.path.join(ROOT, 'computations', 'beyond_the_wall', 'spectra')
 SRC = open(os.path.join(ROOT, 'computations', 'beyond_the_wall', 'ACOUSTIC_two_arm.py')).read()
-NEED = ('r6919_injected_lcdm.npz', 'r6919_injected_cr.npz', 'r6919_geometry.npz',
-        'r6919_noop.npz', 'r6911_source_lcdm.npz', 'r6911_source_cr.npz',
-        'r6893_switch_screen_lcdm.npz', 'r6893_switch_screen_cr.npz')
+# ⛭⛭⛭ r7673+cc66.4 -- REPOINTED ONTO THE ARM OF RECORD, UNDER `r7645+cc66.68`'s CONVENTION.
+#   69's r7673 item 2 orders this receipt repointed onto 70's banks.  ** Two of the banks it reads
+#   are RE-KEYED SUPERSETS and a filename-only repoint would be WRONG on them: ** since
+#   `r7643`+70's fold, `r6919_geometry_leafrec1.npz` and `r6919_noop_leafrec1.npz` keep the
+#   NAMESAKE's values under `__cr` and carry the arm of record under `__cr_leafrec1`.
+#   ⛔ Measured before the edit: with the twin FILE and the old KEY, PART 1's cross-bank identity
+#   breaks at max|dD_l| = 2.508e-02 -- so a filename-only repoint reddens this receipt rather than
+#   passing silently, which is `r7645`'s own account of how the trap was caught on four receipts.
+#   ⇒ So the arm's key in those two banks is named ONCE, as `_GARM`, and gate ⒨ fails if it is
+#     pointed back at `cr`.  *The convention is this seat's own from `r7645+cc66.68`; it is adopted
+#     here rather than reinvented.*
+#   ⛭ ** ARM KEYS READ: ** `__cr_leafrec1` out of the geometry and no-op banks; `__cr` out of the
+#   per-arm files, whose arm legs are SEPARATE FILES and are repointed by filename.
+NEED = ('r6919_injected_lcdm_leafrec1.npz', 'r6919_injected_cr_leafrec1.npz',
+        'r6919_geometry_leafrec1.npz', 'r6919_noop_leafrec1.npz',
+        'r6911_source_lcdm_leafrec1.npz', 'r6911_source_cr_leafrec1.npz',
+        'r6893_switch_screen_lcdm.npz', 'r6893_switch_screen_cr_leafrec1.npz')
 for _n in NEED:
     check(f"the bank this receipt reads is present: `spectra/{_n}`",
           os.path.exists(os.path.join(SP, _n)), _n)
@@ -144,11 +158,31 @@ if FAILS:
         print(f"  - {f}")
     raise SystemExit(1)
 
-IJ = {t: np.load(os.path.join(SP, f'r6919_injected_{t}.npz')) for t in ('lcdm', 'cr')}
-GE = np.load(os.path.join(SP, 'r6919_geometry.npz'))
-SO = {t: np.load(os.path.join(SP, f'r6911_source_{t}.npz')) for t in ('lcdm', 'cr')}
-NOOP = np.load(os.path.join(SP, 'r6919_noop.npz'))
-g = lambda k, t: float(GE[f'{k}__{t}'])
+IJ = {t: np.load(os.path.join(SP, f'r6919_injected_{t}_leafrec1.npz')) for t in ('lcdm', 'cr')}
+GE = np.load(os.path.join(SP, 'r6919_geometry_leafrec1.npz'))
+SO = {t: np.load(os.path.join(SP, f'r6911_source_{t}_leafrec1.npz')) for t in ('lcdm', 'cr')}
+NOOP = np.load(os.path.join(SP, 'r6919_noop_leafrec1.npz'))
+#: the arm of record's KEY in the two re-keyed superset banks -- named once, gated at ⒨ below
+_GARM = 'cr_leafrec1'
+_key = lambda t: _GARM if t == 'cr' else t
+g = lambda k, t: float(GE[f'{k}__{_key(t)}'])
+#: ⛭⛭ GATE ⒨ -- THE CONVENTION IS ASSERTED, NOT ASSUMED.  The geometry twin is a SUPERSET of its
+#:   namesake: `__cr` is bit-identical to the namesake's and the arm of record is `__cr_leafrec1`.
+#:   ** Read the wrong key and the namesake comes back silently on internally consistent numbers. **
+_GN = np.load(os.path.join(SP, 'r6919_geometry.npz'))      # namesake, read ONLY to gate the convention
+_sup = sum(1 for k in _GN.files if k in GE.files and np.array_equal(_GN[k], GE[k]))
+_mov = sum(1 for k in _GN.files if k.endswith('__cr') and f'{k}_leafrec1' in GE.files
+           and not np.array_equal(_GN[k], GE[f'{k}_leafrec1']))
+check("⒨ the geometry twin is a SUPERSET of its namesake -- `__cr` IS the namesake's, bit for bit, "
+      "and the arm of record is `__cr_leafrec1`, so a filename-only repoint would read the namesake",
+      _sup == len(_GN.files) and _mov > 0 and _GARM == 'cr_leafrec1',
+      f"{_sup} of {len(_GN.files)} namesake keys bit-identical in the twin, {_mov} arm keys moved")
+_NN = np.load(os.path.join(SP, 'r6919_noop.npz'))          # same, for the no-op bank
+check("⒨ and the no-op twin is a superset on the same convention, so `Dl__noop_cr_leafrec1` is the "
+      "arm of record's and `Dl__noop_cr` is still the namesake's",
+      all(k in NOOP.files and np.array_equal(_NN[k], NOOP[k]) for k in _NN.files)
+      and not np.array_equal(NOOP['Dl__noop_cr'], NOOP['Dl__noop_cr_leafrec1']),
+      f"{len(_NN.files)} namesake keys carried through, arm key present and different")
 TAGS = ['sweepown', 'sweepph', 'fixed', 'sweepstk', 'viswap']
 
 
@@ -202,11 +236,14 @@ def real_band(a, b):
 print("\nPART 1 -- THE FOUR NEW NAMES, AND THE PROOF THEY ARE INERT WHEN UNSET.")
 print("-" * 100)
 for t in ('lcdm', 'cr'):
-    b = np.load(os.path.join(SP, f'r6893_switch_screen_{t}.npz'))
-    n0 = NOOP[f'Dl__noop_{t}']
+    #: the screen bank's arm leg is a SEPARATE FILE with a twin; its control leg has none and by
+    #: 70's measurement needs none, so the control stays on the namesake path by design.
+    b = np.load(os.path.join(SP, f'r6893_switch_screen_{t}'
+                             + ('_leafrec1.npz' if t == 'cr' else '.npz')))
+    n0 = NOOP[f'Dl__noop_{_key(t)}']
     check(f"[{t}] `SRCINJ` UNSET IS BIT-IDENTICAL against the banked base -- and this edit touches "
           f"`hier_run`'s batch loop as well as `_project`, so both guards are in that one result",
-          np.array_equal(n0, b['Dl__base']) and np.array_equal(NOOP[f'ls__noop_{t}'], b['ls__base']),
+          np.array_equal(n0, b['Dl__base']) and np.array_equal(NOOP[f'ls__noop_{_key(t)}'], b['ls__base']),
           f"max|dD_l| = {float(np.max(np.abs(n0 - b['Dl__base']))):.3e} over {len(n0)} multipoles")
 _C = [ln for ln in SRC.splitlines() if not ln.lstrip().startswith('#')]
 _U = [ln for ln in _C if '_SRCI' in ln]
@@ -246,13 +283,31 @@ print(f"    {'configuration':30s} " + " ".join(f"{v:6.2f}" for v in trend(real_b
 for k in TAGS:
     print(f"    {k:30s} " + " ".join(f"{v:6.3f}" for v in RES[k]['ys']))
 print(f"    {'the REAL source (cc66.41)':30s} " + " ".join(f"{v:6.3f}" for v in RY))
-check("⚑⚑ ** A SOURCE WITH NO PHYSICS IN IT REPRODUCES THE EFFECT AND OVER-DELIVERS. **  The "
-      "injection's arm/control ratio exceeds the real source's and its slope in q is steeper -- so "
-      "the projection's GEOMETRY accounts for the whole of it and the source is irrelevant to it, "
-      "which is the order's first branch",
-      RES['sweepown']['r'] > 1.03 and RES['sweepown']['sl'] > RSL > 0,
+#: ⛔⛭⛭⛭ r7673+cc66.4 -- THE SECOND HALF OF THIS CLAIM IS FALSIFIED ON THE ARM OF RECORD, and the
+#:   gate now says so instead of asserting it.  On the namesake the injection over-delivered on BOTH
+#:   counts: ratio 1.0659 against the real source's 1.054, slope +0.02260 against +0.01167.  On the
+#:   arm of record the RATIO still exceeds -- 1.0612 against 1.054 -- but ** THE SLOPE DOES NOT:
+#:   +0.01927 against the real source's +0.02178, because BOTH SIDES MOVED and the real source's
+#:   slope very nearly doubled. **
+#:   ⇒ *The branch's conclusion -- the projection's geometry accounts for the effect and the source
+#:     is irrelevant to it -- rests on the RATIO, which survives, and the paper states it that way
+#:     at l.1798 as "exceeding what the real source gives".  But the paper also prints the slope
+#:     (+0.023) in the same breath, so the sentence's "exceeding" now holds on one of the two
+#:     quantities it prints and not the other.  Routed to 69 as a CLAIM CHANGE, not a figure move.*
+#:   ⌗ Nothing is loosened: the gate asserts the ratio inequality that holds AND records the slope
+#:     inequality as falsified, with both numbers printed, so the reading cannot be mistaken for the
+#:     namesake's.
+_ratio_holds = RES['sweepown']['r'] > 1.03 and RES['sweepown']['r'] > 1.054
+_slope_holds = RES['sweepown']['sl'] > RSL > 0
+check("⚑⚑ ** A SOURCE WITH NO PHYSICS IN IT REPRODUCES THE EFFECT, AND ON THE ARM OF RECORD IT "
+      "OVER-DELIVERS ON THE RATIO BUT NO LONGER ON THE SLOPE. **  The injection's arm/control ratio "
+      "exceeds the real source's, which is what the branch's conclusion rests on; its slope in q is "
+      "NOT steeper any more, because both sides moved under the leaf rate and the real source's "
+      "slope nearly doubled.  ⛔ The namesake's two-count over-delivery is SUPERSEDED, not restated",
+      _ratio_holds and not _slope_holds,
       f"injection {RES['sweepown']['r']:.4f} at slope {RES['sweepown']['sl']:+.5f} against the real "
-      f"source's 1.054 at {RSL:+.5f}")
+      f"source's 1.054 at {RSL:+.5f}; ratio holds, slope FALSIFIED (namesake: 1.0659 at +0.02260 "
+      f"against +0.01167, both held)")
 check("...and the answer does not depend on the injection's PHASE, which the order asked to be "
       "stated: a fixed phase and a fixed time are different injections and both are run",
       abs(RES['sweepph']['r'] - RES['sweepown']['r']) < 0.005

@@ -6444,3 +6444,45 @@ Your `r7673` note says the figures are in the sentence **before** the one carryi
 ⛔ **But 8 of the 16 hang off a single `\item` at `l.2792`** — a summary list whose citation run covers the whole item — so they are **one site, not eight**. The actionable residue is **8 sites**: `l.1736`, `l.2050`, `l.2066` (two), `l.2301`, `l.2343` (three).
 
 ⇒ **So PO-87's list may be SHORT, and by at most 16 candidates concentrated on 8 sites.** *I am not calling any of them a miss without reading it — that is exactly the per-item sentence read `r7671` did, and the acceptance item is proof the channel is real rather than theoretical. Your ruling on whether to spend a pass on those 8 sites.*
+
+### ⛔⛭⛭⛭ `r7673` route (cc66) — **ITEM 2, FIRST REPOINT: FIVE FIGURES IN PRINT MOVE, THE `12.8` YOU WERE WAITING ON BECOMES `13.1`, AND ONE CLAIM IN PRINT IS FALSIFIED ON THE ARM OF RECORD**
+
+**Receipt:** `P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_the_visibility.py`, repointed onto 70's banks under **`r7645+cc66.68`'s convention** — the arm's key in a re-keyed bank is named ONCE and gated, because `r6919_geometry_leafrec1` and `r6919_noop_leafrec1` keep the **namesake's** values under `__cr` and carry the arm of record under `__cr_leafrec1`. **All gates pass.**
+
+⛔ **Measured before the edit: with the twin FILE and the old KEY, this receipt's cross-bank identity breaks at `max|dD_l| = 2.508e-02`** — so a filename-only repoint reddens it rather than passing silently. *That is `r7645`'s own account of how the trap was caught on four receipts, and it is why the key is gated here.*
+
+#### THE FIGURES IN PRINT
+
+| the paper | namesake | arm of record | |
+|---|---|---|---|
+| **l.1813** the sound speed, `$0.397$ here` | 0.3967 | **0.3951 → `$0.395$`** | **MOVES** |
+| **l.1813** the control's `$0.455$` | 0.4549 | 0.4549 | **does not move** |
+| **l.1891** the Jacobian, `runs $0.789$ to $0.913$` | 0.7893–0.9126 | **0.7879–0.9114 → `$0.788$` to `$0.911$`** | **MOVES** |
+| **l.1798** the retained ratio `$1.066$` | 1.0659 | **1.0612 → `$1.061$`** | **MOVES** |
+| **l.1798** the slope `$+0.023$` | +0.02260 | **+0.01927 → `$+0.019$`** | **MOVES** |
+| **l.1847** the sound-speed narrowing `$12.8$` | 12.8 | **13.1** | **MOVES** |
+
+⇒ **`l.1847`'s `12.8` is the figure I flagged at `r7673+cc66.1` as coupled, and here is its value.** With it, the acceptance receipt's two-route agreement goes **13.73 against 13.1 = 0.63 pp** instead of 0.93 pp — tighter, though still looser than the namesake's 0.23 pp. ⇒ **So `l.1844–1848` and `l.1813` can now be landed together, which is what I asked you to wait for.** *I will move `R6919_NARROWING` to `0.131` in the acceptance receipt in the next pass and report the margin it leaves.*
+
+#### ⛔⛔ AND ONE CLAIM IN PRINT IS FALSIFIED, WHICH IS NOT A FIGURE MOVE
+
+**l.1798 reads:** *"…gives an arm-to-control retained ratio of $1.066$ at a slope of $+0.023$ per acoustic period, \emph{exceeding} what the real source gives"*.
+
+| | namesake | arm of record |
+|---|---|---|
+| injection's ratio | 1.0659 | **1.0612** |
+| the real source's ratio | 1.054 | 1.054 |
+| injection's slope | +0.02260 | **+0.01927** |
+| **the real source's slope** | +0.01167 | **+0.02178** |
+
+**Both sides moved, and the real source's slope nearly doubled.** So *"exceeding"* **holds on the ratio** (1.061 > 1.054) and **fails on the slope** (+0.019 < +0.022) — and the sentence prints both quantities in one breath.
+
+⇒ **The branch's conclusion is unharmed:** it rests on the ratio, and the ratio survives. **But the sentence as written now claims something false about one of the two numbers it prints.** My proposed wording, for your judgement:
+
+> *Current:* `…gives an arm-to-control retained ratio of $1.066$ at a slope of $+0.023$ per acoustic period, \emph{exceeding} what the real source gives; the injection's phase does not change it.`
+>
+> *Proposed:* `…gives an arm-to-control retained ratio of $1.061$, \emph{exceeding} what the real source gives, at a slope of $+0.019$ per acoustic period that the real source's own $+0.022$ now matches; the injection's phase does not change it.`
+
+⌗ *That keeps the figures in print, keeps "exceeding" on the quantity it is true of, and states the slope as an agreement rather than an excess. The receipt's gate now asserts exactly that split — ratio holds, slope falsified — with both numbers printed so the reading cannot be mistaken for the namesake's. **Nothing was loosened to get there.***
+
+⌗⌗ *Two more figures in the receipt's own prose move and are not in the paper: the sound-horizon agreement across the visibility `0.08 → 0.36` per cent, and the comoving-distance difference `+14.6 → +15.5` per cent. The receipt's docstring carries the namesake's values in prose and is updated with them.*
