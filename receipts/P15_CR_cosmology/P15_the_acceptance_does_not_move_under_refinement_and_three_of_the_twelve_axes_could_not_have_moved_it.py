@@ -230,6 +230,31 @@ check("⓹ the narrowing is the SAME at all twelve settings -- it is not an arte
 check(f"⓹ and it agrees with r6919's independent dr_s/dchi reading of {R6919_NARROWING * 100:.1f}% -- BOTH routes now on the arm of record (r7673+cc66.7)",
       abs(float(np.mean(nar)) - R6919_NARROWING) < 0.01,
       f"{np.mean(nar) * 100:.2f}% against {R6919_NARROWING * 100:.1f}%, {abs(np.mean(nar) - R6919_NARROWING) * 100:.2f} pp apart")
+# ⛭⛭⛭ `r7677+cc66.1` -- ** THE THREE FIGURES THIS RECEIPT CARRIES IN `P15`, PINNED. **  `r7677` (69)
+#   item 1.  69's placement of a `\rcpt{}` at `l.1847` made these three visible to
+#   `check_figures_pinned` for the first time -- its citation scope is the SENTENCE, and they sat one
+#   sentence away -- and all three came back UNPINNED.
+#   ⛔ *The comparison already here is against `R6919_NARROWING`, a DIFFERENT route's reading at a
+#     1.00 pp tolerance.  That is a cross-check between two routes and it is not a pin of the printed
+#     digit: 13.73 against 13.1 is 0.63 pp apart, so the gate holds while the paper's digit is free
+#     to be wrong by six times its last place.*  ⇒ Each digit is named and compared against the value
+#     this receipt computes at the `base` setting, at half its own last place.
+SPAN_ARM_IN_PRINT = 4.43          # l.1845: the arm's acceptance span, in acoustic phase
+SPAN_CTL_IN_PRINT = 5.14          # l.1845: the control's
+NARROWING_PCT_IN_PRINT = 13.73    # l.1846: the arm narrower, per cent
+_pin_ok = (abs(float(AL['cr_base_span'][0]) - SPAN_ARM_IN_PRINT) < 5e-3
+           and abs(float(AL['lcdm_base_span'][0]) - SPAN_CTL_IN_PRINT) < 5e-3
+           and abs(100 * float(np.mean(nar)) - NARROWING_PCT_IN_PRINT) < 5e-3)
+check("\u24b9 ⛭⛭ ** THE THREE FIGURES IN PRINT ARE COMPARED AGAINST THE PRINTED DIGITS: ** the "
+      "arm's span, the control's, and the narrowing between them, each held to half its own last "
+      "place.  \u26d4 *The `R6919_NARROWING` cross-check above is a comparison between two ROUTES at "
+      "1.00 pp and is not a pin: it holds while the paper's digit is free to be wrong by six times "
+      "its last place.  Both are wanted and they are different assertions*",
+      _pin_ok,
+      f"arm {float(AL['cr_base_span'][0]):.4f} vs {SPAN_ARM_IN_PRINT}; control "
+      f"{float(AL['lcdm_base_span'][0]):.4f} vs {SPAN_CTL_IN_PRINT}; narrowing "
+      f"{100 * float(np.mean(nar)):.4f} vs {NARROWING_PCT_IN_PRINT} per cent")
+
 
 print("\n  ⓺ SCOPE, GATED RATHER THAN ASSERTED IN PROSE ALONE")
 print("  " + "-" * 98)
@@ -288,11 +313,13 @@ check("⓻ ⛭⛭ 70's REPORT IS CHECKED AND NOT ASSUMED: every key that differs
       _moved_cr > 0 and not _moved_ctl,
       f"{_moved_cr} CR keys moved, {len(_moved_ctl)} control keys moved")
 #: ⛔⛭⛭ AND THE ONE THING THE MOVE COST, STATED AS A MARGIN RATHER THAN LEFT TO BE NOTICED.
-#:   `R6919_NARROWING = 0.128` is r6919's INDEPENDENT reading and it is a HARDCODED CONSTANT here,
-#:   measured on the NAMESAKE.  On the namesake this receipt's own narrowing was 13.03 per cent, so
-#:   the two routes agreed to 0.23 pp against a 1.00 pp tolerance.  On the arm of record the
-#:   narrowing is 13.73 per cent and the agreement is 0.93 pp -- ** the gate still passes, with
-#:   seven per cent of its tolerance left. **
+#:   `R6919_NARROWING` is r6919's INDEPENDENT reading and it is a HARDCODED CONSTANT here.  ⛭⛭
+#:   `r7677+cc66.1`: IT IS NOW THE ARM OF RECORD'S, 0.131, and this block used to say 0.128 and
+#:   quote a 0.93 pp agreement -- the numbers of the namesake state, left standing after the
+#:   constant itself was moved.  * On the arm of record both routes read the arm: this receipt's
+#:   narrowing is 13.73 per cent against r6919's 13.1, 0.63 pp apart with 0.37 pp of the 1.00 pp
+#:   tolerance left. *  ⛔ A comment describing a superseded state is the same defect as a stale
+#:   assertion message, and it is the one this lane has now paid for three times.
 #:   ⇒ *A constant carrying another receipt's namesake measurement is a dependency no path-based
 #:     census can see, and this is the one in this file.  Routed to 69 rather than adjusted here:
 #:     re-deriving r6919's reading on the arm of record is its own item, and loosening this

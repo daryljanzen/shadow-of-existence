@@ -1,4 +1,39 @@
 # ---
+# r7677+cc66.1: THREE MORE ROWS REMOVED, 1479 -> 1476 -- the acceptance receipt's own `4.43`,
+#   `5.14` and `13.73`, pinned at half their last place against the values it computes at the `base`
+#   setting (arm 4.4301, control 5.1353, narrowing 13.73 per cent).
+# ⛔ The comparison already in that receipt is against `R6919_NARROWING` at a 1.00 pp tolerance --
+#   a cross-check between two ROUTES, 13.73 against r6919's 13.1.  That is not a pin of the printed
+#   digit: it holds while the paper's digit is free to be wrong by six times its last place.  Both
+#   assertions are wanted and they are not the same one.
+# Removed BY HAND and verified by SET COMPARISON -- exactly these three gone, no row added, total
+#   1476 against the gate's own measured 1476.
+# ⌗ The row at `13.1` under this receipt's key STAYS: that is `a_source`'s sound-speed deficit, in
+#   the sentence this receipt is co-cited on, and this receipt never computes it.
+# r7677+cc66.1: TEN ROWS REMOVED, 1491 -> 1479 -- every figure
+#   `P15_a_source_with_no_physics...` carries in print, now PINNED.  `r7677` (69) item 1.
+#   69 placed `\rcpt{}`s in the three uncited sentences (its ruling on 60's fork, branch (a)), so
+#   this gate can SEE these sites for the first time: its citation scope is the SENTENCE, and the
+#   figures sat one sentence from any citation.  All eight were unpinned.
+# ⛔ AND NOT ONE WAS PINNED BY THE COMPARISONS ALREADY IN THE RECEIPT.  Five of the eight already
+#   met a literal -- `> 1.054` on the injection's ratio, `< 0.005` on the sound-horizon agreement,
+#   `> 0.10` on the distance difference, `> 0.05` on the sound-speed deficit -- and every one is a
+#   ONE-SIDED BOUND, which cannot fail when the figure drifts the safe way.  This header's own rule,
+#   *slack, one-sided and absent pins flag*, read from the gate's side.  ⇒ Each printed digit is now
+#   a named constant compared against the value the receipt COMPUTES, at half its last place:
+#   1.061, 0.36, 15.5, 17.307/17.369 Mpc, 38.04/43.96 Mpc and 13.1 per cent.
+# ⛭⛭ THE COUNT FELL BY TWELVE AND NOT BY TEN, and the two extra are the finding: the APPENDIX rows
+#   `17.3074` and `38.042` -- the receipt's own text, in a DIFFERENT PARTITION -- cleared on the same
+#   pins.  So the baseline was carrying the same two figures twice over, once in each partition, and
+#   a count of the PROSE rows alone understates what a pin clears.  *Registered arm (1) said exactly
+#   1480 and the measurement is 1479: the arm conflated figures with claim SITES (two figures sit at
+#   count 2) and missed the APPENDIX partition entirely.  Recorded as a falsification, not re-aimed.*
+# Removed BY HAND and verified by SET COMPARISON against the pre-edit file -- exactly these ten gone,
+#   no row added.  *Not with `--write-baseline`, which this header forbids.*
+# ⌗ THREE ROWS UNDER THIS RECEIPT'S KEY STAY, and that is a verdict: `4.43`, `5.14` and `13.73` are
+#   the ACCEPTANCE receipt's span and narrowing, in the sentence this receipt is co-cited on.  They
+#   are not its numbers and it never computes them; a pin here would make it assert values it does
+#   not measure.  The acceptance receipt pins them under its own key.
 # r7675+cc66.2: ONE ROW REMOVED, 1478 -> 1476 -- P15's `12.6` at l.2283 under the selection
 # receipt's key, count 2.  69 landed the arm of record's digit at r7675, so the either-state block
 # r7673+cc66.9 added -- accept the namesake 12.5 OR the arm's 12.6 and PRINT which -- had done its
@@ -306,8 +341,6 @@ APPENDIX	P15	P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_cl
 APPENDIX	P15	P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_the_visibility	12.8	1
 APPENDIX	P15	P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_the_visibility	14.6	1
 APPENDIX	P15	P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_the_visibility	17.2941	1
-APPENDIX	P15	P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_the_visibility	17.3074	1
-APPENDIX	P15	P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_the_visibility	38.042	1
 APPENDIX	P15	P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_the_visibility	43.591	1
 APPENDIX	P15	P15_all_three_projections_clear_the_instrument_noise_null_so_the_term_mixs_cost_is_combed_after_all	2.78	1
 APPENDIX	P15	P15_all_three_projections_clear_the_instrument_noise_null_so_the_term_mixs_cost_is_combed_after_all	3.07	1
@@ -1318,12 +1351,10 @@ PROSE	CR_cosmology.tex	C5b_baryon_term	2.200	1
 PROSE	CR_cosmology.tex	C5b_baryon_term	2.2564	1
 PROSE	CR_cosmology.tex	C5b_baryon_term	2.264	1
 PROSE	CR_cosmology.tex	P07_the_crossing_rides_the_characteristic_that_crosses_and_the_thermal_factor_rides_the_one_that_does_not_so_two_kappa_cannot_enter_and_the_only_k_it_could_have_carried_is_three_halves	46.5	1
-PROSE	CR_cosmology.tex	P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_the_visibility	0.36	2
 PROSE	CR_cosmology.tex	P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_the_visibility	0.395	1
 PROSE	CR_cosmology.tex	P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_the_visibility	0.455	1
 PROSE	CR_cosmology.tex	P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_the_visibility	0.788	1
 PROSE	CR_cosmology.tex	P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_the_visibility	0.911	1
-PROSE	CR_cosmology.tex	P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_the_visibility	15.5	2
 PROSE	CR_cosmology.tex	P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number	0.2973	1
 PROSE	CR_cosmology.tex	P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number	0.2974	1
 PROSE	CR_cosmology.tex	P15_at_its_own_preferred_H0_the_crossing_arm_predicts_the_acoustic_comb_with_no_fitted_number	0.958	1
@@ -1529,16 +1560,7 @@ PROSE	cosmogenesis_paper.tex	P16_validate_bbn	0.2506	1
 PROSE	cosmogenesis_paper.tex	P16_validate_bbn	2.5671	1
 PROSE	cosmogenesis_paper.tex	P16_validate_bbn	4.4611	1
 PROSE	matter_sector_paper.tex	P14_leaf_compactness	1.8138	1
-PROSE	CR_cosmology.tex	P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_the_visibility	1.061	1
-PROSE	CR_cosmology.tex	P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_the_visibility	13.1	1
 PROSE	CR_cosmology.tex	P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_the_visibility	13.73	1
-PROSE	CR_cosmology.tex	P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_the_visibility	17.307	1
-PROSE	CR_cosmology.tex	P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_the_visibility	17.369	1
-PROSE	CR_cosmology.tex	P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_the_visibility	38.04	1
 PROSE	CR_cosmology.tex	P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_the_visibility	4.43	1
-PROSE	CR_cosmology.tex	P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_the_visibility	43.96	1
 PROSE	CR_cosmology.tex	P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_the_visibility	5.14	1
 PROSE	CR_cosmology.tex	P15_the_acceptance_does_not_move_under_refinement_and_three_of_the_twelve_axes_could_not_have_moved_it	13.1	1
-PROSE	CR_cosmology.tex	P15_the_acceptance_does_not_move_under_refinement_and_three_of_the_twelve_axes_could_not_have_moved_it	13.73	1
-PROSE	CR_cosmology.tex	P15_the_acceptance_does_not_move_under_refinement_and_three_of_the_twelve_axes_could_not_have_moved_it	4.43	1
-PROSE	CR_cosmology.tex	P15_the_acceptance_does_not_move_under_refinement_and_three_of_the_twelve_axes_could_not_have_moved_it	5.14	1

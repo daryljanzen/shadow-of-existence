@@ -33470,3 +33470,43 @@ Registered 4–12, central 6. Measured **12** at registration and **13** now. �
 `census.py`, `classify.py`, `split.py`, `dispose.py` (30 of 30 again), `onesent.py` (8/8), `constants.py` — all green. `check_exact_counts` **63 of 63, no new site**. `check_figures_pinned` **1491 under 1390 keys against a baseline of 1491** — which is 69's hand-baselining of the fifteen new figure-receipt pairs, and is `r7677` item 1's work. `check_order_acknowledged` rc=0.
 
 ⇒ **`r7677`'s item 4 is already discharged**: it asks me to finish the eight-site read registered in `r7675+cc66.5`, and `r7675+cc66.6` finished it — 4 of 8 real misses, all four on the list. 69's order was written against `main` at `.5` and could not see `.6`.
+
+---
+
+### ⛭⛭⛭ `r7677+cc66.1` — **ITEM 1 IS DONE: ELEVEN FIGURES PINNED, FIFTEEN CLAIM-SITES CLEARED, BASELINE BACK TO 1476 BY HAND. AND ITEM 2's FOUR CONSTANTS ARE FOUR DIFFERENT SITUATIONS — ONE OF WHICH PUTS SIX NAMESAKE FIGURES IN PRINT**
+
+#### ⓵ ITEM 1 — AND THE THING I HAD WRONG IS WHAT A PIN IS
+
+**`a_source`: eight digits pinned** (`1.061`, `0.36`, `15.5`, `17.307`/`17.369` Mpc, `38.04`/`43.96` Mpc, `13.1` per cent), each a named constant compared against the receipt's own computed value at half its last place. **`the_acceptance`: three** (`4.43`, `5.14`, `13.73`). Both green.
+
+⛔ ***Not one of the eleven was already pinned, and FIVE of them already met a literal.*** `> 1.054` on the injection's ratio, `< 0.005` on the sound-horizon agreement, `> 0.10` on the distance difference, `> 0.05` on the sound-speed deficit — **every one a ONE-SIDED BOUND, which cannot fail when the figure drifts the safe way.** And the acceptance receipt's `R6919_NARROWING` cross-check is the same shape: a 1.00 pp tolerance on a figure whose last place is 0.005, so it holds while the paper's digit is free to be wrong by **six times** its last place. *`figure_pin_baseline.tsv`'s own header states the rule — slack, one-sided and absent pins flag — and I had read it as a description of other people's gates.*
+
+#### ⛔⛭⛭ ⓶ ARM ① IS FALSIFIED, AND THE ARITHMETIC ERROR IS INSTRUCTIVE
+
+Registered **exactly 1480**; measured **1476**. Two separate mistakes, both mine:
+- **I counted FIGURES where the baseline counts claim-SITES.** Two of `a_source`'s figures (`0.36`, `15.5`) sit at count 2, so eleven figures are thirteen prose sites.
+- **I missed a whole PARTITION.** The `APPENDIX` rows `17.3074` and `38.042` — the receipt's own text, same two figures, different partition — cleared on the same pins. ⇒ ***The baseline was carrying those two figures twice over, once per partition, and a count of the PROSE rows alone understates what a pin clears.***
+
+⌗ **And the total landing on 1476 — exactly where it stood before 69's landing — is not a coincidence and is not a return to a previous state.** Of 69's fifteen new sites, **four stay baselined** (the cross-sentence pairs); and **four sites that pre-dated the landing cleared** on the same pins (the two `APPENDIX` rows, and one each on `0.36` and `15.5`, which were at count 1 before). *Four retained against four extra cleared is what balances it, and either number alone would have moved the total.*
+
+#### ⛔⛭⛭⛭ ⓷ ITEM 2: `SLOPE_PAPER` PUTS **SIX** NAMESAKE FIGURES IN PRINT AT `l.1772–1776`
+
+`SLOPE_PAPER = 0.0139` names, by its own comment, the figure *"P15 and the slope receipt's docstring carry (the LEAFREC=0 arm's)"*. The slope receipt — `the_cross_term_is_not_the_channel` — **is on the arm of record and pins `+0.02690 ± 0.01226` two-sided**, while **its own docstring still carries `+0.0139 ± 0.0021`** and so does the paper. Run on this head, all six figures of that sentence move: `1.030 → 1.0103`, `1.089 → 1.1612`, `+0.0139 → +0.02690`, `0.0021 → 0.01226`, `1.017 → 0.9927`, `0.010 → 0.0331`.
+
+⛭ **Both of the sentence's claims survive** — the slope is positive in all twelve settings (`+0.01008` to `+0.04297`) and the intercept still covers one (`0.9213`–`1.0414`) — *so it is a figure move and not a claim change. Routed with the sentence.*
+
+#### ⛔ ⓸ AND A SECOND SITE: `l.2790` STILL CARRIES THE `14.6`/`0.08` THAT `l.1850` SUPERSEDED
+
+The summary `\item` says the retention is narrower *"because this arm's visibility is the `$14.6$` per cent wider in `$\chi$` while accumulating the same sound horizon to `$0.08$` per cent"* — the **namesake** pair, where 69 landed `15.5`/`0.36` for the same quantity at `l.1850` in `r7675`. ⇒ **The paper prints two different numbers for one quantity.** *Found by following `SLOPE_PAPER`, not by looking for it; `a_source` pins the arm-of-record pair as of this commit.*
+
+#### ⓹ THE OTHER THREE CONSTANTS, AND TWO OF THEM NEED NOTHING
+
+- **`PUB156`** — already done at my own `r7673+cc66.13`: the pin stays on the namesake because `cc66.156` published a namesake measurement, and the arm-of-record reading sits beside it (`11.3→12.7`, `21.4→19.9` at five peaks, `12.0` at four; control unchanged). ⌗ **And none of it is in print:** `l.2171`'s `11.7`/`18.3` belong to the receipt cited *first* there, `the_de_tilted_peak_set`, which is already per-arm on the `_leafrec1` grids and **pins all four printed factors to their printed digit**. *I checked rather than routed, which is the cheaper half of a route.*
+- **`R6919`** — blocked, as the order says. A dict of two namesake base points scoring a hardcoded twelve-axis table, in a receipt that **reads no bank at all**. Nothing to re-derive until 70's sweep lands.
+- **`CR_PK`** — re-derivable and next: `cc66.28`'s namesake quartet `221.8/536.8/812.9/1126.5`, with the receipt loading **no spectra** at all. Its digits are not in print but it carries `l.2790`'s `1.4` locating spreads and "two thirds shared with the control".
+
+⇒ **Arm ⑤ is FALSIFIED and in the direction that vindicates my own earlier census:** I registered that at least one of the four would be a PUBLISHED or SKY value rather than a namesake measurement, with `PUB156` the candidate on its name. All four are prior revisions' own **namesake measurements**. *`r7675`'s item-5 reading was right and this arm was wrong.*
+
+#### ⌗ AND A STALE COMMENT CORRECTED IN PASSING
+
+The acceptance receipt's `R6919_NARROWING` block still described `= 0.128` and a `0.93 pp` agreement — the namesake state, left standing after the constant was moved to `0.131`. Now records the real margin: `0.63 pp` apart, `0.37 pp` of `1.00 pp` left. *Third time this lane has paid for a comment describing a superseded state.*

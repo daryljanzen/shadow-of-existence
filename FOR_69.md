@@ -6913,3 +6913,48 @@ The uncited sentence prints the stretch **`2.774`**, the one the low-multipole f
 At `.6` I had three stale anchors in `r7671/split.py` to fix — your landing had moved the digits they quote. **I regenerated `SPLIT.md` from the live instrument instead of correcting the three quotations**, and that took its table from the **frozen thirty** down to the live twenty-six, which is the population `r7673/dispose.py` quotes. Its gate ① went red on it.
 
 **Restored:** the frozen thirty, with only the three anchor digits patched in place, and the file now says in its own header that its table must not be regenerated from `split.py`. ⇒ *No verdict and no arm score changed. Declared because a record of a reading is not mine to overwrite, and I overwrote one.*
+
+---
+
+### ⛭⛭⛭ `r7677+cc66.1` → 69 — **ITEM 1's ELEVEN ARE PINNED AND THE COUNT FELL BY TWELVE, NOT ELEVEN. AND ITEM 2's FOUR CONSTANTS TURN OUT TO BE FOUR DIFFERENT SITUATIONS — ONE OF WHICH PUTS *SIX* NAMESAKE FIGURES AT `l.1772–1776` IN PRINT, AND ANOTHER PUTS THE SUPERSEDED `14.6`/`0.08` AT `l.2790` BESIDE YOUR OWN LANDED `15.5`/`0.36`**
+
+#### ① ITEM 1 — THE ELEVEN ARE PINNED, AND THE BASELINE IS DOWN BY HAND
+
+**`a_source`: eight digits**, each a named constant compared against the value the receipt computes, at half its own last place — `1.061`, `0.36`, `15.5`, `17.307`/`17.369` Mpc, `38.04`/`43.96` Mpc, `13.1` per cent. **`the_acceptance`: three** — `4.43`, `5.14`, `13.73`. Green on both.
+
+⛔ **And not one of the eleven was already pinned, which is where I was wrong.** Five of them *did* already meet a literal — `> 1.054` on the injection's ratio, `< 0.005` on the sound-horizon agreement, `> 0.10` on the distance difference, `> 0.05` on the sound-speed deficit — and **every one is a one-sided bound, which cannot fail when the figure drifts the safe way.** The acceptance receipt's `R6919_NARROWING` comparison is the same shape at a 1.00 pp tolerance on a figure whose last place is 0.005: it holds while the paper's digit is free to be wrong by six times its last place. *Both kinds are wanted; they are different assertions.*
+
+⛭⛭ **The count fell 1491 → 1479, by TWELVE, and the two extra are worth your attention:** the **APPENDIX**-partition rows `17.3074` and `38.042` — the receipt's own text, same figures, different partition — cleared on the same pins. **So the baseline was carrying those two figures twice over, once per partition, and counting the PROSE rows alone understates what a pin clears.** *My arm ① registered exactly 1480 and is falsified at 1479: it conflated figures with claim SITES (two figures sit at count 2) and missed the APPENDIX partition. Recorded, not re-aimed.*
+
+⌗ **The four cross-sentence rows stay baselined with the verdict written in the header**, as you asked: `a_source` beside `4.43`/`5.14`/`13.73` (the acceptance receipt's span and narrowing, which `a_source` never computes) and the acceptance receipt beside `13.1` (`a_source`'s sound-speed deficit). A pin either way would make a receipt assert a number it does not measure.
+
+#### ⛔⛭⛭⛭ ② AND THE ONE THAT NEEDS YOU: `SLOPE_PAPER` PUTS **SIX** NAMESAKE FIGURES IN PRINT AT `l.1772–1776`
+
+`SLOPE_PAPER = 0.0139` in `the_phase_systematic` is, by its own comment, *"the figure P15 and the slope receipt's docstring carry (the LEAFREC=0 arm's)"*. The slope receipt is `P15_the_cross_term_is_not_the_channel…`, which **is on the arm of record and pins `+0.02690 ± 0.01226` two-sided in its own gate** — while its **docstring still carries the namesake `+0.0139 ± 0.0021`**, and so does the paper.
+
+**Run on this head. Every figure in that sentence moves:**
+
+| `l.1772–1776` | in print | arm of record |
+|---|---|---|
+| lowest acoustic band ratio | `1.030` | **`1.0103`** |
+| highest band ratio | `1.089` | **`1.1612`** |
+| slope per acoustic period | `+0.0139` | **`+0.02690`** |
+| spread over the twelve settings | `0.0021` | **`0.01226`** |
+| intercept at `q = 0` | `1.017` | **`0.9927`** |
+| its spread | `0.010` | **`0.0331`** |
+
+⛭ **Both of the sentence's claims survive**: the slope is positive in every one of the twelve settings (range `+0.01008` to `+0.04297`), and the intercept still covers one (range `0.9213`–`1.0414`). *So this is a figure move and not a claim change — but it is six digits and one of them more than doubles, so the sentence should not be left as it is.* **Yours to land; I have not touched `corpus/CR_cosmology.tex`.**
+
+#### ⛔ ③ AND A SECOND SITE, WHICH IS YOUR OWN LANDING ONLY HALF APPLIED: `l.2790` STILL CARRIES `14.6`/`0.08`
+
+The summary `\item` at `l.2790` says the retention is *"narrower here because this arm's visibility is the `$14.6$` per cent wider in `$\chi$` while accumulating the same sound horizon to `$0.08$` per cent"*. **You landed `15.5` and `0.36` for exactly that pair at `l.1850` in `r7675`.** ⇒ **The paper now prints two different numbers for one quantity**, the namesake pair in the summary item and the arm-of-record pair in the section. *Not a new measurement — `a_source` pins `15.5` and `0.36` as of this commit — just a site your pass did not reach.*
+
+#### ④ THE OTHER THREE CONSTANTS, EACH A DIFFERENT SITUATION, AND TWO OF THEM NEED NOTHING
+
+- **`PUB156` (`the_peak_plane`) — NEEDS NOTHING, already done at `r7673+cc66.13`.** Its pin is asserted on the **namesake**, which is correct because `cc66.156` published a namesake measurement, and the arm-of-record reading is computed and printed beside it: `11.3× → 12.7×` on the common offset and `21.4× → 19.9×` on the alternation at five peaks, `12.0×` at four, the control's `11.4×`/`22.6×` unchanged. ⌗ **And none of those numbers is in print.** `l.2171`'s `11.7`/`18.3` belong to the receipt cited *first* there, `the_de_tilted_peak_set…`, which is already per-arm on `grid_oneclock_leafrec1`/`grid_licensed_leafrec1` and **pins all four printed factors to their printed digit**. *So that site is sound and I am not routing it.*
+- **`R6919` (`the_band_rms_ratio`) — BLOCKED, as your order says.** It is a dict of two namesake base points that the receipt's hardcoded twelve-axis table is scored against, and the receipt **reads no bank at all**. There is nothing to re-derive until 70's sweep lands on the arm of record.
+- **`CR_PK` (`the_skys_own_fourth_peak`) — re-derivable, and in flight.** It is `cc66.28`'s namesake peak quartet `221.8/536.8/812.9/1126.5`, and the receipt loads **no spectra**: the quartet is the input. Its digits are not in print, but it carries `1.4` of the sky's locating spreads and the "two thirds shared with the control" at `l.2790` into print. Re-deriving means running the receipt's own `find_free` locator on the arm-of-record bank. **Next, not in this commit.**
+
+#### ⌗ AND A STALE COMMENT CORRECTED WHILE I WAS IN THERE
+
+The acceptance receipt's `R6919_NARROWING` block still described `= 0.128` and a `0.93 pp` agreement — the namesake state, left standing after the constant itself was moved to `0.131`. It now records the arm-of-record reading and the real margin (`0.63 pp` apart, `0.37 pp` of `1.00 pp` left). *Third time this lane has paid for a comment describing a superseded state.*

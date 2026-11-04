@@ -385,6 +385,60 @@ check("⇒ so the joint object is `d r_s / d chi` across the visibility -- the s
       f"{100*(CS['cr']/CS['lcdm']-1):+.1f} per cent")
 
 # ===================================================================================================
+# ⛭⛭⛭ `r7677+cc66.1` -- ** THE EIGHT FIGURES THIS RECEIPT CARRIES IN PRINT, PINNED. **
+#
+# `r7677` (69) item 1.  Until 69 placed `\rcpt{}`s in the three uncited sentences -- its ruling on
+# 60's fork, branch (a) -- `check_figures_pinned` could not SEE these sites at all: its citation
+# scope is the SENTENCE, and the figures sat one sentence from any citation.  Now it reads them, and
+# every one was UNPINNED.
+#
+# ⛔ ** AND NOT ONE OF THEM WAS PINNED BY THE COMPARISONS ALREADY HERE, WHICH IS THE PART I HAD
+#   WRONG.  **  Five of the eight already meet a literal -- `> 1.054` on the ratio, `< 0.005` on the
+#   sound-horizon agreement, `> 0.10` on the distance difference, `> 0.05` on the sound speed -- but
+#   every one of those is a ONE-SIDED BOUND, and a bound is not a pin: it cannot fail when the
+#   figure drifts the safe way.  `figure_pin_baseline.tsv`'s own header states the rule -- *slack,
+#   one-sided and absent pins flag* -- and the gate applies it, requiring the pin's value to sit
+#   within the printed digit's own allowance and its tolerance to be no wider.
+#   ⇒ * So each printed digit is named here as a constant and compared against the value this
+#     receipt COMPUTES, at half the last printed digit.  Both directions now fail: the receipt
+#     drifting off the paper, and the paper being edited away from the receipt. *
+#
+# ⌗ The three figures this receipt does NOT compute -- `4.43`, `5.14` and `13.73`, the acceptance
+#   receipt's span and narrowing -- stay in the baseline under this receipt's key, with the verdict
+#   written there.  *They are in the SENTENCE this receipt is co-cited on; they are not its numbers,
+#   and a pin here would make it assert values it never measures.*
+RATIO_IN_PRINT = 1.061            # l.1797: the injection's arm/control retained ratio
+D_RS_AGREE_PCT_IN_PRINT = 0.36    # l.1807, l.1850: the sound horizon across the visibility, agreement
+D_CHI_DIFF_PCT_IN_PRINT = 15.5    # l.1808, l.1850: the comoving distance across the same window
+RS_CTL_MPC_IN_PRINT = 17.307      # l.1807: d r_s on the control, Mpc
+RS_ARM_MPC_IN_PRINT = 17.369      # l.1807: d r_s on the arm of record, Mpc
+CHI_CTL_MPC_IN_PRINT = 38.04      # l.1809: d chi on the control, Mpc
+CHI_ARM_MPC_IN_PRINT = 43.96      # l.1809: d chi on the arm of record, Mpc
+CS_LOWER_PCT_IN_PRINT = 13.1      # l.1810: d r_s / d chi, the arm lower than the control
+_pin_ok = (
+    abs(RES['sweepown']['r'] - RATIO_IN_PRINT) < 5e-4
+    and abs(100 * abs(_drs) - D_RS_AGREE_PCT_IN_PRINT) < 5e-3
+    and abs(100 * _dch - D_CHI_DIFF_PCT_IN_PRINT) < 5e-2
+    and abs(g('d_rs_own', 'lcdm') - RS_CTL_MPC_IN_PRINT) < 5e-4
+    and abs(g('d_rs_own', 'cr') - RS_ARM_MPC_IN_PRINT) < 5e-4
+    and abs(g('d_chi', 'lcdm') - CHI_CTL_MPC_IN_PRINT) < 5e-3
+    and abs(g('d_chi', 'cr') - CHI_ARM_MPC_IN_PRINT) < 5e-3
+    and abs(100 * (1 - CS['cr'] / CS['lcdm']) - CS_LOWER_PCT_IN_PRINT) < 5e-2)
+check("⛑ ⛭⛭ ** EVERY FIGURE THIS RECEIPT CARRIES IN `P15` IS COMPARED AGAINST THE PRINTED DIGIT, "
+      "NOT MERELY PRINTED BESIDE IT. **  Eight digits, each held to half its own last place: the "
+      "injection's ratio, the sound-horizon agreement, the distance difference, the two `d r_s` and "
+      "the two `d chi` in Mpc, and the sound-speed deficit.  ⛔ *Five of them already met a literal "
+      "before this gate existed and NONE of those was a pin: a one-sided bound cannot fail when the "
+      "figure drifts the safe way, which is why the gate reported all eight unpinned*",
+      _pin_ok,
+      f"{RES['sweepown']['r']:.4f} vs {RATIO_IN_PRINT}; {100*abs(_drs):.4f} vs "
+      f"{D_RS_AGREE_PCT_IN_PRINT}; {100*_dch:.4f} vs {D_CHI_DIFF_PCT_IN_PRINT}; "
+      f"{g('d_rs_own','lcdm'):.4f}/{g('d_rs_own','cr'):.4f} vs {RS_CTL_MPC_IN_PRINT}/"
+      f"{RS_ARM_MPC_IN_PRINT} Mpc; {g('d_chi','lcdm'):.4f}/{g('d_chi','cr'):.4f} vs "
+      f"{CHI_CTL_MPC_IN_PRINT}/{CHI_ARM_MPC_IN_PRINT} Mpc; "
+      f"{100*(1-CS['cr']/CS['lcdm']):.4f} vs {CS_LOWER_PCT_IN_PRINT} per cent")
+
+# ===================================================================================================
 print("\nPART 4 -- ⓶ THE TWO SWAPS, ONE AT A TIME, AND WHY NEITHER CLOSES IT ALONE.")
 print("-" * 100)
 print("  (a) THE CLOCK SWAP -- and the statistic reports it as ILL POSED rather than as a null")
