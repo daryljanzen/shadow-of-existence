@@ -32575,3 +32575,42 @@ def series(fname):   z = np.load(os.path.join(SP, fname))     # <- load site: no
 **Verified:** `census.py` rc=0, **13 of 13**; `LIST.md` regenerated at **48** items; `NODE=cc66 bash scripts/turn_gates.sh` **`ran 123 of 123`, `PASS=123 FAIL=0 UNRUN=0`** on this exact tree.
 
 ⛭⛭ **AND THE HOLD PAID: `81c30147f` CAME BACK FULLY GREEN IN CI** — `fast`, `scoped — the plain suite`, `scoped — the runner-read sweep`, `scoped — the tolerance perturbation` and all three tolerance probe builds `success`. *That is the first clean head of this revision, and it is the first tolerance tier this session that was allowed to finish: the three earlier ones were cancelled by my own next push and came back `0 named red, N NEVER PROBED`. The rule's three conditions were all met at that moment — nothing uncommitted, no fix waiting, a long job genuinely mid-flight — and holding is what bought the verdict.*
+
+### ⛭⛭⛭ `r7669+cc66.1` — **READING THE UNDECIDABLE ITEMS: ONLY TWO LEAVE THE LIST, AND THE CONTROL HAS NO ARM-OF-RECORD LEG IN ANY GRID FAMILY**
+
+Item 1 done. `computations/beyond_the_wall/r7669_cc66_reading_the_undecidable/` — `classify.py`, **9 checks, 0 failures**, `PREDICTION.md` registered in its own commit and pushed before it existed. **Tree `5e2eb9658`.**
+
+⛭⛭ **THE STRUCTURAL FINDING, and it bears on your item 3: the control has no `_leafrec1` leg in ANY grid family.**
+
+| directory | `.npz` | `cr_*` | `lcdm_*` |
+|---|---|---|---|
+| `refit_grid` → `refit_grid_leafrec1` | 20 → 10 | 9 → 9 | 9 → **0** |
+| `refit_grid185` → `refit_grid185_leafrec1` | 20 → 10 | 9 → 9 | 9 → **0** |
+| `grid_oneclock` → `grid_oneclock_leafrec1` | 18 → 9 | 9 → 9 | 9 → **0** |
+| `r7201_cc66_loading_lever` → `…_leafrec1` | 7 → 4 | 4 → 4 | 3 → **0** |
+
+⚠ **Evidence about the BANK, not a measurement of the physics, and `Ⓐ②` asserts that limit rather than leaving it to be assumed.** It says every seat that built an arm-of-record grid built the CR legs and no control leg, four times over. **It does NOT say the control's features do not move — that is 70's measurement and I have not pre-empted it.** *The reading that fits the shape — `LEAFREC` is a property of the CR arm's leaf-rate treatment with no referent for a ΛCDM control — is reasoning from the bank's structure and is labelled as such.*
+
+⇒ **The consequence for item 3, stated but not counted:** a namesake-only read of a **control** leg has no arm-of-record counterpart in the bank at all, so it cannot be REBUILD — there is nothing to rebuild it against. Per your order that is not counted until 70 reports, and this file counts nothing.
+
+**THE READING ITSELF.** Resolving each load site through the **directory constant it joins** decides what the load site alone could not:
+
+| across the 104 spectrum-loading receipts in scope | count |
+|---|---|
+| every resolved load is **arm of record** | **3** |
+| loads **both** arms | **24** |
+| every resolved load is **namesake** | **65** |
+| audits every `.npz` under `computations/` with a recursive glob | **6** |
+
+**Restricted to the figure-printing handover subset — 24 items here:** **1** leaves (arm of record only), **1** leaves on other grounds (tree-auditing glob), **4** are decided by their **sentence** rather than their loads, **15** stay on namesake reads, **4** are still undecidable from source.
+
+**THE ARMS — TWO MISSED, TWO HIT.**
+
+- ⛔ **① FALSIFIED, not narrowly.** Registered **8–14** would leave; **two** do. *I reasoned from "ten mention `leafrec1` in their own source" — but **mentioning it is not loading it**: most of those mentions are a header guard asserting a counterpart exists, or a comment explaining why the namesake is the one pinned.* **That is the same mistake as the whole `r7667` sequence, once more: I keyed on a cheaper signal than the question.**
+- ⛔ **② WRONG IN THE OPPOSITE DIRECTION, cause named.** Registered a **one**-item gap against the census's 22; this file's subset is **24**, a gap of **two** the other way. The cause is the **candidate set**, not the sentence test: `census.py` excludes any receipt carrying an arm-of-record load site, so its undecidable bucket never holds the **4 both-arm items** this file keeps. *Named rather than reconciled by moving one — the classification is per item, so the boundary moves the headline and no verdict.*
+- ✔ **③ HIT.** The tree-auditing class is real: **6** in scope, **1** in the subset, globbing `computations/**/*.npz`. They do not *rest* on a namesake in any sense a rebuild would fix.
+- ✔ **④ HIT.** `P15_the_phase_is_the_driving…` and `P15_where_the_likelihood_sits` both resolve namesake, and their own header guards assert the loaded file **is** the LEAFREC=0 namesake with a counterpart beside it. ⇒ **RE-GROUND with the wording already written.**
+
+⇒ **Item 2 is now the whole of the work and it turns on SENTENCES, not loads.** 15 stay on namesake reads, 4 are decided by which figure their sentence prints, 4 need a human read. **Item 4 (`c54.178`) is untouched and is the next increment.**
+
+**Verified:** `classify.py` rc=0, 9 of 9; `NODE=cc66 bash scripts/turn_gates.sh` on this tree — **`ran 123 of 123`, `PASS=123 FAIL=0 UNRUN=0`**.
