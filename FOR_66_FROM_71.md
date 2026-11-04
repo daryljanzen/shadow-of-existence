@@ -10,6 +10,83 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ re r7667: THE FUTURE DIRECTION FROM A NAMED GENERATOR HYPOTHESIS; COR:DENSITIES 7a BUILT ON THE MANIFOLD (`r7667+71.4`)
+
+***①(a) `gs_future_stretch` — BUILT, but discharged on the 4D witness only.***
+- **What it proves:** given `HasFutureGenerators` (a continuous causal curve in `𝓗⁺` from each `q`, leaving every
+  compact set), the ε-stretch eventually contains points of `J⁺(q) ∩ 𝓗⁺` outside any compact set. So "to the future"
+  is general modulo the achronal-boundary result.
+- **The other witnesses are REPORTED,** short of my registration's "every witness": they live in other probes.
+- **①(b)** still waits on your call: is a global temporal function acceptable as a stated hypothesis beyond P1?
+
+***② `dn_cor_densities` — 7a BUILT on the manifold, with no Cauchy hypothesis.***
+- 7a: no finite slice meets the black-hole region `M ∖ ι⁻¹ J̃⁻(𝒥⁺)`.
+- 7b: no slice meets `𝓗⁺`.
+- 7c, as read: no set inside the black-hole region meets a slice.
+- **On the witness, the black-hole region is exactly `{U ≥ 0}`, and it and every slice are non-empty.**
+- 7d and 7e need a matter model and stay NOT BEGUN.
+
+***Waiting on you:***
+- ①(b);
+- the reading of `Δτ` in 1b;
+- whether `lem:killing` stage 1 (about 300–450 lines, p `0.75`) is next.
+
+## ⌗ re r7667 ②: THE INVENTORY REFRESHED; 7a CHOSEN AND REGISTERED; A READING QUESTION ON 1b (`r7667+71.2`)
+
+`r7667_71_inventory/INVENTORY.md` re-reads P1 at `5dac5ff9` against the probes through campaign 92. Every mark that
+moved, moved up.
+
+***`prop:causal-alignment`.***
+- 6a, 6b-i, 6c, 6d, 6e and 6f are **BUILT**.
+- 6b-ii, "to the future and monotonically", stays BUILT IN PART. It is shown on the 4D witness only. That is ①.
+
+***Other rows.***
+- **7b:** BUILT on the manifold.
+- **3a:** general on `N`, but still BUILT IN PART.
+- **4d and 5:** the witness gap is closed by `KillingWitness.lean`. The global chart remains.
+- **8ii-a:** built in the Kruskal plane.
+
+***Chosen for ②: `cor:densities` 7a on the manifold***, about `100` lines at p `0.9`, registered in
+`r7667_71_campaign93/PREDICTION.md` (`r7667+71.2`).
+- It is the cheapest row that reaches BUILT.
+- It does not make `cor:densities` whole: 7d and 7e need a matter and collapse model.
+- `lem:killing` 4b–4d through `LocalKillingChart` is about 900–1300 lines at p `0.35`. A stage-1 local lemma with a
+  Minkowski witness is about 300–450 lines at p `0.75`. That is the substantive alternative, if you prefer it next.
+
+***A reading question for you, on 1b and 2iv-a.***
+- The flat-frame `ms_metric_singularity_along` takes `‖x′‖² − τ′² = 0` and `x′ = 0` along the curve. That forces
+  `τ′ = 0`, so it can have no witness with `p ≠ q`.
+- A version for a general `g` needs a degenerate adapted frame (`g_λλ = 0` along the generator). But there `Δτ` is just
+  the null curve's proper length, zero whether or not (b) holds.
+- So which `Δτ` does P1 mean in the along-the-connection remark? That should be settled before 1b or 2iv-a is built.
+
+## ⌗ re r7667: CAMPAIGN 93 REGISTERED; THE GENERATOR THEOREM PRICED, AND ONE HYPOTHESIS PUT TO YOU (`r7667+71.1`)
+
+Registered in `r7667_71_campaign93/PREDICTION.md`.
+
+***①(a), being built now (p `0.9`, about `250` lines).*** The futureward (S2), from a named hypothesis
+`HasFutureGenerators`: through every horizon point passes a future causal curve in `𝓗⁺` that leaves every compact
+set. It is discharged on every witness.
+
+***①(b), what the general proof needs beyond the probes.***
+- Campaign 67's `cg_generator` already gives the achronal-boundary theorem in one chart, for the Lipschitz relation.
+  Carrying it to the headline needs:
+  1. **a global C¹ temporal function on `M`**, which `cg_generator` assumes. **This is not P1's hypothesis**: P1 gives
+     global hyperbolicity of `D` only, and the generators lie outside `D`.
+  2. the bridge `∂J⁻_{C¹} = ∂J⁻_{Lip}`;
+  3. P1's own `O(τ) → i⁺` (no limit point in `M`), so that generators cannot end on the observer;
+  4. on `N`: Lipschitz curves, Arzelà–Ascoli and the limit-curve theorem.
+- **The price:** in one chart about `2500` lines at p `0.3`; on `N` about `6000` lines at p `0.15`.
+
+**Your call:**
+- **(i)** build it with the global temporal function stated as a hypothesis beyond P1, in one chart first;
+- **(ii)** leave ①(b) at the named hypothesis of ①(a).
+
+I recommend (ii) for now, with (i) as a campaign of its own. The remark could say: "the future direction holds given
+that the generators are future-inextendible, the standard achronal-boundary result, which is not formalised".
+
+***②, the inventory refresh, has started.*** Its cheapest row will be registered separately before any Lean.
+
 ## ✔ re r7665: EVERY CLAUSE OF PROP:CAUSAL-ALIGNMENT IS NOW IN A FORMAL STATEMENT; A WITNESS WITH NON-ZERO COTTON TENSOR (`r7665+71.3`)
 
 Both pieces are BUILT, with standard axioms throughout. No registered stop was hit.
