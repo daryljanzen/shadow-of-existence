@@ -33615,3 +33615,44 @@ At the adjudicated point arm B is the **namesake** adjudicated leg, which is lik
 `.10` read the header; `.11` fix the shared definition; `.12` grep the co-citations; `.13` the shared blast radius; `r7675+cc66.4` the assertion's own message; `r7675+cc66.7` correct the quotation, never re-run the generator. ⇒ ***A repoint is only like-for-like if the thing on the OTHER side of the comparison moves with it. `pairs.py` established that the arm of record is a switch and a point; I then repointed one side of a comparison and left the other at the old point — the same error `pairs.py` was written to find, committed by the instrument's own author.***
 
 ⌗ *And `r7677+cc66.3` was pushed with its full run explicitly unconfirmed, saying a red one would be mine to fix here. It was, and it is.*
+
+---
+
+### ✔ `r7677+cc66.6` — **THE PRE-PUSH BATCH, AND `r7677`'s THREE OPEN ITEMS ARE ALL ANSWERED**
+
+**Verified on head `7c434e92c`:**
+
+| | |
+|---|---|
+| `NODE=cc66 scripts/turn_gates.sh` | **RC=0**, ran **123 of 123** expected, **PASS=123 FAIL=0 UNRUN=0** |
+| `check_exact_counts` | rc=0 — **63 of 63, no new site, no stale entry** |
+| `check_figures_pinned` | rc=0 — **1476 under 1377 keys against a baseline of 1476** |
+| `check_order_acknowledged` | rc=0 |
+| the depth-gap receipt, full run | **ALL CHECKS PASSED, 0 failures** (`run_depth_gap.txt`) |
+| `a_source`, `the_acceptance` | green, each with its new pin gate |
+| `crpk.py` | 4 gates, 0 failures |
+| `census.py`, `classify.py`, `split.py`, `dispose.py`, `onesent.py`, `constants.py` | all green |
+
+⌗ **And the exact-count commitment is discharged rather than assumed:** `check_exact_counts` reports **no new site**, so this revision's undertaking to run `S4`/`S10`/`S11`/`S13` by name is not triggered — reported because the condition was checked, not because nothing happened.
+
+#### WHERE `r7677` STANDS
+
+- **Item 1 — DONE.** Eleven figures pinned, **fifteen claim-sites** cleared, thirteen baseline rows removed by hand in two passes each verified by set comparison, four cross-sentence rows kept with their verdict in the header.
+- **Item 2 — DONE as the reading it is.** `SLOPE_PAPER` puts **six** namesake figures in print at `l.1772–1776`; `PUB156` needs nothing; `R6919` is blocked on 70's sweep; `CR_PK` is **unreproducible** from any of 369 banked spectra.
+- **Item 3 — DONE.** Repointed per key and gated, the arm of record here being a **point** as well as a switch; the `4 per cent` check restated as the invariance it protects; and my own cross-point first cut caught, measured and fixed.
+- **Item 4 — already discharged** by `r7675+cc66.6` before the order was written.
+
+#### THE SEVEN ARMS, SCORED
+
+| arm | registered | measured |
+|---|---|---|
+| ① `check_figures_pinned` to exactly 1480 | exact | **1476 — FALSIFIED**, on figures-vs-sites and a missed partition |
+| ② 3–9 of the eleven already pinned, central 6 | 3–9 | **0 — FALSIFIED below the floor**; five met a literal and every one was a one-sided bound |
+| ③ at least one of 69's assignments wrong | ≥1 | **0 — FALSIFIED**; all eleven were right |
+| ④ 1–3 constants re-derivable, central 2 | 1–3 | **1 — band holds at its floor**, central misses by one |
+| ⑤ at least one is a published or sky value | ≥1 | **0 — FALSIFIED**, which vindicates `r7675`'s item-5 census |
+| ⑥ 1–2 of the four move a figure in print | 1–2 | **1 (`SLOPE_PAPER`, six figures) — HIT** |
+| ⑦ the restatement needs no looser number | — | **HIT**, and it needed no number at all |
+| ⑧ 1–4 depth-gap gates red on the bare repoint | 1–4 | **1 — HIT at its floor**, and it was the one my own repoint caused |
+
+⇒ ***Five of eight falsified or missed, and four of the five in the direction that cost me.*** *That is the registration working: a revision where the arms mostly hit is a revision whose arms were not risking anything.*
