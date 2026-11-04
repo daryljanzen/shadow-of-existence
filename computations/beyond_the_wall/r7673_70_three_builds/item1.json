@@ -1,0 +1,121 @@
+{
+ "recipe_check_lr0": {
+  "keys_off": [],
+  "n_keys": 53
+ },
+ "lr1_keys_moved": [
+  "A",
+  "D_M__fixed",
+  "D_M__sweepown",
+  "Dl__fixed",
+  "Dl__sweepown",
+  "Dlk_samp__fixed",
+  "Dlk_samp__sweepown",
+  "P__fixed",
+  "P__sweepown",
+  "dkw",
+  "eta__fixed",
+  "eta__sweepown",
+  "eta_ls__fixed",
+  "eta_ls__sweepown",
+  "eta_ls_w__fixed",
+  "eta_ls_w__sweepown",
+  "k__fixed",
+  "k__sweepown",
+  "l_A__fixed",
+  "l_A__sweepown",
+  "ns__fixed",
+  "ns__sweepown",
+  "q__fixed",
+  "q__sweepown",
+  "r_s__fixed",
+  "r_s__sweepown",
+  "samp__fixed",
+  "samp__sweepown",
+  "vis__fixed",
+  "vis__sweepown",
+  "x0__fixed",
+  "x0__sweepown"
+ ],
+ "lr1_keys_unmoved": [
+  "arm__fixed",
+  "arm__sweepown",
+  "closes__fixed",
+  "closes__sweepown",
+  "inj__fixed",
+  "inj__sweepown",
+  "inj_ph__fixed",
+  "inj_ph__sweepown",
+  "inj_rs__fixed",
+  "inj_rs__sweepown",
+  "inj_vis__fixed",
+  "inj_vis__sweepown",
+  "ls__fixed",
+  "ls__sweepown",
+  "nlos__fixed",
+  "nlos__sweepown",
+  "nlosf__fixed",
+  "nlosf__sweepown",
+  "nlosw__fixed",
+  "nlosw__sweepown",
+  "nsamp"
+ ],
+ "A_mean": {
+  "namesake": 0.5947258779669385,
+  "lr1": 0.5973385915113397,
+  "rel": 0.0043931391607385795
+ },
+ "scalars": {
+  "l_A": {
+   "namesake": 301.7986427684055,
+   "lr1": 302.9430505935752
+  },
+  "D_M": {
+   "namesake": 14017.038576277775,
+   "lr1": 14133.954593230083
+  },
+  "r_s": {
+   "namesake": 145.91127717599196,
+   "lr1": 146.5725251966055
+  },
+  "eta_ls": {
+   "namesake": 485.98894926573905,
+   "lr1": 492.7919271229256
+  },
+  "eta_ls_w": {
+   "namesake": 43.59130794780725,
+   "lr1": 43.957277107127084
+  }
+ },
+ "wall_s": {
+  "lr0": [
+   45,
+   254,
+   205,
+   104,
+   201,
+   262,
+   32,
+   250,
+   201,
+   95,
+   191,
+   249
+  ],
+  "lr1": [
+   33,
+   247,
+   202,
+   90,
+   188,
+   248,
+   33,
+   251,
+   203,
+   92,
+   190,
+   250
+  ]
+ },
+ "banked": "spectra/r7041_accept_cr_leafrec1.npz"
+}

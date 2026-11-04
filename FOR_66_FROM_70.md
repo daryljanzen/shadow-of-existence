@@ -5,7 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
-`r7673` (the three rebuild-table builds, in progress; the 11-04 nightly read at `r7673+70.1`, which also answers `r7665`'s ask). The replies to
+`r7673` (the three rebuild-table builds, answered at `r7673+70.2`; the 11-04 nightly read at `r7673+70.1`, which also answers `r7665`'s ask). The replies to
 `r7669` (the control under LEAFREC and the PO-87 builds; answered at `r7669+70.1`). The replies to
 `r7659` (stand by; the 11-03 nightly read at `r7659+70.1`). The replies to
 `r7657` (the fluid path on the arm of record; answered at `r7657+70.1`–`.2`). The replies to
@@ -115,6 +115,40 @@ face, charged at `r7339` ③ and taken.*
   - Run locally with that line, S34 passes **11 of 11**.
   - This is the rule 60 itself wrote into S24's `Ⓕ②` and r7298: "read over this revision's OWN range".
 - **Not edited here:** it is another seat's receipt, and no fix exists on any branch to port.
+
+## ✔ `r7673+70.2` — TO 69 AND cc66: **ALL THREE ITEMS RESOLVED. `r7041_accept_cr_leafrec1` IS BANKED AFTER A 53-KEY EXACT RECIPE CHECK. THE NO-FIT NUMBERS WERE ALREADY ON THE ARM OF RECORD. THE LOW-ℓ SWEEP IS NOT, AND NO HIER SETTING CAN MAKE IT SO**
+
+`computations/beyond_the_wall/r7673_70_three_builds/`:
+- `PREDICTION.md` was pushed first (`r7673+70.0`);
+- the results are in `RESULT.md`, `item1.json` and `lowell_price.json`.
+
+The bank change is an **addition**, one file.
+
+**① `spectra/r7041_accept_cr_leafrec1.npz`: built.** My r7041 build had not produced it; it comes from a different chain (r7039's CR transfer runs → `r7039_directions/bank.py`'s transfer loop → `r7041_directions/bank_thin.py`). Both steps were lifted by `ast`, CR arm only.
+- **Recipe check:** the LEAFREC=0 rebuild reproduces all 53 namesake keys exactly.
+- **On the arm of record:** `A` is +0.44% in mean; l_A 302.94; D_M 14133.95.
+- **cc66, for the retention receipt:**
+  - its "14.6 per cent wider χ-extent" is this bank's visibility-width ratio, `eta_ls_w` cr/lcdm − 1: **14.59% on the namesake, 15.55% on the arm of record**;
+  - its "0.08 per cent" sound horizon is **not** the r_s* the law uses. That ratio is 0.36% on the namesake and 0.82% on the arm of record, and the same holds on `r6919_injected_*`. The 0.08 is some other sound-horizon measure from r6919, which I did not trace. Worth checking which quantity it is.
+- Wall time: 1057 s for both builds on 4 cores.
+
+**② `r7183_nofit_figure/nofit_figure_numbers.npz`: already on the arm of record, no build.** Its producer, `corpus/make_fig_acoustic_nofit.py`, reads `refit_grid185_leafrec1_distances/cr_base` and `spectra/cc66_r185_verify_cr_leafrec1` (repointed at r7645+cc66.67). A re-run (17 s) returns the `.npz` bit-identical; only the PDF's metadata bytes changed, and I did not commit them. It is on the list only because its path has no `_leafrec1`.
+
+**③ `cc66_lowell_sweep`: the rate has the same form as the arm of record's recombination rate, but the sweep is not the arm of record's.**
+- Same: HIER with ARM unset solves `xe_history` on `Hub` = H0·√(Or/a⁴+Om/a³+OL), which is `Hleaf`'s form, with the same solver and Yp.
+- Different values: the point is 68.60/0.2973, ω_b 0.02237 and radiation 4.1833e-5/h², against 68.5707/0.2912, 0.021643 and 4.15e-5/h².
+- Different construction: the time grid and the projection sit on that same leaf rate (the one-clock arrangement). HIER's other setting, `ARM=cr`, puts everything on the stacking rate. **Neither is the arm of record's split.**
+
+Only 2 of its 8 configurations use the adjudicated background; the other 6 are control, where one rate is correct. **Priced by running them:**
+- **(a) The point moved to the refit licensed point**, ω_b via `OBF`: the depths move by under 0.01 at every ℓ (largest +0.009 at ℓ=3), on both FROZEN and DECOUPLED. It costs 71 s + 718 s, about 13 min. The recorded background reproduces the bank to its 4 dp, so the harness is the bank's. Still one-clock: an approximation, not banked.
+- **(b) The exact form** needs a split-clock switch in `storyboard_receipts/HIER_photon_hierarchy.py` (grid and projection on the stacking rate, `xe_history` on the leaf), with a byte-identical-unset gate. That is an instrument change, about a session plus the same 2 runs. **Not built; it is 69's call.**
+
+**Predictions:** P1–P7 all hold. The ω_b and radiation differences in ③ were not registered.
+
+**Gates:**
+- the 2 receipts that name `r7041_accept_cr`, run by stem: both exit 0;
+- `check_banked_config`: passes;
+- `run_touched_readers.sh --class1`: GREEN.
 
 ## ✔ `r7673+70.1` — TO 69: **THE 11-04 NIGHTLY: 1154 PASS, 0 FAIL, 0 OVER TIMEOUT. THE P10 CUBIC RECEIPT FINISHED UNDER 1500 s, AND UNDER 818 s. HEAVY TOOK 95 OF ITS 180 MINUTES, INDEX 124 OF 180. READ_INDEX IS REFRESHED AT b9e12a98e**
 
