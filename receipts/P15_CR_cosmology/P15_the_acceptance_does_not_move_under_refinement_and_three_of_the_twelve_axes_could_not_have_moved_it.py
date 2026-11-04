@@ -92,7 +92,17 @@ INERT_CLAIMED = {('cr', 'the mode count NK'),
                  ('cr', 'the reported ell grid LSTEP'),
                  ('lcdm', 'the reported ell grid LSTEP')}
 FLOOR = 0.006                      # r6911's, on a KNOWN injected contrast
-R6919_NARROWING = 0.128            # r6919's INDEPENDENT dr_s/dchi reading
+#: ⛭⛭⛭ r7673+cc66.7 -- MOVED TO THE ARM OF RECORD WITH THE RECEIPT THAT MEASURES IT.  This is
+#:   r6919's INDEPENDENT dr_s/dchi reading, carried here as a LITERAL -- a dependency no
+#:   path-based census can see, which is why `r7673+cc66.1` routed it to 69 rather than leaving
+#:   it.  `P15_a_source_with_no_physics…` was repointed at `r7673+cc66.4` and its reading moved
+#:   12.8 -> 13.1 per cent (d r_s/d chi 0.3967 -> 0.3951 on the arm against 0.4549 on the
+#:   control).  ** So the two routes are now BOTH on the arm of record and the agreement is
+#:   0.63 pp where a half-moved comparison read 0.93. **
+#:   ⌗ *The namesake pair agreed to 0.23 pp.  The arm of record's 0.63 pp is looser, and that
+#:     is a fact about the two routes rather than about either receipt; gate ⓹ prints the gap
+#:     and gate ⓻ prints what is left of the tolerance, so the loosening cannot pass unseen.*
+R6919_NARROWING = 0.131            # r6919's INDEPENDENT dr_s/dchi reading, ARM OF RECORD
 
 print(__doc__)
 print("=" * 100)
@@ -208,7 +218,7 @@ check("⓸ and the LARGEST excursion anywhere among the nine axes that can move 
 print("\n  ⓹ THE ARM-TO-CONTROL ACCEPTANCE RATIO, AT EVERY SETTING, AGAINST AN INDEPENDENT READING")
 print("  " + "-" * 98)
 print("  *This is the quantity the law's prediction rides on.  `r6919` measured the arm's chi-extent")
-print("  narrowing as 12.8 per cent from dr_s/dchi, by a route that never computes an acceptance.*")
+print(f"  narrowing as {R6919_NARROWING * 100:.1f} per cent from dr_s/dchi, by a route that never computes an acceptance.*")
 nar = []
 for t in TAGS:
     sc, sa = float(AL[f'lcdm_{t}_span'][0]), float(AL[f'cr_{t}_span'][0])
@@ -217,9 +227,9 @@ for t in TAGS:
 sprd = float(np.max(nar) - np.min(nar))
 check("⓹ the narrowing is the SAME at all twelve settings -- it is not an artefact of one grid",
       sprd < 0.001, f"spread across twelve settings = {sprd * 100:.4f} percentage points")
-check("⓹ and it agrees with r6919's independent dr_s/dchi reading of 12.8%",
+check(f"⓹ and it agrees with r6919's independent dr_s/dchi reading of {R6919_NARROWING * 100:.1f}% -- BOTH routes now on the arm of record (r7673+cc66.7)",
       abs(float(np.mean(nar)) - R6919_NARROWING) < 0.01,
-      f"{np.mean(nar) * 100:.2f}% against 12.8%, {abs(np.mean(nar) - R6919_NARROWING) * 100:.2f} pp apart")
+      f"{np.mean(nar) * 100:.2f}% against {R6919_NARROWING * 100:.1f}%, {abs(np.mean(nar) - R6919_NARROWING) * 100:.2f} pp apart")
 
 print("\n  ⓺ SCOPE, GATED RATHER THAN ASSERTED IN PROSE ALONE")
 print("  " + "-" * 98)
@@ -291,7 +301,7 @@ _nar_mean = float(np.mean(nar))
 _margin = 0.01 - abs(_nar_mean - R6919_NARROWING)
 print(f"      the two-route agreement's remaining margin: {_margin * 100:.2f} pp of 1.00 pp")
 check("⓻ THE AGREEMENT'S MARGIN IS PRINTED RATHER THAN ONLY ITS VERDICT: the cross-check against "
-      "r6919's hardcoded 12.8 per cent passes, and how much room is left is on the record because "
+      "r6919's hardcoded reading passes, and how much room is left is on the record because "
       "`R6919_NARROWING` is a NAMESAKE measurement this repoint did not move",
       _margin > 0, f"{_margin * 100:.2f} pp left of the 1.00 pp tolerance")
 

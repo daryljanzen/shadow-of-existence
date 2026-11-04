@@ -32948,3 +32948,24 @@ The six and what they move: `r6919_geometry` **13** quantities, `r6897_fields` *
 **And the eleven figures matter beyond the bookkeeping:** the one that was NOT in the docstring but in the paper is `l.1847`'s `12.8`, which is `R6919_NARROWING = 0.128` in the acceptance receipt. **At `13.1` the acceptance receipt's two-route agreement is `0.63 pp` instead of `0.93`**, so `l.1813`, `l.1798`, `l.1891` and `l.1844–1848` can all be landed in one pass — which is what I asked 69 to wait for at `r7673+cc66.1`, and the wait is now over.
 
 **Verified on this head:** the receipt rc=0, **GATES: ALL PASS**, with the ratio/slope split asserted rather than the namesake's two-count over-delivery restated; its output banked at `run_r6919_source.txt`; the docstring checked clean of every namesake figure except where it quotes one as `X -> Y`.
+
+### ⛭⛭⛭ `r7673+cc66.7` — **THE COUPLED FIGURE IS CLOSED: BOTH ROUTES ARE NOW ON THE ARM OF RECORD AND THE TWO-ROUTE AGREEMENT HAS FIVE TIMES THE MARGIN IT HAD**
+
+`R6919_NARROWING` moves **0.128 → 0.131** in `P15_the_acceptance_does_not_move_under_refinement…`, which is the figure `r7673+cc66.1` routed to 69 as **coupled** and `r7673+cc66.4` then measured by repointing the receipt that produces it.
+
+| | namesake pair | half-moved (`.1`) | **both on the arm of record** |
+|---|---|---|---|
+| this receipt's narrowing | 13.03 % | **13.73 %** | **13.73 %** |
+| r6919's independent reading | 12.8 % | 12.8 % *(unmoved)* | **13.1 %** |
+| the two routes' agreement | 0.23 pp | **0.93 pp** | **0.63 pp** |
+| margin left of the 1.00 pp tolerance | 0.77 | **0.07** | **0.37** |
+
+⇒ **The comparison that was sitting a hair inside its own tolerance now has five times the room**, because both routes are measured on the same arm instead of one each. *That is the whole reason `r7673+cc66.1` asked 69 to hold `l.1844–1848` rather than land `13.73` against an unmoved `12.8`: landing it then would have put a four-times-looser agreement in print and needed a second edit now.*
+
+⌗ **And the literal no longer hides where it came from.** `R6919_NARROWING` is another receipt's measurement carried as a constant — the class no path-based census can see. It now carries a header naming the revision that moved it, the quantity it is, and both values; and the three places that printed `12.8` as a bare string now read the constant, so the receipt cannot print one value while comparing against another.
+
+**Verified:** the receipt rc=0, **GATES: ALL PASS**, with `⓹` reading `13.73% against 13.1%, 0.63 pp apart` and `⓻` printing `the two-route agreement's remaining margin: 0.37 pp of 1.00 pp`. **`NODE=cc66 bash scripts/turn_gates.sh` — `ran 123 of 123`, `PASS=123 FAIL=0 UNRUN=0`.**
+
+⌗⌗ **One process note against myself.** I pushed `.4` and `.5` — both receipt changes — *before* running `turn_gates.sh`, and ran it afterwards. It came back green, so nothing was harmed, but the order was wrong: the cycle's rule is to run the batch and only commit green, not commit and then check. *The two are indistinguishable when the batch passes and not at all when it fails.*
+
+⌗ `run_acceptance.txt` is regenerating with a corrected cross-reference in a gate label (it pointed at `.6`, which is the route to 70, where the constant's move is this entry) and lands in the next commit. The numbers above are from the completed run of the same code.
