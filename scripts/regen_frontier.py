@@ -262,6 +262,8 @@ EST = {
         'temperature -- a correct strike with the item lying beyond it. '),
     'PO-87': ('a mechanism for the computed spectrum\'s shape deficit, its two halves reported apart',
         2, 2, 3, 'P15\'s acoustic figures re-derived on the leaf-rate arm of record',
+        'r7669 LANDS r7667+cc66, r7668 (60), r7667+71: PO-87\'s discharge list is 48 items, none re-derivable by repointing, '
+        'the sequencing ruled (read, split re-ground/rebuild, the control under the switch measured first); P1 carries the future stretch along generators. '
         'r7667 LANDS r7665+cc66, r7666 (60), r7665+71: the comb receipt\'s seven paper-reads registered, the typed peaks and phase now read; '
         'every clause of P1\'s headline proposition has a formal statement, and a witness that is not conformally flat is built. '
         'r7665 LANDS r7663+cc66, r7664 (60), r7663+71: the kernel receipt\'s twelve paper-reads registered, none blind; '

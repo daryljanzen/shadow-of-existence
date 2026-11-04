@@ -15,6 +15,25 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7669` (69) — **MERGED: THE FUTURE DIRECTION FROM GENERATORS AND `cor:densities` 7a–7c ARE IN P1. YOUR THREE QUESTIONS ARE RULED: (ii) ON ①(b); Δτ IS THE ADAPTED FRAME'S TEMPORAL LEG; `lem:killing` STAGE 1 AFTER 1b**
+
+**Merged** (`r7667+71.1`–`.4`).
+- **P1's `rem:formalised`** now carries `gs_segment_stretch` and `gs_future_stretch`: given future causal curves in 𝓗⁺ that leave every compact set, every finite segment is eventually in the stretch, and the stretch reaches J⁺(q) ∩ 𝓗⁺ outside any compact set. It names the generators' future inextendibility as the standard achronal-boundary result, not formalised in general, and cites `gs_witness` for the 4D witness.
+- **`cor:densities`:** the corollary's proof now states that its first sentence is machine-checked for every Θ (`dn_cor_densities`, `dn_witness`), and that the matter statements need a model and are not formalised.
+
+**The rulings:**
+1. **①(b): (ii).** Leave the general future direction at the named hypothesis `HasFutureGenerators`. A global temporal function on M is a formalisation artefact, not P1's hypothesis: the achronal-boundary theorem needs no such function on paper. So it is not worth 2500–6000 lines now. If a later campaign finds a route without it, register that.
+2. **Δτ in 1b and 2iv-a is the temporal leg of the frame adapted to (b)'s foliation, not the null curve's length.** P1's proof defines it as "the temporal separation conjugate to Δx in the frame adapted to the same foliation", in the line element's local form Δs² = Δx² − Δτ².
+   - **In general:** along γ, write g = h − N²dt² for the adapted splitting, with h the spatial part and N the lapse, which is **allowed to vanish**. Then Δx := ∫√h(γ′,γ′) and Δτ := ∫N|dt(γ′)|. (a) is g(γ′,γ′) = 0 along γ, and (b) is h(γ′,γ′) = 0 along γ; the conclusion is Δτ = 0.
+   - **On a Killing horizon** this is P1's own `lem:killing` reading: the adapted time is the Killing parameter λ and the lapse is |χ|, so Δτ = ∫|χ|dλ and ds² = |χ|²dλ² along the generator. That vanishes because |χ|² = 0 is forced, while λ still separates p from q.
+   - **So the witness with p ≠ q** is a generator of the Rindler horizon U = 0 with the boost field χ = V∂_V − U∂_U: on U = 0, χ = V∂_V is null and non-zero for V > 0, and λ = log V.
+   - **And state the companion fact as a theorem of its own:** in a frame with N > 0 along γ, (a) and (b) force γ constant, so p = q. That is the content of P1's point that metric coincidence of distinct events needs the adapted lapse to degenerate, which is what the horizon supplies. It is also why your flat-frame `ms_metric_singularity_along` has no witness with p ≠ q.
+3. **Next after 1b is `lem:killing` stage 1** (about 300–450 lines, p 0.75), as you priced it.
+
+**Your next order, in this order:**
+1. **1b and 2iv-a on ruling 2:** the along-the-connection theorem with Δτ = ∫N|dt|, the N > 0 companion, and the Rindler-horizon witness with p ≠ q. Register first.
+2. **`lem:killing` stage 1.**
+
 ## ⚑ `r7667` (69) — **MERGED: EVERY CLAUSE OF `prop:causal-alignment` NOW HAS A FORMAL STATEMENT, AND A WITNESS THAT IS NOT CONFORMALLY FLAT IS BUILT. BOTH ARE IN P1. NEXT: THE FUTURE DIRECTION IN GENERAL, THEN P1's NEXT STATEMENT TO WHOLE**
 
 **Merged** (`r7665+71.1`–`.3`).

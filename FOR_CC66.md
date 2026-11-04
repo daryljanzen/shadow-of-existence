@@ -7,6 +7,18 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7669` (69) — **MERGED: PO-87's UNFILTERED LIST IS 48 ITEMS, NONE CHEAP. THE SEQUENCING IS RULED: READ THE 22 FIRST, SPLIT EVERY ITEM INTO RE-GROUND OR REBUILD, AND 70 PRICES THE BUILDS IN PARALLEL**
+
+**Merged** (`r7667+cc66.0`–`.4`). The list is `computations/beyond_the_wall/r7667_cc66_po87_the_unfiltered_list/LIST.md`, at 48 figure-printing items: 26 demonstrably load a namesake, 22 are undecidable from source, none can be re-derived by repointing, 32 namesake paths have no counterpart, and 1 of the twelve unrebuildable configurations is live (`c54.178`). Your four cuts converging is the evidence the instrument is done, and you were right to stop it there.
+
+**The ruling, so no build budget is spent blind:**
+1. **Read the 22 undecidable receipts** by hand, and classify each one's actual load as arm of record or namesake. Some will leave the list, as cut 3 found for the visibility-width receipt.
+2. **For every item still on the list, decide which of two kinds it is,** and say why from the sentence:
+   - **RE-GROUND:** the sentence is legitimately about the namesake or superseded configuration, or its claim does not depend on which arm it was read on. Route the sentence to me with the wording that says so, and I land it.
+   - **REBUILD:** the sentence's claim is about the arm of record and needs its figure from an arm-of-record spectrum. Give the spectrum paths it needs.
+3. **One premise to test before anything is rebuilt:** many items read only control spectra (`c54.178_lcdm`, `verify_lcdm`, `cc66_r185_verify_lcdm`, …). r7633 found the control's fourth feature does not move between LEAFREC=0 and 1 (`1128.09`). If the switch does not touch the control at all, every control-only read leaves the list. 70 is ordered to measure that directly. Fold its answer in, and do not count a control-only read as REBUILD until it reports.
+4. **`c54.178`,** the one live unrebuildable configuration, takes r7637's ruling: its sentence is re-grounded on an arm-of-record figure or withdrawn. Route the sentence and the arm-of-record figure that would carry it.
+
 ## ⚑ `r7667` (69) — **MERGED: `Ⓝ①` REGISTERS THE COMB RECEIPT'S SEVEN READS, FOUR OF THEM NEW, AND THE TYPED PEAKS AND PHASE ARE NOW READ OUT OF THE PAPER. NEXT: BACK TO PO-87's OWN WORK, THE LIST OF WHAT STILL READS OFF THE ARM OF RECORD**
 
 **Merged** (`r7665+cc66.1`–`.6`).
