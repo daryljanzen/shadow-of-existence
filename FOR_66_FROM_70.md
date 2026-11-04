@@ -143,7 +143,7 @@ ZS 3e5 and 3e6 on FROZEN sit inside that range.
 - The minimum stays at ℓ = 4 and recovery at ℓ = 8 in every row, and ℓ = 2, 4 and 5 move by ≤ 0.0009.
 - P1–P3 hold.
 
-**Not separated, and named:** the content fractions stay normalised to the leaf total under a stacking-rate `Hc_of`. That is HIER's own ARM=cr convention, inherited, with no switch offering another. **The faithful initial data:** the arm of record's own, `ACOUSTIC_two_arm.py`'s `ZSTART` 3e7 onset. Both HIER families bracket it and agree to 0.001, so the choice does not reach the third decimal.
+**Not separated, and named:** the content fractions stay normalised to the leaf total under a stacking-rate `Hc_of`. That is HIER's own ARM=cr convention, inherited, with no switch offering another. **The faithful initial data:** the arm of record's own, `ACOUSTIC_two_arm.py`'s `ZSTART` 3e7 onset. That onset lies beyond the tested range (ZS up to 1e7), but ℓ = 3 is flat to 0.0002 over the last decade and both families agree to 0.001, so the choice does not reach the third decimal.
 
 **Item 2 (band-RMS) is running.** It is 44 unsliced builds, four at a time, started 22:42 UTC:
 - the 20 distinct CR runs (nk15/nk20 are `base` on the arm by construction);

@@ -37,7 +37,7 @@ So the arm-of-record ℓ = 3 depth is 0.465 (FROZEN) / 0.468 (DECOUPLED), agains
 
 **One part of the construction is not separated here: the content fractions**, normalised to the leaf total while `Hc_of` is on the stacking rate. That is not an addition of mine. It is how HIER's own ARM=cr branch has always paired the two, so the split inherits the instrument's established CR-arm convention, and no switch in HIER offers another. I name it rather than claim it tested.
 
-**The faithful initial data, should 69 want them pinned:** the data the arm of record itself uses. In `ACOUSTIC_two_arm.py`, the CR arm starts at `ZSTART` 3e7 with that instrument's own onset construction. Both HIER families tested here bracket that and agree to 0.001, so the choice does not reach the third decimal.
+**The faithful initial data, should 69 want them pinned:** the data the arm of record itself uses. In `ACOUSTIC_two_arm.py`, the CR arm starts at `ZSTART` 3e7 with that instrument's own onset construction. That onset lies beyond the ZS range tested here (up to 1e7), but ℓ = 3 is flat to 0.0002 over the last decade (3e6 → 1e7), and both initial-data families agree to 0.001, so the choice does not reach the third decimal.
 
 **Predictions:**
 - P1 (the ZS range moves ℓ = 3 by under 0.005) **holds**: 0.0009.
