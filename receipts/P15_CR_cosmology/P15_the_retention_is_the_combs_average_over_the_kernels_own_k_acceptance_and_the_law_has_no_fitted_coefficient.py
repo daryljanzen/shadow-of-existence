@@ -23,8 +23,27 @@ the comb's fractional amplitude in C_l is
     both of them the background's own. ***
 
 ⌗ READ PHYSICALLY: a WIDER chi-extent narrows the kernel's k-acceptance, so less of an acoustic period is
-averaged over and more of the comb survives.  This arm's visibility is 14.6 per cent the wider in chi while
-accumulating the same sound horizon to 0.08 per cent (`r6919`), which is why it retains MORE.
+averaged over and more of the comb survives.  This arm's visibility is 15.5 per cent the wider in chi while
+accumulating the same sound horizon to 0.36 per cent (`r6919`, read on the ARM OF RECORD), which is why it
+retains MORE.
+
+⛭⛭⛭ r7675+cc66 -- THE ARM'S ACCEPTANCE BANK IS NOW 70's `r7041_accept_cr_leafrec1`, AND BOTH FIGURES
+QUOTED IN THE LINE ABOVE WERE STALE.  They are `r6919`'s, not this receipt's: 14.6 -> 15.5 per cent and
+0.08 -> 0.36 per cent, which `P15_a_source_with_no_physics...` measures and which 69 landed at
+`CR_cosmology.tex` l.1850 this revision.  *This receipt QUOTED them and did not compute them, so they went
+stale here while the paper was corrected.*
+  ⛔ AND 69's `r7675` (1) FLAG IS CORRECT, WHICH IS WORTH STATING PRECISELY: the sound horizon this
+  receipt uses is `r_s*`, a SCALAR at recombination read out of the bank as `r_s__fixed` and used inside
+  `A_l = |INT W exp(2 i k r_s*) dk| / INT W dk`.  It is NOT the window-accumulated quantity l.1807 and
+  l.1850 print, which is the sound horizon integrated across the visibility's half-maximum extent.
+  ** Two different objects: a scalar at a point against an integral over a window. **  Both happen to be
+  quotable as "0.36 per cent" on the arm of record and that coincidence is numerical, not structural.
+  *So nothing here needs re-grounding on `r_s*`'s own 0.82 per cent; the clause was never about `r_s*`.*
+  ⇒ WHAT MOVED HERE, none of it in print: `r_s*` 145.91128 -> 146.57253; the arm's acceptance span
+  4.5364 -> 4.4989 of acoustic phase against the control's unchanged 5.2226, so the narrowing goes
+  13.14 -> 13.86 per cent; the 0.85-1.55 band's retention ratio 1.067 -> 1.063; and ** the law's worst
+  absolute deviation IMPROVES, 6.7 -> 6.3 per cent **, which is the arm of record predicting its own comb
+  amplitude better than the namesake did with nothing fitted either way.
 
 ⛔⛔ AND THE MEASURING INSTRUMENT TOOK THREE ATTEMPTS.  THE FIRST TWO ARE NAMED HERE BECAUSE THE GATE THAT
    CAUGHT THEM IS WORTH MORE THAN THE RESULT.
@@ -73,7 +92,19 @@ FLOOR = 0.006                      # r6911's, on a KNOWN injected contrast
 print(__doc__)
 print("=" * 100)
 
-NEED = ['r7041_accept_lcdm.npz', 'r7041_accept_cr.npz',
+# ⛭⛭⛭ `r7675+cc66`, answering `r7675` ⓵: ** THE ARM'S ACCEPTANCE BANK MOVES TO 70's ARM-OF-RECORD
+#   TWIN AND THE CONTROL'S CANNOT, SO THE BANK IS RESOLVED PER ARM. **  `r7041_accept_cr_leafrec1.npz`
+#   is 70's `r7673+70.2` bank, checked there against a LEAFREC=0 rebuild reproducing all 53 of the
+#   namesake's keys exactly before it was banked.  There is no `r7041_accept_lcdm_leafrec1`: `LEAFREC`
+#   does not reach the control, bit for bit and by construction (`r7669+70.1`), so the control's only
+#   copy IS the namesake's.
+#   ⌗ Classified before the edit, per `r7673`'s own rule: this pair moves on the SHARED channel -- 32
+#   of 53 shared keys -- and NOT on the re-key channel, so it is a PATH repoint and not a key one.
+#   Both quantities this receipt reads move with it: `r_s__fixed` 145.91128 -> 146.57253 and
+#   `ns__fixed` 0.997952 -> 1.015066, which are the refit point's.
+_AARM = 'cr_leafrec1'
+_abank = lambda t: _AARM if t == 'cr' else t                               # noqa: E731
+NEED = ['r7041_accept_lcdm.npz', 'r7041_accept_cr_leafrec1.npz',
         'r6919_injected_lcdm.npz', 'r6919_injected_cr.npz']
 for n in NEED:
     check(f"the bank this receipt reads is present: `spectra/{n}`",
@@ -86,7 +117,7 @@ if FAILS:
         print(f"  - {f}")
     raise SystemExit(1)
 
-AC = {t: np.load(os.path.join(SP, f'r7041_accept_{t}.npz')) for t in ('lcdm', 'cr')}
+AC = {t: np.load(os.path.join(SP, f'r7041_accept_{_abank(t)}.npz')) for t in ('lcdm', 'cr')}
 IJ = {t: np.load(os.path.join(SP, f'r6919_injected_{t}.npz')) for t in ('lcdm', 'cr')}
 
 

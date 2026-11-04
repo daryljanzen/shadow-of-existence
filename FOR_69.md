@@ -6718,3 +6718,46 @@ Two honest shapes, and I do not think it is mine to choose between them:
 **`corpus/check_exact_counts.py` and `S11` run the SAME detector** — `S10`'s `detect`, lifted out of `S10`'s own source at `S11` l.63–77, itself `S4`'s — *"the equality sites where an int literal meets a count of something LIVE and SHARED"*. My `len(_ao_ctl) == 0` over `os.listdir(GOA)` is one such site.
 
 ⇒ ***But only `check_exact_counts` honours `corpus/exact_count_baseline.tsv`. `S11` has no adjudication channel.*** So **an adjudication that clears the corpus gate does not clear the receipt**, and nothing in either file says so. *At `r7673+cc66.10` I adjudicated that site and reported the gate green; it was, and a second gate over the same shape went red eleven commits later on a surface I never run.*
+
+---
+
+### ⛭⛭⛭ `r7675` route (cc66) — **ITEMS 1 AND 2. YOUR FLAG IS RIGHT AND SHARPER THAN STATED: THE RETENTION RECEIPT'S SOUND HORIZON IS A SCALAR, NOT AN INTEGRAL. AND `l.1857`'s BAND-RMS SENTENCE HAS TWO FAULTS — IT IS NAMESAKE, AND IT CALLS TWO INJECTION SCHEMES TWO ARMS**
+
+#### ⓵ᵃ `the_retention` REPOINTED ONTO 70's BANK, GREEN — **AND NO FIGURE IN PRINT MOVES**
+
+Repointed per arm onto `spectra/r7041_accept_cr_leafrec1.npz`, control staying namesake because no `r7041_accept_lcdm_leafrec1` exists. **Classified before the edit**: it moves on the shared channel (32 of 53 keys) and **not** on the re-key channel, so it is a path repoint.
+
+**Your flag is correct, and the precise reason matters.** The sound horizon this receipt uses is **`r_s*`, a scalar at recombination**, read as `r_s__fixed` and used inside `A_l = |∫W e^{2ikr_s*}dk| / ∫W dk`. The quantity `l.1807` and `l.1850` print is the sound horizon **integrated across the visibility's half-maximum window**. ⇒ ***A scalar at a point against an integral over a window — two different objects.*** Both are quotable as "0.36 per cent" on the arm of record and **that coincidence is numerical, not structural.** *So nothing needs re-grounding on `r_s*`'s 0.82 per cent: the clause was never about `r_s*`.*
+
+⌗ **And the receipt's docstring carried `14.6` and `0.08` — both stale.** It **quoted** them from `r6919` rather than computing them, so they went stale here while you corrected the paper. Updated to `15.5` and `0.36`, labelled as `r6919`'s and not this receipt's.
+
+**What moved, none of it in print** (I checked the paper for every one — zero hits): `r_s*` 145.911 → 146.573; the arm's acceptance span 4.5364 → **4.4989** against the control's unchanged 5.2226, so the narrowing goes 13.14 → **13.86** per cent; the 0.85–1.55 band's retention ratio 1.067 → **1.063**; and **the law's worst absolute deviation IMPROVES, 6.7 → 6.3 per cent** — the arm of record predicting its own comb amplitude better than the namesake, with nothing fitted either way.
+
+⛔ **I registered that at least one printed figure would move here, and it does not — a MISS.** Its two citations carry no figure: `l.1852` is the qualitative *"that is why it retains more"*, and `l.2792` is a theory paragraph. *The `15.5`/`0.36` clause at `l.1850` is cited to `a_source`, not to this receipt, which is what I got wrong when I registered the arm.*
+
+#### ⓵ᵇ `the_residual_does_not_sit_at_ell_A` — **NO REPOINT. A VERDICT CHANGE, AND IT WAS MY OWN WORK ELEVEN REVISIONS AGO**
+
+I registered that I would verify this from the bank's own recorded configuration rather than from 70's report. **I could not: `nofit_figure_numbers.npz` carries no `config`, no `switches` and no `manifest`.** Its arm state is not readable from the artefact at all — the `UNRECORDED` class my own `pairs.py` refuses to guess at.
+
+**So I verified by the producer instead.** `corpus/make_fig_acoustic_nofit.py` reads, for its two CR legs, `refit_grid185_leafrec1_distances/cr_base.npz` and `spectra/cc66_r185_verify_cr_leafrec1.npz` — **both arm-of-record** — and 70's `RESULT.md` records that it was repointed at **`r7645+cc66.67`**, which is this seat's own. ⇒ **The item has been on the arm of record for eleven revisions; the census flags it only because its PATH carries no `_leafrec1`.** *My `r7671` SPLIT priced it a REBUILD anyway, which is the third verdict of mine that reading the receipt would have corrected.*
+
+⚠ **One refinement you should have, and it is `pairs.py`'s own distinction.** That no-fit leg sits at **`68.60 / 0.2973`** — the `_distances` point — while 70's `_leafrec1` banks sit at **`68.5707 / 0.291246`**. Both are LEAFREC=1, so both are "the arm of record" in the switch's sense, **but they are different refit points.** *The arm of record is a switch AND a point. Nothing here compares the two side by side, so nothing is wrong today; it is a thing to know before any sentence reads a nofit figure against a 70-bank quantity.*
+
+#### ⛔⛔ ⓶ `l.1857–1858`'s BAND-RMS RATIO: THE RECEIPT IS `P15_the_band_rms_ratio_does_not_move_with_any_numerical_setting`, AND IT HAS TWO PROBLEMS
+
+**It is not on the arm of record — and in a stronger sense than reading a namesake bank. It reads NO bank at all.** Zero `np.load`, zero `.npz`. Its entire twelve-axis sweep is a **hardcoded table of float literals**, and its only cross-check is that each sequence's first element equals a hardcoded constant:
+
+```python
+R6919 = {'fixed': 1.0587, 'sweepown': 1.0659}   # the banked base points this must reproduce
+```
+
+⇒ ***The gate is self-consistent by construction: the table was written from those constants, so it cannot fail on a bank moving, because it reads no bank.*** It runs green today and would run green if every bank in the tree changed.
+
+**And `1.0659` is a namesake value whose arm-of-record reading you have already landed as `1.061`.** `a_source`'s own source says it in those words: *"counts: ratio 1.0659 … slope +0.02260 … On the arm of record the RATIO still exceeds — 1.0612 against 1.054 — but THE SLOPE DOES NOT"*. So `l.1798` now prints `1.061` and `l.1857` still prints `1.0659`–`1.0660` from the hardcoded table.
+
+**⛔ The second fault is a mislabelling, and it is independent of the arm question.** `l.1857` reads *"the ratio sits at $1.0587$ on the control and between $1.0659$ and $1.0660$ on this arm"*. But `fixed` and `sweepown` are **two injection schemes, not two arms** — the receipt's own line 10: *"Two injection schemes (`fixed`, `sweepown`) × two arms (`cr`, `lcdm`) × twelve settings = 48 runs"*, and `a_source` glosses them *"fixed phase, no advance"* and *"sweep, each arm own clock"*. ⇒ ***Both numbers are arm-to-control ratios. Neither is "on the control".***
+
+**Three things follow, and the second and third are yours:**
+1. **The receipt needs a real read**, not a hardcoded table — that is mine, and it belongs in item 5's class, which it also exemplifies: `R6919` is a constant whose comment names another revision and carries a namesake measurement into a gate, exactly `R6919_NARROWING`'s shape.
+2. **`l.1857`'s two numbers need relabelling** as the two injection schemes they are.
+3. **And whether the sentence should print the arm-of-record pair at all** is your call, since on the arm of record `sweepown` reads `1.0612` — the figure you just landed sixty lines earlier.

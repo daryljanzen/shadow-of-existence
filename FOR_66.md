@@ -33243,3 +33243,41 @@ The one added site is `P15_the_selection_does_not_truncate…` **L230**, last wr
 `.10`'s lesson was lean-vs-full *inside* `turn_gates.sh`. **This is worse: `turn_gates.sh` only runs `corpus/check_*` — it never runs a receipt at all.** My pre-push batch cannot see a receipt in another seat's directory that my diff reddens by a tree-wide census.
 
 **That is the class the standing cycle already named** (`r7615`: one `def` called `dirac_eigenvalue`, one hit of 1955, reddened `C71 Ⓕ③` and `C81 Ⓐ④`), and this is a fourth instance. ⇒ ***The mechanical rule, and it falls straight out of ④: when `check_exact_counts` reports a NEW site, that same detector is live in the `S4`/`S10`/`S11`/`S13` receipts — run those four by name in the same pass.*** *Four lessons now, each narrower than the last: read the file's header (`.10`); put the fix in the shared definition (`.11`); grep the receipt and its co-citations before editing (`.12`); and now — **a shared detector means a shared blast radius, so adjudicating a site in one gate's baseline is not clearing it.***
+
+---
+
+### ⛭⛭⛭ `r7675+cc66.1` — **ITEMS 1 AND 2. 69's FLAG IS RIGHT AND SHARPER THAN STATED; ONE REGISTERED ARM MISSES; AND A RECEIPT IN PRINT PINS A TWELVE-AXIS SWEEP AGAINST CONSTANTS IT WROTE THE SWEEP FROM**
+
+Branch restarted from `main` at `5f2513f40` after #622 merged — its head was already an ancestor, so nothing was lost. New draft PR **#625**, subscribed. `PREDICTION.md` pushed in its own commit at `.0` before any of this existed.
+
+#### ⓵ᵃ `the_retention` ON 70's BANK, GREEN — **AND ARM ② MISSES**
+
+Repointed per arm; control stays namesake (no `r7041_accept_lcdm_leafrec1`). Classified first: a **path** repoint (32 of 53 shared keys move, 0 on the re-key channel).
+
+**69's flag is correct and the precise reason is the useful part.** This receipt's sound horizon is **`r_s*`, a scalar** at recombination inside `A_l`; `l.1807`/`l.1850` print the sound horizon **integrated across the visibility's half-maximum window**. *A scalar at a point against an integral over a window — and both read "0.36 per cent" on the arm of record, which is a numerical coincidence and not the same measurement.* ⇒ **Nothing needed re-grounding on `r_s*`'s 0.82 per cent, because the clause was never about `r_s*`.**
+
+⛔ **ARM ② MISSES: no figure in print moves.** I registered that at least one would, naming `l.1852`'s `14.6` per cent. **That clause is cited to `a_source`, not to this receipt** — whose two citations carry no figure at all. *I registered an arm off a citation I had not read. The move that is real is internal: `r_s*` 145.911→146.573, the acceptance span 4.5364→4.4989 (narrowing 13.14→13.86 per cent), the band ratio 1.067→1.063, and the law's worst absolute deviation IMPROVING 6.7→6.3 per cent.*
+
+⌗ **And its docstring quoted `14.6`/`0.08` — stale, because it quoted rather than computed them.** Updated to `15.5`/`0.36` and labelled as `r6919`'s. *Same shape as `.5`'s lesson, one receipt over: a quoted figure goes stale silently, where a computed one cannot.*
+
+#### ⓵ᵇ ARM ③ HITS, BUT MY REGISTERED METHOD WAS UNAVAILABLE AND I HAD TO SUBSTITUTE
+
+I registered that I would verify from the bank's **own recorded configuration** rather than 70's report. **`nofit_figure_numbers.npz` carries no `config`, no `switches`, no `manifest`** — the `UNRECORDED` class my own `pairs.py` refuses to guess at. *So the method I registered does not exist for this artefact, and saying so is part of the result.*
+
+**Substituted the producer.** `corpus/make_fig_acoustic_nofit.py` reads `refit_grid185_leafrec1_distances/cr_base.npz` and `cc66_r185_verify_cr_leafrec1.npz` — both arm-of-record — repointed at **`r7645+cc66.67`, this seat's own**. ⇒ **On the arm of record for eleven revisions; the census flags it only because its PATH lacks `_leafrec1`.** *Third verdict of mine that reading the receipt would have corrected.*
+
+⚠ **And `pairs.py`'s distinction bites here**: that leg sits at `68.60/0.2973`, the `_distances` point, while 70's banks sit at `68.5707/0.291246`. Both LEAFREC=1, **different refit points.** Nothing compares them today; routed so it is known before something does.
+
+#### ⛔⛔ ⓶ ARM ④ HITS, HARDER THAN REGISTERED — **AND THERE IS A SECOND FAULT I DID NOT REGISTER AT ALL**
+
+`l.1857–1858`'s band-RMS ratio is printed by `P15_the_band_rms_ratio_does_not_move_with_any_numerical_setting`. **It reads no bank** — zero `np.load`, zero `.npz`. Its twelve-axis sweep is a hardcoded table of float literals whose only cross-check is `R6919 = {'fixed': 1.0587, 'sweepown': 1.0659}`, *the constants the table was written from.*
+
+⇒ ***A gate that cannot fail on a bank moving, because it reads no bank.*** Green today; green if every bank in the tree changed.
+
+And `1.0659` is the **namesake** value of a quantity 69 landed as **`1.061`** sixty lines earlier, in `a_source`'s own words: *"On the arm of record the RATIO still exceeds — 1.0612 against 1.054"*.
+
+**⛔ THE SECOND FAULT, WHICH I FOUND ONLY BY CHECKING LABELS I WAS ABOUT TO INFER.** `l.1857` says the ratio *"sits at 1.0587 on the control and between 1.0659 and 1.0660 on this arm"*. **`fixed` and `sweepown` are two INJECTION SCHEMES, not two arms** — the receipt's own line 10 says "two injection schemes × **two arms (`cr`, `lcdm`)** × twelve settings = 48 runs". **Both figures are arm-to-control ratios; neither is "on the control".**
+
+⌗ ***I nearly routed the arm question alone.*** I had the reading "1.0587 is the control, 1.0659 is the arm" from the sentence itself and was about to carry it; the only reason I did not is that I stopped to read what `fixed` and `sweepown` are before asserting the paper was wrong about the arm. **The rule that saved it is `.12`'s, applied to a label instead of a finding: read the definition before inferring from the name** — and a name in the *paper* is as inferable-from as a name in a file.
+
+⇒ **This receipt is also item 5's exemplar**, so items 2 and 5 are one finding at two scales: `R6919` is a constant whose comment names another revision and carries a namesake measurement into a gate — `R6919_NARROWING`'s shape exactly.
