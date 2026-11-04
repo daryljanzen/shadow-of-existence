@@ -1,0 +1,150 @@
+{
+ "tree": [
+  "worktree: 418da11617517a739a84dba1f3c6095ccbaf0aaa",
+  "dirty: 1 path(s)",
+  "b9e9fd387812873149c2c0bfb82f81e995bdd86c  corpus/BH_causality_v2.tex",
+  "f0be92810d98c5684e56fc98dcae19a5f1e5622c  computations/formalisation/lean/probes/AlongConnection.lean",
+  "9c79ee8f02ebd03998e13a8edd89771a6d8c22da  computations/formalisation/lean/probes/KillingGenerator.lean",
+  "prev tree for the proof-sentence comparison: 54e854a6 (r7672's registration)"
+ ],
+ "guard": {
+  "true-probe  (`kg_deltaTau g X γ a b = 0` is a conjunct)": true,
+  "false-probe (`kg_everyInvariant g γ` is a conjunct)": false,
+  "marker-probe true  (\\bintegrated along it\\b in the remark)": true,
+  "marker-probe false (\\bparacompact\\b in the remark)": false,
+  "marker-probe word-boundary (\\bproper\\b not in \"the Cauchy property\")": true,
+  "marker-probe math-delimiter ($N>0$ matches itself, not $N>0.5$)": true,
+  "flip-test (every derived verdict depends on its readings)": true,
+  "reader-probe (every global shape reads global, a chart-local one does not)": {
+   "plain quantifier": true,
+   "subscripted quantifier": true,
+   "segment integral": true,
+   "a chart-local statement is NOT global": true
+  }
+ },
+ "cited": {
+  "ac_metric_singularity_along": true,
+  "ac_lapse_pos_forces_point": true,
+  "ac_witness": true,
+  "ac_witness_no_positive_lapse": true,
+  "kg_lemma_killing_generator": true,
+  "kg_witness": true
+ },
+ "proof_sentence_unchanged": true,
+ "msa_binders": [
+  "S",
+  "γ",
+  "σ",
+  "ha",
+  "hb",
+  "hcont"
+ ],
+ "lpf_binders": [
+  "S",
+  "γ",
+  "σ",
+  "ha",
+  "hb",
+  "hcont",
+  "hn",
+  "hpd"
+ ],
+ "kg_binders": [
+  "X",
+  "g",
+  "γ",
+  "a",
+  "hab",
+  "hX",
+  "hXne",
+  "hg",
+  "hK",
+  "hγ",
+  "ht₀",
+  "hnull"
+ ],
+ "kg_hyp_named": {
+  "hXne (nowhere zero)": true,
+  "hnull (null at one point)": true,
+  "hK (Killing)": true,
+  "hγ (integral curve)": true
+ },
+ "kg_hyp_unnamed": {
+  "hg (the metric chart-rep differentiable)": true,
+  "hX (the field C¹ as a bundle section)": true
+ },
+ "kg_conjunct_quantifiers": [
+  {
+   "conjunct": 1,
+   "global_in_the_parameter": true,
+   "text": "(∀ t ∈ Icc a b, mfderiv 𝓘(ℝ, ℝ) 𝓘(ℝ, E) γ t (1 : ℝ) = X (γ t))"
+  },
+  {
+   "conjunct": 2,
+   "global_in_the_parameter": true,
+   "text": "(∀ t ∈ Icc a b, g (γ t) (X (γ t)) (X (γ t)) = 0 ∧ g (γ t) (mfderiv 𝓘(ℝ, ℝ) 𝓘(ℝ, E) γ t (1 : ℝ)) (mfderiv 𝓘(ℝ, "
+  },
+  {
+   "conjunct": 3,
+   "global_in_the_parameter": true,
+   "text": "(∀ t₁ ∈ Icc a b, ∀ t₂ ∈ Icc a b, kg_Related g γ t₁ t₂)"
+  },
+  {
+   "conjunct": 4,
+   "global_in_the_parameter": true,
+   "text": "(InjOn γ (Icc a b) → ∀ t₁ ∈ Icc a b, ∀ t₂ ∈ Icc a b, t₁ ≠ t₂ → γ t₁ ≠ γ t₂)"
+  },
+  {
+   "conjunct": 5,
+   "global_in_the_parameter": true,
+   "text": "kg_deltaTau g X γ a b = 0"
+  }
+ ],
+ "witness": {
+  "g(X,X) = UV": true,
+  "Killing everywhere": true,
+  "nowhere zero on the segment": true,
+  "endpoints distinct": true,
+  "null at both ends": true,
+  "related both ways": true,
+  "Δτ = 0": true
+ },
+ "verdicts": {
+  "①": [
+   "SUPPORTED",
+   "the sentence now names every hypothesis `ac_metric_singularity_along` has {'the split': True, 'N ≥ 0': True, 'h non-negative and continuous': True, 'both legs vanish pointwise': True, 'no curve class, no atlas smoothness': True}: binders ['S', 'γ', 'σ', 'ha', 'hb', 'hcont'], and `hcont` — the continuity `r7672` found unstated and load-bearing — is stated (True).  The spurious `C¹` curve class is gone (True), replaced by \"it needs no differentiability class of the curve and no smoothness of the atlas\", which is the stronger and true reading.  And \"both legs vanish at every point of the curve\" carries the two pointwise conjuncts the earlier sentence dropped.  `r7672`'s ⑤ is repaired in all three of its parts, and the Lean file itself is unchanged, so the repair is in the prose where it belonged."
+  ],
+  "②": [
+   "SUPPORTED",
+   "all three hypotheses are now stated {'N > 0': True, 'the curve differentiable': True, 'h positive definite on ker dt': True, 'no-positive-lapse named': True} against binders ['S', 'γ', 'σ', 'ha', 'hb', 'hcont', 'hn', 'hpd'] — `hpd`, the positive-definiteness `r7672` found to be the hypothesis the conclusion rests on, is named, and the curve's differentiability, which was the consequent's antecedent, is stated as a condition.  `ac_witness_no_positive_lapse` is named too, which is the sharper half I asked for: on the Rindler generator no positive-lapse splitting satisfies (a) and (b), so the lapse's vanishing is forced rather than chosen."
+  ],
+  "③": [
+   "SUPPORTED",
+   "the remark now says `Δτ` is \"the temporal leg INTEGRATED along it\" (True) and no longer uses \"accumulated\" of `Δτ` at all (False); and it names the exclusion it is distinguishing itself from — \"not the coordinate difference accumulated along a path that the proof below sets aside\" (True), which is the clause I recommended, made shorter.  The proof's own sentence is UNCHANGED, verified by comparing its 220 characters against `54e854a6`'s tree rather than from memory (True).  `r7672`'s ⑧ is repaired exactly as the fork was decided, and the collision is gone in the direction that kept the proof intact."
+  ],
+  "④": [
+   "NOT SUPPORTED",
+   "the conclusion carries what the sentence claims: conjunct 2 is `∀ t ∈ Icc a b, g (γ t) (X (γ t)) (X (γ t)) = 0 ∧ g(γ′,γ′) = 0` — null THROUGHOUT the segment, from `hnull` at the single `t₀` (True).  The hypotheses it names are there {'hXne (nowhere zero)': True, 'hnull (null at one point)': True, 'hK (Killing)': True, 'hγ (integral curve)': True}.  ⌗ But TWO regularity hypotheses go unstated {'hg (the metric chart-rep differentiable)': True, 'hX (the field C¹ as a bundle section)': True}: `hg`, that the metric's chart representative is eventually differentiable near each `γ t`, and `hX`, that the field is `C¹` as a section of the tangent bundle.  Binders: ['X', 'g', 'γ', 'a', 'hab', 'hX', 'hXne', 'hg', 'hK', 'hγ', 'ht₀', 'hnull'].  These are the same class of omission as the continuity hypothesis in the first attestation — the one just repaired — so the sentence repeats, on the new theorem, the fault that was corrected on the old one."
+  ],
+  "⑤": [
+   "NOT SUPPORTED",
+   "conjunct 3 is `∀ t₁ ∈ Icc a b, ∀ t₂ ∈ Icc a b, kg_Related g γ t₁ t₂` — ANY two parameters, and `kg_Related` is a genuine local isometry: an open `U ∋ γ t₁` (True) with a map `F` satisfying `g (F x) (DF v) (DF w) = g x v w` on `U` (True), `F (γ t₁) = γ t₂`, and `F (γ s) = γ (s + t₂ − t₁)` near `t₁`, so it carries the generator into itself.  That half is exact.  ⌗ But \"so every invariant takes the same value at both\" is NOT a statement the Lean makes: no theorem in the file mentions an invariant (0), and the only invariant equality proved is ONE — `kl_normSq g X` — used internally to propagate the null condition (True).  It follows from the isometry as mathematics, and it is true, but it is a classical inference and not machine-checked; the remark's own discipline is to mark those, as it does for Bernal–Sánchez, the achronal boundary and the Cotton criterion."
+  ],
+  "⑥": [
+   "SUPPORTED",
+   "`kg_deltaTau = ∫ t in a..b, kg_lapse g X (γ t) * |1|` (True) and its vanishing is conjunct 5.  The `|dλ(γ′)|` of the remark's `∫|χ|dλ` is the `|1|`: the curve's parameter IS `λ`, so the factor is unity by construction rather than computed, which is the honest reading of writing it as `dλ`.  The lapse is ` (g : Π x : N, TangentSpace 𝓘(ℝ, E) x →L[ℝ] TangentSpace 𝓘(ℝ`."
+  ],
+  "⑦": [
+   "SUPPORTED",
+   "`kg_witness` {'g(X,X) = UV': True, 'Killing everywhere': True, 'nowhere zero on the segment': True, 'endpoints distinct': True, 'null at both ends': True, 'related both ways': True, 'Δτ = 0': True}: the boost on `−dU dV`, Killing at every point, nowhere zero on `[0,10]`, `γ 0 = (0,1) ≠ (0,e¹⁰) = γ 10`, null at both ends, related in BOTH directions, and `Δτ = 0`. \"Witnessed on a generator of the Rindler horizon\" is exact, and the two-way relation is more than the sentence claims."
+  ],
+  "⑧": [
+   "SUPPORTED",
+   "every conjunct is quantified `∀ t ∈ Icc a b` — GLOBAL in the curve's parameter over the whole segment [True, True, True, True, True] — and that globality is EARNED, not assumed: the proof glues chart-local boxes with `isPreconnected_Icc.induction₂'` (True).  So \"machine-checked along a whole generator\" is accurate, and the limitation the sentence states is the right one and sits in the right place: the chart-local object is the ISOMETRY witnessing each pair and the adapted transverse coordinates, which do not appear in the file at all (0 occurrences of `x^i`), not the null condition or the relation, which hold across the segment.  The clause (True) is a limitation correctly scoped, which is the opposite of `r7672`'s finding about \"on any manifold\" flattening two theorems into one claim."
+  ]
+ },
+ "tally": {
+  "SUPPORTED": 6,
+  "NOT SUPPORTED": 2
+ }
+}

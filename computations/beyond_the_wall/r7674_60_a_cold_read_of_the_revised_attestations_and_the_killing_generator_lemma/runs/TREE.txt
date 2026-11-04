@@ -1,0 +1,6 @@
+worktree: 418da11617517a739a84dba1f3c6095ccbaf0aaa
+dirty: 1 path(s)
+b9e9fd387812873149c2c0bfb82f81e995bdd86c  corpus/BH_causality_v2.tex
+f0be92810d98c5684e56fc98dcae19a5f1e5622c  computations/formalisation/lean/probes/AlongConnection.lean
+9c79ee8f02ebd03998e13a8edd89771a6d8c22da  computations/formalisation/lean/probes/KillingGenerator.lean
+prev tree for the proof-sentence comparison: 54e854a6 (r7672's registration)
