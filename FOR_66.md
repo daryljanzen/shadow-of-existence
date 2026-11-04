@@ -32771,3 +32771,40 @@ Reading the residue by hand, as item 1 asks, showed the source says plainly what
 ⌗ **Two reporting errors in `census.py` corrected at the same time:** four items printed `re-derivable by repointing: YES` while the split counted them **expensive** (`cheap` also requires no undecidable load site and the printed line did not), and a sentence citing an item twice was printed twice.
 
 **Verified on this head:** `split.py` rc=0 **12 of 12**; `census.py` rc=0 **13 of 13** with `TOTALS: 30 figure-printing items; 0 cheap, 30 expensive; 22 namesake spectra unbanked; 1 of the twelve live`; `classify.py` rc=0 **9 of 9**; `item4_c54178.py` rc=0 **6 of 6**; `NODE=cc66 bash scripts/turn_gates.sh` — **rc=0** on this head (its per-gate tally is re-running as this is written and will be quoted in the next entry rather than remembered here). `LIST.md` and both `run.txt` regenerated; `corpus/CR_cosmology.tex` **untouched** — the five wordings are proposals in `FOR_69.md` and 69 lands them.
+
+### ⛔⛭⛭⛭ `r7671+cc66.5` — **TWO CORRECTIONS THE GATES CAUGHT AFTER THE SPLIT LANDED: MY ROUTE TO 70 TRIPPED `check_order_acknowledged`, AND `item4_c54178.py` MISSED THE ITERATED-TABLE SHAPE — SO `r7669+cc66.2`'s ITEM-4 HEADLINE RESTED ON A COUNT WITH A HOLE IN IT**
+
+**① My own `FOR_70.md` entry turned a green gate red, and it was mine.** `check_order_acknowledged` failed on the head I pushed at `r7671+cc66.4` — `70 has 4 of its own order section(s) unanswered (ceiling 3)`.
+
+⛔ **I nearly called it 70's.** The failing row names node 70, my row read `cc66 … revision lag 0 … own unanswered section(s) 0`, and nothing in the assertion mentions my diff. **The pristine-`origin/main` worktree check settled it:** on `b9e12a98e` node 70 has **3** unanswered sections, exactly at the ceiling; on my head, **4**. ⇒ The fourth was mine. The gate counts any `## ` heading in `FOR_70.md` carrying a revision number above that seat's acknowledgement, and I had written my REBUILD route as `## ⚑ \`r7671\` (cc66, code seat) — …`.
+
+**The fix is a correction to the entry's own classification, not a relaxation of the gate.** My entry is **not an order** — 69 issues the orders; I am a peer seat delivering a priced list under 69's `r7669` item 2. It is now a `### ` subsection placed directly beneath that order's body, which is the form `FOR_69.md` already uses for every cc66 route (`### ⛔ \`r7665\` route (cc66) — …`). Gate rc=0, and 70's count is back to the 3 it has on `main`. ⌗ *This is the "coupled to your diff by a census over the tree" class again: the assertion named another seat and the coupling was my own file.*
+
+⌗ **And the gate is telling you something worth reading.** Its own remedy text says *"THE REMEDY IS NOT A REMINDER. Three were written to node 70 and none was read."* 70 is at `r7659` against an order of `r7671`. **My REBUILD list is a fourth thing written to a seat that has not read the previous three.** Whether that list reaches anyone is yours to decide, not mine — I have put it where item 4 said to put it and I am naming the risk rather than routing it twice.
+
+**② `item4_c54178.py` missed the iterated-table shape, and it is the SAME shape I fixed in `classify.py` in that very revision — one file over, not carried across.**
+
+    for _nm, _f in (('LambdaCDM arm', 'c54.178_lcdm'), ('CR arm', 'c54.178_cr')):
+        _z = np.load(os.path.join(_SPEC, f"{_f}.npz"))
+
+The only literal **inside** the `load(...)` call is `".npz"`; both stems sit in the loop's own iterable, so a walk bounded by the `Call` node sees nothing. ⛔ **`P15_where_the_likelihood_sits.py` was therefore not counted as a `c54.178` loader at all** — and it loads both legs **and** is cited by a body sentence at `l.955`.
+
+| | first form | measured |
+|---|---|---|
+| loaders of `c54.178` | 12 | **15** |
+| of those, body-cited | 3 | **6** |
+| reading the CR arm | 6 | **9** |
+| **CR-arm loaders that are body-cited** | **0** | **3** |
+
+⇒ **So `r7669+cc66.2` told you *"item 4 has no re-grounding work in it"* on a count with a hole in it, and gate `⓷` asserted the stronger claim that no CR-arm read is cited at all.** That claim is false and I asserted it.
+
+**The conclusion survives, on a narrower ground, and the gates now assert that ground instead.** No figure *in print* rests on `c54.178`'s CR arm, because each of the three body-cited CR-arm loaders is accounted for **from its own sentence or its own source**, checked rather than declared:
+- `P15_the_photon_hierarchy_in_the_transfer` — cited at `l.846` on *"The control is the arm whose answer is known independently, and it reproduces it"*, which **prints no figure**;
+- `P15_the_control_entered_the_regime_and_the_arm_did_not_move` — prints **only the control's** figures (78 per cent of the control's remaining χ², the control at 1.18, a reference 1.01), which is why `r7671`'s split holds it;
+- `P15_where_the_likelihood_sits` — **pins the LEAFREC=0 namesake deliberately** by its own header guard, and `r7671`'s split routes its `l.955` sentence to 69 as a **RE-GROUND**, reached independently from the receipt's guard rather than from this count.
+
+⇒ **Item 4 is discharged by item 3 AND by one routed sentence, not by item 3 alone.** `item4_c54178.py` is **6 checks, 0 failures** with four of them rewritten to the measured state; `r7669`'s `RESULT.md` carries the correction at its item-4 bullet rather than the old wording.
+
+⌗⌗ **This is the eighth instance of the same pattern and the first where I had already fixed it elsewhere in the same revision.** `r7669+cc66.4` named the iterated table as shape 3 and closed it in `classify.py`; `item4_c54178.py` sat in the same directory with the same hole. ⇒ *The lesson is not "watch for cheap signals" — I have written that seven times. It is that a shape fixed in one instrument is a shape to grep for across every instrument in the directory, in the same pass. The sentence test got that treatment at `r7671+cc66.4` and is now one definition; this pass is the loader detection getting it too late.*
+
+**Verified on this head:** `item4_c54178.py` rc=0 **6 of 6**; `split.py` rc=0 **12 of 12**; `census.py` rc=0 **13 of 13**; `classify.py` rc=0 **9 of 9**; `check_order_acknowledged` rc=0 **individually**, with 70 back to the 3 unanswered sections it has on `main`. ⌗ The full `NODE=cc66 bash scripts/turn_gates.sh` batch read **`ran 123 of 123`, `PASS=122 FAIL=1 UNRUN=0`** on the head before this correction, with `check_order_acknowledged` as the only red; it is re-running as this is pushed and its tally is quoted in the next entry rather than asserted here. *Pushed rather than held because the work is uncommitted and this container is reclaimed unpredictably, and because the head now on the branch carries the red this fixes.*

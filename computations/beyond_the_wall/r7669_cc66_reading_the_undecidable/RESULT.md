@@ -1,6 +1,6 @@
 # `r7669` (cc66) — READING THE UNDECIDABLE ITEMS: ONLY **TWO** LEAVE THE LIST, AND THE CONTROL HAS NO ARM-OF-RECORD LEG IN ANY GRID FAMILY
 
-**Receipts:** `classify.py` — 9 checks, 0 failures; `item4_c54178.py` — 6 checks, 0 failures.
+**Receipts:** `classify.py` — 9 checks, 0 failures; `item4_c54178.py` — 6 checks, 0 failures (four of them rewritten at `r7671+cc66.5`; see the item-4 bullet).
 **Registered:** `PREDICTION.md`, its own commit (`r7669+cc66.0`), pushed before `classify.py` existed.
 **Tree:** `5e2eb9658` (`origin/main` at `r7669`).
 
@@ -97,11 +97,28 @@ the wording already written by the receipt**, not work to invent.
   counterpart in the bank at all, by `Ⓐ①`. ⇒ *A control-only read cannot be REBUILD, because there is
   nothing to rebuild it against* — but per the order that is not counted until **70** reports, and
   this file counts nothing.
-- **Item 4 (`c54.178`) is answered in `item4_c54178.py`, and it has no work in it.** 47 receipts
-  mention it, 12 load it, 3 are body-cited and **all three read the control leg**; the CR-arm
-  loaders carry no body sentence at all. `c54.178_lcdm_leafrec1.npz` does not exist, so there is **no
-  arm-of-record figure to re-ground onto** — which makes the one sentence in print (*"about $989$ of
-  the $1320$ survives it"*) the order's **item 3** case, not item 4's, and it is not counted here.
+- **Item 4 (`c54.178`) is answered in `item4_c54178.py`.** `c54.178_lcdm_leafrec1.npz` does not
+  exist, so there is **no arm-of-record figure to re-ground onto** for a control read — which makes
+  the lensing sentence in print (*"about $989$ of the $1320$ survives it"*) the order's **item 3**
+  case, not item 4's, and it is not counted here.
+
+  ⛔⛭⛭ **CORRECTED AT `r7671+cc66.5`, AND THE FIRST FORM OF THIS BULLET SAID SOMETHING FALSE.** It
+  read: *"47 receipts mention it, 12 load it, 3 are body-cited and **all three read the control
+  leg**; the CR-arm loaders carry no body sentence at all."* `item4_c54178.py`'s loader pass missed
+  the **iterated-table shape** — `for _nm, _f in (('LambdaCDM arm', 'c54.178_lcdm'), ('CR arm',
+  'c54.178_cr')): np.load(os.path.join(_SPEC, f"{_f}.npz"))`, where the only literal inside the
+  `load(...)` call is `".npz"` — **which is the same shape `classify.py` was fixed for in this very
+  revision, one file over and not carried across.** Read: **15** loaders, **6** body-cited, **9**
+  reading the CR arm and **3 of those body-cited**, not zero.
+
+  ⇒ **The conclusion survives on a narrower ground, which the gates now assert instead.** No figure
+  in print rests on `c54.178`'s CR arm because each of the three body-cited CR-arm loaders is
+  accounted for from its own sentence or source: `the_photon_hierarchy_in_the_transfer` is cited at
+  `l.846` on a sentence with **no figure in it**; `the_control_entered_the_regime_and_the_arm_did_
+  not_move` prints **only the control's** figures; and `where_the_likelihood_sits` **pins the
+  LEAFREC=0 namesake deliberately** by its own header guard and its sentence is routed to 69 as a
+  **RE-GROUND** by `r7671`'s split. *So item 4 is discharged by item 3 **and** by one routed
+  sentence, not by item 3 alone.*
 
 ## WHAT THIS DOES NOT SETTLE
 

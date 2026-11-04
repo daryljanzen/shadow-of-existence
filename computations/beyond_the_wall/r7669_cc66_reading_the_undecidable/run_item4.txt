@@ -4,29 +4,46 @@
 ====================================================================================================
 
       receipts MENTIONING `c54.178`                 : 47
-      receipts whose LOAD SITE names it             : 12
-    OK    ⓵ ⛭⛭ MENTIONING IS NOT LOADING, and the gap is most of the population: the great majority of receipts that name `c54.178` never load it -- they discuss it in a comment, a docstring or a provenance note   (12 loaders of 47 mentions)
-      of the loaders, cited by a body sentence      : 3
+      receipts whose LOAD SITE names it             : 15
+    OK    ⓵ ⛭⛭ MENTIONING IS NOT LOADING, and the gap is most of the population: the great majority of receipts that name `c54.178` never load it -- they discuss it in a comment, a docstring or a provenance note   (15 loaders of 47 mentions)
+      of the loaders, cited by a body sentence      : 6
         P15_derived_lensing_on_the_lcdm_arm.py
             loads: ['c54.178_lcdm.npz']
+        P15_the_control_entered_the_regime_and_the_arm_did_not_move.py
+            loads: ['c54.178_cr']
+        P15_the_photon_hierarchy_in_the_transfer.py
+            loads: ['c54.178_cr']
         P15_the_residual_is_contrast_and_the_lensing_potential_is_derived.py
             loads: ['c54.178_lcdm.npz']
         P15_what_is_left_is_lensing_and_not_reionisation.py
             loads: ['c54.178_lcdm.npz']
-    OK    ⓶ ⛭⛭⛭ EVERY BODY-CITED `c54.178` LOADER READS THE CONTROL LEG, not the CR arm   (3 body-cited loaders, all reading c54.178_lcdm.npz)
-      loaders of the CR arm `c54.178_cr*`           : 6
-        of those, cited by a body sentence          : 0
-    OK    ⓷ ⛔ AND THE CR-ARM READS -- WHICH IS WHAT THE RULING IS ABOUT -- CARRY NO BODY SENTENCE AT ALL, so no figure in print rests on `c54.178`'s CR arm   (6 CR-arm loaders, 0 of them body-cited)
+        P15_where_the_likelihood_sits.py
+            loads: ['c54.178_cr', 'c54.178_lcdm']
+      of the body-cited, reading ONLY the control leg: 3
+    OK    ⓶ ⛭⛭ THE BODY-CITED LOADERS SPLIT BY LEG, and the first form of this gate claimed they were all the control: with the iterated table read there are SIX, of which three read ONLY the control leg and three read the CR arm.  ⛔ "Every body-cited loader reads the control leg" is FALSE and was asserted   (6 body-cited, 3 control-leg-only, 3 reading the CR arm)
+      loaders of the CR arm `c54.178_cr*`           : 9
+        of those, cited by a body sentence          : 3
+          P15_the_control_entered_the_regime_and_the_arm_did_not_move.py
+          P15_the_photon_hierarchy_in_the_transfer.py
+          P15_where_the_likelihood_sits.py
+        disposition -- no figure in its sentence    : 1 ['P15_the_photon_hierarchy_in_the_transfer.py']
+                       control figures only         : 1 ['P15_the_control_entered_the_regime_and_the_a']
+                       namesake pinned by its guard : 1 ['P15_where_the_likelihood_sits.py']
+    OK    ⓷ ⛔⛭⛭ NO FIGURE IN PRINT RESTS ON `c54.178`'s CR ARM -- BUT NOT BECAUSE NO CR-ARM READ IS CITED, WHICH IS WHAT THIS GATE USED TO SAY.  Three are, and each is accounted for from its own sentence or its own source: one cited on a sentence with no figure in it, one printing only the control's figures, and one pinning the LEAFREC=0 namesake by its own header guard and routed to 69 as a RE-GROUND by `r7671`'s split   (9 CR-arm loaders, 3 body-cited, dispositions 1/1/1)
       c54.178_cr_leafrec1.npz   exists: True
       c54.178_lcdm_leafrec1.npz exists: False
-    OK    ⓸ ⛭⛭⛭ THE RE-GROUNDING FIGURE THE ORDER ASKS FOR DOES NOT EXIST FOR THESE SENTENCES: the CR arm has a banked arm-of-record spectrum and the CONTROL has none -- so a control read cannot be re-grounded on an arm-of-record figure, there being none to re-ground onto   (cr_leafrec1 present, lcdm_leafrec1 absent)
-      of the three, whose citing sentence PRINTS a figure: 2
+    OK    ⓸ ⛭⛭⛭ THE RE-GROUNDING FIGURE THE ORDER ASKS FOR DOES NOT EXIST FOR THE CONTROL: the CR arm has a banked arm-of-record spectrum and the CONTROL has none -- so a control read cannot be re-grounded on an arm-of-record figure, there being none to re-ground onto   (cr_leafrec1 present, lcdm_leafrec1 absent)
+      of the 6, whose citing sentence PRINTS a figure: 4
         P15_derived_lensing_on_the_lcdm_arm.py
             "\emph{Most of the fitted headroom is recovered by a genuine lensing, and about $989$ of the $1320$ survives it}: the verdict of the last paragraph stands from the derived side, lensing real and not th"
+        P15_the_control_entered_the_regime_and_the_arm_did_not_mov
+            "\emph{And the truncation's removal is measured on the arm whose answer is known}: it was $78\%$ of the control's remaining $\chi^{2}$, and taking it out brings the control to $1.18$ per degree of free"
         P15_the_residual_is_contrast_and_the_lensing_potential_is_
             "\emph{Most of the fitted headroom is recovered by a genuine lensing, and about $989$ of the $1320$ survives it}: the verdict of the last paragraph stands from the derived side, lensing real and not th"
-    OK    ⓹ ⛭ SO ITEM 4 REDUCES TO ONE SENTENCE, shared by two receipts, and it is a control read: *"Most of the fitted headroom is recovered by a genuine lensing, and about $989$ of the $1320$ survives it"* -- figures `989` and `1320`   (2 of 3 print a figure, sharing one sentence)
-    OK    ⓺ ⛔⛭⛭ ⇒ ITEM 4 HAS NO RE-GROUNDING WORK, AND ITEM 3 IS WHY: the only figure in print that rests on a `c54.178` read rests on its CONTROL leg, which has no arm-of-record counterpart anywhere in the bank.  That makes it the order's ITEM 3 case -- a control-only read, which leaves the list if 70 reports the switch does not touch the control -- and NOT item 4's.  ⚠ Nothing here counts it, per the order   (routed to item 3, not re-grounded here)
+        P15_where_the_likelihood_sits.py
+            "\emph{The two sides of that agreement are computed independently}: the reported scale reaches the transfer nowhere---no source term, no projection and no solver reads it---so the comb it is compared a"
+    OK    ⓹ ⛭⛭ THE SENTENCES IN PRINT, RE-COUNTED: the first form of this gate said item 4 reduced to ONE sentence shared by two receipts.  With the iterated table read, 4 receipts have a citing sentence that prints a figure and 2 of them share the lensing sentence *"Most of the fitted headroom is recovered by a genuine lensing, and about $989$ of the $1320$ survives it"*.  ⛔ The reduction was real but narrower than stated   (4 of 6 print a figure; 2 share the lensing sentence)
+    OK    ⓺ ⛔⛭⛭ ⇒ ITEM 4 STILL HAS NO RE-GROUNDING WORK OF ITS OWN, AND ITEM 3 IS STILL WHY -- but on a narrower ground than `r7669+cc66.2` gave 69.  The lensing figure in print rests on `c54.178`'s CONTROL leg, which has no arm-of-record counterpart anywhere in the bank, so it is the order's ITEM 3 case and leaves the list if 70 reports the switch does not touch the control.  ⚠ What is NEW: the CR arm is read by three body-cited receipts rather than none, and one of them carries a sentence `r7671` routes to 69 as a RE-GROUND.  ⇒ Item 4 is discharged by item 3 AND by one routed sentence, not by item 3 alone.  Nothing here counts the control case, per the order   (discharged by item 3 plus one routed sentence)
 
 ====================================================================================================
   ✓ ALL CHECKS PASSED
