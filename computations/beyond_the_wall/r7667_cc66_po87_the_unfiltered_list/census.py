@@ -23,6 +23,7 @@ import os
 import re
 import sys
 import glob
+import ast
 import collections
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(
@@ -150,40 +151,110 @@ def aor_counterpart_exists(path):
 
 
 _NPZ = re.compile(r'([A-Za-z0-9_.\-]+\.npz)')
-cand, absent = {}, []
+
+#: ⛔⛭⛭⛭ r7667+cc66.3 -- THE SECOND CUT STILL COUNTED EVERY `.npz` TOKEN IN THE FILE, AND A TOKEN IS
+#:   NOT A READ.  Measured: 14 of the 104 receipts in scope carry namesake-looking tokens while
+#:   LOADING the arm of record.  The clearest case is
+#:   `P15_the_visibility_width_is_not_the_carrier...`: its `NEED = ('r6919_injected_lcdm.npz',
+#:   'r6919_injected_cr.npz', 'r6919_geometry.npz')` is a PRESENCE MANIFEST, and the figures come
+#:   from `np.load(f'r6919_injected_{t}_leafrec1.npz')`, which the regex saw only as the fragment
+#:   `_leafrec1.npz`.  ** So the second cut put on PO-87's list an item already entirely on the arm
+#:   of record -- and called it the one cheap repointing. **
+#:   ⇒ The classifier now reads LOAD SITES out of the AST rather than tokens out of the text, and
+#:     keeps the three-way discipline: a receipt rests on a namesake only if it LOADS one.
+def load_sites(src):
+    """every `*.load(...)` call's own string evidence, from the AST.  None if unparseable."""
+    try:
+        tree = ast.parse(src)
+    except SyntaxError:
+        return None
+    sites = []
+    for n in ast.walk(tree):
+        if not isinstance(n, ast.Call):
+            continue
+        f = n.func
+        if (f.attr if isinstance(f, ast.Attribute) else getattr(f, 'id', '')) != 'load':
+            continue
+        lits, fstr = [], False
+        for a in ast.walk(n):
+            if isinstance(a, ast.Constant) and isinstance(a.value, str):
+                lits.append(a.value)
+            elif isinstance(a, ast.JoinedStr):
+                fstr = True
+                lits += [v.value for v in a.values
+                         if isinstance(v, ast.Constant) and isinstance(v.value, str)]
+        sites.append((lits, fstr))
+    return sites
+
+
+def site_kind(lits):
+    """'aor' | 'namesake' | 'undecidable' for ONE load site, from its own literals."""
+    if any('leafrec1' in s for s in lits):
+        return 'aor'
+    names = [s for s in lits if s.endswith('.npz')]
+    if not names:
+        #: a built filename whose stem is a variable: undecidable from the source, counted neither way
+        return 'undecidable'
+    kinds = {classify(os.path.basename(s))[0] for s in names}
+    if kinds == {'aor'}:
+        return 'aor'
+    if 'namesake' in kinds:
+        return 'namesake'
+    return 'undecidable'
+
+
+cand, absent, unparsed = {}, [], []
 tally = collections.Counter()
+site_tally = collections.Counter()
 for paper, pth in sel:
     fp = os.path.join(ROOT, pth)
     if not os.path.exists(fp):
         absent.append(pth)
         continue
-    toks = sorted(set(_NPZ.findall(open(fp, encoding='utf-8', errors='replace').read())))
-    g = collections.defaultdict(list)
+    src = open(fp, encoding='utf-8', errors='replace').read()
+    toks = sorted(set(_NPZ.findall(src)))
+    if not toks:
+        continue
+    sites = load_sites(src)
+    if sites is None:
+        unparsed.append(pth)
+        continue
+    kinds = collections.Counter()
+    nm_names = []
+    for lits, fstr in sites:
+        k = site_kind(lits)
+        kinds[k] += 1
+        site_tally[k] += 1
+        if k == 'namesake':
+            nm_names += [s for s in lits if s.endswith('.npz')]
     for tk in toks:
-        kind, paths = classify(tk)
-        tally[kind] += 1
-        g[kind].append((tk, paths))
-    if g['namesake'] or g['undecidable']:
+        tally[classify(tk)[0]] += 1
+    #: ** on the list only if it LOADS a namesake, or if every load site is undecidable while a
+    #:   namesake token is present -- and that second case is REPORTED as undecidable, not assumed. **
+    if kinds['namesake'] or (kinds['undecidable'] and not kinds['aor']):
+        nmpaths = sorted({q for s in set(nm_names)
+                          for q in _tree.get(os.path.basename(s), []) if 'leafrec1' not in q})
         cand[pth] = dict(paper=paper,
-                         namesake=[tk for tk, _ in g['namesake']],
-                         nmpaths=[q for _, ps in g['namesake'] for q in ps],
-                         undecidable=[tk for tk, _ in g['undecidable']],
-                         aor=[tk for tk, _ in g['aor']],
-                         unresolved=[tk for tk, _ in g['unresolved']])
-print(f'      receipt paths in scope not on disk: {len(absent)}')
-print(f'      npz tokens by resolution: {dict(tally)}')
-print(f'      receipts resting on >=1 namesake or undecidable token: {len(cand)}')
-check(f'Ⓐ③ ⛭⛭ TOKENS ARE RESOLVED TO PATHS AND CLASSIFIED THREE WAYS, with the undecidable and '
-      f'unresolved buckets NAMED rather than folded into one side: {dict(tally)}',
-      tally['namesake'] > 0 and tally['aor'] > 0 and tally['unresolved'] > 0
-      and 0 < len(cand) < len(sel) / 2,
+                         namesake=sorted(set(nm_names)),
+                         nmpaths=nmpaths,
+                         undecidable=([f"{kinds['undecidable']} undecidable load site(s)"]
+                                      if kinds['undecidable'] else []),
+                         aor=[], unresolved=[],
+                         sites=dict(kinds))
+print(f'      receipt paths in scope not on disk: {len(absent)};  unparseable: {len(unparsed)}')
+print(f'      npz TOKENS by path resolution: {dict(tally)}')
+print(f'      `load(...)` SITES by what the AST says they read: {dict(site_tally)}')
+print(f'      receipts that LOAD a namesake (or whose every load site is undecidable): {len(cand)}')
+check(f'Ⓐ③ ⛭⛭ THE CLASSIFIER READS LOAD SITES, NOT TOKENS: {dict(site_tally)} across the scope, '
+      f'and a receipt is a candidate only if it LOADS a namesake -- {len(cand)} of {len(sel)}',
+      site_tally['namesake'] > 0 and site_tally['aor'] > 0 and 0 < len(cand) < len(sel) / 2,
       f'{len(cand)} candidates of {len(sel)} in scope')
-check(f'Ⓐ④ ⛔ AND THE FILENAME-ONLY TEST THIS REPLACES IS SHOWN TO BE WRONG rather than just '
-      f'withdrawn: at least one basename resolves BOTH to a `leafrec1` path and to a namesake '
-      f'path, so no filename test can separate them',
-      tally['undecidable'] > 0,
-      f"{tally['undecidable']} undecidable token(s), e.g. "
-      f"{[tk for d in cand.values() for tk in d['undecidable']][:3]}")
+check(f'Ⓐ④ ⛔ BOTH REPLACED METHODS ARE SHOWN WRONG rather than withdrawn: at least one basename '
+      f'resolves BOTH to a `leafrec1` path and to a namesake path, so no FILENAME test separates '
+      f'them; and at least one receipt carries a namesake TOKEN while every figure it loads is '
+      f'arm-of-record, so no TOKEN test separates them either',
+      tally['undecidable'] > 0 and site_tally['aor'] > 0,
+      f"{tally['undecidable']} undecidable token(s); {site_tally['aor']} arm-of-record load site(s)")
 
 # ══ who cites them, and does the citing sentence PRINT a figure ══════════════════════════════════
 head('Ⓑ  THE BODY vs THE GENERATED APPENDIX -- the gap the order would otherwise hide')
@@ -264,8 +335,8 @@ check(f'Ⓑ①ᵃ the list\'s edge is stated on RESOLVED paths: {len(cand)} cand
       f'second group is off PO-87\'s list because the order asks for figures the papers print.  '
       f'⛔ The filename-only first cut of this census said 102/73/29; resolving to paths says '
       f'{len(cand)}/{len(body_cited)}/{len(_uncited)}',
-      len(body_cited) + len(_uncited) == len(cand) and len(_uncited) == 28
-      and len(cand) == 100 and len(body_cited) == 72,
+      len(body_cited) + len(_uncited) == len(cand) and len(_uncited) == 27
+      and len(cand) == 96 and len(body_cited) == 69,
       f'{len(body_cited)} + {len(_uncited)} = {len(cand)}')
 #: ⛔ ARM ① MISSED BY ONE.  Registered 55-73; scored 54.  *Reported as a miss rather than rounded
 #:   into the band: the band was mine to choose and 54 is outside it.  The quantity it was about is
@@ -274,8 +345,8 @@ check(f'Ⓑ② the figure-printing count is PINNED on RESOLVED paths and arm ①
       f'recorded as MISSED: {len(prints_fig)} of {len(body_cited)} body-cited candidates print a '
       f'figure.  ⛔ The filename-only first cut said 54; it counted `cr_base.npz` and 43 other '
       f'tokens as namesakes without looking at the directory they are read from',
-      len(prints_fig) == 53 and len(body_cited) == 72 and not (55 <= len(prints_fig) <= 73),
-      f'{len(prints_fig)} of {len(body_cited)}; arm \u2460 registered 55-73 -> MISS by two')
+      len(prints_fig) == 49 and len(body_cited) == 69 and not (55 <= len(prints_fig) <= 73),
+      f'{len(prints_fig)} of {len(body_cited)}; arm \u2460 registered 55-73 -> MISS by six')
 
 # ══ cheap vs expensive ══════════════════════════════════════════════════════════════════════════
 head('Ⓒ  CHEAP vs EXPENSIVE -- which items have an arm-of-record sibling already banked')
@@ -330,8 +401,8 @@ for stem in TWELVE:
 check(f'Ⓓ① the twelve are PINNED at how many are read by a body-cited receipt, and arm ③\'s '
       f'">= 8" is recorded as FALSIFIED: {len(live)} of 12 live '
       f'({", ".join(sorted(live)) if live else "none"})',
-      len(live) == 3 and set(live) == {'c54.175', 'c54.177', 'c54.178'} and len(live) < 8,
-      f'{len(live)} of 12 live; arm \u2462 registered >= 8 -> FALSIFIED')
+      len(live) == 1 and set(live) == {'c54.178'} and len(live) < 8,
+      f'{len(live)} of 12 live; arm \u2462 registered >= 8 -> FALSIFIED badly')
 
 # ══ the explainer ═══════════════════════════════════════════════════════════════════════════════
 exp = texts.get('EXPLAINER.md', '')
@@ -339,6 +410,23 @@ exp_cites = [pth for pth in cand if '\\rcpt{' + os.path.basename(pth)[:-3] + '}'
 check(f'Ⓓ② ARM ④ AS REGISTERED: `EXPLAINER.md` cites none of the candidates through a `\\rcpt` -- '
       f'scored {len(exp_cites)}',
       len(exp_cites) == 0, f'{len(exp_cites)} explainer citations')
+
+#: ⛔⛭⛭ HOW MANY OF THE LIST ARE THERE ON EVIDENCE, AND HOW MANY CONSERVATIVELY.  210 of the 348
+#:   load sites in scope cannot be decided from the source at all -- the filename's stem comes from
+#:   a variable -- so a receipt whose every load site is undecidable is kept ON the list when it
+#:   also carries a namesake token.  ** That is a deliberate over-inclusion and it must be visible,
+#:   because 69 would otherwise spend a build budget on items that may already be on the arm of
+#:   record. **
+_loads_nm = [q for q in prints_fig if cand[q]['sites'].get('namesake')]
+_undec_only = [q for q in prints_fig if not cand[q]['sites'].get('namesake')]
+print(f'      of the {len(prints_fig)} items: {len(_loads_nm)} LOAD a namesake (evidence), '
+      f'{len(_undec_only)} are kept on the list only because every load site is undecidable')
+check(f'Ⓒ③ ⛭⛭ THE LIST SEPARATES EVIDENCE FROM CONSERVATIVE INCLUSION: {len(_loads_nm)} of '
+      f'{len(prints_fig)} items demonstrably LOAD a namesake; {len(_undec_only)} are on the list '
+      f'only because none of their load sites could be decided from the source, so they are '
+      f'candidates for a READ rather than for a rebuild',
+      len(_loads_nm) + len(_undec_only) == len(prints_fig) and len(_loads_nm) > 0,
+      f'{len(_loads_nm)} on evidence, {len(_undec_only)} conservative')
 
 # ══ THE LIST ════════════════════════════════════════════════════════════════════════════════════
 head('THE UNFILTERED LIST -- every figure-printing item, its receipt, its spectra, its sentence')

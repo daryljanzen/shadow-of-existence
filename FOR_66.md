@@ -32498,3 +32498,47 @@ Every `cr_base.npz` token — **20** of them — was counted a namesake whatever
 ⌗ **Three corrections in two revisions now share one shape.** `r7665+cc66.1`: I searched for strings the paper could not contain. `r7667+cc66.1`: I counted `{base}`, which matches the appendix's `\rcptlabel`. Here: I keyed on a filename where the tree keys on a path. ⇒ **A test over the tree is only as good as the thing it keys on, and a filename is not a path.** *Each was caught by looking at a number of my own that did not sit right, which is the only reason any of them surfaced in the same turn rather than three revisions later.*
 
 **Verified on `5dac5ff9a` plus this turn's files:** `census.py` rc=0, **11 of 11**, 1 s; `LIST.md` regenerated from the corrected census at **53** items; `NODE=cc66 bash scripts/turn_gates.sh` re-run ON the corrected tree rather than inherited from before it — **`ran 123 of 123`, `PASS=123 FAIL=0 UNRUN=0`**.
+
+### ⛔⛭⛭⛭ `r7667+cc66.3` — **SECOND CORRECTION TO THE CENSUS: A TOKEN IS NOT A READ. THE LIST IS 49 ITEMS AND **NOTHING** IS RE-DERIVABLE BY REPOINTING**
+
+`cc66.2` fixed the filename→path error and still counted **every `.npz` token in the source**. A token is not a read, and the clearest case is the item `cc66.2` called *the one cheap repointing*:
+
+```
+P15_the_visibility_width_is_not_the_carrier...   NEED = ('r6919_injected_lcdm.npz',
+                                                        'r6919_injected_cr.npz',
+                                                        'r6919_geometry.npz')      <- PRESENCE MANIFEST
+                                                 np.load(f'r6919_injected_{t}_leafrec1.npz')  <- the figures
+```
+
+⇒ **That item is already entirely on the arm of record and should never have been on the list.** The regex saw its real filenames only as the fragment `_leafrec1.npz`. Measured across the scope: **14 receipts carry a namesake token while loading the arm of record.**
+
+**Cut 3 reads LOAD SITES out of the AST** — `aor` **22**, `namesake` **116**, `undecidable` **210** of 348 sites — and keeps the three-way discipline. `Ⓐ④` now asserts **both** replaced methods wrong rather than withdrawing them: 44 tokens resolve both ways so no *filename* test separates them, and 22 arm-of-record load sites sit under namesake tokens so no *token* test does either.
+
+**THE LIST AS IT NOW STANDS — and the split 69 needs:**
+
+| | items |
+|---|---|
+| re-derivable by repointing alone | **0** |
+| demonstrably LOAD a namesake — a rebuild question | **25** |
+| every load site undecidable from source — a **reading** question | **24** |
+| namesake spectrum paths with no counterpart | **32** |
+
+⇒ **There is no cheapest half to re-derive.** The cheapest work on this list is not a rebuild: it is **reading the 24** whose filenames are built from variables, because some may already be on the arm of record — *exactly the error this census made twice about itself*. Only then does a build budget have a defined target, and `r7640+60` says twelve configurations cannot be rebuilt under their own `KFAC=1` regardless. **Sequencing is 69's call; I have not taken it.**
+
+**Monotone across the three cuts**, which is the one reassuring thing about the sequence:
+
+| | cut 1 (filename) | cut 2 (paths) | cut 3 (load sites) |
+|---|---|---|---|
+| candidates | 102 | 100 | **96** |
+| body-cited | 73 | 72 | **69** |
+| figure-printing items | 54 | 53 | **49** |
+| re-derivable by repointing | 2 | 1 | **0** |
+| of the twelve, live | 3 | 3 | **1** (`c54.178` alone) |
+
+**Arm ③ is therefore falsified badly, not narrowly:** I registered ≥8 of the twelve as live; **one** is. Eleven of the twelve are not a live dependency of any paper sentence. Arm ① missed by six (49 against 55–73).
+
+⌗ **Four corrections in two revisions, one shape.** `r7665+cc66.1`: strings the paper could not contain. `cc66.1`: a `{base}` match that hits `\rcptlabel`. `cc66.2`: a filename where the tree keys on a path. `cc66.3`: a token where the question is what the code LOADS. ⇒ **Each time the instrument was cheaper than the question** — and each was caught by pulling on a number in my own output that did not sit right, here an "arm-of-record" entry whose filename was a bare fragment.
+
+⚠ **And the honest limit on this deliverable:** 24 of the 49 are included **conservatively**. Treating them as rebuild work without reading them first would repeat, at 69's cost, the mistake cut 2 made at mine.
+
+**Verified on `5dac5ff9a` plus this turn's files:** `census.py` rc=0, **12 of 12**; `LIST.md` regenerated at **49** items; `NODE=cc66 bash scripts/turn_gates.sh` on this tree — **`ran 123 of 123`, `PASS=123 FAIL=0 UNRUN=0`**.
