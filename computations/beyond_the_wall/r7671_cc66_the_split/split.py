@@ -380,6 +380,8 @@ V = {
 head('Ⓐ  THE THIRTY, AND THE READING CHECKED RATHER THAN TRUSTED')
 ITEMS = sorted(CEN.prints_fig)
 BASES = [os.path.basename(p)[:-3] for p in ITEMS]
+DECLARED = sorted(V)       #: the THIRTY verdicts -- the population the arms were registered against
+                           #  (see the r7673+cc66 note below, which says which gate reads which)
 print(f'      `r7667/census.py` ran green: {CEN_OK};  `r7669/classify.py` ran green: {CLS_OK}')
 print(f'      figure-printing items on PO-87\'s list: {len(ITEMS)};  verdicts declared: {len(V)}')
 _missing = [b for b in BASES if b not in V]
@@ -388,11 +390,22 @@ if _missing:
     print(f'      ⛔ NO VERDICT: {_missing}')
 if _extra:
     print(f'      ⛔ VERDICT FOR AN ITEM NOT ON THE LIST: {_extra}')
-check(f'Ⓐ① EVERY one of the {len(ITEMS)} items has exactly one verdict and no item outside the '
-      f'list has one, and both producing instruments are confirmed green rather than assumed -- '
-      f'census {CEN_OK}, classify {CLS_OK}',
-      CEN_OK and CLS_OK and not _missing and not _extra and len(V) == len(ITEMS),
-      f'{len(V)} verdicts for {len(ITEMS)} items; {len(_missing)} missing, {len(_extra)} extra')
+#: ⛭ `r7673+cc66`: `_extra` is no longer an error -- it is the four items that LEFT the list, and
+#:   the gate now requires each of them to be accounted for in the census's ledger instead.  What
+#:   it still forbids is an item ON the live list with NO verdict, which is the direction that
+#:   would mean the reading is incomplete.
+_LEDGER0 = getattr(CEN, '_LEFT_SINCE', {})
+_unacc0 = [b for b in _extra if not any(b in k or k in b for k in _LEDGER0)]
+check(f'Ⓐ① EVERY one of the {len(ITEMS)} items on the LIVE list has exactly one verdict, every '
+      f'verdict for an item no longer on it is ACCOUNTED FOR in `r7667/census.py`\'s own '
+      f'`_LEFT_SINCE` ledger, and both producing instruments are confirmed green rather than '
+      f'assumed -- census {CEN_OK}, classify {CLS_OK}.  ⛭ *{len(_extra)} of the thirty have left '
+      f'since this reading was generated; {len(_extra) - len(_unacc0)} of those departures are '
+      f'declared with a cause.  An item on the list with no verdict is still a failure -- that is '
+      f'the direction that would mean the reading is incomplete*',
+      CEN_OK and CLS_OK and not _missing and not _unacc0 and len(V) == 30,
+      f'{len(V)} verdicts for {len(ITEMS)} live items; {len(_missing)} missing, {len(_extra)} '
+      f'left the list ({len(_unacc0)} of them undeclared)')
 
 #: the control bar, applied mechanically to what I DECLARED, not to what I concluded
 _ctrl = [b for b in BASES if V[b]['why'] in ('ctrl-read', 'ctrl-only', 'ctrl-figure')]
@@ -465,7 +478,7 @@ _bad5 = [b for b in BASES if V[b]['why'] == 'ctrl-read' and not _aor_live[b]]
 _bad5 += [b for b in BASES if V[b]['why'] == 'ctrl-only'
           and (_aor_live[b] or not V[b]['spectra']
                or not all(_CTRLNAME.search(os.path.basename(q)) for q in V[b]['spectra']))]
-_n_cr = sum(1 for b in BASES if V[b]['why'] == 'ctrl-read')
+_n_cr = sum(1 for b in DECLARED if V[b]['why'] == 'ctrl-read')  # DECLARED: pre-registered arm
 _n_co = sum(1 for b in BASES if V[b]['why'] == 'ctrl-only')
 if _bad5:
     print(f'      ⛔ the declared load story does not match the source: {_bad5}')
@@ -479,13 +492,43 @@ check(f'Ⓐ⑤ ⛭⛭ THE LOAD STORY IS CHECKED AGAINST THE SOURCE, BOTH WAYS: e
 
 # ══ the arms ════════════════════════════════════════════════════════════════════════════════════
 head('Ⓑ  THE REGISTERED ARMS, SCORED')
-_by = collections.Counter(V[b]['verdict'] for b in BASES)
-_why = collections.Counter(V[b]['why'] for b in BASES)
+# ═════════════════════════════════════════════════════════════════════════════════════════════════
+# ⛭⛭⛭ `r7673+cc66`, answering `r7673` ⓸ -- ** FOUR OF THE THIRTY HAVE LEFT PO-87's LIST SINCE THIS
+#   READING WAS GENERATED, SO THIS FILE NOW DISTINGUISHES TWO POPULATIONS AND SAYS WHICH EACH GATE
+#   IS SCORED ON. **
+#
+#   `DECLARED` -- the thirty verdicts in `V` below.  ** This is the population the pre-registered
+#       arms were registered against, so Ⓑ② and Ⓑ④ are scored on it and their scores do not move. **
+#       ⛔ *Re-scoring a pre-registration against a population that shrank afterwards would turn a
+#       HIT into a MISS by arithmetic rather than by evidence, which is the one thing a
+#       pre-registration exists to prevent.  The arms stay where they were scored.*
+#   `LIVE`     -- what `r7667/census.py` reports today, which is twenty-six.  Ⓐ① is scored on the
+#       INTERSECTION and on the departures being accounted for, because its content is that the
+#       reading covers the list rather than that the list has a particular size.
+#
+#   ⇒ And the departures are not inferred from absence: each is read out of the census's own
+#   `_LEFT_SINCE` ledger, so a thirty-first disappearance nobody has written down reddens Ⓐ①.
+#   *The disposition of every one of the thirty -- what happened to it since -- is in
+#   `r7673_cc66_the_repoints/SPLIT.md`, which supersedes this file's own `SPLIT.md` as the list of
+#   what is LEFT.  This one stays as the record of the reading it was generated from.*
+# ═════════════════════════════════════════════════════════════════════════════════════════════════
+_LEDGER = getattr(CEN, '_LEFT_SINCE', {})
+_gone = [b for b in DECLARED if b not in BASES]
+_unaccounted = [b for b in _gone if not any(b in k or k in b for k in _LEDGER)]
+print(f'      DECLARED population: {len(DECLARED)};  LIVE census: {len(BASES)};  '
+      f'left since: {len(_gone)}, all of them in the census ledger: {not _unaccounted}')
+for _b in _gone:
+    _r = next((v for k, v in _LEDGER.items() if _b in k or k in _b), 'NOT DECLARED')
+    print(f'        LEFT  {_b[:62]}')
+    print(f'              {_r[:110]}')
+
+_by = collections.Counter(V[b]['verdict'] for b in DECLARED)   # DECLARED: see note above
+_why = collections.Counter(V[b]['why'] for b in DECLARED)
 print(f'      {REGROUND}: {_by[REGROUND]}   {REBUILD}: {_by[REBUILD]}   {HELD}: {_by[HELD]}')
 print(f'      by ground: {dict(_why)}')
 
 #: ⛔⛭⛭ ARM ① OVERSHOT, AND IN THE DIRECTION THAT MATTERS FOR THE ORDER.
-_cr = sum(1 for b in BASES if V[b]['why'] == 'ctrl-read')
+_cr = sum(1 for b in DECLARED if V[b]['why'] == 'ctrl-read')  # DECLARED: pre-registered arm
 _cf = sum(1 for b in BASES if V[b]['why'] == 'ctrl-figure')
 check(f'Ⓑ① ⛔⛭⛭ ARM ① IS FALSIFIED ON THE HIGH SIDE: I registered 4 to 10 of the thirty held as '
       f'control-only.  {_cr} rest on a CONTROL LEG and {_cf} more print only the control\'s own '
@@ -525,7 +568,7 @@ check(f'Ⓑ③ ⛭⛭ THE WORDING REGEX IS FALSIFIED A SIXTH TIME, and registere
       len(_disagree) >= 5, f'{len(_disagree)} disagreements of {len(BASES)} '
                            f'against a registered >= 5 -> HIT')
 
-_method = [b for b in BASES if V[b]['why'] == 'method']
+_method = [b for b in DECLARED if V[b]['why'] == 'method']    # DECLARED: pre-registered arm
 check(f'Ⓑ④ ARM ④ SCORED: I registered at least 3 items whose sentence is still RE-GROUND because '
       f'the figure it prints is a METHOD or INSTRUMENT property no re-derivation would move.  '
       f'{len(_method)} are: {", ".join(b.split("_")[1][:14] + "..." for b in _method)}.  *This is '

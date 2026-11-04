@@ -453,12 +453,36 @@ check(f'Ⓑ⑤ᵃ ⛔⛭ ARM ② IS FALSIFIED AND THE GATE\'S OWN PIN WAS STALE:
       and len(_only_cen) + len(_only_mine) == len(_cen_set ^ _mine),
       f'census {len(_cen_set)} vs here {len(_mine)}; symmetric difference '
       f'{len(_only_cen)}+{len(_only_mine)}')
-check(f'Ⓑ⑥ ⛭ ARM ④ HITS: the two receipts whose own header guard asserts the loaded file IS the '
-      f'LEAFREC=0 namesake and that an arm-of-record counterpart exists beside it both resolve '
-      f'NAMESAKE here, so they are RE-GROUND with the wording already written',
-      all(any(os.path.basename(i[1]).startswith(s) for i in _f_nm + _f_mix + _f_none)
-          for s in ('P15_the_phase_is_the_driving', 'P15_where_the_likelihood_sits')),
-      'both header-guard receipts resolve to the namesake side')
+#: ⛭⛭⛭ `r7673+cc66` -- ** ONE OF THE TWO HEADER-GUARD RECEIPTS HAS LEFT THE LIST BECAUSE ITS
+#:   RE-GROUND LANDED, SO THIS GATE IS RESTATED ON WHAT IS NOW TRUE AND ON WHY. **
+#:   `P15_where_the_likelihood_sits` is no longer cited by a body sentence that prints a figure:
+#:   `r7673` (69) moved its citation onto the method sentence.  ⇒ *So the gate now asserts BOTH
+#:   halves -- the one that remains resolves NAMESAKE here, and the one that is gone is gone for
+#:   the DECLARED reason, read out of the census's own `_LEFT_SINCE` ledger rather than assumed.*
+#:   ⛔ **That is stronger than the original, not weaker: a receipt vanishing from a population is
+#:   exactly the event a count-based gate cannot distinguish from a bug, and this one now has to
+#:   name its cause in another instrument's ledger before it passes.**
+_GUARD_LEFT = 'P15_where_the_likelihood_sits'
+_LEDGER = getattr(_cen, '_LEFT_SINCE', {}) if _cen_ok is not None else {}
+_in_ledger = any(_GUARD_LEFT in k for k in _LEDGER)
+_still_here = any(os.path.basename(i[1]).startswith('P15_the_phase_is_the_driving')
+                  for i in _f_nm + _f_mix + _f_none)
+_guard_gone = not any(os.path.basename(i[1]).startswith(_GUARD_LEFT)
+                      for i in _f_nm + _f_mix + _f_none)
+print(f'\n      the two header-guard receipts: `the_phase_is_the_driving` resolves namesake here '
+      f'({_still_here}); `where_the_likelihood_sits` has LEFT the list ({_guard_gone}) and the '
+      f'census ledger carries its reason ({_in_ledger})')
+check(f'Ⓑ⑥ ⛭ ARM ④ HITS, AND HALF OF IT HAS SINCE BEEN LANDED: of the two receipts whose own '
+      f'header guard asserts the loaded file IS the LEAFREC=0 namesake with an arm-of-record '
+      f'counterpart beside it, `P15_the_phase_is_the_driving` still resolves NAMESAKE here and is '
+      f'RE-GROUND with the wording already written, and `P15_where_the_likelihood_sits` has left '
+      f'PO-87\'s list entirely -- `r7673` (69) moved its citation onto the method sentence.  '
+      f'⛔ *The departure is not inferred from its absence: it is read out of `r7667/census.py`\'s '
+      f'own `_LEFT_SINCE` ledger, so this gate fails if a header-guard receipt disappears for any '
+      f'reason nobody has written down*',
+      _still_here and _guard_gone and _in_ledger,
+      f'the_phase_is_the_driving namesake={_still_here}; where_the_likelihood_sits gone='
+      f'{_guard_gone}, declared in the census ledger={_in_ledger}')
 
 for _, p, k, v, g in sorted(_hand):
     tag = ('AOR-ONLY   ' if (k['aor'] and not k['namesake'])

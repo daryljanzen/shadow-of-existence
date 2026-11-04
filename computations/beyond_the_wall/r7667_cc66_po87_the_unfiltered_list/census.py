@@ -386,14 +386,50 @@ check(f'Ⓑ① ⛭⛭ BODY AND APPENDIX ARE DISTINGUISHED BY MACRO, NOT BY COUNT
 #:   the population a later order would reach for, so the number is on the record here.
 _uncited = sorted(set(cand) - set(body_cited))
 print(f'      candidates resting on a namesake that NO body sentence cites: {len(_uncited)}')
+# ═════════════════════════════════════════════════════════════════════════════════════════════════
+# ⛭⛭⛭ `r7673+cc66` -- ** FOUR OF THIS CENSUS'S PINS MOVED, AND THEY MOVED BECAUSE THE WORK THE
+#   CENSUS WAS FOR GOT DONE.  THE PINS ARE RE-SET TO THE MEASURED VALUES AND THE CAUSE OF EACH
+#   DEPARTURE IS DECLARED HERE, SO THE NUMBER IS DERIVED FROM THE PIN PLUS THE LEDGER RATHER THAN
+#   RE-TYPED. **
+#
+#   ⛔ *A bare updated count would be a pin that records nothing: it would pass tomorrow whatever
+#   moved it.  The ledger below names each item that left PO-87's list and the revision that moved
+#   it, and `Ⓑ②` asserts that the new count is the OLD pin minus exactly these four.  ⇒ If a fifth
+#   item leaves without being entered here, that gate fires -- which is the whole point of having
+#   pinned the count in the first place.*
+_LIST_WAS = 30                      # what `r7671`'s SPLIT.md was generated from, and its pin here
+_LEFT_SINCE = {
+    'P15_the_acceptance_does_not_move_under_refinement_and_three_of_the_twelve_axes_could_not_'
+    'have_moved_it':
+        'r7673+cc66.4 -- repointed onto 70s r7041_accept_*_leafrec1 banks; no namesake load left',
+    'P15_the_acoustic_contrast_is_not_in_the_source_and_the_projection_makes_it_without_the_'
+    'distance':
+        'r7673+cc66.13 -- the SRCSAVE-inert leg moved to r6911_noop_leafrec1 at its arm-of-record '
+        'key, which was this receipts last namesake read',
+    'P15_the_cross_term_is_not_the_channel_and_every_projected_term_carries_the_excess':
+        'r7673+cc66.13 -- likewise, the PAIRSAVE-inert leg to r6915_noop_leafrec1',
+    'P15_where_the_likelihood_sits':
+        'r7673 (69) -- NOT this seats work: 69 moved its citation onto the method sentence, so it '
+        'is no longer cited by a body sentence that prints a figure.  The re-ground landed',
+}
+#   ⌗ ** AND THE OTHER FIVE RECEIPTS REPOINTED IN THIS REVISION DID NOT LEAVE, which is right and
+#   is the census working rather than lagging: ** `the_monopole_zero_point`, `the_peak_plane`,
+#   `the_spacing_drift`, `the_selection_does_not_truncate` and `a_source_with_no_physics` all still
+#   read a namesake path -- a control leg with no arm-of-record counterpart, or a namesake opened
+#   DELIBERATELY to gate a convention.  *The census cannot tell a figure read from a gate read, and
+#   that limit is `r7669`'s own finding, not a defect introduced here.*
+# ═════════════════════════════════════════════════════════════════════════════════════════════════
 check(f'Ⓑ①ᵃ the list\'s edge is stated on RESOLVED paths: {len(cand)} candidates split into '
       f'{len(body_cited)} body-cited and {len(_uncited)} cited by no body sentence, and the '
       f'second group is off PO-87\'s list because the order asks for figures the papers print.  '
       f'⛔ The filename-only first cut of this census said 102/73/29; resolving to paths says '
       f'{len(cand)}/{len(body_cited)}/{len(_uncited)}',
       len(body_cited) + len(_uncited) == len(cand) and len(_uncited) == 27
-      and len(cand) == 95 and len(body_cited) == 68,
-      f'{len(body_cited)} + {len(_uncited)} = {len(cand)}')
+      and len(cand) == 92 and len(body_cited) == 65,
+      f'{len(body_cited)} + {len(_uncited)} = {len(cand)}  '
+      f'[r7673+cc66: 95/68/27 -> 92/65/27; the three that left the CANDIDATE set are the three '
+      f'this seat repointed whose last namesake load went, per _LEFT_SINCE.  The 27 uncited do '
+      f'not move, which is the check on that reading: nothing left the paper]')
 #: ⛔ ARM ① MISSED BY ONE.  Registered 55-73; scored 54.  *Reported as a miss rather than rounded
 #:   into the band: the band was mine to choose and 54 is outside it.  The quantity it was about is
 #:   unaffected -- 73 body-cited candidates, 54 of which print a figure in the citing sentence.*
@@ -401,8 +437,12 @@ check(f'Ⓑ② the figure-printing count is PINNED on RESOLVED paths and arm ①
       f'recorded as MISSED: {len(prints_fig)} of {len(body_cited)} body-cited candidates print a '
       f'figure.  ⛔ The filename-only first cut said 54; it counted `cr_base.npz` and 43 other '
       f'tokens as namesakes without looking at the directory they are read from',
-      len(prints_fig) == 30 and len(body_cited) == 68 and not (55 <= len(prints_fig) <= 73),
-      f'{len(prints_fig)} of {len(body_cited)}; arm \u2460 registered 55-73 -> MISS by twenty-five')
+      len(prints_fig) == _LIST_WAS - len(_LEFT_SINCE) and len(body_cited) == 65
+      and not (55 <= len(prints_fig) <= 73),
+      f'{len(prints_fig)} of {len(body_cited)}; arm \u2460 registered 55-73 -> MISS by '
+      f'twenty-nine.  [r7673+cc66: the pin is now _LIST_WAS ({_LIST_WAS}) MINUS the '
+      f'{len(_LEFT_SINCE)} declared departures, not a re-typed {len(prints_fig)} -- so an '
+      f'undeclared fifth departure reddens this gate]')
 
 # ══ cheap vs expensive ══════════════════════════════════════════════════════════════════════════
 head('Ⓒ  CHEAP vs EXPENSIVE -- which items have an arm-of-record sibling already banked')
@@ -430,8 +470,10 @@ print(f'      distinct namesake spectra with NO banked sibling: {len(no_sib)}')
 check(f'Ⓒ① the unbanked count is scored on RESOLVED PATHS and arm ②\'s floor of 30 is recorded as '
       f'FALSIFIED: {len(no_sib)} distinct namesake spectrum PATHS read by a figure-printing '
       f'candidate have no arm-of-record counterpart, against the 30 I registered',
-      len(no_sib) == 22 and len(no_sib) < 30,
-      f'{len(no_sib)} without a counterpart; arm \u2461 floor 30 -> FALSIFIED')
+      len(no_sib) == 18 and len(no_sib) < 30,
+      f'{len(no_sib)} without a counterpart; arm \u2461 floor 30 -> FALSIFIED  '
+      f'[r7673+cc66: 22 -> 18, the four paths that left with the four items in _LEFT_SINCE.  '
+      f'The clause is MORE falsified, not less: the floor was 30]')
 #: ⛔⛭⛭⛭ AND THIS IS THE FINDING ITEM 2 TURNS ON, measured rather than assumed: the order says
 #:   "re-derive the cheapest half of them", which presumes a cheap half exists.  ** It does not. **
 #:   Only TWO of the 54 figure-printing items have an arm-of-record sibling banked for EVERY
@@ -501,8 +543,17 @@ check(f'Ⓒ④ ⛭ THE INSTRUMENT HAS CONVERGED ON THE ANSWER THAT MATTERS: the 
       f'{len(_undec_only)}, and left the cheap count at {len(cheap)} -- so the remaining '
       f'{site_tally["undecidable"]} undecidable sites are a reading task on {len(_undec_only)} '
       f'receipts rather than a further instrument',
-      len(cheap) == 0 and len(_undec_only) < len(_loads_nm) + 10,
-      f'{len(cheap)} cheap; {len(_undec_only)} to read')
+      len(cheap) == 1 and len(_undec_only) < len(_loads_nm) + 10
+      and all('a_source_with_no_physics' in q for q in cheap),
+      f'{len(cheap)} cheap; {len(_undec_only)} to read  '
+      f'[⛔ r7673+cc66: THE CHEAP COUNT MOVED 0 -> 1 AND THE 1 IS NOT A CHEAP REPOINT.  It is '
+      f'`a_source_with_no_physics`, ALREADY repointed at r7673+cc66.5: the only namesake paths it '
+      f'still opens are r6919_geometry.npz and r6919_noop.npz, read to GATE the key convention -- '
+      f'its figures come from the `_leafrec1` twins at `__cr_leafrec1` keys.  So the headline that '
+      f'converged here, `no item is cheap end to end`, is intact; what moved is a count this '
+      f'census cannot distinguish from a figure read, which is r7669s own receipt-level limit.  '
+      f'The gate NAMES the item rather than just counting it, so a genuinely cheap second item '
+      f'would redden it]')
 
 # ══ THE LIST ════════════════════════════════════════════════════════════════════════════════════
 head('THE UNFILTERED LIST -- every figure-printing item, its receipt, its spectra, its sentence')
