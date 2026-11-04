@@ -89,14 +89,33 @@ for d, b in TARGETS:
     A = np.load(nsk, allow_pickle=True)
     B = np.load(twin, allow_pickle=True)
     shared = sorted(set(A.files) & set(B.files))
-    diff = []
-    for k in shared:
+
+    def _ne(x, y):
         try:
-            same = np.array_equal(A[k], B[k])
+            return not np.array_equal(x, y)
         except Exception:                                      # noqa: BLE001
-            same = False
-        if not same:
-            diff.append(k)
+            return True
+
+    #: ⛔⛭⛭⛭ r7673+cc66.3 -- THE FIRST FORM OF THIS COMPARED ONLY SHARED KEYS AND CALLED SIX PAIRS
+    #:   BIT-IDENTICAL.  THEY ARE NOT.  Since `r7643`+70's RE-KEY, a twin keeps the NAMESAKE's
+    #:   values under the original keys and carries the arm-of-record values under `*_leafrec1`
+    #:   SUFFIXED keys beside them:
+    #:
+    #:       r6919_geometry_leafrec1.npz:  l_A__cr          <- still the NAMESAKE's
+    #:                                     l_A__cr_leafrec1 <- the arm of record's
+    #:
+    #:   ** So comparing shared keys measures exactly the half that cannot move, and every one of
+    #:   the six "identical" pairs moves 1 to 15 quantities under its suffixed keys. **
+    #:   ⇒ And the consequence for the order is larger than the count: ** A REPOINT THAT MOVES ONLY
+    #:     THE FILENAME READS THE SAME NUMBERS. **  For these files the KEY has to move too, which
+    #:     is what `P15_the_contrast_excess…`'s own comment says in the tree -- *"the sibling's
+    #:     `__cr` is the NAMESAKE's since r7643+70's re-key"* -- and this file did not read it.
+    #:   ⌗ *Tenth instance of keying on something cheaper than the question, and the first I pushed
+    #:     a headline on before catching: `r7673+cc66.2` said six repoints could not move a figure.*
+    diff = [k for k in shared if _ne(A[k], B[k])]
+    rekey = [k for k in B.files
+             if k.endswith('_leafrec1') and k[:-len('_leafrec1')] in B.files
+             and _ne(B[k], B[k[:-len('_leafrec1')]])]
     #: ⛔⛭⛭ THE FIRST FORM OF THIS CLASSIFIED A KEY AS CONTROL-SIDE BY ITS OWN NAME, and that is
     #:   the wrong question one more time.  `r6919_injected_lcdm.npz` is a CONTROL leg and its one
     #:   moving key is `Dl__viswap` -- no `lcdm` anywhere in the key -- so a name test counted a
@@ -110,33 +129,47 @@ for d, b in TARGETS:
     ctl_swap = [k for k in ctl if any(s in k.lower() for s in SWAP)]
     ctl_bad = [k for k in ctl if k not in ctl_swap]
     rows.append((os.path.join(d, b), len(shared), diff, ctl_swap, ctl_bad,
-                 sorted(set(B.files) - set(A.files))))
+                 sorted(set(B.files) - set(A.files)), rekey))
 
 print(f'      targets: {len(TARGETS)};  comparable pairs: {len(rows)};  not comparable: {len(missing)}')
 for q in missing:
     print(f'        {q}')
 print()
-print(f'      {"path":58s} {"shared":>6} {"moved":>6}  marker keys')
-for p, ns, diff, cs, cb, extra in rows:
-    print(f'      {p:58s} {ns:6d} {len(diff):6d}  {extra}')
+print(f'      {"path":58s} {"shared":>6} {"moved":>6} {"rekey":>6}  markers')
+for p, ns, diff, cs, cb, extra, rk in rows:
+    print(f'      {p:58s} {ns:6d} {len(diff):6d} {len(rk):6d}  {[x for x in extra if x in ("config", "manifest")]}')
 
-identical = [r for r in rows if not r[2]]
-moved = [r for r in rows if r[2]]
+#: a pair is INERT only if NEITHER channel moved: no shared key differs AND no re-keyed
+#: `*_leafrec1` key differs from its unsuffixed base.
+identical = [r for r in rows if not r[2] and not r[6]]
+moved = [r for r in rows if r[2] or r[6]]
 print()
 print(f'      BIT-IDENTICAL across the switch (a repoint cannot move a figure): {len(identical)}')
 for p, *_ in identical:
     print(f'        {p}')
 print(f'      genuinely moved                                                 : {len(moved)}')
-check(f'Ⓐ① ⛭⛭ THE PASS IS ORDERED BY A FILE COMPARISON AND NOT BY RECEIPT RUNS: of the {len(rows)} '
-      f'namesake/arm-of-record pairs reachable, {len(identical)} are BIT-IDENTICAL and '
-      f'{len(moved)} differ.  ⇒ A repoint of an identical pair is bookkeeping and cannot move a '
-      f'figure, so only the {len(moved)} need a run and a reading',
-      len(identical) > 0 and len(moved) > 0 and len(identical) + len(moved) == len(rows),
-      f'{len(identical)} identical, {len(moved)} moved, of {len(rows)}')
+#: ⛔⛭⛭⛭ Ⓐ① AS FIRST WRITTEN ASSERTED THAT SOME PAIRS ARE INERT, AND NONE IS.  The claim came from
+#:   comparing shared keys only, which measures the half the re-key leaves alone.  Scored on both
+#:   channels: ** every one of the 30 pairs moves something, and the class that matters is the one
+#:   that moves ONLY through the re-key -- there a repoint of the FILENAME ALONE IS A SILENT NO-OP. **
+_silent = [r for r in rows if not r[2] and r[6]]
+_direct = [r for r in rows if r[2]]
+print()
+print(f'      move through a SHARED key (a filename repoint suffices)   : {len(_direct)}')
+print(f'      move ONLY through the re-key (filename repoint is SILENT) : {len(_silent)}')
+for p, ns, diff, cs, cb, extra, rk in _silent:
+    print(f'        {p:52s} {len(rk)} re-keyed quantit(ies)')
+check(f'Ⓐ① ⛔⛭⛭⛭ NO PAIR IS INERT, AND THE FIRST FORM OF THIS GATE SAID SIX WERE: all {len(moved)} '
+      f'of the {len(rows)} pairs move a quantity.  {len(_direct)} move through a SHARED key, where '
+      f'repointing the filename is enough; {len(_silent)} move ONLY through `r7643`+70\'s RE-KEY, '
+      f'where the twin keeps the namesake values under the original keys and ** a repoint of the '
+      f'filename alone reads the same numbers and is a SILENT no-op **',
+      len(identical) == 0 and len(_silent) > 0 and len(_direct) + len(_silent) == len(rows),
+      f'{len(_direct)} shared-key, {len(_silent)} re-key-only, 0 inert, of {len(rows)}')
 
 #: ⛭⛭ 70's MEASUREMENT, CHECKED HERE ON EVERY PAIR RATHER THAN TAKEN ON REPORT
-bad = [(p, cb) for p, ns, diff, cs, cb, extra in rows if cb]
-swaps = [(p, cs) for p, ns, diff, cs, cb, extra in rows if cs]
+bad = [(p, cb) for p, ns, diff, cs, cb, extra, rk in rows if cb]
+swaps = [(p, cs) for p, ns, diff, cs, cb, extra, rk in rows if cs]
 print()
 print(f'      control keys that moved and are CROSS-ARM SWAP products: {len(swaps)} file(s)')
 for p, cs in swaps:
@@ -153,7 +186,7 @@ check(f'Ⓐ② ⛭⛭⛭ 70\'s MEASUREMENT IS CHECKED ON EVERY PAIR, NOT RESTED 
       not bad, f'{len(swaps)} swap-product file(s), {len(bad)} outside the class')
 
 #: ⛭ and the arm-of-record marker, which is how a twin declares itself
-nomark = [p for p, ns, diff, cs, cb, extra in rows if 'manifest' not in extra]
+nomark = [p for p, ns, diff, cs, cb, extra, rk in rows if 'manifest' not in extra]
 print()
 print(f'      twins carrying no `manifest` marker: {len(nomark)}')
 for p in nomark:

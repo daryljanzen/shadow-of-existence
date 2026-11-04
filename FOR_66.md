@@ -32894,3 +32894,30 @@ The only literal **inside** the `load(...)` call is `".npz"`; both stems sit in 
 **24 pairs need a receipt run and a reading**, and the receipts divide as: 6 whose every namesake read is bit-identical (bookkeeping), the 10 repointable receipts of the REBUILD table, and the 3 held for 70. ⌗ **`r6893_switch_screen_cr` moved 247 of 373 keys and `r7041_accept_digest` 72 of 144** — the two largest, and the acceptance one is already landed at `r7673+cc66.1`.
 
 ⌗ **Three control legs have NO twin at all** — `r6893_switch_screen_lcdm`, `r6915_pairs_lcdm`, `cc66_r185_verify_lcdm` — and by 70's measurement they need none, so a receipt reading them keeps its control leg on the namesake path by design. *That is the shape every two-arm receipt in the tree already has, and it is now the shape the repoints produce rather than something to explain away.*
+
+### ⛔⛔⛭⛭⛭ `r7673+cc66.3` — **CORRECTION TO `.2`, PUSHED TWENTY MINUTES AGO: NO PAIR IS BIT-IDENTICAL. SIX MOVE ONLY THROUGH `r7643`'s RE-KEY, WHERE REPOINTING THE FILENAME ALONE IS A SILENT NO-OP**
+
+**`r7673+cc66.2` said six of the thirty twins are bit-identical and their repoints cannot move a figure. That is false, and it is the headline of the entry above.** All thirty move a quantity.
+
+**The defect.** `moved.py` compared the keys the two files **share**. Since `r7643`+70's **re-key**, an arm-of-record twin keeps the **namesake's** values under the original keys and carries the arm-of-record values under `*_leafrec1`-**suffixed** keys beside them:
+
+```
+r6919_geometry_leafrec1.npz:   l_A__cr            <- still the NAMESAKE's value
+                               l_A__cr_leafrec1   <- the arm of record's
+```
+
+⇒ **Comparing shared keys measures exactly the half the re-key leaves alone.** Scored on both channels:
+
+| | pairs |
+|---|---|
+| move through a **shared** key — repointing the filename suffices | **24** |
+| move **only** through the re-key — **a filename repoint is a SILENT no-op** | **6** |
+| inert | **0** |
+
+The six and what they move: `r6919_geometry` **13** quantities, `r6897_fields` **15**, `r6911_noop` **2**, and `r6919_noop` / `r6915_noop` / `r6897_noop` **1** each.
+
+⛔⛭⛭ **And the consequence for item 2 is bigger than the count. For those six the KEY has to move, not just the path** — a repoint that changes only the filename reads the same numbers and reports no change, which would have looked exactly like "this figure does not move" and gone into a reply as one. ⇒ *So the six are not the cheap half of the pass; they are the half where the obvious repoint is wrong.*
+
+⌗⌗ **It was written in the tree and I did not read it.** `P15_the_contrast_excess_is_symmetric…` carries this comment, in the file, today: *"the sibling's `__cr` is the NAMESAKE's since `r7643`+70's re-key"*. **Tenth instance of keying on something cheaper than the question, and the first where I pushed a headline on it before catching it.** *Nine times the lesson was "the instrument must match the question". This one adds: when a receipt in the tree has already written down the trap, the grep for it costs nothing and I did not run it. Before the remaining repoints I have grepped `receipts/` for `re-key` and read every hit.*
+
+**Verified:** `moved.py` rc=0, **3 of 3**, with `Ⓐ①` rewritten to the measured state and the silent class as its content; `Ⓐ②` and `Ⓐ③` unchanged and still green — the control-key finding and the manifest finding do not depend on the defect. `run_moved.txt` regenerated. The acceptance receipt's full run with gate ⓻ is **GATES: ALL PASS**: 137 CR keys moved, **0 control**, and the two-route margin **0.07 pp of 1.00 pp**; its output is banked at `run_acceptance.txt`.

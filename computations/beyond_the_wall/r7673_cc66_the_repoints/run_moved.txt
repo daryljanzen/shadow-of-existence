@@ -5,47 +5,50 @@
 
       targets: 30;  comparable pairs: 30;  not comparable: 0
 
-      path                                                       shared  moved  marker keys
-      spectra/r6919_injected_cr.npz                                  35     20  ['config', 'manifest']
-      spectra/r6919_injected_lcdm.npz                                35      1  ['config', 'manifest']
-      spectra/r6919_geometry.npz                                     30      0  ['D_M__cr_leafrec1', 'R_S__cr_leafrec1', 'arm__cr_leafrec1', 'config', 'd_chi__cr_leafrec1', 'd_rs_leaf__cr_leafrec1', 'd_rs_own__cr_leafrec1', 'd_rs_stack__cr_leafrec1', 'eta_ls__cr_leafrec1', 'fwhm__cr_leafrec1', 'jac_hi__cr_leafrec1', 'jac_lo__cr_leafrec1', 'jac_pk__cr_leafrec1', 'l_A__cr_leafrec1', 'leafscales__cr_leafrec1', 'manifest', 'rs_ls_own__cr_leafrec1']
-      spectra/r6919_noop.npz                                          4      0  ['Dl__noop_cr_leafrec1', 'config', 'ls__noop_cr_leafrec1', 'manifest']
-      spectra/r6911_source_cr.npz                                    31     27  ['config', 'manifest']
-      spectra/r6911_source_lcdm.npz                                  31      2  ['config', 'manifest']
-      spectra/r6911_source_cr_kcont.npz                              31     27  ['config', 'manifest']
-      spectra/r6911_noop.npz                                          8      0  ['Dl__noop_cr_leafrec1', 'Dl__xsonly_cr_leafrec1', 'config', 'ls__noop_cr_leafrec1', 'ls__xsonly_cr_leafrec1', 'manifest']
-      spectra/r6915_noop.npz                                          4      0  ['Dl__noop_cr_leafrec1', 'config', 'ls__noop_cr_leafrec1', 'manifest']
-      spectra/r6915_pairs_cr.npz                                     13      8  ['config', 'manifest']
-      spectra/r6893_switch_screen_cr.npz                            373    247  ['config', 'manifest']
-      spectra/r6897_fields.npz                                       72      0  ['D_M__cr_leafrec1', 'R_eta__cr_leafrec1', 'R_peak__cr_leafrec1', 'a_ls__cr_leafrec1', 'a_rec__cr_leafrec1', 'arm__cr_leafrec1', 'config', 'eta__cr_leafrec1', 'eta_ls__cr_leafrec1', 'eta_ls_w__cr_leafrec1', 'k__cr_leafrec1', 'manifest', 'ombh2__cr_leafrec1', 'phi__cr_leafrec1', 'psi__cr_leafrec1', 'r_s__cr_leafrec1', 'rb_rec__cr_leafrec1', 'sliced__cr_leafrec1', 'tb__cr_leafrec1', 'th0__cr_leafrec1', 'z_rec__cr_leafrec1']
-      spectra/r6897_noop.npz                                          6      0  ['Dl__cr_leafrec1', 'config', 'ls__cr_leafrec1', 'manifest', 'rc__cr_leafrec1']
-      spectra/r6885_los_cr.npz                                        6      4  ['config', 'manifest']
-      spectra/r6885_losdp0_cr.npz                                     6      4  ['config', 'manifest']
-      spectra/r6885_lossw0_cr.npz                                     6      4  ['config', 'manifest']
-      spectra/r6885_dp0_cr.npz                                        6      4  ['config', 'manifest']
-      spectra/r6889_nufs0_cr.npz                                      6      4  ['config', 'manifest']
-      spectra/r6959_eta_cr.npz                                       28     20  ['config', 'manifest', 'taper_all', 'taper_norm']
-      spectra/cc66_r185_verify_cr.npz                                 6      4  ['config', 'manifest']
-      spectra/r7041_accept_digest.npz                               144     72  ['config', 'manifest']
-      spectra/r7041_accept_Al.npz                                   120     48  ['config', 'manifest']
-      spectra/r7041_accept_sample.npz                                28     14  ['config', 'manifest']
-      spectra/r7041_accept_nk_slices.npz                             10      3  ['config', 'manifest']
-      refit_grid185/cr_base.npz                                       6      4  ['config', 'manifest', 'switches']
-      r7095_directions/grid_licensed/cr_base.npz                      7      5  ['config', 'manifest']
-      r7093_directions/grid_oneclock/cr_base.npz                      8      5  ['config', 'manifest']
-      r7201_cc66_loading_lever/cr_nodrive.npz                         8      6  ['manifest', 'oneclock']
-      r7201_cc66_loading_lever/cr_rb0.5.npz                           8      6  ['manifest', 'oneclock']
-      r7201_cc66_loading_lever/cr_rb1.5.npz                           8      6  ['manifest', 'oneclock']
+      path                                                       shared  moved  rekey  markers
+      spectra/r6919_injected_cr.npz                                  35     20      0  ['config', 'manifest']
+      spectra/r6919_injected_lcdm.npz                                35      1      0  ['config', 'manifest']
+      spectra/r6919_geometry.npz                                     30      0     13  ['config', 'manifest']
+      spectra/r6919_noop.npz                                          4      0      1  ['config', 'manifest']
+      spectra/r6911_source_cr.npz                                    31     27      0  ['config', 'manifest']
+      spectra/r6911_source_lcdm.npz                                  31      2      0  ['config', 'manifest']
+      spectra/r6911_source_cr_kcont.npz                              31     27      0  ['config', 'manifest']
+      spectra/r6911_noop.npz                                          8      0      2  ['config', 'manifest']
+      spectra/r6915_noop.npz                                          4      0      1  ['config', 'manifest']
+      spectra/r6915_pairs_cr.npz                                     13      8      0  ['config', 'manifest']
+      spectra/r6893_switch_screen_cr.npz                            373    247      0  ['config', 'manifest']
+      spectra/r6897_fields.npz                                       72      0     15  ['config', 'manifest']
+      spectra/r6897_noop.npz                                          6      0      1  ['config', 'manifest']
+      spectra/r6885_los_cr.npz                                        6      4      0  ['config', 'manifest']
+      spectra/r6885_losdp0_cr.npz                                     6      4      0  ['config', 'manifest']
+      spectra/r6885_lossw0_cr.npz                                     6      4      0  ['config', 'manifest']
+      spectra/r6885_dp0_cr.npz                                        6      4      0  ['config', 'manifest']
+      spectra/r6889_nufs0_cr.npz                                      6      4      0  ['config', 'manifest']
+      spectra/r6959_eta_cr.npz                                       28     20      0  ['config', 'manifest']
+      spectra/cc66_r185_verify_cr.npz                                 6      4      0  ['config', 'manifest']
+      spectra/r7041_accept_digest.npz                               144     72      0  ['config', 'manifest']
+      spectra/r7041_accept_Al.npz                                   120     48      0  ['config', 'manifest']
+      spectra/r7041_accept_sample.npz                                28     14      0  ['config', 'manifest']
+      spectra/r7041_accept_nk_slices.npz                             10      3      0  ['config', 'manifest']
+      refit_grid185/cr_base.npz                                       6      4      0  ['config', 'manifest']
+      r7095_directions/grid_licensed/cr_base.npz                      7      5      0  ['config', 'manifest']
+      r7093_directions/grid_oneclock/cr_base.npz                      8      5      0  ['config', 'manifest']
+      r7201_cc66_loading_lever/cr_nodrive.npz                         8      6      0  ['manifest']
+      r7201_cc66_loading_lever/cr_rb0.5.npz                           8      6      0  ['manifest']
+      r7201_cc66_loading_lever/cr_rb1.5.npz                           8      6      0  ['manifest']
 
-      BIT-IDENTICAL across the switch (a repoint cannot move a figure): 6
-        spectra/r6919_geometry.npz
-        spectra/r6919_noop.npz
-        spectra/r6911_noop.npz
-        spectra/r6915_noop.npz
-        spectra/r6897_fields.npz
-        spectra/r6897_noop.npz
-      genuinely moved                                                 : 24
-    OK    Ⓐ① ⛭⛭ THE PASS IS ORDERED BY A FILE COMPARISON AND NOT BY RECEIPT RUNS: of the 30 namesake/arm-of-record pairs reachable, 6 are BIT-IDENTICAL and 24 differ.  ⇒ A repoint of an identical pair is bookkeeping and cannot move a figure, so only the 24 need a run and a reading   (6 identical, 24 moved, of 30)
+      BIT-IDENTICAL across the switch (a repoint cannot move a figure): 0
+      genuinely moved                                                 : 30
+
+      move through a SHARED key (a filename repoint suffices)   : 24
+      move ONLY through the re-key (filename repoint is SILENT) : 6
+        spectra/r6919_geometry.npz                           13 re-keyed quantit(ies)
+        spectra/r6919_noop.npz                               1 re-keyed quantit(ies)
+        spectra/r6911_noop.npz                               2 re-keyed quantit(ies)
+        spectra/r6915_noop.npz                               1 re-keyed quantit(ies)
+        spectra/r6897_fields.npz                             15 re-keyed quantit(ies)
+        spectra/r6897_noop.npz                               1 re-keyed quantit(ies)
+    OK    Ⓐ① ⛔⛭⛭⛭ NO PAIR IS INERT, AND THE FIRST FORM OF THIS GATE SAID SIX WERE: all 30 of the 30 pairs move a quantity.  24 move through a SHARED key, where repointing the filename is enough; 6 move ONLY through `r7643`+70's RE-KEY, where the twin keeps the namesake values under the original keys and ** a repoint of the filename alone reads the same numbers and is a SILENT no-op **   (24 shared-key, 6 re-key-only, 0 inert, of 30)
 
       control keys that moved and are CROSS-ARM SWAP products: 2 file(s)
         spectra/r6919_injected_lcdm.npz: ['Dl__viswap']

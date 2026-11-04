@@ -1,0 +1,148 @@
+
+P15_the_acceptance_does_not_move_under_refinement_and_three_of_the_twelve_axes_could_not_have_moved_it
+
+** THE KERNEL'S k-ACCEPTANCE DOES NOT MOVE UNDER ANY REFINEMENT THAT CAN MOVE IT -- and three of the twelve
+   axis-arm pairs COULD NOT HAVE MOVED IT, so their silence is not convergence and is not reported as it. **
+
+`r7049` offered the observation this answers: *"A_l is a sharper probe of the same thing and it is now free:
+it is built from W_l = G_l^2 dk/k over the k-grid, so truncating k_max truncates the window the law
+integrates over -- and A_l carries NO FITTED AMPLITUDE to absorb the truncation, where a height ratio
+does."*  It cost no re-run: `GRIDSAVE` writes the background `A_l` needs -- vis(eta), x0(eta), k, dk, r_s* --
+in 1.45 s per configuration WITHOUT computing a spectrum at all.
+
+⛔⛔ AND THE FINDING THAT MATTERS IS THE ONE THAT NEARLY DID NOT HAPPEN.  THE READER WAS ABOUT TO PRINT
+   "THE ACCEPTANCE HAS STOPPED MOVING, AT THE FLOOR" FOR THREE AXES WHOSE INPUTS NEVER MOVED.
+  `A_l` is built from the background alone.  So an axis that leaves every one of `k`, `dk`, `eta`, `x0`,
+  `vis` byte-identical CANNOT move it, and its sequence reads `base=X  s1=X  s2=X`: step 0.0000 per cent,
+  three points, not monotone, and the verdict falls straight through to converged.  Two such axes exist
+  here and they are NOT the same defect:
+    ① `NK` ON THE ARM.  The arm's k ladder is sqrt(L(L+2))*stretch out to `KMAXL` and `NK` is only a
+      decimation cap that is never reached -- 1452 modes at `base`, `nk15` and `nk20` alike.  *** On the
+      CONTROL the same knob takes 2547 modes to 3822 to 5094 and the spectra differ outright, which is
+      what makes the arm's silence a reading rather than a broken test. ***
+    ② `LSTEP` ON BOTH ARMS.  `A_l` is read at the SAME multipoles at every setting by construction, so the
+      reported ell grid cannot enter it at all.  *This one is a property of the QUESTION, not of the arm.*
+  ⇒ *** AN AXIS WHOSE INPUTS DO NOT MOVE IS NOT A CONVERGED AXIS, and the cheapest way for a sequence to
+      look converged is to be asked a question the instrument cannot answer. ***  That is this row's
+      recurring defect once more -- an instrument not matching its question -- and this time it was caught
+      in the READER, before the number reached a reply.
+  ⌗ The test is therefore read off the inputs and not held as a list: an axis is inert for an arm when every
+  configuration in it digests identically to `base`.  A list would have to be remembered and would not
+  notice a knob that starts mattering; ** gate ⓪ refuses to print if that test is not discriminating. **
+
+⛭ WHAT THE ARM'S INERT NK COST AND BOUGHT.  Six of `r7041`'s 72 configurations were dropped as the same
+computation repeated -- 588 slices to 557 -- on evidence banked here at the SPECTRUM level, not merely at
+the grid: `real_cr_nk15_k0` and `real_cr_nk20_k0` against `real_cr_base_k0` at max|Dl| = 0 exactly, with an
+identical ell list.  *The sweep reads the arm's `base` for them as an IDENTITY, under a gate.*
+
+⛔ WHAT IS NOT CLAIMED.  ** This is NOT `r7041`'s sweep and does not substitute for it. **  The sweep asks
+what the RETENTION and the peak heights do, measured on spectra; this asks what the kernel's k-acceptance
+does, computed from the background.  *A converged acceptance with an unconverged retention would itself be
+a finding, and the two are reported separately -- as this receipt's own pre-registration required.*  Nor is
+a nine-of-twelve reading a convergence claim for the ROW: the pre-registered criteria are printed beside
+every axis unaltered, including "a sequence that has not turned over is not converged whatever its last
+step" and "a two-point axis cannot turn over".  Nothing here says which cosmology is right.
+
+====================================================================================================
+    [ok]  the bank this receipt reads is present: `spectra/r7041_accept_digest_leafrec1.npz`   r7041_accept_digest_leafrec1.npz
+    [ok]  the bank this receipt reads is present: `spectra/r7041_accept_Al_leafrec1.npz`   r7041_accept_Al_leafrec1.npz
+    [ok]  the bank this receipt reads is present: `spectra/r7041_accept_sample_leafrec1.npz`   r7041_accept_sample_leafrec1.npz
+    [ok]  the bank this receipt reads is present: `spectra/r7041_accept_nk_slices_leafrec1.npz`   r7041_accept_nk_slices_leafrec1.npz
+
+  ⛭ GATE ZERO -- THE INERT TEST MUST DISCRIMINATE, OR NOTHING BELOW IS PRINTED
+  --------------------------------------------------------------------------------------------------
+  *A test that answers the same way on every axis is not a test.  This one is required to fire on
+  the three pairs claimed inert and to stay silent on the other nine, BEFORE any A_l is read.*
+    [ok]  ⓪ the inert test fires on EXACTLY the three axis-arm pairs claimed, and on no other of the twelve   fired on 3 of 12: [('cr', 'the mode count NK'), ('cr', 'the reported ell grid LSTEP'), ('lcdm', 'the reported ell grid LSTEP')]
+    [ok]  ⓪ and it is discriminating rather than constant -- it both fires and stays silent   3 fired, 9 did not
+
+  ⓵ THE INERT CLAIM IS A BYTE CLAIM, AND SO IS ITS CONTROL
+  --------------------------------------------------------------------------------------------------
+    [ok]  ⓵ `cr` k_max via KFAC: at least one input DOES move, so the axis is a real question   3 of 3 moved an input
+    [ok]  ⓵ `cr` the mode count NK: every input digests IDENTICALLY to base -- it cannot move A_l   2 refinement(s), 0 moved an input
+    [ok]  ⓵ `cr` the eta resolution NLOS: at least one input DOES move, so the axis is a real question   2 of 2 moved an input
+    [ok]  ⓵ `cr` the eta half-width NLOSW: at least one input DOES move, so the axis is a real question   2 of 2 moved an input
+    [ok]  ⓵ `cr` the eta split NLOSF: at least one input DOES move, so the axis is a real question   1 of 1 moved an input
+    [ok]  ⓵ `cr` the reported ell grid LSTEP: every input digests IDENTICALLY to base -- it cannot move A_l   1 refinement(s), 0 moved an input
+    [ok]  ⓵ `lcdm` k_max via KFAC: at least one input DOES move, so the axis is a real question   3 of 3 moved an input
+    [ok]  ⓵ `lcdm` the mode count NK: at least one input DOES move, so the axis is a real question   2 of 2 moved an input
+    [ok]  ⓵ `lcdm` the eta resolution NLOS: at least one input DOES move, so the axis is a real question   2 of 2 moved an input
+    [ok]  ⓵ `lcdm` the eta half-width NLOSW: at least one input DOES move, so the axis is a real question   2 of 2 moved an input
+    [ok]  ⓵ `lcdm` the eta split NLOSF: at least one input DOES move, so the axis is a real question   1 of 1 moved an input
+    [ok]  ⓵ `lcdm` the reported ell grid LSTEP: every input digests IDENTICALLY to base -- it cannot move A_l   1 refinement(s), 0 moved an input
+
+  ⓶ NK ON THE ARM AT THE SPECTRUM, NOT ONLY AT THE GRID -- AND THE CONTROL THAT MOVES
+  --------------------------------------------------------------------------------------------------
+    [ok]  ⓶ arm `nk15` against arm `base`: max|Dl| is EXACTLY zero and the ell list is identical   max|Dl| = 0.000e+00
+    [ok]  ⓶ arm `nk20` against arm `base`: max|Dl| is EXACTLY zero and the ell list is identical   max|Dl| = 0.000e+00
+    [ok]  ⓶ and on the CONTROL the same two settings give DIFFERENT spectra -- the test is not vacuous   control max|Dl(nk15) - Dl(nk20)| = 1.7061e-01
+
+  ⓷ A_l RE-DERIVED FROM THE BANKED BACKGROUND -- THE BANK'S OWN NUMBERS ARE NOT TRUSTED
+  --------------------------------------------------------------------------------------------------
+  *Four configurations carry their full background, so A_l is recomputed from vis, x0, k and dk
+  rather than read.  The KFAC axis is walked end to end this way on both arms.*
+    [ok]  ⓷ `cr` `base`: A_l recomputed from the background reproduces the bank at 8 multipoles   max|recomputed - banked| = 0.00e+00
+    [ok]  ⓷ `cr` `kfac40`: A_l recomputed from the background reproduces the bank at 8 multipoles   max|recomputed - banked| = 0.00e+00
+    [ok]  ⓷ `lcdm` `base`: A_l recomputed from the background reproduces the bank at 8 multipoles   max|recomputed - banked| = 0.00e+00
+    [ok]  ⓷ `lcdm` `kfac40`: A_l recomputed from the background reproduces the bank at 8 multipoles   max|recomputed - banked| = 0.00e+00
+
+  ⓸ WHAT THE ACCEPTANCE DOES ON EVERY AXIS THAT CAN MOVE IT -- WORST SINGLE MULTIPOLE
+  --------------------------------------------------------------------------------------------------
+  *Against r6911's 0.6 per cent floor, measured on a KNOWN injected contrast.  The
+  worst single multipole is printed, not the mean over the range: a mean can hide a moving tail.*
+    [ok]  ⓸ `cr` k_max via KFAC: worst single multipole 0.00001% is inside the floor   44014x inside
+    [--]    `cr` the mode count NK: ⛔ INERT BY CONSTRUCTION -- not read as a sequence
+    [ok]  ⓸ `cr` the eta resolution NLOS: worst single multipole 0.00079% is inside the floor   762x inside
+    [ok]  ⓸ `cr` the eta half-width NLOSW: worst single multipole 0.00084% is inside the floor   718x inside
+    [ok]  ⓸ `cr` the eta split NLOSF: worst single multipole 0.00467% is inside the floor  ⌗ TWO POINTS ONLY -- inside the floor but a two-point axis cannot turn over   129x inside
+    [--]    `cr` the reported ell grid LSTEP: ⛔ INERT BY CONSTRUCTION -- not read as a sequence
+    [ok]  ⓸ `lcdm` k_max via KFAC: worst single multipole 0.00007% is inside the floor   8343x inside
+    [ok]  ⓸ `lcdm` the mode count NK: worst single multipole 0.00000% is inside the floor   3083418x inside
+    [ok]  ⓸ `lcdm` the eta resolution NLOS: worst single multipole 0.00137% is inside the floor   437x inside
+    [ok]  ⓸ `lcdm` the eta half-width NLOSW: worst single multipole 0.00147% is inside the floor   409x inside
+    [ok]  ⓸ `lcdm` the eta split NLOSF: worst single multipole 0.00817% is inside the floor  ⌗ TWO POINTS ONLY -- inside the floor but a two-point axis cannot turn over   73x inside
+    [--]    `lcdm` the reported ell grid LSTEP: ⛔ INERT BY CONSTRUCTION -- not read as a sequence
+    [ok]  ⓸ and the LARGEST excursion anywhere among the nine axes that can move it is inside the floor   worst of all nine = 0.00817%, 73x inside
+
+  ⓹ THE ARM-TO-CONTROL ACCEPTANCE RATIO, AT EVERY SETTING, AGAINST AN INDEPENDENT READING
+  --------------------------------------------------------------------------------------------------
+  *This is the quantity the law's prediction rides on.  `r6919` measured the arm's chi-extent
+  narrowing as 12.8 per cent from dr_s/dchi, by a route that never computes an acceptance.*
+      base       control 5.1353  arm 4.4301   arm narrower by 13.73%
+      kfac26     control 5.1355  arm 4.4301   arm narrower by 13.74%
+      kfac32     control 5.1355  arm 4.4301   arm narrower by 13.74%
+      kfac40     control 5.1355  arm 4.4301   arm narrower by 13.74%
+      nk15       control 5.1353  arm 4.4301   arm narrower by 13.73%
+      nk20       control 5.1353  arm 4.4301   arm narrower by 13.73%
+      nlos1120   control 5.1353  arm 4.4301   arm narrower by 13.73%
+      nlos2240   control 5.1353  arm 4.4301   arm narrower by 13.73%
+      nlosw9     control 5.1353  arm 4.4301   arm narrower by 13.73%
+      nlosw12    control 5.1353  arm 4.4301   arm narrower by 13.73%
+      nlosf90    control 5.1360  arm 4.4309   arm narrower by 13.73%
+      lstep4     control 5.1353  arm 4.4301   arm narrower by 13.73%
+    [ok]  ⓹ the narrowing is the SAME at all twelve settings -- it is not an artefact of one grid   spread across twelve settings = 0.0074 percentage points
+    [ok]  ⓹ and it agrees with r6919's independent dr_s/dchi reading of 12.8%   13.73% against 12.8%, 0.93 pp apart
+
+  ⓺ SCOPE, GATED RATHER THAN ASSERTED IN PROSE ALONE
+  --------------------------------------------------------------------------------------------------
+    [ok]  ⓺ the receipt states in its own text that this is NOT the sweep and does not substitute for it
+    [ok]  ⓺ and that an inert axis is not reported as converged
+    [ok]  ⓺ and the pre-registered criteria are carried here unaltered, not loosened after the numbers
+
+  ⓻ WHAT THE MOVE ONTO THE ARM OF RECORD DID -- MEASURED HERE, NOT TAKEN ON REPORT
+  --------------------------------------------------------------------------------------------------
+      keys that moved on the CR side   : 137
+      keys that moved on the CONTROL   : 0  []
+      CR-side keys that did NOT move   : 19  (mode counts and ell lists)
+    [ok]  ⓻ ⛭⛭ 70's REPORT IS CHECKED AND NOT ASSUMED: every key that differs between the namesake banks and the arm-of-record banks this receipt reads is on the CR side, and NOT ONE control key moved -- which is what makes the control's 5.14 in print safe across the repoint   137 CR keys moved, 0 control keys moved
+      the two-route agreement's remaining margin: 0.07 pp of 1.00 pp
+    [ok]  ⓻ THE AGREEMENT'S MARGIN IS PRINTED RATHER THAN ONLY ITS VERDICT: the cross-check against r6919's hardcoded 12.8 per cent passes, and how much room is left is on the record because `R6919_NARROWING` is a NAMESAKE measurement this repoint did not move   0.07 pp left of the 1.00 pp tolerance
+
+====================================================================================================
+GATES: ALL PASS.
+  ⛭ The acceptance does not move on any of the NINE axes that can move it: the largest excursion at
+     any single multipole is inside r6911's floor by two orders of magnitude.  THREE of the twelve
+     axis-arm pairs could not have moved it and are reported inert, never converged.
+  ⛔ AND THIS IS NOT THE SWEEP.  The retention and the peak heights are measured on spectra and are
+     r7041's own question, still running.  A converged acceptance with an unconverged retention
+     would be a finding in itself, which is why the two are reported apart.
