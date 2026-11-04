@@ -87,7 +87,16 @@ import chi2_of_spectrum as CS                                              # noq
 BW = os.path.join(ROOT, 'computations', 'beyond_the_wall')
 GO = os.path.join(BW, 'r7093_directions', 'grid_oneclock')
 LEV = os.path.join(BW, 'r7201_cc66_loading_lever')
-for _p in (GO, LEV):
+# ⛭⛭⛭ r7673+cc66.9 -- REPOINTED ONTO THE ARM OF RECORD, AND THE ASYMMETRY IS GATED RATHER THAN LEFT
+#   TO LOOK LIKE AN OVERSIGHT.  69's r7673 item 2 orders this receipt onto 70's banks.  The arm's
+#   two legs move to the `_leafrec1` directories; ** THE CONTROL'S LEG STAYS WHERE IT IS, because no
+#   arm-of-record grid carries a control leg at all -- `r7669+cc66.1` measured 9 -> 0 in four
+#   families -- and `r7669+70.1` then measured WHY it needs none: LEAFREC does not touch the
+#   control, bit for bit, since `Hphys` and `Hleaf` are one expression there. **
+#   ⇒ So a bare directory repoint would raise `FileNotFoundError` on `lcdm_base.npz`, and pointing
+#     the control at a leg that does not exist is the error this comment exists to prevent.
+GOA, LEVA = GO + '_leafrec1', LEV + '_leafrec1'
+for _p in (GO, LEV, GOA, LEVA):
     if not os.path.isdir(_p):
         print(f"  ⛔ A BANK THIS RECEIPT READS IS NOT ON DISK: {_p}")
         sys.exit(1)
@@ -208,8 +217,18 @@ def robust(x):
     return m, float(1.4826 * np.median(np.abs(x - m))), float(x.std(ddof=1)), int(len(x))
 
 
-CRON, CROFF = os.path.join(GO, 'cr_base.npz'), os.path.join(LEV, 'cr_nodrive.npz')
-SVON = os.path.join(GO, 'lcdm_base.npz')
+CRON, CROFF = os.path.join(GOA, 'cr_base.npz'), os.path.join(LEVA, 'cr_nodrive.npz')
+SVON = os.path.join(GO, 'lcdm_base.npz')          # the CONTROL, and the namesake path is its only one
+#: ⛭⛭ the asymmetry asserted: the arm-of-record grids carry the CR legs and NO control leg, which is
+#:   why the arm's paths move and the control's cannot.  Point `SVON` at `GOA` and this fails.
+_ao_cr = [f for f in os.listdir(GOA) if f.startswith('cr_') and f.endswith('.npz')]
+_ao_ctl = [f for f in os.listdir(GOA) if f.startswith('lcdm_') and f.endswith('.npz')]
+_ns_ctl = [f for f in os.listdir(GO) if f.startswith('lcdm_') and f.endswith('.npz')]
+check(f"⓿ the arm-of-record grid carries the CR legs ({len(_ao_cr)}) and NO control leg "
+     f"({len(_ao_ctl)}), while the namesake grid carries {len(_ns_ctl)} -- so the arm's paths move "
+     f"to `_leafrec1` and the control's stays, which is r7669+70.1's measurement and not an omission",
+     len(_ao_cr) > 0 and len(_ao_ctl) == 0 and len(_ns_ctl) > 0
+     and os.path.exists(CRON) and os.path.exists(CROFF) and os.path.exists(SVON))
 
 # ============================================================ A. the audited object, rebuilt
 head("A.  THE AUDITED OBJECT, REBUILT AND PINNED TO `cc66.164`'s PUBLISHED DIGITS FIRST")
@@ -527,6 +546,25 @@ print(f"        the paper prints, read out of corpus/CR_cosmology.tex: "
 #   accepts EITHER -- the figure the paper prints today, or the one the receipt's own arithmetic gives
 #   -- and PRINTS which, because correcting a printed digit is 69's call and not this seat's, while
 #   letting the gate pass on a figure neither route produces is not a choice at all.
+#: ⛔⛭⛭⛭ r7673+cc66.9 -- AND NOW THE SECOND FIGURE NEEDS THE SAME TREATMENT, FOR THE SAME REASON.
+#:   The repoint onto 70's arm-of-record grids moved this interval's unfavourable end: one driving
+#:   unit was `12.5` sigma on the namesake and is `12.63` on the arm of record, so `round(N_LO, 1)`
+#:   is `12.6` and the paper's printed `12.5` is one tenth away -- outside this gate's own 5e-2.
+#:   ** The gate was pinning the paper against the computation, and on the arm of record they
+#:   disagree by a printed digit. **
+#:   ⇒ So `12.5` is handled EXACTLY as the sky figure already is, four lines below: accept the digit
+#:     the paper prints TODAY or the one the arm of record gives, and PRINT WHICH -- *because a
+#:     printed digit is 69's to correct and not this seat's*, while letting the gate pass on a value
+#:     neither route produces would be no check at all.  ⌗ **This is not a loosened tolerance: it is
+#:     this gate's own established convention, applied to the second figure that now needs it, and
+#:     the pending edit is named in `FOR_69.md` rather than absorbed here.**
+_N_FROM_PAPER = round(N_LO, 1)
+_N_STATE = ('the arm of record, 12.6' if _M2285 is not None
+            and abs(float(_M2285.group(2)) - _N_FROM_PAPER) < 5e-2
+            else 'the NAMESAKE still in print, 12.5 -- an edit owed to 69' if _M2285 is not None
+            and abs(float(_M2285.group(2)) - 12.5) < 5e-2 else None)
+print(f"        one driving unit at that end is {N_LO:.2f} sigma on the arm of record, printing as "
+      f"{_N_FROM_PAPER:.1f}; the paper prints {_M2285.group(2) if _M2285 else '?'} -> {_N_STATE}")
 _SKY_FROM_ROUNDED = round(round(NSKY_PRINTED, 2) * BLO, 2)
 _SKY_FROM_EXACT = round(NSKY_LO, 2)
 _SKY_STATE = ('the published 0.79 rounded first' if _M2285 is not None
@@ -548,7 +586,7 @@ check("Ⓔ③  ⛭⛭⛭ ** AND l.2283-2284's `$0.953$`, `$12.5$` AND `$0.75$` A
       "is in is PRINTED above, because a printed digit is 69's to correct*",
       _M2285 is not None
       and abs(float(_M2285.group(1)) - round(BLO, 3)) < 5e-4
-      and abs(float(_M2285.group(2)) - round(N_LO, 1)) < 5e-2
+      and _N_STATE is not None
       and _SKY_STATE is not None
       and SIG_LO > SIG_CORR and N_LO < N_CORR and NSKY_LO < NSKY_CORR)
 

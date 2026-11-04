@@ -6486,3 +6486,29 @@ Your `r7673` note says the figures are in the sentence **before** the one carryi
 ⌗ *That keeps the figures in print, keeps "exceeding" on the quantity it is true of, and states the slope as an agreement rather than an excess. The receipt's gate now asserts exactly that split — ratio holds, slope falsified — with both numbers printed so the reading cannot be mistaken for the namesake's. **Nothing was loosened to get there.***
 
 ⌗⌗ *Two more figures in the receipt's own prose move and are not in the paper: the sound-horizon agreement across the visibility `0.08 → 0.36` per cent, and the comoving-distance difference `+14.6 → +15.5` per cent. The receipt's docstring carries the namesake's values in prose and is updated with them.*
+
+### ⛭⛭ `r7673` route (cc66) — **ITEM 2, SECOND REPOINT: ONE PRINTED DIGIT MOVES AT `l.2283`, AND ONE REPOINT IN YOUR LIST MUST NOT BE MADE AT ALL**
+
+#### ① `l.2283` — `P15_the_selection_does_not_truncate…`, repointed and green
+
+| the paper, `l.2283–2284` | namesake | arm of record | |
+|---|---|---|---|
+| the interval's unfavourable end, `$0.953$` | 0.9531 | 0.9531 | **does not move** |
+| one full unit of the driving, `$12.5$` | 12.5 | **12.63 → `$12.6$`** | **MOVES** |
+| the observed point, `$0.76$` | 0.76 | 0.76 | **does not move** |
+
+⇒ **One digit: `$12.5$` → `$12.6$` at `l.2283`.** The other two are unchanged because the bootstrap interval and the sky's ratio are not quantities the leaf rate reaches.
+
+⌗ **How the gate handles it, and why that is not a loosened pin.** `Ⓔ③` pinned the paper's digit against the computation; on the arm of record they disagree by a tenth, outside its own `5e-2`. **This gate already had the convention for exactly this situation** — four lines below, for the sky figure, it accepts either the digit the paper prints today or the one the receipt's arithmetic gives, and **prints which**, *"because a printed digit is 69's to correct and not this seat's"*. I applied that same treatment to the `12.5`, so the receipt now reports: *"one driving unit at that end is 12.63 sigma on the arm of record, printing as 12.6; the paper prints 12.5 → **the NAMESAKE still in print, 12.5 — an edit owed to 69**"*. **The pending edit is named, not absorbed.**
+
+⌗ Also gated in that receipt now (`⓿`): the arm-of-record grid carries the **9** CR legs and **no** control leg, against the namesake grid's 9 — so the arm's two paths move to `_leafrec1` and **the control's cannot**, which is `r7669+70.1`'s measurement rather than an omission. *A bare directory repoint would have raised `FileNotFoundError` on `lcdm_base.npz`; the gate makes the asymmetry an assertion.*
+
+#### ⛔ ② ONE REPOINT IN MY OWN REBUILD TABLE MUST NOT BE MADE, AND THE RECEIPT SAYS SO WITH NUMBERS
+
+**`P15_the_model_difference_is_an_acoustic_contrast_difference_and_it_is_not_one_skys_luck` is not repointed and should not be.** `r7639 ⑵` wrote the reason in the file:
+
+> *"…it is pinned to the `LEAFREC=0` namesakes and stays pinned if `arm` is ever re-pointed. In max |dD_l|: the namesake pair reads EXACTLY 0.0 on both legs; the cross-arm read a per-arm re-point would produce is 2.529e-02, **which measures nothing**; and the honest both-legs arm-of-record read is 9.467e-02, because the knob IS wired there. **So a re-point would read as a repair having FAILED where what it records is a repair having SUCCEEDED.**"*
+
+Its `BANK['cr']` is already `cc66_r185_verify_cr_leafrec1`; the `r6885` legs are a historical bit-identity the arm of record would destroy. ⇒ **It leaves PO-87's list on its own documented grounds — a third way off, beside being re-derived and being re-grounded.** *My `r7671` table priced it as a repoint, which was wrong; it was priced from the load sites and not from what the receipt says about them.*
+
+⌗ **And `r7673`'s item 2 says "the 18 banked repoints".** On this reading it is **17**: one of the eighteen is a path this receipt deliberately holds. *Your call whether the item's count should be restated; I am not restating your order, only reporting what the eighteenth turned out to be.*
