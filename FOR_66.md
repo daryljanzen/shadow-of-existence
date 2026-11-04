@@ -32641,3 +32641,23 @@ Item 1 done. `computations/beyond_the_wall/r7669_cc66_reading_the_undecidable/` 
 ⌗ **`⓵` is also a gate against my own last miss:** 47 mentions against 12 loaders, in one receipt's own population. *That ratio is why arm ① of `cc66.0` was falsified — I counted receipts that **mention** `leafrec1`, and mentioning is not loading. It is now asserted rather than remembered.*
 
 **Verified:** `item4_c54178.py` rc=0, **6 of 6**; `NODE=cc66 bash scripts/turn_gates.sh` on this tree — **`ran 123 of 123`, `PASS=123 FAIL=0 UNRUN=0`**.
+
+### ⚑ `r7669+cc66.3` — **ITEM 2 TRIAGE ONLY, EXPLICITLY NOT 53 VERDICTS: the split needs a per-item sentence read and I am not faking it with a regex**
+
+`ITEM2_TRIAGE.md` in the same directory sorts the **53** surviving figure-printing items that need an item-2 verdict, each with the spectra it loads and its citing sentence. **Tree `5e2eb9658`.**
+
+| | items |
+|---|---|
+| control-only namesake read → **the order's item 3**, decidable mechanically | **4** |
+| sentence uses arm-of-record wording (`this arm`, `crossing arm`, `the arm of record`) | **34** |
+| also loads the arm of record, so **the sentence decides** which figure is in print | **17** |
+
+⛔ **AND THE FILE SAYS IN ITS OWN FIRST LINE THAT IT IS A SORTING AID AND NOT A VERDICT.** Your item 2 asks which of RE-GROUND or REBUILD each item is **and why from the sentence** — a judgement about what a sentence *claims*. My discriminator is a **regex over the sentence's words**. ⇒ *That is exactly the cheap signal that has failed five times in three revisions: strings the paper could not contain; a `{base}` match that hits `\rcptlabel`; a filename where the tree keys on a path; a token where the question is what the code loads; and a receipt that **mentions** `leafrec1` rather than loading it.* **I am not going to make it six by presenting 53 regex outcomes as 53 readings.**
+
+⇒ **What the triage does settle:** the **4** control-only reads are item 3's by construction, not item 2's — their namesake read has no arm-of-record counterpart, so there is nothing to rebuild against, and per your order they are not counted until 70 reports.
+
+⇒ **What remains is the genuine work:** **49** items each need their sentence read against what their receipt computes, and routed as RE-GROUND with wording or REBUILD with spectrum paths. *Of those, the 17 that load both arms are the ones where the sentence alone decides and the loads cannot help — and the 4 the classifier still cannot resolve from source need the receipt read first.*
+
+⌗ **One thing worth your ruling before I spend that reading:** the triage's 34 "arm-of-record wording" items are not 34 REBUILDs. A sentence can say *"this arm"* while the figure it prints is a **method** or **instrument** property that no re-derivation would move — and `r7667`'s own `Ⓒ④` convergence says the instrument cannot tell those apart. **If you want the 49 read in a particular order — by paper section, by spectrum, or worst-case-first — say so and I will take them in that order; otherwise I will go in `LIST.md` order and route in batches as they resolve.**
+
+**Verified:** triage regenerated on this tree; `NODE=cc66 bash scripts/turn_gates.sh` — **`ran 123 of 123`, `PASS=123 FAIL=0 UNRUN=0`**.
