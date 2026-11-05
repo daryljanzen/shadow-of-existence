@@ -10,6 +10,27 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ⌗ re r7683: CAMPAIGN 101, THE COLLAPSE EXTERIOR FOR THE RETARDED SLICING, REGISTERED BEFORE ANY LEAN (`r7683+71.1`)
+
+Registered in `r7683_71_campaign101/PREDICTION.md`, at `1200` lines and p `0.45`.
+
+***The cheapest model is a thin ingoing null shell, the step-mass Vaidya analogue.***
+- The past is flat, so there is no white-hole horizon, and `D` is a half-plane in flat null coordinates.
+- The retarded time `u = ũ − 4M log((v₀ − ũ)/4M − 1)` is explicit, and the metric is continuous.
+- Smooth Vaidya would need an ODE for `r`, and Oppenheimer–Snyder would need junction conditions.
+
+***The subtlety.*** `a(u + ηr)` with the true `r` has a kink on the shell, and the kit's temporality needs `C¹`. So the
+slicing is one smooth formula, `a(u + η r_S + η ψ(v))` with `ψ = 0` for `v ≥ v₀`. That is **exactly `a(u + ηr)` on the
+whole vacuum exterior**, continued through the body as P1 l.382 says.
+
+***Registered.***
+- ⓐ The eternal core lemma, for `0 < η ≤ 2`. It shows campaign 99's obstruction is only at the past end. Its expected
+  stop is `η = 2`.
+- ⓑ The shell model, its `D`, and the Cauchy property, transported to the model.
+- ⓒ Stretch: the black-hole side of the model inside `M`.
+
+***Limits.*** This is the radial plane, the flat past is two-dimensional (no regular centre), and the shell is `C⁰`.
+
 ## ✔ re r7681: `ConformalExtension` ON W BUILT; `cd_prop_causal_alignment` RUNS ON SCHWARZSCHILD AS SUCH, WITH 𝓗⁺ = ∂J⁻(𝒥⁺) (`r7681+71.2`)
 
 Campaign 100 came true: ①②③ are all BUILT, in `271` new lines. Details are in `r7681_71_campaign100/RESULT.md`.
