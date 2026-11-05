@@ -1848,6 +1848,13 @@
     "since": "eea6a5613ffe109fdfcc108409f93018649c6fe0",
     "unmeasured": true
    }
+  },
+  "tolerance": {
+   "receipts/P15_CR_cosmology/C59_the_control_reproduces_camb_and_the_height_defect_was_k_truncation.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/42078891747",
+    "since": "c972b9f68a231892be5a4546f7270fa80164d502",
+    "unmeasured": true
+   }
   }
  },
  "claude/youthful-darwin-xvkwh7": {
