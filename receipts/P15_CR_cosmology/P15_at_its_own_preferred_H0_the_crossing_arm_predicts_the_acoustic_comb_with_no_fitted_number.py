@@ -601,6 +601,45 @@ for _nm, _s, _PKL, _A4, _A3, _F4, _P12, _P13 in (
           f"peaks {' '.join(f'{v:.2f}' for v in _s['pk'])}; combs {_s['a4']:.3f}/{_s['a3']:.3f}; "
           f"phi {_s['f4']:.4f}; heights {_s['p12']:.3f}/{_s['p13']:.3f}")
 
+#: ⛭⛭⛭ `r7679+cc66.2` ITEM 5 -- ** l.2790's TWO FIGURES ARE NOW THIS RECEIPT'S, SO THEY ARE PINNED
+#:   HERE. **  `r7679` (69) re-grounded the paper's clause *"the fourth peak sits 1.4 of the sky's own
+#:   locating spreads high, two thirds of that offset shared with the control"* onto this receipt's
+#:   PART 4B, replacing an input (`CR_PK`) that `r7677+cc66.2` showed nothing in the repository
+#:   reproduces.  ⇒ *A clause re-grounded on this receipt is a figure this receipt owes a pin.*
+#:
+#:   Both come out of the table above, so neither is a new measurement:
+#:     the arm's offset from the sky   = 1125.11 - 1121.85 = 3.26 multipoles
+#:     the control's offset            = 1123.99 - 1121.85 = 2.14
+#:     1.4 locating spreads            = 3.26 / 2.36
+#:     two thirds shared               = 2.14 / 3.26
+#:   ⛔ ** AND ONE OF THE TWO DENOMINATORS IS A NEW HARDCODED CONSTANT, WHICH IS DECLARED RATHER THAN
+#:     SLIPPED IN. **  `2.36` is PO-47's locating spread on the sky's fourth peak -- a WORKING-STATE
+#:     figure, not a bank read -- so pinning `1.4` adds a member to the very class `r7677` item 2 was
+#:     about.  *Declared here with what it is and where it comes from, which is the only honest way
+#:     to carry one.*  ⌗ The other denominator, `3.26`, is NOT a constant at all: it is the arm's own
+#:     offset, computed two lines up.  *My arm ⑦ registered "at least one of 2.36 and 3.26 cannot be
+#:     read from a bank" and treated both as constants; only one of them is one.*
+SKY_SPREAD_PO47 = 2.36            # PO-47's locating spread on the sky's fourth peak -- WORKING STATE
+HIGH_IN_PRINT = 1.4               # l.2790: the fourth peak sits this many locating spreads high
+SHARED_IN_PRINT = 0.67            # l.2790: "two thirds of that offset shared with the control"
+_off_arm = float(_MAOR['pk'][3]) - float(_MSKY['pk'][3])
+_off_ctl = float(_MCTL['pk'][3]) - float(_MSKY['pk'][3])
+_high = _off_arm / SKY_SPREAD_PO47
+_share = _off_ctl / _off_arm
+print(f"    l.2790: the arm's fourth peak sits {_off_arm:+.2f} multipoles above the sky and the "
+      f"control's {_off_ctl:+.2f}, so {_high:.2f} locating spreads high with {_share:.2f} of it "
+      f"shared -- against the printed {HIGH_IN_PRINT} and two thirds")
+check("⛭⛭ ** ITEM 5: l.2790's `1.4` AND ITS `TWO THIRDS` ARE PINNED WHERE THEY ARE NOW COMPUTED. ** "
+      "*69 re-grounded that clause onto this receipt's PART 4B, replacing `CR_PK`, an input nothing "
+      "in the repository reproduces.  Both figures come out of the table above -- the arm's offset "
+      "from the sky over PO-47's locating spread, and the control's share of that offset -- so each "
+      "is held to half its own last place against a value this receipt measures.*  ⛔ *`2.36` is a "
+      "NEW hardcoded constant, PO-47's working-state spread rather than a bank read, and it is "
+      "declared as one: pinning this figure adds a member to the class `r7677` item 2 was about*",
+      abs(_high - HIGH_IN_PRINT) < 5e-2 and abs(_share - SHARED_IN_PRINT) < 5e-2,
+      f"{_high:.3f} against {HIGH_IN_PRINT}; {_share:.3f} against {SHARED_IN_PRINT} "
+      f"(offsets {_off_arm:+.2f} / {_off_ctl:+.2f} multipoles)")
+
 #: ⛭⛭⛭ r7655 ITEM 6 -- ** THE LITERAL TWIN, AND WHY IT IS NEEDED RATHER THAN BEING DUPLICATION. **
 #:   The loop above ALREADY holds l.882's pair to 5e-4 -- but it holds it through `_P12`/`_P13`, names
 #:   bound from the tabled tuple, and `check_figures_pinned`'s `pins()` collects constants only inside
