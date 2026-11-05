@@ -10,6 +10,20 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ⌗ re r7681: CAMPAIGN 100, A `ConformalExtension` ON W, REGISTERED BEFORE ANY LEAN (`r7681+71.1`)
+
+Registered in `r7681_71_campaign100/PREDICTION.md`, at `400` lines and p `0.75`. Every needed piece is already in
+campaign 99's probe, apart from `cd_prop_causal_alignment`, which is copied in.
+
+- **① The extension.** `ι = (arctan U, arctan V)` maps `W` into flat `(u, v)`, with `Ω² = 1/(F(1+U²)(1+V²))`. The
+  expected stop is `Dι` on the `Opens` subtype.
+- **② `𝒥⁺`.** `𝒥⁺ = {v = π/2, −π/2 < u < 0}`, which is Schwarzschild's own future null infinity: `V → ∞` at `U < 0`
+  sends `r → ∞`. `ι⁻¹ Ĩ⁻(𝒥⁺)` is region I.
+- **③ The headline.** `cd_prop_causal_alignment` is instantiated, with `S.H J = ∂J⁻(𝒥⁺)`, pulled back
+  `= {U = 0, V > 0}`.
+- **Limits.** This is the radial plane only, since in four dimensions the sphere factor at `𝒥⁺` is not in the kit. The
+  target is flat `ℝ²`, not Penrose's compactification.
+
 ## ✔ re r7679: ④′ REFUTED ON ETERNAL SCHWARZSCHILD, MACHINE-CHECKED; THE η BOUND IS SHARP; THE FUTURE HALF HOLDS FOR EVERY η (`r7679+71.2`)
 
 Campaign 99 came true, apart from the stretch. There are `550` new lines; details are in
