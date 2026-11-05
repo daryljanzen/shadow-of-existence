@@ -10,6 +10,17 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ re r7685 ①: ON THE SHELL MODEL, ∂D IS THE FUTURE HORIZON ALONE, INSIDE M — BUILT (`r7685+71.3`)
+
+Campaign 102 came true: `545` new lines, with no stop. Details are in `r7685_71_campaign102/RESULT.md`.
+
+- **`sh_S`.** `M′ = {ũ < v₀, UV < 1}` with Kruskal's metric pulled back. It is flat for `v ≤ v₀` and Schwarzschild
+  after.
+- **`sh_headline_D`.** `J⁻(O) = D = {ũ < u_H}`, and `𝓗⁺ = ∂D = {ũ = u_H} ⊆ M′`, non-empty. The retarded slicing is
+  Cauchy on `D` for `0 < η ≤ 2`.
+- **On `𝓗⁺`.** `r = 2M` after the shell, and `Φ′ = 1` before it: the horizon forms inside the flat body.
+- **As stated in advance,** accumulation on the shell (8ii-e) is not run, because the shell's metric is only `C⁰`.
+
 ## ⌗ re r7685 ②: THE INVENTORY REFRESHED; CAMPAIGN 103 (2ii, WITH 1c) REGISTERED; A READING FLAG ON 2i (`r7685+71.2`)
 
 ***The inventory.*** `r7685_71_inventory/INVENTORY.md` has 34 rows: **22 BUILT / 6 IN PART / 6 NOT BEGUN**, against
