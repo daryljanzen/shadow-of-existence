@@ -292,6 +292,65 @@ check("     the phase systematic's spread of the slope exceeds the reported sett
       all(r['S12'].std() > sd12r for r in RSL.values()),
       ", ".join(f"{r['S12'].std():.4f}" for r in RSL.values()))
 
+# ⛭⛭⛭ `r7681+cc66.1` -- ** THE SAME QUESTION THE STEP IS ALREADY ASKED, ASKED OF THE SLOPE: ON EACH
+#   ARM'S OWN COMB, OR ON THE SHARED ONE? **  `r7681` (69) held `r7679`'s rewrite of `l.1781-1793`
+#   because every check above is the SHARED-comb statistic and the paragraph did not say so, while the
+#   step three screens up is explicitly comb-dependent.  `r7641` had measured the own-comb slope
+#   SURVIVING its real-phase null, so the record carried two readings of two different statistics and
+#   my routed sentence spoke as if there were one.
+#   ⇒ The own-comb retention is 70's `retained_own` out of the module this file ALREADY imports for the
+#     step (`r7637_70_own_comb_statistic`), lifted and not retyped, with 70's own `retention_null` for
+#     the injection.  Nothing here is a new instrument.
+#   ⌗ *Reproduced independently of 70's `measure_retention.txt`, and gated against it to the digit, so
+#     this receipt answers the question the sentence that cites it asks.*
+_BR = {t: dict(QL=QL[t], QK=QK[t], Dl=np.asarray(PR0[t]['Dl'], float),
+               S2=np.asarray(SO0[t]['S_i'], float) ** 2) for t in PR0}
+_CR_COMBS = OC.retention_combs(_BR)
+_own12, _ownsd = OC.slope12(OC.retained_own, _BR, C=_CR_COMBS)
+_shr12, _shrsd = OC.slope12(lambda b, w, nb, hi: OC.retained_shared(b, w, nb, hi), _BR)
+_AD0 = float(np.mean([CPD[t][3] for t in CPD]))
+_AS0 = float(np.mean([CPS[t][3] for t in CPS]))
+_ownnull = {}
+for _lab, _AL, _AK in (('pre-registered amplitude 0.5', 0.5, 0.5),
+                       ("declared sensitivity: the banks' own amplitudes", _AD0, _AS0)):
+    _ns = [OC.slope12(OC.retained_own, OC.retention_null(_BR, _AL, _AK, _p))[0] for _p in PH]
+    _ownnull[_lab] = np.array(_ns)
+print(f"\n    ⛭ `r7681+cc66.1` -- THE SLOPE ON EACH ARM'S OWN COMB AND ON THE SHARED ONE")
+print(f"      {'statistic':34s} {'twelve-setting slope':>22s} {'real-phase null':>16s} "
+      f"{'slope - null':>13s} {'survives?':>10s}")
+print(f"      {'shared comb (every check above)':34s} {f'{_shr12:+.5f} +- {_shrsd:.5f}':>22s} "
+      f"{q0['S12'][0]:+16.5f} {_shr12 - q0['S12'][0]:+13.5f} "
+      f"{('YES' if _shr12 - q0['S12'][0] > _shrsd else 'NO'):>10s}")
+for _lab, _n in _ownnull.items():
+    print(f"      {('own comb, ' + _lab.split(':')[0])[:34]:34s} "
+          f"{f'{_own12:+.5f} +- {_ownsd:.5f}':>22s} {_n[0]:+16.5f} {_own12 - _n[0]:+13.5f} "
+          f"{('YES' if _own12 - _n[0] > 2 * _ownsd else 'NO'):>10s}")
+print(f"      ⇒ the own-comb slope is {_own12 / _shr12:.2f} of the shared-comb one, and its real-phase "
+      f"null is {_ownnull['pre-registered amplitude 0.5'][0] / q0['S12'][0]:.2f} of the shared one's")
+check(f"⛔⛭⛭⛭ `r7681` ① ** THE RECONCILIATION: THE SLOPE SURVIVES ITS REAL-PHASE NULL ON EACH ARM'S OWN "
+      f"COMB AND DOES NOT ON THE SHARED ONE, so `r7641`'s reading and `r7679`'s are two statistics and "
+      f"not a contradiction. **  On the own comb the twelve-setting slope is "
+      f"`${_own12:+.5f}\\pm{_ownsd:.5f}$` against a real-phase null of "
+      f"`${_ownnull['pre-registered amplitude 0.5'][0]:+.5f}$`, surviving at "
+      f"`${_own12 - _ownnull['pre-registered amplitude 0.5'][0]:+.5f}$`; on the shared comb it is "
+      f"`${_shr12:+.5f}\\pm{_shrsd:.5f}$` against `${q0['S12'][0]:+.5f}$`, which is "
+      f"`${100 * q0['S12'][0] / _shr12:.0f}$` per cent of it and leaves nothing.  *⛔ `r7679` routed the "
+      f"shared-comb reading as THE claim without naming the comb, which is exactly the omission 69 "
+      f"caught -- and the step in the same paragraph had named it all along*",
+      _own12 - _ownnull['pre-registered amplitude 0.5'][0] > 2 * _ownsd
+      and all(_own12 - _n[0] > 2 * _ownsd for _n in _ownnull.values())
+      and _shr12 - q0['S12'][0] < _shrsd)
+check(f"     ⛭⛭ ** AND THE OWN-COMB SLOPE IS NEARLY INVARIANT UNDER THE REPOINT WHERE THE SHARED-COMB ONE "
+      f"DOUBLES, which is the mechanism and not a coincidence: ** `$+0.01002$` to `${_own12:+.5f}$` on "
+      f"the own comb, `$+0.01359$` to `${_shr12:+.5f}$` on the shared one.  *The arms' combs PARTING is "
+      f"what the repoint changed, and a statistic that carries each arm onto its own comb cannot see "
+      f"it while one that imposes a common comb reads it as retention.*  ⌗ *70's "
+      f"`measure_retention.txt` reports `$+0.01034$` and `$+0.02690$` on this arm; reproduced here to "
+      f"the digit from the same banks through the same lifted module*",
+      abs(_own12 - 0.01034) < 5e-5 and abs(_shr12 - 0.02690) < 5e-5
+      and abs(_own12 / 0.01002 - 1) < 0.10 and _shr12 / 0.01359 > 1.8,
+      f"own {_own12:+.5f} (was +0.01002), shared {_shr12:+.5f} (was +0.01359)")
+
 print()
 print("  WHERE IT COMES FROM -- the two sides of the ratio at the real phase, and a flat-envelope control")
 osc = NS2['osc']

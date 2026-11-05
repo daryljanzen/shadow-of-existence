@@ -351,6 +351,44 @@ A = {}
 for bg in (CTL, ADJ):
     e, r = armA(*bg)
     A[bg] = {int(l): float(r[i]) for i, l in enumerate(e)}
+# ⛭⛭⛭ `r7681+cc66.2` -- ** ARM A AT THE REFIT LICENSED POINT, FOR ℓ = 2 THROUGH 8, BECAUSE THE
+#   PAPER PRINTS SEVEN DEPTHS AND THE REFIT POINT WAS ONLY EVER MEASURED FOR FOUR. **  `r7681` (69)
+#   item 6 orders the low-ℓ draft completed corpus-wide, "with ℓ = 6-8 at the refit licensed point
+#   from 70".  70's `r7675_70_split_clock/RESULT.md` reports that point's depths at `ℓ = 2`-`5` only
+#   (`0.4920 / 0.4434 / 0.3601 / 0.6627`); `l.2809-2810` prints `ℓ = 2` through `8`.
+#   ⇒ So the third background goes in here, where `armA` already takes the point as arguments, and
+#     the four 70 reports are GATED against it: a figure the paper prints at seven multipoles is
+#     measured at seven, not at four with three carried over from another background.
+#   ⌗ *The refit licensed point is the arm-of-record sweep's own manifest -- `H0 68.57073,
+#     Om 0.291246, WBH2 0.021643` -- read off that bank at `r7677+cc66.3` and not chosen here.*
+REFIT, REFIT_WB = (68.57073, 0.291246), 0.021643
+_er, _rr = armA(*REFIT, ombh2=REFIT_WB)
+A[REFIT] = {int(l): float(_rr[i]) for i, l in enumerate(_er)}
+R0[REFIT] = r0_of(*REFIT)
+_SEVEN = tuple(range(2, 9))
+print(f"\n  ⛭ `r7681+cc66.2` -- ARM A AT THE THREE BACKGROUNDS, ℓ = 2 THROUGH 8")
+print(f"      {'background':34s} " + " ".join(f"{'l=' + str(_l):>9s}" for _l in _SEVEN))
+for _bg, _nm in ((CTL, 'control (67.40, 0.3150)'),
+                 (ADJ, 'adjudicated (68.60, 0.2973) -- IN PRINT'),
+                 (REFIT, 'REFIT LICENSED (68.57073, 0.291246)')):
+    print(f"      {_nm:34s} " + " ".join(f"{A[_bg][_l]:9.4f}" for _l in _SEVEN))
+print(f"      {'move, adjudicated -> refit (%)':34s} "
+      + " ".join(f"{100 * (A[REFIT][_l] / A[ADJ][_l] - 1):+9.2f}" for _l in _SEVEN))
+print(f"      r_0: control {R0[CTL]:.2f}, adjudicated {R0[ADJ]:.2f}, refit {R0[REFIT]:.2f} Mpc")
+check("⛭⛭ `r7681` ⑥ ** THE REFIT LICENSED POINT'S DEPTHS ARE MEASURED AT ALL SEVEN MULTIPOLES THE "
+      "PAPER PRINTS, AND THE FOUR 70 REPORTS COME BACK TO THE DIGIT. **  *`l.2809-2810` prints seven "
+      "and 70's `r7675+70.1` measured four, so three of the seven would otherwise have been carried "
+      "over from the adjudicated background -- which is the `r7677+cc66.3` defect in a new place: a "
+      "figure formed across two backgrounds is a point difference as much as an arm one*",
+      all(abs(A[REFIT][_l] - _v) < 5e-4 for _l, _v in
+          zip((2, 3, 4, 5), (0.4920, 0.4434, 0.3601, 0.6627))),
+      " / ".join(f"{A[REFIT][_l]:.4f}" for _l in (2, 3, 4, 5)))
+check("     ⛭⛭ ** AND THE THREE AT `$\\ell=6$`-`$8$` MOVE LEAST, WHICH IS WHAT A NEARLY RECOVERED "
+      "DEFICIT HAS LEFT TO MOVE: ** the deepest multipoles shift by whole per cents and the shallowest "
+      "by fractions of one.  *Registered at `r7681+cc66.0` arm ⑥ as under one per cent each and "
+      "scored here*",
+      all(abs(A[REFIT][_l] / A[ADJ][_l] - 1) < 0.01 for _l in (6, 7, 8)),
+      ", ".join(f"l={_l} {100 * (A[REFIT][_l] / A[ADJ][_l] - 1):+.2f}%" for _l in _SEVEN))
 #: ⛔⛔ r7159+cc66.117: THIS CHECK HAD THE PAPER ON THE WRONG BACKGROUND, and it passed for
 #: thousands of revisions because `to 1%` is loose enough to hold a stale attribution in place --
 #: the same shape as `P03`'s `>= 3` sitting under "its three uses" at eleven.

@@ -477,6 +477,62 @@ for lab, s in (('stale 1.395e4/5051', S_STALE), ("the arm's own", S_LIVE)):
     d = [dist(L, s) for L in range(1, 9)]
     print(f"      {lab:20s} stretch {s:.6f}   ell_2 = {d[1][0]:.4f}   L=3 mode = {d[2][1]}   "
           f"displacement {min(x - m for x, m, _ in d):.4f} .. {max(x - m for x, m, _ in d):.4f}")
+# ⛭⛭⛭ `r7681+cc66.2` -- ** THE STRETCH AND `$\ell_2$` AT THE REFIT LICENSED POINT, WHICH IS A THIRD
+#   BACKGROUND AND WAS NEVER MEASURED HERE. **  `r7681` (69) item 6 orders the low-ℓ block completed
+#   corpus-wide and says in terms: *"The stretch `2.774` and `ℓ₂ ≈ 7.8` sit on another background.
+#   Measure `D_C/r_0` and `ℓ₂` at that point through the stretch receipt."*  At `r7679+cc66` I FLAGGED
+#   this rather than guessing it, and this is the measurement that flag was owed.
+#   ⌗ *It costs nothing, because this file has already established the thing that makes it cheap: the
+#     stretch is EXACTLY a function of `$\Omega_m$` alone, `$r_0$` and `$D_C$` both scaling as
+#     `$c/H_0$`.  So the refit point enters through its `$\Omega_m$` and its `$H_0$` cannot matter --
+#     which is asserted two screens up on a 15 km/s/Mpc span, not assumed here.*
+REFIT_H0, REFIT_OM = 68.57073, 0.291246           # the arm-of-record sweep's own manifest
+_r0_rf, _dc_rf = arm_bg(REFIT_H0, REFIT_OM)
+S_REFIT = _dc_rf / _r0_rf
+print(f"\n      ⛭ `r7681+cc66.2` -- THE THREE BACKGROUNDS' STRETCH AND FLOOR")
+print(f"      {'background':40s} {'Omega_m':>9s} {'r_0 (Mpc)':>11s} {'D_C (Mpc)':>11s} "
+      f"{'stretch':>9s} {'ell_2':>8s}")
+for _nm, _h0, _om in (('adjudicated (68.60, 0.2973) -- IN PRINT', 68.60, 0.2973),
+                      ('REFIT LICENSED (68.57073, 0.291246)', REFIT_H0, REFIT_OM),
+                      ('control (67.40, 0.3150)', 67.40, 0.3150)):
+    _r0x, _dcx = arm_bg(_h0, _om)
+    print(f"      {_nm:40s} {_om:9.6f} {_r0x:11.2f} {_dcx:11.2f} {_dcx / _r0x:9.6f} "
+          f"{dist(2, _dcx / _r0x)[0]:8.4f}")
+print(f"      ⇒ the refit point moves the stretch by "
+      f"{100 * (S_REFIT / S_LIVE - 1):+.3f} per cent and `ell_2` by "
+      f"{dist(2, S_REFIT)[0] - dist(2, S_LIVE)[0]:+.4f} multipoles")
+# ⛔⛭⛭ `r7681+cc66.2` -- ** THIS GATE OVER-ASSERTED TWICE, AND BOTH OVER-ASSERTIONS ARE RECORDED
+#   RATHER THAN QUIETLY DROPPED, BECAUSE WHAT THEY FOUND IS THE ITEM'S REAL ANSWER. **
+#   ⛔ FIRST I required `round(stretch, 3) == 2.774` on top of the arm I had registered; it went red
+#     at `$2.781645$`.  ⛔ THEN I wrote that the floor "does not move at all" and that `$\ell_2$`
+#     "still prints every figure the paper gives it"; it went red too, because `$7.8677$` rounds to
+#     `$7.9$`.
+#   ⇒ ** MEASURED: BOTH of `l.2566`'s geometric figures move on the arm of record -- the stretch
+#     `$2.774 \to 2.782$` and the floor `$7.8 \to 7.9$` -- while NEITHER quantity moves by even a third
+#     of one per cent (`$+0.285$` and `$+0.287$`). **  `r7681+cc66.0` arm ⑦ registered exactly that
+#     size of move, `under one per cent` and `within half a multipole`, and it holds on both; what it
+#     did not register, and what my `r7679` draft had FLAGGED as the part that might need no new
+#     digit, is that a sub-per-cent move still crosses a printed rounding boundary -- twice.
+#   ⌗ *So the lesson is the narrow one and it is worth having: the size of a move and whether it
+#     moves a PRINTED figure are two different questions, and a gate that conflates them asserts the
+#     one its author happened to hope for.  The gate below asserts the sizes, which are the arm, and
+#     the two digit crossings, which are the route.*
+check(f"⛭⛭ `r7681` ⑦ ** AT THE REFIT LICENSED POINT BOTH OF `l.2566`'s GEOMETRIC FIGURES MOVE IN "
+      f"THEIR PRINTED DIGIT, AND NEITHER QUANTITY MOVES BY A THIRD OF ONE PER CENT: ** at "
+      f"`$\\Omega_m={REFIT_OM}$` the stretch is `${S_REFIT:.6f}$` against the printed `$2.774$`, "
+      f"`${100 * abs(S_REFIT / S_LIVE - 1):.3f}$` per cent away but printing `${S_REFIT:.3f}$`; and "
+      f"`$\\ell_2$` goes `${dist(2, S_LIVE)[0]:.4f}$` to `${dist(2, S_REFIT)[0]:.4f}$`, "
+      f"`${100 * abs(dist(2, S_REFIT)[0] / dist(2, S_LIVE)[0] - 1):.3f}$` per cent away but printing "
+      f"`${dist(2, S_REFIT)[0]:.1f}$` against the paper's `$7.8$`.  *⛔ My `r7679` draft flagged this "
+      f"geometry as unmeasured rather than guessing it, and said it was the part that might need no "
+      f"new digit.  Measured, it needs TWO.*  ⌗ *The arm registered the SIZES and they hold; the "
+      f"clauses that went red were my own additions asserting the printed digits would hold, which is "
+      f"a different question and the one being routed*",
+      abs(S_REFIT / S_LIVE - 1) < 0.01
+      and abs(dist(2, S_REFIT)[0] - dist(2, S_LIVE)[0]) < 0.5
+      and round(S_REFIT, 3) != round(S_LIVE, 3)
+      and round(dist(2, S_REFIT)[0], 1) != round(dist(2, S_LIVE)[0], 1))
+
 e_stale = [dist(L, S_STALE)[0] - dist(L, S_STALE)[1] for L in range(1, 9)]
 e_live = [dist(L, S_LIVE)[0] - dist(L, S_LIVE)[1] for L in range(1, 9)]
 

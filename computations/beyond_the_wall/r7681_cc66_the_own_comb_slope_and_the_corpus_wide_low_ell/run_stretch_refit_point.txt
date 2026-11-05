@@ -1,0 +1,201 @@
+
+RECEIPT -- P15 / `sec:largescale`, `sec:intro`: ** THE BACKGROUND RETURNS $1.4011\times10^{4}$ Mpc
+AT THIS ARM'S OWN PARAMETERS, SO $2.774$ IS THE CONSTRUCTION'S STRETCH -- AND `sec:largescale`'s
+`1.395e4 / 2.76` IS A WHOLE CONFIGURATION AND NOT AN ARITHMETIC SLIP, THOUGH THE FIGURES NAME TWO
+CANDIDATES AND DO NOT SEPARATE THEM. **
+
+*** AND THE REASON IT SURVIVED: THE STRETCH IS A FUNCTION OF $\Omega_m$ ALONE, AND $r_0$ -- THE ONE
+NUMBER THE SENTENCE CALLS FIXED PARAMETER-FREE -- IS $5051$ IN EVERY CANDIDATE. ***
+
+`sec:largescale` prints `$D_C\approx1.395\times10^{4}$~Mpc`, `$r_0\approx5051$~Mpc` and
+`the stretch $D_C/r_0\approx2.76$`.  `sec:intro` prints `the stretch $2.774$` twice and
+`$D_C=1.4011\times10^{4}$` once.  *Both triples are internally consistent; they are not the same
+configuration.*
+
+** WHAT THE INSTRUMENT RETURNS, RUN RATHER THAN DIVIDED. **  `ACOUSTIC_two_arm` is imported at four
+configurations and its own module-level `D_M` read off:
+
+      ARM=cr   CRH0=68.60 CROM=0.2973   D_M = 14011.4567    r_0 = 5051.49    stretch 2.773728
+      ARM=cr   (instrument default)      D_M = 13004.5552    r_0 = 4708.97    stretch 2.761656
+      ARM=lcdm (control default)         D_M = 13864.6627    -- the control's rate
+      ARM=lcdm LH0=68.60 LOM=0.2973      D_M = 13941.6290    -- the control's rate, refitted
+
+*The refit pair $(68.60,\,0.2973)$ is the background `P15` fits and the one `sec:refit-bound` reports
+on.*  ⇒ ** So the background returns the LARGER value, and `$2.774$` is the construction's stretch. **
+*No configuration of THIS ARM above returns a $D_C$ that prints `1.395e4`.*
+
+** AND IT IS NOT AN ARITHMETIC SLIP: `sec:largescale`'s TRIO IS ONE SELF-CONSISTENT CONFIGURATION. **
+The stretch is EXACTLY a function of $\Omega_m$ -- $r_0$ and $D_C$ both scale as $c/H_0$, so $H_0$
+cancels, measured identical to $10^{-12}$ across $H_0 = 65, 68.6, 73, 80$.  *The $\Omega_m$ window
+that prints `2.76` is $[0.30402,\,0.31176]$: it CONTAINS the arm's pre-refit default $0.3066$, and
+EXCLUDES both the refit's $0.2973$ and the control's $0.3150$.*  ⌈ *At $\Omega_m=0.3066$ with $H_0$
+set so that $r_0 = 5051$ -- the paper's own $r_0$ -- the integral returns $13949.1$, which prints
+`1.395e4` to the paper's own four figures.*
+
+⛔⛔ ** AND THE STALE VALUE'S PROVENANCE IS NOT UNIQUE -- TWO CONFIGURATIONS PRINT IT, AND THE
+FIGURES DO NOT SEPARATE THEM. **  *The arm at a pre-refit $\Omega_m$ returns $13949.1$; the CONTROL
+at its own 185-bin refit minimum (`LH0=67.410309 LOM=0.309826`) returns $13954.3535$, and $27$
+banked spectra carry it.*  **$5.2$ Mpc apart -- below the paper's own printed precision -- and both
+give `2.76` against the arm's `5051`.**  ⇒ *So this receipt does not pick: the order's question is
+answered the same either way, and it says instead that the second reading is the worse one, because
+under it the printed stretch is THIS arm's $r_0$ over the CONTROL's distance -- one arm's discrete
+source projected through the other arm's comoving distance.*
+
+⛔ ** WHY NO GATE SAW IT, AND THIS IS THE PART A DIVISION CANNOT REACH. **  $r_0 = 5051$ is reachable
+at BOTH $\Omega_m$ -- $H_0 = 68.6066$ at $0.2973$ and $H_0 = 68.0568$ at $0.3066$ -- so *the number
+the sentence calls `fixed parameter-free` cannot discriminate the two configurations.  Only the
+stretch can.*  ⇒ ** And FOUR receipts assert the computed value against the paper's printed literal
+with tolerances of $\pm100$ Mpc and $\pm0.03$, which are $1.63\times$ and $2.19\times$ the
+discrepancy they would have to catch ($61.5$ Mpc and $0.0137$).  Every one of them is green --- and
+two more take the printed pair as their own INPUT, which is a different class and is counted
+separately. **
+*One of them prints `$1.401\times10^{4}$` and `$1.395\times10^{4}$` side by side in its own verdict
+prose and calls them `four of the paper's parameter-free figures`.*
+
+### ⌗ WHAT THE REPAIR COSTS, MEASURED AND NOT ASSUMED
+
+- `$\ell_2$` goes $7.8111 \to 7.8453$: **both print the paper's `7.8`.**
+- The third degree's modal multipole is `9` at both printed stretches and flips to `8` only below
+  $2.741706$ -- so it is **not** at risk between them, with $0.032$ of margin at the construction's
+  value.
+- ⛔ *The repair carried a consequence in print and a receipt that had to move with it*: the
+  displacement range becomes $1.7426$ to $3.0158$, crossing the ceiling the other configuration's
+  range sat under, and `r7164`'s gate Ⓑ⑤ brackets that range.  ⛭ **Both moved in the same pass at
+  `r7179`**, and this receipt now reads that bracket OUT OF `r7164`'s source rather than quoting
+  it, so the two cannot part again without one of them saying so.
+
+Built r7177+cc66.142 (node 66, code seat), answering the chat seat's `r7177` order -- *"establish
+which $D_C$ this cosmology's background actually returns, and therefore which stretch is the
+construction's ... not the division"* -- by running the instrument's own background rather than
+dividing the paper's own numbers.
+
+===================================================================================================
+** WHAT IS READ RATHER THAN TYPED **
+===================================================================================================
+
+  ** THE PAPER'S SIX FIGURES ARE CAPTURED FROM THEIR OWN SENTENCES. **  Both triples are located in
+  `corpus/CR_cosmology.tex` before anything is computed, so a drifted wording REFUSES rather than
+  being replaced by this file's memory of it.
+
+  ** AND $D_C$ IS THE INSTRUMENT'S OWN. **  `computations/beyond_the_wall/ACOUSTIC_two_arm.py` is
+  imported at each configuration and its module-level `D_M` is read -- the same object the transfer
+  is carried on and the same one the banked spectra record -- never re-implemented here.  `r_0` is
+  the Nariai amplitude $2^{1/3}/\sqrt\Lambda$ formed from the instrument's own `alpha` and `x_0`.
+
+  ** AND THE BANKS ARE COUNTED, NOT REMEMBERED. **  Every `.npz` in the three banks is opened and
+  its stored `D_M` and `arm` read.
+
+** PARAMETERS. **  $(H_0,\Omega_m) = (68.60, 0.2973)$, the refit background `P15` fits, and
+$(73.00, 0.3066)$ / $(67.40, 0.3150)$, the instrument's own two defaults -- all four labelled with
+which.  $z_{\rm rec} = 1089.9$ is the instrument's.  *Nothing is fitted here.*
+
+** COMPUTES: which of the two printed comoving distances the background returns at this arm's own
+   parameters; that the stretch is a function of Omega_m alone and therefore which Omega_m each
+   printed triple is; that r_0 cannot tell them apart; that TWO configurations print the stale
+   value and the figures do not separate them; what the banks carry; and what moves in print if the
+   stale triple is repaired. ***
+
+
+========================================================================================================
+  PART 1 -- ** THE SIX PRINTED FIGURES, CAPTURED OUT OF THE PAPER AS VALUES **
+========================================================================================================
+      DC_approx wanted 2, found 2: ['1.4011', '1.4011']
+      r0_approx wanted 2, found 2: ['5051', '5051']
+      st_as_ratio wanted 1, found 1: ['2.774']
+      st_as_bare wanted 2, found 2: ['2.774', '2.774']
+      DC_as_eq  wanted 1, found 1: ['1.4011']
+      disp      wanted 1, found 1: [('1.74', '3.02')]
+      ell_2     wanted 2, found 2: ['7.8', '7.8']
+  ✔ DISCHARGED -- ** `r7177`'s ORDER HAS BEEN ANSWERED IN PRINT: the stale pair `1.395e4 / 2.76` is gone from the paper and the stretch this receipt establishes as the construction's is what remains. **  *This is the discharge of this receipt's finding and NOT a drift: the defective literals are absent and the repaired one is present, which are two different measurements and are reported as two.*  The parts below are facts about the background rather than about the prose, and still assert.
+      the displacement clause's two captured figures, read in Part 5: [('1.74', '3.02')]
+
+========================================================================================================
+  PART 2 -- ** WHAT THE INSTRUMENT'S OWN BACKGROUND RETURNS, AT FOUR CONFIGURATIONS **
+========================================================================================================
+      cr-refit             H0 =  68.60  Om = 0.2973  rate GEOMETRIC (no radiation)    D_M = 14011.4567  r_0 =  5051.49  stretch = 2.773729
+      cr-default           H0 =  73.00  Om = 0.3066  rate GEOMETRIC (no radiation)    D_M = 13004.5552  r_0 =  4708.97  stretch = 2.761656
+      lcdm-default         H0 =  67.40  Om = 0.3150  rate radiation-INCLUDED          D_M = 13864.6627  r_0 = --  (the areal radius is a `cr` construct and the control does not carry one)
+      lcdm-refit           H0 =  68.60  Om = 0.2973  rate radiation-INCLUDED          D_M = 13941.6290  r_0 = --  (the areal radius is a `cr` construct and the control does not carry one)
+      cr-refit-LEAFGEOM    H0 =  68.60  Om = 0.2973  rate GEOMETRIC (no radiation)    D_M = 13941.6290  r_0 =  5051.49  stretch = 2.759905
+      lcdm-refit185        H0 =  67.41  Om = 0.3098  rate radiation-INCLUDED          D_M = 13954.3535  r_0 = --  (the areal radius is a `cr` construct and the control does not carry one)
+    OK    ⛭⛭ at THIS ARM'S OWN refit parameters the background returns `D_M = 14011.4567` Mpc, which rounds to the LARGER of the paper's two captured lengths -- `1.4011e4`, not the stale `0.0000e4` -- at the paper's own printed precision
+    OK    ⛭ with `r_0 = 5051.49` Mpc from Lambda parameter-free, which rounds to the captured `5051`
+    OK    ⛭⛭ so the construction's stretch is `2.773729`, which prints the paper's captured `2.774` and NOT its captured `None`
+    OK    ⛭ and it is the larger value BECAUSE this arm's rate carries no radiation term by construction -- `RAD_IN_RATE` is False on `cr` and True on `lcdm`
+    OK    ⛭ the instrument's own CR default (73.00, 0.3066) returns `13004.56` with `r_0 = 4708.97`, which is NOT the paper's `r_0` -- so neither printed site is that configuration
+    OK    ⛭ and the CONTROL returns `13864.66` at its own default and `13941.63` refitted -- the radiation-included rate, and neither prints `1.395e4`
+    OK    ⛔ and no configuration of THIS ARM run here returns a `D_C` that prints `1.395e4` (13945..13955) -- which is NOT the same as saying no configuration does, and Part 3 says which two do
+
+========================================================================================================
+  PART 3 -- ** THE STRETCH IS A FUNCTION OF Omega_m ALONE, SO `r_0` CANNOT SEE THE DIFFERENCE **
+========================================================================================================
+    OK    ⛭ this file's own background reproduces the INSTRUMENT's `D_M` at the refit to 1 part in 10^5, so what follows is the same object: 14011.458 vs 14011.457
+      Om = 0.2973:  stretch at H0 = 65, 68.6, 73, 80  ->  2.773728739  2.773728739  2.773728739  2.773728739
+      Om = 0.3066:  stretch at H0 = 65, 68.6, 73, 80  ->  2.761656596  2.761656596  2.761656596  2.761656596
+      Om = 0.315:  stretch at H0 = 65, 68.6, 73, 80  ->  2.750837421  2.750837421  2.750837421  2.750837421
+    OK    ⛭⛭ the stretch is EXACTLY H_0-independent -- identical to 10^-12 across a 15 km/s/Mpc span at each Omega_m, because `r_0` and `D_C` both scale as c/H_0
+      the Omega_m window that PRINTS 2.76:  [0.30402, 0.31176]
+    OK    ⛭⛭ that window CONTAINS the arm's pre-refit default 0.3066 and EXCLUDES both the refit's 0.2973 and the control's 0.3150
+      r_0 = 5051 at Om = 0.3066 needs H0 = 68.0568  ->  D_C =  13949.13 (1.3949e4)
+      r_0 = 5051 at Om = 0.2973 needs H0 = 68.6066  ->  D_C =  14010.10 (1.4010e4)
+    OK    ⛭⛭⛭ `r_0 = 5051` is reachable at BOTH Omega_m, 0.55 km/s/Mpc apart in H_0 -- so the one number the sentence calls `fixed parameter-free by Lambda` CANNOT discriminate the two configurations, and only the stretch can
+    OK    ⛭⛭ and at the pre-refit Omega_m with `r_0` pinned at the paper's captured `5051` the integral returns `13949.13`, which prints the captured stale `0.000e4` at the paper's own precision -- so that site is a SELF-CONSISTENT CONFIGURATION, the arm at an Omega_m the refit has moved, and not an arithmetic slip
+      the CONTROL at its own 185-bin refit minimum returns D_M = 13954.3535 (1.3954e4)
+    OK    ⛔⛭ a SECOND configuration prints the same `1.395e4`: the CONTROL at its own 185-bin refit minimum (`LH0=67.410309 LOM=0.309826`) returns 13954.3535, read off the instrument here and not typed
+    OK    ⛔⛔ the two candidates are 5.2 Mpc apart -- BELOW the paper's own printed precision -- and both give `2.76` against the arm's `5051`, so the printed triple CANNOT say which it is, and the honest answer to `which configuration is the stale one` is `the figures do not separate them`
+    OK    ⛔⛔⛭ and the second reading is worse than the first, because under it the printed stretch is THIS ARM's `r_0` over the CONTROL's comoving distance -- a cross-arm ratio, with one arm's source spectrum projected through the other arm's distance
+    OK    ⛭ the one OTHER configuration that would print `2.76` -- the refit arm with `LEAFGEOM=1`, the geometry on the leaf rate -- returns `13941.6`, which prints `1.394e4` and not `1.395e4`; and `LEAFGEOM` is off, so it is not the background the transfer is carried on
+
+========================================================================================================
+  PART 4 -- ** WHAT THE BANKS CARRY: THE TRANSFER'S OWN RECORD OF ITS OWN DISTANCE **
+========================================================================================================
+      186 banked spectra carry a stored `D_M`;  16 of them are `cr` at 14011.4567;  28 carry a value that prints 1.395e4
+      the ones that do: 13954.35 (lcdm)
+    OK    ⛭ the banks carry a stored `D_M` at all, and enough of them to be a measurement
+    OK    ⛭⛭ sixteen banked `cr` spectra record `D_M = 14011.4567` -- the transfer's own record that this is the distance the arm's figures are taken on
+    OK    ⛭⛭ and every banked value that prints `1.395e4` is on the `lcdm` CONTROL arm, not on this one -- so the paper's `1.395e4` is not any run of the arm whose `r_0` it is printed beside
+
+========================================================================================================
+  PART 5 -- ** WHAT THE TWO CONFIGURATIONS COST IN PRINT, EITHER WAY ROUND **
+========================================================================================================
+      stale 1.395e4/5051   stretch 2.761829   ell_2 = 7.8116   L=3 mode = 9   displacement 1.6965 .. 2.9213
+      the arm's own        stretch 2.773729   ell_2 = 7.8453   L=3 mode = 9   displacement 1.7426 .. 3.0158
+
+      ⛭ `r7681+cc66.2` -- THE THREE BACKGROUNDS' STRETCH AND FLOOR
+      background                                 Omega_m   r_0 (Mpc)   D_C (Mpc)   stretch    ell_2
+      adjudicated (68.60, 0.2973) -- IN PRINT   0.297300     5051.49    14011.46  2.773729   7.8453
+      REFIT LICENSED (68.57073, 0.291246)       0.291246     5081.15    14133.96  2.781645   7.8677
+      control (67.40, 0.3150)                   0.315000     5064.75    13932.31  2.750837   7.7805
+      ⇒ the refit point moves the stretch by +0.285 per cent and `ell_2` by +0.0224 multipoles
+    OK    ⛭⛭ `r7681` ⑦ ** AT THE REFIT LICENSED POINT BOTH OF `l.2566`'s GEOMETRIC FIGURES MOVE IN THEIR PRINTED DIGIT, AND NEITHER QUANTITY MOVES BY A THIRD OF ONE PER CENT: ** at `$\Omega_m=0.291246$` the stretch is `$2.781645$` against the printed `$2.774$`, `$0.285$` per cent away but printing `$2.782$`; and `$\ell_2$` goes `$7.8453$` to `$7.8677$`, `$0.285$` per cent away but printing `$7.9$` against the paper's `$7.8$`.  *⛔ My `r7679` draft flagged this geometry as unmeasured rather than guessing it, and said it was the part that might need no new digit.  Measured, it needs TWO.*  ⌗ *The arm registered the SIZES and they hold; the clauses that went red were my own additions asserting the printed digits would hold, which is a different question and the one being routed*
+    OK    ⌗ `$\ell_2$` goes 7.8116 -> 7.8453, and BOTH round to EVERY figure the paper prints for it (['7.8', '7.8']) -- the floor's printed location does not move
+      the third degree's modal multipole flips 8 -> 9 at stretch 2.741706
+    OK    ⌗ the third degree's modal multipole is 9 at BOTH printed stretches and flips to 8 only below 2.7417, so it is not at risk between them -- 0.0320 of margin at the construction's value
+      r7164's gate Ⓑ⑤ bracket, read from its source: 1.73 < e < 3.03
+    OK    ⛭⛭ and the printed displacement range `1.74` to `3.02` is the CONSTRUCTION's: it accommodates 1.7426 to 3.0158 and would not accommodate the other configuration's 1.6965 to 2.9213, so the clause moved with the two lengths rather than being left behind by them
+    OK    ⛭⛭ and `r7164`'s own gate Ⓑ⑤ moved in the same pass -- its bracket, read from its source rather than quoted, admits the construction's displacements at every degree and refuses the other configuration's
+
+========================================================================================================
+  PART 6 -- ** WHY NO GATE CAUGHT IT: THE TOLERANCES ARE WIDER THAN THE DISCREPANCY **
+========================================================================================================
+      the discrepancy a gate would have to catch:  D_C 61.457 Mpc   stretch 0.013729
+      the tolerances that read them:               +-1.0e2 Mpc (1.627x)   +-0.03 (2.185x)
+      receipts asserting the computed value against the printed literal with those tolerances: 0
+    OK    ⛔⛔ the two tolerances are 1.63x and 2.19x the discrepancy they would have to catch, so neither gate CAN fail on the quantity it names
+    OK    ⛔ and the slack tolerances are a gate-design class rather than one loose number: FOUR receipts rested on them when this receipt was built, and what remains after `r7179`'s repair is counted here rather than asserted from memory -- 0 found by walking `receipts/`
+
+========================================================================================================
+  ✔ DISCHARGED AT `r7179`, AND THE BACKGROUND HALF STILL ASSERTS.
+    ** The paper now prints ONE background length and ONE stretch, and they are the
+    construction's: $1.4011\times10^{4}$ Mpc and $2.774$, which is what the instrument
+    returns at this arm's own parameters on this arm's own rate. **
+  ⛭ And the repair's cost was paid in the same pass rather than deferred: the printed
+    displacement clause and `r7164`'s Ⓑ⑤ bracket -- read from its source, not quoted --
+    both admit the construction's range and both REFUSE the other configuration's, and
+    the four slack tolerances that could not fail on the quantity they named are closed.
+  ⌗ *What this receipt still measures is the background, not the prose: the stretch is a
+    function of $\Omega_m$ alone, and $r_0$ is 5051 in every candidate -- which is why
+    nothing saw the collision while it was in print, and why a return to the other
+    configuration would be caught by VALUE here rather than by the shape of a sentence.*
+========================================================================================================
+  ALL CHECKS PASS
