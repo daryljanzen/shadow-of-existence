@@ -7327,3 +7327,22 @@ Mean `2.115`, scatter `0.061`. **The published `2.19` sits inside that, 1.2 seed
 - **`l.2790`'s divisor:** `PO-47`'s `$2.36$` → **`$2.27$`**, so the clause reads `(1125.11 − 1121.85)/2.27 = 1.44` — **`1.4` as printed, unchanged.** *My `r7679` recommendation was to restate it as `1.5` on the `2.21` this container drew; that recommendation is WITHDRAWN. On the determined spread the printed `1.4` is right, and the "two thirds" never moved.*
 
 ⌗ **So `r7679+cc66.6` routed a digit change that the converged measurement says is not needed, and I would rather say that plainly than leave the earlier route standing.** The drift was never a drift; it was a number quoted to two decimals from a Monte Carlo determined to one. ⌗ *Nothing else moves: the quartet is `cc66.28`'s to the digit and both `W=55` and `W=80` stay admissible on the same bias-variance trade.*
+
+---
+
+### ⚑ `r7683+cc66` RULING 1, part 3 — **THE CITATION DOES NOT MOVE. `the_cross_term…` GAINS THE OWN-COMB FORM, AND IT CANNOT DO IT BY EDITING `retained`**
+
+You asked: *"If `the_cross_term…`, which `l.1773` cites, carries only the shared statistic, say whether the citation moves or the receipt gains the own-comb form."*
+
+**It carries only the shared statistic** — zero occurrences of any own-comb path in the file. ⇒ **The receipt gains the form, and the citation stays.** The reason is that the own-comb statistic **is** that receipt's own statistic read on a different coordinate, not a different statistic:
+
+- `OC.retained_own` is built by **lifting `env_a`, `osc` and `retained` out of `the_cross_term…` itself** (`own_comb.py` l.122–123). Its own docstring for the shared form says *"cc66's `retained`, lifted unchanged and fed these banks"*, and the own form uses *"cc66's own `osc`, as `retained` reads it"*.
+- What the own form adds is a coordinate carry, not a statistic: the arm's side is read at `T_c(q/T_a + Δφ/2π)` with the window scaled `w·T_a/T_c`, so each arm is banded on **its own** comb and the control's bands are untouched.
+
+⇒ *So moving the citation would attribute this receipt's own figure to another file, which is the transposition the corpus has a gate for.*
+
+**⛔ But it cannot be done by editing `retained`, and that is worth saying because it is the obvious thing to try.** `retained(win, nb, hi)` takes no comb parameters at all — it reads module-level `QL`/`QK`/`PR`/`SO` and bands both arms on one common `q` grid. The own-comb form needs the fitted period and phase of **four** combs (each arm's `D_l` and source), which that signature has nowhere to put. ⇒ **My recommendation: the receipt imports 70's `own_comb` module and reports both forms, exactly as `the_phase_systematic…` already does for the step** — the module is built from this receipt's three functions, so nothing is reimplemented and the lift is gated.
+
+⌗ *The alternative — reimplementing the coordinate carry inside `the_cross_term…` — would be a second implementation of a statistic that already has one, which is the defect `cc66.160`'s retyped peak finder cost four differences to.*
+
+⌗ **One consequence to decide with the wording:** once that receipt reports both, `l.1773`'s `\rcpt` is right either way, but the sentence has to say **which** form its digits are. My proposed block below puts them all in the own-comb convention and states the shared reading once as what reads the drift, which is your ruling 1 item 2.

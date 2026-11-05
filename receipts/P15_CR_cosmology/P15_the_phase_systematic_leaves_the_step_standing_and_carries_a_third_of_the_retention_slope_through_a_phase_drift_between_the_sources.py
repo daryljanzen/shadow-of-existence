@@ -419,8 +419,26 @@ if FAILS:
     raise SystemExit(1)
 print("GATES: ALL PASS.")
 print()
-print("  VERDICT (the arm of record, r7637): ** on the shared comb neither banded statistic survives its")
-print("  phase systematic -- the step's null is half or more of it, the retention slope's is all of it.")
-print("  On each arm's own comb the step stands: -0.0396 against a null at most a third of it. **")
-print("  *The LEAFREC=0 reading (a third of the slope, the step standing on the shared comb) is the")
-print("  docstring's below; the arms' combs have since parted, D_l and source alike.*")
+# ⛭⛭⛭ `r7683+cc66.1` -- ** THE VERDICT NOW COVERS THE SLOPE ON THE OWN COMB EXACTLY AS IT COVERS
+#   THE STEP, WHICH IS `r7683`'s RULING 1 AND 60's BRANCH (b). **  It said "the retention slope's
+#   [null] is all of it" and then named the own comb for the STEP alone -- true of the shared-comb
+#   statistic and silent about the one 69 has now made the reading of record.
+#   ⇒ `r7639+70` calls the shared reading "the beat and not a measurement", so the own comb is the
+#     convention for BOTH statistics and the verdict says so for both.  ⌗ *Every digit below is
+#     interpolated from what this file computes -- the fifth process commitment -- so the two
+#     conventions cannot drift apart in the prose again.*
+print(f"  VERDICT (the arm of record, r7637; the OWN-COMB convention, r7683 ruling 1):")
+print(f"  ** ON EACH ARM'S OWN COMB BOTH BANDED STATISTICS SURVIVE THEIR PHASE SYSTEMATIC. **  The")
+print(f"  step is {s_own:+.4f} against a real-phase null of {N_OWN[0.5][0]:+.4f} to "
+      f"{[n[0] for A, n in N_OWN.items() if A != 0.5][0]:+.4f}; the retention slope is "
+      f"{_own12:+.5f} +- {_ownsd:.5f}")
+print(f"  against {_ownnull['pre-registered amplitude 0.5'][0]:+.5f} to "
+      f"{list(_ownnull.values())[1][0]:+.5f}, surviving at "
+      f"{_own12 - _ownnull['pre-registered amplitude 0.5'][0]:+.5f} to "
+      f"{_own12 - list(_ownnull.values())[1][0]:+.5f}.")
+print(f"  ** ON THE SHARED COMB NEITHER DOES: ** the step's null is {abs(RS[list(RS)[0]]['s'][0])/STEP_REPORTED:.0%} "
+      f"or more of it and the slope's is {q0['S12'][0]/_shr12:.0%} of it.")
+print(f"  *⇒ Which is why `r7639+70` calls the shared reading the BEAT and not a measurement, and why")
+print(f"  `r7683` ruling 1 puts `l.1773` on the own comb.  The LEAFREC=0 reading (a third of the slope,")
+print(f"  the step standing on the shared comb) is the docstring's below; the arms' combs have since")
+print(f"  parted, D_l and source alike, and the shared statistic reads that parting.*")

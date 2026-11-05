@@ -1,0 +1,21 @@
+
+  OWN comb, over 12 settings:
+    slope      +0.01034 +- 0.00137   (range +0.00753 to +0.01257)   7.6 sigma   negative in 0
+    intercept  1.0263 +- 0.0089    (range 1.0153 to 1.0397)   straddles one: False
+    lowest band  1.0280  (range 1.0030 to 1.0374)
+    highest band 1.0753  (range 1.0626 to 1.0859)
+    endpoint span at the 7-band window-1 setting: 1.0364 1.0708 1.0659 1.0699 1.0858 1.0827 1.0832
+
+  SHARED comb, over 12 settings:
+    slope      +0.02690 +- 0.01226   (range +0.01008 to +0.04297)   2.2 sigma   negative in 0
+    intercept  0.9927 +- 0.0331    (range 0.9213 to 1.0414)   straddles one: True
+    lowest band  1.0217  (range 0.9727 to 1.1106)
+    highest band 1.1521  (range 1.0571 to 1.3079)
+    endpoint span at the 7-band window-1 setting: 1.0103 1.0650 1.0322 1.1236 1.0376 1.0494 1.1612
+
+  THE OWN-COMB NULL over 24 phases, both amplitudes:
+    pre-registered 0.5           real +0.00328 (32% of the slope)  worst +0.00557 (0.54 of it)  survives at +0.00707
+    banks' own 0.231/0.937       real +0.00215 (21% of the slope)  worst +0.00523 (0.51 of it)  survives at +0.00820
+    own-comb slope +0.01034 +- 0.00137
+
+[exited with code 0]
