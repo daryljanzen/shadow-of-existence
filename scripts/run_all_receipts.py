@@ -144,6 +144,11 @@ LONG = {
     #   scoped suite's population, alongside five DECLARED LONG ones (1365s, 1137s, 664s, 547s, 380s),
     #   and a 360s receipt at 60 per cent of the cap does not survive that.  On a small scope it passes.*
     'F1_a_table_that_covers_half_a_family_fails_on_the_rest_of_it_later.py': 900,  # measured 360s, this container (r7661)
+    # ⛭ ADDED r7683 (69), on main's scoped suite at `21acf62b1`: `344 pass, 0 fail, 1 over timeout`, the one
+    #   being this receipt, killed at the 600s default under four-way contention.  MEASURED ALONE on this
+    #   container at `21acf62b1`: 270s, exit 0.  The rule's 270 x 1.7 = 459 lands on the default it crossed,
+    #   so the next step, 900s, as for `F1` above; cc66's ordered own-comb patch (r7683) adds to its cost.
+    'P15_the_phase_systematic_leaves_the_step_standing_and_carries_a_third_of_the_retention_slope_through_a_phase_drift_between_the_sources.py': 900,  # measured 270s alone (r7683)
     # ⛭ ADDED r7642 (60), on r7641's order: the nightly's 10-30 read found these two OVER the 600s cap, each
     # KILLED MID-COMPUTATION rather than failing -- the second at m = 19 of its recoupling sums.  The order gave
     # two exits, declare long with the measured cost or cut the level range, to be chosen BY WHAT THE CLAIM NEEDS.
