@@ -1,0 +1,54 @@
+r7684 (60) -- ITEM 1, THIS SEAT'S OWN READINGS, BANKED BEFORE cc66's NUMBERS WERE OPENED
+=======================================================================================
+Tree: runs/TREE.txt (HEAD d045b699, worktree 9cb322cb).  Both receipts run here, sequentially,
+one process at a time, the scoped suite's own child environment, NODE unset.  Their whole printed
+output is beside this file.
+
+⓵ WHICH COMB EACH READING IS ON -- and there are TWO different things the words "own comb" name.
+   (a) THE COMB THE STATISTIC IS READ ON.  `own_comb.py` exports `retained_shared` (= cc66's
+       `retained`, lifted unchanged) AND `retained_own`.  These are two different statistics.
+   (b) THE COMBS THE NULL INJECTION IS BUILT ON.  Separately, the null can be injected with each
+       arm on its own comb or with one comb for both.
+   ⇒ `P15_the_phase_systematic...` reads the SLOPE with (a) = `retained`, the SHARED form, and
+     varies (b).  Its section headed "each arm's own comb or one comb for both" is (b), not (a).
+     Checked in its source: it imports `own_comb as OC` and calls ONLY `OC.band_excess_own`,
+     `OC.step` and `OC.null` -- all three on the STEP.  It never calls `OC.retained_own`,
+     `OC.slope12` or `OC.retention_null`, which exist in that module.
+   ⇒ So the receipt has an own-comb form for the STEP and NONE for the SLOPE.
+
+⓶ THE SLOPE ON THE ARM OF RECORD, as printed here:
+     shared form   +0.02690 +- 0.01226 per unit q over 12 settings (range +0.01008 to +0.04297)
+                   -- printed by BOTH receipts run here; the cross-term receipt's own docstring and
+                      P15 still carry +0.0139 +- 0.0021, which the phase-systematic receipt flags
+                      as REPORTED and not required
+     own form      +0.01034 +- 0.00137   (r7639+70's RESULT_retention.md, table row "arm of record")
+
+⓷ THE NULL AT THE REAL PHASE, and the ratio to its own slope:
+     on the SHARED slope   +0.0309 (115 %) at amplitude 0.5;  +0.0291 (108 %) at the banks' own
+                           ⇒ slope - null = -0.0040, -0.0022.  Does not survive.
+     on the OWN slope      +0.00328 (32 %) at amplitude 0.5;  +0.00215 (21 %) at the banks' own
+                           ⇒ slope - null = +0.00707, +0.00820.  Survives.
+     and the null on the SHARED slope is carried by the arms' own SOURCE combs:
+        own combs,  own envelope   +0.03088 / +0.03129
+        ONE comb,   own envelope   +0.00469 / +0.00827
+        own combs, flat envelope   +0.02537 / +0.02533
+     ⇒ one shared comb for the injection takes the null to a sixth; a flat envelope keeps most of it.
+
+⓸ DOES THE SLOPE SURVIVE ON EACH ARM'S OWN COMB ON THE ARM OF RECORD?  ** YES **, at +0.0071 to
+   +0.0082 per unit q, 2.6 to 3.0 times twice its setting spread (0.0027).
+   ⌗ REPORTED AND NOT GATED, from the same source: over EVERY phase the own-comb null's worst
+     reaches 0.54 / 0.51 of the slope.  The survival is at the REAL phase.
+
+⓹ r7641's RECORDED READING, located verbatim in THE_REGISTER:
+   "Read on each arm's own comb the retention slope is `+0.0103 \pm 0.0014` (`+0.0139` before),
+    surviving its real-phase null at `+0.0071` to `+0.0082`."
+   ⇒ The order quotes it CORRECTLY.
+
+⓺ ARE THE TWO READINGS ON THE SAME OBJECT?  ** NO. **  r7639+70's own table separates them:
+     | arm of record | shared slope +0.0269 +- 0.0123 | own-comb slope +0.01034 +- 0.00137 |
+   and that file says in its own words:
+     "The shared reading on the arm of record, +0.0269 +- 0.0123, is the beat and is not a
+      measurement."
+   ⇒ The 108-115 per cent is a ratio against the SHARED slope -- against a quantity the corpus
+     already records as a beat between two parted combs rather than a measurement.  The register's
+     +0.0103 is the OWN-comb slope, whose null is 21-32 per cent.
