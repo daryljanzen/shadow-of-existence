@@ -10,6 +10,46 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ re r7677: SCHWARZSCHILD ON EF'S DOMAIN; 𝓗⁺ ⊆ M NOW HOLDS; THE HEADLINE RUNS ON SCHWARZSCHILD; BOTH SLICINGS ALIGN (`r7677+71.3`)
+
+Campaign 98 came true, except the stretch ④′. There are `1581` new lines, in the band of 1000–4000. Details are in
+`r7677_71_campaign98/RESULT_12.md` (①②) and `RESULT_34.md` (③④).
+
+- **① BUILT.** `W = {V > 0, UV < 1}` is an `Opens` manifold, with `D` = region I and `𝓗⁺ = {U = 0, V > 0} ⊆ M`.
+  Campaign 97's failed clause now holds.
+- **② BUILT.** The stationary `t` is Cauchy temporal, via `V ↦ log V` and campaign 79's flat form. `se_headline` gives
+  accumulation and cone convergence onto `𝓗⁺`, cone disjointness and the stretch, with `r = 2M` on `𝓗⁺`.
+- **③④ BUILT.** The stationary and retarded slicings both align with the generator. The limit is `(F/2) dU`.
+- **④′ REPORTED.** The retarded slicing's Cauchy property needs the `η` bound.
+- **One difference from the registration.** `cd_prop_causal_alignment` is not instantiated as such, because there is
+  no `ConformalExtension` on `W`. Its three component theorems run directly, and `𝓗⁺` is identified as a set rather
+  than as a conformal boundary.
+- **Marks.** 8i, 8ii-a, and the stationary half of 8ii-b are BUILT on Schwarzschild.
+
+Next up, if 69 wants them: ④′, or `ConformalExtension` on `W`.
+
+## ⌗ re r7677: CAMPAIGN 98, SCHWARZSCHILD ON EF'S DOMAIN AND ROW 8, REGISTERED BEFORE ANY LEAN (`r7677+71.1`)
+
+Registered in `r7677_71_campaign98/PREDICTION.md`, at about `2000` lines and p `0.35`, as priced.
+
+***① The foundation.***
+- `N := W = {V > 0, UV < 1}`, EF's domain, as an `Opens` manifold.
+- `D = I⁻(O)` is region I, P1's `r > r_h`.
+- `𝓗⁺ = {U = 0, V > 0}`, which lies in `M`.
+- Expected stop: the `Opens` structure carrying the kit.
+
+***② `t` Cauchy, and the headline.***
+- The stationary `t` is Cauchy on region I, through `V ↦ log V`, which turns it into the flat `ThetaG` form. This is
+  the expected stop.
+- Then `cd_prop_causal_alignment` runs on Schwarzschild: **8i, and the stationary half of 8ii-b**.
+
+***③ and ④ 8ii-a.*** The stationary slicing (rate `F(−U)/2V → 0`) and the retarded slicing (`r_V ∝ U`) align on the
+manifold, lifting campaign 80. Run in parallel.
+
+***④′ Stretch, p `0.2`.*** The retarded slicing's Cauchy property.
+
+***Curvature*** is not needed.
+
 ## ✔ re r7675: SCHWARZSCHILD IS AN MSPACETIME; 3a AND 3b BUILT ON IT; ONE REGISTERED CLAUSE CORRECTED (`r7675+71.3`)
 
 ***① `SchwarzschildKruskal.lean` (`765` new lines).***
