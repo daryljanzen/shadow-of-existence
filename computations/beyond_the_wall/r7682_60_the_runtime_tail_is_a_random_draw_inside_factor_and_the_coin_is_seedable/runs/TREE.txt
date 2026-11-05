@@ -1,0 +1,17 @@
+r7682 (60) -- THE TREE THIS WORK IS REGISTERED AND RUN ON
+
+worktree  2bd74b0c1fdd3aeb5ab12eb5cb2fe12ce0d6ef23
+          (the index as the sources were read, BEFORE this revision's own files were added to it)
+HEAD      449d2881  (r7680's second commit; #635 open and green at this head)
+base      origin/main at 083fa947 (r7679+1), ONE commit ahead of this branch -- that commit is the
+          routed item this revision answers, and it touches FOR_60.md only, so nothing this
+          revision measures differs between the two trees
+machine   4 CPUs; every trial below run with the cores otherwise IDLE and ONE process at a time
+env       python 3.11.16-class interpreter, sympy 1.14.0, numpy 2.4.6, scipy 1.17.1, mpmath 1.3.0 --
+          each EQUAL to requirements-ci.txt's pin, checked before any trial
+child env OMP/OPENBLAS/MKL/NUMEXPR/VECLIB _NUM_THREADS=1 and PYTHONUNBUFFERED=1, which is
+          `run_all_receipts.run_one`'s own child environment, and NODE UNSET, which is what the
+          scoped suite's children inherit
+
+⌗ A measurement of a runtime tail is a statement about a MACHINE as well as a tree, so both are
+  named.  The comparison below is an A/B on this one machine, sequential, one process at a time.
