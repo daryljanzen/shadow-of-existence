@@ -1,0 +1,157 @@
+r7680 (60) -- THE COLD READ: the three Schwarzschild additions, and the fourth-peak re-grounding.
+
+** THE ORDER (`r7679`, 69), four objects: **
+  1. ** The three P1 additions ** -- the EF corollary's repaired attestation, `rem:formalised`'s
+     SEVENTH family, and `lem:alignment`'s new ending -- against `SchwarzschildEF.lean` and
+     `SchwarzschildAlign.lean`.
+  2. ** `P15` l.2790's re-grounded clause. **  *"1.4 of the sky's own locating spreads high, two
+     thirds of that offset shared with the control"*, now cited to `P15_at_its_own_preferred_H0…`.
+     ** Is that the quantity the clause names, and is `2.36` the spread at the fourth peak ON THIS
+     LOCATOR? **
+
+** THE METHOD IS `PREDICTION.md`'s, FIXED BEFORE ANYTHING WAS PARSED: ** twenty claims, written as
+the passage's own words; each scored from text PARSED OUT OF the Lean, the receipts and the `.tex`;
+a claim whose verdict turns on which of two readings a phrase takes is scored TWO-TO-ONE and
+reported as both; and the note printed beside every verdict is BUILT FROM its readings, which is
+`r7678`'s own slip made impossible.
+
+⛭ `r7678`'s LESSON IS THIS INSTRUMENT'S FOUNDATION: ** a conjunct's quantifier is part of the
+claim **, so every claim about a Lean conclusion carries the binder its marker sits under, and the
+reader's negative probes include one that an existential is not read as a universal and one that a
+BOUND point is distinguished from a FIXED one.  ⌗ The tree is `runs/TREE.txt`.
+
+============================================================================================================
+  r7680 (60) -- the cold read of the Schwarzschild additions and the fourth-peak re-grounding
+============================================================================================================
+
+PART 0 -- THE SIX GUARD FAMILIES, RUN BEFORE ANY CLAIM IS SCORED
+  --------------------------------------------------------------------------------------------------------
+  [PASS] G1 the conjunct probe: the marker rule fires on a phrase a passage HAS and not on one it has not
+  [PASS] G2a word-boundary anchor: `\bfamily\b` matches the word and NOT `families`
+  [PASS] G2b control-sequence anchor: `\\texttt` matches the macro and not a bare word
+  [PASS] G2c math-delimiter anchor: `\$r=r_h\$` matches and `\$r=r_h/2\$` does not
+  [PASS] G2d an UNANCHORED marker is REFUSED rather than silently matched
+  [PASS] G5 reader shape `TOP-level conjunct (se_headline, the H identification)`: parsed `TOP`, registered `TOP`
+  [PASS] G5 reader shape `∀ over τ (se_headline, cone disjointness)`: parsed `∀`, registered `∀`
+  [PASS] G5 reader shape `TOP-level conjunct (se_foundation, 𝓗⁺ ⊆ M)`: parsed `TOP`, registered `TOP`
+  [PASS] G5 reader shape `∀ over x of region I (sa_stationary, the exact rate)`: parsed `∀`, registered `∀`
+  [PASS] G5 reader shape `TOP-level Tendsto (sa_stationary, the normalised-gradient limit)`: parsed `TOP`, registered `TOP`
+  [PASS] G5 ⛭ NEGATIVE ① -- an EXISTENTIAL conjunct is not read as a universal one: the bounded-frame clause parses `∃`
+  [PASS] G5 ⛭ NEGATIVE ② -- a marker ABSENT from a conclusion reads ABSENT, not TOP
+  [PASS] G5 ⛭ NEGATIVE ③ -- a BOUND point is distinguished from a FIXED one: `sa_stationary_aligns`'s `V₀` parses `BOUND`, and a theorem that merely mentions `V₀` parses `FIXED`
+  [PASS] G5 ⛭ NEGATIVE ④ -- and a variable bound in a LATER group, after a `:` has already appeared in an earlier one, still parses BOUND: `sa_retarded_aligns` binds `{a η : ℝ} … {V₀ : ℝ}`, and `V₀` parses `BOUND`.  ⌗ *The first form of this reader cut the binder list at the first `:` and read it FIXED; it passed ③ only because the other theorem binds `V₀` first*
+  [PASS] G6a ⛭ a phrase that WRAPS reads False raw and True flattened
+  [PASS] G6b the flattener is idempotent
+  [PASS] G3 the flip family: each derived reading flips when its text is removed (2 of 2)
+  [PASS] G4 every verdict class the scorer can emit is a declared one
+
+PART 1 -- OBJECT A: THE THREE REPAIRS THIS LINE ASKED FOR (⒜-⒞)
+  --------------------------------------------------------------------------------------------------------
+      ⒜     SUPPORTED      the new wording reads True; the diagram remark is marked interpretive True; the old phrase is gone from the whole pa
+                             per True; the corollary carries 2 substantive claims (the causal one and the coincidence one) and the diagra
+                             m paragraph is present True.  ⇒ `two substantive claims` names exactly the two that are checked, and the rea
+                             ding that reached the diagram is closed by naming the diagram separately
+      ⒝     SUPPORTED      the new wording reads True; the old unqualified phrase is gone True; and reading B is the one the Lean proves -- `{U
+                              = 0} ⊆ M` is a conjunct of `sk_observer` True.  ⇒ the clause that reproduced the corrected registration is 
+                             gone, and what is left is what was proved
+      ⒞     SUPPORTED      the new wording reads True; the unqualified pair is gone from the whole paper True; and the binders are what the wor
+                             ding now matches -- `Δx = 0` sits under `∃` over splittings and `Δτ = 0` at `TOP` level.  ⇒ the existential 
+                             is printed as an existential and the top-level one as unqualified, each where it belongs
+
+PART 2 -- OBJECT B: `rem:formalised`'s SEVENTH FAMILY (①-⑧)
+  --------------------------------------------------------------------------------------------------------
+      ①     SUPPORTED      the paragraph says `seven families` (True) and cites 7 distinct headline theorems as the families: mx_witness_headli
+                             ne, cz_witness_headline, cz_witness_headline_F, cy_witness_headline, fd_witness_headline, ww_witness_headlin
+                             e, se_headline.  ⇒ the count is the paragraph's own enumeration and not taken from the order
+      ②     SUPPORTED      the sentence names it True, the file is cited True, and `se_headline` is in that file (1116 characters of statement)
+      ③     SUPPORTED      the printed domain reads True; the Lean defines `seWS : Set P := {p | 0 < p.2 ∧ p.1 * p.2 < 1}` (True) and builds `s
+                             eW : Opens P` from it, and that set IS `{V > 0, UV < 1}`; the point type is `abbrev P := ℝ × ℝ` (True), so t
+                             he object is the radial plane
+      ④     SUPPORTED      `se_headline` takes `(hr₀ : 2 * M < r₀)` as its only hypothesis beside `hM` (True), which is `r₀ > r_h` exactly, and
+                              the observer it builds is `se_Ost hM hr₀`
+      ⑤     SUPPORTED      `se_headline`'s first conjunct is `IsCauchyTemporalOn D (se_Θst M r₀)` at `TOP` level, and the general statement `se
+                             _cauchy_RI` carries it for EVERY positive multiple `k` (True).  ⌗ *So the clause holds, and `se_headline` st
+                             ates the one normalisation that is also the observer's proper time, where `se_cauchy_RI` is the general form
+                             *
+      ⑥     SUPPORTED      every clause the sentence names is a conjunct of `se_headline`, with its binder: properness `TOP`; slice KLi `TOP`; 
+                             slice KLs `TOP`; cone KLi `TOP`; cone KLs `TOP`; disjointness `∀`; H = {U=0, V>0} `TOP`.  The printed identi
+                             fication `𝓗⁺ = {U=0, V>0}` reads True.  ⌗ *The disjointness and the cone identifications are under `∀ τ` or 
+                             at top level, which is where the sentence puts them*
+      ⑦     SUPPORTED      `∀ x ∈ H, se_r M x = 2 * M` is a conjunct of `se_headline` under `∀` over the horizon, so `r = r_h` holds at every p
+                             oint of it and not at one
+      ⑧     SUPPORTED      the sentence reads True, and the headline citations standing AFTER the last compactification file in the paragraph a
+                             re exactly 4: cy_witness_headline, fd_witness_headline, ww_witness_headline, se_headline.  ⇒ `these last fou
+                             r` names the four families for which no extension is built, measured positionally in the paragraph rather th
+                             an counted by hand
+
+PART 3 -- OBJECT C: `lem:alignment`'s NEW ENDING (⑨-⑭)
+  --------------------------------------------------------------------------------------------------------
+      ⑨     SUPPORTED      the sentence claims it True; and the horizon point is a BINDER in both theorems -- `sa_stationary_aligns` `{V₀ : ℝ} 
+                             (hV₀ : 0 < V₀)` reads `BOUND` and `sa_retarded_aligns` reads `BOUND` -- so each holds for every `V₀ > 0`, wh
+                             ich IS every point of the future horizon `{U = 0, V > 0}`.  ⌗ *A claim about every point is a claim about a 
+                             binder, and presence of the name could not have told the two apart*
+      ⑩     SUPPORTED      the ratio is given EXACTLY as `F(x)·(−U)/(2V)` under `∀` over region I, and a separate conjunct sends it to `0` on t
+                             he approach filter (True).  ⇒ `the ratio … vanishes` is the limit conjunct, and the exact form beside it is 
+                             what makes the limit readable rather than asserted
+      ⑪     SUPPORTED      the last conjunct is `Tendsto … (𝓝 ((FS M (0, V₀) / 2) • fst ℝ ℝ ℝ))` (True), and `fst` IS the `dU` covector in the 
+                             chart, so the limit is `(F/2) dU` at the horizon point; the sentence prints it True
+      ⑫     SUPPORTED      `sa_retarded_aligns` binds `a` and `η` with positivity only (True), the sentence says `for every a, η > 0` (True), a
+                             nd it reaches the SAME limit `(F/2) dU` (True) -- so no upper bound on `η` is needed for the alignment
+      ⑬     SUPPORTED      the attribution reads True, and `se_headline`'s first conjunct is the Cauchy clause at `TOP` level on `D`, which the
+                              same theorem identifies as region I -- the exterior
+      ⑭     SUPPORTED      the sentence says so True, and neither probe carries a Cauchy statement for the retarded slicing (True): a search fo
+                             r one over both files returns nothing.  ⇒ the paragraph states its own gap, which is the clause that makes t
+                             he rest readable
+
+PART 4 -- OBJECT D: `P15` l.2790's RE-GROUNDED CLAUSE (⑮-⑰)
+  --------------------------------------------------------------------------------------------------------
+      PART 4B's fourth peaks, run on this tree : sky 1121.85  control 1123.99  arm 1125.11
+      the arm's offset from the sky            : 3.26 multipoles
+      the part of it the control carries       : 2.14 multipoles, 0.6564 of it
+      ⑮     SUPPORTED      the receipt the clause now cites RUNS GREEN on this tree and its PART 4B prints the three quartets the order quotes:
+                              the arm 1125.11, the control 1123.99, the sky 1121.85, so the numerator `3.26` is the cited receipt's own
+
+      `2.36` appears in the CITED receipt      : False
+      `2.36` appears in the locator receipt    : True  as `SKY_SIG4 = 2.36  # PO-47: the sky's fourth peak, 1121.9 +- 2.36`
+      that receipt says it is taken as given   : True
+      a locator-specific spread DOES exist     : Planck plik_lite 2.34 (True), ACT alone 3.03 (True)
+      3.26 / 2.36 = 1.381   and   3.26 / 2.34 = 1.393   -- both print as 1.4
+      ⑯     TWO-TO-ONE     ⛭ THE ORDER'S NAMED QUESTION.  ** `2.36` is NOT in the cited receipt at all ** (False), and it is NOT this locator's
+                              spread: it is `PO-47`'s combined figure, carried in another receipt as the constant `SKY_SIG4 = 2.36` and d
+                             eclared there as "taken as given and neither re-derived" (True).  The spread a locator does give at the four
+                             th peak is `2.34` on Planck `plik_lite` -- which is the very sky PART 4B locates -- and `3.03` on ACT alone,
+                              `2.36` being their quadrature combination.  ⇒ READING A, the DIGIT: SUPPORTED either way, `1.38` on `2.36` 
+                             and `1.39` on `2.34`, both printing as `1.4`.  READING B, the CITATION: NOT SUPPORTED -- the denominator has
+                              no address in the cited receipt, so the clause's own citation cannot reach the spread it divides by
+      ⑰     SUPPORTED      the words read True, and the quantity they name -- the control's share of the arm's offset from the sky -- measures 
+                             `2.14/3.26 = 0.656` on the cited receipt's own quartets, which is two thirds.  ⌗ *So the SECOND figure is de
+                             rivable from the cited receipt alone; it is the first that reaches outside it*
+
+PART 5 -- ④ `𝓗⁺ ⊆ M`, ⑥ THE OMISSIONS
+  --------------------------------------------------------------------------------------------------------
+      `𝓗⁺ ⊆ M` in `se_foundation`              : conjunct at `TOP` level
+      `M = univ` in `se_foundation`            : conjunct at `TOP` level
+  [PASS] ⛭ ARM ④ -- the clause that FAILED at campaign 97 is proved here, and the reason it now holds is structural: the manifold IS the Eddington--Finkelstein domain, so `M = univ` on it and a frontier taken in `N` cannot leave the spacetime.  `W` excludes `V ≤ 0`, which is where the white-hole singularity branch lived
+      ~ proved and NOT stated: tangency at every horizon point -- which EVERY other family's sentence claims, and which is proved for Schwarzschild in `SchwarzschildAlign.lean` rather than in `se_headline`
+      ~ proved and NOT stated: the stretch: every compact part of 𝓗⁺ eventually inside the cones' ε-stretch
+      ~ proved and NOT stated: the observer's proper time: `Θ(O τ) = τ` and `r(O τ) = r₀`
+      ~ proved and NOT stated: `D` identified as region I, `{U < 0, V > 0}`
+      ✓ proved AND stated    : every cone is non-empty
+  [PASS] ⛭ ARM ⑥ -- what the seventh family's probes prove that its sentence does not state, COUNTED with no predicted value (4 of 5; 0 unresolved by the reader).  ⌗ *The FIRST is the one that matters, and the measurement is sharper than an omission: tangency is NOT a conjunct of `se_headline` at all (False) -- for this one family it is proved in the OTHER probe and cited forty lines later, at `lem:alignment`, where every other family's sentence carries it in its own clause*
+
+============================================================================================================
+  THE VERDICT
+============================================================================================================
+  ① THE SPLIT        : 19 SUPPORTED · 0 NOT SUPPORTED · 1 TWO-TO-ONE · 0 UNMEASURED, of 20
+      SUPPORTED      : ⒜ ⒝ ⒞ ① ② ③ ④ ⑤ ⑥ ⑦ ⑧ ⑨ ⑩ ⑪ ⑫ ⑬ ⑭ ⑮ ⑰
+      NOT SUPPORTED  : (none)
+      TWO-TO-ONE     : ⑯
+  ② THE `2.36`       : not in the cited receipt; `PO-47`'s combined figure, declared taken as given.  The digit survives on either spread (1.38 / 1.39); the CITATION does not reach it
+  ③ THE QUANTIFIERS  : the horizon point is BOUND in both alignment theorems, so `at every point of the future horizon` is exact; `se_headline`'s Cauchy clause is of one normalisation and `se_cauchy_RI` is the general form
+  ④ `𝓗⁺ ⊆ M`         : proved, and structurally -- the manifold IS EF's domain, so `M = univ` and the frontier cannot leave it
+  ⑤ THE COUNTS       : `seven families` matches 7 headline citations; `these last four` matches the 4 standing after the last compactification file
+  ⑥ THE OMISSIONS    : 4, the first being tangency, which lives in the other probe
+  ⑦ THE REPAIRS      : ⒜ SUPPORTED · ⒝ SUPPORTED · ⒞ SUPPORTED
+
+============================================================================================================
+  ALL GUARDS AND ARMS PASS.

@@ -387,7 +387,49 @@ LONG = {
     #     is concentrated in nested `simplify` over trig in one function, so a cheaper canonicalisation
     #     there is the probable cure; it is this seat's own file and the change is available, but it
     #     is not made under a red.*
-    'P15_the_four_dimensional_treatment_keeps_the_economy_and_keeps_more_of_it_but_in_the_sphere_label_so_the_bridge_exists_only_on_the_squashing_free_sector.py': 900,  # 13s alone and 13s under --jobs 4 here; runner timed out past 600s twice -- a LOWER bound, so 900s is the smallest step and not a measurement
+    #   ⛭⛭⛭ ** r7682 (60): THE STOP CONDITION FIRED, AND THE CAUSE IS FOUND.  BOTH EXPLANATIONS
+    #     ABOVE ARE NOW FALSE, AND THAT IS SAID HERE RATHER THAN LEFT IN THE RECORD AS IF IT HELD. **
+    #     *At `f74bb3324` the receipt crossed THIS budget on main's scoped suite -- `341 pass, 0 fail,
+    #     1 over timeout` -- which is the condition the block above says calls for the cause rather
+    #     than a higher number.  It has not been raised.  69's `r7679+1` routed it here.*
+    #     ⛔ ** THE `7.5x` CONTENTION SPREAD DOES NOT EXPLAIN IT, BECAUSE THE EXCURSION NEEDS NOTHING
+    #       BESIDE IT. **  One fresh process, cores otherwise IDLE, load 1.00 on 4: `546`s and still
+    #       running, against a `10-11`s median.  *So the composition of a scheduler effect with a
+    #       short base, which the block above calls "the missing factor", is NOT the factor.*
+    #     ⛔ *And the read trace is not it either: the scoped suite's step is
+    #       `--from scope.txt --jobs 4 --timeout 600` and traces nothing; the tracing lives in the
+    #       runner-read sweep and the index, which are different jobs on different runners.*
+    #     ⇒ *** THE RUNTIME IS A RANDOM DRAW INSIDE `factor`, AND IT IS NOT A CONTENTION QUANTITY AT
+    #         ALL.  `radial()`'s nested `simplify` routes `trigsimp -> _futrig -> _eapply -> factor ->
+    #         dmp_zz_factor -> dmp_zz_wang` -- Wang's multivariate factorisation, which picks its
+    #         evaluation points at RANDOM and retries on an unlucky draw.  Caught in the act by a
+    #         repeating stall dump: every slow trial stalled in `dmp_zz_wang_hensel_lifting`.  The
+    #         draw is invisible to a `PYTHONHASHSEED` sweep because it is not hashing -- which is why
+    #         69's eight-seed sweep saw 10-11s eight times and the runner still died. ***
+    #     ⌗ ** THE DISTRIBUTION THE BLOCK ABOVE ASKED A LATER SEAT FOR, measured: 30 trials
+    #       sequential, one process at a time, cores idle, this suite's own child environment, a
+    #       900s cap on each.  UNSEEDED: min 10s, median 11s, max 900s -- a 90x spread, 7 of 30
+    #       over 60s and FOUR of 30 killed at the very cap the runner hit.  SEEDED: min 10s, median
+    #       11s, max 12s -- a 1.2x spread, 0 over 60s, 0 killed. **  *Exit codes 0 and 124 only; the
+    #       two `139`s seen earlier belonged to the stall probe's own traceback dump and not to the
+    #       receipt, which 30 plain trials settle.*
+    #     ⛭ ** AND THE CURE IS ONE LINE IN THE RECEIPT, NOT A NUMBER IN THIS TABLE: it seeds sympy's
+    #       own generator, so the draw becomes a property of the receipt instead of a property of the
+    #       process.  Applied at r7682.  It moves NO mathematics -- the factorisation is exact
+    #       whichever points it picks -- and the receipt's whole printed output is identical to the
+    #       UNSEEDED baseline, byte for byte, but for the wall time it prints. **
+    #       ⌗ *The entry's own guess at the cure was tried and does not work: `trigsimp(method='fu')`
+    #         is verdict-identical and `107`s, ten times the median, and
+    #         `cancel(expand(rewrite(exp)))` did not finish in `600`s.  The expense is not the trig
+    #         chain; it is one draw inside it.*
+    #     ⌗ ** 900s STANDS FOR NOW AND IS NOW KNOWN TO BE TOO LARGE, which is a different state from
+    #       the two above and is declared as such.  The variance it was covering is removed AT ITS
+    #       SOURCE, so the right figure is a product on the seeded receipt -- but every reading
+    #       above is on THIS machine, and a budget is a claim about the RUNNER.  *A later seat holds
+    #       the tightening until the runner has shown a seeded distribution; lowering it on this
+    #       machine's 12s would be the same mistake as raising it on this machine's 13s was.*  The
+    #       stop condition is DISCHARGED -- by a cause, not by a number.*
+    'P15_the_four_dimensional_treatment_keeps_the_economy_and_keeps_more_of_it_but_in_the_sphere_label_so_the_bridge_exists_only_on_the_squashing_free_sector.py': 900,  # r7682: SEEDED at the receipt, 10-12s over 30 trials; the >900s tail was a random draw inside factor, not a cost -- so this number is now known too large and waits on a runner reading
     # r7615 (69), on the carry ledger's signature (an empty gate list, a kill at the 600s cap) for two P15 receipts on
     # main at 9dc2d9b2f and twice on cc66's branch, while both pass everywhere they finish.  MEASURED ALONE, ONE JOB:
     # 258s and 264s here, 321s and 308s on cc66's tree; read index 233s and 224s.  Four-way contention on the runner
