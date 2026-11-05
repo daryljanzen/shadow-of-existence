@@ -7185,3 +7185,145 @@ You landed, last turn, *"1.4 of the sky's own locating spreads high, two thirds 
 **⛔ ONE FLAG, AND IT IS A QUESTION RATHER THAN A DRAFT.** `l.2566`'s stretch `$D_C/r_0\approx2.774$` and the `$\ell_2\approx7.8$` it carries are computed on *a* background, and the receipt's own rows show `$r_0$` moving from `5064.75` Mpc at the control to `5051.49` at the adjudicated point. **The refit licensed point is a third background (`H0 68.57073, Om 0.291246, WBH2 0.021643`) and I have not measured `$D_C/r_0$` there.** ⇒ *Nothing in item 6 asks for it, and `2.774` is cited to its own producer as of last turn, so I have left it alone rather than guess. If you want the whole low-ℓ block on one background, that producer needs running at the refit point first and it is a small job — say so and it goes in the next revision.*
 
 ⌗ **Arm ⑧ scored: 4 sentences need new wording** (①②③ plus the caption's three-per-cent clause counted with ③), against a registered 3-to-8, central guess 5 ✔, **and at least one needed a claim change** ✔ — the "agrees to three per cent at every multipole" clause, exactly as registered.
+
+---
+
+### ⚑ `r7681+cc66` ITEM 1 — **THE RECONCILIATION: BOTH READINGS ARE RIGHT, ABOUT DIFFERENT STATISTICS. THE OWN-COMB SLOPE SURVIVES AND THE SHARED-COMB ONE DOES NOT, AND THE FOUR SENTENCES THAT REST ON THE RISE ARE LISTED**
+
+You held `r7679`'s rewrite because my step reading named its comb and my slope reading did not, against `r7641`'s own-comb slope of `+0.0103 ± 0.0014` surviving its null. **You were right, and the measurement is now in the receipt the sentence cites** — through 70's `r7637` module that file already imports for the step, gated against 70's own `measure_retention.txt` to the digit.
+
+| statistic, on the arm of record | twelve-setting slope | real-phase null | slope − null | survives? |
+|---|---|---|---|---|
+| **shared comb** (every check `r7679` routed) | `+0.02690 ± 0.01226` | `+0.03088` | `−0.00398` | **NO** |
+| **own comb**, pre-registered amplitude `0.5` | `+0.01034 ± 0.00137` | `+0.00328` | `+0.00707` | **YES** |
+| **own comb**, the banks' own amplitudes | `+0.01034 ± 0.00137` | `+0.00215` | `+0.00820` | **YES** |
+
+**⛭⛭ And the mechanism is visible in the invariance, which is the part worth having.** The own-comb slope goes `+0.01002 → +0.01034` under the repoint — three per cent — where the shared-comb one goes `+0.01359 → +0.02690`. *The arms' combs PARTING is what the repoint changed; a statistic that carries each arm onto its own comb cannot see it, and one that imposes a common comb reads it as retention.* ⇒ **So `r7641`'s number is not in tension with mine: it is the statistic that is insensitive to the thing mine is measuring.**
+
+#### ⇒ What this does to `l.1781–1793`, replacing `r7679`'s route
+
+My `r7679` draft said *"the rise does not survive its own systematic"* flatly. **That is true of the shared-comb statistic and false of the own-comb one,** so the paragraph must do for the slope exactly what it already does for the step. Proposed, for `l.1786–1787`:
+
+> *\emph{The rise survives on each arm's own comb and its size does not survive the shared one}: carried onto its own comb the slope is $+0.0103$ and the null at the real comb's phase is a third of it or less, so about two thirds is retention there; imposed on one common comb the null returns $115$ per cent of the slope and leaves nothing, \emph{so what the shared-comb reading measures is the drift and not the retention}.*
+
+⌗ *That keeps your landed "about two thirds is retention" — it is the own-comb reading and it is right — and attributes the reversal to the statistic rather than to the physics. `r7679`'s version withdrew a true claim.*
+
+#### The four sentences that rest on the rise, which is the list you asked for
+
+| site | the clause | verdict |
+|---|---|---|
+| `l.1777–1778` | "what is established is **the growth with wavenumber** and not a constant offset … it does nothing at the longest acoustic wavelengths and **more of it at each shorter one**" | **HOLDS** — the rise is positive in every one of the twelve settings on both statistics; only its size is comb-dependent |
+| `l.2791` | "the projection raising this arm's contrast on nearly everything it projects **and increasingly with wavenumber**" | **HOLDS**, same reason |
+| `l.2791` | "this arm retaining `$1.054$` times as much of its own source oscillation as the control does **and increasingly with multipole**" | **HOLDS** on the direction; ⌗ *the `1.054` is a different receipt's and I have not re-read it — flagged, not routed* |
+| `l.1773` | "a slope of `$+0.0139$` per acoustic period, the twelve envelope settings spanning `$0.0021$`" | **MOVES**, and it is already routed in `r7679`'s item 3 block above (`+0.02690 ± 0.01226` shared, `+0.01034 ± 0.00137` own) — ⇒ **which comb that sentence means is now a question, and my recommendation is the SHARED one, because `the_cross_term`'s `retained` is the shared-comb statistic and that receipt is what `l.1773` cites** |
+
+**⌗ P7 and P18 carry NO sentence that rests on the rise.** I searched every non-appendix `corpus/*.tex` for retention and wavenumber-growth language; `CR_framework.tex` and `CR_synthesis.tex` have none. *So the list is four sites in P15 and nothing outside it — against the 3-to-6 I registered, central 4.*
+
+---
+
+### ⚑ `r7681+cc66` ITEM 4 — **`l.1857–1866` AS ONE BLOCK: FOUR FIGURES AND A CLAIM CHANGE — AND THE RECEIPT HAD NEVER RECOMPUTED ITS OWN NUMBERS IN CI, NOT ONCE**
+
+**The defect first, because it is the reason this item was worth ordering.** `P15_the_band_rms_ratio…`'s live reader pointed at `/tmp/n66/r7041/inj` — **another node's container scratch path.** It is absent everywhere but there, so that reader returned nothing on every CI run the receipt has ever had, and every figure was scored against a hardcoded fallback table instead. *The table is correct — 70's `r7679+70` reproduces it to `1e-8` — but a receipt whose only live path is a fallback is a receipt that cannot fail, which is `r7679`'s four-green-gates lesson wearing a reader's clothes.*
+
+⇒ **It now reads 70's `spectra/r7041_band_rms_leafrec1.npz`, which is IN THE REPOSITORY**, through this file's own `osc`/`env_a` and its own `ratio` arithmetic, with the namesake table kept and scored beside it as the namesake's. Its verdict rule is untouched and still re-implemented from its own statement.
+
+| `l.1857–1866` figure | namesake, as printed | **arm of record** |
+|---|---|---|
+| the ratio with the phase held fixed | `1.0587` | **`1.0598`** |
+| with each arm on its own clock | `1.0659`–`1.0660` | **`1.0611`–`1.0613`** |
+| the worst last step over all twelve axis readings | `0.008` per cent | **`0.011`** per cent |
+| against the pre-registered floor | `0.6` per cent | `0.6` per cent — **holds**, a factor of `55` inside it |
+| the per-axis counts | five on the arm, six on the control | **five and six — unchanged** |
+| "both base points reproducing their banked values exactly" | — | ⌗ *`R6919` is the NAMESAKE's pair, so on the arm of record the gate asserts the axes agree with their OWN base point, which is the invariance the clause rests on* |
+
+**⛔ AND ONE CLAUSE IS A CLAIM CHANGE.** `l.1861–1863` reads *"exactly one reading of the twelve is reportable as converged, seven having not turned over and four carrying two points only"*. **On the arm of record it is two, six and four:** `fixed`/`KFAC` turns over where it was monotone on the namesake, and the difference is the last step's SIGN at the `1e-10` level — `+7.1e-8, +4.2e-10, +1.1e-10` there against `+7.2e-8, +2.3e-10, −7.7e-10` here. ⌗ *70 pre-registered (its P6) that these counts were NOT registered to hold, precisely because they turn on step signs at that level. So the count moving is the registered possibility, not a surprise, and the rule that produced it is the same rule.*
+
+**Proposed wording for `l.1857–1863`,** keeping the structure and changing what moved:
+
+> *…the arm-to-control ratio sits at $1.0598$ with the phase held fixed and between $1.0611$ and $1.0613$ with each arm on its own clock at every refinement of every axis, \emph{the worst last step over all twelve axis readings being $0.011$ per cent against a floor of $0.6$ per cent pre-registered before the sweep ran}, with every axis reproducing its own base point exactly. \emph{What that buys is stability and not convergence, and the two are not the same purchase}: by the rule fixed in advance a sequence that has not turned over is not converged whatever its last step, and monotonicity is undefined on two points---so \emph{exactly two readings of the twelve are reportable as converged}, six having not turned over and four carrying two points only.*
+
+⌗ **And the clause "on the configuration the leaf rate superseded" should come out of `l.1858`:** this IS the arm of record now, so the hedge names a configuration the sentence no longer reads.
+
+⌗ *The `0.6` per cent floor, the pre-registered verdict rule, the five/six axis counts and the "stability and not convergence" distinction all hold untouched. Only four digits and one count move.*
+
+---
+
+### ⚑ `r7681+cc66` ITEM 6 — **THE LOW-ℓ BLOCK CORPUS-WIDE, AS ONE BATCH: NINE SITES IN THREE PAPERS, AND THE THREE-PER-CENT CLAIM LANDS IN ALL THREE**
+
+Every figure below is measured. **Arm A at the refit licensed point is now computed for all seven multipoles the paper prints** — the depth-gap receipt's third background — because 70's `r7675+70.1` measured four and `l.2809–2810` prints seven, so three would otherwise have been carried over from the adjudicated background. *That is `r7677+cc66.3`'s defect in a new place: a figure formed across two backgrounds is a point difference as much as an arm one.*
+
+| | ℓ=2 | ℓ=3 | ℓ=4 | ℓ=5 | ℓ=6 | ℓ=7 | ℓ=8 |
+|---|---|---|---|---|---|---|---|
+| **in print** (adjudicated) | `0.487` | `0.435` | `0.359` | `0.666` | `0.911` | `0.983` | `0.998` |
+| **arm A at the REFIT point** | **`0.492`** | **`0.443`** | **`0.360`** | **`0.663`** | **`0.910`** | `0.983` | `0.998` |
+| move | `+0.95%` | `+1.97%` | `+0.31%` | `−0.54%` | `−0.18%` | `−0.05%` | `−0.01%` |
+
+⇒ **Five of the seven printed depths move; `ℓ=7` and `ℓ=8` hold.** The minimum stays at `ℓ=4` and the recovery at `ℓ=8` on every row, both arms, all three backgrounds.
+
+**Arm B, the hierarchy, on the arm-of-record split-clock bank at its own point:** frozen `0.470 / 0.465 / 0.342 / 0.632`, decoupled `0.483 / 0.468 / 0.360 / 0.647`; both minimum `ℓ=4`, recovery `ℓ=8`. **A against B at the refit point, both arms there: `4.85` per cent frozen and `5.55` decoupled at `ℓ=3`**, and `1.002`/`1.001`/`1.001` above `ℓ=5`.
+
+#### The nine sites, and what each needs
+
+| # | site | what it carries | needs |
+|---|---|---|---|
+| ① | `CR_cosmology` **`l.134`** (introduction) | `0.36` at `ℓ=4`, `0.487` and `0.435`; *"the shape and the depth both cross-validated between two independent transfers, which agree to three per cent at worst"* | **three digits + the claim** |
+| ② | `CR_cosmology` **`l.2566`** | `$D_C\approx1.4011\times10^{4}$`, `$r_0\approx5051$`, `$u\approx1.22$`, stretch `2.774`, `$\ell_2\approx7.8$` | **all five digits** — see below |
+| ③ | `CR_cosmology` **`fig:lowL-floor` caption** | the four depths; *"agrees with them to three per cent at every multipole"* | **four digits + the claim** |
+| ④ | `CR_cosmology` **`l.2590`** | the four depths, recovery `ℓ≈8` | **four digits** |
+| ⑤ | `CR_cosmology` **`l.2600`** | the four depths; *"agrees to three per cent at every multipole and one per cent above `ℓ=5`"* | **four digits + the claim** |
+| ⑥ | `CR_cosmology` **`l.2798`** | the four depths; *"reproduced by the programme's own photon hierarchy to three per cent"* | **four digits + the claim** |
+| ⑦ | `CR_cosmology` **`l.2809–2810`** | **seven** depths; *"to within three per cent at every multipole and one per cent above `ℓ=5`"* | **five of seven digits + the claim** |
+| ⑧ | `CR_framework` (**P7**) **`l.778`** | the four depths; *"its shape and depth cross-validated between two independent transfers"* | **four digits + the claim** |
+| ⑨ | `CR_synthesis` (**P18**) **`l.1494`** | *"the depth, the two transfers agreeing to three per cent once each carries the late integrated Sachs–Wolfe term to the present"* | **the claim** (no digits) |
+
+**⛔ So the three-per-cent cross-validation claim is in THREE papers, at six sites.** My `r7679` draft covered two of them. ⇒ *One wording, used at all six, keeps them consistent:*
+
+> *…agreeing to three per cent at every multipole but the octopole, where the two differ by $5$ per cent---\emph{a difference the construction specifies rather than a discrepancy}, the hierarchy carrying the split clock that the exact transfer cannot.*
+
+#### ⛔ `l.2566` needs all five of its figures, and that corrects my own `r7679` flag
+
+I flagged this geometry as sitting on another background rather than guessing it. **Measured at the refit licensed point:**
+
+| `l.2566` figure | in print | **refit point** | |
+|---|---|---|---|
+| `$D_C$` | `$1.4011\times10^{4}$` | **`$1.4134\times10^{4}$`** | Mpc |
+| `$r_0$` | `$5051$` | **`$5081$`** | Mpc |
+| `$u$` | `$1.22$` | **`$1.23$`** | `arcsinh√(ΩΛ/Ωm)` |
+| the stretch `$D_C/r_0$` | `$2.774$` | **`$2.782$`** | `+0.285%` |
+| `$\ell_2$` | `$7.8$` | **`$7.9$`** | `+0.287%` |
+
+⌗ **Neither the stretch nor the floor moves by even a third of one per cent, and both cross a printed rounding boundary anyway.** I wrote the receipt's gate twice asserting the printed digits would hold, and it went red twice; both over-assertions are recorded there rather than dropped. *The lesson is narrow and worth having: the size of a move and whether it moves a printed figure are two different questions, and a gate that conflates them asserts whichever its author hoped for. My four drafted sentences from `r7679` stand; this sentence's "needs no new digit" did not.*
+
+⌗ **What holds everywhere, so you can land the block without re-deriving which is which:** the minimum at `ℓ=4`; the recovery by `ℓ≈8`; "the quadrupole and octopole are its shoulders and not its floor"; "the single floor starves `ℓ=2` and `ℓ=3` together" (the ratio reads `1.01` frozen, `1.03` decoupled); `ℓ(ℓ+1)C_ℓ` falling below plateau for `ℓ≲7`; the hierarchy's own minimum and recovery; the `±2%`-in-`$r_0$` parenthetical at `l.2590`, whose declared `15` per cent depth drift comfortably contains the `0.3`-to-`2.0` per cent these backgrounds differ by; and `Δ(−2lnL) ≈ +1.6`, which is a different receipt and not re-read here.
+
+---
+
+### ⛔ `r7681+cc66` ITEM 3 — **NOTHING CHANGED IN THAT MONTE CARLO. `2.19` AND `2.03` ARE ONE MEASUREMENT AT TWO DRAWS, AND `600` DRAWS NEVER DETERMINED THE DIGIT**
+
+You asked which input moved since the published reading — the draw count, the window, the seeding, or the covariance file. **The answer is none of them, and I can show it two ways.**
+
+**① The provenance.** `git log --follow` on `P15_the_skys_own_fourth_peak…` returns exactly **two** commits: its birth at `r6875+cc66.32`, which published `± 2.19` and `± 2.36`, and `r7679+cc66.5`, which only replaced the two hardcoded quartets. `git log` on `computations/planck_tt_likelihood/` over that same range returns **zero**. ⇒ *So `NMC`, `WS`, the seed and `COV_TT` are byte-identical to the run that published the figure, and `sky_pk` reproduces `cc66.28`'s quartet exactly. There is no changed input to find.*
+
+**② The measurement.** At `W=55` the fourth peak's statistical spread, over eight seeds at the receipt's own `NMC = 600`:
+
+| seed | `6875` | `99` | `1` | `7` | `2024` | `31337` | `555` | `12345` |
+|---|---|---|---|---|---|---|---|---|
+| `σ₄` | `2.033` | `2.068` | `2.098` | `2.071` | **`2.219`** | `2.130` | **`2.202`** | `2.102` |
+
+Mean `2.115`, scatter `0.061`. **The published `2.19` sits inside that, 1.2 seed-sigmas from the mean; seeds `2024` and `555` return `2.219` and `2.202`.** And it is not converged in the draw count either — at seed `6875` it climbs `1.874, 1.931, 2.033, 2.097, 2.137` at `NMC = 200, 400, 600, 1000, 2000`.
+
+**Converged, at `NMC = 10000` on three seeds: `2.094 / 2.111 / 2.114` — a seed scatter of `0.021` against `0.186` at `600`.**
+
+| the sky's fourth peak | statistical | procedure | **combined** |
+|---|---|---|---|
+| as published (`600` draws, one seed) | `2.19` | `0.87` | **`2.36`** |
+| as this container drew it (`600`, same seed) | `2.03` | `0.87` | **`2.21`** |
+| **determined** (`10000` draws, seed scatter `0.02`) | **`2.10`** | `0.87` | **`2.27`** |
+
+**⛔ And the reason it went unnoticed is a gate of mine that could not fail.** `"the spread does not depend on the seed"` allows **12 per cent** — wide enough to hold any value from `1.86` to `2.28`. *So it passed while the quantity it protects was undetermined at the precision the paper prints it to. That is the `r7679` lesson about labels, in an assertion: a bound loose enough to hold every outcome asserts nothing.* ⇒ The receipt now determines the reference window's spread at a draw count where the seed scatter is `0.02`, and the window table keeps `600` because its job is the bias-variance **trade**, where the rejections are factors of fifty.
+
+**⇒ Your condition was to pin the spread once explained. It is explained, so here is the pin, and it is one number used in two places:**
+- **`l.2035`:** `$2.19$` → **`$2.10$`**.
+- **`l.2790`'s divisor:** `PO-47`'s `$2.36$` → **`$2.27$`**, so the clause reads `(1125.11 − 1121.85)/2.27 = 1.44` — **`1.4` as printed, unchanged.** *My `r7679` recommendation was to restate it as `1.5` on the `2.21` this container drew; that recommendation is WITHDRAWN. On the determined spread the printed `1.4` is right, and the "two thirds" never moved.*
+
+⌗ **So `r7679+cc66.6` routed a digit change that the converged measurement says is not needed, and I would rather say that plainly than leave the earlier route standing.** The drift was never a drift; it was a number quoted to two decimals from a Monte Carlo determined to one. ⌗ *Nothing else moves: the quartet is `cc66.28`'s to the digit and both `W=55` and `W=80` stay admissible on the same bias-variance trade.*

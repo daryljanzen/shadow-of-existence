@@ -634,6 +634,21 @@ for _nm, _s, _PKL, _A4, _A3, _F4, _P12, _P13 in (
 #:     `1.5` locating spreads high.  ** Routed to `69` with the sentence.  I am not re-pinning it
 #:     here: `2.36` is what `l.2790` was grounded on, and changing the denominator under a landed
 #:     sentence without a ruling is the move this lane has a rule against. **
+#: ⛔⛭⛭⛭ `r7681+cc66.4` -- ** AND THAT ROUTE IS WITHDRAWN, BECAUSE THE DRIFT WAS NEVER A DRIFT. **
+#:   `r7681` (69) ordered the cause found.  Measured: that producer has had exactly TWO commits and
+#:   `computations/planck_tt_likelihood/` has had NONE since the first, so NO input changed -- and at
+#:   its own `NMC = 600` the fourth peak's spread runs `2.033` to `2.219` across eight seeds, so the
+#:   published `2.19` and the `2.21` above are ONE measurement at two draws of an UNCONVERGED Monte
+#:   Carlo.  ** Converged at `NMC = 10000` it is `2.094`, seed scatter `0.017`, giving `+- 2.27`
+#:   combined. **
+#:   ⇒ *On `2.27` the clause reads `3.26/2.27 = 1.44`, which PRINTS the `1.4` already in place.  So
+#:     `SKY_SPREAD_PO47 = 2.36` stays as `PO-47`'s figure, the sentence needs no new digit, and my
+#:     `r7679` recommendation to restate it as `1.5` is WITHDRAWN in `FOR_69.md` rather than left
+#:     standing for 69 to act on.*
+#:   ⌗ *The pin below is untouched and the block above is kept as written, because it is a true
+#:     report of what this container drew.  What `r7681` adds is that the number it was compared
+#:     against was never determined to the precision it is quoted at -- which is a sharper finding
+#:     than a changed input would have been, and the reason to leave both readings on the record.*
 SKY_SPREAD_PO47 = 2.36            # PO-47's locating spread on the sky's fourth peak -- WORKING STATE
 HIGH_IN_PRINT = 1.4               # l.2790: the fourth peak sits this many locating spreads high
 SHARED_IN_PRINT = 0.67            # l.2790: "two thirds of that offset shared with the control"

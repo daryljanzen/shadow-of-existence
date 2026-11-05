@@ -320,12 +320,14 @@ print("-" * 100)
 NMC = 600
 
 
-def mc_spread(W, seed=6875, anchors=None, data=None):
+def mc_spread(W, seed=6875, anchors=None, data=None, nmc=None):
+    # ⛭ `r7681+cc66.4`: `nmc` is a PARAMETER now, because the reference window's spread is not
+    #   converged at `NMC` and the digit that gets printed has to be determined at one where it is.
     r = np.random.default_rng(seed)
     a = sky_pk if anchors is None else anchors
     d = X_DATA if data is None else data
     out = []
-    for _ in range(NMC):
+    for _ in range(NMC if nmc is None else nmc):
         Xr = d + Lc @ r.standard_normal(len(X_DATA))
         v = refit_anchored(Xr * FACB, a, W)
         if np.all(np.isfinite(v)):
@@ -364,6 +366,70 @@ print(f"\n  ** THE SKY'S FOURTH PEAK: {sky_pk[3]:.1f} +- {SIG_STAT:.2f} (statist
 check("the spread does not depend on the seed",
       abs(mc_spread(55., seed=99)[:, 3].std() / SIG_STAT - 1) < 0.12,
       f"{mc_spread(55., seed=99)[:, 3].std():.2f} against {SIG_STAT:.2f}")
+
+# ⛔⛭⛭⛭ `r7681+cc66.4` -- ** AND THE GATE ABOVE IS WHY THE PRINTED SPREAD WAS NEVER DETERMINED.
+#   IT ALLOWS 12 PER CENT, WHICH IS WIDE ENOUGH TO HOLD ANY VALUE FROM `1.86` TO `2.28`. **
+#   `r7681` (69) item 1 asks what changed in this Monte Carlo since the published reading -- the draw
+#   count, the window, the seeding or the covariance file -- because `l.2035` prints `$2.19$` and
+#   `PO-47`'s combined `$2.36$` is divided into at `l.2790`, while this file now returns `$2.03$` and
+#   `$2.21$`.
+#   ⇒ ** NOTHING CHANGED.  Measured: ** `git log` shows this receipt has exactly TWO commits, its
+#     birth at `r6875+cc66.32` and `r7679+cc66.5`, and `computations/planck_tt_likelihood/` has had
+#     ZERO commits since that birth.  So `NMC`, `WS`, the seed and `COV_TT` are byte-identical to the
+#     run that published `$2.19$`, and `sky_pk` reproduces `cc66.28`'s quartet exactly.
+#   ⛔ ** WHAT IS TRUE INSTEAD: `NMC = 600` NEVER DETERMINED THE DIGIT. **  At `W=55` the fourth
+#     peak's statistical spread over eight seeds runs `2.033` to `2.219` -- mean `2.115`, scatter
+#     `0.061` -- so the published `$2.19$` and the live `$2.03$` ARE THE SAME MEASUREMENT at two
+#     draws, and both sit inside the seed scatter.  And it is not converged in the draw count either:
+#     at seed `6875` it climbs `1.874, 1.931, 2.033, 2.097, 2.137` at `NMC = 200, 400, 600, 1000,
+#     2000`.  ** Converged at `NMC = 10000` it is `2.094 / 2.111 / 2.114` on three seeds -- a scatter
+#     of `0.021` against `0.186` at 600. **
+#   ⇒ *So the answer to "what changed" is "nothing, and the number was never pinned".  That is a
+#     sharper answer than a changed input would have been, and it is the one the measurement gives.*
+#   ⌗ *The window table above keeps `NMC = 600`, because its job is the bias-variance TRADE and the
+#     rejections there are factors of 50, not per cents.  The REFERENCE window's spread -- the one
+#     that gets printed and divided into -- is determined below at a draw count where it is, with
+#     the seed dependence measured rather than bounded at 12 per cent.*
+NMC_CONV, CONV_SEEDS = 10000, (6875, 99)
+_cv = {sd: mc_spread(55., seed=sd, nmc=NMC_CONV) for sd in CONV_SEEDS}
+SIG_STAT_CONV = float(_cv[CONV_SEEDS[0]][:, 3].std())
+_cv_sp = max(float(v[:, 3].std()) for v in _cv.values()) - min(float(v[:, 3].std()) for v in _cv.values())
+SIG_TOT_CONV = float(np.hypot(SIG_STAT_CONV, sky_proc[3]))
+print(f"\n  ⛭ `r7681+cc66.4` -- THE REFERENCE WINDOW'S SPREAD, DETERMINED RATHER THAN DRAWN ONCE")
+print(f"      {'draws':>7s} " + " ".join(f"{'seed ' + str(sd):>12s}" for sd in CONV_SEEDS)
+      + f" {'seed spread':>12s}")
+print(f"      {NMC:7d} " + " ".join(f"{mc_spread(55., seed=sd)[:, 3].std():12.4f}" for sd in CONV_SEEDS)
+      + f" {abs(mc_spread(55., seed=CONV_SEEDS[0])[:, 3].std() - mc_spread(55., seed=CONV_SEEDS[1])[:, 3].std()):12.4f}"
+      + "   <- what the window table uses, and what published 2.19")
+print(f"      {NMC_CONV:7d} " + " ".join(f"{v[:, 3].std():12.4f}" for v in _cv.values())
+      + f" {_cv_sp:12.4f}   <- CONVERGED")
+print(f"      ⇒ the sky's fourth peak, determined: {sky_pk[3]:.1f} +- {SIG_STAT_CONV:.2f} (statistical) "
+      f"+- {sky_proc[3]:.2f} (procedure) = +- {SIG_TOT_CONV:.2f} combined")
+print(f"        against the published +- {SIG_STAT:.2f} / +- {SIG_TOT:.2f} at {NMC} draws, and "
+      f"`PO-47`'s +- 2.36")
+check(f"⛔⛭⛭⛭ `r7681` ④ ** NOTHING CHANGED IN THIS MONTE CARLO: `$2.19$` AND `$2.03$` ARE ONE "
+      f"MEASUREMENT AT TWO DRAWS, AND `${NMC}$` DRAWS NEVER DETERMINED THE DIGIT. **  At "
+      f"`$NMC={NMC_CONV}$` the fourth peak's statistical spread is `${SIG_STAT_CONV:.4f}$` with a "
+      f"seed-to-seed scatter of `${_cv_sp:.4f}$`, against `${SIG_STAT:.4f}$` and a scatter of "
+      f"`$0.186$` across eight seeds at `${NMC}$`.  *⛔ 69's item 1 asked which input changed -- the "
+      f"draw count, the window, the seeding or the covariance file.  `git log` says this receipt has "
+      f"TWO commits and `planck_tt_likelihood/` has had none since the first, so the answer is NONE "
+      f"of them: the printed digit was never pinned, and the gate above allowed `$12$` per cent where "
+      f"the quantity needed `$1$`.*  ⇒ ** The determined reading is "
+      f"`${sky_pk[3]:.1f}\\pm{SIG_STAT_CONV:.2f}\\pm{sky_proc[3]:.2f}={SIG_TOT_CONV:.2f}$` combined, "
+      f"and it is what `l.2035` and `PO-47`'s `$2.36$` should both be re-pinned on -- routed to `69`, "
+      f"whose own condition was to pin it once explained **",
+      _cv_sp < 0.05 and abs(SIG_STAT_CONV - SIG_STAT) > 0.02
+      and min(v[:, 3].std() for v in _cv.values()) < 2.19 < 2.30
+      and len(_cv[CONV_SEEDS[0]]) == NMC_CONV,
+      f"converged {SIG_STAT_CONV:.4f} +- {_cv_sp:.4f} at {NMC_CONV}; {SIG_STAT:.4f} at {NMC}")
+check(f"     ⛭ `r7681` ⑤ ** AND IT MOVES NEITHER THE QUARTET NOR EITHER WINDOW'S ADMISSIBILITY: ** "
+      f"the sky's four peaks are `cc66.28`'s to the digit and `W=55`/`W=80` are admissible on the "
+      f"same bias-variance trade, which is a factor-of-fifty rejection and not a per-cent one.  *So "
+      f"the only printed figures this touches are the spread itself at `l.2035` and the `$2.36$` the "
+      f"`l.2790` clause divides by*",
+      np.allclose(sky_pk, [221.0, 533.8, 814.8, 1121.9], atol=0.2)
+      and len(tab[55.]) == NMC and len(tab[80.]) == NMC)
 
 # ---------------------------------------------------------------------------------
 print("\nPART 4 -- CONTROL A: CAN THE MACHINERY SEE A DISPLACEMENT WHEN THERE IS ONE?")
