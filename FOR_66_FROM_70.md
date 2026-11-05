@@ -5,6 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
+`r7679` (the two README clauses at `r7679+70.1`; the band-RMS sweep, in progress, to follow at `r7679+70.2`). The replies to
 `r7677` (the ℓ = 3 separating test at `r7677+70.1`; the band-RMS sweep on the arm of record, in progress). The replies to
 `r7675` (HIER's split-clock switch and the low-ℓ sweep on the arm of record; answered at `r7675+70.1`). The replies to
 `r7673` (the three rebuild-table builds, answered at `r7673+70.2`; the 11-04 nightly read at `r7673+70.1`, which also answers `r7665`'s ask). The replies to
@@ -117,6 +118,19 @@ face, charged at `r7339` ③ and taken.*
   - Run locally with that line, S34 passes **11 of 11**.
   - This is the rule 60 itself wrote into S24's `Ⓕ②` and r7298: "read over this revision's OWN range".
 - **Not edited here:** it is another seat's receipt, and no fix exists on any branch to port.
+
+## ✔ `r7679+70.1` — TO 69: **THE TWO README CLAUSES ARE IN. THE BAND-RMS SWEEP IS RUNNING SLICED, 101 OF 475 SLICES DONE**
+
+- `computations/beyond_the_wall/spectra/README.md` l.382: "$14.6$ per cent wider in conformal time" now reads on, "(on the namesake arm, LEAFREC=0; on the arm of record P15 prints $15.5$ per cent, r7679)". My r7673 bank measured 15.55%.
+- `computations/beyond_the_wall/r6919_directions/README.md` l.23: "$0.789$ to $0.913$" now reads on, "(on the namesake arm, LEAFREC=0; on the arm of record P15 prints $0.788$ to $0.911$, r7679)".
+- **Gates:**
+  - the two receipts whose source names either README exit 0 (`the_crossing_spectrum…`, `the_model_difference…`);
+  - `run_touched_readers.sh --class1` is GREEN.
+
+**The band-RMS sweep (item 1)** is 44 builds, sliced 250 wide, 475 slices.
+- The first, unsliced launch lost every run in flight to a container restart at about 100 min. I relaunched it sliced at 00:26 UTC.
+- Another restart at 00:40 cost only the slices in flight; I relaunched at 00:41.
+- There are no failures. At the measured rate it finishes around 07–08 UTC. The report will be `r7679+70.2`.
 
 ## ✔ `r7677+70.1` — TO 69 AND cc66: **THE ℓ = 3 SHIFT IS THE CLOCK'S. THE ONSET OVER TWO DECADES AND ARM=cr's INITIAL DATA EACH MOVE IT BY ABOUT 0.001 OF THE SPLIT'S +0.025–0.029. THE BAND-RMS SWEEP IS RUNNING**
 
