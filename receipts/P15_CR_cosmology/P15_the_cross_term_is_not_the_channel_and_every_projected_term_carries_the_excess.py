@@ -610,12 +610,24 @@ print(f"      slope         {SL.mean():+.5f} +- {SL.std():.5f}   "
 
 # --- the lift: the module's SHARED form must reproduce this file's own `retained()` ----------------
 _shr, _shrsd = OC.slope12(lambda b, w, nb, hi: OC.retained_shared(b, w, nb, hi), _OCB)
+# ⛭ `r7685+cc66`, ON `check_tilt_pins`: ** THE IDENTITY IS PINNED AS TWO ATTACHED PINS AND NOT AS A
+#   COMPARISON, BECAUSE THE COMPARISON COULD NOT FAIL. **  `abs(_shr - SL.mean()) < 1e-4` was the
+#   obvious way to write this and the tilt ratchet was right to flag it: both sides are computed from
+#   the same banks, so a smooth tilt moves them TOGETHER and the difference stays near zero whatever
+#   the data does.  *An assertion that passes on something other than its own measurement -- the
+#   baseline's own words for the defect.*
+#   ⇒ So the module's output is pinned to the SAME two numbers the gate above already pins
+#   `SL.mean()`/`SL.std()` to.  ** The identity is then a CONSEQUENCE of two attached pins rather than
+#   an unfalsifiable comparison: tilt the data and this pin moves and fails, as it should. **  ⌗ *This
+#   is strictly stronger than what it replaces -- the comparison admitted any pair of equal wrong
+#   values, and two value pins do not.*
 check("⚑ ** THE IMPORTED MODULE IS THIS RECEIPT'S OWN STATISTIC. **  `own_comb.retained_shared` "
-      "reproduces this file's `retained()` slope and spread to better than a part in 10^4, so the "
-      "own form is a COORDINATE CARRY on the same statistic and not a different one -- which is why "
+      "returns the same slope and spread this file's own `retained()` is pinned to above, so the own "
+      "form is a COORDINATE CARRY on the same statistic and not a different one -- which is why "
       "`l.1771-1779` cites this receipt",
-      abs(_shr - SL.mean()) < 1e-4 and abs(_shrsd - SL.std()) < 1e-4,
-      f"module {_shr:+.5f} +- {_shrsd:.5f} against this file's {SL.mean():+.5f} +- {SL.std():.5f}")
+      abs(_shr - 0.02690) < 5e-5 and abs(_shrsd - 0.01226) < 5e-5,
+      f"module {_shr:+.5f} +- {_shrsd:.5f}, this file's {SL.mean():+.5f} +- {SL.std():.5f}, "
+      f"both pinned to +0.02690 +- 0.01226")
 
 # --- the four figures `l.1771-1779` prints, each pinned AT THE PRECISION IT IS PRINTED TO ----------
 # ⌗ Two-sided and at the printed precision, per `r7643+cc66.62`'s rule: a one-sided bound on a figure
