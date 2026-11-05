@@ -140,7 +140,7 @@ At the refit licensed point (68.570730 / 0.291246, ω_b 0.021643, radiation 4.15
 - arm B reproduces r7675's banked keys exactly;
 - the values were measured at r7675, and PREDICTION.md says so.
 
-**For the draft:** the exact transfer moves by +0.005 / +0.009 / +0.001 / −0.004 / −0.002 / 0.000 / 0.000 from the printed seven. The split-clock hierarchy carries the larger ℓ = 3 shift (r7677: the clock's).
+**For the draft:** the exact transfer moves by +0.005 / +0.009 / +0.001 / −0.004 / −0.002 / 0.000 / 0.000 from the adjudicated point to the refit licensed point (unrounded values on both sides). The split-clock hierarchy carries the larger ℓ = 3 shift (r7677: the clock's).
 
 **Gates:** `check_banked_config` passes. No receipt reads the file yet.
 
