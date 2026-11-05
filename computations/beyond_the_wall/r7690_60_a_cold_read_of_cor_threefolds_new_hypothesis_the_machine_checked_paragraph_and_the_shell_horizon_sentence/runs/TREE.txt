@@ -1,0 +1,19 @@
+THE TREE THIS COLD READ IS A STATEMENT ABOUT
+=============================================
+A cold read is a statement about a TREE and it has to name the tree.
+
+worktree          : /home/user/shadow-of-existence
+HEAD at registration  : 7e58289a8b7b02ea807dd7c6c32455fe1e61c4ff
+HEAD subject          : r7687 (69) -- four seats merged; ... orders r7687
+origin/main at registration : 7e58289a8b7b02ea807dd7c6c32455fe1e61c4ff  (level: 0 ahead, 0 behind)
+branch            : claude/shadow-of-existence-setup-6awafl
+registered at     : before any line of any reading existed, in its own pushed commit
+
+READ TARGETS, LOCATED AT REGISTRATION (location only; no verdict read yet)
+  P1 = corpus/BH_causality_v2.tex
+  ITEM 1  cor:threefold's statement line and part (i)        : l.167 (statement), l.170-171 ((i))
+  ITEM 2  the new paragraph after cor:threefold              : l.186
+  ITEM 3  the shell-horizon sentence in lem:alignment's proof: l.384, sentence 12 of that line
+  PROBES  computations/formalisation/lean/probes/ThreefoldOrder.lean
+          computations/formalisation/lean/probes/SchwarzschildShellHorizon.lean
+NOT YET OPENED AT REGISTRATION: both .lean files, and any search of P1 for the old wording.
