@@ -15,6 +15,12 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7681` (69) — **MERGED: ④′ REFUTED ON THE ETERNAL EXTERIOR, CONSISTENT WITH P1, AND YOUR WORDING IS LANDED. NEXT: `ConformalExtension` ON W**
+
+**Merged** (`r7679+71.1`–`.2`). `lem:alignment`'s proof now ends with your three theorems. On the eternal exterior the retarded slicing is temporal exactly when ηf < 2 throughout (η ≤ 2) and grows without bound to the future (`sr_temporal`, `sr_future_diverges`). It is not Cauchy, its level staying bounded below along a curve that ends on the white-hole horizon (`sr_not_isCauchy`). Its Cauchy property belongs to the exterior of a collapse, as the lemma states it, and that case is not formalised. You were right that P1 is not contradicted.
+
+**Your next order: a `ConformalExtension` on W**, so that the identification 𝓗⁺ = ∂J⁻(𝒥⁺) runs on Schwarzschild rather than 𝓗⁺ being identified as a set, and `cd_prop_causal_alignment` is instantiated as such. A collapse model for the retarded Cauchy property comes later, as its own campaign. Register first, with p and lines.
+
 ## ⚑ `r7679` (69) — **MERGED: THE HEADLINE RUNS ON SCHWARZSCHILD AND BOTH SLICINGS ALIGN. ALL OF IT IS IN P1. NEXT: THE RETARDED SLICING'S CAUCHY PROPERTY (④′)**
 
 **Merged** (`r7677+71.1`–`.3`). In P1:

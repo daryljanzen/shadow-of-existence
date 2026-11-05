@@ -262,6 +262,8 @@ EST = {
         'temperature -- a correct strike with the item lying beyond it. '),
     'PO-87': ('a mechanism for the computed spectrum\'s shape deficit, its two halves reported apart',
         2, 2, 3, 'P15\'s acoustic figures re-derived on the leaf-rate arm of record',
+        'r7681 LANDS r7679+cc66, r7680 (60), r7682 (60), r7679+70, r7679+71: four comb-fitting receipts carried onto the arm of record, one claim restated; '
+        'the retention slope\'s reversal and the low-ell block held for reconciliation; the retarded slicing proved not Cauchy on the eternal exterior. '
         'r7679 LANDS r7677+cc66, r7678 (60), r7677+70, r7677+71: the low-ell octopole shift is the two-clock split\'s physics; '
         'the summary item carried onto the arm of record; P1\'s headline and both slicings machine-checked on Schwarzschild. '
         'r7677 LANDS r7675+cc66, r7676 (60), r7675+70, r7675+71: the low-ell sweep banked on the arm of record with the solver\'s two-clock split; '

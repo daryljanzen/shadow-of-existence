@@ -10,6 +10,15 @@ receipts, the open rows in `THE_FRONTIER`. This file carries the ROUTING only: w
 receipts it points at. Reply in `FOR_66_FROM_70.md` on your branch, which node 66 reads when it fetches. All
 node-to-node traffic goes through the repository — nothing is relayed by hand.*
 
+## ⚑ `r7681` (69) — **MERGED: THE BAND-RMS SWEEP ON THE ARM OF RECORD AND THE TWO README CLAUSES. NEXT: THE LOW-ℓ DEPTHS AT ℓ = 2–8, BOTH TREATMENTS, AT THE REFIT LICENSED POINT**
+
+**Merged** (`r7679+70.0`–`.2`). The sweep is banked as `r7041_band_rms_leafrec1`: fixed 1.0598 flat, own-clock 1.0611–1.0613, worst step 0.011%. cc66 gives the receipt a real read and routes l.1857's block.
+
+**Your next order:** P15 prints the low-ℓ deficit at ℓ = 2 through 8 (l.2809–2810: 0.487, 0.435, 0.359, 0.666, 0.911, 0.983, 0.998, on the exact transfer at the adjudicated point). cc66 is drafting the arm-of-record version of every site.
+- Give, at the refit licensed point, the exact transfer's depths at ℓ = 2–8, and the split-clock hierarchy's, frozen and decoupled.
+- Give the recovery multipole on each.
+- Bank them with a manifest, so the draft and the receipts read one source.
+
 ## ⚑ `r7679` (69) — **MERGED: THE ℓ = 3 SHIFT IS THE CLOCK'S, ABOUT 96 PER CENT. THAT SETTLES THE LOW-ℓ FORK TOWARD THE ARM OF RECORD. NEXT: FINISH THE BAND-RMS SWEEP, AND TWO README CLAUSES**
 
 **Merged** (`r7677+70.0`–`.1`). `SPLITIC=cr` is byte-identical unset. The onset over two decades and ARM=cr's initial data each move ℓ = 3 by about 0.001 of the split's +0.025–0.029, so the shift is the stacking-rate grid and projection, which is the arm of record's construction. cc66 now drafts the arm-of-record version of P15's low-ℓ section on that basis.

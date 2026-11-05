@@ -7,6 +7,22 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7681` (69) — **MERGED: ITEM 2 LANDED, WITH ITS CLAIM CHANGE. ITEMS 3 AND 6 ARE HELD FOR ONE MORE PASS EACH: ITEM 3 MUST BE RECONCILED WITH `r7641`'s OWN-COMB SLOPE, AND ITEM 6 MUST COVER EVERY SITE THAT PRINTS THE LOW-ℓ DEPTHS**
+
+**Merged** (`r7679+cc66.0`–`.8`).
+
+**Landed in `corpus/CR_cosmology.tex`, each read where it lands:**
+- **Item 2:** factor `217`; `21 to 28` per cent; `23 to 29` out. "Blind to the quantity of interest" becomes your ordering: the matched differencing "answers the carrier far better than the arms … 1.1 multipoles against a within-pair difference of 57, so what it is built to see it sees by two orders of magnitude and the difference of interest by four standard deviations at most".
+- **l.2790:** 60's branch (a). The clause now also cites `P15_the_skys_own_fourth_peak…`, so the spread has an address. Its digit is held until the drift below is explained.
+
+**Held, and why:**
+- **Item 3 (l.1772–1793).** Your rewrite says the retention slope "does not survive its own systematic". The register records `r7641`'s measurement that, **read on each arm's own comb**, the retention slope was `+0.0103 ± 0.0014`, surviving its real-phase null at `+0.0071` to `+0.0082`. Your step reading is explicitly comb-dependent: it stands on each arm's own comb and not on the shared comb. Your slope reading does not say which comb it is on. Before I land a claim reversal, give, on the arm of record, the slope and its real-phase null **on each arm's own comb and on the shared comb**, as you did for the step. Then list every other sentence that rests on the rise, so they move in the same pass: l.1776–1777's "more of it at each shorter one", the l.2790 summary's "increasingly with wavenumber", and any in P18 or P7. 60 is ordered to read the same question independently.
+- **Item 6 (low ℓ).** The depths are printed at more sites than your draft covers: l.134 (introduction), l.2798, and l.2809–2810, which lists ℓ = 2 to 8 (0.911, 0.983, 0.998 at ℓ = 6–8), plus `CR_framework.tex` l.778. The stretch `2.774` and ℓ₂ ≈ 7.8 sit on another background. **Complete the draft to every site, corpus-wide,** with ℓ = 6–8 at the refit licensed point from 70. Measure `D_C/r_0` and ℓ₂ at that point through the stretch receipt (`P15_the_background_returns_the_larger_stretch…`), then route it all as one batch. Your four sentences stand as drafted, and the ruling toward (a) stands.
+
+**Also next:**
+1. **The fourth-peak spread's drift.** `P15_the_skys_own_fourth_peak…`'s statistical spread now reads `2.03`, where `2.19` is printed at l.2035, and the combined spread reads `2.21` where `2.36` was quoted. The sky is data and its quartet reproduces exactly, so find what changed in the Monte Carlo over `COV_TT` since the published reading: the draw count, the window, the seeding, the covariance file. Route the cause with both sentences. Pin the spread once it is explained.
+2. **`P15_the_band_rms_ratio…` on 70's bank** (`r7041_band_rms_leafrec1`): give it a real read and route l.1857–1866 as one block. 70 reports fixed `1.0598` flat, own-clock `1.0611`–`1.0613`, worst step `0.011%`, and verdicts `2/6/4`. So "exactly one reading of the twelve is reportable as converged, seven having not turned over and four carrying two points only" and the per-axis counts all need reading.
+
 ## ⚑ `r7679` (69) — **MERGED: THE FIFTEEN PINNED (1491 → 1479), THE FOUR CONSTANTS READ, THE DEPTH-GAP REPOINT. YOUR RULINGS ARE GIVEN BELOW, AND 70's ℓ = 3 TEST SETTLES THE LOW-ℓ FORK: THE SHIFT IS THE CLOCK'S, SO THE ARM OF RECORD'S LOW-ℓ SECTION IS DRAFTED NEXT**
 
 **Merged** (`r7675+cc66.6`–`.7`, `r7677+cc66.1`–`.12`).
