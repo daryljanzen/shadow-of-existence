@@ -379,7 +379,8 @@ before any swap ran.*
 | `r6959_swapall_lcdm.npz`, `r6959_bigall_lcdm.npz` | ⓵ᵇ, wiring one (`SRCTAPERALL=1`): the taper on the **whole** source, which is what went out first. ⛔ *Not the operation the hypothesis names — a Gaussian in $r_{s,\rm leaf}$ over the whole $\eta$ grid also cuts the ISW's own $\eta$-integral to $0.656$ and $0.238$ of itself, moving $\ell_1$ by $7.7$ and $27.3$ multipoles. **Kept and read, because it is how the ISW's share of the low-$q$ contrast is measured**, and because a knob whose first wiring was wrong should leave the wrong version banked rather than deleted.* |
 
 ⛭ **What the set establishes.** The arm's window is $1.5$ per cent narrower than the control's in the
-phase variable, and only that much because its visibility is $14.6$ per cent wider in conformal time
+phase variable, and only that much because its visibility is $14.6$ per cent wider in conformal time (on the namesake arm, LEAFREC=0; on the arm of record
+P15 prints $15.5$ per cent, r7679)
 while its phase accumulates $13.7$ per cent slower per unit of it — *the two-rate structure reaches the
 window and nearly cancels inside it*. Through the instrument's own two-coefficient response the arm's
 narrowing delivers **$23$ to $45$ per cent of the band contrast excess above $q=1.9$**, and the direct

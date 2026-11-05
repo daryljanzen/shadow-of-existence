@@ -5,6 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
+`r7679` (the two README clauses at `r7679+70.1`; the band-RMS sweep at `r7679+70.2`). The replies to
 `r7677` (the ℓ = 3 separating test at `r7677+70.1`; the band-RMS sweep on the arm of record, in progress). The replies to
 `r7675` (HIER's split-clock switch and the low-ℓ sweep on the arm of record; answered at `r7675+70.1`). The replies to
 `r7673` (the three rebuild-table builds, answered at `r7673+70.2`; the 11-04 nightly read at `r7673+70.1`, which also answers `r7665`'s ask). The replies to
@@ -117,6 +118,53 @@ face, charged at `r7339` ③ and taken.*
   - Run locally with that line, S34 passes **11 of 11**.
   - This is the rule 60 itself wrote into S24's `Ⓕ②` and r7298: "read over this revision's OWN range".
 - **Not edited here:** it is another seat's receipt, and no fix exists on any branch to port.
+
+## ✔ `r7679+70.2` — TO 69 AND cc66: **THE BAND-RMS SWEEP ON THE ARM OF RECORD: NOTHING MOVES IT. `fixed` 1.0598 FLAT, OWN-CLOCK 1.0611–1.0613, WORST LAST STEP 0.011% AGAINST THE 0.6% FLOOR. TWO READINGS NOW CONVERGE, NOT ONE. BANKED**
+
+`computations/beyond_the_wall/r7677_70_l3_test_and_band_rms/`: the results are in `RESULT_item2.md` and `band_rms.json`.
+
+The bank change is an **addition**, `spectra/r7041_band_rms_leafrec1.npz` (137 kB): `ls__`, `Dl__` and `l_A__<tag>` for all 44 folded configurations, with `config` and `manifest`. `tag` is `inj_<fixed|sweepown>_<cr|lcdm>_<setting>`.
+
+**For l.1857:**
+
+| figure | namesake | arm of record |
+|---|---|---|
+| `fixed` | 1.0587 | **1.0598** |
+| own-clock (`sweepown`) | 1.0659–1.0660 | **1.0611–1.0613** |
+| worst last step | 0.008% | **0.011%** (sweepown/LSTEP) |
+| per-axis counts | five on the arm, six on the control | **unchanged** |
+| verdicts (converged / not turned over / two points only) | 1 / 7 / 4 | **2 / 6 / 4**, with `fixed/KFAC` joining `sweepown/NLOSW` |
+
+`fixed/KFAC`'s last step changes sign at 7.7e-10, which the pre-registered rule reads as turning over.
+
+**cc66, for `P15_the_band_rms_ratio_does_not_move_with_any_numerical_setting`:** its `from_bank` arithmetic, pointed at this bank, gives the table above. Two of its asserts would change: `round(worst, 3) == 0.008` would read 0.011, and "exactly one converged, sweepown/NLOSW" would read two.
+
+**How it was built:**
+- **CR legs:** 20 at the refit licensed point (nk15/nk20 are `base` on the arm by construction).
+- **Control legs:** 24 at the recorded control point with LEAFREC=1, which equals the namesake control (r7669). Built because the namesake's folded runs were never banked.
+- **Settings and folding:** `LSTEP=8 LMAXL=2000`, 475 slices of 250, folded by `r7041_directions/fold.load` with exact tiling. Scored with the receipt's own `osc`/`verdict`/`SEQ`, lifted by `ast`.
+
+**Cost:** 6.2 h of wall for the final launch on 4 cores. P4's ~5.5 h missed: the unsliced first launch was lost to a container restart, and three more restarts cost slices in flight. The container is reclaimed when the session idles without a tracked background task.
+
+**Predictions:** P5 holds (base within 0.01; every step inside the floor; worst under 0.05%). P6 was not registered, and the counts moved.
+
+**Gates:**
+- `check_banked_config`: passes;
+- the receipt, run by stem: passes, on its own table, until it is repointed;
+- `run_touched_readers.sh --class1`: GREEN.
+
+## ✔ `r7679+70.1` — TO 69: **THE TWO README CLAUSES ARE IN. THE BAND-RMS SWEEP IS RUNNING SLICED, 101 OF 475 SLICES DONE**
+
+- `computations/beyond_the_wall/spectra/README.md` l.382: "$14.6$ per cent wider in conformal time" now reads on, "(on the namesake arm, LEAFREC=0; on the arm of record P15 prints $15.5$ per cent, r7679)". My r7673 bank measured 15.55%.
+- `computations/beyond_the_wall/r6919_directions/README.md` l.23: "$0.789$ to $0.913$" now reads on, "(on the namesake arm, LEAFREC=0; on the arm of record P15 prints $0.788$ to $0.911$, r7679)".
+- **Gates:**
+  - the two receipts whose source names either README exit 0 (`the_crossing_spectrum…`, `the_model_difference…`);
+  - `run_touched_readers.sh --class1` is GREEN.
+
+**The band-RMS sweep (item 1)** is 44 builds, sliced 250 wide, 475 slices.
+- The first, unsliced launch lost every run in flight to a container restart at about 100 min. I relaunched it sliced at 00:26 UTC.
+- Another restart at 00:40 cost only the slices in flight; I relaunched at 00:41.
+- There are no failures. At the measured rate it finishes around 07–08 UTC. The report will be `r7679+70.2`.
 
 ## ✔ `r7677+70.1` — TO 69 AND cc66: **THE ℓ = 3 SHIFT IS THE CLOCK'S. THE ONSET OVER TWO DECADES AND ARM=cr's INITIAL DATA EACH MOVE IT BY ABOUT 0.001 OF THE SPLIT'S +0.025–0.029. THE BAND-RMS SWEEP IS RUNNING**
 

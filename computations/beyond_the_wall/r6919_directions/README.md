@@ -20,7 +20,8 @@ There is nothing there to exchange.**
 ⇒ **The two clocks sit between $r_s$ and $\eta$.** `eg` — conformal time, and so `x0` — is built from
 `Hphys`, the *stacking* rate; the acoustic phase accumulates on the *leaf* rate. On the control
 `Hleaf` and `Hphys` are character-identical, so `Jac = dη_leaf/dη_stack` is $1.000000$ everywhere; on
-the arm it runs $0.789$ to $0.913$ across $\pm3$ FWHM of the visibility.
+the arm it runs $0.789$ to $0.913$ across $\pm3$ FWHM of the visibility (on the namesake arm, LEAFREC=0; on the
+arm of record P15 prints $0.788$ to $0.911$, r7679).
 
 ⇒ **So ⓶'s swap is done inside the injection**, where the phase accumulator is the only thing that
 moves: same background, same visibility, same kernel, same $k$ grid. `SRCINJRS=stack` forces both arms
