@@ -57,6 +57,41 @@ MEASURES IS THE COMB'S OWN PEAK COUNT RATHER THAN THE CARRIER. *** **
   sampling fixes.**  ⚠ *Four peaks and not five, and forming `$(\varphi,{\rm alt})$` on four is a
   new measurement with its own burden -- named as a route, NOT made here.*
 
+  ⛭⛭⛭ ** `r7679+cc66.3` -- EVERY DIGIT ABOVE IS A NAMESAKE READING, AND THIS IS WHAT IT READS ON
+  THE ARM OF RECORD. **  `r7679` (69) item 2 repointed this receipt's four CR legs onto the
+  `_leafrec1` banks, PER ARM: the control legs did not move, because `LEAFREC` does not reach them.
+  *The digits above stay as published -- pinned on the banks that measured them, 69's `PUB156`
+  ruling -- and the gate labels below now INTERPOLATE what they compute, so a repoint can no longer
+  leave a green gate quoting a bank it has stopped reading.*
+
+    ① ** the driving separation. **  `$\Delta L_p=56.693$` reads `$57.192$`; the bank's own sigma
+      takes it from `$218\sigma$` to `$146\sigma$` and the scale-invariant one from `$93$` to `$95$`.
+      *The bank's sigma moves most because it is amplitude-dependent, which is `Ⓑ⑤`'s subject.*
+      The pre-registered bound's terms sum to `$4.97$` where they summed to `$5.05$`, so the failed
+      prediction is `$5.7$` times the bound and `$11.5$` times the terms.  *** Unchanged in kind:
+      item ① still has a yes and the pre-registration is still wrong by the same multiple. ***
+    ② ** the lock. **  `$L_p$` is the fitted curve's own spacing to `$0.1$`--`$0.3$` per cent on the
+      driving-OFF pair (was `$0.16$`) and misses by `$21$`--`$28$` per cent on the other four (was
+      `$21$`--`$27$`).  *** Unchanged in kind, and it is still what the separation measures. ***
+    ③④⑤⑥ ** the loading pair, the window spread, the sky. **  `cr_rb1.5` still has no interior
+      optimum in any box; the window still moves `cr_nodrive`'s `$L_p$` by `$14.3$` against a formal
+      `$\sigma$` of `$0.01$`--`$4.28$`; the sky still lands at `$351.807$` -- it is DATA and does not
+      move -- but the arm's base does, so the sky sits `$0.900$` from it where it sat `$1.68$`.
+      `cc66.162`'s `$35\sigma$` and `$379\sigma$` still read `$54$` and `$82$` on the scale-free
+      convention.  *** Unchanged in kind. ***
+    ⛔ ** ONE CLAIM DOES NOT SURVIVE, and it is not a figure move. **  `Ⓒ③` published the matched
+      differencing as BLIND to the arm: `$(\rm arm-sky)-(\rm control-sky)=0.295$`, `$1.6$` of the
+      bank's sigma and `$0.35$` of the scale-invariant one, against the carrier's `$218$`.
+      ** On the arm of record it is `$+1.072$`: `$4.42$` and `$1.28$` sigma, against the carrier's
+      `$146$` and `$95$`. **  *`$4.42\sigma$` is not blind -- the arm DOES separate from the control
+      through this extraction once both are on the arm of record.  What survives is the ORDERING the
+      conclusion rests on: the carrier outseparates the arm `$33$` times on the bank's sigma and
+      `$74$` times on the scale-invariant one, more than an order of magnitude on both, so a
+      statistic that answers the carrier that much better than the arm is still not the instrument
+      for this measurement, which is `cc66.161`'s conclusion.*  ⛔ *`Ⓒ③`'s gate now asserts that
+      ordering and NOT blindness; a widened bound on `$4.42<3.0$` would have hidden the finding.
+      Routed to `69` as a CLAIM CHANGE.*
+
 ** COMPUTES: `cc66.162`'s centred four-parameter comb, unchanged and pinned to its published
    digits; its `$L_p$` differenced within `cc66.158`'s driving and loading pairs; PART C's locator
    pointed at the FITTED curves; the same extraction run on `plik_lite` TT and scored against its
@@ -339,13 +374,40 @@ for tag, p in SPECTRA + (('sky', None),):
     print(f"      {tag:13s} {b.x[0]:9.3f} {b.x[5]:+8.3f} {vps:6.2f} {lp:9.3f} {sg:8.4f} "
           f"{rho:+10.4f} {b.fun:10.4g} "
           f"{(f'{PUB[tag][0]:13.3f}' if tag in PUB else ' not published')}")
-check("Ⓐ①  ** THE FIVE SPECTRA cc66.162 PUBLISHED COME BACK TO ITS PRINTED DIGITS -- `$L_p$` TO "
-      "THREE DECIMALS, `$\\rho$` TO FOUR, `$\\sigma$` TO THREE. **  *The one change here is that "
-      "`fit()` computes its four tight refits ONCE instead of twice; Nelder-Mead from a fixed "
-      "start is deterministic, so nothing can move -- and this is what says so.  **A re-used "
-      "instrument that is not pinned is a new instrument wearing the old one's results***",
-      all(abs(LP[t] - PUB[t][0]) < 5e-4 and abs(RHO[t] - PUB[t][1]) < 5e-5
-          and abs(SIG[t] - PUB[t][2]) < 5e-4 for t in PUB))
+# ⛭⛭⛭ `r7679+cc66.3` -- ** THE CALIBRATION IS ASSERTED ON THE BANK cc66.162 MEASURED, NOT ON THE
+#   ONE THIS RECEIPT NOW READS. **  `Ⓐ①` pins five PUBLISHED digits, and after `r7679`'s repoint the
+#   live table is the arm of record while `PUB` is cc66.162's NAMESAKE reading.  ⛔ *Pinning a
+#   published digit against a different bank is not a calibration failing -- it is the calibration
+#   being asked the wrong question, and it went red for exactly that reason.*
+#   ⇒ 69's own ruling on `PUB156` (`r7673+cc66.13`) applies here: a published digit is pinned on what
+#     it was measured on, and the arm-of-record reading is reported BESIDE it as the new number it
+#     is.  So the calibration pass is run over `SPECTRA_NSK` and `Ⓐ①` is scored there; everything
+#     below stays on the arm of record.
+LP_NSK, SIG_NSK, RHO_NSK = {}, {}, {}
+print(f"\n      {'CALIBRATION on the NAMESAKE banks -- what cc66.162 published':<62s}")
+print(f"      {'spectrum':13s} {'L_p':>9s} {'sigma':>8s} {'rho(lA,d)':>10s} "
+      f"{'cc66.162 L_p':>13s} {'the ARM OF RECORD L_p':>22s}")
+for tag, p in SPECTRA_NSK:
+    _lb, _db, _ = binned(p)
+    _ls, _Y = detilt(_lb, _db)
+    _b, _ = fit(_ls, _Y)
+    _lp, _sg, _rho, _vps, _ins = centred(_ls, _Y, _b)
+    LP_NSK[tag], SIG_NSK[tag], RHO_NSK[tag] = _lp, _sg, _rho
+    print(f"      {tag:13s} {_lp:9.3f} {_sg:8.4f} {_rho:+10.4f} "
+          f"{(f'{PUB[tag][0]:13.3f}' if tag in PUB else ' not published'):>13s} "
+          f"{LP[tag]:22.3f}")
+check("Ⓐ①  ** THE FIVE SPECTRA cc66.162 PUBLISHED COME BACK TO ITS PRINTED DIGITS, ON THE BANKS IT "
+      "MEASURED THEM ON -- `$L_p$` TO THREE DECIMALS, `$\\rho$` TO FOUR, `$\\sigma$` TO THREE. **  "
+      "*The one change to `fit()` is that its four tight refits are computed ONCE instead of twice; "
+      "Nelder-Mead from a fixed start is deterministic, so nothing can move -- and this is what says "
+      "so.  **A re-used instrument that is not pinned is a new instrument wearing the old one's "
+      "results.***  ⛭⛭ `r7679+cc66.3`: this is now scored on `SPECTRA_NSK`, because the repoint put "
+      "the live table on the ARM OF RECORD and `PUB` is a NAMESAKE publication.  *Pinning it against "
+      "the new bank would not have been a calibration failing -- it would have been the calibration "
+      "asked the wrong question, which is why it went red.  The arm-of-record readings are printed "
+      "beside it as the new numbers they are, which is 69's own `PUB156` ruling*",
+      all(abs(LP_NSK[t] - PUB[t][0]) < 5e-4 and abs(RHO_NSK[t] - PUB[t][1]) < 5e-5
+          and abs(SIG_NSK[t] - PUB[t][2]) < 5e-4 for t in PUB))
 
 _same = []
 for tag, p in SPECTRA + (('sky', None),):
@@ -414,13 +476,22 @@ for name, (a, b) in (('driving  (cr, r7221 ①)', DRIVING_PAIR),
             if EDGE[a] or EDGE[b] else '')
     print(f"      {name:28s} {dl:+10.3f} {s0:11.4f} {dl/s0:9.1f} {s1:17.4f} {dl/s1:9.2f}{flag}")
 _dd, _ds0, _ds1 = DIFF['driving  (cr, r7221 ①)']
-check("Ⓑ①  ** ITEM ① HAS A YES: THE DRIVING PAIR SEPARATES ON `$L_p$` BY `$56.693$`, WHICH IS "
-      "`$218$` OF THE BANK'S OWN SIGMA AND `$93$` OF THE SCALE-INVARIANT ONE. **  *`r7221` asks "
+# ⛭⛭ `r7679+cc66.3` -- ** THE DIGITS IN THESE THREE LABELS ARE INTERPOLATED FROM WHAT THE GATE
+#   ITSELF COMPUTES, so the repoint cannot leave a label quoting a bank it no longer reads.  The
+#   namesake publication is named beside each as the namesake's.  ⛔ *`Ⓑ①` said `$56.693$`,
+#   `$218$` and `$93$` while the arm of record reads `$57.192$`, `$146$` and `$95$` -- a stale
+#   quotation in a GREEN gate, which is the `r7671` lesson arriving a second time.  The fix for a
+#   stale quotation is to correct the quotation; here it is to stop writing it by hand.*
+check(f"Ⓑ①  ** ITEM ① HAS A YES: THE DRIVING PAIR SEPARATES ON `$L_p$` BY `${abs(_dd):.3f}$`, WHICH IS "
+      f"`${abs(_dd)/_ds0:.0f}$` OF THE BANK'S OWN SIGMA AND `${abs(_dd)/_ds1:.0f}$` OF THE "
+      "SCALE-INVARIANT ONE. **  *`r7221` asks "
       "`whether the carrier difference is larger than that` and it is larger by two orders.  "
       "⌗ The bank's `$\\sigma$` is the unit-variance one `cc66.162` published; the models carry "
       "ARBITRARY amplitudes (`$Y$` rms `$35$` against `$88$` across this one pair), so that "
       "`$\\sigma$` is amplitude-dependent and the second column -- `$\\sigma\\sqrt{\\chi^2/{\\rm "
-      "dof}}$`, which is not -- is given beside it throughout*",
+      "dof}}$`, which is not -- is given beside it throughout*  ⛭⛭ `r7679+cc66.3`: on the NAMESAKE "
+      "banks this read `$56.693$`, `$218$` and `$93$`; the arm of record moves the bank's sigma most "
+      "because that sigma is amplitude-dependent, which is why the scale-invariant column is here",
       abs(_dd) / _ds0 > 100 and abs(_dd) / _ds1 > 50)
 
 _pre = abs(_dc0_drv) + abs(VPS['cr_base'] * (C2['cr_base'] - C2['cr_nodrive'])) \
@@ -430,10 +501,11 @@ print(f"      pre-registered:  |Delta L_p| = |Delta c0 + v_p Delta c2 + c2 Delta
       f"{_pre:.2f}, bounded at {PRED:.0f}")
 print(f"      measured:        {abs(_dd):.3f}   -- {abs(_dd)/PRED:.1f}x the bound, "
       f"{abs(_dd)/_pre:.1f}x the terms")
-check("Ⓑ②  ⛔ ** MY PRE-REGISTERED NUMBER IS WRONG -- SIX TIMES THE BOUND I WROTE AND ELEVEN "
-      "TIMES THE TERMS THAT PRODUCED IT -- AND IS REPORTED AS `r7221` ASKED, AGAINST THE "
-      "MEASUREMENT EITHER WAY. **  *The terms the gap geometry allows sum to `$5.05$` and I "
-      "bounded the prediction at `$10$`; it is `$56.693$`.  ⚠ **AND IT WAS NOT "
+check(f"Ⓑ②  ⛔ ** MY PRE-REGISTERED NUMBER IS WRONG -- {abs(_dd)/PRED:.1f} TIMES THE BOUND I WROTE AND "
+      f"{abs(_dd)/_pre:.1f} TIMES THE TERMS THAT PRODUCED IT -- AND IS REPORTED AS `r7221` ASKED, AGAINST THE "
+      f"MEASUREMENT EITHER WAY. **  *The terms the gap geometry allows sum to `${_pre:.2f}$` and I "
+      f"bounded the prediction at `${PRED:.0f}$`; it is `${abs(_dd):.3f}$` (on the NAMESAKE banks "
+      "`$5.05$` and `$56.693$`).  ⚠ **AND IT WAS NOT "
       "A BLIND PREDICTION:** `cc66.162` printed `$L_p=350.131$` and `$293.438$`, so this "
       "difference was already in print and I knew the bound was wrong before the run began.  *It "
       "is recorded as a failed prediction and not as a test; the blind ones were the loading pair, "
@@ -443,7 +515,7 @@ check("Ⓑ②  ⛔ ** MY PRE-REGISTERED NUMBER IS WRONG -- SIX TIMES THE BOUND I
 print()
 print(f"      {'spectrum':13s} {'L_p':>9s} {'fitted curve mean gap':>22s} {'off by':>8s} "
       f"{'max|peak - data peak|':>22s}")
-LOCK, MGF = {}, {}
+LOCK, MGF, OFFP = {}, {}, {}      # OFFP: ⛭ `r7679+cc66.3`, so Ⓑ③'s label can quote it
 for tag, p in SPECTRA + (('sky', None),):
     x0, _fun, _lA, ls, Y = FITS[tag]
     A = design(ls, *x0)
@@ -454,20 +526,30 @@ for tag, p in SPECTRA + (('sky', None),):
     n = min(len(pf), len(pd))
     off = float(np.max(np.abs(pf[:n] - pd[:n]))) if n else float('nan')
     MGF[tag] = mgf
+    OFFP[tag] = off
     LOCK[tag] = abs(LP[tag] / mgf - 1.0)
     print(f"      {tag:13s} {LP[tag]:9.3f} {mgf:22.2f} {LOCK[tag]*100:7.1f}% {off:22.2f}")
 _locked = tuple(t for t in LOCK if LOCK[t] < 0.01)
 print(f"      ⇒ `L_p` IS the fitted curve's own spacing on: {', '.join(sorted(_locked))}")
-check("Ⓑ③  ⛔⛭⛭⛭ ** AND THAT IS WHY: `$L_p$` IS THE FITTED CURVE'S OWN PEAK SPACING ONLY WHERE THE "
-      "FIT LOCKS ONTO THE PEAK TRAIN -- `$0.2$` PER CENT ON THE TWO DRIVING-OFF SPECTRA, "
-      "`$21$`--`$27$` PER CENT OUT ON THE OTHER FOUR INCLUDING THE SKY. **  *Pointing PART C's own "
-      "locator at the FITTED curve, not at the data: where the comb locks, its maxima sit `$1.6$` "
-      "from the data's and `$L_p$` is their spacing; where it does not, they sit `$21$`--`$24$` out "
+_OTH = ('cr_base', 'lcdm_base', 'cr_rb0.5', 'sky')
+_lk = tuple(sorted(_locked))
+check(f"Ⓑ③  ⛔⛭⛭⛭ ** AND THAT IS WHY: `$L_p$` IS THE FITTED CURVE'S OWN PEAK SPACING ONLY WHERE THE "
+      f"FIT LOCKS ONTO THE PEAK TRAIN -- `${min(LOCK[t] for t in _lk)*100:.1f}$`--"
+      f"`${max(LOCK[t] for t in _lk)*100:.1f}$` PER CENT ON THE TWO DRIVING-OFF SPECTRA, "
+      f"`${min(LOCK[t] for t in _OTH)*100:.0f}$`--`${max(LOCK[t] for t in _OTH)*100:.0f}$` PER CENT "
+      "OUT ON THE OTHER FOUR INCLUDING THE SKY. **  *Pointing PART C's own "
+      f"locator at the FITTED curve, not at the data: where the comb locks, its maxima sit "
+      f"`${max(OFFP[t] for t in _lk):.2f}$` "
+      f"from the data's and `$L_p$` is their spacing; where it does not, they sit "
+      f"`${min(OFFP[t] for t in _OTH if t != 'sky'):.0f}$`--"
+      f"`${max(OFFP[t] for t in _OTH if t != 'sky'):.0f}$` out "
       "and `$L_p$` is the spacing of a phase map that no feature of the curve has.*  ⌗ *The sky's "
-      "`$558$` in that last column is NOT its fit being worse: it is the DATA's own located peaks "
+      f"`${OFFP['sky']:.0f}$` in that last column is NOT its fit being worse: it is the DATA's own located peaks "
       "coming back out of order at the bank's native binning, which is PART D's subject*  ⇒ "
-      "**So the `$218\\sigma$` is the difference between a fit that locks and one that does not, "
-      "and the carrier's role in it is that the driving is what breaks the lock.**",
+      f"**So the `${abs(_dd)/_ds0:.0f}\\sigma$` is the difference between a fit that locks and one that "
+      "does not, and the carrier's role in it is that the driving is what breaks the lock.**  "
+      "⛭⛭ `r7679+cc66.3`: on the NAMESAKE banks these read `$0.2$`, `$21$`--`$27$`, `$1.6$`, "
+      "`$21$`--`$24$`, `$558$` and `$218\\sigma$`",
       set(_locked) == {'cr_nodrive', 'lcdm_nodrive'}
       and all(LOCK[t] > 0.15 for t in ('cr_base', 'lcdm_base', 'cr_rb0.5', 'sky')))
 
@@ -566,11 +648,14 @@ print(f"      L_p(sky) = {LP['sky']:.3f}   on {NPT['sky']} binned points, the sa
 print(f"      {'against':20s} {'L_p':>9s} {'sky - it':>9s}")
 for tag in ('cr_base', 'lcdm_base', 'cr_nodrive', 'lcdm_nodrive', 'cr_rb0.5'):
     print(f"      {tag:20s} {LP[tag]:9.3f} {LP['sky']-LP[tag]:+9.3f}")
-check("Ⓒ①  ** THE SKY LANDS ON THE DRIVING-ON BASES: `$L_p=351.807$`, WITHIN `$1.68$` AND `$1.97$` "
-      "OF THEM AND `$58.4$` FROM THE DRIVING-OFF PAIR. **  *Read naively that is the sky choosing "
+check(f"Ⓒ①  ** THE SKY LANDS ON THE DRIVING-ON BASES: `$L_p={LP['sky']:.3f}$`, WITHIN "
+      f"`${abs(LP['sky']-LP['cr_base']):.3f}$` AND `${abs(LP['sky']-LP['lcdm_base']):.3f}$` "
+      f"OF THEM AND `${abs(LP['sky']-LP['cr_nodrive']):.1f}$` FROM THE DRIVING-OFF PAIR. **  *Read naively that is the sky choosing "
       "the driving over its absence, on the row's tight direction, by two orders of the bank's "
       "`$\\sigma$`.  **It is the reading this order was built to reach and it is the one I am "
-      "about to withdraw** -- stated first, in the terms it would be stated in if it held*",
+      "about to withdraw** -- stated first, in the terms it would be stated in if it held*  "
+      "⛭⛭ `r7679+cc66.3`: on the NAMESAKE banks this read `$1.68$` and `$1.97$`; the sky does not "
+      "move on the repoint and the arm's base does",
       abs(LP['sky'] - LP['cr_base']) < 3.0 and abs(LP['sky'] - LP['cr_nodrive']) > 50.0)
 
 x0, _fun, _lA, ls, Y = FITS['sky']
@@ -613,14 +698,35 @@ print(f"          difference       {_ac[0]:+9.3f}   = {abs(_ac[0]/_ac[1]):.2f} s
       f"{abs(_ac[0]/_ac[2]):.2f} sigma(scale-invariant)")
 print(f"          the carrier, for scale                    {abs(_dd/_ds0):.0f} sigma(bank), "
       f"{abs(_dd/_ds1):.0f} sigma(scale-invariant)")
-check("Ⓒ③  ⛔ ** AND THE MATCHED DIFFERENCING IS BLIND TO THE ARM: `$(\\rm arm-sky)-(\\rm "
-      "control-sky)=0.295$`, WHICH IS `$1.6$` OF THE BANK'S SIGMA AND `$0.35$` OF THE "
-      "SCALE-INVARIANT ONE, AGAINST THE CARRIER'S `$218$`. **  *The extraction reaches the sky -- "
-      "`r7221` ② is right that the comb can be pointed where the locator could not -- and what it "
-      "says there does not distinguish the arm from `$\\Lambda$CDM`.  **A statistic that separates "
-      "the carrier by two orders and the arm by one sigma is not an instrument for this "
-      "measurement**, which is `cc66.161`'s conclusion reached from the other end*",
-      abs(_ac[0] / _ac[1]) < 3.0 and abs(_ac[0] / _ac[2]) < 1.0)
+# ⛔⛭⛭⛭ `r7679+cc66.3` -- ** THIS CLAIM IS FALSIFIED ON THE ARM OF RECORD AND THE GATE NOW SAYS SO.
+#   THE DIFFERENCING IS NOT "BLIND" TO THE ARM ANY MORE; WHAT SURVIVES IS THAT IT IS A FAR WORSE
+#   INSTRUMENT FOR THE ARM THAN FOR THE CARRIER, AND THAT IS WHAT THE CONCLUSION RESTED ON. **
+#
+#   On the namesake the difference was `+0.295` multipoles: `1.6` of the bank's sigma and `0.35` of
+#   the scale-invariant one, against the carrier's `218`.  ** On the arm of record it is `+1.072`:
+#   `4.42` and `1.28` sigma, against the carrier's `146` and `95`. **  ⇒ *`4.42` sigma is not blind.
+#   The arm DOES separate from the control through this extraction once both are on the arm of
+#   record, which is a CLAIM CHANGE and not a figure move, and it is routed to 69 as one.*
+#   ⌗ ** What survives is the comparison the conclusion is actually about: ** the carrier separates
+#   by `33` times the arm on the bank's sigma and `74` times on the scale-invariant one -- more than
+#   an order of magnitude on both -- so a statistic that answers the carrier that much better than
+#   the arm is still not the instrument for this measurement, which is `cc66.161`'s conclusion.
+#   ⇒ *So the gate asserts the ORDERING with both ratios printed, and does NOT assert blindness.  A
+#     widened bound on `4.42 < 3.0` would have hidden exactly the thing worth routing.*
+_r_bank = abs(_dd / _ds0) / abs(_ac[0] / _ac[1])
+_r_scal = abs(_dd / _ds1) / abs(_ac[0] / _ac[2])
+print(f"          ⇒ the carrier outseparates the arm by {_r_bank:.0f}x on the bank's sigma and "
+      f"{_r_scal:.0f}x on the scale-invariant one")
+check("Ⓒ③  ⛔⛭⛭ ** ON THE ARM OF RECORD THE MATCHED DIFFERENCING IS NOT BLIND TO THE ARM, AND WHAT "
+      "SURVIVES IS THE ORDERING: ** the arm-against-control difference is `$+1.072$` multipoles, "
+      "`$4.42$` of the bank's sigma and `$1.28$` of the scale-invariant one, where the carrier is "
+      "`$146$` and `$95$` -- so the carrier outseparates the arm by more than an ORDER OF MAGNITUDE "
+      "on both.  *A statistic that answers the carrier that much better than the arm is still not "
+      "the instrument for this measurement, which is `cc66.161`'s conclusion.*  ⛔ *On the namesake "
+      "the difference was `$0.295$`, `$1.6$` and `$0.35$` sigma, and the claim was BLINDNESS.  "
+      "`$4.42$` sigma is not blind: this is a CLAIM CHANGE, routed to 69, and the gate asserts the "
+      "ordering rather than a widened bound that would have hidden it*",
+      _r_bank > 10.0 and _r_scal > 10.0 and abs(_ac[0] / _ac[1]) > 3.0)
 
 _dlp = LP['cr_rb0.5'] - LP['cr_base']
 _dban = FITS['cr_rb0.5'][2] - FITS['cr_base'][2]
@@ -773,7 +879,7 @@ if fail:
     print(BAR)
     sys.exit(1)
 print(f"  ✔ {len(ran) - len(fail)} of {len(ran)} checks pass -- the carriers separate on L_p by "
-      "218 sigma, the separation")
+      f"{abs(_dd)/_ds0:.0f} sigma, the separation")
 print("    is the comb's own peak count, the sky's reading is void, and the closure has no number.")
 print(BAR)
 sys.exit(0)

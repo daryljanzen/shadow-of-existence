@@ -33710,3 +33710,100 @@ What that confirms, each against the entry that opened it:
 - **`.11`** — the tolerance perturbation and all three probe builds pass on this head, which is the stand-down's own prediction: the two NEVER-PROBED carries were re-probed by the next union and nothing was flagged. *So the stand-down was not a way of not looking — it named what the next run would do, and the next run did it.*
 
 ⌗ **The one re-run remains unspent on #625**, as `.11` said it would.
+
+---
+
+### ✔ `r7679+cc66.1`–`.4` — **ITEM 2 IS DONE: ALL FOUR ARRIVALS ARE ON THE ARM OF RECORD AND GREEN, THREE OF THEM WENT RED FIRST, AND TWO OF THE REDS WERE CLAIMS AND NOT DIGITS**
+
+**The repoint is PER ARM and that is forced, not chosen.** Both `_leafrec1` directories carry the CR legs and **not one control file** — nine files against `grid_oneclock`'s eighteen, four against the lever's seven — because `LEAFREC` does not reach the control (`r7669+70.1`). So `GO + '_leafrec1'` raises `FileNotFoundError` on `lcdm_base.npz`, which is the `r7645+cc66.68` shape exactly. Each of the four names the suffix **once**, as `_GARM`, resolves per arm with `_gd(d, arm)`, and carries a gate asserting *0 control files in the arm-of-record directories and 4 of 4 CR spectra moved* — a gate that fails if `_GARM` is pointed back at the namesake.
+
+| arrival | on the bare repoint | now |
+|---|---|---|
+| `the_three_parameter_comb…` | **RED** | ✔ 9 of 9 |
+| `the_carrier_separation_on_L_p…` | **RED**, 2 gates | ✔ 17 of 17 |
+| `the_fourth_parameter_recovers_the_drift…` | **RED**, 2 gates | ✔ 12 of 12 |
+| `centring_removes_the_correlation_exactly…` | ✔ green | ✔ 5 of 5 |
+
+⌗ **Arm ① of my own prediction said 2 to 4 would go red, central guess 3. Three did.**
+
+**⛭ The four reds, and what each one actually was.**
+
+1. **`the_three_parameter_comb…` Ⓑ②: a FIGURE.** The envelope-freedom factor reads **217** where `l.2304` prints `542`; the companion `24` holds at `24.2`. *Routed.*
+2. **`the_carrier_separation…` Ⓐ①: THE CALIBRATION ASKED THE WRONG QUESTION.** It pins the five `$L_p$`/`$\rho$`/`$\sigma$` digits `cc66.162` **published**, and the repoint had moved the live table to the arm of record underneath them. **That is not a calibration failing.** Per your `PUB156` ruling (`r7673+cc66.13`) the calibration pass now runs over `SPECTRA_NSK` and the arm-of-record reading is printed beside each row. On the namesake banks all five come back **exactly** — `350.131`, `349.835`, `293.438`, `293.476`, `347.672` — so the instrument is unchanged and only the bank moved.
+3. **`the_fourth_parameter…` Ⓐ②: the same shape, same fix.** Its `$d=0$` reduction pins `cc66.160`'s published `301.658 / 106.03`; on `SPECTRA_NSK` it reproduces both **to the digit**, and the arm-of-record reduction (`301.909 / 47.53`) is printed beside them.
+4. **⛔ `the_fourth_parameter…` Ⓑ② and `the_carrier…` Ⓒ③: TWO CLAIM CHANGES, and neither could be fixed by a digit.** Both are below, because both are yours to rule on.
+
+**⛔ CLAIM CHANGE 1 — the matched differencing is NOT blind to the arm.** `Ⓒ③` published it as blind: `$(\rm arm-sky)-(\rm control-sky)=0.295$`, `$1.6$` of the bank's sigma and `$0.35$` of the scale-invariant one, against the carrier's `$218$`. **On the arm of record it is `+1.072`: `4.42` and `1.28` sigma, against the carrier's `146` and `95`.** `4.42σ` is not blind — the arm *does* separate from the control through this extraction once both are on the arm of record. ⇒ **What survives is the ORDERING the conclusion rests on:** the carrier outseparates the arm **33×** on the bank's sigma and **74×** on the scale-invariant one, more than an order of magnitude on both, so a statistic that answers the carrier that much better than the arm is still not the instrument for this measurement — which is `cc66.161`'s conclusion, reached from the other end. **The gate now asserts that ordering and not blindness.** ⛔ *A widened bound on `4.42 < 3.0` would have gone green while deleting the only thing worth routing.*
+
+**⛔ CLAIM CHANGE 2 — `cr_rb1.5` is no longer reached from a single start.** `Ⓑ②` published it as reached from ONE coarse start where the others were reached from four, and made that solo reach *the second independent sign that its four-parameter fit is unidentified*. **On the arm of record it is reached from TWO.** ⇒ **What survives is again the ordering:** it is still the unique fewest, at **half** the others', and still the only spectrum on the box edge, so the corroboration test and the boundary test still agree on which spectrum to distrust. ⛔ *`REACH >= 2` passes on its own, so dropping the solo clause would have turned the gate green while deleting the finding.* **I measured the namesake reach rather than recalling it — one fit, not six, because this receipt's budget is 473s against CI's 900s — and it comes back `1`, so the published claim was right on the bank that published it.**
+
+**⛭⛭ And a defect of my own that neither gate caught: THREE GREEN GATES WERE QUOTING A BANK THEY HAD STOPPED READING.** `the_carrier…`'s `Ⓑ①` said `$56.693$`, `$218σ$`, `$93σ$` while computing `$57.192$`, `$146$`, `$95$`; `Ⓑ②` said `$5.05$` where the terms sum to `$4.97$`; `Ⓑ③` said `$0.2$`/`$21$`–`$27$`/`$1.6$`/`$558$` where it computes `$0.1$`–`$0.3$`/`$21$`–`$28$`/`$1.61$`/`$558$`; `Ⓒ①` said `$1.68$` where the sky now sits `$0.900$` from the arm's base. **None of them failed, because a label is prose.** ⇒ *Every one is now an f-string over the gate's own variables, with the namesake publication named beside it, so a repoint cannot leave a green gate asserting a stale number again.* ⌗ **This is the sixth lesson arriving a second time** — `r7671`'s stale anchors were the same defect in a different file — and the fix is the same: correct the quotation, and where you can, stop writing it by hand.
+
+---
+
+### ⛔ `r7679+cc66.5` — **ITEM 4: `CR_PK` AND `LCDM_PK` ARE LOCATED NOW, AND THE DISPLACEMENT IS A FIFTH OF THE CONSTANT THAT STOOD IN FOR IT — NOT THE DOUBLE I REGISTERED**
+
+`P15_the_skys_own_fourth_peak…` carried two hardcoded quartets attributed to `cc66.28`'s locator. `r7677+cc66.2` had already swept that locator over **369** locatable banks and got no nearer than `0.86` of a multipole to `CR_PK` and `1.46` to `LCDM_PK`, against constants quoted to a tenth. **PART 0 now locates both**, by the same seven-window sweep PART 1 uses on the sky, on the comb receipt's own pair: `grid_oneclock_leafrec1/cr_base.npz` for the arm and `grid_oneclock/lcdm_base.npz` for the control.
+
+| | peak 1 | peak 2 | peak 3 | **peak 4** |
+|---|---|---|---|---|
+| located, arm (arm of record) | 222.28 | 537.55 | 813.63 | **1127.72** |
+| located, control | 220.67 | 537.67 | 812.52 | **1127.31** |
+| located, arm (this grid's NAMESAKE leg) | 220.40 | 537.27 | 812.66 | **1127.15** |
+| hardcoded `CR_PK` | 221.8 | 536.8 | 812.9 | **1126.5** |
+| hardcoded `LCDM_PK` | 220.2 | 537.0 | 811.7 | **1124.5** |
+
+Procedure spread is **under 0.75 of a multipole on every peak and all seven windows agree**, so the disagreement is not the locator being unstable.
+
+- **The construction's own fourth-peak displacement goes from `+1.95` to `+0.41` in ℓ** — `0.19σ` of the sky's spread at `W=55` and `0.26σ` at `W=80`.
+- **The hardcoded pair is not the namesake's reading either:** on this grid's namesake leg the displacement is **`−0.16`**. *So `+1.95` is reproduced by neither leg of the bank it was attributed to, which is `r7677+cc66.2`'s finding arriving from the one bank the sentence is about.*
+- **The title's finding gets STRONGER.** Both models still sit high of the sky — control `+5.46`, arm `+5.87` — so the shared offset is larger than it was and the construction's share of it is **7 per cent where it was 43**. "The displacement is shared with the control" is now almost all of it.
+- **⛔ One gate is FALSIFIED and restated, not re-toleranced.** *"Not comfortably inside at the tighter window"* asserted `0.9σ` rising to `1.3σ` on the hardcoded pair. The located displacement is inside at **both** windows by a wide margin, so the `not resolved rather than zero` hedge is no longer what the measurement says; the gate now asserts what the numbers say, with the sky's offset from EITHER model as the thing that is not resolved. ⛔ *A loosened bound would have kept reporting `not resolved` out of a constant nothing reproduces.*
+- **⌗ My arm ⑤ is FALSIFIED on the displacement and confirmed on the gate count.** I registered that it would roughly DOUBLE to `+4.1`, on `r7677+cc66.2`'s read of `cc66_r185_verify_cr_leafrec1`. **It is `+0.41`.** The reason is the bank family: *this* grid's two legs agree on the fourth peak to half a multipole where that family's differ by four, so a fourth-peak displacement is a property of the bank the sentence is read on and not of `LEAFREC`. Gate count: **1 red**, against a registered 1-to-5, central guess 2. ✔
+- **GATES: ALL PASS** on the located quartets.
+
+As you said, this does not move print — the `l.2790` clause is already re-grounded on the matched locator. **But it found something that does, and it is the next entry.**
+
+---
+
+### ⛔ `r7679+cc66.6` — **`PO-47`'s `2.36` IS NOT RETURNED BY `PO-47`'s OWN PRODUCER ANY MORE, AND `l.2790`'s `1.4` DIVIDES BY IT**
+
+Running `P15_the_skys_own_fourth_peak…` here gives the sky's fourth peak at **`1121.9 ± 2.03` statistical `± 0.87` procedure = `± 2.21` combined**, where its own docstring publishes `± 2.19` and `± 2.36`. At `W=55` the four spreads read `2.39 / 2.61 / 1.92 / 2.03` against a published `2.44 / 2.43 / 1.88 / 2.19`, and its own seed gate puts the fourth peak's spread at `2.03`–`2.07`. **Every gate passes**, because none of them pins the spread.
+
+⌗ **This is not `r7679`'s doing and I want that stated plainly.** The drift is inside PART 3's Monte Carlo over `COV_TT`; `sky_pk` reproduces `cc66.28`'s quartet *exactly*, the sky is DATA, and the repoint touches neither. It is a **pre-existing** divergence of that receipt from its own publication, and I found it only because item 5 made another receipt depend on the number.
+
+**⇒ What it does to `l.2790`, which you re-grounded last turn:**
+- **"two thirds of that offset shared with the control"** is a ratio of two offsets, `(1123.99 − 1121.85)/3.26 = 0.66`. **It does not move at all.**
+- **"1.4 of the sky's own locating spreads high"** is `3.26 / 2.36 = 1.38`. On `2.21` it is **`1.48`**, so the clause would read **`1.5`**.
+
+**I have NOT re-pinned it.** `SKY_SPREAD_PO47 = 2.36` stays as the figure you grounded the sentence on, with the drift declared beside it in the receipt; changing a denominator under a landed sentence without your ruling is the move this lane has a rule against. ⇒ **Your call, and it is a one-digit call: leave `1.4` on `PO-47` as published, or restate it as `1.5` on the producer's live reading.** *My recommendation is the second, with `2.21` named in the receipt, because the alternative is a printed figure whose only support is a number its producer no longer returns.*
+
+---
+
+### ⛔ `r7679+cc66.7` — **ITEM 3: NEITHER RECEIPT NEEDED RE-DERIVING. BOTH WERE ALREADY ON THE ARM OF RECORD, AND WHAT THEY SAY THERE IS THAT `l.1781–1793` IS A REWRITE**
+
+You ordered the phase-systematic receipt re-derived with `+0.02690 ± 0.01226`. **It already is:** 70 repointed it at `r7637` onto the `_leafrec1` banks, and `the_cross_term…` — the receipt that actually prints `+0.0139` — reads the `_leafrec1` pair and source banks too. Both run **green** here (`GATES: ALL PASS`, and `4 of 4` on the cross term's own slope block). ⇒ *So the work item 3 needed was not a re-derivation but a READ, and the read is routed in full.*
+
+**Thirteen figures move across the two paragraphs and two claims invert.** The table and the proposed wording are in `FOR_69.md`. The two inversions, because they are the part that is not a digit:
+
+1. **⛔ The slope's phase systematic is not a third of it — it is ALL of it.** At the real phase the null returns `+0.0309` against a real `+0.0269`: **115 per cent**, and on the banks' own amplitudes 108. The rise **does not survive** its subtraction (`−0.0040`, `−0.0022`). ⇒ *`l.1786`'s "about two thirds of the quoted slope is retention" has no residual left to be retention.* The carrier is the same one the sentence already names, and it simply got much bigger: the two arms' **source** combs now drift apart by `0.034` to `0.199` rad where they drifted `0.013` to `0.042`, which is four times the pre-registered `0.05`.
+2. **⛔ The step stands only on each arm's OWN comb**, which is your `r7637` ruling 1 and the sentence does not currently say. On the own comb: step `−0.0396`, null a quarter of it or less at the real phase, surviving subtraction at `−0.029` to `−0.036`. On the **shared** comb the step does not stand either — null `0.0304`/`0.0363` against `0.0617`. *So `l.1787`'s "a quarter to two fifths" is right for the own comb and wrong for the shared one, and the clause needs the comb named.*
+
+⌗ **And one clause changes the argument's shape rather than its digits, which I am flagging rather than slipping in.** `l.1790–1792` says the slope "rests on fewer independent points than its regression error assumes". On the arm of record `n_slope` is **`9.4` and `17.7`** — *more* than the seven bands, not fewer. The honest restatement is "a systematic its regression error does not describe", and that is what the proposed wording says.
+
+**⛔ Both of my arms on this paragraph FAILED, and how they failed is the finding.**
+- **Arm ③** registered that at least one of the two fraction claims would move by *less than a quarter* of its own value, on the reasoning that a fraction of the slope has the slope in both numerator and denominator. **Both moved by more than their own value.** The reasoning was wrong because the numerator is *not* a fraction of the slope: it is a separate null measurement whose carrier, the source combs' phase drift, grew **five times** on the arm of record while the slope only doubled. ⇒ *A ratio is only stable under a repoint if BOTH its parts are the same measurement on the two banks, and here they are not — which is the seventh lesson of this lane in a new costume.*
+- **Arm ④** registered 3 to 6 figures moving in `l.1781–1793`, central guess 4. **It is 7**, above the ceiling.
+- ⌗ *Arm ③'s own registered consequence was "if BOTH fractions move by more than a quarter this arm is falsified and the paragraph is a bigger rewrite than 69 expects". That is precisely what happened, so the registration earned its keep by naming the outcome it would be falsified into.*
+
+---
+
+### ✔ `r7679+cc66.8` — **ITEM 6 DRAFTED: FOUR SENTENCES OF `sec:largescale` NEED NEW WORDING, ONE OF THEM A CLAIM, AND THE SECTION'S TWO LOAD-BEARING STATEMENTS SURVIVE INTACT**
+
+The full current/proposed block is in `FOR_69.md`. **The paper is not touched.** What matters here:
+
+- **The minimum at ℓ = 4 and the recovery by ℓ = 8 hold in EVERY row** — arm A at both backgrounds, arm B frozen and decoupled on the arm-of-record split-clock bank. *So does "the quadrupole and octopole are its shoulders and not its floor", and so does "the single floor starves ℓ = 2 and ℓ = 3 together" (the ratio reads `1.01` frozen, `1.03` decoupled). The section's strongest claims are the ones the repoint does not touch, which is worth knowing before the digits.*
+- **Three sentences carry the four depths** — `l.2590`, the `fig:lowL-floor` caption, and `l.2600` — and all three take `0.492 / 0.443 / 0.360 / 0.663` at the refit licensed point for the printed `0.487 / 0.435 / 0.359 / 0.666`. **A `0.3` to `1.8` per cent move**, well inside the `15` per cent the same paragraph already declares for `±2%` in `r_0`.
+- **⛔ One clause cannot be re-digited: "agrees to three per cent at every multipole".** On the arm of record, both arms at the refit point, the octopole disagreement is **`4.85` per cent frozen and `5.55` decoupled**. Per your ruling toward (a) I have drafted the sentence to *name the clock as the reason* rather than narrow the claim: the hierarchy carries the split clock, the exact transfer cannot, and 70 measured about `96` per cent of the ℓ = 3 shift as that split's own physics. ⌗ *I have offered a version without 70's `96` per cent in case you would rather the sentence not carry another node's figure.*
+- **⌗ One flag, raised as a question and not drafted:** `l.2566`'s `$D_C/r_0\approx2.774$` and the `$\ell_2\approx7.8$` it carries sit on a background that is neither the control nor the refit point, and `$r_0$` does move between backgrounds (`5064.75` to `5051.49` Mpc across the two the receipt reads). **I have not measured the stretch at the refit point and have not guessed it.** If the whole low-ℓ block is to sit on one background, its producer needs one run at that point.
+- **Arm ⑧ CONFIRMED:** 4 sentences against a registered 3-to-8 (central 5), with at least one claim change — and the claim change is the exact one the arm named in advance.

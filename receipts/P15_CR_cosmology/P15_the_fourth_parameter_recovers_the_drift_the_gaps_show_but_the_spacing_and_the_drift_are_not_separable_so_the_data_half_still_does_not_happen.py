@@ -48,6 +48,34 @@ LICENSE THE DATA HALF, BECAUSE THE SPACING AND THE DRIFT ARE NOT SEPARABLE. *** 
   spacing and a drift apart.  **That is a statement about the bank, which `r7213` said is worth as
   much as a fit.***
 
+  ⛭⛭⛭ ** `r7679+cc66.4` -- EVERY DIGIT ABOVE IS A NAMESAKE READING, AND THIS IS WHAT IT READS ON
+  THE ARM OF RECORD. **  `r7679` repointed this receipt's four CR legs onto the `_leafrec1` banks,
+  PER ARM: the control legs did not move, because `LEAFREC` does not reach them.  *The digits above
+  stay as published -- they are pinned on the banks that measured them, which is 69's ruling on
+  `PUB156` -- and the arm-of-record readings are set beside them here as the new numbers they are.*
+
+    ⓑ ⓒ ** the fitted `$2d$` against PART C's `$c_2$`. **  `cr_base` `$+8.85$` vs `$+8.77$` reads
+      `$+8.05$` vs `$+8.76$`; `cr_nodrive` `$+7.10$` vs `$+8.15$` reads `$+7.07$` vs `$+8.19$`.  The
+      two control legs are unchanged at `$+9.22$`/`$+8.85$` and `$+7.10$`/`$+8.15$`.  *** Four of six
+      still agree in sign and within a sixth, and they are the same four. ***
+    ⓓ ** the wrong-signed drifts. **  `cr_rb0.5` `$-35.20$` against gaps `$+8.29$` reads `$-36.10$`
+      against `$+8.42$`; `cr_rb1.5` `$-30.76$` against `$+9.70$` reads `$-30.97$` against `$+9.61$`.
+      Its `$\ell_A$` is still pinned at the box edge, `$430.000$` exactly.  *** Unchanged in kind. ***
+    ⓔ ** the crossings. **  The driving-off pair crosses the banked spacing at `$\ell^{*}=805$` and
+      `$813$` where the namesake gave `$\simeq814$` for both, still interior; `$\chi^{2}$` improves
+      `$47.5\to26.6$` and `$93.8\to52.7$`, which is `$44$` per cent on both as published.  The base
+      pair's crossing moves from `$-1330$`/`$-1251$` to `$-1537$`/`$-1251$` -- still negative, still
+      outside the window.  *** Ⓔ ① and Ⓣ ① are unchanged in kind. ***
+    ⛔ ** ONE CLAIM DOES NOT SURVIVE, and it is not a figure move. **  `Ⓑ②` published
+      `cr_rb1.5` as REACHED FROM ONE COARSE START where the others were reached from four, and made
+      that solo reach the second independent sign of an unidentified fit.  ** On the arm of record it
+      is reached from TWO. **  *What survives is the ORDERING -- `cr_rb1.5` is still the unique
+      fewest, at half the others', and still the only spectrum on the box edge, so the corroboration
+      test and the boundary test still agree on which spectrum to distrust.  The gate now asserts
+      that ordering and the namesake's solo reach, measured here rather than recalled; `reached from
+      one start` is routed to `69` as a CLAIM CHANGE.*  ⛔ *`REACH >= 2` passes on its own, so
+      dropping the solo clause would have turned the gate green while deleting the finding.*
+
 ** COMPUTES: the four-parameter comb (position, spacing, alternation, linear drift in the spacing),
    profiled over the same disciplined basis, fitted to six likelihood-binned model spectra over the
    whole feasible box; the d=0 reduction checked against cc66.160's own three-parameter fit; the
@@ -295,13 +323,29 @@ check("Ⓐ①  the phase relation `$\\ell=\\ell_A v+dv^{2}$` makes the comb's pe
       "separate quantity that happens to look like it **",
       abs(_growth / (2 * _d) - 1) < 0.01)
 
-_ls0, _Y0 = detilt(*binned(SPECTRA[2][1])[:2])
+# ⛭⛭⛭ `r7679+cc66.4` -- ** THE CALIBRATION IS READ ON THE BANK cc66.160 MEASURED. **  `Ⓐ②`
+#   pins cc66.160's PUBLISHED `$301.658 / 106.03$`, and after `r7679`'s repoint `SPECTRA[2][1]` is the
+#   ARM OF RECORD's `cr_nodrive` while those two digits are a NAMESAKE publication.  ⛔ *Scoring a
+#   published digit against a different bank is not a calibration failing -- it is the calibration
+#   asked the wrong question, and it went red for exactly that reason.*
+#   ⇒ 69's own ruling on `PUB156` (`r7673+cc66.13`) governs: a published digit is pinned on what it
+#     was measured on, with the arm-of-record reading printed BESIDE it as the new number it is.  This
+#     is also what `Ⓐ③` four lines below has always done -- it reads PART C's finder on the
+#     NAMESAKE `GO` to reproduce PART C's published gaps.  Everything after this stays on the arm.
+_ls0, _Y0 = detilt(*binned(SPECTRA_NSK[2][1])[:2])
 _r0, _ = fit(_ls0, _Y0, free_d=False)
+_ls0a, _Y0a = detilt(*binned(SPECTRA[2][1])[:2])
+_r0a, _ = fit(_ls0a, _Y0a, free_d=False)
 print(f"      and at d=0 on cr_nodrive: l_A {_r0.x[0]:.3f}, chi2 {_r0.fun:.4g} "
       f"(cc66.160 reports 301.658 / 106.03)")
+print(f"      the SAME reduction on the ARM OF RECORD's cr_nodrive: l_A {_r0a.x[0]:.3f}, "
+      f"chi2 {_r0a.fun:.4g}  <- the new numbers, reported beside the published ones")
 check("Ⓐ②  and the `$d=0$` reduction REPRODUCES `cc66.160`'s three-parameter fit to three figures, "
+      "ON THE BANK cc66.160 READ, "
       "*so what follows is the same instrument with one parameter added and not a second instrument "
-      "being compared with the first*",
+      "being compared with the first*.  ⛭⛭ `r7679+cc66.4`: scored on `SPECTRA_NSK` because the "
+      "repoint moved `SPECTRA` to the arm of record while `$301.658/106.03$` is a NAMESAKE "
+      "publication -- 69's `PUB156` ruling -- and the arm-of-record reduction is printed beside it",
       abs(_r0.x[0] - 301.658) < 0.5 and abs(_r0.fun / 106.03 - 1) < 0.02)
 
 
@@ -364,17 +408,60 @@ check("Ⓑ①  ⛭ ** `r7215` ITEM 2 PASSES: THE FOURTH PARAMETER DOES NOT DEGRA
       all(F4[t][2] < 0.6 * _off3[t][1] and INSIDE[t] for t in DRIVING_OFF))
 
 _solo = [t for t, _ in SPECTRA if REACH[t] < 2]
+# ⛔⛭⛭⛭ `r7679+cc66.4` -- ** THE SOLO REACH IS A CLAIM CHANGE ON THE ARM OF RECORD, AND THE GATE
+#   NOW SAYS SO.  `cr_rb1.5` IS NO LONGER REACHED FROM A SINGLE START; IT IS STILL REACHED FROM THE
+#   FEWEST, AND IT IS STILL THE ONLY ONE ON THE BOX EDGE. **
+#
+#   On the namesake `cr_rb1.5` was reached from ONE coarse start where the others were reached from
+#   four, and that solo reach was the gate's second independent sign of an unidentified fit.  On the
+#   arm of record it is reached from TWO, so `_solo` is EMPTY and `every interior optimum is reached
+#   from more than one start` is now true of EVERY spectrum including the edge one.
+#   ⇒ *What survives is the ORDERING the conclusion rests on: `cr_rb1.5` is the unique minimum of
+#     the corroboration count, at HALF the others', and it is the unique spectrum on the box edge --
+#     so the corroboration test and the boundary test still agree on which spectrum to distrust.
+#     What does NOT survive is `reached from one start`, and that is routed to 69 as a claim change.*
+#   ⛔ *Re-tolerancing this -- `REACH[t] >= 2` already passes, so dropping the `_solo` clause alone
+#     would have turned the gate GREEN while deleting the thing worth reporting.  The namesake reach
+#     is MEASURED below instead, so the published `one start` is pinned on the bank that read it.*
+# ⌘ ONE namesake fit, not six.  `cr_rb1.5` is the only spectrum whose reach this gate PUBLISHES a
+#    number for, and the receipt's measured runtime is 473s against CI's 900s budget -- four more
+#    four-parameter multi-start fits would have cost most of the headroom to re-measure digits no
+#    claim rests on.  The control legs did not move at all: `LEAFREC` does not reach them.
+_NSK_SOLO = 'cr_rb1.5'
+_lbn, _dbn, _ = binned(dict(SPECTRA_NSK)[_NSK_SOLO])
+_lsn, _Yn = detilt(_lbn, _dbn)
+_bn, _REACH_NSK_SOLO = fit(_lsn, _Yn, free_d=True)
+_REACH_NSK = {t: (_REACH_NSK_SOLO if t == _NSK_SOLO
+                  else (REACH[t] if not t.startswith('cr') else -1))
+              for t, _ in SPECTRA}
+_mx = max(REACH[t] for t, _ in SPECTRA)
+_fewest = [t for t, _ in SPECTRA if REACH[t] == min(REACH[t2] for t2, _ in SPECTRA)]
 print(f"      ⇒ reached from a single coarse start: {', '.join(_solo) if _solo else 'none'}; "
       f"on the box edge: {', '.join(t for t, _ in SPECTRA if EDGE[t]) or 'none'}")
-check("Ⓑ②  ⛭ ** EVERY INTERIOR OPTIMUM IS REACHED FROM MORE THAN ONE INDEPENDENT START, AND THE ONE "
-      "THAT IS NOT IS EXACTLY THE ONE ON THE BOX EDGE. **  *I first wrote this as `every optimum` and "
-      "it FAILED on `cr_rb1.5`, reached from one start where the others are reached from four.  "
-      "**That is not a defect of the grid -- it is the second independent sign that `cr_rb1.5`'s "
-      "four-parameter fit is unidentified**, the first being its spacing pinned at `$430.000$`.*  ⇒ "
-      "*So the corroboration test and the boundary test agree on which spectrum to distrust, and a "
-      "grid wide enough to `fix` it would only have hidden that*",
-      all(REACH[t] >= 2 for t, _ in SPECTRA if not EDGE[t]) and _solo == ['cr_rb1.5']
-      and EDGE['cr_rb1.5'])
+print(f"      {'spectrum':13s} {'starts (ARM OF RECORD)':>23s} {'starts (NAMESAKE)':>19s}")
+for _t, _ in SPECTRA:
+    _n = _REACH_NSK[_t]
+    print(f"      {_t:13s} {REACH[_t]:23d} "
+          f"{(f'{_n:d}' if _n >= 0 else 'not re-measured'):>19s}"
+          f"{'   <- the box-edge spectrum, and the one cc66 published a reach for' if EDGE[_t] else ''}"
+          f"{'   (did not move: LEAFREC does not reach the control)' if not _t.startswith('cr') else ''}")
+print(f"      ⇒ fewest starts: {', '.join(_fewest)} at {REACH[_fewest[0]]} against the others' "
+      f"{_mx}; on the box edge: "
+      f"{', '.join(t for t, _ in SPECTRA if EDGE[t]) or 'none'}")
+check("Ⓑ②  ⛔⛭⛭ ** ON THE ARM OF RECORD EVERY OPTIMUM -- THE EDGE ONE INCLUDED -- IS REACHED FROM "
+      "MORE THAN ONE INDEPENDENT START, AND WHAT SURVIVES IS THE ORDERING: `cr_rb1.5` IS REACHED "
+      "FROM THE FEWEST STARTS, HALF THE OTHERS', AND IT IS THE ONLY ONE ON THE BOX EDGE. **  *So the "
+      "corroboration test and the boundary test still agree on which spectrum to distrust, and a "
+      "grid wide enough to `fix` it would only have hidden that.*  ⛔ *On the NAMESAKE -- measured "
+      "here, not recalled -- `cr_rb1.5` was reached from ONE start where the others were reached "
+      "from four, and the gate asserted that solo reach.  **`reached from one start` is FALSIFIED on "
+      "the arm of record and is routed to 69 as a claim change**, not re-toleranced: `REACH >= 2` "
+      "passes on its own, so dropping the solo clause would have gone green while deleting the only "
+      "thing worth reporting*",
+      all(REACH[t] >= 2 for t, _ in SPECTRA) and _fewest == ['cr_rb1.5']
+      and REACH['cr_rb1.5'] * 2 <= _mx and EDGE['cr_rb1.5']
+      and [t for t, _ in SPECTRA if EDGE[t]] == ['cr_rb1.5']
+      and _REACH_NSK_SOLO == 1)
 
 _agree = [t for t, _ in SPECTRA if G2[t] * 2 * F4[t][1] > 0
           and 0.4 < abs(2 * F4[t][1] / G2[t]) < 2.5]

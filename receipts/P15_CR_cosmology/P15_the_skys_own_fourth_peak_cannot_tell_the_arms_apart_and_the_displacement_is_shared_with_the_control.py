@@ -26,6 +26,8 @@ bandpower covariance does to the located position, and nobody had propagated it.
 
     the sky's fourth peak :  1121.9  +-  2.19 (statistical, from COV_TT)  +- 0.87 (procedure)
                                     =  1121.9  +-  2.36  combined
+        ⛔ AS PUBLISHED.  Run in this container it is +- 2.03 +- 0.87 = +- 2.21; see the
+          `r7679+cc66.5` block below, which routes the difference rather than editing it away.
 
 Against that yardstick:
 
@@ -51,6 +53,53 @@ measuring.  ** The fix is to anchor the window on the unperturbed peak and refit
 question actually being asked (how well is THIS peak located) and leaves the parabola step identical.
 That is what is done below, and the free-search failure is kept as a gate so the next reader does not
 repeat it.
+
+⛔⛭⛭⛭ ** `r7679+cc66.5` -- THE TWO MODEL QUARTETS ARE NO LONGER HARDCODED, AND EVERY ARM-SIDE DIGIT
+ABOVE MOVES.  THE READING'S DIRECTION DOES NOT: IT GETS STRONGER. **  `r7679` (69) item 4 ordered this
+receipt to locate its own peaks on the comb receipt's arm-of-record bank through its own locator,
+"instead of carrying a quartet nothing reproduces".  `r7677+cc66.2` had swept this file's `find_free`
+over 369 locatable banks under `beyond_the_wall/` and got no closer than 0.86 of a multipole to
+`CR_PK` and 1.46 to `LCDM_PK`, against constants quoted to a tenth.  PART 0 now locates both, by the
+same seven-window sweep PART 1 uses on the sky, on `grid_oneclock_leafrec1/cr_base.npz` and
+`grid_oneclock/lcdm_base.npz` -- per arm, the control unsuffixed because `LEAFREC` does not reach it.
+
+    located, arm (AoR)  :  222.28 / 537.55 / 813.63 / 1127.72    procedure spread under 0.75
+    located, control    :  220.67 / 537.67 / 812.52 / 1127.31
+    hardcoded (cc66.28) :  221.8  / 536.8  / 812.9  / 1126.5     and 220.2 / 537.0 / 811.7 / 1124.5
+
+  ⛔ ** The displacement the construction owns goes from `+1.95` to `+0.41` in ell -- a FIFTH, not a
+    double. **  So:
+    - `(5)` above reads: the arm-minus-control displacement is `+0.41`, under `0.2` sigma of the sky's
+      own fourth-peak uncertainty, inside it at every admissible window by a wide margin.
+    - `(6)` above reads: both models sit high of the sky by about `+5.4` (control) and `+5.8` (arm),
+      so the SHARED offset is larger than it was and the construction's share of it is `7` per cent
+      where it was `43`.  *The finding the title states -- the displacement is shared with the control
+      -- is strengthened, not weakened, and that is the whole of what moves in direction.*
+    - ** One gate is FALSIFIED and restated rather than re-toleranced: ** `not comfortably inside at
+      the tighter window`, which asserted `0.9` sigma rising to `1.3` on the hardcoded pair.  It now
+      asserts what the numbers say -- inside at both windows, with the sky's offset from EITHER model
+      the thing that is not resolved.  *Loosening its bound would have kept reporting `not resolved`
+      out of a constant nothing reproduces.*
+  ⌗ ** The sky's own column does not move on the repoint at all, ** because it is DATA and `sky_pk`
+    reproduces `cc66.28`'s quartet exactly.  ⛔ *But it does NOT reproduce this docstring, and that is
+    a second, separate and PRE-EXISTING finding: run here, the spread is 1121.9 +- ** 2.03 **
+    (statistical) +- 0.87 (procedure) = ** +- 2.21 ** combined, where (2) and (4) below publish
+    `2.19` and `2.36`; at `W=55` the four spreads read `2.39/2.61/1.92/2.03` against a published
+    `2.44/2.43/1.88/2.19`, and the seed gate puts the fourth peak's at `2.03`-`2.07`.  The drift is
+    inside PART 3's Monte Carlo over `COV_TT`, which `r7679`'s repoint does not touch, so it is the
+    container's and not this revision's.  ** `2.36` is `PO-47`'s figure and the paper's `l.2790`
+    clause divides by it ** -- `3.26/2.36 = 1.38`, the printed `1.4`; on `2.21` that is `1.48`.
+    Routed to `69` with the sentence; nothing here is re-pinned, because the published digits are
+    pinned on the run that measured them.*
+  ⌗ ** And the hardcoded pair is not the namesake's reading either. **  This grid's NAMESAKE arm leg
+    locates at 220.40 / 537.27 / 812.66 / 1127.15, so the namesake fourth-peak displacement is `-0.16`.
+    *The `+1.95` is reproduced by neither leg of the bank it was attributed to, which is what
+    `r7677+cc66.2` found from the other end and is the reason this item was ordered.*
+  ⛔ ** I registered the opposite ** at `r7679+cc66.0` arm ⑤ -- that the displacement would roughly
+    DOUBLE to `+4.1`, on the strength of `r7677+cc66.2`'s read of `cc66_r185_verify_cr_leafrec1`.
+    ** FALSIFIED, and the reason is the bank family: ** this grid's two legs agree on the fourth peak
+    to half a multipole where that family's legs differ by four, so a fourth-peak displacement is a
+    property of the bank the sentence is read on and not of `LEAFREC`.
 
 -------------------------------------------------------------------------------
 WHAT IS CLAIMED.
@@ -120,10 +169,31 @@ X_DATA, COV_TT = CS.X_DATA, CS.COV_TT
 WS = (40., 45., 50., 55., 60., 70., 80.)
 LF = np.arange(100.0, 1300.0, 1.0)
 
-# the arms, as cc66.28 located them through this same locator (r6835, landed and gated)
-CR_PK = np.array([221.8, 536.8, 812.9, 1126.5])
-LCDM_PK = np.array([220.2, 537.0, 811.7, 1124.5])
+# ⛔⛭⛭⛭ `r7679+cc66.5` -- ** THESE TWO QUARTETS WERE HARDCODED AND NOTHING REPRODUCES THEM, SO
+#   THE RECEIPT NOW LOCATES ITS OWN THROUGH ITS OWN LOCATOR ON THE COMB RECEIPT'S ARM-OF-RECORD
+#   BANK. **  `r7679` (69) item 4.
+#   `r7677+cc66.2` (`r7677_cc66_the_fifteen_pins_and_the_four_constants/crpk.py`) lifted `find_free`
+#   out of this file and swept it over every `.npz` under `beyond_the_wall/` that carries an `ls`/`Dl`
+#   pair -- 447 files, 369 of them locatable -- and the nearest approach to `CR_PK` was `0.86` of a
+#   multipole and to `LCDM_PK` `1.46`, against constants quoted to a tenth.  ** So they were a
+#   measurement with no producer. **
+#   ⇒ They are now LOCATED, by the sweep over `WS` that PART 1 uses on the sky, on the pair the comb
+#     receipt reads on the arm of record: `grid_oneclock_leafrec1/cr_base.npz` for the arm and
+#     `grid_oneclock/lcdm_base.npz` for the control -- the control is not suffixed because `LEAFREC`
+#     does not reach it (`r7669+70.1`), which is the per-arm resolution `r7645+cc66.68` paid for.
+#   ⌗ *The old constants are KEPT, as `*_C28`, and the distance to them is printed and gated: a
+#     hardcoded number replaced silently is the same defect in the other direction.*
+#   ⛔ *What this does to the reading is in PART 5 and it is not small: the fourth-peak displacement
+#     the construction owns goes from `+2.0` to `+0.41`, so one gate below -- `not comfortably inside
+#     at the tighter window` -- is FALSIFIED and restated rather than re-toleranced.*
+CR_PK_C28 = np.array([221.8, 536.8, 812.9, 1126.5])
+LCDM_PK_C28 = np.array([220.2, 537.0, 811.7, 1124.5])
 SEC_INTRO = np.array([220.4, 537.7, 817.3, 1123.9])
+_BW = os.path.join(ROOT, 'computations', 'beyond_the_wall')
+_GO = os.path.join(_BW, 'r7093_directions', 'grid_oneclock')
+_GARM = '_leafrec1'                 # the arm of record's suffix on the comb receipt's grid DIRECTORY
+_ARM_BANK = {'cr': os.path.join(_GO + _GARM, 'cr_base.npz'),
+             'lcdm': os.path.join(_GO, 'lcdm_base.npz')}
 
 
 def spline_of(Db):
@@ -158,6 +228,51 @@ def refit_anchored(Db, anchors, W):
 
 
 D_SKY = X_DATA * FACB
+
+# ---------------------------------------------------------------------------------
+print("\nPART 0 -- `r7679+cc66.5`: THE TWO MODEL QUARTETS, LOCATED HERE INSTEAD OF HARDCODED.")
+print("-" * 100)
+
+
+def quartet_of(path):
+    """THIS file's own locator, swept over the same seven windows PART 1 sweeps on the sky."""
+    z = np.load(path, allow_pickle=True)
+    Db = CS.bin_spectrum(np.asarray(z['ls'], float), np.asarray(z['Dl'], float)) * FACB
+    sw = [q for q in (find_free(Db, W) for W in WS) if len(q) == 4]
+    a = np.array(sw)
+    return a.mean(0), a.std(0), len(sw)
+
+
+CR_PK, CR_PROC, _ncr = quartet_of(_ARM_BANK['cr'])
+LCDM_PK, LCDM_PROC, _nlc = quartet_of(_ARM_BANK['lcdm'])
+_NSK_CR, _, _nnk = quartet_of(os.path.join(_GO, 'cr_base.npz'))
+print("    peak                 1        2        3        4   windows")
+print("    CR arm (AoR)   " + " ".join(f"{v:8.2f}" for v in CR_PK) + f" {_ncr:9d}")
+print("      spread       " + " ".join(f"{v:8.2f}" for v in CR_PROC))
+print("    control        " + " ".join(f"{v:8.2f}" for v in LCDM_PK) + f" {_nlc:9d}")
+print("      spread       " + " ".join(f"{v:8.2f}" for v in LCDM_PROC))
+print("    CR arm (nsk)   " + " ".join(f"{v:8.2f}" for v in _NSK_CR) + f" {_nnk:9d}"
+      + "   <- the SAME grid family's namesake leg, for the repoint's size")
+print("    cc66.28 CR     " + " ".join(f"{v:8.1f}" for v in CR_PK_C28)
+      + "   <- HARDCODED, and reproduced by nothing (r7677+cc66.2 swept 369 banks)")
+print("    cc66.28 LCDM   " + " ".join(f"{v:8.1f}" for v in LCDM_PK_C28) + "   <- HARDCODED")
+print(f"    |located - hardcoded|, arm    " + " ".join(f"{abs(a-b):6.2f}"
+                                                       for a, b in zip(CR_PK, CR_PK_C28)))
+print(f"    |located - hardcoded|, control " + " ".join(f"{abs(a-b):6.2f}"
+                                                        for a, b in zip(LCDM_PK, LCDM_PK_C28)))
+print(f"    fourth-peak displacement arm - control:  located {CR_PK[3]-LCDM_PK[3]:+.2f}, "
+      f"hardcoded {CR_PK_C28[3]-LCDM_PK_C28[3]:+.1f}, "
+      f"and on this grid's NAMESAKE leg {_NSK_CR[3]-LCDM_PK[3]:+.2f}")
+check("⛔⛭⛭ ** THE QUARTETS ARE LOCATED AND THE HARDCODED ONES ARE NOT REPRODUCED BY THE BANK THEY "
+      "WERE ATTRIBUTED TO, ON EITHER ARM. **  Each located quartet is this file's own `find_free` "
+      "swept over all seven windows on the comb receipt's banks, and the procedure spread is under "
+      "a multipole on every peak -- so the disagreement with the hardcoded constants is NOT the "
+      "locator being unstable.  *`r7677+cc66.2` had already shown nothing in 369 banks reaches "
+      "them; this says the same thing from the one bank the sentence is about*",
+      len(CR_PK) == 4 and len(LCDM_PK) == 4 and _ncr == len(WS) and _nlc == len(WS)
+      and max(CR_PROC) < 1.0 and max(LCDM_PROC) < 1.0
+      and abs(CR_PK[3] - CR_PK_C28[3]) > 0.5 and abs(LCDM_PK[3] - LCDM_PK_C28[3]) > 0.5,
+      f"arm {CR_PK[3]:.2f} vs {CR_PK_C28[3]:.1f}, control {LCDM_PK[3]:.2f} vs {LCDM_PK_C28[3]:.1f}")
 
 # ---------------------------------------------------------------------------------
 print("\nPART 1 -- THE SKY THROUGH cc66.28's LOCATOR, AND THE SPREAD I QUOTED LAST TIME.")
@@ -291,16 +406,40 @@ print(f"\n  ** AND THE READING IS WINDOW-DEPENDENT, SO BOTH ADMISSIBLE WINDOWS A
 print(f"    W = 55 :  sky +- {SIG_TOT:.2f} combined  ->  arm minus control is {d_ac / SIG_TOT:+.2f} sigma")
 print(f"    W = 80 :  sky +- {SIG_TOT_TIGHT:.2f} combined  ->  arm minus control is "
       f"{d_ac / SIG_TOT_TIGHT:+.2f} sigma")
-check("** THE CONSTRUCTION'S OWN DISPLACEMENT DOES NOT REACH SIGNIFICANCE AT EITHER ADMISSIBLE "
-      "WINDOW **: arm minus control is +2.0 in ell, between 0.9 and 1.3 sigma of the sky's own "
-      "fourth-peak uncertainty -- the sky cannot tell the two models apart there",
+check(f"** THE CONSTRUCTION'S OWN DISPLACEMENT DOES NOT REACH SIGNIFICANCE AT EITHER ADMISSIBLE "
+      f"WINDOW **: arm minus control is {d_ac:+.2f} in ell, {abs(d_ac)/SIG_TOT_TIGHT:.2f} sigma or "
+      f"less of the sky's own fourth-peak uncertainty -- the sky cannot tell the two models apart "
+      f"there.  ⛭⛭ `r7679+cc66.5`: on the HARDCODED quartets this was `+2.0`, between `0.9` and "
+      f"`1.3` sigma",
       abs(d_ac) < 2 * SIG_TOT and abs(d_ac) < 2 * SIG_TOT_TIGHT,
       f"{d_ac:+.2f}: {d_ac / SIG_TOT:+.2f} sigma at W=55, {d_ac / SIG_TOT_TIGHT:+.2f} at W=80")
-check("...but it is NOT comfortably inside at the tighter window and that is stated rather than "
-      "smoothed: the reading runs from 0.9 to 1.3 sigma across the admissible range, so what is "
-      "established is 'not resolved', not 'zero'",
-      1.1 < abs(d_ac) / SIG_TOT_TIGHT < 1.6 and abs(d_ac) / SIG_TOT < 1.0,
-      f"0.9 sigma at W=55 rising to {d_ac / SIG_TOT_TIGHT:.1f} at W=80")
+# ⛔⛭⛭⛭ `r7679+cc66.5` -- ** THIS GATE IS FALSIFIED BY THE LOCATED QUARTETS AND IS RESTATED, NOT
+#   RE-TOLERANCED. **  It asserted that the reading is NOT comfortably inside at the tighter window
+#   -- `0.9` sigma at `W=55` rising to `1.3` at `W=80` -- on the hardcoded `+2.0`.  The located
+#   displacement is a fifth of that, so the reading is comfortably inside at BOTH windows and the
+#   `not resolved, not zero` hedge the gate existed to protect is no longer what the measurement
+#   says.  ⇒ *The honest restatement is the one the numbers support: the displacement is inside at
+#     every admissible window, and the quantity that is NOT resolved is the sky's own offset from
+#     EITHER model, which is the next gate's subject and is `$5$`-`$6$` multipoles.  ⛔ A loosened
+#     bound here would have reported `not resolved` from a constant nothing reproduces.*
+#   ⌗ I registered the opposite at `r7679+cc66.0` arm ⑤: that the displacement would roughly DOUBLE
+#     to `+4.1`, because that is what the lifted locator measured at `r7677+cc66.2` on
+#     `cc66_r185_verify_cr_leafrec1`.  ** It is `+0.41`.  The arm is FALSIFIED, and the reason is
+#     that the bank family is not the same one: ** this grid's two legs agree on the fourth peak to
+#     half a multipole where that family's differ by four, so the displacement is a property of the
+#     bank the sentence is read on and not of `LEAFREC`.
+check(f"⛔⛭⛭ ** AND IT IS NOW COMFORTABLY INSIDE AT BOTH WINDOWS, WHICH IS A CLAIM CHANGE AND NOT A "
+      f"TIGHTENING: ** the located displacement is {d_ac:+.2f} in ell, {abs(d_ac)/SIG_TOT:.2f} sigma "
+      f"at `W=55` and {abs(d_ac)/SIG_TOT_TIGHT:.2f} at `W=80`.  *On the HARDCODED `+2.0` this gate "
+      f"asserted `0.9` rising to `1.3` sigma and the reading was `not resolved rather than zero`.  "
+      f"** On the bank the sentence is about, the construction's fourth-peak displacement is a fifth "
+      f"of the constant that was standing in for it and is inside at every admissible window. **  "
+      f"⛔ What is NOT resolved is the sky's offset from EITHER model, {d_as:+.2f} and {d_cs:+.2f}, "
+      f"which is the next gate's subject -- routed to `69` as a claim change*",
+      abs(d_ac) / SIG_TOT_TIGHT < 1.0 and abs(d_ac) / SIG_TOT < 1.0
+      and abs(d_as) > 2 * abs(d_ac) and abs(d_cs) > 2 * abs(d_ac),
+      f"{abs(d_ac)/SIG_TOT:.2f} sigma at W=55, {abs(d_ac)/SIG_TOT_TIGHT:.2f} at W=80; "
+      f"sky offsets {d_as:+.2f} / {d_cs:+.2f}")
 check("the control ALSO sits high of the sky's fourth peak, so the arm's larger offset is mostly "
       "SHARED and is not the construction's",
       d_cs > 0 and d_as > d_cs and (d_cs / d_as) > 0.4,
@@ -326,10 +465,12 @@ print(f"""
   2. The construction's own fourth-peak displacement -- what this arm does that the control does not --
      is {d_ac:+.2f} in ell, which is {d_ac / SIG_TOT:.2f} sigma of that at W = 55 and
      {d_ac / SIG_TOT_TIGHT:.2f} at W = 80.  ** It does not reach significance at either admissible
-     window, so the sky cannot tell the two models apart at the fourth peak. **  What is established is
-     'not resolved' rather than 'zero', and that is stated rather than smoothed -- but on the order's
-     own test it is inside, so the third acoustic spacing, the baryon loading's effect on position and
-     the transfer's resolution are NOT run, and the row closes on its first branch.
+     window, so the sky cannot tell the two models apart at the fourth peak. **  ⛭ On the hardcoded
+     quartets this was +1.95 and the honest statement was 'not resolved' rather than 'zero'; on the
+     LOCATED quartets it is inside by a wide margin at both windows and the hedge is no longer what
+     the measurement says.  On the order's own test it is inside either way, so the third acoustic
+     spacing, the baryon loading's effect on position and the transfer's resolution are NOT run, and
+     the row closes on its first branch.
 
   3. ** What does not dissolve is smaller and is not this construction's. **  Both models sit high of
      the sky's fourth peak -- the control by {d_cs:+.2f} ({d_cs / SIG_TOT:.1f} sigma) and the arm by

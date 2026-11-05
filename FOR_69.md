@@ -7028,3 +7028,160 @@ Taking 70's own refit-point arm A (`0.4434` at `ℓ = 3`) against the legs this 
 ⌗ **So my earlier fork is now quantitative rather than cautionary.** Fork (a), moving this receipt's background to the refit point, buys a like-for-like `4.85`/`5.55` — but both are **outside** the three per cent `sec:scope` claims, so it would move four printed depths *and* require restating that published tolerance. Fork (b), which I have kept, leaves every printed figure where it is and asserts nothing across two backgrounds. **My recommendation stands and is now stronger: (b), until 70's `ℓ = 3` separating test reports.**
 
 *No figure of this receipt is routed, by your order's own words.*
+
+---
+
+### ⚑ `r7679+cc66` ITEM 2 — **FOUR FIGURES MOVE ACROSS `l.2303–2309` AND `l.2338–2345`, AND ONE CLAUSE IS A CLAIM CHANGE**
+
+All four arrivals are repointed per arm and green. Every figure below is read off the live receipt, with the figure it replaces and the clause it sits in. **Figures that hold are listed too, so you can land the block without re-deriving which is which.**
+
+| line | current wording | **proposed** | receipt |
+|---|---|---|---|
+| `l.2304` | "the fit improves by a factor of $542$" | "a factor of **$217$**" | `the_three_parameter_comb…` |
+| `l.2305` | "worsens by a further $24$ points" | **holds** ($24.2$) | `the_three_parameter_comb…` |
+| `l.2308–2309` | "a worse optimum on five spectra of six … a minimum a fifth away" | **holds** (five of six; $351.961$ against $286.841$, $23$ per cent) | `the_three_parameter_comb…` |
+| `l.2338` | "the fitted maxima sit $1.6$ multipoles from the located ones" | **holds** ($1.47$ and $1.61$) | `the_carrier_separation…` |
+| `l.2339` | "is $21$ to $27$ per cent away from it on the other four" | "$21$ to **$28$** per cent" | `the_carrier_separation…` |
+| `l.2340` | "where they sit $21$ to $24$ out" | "**$23$ to $29$** out" | `the_carrier_separation…` |
+| `l.2343` | "comes to $0.3$ multipoles against a within-pair difference of $57$" | "**$1.1$** multipoles against … of $57$" | `the_carrier_separation…` |
+| `l.2345` | "stays between $0.94$ and $0.98$ across thirteen fits spanning $78$ to $176$ points, five windows and six spectra" | **holds entire** ($[0.9385, 0.9792]$) | `the_fourth_parameter…` |
+| `l.2346–2347` | "inflating the errors by the expected $\sqrt{2}$" | **holds** | `centring_removes…` |
+
+**⛔ AND ONE CLAUSE IS NOT A FIGURE.** `l.2341–2342` reads *"the matched differencing that would carry it to the sky is **blind to the quantity of interest**"*. On the arm of record it is not blind: the arm-against-control difference is `+1.072` multipoles, **`4.42` of the bank's sigma** and `1.28` of the scale-invariant one, where on the namesake it was `0.295`, `1.6σ` and `0.35σ`.
+
+⇒ **The claim that survives is the ORDERING, and the sentence can carry it in the same breath:** the carrier separates by `146` and `95` sigma on the two conventions against the arm's `4.4` and `1.3`, so **the carrier outseparates the arm by `33×` and `74×`** — more than an order of magnitude on both. *A statistic that answers the carrier that much better than the arm is still the wrong instrument for this measurement, which is what the sentence is for.*
+
+**Proposed wording for `l.2341–2343`,** replacing "is blind to the quantity of interest" through the `$0.3$`:
+
+> *and the matched differencing that would carry it to the sky answers the carrier far better than it answers the arms: arm against control, with the observed spectrum differenced out of both, comes to $1.1$ multipoles against a within-pair difference of $57$, so the one it is built to see it sees by two orders and the one of interest by four sigma at most.*
+
+⌗ **I did not widen the gate's bound to keep "blind".** `Ⓒ③` now asserts the ordering (`> 10×` on both conventions) and prints both ratios; a loosened bound on `4.42 < 3.0` would have gone green while deleting this route.
+
+⌗ **Nothing in `l.2344–2347` needs touching:** the correlation range, the thirteen fits, the `78`–`176` points, the five windows, the six spectra, the fourth-decimal invariance and the `$\sqrt{2}$` all hold on the arm of record. *Four of those were registered as structural and should not have moved; they did not.*
+
+---
+
+### ⚑ `r7679+cc66` ITEM 3 — **`l.1772–1793` IN ONE BLOCK: THIRTEEN FIGURES MOVE AND TWO CLAIMS INVERT. THE SECOND PARAGRAPH IS A REWRITE, NOT A RE-DIGITING, AND YOU WERE RIGHT NOT TO LET THE FIRST LAND ALONE**
+
+You ordered: *"do not land l.1772–1776 alone … Re-derive that receipt with the arm of record's `+0.02690 ± 0.01226`. Then route both paragraphs' figures together."* ⇒ **Both receipts are already on the arm of record and both are green.** `the_cross_term…` reads the `_leafrec1` pair banks; `the_phase_systematic…` was repointed by 70 at `r7637` and run here. **Nothing needed re-deriving — what needed doing was reading what they now say, which is the following.**
+
+#### ① `l.1772–1776` — the slope sentence. Six figures, no claim change.
+
+| line | current | **arm of record** |
+|---|---|---|
+| `l.1772` | ratio "from $1.030$ in the lowest acoustic band" | **$1.0103$** |
+| `l.1773` | "to $1.089$ in the highest" | **$1.1612$** |
+| `l.1773` | "a slope of $+0.0139$ per acoustic period" | **$+0.02690$** |
+| `l.1773` | "the twelve envelope settings spanning $0.0021$ about it" | **$0.01226$** |
+| `l.1774` | "none of them returning a negative value" | **holds** (range $+0.01008$ to $+0.04297$) |
+| `l.1775` | intercept "$1.017$ with a spread of $0.010$" | **$0.9927$ with a spread of $0.0331$** |
+| `l.1774–1776` | "covers one across the same twelve settings … the growth with wavenumber and not a constant offset" | **holds** (range $0.9213$–$1.0414$, straddling one) |
+
+⌗ **The rise is steeper and less tightly determined: `2.2σ` on the arm of record against `6.7σ` on the namesake.** What the sentence asserts — growth with wavenumber, not a constant offset — holds on both, and the intercept now straddles one from *below* rather than above, which the wording already accommodates.
+
+#### ⛔ ② `l.1781–1793` — the phase-systematic paragraph. Seven figures and **two claims invert**.
+
+| line | current | **arm of record** |
+|---|---|---|
+| `l.1781` | "$36$ to $39$ per cent of the reported slope and in its direction" | ⛔ **$115$ to $108$ per cent** — the null returns **all** of it |
+| `l.1782` | "periods $1.0170$ and $1.0160$" | **$1.0170$ and $1.0115$** |
+| `l.1782` | "drift apart by between $0.013$ and $0.042$ of a radian" | **$0.034$ and $0.199$** — four times the pre-registered $0.05$ rad |
+| `l.1784` | "the null slope falling to a sixth or less" | **holds** ($+0.0047$ of $+0.0309$, a seventh) |
+| `l.1785` | "flattening the envelope leaves most of it" | **holds, more strongly** ($+0.0254$ of $+0.0309$, $82$ per cent) |
+| `l.1786–1787` | "about two thirds of the quoted slope is retention and the rest is that drift" | ⛔ **none of it is: the rise does NOT survive the null's subtraction** ($-0.0040$ and $-0.0022$) |
+| `l.1787–1788` | "its false value at the real phase running a quarter to two fifths of the measured step" | **a quarter or less on each arm's own comb** ($-0.0039$/$-0.0105$ against $-0.0396$); half or more on the shared comb |
+| `l.1789` | "three to three and a half independent modes" | **two to three and a half** ($2.33$/$2.92$ step, $3.77$/$3.45$ slope) |
+| `l.1790` | "the slope's own effective count being between five and nine" | **nine and eighteen** ($9.4$ and $17.7$) |
+| `l.1789` | "where its noise response carries nearly seven" | **holds** (structural, seven bands) |
+
+**⛔ THE TWO INVERSIONS, AND WHY NEITHER CAN BE FIXED WITH A DIGIT.**
+
+1. **The slope's systematic is not a third of it — it is all of it.** On the arm of record the two arms' *source* combs part far more than they did (`0.199` rad against `0.042`), and a band root-mean-square taken over seven tenths of a period reads that as retention. **At the real phase the null returns `+0.0309` against a real `+0.0269`.** So *"the rise survives and its size does not"* becomes *the rise does not survive either*: subtracting the null leaves `−0.0040`. ⇒ **The paragraph's current second half asserts a residual retention that the arm-of-record measurement does not support.**
+2. **The step is the sounder reading by a wider margin, but only on each arm's own comb.** On the **shared** comb the step does not stand either (null `0.0304`/`0.0363` against a step of `0.0617`). On each arm's **own** comb it stands cleanly: step `−0.0396`, null a quarter of it or less at the real phase, surviving subtraction at `−0.029` to `−0.036`. *This is your own ruling 1 at `r7637`, and the sentence should name the comb.*
+
+**Proposed wording for `l.1779–1788`** (from *"That slope's size is not all retention"* to *"of the measured step"*), which is the smallest rewrite that says what is measured:
+
+> *\emph{That slope's size is not retention at all, and the part that is not is measured rather than allowed for.} Fed one comb on both arms---no difference to retain---the statistic returns a rise at the real comb's phase of $115$ per cent of the reported slope, in its direction, \emph{because the two arms' own source combs sit at periods $1.0170$ and $1.0115$ and so drift apart by between $0.034$ and $0.199$ of a radian across the range, which a band root-mean-square taken over seven tenths of a period reads as a difference in retention}. \emph{Replacing the two combs by one removes it}, the null slope falling to a seventh, while flattening the envelope leaves four fifths of it---\emph{so the carrier is the source's phase and not the envelope}. \emph{The rise does not survive its own systematic}: subtracting the null leaves nothing of the quoted slope, and the slope is reported as a shape the statistic cannot separate from a phase drift between the sources. \emph{The step at the lowest band is the sounder of the two readings, on each arm's own comb}, its false value at the real phase running a quarter of the measured step or less there and half or more when one comb is imposed on both.*
+
+**And for `l.1788–1792`**, the two counts:
+
+> *\emph{And the statistic's phase systematic is what limits both}, carrying two to three and a half independent modes across the seven bands where its noise response carries nearly seven---\emph{the slope's own effective count being between nine and eighteen}, so a wavenumber slope read across these bands rests on a systematic its regression error does not describe.*
+
+⌗ *The old clause said the effective count was "fewer than its regression error assumes"; on the arm of record `n_slope` is **larger** than seven, so the honest statement is no longer "fewer independent points" but "a systematic the regression error does not describe". That is the one place the proposed wording changes the argument's shape rather than its digits, and it is flagged rather than slipped in.*
+
+⌗ **My own two arms on this paragraph both FAILED, and the way they failed is the finding.** I registered (arm ③) that at least one of the two fraction claims would move by less than a quarter of its own value, because a fraction has the slope in both numerator and denominator. **Both moved by more than their own value**, because the numerator is not a fraction of the slope at all — it is a *separate* null measurement whose carrier (the source combs' phase drift) grew by five times on the arm of record while the slope only doubled. And I registered (arm ④) 3 to 6 figures moving in `l.1781–1793`; **it is 7**. ⇒ *Arm ③'s own registered consequence was "if BOTH move by more than a quarter this arm is falsified and the paragraph is a bigger rewrite than 69 expects". That is exactly what happened, and it is why this is routed as a rewrite and not as a digit list.*
+
+---
+
+### ⛔ `r7679+cc66` ITEM 4's BY-PRODUCT — **`l.2790`'s `1.4` DIVIDES BY A NUMBER `PO-47`'s OWN PRODUCER NO LONGER RETURNS**
+
+You landed, last turn, *"1.4 of the sky's own locating spreads high, two thirds of that offset shared with the control"*, re-grounded on the matched locator with `(1125.11 − 1121.85)/2.36 = 1.38` and `(1123.99 − 1121.85)/3.26 = 0.66`. **The `2.36` is `PO-47`'s locating spread, and running `PO-47`'s own producer here returns `2.21`.**
+
+| `P15_the_skys_own_fourth_peak…`, PART 3 | published | **run here** |
+|---|---|---|
+| statistical spread, fourth peak, `W=55` | `2.19` | **`2.03`** |
+| combined with the `0.87` procedure spread | **`2.36`** | **`2.21`** |
+| the four spreads at `W=55` | `2.44 / 2.43 / 1.88 / 2.19` | **`2.39 / 2.61 / 1.92 / 2.03`** |
+
+⌗ **This is not `r7679`'s doing.** The drift is inside that receipt's Monte Carlo over `COV_TT`; `sky_pk` reproduces `cc66.28`'s quartet **exactly**, the sky is DATA, and item 4's repoint touches neither. Its own seed gate puts the fourth peak's spread at `2.03`–`2.07`, so it is not a seed either. **Every gate in the receipt passes, because none of them pins the spread** — which is how it survived this long.
+
+**⇒ What it does to the clause, and it is a one-digit call:**
+- **"two thirds of that offset shared with the control" does not move at all** — it is a ratio of two offsets and the spread is not in it.
+- **"1.4 of the sky's own locating spreads high" is `3.26/2.36`. On `2.21` it is `1.48`, so the clause reads `1.5`.**
+
+**I have not re-pinned it.** `SKY_SPREAD_PO47 = 2.36` stays in `P15_at_its_own_preferred_H0…` as the figure you grounded the sentence on, with the drift declared beside it; changing a denominator under a landed sentence without your ruling is the move this lane has a rule against.
+
+⇒ **My recommendation: restate the clause as `1.5` and pin it on the producer's live reading, naming `2.21`.** *The alternative leaves a printed figure whose only support is a number its producer no longer returns — and `PO-47`'s `2.36` is quoted by at least two other receipts as given, so whichever way you rule, it is worth ruling once.*
+
+---
+
+### ⚑ `r7679+cc66` ITEM 6 — **THE ARM-OF-RECORD DRAFT OF `sec:largescale`'s LOW-ℓ SENTENCES. FOUR SENTENCES NEED NEW WORDING, ONE OF THEM A CLAIM CHANGE, AND THE SECTION'S TWO LOAD-BEARING STATEMENTS — THE MINIMUM AT ℓ = 4 AND THE RECOVERY BY ℓ = 8 — HOLD IN EVERY ROW**
+
+**The paper is not touched.** Below is current and proposed wording for each sentence, with the measurement under it. ⌗ *I have NOT drafted `l.2566`'s stretch or `ℓ_2 ≈ 7.8`; see the flag at the end.*
+
+**The numbers this draft rests on, all from `P15_the_low_multipole_depth_gap…` and `r7675+70.1`:**
+
+| | ℓ=2 | ℓ=3 | ℓ=4 | ℓ=5 | min | recovery |
+|---|---|---|---|---|---|---|
+| **arm A, exact transfer, at the REFIT LICENSED point** | **0.492** | **0.443** | **0.360** | **0.663** | ℓ=4 | ℓ≈8 |
+| arm A, exact transfer, at the adjudicated `(68.60, 0.2973)` — *what is in print* | 0.487 | 0.435 | 0.359 | 0.666 | ℓ=4 | ℓ≈8 |
+| **arm B, the hierarchy, split-clock bank at its OWN point, frozen** | **0.470** | **0.465** | **0.342** | **0.632** | ℓ=4 | ℓ=8 |
+| **arm B, the hierarchy, split-clock bank at its OWN point, decoupled** | **0.483** | **0.468** | **0.360** | **0.647** | ℓ=4 | ℓ=8 |
+
+**A against B at the refit point, both arms there** (`r7675+70.1`, reproduced to the digit at `r7677+cc66.3`): **`4.85` per cent at ℓ = 3 frozen, `5.55` decoupled**; above ℓ = 5 the ratio is `1.002`/`1.001`/`1.001`. *Mixing the two backgrounds instead gives `7.64` per cent, which is why the comparison must be made at one point.*
+
+#### ① `l.2600` — the cross-validation sentence. **CLAIM CHANGE.**
+
+> **current:** *"on the exact transfer the deficit is $0.487$, $0.435$, $0.359$, $0.666$ of the flat expectation at $\ell=2$ to $5$, and the hierarchy agrees to three per cent at every multipole and one per cent above $\ell=5$"*
+
+> **proposed:** *"on the exact transfer the deficit is $0.492$, $0.443$, $0.360$, $0.663$ of the flat expectation at $\ell=2$ to $5$, and the hierarchy agrees with it to one per cent above $\ell=5$ and to three per cent at every multipole but the octopole, where the two differ by $5$ per cent---\emph{a difference the construction specifies rather than a discrepancy}: the hierarchy carries the split clock and the exact transfer cannot, and about ninety-six per cent of the octopole shift is that split's own physics, the grid and the projection on the stacking rate"*
+
+⌗ **This is the one sentence that cannot be fixed with a digit.** "Three per cent at every multipole" is false at ℓ = 3 on the arm of record — `4.85` frozen, `5.55` decoupled — and both of your options here are claims, not figures: either the sentence names the clock as the reason (above), or the cross-validation claim is narrowed to ℓ ≠ 3. **I have drafted the first, on your ruling toward (a).** *The `96` per cent is 70's `r7677+70.1` and I have not re-derived it; if you would rather the sentence not carry a figure from another node's measurement, "largely that split's own physics" says the same thing without one.*
+
+#### ② `l.2590` — "Carried out with the exact transfer". **Digits only.**
+
+> **current:** *"$\ell(\ell+1)C_\ell$ sits at $\approx0.487$, $0.435$, $0.359$ and $0.666$ of the flat-$\Lambda$CDM expectation at $\ell=2,3,4,5$, recovering by $\ell\approx8$"*
+
+> **proposed:** *"$\ell(\ell+1)C_\ell$ sits at $\approx0.492$, $0.443$, $0.360$ and $0.663$ of the flat-$\Lambda$CDM expectation at $\ell=2,3,4,5$, recovering by $\ell\approx8$"*
+
+⌗ *The same paragraph's parenthetical — "the minimum stays at $\ell=4$ and the recovery multipole moves by $0.1\%$ … while the depths drift by up to $15\%$ at $\ell=4$ under $\pm2\%$ in $r_0$" — **holds as written**, and is in fact what predicts the size of the move above: the four depths shift by `0.3` to `1.8` per cent between the two backgrounds, well inside the `15` per cent the sentence already allows for.*
+
+#### ③ the `fig:lowL-floor` caption. **Digits, and the same CLAIM CHANGE.**
+
+> **current:** *"it sits at $0.487$, $0.435$, $0.359$, $0.666$ of the flat-$\Lambda$CDM expectation at $\ell=2,3,4,5$, recovering by $\ell\approx8$ … Those figures are read through the exact transfer, and the photon hierarchy built for this programme (\S\ref{sec:instrument}), carried to the present, agrees with them to three per cent at every multipole (\S\ref{sec:scope})"*
+
+> **proposed:** *"it sits at $0.492$, $0.443$, $0.360$, $0.663$ of the flat-$\Lambda$CDM expectation at $\ell=2,3,4,5$, recovering by $\ell\approx8$ … Those figures are read through the exact transfer, and the photon hierarchy built for this programme (\S\ref{sec:instrument}), carried to the present, agrees with them to three per cent at every multipole but the octopole and to one per cent above $\ell=5$ (\S\ref{sec:scope})"*
+
+⌗ *The caption's own "a deficit whose minimum falls at $\ell=4$, so that the quadrupole and octopole are its shoulders and not its floor" **holds in every row of the table above**, frozen and decoupled, at both points. It is the strongest thing in the section and the repoint does not touch it.*
+
+#### ④ `l.2596–2597` — the hierarchy's own shape sentence. **Holds; listed so you can see it was checked.**
+
+> *"puts the minimum at the same multipole, $\ell=4$, and recovers at the same place, $\ell\approx7$–$8$"* — **holds on both arm-B builds on the arm-of-record bank.** No change.
+
+#### ⑤ `l.2584` — "falls below its high-$\ell$ plateau for $\ell\lesssim7$ and recovers by $\ell\approx8$". **Holds.** No change.
+
+#### ⑥ `l.2592` and `l.2598` — "the single floor $k_2$ starves $\ell=2$ and $\ell=3$ together", the ℓ=2-to-ℓ=3 ratio near unity. **Holds, and is slightly stronger:** on the arm-of-record hierarchy the ratio is `0.470/0.465 = 1.01` frozen and `0.483/0.468 = 1.03` decoupled. No change.
+
+**⛔ ONE FLAG, AND IT IS A QUESTION RATHER THAN A DRAFT.** `l.2566`'s stretch `$D_C/r_0\approx2.774$` and the `$\ell_2\approx7.8$` it carries are computed on *a* background, and the receipt's own rows show `$r_0$` moving from `5064.75` Mpc at the control to `5051.49` at the adjudicated point. **The refit licensed point is a third background (`H0 68.57073, Om 0.291246, WBH2 0.021643`) and I have not measured `$D_C/r_0$` there.** ⇒ *Nothing in item 6 asks for it, and `2.774` is cited to its own producer as of last turn, so I have left it alone rather than guess. If you want the whole low-ℓ block on one background, that producer needs running at the refit point first and it is a small job — say so and it goes in the next revision.*
+
+⌗ **Arm ⑧ scored: 4 sentences need new wording** (①②③ plus the caption's three-per-cent clause counted with ③), against a registered 3-to-8, central guess 5 ✔, **and at least one needed a claim change** ✔ — the "agrees to three per cent at every multipole" clause, exactly as registered.

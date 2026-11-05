@@ -619,6 +619,21 @@ for _nm, _s, _PKL, _A4, _A3, _F4, _P12, _P13 in (
 #:     to carry one.*  ⌗ The other denominator, `3.26`, is NOT a constant at all: it is the arm's own
 #:     offset, computed two lines up.  *My arm ⑦ registered "at least one of 2.36 and 3.26 cannot be
 #:     read from a bank" and treated both as constants; only one of them is one.*
+#: ⛔⛭⛭⛭ `r7679+cc66.6` -- ** AND ITS PRODUCER NO LONGER RETURNS `2.36`.  THE VALUE HERE IS NOT
+#:   CHANGED, AND THE REASON IS THAT 69 GROUNDED `l.2790` ON `2.36`. **  Running `PO-47`'s own
+#:   producer -- `P15_the_skys_own_fourth_peak_cannot_tell_the_arms_apart...` -- in this container
+#:   gives the sky's fourth peak at `1121.9 +- 2.03` statistical `+- 0.87` procedure = ** `+- 2.21`
+#:   combined **, where its docstring publishes `+- 2.19` / `+- 2.36`.  The drift is in its PART 3
+#:   Monte Carlo over `COV_TT` -- at `W=55` it reads `2.39/2.61/1.92/2.03` against a published
+#:   `2.44/2.43/1.88/2.19`, and its own seed gate puts the fourth peak's spread at `2.03`-`2.07`.
+#:   ⌗ *Nothing in `r7679`'s repoint touches that Monte Carlo: `sky_pk` reproduces `cc66.28`'s
+#:     quartet exactly and the sky is DATA.  So this is a PRE-EXISTING drift of that receipt against
+#:     its own publication, found because item 5 made this receipt depend on the number.*
+#:   ⇒ ** What it does to `l.2790`: ** the `two thirds` is a ratio of two offsets and does not move
+#:     at all; the `1.4` is `3.26/2.36` and becomes `3.26/2.21 = 1.48`, so the sentence would read
+#:     `1.5` locating spreads high.  ** Routed to `69` with the sentence.  I am not re-pinning it
+#:     here: `2.36` is what `l.2790` was grounded on, and changing the denominator under a landed
+#:     sentence without a ruling is the move this lane has a rule against. **
 SKY_SPREAD_PO47 = 2.36            # PO-47's locating spread on the sky's fourth peak -- WORKING STATE
 HIGH_IN_PRINT = 1.4               # l.2790: the fourth peak sits this many locating spreads high
 SHARED_IN_PRINT = 0.67            # l.2790: "two thirds of that offset shared with the control"
