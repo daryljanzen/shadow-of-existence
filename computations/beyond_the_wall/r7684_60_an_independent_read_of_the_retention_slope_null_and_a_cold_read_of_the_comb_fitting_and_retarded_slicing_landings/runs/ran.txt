@@ -1,3 +1,12 @@
 P15_the_phase_systematic rc=0 wall=57s lines=148
 P15_the_cross_term_is_no rc=0 wall=1s lines=306
 __RUN_DONE__
+P15_the_carrier_separation_o rc=0 wall=368s lines=258
+P15_centring_removes_the_cor rc=0 wall=164s lines=81
+P15_the_fourth_parameter_rec rc=0 wall=270s lines=154
+__RUN2_DONE__
+P15_the_three_parameter rc=0 wall=<not timed; launched outside the harness> lines=144  -- 9 of 9 checks pass
+⌗ All six receipts run on the tree named in TREE.txt, sequentially, one process at a time, the
+  scoped suite's own child environment (OMP/OPENBLAS/MKL/NUMEXPR/VECLIB _NUM_THREADS=1,
+  PYTHONUNBUFFERED=1), NODE UNSET.  Every one returned 0.  Their whole printed output is beside this
+  file, kept as .txt because the repository's .gitignore excludes *.out.
