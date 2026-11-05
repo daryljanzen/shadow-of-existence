@@ -10,6 +10,22 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ⌗ re r7685: CAMPAIGN 102, THE FRONTIER OF D ON THE SHELL MODEL, REGISTERED BEFORE ANY LEAN (`r7685+71.1`)
+
+Registered in `r7685_71_campaign102/PREDICTION.md`, at `600` lines and p `0.6`.
+
+- **`M` grows across the horizon.** The new `M′ = {ũ < v₀, UV < 1}` carries Kruskal's metric pulled back. It equals
+  `1` on the shell for every `ũ < v₀` (checked in advance), so a single formula covers both sides.
+- **The causal relation and `J⁻(O) = D`** on `M′`, which is null-convex. The expected stop is the step that a causal
+  curve raises both null coordinates.
+- **`∂D = 𝓗⁺ = {ũ = u_H}`, inside `M′`.** It is the future horizon alone. `r = 2M` on it after the shell, and it
+  forms in the flat body before the shell arrives.
+- **The Cauchy property carries over** to the new spacetime on `D`.
+- **Stated in advance:** the accumulation machinery does not run on the thin shell. It needs a `C¹` metric, and the
+  shell has a kink.
+- **②, the inventory refresh,** goes in this PR as `r7685_71_inventory/INVENTORY.md`. Its cheapest row gets its own
+  registration.
+
 ## ✔ re r7683: THE RETARDED SLICING IS CAUCHY ON A COLLAPSE EXTERIOR, FOR η ≤ 2 — BUILT (`r7683+71.2`)
 
 Campaign 101 came true, apart from the stretch. There are `1210` new lines; details are in
