@@ -1,0 +1,94 @@
+{
+ "armA_distances": {
+  "depths": [
+   0.4874,
+   0.4348,
+   0.359,
+   0.6663,
+   0.9113,
+   0.9831,
+   0.9981
+  ],
+  "recovery": 8,
+  "wall_s": 7.8
+ },
+ "armA_recipe_check": {
+  "printed": [
+   0.487,
+   0.435,
+   0.359,
+   0.666,
+   0.911,
+   0.983,
+   0.998
+  ],
+  "max_abs": 0.0
+ },
+ "armB_frozen": {
+  "depths": [
+   0.4658,
+   0.456,
+   0.3405,
+   0.6363,
+   0.9004,
+   0.982,
+   0.9997
+  ],
+  "recovery": 8,
+  "minimum_at": 4,
+  "vs_one_clock_namesake": [
+   -0.0049,
+   0.0256,
+   0.004,
+   -0.0154,
+   -0.0082,
+   -0.0007,
+   0.0031
+  ],
+  "wall_s": 64.8,
+  "sweep_key": "FROZEN_adjudicated_KLO_0_1",
+  "A_minus_B": [
+   0.0216,
+   -0.0212,
+   0.0185,
+   0.03,
+   0.0109,
+   0.0011,
+   -0.0016
+  ]
+ },
+ "armB_decoupled": {
+  "depths": [
+   0.4781,
+   0.4589,
+   0.3581,
+   0.6508,
+   0.9061,
+   0.9818,
+   0.9977
+  ],
+  "recovery": 8,
+  "minimum_at": 4,
+  "vs_one_clock_namesake": [
+   0.0007,
+   0.0289,
+   0.0096,
+   -0.0079,
+   -0.003,
+   -0.0002,
+   0.0002
+  ],
+  "wall_s": 656.6,
+  "sweep_key": "DECOUPLED_adjudicated_KLO_0_1_NS3_60000",
+  "A_minus_B": [
+   0.0093,
+   -0.0241,
+   0.0009,
+   0.0155,
+   0.0052,
+   0.0013,
+   0.0004
+  ]
+ },
+ "banked": "spectra/p15_lowell_depths_distances_leafrec1.npz"
+}
