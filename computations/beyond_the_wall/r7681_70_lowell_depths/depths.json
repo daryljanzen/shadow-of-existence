@@ -1,0 +1,73 @@
+{
+ "armA_adjudicated": {
+  "depths": [
+   0.4874,
+   0.4348,
+   0.359,
+   0.6663,
+   0.9113,
+   0.9831,
+   0.9981
+  ],
+  "recovery": 8,
+  "wall_s": 7.9
+ },
+ "armA_refit_licensed": {
+  "depths": [
+   0.492,
+   0.4434,
+   0.3601,
+   0.6627,
+   0.9097,
+   0.9827,
+   0.998
+  ],
+  "recovery": 8,
+  "wall_s": 7.1
+ },
+ "armA_recipe_check": {
+  "printed": [
+   0.487,
+   0.435,
+   0.359,
+   0.666,
+   0.911,
+   0.983,
+   0.998
+  ],
+  "max_abs": 0.0
+ },
+ "armB_frozen": {
+  "depths": [
+   0.4697,
+   0.4649,
+   0.3424,
+   0.6321,
+   0.8985,
+   0.9805,
+   1.0003
+  ],
+  "recovery": 8,
+  "minimum_at": 4,
+  "vs_r7675_bank_max_abs": 0.0,
+  "wall_s": 74.3,
+  "sweep_key": "FROZEN_adjudicated_KLO_0_1"
+ },
+ "armB_decoupled": {
+  "depths": [
+   0.4826,
+   0.468,
+   0.3604,
+   0.6469,
+   0.9046,
+   0.9808,
+   0.9982
+  ],
+  "recovery": 8,
+  "minimum_at": 4,
+  "vs_r7675_bank_max_abs": 0.0,
+  "wall_s": 766.1,
+  "sweep_key": "DECOUPLED_adjudicated_KLO_0_1_NS3_60000"
+ },
+ "banked": "spectra/p15_lowell_depths_leafrec1.npz"
+}
