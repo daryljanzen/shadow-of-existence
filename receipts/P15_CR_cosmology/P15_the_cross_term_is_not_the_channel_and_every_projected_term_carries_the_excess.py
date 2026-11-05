@@ -136,6 +136,7 @@ COMPUTES: scope.
   * NOTHING IS FITTED.  The two reweightings in (4) are constructions from banked spectra.
 """
 import os
+import sys
 
 import numpy as np
 
@@ -540,6 +541,91 @@ check("...and the intercept STRADDLES one, so the rise is established and a cons
       f"(the lowest band centre is q = {_x[0]:.2f})",
       IC.min() < 1.0 < IC.max() + 0.02,
       f"intercept {IC.mean():.4f} +- {IC.std():.4f}, range {IC.min():.4f}-{IC.max():.4f}")
+
+# ===================================================================================================
+# ⛭⛭⛭ `r7685+cc66`, ON 69's ORDER AND ON THIS SEAT'S OWN `r7683` PART-3 RECOMMENDATION:
+#   ** PART 6B -- THE SAME RETENTION ON EACH ARM'S OWN COMB, WHICH IS NOW THE READING OF RECORD. **
+#   *`r7673+cc66.13`/`r7683` moved the retention statistic onto each arm's own fitted comb.  The figures
+#   were measured in `r7683_cc66_the_own_comb_convention/` and the paper's `l.1771-1779` cites THEM TO
+#   THIS RECEIPT -- so until this file computes them, the landing would print figures beside a receipt
+#   that does not carry them.  That is what 69 held the block for, and this part discharges it.*
+#   ⛔ ** IT CANNOT BE DONE BY EDITING `retained()` ABOVE, and that is the point of importing. **
+#   `retained()` takes no comb parameters at all and bands BOTH arms on ONE common q grid; the own form
+#   needs four fitted combs and carries each arm's side onto the control's comb coordinate on that side.
+#   ⇒ *So the module is imported rather than the statistic reimplemented -- and `own_comb` is itself
+#   built by lifting THIS receipt's `env_a`, `osc` and `retained`, which is why the citation stays here
+#   rather than moving.  The check below PROVES that lift: the module's shared form must reproduce this
+#   file's own `retained()` to the digit, or the import is not the same statistic and nothing after it
+#   means anything.*
+_OCD = os.path.join(ROOT, 'computations', 'beyond_the_wall', 'r7637_70_own_comb_statistic')
+check("the own-comb module this receipt now imports is present: `r7637_70_own_comb_statistic/own_comb.py`",
+      os.path.exists(os.path.join(_OCD, 'own_comb.py')), 'own_comb.py')
+sys.path.insert(0, _OCD)
+import own_comb as OC                                                        # noqa: E402
+
+print("\nPART 6B -- ⓶ THE SAME RETENTION ON EACH ARM'S OWN COMB (`r7685`, the reading of record).")
+print("-" * 100)
+print("    own(q) = the same band ratio, each arm's side read at the control's comb coordinate")
+
+_OCB = {t: dict(QL=QL[t], QK=QK[t],
+                Dl=np.asarray(PR[t]['Dl'], float),
+                S2=np.asarray(SO[t]['S_i'], float) ** 2) for t in PR}
+_OCC = OC.retention_combs(_OCB)
+
+_OSL, _OIC, _OLO, _OHI = [], [], [], []
+for _w, _nb, _hi in OC.SETTINGS:
+    _ox, _oy = OC.retained_own(_OCB, _w, _nb, _hi, C=_OCC)
+    _os, _oc = np.polyfit(_ox, _oy, 1)
+    _OSL.append(_os); _OIC.append(_oc); _OLO.append(_oy[0]); _OHI.append(_oy[-1])
+_OSL, _OIC, _OLO, _OHI = (np.array(v) for v in (_OSL, _OIC, _OLO, _OHI))
+
+print(f"\n    over {len(_OSL)} settings (4 windows x 3 band counts), ON EACH ARM'S OWN COMB:")
+print(f"      lowest band   {_OLO.mean():.4f}   (range {_OLO.min():.4f} to {_OLO.max():.4f})")
+print(f"      highest band  {_OHI.mean():.4f}   (range {_OHI.min():.4f} to {_OHI.max():.4f})")
+print(f"      slope         {_OSL.mean():+.5f} +- {_OSL.std():.5f} per unit q   "
+      f"({_OSL.mean()/_OSL.std():.1f} sigma, negative in {int((_OSL < 0).sum())})")
+print(f"      intercept     {_OIC.mean():.4f} +- {_OIC.std():.4f} at q = 0   "
+      f"(range {_OIC.min():.4f} to {_OIC.max():.4f})")
+print(f"    and THE SHARED READING BESIDE IT, from `retained()` above:")
+print(f"      slope         {SL.mean():+.5f} +- {SL.std():.5f}   "
+      f"({SL.mean()/SL.std():.1f} sigma)        intercept {IC.mean():.4f} +- {IC.std():.4f}")
+
+# --- the lift: the module's SHARED form must reproduce this file's own `retained()` ----------------
+_shr, _shrsd = OC.slope12(lambda b, w, nb, hi: OC.retained_shared(b, w, nb, hi), _OCB)
+check("⚑ ** THE IMPORTED MODULE IS THIS RECEIPT'S OWN STATISTIC. **  `own_comb.retained_shared` "
+      "reproduces this file's `retained()` slope and spread to better than a part in 10^4, so the "
+      "own form is a COORDINATE CARRY on the same statistic and not a different one -- which is why "
+      "`l.1771-1779` cites this receipt",
+      abs(_shr - SL.mean()) < 1e-4 and abs(_shrsd - SL.std()) < 1e-4,
+      f"module {_shr:+.5f} +- {_shrsd:.5f} against this file's {SL.mean():+.5f} +- {SL.std():.5f}")
+
+# --- the four figures `l.1771-1779` prints, each pinned AT THE PRECISION IT IS PRINTED TO ----------
+# ⌗ Two-sided and at the printed precision, per `r7643+cc66.62`'s rule: a one-sided bound on a figure
+#   the paper prints asserts nothing about the digit that gets printed.
+for _nm, _got, _want, _tol, _fmt in (
+        ('the lowest band ratio',  _OLO.mean(),  1.028,    5e-4, '.3f'),
+        ('the highest band ratio', _OHI.mean(),  1.075,    5e-4, '.3f'),
+        ('the slope',              _OSL.mean(),  0.01034,  5e-6, '.5f'),
+        ('the slope spread',       _OSL.std(),   0.00137,  5e-6, '.5f'),
+        ('the intercept',          _OIC.mean(),  1.026,    5e-4, '.3f'),
+        ('the intercept spread',   _OIC.std(),   0.009,    5e-4, '.3f')):
+    check(f"own comb: {_nm} is what `l.1771-1779` prints, {_want:{_fmt}}",
+          abs(_got - _want) < _tol, f"{_got:{_fmt}} against {_want:{_fmt}}")
+
+check("⚑⛔ ** AND ON THE OWN COMB THE INTERCEPT DOES NOT STRADDLE ONE, WHICH INVERTS THE SENTENCE "
+      "THE SHARED FORM SUPPORTED. **  Every one of the twelve settings sits ABOVE one, so there IS a "
+      "constant offset and `l.1774-1776`'s 'what is established is the growth with wavenumber and "
+      "not a constant offset' is false in this convention",
+      _OIC.min() > 1.0,
+      f"lowest of the twelve own-comb intercepts {_OIC.min():.4f}, highest {_OIC.max():.4f}; "
+      f"the shared form's range is {IC.min():.4f}-{IC.max():.4f}, which does straddle one")
+
+check("...and the own form is the TIGHTER statistic, so the inversion is not a weakening: its slope "
+      "is further from zero in units of its own setting spread, and its intercept spread is smaller "
+      "than the shared form's",
+      _OSL.mean() / _OSL.std() > SL.mean() / SL.std() and _OIC.std() < IC.std(),
+      f"{_OSL.mean()/_OSL.std():.1f} sigma against {SL.mean()/SL.std():.1f}, intercept spread "
+      f"{_OIC.std():.4f} against {IC.std():.4f}")
 
 # ===================================================================================================
 print("\n" + "=" * 100)
