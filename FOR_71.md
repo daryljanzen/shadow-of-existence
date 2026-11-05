@@ -15,6 +15,14 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7685` (69) — **MERGED: THE RETARDED SLICING IS CAUCHY ON THE COLLAPSE EXTERIOR, AND P1 SAYS SO. NEXT: THE FRONTIER OF D ON THE SHELL MODEL, THEN THE INVENTORY'S NEXT ROW**
+
+**Merged** (`r7683+71.1`–`.2`). `lem:alignment`'s proof now states that on a radial-plane collapse by a thin ingoing null shell with a flat past, the retarded slicing, a(u + ηr) on the whole vacuum exterior and continued smoothly through the body, is Cauchy temporal for 0 < η ≤ 2 (`sv_cauchy`, `sv_retarded_eq`). On the eternal exterior a change in the past alone suffices (`sv_eternal_cauchy`). So row 8ii-b is built in the setting P1 states.
+
+**Your next order:**
+1. **The frontier of D on the shell model,** which you list as not done: that ∂D is the future horizon alone. Without it the slicing is Cauchy on D but the horizon it accumulates on is not identified there.
+2. **Then refresh the P1 inventory** and name what is left and its price: 1c, 2i/2ii, 5 (`cor:stationary`, rigidity), and 7d/7e (the matter). Take the cheapest row to BUILT. Register first.
+
 ## ⚑ `r7683` (69) — **MERGED: THE WHOLE THEOREM RUNS ON SCHWARZSCHILD THROUGH A CONFORMAL EXTENSION, AND P1 SAYS SO. NEXT: THE COLLAPSE MODEL FOR THE RETARDED SLICING, AS RULED**
 
 **Merged** (`r7681+71.1`–`.2`). `rem:formalised`'s seventh family now reads that, with the conformal extension (u, v) = (arctan U, arctan V) into the flat plane and Ω² = 1/[F(1+U²)(1+V²)], the whole theorem runs there, the identification 𝓗⁺ = ∂J⁻(𝒥⁺) included, with 𝒥⁺ the radial plane's future null infinity r → ∞ (`sx_prop_causal_alignment`). Only the cylinder, the four-dimensional and the warped families are still identified as sets.

@@ -7,6 +7,24 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7685` (69) — **MERGED: THE OWN-COMB BLOCK AND ITS INTERCEPT FINDING. ONE STEP BEFORE IT LANDS: `the_cross_term…` MUST CARRY THE OWN-COMB FIGURES IT WILL BE CITED FOR. AND THE LOW-ℓ CLAIM: 70's DISTANCES-POINT ROWS ARE IN, SO DRAFT THE SIX SITES**
+
+**Merged** (`r7683+cc66.0`–`.3`). Your own-comb measurement is the right one to print. The intercept finding (1.026 ± 0.009, every setting above one) strengthens the reading rather than weakening it. The slope is 7.6 times its setting spread against the shared form's 2.2.
+
+**Your recommendation in part 3 is taken: `the_cross_term…` gains the own-comb form by importing `own_comb`, and the citation stays.** But the block cannot land until that is done. The proposed l.1771–1779 prints the own-comb endpoints `1.028`/`1.075`, the slope and spread, and the intercept `1.026`/`0.009`, all cited to `the_cross_term…`. Today those figures live only in `r7683_cc66_the_own_comb_convention/` and not in any receipt, so the landing would print figures beside a receipt that does not compute them.
+1. **Make `the_cross_term…` report both forms,** with the own-comb lowest- and highest-band ratios, slope, spread and intercept pinned at the printed precision, and the shared reading carried beside them.
+2. **Then re-send l.1771–1793 as you drafted it,** with two edits of mine:
+   - **keep** your clause "so the size is established only to within a factor of two";
+   - **replace** "the projection does something at the longest acoustic wavelengths and more of it at each shorter one" with a sentence that names the offset as measured, `+2.6` per cent at the longest wavelengths.
+
+   I land it whole next turn.
+
+**The low ℓ: draft the six sites now, from `spectra/p15_lowell_depths_distances_leafrec1.npz`** (70's `r7683+70.1`). The depths in print stand; the arm A row reproduces all seven. Read the A-against-B relative differences at each ℓ on both builds before choosing wording. FROZEN differs by about 4.4% at ℓ = 2, 4.9% at ℓ = 3, 5.2% at ℓ = 4 and 4.5% at ℓ = 5. DECOUPLED is within about 2.3% except at ℓ = 3 (5.5%). So "three per cent at every multipole but the octopole" is true of one build and not the other.
+- Say which build the cross-validation sentences mean. The paper's "neither the freeze nor the towers is doing the work" bears on this.
+- Draft each of the six claim sites with the figures that build supports, the clock named as the reason at ℓ = 3: l.134, the caption, l.2596, l.2798, l.2809–2811, P7 l.778 and P18 l.1494.
+
+**Also, 60's `r7686` repairs are landed:** "between 1.0597 and 1.0598"; "three of the twelve axis-and-arm pairs"; l.2035's "2.09 multipoles statistical"; and l.2790's "1.4 of the sky's own combined locating spread high on the matched locator", both citations kept, the second supporting the sharing. The band-RMS receipt's docstring still says "exactly one … 1/7/4": make it 2/6/4.
+
 ## ⚑ `r7683` (69) — **MERGED: THE RECONCILIATION, THE BAND-RMS BLOCK, THE SPREAD AND THE NINE SITES. LANDED: BAND-RMS, `2.10`, AND 60's REPAIRS TO ITEM 2. RULED: THE SLOPE GOES ON EACH ARM'S OWN COMB, AND THE LOW-ℓ SECTION STAYS ON THE BACKGROUND THE DISTANCE DATA FIX**
 
 **Merged** (`r7681+cc66.0`–`.5`).
