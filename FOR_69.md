@@ -7346,3 +7346,46 @@ You asked: *"If `the_cross_term…`, which `l.1773` cites, carries only the shar
 ⌗ *The alternative — reimplementing the coordinate carry inside `the_cross_term…` — would be a second implementation of a statistic that already has one, which is the defect `cc66.160`'s retyped peak finder cost four differences to.*
 
 ⌗ **One consequence to decide with the wording:** once that receipt reports both, `l.1773`'s `\rcpt` is right either way, but the sentence has to say **which** form its digits are. My proposed block below puts them all in the own-comb convention and states the shared reading once as what reads the drift, which is your ruling 1 item 2.
+
+---
+
+### ⛔ `r7683+cc66` RULING 1, part 2 — **`l.1772–1793` IN THE OWN-COMB CONVENTION, AND ONE OF THAT SENTENCE'S TWO CLAIMS INVERTS: ON THE OWN COMB THE INTERCEPT DOES *NOT* COVER ONE**
+
+Measured on the arm of record, twelve settings, both conventions side by side:
+
+| | slope | σ | **intercept** | straddles 1? | lowest band | highest band |
+|---|---|---|---|---|---|---|
+| **own comb** | `+0.01034 ± 0.00137` | **`7.6`** | **`1.0263 ± 0.0089`** | **NO** | `1.0280` | `1.0753` |
+| shared comb | `+0.02690 ± 0.01226` | `2.2` | `0.9927 ± 0.0331` | yes | `1.0217` | `1.1521` |
+
+**⛔ THE CLAIM THAT INVERTS.** `l.1774–1776` reads *"The intercept of that rise covers one across the same twelve settings, `$1.017$` with a spread of `$0.010$`, so what is established is the growth with wavenumber and not a constant offset"*. **On the own comb all twelve intercepts sit above one — `1.0153` to `1.0397` — so there IS a constant offset: `+2.6` per cent, determined to `0.9` per cent.** ⇒ *The sentence's second half is a claim about what is NOT established, and the own-comb convention establishes it.*
+
+⌗ **And this is not a weakening of the reading, it is a strengthening of a different part of it.** The own-comb slope is `7.6` sigma of its own setting spread against the shared one's `2.2`, and negative in **zero** of twelve. *So moving to the own comb makes the rise far more secure and adds an offset the shared convention could not see — because the shared statistic's `0.0331` intercept spread, three and a half times the own one's, is exactly the drift it reads.*
+
+#### Proposed wording for `l.1771–1779`, wholly in the own-comb convention
+
+> *\emph{And the fraction of the source's oscillation the projection retains rises with wavenumber}: read with each arm banded on its own acoustic comb, its arm-to-control ratio goes from $1.028$ in the lowest acoustic band to $1.075$ in the highest, with a slope of $+0.0103$ per acoustic period, the twelve envelope settings spanning $0.0014$ about it and none of them returning a negative value---\emph{seven and a half times its own spread across those settings}. \emph{The intercept of that rise sits above one at $1.026$ with a spread of $0.009$}, so what is established is a growth with wavenumber \emph{and} a constant offset beneath it: \emph{the projection does something at the longest acoustic wavelengths and more of it at each shorter one}\rcpt{P15_the_cross_term_is_not_the_channel_and_every_projected_term_carries_the_excess}.
+
+⌗ *Note `l.1777–1778`'s clause "it does nothing at the longest acoustic wavelengths" has to go with it: on the own comb it does `2.6` per cent there. That clause was on my `r7681` list as HOLDING, and it held only in the shared convention — **so ruling 1 moves a sentence I had reported as safe**, which I would rather flag than let land.*
+
+#### And the second paragraph, `l.1779–1793`
+
+| line | current | **own-comb convention** |
+|---|---|---|
+| `l.1781` | "$36$ to $39$ per cent of the reported slope" | **`21` to `32` per cent** (null `+0.00215` to `+0.00328` against `+0.01034`) |
+| `l.1782` | periods "$1.0170$ and $1.0160$" | **`1.0170` and `1.0115`** |
+| `l.1782` | drift "between $0.013$ and $0.042$ of a radian" | **`0.034` and `0.199`** |
+| `l.1784` | "the null slope falling to a sixth or less" | **holds** |
+| `l.1785` | "flattening the envelope leaves most of it" | **holds** |
+| `l.1786–1787` | "about two thirds of the quoted slope is retention and the rest is that drift" | **holds, and is now what the receipt asserts**: the rise survives at `+0.0071` to `+0.0082` of `+0.0103`, which is `68` to `79` per cent |
+| `l.1787–1788` | the step's false value "a quarter to two fifths of the measured step" | **a tenth to a quarter** on the own comb (`−0.0039`/`−0.0105` against `−0.0396`) |
+| `l.1789` | "three to three and a half independent modes" | **two to three and a half** |
+| `l.1790` | "the slope's own effective count being between five and nine" | **nine and eighteen** |
+
+**⇒ And 60's over-phase caveat, measured here and not quoted: the worst phase reaches `0.54` and `0.51` of the own-comb slope** at the pre-registered and the banks' own amplitudes. *So the own-comb reading survives at the REAL phase comfortably and is half-eaten at the worst phase, which is the harsher test and belongs in the sentence:*
+
+> *\emph{The rise survives its own systematic and its size is bounded by it}: fed one comb on both arms the statistic returns $21$ to $32$ per cent of the slope at the real comb's phase, so about three quarters of it is retention---but at the worst phase of the scan the false value reaches half the slope, \emph{so the size is established only to within a factor of two}.*
+
+⌗ **The shared-comb reading, stated once as you ruled:** `+0.0269 ± 0.0123`, whose null returns `115` per cent of it at the real phase. *That is what `r7639+70` calls the beat rather than a measurement, and on the arm of record it is `2.2` sigma against the own comb's `7.6`.*
+
+⌗ **Figure count: 11 of the sentences' printed figures change** — six in `l.1772–1776` and five in `l.1781–1790` — against the 8-to-14 I registered, central 11. **Plus one claim inversion and one clause withdrawal**, neither of which is a figure.
