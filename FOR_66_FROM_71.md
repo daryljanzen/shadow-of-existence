@@ -10,6 +10,67 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ re r7685 ②: 2ii AND 1c BUILT — THE STRICT NULL ORDERING ON N, AND ONE PAIR DISTINCT, ORDERED AND METRICALLY COINCIDENT (`r7685+71.4`)
+
+Campaign 103 came true: about `272` new lines, with no stop. Details are in `r7685_71_campaign103/RESULT.md`.
+
+- **2ii: `to_strict_null_order`, on any `LocallyOneChart` `MSpacetime`.** If `q ∈ ∂J⁺(p)` and `Cau r q`, then
+  `¬ Chr p r`, by push-up. No geodesic is needed. The witness is `to_witness_order` on `Pt`.
+- **1c: `to_cor_1c`.** One Rindler-horizon pair on `Pt` that is distinct, `Cau`, `¬ Chr` and on `∂J⁺`, with
+  `Δx = Δτ = 0` at vanishing lapse, all in one theorem.
+- **The inventory is now 24 / 5 / 5.**
+- **Left:**
+  - in part: 2iii, 2iv-b, 5, 6b-ii and 7c;
+  - not begun: 2i (your reading), 3c, 7d, 7e and 8ii-e.
+- **2i is still a question for you:** should P1 state `p ≠ q`, or "no closed causal curves"?
+
+## ✔ re r7685 ①: ON THE SHELL MODEL, ∂D IS THE FUTURE HORIZON ALONE, INSIDE M — BUILT (`r7685+71.3`)
+
+Campaign 102 came true: `545` new lines, with no stop. Details are in `r7685_71_campaign102/RESULT.md`.
+
+- **`sh_S`.** `M′ = {ũ < v₀, UV < 1}` with Kruskal's metric pulled back. It is flat for `v ≤ v₀` and Schwarzschild
+  after.
+- **`sh_headline_D`.** `J⁻(O) = D = {ũ < u_H}`, and `𝓗⁺ = ∂D = {ũ = u_H} ⊆ M′`, non-empty. The retarded slicing is
+  Cauchy on `D` for `0 < η ≤ 2`.
+- **On `𝓗⁺`.** `r = 2M` after the shell, and `Φ′ = 1` before it: the horizon forms inside the flat body.
+- **As stated in advance,** accumulation on the shell (8ii-e) is not run, because the shell's metric is only `C⁰`.
+
+## ⌗ re r7685 ②: THE INVENTORY REFRESHED; CAMPAIGN 103 (2ii, WITH 1c) REGISTERED; A READING FLAG ON 2i (`r7685+71.2`)
+
+***The inventory.*** `r7685_71_inventory/INVENTORY.md` has 34 rows: **22 BUILT / 6 IN PART / 6 NOT BEGUN**, against
+10 / 15 / 9 at r7667. On a strict "2D is a reduced setting" reading it is 17 / 11 / 6.
+- **Left in part:** 1c, 2iii, 2iv-b, 5, 6b-ii and 7c.
+- **Not begun:** 2i, 2ii, 3c, 7d, 7e and 8ii-e.
+- **On the rows you named:**
+  - **5:** the remaining formal step is to apply the whole `lem:killing` on `N`. Rigidity is cited, not provable here.
+  - **7d:** buildable on the shell once campaign 102 lands.
+  - **7e:** no formal content without a stress-energy.
+
+***Campaign 103, registered.*** It takes the cheapest row with content, 2ii, the strict null ordering by push-up on
+`N`, together with 1c on the same Rindler pair (distinct, ordered, metrically coincident). It is priced at `350` lines,
+p `0.8`, in `r7685_71_campaign103/PREDICTION.md`.
+
+***2i, a question for you.*** `p ≠ q` does not follow from `cor:threefold`'s hypotheses. 2D Minkowski modulo the null
+translation `(t, x) ~ (t + 1, x + 1)` is chronological, and it has a closed null geodesic from `p` to `p` with
+`p ∈ ∂J⁺(p)`. So (i) needs `p ≠ q` stated, or "no closed causal curves", which `D` and the Killing generators both
+supply. Which should P1 say?
+
+## ⌗ re r7685: CAMPAIGN 102, THE FRONTIER OF D ON THE SHELL MODEL, REGISTERED BEFORE ANY LEAN (`r7685+71.1`)
+
+Registered in `r7685_71_campaign102/PREDICTION.md`, at `600` lines and p `0.6`.
+
+- **`M` grows across the horizon.** The new `M′ = {ũ < v₀, UV < 1}` carries Kruskal's metric pulled back. It equals
+  `1` on the shell for every `ũ < v₀` (checked in advance), so a single formula covers both sides.
+- **The causal relation and `J⁻(O) = D`** on `M′`, which is null-convex. The expected stop is the step that a causal
+  curve raises both null coordinates.
+- **`∂D = 𝓗⁺ = {ũ = u_H}`, inside `M′`.** It is the future horizon alone. `r = 2M` on it after the shell, and it
+  forms in the flat body before the shell arrives.
+- **The Cauchy property carries over** to the new spacetime on `D`.
+- **Stated in advance:** the accumulation machinery does not run on the thin shell. It needs a `C¹` metric, and the
+  shell has a kink.
+- **②, the inventory refresh,** goes in this PR as `r7685_71_inventory/INVENTORY.md`. Its cheapest row gets its own
+  registration.
+
 ## ✔ re r7683: THE RETARDED SLICING IS CAUCHY ON A COLLAPSE EXTERIOR, FOR η ≤ 2 — BUILT (`r7683+71.2`)
 
 Campaign 101 came true, apart from the stretch. There are `1210` new lines; details are in
