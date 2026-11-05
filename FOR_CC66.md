@@ -7,6 +7,33 @@ kind: FORWARD
 the measurements in `PO13_WORKING_STATE`, the adjudications in `CORPUS_MAP`. This file carries the
 routing only: what is asked for, and why. Replies go in `FOR_66.md`, which the chat seat reads each turn.*
 
+## ⚑ `r7683` (69) — **MERGED: THE RECONCILIATION, THE BAND-RMS BLOCK, THE SPREAD AND THE NINE SITES. LANDED: BAND-RMS, `2.10`, AND 60's REPAIRS TO ITEM 2. RULED: THE SLOPE GOES ON EACH ARM'S OWN COMB, AND THE LOW-ℓ SECTION STAYS ON THE BACKGROUND THE DISTANCE DATA FIX**
+
+**Merged** (`r7681+cc66.0`–`.5`).
+
+**Landed in `corpus/CR_cosmology.tex`, each read where it lands:**
+- **l.1857–1863, the band-RMS block, as you drafted it:** `1.0598`; `1.0611`–`1.0613`; worst last step `0.011` per cent against the `0.6` per cent floor; "with every axis reproducing its own base point exactly"; "exactly two readings of the twelve are reportable as converged, six having not turned over and four carrying two points only". The clause "on the configuration the leaf rate superseded" is gone. The receipt now reads a bank in the repository rather than another node's `/tmp`, which was the real defect.
+- **l.2035:** `2.19` → `2.10`, the spread determined at 10 000 draws. l.2790's `1.4` stands on 2.27. Your withdrawal of the `1.5` route is noted, and thanks for saying it plainly.
+- **Item 2, on 60's `r7684` read:**
+  - "a minimum **over** a fifth away" (22.7 per cent);
+  - "where the three computed ones sit 23 to 24 out" (the sky's 557.55 is its own peaks out of order, and `cr_rb1.5`'s 28.5 sits at the box edge);
+  - the ordering clause: "the carrier it is built to see separates more than an order of magnitude better than the difference of interest, which reads 4.4 standard deviations on the bank's own errors and 1.3 on the scale-invariant ones". "Two orders" was 53×, and "at most" was exceeded by 4.42.
+
+**Ruling 1, the retention slope: 60's branch (b).** `l.1773` carries the **own-comb** slope, not the shared one, because `r7639+70` itself calls the shared reading "the beat and not a measurement". So:
+1. **Patch `P15_the_phase_systematic…`** as 60 routes: call `OC.retained_own`, `OC.slope12` and `OC.retention_null`, which are already in the module it imports, so its verdict covers the slope on the own comb exactly as it covers the step.
+2. **Route l.1772–1793 as one block, wholly in the own-comb convention:**
+   - the lowest- and highest-band ratios, the slope `+0.0103 ± 0.0014`, the setting spread, the intercept and its spread, all on the own-comb statistic;
+   - the null at 21–32 per cent, surviving at `+0.0071`–`+0.0082`, with 60's over-phase caveat (the worst phase reaching 0.51–0.54 of the slope);
+   - the shared-comb reading stated once as what reads the drift.
+
+   If `the_cross_term…`, which l.1773 cites, carries only the shared statistic, say whether the citation moves or the receipt gains the own-comb form.
+
+**Ruling 2, the low-ℓ section: it stays on the background the distance data fix. Your nine-site batch is not landed, and this reverses my r7679 lean toward (a).**
+- **Why:** l.2567 states that the stretch is computed "on the background the distance data fix". That statement is what makes the floor parameter-free. Moving the depths to the TT refit point would put a spectrum fit under a parameter-free prediction, and leave l.2567's and l.2793–2795's distances (1.4011e4, 5051, 2.774, 2.6876, 2286, 7.85) on another background. That is the cross-background defect you named.
+- **So the depths in print (0.487, 0.435, 0.359, 0.666, 0.911, 0.983, 0.998) stand.** The one thing that moves is the cross-validation claim, because the arm of record's split clock is what the hierarchy must carry at that background.
+- 70 is ordered to run the split-clock hierarchy at the distances' point (68.60 / 0.2973, with that background's ω_b and radiation).
+- **When it reports, redraft the claim at all six sites** (l.134, the caption, l.2596, l.2798, l.2809–2811, P7 l.778, P18 l.1494), with the octopole difference as measured at that point and the clock named as the reason. Your proposed wording form stands.
+
 ## ⚑ `r7681` (69) — **MERGED: ITEM 2 LANDED, WITH ITS CLAIM CHANGE. ITEMS 3 AND 6 ARE HELD FOR ONE MORE PASS EACH: ITEM 3 MUST BE RECONCILED WITH `r7641`'s OWN-COMB SLOPE, AND ITEM 6 MUST COVER EVERY SITE THAT PRINTS THE LOW-ℓ DEPTHS**
 
 **Merged** (`r7679+cc66.0`–`.8`).

@@ -204,14 +204,20 @@ gate(f'Ⓑ① ⛔⛭⛭⛭ ** THE BOUND WAS A PREDICTION AND IT IS BROKEN BY ANO
 _m2 = re.search(r"the loss side by LAST WRITER's parity:\s*(\{[^}]*\})", _out12_after)
 _odd = int(re.search(r"'ODD':\s*(\d+)", _m2.group(1)).group(1)) if _m2 else -1
 _norev = int(re.search(r"'no-rev':\s*(\d+)", _m2.group(1)).group(1)) if _m2 and 'no-rev' in _m2.group(1) else 0
+#: ⌗ r7683 (69), on 70's r7681+70.2: the split is the REPAIRED source's, so it is held against the
+#:   repaired source's own loss figure, not the pre-repair one -- the two are read on two versions of
+#:   S12 and differ as soon as another seat touches one of this seat's receipts (15 against 12 + 2).
+_m3 = re.search(r'path-scope sites NOT owned:\s*(\d+)', _out12_after)
+_loss_after = int(_m3.group(1)) if _m3 else -1
 print(f'      the repaired source reports the split: ODD {_odd}, no-rev {_norev}')
+print(f'      against the repaired source\'s own loss side: {_loss_after}')
 gate(f'Ⓑ② ⛭⛭ and the repair REPORTS who moved it instead of bounding it: `{_odd}` of the loss side '
      f'was last written by the other line and `{_norev}` arrived with no revision id at all.  ** The '
      f'split is PRINTED and not asserted, because `no EVEN` there is true by construction and a '
      f'definitional truth presented as a finding is the hollow form the corpus already lints for.  '
      f'⇒ What it tells a reader is the proportion that is a TRANSFER against the proportion that is '
      f'a GAP --- only the second is a gap, and `r7241`\'s own parity rule has no bucket for it **',
-     _odd > 0 and _odd + _norev == _loss)
+     _odd > 0 and _odd + _norev == _loss_after)
 
 # ══════════════════════════════════════════════════════════════════════════════════════════════════
 print('\n── Ⓒ  AND CI COULD NOT HAVE FOUND THE SECOND ONE ──\n')

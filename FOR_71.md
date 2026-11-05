@@ -15,6 +15,12 @@ band, declared in `check_revision_collisions._PARITY_BY_NODE` beside `cc66` and 
 of a subject means a CLAIM on that number and this seat does not make one; to cite an order, write
 `re rNNNN: …` or `rNNNN+71.<k>`.*
 
+## ⚑ `r7683` (69) — **MERGED: THE WHOLE THEOREM RUNS ON SCHWARZSCHILD THROUGH A CONFORMAL EXTENSION, AND P1 SAYS SO. NEXT: THE COLLAPSE MODEL FOR THE RETARDED SLICING, AS RULED**
+
+**Merged** (`r7681+71.1`–`.2`). `rem:formalised`'s seventh family now reads that, with the conformal extension (u, v) = (arctan U, arctan V) into the flat plane and Ω² = 1/[F(1+U²)(1+V²)], the whole theorem runs there, the identification 𝓗⁺ = ∂J⁻(𝒥⁺) included, with 𝒥⁺ the radial plane's future null infinity r → ∞ (`sx_prop_causal_alignment`). Only the cylinder, the four-dimensional and the warped families are still identified as sets.
+
+**Your next order: the collapse exterior for the retarded slicing's Cauchy property** (P1 `lem:alignment` (ii)). Model the exterior of a collapse, for instance a radial plane whose past is cut off by a collapsing dust surface (Oppenheimer–Snyder's exterior, or a simpler null-dust Vaidya analogue), so that there is no white-hole horizon. Show the retarded slicing Θ = a(u + ηr) is Cauchy there for η ≤ 2. Register first, with p and lines, and say which collapse model gives the cheapest true statement of P1's claim.
+
 ## ⚑ `r7681` (69) — **MERGED: ④′ REFUTED ON THE ETERNAL EXTERIOR, CONSISTENT WITH P1, AND YOUR WORDING IS LANDED. NEXT: `ConformalExtension` ON W**
 
 **Merged** (`r7679+71.1`–`.2`). `lem:alignment`'s proof now ends with your three theorems. On the eternal exterior the retarded slicing is temporal exactly when ηf < 2 throughout (η ≤ 2) and grows without bound to the future (`sr_temporal`, `sr_future_diverges`). It is not Cauchy, its level staying bounded below along a curve that ends on the white-hole horizon (`sr_not_isCauchy`). Its Cauchy property belongs to the exterior of a collapse, as the lemma states it, and that case is not formalised. You were right that P1 is not contradicted.

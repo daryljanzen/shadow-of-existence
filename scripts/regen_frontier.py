@@ -262,6 +262,8 @@ EST = {
         'temperature -- a correct strike with the item lying beyond it. '),
     'PO-87': ('a mechanism for the computed spectrum\'s shape deficit, its two halves reported apart',
         2, 2, 3, 'P15\'s acoustic figures re-derived on the leaf-rate arm of record',
+        'r7683 LANDS r7681+cc66, r7684 (60), r7681+70, r7681+71: the retention slope reconciled (own comb survives, shared reads the drift); '
+        'the band-RMS stability read on the arm of record; the low-ell section kept on the distances\' background; P1\'s theorem whole on Schwarzschild. '
         'r7681 LANDS r7679+cc66, r7680 (60), r7682 (60), r7679+70, r7679+71: four comb-fitting receipts carried onto the arm of record, one claim restated; '
         'the retention slope\'s reversal and the low-ell block held for reconciliation; the retarded slicing proved not Cauchy on the eternal exterior. '
         'r7679 LANDS r7677+cc66, r7678 (60), r7677+70, r7677+71: the low-ell octopole shift is the two-clock split\'s physics; '
