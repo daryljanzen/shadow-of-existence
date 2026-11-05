@@ -86,8 +86,20 @@ knob on the physics, no refit, and no mechanism asked for or offered.
      the reading dies.*  ** It is not flat.  It rises from 1.030 in the lowest band to 1.089 in the
      highest, and over twelve settings -- four envelope windows x three band counts -- the slope is
      +0.0139 +- 0.0021 per unit q, never once consistent with zero. **  ⇒ *And the intercept is
-     1.017 +- 0.010, straddling 1: **the rise is established and the offset is not**, which is the
-     branch the order named, with the extrapolation to q = 0 called an extrapolation.*
+     1.017 +- 0.010, straddling 1: the rise is established and the offset is not.*
+     ⛭⛭ ** THOSE FOUR FIGURES ARE THE NAMESAKE'S, and they are marked as such at `r7685+cc66` because
+     nothing in this docstring said so while every gate below pinned the ARM OF RECORD. **  On the arm
+     of record this file now reads the statistic in BOTH conventions, and the offset clause turns over
+     between them:
+       * SHARED comb, which is `retained()` below: slope +0.02690 +- 0.01226, intercept 0.9927 +-
+         0.0331, which DOES straddle one -- so on this form the namesake's reading survives.
+       * OWN comb (`r7673`/`r7683`, PART 6B below, and the READING OF RECORD): slope +0.01034 +-
+         0.00137 at 7.6 sigma of its own setting spread, intercept 1.0263 +- 0.0089 with ALL TWELVE
+         settings above one -- so on this form THERE IS a constant offset, +2.6 per cent, and the
+         namesake's "the offset is not established" is FALSE.
+     ⇒ *The extrapolation to q = 0 is still called an extrapolation: the lowest band centre is q ~ 1.2
+     and the intercept is a fit's value at zero, not a measured band.  What changed is its SIGN
+     relative to one, not its status as an extrapolation.*
 
 -------------------------------------------------------------------------------
 WHAT IS CLAIMED.
@@ -101,8 +113,11 @@ WHAT IS CLAIMED.
      definitions.
  (4) The per-term ladder, source against projection, for all four terms.
  (5) The weight/response split, 0.019 against 0.026, from two reweightings agreeing to 0.001.
- (6) The retained-fraction ratio's slope in q, +0.0139 +- 0.0021 over twelve settings, with its
-     intercept 1.017 +- 0.010.
+ (6) The retained-fraction ratio's slope in q over twelve settings, in BOTH conventions and with the
+     namesake named rather than left to look live (`r7685+cc66`): NAMESAKE +0.0139 +- 0.0021 with
+     intercept 1.017 +- 0.010; SHARED comb on the arm of record +0.02690 +- 0.01226 with intercept
+     0.9927 +- 0.0331; OWN comb, the reading of record, +0.01034 +- 0.00137 with intercept
+     1.0263 +- 0.0089 and every setting above one.
  (7) `SRCDEC` is inert when unset, bit-identically, on both arms.
 
 WHAT IS NOT CLAIMED.
@@ -118,7 +133,10 @@ WHAT IS NOT CLAIMED.
    window spread (1.0995-1.1070) is quoted beside it rather than smoothed.
  * NOT that the weight/response split is a fit.  Rescaling a piece by its mean share also moves the
    envelope; the two directions are reported precisely because neither alone is clean.
- * NOT that the q = 0 intercept is 1.  It is 1.017 +- 0.010 and the lowest band CENTRE is q ~ 1.2,
+ * NOT that the q = 0 intercept is 1 -- AND ON THE OWN COMB IT IS NOT ONE IN THE OTHER DIRECTION
+   EITHER, which is `r7685`'s correction to this line.  The namesake reads 1.017 +- 0.010 and the
+   shared form 0.9927 +- 0.0331, both straddling one; the OWN comb reads 1.0263 +- 0.0089 with all
+   twelve settings ABOVE one, so there the offset IS established.  The lowest band CENTRE is q ~ 1.2,
    so the value at zero is an extrapolation and is called one.
 
 COMPUTES: scope.
@@ -685,10 +703,14 @@ kernels is not the channel.  Every projected piece already carries an excess (mo
 Doppler {RES['dp*dp    the Doppler alone']['reg']:.4f}, polarisation {RES['pol*pol  the polarisation alone']['reg']:.4f}) while every term's SOURCE ratio is at or below 0.992, so the
 projection raises this arm's contrast on nearly everything it projects.  About {100*(FULL-R_A)/(FULL-1):.0f} per cent of the
 difference is the arm weighting the pieces differently and the rest is each piece's own response.
-And the retained fraction rises with wavenumber, slope {SL.mean():+.5f} +- {SL.std():.5f} per unit q over {len(SL)} settings,
-with its q = 0 intercept straddling one.
+And the retained fraction rises with wavenumber.  ON THE SHARED COMB the slope is {SL.mean():+.5f} +- {SL.std():.5f} per unit q
+over {len(SL)} settings with its q = 0 intercept {IC.mean():.4f} +- {IC.std():.4f}, straddling one.  ON EACH ARM'S OWN COMB, which is the
+reading of record, it is {_OSL.mean():+.5f} +- {_OSL.std():.5f} at {_OSL.mean()/_OSL.std():.1f} sigma with intercept {_OIC.mean():.4f} +- {_OIC.std():.4f}, and
+every one of the {len(_OIC)} settings sits ABOVE one, so on that form there IS a constant offset of {100*(_OIC.mean()-1):.1f} per cent.
 NOT CLAIMED: a mechanism; that the cross term is zero (it is {100*float(np.mean(PR['lcdm']['Dl_pairs'][:, IX['sw*dp']]/PR['lcdm']['Dl'])):.0f} per cent of D_l -- what is bounded
 is its contribution to the DIFFERENCE); that the projection is the wrong projection; that the
 Doppler's ratio is as well determined as the monopole's, its piece's oscillation being {RES['dp*dp    the Doppler alone']['dB']:.3f}
-against {RES['sw*sw    the monopole alone']['dB']:.3f}; or that the q = 0 intercept is one.
+against {RES['sw*sw    the monopole alone']['dB']:.3f}; or that the q = 0 intercept is one in EITHER convention -- on the shared form it
+straddles one and on the own form it sits above it, and in both it is a fit's value at a wavenumber
+below the lowest band centre and so an extrapolation.
 """)

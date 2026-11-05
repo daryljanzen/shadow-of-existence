@@ -1,0 +1,32 @@
+
+  r7683 / phase-systematic   [control source: r6911_source_lcdm_leafrec1.npz]
+    lowest band   1.0280        highest band  1.0753
+    slope         +0.01034 +- 0.00137   (7.6 sigma, negative in 0)
+    intercept     1.0263 +- 0.0089   (range 1.0153 to 1.0397)
+    shared slope  +0.02690 +- 0.01226
+
+  the_cross_term (as it reads today)   [control source: r6911_source_lcdm.npz]
+    lowest band   1.0280        highest band  1.0753
+    slope         +0.01034 +- 0.00137   (7.6 sigma, negative in 0)
+    intercept     1.0263 +- 0.0089   (range 1.0153 to 1.0397)
+    shared slope  +0.02690 +- 0.01226
+
+  ARM (3) -- the two bank choices against each other:
+    lowest    r7683 +1.028008   cross-term +1.028008   |diff| 0.000e+00   BIT-IDENTICAL
+    highest   r7683 +1.075333   cross-term +1.075333   |diff| 0.000e+00   BIT-IDENTICAL
+    slope     r7683 +0.010344   cross-term +0.010344   |diff| 0.000e+00   BIT-IDENTICAL
+    spread    r7683 +0.001369   cross-term +0.001369   |diff| 0.000e+00   BIT-IDENTICAL
+    icept     r7683 +1.026346   cross-term +1.026346   |diff| 0.000e+00   BIT-IDENTICAL
+    icept_sd  r7683 +0.008897   cross-term +0.008897   |diff| 0.000e+00   BIT-IDENTICAL
+
+    worst absolute difference over the six figures: 0.000e+00
+
+  ARM (3) -- the cross-term's reading against what the paper would PRINT:
+    lowest    prints     1.028   proposed     1.028   MATCH
+    highest   prints     1.075   proposed     1.075   MATCH
+    slope     prints  +0.01034   proposed  +0.01034   MATCH
+    spread    prints   0.00137   proposed   0.00137   MATCH
+    icept     prints     1.026   proposed     1.026   MATCH
+    icept_sd  prints     0.009   proposed     0.009   MATCH
+
+    ARM (3): CONFIRMED -- the cited receipt can carry every printed figure
