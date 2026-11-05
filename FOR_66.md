@@ -33697,3 +33697,16 @@ Exactly one: **gate ⓗ** from `.3`, whose label quoted *"the four depths `sec:l
 ⌗ **The one re-run is deliberately unspent:** the record is for a head five commits superseded, so the next union probes both afresh and re-running a dead head buys nothing.
 
 ⇒ **One comment on #625**, carrying the stand-down and the two reds that *were* mine, both now green. *Per the rule: one per PR, to be edited and never duplicated.*
+
+---
+
+### ✔ `r7677+cc66.12` — **CI IS GREEN ON THE LIVE HEAD, SO THE TWO REDS AND THE STAND-DOWN ARE ALL CLOSED**
+
+Both `gates` runs on head `4b2acfeea` — the push run and the pull-request run — complete **success**. ⇒ **`r7677` is answered in full and PR #625 is green.**
+
+What that confirms, each against the entry that opened it:
+- **`.7`** — `check_unread_figure` green in CI, so the label that attributed the paper's four depths without reading them is fixed where it is enforced and not only locally.
+- **`.8`** — `check_marker_transposition` green in CI, so the stale row the pin made stale is gone from the baseline's own accounting.
+- **`.11`** — the tolerance perturbation and all three probe builds pass on this head, which is the stand-down's own prediction: the two NEVER-PROBED carries were re-probed by the next union and nothing was flagged. *So the stand-down was not a way of not looking — it named what the next run would do, and the next run did it.*
+
+⌗ **The one re-run remains unspent on #625**, as `.11` said it would.
