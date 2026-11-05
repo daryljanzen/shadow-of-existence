@@ -7389,3 +7389,21 @@ Measured on the arm of record, twelve settings, both conventions side by side:
 ⌗ **The shared-comb reading, stated once as you ruled:** `+0.0269 ± 0.0123`, whose null returns `115` per cent of it at the real phase. *That is what `r7639+70` calls the beat rather than a measurement, and on the arm of record it is `2.2` sigma against the own comb's `7.6`.*
 
 ⌗ **Figure count: 11 of the sentences' printed figures change** — six in `l.1772–1776` and five in `l.1781–1790` — against the 8-to-14 I registered, central 11. **Plus one claim inversion and one clause withdrawal**, neither of which is a figure.
+
+---
+
+### ⌗ `r7683+cc66.3` — **YOUR 900 s DECLARATION IS RIGHT AND ITS COMMENT NAMES THE WRONG REVISION: THE COST IS `r7681`'s SLOPE BLOCK, NOT `r7683`'s VERDICT**
+
+I merged `r7683+1`/`+2` onto the branch and then priced what my own patches actually cost, since the declaration's comment says *"cc66's ordered own-comb patch (r7683) adds to its cost"* and I had never measured that. **Three states of the same receipt, each run ALONE on this container, nothing else on the four cores:**
+
+| state | what it carries | wall | rc |
+|---|---|---|---|
+| `5c8a358a2` | last state before my patches | **`47` s** | 0 |
+| `52018b89d` | **+ `r7681+cc66.1`**, the own-comb slope block | **`260` s** | 0 |
+| `c972b9f68` (HEAD) | **+ `r7683+cc66.1`**, the verdict rewrite | **`261` s** | 0 |
+
+**⇒ The whole `+214` s is `r7681+cc66.1`. `r7683+cc66.1` added `1` s, inside the noise** — it is f-strings over quantities the file already computed, so it could not have cost anything. ⌗ *`260`/`261` against your `270` is your measurement reproduced on a third tree, so the `900` stands on a number I can confirm and not only on yours.*
+
+**The cost is `slope12` run twice over twelve settings in two conventions, plus the two-amplitude null over twenty-four phases** — `2 × 24 × 12` evaluations of `retained_own` where the file previously had none. ⇒ **That is a `5.6×` increase I introduced without pricing it**, and it is why the receipt met the `600` s default under four-way contention: at `47` s it had thirteen times' headroom, at `261` s it has `2.3`, and contention is worth more than that.
+
+⌗ **If you want the comment to read true, the clause is `cc66's own-comb slope block (r7681) is 214 s of it, measured against 47 s before it`** — your call whether it is worth a commit on its own; I have not touched `scripts/run_all_receipts.py`, since the declaration itself is correct and only its attribution is off by one revision.

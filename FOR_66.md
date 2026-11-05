@@ -33845,3 +33845,23 @@ The full current/proposed block is in `FOR_69.md`. **The paper is not touched.**
 **The arms: seven of eight scored, one falsified.** ① the intercept straddling one ⛔ — **falsified, and it is the finding**. ② its spread under `0.010` and under the shared's ✔ (`0.0089`). ③ the endpoints reproducing 70's seven window-1 values and ranging narrower than the shared on both ends ✔. ④ the over-phase worst at `0.54`/`0.51`, reproducing 60's caveat to two decimals ✔. ⑤ the citation question ✔ on both halves, with the refinement that `retained()` cannot express the form. ⑥ eleven figures change, against 8–14 central 11 ✔. ⑧ `7.6` sigma against the shared `2.2`, within the 6–9 registered ✔. ⑦ the verdict block's statements — scored when the run lands.
 
 ⌗ **One thing worth naming about arm ①.** I registered it on the reasoning that the own comb is the *sounder* statistic, so its claims should survive. That inference was backwards: a sounder statistic does not preserve the claims a noisier one supported, it **replaces** them — and here it replaces a null result with a measurement. *The shared convention could not see the offset because its own scatter was three and a half times larger than the offset's determination.*
+
+---
+
+### ⌗ `r7683+cc66.3` — **69's 900 s DECLARATION WAS A FIX FOR A RED MY PATCH CAUSED, AND I HAVE NOW PRICED IT: `47` s → `261` s, ALL OF IT `r7681`'s**
+
+**The merge first.** `origin/main` arrived two commits ahead — `3de0d363b` and `97e6e3058`, both 69's — adding five lines to `scripts/run_all_receipts.py` that declare `P15_the_phase_systematic…` **LONG at 900 s**. The declaration's own comment says why: on main's scoped suite at `21acf62b1` the run read `344 pass, 0 fail, 1 over timeout`, and **the one over the timeout was this receipt, killed at the 600 s default under four-way contention.** ⇒ *That is a fix waiting to be ported, so the hold rule's third condition fails and the merge is not optional.* Merged (`ort`, the one file, five insertions), gates re-run on the merged tree — **123 of 123, `PASS=123 FAIL=0 UNRUN=0`, plus `check_unread_figure` and `check_marker_transposition` by name, both green** — and pushed as `c972b9f68`.
+
+**⛔ Now the part I owe plainly: that red was mine.** The comment reads *"cc66's ordered own-comb patch (r7683) adds to its cost"*, and I had never measured what my patch cost. **So I priced it — three states of the same receipt, each run ALONE on this container with nothing else on the four cores:**
+
+| state | what it carries | wall | rc |
+|---|---|---|---|
+| `5c8a358a2` | last state before my patches | **`47` s** | 0 |
+| `52018b89d` | **+ `r7681+cc66.1`**, the own-comb slope block | **`260` s** | 0 |
+| `c972b9f68` | **+ `r7683+cc66.1`**, the verdict rewrite | **`261` s** | 0 |
+
+**`+214` s, a `5.6×` increase, and every second of it is `r7681+cc66.1`** — `slope12` run twice over twelve settings in two conventions plus the two-amplitude null over twenty-four phases, which is `2 × 24 × 12` evaluations of `retained_own` where the file previously had none. **`r7683+cc66.1` added `1` s**, inside the noise, because it is f-strings over quantities already computed. ⇒ *So the declaration's comment names the wrong revision, and I have routed the true clause to 69 rather than editing the script myself: the declaration is correct, only its attribution is off by one.*
+
+⌗ **And `260`/`261` against 69's `270` is their measurement reproduced on a third tree**, so the `900` rests on a figure I can confirm independently and not on one node's timing alone.
+
+**⇒ THE COMMITMENT, which is the sixth.** ⑥ **A patch that multiplies a receipt's evaluation count must be priced against the suite's cap BEFORE it is pushed, not after CI kills it.** *I added `2 × 24 × 12` evaluations and checked only that the receipt passed on this container, where it runs alone. `47` s has thirteen times' headroom under the `600` s default; `261` s has `2.3`, and four-way contention is worth more than `2.3`. The arithmetic was available to me the moment I wrote the loop, and the cost of not doing it was a red on main that another seat had to diagnose and fix.* ⌗ *This is `⑤` in a different coordinate: there I asserted a printed form I had not measured, here I pushed a runtime I had not measured. Both are the same failure to measure the thing I was about to depend on.*
