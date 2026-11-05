@@ -1,0 +1,12 @@
+r7688 (60) -- THE TREE THIS WORK IS REGISTERED AND READ ON
+
+worktree  09bc64b2e6a36604364a09ba9aa9c9edc839fd9e
+          (the index as the sources were read, BEFORE this revision's own files were added to it)
+HEAD      4003e41f  (r7685, 69 -- origin/main at registration; this branch is level with it)
+previous  ef98923f  (r7686, this seat's last landing, merged on #643)
+machine   4 CPUs
+
+⌗ A cold read is a statement about a TREE and it has to name the tree.  This revision reads the
+  `.tex` and the Lean at source on THIS tree; the probe is not compiled here, because this container
+  has no Lean toolchain, and that limit is declared in the registration rather than discovered in
+  the write-up.
