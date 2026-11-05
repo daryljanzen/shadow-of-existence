@@ -1,0 +1,154 @@
+
+RECEIPT -- P15: ** `r7215` AUTHORISED THE FOURTH PARAMETER AND ORDERED ITS OWN SEQUENCE: the
+driving-off spectra FIRST, `if the drift term degrades a fit that was already good to 0.3 per cent,
+the parametrisation is wrong`; then the driving-on set; then the same validation burden; and
+`degeneracy still counts as a result`.  *** THE FOURTH PARAMETER IS THE RIGHT ONE -- IT RECOVERS THE
+PER-INDEX GAP GROWTH `cc66.160`'s PART C MEASURES, ON FOUR SPECTRA OF SIX.  AND IT STILL DOES NOT
+LICENSE THE DATA HALF, BECAUSE THE SPACING AND THE DRIFT ARE NOT SEPARABLE. *** **
+
+  ⓵ ** THE DRIFT IS TIED TO THE GAP DECOMPOSITION AND NOT INVENTED BESIDE IT. **  `cc66.160`'s
+  PART C fits `gap_n = c_0 + c_1(-1)^n + c_2 n`, so the comb's phase must satisfy
+  `$\ell = \ell_A v + d v^{2}$`, whose successive maxima are spaced `$\ell_A + 2dv$`: the
+  per-index growth is `$2d = c_2$`.  *At `$d=0$` this IS `cc66.160`'s three-parameter comb, checked
+  here to be the same fit and not merely the same algebra.*
+
+  ⓶ ⛭ ** `r7215` ITEM 2 PASSES, AND MY FIRST READING OF IT WAS WRONG. **  *Read naively the
+  driving-off fits look RUINED -- `$\ell_A$` goes from `$+0.09\%$` to `$-6.58\%$`.  **That is a
+  reference-point error and not a degradation**: in `$\ell = \ell_A v + d v^{2}$` the parameter
+  `$\ell_A$` is the spacing extrapolated to `$v=0$`, which for a drifting comb is not the acoustic
+  scale at all.*  ⇒ *The pivot-free statement is that the comb's drifting spacing PASSES THROUGH the
+  banked value at `$\ell\simeq814$`, interior to the fitted window, while `$\chi^{2}$` improves by
+  `$44$` per cent.  **So the parametrisation is sound and the order proceeds.***
+
+  ⓷ ⛭⛭ ** AND IT IS THE RIGHT PARAMETER, WHICH IS CHECKED AGAINST A NUMBER IT WAS NOT FITTED TO. **
+  *The fitted `$2d$` is compared with PART C's `$c_2$`, measured independently from located peaks:
+  `$+8.85$` against `$+8.77$` on `cr_base`, `$+9.22$` against `$+8.85$`, `$+7.10$` against
+  `$+8.15$` twice.  **Four of six agree in sign and within a sixth.***
+
+  ⓸ ⛔ ** BUT `cr_rb0.5` AND `cr_rb1.5` RETURN A DRIFT OF THE WRONG SIGN -- `$-35.20$` and
+  `$-30.76$` where the gaps give `$+8.29$` and `$+9.70$` -- AND `cr_rb1.5` PUTS ITS SPACING ON THE
+  BOX EDGE. **  *Both buy a large `$\chi^{2}$` gain with a drift that contradicts their own gaps,
+  which is `cc66.160`'s `Ⓓ①` pitfall wearing the fourth parameter's clothes.*
+
+  ⓹ ⛔⛭⛭⛭ ** THE DEGENERACY `r7215` ASKED ABOUT IS NOT THE ONE THAT BITES. **  *It asked `if drift
+  and alternation are not separable, say so and stop`.  **They ARE separable** --
+  `$|\rho(a,d)|\le0.47$` on all six.  *What is not separable is the SPACING and the drift:
+  `$\rho(\ell_A,d)$` between `$-0.94$` and `$-0.98$`.*  **So the stop condition fires on a pair the
+  order did not name**, and the consequence is ⓸ above and ⓺ below.*
+
+  ⓺ ⛔ ** AND THE VALIDATION BURDEN STILL FAILS. **  *On `cr_base` and `lcdm_base` the fitted comb's
+  spacing never equals the banked value ANYWHERE: the crossing is at `$\ell^{*}=-1330$` and
+  `$-1251$`, outside the window and negative.  **So each driving pair still has one member whose
+  phase is not referred to the same comb, and `cc66.158`'s separation is still not constructible.***
+
+  ⌈ ⇒ ** WHAT THIS LEAVES, SAID PLAINLY. **  *A four-parameter comb is a better description of these
+  spectra and a worse instrument for this measurement.  The fourth parameter was correctly
+  identified and correctly added; what defeats it is that `$179$` binned points cannot hold a
+  spacing and a drift apart.  **That is a statement about the bank, which `r7213` said is worth as
+  much as a fit.***
+
+  ⛭⛭⛭ ** `r7679+cc66.4` -- EVERY DIGIT ABOVE IS A NAMESAKE READING, AND THIS IS WHAT IT READS ON
+  THE ARM OF RECORD. **  `r7679` repointed this receipt's four CR legs onto the `_leafrec1` banks,
+  PER ARM: the control legs did not move, because `LEAFREC` does not reach them.  *The digits above
+  stay as published -- they are pinned on the banks that measured them, which is 69's ruling on
+  `PUB156` -- and the arm-of-record readings are set beside them here as the new numbers they are.*
+
+    ⓑ ⓒ ** the fitted `$2d$` against PART C's `$c_2$`. **  `cr_base` `$+8.85$` vs `$+8.77$` reads
+      `$+8.05$` vs `$+8.76$`; `cr_nodrive` `$+7.10$` vs `$+8.15$` reads `$+7.07$` vs `$+8.19$`.  The
+      two control legs are unchanged at `$+9.22$`/`$+8.85$` and `$+7.10$`/`$+8.15$`.  *** Four of six
+      still agree in sign and within a sixth, and they are the same four. ***
+    ⓓ ** the wrong-signed drifts. **  `cr_rb0.5` `$-35.20$` against gaps `$+8.29$` reads `$-36.10$`
+      against `$+8.42$`; `cr_rb1.5` `$-30.76$` against `$+9.70$` reads `$-30.97$` against `$+9.61$`.
+      Its `$\ell_A$` is still pinned at the box edge, `$430.000$` exactly.  *** Unchanged in kind. ***
+    ⓔ ** the crossings. **  The driving-off pair crosses the banked spacing at `$\ell^{*}=805$` and
+      `$813$` where the namesake gave `$\simeq814$` for both, still interior; `$\chi^{2}$` improves
+      `$47.5	o26.6$` and `$93.8	o52.7$`, which is `$44$` per cent on both as published.  The base
+      pair's crossing moves from `$-1330$`/`$-1251$` to `$-1537$`/`$-1251$` -- still negative, still
+      outside the window.  *** Ⓔ ① and Ⓣ ① are unchanged in kind. ***
+    ⛔ ** ONE CLAIM DOES NOT SURVIVE, and it is not a figure move. **  `Ⓑ②` published
+      `cr_rb1.5` as REACHED FROM ONE COARSE START where the others were reached from four, and made
+      that solo reach the second independent sign of an unidentified fit.  ** On the arm of record it
+      is reached from TWO. **  *What survives is the ORDERING -- `cr_rb1.5` is still the unique
+      fewest, at half the others', and still the only spectrum on the box edge, so the corroboration
+      test and the boundary test still agree on which spectrum to distrust.  The gate now asserts
+      that ordering and the namesake's solo reach, measured here rather than recalled; `reached from
+      one start` is routed to `69` as a CLAIM CHANGE.*  ⛔ *`REACH >= 2` passes on its own, so
+      dropping the solo clause would have turned the gate green while deleting the finding.*
+
+** COMPUTES: the four-parameter comb (position, spacing, alternation, linear drift in the spacing),
+   profiled over the same disciplined basis, fitted to six likelihood-binned model spectra over the
+   whole feasible box; the d=0 reduction checked against cc66.160's own three-parameter fit; the
+   fitted drift checked against PART C's independently measured per-index gap growth; and the
+   (l_A, d) and (a, d) curvatures measured.  *** No new spectra, no refit, data not touched. ***  **
+
+
+    arm-of-record directories hold 0 control file(s); CR legs whose spectrum MOVED on the repoint: 4 of 4 ['cr_base', 'cr_nodrive', 'cr_rb0.5', 'cr_rb1.5']
+    OK    ⛭⛭ `r7679` ** THE REPOINT IS PER ARM AND THE SHAPE IS GATED. **  Both `_leafrec1` directories carry the CR legs and NOT ONE control file, because `LEAFREC` does not reach the control -- so a wholesale `GO + '_leafrec1'` would raise `FileNotFoundError` on `lcdm_base.npz`, the shape `r7645+cc66.68` paid for.  All four CR spectra MOVED.  ⛔ *Point `_GARM` back at the namesake and this fails*
+
+========================================================================================================
+  A.  ⓵ THE DRIFT IS PART C's OWN c_2, BY CONSTRUCTION -- CHECKED, NOT ASSERTED
+========================================================================================================
+      l = 300.0 v + 4.0 v^2:  maxima at l = [ 304.  616.  936. 1264. 1600.]
+      successive gaps [312. 320. 328. 336.]  -> per-index growth 8.000, wanted 2d = 8.000
+    OK    Ⓐ①  the phase relation `$\ell=\ell_A v+dv^{2}$` makes the comb's per-index gap growth equal `$2d$` ** TO BETTER THAN A PER CENT, so the fitted `$d$` IS PART C's `$c_2/2$` and not a separate quantity that happens to look like it **
+      and at d=0 on cr_nodrive: l_A 301.658, chi2 106 (cc66.160 reports 301.658 / 106.03)
+      the SAME reduction on the ARM OF RECORD's cr_nodrive: l_A 301.909, chi2 47.53  <- the new numbers, reported beside the published ones
+    OK    Ⓐ②  and the `$d=0$` reduction REPRODUCES `cc66.160`'s three-parameter fit to three figures, ON THE BANK cc66.160 READ, *so what follows is the same instrument with one parameter added and not a second instrument being compared with the first*.  ⛭⛭ `r7679+cc66.4`: scored on `SPECTRA_NSK` because the repoint moved `SPECTRA` to the arm of record while `$301.658/106.03$` is a NAMESAKE publication -- 69's `PUB156` ruling -- and the arm-of-record reduction is printed beside it
+      PART C's finder on cr_base: gaps [302, 270, 312, 295]  (cc66.160 publishes [302, 270, 312, 295])
+    OK    Ⓐ③  and this file's copy of PART C's peak finder is `cc66.160`'s BYTE FOR BYTE and reproduces its published gaps `$302/270/312/295$`, *so `Ⓑ③` below compares the fitted drift against PART C's own number and not against a second implementation of it -- which is what my first version of this file did, having retyped the finder from memory with four differences*
+
+========================================================================================================
+  B.  ⓶⓷ THE FOURTH PARAMETER: ITEM 2 PASSES, AND THE DRIFT IT FINDS IS THE GAPS' OWN
+========================================================================================================
+      spectrum        banked   lA(v=0)       d  fit 2d  PART C c2      l*  in win  edge starts      chi2
+      cr_base        301.400   339.990   +4.03   +8.05      +8.76   -1537   False False      4      1237
+      lcdm_base      301.375   337.466   +4.61   +9.22      +8.85   -1251   False False      4      2610
+      cr_nodrive     301.400   281.862   +3.54   +7.07      +8.19     805    True False      4     26.62
+      lcdm_nodrive   301.375   281.555   +3.55   +7.10      +8.15     813    True False      4     52.65
+      cr_rb0.5       286.450   399.807  -18.05  -36.10      +8.42    1077    True False      4     338.8
+      cr_rb1.5       314.987   430.000  -15.48  -30.97      +9.61    1384    True  True      2      7014
+      ⇒ item 2, the driving-off pair: chi2 47.5->26.6 and 93.8->52.7; the drifting spacing crosses banked at l=805 and 813, INSIDE the window
+    OK    Ⓑ①  ⛭ ** `r7215` ITEM 2 PASSES: THE FOURTH PARAMETER DOES NOT DEGRADE THE DRIVING-OFF FITS. **  *`$\chi^{2}$` improves by `$40$` per cent or more on both and the comb's drifting spacing passes through the banked value INSIDE the fitted window.*  ⚠ *Read naively the fits look ruined -- `$\ell_A$` reads `$-6.6\%$` -- and that is a REFERENCE-POINT error of mine: `$\ell_A$` is the spacing at `$v=0$`, which is not the acoustic scale when the spacing drifts.  **I nearly reported the parametrisation wrong on the strength of it**
+      ⇒ reached from a single coarse start: none; on the box edge: cr_rb1.5
+      spectrum       starts (ARM OF RECORD)   starts (NAMESAKE)
+      cr_base                             4     not re-measured
+      lcdm_base                           4                   4   (did not move: LEAFREC does not reach the control)
+      cr_nodrive                          4     not re-measured
+      lcdm_nodrive                        4                   4   (did not move: LEAFREC does not reach the control)
+      cr_rb0.5                            4     not re-measured
+      cr_rb1.5                            2                   1   <- the box-edge spectrum, and the one cc66 published a reach for
+      ⇒ fewest starts: cr_rb1.5 at 2 against the others' 4; on the box edge: cr_rb1.5
+    OK    Ⓑ②  ⛔⛭⛭ ** ON THE ARM OF RECORD EVERY OPTIMUM -- THE EDGE ONE INCLUDED -- IS REACHED FROM MORE THAN ONE INDEPENDENT START, AND WHAT SURVIVES IS THE ORDERING: `cr_rb1.5` IS REACHED FROM THE FEWEST STARTS, HALF THE OTHERS', AND IT IS THE ONLY ONE ON THE BOX EDGE. **  *So the corroboration test and the boundary test still agree on which spectrum to distrust, and a grid wide enough to `fix` it would only have hidden that.*  ⛔ *On the NAMESAKE -- measured here, not recalled -- `cr_rb1.5` was reached from ONE start where the others were reached from four, and the gate asserted that solo reach.  **`reached from one start` is FALSIFIED on the arm of record and is routed to 69 as a claim change**, not re-toleranced: `REACH >= 2` passes on its own, so dropping the solo clause would have gone green while deleting the only thing worth reporting*
+      ⇒ fitted 2d agrees with PART C's c2 in sign and within a sixth on: cr_base, lcdm_base, cr_nodrive, lcdm_nodrive
+      cr_nodrive    3-param recovered to 0.17%; 4-param spacing runs 286 to 319, crosses banked at l*=805, drift +7.07 against the gaps' +8.19
+      lcdm_nodrive  3-param recovered to 0.11%; 4-param spacing runs 286 to 319, crosses banked at l*=813, drift +7.10 against the gaps' +8.15
+      cr_rb0.5      3-param (driving ON) recovered to 0.42%; 4-param spacing runs 378 to 208, crosses banked at l*=1077, drift -36.10 against the gaps' +8.42
+    OK    Ⓑ⑤  ⛭⛭ ** `r7217` PUT `cr_rb0.5` IN THE FIRST TEST GROUP AS A DRIVING-ON CONTROL, AND IT EARNS THAT: THE HARM THE GROUP EXISTS TO DETECT APPEARS THERE AND IN A QUANTITY THE `$\ell_A$` TEST CANNOT SEE. **  *All three recovered spectra keep their spacing crossing inside the window, `cr_rb0.5` included -- so on the `$\ell_A$` criterion alone the fourth parameter looks harmless on every one of them.  **But `cr_rb0.5`'s fitted drift is WRONG-SIGNED and four times too large** (`$-35.20$` against the gaps' `$+8.29$`), and its spacing swings `$380	o222$` across the window where its gaps barely move.*  ⇒ *`66`'s control is the better control precisely because it separates the two tests: a spectrum can pass `does the scale survive` and fail `is this the drift the gaps show`*
+    OK    Ⓑ③  ⛭⛭ ** THE FITTED DRIFT REPRODUCES PART C's INDEPENDENTLY MEASURED PER-INDEX GAP GROWTH ON FOUR SPECTRA OF SIX. **  *`$c_2$` comes from located peaks with `$\ell_A$` held at its banked value and is in no way an input to this fit, so the agreement is a real check that the fourth parameter is the quantity `cc66.153` named and not a free knob*
+      ⇒ and it runs away with the WRONG SIGN on: cr_rb0.5, cr_rb1.5   (cr_rb1.5 also pins l_A to the box edge: True)
+    OK    Ⓑ④  ⛔ ** ON `cr_rb0.5` AND `cr_rb1.5` THE DRIFT COMES BACK WITH THE WRONG SIGN AGAINST THEIR OWN GAPS, AND `cr_rb1.5` PUTS ITS SPACING ON THE BOX EDGE. **  *Both buy a large `$\chi^{2}$` gain with a drift their gaps contradict -- `cc66.160`'s `Ⓓ①` pitfall in the fourth parameter's clothes*
+
+========================================================================================================
+  C.  ⓹ ⛔⛭ THE DEGENERACY -- AND IT IS NOT THE PAIR r7215 ASKED ABOUT
+========================================================================================================
+      spectrum       corr(a,d)  corr(lA,d)
+      cr_base          -0.4551     -0.9393
+      lcdm_base        +0.4719     -0.9385
+      cr_nodrive       +0.0369     -0.9548
+      lcdm_nodrive     +0.0367     -0.9548
+      cr_rb0.5         +0.1213     -0.9792
+      cr_rb1.5         +0.1942     -0.0000   <- l_A clipped at the edge: meaningless
+    OK    Ⓒ①  ** `r7215` ASKED WHETHER DRIFT AND ALTERNATION ARE SEPARABLE AND THEY ARE: `$|\rho(a,d)|\le0.5$` ON ALL SIX. **  *So the stop condition the order named does not fire, and saying that plainly before reporting the one that does is the right order to put them in*
+    OK    Ⓒ②  ⛔⛭⛭⛭ ** WHAT IS NOT SEPARABLE IS THE SPACING AND THE DRIFT: `$\rho(\ell_A,d)\le-0.93$` on every spectrum whose `$\ell_A$` is not clipped. **  *Four parameters on `$179$` binned points cannot hold the scale and its drift apart, and `r7213` said a statement about what the bank can support is worth as much as a fit.*  ⚠ *`cr_rb1.5` reports `$\rho=0$` and that is NOT independence -- its `$\ell_A$` sits on the box edge, so the curvature there is clipped and means nothing*
+
+========================================================================================================
+  D.  ⓺ ⛔ AND THE VALIDATION BURDEN STILL FAILS, FOR A DIFFERENT REASON THAN LAST TIME
+========================================================================================================
+      cr_base       banked 301.400: spacing runs 345 to 383 across the window and crosses banked at l*=-1537
+      lcdm_base     banked 301.375: spacing runs 343 to 386 across the window and crosses banked at l*=-1251
+    OK    Ⓓ①  ⛔ ** ON BOTH BASE SPECTRA THE FITTED COMB'S SPACING NEVER EQUALS THE BANKED VALUE ANYWHERE -- the crossing is NEGATIVE, far outside the window. **  *So each driving pair still has one member whose phase is not referred to the same comb, `cc66.158`'s `$0.1929$`/`$1.0390$` separation is still not constructible, and by `r7215`'s own terms -- the same burden as `r7213`'s -- the data half still does not happen*
+
+========================================================================================================
+  ✔ 12 of 12 checks pass -- the fourth parameter is the right one and the
+    bank cannot support it: a better description and a worse instrument.
+========================================================================================================

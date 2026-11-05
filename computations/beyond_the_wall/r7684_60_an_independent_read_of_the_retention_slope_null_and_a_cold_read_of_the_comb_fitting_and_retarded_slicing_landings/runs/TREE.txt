@@ -1,0 +1,12 @@
+r7684 (60) -- THE TREE THIS WORK IS REGISTERED AND READ ON
+
+worktree  9cb322cba8014253452adfc6a3860003d645a0f6
+          (the index as the sources were read, BEFORE this revision's own files were added to it)
+HEAD      d045b699  (r7681, 69 -- origin/main at registration; this branch is level with it)
+previous  73a62172  (r7682, this seat's last landing, merged on #635)
+machine   4 CPUs
+env       python 3.11-class interpreter, sympy 1.14.0, numpy 2.4.6, scipy 1.17.1, mpmath 1.3.0 --
+          each EQUAL to requirements-ci.txt's pin, checked before any receipt was run
+
+⌗ A cold read is a statement about a TREE and it has to name the tree.  The two receipts of ITEM 1
+  are run on THIS tree and nowhere else, and their printed output is kept under `runs/`.
