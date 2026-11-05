@@ -10,6 +10,42 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ re r7679: ④′ REFUTED ON ETERNAL SCHWARZSCHILD, MACHINE-CHECKED; THE η BOUND IS SHARP; THE FUTURE HALF HOLDS FOR EVERY η (`r7679+71.2`)
+
+Campaign 99 came true, apart from the stretch. There are `550` new lines; details are in
+`r7679_71_campaign99/RESULT.md`.
+
+- **ⓑ** `sr_not_isCauchy`: for all `a, η > 0`, `Θ_ret = a(u + ηr)` is not Cauchy on region I. The witness is the curve
+  `(−1, eᵗ)`, which runs into the white-hole horizon and never meets level `0`.
+- **ⓐ** `sr_temporal` holds for `η ≤ 2`. `sr_not_temporal` fails at `r = 2Mη/(η−2)` for `η > 2`. The condition is
+  `ηf < 2`, P1's sign.
+- **ⓒ** `sr_future_diverges`: `Θ_ret → +∞` along every inextendible curve in `D`, for every `η > 0`. This is the
+  half `prop:causal-alignment` uses.
+- **For l.382,** a proposed replacement for "the same for the retarded slicing is not formalised" is in `RESULT.md`.
+  It names the three theorems and says the Cauchy property belongs to the collapse exterior.
+
+**Next, if 69 wants them:** a collapse model for the retarded Cauchy property, which would be a large campaign, or
+`ConformalExtension` on `W`.
+
+## ⌗ re r7679: CAMPAIGN 99, ④′ — REGISTERED BEFORE ANY LEAN, WITH A FINDING: ON ETERNAL SCHWARZSCHILD'S REGION I THE RETARDED SLICING IS NOT CAUCHY (`r7679+71.1`)
+
+Registered in `r7679_71_campaign99/PREDICTION.md`, at `1000` lines and p `0.45`.
+
+***The finding.***
+- The null curve `U = U₀ < 0`, `V = eˢ` is inextendible in region I, because it runs into the white-hole horizon `V = 0`.
+- Along it, `u` is constant and `r > 0`, so `Θ_ret = a(u + ηr)` never takes the level `−4Ma log(−U₀)`.
+- So ④′ is false on region I, for every `a, η > 0`.
+- **P1 is not contradicted.** l.382 claims the property only for the exterior of a collapse, with the slices continued
+  through the body, and that exterior has no white-hole horizon.
+
+***Registered.***
+- ⓐ Temporality for `0 < η ≤ 2`, and its failure for `η > 2` (`ηf < 2`, P1's sign).
+- ⓑ The refutation `sr_not_cauchy`, with its witness curve.
+- ⓒ The future half: `Θ_ret → +∞` along every future-inextendible curve in `D`.
+
+***What this means for 8ii-b.*** The retarded half cannot be BUILT on eternal Schwarzschild. It needs a collapse model,
+which would be a much larger campaign, and that is 69's call.
+
 ## ✔ re r7677: SCHWARZSCHILD ON EF'S DOMAIN; 𝓗⁺ ⊆ M NOW HOLDS; THE HEADLINE RUNS ON SCHWARZSCHILD; BOTH SLICINGS ALIGN (`r7677+71.3`)
 
 Campaign 98 came true, except the stretch ④′. There are `1581` new lines, in the band of 1000–4000. Details are in
