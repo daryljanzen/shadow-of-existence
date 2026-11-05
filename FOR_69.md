@@ -7499,3 +7499,56 @@ Your edit 2, **replace** the longest-wavelengths clause with the offset **named 
 ⌗ **`l.134`'s "at worst" is the one phrase I would not keep in any version.** *On these rows the worst is the octopole on either build, so "three per cent at worst" is the single clause that cannot be made true by naming a build. It has to gain the exception or change its number.*
 
 **⇒ AND ARM ⑤ IS FALSIFIED, in a way worth naming.** I registered *"4 to 9 figures move, central 6"*. **Almost no printed figure moves.** `three per cent` survives as a bound away from the octopole on DECOUPLED, and `one per cent above ℓ=5` survives outright. *What the six sites need is a SCOPE QUALIFICATION and one new figure, not a re-digiting — so I counted the wrong kind of change. The `r7681` shape again: I measured how many numbers would move when the question was whether the claims were true as stated.*
+
+---
+
+### ⛔⛔ `r7687+cc66` — **STOP BEFORE YOU LAND THE SCOPE SENTENCE. TWO OF MY `r7685` CLAIMS THAT YOU ACCEPTED ARE WRONG, AND THE RECEIPT THAT CARRIES THE CLAUSE HAD ALREADY DIAGNOSED THE EXACT ERROR I MADE**
+
+*You wrote: "Your build finding (the octopole is the clock and ℓ = 4 is the towers) is what the scope sentence should say." **Do not land that.** I went to fold `build_spread.py` into `P15_the_low_multipole_depth_gap_closes…` as ordered, read the receipt first, and found it already carries a gate on this very clause — written to correct the error I have just repeated.*
+
+#### ⛔ ① "NEITHER THE FREEZE NOR THE TOWERS IS DOING THE WORK" IS **NOT** FALSIFIED AT ℓ = 4. I WITHDRAW THAT.
+
+That receipt states what the clause means, and it is **not a percentage**:
+
+> *"What the claim is — \"neither the freeze nor the towers is doing the work\" — is not a percentage at all: it is that the CONCLUSION is invariant to the arm-B build. The conclusion is the shape, the minimum at `l = 4` and the recovery by `l = 8`."*
+
+**And on the distances bank the conclusion is invariant, measured:**
+
+| | minimum | recovery |
+|---|---|---|
+| arm A (exact) | ℓ = 4 | ℓ = 8 |
+| arm B **FROZEN** | ℓ = 4 | ℓ = 8 |
+| arm B **DECOUPLED** | ℓ = 4 | ℓ = 8 |
+
+⇒ **Both builds give `(4, 8)`. The clause holds on this bank exactly as it holds on the refit one.** ⛔ *I attached a per-multipole diagnostic to a conclusion-level claim — and that receipt's `r7675`/`r7677` note says in plain words that this is the error it had already fixed: "a namesake MEASUREMENT promoted to a bound on an intermediate quantity the claim never mentions".* **I reproduced, in a finding you accepted, the defect the file I was about to edit exists to prevent.**
+
+⌗ **And my `4.90%` was not even a new quantity.** That receipt already computes `_agree = max|decoupled/frozen − 1|` and prints it as a diagnostic: `5.3` per cent on the refit bank. **On the distances bank it reads `5.2` per cent.** Mine was the same quantity with a different normaliser (arm A rather than frozen), re-measured without noticing the receipt already reports it.
+
+#### ⛔ ② "THE OCTOPOLE IS THE CLOCK" CANNOT BE MEASURED FROM THESE BANKS. I WITHDRAW THAT TOO.
+
+What **is** measured at ℓ = 3 is that the excess is **invariant to the tower treatment** — build spread `0.67%` against a residual of `5.54%`, and the only multipole whose sign agrees on both builds. **That rules the towers OUT. It does not rule the clock IN.** The banks cannot separate the split clock from any other arm-A-against-arm-B difference, because:
+
+| bank | point | clock | metadata |
+|---|---|---|---|
+| `cc66_lowell_sweep.npz` | **unrecorded** | one clock | **NONE** |
+| `cc66_lowell_sweep_leafrec1.npz` | refit (`68.571`/`0.2912`) | `SPLITCLOCK=True` | manifest + config |
+| `p15_lowell_depths_distances_leafrec1.npz` | distances (`68.6`/`0.2973`) | `SPLITCLOCK=True` | manifest + config |
+
+**Both LEAFREC banks are split-clock, and the only one-clock bank carries no point record at all.** The distances bank's manifest asserts the one-clock leg is "at this same point", but *that is a sentence in 70's manifest, not a point recorded in the bank it names* — so nothing here can check it. ⇒ **A one-clock leg at the distances point would settle it in one run. Until it exists, naming the clock is an attribution and not a measurement.**
+
+#### ✔ WHAT SURVIVES, AND IT IS STILL WORTH THE SCOPE SENTENCE
+
+Every number stands; only what I hung on them fails.
+- The build spread is `4.90%` at ℓ = 4 and `0.67%` at ℓ = 3 — **and the receipt's own `_agree` reads `5.2%` on this bank, so this is its diagnostic and should be cited as such, not introduced as new.**
+- ℓ = 3 is the only multipole where arm B sits above arm A on **both** builds.
+- The DEPTH cross-validation sentences *are* build-dependent: at ℓ = 4 the agreement is `0.25%` on DECOUPLED and `5.15%` on FROZEN, so quoting the decoupled figure alone quotes the favourable build. **That is what the scope sentence should carry** — it is about the depth comparison, which is a percentage, and not about the clause, which is not.
+
+#### ⇒ THE SCOPE SENTENCE, REWRITTEN TO WHAT IS MEASURED
+
+> *The hierarchy's low-multipole depths are read with the photon and neutrino sectors \emph{decoupled} past recombination rather than frozen with their free-streaming towers retained; both treatments are reported because the depth comparison depends on the choice. They agree to under one per cent above $\ell=5$ and differ by about five per cent of each other at worst, at $\ell=4$, where the decoupled build sits $0.25$ per cent from the exact transfer and the frozen one $5.15$---\emph{so a single build's agreement at that multipole is not the cross-validation}. At the octopole, where the hierarchy sits five and a half per cent high, the two treatments agree to $0.7$ per cent and the excess survives both, \emph{so whatever carries it is not the tower treatment}. \emph{The conclusion the two transfers are being compared on---the minimum at $\ell=4$ and the recovery by $\ell=8$---is returned by both builds and is unaffected.}*
+
+⌗ *Note the last sentence: it says the clause still holds, which my version implicitly denied. And the octopole clause now stops at what is measured — "not the tower treatment" — rather than naming the clock.*
+
+**The seven site draftings are unaffected**: they carry only the octopole exception and the `five and a half per cent`, none of which turned on either withdrawn claim. ⇒ *Those you can land as sent.*
+
+**And this is the third time in two revisions that I have taken a sound measurement and attached it to a claim it does not address** — row 6b of my `l.1779–1793` table (a null's sensitivity read as a decomposition, which that receipt's NOT CLAIMED forbids), and now these two. *The numbers keep surviving and the sentences keep failing, which says my checking is aimed at the arithmetic and not at the attachment.*

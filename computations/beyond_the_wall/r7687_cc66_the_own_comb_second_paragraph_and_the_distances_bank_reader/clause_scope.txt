@@ -1,0 +1,22 @@
+  THE CONCLUSION, on the distances bank, read as the receipt reads it:
+    arm A (exact)      minimum at l = 4, recovery at l = 8
+    arm B FROZEN       minimum at l = 4, recovery at l = 8
+    arm B DECOUPLED    minimum at l = 4, recovery at l = 8
+
+  both arm-B builds give (minimum, recovery) = (4, 8) and (4, 8)
+  => THE CONCLUSION IS INVARIANT TO THE BUILD: True
+  => so the clause is NOT falsified at l = 4, and r7685 attached a per-multipole
+     diagnostic to a conclusion-level claim -- the error r7675/r7677 already corrected.
+
+  the receipt's own build diagnostic |decoupled/frozen - 1| on THIS bank: 5.2%
+    (it reads 5.3% on the refit-point bank; mine was 4.90% at l=4 normalised by arm A)
+    => same quantity, different bank and normaliser; it was never the clause.
+
+  CAN THE CLOCK BE NAMED AS THE REASON AT l = 3 FROM THESE BANKS?
+    cc66_lowell_sweep.npz                          metadata: NONE
+    cc66_lowell_sweep_leafrec1.npz                 metadata: ['manifest', 'config']
+    p15_lowell_depths_distances_leafrec1.npz       metadata: ['manifest', 'config']
+    => the only ONE-CLOCK bank carries no point record at all, and both LEAFREC banks are
+       SPLITCLOCK=True (one at the refit point, one at the distances point).  So no verifiable
+       one-clock leg exists at the distances point: what is MEASURED at l = 3 is invariance to
+       the TOWER TREATMENT (spread 0.67%), not that the clock is its cause.

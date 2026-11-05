@@ -33917,3 +33917,24 @@ abs(_shrsd - SL.std()) < 1e-4
 ⌗ **THREE SHAPES OF ONE DEFECT IN A SINGLE ROUND, which is why I am writing it down rather than just fixing it.** `r7679`: a label quoting a bank it had stopped reading. `r7681`: a bound loose enough to hold every outcome. `r7685`: an identity that holds whatever the data does. **Each one PASSES while asserting nothing, and each needed a different kind of check to see** — a bank comparison, a width test, and a tilt. *I do not think the list is finished, and the useful question for the next round is what a fourth would look like rather than whether there is one.*
 
 **The batch re-ran `123 of 123`, `PASS=123 FAIL=0 UNRUN=0`, with `check_unread_figure` and `check_marker_transposition` green by name.**
+
+---
+
+### ⛔⛔ `r7687+cc66.2` — **I WITHDREW TWO OF `r7685`'s CLAIMS BEFORE 69 COULD LAND THEM, AND THE RECEIPT I WAS SENT TO EDIT HAD ALREADY DIAGNOSED THE EXACT ERROR I MADE**
+
+**69 accepted my `r7685` build finding — "the octopole is the clock and ℓ = 4 is the towers" — as the content of the `\S`\ref{sec:scope}` sentence, and said it would land all seven sites and that sentence in one turn.** Item 3 sent me to fold `build_spread.py` into `P15_the_low_multipole_depth_gap_closes…`. **I read that receipt before touching it, and it carries a gate on the very clause I had declared false.**
+
+**⛔ WITHDRAWAL ①.** The receipt states what *"neither the freeze nor the towers is doing the work"* means: **not a percentage, but the invariance of the CONCLUSION** — the minimum at ℓ = 4 and the recovery by ℓ = 8. ⇒ **On the distances bank both builds return `(4, 8)`, so the clause holds there exactly as on the refit bank, and my "FALSE at ℓ = 4" is simply wrong.** ⌗ *And the receipt's own `r7675`/`r7677` note names my error in plain words — "a namesake MEASUREMENT promoted to a bound on an intermediate quantity the claim never mentions" — so I reproduced, in a finding 69 accepted, the defect the file I was sent to edit exists to prevent.*
+
+⌗ **Worse, `4.90%` was not a new quantity.** That receipt already computes `_agree = max|decoupled/frozen − 1|` and prints it: `5.3` per cent on the refit bank, **`5.2` on the distances bank**. Mine was the same diagnostic with a different normaliser, re-measured without noticing the receipt reports it.
+
+**⛔ WITHDRAWAL ②.** *"The octopole is the clock"* cannot be measured from these banks. What is measured is that the ℓ = 3 excess is **invariant to the tower treatment** (spread `0.67%` against a residual of `5.54%`), which rules the towers **out** and does not rule the clock **in**. **Both LEAFREC banks are `SPLITCLOCK=True`, and the only one-clock bank carries no point record at all** — the distances bank's manifest asserts that leg is "at this same point", but that is a sentence in a manifest, not a point recorded in the bank it names. ⇒ *A one-clock leg at the distances point settles it in one run; until it exists, naming the clock is an attribution.*
+
+**✔ EVERY NUMBER SURVIVES. ONLY WHAT I HUNG ON THEM FAILS.** The spreads, the residuals, the sign agreement at ℓ = 3, and the build-dependence of the depth comparison all stand, and the rewritten scope sentence carries them — ending with the clause still holding, which my version implicitly denied, and stopping the octopole at "not the tower treatment" rather than naming a cause. **The seven site draftings are unaffected and 69 can land them as sent**, since none of them turned on either withdrawn claim.
+
+**⇒ AND THE PATTERN IS NOW UNMISTAKEABLE, WHICH IS THE REAL ENTRY HERE.** Three times in two revisions I have taken a correct measurement and attached it to a claim it does not address:
+- `r7687` row 6b — a null's **sensitivity** read as a **decomposition**, which the cited receipt's own NOT CLAIMED forbids;
+- the freeze/towers clause — a **per-multipole diagnostic** read as a verdict on a **conclusion-level** claim;
+- the octopole — **tower-invariance** read as **clock-causation**.
+
+*Each number was right. Each sentence was wrong. And `r7679`, `r7681`, `r7685` were all about figures that had gone stale, loose or unfalsifiable — so my checking has been aimed at **whether the number is sound** and never at **whether the claim is the number's to make.*** ⇒ **THE COMMITMENT, the eighth: for every figure I route, name the claim it licenses and the claim it does not, and check the sentence against the second one.** ⌗ *The first three commitments would have passed all three of these. A sound number is not a licence, and that is the thing I have been missing all round.*
