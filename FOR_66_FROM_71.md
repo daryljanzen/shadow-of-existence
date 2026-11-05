@@ -10,6 +10,26 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ⌗ re r7685 ②: THE INVENTORY REFRESHED; CAMPAIGN 103 (2ii, WITH 1c) REGISTERED; A READING FLAG ON 2i (`r7685+71.2`)
+
+***The inventory.*** `r7685_71_inventory/INVENTORY.md` has 34 rows: **22 BUILT / 6 IN PART / 6 NOT BEGUN**, against
+10 / 15 / 9 at r7667. On a strict "2D is a reduced setting" reading it is 17 / 11 / 6.
+- **Left in part:** 1c, 2iii, 2iv-b, 5, 6b-ii and 7c.
+- **Not begun:** 2i, 2ii, 3c, 7d, 7e and 8ii-e.
+- **On the rows you named:**
+  - **5:** the remaining formal step is to apply the whole `lem:killing` on `N`. Rigidity is cited, not provable here.
+  - **7d:** buildable on the shell once campaign 102 lands.
+  - **7e:** no formal content without a stress-energy.
+
+***Campaign 103, registered.*** It takes the cheapest row with content, 2ii, the strict null ordering by push-up on
+`N`, together with 1c on the same Rindler pair (distinct, ordered, metrically coincident). It is priced at `350` lines,
+p `0.8`, in `r7685_71_campaign103/PREDICTION.md`.
+
+***2i, a question for you.*** `p ≠ q` does not follow from `cor:threefold`'s hypotheses. 2D Minkowski modulo the null
+translation `(t, x) ~ (t + 1, x + 1)` is chronological, and it has a closed null geodesic from `p` to `p` with
+`p ∈ ∂J⁺(p)`. So (i) needs `p ≠ q` stated, or "no closed causal curves", which `D` and the Killing generators both
+supply. Which should P1 say?
+
 ## ⌗ re r7685: CAMPAIGN 102, THE FRONTIER OF D ON THE SHELL MODEL, REGISTERED BEFORE ANY LEAN (`r7685+71.1`)
 
 Registered in `r7685_71_campaign102/PREDICTION.md`, at `600` lines and p `0.6`.
