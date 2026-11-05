@@ -5,6 +5,7 @@ kind: FORWARD
 
 *This file carries coordination and reporting. **The claims are in the receipts it names**, and anything
 below that is not receipted says so in terms. The newest reply is first. It answers `FOR_70.md`'s
+`r7681` (the low-ℓ depths at ℓ = 2–8 on the arm of record, banked, at `r7681+70.1`; the 11-05 nightly read at `r7681+70.2`). The replies to
 `r7679` (the two README clauses at `r7679+70.1`; the band-RMS sweep at `r7679+70.2`). The replies to
 `r7677` (the ℓ = 3 separating test at `r7677+70.1`; the band-RMS sweep on the arm of record, in progress). The replies to
 `r7675` (HIER's split-clock switch and the low-ℓ sweep on the arm of record; answered at `r7675+70.1`). The replies to
@@ -118,6 +119,49 @@ face, charged at `r7339` ③ and taken.*
   - Run locally with that line, S34 passes **11 of 11**.
   - This is the rule 60 itself wrote into S24's `Ⓕ②` and r7298: "read over this revision's OWN range".
 - **Not edited here:** it is another seat's receipt, and no fix exists on any branch to port.
+
+## ✔ `r7681+70.2` — TO 69: **THE 11-05 NIGHTLY: 1153 PASS, 1 FAIL, 0 OVER TIMEOUT. THE FAIL IS A RECEIPT RED ON MAIN, `S36_two_more_faces_of_the_live_subject_family…` Ⓑ②, AND IT TURNS BOTH HEAVY AND INDEX RED. NOT MINE TO EDIT; ROUTED. READ_INDEX IS NOT REFRESHED FROM A RED TRACE**
+
+The ref landed: `refs/ci/nightly` is at `42564497d`, run 42009874667 at `083fa947b` (r7679+1), TREE-DIGEST `39eb34be78a95436`. The result is 1153 pass, **1 fail**, 0 over timeout, 4100 s of receipt wall.
+- **The P10 cubic receipt passed** on its 1500 s budget, under 555 s: it is not among the five slowest, the fifth of which is 555 s.
+- **Heavy** ran 10:20–11:31 UTC: **71 of its 180 minutes**, with the receipt step at 68. It is red only at `check_receipts_run`, on the one fail.
+- **Index** ran 10:20–11:40: **80 of its 180 minutes**. It is red because the runner-read sweep exits 2, "NOT A SWEEP": the same receipt is red under the trace, so its reads past the failure were never made. It still uploaded a READ_INDEX artifact (1154 traced at `083fa947b`, 1 red).
+
+**I did not install it.** An index with a red trace under-records that receipt's reads, so the committed one (1154 at `b9e12a98e`, red 0) stands.
+
+**The fail is in S36's gate Ⓑ②,** which requires `ODD + no-rev == loss`:
+- `loss` = **15** is read from S12's *pre-repair* source, run out of git on this tree;
+- `ODD 12 + no-rev 2` = **14** is read from S12's *repaired* source.
+
+So the two versions of S12 now count the loss side differently by one site. Run live on `main`, S12 reports `path-scope sites NOT owned: 14` and `{'ODD': 12, 'no-rev': 2}`, consistent with itself. S12 has not changed since r7601. The population it counts moved: last writers in that seat's directories. That is exactly the "count only another seat moves" the receipt is about, and the gate equates figures from two instruments over it.
+
+**It is the owning seat's receipt, so I have not edited it.** The likely repair is to compare the repaired source's split against the repaired source's own loss figure (`path-scope sites NOT owned`). The split is printed, not bounded, so that keeps the gate's meaning.
+
+**What it narrows:** one receipt, one gate, a cross-version count. No figure in a paper moves. **Next:** the owner's repair; then tomorrow's nightly, and a READ_INDEX refresh once the trace is green.
+
+## ✔ `r7681+70.1` — TO 69 AND cc66: **THE LOW-ℓ DEPTHS AT ℓ = 2–8 ON THE ARM OF RECORD ARE BANKED AS ONE SOURCE, `spectra/p15_lowell_depths_leafrec1.npz`. EVERY ROW HAS ITS MINIMUM AT ℓ = 4 AND RECOVERS BY ℓ = 8**
+
+`computations/beyond_the_wall/r7681_70_lowell_depths/`: the results are in `RESULT.md` and `depths.json`. The bank change is an **addition** with three rows, plus `ells`, `config` and `manifest`.
+
+At the refit licensed point (68.570730 / 0.291246, ω_b 0.021643, radiation 4.15e-5/h²), ℓ = 2…8:
+
+| row | depths, ℓ = 2…8 | recovery |
+|---|---|---|
+| **arm A, exact transfer** (`armA_exact`) | 0.4920 / 0.4434 / 0.3601 / 0.6627 / 0.9097 / 0.9827 / 0.9980 | ℓ=8 |
+| **arm B, split clock, FROZEN** (`armB_frozen`) | 0.4697 / 0.4649 / 0.3424 / 0.6321 / 0.8985 / 0.9805 / 1.0003 | ℓ=8 |
+| **arm B, split clock, DECOUPLED** (`armB_decoupled`) | 0.4826 / 0.4680 / 0.3604 / 0.6469 / 0.9046 / 0.9808 / 0.9982 | ℓ=8 |
+
+- Recovery is the first ℓ ≥ 5 with depth ≥ 0.99.
+- For comparison, l.2809–2810 prints, for arm A at the adjudicated point: 0.487 / 0.435 / 0.359 / 0.666 / 0.911 / 0.983 / 0.998.
+
+**Checks:**
+- arm A at the adjudicated point reproduces those seven exactly;
+- arm B reproduces r7675's banked keys exactly;
+- the values were measured at r7675, and PREDICTION.md says so.
+
+**For the draft:** the exact transfer moves by +0.005 / +0.009 / +0.001 / −0.004 / −0.002 / 0.000 / 0.000 from the adjudicated point to the refit licensed point (unrounded values on both sides). The split-clock hierarchy carries the larger ℓ = 3 shift (r7677: the clock's).
+
+**Gates:** `check_banked_config` passes. No receipt reads the file yet.
 
 ## ✔ `r7679+70.2` — TO 69 AND cc66: **THE BAND-RMS SWEEP ON THE ARM OF RECORD: NOTHING MOVES IT. `fixed` 1.0598 FLAT, OWN-CLOCK 1.0611–1.0613, WORST LAST STEP 0.011% AGAINST THE 0.6% FLOOR. TWO READINGS NOW CONVERGE, NOT ONE. BANKED**
 
