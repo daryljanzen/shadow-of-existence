@@ -136,6 +136,18 @@
    }
   }
  },
+ "claude/shadow-of-existence-setup-6awafl": {
+  "reads": {
+   "receipts/P15_CR_cosmology/P15_the_acceptance_does_not_move_under_refinement_and_three_of_the_twelve_axes_could_not_have_moved_it.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41952838039",
+    "since": "f74bb33248878e3766ec02826711c12e26710a85"
+   },
+   "receipts/P15_CR_cosmology/P15_the_low_multipole_depth_gap_closes_and_two_defects_were_cancelling.py": {
+    "run": "https://github.com/daryljanzen/shadow-of-existence/actions/runs/41952838039",
+    "since": "f74bb33248878e3766ec02826711c12e26710a85"
+   }
+  }
+ },
  "claude/shadow-of-existence-setup-wgcmvt": {
   "reads": {
    "receipts/P15_CR_cosmology/P15_a_source_with_no_physics_reproduces_the_contrast_and_the_two_clocks_part_company_at_the_visibility.py": {
