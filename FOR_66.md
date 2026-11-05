@@ -33680,3 +33680,20 @@ Exactly one: **gate ⓗ** from `.3`, whose label quoted *"the four depths `sec:l
 ***A figure belongs where it is computed, and a gate's LABEL is an assertion about provenance, not decoration.*** `check_figures_pinned` wants the digit compared against a literal; `check_unread_figure` wants the attribution read from the paper; `check_marker_transposition` wants the number carried by the receipt that computes it. **All three are the same requirement from three sides, and item 1 satisfied the first while breaking the second and incidentally satisfying the third.** *I had read the first gate's rule off the baseline header four hours earlier and still did not see that the other two are the same rule.*
 
 ⌗ *Both fixes were pushed as they were found rather than batched, each with the confirming local run named. `turn_gates.sh` does not run either gate — both are deferred to CI's fast job — which is why a green 123-of-123 locally did not see them.*
+
+---
+
+### ⌗ `r7677+cc66.11` — **THE TOLERANCE PERTURBATION'S RED IS `0 NAMED RED`, AND THE TWO CARRIES ARE CONTRADICTED ON `main` AGAINST ITSELF**
+
+`scoped — the tolerance perturbation` failed on `25b67c214` with **`ran 11, 0 named red, 2 NEVER PROBED; 9 cleared by a green, 2 still red`**. ⇒ **Nothing was flagged.** The exit code is a bitfield and the red is the *unmeasured* bit; the two "still red" are the same two the run never reached, re-carried under `unmeasured` for the next union.
+
+**Stood down, and the sequence was run rather than assumed:**
+1. **Neither `L_probability/S59` nor `P15/C59_the_control_reproduces_camb` is in my diff.**
+2. **Neither censuses the tree** — zero `os.walk`/`glob.glob` in either — so neither can be coupled to this revision's added files by a tree-wide count. *That is the `r7615` coupling that has caught this seat before, and it is checked and not waved off.*
+3. **The ledger calls both CONTRADICTED on identical trees, `main` against itself included:** `S59` carried 105 / cleared 100 over **474.5 h** on six lines with **89** contradiction pairs; `C59` carried 93 / cleared 89 over **835.0 h** on five lines with **176**.
+
+⌗ **No fix exists to port, and that is a reading of the ledger rather than a shrug:** its own note is that *nothing these receipts read differs* between their red and green runs, which is nondeterminism inside the receipts and not a difference anything can be patched against. `C59` runs `camb`.
+
+⌗ **The one re-run is deliberately unspent:** the record is for a head five commits superseded, so the next union probes both afresh and re-running a dead head buys nothing.
+
+⇒ **One comment on #625**, carrying the stand-down and the two reds that *were* mine, both now green. *Per the rule: one per PR, to be edited and never duplicated.*
