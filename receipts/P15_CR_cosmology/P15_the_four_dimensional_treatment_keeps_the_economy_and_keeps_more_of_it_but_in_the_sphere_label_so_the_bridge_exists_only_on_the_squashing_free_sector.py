@@ -97,6 +97,30 @@ import re
 import time
 
 import sympy as sp
+import sympy.core.random as _sprandom
+
+# ⛭⛭⛭ r7682 (60), on 69's `r7679+1` route and THIS SEAT'S OWN `r7188+60` STOP CONDITION, which
+#   fired when this file crossed its 900 s budget on main's scoped suite at `f74bb3324`.
+#   ** THE RUNTIME TAIL IS A COIN FLIP INSIDE `factor`, AND THIS LINE IS THE COIN. **
+#   `radial()`'s nested `simplify` below routes into `trigsimp`'s `futrig -> _futrig -> _eapply ->
+#   factor -> _generic_factor -> factor_list -> dmp_factor_list -> dmp_zz_factor -> dmp_zz_wang`,
+#   Wang's multivariate factorisation, which picks its evaluation points at RANDOM and retries on
+#   an unlucky draw.  Caught in the act, on an IDLE machine, by
+#   `faulthandler.dump_traceback_later(45, repeat=True)`: nine trials of 9-12 s and two of 45 s and
+#   135 s, every slow one stalled in `dmp_zz_wang_hensel_lifting`'s `dmp_expand`.
+#   ⌗ 30 sequential trials each way, one process at a time, cores idle, a 900 s cap:
+#     UNSEEDED min 10 s / median 11 s / max 900 s, a 90x spread, with FOUR trials killed at the
+#     very cap the runner hit; SEEDED min 10 s / median 11 s / max 12 s, a 1.2x spread, none over
+#     60 s.  The whole distribution is in `computations/beyond_the_wall/r7682_60_*`.
+#   ⇒ Seeding sympy's own generator makes the draw a property of THIS RECEIPT instead of a property
+#     of the process.  It changes NO mathematics: the factorisation is exact whichever points it
+#     picks, every gate below asserts the same thing on the same expressions, and the whole printed
+#     output is identical to the unseeded baseline, byte for byte, but for the wall time it prints.
+#   ⛔ *Not a higher budget: the `r7188+60` entry forbids it and the route repeats the forbidding.
+#     And not a cheaper canonicalisation either -- that entry's own guess was tried and is worse:
+#     `trigsimp(method='fu')` is verdict-identical at 107 s, and `cancel(expand(rewrite(exp)))` did
+#     not finish in 600 s.  The expense is not the trig chain; it is one draw inside it.*
+_sprandom.seed(20260105)
 
 t_all = time.time()
 CHECKS = []

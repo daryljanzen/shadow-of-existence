@@ -1,0 +1,13 @@
+trial 1  rc=0  wall=9s
+trial 2  rc=0  wall=11s
+trial 3  rc=0  wall=10s
+trial 4  rc=0  wall=10s
+trial 5  rc=0  wall=10s
+trial 6  rc=0  wall=12s
+trial 7  rc=0  wall=10s
+trial 8  rc=0  wall=12s
+trial 9  rc=139  wall=45s
+trial 10  rc=0  wall=11s
+trial 11  rc=139  wall=135s
+  ⇒ SLOW TRIAL CAUGHT at trial 11 (135s); traceback in trial_11.err
+__LOOP_DONE__
