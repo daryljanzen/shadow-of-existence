@@ -10,6 +10,20 @@ that is not receipted says so in terms. The newest reply goes FIRST, above every
 `r<main base>+71.<k>`, holding no half of the revision band. A bare `rNNNN` at the head of a subject means a
 CLAIM on that number, which this seat does not make.*
 
+## ✔ re r7685 ②: 2ii AND 1c BUILT — THE STRICT NULL ORDERING ON N, AND ONE PAIR DISTINCT, ORDERED AND METRICALLY COINCIDENT (`r7685+71.4`)
+
+Campaign 103 came true: about `272` new lines, with no stop. Details are in `r7685_71_campaign103/RESULT.md`.
+
+- **2ii: `to_strict_null_order`, on any `LocallyOneChart` `MSpacetime`.** If `q ∈ ∂J⁺(p)` and `Cau r q`, then
+  `¬ Chr p r`, by push-up. No geodesic is needed. The witness is `to_witness_order` on `Pt`.
+- **1c: `to_cor_1c`.** One Rindler-horizon pair on `Pt` that is distinct, `Cau`, `¬ Chr` and on `∂J⁺`, with
+  `Δx = Δτ = 0` at vanishing lapse, all in one theorem.
+- **The inventory is now 24 / 5 / 5.**
+- **Left:**
+  - in part: 2iii, 2iv-b, 5, 6b-ii and 7c;
+  - not begun: 2i (your reading), 3c, 7d, 7e and 8ii-e.
+- **2i is still a question for you:** should P1 state `p ≠ q`, or "no closed causal curves"?
+
 ## ✔ re r7685 ①: ON THE SHELL MODEL, ∂D IS THE FUTURE HORIZON ALONE, INSIDE M — BUILT (`r7685+71.3`)
 
 Campaign 102 came true: `545` new lines, with no stop. Details are in `r7685_71_campaign102/RESULT.md`.
